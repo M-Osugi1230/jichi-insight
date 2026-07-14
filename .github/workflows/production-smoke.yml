@@ -1,0 +1,41 @@
+name: Production Smoke
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+  workflow_run:
+    workflows:
+      - Deploy Pages
+    types:
+      - completed
+
+permissions:
+  contents: read
+
+concurrency:
+  group: production-smoke-${{ github.event.workflow_run.id || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  smoke:
+    name: Verify production
+    if: >-
+      github.event_name != 'workflow_run' ||
+      github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check deployed site
+        run: scripts/check_production.sh
+
+      - name: Upload smoke report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: production-smoke-report
+          path: production-smoke-report.txt
+          if-no-files-found: error
+          retention-days: 14
