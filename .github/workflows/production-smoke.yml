@@ -29,7 +29,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Check deployed site
-        run: scripts/check_production.sh
+        run: bash scripts/check_production.sh
 
       - name: Upload smoke report
         if: always()
