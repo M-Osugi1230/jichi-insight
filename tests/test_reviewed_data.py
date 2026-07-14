@@ -23,15 +23,29 @@ def assert_valid(schema_path: str, instance: Any) -> None:
     assert errors == [], "; ".join(error.message for error in errors)
 
 
+def all_fiscal_records() -> list[dict[str, Any]]:
+    return [
+        *load_json("data/reviewed/fukuoka-prefecture/fiscal_records.json"),
+        *load_json("data/reviewed/fukuoka-prefecture/settlement_records.json"),
+    ]
+
+
+def all_evidence_packets() -> list[dict[str, Any]]:
+    return [
+        *load_json("data/reviewed/fukuoka-prefecture/evidence_packets.json"),
+        *load_json(
+            "data/reviewed/fukuoka-prefecture/settlement_evidence_packets.json"
+        ),
+    ]
+
+
 def test_fukuoka_reviewed_data_matches_contracts() -> None:
     municipality = load_json("data/reviewed/fukuoka-prefecture/municipality.json")
-    records = load_json("data/reviewed/fukuoka-prefecture/fiscal_records.json")
-    packets = load_json("data/reviewed/fukuoka-prefecture/evidence_packets.json")
 
     assert_valid("schemas/municipality.schema.json", municipality)
-    for record in records:
+    for record in all_fiscal_records():
         assert_valid("schemas/fiscal_record.schema.json", record)
-    for packet in packets:
+    for packet in all_evidence_packets():
         assert_valid("schemas/evidence_packet.schema.json", packet)
 
 
@@ -46,9 +60,46 @@ def test_fukuoka_budget_values_and_stages_are_explicit() -> None:
     assert all(record["review_status"] == "reviewed" for record in records)
 
 
+def test_fukuoka_settlement_series_is_complete_and_separate() -> None:
+    records = load_json("data/reviewed/fukuoka-prefecture/settlement_records.json")
+    trend_records = [record for record in records if record["metric"] != "local_tax"]
+
+    assert {record["fiscal_year"] for record in trend_records} == {
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+    }
+    for fiscal_year in range(2020, 2025):
+        metrics = {
+            record["metric"]
+            for record in trend_records
+            if record["fiscal_year"] == fiscal_year
+        }
+        assert metrics == {"total_revenue", "total_expenditure"}
+    assert all(record["stage"] == "settlement" for record in records)
+    assert all(record["account_type"] == "ordinary" for record in records)
+
+
+def test_fukuoka_2024_settlement_values_match_official_tables() -> None:
+    records = load_json("data/reviewed/fukuoka-prefecture/settlement_records.json")
+    values = {
+        record["metric"]: record["amount_yen"]
+        for record in records
+        if record["fiscal_year"] == 2024
+    }
+
+    assert values == {
+        "total_revenue": 2_093_700_000_000,
+        "total_expenditure": 2_032_626_000_000,
+        "local_tax": 784_235_000_000,
+    }
+
+
 def test_every_reviewed_fukuoka_value_has_an_evidence_packet() -> None:
-    records = load_json("data/reviewed/fukuoka-prefecture/fiscal_records.json")
-    packets = load_json("data/reviewed/fukuoka-prefecture/evidence_packets.json")
+    records = all_fiscal_records()
+    packets = all_evidence_packets()
     assert {packet["subject_id"] for packet in packets} == {
         record["id"] for record in records
     }
