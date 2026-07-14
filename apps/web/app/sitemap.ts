@@ -3,6 +3,8 @@ import type { MetadataRoute } from "next";
 const siteUrl = "https://m-osugi1230.github.io/jichi-insight";
 const routes = ["", "/about", "/methodology", "/municipalities", "/sources"];
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return routes.map((route) => ({
     url: `${siteUrl}${route}`,
