@@ -1,6 +1,8 @@
 import evidencePackets from "../../../data/reviewed/fukuoka-prefecture/evidence_packets.json";
 import fiscalRecords from "../../../data/reviewed/fukuoka-prefecture/fiscal_records.json";
 import municipality from "../../../data/reviewed/fukuoka-prefecture/municipality.json";
+import settlementEvidencePackets from "../../../data/reviewed/fukuoka-prefecture/settlement_evidence_packets.json";
+import settlementRecords from "../../../data/reviewed/fukuoka-prefecture/settlement_records.json";
 
 import { sourceCatalog } from "./catalog";
 
@@ -8,7 +10,7 @@ export type FiscalRecord = {
   id: string;
   municipality_id: string;
   fiscal_year: number;
-  account_type: "general" | "special" | "public_enterprise" | "all_accounts";
+  account_type: "general" | "ordinary" | "special" | "public_enterprise" | "all_accounts";
   stage: "initial_budget" | "revised_budget" | "execution" | "settlement";
   metric: string;
   metric_label: string | null;
@@ -40,18 +42,59 @@ export type EvidencePacket = {
   review_status: string;
 };
 
+export type SettlementYear = {
+  fiscalYear: number;
+  revenue: FiscalRecord;
+  expenditure: FiscalRecord;
+  formalBalanceYen: number | null;
+};
+
 export const fukuokaPrefectureFinance = {
   municipality,
-  records: fiscalRecords as FiscalRecord[],
-  evidencePackets: evidencePackets as EvidencePacket[],
+  records: [
+    ...(fiscalRecords as FiscalRecord[]),
+    ...(settlementRecords as FiscalRecord[]),
+  ],
+  evidencePackets: [
+    ...(evidencePackets as EvidencePacket[]),
+    ...(settlementEvidencePackets as EvidencePacket[]),
+  ],
 };
 
 export function fiscalRecordByMetric(metric: string) {
-  const record = fukuokaPrefectureFinance.records.find((item) => item.metric === metric);
+  const record = fukuokaPrefectureFinance.records.find(
+    (item) => item.metric === metric && item.stage === "initial_budget",
+  );
   if (!record) {
     throw new Error(`Missing reviewed fiscal record: ${metric}`);
   }
   return record;
+}
+
+export function settlementRecord(fiscalYear: number, metric: string) {
+  const record = fukuokaPrefectureFinance.records.find(
+    (item) =>
+      item.fiscal_year === fiscalYear &&
+      item.metric === metric &&
+      item.stage === "settlement" &&
+      item.account_type === "ordinary",
+  );
+  if (!record) {
+    throw new Error(`Missing ordinary-account settlement: ${fiscalYear}/${metric}`);
+  }
+  return record;
+}
+
+export function settlementTrend(): SettlementYear[] {
+  return [2020, 2021, 2022, 2023, 2024].map((fiscalYear) => {
+    const revenue = settlementRecord(fiscalYear, "total_revenue");
+    const expenditure = settlementRecord(fiscalYear, "total_expenditure");
+    const formalBalanceYen =
+      revenue.amount_yen !== null && expenditure.amount_yen !== null
+        ? revenue.amount_yen - expenditure.amount_yen
+        : null;
+    return { fiscalYear, revenue, expenditure, formalBalanceYen };
+  });
 }
 
 export function evidenceForRecord(recordId: string) {
@@ -85,4 +128,25 @@ export function formatCompactYen(amount: number | null) {
     )}億円`;
   }
   return formatExactYen(amount);
+}
+
+export function formatJapaneseYen(amount: number | null) {
+  if (amount === null) {
+    return "未確認";
+  }
+  const manYen = Math.trunc(amount / 10_000);
+  const cho = Math.trunc(manYen / 100_000_000);
+  const oku = Math.trunc((manYen % 100_000_000) / 10_000);
+  const man = manYen % 10_000;
+  const parts: string[] = [];
+  if (cho > 0) {
+    parts.push(`${cho}兆`);
+  }
+  if (oku > 0) {
+    parts.push(`${new Intl.NumberFormat("ja-JP").format(oku)}億`);
+  }
+  if (man > 0) {
+    parts.push(`${new Intl.NumberFormat("ja-JP").format(man)}万`);
+  }
+  return `${parts.join("")}円`;
 }
