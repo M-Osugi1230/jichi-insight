@@ -1,0 +1,155 @@
+.summaryGrid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 88px;
+}
+
+.summaryCard {
+  background: #fff;
+  border: 1px solid #d6d5ce;
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.summaryCard span {
+  color: #676960;
+  display: block;
+  font-size: 0.74rem;
+}
+
+.summaryCard strong {
+  display: block;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  letter-spacing: -0.06em;
+  line-height: 1.1;
+  margin: 30px 0 8px;
+}
+
+.summaryCard p {
+  border-top: 1px solid #d6d5ce;
+  color: #676960;
+  font-size: 0.78rem;
+  margin: 18px 0 0;
+  padding-top: 14px;
+}
+
+.coverageGrid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 48px;
+}
+
+.coverageCard {
+  background: #fff;
+  border: 1px solid #d6d5ce;
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.coverageHeader {
+  align-items: flex-start;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.coverageHeader h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0;
+}
+
+.coverageFacts {
+  margin: 36px 0 0;
+}
+
+.coverageFacts div {
+  align-items: baseline;
+  border-top: 1px solid #d6d5ce;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+
+.coverageFacts dt {
+  color: #676960;
+  font-size: 0.72rem;
+}
+
+.coverageFacts dd {
+  font-weight: 750;
+  margin: 0;
+}
+
+.qualityTableWrap {
+  margin-top: 44px;
+  overflow-x: auto;
+}
+
+.qualityTable {
+  border-collapse: collapse;
+  min-width: 700px;
+  width: 100%;
+}
+
+.qualityTable th,
+.qualityTable td {
+  border-bottom: 1px solid #d6d5ce;
+  padding: 15px 12px;
+  text-align: left;
+}
+
+.qualityTable th {
+  color: #676960;
+  font-size: 0.72rem;
+}
+
+.qualityTable td {
+  font-size: 0.86rem;
+}
+
+.qualityTable td:first-child {
+  color: #173f35;
+  font-weight: 750;
+}
+
+.gapList {
+  display: grid;
+  gap: 0 40px;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  margin: 42px 0 0;
+  padding: 0;
+}
+
+.gapList li {
+  border-top: 1px solid #d6d5ce;
+  padding: 16px 0;
+}
+
+.gapList li::before {
+  color: #765b12;
+  content: "未整備";
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 750;
+  margin-right: 12px;
+}
+
+@media (max-width: 900px) {
+  .summaryGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .coverageGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .summaryGrid,
+  .gapList {
+    grid-template-columns: 1fr;
+  }
+}
