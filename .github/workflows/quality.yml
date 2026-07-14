@@ -61,3 +61,6 @@ jobs:
 
       - name: Build
         run: pnpm build
+
+      - name: Validate static export
+        run: python scripts/validate_static_export.py

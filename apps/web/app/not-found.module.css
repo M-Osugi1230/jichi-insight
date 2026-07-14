@@ -1,0 +1,23 @@
+.errorPage {
+  margin: 0 auto;
+  max-width: 1180px;
+  min-height: 68vh;
+  padding: 110px 28px 90px;
+}
+
+.errorPage h1 {
+  font-size: clamp(2.8rem, 7vw, 5.8rem);
+  max-width: 980px;
+}
+
+.errorPage > p:last-of-type {
+  color: #676960;
+  font-size: 1.05rem;
+  max-width: 700px;
+}
+
+@media (max-width: 650px) {
+  .errorPage {
+    padding: 72px 20px 70px;
+  }
+}
