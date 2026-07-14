@@ -2,11 +2,17 @@
 
 ## Public URL
 
-Initial production target:
+Production URL:
 
 `https://m-osugi1230.github.io/jichi-insight/`
 
 The repository is configured for a static Next.js export deployed through GitHub Pages custom workflows.
+
+## Activation status
+
+GitHub Pages was enabled on 2026-07-15 with **GitHub Actions** selected as the build and deployment source.
+
+This change records the repository-level activation and intentionally triggers the first production deployment after Pages enablement.
 
 ## Environments
 
@@ -36,7 +42,7 @@ Pull request
 
 ## GitHub Pages settings
 
-The repository must use **GitHub Actions** as the Pages build and deployment source. The `Deploy Pages` workflow uses least-privilege permissions:
+The repository uses **GitHub Actions** as the Pages build and deployment source. The `Deploy Pages` workflow uses least-privilege permissions:
 
 - `contents: read`
 - `pages: write`
@@ -56,7 +62,7 @@ Next.js applies this base path to routes and generated assets. Local and pull-re
 
 After every production deployment, verify:
 
-- Home, sources, municipalities, methodology and about pages return 200
+- Home, sources, municipalities, methodology, corrections, data quality and about pages return 200
 - Static assets load under `/jichi-insight/_next/`
 - Internal links remain under the project base path
 - 404 page renders
