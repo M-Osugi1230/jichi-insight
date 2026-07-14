@@ -1,0 +1,40 @@
+name: Apply data quality navigation
+
+on:
+  push:
+    branches:
+      - agent/data-quality-dashboard
+    paths:
+      - .github/workflows/apply-data-quality-navigation.yml
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/data-quality-dashboard
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Apply guarded updates
+        run: python scripts/apply_data_quality_navigation.py
+
+      - name: Remove temporary automation
+        run: |
+          rm scripts/apply_data_quality_navigation.py
+          rm .github/workflows/apply-data-quality-navigation.yml
+
+      - name: Commit branch updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --check
+          git commit -m "Integrate data quality navigation and release checks"
+          git push origin HEAD:agent/data-quality-dashboard
