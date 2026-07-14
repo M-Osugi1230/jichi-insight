@@ -32,6 +32,7 @@ Pull request
   → artifact upload
   → github-pages environment
   → production URL
+  → external production smoke test
 ```
 
 ## GitHub Pages settings
@@ -51,6 +52,20 @@ Because the site is initially hosted as a project site, production builds set:
 `NEXT_PUBLIC_BASE_PATH=/jichi-insight`
 
 Next.js applies this base path to routes and generated assets. Local and pull-request quality builds use an empty base path.
+
+## Production smoke test
+
+`scripts/check_production.sh` verifies the deployed site from outside the build artifact.
+
+It checks:
+
+- the home page returns HTTP 200
+- the site identity and development-status copy are present
+- assets use `/jichi-insight/_next/`
+- all primary routes return HTTP 200
+- robots, sitemap and manifest are public
+
+The workflow retries briefly to allow a Pages deployment to finish, then uploads a human-readable report whether it passes or fails.
 
 ## Release verification
 
