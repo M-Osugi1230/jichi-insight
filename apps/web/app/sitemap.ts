@@ -4,6 +4,7 @@ const siteUrl = "https://m-osugi1230.github.io/jichi-insight";
 const routes = [
   "",
   "/about",
+  "/corrections",
   "/methodology",
   "/municipalities",
   "/municipalities/fukuoka-prefecture",

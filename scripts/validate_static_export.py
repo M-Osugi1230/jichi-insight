@@ -20,6 +20,7 @@ REQUIRED_FILES = [
     "index.html",
     "404.html",
     "about/index.html",
+    "corrections/index.html",
     "methodology/index.html",
     "municipalities/index.html",
     "municipalities/fukuoka-prefecture/index.html",
@@ -103,6 +104,17 @@ def main() -> int:
         for copy in required_fukuoka_copy:
             if copy not in fukuoka:
                 failures.append(f"Fukuoka page is missing required copy: {copy}")
+
+    corrections_path = EXPORT_ROOT / "corrections" / "index.html"
+    if corrections_path.is_file():
+        corrections = corrections_path.read_text(encoding="utf-8")
+        for copy in [
+            "誤りを直せることも、透明性の一部です。",
+            "訂正申請を開く",
+            "変更履歴を残します",
+        ]:
+            if copy not in corrections:
+                failures.append(f"Corrections page is missing required copy: {copy}")
 
     if failures:
         print("Static export validation failed:")
