@@ -1,0 +1,128 @@
+import type { Metadata } from "next";
+
+import { PageIntro } from "@/components/PageIntro";
+import { SiteFooter } from "@/components/SiteFooter";
+import { SiteHeader } from "@/components/SiteHeader";
+import { StatusBadge } from "@/components/StatusBadge";
+import {
+  dataQualitySnapshot,
+  municipalityQuality,
+  publicationGaps,
+} from "@/lib/dataQuality";
+
+import styles from "./page.module.css";
+
+export const metadata: Metadata = {
+  title: "データ品質",
+  description:
+    "Jichi Insightの資料件数、レビュー状態、Evidence coverage、欠損、公開準備状況を確認できます。",
+};
+
+const qualityLevels = [
+  ["Coverage", "対象・資料の存在を把握", "収録候補の管理"],
+  ["Indexed", "公式URL、資料、年度、位置を特定", "公式資料カタログ"],
+  ["Extracted", "候補値を抽出、未レビュー", "原則として非公開"],
+  ["Reviewed", "一次資料と人が照合", "事実表示に利用"],
+  ["Verified", "独立した二重確認を完了", "重要評価の主要根拠"],
+  ["Published", "公開基準と画面検証を通過", "本番サイト"],
+];
+
+export default function DataQualityPage() {
+  const snapshot = dataQualitySnapshot;
+
+  return (
+    <main>
+      <SiteHeader />
+      <div className="pageShell">
+        <PageIntro eyebrow="Data quality" title="件数ではなく、確認の深さを公開する。">
+          <p>
+            資料を見つけた状態と、値を人が確認した状態と、評価に使える状態は異なります。
+            Jichi Insightは、収録件数と品質段階、欠損、更新日を同時に表示します。
+          </p>
+        </PageIntro>
+
+        <section className={styles.summaryGrid} aria-label="データ品質概要">
+          <article className={styles.summaryCard}>
+            <span>公式資料・年度別資料</span>
+            <strong>{snapshot.officialSources}</strong>
+            <p>{snapshot.pilotMunicipalities}自治体の公式入口と個別資料。</p>
+          </article>
+          <article className={styles.summaryCard}>
+            <span>Reviewed財政値</span>
+            <strong>{snapshot.reviewedFiscalValues}</strong>
+            <p>当初予算{snapshot.initialBudgetValues}件、決算{snapshot.settlementValues}件。</p>
+          </article>
+          <article className={styles.summaryCard}>
+            <span>Evidence coverage</span>
+            <strong>{snapshot.evidenceCoveragePercent}%</strong>
+            <p>Reviewed財政値に対応するEvidence Packetの割合。</p>
+          </article>
+          <article className={styles.summaryCard}>
+            <span>公開済み評価</span>
+            <strong>{snapshot.publicEvaluations}</strong>
+            <p>比較条件と成果データが不足するため、まだ評価していません。</p>
+          </article>
+        </section>
+
+        <section className="contentSection">
+          <p className="eyebrow">Coverage by municipality</p>
+          <h2>自治体ごとの深さを、同じ件数として扱わない。</h2>
+          <div className={styles.coverageGrid}>
+            {municipalityQuality.map((municipality) => (
+              <article className={styles.coverageCard} key={municipality.key}>
+                <div className={styles.coverageHeader}>
+                  <h3>{municipality.name}</h3>
+                  <StatusBadge
+                    label={municipality.status === "reviewed-data" ? "Reviewed data" : "Indexed only"}
+                    tone={municipality.status === "reviewed-data" ? "verified" : "progress"}
+                  />
+                </div>
+                <dl className={styles.coverageFacts}>
+                  <div><dt>公式資料</dt><dd>{municipality.officialSources}件</dd></div>
+                  <div><dt>Reviewed財政値</dt><dd>{municipality.reviewedFiscalValues}件</dd></div>
+                  <div><dt>Evidence Packet</dt><dd>{municipality.evidencePackets}件</dd></div>
+                  <div><dt>評価</dt><dd>{municipality.publicEvaluations}件</dd></div>
+                </dl>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="contentSection">
+          <p className="eyebrow">Quality ladder</p>
+          <h2>公開までの6段階</h2>
+          <div className={styles.qualityTableWrap}>
+            <table className={styles.qualityTable}>
+              <thead><tr><th>段階</th><th>意味</th><th>利用方法</th></tr></thead>
+              <tbody>
+                {qualityLevels.map(([level, meaning, use]) => (
+                  <tr key={level}><td>{level}</td><td>{meaning}</td><td>{use}</td></tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section className="contentSection">
+          <p className="eyebrow">Publication gaps</p>
+          <h2>評価を始める前に、まだ必要なもの</h2>
+          <ul className={styles.gapList}>
+            {publicationGaps.map((gap) => <li key={gap}>{gap}</li>)}
+          </ul>
+        </section>
+
+        <section className="callout callout--dark">
+          <div>
+            <p className="eyebrow">Why zero evaluations</p>
+            <h2>データ不足を、点数で埋めません。</h2>
+            <p>
+              財政値だけでは、政策成果、首長の実行、議会の監視を公平に評価できません。
+              類似団体比較、事業・契約・KPI、公約、議会資料が接続されるまで、評価0件を維持します。
+            </p>
+          </div>
+        </section>
+      </div>
+      <SiteFooter />
+    </main>
+  );
+}
