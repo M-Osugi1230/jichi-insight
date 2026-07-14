@@ -12,22 +12,16 @@ from jsonschema import Draft202012Validator, FormatChecker
 ROOT = Path(__file__).resolve().parents[1]
 
 REQUIRED_FILES = [
-    "README.md",
-    "DATA_POLICY.md",
-    "docs/PROJECT_CHARTER.md",
-    "docs/METHODOLOGY.md",
-    "docs/ROADMAP.md",
-    "schemas/source.schema.json",
-    "schemas/municipality.schema.json",
-    "schemas/project.schema.json",
-    "schemas/promise.schema.json",
-    "data/catalog/pilot_scope.json",
+    "README.md", "DATA_POLICY.md", "GOVERNANCE.md", "docs/NORTH_STAR.md",
+    "docs/PROJECT_MEMORY.md", "docs/PROJECT_CHARTER.md", "docs/METHODOLOGY.md",
+    "docs/ROADMAP.md", "schemas/source.schema.json", "schemas/source_catalog.schema.json",
+    "schemas/municipality.schema.json", "schemas/project.schema.json", "schemas/promise.schema.json",
+    "data/catalog/pilot_scope.json", "data/catalog/official_sources.json",
 ]
 
 
 def load_json(relative_path: str) -> object:
-    path = ROOT / relative_path
-    with path.open(encoding="utf-8") as handle:
+    with (ROOT / relative_path).open(encoding="utf-8") as handle:
         return json.load(handle)
 
 
@@ -48,17 +42,16 @@ def validate_all_json() -> list[str]:
     return errors
 
 
-def validate_examples() -> list[str]:
+def validate_schema_pairs() -> list[str]:
     errors: list[str] = []
     pairs = [
         ("schemas/project.schema.json", "data/examples/project.example.json"),
+        ("schemas/source_catalog.schema.json", "data/catalog/official_sources.json"),
     ]
     checker = FormatChecker()
     for schema_path, instance_path in pairs:
-        schema = load_json(schema_path)
-        instance = load_json(instance_path)
-        validator = Draft202012Validator(schema, format_checker=checker)
-        for error in sorted(validator.iter_errors(instance), key=lambda item: list(item.path)):
+        validator = Draft202012Validator(load_json(schema_path), format_checker=checker)
+        for error in sorted(validator.iter_errors(load_json(instance_path)), key=lambda item: list(item.path)):
             location = ".".join(str(item) for item in error.path) or "<root>"
             errors.append(f"{instance_path}:{location}: {error.message}")
     return errors
@@ -74,21 +67,53 @@ def validate_example_markers() -> list[str]:
     return errors
 
 
+def validate_source_catalog() -> list[str]:
+    catalog = load_json("data/catalog/official_sources.json")
+    records = catalog.get("records", [])
+    errors: list[str] = []
+    if len(records) < 30:
+        errors.append("Official source catalog must contain at least 30 initial records.")
+    ids = [record.get("id") for record in records]
+    if len(ids) != len(set(ids)):
+        errors.append("Official source catalog contains duplicate record IDs.")
+    expected = {"fukuoka-prefecture", "fukuoka-city", "kitakyushu-city"}
+    if {record.get("municipality_key") for record in records} != expected:
+        errors.append("Official source catalog municipality keys must match the three pilot municipalities.")
+    for record in records:
+        record_id = record.get("id", "<unknown>")
+        if not str(record.get("url", "")).startswith("https://"):
+            errors.append(f"{record_id}: official source URL must use HTTPS.")
+        if record.get("review_status") not in {"reviewed", "verified"}:
+            errors.append(f"{record_id}: initial catalog records must be reviewed or verified.")
+        if record.get("source_kind") != "landing_page":
+            errors.append(f"{record_id}: initial catalog must contain landing-page records only.")
+    return errors
+
+
+def validate_north_star_links() -> list[str]:
+    errors: list[str] = []
+    for relative_path in ["README.md", "GOVERNANCE.md"]:
+        content = (ROOT / relative_path).read_text(encoding="utf-8")
+        if "docs/NORTH_STAR.md" not in content:
+            errors.append(f"{relative_path} must reference docs/NORTH_STAR.md.")
+        if "docs/PROJECT_MEMORY.md" not in content:
+            errors.append(f"{relative_path} must reference docs/PROJECT_MEMORY.md.")
+    return errors
+
+
 def main() -> int:
     failures: list[str] = []
-
-    missing = validate_required_files()
-    failures.extend(f"Missing required file: {path}" for path in missing)
+    failures.extend(f"Missing required file: {path}" for path in validate_required_files())
     failures.extend(validate_all_json())
-    failures.extend(validate_examples())
+    failures.extend(validate_schema_pairs())
     failures.extend(validate_example_markers())
-
+    failures.extend(validate_source_catalog())
+    failures.extend(validate_north_star_links())
     if failures:
         print("Repository validation failed:")
         for failure in failures:
             print(f"- {failure}")
         return 1
-
     print("Repository validation passed.")
     return 0
 
