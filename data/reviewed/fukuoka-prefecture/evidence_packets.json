@@ -1,0 +1,36 @@
+[
+  {
+    "id": "evidence-fukuoka-pref-2026-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-400009-fiscal-2026-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算は2兆3,000億円。",
+        "source_ids": ["fukuoka-pref-budget-2026-overview-pdf"],
+        "location_note": "PDFの2ページ目（資料上のページ番号1）、一般会計歳入歳出規模欄。",
+        "decision": "accepted",
+        "review_note": "16か月予算2兆4,132億円、2月定例会提案額2兆3,822億円と混同しないことを確認。"
+      }
+    ],
+    "open_questions": ["年度終了後の執行額・決算額は未確定。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-pref-2026-local-tax",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-400009-fiscal-2026-local-tax",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度県税収入は8,308億円。",
+        "source_ids": ["fukuoka-pref-budget-2026-overview-pdf"],
+        "location_note": "PDFの2ページ目（資料上のページ番号1）、右側の県税収入欄。",
+        "decision": "accepted",
+        "review_note": "資料上の『過去最大』表記も確認。"
+      }
+    ],
+    "open_questions": ["実際の県税収入は決算確定後に確認する。"],
+    "review_status": "reviewed"
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "id": "jp-local-400009-fiscal-2026-total-revenue",
+    "municipality_id": "jp-local-400009",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入歳出規模",
+    "amount_yen": 2300000000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "令和8年度当初予算。16か月予算2兆4,132億円とは区別して管理する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": ["fukuoka-pref-budget-2026-overview-pdf"]
+  },
+  {
+    "id": "jp-local-400009-fiscal-2026-local-tax",
+    "municipality_id": "jp-local-400009",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "local_tax",
+    "metric_label": "県税収入",
+    "amount_yen": 830800000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "福岡県資料では過去最大と記載。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": ["fukuoka-pref-budget-2026-overview-pdf"]
+  }
+]

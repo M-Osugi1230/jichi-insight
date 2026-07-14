@@ -1,0 +1,256 @@
+.hero {
+  align-items: end;
+  border-bottom: 1px solid #d6d5ce;
+  display: grid;
+  gap: 70px;
+  grid-template-columns: 1.25fr 0.75fr;
+  padding: 82px 0 72px;
+}
+
+.heroMeta {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.heroMeta > span:first-child {
+  color: #676960;
+  font-size: 0.78rem;
+}
+
+.hero h1 {
+  margin-bottom: 24px;
+}
+
+.hero p {
+  color: #676960;
+  font-size: 1.05rem;
+  max-width: 720px;
+}
+
+.heroFacts {
+  margin: 0;
+}
+
+.heroFacts div {
+  align-items: baseline;
+  border-top: 1px solid #d6d5ce;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+}
+
+.heroFacts dt {
+  color: #676960;
+  font-size: 0.76rem;
+}
+
+.heroFacts dd {
+  font-weight: 750;
+  margin: 0;
+}
+
+.scope,
+.distinction,
+.notAssessed {
+  display: grid;
+  gap: 64px;
+  grid-template-columns: 0.9fr 1.1fr;
+  padding: 78px 0;
+}
+
+.scope {
+  border-bottom: 1px solid #d6d5ce;
+}
+
+.scope h2,
+.distinction h2,
+.notAssessed h2 {
+  font-size: clamp(1.9rem, 4vw, 3.25rem);
+}
+
+.scope > p,
+.methodNote {
+  color: #676960;
+}
+
+.headline,
+.evidence {
+  border-bottom: 1px solid #d6d5ce;
+  padding: 88px 0;
+}
+
+.metricGrid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 50px;
+}
+
+.metricCard {
+  background: #fff;
+  border: 1px solid #d6d5ce;
+  border-radius: 20px;
+  min-height: 280px;
+  padding: 26px;
+}
+
+.metricCard > span {
+  color: #676960;
+  font-size: 0.76rem;
+}
+
+.metricCard strong {
+  display: block;
+  font-size: clamp(2.1rem, 4vw, 3.4rem);
+  letter-spacing: -0.06em;
+  line-height: 1.1;
+  margin: 54px 0 4px;
+}
+
+.metricCard small {
+  color: #676960;
+  display: block;
+  font-size: 0.72rem;
+}
+
+.metricCard p {
+  border-top: 1px solid #d6d5ce;
+  color: #676960;
+  font-size: 0.82rem;
+  margin: 28px 0 0;
+  padding-top: 16px;
+}
+
+.derived {
+  background: #dfe9e4;
+  border-color: #c2d5cc;
+}
+
+.distinction {
+  border-bottom: 1px solid #d6d5ce;
+}
+
+.distinctionContent {
+  min-width: 0;
+}
+
+.distinctionList {
+  border-top: 1px solid #d6d5ce;
+}
+
+.distinctionList div {
+  align-items: baseline;
+  border-bottom: 1px solid #d6d5ce;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr auto minmax(90px, 0.55fr);
+  padding: 15px 0;
+}
+
+.distinctionList span {
+  color: #676960;
+  font-size: 0.82rem;
+}
+
+.distinctionList strong {
+  font-size: 1rem;
+}
+
+.distinctionList em {
+  color: #676960;
+  font-size: 0.72rem;
+  font-style: normal;
+  text-align: right;
+}
+
+.methodNote {
+  font-size: 0.82rem;
+  margin-top: 22px;
+}
+
+.evidenceGrid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 50px;
+}
+
+.notAssessed {
+  border-bottom: 1px solid #d6d5ce;
+}
+
+.notAssessed ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.notAssessed li {
+  border-top: 1px solid #d6d5ce;
+  padding: 15px 0;
+}
+
+.notAssessed li::before {
+  color: #173f35;
+  content: "未評価";
+  display: inline-block;
+  font-size: 0.66rem;
+  font-weight: 750;
+  margin-right: 14px;
+}
+
+.bottomNav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 36px 0 10px;
+}
+
+.bottomNav a {
+  color: #173f35;
+  font-size: 0.84rem;
+  font-weight: 750;
+  text-underline-offset: 4px;
+}
+
+@media (max-width: 900px) {
+  .hero,
+  .scope,
+  .distinction,
+  .notAssessed {
+    grid-template-columns: 1fr;
+  }
+
+  .metricGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .hero {
+    padding: 62px 0 55px;
+  }
+
+  .scope,
+  .distinction,
+  .notAssessed,
+  .headline,
+  .evidence {
+    padding: 64px 0;
+  }
+
+  .evidenceGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .distinctionList div {
+    grid-template-columns: 1fr auto;
+  }
+
+  .distinctionList em {
+    grid-column: 1 / -1;
+    text-align: left;
+  }
+}

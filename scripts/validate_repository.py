@@ -26,6 +26,9 @@ REQUIRED_FILES = [
     "schemas/registry.json",
     "data/catalog/pilot_scope.json",
     "data/catalog/official_sources.json",
+    "data/reviewed/fukuoka-prefecture/municipality.json",
+    "data/reviewed/fukuoka-prefecture/fiscal_records.json",
+    "data/reviewed/fukuoka-prefecture/evidence_packets.json",
 ]
 
 
@@ -33,6 +36,16 @@ def load_json(relative_path: str) -> Any:
     path = ROOT / relative_path
     with path.open(encoding="utf-8") as handle:
         return json.load(handle)
+
+
+def validate_instance(schema_path: str, instance: Any, label: str) -> list[str]:
+    schema = load_json(schema_path)
+    validator = Draft202012Validator(schema, format_checker=FormatChecker())
+    errors: list[str] = []
+    for error in sorted(validator.iter_errors(instance), key=lambda item: list(item.path)):
+        location = ".".join(str(item) for item in error.path) or "<root>"
+        errors.append(f"{label}:{location}: {error.message}")
+    return errors
 
 
 def validate_required_files() -> list[str]:
@@ -65,7 +78,6 @@ def validate_schema_registry() -> list[str]:
     if len(names) != len(set(names)):
         errors.append("Schema registry contains duplicate names.")
 
-    checker = FormatChecker()
     for entry in entries:
         schema_path = entry["schema"]
         fixture_path = entry["fixture"]
@@ -75,13 +87,7 @@ def validate_schema_registry() -> list[str]:
         if not (ROOT / fixture_path).is_file():
             errors.append(f"Missing fixture registered as {entry['name']}: {fixture_path}")
             continue
-
-        schema = load_json(schema_path)
-        fixture = load_json(fixture_path)
-        validator = Draft202012Validator(schema, format_checker=checker)
-        for error in sorted(validator.iter_errors(fixture), key=lambda item: list(item.path)):
-            location = ".".join(str(item) for item in error.path) or "<root>"
-            errors.append(f"{fixture_path}:{location}: {error.message}")
+        errors.extend(validate_instance(schema_path, load_json(fixture_path), fixture_path))
 
     return errors
 
@@ -201,6 +207,70 @@ def validate_source_catalog() -> list[str]:
     return errors
 
 
+def validate_reviewed_fukuoka_budget() -> list[str]:
+    errors: list[str] = []
+    municipality_path = "data/reviewed/fukuoka-prefecture/municipality.json"
+    fiscal_path = "data/reviewed/fukuoka-prefecture/fiscal_records.json"
+    evidence_path = "data/reviewed/fukuoka-prefecture/evidence_packets.json"
+
+    municipality = load_json(municipality_path)
+    fiscal_records = load_json(fiscal_path)
+    evidence_packets = load_json(evidence_path)
+    catalog = load_json("data/catalog/official_sources.json")
+    source_ids = {record["id"] for record in catalog["records"]}
+
+    errors.extend(
+        validate_instance("schemas/municipality.schema.json", municipality, municipality_path)
+    )
+    for index, record in enumerate(fiscal_records):
+        errors.extend(
+            validate_instance(
+                "schemas/fiscal_record.schema.json",
+                record,
+                f"{fiscal_path}[{index}]",
+            )
+        )
+    for index, packet in enumerate(evidence_packets):
+        errors.extend(
+            validate_instance(
+                "schemas/evidence_packet.schema.json",
+                packet,
+                f"{evidence_path}[{index}]",
+            )
+        )
+
+    fiscal_ids = [record.get("id") for record in fiscal_records]
+    if len(fiscal_ids) != len(set(fiscal_ids)):
+        errors.append("Reviewed Fukuoka fiscal records contain duplicate IDs.")
+
+    expected_municipality_id = municipality.get("id")
+    for record in fiscal_records:
+        if record.get("municipality_id") != expected_municipality_id:
+            errors.append(f"{record.get('id')}: municipality reference is inconsistent.")
+        if record.get("review_status") not in {"reviewed", "verified"}:
+            errors.append(f"{record.get('id')}: public candidate must be reviewed or verified.")
+
+    subject_ids = set(fiscal_ids)
+    for packet in evidence_packets:
+        if packet.get("subject_id") not in subject_ids:
+            errors.append(f"{packet.get('id')}: evidence subject is not a fiscal record.")
+
+    for value in [municipality, fiscal_records, evidence_packets]:
+        missing_sources = set(iter_source_references(value)) - source_ids
+        if missing_sources:
+            errors.append(f"Reviewed Fukuoka data references unknown sources: {sorted(missing_sources)}")
+
+    expected_values = {
+        "jp-local-400009-fiscal-2026-total-revenue": 2_300_000_000_000,
+        "jp-local-400009-fiscal-2026-local-tax": 830_800_000_000,
+    }
+    actual_values = {record["id"]: record["amount_yen"] for record in fiscal_records}
+    if actual_values != expected_values:
+        errors.append("Reviewed Fukuoka budget headline values changed without evidence update.")
+
+    return errors
+
+
 def validate_north_star_links() -> list[str]:
     errors: list[str] = []
     for relative_path in ["README.md", "GOVERNANCE.md"]:
@@ -220,6 +290,7 @@ def main() -> int:
     failures.extend(validate_fixture_markers())
     failures.extend(validate_reference_integrity())
     failures.extend(validate_source_catalog())
+    failures.extend(validate_reviewed_fukuoka_budget())
     failures.extend(validate_north_star_links())
 
     if failures:
