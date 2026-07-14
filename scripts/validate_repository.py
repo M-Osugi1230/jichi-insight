@@ -13,6 +13,21 @@ from jsonschema import Draft202012Validator, FormatChecker
 
 ROOT = Path(__file__).resolve().parents[1]
 
+SOURCE_CATALOG_PATHS = [
+    "data/catalog/official_sources.json",
+    "data/catalog/fukuoka_finance_sources.json",
+]
+
+REVIEWED_FISCAL_PATHS = [
+    "data/reviewed/fukuoka-prefecture/fiscal_records.json",
+    "data/reviewed/fukuoka-prefecture/settlement_records.json",
+]
+
+REVIEWED_EVIDENCE_PATHS = [
+    "data/reviewed/fukuoka-prefecture/evidence_packets.json",
+    "data/reviewed/fukuoka-prefecture/settlement_evidence_packets.json",
+]
+
 REQUIRED_FILES = [
     "README.md",
     "DATA_POLICY.md",
@@ -25,10 +40,10 @@ REQUIRED_FILES = [
     "schemas/README.md",
     "schemas/registry.json",
     "data/catalog/pilot_scope.json",
-    "data/catalog/official_sources.json",
+    *SOURCE_CATALOG_PATHS,
     "data/reviewed/fukuoka-prefecture/municipality.json",
-    "data/reviewed/fukuoka-prefecture/fiscal_records.json",
-    "data/reviewed/fukuoka-prefecture/evidence_packets.json",
+    *REVIEWED_FISCAL_PATHS,
+    *REVIEWED_EVIDENCE_PATHS,
 ]
 
 
@@ -72,6 +87,22 @@ def validate_all_json() -> list[str]:
 def registry_entries() -> list[dict[str, str]]:
     registry = load_json("schemas/registry.json")
     return registry["entries"]
+
+
+def catalog_records() -> list[dict[str, Any]]:
+    return [
+        record
+        for path in SOURCE_CATALOG_PATHS
+        for record in load_json(path)["records"]
+    ]
+
+
+def reviewed_fiscal_records() -> list[dict[str, Any]]:
+    return [record for path in REVIEWED_FISCAL_PATHS for record in load_json(path)]
+
+
+def reviewed_evidence_packets() -> list[dict[str, Any]]:
+    return [record for path in REVIEWED_EVIDENCE_PATHS for record in load_json(path)]
 
 
 def validate_schema_registry() -> list[str]:
@@ -137,9 +168,8 @@ def validate_reference_integrity() -> list[str]:
         for entry in registry_entries()
         if entry["name"] != "source_catalog"
     }
-    catalog = load_json("data/catalog/official_sources.json")
     source_ids = {fixtures["source"]["id"]}
-    source_ids.update(record["id"] for record in catalog["records"])
+    source_ids.update(record["id"] for record in catalog_records())
 
     entity_ids = {
         name: fixture.get("id")
@@ -192,31 +222,41 @@ def validate_reference_integrity() -> list[str]:
     return errors
 
 
-def validate_source_catalog() -> list[str]:
-    catalog = load_json("data/catalog/official_sources.json")
-    records = catalog.get("records", [])
+def validate_source_catalogs() -> list[str]:
     errors: list[str] = []
+    all_records = catalog_records()
 
-    if len(records) < 30:
-        errors.append("Official source catalog must contain at least 30 initial records.")
+    for path in SOURCE_CATALOG_PATHS:
+        errors.extend(
+            validate_instance(
+                "schemas/source_catalog.schema.json",
+                load_json(path),
+                path,
+            )
+        )
 
-    ids = [record.get("id") for record in records]
+    if len(all_records) < 33:
+        errors.append("Combined source catalog must contain at least 33 records.")
+
+    ids = [record.get("id") for record in all_records]
     if len(ids) != len(set(ids)):
-        errors.append("Official source catalog contains duplicate record IDs.")
+        errors.append("Combined source catalog contains duplicate record IDs.")
 
     expected_municipalities = {
         "fukuoka-prefecture",
         "fukuoka-city",
         "kitakyushu-city",
     }
-    actual_municipalities = {record.get("municipality_key") for record in records}
+    actual_municipalities = {
+        record.get("municipality_key") for record in all_records
+    }
     if actual_municipalities != expected_municipalities:
         errors.append(
-            "Official source catalog municipality keys must match the pilot "
+            "Combined source catalog municipality keys must match the pilot "
             "municipalities."
         )
 
-    for record in records:
+    for record in all_records:
         record_id = record.get("id", "<unknown>")
         url = str(record.get("url", ""))
         if not url.startswith("https://"):
@@ -229,17 +269,13 @@ def validate_source_catalog() -> list[str]:
     return errors
 
 
-def validate_reviewed_fukuoka_budget() -> list[str]:
+def validate_reviewed_fukuoka_finance() -> list[str]:
     errors: list[str] = []
     municipality_path = "data/reviewed/fukuoka-prefecture/municipality.json"
-    fiscal_path = "data/reviewed/fukuoka-prefecture/fiscal_records.json"
-    evidence_path = "data/reviewed/fukuoka-prefecture/evidence_packets.json"
-
     municipality = load_json(municipality_path)
-    fiscal_records = load_json(fiscal_path)
-    evidence_packets = load_json(evidence_path)
-    catalog = load_json("data/catalog/official_sources.json")
-    source_ids = {record["id"] for record in catalog["records"]}
+    fiscal_records = reviewed_fiscal_records()
+    evidence_packets = reviewed_evidence_packets()
+    source_ids = {record["id"] for record in catalog_records()}
 
     errors.extend(
         validate_instance(
@@ -253,7 +289,7 @@ def validate_reviewed_fukuoka_budget() -> list[str]:
             validate_instance(
                 "schemas/fiscal_record.schema.json",
                 record,
-                f"{fiscal_path}[{index}]",
+                f"reviewed fiscal record[{index}]",
             )
         )
     for index, packet in enumerate(evidence_packets):
@@ -261,7 +297,7 @@ def validate_reviewed_fukuoka_budget() -> list[str]:
             validate_instance(
                 "schemas/evidence_packet.schema.json",
                 packet,
-                f"{evidence_path}[{index}]",
+                f"reviewed evidence packet[{index}]",
             )
         )
 
@@ -279,12 +315,12 @@ def validate_reviewed_fukuoka_budget() -> list[str]:
                 f"{record_id}: public candidate must be reviewed or verified."
             )
 
-    subject_ids = set(fiscal_ids)
-    for packet in evidence_packets:
-        if packet.get("subject_id") not in subject_ids:
-            errors.append(
-                f"{packet.get('id')}: evidence subject is not a fiscal record."
-            )
+    evidence_subject_ids = {packet.get("subject_id") for packet in evidence_packets}
+    if evidence_subject_ids != set(fiscal_ids):
+        errors.append(
+            "Every reviewed Fukuoka fiscal record must have exactly one evidence "
+            "packet subject."
+        )
 
     for value in [municipality, fiscal_records, evidence_packets]:
         missing_sources = set(iter_source_references(value)) - source_ids
@@ -297,15 +333,31 @@ def validate_reviewed_fukuoka_budget() -> list[str]:
     expected_values = {
         "jp-local-400009-fiscal-2026-total-revenue": 2_300_000_000_000,
         "jp-local-400009-fiscal-2026-local-tax": 830_800_000_000,
+        "jp-local-400009-fiscal-2020-ordinary-revenue": 2_136_593_000_000,
+        "jp-local-400009-fiscal-2020-ordinary-expenditure": 2_018_161_000_000,
+        "jp-local-400009-fiscal-2021-ordinary-revenue": 2_528_210_000_000,
+        "jp-local-400009-fiscal-2021-ordinary-expenditure": 2_461_286_000_000,
+        "jp-local-400009-fiscal-2022-ordinary-revenue": 2_277_786_000_000,
+        "jp-local-400009-fiscal-2022-ordinary-expenditure": 2_203_057_000_000,
+        "jp-local-400009-fiscal-2023-ordinary-revenue": 2_054_311_000_000,
+        "jp-local-400009-fiscal-2023-ordinary-expenditure": 1_993_405_000_000,
+        "jp-local-400009-fiscal-2024-ordinary-revenue": 2_093_700_000_000,
+        "jp-local-400009-fiscal-2024-ordinary-expenditure": 2_032_626_000_000,
+        "jp-local-400009-fiscal-2024-ordinary-local-tax": 784_235_000_000,
     }
     actual_values = {
         record["id"]: record["amount_yen"] for record in fiscal_records
     }
     if actual_values != expected_values:
         errors.append(
-            "Reviewed Fukuoka budget headline values changed without evidence "
-            "update."
+            "Reviewed Fukuoka finance values changed without an evidence update."
         )
+
+    settlement_records = [
+        record for record in fiscal_records if record["stage"] == "settlement"
+    ]
+    if any(record["account_type"] != "ordinary" for record in settlement_records):
+        errors.append("Settlement trend records must use the ordinary-account type.")
 
     return errors
 
@@ -330,8 +382,8 @@ def main() -> int:
     failures.extend(validate_schema_registry())
     failures.extend(validate_fixture_markers())
     failures.extend(validate_reference_integrity())
-    failures.extend(validate_source_catalog())
-    failures.extend(validate_reviewed_fukuoka_budget())
+    failures.extend(validate_source_catalogs())
+    failures.extend(validate_reviewed_fukuoka_finance())
     failures.extend(validate_north_star_links())
 
     if failures:

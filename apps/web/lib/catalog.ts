@@ -1,4 +1,5 @@
-import catalog from "../../../data/catalog/official_sources.json";
+import financeCatalog from "../../../data/catalog/fukuoka_finance_sources.json";
+import officialCatalog from "../../../data/catalog/official_sources.json";
 
 export type MunicipalityKey =
   | "fukuoka-prefecture"
@@ -26,7 +27,7 @@ export const municipalityMeta: Record<
     name: string;
     type: string;
     summary: string;
-    status: "資料索引中" | "当初予算公開";
+    status: "資料索引中" | "財政データ公開";
     href: string | null;
   }
 > = {
@@ -34,7 +35,7 @@ export const municipalityMeta: Record<
     name: "福岡県",
     type: "都道府県",
     summary: "県財政、重点政策、知事公約、県議会を一つの流れで検証します。",
-    status: "当初予算公開",
+    status: "財政データ公開",
     href: "/municipalities/fukuoka-prefecture",
   },
   "fukuoka-city": {
@@ -53,15 +54,18 @@ export const municipalityMeta: Record<
   },
 };
 
-export const sourceCatalog = catalog.records as SourceRecord[];
+export const sourceCatalog = [
+  ...(officialCatalog.records as SourceRecord[]),
+  ...(financeCatalog.records as SourceRecord[]),
+];
 
 export const catalogStats = {
   municipalities: Object.keys(municipalityMeta).length,
   officialSources: sourceCatalog.length,
   reviewedSources: sourceCatalog.filter((source) => source.review_status === "reviewed").length,
   publishedEvaluations: 0,
-  publishedFiscalValues: 2,
-  updatedAt: catalog.updated_at,
+  publishedFiscalValues: 13,
+  updatedAt: financeCatalog.updated_at,
 };
 
 export function sourcesForMunicipality(key: MunicipalityKey) {

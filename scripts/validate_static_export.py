@@ -11,6 +11,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 EXPORT_ROOT = ROOT / "apps" / "web" / "out"
 
+SOURCE_CATALOG_PATHS = [
+    ROOT / "data" / "catalog" / "official_sources.json",
+    ROOT / "data" / "catalog" / "fukuoka_finance_sources.json",
+]
+
 REQUIRED_FILES = [
     "index.html",
     "404.html",
@@ -36,9 +41,11 @@ def parse_args() -> argparse.Namespace:
 
 
 def catalog_source_count() -> int:
-    path = ROOT / "data" / "catalog" / "official_sources.json"
-    with path.open(encoding="utf-8") as handle:
-        return len(json.load(handle)["records"])
+    total = 0
+    for path in SOURCE_CATALOG_PATHS:
+        with path.open(encoding="utf-8") as handle:
+            total += len(json.load(handle)["records"])
+    return total
 
 
 def main() -> int:
@@ -85,8 +92,12 @@ def main() -> int:
         required_fukuoka_copy = [
             "2.3兆円",
             "8,308億円",
+            "5年間の「実績」",
+            "2020–2024 ordinary-account settlement",
+            "2兆937億円",
+            "2024年度",
+            "普通会計",
             "まだ評価していないこと",
-            "当初予算",
             "PDFの2ページ目",
         ]
         for copy in required_fukuoka_copy:

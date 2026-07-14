@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-07-15",
+  "scope": "pilot",
+  "records": [
+    {
+      "id": "fukuoka-pref-settlement-2024-page",
+      "municipality_key": "fukuoka-prefecture",
+      "organization": "福岡県",
+      "category": "settlement",
+      "title": "福岡県の財政（令和6年度決算）",
+      "url": "https://www.pref.fukuoka.lg.jp/contents/6kessann.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-07-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "2024年度の普通会計決算、財政状況、財務書類を掲載する年度別公式ページ。"
+    },
+    {
+      "id": "fukuoka-pref-settlement-2024-p1-pdf",
+      "municipality_key": "fukuoka-prefecture",
+      "organization": "福岡県",
+      "category": "settlement",
+      "title": "令和6年度普通会計決算：概要・最近5年間の決算の推移",
+      "url": "https://www.pref.fukuoka.lg.jp/uploaded/life/795411_62710423_misc.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-07-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "1ページPDF。2020〜2024年度の普通会計歳入・歳出・収支推移を百万円単位で掲載。"
+    },
+    {
+      "id": "fukuoka-pref-settlement-2024-p2-pdf",
+      "municipality_key": "fukuoka-prefecture",
+      "organization": "福岡県",
+      "category": "settlement",
+      "title": "令和6年度普通会計決算：歳入決算の状況",
+      "url": "https://www.pref.fukuoka.lg.jp/uploaded/life/795411_62710424_misc.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-07-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "1ページPDF。2024年度の県税、地方交付税、国庫支出金、県債等の歳入構成を掲載。"
+    }
+  ]
+}

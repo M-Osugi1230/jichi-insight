@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { EvidencePanel } from "@/components/EvidencePanel";
+import { SettlementTrend } from "@/components/SettlementTrend";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { StatusBadge } from "@/components/StatusBadge";
@@ -15,9 +16,9 @@ import {
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
-  title: "福岡県｜2026年度当初予算",
+  title: "福岡県｜当初予算と普通会計決算",
   description:
-    "福岡県の2026年度一般会計当初予算と県税収入を、公式資料の該当ページと確認状態付きで表示します。",
+    "福岡県の2026年度一般会計当初予算と2020〜2024年度普通会計決算を、公式資料の該当ページと確認状態付きで表示します。",
 };
 
 export default function FukuokaPrefecturePage() {
@@ -40,18 +41,18 @@ export default function FukuokaPrefecturePage() {
             </div>
             <h1>福岡県</h1>
             <p>
-              現在公開しているのは、2026年度一般会計の<strong>当初予算</strong>に関する
-              2つの確認済み数値です。執行額、決算、政策成果の評価ではありません。
+              現在は、2026年度一般会計の<strong>当初予算</strong>と、2020〜2024年度の
+              <strong>普通会計決算</strong>を公開しています。政策成果や行政運営の評価はまだ行っていません。
             </p>
           </div>
           <dl className={styles.heroFacts}>
             <div>
-              <dt>対象年度</dt>
-              <dd>2026年度</dd>
+              <dt>確認済み財政値</dt>
+              <dd>13項目</dd>
             </div>
             <div>
-              <dt>データ段階</dt>
-              <dd>当初予算</dd>
+              <dt>収録年度</dt>
+              <dd>2020〜2024・2026</dd>
             </div>
             <div>
               <dt>最終確認</dt>
@@ -63,21 +64,20 @@ export default function FukuokaPrefecturePage() {
         <section className={styles.scope} aria-labelledby="scope-title">
           <div>
             <p className="eyebrow">Scope</p>
-            <h2 id="scope-title">「予算」と「実際に使った金額」を分ける。</h2>
+            <h2 id="scope-title">「計画した金額」と「決算の実績」を分ける。</h2>
           </div>
           <p>
-            当初予算は、年度開始前に計画した金額です。年度中の補正、実際の執行額、
-            年度終了後の決算とは異なります。このページだけで税金の使い方や成果の良し悪しは評価できません。
+            当初予算、補正予算、執行額、決算は別の数字です。さらに一般会計と普通会計では範囲も異なります。
+            このページでは、年度・会計区分・予算段階を分け、直接比較できない数字を同じ系列に混ぜません。
           </p>
         </section>
 
         <section className={styles.headline} aria-labelledby="finance-headline-title">
           <div className="sectionIntro">
             <p className="eyebrow">2026 initial budget</p>
-            <h2 id="finance-headline-title">最初に確認できた財政の全体像</h2>
+            <h2 id="finance-headline-title">2026年度に計画した一般会計の規模</h2>
             <p>
-              福岡県が2026年2月13日に公表した当初予算概要の同じページから、
-              一般会計当初予算と県税収入を確認しました。
+              福岡県が2026年2月13日に公表した当初予算概要から、一般会計当初予算と県税収入を確認しました。
             </p>
           </div>
           <div className={styles.metricGrid}>
@@ -105,11 +105,11 @@ export default function FukuokaPrefecturePage() {
         <section className={styles.distinction} aria-labelledby="distinction-title">
           <div>
             <p className="eyebrow">Do not mix</p>
-            <h2 id="distinction-title">同じ資料の5つの金額を、混同しない。</h2>
+            <h2 id="distinction-title">同じ予算資料の5つの金額を、混同しない。</h2>
           </div>
           <div className={styles.distinctionContent}>
             <div className={styles.distinctionList}>
-              <div><span>当初予算</span><strong>2兆3,000億円</strong><em>このページで表示</em></div>
+              <div><span>当初予算</span><strong>2兆3,000億円</strong><em>確認済み</em></div>
               <div><span>2026年2月補正予算</span><strong>822億円</strong><em>未収録</em></div>
               <div><span>2025年12月補正予算</span><strong>310億円</strong><em>未収録</em></div>
               <div><span>2月定例会提案額</span><strong>2兆3,822億円</strong><em>未収録</em></div>
@@ -121,6 +121,8 @@ export default function FukuokaPrefecturePage() {
             </p>
           </div>
         </section>
+
+        <SettlementTrend />
 
         <section className={styles.evidence} aria-labelledby="evidence-title">
           <div className="sectionIntro">
@@ -145,11 +147,11 @@ export default function FukuokaPrefecturePage() {
             <h2>まだ評価していないこと</h2>
           </div>
           <ul>
-            <li>予算が実際にどこまで執行されたか</li>
+            <li>2026年度予算が実際にどこまで執行されたか</li>
             <li>事業別・契約先別に何へ支払われたか</li>
             <li>設定したKPIを達成したか</li>
             <li>住民サービスや地域経済がどう変わったか</li>
-            <li>類似自治体に比べて妥当な規模か</li>
+            <li>類似自治体に比べて妥当な財政規模か</li>
           </ul>
         </section>
 
