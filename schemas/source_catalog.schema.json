@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.example/schemas/source_catalog.schema.json",
+  "title": "Jichi Insight Official Source Catalog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "updated_at", "scope", "records"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "scope": {
+      "type": "string",
+      "enum": ["pilot", "national"]
+    },
+    "records": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "municipality_key",
+          "organization",
+          "category",
+          "title",
+          "url",
+          "source_kind",
+          "availability",
+          "indexed_at",
+          "review_status",
+          "confidence",
+          "notes"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "municipality_key": {
+            "type": "string",
+            "enum": ["fukuoka-prefecture", "fukuoka-city", "kitakyushu-city"]
+          },
+          "organization": {
+            "type": "string",
+            "minLength": 1
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "assembly",
+              "audit",
+              "budget",
+              "budget_settlement",
+              "comprehensive_plan",
+              "contracts",
+              "disclosure_statistics_audit",
+              "election",
+              "election_audit",
+              "executive",
+              "inspection_trips",
+              "official_profile",
+              "plans_election",
+              "political_activity_expenses",
+              "priority_projects",
+              "procurement",
+              "project_evaluation",
+              "proposals",
+              "settlement"
+            ]
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "source_kind": {
+            "type": "string",
+            "enum": ["landing_page", "document", "dataset", "search_system"]
+          },
+          "availability": {
+            "type": "string",
+            "enum": ["published", "not_published", "not_found", "restricted", "unknown"]
+          },
+          "indexed_at": {
+            "type": "string",
+            "format": "date"
+          },
+          "review_status": {
+            "type": "string",
+            "enum": ["verified", "reviewed", "extracted", "inferred", "missing"]
+          },
+          "confidence": {
+            "type": "string",
+            "enum": ["high", "medium", "low", "not_assessable"]
+          },
+          "notes": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}
