@@ -60,7 +60,25 @@ jobs:
         run: pnpm typecheck
 
       - name: Build
-        run: pnpm build
+        run: |
+          set +e
+          pnpm build > build.log 2>&1
+          status=$?
+          if [ "$status" -ne 0 ]; then
+            tail -n 200 build.log > build-error.log
+            cat build-error.log
+            exit "$status"
+          fi
+          cat build.log
+
+      - name: Upload build diagnostics
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: web-build-diagnostics
+          path: build-error.log
+          if-no-files-found: ignore
+          retention-days: 7
 
       - name: Validate static export
         run: python scripts/validate_static_export.py
