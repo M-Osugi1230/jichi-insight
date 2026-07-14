@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 from pathlib import Path
 
@@ -16,6 +17,7 @@ REQUIRED_FILES = [
     "about/index.html",
     "methodology/index.html",
     "municipalities/index.html",
+    "municipalities/fukuoka-prefecture/index.html",
     "sources/index.html",
     "robots.txt",
     "sitemap.xml",
@@ -31,6 +33,12 @@ def parse_args() -> argparse.Namespace:
         help="Expected deployment base path, such as /jichi-insight.",
     )
     return parser.parse_args()
+
+
+def catalog_source_count() -> int:
+    path = ROOT / "data" / "catalog" / "official_sources.json"
+    with path.open(encoding="utf-8") as handle:
+        return len(json.load(handle)["records"])
 
 
 def main() -> int:
@@ -55,7 +63,7 @@ def main() -> int:
                 failures.append(f"Home page is missing required copy: {copy}")
 
         if args.base_path:
-            expected_asset_prefix = f'{args.base_path}/_next/'
+            expected_asset_prefix = f"{args.base_path}/_next/"
             if expected_asset_prefix not in index:
                 failures.append(
                     "Static export does not contain the expected base-path asset prefix: "
@@ -65,8 +73,25 @@ def main() -> int:
     sources_path = EXPORT_ROOT / "sources" / "index.html"
     if sources_path.is_file():
         sources = sources_path.read_text(encoding="utf-8")
-        if "30" not in sources or "公式資料" not in sources:
-            failures.append("Sources page does not expose the initial source catalog summary.")
+        expected_count = str(catalog_source_count())
+        if expected_count not in sources or "公式資料" not in sources:
+            failures.append(
+                "Sources page does not expose the current source catalog summary."
+            )
+
+    fukuoka_path = EXPORT_ROOT / "municipalities" / "fukuoka-prefecture" / "index.html"
+    if fukuoka_path.is_file():
+        fukuoka = fukuoka_path.read_text(encoding="utf-8")
+        required_fukuoka_copy = [
+            "2.3兆円",
+            "8,308億円",
+            "まだ評価していないこと",
+            "当初予算",
+            "PDFの2ページ目",
+        ]
+        for copy in required_fukuoka_copy:
+            if copy not in fukuoka:
+                failures.append(f"Fukuoka page is missing required copy: {copy}")
 
     if failures:
         print("Static export validation failed:")

@@ -78,7 +78,7 @@
       "type": "array",
       "items": {
         "type": "string",
-        "pattern": "^source-[a-z0-9-]+$"
+        "pattern": "^[a-z0-9-]+$"
       },
       "minItems": 1,
       "uniqueItems": true

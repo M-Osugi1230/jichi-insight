@@ -1,5 +1,5 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "updated_at": "2026-07-15",
   "scope": "pilot",
   "records": [
@@ -8,6 +8,8 @@
     {"id":"fukuoka-pref-evaluation","municipality_key":"fukuoka-prefecture","organization":"福岡県","category":"project_evaluation","title":"行政評価","url":"https://www.pref.fukuoka.lg.jp/life/8/53/239/","source_kind":"landing_page","availability":"published","indexed_at":"2026-07-15","review_status":"reviewed","confidence":"high","notes":"行政評価資料の入口。"},
     {"id":"fukuoka-pref-audit","municipality_key":"fukuoka-prefecture","organization":"福岡県","category":"audit","title":"監査","url":"https://www.pref.fukuoka.lg.jp/life/8/53/385/","source_kind":"landing_page","availability":"published","indexed_at":"2026-07-15","review_status":"reviewed","confidence":"high","notes":"監査結果・監査制度の入口。"},
     {"id":"fukuoka-pref-budget","municipality_key":"fukuoka-prefecture","organization":"福岡県","category":"budget","title":"予算","url":"https://www.pref.fukuoka.lg.jp/life/8/54/243/","source_kind":"landing_page","availability":"published","indexed_at":"2026-07-15","review_status":"reviewed","confidence":"high","notes":"当初予算・補正予算等の入口。"},
+    {"id":"fukuoka-pref-budget-2026-page","municipality_key":"fukuoka-prefecture","organization":"福岡県","category":"budget","title":"令和8年度（2026年度）予算","url":"https://www.pref.fukuoka.lg.jp/contents/r8-2026.html","source_kind":"document","availability":"published","indexed_at":"2026-07-15","review_status":"reviewed","confidence":"high","notes":"2026年2月13日に公表された当初予算と補正予算資料の年度別ページ。"},
+    {"id":"fukuoka-pref-budget-2026-overview-pdf","municipality_key":"fukuoka-prefecture","organization":"福岡県","category":"budget","title":"令和8年度当初予算・令和7年度2月補正予算の概要","url":"https://www.pref.fukuoka.lg.jp/uploaded/attachment/277131.pdf","source_kind":"document","availability":"published","indexed_at":"2026-07-15","review_status":"reviewed","confidence":"high","notes":"PDF2ページ目に一般会計当初予算、16か月予算、県税収入等の概要を掲載。"},
     {"id":"fukuoka-pref-settlement","municipality_key":"fukuoka-prefecture","organization":"福岡県","category":"settlement","title":"決算","url":"https://www.pref.fukuoka.lg.jp/life/8/54/244/","source_kind":"landing_page","availability":"published","indexed_at":"2026-07-15","review_status":"reviewed","confidence":"high","notes":"決算資料の入口。"},
     {"id":"fukuoka-pref-special-contracts","municipality_key":"fukuoka-prefecture","organization":"福岡県","category":"contracts","title":"特命随意契約・海外活動契約の公表","url":"https://www.pref.fukuoka.lg.jp/life/8/56/256/","source_kind":"landing_page","availability":"published","indexed_at":"2026-07-15","review_status":"reviewed","confidence":"high","notes":"特命随意契約・海外活動契約の公表入口。"},
     {"id":"fukuoka-pref-bid-results","municipality_key":"fukuoka-prefecture","organization":"福岡県","category":"procurement","title":"入札結果","url":"https://www.pref.fukuoka.lg.jp/life/8/63/277/","source_kind":"landing_page","availability":"published","indexed_at":"2026-07-15","review_status":"reviewed","confidence":"high","notes":"入札結果の入口。"},

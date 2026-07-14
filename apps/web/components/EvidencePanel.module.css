@@ -1,0 +1,115 @@
+.panel {
+  background: #fff;
+  border: 1px solid #d6d5ce;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 26px;
+}
+
+.header {
+  align-items: flex-start;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.header h3 {
+  font-size: 1.35rem;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.facts {
+  border-bottom: 1px solid #d6d5ce;
+  border-top: 1px solid #d6d5ce;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 26px 0;
+}
+
+.facts div {
+  padding: 15px 10px 15px 0;
+}
+
+.facts dt {
+  color: #676960;
+  font-size: 0.7rem;
+}
+
+.facts dd {
+  font-size: 0.84rem;
+  font-weight: 750;
+  margin: 2px 0 0;
+}
+
+.claim {
+  background: #f4f3ee;
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.claim p {
+  font-weight: 720;
+  margin-bottom: 8px;
+}
+
+.claim span,
+.claim small {
+  color: #676960;
+  display: block;
+  font-size: 0.76rem;
+}
+
+.claim small {
+  margin-top: 7px;
+}
+
+.sources {
+  border-top: 1px solid #d6d5ce;
+  margin-top: 24px;
+  padding-top: 18px;
+}
+
+.sources p,
+.questions p {
+  color: #676960;
+  font-size: 0.7rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.sources a {
+  color: #173f35;
+  display: block;
+  font-size: 0.83rem;
+  font-weight: 720;
+  margin-top: 8px;
+  text-underline-offset: 4px;
+}
+
+.questions {
+  margin-top: 22px;
+}
+
+.questions ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.questions li {
+  color: #676960;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 620px) {
+  .facts {
+    grid-template-columns: 1fr;
+  }
+
+  .facts div + div {
+    border-top: 1px solid #d6d5ce;
+  }
+}
