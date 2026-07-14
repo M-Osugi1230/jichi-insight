@@ -11,6 +11,7 @@ export function SiteFooter() {
         <Link href="/about">このサイトの目的</Link>
         <Link href="/methodology">方法論</Link>
         <Link href="/sources">公式資料カタログ</Link>
+        <Link href="/corrections">訂正・反論</Link>
       </div>
     </footer>
   );
