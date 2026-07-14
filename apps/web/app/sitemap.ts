@@ -5,6 +5,7 @@ const routes = [
   "",
   "/about",
   "/corrections",
+  "/data-quality",
   "/methodology",
   "/municipalities",
   "/municipalities/fukuoka-prefecture",

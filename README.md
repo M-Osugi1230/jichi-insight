@@ -103,6 +103,7 @@ pnpm check
 - [Data model](docs/DATA_MODEL.md)
 - [Methodology](docs/METHODOLOGY.md)
 - [Editorial policy](docs/EDITORIAL_POLICY.md)
+- [Data quality and publication readiness](docs/DATA_QUALITY.md)
 - [Corrections and right of reply](docs/CORRECTIONS.md)
 - [Development plan](docs/DEVELOPMENT_PLAN.md)
 - [Roadmap](docs/ROADMAP.md)
