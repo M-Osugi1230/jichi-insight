@@ -1,0 +1,33 @@
+name: Product or engineering proposal
+description: Propose a user-facing feature or engineering improvement.
+title: "[Feature] "
+labels: ["type:frontend"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What user problem should be solved?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and non-scope
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Suggested priority
+      options: [P0, P1, P2]

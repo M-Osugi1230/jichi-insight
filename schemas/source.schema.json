@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.example/schemas/source.schema.json",
+  "title": "Jichi Insight Source",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "source_url",
+    "source_title",
+    "source_organization",
+    "document_type",
+    "retrieved_at",
+    "review_status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^source-[a-z0-9-]+$"
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://"
+    },
+    "source_title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_organization": {
+      "type": "string",
+      "minLength": 1
+    },
+    "document_type": {
+      "type": "string",
+      "enum": [
+        "budget",
+        "settlement",
+        "project_evaluation",
+        "plan",
+        "manifesto",
+        "election_bulletin",
+        "minutes",
+        "proposal",
+        "vote",
+        "audit",
+        "contract",
+        "procurement",
+        "statistics",
+        "press_release",
+        "other"
+      ]
+    },
+    "published_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "retrieved_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "last_verified_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "fiscal_year": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1900,
+      "maximum": 2200
+    },
+    "page_number": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "location_note": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_quote": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 500
+    },
+    "content_hash": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "extraction_method": {
+      "type": "string",
+      "enum": [
+        "manual",
+        "structured_download",
+        "html_parse",
+        "pdf_text",
+        "ocr",
+        "api",
+        "mixed"
+      ]
+    },
+    "review_status": {
+      "type": "string",
+      "enum": [
+        "verified",
+        "reviewed",
+        "extracted",
+        "inferred",
+        "missing"
+      ]
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "high",
+        "medium",
+        "low",
+        "not_assessable"
+      ]
+    }
+  }
+}

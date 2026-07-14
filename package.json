@@ -1,0 +1,18 @@
+{
+  "name": "jichi-insight",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.0.0",
+  "engines": {
+    "node": ">=24 <27"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @jichi-insight/web dev",
+    "build": "pnpm --filter @jichi-insight/web build",
+    "lint": "pnpm --filter @jichi-insight/web lint",
+    "typecheck": "pnpm --filter @jichi-insight/web typecheck",
+    "validate:data": "python scripts/validate_repository.py",
+    "test:py": "pytest",
+    "check": "pnpm validate:data && pnpm test:py && pnpm lint && pnpm typecheck && pnpm build"
+  }
+}

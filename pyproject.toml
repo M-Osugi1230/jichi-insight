@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jichi-insight-pipelines"
+version = "0.0.0"
+description = "Evidence-first data pipelines for Jichi Insight"
+requires-python = ">=3.12"
+dependencies = [
+  "jsonschema>=4.23,<5",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3,<9",
+  "ruff>=0.9,<1",
+]
+
+[tool.setuptools]
+packages = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+extend-exclude = [
+  "data/raw",
+  "data/extracted",
+  "data/reviewed",
+  "data/published",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]

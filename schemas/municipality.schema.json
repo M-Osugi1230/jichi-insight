@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.example/schemas/municipality.schema.json",
+  "title": "Jichi Insight Municipality",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "official_code",
+    "name_ja",
+    "municipality_type",
+    "prefecture_name_ja",
+    "official_url",
+    "data_status",
+    "sources"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^jp-local-[0-9]{6}$"
+    },
+    "official_code": {
+      "type": "string",
+      "pattern": "^[0-9]{6}$"
+    },
+    "name_ja": {
+      "type": "string",
+      "minLength": 1
+    },
+    "municipality_type": {
+      "type": "string",
+      "enum": [
+        "prefecture",
+        "designated_city",
+        "special_ward",
+        "core_city",
+        "city",
+        "town",
+        "village"
+      ]
+    },
+    "prefecture_name_ja": {
+      "type": "string",
+      "minLength": 1
+    },
+    "official_url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://"
+    },
+    "data_status": {
+      "type": "string",
+      "enum": [
+        "coverage",
+        "indexed",
+        "extracted",
+        "reviewed",
+        "published"
+      ]
+    },
+    "fiscal_years": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 1900,
+        "maximum": 2200
+      },
+      "uniqueItems": true
+    },
+    "last_verified_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^source-[a-z0-9-]+$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}
