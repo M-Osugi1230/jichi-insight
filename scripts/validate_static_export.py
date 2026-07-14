@@ -123,7 +123,7 @@ def main() -> int:
         for copy in [
             "件数ではなく、確認の深さを公開する。",
             "Evidence coverage",
-            "100%",
+            "Reviewed財政値に対応するEvidence Packetの割合。",
             "データ不足を、点数で埋めません。",
         ]:
             if copy not in quality:
