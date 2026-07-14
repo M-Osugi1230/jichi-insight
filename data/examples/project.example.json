@@ -1,0 +1,40 @@
+{
+  "id": "jp-local-000000-project-2026-example-digital-service",
+  "municipality_id": "jp-local-000000",
+  "fiscal_year": 2026,
+  "official_title": "【架空例】行政手続オンライン化事業",
+  "plain_title": "【架空例】市役所の手続きをオンラインで完結できるようにする事業",
+  "purpose": "このデータはスキーマ検証専用の架空例であり、実在する自治体・事業を示しません。",
+  "target_population": "架空自治体の住民",
+  "policy_area": "digital",
+  "related_promise_ids": [],
+  "budget_records": [
+    {
+      "kind": "initial_budget",
+      "amount_yen": 100000000,
+      "fiscal_year": 2026,
+      "note": "架空値"
+    },
+    {
+      "kind": "settlement",
+      "amount_yen": null,
+      "fiscal_year": 2026,
+      "note": "年度終了前のため評価不能という例"
+    }
+  ],
+  "kpis": [
+    {
+      "name": "オンライン完結可能な手続数",
+      "unit": "手続",
+      "baseline": 10,
+      "target": 50,
+      "actual": null,
+      "assessment": "in_progress"
+    }
+  ],
+  "review_status": "reviewed",
+  "confidence": "high",
+  "sources": [
+    "source-example-fictional"
+  ]
+}

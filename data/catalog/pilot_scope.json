@@ -1,0 +1,53 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-07-15",
+  "status": "foundation",
+  "municipalities": [
+    {
+      "name_ja": "福岡県",
+      "municipality_type": "prefecture",
+      "priority": "P0",
+      "target_depth": "published",
+      "notes": "県・県議会・知事を一体で検証する。公式コードは資料確認後に登録する。"
+    },
+    {
+      "name_ja": "福岡市",
+      "municipality_type": "designated_city",
+      "priority": "P0",
+      "target_depth": "published",
+      "notes": "市長公約、重点事業、市議会を対象とする。公式コードは資料確認後に登録する。"
+    },
+    {
+      "name_ja": "北九州市",
+      "municipality_type": "designated_city",
+      "priority": "P0",
+      "target_depth": "published",
+      "notes": "福岡市との比較可能性を検証する。公式コードは資料確認後に登録する。"
+    }
+  ],
+  "required_source_categories": [
+    "official_profile",
+    "budget",
+    "settlement",
+    "financial_indicators",
+    "comprehensive_plan",
+    "project_evaluation",
+    "contracts",
+    "procurement",
+    "audit",
+    "executive_manifesto",
+    "election_bulletin",
+    "assembly_members",
+    "proposals",
+    "votes",
+    "minutes",
+    "political_activity_expenses",
+    "inspection_trips"
+  ],
+  "minimum_publication_targets": {
+    "fiscal_years": 3,
+    "priority_projects": 30,
+    "source_link_rate": 1.0,
+    "evaluated_record_minimum_status": "reviewed"
+  }
+}

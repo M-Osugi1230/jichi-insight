@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.example/schemas/promise.schema.json",
+  "title": "Jichi Insight Promise",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "municipality_id",
+    "executive_term_id",
+    "original_text",
+    "policy_area",
+    "progress_state",
+    "controllability",
+    "review_status",
+    "sources"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+-promise-[0-9]{3,}$"
+    },
+    "municipality_id": {
+      "type": "string",
+      "pattern": "^jp-local-[0-9]{6}$"
+    },
+    "executive_term_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "original_text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "plain_summary": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "policy_area": {
+      "type": "string"
+    },
+    "baseline": {
+      "type": [
+        "number",
+        "string",
+        "null"
+      ]
+    },
+    "target": {
+      "type": [
+        "number",
+        "string",
+        "null"
+      ]
+    },
+    "deadline": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "funding_statement": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "controllability": {
+      "type": "string",
+      "enum": [
+        "high",
+        "medium",
+        "low",
+        "shared",
+        "not_assessable"
+      ]
+    },
+    "progress_state": {
+      "type": "string",
+      "enum": [
+        "achieved",
+        "mostly_achieved",
+        "partially_achieved",
+        "in_progress",
+        "not_started",
+        "changed",
+        "abandoned",
+        "not_assessable"
+      ]
+    },
+    "related_project_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "change_explanation": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "review_status": {
+      "type": "string",
+      "enum": [
+        "verified",
+        "reviewed",
+        "extracted",
+        "inferred",
+        "missing"
+      ]
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^source-[a-z0-9-]+$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}

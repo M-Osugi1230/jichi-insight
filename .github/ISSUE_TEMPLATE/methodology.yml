@@ -1,0 +1,40 @@
+name: Methodology change
+description: Propose a change to an evaluation rule, threshold, comparison group, or definition.
+title: "[Methodology] "
+labels: ["type:methodology", "status:needs-review"]
+body:
+  - type: textarea
+    id: current
+    attributes:
+      label: Current method
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed method
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale and evidence
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Expected impact on existing evaluations
+    validations:
+      required: true
+  - type: checkboxes
+    id: principles
+    attributes:
+      label: Principle check
+      options:
+        - label: The proposal does not score political ideology or party preference.
+          required: true
+        - label: The rule can be applied consistently to all comparable entities.
+          required: true
+        - label: Missing data and not-assessable cases are defined.
+          required: true

@@ -1,0 +1,40 @@
+name: Data correction
+description: Report a factual error, missing source, or incorrect linkage.
+title: "[Correction] "
+labels: ["type:data", "status:needs-review"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Affected page or record
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current statement or value
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Proposed correction
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Official evidence
+      description: Include the official URL, document title, fiscal year and page.
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - P0 — could materially mislead users
+        - P1 — important factual error
+        - P2 — minor wording or metadata
+    validations:
+      required: true
