@@ -21,6 +21,7 @@ REQUIRED_FILES = [
     "404.html",
     "about/index.html",
     "corrections/index.html",
+    "data-quality/index.html",
     "methodology/index.html",
     "municipalities/index.html",
     "municipalities/fukuoka-prefecture/index.html",
@@ -115,6 +116,20 @@ def main() -> int:
         ]:
             if copy not in corrections:
                 failures.append(f"Corrections page is missing required copy: {copy}")
+
+    quality_path = EXPORT_ROOT / "data-quality" / "index.html"
+    if quality_path.is_file():
+        quality = quality_path.read_text(encoding="utf-8")
+        for copy in [
+            "件数ではなく、確認の深さを公開する。",
+            "Evidence coverage",
+            "100%",
+            "データ不足を、点数で埋めません。",
+        ]:
+            if copy not in quality:
+                failures.append(
+                    f"Data quality page is missing required copy: {copy}"
+                )
 
     if failures:
         print("Static export validation failed:")
