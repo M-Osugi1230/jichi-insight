@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.example/schemas/manifesto_source_search.schema.json",
+  "title": "Jichi Insight Manifesto Source Search",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "executive_term_id",
+    "searched_at",
+    "search_scopes",
+    "result_status",
+    "manifesto_source_ids_found",
+    "checked_source_ids",
+    "nonexistence_claim",
+    "review_note",
+    "next_actions",
+    "review_status",
+    "confidence"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^manifesto-source-search-[a-z0-9-]+$"
+    },
+    "executive_term_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "searched_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "search_scopes": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "official_election_result_page",
+          "official_site_search",
+          "official_document_archive",
+          "candidate_publication_search",
+          "general_web_search"
+        ]
+      }
+    },
+    "result_status": {
+      "type": "string",
+      "enum": [
+        "source_registered",
+        "official_result_only",
+        "no_stable_primary_source_found",
+        "follow_up_required"
+      ]
+    },
+    "manifesto_source_ids_found": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+$"
+      }
+    },
+    "checked_source_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+$"
+      }
+    },
+    "nonexistence_claim": {
+      "const": false
+    },
+    "review_note": {
+      "type": "string",
+      "minLength": 1
+    },
+    "next_actions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "review_status": {
+      "type": "string",
+      "enum": ["reviewed", "verified"]
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low", "not_assessable"]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "result_status": {"const": "source_registered"}
+        }
+      },
+      "then": {
+        "properties": {
+          "manifesto_source_ids_found": {"minItems": 1}
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "result_status": {
+            "enum": ["official_result_only", "no_stable_primary_source_found"]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "manifesto_source_ids_found": {"maxItems": 0}
+        }
+      }
+    }
+  ]
+}
