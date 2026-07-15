@@ -1,0 +1,34 @@
+name: Apply targets 13 to 15 on PR
+
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - opened
+      - reopened
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    if: github.head_ref == 'agent/fukuoka-targets-13-15'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/fukuoka-targets-13-15
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Register target catalogs
+        run: python scripts/register_targets_13_15.py
+      - name: Commit generated update
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add apps/web/lib/policyTargets.ts
+          git diff --cached --check
+          git commit -m "Register target catalogs for initiatives 13 to 15"
+          git push origin HEAD:agent/fukuoka-targets-13-15
