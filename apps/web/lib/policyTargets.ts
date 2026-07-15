@@ -4,6 +4,14 @@ import initiative02Evidence from "../../../data/entities/policy/fukuoka_prefectu
 import initiative02Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_02_targets.json";
 import initiative03Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_03_target_evidence_packet.json";
 import initiative03Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_03_targets.json";
+import initiative04Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_04_target_evidence_packet.json";
+import initiative04Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_04_targets.json";
+import initiative05Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_05_target_evidence_packet.json";
+import initiative05Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_05_targets.json";
+import initiative06Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_06_target_evidence_packet.json";
+import initiative06Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_06_targets.json";
+import initiative07Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_07_target_evidence_packet.json";
+import initiative07Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_07_targets.json";
 
 export type PolicyTargetComponent = {
   label: string | null;
@@ -58,31 +66,20 @@ export type PolicyTargetEvidence = {
 };
 
 export type PolicyTargetPageDefinition = {
-  slug: "01" | "02" | "03";
+  slug: "01" | "02" | "03" | "04" | "05" | "06" | "07";
   title: string;
   catalog: PolicyTargetCatalog;
   evidence: PolicyTargetEvidence;
 };
 
 export const policyTargetPages: PolicyTargetPageDefinition[] = [
-  {
-    slug: "01",
-    title: "次代を担う「人財」の育成",
-    catalog: initiative01Catalog as PolicyTargetCatalog,
-    evidence: initiative01Evidence as PolicyTargetEvidence,
-  },
-  {
-    slug: "02",
-    title: "世界から選ばれる福岡県の実現",
-    catalog: initiative02Catalog as PolicyTargetCatalog,
-    evidence: initiative02Evidence as PolicyTargetEvidence,
-  },
-  {
-    slug: "03",
-    title: "ワンヘルスの推進",
-    catalog: initiative03Catalog as PolicyTargetCatalog,
-    evidence: initiative03Evidence as PolicyTargetEvidence,
-  },
+  { slug: "01", title: "次代を担う「人財」の育成", catalog: initiative01Catalog as PolicyTargetCatalog, evidence: initiative01Evidence as PolicyTargetEvidence },
+  { slug: "02", title: "世界から選ばれる福岡県の実現", catalog: initiative02Catalog as PolicyTargetCatalog, evidence: initiative02Evidence as PolicyTargetEvidence },
+  { slug: "03", title: "ワンヘルスの推進", catalog: initiative03Catalog as PolicyTargetCatalog, evidence: initiative03Evidence as PolicyTargetEvidence },
+  { slug: "04", title: "移住定住の促進", catalog: initiative04Catalog as PolicyTargetCatalog, evidence: initiative04Evidence as PolicyTargetEvidence },
+  { slug: "05", title: "デジタル社会の実現", catalog: initiative05Catalog as PolicyTargetCatalog, evidence: initiative05Evidence as PolicyTargetEvidence },
+  { slug: "06", title: "グリーン社会の実現", catalog: initiative06Catalog as PolicyTargetCatalog, evidence: initiative06Evidence as PolicyTargetEvidence },
+  { slug: "07", title: "成長産業の創出", catalog: initiative07Catalog as PolicyTargetCatalog, evidence: initiative07Evidence as PolicyTargetEvidence },
 ];
 
 export const initiative01TargetCatalog = policyTargetPages[0].catalog;
