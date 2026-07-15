@@ -1,1 +1,80 @@
-{"version":"0.2.0","entries":[{"name":"source","schema":"schemas/source.schema.json","fixture":"data/examples/source.example.json"},{"name":"municipality","schema":"schemas/municipality.schema.json","fixture":"data/examples/municipality.example.json"},{"name":"project","schema":"schemas/project.schema.json","fixture":"data/examples/project.example.json"},{"name":"promise","schema":"schemas/promise.schema.json","fixture":"data/examples/promise.example.json"},{"name":"source_catalog","schema":"schemas/source_catalog.schema.json","fixture":"data/catalog/official_sources.json"},{"name":"fiscal_record","schema":"schemas/fiscal_record.schema.json","fixture":"data/examples/fiscal_record.example.json"},{"name":"contract","schema":"schemas/contract.schema.json","fixture":"data/examples/contract.example.json"},{"name":"kpi","schema":"schemas/kpi.schema.json","fixture":"data/examples/kpi.example.json"},{"name":"executive_term","schema":"schemas/executive_term.schema.json","fixture":"data/examples/executive_term.example.json"},{"name":"assembly","schema":"schemas/assembly.schema.json","fixture":"data/examples/assembly.example.json"},{"name":"proposal","schema":"schemas/proposal.schema.json","fixture":"data/examples/proposal.example.json"},{"name":"vote","schema":"schemas/vote.schema.json","fixture":"data/examples/vote.example.json"},{"name":"inspection_trip","schema":"schemas/inspection_trip.schema.json","fixture":"data/examples/inspection_trip.example.json"},{"name":"evidence_packet","schema":"schemas/evidence_packet.schema.json","fixture":"data/examples/evidence_packet.example.json"}]}
+{
+  "version": "0.3.0",
+  "entries": [
+    {
+      "name": "source",
+      "schema": "schemas/source.schema.json",
+      "fixture": "data/examples/source.example.json"
+    },
+    {
+      "name": "municipality",
+      "schema": "schemas/municipality.schema.json",
+      "fixture": "data/examples/municipality.example.json"
+    },
+    {
+      "name": "project",
+      "schema": "schemas/project.schema.json",
+      "fixture": "data/examples/project.example.json"
+    },
+    {
+      "name": "promise",
+      "schema": "schemas/promise.schema.json",
+      "fixture": "data/examples/promise.example.json"
+    },
+    {
+      "name": "source_catalog",
+      "schema": "schemas/source_catalog.schema.json",
+      "fixture": "data/catalog/official_sources.json"
+    },
+    {
+      "name": "fiscal_record",
+      "schema": "schemas/fiscal_record.schema.json",
+      "fixture": "data/examples/fiscal_record.example.json"
+    },
+    {
+      "name": "contract",
+      "schema": "schemas/contract.schema.json",
+      "fixture": "data/examples/contract.example.json"
+    },
+    {
+      "name": "kpi",
+      "schema": "schemas/kpi.schema.json",
+      "fixture": "data/examples/kpi.example.json"
+    },
+    {
+      "name": "executive_term",
+      "schema": "schemas/executive_term.schema.json",
+      "fixture": "data/examples/executive_term.example.json"
+    },
+    {
+      "name": "manifesto_review",
+      "schema": "schemas/manifesto_review.schema.json",
+      "fixture": "data/examples/manifesto_review.example.json"
+    },
+    {
+      "name": "assembly",
+      "schema": "schemas/assembly.schema.json",
+      "fixture": "data/examples/assembly.example.json"
+    },
+    {
+      "name": "proposal",
+      "schema": "schemas/proposal.schema.json",
+      "fixture": "data/examples/proposal.example.json"
+    },
+    {
+      "name": "vote",
+      "schema": "schemas/vote.schema.json",
+      "fixture": "data/examples/vote.example.json"
+    },
+    {
+      "name": "inspection_trip",
+      "schema": "schemas/inspection_trip.schema.json",
+      "fixture": "data/examples/inspection_trip.example.json"
+    },
+    {
+      "name": "evidence_packet",
+      "schema": "schemas/evidence_packet.schema.json",
+      "fixture": "data/examples/evidence_packet.example.json"
+    }
+  ]
+}
