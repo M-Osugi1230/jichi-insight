@@ -10,8 +10,11 @@
     "status": "current",
     "manifesto_source_ids": [],
     "review_status": "reviewed",
-    "confidence": "medium",
-    "sources": ["fukuoka-pref-governor", "fukuoka-pref-election"]
+    "confidence": "high",
+    "sources": [
+      "fukuoka-pref-governor",
+      "fukuoka-pref-governor-election-2025-results"
+    ]
   },
   {
     "id": "jp-local-401307-executive-2022-12-07",
@@ -24,8 +27,11 @@
     "status": "current",
     "manifesto_source_ids": [],
     "review_status": "reviewed",
-    "confidence": "medium",
-    "sources": ["fukuoka-city-mayor", "fukuoka-city-election-audit"]
+    "confidence": "high",
+    "sources": [
+      "fukuoka-city-mayor",
+      "fukuoka-city-mayor-election-2022-results"
+    ]
   },
   {
     "id": "jp-local-401005-executive-2023-02-20",
@@ -36,9 +42,14 @@
     "term_end": null,
     "election_date": "2023-02-05",
     "status": "current",
-    "manifesto_source_ids": [],
+    "manifesto_source_ids": [
+      "kitakyushu-mayor-election-2023-bulletin"
+    ],
     "review_status": "reviewed",
-    "confidence": "medium",
-    "sources": ["kitakyushu-mayor", "kitakyushu-plans-election"]
+    "confidence": "high",
+    "sources": [
+      "kitakyushu-mayor",
+      "kitakyushu-mayor-election-history"
+    ]
   }
 ]
