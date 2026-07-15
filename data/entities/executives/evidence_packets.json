@@ -14,15 +14,15 @@
       },
       {
         "field": "election_date",
-        "statement": "現任期に対応する選挙日を選挙情報で確認した。",
-        "source_ids": ["fukuoka-pref-election"],
-        "location_note": "福岡県選挙結果・統計データ入口。",
+        "statement": "現任期に対応する2025年3月23日執行の知事選挙を個別結果ページで確認した。",
+        "source_ids": ["fukuoka-pref-governor-election-2025-results"],
+        "location_note": "福岡県選挙管理委員会の2025年知事選挙公式結果ページ。",
         "decision": "accepted",
-        "review_note": "個別結果資料は公約台帳実装時に追加する。"
+        "review_note": "選挙日と投開票結果資料の存在を確認。"
       }
     ],
     "open_questions": [
-      "公約原文の安定した一次資料は未登録。",
+      "選挙公報または候補者本人が公表した公約原文の安定した一次資料は未登録。",
       "公約と予算・重点事業の対応付けは未実施。"
     ],
     "review_status": "reviewed"
@@ -42,15 +42,15 @@
       },
       {
         "field": "election_date",
-        "statement": "現任期に対応する選挙日を選挙情報で確認した。",
-        "source_ids": ["fukuoka-city-election-audit"],
-        "location_note": "福岡市の選挙・監査情報入口。",
+        "statement": "現任期に対応する2022年11月20日執行の市長選挙を個別結果ページで確認した。",
+        "source_ids": ["fukuoka-city-mayor-election-2022-results"],
+        "location_note": "福岡市選挙管理委員会の2022年市長選挙公式結果ページ。",
         "decision": "accepted",
-        "review_note": "個別結果資料は公約台帳実装時に追加する。"
+        "review_note": "選挙日と投開票結果資料の存在を確認。"
       }
     ],
     "open_questions": [
-      "公約原文の安定した一次資料は未登録。",
+      "選挙公報または候補者本人が公表した公約原文の安定した一次資料は未登録。",
       "公約を個別事業・KPIへ接続していない。"
     ],
     "review_status": "reviewed"
@@ -70,16 +70,25 @@
       },
       {
         "field": "election_date",
-        "statement": "現任期に対応する選挙日を選挙情報で確認した。",
-        "source_ids": ["kitakyushu-plans-election"],
-        "location_note": "北九州市の計画・条例・選挙情報入口。",
+        "statement": "現任期に対応する2023年2月5日執行の市長選挙を公式選挙記録で確認した。",
+        "source_ids": ["kitakyushu-mayor-election-history"],
+        "location_note": "北九州市選挙管理委員会『北九州市長選挙』。",
         "decision": "accepted",
-        "review_note": "個別結果資料は公約台帳実装時に追加する。"
+        "review_note": "過去の投開票結果と選挙公報への公式導線を確認。"
+      },
+      {
+        "field": "manifesto_source_ids",
+        "statement": "2023年北九州市長選挙の候補者提出原稿を掲載した公式選挙公報を公約原文資料として登録した。",
+        "source_ids": ["kitakyushu-mayor-election-2023-bulletin"],
+        "location_note": "1ページPDFの下段左、武内和久候補欄。",
+        "decision": "accepted",
+        "review_note": "資料単位の登録のみ。個別公約への分割、要約、期限・数値目標・財源・自治体権限の判定は未実施。"
       }
     ],
     "open_questions": [
-      "公約原文の安定した一次資料は未登録。",
-      "公約の進捗状態と公式説明を未収録。"
+      "選挙公報を個別公約へ分割していない。",
+      "各公約の期限・数値目標・財源・自治体権限を未確認。",
+      "公約の進捗状態、関連事業、予算、KPI、公式説明を未収録。"
     ],
     "review_status": "reviewed"
   }
