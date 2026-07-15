@@ -43,7 +43,15 @@
       "type": "integer",
       "minimum": 1
     },
+    "source_page_end": {
+      "type": "integer",
+      "minimum": 1
+    },
     "printed_page": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "printed_page_end": {
       "type": "integer",
       "minimum": 1
     },
