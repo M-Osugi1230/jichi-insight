@@ -1,0 +1,45 @@
+{
+  "id": "evidence-policy-target-catalog-fukuoka-prefecture-initiative-04",
+  "subject_type": "policy_target_catalog",
+  "subject_id": "policy-target-catalog-fukuoka-prefecture-initiative-04",
+  "claims": [
+    {
+      "field": "target_count",
+      "statement": "取組事項4『移住定住の促進』には、数値目標19から20までの2指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの2ページ目、印刷ページ316、指標19から20。",
+      "decision": "accepted",
+      "review_note": null
+    },
+    {
+      "field": "migration_households",
+      "statement": "県外からの移住世帯数は当初値876世帯／年、目標値はR4年度からR8年度の5年間累計5,000世帯である。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの2ページ目、指標19。",
+      "decision": "accepted",
+      "review_note": "年次の当初値と5年間累計の目標値を同一期間として扱わない。"
+    },
+    {
+      "field": "fan_club_members",
+      "statement": "ふくおかファンクラブ会員数は当初値2,270人、目標値8,000人で、いずれも累計値として掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの2ページ目、指標20。",
+      "decision": "accepted",
+      "review_note": null
+    },
+    {
+      "field": "actual_results",
+      "statement": "年度実施状況報告にある移住世帯数と会員数の実績との個別対応は未確認である。",
+      "source_ids": ["policy-source-fukuoka-pref-progress-reports", "policy-source-fukuoka-pref-progress-2024-pdf"],
+      "location_note": "年度実施状況報告の数値目標進捗を今後確認する。",
+      "decision": "needs_review",
+      "review_note": "移住世帯の定義、集計期間、ファンクラブ退会者の扱いを確認してから接続する。"
+    }
+  ],
+  "open_questions": [
+    "2022年度から2024年度の年度別実績を接続する必要がある。",
+    "移住世帯数の対象範囲と重複排除方法を公式定義で確認する必要がある。",
+    "ファンクラブ会員数が年度末時点か通算登録数かを年度資料で確認する必要がある。"
+  ],
+  "review_status": "reviewed"
+}
