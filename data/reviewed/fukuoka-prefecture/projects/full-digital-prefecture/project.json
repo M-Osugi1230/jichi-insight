@@ -1,0 +1,52 @@
+{
+  "id": "jp-local-400009-project-2025-full-digital-prefecture",
+  "municipality_id": "jp-local-400009",
+  "fiscal_year": 2025,
+  "official_title": "フルデジタル県庁推進事業",
+  "plain_title": "行政手続と庁内業務のデジタル化",
+  "purpose": "行政手続のオンライン化・キャッシュレス化と、庁内のWeb会議、チャット、RPA、生成AI、ペーパーレス会議、モバイルワーク、オンライン研修等を通じて、県民の利便性向上と行政事務の効率化、職員の働き方改革、DX推進体制の確立を図る。",
+  "target_population": "福岡県の行政手続を利用する県民・事業者および福岡県職員",
+  "policy_area": "digital",
+  "related_promise_ids": [],
+  "budget_records": [
+    {
+      "kind": "settlement",
+      "amount_yen": 75056000,
+      "fiscal_year": 2024,
+      "note": "令和6年度決算。令和7年度行政評価の事業費欄から収録。"
+    },
+    {
+      "kind": "initial_budget",
+      "amount_yen": 402516000,
+      "fiscal_year": 2025,
+      "note": "令和7年度当初予算。令和6年度決算と同一年度の値として扱わない。"
+    },
+    {
+      "kind": "initial_budget",
+      "amount_yen": 435467000,
+      "fiscal_year": 2026,
+      "note": "令和8年度当初予算。将来年度の執行・成果は未確認。"
+    }
+  ],
+  "kpis": [
+    {
+      "name": "オンライン納付を可能とする行政手続数（2024年度）",
+      "unit": "手続",
+      "baseline": 9,
+      "target": 130,
+      "actual": 314,
+      "assessment": "achieved"
+    },
+    {
+      "name": "オンライン納付を可能とする行政手続数（2025年度）",
+      "unit": "手続",
+      "baseline": 314,
+      "target": 500,
+      "actual": "調査中",
+      "assessment": "in_progress"
+    }
+  ],
+  "review_status": "reviewed",
+  "confidence": "high",
+  "sources": ["fukuoka-pref-project-evaluation-2025-detail-pdf"]
+}
