@@ -32,7 +32,18 @@ jobs:
         run: python scripts/validate_repository.py
 
       - name: Test
-        run: pytest
+        run: |
+          set -o pipefail
+          pytest -vv 2>&1 | tee pytest.log
+
+      - name: Upload pytest diagnostics
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pytest-diagnostics
+          path: pytest.log
+          if-no-files-found: ignore
+          retention-days: 7
 
       - name: Lint Python
         run: ruff check scripts tests
