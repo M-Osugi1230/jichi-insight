@@ -1,0 +1,165 @@
+{
+  "id": "policy-target-catalog-fukuoka-prefecture-initiative-12",
+  "policy_initiative_id": "policy-initiative-fukuoka-prefecture-12",
+  "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+  "source_document_url": "https://www.pref.fukuoka.lg.jp/uploaded/life/632711_61262666_misc.pdf",
+  "source_page": 5,
+  "printed_page": 319,
+  "items": [
+    {
+      "id": "policy-target-fukuoka-prefecture-initiative-12-64",
+      "target_number": 64,
+      "submeasure_title_original": "健康づくりの推進による健康寿命の延伸",
+      "indicator_name_original": "健康寿命の延伸",
+      "components": [
+        {
+          "label": "男性・平均寿命",
+          "baseline_value": 81.24,
+          "baseline_unit": "年",
+          "baseline_period": "R1年",
+          "baseline_scope": "snapshot",
+          "target_value": null,
+          "target_unit": null,
+          "target_text": "平均寿命の増加分を上回る健康寿命の増加",
+          "target_period": "R8年度",
+          "target_scope": "relative_condition",
+          "preferred_direction": "increase"
+        },
+        {
+          "label": "男性・健康寿命",
+          "baseline_value": 72.22,
+          "baseline_unit": "年",
+          "baseline_period": "R1年",
+          "baseline_scope": "snapshot",
+          "target_value": null,
+          "target_unit": null,
+          "target_text": "平均寿命の増加分を上回る健康寿命の増加",
+          "target_period": "R8年度",
+          "target_scope": "relative_condition",
+          "preferred_direction": "increase"
+        },
+        {
+          "label": "女性・平均寿命",
+          "baseline_value": 87.47,
+          "baseline_unit": "年",
+          "baseline_period": "R1年",
+          "baseline_scope": "snapshot",
+          "target_value": null,
+          "target_unit": null,
+          "target_text": "平均寿命の増加分を上回る健康寿命の増加",
+          "target_period": "R8年度",
+          "target_scope": "relative_condition",
+          "preferred_direction": "increase"
+        },
+        {
+          "label": "女性・健康寿命",
+          "baseline_value": 75.19,
+          "baseline_unit": "年",
+          "baseline_period": "R1年",
+          "baseline_scope": "snapshot",
+          "target_value": null,
+          "target_unit": null,
+          "target_text": "平均寿命の増加分を上回る健康寿命の増加",
+          "target_period": "R8年度",
+          "target_scope": "relative_condition",
+          "preferred_direction": "increase"
+        }
+      ],
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed"
+    },
+    {
+      "id": "policy-target-fukuoka-prefecture-initiative-12-65",
+      "target_number": 65,
+      "submeasure_title_original": "こころの健康づくりの推進",
+      "indicator_name_original": "自殺死亡率（人口10万人当たりの自殺者数）",
+      "components": [
+        {
+          "label": null,
+          "baseline_value": 16.3,
+          "baseline_unit": "人／人口10万人",
+          "baseline_period": "R2年",
+          "baseline_scope": "annual",
+          "target_value": 12.5,
+          "target_unit": "人／人口10万人",
+          "target_operator": "at_most",
+          "target_period": "R8年",
+          "target_scope": "annual",
+          "preferred_direction": "decrease"
+        }
+      ],
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed"
+    },
+    {
+      "id": "policy-target-fukuoka-prefecture-initiative-12-66",
+      "target_number": 66,
+      "submeasure_title_original": "がん、難病対策の推進",
+      "indicator_name_original": "がんの75歳未満年齢調整死亡率（人口10万人当たりのがん死亡者数）",
+      "components": [
+        {
+          "label": null,
+          "baseline_value": 74.9,
+          "baseline_unit": "人／人口10万人",
+          "baseline_period": "R1年",
+          "baseline_scope": "annual",
+          "target_value": 68.4,
+          "target_unit": "人／人口10万人",
+          "target_operator": "at_most",
+          "target_period": "R8年",
+          "target_scope": "annual",
+          "preferred_direction": "decrease"
+        }
+      ],
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed"
+    },
+    {
+      "id": "policy-target-fukuoka-prefecture-initiative-12-67",
+      "target_number": 67,
+      "submeasure_title_original": "医療提供体制の確保・医療保険制度の安定的な運営",
+      "indicator_name_original": "ジェネリック医薬品普及率（数量ベース）",
+      "components": [
+        {
+          "label": null,
+          "baseline_value": 76.1,
+          "baseline_unit": "%",
+          "baseline_period": "R2年度",
+          "baseline_scope": "snapshot",
+          "target_value": 80,
+          "target_unit": "%",
+          "target_period": "R8年度",
+          "target_scope": "snapshot",
+          "preferred_direction": "increase"
+        }
+      ],
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed"
+    },
+    {
+      "id": "policy-target-fukuoka-prefecture-initiative-12-68",
+      "target_number": 68,
+      "submeasure_title_original": "医療提供体制の確保・医療保険制度の安定的な運営",
+      "indicator_name_original": "福岡県ナースセンターの無料職業紹介事業等により就職した看護職員数",
+      "components": [
+        {
+          "label": null,
+          "baseline_value": 1008,
+          "baseline_unit": "人／年",
+          "baseline_period": "R2年度",
+          "baseline_scope": "annual",
+          "target_value": 1680,
+          "target_unit": "人／年",
+          "target_period": "R8年度",
+          "target_scope": "annual",
+          "preferred_direction": "increase"
+        }
+      ],
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed"
+    }
+  ],
+  "reviewed_at": "2026-07-16",
+  "review_status": "reviewed",
+  "confidence": "high"
+}
