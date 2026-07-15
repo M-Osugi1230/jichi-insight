@@ -1,0 +1,63 @@
+{
+  "id": "evidence-policy-target-catalog-fukuoka-prefecture-initiative-10",
+  "subject_type": "policy_target_catalog",
+  "subject_id": "policy-target-catalog-fukuoka-prefecture-initiative-10",
+  "claims": [
+    {
+      "field": "target_count",
+      "statement": "取組事項10『地域と調和した観光産業の振興』には、固有番号を持つ数値目標41から49までの9指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの4ページ目、印刷ページ318、指標41から49。",
+      "decision": "accepted",
+      "review_note": "番号欄がダッシュの再掲行は新規指標として重複登録しない。"
+    },
+    {
+      "field": "travel_spending",
+      "statement": "旅行消費単価は、日本人がR2年36,300円からR8年50,800円、通常入国外国人がR1年66,000円からR8年78,000円として掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの4ページ目、指標41から42。",
+      "decision": "accepted",
+      "review_note": "広域ルート分野の同名2行は指標41・42の再掲であり重複登録しない。"
+    },
+    {
+      "field": "repeat_rate",
+      "statement": "リピーター率はR1年度の参考値59.5%から目標65.0%として掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの4ページ目、指標43。",
+      "decision": "accepted",
+      "review_note": "当初値は公式表の『参考値』表記を保持し、県の確定実績と断定しない。"
+    },
+    {
+      "field": "digital_marketing",
+      "statement": "国内・海外向けの観光情報SNSについて、フォロワー数2指標と記事閲覧数2指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの4ページ目、指標44から47。",
+      "decision": "accepted",
+      "review_note": "フォロワー数は累計値、記事閲覧数は年度値として別スコープで保存する。"
+    },
+    {
+      "field": "overnight_stays_and_dmo",
+      "statement": "日本人延べ宿泊者数はR1年1,616万人泊からR8年1,772万人泊、観光地域づくり法人等は累計11団体から17団体として掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの4ページ目、指標48から49。",
+      "decision": "accepted",
+      "review_note": "外国人延べ宿泊者数は既存指標17、リピーター率は指標43の再掲として重複登録しない。"
+    },
+    {
+      "field": "actual_results",
+      "statement": "年度実施状況報告にある指標41から49の実績との個別対応は未確認である。",
+      "source_ids": ["policy-source-fukuoka-pref-progress-reports", "policy-source-fukuoka-pref-progress-2024-pdf"],
+      "location_note": "年度実施状況報告の数値目標進捗を今後確認する。",
+      "decision": "needs_review",
+      "review_note": "コロナ影響、調査対象、SNS媒体構成、暦年と年度の違いを確認してから接続する。"
+    }
+  ],
+  "open_questions": [
+    "旅行消費単価とリピーター率の調査母集団・調査方法を年度ごとに確認する必要がある。",
+    "通常入国外国人の定義と対象市場の変更有無を確認する必要がある。",
+    "SNSの対象アカウント、媒体追加・廃止、記事閲覧数の集計方法を確認する必要がある。",
+    "延べ宿泊者数の暦年値と年度実施状況報告の期間を一致させる必要がある。",
+    "再掲指標を施策内・施策横断で参照表示するデータモデルを整備する必要がある。"
+  ],
+  "review_status": "reviewed"
+}
