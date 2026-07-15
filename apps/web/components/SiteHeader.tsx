@@ -3,10 +3,10 @@ import Link from "next/link";
 const navigation = [
   { href: "/municipalities", label: "自治体" },
   { href: "/compare", label: "都市比較" },
+  { href: "/assemblies", label: "議会" },
   { href: "/sources", label: "公式資料" },
   { href: "/data-quality", label: "データ品質" },
   { href: "/methodology", label: "評価方法" },
-  { href: "/about", label: "目的" },
 ];
 
 export function SiteHeader() {

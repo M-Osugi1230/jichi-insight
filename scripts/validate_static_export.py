@@ -16,12 +16,15 @@ SOURCE_CATALOG_PATHS = [
     ROOT / "data" / "catalog" / "fukuoka_finance_sources.json",
     ROOT / "data" / "catalog" / "fukuoka_city_finance_sources.json",
     ROOT / "data" / "catalog" / "kitakyushu_finance_sources.json",
+    ROOT / "data" / "catalog" / "fukuoka_assembly_sources.json",
 ]
 
 REQUIRED_FILES = [
     "index.html",
     "404.html",
     "about/index.html",
+    "assemblies/index.html",
+    "assemblies/fukuoka-prefecture/overseas-activities/index.html",
     "compare/index.html",
     "corrections/index.html",
     "data-quality/index.html",
@@ -171,6 +174,46 @@ def main() -> int:
                     "人口・行政需要・面積・産業構造を補正する前に優劣を付けない",
                 ],
                 "City comparison page",
+            )
+        )
+
+    assemblies_path = EXPORT_ROOT / "assemblies" / "index.html"
+    if assemblies_path.is_file():
+        failures.extend(
+            require_copy(
+                assemblies_path.read_text(encoding="utf-8"),
+                [
+                    "議会を、質問数ではなく役割と根拠で見る。",
+                    "福岡県議会の海外活動",
+                    "海外活動台帳を見る",
+                    "総合点や会派ランキングは出しません",
+                ],
+                "Assemblies page",
+            )
+        )
+
+    overseas_path = (
+        EXPORT_ROOT
+        / "assemblies"
+        / "fukuoka-prefecture"
+        / "overseas-activities"
+        / "index.html"
+    )
+    if overseas_path.is_file():
+        failures.extend(
+            require_copy(
+                overseas_path.read_text(encoding="utf-8"),
+                [
+                    "海外活動の公開状況",
+                    "「活動があった」と「説明できる」を分ける。",
+                    "福岡県議会・ハワイ州議会友好訪問団",
+                    "福岡県議会・バンコク都議会友好訪問団",
+                    "費用を確認できず",
+                    "報告書未掲載",
+                    "契約手続きは、見直し方針と実施結果を分けて追う。",
+                    "海外活動の総合点は出しません",
+                ],
+                "Overseas activities page",
             )
         )
 

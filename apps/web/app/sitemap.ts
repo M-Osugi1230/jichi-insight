@@ -4,6 +4,8 @@ const siteUrl = "https://m-osugi1230.github.io/jichi-insight";
 const routes = [
   "",
   "/about",
+  "/assemblies",
+  "/assemblies/fukuoka-prefecture/overseas-activities",
   "/compare",
   "/corrections",
   "/data-quality",
@@ -23,6 +25,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date("2026-07-15"),
     changeFrequency: route === "" ? "weekly" : "monthly",
     priority:
-      route === "" ? 1 : route === "/compare" || route.startsWith("/municipalities/") ? 0.9 : 0.8,
+      route === ""
+        ? 1
+        : route === "/compare" ||
+            route.startsWith("/municipalities/") ||
+            route.startsWith("/assemblies/")
+          ? 0.9
+          : 0.8,
   }));
 }
