@@ -50,7 +50,12 @@ export function PolicyTargetDetail({ definition }: { definition: PolicyTargetPag
         <section className="contentSection">
           <p className="eyebrow">Baseline and target</p>
           <h2>基準値と目標値を、期間単位まで分けて見る。</h2>
-          <a className={styles.sourceLink} href={catalog.source_document_url} target="_blank" rel="noreferrer">
+          <a
+            className={styles.sourceLink}
+            href={catalog.source_document_url}
+            target="_blank"
+            rel="noreferrer"
+          >
             公式数値目標PDF・印刷ページ{catalog.printed_page}を開く ↗
           </a>
 
@@ -59,14 +64,20 @@ export function PolicyTargetDetail({ definition }: { definition: PolicyTargetPag
               const missingBaseline = target.components.some(
                 (component) => component.baseline_scope === "not_available",
               );
+              const conditionalTarget = target.components.some(
+                (component) => Boolean(component.target_text),
+              );
               const mixedScopes = target.components.some(
                 (component) =>
                   component.baseline_scope !== "not_available" &&
+                  component.target_scope !== "relative_condition" &&
                   component.baseline_scope !== component.target_scope,
               );
               return (
                 <article className={styles.targetCard} key={target.id}>
-                  <div className={styles.number}>{String(target.target_number).padStart(2, "0")}</div>
+                  <div className={styles.number}>
+                    {String(target.target_number).padStart(2, "0")}
+                  </div>
                   <div>
                     <div className={styles.targetHeader}>
                       <div>
@@ -83,7 +94,12 @@ export function PolicyTargetDetail({ definition }: { definition: PolicyTargetPag
                           <div className={styles.values}>
                             <div>
                               <span>基準値</span>
-                              <strong>{formatTargetValue(component.baseline_value, component.baseline_unit)}</strong>
+                              <strong>
+                                {formatTargetValue(
+                                  component.baseline_value,
+                                  component.baseline_unit,
+                                )}
+                              </strong>
                               <small>
                                 {component.baseline_period ?? "期間記載なし"}・
                                 {targetScopeLabel(component.baseline_scope)}
@@ -91,8 +107,18 @@ export function PolicyTargetDetail({ definition }: { definition: PolicyTargetPag
                             </div>
                             <div>
                               <span>目標値</span>
-                              <strong>{formatTargetValue(component.target_value, component.target_unit)}</strong>
-                              <small>{component.target_period}・{targetScopeLabel(component.target_scope)}</small>
+                              <strong>
+                                {formatTargetValue(
+                                  component.target_value,
+                                  component.target_unit,
+                                  component.target_operator,
+                                  component.target_text ?? null,
+                                )}
+                              </strong>
+                              <small>
+                                {component.target_period}・
+                                {targetScopeLabel(component.target_scope)}
+                              </small>
                             </div>
                           </div>
                         </div>
@@ -102,9 +128,11 @@ export function PolicyTargetDetail({ definition }: { definition: PolicyTargetPag
                   <p className={styles.warning}>
                     {missingBaseline
                       ? "当初値は公式資料でダッシュ表記です。0とは扱わず、年度実績を確認するまで達成率を算出しません。"
-                      : mixedScopes
-                        ? "基準値と目標値の集計期間が異なります。年次値と累計値をそのまま達成率へ変換しません。"
-                        : "年度実績は未接続です。目標値との差や達成率はまだ算出していません。"}
+                      : conditionalTarget
+                        ? "公式資料の目標は単一の数値ではなく条件で示されています。条件を満たすかは、比較対象となる年度実績が揃うまで判定しません。"
+                        : mixedScopes
+                          ? "基準値と目標値の集計期間が異なります。年次値と累計値をそのまま達成率へ変換しません。"
+                          : "年度実績は未接続です。目標値との差や達成率はまだ算出していません。"}
                   </p>
                 </article>
               );
