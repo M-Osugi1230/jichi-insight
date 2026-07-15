@@ -1,5 +1,5 @@
 {
-  "version": "0.3.0",
+  "version": "0.4.0",
   "entries": [
     {
       "name": "source",
@@ -50,6 +50,11 @@
       "name": "manifesto_review",
       "schema": "schemas/manifesto_review.schema.json",
       "fixture": "data/examples/manifesto_review.example.json"
+    },
+    {
+      "name": "manifesto_source_search",
+      "schema": "schemas/manifesto_source_search.schema.json",
+      "fixture": "data/examples/manifesto_source_search.example.json"
     },
     {
       "name": "assembly",
