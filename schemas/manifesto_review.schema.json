@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.example/schemas/manifesto_review.schema.json",
+  "title": "Jichi Insight Manifesto Review",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "executive_term_id",
+    "source_id",
+    "candidate_name",
+    "source_location",
+    "review_scope",
+    "statement_boundary",
+    "segmentation_status",
+    "promise_records_created",
+    "reason_codes",
+    "last_reviewed_at",
+    "review_status",
+    "confidence"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^manifesto-review-jp-local-[0-9]{6}-[0-9]{4}$"
+    },
+    "executive_term_id": {
+      "type": "string",
+      "pattern": "^jp-local-[0-9]{6}-executive-[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "source_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "candidate_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_location": {
+      "type": "string",
+      "minLength": 1
+    },
+    "review_scope": {
+      "type": "string",
+      "enum": ["document", "candidate_panel", "section"]
+    },
+    "statement_boundary": {
+      "type": "string",
+      "enum": ["clear", "mixed", "unclear"]
+    },
+    "segmentation_status": {
+      "type": "string",
+      "enum": ["segmented", "manual_review_required", "not_segmented"]
+    },
+    "promise_records_created": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "reason_codes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "mixed_narrative",
+          "biography_and_policy_combined",
+          "no_explicit_list",
+          "low_legibility",
+          "source_incomplete",
+          "other"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "review_note": {
+      "type": ["string", "null"]
+    },
+    "last_reviewed_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "review_status": {
+      "type": "string",
+      "enum": ["reviewed", "verified"]
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low", "not_assessable"]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "segmentation_status": {
+            "enum": ["manual_review_required", "not_segmented"]
+          }
+        },
+        "required": ["segmentation_status"]
+      },
+      "then": {
+        "properties": {
+          "promise_records_created": {"const": 0}
+        }
+      }
+    }
+  ]
+}
