@@ -1,7 +1,8 @@
+import executiveCatalog from "../../../data/catalog/executive_sources.json";
 import evidencePackets from "../../../data/entities/executives/evidence_packets.json";
 import executiveTerms from "../../../data/entities/executives/executive_terms.json";
 
-import { municipalityMeta, sourceCatalog } from "./catalog";
+import { municipalityMeta, sourceCatalog, type SourceRecord } from "./catalog";
 
 export type ExecutiveTerm = {
   id: string;
@@ -40,6 +41,11 @@ const municipalityIdToKey = {
   "jp-local-401005": "kitakyushu-city",
 } as const;
 
+const executiveSources = [
+  ...sourceCatalog,
+  ...(executiveCatalog.records as SourceRecord[]),
+];
+
 export const currentExecutiveTerms = executiveTerms as ExecutiveTerm[];
 export const executiveEvidencePackets = evidencePackets as ExecutiveEvidencePacket[];
 
@@ -52,11 +58,11 @@ export function executiveMunicipality(term: ExecutiveTerm) {
 }
 
 export function sourcesForExecutive(term: ExecutiveTerm) {
-  return sourceCatalog.filter((source) => term.sources.includes(source.id));
+  return executiveSources.filter((source) => term.sources.includes(source.id));
 }
 
 export function manifestoSourcesForExecutive(term: ExecutiveTerm) {
-  return sourceCatalog.filter((source) => term.manifesto_source_ids.includes(source.id));
+  return executiveSources.filter((source) => term.manifesto_source_ids.includes(source.id));
 }
 
 export function evidenceForExecutive(term: ExecutiveTerm) {
