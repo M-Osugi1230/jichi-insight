@@ -28,6 +28,16 @@ import initiative14Evidence from "../../../data/entities/policy/fukuoka_prefectu
 import initiative14Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_14_targets.json";
 import initiative15Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_15_target_evidence_packet.json";
 import initiative15Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_15_targets.json";
+import initiative16Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_16_target_evidence_packet.json";
+import initiative16Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_16_targets.json";
+import initiative17Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_17_target_evidence_packet.json";
+import initiative17Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_17_targets.json";
+import initiative18Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_18_target_evidence_packet.json";
+import initiative18Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_18_targets.json";
+import initiative19Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_19_target_evidence_packet.json";
+import initiative19Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_19_targets.json";
+import initiative20Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_20_target_evidence_packet.json";
+import initiative20Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_20_targets.json";
 
 export type PolicyTargetComponent = {
   label: string | null;
@@ -104,7 +114,12 @@ export type PolicyTargetPageDefinition = {
     | "12"
     | "13"
     | "14"
-    | "15";
+    | "15"
+    | "16"
+    | "17"
+    | "18"
+    | "19"
+    | "20";
   title: string;
   catalog: PolicyTargetCatalog;
   evidence: PolicyTargetEvidence;
@@ -186,6 +201,11 @@ export const policyTargetPages: PolicyTargetPageDefinition[] = [
   { slug: "13", title: "スポーツ立県福岡の実現", catalog: initiative13Catalog as PolicyTargetCatalog, evidence: initiative13Evidence as PolicyTargetEvidence },
   { slug: "14", title: "文化芸術の振興", catalog: initiative14Catalog as PolicyTargetCatalog, evidence: initiative14Evidence as PolicyTargetEvidence },
   { slug: "15", title: "ジェンダー平等の社会づくり", catalog: initiative15Catalog as PolicyTargetCatalog, evidence: initiative15Evidence as PolicyTargetEvidence },
+  { slug: "16", title: "高齢者、障がいのある人への支援", catalog: initiative16Catalog as PolicyTargetCatalog, evidence: initiative16Evidence as PolicyTargetEvidence },
+  { slug: "17", title: "社会的・経済的に厳しい状況にある方への支援", catalog: initiative17Catalog as PolicyTargetCatalog, evidence: initiative17Evidence as PolicyTargetEvidence },
+  { slug: "18", title: "人権が尊重される心豊かな社会づくり", catalog: initiative18Catalog as PolicyTargetCatalog, evidence: initiative18Evidence as PolicyTargetEvidence },
+  { slug: "19", title: "外国人材に選ばれる地域づくり", catalog: initiative19Catalog as PolicyTargetCatalog, evidence: initiative19Evidence as PolicyTargetEvidence },
+  { slug: "20", title: "安全で安心して暮らせる地域づくり", catalog: initiative20Catalog as PolicyTargetCatalog, evidence: initiative20Evidence as PolicyTargetEvidence },
 ];
 
 export const initiative01TargetCatalog = policyTargetPages[0].catalog;
