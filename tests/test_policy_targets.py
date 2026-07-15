@@ -25,23 +25,44 @@ def test_policy_target_fixture_is_valid():
 
 
 def test_initiative_01_has_ten_reviewed_targets():
-    catalog = load("data/entities/policy/fukuoka_prefecture_initiative_01_targets.json")
+    catalog = load(
+        "data/entities/policy/fukuoka_prefecture_initiative_01_targets.json"
+    )
     assert validate("schemas/policy_target_catalog.schema.json", catalog) == []
-    assert catalog["policy_initiative_id"] == "policy-initiative-fukuoka-prefecture-01"
+    assert (
+        catalog["policy_initiative_id"]
+        == "policy-initiative-fukuoka-prefecture-01"
+    )
     assert catalog["source_page"] == 1
     assert catalog["printed_page"] == 315
     assert len(catalog["items"]) == 10
-    assert [item["target_number"] for item in catalog["items"]] == list(range(1, 11))
-    assert all(item["actual_linkage_status"] == "not_linked" for item in catalog["items"])
-    assert all(item["evaluation_status"] == "not_assessed" for item in catalog["items"])
+    assert [item["target_number"] for item in catalog["items"]] == list(
+        range(1, 11)
+    )
+    assert all(
+        item["actual_linkage_status"] == "not_linked"
+        for item in catalog["items"]
+    )
+    assert all(
+        item["evaluation_status"] == "not_assessed"
+        for item in catalog["items"]
+    )
 
 
 def test_target_values_preserve_components_and_period_scopes():
-    items = load("data/entities/policy/fukuoka_prefecture_initiative_01_targets.json")[
-        "items"
+    items = load(
+        "data/entities/policy/fukuoka_prefecture_initiative_01_targets.json"
+    )["items"]
+    first_values = [
+        (component["baseline_value"], component["target_value"])
+        for component in items[0]["components"]
     ]
-    assert [(component["baseline_value"], component["target_value"]) for component in items[0]["components"]] == [(5, 6), (2, 6)]
-    assert [(component["baseline_value"], component["target_value"]) for component in items[1]["components"]] == [(1, 6), (1, 6)]
+    second_values = [
+        (component["baseline_value"], component["target_value"])
+        for component in items[1]["components"]
+    ]
+    assert first_values == [(5, 6), (2, 6)]
+    assert second_values == [(1, 6), (1, 6)]
     assert items[4]["components"][0]["preferred_direction"] == "decrease"
     for item in items[7:10]:
         component = item["components"][0]
@@ -50,7 +71,9 @@ def test_target_values_preserve_components_and_period_scopes():
 
 
 def test_policy_target_sources_initiative_and_evidence_are_complete():
-    catalog = load("data/entities/policy/fukuoka_prefecture_initiative_01_targets.json")
+    catalog = load(
+        "data/entities/policy/fukuoka_prefecture_initiative_01_targets.json"
+    )
     packet = load(
         "data/entities/policy/fukuoka_prefecture_initiative_01_target_evidence_packet.json"
     )
