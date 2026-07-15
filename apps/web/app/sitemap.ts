@@ -18,6 +18,8 @@ const routes = [
   "/municipalities/kitakyushu-city",
   "/policies",
   "/policies/fukuoka-prefecture/initiatives/01",
+  "/policies/fukuoka-prefecture/initiatives/02",
+  "/policies/fukuoka-prefecture/initiatives/03",
   "/policy-sources",
   "/sources",
 ];
