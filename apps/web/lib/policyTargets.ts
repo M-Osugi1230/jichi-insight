@@ -1,12 +1,16 @@
-import targetEvidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_01_target_evidence_packet.json";
-import targetCatalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_01_targets.json";
+import initiative01Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_01_target_evidence_packet.json";
+import initiative01Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_01_targets.json";
+import initiative02Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_02_target_evidence_packet.json";
+import initiative02Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_02_targets.json";
+import initiative03Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_03_target_evidence_packet.json";
+import initiative03Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_03_targets.json";
 
 export type PolicyTargetComponent = {
   label: string | null;
-  baseline_value: number;
-  baseline_unit: string;
-  baseline_period: string;
-  baseline_scope: "snapshot" | "annual" | "cumulative";
+  baseline_value: number | null;
+  baseline_unit: string | null;
+  baseline_period: string | null;
+  baseline_scope: "snapshot" | "annual" | "cumulative" | "not_available";
   target_value: number;
   target_unit: string;
   target_period: string;
@@ -53,20 +57,78 @@ export type PolicyTargetEvidence = {
   review_status: "reviewed" | "verified";
 };
 
-export const initiative01TargetCatalog = targetCatalog as PolicyTargetCatalog;
-export const initiative01TargetEvidence = targetEvidence as PolicyTargetEvidence;
-
-export const initiative01TargetStats = {
-  reviewedTargets: initiative01TargetCatalog.items.length,
-  actualsLinked: initiative01TargetCatalog.items.filter(
-    (target) => target.actual_linkage_status !== "not_linked",
-  ).length,
-  assessed: initiative01TargetCatalog.items.filter(
-    (target) => target.evaluation_status !== "not_assessed",
-  ).length,
+export type PolicyTargetPageDefinition = {
+  slug: "01" | "02" | "03";
+  title: string;
+  catalog: PolicyTargetCatalog;
+  evidence: PolicyTargetEvidence;
 };
 
-export function formatTargetValue(value: number, unit: string) {
+export const policyTargetPages: PolicyTargetPageDefinition[] = [
+  {
+    slug: "01",
+    title: "次代を担う「人財」の育成",
+    catalog: initiative01Catalog as PolicyTargetCatalog,
+    evidence: initiative01Evidence as PolicyTargetEvidence,
+  },
+  {
+    slug: "02",
+    title: "世界から選ばれる福岡県の実現",
+    catalog: initiative02Catalog as PolicyTargetCatalog,
+    evidence: initiative02Evidence as PolicyTargetEvidence,
+  },
+  {
+    slug: "03",
+    title: "ワンヘルスの推進",
+    catalog: initiative03Catalog as PolicyTargetCatalog,
+    evidence: initiative03Evidence as PolicyTargetEvidence,
+  },
+];
+
+export const initiative01TargetCatalog = policyTargetPages[0].catalog;
+export const initiative01TargetEvidence = policyTargetPages[0].evidence;
+
+export function policyTargetPage(slug: PolicyTargetPageDefinition["slug"]) {
+  const page = policyTargetPages.find((item) => item.slug === slug);
+  if (!page) {
+    throw new Error(`Unknown policy target page: ${slug}`);
+  }
+  return page;
+}
+
+export function policyTargetStats(catalog: PolicyTargetCatalog) {
+  return {
+    reviewedTargets: catalog.items.length,
+    actualsLinked: catalog.items.filter(
+      (target) => target.actual_linkage_status !== "not_linked",
+    ).length,
+    assessed: catalog.items.filter(
+      (target) => target.evaluation_status !== "not_assessed",
+    ).length,
+  };
+}
+
+export const allPolicyTargetStats = {
+  reviewedTargets: policyTargetPages.reduce(
+    (total, page) => total + page.catalog.items.length,
+    0,
+  ),
+  actualsLinked: policyTargetPages.reduce(
+    (total, page) => total + policyTargetStats(page.catalog).actualsLinked,
+    0,
+  ),
+  assessed: policyTargetPages.reduce(
+    (total, page) => total + policyTargetStats(page.catalog).assessed,
+    0,
+  ),
+};
+
+export const initiative01TargetStats = policyTargetStats(initiative01TargetCatalog);
+
+export function formatTargetValue(value: number | null, unit: string | null) {
+  if (value === null || unit === null) {
+    return "未設定";
+  }
   return `${value.toLocaleString("ja-JP")}${unit}`;
 }
 
@@ -80,6 +142,7 @@ export function targetScopeLabel(
     annual: "年次値",
     cumulative: "累計値",
     five_year_cumulative: "5年間累計",
+    not_available: "当初値なし",
   } as const;
   return labels[scope];
 }

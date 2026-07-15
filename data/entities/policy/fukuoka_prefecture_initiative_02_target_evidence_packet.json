@@ -1,0 +1,45 @@
+{
+  "id": "evidence-policy-target-catalog-fukuoka-prefecture-initiative-02",
+  "subject_type": "policy_target_catalog",
+  "subject_id": "policy-target-catalog-fukuoka-prefecture-initiative-02",
+  "claims": [
+    {
+      "field": "target_count",
+      "statement": "取組事項2『世界から選ばれる福岡県の実現』には、数値目標11から17までの7指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの2ページ目、印刷ページ316。",
+      "decision": "accepted",
+      "review_note": null
+    },
+    {
+      "field": "strategic_business_attraction",
+      "statement": "国内外からの戦略的企業誘致には、企業立地件数、産業用地整備着手面積、特区設備投資企業数の3指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの2ページ目、指標11から13。",
+      "decision": "accepted",
+      "review_note": "産業用地整備着手面積の当初値はダッシュ表記であり、0として扱わない。"
+    },
+    {
+      "field": "international_expansion_and_inbound",
+      "statement": "企業等の海外展開支援・海外からの誘客促進には、海外展開成約、外国人宿泊、農林水産物輸出、国際路線誘致の4指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの2ページ目、指標14から17。",
+      "decision": "accepted",
+      "review_note": "福岡空港の新規国際路線誘致数の当初値はダッシュ表記であり、0として扱わない。"
+    },
+    {
+      "field": "actual_results",
+      "statement": "年度実施状況報告にある実績値との個別対応は未確認である。",
+      "source_ids": ["policy-source-fukuoka-pref-progress-reports", "policy-source-fukuoka-pref-progress-2024-pdf"],
+      "location_note": "年度実施状況報告の数値目標進捗を今後確認する。",
+      "decision": "needs_review",
+      "review_note": "年度実績と指標定義を確認してから接続する。"
+    }
+  ],
+  "open_questions": [
+    "2022年度から2024年度の各指標実績を接続する必要がある。",
+    "外国人宿泊者数の集計条件とコロナ影響の注記を確認する必要がある。",
+    "年次値と5年間累計の指標は同じ達成率計算を適用しない。"
+  ],
+  "review_status": "reviewed"
+}

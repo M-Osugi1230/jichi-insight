@@ -9,7 +9,7 @@ import { fukuokaPrefectureFinance } from "./finance";
 import { fukuokaCityFinance } from "./fukuokaCityFinance";
 import { kitakyushuFinance } from "./kitakyushuFinance";
 import { policyDirectionStats, policyInitiativeStats } from "./policies";
-import { initiative01TargetStats } from "./policyTargets";
+import { allPolicyTargetStats } from "./policyTargets";
 import { sourceRequestRecords } from "./sourceRequests";
 
 export type MunicipalityQuality = {
@@ -69,8 +69,8 @@ export const dataQualitySnapshot = {
   settlementValues: fiscalRecords.filter((record) => record.stage === "settlement").length,
   reviewedPolicyDirections: policyDirectionStats.reviewedDirections,
   reviewedPolicyInitiatives: policyInitiativeStats.reviewedInitiatives,
-  reviewedPolicyTargets: initiative01TargetStats.reviewedTargets,
-  policyTargetsActualsLinked: initiative01TargetStats.actualsLinked,
+  reviewedPolicyTargets: allPolicyTargetStats.reviewedTargets,
+  policyTargetsActualsLinked: allPolicyTargetStats.actualsLinked,
   policyInitiativesProgressLinked: policyInitiativeStats.progressLinked,
   assessedPolicyInitiatives: policyInitiativeStats.assessed,
   reviewedExecutiveTerms: currentExecutiveTerms.length,
