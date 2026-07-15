@@ -10,6 +10,7 @@ export function SiteFooter() {
       <div className="footerLinks">
         <Link href="/about">このサイトの目的</Link>
         <Link href="/compare">都市比較</Link>
+        <Link href="/executives">首長台帳</Link>
         <Link href="/assemblies">議会アカウンタビリティ</Link>
         <Link href="/methodology">方法論</Link>
         <Link href="/data-quality">データ品質</Link>
