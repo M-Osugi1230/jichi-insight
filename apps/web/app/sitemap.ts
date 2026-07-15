@@ -10,6 +10,7 @@ const routes = [
   "/corrections",
   "/data-quality",
   "/executives",
+  "/executives/source-requests",
   "/methodology",
   "/municipalities",
   "/municipalities/fukuoka-prefecture",
