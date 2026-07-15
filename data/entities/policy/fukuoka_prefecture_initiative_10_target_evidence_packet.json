@@ -1,0 +1,46 @@
+{
+  "id": "evidence-policy-target-catalog-fukuoka-prefecture-initiative-10",
+  "subject_type": "policy_target_catalog",
+  "subject_id": "policy-target-catalog-fukuoka-prefecture-initiative-10",
+  "claims": [
+    {
+      "field": "target_count",
+      "statement": "取組事項10「地域と調和した観光産業の振興」には、番号付き数値目標41から49の9指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの4ページ目、印刷ページ318。",
+      "decision": "accepted",
+      "review_note": "再掲行は番号付き固有指標数に含めない。"
+    },
+    {
+      "field": "baseline_and_target",
+      "statement": "旅行消費、リピーター、SNS、宿泊者、観光地域づくり法人に関する9指標の当初値、目標値、単位、期間を構造化した。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの4ページ目、指標41から49。",
+      "decision": "accepted",
+      "review_note": "リピーター率の59.5%は公式表に参考値として掲載されている。"
+    },
+    {
+      "field": "repeated_indicators",
+      "statement": "旅行消費単価の2指標、外国人延べ宿泊者数、リピーター率は同じ取組内で再掲されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの4ページ目、取組10内の再掲行。",
+      "decision": "accepted",
+      "review_note": "指標41、42、43と既存指標15を重複登録せず、再掲関係は将来の関連付けモデルで表現する。"
+    },
+    {
+      "field": "actual_results",
+      "statement": "年度実績との個別対応は未確認である。",
+      "source_ids": ["policy-source-fukuoka-pref-progress-reports", "policy-source-fukuoka-pref-progress-2024-pdf"],
+      "location_note": "実施状況報告の数値目標進捗との対応付けは次工程。",
+      "decision": "needs_review",
+      "review_note": "旅行消費、SNS、宿泊者数の集計定義とコロナ期の比較可能性を確認してから接続する。"
+    }
+  ],
+  "open_questions": [
+    "旅行消費単価と宿泊者数の調査方法が年度間で変更されていないか確認する。",
+    "SNSフォロワー数・閲覧数の対象アカウントと集計期間を確認する。",
+    "再掲指標を同一取組内の複数施策へ関連付けるデータモデルを整備する。",
+    "2022年度から2024年度の実績値を年度別に接続する。"
+  ],
+  "review_status": "reviewed"
+}
