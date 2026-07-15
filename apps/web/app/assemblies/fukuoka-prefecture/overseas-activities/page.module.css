@@ -1,0 +1,301 @@
+.hero {
+  border-bottom: 1px solid #d6d5ce;
+  display: grid;
+  gap: 64px;
+  grid-template-columns: 1.25fr 0.75fr;
+  padding: 82px 0 72px;
+}
+
+.heroMeta {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.heroMeta > span:first-child {
+  color: #676960;
+  font-size: 0.78rem;
+}
+
+.hero h1 {
+  font-size: clamp(2.8rem, 6.5vw, 5.7rem);
+  margin-bottom: 26px;
+}
+
+.hero p {
+  color: #676960;
+  font-size: 1.04rem;
+  max-width: 760px;
+}
+
+.summaryGrid {
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0;
+}
+
+.summaryGrid div {
+  border-top: 1px solid #d6d5ce;
+  padding: 18px 12px 18px 0;
+}
+
+.summaryGrid dt {
+  color: #676960;
+  font-size: 0.72rem;
+}
+
+.summaryGrid dd {
+  font-size: 1.55rem;
+  font-weight: 780;
+  margin: 3px 0 0;
+}
+
+.gate {
+  background: #f2ead1;
+  border: 1px solid #dfd09e;
+  border-radius: 20px;
+  display: grid;
+  gap: 48px;
+  grid-template-columns: 0.8fr 1.2fr;
+  margin: 72px 0;
+  padding: 32px;
+}
+
+.gate h2 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  margin-bottom: 0;
+}
+
+.gate ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.gate li {
+  color: #5c512f;
+  margin-bottom: 10px;
+}
+
+.tripSection {
+  border-top: 1px solid #d6d5ce;
+  padding: 86px 0;
+}
+
+.tripList {
+  display: grid;
+  gap: 18px;
+  margin-top: 48px;
+}
+
+.tripCard {
+  background: #fff;
+  border: 1px solid #d6d5ce;
+  border-radius: 22px;
+  padding: 28px;
+}
+
+.tripHeader {
+  align-items: flex-start;
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.tripHeader h3 {
+  font-size: clamp(1.45rem, 3vw, 2.05rem);
+  line-height: 1.35;
+  margin-bottom: 8px;
+}
+
+.tripHeader p {
+  color: #676960;
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.facts {
+  display: grid;
+  gap: 0 28px;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 32px 0 0;
+}
+
+.facts div {
+  border-top: 1px solid #d6d5ce;
+  padding: 15px 0;
+}
+
+.facts dt {
+  color: #676960;
+  font-size: 0.7rem;
+}
+
+.facts dd {
+  font-size: 0.84rem;
+  font-weight: 720;
+  margin: 4px 0 0;
+}
+
+.detailGrid {
+  display: grid;
+  gap: 36px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 28px;
+}
+
+.detailBlock {
+  border-top: 1px solid #d6d5ce;
+  padding-top: 20px;
+}
+
+.detailBlock h4 {
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  margin: 0 0 14px;
+  text-transform: uppercase;
+}
+
+.detailBlock p,
+.detailBlock li {
+  color: #676960;
+  font-size: 0.82rem;
+}
+
+.detailBlock ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.participantList {
+  display: grid;
+  gap: 0 20px;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+}
+
+.participantList li {
+  border-top: 1px solid #d6d5ce;
+  padding: 12px 0;
+}
+
+.participantList strong {
+  color: #171815;
+  display: block;
+  font-size: 0.84rem;
+}
+
+.participantList span {
+  color: #676960;
+  display: block;
+  font-size: 0.7rem;
+}
+
+.sourceLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.sourceLinks a {
+  color: #173f35;
+  font-size: 0.78rem;
+  font-weight: 730;
+  text-underline-offset: 4px;
+}
+
+.processGrid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 42px;
+}
+
+.processCard {
+  background: #fff;
+  border: 1px solid #d6d5ce;
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.processCard span {
+  color: #676960;
+  font-size: 0.7rem;
+  font-weight: 760;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.processCard h3 {
+  font-size: 1.25rem;
+  margin: 30px 0 12px;
+}
+
+.processCard p {
+  color: #676960;
+  font-size: 0.82rem;
+}
+
+.warning {
+  background: #f2ead1;
+  border: 1px solid #dfd09e;
+  border-radius: 16px;
+  color: #5c512f;
+  margin-top: 28px;
+  padding: 18px;
+}
+
+.bottomNav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 38px 0 10px;
+}
+
+.bottomNav a {
+  color: #173f35;
+  font-size: 0.84rem;
+  font-weight: 750;
+  text-underline-offset: 4px;
+}
+
+@media (max-width: 900px) {
+  .hero,
+  .gate,
+  .processGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .facts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .tripHeader {
+    display: block;
+  }
+
+  .badges {
+    justify-content: flex-start;
+    margin-top: 16px;
+  }
+
+  .facts,
+  .detailGrid,
+  .participantList,
+  .summaryGrid {
+    grid-template-columns: 1fr;
+  }
+}
