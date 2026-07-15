@@ -46,6 +46,8 @@ routes=(
   "/policies/fukuoka-prefecture/initiatives/05/"
   "/policies/fukuoka-prefecture/initiatives/06/"
   "/policies/fukuoka-prefecture/initiatives/07/"
+  "/policies/fukuoka-prefecture/initiatives/08/"
+  "/policies/fukuoka-prefecture/initiatives/09/"
   "/policy-sources/"
   "/sources/"
   "/robots.txt"
@@ -87,7 +89,7 @@ check_content "/data-quality/" \
   "Reviewed基本方向" \
   "Reviewed取組事項" \
   "Reviewed数値目標" \
-  "取組1から7の基準値・目標値28件" \
+  "取組1から9の基準値・目標値40件" \
   "年度実績へ接続済み" \
   "政策評価済み" \
   "首長分野は、任期・探索・公約資料・分割レビュー・評価を分ける。" \
@@ -116,12 +118,13 @@ check_content "/executives/source-requests/" \
 check_content "/policies/" \
   "政策評価の前に、計画が何を目指すかを構造化する。" \
   "4つの基本方向と30の取組事項" \
-  "取組1から7の指標1から28まで" \
+  "取組1から9の指標1から40まで" \
   "数値目標10件" \
   "数値目標7件" \
   "数値目標1件" \
   "数値目標2件" \
   "数値目標4件" \
+  "数値目標6件" \
   "取組と目標の一覧と、実際の成果はまだ別々です。"
 check_content "/policies/fukuoka-prefecture/initiatives/01/" \
   "次代を担う「人財」の育成" \
@@ -160,6 +163,18 @@ check_content "/policies/fukuoka-prefecture/initiatives/07/" \
   "成長産業分野への新規参画企業数" \
   "1億円以上の資金調達を行ったベンチャー企業数" \
   "80社"
+check_content "/policies/fukuoka-prefecture/initiatives/08/" \
+  "中小企業の振興" \
+  "県の支援により生産性が向上した中小企業・小規模企業者数" \
+  "工業技術センターの企業への技術移転件数" \
+  "1,000社"
+check_content "/policies/fukuoka-prefecture/initiatives/09/" \
+  "農林水産業の振興" \
+  "デジタルデータを活用した経営を行う経営体数（農林水産業）" \
+  "福岡フェア等における県産食材の取扱高" \
+  "ワンヘルスの実践に取り組む経営体数（農林漁業）" \
+  "6,000経営体" \
+  "当初値は公式資料でダッシュ表記です。0とは扱わず"
 check_content "/policy-sources/" \
   "集められる政策資料から、先に形にする。" \
   "計画から支出と成果まで、順番につなぐ。" \
