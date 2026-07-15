@@ -1,0 +1,47 @@
+name: Apply targets 16 to 20 with API
+
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - opened
+      - reopened
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    if: github.head_ref == 'agent/fukuoka-targets-16-20'
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TARGET_BRANCH: agent/fukuoka-targets-16-20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/fukuoka-targets-16-20
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Apply guarded integration
+        run: python scripts/register_targets_16_20.py
+      - name: Update generated files through Contents API
+        run: |
+          for path in \
+            apps/web/lib/policyTargets.ts \
+            apps/web/app/policies/page.tsx \
+            apps/web/app/data-quality/page.tsx \
+            README.md \
+            tests/test_policy_targets_extended.py
+          do
+            current_sha="$(gh api "repos/${GITHUB_REPOSITORY}/contents/${path}?ref=${TARGET_BRANCH}" --jq .sha)"
+            encoded="$(base64 -w0 "${path}")"
+            gh api --method PUT "repos/${GITHUB_REPOSITORY}/contents/${path}" \
+              -f message="Integrate reviewed targets 77 to 99: ${path}" \
+              -f content="${encoded}" \
+              -f sha="${current_sha}" \
+              -f branch="${TARGET_BRANCH}"
+          done
