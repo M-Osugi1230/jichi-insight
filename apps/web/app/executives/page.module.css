@@ -1,0 +1,160 @@
+.summaryGrid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 88px;
+}
+
+.summaryCard,
+.executiveCard {
+  background: #fff;
+  border: 1px solid #d6d5ce;
+  border-radius: 20px;
+  padding: 26px;
+}
+
+.summaryCard span {
+  color: #676960;
+  display: block;
+  font-size: 0.74rem;
+}
+
+.summaryCard strong {
+  display: block;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  letter-spacing: -0.06em;
+  margin: 30px 0 8px;
+}
+
+.summaryCard p {
+  border-top: 1px solid #d6d5ce;
+  color: #676960;
+  font-size: 0.8rem;
+  margin: 18px 0 0;
+  padding-top: 14px;
+}
+
+.registry {
+  display: grid;
+  gap: 18px;
+  margin-top: 44px;
+}
+
+.executiveHeader {
+  align-items: flex-start;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.executiveHeader p {
+  color: #676960;
+  font-size: 0.76rem;
+  margin-bottom: 7px;
+}
+
+.executiveHeader h3 {
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+  margin: 0;
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 34px 0 0;
+}
+
+.facts div {
+  border-top: 1px solid #d6d5ce;
+  padding: 16px 12px 0 0;
+}
+
+.facts dt {
+  color: #676960;
+  font-size: 0.7rem;
+}
+
+.facts dd {
+  font-size: 0.9rem;
+  font-weight: 750;
+  margin: 5px 0 0;
+}
+
+.sourceList,
+.gaps {
+  border-top: 1px solid #d6d5ce;
+  margin-top: 26px;
+  padding-top: 18px;
+}
+
+.sourceList > p,
+.gaps > p {
+  color: #676960;
+  font-size: 0.7rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.sourceList a {
+  color: #173f35;
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin-top: 9px;
+  text-underline-offset: 4px;
+}
+
+.gaps ul {
+  margin: 10px 0 0;
+  padding-left: 20px;
+}
+
+.gaps li {
+  color: #676960;
+  font-size: 0.82rem;
+  margin-top: 7px;
+}
+
+.boundary {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 0.8fr 1.2fr;
+}
+
+.boundary ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.boundary li {
+  border-top: 1px solid #d6d5ce;
+  padding: 15px 0;
+}
+
+.boundary li::before {
+  color: #765b12;
+  content: "未評価";
+  display: inline-block;
+  font-size: 0.64rem;
+  font-weight: 750;
+  margin-right: 12px;
+}
+
+@media (max-width: 900px) {
+  .summaryGrid,
+  .boundary {
+    grid-template-columns: 1fr;
+  }
+
+  .facts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .facts {
+    grid-template-columns: 1fr;
+  }
+}
