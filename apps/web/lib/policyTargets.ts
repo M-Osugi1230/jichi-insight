@@ -12,6 +12,10 @@ import initiative06Evidence from "../../../data/entities/policy/fukuoka_prefectu
 import initiative06Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_06_targets.json";
 import initiative07Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_07_target_evidence_packet.json";
 import initiative07Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_07_targets.json";
+import initiative08Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_08_target_evidence_packet.json";
+import initiative08Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_08_targets.json";
+import initiative09Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_09_target_evidence_packet.json";
+import initiative09Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_09_targets.json";
 
 export type PolicyTargetComponent = {
   label: string | null;
@@ -66,7 +70,7 @@ export type PolicyTargetEvidence = {
 };
 
 export type PolicyTargetPageDefinition = {
-  slug: "01" | "02" | "03" | "04" | "05" | "06" | "07";
+  slug: "01" | "02" | "03" | "04" | "05" | "06" | "07" | "08" | "09";
   title: string;
   catalog: PolicyTargetCatalog;
   evidence: PolicyTargetEvidence;
@@ -114,6 +118,18 @@ export const policyTargetPages: PolicyTargetPageDefinition[] = [
     title: "成長産業の創出",
     catalog: initiative07Catalog as PolicyTargetCatalog,
     evidence: initiative07Evidence as PolicyTargetEvidence,
+  },
+  {
+    slug: "08",
+    title: "中小企業の振興",
+    catalog: initiative08Catalog as PolicyTargetCatalog,
+    evidence: initiative08Evidence as PolicyTargetEvidence,
+  },
+  {
+    slug: "09",
+    title: "農林水産業の振興",
+    catalog: initiative09Catalog as PolicyTargetCatalog,
+    evidence: initiative09Evidence as PolicyTargetEvidence,
   },
 ];
 
