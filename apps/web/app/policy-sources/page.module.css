@@ -6,7 +6,8 @@
 }
 
 .summaryCard,
-.sourceCard {
+.sourceCard,
+.profileCard {
   background: #fff;
   border: 1px solid #d6d5ce;
   border-radius: 20px;
@@ -35,6 +36,128 @@
   font-size: 0.78rem;
   margin: 18px 0 0;
   padding-top: 14px;
+}
+
+.profileGrid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 42px;
+}
+
+.profileCard {
+  padding: 24px;
+}
+
+.profileHeader {
+  align-items: flex-start;
+  display: flex;
+  gap: 18px;
+  justify-content: space-between;
+}
+
+.profileHeader p {
+  color: #676960;
+  font-size: 0.7rem;
+  margin: 0 0 7px;
+}
+
+.profileHeader h3 {
+  font-size: 1.55rem;
+  margin: 0;
+}
+
+.capabilityList {
+  margin-top: 28px;
+}
+
+.capability {
+  border-top: 1px solid #d6d5ce;
+  padding: 16px 0;
+}
+
+.capability > div:first-child {
+  align-items: baseline;
+  display: flex;
+  gap: 14px;
+  justify-content: space-between;
+}
+
+.capability strong {
+  color: #173f35;
+  font-size: 0.8rem;
+}
+
+.capability span {
+  color: #765b12;
+  font-size: 0.65rem;
+  font-weight: 750;
+}
+
+.capability > p {
+  color: #676960;
+  font-size: 0.78rem;
+  line-height: 1.7;
+  margin: 10px 0 0;
+}
+
+.capability dl {
+  display: flex;
+  gap: 18px;
+  margin: 12px 0 0;
+}
+
+.capability dl div {
+  display: flex;
+  gap: 7px;
+}
+
+.capability dt,
+.capability dd {
+  font-size: 0.68rem;
+}
+
+.capability dt {
+  color: #676960;
+}
+
+.capability dd {
+  font-weight: 750;
+  margin: 0;
+}
+
+.nextAction {
+  background: #f0efe9;
+  border-radius: 14px;
+  margin-top: 20px;
+  padding: 18px;
+}
+
+.nextAction > p {
+  color: #765b12;
+  font-size: 0.66rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+}
+
+.nextAction > strong {
+  display: block;
+  font-size: 0.82rem;
+  line-height: 1.7;
+}
+
+.nextAction ul {
+  margin: 14px 0 0;
+  padding-left: 18px;
+}
+
+.nextAction li {
+  color: #676960;
+  font-size: 0.72rem;
+  line-height: 1.6;
+  margin-top: 5px;
 }
 
 .group {
@@ -181,6 +304,12 @@
   margin-top: 10px;
 }
 
+@media (max-width: 1050px) {
+  .profileGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 900px) {
   .summaryGrid,
   .flow {
@@ -199,7 +328,8 @@
   }
 
   .groupHeader,
-  .sourceHeader {
+  .sourceHeader,
+  .profileHeader {
     align-items: flex-start;
     flex-direction: column;
   }
