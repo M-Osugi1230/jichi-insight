@@ -1,5 +1,5 @@
-import evidencePackets from "../../../data/reviewed/executives/evidence_packets.json";
-import executiveTerms from "../../../data/reviewed/executives/executive_terms.json";
+import evidencePackets from "../../../data/entities/executives/evidence_packets.json";
+import executiveTerms from "../../../data/entities/executives/executive_terms.json";
 
 import { municipalityMeta, sourceCatalog } from "./catalog";
 
