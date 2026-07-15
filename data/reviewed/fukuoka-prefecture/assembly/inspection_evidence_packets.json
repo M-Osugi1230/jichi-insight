@@ -1,0 +1,108 @@
+[
+  {
+    "id": "evidence-fukuoka-assembly-2026-gyeongsangnam-do",
+    "subject_type": "inspection_trip",
+    "subject_id": "jp-local-400009-assembly-2023-inspection-2026-gyeongsangnam-do",
+    "claims": [
+      {
+        "field": "report_status",
+        "statement": "2026年3月30日から4月1日の慶尚南道友好訪問団は公式一覧に掲載されているが、2026年7月15日時点で報告書リンクは掲載されていない。",
+        "source_ids": ["fukuoka-pref-overseas-reports"],
+        "location_note": "活動報告書一覧の項番1。",
+        "decision": "accepted",
+        "review_note": "一覧ページは未掲載資料を順次掲載すると説明しているため、将来の更新対象。"
+      },
+      {
+        "field": "cost_status",
+        "statement": "確認した公式一覧では総費用・1人当たり費用を確認できない。",
+        "source_ids": ["fukuoka-pref-overseas-reports"],
+        "location_note": "活動報告書一覧。",
+        "decision": "accepted",
+        "review_note": "費用が存在しないという意味ではなく、確認した公開資料で見つからない状態。"
+      }
+    ],
+    "open_questions": [
+      "参加者名・人数",
+      "総費用・1人当たり費用・宿泊費・航空運賃",
+      "契約方式と契約先",
+      "訪問後の報告書と政策反映"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-assembly-2026-hawaii",
+    "subject_type": "inspection_trip",
+    "subject_id": "jp-local-400009-assembly-2023-inspection-2026-hawaii",
+    "claims": [
+      {
+        "field": "report_status",
+        "statement": "2026年1月19日から23日のハワイ州議会友好訪問団は公式一覧に掲載されているが、2026年7月15日時点で報告書リンクは掲載されていない。",
+        "source_ids": ["fukuoka-pref-overseas-reports"],
+        "location_note": "活動報告書一覧の項番2。",
+        "decision": "accepted",
+        "review_note": "県議会は2026年6月から報告書公開を始め、未掲載分も順次掲載すると説明。"
+      },
+      {
+        "field": "cost_status",
+        "statement": "確認した公式一覧・海外活動Q&Aでは、この訪問団の総費用・1人当たり費用を特定できない。",
+        "source_ids": ["fukuoka-pref-overseas-reports", "fukuoka-pref-overseas-faq"],
+        "location_note": "活動報告書一覧、海外活動Q&Aの費用に関する説明。",
+        "decision": "accepted",
+        "review_note": "訪問単位の金額を公開資料から特定できない状態。"
+      }
+    ],
+    "open_questions": [
+      "参加者名・人数と公費負担区分",
+      "総費用・1人当たり費用・宿泊費・航空運賃",
+      "契約方式・契約先・予定価格・変更契約",
+      "訪問内容と具体的な政策反映"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-assembly-2026-bangkok",
+    "subject_type": "inspection_trip",
+    "subject_id": "jp-local-400009-assembly-2023-inspection-2026-bangkok",
+    "claims": [
+      {
+        "field": "participants",
+        "statement": "報告書には議員10人、国際交流コーディネーター1人、議会事務局随行者3人が記載され、合計14人と確認できる。",
+        "source_ids": ["fukuoka-pref-overseas-bangkok-report-2026"],
+        "location_note": "PDF2ページ目の『3 訪問団』。",
+        "decision": "accepted",
+        "review_note": "随行者3人の個人名と各参加者の費用負担区分は同資料では確認できない。"
+      },
+      {
+        "field": "report_status",
+        "statement": "2026年1月13日から17日のバンコク都議会友好訪問団には31ページの活動報告書が公開されている。",
+        "source_ids": ["fukuoka-pref-overseas-reports", "fukuoka-pref-overseas-bangkok-report-2026"],
+        "location_note": "活動報告書一覧の項番3、報告書表紙・概要。",
+        "decision": "accepted",
+        "review_note": "目的、訪問先、説明内容、訪問団コメントを確認。"
+      },
+      {
+        "field": "policy_follow_up",
+        "statement": "報告書には、環境行政の知見を議員連盟等を通じた提案や県内公共施設の整備へ生かす意向が記載されている。",
+        "source_ids": ["fukuoka-pref-overseas-bangkok-report-2026"],
+        "location_note": "PDF9ページ目前後の訪問団コメント。",
+        "decision": "accepted",
+        "review_note": "意向・示唆の記載であり、提案・予算・制度変更が実施されたことまでは確認していない。"
+      },
+      {
+        "field": "cost_status",
+        "statement": "確認した活動報告書・公式一覧では、訪問団の総費用・1人当たり費用を確認できない。",
+        "source_ids": ["fukuoka-pref-overseas-reports", "fukuoka-pref-overseas-bangkok-report-2026"],
+        "location_note": "活動報告書一覧および31ページの報告書全体。",
+        "decision": "accepted",
+        "review_note": "確認した資料に金額が掲載されていない状態。"
+      }
+    ],
+    "open_questions": [
+      "参加者ごとの費用負担区分",
+      "総費用・1人当たり費用・費目別内訳",
+      "契約方式・契約先・予定価格・変更契約額",
+      "報告書の提案が議案・質問・予算・事業へ反映されたか"
+    ],
+    "review_status": "reviewed"
+  }
+]
