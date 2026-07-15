@@ -1,0 +1,36 @@
+{
+  "id": "evidence-policy-target-catalog-fukuoka-prefecture-initiative-03",
+  "subject_type": "policy_target_catalog",
+  "subject_id": "policy-target-catalog-fukuoka-prefecture-initiative-03",
+  "claims": [
+    {
+      "field": "target_count",
+      "statement": "取組事項3『ワンヘルスの推進』には、ワンヘルス宣言事業者登録数の1指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの2ページ目、印刷ページ316、指標18。",
+      "decision": "accepted",
+      "review_note": "当初値はダッシュ表記であり、0として扱わない。"
+    },
+    {
+      "field": "target_value",
+      "statement": "ワンヘルス宣言事業者登録数の目標はR4年度からR8年度の5年間累計11,000件である。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの2ページ目、指標18。",
+      "decision": "accepted",
+      "review_note": null
+    },
+    {
+      "field": "actual_results",
+      "statement": "年度実施状況報告にある登録実績との個別対応は未確認である。",
+      "source_ids": ["policy-source-fukuoka-pref-progress-reports", "policy-source-fukuoka-pref-progress-2024-pdf"],
+      "location_note": "年度実施状況報告の数値目標進捗を今後確認する。",
+      "decision": "needs_review",
+      "review_note": "年度別登録数と累計値を分けて確認する。"
+    }
+  ],
+  "open_questions": [
+    "年度別の新規登録数と累計登録数を区別して接続する必要がある。",
+    "登録取消や重複の取扱いを公式定義で確認する必要がある。"
+  ],
+  "review_status": "reviewed"
+}
