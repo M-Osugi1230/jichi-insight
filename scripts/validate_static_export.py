@@ -28,6 +28,7 @@ REQUIRED_FILES = [
     "compare/index.html",
     "corrections/index.html",
     "data-quality/index.html",
+    "executives/index.html",
     "methodology/index.html",
     "municipalities/index.html",
     "municipalities/fukuoka-prefecture/index.html",
@@ -174,6 +175,23 @@ def main() -> int:
                     "人口・行政需要・面積・産業構造を補正する前に優劣を付けない",
                 ],
                 "City comparison page",
+            )
+        )
+
+    executives_path = EXPORT_ROOT / "executives" / "index.html"
+    if executives_path.is_file():
+        failures.extend(
+            require_copy(
+                executives_path.read_text(encoding="utf-8"),
+                [
+                    "首長評価の前に、任期と公約の根拠を固定する。",
+                    "服部 誠太郎",
+                    "高島 宗一郎",
+                    "武内 和久",
+                    "公約原文の登録",
+                    "現職名と任期が分かっても、実績評価はできない。",
+                ],
+                "Executive registry page",
             )
         )
 
