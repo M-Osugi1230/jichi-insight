@@ -1,0 +1,54 @@
+{
+  "id": "evidence-policy-target-catalog-fukuoka-prefecture-initiative-08",
+  "subject_type": "policy_target_catalog",
+  "subject_id": "policy-target-catalog-fukuoka-prefecture-initiative-08",
+  "claims": [
+    {
+      "field": "target_count",
+      "statement": "取組事項8『中小企業の振興』には、数値目標29から34までの6指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの3ページ目、印刷ページ317、指標29から34。",
+      "decision": "accepted",
+      "review_note": null
+    },
+    {
+      "field": "management_foundation",
+      "statement": "経営基盤の強化には、生産性向上企業数と、重点支援企業のうち売上または経常利益が向上した企業数の2指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの3ページ目、指標29から30。",
+      "decision": "accepted",
+      "review_note": "指標29は年次の当初値と5年間累計の目標値を持ち、指標30は各年度の企業数として保存する。"
+    },
+    {
+      "field": "business_development",
+      "statement": "新たな事業展開の促進には、経営革新計画策定企業の業績向上企業数と、工業技術センターの技術移転件数の2指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの3ページ目、指標31から32。",
+      "decision": "accepted",
+      "review_note": "いずれも年次の当初値と5年間累計の目標値を区別する。"
+    },
+    {
+      "field": "small_business_continuity",
+      "statement": "小規模企業者の事業の持続的な発展には、生産性向上事業者数と、重点支援企業のうち業績が向上した企業数の2指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの3ページ目、指標33から34。",
+      "decision": "accepted",
+      "review_note": "支援対象企業の母集団と重複計上ルールは年度資料で確認する。"
+    },
+    {
+      "field": "actual_results",
+      "statement": "年度実施状況報告にある指標29から34の実績との個別対応は未確認である。",
+      "source_ids": ["policy-source-fukuoka-pref-progress-reports", "policy-source-fukuoka-pref-progress-2024-pdf"],
+      "location_note": "年度実施状況報告の数値目標進捗を今後確認する。",
+      "decision": "needs_review",
+      "review_note": "支援による生産性・業績向上の判定方法、対象企業、重複計上を確認してから接続する。"
+    }
+  ],
+  "open_questions": [
+    "生産性向上と業績向上の公式判定基準を確認する必要がある。",
+    "重点支援企業の年度ごとの母数と対象選定方法を確認する必要がある。",
+    "同一企業が複数指標や複数年度に重複計上される条件を確認する必要がある。",
+    "年次値と5年間累計値を同一の達成率へ変換しない。"
+  ],
+  "review_status": "reviewed"
+}
