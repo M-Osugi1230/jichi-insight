@@ -1,0 +1,37 @@
+{
+  "id": "evidence-policy-target-catalog-fukuoka-prefecture-initiative-13",
+  "subject_type": "policy_target_catalog",
+  "subject_id": "policy-target-catalog-fukuoka-prefecture-initiative-13",
+  "claims": [
+    {
+      "field": "target_count",
+      "statement": "取組事項13『出会い・結婚・出産・子育て支援』には、数値目標69が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの5ページ目、印刷ページ319、指標69。",
+      "decision": "accepted",
+      "review_note": null
+    },
+    {
+      "field": "marriages",
+      "statement": "出会い・結婚応援事業を通じた成婚者数はR2年度172人、R8年度目標180人である。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの5ページ目、指標69。",
+      "decision": "accepted",
+      "review_note": "事業を通じた成婚者の定義と確認方法は年度実績資料で確認する。"
+    },
+    {
+      "field": "actual_results",
+      "statement": "年度実施状況報告にある指標69の実績との個別対応は未確認である。",
+      "source_ids": ["policy-source-fukuoka-pref-progress-reports", "policy-source-fukuoka-pref-progress-2024-pdf"],
+      "location_note": "年度実施状況報告の数値目標進捗を今後確認する。",
+      "decision": "needs_review",
+      "review_note": "登録者、交際、成婚の集計範囲と重複計上を確認してから接続する。"
+    }
+  ],
+  "open_questions": [
+    "成婚者数の確認方法と集計時点を確認する必要がある。",
+    "同一組の男女を1人・2人・1組のいずれで計上するか確認する必要がある。",
+    "年度をまたぐ登録・交際・成婚の帰属年度を確認する必要がある。"
+  ],
+  "review_status": "reviewed"
+}
