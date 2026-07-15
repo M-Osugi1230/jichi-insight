@@ -1,0 +1,57 @@
+from __future__ import annotations
+
+import json
+from pathlib import Path
+from typing import Any
+
+from jsonschema import Draft202012Validator, FormatChecker
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def load_json(path: str) -> Any:
+    with (ROOT / path).open(encoding="utf-8") as handle:
+        return json.load(handle)
+
+
+def validation_errors(schema_path: str, instance: Any) -> list[str]:
+    validator = Draft202012Validator(
+        load_json(schema_path),
+        format_checker=FormatChecker(),
+    )
+    return [error.message for error in validator.iter_errors(instance)]
+
+
+def test_executive_registry_matches_shared_contracts() -> None:
+    terms = load_json("data/entities/executives/executive_terms.json")
+    packets = load_json("data/entities/executives/evidence_packets.json")
+
+    assert len(terms) == 3
+    assert {term["municipality_id"] for term in terms} == {
+        "jp-local-400009",
+        "jp-local-401307",
+        "jp-local-401005",
+    }
+    for term in terms:
+        assert validation_errors("schemas/executive_term.schema.json", term) == []
+        assert term["status"] == "current"
+        assert term["manifesto_source_ids"] == []
+    for packet in packets:
+        assert validation_errors("schemas/evidence_packet.schema.json", packet) == []
+
+
+def test_every_executive_has_evidence_and_known_sources() -> None:
+    terms = load_json("data/entities/executives/executive_terms.json")
+    packets = load_json("data/entities/executives/evidence_packets.json")
+    catalog = load_json("data/catalog/official_sources.json")
+    source_ids = {source["id"] for source in catalog["records"]}
+
+    assert {packet["subject_id"] for packet in packets} == {
+        term["id"] for term in terms
+    }
+    for term in terms:
+        assert set(term["sources"]) <= source_ids
+    for packet in packets:
+        assert packet["open_questions"]
+        for claim in packet["claims"]:
+            assert set(claim["source_ids"]) <= source_ids
