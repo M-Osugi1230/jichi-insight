@@ -7,8 +7,10 @@ import { StatusBadge } from "@/components/StatusBadge";
 import {
   currentExecutiveTerms,
   evidenceForExecutive,
+  evidenceForManifestoReview,
   executiveMunicipality,
   formatDateJa,
+  manifestoReviewForExecutive,
   manifestoSourcesForExecutive,
   sourcesForExecutive,
 } from "@/lib/executives";
@@ -72,6 +74,10 @@ export default function ExecutivesPage() {
               const sources = sourcesForExecutive(term);
               const manifestoSources = manifestoSourcesForExecutive(term);
               const evidence = evidenceForExecutive(term);
+              const manifestoReview = manifestoReviewForExecutive(term);
+              const manifestoReviewEvidence = manifestoReview
+                ? evidenceForManifestoReview(manifestoReview)
+                : undefined;
               return (
                 <article className={styles.executiveCard} key={term.id}>
                   <div className={styles.executiveHeader}>
@@ -115,6 +121,22 @@ export default function ExecutivesPage() {
                     </div>
                   ) : null}
 
+                  {manifestoReview ? (
+                    <div className={styles.gaps}>
+                      <p>Manifesto segmentation review</p>
+                      <ul>
+                        <li>状態：手動レビュー待ち</li>
+                        <li>資料位置：{manifestoReview.source_location}</li>
+                        <li>文章境界：政策方向・経歴・決意が混在</li>
+                        <li>作成済み公約レコード：{manifestoReview.promise_records_created}件</li>
+                        {manifestoReview.review_note ? <li>{manifestoReview.review_note}</li> : null}
+                        {manifestoReviewEvidence?.open_questions.map((question) => (
+                          <li key={question}>未解決：{question}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ) : null}
+
                   {evidence?.open_questions.length ? (
                     <div className={styles.gaps}>
                       <p>Open questions</p>
@@ -137,8 +159,8 @@ export default function ExecutivesPage() {
           <ul>
             <li>3首長の個別選挙結果ページを確認済み</li>
             <li>北九州市長選挙の公式選挙公報を登録済み</li>
+            <li>北九州市の公約分割は手動レビュー待ち・作成済み0件</li>
             <li>福岡県知事・福岡市長の公約原文資料は未登録</li>
-            <li>公約ごとの期限・数値目標・財源・自治体権限は未判定</li>
             <li>関連事業・予算・契約・KPIへの接続は未実施</li>
           </ul>
         </section>
