@@ -1,0 +1,80 @@
+[
+  {
+    "id": "manifesto-source-search-fukuoka-pref-2025",
+    "executive_term_id": "jp-local-400009-executive-2025-04-14",
+    "searched_at": "2026-07-15",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "general_web_search"
+    ],
+    "result_status": "no_stable_primary_source_found",
+    "manifesto_source_ids_found": [],
+    "checked_source_ids": [
+      "fukuoka-pref-governor-election-2025-results"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "福岡県選挙管理委員会の2025年知事選挙ページでは投票・開票結果と統計資料を確認したが、選挙公報または候補者公約原文への安定した導線は確認できなかった。公式サイト内検索と一般検索でも登録可能な一次資料を特定できていない。資料が存在しないとは判定しない。",
+    "next_actions": [
+      "福岡県選挙管理委員会の過去資料保存方針を確認する",
+      "候補者本人または選挙事務所が公開した資料の保存先を再調査する",
+      "必要に応じて選挙管理委員会へ保存資料の有無を照会する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "medium"
+  },
+  {
+    "id": "manifesto-source-search-fukuoka-city-2022",
+    "executive_term_id": "jp-local-401307-executive-2022-12-07",
+    "searched_at": "2026-07-15",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "no_stable_primary_source_found",
+    "manifesto_source_ids_found": [],
+    "checked_source_ids": [
+      "fukuoka-city-mayor-election-2022-results"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "福岡市選挙管理委員会の2022年市長選挙ページでは投票結果と開票結果を確認したが、選挙公報または高島宗一郎候補の公約原文への安定した導線は確認できなかった。公式サイト内検索、候補者名を含む検索、一般検索でも登録可能な一次資料を特定できていない。資料が存在しないとは判定しない。",
+    "next_actions": [
+      "福岡市選挙管理委員会の選挙公報保存・公開方針を確認する",
+      "高島宗一郎氏の選挙時公式サイトまたは公開資料のアーカイブを再調査する",
+      "必要に応じて選挙管理委員会へ保存資料の有無を照会する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "medium"
+  },
+  {
+    "id": "manifesto-source-search-kitakyushu-city-2023",
+    "executive_term_id": "jp-local-401005-executive-2023-02-20",
+    "searched_at": "2026-07-15",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "kitakyushu-mayor-election-2023-bulletin"
+    ],
+    "checked_source_ids": [
+      "kitakyushu-mayor-election-history",
+      "kitakyushu-mayor-election-2023-bulletin"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "北九州市選挙管理委員会の選挙結果ページから2023年市長選挙の公式選挙公報を確認し、公約原文資料として登録した。候補者本人が公開した、選挙公報より詳細で安定したマニフェスト資料は現時点で特定できていない。",
+    "next_actions": [
+      "候補者本人が公開した詳細マニフェストの保存先を継続調査する",
+      "公式選挙公報の候補者欄を人手で分割レビューする"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
+  }
+]
