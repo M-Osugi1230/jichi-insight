@@ -1,6 +1,7 @@
 import { sourceCatalog, type MunicipalityKey } from "./catalog";
 import { fukuokaPrefectureFinance } from "./finance";
 import { fukuokaCityFinance } from "./fukuokaCityFinance";
+import { kitakyushuFinance } from "./kitakyushuFinance";
 
 export type MunicipalityQuality = {
   key: MunicipalityKey;
@@ -22,7 +23,7 @@ const municipalityKeys = Object.keys(municipalityNames) as MunicipalityKey[];
 const recordsByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFinance.records> = {
   "fukuoka-prefecture": fukuokaPrefectureFinance.records,
   "fukuoka-city": fukuokaCityFinance.records,
-  "kitakyushu-city": [],
+  "kitakyushu-city": kitakyushuFinance.records,
 };
 const evidenceByMunicipality: Record<
   MunicipalityKey,
@@ -30,7 +31,7 @@ const evidenceByMunicipality: Record<
 > = {
   "fukuoka-prefecture": fukuokaPrefectureFinance.evidencePackets,
   "fukuoka-city": fukuokaCityFinance.evidencePackets,
-  "kitakyushu-city": [],
+  "kitakyushu-city": kitakyushuFinance.evidencePackets,
 };
 const fiscalRecords = Object.values(recordsByMunicipality).flat();
 const evidencePackets = Object.values(evidenceByMunicipality).flat();
@@ -75,7 +76,6 @@ export const municipalityQuality: MunicipalityQuality[] = municipalityKeys.map((
 });
 
 export const publicationGaps = [
-  "北九州市のReviewed財政値",
   "事業別の予算・契約・執行・決算",
   "KPIの基準値・目標・実績",
   "首長公約と事業の根拠付き対応付け",
