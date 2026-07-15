@@ -20,8 +20,8 @@ export type PolicyTarget = {
   submeasure_title_original: string;
   indicator_name_original: string;
   components: PolicyTargetComponent[];
-  actual_linkage_status: "not_linked";
-  evaluation_status: "not_assessed";
+  actual_linkage_status: "not_linked" | "partial" | "linked";
+  evaluation_status: "not_assessed" | "partially_assessed" | "assessed";
 };
 
 export type PolicyTargetCatalog = {
@@ -70,7 +70,11 @@ export function formatTargetValue(value: number, unit: string) {
   return `${value.toLocaleString("ja-JP")}${unit}`;
 }
 
-export function targetScopeLabel(scope: PolicyTargetComponent["baseline_scope"] | PolicyTargetComponent["target_scope"]) {
+export function targetScopeLabel(
+  scope:
+    | PolicyTargetComponent["baseline_scope"]
+    | PolicyTargetComponent["target_scope"],
+) {
   const labels = {
     snapshot: "時点値",
     annual: "年次値",
