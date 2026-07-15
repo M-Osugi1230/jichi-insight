@@ -1,0 +1,38 @@
+{
+  "id": "evidence-policy-target-catalog-fukuoka-prefecture-initiative-14",
+  "subject_type": "policy_target_catalog",
+  "subject_id": "policy-target-catalog-fukuoka-prefecture-initiative-14",
+  "claims": [
+    {
+      "field": "target_count",
+      "statement": "取組事項14「文化芸術の振興」には、数値目標71から73の3指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの6ページ目、印刷ページ320。",
+      "decision": "accepted",
+      "review_note": null
+    },
+    {
+      "field": "baseline_and_target",
+      "statement": "文化芸術鑑賞率、美術館入館者数、障がい者アート作品貸出数の当初値、目標値、単位、期間を構造化した。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの6ページ目、指標71から73。",
+      "decision": "accepted",
+      "review_note": "指標73の当初値はダッシュ表記であり、0ではなく未設定。"
+    },
+    {
+      "field": "actual_results",
+      "statement": "年度実績との個別対応は未確認である。",
+      "source_ids": ["policy-source-fukuoka-pref-progress-reports", "policy-source-fukuoka-pref-progress-2024-pdf"],
+      "location_note": "実施状況報告との対応付けは次工程。",
+      "decision": "needs_review",
+      "review_note": "県民調査、美術館休館・企画展、作品貸出制度の集計条件を確認してから接続する。"
+    }
+  ],
+  "open_questions": [
+    "文化芸術鑑賞率の調査方法と標本条件を確認する。",
+    "県立美術館入館者数の休館期間・企画展構成による影響を確認する。",
+    "障がい者アート作品数の対象制度と同一作品の複数貸出の扱いを確認する。",
+    "2022年度から2024年度の実績値を接続する。"
+  ],
+  "review_status": "reviewed"
+}
