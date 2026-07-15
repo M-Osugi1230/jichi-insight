@@ -1,0 +1,61 @@
+{
+  "id": "evidence-policy-target-catalog-fukuoka-prefecture-initiative-01",
+  "subject_type": "policy_target_catalog",
+  "subject_id": "policy-target-catalog-fukuoka-prefecture-initiative-01",
+  "claims": [
+    {
+      "field": "target_count",
+      "statement": "取組事項1『次代を担う「人財」の育成』には、数値目標1から10までの10指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの1ページ目、印刷ページ315。",
+      "decision": "accepted",
+      "review_note": null
+    },
+    {
+      "field": "school_education_targets",
+      "statement": "学校教育の充実には、小学校・中学校の学力上位層地区数と、体力中・上位層区分数の3指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの1ページ目、指標1から3。",
+      "decision": "accepted",
+      "review_note": null
+    },
+    {
+      "field": "youth_support_targets",
+      "statement": "未来へはばたく青少年の応援には、放課後活動連携割合と国民体育大会順位の2指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの1ページ目、指標4から5。",
+      "decision": "accepted",
+      "review_note": null
+    },
+    {
+      "field": "global_youth_targets",
+      "statement": "グローバル社会で活躍する青少年の育成には、中学校と高等学校の英語到達割合の2指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの1ページ目、指標6から7。",
+      "decision": "accepted",
+      "review_note": null
+    },
+    {
+      "field": "industrial_human_resource_targets",
+      "statement": "産業人材の育成には、成長分野、観光産業、農林漁業の人材・就業者数の3指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの1ページ目、指標8から10。",
+      "decision": "accepted",
+      "review_note": "当初値は年次値、目標値は5年間累計であり、同一期間の達成率として単純計算しない。"
+    },
+    {
+      "field": "actual_results",
+      "statement": "2024年度実施状況報告にある実績値との個別対応は未確認である。",
+      "source_ids": ["policy-source-fukuoka-pref-progress-reports", "policy-source-fukuoka-pref-progress-2024-pdf"],
+      "location_note": "実施状況報告ページは第3部に数値目標の進捗を掲載すると説明している。",
+      "decision": "needs_review",
+      "review_note": "実績値、実績年度、注記をPDF本文で確認してから接続する。"
+    }
+  ],
+  "open_questions": [
+    "2022年度から2024年度の各指標実績を年度別に接続する必要がある。",
+    "指標定義や集計方法の変更が年度報告に記載されているか確認する必要がある。",
+    "年次当初値と5年間累計目標の比較方法は、実績系列を確認してから決定する。"
+  ],
+  "review_status": "reviewed"
+}
