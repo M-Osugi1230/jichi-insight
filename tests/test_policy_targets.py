@@ -12,6 +12,8 @@ TARGET_CATALOG_PATHS = [
     "data/entities/policy/fukuoka_prefecture_initiative_05_targets.json",
     "data/entities/policy/fukuoka_prefecture_initiative_06_targets.json",
     "data/entities/policy/fukuoka_prefecture_initiative_07_targets.json",
+    "data/entities/policy/fukuoka_prefecture_initiative_08_targets.json",
+    "data/entities/policy/fukuoka_prefecture_initiative_09_targets.json",
 ]
 TARGET_EVIDENCE_PATHS = [
     "data/entities/policy/fukuoka_prefecture_initiative_01_target_evidence_packet.json",
@@ -21,6 +23,8 @@ TARGET_EVIDENCE_PATHS = [
     "data/entities/policy/fukuoka_prefecture_initiative_05_target_evidence_packet.json",
     "data/entities/policy/fukuoka_prefecture_initiative_06_target_evidence_packet.json",
     "data/entities/policy/fukuoka_prefecture_initiative_07_target_evidence_packet.json",
+    "data/entities/policy/fukuoka_prefecture_initiative_08_target_evidence_packet.json",
+    "data/entities/policy/fukuoka_prefecture_initiative_09_target_evidence_packet.json",
 ]
 
 
@@ -42,7 +46,7 @@ def test_policy_target_fixture_is_valid():
     assert fixture["items"][0]["actual_linkage_status"] == "not_linked"
 
 
-def test_first_seven_initiatives_have_twenty_eight_reviewed_targets():
+def test_first_nine_initiatives_have_forty_reviewed_targets():
     catalogs = [load(path) for path in TARGET_CATALOG_PATHS]
     for catalog in catalogs:
         assert validate("schemas/policy_target_catalog.schema.json", catalog) == []
@@ -55,14 +59,34 @@ def test_first_seven_initiatives_have_twenty_eight_reviewed_targets():
             for item in catalog["items"]
         )
 
-    assert [len(catalog["items"]) for catalog in catalogs] == [10, 7, 1, 2, 2, 2, 4]
+    assert [len(catalog["items"]) for catalog in catalogs] == [
+        10,
+        7,
+        1,
+        2,
+        2,
+        2,
+        4,
+        6,
+        6,
+    ]
     target_numbers = [
         item["target_number"]
         for catalog in catalogs
         for item in catalog["items"]
     ]
-    assert target_numbers == list(range(1, 29))
-    assert [catalog["source_page"] for catalog in catalogs] == [1, 2, 2, 2, 2, 2, 2]
+    assert target_numbers == list(range(1, 41))
+    assert [catalog["source_page"] for catalog in catalogs] == [
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+    ]
     assert [catalog["printed_page"] for catalog in catalogs] == [
         315,
         316,
@@ -71,6 +95,8 @@ def test_first_seven_initiatives_have_twenty_eight_reviewed_targets():
         316,
         316,
         316,
+        317,
+        317,
     ]
 
 
@@ -151,6 +177,76 @@ def test_target_values_preserve_components_period_scopes_and_missing_baselines()
         component = item["components"][0]
         assert component["baseline_scope"] == "annual"
         assert component["target_scope"] == "five_year_cumulative"
+
+    initiative_08 = load(TARGET_CATALOG_PATHS[7])["items"]
+    assert [item["components"][0]["target_value"] for item in initiative_08] == [
+        500,
+        300,
+        1000,
+        120,
+        150,
+        250,
+    ]
+    for item in (initiative_08[0], initiative_08[2], initiative_08[3], initiative_08[4]):
+        component = item["components"][0]
+        assert component["baseline_scope"] == "annual"
+        assert component["target_scope"] == "five_year_cumulative"
+    for item in (initiative_08[1], initiative_08[5]):
+        component = item["components"][0]
+        assert component["baseline_scope"] == "snapshot"
+        assert component["target_scope"] == "snapshot"
+
+    initiative_09 = load(TARGET_CATALOG_PATHS[8])["items"]
+    assert [item["target_number"] for item in initiative_09] == list(range(35, 41))
+    assert [item["components"][0]["target_value"] for item in initiative_09] == [
+        1047,
+        400,
+        250,
+        420,
+        6000,
+        60,
+    ]
+    digital = initiative_09[0]["components"][0]
+    fair_sales = initiative_09[1]["components"][0]
+    new_farms = initiative_09[2]["components"][0]
+    women = initiative_09[3]["components"][0]
+    one_health = initiative_09[4]["components"][0]
+    gap = initiative_09[5]["components"][0]
+    assert digital["baseline_scope"] == "cumulative"
+    assert digital["target_scope"] == "cumulative"
+    assert fair_sales["baseline_scope"] == "annual"
+    assert fair_sales["target_scope"] == "annual"
+    assert new_farms["baseline_scope"] == "annual"
+    assert new_farms["target_scope"] == "five_year_cumulative"
+    assert women["baseline_scope"] == "cumulative"
+    assert women["target_scope"] == "cumulative"
+    assert one_health["baseline_value"] is None
+    assert one_health["baseline_scope"] == "not_available"
+    assert one_health["target_scope"] == "five_year_cumulative"
+    assert gap["baseline_scope"] == "cumulative"
+    assert gap["target_scope"] == "cumulative"
+
+
+def test_relisted_targets_are_not_duplicated_in_initiative_nine():
+    all_items = [
+        item
+        for path in TARGET_CATALOG_PATHS
+        for item in load(path)["items"]
+    ]
+    initiative_09_names = {
+        item["indicator_name_original"]
+        for item in load(TARGET_CATALOG_PATHS[8])["items"]
+    }
+    assert "県産農林水産物の輸出額" not in initiative_09_names
+    assert "新規就業者数（農林漁業）" not in initiative_09_names
+    assert sum(
+        item["indicator_name_original"] == "県産農林水産物の輸出額"
+        for item in all_items
+    ) == 1
+    assert sum(
+        item["indicator_name_original"] == "新規就業者数（農林漁業）"
+        for item in all_items
+    ) == 1
 
 
 def test_policy_target_sources_initiatives_and_evidence_are_complete():
