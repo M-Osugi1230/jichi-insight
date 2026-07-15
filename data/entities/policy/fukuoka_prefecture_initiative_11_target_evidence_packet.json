@@ -1,0 +1,38 @@
+{
+  "id": "evidence-policy-target-catalog-fukuoka-prefecture-initiative-11",
+  "subject_type": "policy_target_catalog",
+  "subject_id": "policy-target-catalog-fukuoka-prefecture-initiative-11",
+  "claims": [
+    {
+      "field": "target_count",
+      "statement": "取組事項11「雇用対策の充実、魅力ある職場づくり」には、数値目標50から63の14指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの5ページ目、印刷ページ319。",
+      "decision": "accepted",
+      "review_note": null
+    },
+    {
+      "field": "baseline_and_target",
+      "statement": "人材育成、求職者支援、障がい者雇用、育児休業、働き方改革に関する14指標の当初値、目標値、単位、期間を構造化した。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの5ページ目、指標50から63。",
+      "decision": "accepted",
+      "review_note": "指標50の当初値はダッシュ表記であり0ではなく未設定。指標57、58、63は年次当初値と5年間累計目標を区別する。"
+    },
+    {
+      "field": "actual_results",
+      "statement": "年度実績との個別対応は未確認である。",
+      "source_ids": ["policy-source-fukuoka-pref-progress-reports", "policy-source-fukuoka-pref-progress-2024-pdf"],
+      "location_note": "実施状況報告の数値目標進捗との対応付けは次工程。",
+      "decision": "needs_review",
+      "review_note": "就職率・就職者数の母集団、支援機関、集計期間を確認してから接続する。"
+    }
+  ],
+  "open_questions": [
+    "各就職支援センターの利用者母集団と就職率分母が年度間で一貫しているか確認する。",
+    "新規正規雇用数と登録社数の重複計上・累計期間を確認する。",
+    "障がい者雇用率の法定雇用率変更による比較条件を確認する。",
+    "2022年度から2024年度の実績値を年度別に接続する。"
+  ],
+  "review_status": "reviewed"
+}
