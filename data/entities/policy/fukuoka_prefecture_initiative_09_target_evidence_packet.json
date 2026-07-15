@@ -1,0 +1,54 @@
+{
+  "id": "evidence-policy-target-catalog-fukuoka-prefecture-initiative-09",
+  "subject_type": "policy_target_catalog",
+  "subject_id": "policy-target-catalog-fukuoka-prefecture-initiative-09",
+  "claims": [
+    {
+      "field": "target_count",
+      "statement": "取組事項9『農林水産業の振興』には、固有番号を持つ数値目標35から40までの6指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの3ページ目、印刷ページ317、指標35から40。",
+      "decision": "accepted",
+      "review_note": "番号欄がダッシュの再掲2行は、既存の指標16と指標10を参照するため新規指標として重複登録しない。"
+    },
+    {
+      "field": "production_and_sales",
+      "statement": "生産力・販売分野には、デジタルデータを活用する経営体数と、福岡フェア等における県産食材の取扱高の2固有指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの3ページ目、指標35から36。",
+      "decision": "accepted",
+      "review_note": "県産農林水産物の輸出額は指標16の再掲であり、本カタログには重複登録しない。"
+    },
+    {
+      "field": "workforce_development",
+      "statement": "人材育成分野には、新規農業法人数と経営参画する女性農業者数の2固有指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの3ページ目、指標37から38。",
+      "decision": "accepted",
+      "review_note": "新規就業者数（農林漁業）は指標10の再掲であり、本カタログには重複登録しない。"
+    },
+    {
+      "field": "one_health_and_gap",
+      "statement": "持続可能性分野には、ワンヘルス実践経営体数と国際水準GAP認証取得数の2指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの3ページ目、指標39から40。",
+      "decision": "accepted",
+      "review_note": "指標39の当初値はダッシュ表記であり、0として扱わない。"
+    },
+    {
+      "field": "actual_results",
+      "statement": "年度実施状況報告にある指標35から40の実績との個別対応は未確認である。",
+      "source_ids": ["policy-source-fukuoka-pref-progress-reports", "policy-source-fukuoka-pref-progress-2024-pdf"],
+      "location_note": "年度実施状況報告の数値目標進捗を今後確認する。",
+      "decision": "needs_review",
+      "review_note": "経営体、法人、女性農業者、認証取得の集計単位と重複・取消の扱いを確認してから接続する。"
+    }
+  ],
+  "open_questions": [
+    "デジタルデータ活用経営体の判定条件を年度資料で確認する必要がある。",
+    "福岡フェア等の対象催事と取扱高の集計範囲を確認する必要がある。",
+    "女性農業者数とGAP認証取得数の累計からの減少・取消の扱いを確認する必要がある。",
+    "再掲指標を施策横断で参照表示するデータモデルを今後整備する必要がある。"
+  ],
+  "review_status": "reviewed"
+}
