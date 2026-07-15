@@ -38,6 +38,18 @@ import initiative19Evidence from "../../../data/entities/policy/fukuoka_prefectu
 import initiative19Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_19_targets.json";
 import initiative20Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_20_target_evidence_packet.json";
 import initiative20Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_20_targets.json";
+import initiative21Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_21_target_evidence_packet.json";
+import initiative21Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_21_targets.json";
+import initiative22Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_22_target_evidence_packet.json";
+import initiative22Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_22_targets.json";
+import initiative23Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_23_target_evidence_packet.json";
+import initiative23Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_23_targets.json";
+import initiative24Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_24_target_evidence_packet.json";
+import initiative24Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_24_targets.json";
+import initiative25Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_25_target_evidence_packet.json";
+import initiative25Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_25_targets.json";
+import initiative26Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_26_target_evidence_packet.json";
+import initiative26Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_26_targets.json";
 
 export type PolicyTargetComponent = {
   label: string | null;
@@ -119,7 +131,13 @@ export type PolicyTargetPageDefinition = {
     | "17"
     | "18"
     | "19"
-    | "20";
+    | "20"
+    | "21"
+    | "22"
+    | "23"
+    | "24"
+    | "25"
+    | "26";
   title: string;
   catalog: PolicyTargetCatalog;
   evidence: PolicyTargetEvidence;
@@ -206,6 +224,12 @@ export const policyTargetPages: PolicyTargetPageDefinition[] = [
   { slug: "18", title: "人権が尊重される心豊かな社会づくり", catalog: initiative18Catalog as PolicyTargetCatalog, evidence: initiative18Evidence as PolicyTargetEvidence },
   { slug: "19", title: "外国人材に選ばれる地域づくり", catalog: initiative19Catalog as PolicyTargetCatalog, evidence: initiative19Evidence as PolicyTargetEvidence },
   { slug: "20", title: "安全で安心して暮らせる地域づくり", catalog: initiative20Catalog as PolicyTargetCatalog, evidence: initiative20Evidence as PolicyTargetEvidence },
+  { slug: "21", title: "豊かな自然環境の保全と快適な生活環境の創造", catalog: initiative21Catalog as PolicyTargetCatalog, evidence: initiative21Evidence as PolicyTargetEvidence },
+  { slug: "22", title: "環境に負荷をかけない社会への移行", catalog: initiative22Catalog as PolicyTargetCatalog, evidence: initiative22Evidence as PolicyTargetEvidence },
+  { slug: "23", title: "防災・減災・県土強靱化", catalog: initiative23Catalog as PolicyTargetCatalog, evidence: initiative23Evidence as PolicyTargetEvidence },
+  { slug: "24", title: "地域の活力向上", catalog: initiative24Catalog as PolicyTargetCatalog, evidence: initiative24Evidence as PolicyTargetEvidence },
+  { slug: "25", title: "県内各地域の振興", catalog: initiative25Catalog as PolicyTargetCatalog, evidence: initiative25Evidence as PolicyTargetEvidence },
+  { slug: "26", title: "生活と産業を支える基盤の整備", catalog: initiative26Catalog as PolicyTargetCatalog, evidence: initiative26Evidence as PolicyTargetEvidence },
 ];
 
 export const initiative01TargetCatalog = policyTargetPages[0].catalog;
