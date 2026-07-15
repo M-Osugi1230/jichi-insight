@@ -1,0 +1,81 @@
+{
+  "id": "policy-target-catalog-fukuoka-prefecture-initiative-15",
+  "policy_initiative_id": "policy-initiative-fukuoka-prefecture-15",
+  "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+  "source_document_url": "https://www.pref.fukuoka.lg.jp/uploaded/life/632711_61262666_misc.pdf",
+  "source_page": 6,
+  "printed_page": 320,
+  "items": [
+    {
+      "id": "policy-target-fukuoka-prefecture-initiative-15-74",
+      "target_number": 74,
+      "submeasure_title_original": "高齢者の活躍応援、社会参加の促進",
+      "indicator_name_original": "介護施設入所者等に占める低栄養傾向の高齢者の割合",
+      "components": [
+        {
+          "label": null,
+          "baseline_value": 31.4,
+          "baseline_unit": "%",
+          "baseline_period": "R2年度",
+          "baseline_scope": "snapshot",
+          "target_value": null,
+          "target_unit": null,
+          "target_text": "減少",
+          "target_period": "R8年度",
+          "target_scope": "relative_condition",
+          "preferred_direction": "decrease"
+        }
+      ],
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed"
+    },
+    {
+      "id": "policy-target-fukuoka-prefecture-initiative-15-75",
+      "target_number": 75,
+      "submeasure_title_original": "高齢者の活躍応援、社会参加の促進",
+      "indicator_name_original": "高齢者の就業支援施設における利用満足度",
+      "components": [
+        {
+          "label": null,
+          "baseline_value": 93.1,
+          "baseline_unit": "%",
+          "baseline_period": "R2年度",
+          "baseline_scope": "snapshot",
+          "target_value": 100,
+          "target_unit": "%",
+          "target_period": "R8年度",
+          "target_scope": "snapshot",
+          "preferred_direction": "increase"
+        }
+      ],
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed"
+    },
+    {
+      "id": "policy-target-fukuoka-prefecture-initiative-15-76",
+      "target_number": 76,
+      "submeasure_title_original": "高齢者の活躍応援、社会参加の促進",
+      "indicator_name_original": "70歳まで働ける企業の割合",
+      "components": [
+        {
+          "label": null,
+          "baseline_value": 36.2,
+          "baseline_unit": "%",
+          "baseline_period": "R2年度",
+          "baseline_scope": "snapshot",
+          "target_value": 40,
+          "target_unit": "%",
+          "target_operator": "at_least",
+          "target_period": "R8年度",
+          "target_scope": "snapshot",
+          "preferred_direction": "increase"
+        }
+      ],
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed"
+    }
+  ],
+  "reviewed_at": "2026-07-16",
+  "review_status": "reviewed",
+  "confidence": "high"
+}
