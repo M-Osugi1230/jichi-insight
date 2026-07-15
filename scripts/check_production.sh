@@ -35,6 +35,8 @@ fi
 
 routes=(
   "/about/"
+  "/assemblies/"
+  "/assemblies/fukuoka-prefecture/overseas-activities/"
   "/compare/"
   "/corrections/"
   "/data-quality/"
@@ -52,7 +54,7 @@ routes=(
 printf '\nRoute checks:\n' >> "$REPORT"
 for route in "${routes[@]}"; do
   status="$(curl --silent --show-error --location --output /dev/null --write-out '%{http_code}' "$BASE_URL$route" || true)"
-  printf '%-42s HTTP %s\n' "$route" "$status" >> "$REPORT"
+  printf '%-58s HTTP %s\n' "$route" "$status" >> "$REPORT"
   if [[ "$status" != "200" ]]; then
     cat "$REPORT"
     exit 1
