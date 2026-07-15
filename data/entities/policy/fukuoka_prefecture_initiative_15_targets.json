@@ -4,7 +4,9 @@
   "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
   "source_document_url": "https://www.pref.fukuoka.lg.jp/uploaded/life/632711_61262666_misc.pdf",
   "source_page": 6,
+  "source_page_end": 7,
   "printed_page": 320,
+  "printed_page_end": 321,
   "items": [
     {
       "id": "policy-target-fukuoka-prefecture-initiative-15-74",
@@ -68,6 +70,138 @@
           "target_operator": "at_least",
           "target_period": "R8年度",
           "target_scope": "snapshot",
+          "preferred_direction": "increase"
+        }
+      ],
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed"
+    },
+    {
+      "id": "policy-target-fukuoka-prefecture-initiative-15-77",
+      "target_number": 77,
+      "submeasure_title_original": "障がいのある人の就学前から卒業後までの一貫した支援",
+      "indicator_name_original": "民間教育訓練機関等に委託して行う障がいのある人の委託訓練の就職率",
+      "components": [
+        {
+          "label": null,
+          "baseline_value": 53.7,
+          "baseline_unit": "%",
+          "baseline_period": "R2年度",
+          "baseline_scope": "snapshot",
+          "target_value": 60,
+          "target_unit": "%",
+          "target_period": "R8年度",
+          "target_scope": "snapshot",
+          "preferred_direction": "increase"
+        }
+      ],
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed"
+    },
+    {
+      "id": "policy-target-fukuoka-prefecture-initiative-15-78",
+      "target_number": 78,
+      "submeasure_title_original": "障がいのある人の就学前から卒業後までの一貫した支援",
+      "indicator_name_original": "県内ハローワークにおける障がいのある人の新規求職申込件数に対する就職率",
+      "components": [
+        {
+          "label": null,
+          "baseline_value": 44.5,
+          "baseline_unit": "%",
+          "baseline_period": "R2年度",
+          "baseline_scope": "snapshot",
+          "target_value": 48,
+          "target_unit": "%",
+          "target_period": "R8年度",
+          "target_scope": "snapshot",
+          "preferred_direction": "increase"
+        }
+      ],
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed"
+    },
+    {
+      "id": "policy-target-fukuoka-prefecture-initiative-15-79",
+      "target_number": 79,
+      "submeasure_title_original": "障がいのある人の地域生活への移行支援",
+      "indicator_name_original": "障がい福祉サービス事業所等の従事者に対する研修の受講者数",
+      "components": [
+        {
+          "label": null,
+          "baseline_value": 6610,
+          "baseline_unit": "人／年",
+          "baseline_period": "R2年度",
+          "baseline_scope": "annual",
+          "target_value": 6874,
+          "target_unit": "人／年",
+          "target_period": "R8年度",
+          "target_scope": "annual",
+          "preferred_direction": "increase"
+        }
+      ],
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed"
+    },
+    {
+      "id": "policy-target-fukuoka-prefecture-initiative-15-80",
+      "target_number": 80,
+      "submeasure_title_original": "障がいのある人の地域生活への移行支援",
+      "indicator_name_original": "補装具製作事業者における認定補聴器技能者の配置率",
+      "components": [
+        {
+          "label": null,
+          "baseline_value": 6.3,
+          "baseline_unit": "%",
+          "baseline_period": "R2年度",
+          "baseline_scope": "snapshot",
+          "target_value": 20,
+          "target_unit": "%",
+          "target_period": "R8年度",
+          "target_scope": "snapshot",
+          "preferred_direction": "increase"
+        }
+      ],
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed"
+    },
+    {
+      "id": "policy-target-fukuoka-prefecture-initiative-15-81",
+      "target_number": 81,
+      "submeasure_title_original": "障がいのある人の文化芸術活動・スポーツ活動等への参加の促進",
+      "indicator_name_original": "県障がい者芸術文化活動支援センターによる支援件数",
+      "components": [
+        {
+          "label": null,
+          "baseline_value": null,
+          "baseline_unit": null,
+          "baseline_period": null,
+          "baseline_scope": "not_available",
+          "target_value": 2250,
+          "target_unit": "件",
+          "target_period": "R4–R8年度",
+          "target_scope": "five_year_cumulative",
+          "preferred_direction": "increase"
+        }
+      ],
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed"
+    },
+    {
+      "id": "policy-target-fukuoka-prefecture-initiative-15-82",
+      "target_number": 82,
+      "submeasure_title_original": "障がいを理由とする差別の解消、障がいのある人の虐待防止、権利擁護",
+      "indicator_name_original": "相談支援専門員研修受講者数",
+      "components": [
+        {
+          "label": null,
+          "baseline_value": 616,
+          "baseline_unit": "人／年",
+          "baseline_period": "R2年度",
+          "baseline_scope": "annual",
+          "target_value": 790,
+          "target_unit": "人／年",
+          "target_period": "R8年度",
+          "target_scope": "annual",
           "preferred_direction": "increase"
         }
       ],
