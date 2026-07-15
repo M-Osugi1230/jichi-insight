@@ -16,6 +16,7 @@ const routes = [
   "/municipalities/fukuoka-prefecture",
   "/municipalities/fukuoka-city",
   "/municipalities/kitakyushu-city",
+  "/policy-sources",
   "/sources",
 ];
 
@@ -31,6 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ? 1
         : route === "/compare" ||
             route === "/executives" ||
+            route === "/policy-sources" ||
             route.startsWith("/municipalities/") ||
             route.startsWith("/assemblies/")
           ? 0.9
