@@ -1,4 +1,5 @@
 import { sourceCatalog, type MunicipalityKey } from "./catalog";
+import { currentExecutiveTerms, executiveEvidencePackets } from "./executives";
 import { fukuokaPrefectureFinance } from "./finance";
 import { fukuokaCityFinance } from "./fukuokaCityFinance";
 import { kitakyushuFinance } from "./kitakyushuFinance";
@@ -58,6 +59,11 @@ export const dataQualitySnapshot = {
         ),
   initialBudgetValues: fiscalRecords.filter((record) => record.stage === "initial_budget").length,
   settlementValues: fiscalRecords.filter((record) => record.stage === "settlement").length,
+  reviewedExecutiveTerms: currentExecutiveTerms.length,
+  executiveEvidencePackets: executiveEvidencePackets.length,
+  registeredManifestos: currentExecutiveTerms.filter(
+    (term) => term.manifesto_source_ids.length > 0,
+  ).length,
   publicEvaluations: 0,
 };
 
@@ -78,7 +84,7 @@ export const municipalityQuality: MunicipalityQuality[] = municipalityKeys.map((
 export const publicationGaps = [
   "事業別の予算・契約・執行・決算",
   "KPIの基準値・目標・実績",
-  "首長公約と事業の根拠付き対応付け",
+  "公約原文と事業の根拠付き対応付け",
   "議会の議案・採決・修正・監視活動",
   "類似自治体比較と外部要因の検討",
 ];
