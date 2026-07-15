@@ -26,6 +26,7 @@ const routes = [
   "/policies/fukuoka-prefecture/initiatives/07",
   "/policies/fukuoka-prefecture/initiatives/08",
   "/policies/fukuoka-prefecture/initiatives/09",
+  "/policies/fukuoka-prefecture/initiatives/10",
   "/policy-sources",
   "/sources",
 ];
