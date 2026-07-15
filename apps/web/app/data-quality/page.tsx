@@ -65,6 +65,33 @@ export default function DataQualityPage() {
         </section>
 
         <section className="contentSection">
+          <p className="eyebrow">Executive evidence readiness</p>
+          <h2>首長分野は、任期・公約資料・分割レビュー・評価を分ける。</h2>
+          <div className={styles.summaryGrid} aria-label="首長データ品質概要">
+            <article className={styles.summaryCard}>
+              <span>Reviewed現職任期</span>
+              <strong>{snapshot.reviewedExecutiveTerms}</strong>
+              <p>3自治体の現職・選挙日・任期を確認済み。</p>
+            </article>
+            <article className={styles.summaryCard}>
+              <span>登録済み公約原文資料</span>
+              <strong>{snapshot.registeredManifestos}</strong>
+              <p>北九州市長選挙の公式選挙公報1件。</p>
+            </article>
+            <article className={styles.summaryCard}>
+              <span>公約分割レビュー</span>
+              <strong>{snapshot.manifestoReviews}</strong>
+              <p>文章境界と分割可否を人手レビューした資料数。</p>
+            </article>
+            <article className={styles.summaryCard}>
+              <span>個別公約レコード</span>
+              <strong>{snapshot.extractedPromiseRecords}</strong>
+              <p>明確な原文境界を確認できるまで0件を維持。</p>
+            </article>
+          </div>
+        </section>
+
+        <section className="contentSection">
           <p className="eyebrow">Coverage by municipality</p>
           <h2>自治体ごとの深さを、同じ件数として扱わない。</h2>
           <div className={styles.coverageGrid}>
