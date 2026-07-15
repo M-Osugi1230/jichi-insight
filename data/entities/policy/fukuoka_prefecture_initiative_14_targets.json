@@ -1,0 +1,103 @@
+{
+  "id": "policy-target-catalog-fukuoka-prefecture-initiative-14",
+  "policy_initiative_id": "policy-initiative-fukuoka-prefecture-14",
+  "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+  "source_document_url": "https://www.pref.fukuoka.lg.jp/uploaded/life/632711_61262666_misc.pdf",
+  "source_page": 6,
+  "printed_page": 320,
+  "items": [
+    {
+      "id": "policy-target-fukuoka-prefecture-initiative-14-70",
+      "target_number": 70,
+      "submeasure_title_original": "子どもの健やかな育ちと子育てを支える環境づくり",
+      "indicator_name_original": "小児科医師数",
+      "components": [
+        {
+          "label": null,
+          "baseline_value": 1155,
+          "baseline_unit": "人",
+          "baseline_period": "R2年度",
+          "baseline_scope": "snapshot",
+          "target_value": null,
+          "target_unit": null,
+          "target_text": "増加",
+          "target_period": "R8年度",
+          "target_scope": "relative_condition",
+          "preferred_direction": "increase"
+        }
+      ],
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed"
+    },
+    {
+      "id": "policy-target-fukuoka-prefecture-initiative-14-71",
+      "target_number": 71,
+      "submeasure_title_original": "子どもの健やかな育ちと子育てを支える環境づくり",
+      "indicator_name_original": "全NICU数のうち、看護単位3対1以上の施設基準を満たすNICU数",
+      "components": [
+        {
+          "label": null,
+          "baseline_value": 51.9,
+          "baseline_unit": "%",
+          "baseline_period": "R2年度",
+          "baseline_scope": "snapshot",
+          "target_value": 58.3,
+          "target_unit": "%",
+          "target_period": "R8年度",
+          "target_scope": "snapshot",
+          "preferred_direction": "increase"
+        }
+      ],
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed"
+    },
+    {
+      "id": "policy-target-fukuoka-prefecture-initiative-14-72",
+      "target_number": 72,
+      "submeasure_title_original": "小児等在宅医療の推進",
+      "indicator_name_original": "がん診療連携拠点病院等における小児がん患者のカバー率",
+      "components": [
+        {
+          "label": null,
+          "baseline_value": 67.5,
+          "baseline_unit": "%",
+          "baseline_period": "H30年度",
+          "baseline_scope": "snapshot",
+          "target_value": 80,
+          "target_unit": "%",
+          "target_operator": "at_least",
+          "target_period": "R8年度",
+          "target_scope": "snapshot",
+          "preferred_direction": "increase"
+        }
+      ],
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed"
+    },
+    {
+      "id": "policy-target-fukuoka-prefecture-initiative-14-73",
+      "target_number": 73,
+      "submeasure_title_original": "児童虐待防止対策の強化",
+      "indicator_name_original": "児童虐待相談対応件数に占める「助言指導」割合",
+      "components": [
+        {
+          "label": null,
+          "baseline_value": 28.2,
+          "baseline_unit": "%",
+          "baseline_period": "R2年度",
+          "baseline_scope": "snapshot",
+          "target_value": 35.8,
+          "target_unit": "%",
+          "target_period": "R8年度",
+          "target_scope": "snapshot",
+          "preferred_direction": "increase"
+        }
+      ],
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed"
+    }
+  ],
+  "reviewed_at": "2026-07-16",
+  "review_status": "reviewed",
+  "confidence": "high"
+}
