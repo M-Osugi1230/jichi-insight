@@ -1,0 +1,147 @@
+[
+  {
+    "id": "policy-profile-fukuoka-prefecture",
+    "municipality_key": "fukuoka-prefecture",
+    "capabilities": [
+      {
+        "dimension": "strategic_directions",
+        "availability": "confirmed",
+        "count": 4,
+        "period_start": 2022,
+        "period_end": 2026,
+        "statement": "総合計画は4つの基本方向に分けて施策を掲載している。",
+        "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+        "location_note": "総合計画ページの第4章リンクに掲載された4つの基本方向。"
+      },
+      {
+        "dimension": "initiative_progress",
+        "availability": "confirmed",
+        "count": 30,
+        "period_start": 2022,
+        "period_end": 2024,
+        "statement": "年度報告は総合計画の30の取組事項ごとに施策実施状況を整理している。",
+        "source_ids": ["policy-source-fukuoka-pref-progress-reports"],
+        "location_note": "実施状況報告ページの説明文。"
+      },
+      {
+        "dimension": "numeric_targets",
+        "availability": "confirmed",
+        "count": null,
+        "period_start": 2022,
+        "period_end": 2024,
+        "statement": "年度報告の第3部で総合計画の数値目標の進捗を整理している。",
+        "source_ids": ["policy-source-fukuoka-pref-progress-reports"],
+        "location_note": "実施状況報告ページの第3部説明。"
+      },
+      {
+        "dimension": "annual_reports",
+        "availability": "confirmed",
+        "count": 3,
+        "period_start": 2022,
+        "period_end": 2024,
+        "statement": "令和4年度から令和6年度までの3年度分の報告書が公開されている。",
+        "source_ids": ["policy-source-fukuoka-pref-progress-reports", "policy-source-fukuoka-pref-progress-2024-pdf"],
+        "location_note": "実施状況報告ページの年度別PDF一覧。"
+      }
+    ],
+    "extraction_readiness": "high",
+    "next_priority": "令和6年度報告から30取組事項と数値目標のレコード構造を確定する。",
+    "caveats": [
+      "30取組事項の個別名称とKPI値はPDF本文のページ確認前。",
+      "計画目標と年度実績を別フィールドで保持する必要がある。"
+    ],
+    "reviewed_at": "2026-07-15",
+    "review_status": "reviewed",
+    "confidence": "high"
+  },
+  {
+    "id": "policy-profile-fukuoka-city",
+    "municipality_key": "fukuoka-city",
+    "capabilities": [
+      {
+        "dimension": "implementation_plan",
+        "availability": "confirmed",
+        "count": 1,
+        "period_start": 2025,
+        "period_end": 2028,
+        "statement": "第10次基本計画の第1次実施計画として政策推進プランが公開されている。",
+        "source_ids": ["policy-source-fukuoka-city-policy-plan-2025-2028"],
+        "location_note": "政策推進プラン公式PDFと策定ページ。"
+      },
+      {
+        "dimension": "all_project_review",
+        "availability": "confirmed",
+        "count": null,
+        "period_start": 2013,
+        "period_end": 2024,
+        "statement": "一部対象外を除き、一般会計・特別会計の全事業を毎年点検する制度がある。",
+        "source_ids": ["policy-source-fukuoka-city-project-review"],
+        "location_note": "事務事業点検ページの点検対象事業。"
+      },
+      {
+        "dimension": "priority_project_sheets",
+        "availability": "confirmed",
+        "count": 12,
+        "period_start": 2013,
+        "period_end": 2024,
+        "statement": "重点事業の事務事業マネジメントシートへの年度別導線が12年度分公開されている。",
+        "source_ids": ["policy-source-fukuoka-city-project-review"],
+        "location_note": "平成25年度から令和6年度までの点検実施状況リンク。"
+      },
+      {
+        "dimension": "budget_feedback",
+        "availability": "confirmed",
+        "count": null,
+        "period_start": 2013,
+        "period_end": 2024,
+        "statement": "点検結果は事業の見直し、選択と集中、予算編成等に活用すると説明されている。",
+        "source_ids": ["policy-source-fukuoka-city-project-review"],
+        "location_note": "事務事業点検ページの点検結果の活用。"
+      }
+    ],
+    "extraction_readiness": "high",
+    "next_priority": "令和6年度重点事業のマネジメントシート一覧を取得し、事業名・目的・成果指標・点検結果を抽出する。",
+    "caveats": [
+      "全事業が公開されるのではなく、公表対象は重点事業のマネジメントシート。",
+      "点検対象には裁量余地が少ない事業等の例外がある。"
+    ],
+    "reviewed_at": "2026-07-15",
+    "review_status": "reviewed",
+    "confidence": "high"
+  },
+  {
+    "id": "policy-profile-kitakyushu-city",
+    "municipality_key": "kitakyushu-city",
+    "capabilities": [
+      {
+        "dimension": "strategic_directions",
+        "availability": "entry_point_only",
+        "count": null,
+        "period_start": null,
+        "period_end": null,
+        "statement": "新ビジョンの基本構想・基本計画への公式入口を確認した。",
+        "source_ids": ["policy-source-kitakyushu-new-vision"],
+        "location_note": "北九州市・新ビジョンページの構想・計画リンク。"
+      },
+      {
+        "dimension": "progress_management",
+        "availability": "entry_point_only",
+        "count": null,
+        "period_start": null,
+        "period_end": null,
+        "statement": "新ビジョンの推進・進行管理への公式入口を確認した。",
+        "source_ids": ["policy-source-kitakyushu-new-vision", "policy-source-kitakyushu-vision-progress"],
+        "location_note": "新ビジョンページの『新ビジョンの推進』導線。"
+      }
+    ],
+    "extraction_readiness": "medium",
+    "next_priority": "新ビジョン本体と進行管理ページから政策体系、KPI、年度実績の個別資料を特定する。",
+    "caveats": [
+      "現段階では入口ページの確認までで、施策数やKPI件数は未確認。",
+      "詳細資料を確認するまで福岡県・福岡市と同じ深度として扱わない。"
+    ],
+    "reviewed_at": "2026-07-15",
+    "review_status": "reviewed",
+    "confidence": "medium"
+  }
+]
