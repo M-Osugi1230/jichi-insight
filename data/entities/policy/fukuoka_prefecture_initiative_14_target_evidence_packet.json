@@ -1,0 +1,46 @@
+{
+  "id": "evidence-policy-target-catalog-fukuoka-prefecture-initiative-14",
+  "subject_type": "policy_target_catalog",
+  "subject_id": "policy-target-catalog-fukuoka-prefecture-initiative-14",
+  "claims": [
+    {
+      "field": "target_count",
+      "statement": "取組事項14『安心して子育てできる環境づくり』には、数値目標70から73までの4指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの6ページ目、印刷ページ320、指標70から73。",
+      "decision": "accepted",
+      "review_note": null
+    },
+    {
+      "field": "pediatric_care",
+      "statement": "小児科医師数はR2年度1,155人を基準とし、R8年度目標は『増加』と条件で示されている。NICUの施設基準充足割合は51.9%から58.3%を目標としている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの6ページ目、指標70から71。",
+      "decision": "accepted",
+      "review_note": "小児科医師数は仮の数値目標を置かず、公式資料の条件型目標として保存する。"
+    },
+    {
+      "field": "home_care_and_abuse_prevention",
+      "statement": "小児がん患者カバー率は80%以上、児童虐待相談対応件数に占める助言指導割合は35.8%を目標としている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの6ページ目、指標72から73。",
+      "decision": "accepted",
+      "review_note": "カバー率の下限条件はtarget_operator=at_leastとして保存する。"
+    },
+    {
+      "field": "actual_results",
+      "statement": "年度実施状況報告にある指標70から73の実績との個別対応は未確認である。",
+      "source_ids": ["policy-source-fukuoka-pref-progress-reports", "policy-source-fukuoka-pref-progress-2024-pdf"],
+      "location_note": "年度実施状況報告の数値目標進捗を今後確認する。",
+      "decision": "needs_review",
+      "review_note": "医師数の集計時点、NICU施設基準、小児がん患者の対象範囲、助言指導区分を確認してから接続する。"
+    }
+  ],
+  "open_questions": [
+    "小児科医師数の主たる診療科・複数施設勤務の計上方法を確認する必要がある。",
+    "NICU数の分母と施設基準認定時点を確認する必要がある。",
+    "小児がん患者カバー率の対象病院・患者・期間を確認する必要がある。",
+    "助言指導割合の上昇を政策成果として解釈できるかは、相談区分と重症度を含めて検討する必要がある。"
+  ],
+  "review_status": "reviewed"
+}
