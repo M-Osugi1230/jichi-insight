@@ -52,7 +52,7 @@ export default function ExecutivesPage() {
             <p>選挙管理委員会の個別結果ページを登録。</p>
           </article>
           <article className={styles.summaryCard}>
-            <span>公式選挙公報</span>
+            <span>公約原文の登録（公式選挙公報）</span>
             <strong>{manifestoReady}</strong>
             <p>北九州市長選挙の候補者提出原稿を登録。</p>
           </article>
@@ -146,7 +146,7 @@ export default function ExecutivesPage() {
         <section className={`contentSection ${styles.boundary}`}>
           <div>
             <p className="eyebrow">Evaluation boundary</p>
-            <h2>現職名と選挙公報が分かっても、実績評価はできない。</h2>
+            <h2>現職名と任期が分かっても、実績評価はできない。</h2>
           </div>
           <ul>
             <li>公約原文の完全な収録</li>
