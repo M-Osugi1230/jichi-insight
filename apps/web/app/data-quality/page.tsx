@@ -66,12 +66,22 @@ export default function DataQualityPage() {
 
         <section className="contentSection">
           <p className="eyebrow">Executive evidence readiness</p>
-          <h2>首長分野は、任期・公約資料・分割レビュー・評価を分ける。</h2>
+          <h2>首長分野は、任期・探索・公約資料・分割レビュー・評価を分ける。</h2>
           <div className={styles.summaryGrid} aria-label="首長データ品質概要">
             <article className={styles.summaryCard}>
               <span>Reviewed現職任期</span>
               <strong>{snapshot.reviewedExecutiveTerms}</strong>
               <p>3自治体の現職・選挙日・任期を確認済み。</p>
+            </article>
+            <article className={styles.summaryCard}>
+              <span>公約資料の探索記録</span>
+              <strong>{snapshot.manifestoSourceSearches}</strong>
+              <p>確認範囲、未発見、次の確認方法を保存。</p>
+            </article>
+            <article className={styles.summaryCard}>
+              <span>安定した一次資料を未発見</span>
+              <strong>{snapshot.manifestoSourcesNotFound}</strong>
+              <p>不存在ではなく、現時点の探索結果として表示。</p>
             </article>
             <article className={styles.summaryCard}>
               <span>登録済み公約原文資料</span>
