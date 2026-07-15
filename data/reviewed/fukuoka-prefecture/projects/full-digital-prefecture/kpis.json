@@ -1,0 +1,68 @@
+[
+  {
+    "id": "jp-local-400009-project-2025-full-digital-prefecture-kpi-online-payments-2024",
+    "project_id": "jp-local-400009-project-2025-full-digital-prefecture",
+    "name": "オンライン納付を可能とする行政手続数（2024年度）",
+    "definition": "行政手続のオンライン化拡大による県民の利便性向上を測るため、オンライン納付を可能とした行政手続の数を測定する。",
+    "unit": "手続",
+    "direction": "increase",
+    "baseline": {
+      "period": "2023年度",
+      "value": 9,
+      "status": "available",
+      "source_ids": ["fukuoka-pref-project-evaluation-2025-detail-pdf"]
+    },
+    "target": {
+      "period": "2024年度",
+      "value": 130,
+      "status": "available",
+      "source_ids": ["fukuoka-pref-project-evaluation-2025-detail-pdf"]
+    },
+    "actuals": [
+      {
+        "period": "2024年度",
+        "value": 314,
+        "status": "available",
+        "source_ids": ["fukuoka-pref-project-evaluation-2025-detail-pdf"]
+      }
+    ],
+    "assessment": "achieved",
+    "causality_note": "行政評価は、オンラインキャッシュレス決済事務マニュアルの策定により各課が取り組みやすくなったことを達成要因としている。手続数の増加だけでは利用件数、処理時間、県民満足度、費用対効果を評価できない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": ["fukuoka-pref-project-evaluation-2025-detail-pdf"]
+  },
+  {
+    "id": "jp-local-400009-project-2025-full-digital-prefecture-kpi-online-payments-2025",
+    "project_id": "jp-local-400009-project-2025-full-digital-prefecture",
+    "name": "オンライン納付を可能とする行政手続数（2025年度）",
+    "definition": "2024年度実績を踏まえて引き上げられた、オンライン納付可能な行政手続数の次年度目標。",
+    "unit": "手続",
+    "direction": "increase",
+    "baseline": {
+      "period": "2024年度実績",
+      "value": 314,
+      "status": "available",
+      "source_ids": ["fukuoka-pref-project-evaluation-2025-detail-pdf"]
+    },
+    "target": {
+      "period": "2025年度",
+      "value": 500,
+      "status": "available",
+      "source_ids": ["fukuoka-pref-project-evaluation-2025-detail-pdf"]
+    },
+    "actuals": [
+      {
+        "period": "2025年度",
+        "value": null,
+        "status": "unknown",
+        "source_ids": ["fukuoka-pref-project-evaluation-2025-detail-pdf"]
+      }
+    ],
+    "assessment": "in_progress",
+    "causality_note": "行政評価作成時点の実績欄は調査中。目標500件は達成済みとは扱わない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": ["fukuoka-pref-project-evaluation-2025-detail-pdf"]
+  }
+]
