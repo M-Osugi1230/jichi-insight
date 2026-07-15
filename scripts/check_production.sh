@@ -40,6 +40,7 @@ routes=(
   "/compare/"
   "/corrections/"
   "/data-quality/"
+  "/executives/"
   "/methodology/"
   "/municipalities/"
   "/municipalities/fukuoka-prefecture/"

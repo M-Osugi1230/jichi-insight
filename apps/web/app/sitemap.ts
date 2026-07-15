@@ -9,6 +9,7 @@ const routes = [
   "/compare",
   "/corrections",
   "/data-quality",
+  "/executives",
   "/methodology",
   "/municipalities",
   "/municipalities/fukuoka-prefecture",
@@ -28,6 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       route === ""
         ? 1
         : route === "/compare" ||
+            route === "/executives" ||
             route.startsWith("/municipalities/") ||
             route.startsWith("/assemblies/")
           ? 0.9
