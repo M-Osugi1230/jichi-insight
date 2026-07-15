@@ -49,6 +49,8 @@ routes=(
   "/policies/fukuoka-prefecture/initiatives/08/"
   "/policies/fukuoka-prefecture/initiatives/09/"
   "/policies/fukuoka-prefecture/initiatives/10/"
+  "/policies/fukuoka-prefecture/initiatives/11/"
+  "/policies/fukuoka-prefecture/initiatives/12/"
   "/policy-sources/"
   "/sources/"
   "/robots.txt"
@@ -90,7 +92,7 @@ check_content "/data-quality/" \
   "Reviewed基本方向" \
   "Reviewed取組事項" \
   "Reviewed数値目標" \
-  "取組1から10の基準値・目標値49件" \
+  "取組1から12の基準値・目標値68件" \
   "年度実績へ接続済み" \
   "政策評価済み" \
   "首長分野は、任期・探索・公約資料・分割レビュー・評価を分ける。" \
@@ -119,14 +121,10 @@ check_content "/executives/source-requests/" \
 check_content "/policies/" \
   "政策評価の前に、計画が何を目指すかを構造化する。" \
   "4つの基本方向と30の取組事項" \
-  "取組1から10の指標1から49まで" \
+  "取組1から12の指標1から68まで" \
   "数値目標10件" \
-  "数値目標7件" \
-  "数値目標1件" \
-  "数値目標2件" \
-  "数値目標4件" \
-  "数値目標6件" \
-  "数値目標9件" \
+  "数値目標14件" \
+  "数値目標5件" \
   "取組と目標の一覧と、実際の成果はまだ別々です。"
 check_content "/policies/fukuoka-prefecture/initiatives/01/" \
   "次代を担う「人財」の育成" \
@@ -184,6 +182,19 @@ check_content "/policies/fukuoka-prefecture/initiatives/10/" \
   "延べ宿泊者数（日本人）" \
   "50,800円" \
   "参考値"
+check_content "/policies/fukuoka-prefecture/initiatives/11/" \
+  "雇用対策の充実、魅力ある職場づくり" \
+  "DX人材育成や人材不足分野対策等による新規正規雇用数" \
+  "子育て女性就職支援センターによる就職者数" \
+  "働き方改革実行企業（よかばい・かえるばい企業）の新規登録社数" \
+  "10,000人"
+check_content "/policies/fukuoka-prefecture/initiatives/12/" \
+  "健康づくり、安心で質の高い医療の提供" \
+  "平均寿命の増加分を上回る健康寿命の増加" \
+  "12.5人／人口10万人以下" \
+  "68.4人／人口10万人以下" \
+  "条件型目標" \
+  "公式資料の目標は単一の数値ではなく条件で示されています。"
 check_content "/policy-sources/" \
   "集められる政策資料から、先に形にする。" \
   "計画から支出と成果まで、順番につなぐ。" \
