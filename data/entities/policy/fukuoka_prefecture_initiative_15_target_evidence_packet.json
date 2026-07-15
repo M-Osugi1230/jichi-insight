@@ -1,0 +1,38 @@
+{
+  "id": "evidence-policy-target-catalog-fukuoka-prefecture-initiative-15",
+  "subject_type": "policy_target_catalog",
+  "subject_id": "policy-target-catalog-fukuoka-prefecture-initiative-15",
+  "claims": [
+    {
+      "field": "target_count",
+      "statement": "取組事項15『高齢者、障がいのある人への支援』には、数値目標74から76までの3指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの6ページ目、印刷ページ320、指標74から76。",
+      "decision": "accepted",
+      "review_note": null
+    },
+    {
+      "field": "senior_health_and_employment",
+      "statement": "低栄養傾向の高齢者割合はR2年度31.4%を基準に『減少』、就業支援施設の利用満足度は100%、70歳まで働ける企業割合は40%以上を目標としている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの6ページ目、指標74から76。",
+      "decision": "accepted",
+      "review_note": "減少目標は条件型、40%以上は下限型として保存する。"
+    },
+    {
+      "field": "actual_results",
+      "statement": "年度実施状況報告にある指標74から76の実績との個別対応は未確認である。",
+      "source_ids": ["policy-source-fukuoka-pref-progress-reports", "policy-source-fukuoka-pref-progress-2024-pdf"],
+      "location_note": "年度実施状況報告の数値目標進捗を今後確認する。",
+      "decision": "needs_review",
+      "review_note": "低栄養傾向の判定、満足度調査の回答者、企業割合の対象母集団を確認してから接続する。"
+    }
+  ],
+  "open_questions": [
+    "低栄養傾向の基準、対象施設、測定時点を確認する必要がある。",
+    "利用満足度の調査票、回答率、無回答の扱いを確認する必要がある。",
+    "70歳まで働ける企業割合の対象企業規模と制度要件を確認する必要がある。",
+    "取組事項名に含まれる障がいのある人への支援について、このページに固有数値目標が掲載されているか次ページも確認する必要がある。"
+  ],
+  "review_status": "reviewed"
+}
