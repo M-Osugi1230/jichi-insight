@@ -1,7 +1,7 @@
 .summaryGrid {
   display: grid;
   gap: 14px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   margin-bottom: 88px;
 }
 
@@ -146,12 +146,6 @@
   font-size: 0.64rem;
   font-weight: 750;
   margin-right: 12px;
-}
-
-@media (max-width: 1050px) {
-  .summaryGrid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 @media (max-width: 900px) {
