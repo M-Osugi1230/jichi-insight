@@ -14,6 +14,7 @@ TARGET_CATALOG_PATHS = [
     "data/entities/policy/fukuoka_prefecture_initiative_07_targets.json",
     "data/entities/policy/fukuoka_prefecture_initiative_08_targets.json",
     "data/entities/policy/fukuoka_prefecture_initiative_09_targets.json",
+    "data/entities/policy/fukuoka_prefecture_initiative_10_targets.json",
 ]
 TARGET_EVIDENCE_PATHS = [
     "data/entities/policy/fukuoka_prefecture_initiative_01_target_evidence_packet.json",
@@ -25,6 +26,7 @@ TARGET_EVIDENCE_PATHS = [
     "data/entities/policy/fukuoka_prefecture_initiative_07_target_evidence_packet.json",
     "data/entities/policy/fukuoka_prefecture_initiative_08_target_evidence_packet.json",
     "data/entities/policy/fukuoka_prefecture_initiative_09_target_evidence_packet.json",
+    "data/entities/policy/fukuoka_prefecture_initiative_10_target_evidence_packet.json",
 ]
 
 
@@ -46,7 +48,7 @@ def test_policy_target_fixture_is_valid():
     assert fixture["items"][0]["actual_linkage_status"] == "not_linked"
 
 
-def test_first_nine_initiatives_have_forty_reviewed_targets():
+def test_first_ten_initiatives_have_forty_nine_reviewed_targets():
     catalogs = [load(path) for path in TARGET_CATALOG_PATHS]
     for catalog in catalogs:
         assert validate("schemas/policy_target_catalog.schema.json", catalog) == []
@@ -69,13 +71,14 @@ def test_first_nine_initiatives_have_forty_reviewed_targets():
         4,
         6,
         6,
+        9,
     ]
     target_numbers = [
         item["target_number"]
         for catalog in catalogs
         for item in catalog["items"]
     ]
-    assert target_numbers == list(range(1, 41))
+    assert target_numbers == list(range(1, 50))
     assert [catalog["source_page"] for catalog in catalogs] == [
         1,
         2,
@@ -86,6 +89,7 @@ def test_first_nine_initiatives_have_forty_reviewed_targets():
         2,
         3,
         3,
+        4,
     ]
     assert [catalog["printed_page"] for catalog in catalogs] == [
         315,
@@ -97,6 +101,7 @@ def test_first_nine_initiatives_have_forty_reviewed_targets():
         316,
         317,
         317,
+        318,
     ]
 
 
@@ -206,28 +211,42 @@ def test_target_values_preserve_components_period_scopes_and_missing_baselines()
         6000,
         60,
     ]
-    digital = initiative_09[0]["components"][0]
-    fair_sales = initiative_09[1]["components"][0]
-    new_farms = initiative_09[2]["components"][0]
-    women = initiative_09[3]["components"][0]
-    one_health = initiative_09[4]["components"][0]
-    gap = initiative_09[5]["components"][0]
-    assert digital["baseline_scope"] == "cumulative"
-    assert digital["target_scope"] == "cumulative"
-    assert fair_sales["baseline_scope"] == "annual"
-    assert fair_sales["target_scope"] == "annual"
-    assert new_farms["baseline_scope"] == "annual"
-    assert new_farms["target_scope"] == "five_year_cumulative"
-    assert women["baseline_scope"] == "cumulative"
-    assert women["target_scope"] == "cumulative"
-    assert one_health["baseline_value"] is None
-    assert one_health["baseline_scope"] == "not_available"
-    assert one_health["target_scope"] == "five_year_cumulative"
-    assert gap["baseline_scope"] == "cumulative"
-    assert gap["target_scope"] == "cumulative"
+    assert initiative_09[0]["components"][0]["target_scope"] == "cumulative"
+    assert initiative_09[1]["components"][0]["target_scope"] == "annual"
+    assert initiative_09[2]["components"][0]["target_scope"] == "five_year_cumulative"
+    assert initiative_09[3]["components"][0]["target_scope"] == "cumulative"
+    assert initiative_09[4]["components"][0]["baseline_value"] is None
+    assert initiative_09[4]["components"][0]["baseline_scope"] == "not_available"
+    assert initiative_09[5]["components"][0]["target_scope"] == "cumulative"
+
+    initiative_10 = load(TARGET_CATALOG_PATHS[9])["items"]
+    assert [item["target_number"] for item in initiative_10] == list(range(41, 50))
+    assert [item["components"][0]["target_value"] for item in initiative_10] == [
+        50800,
+        78000,
+        65,
+        200000,
+        400000,
+        400,
+        800,
+        1772,
+        17,
+    ]
+    assert initiative_10[0]["components"][0]["baseline_period"] == "R2年"
+    assert initiative_10[1]["components"][0]["baseline_period"] == "R1年"
+    assert initiative_10[2]["components"][0]["label"] == "参考値"
+    assert initiative_10[2]["components"][0]["baseline_period"] == "R1年度"
+    for item in (initiative_10[3], initiative_10[4], initiative_10[8]):
+        component = item["components"][0]
+        assert component["baseline_scope"] == "cumulative"
+        assert component["target_scope"] == "cumulative"
+    for item in (initiative_10[0], initiative_10[1], initiative_10[5], initiative_10[6], initiative_10[7]):
+        component = item["components"][0]
+        assert component["baseline_scope"] == "annual"
+        assert component["target_scope"] == "annual"
 
 
-def test_relisted_targets_are_not_duplicated_in_initiative_nine():
+def test_relisted_targets_are_not_duplicated():
     all_items = [
         item
         for path in TARGET_CATALOG_PATHS
@@ -237,6 +256,10 @@ def test_relisted_targets_are_not_duplicated_in_initiative_nine():
         item["indicator_name_original"]
         for item in load(TARGET_CATALOG_PATHS[8])["items"]
     }
+    initiative_10_names = [
+        item["indicator_name_original"]
+        for item in load(TARGET_CATALOG_PATHS[9])["items"]
+    ]
     assert "県産農林水産物の輸出額" not in initiative_09_names
     assert "新規就業者数（農林漁業）" not in initiative_09_names
     assert sum(
@@ -245,6 +268,14 @@ def test_relisted_targets_are_not_duplicated_in_initiative_nine():
     ) == 1
     assert sum(
         item["indicator_name_original"] == "新規就業者数（農林漁業）"
+        for item in all_items
+    ) == 1
+    assert initiative_10_names.count("旅行消費単価（日本人）") == 1
+    assert initiative_10_names.count("旅行消費単価（通常入国外国人）") == 1
+    assert initiative_10_names.count("リピーター率") == 1
+    assert "延べ宿泊者数（外国人）" not in initiative_10_names
+    assert sum(
+        item["indicator_name_original"] == "延べ宿泊者数（外国人）"
         for item in all_items
     ) == 1
 
