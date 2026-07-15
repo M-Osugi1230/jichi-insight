@@ -1,0 +1,25 @@
+{
+  "id": "source-request-fictional-election-document",
+  "executive_term_id": "jp-local-000000-executive-2026-01-01",
+  "manifesto_source_search_id": "manifesto-source-search-fictional-2026",
+  "organization": "【架空例】架空市選挙管理委員会",
+  "contact_channels": [
+    {
+      "kind": "email",
+      "value": "fictional@example.invalid",
+      "public_source_id": "source-example-fictional"
+    }
+  ],
+  "subject": "【架空例】選挙公報の保存状況について",
+  "request_body": "【架空例】選挙公報の保存・閲覧方法をご教示ください。",
+  "requested_items": ["【架空例】選挙公報"],
+  "status": "draft",
+  "prepared_at": "2026-01-16",
+  "sent_at": null,
+  "response_received_at": null,
+  "response_summary": null,
+  "privacy_note": "【架空例】送信者の個人情報は公開しない。",
+  "source_ids": ["source-example-fictional"],
+  "review_status": "reviewed",
+  "confidence": "high"
+}

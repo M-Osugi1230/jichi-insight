@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.example/schemas/source_request.schema.json",
+  "title": "Jichi Insight Source Request",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "executive_term_id",
+    "manifesto_source_search_id",
+    "organization",
+    "contact_channels",
+    "subject",
+    "request_body",
+    "requested_items",
+    "status",
+    "prepared_at",
+    "sent_at",
+    "response_received_at",
+    "source_ids",
+    "review_status",
+    "confidence"
+  ],
+  "properties": {
+    "id": {"type": "string", "pattern": "^source-request-[a-z0-9-]+$"},
+    "executive_term_id": {"type": "string", "minLength": 1},
+    "manifesto_source_search_id": {"type": "string", "pattern": "^manifesto-source-search-[a-z0-9-]+$"},
+    "organization": {"type": "string", "minLength": 1},
+    "contact_channels": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["kind", "value", "public_source_id"],
+        "properties": {
+          "kind": {"type": "string", "enum": ["email", "phone", "fax", "contact_page"]},
+          "value": {"type": "string", "minLength": 1},
+          "public_source_id": {"type": "string", "pattern": "^[a-z0-9-]+$"}
+        }
+      }
+    },
+    "subject": {"type": "string", "minLength": 1},
+    "request_body": {"type": "string", "minLength": 1},
+    "requested_items": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "ready_for_review", "sent", "answered", "no_record", "closed"]
+    },
+    "prepared_at": {"type": "string", "format": "date"},
+    "sent_at": {"type": ["string", "null"], "format": "date-time"},
+    "response_received_at": {"type": ["string", "null"], "format": "date-time"},
+    "response_summary": {"type": ["string", "null"]},
+    "privacy_note": {"type": ["string", "null"]},
+    "source_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"type": "string", "pattern": "^[a-z0-9-]+$"}
+    },
+    "review_status": {"type": "string", "enum": ["reviewed", "verified"]},
+    "confidence": {"type": "string", "enum": ["high", "medium", "low", "not_assessable"]}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"status": {"enum": ["draft", "ready_for_review"]}}},
+      "then": {
+        "properties": {
+          "sent_at": {"const": null},
+          "response_received_at": {"const": null},
+          "response_summary": {"type": ["null"]}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"status": {"enum": ["sent", "answered", "no_record", "closed"]}}},
+      "then": {"properties": {"sent_at": {"type": "string", "format": "date-time"}}}
+    },
+    {
+      "if": {"properties": {"status": {"enum": ["answered", "no_record"]}}},
+      "then": {
+        "required": ["response_summary"],
+        "properties": {
+          "response_received_at": {"type": "string", "format": "date-time"},
+          "response_summary": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  ]
+}

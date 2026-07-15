@@ -1,0 +1,58 @@
+[
+  {
+    "id": "evidence-source-request-fukuoka-pref-governor-2025-manifesto",
+    "subject_type": "source_request",
+    "subject_id": "source-request-fukuoka-pref-governor-2025-manifesto",
+    "claims": [
+      {
+        "field": "contact_channels",
+        "statement": "福岡県選挙管理委員会の公開ページに代表窓口の電話番号とFAX番号、メール問い合わせ導線が掲載されている。",
+        "source_ids": ["fukuoka-pref-governor-election-2025-results"],
+        "location_note": "2025年福岡県知事選挙結果ページの『このページに関するお問い合わせ先』。",
+        "decision": "accepted",
+        "review_note": "公開された組織連絡先のみを使用。"
+      },
+      {
+        "field": "status",
+        "statement": "照会文案は作成済みだが、行政機関へは送信していない。",
+        "source_ids": ["fukuoka-pref-governor-election-2025-results"],
+        "location_note": "source request record status=draft, sent_at=null。",
+        "decision": "accepted",
+        "review_note": "送信操作は別の明示的承認があるまで行わない。"
+      }
+    ],
+    "open_questions": [
+      "問い合わせ手段としてメールフォーム、電話、FAXのどれを優先するか。",
+      "一般問い合わせで解決しない場合に情報公開請求へ移行するか。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-source-request-fukuoka-city-mayor-2022-manifesto",
+    "subject_type": "source_request",
+    "subject_id": "source-request-fukuoka-city-mayor-2022-manifesto",
+    "claims": [
+      {
+        "field": "contact_channels",
+        "statement": "福岡市選挙管理委員会事務局選挙課の公開ページにメール、電話番号、FAX番号が掲載されている。",
+        "source_ids": ["fukuoka-city-mayor-election-2022-results"],
+        "location_note": "2022年福岡市長選挙結果ページの『このページに関するお問い合わせ先』。",
+        "decision": "accepted",
+        "review_note": "公開された組織連絡先のみを使用。"
+      },
+      {
+        "field": "status",
+        "statement": "照会メール案は作成済みだが、行政機関へは送信していない。",
+        "source_ids": ["fukuoka-city-mayor-election-2022-results"],
+        "location_note": "source request record status=draft, sent_at=null。",
+        "decision": "accepted",
+        "review_note": "送信操作は別の明示的承認があるまで行わない。"
+      }
+    ],
+    "open_questions": [
+      "公開メールアドレスへの照会を行うか。",
+      "一般問い合わせで解決しない場合に情報公開請求へ移行するか。"
+    ],
+    "review_status": "reviewed"
+  }
+]
