@@ -8,6 +8,7 @@ import {
 import { fukuokaPrefectureFinance } from "./finance";
 import { fukuokaCityFinance } from "./fukuokaCityFinance";
 import { kitakyushuFinance } from "./kitakyushuFinance";
+import { sourceRequestRecords } from "./sourceRequests";
 
 export type MunicipalityQuality = {
   key: MunicipalityKey;
@@ -78,6 +79,13 @@ export const dataQualitySnapshot = {
     (total, review) => total + review.promise_records_created,
     0,
   ),
+  sourceRequestDrafts: sourceRequestRecords.filter(
+    (request) => request.status === "draft" || request.status === "ready_for_review",
+  ).length,
+  sourceRequestsSent: sourceRequestRecords.filter((request) => request.sent_at !== null).length,
+  sourceRequestResponses: sourceRequestRecords.filter(
+    (request) => request.response_received_at !== null,
+  ).length,
   publicEvaluations: 0,
 };
 
