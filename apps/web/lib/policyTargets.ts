@@ -22,6 +22,12 @@ import initiative11Evidence from "../../../data/entities/policy/fukuoka_prefectu
 import initiative11Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_11_targets.json";
 import initiative12Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_12_target_evidence_packet.json";
 import initiative12Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_12_targets.json";
+import initiative13Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_13_target_evidence_packet.json";
+import initiative13Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_13_targets.json";
+import initiative14Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_14_target_evidence_packet.json";
+import initiative14Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_14_targets.json";
+import initiative15Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_15_target_evidence_packet.json";
+import initiative15Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_15_targets.json";
 
 export type PolicyTargetComponent = {
   label: string | null;
@@ -95,7 +101,10 @@ export type PolicyTargetPageDefinition = {
     | "09"
     | "10"
     | "11"
-    | "12";
+    | "12"
+    | "13"
+    | "14"
+    | "15";
   title: string;
   catalog: PolicyTargetCatalog;
   evidence: PolicyTargetEvidence;
@@ -174,6 +183,9 @@ export const policyTargetPages: PolicyTargetPageDefinition[] = [
     catalog: initiative12Catalog as PolicyTargetCatalog,
     evidence: initiative12Evidence as PolicyTargetEvidence,
   },
+  { slug: "13", title: "スポーツ立県福岡の実現", catalog: initiative13Catalog as PolicyTargetCatalog, evidence: initiative13Evidence as PolicyTargetEvidence },
+  { slug: "14", title: "文化芸術の振興", catalog: initiative14Catalog as PolicyTargetCatalog, evidence: initiative14Evidence as PolicyTargetEvidence },
+  { slug: "15", title: "ジェンダー平等の社会づくり", catalog: initiative15Catalog as PolicyTargetCatalog, evidence: initiative15Evidence as PolicyTargetEvidence },
 ];
 
 export const initiative01TargetCatalog = policyTargetPages[0].catalog;
