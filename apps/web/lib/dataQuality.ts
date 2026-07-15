@@ -3,6 +3,7 @@ import {
   currentExecutiveTerms,
   executiveEvidencePackets,
   manifestoReviewRecords,
+  manifestoSourceSearchRecords,
 } from "./executives";
 import { fukuokaPrefectureFinance } from "./finance";
 import { fukuokaCityFinance } from "./fukuokaCityFinance";
@@ -65,6 +66,10 @@ export const dataQualitySnapshot = {
   settlementValues: fiscalRecords.filter((record) => record.stage === "settlement").length,
   reviewedExecutiveTerms: currentExecutiveTerms.length,
   executiveEvidencePackets: executiveEvidencePackets.length,
+  manifestoSourceSearches: manifestoSourceSearchRecords.length,
+  manifestoSourcesNotFound: manifestoSourceSearchRecords.filter(
+    (search) => search.result_status === "no_stable_primary_source_found",
+  ).length,
   registeredManifestos: currentExecutiveTerms.filter(
     (term) => term.manifesto_source_ids.length > 0,
   ).length,
