@@ -6,6 +6,9 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { StatusBadge } from "@/components/StatusBadge";
 import {
   extractionTargetLabels,
+  policyCapabilityLabels,
+  policyCapabilityPeriod,
+  policyProfileForMunicipality,
   policySourceMunicipalities,
   policySourcePeriod,
   policySourceRoleLabels,
@@ -75,6 +78,65 @@ export default function PolicySourcesPage() {
               </li>
             ))}
           </ol>
+        </section>
+
+        <section className="contentSection">
+          <p className="eyebrow">Collection depth</p>
+          <h2>公開されている深さを、自治体ごとに分けて見る。</h2>
+          <div className={styles.profileGrid}>
+            {policySourceMunicipalities.map((municipality) => {
+              const profile = policyProfileForMunicipality(municipality.key);
+              const readyLabel =
+                profile.extraction_readiness === "high" ? "抽出優先" : "追加探索";
+              return (
+                <article className={styles.profileCard} key={profile.id}>
+                  <div className={styles.profileHeader}>
+                    <div>
+                      <p>{municipality.type}</p>
+                      <h3>{municipality.name}</h3>
+                    </div>
+                    <StatusBadge
+                      label={readyLabel}
+                      tone={profile.extraction_readiness === "high" ? "verified" : "progress"}
+                    />
+                  </div>
+
+                  <div className={styles.capabilityList}>
+                    {profile.capabilities.map((capability) => {
+                      const period = policyCapabilityPeriod(capability);
+                      return (
+                        <div className={styles.capability} key={capability.dimension}>
+                          <div>
+                            <strong>{policyCapabilityLabels[capability.dimension]}</strong>
+                            <span>
+                              {capability.availability === "confirmed"
+                                ? "確認済み"
+                                : "入口確認のみ"}
+                            </span>
+                          </div>
+                          <p>{capability.statement}</p>
+                          <dl>
+                            {capability.count !== null ? (
+                              <div><dt>確認数</dt><dd>{capability.count}</dd></div>
+                            ) : null}
+                            {period ? <div><dt>期間</dt><dd>{period}</dd></div> : null}
+                          </dl>
+                        </div>
+                      );
+                    })}
+                  </div>
+
+                  <div className={styles.nextAction}>
+                    <p>次に行うこと</p>
+                    <strong>{profile.next_priority}</strong>
+                    <ul>
+                      {profile.caveats.map((caveat) => <li key={caveat}>{caveat}</li>)}
+                    </ul>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
         </section>
 
         {policySourceMunicipalities.map((municipality) => {
