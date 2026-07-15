@@ -133,40 +133,58 @@ def test_target_values_preserve_period_scopes_and_missing_baselines():
     assert component(initiative_03)["target_value"] == 11000
 
     initiative_04 = catalogs[3]
-    assert (component(initiative_04)["baseline_value"], component(initiative_04)["target_value"]) == (876, 5000)
-    assert component(initiative_04)["target_scope"] == "five_year_cumulative"
-    assert (component(initiative_04, 1)["baseline_value"], component(initiative_04, 1)["target_value"]) == (2270, 8000)
+    migration = component(initiative_04)
+    fan_club = component(initiative_04, 1)
+    assert (migration["baseline_value"], migration["target_value"]) == (876, 5000)
+    assert migration["target_scope"] == "five_year_cumulative"
+    assert (fan_club["baseline_value"], fan_club["target_value"]) == (2270, 8000)
 
     initiative_05 = catalogs[4]
-    assert (component(initiative_05)["baseline_value"], component(initiative_05)["target_value"]) == (25.8, 100)
-    assert component(initiative_05)["target_period"] == "R7年度"
-    assert component(initiative_05, 1)["label"] == "全国参考値"
-    assert component(initiative_05, 1)["target_value"] == 40
+    online = component(initiative_05)
+    dx = component(initiative_05, 1)
+    assert (online["baseline_value"], online["target_value"]) == (25.8, 100)
+    assert online["target_period"] == "R7年度"
+    assert dx["label"] == "全国参考値"
+    assert dx["target_value"] == 40
 
     initiative_06 = catalogs[5]
-    assert (component(initiative_06)["baseline_value"], component(initiative_06)["target_value"]) == (22.9, 38.3)
-    assert component(initiative_06)["baseline_period"] == "H30年度"
-    assert (component(initiative_06, 1)["baseline_value"], component(initiative_06, 1)["target_value"]) == (269, 405)
+    emissions = component(initiative_06)
+    renewable = component(initiative_06, 1)
+    assert (emissions["baseline_value"], emissions["target_value"]) == (22.9, 38.3)
+    assert emissions["baseline_period"] == "H30年度"
+    assert (renewable["baseline_value"], renewable["target_value"]) == (269, 405)
 
     initiative_07 = catalogs[6]
-    assert [component(initiative_07, index)["target_value"] for index in range(4)] == [500, 200, 75, 80]
+    initiative_07_targets = [
+        component(initiative_07, index)["target_value"] for index in range(4)
+    ]
+    assert initiative_07_targets == [500, 200, 75, 80]
     for item in initiative_07:
         value = item["components"][0]
         assert value["baseline_scope"] == "annual"
         assert value["target_scope"] == "five_year_cumulative"
 
     initiative_08 = catalogs[7]
-    assert [component(initiative_08, index)["target_value"] for index in range(6)] == [500, 300, 1000, 120, 150, 250]
+    initiative_08_targets = [
+        component(initiative_08, index)["target_value"] for index in range(6)
+    ]
+    assert initiative_08_targets == [500, 300, 1000, 120, 150, 250]
 
     initiative_09 = catalogs[8]
     assert [item["target_number"] for item in initiative_09] == list(range(35, 41))
-    assert [component(initiative_09, index)["target_value"] for index in range(6)] == [1047, 400, 250, 420, 6000, 60]
+    initiative_09_targets = [
+        component(initiative_09, index)["target_value"] for index in range(6)
+    ]
+    assert initiative_09_targets == [1047, 400, 250, 420, 6000, 60]
     assert component(initiative_09, 4)["baseline_value"] is None
     assert component(initiative_09, 4)["baseline_scope"] == "not_available"
 
     initiative_10 = catalogs[9]
     assert [item["target_number"] for item in initiative_10] == list(range(41, 50))
-    assert [component(initiative_10, index)["target_value"] for index in range(9)] == [
+    initiative_10_targets = [
+        component(initiative_10, index)["target_value"] for index in range(9)
+    ]
+    assert initiative_10_targets == [
         50800,
         78000,
         65.0,
@@ -229,7 +247,10 @@ def test_policy_target_sources_initiatives_and_evidence_are_complete():
             "data/entities/policy/fukuoka_prefecture_policy_initiatives.json"
         )["items"]
     }
-    assert {catalog["policy_initiative_id"] for catalog in catalogs} <= initiative_ids
+    catalog_initiative_ids = {
+        catalog["policy_initiative_id"] for catalog in catalogs
+    }
+    assert catalog_initiative_ids <= initiative_ids
     assert {packet["subject_id"] for packet in packets} == {
         catalog["id"] for catalog in catalogs
     }
