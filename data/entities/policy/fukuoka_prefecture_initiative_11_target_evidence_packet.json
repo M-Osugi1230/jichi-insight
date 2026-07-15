@@ -1,0 +1,54 @@
+{
+  "id": "evidence-policy-target-catalog-fukuoka-prefecture-initiative-11",
+  "subject_type": "policy_target_catalog",
+  "subject_id": "policy-target-catalog-fukuoka-prefecture-initiative-11",
+  "claims": [
+    {
+      "field": "target_count",
+      "statement": "取組事項11『雇用対策の充実、魅力ある職場づくり』には、数値目標50から63までの14指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの5ページ目、印刷ページ319、指標50から63。",
+      "decision": "accepted",
+      "review_note": null
+    },
+    {
+      "field": "training_and_retention",
+      "statement": "人材育成・定着支援には、新規正規雇用数、職業訓練の就職率、技能検定受検申請者数の4指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの5ページ目、指標50から53。",
+      "decision": "accepted",
+      "review_note": "指標50の当初値はダッシュ表記であり、0として扱わない。"
+    },
+    {
+      "field": "job_seeker_support",
+      "statement": "求職者支援には、若者、中高年、子育て女性、高齢者、障がいのある人に関する就職率・雇用率・就職者数の8指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの5ページ目、指標54から61。",
+      "decision": "accepted",
+      "review_note": "H30年度からR2年度の平均値、単年度値、5年間累計値を区別して保存する。"
+    },
+    {
+      "field": "workplace_quality",
+      "statement": "魅力ある職場づくりには、男性育児休業取得率と働き方改革実行企業の新規登録社数の2指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの5ページ目、指標62から63。",
+      "decision": "accepted",
+      "review_note": "登録社数は年次の当初値と5年間累計の目標値を単純比較しない。"
+    },
+    {
+      "field": "actual_results",
+      "statement": "年度実施状況報告にある指標50から63の実績との個別対応は未確認である。",
+      "source_ids": ["policy-source-fukuoka-pref-progress-reports", "policy-source-fukuoka-pref-progress-2024-pdf"],
+      "location_note": "年度実施状況報告の数値目標進捗を今後確認する。",
+      "decision": "needs_review",
+      "review_note": "センター利用者の母数、就職・正規雇用・進路決定の定義、重複計上を確認してから接続する。"
+    }
+  ],
+  "open_questions": [
+    "新規正規雇用数の対象事業と雇用確認方法を確認する必要がある。",
+    "各就職率の分母、追跡期間、就職確認時点を年度ごとに確認する必要がある。",
+    "5年間累計指標で同一人物・同一企業が重複計上される条件を確認する必要がある。",
+    "男性育児休業取得率の対象企業と回答率を確認する必要がある。"
+  ],
+  "review_status": "reviewed"
+}

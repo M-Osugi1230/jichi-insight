@@ -1,0 +1,54 @@
+{
+  "id": "evidence-policy-target-catalog-fukuoka-prefecture-initiative-12",
+  "subject_type": "policy_target_catalog",
+  "subject_id": "policy-target-catalog-fukuoka-prefecture-initiative-12",
+  "claims": [
+    {
+      "field": "target_count",
+      "statement": "取組事項12『健康づくり、安心で質の高い医療の提供』には、数値目標64から68までの5指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの5ページ目、印刷ページ319、指標64から68。",
+      "decision": "accepted",
+      "review_note": null
+    },
+    {
+      "field": "healthy_life_expectancy",
+      "statement": "健康寿命の延伸は、R1年の男女別平均寿命・健康寿命を基準とし、『平均寿命の増加分を上回る健康寿命の増加』を目標条件としている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの5ページ目、指標64。",
+      "decision": "accepted",
+      "review_note": "単一の数値目標へ置き換えず、公式資料の条件型目標として保存する。"
+    },
+    {
+      "field": "mortality_thresholds",
+      "statement": "自殺死亡率は12.5以下、75歳未満年齢調整がん死亡率は68.4以下を目標としている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの5ページ目、指標65から66。",
+      "decision": "accepted",
+      "review_note": "上限目標であることをtarget_operator=at_mostとして保存する。"
+    },
+    {
+      "field": "medical_system",
+      "statement": "医療提供体制分野には、ジェネリック医薬品普及率80%と、ナースセンター等による看護職員就職者数1,680人の目標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの5ページ目、指標67から68。",
+      "decision": "accepted",
+      "review_note": "普及率と就職者数は異なる測定単位・母集団として扱う。"
+    },
+    {
+      "field": "actual_results",
+      "statement": "年度実施状況報告にある指標64から68の実績との個別対応は未確認である。",
+      "source_ids": ["policy-source-fukuoka-pref-progress-reports", "policy-source-fukuoka-pref-progress-2024-pdf"],
+      "location_note": "年度実施状況報告の数値目標進捗を今後確認する。",
+      "decision": "needs_review",
+      "review_note": "健康寿命の算定周期、死亡率の年齢調整方法、普及率の母数、就職者数の重複を確認してから接続する。"
+    }
+  ],
+  "open_questions": [
+    "健康寿命の基準値と目標判定に用いる平均寿命・健康寿命の公表周期を確認する必要がある。",
+    "自殺死亡率とがん死亡率の速報・確報、年齢調整基準の変更有無を確認する必要がある。",
+    "ジェネリック医薬品普及率の対象期間と数量ベースの定義を確認する必要がある。",
+    "ナースセンター等による就職者数の対象事業と重複排除方法を確認する必要がある。"
+  ],
+  "review_status": "reviewed"
+}

@@ -132,11 +132,31 @@
                   ]
                 },
                 "target_value": {
-                  "type": "number"
+                  "type": [
+                    "number",
+                    "null"
+                  ]
                 },
                 "target_unit": {
-                  "type": "string",
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "target_text": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
                   "minLength": 1
+                },
+                "target_operator": {
+                  "type": "string",
+                  "enum": [
+                    "exact",
+                    "at_least",
+                    "at_most"
+                  ]
                 },
                 "target_period": {
                   "type": "string",
@@ -148,7 +168,8 @@
                     "snapshot",
                     "annual",
                     "five_year_cumulative",
-                    "cumulative"
+                    "cumulative",
+                    "relative_condition"
                   ]
                 },
                 "preferred_direction": {
@@ -158,7 +179,37 @@
                     "decrease"
                   ]
                 }
-              }
+              },
+              "anyOf": [
+                {
+                  "properties": {
+                    "target_value": {
+                      "type": "number"
+                    },
+                    "target_unit": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                },
+                {
+                  "required": [
+                    "target_text"
+                  ],
+                  "properties": {
+                    "target_value": {
+                      "type": "null"
+                    },
+                    "target_unit": {
+                      "type": "null"
+                    },
+                    "target_text": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                }
+              ]
             }
           },
           "actual_linkage_status": {
