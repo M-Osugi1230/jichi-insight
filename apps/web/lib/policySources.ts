@@ -1,4 +1,5 @@
 import policySourceCatalog from "../../../data/catalog/policy_sources.json";
+import policyCollectionProfiles from "../../../data/entities/policy/policy_collection_profiles.json";
 
 export type PolicySourceRole =
   | "strategic_plan"
@@ -29,7 +30,42 @@ export type PolicySourceRecord = {
   notes: string;
 };
 
+export type PolicyCapabilityDimension =
+  | "strategic_directions"
+  | "implementation_plan"
+  | "initiative_progress"
+  | "numeric_targets"
+  | "annual_reports"
+  | "all_project_review"
+  | "priority_project_sheets"
+  | "budget_feedback"
+  | "progress_management";
+
+export type PolicyCollectionCapability = {
+  dimension: PolicyCapabilityDimension;
+  availability: "confirmed" | "partial" | "entry_point_only" | "unknown";
+  count: number | null;
+  period_start: number | null;
+  period_end: number | null;
+  statement: string;
+  source_ids: string[];
+  location_note: string;
+};
+
+export type PolicyCollectionProfile = {
+  id: string;
+  municipality_key: PolicySourceRecord["municipality_key"];
+  capabilities: PolicyCollectionCapability[];
+  extraction_readiness: "high" | "medium" | "low";
+  next_priority: string;
+  caveats: string[];
+  reviewed_at: string;
+  review_status: "reviewed" | "verified";
+  confidence: "high" | "medium" | "low" | "not_assessable";
+};
+
 export const policySources = policySourceCatalog.records as PolicySourceRecord[];
+export const policyProfiles = policyCollectionProfiles as PolicyCollectionProfile[];
 
 export const policySourceRoleLabels: Record<PolicySourceRole, string> = {
   strategic_plan: "総合・基本計画",
@@ -37,6 +73,18 @@ export const policySourceRoleLabels: Record<PolicySourceRole, string> = {
   annual_progress_report: "年度進捗報告",
   annual_priority_program: "年度主要施策",
   project_review: "事業点検",
+  progress_management: "進行管理",
+};
+
+export const policyCapabilityLabels: Record<PolicyCapabilityDimension, string> = {
+  strategic_directions: "計画の基本方向",
+  implementation_plan: "実施計画",
+  initiative_progress: "取組別の進捗",
+  numeric_targets: "数値目標",
+  annual_reports: "年度報告",
+  all_project_review: "全事業点検",
+  priority_project_sheets: "重点事業シート",
+  budget_feedback: "予算編成への活用",
   progress_management: "進行管理",
 };
 
@@ -62,6 +110,14 @@ export function policySourcesForMunicipality(key: PolicySourceRecord["municipali
   return policySources.filter((source) => source.municipality_key === key);
 }
 
+export function policyProfileForMunicipality(key: PolicySourceRecord["municipality_key"]) {
+  const profile = policyProfiles.find((item) => item.municipality_key === key);
+  if (!profile) {
+    throw new Error(`Missing policy collection profile: ${key}`);
+  }
+  return profile;
+}
+
 export const policySourceStats = {
   total: policySources.length,
   municipalities: new Set(policySources.map((source) => source.municipality_key)).size,
@@ -80,4 +136,11 @@ export function policySourcePeriod(source: PolicySourceRecord) {
     return `${source.period_start}–${source.period_end}年度`;
   }
   return "期間を確認中";
+}
+
+export function policyCapabilityPeriod(capability: PolicyCollectionCapability) {
+  if (capability.period_start && capability.period_end) {
+    return `${capability.period_start}–${capability.period_end}年度`;
+  }
+  return null;
 }
