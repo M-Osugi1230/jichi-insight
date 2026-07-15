@@ -1,0 +1,38 @@
+{
+  "id": "evidence-policy-target-catalog-fukuoka-prefecture-initiative-15",
+  "subject_type": "policy_target_catalog",
+  "subject_id": "policy-target-catalog-fukuoka-prefecture-initiative-15",
+  "claims": [
+    {
+      "field": "target_count",
+      "statement": "取組事項15「ジェンダー平等の社会づくり」には、数値目標74から76の3指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの6ページ目、印刷ページ320。",
+      "decision": "accepted",
+      "review_note": null
+    },
+    {
+      "field": "baseline_and_target",
+      "statement": "市町村審議会、自治会長、県本庁課長相当職における女性割合の当初値、目標値、対象年度を構造化した。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの6ページ目、指標74から76。",
+      "decision": "accepted",
+      "review_note": "指標76だけ当初値がR3年度、目標値がR7年度であり、他2指標と対象年度が異なる。"
+    },
+    {
+      "field": "actual_results",
+      "statement": "年度実績との個別対応は未確認である。",
+      "source_ids": ["policy-source-fukuoka-pref-progress-reports", "policy-source-fukuoka-pref-progress-2024-pdf"],
+      "location_note": "実施状況報告との対応付けは次工程。",
+      "decision": "needs_review",
+      "review_note": "委員・自治会・管理職の母集団定義を確認してから接続する。"
+    }
+  ],
+  "open_questions": [
+    "市町村審議会等委員の対象機関と委員数の集計条件を確認する。",
+    "自治会長割合の自治会母数と欠損自治体の扱いを確認する。",
+    "本庁課長相当職の職位範囲と組織改編による比較条件を確認する。",
+    "2022年度から2024年度の実績値を接続する。"
+  ],
+  "review_status": "reviewed"
+}
