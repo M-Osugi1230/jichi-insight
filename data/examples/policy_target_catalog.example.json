@@ -1,0 +1,35 @@
+{
+  "id": "policy-target-catalog-example-city-initiative-01",
+  "policy_initiative_id": "policy-initiative-example-city-01",
+  "source_ids": ["fukuoka-pref-plan"],
+  "source_document_url": "https://example.com/targets.pdf",
+  "source_page": 1,
+  "printed_page": 10,
+  "items": [
+    {
+      "id": "policy-target-example-city-initiative-01-01",
+      "target_number": 1,
+      "submeasure_title_original": "架空施策",
+      "indicator_name_original": "架空指標",
+      "components": [
+        {
+          "label": null,
+          "baseline_value": 10,
+          "baseline_unit": "%",
+          "baseline_period": "R2年度",
+          "baseline_scope": "snapshot",
+          "target_value": 20,
+          "target_unit": "%",
+          "target_period": "R8年度",
+          "target_scope": "snapshot",
+          "preferred_direction": "increase"
+        }
+      ],
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed"
+    }
+  ],
+  "reviewed_at": "2026-07-15",
+  "review_status": "reviewed",
+  "confidence": "high"
+}
