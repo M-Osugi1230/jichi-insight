@@ -1,0 +1,45 @@
+{
+  "id": "evidence-policy-target-catalog-fukuoka-prefecture-initiative-06",
+  "subject_type": "policy_target_catalog",
+  "subject_id": "policy-target-catalog-fukuoka-prefecture-initiative-06",
+  "claims": [
+    {
+      "field": "target_count",
+      "statement": "取組事項6『グリーン社会の実現』には、数値目標23から24までの2指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの2ページ目、印刷ページ316、指標23から24。",
+      "decision": "accepted",
+      "review_note": null
+    },
+    {
+      "field": "greenhouse_gas_reduction",
+      "statement": "温室効果ガスの総排出量の削減率はH30年度22.9%、目標値38.3%である。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの2ページ目、指標23。",
+      "decision": "accepted",
+      "review_note": "削減率の基準年、対象ガス、算定範囲は年度資料で確認する。"
+    },
+    {
+      "field": "renewable_energy_capacity",
+      "statement": "再生可能エネルギー発電設備導入容量は当初値269万kW、目標値405万kWである。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの2ページ目、指標24。",
+      "decision": "accepted",
+      "review_note": "設備容量は発電実績や政策効果と同一ではない。"
+    },
+    {
+      "field": "actual_results",
+      "statement": "年度実施状況報告にある削減率と設備容量の実績との個別対応は未確認である。",
+      "source_ids": ["policy-source-fukuoka-pref-progress-reports", "policy-source-fukuoka-pref-progress-2024-pdf"],
+      "location_note": "年度実施状況報告の数値目標進捗を今後確認する。",
+      "decision": "needs_review",
+      "review_note": "算定方法・速報値・確報値の違いを確認してから接続する。"
+    }
+  ],
+  "open_questions": [
+    "温室効果ガス削減率の基準年と算定対象を確認する必要がある。",
+    "年度実績が速報値か確報値かを区別する必要がある。",
+    "再生可能エネルギー設備容量と実発電量を混同しない表示が必要である。"
+  ],
+  "review_status": "reviewed"
+}

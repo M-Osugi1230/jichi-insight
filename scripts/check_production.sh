@@ -42,6 +42,10 @@ routes=(
   "/policies/fukuoka-prefecture/initiatives/01/"
   "/policies/fukuoka-prefecture/initiatives/02/"
   "/policies/fukuoka-prefecture/initiatives/03/"
+  "/policies/fukuoka-prefecture/initiatives/04/"
+  "/policies/fukuoka-prefecture/initiatives/05/"
+  "/policies/fukuoka-prefecture/initiatives/06/"
+  "/policies/fukuoka-prefecture/initiatives/07/"
   "/policy-sources/"
   "/sources/"
   "/robots.txt"
@@ -83,7 +87,7 @@ check_content "/data-quality/" \
   "Reviewed基本方向" \
   "Reviewed取組事項" \
   "Reviewed数値目標" \
-  "取組1から3の基準値・目標値18件" \
+  "取組1から7の基準値・目標値28件" \
   "年度実績へ接続済み" \
   "政策評価済み" \
   "首長分野は、任期・探索・公約資料・分割レビュー・評価を分ける。" \
@@ -112,10 +116,12 @@ check_content "/executives/source-requests/" \
 check_content "/policies/" \
   "政策評価の前に、計画が何を目指すかを構造化する。" \
   "4つの基本方向と30の取組事項" \
-  "取組1から3の指標1から18まで" \
+  "取組1から7の指標1から28まで" \
   "数値目標10件" \
   "数値目標7件" \
   "数値目標1件" \
+  "数値目標2件" \
+  "数値目標4件" \
   "取組と目標の一覧と、実際の成果はまだ別々です。"
 check_content "/policies/fukuoka-prefecture/initiatives/01/" \
   "次代を担う「人財」の育成" \
@@ -134,6 +140,26 @@ check_content "/policies/fukuoka-prefecture/initiatives/03/" \
   "ワンヘルス宣言事業者登録数" \
   "11,000件" \
   "当初値は公式資料でダッシュ表記です。0とは扱わず"
+check_content "/policies/fukuoka-prefecture/initiatives/04/" \
+  "移住定住の促進" \
+  "県外からの移住世帯数" \
+  "ふくおかファンクラブ会員数" \
+  "5,000世帯"
+check_content "/policies/fukuoka-prefecture/initiatives/05/" \
+  "デジタル社会の実現" \
+  "国が示すオンライン化を推進すべき手続のオンライン化達成率" \
+  "中小企業におけるDXの実践割合" \
+  "全国参考値"
+check_content "/policies/fukuoka-prefecture/initiatives/06/" \
+  "グリーン社会の実現" \
+  "温室効果ガスの総排出量の削減率" \
+  "再生可能エネルギー発電設備導入容量" \
+  "405万kW"
+check_content "/policies/fukuoka-prefecture/initiatives/07/" \
+  "成長産業の創出" \
+  "成長産業分野への新規参画企業数" \
+  "1億円以上の資金調達を行ったベンチャー企業数" \
+  "80社"
 check_content "/policy-sources/" \
   "集められる政策資料から、先に形にする。" \
   "計画から支出と成果まで、順番につなぐ。" \

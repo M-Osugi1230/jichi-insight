@@ -47,7 +47,7 @@ const evidencePackets = Object.values(evidenceByMunicipality).flat();
 const evidenceSubjects = new Set(evidencePackets.map((packet) => packet.subject_id));
 
 export const dataQualitySnapshot = {
-  updatedAt: "2026-07-15",
+  updatedAt: "2026-07-16",
   pilotMunicipalities: municipalityKeys.length,
   officialSources: sourceCatalog.length,
   reviewedSources: sourceCatalog.filter(

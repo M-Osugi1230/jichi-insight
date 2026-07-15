@@ -1,0 +1,45 @@
+{
+  "id": "evidence-policy-target-catalog-fukuoka-prefecture-initiative-05",
+  "subject_type": "policy_target_catalog",
+  "subject_id": "policy-target-catalog-fukuoka-prefecture-initiative-05",
+  "claims": [
+    {
+      "field": "target_count",
+      "statement": "取組事項5『デジタル社会の実現』には、数値目標21から22までの2指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの2ページ目、印刷ページ316、指標21から22。",
+      "decision": "accepted",
+      "review_note": null
+    },
+    {
+      "field": "administrative_digitalization",
+      "statement": "オンライン化を推進すべき手続のオンライン化達成率は当初値25.8%、目標値はR7年度100%である。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの2ページ目、指標21。",
+      "decision": "accepted",
+      "review_note": "対象手続の母数と国の定義変更を年度ごとに確認する必要がある。"
+    },
+    {
+      "field": "small_business_dx",
+      "statement": "中小企業におけるDXの実践割合は全国参考値9%を当初欄に置き、目標値40%として掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの2ページ目、指標22。",
+      "decision": "accepted",
+      "review_note": "9%は福岡県の実績値ではなく、公式資料が示す全国参考値として保存する。"
+    },
+    {
+      "field": "actual_results",
+      "statement": "年度実施状況報告にあるオンライン化達成率とDX実践割合の実績との個別対応は未確認である。",
+      "source_ids": ["policy-source-fukuoka-pref-progress-reports", "policy-source-fukuoka-pref-progress-2024-pdf"],
+      "location_note": "年度実施状況報告の数値目標進捗を今後確認する。",
+      "decision": "needs_review",
+      "review_note": "全国参考値と県内実績を混同せず、調査対象・母数・調査年を確認して接続する。"
+    }
+  ],
+  "open_questions": [
+    "指標21の対象手続数と年度ごとの定義変更を確認する必要がある。",
+    "指標22の9%が参照する全国調査名と調査時点を確認する必要がある。",
+    "県内中小企業のDX実践割合の年度実績が同一定義で公表されているか確認する必要がある。"
+  ],
+  "review_status": "reviewed"
+}

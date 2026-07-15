@@ -1,0 +1,46 @@
+{
+  "id": "evidence-policy-target-catalog-fukuoka-prefecture-initiative-07",
+  "subject_type": "policy_target_catalog",
+  "subject_id": "policy-target-catalog-fukuoka-prefecture-initiative-07",
+  "claims": [
+    {
+      "field": "target_count",
+      "statement": "取組事項7『成長産業の創出』には、数値目標25から28までの4指標が掲載されている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの2ページ目、印刷ページ316、指標25から28。",
+      "decision": "accepted",
+      "review_note": null
+    },
+    {
+      "field": "growth_industry_creation",
+      "statement": "新規参画企業数、新製品・新サービス開発件数、次世代技術に取り組む自動車関連企業数の3指標は、年次の当初値と5年間累計の目標値を持つ。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの2ページ目、指標25から27。",
+      "decision": "accepted",
+      "review_note": "年次値と5年間累計値を単純な達成率へ変換しない。"
+    },
+    {
+      "field": "venture_financing",
+      "statement": "1億円以上の資金調達を行ったベンチャー企業数はR2年12社／年、目標値は5年間累計80社である。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの2ページ目、指標28。",
+      "decision": "accepted",
+      "review_note": "同一企業の複数年・複数回調達の計上方法は年度資料で確認する。"
+    },
+    {
+      "field": "actual_results",
+      "statement": "年度実施状況報告にある各指標実績との個別対応は未確認である。",
+      "source_ids": ["policy-source-fukuoka-pref-progress-reports", "policy-source-fukuoka-pref-progress-2024-pdf"],
+      "location_note": "年度実施状況報告の数値目標進捗を今後確認する。",
+      "decision": "needs_review",
+      "review_note": "支援対象、重複計上、分野定義、企業・団体の区分を確認してから接続する。"
+    }
+  ],
+  "open_questions": [
+    "成長産業分野の対象分野が年度途中で変更されていないか確認する必要がある。",
+    "県の支援による開発件数の因果・認定条件を確認する必要がある。",
+    "企業数と企業・団体数の単位差を維持したまま年度実績を接続する必要がある。",
+    "資金調達企業数の重複排除ルールを確認する必要がある。"
+  ],
+  "review_status": "reviewed"
+}
