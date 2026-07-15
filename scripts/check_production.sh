@@ -4,7 +4,8 @@ set -euo pipefail
 BASE_URL="${JICHI_PRODUCTION_URL:-https://m-osugi1230.github.io/jichi-insight}"
 REPORT="${JICHI_SMOKE_REPORT:-production-smoke-report.txt}"
 INDEX_FILE="$(mktemp)"
-trap 'rm -f "$INDEX_FILE"' EXIT
+CONTENT_FILE="$(mktemp)"
+trap 'rm -f "$INDEX_FILE" "$CONTENT_FILE"' EXIT
 
 : > "$REPORT"
 printf 'Jichi Insight production smoke test\n' >> "$REPORT"
@@ -61,6 +62,42 @@ for route in "${routes[@]}"; do
     exit 1
   fi
 done
+
+check_content() {
+  local route="$1"
+  shift
+  local status
+  status="$(curl --silent --show-error --location --output "$CONTENT_FILE" --write-out '%{http_code}' "$BASE_URL$route" || true)"
+  printf '\nContent check %-43s HTTP %s\n' "$route" "$status" >> "$REPORT"
+  if [[ "$status" != "200" ]]; then
+    cat "$REPORT"
+    exit 1
+  fi
+
+  local required
+  for required in "$@"; do
+    if grep --quiet --fixed-strings "$required" "$CONTENT_FILE"; then
+      printf '  PASS %s\n' "$required" >> "$REPORT"
+    else
+      printf '  FAIL %s\n' "$required" >> "$REPORT"
+      cat "$REPORT"
+      exit 1
+    fi
+  done
+}
+
+check_content "/data-quality/" \
+  "首長分野は、任期・公約資料・分割レビュー・評価を分ける。" \
+  "Reviewed現職任期" \
+  "登録済み公約原文資料" \
+  "公約分割レビュー" \
+  "個別公約レコード"
+
+check_content "/executives/" \
+  "首長評価の前に、任期と公約の根拠を固定する。" \
+  "手動レビュー待ち" \
+  "作成済み公約レコード" \
+  "資料があることと、公約を評価できることは別です。"
 
 printf '\nResult: PASS\n' >> "$REPORT"
 cat "$REPORT"
