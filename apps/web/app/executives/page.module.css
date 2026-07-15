@@ -1,7 +1,7 @@
 .summaryGrid {
   display: grid;
   gap: 14px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   margin-bottom: 88px;
 }
 
@@ -87,13 +87,19 @@
   padding-top: 18px;
 }
 
-.sourceList > p,
+.sourceList > p:first-child,
 .gaps > p {
   color: #676960;
   font-size: 0.7rem;
   font-weight: 750;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.sourceList > p:last-child:not(:first-child) {
+  color: #676960;
+  font-size: 0.8rem;
+  margin: 14px 0 0;
 }
 
 .sourceList a {
@@ -142,8 +148,13 @@
   margin-right: 12px;
 }
 
+@media (max-width: 1050px) {
+  .summaryGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 900px) {
-  .summaryGrid,
   .boundary {
     grid-template-columns: 1fr;
   }
@@ -154,6 +165,7 @@
 }
 
 @media (max-width: 600px) {
+  .summaryGrid,
   .facts {
     grid-template-columns: 1fr;
   }
