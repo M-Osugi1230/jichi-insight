@@ -16,6 +16,8 @@ import initiative08Evidence from "../../../data/entities/policy/fukuoka_prefectu
 import initiative08Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_08_targets.json";
 import initiative09Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_09_target_evidence_packet.json";
 import initiative09Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_09_targets.json";
+import initiative10Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_10_target_evidence_packet.json";
+import initiative10Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_10_targets.json";
 
 export type PolicyTargetComponent = {
   label: string | null;
@@ -70,67 +72,23 @@ export type PolicyTargetEvidence = {
 };
 
 export type PolicyTargetPageDefinition = {
-  slug: "01" | "02" | "03" | "04" | "05" | "06" | "07" | "08" | "09";
+  slug: "01" | "02" | "03" | "04" | "05" | "06" | "07" | "08" | "09" | "10";
   title: string;
   catalog: PolicyTargetCatalog;
   evidence: PolicyTargetEvidence;
 };
 
 export const policyTargetPages: PolicyTargetPageDefinition[] = [
-  {
-    slug: "01",
-    title: "次代を担う「人財」の育成",
-    catalog: initiative01Catalog as PolicyTargetCatalog,
-    evidence: initiative01Evidence as PolicyTargetEvidence,
-  },
-  {
-    slug: "02",
-    title: "世界から選ばれる福岡県の実現",
-    catalog: initiative02Catalog as PolicyTargetCatalog,
-    evidence: initiative02Evidence as PolicyTargetEvidence,
-  },
-  {
-    slug: "03",
-    title: "ワンヘルスの推進",
-    catalog: initiative03Catalog as PolicyTargetCatalog,
-    evidence: initiative03Evidence as PolicyTargetEvidence,
-  },
-  {
-    slug: "04",
-    title: "移住定住の促進",
-    catalog: initiative04Catalog as PolicyTargetCatalog,
-    evidence: initiative04Evidence as PolicyTargetEvidence,
-  },
-  {
-    slug: "05",
-    title: "デジタル社会の実現",
-    catalog: initiative05Catalog as PolicyTargetCatalog,
-    evidence: initiative05Evidence as PolicyTargetEvidence,
-  },
-  {
-    slug: "06",
-    title: "グリーン社会の実現",
-    catalog: initiative06Catalog as PolicyTargetCatalog,
-    evidence: initiative06Evidence as PolicyTargetEvidence,
-  },
-  {
-    slug: "07",
-    title: "成長産業の創出",
-    catalog: initiative07Catalog as PolicyTargetCatalog,
-    evidence: initiative07Evidence as PolicyTargetEvidence,
-  },
-  {
-    slug: "08",
-    title: "中小企業の振興",
-    catalog: initiative08Catalog as PolicyTargetCatalog,
-    evidence: initiative08Evidence as PolicyTargetEvidence,
-  },
-  {
-    slug: "09",
-    title: "農林水産業の振興",
-    catalog: initiative09Catalog as PolicyTargetCatalog,
-    evidence: initiative09Evidence as PolicyTargetEvidence,
-  },
+  { slug: "01", title: "次代を担う「人財」の育成", catalog: initiative01Catalog as PolicyTargetCatalog, evidence: initiative01Evidence as PolicyTargetEvidence },
+  { slug: "02", title: "世界から選ばれる福岡県の実現", catalog: initiative02Catalog as PolicyTargetCatalog, evidence: initiative02Evidence as PolicyTargetEvidence },
+  { slug: "03", title: "ワンヘルスの推進", catalog: initiative03Catalog as PolicyTargetCatalog, evidence: initiative03Evidence as PolicyTargetEvidence },
+  { slug: "04", title: "移住定住の促進", catalog: initiative04Catalog as PolicyTargetCatalog, evidence: initiative04Evidence as PolicyTargetEvidence },
+  { slug: "05", title: "デジタル社会の実現", catalog: initiative05Catalog as PolicyTargetCatalog, evidence: initiative05Evidence as PolicyTargetEvidence },
+  { slug: "06", title: "グリーン社会の実現", catalog: initiative06Catalog as PolicyTargetCatalog, evidence: initiative06Evidence as PolicyTargetEvidence },
+  { slug: "07", title: "成長産業の創出", catalog: initiative07Catalog as PolicyTargetCatalog, evidence: initiative07Evidence as PolicyTargetEvidence },
+  { slug: "08", title: "中小企業の振興", catalog: initiative08Catalog as PolicyTargetCatalog, evidence: initiative08Evidence as PolicyTargetEvidence },
+  { slug: "09", title: "農林水産業の振興", catalog: initiative09Catalog as PolicyTargetCatalog, evidence: initiative09Evidence as PolicyTargetEvidence },
+  { slug: "10", title: "地域と調和した観光産業の振興", catalog: initiative10Catalog as PolicyTargetCatalog, evidence: initiative10Evidence as PolicyTargetEvidence },
 ];
 
 export const initiative01TargetCatalog = policyTargetPages[0].catalog;
