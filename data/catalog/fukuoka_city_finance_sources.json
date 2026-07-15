@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-07-15",
+  "scope": "pilot",
+  "records": [
+    {
+      "id": "fukuoka-city-budget-2026-page",
+      "municipality_key": "fukuoka-city",
+      "organization": "福岡市",
+      "category": "budget",
+      "title": "令和8年度当初予算案",
+      "url": "https://www.city.fukuoka.lg.jp/zaisei/zaisei/shisei/8Ntoushoyosanan_2.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-07-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計予算規模、市税収入、歳入・歳出のポイントを掲載する公式ページ。"
+    },
+    {
+      "id": "fukuoka-city-settlement-2024-page",
+      "municipality_key": "fukuoka-city",
+      "organization": "福岡市",
+      "category": "settlement",
+      "title": "令和6年度決算",
+      "url": "https://www.city.fukuoka.lg.jp/zaisei/zaisei/shisei/R6aramashi.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-07-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "2024年度決算概要と財政資料への公式入口。"
+    },
+    {
+      "id": "fukuoka-city-settlement-2024-overview-pdf",
+      "municipality_key": "fukuoka-city",
+      "organization": "福岡市",
+      "category": "settlement",
+      "title": "財政のあらまし（令和6年度決算）",
+      "url": "https://www.city.fukuoka.lg.jp/zaisei/zaisei/shisei/documents/zaiseinoaramashi6.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-07-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "PDF3ページ目（冊子1頁）に一般会計の歳入・歳出・形式収支・実質収支を千円単位で掲載。"
+    }
+  ]
+}
