@@ -1,0 +1,24 @@
+{
+  "version": "0.0.1",
+  "updated_at": "2026-07-15",
+  "records": [
+    {
+      "id": "policy-source-example-city-plan",
+      "municipality_key": "fukuoka-city",
+      "organization": "架空市",
+      "title": "架空市総合計画",
+      "url": "https://example.com/plan",
+      "source_role": "strategic_plan",
+      "format": "html",
+      "period_start": 2025,
+      "period_end": 2034,
+      "fiscal_year": null,
+      "published_at": "2025-04-01",
+      "collection_status": "indexed",
+      "extraction_targets": ["goals", "measures", "kpis"],
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "Schema検証専用の架空資料。"
+    }
+  ]
+}

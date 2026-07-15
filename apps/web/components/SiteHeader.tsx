@@ -6,6 +6,7 @@ const navigation = [
   { href: "/executives", label: "首長" },
   { href: "/executives/source-requests", label: "照会案" },
   { href: "/assemblies", label: "議会" },
+  { href: "/policy-sources", label: "政策資料" },
   { href: "/sources", label: "公式資料" },
   { href: "/data-quality", label: "データ品質" },
   { href: "/methodology", label: "評価方法" },
