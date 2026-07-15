@@ -20,6 +20,10 @@ const routes = [
   "/policies/fukuoka-prefecture/initiatives/01",
   "/policies/fukuoka-prefecture/initiatives/02",
   "/policies/fukuoka-prefecture/initiatives/03",
+  "/policies/fukuoka-prefecture/initiatives/04",
+  "/policies/fukuoka-prefecture/initiatives/05",
+  "/policies/fukuoka-prefecture/initiatives/06",
+  "/policies/fukuoka-prefecture/initiatives/07",
   "/policy-sources",
   "/sources",
 ];
@@ -29,7 +33,7 @@ export const dynamic = "force-static";
 export default function sitemap(): MetadataRoute.Sitemap {
   return routes.map((route) => ({
     url: `${siteUrl}${route}`,
-    lastModified: new Date("2026-07-15"),
+    lastModified: new Date("2026-07-16"),
     changeFrequency: route === "" ? "weekly" : "monthly",
     priority:
       route === ""
