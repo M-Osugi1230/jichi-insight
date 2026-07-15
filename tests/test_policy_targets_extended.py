@@ -11,9 +11,11 @@ TARGET_CATALOG_PATHS = sorted(
 )
 NEW_TARGET_EVIDENCE_PATHS = [
     ROOT
-    / "data/entities/policy/fukuoka_prefecture_initiative_11_target_evidence_packet.json",
-    ROOT
-    / "data/entities/policy/fukuoka_prefecture_initiative_12_target_evidence_packet.json",
+    / (
+        "data/entities/policy/"
+        f"fukuoka_prefecture_initiative_{number:02d}_target_evidence_packet.json"
+    )
+    for number in range(11, 16)
 ]
 
 
@@ -30,9 +32,9 @@ def validate(schema_path: str, value):
     return list(validator.iter_errors(value))
 
 
-def test_policy_target_catalogs_are_continuous_through_sixty_eight():
+def test_policy_target_catalogs_are_continuous_through_seventy_six():
     catalogs = [load(path) for path in TARGET_CATALOG_PATHS]
-    assert len(catalogs) == 12
+    assert len(catalogs) == 15
     assert [len(catalog["items"]) for catalog in catalogs] == [
         10,
         7,
@@ -46,12 +48,15 @@ def test_policy_target_catalogs_are_continuous_through_sixty_eight():
         9,
         14,
         5,
+        2,
+        3,
+        3,
     ]
     assert [
         item["target_number"]
         for catalog in catalogs
         for item in catalog["items"]
-    ] == list(range(1, 69))
+    ] == list(range(1, 77))
     for catalog in catalogs:
         assert validate("schemas/policy_target_catalog.schema.json", catalog) == []
 
