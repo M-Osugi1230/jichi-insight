@@ -1,7 +1,9 @@
 import type { MetadataRoute } from "next";
 
+import { policyTargetPages } from "@/lib/policyTargets";
+
 const siteUrl = "https://m-osugi1230.github.io/jichi-insight";
-const routes = [
+const staticRoutes = [
   "",
   "/about",
   "/assemblies",
@@ -17,18 +19,13 @@ const routes = [
   "/municipalities/fukuoka-city",
   "/municipalities/kitakyushu-city",
   "/policies",
-  "/policies/fukuoka-prefecture/initiatives/01",
-  "/policies/fukuoka-prefecture/initiatives/02",
-  "/policies/fukuoka-prefecture/initiatives/03",
-  "/policies/fukuoka-prefecture/initiatives/04",
-  "/policies/fukuoka-prefecture/initiatives/05",
-  "/policies/fukuoka-prefecture/initiatives/06",
-  "/policies/fukuoka-prefecture/initiatives/07",
-  "/policies/fukuoka-prefecture/initiatives/08",
-  "/policies/fukuoka-prefecture/initiatives/09",
   "/policy-sources",
   "/sources",
 ];
+const policyTargetRoutes = policyTargetPages.map(
+  (page) => `/policies/fukuoka-prefecture/initiatives/${page.slug}`,
+);
+const routes = [...staticRoutes, ...policyTargetRoutes];
 
 export const dynamic = "force-static";
 
