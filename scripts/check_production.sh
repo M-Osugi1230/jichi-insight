@@ -40,6 +40,7 @@ routes=(
   "/methodology/"
   "/municipalities/"
   "/municipalities/fukuoka-prefecture/"
+  "/municipalities/fukuoka-city/"
   "/sources/"
   "/robots.txt"
   "/sitemap.xml"

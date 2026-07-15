@@ -1,0 +1,70 @@
+[
+  {
+    "id": "evidence-fukuoka-city-2026-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401307-fiscal-2026-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算案は1兆1,318億円。",
+        "source_ids": ["fukuoka-city-budget-2026-page"],
+        "location_note": "公式ページ「1 予算規模」の一般会計欄。",
+        "decision": "accepted",
+        "review_note": "当初予算案であり、補正後予算・執行額・決算額と区別して保存。"
+      }
+    ],
+    "open_questions": ["年度終了後の執行額・決算額は未確定。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-city-2026-local-tax",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401307-fiscal-2026-local-tax",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度当初予算案の市税収入は4,263億円。",
+        "source_ids": ["fukuoka-city-budget-2026-page"],
+        "location_note": "公式ページ「2 令和8年度当初予算案のポイント」歳入欄。",
+        "decision": "accepted",
+        "review_note": "公式ページの『過去最高を更新』との説明も確認。"
+      }
+    ],
+    "open_questions": ["税目別内訳と年度末の実収入は今後確認する。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-city-2024-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401307-fiscal-2024-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度一般会計の歳入決算額は1,126,286,330千円。",
+        "source_ids": ["fukuoka-city-settlement-2024-overview-pdf"],
+        "location_note": "PDF3ページ目（冊子1頁）下部の一般会計決算表。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。資料注記の決算見込み時点も保持。"
+      }
+    ],
+    "open_questions": ["確定版への差し替えが公表された場合は再確認する。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-city-2024-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401307-fiscal-2024-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度一般会計の歳出決算額は1,108,780,593千円。",
+        "source_ids": ["fukuoka-city-settlement-2024-overview-pdf"],
+        "location_note": "PDF3ページ目（冊子1頁）下部の一般会計決算表。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。資料注記の決算見込み時点も保持。"
+      }
+    ],
+    "open_questions": ["目的別・性質別の歳出内訳は次の財政拡充で追加する。"],
+    "review_status": "reviewed"
+  }
+]

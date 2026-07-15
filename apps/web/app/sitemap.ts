@@ -9,6 +9,7 @@ const routes = [
   "/methodology",
   "/municipalities",
   "/municipalities/fukuoka-prefecture",
+  "/municipalities/fukuoka-city",
   "/sources",
 ];
 
@@ -19,6 +20,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${siteUrl}${route}`,
     lastModified: new Date("2026-07-15"),
     changeFrequency: route === "" ? "weekly" : "monthly",
-    priority: route === "" ? 1 : route.includes("fukuoka-prefecture") ? 0.9 : 0.8,
+    priority: route === "" ? 1 : route.startsWith("/municipalities/") ? 0.9 : 0.8,
   }));
 }

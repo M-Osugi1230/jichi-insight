@@ -41,18 +41,9 @@ export default function MunicipalitiesPage() {
                   </div>
                   <p>{municipality.summary}</p>
                   <dl className="municipalityFacts">
-                    <div>
-                      <dt>公式資料入口</dt>
-                      <dd>{sourceCount}件</dd>
-                    </div>
-                    <div>
-                      <dt>財政データ</dt>
-                      <dd>{municipality.href ? "当初予算2項目" : "整備前"}</dd>
-                    </div>
-                    <div>
-                      <dt>評価</dt>
-                      <dd>未実施</dd>
-                    </div>
+                    <div><dt>公式資料入口</dt><dd>{sourceCount}件</dd></div>
+                    <div><dt>財政データ</dt><dd>{municipality.fiscalSummary}</dd></div>
+                    <div><dt>評価</dt><dd>未実施</dd></div>
                   </dl>
                   <div className="heroActions">
                     {municipality.href ? (

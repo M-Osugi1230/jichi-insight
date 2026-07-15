@@ -1,5 +1,6 @@
 import { sourceCatalog, type MunicipalityKey } from "./catalog";
 import { fukuokaPrefectureFinance } from "./finance";
+import { fukuokaCityFinance } from "./fukuokaCityFinance";
 
 export type MunicipalityQuality = {
   key: MunicipalityKey;
@@ -18,8 +19,21 @@ const municipalityNames: Record<MunicipalityKey, string> = {
 };
 
 const municipalityKeys = Object.keys(municipalityNames) as MunicipalityKey[];
-const fiscalRecords = fukuokaPrefectureFinance.records;
-const evidencePackets = fukuokaPrefectureFinance.evidencePackets;
+const recordsByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFinance.records> = {
+  "fukuoka-prefecture": fukuokaPrefectureFinance.records,
+  "fukuoka-city": fukuokaCityFinance.records,
+  "kitakyushu-city": [],
+};
+const evidenceByMunicipality: Record<
+  MunicipalityKey,
+  typeof fukuokaPrefectureFinance.evidencePackets
+> = {
+  "fukuoka-prefecture": fukuokaPrefectureFinance.evidencePackets,
+  "fukuoka-city": fukuokaCityFinance.evidencePackets,
+  "kitakyushu-city": [],
+};
+const fiscalRecords = Object.values(recordsByMunicipality).flat();
+const evidencePackets = Object.values(evidenceByMunicipality).flat();
 const evidenceSubjects = new Set(evidencePackets.map((packet) => packet.subject_id));
 
 export const dataQualitySnapshot = {
@@ -46,18 +60,22 @@ export const dataQualitySnapshot = {
   publicEvaluations: 0,
 };
 
-export const municipalityQuality: MunicipalityQuality[] = municipalityKeys.map((key) => ({
-  key,
-  name: municipalityNames[key],
-  officialSources: sourceCatalog.filter((source) => source.municipality_key === key).length,
-  reviewedFiscalValues: key === "fukuoka-prefecture" ? fiscalRecords.length : 0,
-  evidencePackets: key === "fukuoka-prefecture" ? evidencePackets.length : 0,
-  publicEvaluations: 0,
-  status: key === "fukuoka-prefecture" ? "reviewed-data" : "indexed-only",
-}));
+export const municipalityQuality: MunicipalityQuality[] = municipalityKeys.map((key) => {
+  const records = recordsByMunicipality[key];
+  const packets = evidenceByMunicipality[key];
+  return {
+    key,
+    name: municipalityNames[key],
+    officialSources: sourceCatalog.filter((source) => source.municipality_key === key).length,
+    reviewedFiscalValues: records.length,
+    evidencePackets: packets.length,
+    publicEvaluations: 0,
+    status: records.length > 0 ? "reviewed-data" : "indexed-only",
+  };
+});
 
 export const publicationGaps = [
-  "福岡市・北九州市のReviewed財政値",
+  "北九州市のReviewed財政値",
   "事業別の予算・契約・執行・決算",
   "KPIの基準値・目標・実績",
   "首長公約と事業の根拠付き対応付け",
