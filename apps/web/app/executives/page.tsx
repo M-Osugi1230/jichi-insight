@@ -200,7 +200,7 @@ export default function ExecutivesPage() {
         <section className={`contentSection ${styles.boundary}`}>
           <div>
             <p className="eyebrow">Source readiness</p>
-            <h2>未発見と不存在を、同じ意味にしない。</h2>
+            <h2>資料があることと、公約を評価できることは別です。未発見と不存在も、同じ意味にしません。</h2>
           </div>
           <ul>
             <li>3首長の個別選挙結果ページを確認済み</li>
