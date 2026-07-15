@@ -1,0 +1,125 @@
+{
+  "id": "policy-target-catalog-fukuoka-prefecture-initiative-01",
+  "policy_initiative_id": "policy-initiative-fukuoka-prefecture-01",
+  "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+  "source_document_url": "https://www.pref.fukuoka.lg.jp/uploaded/life/632711_61262666_misc.pdf",
+  "source_page": 1,
+  "printed_page": 315,
+  "items": [
+    {
+      "id": "policy-target-fukuoka-prefecture-initiative-01-01",
+      "target_number": 1,
+      "submeasure_title_original": "学校教育の充実",
+      "indicator_name_original": "全国学力・学習状況調査における学力上位層の構成割合が全国平均を上回る地区数（教育事務所別）［公立小学校］",
+      "components": [
+        {"label":"国語","baseline_value":5,"baseline_unit":"地区","baseline_period":"R3年度","baseline_scope":"snapshot","target_value":6,"target_unit":"地区","target_period":"R8年度","target_scope":"snapshot","preferred_direction":"increase"},
+        {"label":"算数","baseline_value":2,"baseline_unit":"地区","baseline_period":"R3年度","baseline_scope":"snapshot","target_value":6,"target_unit":"地区","target_period":"R8年度","target_scope":"snapshot","preferred_direction":"increase"}
+      ],
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed"
+    },
+    {
+      "id": "policy-target-fukuoka-prefecture-initiative-01-02",
+      "target_number": 2,
+      "submeasure_title_original": "学校教育の充実",
+      "indicator_name_original": "全国学力・学習状況調査における学力上位層の構成割合が全国平均を上回る地区数（教育事務所別）［公立中学校］",
+      "components": [
+        {"label":"国語","baseline_value":1,"baseline_unit":"地区","baseline_period":"R3年度","baseline_scope":"snapshot","target_value":6,"target_unit":"地区","target_period":"R8年度","target_scope":"snapshot","preferred_direction":"increase"},
+        {"label":"数学","baseline_value":1,"baseline_unit":"地区","baseline_period":"R3年度","baseline_scope":"snapshot","target_value":6,"target_unit":"地区","target_period":"R8年度","target_scope":"snapshot","preferred_direction":"increase"}
+      ],
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed"
+    },
+    {
+      "id": "policy-target-fukuoka-prefecture-initiative-01-03",
+      "target_number": 3,
+      "submeasure_title_original": "学校教育の充実",
+      "indicator_name_original": "全国体力・運動能力、運動習慣等調査における体力中・上位層の割合が全国の割合を上回る区分数（教育事務所、小中学校、男女別）［公立小中学校］",
+      "components": [
+        {"label":null,"baseline_value":18,"baseline_unit":"区分","baseline_period":"R1年度","baseline_scope":"snapshot","target_value":24,"target_unit":"区分","target_period":"R8年度","target_scope":"snapshot","preferred_direction":"increase"}
+      ],
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed"
+    },
+    {
+      "id": "policy-target-fukuoka-prefecture-initiative-01-04",
+      "target_number": 4,
+      "submeasure_title_original": "未来へはばたく青少年の応援",
+      "indicator_name_original": "同一校区内にある放課後児童クラブと放課後子供教室・アンビシャス広場が連携して体験・交流活動を行っている割合",
+      "components": [
+        {"label":null,"baseline_value":73.7,"baseline_unit":"%","baseline_period":"R3年度","baseline_scope":"snapshot","target_value":100,"target_unit":"%","target_period":"R8年度","target_scope":"snapshot","preferred_direction":"increase"}
+      ],
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed"
+    },
+    {
+      "id": "policy-target-fukuoka-prefecture-initiative-01-05",
+      "target_number": 5,
+      "submeasure_title_original": "未来へはばたく青少年の応援",
+      "indicator_name_original": "国民体育大会における男女総合成績順位",
+      "components": [
+        {"label":null,"baseline_value":11,"baseline_unit":"位","baseline_period":"R1年度","baseline_scope":"snapshot","target_value":8,"target_unit":"位","target_period":"R8年度","target_scope":"snapshot","preferred_direction":"decrease"}
+      ],
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed"
+    },
+    {
+      "id": "policy-target-fukuoka-prefecture-initiative-01-06",
+      "target_number": 6,
+      "submeasure_title_original": "グローバル社会で活躍する青少年の育成",
+      "indicator_name_original": "中学校卒業段階でCEFR A1レベル相当（英検3級程度）以上を達成した生徒の割合［公立中学校］",
+      "components": [
+        {"label":null,"baseline_value":46.9,"baseline_unit":"%","baseline_period":"R1年度","baseline_scope":"snapshot","target_value":60,"target_unit":"%","target_period":"R8年度","target_scope":"snapshot","preferred_direction":"increase"}
+      ],
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed"
+    },
+    {
+      "id": "policy-target-fukuoka-prefecture-initiative-01-07",
+      "target_number": 7,
+      "submeasure_title_original": "グローバル社会で活躍する青少年の育成",
+      "indicator_name_original": "高等学校卒業段階でCEFR A2レベル相当（英検準2級程度）以上を達成した生徒の割合［県立高等学校］",
+      "components": [
+        {"label":null,"baseline_value":48.5,"baseline_unit":"%","baseline_period":"R1年度","baseline_scope":"snapshot","target_value":60,"target_unit":"%","target_period":"R8年度","target_scope":"snapshot","preferred_direction":"increase"}
+      ],
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed"
+    },
+    {
+      "id": "policy-target-fukuoka-prefecture-initiative-01-08",
+      "target_number": 8,
+      "submeasure_title_original": "産業人材の育成",
+      "indicator_name_original": "新たな成長分野における中核人材の育成人数",
+      "components": [
+        {"label":null,"baseline_value":1750,"baseline_unit":"人／年","baseline_period":"R2年度","baseline_scope":"annual","target_value":13000,"target_unit":"人","target_period":"R4–R8年度","target_scope":"five_year_cumulative","preferred_direction":"increase"}
+      ],
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed"
+    },
+    {
+      "id": "policy-target-fukuoka-prefecture-initiative-01-09",
+      "target_number": 9,
+      "submeasure_title_original": "産業人材の育成",
+      "indicator_name_original": "観光産業を支える人材の育成人数",
+      "components": [
+        {"label":null,"baseline_value":950,"baseline_unit":"人／年","baseline_period":"R2年度","baseline_scope":"annual","target_value":5000,"target_unit":"人","target_period":"R4–R8年度","target_scope":"five_year_cumulative","preferred_direction":"increase"}
+      ],
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed"
+    },
+    {
+      "id": "policy-target-fukuoka-prefecture-initiative-01-10",
+      "target_number": 10,
+      "submeasure_title_original": "産業人材の育成",
+      "indicator_name_original": "新規就業者数（農林漁業）",
+      "components": [
+        {"label":null,"baseline_value":500,"baseline_unit":"人／年","baseline_period":"R2年度","baseline_scope":"annual","target_value":2630,"target_unit":"人","target_period":"R4–R8年度","target_scope":"five_year_cumulative","preferred_direction":"increase"}
+      ],
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed"
+    }
+  ],
+  "reviewed_at": "2026-07-15",
+  "review_status": "reviewed",
+  "confidence": "high"
+}
