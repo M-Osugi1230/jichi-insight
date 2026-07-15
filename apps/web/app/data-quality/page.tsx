@@ -53,8 +53,9 @@ export default function DataQualityPage() {
           <h2>政策体系、年度進捗、評価を別の段階として公開する。</h2>
           <div className={styles.summaryGrid} aria-label="政策データ品質概要">
             <article className={styles.summaryCard}><span>Reviewed基本方向</span><strong>{snapshot.reviewedPolicyDirections}</strong><p>福岡県総合計画の4方向を原文・順序付きで登録。</p></article>
-            <article className={styles.summaryCard}><span>年度進捗へ接続済み</span><strong>{snapshot.policyDirectionsProgressLinked}</strong><p>30の取組事項と数値目標への対応付けは未実施。</p></article>
-            <article className={styles.summaryCard}><span>政策評価済み</span><strong>{snapshot.assessedPolicyDirections}</strong><p>計画文だけでは成果を評価しません。</p></article>
+            <article className={styles.summaryCard}><span>Reviewed取組事項</span><strong>{snapshot.reviewedPolicyInitiatives}</strong><p>公式目次の1番から30番までを原文で登録。</p></article>
+            <article className={styles.summaryCard}><span>年度進捗へ接続済み</span><strong>{snapshot.policyInitiativesProgressLinked}</strong><p>年度報告のKPI・実績との個別対応は未実施。</p></article>
+            <article className={styles.summaryCard}><span>政策評価済み</span><strong>{snapshot.assessedPolicyInitiatives}</strong><p>計画文と取組一覧だけでは成果を評価しません。</p></article>
           </div>
         </section>
 
