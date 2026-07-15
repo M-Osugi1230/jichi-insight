@@ -1,5 +1,9 @@
 import { sourceCatalog, type MunicipalityKey } from "./catalog";
-import { currentExecutiveTerms, executiveEvidencePackets } from "./executives";
+import {
+  currentExecutiveTerms,
+  executiveEvidencePackets,
+  manifestoReviewRecords,
+} from "./executives";
 import { fukuokaPrefectureFinance } from "./finance";
 import { fukuokaCityFinance } from "./fukuokaCityFinance";
 import { kitakyushuFinance } from "./kitakyushuFinance";
@@ -64,6 +68,11 @@ export const dataQualitySnapshot = {
   registeredManifestos: currentExecutiveTerms.filter(
     (term) => term.manifesto_source_ids.length > 0,
   ).length,
+  manifestoReviews: manifestoReviewRecords.length,
+  extractedPromiseRecords: manifestoReviewRecords.reduce(
+    (total, review) => total + review.promise_records_created,
+    0,
+  ),
   publicEvaluations: 0,
 };
 
