@@ -1,0 +1,161 @@
+[
+  {
+    "id": "evidence-full-digital-prefecture-project",
+    "subject_type": "project",
+    "subject_id": "jp-local-400009-project-2025-full-digital-prefecture",
+    "claims": [
+      {
+        "field": "purpose",
+        "statement": "行政手続のオンライン化・キャッシュレス化と庁内業務のデジタル化を通じ、県民利便性、行政効率、働き方改革、DX推進体制の確立を図る事業である。",
+        "source_ids": ["fukuoka-pref-project-evaluation-2025-detail-pdf"],
+        "location_note": "PDF19ページ目前後の事業内容、20ページ目の見直し理由。",
+        "decision": "accepted",
+        "review_note": "評価書に列挙された施策を要約。"
+      },
+      {
+        "field": "budget_records",
+        "statement": "事業費は2024年度決算75,056千円、2025年度当初402,516千円、2026年度当初435,467千円。",
+        "source_ids": ["fukuoka-pref-project-evaluation-2025-detail-pdf"],
+        "location_note": "PDF20ページ目『4 事業費』。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。年度と予算段階を分離。"
+      }
+    ],
+    "open_questions": [
+      "2025年度の補正後予算・執行額・決算額",
+      "事業全体の費目別内訳",
+      "利用件数、処理時間、県民満足度、職員生産性、セキュリティ指標"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-full-digital-kpi-2024",
+    "subject_type": "kpi",
+    "subject_id": "jp-local-400009-project-2025-full-digital-prefecture-kpi-online-payments-2024",
+    "claims": [
+      {
+        "field": "target_actual",
+        "statement": "オンライン納付可能な行政手続数は2024年度目標130件に対し実績314件で、行政評価は達成と判定した。",
+        "source_ids": ["fukuoka-pref-project-evaluation-2025-detail-pdf"],
+        "location_note": "PDF19〜20ページ目『3 成果指標及び進捗状況』。",
+        "decision": "accepted",
+        "review_note": "手続数の達成であり、利用率や費用対効果の達成を意味しない。"
+      }
+    ],
+    "open_questions": ["314手続の利用件数・決済額・処理時間短縮・利用者満足度"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-full-digital-kpi-2025",
+    "subject_type": "kpi",
+    "subject_id": "jp-local-400009-project-2025-full-digital-prefecture-kpi-online-payments-2025",
+    "claims": [
+      {
+        "field": "target_actual",
+        "statement": "2025年度目標は500件へ引き上げられ、行政評価作成時点の実績は調査中。",
+        "source_ids": ["fukuoka-pref-project-evaluation-2025-detail-pdf"],
+        "location_note": "PDF19〜20ページ目の成果指標表と目標見直し欄。",
+        "decision": "accepted",
+        "review_note": "調査中を0件や未達として扱わない。"
+      }
+    ],
+    "open_questions": ["2025年度の確定実績と達成要因"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-contract-remote-learning-operation",
+    "subject_type": "contract",
+    "subject_id": "jp-local-400009-contract-2025-remote-learning-operation",
+    "claims": [{"field":"amount_supplier","statement":"リモートラーニングシステム運用保守を株式会社インソース九州支社と7,920,000円で契約。","source_ids":["fukuoka-pref-contracts-2025-q1-planning-pdf"],"location_note":"PDF1ページ目の情報政策課契約欄。","decision":"accepted","review_note":"特命随意契約公表一覧の税込契約額。"}],
+    "open_questions": ["利用者数、受講完了率、研修効果、契約変更額"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-contract-rpa-maintenance",
+    "subject_type": "contract",
+    "subject_id": "jp-local-400009-contract-2025-rpa-maintenance",
+    "claims": [{"field":"amount_supplier","statement":"RPA保守をTIS株式会社と10,784,400円で契約。","source_ids":["fukuoka-pref-contracts-2025-q1-planning-pdf"],"location_note":"PDF2ページ目の情報政策課契約欄。","decision":"accepted","review_note":"特命随意契約公表一覧の税込契約額。"}],
+    "open_questions": ["自動化業務数、削減時間、エラー率、契約変更額"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-contract-paperless-meeting",
+    "subject_type": "contract",
+    "subject_id": "jp-local-400009-contract-2025-paperless-meeting",
+    "claims": [{"field":"amount_supplier","statement":"ペーパーレス会議システムをキッセイコムテック株式会社と1,980,000円で契約。","source_ids":["fukuoka-pref-contracts-2025-q1-planning-pdf"],"location_note":"PDF2ページ目の情報政策課契約欄。","decision":"accepted","review_note":"専用ライセンスを理由とする特命随意契約。"}],
+    "open_questions": ["利用会議数、紙削減量、利用者評価、契約変更額"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-contract-minutes-support",
+    "subject_type": "contract",
+    "subject_id": "jp-local-400009-contract-2025-minutes-support",
+    "claims": [{"field":"amount_supplier","statement":"会議録作成支援システムをエコー電子工業株式会社と3,036,000円で契約。","source_ids":["fukuoka-pref-contracts-2025-q1-planning-pdf"],"location_note":"PDF2ページ目の情報政策課契約欄。","decision":"accepted","review_note":"AmiVoice ScribeAssistの提供・保守を含む契約。"}],
+    "open_questions": ["利用会議数、作成時間短縮、認識精度、契約変更額"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-contract-internal-web-meeting",
+    "subject_type": "contract",
+    "subject_id": "jp-local-400009-contract-2025-internal-web-meeting",
+    "claims": [{"field":"amount_supplier","statement":"庁内ウェブ会議システム保守を株式会社QTnetと2,062,500円で契約。","source_ids":["fukuoka-pref-contracts-2025-q1-planning-pdf"],"location_note":"PDF2ページ目の情報政策課契約欄。","decision":"accepted","review_note":"システム開発事業者による運用保守。"}],
+    "open_questions": ["利用回数、移動時間・旅費削減、障害実績、契約変更額"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-contract-generative-ai-operation",
+    "subject_type": "contract",
+    "subject_id": "jp-local-400009-contract-2025-generative-ai-operation",
+    "claims": [{"field":"amount_supplier","statement":"福岡県生成AIチャットサービスの運用支援を株式会社QTnetと3,850,000円で契約。","source_ids":["fukuoka-pref-contracts-2025-q1-planning-pdf"],"location_note":"PDF3ページ目の情報政策課契約欄。","decision":"accepted","review_note":"安定運用支援に関する特命随意契約。"}],
+    "open_questions": ["利用職員数、利用件数、時間短縮、誤回答・情報管理、契約変更額"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-contract-electronic-application",
+    "subject_type": "contract",
+    "subject_id": "jp-local-400009-contract-2025-electronic-application",
+    "claims": [{"field":"amount_supplier","statement":"ふくおか電子申請サービスを株式会社HARPと7,722,000円で契約。","source_ids":["fukuoka-pref-contracts-2025-q1-planning-pdf"],"location_note":"PDF5ページ目の情報政策課契約欄。","decision":"accepted","review_note":"2021年度の企画提案公募で選定したサービスの継続利用。"}],
+    "open_questions": ["申請件数、完結率、処理時間、利用者満足度、契約変更額"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-contract-electronic-payment-pufure",
+    "subject_type": "contract",
+    "subject_id": "jp-local-400009-contract-2025-electronic-payment-pufure",
+    "claims": [{"field":"amount_supplier","statement":"電子決済サービスpufureを株式会社NTTデータと44,000円で契約。","source_ids":["fukuoka-pref-contracts-2025-q1-planning-pdf"],"location_note":"PDF5ページ目の情報政策課契約欄。","decision":"accepted","review_note":"Pay-easy決済を可能にするサービス。"}],
+    "open_questions": ["決済件数・金額、手数料全体、障害実績"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-contract-payment-collection",
+    "subject_type": "contract",
+    "subject_id": "jp-local-400009-contract-2025-payment-collection",
+    "claims": [{"field":"amount_supplier","statement":"クレジットカード決済の代金収納代行をウェルネット株式会社と11,000円で契約。","source_ids":["fukuoka-pref-contracts-2025-q1-planning-pdf"],"location_note":"PDF6ページ目の情報政策課契約欄。","decision":"accepted","review_note":"電子申請サービス指定事業者による収納代行。"}],
+    "open_questions": ["決済件数・金額、従量手数料、契約変更額"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-contract-electronic-storage-aggregation-operation",
+    "subject_type": "contract",
+    "subject_id": "jp-local-400009-contract-2025-electronic-storage-aggregation-operation",
+    "claims": [{"field":"amount_supplier","statement":"電子収納情報集約システム運用保守を株式会社KCCと6,270,000円で契約。","source_ids":["fukuoka-pref-contracts-2025-q1-planning-pdf"],"location_note":"PDF6ページ目の情報政策課契約欄。","decision":"accepted","review_note":"既存システムの運用保守に関する特命随意契約。"}],
+    "open_questions": ["収納件数、障害実績、運用サービス水準、契約変更額"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-contract-eltax-nontax-storage-modification",
+    "subject_type": "contract",
+    "subject_id": "jp-local-400009-contract-2025-eltax-nontax-storage-modification",
+    "claims": [{"field":"amount_supplier","statement":"eLTAX税外電子収納対応のシステム改修を株式会社KCCと3,245,000円で契約。","source_ids":["fukuoka-pref-contracts-2025-q1-planning-pdf"],"location_note":"PDF6ページ目の情報政策課契約欄。","decision":"accepted","review_note":"2025年6月13日締結の改修契約。"}],
+    "open_questions": ["対応手続数、稼働開始日、利用件数、契約変更額"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-contract-electronic-storage-management",
+    "subject_type": "contract",
+    "subject_id": "jp-local-400009-contract-2025-electronic-storage-management",
+    "claims": [{"field":"amount_supplier","statement":"電子収納の収納管理業務を株式会社福岡銀行と2,662,000円で契約。","source_ids":["fukuoka-pref-contracts-2025-q1-planning-pdf"],"location_note":"PDF6ページ目の情報政策課契約欄。","decision":"accepted","review_note":"指定金融機関による収納消込データ作成等。"}],
+    "open_questions": ["処理件数、エラー率、業務時間、契約変更額"],
+    "review_status": "reviewed"
+  }
+]
