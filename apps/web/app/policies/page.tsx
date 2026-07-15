@@ -14,7 +14,7 @@ import {
   policyInitiativeStats,
   sourcesForPolicyDirection,
 } from "@/lib/policies";
-import { allPolicyTargetStats } from "@/lib/policyTargets";
+import { allPolicyTargetStats, policyTargetPages } from "@/lib/policyTargets";
 
 import styles from "./page.module.css";
 
@@ -24,17 +24,15 @@ export const metadata: Metadata = {
     "福岡県総合計画の4つの基本方向と30の取組事項を、原文・掲載順・計画ページ・数値目標・未接続範囲とともに確認できます。",
 };
 
-const targetDetails: Record<number, { href: string; count: number }> = {
-  1: { href: "/policies/fukuoka-prefecture/initiatives/01", count: 10 },
-  2: { href: "/policies/fukuoka-prefecture/initiatives/02", count: 7 },
-  3: { href: "/policies/fukuoka-prefecture/initiatives/03", count: 1 },
-  4: { href: "/policies/fukuoka-prefecture/initiatives/04", count: 2 },
-  5: { href: "/policies/fukuoka-prefecture/initiatives/05", count: 2 },
-  6: { href: "/policies/fukuoka-prefecture/initiatives/06", count: 2 },
-  7: { href: "/policies/fukuoka-prefecture/initiatives/07", count: 4 },
-  8: { href: "/policies/fukuoka-prefecture/initiatives/08", count: 6 },
-  9: { href: "/policies/fukuoka-prefecture/initiatives/09", count: 6 },
-};
+const targetDetails = Object.fromEntries(
+  policyTargetPages.map((page) => [
+    Number(page.slug),
+    {
+      href: `/policies/fukuoka-prefecture/initiatives/${page.slug}`,
+      count: page.catalog.items.length,
+    },
+  ]),
+) as Record<number, { href: string; count: number }>;
 
 export default function PoliciesPage() {
   return (
@@ -44,14 +42,14 @@ export default function PoliciesPage() {
         <PageIntro eyebrow="Policy registry" title="政策評価の前に、計画が何を目指すかを構造化する。">
           <p>
             福岡県総合計画の4つの基本方向と30の取組事項を、公式目次の原文・掲載順で登録しています。
-            取組1から9は数値目標まで構造化しましたが、年度実績、予算、事業、公約との接続や達成度評価は行っていません。
+            取組1から10は数値目標まで構造化しましたが、年度実績、予算、事業、公約との接続や達成度評価は行っていません。
           </p>
         </PageIntro>
 
         <section className={styles.summaryGrid} aria-label="政策体系の整備状況">
           <article className={styles.summaryCard}><span>Reviewed基本方向</span><strong>{policyDirectionStats.reviewedDirections}</strong><p>福岡県総合計画の公式掲載順で登録。</p></article>
           <article className={styles.summaryCard}><span>Reviewed取組事項</span><strong>{policyInitiativeStats.reviewedInitiatives}</strong><p>目次PDFの1番から30番までを原文で登録。</p></article>
-          <article className={styles.summaryCard}><span>Reviewed数値目標</span><strong>{allPolicyTargetStats.reviewedTargets}</strong><p>取組1から9の指標1から40まで。</p></article>
+          <article className={styles.summaryCard}><span>Reviewed数値目標</span><strong>{allPolicyTargetStats.reviewedTargets}</strong><p>取組1から10の指標1から49まで。</p></article>
           <article className={styles.summaryCard}><span>年度実績へ接続済み</span><strong>{allPolicyTargetStats.actualsLinked}</strong><p>年度報告の実績との個別対応は次工程。</p></article>
           <article className={styles.summaryCard}><span>政策評価済み</span><strong>{policyInitiativeStats.assessed}</strong><p>計画文と目標値だけでは成果を評価しません。</p></article>
         </section>
@@ -134,7 +132,7 @@ export default function PoliciesPage() {
             <h2>取組と目標の一覧と、実際の成果はまだ別々です。</h2>
           </div>
           <ul>
-            <li>取組10から30の数値目標</li>
+            <li>取組11から30の数値目標</li>
             <li>2022–2024年度の実績推移</li>
             <li>関連する事業・予算・契約</li>
             <li>知事公約との根拠付き対応関係</li>
@@ -145,7 +143,7 @@ export default function PoliciesPage() {
         <section className="callout callout--dark">
           <div>
             <p className="eyebrow">Next extraction</p>
-            <h2>次は取組10以降の数値目標を順に接続する。</h2>
+            <h2>次は取組11以降の数値目標を順に接続する。</h2>
             <p>
               同じ公式数値目標PDFから、基準値、目標値、期間、単位を保存します。
               年度実績が確認できるまでは進捗率や評価点を表示しません。
