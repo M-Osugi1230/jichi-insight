@@ -39,6 +39,7 @@ routes=(
   "/municipalities/fukuoka-city/"
   "/municipalities/kitakyushu-city/"
   "/policies/"
+  "/policies/fukuoka-prefecture/initiatives/01/"
   "/policy-sources/"
   "/sources/"
   "/robots.txt"
@@ -76,10 +77,11 @@ check_content() {
   done
 }
 check_content "/data-quality/" \
-  "政策体系、年度進捗、評価を別の段階として公開する。" \
+  "政策体系、数値目標、年度実績、評価を別の段階として公開する。" \
   "Reviewed基本方向" \
   "Reviewed取組事項" \
-  "年度進捗へ接続済み" \
+  "Reviewed数値目標" \
+  "年度実績へ接続済み" \
   "政策評価済み" \
   "首長分野は、任期・探索・公約資料・分割レビュー・評価を分ける。" \
   "Reviewed現職任期" \
@@ -107,12 +109,19 @@ check_content "/executives/source-requests/" \
 check_content "/policies/" \
   "政策評価の前に、計画が何を目指すかを構造化する。" \
   "4つの基本方向と30の取組事項" \
-  "Reviewed取組事項" \
+  "数値目標10件" \
   "中小企業の振興" \
   "出会い・結婚・出産・子育て支援" \
   "生活と産業の発展を支える社会基盤の整備" \
-  "取組の一覧と、実際の成果はまだ別々です。" \
-  "次は30取組に、年度実績と数値目標を接続する。"
+  "取組の一覧と、実際の成果はまだ別々です。"
+check_content "/policies/fukuoka-prefecture/initiatives/01/" \
+  "次代を担う「人財」の育成" \
+  "Reviewed数値目標" \
+  "基準値と目標値を、期間単位まで分けて見る。" \
+  "国民体育大会における男女総合成績順位" \
+  "年次値と5年間累計をそのまま達成率へ変換しません。" \
+  "目標を設定したことと、成果を上げたことは別です。" \
+  "次は10指標へ、年度別実績と公式説明を接続する。"
 check_content "/policy-sources/" \
   "集められる政策資料から、先に形にする。" \
   "計画から支出と成果まで、順番につなぐ。" \
