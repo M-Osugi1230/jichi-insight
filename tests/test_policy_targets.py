@@ -149,7 +149,10 @@ def test_target_values_preserve_components_period_scopes_and_missing_baselines()
     assert (migration["baseline_value"], migration["target_value"]) == (876, 5000)
     assert migration["baseline_scope"] == "annual"
     assert migration["target_scope"] == "five_year_cumulative"
-    assert (fan_club["baseline_value"], fan_club["target_value"]) == (2270, 8000)
+    assert (fan_club["baseline_value"], fan_club["target_value"]) == (
+        2270,
+        8000,
+    )
     assert fan_club["baseline_scope"] == "cumulative"
     assert fan_club["target_scope"] == "cumulative"
 
@@ -166,9 +169,15 @@ def test_target_values_preserve_components_period_scopes_and_missing_baselines()
     initiative_06 = load(TARGET_CATALOG_PATHS[5])["items"]
     emissions = initiative_06[0]["components"][0]
     renewable = initiative_06[1]["components"][0]
-    assert (emissions["baseline_value"], emissions["target_value"]) == (22.9, 38.3)
+    assert (emissions["baseline_value"], emissions["target_value"]) == (
+        22.9,
+        38.3,
+    )
     assert emissions["baseline_period"] == "H30年度"
-    assert (renewable["baseline_value"], renewable["target_value"]) == (269, 405)
+    assert (renewable["baseline_value"], renewable["target_value"]) == (
+        269,
+        405,
+    )
     assert renewable["target_unit"] == "万kW"
 
     initiative_07 = load(TARGET_CATALOG_PATHS[6])["items"]
@@ -192,7 +201,12 @@ def test_target_values_preserve_components_period_scopes_and_missing_baselines()
         150,
         250,
     ]
-    for item in (initiative_08[0], initiative_08[2], initiative_08[3], initiative_08[4]):
+    for item in (
+        initiative_08[0],
+        initiative_08[2],
+        initiative_08[3],
+        initiative_08[4],
+    ):
         component = item["components"][0]
         assert component["baseline_scope"] == "annual"
         assert component["target_scope"] == "five_year_cumulative"
@@ -213,7 +227,10 @@ def test_target_values_preserve_components_period_scopes_and_missing_baselines()
     ]
     assert initiative_09[0]["components"][0]["target_scope"] == "cumulative"
     assert initiative_09[1]["components"][0]["target_scope"] == "annual"
-    assert initiative_09[2]["components"][0]["target_scope"] == "five_year_cumulative"
+    assert (
+        initiative_09[2]["components"][0]["target_scope"]
+        == "five_year_cumulative"
+    )
     assert initiative_09[3]["components"][0]["target_scope"] == "cumulative"
     assert initiative_09[4]["components"][0]["baseline_value"] is None
     assert initiative_09[4]["components"][0]["baseline_scope"] == "not_available"
@@ -240,7 +257,13 @@ def test_target_values_preserve_components_period_scopes_and_missing_baselines()
         component = item["components"][0]
         assert component["baseline_scope"] == "cumulative"
         assert component["target_scope"] == "cumulative"
-    for item in (initiative_10[0], initiative_10[1], initiative_10[5], initiative_10[6], initiative_10[7]):
+    for item in (
+        initiative_10[0],
+        initiative_10[1],
+        initiative_10[5],
+        initiative_10[6],
+        initiative_10[7],
+    ):
         component = item["components"][0]
         assert component["baseline_scope"] == "annual"
         assert component["target_scope"] == "annual"
@@ -271,7 +294,10 @@ def test_relisted_targets_are_not_duplicated():
         for item in all_items
     ) == 1
     assert initiative_10_names.count("旅行消費単価（日本人）") == 1
-    assert initiative_10_names.count("旅行消費単価（通常入国外国人）") == 1
+    assert (
+        initiative_10_names.count("旅行消費単価（通常入国外国人）")
+        == 1
+    )
     assert initiative_10_names.count("リピーター率") == 1
     assert "延べ宿泊者数（外国人）" not in initiative_10_names
     assert sum(
@@ -283,16 +309,17 @@ def test_relisted_targets_are_not_duplicated():
 def test_policy_target_sources_initiatives_and_evidence_are_complete():
     catalogs = [load(path) for path in TARGET_CATALOG_PATHS]
     packets = [load(path) for path in TARGET_EVIDENCE_PATHS]
-    source_ids = {
-        source["id"] for source in load("data/catalog/policy_sources.json")["records"]
-    }
+    source_catalog = load("data/catalog/policy_sources.json")
+    source_ids = {source["id"] for source in source_catalog["records"]}
     initiative_ids = {
         item["id"]
         for item in load(
             "data/entities/policy/fukuoka_prefecture_policy_initiatives.json"
         )["items"]
     }
-    assert {catalog["policy_initiative_id"] for catalog in catalogs} <= initiative_ids
+    assert {
+        catalog["policy_initiative_id"] for catalog in catalogs
+    } <= initiative_ids
     assert {packet["subject_id"] for packet in packets} == {
         catalog["id"] for catalog in catalogs
     }
