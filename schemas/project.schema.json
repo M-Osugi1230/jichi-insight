@@ -31,24 +31,10 @@
       "minimum": 1900,
       "maximum": 2200
     },
-    "official_title": {
-      "type": "string",
-      "minLength": 1
-    },
-    "plain_title": {
-      "type": "string",
-      "minLength": 1
-    },
-    "purpose": {
-      "type": "string",
-      "minLength": 1
-    },
-    "target_population": {
-      "type": [
-        "string",
-        "null"
-      ]
-    },
+    "official_title": {"type": "string", "minLength": 1},
+    "plain_title": {"type": "string", "minLength": 1},
+    "purpose": {"type": "string", "minLength": 1},
+    "target_population": {"type": ["string", "null"]},
     "policy_area": {
       "type": "string",
       "enum": [
@@ -76,9 +62,7 @@
     },
     "related_promise_ids": {
       "type": "array",
-      "items": {
-        "type": "string"
-      },
+      "items": {"type": "string"},
       "uniqueItems": true
     },
     "budget_records": {
@@ -87,39 +71,15 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": [
-          "kind",
-          "amount_yen",
-          "fiscal_year"
-        ],
+        "required": ["kind", "amount_yen", "fiscal_year"],
         "properties": {
           "kind": {
             "type": "string",
-            "enum": [
-              "initial_budget",
-              "revised_budget",
-              "execution",
-              "settlement"
-            ]
+            "enum": ["initial_budget", "revised_budget", "execution", "settlement"]
           },
-          "amount_yen": {
-            "type": [
-              "integer",
-              "null"
-            ],
-            "minimum": 0
-          },
-          "fiscal_year": {
-            "type": "integer",
-            "minimum": 1900,
-            "maximum": 2200
-          },
-          "note": {
-            "type": [
-              "string",
-              "null"
-            ]
-          }
+          "amount_yen": {"type": ["integer", "null"], "minimum": 0},
+          "fiscal_year": {"type": "integer", "minimum": 1900, "maximum": 2200},
+          "note": {"type": ["string", "null"]}
         }
       }
     },
@@ -128,44 +88,13 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": [
-          "name",
-          "unit",
-          "baseline",
-          "target",
-          "actual",
-          "assessment"
-        ],
+        "required": ["name", "unit", "baseline", "target", "actual", "assessment"],
         "properties": {
-          "name": {
-            "type": "string",
-            "minLength": 1
-          },
-          "unit": {
-            "type": "string",
-            "minLength": 1
-          },
-          "baseline": {
-            "type": [
-              "number",
-              "string",
-              "null"
-            ]
-          },
-          "target": {
-            "type": [
-              "number",
-              "string",
-              "null"
-            ]
-          },
-          "actual": {
-            "type": [
-              "number",
-              "string",
-              "null"
-            ]
-          },
+          "name": {"type": "string", "minLength": 1},
+          "unit": {"type": "string", "minLength": 1},
+          "baseline": {"type": ["number", "string", "null"]},
+          "target": {"type": ["number", "string", "null"]},
+          "actual": {"type": ["number", "string", "null"]},
           "assessment": {
             "type": "string",
             "enum": [
@@ -182,29 +111,15 @@
     },
     "review_status": {
       "type": "string",
-      "enum": [
-        "verified",
-        "reviewed",
-        "extracted",
-        "inferred",
-        "missing"
-      ]
+      "enum": ["verified", "reviewed", "extracted", "inferred", "missing"]
     },
     "confidence": {
       "type": "string",
-      "enum": [
-        "high",
-        "medium",
-        "low",
-        "not_assessable"
-      ]
+      "enum": ["high", "medium", "low", "not_assessable"]
     },
     "sources": {
       "type": "array",
-      "items": {
-        "type": "string",
-        "pattern": "^source-[a-z0-9-]+$"
-      },
+      "items": {"type": "string", "pattern": "^[a-z0-9-]+$"},
       "minItems": 1,
       "uniqueItems": true
     }
