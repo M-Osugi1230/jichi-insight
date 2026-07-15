@@ -4,6 +4,7 @@ const siteUrl = "https://m-osugi1230.github.io/jichi-insight";
 const routes = [
   "",
   "/about",
+  "/compare",
   "/corrections",
   "/data-quality",
   "/methodology",
@@ -21,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${siteUrl}${route}`,
     lastModified: new Date("2026-07-15"),
     changeFrequency: route === "" ? "weekly" : "monthly",
-    priority: route === "" ? 1 : route.startsWith("/municipalities/") ? 0.9 : 0.8,
+    priority:
+      route === "" ? 1 : route === "/compare" || route.startsWith("/municipalities/") ? 0.9 : 0.8,
   }));
 }
