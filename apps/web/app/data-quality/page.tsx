@@ -49,6 +49,16 @@ export default function DataQualityPage() {
         </section>
 
         <section className="contentSection">
+          <p className="eyebrow">Policy data readiness</p>
+          <h2>政策体系、年度進捗、評価を別の段階として公開する。</h2>
+          <div className={styles.summaryGrid} aria-label="政策データ品質概要">
+            <article className={styles.summaryCard}><span>Reviewed基本方向</span><strong>{snapshot.reviewedPolicyDirections}</strong><p>福岡県総合計画の4方向を原文・順序付きで登録。</p></article>
+            <article className={styles.summaryCard}><span>年度進捗へ接続済み</span><strong>{snapshot.policyDirectionsProgressLinked}</strong><p>30の取組事項と数値目標への対応付けは未実施。</p></article>
+            <article className={styles.summaryCard}><span>政策評価済み</span><strong>{snapshot.assessedPolicyDirections}</strong><p>計画文だけでは成果を評価しません。</p></article>
+          </div>
+        </section>
+
+        <section className="contentSection">
           <p className="eyebrow">Executive evidence readiness</p>
           <h2>首長分野は、任期・探索・公約資料・分割レビュー・評価を分ける。</h2>
           <div className={styles.summaryGrid} aria-label="首長データ品質概要">

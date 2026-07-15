@@ -38,6 +38,7 @@ routes=(
   "/municipalities/fukuoka-prefecture/"
   "/municipalities/fukuoka-city/"
   "/municipalities/kitakyushu-city/"
+  "/policies/"
   "/policy-sources/"
   "/sources/"
   "/robots.txt"
@@ -98,6 +99,14 @@ check_content "/executives/source-requests/" \
   "照会案2件。送信済み0件。回答受領0件。" \
   "この文案は未送信です。" \
   "明示承認前は送信しません。"
+check_content "/policies/" \
+  "政策評価の前に、計画が何を目指すかを構造化する。" \
+  "福岡県総合計画の4つの基本方向" \
+  "世界を視野に、未来を見据えて成長し、発展する" \
+  "感染症や災害に負けない強靭な社会をつくる" \
+  "年度進捗へ接続済み" \
+  "政策評価済み" \
+  "計画の方向と、実際の成果はまだ別々です。"
 check_content "/policy-sources/" \
   "集められる政策資料から、先に形にする。" \
   "計画から支出と成果まで、順番につなぐ。" \

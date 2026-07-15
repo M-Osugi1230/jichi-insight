@@ -3,6 +3,7 @@ import Link from "next/link";
 const navigation = [
   { href: "/municipalities", label: "自治体" },
   { href: "/compare", label: "都市比較" },
+  { href: "/policies", label: "政策" },
   { href: "/executives", label: "首長" },
   { href: "/executives/source-requests", label: "照会案" },
   { href: "/assemblies", label: "議会" },
