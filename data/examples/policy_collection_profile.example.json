@@ -1,0 +1,22 @@
+{
+  "id": "policy-profile-example-city",
+  "municipality_key": "fukuoka-city",
+  "capabilities": [
+    {
+      "dimension": "strategic_directions",
+      "availability": "confirmed",
+      "count": 3,
+      "period_start": 2025,
+      "period_end": 2030,
+      "statement": "架空市の計画は3つの基本方向で構成される。",
+      "source_ids": ["policy-source-example-city-plan"],
+      "location_note": "架空資料の構成欄。"
+    }
+  ],
+  "extraction_readiness": "high",
+  "next_priority": "架空の施策とKPIを抽出する。",
+  "caveats": ["Schema検証専用の架空データ。"],
+  "reviewed_at": "2026-07-15",
+  "review_status": "reviewed",
+  "confidence": "high"
+}
