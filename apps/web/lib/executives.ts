@@ -3,6 +3,8 @@ import evidencePackets from "../../../data/entities/executives/evidence_packets.
 import executiveTerms from "../../../data/entities/executives/executive_terms.json";
 import manifestoReviewPackets from "../../../data/entities/executives/manifesto_review_evidence_packets.json";
 import manifestoReviews from "../../../data/entities/executives/manifesto_reviews.json";
+import manifestoSourceSearchPackets from "../../../data/entities/executives/manifesto_source_search_evidence_packets.json";
+import manifestoSourceSearches from "../../../data/entities/executives/manifesto_source_searches.json";
 
 import { municipalityMeta, sourceCatalog, type SourceRecord } from "./catalog";
 
@@ -21,18 +23,20 @@ export type ExecutiveTerm = {
   sources: string[];
 };
 
+export type EvidenceClaim = {
+  field: string;
+  statement: string;
+  source_ids: string[];
+  location_note: string | null;
+  decision: "accepted" | "rejected" | "needs_review" | "not_assessable";
+  review_note: string | null;
+};
+
 export type ExecutiveEvidencePacket = {
   id: string;
   subject_type: "executive_term";
   subject_id: string;
-  claims: Array<{
-    field: string;
-    statement: string;
-    source_ids: string[];
-    location_note: string | null;
-    decision: "accepted" | "rejected" | "needs_review" | "not_assessable";
-    review_note: string | null;
-  }>;
+  claims: EvidenceClaim[];
   open_questions: string[];
   review_status: "reviewed" | "verified";
 };
@@ -58,7 +62,41 @@ export type ManifestoReviewEvidencePacket = {
   id: string;
   subject_type: "manifesto_review";
   subject_id: string;
-  claims: ExecutiveEvidencePacket["claims"];
+  claims: EvidenceClaim[];
+  open_questions: string[];
+  review_status: "reviewed" | "verified";
+};
+
+export type ManifestoSourceSearch = {
+  id: string;
+  executive_term_id: string;
+  searched_at: string;
+  search_scopes: Array<
+    | "official_election_result_page"
+    | "official_site_search"
+    | "official_document_archive"
+    | "candidate_publication_search"
+    | "general_web_search"
+  >;
+  result_status:
+    | "source_registered"
+    | "official_result_only"
+    | "no_stable_primary_source_found"
+    | "follow_up_required";
+  manifesto_source_ids_found: string[];
+  checked_source_ids: string[];
+  nonexistence_claim: false;
+  review_note: string;
+  next_actions: string[];
+  review_status: "reviewed" | "verified";
+  confidence: "high" | "medium" | "low" | "not_assessable";
+};
+
+export type ManifestoSourceSearchEvidencePacket = {
+  id: string;
+  subject_type: "manifesto_source_search";
+  subject_id: string;
+  claims: EvidenceClaim[];
   open_questions: string[];
   review_status: "reviewed" | "verified";
 };
@@ -79,6 +117,10 @@ export const executiveEvidencePackets = evidencePackets as ExecutiveEvidencePack
 export const manifestoReviewRecords = manifestoReviews as ManifestoReview[];
 export const manifestoReviewEvidencePackets =
   manifestoReviewPackets as ManifestoReviewEvidencePacket[];
+export const manifestoSourceSearchRecords =
+  manifestoSourceSearches as ManifestoSourceSearch[];
+export const manifestoSourceSearchEvidencePackets =
+  manifestoSourceSearchPackets as ManifestoSourceSearchEvidencePacket[];
 
 export function executiveMunicipality(term: ExecutiveTerm) {
   const key = municipalityIdToKey[term.municipality_id as keyof typeof municipalityIdToKey];
@@ -109,6 +151,18 @@ export function manifestoReviewForExecutive(term: ExecutiveTerm) {
 export function evidenceForManifestoReview(review: ManifestoReview) {
   return manifestoReviewEvidencePackets.find(
     (packet) => packet.subject_id === review.id,
+  );
+}
+
+export function manifestoSourceSearchForExecutive(term: ExecutiveTerm) {
+  return manifestoSourceSearchRecords.find(
+    (search) => search.executive_term_id === term.id,
+  );
+}
+
+export function evidenceForManifestoSourceSearch(search: ManifestoSourceSearch) {
+  return manifestoSourceSearchEvidencePackets.find(
+    (packet) => packet.subject_id === search.id,
   );
 }
 
