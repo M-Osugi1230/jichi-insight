@@ -5,9 +5,9 @@
   "claims": [
     {
       "field": "target_count",
-      "statement": "取組事項15『高齢者、障がいのある人への支援』には、数値目標74から76までの3指標が掲載されている。",
+      "statement": "取組事項15『高齢者、障がいのある人への支援』には、数値目標74から82までの9指標が2ページにわたって掲載されている。",
       "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
-      "location_note": "数値目標PDFの6ページ目、印刷ページ320、指標74から76。",
+      "location_note": "数値目標PDFの6から7ページ目、印刷ページ320から321、指標74から82。",
       "decision": "accepted",
       "review_note": null
     },
@@ -20,19 +20,45 @@
       "review_note": "減少目標は条件型、40%以上は下限型として保存する。"
     },
     {
+      "field": "disability_education_and_employment",
+      "statement": "障がいのある人の委託訓練就職率は53.7%から60.0%、県内ハローワークの新規求職申込件数に対する就職率は44.5%から48.0%を目標としている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの7ページ目、指標77から78。",
+      "decision": "accepted",
+      "review_note": "就職率ごとに分母、就職確認時点、対象訓練・求職者が異なる可能性を保持する。"
+    },
+    {
+      "field": "community_living_support",
+      "statement": "障がい福祉サービス従事者研修の受講者数は6,610人から6,874人、認定補聴器技能者配置率は6.3%から20.0%を目標としている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの7ページ目、指標79から80。",
+      "decision": "accepted",
+      "review_note": "研修受講者数と事業者配置率は異なる母集団・集計方法として扱う。"
+    },
+    {
+      "field": "arts_and_rights",
+      "statement": "県障がい者芸術文化活動支援センターによる支援件数は当初値なしで5年間累計2,250件、相談支援専門員研修受講者数は616人から790人を目標としている。",
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+      "location_note": "数値目標PDFの7ページ目、指標81から82。",
+      "decision": "accepted",
+      "review_note": "指標81の当初値はダッシュ表記であり、0として扱わない。"
+    },
+    {
       "field": "actual_results",
-      "statement": "年度実施状況報告にある指標74から76の実績との個別対応は未確認である。",
+      "statement": "年度実施状況報告にある指標74から82の実績との個別対応は未確認である。",
       "source_ids": ["policy-source-fukuoka-pref-progress-reports", "policy-source-fukuoka-pref-progress-2024-pdf"],
       "location_note": "年度実施状況報告の数値目標進捗を今後確認する。",
       "decision": "needs_review",
-      "review_note": "低栄養傾向の判定、満足度調査の回答者、企業割合の対象母集団を確認してから接続する。"
+      "review_note": "各割合の母数、研修受講者の重複、支援件数の定義、年度帰属を確認してから接続する。"
     }
   ],
   "open_questions": [
     "低栄養傾向の基準、対象施設、測定時点を確認する必要がある。",
     "利用満足度の調査票、回答率、無回答の扱いを確認する必要がある。",
-    "70歳まで働ける企業割合の対象企業規模と制度要件を確認する必要がある。",
-    "取組事項名に含まれる障がいのある人への支援について、このページに固有数値目標が掲載されているか次ページも確認する必要がある。"
+    "委託訓練・ハローワーク就職率の分母と就職確認時点を確認する必要がある。",
+    "研修受講者数で同一人物が年度内・年度間に重複計上される条件を確認する必要がある。",
+    "認定補聴器技能者配置率の対象事業者と認定有効期間を確認する必要がある。",
+    "芸術文化活動支援センターの支援件数の対象行為と重複計上ルールを確認する必要がある。"
   ],
   "review_status": "reviewed"
 }
