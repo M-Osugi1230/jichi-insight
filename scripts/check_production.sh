@@ -48,6 +48,7 @@ routes=(
   "/policies/fukuoka-prefecture/initiatives/07/"
   "/policies/fukuoka-prefecture/initiatives/08/"
   "/policies/fukuoka-prefecture/initiatives/09/"
+  "/policies/fukuoka-prefecture/initiatives/10/"
   "/policy-sources/"
   "/sources/"
   "/robots.txt"
@@ -89,7 +90,7 @@ check_content "/data-quality/" \
   "Reviewed基本方向" \
   "Reviewed取組事項" \
   "Reviewed数値目標" \
-  "取組1から9の基準値・目標値40件" \
+  "取組1から10の基準値・目標値49件" \
   "年度実績へ接続済み" \
   "政策評価済み" \
   "首長分野は、任期・探索・公約資料・分割レビュー・評価を分ける。" \
@@ -118,13 +119,14 @@ check_content "/executives/source-requests/" \
 check_content "/policies/" \
   "政策評価の前に、計画が何を目指すかを構造化する。" \
   "4つの基本方向と30の取組事項" \
-  "取組1から9の指標1から40まで" \
+  "取組1から10の番号付き指標1から49まで" \
   "数値目標10件" \
   "数値目標7件" \
   "数値目標1件" \
   "数値目標2件" \
   "数値目標4件" \
   "数値目標6件" \
+  "数値目標9件" \
   "取組と目標の一覧と、実際の成果はまだ別々です。"
 check_content "/policies/fukuoka-prefecture/initiatives/01/" \
   "次代を担う「人財」の育成" \
@@ -175,6 +177,14 @@ check_content "/policies/fukuoka-prefecture/initiatives/09/" \
   "ワンヘルスの実践に取り組む経営体数（農林漁業）" \
   "6,000経営体" \
   "当初値は公式資料でダッシュ表記です。0とは扱わず"
+check_content "/policies/fukuoka-prefecture/initiatives/10/" \
+  "地域と調和した観光産業の振興" \
+  "旅行消費単価（日本人）" \
+  "旅行消費単価（通常入国外国人）" \
+  "県の観光情報SNSフォロワー数（国内向け）" \
+  "延べ宿泊者数（日本人）" \
+  "50,800円" \
+  "17団体"
 check_content "/policy-sources/" \
   "集められる政策資料から、先に形にする。" \
   "計画から支出と成果まで、順番につなぐ。" \
