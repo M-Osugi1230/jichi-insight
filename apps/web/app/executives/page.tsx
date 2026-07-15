@@ -26,7 +26,7 @@ export default function ExecutivesPage() {
     (term) => term.manifesto_source_ids.length > 0,
   ).length;
   const electionResultsReady = currentExecutiveTerms.filter(
-    (term) => sourcesForExecutive(term).some((source) => source.category === "election_result"),
+    (term) => sourcesForExecutive(term).some((source) => source.category === "election"),
   ).length;
 
   return (
