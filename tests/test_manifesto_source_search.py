@@ -18,6 +18,18 @@ def validate(schema_path, value):
     return list(validator.iter_errors(value))
 
 
+def test_manifesto_source_search_fixture_is_registered_and_linked():
+    fixture = load("data/examples/manifesto_source_search.example.json")
+    executive_term = load("data/examples/executive_term.example.json")
+    source = load("data/examples/source.example.json")
+
+    assert validate("schemas/manifesto_source_search.schema.json", fixture) == []
+    assert fixture["executive_term_id"] == executive_term["id"]
+    assert set(fixture["checked_source_ids"]) == {source["id"]}
+    assert fixture["manifesto_source_ids_found"] == []
+    assert fixture["nonexistence_claim"] is False
+
+
 def test_manifesto_source_searches_match_contract_and_safety_boundary():
     searches = load("data/entities/executives/manifesto_source_searches.json")
 
