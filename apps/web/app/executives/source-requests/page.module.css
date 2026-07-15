@@ -1,0 +1,136 @@
+.summaryGrid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 88px;
+}
+
+.summaryCard,
+.requestCard {
+  background: #fff;
+  border: 1px solid #d6d5ce;
+  border-radius: 20px;
+  padding: 26px;
+}
+
+.summaryCard span {
+  color: #676960;
+  display: block;
+  font-size: 0.74rem;
+}
+
+.summaryCard strong {
+  display: block;
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  margin: 28px 0 8px;
+}
+
+.summaryCard p {
+  border-top: 1px solid #d6d5ce;
+  color: #676960;
+  font-size: 0.8rem;
+  margin: 16px 0 0;
+  padding-top: 14px;
+}
+
+.requestList {
+  display: grid;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.cardHeader {
+  align-items: flex-start;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.cardHeader p {
+  color: #676960;
+  font-size: 0.76rem;
+  margin-bottom: 7px;
+}
+
+.cardHeader h3 {
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  margin: 0;
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 30px 0 0;
+}
+
+.facts div {
+  border-top: 1px solid #d6d5ce;
+  padding: 14px 10px 0 0;
+}
+
+.facts dt,
+.block > p,
+.draft > p {
+  color: #676960;
+  font-size: 0.7rem;
+  font-weight: 750;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.facts dd {
+  font-size: 0.85rem;
+  font-weight: 750;
+  margin: 5px 0 0;
+}
+
+.block,
+.draft {
+  border-top: 1px solid #d6d5ce;
+  margin-top: 26px;
+  padding-top: 18px;
+}
+
+.block ul {
+  margin: 10px 0 0;
+  padding-left: 20px;
+}
+
+.block li {
+  color: #565951;
+  font-size: 0.84rem;
+  margin-top: 7px;
+}
+
+.draft strong {
+  display: block;
+  font-size: 1rem;
+  margin: 10px 0 24px;
+}
+
+.draft div {
+  background: #f5f4ed;
+  border-radius: 14px;
+  font-size: 0.88rem;
+  line-height: 1.85;
+  padding: 20px;
+}
+
+@media (max-width: 900px) {
+  .summaryGrid,
+  .facts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .summaryGrid,
+  .facts {
+    grid-template-columns: 1fr;
+  }
+
+  .cardHeader {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}

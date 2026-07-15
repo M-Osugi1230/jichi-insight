@@ -4,6 +4,7 @@ const navigation = [
   { href: "/municipalities", label: "自治体" },
   { href: "/compare", label: "都市比較" },
   { href: "/executives", label: "首長" },
+  { href: "/executives/source-requests", label: "照会案" },
   { href: "/assemblies", label: "議会" },
   { href: "/sources", label: "公式資料" },
   { href: "/data-quality", label: "データ品質" },
