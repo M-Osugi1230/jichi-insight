@@ -1,0 +1,194 @@
+.summaryGrid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 88px;
+}
+
+.summaryCard,
+.directionCard {
+  background: #fff;
+  border: 1px solid #d6d5ce;
+  border-radius: 20px;
+}
+
+.summaryCard {
+  padding: 24px;
+}
+
+.summaryCard span {
+  color: #676960;
+  display: block;
+  font-size: 0.74rem;
+}
+
+.summaryCard strong {
+  display: block;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  letter-spacing: -0.06em;
+  margin: 28px 0 8px;
+}
+
+.summaryCard p {
+  border-top: 1px solid #d6d5ce;
+  color: #676960;
+  font-size: 0.78rem;
+  margin: 18px 0 0;
+  padding-top: 14px;
+}
+
+.directionGrid {
+  display: grid;
+  gap: 18px;
+  margin-top: 42px;
+}
+
+.directionCard {
+  display: grid;
+  gap: 34px;
+  grid-template-columns: 110px minmax(0, 1fr) minmax(280px, 0.65fr);
+  padding: 28px;
+}
+
+.order {
+  color: #173f35;
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-weight: 800;
+  letter-spacing: -0.08em;
+  line-height: 0.9;
+}
+
+.directionMain > p:first-child {
+  color: #765b12;
+  font-size: 0.68rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+}
+
+.directionMain h3 {
+  font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+  line-height: 1.35;
+  margin: 0;
+}
+
+.directionMain > p:last-of-type {
+  color: #676960;
+  font-size: 0.82rem;
+  line-height: 1.8;
+  margin: 20px 0 0;
+}
+
+.directionMain a {
+  color: #173f35;
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 750;
+  margin-top: 18px;
+  text-underline-offset: 4px;
+}
+
+.directionFacts {
+  margin: 0;
+}
+
+.directionFacts div {
+  align-items: baseline;
+  border-top: 1px solid #d6d5ce;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  padding: 13px 0;
+}
+
+.directionFacts dt {
+  color: #676960;
+  font-size: 0.7rem;
+}
+
+.directionFacts dd {
+  font-size: 0.78rem;
+  font-weight: 750;
+  margin: 0;
+  text-align: right;
+}
+
+.questions {
+  border-top: 1px solid #d6d5ce;
+  grid-column: 2 / 4;
+  padding-top: 20px;
+}
+
+.questions > p {
+  color: #676960;
+  font-size: 0.68rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.questions ul {
+  margin: 12px 0 0;
+  padding-left: 20px;
+}
+
+.questions li {
+  color: #676960;
+  font-size: 0.8rem;
+  margin-top: 7px;
+}
+
+.boundary {
+  display: grid;
+  gap: 48px;
+  grid-template-columns: 0.8fr 1.2fr;
+}
+
+.boundary ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.boundary li {
+  border-top: 1px solid #d6d5ce;
+  padding: 15px 0;
+}
+
+.boundary li::before {
+  color: #765b12;
+  content: "未接続";
+  display: inline-block;
+  font-size: 0.64rem;
+  font-weight: 750;
+  margin-right: 12px;
+}
+
+@media (max-width: 900px) {
+  .directionCard {
+    grid-template-columns: 70px 1fr;
+  }
+
+  .directionFacts,
+  .questions {
+    grid-column: 2;
+  }
+
+  .boundary {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .summaryGrid,
+  .directionCard {
+    grid-template-columns: 1fr;
+  }
+
+  .directionFacts,
+  .questions {
+    grid-column: 1;
+  }
+}
