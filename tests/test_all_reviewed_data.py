@@ -16,7 +16,10 @@ def load_json(path: Path) -> Any:
 
 def validate(schema_path: str, instance: Any) -> list[str]:
     schema = load_json(ROOT / schema_path)
-    validator = Draft202012Validator(schema, format_checker=FormatChecker())
+    validator = Draft202012Validator(
+        schema,
+        format_checker=FormatChecker(),
+    )
     return [error.message for error in validator.iter_errors(instance)]
 
 
@@ -33,8 +36,11 @@ def referenced_sources(value: Any) -> set[str]:
     result: set[str] = set()
     if isinstance(value, dict):
         for key, child in value.items():
-            if key in {"sources", "source_ids", "manifesto_source_ids"} and isinstance(child, list):
-                result.update(item for item in child if isinstance(item, str))
+            source_keys = {"sources", "source_ids", "manifesto_source_ids"}
+            if key in source_keys and isinstance(child, list):
+                result.update(
+                    item for item in child if isinstance(item, str)
+                )
             result.update(referenced_sources(child))
     elif isinstance(value, list):
         for child in value:
@@ -45,7 +51,9 @@ def referenced_sources(value: Any) -> set[str]:
 def test_all_reviewed_municipalities_have_complete_evidence() -> None:
     known_sources = source_ids()
     reviewed_root = ROOT / "data" / "reviewed"
-    municipalities = sorted(path for path in reviewed_root.iterdir() if path.is_dir())
+    municipalities = sorted(
+        path for path in reviewed_root.iterdir() if path.is_dir()
+    )
     assert [path.name for path in municipalities] == [
         "fukuoka-city",
         "fukuoka-prefecture",
@@ -58,27 +66,51 @@ def test_all_reviewed_municipalities_have_complete_evidence() -> None:
 
     for directory in municipalities:
         municipality = load_json(directory / "municipality.json")
-        assert validate("schemas/municipality.schema.json", municipality) == []
+        assert validate(
+            "schemas/municipality.schema.json",
+            municipality,
+        ) == []
 
         record_files = sorted(directory.glob("*records.json"))
         packet_files = sorted(directory.glob("*evidence_packets.json"))
-        records = [record for path in record_files for record in load_json(path)]
-        packets = [packet for path in packet_files for packet in load_json(path)]
+        records = [
+            record
+            for path in record_files
+            for record in load_json(path)
+        ]
+        packets = [
+            packet
+            for path in packet_files
+            for packet in load_json(path)
+        ]
 
         assert records
         assert len(records) == len(packets)
         assert {packet["subject_id"] for packet in packets} == {
             record["id"] for record in records
         }
-        assert all(record["municipality_id"] == municipality["id"] for record in records)
-        assert all(record["review_status"] in {"reviewed", "verified"} for record in records)
-        assert all(validate("schemas/fiscal_record.schema.json", record) == [] for record in records)
-        assert all(validate("schemas/evidence_packet.schema.json", packet) == [] for packet in packets)
+        assert all(
+            record["municipality_id"] == municipality["id"]
+            for record in records
+        )
+        assert all(
+            record["review_status"] in {"reviewed", "verified"}
+            for record in records
+        )
+        assert all(
+            validate("schemas/fiscal_record.schema.json", record) == []
+            for record in records
+        )
+        assert all(
+            validate("schemas/evidence_packet.schema.json", packet) == []
+            for packet in packets
+        )
 
         references = referenced_sources([municipality, records, packets])
         assert references <= known_sources
-        assert not (all_record_ids & {record["id"] for record in records})
-        all_record_ids.update(record["id"] for record in records)
+        current_ids = {record["id"] for record in records}
+        assert not (all_record_ids & current_ids)
+        all_record_ids.update(current_ids)
         total_records += len(records)
         total_packets += len(packets)
 
