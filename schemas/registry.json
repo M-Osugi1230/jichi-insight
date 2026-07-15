@@ -1,5 +1,5 @@
 {
-  "version": "0.9.0",
+  "version": "0.10.0",
   "entries": [
     {"name":"source","schema":"schemas/source.schema.json","fixture":"data/examples/source.example.json"},
     {"name":"municipality","schema":"schemas/municipality.schema.json","fixture":"data/examples/municipality.example.json"},
@@ -10,6 +10,7 @@
     {"name":"policy_collection_profile","schema":"schemas/policy_collection_profile.schema.json","fixture":"data/examples/policy_collection_profile.example.json"},
     {"name":"policy_direction","schema":"schemas/policy_direction.schema.json","fixture":"data/examples/policy_direction.example.json"},
     {"name":"policy_initiative_catalog","schema":"schemas/policy_initiative_catalog.schema.json","fixture":"data/examples/policy_initiative_catalog.example.json"},
+    {"name":"policy_target_catalog","schema":"schemas/policy_target_catalog.schema.json","fixture":"data/examples/policy_target_catalog.example.json"},
     {"name":"fiscal_record","schema":"schemas/fiscal_record.schema.json","fixture":"data/examples/fiscal_record.example.json"},
     {"name":"contract","schema":"schemas/contract.schema.json","fixture":"data/examples/contract.example.json"},
     {"name":"kpi","schema":"schemas/kpi.schema.json","fixture":"data/examples/kpi.example.json"},

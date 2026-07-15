@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import { PageIntro } from "@/components/PageIntro";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -83,10 +84,17 @@ export default function PoliciesPage() {
                       {initiatives.map((initiative) => (
                         <li key={initiative.id} value={initiative.sequence_number}>
                           <div>
-                            <strong>{initiative.title_original}</strong>
+                            {initiative.sequence_number === 1 ? (
+                              <Link href="/policies/fukuoka-prefecture/initiatives/01">
+                                <strong>{initiative.title_original}</strong>
+                              </Link>
+                            ) : (
+                              <strong>{initiative.title_original}</strong>
+                            )}
                             <span>計画本文 {initiative.plan_page_start}ページ</span>
                           </div>
                           <div className={styles.initiativeStatus}>
+                            {initiative.sequence_number === 1 ? <span>数値目標10件</span> : null}
                             <span>進捗未接続</span>
                             <span>未評価</span>
                           </div>
