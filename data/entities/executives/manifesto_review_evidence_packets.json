@@ -1,0 +1,31 @@
+[
+  {
+    "id": "evidence-kitakyushu-2023-manifesto-review",
+    "subject_type": "manifesto_review",
+    "subject_id": "manifesto-review-jp-local-401005-2023",
+    "claims": [
+      {
+        "field": "source_location",
+        "statement": "武内和久候補欄は2023年北九州市長選挙公報の1ページ下段左に掲載されている。",
+        "source_ids": ["kitakyushu-mayor-election-2023-bulletin"],
+        "location_note": "1ページPDF・下段左の候補者欄。",
+        "decision": "accepted",
+        "review_note": "候補者名と欄の位置を目視確認。"
+      },
+      {
+        "field": "segmentation_status",
+        "statement": "候補者欄は政策方向、経歴、決意が連続する文章で、独立した番号付き公約一覧ではないため手動レビューを要する。",
+        "source_ids": ["kitakyushu-mayor-election-2023-bulletin"],
+        "location_note": "1ページPDF・下段左の候補者欄全体。",
+        "decision": "needs_review",
+        "review_note": "公約境界は解釈を伴うため、現段階では個別公約レコードを作成しない。"
+      }
+    ],
+    "open_questions": [
+      "独立した具体的公約として分割できる原文範囲はどこか。",
+      "候補者本人が公表した詳細マニフェストを追加で確認できるか。",
+      "分割後の各記録を事業・予算・KPIへ接続できるか。"
+    ],
+    "review_status": "reviewed"
+  }
+]
