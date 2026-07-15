@@ -11,11 +11,9 @@ TARGET_CATALOG_PATHS = sorted(
 )
 NEW_TARGET_EVIDENCE_PATHS = [
     ROOT
-    / "data/entities/policy/"
-    "fukuoka_prefecture_initiative_11_target_evidence_packet.json",
+    / "data/entities/policy/fukuoka_prefecture_initiative_11_target_evidence_packet.json",
     ROOT
-    / "data/entities/policy/"
-    "fukuoka_prefecture_initiative_12_target_evidence_packet.json",
+    / "data/entities/policy/fukuoka_prefecture_initiative_12_target_evidence_packet.json",
 ]
 
 
@@ -128,7 +126,9 @@ def test_new_target_evidence_packets_and_references_are_valid():
     catalogs = [load(path) for path in TARGET_CATALOG_PATHS[10:]]
     packets = [load(path) for path in NEW_TARGET_EVIDENCE_PATHS]
 
-    assert {catalog["policy_initiative_id"] for catalog in catalogs} <= initiative_ids
+    assert {
+        catalog["policy_initiative_id"] for catalog in catalogs
+    } <= initiative_ids
     assert {packet["subject_id"] for packet in packets} == {
         catalog["id"] for catalog in catalogs
     }
