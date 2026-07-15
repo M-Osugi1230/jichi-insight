@@ -1,0 +1,165 @@
+.gate {
+  background: #f2ead1;
+  border: 1px solid #dfd09e;
+  border-radius: 18px;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 0.7fr 1.3fr;
+  margin-bottom: 72px;
+  padding: 28px;
+}
+
+.gate h2 {
+  font-size: clamp(1.7rem, 4vw, 2.7rem);
+  margin-bottom: 0;
+}
+
+.gate ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.gate li {
+  color: #5c512f;
+  margin-bottom: 8px;
+}
+
+.tableWrap {
+  margin-top: 44px;
+  overflow-x: auto;
+}
+
+.table {
+  border-collapse: collapse;
+  min-width: 820px;
+  width: 100%;
+}
+
+.table th,
+.table td {
+  border-bottom: 1px solid #d6d5ce;
+  padding: 18px 14px;
+  text-align: right;
+  vertical-align: top;
+}
+
+.table th:first-child,
+.table td:first-child {
+  padding-left: 0;
+  text-align: left;
+}
+
+.table th {
+  color: #676960;
+  font-size: 0.72rem;
+}
+
+.metricName {
+  color: #173f35;
+  font-weight: 760;
+}
+
+.metricMeta {
+  color: #676960;
+  display: block;
+  font-size: 0.7rem;
+  margin-top: 5px;
+}
+
+.amount {
+  font-size: 1rem;
+  font-weight: 760;
+}
+
+.exact {
+  color: #676960;
+  display: block;
+  font-size: 0.68rem;
+  margin-top: 5px;
+}
+
+.precision {
+  color: #765b12;
+  display: block;
+  font-size: 0.68rem;
+  margin-top: 8px;
+}
+
+.shareGrid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 42px;
+}
+
+.shareCard {
+  background: #fff;
+  border: 1px solid #d6d5ce;
+  border-radius: 18px;
+  padding: 26px;
+}
+
+.shareCard span {
+  color: #676960;
+  font-size: 0.76rem;
+}
+
+.shareCard strong {
+  display: block;
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  letter-spacing: -0.06em;
+  margin: 30px 0 8px;
+}
+
+.shareCard p {
+  border-top: 1px solid #d6d5ce;
+  color: #676960;
+  font-size: 0.8rem;
+  margin: 18px 0 0;
+  padding-top: 14px;
+}
+
+.limitations {
+  display: grid;
+  gap: 0 36px;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  margin: 40px 0 0;
+  padding: 0;
+}
+
+.limitations li {
+  border-top: 1px solid #d6d5ce;
+  padding: 16px 0;
+}
+
+.limitations li::before {
+  color: #765b12;
+  content: "未比較";
+  display: inline-block;
+  font-size: 0.64rem;
+  font-weight: 760;
+  margin-right: 12px;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 38px 0 10px;
+}
+
+.links a {
+  color: #173f35;
+  font-size: 0.84rem;
+  font-weight: 760;
+  text-underline-offset: 4px;
+}
+
+@media (max-width: 760px) {
+  .gate,
+  .shareGrid,
+  .limitations {
+    grid-template-columns: 1fr;
+  }
+}

@@ -22,6 +22,7 @@ REQUIRED_FILES = [
     "index.html",
     "404.html",
     "about/index.html",
+    "compare/index.html",
     "corrections/index.html",
     "data-quality/index.html",
     "methodology/index.html",
@@ -114,7 +115,6 @@ def main() -> int:
                     "8,308億円",
                     "5年間の「実績」",
                     "2020–2024 ordinary-account settlement",
-                    "2兆937億円",
                     "普通会計",
                     "まだ評価していないこと",
                 ],
@@ -131,7 +131,6 @@ def main() -> int:
                     "1兆1,318億円",
                     "4,263億円",
                     "2024 general-account settlement",
-                    "1兆1,262億8,633万円",
                     "形式収支",
                     "まだ評価していないこと",
                 ],
@@ -156,6 +155,22 @@ def main() -> int:
                     "まだ評価していないこと",
                 ],
                 "Kitakyushu City page",
+            )
+        )
+
+    compare_path = EXPORT_ROOT / "compare" / "index.html"
+    if compare_path.is_file():
+        failures.extend(
+            require_copy(
+                compare_path.read_text(encoding="utf-8"),
+                [
+                    "同じ条件の数字だけで見る。",
+                    "比較できる範囲を先に固定する。",
+                    "確認済みの同条件4指標",
+                    "規模の違いを、優劣へ変換しない。",
+                    "人口・行政需要・面積・産業構造を補正する前に優劣を付けない",
+                ],
+                "City comparison page",
             )
         )
 

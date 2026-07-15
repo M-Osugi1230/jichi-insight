@@ -35,6 +35,7 @@ fi
 
 routes=(
   "/about/"
+  "/compare/"
   "/corrections/"
   "/data-quality/"
   "/methodology/"

@@ -9,6 +9,7 @@ export function SiteFooter() {
       </div>
       <div className="footerLinks">
         <Link href="/about">このサイトの目的</Link>
+        <Link href="/compare">都市比較</Link>
         <Link href="/methodology">方法論</Link>
         <Link href="/data-quality">データ品質</Link>
         <Link href="/sources">公式資料カタログ</Link>
