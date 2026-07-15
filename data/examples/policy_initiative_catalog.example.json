@@ -1,0 +1,24 @@
+{
+  "id": "policy-initiative-catalog-example-city",
+  "municipality_id": "jp-local-401307",
+  "plan_period_start": 2025,
+  "plan_period_end": 2030,
+  "plan_source_ids": ["fukuoka-pref-plan"],
+  "source_document_url": "https://example.com/policy-plan.pdf",
+  "progress_source_ids": ["fukuoka-pref-plan"],
+  "items": [
+    {
+      "id": "policy-initiative-example-city-01",
+      "policy_direction_id": "policy-direction-example-city-future",
+      "sequence_number": 1,
+      "title_original": "架空市の基盤づくり",
+      "plan_page_start": 10,
+      "source_page": 1,
+      "progress_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed"
+    }
+  ],
+  "reviewed_at": "2026-07-15",
+  "review_status": "reviewed",
+  "confidence": "high"
+}
