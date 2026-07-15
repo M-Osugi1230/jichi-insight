@@ -1,0 +1,57 @@
+{
+  "id": "policy-target-catalog-fukuoka-prefecture-initiative-06",
+  "policy_initiative_id": "policy-initiative-fukuoka-prefecture-06",
+  "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026"],
+  "source_document_url": "https://www.pref.fukuoka.lg.jp/uploaded/life/632711_61262666_misc.pdf",
+  "source_page": 2,
+  "printed_page": 316,
+  "items": [
+    {
+      "id": "policy-target-fukuoka-prefecture-initiative-06-23",
+      "target_number": 23,
+      "submeasure_title_original": "脱炭素化の推進と産業の育成",
+      "indicator_name_original": "温室効果ガスの総排出量の削減率",
+      "components": [
+        {
+          "label": null,
+          "baseline_value": 22.9,
+          "baseline_unit": "%",
+          "baseline_period": "H30年度",
+          "baseline_scope": "snapshot",
+          "target_value": 38.3,
+          "target_unit": "%",
+          "target_period": "R8年度",
+          "target_scope": "snapshot",
+          "preferred_direction": "increase"
+        }
+      ],
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed"
+    },
+    {
+      "id": "policy-target-fukuoka-prefecture-initiative-06-24",
+      "target_number": 24,
+      "submeasure_title_original": "脱炭素化の推進と産業の育成",
+      "indicator_name_original": "再生可能エネルギー発電設備導入容量",
+      "components": [
+        {
+          "label": null,
+          "baseline_value": 269,
+          "baseline_unit": "万kW",
+          "baseline_period": "R2年度",
+          "baseline_scope": "snapshot",
+          "target_value": 405,
+          "target_unit": "万kW",
+          "target_period": "R8年度",
+          "target_scope": "snapshot",
+          "preferred_direction": "increase"
+        }
+      ],
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed"
+    }
+  ],
+  "reviewed_at": "2026-07-16",
+  "review_status": "reviewed",
+  "confidence": "high"
+}
