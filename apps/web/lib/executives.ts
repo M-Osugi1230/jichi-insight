@@ -55,6 +55,10 @@ export function sourcesForExecutive(term: ExecutiveTerm) {
   return sourceCatalog.filter((source) => term.sources.includes(source.id));
 }
 
+export function manifestoSourcesForExecutive(term: ExecutiveTerm) {
+  return sourceCatalog.filter((source) => term.manifesto_source_ids.includes(source.id));
+}
+
 export function evidenceForExecutive(term: ExecutiveTerm) {
   return executiveEvidencePackets.find((packet) => packet.subject_id === term.id);
 }
