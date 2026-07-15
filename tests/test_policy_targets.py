@@ -54,10 +54,8 @@ def test_first_three_initiatives_have_eighteen_reviewed_targets():
         for item in catalog["items"]
     ]
     assert target_numbers == list(range(1, 19))
-    assert all(catalog["source_page"] == index for index, catalog in enumerate(catalogs, 1)) is False
-    assert catalogs[0]["printed_page"] == 315
-    assert catalogs[1]["printed_page"] == 316
-    assert catalogs[2]["printed_page"] == 316
+    assert [catalog["source_page"] for catalog in catalogs] == [1, 2, 2]
+    assert [catalog["printed_page"] for catalog in catalogs] == [315, 316, 316]
 
 
 def test_target_values_preserve_components_period_scopes_and_missing_baselines():
