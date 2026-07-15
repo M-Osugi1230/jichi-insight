@@ -7,6 +7,11 @@ Municipality
  ├─ FiscalRecord
  ├─ MetricSeries
  ├─ Policy
+ │   ├─ PolicyInitiative
+ │   │   └─ PolicyTargetCatalog
+ │   │       ├─ PolicyTarget
+ │   │       │   └─ PolicyTargetComponent
+ │   │       └─ Evidence
  │   └─ Project
  │       ├─ BudgetRecord
  │       ├─ Contract
@@ -35,6 +40,8 @@ Municipality
 - Executive term: `<municipality-id>-executive-<term-start>`
 - Promise: `<executive-term-id>-promise-<sequence>`
 - Project: `<municipality-id>-project-<fiscal-year>-<source-key>`
+- Policy target catalog: `policy-target-catalog-<municipality>-initiative-<sequence>`
+- Policy target: `policy-target-<municipality>-initiative-<sequence>-<target-number>`
 - Source: `source-<sha256-prefix>`
 
 ## Municipality
@@ -66,6 +73,29 @@ Municipality
 - assembly and audit references
 - review status
 - sources
+
+## Policy target
+
+数値目標は、指標名だけでなく、基準値・目標値・期間・集計範囲を分離して保存します。
+
+- policy initiative
+- target number
+- original submeasure title
+- original indicator name
+- baseline value, unit, period and scope
+- target value, unit, period and scope
+- target operator: `exact`, `at_least`, `at_most`
+- target text for qualitative or relative conditions
+- preferred direction
+- actual-result linkage status
+- evaluation status
+- sources and Evidence Packet
+
+同じ「目標」でも、単年度値、時点値、累計値、5年間累計は互換ではありません。単純な達成率へ変換せず、`baseline_scope` と `target_scope` を保持します。
+
+数値で表せない公式目標は、仮の数値へ置き換えません。例えば「平均寿命の増加分を上回る健康寿命の増加」は `target_text` と `relative_condition` で保存します。「12.5以下」のような上限目標は数値と `at_most` を組み合わせます。
+
+公式表で別の施策に再掲された指標は、新しい指標番号がない限り重複登録せず、既存指標への参照としてEvidence Packetに記録します。
 
 ## Promise
 
