@@ -9,10 +9,14 @@
     "municipality_id",
     "executive_term_id",
     "original_text",
+    "source_location",
+    "statement_type",
     "policy_area",
     "progress_state",
+    "assessability",
     "controllability",
     "review_status",
+    "confidence",
     "sources"
   ],
   "properties": {
@@ -32,6 +36,19 @@
       "type": "string",
       "minLength": 1
     },
+    "source_location": {
+      "type": "string",
+      "minLength": 1
+    },
+    "statement_type": {
+      "type": "string",
+      "enum": [
+        "specific_commitment",
+        "directional_commitment",
+        "vision",
+        "supporting_context"
+      ]
+    },
     "plain_summary": {
       "type": [
         "string",
@@ -39,7 +56,8 @@
       ]
     },
     "policy_area": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1
     },
     "baseline": {
       "type": [
@@ -78,6 +96,14 @@
         "not_assessable"
       ]
     },
+    "assessability": {
+      "type": "string",
+      "enum": [
+        "assessable",
+        "partially_assessable",
+        "not_assessable"
+      ]
+    },
     "progress_state": {
       "type": "string",
       "enum": [
@@ -104,6 +130,12 @@
         "null"
       ]
     },
+    "extraction_note": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
     "review_status": {
       "type": "string",
       "enum": [
@@ -114,14 +146,54 @@
         "missing"
       ]
     },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "high",
+        "medium",
+        "low",
+        "not_assessable"
+      ]
+    },
     "sources": {
       "type": "array",
       "items": {
         "type": "string",
-        "pattern": "^source-[a-z0-9-]+$"
+        "pattern": "^[a-z0-9-]+$"
       },
       "minItems": 1,
       "uniqueItems": true
     }
-  }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "statement_type": {
+            "enum": ["vision", "supporting_context"]
+          }
+        },
+        "required": ["statement_type"]
+      },
+      "then": {
+        "properties": {
+          "assessability": {"const": "not_assessable"},
+          "progress_state": {"const": "not_assessable"}
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "assessability": {"const": "not_assessable"}
+        },
+        "required": ["assessability"]
+      },
+      "then": {
+        "properties": {
+          "progress_state": {"const": "not_assessable"}
+        }
+      }
+    }
+  ]
 }
