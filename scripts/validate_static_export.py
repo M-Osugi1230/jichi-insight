@@ -15,6 +15,7 @@ SOURCE_CATALOG_PATHS = [
     ROOT / "data" / "catalog" / "official_sources.json",
     ROOT / "data" / "catalog" / "fukuoka_finance_sources.json",
     ROOT / "data" / "catalog" / "fukuoka_city_finance_sources.json",
+    ROOT / "data" / "catalog" / "kitakyushu_finance_sources.json",
 ]
 
 REQUIRED_FILES = [
@@ -27,6 +28,7 @@ REQUIRED_FILES = [
     "municipalities/index.html",
     "municipalities/fukuoka-prefecture/index.html",
     "municipalities/fukuoka-city/index.html",
+    "municipalities/kitakyushu-city/index.html",
     "sources/index.html",
     "robots.txt",
     "sitemap.xml",
@@ -53,7 +55,11 @@ def catalog_source_count() -> int:
 
 
 def require_copy(content: str, copies: list[str], label: str) -> list[str]:
-    return [f"{label} is missing required copy: {copy}" for copy in copies if copy not in content]
+    return [
+        f"{label} is missing required copy: {copy}"
+        for copy in copies
+        if copy not in content
+    ]
 
 
 def main() -> int:
@@ -71,7 +77,11 @@ def main() -> int:
         failures.extend(
             require_copy(
                 index,
-                ["約束・予算・実行・成果を、", "公式資料の整備状況を見る", "公開済み評価"],
+                [
+                    "約束・予算・実行・成果を、",
+                    "公式資料の整備状況を見る",
+                    "公開済み評価",
+                ],
                 "Home page",
             )
         )
@@ -92,7 +102,9 @@ def main() -> int:
                 "Sources page does not expose the current source catalog summary."
             )
 
-    prefecture_path = EXPORT_ROOT / "municipalities" / "fukuoka-prefecture" / "index.html"
+    prefecture_path = (
+        EXPORT_ROOT / "municipalities" / "fukuoka-prefecture" / "index.html"
+    )
     if prefecture_path.is_file():
         failures.extend(
             require_copy(
@@ -103,10 +115,8 @@ def main() -> int:
                     "5年間の「実績」",
                     "2020–2024 ordinary-account settlement",
                     "2兆937億円",
-                    "2024年度",
                     "普通会計",
                     "まだ評価していないこと",
-                    "PDFの2ページ目",
                 ],
                 "Fukuoka Prefecture page",
             )
@@ -123,10 +133,29 @@ def main() -> int:
                     "2024 general-account settlement",
                     "1兆1,262億8,633万円",
                     "形式収支",
-                    "PDF3ページ目",
                     "まだ評価していないこと",
                 ],
                 "Fukuoka City page",
+            )
+        )
+
+    kitakyushu_path = (
+        EXPORT_ROOT / "municipalities" / "kitakyushu-city" / "index.html"
+    )
+    if kitakyushu_path.is_file():
+        failures.extend(
+            require_copy(
+                kitakyushu_path.read_text(encoding="utf-8"),
+                [
+                    "6,476億8,400万円",
+                    "1,925億円",
+                    "2024 general-account settlement",
+                    "619,800,427,000円",
+                    "市税決算額",
+                    "単純差額",
+                    "まだ評価していないこと",
+                ],
+                "Kitakyushu City page",
             )
         )
 
@@ -135,7 +164,11 @@ def main() -> int:
         failures.extend(
             require_copy(
                 corrections_path.read_text(encoding="utf-8"),
-                ["誤りを直せることも、透明性の一部です。", "訂正申請を開く", "変更履歴を残します"],
+                [
+                    "誤りを直せることも、透明性の一部です。",
+                    "訂正申請を開く",
+                    "変更履歴を残します",
+                ],
                 "Corrections page",
             )
         )

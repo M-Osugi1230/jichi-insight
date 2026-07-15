@@ -10,6 +10,7 @@ const routes = [
   "/municipalities",
   "/municipalities/fukuoka-prefecture",
   "/municipalities/fukuoka-city",
+  "/municipalities/kitakyushu-city",
   "/sources",
 ];
 

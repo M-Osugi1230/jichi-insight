@@ -1,5 +1,6 @@
 import cityFinanceCatalog from "../../../data/catalog/fukuoka_city_finance_sources.json";
 import financeCatalog from "../../../data/catalog/fukuoka_finance_sources.json";
+import kitakyushuFinanceCatalog from "../../../data/catalog/kitakyushu_finance_sources.json";
 import officialCatalog from "../../../data/catalog/official_sources.json";
 
 export type MunicipalityKey =
@@ -53,9 +54,9 @@ export const municipalityMeta: Record<
     name: "北九州市",
     type: "政令指定都市",
     summary: "人口・産業構造の変化と政策、財政、市長、市議会を接続します。",
-    status: "資料索引中",
-    href: null,
-    fiscalSummary: "整備前",
+    status: "財政データ公開",
+    href: "/municipalities/kitakyushu-city",
+    fiscalSummary: "Reviewed 5項目",
   },
 };
 
@@ -63,6 +64,7 @@ export const sourceCatalog = [
   ...(officialCatalog.records as SourceRecord[]),
   ...(financeCatalog.records as SourceRecord[]),
   ...(cityFinanceCatalog.records as SourceRecord[]),
+  ...(kitakyushuFinanceCatalog.records as SourceRecord[]),
 ];
 
 export const catalogStats = {
@@ -70,8 +72,8 @@ export const catalogStats = {
   officialSources: sourceCatalog.length,
   reviewedSources: sourceCatalog.filter((source) => source.review_status === "reviewed").length,
   publishedEvaluations: 0,
-  publishedFiscalValues: 17,
-  updatedAt: cityFinanceCatalog.updated_at,
+  publishedFiscalValues: 22,
+  updatedAt: kitakyushuFinanceCatalog.updated_at,
 };
 
 export function sourcesForMunicipality(key: MunicipalityKey) {

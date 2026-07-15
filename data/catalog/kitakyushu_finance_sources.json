@@ -1,0 +1,91 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-07-15",
+  "scope": "pilot",
+  "records": [
+    {
+      "id": "kitakyushu-budget-2026-page",
+      "municipality_key": "kitakyushu-city",
+      "organization": "北九州市",
+      "category": "budget",
+      "title": "令和8年度当初予算",
+      "url": "https://www.city.kitakyushu.lg.jp/contents/09000366_00004.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-07-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "令和8年度当初予算案、計数資料、会計別・款別資料への公式入口。"
+    },
+    {
+      "id": "kitakyushu-budget-2026-count-pdf",
+      "municipality_key": "kitakyushu-city",
+      "organization": "北九州市",
+      "category": "budget",
+      "title": "令和8年度当初予算案 計数資料",
+      "url": "https://www.city.kitakyushu.lg.jp/files/001192202.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-07-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "PDF2ページ目に一般会計予算額、3ページ目に市税収入を掲載。"
+    },
+    {
+      "id": "kitakyushu-settlement-2024-page",
+      "municipality_key": "kitakyushu-city",
+      "organization": "北九州市",
+      "category": "settlement",
+      "title": "令和6年度決算",
+      "url": "https://www.city.kitakyushu.lg.jp/contents/09000356_00002.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-07-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般・特別会計収支、歳入・歳出、市税決算等への公式入口。"
+    },
+    {
+      "id": "kitakyushu-settlement-2024-revenue-pdf",
+      "municipality_key": "kitakyushu-city",
+      "organization": "北九州市",
+      "category": "settlement",
+      "title": "令和6年度 一般会計歳入決算額 前年度比較",
+      "url": "https://www.city.kitakyushu.lg.jp/files/001159245.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-07-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "1ページPDF。一般会計歳入合計を千円単位で掲載。"
+    },
+    {
+      "id": "kitakyushu-settlement-2024-expenditure-pdf",
+      "municipality_key": "kitakyushu-city",
+      "organization": "北九州市",
+      "category": "settlement",
+      "title": "令和6年度 一般会計歳出決算額 前年度比較（目的別）",
+      "url": "https://www.city.kitakyushu.lg.jp/files/001159248.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-07-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "1ページPDF。一般会計歳出合計を千円単位で掲載。"
+    },
+    {
+      "id": "kitakyushu-settlement-2024-tax-pdf",
+      "municipality_key": "kitakyushu-city",
+      "organization": "北九州市",
+      "category": "settlement",
+      "title": "令和6年度 市税決算状況",
+      "url": "https://www.city.kitakyushu.lg.jp/files/001159250.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-07-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "1ページPDF。市税計と税目別収入を千円単位で掲載。"
+    }
+  ]
+}
