@@ -16,7 +16,6 @@ ready=false
 for attempt in $(seq 1 18); do
   status="$(curl --silent --show-error --location --output "$INDEX_FILE" --write-out '%{http_code}' "$BASE_URL/" || true)"
   printf 'Attempt %02d: HTTP %s\n' "$attempt" "$status" >> "$REPORT"
-
   if [[ "$status" == "200" ]] \
     && grep --quiet 'Jichi Insight' "$INDEX_FILE" \
     && grep --quiet '公開済み評価' "$INDEX_FILE" \
@@ -24,7 +23,6 @@ for attempt in $(seq 1 18); do
     ready=true
     break
   fi
-
   sleep 10
 done
 
@@ -42,6 +40,7 @@ routes=(
   "/corrections/"
   "/data-quality/"
   "/executives/"
+  "/executives/source-requests/"
   "/methodology/"
   "/municipalities/"
   "/municipalities/fukuoka-prefecture/"
@@ -73,7 +72,6 @@ check_content() {
     cat "$REPORT"
     exit 1
   fi
-
   local required
   for required in "$@"; do
     if grep --quiet --fixed-strings "$required" "$CONTENT_FILE"; then
@@ -102,6 +100,12 @@ check_content "/executives/" \
   "手動レビュー待ち" \
   "作成済み公約レコード" \
   "資料があることと、公約を評価できることは別です。"
+
+check_content "/executives/source-requests/" \
+  "照会案を作ったことと、送信したことを分ける。" \
+  "照会案2件。送信済み0件。回答受領0件。" \
+  "この文案は未送信です。" \
+  "明示承認前は送信しません。"
 
 printf '\nResult: PASS\n' >> "$REPORT"
 cat "$REPORT"
