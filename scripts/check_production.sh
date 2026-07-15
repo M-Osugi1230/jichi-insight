@@ -46,6 +46,7 @@ routes=(
   "/municipalities/fukuoka-prefecture/"
   "/municipalities/fukuoka-city/"
   "/municipalities/kitakyushu-city/"
+  "/policy-sources/"
   "/sources/"
   "/robots.txt"
   "/sitemap.xml"
@@ -110,6 +111,13 @@ check_content "/executives/source-requests/" \
   "照会案2件。送信済み0件。回答受領0件。" \
   "この文案は未送信です。" \
   "明示承認前は送信しません。"
+
+check_content "/policy-sources/" \
+  "集められる政策資料から、先に形にする。" \
+  "計画から支出と成果まで、順番につなぐ。" \
+  "登録済み政策資料" \
+  "抽出準備済み" \
+  "資料10件を登録しましたが、政策評価はまだ0件です。"
 
 printf '\nResult: PASS\n' >> "$REPORT"
 cat "$REPORT"
