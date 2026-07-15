@@ -18,6 +18,10 @@ import initiative09Evidence from "../../../data/entities/policy/fukuoka_prefectu
 import initiative09Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_09_targets.json";
 import initiative10Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_10_target_evidence_packet.json";
 import initiative10Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_10_targets.json";
+import initiative11Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_11_target_evidence_packet.json";
+import initiative11Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_11_targets.json";
+import initiative12Evidence from "../../../data/entities/policy/fukuoka_prefecture_initiative_12_target_evidence_packet.json";
+import initiative12Catalog from "../../../data/entities/policy/fukuoka_prefecture_initiative_12_targets.json";
 
 export type PolicyTargetComponent = {
   label: string | null;
@@ -25,10 +29,17 @@ export type PolicyTargetComponent = {
   baseline_unit: string | null;
   baseline_period: string | null;
   baseline_scope: "snapshot" | "annual" | "cumulative" | "not_available";
-  target_value: number;
-  target_unit: string;
+  target_value: number | null;
+  target_unit: string | null;
+  target_text?: string | null;
+  target_operator?: "exact" | "at_least" | "at_most";
   target_period: string;
-  target_scope: "snapshot" | "annual" | "five_year_cumulative" | "cumulative";
+  target_scope:
+    | "snapshot"
+    | "annual"
+    | "five_year_cumulative"
+    | "cumulative"
+    | "relative_condition";
   preferred_direction: "increase" | "decrease";
 };
 
@@ -72,7 +83,19 @@ export type PolicyTargetEvidence = {
 };
 
 export type PolicyTargetPageDefinition = {
-  slug: "01" | "02" | "03" | "04" | "05" | "06" | "07" | "08" | "09" | "10";
+  slug:
+    | "01"
+    | "02"
+    | "03"
+    | "04"
+    | "05"
+    | "06"
+    | "07"
+    | "08"
+    | "09"
+    | "10"
+    | "11"
+    | "12";
   title: string;
   catalog: PolicyTargetCatalog;
   evidence: PolicyTargetEvidence;
@@ -139,6 +162,18 @@ export const policyTargetPages: PolicyTargetPageDefinition[] = [
     catalog: initiative10Catalog as PolicyTargetCatalog,
     evidence: initiative10Evidence as PolicyTargetEvidence,
   },
+  {
+    slug: "11",
+    title: "雇用対策の充実、魅力ある職場づくり",
+    catalog: initiative11Catalog as PolicyTargetCatalog,
+    evidence: initiative11Evidence as PolicyTargetEvidence,
+  },
+  {
+    slug: "12",
+    title: "健康づくり、安心で質の高い医療の提供",
+    catalog: initiative12Catalog as PolicyTargetCatalog,
+    evidence: initiative12Evidence as PolicyTargetEvidence,
+  },
 ];
 
 export const initiative01TargetCatalog = policyTargetPages[0].catalog;
@@ -181,11 +216,20 @@ export const allPolicyTargetStats = {
 
 export const initiative01TargetStats = policyTargetStats(initiative01TargetCatalog);
 
-export function formatTargetValue(value: number | null, unit: string | null) {
+export function formatTargetValue(
+  value: number | null,
+  unit: string | null,
+  operator: PolicyTargetComponent["target_operator"] = "exact",
+  text: string | null = null,
+) {
+  if (text) {
+    return text;
+  }
   if (value === null || unit === null) {
     return "未設定";
   }
-  return `${value.toLocaleString("ja-JP")}${unit}`;
+  const suffix = operator === "at_most" ? "以下" : operator === "at_least" ? "以上" : "";
+  return `${value.toLocaleString("ja-JP")}${unit}${suffix}`;
 }
 
 export function targetScopeLabel(
@@ -198,6 +242,7 @@ export function targetScopeLabel(
     annual: "年次値",
     cumulative: "累計値",
     five_year_cumulative: "5年間累計",
+    relative_condition: "条件型目標",
     not_available: "当初値なし",
   } as const;
   return labels[scope];
