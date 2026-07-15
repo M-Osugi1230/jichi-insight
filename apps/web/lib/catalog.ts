@@ -1,5 +1,6 @@
 import assemblyCatalog from "../../../data/catalog/fukuoka_assembly_sources.json";
 import cityFinanceCatalog from "../../../data/catalog/fukuoka_city_finance_sources.json";
+import executiveCatalog from "../../../data/catalog/executive_sources.json";
 import financeCatalog from "../../../data/catalog/fukuoka_finance_sources.json";
 import kitakyushuFinanceCatalog from "../../../data/catalog/kitakyushu_finance_sources.json";
 import officialCatalog from "../../../data/catalog/official_sources.json";
@@ -67,6 +68,7 @@ export const sourceCatalog = [
   ...(cityFinanceCatalog.records as SourceRecord[]),
   ...(kitakyushuFinanceCatalog.records as SourceRecord[]),
   ...(assemblyCatalog.records as SourceRecord[]),
+  ...(executiveCatalog.records as SourceRecord[]),
 ];
 
 export const catalogStats = {
@@ -76,7 +78,7 @@ export const catalogStats = {
   publishedEvaluations: 0,
   publishedFiscalValues: 22,
   reviewedAssemblyActivities: 3,
-  updatedAt: assemblyCatalog.updated_at,
+  updatedAt: executiveCatalog.updated_at,
 };
 
 export function sourcesForMunicipality(key: MunicipalityKey) {
