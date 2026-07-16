@@ -1,0 +1,278 @@
+{
+  "id": "miyagi-policy-source-inventory",
+  "updated_at": "2026-07-17",
+  "prefecture_code": "04",
+  "municipality_key": "miyagi-prefecture",
+  "plan_title_original": "新・宮城の将来ビジョン",
+  "plan_period": {
+    "start_fiscal_year": 2021,
+    "end_fiscal_year": 2030,
+    "description_original": "2021年度（令和3年度）から2030年度（令和12年度）までの10か年"
+  },
+  "policy_count": 8,
+  "measure_count": 18,
+  "inventory_status": "source_inventory_reviewed",
+  "current_implementation_plan_id": "miyagi-source-implementation-middle-2026-pdf",
+  "latest_final_evaluation_id": "miyagi-source-results-evaluation-fy2024-pdf",
+  "latest_draft_evaluation_id": "miyagi-source-evaluation-draft-fy2025-entry",
+  "sources": [
+    {
+      "id": "miyagi-source-vision-entry",
+      "title_original": "新・宮城の将来ビジョン",
+      "organization": "宮城県",
+      "url": "https://www.pref.miyagi.jp/soshiki/seisaku/vision2021.html",
+      "format": "html",
+      "source_role": "strategic_plan_entry",
+      "publication_status": "current",
+      "published_at": null,
+      "coverage_period": {
+        "start_fiscal_year": 2021,
+        "end_fiscal_year": 2030,
+        "description_original": "2021年度から2030年度まで"
+      },
+      "activity_fiscal_year": null,
+      "evaluation_fiscal_year": null,
+      "page_count": null,
+      "parent_source_ids": [],
+      "review_status": "verified",
+      "notes": "県政運営の最上位計画の公式入口。ビジョン本文、実施計画、行政評価制度を別資料として追う。"
+    },
+    {
+      "id": "miyagi-source-vision-pdf",
+      "title_original": "新・宮城の将来ビジョン",
+      "organization": "宮城県",
+      "url": "https://www.pref.miyagi.jp/documents/22619/834743_1.pdf",
+      "format": "pdf",
+      "source_role": "strategic_plan",
+      "publication_status": "current",
+      "published_at": null,
+      "coverage_period": {
+        "start_fiscal_year": 2021,
+        "end_fiscal_year": 2030,
+        "description_original": "2021年度（令和3年度）から2030年度（令和12年度）までの10か年"
+      },
+      "activity_fiscal_year": null,
+      "evaluation_fiscal_year": null,
+      "page_count": 84,
+      "parent_source_ids": ["miyagi-source-vision-entry"],
+      "review_status": "verified",
+      "notes": "4つの政策推進の基本方向、8政策（つくる）、18施策（取組）を含む。本文データのReviewed化は次工程。"
+    },
+    {
+      "id": "miyagi-source-implementation-entry",
+      "title_original": "新・宮城の将来ビジョン実施計画",
+      "organization": "宮城県",
+      "url": "https://www.pref.miyagi.jp/soshiki/seisaku/vision-actionplan.html",
+      "format": "html",
+      "source_role": "implementation_plan_entry",
+      "publication_status": "current",
+      "published_at": "2026-02-10",
+      "coverage_period": {
+        "start_fiscal_year": 2025,
+        "end_fiscal_year": 2027,
+        "description_original": "中期：令和7年度から令和9年度まで"
+      },
+      "activity_fiscal_year": null,
+      "evaluation_fiscal_year": null,
+      "page_count": null,
+      "parent_source_ids": ["miyagi-source-vision-entry"],
+      "review_status": "verified",
+      "notes": "前期・中期・後期に分ける実施計画の公式入口。中期計画は毎年度更新されるため改定履歴を保持する。"
+    },
+    {
+      "id": "miyagi-source-implementation-middle-2026-pdf",
+      "title_original": "新・宮城の将来ビジョン実施計画（中期：令和7年度～令和9年度）令和8年2月改定",
+      "organization": "宮城県",
+      "url": "https://www.pref.miyagi.jp/documents/22609/jisshikeikaku2r8.pdf",
+      "format": "pdf",
+      "source_role": "implementation_plan",
+      "publication_status": "current",
+      "published_at": "2026-02-10",
+      "coverage_period": {
+        "start_fiscal_year": 2025,
+        "end_fiscal_year": 2027,
+        "description_original": "中期：令和7年度から令和9年度まで、令和8年2月改定"
+      },
+      "activity_fiscal_year": null,
+      "evaluation_fiscal_year": null,
+      "page_count": 61,
+      "parent_source_ids": ["miyagi-source-implementation-entry", "miyagi-source-vision-pdf"],
+      "review_status": "verified",
+      "notes": "具体的取組、推進事業、目標指標一覧を含む現行中期実施計画。2025年2月版と区別する。"
+    },
+    {
+      "id": "miyagi-source-evaluation-methodology",
+      "title_original": "行政評価の仕組み（政策評価・施策評価の概要）",
+      "organization": "宮城県",
+      "url": "https://www.pref.miyagi.jp/soshiki/seisaku/sikumi-seisaku.html",
+      "format": "html",
+      "source_role": "evaluation_methodology",
+      "publication_status": "methodology",
+      "published_at": "2025-04-01",
+      "coverage_period": {
+        "start_fiscal_year": null,
+        "end_fiscal_year": null,
+        "description_original": "政策評価・施策評価の共通制度"
+      },
+      "activity_fiscal_year": null,
+      "evaluation_fiscal_year": null,
+      "page_count": null,
+      "parent_source_ids": ["miyagi-source-vision-entry"],
+      "review_status": "verified",
+      "notes": "8政策、18施策、構成事業を目的・手段の体系として評価し、目標指標、県民意識、社会経済情勢、事業実績を用いる制度を説明する。"
+    },
+    {
+      "id": "miyagi-source-results-evaluation-fy2024-entry",
+      "title_original": "新・宮城の将来ビジョン 成果と評価（令和6年度の政策・施策及び事業について）",
+      "organization": "宮城県",
+      "url": "https://www.pref.miyagi.jp/site/hyoka/r7seika-hyoka.html",
+      "format": "html",
+      "source_role": "annual_evaluation_entry",
+      "publication_status": "final",
+      "published_at": "2025-09-18",
+      "coverage_period": {
+        "start_fiscal_year": 2024,
+        "end_fiscal_year": 2024,
+        "description_original": "令和6年度に実施した政策・施策・事業"
+      },
+      "activity_fiscal_year": 2024,
+      "evaluation_fiscal_year": 2025,
+      "page_count": null,
+      "parent_source_ids": ["miyagi-source-evaluation-methodology", "miyagi-source-vision-pdf"],
+      "review_status": "verified",
+      "notes": "令和6年度の主要施策の成果と、令和7年度に実施した政策評価・施策評価の確定結果を掲載する公式入口。"
+    },
+    {
+      "id": "miyagi-source-results-evaluation-fy2024-pdf",
+      "title_original": "新・宮城の将来ビジョン 成果と評価 ～令和6年度の政策・施策及び事業について～",
+      "organization": "宮城県",
+      "url": "https://www.pref.miyagi.jp/documents/59769/r7-seikatohyouka_1.pdf",
+      "format": "pdf",
+      "source_role": "annual_evaluation",
+      "publication_status": "final",
+      "published_at": "2025-09-18",
+      "coverage_period": {
+        "start_fiscal_year": 2024,
+        "end_fiscal_year": 2024,
+        "description_original": "令和6年度県政の成果・令和7年度政策評価及び施策評価の結果"
+      },
+      "activity_fiscal_year": 2024,
+      "evaluation_fiscal_year": 2025,
+      "page_count": 210,
+      "parent_source_ids": ["miyagi-source-results-evaluation-fy2024-entry", "miyagi-source-implementation-middle-2026-pdf"],
+      "review_status": "verified",
+      "notes": "8政策、18施策、構成事業、目標指標の実績、評価結果、行政評価委員会の意見と県の対応を含む。KPI実績のReviewed抽出は別工程。"
+    },
+    {
+      "id": "miyagi-source-evaluation-draft-fy2025-entry",
+      "title_original": "令和8年度政策評価・施策評価に係る評価原案について",
+      "organization": "宮城県",
+      "url": "https://www.pref.miyagi.jp/soshiki/seisaku/r8seisaku-kisya2.html",
+      "format": "html",
+      "source_role": "evaluation_draft_entry",
+      "publication_status": "draft",
+      "published_at": "2026-06-10",
+      "coverage_period": {
+        "start_fiscal_year": 2025,
+        "end_fiscal_year": 2025,
+        "description_original": "令和7年度に実施した政策・施策・事業の令和8年度評価原案"
+      },
+      "activity_fiscal_year": 2025,
+      "evaluation_fiscal_year": 2026,
+      "page_count": null,
+      "parent_source_ids": ["miyagi-source-evaluation-methodology", "miyagi-source-implementation-middle-2026-pdf"],
+      "review_status": "verified",
+      "notes": "2026年9月予定の確定評価ではなく原案。県民意見募集と行政評価委員会審議の対象として別状態で保持する。"
+    },
+    {
+      "id": "miyagi-source-evaluation-committee-2026",
+      "title_original": "令和8年度宮城県行政評価委員会政策評価部会",
+      "organization": "宮城県",
+      "url": "https://www.pref.miyagi.jp/soshiki/seisaku/r8seisakuhyoukabukai.html",
+      "format": "html",
+      "source_role": "evaluation_process",
+      "publication_status": "process",
+      "published_at": "2026-07-13",
+      "coverage_period": {
+        "start_fiscal_year": 2025,
+        "end_fiscal_year": 2025,
+        "description_original": "令和7年度実績に対する令和8年度評価原案の審議"
+      },
+      "activity_fiscal_year": 2025,
+      "evaluation_fiscal_year": 2026,
+      "page_count": null,
+      "parent_source_ids": ["miyagi-source-evaluation-draft-fy2025-entry"],
+      "review_status": "verified",
+      "notes": "2026年6月22日及び7月7日の審議資料を掲載する評価過程。最終評価結果と混同しない。"
+    },
+    {
+      "id": "miyagi-source-policy-finance-meeting-2026-02-09",
+      "title_original": "令和7年度第4回宮城県政策・財政会議",
+      "organization": "宮城県",
+      "url": "https://www.pref.miyagi.jp/soshiki/seisaku/r7seizai/0209.html",
+      "format": "html",
+      "source_role": "planning_meeting",
+      "publication_status": "process",
+      "published_at": null,
+      "coverage_period": {
+        "start_fiscal_year": 2025,
+        "end_fiscal_year": 2026,
+        "description_original": "2026年2月9日の政策・財政会議"
+      },
+      "activity_fiscal_year": null,
+      "evaluation_fiscal_year": null,
+      "page_count": null,
+      "parent_source_ids": ["miyagi-source-implementation-entry"],
+      "review_status": "verified",
+      "notes": "中期実施計画改定案、令和8年度事業、令和7年度振り返りを扱う意思決定過程の入口。確定計画本文とは分離する。"
+    }
+  ],
+  "relationships": [
+    {
+      "from_source_id": "miyagi-source-vision-entry",
+      "to_source_id": "miyagi-source-vision-pdf",
+      "relationship_type": "publishes",
+      "description": "公式入口が最上位計画本文PDFを公開する。"
+    },
+    {
+      "from_source_id": "miyagi-source-vision-pdf",
+      "to_source_id": "miyagi-source-implementation-middle-2026-pdf",
+      "relationship_type": "implements",
+      "description": "10年ビジョンを3期に分けた中期実施計画が具体的取組と数値目標を示す。"
+    },
+    {
+      "from_source_id": "miyagi-source-evaluation-methodology",
+      "to_source_id": "miyagi-source-results-evaluation-fy2024-pdf",
+      "relationship_type": "governs_evaluation",
+      "description": "行政評価制度が年次成果・評価の対象、基準、手続を定める。"
+    },
+    {
+      "from_source_id": "miyagi-source-implementation-middle-2026-pdf",
+      "to_source_id": "miyagi-source-results-evaluation-fy2024-pdf",
+      "relationship_type": "evaluates",
+      "description": "実施計画の政策・施策・目標指標と年次成果・評価を接続する。"
+    },
+    {
+      "from_source_id": "miyagi-source-evaluation-draft-fy2025-entry",
+      "to_source_id": "miyagi-source-evaluation-committee-2026",
+      "relationship_type": "precedes_final",
+      "description": "評価原案を県民意見と行政評価委員会の審議に付し、確定評価へ進む。"
+    },
+    {
+      "from_source_id": "miyagi-source-policy-finance-meeting-2026-02-09",
+      "to_source_id": "miyagi-source-implementation-middle-2026-pdf",
+      "relationship_type": "informs_revision",
+      "description": "政策・財政会議で中期実施計画改定案と次年度事業を扱う。"
+    }
+  ],
+  "quality_boundaries": [
+    "最上位ビジョンと年度更新される実施計画を別資料として保持する。",
+    "前期・中期・後期と各改定版を上書きせず履歴として保持する。",
+    "政策8件、施策18件、構成事業を異なる階層として保持する。",
+    "目標値、年度実績、県の自己評価、行政評価委員会意見を別フィールドで保持する。",
+    "活動年度と評価実施年度・公表日を混同しない。",
+    "評価原案、審議過程、確定評価を別状態として保持する。",
+    "資料入口を確認しただけで政策本文・KPI・実績をReviewedへ昇格しない。"
+  ],
+  "next_gate": "policy_hierarchy"
+}
