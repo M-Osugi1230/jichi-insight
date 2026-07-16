@@ -4,10 +4,12 @@ import educationLearningCatalog from "../../../data/entities/policy/hokkaido_ind
 import employmentWorkCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_employment_work.json";
 import foodCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_food.json";
 import globalizationCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_globalization.json";
+import historyCultureSportsCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_history_culture_sports.json";
 import industryCrossSectorCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_industry_cross_sector.json";
 import infrastructureCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_infrastructure.json";
 import manufacturingGrowthCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_manufacturing_growth.json";
 import medicalWelfareCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_medical_welfare.json";
+import natureEnvironmentCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_nature_environment.json";
 import regionalDevelopmentCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_regional_development.json";
 import resilienceCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_resilience.json";
 import safetySecurityCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_safety_security.json";
@@ -20,10 +22,12 @@ import educationLearningEvidence from "../../../data/entities/policy/hokkaido_in
 import employmentWorkEvidence from "../../../data/entities/policy/hokkaido_indicator_employment_work_evidence_packets.json";
 import foodEvidence from "../../../data/entities/policy/hokkaido_indicator_food_evidence_packets.json";
 import globalizationEvidence from "../../../data/entities/policy/hokkaido_indicator_globalization_evidence_packets.json";
+import historyCultureSportsEvidence from "../../../data/entities/policy/hokkaido_indicator_history_culture_sports_evidence_packets.json";
 import industryCrossSectorEvidence from "../../../data/entities/policy/hokkaido_indicator_industry_cross_sector_evidence_packets.json";
 import infrastructureEvidence from "../../../data/entities/policy/hokkaido_indicator_infrastructure_evidence_packets.json";
 import manufacturingGrowthEvidence from "../../../data/entities/policy/hokkaido_indicator_manufacturing_growth_evidence_packets.json";
 import medicalWelfareEvidence from "../../../data/entities/policy/hokkaido_indicator_medical_welfare_evidence_packets.json";
+import natureEnvironmentEvidence from "../../../data/entities/policy/hokkaido_indicator_nature_environment_evidence_packets.json";
 import regionalDevelopmentEvidence from "../../../data/entities/policy/hokkaido_indicator_regional_development_evidence_packets.json";
 import resilienceEvidence from "../../../data/entities/policy/hokkaido_indicator_resilience_evidence_packets.json";
 import safetySecurityEvidence from "../../../data/entities/policy/hokkaido_indicator_safety_security_evidence_packets.json";
@@ -105,6 +109,8 @@ const groupDefinitions: Array<{ catalog: CatalogShape; label: string; evidence: 
   { catalog: globalizationCatalog, label: "グローバル化", evidence: globalizationEvidence },
   { catalog: resilienceCatalog, label: "北海道の強靱化", evidence: resilienceEvidence },
   { catalog: infrastructureCatalog, label: "社会経済の基盤整備", evidence: infrastructureEvidence },
+  { catalog: natureEnvironmentCatalog, label: "自然・環境", evidence: natureEnvironmentEvidence },
+  { catalog: historyCultureSportsCatalog, label: "歴史・文化・スポーツ", evidence: historyCultureSportsEvidence },
 ];
 
 export const hokkaidoIndicatorGroups: HokkaidoIndicatorGroup[] = groupDefinitions.map(

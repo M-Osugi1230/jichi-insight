@@ -104,9 +104,9 @@ export default function MunicipalitiesPage() {
 
         <section className="contentSection">
           <p className="eyebrow">Wave 1 review queue</p>
-          <h2>北海道では、指標1〜{hokkaidoIndicatorReviewStats.reviewedIndicators}を部分公開。</h2>
+          <h2>北海道{hokkaidoIndicatorReviewStats.reviewedIndicators}指標を全件Reviewed化。次は宮城県。</h2>
           <p className={styles.sectionLead}>
-            福岡県を基準実装とし、北海道では108指標のうち{hokkaidoIndicatorReviewStats.reviewedIndicators}指標をReviewed化しました。残る{hokkaidoIndicatorReviewStats.remainingIndicators}指標を進めながら、同じEvidence Packet方式を次の地域拠点へ展開します。順位は評価点ではなく、資料構造と作業依存関係に基づく運用順です。
+            福岡県を基準実装とし、北海道では18政策分野・108指標・Evidence Packet 108件のReviewed工程を完了しました。年度実績との接続は別工程として残し、同じ品質ゲートで宮城県の実施計画・数値目標・行政評価資料を固定します。順位は評価点ではなく、資料構造と作業依存関係に基づく運用順です。
           </p>
 
           <div className={styles.queueSummary} aria-label="第1波Reviewed化の進捗">
@@ -192,9 +192,9 @@ export default function MunicipalitiesPage() {
         <section className="callout callout--dark">
           <div>
             <p className="eyebrow">Next nationwide wave</p>
-            <h2>北海道{hokkaidoIndicatorReviewStats.reviewedIndicators}指標を公開。次は残り{hokkaidoIndicatorReviewStats.remainingIndicators}指標と他地域へ。</h2>
+            <h2>北海道108指標のReviewed完了。次は宮城県の資料固定へ。</h2>
             <p>
-              第1波9拠点すべてで、公式ホームページ、計画入口、現行計画を確認しました。北海道で確立した非福岡型の抽出・Evidence Packetを、宮城県、愛知県、香川県へ展開します。
+              第1波9拠点すべてで公式ホームページ、計画入口、現行計画を確認しました。北海道で確立した全指標の抽出・Evidence Packet・品質ゲートを宮城県へ展開し、北海道は並行して年度実績との接続へ進めます。
             </p>
           </div>
           <Link className="primaryAction" href="/municipalities/hokkaido">

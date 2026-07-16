@@ -33,26 +33,39 @@ def test_queue_covers_all_wave_one_anchors_once_in_operational_order():
     assert len({item["municipality_key"] for item in items}) == 9
 
 
-def test_fukuoka_is_the_only_reviewed_reference_and_hokkaido_is_active():
+def test_fukuoka_and_hokkaido_are_reviewed_references_and_miyagi_is_active():
     queue = load(QUEUE_PATH)
     items = {item["prefecture_code"]: item for item in queue["items"]}
-    assert queue["completed_prefecture_codes"] == ["40"]
-    assert queue["active_prefecture_code"] == "01"
-    assert items["40"]["status"] == "reviewed_reference"
-    assert items["40"]["source_inventory_status"] == "reviewed"
-    assert items["40"]["next_gate"] == "actuals_linkage"
-    assert items["01"]["status"] == "active_review"
-    assert items["01"]["source_inventory_status"] == (
-        "indicator_relationships_reviewed"
+    assert queue["completed_prefecture_codes"] == ["40", "01"]
+    assert queue["active_prefecture_code"] == "04"
+
+    for code in ["40", "01"]:
+        assert items[code]["status"] == "reviewed_reference"
+        assert items[code]["source_inventory_status"] == "reviewed"
+        assert items[code]["next_gate"] == "actuals_linkage"
+
+    assert "全108指標" in items["01"]["next_action"]
+    assert "Evidence Packet 108件" in items["01"]["next_action"]
+    assert "年度実績" in items["01"]["next_action"]
+
+    assert items["04"]["status"] == "active_review"
+    assert (
+        items["04"]["source_inventory_status"]
+        == "plan_followup_entry_indexed"
     )
-    assert items["01"]["next_gate"] == "kpi_catalog"
-    assert "指標1〜98" in items["01"]["next_action"]
-    assert "Evidence Packet付き" in items["01"]["next_action"]
-    assert "残る10指標" in items["01"]["next_action"]
-    assert "指標99〜102" in items["01"]["next_action"]
-    assert sum(item["status"] == "reviewed_reference" for item in queue["items"]) == 1
-    assert sum(item["status"] == "active_review" for item in queue["items"]) == 1
-    assert sum(item["status"] == "queued" for item in queue["items"]) == 7
+    assert items["04"]["next_gate"] == "source_inventory"
+    assert "実施計画" in items["04"]["next_action"]
+    assert "行政評価" in items["04"]["next_action"]
+
+    status_counts = {
+        status: sum(item["status"] == status for item in queue["items"])
+        for status in ["reviewed_reference", "active_review", "queued"]
+    }
+    assert status_counts == {
+        "reviewed_reference": 2,
+        "active_review": 1,
+        "queued": 6,
+    }
 
 
 def test_queue_sources_exist_and_titles_match_the_policy_source_catalog():

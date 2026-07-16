@@ -69,10 +69,10 @@ export default function DataQualityPage() {
           <div className={styles.summaryGrid} aria-label="政策資料カタログと作業キュー">
             <article className={styles.summaryCard}><span>政策資料カタログ</span><strong>{snapshot.policySourceRecords}</strong><p>戦略、実施計画、年度報告、事業評価を資料単位で登録。</p></article>
             <article className={styles.summaryCard}><span>Reviewed政策資料</span><strong>{snapshot.reviewedPolicySourceRecords}</strong><p>福岡県・福岡市・北九州市で本文確認済みの資料。</p></article>
-            <article className={styles.summaryCard}><span>第1波・索引済み計画</span><strong>{snapshot.indexedPolicySourceRecords}</strong><p>現行性は確認済みだが、政策本文・KPI抽出前の8都道府県。</p></article>
+            <article className={styles.summaryCard}><span>第1波・索引済み計画</span><strong>{snapshot.indexedPolicySourceRecords}</strong><p>現行性は確認済みだが、政策本文・KPI抽出前の都道府県。</p></article>
             <article className={styles.summaryCard}><span>北海道指標PDF</span><strong>{snapshot.indexedHokkaidoKpiSources}</strong><p>{snapshot.hokkaidoIndicatorSourcePages}ページを資料単位で索引済み。</p></article>
-            <article className={styles.summaryCard}><span>Reviewed基準実装</span><strong>{snapshot.waveOnePolicyReviewReferences}</strong><p>全国展開のデータ・Evidence Packet基準として使う都道府県。</p></article>
-            <article className={styles.summaryCard}><span>Reviewed化作業中</span><strong>{snapshot.waveOnePolicyActiveReviews}</strong><p>北海道は指標1〜{snapshot.reviewedHokkaidoIndicators}をReviewed化し、残る{snapshot.remainingHokkaidoIndicators}指標を抽出中。</p></article>
+            <article className={styles.summaryCard}><span>Reviewed基準実装</span><strong>{snapshot.waveOnePolicyReviewReferences}</strong><p>福岡県と北海道を全国展開のデータ・Evidence Packet基準として使用。</p></article>
+            <article className={styles.summaryCard}><span>Reviewed化作業中</span><strong>{snapshot.waveOnePolicyActiveReviews}</strong><p>宮城県の実施計画・数値目標・行政評価資料を固定中。</p></article>
             <article className={styles.summaryCard}><span>作業待ち</span><strong>{snapshot.waveOnePolicyQueued}</strong><p>資料構造と作業依存関係に基づき順番に着手。</p></article>
           </div>
         </section>
@@ -86,15 +86,15 @@ export default function DataQualityPage() {
             <article className={styles.summaryCard}><span>北海道政策体系Evidence</span><strong>{snapshot.hokkaidoPolicyEvidencePackets}</strong><p>3基本方向の名称、6分野、計画期間を一次資料と照合。</p></article>
             <article className={styles.summaryCard}><span>北海道指標位置</span><strong>{snapshot.hokkaidoIndicatorPositions}</strong><p>指標番号1〜108を公式PDFとページへ欠落なく対応。</p></article>
             <article className={styles.summaryCard}><span>北海道複数分野参照</span><strong>{snapshot.hokkaidoIndicatorRelationshipCount}</strong><p>108一意指標と113掲載行の差分を、重複KPIではなく参照として確認済み。</p></article>
-            <article className={styles.summaryCard}><span>北海道Reviewed指標</span><strong>{snapshot.reviewedHokkaidoIndicators}</strong><p>指標1〜{snapshot.reviewedHokkaidoIndicators}を一次資料と照合。残り{snapshot.remainingHokkaidoIndicators}件は未Reviewed。</p></article>
-            <article className={styles.summaryCard}><span>北海道KPI Evidence</span><strong>{snapshot.hokkaidoIndicatorEvidencePackets}</strong><p>Reviewed指標すべてにEvidence Packetを付与。</p></article>
+            <article className={styles.summaryCard}><span>北海道Reviewed指標</span><strong>{snapshot.reviewedHokkaidoIndicators}</strong><p>指標1〜108を一次資料と照合し、未Reviewedは0件。</p></article>
+            <article className={styles.summaryCard}><span>北海道KPI Evidence</span><strong>{snapshot.hokkaidoIndicatorEvidencePackets}</strong><p>全108指標にEvidence Packetを付与。</p></article>
             <article className={styles.summaryCard}><span>目標設定あり</span><strong>{snapshot.hokkaidoIndicatorsWithTargets}</strong><p>数値目標と条件目標を区別し、原文の目標設計を保持。</p></article>
-            <article className={styles.summaryCard}><span>条件目標</span><strong>{snapshot.hokkaidoConditionalTargetValues}</strong><p>具体値を補わず、前年比較などの原文条件を保持。</p></article>
+            <article className={styles.summaryCard}><span>条件目標</span><strong>{snapshot.hokkaidoConditionalTargetValues}</strong><p>具体値を補わず、前年比較、範囲、過去最高値などの原文条件を保持。</p></article>
             <article className={styles.summaryCard}><span>累計系列</span><strong>{snapshot.hokkaidoMultiYearCumulativeSeries + snapshot.hokkaidoCumulativeToDateSeries}</strong><p>期間累計と各時点までの累計到達値を分離。</p></article>
             <article className={styles.summaryCard}><span>目標未設定</span><strong>{snapshot.hokkaidoIndicatorsWithoutTargets}</strong><p>「―」を0へ変換せず、nullと原文説明で保持。</p></article>
             <article className={styles.summaryCard}><span>現状値なし</span><strong>{snapshot.hokkaidoUnavailableCurrentSeries}</strong><p>未公表・利用不可の現状値を0へ変換しない。</p></article>
             <article className={styles.summaryCard}><span>比較注意あり</span><strong>{snapshot.hokkaidoIndicatorComparabilityWarnings}</strong><p>調査対象変更、別番号、系列差などの注意を個別指標に保持。</p></article>
-            <article className={styles.summaryCard}><span>北海道指標対象</span><strong>{snapshot.hokkaidoIndicatorTarget}</strong><p>重複を含む掲載行は{snapshot.hokkaidoDuplicateInclusiveIndicatorRows}。全件完了まで公開昇格しません。</p></article>
+            <article className={styles.summaryCard}><span>北海道指標対象</span><strong>{snapshot.hokkaidoIndicatorTarget}</strong><p>重複を含む掲載行は{snapshot.hokkaidoDuplicateInclusiveIndicatorRows}。KPI本文は全件Reviewed済みで、年度実績接続は別ゲート。</p></article>
             <article className={styles.summaryCard}><span>Reviewed取組事項</span><strong>{snapshot.reviewedPolicyInitiatives}</strong><p>福岡県公式目次の1番から30番までを原文で登録。</p></article>
             <article className={styles.summaryCard}><span>Reviewed数値目標</span><strong>{snapshot.reviewedPolicyTargets}</strong><p>福岡県取組1から26の基準値・目標値118件を期間単位付きで登録。</p></article>
             <article className={styles.summaryCard}><span>年度実績へ接続済み</span><strong>{snapshot.policyTargetsActualsLinked}</strong><p>個別KPIとの年度実績対応は未実施。</p></article>
@@ -103,8 +103,9 @@ export default function DataQualityPage() {
           </div>
         </section>
 
-        <section className="contentSection"><p className="eyebrow">Executive evidence readiness</p><h2>首長分野は、任期・探索・公約資料・分割レビュー・評価を分ける。</h2><div className={styles.summaryGrid} aria-label="首長データ品質概要">
-          <article className={styles.summaryCard}><span>Reviewed現職任期</span><strong>{snapshot.reviewedExecutiveTerms}</strong><p>3自治体の現職・選挙日・任期を確認済み。</p></article>
+        <section className="contentSection"><p className="eyebrow">Executive evidence readiness</p><h2>首長分野は、任期・探索・公約資料・分割レビュー・評価を分ける。</h2><div className={styles.summaryGrid} aria-label="首長分野の品質概要">
+          <article className={styles.summaryCard}><span>Reviewed首長任期</span><strong>{snapshot.reviewedExecutiveTerms}</strong><p>氏名、就任日、任期終了予定を一次資料と照合。</p></article>
+          <article className={styles.summaryCard}><span>首長Evidence Packet</span><strong>{snapshot.executiveEvidencePackets}</strong><p>任期情報の根拠と判断を保存。</p></article>
           <article className={styles.summaryCard}><span>公約資料の探索記録</span><strong>{snapshot.manifestoSourceSearches}</strong><p>確認範囲、未発見、次の確認方法を保存。</p></article>
           <article className={styles.summaryCard}><span>安定した一次資料を未発見</span><strong>{snapshot.manifestoSourcesNotFound}</strong><p>不存在ではなく、現時点の探索結果として表示。</p></article>
           <article className={styles.summaryCard}><span>登録済み公約原文資料</span><strong>{snapshot.registeredManifestos}</strong><p>北九州市長選挙の公式選挙公報1件。</p></article>

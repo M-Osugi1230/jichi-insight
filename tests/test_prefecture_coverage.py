@@ -83,7 +83,7 @@ def test_quality_stages_are_explicit_and_do_not_overstate_coverage():
     }
     assert verified_codes == expected_anchor_codes
     assert anchor_codes == expected_anchor_codes
-    assert reviewed_codes == {"40"}
+    assert reviewed_codes == {"01", "40"}
     assert current_plan_codes == expected_anchor_codes
     assert plan_source_codes == expected_anchor_codes
 
@@ -100,7 +100,7 @@ def test_quality_stages_are_explicit_and_do_not_overstate_coverage():
     assert len(plan_source_codes) == 9
     assert len(current_plan_codes) == 9
     assert plan_source_codes - current_plan_codes == set()
-    assert len(reviewed_codes) == 1
+    assert len(reviewed_codes) == 2
 
 
 def test_wave_one_plan_sources_preserve_review_depth_and_https_provenance():
@@ -109,11 +109,13 @@ def test_wave_one_plan_sources_preserve_review_depth_and_https_provenance():
         source["prefecture_code"]: source for source in plan_sources
     }
 
-    for code in ("01", "04", "13", "23", "27", "34", "37", "47"):
+    for code in ("04", "13", "23", "27", "34", "37", "47"):
         assert sources_by_code[code]["review_status"] == "indexed"
-    assert sources_by_code["40"]["review_status"] == "reviewed"
+    for code in ("01", "40"):
+        assert sources_by_code[code]["review_status"] == "reviewed"
 
     assert sources_by_code["01"]["title"] == "北海道総合計画"
+    assert sources_by_code["01"]["verified_at"] == "2026-07-17"
     assert sources_by_code["04"]["title"] == "新・宮城の将来ビジョン"
     assert (
         sources_by_code["13"]["title"]
@@ -152,19 +154,19 @@ def test_wave_one_plan_sources_preserve_review_depth_and_https_provenance():
     for source in plan_sources:
         assert source["url"].startswith("https://")
         assert source["title"].strip()
-        assert source["verified_at"] == "2026-07-16"
+        if source["prefecture_code"] != "01":
+            assert source["verified_at"] == "2026-07-16"
 
 
-def test_all_wave_one_current_plans_are_confirmed_without_promoting_review_depth():
+def test_all_wave_one_current_plans_are_confirmed_without_overpromoting_actuals():
     registry = load(COVERAGE_PATH)
     anchor_codes = set(registry["regional_anchor_codes"])
     current_plan_codes = set(registry["current_plan_confirmed_codes"])
     reviewed_codes = set(registry["reviewed_prefecture_codes"])
 
     assert current_plan_codes == anchor_codes
-    assert reviewed_codes == {"40"}
+    assert reviewed_codes == {"01", "40"}
     assert current_plan_codes - reviewed_codes == {
-        "01",
         "04",
         "13",
         "23",
@@ -175,7 +177,7 @@ def test_all_wave_one_current_plans_are_confirmed_without_promoting_review_depth
     }
 
 
-def test_only_fukuoka_is_marked_reviewed_until_other_primary_sources_are_checked():
+def test_only_fukuoka_and_hokkaido_are_marked_reviewed():
     registry = load(COVERAGE_PATH)
     reviewed_codes = set(registry["reviewed_prefecture_codes"])
     reviewed_plan_sources = {
@@ -183,4 +185,4 @@ def test_only_fukuoka_is_marked_reviewed_until_other_primary_sources_are_checked
         for source in registry["plan_sources"]
         if source["review_status"] in {"reviewed", "verified"}
     }
-    assert reviewed_codes == reviewed_plan_sources == {"40"}
+    assert reviewed_codes == reviewed_plan_sources == {"01", "40"}

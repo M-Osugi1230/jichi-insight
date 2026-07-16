@@ -40,7 +40,7 @@ export default function HokkaidoPage() {
       <div className="pageShell">
         <PageIntro eyebrow="Hokkaido policy indicators" title="北海道の政策指標を、原文と期間から読む。">
           <p>
-            北海道総合計画の政策体系18分野と、公式の指標個票108件のうちReviewed化した指標1〜{hokkaidoIndicatorReviewStats.reviewedIndicators}を公開しています。
+            北海道総合計画の政策体系18分野と、公式の指標個票108件をすべてReviewed化して公開しています。
             現状値・中間目標・最終目標は確認済みですが、年度別実績とはまだ接続していないため、達成率や政策評価は表示しません。
           </p>
           <div className={styles.introLinks}>
@@ -57,12 +57,12 @@ export default function HokkaidoPage() {
           <article className={styles.summaryCard}>
             <span>Reviewed指標</span>
             <strong>{hokkaidoIndicatorReviewStats.reviewedIndicators}</strong>
-            <p>公式番号1〜{hokkaidoIndicatorReviewStats.reviewedIndicators}。108指標すべての完了ではありません。</p>
+            <p>公式番号1〜108を全件Reviewed済み。年度実績との接続は別工程です。</p>
           </article>
           <article className={styles.summaryCard}>
             <span>Reviewed分野</span>
             <strong>{hokkaidoIndicatorGroups.length}</strong>
-            <p>食から社会経済の基盤整備まで。政策体系18分野の一部です。</p>
+            <p>食から歴史・文化・スポーツまで。政策体系18分野すべてです。</p>
           </article>
           <article className={styles.summaryCard}>
             <span>Evidence Packet</span>
@@ -80,7 +80,7 @@ export default function HokkaidoPage() {
           <div>
             <p className="eyebrow">Review coverage</p>
             <h2 id="review-progress-title">
-              {hokkaidoIndicatorReviewStats.reviewedIndicators} / 108を部分公開。残り{hokkaidoIndicatorReviewStats.remainingIndicators}指標は未公開のまま分ける。
+              108 / 108のKPI本文Reviewedを完了。次は年度実績との接続。
             </h2>
           </div>
           <div className={styles.progressDetail}>
@@ -93,12 +93,12 @@ export default function HokkaidoPage() {
             </div>
             <dl>
               <div><dt>Reviewed</dt><dd>{hokkaidoIndicatorReviewStats.reviewedIndicators}指標</dd></div>
-              <div><dt>次工程</dt><dd>{hokkaidoIndicatorReviewStats.remainingIndicators}指標</dd></div>
+              <div><dt>次工程</dt><dd>年度実績接続</dd></div>
               <div><dt>更新日</dt><dd>2026年7月17日</dd></div>
             </dl>
             <p>
               この比率は政策成果の達成率ではなく、公式指標を人が照合した作業カバレッジです。
-              未Reviewedの指標は推測で補いません。
+              目標を確認しただけで成果を評価したとは扱いません。
             </p>
           </div>
         </section>
@@ -107,7 +107,7 @@ export default function HokkaidoPage() {
           <p className="eyebrow">Policy hierarchy</p>
           <h2>{reviewedHokkaidoPolicyHierarchy.plan_title_original}</h2>
           <p className={styles.sectionLead}>
-            {reviewedHokkaidoPolicyHierarchy.plan_period_original}。3つの政策の方向と18分野を公式掲載順で登録し、現在は{hokkaidoIndicatorGroups.length}分野の指標個票までReviewed化しています。
+            {reviewedHokkaidoPolicyHierarchy.plan_period_original}。3つの政策の方向と18分野を公式掲載順で登録し、{hokkaidoIndicatorGroups.length}分野すべての指標個票をReviewed化しています。
           </p>
 
           <div className={styles.directionGrid}>
@@ -115,13 +115,14 @@ export default function HokkaidoPage() {
               const reviewedFields = direction.fields.filter((field) =>
                 reviewedFieldIds.has(field.id),
               );
+              const allFieldsReviewed = reviewedFields.length === direction.fields.length;
               return (
                 <article className={styles.directionCard} key={direction.id}>
                   <div className={styles.directionHeader}>
                     <span>{String(direction.display_order).padStart(2, "0")}</span>
                     <StatusBadge
-                      label={reviewedFields.length > 0 ? "一部指標公開" : "体系のみReviewed"}
-                      tone={reviewedFields.length > 0 ? "progress" : "neutral"}
+                      label={allFieldsReviewed ? "全分野指標公開" : "一部指標公開"}
+                      tone="progress"
                     />
                   </div>
                   <h3>{direction.title_original}</h3>
@@ -140,7 +141,7 @@ export default function HokkaidoPage() {
           </div>
           <p className={styles.hierarchyNote}>
             政策体系は{hokkaidoPolicyHierarchyStats.reviewedDirections}方向・{hokkaidoPolicyHierarchyStats.reviewedFields}分野をReviewed済みです。
-            分野の登録と、指標個票の公開は別の品質段階として扱います。
+            KPI本文のReviewed完了と、年度実績・政策評価の接続は別の品質段階として扱います。
           </p>
         </section>
 
@@ -160,8 +161,8 @@ export default function HokkaidoPage() {
             <h2>目標を確認したことと、成果を確認したことは別です。</h2>
           </div>
           <ul>
-            <li>指標{hokkaidoIndicatorReviewStats.reviewedIndicators + 1}〜108のReviewed化</li>
             <li>年度別の実績値と集計条件</li>
+            <li>定義変更・基準年変更・遡及改定の履歴</li>
             <li>目標との差が生じた理由</li>
             <li>関連する事業・予算・契約</li>
             <li>政策効果と指標変化の因果関係</li>
