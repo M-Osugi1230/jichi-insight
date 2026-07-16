@@ -6,6 +6,7 @@ import foodCatalog from "../../../data/entities/policy/hokkaido_indicator_catalo
 import industryCrossSectorCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_industry_cross_sector.json";
 import manufacturingGrowthCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_manufacturing_growth.json";
 import medicalWelfareCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_medical_welfare.json";
+import smeCommerceCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_sme_commerce.json";
 import tourismCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_tourism.json";
 import zeroCarbonCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_zero_carbon.json";
 import childrenParentingEvidence from "../../../data/entities/policy/hokkaido_indicator_children_parenting_evidence_packets.json";
@@ -16,6 +17,7 @@ import foodEvidence from "../../../data/entities/policy/hokkaido_indicator_food_
 import industryCrossSectorEvidence from "../../../data/entities/policy/hokkaido_indicator_industry_cross_sector_evidence_packets.json";
 import manufacturingGrowthEvidence from "../../../data/entities/policy/hokkaido_indicator_manufacturing_growth_evidence_packets.json";
 import medicalWelfareEvidence from "../../../data/entities/policy/hokkaido_indicator_medical_welfare_evidence_packets.json";
+import smeCommerceEvidence from "../../../data/entities/policy/hokkaido_indicator_sme_commerce_evidence_packets.json";
 import tourismEvidence from "../../../data/entities/policy/hokkaido_indicator_tourism_evidence_packets.json";
 import zeroCarbonEvidence from "../../../data/entities/policy/hokkaido_indicator_zero_carbon_evidence_packets.json";
 
@@ -76,11 +78,7 @@ type CatalogShape = {
   items: unknown[];
 };
 
-const groupDefinitions: Array<{
-  catalog: CatalogShape;
-  label: string;
-  evidence: unknown[];
-}> = [
+const groupDefinitions: Array<{ catalog: CatalogShape; label: string; evidence: unknown[] }> = [
   { catalog: foodCatalog, label: "食", evidence: foodEvidence },
   { catalog: tourismCatalog, label: "観光", evidence: tourismEvidence },
   { catalog: zeroCarbonCatalog, label: "ゼロカーボン", evidence: zeroCarbonEvidence },
@@ -91,6 +89,7 @@ const groupDefinitions: Array<{
   { catalog: educationLearningCatalog, label: "教育・学び", evidence: educationLearningEvidence },
   { catalog: medicalWelfareCatalog, label: "医療・福祉", evidence: medicalWelfareEvidence },
   { catalog: employmentWorkCatalog, label: "就業・就労環境", evidence: employmentWorkEvidence },
+  { catalog: smeCommerceCatalog, label: "中小企業・商業", evidence: smeCommerceEvidence },
 ];
 
 export const hokkaidoIndicatorGroups: HokkaidoIndicatorGroup[] = groupDefinitions.map(
@@ -110,9 +109,7 @@ export const hokkaidoReviewedIndicators = hokkaidoIndicatorGroups
   .flatMap((group) => group.indicators)
   .sort((left, right) => left.indicator_number - right.indicator_number);
 
-export const hokkaidoIndicatorEvidencePackets = groupDefinitions.flatMap(
-  ({ evidence }) => evidence,
-);
+export const hokkaidoIndicatorEvidencePackets = groupDefinitions.flatMap(({ evidence }) => evidence);
 
 export const hokkaidoIndicatorReviewStats = {
   reviewedIndicators: hokkaidoReviewedIndicators.length,
