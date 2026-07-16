@@ -73,9 +73,11 @@ check_page "/municipalities/" \
   "現行計画確認済み" \
   "Reviewedデータ公開" \
   "2050東京戦略 ～東京 もっとよくなる～" \
-  "次は大阪府の現行計画を確認する。" \
-  "第1波9拠点のうち8拠点は、後継計画・改定・計画期間まで確認しました。" \
-  "現行性未確認" \
+  "Beyond EXPO 2025" \
+  "「人生100年時代のフロンティア県・香川」実現計画" \
+  "新・沖縄21世紀ビジョン基本計画（沖縄振興計画）" \
+  "次は9地域拠点の政策体系とKPIをReviewed化する。" \
+  "第1波9拠点すべてで、公式ホームページ、計画入口、現行計画を確認しました。" \
   "公式URL候補" \
   "北海道" \
   "宮城県" \
@@ -90,6 +92,8 @@ check_page "/municipalities/" \
   "北九州市"
 
 check_absent "/municipalities/" "「未来の東京」戦略"
+check_absent "/municipalities/" "将来ビジョン・大阪"
+check_absent "/municipalities/" "大阪の再生・成長に向けた新戦略"
 
 check_page "/data-quality/" \
   "全国登録、計画入口、現行性、Reviewed、公開済みを分ける。" \
