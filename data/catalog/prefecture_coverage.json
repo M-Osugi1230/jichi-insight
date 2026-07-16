@@ -1,106 +1,20 @@
 {
   "id": "nationwide-prefecture-coverage",
-  "updated_at": "2026-07-16",
-  "verified_official_codes": [
-    "01",
-    "04",
-    "13",
-    "23",
-    "27",
-    "34",
-    "37",
-    "40",
-    "47"
-  ],
-  "regional_anchor_codes": [
-    "01",
-    "04",
-    "13",
-    "23",
-    "27",
-    "34",
-    "37",
-    "40",
-    "47"
-  ],
-  "reviewed_prefecture_codes": [
-    "40"
-  ],
-  "current_plan_confirmed_codes": [
-    "01",
-    "04",
-    "13",
-    "23",
-    "27",
-    "34",
-    "37",
-    "40",
-    "47"
-  ],
+  "updated_at": "2026-07-17",
+  "verified_official_codes": ["01", "04", "13", "23", "27", "34", "37", "40", "47"],
+  "regional_anchor_codes": ["01", "04", "13", "23", "27", "34", "37", "40", "47"],
+  "reviewed_prefecture_codes": ["40", "01"],
+  "current_plan_confirmed_codes": ["01", "04", "13", "23", "27", "34", "37", "40", "47"],
   "plan_sources": [
-    {
-      "prefecture_code": "01",
-      "title": "北海道総合計画",
-      "url": "https://www.pref.hokkaido.lg.jp/ss/sks/hokkaido_sogokeikaku.html",
-      "review_status": "indexed",
-      "verified_at": "2026-07-16"
-    },
-    {
-      "prefecture_code": "04",
-      "title": "新・宮城の将来ビジョン",
-      "url": "https://www.pref.miyagi.jp/soshiki/seisaku/vision2021.html",
-      "review_status": "indexed",
-      "verified_at": "2026-07-16"
-    },
-    {
-      "prefecture_code": "13",
-      "title": "2050東京戦略 ～東京 もっとよくなる～",
-      "url": "https://www.seisakukikaku.metro.tokyo.lg.jp/basic-plan/2050-tokyo",
-      "review_status": "indexed",
-      "verified_at": "2026-07-16"
-    },
-    {
-      "prefecture_code": "23",
-      "title": "あいちビジョン2030",
-      "url": "https://www.pref.aichi.jp/soshiki/kikaku/aichivision2030.html",
-      "review_status": "indexed",
-      "verified_at": "2026-07-16"
-    },
-    {
-      "prefecture_code": "27",
-      "title": "Beyond EXPO 2025",
-      "url": "https://www.pref.osaka.lg.jp/o020060/kikaku_keikaku/beyondexpo2025/index.html",
-      "review_status": "indexed",
-      "verified_at": "2026-07-16"
-    },
-    {
-      "prefecture_code": "34",
-      "title": "「安心▷誇り▷挑戦 ひろしまビジョン」改定版",
-      "url": "https://www.pref.hiroshima.lg.jp/soshiki/230/hiroshimavisionkaitei.html",
-      "review_status": "indexed",
-      "verified_at": "2026-07-16"
-    },
-    {
-      "prefecture_code": "37",
-      "title": "「人生100年時代のフロンティア県・香川」実現計画",
-      "url": "https://www.pref.kagawa.lg.jp/seisaku/sogo/sogokeikakuminaoshi/keikakuminaoshi.html",
-      "review_status": "indexed",
-      "verified_at": "2026-07-16"
-    },
-    {
-      "prefecture_code": "40",
-      "title": "福岡県総合計画 数値目標",
-      "url": "https://www.pref.fukuoka.lg.jp/uploaded/life/632711_61262666_misc.pdf",
-      "review_status": "reviewed",
-      "verified_at": "2026-07-16"
-    },
-    {
-      "prefecture_code": "47",
-      "title": "新・沖縄21世紀ビジョン基本計画（沖縄振興計画）",
-      "url": "https://www.pref.okinawa.jp/kensei/shisaku/1014211/1014223/1014250/index.html",
-      "review_status": "indexed",
-      "verified_at": "2026-07-16"
-    }
+    {"prefecture_code":"01","title":"北海道総合計画","url":"https://www.pref.hokkaido.lg.jp/ss/sks/hokkaido_sogokeikaku.html","review_status":"reviewed","verified_at":"2026-07-17"},
+    {"prefecture_code":"04","title":"新・宮城の将来ビジョン","url":"https://www.pref.miyagi.jp/soshiki/seisaku/vision2021.html","review_status":"indexed","verified_at":"2026-07-16"},
+    {"prefecture_code":"13","title":"2050東京戦略 ～東京 もっとよくなる～","url":"https://www.seisakukikaku.metro.tokyo.lg.jp/basic-plan/2050-tokyo","review_status":"indexed","verified_at":"2026-07-16"},
+    {"prefecture_code":"23","title":"あいちビジョン2030","url":"https://www.pref.aichi.jp/soshiki/kikaku/aichivision2030.html","review_status":"indexed","verified_at":"2026-07-16"},
+    {"prefecture_code":"27","title":"Beyond EXPO 2025","url":"https://www.pref.osaka.lg.jp/o020060/kikaku_keikaku/beyondexpo2025/index.html","review_status":"indexed","verified_at":"2026-07-16"},
+    {"prefecture_code":"34","title":"「安心▷誇り▷挑戦 ひろしまビジョン」改定版","url":"https://www.pref.hiroshima.lg.jp/soshiki/230/hiroshimavisionkaitei.html","review_status":"indexed","verified_at":"2026-07-16"},
+    {"prefecture_code":"37","title":"「人生100年時代のフロンティア県・香川」実現計画","url":"https://www.pref.kagawa.lg.jp/seisaku/sogo/sogokeikakuminaoshi/keikakuminaoshi.html","review_status":"indexed","verified_at":"2026-07-16"},
+    {"prefecture_code":"40","title":"福岡県総合計画 数値目標","url":"https://www.pref.fukuoka.lg.jp/uploaded/life/632711_61262666_misc.pdf","review_status":"reviewed","verified_at":"2026-07-16"},
+    {"prefecture_code":"47","title":"新・沖縄21世紀ビジョン基本計画（沖縄振興計画）","url":"https://www.pref.okinawa.jp/kensei/shisaku/1014211/1014223/1014250/index.html","review_status":"indexed","verified_at":"2026-07-16"}
   ],
   "records": [
     {"prefecture_code":"01","entity_id":"jp-pref-01","slug":"hokkaido","name":"北海道","region":"北海道","government_type":"道","official_url":"https://www.pref.hokkaido.lg.jp/"},
