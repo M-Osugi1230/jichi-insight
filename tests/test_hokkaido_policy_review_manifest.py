@@ -39,8 +39,15 @@ def test_manifest_counts_and_boundaries_are_complete():
     assert manifest["reviewed_indicator_count"] == 108
     assert manifest["remaining_indicator_count"] == 0
     assert manifest["indicator_evidence_packet_count"] == 108
-    assert manifest["reviewed_indicator_count"] + manifest["remaining_indicator_count"] == 108
-    assert manifest["indicator_evidence_packet_count"] == manifest["reviewed_indicator_count"]
+    assert (
+        manifest["reviewed_indicator_count"]
+        + manifest["remaining_indicator_count"]
+        == 108
+    )
+    assert (
+        manifest["indicator_evidence_packet_count"]
+        == manifest["reviewed_indicator_count"]
+    )
     assert "掲載行は113" in manifest["count_basis"]
     assert "差分5件" in manifest["count_basis"]
     assert "指標1〜108" in manifest["count_basis"]
@@ -84,4 +91,7 @@ def test_manifest_requires_all_safeguards():
         "actuals_not_inferred",
     }
     assert len(manifest["open_questions"]) == 3
-    assert all("実績" in question or "定義変更" in question for question in manifest["open_questions"])
+    assert all(
+        "実績" in question or "定義変更" in question
+        for question in manifest["open_questions"]
+    )
