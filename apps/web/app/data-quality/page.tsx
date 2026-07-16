@@ -87,7 +87,7 @@ export default function DataQualityPage() {
             <article className={styles.summaryCard}><span>Reviewed政策資料</span><strong>{snapshot.reviewedPolicySourceRecords}</strong><p>福岡県・福岡市・北九州市で本文確認済みの資料。</p></article>
             <article className={styles.summaryCard}><span>第1波・索引済み資料</span><strong>{snapshot.indexedPolicySourceRecords}</strong><p>現行性は確認済みだが、本文・KPI抽出前の8都道府県。</p></article>
             <article className={styles.summaryCard}><span>Reviewed基準実装</span><strong>{snapshot.waveOnePolicyReviewReferences}</strong><p>全国展開のデータ・Evidence Packet基準として使う都道府県。</p></article>
-            <article className={styles.summaryCard}><span>Reviewed化作業中</span><strong>{snapshot.waveOnePolicyActiveReviews}</strong><p>北海道の政策体系と108指標を確認中。</p></article>
+            <article className={styles.summaryCard}><span>Reviewed化作業中</span><strong>{snapshot.waveOnePolicyActiveReviews}</strong><p>北海道は政策体系を完了し、108指標の資料索引へ進行。</p></article>
             <article className={styles.summaryCard}><span>作業待ち</span><strong>{snapshot.waveOnePolicyQueued}</strong><p>資料構造と作業依存関係に基づき順番に着手。</p></article>
           </div>
         </section>
@@ -96,10 +96,13 @@ export default function DataQualityPage() {
           <p className="eyebrow">Policy data readiness</p>
           <h2>政策体系、数値目標、年度実績、評価を別の段階として公開する。</h2>
           <div className={styles.summaryGrid} aria-label="政策データ品質概要">
-            <article className={styles.summaryCard}><span>Reviewed基本方向</span><strong>{snapshot.reviewedPolicyDirections}</strong><p>福岡県総合計画の4方向を原文・順序付きで登録。</p></article>
-            <article className={styles.summaryCard}><span>Reviewed取組事項</span><strong>{snapshot.reviewedPolicyInitiatives}</strong><p>公式目次の1番から30番までを原文で登録。</p></article>
-            <article className={styles.summaryCard}><span>Reviewed数値目標</span><strong>{snapshot.reviewedPolicyTargets}</strong><p>取組1から26の基準値・目標値118件を期間単位付きで登録。</p></article>
-            <article className={styles.summaryCard}><span>年度実績へ接続済み</span><strong>{snapshot.policyTargetsActualsLinked}</strong><p>2022〜2024年度実績との個別対応は未実施。</p></article>
+            <article className={styles.summaryCard}><span>Reviewed基本方向</span><strong>{snapshot.reviewedPolicyDirections}</strong><p>福岡県4方向と北海道3方向を原文・公式順序で登録。</p></article>
+            <article className={styles.summaryCard}><span>北海道Reviewed政策分野</span><strong>{snapshot.reviewedHokkaidoPolicyFields}</strong><p>3基本方向に属する18分野を原文・公式順序で登録。</p></article>
+            <article className={styles.summaryCard}><span>北海道Evidence Packet</span><strong>{snapshot.hokkaidoPolicyEvidencePackets}</strong><p>3基本方向の名称、6分野、計画期間を一次資料と照合。</p></article>
+            <article className={styles.summaryCard}><span>北海道指標対象</span><strong>{snapshot.hokkaidoIndicatorTarget}</strong><p>重複を含む表示行は{snapshot.hokkaidoDuplicateInclusiveIndicatorRows}。再掲を重複登録しません。</p></article>
+            <article className={styles.summaryCard}><span>Reviewed取組事項</span><strong>{snapshot.reviewedPolicyInitiatives}</strong><p>福岡県公式目次の1番から30番までを原文で登録。</p></article>
+            <article className={styles.summaryCard}><span>Reviewed数値目標</span><strong>{snapshot.reviewedPolicyTargets}</strong><p>福岡県取組1から26の基準値・目標値118件を期間単位付きで登録。</p></article>
+            <article className={styles.summaryCard}><span>年度実績へ接続済み</span><strong>{snapshot.policyTargetsActualsLinked}</strong><p>個別KPIとの年度実績対応は未実施。</p></article>
             <article className={styles.summaryCard}><span>取組進捗へ接続済み</span><strong>{snapshot.policyInitiativesProgressLinked}</strong><p>年度報告の実績・課題との対応付けは未実施。</p></article>
             <article className={styles.summaryCard}><span>政策評価済み</span><strong>{snapshot.assessedPolicyInitiatives}</strong><p>計画文と目標値だけでは成果を評価しません。</p></article>
           </div>
