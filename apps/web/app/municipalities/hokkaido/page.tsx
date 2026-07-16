@@ -62,7 +62,7 @@ export default function HokkaidoPage() {
           <article className={styles.summaryCard}>
             <span>Reviewed分野</span>
             <strong>{hokkaidoIndicatorGroups.length}</strong>
-            <p>食からグローバル化まで。政策体系18分野の一部です。</p>
+            <p>食から北海道の強靱化まで。政策体系18分野の一部です。</p>
           </article>
           <article className={styles.summaryCard}>
             <span>Evidence Packet</span>
