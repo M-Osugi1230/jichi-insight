@@ -9,11 +9,7 @@
       "municipality_key": "fukuoka-prefecture",
       "order": 0,
       "status": "reviewed_reference",
-      "source_ids": [
-        "policy-source-fukuoka-pref-plan-2022-2026",
-        "policy-source-fukuoka-pref-progress-reports",
-        "policy-source-fukuoka-pref-progress-2024-pdf"
-      ],
+      "source_ids": ["policy-source-fukuoka-pref-plan-2022-2026", "policy-source-fukuoka-pref-progress-reports", "policy-source-fukuoka-pref-progress-2024-pdf"],
       "current_plan_title": "福岡県総合計画",
       "source_inventory_status": "reviewed",
       "next_gate": "actuals_linkage",
@@ -27,10 +23,10 @@
       "status": "active_review",
       "source_ids": ["policy-source-hokkaido-comprehensive-plan"],
       "current_plan_title": "北海道総合計画",
-      "source_inventory_status": "policy_hierarchy_reviewed",
+      "source_inventory_status": "indicator_positions_reviewed",
       "next_gate": "kpi_catalog",
-      "next_action": "18政策分野の指標個票PDFから108指標の資料位置、指標番号、再掲関係を索引化する。",
-      "priority_basis": "3基本方向・18政策分野のReviewed化を完了。次に108指標の欠落・重複を防ぐ資料索引を作成する。"
+      "next_action": "指標番号1〜108の資料・ページ位置は確認済み。次に113掲載行を生む5件の複数政策分野関係を参照として固定する。",
+      "priority_basis": "3基本方向・18政策分野と108指標の資料位置をReviewed化済み。値抽出前に再掲・複数分野関係を確定する。"
     },
     {
       "prefecture_code": "04",
