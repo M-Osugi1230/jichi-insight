@@ -24,7 +24,6 @@ def test_queue_covers_all_wave_one_anchors_once_in_operational_order():
     queue = load(QUEUE_PATH)
     coverage = load(ROOT / "data/catalog/prefecture_coverage.json")
     items = queue["items"]
-
     assert len(items) == 9
     assert [item["order"] for item in items] == list(range(9))
     assert len({item["prefecture_code"] for item in items}) == 9
@@ -36,11 +35,7 @@ def test_queue_covers_all_wave_one_anchors_once_in_operational_order():
 
 def test_fukuoka_is_the_only_reviewed_reference_and_hokkaido_is_active():
     queue = load(QUEUE_PATH)
-    items = {
-        item["prefecture_code"]: item
-        for item in queue["items"]
-    }
-
+    items = {item["prefecture_code"]: item for item in queue["items"]}
     assert queue["completed_prefecture_codes"] == ["40"]
     assert queue["active_prefecture_code"] == "01"
     assert items["40"]["status"] == "reviewed_reference"
@@ -51,32 +46,19 @@ def test_fukuoka_is_the_only_reviewed_reference_and_hokkaido_is_active():
         "indicator_relationships_reviewed"
     )
     assert items["01"]["next_gate"] == "kpi_catalog"
-    assert "指標1〜52" in items["01"]["next_action"]
+    assert "指標1〜60" in items["01"]["next_action"]
     assert "Evidence Packet付き" in items["01"]["next_action"]
-    assert "残る56指標" in items["01"]["next_action"]
-    assert "指標53〜60" in items["01"]["next_action"]
-    assert sum(
-        item["status"] == "reviewed_reference"
-        for item in queue["items"]
-    ) == 1
-    assert sum(
-        item["status"] == "active_review"
-        for item in queue["items"]
-    ) == 1
-    assert sum(
-        item["status"] == "queued"
-        for item in queue["items"]
-    ) == 7
+    assert "残る48指標" in items["01"]["next_action"]
+    assert "指標61〜71" in items["01"]["next_action"]
+    assert sum(item["status"] == "reviewed_reference" for item in queue["items"]) == 1
+    assert sum(item["status"] == "active_review" for item in queue["items"]) == 1
+    assert sum(item["status"] == "queued" for item in queue["items"]) == 7
 
 
 def test_queue_sources_exist_and_titles_match_the_policy_source_catalog():
     queue = load(QUEUE_PATH)
     source_catalog = load(ROOT / "data/catalog/policy_sources.json")
-    sources = {
-        item["id"]: item
-        for item in source_catalog["records"]
-    }
-
+    sources = {item["id"]: item for item in source_catalog["records"]}
     for item in queue["items"]:
         assert set(item["source_ids"]) <= set(sources)
         if item["prefecture_code"] != "40":
