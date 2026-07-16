@@ -42,16 +42,47 @@ def test_index_covers_all_eighteen_policy_fields_in_official_order():
     assert len({document["source_id"] for document in index["documents"]}) == 18
 
 
-def test_pdf_page_counts_total_108_without_replacing_the_113_row_boundary():
+def test_pdf_page_counts_and_indicator_ranges_preserve_all_boundaries():
     index = load(INDEX_PATH)
 
     assert sum(document["page_count"] for document in index["documents"]) == 108
+    assert sum(document["indicator_count"] for document in index["documents"]) == 108
     assert index["total_pdf_pages"] == 108
     assert index["expected_unique_indicator_count"] == 108
     assert index["duplicate_inclusive_indicator_count"] == 113
     assert "混同しない" in index["counting_boundary"]
     assert index["document_index_status"] == "completed"
-    assert index["indicator_position_status"] == "active"
+    assert index["indicator_position_status"] == "completed"
+    assert index["relationship_status"] == "active"
+
+
+def test_indicator_ranges_form_one_complete_non_overlapping_sequence():
+    index = load(INDEX_PATH)
+    numbers = [
+        number
+        for document in index["documents"]
+        for number in range(
+            document["first_indicator_number"],
+            document["last_indicator_number"] + 1,
+        )
+    ]
+
+    assert numbers == list(range(1, 109))
+    assert all(
+        document["indicator_count"]
+        == document["last_indicator_number"]
+        - document["first_indicator_number"]
+        + 1
+        for document in index["documents"]
+    )
+    assert all(
+        document["page_count"] == document["indicator_count"]
+        for document in index["documents"]
+    )
+    assert all(
+        document["indicator_position_status"] == "indexed"
+        for document in index["documents"]
+    )
 
 
 def test_indexed_documents_match_central_policy_source_records():
@@ -70,13 +101,10 @@ def test_indexed_documents_match_central_policy_source_records():
         assert f"{document['page_count']}ページ" in source["notes"]
 
 
-def test_indicator_positions_are_not_falsely_marked_complete():
+def test_indicator_relationships_remain_separate_from_number_indexing():
     index = load(INDEX_PATH)
 
-    assert all(
-        document["indicator_position_status"] == "not_indexed"
-        for document in index["documents"]
-    )
-    assert index["indicator_position_status"] == "active"
-    assert "indicators" not in index
-    assert "indicator_numbers" not in index
+    assert index["indicator_position_status"] == "completed"
+    assert index["relationship_status"] == "active"
+    assert "relationships" not in index
+    assert "repeated_indicators" not in index

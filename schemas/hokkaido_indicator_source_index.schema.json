@@ -4,7 +4,7 @@
   "title": "Hokkaido indicator source document index",
   "type": "object",
   "additionalProperties": false,
-  "required": ["id", "updated_at", "prefecture_code", "municipality_key", "landing_source_id", "expected_unique_indicator_count", "duplicate_inclusive_indicator_count", "source_document_count", "total_pdf_pages", "counting_boundary", "document_index_status", "indicator_position_status", "documents"],
+  "required": ["id", "updated_at", "prefecture_code", "municipality_key", "landing_source_id", "expected_unique_indicator_count", "duplicate_inclusive_indicator_count", "source_document_count", "total_pdf_pages", "counting_boundary", "document_index_status", "indicator_position_status", "relationship_status", "documents"],
   "properties": {
     "id": {"const": "hokkaido-indicator-source-index"},
     "updated_at": {"type": "string", "format": "date"},
@@ -14,10 +14,11 @@
     "expected_unique_indicator_count": {"const": 108},
     "duplicate_inclusive_indicator_count": {"const": 113},
     "source_document_count": {"const": 18},
-    "total_pdf_pages": {"type": "integer", "minimum": 1},
+    "total_pdf_pages": {"const": 108},
     "counting_boundary": {"type": "string", "minLength": 1},
     "document_index_status": {"type": "string", "enum": ["planned", "active", "completed"]},
     "indicator_position_status": {"type": "string", "enum": ["not_started", "active", "completed"]},
+    "relationship_status": {"type": "string", "enum": ["not_started", "active", "completed"]},
     "documents": {
       "type": "array",
       "minItems": 18,
@@ -25,13 +26,16 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["display_order", "policy_field_id", "source_id", "source_label_original", "page_count", "review_status", "indicator_position_status"],
+        "required": ["display_order", "policy_field_id", "source_id", "source_label_original", "page_count", "first_indicator_number", "last_indicator_number", "indicator_count", "review_status", "indicator_position_status"],
         "properties": {
           "display_order": {"type": "integer", "minimum": 1, "maximum": 18},
           "policy_field_id": {"type": "string", "pattern": "^policy-field-hokkaido-[a-z0-9-]+$"},
           "source_id": {"type": "string", "pattern": "^policy-source-hokkaido-indicators-[a-z0-9-]+$"},
           "source_label_original": {"type": "string", "minLength": 1},
           "page_count": {"type": "integer", "minimum": 1},
+          "first_indicator_number": {"type": "integer", "minimum": 1, "maximum": 108},
+          "last_indicator_number": {"type": "integer", "minimum": 1, "maximum": 108},
+          "indicator_count": {"type": "integer", "minimum": 1},
           "review_status": {"type": "string", "enum": ["verified", "reviewed"]},
           "indicator_position_status": {"type": "string", "enum": ["not_indexed", "partial", "indexed"]}
         }
