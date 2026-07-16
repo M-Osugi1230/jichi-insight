@@ -34,14 +34,72 @@ export default function DataQualityPage() {
       <SiteHeader />
       <div className="pageShell">
         <PageIntro eyebrow="Data quality" title="件数ではなく、確認の深さを公開する。">
-          <p>資料を見つけた状態と、値を人が確認した状態と、評価に使える状態は異なります。Jichi Insightは、収録件数と品質段階、欠損、更新日を同時に表示します。</p>
+          <p>
+            資料を見つけた状態と、値を人が確認した状態と、評価に使える状態は異なります。
+            Jichi Insightは、収録件数と品質段階、欠損、更新日を同時に表示します。
+          </p>
         </PageIntro>
+
         <section className={styles.summaryGrid} aria-label="データ品質概要">
-          <article className={styles.summaryCard}><span>公式資料・年度別資料</span><strong>{snapshot.officialSources}</strong><p>{snapshot.pilotMunicipalities}自治体の公式入口と個別資料。</p></article>
-          <article className={styles.summaryCard}><span>Reviewed財政値</span><strong>{snapshot.reviewedFiscalValues}</strong><p>当初予算{snapshot.initialBudgetValues}件、決算{snapshot.settlementValues}件。</p></article>
-          <article className={styles.summaryCard}><span>Evidence coverage</span><strong>{snapshot.evidenceCoveragePercent}%</strong><p>Reviewed財政値に対応するEvidence Packetの割合。</p></article>
-          <article className={styles.summaryCard}><span>公開済み評価</span><strong>{snapshot.publicEvaluations}</strong><p>比較条件と成果データが不足するため、まだ評価していません。</p></article>
+          <article className={styles.summaryCard}>
+            <span>公式資料・年度別資料</span>
+            <strong>{snapshot.officialSources}</strong>
+            <p>{snapshot.pilotMunicipalities}自治体の公式入口と個別資料。</p>
+          </article>
+          <article className={styles.summaryCard}>
+            <span>Reviewed財政値</span>
+            <strong>{snapshot.reviewedFiscalValues}</strong>
+            <p>当初予算{snapshot.initialBudgetValues}件、決算{snapshot.settlementValues}件。</p>
+          </article>
+          <article className={styles.summaryCard}>
+            <span>Evidence coverage</span>
+            <strong>{snapshot.evidenceCoveragePercent}%</strong>
+            <p>Reviewed財政値に対応するEvidence Packetの割合。</p>
+          </article>
+          <article className={styles.summaryCard}>
+            <span>公開済み評価</span>
+            <strong>{snapshot.publicEvaluations}</strong>
+            <p>比較条件と成果データが不足するため、まだ評価していません。</p>
+          </article>
         </section>
+
+        <section className="contentSection">
+          <p className="eyebrow">Nationwide coverage readiness</p>
+          <h2>全国登録と、確認済み・Reviewed・公開済みを分ける。</h2>
+          <div className={styles.summaryGrid} aria-label="全国展開の品質概要">
+            <article className={styles.summaryCard}>
+              <span>全国登録</span>
+              <strong>{snapshot.nationwidePrefectures}</strong>
+              <p>47都道府県を共通コードと地域区分で登録。</p>
+            </article>
+            <article className={styles.summaryCard}>
+              <span>公式入口確認済み</span>
+              <strong>{snapshot.verifiedPrefectureOfficialEntries}</strong>
+              <p>自治体公式ホームページを手動確認した都道府県。</p>
+            </article>
+            <article className={styles.summaryCard}>
+              <span>総合計画索引済み</span>
+              <strong>{snapshot.sourceCatalogedPrefectures}</strong>
+              <p>計画資料の公式入口を固定した都道府県。</p>
+            </article>
+            <article className={styles.summaryCard}>
+              <span>Reviewed都道府県</span>
+              <strong>{snapshot.reviewedPrefectures}</strong>
+              <p>本文・数値・期間・単位を人が照合済み。</p>
+            </article>
+            <article className={styles.summaryCard}>
+              <span>公開済み都道府県ページ</span>
+              <strong>{snapshot.publishedPrefecturePages}</strong>
+              <p>公開ゲートと本番確認を通過したページ。</p>
+            </article>
+            <article className={styles.summaryCard}>
+              <span>公式URL候補・未確認</span>
+              <strong>{snapshot.candidatePrefectureOfficialEntries}</strong>
+              <p>全国登録済みだが、手動確認前の候補URL。</p>
+            </article>
+          </div>
+        </section>
+
         <section className="contentSection">
           <p className="eyebrow">Policy data readiness</p>
           <h2>政策体系、数値目標、年度実績、評価を別の段階として公開する。</h2>
@@ -54,6 +112,7 @@ export default function DataQualityPage() {
             <article className={styles.summaryCard}><span>政策評価済み</span><strong>{snapshot.assessedPolicyInitiatives}</strong><p>計画文と目標値だけでは成果を評価しません。</p></article>
           </div>
         </section>
+
         <section className="contentSection">
           <p className="eyebrow">Executive evidence readiness</p>
           <h2>首長分野は、任期・探索・公約資料・分割レビュー・評価を分ける。</h2>
@@ -66,6 +125,7 @@ export default function DataQualityPage() {
             <article className={styles.summaryCard}><span>個別公約レコード</span><strong>{snapshot.extractedPromiseRecords}</strong><p>明確な原文境界を確認できるまで0件を維持。</p></article>
           </div>
         </section>
+
         <section className="contentSection">
           <p className="eyebrow">Evidence acquisition pipeline</p>
           <h2>照会案、送信、回答を別の進捗として公開する。</h2>
@@ -75,18 +135,26 @@ export default function DataQualityPage() {
             <article className={styles.summaryCard}><span>回答受領</span><strong>{snapshot.sourceRequestResponses}</strong><p>回答日時と回答概要を確認できるものだけを計上。</p></article>
           </div>
         </section>
+
         <section className="contentSection">
           <p className="eyebrow">Coverage by municipality</p>
           <h2>自治体ごとの深さを、同じ件数として扱わない。</h2>
           <div className={styles.coverageGrid}>
             {municipalityQuality.map((municipality) => (
               <article className={styles.coverageCard} key={municipality.key}>
-                <div className={styles.coverageHeader}><h3>{municipality.name}</h3><StatusBadge label={municipality.status === "reviewed-data" ? "Reviewed data" : "Indexed only"} tone={municipality.status === "reviewed-data" ? "verified" : "progress"} /></div>
+                <div className={styles.coverageHeader}>
+                  <h3>{municipality.name}</h3>
+                  <StatusBadge
+                    label={municipality.status === "reviewed-data" ? "Reviewed data" : "Indexed only"}
+                    tone={municipality.status === "reviewed-data" ? "verified" : "progress"}
+                  />
+                </div>
                 <dl className={styles.coverageFacts}><div><dt>公式資料</dt><dd>{municipality.officialSources}件</dd></div><div><dt>Reviewed財政値</dt><dd>{municipality.reviewedFiscalValues}件</dd></div><div><dt>Evidence Packet</dt><dd>{municipality.evidencePackets}件</dd></div><div><dt>評価</dt><dd>{municipality.publicEvaluations}件</dd></div></dl>
               </article>
             ))}
           </div>
         </section>
+
         <section className="contentSection"><p className="eyebrow">Quality ladder</p><h2>公開までの6段階</h2><div className={styles.qualityTableWrap}><table className={styles.qualityTable}><thead><tr><th>段階</th><th>意味</th><th>利用方法</th></tr></thead><tbody>{qualityLevels.map(([level, meaning, use]) => <tr key={level}><td>{level}</td><td>{meaning}</td><td>{use}</td></tr>)}</tbody></table></div></section>
         <section className="contentSection"><p className="eyebrow">Publication gaps</p><h2>評価を始める前に、まだ必要なもの</h2><ul className={styles.gapList}>{publicationGaps.map((gap) => <li key={gap}>{gap}</li>)}</ul></section>
         <section className="callout callout--dark"><div><p className="eyebrow">Why zero evaluations</p><h2>データ不足を、点数で埋めません。</h2><p>財政値だけでは、政策成果、首長の実行、議会の監視を公平に評価できません。類似団体比較、事業・契約・KPI、公約、議会資料が接続されるまで、評価0件を維持します。</p></div></section>

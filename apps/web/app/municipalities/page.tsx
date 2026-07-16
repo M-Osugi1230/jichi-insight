@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 import { PageIntro } from "@/components/PageIntro";
@@ -5,57 +6,175 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { StatusBadge } from "@/components/StatusBadge";
 import { municipalityMeta, sourcesForMunicipality, type MunicipalityKey } from "@/lib/catalog";
+import {
+  coverageStageLabel,
+  coverageStageTone,
+  nationwideCoverageByRegion,
+  nationwideCoverageStats,
+} from "@/lib/nationwideCoverage";
 
-const keys = Object.keys(municipalityMeta) as MunicipalityKey[];
+import styles from "./page.module.css";
+
+export const metadata: Metadata = {
+  title: "全国自治体カバレッジ",
+  description:
+    "全国47都道府県の登録状況、公式入口の確認、総合計画の索引、Reviewedデータと公開ページの整備状況を確認できます。",
+};
+
+const cityKeys = (Object.keys(municipalityMeta) as MunicipalityKey[]).filter(
+  (key) => municipalityMeta[key].type === "政令指定都市",
+);
+
+const planStatusLabels = {
+  not_started: "未着手",
+  indexed: "計画入口確認済み",
+  reviewed: "Reviewed",
+  verified: "Verified",
+} as const;
 
 export default function MunicipalitiesPage() {
   return (
     <main>
       <SiteHeader />
       <div className="pageShell">
-        <PageIntro eyebrow="Pilot municipalities" title="自治体ごとの物語を、一本につなぐ。">
+        <PageIntro eyebrow="Nationwide coverage" title="全国47都道府県を、同じ品質段階で追う。">
           <p>
-            現在は3自治体を対象に、財政、重点事業、公約、議会を横断するデータモデルを作っています。
-            レビューが完了した範囲だけを自治体ページとして順次公開します。
+            全国を登録対象にしました。ただし、名前を登録した状態、公式サイトを確認した状態、総合計画を索引化した状態、数値を人が照合した状態は同じではありません。
+            Jichi Insightは、未着手を公開済みのように見せず、段階ごとの進捗をそのまま表示します。
           </p>
         </PageIntro>
-        <div className="municipalityListPage">
-          {keys.map((key, index) => {
-            const municipality = municipalityMeta[key];
-            const sourceCount = sourcesForMunicipality(key).length;
-            return (
-              <article className="municipalityRow" key={key}>
-                <span className="municipalityNumber">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-                <div className="municipalityRowMain">
-                  <div className="municipalityRowHeading">
-                    <div>
-                      <p>{municipality.type}</p>
-                      <h2>{municipality.name}</h2>
-                    </div>
-                    <StatusBadge
-                      label={municipality.status}
-                      tone={municipality.href ? "verified" : "progress"}
-                    />
-                  </div>
-                  <p>{municipality.summary}</p>
-                  <dl className="municipalityFacts">
-                    <div><dt>公式資料入口</dt><dd>{sourceCount}件</dd></div>
-                    <div><dt>財政データ</dt><dd>{municipality.fiscalSummary}</dd></div>
-                    <div><dt>評価</dt><dd>未実施</dd></div>
-                  </dl>
-                  <div className="heroActions">
-                    {municipality.href ? (
-                      <Link href={municipality.href}>自治体ページを見る</Link>
-                    ) : null}
-                    <Link href={`/sources#${key}`}>確認済み資料を見る</Link>
-                  </div>
+
+        <section className={styles.summaryGrid} aria-label="全国展開の概要">
+          <article className={styles.summaryCard}>
+            <span>全国登録</span>
+            <strong>{nationwideCoverageStats.totalPrefectures}</strong>
+            <p>47都道府県を共通コード・地域区分・公式URL候補付きで登録。</p>
+          </article>
+          <article className={styles.summaryCard}>
+            <span>公式入口確認済み</span>
+            <strong>{nationwideCoverageStats.verifiedOfficialEntries}</strong>
+            <p>各地域の先行拠点を中心に、公式ホームページを手動確認。</p>
+          </article>
+          <article className={styles.summaryCard}>
+            <span>総合計画索引済み</span>
+            <strong>{nationwideCoverageStats.sourceCatalogedPrefectures}</strong>
+            <p>福岡県、広島県、沖縄県で計画資料の入口を確認。</p>
+          </article>
+          <article className={styles.summaryCard}>
+            <span>Reviewedデータ公開</span>
+            <strong>{nationwideCoverageStats.reviewedPrefectures}</strong>
+            <p>一次資料と人の照合を通過した都道府県だけを計上。</p>
+          </article>
+        </section>
+
+        <section className={styles.ladderSection}>
+          <div>
+            <p className="eyebrow">Coverage ladder</p>
+            <h2>量を増やしても、品質段階は混ぜない。</h2>
+          </div>
+          <ol className={styles.ladder}>
+            <li><strong>1</strong><span>全国登録済み</span><p>コード・名称・地域・公式URL候補を登録。</p></li>
+            <li><strong>2</strong><span>公式入口確認済み</span><p>自治体公式サイトであることを手動確認。</p></li>
+            <li><strong>3</strong><span>計画資料索引済み</span><p>総合計画・実施計画の公式入口を固定。</p></li>
+            <li><strong>4</strong><span>Reviewedデータ公開</span><p>本文・数値・期間・単位を一次資料と照合。</p></li>
+          </ol>
+        </section>
+
+        <section className="contentSection">
+          <p className="eyebrow">47 prefectures</p>
+          <h2>地域ごとの全国カバレッジ</h2>
+          <p className={styles.sectionLead}>
+            第1波は各地域の拠点9都道府県です。候補URLは確認済みURLと区別し、手動確認後にのみ「公式入口確認済み」へ昇格します。
+          </p>
+
+          <div className={styles.regionStack}>
+            {nationwideCoverageByRegion.map(({ region, records }) => (
+              <section className={styles.regionSection} key={region}>
+                <div className={styles.regionHeader}>
+                  <h3>{region}</h3>
+                  <span>{records.length}都道府県</span>
                 </div>
-              </article>
-            );
-          })}
-        </div>
+                <div className={styles.prefectureGrid}>
+                  {records.map((record) => (
+                    <article className={styles.prefectureCard} key={record.prefecture_code}>
+                      <div className={styles.prefectureTop}>
+                        <div>
+                          <span className={styles.code}>{record.prefecture_code}</span>
+                          <h4>{record.name}</h4>
+                        </div>
+                        <StatusBadge
+                          label={coverageStageLabel(record.coverageStage)}
+                          tone={coverageStageTone(record.coverageStage)}
+                        />
+                      </div>
+
+                      <dl className={styles.prefectureFacts}>
+                        <div>
+                          <dt>公式入口</dt>
+                          <dd>{record.officialEntryStatus === "verified" ? "確認済み" : "候補・未確認"}</dd>
+                        </div>
+                        <div>
+                          <dt>総合計画</dt>
+                          <dd>{planStatusLabels[record.planReviewStatus]}</dd>
+                        </div>
+                        <div>
+                          <dt>公開ページ</dt>
+                          <dd>{record.publicHref ? "公開中" : "未公開"}</dd>
+                        </div>
+                      </dl>
+
+                      <div className={styles.actions}>
+                        {record.publicHref ? <Link href={record.publicHref}>自治体ページ</Link> : null}
+                        {record.planSource ? (
+                          <a href={record.planSource.url} target="_blank" rel="noreferrer">総合計画 ↗</a>
+                        ) : null}
+                        <a href={record.official_url} target="_blank" rel="noreferrer">
+                          {record.officialEntryStatus === "verified" ? "公式サイト ↗" : "公式URL候補 ↗"}
+                        </a>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </section>
+            ))}
+          </div>
+        </section>
+
+        <section className="contentSection">
+          <p className="eyebrow">Designated-city pilots</p>
+          <h2>政令指定都市の既存パイロット</h2>
+          <div className={styles.cityGrid}>
+            {cityKeys.map((key) => {
+              const municipality = municipalityMeta[key];
+              return (
+                <article className={styles.cityCard} key={key}>
+                  <div>
+                    <p>{municipality.type}</p>
+                    <h3>{municipality.name}</h3>
+                  </div>
+                  <StatusBadge label={municipality.status} tone="verified" />
+                  <p>{municipality.summary}</p>
+                  <dl>
+                    <div><dt>公式資料入口</dt><dd>{sourcesForMunicipality(key).length}件</dd></div>
+                    <div><dt>財政データ</dt><dd>{municipality.fiscalSummary}</dd></div>
+                  </dl>
+                  {municipality.href ? <Link href={municipality.href}>自治体ページを見る</Link> : null}
+                </article>
+              );
+            })}
+          </div>
+        </section>
+
+        <section className="callout callout--dark">
+          <div>
+            <p className="eyebrow">Next nationwide wave</p>
+            <h2>次は9地域拠点の総合計画を、同じ形式で索引化する。</h2>
+            <p>
+              北海道、宮城県、東京都、愛知県、大阪府、広島県、香川県、福岡県、沖縄県を第1波とし、計画体系、数値目標、年度実績の順に接続します。
+              各段階でEvidence Packetと公開ゲートを必須にします。
+            </p>
+          </div>
+        </section>
       </div>
       <SiteFooter />
     </main>

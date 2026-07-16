@@ -8,6 +8,7 @@ import {
 import { fukuokaPrefectureFinance } from "./finance";
 import { fukuokaCityFinance } from "./fukuokaCityFinance";
 import { kitakyushuFinance } from "./kitakyushuFinance";
+import { nationwideCoverageStats } from "./nationwideCoverage";
 import { policyDirectionStats, policyInitiativeStats } from "./policies";
 import { allPolicyTargetStats } from "./policyTargets";
 import { sourceRequestRecords } from "./sourceRequests";
@@ -29,7 +30,10 @@ const municipalityNames: Record<MunicipalityKey, string> = {
 };
 
 const municipalityKeys = Object.keys(municipalityNames) as MunicipalityKey[];
-const recordsByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFinance.records> = {
+const recordsByMunicipality: Record<
+  MunicipalityKey,
+  typeof fukuokaPrefectureFinance.records
+> = {
   "fukuoka-prefecture": fukuokaPrefectureFinance.records,
   "fukuoka-city": fukuokaCityFinance.records,
   "kitakyushu-city": kitakyushuFinance.records,
@@ -49,12 +53,22 @@ const evidenceSubjects = new Set(evidencePackets.map((packet) => packet.subject_
 export const dataQualitySnapshot = {
   updatedAt: "2026-07-16",
   pilotMunicipalities: municipalityKeys.length,
+  nationwidePrefectures: nationwideCoverageStats.totalPrefectures,
+  verifiedPrefectureOfficialEntries:
+    nationwideCoverageStats.verifiedOfficialEntries,
+  sourceCatalogedPrefectures: nationwideCoverageStats.sourceCatalogedPrefectures,
+  reviewedPrefectures: nationwideCoverageStats.reviewedPrefectures,
+  publishedPrefecturePages: nationwideCoverageStats.publishedPrefecturePages,
+  candidatePrefectureOfficialEntries:
+    nationwideCoverageStats.candidateOfficialEntries,
   officialSources: sourceCatalog.length,
   reviewedSources: sourceCatalog.filter(
-    (source) => source.review_status === "reviewed" || source.review_status === "verified",
+    (source) =>
+      source.review_status === "reviewed" || source.review_status === "verified",
   ).length,
   reviewedFiscalValues: fiscalRecords.filter(
-    (record) => record.review_status === "reviewed" || record.review_status === "verified",
+    (record) =>
+      record.review_status === "reviewed" || record.review_status === "verified",
   ).length,
   evidencePackets: evidencePackets.length,
   evidenceCoveragePercent:
@@ -65,8 +79,12 @@ export const dataQualitySnapshot = {
             fiscalRecords.length) *
             100,
         ),
-  initialBudgetValues: fiscalRecords.filter((record) => record.stage === "initial_budget").length,
-  settlementValues: fiscalRecords.filter((record) => record.stage === "settlement").length,
+  initialBudgetValues: fiscalRecords.filter(
+    (record) => record.stage === "initial_budget",
+  ).length,
+  settlementValues: fiscalRecords.filter(
+    (record) => record.stage === "settlement",
+  ).length,
   reviewedPolicyDirections: policyDirectionStats.reviewedDirections,
   reviewedPolicyInitiatives: policyInitiativeStats.reviewedInitiatives,
   reviewedPolicyTargets: allPolicyTargetStats.reviewedTargets,
@@ -90,26 +108,32 @@ export const dataQualitySnapshot = {
   sourceRequestDrafts: sourceRequestRecords.filter(
     (request) => request.status === "draft" || request.status === "ready_for_review",
   ).length,
-  sourceRequestsSent: sourceRequestRecords.filter((request) => request.sent_at !== null).length,
+  sourceRequestsSent: sourceRequestRecords.filter(
+    (request) => request.sent_at !== null,
+  ).length,
   sourceRequestResponses: sourceRequestRecords.filter(
     (request) => request.response_received_at !== null,
   ).length,
   publicEvaluations: 0,
 };
 
-export const municipalityQuality: MunicipalityQuality[] = municipalityKeys.map((key) => {
-  const records = recordsByMunicipality[key];
-  const packets = evidenceByMunicipality[key];
-  return {
-    key,
-    name: municipalityNames[key],
-    officialSources: sourceCatalog.filter((source) => source.municipality_key === key).length,
-    reviewedFiscalValues: records.length,
-    evidencePackets: packets.length,
-    publicEvaluations: 0,
-    status: records.length > 0 ? "reviewed-data" : "indexed-only",
-  };
-});
+export const municipalityQuality: MunicipalityQuality[] = municipalityKeys.map(
+  (key) => {
+    const records = recordsByMunicipality[key];
+    const packets = evidenceByMunicipality[key];
+    return {
+      key,
+      name: municipalityNames[key],
+      officialSources: sourceCatalog.filter(
+        (source) => source.municipality_key === key,
+      ).length,
+      reviewedFiscalValues: records.length,
+      evidencePackets: packets.length,
+      publicEvaluations: 0,
+      status: records.length > 0 ? "reviewed-data" : "indexed-only",
+    };
+  },
+);
 
 export const publicationGaps = [
   "事業別の予算・契約・執行・決算",
