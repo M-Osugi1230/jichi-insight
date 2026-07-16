@@ -27,10 +27,10 @@
       "status": "active_review",
       "source_ids": ["policy-source-hokkaido-comprehensive-plan"],
       "current_plan_title": "北海道総合計画",
-      "source_inventory_status": "plan_kpi_entry_indexed",
-      "next_gate": "policy_hierarchy",
-      "next_action": "108指標の個票から政策階層、指標名、基準値、目標値、期間、単位を抽出し、Evidence Packetを作成する。",
-      "priority_basis": "公式入口に指標個票がまとまっており、福岡県以外でKPI抽出モデルを検証しやすい。"
+      "source_inventory_status": "policy_hierarchy_reviewed",
+      "next_gate": "kpi_catalog",
+      "next_action": "18政策分野の指標個票PDFから108指標の資料位置、指標番号、再掲関係を索引化する。",
+      "priority_basis": "3基本方向・18政策分野のReviewed化を完了。次に108指標の欠落・重複を防ぐ資料索引を作成する。"
     },
     {
       "prefecture_code": "04",

@@ -1,0 +1,129 @@
+{
+  "id": "policy-hierarchy-hokkaido",
+  "prefecture_code": "01",
+  "municipality_key": "hokkaido-prefecture",
+  "plan_source_ids": ["policy-source-hokkaido-comprehensive-plan"],
+  "plan_title_original": "北海道総合計画",
+  "plan_period_start": 2024,
+  "plan_period_end": null,
+  "plan_period_original": "2024（令和6）年度から概ね10年間",
+  "directions": [
+    {
+      "id": "policy-direction-hokkaido-growth",
+      "display_order": 1,
+      "title_original": "潜在力発揮による成長",
+      "fields": [
+        {
+          "id": "policy-field-hokkaido-food",
+          "display_order": 1,
+          "title_original": "食"
+        },
+        {
+          "id": "policy-field-hokkaido-tourism",
+          "display_order": 2,
+          "title_original": "観光"
+        },
+        {
+          "id": "policy-field-hokkaido-zero-carbon",
+          "display_order": 3,
+          "title_original": "ゼロカーボン"
+        },
+        {
+          "id": "policy-field-hokkaido-digital",
+          "display_order": 4,
+          "title_original": "デジタル"
+        },
+        {
+          "id": "policy-field-hokkaido-manufacturing-growth",
+          "display_order": 5,
+          "title_original": "ものづくり・成長分野"
+        },
+        {
+          "id": "policy-field-hokkaido-industry-cross-sector",
+          "display_order": 6,
+          "title_original": "産業活性化・業種横断分野"
+        }
+      ]
+    },
+    {
+      "id": "policy-direction-hokkaido-opportunity-safety",
+      "display_order": 2,
+      "title_original": "誰もが可能性を発揮できる社会と安全・安心なくらし",
+      "fields": [
+        {
+          "id": "policy-field-hokkaido-children-parenting",
+          "display_order": 1,
+          "title_original": "子ども・子育て"
+        },
+        {
+          "id": "policy-field-hokkaido-education-learning",
+          "display_order": 2,
+          "title_original": "教育・学び"
+        },
+        {
+          "id": "policy-field-hokkaido-medical-welfare",
+          "display_order": 3,
+          "title_original": "医療・福祉"
+        },
+        {
+          "id": "policy-field-hokkaido-employment-work",
+          "display_order": 4,
+          "title_original": "就業・就労環境"
+        },
+        {
+          "id": "policy-field-hokkaido-sme-commerce",
+          "display_order": 5,
+          "title_original": "中小企業・商業"
+        },
+        {
+          "id": "policy-field-hokkaido-safety-security",
+          "display_order": 6,
+          "title_original": "安全・安心"
+        }
+      ]
+    },
+    {
+      "id": "policy-direction-hokkaido-regional-sustainability",
+      "display_order": 3,
+      "title_original": "各地域の持続的な発展",
+      "fields": [
+        {
+          "id": "policy-field-hokkaido-regional-development",
+          "display_order": 1,
+          "title_original": "地域づくり"
+        },
+        {
+          "id": "policy-field-hokkaido-globalization",
+          "display_order": 2,
+          "title_original": "グローバル化"
+        },
+        {
+          "id": "policy-field-hokkaido-resilience",
+          "display_order": 3,
+          "title_original": "北海道の強靱化"
+        },
+        {
+          "id": "policy-field-hokkaido-socioeconomic-infrastructure",
+          "display_order": 4,
+          "title_original": "社会経済の基盤整備"
+        },
+        {
+          "id": "policy-field-hokkaido-nature-environment",
+          "display_order": 5,
+          "title_original": "自然・環境"
+        },
+        {
+          "id": "policy-field-hokkaido-history-culture-sports",
+          "display_order": 6,
+          "title_original": "歴史・文化・スポーツ"
+        }
+      ]
+    }
+  ],
+  "progress_linkage_status": "not_linked",
+  "evaluation_status": "not_assessed",
+  "source_location": "北海道総合計画公式ページの参考資料一覧、本編PDF目次（PDFページ5-6）、計画期間（PDFページ9）",
+  "reviewed_at": "2026-07-16",
+  "review_status": "reviewed",
+  "confidence": "high"
+}

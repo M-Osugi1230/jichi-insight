@@ -9,6 +9,7 @@ import {
 } from "./executives";
 import { fukuokaPrefectureFinance } from "./finance";
 import { fukuokaCityFinance } from "./fukuokaCityFinance";
+import { hokkaidoPolicyHierarchyStats } from "./hokkaidoPolicies";
 import { kitakyushuFinance } from "./kitakyushuFinance";
 import { nationwideCoverageStats } from "./nationwideCoverage";
 import { policyDirectionStats, policyInitiativeStats } from "./policies";
@@ -103,7 +104,16 @@ export const dataQualitySnapshot = {
   settlementValues: fiscalRecords.filter(
     (record) => record.stage === "settlement",
   ).length,
-  reviewedPolicyDirections: policyDirectionStats.reviewedDirections,
+  reviewedPolicyDirections:
+    policyDirectionStats.reviewedDirections +
+    hokkaidoPolicyHierarchyStats.reviewedDirections,
+  reviewedHokkaidoPolicyDirections:
+    hokkaidoPolicyHierarchyStats.reviewedDirections,
+  reviewedHokkaidoPolicyFields: hokkaidoPolicyHierarchyStats.reviewedFields,
+  hokkaidoPolicyEvidencePackets: hokkaidoPolicyHierarchyStats.evidencePackets,
+  hokkaidoIndicatorTarget: hokkaidoPolicyHierarchyStats.indicatorTarget,
+  hokkaidoDuplicateInclusiveIndicatorRows:
+    hokkaidoPolicyHierarchyStats.duplicateInclusiveIndicatorRows,
   reviewedPolicyInitiatives: policyInitiativeStats.reviewedInitiatives,
   reviewedPolicyTargets: allPolicyTargetStats.reviewedTargets,
   policyTargetsActualsLinked: allPolicyTargetStats.actualsLinked,

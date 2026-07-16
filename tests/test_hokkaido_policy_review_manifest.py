@@ -35,19 +35,21 @@ def test_hokkaido_manifest_is_linked_to_the_active_wave_one_queue_item():
     assert manifest["municipality_key"] == "hokkaido-prefecture"
     assert active_item["prefecture_code"] == manifest["prefecture_code"]
     assert active_item["status"] == "active_review"
+    assert active_item["source_inventory_status"] == "policy_hierarchy_reviewed"
+    assert active_item["next_gate"] == "kpi_catalog"
     assert set(manifest["plan_source_ids"]) <= set(active_item["source_ids"])
 
 
-def test_hokkaido_manifest_preserves_the_official_108_indicator_boundary():
+def test_hokkaido_manifest_preserves_the_official_indicator_boundaries():
     manifest = load(MANIFEST_PATH)
 
     assert manifest["expected_indicator_count"] == 108
-    assert "公式入口" in manifest["count_basis"]
-    assert manifest["extraction_status"] == "planned"
-    assert manifest["active_work_package"] == "policy_hierarchy"
+    assert "重複を含めると113" in manifest["count_basis"]
+    assert manifest["extraction_status"] == "in_progress"
+    assert manifest["active_work_package"] == "indicator_source_index"
 
 
-def test_hokkaido_work_packages_have_one_active_stage_and_block_publication():
+def test_hokkaido_work_packages_advance_one_stage_and_block_publication():
     manifest = load(MANIFEST_PATH)
     packages = manifest["work_packages"]
     packages_by_id = {package["id"]: package for package in packages}
@@ -60,7 +62,8 @@ def test_hokkaido_work_packages_have_one_active_stage_and_block_publication():
         "web_publication",
     ]
     assert sum(package["status"] == "active" for package in packages) == 1
-    assert packages_by_id["policy_hierarchy"]["status"] == "active"
+    assert packages_by_id["policy_hierarchy"]["status"] == "completed"
+    assert packages_by_id["indicator_source_index"]["status"] == "active"
     assert packages_by_id["web_publication"]["status"] == "blocked"
     assert all(package["deliverable"].strip() for package in packages)
     assert all(package["completion_gate"].strip() for package in packages)
