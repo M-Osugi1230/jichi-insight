@@ -1,0 +1,68 @@
+[
+  {
+    "id": "evidence-policy-indicator-hokkaido-40",
+    "subject_type": "kpi",
+    "subject_id": "policy-indicator-hokkaido-40",
+    "claims": [
+      {"field": "indicator_name_original", "statement": "指標40は『北海道におけるスタートアップの創出・集積数』。", "source_ids": ["policy-source-hokkaido-indicators-industry-cross-sector"], "location_note": "PDFページ1『番号・指標名』", "decision": "accepted", "review_note": null},
+      {"field": "series", "statement": "現状値124社（2023年）、中間目標250社（2028年）、目標500社（2033年）。", "source_ids": ["policy-source-hokkaido-indicators-industry-cross-sector"], "location_note": "PDFページ1『目標』", "decision": "accepted", "review_note": "単年度値ではなく各時点までの累計到達値として保持する。"}
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-policy-indicator-hokkaido-41",
+    "subject_type": "kpi",
+    "subject_id": "policy-indicator-hokkaido-41",
+    "claims": [
+      {"field": "indicator_name_original", "statement": "指標41は『企業立地件数』。", "source_ids": ["policy-source-hokkaido-indicators-industry-cross-sector"], "location_note": "PDFページ2『番号・指標名』", "decision": "accepted", "review_note": null},
+      {"field": "series", "statement": "現状値98件（2022年）、中間目標420件（2023～27年の5年累計）、目標860件（2023～32年の10年累計）。", "source_ids": ["policy-source-hokkaido-indicators-industry-cross-sector"], "location_note": "PDFページ2『目標』", "decision": "accepted", "review_note": "現状は単年度、目標は複数年度累計として集計範囲を分離する。"}
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-policy-indicator-hokkaido-42",
+    "subject_type": "kpi",
+    "subject_id": "policy-indicator-hokkaido-42",
+    "claims": [
+      {"field": "indicator_name_original", "statement": "指標42は『就業率（全体）』。", "source_ids": ["policy-source-hokkaido-indicators-industry-cross-sector"], "location_note": "PDFページ3『番号・指標名』", "decision": "accepted", "review_note": null},
+      {"field": "series", "statement": "現状値57.6％（2023年）。中間目標・目標はともに『各年において前年よりも上昇』。", "source_ids": ["policy-source-hokkaido-indicators-industry-cross-sector"], "location_note": "PDFページ3『目標』", "decision": "accepted", "review_note": "具体的数値を補完せず、前年比較による条件目標として保持する。"}
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-policy-indicator-hokkaido-43",
+    "subject_type": "kpi",
+    "subject_id": "policy-indicator-hokkaido-43",
+    "claims": [
+      {"field": "indicator_name_original", "statement": "指標43は『正規従業員の充足度』。", "source_ids": ["policy-source-hokkaido-indicators-industry-cross-sector"], "location_note": "PDFページ4『番号・指標名』", "decision": "accepted", "review_note": null},
+      {"field": "series", "statement": "現状値-41.4％（2023年）、中間目標-39.7％（2028年）、目標-38.0％（2033年）。", "source_ids": ["policy-source-hokkaido-indicators-industry-cross-sector"], "location_note": "PDFページ4『目標』", "decision": "accepted", "review_note": "負値を欠損・エラー・絶対値に変換せず原文値として保持する。"}
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-policy-indicator-hokkaido-44",
+    "subject_type": "kpi",
+    "subject_id": "policy-indicator-hokkaido-44",
+    "claims": [
+      {"field": "indicator_name_original", "statement": "指標44は『産学官の共同研究の件数』。", "source_ids": ["policy-source-hokkaido-indicators-industry-cross-sector"], "location_note": "PDFページ5『番号・指標名』", "decision": "accepted", "review_note": null},
+      {"field": "series", "statement": "現状値1,712件（2022年）、中間目標1,872件（2027年）、目標2,046件（2032年）。", "source_ids": ["policy-source-hokkaido-indicators-industry-cross-sector"], "location_note": "PDFページ5『目標』", "decision": "accepted", "review_note": "年度実績として保持する。"}
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-policy-indicator-hokkaido-45",
+    "subject_type": "kpi",
+    "subject_id": "policy-indicator-hokkaido-45",
+    "claims": [
+      {"field": "indicator_name_original", "statement": "指標45は『輸出額』。", "source_ids": ["policy-source-hokkaido-indicators-industry-cross-sector"], "location_note": "PDFページ6『番号・指標名・指標掲載箇所』", "decision": "accepted", "review_note": "2基本方向・2政策分野に掲載される一意指標として保持する。"},
+      {"field": "series", "statement": "現状値4,295億円（2022年）、中間目標5,395億円（2027年）、目標6,495億円（2032年）。", "source_ids": ["policy-source-hokkaido-indicators-industry-cross-sector"], "location_note": "PDFページ6『目標』", "decision": "accepted", "review_note": "追加政策分野参照を重複KPIとして登録しない。"}
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]
