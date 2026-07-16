@@ -1,6 +1,7 @@
 import childrenParentingCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_children_parenting.json";
 import digitalCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_digital.json";
 import educationLearningCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_education_learning.json";
+import employmentWorkCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_employment_work.json";
 import foodCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_food.json";
 import industryCrossSectorCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_industry_cross_sector.json";
 import manufacturingGrowthCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_manufacturing_growth.json";
@@ -10,6 +11,7 @@ import zeroCarbonCatalog from "../../../data/entities/policy/hokkaido_indicator_
 import childrenParentingEvidence from "../../../data/entities/policy/hokkaido_indicator_children_parenting_evidence_packets.json";
 import digitalEvidence from "../../../data/entities/policy/hokkaido_indicator_digital_evidence_packets.json";
 import educationLearningEvidence from "../../../data/entities/policy/hokkaido_indicator_education_learning_evidence_packets.json";
+import employmentWorkEvidence from "../../../data/entities/policy/hokkaido_indicator_employment_work_evidence_packets.json";
 import foodEvidence from "../../../data/entities/policy/hokkaido_indicator_food_evidence_packets.json";
 import industryCrossSectorEvidence from "../../../data/entities/policy/hokkaido_indicator_industry_cross_sector_evidence_packets.json";
 import manufacturingGrowthEvidence from "../../../data/entities/policy/hokkaido_indicator_manufacturing_growth_evidence_packets.json";
@@ -82,6 +84,111 @@ export const hokkaidoEducationLearningIndicators =
   educationLearningCatalog.items as HokkaidoIndicator[];
 export const hokkaidoMedicalWelfareIndicators =
   medicalWelfareCatalog.items as HokkaidoIndicator[];
+export const hokkaidoEmploymentWorkIndicators =
+  employmentWorkCatalog.items as HokkaidoIndicator[];
+
+export const hokkaidoIndicatorGroups: HokkaidoIndicatorGroup[] = [
+  {
+    id: foodCatalog.id,
+    fieldId: foodCatalog.policy_field_id,
+    label: "食",
+    sourceDocumentUrl: foodCatalog.source_document_url,
+    reviewedAt: foodCatalog.reviewed_at,
+    indicatorNumberStart: foodCatalog.indicator_number_start,
+    indicatorNumberEnd: foodCatalog.indicator_number_end,
+    indicators: hokkaidoFoodIndicators,
+  },
+  {
+    id: tourismCatalog.id,
+    fieldId: tourismCatalog.policy_field_id,
+    label: "観光",
+    sourceDocumentUrl: tourismCatalog.source_document_url,
+    reviewedAt: tourismCatalog.reviewed_at,
+    indicatorNumberStart: tourismCatalog.indicator_number_start,
+    indicatorNumberEnd: tourismCatalog.indicator_number_end,
+    indicators: hokkaidoTourismIndicators,
+  },
+  {
+    id: zeroCarbonCatalog.id,
+    fieldId: zeroCarbonCatalog.policy_field_id,
+    label: "ゼロカーボン",
+    sourceDocumentUrl: zeroCarbonCatalog.source_document_url,
+    reviewedAt: zeroCarbonCatalog.reviewed_at,
+    indicatorNumberStart: zeroCarbonCatalog.indicator_number_start,
+    indicatorNumberEnd: zeroCarbonCatalog.indicator_number_end,
+    indicators: hokkaidoZeroCarbonIndicators,
+  },
+  {
+    id: digitalCatalog.id,
+    fieldId: digitalCatalog.policy_field_id,
+    label: "デジタル",
+    sourceDocumentUrl: digitalCatalog.source_document_url,
+    reviewedAt: digitalCatalog.reviewed_at,
+    indicatorNumberStart: digitalCatalog.indicator_number_start,
+    indicatorNumberEnd: digitalCatalog.indicator_number_end,
+    indicators: hokkaidoDigitalIndicators,
+  },
+  {
+    id: manufacturingGrowthCatalog.id,
+    fieldId: manufacturingGrowthCatalog.policy_field_id,
+    label: "ものづくり・成長分野",
+    sourceDocumentUrl: manufacturingGrowthCatalog.source_document_url,
+    reviewedAt: manufacturingGrowthCatalog.reviewed_at,
+    indicatorNumberStart: manufacturingGrowthCatalog.indicator_number_start,
+    indicatorNumberEnd: manufacturingGrowthCatalog.indicator_number_end,
+    indicators: hokkaidoManufacturingGrowthIndicators,
+  },
+  {
+    id: industryCrossSectorCatalog.id,
+    fieldId: industryCrossSectorCatalog.policy_field_id,
+    label: "産業活性化・業種横断分野",
+    sourceDocumentUrl: industryCrossSectorCatalog.source_document_url,
+    reviewedAt: industryCrossSectorCatalog.reviewed_at,
+    indicatorNumberStart: industryCrossSectorCatalog.indicator_number_start,
+    indicatorNumberEnd: industryCrossSectorCatalog.indicator_number_end,
+    indicators: hokkaidoIndustryCrossSectorIndicators,
+  },
+  {
+    id: childrenParentingCatalog.id,
+    fieldId: childrenParentingCatalog.policy_field_id,
+    label: "子ども・子育て",
+    sourceDocumentUrl: childrenParentingCatalog.source_document_url,
+    reviewedAt: childrenParentingCatalog.reviewed_at,
+    indicatorNumberStart: childrenParentingCatalog.indicator_number_start,
+    indicatorNumberEnd: childrenParentingCatalog.indicator_number_end,
+    indicators: hokkaidoChildrenParentingIndicators,
+  },
+  {
+    id: educationLearningCatalog.id,
+    fieldId: educationLearningCatalog.policy_field_id,
+    label: "教育・学び",
+    sourceDocumentUrl: educationLearningCatalog.source_document_url,
+    reviewedAt: educationLearningCatalog.reviewed_at,
+    indicatorNumberStart: educationLearningCatalog.indicator_number_start,
+    indicatorNumberEnd: educationLearningCatalog.indicator_number_end,
+    indicators: hokkaidoEducationLearningIndicators,
+  },
+  {
+    id: medicalWelfareCatalog.id,
+    fieldId: medicalWelfareCatalog.policy_field_id,
+    label: "医療・福祉",
+    sourceDocumentUrl: medicalWelfareCatalog.source_document_url,
+    reviewedAt: medicalWelfareCatalog.reviewed_at,
+    indicatorNumberStart: medicalWelfareCatalog.indicator_number_start,
+    indicatorNumberEnd: medicalWelfareCatalog.indicator_number_end,
+    indicators: hokkaidoMedicalWelfareIndicators,
+  },
+  {
+    id: employmentWorkCatalog.id,
+    fieldId: employmentWorkCatalog.policy_field_id,
+    label: "就業・就労環境",
+    sourceDocumentUrl: employmentWorkCatalog.source_document_url,
+    reviewedAt: employmentWorkCatalog.reviewed_at,
+    indicatorNumberStart: employmentWorkCatalog.indicator_number_start,
+    indicatorNumberEnd: employmentWorkCatalog.indicator_number_end,
+    indicators: hokkaidoEmploymentWorkIndicators,
+  },
+];
 
 export const hokkaidoIndicatorGroups: HokkaidoIndicatorGroup[] = [
   {
@@ -186,6 +293,7 @@ export const hokkaidoReviewedIndicators = [
   ...hokkaidoChildrenParentingIndicators,
   ...hokkaidoEducationLearningIndicators,
   ...hokkaidoMedicalWelfareIndicators,
+  ...hokkaidoEmploymentWorkIndicators,
 ].sort((left, right) => left.indicator_number - right.indicator_number);
 
 export const hokkaidoIndicatorEvidencePackets = [
@@ -198,6 +306,7 @@ export const hokkaidoIndicatorEvidencePackets = [
   ...childrenParentingEvidence,
   ...educationLearningEvidence,
   ...medicalWelfareEvidence,
+  ...employmentWorkEvidence,
 ];
 
 export const hokkaidoIndicatorReviewStats = {
