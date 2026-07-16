@@ -72,6 +72,7 @@ export const dataQualitySnapshot = {
   publishedPrefecturePages: nationwideCoverageStats.publishedPrefecturePages,
   candidatePrefectureOfficialEntries: nationwideCoverageStats.candidateOfficialEntries,
   policySourceRecords: policySourceRecords.length,
+  indexedPolicySourceRecords: indexedStrategicPlanRecords.length,
   indexedStrategicPlanRecords: indexedStrategicPlanRecords.length,
   indexedHokkaidoKpiSources: indexedHokkaidoKpiSources.length,
   hokkaidoIndicatorSourcePages: hokkaidoIndicatorSourceIndex.total_pdf_pages,
