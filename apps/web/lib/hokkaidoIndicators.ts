@@ -1,9 +1,11 @@
+import childrenParentingCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_children_parenting.json";
 import digitalCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_digital.json";
 import foodCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_food.json";
 import industryCrossSectorCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_industry_cross_sector.json";
 import manufacturingGrowthCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_manufacturing_growth.json";
 import tourismCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_tourism.json";
 import zeroCarbonCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_zero_carbon.json";
+import childrenParentingEvidence from "../../../data/entities/policy/hokkaido_indicator_children_parenting_evidence_packets.json";
 import digitalEvidence from "../../../data/entities/policy/hokkaido_indicator_digital_evidence_packets.json";
 import foodEvidence from "../../../data/entities/policy/hokkaido_indicator_food_evidence_packets.json";
 import industryCrossSectorEvidence from "../../../data/entities/policy/hokkaido_indicator_industry_cross_sector_evidence_packets.json";
@@ -59,6 +61,8 @@ export const hokkaidoManufacturingGrowthIndicators =
   manufacturingGrowthCatalog.items as HokkaidoIndicator[];
 export const hokkaidoIndustryCrossSectorIndicators =
   industryCrossSectorCatalog.items as HokkaidoIndicator[];
+export const hokkaidoChildrenParentingIndicators =
+  childrenParentingCatalog.items as HokkaidoIndicator[];
 
 export const hokkaidoReviewedIndicators = [
   ...hokkaidoFoodIndicators,
@@ -67,6 +71,7 @@ export const hokkaidoReviewedIndicators = [
   ...hokkaidoDigitalIndicators,
   ...hokkaidoManufacturingGrowthIndicators,
   ...hokkaidoIndustryCrossSectorIndicators,
+  ...hokkaidoChildrenParentingIndicators,
 ].sort((left, right) => left.indicator_number - right.indicator_number);
 
 export const hokkaidoIndicatorEvidencePackets = [
@@ -76,6 +81,7 @@ export const hokkaidoIndicatorEvidencePackets = [
   ...digitalEvidence,
   ...manufacturingGrowthEvidence,
   ...industryCrossSectorEvidence,
+  ...childrenParentingEvidence,
 ];
 
 export const hokkaidoIndicatorReviewStats = {
