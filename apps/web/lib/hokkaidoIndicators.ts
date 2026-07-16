@@ -1,6 +1,7 @@
 import childrenParentingCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_children_parenting.json";
 import digitalCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_digital.json";
 import educationLearningCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_education_learning.json";
+import employmentWorkCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_employment_work.json";
 import foodCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_food.json";
 import industryCrossSectorCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_industry_cross_sector.json";
 import manufacturingGrowthCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_manufacturing_growth.json";
@@ -10,6 +11,7 @@ import zeroCarbonCatalog from "../../../data/entities/policy/hokkaido_indicator_
 import childrenParentingEvidence from "../../../data/entities/policy/hokkaido_indicator_children_parenting_evidence_packets.json";
 import digitalEvidence from "../../../data/entities/policy/hokkaido_indicator_digital_evidence_packets.json";
 import educationLearningEvidence from "../../../data/entities/policy/hokkaido_indicator_education_learning_evidence_packets.json";
+import employmentWorkEvidence from "../../../data/entities/policy/hokkaido_indicator_employment_work_evidence_packets.json";
 import foodEvidence from "../../../data/entities/policy/hokkaido_indicator_food_evidence_packets.json";
 import industryCrossSectorEvidence from "../../../data/entities/policy/hokkaido_indicator_industry_cross_sector_evidence_packets.json";
 import manufacturingGrowthEvidence from "../../../data/entities/policy/hokkaido_indicator_manufacturing_growth_evidence_packets.json";
@@ -71,6 +73,8 @@ export const hokkaidoEducationLearningIndicators =
   educationLearningCatalog.items as HokkaidoIndicator[];
 export const hokkaidoMedicalWelfareIndicators =
   medicalWelfareCatalog.items as HokkaidoIndicator[];
+export const hokkaidoEmploymentWorkIndicators =
+  employmentWorkCatalog.items as HokkaidoIndicator[];
 
 export const hokkaidoReviewedIndicators = [
   ...hokkaidoFoodIndicators,
@@ -82,6 +86,7 @@ export const hokkaidoReviewedIndicators = [
   ...hokkaidoChildrenParentingIndicators,
   ...hokkaidoEducationLearningIndicators,
   ...hokkaidoMedicalWelfareIndicators,
+  ...hokkaidoEmploymentWorkIndicators,
 ].sort((left, right) => left.indicator_number - right.indicator_number);
 
 export const hokkaidoIndicatorEvidencePackets = [
@@ -94,6 +99,7 @@ export const hokkaidoIndicatorEvidencePackets = [
   ...childrenParentingEvidence,
   ...educationLearningEvidence,
   ...medicalWelfareEvidence,
+  ...employmentWorkEvidence,
 ];
 
 export const hokkaidoIndicatorReviewStats = {
