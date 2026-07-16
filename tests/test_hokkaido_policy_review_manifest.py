@@ -35,7 +35,7 @@ def test_hokkaido_manifest_is_linked_to_the_active_wave_one_queue_item():
     assert manifest["municipality_key"] == "hokkaido-prefecture"
     assert active_item["prefecture_code"] == manifest["prefecture_code"]
     assert active_item["status"] == "active_review"
-    assert active_item["source_inventory_status"] == "policy_hierarchy_reviewed"
+    assert active_item["source_inventory_status"] == "indicator_positions_reviewed"
     assert active_item["next_gate"] == "kpi_catalog"
     assert set(manifest["plan_source_ids"]) <= set(active_item["source_ids"])
 
@@ -49,7 +49,7 @@ def test_hokkaido_manifest_preserves_the_official_indicator_boundaries():
     assert manifest["active_work_package"] == "indicator_source_index"
 
 
-def test_hokkaido_work_package_records_documents_but_keeps_positions_active():
+def test_hokkaido_work_package_completes_positions_but_keeps_relationships_active():
     manifest = load(MANIFEST_PATH)
     packages = manifest["work_packages"]
     packages_by_id = {package["id"]: package for package in packages}
@@ -64,8 +64,9 @@ def test_hokkaido_work_package_records_documents_but_keeps_positions_active():
     assert sum(package["status"] == "active" for package in packages) == 1
     assert packages_by_id["policy_hierarchy"]["status"] == "completed"
     assert packages_by_id["indicator_source_index"]["status"] == "active"
-    assert "18政策分野" in packages_by_id["indicator_source_index"]["deliverable"]
-    assert "108ページ" in packages_by_id["indicator_source_index"]["deliverable"]
+    assert "指標番号1〜108" in packages_by_id["indicator_source_index"]["deliverable"]
+    assert "5件" in packages_by_id["indicator_source_index"]["deliverable"]
+    assert "参照" in packages_by_id["indicator_source_index"]["completion_gate"]
     assert packages_by_id["web_publication"]["status"] == "blocked"
     assert all(package["deliverable"].strip() for package in packages)
     assert all(package["completion_gate"].strip() for package in packages)
