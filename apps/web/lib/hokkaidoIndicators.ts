@@ -25,11 +25,7 @@ export type HokkaidoIndicatorValue = {
   value: number | null;
   status: "numeric" | "conditional" | "not_set" | "not_available";
   operator?: "exact" | "at_least" | "at_most";
-  aggregation_scope?:
-    | "single_period"
-    | "multi_year_cumulative"
-    | "cumulative_to_date"
-    | "snapshot";
+  aggregation_scope?: "single_period" | "multi_year_cumulative" | "cumulative_to_date" | "snapshot";
   value_text_original: string;
 };
 
@@ -70,296 +66,84 @@ export type HokkaidoIndicatorGroup = {
   indicators: HokkaidoIndicator[];
 };
 
-export const hokkaidoFoodIndicators = foodCatalog.items as HokkaidoIndicator[];
-export const hokkaidoTourismIndicators = tourismCatalog.items as HokkaidoIndicator[];
-export const hokkaidoZeroCarbonIndicators = zeroCarbonCatalog.items as HokkaidoIndicator[];
-export const hokkaidoDigitalIndicators = digitalCatalog.items as HokkaidoIndicator[];
-export const hokkaidoManufacturingGrowthIndicators =
-  manufacturingGrowthCatalog.items as HokkaidoIndicator[];
-export const hokkaidoIndustryCrossSectorIndicators =
-  industryCrossSectorCatalog.items as HokkaidoIndicator[];
-export const hokkaidoChildrenParentingIndicators =
-  childrenParentingCatalog.items as HokkaidoIndicator[];
-export const hokkaidoEducationLearningIndicators =
-  educationLearningCatalog.items as HokkaidoIndicator[];
-export const hokkaidoMedicalWelfareIndicators =
-  medicalWelfareCatalog.items as HokkaidoIndicator[];
-export const hokkaidoEmploymentWorkIndicators =
-  employmentWorkCatalog.items as HokkaidoIndicator[];
+type CatalogShape = {
+  id: string;
+  policy_field_id: string;
+  source_document_url: string;
+  reviewed_at: string;
+  indicator_number_start: number;
+  indicator_number_end: number;
+  items: unknown[];
+};
 
-export const hokkaidoIndicatorGroups: HokkaidoIndicatorGroup[] = [
-  {
-    id: foodCatalog.id,
-    fieldId: foodCatalog.policy_field_id,
-    label: "食",
-    sourceDocumentUrl: foodCatalog.source_document_url,
-    reviewedAt: foodCatalog.reviewed_at,
-    indicatorNumberStart: foodCatalog.indicator_number_start,
-    indicatorNumberEnd: foodCatalog.indicator_number_end,
-    indicators: hokkaidoFoodIndicators,
-  },
-  {
-    id: tourismCatalog.id,
-    fieldId: tourismCatalog.policy_field_id,
-    label: "観光",
-    sourceDocumentUrl: tourismCatalog.source_document_url,
-    reviewedAt: tourismCatalog.reviewed_at,
-    indicatorNumberStart: tourismCatalog.indicator_number_start,
-    indicatorNumberEnd: tourismCatalog.indicator_number_end,
-    indicators: hokkaidoTourismIndicators,
-  },
-  {
-    id: zeroCarbonCatalog.id,
-    fieldId: zeroCarbonCatalog.policy_field_id,
-    label: "ゼロカーボン",
-    sourceDocumentUrl: zeroCarbonCatalog.source_document_url,
-    reviewedAt: zeroCarbonCatalog.reviewed_at,
-    indicatorNumberStart: zeroCarbonCatalog.indicator_number_start,
-    indicatorNumberEnd: zeroCarbonCatalog.indicator_number_end,
-    indicators: hokkaidoZeroCarbonIndicators,
-  },
-  {
-    id: digitalCatalog.id,
-    fieldId: digitalCatalog.policy_field_id,
-    label: "デジタル",
-    sourceDocumentUrl: digitalCatalog.source_document_url,
-    reviewedAt: digitalCatalog.reviewed_at,
-    indicatorNumberStart: digitalCatalog.indicator_number_start,
-    indicatorNumberEnd: digitalCatalog.indicator_number_end,
-    indicators: hokkaidoDigitalIndicators,
-  },
-  {
-    id: manufacturingGrowthCatalog.id,
-    fieldId: manufacturingGrowthCatalog.policy_field_id,
-    label: "ものづくり・成長分野",
-    sourceDocumentUrl: manufacturingGrowthCatalog.source_document_url,
-    reviewedAt: manufacturingGrowthCatalog.reviewed_at,
-    indicatorNumberStart: manufacturingGrowthCatalog.indicator_number_start,
-    indicatorNumberEnd: manufacturingGrowthCatalog.indicator_number_end,
-    indicators: hokkaidoManufacturingGrowthIndicators,
-  },
-  {
-    id: industryCrossSectorCatalog.id,
-    fieldId: industryCrossSectorCatalog.policy_field_id,
-    label: "産業活性化・業種横断分野",
-    sourceDocumentUrl: industryCrossSectorCatalog.source_document_url,
-    reviewedAt: industryCrossSectorCatalog.reviewed_at,
-    indicatorNumberStart: industryCrossSectorCatalog.indicator_number_start,
-    indicatorNumberEnd: industryCrossSectorCatalog.indicator_number_end,
-    indicators: hokkaidoIndustryCrossSectorIndicators,
-  },
-  {
-    id: childrenParentingCatalog.id,
-    fieldId: childrenParentingCatalog.policy_field_id,
-    label: "子ども・子育て",
-    sourceDocumentUrl: childrenParentingCatalog.source_document_url,
-    reviewedAt: childrenParentingCatalog.reviewed_at,
-    indicatorNumberStart: childrenParentingCatalog.indicator_number_start,
-    indicatorNumberEnd: childrenParentingCatalog.indicator_number_end,
-    indicators: hokkaidoChildrenParentingIndicators,
-  },
-  {
-    id: educationLearningCatalog.id,
-    fieldId: educationLearningCatalog.policy_field_id,
-    label: "教育・学び",
-    sourceDocumentUrl: educationLearningCatalog.source_document_url,
-    reviewedAt: educationLearningCatalog.reviewed_at,
-    indicatorNumberStart: educationLearningCatalog.indicator_number_start,
-    indicatorNumberEnd: educationLearningCatalog.indicator_number_end,
-    indicators: hokkaidoEducationLearningIndicators,
-  },
-  {
-    id: medicalWelfareCatalog.id,
-    fieldId: medicalWelfareCatalog.policy_field_id,
-    label: "医療・福祉",
-    sourceDocumentUrl: medicalWelfareCatalog.source_document_url,
-    reviewedAt: medicalWelfareCatalog.reviewed_at,
-    indicatorNumberStart: medicalWelfareCatalog.indicator_number_start,
-    indicatorNumberEnd: medicalWelfareCatalog.indicator_number_end,
-    indicators: hokkaidoMedicalWelfareIndicators,
-  },
-  {
-    id: employmentWorkCatalog.id,
-    fieldId: employmentWorkCatalog.policy_field_id,
-    label: "就業・就労環境",
-    sourceDocumentUrl: employmentWorkCatalog.source_document_url,
-    reviewedAt: employmentWorkCatalog.reviewed_at,
-    indicatorNumberStart: employmentWorkCatalog.indicator_number_start,
-    indicatorNumberEnd: employmentWorkCatalog.indicator_number_end,
-    indicators: hokkaidoEmploymentWorkIndicators,
-  },
+const groupDefinitions: Array<{
+  catalog: CatalogShape;
+  label: string;
+  evidence: unknown[];
+}> = [
+  { catalog: foodCatalog, label: "食", evidence: foodEvidence },
+  { catalog: tourismCatalog, label: "観光", evidence: tourismEvidence },
+  { catalog: zeroCarbonCatalog, label: "ゼロカーボン", evidence: zeroCarbonEvidence },
+  { catalog: digitalCatalog, label: "デジタル", evidence: digitalEvidence },
+  { catalog: manufacturingGrowthCatalog, label: "ものづくり・成長分野", evidence: manufacturingGrowthEvidence },
+  { catalog: industryCrossSectorCatalog, label: "産業活性化・業種横断分野", evidence: industryCrossSectorEvidence },
+  { catalog: childrenParentingCatalog, label: "子ども・子育て", evidence: childrenParentingEvidence },
+  { catalog: educationLearningCatalog, label: "教育・学び", evidence: educationLearningEvidence },
+  { catalog: medicalWelfareCatalog, label: "医療・福祉", evidence: medicalWelfareEvidence },
+  { catalog: employmentWorkCatalog, label: "就業・就労環境", evidence: employmentWorkEvidence },
 ];
 
-export const hokkaidoIndicatorGroups: HokkaidoIndicatorGroup[] = [
-  {
-    id: foodCatalog.id,
-    fieldId: foodCatalog.policy_field_id,
-    label: "食",
-    sourceDocumentUrl: foodCatalog.source_document_url,
-    reviewedAt: foodCatalog.reviewed_at,
-    indicatorNumberStart: foodCatalog.indicator_number_start,
-    indicatorNumberEnd: foodCatalog.indicator_number_end,
-    indicators: hokkaidoFoodIndicators,
-  },
-  {
-    id: tourismCatalog.id,
-    fieldId: tourismCatalog.policy_field_id,
-    label: "観光",
-    sourceDocumentUrl: tourismCatalog.source_document_url,
-    reviewedAt: tourismCatalog.reviewed_at,
-    indicatorNumberStart: tourismCatalog.indicator_number_start,
-    indicatorNumberEnd: tourismCatalog.indicator_number_end,
-    indicators: hokkaidoTourismIndicators,
-  },
-  {
-    id: zeroCarbonCatalog.id,
-    fieldId: zeroCarbonCatalog.policy_field_id,
-    label: "ゼロカーボン",
-    sourceDocumentUrl: zeroCarbonCatalog.source_document_url,
-    reviewedAt: zeroCarbonCatalog.reviewed_at,
-    indicatorNumberStart: zeroCarbonCatalog.indicator_number_start,
-    indicatorNumberEnd: zeroCarbonCatalog.indicator_number_end,
-    indicators: hokkaidoZeroCarbonIndicators,
-  },
-  {
-    id: digitalCatalog.id,
-    fieldId: digitalCatalog.policy_field_id,
-    label: "デジタル",
-    sourceDocumentUrl: digitalCatalog.source_document_url,
-    reviewedAt: digitalCatalog.reviewed_at,
-    indicatorNumberStart: digitalCatalog.indicator_number_start,
-    indicatorNumberEnd: digitalCatalog.indicator_number_end,
-    indicators: hokkaidoDigitalIndicators,
-  },
-  {
-    id: manufacturingGrowthCatalog.id,
-    fieldId: manufacturingGrowthCatalog.policy_field_id,
-    label: "ものづくり・成長分野",
-    sourceDocumentUrl: manufacturingGrowthCatalog.source_document_url,
-    reviewedAt: manufacturingGrowthCatalog.reviewed_at,
-    indicatorNumberStart: manufacturingGrowthCatalog.indicator_number_start,
-    indicatorNumberEnd: manufacturingGrowthCatalog.indicator_number_end,
-    indicators: hokkaidoManufacturingGrowthIndicators,
-  },
-  {
-    id: industryCrossSectorCatalog.id,
-    fieldId: industryCrossSectorCatalog.policy_field_id,
-    label: "産業活性化・業種横断分野",
-    sourceDocumentUrl: industryCrossSectorCatalog.source_document_url,
-    reviewedAt: industryCrossSectorCatalog.reviewed_at,
-    indicatorNumberStart: industryCrossSectorCatalog.indicator_number_start,
-    indicatorNumberEnd: industryCrossSectorCatalog.indicator_number_end,
-    indicators: hokkaidoIndustryCrossSectorIndicators,
-  },
-  {
-    id: childrenParentingCatalog.id,
-    fieldId: childrenParentingCatalog.policy_field_id,
-    label: "子ども・子育て",
-    sourceDocumentUrl: childrenParentingCatalog.source_document_url,
-    reviewedAt: childrenParentingCatalog.reviewed_at,
-    indicatorNumberStart: childrenParentingCatalog.indicator_number_start,
-    indicatorNumberEnd: childrenParentingCatalog.indicator_number_end,
-    indicators: hokkaidoChildrenParentingIndicators,
-  },
-  {
-    id: educationLearningCatalog.id,
-    fieldId: educationLearningCatalog.policy_field_id,
-    label: "教育・学び",
-    sourceDocumentUrl: educationLearningCatalog.source_document_url,
-    reviewedAt: educationLearningCatalog.reviewed_at,
-    indicatorNumberStart: educationLearningCatalog.indicator_number_start,
-    indicatorNumberEnd: educationLearningCatalog.indicator_number_end,
-    indicators: hokkaidoEducationLearningIndicators,
-  },
-  {
-    id: medicalWelfareCatalog.id,
-    fieldId: medicalWelfareCatalog.policy_field_id,
-    label: "医療・福祉",
-    sourceDocumentUrl: medicalWelfareCatalog.source_document_url,
-    reviewedAt: medicalWelfareCatalog.reviewed_at,
-    indicatorNumberStart: medicalWelfareCatalog.indicator_number_start,
-    indicatorNumberEnd: medicalWelfareCatalog.indicator_number_end,
-    indicators: hokkaidoMedicalWelfareIndicators,
-  },
-];
+export const hokkaidoIndicatorGroups: HokkaidoIndicatorGroup[] = groupDefinitions.map(
+  ({ catalog, label }) => ({
+    id: catalog.id,
+    fieldId: catalog.policy_field_id,
+    label,
+    sourceDocumentUrl: catalog.source_document_url,
+    reviewedAt: catalog.reviewed_at,
+    indicatorNumberStart: catalog.indicator_number_start,
+    indicatorNumberEnd: catalog.indicator_number_end,
+    indicators: catalog.items as HokkaidoIndicator[],
+  }),
+);
 
-export const hokkaidoReviewedIndicators = [
-  ...hokkaidoFoodIndicators,
-  ...hokkaidoTourismIndicators,
-  ...hokkaidoZeroCarbonIndicators,
-  ...hokkaidoDigitalIndicators,
-  ...hokkaidoManufacturingGrowthIndicators,
-  ...hokkaidoIndustryCrossSectorIndicators,
-  ...hokkaidoChildrenParentingIndicators,
-  ...hokkaidoEducationLearningIndicators,
-  ...hokkaidoMedicalWelfareIndicators,
-  ...hokkaidoEmploymentWorkIndicators,
-].sort((left, right) => left.indicator_number - right.indicator_number);
+export const hokkaidoReviewedIndicators = hokkaidoIndicatorGroups
+  .flatMap((group) => group.indicators)
+  .sort((left, right) => left.indicator_number - right.indicator_number);
 
-export const hokkaidoIndicatorEvidencePackets = [
-  ...foodEvidence,
-  ...tourismEvidence,
-  ...zeroCarbonEvidence,
-  ...digitalEvidence,
-  ...manufacturingGrowthEvidence,
-  ...industryCrossSectorEvidence,
-  ...childrenParentingEvidence,
-  ...educationLearningEvidence,
-  ...medicalWelfareEvidence,
-  ...employmentWorkEvidence,
-];
+export const hokkaidoIndicatorEvidencePackets = groupDefinitions.flatMap(
+  ({ evidence }) => evidence,
+);
 
 export const hokkaidoIndicatorReviewStats = {
   reviewedIndicators: hokkaidoReviewedIndicators.length,
   remainingIndicators: 108 - hokkaidoReviewedIndicators.length,
   evidencePackets: hokkaidoIndicatorEvidencePackets.length,
-  targetSet: hokkaidoReviewedIndicators.filter(
-    (indicator) => indicator.target_setting_status === "set",
-  ).length,
-  targetNotSet: hokkaidoReviewedIndicators.filter(
-    (indicator) => indicator.target_setting_status === "not_set",
-  ).length,
-  partialTargets: hokkaidoReviewedIndicators.filter(
-    (indicator) => indicator.target_setting_status === "partially_set",
-  ).length,
+  targetSet: hokkaidoReviewedIndicators.filter((item) => item.target_setting_status === "set").length,
+  targetNotSet: hokkaidoReviewedIndicators.filter((item) => item.target_setting_status === "not_set").length,
+  partialTargets: hokkaidoReviewedIndicators.filter((item) => item.target_setting_status === "partially_set").length,
   conditionalTargetValues: hokkaidoReviewedIndicators.reduce(
-    (total, indicator) =>
-      total +
-      indicator.series.reduce(
-        (seriesTotal, series) =>
-          seriesTotal +
-          series.values.filter((value) => value.status === "conditional").length,
-        0,
-      ),
+    (total, item) => total + item.series.reduce(
+      (seriesTotal, series) => seriesTotal + series.values.filter((value) => value.status === "conditional").length,
+      0,
+    ),
     0,
   ),
-  comparabilityWarnings: hokkaidoReviewedIndicators.filter(
-    (indicator) => indicator.comparability_note_original !== null,
-  ).length,
+  comparabilityWarnings: hokkaidoReviewedIndicators.filter((item) => item.comparability_note_original !== null).length,
   unavailableCurrentSeries: hokkaidoReviewedIndicators.reduce(
-    (total, indicator) =>
-      total +
-      indicator.series.filter((series) => series.values[0]?.status === "not_available")
-        .length,
+    (total, item) => total + item.series.filter((series) => series.values[0]?.status === "not_available").length,
     0,
   ),
   multiYearCumulativeSeries: hokkaidoReviewedIndicators.reduce(
-    (total, indicator) =>
-      total +
-      indicator.series.filter((series) =>
-        series.values.some((value) => value.aggregation_scope === "multi_year_cumulative"),
-      ).length,
+    (total, item) => total + item.series.filter((series) =>
+      series.values.some((value) => value.aggregation_scope === "multi_year_cumulative"),
+    ).length,
     0,
   ),
   cumulativeToDateSeries: hokkaidoReviewedIndicators.reduce(
-    (total, indicator) =>
-      total +
-      indicator.series.filter((series) =>
-        series.values.some((value) => value.aggregation_scope === "cumulative_to_date"),
-      ).length,
+    (total, item) => total + item.series.filter((series) =>
+      series.values.some((value) => value.aggregation_scope === "cumulative_to_date"),
+    ).length,
     0,
   ),
-  crossFieldIndicators: hokkaidoReviewedIndicators.filter(
-    (indicator) => indicator.policy_field_ids.length > 1,
-  ).length,
+  crossFieldIndicators: hokkaidoReviewedIndicators.filter((item) => item.policy_field_ids.length > 1).length,
 };
