@@ -10,6 +10,7 @@
     "verified_official_codes",
     "regional_anchor_codes",
     "reviewed_prefecture_codes",
+    "current_plan_confirmed_codes",
     "plan_sources",
     "records"
   ],
@@ -27,6 +28,11 @@
       "items": {"$ref": "#/$defs/prefectureCode"}
     },
     "reviewed_prefecture_codes": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/prefectureCode"}
+    },
+    "current_plan_confirmed_codes": {
       "type": "array",
       "uniqueItems": true,
       "items": {"$ref": "#/$defs/prefectureCode"}

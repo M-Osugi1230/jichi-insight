@@ -12,6 +12,7 @@ import {
   nationwideCoverageByRegion,
   nationwideCoverageStats,
   nationwidePrefectureCoverage,
+  planCurrencyLabel,
 } from "@/lib/nationwideCoverage";
 
 import styles from "./page.module.css";
@@ -19,7 +20,7 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
   title: "全国自治体カバレッジ",
   description:
-    "全国47都道府県の登録状況、公式入口の確認、総合計画の索引、Reviewedデータと公開ページの整備状況を確認できます。",
+    "全国47都道府県の登録状況、公式入口、総合計画の索引・現行性、Reviewedデータと公開ページの整備状況を確認できます。",
 };
 
 const cityKeys = (Object.keys(municipalityMeta) as MunicipalityKey[]).filter(
@@ -45,8 +46,8 @@ export default function MunicipalitiesPage() {
       <div className="pageShell">
         <PageIntro eyebrow="Nationwide coverage" title="全国47都道府県を、同じ品質段階で追う。">
           <p>
-            全国を登録対象にしました。ただし、名前を登録した状態、公式サイトを確認した状態、総合計画を索引化した状態、数値を人が照合した状態は同じではありません。
-            Jichi Insightは、未着手を公開済みのように見せず、段階ごとの進捗をそのまま表示します。
+            全国を登録対象にしました。ただし、名前を登録した状態、公式サイトを確認した状態、計画入口を索引化した状態、現行計画であることを確認した状態、数値を人が照合した状態は同じではありません。
+            Jichi Insightは、未着手や旧計画を公開済みのように見せず、段階ごとの進捗をそのまま表示します。
           </p>
         </PageIntro>
 
@@ -67,6 +68,11 @@ export default function MunicipalitiesPage() {
             <p>{indexedPlanNames}で計画資料の入口を確認。</p>
           </article>
           <article className={styles.summaryCard}>
+            <span>現行計画確認済み</span>
+            <strong>{nationwideCoverageStats.currentPlanConfirmedPrefectures}</strong>
+            <p>後継計画や改定状況まで確認した都道府県だけを計上。</p>
+          </article>
+          <article className={styles.summaryCard}>
             <span>Reviewedデータ公開</span>
             <strong>{nationwideCoverageStats.reviewedPrefectures}</strong>
             <p>一次資料と人の照合を通過した都道府県だけを計上。</p>
@@ -82,7 +88,8 @@ export default function MunicipalitiesPage() {
             <li><strong>1</strong><span>全国登録済み</span><p>コード・名称・地域・公式URL候補を登録。</p></li>
             <li><strong>2</strong><span>公式入口確認済み</span><p>自治体公式サイトであることを手動確認。</p></li>
             <li><strong>3</strong><span>計画資料索引済み</span><p>総合計画・実施計画の公式入口を固定。</p></li>
-            <li><strong>4</strong><span>Reviewedデータ公開</span><p>本文・数値・期間・単位を一次資料と照合。</p></li>
+            <li><strong>4</strong><span>現行計画確認済み</span><p>後継計画、改定、計画期間を確認。</p></li>
+            <li><strong>5</strong><span>Reviewedデータ公開</span><p>本文・数値・期間・単位を一次資料と照合。</p></li>
           </ol>
         </section>
 
@@ -90,7 +97,7 @@ export default function MunicipalitiesPage() {
           <p className="eyebrow">47 prefectures</p>
           <h2>地域ごとの全国カバレッジ</h2>
           <p className={styles.sectionLead}>
-            第1波は各地域の拠点9都道府県です。候補URLは確認済みURLと区別し、手動確認後にのみ「公式入口確認済み」へ昇格します。
+            第1波は各地域の拠点9都道府県です。候補URL、計画入口、現行性、Reviewed状態を分け、確認が終わった段階だけを昇格します。
           </p>
 
           <div className={styles.regionStack}>
@@ -122,6 +129,10 @@ export default function MunicipalitiesPage() {
                         <div>
                           <dt>総合計画</dt>
                           <dd>{planStatusLabels[record.planReviewStatus]}</dd>
+                        </div>
+                        <div>
+                          <dt>現行性</dt>
+                          <dd>{planCurrencyLabel(record.planCurrencyStatus)}</dd>
                         </div>
                         <div>
                           <dt>公開ページ</dt>
@@ -174,10 +185,9 @@ export default function MunicipalitiesPage() {
         <section className="callout callout--dark">
           <div>
             <p className="eyebrow">Next nationwide wave</p>
-            <h2>次は9地域拠点の政策体系と数値目標をReviewed化する。</h2>
+            <h2>次は残る8地域拠点の現行計画を確認する。</h2>
             <p>
-              第1波9都道府県の公式ホームページと総合計画入口を確認しました。次は計画本文、政策階層、KPI、年度評価を一次資料と照合し、Evidence Packet付きで順に公開します。
-              各段階で公開ゲートを必須にします。
+              東京都は2025年3月策定の「2050東京戦略」へ更新しました。残る8拠点も後継計画・改定・計画期間を確認した後、政策体系、KPI、年度評価をEvidence Packet付きでReviewed化します。
             </p>
           </div>
         </section>

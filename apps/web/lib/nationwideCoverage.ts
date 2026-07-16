@@ -17,6 +17,10 @@ export type CoverageStage =
   | "reviewed_data";
 
 export type PlanReviewStatus = "not_started" | "indexed" | "reviewed" | "verified";
+export type PlanCurrencyStatus =
+  | "not_started"
+  | "current_unconfirmed"
+  | "current_confirmed";
 
 export type PrefectureCoverageRecord = {
   prefecture_code: string;
@@ -40,8 +44,13 @@ const records = coverageRegistry.records as PrefectureCoverageRecord[];
 const verifiedOfficialCodes = new Set(coverageRegistry.verified_official_codes);
 const regionalAnchorCodes = new Set(coverageRegistry.regional_anchor_codes);
 const reviewedPrefectureCodes = new Set(coverageRegistry.reviewed_prefecture_codes);
+const currentPlanConfirmedCodes = new Set(
+  coverageRegistry.current_plan_confirmed_codes,
+);
 const planSources = coverageRegistry.plan_sources as PrefecturePlanSource[];
-const planSourcesByCode = new Map(planSources.map((source) => [source.prefecture_code, source]));
+const planSourcesByCode = new Map(
+  planSources.map((source) => [source.prefecture_code, source]),
+);
 
 export const regionOrder: PrefectureRegion[] = [
   "北海道",
@@ -58,6 +67,13 @@ export const nationwidePrefectureCoverage = records.map((record) => {
   const planSource = planSourcesByCode.get(record.prefecture_code) ?? null;
   const officialEntryVerified = verifiedOfficialCodes.has(record.prefecture_code);
   const reviewed = reviewedPrefectureCodes.has(record.prefecture_code);
+  const planCurrencyStatus: PlanCurrencyStatus = currentPlanConfirmedCodes.has(
+    record.prefecture_code,
+  )
+    ? "current_confirmed"
+    : planSource
+      ? "current_unconfirmed"
+      : "not_started";
   const coverageStage: CoverageStage = reviewed
     ? "reviewed_data"
     : planSource
@@ -68,14 +84,20 @@ export const nationwidePrefectureCoverage = records.map((record) => {
 
   return {
     ...record,
-    officialEntryStatus: officialEntryVerified ? ("verified" as const) : ("candidate" as const),
+    officialEntryStatus: officialEntryVerified
+      ? ("verified" as const)
+      : ("candidate" as const),
     planSource,
     planReviewStatus: planSource?.review_status ?? ("not_started" as const),
+    planCurrencyStatus,
     coverageStage,
     expansionWave: regionalAnchorCodes.has(record.prefecture_code)
       ? ("wave_1_regional_anchor" as const)
       : ("wave_2_nationwide_followup" as const),
-    publicHref: record.prefecture_code === "40" ? "/municipalities/fukuoka-prefecture" : null,
+    publicHref:
+      record.prefecture_code === "40"
+        ? "/municipalities/fukuoka-prefecture"
+        : null,
   };
 });
 
@@ -84,12 +106,23 @@ export const nationwideCoverageStats = {
   verifiedOfficialEntries: nationwidePrefectureCoverage.filter(
     (record) => record.officialEntryStatus === "verified",
   ).length,
-  indexedPlanSources: planSources.filter((source) => source.review_status === "indexed").length,
+  indexedPlanSources: planSources.filter(
+    (source) => source.review_status === "indexed",
+  ).length,
   reviewedPlanSources: planSources.filter(
-    (source) => source.review_status === "reviewed" || source.review_status === "verified",
+    (source) =>
+      source.review_status === "reviewed" || source.review_status === "verified",
   ).length,
   sourceCatalogedPrefectures: nationwidePrefectureCoverage.filter(
-    (record) => record.coverageStage === "source_cataloged" || record.coverageStage === "reviewed_data",
+    (record) =>
+      record.coverageStage === "source_cataloged" ||
+      record.coverageStage === "reviewed_data",
+  ).length,
+  currentPlanConfirmedPrefectures: nationwidePrefectureCoverage.filter(
+    (record) => record.planCurrencyStatus === "current_confirmed",
+  ).length,
+  currentPlanUnconfirmedPrefectures: nationwidePrefectureCoverage.filter(
+    (record) => record.planCurrencyStatus === "current_unconfirmed",
   ).length,
   reviewedPrefectures: nationwidePrefectureCoverage.filter(
     (record) => record.coverageStage === "reviewed_data",
@@ -124,4 +157,13 @@ export function coverageStageTone(stage: CoverageStage) {
     return "progress" as const;
   }
   return "neutral" as const;
+}
+
+export function planCurrencyLabel(status: PlanCurrencyStatus) {
+  const labels: Record<PlanCurrencyStatus, string> = {
+    not_started: "未確認",
+    current_unconfirmed: "現行性未確認",
+    current_confirmed: "現行計画確認済み",
+  };
+  return labels[status];
 }

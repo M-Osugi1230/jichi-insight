@@ -57,6 +57,10 @@ export const dataQualitySnapshot = {
   verifiedPrefectureOfficialEntries:
     nationwideCoverageStats.verifiedOfficialEntries,
   sourceCatalogedPrefectures: nationwideCoverageStats.sourceCatalogedPrefectures,
+  currentPlanConfirmedPrefectures:
+    nationwideCoverageStats.currentPlanConfirmedPrefectures,
+  currentPlanUnconfirmedPrefectures:
+    nationwideCoverageStats.currentPlanUnconfirmedPrefectures,
   reviewedPrefectures: nationwideCoverageStats.reviewedPrefectures,
   publishedPrefecturePages: nationwideCoverageStats.publishedPrefecturePages,
   candidatePrefectureOfficialEntries:
