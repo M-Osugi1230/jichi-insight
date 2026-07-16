@@ -1,0 +1,58 @@
+{
+  "id": "policy-review-manifest-hokkaido",
+  "updated_at": "2026-07-16",
+  "prefecture_code": "01",
+  "municipality_key": "hokkaido-prefecture",
+  "plan_source_ids": ["policy-source-hokkaido-comprehensive-plan"],
+  "expected_indicator_count": 108,
+  "count_basis": "北海道総合計画の公式入口が案内する指標個票数。",
+  "active_work_package": "policy_hierarchy",
+  "extraction_status": "planned",
+  "work_packages": [
+    {
+      "id": "policy_hierarchy",
+      "status": "active",
+      "deliverable": "政策分野、政策の柱、施策、指標の公式階層と順序を登録する。",
+      "completion_gate": "全階層の原文、公式順序、出典位置を人が照合する。"
+    },
+    {
+      "id": "indicator_source_index",
+      "status": "queued",
+      "deliverable": "108指標の個票URL、資料名、ページ、指標番号を索引化する。",
+      "completion_gate": "108件の欠落、重複、番号飛びを自動検査する。"
+    },
+    {
+      "id": "indicator_catalog",
+      "status": "queued",
+      "deliverable": "指標名、基準値、目標値、単位、期間、条件、方向性を登録する。",
+      "completion_gate": "全公開値を一次資料と照合し、条件型・累計・欠損を保持する。"
+    },
+    {
+      "id": "evidence_packets",
+      "status": "queued",
+      "deliverable": "政策階層と指標カタログにEvidence Packetを付与する。",
+      "completion_gate": "全公開レコードのclaim、source ID、位置、判断を記録する。"
+    },
+    {
+      "id": "web_publication",
+      "status": "blocked",
+      "deliverable": "北海道の政策体系・KPIページを公開する。",
+      "completion_gate": "スキーマ、全テスト、Webビルド、静的出力、公開後Smokeを通過する。"
+    }
+  ],
+  "quality_requirements": [
+    "official_order_preserved",
+    "original_text_preserved",
+    "units_and_periods_preserved",
+    "conditional_targets_not_numericized",
+    "missing_values_not_zeroed",
+    "repeated_indicators_reference_only",
+    "evidence_packet_required",
+    "actuals_not_inferred"
+  ],
+  "open_questions": [
+    "108指標の個票が単一資料か複数資料かを資料単位で固定する。",
+    "政策階層と指標番号の公式対応関係を確認する。",
+    "年度実績・進捗評価の公式資料入口を別ソースとして固定する。"
+  ]
+}

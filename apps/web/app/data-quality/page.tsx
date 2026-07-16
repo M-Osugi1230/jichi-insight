@@ -68,46 +68,27 @@ export default function DataQualityPage() {
           <p className="eyebrow">Nationwide coverage readiness</p>
           <h2>全国登録、計画入口、現行性、Reviewed、公開済みを分ける。</h2>
           <div className={styles.summaryGrid} aria-label="全国展開の品質概要">
-            <article className={styles.summaryCard}>
-              <span>全国登録</span>
-              <strong>{snapshot.nationwidePrefectures}</strong>
-              <p>47都道府県を共通コードと地域区分で登録。</p>
-            </article>
-            <article className={styles.summaryCard}>
-              <span>公式入口確認済み</span>
-              <strong>{snapshot.verifiedPrefectureOfficialEntries}</strong>
-              <p>自治体公式ホームページを手動確認した都道府県。</p>
-            </article>
-            <article className={styles.summaryCard}>
-              <span>総合計画索引済み</span>
-              <strong>{snapshot.sourceCatalogedPrefectures}</strong>
-              <p>計画資料の公式入口を固定した都道府県。</p>
-            </article>
-            <article className={styles.summaryCard}>
-              <span>現行計画確認済み</span>
-              <strong>{snapshot.currentPlanConfirmedPrefectures}</strong>
-              <p>後継計画・改定・有効期間まで確認した都道府県。</p>
-            </article>
-            <article className={styles.summaryCard}>
-              <span>現行性確認待ち</span>
-              <strong>{snapshot.currentPlanUnconfirmedPrefectures}</strong>
-              <p>公式計画入口はあるが、後継計画の確認が未完了。</p>
-            </article>
-            <article className={styles.summaryCard}>
-              <span>Reviewed都道府県</span>
-              <strong>{snapshot.reviewedPrefectures}</strong>
-              <p>本文・数値・期間・単位を人が照合済み。</p>
-            </article>
-            <article className={styles.summaryCard}>
-              <span>公開済み都道府県ページ</span>
-              <strong>{snapshot.publishedPrefecturePages}</strong>
-              <p>公開ゲートと本番確認を通過したページ。</p>
-            </article>
-            <article className={styles.summaryCard}>
-              <span>公式URL候補・未確認</span>
-              <strong>{snapshot.candidatePrefectureOfficialEntries}</strong>
-              <p>全国登録済みだが、手動確認前の候補URL。</p>
-            </article>
+            <article className={styles.summaryCard}><span>全国登録</span><strong>{snapshot.nationwidePrefectures}</strong><p>47都道府県を共通コードと地域区分で登録。</p></article>
+            <article className={styles.summaryCard}><span>公式入口確認済み</span><strong>{snapshot.verifiedPrefectureOfficialEntries}</strong><p>自治体公式ホームページを手動確認した都道府県。</p></article>
+            <article className={styles.summaryCard}><span>総合計画索引済み</span><strong>{snapshot.sourceCatalogedPrefectures}</strong><p>計画資料の公式入口を固定した都道府県。</p></article>
+            <article className={styles.summaryCard}><span>現行計画確認済み</span><strong>{snapshot.currentPlanConfirmedPrefectures}</strong><p>後継計画・改定・有効期間まで確認した都道府県。</p></article>
+            <article className={styles.summaryCard}><span>現行性確認待ち</span><strong>{snapshot.currentPlanUnconfirmedPrefectures}</strong><p>公式計画入口はあるが、後継計画の確認が未完了。</p></article>
+            <article className={styles.summaryCard}><span>Reviewed都道府県</span><strong>{snapshot.reviewedPrefectures}</strong><p>本文・数値・期間・単位を人が照合済み。</p></article>
+            <article className={styles.summaryCard}><span>公開済み都道府県ページ</span><strong>{snapshot.publishedPrefecturePages}</strong><p>公開ゲートと本番確認を通過したページ。</p></article>
+            <article className={styles.summaryCard}><span>公式URL候補・未確認</span><strong>{snapshot.candidatePrefectureOfficialEntries}</strong><p>全国登録済みだが、手動確認前の候補URL。</p></article>
+          </div>
+        </section>
+
+        <section className="contentSection">
+          <p className="eyebrow">Policy source pipeline</p>
+          <h2>公式計画を見つけた件数と、Reviewedに使える件数を分ける。</h2>
+          <div className={styles.summaryGrid} aria-label="政策資料カタログと作業キュー">
+            <article className={styles.summaryCard}><span>政策資料カタログ</span><strong>{snapshot.policySourceRecords}</strong><p>戦略、実施計画、年度報告、事業評価を資料単位で登録。</p></article>
+            <article className={styles.summaryCard}><span>Reviewed政策資料</span><strong>{snapshot.reviewedPolicySourceRecords}</strong><p>福岡県・福岡市・北九州市で本文確認済みの資料。</p></article>
+            <article className={styles.summaryCard}><span>第1波・索引済み資料</span><strong>{snapshot.indexedPolicySourceRecords}</strong><p>現行性は確認済みだが、本文・KPI抽出前の8都道府県。</p></article>
+            <article className={styles.summaryCard}><span>Reviewed基準実装</span><strong>{snapshot.waveOnePolicyReviewReferences}</strong><p>全国展開のデータ・Evidence Packet基準として使う都道府県。</p></article>
+            <article className={styles.summaryCard}><span>Reviewed化作業中</span><strong>{snapshot.waveOnePolicyActiveReviews}</strong><p>北海道の政策体系と108指標を確認中。</p></article>
+            <article className={styles.summaryCard}><span>作業待ち</span><strong>{snapshot.waveOnePolicyQueued}</strong><p>資料構造と作業依存関係に基づき順番に着手。</p></article>
           </div>
         </section>
 
