@@ -88,8 +88,11 @@ export default function DataQualityPage() {
             <article className={styles.summaryCard}><span>北海道複数分野参照</span><strong>{snapshot.hokkaidoIndicatorRelationshipCount}</strong><p>108一意指標と113掲載行の差分を、重複KPIではなく参照として確認済み。</p></article>
             <article className={styles.summaryCard}><span>北海道Reviewed指標</span><strong>{snapshot.reviewedHokkaidoIndicators}</strong><p>指標1〜{snapshot.reviewedHokkaidoIndicators}を一次資料と照合。残り{snapshot.remainingHokkaidoIndicators}件は未Reviewed。</p></article>
             <article className={styles.summaryCard}><span>北海道KPI Evidence</span><strong>{snapshot.hokkaidoIndicatorEvidencePackets}</strong><p>Reviewed指標すべてにEvidence Packetを付与。</p></article>
-            <article className={styles.summaryCard}><span>数値目標あり</span><strong>{snapshot.hokkaidoIndicatorsWithTargets}</strong><p>複数系列、減少目標、非単調な原文目標も修正せず保持。</p></article>
+            <article className={styles.summaryCard}><span>目標設定あり</span><strong>{snapshot.hokkaidoIndicatorsWithTargets}</strong><p>数値目標と条件目標を区別し、原文の目標設計を保持。</p></article>
+            <article className={styles.summaryCard}><span>条件目標</span><strong>{snapshot.hokkaidoConditionalTargetValues}</strong><p>具体値を補わず、前年比較などの原文条件を保持。</p></article>
+            <article className={styles.summaryCard}><span>累計系列</span><strong>{snapshot.hokkaidoMultiYearCumulativeSeries + snapshot.hokkaidoCumulativeToDateSeries}</strong><p>期間累計と各時点までの累計到達値を分離。</p></article>
             <article className={styles.summaryCard}><span>目標未設定</span><strong>{snapshot.hokkaidoIndicatorsWithoutTargets}</strong><p>「―」を0へ変換せず、nullと原文説明で保持。</p></article>
+            <article className={styles.summaryCard}><span>現状値なし</span><strong>{snapshot.hokkaidoUnavailableCurrentSeries}</strong><p>未公表・利用不可の現状値を0へ変換しない。</p></article>
             <article className={styles.summaryCard}><span>比較注意あり</span><strong>{snapshot.hokkaidoIndicatorComparabilityWarnings}</strong><p>調査対象変更、別番号、系列差などの注意を個別指標に保持。</p></article>
             <article className={styles.summaryCard}><span>北海道指標対象</span><strong>{snapshot.hokkaidoIndicatorTarget}</strong><p>重複を含む掲載行は{snapshot.hokkaidoDuplicateInclusiveIndicatorRows}。全件完了まで公開昇格しません。</p></article>
             <article className={styles.summaryCard}><span>Reviewed取組事項</span><strong>{snapshot.reviewedPolicyInitiatives}</strong><p>福岡県公式目次の1番から30番までを原文で登録。</p></article>

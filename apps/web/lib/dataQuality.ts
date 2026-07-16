@@ -91,6 +91,15 @@ export const dataQualitySnapshot = {
   hokkaidoIndicatorEvidencePackets: hokkaidoIndicatorReviewStats.evidencePackets,
   hokkaidoIndicatorsWithTargets: hokkaidoIndicatorReviewStats.targetSet,
   hokkaidoIndicatorsWithoutTargets: hokkaidoIndicatorReviewStats.targetNotSet,
+  hokkaidoIndicatorsWithPartialTargets: hokkaidoIndicatorReviewStats.partialTargets,
+  hokkaidoConditionalTargetValues:
+    hokkaidoIndicatorReviewStats.conditionalTargetValues,
+  hokkaidoMultiYearCumulativeSeries:
+    hokkaidoIndicatorReviewStats.multiYearCumulativeSeries,
+  hokkaidoCumulativeToDateSeries:
+    hokkaidoIndicatorReviewStats.cumulativeToDateSeries,
+  hokkaidoUnavailableCurrentSeries:
+    hokkaidoIndicatorReviewStats.unavailableCurrentSeries,
   hokkaidoIndicatorComparabilityWarnings:
     hokkaidoIndicatorReviewStats.comparabilityWarnings,
   reviewedPolicySourceRecords: policySourceRecords.filter(

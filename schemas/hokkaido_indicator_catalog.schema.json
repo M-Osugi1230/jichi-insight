@@ -52,14 +52,15 @@
                       "role": {"type": "string", "enum": ["current", "intermediate_target", "final_target"]},
                       "period": {"type": ["string", "null"]},
                       "value": {"type": ["number", "null"]},
-                      "status": {"type": "string", "enum": ["numeric", "not_set", "not_available"]},
+                      "status": {"type": "string", "enum": ["numeric", "conditional", "not_set", "not_available"]},
                       "operator": {"type": "string", "enum": ["exact", "at_least", "at_most"]},
-                      "aggregation_scope": {"type": "string", "enum": ["single_period", "multi_year_cumulative", "snapshot"]},
+                      "aggregation_scope": {"type": "string", "enum": ["single_period", "multi_year_cumulative", "cumulative_to_date", "snapshot"]},
                       "value_text_original": {"type": "string", "minLength": 1}
                     },
                     "allOf": [
                       {"if": {"properties": {"status": {"const": "numeric"}}}, "then": {"properties": {"value": {"type": "number"}, "period": {"type": "string", "minLength": 1}}}},
-                      {"if": {"properties": {"status": {"enum": ["not_set", "not_available"]}}}, "then": {"properties": {"value": {"type": "null"}}}}
+                      {"if": {"properties": {"status": {"enum": ["conditional", "not_set", "not_available"]}}}, "then": {"properties": {"value": {"type": "null"}}}},
+                      {"if": {"properties": {"status": {"const": "conditional"}}}, "then": {"properties": {"period": {"type": "string", "minLength": 1}}}}
                     ]
                   }
                 }

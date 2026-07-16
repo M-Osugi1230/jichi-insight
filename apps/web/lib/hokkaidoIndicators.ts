@@ -1,10 +1,12 @@
 import digitalCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_digital.json";
 import foodCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_food.json";
+import industryCrossSectorCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_industry_cross_sector.json";
 import manufacturingGrowthCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_manufacturing_growth.json";
 import tourismCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_tourism.json";
 import zeroCarbonCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_zero_carbon.json";
 import digitalEvidence from "../../../data/entities/policy/hokkaido_indicator_digital_evidence_packets.json";
 import foodEvidence from "../../../data/entities/policy/hokkaido_indicator_food_evidence_packets.json";
+import industryCrossSectorEvidence from "../../../data/entities/policy/hokkaido_indicator_industry_cross_sector_evidence_packets.json";
 import manufacturingGrowthEvidence from "../../../data/entities/policy/hokkaido_indicator_manufacturing_growth_evidence_packets.json";
 import tourismEvidence from "../../../data/entities/policy/hokkaido_indicator_tourism_evidence_packets.json";
 import zeroCarbonEvidence from "../../../data/entities/policy/hokkaido_indicator_zero_carbon_evidence_packets.json";
@@ -13,9 +15,13 @@ export type HokkaidoIndicatorValue = {
   role: "current" | "intermediate_target" | "final_target";
   period: string | null;
   value: number | null;
-  status: "numeric" | "not_set" | "not_available";
+  status: "numeric" | "conditional" | "not_set" | "not_available";
   operator?: "exact" | "at_least" | "at_most";
-  aggregation_scope?: "single_period" | "multi_year_cumulative" | "snapshot" | "other";
+  aggregation_scope?:
+    | "single_period"
+    | "multi_year_cumulative"
+    | "cumulative_to_date"
+    | "snapshot";
   value_text_original: string;
 };
 
@@ -51,6 +57,8 @@ export const hokkaidoZeroCarbonIndicators = zeroCarbonCatalog.items as HokkaidoI
 export const hokkaidoDigitalIndicators = digitalCatalog.items as HokkaidoIndicator[];
 export const hokkaidoManufacturingGrowthIndicators =
   manufacturingGrowthCatalog.items as HokkaidoIndicator[];
+export const hokkaidoIndustryCrossSectorIndicators =
+  industryCrossSectorCatalog.items as HokkaidoIndicator[];
 
 export const hokkaidoReviewedIndicators = [
   ...hokkaidoFoodIndicators,
@@ -58,6 +66,7 @@ export const hokkaidoReviewedIndicators = [
   ...hokkaidoZeroCarbonIndicators,
   ...hokkaidoDigitalIndicators,
   ...hokkaidoManufacturingGrowthIndicators,
+  ...hokkaidoIndustryCrossSectorIndicators,
 ].sort((left, right) => left.indicator_number - right.indicator_number);
 
 export const hokkaidoIndicatorEvidencePackets = [
@@ -66,6 +75,7 @@ export const hokkaidoIndicatorEvidencePackets = [
   ...zeroCarbonEvidence,
   ...digitalEvidence,
   ...manufacturingGrowthEvidence,
+  ...industryCrossSectorEvidence,
 ];
 
 export const hokkaidoIndicatorReviewStats = {
@@ -81,6 +91,17 @@ export const hokkaidoIndicatorReviewStats = {
   partialTargets: hokkaidoReviewedIndicators.filter(
     (indicator) => indicator.target_setting_status === "partially_set",
   ).length,
+  conditionalTargetValues: hokkaidoReviewedIndicators.reduce(
+    (total, indicator) =>
+      total +
+      indicator.series.reduce(
+        (seriesTotal, series) =>
+          seriesTotal +
+          series.values.filter((value) => value.status === "conditional").length,
+        0,
+      ),
+    0,
+  ),
   comparabilityWarnings: hokkaidoReviewedIndicators.filter(
     (indicator) => indicator.comparability_note_original !== null,
   ).length,
@@ -96,6 +117,14 @@ export const hokkaidoIndicatorReviewStats = {
       total +
       indicator.series.filter((series) =>
         series.values.some((value) => value.aggregation_scope === "multi_year_cumulative"),
+      ).length,
+    0,
+  ),
+  cumulativeToDateSeries: hokkaidoReviewedIndicators.reduce(
+    (total, indicator) =>
+      total +
+      indicator.series.filter((series) =>
+        series.values.some((value) => value.aggregation_scope === "cumulative_to_date"),
       ).length,
     0,
   ),
