@@ -80,7 +80,7 @@ export default function HokkaidoPage() {
           <div>
             <p className="eyebrow">Review coverage</p>
             <h2 id="review-progress-title">
-              {hokkaidoIndicatorReviewStats.reviewedIndicators} / 108のKPI本文Reviewedを完了。次は年度実績との接続。
+              108 / 108のKPI本文Reviewedを完了。次は年度実績との接続。
             </h2>
           </div>
           <div className={styles.progressDetail}>
