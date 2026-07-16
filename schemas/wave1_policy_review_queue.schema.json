@@ -92,6 +92,7 @@
             "type": "string",
             "enum": [
               "reviewed",
+              "policy_hierarchy_reviewed",
               "plan_kpi_entry_indexed",
               "plan_followup_entry_indexed",
               "strategic_plan_indexed"
