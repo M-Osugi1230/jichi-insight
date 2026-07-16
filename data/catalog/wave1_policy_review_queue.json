@@ -23,10 +23,10 @@
       "status": "active_review",
       "source_ids": ["policy-source-hokkaido-comprehensive-plan"],
       "current_plan_title": "北海道総合計画",
-      "source_inventory_status": "indicator_positions_reviewed",
+      "source_inventory_status": "indicator_relationships_reviewed",
       "next_gate": "kpi_catalog",
-      "next_action": "指標番号1〜108の資料・ページ位置は確認済み。次に113掲載行を生む5件の複数政策分野関係を参照として固定する。",
-      "priority_basis": "3基本方向・18政策分野と108指標の資料位置をReviewed化済み。値抽出前に再掲・複数分野関係を確定する。"
+      "next_action": "18資料・108ページ・指標番号1〜108・追加政策分野参照5件を確認済み。指標名、現状値、中間目標値、目標値、単位、期間、条件をReviewed抽出する。",
+      "priority_basis": "政策体系、資料位置、複数分野関係の整合性を確立済み。値抽出で条件型・複数系列・欠損を保持する。"
     },
     {
       "prefecture_code": "04",

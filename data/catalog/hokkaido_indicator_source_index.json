@@ -8,10 +8,10 @@
   "duplicate_inclusive_indicator_count": 113,
   "source_document_count": 18,
   "total_pdf_pages": 108,
-  "counting_boundary": "18資料のPDFページ総数は108。一意指標番号1〜108を各PDFページの見出しで確認済み。重複込み113行は政策分野への掲載関係であり、PDFページ数や一意指標数と混同しない。",
+  "counting_boundary": "18資料のPDFページ総数は108。一意指標番号1〜108を各PDFページの見出しで確認し、113掲載行との差分5件（指標16、17、24、45、50）を追加の政策分野参照として確認済み。PDFページ数、一意指標数、掲載関係を混同しない。",
   "document_index_status": "completed",
   "indicator_position_status": "completed",
-  "relationship_status": "active",
+  "relationship_status": "completed",
   "documents": [
     {"display_order":1,"policy_field_id":"policy-field-hokkaido-food","source_id":"policy-source-hokkaido-indicators-food","source_label_original":"食","page_count":12,"first_indicator_number":1,"last_indicator_number":12,"indicator_count":12,"review_status":"verified","indicator_position_status":"indexed"},
     {"display_order":2,"policy_field_id":"policy-field-hokkaido-tourism","source_id":"policy-source-hokkaido-indicators-tourism","source_label_original":"観光","page_count":6,"first_indicator_number":13,"last_indicator_number":18,"indicator_count":6,"review_status":"verified","indicator_position_status":"indexed"},

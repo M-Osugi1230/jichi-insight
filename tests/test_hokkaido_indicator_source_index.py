@@ -53,7 +53,7 @@ def test_pdf_page_counts_and_indicator_ranges_preserve_all_boundaries():
     assert "混同しない" in index["counting_boundary"]
     assert index["document_index_status"] == "completed"
     assert index["indicator_position_status"] == "completed"
-    assert index["relationship_status"] == "active"
+    assert index["relationship_status"] == "completed"
 
 
 def test_indicator_ranges_form_one_complete_non_overlapping_sequence():
@@ -101,10 +101,15 @@ def test_indexed_documents_match_central_policy_source_records():
         assert f"{document['page_count']}ページ" in source["notes"]
 
 
-def test_indicator_relationships_remain_separate_from_number_indexing():
+def test_indicator_relationships_are_completed_in_a_separate_reference_index():
     index = load(INDEX_PATH)
+    relationships = load(
+        ROOT / "data/catalog/hokkaido_indicator_relationship_index.json"
+    )
 
     assert index["indicator_position_status"] == "completed"
-    assert index["relationship_status"] == "active"
+    assert index["relationship_status"] == "completed"
+    assert relationships["relationship_status"] == "completed"
+    assert relationships["expected_extra_relationship_count"] == 5
     assert "relationships" not in index
     assert "repeated_indicators" not in index

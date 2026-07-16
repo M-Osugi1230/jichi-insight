@@ -5,8 +5,8 @@
   "municipality_key": "hokkaido-prefecture",
   "plan_source_ids": ["policy-source-hokkaido-comprehensive-plan"],
   "expected_indicator_count": 108,
-  "count_basis": "北海道総合計画の公式入口が案内する一意指標数。重複を含めた政策分野への掲載行は113。",
-  "active_work_package": "indicator_source_index",
+  "count_basis": "北海道総合計画の公式入口が案内する一意指標数。重複を含めた政策分野への掲載行は113で、差分5件は追加参照として確認済み。",
+  "active_work_package": "indicator_catalog",
   "extraction_status": "in_progress",
   "work_packages": [
     {
@@ -17,15 +17,15 @@
     },
     {
       "id": "indicator_source_index",
-      "status": "active",
-      "deliverable": "18資料・108PDFページに対し、指標番号1〜108の資料・ページ位置を欠落なく索引化した。次に113掲載行を生む5件の複数分野関係を参照として固定する。",
-      "completion_gate": "一意指標108件と重複込み113掲載行の差分5件を、重複レコードではなく政策分野参照として検証する。"
+      "status": "completed",
+      "deliverable": "18資料・108PDFページ、指標番号1〜108、追加の政策分野参照5件を欠落なく索引化した。",
+      "completion_gate": "一意指標108件と重複込み113掲載行の差分5件を、重複レコードではなく政策分野参照として検証済み。"
     },
     {
       "id": "indicator_catalog",
-      "status": "queued",
-      "deliverable": "指標名、基準値、目標値、単位、期間、条件、方向性を登録する。",
-      "completion_gate": "全公開値を一次資料と照合し、条件型・累計・欠損を保持する。"
+      "status": "active",
+      "deliverable": "108指標の指標名、現状値、中間目標値、目標値、単位、期間、条件、方向性を原文で登録する。",
+      "completion_gate": "全公開値を一次資料と照合し、条件型、複数系列、累計、欠損、目標未設定を保持する。"
     },
     {
       "id": "evidence_packets",
@@ -51,8 +51,8 @@
     "actuals_not_inferred"
   ],
   "open_questions": [
-    "一意指標108件と政策分野への掲載行113件を結ぶ5件の複数分野関係を確認する。",
-    "関係確認後に指標名、基準値、目標値、単位、期間、条件のReviewed抽出を開始する。",
+    "108指標のうち複数系列を持つ指標を、単一値へ圧縮せずどの粒度で保持するかを個票ごとに確認する。",
+    "中間目標値・目標値が未設定または検討中の指標をnullと原文説明の組み合わせで保持する。",
     "年度実績・進捗評価の公式資料入口を別ソースとして固定する。"
   ]
 }

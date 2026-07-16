@@ -1,4 +1,5 @@
 import hokkaidoIndicatorPageIndex from "../../../data/catalog/hokkaido_indicator_page_index.json";
+import hokkaidoIndicatorRelationshipIndex from "../../../data/catalog/hokkaido_indicator_relationship_index.json";
 import hokkaidoIndicatorSourceIndex from "../../../data/catalog/hokkaido_indicator_source_index.json";
 import policySourceCatalog from "../../../data/catalog/policy_sources.json";
 
@@ -80,8 +81,10 @@ export const dataQualitySnapshot = {
   hokkaidoIndicatorPositions: hokkaidoIndicatorPageIndex.records.length,
   hokkaidoIndicatorSequenceComplete:
     hokkaidoIndicatorPageIndex.sequence_status === "complete",
-  hokkaidoIndicatorRelationshipsPending:
-    hokkaidoIndicatorPageIndex.relationship_status === "active",
+  hokkaidoIndicatorRelationshipCount:
+    hokkaidoIndicatorRelationshipIndex.relationships.length,
+  hokkaidoIndicatorRelationshipsComplete:
+    hokkaidoIndicatorRelationshipIndex.relationship_status === "completed",
   reviewedPolicySourceRecords: policySourceRecords.filter(
     (source) => source.review_status === "reviewed",
   ).length,
