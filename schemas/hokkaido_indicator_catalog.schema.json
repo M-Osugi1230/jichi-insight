@@ -86,6 +86,7 @@
                       "period": {"type": ["string", "null"]},
                       "value": {"type": ["number", "null"]},
                       "status": {"type": "string", "enum": ["numeric", "not_set", "not_available"]},
+                      "operator": {"type": "string", "enum": ["exact", "at_least", "at_most"]},
                       "value_text_original": {"type": "string", "minLength": 1}
                     },
                     "allOf": [

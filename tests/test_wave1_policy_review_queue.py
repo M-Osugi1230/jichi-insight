@@ -14,9 +14,8 @@ def load(path: Path):
 
 def test_wave_one_policy_review_queue_matches_schema():
     queue = load(QUEUE_PATH)
-    schema = load(SCHEMA_PATH)
     validator = Draft202012Validator(
-        schema,
+        load(SCHEMA_PATH),
         format_checker=FormatChecker(),
     )
     assert list(validator.iter_errors(queue)) == []
@@ -52,10 +51,10 @@ def test_fukuoka_is_the_only_reviewed_reference_and_hokkaido_is_active():
         "indicator_relationships_reviewed"
     )
     assert items_by_code["01"]["next_gate"] == "kpi_catalog"
-    assert "指標1〜12" in items_by_code["01"]["next_action"]
+    assert "指標1〜18" in items_by_code["01"]["next_action"]
     assert "Evidence Packet付き" in items_by_code["01"]["next_action"]
-    assert "残る96指標" in items_by_code["01"]["next_action"]
-    assert "指標13〜18（観光）" in items_by_code["01"]["next_action"]
+    assert "残る90指標" in items_by_code["01"]["next_action"]
+    assert "指標19〜29（ゼロカーボン）" in items_by_code["01"]["next_action"]
     assert sum(item["status"] == "reviewed_reference" for item in queue["items"]) == 1
     assert sum(item["status"] == "active_review" for item in queue["items"]) == 1
     assert sum(item["status"] == "queued" for item in queue["items"]) == 7

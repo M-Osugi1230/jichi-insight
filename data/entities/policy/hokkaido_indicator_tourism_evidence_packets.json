@@ -1,0 +1,68 @@
+[
+  {
+    "id": "evidence-policy-indicator-hokkaido-13",
+    "subject_type": "kpi",
+    "subject_id": "policy-indicator-hokkaido-13",
+    "claims": [
+      {"field": "indicator_name_original", "statement": "指標13は『観光入込客数』。", "source_ids": ["policy-source-hokkaido-indicators-tourism"], "location_note": "PDFページ1『番号・指標名』", "decision": "accepted", "review_note": null},
+      {"field": "series", "statement": "道内客は3,756→4,880→4,880以上、道外客は404→700→700以上、外国人は69→244→244以上。単位は万人、期間は2022年・2027年・2032年。", "source_ids": ["policy-source-hokkaido-indicators-tourism"], "location_note": "PDFページ1『目標』", "decision": "accepted", "review_note": "3系列と最終目標の下限条件を分離して保持。"}
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-policy-indicator-hokkaido-14",
+    "subject_type": "kpi",
+    "subject_id": "policy-indicator-hokkaido-14",
+    "claims": [
+      {"field": "indicator_name_original", "statement": "指標14は『１人当たり観光消費額』。", "source_ids": ["policy-source-hokkaido-indicators-tourism"], "location_note": "PDFページ2『番号・指標名』", "decision": "accepted", "review_note": null},
+      {"field": "series", "statement": "道内客は12,972→15,000→15,000以上、道外客は81,182→88,000→88,000以上、外国人は現状値―→210,000→210,000以上。単位は円。", "source_ids": ["policy-source-hokkaido-indicators-tourism"], "location_note": "PDFページ2『目標』", "decision": "accepted", "review_note": "外国人の現状値『―』を0へ変換しない。"}
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-policy-indicator-hokkaido-15",
+    "subject_type": "kpi",
+    "subject_id": "policy-indicator-hokkaido-15",
+    "claims": [
+      {"field": "indicator_name_original", "statement": "指標15は『ＡＴガイド資格保持者数』。", "source_ids": ["policy-source-hokkaido-indicators-tourism"], "location_note": "PDFページ3『番号・指標名』", "decision": "accepted", "review_note": null},
+      {"field": "series", "statement": "目標表の現状値は-、中間目標値100人、目標値100人以上。期間は2023年・2028年・2033年。", "source_ids": ["policy-source-hokkaido-indicators-tourism"], "location_note": "PDFページ3『目標』", "decision": "accepted", "review_note": "制度開始直後のため現状値を推測せずnullで保持。"}
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-policy-indicator-hokkaido-16",
+    "subject_type": "kpi",
+    "subject_id": "policy-indicator-hokkaido-16",
+    "claims": [
+      {"field": "indicator_name_original", "statement": "指標16は『道内空港の利用者数』。", "source_ids": ["policy-source-hokkaido-indicators-tourism"], "location_note": "PDFページ4『番号・指標名』", "decision": "accepted", "review_note": null},
+      {"field": "series", "statement": "国内線は2,189→2,671→2,671以上、国際線は93→410→410以上。単位は万人、期間は2022年・2027年・2032年。", "source_ids": ["policy-source-hokkaido-indicators-tourism"], "location_note": "PDFページ4『目標』", "decision": "accepted", "review_note": "観光と社会経済の基盤整備への追加掲載は参照として保持。"}
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-policy-indicator-hokkaido-17",
+    "subject_type": "kpi",
+    "subject_id": "policy-indicator-hokkaido-17",
+    "claims": [
+      {"field": "indicator_name_original", "statement": "指標17は『クルーズ船の寄港回数』。", "source_ids": ["policy-source-hokkaido-indicators-tourism"], "location_note": "PDFページ5『番号・指標名』", "decision": "accepted", "review_note": null},
+      {"field": "series", "statement": "現状値121回、中間目標値160回、目標値200回。期間は2023年・2028年・2033年。", "source_ids": ["policy-source-hokkaido-indicators-tourism"], "location_note": "PDFページ5『目標』", "decision": "accepted", "review_note": "観光と社会経済の基盤整備への追加掲載は参照として保持。"}
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-policy-indicator-hokkaido-18",
+    "subject_type": "kpi",
+    "subject_id": "policy-indicator-hokkaido-18",
+    "claims": [
+      {"field": "indicator_name_original", "statement": "指標18は『国際会議等の開催件数』。", "source_ids": ["policy-source-hokkaido-indicators-tourism"], "location_note": "PDFページ6『番号・指標名』", "decision": "accepted", "review_note": null},
+      {"field": "series", "statement": "現状値23件、中間目標値145件、目標値155件。期間は2022年・2027年・2032年。", "source_ids": ["policy-source-hokkaido-indicators-tourism"], "location_note": "PDFページ6『目標』", "decision": "accepted", "review_note": null}
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]
