@@ -42,17 +42,27 @@ def test_hokkaido_manifest_is_linked_to_the_active_wave_one_queue_item():
     assert set(manifest["plan_source_ids"]) <= set(active_item["source_ids"])
 
 
-def test_hokkaido_manifest_preserves_the_official_indicator_boundaries():
+def test_hokkaido_manifest_preserves_boundaries_and_partial_counts():
     manifest = load(MANIFEST_PATH)
 
     assert manifest["expected_indicator_count"] == 108
+    assert manifest["reviewed_indicator_count"] == 12
+    assert manifest["remaining_indicator_count"] == 96
+    assert manifest["indicator_evidence_packet_count"] == 12
+    assert manifest["reviewed_indicator_count"] + manifest[
+        "remaining_indicator_count"
+    ] == manifest["expected_indicator_count"]
+    assert manifest["indicator_evidence_packet_count"] == manifest[
+        "reviewed_indicator_count"
+    ]
     assert "掲載行は113" in manifest["count_basis"]
     assert "差分5件" in manifest["count_basis"]
+    assert "指標1〜12" in manifest["count_basis"]
     assert manifest["extraction_status"] == "in_progress"
     assert manifest["active_work_package"] == "indicator_catalog"
 
 
-def test_hokkaido_work_packages_complete_source_index_and_activate_catalog():
+def test_hokkaido_work_packages_record_first_catalog_batch():
     manifest = load(MANIFEST_PATH)
     packages = manifest["work_packages"]
     packages_by_id = {package["id"]: package for package in packages}
@@ -64,17 +74,16 @@ def test_hokkaido_work_packages_complete_source_index_and_activate_catalog():
         "evidence_packets",
         "web_publication",
     ]
-    assert sum(package["status"] == "active" for package in packages) == 1
     assert packages_by_id["policy_hierarchy"]["status"] == "completed"
     assert packages_by_id["indicator_source_index"]["status"] == "completed"
     assert "追加の政策分野参照5件" in packages_by_id[
         "indicator_source_index"
     ]["deliverable"]
-    assert "検証済み" in packages_by_id["indicator_source_index"][
-        "completion_gate"
-    ]
     assert packages_by_id["indicator_catalog"]["status"] == "active"
-    assert "108指標" in packages_by_id["indicator_catalog"]["deliverable"]
+    assert "指標1〜12" in packages_by_id["indicator_catalog"]["deliverable"]
+    assert "指標13〜108" in packages_by_id["indicator_catalog"]["deliverable"]
+    assert packages_by_id["evidence_packets"]["status"] == "active"
+    assert "指標1〜12" in packages_by_id["evidence_packets"]["deliverable"]
     assert packages_by_id["web_publication"]["status"] == "blocked"
     assert all(package["deliverable"].strip() for package in packages)
     assert all(package["completion_gate"].strip() for package in packages)
