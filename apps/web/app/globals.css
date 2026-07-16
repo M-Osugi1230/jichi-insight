@@ -19,11 +19,26 @@ html { scroll-behavior: smooth; }
 body { margin: 0; background: var(--background); color: var(--text); font-family: "Hiragino Sans", "Yu Gothic", "YuGothic", "Noto Sans JP", system-ui, sans-serif; line-height: 1.75; }
 a { color: inherit; }
 a:focus-visible, button:focus-visible { outline: 3px solid #66a58f; outline-offset: 3px; }
-.siteHeader { align-items: center; display: flex; justify-content: space-between; margin: 0 auto; max-width: var(--max-width); padding: 24px 28px; }
+.siteHeader { align-items: center; display: flex; justify-content: space-between; margin: 0 auto; max-width: var(--max-width); padding: 24px 28px; position: relative; z-index: 30; }
 .brand { font-size: 1.05rem; font-weight: 800; letter-spacing: -0.03em; text-decoration: none; }
-nav { display: flex; gap: 24px; }
-nav a { color: var(--muted); font-size: 0.88rem; text-decoration: none; }
-nav a:hover { color: var(--text); }
+.desktopNav { align-items: center; display: flex; gap: 24px; }
+.desktopNav > a, .navMore summary { color: var(--muted); font-size: 0.88rem; text-decoration: none; }
+.desktopNav > a:hover, .navMore summary:hover, .navMorePanel a:hover { color: var(--text); }
+.navMore { position: relative; }
+.navMore summary, .mobileNav summary { cursor: pointer; list-style: none; }
+.navMore summary::-webkit-details-marker, .mobileNav summary::-webkit-details-marker { display: none; }
+.navMore summary::after { content: "＋"; font-size: 0.75rem; margin-left: 6px; }
+.navMore[open] summary::after { content: "−"; }
+.navMorePanel { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 18px 48px rgb(23 24 21 / 12%); display: grid; gap: 2px; min-width: 190px; padding: 8px; position: absolute; right: 0; top: calc(100% + 14px); }
+.navMorePanel a { border-radius: 9px; color: var(--muted); font-size: 0.82rem; padding: 9px 11px; text-decoration: none; white-space: nowrap; }
+.navMorePanel a:hover { background: var(--surface-muted); }
+.mobileNav { display: none; position: relative; }
+.mobileNav > summary { align-items: center; border: 1px solid var(--line); border-radius: 999px; display: inline-flex; font-size: 0.78rem; font-weight: 750; min-height: 40px; padding: 7px 14px; }
+.mobileNav[open] > summary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.mobileNav nav { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 18px 48px rgb(23 24 21 / 14%); display: grid; max-height: calc(100vh - 96px); overflow-y: auto; padding: 14px; position: absolute; right: 0; top: calc(100% + 12px); width: min(340px, calc(100vw - 40px)); }
+.mobileNav nav p { color: var(--muted); font-size: 0.66rem; font-weight: 800; letter-spacing: 0.1em; margin: 10px 10px 4px; text-transform: uppercase; }
+.mobileNav nav a { border-radius: 10px; font-size: 0.9rem; font-weight: 700; padding: 10px; text-decoration: none; }
+.mobileNav nav a:hover { background: var(--surface-muted); }
 .hero { display: grid; gap: 70px; grid-template-columns: minmax(0, 1.55fr) minmax(300px, 0.45fr); margin: 0 auto; max-width: var(--max-width); padding: 116px 28px 110px; }
 .heroCopy { min-width: 0; }
 .eyebrow { color: var(--accent); font-size: 0.74rem; font-weight: 800; letter-spacing: 0.13em; margin: 0 0 18px; text-transform: uppercase; }
@@ -56,13 +71,21 @@ h3 { letter-spacing: -0.035em; }
 .sectionIntro { max-width: 760px; }
 .sectionIntro--row { align-items: end; display: grid; gap: 64px; grid-template-columns: 1.15fr 0.85fr; max-width: none; }
 .pillarGrid, .municipalityGrid, .problemGrid, .roleGrid { display: grid; gap: 14px; margin-top: 58px; }
-.pillarGrid { grid-template-columns: repeat(4, 1fr); }
+.pillarGrid { grid-template-columns: repeat(5, 1fr); }
 .pillarCard, .municipalityCard, .problemGrid article, .roleGrid article { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 26px; }
 .pillarCard { min-height: 260px; }
 .pillarCard > p { color: var(--accent); font-size: 0.74rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
 .pillarCard h3 { font-size: 1.32rem; line-height: 1.35; margin: 54px 0 16px; }
 .pillarCard span, .municipalityCard p, .problemGrid p, .roleGrid p { color: var(--muted); font-size: 0.9rem; }
 .municipalityGrid { grid-template-columns: repeat(3, 1fr); }
+.coveragePathGrid { display: grid; gap: 14px; grid-template-columns: repeat(2, 1fr); margin: 52px 0 14px; }
+.coveragePathCard { background: var(--surface); border: 1px solid var(--line); border-radius: 22px; min-height: 320px; padding: 30px; }
+.coveragePathCard--nationwide { background: var(--accent-soft); border-color: #c2d5cc; }
+.coveragePathCard > div { align-items: center; display: flex; gap: 14px; justify-content: space-between; }
+.coveragePathCard > div > p { color: var(--accent); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.08em; margin: 0; text-transform: uppercase; }
+.coveragePathCard h3 { font-size: clamp(1.5rem, 2.6vw, 2.15rem); line-height: 1.35; margin: 52px 0 14px; max-width: 520px; }
+.coveragePathCard > p { color: var(--muted); font-size: 0.88rem; max-width: 540px; }
+.coveragePathCard > a { color: var(--accent); display: inline-block; font-size: 0.86rem; font-weight: 750; margin-top: 18px; text-underline-offset: 4px; }
 .municipalityCardTop, .municipalityRowHeading, .sourceCardMeta, .sourceCardFooter, .sourceGroupHeader, .sectionHeadingWithBadge { align-items: center; display: flex; justify-content: space-between; gap: 16px; }
 .municipalityCardTop > span:first-child { color: var(--muted); font-size: 0.76rem; }
 .municipalityCard h3 { font-size: 1.65rem; margin: 46px 0 12px; }
@@ -138,6 +161,10 @@ h3 { letter-spacing: -0.035em; }
 .footerLinks { display: flex; gap: 22px; }
 .footerLinks a { text-decoration: none; }
 
+@media (max-width: 1080px) {
+  .pillarGrid { grid-template-columns: repeat(3, 1fr); }
+}
+
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; padding-top: 90px; }
   .heroStatus { max-width: 580px; }
@@ -150,9 +177,8 @@ h3 { letter-spacing: -0.035em; }
 
 @media (max-width: 650px) {
   .siteHeader { padding: 20px; }
-  nav { gap: 13px; }
-  nav a { font-size: 0.76rem; }
-  nav a:nth-child(4) { display: none; }
+  .desktopNav { display: none; }
+  .mobileNav { display: block; }
   .hero { gap: 46px; padding: 72px 20px 70px; }
   h1 { font-size: clamp(2.75rem, 14vw, 4.5rem); letter-spacing: -0.065em; }
   .section, .pageShell { padding-left: 20px; padding-right: 20px; }
@@ -161,7 +187,10 @@ h3 { letter-spacing: -0.035em; }
   .pillarGrid, .problemGrid, .sourceGrid { grid-template-columns: 1fr; }
   .pillarCard { min-height: auto; }
   .pillarCard h3 { margin-top: 32px; }
-  .municipalityGrid { grid-template-columns: 1fr; }
+  .coveragePathGrid, .municipalityGrid { grid-template-columns: 1fr; }
+  .coveragePathCard { min-height: auto; padding: 24px; }
+  .coveragePathCard > div { align-items: flex-start; flex-direction: column; }
+  .coveragePathCard h3 { margin-top: 38px; }
   .principlesSection { border-radius: 0; margin-bottom: 40px; padding: 64px 20px; }
   .principleGrid { grid-template-columns: 1fr; }
   .catalogSummary { grid-template-columns: 1fr 1fr; }

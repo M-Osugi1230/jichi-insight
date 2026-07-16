@@ -1,18 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { CoverageExplorer } from "@/components/CoverageExplorer";
 import { PageIntro } from "@/components/PageIntro";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { StatusBadge } from "@/components/StatusBadge";
 import { municipalityMeta, sourcesForMunicipality, type MunicipalityKey } from "@/lib/catalog";
 import {
-  coverageStageLabel,
-  coverageStageTone,
-  nationwideCoverageByRegion,
   nationwideCoverageStats,
   nationwidePrefectureCoverage,
-  planCurrencyLabel,
 } from "@/lib/nationwideCoverage";
 import {
   policyReviewNextGateLabel,
@@ -34,13 +31,6 @@ export const metadata: Metadata = {
 const cityKeys = (Object.keys(municipalityMeta) as MunicipalityKey[]).filter(
   (key) => municipalityMeta[key].type === "政令指定都市",
 );
-
-const planStatusLabels = {
-  not_started: "未着手",
-  indexed: "計画入口確認済み",
-  reviewed: "Reviewed",
-  verified: "Verified",
-} as const;
 
 const indexedPlanNames = nationwidePrefectureCoverage
   .filter((record) => record.planSource !== null)
@@ -108,65 +98,7 @@ export default function MunicipalitiesPage() {
             第1波は各地域の拠点9都道府県です。候補URL、計画入口、現行性、Reviewed状態を分け、確認が終わった段階だけを昇格します。
           </p>
 
-          <div className={styles.regionStack}>
-            {nationwideCoverageByRegion.map(({ region, records }) => (
-              <section className={styles.regionSection} key={region}>
-                <div className={styles.regionHeader}>
-                  <h3>{region}</h3>
-                  <span>{records.length}都道府県</span>
-                </div>
-                <div className={styles.prefectureGrid}>
-                  {records.map((record) => (
-                    <article className={styles.prefectureCard} key={record.prefecture_code}>
-                      <div className={styles.prefectureTop}>
-                        <div>
-                          <span className={styles.code}>{record.prefecture_code}</span>
-                          <h4>{record.name}</h4>
-                        </div>
-                        <StatusBadge
-                          label={coverageStageLabel(record.coverageStage)}
-                          tone={coverageStageTone(record.coverageStage)}
-                        />
-                      </div>
-
-                      <dl className={styles.prefectureFacts}>
-                        <div>
-                          <dt>公式入口</dt>
-                          <dd>{record.officialEntryStatus === "verified" ? "確認済み" : "候補・未確認"}</dd>
-                        </div>
-                        <div>
-                          <dt>総合計画</dt>
-                          <dd>{planStatusLabels[record.planReviewStatus]}</dd>
-                        </div>
-                        <div>
-                          <dt>計画資料</dt>
-                          <dd>{record.planSource?.title ?? "未索引"}</dd>
-                        </div>
-                        <div>
-                          <dt>現行性</dt>
-                          <dd>{planCurrencyLabel(record.planCurrencyStatus)}</dd>
-                        </div>
-                        <div>
-                          <dt>公開ページ</dt>
-                          <dd>{record.publicHref ? "公開中" : "未公開"}</dd>
-                        </div>
-                      </dl>
-
-                      <div className={styles.actions}>
-                        {record.publicHref ? <Link href={record.publicHref}>自治体ページ</Link> : null}
-                        {record.planSource ? (
-                          <a href={record.planSource.url} target="_blank" rel="noreferrer">総合計画 ↗</a>
-                        ) : null}
-                        <a href={record.official_url} target="_blank" rel="noreferrer">
-                          {record.officialEntryStatus === "verified" ? "公式サイト ↗" : "公式URL候補 ↗"}
-                        </a>
-                      </div>
-                    </article>
-                  ))}
-                </div>
-              </section>
-            ))}
-          </div>
+          <CoverageExplorer />
         </section>
 
         <section className="contentSection">
