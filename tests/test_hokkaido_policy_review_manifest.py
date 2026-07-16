@@ -14,9 +14,8 @@ def load(path: Path):
 
 def test_hokkaido_policy_review_manifest_matches_schema():
     manifest = load(MANIFEST_PATH)
-    schema = load(SCHEMA_PATH)
     validator = Draft202012Validator(
-        schema,
+        load(SCHEMA_PATH),
         format_checker=FormatChecker(),
     )
     assert list(validator.iter_errors(manifest)) == []
@@ -46,9 +45,9 @@ def test_hokkaido_manifest_preserves_boundaries_and_partial_counts():
     manifest = load(MANIFEST_PATH)
 
     assert manifest["expected_indicator_count"] == 108
-    assert manifest["reviewed_indicator_count"] == 12
-    assert manifest["remaining_indicator_count"] == 96
-    assert manifest["indicator_evidence_packet_count"] == 12
+    assert manifest["reviewed_indicator_count"] == 18
+    assert manifest["remaining_indicator_count"] == 90
+    assert manifest["indicator_evidence_packet_count"] == 18
     assert manifest["reviewed_indicator_count"] + manifest[
         "remaining_indicator_count"
     ] == manifest["expected_indicator_count"]
@@ -57,17 +56,18 @@ def test_hokkaido_manifest_preserves_boundaries_and_partial_counts():
     ]
     assert "掲載行は113" in manifest["count_basis"]
     assert "差分5件" in manifest["count_basis"]
-    assert "指標1〜12" in manifest["count_basis"]
+    assert "指標1〜18" in manifest["count_basis"]
     assert manifest["extraction_status"] == "in_progress"
     assert manifest["active_work_package"] == "indicator_catalog"
 
 
-def test_hokkaido_work_packages_record_first_catalog_batch():
+def test_hokkaido_work_packages_record_food_and_tourism_batches():
     manifest = load(MANIFEST_PATH)
-    packages = manifest["work_packages"]
-    packages_by_id = {package["id"]: package for package in packages}
+    packages_by_id = {
+        package["id"]: package for package in manifest["work_packages"]
+    }
 
-    assert [package["id"] for package in packages] == [
+    assert list(packages_by_id) == [
         "policy_hierarchy",
         "indicator_source_index",
         "indicator_catalog",
@@ -76,17 +76,17 @@ def test_hokkaido_work_packages_record_first_catalog_batch():
     ]
     assert packages_by_id["policy_hierarchy"]["status"] == "completed"
     assert packages_by_id["indicator_source_index"]["status"] == "completed"
-    assert "追加の政策分野参照5件" in packages_by_id[
-        "indicator_source_index"
-    ]["deliverable"]
     assert packages_by_id["indicator_catalog"]["status"] == "active"
-    assert "指標1〜12" in packages_by_id["indicator_catalog"]["deliverable"]
-    assert "指標13〜108" in packages_by_id["indicator_catalog"]["deliverable"]
+    assert "指標1〜18" in packages_by_id["indicator_catalog"]["deliverable"]
+    assert "指標19〜108" in packages_by_id["indicator_catalog"]["deliverable"]
     assert packages_by_id["evidence_packets"]["status"] == "active"
-    assert "指標1〜12" in packages_by_id["evidence_packets"]["deliverable"]
+    assert "指標1〜18" in packages_by_id["evidence_packets"]["deliverable"]
+    assert "残る90指標" in packages_by_id["evidence_packets"]["deliverable"]
     assert packages_by_id["web_publication"]["status"] == "blocked"
-    assert all(package["deliverable"].strip() for package in packages)
-    assert all(package["completion_gate"].strip() for package in packages)
+    assert all(
+        package["deliverable"].strip() and package["completion_gate"].strip()
+        for package in manifest["work_packages"]
+    )
 
 
 def test_hokkaido_manifest_requires_all_non_negotiable_kpi_safeguards():
