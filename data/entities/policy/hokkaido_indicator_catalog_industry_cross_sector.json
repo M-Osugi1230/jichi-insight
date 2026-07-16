@@ -1,0 +1,176 @@
+{
+  "id": "hokkaido-indicator-catalog-industry-cross-sector",
+  "municipality_key": "hokkaido-prefecture",
+  "policy_field_id": "policy-field-hokkaido-industry-cross-sector",
+  "source_id": "policy-source-hokkaido-indicators-industry-cross-sector",
+  "source_document_url": "https://www.pref.hokkaido.lg.jp/fs/1/0/6/4/6/3/1/8/_/06%20%E7%94%A3%E6%A5%AD%E6%B4%BB%E6%80%A7%E5%8C%96%E3%83%BB%E6%A5%AD%E7%A8%AE%E6%A8%AA%E6%96%AD%E5%88%86%E9%87%8E0708.pdf",
+  "indicator_number_start": 40,
+  "indicator_number_end": 45,
+  "items": [
+    {
+      "id": "policy-indicator-hokkaido-40",
+      "indicator_number": 40,
+      "indicator_name_original": "北海道におけるスタートアップの創出・集積数",
+      "policy_direction_id": "policy-direction-hokkaido-growth",
+      "policy_field_ids": ["policy-field-hokkaido-industry-cross-sector"],
+      "policy_orientation_original": "北海道から世界を目指すスタートアップの創出・集積",
+      "indicator_explanation_original": "スタートアップの創出・集積数の累計（2024年以降暦年累計）",
+      "source_page": 1,
+      "series": [{
+        "label": null,
+        "unit_original": "社",
+        "temporal_scope": "calendar_year",
+        "values": [
+          {"role": "current", "period": "2023年", "value": 124, "status": "numeric", "operator": "exact", "aggregation_scope": "cumulative_to_date", "value_text_original": "124"},
+          {"role": "intermediate_target", "period": "2028年", "value": 250, "status": "numeric", "operator": "exact", "aggregation_scope": "cumulative_to_date", "value_text_original": "250"},
+          {"role": "final_target", "period": "2033年", "value": 500, "status": "numeric", "operator": "exact", "aggregation_scope": "cumulative_to_date", "value_text_original": "500"}
+        ]
+      }],
+      "target_setting_status": "set",
+      "target_setting_rationale_original": "計画期間前半（2024～28年）は年間25社、後半（2029～33年）は年間50社の増加を目標として、スタートアップの創出・集積を加速する。",
+      "comparability_note_original": "単年度の創出数ではなく、各年末までの累計到達値として保持する。",
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-hokkaido-41",
+      "indicator_number": 41,
+      "indicator_name_original": "企業立地件数",
+      "policy_direction_id": "policy-direction-hokkaido-growth",
+      "policy_field_ids": ["policy-field-hokkaido-industry-cross-sector"],
+      "policy_orientation_original": "本道の優位性を活かした企業立地の促進",
+      "indicator_explanation_original": "企業の累計立地（新設及び増設）件数（2023年以降年度累計）",
+      "source_page": 2,
+      "series": [{
+        "label": null,
+        "unit_original": "件",
+        "temporal_scope": "fiscal_year",
+        "values": [
+          {"role": "current", "period": "2022年", "value": 98, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "98"},
+          {"role": "intermediate_target", "period": "2023～27年の5年累計", "value": 420, "status": "numeric", "operator": "exact", "aggregation_scope": "multi_year_cumulative", "value_text_original": "420"},
+          {"role": "final_target", "period": "2023～32年の10年累計", "value": 860, "status": "numeric", "operator": "exact", "aggregation_scope": "multi_year_cumulative", "value_text_original": "860"}
+        ]
+      }],
+      "target_setting_status": "set",
+      "target_setting_rationale_original": "過去15年間の立地件数平均と近年の産業立地動向を踏まえ、前計画の10年間780件から10％増となる860件を目指す。",
+      "comparability_note_original": "現状値98件は単年度実績であり、中間・最終目標は複数年度累計のため、直接の進捗率を計算しない。",
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-hokkaido-42",
+      "indicator_number": 42,
+      "indicator_name_original": "就業率（全体）",
+      "policy_direction_id": "policy-direction-hokkaido-growth",
+      "policy_field_ids": ["policy-field-hokkaido-industry-cross-sector"],
+      "policy_orientation_original": "産業人材の育成・確保と雇用の受け皿づくり",
+      "indicator_explanation_original": "15歳以上の人口のうち、仕事に就いている人の割合（暦年実績）",
+      "source_page": 3,
+      "series": [{
+        "label": null,
+        "unit_original": "％",
+        "temporal_scope": "calendar_year",
+        "values": [
+          {"role": "current", "period": "2023年", "value": 57.6, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "57.6"},
+          {"role": "intermediate_target", "period": "2028年", "value": null, "status": "conditional", "aggregation_scope": "single_period", "value_text_original": "各年において前年よりも上昇"},
+          {"role": "final_target", "period": "2033年", "value": null, "status": "conditional", "aggregation_scope": "single_period", "value_text_original": "各年において前年よりも上昇"}
+        ]
+      }],
+      "target_setting_status": "set",
+      "target_setting_rationale_original": "人口構成や経済情勢など様々な要因の影響を受けるため具体的な数値目標は設定せず、就業率を各年において前年よりも上昇させることを目指す。",
+      "comparability_note_original": "数値目標未設定ではなく、前年実績との比較による方向条件を持つ目標として保持する。",
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-hokkaido-43",
+      "indicator_number": 43,
+      "indicator_name_original": "正規従業員の充足度",
+      "policy_direction_id": "policy-direction-hokkaido-growth",
+      "policy_field_ids": ["policy-field-hokkaido-industry-cross-sector"],
+      "policy_orientation_original": "産業人材の育成・確保と雇用の受け皿づくり",
+      "indicator_explanation_original": "企業経営者が感じている自社の正規従業員の充足度（1～3月期状況）。調査で雇用者が『過剰』と回答した企業の割合から『不足』と回答した割合を除した値。",
+      "source_page": 4,
+      "series": [{
+        "label": null,
+        "unit_original": "％",
+        "temporal_scope": "other",
+        "values": [
+          {"role": "current", "period": "2023年", "value": -41.4, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "-41.4"},
+          {"role": "intermediate_target", "period": "2028年", "value": -39.7, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "-39.7"},
+          {"role": "final_target", "period": "2033年", "value": -38.0, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "-38.0"}
+        ]
+      }],
+      "target_setting_status": "set",
+      "target_setting_rationale_original": "人手不足が続く状況の中で、コロナ禍前の5年間（2015～2019年）の平均値である-38.0を目指す。",
+      "comparability_note_original": "負の値は欠損やエラーではなく、不足回答が過剰回答を上回る調査結果として保持する。",
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-hokkaido-44",
+      "indicator_number": 44,
+      "indicator_name_original": "産学官の共同研究の件数",
+      "policy_direction_id": "policy-direction-hokkaido-growth",
+      "policy_field_ids": ["policy-field-hokkaido-industry-cross-sector"],
+      "policy_orientation_original": "科学技術振興の促進と先端技術の社会実装",
+      "indicator_explanation_original": "道内の大学、道立試験研究機関等における共同研究の件数（年度実績）",
+      "source_page": 5,
+      "series": [{
+        "label": null,
+        "unit_original": "件",
+        "temporal_scope": "fiscal_year",
+        "values": [
+          {"role": "current", "period": "2022年", "value": 1712, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "1,712"},
+          {"role": "intermediate_target", "period": "2027年", "value": 1872, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "1,872"},
+          {"role": "final_target", "period": "2032年", "value": 2046, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "2,046"}
+        ]
+      }],
+      "target_setting_status": "set",
+      "target_setting_rationale_original": "2013～22年の増加実績を踏まえ、研究開発と産学官金等の連携を強化し、実質GDP成長率の伸び率と同水準で増加することを目指す。",
+      "comparability_note_original": null,
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-hokkaido-45",
+      "indicator_number": 45,
+      "indicator_name_original": "輸出額",
+      "policy_direction_id": "policy-direction-hokkaido-growth",
+      "policy_field_ids": ["policy-field-hokkaido-industry-cross-sector", "policy-field-hokkaido-socioeconomic-infrastructure"],
+      "policy_orientation_original": "ビジネスの海外展開と道内への投資促進／道内外を結ぶ総合的な輸送ネットワークの構築",
+      "indicator_explanation_original": "本道から函館税関を通じて直接海外へ輸出された通関額（暦年実績）",
+      "source_page": 6,
+      "series": [{
+        "label": null,
+        "unit_original": "億円",
+        "temporal_scope": "calendar_year",
+        "values": [
+          {"role": "current", "period": "2022年", "value": 4295, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "4,295"},
+          {"role": "intermediate_target", "period": "2027年", "value": 5395, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "5,395"},
+          {"role": "final_target", "period": "2032年", "value": 6495, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "6,495"}
+        ]
+      }],
+      "target_setting_status": "set",
+      "target_setting_rationale_original": "現状値4,295億円を基準に、2016～18年の平均増加率を踏まえて毎年約5％（220億円）増加させることを目指す。",
+      "comparability_note_original": "産業活性化・業種横断分野と社会経済の基盤整備の2政策分野に掲載される一意指標であり、重複KPIとして登録しない。",
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    }
+  ],
+  "reviewed_at": "2026-07-16",
+  "review_status": "reviewed",
+  "confidence": "high"
+}
