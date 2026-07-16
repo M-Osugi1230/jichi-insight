@@ -1,0 +1,127 @@
+[
+  {
+    "id": "evidence-policy-direction-miyagi-industry-growth",
+    "subject_type": "policy_direction",
+    "subject_id": "policy-direction-miyagi-industry-growth",
+    "claims": [
+      {
+        "field": "title_original",
+        "statement": "政策推進の基本方向1は『富県宮城を支える県内産業の持続的な成長促進』。",
+        "source_ids": ["miyagi-source-vision-pdf", "miyagi-source-results-evaluation-fy2024-pdf"],
+        "location_note": "ビジョンPDFページ8、成果と評価PDFページ1-2",
+        "decision": "accepted",
+        "review_note": null
+      },
+      {
+        "field": "policies_and_measures",
+        "statement": "政策1・2と施策1〜5が属する。",
+        "source_ids": ["miyagi-source-vision-pdf", "miyagi-source-results-evaluation-fy2024-pdf"],
+        "location_note": "ビジョンPDFページ3・8、成果と評価PDFページ1-2",
+        "decision": "accepted",
+        "review_note": "政策番号、施策番号、公式掲載順を保持する。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-policy-direction-miyagi-children-parenting",
+    "subject_type": "policy_direction",
+    "subject_id": "policy-direction-miyagi-children-parenting",
+    "claims": [
+      {
+        "field": "title_original",
+        "statement": "政策推進の基本方向2は『社会全体で支える宮城の子ども・子育て』。",
+        "source_ids": ["miyagi-source-vision-pdf", "miyagi-source-results-evaluation-fy2024-pdf"],
+        "location_note": "ビジョンPDFページ8、成果と評価PDFページ2",
+        "decision": "accepted",
+        "review_note": null
+      },
+      {
+        "field": "policies_and_measures",
+        "statement": "政策3・4と施策6〜9が属する。",
+        "source_ids": ["miyagi-source-vision-pdf", "miyagi-source-results-evaluation-fy2024-pdf"],
+        "location_note": "ビジョンPDFページ3-4・8、成果と評価PDFページ2",
+        "decision": "accepted",
+        "review_note": "政策番号、施策番号、公式掲載順を保持する。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-policy-direction-miyagi-inclusive-community",
+    "subject_type": "policy_direction",
+    "subject_id": "policy-direction-miyagi-inclusive-community",
+    "claims": [
+      {
+        "field": "title_original",
+        "statement": "政策推進の基本方向3は『誰もが安心していきいきと暮らせる地域社会づくり』。",
+        "source_ids": ["miyagi-source-vision-pdf", "miyagi-source-results-evaluation-fy2024-pdf"],
+        "location_note": "ビジョンPDFページ8、成果と評価PDFページ2",
+        "decision": "accepted",
+        "review_note": null
+      },
+      {
+        "field": "policies_and_measures",
+        "statement": "政策5・6と施策10〜14が属する。",
+        "source_ids": ["miyagi-source-vision-pdf", "miyagi-source-results-evaluation-fy2024-pdf"],
+        "location_note": "ビジョンPDFページ4・8、成果と評価PDFページ2",
+        "decision": "accepted",
+        "review_note": "政策番号、施策番号、公式掲載順を保持する。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-policy-direction-miyagi-resilient-environment",
+    "subject_type": "policy_direction",
+    "subject_id": "policy-direction-miyagi-resilient-environment",
+    "claims": [
+      {
+        "field": "title_original",
+        "statement": "政策推進の基本方向4は『強靱で自然と調和した県土づくり』。",
+        "source_ids": ["miyagi-source-vision-pdf", "miyagi-source-results-evaluation-fy2024-pdf"],
+        "location_note": "ビジョンPDFページ8、成果と評価PDFページ2",
+        "decision": "accepted",
+        "review_note": "ビジョン本文の『強靱』表記を正本とし、評価資料の字体差を同一方向の表記差として扱う。"
+      },
+      {
+        "field": "policies_and_measures",
+        "statement": "政策7・8と施策15〜18が属する。",
+        "source_ids": ["miyagi-source-vision-pdf", "miyagi-source-results-evaluation-fy2024-pdf"],
+        "location_note": "ビジョンPDFページ4・8、成果と評価PDFページ2",
+        "decision": "accepted",
+        "review_note": "政策番号、施策番号、公式掲載順を保持する。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-policy-collection-miyagi-reconstruction-support",
+    "subject_type": "policy_collection_profile",
+    "subject_id": "policy-collection-miyagi-reconstruction-support",
+    "claims": [
+      {
+        "field": "collection_title",
+        "statement": "『被災地の復興完了に向けたきめ細かなサポート』は政策推進の4基本方向と並行する別枠。",
+        "source_ids": ["miyagi-source-vision-pdf"],
+        "location_note": "ビジョンPDFページ3・7-8・33-34",
+        "decision": "accepted",
+        "review_note": "政策番号1〜8へ含めず、parallel_domainsとして保持する。"
+      },
+      {
+        "field": "parallel_domains",
+        "statement": "生活再建、産業・なりわい、原発事故被害、復興事業フォローアップの4取組分野を公式順序で保持する。",
+        "source_ids": ["miyagi-source-vision-pdf"],
+        "location_note": "ビジョンPDFページ3・8・34",
+        "decision": "accepted",
+        "review_note": "4基本方向・8政策・18施策と混同しない。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]
