@@ -73,7 +73,8 @@ def test_deer_range_targets_remain_conditional():
 
 def test_reference_breakdowns_and_publication_lags_are_separated():
     items = {item["indicator_number"]: item for item in load(CATALOG)["items"]}
-    assert "物質別" in items[99]["comparability_note_original"]
+    air_note = items[99]["comparability_note_original"]
+    assert all(name in air_note for name in ["二酸化硫黄", "二酸化窒素", "浮遊粒子状物質"])
     assert "河川、湖沼、海域" in items[100]["comparability_note_original"]
     assert "捕獲目標・捕獲実績" in items[101]["comparability_note_original"]
     assert "一般廃棄物・産業廃棄物" in items[102]["comparability_note_original"]
