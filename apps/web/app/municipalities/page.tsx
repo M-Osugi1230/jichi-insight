@@ -185,9 +185,9 @@ export default function MunicipalitiesPage() {
         <section className="callout callout--dark">
           <div>
             <p className="eyebrow">Next nationwide wave</p>
-            <h2>次は大阪府の現行計画を確認する。</h2>
+            <h2>次は9地域拠点の政策体系とKPIをReviewed化する。</h2>
             <p>
-              第1波9拠点のうち8拠点は、後継計画・改定・計画期間まで確認しました。大阪府は現行性を確認できるまで未確認状態を維持し、その後、9拠点の政策体系、KPI、年度評価をEvidence Packet付きでReviewed化します。
+              第1波9拠点すべてで、公式ホームページ、計画入口、現行計画を確認しました。次は計画本文、政策階層、数値目標、年度評価を一次資料と照合し、Evidence Packet付きで順に公開します。
             </p>
           </div>
         </section>
