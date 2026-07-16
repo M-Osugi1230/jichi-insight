@@ -51,14 +51,30 @@ check_page() {
   done
 }
 
+check_absent() {
+  local route="$1"
+  local forbidden="$2"
+  local status
+
+  status="$(curl --silent --show-error --location --output "$TEMP_FILE" --write-out '%{http_code}' "$BASE_URL$route" || true)"
+  if [[ "$status" != "200" ]] || grep --quiet --fixed-strings "$forbidden" "$TEMP_FILE"; then
+    printf 'FAIL forbidden production text on %s: %s\n' "$route" "$forbidden" >> "$REPORT"
+    cat "$REPORT"
+    exit 1
+  fi
+  printf '  PASS absent %s\n' "$forbidden" >> "$REPORT"
+}
+
 check_page "/municipalities/" \
   "全国47都道府県を、同じ品質段階で追う。" \
   "全国登録" \
   "公式入口確認済み" \
   "総合計画索引済み" \
+  "現行計画確認済み" \
   "Reviewedデータ公開" \
-  "北海道、宮城県、東京都、愛知県、大阪府、広島県、香川県、福岡県、沖縄県で計画資料の入口を確認。" \
-  "次は9地域拠点の政策体系と数値目標をReviewed化する。" \
+  "2050東京戦略 ～東京 もっとよくなる～" \
+  "次は残る8地域拠点の現行計画を確認する。" \
+  "現行性未確認" \
   "公式URL候補" \
   "北海道" \
   "宮城県" \
@@ -72,11 +88,15 @@ check_page "/municipalities/" \
   "福岡市" \
   "北九州市"
 
+check_absent "/municipalities/" "「未来の東京」戦略"
+
 check_page "/data-quality/" \
-  "全国登録と、確認済み・Reviewed・公開済みを分ける。" \
+  "全国登録、計画入口、現行性、Reviewed、公開済みを分ける。" \
   "47都道府県を共通コードと地域区分で登録。" \
   "自治体公式ホームページを手動確認した都道府県。" \
   "計画資料の公式入口を固定した都道府県。" \
+  "後継計画・改定・有効期間まで確認した都道府県。" \
+  "公式計画入口はあるが、後継計画の確認が未完了。" \
   "本文・数値・期間・単位を人が照合済み。" \
   "公開ゲートと本番確認を通過したページ。" \
   "公式URL候補・未確認"
