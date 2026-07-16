@@ -1,0 +1,101 @@
+{
+  "id": "hokkaido-indicator-catalog-digital",
+  "municipality_key": "hokkaido-prefecture",
+  "policy_field_id": "policy-field-hokkaido-digital",
+  "source_id": "policy-source-hokkaido-indicators-digital",
+  "source_document_url": "https://www.pref.hokkaido.lg.jp/fs/1/0/6/4/6/3/1/6/_/04%20%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB0708.pdf",
+  "indicator_number_start": 30,
+  "indicator_number_end": 32,
+  "items": [
+    {
+      "id": "policy-indicator-hokkaido-30",
+      "indicator_number": 30,
+      "indicator_name_original": "データセンター、デジタル関連企業の立地件数",
+      "policy_direction_id": "policy-direction-hokkaido-growth",
+      "policy_field_ids": ["policy-field-hokkaido-digital"],
+      "policy_orientation_original": "データセンターやデジタル関連企業の集積",
+      "indicator_explanation_original": "データセンター、デジタル関連企業の累計立地（新設及び増設）件数",
+      "source_page": 1,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "件",
+          "temporal_scope": "other",
+          "values": [
+            {"role": "current", "period": "2022年", "value": 28, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "28"},
+            {"role": "intermediate_target", "period": "2023〜2027年", "value": 105, "status": "numeric", "operator": "exact", "aggregation_scope": "multi_year_cumulative", "value_text_original": "105（５年間累計）"},
+            {"role": "final_target", "period": "2023〜2032年", "value": 260, "status": "numeric", "operator": "exact", "aggregation_scope": "multi_year_cumulative", "value_text_original": "260（10年間累計）"}
+          ]
+        }
+      ],
+      "target_setting_status": "set",
+      "target_setting_rationale_original": "データセンターの従来目標に、対象分野の拡大を踏まえたデジタル関連企業の立地見込みを加え、2023〜2027年の累計105件、2023〜2032年の累計260件を目指す。",
+      "comparability_note_original": "現状値28件は2022年の単年度値で、中間・最終目標は複数年累計。単純な達成率を計算しない。",
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-hokkaido-31",
+      "indicator_number": 31,
+      "indicator_name_original": "半導体関連企業による製造品出荷額",
+      "policy_direction_id": "policy-direction-hokkaido-growth",
+      "policy_field_ids": ["policy-field-hokkaido-digital"],
+      "policy_orientation_original": "半導体関連産業の振興",
+      "indicator_explanation_original": "半導体関連企業の出荷額",
+      "source_page": 2,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "億円",
+          "temporal_scope": "calendar_year",
+          "values": [
+            {"role": "current", "period": "2021年", "value": 1506, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "1,506"},
+            {"role": "intermediate_target", "period": null, "value": null, "status": "not_set", "value_text_original": "―"},
+            {"role": "final_target", "period": "2033年", "value": 5700, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "5,700"}
+          ]
+        }
+      ],
+      "target_setting_status": "partially_set",
+      "target_setting_rationale_original": "ラピダス社や関連企業の立地などを契機に、半導体生産の高付加価値化による製造品出荷額の増加を目指す。",
+      "comparability_note_original": "中間目標値は『―』で未設定。0として扱わない。",
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-hokkaido-32",
+      "indicator_number": 32,
+      "indicator_name_original": "半導体関連企業の生産活動による道内総生産への影響額",
+      "policy_direction_id": "policy-direction-hokkaido-growth",
+      "policy_field_ids": ["policy-field-hokkaido-digital"],
+      "policy_orientation_original": "半導体関連産業の振興",
+      "indicator_explanation_original": "半導体関連企業の生産活動による道内総生産への影響額",
+      "source_page": 3,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "億円",
+          "temporal_scope": "calendar_year",
+          "values": [
+            {"role": "current", "period": null, "value": null, "status": "not_available", "value_text_original": "―"},
+            {"role": "intermediate_target", "period": null, "value": null, "status": "not_set", "value_text_original": "―"},
+            {"role": "final_target", "period": "2033年", "value": 10259, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "10,259"}
+          ]
+        }
+      ],
+      "target_setting_status": "partially_set",
+      "target_setting_rationale_original": "ラピダス社や関連企業の立地を契機とする半導体関連産業の生産活動が道内総生産へ与える影響額の拡大を目指す。",
+      "comparability_note_original": "現状値と中間目標値は『―』。最終目標のみ設定されており、未設定値を0へ変換しない。",
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    }
+  ],
+  "reviewed_at": "2026-07-16",
+  "review_status": "reviewed",
+  "confidence": "high"
+}

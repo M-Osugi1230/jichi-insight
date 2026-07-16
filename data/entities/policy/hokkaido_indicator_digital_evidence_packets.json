@@ -1,0 +1,35 @@
+[
+  {
+    "id": "evidence-policy-indicator-hokkaido-30",
+    "subject_type": "kpi",
+    "subject_id": "policy-indicator-hokkaido-30",
+    "claims": [
+      {"field": "indicator_name_original", "statement": "指標30は『データセンター、デジタル関連企業の立地件数』。", "source_ids": ["policy-source-hokkaido-indicators-digital"], "location_note": "PDFページ1『番号・指標名』", "decision": "accepted", "review_note": null},
+      {"field": "series", "statement": "現状値28件（2022年）、中間目標105件（2023〜2027年の5年間累計）、最終目標260件（2023〜2032年の10年間累計）。", "source_ids": ["policy-source-hokkaido-indicators-digital"], "location_note": "PDFページ1『目標』", "decision": "accepted", "review_note": "単年度値と複数年累計を区別し、単純な達成率を計算しない。"}
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-policy-indicator-hokkaido-31",
+    "subject_type": "kpi",
+    "subject_id": "policy-indicator-hokkaido-31",
+    "claims": [
+      {"field": "indicator_name_original", "statement": "指標31は『半導体関連企業による製造品出荷額』。", "source_ids": ["policy-source-hokkaido-indicators-digital"], "location_note": "PDFページ2『番号・指標名』", "decision": "accepted", "review_note": null},
+      {"field": "series", "statement": "現状値1,506億円（2021年）、中間目標値は未設定、最終目標5,700億円（2033年）。", "source_ids": ["policy-source-hokkaido-indicators-digital"], "location_note": "PDFページ2『目標』", "decision": "accepted", "review_note": "中間目標の『―』を0へ変換しない。"}
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-policy-indicator-hokkaido-32",
+    "subject_type": "kpi",
+    "subject_id": "policy-indicator-hokkaido-32",
+    "claims": [
+      {"field": "indicator_name_original", "statement": "指標32は『半導体関連企業の生産活動による道内総生産への影響額』。", "source_ids": ["policy-source-hokkaido-indicators-digital"], "location_note": "PDFページ3『番号・指標名』", "decision": "accepted", "review_note": null},
+      {"field": "series", "statement": "現状値と中間目標値は未設定、最終目標10,259億円（2033年）。", "source_ids": ["policy-source-hokkaido-indicators-digital"], "location_note": "PDFページ3『目標』", "decision": "accepted", "review_note": "現状値なしと中間目標未設定を区別し、いずれも0へ変換しない。"}
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]
