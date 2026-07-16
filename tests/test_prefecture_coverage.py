@@ -65,6 +65,7 @@ def test_quality_stages_are_explicit_and_do_not_overstate_coverage():
     verified_codes = set(registry["verified_official_codes"])
     anchor_codes = set(registry["regional_anchor_codes"])
     reviewed_codes = set(registry["reviewed_prefecture_codes"])
+    current_plan_codes = set(registry["current_plan_confirmed_codes"])
     plan_source_codes = {
         source["prefecture_code"] for source in registry["plan_sources"]
     }
@@ -83,17 +84,22 @@ def test_quality_stages_are_explicit_and_do_not_overstate_coverage():
     assert verified_codes == expected_anchor_codes
     assert anchor_codes == expected_anchor_codes
     assert reviewed_codes == {"40"}
+    assert current_plan_codes == {"13"}
     assert plan_source_codes == expected_anchor_codes
 
     assert verified_codes <= known_codes
     assert anchor_codes <= known_codes
     assert reviewed_codes <= known_codes
+    assert current_plan_codes <= known_codes
     assert plan_source_codes <= known_codes
     assert reviewed_codes <= verified_codes
     assert reviewed_codes <= plan_source_codes
+    assert current_plan_codes <= plan_source_codes
 
     assert len(known_codes - verified_codes) == 38
     assert len(plan_source_codes) == 9
+    assert len(current_plan_codes) == 1
+    assert len(plan_source_codes - current_plan_codes) == 8
     assert len(reviewed_codes) == 1
 
 
@@ -109,13 +115,20 @@ def test_wave_one_plan_sources_preserve_review_depth_and_https_provenance():
 
     assert sources_by_code["01"]["title"] == "北海道総合計画"
     assert sources_by_code["04"]["title"] == "新・宮城の将来ビジョン"
-    assert sources_by_code["13"]["title"] == "「未来の東京」戦略"
+    assert (
+        sources_by_code["13"]["title"]
+        == "2050東京戦略 ～東京 もっとよくなる～"
+    )
+    assert sources_by_code["13"]["url"].endswith("/basic-plan/2050-tokyo")
     assert sources_by_code["23"]["title"] == "あいちビジョン2030"
     assert sources_by_code["27"]["title"] == "将来ビジョン・大阪"
     assert (
         sources_by_code["37"]["title"]
         == "「人生100年時代のフロンティア県・香川」実現計画"
     )
+
+    assert all(source["title"] != "「未来の東京」戦略" for source in plan_sources)
+    assert all("/basic-plan/choki-plan" not in source["url"] for source in plan_sources)
 
     for source in plan_sources:
         assert source["url"].startswith("https://")
