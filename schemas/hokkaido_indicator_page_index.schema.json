@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.example/schemas/hokkaido_indicator_page_index.schema.json",
+  "title": "Hokkaido indicator page number index",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "updated_at", "prefecture_code", "municipality_key", "expected_indicator_count", "sequence_status", "relationship_status", "records"],
+  "properties": {
+    "id": {"const": "hokkaido-indicator-page-index"},
+    "updated_at": {"type": "string", "format": "date"},
+    "prefecture_code": {"const": "01"},
+    "municipality_key": {"const": "hokkaido-prefecture"},
+    "expected_indicator_count": {"const": 108},
+    "sequence_status": {"const": "complete"},
+    "relationship_status": {"type": "string", "enum": ["not_started", "active", "completed"]},
+    "records": {
+      "type": "array",
+      "minItems": 108,
+      "maxItems": 108,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["indicator_number", "source_id", "page_number", "policy_field_id", "position_status", "relationship_status"],
+        "properties": {
+          "indicator_number": {"type": "integer", "minimum": 1, "maximum": 108},
+          "source_id": {"type": "string", "pattern": "^policy-source-hokkaido-indicators-[a-z0-9-]+$"},
+          "page_number": {"type": "integer", "minimum": 1},
+          "policy_field_id": {"type": "string", "pattern": "^policy-field-hokkaido-[a-z0-9-]+$"},
+          "position_status": {"const": "verified"},
+          "relationship_status": {"type": "string", "enum": ["pending_review", "reviewed"]}
+        }
+      }
+    }
+  }
+}
