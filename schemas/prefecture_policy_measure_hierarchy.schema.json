@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.example/schemas/prefecture_policy_measure_hierarchy.schema.json",
+  "title": "Prefecture policy hierarchy with measures",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "prefecture_code",
+    "municipality_key",
+    "plan_source_ids",
+    "plan_title_original",
+    "plan_period_start",
+    "plan_period_end",
+    "plan_period_original",
+    "directions",
+    "parallel_domains",
+    "progress_linkage_status",
+    "evaluation_status",
+    "source_location",
+    "reviewed_at",
+    "review_status",
+    "confidence"
+  ],
+  "properties": {
+    "id": {"type": "string", "pattern": "^policy-measure-hierarchy-[a-z0-9-]+$"},
+    "prefecture_code": {"type": "string", "pattern": "^[0-9]{2}$"},
+    "municipality_key": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "plan_source_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"type": "string", "pattern": "^[a-z0-9-]+$"}
+    },
+    "plan_title_original": {"type": "string", "minLength": 1},
+    "plan_period_start": {"type": "integer", "minimum": 1900},
+    "plan_period_end": {"type": "integer", "minimum": 1900},
+    "plan_period_original": {"type": "string", "minLength": 1},
+    "directions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/direction"}
+    },
+    "parallel_domains": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/parallelDomain"}
+    },
+    "progress_linkage_status": {
+      "type": "string",
+      "enum": ["not_linked", "partial", "linked"]
+    },
+    "evaluation_status": {
+      "type": "string",
+      "enum": ["not_assessed", "partially_assessed", "assessed"]
+    },
+    "source_location": {"type": "string", "minLength": 1},
+    "reviewed_at": {"type": "string", "format": "date"},
+    "review_status": {"const": "reviewed"},
+    "confidence": {"enum": ["high", "medium", "low", "not_assessable"]}
+  },
+  "$defs": {
+    "direction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "display_order", "title_original", "policies"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^policy-direction-[a-z0-9-]+$"},
+        "display_order": {"type": "integer", "minimum": 1},
+        "title_original": {"type": "string", "minLength": 1},
+        "policies": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/policy"}
+        }
+      }
+    },
+    "policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "policy_number",
+        "display_order",
+        "title_original",
+        "measures"
+      ],
+      "properties": {
+        "id": {"type": "string", "pattern": "^policy-[a-z0-9-]+$"},
+        "policy_number": {"type": "integer", "minimum": 1},
+        "display_order": {"type": "integer", "minimum": 1},
+        "title_original": {"type": "string", "minLength": 1},
+        "measures": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/measure"}
+        }
+      }
+    },
+    "measure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "measure_number", "display_order", "title_original"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^measure-[a-z0-9-]+$"},
+        "measure_number": {"type": "integer", "minimum": 1},
+        "display_order": {"type": "integer", "minimum": 1},
+        "title_original": {"type": "string", "minLength": 1}
+      }
+    },
+    "parallelDomain": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "display_order", "title_original", "relationship_note"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^parallel-domain-[a-z0-9-]+$"},
+        "display_order": {"type": "integer", "minimum": 1},
+        "title_original": {"type": "string", "minLength": 1},
+        "relationship_note": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}
