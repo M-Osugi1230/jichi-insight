@@ -23,15 +23,27 @@ check_page() {
       local missing=false
       local required
       for required in "$@"; do
-        if ! grep --quiet --fixed-strings "$required" "$TEMP_FILE"; then missing=true; break; fi
+        if ! grep --quiet --fixed-strings "$required" "$TEMP_FILE"; then
+          missing=true
+          break
+        fi
       done
-      if [[ "$missing" == "false" ]]; then ready=true; break; fi
+      if [[ "$missing" == "false" ]]; then
+        ready=true
+        break
+      fi
     fi
     sleep 10
   done
-  if [[ "$ready" != "true" ]]; then printf 'FAIL %s\n' "$route" >> "$REPORT"; cat "$REPORT"; exit 1; fi
+  if [[ "$ready" != "true" ]]; then
+    printf 'FAIL %s\n' "$route" >> "$REPORT"
+    cat "$REPORT"
+    exit 1
+  fi
   local required
-  for required in "$@"; do printf '  PASS %s\n' "$required" >> "$REPORT"; done
+  for required in "$@"; do
+    printf '  PASS %s\n' "$required" >> "$REPORT"
+  done
 }
 
 check_absent() {
@@ -39,7 +51,11 @@ check_absent() {
   local forbidden="$2"
   local status
   status="$(curl --silent --show-error --location --output "$TEMP_FILE" --write-out '%{http_code}' "$BASE_URL$route" || true)"
-  if [[ "$status" != "200" ]] || grep --quiet --fixed-strings "$forbidden" "$TEMP_FILE"; then printf 'FAIL forbidden production text on %s: %s\n' "$route" "$forbidden" >> "$REPORT"; cat "$REPORT"; exit 1; fi
+  if [[ "$status" != "200" ]] || grep --quiet --fixed-strings "$forbidden" "$TEMP_FILE"; then
+    printf 'FAIL forbidden production text on %s: %s\n' "$route" "$forbidden" >> "$REPORT"
+    cat "$REPORT"
+    exit 1
+  fi
   printf '  PASS absent %s\n' "$forbidden" >> "$REPORT"
 }
 
@@ -58,9 +74,9 @@ check_page "/municipalities/" \
   "Reviewed基準実装" \
   "Reviewed化作業中" \
   "指標関係Reviewed・KPI本文抽出中" \
-  "指標1〜18（食・観光）をEvidence Packet付きでReviewed化済み。" \
-  "残る90指標" \
-  "指標19〜29（ゼロカーボン）" \
+  "指標1〜29（食・観光・ゼロカーボン）をEvidence Packet付きでReviewed化済み。" \
+  "残る79指標" \
+  "指標30〜32（デジタル）" \
   "作業待ち" \
   "北海道の108指標から、全国Reviewed化を開始する。" \
   "公式URL候補" \
@@ -75,15 +91,15 @@ check_page "/data-quality/" \
   "47都道府県を共通コードと地域区分で登録。" \
   "公式計画を見つけた件数と、Reviewedに使える件数を分ける。" \
   "北海道指標PDF" \
-  "北海道は指標1〜18をReviewed化し、残る90指標を抽出中。" \
+  "北海道は指標1〜29をReviewed化し、残る79指標を抽出中。" \
   "北海道指標位置" \
   "北海道複数分野参照" \
   "北海道Reviewed指標" \
-  "食・観光の指標1〜18。残り90件は未Reviewed。" \
+  "食・観光・ゼロカーボンの指標1〜29。残り79件は未Reviewed。" \
   "北海道KPI Evidence" \
   "Reviewed指標すべてにEvidence Packetを付与。" \
   "数値目標あり" \
-  "複数系列と「以上」の下限条件を分離して保持。" \
+  "複数系列、減少目標、非単調な原文目標も修正せず保持。" \
   "目標未設定" \
   "指標3・6・10の「―」を0へ変換せずnullで保持。" \
   "比較注意あり" \
