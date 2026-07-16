@@ -17,6 +17,7 @@ CATALOG_PATHS = [
     POLICY_DIR / "hokkaido_indicator_catalog_employment_work.json",
     POLICY_DIR / "hokkaido_indicator_catalog_sme_commerce.json",
     POLICY_DIR / "hokkaido_indicator_catalog_safety_security.json",
+    POLICY_DIR / "hokkaido_indicator_catalog_regional_development.json",
 ]
 EVIDENCE_PATHS = [
     POLICY_DIR / "hokkaido_indicator_food_evidence_packets.json",
@@ -31,6 +32,7 @@ EVIDENCE_PATHS = [
     POLICY_DIR / "hokkaido_indicator_employment_work_evidence_packets.json",
     POLICY_DIR / "hokkaido_indicator_sme_commerce_evidence_packets.json",
     POLICY_DIR / "hokkaido_indicator_safety_security_evidence_packets.json",
+    POLICY_DIR / "hokkaido_indicator_regional_development_evidence_packets.json",
 ]
 
 
@@ -38,7 +40,7 @@ def load(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def test_reviewed_hokkaido_indicators_form_one_sequence_through_79():
+def test_reviewed_hokkaido_indicators_form_one_sequence_through_83():
     indicators = [
         item
         for path in CATALOG_PATHS
@@ -47,8 +49,8 @@ def test_reviewed_hokkaido_indicators_form_one_sequence_through_79():
     numbers = sorted(item["indicator_number"] for item in indicators)
     ids = [item["id"] for item in indicators]
 
-    assert numbers == list(range(1, 80))
-    assert len(ids) == len(set(ids)) == 79
+    assert numbers == list(range(1, 84))
+    assert len(ids) == len(set(ids)) == 83
     assert all(item["review_status"] == "reviewed" for item in indicators)
     assert all(item["actual_linkage_status"] == "not_linked" for item in indicators)
     assert all(item["evaluation_status"] == "not_assessed" for item in indicators)
@@ -67,7 +69,7 @@ def test_every_reviewed_indicator_has_exactly_one_evidence_packet():
     ]
     subject_ids = [packet["subject_id"] for packet in packets]
 
-    assert len(packets) == 79
+    assert len(packets) == 83
     assert len(subject_ids) == len(set(subject_ids))
     assert set(subject_ids) == indicator_ids
 
@@ -77,9 +79,9 @@ def test_manifest_counts_match_reviewed_files():
     indicator_count = sum(len(load(path)["items"]) for path in CATALOG_PATHS)
     evidence_count = sum(len(load(path)) for path in EVIDENCE_PATHS)
 
-    assert manifest["reviewed_indicator_count"] == indicator_count == 79
-    assert manifest["indicator_evidence_packet_count"] == evidence_count == 79
-    assert manifest["remaining_indicator_count"] == 108 - indicator_count == 29
+    assert manifest["reviewed_indicator_count"] == indicator_count == 83
+    assert manifest["indicator_evidence_packet_count"] == evidence_count == 83
+    assert manifest["remaining_indicator_count"] == 108 - indicator_count == 25
 
 
 def test_conditional_targets_remain_non_numeric_and_original():
@@ -96,7 +98,7 @@ def test_conditional_targets_remain_non_numeric_and_original():
         if value["status"] == "conditional"
     ]
 
-    assert len(conditional_values) == 10
+    assert len(conditional_values) == 11
     assert all(value["value"] is None for value in conditional_values)
     texts = [value["value_text_original"] for value in conditional_values]
     assert texts.count("各年において前年よりも上昇") == 2
@@ -105,3 +107,4 @@ def test_conditional_targets_remain_non_numeric_and_original():
     assert texts.count("法定雇用率以上") == 2
     assert texts.count("中間目標値以下かつ過去５年平均値以下") == 1
     assert texts.count("中間目標値以上かつ過去５年平均値以上") == 1
+    assert texts.count("社会増") == 1
