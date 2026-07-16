@@ -14,6 +14,14 @@ import {
   nationwidePrefectureCoverage,
   planCurrencyLabel,
 } from "@/lib/nationwideCoverage";
+import {
+  policyReviewNextGateLabel,
+  policyReviewStatusLabel,
+  policyReviewStatusTone,
+  sourceInventoryStatusLabel,
+  waveOnePolicyReviewQueue,
+  waveOnePolicyReviewStats,
+} from "@/lib/policyReviewQueue";
 
 import styles from "./page.module.css";
 
@@ -162,6 +170,68 @@ export default function MunicipalitiesPage() {
         </section>
 
         <section className="contentSection">
+          <p className="eyebrow">Wave 1 review queue</p>
+          <h2>Reviewed化は、北海道から始める。</h2>
+          <p className={styles.sectionLead}>
+            福岡県を基準実装とし、次は公式入口に108指標の個票がまとまる北海道で、政策体系・KPI・Evidence Packetの全国展開モデルを検証します。順位は評価点ではなく、資料構造と作業依存関係に基づく運用順です。
+          </p>
+
+          <div className={styles.queueSummary} aria-label="第1波Reviewed化の進捗">
+            <article><span>Reviewed基準実装</span><strong>{waveOnePolicyReviewStats.reviewedReferences}</strong></article>
+            <article><span>Reviewed化作業中</span><strong>{waveOnePolicyReviewStats.activeReviews}</strong></article>
+            <article><span>作業待ち</span><strong>{waveOnePolicyReviewStats.queued}</strong></article>
+          </div>
+
+          <div className={styles.reviewQueue}>
+            {waveOnePolicyReviewQueue.map((item) => (
+              <article
+                className={`${styles.reviewCard} ${item.status === "active_review" ? styles.reviewCardActive : ""}`.trim()}
+                key={item.prefecture_code}
+              >
+                <div className={styles.reviewCardHeader}>
+                  <div>
+                    <span className={styles.queueOrder}>
+                      {item.order === 0 ? "基準" : `優先 ${item.order}`}
+                    </span>
+                    <h3>{item.name}</h3>
+                  </div>
+                  <StatusBadge
+                    label={policyReviewStatusLabel(item.status)}
+                    tone={policyReviewStatusTone(item.status)}
+                  />
+                </div>
+                <p className={styles.planTitle}>{item.current_plan_title}</p>
+                <dl className={styles.reviewFacts}>
+                  <div>
+                    <dt>資料状態</dt>
+                    <dd>{sourceInventoryStatusLabel(item.source_inventory_status)}</dd>
+                  </div>
+                  <div>
+                    <dt>次の品質ゲート</dt>
+                    <dd>{policyReviewNextGateLabel(item.next_gate)}</dd>
+                  </div>
+                </dl>
+                <div className={styles.nextAction}>
+                  <span>次の作業</span>
+                  <p>{item.next_action}</p>
+                </div>
+                <details className={styles.priorityBasis}>
+                  <summary>この順番の理由</summary>
+                  <p>{item.priority_basis}</p>
+                </details>
+                <div className={styles.actions}>
+                  {item.sources.map((source) => (
+                    <a href={source.url} target="_blank" rel="noreferrer" key={source.id}>
+                      {source.title} ↗
+                    </a>
+                  ))}
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="contentSection">
           <p className="eyebrow">Designated-city pilots</p>
           <h2>政令指定都市の既存パイロット</h2>
           <div className={styles.cityGrid}>
@@ -189,9 +259,9 @@ export default function MunicipalitiesPage() {
         <section className="callout callout--dark">
           <div>
             <p className="eyebrow">Next nationwide wave</p>
-            <h2>次は9地域拠点の政策体系とKPIをReviewed化する。</h2>
+            <h2>北海道の108指標から、全国Reviewed化を開始する。</h2>
             <p>
-              第1波9拠点すべてで、公式ホームページ、計画入口、現行計画を確認しました。次は計画本文、政策階層、数値目標、年度評価を一次資料と照合し、Evidence Packet付きで順に公開します。
+              第1波9拠点すべてで、公式ホームページ、計画入口、現行計画を確認しました。北海道で非福岡型の抽出・Evidence Packetを確立し、その方法を宮城県、愛知県、香川県へ展開します。
             </p>
           </div>
         </section>
