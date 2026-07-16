@@ -1,0 +1,253 @@
+{
+  "id": "hokkaido-indicator-catalog-education-learning",
+  "municipality_key": "hokkaido-prefecture",
+  "policy_field_id": "policy-field-hokkaido-education-learning",
+  "source_id": "policy-source-hokkaido-indicators-education-learning",
+  "source_document_url": "https://www.pref.hokkaido.lg.jp/fs/1/0/6/4/6/3/2/0/_/08%20%E6%95%99%E8%82%B2%E3%83%BB%E5%AD%A6%E3%81%B30708.pdf",
+  "indicator_number_start": 53,
+  "indicator_number_end": 60,
+  "items": [
+    {
+      "id": "policy-indicator-hokkaido-53",
+      "indicator_number": 53,
+      "indicator_name_original": "全国学力・学習状況調査の平均正答率が全国以上の教科数",
+      "policy_direction_id": "policy-direction-hokkaido-opportunity-safety",
+      "policy_field_ids": ["policy-field-hokkaido-education-learning"],
+      "policy_orientation_original": "成長段階に応じた質の高い保育・教育の提供",
+      "indicator_explanation_original": "全国学力・学習状況調査において、道内平均正答率が全国以上となった教科数（小学校6年生の国語・算数、中学校3年生の国語・数学の全4教科、4月調査時点）",
+      "source_page": 1,
+      "series": [{
+        "label": null,
+        "unit_original": "教科",
+        "temporal_scope": "snapshot",
+        "values": [
+          {"role": "current", "period": "2023年", "value": 0, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "0"},
+          {"role": "intermediate_target", "period": "2028年", "value": 4, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "4"},
+          {"role": "final_target", "period": "2033年", "value": 4, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "4"}
+        ]
+      }],
+      "target_setting_status": "set",
+      "target_setting_rationale_original": "義務教育の機会均等の観点から、全4教科で平均正答率を全国以上とすることを目指す。",
+      "comparability_note_original": "現状値0は公式調査結果に基づく明示的な数値であり、欠損補完ではない。",
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-hokkaido-54",
+      "indicator_number": 54,
+      "indicator_name_original": "体力・運動能力の全国比",
+      "policy_direction_id": "policy-direction-hokkaido-opportunity-safety",
+      "policy_field_ids": ["policy-field-hokkaido-education-learning"],
+      "policy_orientation_original": "成長段階に応じた質の高い保育・教育の提供",
+      "indicator_explanation_original": "全国体力・運動能力、運動習慣等調査の体力合計点の全国平均値を50とした場合の北海道の値（小学校5年生、中学校2年生、4～7月調査時点）",
+      "source_page": 2,
+      "series": [
+        {"label": "小学校男子", "unit_original": "点", "temporal_scope": "other", "values": [
+          {"role": "current", "period": "2023年", "value": 47.0, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "47.0"},
+          {"role": "intermediate_target", "period": "2028年", "value": 50, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "50"},
+          {"role": "final_target", "period": "2033年", "value": 50, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "50"}
+        ]},
+        {"label": "小学校女子", "unit_original": "点", "temporal_scope": "other", "values": [
+          {"role": "current", "period": "2023年", "value": 48.2, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "48.2"},
+          {"role": "intermediate_target", "period": "2028年", "value": 50, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "50"},
+          {"role": "final_target", "period": "2033年", "value": 50, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "50"}
+        ]},
+        {"label": "中学校男子", "unit_original": "点", "temporal_scope": "other", "values": [
+          {"role": "current", "period": "2023年", "value": 49.4, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "49.4"},
+          {"role": "intermediate_target", "period": "2028年", "value": 50, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "50"},
+          {"role": "final_target", "period": "2033年", "value": 50, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "50"}
+        ]},
+        {"label": "中学校女子", "unit_original": "点", "temporal_scope": "other", "values": [
+          {"role": "current", "period": "2023年", "value": 49.6, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "49.6"},
+          {"role": "intermediate_target", "period": "2028年", "value": 50, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "50"},
+          {"role": "final_target", "period": "2033年", "value": 50, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "50"}
+        ]}
+      ],
+      "target_setting_status": "set",
+      "target_setting_rationale_original": "小・中学校の男女全てで全国平均と同水準の体力・運動能力を保持できるよう、全国平均値50を目指す。",
+      "comparability_note_original": "小学校男子・女子、中学校男子・女子を別系列で保持する。2020年は調査未実施。",
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-hokkaido-55",
+      "indicator_number": 55,
+      "indicator_name_original": "キャリア教育に資する体験的な学習活動の実施率",
+      "policy_direction_id": "policy-direction-hokkaido-opportunity-safety",
+      "policy_field_ids": ["policy-field-hokkaido-education-learning"],
+      "policy_orientation_original": "可能性を引き出す教育の推進と学ぶ機会の保障",
+      "indicator_explanation_original": "道立高校の卒業生のうち、在学中にインターンシップなどのキャリア教育に資する体験的な学習活動を経験した割合（年度実績）",
+      "source_page": 3,
+      "series": [{
+        "label": null,
+        "unit_original": "％",
+        "temporal_scope": "fiscal_year",
+        "values": [
+          {"role": "current", "period": "2022年", "value": 42.7, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "42.7"},
+          {"role": "intermediate_target", "period": "2027年", "value": 88.0, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "88.0"},
+          {"role": "final_target", "period": "2032年", "value": 100, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "100"}
+        ]
+      }],
+      "target_setting_status": "set",
+      "target_setting_rationale_original": "各学校における計画的なインターンシップ等の実施を進め、全ての卒業生が体験的な学習活動を経験することを目指す。",
+      "comparability_note_original": "コロナ禍による実施機会減少の影響があるため、年度推移の解釈に留意する。",
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-hokkaido-56",
+      "indicator_number": 56,
+      "indicator_name_original": "授業におけるＩＣＴ機器の活用率",
+      "policy_direction_id": "policy-direction-hokkaido-opportunity-safety",
+      "policy_field_ids": ["policy-field-hokkaido-education-learning"],
+      "policy_orientation_original": "可能性を引き出す教育の推進と学ぶ機会の保障",
+      "indicator_explanation_original": "児童生徒一人ひとりに配備されたPC・タブレットなどのICT機器を、授業でほぼ毎日活用した学校の割合（4月時点）",
+      "source_page": 4,
+      "series": [
+        {"label": "小学校", "unit_original": "％", "temporal_scope": "snapshot", "values": [
+          {"role": "current", "period": "2023年", "value": 70.1, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "70.1"},
+          {"role": "intermediate_target", "period": "2028年", "value": 100, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "100"},
+          {"role": "final_target", "period": "2033年", "value": 100, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "100"}
+        ]},
+        {"label": "中学校", "unit_original": "％", "temporal_scope": "snapshot", "values": [
+          {"role": "current", "period": "2023年", "value": 76.6, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "76.6"},
+          {"role": "intermediate_target", "period": "2028年", "value": 100, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "100"},
+          {"role": "final_target", "period": "2033年", "value": 100, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "100"}
+        ]}
+      ],
+      "target_setting_status": "set",
+      "target_setting_rationale_original": "ICT環境を最大限に活用し、小・中学校ともに授業でほぼ毎日活用する学校の割合100％を目指す。",
+      "comparability_note_original": "小学校と中学校を別系列で保持する。調査は2022年度から開始。",
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-hokkaido-57",
+      "indicator_number": 57,
+      "indicator_name_original": "生涯学習の成果を活用している住民の割合",
+      "policy_direction_id": "policy-direction-hokkaido-opportunity-safety",
+      "policy_field_ids": ["policy-field-hokkaido-education-learning"],
+      "policy_orientation_original": "可能性を引き出す教育の推進と学ぶ機会の保障",
+      "indicator_explanation_original": "1年間に生涯学習した人のうち、知識・技術や経験をまちづくりやボランティア活動などに活かしている人の割合（11～12月時点）",
+      "source_page": 5,
+      "series": [{
+        "label": null,
+        "unit_original": "％",
+        "temporal_scope": "snapshot",
+        "values": [
+          {"role": "current", "period": "2022年", "value": 59.5, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "59.5"},
+          {"role": "intermediate_target", "period": "2027年", "value": 80.0, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "80.0"},
+          {"role": "final_target", "period": "2032年", "value": 80.0, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "80.0"}
+        ]
+      }],
+      "target_setting_status": "set",
+      "target_setting_rationale_original": "道民の学習機会を充実させ、多様な人々が主体的に地域活動へ参画できる包摂的な社会を目指す。",
+      "comparability_note_original": "11～12月時点の回答割合として保持する。コロナ禍による地域活動機会の減少に留意する。",
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-hokkaido-58",
+      "indicator_number": 58,
+      "indicator_name_original": "いじめはいけないことだと考える児童・生徒の割合",
+      "policy_direction_id": "policy-direction-hokkaido-opportunity-safety",
+      "policy_field_ids": ["policy-field-hokkaido-education-learning"],
+      "policy_orientation_original": "子ども・青少年の健全な育成",
+      "indicator_explanation_original": "いじめはどんな理由があってもいけないことだと思う児童・生徒の割合（4月時点）",
+      "source_page": 6,
+      "series": [
+        {"label": "小学校", "unit_original": "％", "temporal_scope": "snapshot", "values": [
+          {"role": "current", "period": "2023年", "value": 85.6, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "85.6"},
+          {"role": "intermediate_target", "period": "2028年", "value": 100, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "100"},
+          {"role": "final_target", "period": "2033年", "value": 100, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "100"}
+        ]},
+        {"label": "中学校", "unit_original": "％", "temporal_scope": "snapshot", "values": [
+          {"role": "current", "period": "2023年", "value": 82.6, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "82.6"},
+          {"role": "intermediate_target", "period": "2028年", "value": 100, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "100"},
+          {"role": "final_target", "period": "2033年", "value": 100, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "100"}
+        ]}
+      ],
+      "target_setting_status": "set",
+      "target_setting_rationale_original": "児童生徒が主体的にいじめの未然防止に取り組む態度を育成し、小・中学校ともに100％を目指す。",
+      "comparability_note_original": "小学校と中学校を別系列で保持する。2020年度は調査中止のため実績なし。",
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-hokkaido-59",
+      "indicator_number": 59,
+      "indicator_name_original": "いじめの解消状況",
+      "policy_direction_id": "policy-direction-hokkaido-opportunity-safety",
+      "policy_field_ids": ["policy-field-hokkaido-education-learning"],
+      "policy_orientation_original": "子ども・青少年の健全な育成",
+      "indicator_explanation_original": "学校が認知したいじめ件数に対し、学校の対応によりいじめ行為が解消した件数の割合（年度実績）",
+      "source_page": 7,
+      "series": [
+        {"label": "小学校", "unit_original": "％", "temporal_scope": "fiscal_year", "values": [
+          {"role": "current", "period": "2022年", "value": 92.6, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "92.6"},
+          {"role": "intermediate_target", "period": "2027年", "value": 100, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "100"},
+          {"role": "final_target", "period": "2032年", "value": 100, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "100"}
+        ]},
+        {"label": "中学校", "unit_original": "％", "temporal_scope": "fiscal_year", "values": [
+          {"role": "current", "period": "2022年", "value": 93.6, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "93.6"},
+          {"role": "intermediate_target", "period": "2027年", "value": 100, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "100"},
+          {"role": "final_target", "period": "2032年", "value": 100, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "100"}
+        ]},
+        {"label": "高校", "unit_original": "％", "temporal_scope": "fiscal_year", "values": [
+          {"role": "current", "period": "2022年", "value": 92.2, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "92.2"},
+          {"role": "intermediate_target", "period": "2027年", "value": 100, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "100"},
+          {"role": "final_target", "period": "2032年", "value": 100, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "100"}
+        ]}
+      ],
+      "target_setting_status": "set",
+      "target_setting_rationale_original": "認知したいじめを全て解消するため、小学校・中学校・高校の解消率100％を目指す。",
+      "comparability_note_original": "小学校・中学校・高校を別系列で保持し、参考掲載の認知件数とは混同しない。",
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-hokkaido-60",
+      "indicator_number": 60,
+      "indicator_name_original": "少年千人当たりの刑法犯少年数",
+      "policy_direction_id": "policy-direction-hokkaido-opportunity-safety",
+      "policy_field_ids": ["policy-field-hokkaido-education-learning"],
+      "policy_orientation_original": "子ども・青少年の健全な育成",
+      "indicator_explanation_original": "14～19歳の人口千人に対する刑法犯少年数の割合（暦年実績）",
+      "source_page": 8,
+      "series": [{
+        "label": null,
+        "unit_original": "人",
+        "temporal_scope": "calendar_year",
+        "values": [
+          {"role": "current", "period": "2023年", "value": 3.3, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "3.3"},
+          {"role": "intermediate_target", "period": "2028年", "value": 1.8, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "1.8"},
+          {"role": "final_target", "period": "2033年", "value": 1.6, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "1.6"}
+        ]
+      }],
+      "target_setting_status": "set",
+      "target_setting_rationale_original": "青少年が健全に育成される社会の実現を目指し、刑法犯の成人人口比を目標水準とする。",
+      "comparability_note_original": "右軸の刑法犯少年数、左軸の千人当たり少年数・成人数を混同せず、目標表の千人当たり少年数のみを保持する。",
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    }
+  ],
+  "reviewed_at": "2026-07-16",
+  "review_status": "reviewed",
+  "confidence": "high"
+}
