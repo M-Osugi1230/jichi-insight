@@ -1,3 +1,5 @@
+import policySourceCatalog from "../../../data/catalog/policy_sources.json";
+
 import { sourceCatalog, type MunicipalityKey } from "./catalog";
 import {
   currentExecutiveTerms,
@@ -10,6 +12,7 @@ import { fukuokaCityFinance } from "./fukuokaCityFinance";
 import { kitakyushuFinance } from "./kitakyushuFinance";
 import { nationwideCoverageStats } from "./nationwideCoverage";
 import { policyDirectionStats, policyInitiativeStats } from "./policies";
+import { waveOnePolicyReviewStats } from "./policyReviewQueue";
 import { allPolicyTargetStats } from "./policyTargets";
 import { sourceRequestRecords } from "./sourceRequests";
 
@@ -49,6 +52,7 @@ const evidenceByMunicipality: Record<
 const fiscalRecords = Object.values(recordsByMunicipality).flat();
 const evidencePackets = Object.values(evidenceByMunicipality).flat();
 const evidenceSubjects = new Set(evidencePackets.map((packet) => packet.subject_id));
+const policySourceRecords = policySourceCatalog.records;
 
 export const dataQualitySnapshot = {
   updatedAt: "2026-07-16",
@@ -65,6 +69,16 @@ export const dataQualitySnapshot = {
   publishedPrefecturePages: nationwideCoverageStats.publishedPrefecturePages,
   candidatePrefectureOfficialEntries:
     nationwideCoverageStats.candidateOfficialEntries,
+  policySourceRecords: policySourceRecords.length,
+  indexedPolicySourceRecords: policySourceRecords.filter(
+    (source) => source.collection_status === "indexed",
+  ).length,
+  reviewedPolicySourceRecords: policySourceRecords.filter(
+    (source) => source.review_status === "reviewed",
+  ).length,
+  waveOnePolicyReviewReferences: waveOnePolicyReviewStats.reviewedReferences,
+  waveOnePolicyActiveReviews: waveOnePolicyReviewStats.activeReviews,
+  waveOnePolicyQueued: waveOnePolicyReviewStats.queued,
   officialSources: sourceCatalog.length,
   reviewedSources: sourceCatalog.filter(
     (source) =>
