@@ -51,13 +51,14 @@ def test_fukuoka_and_hokkaido_are_reviewed_references_and_miyagi_is_active():
     assert items["04"]["status"] == "active_review"
     assert (
         items["04"]["source_inventory_status"]
-        == "source_inventory_reviewed"
+        == "policy_hierarchy_reviewed"
     )
-    assert items["04"]["next_gate"] == "policy_hierarchy"
-    assert "2025〜2027年度中期実施計画" in items["04"]["next_action"]
-    assert "8政策・18施策" in items["04"]["next_action"]
-    assert "目標指標索引" in items["04"]["next_action"]
-    assert "10資料・6関係" in items["04"]["priority_basis"]
+    assert items["04"]["next_gate"] == "kpi_catalog"
+    assert "4基本方向・8政策・18施策" in items["04"]["next_action"]
+    assert "復興支援4分野" in items["04"]["next_action"]
+    assert "目標指標一覧" in items["04"]["next_action"]
+    assert "Evidence Packet 5件" in items["04"]["priority_basis"]
+    assert "政策番号1〜8へ混入しない" in items["04"]["priority_basis"]
 
     status_counts = {
         status: sum(item["status"] == status for item in queue["items"])
