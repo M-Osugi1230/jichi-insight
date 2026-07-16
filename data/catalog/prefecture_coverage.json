@@ -1,0 +1,101 @@
+{
+  "id": "nationwide-prefecture-coverage",
+  "updated_at": "2026-07-16",
+  "verified_official_codes": [
+    "01",
+    "04",
+    "13",
+    "23",
+    "27",
+    "34",
+    "37",
+    "40",
+    "47"
+  ],
+  "regional_anchor_codes": [
+    "01",
+    "04",
+    "13",
+    "23",
+    "27",
+    "34",
+    "37",
+    "40",
+    "47"
+  ],
+  "reviewed_prefecture_codes": [
+    "40"
+  ],
+  "plan_sources": [
+    {
+      "prefecture_code": "34",
+      "title": "「安心▷誇り▷挑戦 ひろしまビジョン」改定版",
+      "url": "https://www.pref.hiroshima.lg.jp/soshiki/230/hiroshimavisionkaitei.html",
+      "review_status": "indexed",
+      "verified_at": "2026-07-16"
+    },
+    {
+      "prefecture_code": "40",
+      "title": "福岡県総合計画 数値目標",
+      "url": "https://www.pref.fukuoka.lg.jp/uploaded/life/632711_61262666_misc.pdf",
+      "review_status": "reviewed",
+      "verified_at": "2026-07-16"
+    },
+    {
+      "prefecture_code": "47",
+      "title": "新・沖縄21世紀ビジョン基本計画／実施計画",
+      "url": "https://21okinawa.com/",
+      "review_status": "indexed",
+      "verified_at": "2026-07-16"
+    }
+  ],
+  "records": [
+    {"prefecture_code":"01","entity_id":"jp-pref-01","slug":"hokkaido","name":"北海道","region":"北海道","government_type":"道","official_url":"https://www.pref.hokkaido.lg.jp/"},
+    {"prefecture_code":"02","entity_id":"jp-pref-02","slug":"aomori","name":"青森県","region":"東北","government_type":"県","official_url":"https://www.pref.aomori.lg.jp/"},
+    {"prefecture_code":"03","entity_id":"jp-pref-03","slug":"iwate","name":"岩手県","region":"東北","government_type":"県","official_url":"https://www.pref.iwate.jp/"},
+    {"prefecture_code":"04","entity_id":"jp-pref-04","slug":"miyagi","name":"宮城県","region":"東北","government_type":"県","official_url":"https://www.pref.miyagi.jp/"},
+    {"prefecture_code":"05","entity_id":"jp-pref-05","slug":"akita","name":"秋田県","region":"東北","government_type":"県","official_url":"https://www.pref.akita.lg.jp/"},
+    {"prefecture_code":"06","entity_id":"jp-pref-06","slug":"yamagata","name":"山形県","region":"東北","government_type":"県","official_url":"https://www.pref.yamagata.jp/"},
+    {"prefecture_code":"07","entity_id":"jp-pref-07","slug":"fukushima","name":"福島県","region":"東北","government_type":"県","official_url":"https://www.pref.fukushima.lg.jp/"},
+    {"prefecture_code":"08","entity_id":"jp-pref-08","slug":"ibaraki","name":"茨城県","region":"関東","government_type":"県","official_url":"https://www.pref.ibaraki.jp/"},
+    {"prefecture_code":"09","entity_id":"jp-pref-09","slug":"tochigi","name":"栃木県","region":"関東","government_type":"県","official_url":"https://www.pref.tochigi.lg.jp/"},
+    {"prefecture_code":"10","entity_id":"jp-pref-10","slug":"gunma","name":"群馬県","region":"関東","government_type":"県","official_url":"https://www.pref.gunma.jp/"},
+    {"prefecture_code":"11","entity_id":"jp-pref-11","slug":"saitama","name":"埼玉県","region":"関東","government_type":"県","official_url":"https://www.pref.saitama.lg.jp/"},
+    {"prefecture_code":"12","entity_id":"jp-pref-12","slug":"chiba","name":"千葉県","region":"関東","government_type":"県","official_url":"https://www.pref.chiba.lg.jp/"},
+    {"prefecture_code":"13","entity_id":"jp-pref-13","slug":"tokyo","name":"東京都","region":"関東","government_type":"都","official_url":"https://www.metro.tokyo.lg.jp/"},
+    {"prefecture_code":"14","entity_id":"jp-pref-14","slug":"kanagawa","name":"神奈川県","region":"関東","government_type":"県","official_url":"https://www.pref.kanagawa.jp/"},
+    {"prefecture_code":"15","entity_id":"jp-pref-15","slug":"niigata","name":"新潟県","region":"中部","government_type":"県","official_url":"https://www.pref.niigata.lg.jp/"},
+    {"prefecture_code":"16","entity_id":"jp-pref-16","slug":"toyama","name":"富山県","region":"中部","government_type":"県","official_url":"https://www.pref.toyama.jp/"},
+    {"prefecture_code":"17","entity_id":"jp-pref-17","slug":"ishikawa","name":"石川県","region":"中部","government_type":"県","official_url":"https://www.pref.ishikawa.lg.jp/"},
+    {"prefecture_code":"18","entity_id":"jp-pref-18","slug":"fukui","name":"福井県","region":"中部","government_type":"県","official_url":"https://www.pref.fukui.lg.jp/"},
+    {"prefecture_code":"19","entity_id":"jp-pref-19","slug":"yamanashi","name":"山梨県","region":"中部","government_type":"県","official_url":"https://www.pref.yamanashi.jp/"},
+    {"prefecture_code":"20","entity_id":"jp-pref-20","slug":"nagano","name":"長野県","region":"中部","government_type":"県","official_url":"https://www.pref.nagano.lg.jp/"},
+    {"prefecture_code":"21","entity_id":"jp-pref-21","slug":"gifu","name":"岐阜県","region":"中部","government_type":"県","official_url":"https://www.pref.gifu.lg.jp/"},
+    {"prefecture_code":"22","entity_id":"jp-pref-22","slug":"shizuoka","name":"静岡県","region":"中部","government_type":"県","official_url":"https://www.pref.shizuoka.jp/"},
+    {"prefecture_code":"23","entity_id":"jp-pref-23","slug":"aichi","name":"愛知県","region":"中部","government_type":"県","official_url":"https://www.pref.aichi.jp/"},
+    {"prefecture_code":"24","entity_id":"jp-pref-24","slug":"mie","name":"三重県","region":"近畿","government_type":"県","official_url":"https://www.pref.mie.lg.jp/"},
+    {"prefecture_code":"25","entity_id":"jp-pref-25","slug":"shiga","name":"滋賀県","region":"近畿","government_type":"県","official_url":"https://www.pref.shiga.lg.jp/"},
+    {"prefecture_code":"26","entity_id":"jp-pref-26","slug":"kyoto","name":"京都府","region":"近畿","government_type":"府","official_url":"https://www.pref.kyoto.jp/"},
+    {"prefecture_code":"27","entity_id":"jp-pref-27","slug":"osaka","name":"大阪府","region":"近畿","government_type":"府","official_url":"https://www.pref.osaka.lg.jp/"},
+    {"prefecture_code":"28","entity_id":"jp-pref-28","slug":"hyogo","name":"兵庫県","region":"近畿","government_type":"県","official_url":"https://web.pref.hyogo.lg.jp/"},
+    {"prefecture_code":"29","entity_id":"jp-pref-29","slug":"nara","name":"奈良県","region":"近畿","government_type":"県","official_url":"https://www.pref.nara.jp/"},
+    {"prefecture_code":"30","entity_id":"jp-pref-30","slug":"wakayama","name":"和歌山県","region":"近畿","government_type":"県","official_url":"https://www.pref.wakayama.lg.jp/"},
+    {"prefecture_code":"31","entity_id":"jp-pref-31","slug":"tottori","name":"鳥取県","region":"中国","government_type":"県","official_url":"https://www.pref.tottori.lg.jp/"},
+    {"prefecture_code":"32","entity_id":"jp-pref-32","slug":"shimane","name":"島根県","region":"中国","government_type":"県","official_url":"https://www.pref.shimane.lg.jp/"},
+    {"prefecture_code":"33","entity_id":"jp-pref-33","slug":"okayama","name":"岡山県","region":"中国","government_type":"県","official_url":"https://www.pref.okayama.jp/"},
+    {"prefecture_code":"34","entity_id":"jp-pref-34","slug":"hiroshima","name":"広島県","region":"中国","government_type":"県","official_url":"https://www.pref.hiroshima.lg.jp/"},
+    {"prefecture_code":"35","entity_id":"jp-pref-35","slug":"yamaguchi","name":"山口県","region":"中国","government_type":"県","official_url":"https://www.pref.yamaguchi.lg.jp/"},
+    {"prefecture_code":"36","entity_id":"jp-pref-36","slug":"tokushima","name":"徳島県","region":"四国","government_type":"県","official_url":"https://www.pref.tokushima.lg.jp/"},
+    {"prefecture_code":"37","entity_id":"jp-pref-37","slug":"kagawa","name":"香川県","region":"四国","government_type":"県","official_url":"https://www.pref.kagawa.lg.jp/"},
+    {"prefecture_code":"38","entity_id":"jp-pref-38","slug":"ehime","name":"愛媛県","region":"四国","government_type":"県","official_url":"https://www.pref.ehime.jp/"},
+    {"prefecture_code":"39","entity_id":"jp-pref-39","slug":"kochi","name":"高知県","region":"四国","government_type":"県","official_url":"https://www.pref.kochi.lg.jp/"},
+    {"prefecture_code":"40","entity_id":"jp-pref-40","slug":"fukuoka","name":"福岡県","region":"九州・沖縄","government_type":"県","official_url":"https://www.pref.fukuoka.lg.jp/"},
+    {"prefecture_code":"41","entity_id":"jp-pref-41","slug":"saga","name":"佐賀県","region":"九州・沖縄","government_type":"県","official_url":"https://www.pref.saga.lg.jp/"},
+    {"prefecture_code":"42","entity_id":"jp-pref-42","slug":"nagasaki","name":"長崎県","region":"九州・沖縄","government_type":"県","official_url":"https://www.pref.nagasaki.jp/"},
+    {"prefecture_code":"43","entity_id":"jp-pref-43","slug":"kumamoto","name":"熊本県","region":"九州・沖縄","government_type":"県","official_url":"https://www.pref.kumamoto.jp/"},
+    {"prefecture_code":"44","entity_id":"jp-pref-44","slug":"oita","name":"大分県","region":"九州・沖縄","government_type":"県","official_url":"https://www.pref.oita.jp/"},
+    {"prefecture_code":"45","entity_id":"jp-pref-45","slug":"miyazaki","name":"宮崎県","region":"九州・沖縄","government_type":"県","official_url":"https://www.pref.miyazaki.lg.jp/"},
+    {"prefecture_code":"46","entity_id":"jp-pref-46","slug":"kagoshima","name":"鹿児島県","region":"九州・沖縄","government_type":"県","official_url":"https://www.pref.kagoshima.jp/"},
+    {"prefecture_code":"47","entity_id":"jp-pref-47","slug":"okinawa","name":"沖縄県","region":"九州・沖縄","government_type":"県","official_url":"https://www.pref.okinawa.jp/"}
+  ]
+}
