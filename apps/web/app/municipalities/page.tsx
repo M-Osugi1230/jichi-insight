@@ -11,6 +11,7 @@ import {
   coverageStageTone,
   nationwideCoverageByRegion,
   nationwideCoverageStats,
+  nationwidePrefectureCoverage,
 } from "@/lib/nationwideCoverage";
 
 import styles from "./page.module.css";
@@ -31,6 +32,11 @@ const planStatusLabels = {
   reviewed: "Reviewed",
   verified: "Verified",
 } as const;
+
+const indexedPlanNames = nationwidePrefectureCoverage
+  .filter((record) => record.planSource !== null)
+  .map((record) => record.name)
+  .join("、");
 
 export default function MunicipalitiesPage() {
   return (
@@ -58,7 +64,7 @@ export default function MunicipalitiesPage() {
           <article className={styles.summaryCard}>
             <span>総合計画索引済み</span>
             <strong>{nationwideCoverageStats.sourceCatalogedPrefectures}</strong>
-            <p>福岡県、広島県、沖縄県で計画資料の入口を確認。</p>
+            <p>{indexedPlanNames}で計画資料の入口を確認。</p>
           </article>
           <article className={styles.summaryCard}>
             <span>Reviewedデータ公開</span>
@@ -168,7 +174,7 @@ export default function MunicipalitiesPage() {
         <section className="callout callout--dark">
           <div>
             <p className="eyebrow">Next nationwide wave</p>
-            <h2>次は9地域拠点の総合計画を、同じ形式で索引化する。</h2>
+            <h2>次は残る3地域拠点の総合計画を、同じ形式で索引化する。</h2>
             <p>
               北海道、宮城県、東京都、愛知県、大阪府、広島県、香川県、福岡県、沖縄県を第1波とし、計画体系、数値目標、年度実績の順に接続します。
               各段階でEvidence Packetと公開ゲートを必須にします。
