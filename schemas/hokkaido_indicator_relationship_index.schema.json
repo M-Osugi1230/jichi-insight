@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.example/schemas/hokkaido_indicator_relationship_index.schema.json",
+  "title": "Hokkaido indicator cross-field relationship index",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "updated_at",
+    "prefecture_code",
+    "municipality_key",
+    "expected_unique_indicator_count",
+    "duplicate_inclusive_indicator_count",
+    "expected_extra_relationship_count",
+    "relationship_status",
+    "counting_boundary",
+    "relationships"
+  ],
+  "properties": {
+    "id": {"const": "hokkaido-indicator-relationship-index"},
+    "updated_at": {"type": "string", "format": "date"},
+    "prefecture_code": {"const": "01"},
+    "municipality_key": {"const": "hokkaido-prefecture"},
+    "expected_unique_indicator_count": {"const": 108},
+    "duplicate_inclusive_indicator_count": {"const": 113},
+    "expected_extra_relationship_count": {"const": 5},
+    "relationship_status": {"const": "completed"},
+    "counting_boundary": {"type": "string", "minLength": 1},
+    "relationships": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "indicator_number",
+          "indicator_title_original",
+          "source_id",
+          "page_number",
+          "primary_policy_direction_id",
+          "primary_policy_field_id",
+          "additional_policy_direction_id",
+          "additional_policy_field_id",
+          "relationship_scope",
+          "source_location_original",
+          "reviewed_at",
+          "review_status",
+          "confidence"
+        ],
+        "properties": {
+          "indicator_number": {"type": "integer", "minimum": 1, "maximum": 108},
+          "indicator_title_original": {"type": "string", "minLength": 1},
+          "source_id": {"type": "string", "pattern": "^policy-source-hokkaido-indicators-[a-z0-9-]+$"},
+          "page_number": {"type": "integer", "minimum": 1},
+          "primary_policy_direction_id": {"type": "string", "pattern": "^policy-direction-hokkaido-[a-z0-9-]+$"},
+          "primary_policy_field_id": {"type": "string", "pattern": "^policy-field-hokkaido-[a-z0-9-]+$"},
+          "additional_policy_direction_id": {"type": "string", "pattern": "^policy-direction-hokkaido-[a-z0-9-]+$"},
+          "additional_policy_field_id": {"type": "string", "pattern": "^policy-field-hokkaido-[a-z0-9-]+$"},
+          "relationship_scope": {"type": "string", "enum": ["cross_direction", "within_direction"]},
+          "source_location_original": {"type": "string", "minLength": 1},
+          "reviewed_at": {"type": "string", "format": "date"},
+          "review_status": {"const": "reviewed"},
+          "confidence": {"const": "high"}
+        }
+      }
+    }
+  }
+}
