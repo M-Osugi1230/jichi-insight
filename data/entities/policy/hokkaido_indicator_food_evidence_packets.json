@@ -1,0 +1,134 @@
+[
+  {
+    "id": "evidence-policy-indicator-hokkaido-1",
+    "subject_type": "kpi",
+    "subject_id": "policy-indicator-hokkaido-1",
+    "claims": [
+      {"field": "indicator_name_original", "statement": "指標1は『食料自給率（カロリーベース）』。", "source_ids": ["policy-source-hokkaido-indicators-food"], "location_note": "PDFページ1『番号・指標名』", "decision": "accepted", "review_note": null},
+      {"field": "series", "statement": "単位は％。現状値223（2021年）、中間目標値244（2026年）、目標値268（2030年）。", "source_ids": ["policy-source-hokkaido-indicators-food"], "location_note": "PDFページ1『目標』", "decision": "accepted", "review_note": null}
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-policy-indicator-hokkaido-2",
+    "subject_type": "kpi",
+    "subject_id": "policy-indicator-hokkaido-2",
+    "claims": [
+      {"field": "indicator_name_original", "statement": "指標2は『農業産出額』。", "source_ids": ["policy-source-hokkaido-indicators-food"], "location_note": "PDFページ2『番号・指標名』", "decision": "accepted", "review_note": null},
+      {"field": "series", "statement": "単位は億円。現状値12,919（2022年）、中間目標値13,200（2026年）、目標値13,600（2030年）。", "source_ids": ["policy-source-hokkaido-indicators-food"], "location_note": "PDFページ2『目標』", "decision": "accepted", "review_note": null}
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-policy-indicator-hokkaido-3",
+    "subject_type": "kpi",
+    "subject_id": "policy-indicator-hokkaido-3",
+    "claims": [
+      {"field": "indicator_name_original", "statement": "指標3は『道産農産物・農産加工品の輸出額』。", "source_ids": ["policy-source-hokkaido-indicators-food"], "location_note": "PDFページ3『番号・指標名』", "decision": "accepted", "review_note": null},
+      {"field": "series", "statement": "単位は億円。現状値124（2021年）。中間目標値と目標値は『―』で未設定。", "source_ids": ["policy-source-hokkaido-indicators-food"], "location_note": "PDFページ3『目標』", "decision": "accepted", "review_note": "未設定値を0へ変換しない。"}
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-policy-indicator-hokkaido-4",
+    "subject_type": "kpi",
+    "subject_id": "policy-indicator-hokkaido-4",
+    "claims": [
+      {"field": "indicator_name_original", "statement": "指標4は『漁業就業者1人当たりの漁業生産額』。", "source_ids": ["policy-source-hokkaido-indicators-food"], "location_note": "PDFページ4『番号・指標名』", "decision": "accepted", "review_note": null},
+      {"field": "series", "statement": "単位は万円。現状値1,151（2021年）、中間目標値1,114（2026年）、目標値1,326（2031年）。", "source_ids": ["policy-source-hokkaido-indicators-food"], "location_note": "PDFページ4『目標』", "decision": "accepted", "review_note": "中間目標値が現状値を下回る原文値をそのまま保持。"}
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-policy-indicator-hokkaido-5",
+    "subject_type": "kpi",
+    "subject_id": "policy-indicator-hokkaido-5",
+    "claims": [
+      {"field": "indicator_name_original", "statement": "指標5は『栽培漁業生産量の割合』。", "source_ids": ["policy-source-hokkaido-indicators-food"], "location_note": "PDFページ5『番号・指標名』", "decision": "accepted", "review_note": null},
+      {"field": "series", "statement": "単位は％。現状値68.0（2021年）、中間目標値68.5（2026年）、目標値69.0（2031年）。", "source_ids": ["policy-source-hokkaido-indicators-food"], "location_note": "PDFページ5『目標』", "decision": "accepted", "review_note": null}
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-policy-indicator-hokkaido-6",
+    "subject_type": "kpi",
+    "subject_id": "policy-indicator-hokkaido-6",
+    "claims": [
+      {"field": "indicator_name_original", "statement": "指標6は『道産水産物・水産加工品輸出額』。", "source_ids": ["policy-source-hokkaido-indicators-food"], "location_note": "PDFページ6『番号・指標名』", "decision": "accepted", "review_note": null},
+      {"field": "series", "statement": "単位は億円。現状値1,005（2021年）。中間目標値と目標値は『―』で未設定。", "source_ids": ["policy-source-hokkaido-indicators-food"], "location_note": "PDFページ6『目標』", "decision": "accepted", "review_note": "未設定値を0へ変換しない。"}
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-policy-indicator-hokkaido-7",
+    "subject_type": "kpi",
+    "subject_id": "policy-indicator-hokkaido-7",
+    "claims": [
+      {"field": "indicator_name_original", "statement": "指標7は『水産食料品製造業の付加価値額』。", "source_ids": ["policy-source-hokkaido-indicators-food"], "location_note": "PDFページ7『番号・指標名』", "decision": "accepted", "review_note": null},
+      {"field": "series", "statement": "単位は億円。現状値1,822（2021年）、中間目標値1,912（2026年）、目標値2,007（2031年）。", "source_ids": ["policy-source-hokkaido-indicators-food"], "location_note": "PDFページ7『目標』", "decision": "accepted", "review_note": "調査年により従業者数の集計対象が異なり、過去値は単純比較できない。"}
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-policy-indicator-hokkaido-8",
+    "subject_type": "kpi",
+    "subject_id": "policy-indicator-hokkaido-8",
+    "claims": [
+      {"field": "indicator_name_original", "statement": "指標8は『新規漁業就業者』。", "source_ids": ["policy-source-hokkaido-indicators-food"], "location_note": "PDFページ8『番号・指標名』", "decision": "accepted", "review_note": null},
+      {"field": "series", "statement": "単位は人。現状値144（2021年）、中間目標値180（2026年）、目標値180（2031年）。", "source_ids": ["policy-source-hokkaido-indicators-food"], "location_note": "PDFページ8『目標』", "decision": "accepted", "review_note": null}
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-policy-indicator-hokkaido-9",
+    "subject_type": "kpi",
+    "subject_id": "policy-indicator-hokkaido-9",
+    "claims": [
+      {"field": "indicator_name_original", "statement": "指標9は『食品工業の付加価値額』。", "source_ids": ["policy-source-hokkaido-indicators-food"], "location_note": "PDFページ9『番号・指標名』", "decision": "accepted", "review_note": null},
+      {"field": "series", "statement": "単位は億円。現状値7,303（2021年）、中間目標値7,700（2026年）、目標値8,100（2031年）。", "source_ids": ["policy-source-hokkaido-indicators-food"], "location_note": "PDFページ9『目標』", "decision": "accepted", "review_note": "調査年により従業者数の集計対象が異なり、過去値は単純比較できない。"}
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-policy-indicator-hokkaido-10",
+    "subject_type": "kpi",
+    "subject_id": "policy-indicator-hokkaido-10",
+    "claims": [
+      {"field": "indicator_name_original", "statement": "指標10は『道産食品輸出額』。", "source_ids": ["policy-source-hokkaido-indicators-food"], "location_note": "PDFページ10『番号・指標名』", "decision": "accepted", "review_note": null},
+      {"field": "series", "statement": "単位は億円。現状値1,298（2021年）。中間目標値と目標値は『―』で未設定。", "source_ids": ["policy-source-hokkaido-indicators-food"], "location_note": "PDFページ10『目標』", "decision": "accepted", "review_note": "未設定値を0へ変換しない。"}
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-policy-indicator-hokkaido-11",
+    "subject_type": "kpi",
+    "subject_id": "policy-indicator-hokkaido-11",
+    "claims": [
+      {"field": "indicator_name_original", "statement": "指標11は『商談会等における道産食品等の国内成約件数』。", "source_ids": ["policy-source-hokkaido-indicators-food"], "location_note": "PDFページ11『番号・指標名』", "decision": "accepted", "review_note": null},
+      {"field": "series", "statement": "単位は件。現状値2,621（2022年）、中間目標値3,923（2027年）、目標値4,300（2032年）。", "source_ids": ["policy-source-hokkaido-indicators-food"], "location_note": "PDFページ11『目標』", "decision": "accepted", "review_note": null}
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-policy-indicator-hokkaido-12",
+    "subject_type": "kpi",
+    "subject_id": "policy-indicator-hokkaido-12",
+    "claims": [
+      {"field": "indicator_name_original", "statement": "指標12は『北海道ＨＡＣＣＰの認証施設数』。", "source_ids": ["policy-source-hokkaido-indicators-food"], "location_note": "PDFページ12『番号・指標名』", "decision": "accepted", "review_note": null},
+      {"field": "series", "statement": "単位は施設。現状値396（2023年）、中間目標値490（2028年）、目標値590（2033年）。", "source_ids": ["policy-source-hokkaido-indicators-food"], "location_note": "PDFページ12『目標』", "decision": "accepted", "review_note": null}
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]
