@@ -42,9 +42,9 @@ def test_hokkaido_manifest_preserves_boundaries_and_partial_counts():
     manifest = load(MANIFEST_PATH)
 
     assert manifest["expected_indicator_count"] == 108
-    assert manifest["reviewed_indicator_count"] == 45
-    assert manifest["remaining_indicator_count"] == 63
-    assert manifest["indicator_evidence_packet_count"] == 45
+    assert manifest["reviewed_indicator_count"] == 52
+    assert manifest["remaining_indicator_count"] == 56
+    assert manifest["indicator_evidence_packet_count"] == 52
     assert (
         manifest["reviewed_indicator_count"]
         + manifest["remaining_indicator_count"]
@@ -55,12 +55,12 @@ def test_hokkaido_manifest_preserves_boundaries_and_partial_counts():
     ]
     assert "掲載行は113" in manifest["count_basis"]
     assert "差分5件" in manifest["count_basis"]
-    assert "指標1〜45" in manifest["count_basis"]
+    assert "指標1〜52" in manifest["count_basis"]
     assert manifest["extraction_status"] == "in_progress"
     assert manifest["active_work_package"] == "indicator_catalog"
 
 
-def test_hokkaido_work_packages_record_six_reviewed_fields():
+def test_hokkaido_work_packages_record_seven_reviewed_fields():
     manifest = load(MANIFEST_PATH)
     packages = {
         item["id"]: item
@@ -77,11 +77,11 @@ def test_hokkaido_work_packages_record_six_reviewed_fields():
     assert packages["policy_hierarchy"]["status"] == "completed"
     assert packages["indicator_source_index"]["status"] == "completed"
     assert packages["indicator_catalog"]["status"] == "active"
-    assert "指標1〜45" in packages["indicator_catalog"]["deliverable"]
-    assert "指標46〜108" in packages["indicator_catalog"]["deliverable"]
+    assert "指標1〜52" in packages["indicator_catalog"]["deliverable"]
+    assert "指標53〜108" in packages["indicator_catalog"]["deliverable"]
     assert packages["evidence_packets"]["status"] == "active"
-    assert "指標1〜45" in packages["evidence_packets"]["deliverable"]
-    assert "残る63指標" in packages["evidence_packets"]["deliverable"]
+    assert "指標1〜52" in packages["evidence_packets"]["deliverable"]
+    assert "残る56指標" in packages["evidence_packets"]["deliverable"]
     assert packages["web_publication"]["status"] == "blocked"
 
 
