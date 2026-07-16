@@ -69,10 +69,20 @@ def test_quality_stages_are_explicit_and_do_not_overstate_coverage():
         source["prefecture_code"] for source in registry["plan_sources"]
     }
 
-    assert verified_codes == {"01", "04", "13", "23", "27", "34", "37", "40", "47"}
+    assert verified_codes == {
+        "01",
+        "04",
+        "13",
+        "23",
+        "27",
+        "34",
+        "37",
+        "40",
+        "47",
+    }
     assert anchor_codes == verified_codes
     assert reviewed_codes == {"40"}
-    assert plan_source_codes == {"34", "40", "47"}
+    assert plan_source_codes == {"01", "04", "13", "34", "40", "47"}
 
     assert verified_codes <= known_codes
     assert anchor_codes <= known_codes
@@ -82,7 +92,7 @@ def test_quality_stages_are_explicit_and_do_not_overstate_coverage():
     assert reviewed_codes <= plan_source_codes
 
     assert len(known_codes - verified_codes) == 38
-    assert len(plan_source_codes) == 3
+    assert len(plan_source_codes) == 6
     assert len(reviewed_codes) == 1
 
 
@@ -92,9 +102,13 @@ def test_plan_sources_preserve_review_depth_and_https_provenance():
         source["prefecture_code"]: source for source in plan_sources
     }
 
-    assert sources_by_code["34"]["review_status"] == "indexed"
+    for code in ("01", "04", "13", "34", "47"):
+        assert sources_by_code[code]["review_status"] == "indexed"
     assert sources_by_code["40"]["review_status"] == "reviewed"
-    assert sources_by_code["47"]["review_status"] == "indexed"
+
+    assert sources_by_code["01"]["title"] == "北海道総合計画"
+    assert sources_by_code["04"]["title"] == "新・宮城の将来ビジョン"
+    assert sources_by_code["13"]["title"] == "「未来の東京」戦略"
 
     for source in plan_sources:
         assert source["url"].startswith("https://")
