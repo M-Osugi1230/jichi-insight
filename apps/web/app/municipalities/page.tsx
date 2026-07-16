@@ -185,9 +185,9 @@ export default function MunicipalitiesPage() {
         <section className="callout callout--dark">
           <div>
             <p className="eyebrow">Next nationwide wave</p>
-            <h2>次は残る8地域拠点の現行計画を確認する。</h2>
+            <h2>次は大阪府の現行計画を確認する。</h2>
             <p>
-              東京都は2025年3月策定の「2050東京戦略」へ更新しました。残る8拠点も後継計画・改定・計画期間を確認した後、政策体系、KPI、年度評価をEvidence Packet付きでReviewed化します。
+              第1波9拠点のうち8拠点は、後継計画・改定・計画期間まで確認しました。大阪府は現行性を確認できるまで未確認状態を維持し、その後、9拠点の政策体系、KPI、年度評価をEvidence Packet付きでReviewed化します。
             </p>
           </div>
         </section>
