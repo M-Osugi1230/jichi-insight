@@ -28,7 +28,7 @@ def test_evidence_schema_coverage_and_pages():
         assert len(packet["claims"]) == 2
         for claim in packet["claims"]:
             assert claim["source_ids"] == [
-                "policy-source-hokkaido-indicators-infrastructure"
+                "policy-source-hokkaido-indicators-socioeconomic-infrastructure"
             ]
             assert f"PDFページ{item['source_page']}" in claim["location_note"]
             assert claim["decision"] == "accepted"
