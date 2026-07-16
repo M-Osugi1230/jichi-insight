@@ -131,6 +131,10 @@ export default function MunicipalitiesPage() {
                           <dd>{planStatusLabels[record.planReviewStatus]}</dd>
                         </div>
                         <div>
+                          <dt>計画資料</dt>
+                          <dd>{record.planSource?.title ?? "未索引"}</dd>
+                        </div>
+                        <div>
                           <dt>現行性</dt>
                           <dd>{planCurrencyLabel(record.planCurrencyStatus)}</dd>
                         </div>
