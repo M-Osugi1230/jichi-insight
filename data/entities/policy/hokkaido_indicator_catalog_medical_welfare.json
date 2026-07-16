@@ -1,0 +1,149 @@
+{
+  "id": "hokkaido-indicator-catalog-medical-welfare",
+  "municipality_key": "hokkaido-prefecture",
+  "policy_field_id": "policy-field-hokkaido-medical-welfare",
+  "source_id": "policy-source-hokkaido-indicators-medical-welfare",
+  "source_document_url": "https://www.pref.hokkaido.lg.jp/fs/1/0/6/4/6/3/2/1/_/09%20%E5%8C%BB%E7%99%82%E3%83%BB%E7%A6%8F%E7%A5%890708.pdf",
+  "indicator_number_start": 61,
+  "indicator_number_end": 65,
+  "items": [
+    {
+      "id": "policy-indicator-hokkaido-61",
+      "indicator_number": 61,
+      "indicator_name_original": "医師少数区域数",
+      "policy_direction_id": "policy-direction-hokkaido-opportunity-safety",
+      "policy_field_ids": ["policy-field-hokkaido-medical-welfare"],
+      "policy_orientation_original": "将来にわたり安心できる地域医療の確保",
+      "indicator_explanation_original": "第二次医療圏における医師の偏在状況が国内下位3分の1に位置する道内の圏域数（3月末時点）",
+      "source_page": 1,
+      "series": [{
+        "label": null,
+        "unit_original": "圏域",
+        "temporal_scope": "snapshot",
+        "values": [
+          {"role": "current", "period": "2024年", "value": 11, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "11"},
+          {"role": "intermediate_target", "period": "2027年", "value": 0, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "0"},
+          {"role": "final_target", "period": "2030年", "value": 0, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "0"}
+        ]
+      }],
+      "target_setting_status": "set",
+      "target_setting_rationale_original": "他区域から医師を派遣する等の取組を通じて地域偏在を是正し、医師少数区域数を0として、その体制を維持することを目指す。",
+      "comparability_note_original": "0は欠損補完ではなく、公式資料に明示された解消目標として保持する。現状値は2024年3月末時点の圏域数。",
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-hokkaido-62",
+      "indicator_number": 62,
+      "indicator_name_original": "看護職員就業者数が全国平均値以上の圏域数",
+      "policy_direction_id": "policy-direction-hokkaido-opportunity-safety",
+      "policy_field_ids": ["policy-field-hokkaido-medical-welfare"],
+      "policy_orientation_original": "将来にわたり安心できる地域医療の確保",
+      "indicator_explanation_original": "第二次医療圏における人口10万人当たりの看護職員就業者数が全国平均値以上の圏域数（12月末時点）",
+      "source_page": 2,
+      "series": [{
+        "label": null,
+        "unit_original": "圏域",
+        "temporal_scope": "snapshot",
+        "values": [
+          {"role": "current", "period": "2022年", "value": 16, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "16"},
+          {"role": "intermediate_target", "period": "2026年", "value": 21, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "21"},
+          {"role": "final_target", "period": "2032年", "value": 21, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "21"}
+        ]
+      }],
+      "target_setting_status": "set",
+      "target_setting_rationale_original": "看護職員の地域偏在の解消に取り組み、全ての第二次医療圏で全国平均値以上の就業者数を確保し、その体制を維持することを目指す。",
+      "comparability_note_original": "圏域ごとの人口10万人当たり就業者数は参考内訳であり、KPI系列には全国平均以上となった圏域数のみを保持する。",
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-hokkaido-63",
+      "indicator_number": 63,
+      "indicator_name_original": "北海道福祉人材センターの支援による介護職への就業者数",
+      "policy_direction_id": "policy-direction-hokkaido-opportunity-safety",
+      "policy_field_ids": ["policy-field-hokkaido-medical-welfare"],
+      "policy_orientation_original": "誰もが安心して暮らし続けられる社会の形成",
+      "indicator_explanation_original": "北海道福祉人材センターのあっせん・紹介により介護職員として就業した人数（年度実績）",
+      "source_page": 3,
+      "series": [{
+        "label": null,
+        "unit_original": "人",
+        "temporal_scope": "fiscal_year",
+        "values": [
+          {"role": "current", "period": "2022年", "value": 234, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "234"},
+          {"role": "intermediate_target", "period": "2027年", "value": 234, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "234"},
+          {"role": "final_target", "period": "2032年", "value": 263, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "263"}
+        ]
+      }],
+      "target_setting_status": "set",
+      "target_setting_rationale_original": "生産年齢人口が減少する中でも地域福祉を担う人材を着実に確保するため、現状値を維持した上で最終的におおむね1.1倍を目指す。",
+      "comparability_note_original": "有効求人倍率の参考グラフは別指標であり、就業者数の目標系列へ混入しない。",
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-hokkaido-64",
+      "indicator_number": 64,
+      "indicator_name_original": "特定健康診査受診率",
+      "policy_direction_id": "policy-direction-hokkaido-opportunity-safety",
+      "policy_field_ids": ["policy-field-hokkaido-medical-welfare"],
+      "policy_orientation_original": "健康づくりと疾病予防の推進",
+      "indicator_explanation_original": "40～74歳を対象とする生活習慣病に着目した特定健康診査を受診した人の割合（年度実績）",
+      "source_page": 4,
+      "series": [{
+        "label": null,
+        "unit_original": "％",
+        "temporal_scope": "fiscal_year",
+        "values": [
+          {"role": "current", "period": "2021年", "value": 45.7, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "45.7"},
+          {"role": "intermediate_target", "period": "2026年", "value": 70.0, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "70.0"},
+          {"role": "final_target", "period": "2031年", "value": 70.0, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "70.0"}
+        ]
+      }],
+      "target_setting_status": "set",
+      "target_setting_rationale_original": "国の特定健康診査等基本指針で掲げる70％を目標とし、生活習慣病の予防につなげる。",
+      "comparability_note_original": "公表は2年前の年度実績であり、資料公表年と実績年度を区別する。",
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-hokkaido-65",
+      "indicator_number": 65,
+      "indicator_name_original": "特定保健指導実施率",
+      "policy_direction_id": "policy-direction-hokkaido-opportunity-safety",
+      "policy_field_ids": ["policy-field-hokkaido-medical-welfare"],
+      "policy_orientation_original": "健康づくりと疾病予防の推進",
+      "indicator_explanation_original": "特定健康診査の結果から生活習慣病の発症リスクが高いと判定された人のうち、特定保健指導を終了した人の割合（年度実績）",
+      "source_page": 5,
+      "series": [{
+        "label": null,
+        "unit_original": "％",
+        "temporal_scope": "fiscal_year",
+        "values": [
+          {"role": "current", "period": "2021年", "value": 42.4, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "42.4"},
+          {"role": "intermediate_target", "period": "2026年", "value": 60.0, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "60.0"},
+          {"role": "final_target", "period": "2031年", "value": 60.0, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "60.0"}
+        ]
+      }],
+      "target_setting_status": "set",
+      "target_setting_rationale_original": "国の特定健康診査等基本指針で掲げる60％を目標とし、生活習慣の改善と疾病予防につなげる。",
+      "comparability_note_original": "公表は2年前の年度実績であり、資料公表年と実績年度を区別する。",
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    }
+  ],
+  "reviewed_at": "2026-07-16",
+  "review_status": "reviewed",
+  "confidence": "high"
+}

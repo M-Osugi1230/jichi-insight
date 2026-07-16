@@ -74,9 +74,9 @@ check_page "/municipalities/" \
   "Reviewed基準実装" \
   "Reviewed化作業中" \
   "指標関係Reviewed・KPI本文抽出中" \
-  "指標1〜60をEvidence Packet付きでReviewed化済み。" \
-  "残る48指標" \
-  "指標61〜71（健康・医療）" \
+  "指標1〜65をEvidence Packet付きでReviewed化済み。" \
+  "残る43指標" \
+  "指標66〜70（就業・就労環境）" \
   "作業待ち" \
   "北海道の108指標から、全国Reviewed化を開始する。" \
   "公式URL候補" \
@@ -91,11 +91,11 @@ check_page "/data-quality/" \
   "47都道府県を共通コードと地域区分で登録。" \
   "公式計画を見つけた件数と、Reviewedに使える件数を分ける。" \
   "北海道指標PDF" \
-  "北海道は指標1〜60をReviewed化し、残る48指標を抽出中。" \
+  "北海道は指標1〜65をReviewed化し、残る43指標を抽出中。" \
   "北海道指標位置" \
   "北海道複数分野参照" \
   "北海道Reviewed指標" \
-  "指標1〜60を一次資料と照合。残り48件は未Reviewed。" \
+  "指標1〜65を一次資料と照合。残り43件は未Reviewed。" \
   "北海道KPI Evidence" \
   "Reviewed指標すべてにEvidence Packetを付与。" \
   "目標設定あり" \

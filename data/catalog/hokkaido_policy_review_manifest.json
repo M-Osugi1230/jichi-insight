@@ -5,22 +5,22 @@
   "municipality_key": "hokkaido-prefecture",
   "plan_source_ids": ["policy-source-hokkaido-comprehensive-plan"],
   "expected_indicator_count": 108,
-  "reviewed_indicator_count": 60,
-  "remaining_indicator_count": 48,
-  "indicator_evidence_packet_count": 60,
-  "count_basis": "北海道総合計画の公式入口が案内する一意指標数。重複を含めた政策分野への掲載行は113で、差分5件は追加参照として確認済み。指標1〜60は本文・値・単位・期間・条件をReviewed済み。",
+  "reviewed_indicator_count": 65,
+  "remaining_indicator_count": 43,
+  "indicator_evidence_packet_count": 65,
+  "count_basis": "北海道総合計画の公式入口が案内する一意指標数。重複を含めた政策分野への掲載行は113で、差分5件は追加参照として確認済み。指標1〜65は本文・値・単位・期間・条件をReviewed済み。",
   "active_work_package": "indicator_catalog",
   "extraction_status": "in_progress",
   "work_packages": [
     {"id":"policy_hierarchy","status":"completed","deliverable":"3基本方向、18政策分野、計画期間を公式原文・順序で登録し、3件のEvidence Packetを付与した。","completion_gate":"全階層の原文、公式順序、出典位置を人が照合済み。"},
     {"id":"indicator_source_index","status":"completed","deliverable":"18資料・108PDFページ、指標番号1〜108、追加の政策分野参照5件を欠落なく索引化した。","completion_gate":"一意指標108件と重複込み113掲載行の差分5件を、重複レコードではなく政策分野参照として検証済み。"},
-    {"id":"indicator_catalog","status":"active","deliverable":"指標1〜60（基本方向1の6分野、子ども・子育て、教育・学び）をReviewed化した。残る指標61〜108を政策分野順に登録する。","completion_gate":"全108指標の公開値を一次資料と照合し、条件型、外部ベンチマーク、下限・上限、複数系列、単年度・累計、欠損、目標未設定を保持する。"},
-    {"id":"evidence_packets","status":"active","deliverable":"指標1〜60のEvidence Packetを作成した。残る48指標へ本文抽出と同時に付与する。","completion_gate":"全108指標のclaim、source ID、位置、判断を記録する。"},
+    {"id":"indicator_catalog","status":"active","deliverable":"指標1〜65（基本方向1の6分野と、子ども・子育て、教育・学び、医療・福祉）をReviewed化した。残る指標66〜108を政策分野順に登録する。","completion_gate":"全108指標の公開値を一次資料と照合し、条件型、外部ベンチマーク、下限・上限、複数系列、単年度・累計、欠損、目標未設定を保持する。"},
+    {"id":"evidence_packets","status":"active","deliverable":"指標1〜65のEvidence Packetを作成した。残る43指標へ本文抽出と同時に付与する。","completion_gate":"全108指標のclaim、source ID、位置、判断を記録する。"},
     {"id":"web_publication","status":"blocked","deliverable":"北海道の政策体系・KPIページを公開する。","completion_gate":"108指標、Evidence Packet、年度実績の最低公開範囲、スキーマ、全テスト、Webビルド、静的出力、公開後Smokeを通過する。"}
   ],
   "quality_requirements": ["official_order_preserved","original_text_preserved","units_and_periods_preserved","conditional_targets_not_numericized","missing_values_not_zeroed","repeated_indicators_reference_only","evidence_packet_required","actuals_not_inferred"],
   "open_questions": [
-    "指標61以降の複数系列を、単一値へ圧縮せず個票の粒度で保持する。",
+    "指標66以降の複数系列を、単一値へ圧縮せず個票の粒度で保持する。",
     "中間目標値・目標値が未設定または検討中の指標をnullと原文説明の組み合わせで保持する。",
     "年度実績・進捗評価の公式資料入口を別ソースとして固定する。"
   ]

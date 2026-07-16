@@ -1,0 +1,57 @@
+[
+  {
+    "id": "evidence-policy-indicator-hokkaido-61",
+    "subject_type": "kpi",
+    "subject_id": "policy-indicator-hokkaido-61",
+    "claims": [
+      {"field": "indicator_name_original", "statement": "指標61は『医師少数区域数』。", "source_ids": ["policy-source-hokkaido-indicators-medical-welfare"], "location_note": "PDFページ1『番号・指標名』", "decision": "accepted", "review_note": null},
+      {"field": "series", "statement": "現状値11圏域（2024年）、中間目標0圏域（2027年）、目標0圏域（2030年）。", "source_ids": ["policy-source-hokkaido-indicators-medical-welfare"], "location_note": "PDFページ1『目標』", "decision": "accepted", "review_note": "0は欠損補完ではなく、医師少数区域の解消を示す公式目標として保持する。"}
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-policy-indicator-hokkaido-62",
+    "subject_type": "kpi",
+    "subject_id": "policy-indicator-hokkaido-62",
+    "claims": [
+      {"field": "indicator_name_original", "statement": "指標62は『看護職員就業者数が全国平均値以上の圏域数』。", "source_ids": ["policy-source-hokkaido-indicators-medical-welfare"], "location_note": "PDFページ2『番号・指標名』", "decision": "accepted", "review_note": null},
+      {"field": "series", "statement": "現状値16圏域（2022年）、中間目標21圏域（2026年）、目標21圏域（2032年）。", "source_ids": ["policy-source-hokkaido-indicators-medical-welfare"], "location_note": "PDFページ2『目標』", "decision": "accepted", "review_note": "圏域別就業者数の参考内訳は目標系列へ混入しない。"}
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-policy-indicator-hokkaido-63",
+    "subject_type": "kpi",
+    "subject_id": "policy-indicator-hokkaido-63",
+    "claims": [
+      {"field": "indicator_name_original", "statement": "指標63は『北海道福祉人材センターの支援による介護職への就業者数』。", "source_ids": ["policy-source-hokkaido-indicators-medical-welfare"], "location_note": "PDFページ3『番号・指標名』", "decision": "accepted", "review_note": null},
+      {"field": "series", "statement": "現状値234人（2022年）、中間目標234人（2027年）、目標263人（2032年）。", "source_ids": ["policy-source-hokkaido-indicators-medical-welfare"], "location_note": "PDFページ3『目標』", "decision": "accepted", "review_note": "参考グラフの有効求人倍率を就業者数系列へ混入しない。"}
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-policy-indicator-hokkaido-64",
+    "subject_type": "kpi",
+    "subject_id": "policy-indicator-hokkaido-64",
+    "claims": [
+      {"field": "indicator_name_original", "statement": "指標64は『特定健康診査受診率』。", "source_ids": ["policy-source-hokkaido-indicators-medical-welfare"], "location_note": "PDFページ4『番号・指標名』", "decision": "accepted", "review_note": null},
+      {"field": "series", "statement": "現状値45.7％（2021年）、中間目標70.0％（2026年）、目標70.0％（2031年）。", "source_ids": ["policy-source-hokkaido-indicators-medical-welfare"], "location_note": "PDFページ4『目標』", "decision": "accepted", "review_note": "資料公表年ではなく、2年前の実績年度を期間として保持する。"}
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-policy-indicator-hokkaido-65",
+    "subject_type": "kpi",
+    "subject_id": "policy-indicator-hokkaido-65",
+    "claims": [
+      {"field": "indicator_name_original", "statement": "指標65は『特定保健指導実施率』。", "source_ids": ["policy-source-hokkaido-indicators-medical-welfare"], "location_note": "PDFページ5『番号・指標名』", "decision": "accepted", "review_note": null},
+      {"field": "series", "statement": "現状値42.4％（2021年）、中間目標60.0％（2026年）、目標60.0％（2031年）。", "source_ids": ["policy-source-hokkaido-indicators-medical-welfare"], "location_note": "PDFページ5『目標』", "decision": "accepted", "review_note": "資料公表年ではなく、2年前の実績年度を期間として保持する。"}
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]
