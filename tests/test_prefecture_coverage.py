@@ -69,7 +69,7 @@ def test_quality_stages_are_explicit_and_do_not_overstate_coverage():
         source["prefecture_code"] for source in registry["plan_sources"]
     }
 
-    assert verified_codes == {
+    expected_anchor_codes = {
         "01",
         "04",
         "13",
@@ -80,9 +80,10 @@ def test_quality_stages_are_explicit_and_do_not_overstate_coverage():
         "40",
         "47",
     }
-    assert anchor_codes == verified_codes
+    assert verified_codes == expected_anchor_codes
+    assert anchor_codes == expected_anchor_codes
     assert reviewed_codes == {"40"}
-    assert plan_source_codes == {"01", "04", "13", "34", "40", "47"}
+    assert plan_source_codes == expected_anchor_codes
 
     assert verified_codes <= known_codes
     assert anchor_codes <= known_codes
@@ -92,23 +93,29 @@ def test_quality_stages_are_explicit_and_do_not_overstate_coverage():
     assert reviewed_codes <= plan_source_codes
 
     assert len(known_codes - verified_codes) == 38
-    assert len(plan_source_codes) == 6
+    assert len(plan_source_codes) == 9
     assert len(reviewed_codes) == 1
 
 
-def test_plan_sources_preserve_review_depth_and_https_provenance():
+def test_wave_one_plan_sources_preserve_review_depth_and_https_provenance():
     plan_sources = load(COVERAGE_PATH)["plan_sources"]
     sources_by_code = {
         source["prefecture_code"]: source for source in plan_sources
     }
 
-    for code in ("01", "04", "13", "34", "47"):
+    for code in ("01", "04", "13", "23", "27", "34", "37", "47"):
         assert sources_by_code[code]["review_status"] == "indexed"
     assert sources_by_code["40"]["review_status"] == "reviewed"
 
     assert sources_by_code["01"]["title"] == "北海道総合計画"
     assert sources_by_code["04"]["title"] == "新・宮城の将来ビジョン"
     assert sources_by_code["13"]["title"] == "「未来の東京」戦略"
+    assert sources_by_code["23"]["title"] == "あいちビジョン2030"
+    assert sources_by_code["27"]["title"] == "将来ビジョン・大阪"
+    assert (
+        sources_by_code["37"]["title"]
+        == "「人生100年時代のフロンティア県・香川」実現計画"
+    )
 
     for source in plan_sources:
         assert source["url"].startswith("https://")
