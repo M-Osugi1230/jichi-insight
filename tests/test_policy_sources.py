@@ -6,7 +6,6 @@ from jsonschema import Draft202012Validator, FormatChecker
 
 ROOT = Path(__file__).resolve().parents[1]
 
-
 WAVE_ONE_SOURCE_KEYS = {
     "hokkaido-prefecture": "01",
     "miyagi-prefecture": "04",
@@ -39,13 +38,16 @@ def validate(schema_path: str, value):
 def test_policy_source_catalog_matches_contract_and_expanded_scope():
     catalog = load("data/catalog/policy_sources.json")
     assert validate("schemas/policy_source_catalog.schema.json", catalog) == []
-    assert catalog["version"] == "0.2.0"
+    assert catalog["version"] == "0.3.0"
     assert catalog["updated_at"] == "2026-07-16"
-    assert len(catalog["records"]) == 18
+    assert len(catalog["records"]) == 36
     assert {record["municipality_key"] for record in catalog["records"]} == (
         PILOT_KEYS | set(WAVE_ONE_SOURCE_KEYS)
     )
     assert len({record["id"] for record in catalog["records"]}) == len(
+        catalog["records"]
+    )
+    assert len({record["url"] for record in catalog["records"]}) == len(
         catalog["records"]
     )
 
@@ -65,23 +67,42 @@ def test_reviewed_pilot_sources_keep_their_existing_quality_boundary():
     assert all(record["confidence"] == "high" for record in pilot_records)
 
 
-def test_wave_one_sources_are_indexed_and_verified_but_not_reviewed():
+def test_wave_one_strategic_sources_are_indexed_and_verified_but_not_reviewed():
     records = load("data/catalog/policy_sources.json")["records"]
     wave_one_records = [
         record
         for record in records
         if record["municipality_key"] in WAVE_ONE_SOURCE_KEYS
+        and record["source_role"] == "strategic_plan"
     ]
 
     assert len(wave_one_records) == 8
     assert {record["municipality_key"] for record in wave_one_records} == set(
         WAVE_ONE_SOURCE_KEYS
     )
-    assert all(record["source_role"] == "strategic_plan" for record in wave_one_records)
     assert all(record["collection_status"] == "indexed" for record in wave_one_records)
     assert all(record["review_status"] == "verified" for record in wave_one_records)
     assert all(record["confidence"] == "high" for record in wave_one_records)
     assert all("kpis" in record["extraction_targets"] for record in wave_one_records)
+
+
+def test_hokkaido_kpi_sources_are_eighteen_verified_pdf_documents():
+    records = load("data/catalog/policy_sources.json")["records"]
+    kpi_sources = [
+        record
+        for record in records
+        if record["municipality_key"] == "hokkaido-prefecture"
+        and record["source_role"] == "kpi_source"
+    ]
+
+    assert len(kpi_sources) == 18
+    assert all(record["format"] == "pdf" for record in kpi_sources)
+    assert all(record["collection_status"] == "indexed" for record in kpi_sources)
+    assert all(record["review_status"] == "verified" for record in kpi_sources)
+    assert all(record["extraction_targets"] == ["kpis"] for record in kpi_sources)
+    assert [record["title"].split(" ")[2] for record in kpi_sources] == [
+        f"{number:02d}" for number in range(1, 19)
+    ]
 
 
 def test_wave_one_source_titles_and_urls_match_the_nationwide_registry():
@@ -91,6 +112,7 @@ def test_wave_one_source_titles_and_urls_match_the_nationwide_registry():
         record["municipality_key"]: record
         for record in records
         if record["municipality_key"] in WAVE_ONE_SOURCE_KEYS
+        and record["source_role"] == "strategic_plan"
     }
     plan_sources_by_code = {
         source["prefecture_code"]: source for source in coverage["plan_sources"]
@@ -113,6 +135,7 @@ def test_policy_source_catalog_covers_the_accountability_chain():
         "annual_priority_program",
         "project_review",
         "progress_management",
+        "kpi_source",
     } <= roles
 
 
