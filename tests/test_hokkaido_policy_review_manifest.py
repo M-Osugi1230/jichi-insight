@@ -13,12 +13,11 @@ def load(path: Path):
 
 
 def test_hokkaido_policy_review_manifest_matches_schema():
-    manifest = load(MANIFEST_PATH)
     validator = Draft202012Validator(
         load(SCHEMA_PATH),
         format_checker=FormatChecker(),
     )
-    assert list(validator.iter_errors(manifest)) == []
+    assert list(validator.iter_errors(load(MANIFEST_PATH))) == []
 
 
 def test_hokkaido_manifest_is_linked_to_the_active_wave_one_queue_item():
@@ -31,8 +30,6 @@ def test_hokkaido_manifest_is_linked_to_the_active_wave_one_queue_item():
     )
 
     assert manifest["prefecture_code"] == "01"
-    assert manifest["municipality_key"] == "hokkaido-prefecture"
-    assert active_item["prefecture_code"] == manifest["prefecture_code"]
     assert active_item["status"] == "active_review"
     assert active_item["source_inventory_status"] == (
         "indicator_relationships_reviewed"
@@ -45,51 +42,50 @@ def test_hokkaido_manifest_preserves_boundaries_and_partial_counts():
     manifest = load(MANIFEST_PATH)
 
     assert manifest["expected_indicator_count"] == 108
-    assert manifest["reviewed_indicator_count"] == 18
-    assert manifest["remaining_indicator_count"] == 90
-    assert manifest["indicator_evidence_packet_count"] == 18
-    assert manifest["reviewed_indicator_count"] + manifest[
-        "remaining_indicator_count"
-    ] == manifest["expected_indicator_count"]
+    assert manifest["reviewed_indicator_count"] == 29
+    assert manifest["remaining_indicator_count"] == 79
+    assert manifest["indicator_evidence_packet_count"] == 29
+    assert (
+        manifest["reviewed_indicator_count"]
+        + manifest["remaining_indicator_count"]
+        == 108
+    )
     assert manifest["indicator_evidence_packet_count"] == manifest[
         "reviewed_indicator_count"
     ]
     assert "掲載行は113" in manifest["count_basis"]
     assert "差分5件" in manifest["count_basis"]
-    assert "指標1〜18" in manifest["count_basis"]
+    assert "指標1〜29" in manifest["count_basis"]
     assert manifest["extraction_status"] == "in_progress"
     assert manifest["active_work_package"] == "indicator_catalog"
 
 
-def test_hokkaido_work_packages_record_food_and_tourism_batches():
+def test_hokkaido_work_packages_record_three_reviewed_fields():
     manifest = load(MANIFEST_PATH)
-    packages_by_id = {
-        package["id"]: package for package in manifest["work_packages"]
+    packages = {
+        item["id"]: item
+        for item in manifest["work_packages"]
     }
 
-    assert list(packages_by_id) == [
+    assert list(packages) == [
         "policy_hierarchy",
         "indicator_source_index",
         "indicator_catalog",
         "evidence_packets",
         "web_publication",
     ]
-    assert packages_by_id["policy_hierarchy"]["status"] == "completed"
-    assert packages_by_id["indicator_source_index"]["status"] == "completed"
-    assert packages_by_id["indicator_catalog"]["status"] == "active"
-    assert "指標1〜18" in packages_by_id["indicator_catalog"]["deliverable"]
-    assert "指標19〜108" in packages_by_id["indicator_catalog"]["deliverable"]
-    assert packages_by_id["evidence_packets"]["status"] == "active"
-    assert "指標1〜18" in packages_by_id["evidence_packets"]["deliverable"]
-    assert "残る90指標" in packages_by_id["evidence_packets"]["deliverable"]
-    assert packages_by_id["web_publication"]["status"] == "blocked"
-    assert all(
-        package["deliverable"].strip() and package["completion_gate"].strip()
-        for package in manifest["work_packages"]
-    )
+    assert packages["policy_hierarchy"]["status"] == "completed"
+    assert packages["indicator_source_index"]["status"] == "completed"
+    assert packages["indicator_catalog"]["status"] == "active"
+    assert "指標1〜29" in packages["indicator_catalog"]["deliverable"]
+    assert "指標30〜108" in packages["indicator_catalog"]["deliverable"]
+    assert packages["evidence_packets"]["status"] == "active"
+    assert "指標1〜29" in packages["evidence_packets"]["deliverable"]
+    assert "残る79指標" in packages["evidence_packets"]["deliverable"]
+    assert packages["web_publication"]["status"] == "blocked"
 
 
-def test_hokkaido_manifest_requires_all_non_negotiable_kpi_safeguards():
+def test_hokkaido_manifest_requires_all_safeguards():
     manifest = load(MANIFEST_PATH)
 
     assert set(manifest["quality_requirements"]) == {

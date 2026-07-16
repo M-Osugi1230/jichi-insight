@@ -1,0 +1,70 @@
+{
+  "id": "hokkaido-indicator-catalog-zero-carbon",
+  "municipality_key": "hokkaido-prefecture",
+  "policy_field_id": "policy-field-hokkaido-zero-carbon",
+  "source_id": "policy-source-hokkaido-indicators-zero-carbon",
+  "source_document_url": "https://www.pref.hokkaido.lg.jp/fs/1/0/6/4/6/3/1/5/_/03%20%E3%82%BC%E3%83%AD%E3%82%AB%E3%83%BC%E3%83%9C%E3%83%B30708.pdf",
+  "indicator_number_start": 19,
+  "indicator_number_end": 29,
+  "items": [
+    {
+      "id":"policy-indicator-hokkaido-19","indicator_number":19,"indicator_name_original":"温室効果ガス実質排出量","policy_direction_id":"policy-direction-hokkaido-growth","policy_field_ids":["policy-field-hokkaido-zero-carbon"],"policy_orientation_original":"ゼロカーボン北海道の着実な推進","indicator_explanation_original":"温室効果ガス排出量から森林等による二酸化炭素吸収量を引いたもの","source_page":1,
+      "series":[{"label":null,"unit_original":"万t-CO2","temporal_scope":"fiscal_year","values":[{"role":"current","period":"2020年","value":5176,"status":"numeric","operator":"exact","value_text_original":"5,176"},{"role":"intermediate_target","period":"2025年","value":4691,"status":"numeric","operator":"exact","value_text_original":"4,691"},{"role":"final_target","period":"2030年","value":3788,"status":"numeric","operator":"exact","value_text_original":"3,788"}]}],
+      "target_setting_status":"set","target_setting_rationale_original":"2050年までのゼロカーボン北海道実現に向け、中期目標として2030年までに2013年度比48％減を目指す。","comparability_note_original":null,"actual_linkage_status":"not_linked","evaluation_status":"not_assessed","review_status":"reviewed","confidence":"high"
+    },
+    {
+      "id":"policy-indicator-hokkaido-20","indicator_number":20,"indicator_name_original":"森林吸収量","policy_direction_id":"policy-direction-hokkaido-growth","policy_field_ids":["policy-field-hokkaido-zero-carbon"],"policy_orientation_original":"ゼロカーボン北海道の着実な推進","indicator_explanation_original":"森林による二酸化炭素の吸収量","source_page":2,
+      "series":[{"label":null,"unit_original":"万t-CO2","temporal_scope":"fiscal_year","values":[{"role":"current","period":"2021年","value":986,"status":"numeric","operator":"exact","value_text_original":"986"},{"role":"intermediate_target","period":"2026年","value":755,"status":"numeric","operator":"exact","value_text_original":"755"},{"role":"final_target","period":"2031年","value":850,"status":"numeric","operator":"exact","value_text_original":"850"}]}],
+      "target_setting_status":"set","target_setting_rationale_original":"人工林の高齢化等による吸収量の減少傾向を踏まえ、国目標の道シェア分、本道の優位性、道独自対策の効果を積み上げて850万t-CO2を目標とする。","comparability_note_original":"中間目標値755は現状値986を下回るが、原文の森林吸収量見通しをそのまま保持する。","actual_linkage_status":"not_linked","evaluation_status":"not_assessed","review_status":"reviewed","confidence":"high"
+    },
+    {
+      "id":"policy-indicator-hokkaido-21","indicator_number":21,"indicator_name_original":"再生可能エネルギー導入量（設備容量）","policy_direction_id":"policy-direction-hokkaido-growth","policy_field_ids":["policy-field-hokkaido-zero-carbon"],"policy_orientation_original":"再生可能エネルギーを活用した産業振興とエネルギーの安定供給","indicator_explanation_original":"再生可能エネルギーの合計設備容量","source_page":3,
+      "series":[{"label":null,"unit_original":"万kW","temporal_scope":"snapshot","values":[{"role":"current","period":"2022年","value":417.1,"status":"numeric","operator":"exact","value_text_original":"417.1"},{"role":"intermediate_target","period":"2027年","value":568.3,"status":"numeric","operator":"exact","value_text_original":"568.3"},{"role":"final_target","period":"2032年","value":865.7,"status":"numeric","operator":"exact","value_text_original":"865.7"}]}],
+      "target_setting_status":"set","target_setting_rationale_original":"本道の再生可能エネルギーの賦存量と開発環境の整備を背景に、過去の増加傾向を踏まえ更なる増加を目標とする。","comparability_note_original":"各年の3月末時点の設備容量。","actual_linkage_status":"not_linked","evaluation_status":"not_assessed","review_status":"reviewed","confidence":"high"
+    },
+    {
+      "id":"policy-indicator-hokkaido-22","indicator_number":22,"indicator_name_original":"再生可能エネルギー導入量（発電電力量）","policy_direction_id":"policy-direction-hokkaido-growth","policy_field_ids":["policy-field-hokkaido-zero-carbon"],"policy_orientation_original":"再生可能エネルギーを活用した産業振興とエネルギーの安定供給","indicator_explanation_original":"再生可能エネルギーの合計発電電力量","source_page":4,
+      "series":[{"label":null,"unit_original":"百万kWh","temporal_scope":"fiscal_year","values":[{"role":"current","period":"2021年","value":11120,"status":"numeric","operator":"exact","value_text_original":"11,120"},{"role":"intermediate_target","period":"2026年","value":13878,"status":"numeric","operator":"exact","value_text_original":"13,878"},{"role":"final_target","period":"2031年","value":21516,"status":"numeric","operator":"exact","value_text_original":"21,516"}]}],
+      "target_setting_status":"set","target_setting_rationale_original":"基幹系統や地域間連系線整備など事業環境が整備された場合に達成できる最も高い水準を目指す。","comparability_note_original":null,"actual_linkage_status":"not_linked","evaluation_status":"not_assessed","review_status":"reviewed","confidence":"high"
+    },
+    {
+      "id":"policy-indicator-hokkaido-23","indicator_number":23,"indicator_name_original":"再生可能エネルギー熱利用量","policy_direction_id":"policy-direction-hokkaido-growth","policy_field_ids":["policy-field-hokkaido-zero-carbon"],"policy_orientation_original":"再生可能エネルギーを活用した産業振興とエネルギーの安定供給","indicator_explanation_original":"再生可能エネルギーの合計熱利用量","source_page":5,
+      "series":[{"label":null,"unit_original":"TJ","temporal_scope":"fiscal_year","values":[{"role":"current","period":"2021年","value":15642,"status":"numeric","operator":"exact","value_text_original":"15,642"},{"role":"intermediate_target","period":"2026年","value":18639,"status":"numeric","operator":"exact","value_text_original":"18,639"},{"role":"final_target","period":"2031年","value":21540,"status":"numeric","operator":"exact","value_text_original":"21,540"}]}],
+      "target_setting_status":"set","target_setting_rationale_original":"事業環境が整備された場合に達成できる最も高い水準を目指す。","comparability_note_original":null,"actual_linkage_status":"not_linked","evaluation_status":"not_assessed","review_status":"reviewed","confidence":"high"
+    },
+    {
+      "id":"policy-indicator-hokkaido-24","indicator_number":24,"indicator_name_original":"バイオマス利活用率","policy_direction_id":"policy-direction-hokkaido-growth","policy_field_ids":["policy-field-hokkaido-zero-carbon","policy-field-hokkaido-nature-environment"],"policy_orientation_original":"再生可能エネルギーを活用した産業振興とエネルギーの安定供給／環境負荷の少ない持続可能な循環型社会の形成","indicator_explanation_original":"各種バイオマスの利活用仕向量を発生量で除して算出した利活用率","source_page":6,
+      "series":[
+        {"label":"廃棄物系","unit_original":"％","temporal_scope":"fiscal_year","values":[{"role":"current","period":"2020年","value":91.1,"status":"numeric","operator":"exact","value_text_original":"91.1"},{"role":"intermediate_target","period":"2025年","value":93.3,"status":"numeric","operator":"exact","value_text_original":"93.3"},{"role":"final_target","period":"2030年","value":95.4,"status":"numeric","operator":"exact","value_text_original":"95.4"}]},
+        {"label":"未利用系","unit_original":"％","temporal_scope":"fiscal_year","values":[{"role":"current","period":"2020年","value":80.4,"status":"numeric","operator":"exact","value_text_original":"80.4"},{"role":"intermediate_target","period":"2025年","value":81.0,"status":"numeric","operator":"exact","value_text_original":"81.0"},{"role":"final_target","period":"2030年","value":81.4,"status":"numeric","operator":"exact","value_text_original":"81.4"}]}
+      ],
+      "target_setting_status":"set","target_setting_rationale_original":"過去のトレンドから2030年度の目標値を設定し、その増加割合を2031年まで継続することを目指す。","comparability_note_original":"ゼロカーボンと自然・環境の2政策分野に掲載される一意指標であり、重複KPIとして登録しない。","actual_linkage_status":"not_linked","evaluation_status":"not_assessed","review_status":"reviewed","confidence":"high"
+    },
+    {
+      "id":"policy-indicator-hokkaido-25","indicator_number":25,"indicator_name_original":"育成複層林の面積","policy_direction_id":"policy-direction-hokkaido-growth","policy_field_ids":["policy-field-hokkaido-zero-carbon"],"policy_orientation_original":"林業・木材産業の健全な発展と山村地域の活性化","indicator_explanation_original":"複層林化した人工林や施業を行った天然林などの面積","source_page":7,
+      "series":[{"label":null,"unit_original":"千ha","temporal_scope":"snapshot","values":[{"role":"current","period":"2022年","value":772,"status":"numeric","operator":"exact","value_text_original":"772"},{"role":"intermediate_target","period":"2027年","value":803,"status":"numeric","operator":"exact","value_text_original":"803"},{"role":"final_target","period":"2032年","value":854,"status":"numeric","operator":"exact","value_text_original":"854"}]}],
+      "target_setting_status":"set","target_setting_rationale_original":"森林調査簿を基に成長予測や伐採傾向を踏まえ、育成単層林及び天然生林から育成複層林へ誘導する必要がある森林面積を算出する。","comparability_note_original":"各年の3月末時点の面積。","actual_linkage_status":"not_linked","evaluation_status":"not_assessed","review_status":"reviewed","confidence":"high"
+    },
+    {
+      "id":"policy-indicator-hokkaido-26","indicator_number":26,"indicator_name_original":"道産木材の利用量","policy_direction_id":"policy-direction-hokkaido-growth","policy_field_ids":["policy-field-hokkaido-zero-carbon"],"policy_orientation_original":"林業・木材産業の健全な発展と山村地域の活性化","indicator_explanation_original":"森林づくりに伴い産出され、利用される木材の量","source_page":8,
+      "series":[{"label":null,"unit_original":"万㎥","temporal_scope":"fiscal_year","values":[{"role":"current","period":"2022年","value":445,"status":"numeric","operator":"exact","value_text_original":"445"},{"role":"intermediate_target","period":"2027年","value":480,"status":"numeric","operator":"exact","value_text_original":"480"},{"role":"final_target","period":"2032年","value":502,"status":"numeric","operator":"exact","value_text_original":"502"}]}],
+      "target_setting_status":"set","target_setting_rationale_original":"資源状況、成長予測、伐採傾向を踏まえ、将来の伐採量のうち製材・合板・チップ・燃料用材等として利用できる木材量を算出する。","comparability_note_original":null,"actual_linkage_status":"not_linked","evaluation_status":"not_assessed","review_status":"reviewed","confidence":"high"
+    },
+    {
+      "id":"policy-indicator-hokkaido-27","indicator_number":27,"indicator_name_original":"木質バイオマスエネルギー利用量","policy_direction_id":"policy-direction-hokkaido-growth","policy_field_ids":["policy-field-hokkaido-zero-carbon"],"policy_orientation_original":"林業・木材産業の健全な発展と山村地域の活性化","indicator_explanation_original":"木質バイオマスエネルギーの利用量","source_page":9,
+      "series":[{"label":null,"unit_original":"万㎥","temporal_scope":"fiscal_year","values":[{"role":"current","period":"2022年","value":160,"status":"numeric","operator":"exact","value_text_original":"160"},{"role":"intermediate_target","period":"2027年","value":179,"status":"numeric","operator":"exact","value_text_original":"179"},{"role":"final_target","period":"2031年","value":200,"status":"numeric","operator":"exact","value_text_original":"200"}]}],
+      "target_setting_status":"set","target_setting_rationale_original":"新たな利用施設の増加予測などを踏まえ、2031年度の木質バイオマスエネルギー利用量200万㎥を目指す。","comparability_note_original":null,"actual_linkage_status":"not_linked","evaluation_status":"not_assessed","review_status":"reviewed","confidence":"high"
+    },
+    {
+      "id":"policy-indicator-hokkaido-28","indicator_number":28,"indicator_name_original":"林業の新規参入者数","policy_direction_id":"policy-direction-hokkaido-growth","policy_field_ids":["policy-field-hokkaido-zero-carbon"],"policy_orientation_original":"林業・木材産業の健全な発展と山村地域の活性化","indicator_explanation_original":"新たに林業に就業した人数（年平均）","source_page":10,
+      "series":[{"label":null,"unit_original":"人","temporal_scope":"fiscal_year","values":[{"role":"current","period":"2021年","value":134,"status":"numeric","operator":"exact","value_text_original":"134"},{"role":"intermediate_target","period":"2027年","value":160,"status":"numeric","operator":"exact","value_text_original":"160"},{"role":"final_target","period":"2031年","value":160,"status":"numeric","operator":"exact","value_text_original":"160"}]}],
+      "target_setting_status":"set","target_setting_rationale_original":"森林資源の循環利用を着実に進めるため、2022年から2031年にかけて年平均160人の新規参入を目指す。","comparability_note_original":null,"actual_linkage_status":"not_linked","evaluation_status":"not_assessed","review_status":"reviewed","confidence":"high"
+    },
+    {
+      "id":"policy-indicator-hokkaido-29","indicator_number":29,"indicator_name_original":"林業従事者の通年雇用割合","policy_direction_id":"policy-direction-hokkaido-growth","policy_field_ids":["policy-field-hokkaido-zero-carbon"],"policy_orientation_original":"林業・木材産業の健全な発展と山村地域の活性化","indicator_explanation_original":"常用の林業従事者のうち、通年雇用されている者の割合","source_page":11,
+      "series":[{"label":null,"unit_original":"％","temporal_scope":"fiscal_year","values":[{"role":"current","period":"2021年","value":71.9,"status":"numeric","operator":"exact","value_text_original":"71.9"},{"role":"intermediate_target","period":"2027年","value":74.0,"status":"numeric","operator":"exact","value_text_original":"74.0"},{"role":"final_target","period":"2031年","value":77.0,"status":"numeric","operator":"exact","value_text_original":"77.0"}]}],
+      "target_setting_status":"set","target_setting_rationale_original":"林業従事者の就業環境改善を図る指標として、2031年の割合を現行の5％増となる77％へ増加させることを目指す。","comparability_note_original":null,"actual_linkage_status":"not_linked","evaluation_status":"not_assessed","review_status":"reviewed","confidence":"high"
+    }
+  ],
+  "reviewed_at":"2026-07-16","review_status":"reviewed","confidence":"high"
+}
