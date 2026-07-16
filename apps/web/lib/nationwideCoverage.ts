@@ -51,6 +51,11 @@ const planSources = coverageRegistry.plan_sources as PrefecturePlanSource[];
 const planSourcesByCode = new Map(
   planSources.map((source) => [source.prefecture_code, source]),
 );
+const publicPrefectureHrefs: Record<string, string> = {
+  "01": "/municipalities/hokkaido",
+  "04": "/municipalities/miyagi",
+  "40": "/municipalities/fukuoka-prefecture",
+};
 
 export const regionOrder: PrefectureRegion[] = [
   "北海道",
@@ -94,12 +99,7 @@ export const nationwidePrefectureCoverage = records.map((record) => {
     expansionWave: regionalAnchorCodes.has(record.prefecture_code)
       ? ("wave_1_regional_anchor" as const)
       : ("wave_2_nationwide_followup" as const),
-    publicHref:
-      record.prefecture_code === "01"
-        ? "/municipalities/hokkaido"
-        : record.prefecture_code === "40"
-          ? "/municipalities/fukuoka-prefecture"
-          : null,
+    publicHref: publicPrefectureHrefs[record.prefecture_code] ?? null,
   };
 });
 

@@ -32,6 +32,7 @@ REQUIRED_FILES = [
     "methodology/index.html",
     "municipalities/index.html",
     "municipalities/hokkaido/index.html",
+    "municipalities/miyagi/index.html",
     "municipalities/fukuoka-prefecture/index.html",
     "municipalities/fukuoka-city/index.html",
     "municipalities/kitakyushu-city/index.html",
@@ -122,6 +123,7 @@ def main() -> int:
                     "現行計画確認済み",
                     "Reviewed公開",
                     "都道府県を表示",
+                    "政策体系Reviewed・KPI索引中",
                 ],
                 "Nationwide coverage page",
             )
@@ -160,6 +162,23 @@ def main() -> int:
                     "政策成果の達成率ではなく",
                 ],
                 "Hokkaido policy indicator page",
+            )
+        )
+
+    miyagi_path = EXPORT_ROOT / "municipalities" / "miyagi" / "index.html"
+    if miyagi_path.is_file():
+        failures.extend(
+            require_copy(
+                miyagi_path.read_text(encoding="utf-8"),
+                [
+                    "宮城県の政策体系を、3階層のまま読む。",
+                    "4つの政策推進の基本方向",
+                    "政策番号1〜8へ混ぜず",
+                    "復興完了に向けた4取組分野は、政策9ではありません。",
+                    "目標指標、年度実績、県の自己評価",
+                    "政策体系を確認したことと、成果を評価したことは別です。",
+                ],
+                "Miyagi policy hierarchy page",
             )
         )
 

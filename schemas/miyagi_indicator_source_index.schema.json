@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.example/schemas/miyagi_indicator_source_index.schema.json",
+  "title": "Miyagi indicator source index",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "updated_at", "prefecture_code", "municipality_key", "source_id", "source_document_url", "table_title_original", "document_page_start", "document_page_end", "target_number_start", "target_number_end", "unique_target_count", "display_row_count", "composite_target_count", "additional_series_row_count", "counting_boundary", "column_contract", "page_segments", "sections", "index_status", "review_status", "confidence"],
+  "properties": {
+    "id": {"const": "miyagi-indicator-source-index"},
+    "updated_at": {"type": "string", "format": "date"},
+    "prefecture_code": {"const": "04"},
+    "municipality_key": {"const": "miyagi-prefecture"},
+    "source_id": {"type": "string", "minLength": 1},
+    "source_document_url": {"type": "string", "format": "uri", "pattern": "^https://"},
+    "table_title_original": {"type": "string", "minLength": 1},
+    "document_page_start": {"type": "integer", "minimum": 1},
+    "document_page_end": {"type": "integer", "minimum": 1},
+    "target_number_start": {"type": "integer", "minimum": 1},
+    "target_number_end": {"type": "integer", "minimum": 1},
+    "unique_target_count": {"type": "integer", "minimum": 1},
+    "display_row_count": {"type": "integer", "minimum": 1},
+    "composite_target_count": {"type": "integer", "minimum": 0},
+    "additional_series_row_count": {"type": "integer", "minimum": 0},
+    "counting_boundary": {"type": "string", "minLength": 1},
+    "column_contract": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "page_segments": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/pageSegment"}},
+    "sections": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/section"}},
+    "index_status": {"const": "position_ranges_reviewed"},
+    "review_status": {"const": "reviewed"},
+    "confidence": {"const": "high"}
+  },
+  "$defs": {
+    "pageSegment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["document_page", "row_number_start", "row_number_end", "target_number_start", "target_number_end", "boundary_note"],
+      "properties": {
+        "document_page": {"type": "integer", "minimum": 1},
+        "row_number_start": {"type": "integer", "minimum": 1},
+        "row_number_end": {"type": "integer", "minimum": 1},
+        "target_number_start": {"type": "integer", "minimum": 1},
+        "target_number_end": {"type": "integer", "minimum": 1},
+        "boundary_note": {"type": "string", "minLength": 1}
+      }
+    },
+    "section": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["section_type", "section_number", "hierarchy_id", "target_number_start", "target_number_end", "row_number_start", "row_number_end", "document_page_start", "document_page_end"],
+      "properties": {
+        "section_type": {"type": "string", "enum": ["direction", "measure"]},
+        "section_number": {"type": "integer", "minimum": 1},
+        "hierarchy_id": {"type": "string", "pattern": "^(policy-direction|measure)-[a-z0-9-]+$"},
+        "target_number_start": {"type": "integer", "minimum": 1},
+        "target_number_end": {"type": "integer", "minimum": 1},
+        "row_number_start": {"type": "integer", "minimum": 1},
+        "row_number_end": {"type": "integer", "minimum": 1},
+        "document_page_start": {"type": "integer", "minimum": 1},
+        "document_page_end": {"type": "integer", "minimum": 1}
+      }
+    }
+  }
+}

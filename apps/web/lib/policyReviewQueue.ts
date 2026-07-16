@@ -10,6 +10,7 @@ export type PolicyReviewQueueStatus =
 
 export type SourceInventoryStatus =
   | "reviewed"
+  | "source_inventory_reviewed"
   | "policy_hierarchy_reviewed"
   | "indicator_positions_reviewed"
   | "indicator_relationships_reviewed"
@@ -113,6 +114,7 @@ export function policyReviewStatusTone(status: PolicyReviewQueueStatus) {
 export function sourceInventoryStatusLabel(status: SourceInventoryStatus) {
   const labels: Record<SourceInventoryStatus, string> = {
     reviewed: "政策・KPI資料Reviewed",
+    source_inventory_reviewed: "関連資料固定済み・政策体系照合中",
     policy_hierarchy_reviewed: "政策体系Reviewed・KPI索引中",
     indicator_positions_reviewed: "指標番号1〜108確認済み・関係確認中",
     indicator_relationships_reviewed: "指標関係Reviewed・KPI本文抽出中",

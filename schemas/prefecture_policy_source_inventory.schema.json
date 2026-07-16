@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.example/schemas/prefecture_policy_source_inventory.schema.json",
+  "title": "Prefecture policy source inventory",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "updated_at",
+    "prefecture_code",
+    "municipality_key",
+    "plan_title_original",
+    "plan_period",
+    "policy_count",
+    "measure_count",
+    "inventory_status",
+    "current_implementation_plan_id",
+    "latest_final_evaluation_id",
+    "latest_draft_evaluation_id",
+    "sources",
+    "relationships",
+    "quality_boundaries",
+    "next_gate"
+  ],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9-]+-policy-source-inventory$"},
+    "updated_at": {"type": "string", "format": "date"},
+    "prefecture_code": {"type": "string", "pattern": "^[0-9]{2}$"},
+    "municipality_key": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "plan_title_original": {"type": "string", "minLength": 1},
+    "plan_period": {"$ref": "#/$defs/period"},
+    "policy_count": {"type": "integer", "minimum": 1},
+    "measure_count": {"type": "integer", "minimum": 1},
+    "inventory_status": {"const": "source_inventory_reviewed"},
+    "current_implementation_plan_id": {"type": "string", "minLength": 1},
+    "latest_final_evaluation_id": {"type": "string", "minLength": 1},
+    "latest_draft_evaluation_id": {"type": "string", "minLength": 1},
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/source"}
+    },
+    "relationships": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/relationship"}
+    },
+    "quality_boundaries": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "next_gate": {
+      "type": "string",
+      "enum": ["policy_hierarchy", "kpi_index", "actuals_linkage"]
+    }
+  },
+  "$defs": {
+    "period": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start_fiscal_year", "end_fiscal_year", "description_original"],
+      "properties": {
+        "start_fiscal_year": {"type": ["integer", "null"], "minimum": 1900},
+        "end_fiscal_year": {"type": ["integer", "null"], "minimum": 1900},
+        "description_original": {"type": "string", "minLength": 1}
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title_original",
+        "organization",
+        "url",
+        "format",
+        "source_role",
+        "publication_status",
+        "published_at",
+        "coverage_period",
+        "activity_fiscal_year",
+        "evaluation_fiscal_year",
+        "page_count",
+        "parent_source_ids",
+        "review_status",
+        "notes"
+      ],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+        "title_original": {"type": "string", "minLength": 1},
+        "organization": {"type": "string", "minLength": 1},
+        "url": {"type": "string", "format": "uri", "pattern": "^https://"},
+        "format": {"type": "string", "enum": ["html", "pdf"]},
+        "source_role": {
+          "type": "string",
+          "enum": [
+            "strategic_plan_entry",
+            "strategic_plan",
+            "implementation_plan_entry",
+            "implementation_plan",
+            "evaluation_methodology",
+            "annual_evaluation_entry",
+            "annual_evaluation",
+            "evaluation_draft_entry",
+            "evaluation_process",
+            "planning_meeting"
+          ]
+        },
+        "publication_status": {
+          "type": "string",
+          "enum": ["current", "final", "draft", "process", "methodology"]
+        },
+        "published_at": {"type": ["string", "null"], "format": "date"},
+        "coverage_period": {"$ref": "#/$defs/period"},
+        "activity_fiscal_year": {"type": ["integer", "null"], "minimum": 1900},
+        "evaluation_fiscal_year": {"type": ["integer", "null"], "minimum": 1900},
+        "page_count": {"type": ["integer", "null"], "minimum": 1},
+        "parent_source_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "pattern": "^[a-z0-9-]+$"}
+        },
+        "review_status": {"const": "verified"},
+        "notes": {"type": "string", "minLength": 1}
+      }
+    },
+    "relationship": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["from_source_id", "to_source_id", "relationship_type", "description"],
+      "properties": {
+        "from_source_id": {"type": "string", "minLength": 1},
+        "to_source_id": {"type": "string", "minLength": 1},
+        "relationship_type": {
+          "type": "string",
+          "enum": [
+            "publishes",
+            "implements",
+            "evaluates",
+            "governs_evaluation",
+            "precedes_final",
+            "informs_revision"
+          ]
+        },
+        "description": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

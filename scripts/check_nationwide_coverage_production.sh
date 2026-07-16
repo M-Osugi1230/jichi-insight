@@ -74,8 +74,11 @@ check_page "/municipalities/" \
   "Reviewed基準実装" \
   "Reviewed化作業中" \
   "政策・KPI資料Reviewed" \
+  "政策体系Reviewed・KPI索引中" \
   "全108指標とEvidence Packet 108件をReviewed化済み。" \
-  "実施計画、数値目標、行政評価" \
+  "4基本方向・8政策・18施策" \
+  "復興支援4分野" \
+  "目標指標一覧" \
   "北海道108指標のReviewed完了。次は宮城県の資料固定へ。" \
   "公式URL候補" \
   "北海道" "宮城県" "東京都" "愛知県" "大阪府" "広島県" "香川県" "福岡県" "沖縄県" "福岡市" "北九州市"
@@ -101,6 +104,22 @@ check_page "/municipalities/hokkaido/" \
 
 check_absent "/municipalities/hokkaido/" "108指標すべての完了ではありません"
 check_absent "/municipalities/hokkaido/" "指標109〜108"
+
+check_page "/municipalities/miyagi/" \
+  "宮城県の政策体系を、3階層のまま読む。" \
+  "4つの政策推進の基本方向、8政策、18施策" \
+  "政策体系Reviewed" \
+  "富県宮城を支える県内産業の持続的な成長促進" \
+  "社会全体で支える宮城の子ども・子育て" \
+  "誰もが安心していきいきと暮らせる地域社会づくり" \
+  "強靱で自然と調和した県土づくり" \
+  "復興完了に向けた4取組分野は、政策9ではありません。" \
+  "福島第一原発事故被害への対応" \
+  "政策体系を確認したことと、成果を評価したことは別です。" \
+  "中期実施計画の目標指標一覧と18施策の接続"
+
+check_absent "/municipalities/miyagi/" "政策評価済み"
+check_absent "/municipalities/miyagi/" "達成率"
 
 check_page "/data-quality/" \
   "全国登録、計画入口、現行性、Reviewed、公開済みを分ける。" \
