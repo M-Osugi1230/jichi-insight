@@ -84,7 +84,7 @@ def test_quality_stages_are_explicit_and_do_not_overstate_coverage():
     assert verified_codes == expected_anchor_codes
     assert anchor_codes == expected_anchor_codes
     assert reviewed_codes == {"40"}
-    assert current_plan_codes == {"13"}
+    assert current_plan_codes == expected_anchor_codes
     assert plan_source_codes == expected_anchor_codes
 
     assert verified_codes <= known_codes
@@ -98,8 +98,8 @@ def test_quality_stages_are_explicit_and_do_not_overstate_coverage():
 
     assert len(known_codes - verified_codes) == 38
     assert len(plan_source_codes) == 9
-    assert len(current_plan_codes) == 1
-    assert len(plan_source_codes - current_plan_codes) == 8
+    assert len(current_plan_codes) == 9
+    assert plan_source_codes - current_plan_codes == set()
     assert len(reviewed_codes) == 1
 
 
@@ -121,19 +121,58 @@ def test_wave_one_plan_sources_preserve_review_depth_and_https_provenance():
     )
     assert sources_by_code["13"]["url"].endswith("/basic-plan/2050-tokyo")
     assert sources_by_code["23"]["title"] == "あいちビジョン2030"
-    assert sources_by_code["27"]["title"] == "将来ビジョン・大阪"
+    assert sources_by_code["27"]["title"] == "Beyond EXPO 2025"
+    assert sources_by_code["27"]["url"].endswith(
+        "/kikaku_keikaku/beyondexpo2025/index.html"
+    )
     assert (
         sources_by_code["37"]["title"]
         == "「人生100年時代のフロンティア県・香川」実現計画"
     )
+    assert sources_by_code["37"]["url"].endswith(
+        "/sogokeikakuminaoshi/keikakuminaoshi.html"
+    )
+    assert (
+        sources_by_code["47"]["title"]
+        == "新・沖縄21世紀ビジョン基本計画（沖縄振興計画）"
+    )
+    assert sources_by_code["47"]["url"].startswith(
+        "https://www.pref.okinawa.jp/"
+    )
 
-    assert all(source["title"] != "「未来の東京」戦略" for source in plan_sources)
+    superseded_titles = {
+        "「未来の東京」戦略",
+        "将来ビジョン・大阪",
+        "大阪の再生・成長に向けた新戦略",
+    }
+    assert all(source["title"] not in superseded_titles for source in plan_sources)
     assert all("/basic-plan/choki-plan" not in source["url"] for source in plan_sources)
+    assert all("/shouraivision/" not in source["url"] for source in plan_sources)
 
     for source in plan_sources:
         assert source["url"].startswith("https://")
         assert source["title"].strip()
         assert source["verified_at"] == "2026-07-16"
+
+
+def test_all_wave_one_current_plans_are_confirmed_without_promoting_review_depth():
+    registry = load(COVERAGE_PATH)
+    anchor_codes = set(registry["regional_anchor_codes"])
+    current_plan_codes = set(registry["current_plan_confirmed_codes"])
+    reviewed_codes = set(registry["reviewed_prefecture_codes"])
+
+    assert current_plan_codes == anchor_codes
+    assert reviewed_codes == {"40"}
+    assert current_plan_codes - reviewed_codes == {
+        "01",
+        "04",
+        "13",
+        "23",
+        "27",
+        "34",
+        "37",
+        "47",
+    }
 
 
 def test_only_fukuoka_is_marked_reviewed_until_other_primary_sources_are_checked():
