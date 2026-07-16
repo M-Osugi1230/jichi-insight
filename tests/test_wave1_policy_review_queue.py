@@ -46,10 +46,10 @@ def test_fukuoka_is_the_only_reviewed_reference_and_hokkaido_is_active():
         "indicator_relationships_reviewed"
     )
     assert items["01"]["next_gate"] == "kpi_catalog"
-    assert "指標1〜60" in items["01"]["next_action"]
+    assert "指標1〜65" in items["01"]["next_action"]
     assert "Evidence Packet付き" in items["01"]["next_action"]
-    assert "残る48指標" in items["01"]["next_action"]
-    assert "指標61〜71" in items["01"]["next_action"]
+    assert "残る43指標" in items["01"]["next_action"]
+    assert "指標66〜70" in items["01"]["next_action"]
     assert sum(item["status"] == "reviewed_reference" for item in queue["items"]) == 1
     assert sum(item["status"] == "active_review" for item in queue["items"]) == 1
     assert sum(item["status"] == "queued" for item in queue["items"]) == 7
