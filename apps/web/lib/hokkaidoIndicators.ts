@@ -6,6 +6,7 @@ import foodCatalog from "../../../data/entities/policy/hokkaido_indicator_catalo
 import industryCrossSectorCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_industry_cross_sector.json";
 import manufacturingGrowthCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_manufacturing_growth.json";
 import medicalWelfareCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_medical_welfare.json";
+import safetySecurityCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_safety_security.json";
 import smeCommerceCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_sme_commerce.json";
 import tourismCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_tourism.json";
 import zeroCarbonCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_zero_carbon.json";
@@ -17,6 +18,7 @@ import foodEvidence from "../../../data/entities/policy/hokkaido_indicator_food_
 import industryCrossSectorEvidence from "../../../data/entities/policy/hokkaido_indicator_industry_cross_sector_evidence_packets.json";
 import manufacturingGrowthEvidence from "../../../data/entities/policy/hokkaido_indicator_manufacturing_growth_evidence_packets.json";
 import medicalWelfareEvidence from "../../../data/entities/policy/hokkaido_indicator_medical_welfare_evidence_packets.json";
+import safetySecurityEvidence from "../../../data/entities/policy/hokkaido_indicator_safety_security_evidence_packets.json";
 import smeCommerceEvidence from "../../../data/entities/policy/hokkaido_indicator_sme_commerce_evidence_packets.json";
 import tourismEvidence from "../../../data/entities/policy/hokkaido_indicator_tourism_evidence_packets.json";
 import zeroCarbonEvidence from "../../../data/entities/policy/hokkaido_indicator_zero_carbon_evidence_packets.json";
@@ -90,6 +92,7 @@ const groupDefinitions: Array<{ catalog: CatalogShape; label: string; evidence: 
   { catalog: medicalWelfareCatalog, label: "医療・福祉", evidence: medicalWelfareEvidence },
   { catalog: employmentWorkCatalog, label: "就業・就労環境", evidence: employmentWorkEvidence },
   { catalog: smeCommerceCatalog, label: "中小企業・商業", evidence: smeCommerceEvidence },
+  { catalog: safetySecurityCatalog, label: "安全・安心", evidence: safetySecurityEvidence },
 ];
 
 export const hokkaidoIndicatorGroups: HokkaidoIndicatorGroup[] = groupDefinitions.map(
