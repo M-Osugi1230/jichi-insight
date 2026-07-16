@@ -36,9 +36,9 @@ def test_manifest_schema_and_queue_link():
 def test_manifest_counts_and_boundaries():
     manifest = load(MANIFEST)
     assert manifest["expected_indicator_count"] == 108
-    assert manifest["reviewed_indicator_count"] == 83
-    assert manifest["remaining_indicator_count"] == 25
-    assert manifest["indicator_evidence_packet_count"] == 83
+    assert manifest["reviewed_indicator_count"] == 85
+    assert manifest["remaining_indicator_count"] == 23
+    assert manifest["indicator_evidence_packet_count"] == 85
     assert (
         manifest["reviewed_indicator_count"]
         + manifest["remaining_indicator_count"]
@@ -50,12 +50,12 @@ def test_manifest_counts_and_boundaries():
     )
     assert "掲載行は113" in manifest["count_basis"]
     assert "差分5件" in manifest["count_basis"]
-    assert "指標1〜83" in manifest["count_basis"]
+    assert "指標1〜85" in manifest["count_basis"]
     assert manifest["extraction_status"] == "in_progress"
     assert manifest["active_work_package"] == "indicator_catalog"
 
 
-def test_work_packages_record_thirteen_reviewed_fields():
+def test_work_packages_record_fourteen_reviewed_fields():
     packages = {
         item["id"]: item
         for item in load(MANIFEST)["work_packages"]
@@ -70,10 +70,10 @@ def test_work_packages_record_thirteen_reviewed_fields():
     assert packages["policy_hierarchy"]["status"] == "completed"
     assert packages["indicator_source_index"]["status"] == "completed"
     assert packages["indicator_catalog"]["status"] == "active"
-    assert "指標1〜83" in packages["indicator_catalog"]["deliverable"]
-    assert "指標84〜108" in packages["indicator_catalog"]["deliverable"]
-    assert "指標1〜83" in packages["evidence_packets"]["deliverable"]
-    assert "残る25指標" in packages["evidence_packets"]["deliverable"]
+    assert "指標1〜85" in packages["indicator_catalog"]["deliverable"]
+    assert "指標86〜108" in packages["indicator_catalog"]["deliverable"]
+    assert "指標1〜85" in packages["evidence_packets"]["deliverable"]
+    assert "残る23指標" in packages["evidence_packets"]["deliverable"]
     assert packages["web_publication"]["status"] == "blocked"
 
 
