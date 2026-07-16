@@ -42,26 +42,10 @@ export default function DataQualityPage() {
         </PageIntro>
 
         <section className={styles.summaryGrid} aria-label="データ品質概要">
-          <article className={styles.summaryCard}>
-            <span>公式資料・年度別資料</span>
-            <strong>{snapshot.officialSources}</strong>
-            <p>{snapshot.pilotMunicipalities}自治体の公式入口と個別資料。</p>
-          </article>
-          <article className={styles.summaryCard}>
-            <span>Reviewed財政値</span>
-            <strong>{snapshot.reviewedFiscalValues}</strong>
-            <p>当初予算{snapshot.initialBudgetValues}件、決算{snapshot.settlementValues}件。</p>
-          </article>
-          <article className={styles.summaryCard}>
-            <span>Evidence coverage</span>
-            <strong>{snapshot.evidenceCoveragePercent}%</strong>
-            <p>Reviewed財政値に対応するEvidence Packetの割合。</p>
-          </article>
-          <article className={styles.summaryCard}>
-            <span>公開済み評価</span>
-            <strong>{snapshot.publicEvaluations}</strong>
-            <p>比較条件と成果データが不足するため、まだ評価していません。</p>
-          </article>
+          <article className={styles.summaryCard}><span>公式資料・年度別資料</span><strong>{snapshot.officialSources}</strong><p>{snapshot.pilotMunicipalities}自治体の公式入口と個別資料。</p></article>
+          <article className={styles.summaryCard}><span>Reviewed財政値</span><strong>{snapshot.reviewedFiscalValues}</strong><p>当初予算{snapshot.initialBudgetValues}件、決算{snapshot.settlementValues}件。</p></article>
+          <article className={styles.summaryCard}><span>Evidence coverage</span><strong>{snapshot.evidenceCoveragePercent}%</strong><p>Reviewed財政値に対応するEvidence Packetの割合。</p></article>
+          <article className={styles.summaryCard}><span>公開済み評価</span><strong>{snapshot.publicEvaluations}</strong><p>比較条件と成果データが不足するため、まだ評価していません。</p></article>
         </section>
 
         <section className="contentSection">
@@ -88,7 +72,7 @@ export default function DataQualityPage() {
             <article className={styles.summaryCard}><span>第1波・索引済み計画</span><strong>{snapshot.indexedPolicySourceRecords}</strong><p>現行性は確認済みだが、政策本文・KPI抽出前の8都道府県。</p></article>
             <article className={styles.summaryCard}><span>北海道指標PDF</span><strong>{snapshot.indexedHokkaidoKpiSources}</strong><p>{snapshot.hokkaidoIndicatorSourcePages}ページを資料単位で索引済み。</p></article>
             <article className={styles.summaryCard}><span>Reviewed基準実装</span><strong>{snapshot.waveOnePolicyReviewReferences}</strong><p>全国展開のデータ・Evidence Packet基準として使う都道府県。</p></article>
-            <article className={styles.summaryCard}><span>Reviewed化作業中</span><strong>{snapshot.waveOnePolicyActiveReviews}</strong><p>北海道は資料位置と複数分野関係を完了し、KPI本文を抽出中。</p></article>
+            <article className={styles.summaryCard}><span>Reviewed化作業中</span><strong>{snapshot.waveOnePolicyActiveReviews}</strong><p>北海道は指標1〜12をReviewed化し、残る96指標を抽出中。</p></article>
             <article className={styles.summaryCard}><span>作業待ち</span><strong>{snapshot.waveOnePolicyQueued}</strong><p>資料構造と作業依存関係に基づき順番に着手。</p></article>
           </div>
         </section>
@@ -99,10 +83,15 @@ export default function DataQualityPage() {
           <div className={styles.summaryGrid} aria-label="政策データ品質概要">
             <article className={styles.summaryCard}><span>Reviewed基本方向</span><strong>{snapshot.reviewedPolicyDirections}</strong><p>福岡県4方向と北海道3方向を原文・公式順序で登録。</p></article>
             <article className={styles.summaryCard}><span>北海道Reviewed政策分野</span><strong>{snapshot.reviewedHokkaidoPolicyFields}</strong><p>3基本方向に属する18分野を原文・公式順序で登録。</p></article>
-            <article className={styles.summaryCard}><span>北海道Evidence Packet</span><strong>{snapshot.hokkaidoPolicyEvidencePackets}</strong><p>3基本方向の名称、6分野、計画期間を一次資料と照合。</p></article>
+            <article className={styles.summaryCard}><span>北海道政策体系Evidence</span><strong>{snapshot.hokkaidoPolicyEvidencePackets}</strong><p>3基本方向の名称、6分野、計画期間を一次資料と照合。</p></article>
             <article className={styles.summaryCard}><span>北海道指標位置</span><strong>{snapshot.hokkaidoIndicatorPositions}</strong><p>指標番号1〜108を公式PDFとページへ欠落なく対応。</p></article>
             <article className={styles.summaryCard}><span>北海道複数分野参照</span><strong>{snapshot.hokkaidoIndicatorRelationshipCount}</strong><p>108一意指標と113掲載行の差分を、重複KPIではなく参照として確認済み。</p></article>
-            <article className={styles.summaryCard}><span>北海道指標対象</span><strong>{snapshot.hokkaidoIndicatorTarget}</strong><p>重複を含む掲載行は{snapshot.hokkaidoDuplicateInclusiveIndicatorRows}。値・単位・期間を抽出中。</p></article>
+            <article className={styles.summaryCard}><span>北海道Reviewed指標</span><strong>{snapshot.reviewedHokkaidoIndicators}</strong><p>食分野の指標1〜12。残り{snapshot.remainingHokkaidoIndicators}件は未Reviewed。</p></article>
+            <article className={styles.summaryCard}><span>北海道KPI Evidence</span><strong>{snapshot.hokkaidoIndicatorEvidencePackets}</strong><p>Reviewed指標12件すべてにEvidence Packetを付与。</p></article>
+            <article className={styles.summaryCard}><span>数値目標あり</span><strong>{snapshot.hokkaidoIndicatorsWithTargets}</strong><p>現状・中間・最終の数値と期間を確認済み。</p></article>
+            <article className={styles.summaryCard}><span>目標未設定</span><strong>{snapshot.hokkaidoIndicatorsWithoutTargets}</strong><p>指標3・6・10の「―」を0へ変換せずnullで保持。</p></article>
+            <article className={styles.summaryCard}><span>比較注意あり</span><strong>{snapshot.hokkaidoIndicatorComparabilityWarnings}</strong><p>指標7・9は調査対象変更により過去値を単純比較しません。</p></article>
+            <article className={styles.summaryCard}><span>北海道指標対象</span><strong>{snapshot.hokkaidoIndicatorTarget}</strong><p>重複を含む掲載行は{snapshot.hokkaidoDuplicateInclusiveIndicatorRows}。全件完了まで公開昇格しません。</p></article>
             <article className={styles.summaryCard}><span>Reviewed取組事項</span><strong>{snapshot.reviewedPolicyInitiatives}</strong><p>福岡県公式目次の1番から30番までを原文で登録。</p></article>
             <article className={styles.summaryCard}><span>Reviewed数値目標</span><strong>{snapshot.reviewedPolicyTargets}</strong><p>福岡県取組1から26の基準値・目標値118件を期間単位付きで登録。</p></article>
             <article className={styles.summaryCard}><span>年度実績へ接続済み</span><strong>{snapshot.policyTargetsActualsLinked}</strong><p>個別KPIとの年度実績対応は未実施。</p></article>
@@ -142,10 +131,7 @@ export default function DataQualityPage() {
               <article className={styles.coverageCard} key={municipality.key}>
                 <div className={styles.coverageHeader}>
                   <h3>{municipality.name}</h3>
-                  <StatusBadge
-                    label={municipality.status === "reviewed-data" ? "Reviewed data" : "Indexed only"}
-                    tone={municipality.status === "reviewed-data" ? "verified" : "progress"}
-                  />
+                  <StatusBadge label={municipality.status === "reviewed-data" ? "Reviewed data" : "Indexed only"} tone={municipality.status === "reviewed-data" ? "verified" : "progress"} />
                 </div>
                 <dl className={styles.coverageFacts}><div><dt>公式資料</dt><dd>{municipality.officialSources}件</dd></div><div><dt>Reviewed財政値</dt><dd>{municipality.reviewedFiscalValues}件</dd></div><div><dt>Evidence Packet</dt><dd>{municipality.evidencePackets}件</dd></div><div><dt>評価</dt><dd>{municipality.publicEvaluations}件</dd></div></dl>
               </article>
