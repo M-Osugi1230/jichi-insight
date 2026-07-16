@@ -74,9 +74,9 @@ check_page "/municipalities/" \
   "Reviewed基準実装" \
   "Reviewed化作業中" \
   "指標関係Reviewed・KPI本文抽出中" \
-  "指標1〜45をEvidence Packet付きでReviewed化済み。" \
-  "残る63指標" \
-  "指標46〜52（子ども・子育て）" \
+  "指標1〜52をEvidence Packet付きでReviewed化済み。" \
+  "残る56指標" \
+  "指標53〜60（教育・学び）" \
   "作業待ち" \
   "北海道の108指標から、全国Reviewed化を開始する。" \
   "公式URL候補" \
@@ -91,11 +91,11 @@ check_page "/data-quality/" \
   "47都道府県を共通コードと地域区分で登録。" \
   "公式計画を見つけた件数と、Reviewedに使える件数を分ける。" \
   "北海道指標PDF" \
-  "北海道は指標1〜45をReviewed化し、残る63指標を抽出中。" \
+  "北海道は指標1〜52をReviewed化し、残る56指標を抽出中。" \
   "北海道指標位置" \
   "北海道複数分野参照" \
   "北海道Reviewed指標" \
-  "指標1〜45を一次資料と照合。残り63件は未Reviewed。" \
+  "指標1〜52を一次資料と照合。残り56件は未Reviewed。" \
   "北海道KPI Evidence" \
   "Reviewed指標すべてにEvidence Packetを付与。" \
   "目標設定あり" \

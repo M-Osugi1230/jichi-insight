@@ -1,0 +1,215 @@
+{
+  "id": "hokkaido-indicator-catalog-children-parenting",
+  "municipality_key": "hokkaido-prefecture",
+  "policy_field_id": "policy-field-hokkaido-children-parenting",
+  "source_id": "policy-source-hokkaido-indicators-children-parenting",
+  "source_document_url": "https://www.pref.hokkaido.lg.jp/fs/1/0/6/4/6/3/1/9/_/07%20%E5%AD%90%E3%81%A9%E3%82%82%E3%83%BB%E5%AD%90%E8%82%B2%E3%81%A60708.pdf",
+  "indicator_number_start": 46,
+  "indicator_number_end": 52,
+  "items": [
+    {
+      "id": "policy-indicator-hokkaido-46",
+      "indicator_number": 46,
+      "indicator_name_original": "合計特殊出生率",
+      "policy_direction_id": "policy-direction-hokkaido-opportunity-safety",
+      "policy_field_ids": ["policy-field-hokkaido-children-parenting"],
+      "policy_orientation_original": "子どもを産みたい、育てたいと考える個人の希望がかなう環境づくり",
+      "indicator_explanation_original": "15～49歳までの女性の年齢別出生率を合計した値（暦年実績）",
+      "source_page": 1,
+      "series": [{
+        "label": null,
+        "unit_original": "（単位なし）",
+        "temporal_scope": "calendar_year",
+        "values": [
+          {"role": "current", "period": "2022年", "value": 1.12, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "1.12"},
+          {"role": "intermediate_target", "period": "2027年", "value": null, "status": "conditional", "aggregation_scope": "single_period", "value_text_original": "全国値"},
+          {"role": "final_target", "period": "2032年", "value": null, "status": "conditional", "aggregation_scope": "single_period", "value_text_original": "全国値"}
+        ]
+      }],
+      "target_setting_status": "set",
+      "target_setting_rationale_original": "子どもを生み育てやすい環境の整備を進め、全国下位の状況を脱するため全国値を目指す。",
+      "comparability_note_original": "将来の全国値を固定数値へ変換せず、外部ベンチマークに一致する条件目標として保持する。市町村別5年集計値とは単純比較しない。",
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-hokkaido-47",
+      "indicator_number": 47,
+      "indicator_name_original": "総合周産期母子医療センターの整備圏域数",
+      "policy_direction_id": "policy-direction-hokkaido-opportunity-safety",
+      "policy_field_ids": ["policy-field-hokkaido-children-parenting"],
+      "policy_orientation_original": "子どもを産みたい、育てたいと考える個人の希望がかなう環境づくり",
+      "indicator_explanation_original": "総合周産期母子医療センターに指定する医療機関が整備された第三次医療圏域数（4月1日時点）",
+      "source_page": 2,
+      "series": [{
+        "label": null,
+        "unit_original": "圏域",
+        "temporal_scope": "snapshot",
+        "values": [
+          {"role": "current", "period": "2023年", "value": 4, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "4"},
+          {"role": "intermediate_target", "period": "2028年", "value": 6, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "6"},
+          {"role": "final_target", "period": "2033年", "value": 6, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "6"}
+        ]
+      }],
+      "target_setting_status": "set",
+      "target_setting_rationale_original": "総合周産期母子医療センターを全ての第三次医療圏において早期に整備し、その体制を維持することを目指す。",
+      "comparability_note_original": "道北・オホーツクは認定医療機関を含む公式区分に基づく時点値として保持する。",
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-hokkaido-48",
+      "indicator_number": 48,
+      "indicator_name_original": "地域周産期母子医療センターの整備圏域数",
+      "policy_direction_id": "policy-direction-hokkaido-opportunity-safety",
+      "policy_field_ids": ["policy-field-hokkaido-children-parenting"],
+      "policy_orientation_original": "子どもを産みたい、育てたいと考える個人の希望がかなう環境づくり",
+      "indicator_explanation_original": "地域周産期母子医療センターに認定する医療機関が整備された第二次医療圏域数（4月1日時点）",
+      "source_page": 3,
+      "series": [{
+        "label": null,
+        "unit_original": "圏域",
+        "temporal_scope": "snapshot",
+        "values": [
+          {"role": "current", "period": "2023年", "value": 21, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "21"},
+          {"role": "intermediate_target", "period": "2028年", "value": 21, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "21"},
+          {"role": "final_target", "period": "2033年", "value": 21, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "21"}
+        ]
+      }],
+      "target_setting_status": "set",
+      "target_setting_rationale_original": "地域周産期母子医療センターを全ての第二次医療圏において維持することを目指す。",
+      "comparability_note_original": null,
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-hokkaido-49",
+      "indicator_number": 49,
+      "indicator_name_original": "保育所入所待機児童数",
+      "policy_direction_id": "policy-direction-hokkaido-opportunity-safety",
+      "policy_field_ids": ["policy-field-hokkaido-children-parenting"],
+      "policy_orientation_original": "安心して子育てでき、子どもが等しく健やかに成長できる社会の形成",
+      "indicator_explanation_original": "保育が必要で、保育所等の利用を申し込んでいるものの、利用できていない児童の数（4月1日時点）",
+      "source_page": 4,
+      "series": [{
+        "label": null,
+        "unit_original": "人",
+        "temporal_scope": "snapshot",
+        "values": [
+          {"role": "current", "period": "2023年", "value": 62, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "62"},
+          {"role": "intermediate_target", "period": "2028年", "value": 0, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "0"},
+          {"role": "final_target", "period": "2033年", "value": 0, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "0"}
+        ]
+      }],
+      "target_setting_status": "set",
+      "target_setting_rationale_original": "ニーズに応じた多様な保育サービスの充実を図ることにより、待機児童を0人とすることを目指す。",
+      "comparability_note_original": "公式目標値0は欠損補完ではなく、明示されたゼロ目標として保持する。",
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-hokkaido-50",
+      "indicator_number": 50,
+      "indicator_name_original": "育児休業取得率",
+      "policy_direction_id": "policy-direction-hokkaido-opportunity-safety",
+      "policy_field_ids": ["policy-field-hokkaido-children-parenting", "policy-field-hokkaido-employment-work"],
+      "policy_orientation_original": "安心して子育てでき、子どもが等しく健やかに成長できる社会の形成／安心して働ける就業環境の整備",
+      "indicator_explanation_original": "1歳未満の子どもを養育する労働者等のうち、育児休業を取得した人の割合（7月～翌6月の1年間の実績）",
+      "source_page": 5,
+      "series": [
+        {
+          "label": "男性",
+          "unit_original": "％",
+          "temporal_scope": "other",
+          "values": [
+            {"role": "current", "period": "2023年", "value": 29.4, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "29.4"},
+            {"role": "intermediate_target", "period": "2028年", "value": 71.0, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "71.0"},
+            {"role": "final_target", "period": "2033年", "value": 85.0, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "85.0"}
+          ]
+        },
+        {
+          "label": "女性",
+          "unit_original": "％",
+          "temporal_scope": "other",
+          "values": [
+            {"role": "current", "period": "2023年", "value": 83.5, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "83.5"},
+            {"role": "intermediate_target", "period": "2028年", "value": 90.0, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "90.0"},
+            {"role": "final_target", "period": "2033年", "value": 90.0, "status": "numeric", "operator": "exact", "aggregation_scope": "single_period", "value_text_original": "90.0"}
+          ]
+        }
+      ],
+      "target_setting_status": "set",
+      "target_setting_rationale_original": "男性は国の『こども未来戦略』で示す85.0％を目指し、女性は過去の実績等を勘案して取得水準を維持することを目指す。",
+      "comparability_note_original": "子ども・子育てと就業・就労環境の2政策分野に掲載される一意指標であり、男女を別系列として保持する。",
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-hokkaido-51",
+      "indicator_number": 51,
+      "indicator_name_original": "小児二次救急医療体制の確保された圏域数",
+      "policy_direction_id": "policy-direction-hokkaido-opportunity-safety",
+      "policy_field_ids": ["policy-field-hokkaido-children-parenting"],
+      "policy_orientation_original": "安心して子育てでき、子どもが等しく健やかに成長できる社会の形成",
+      "indicator_explanation_original": "休日又は夜間における小児の重症救急患者に対する医療体制が確保された第二次医療圏域数（4月1日時点）",
+      "source_page": 6,
+      "series": [{
+        "label": null,
+        "unit_original": "圏域",
+        "temporal_scope": "snapshot",
+        "values": [
+          {"role": "current", "period": "2023年", "value": 20, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "20"},
+          {"role": "intermediate_target", "period": "2028年", "value": 21, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "21"},
+          {"role": "final_target", "period": "2033年", "value": 21, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "21"}
+        ]
+      }],
+      "target_setting_status": "set",
+      "target_setting_rationale_original": "小児救急医療支援事業を全ての第二次医療圏域内において早期に実施し、その体制を維持することを目指す。",
+      "comparability_note_original": "現状値は北空知を除く20圏域として公表される時点値。",
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-hokkaido-52",
+      "indicator_number": 52,
+      "indicator_name_original": "里親等委託率",
+      "policy_direction_id": "policy-direction-hokkaido-opportunity-safety",
+      "policy_field_ids": ["policy-field-hokkaido-children-parenting"],
+      "policy_orientation_original": "地域全体で子どもを見守り育てる社会の構築",
+      "indicator_explanation_original": "社会的養護が必要な児童のうち、里親やファミリーホームへ委託した児童の割合（3月末時点）",
+      "source_page": 7,
+      "series": [{
+        "label": null,
+        "unit_original": "％",
+        "temporal_scope": "snapshot",
+        "values": [
+          {"role": "current", "period": "2023年", "value": 36.1, "status": "numeric", "operator": "exact", "aggregation_scope": "snapshot", "value_text_original": "36.1"},
+          {"role": "intermediate_target", "period": "2028年", "value": null, "status": "conditional", "aggregation_scope": "snapshot", "value_text_original": "現状より増加"},
+          {"role": "final_target", "period": "2033年", "value": null, "status": "conditional", "aggregation_scope": "snapshot", "value_text_original": "現状より増加"}
+        ]
+      }],
+      "target_setting_status": "set",
+      "target_setting_rationale_original": "子どもの最善の利益を優先し、全ての子どもが健全に育成されるよう、現状からの増加を目標とする。",
+      "comparability_note_original": "具体的数値を補完せず、2023年現状値から増加する条件目標として保持する。北海道と札幌市の合計値に基づく。",
+      "actual_linkage_status": "not_linked",
+      "evaluation_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    }
+  ],
+  "reviewed_at": "2026-07-16",
+  "review_status": "reviewed",
+  "confidence": "high"
+}
