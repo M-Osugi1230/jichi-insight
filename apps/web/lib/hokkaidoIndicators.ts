@@ -5,6 +5,7 @@ import employmentWorkCatalog from "../../../data/entities/policy/hokkaido_indica
 import foodCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_food.json";
 import globalizationCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_globalization.json";
 import industryCrossSectorCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_industry_cross_sector.json";
+import infrastructureCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_infrastructure.json";
 import manufacturingGrowthCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_manufacturing_growth.json";
 import medicalWelfareCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_medical_welfare.json";
 import regionalDevelopmentCatalog from "../../../data/entities/policy/hokkaido_indicator_catalog_regional_development.json";
@@ -20,6 +21,7 @@ import employmentWorkEvidence from "../../../data/entities/policy/hokkaido_indic
 import foodEvidence from "../../../data/entities/policy/hokkaido_indicator_food_evidence_packets.json";
 import globalizationEvidence from "../../../data/entities/policy/hokkaido_indicator_globalization_evidence_packets.json";
 import industryCrossSectorEvidence from "../../../data/entities/policy/hokkaido_indicator_industry_cross_sector_evidence_packets.json";
+import infrastructureEvidence from "../../../data/entities/policy/hokkaido_indicator_infrastructure_evidence_packets.json";
 import manufacturingGrowthEvidence from "../../../data/entities/policy/hokkaido_indicator_manufacturing_growth_evidence_packets.json";
 import medicalWelfareEvidence from "../../../data/entities/policy/hokkaido_indicator_medical_welfare_evidence_packets.json";
 import regionalDevelopmentEvidence from "../../../data/entities/policy/hokkaido_indicator_regional_development_evidence_packets.json";
@@ -102,6 +104,7 @@ const groupDefinitions: Array<{ catalog: CatalogShape; label: string; evidence: 
   { catalog: regionalDevelopmentCatalog, label: "地域づくり", evidence: regionalDevelopmentEvidence },
   { catalog: globalizationCatalog, label: "グローバル化", evidence: globalizationEvidence },
   { catalog: resilienceCatalog, label: "北海道の強靱化", evidence: resilienceEvidence },
+  { catalog: infrastructureCatalog, label: "社会経済の基盤整備", evidence: infrastructureEvidence },
 ];
 
 export const hokkaidoIndicatorGroups: HokkaidoIndicatorGroup[] = groupDefinitions.map(
