@@ -4,7 +4,7 @@
   "title": "Miyagi indicator source index",
   "type": "object",
   "additionalProperties": false,
-  "required": ["id", "updated_at", "prefecture_code", "municipality_key", "source_id", "source_document_url", "table_title_original", "document_page_start", "document_page_end", "target_number_start", "target_number_end", "unique_target_count", "display_row_count", "composite_target_count", "additional_series_row_count", "counting_boundary", "column_contract", "page_segments", "sections", "composite_targets", "index_status", "review_status", "confidence"],
+  "required": ["id", "updated_at", "prefecture_code", "municipality_key", "source_id", "source_document_url", "table_title_original", "document_page_start", "document_page_end", "target_number_start", "target_number_end", "unique_target_count", "display_row_count", "composite_target_count", "additional_series_row_count", "counting_boundary", "column_contract", "page_segments", "sections", "index_status", "review_status", "confidence"],
   "properties": {
     "id": {"const": "miyagi-indicator-source-index"},
     "updated_at": {"type": "string", "format": "date"},
@@ -25,7 +25,6 @@
     "column_contract": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
     "page_segments": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/pageSegment"}},
     "sections": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/section"}},
-    "composite_targets": {"type": "array", "items": {"$ref": "#/$defs/compositeTarget"}},
     "index_status": {"const": "position_ranges_reviewed"},
     "review_status": {"const": "reviewed"},
     "confidence": {"const": "high"}
@@ -58,15 +57,6 @@
         "row_number_end": {"type": "integer", "minimum": 1},
         "document_page_start": {"type": "integer", "minimum": 1},
         "document_page_end": {"type": "integer", "minimum": 1}
-      }
-    },
-    "compositeTarget": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["target_number", "series_row_count"],
-      "properties": {
-        "target_number": {"type": "integer", "minimum": 1},
-        "series_row_count": {"type": "integer", "minimum": 2}
       }
     }
   }
