@@ -78,8 +78,8 @@
   width: 2.4rem;
   height: 2.4rem;
   border-radius: 999px;
-  background: var(--ink);
-  color: var(--paper);
+  background: var(--accent);
+  color: #fff;
   font-size: 0.82rem;
   font-weight: 800;
 }
@@ -98,7 +98,7 @@
 .policyCard {
   padding: 1.1rem;
   border-radius: 0.8rem;
-  background: var(--surface-subtle);
+  background: var(--surface-muted);
 }
 
 .policyCard h4 {
@@ -125,7 +125,7 @@
 }
 
 .measureList strong {
-  color: var(--ink);
+  color: var(--text);
 }
 
 .parallelGrid {
@@ -137,8 +137,8 @@
 
 .parallelCard {
   padding: 1.2rem;
-  border-left: 0.3rem solid var(--ink);
-  background: var(--surface-subtle);
+  border-left: 0.3rem solid var(--accent);
+  background: var(--surface-muted);
 }
 
 .parallelCard span {
@@ -159,13 +159,17 @@
   margin: 3rem 0;
   padding: 1.5rem;
   border-radius: 1rem;
-  background: var(--ink);
-  color: var(--paper);
+  background: var(--accent);
+  color: #fff;
 }
 
 .boundary p,
 .boundary li {
-  color: color-mix(in srgb, var(--paper) 78%, transparent);
+  color: rgb(255 255 255 / 80%);
+}
+
+.boundary .eyebrow {
+  color: rgb(255 255 255 / 72%);
 }
 
 .boundary ul {
