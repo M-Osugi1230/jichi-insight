@@ -1,6 +1,8 @@
+import indicatorCompositeTargets from "../../../data/catalog/miyagi_indicator_composite_targets.json";
+import indicatorSourceIndex from "../../../data/catalog/miyagi_indicator_source_index.json";
+import sourceInventory from "../../../data/catalog/miyagi_policy_source_inventory.json";
 import hierarchy from "../../../data/entities/policy/miyagi_policy_hierarchy.json";
 import hierarchyEvidence from "../../../data/entities/policy/miyagi_policy_hierarchy_evidence_packets.json";
-import sourceInventory from "../../../data/catalog/miyagi_policy_source_inventory.json";
 
 export type MiyagiMeasure = {
   id: string;
@@ -36,6 +38,8 @@ export const reviewedMiyagiPolicyDirections = hierarchy.directions as MiyagiDire
 export const reviewedMiyagiParallelDomains = hierarchy.parallel_domains as MiyagiParallelDomain[];
 export const miyagiPolicySourceInventory = sourceInventory;
 export const miyagiPolicyHierarchyEvidencePackets = hierarchyEvidence;
+export const miyagiIndicatorSourceIndex = indicatorSourceIndex;
+export const miyagiIndicatorCompositeTargets = indicatorCompositeTargets;
 
 const policies = reviewedMiyagiPolicyDirections.flatMap(
   (direction) => direction.policies,
@@ -50,4 +54,9 @@ export const miyagiPolicyHierarchyStats = {
   evidencePackets: hierarchyEvidence.length,
   inventorySources: sourceInventory.sources.length,
   inventoryRelationships: sourceInventory.relationships.length,
+  indexedTargets: indicatorSourceIndex.unique_target_count,
+  indexedDisplayRows: indicatorSourceIndex.display_row_count,
+  indexedSections: indicatorSourceIndex.sections.length,
+  compositeTargets: indicatorCompositeTargets.target_count,
+  additionalSeriesRows: indicatorCompositeTargets.additional_series_row_count,
 };
