@@ -84,7 +84,7 @@ def test_signature_total_is_cumulative_and_reference_breakdowns_are_excluded():
         for value in signature_values
     )
     assert items[83]["series"][0]["unit_original"] == "万人"
-    assert "単年度署名数" in items[83]["comparability_note_original"]
+    assert "年度別署名数" in items[83]["comparability_note_original"]
     assert "日本人・外国人" in items[80]["comparability_note_original"]
     assert "振興局別・自治体別" in items[81]["comparability_note_original"]
     assert "北海道窓口と市町村窓口" in items[82]["comparability_note_original"]
