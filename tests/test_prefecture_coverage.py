@@ -81,10 +81,20 @@ def test_quality_stages_are_explicit_and_do_not_overstate_coverage():
         "40",
         "47",
     }
+    expected_current_plan_codes = {
+        "01",
+        "04",
+        "13",
+        "23",
+        "34",
+        "37",
+        "40",
+        "47",
+    }
     assert verified_codes == expected_anchor_codes
     assert anchor_codes == expected_anchor_codes
     assert reviewed_codes == {"40"}
-    assert current_plan_codes == {"13"}
+    assert current_plan_codes == expected_current_plan_codes
     assert plan_source_codes == expected_anchor_codes
 
     assert verified_codes <= known_codes
@@ -98,8 +108,8 @@ def test_quality_stages_are_explicit_and_do_not_overstate_coverage():
 
     assert len(known_codes - verified_codes) == 38
     assert len(plan_source_codes) == 9
-    assert len(current_plan_codes) == 1
-    assert len(plan_source_codes - current_plan_codes) == 8
+    assert len(current_plan_codes) == 8
+    assert plan_source_codes - current_plan_codes == {"27"}
     assert len(reviewed_codes) == 1
 
 
@@ -126,6 +136,16 @@ def test_wave_one_plan_sources_preserve_review_depth_and_https_provenance():
         sources_by_code["37"]["title"]
         == "「人生100年時代のフロンティア県・香川」実現計画"
     )
+    assert sources_by_code["37"]["url"].endswith(
+        "/sogokeikakuminaoshi/keikakuminaoshi.html"
+    )
+    assert (
+        sources_by_code["47"]["title"]
+        == "新・沖縄21世紀ビジョン基本計画（沖縄振興計画）"
+    )
+    assert sources_by_code["47"]["url"].startswith(
+        "https://www.pref.okinawa.jp/"
+    )
 
     assert all(source["title"] != "「未来の東京」戦略" for source in plan_sources)
     assert all("/basic-plan/choki-plan" not in source["url"] for source in plan_sources)
@@ -134,6 +154,18 @@ def test_wave_one_plan_sources_preserve_review_depth_and_https_provenance():
         assert source["url"].startswith("https://")
         assert source["title"].strip()
         assert source["verified_at"] == "2026-07-16"
+
+
+def test_osaka_remains_current_plan_unconfirmed():
+    registry = load(COVERAGE_PATH)
+    current_plan_codes = set(registry["current_plan_confirmed_codes"])
+    sources_by_code = {
+        source["prefecture_code"]: source for source in registry["plan_sources"]
+    }
+
+    assert "27" not in current_plan_codes
+    assert sources_by_code["27"]["title"] == "将来ビジョン・大阪"
+    assert sources_by_code["27"]["review_status"] == "indexed"
 
 
 def test_only_fukuoka_is_marked_reviewed_until_other_primary_sources_are_checked():
