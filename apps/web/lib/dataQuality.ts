@@ -12,6 +12,7 @@ import {
 } from "./executives";
 import { fukuokaPrefectureFinance } from "./finance";
 import { fukuokaCityFinance } from "./fukuokaCityFinance";
+import { hokkaidoIndicatorReviewStats } from "./hokkaidoIndicators";
 import { hokkaidoPolicyHierarchyStats } from "./hokkaidoPolicies";
 import { kitakyushuFinance } from "./kitakyushuFinance";
 import { nationwideCoverageStats } from "./nationwideCoverage";
@@ -85,6 +86,13 @@ export const dataQualitySnapshot = {
     hokkaidoIndicatorRelationshipIndex.relationships.length,
   hokkaidoIndicatorRelationshipsComplete:
     hokkaidoIndicatorRelationshipIndex.relationship_status === "completed",
+  reviewedHokkaidoIndicators: hokkaidoIndicatorReviewStats.reviewedIndicators,
+  remainingHokkaidoIndicators: hokkaidoIndicatorReviewStats.remainingIndicators,
+  hokkaidoIndicatorEvidencePackets: hokkaidoIndicatorReviewStats.evidencePackets,
+  hokkaidoIndicatorsWithTargets: hokkaidoIndicatorReviewStats.targetSet,
+  hokkaidoIndicatorsWithoutTargets: hokkaidoIndicatorReviewStats.targetNotSet,
+  hokkaidoIndicatorComparabilityWarnings:
+    hokkaidoIndicatorReviewStats.comparabilityWarnings,
   reviewedPolicySourceRecords: policySourceRecords.filter(
     (source) => source.review_status === "reviewed",
   ).length,
