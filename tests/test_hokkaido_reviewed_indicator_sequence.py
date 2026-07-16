@@ -13,6 +13,7 @@ CATALOG_PATHS = [
     POLICY_DIR / "hokkaido_indicator_catalog_industry_cross_sector.json",
     POLICY_DIR / "hokkaido_indicator_catalog_children_parenting.json",
     POLICY_DIR / "hokkaido_indicator_catalog_education_learning.json",
+    POLICY_DIR / "hokkaido_indicator_catalog_medical_welfare.json",
 ]
 EVIDENCE_PATHS = [
     POLICY_DIR / "hokkaido_indicator_food_evidence_packets.json",
@@ -23,6 +24,7 @@ EVIDENCE_PATHS = [
     POLICY_DIR / "hokkaido_indicator_industry_cross_sector_evidence_packets.json",
     POLICY_DIR / "hokkaido_indicator_children_parenting_evidence_packets.json",
     POLICY_DIR / "hokkaido_indicator_education_learning_evidence_packets.json",
+    POLICY_DIR / "hokkaido_indicator_medical_welfare_evidence_packets.json",
 ]
 
 
@@ -30,7 +32,7 @@ def load(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def test_reviewed_hokkaido_indicators_form_one_sequence_through_60():
+def test_reviewed_hokkaido_indicators_form_one_sequence_through_65():
     indicators = [
         item
         for path in CATALOG_PATHS
@@ -39,8 +41,8 @@ def test_reviewed_hokkaido_indicators_form_one_sequence_through_60():
     numbers = sorted(item["indicator_number"] for item in indicators)
     ids = [item["id"] for item in indicators]
 
-    assert numbers == list(range(1, 61))
-    assert len(ids) == len(set(ids)) == 60
+    assert numbers == list(range(1, 66))
+    assert len(ids) == len(set(ids)) == 65
     assert all(item["review_status"] == "reviewed" for item in indicators)
     assert all(item["actual_linkage_status"] == "not_linked" for item in indicators)
     assert all(item["evaluation_status"] == "not_assessed" for item in indicators)
@@ -59,7 +61,7 @@ def test_every_reviewed_indicator_has_exactly_one_evidence_packet():
     ]
     subject_ids = [packet["subject_id"] for packet in packets]
 
-    assert len(packets) == 60
+    assert len(packets) == 65
     assert len(subject_ids) == len(set(subject_ids))
     assert set(subject_ids) == indicator_ids
 
@@ -69,9 +71,9 @@ def test_manifest_counts_match_reviewed_files():
     indicator_count = sum(len(load(path)["items"]) for path in CATALOG_PATHS)
     evidence_count = sum(len(load(path)) for path in EVIDENCE_PATHS)
 
-    assert manifest["reviewed_indicator_count"] == indicator_count == 60
-    assert manifest["indicator_evidence_packet_count"] == evidence_count == 60
-    assert manifest["remaining_indicator_count"] == 108 - indicator_count == 48
+    assert manifest["reviewed_indicator_count"] == indicator_count == 65
+    assert manifest["indicator_evidence_packet_count"] == evidence_count == 65
+    assert manifest["remaining_indicator_count"] == 108 - indicator_count == 43
 
 
 def test_conditional_targets_remain_non_numeric_and_original():
