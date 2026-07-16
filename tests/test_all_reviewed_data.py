@@ -27,8 +27,14 @@ def source_ids() -> set[str]:
     ids: set[str] = set()
     for path in (ROOT / "data" / "catalog").glob("*.json"):
         value = load_json(path)
-        if isinstance(value, dict) and isinstance(value.get("records"), list):
-            ids.update(record["id"] for record in value["records"])
+        if not isinstance(value, dict) or not isinstance(value.get("records"), list):
+            continue
+        for record in value["records"]:
+            if not isinstance(record, dict):
+                continue
+            record_id = record.get("id")
+            if isinstance(record_id, str):
+                ids.add(record_id)
     return ids
 
 
