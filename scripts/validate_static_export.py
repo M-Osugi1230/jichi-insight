@@ -31,6 +31,7 @@ REQUIRED_FILES = [
     "executives/index.html",
     "methodology/index.html",
     "municipalities/index.html",
+    "municipalities/hokkaido/index.html",
     "municipalities/fukuoka-prefecture/index.html",
     "municipalities/fukuoka-city/index.html",
     "municipalities/kitakyushu-city/index.html",
@@ -142,6 +143,23 @@ def main() -> int:
                     "まだ評価していないこと",
                 ],
                 "Fukuoka Prefecture page",
+            )
+        )
+
+    hokkaido_path = EXPORT_ROOT / "municipalities" / "hokkaido" / "index.html"
+    if hokkaido_path.is_file():
+        failures.extend(
+            require_copy(
+                hokkaido_path.read_text(encoding="utf-8"),
+                [
+                    "北海道の政策指標を、原文と期間から読む。",
+                    "/ 108を部分公開",
+                    "指標名・政策分野から探す",
+                    "比較上の注意あり",
+                    "年度別実績は未接続",
+                    "政策成果の達成率ではなく",
+                ],
+                "Hokkaido policy indicator page",
             )
         )
 

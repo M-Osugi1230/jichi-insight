@@ -15,6 +15,7 @@ const staticRoutes = [
   "/executives/source-requests",
   "/methodology",
   "/municipalities",
+  "/municipalities/hokkaido",
   "/municipalities/fukuoka-prefecture",
   "/municipalities/fukuoka-city",
   "/municipalities/kitakyushu-city",
