@@ -21,6 +21,7 @@ export const metadata: Metadata = {
 const qualityLevels = [
   ["Coverage", "対象・資料の存在を把握", "収録候補の管理"],
   ["Indexed", "公式URL、資料、年度、位置を特定", "公式資料カタログ"],
+  ["Current", "後継計画・改定・有効期間を確認", "現行計画の判定"],
   ["Extracted", "候補値を抽出、未レビュー", "原則として非公開"],
   ["Reviewed", "一次資料と人が照合", "事実表示に利用"],
   ["Verified", "独立した二重確認を完了", "重要評価の主要根拠"],
@@ -35,7 +36,7 @@ export default function DataQualityPage() {
       <div className="pageShell">
         <PageIntro eyebrow="Data quality" title="件数ではなく、確認の深さを公開する。">
           <p>
-            資料を見つけた状態と、値を人が確認した状態と、評価に使える状態は異なります。
+            資料を見つけた状態、現行資料であることを確認した状態、値を人が確認した状態、評価に使える状態は異なります。
             Jichi Insightは、収録件数と品質段階、欠損、更新日を同時に表示します。
           </p>
         </PageIntro>
@@ -65,7 +66,7 @@ export default function DataQualityPage() {
 
         <section className="contentSection">
           <p className="eyebrow">Nationwide coverage readiness</p>
-          <h2>全国登録と、確認済み・Reviewed・公開済みを分ける。</h2>
+          <h2>全国登録、計画入口、現行性、Reviewed、公開済みを分ける。</h2>
           <div className={styles.summaryGrid} aria-label="全国展開の品質概要">
             <article className={styles.summaryCard}>
               <span>全国登録</span>
@@ -81,6 +82,16 @@ export default function DataQualityPage() {
               <span>総合計画索引済み</span>
               <strong>{snapshot.sourceCatalogedPrefectures}</strong>
               <p>計画資料の公式入口を固定した都道府県。</p>
+            </article>
+            <article className={styles.summaryCard}>
+              <span>現行計画確認済み</span>
+              <strong>{snapshot.currentPlanConfirmedPrefectures}</strong>
+              <p>後継計画・改定・有効期間まで確認した都道府県。</p>
+            </article>
+            <article className={styles.summaryCard}>
+              <span>現行性確認待ち</span>
+              <strong>{snapshot.currentPlanUnconfirmedPrefectures}</strong>
+              <p>公式計画入口はあるが、後継計画の確認が未完了。</p>
             </article>
             <article className={styles.summaryCard}>
               <span>Reviewed都道府県</span>
@@ -155,7 +166,7 @@ export default function DataQualityPage() {
           </div>
         </section>
 
-        <section className="contentSection"><p className="eyebrow">Quality ladder</p><h2>公開までの6段階</h2><div className={styles.qualityTableWrap}><table className={styles.qualityTable}><thead><tr><th>段階</th><th>意味</th><th>利用方法</th></tr></thead><tbody>{qualityLevels.map(([level, meaning, use]) => <tr key={level}><td>{level}</td><td>{meaning}</td><td>{use}</td></tr>)}</tbody></table></div></section>
+        <section className="contentSection"><p className="eyebrow">Quality ladder</p><h2>公開までの7段階</h2><div className={styles.qualityTableWrap}><table className={styles.qualityTable}><thead><tr><th>段階</th><th>意味</th><th>利用方法</th></tr></thead><tbody>{qualityLevels.map(([level, meaning, use]) => <tr key={level}><td>{level}</td><td>{meaning}</td><td>{use}</td></tr>)}</tbody></table></div></section>
         <section className="contentSection"><p className="eyebrow">Publication gaps</p><h2>評価を始める前に、まだ必要なもの</h2><ul className={styles.gapList}>{publicationGaps.map((gap) => <li key={gap}>{gap}</li>)}</ul></section>
         <section className="callout callout--dark"><div><p className="eyebrow">Why zero evaluations</p><h2>データ不足を、点数で埋めません。</h2><p>財政値だけでは、政策成果、首長の実行、議会の監視を公平に評価できません。類似団体比較、事業・契約・KPI、公約、議会資料が接続されるまで、評価0件を維持します。</p></div></section>
       </div>
