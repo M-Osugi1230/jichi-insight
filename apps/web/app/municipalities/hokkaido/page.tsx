@@ -62,7 +62,7 @@ export default function HokkaidoPage() {
           <article className={styles.summaryCard}>
             <span>Reviewed分野</span>
             <strong>{hokkaidoIndicatorGroups.length}</strong>
-            <p>食から地域づくりまで。政策体系18分野の一部です。</p>
+            <p>食からグローバル化まで。政策体系18分野の一部です。</p>
           </article>
           <article className={styles.summaryCard}>
             <span>Evidence Packet</span>
@@ -94,7 +94,7 @@ export default function HokkaidoPage() {
             <dl>
               <div><dt>Reviewed</dt><dd>{hokkaidoIndicatorReviewStats.reviewedIndicators}指標</dd></div>
               <div><dt>次工程</dt><dd>{hokkaidoIndicatorReviewStats.remainingIndicators}指標</dd></div>
-              <div><dt>公開日</dt><dd>2026年7月16日</dd></div>
+              <div><dt>更新日</dt><dd>2026年7月17日</dd></div>
             </dl>
             <p>
               この比率は政策成果の達成率ではなく、公式指標を人が照合した作業カバレッジです。
