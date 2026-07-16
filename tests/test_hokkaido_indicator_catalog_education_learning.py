@@ -126,7 +126,8 @@ def test_reference_graph_values_are_not_added_as_target_series():
     assert len(items[59]["series"]) == 3
     assert len(items[60]["series"]) == 1
     assert "参考掲載" in items[59]["comparability_note_original"]
-    assert "総数や成人" in items[60]["comparability_note_original"]
+    assert "刑法犯少年数" in items[60]["comparability_note_original"]
+    assert "成人数" in items[60]["comparability_note_original"]
 
 
 def test_catalog_keeps_actuals_and_evaluations_unlinked():
