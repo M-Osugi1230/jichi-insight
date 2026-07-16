@@ -5,7 +5,7 @@
   "municipality_key": "hokkaido-prefecture",
   "plan_source_ids": ["policy-source-hokkaido-comprehensive-plan"],
   "expected_indicator_count": 108,
-  "count_basis": "北海道総合計画の公式入口が案内する指標個票数。重複を含めると113。",
+  "count_basis": "北海道総合計画の公式入口が案内する一意指標数。重複を含めた政策分野への掲載行は113。",
   "active_work_package": "indicator_source_index",
   "extraction_status": "in_progress",
   "work_packages": [
@@ -18,8 +18,8 @@
     {
       "id": "indicator_source_index",
       "status": "active",
-      "deliverable": "18政策分野の指標個票PDFを起点に、108指標の資料名、ページ、指標番号を索引化する。",
-      "completion_gate": "108件の欠落、重複、番号飛びと、重複込み113件との関係を自動検査する。"
+      "deliverable": "18政策分野の公式指標PDFと108ページを資料単位で登録済み。次に各ページの指標番号と113掲載行の再掲関係を索引化する。",
+      "completion_gate": "108指標の欠落・番号飛びと、重複込み113掲載行の参照関係を自動検査する。"
     },
     {
       "id": "indicator_catalog",
@@ -51,8 +51,8 @@
     "actuals_not_inferred"
   ],
   "open_questions": [
-    "18政策分野のPDF内で、108指標と重複込み113件を識別する公式番号・再掲表記を確認する。",
-    "政策分野と各指標の公式対応関係を全PDFで確認する。",
+    "108PDFページの指標番号をページ順に固定し、1から108の欠落・重複を検査する。",
+    "一意指標108件と政策分野への掲載行113件を結ぶ5件の再掲関係を確認する。",
     "年度実績・進捗評価の公式資料入口を別ソースとして固定する。"
   ]
 }
