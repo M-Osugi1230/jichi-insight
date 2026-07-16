@@ -72,7 +72,7 @@ export default function DataQualityPage() {
             <article className={styles.summaryCard}><span>第1波・索引済み計画</span><strong>{snapshot.indexedPolicySourceRecords}</strong><p>現行性は確認済みだが、政策本文・KPI抽出前の8都道府県。</p></article>
             <article className={styles.summaryCard}><span>北海道指標PDF</span><strong>{snapshot.indexedHokkaidoKpiSources}</strong><p>{snapshot.hokkaidoIndicatorSourcePages}ページを資料単位で索引済み。</p></article>
             <article className={styles.summaryCard}><span>Reviewed基準実装</span><strong>{snapshot.waveOnePolicyReviewReferences}</strong><p>全国展開のデータ・Evidence Packet基準として使う都道府県。</p></article>
-            <article className={styles.summaryCard}><span>Reviewed化作業中</span><strong>{snapshot.waveOnePolicyActiveReviews}</strong><p>北海道は指標1〜29をReviewed化し、残る79指標を抽出中。</p></article>
+            <article className={styles.summaryCard}><span>Reviewed化作業中</span><strong>{snapshot.waveOnePolicyActiveReviews}</strong><p>北海道は指標1〜{snapshot.reviewedHokkaidoIndicators}をReviewed化し、残る{snapshot.remainingHokkaidoIndicators}指標を抽出中。</p></article>
             <article className={styles.summaryCard}><span>作業待ち</span><strong>{snapshot.waveOnePolicyQueued}</strong><p>資料構造と作業依存関係に基づき順番に着手。</p></article>
           </div>
         </section>
@@ -86,11 +86,11 @@ export default function DataQualityPage() {
             <article className={styles.summaryCard}><span>北海道政策体系Evidence</span><strong>{snapshot.hokkaidoPolicyEvidencePackets}</strong><p>3基本方向の名称、6分野、計画期間を一次資料と照合。</p></article>
             <article className={styles.summaryCard}><span>北海道指標位置</span><strong>{snapshot.hokkaidoIndicatorPositions}</strong><p>指標番号1〜108を公式PDFとページへ欠落なく対応。</p></article>
             <article className={styles.summaryCard}><span>北海道複数分野参照</span><strong>{snapshot.hokkaidoIndicatorRelationshipCount}</strong><p>108一意指標と113掲載行の差分を、重複KPIではなく参照として確認済み。</p></article>
-            <article className={styles.summaryCard}><span>北海道Reviewed指標</span><strong>{snapshot.reviewedHokkaidoIndicators}</strong><p>食・観光・ゼロカーボンの指標1〜29。残り{snapshot.remainingHokkaidoIndicators}件は未Reviewed。</p></article>
+            <article className={styles.summaryCard}><span>北海道Reviewed指標</span><strong>{snapshot.reviewedHokkaidoIndicators}</strong><p>指標1〜{snapshot.reviewedHokkaidoIndicators}を一次資料と照合。残り{snapshot.remainingHokkaidoIndicators}件は未Reviewed。</p></article>
             <article className={styles.summaryCard}><span>北海道KPI Evidence</span><strong>{snapshot.hokkaidoIndicatorEvidencePackets}</strong><p>Reviewed指標すべてにEvidence Packetを付与。</p></article>
             <article className={styles.summaryCard}><span>数値目標あり</span><strong>{snapshot.hokkaidoIndicatorsWithTargets}</strong><p>複数系列、減少目標、非単調な原文目標も修正せず保持。</p></article>
-            <article className={styles.summaryCard}><span>目標未設定</span><strong>{snapshot.hokkaidoIndicatorsWithoutTargets}</strong><p>指標3・6・10の「―」を0へ変換せずnullで保持。</p></article>
-            <article className={styles.summaryCard}><span>比較注意あり</span><strong>{snapshot.hokkaidoIndicatorComparabilityWarnings}</strong><p>指標7・9は調査対象変更により過去値を単純比較しません。</p></article>
+            <article className={styles.summaryCard}><span>目標未設定</span><strong>{snapshot.hokkaidoIndicatorsWithoutTargets}</strong><p>「―」を0へ変換せず、nullと原文説明で保持。</p></article>
+            <article className={styles.summaryCard}><span>比較注意あり</span><strong>{snapshot.hokkaidoIndicatorComparabilityWarnings}</strong><p>調査対象変更、別番号、系列差などの注意を個別指標に保持。</p></article>
             <article className={styles.summaryCard}><span>北海道指標対象</span><strong>{snapshot.hokkaidoIndicatorTarget}</strong><p>重複を含む掲載行は{snapshot.hokkaidoDuplicateInclusiveIndicatorRows}。全件完了まで公開昇格しません。</p></article>
             <article className={styles.summaryCard}><span>Reviewed取組事項</span><strong>{snapshot.reviewedPolicyInitiatives}</strong><p>福岡県公式目次の1番から30番までを原文で登録。</p></article>
             <article className={styles.summaryCard}><span>Reviewed数値目標</span><strong>{snapshot.reviewedPolicyTargets}</strong><p>福岡県取組1から26の基準値・目標値118件を期間単位付きで登録。</p></article>

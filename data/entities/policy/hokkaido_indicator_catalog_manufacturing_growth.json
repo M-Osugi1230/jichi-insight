@@ -1,0 +1,50 @@
+{
+  "id": "hokkaido-indicator-catalog-manufacturing-growth",
+  "municipality_key": "hokkaido-prefecture",
+  "policy_field_id": "policy-field-hokkaido-manufacturing-growth",
+  "source_id": "policy-source-hokkaido-indicators-manufacturing-growth",
+  "source_document_url": "https://www.pref.hokkaido.lg.jp/fs/1/0/6/4/6/3/1/7/_/05%20%E3%82%82%E3%81%AE%E3%81%A5%E3%81%8F%E3%82%8A%E3%83%BB%E6%88%90%E9%95%B7%E5%88%86%E9%87%8E0708.pdf",
+  "indicator_number_start": 33,
+  "indicator_number_end": 39,
+  "items": [
+    {
+      "id":"policy-indicator-hokkaido-33","indicator_number":33,"indicator_name_original":"製造業の従業者１人当たり付加価値額","policy_direction_id":"policy-direction-hokkaido-growth","policy_field_ids":["policy-field-hokkaido-manufacturing-growth"],"policy_orientation_original":"本道の優位性を活かした産業振興","indicator_explanation_original":"道内製造業の従業者１人当たりの付加価値額","source_page":1,
+      "series":[{"label":null,"unit_original":"万円","temporal_scope":"calendar_year","values":[{"role":"current","period":"2021年","value":1234,"status":"numeric","operator":"exact","aggregation_scope":"single_period","value_text_original":"1,234"},{"role":"intermediate_target","period":"2027年","value":1350,"status":"numeric","operator":"exact","aggregation_scope":"single_period","value_text_original":"1,350"},{"role":"final_target","period":"2032年","value":1430,"status":"numeric","operator":"exact","aggregation_scope":"single_period","value_text_original":"1,430"}]}],
+      "target_setting_status":"set","target_setting_rationale_original":"本道製造業の生産性向上を図り、従業者１人当たり付加価値額の増加を目指す。","comparability_note_original":"2021年実績は経済構造実態調査による値で、従来統計との調査対象差に留意する。","actual_linkage_status":"not_linked","evaluation_status":"not_assessed","review_status":"reviewed","confidence":"high"
+    },
+    {
+      "id":"policy-indicator-hokkaido-34","indicator_number":34,"indicator_name_original":"製造業の付加価値額","policy_direction_id":"policy-direction-hokkaido-growth","policy_field_ids":["policy-field-hokkaido-manufacturing-growth"],"policy_orientation_original":"本道の優位性を活かした産業振興","indicator_explanation_original":"道内製造業が生み出した付加価値額","source_page":2,
+      "series":[{"label":null,"unit_original":"億円","temporal_scope":"calendar_year","values":[{"role":"current","period":"2021年","value":20268,"status":"numeric","operator":"exact","aggregation_scope":"single_period","value_text_original":"20,268"},{"role":"intermediate_target","period":"2027年","value":20763,"status":"numeric","operator":"exact","aggregation_scope":"single_period","value_text_original":"20,763"},{"role":"final_target","period":"2032年","value":22033,"status":"numeric","operator":"exact","aggregation_scope":"single_period","value_text_original":"22,033"}]}],
+      "target_setting_status":"set","target_setting_rationale_original":"製造業の生産性向上と成長分野への展開を通じて付加価値額の増加を目指す。","comparability_note_original":"2021年実績は経済構造実態調査による値で、従来統計との調査対象差に留意する。","actual_linkage_status":"not_linked","evaluation_status":"not_assessed","review_status":"reviewed","confidence":"high"
+    },
+    {
+      "id":"policy-indicator-hokkaido-35","indicator_number":35,"indicator_name_original":"宇宙産業関連の企業・団体数","policy_direction_id":"policy-direction-hokkaido-growth","policy_field_ids":["policy-field-hokkaido-manufacturing-growth"],"policy_orientation_original":"本道の優位性を活かした産業振興","indicator_explanation_original":"道内の宇宙産業に関連する企業及び団体の数","source_page":3,
+      "series":[{"label":null,"unit_original":"社・団体","temporal_scope":"snapshot","values":[{"role":"current","period":"2022年","value":57,"status":"numeric","operator":"exact","aggregation_scope":"snapshot","value_text_original":"57"},{"role":"intermediate_target","period":"2028年","value":90,"status":"numeric","operator":"exact","aggregation_scope":"snapshot","value_text_original":"90"},{"role":"final_target","period":"2033年","value":115,"status":"numeric","operator":"exact","aggregation_scope":"snapshot","value_text_original":"115"}]}],
+      "target_setting_status":"set","target_setting_rationale_original":"本道の地理的優位性や研究・実証環境を活かし、宇宙産業関連企業・団体の集積を目指す。","comparability_note_original":null,"actual_linkage_status":"not_linked","evaluation_status":"not_assessed","review_status":"reviewed","confidence":"high"
+    },
+    {
+      "id":"policy-indicator-hokkaido-36","indicator_number":36,"indicator_name_original":"ヘルスケア関連産業の市場規模","policy_direction_id":"policy-direction-hokkaido-growth","policy_field_ids":["policy-field-hokkaido-manufacturing-growth"],"policy_orientation_original":"健康長寿産業の振興","indicator_explanation_original":"道内のヘルスケア関連産業の市場規模","source_page":4,
+      "series":[{"label":null,"unit_original":"億円","temporal_scope":"calendar_year","values":[{"role":"current","period":"2021年","value":1256,"status":"numeric","operator":"exact","aggregation_scope":"single_period","value_text_original":"1,256"},{"role":"intermediate_target","period":"2028年","value":1430,"status":"numeric","operator":"exact","aggregation_scope":"single_period","value_text_original":"1,430"},{"role":"final_target","period":"2033年","value":1700,"status":"numeric","operator":"exact","aggregation_scope":"single_period","value_text_original":"1,700"}]}],
+      "target_setting_status":"set","target_setting_rationale_original":"ヘルスケアサービスの創出・展開を促進し、関連産業の市場規模拡大を目指す。","comparability_note_original":null,"actual_linkage_status":"not_linked","evaluation_status":"not_assessed","review_status":"reviewed","confidence":"high"
+    },
+    {
+      "id":"policy-indicator-hokkaido-37","indicator_number":37,"indicator_name_original":"健康経営優良法人認定数","policy_direction_id":"policy-direction-hokkaido-growth","policy_field_ids":["policy-field-hokkaido-manufacturing-growth"],"policy_orientation_original":"健康長寿産業の振興","indicator_explanation_original":"健康経営優良法人認定制度で認定された道内法人の数","source_page":5,
+      "series":[
+        {"label":"大規模法人部門（ホワイト500）","unit_original":"法人","temporal_scope":"snapshot","values":[{"role":"current","period":"2023年","value":8,"status":"numeric","operator":"exact","aggregation_scope":"snapshot","value_text_original":"8"},{"role":"intermediate_target","period":"2028年","value":10,"status":"numeric","operator":"exact","aggregation_scope":"snapshot","value_text_original":"10"},{"role":"final_target","period":"2033年","value":10,"status":"numeric","operator":"exact","aggregation_scope":"snapshot","value_text_original":"10"}]},
+        {"label":"中小規模法人部門（ブライト500）","unit_original":"法人","temporal_scope":"snapshot","values":[{"role":"current","period":"2023年","value":8,"status":"numeric","operator":"exact","aggregation_scope":"snapshot","value_text_original":"8"},{"role":"intermediate_target","period":"2028年","value":16,"status":"numeric","operator":"exact","aggregation_scope":"snapshot","value_text_original":"16"},{"role":"final_target","period":"2033年","value":16,"status":"numeric","operator":"exact","aggregation_scope":"snapshot","value_text_original":"16"}]}
+      ],
+      "target_setting_status":"set","target_setting_rationale_original":"健康経営に取り組む法人の裾野を広げ、上位認定区分に選定される道内法人の増加を目指す。","comparability_note_original":"大規模法人部門と中小規模法人部門を別系列として保持する。","actual_linkage_status":"not_linked","evaluation_status":"not_assessed","review_status":"reviewed","confidence":"high"
+    },
+    {
+      "id":"policy-indicator-hokkaido-38","indicator_number":38,"indicator_name_original":"食品工業の付加価値額","policy_direction_id":"policy-direction-hokkaido-growth","policy_field_ids":["policy-field-hokkaido-manufacturing-growth"],"policy_orientation_original":"新たな成長産業への挑戦","indicator_explanation_original":"道内食品工業の製造品出荷額から原材料使用額等を差し引いた額","source_page":6,
+      "series":[{"label":null,"unit_original":"億円","temporal_scope":"calendar_year","values":[{"role":"current","period":"2021年","value":7303,"status":"numeric","operator":"exact","aggregation_scope":"single_period","value_text_original":"7,303"},{"role":"intermediate_target","period":"2026年","value":7700,"status":"numeric","operator":"exact","aggregation_scope":"single_period","value_text_original":"7,700"},{"role":"final_target","period":"2031年","value":8100,"status":"numeric","operator":"exact","aggregation_scope":"single_period","value_text_original":"8,100"}]}],
+      "target_setting_status":"set","target_setting_rationale_original":"道産食品の高付加価値化を促進し、食品工業の付加価値額を毎年増加させることを目指す。","comparability_note_original":"指標9と同名・同値だが、公式資料では指標38として別番号・別ページに掲載。推測で統合しない。調査対象変更により過去値は単純比較できない。","actual_linkage_status":"not_linked","evaluation_status":"not_assessed","review_status":"reviewed","confidence":"high"
+    },
+    {
+      "id":"policy-indicator-hokkaido-39","indicator_number":39,"indicator_name_original":"省エネルギー・新エネルギー関連機器製造・関連サービス事業所売上高","policy_direction_id":"policy-direction-hokkaido-growth","policy_field_ids":["policy-field-hokkaido-manufacturing-growth"],"policy_orientation_original":"新たな成長産業への挑戦","indicator_explanation_original":"省エネルギー・新エネルギー関連機器製造及び関連サービス事業所の売上高","source_page":7,
+      "series":[{"label":null,"unit_original":"億円","temporal_scope":"calendar_year","values":[{"role":"current","period":"2020年","value":1740,"status":"numeric","operator":"exact","aggregation_scope":"single_period","value_text_original":"1,740"},{"role":"intermediate_target","period":"2027年","value":1547,"status":"numeric","operator":"exact","aggregation_scope":"single_period","value_text_original":"1,547"},{"role":"final_target","period":"2032年","value":1705,"status":"numeric","operator":"exact","aggregation_scope":"single_period","value_text_original":"1,705"}]}],
+      "target_setting_status":"set","target_setting_rationale_original":"関連市場の動向を踏まえ、省エネルギー・新エネルギー関連産業の事業拡大を目指す。","comparability_note_original":"現状1,740、中間1,547、最終1,705という非単調な原文目標を修正せず保持する。","actual_linkage_status":"not_linked","evaluation_status":"not_assessed","review_status":"reviewed","confidence":"high"
+    }
+  ],
+  "reviewed_at":"2026-07-16","review_status":"reviewed","confidence":"high"
+}
