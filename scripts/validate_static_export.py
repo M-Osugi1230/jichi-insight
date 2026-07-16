@@ -84,7 +84,9 @@ def main() -> int:
                 index,
                 [
                     "約束・予算・実行・成果を、",
-                    "公式資料の整備状況を見る",
+                    "全国47都道府県を探す",
+                    "全国版を構築中",
+                    "Reviewed数値目標",
                     "公開済み評価",
                 ],
                 "Home page",
@@ -106,6 +108,23 @@ def main() -> int:
             failures.append(
                 "Sources page does not expose the current source catalog summary."
             )
+
+    municipalities_path = EXPORT_ROOT / "municipalities" / "index.html"
+    if municipalities_path.is_file():
+        failures.extend(
+            require_copy(
+                municipalities_path.read_text(encoding="utf-8"),
+                [
+                    "全国47都道府県を、同じ品質段階で追う。",
+                    "都道府県・計画名から探す",
+                    "公式入口確認済み",
+                    "現行計画確認済み",
+                    "Reviewed公開",
+                    "都道府県を表示",
+                ],
+                "Nationwide coverage page",
+            )
+        )
 
     prefecture_path = (
         EXPORT_ROOT / "municipalities" / "fukuoka-prefecture" / "index.html"
