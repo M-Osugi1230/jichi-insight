@@ -95,9 +95,11 @@ export const nationwidePrefectureCoverage = records.map((record) => {
       ? ("wave_1_regional_anchor" as const)
       : ("wave_2_nationwide_followup" as const),
     publicHref:
-      record.prefecture_code === "40"
-        ? "/municipalities/fukuoka-prefecture"
-        : null,
+      record.prefecture_code === "01"
+        ? "/municipalities/hokkaido"
+        : record.prefecture_code === "40"
+          ? "/municipalities/fukuoka-prefecture"
+          : null,
   };
 });
 

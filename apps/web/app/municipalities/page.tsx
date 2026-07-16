@@ -7,6 +7,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { StatusBadge } from "@/components/StatusBadge";
 import { municipalityMeta, sourcesForMunicipality, type MunicipalityKey } from "@/lib/catalog";
+import { hokkaidoIndicatorReviewStats } from "@/lib/hokkaidoIndicators";
 import {
   nationwideCoverageStats,
   nationwidePrefectureCoverage,
@@ -103,9 +104,9 @@ export default function MunicipalitiesPage() {
 
         <section className="contentSection">
           <p className="eyebrow">Wave 1 review queue</p>
-          <h2>Reviewed化は、北海道から始める。</h2>
+          <h2>北海道では、指標1〜{hokkaidoIndicatorReviewStats.reviewedIndicators}を部分公開。</h2>
           <p className={styles.sectionLead}>
-            福岡県を基準実装とし、次は公式入口に108指標の個票がまとまる北海道で、政策体系・KPI・Evidence Packetの全国展開モデルを検証します。順位は評価点ではなく、資料構造と作業依存関係に基づく運用順です。
+            福岡県を基準実装とし、北海道では108指標のうち{hokkaidoIndicatorReviewStats.reviewedIndicators}指標をReviewed化しました。残る{hokkaidoIndicatorReviewStats.remainingIndicators}指標を進めながら、同じEvidence Packet方式を次の地域拠点へ展開します。順位は評価点ではなく、資料構造と作業依存関係に基づく運用順です。
           </p>
 
           <div className={styles.queueSummary} aria-label="第1波Reviewed化の進捗">
@@ -191,11 +192,14 @@ export default function MunicipalitiesPage() {
         <section className="callout callout--dark">
           <div>
             <p className="eyebrow">Next nationwide wave</p>
-            <h2>北海道の108指標から、全国Reviewed化を開始する。</h2>
+            <h2>北海道{hokkaidoIndicatorReviewStats.reviewedIndicators}指標を公開。次は残り{hokkaidoIndicatorReviewStats.remainingIndicators}指標と他地域へ。</h2>
             <p>
-              第1波9拠点すべてで、公式ホームページ、計画入口、現行計画を確認しました。北海道で非福岡型の抽出・Evidence Packetを確立し、その方法を宮城県、愛知県、香川県へ展開します。
+              第1波9拠点すべてで、公式ホームページ、計画入口、現行計画を確認しました。北海道で確立した非福岡型の抽出・Evidence Packetを、宮城県、愛知県、香川県へ展開します。
             </p>
           </div>
+          <Link className="primaryAction" href="/municipalities/hokkaido">
+            北海道の{hokkaidoIndicatorReviewStats.reviewedIndicators}指標を見る
+          </Link>
         </section>
       </div>
       <SiteFooter />

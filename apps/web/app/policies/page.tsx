@@ -6,6 +6,10 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { StatusBadge } from "@/components/StatusBadge";
 import {
+  hokkaidoIndicatorGroups,
+  hokkaidoIndicatorReviewStats,
+} from "@/lib/hokkaidoIndicators";
+import {
   evidenceForPolicyDirection,
   fukuokaPolicyDirections,
   fukuokaPolicyInitiativeCatalog,
@@ -21,7 +25,7 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
   title: "政策体系",
   description:
-    "福岡県総合計画の4つの基本方向と30の取組事項を、原文・掲載順・計画ページ・数値目標・未接続範囲とともに確認できます。",
+    "福岡県と北海道の総合計画・政策指標を、原文・掲載順・数値目標・未接続範囲とともに確認できます。",
 };
 
 const targetDetails = Object.fromEntries(
@@ -41,10 +45,31 @@ export default function PoliciesPage() {
       <div className="pageShell">
         <PageIntro eyebrow="Policy registry" title="政策評価の前に、計画が何を目指すかを構造化する。">
           <p>
-            福岡県総合計画の4つの基本方向と30の取組事項を、公式目次の原文・掲載順で登録しています。
-            取組1から26は数値目標まで構造化しましたが、年度実績、予算、事業、公約との接続や達成度評価は行っていません。
+            福岡県総合計画の4つの基本方向・30の取組事項と、北海道総合計画の政策体系・Reviewed指標1〜{hokkaidoIndicatorReviewStats.reviewedIndicators}を公開しています。
+            数値目標は構造化しましたが、年度実績、予算、事業、公約との接続や達成度評価は行っていません。
           </p>
         </PageIntro>
+
+        <section className={styles.prefectureIndex} aria-labelledby="prefecture-policy-title">
+          <div>
+            <p className="eyebrow">Prefecture policy views</p>
+            <h2 id="prefecture-policy-title">自治体ごとに、確認できた深さを分ける。</h2>
+          </div>
+          <div className={styles.prefectureCards}>
+            <article>
+              <div><span>北海道</span><StatusBadge label="部分公開" tone="progress" /></div>
+              <strong>{hokkaidoIndicatorReviewStats.reviewedIndicators} / 108指標</strong>
+              <p>{hokkaidoIndicatorGroups.length}分野・指標1〜{hokkaidoIndicatorReviewStats.reviewedIndicators}をReviewed。残り{hokkaidoIndicatorReviewStats.remainingIndicators}指標と年度実績は未接続です。</p>
+              <Link href="/municipalities/hokkaido">北海道の政策指標を見る</Link>
+            </article>
+            <article>
+              <div><span>福岡県</span><StatusBadge label="Reviewed" tone="verified" /></div>
+              <strong>{allPolicyTargetStats.reviewedTargets}数値目標</strong>
+              <p>4方向・30取組を登録し、取組1〜26の数値目標を公開しています。</p>
+              <a href="#fukuoka-policy">福岡県の政策体系を見る</a>
+            </article>
+          </div>
+        </section>
 
         <section className={styles.summaryGrid} aria-label="政策体系の整備状況">
           <article className={styles.summaryCard}><span>Reviewed基本方向</span><strong>{policyDirectionStats.reviewedDirections}</strong><p>福岡県総合計画の公式掲載順で登録。</p></article>
@@ -54,7 +79,7 @@ export default function PoliciesPage() {
           <article className={styles.summaryCard}><span>政策評価済み</span><strong>{policyInitiativeStats.assessed}</strong><p>計画文と目標値だけでは成果を評価しません。</p></article>
         </section>
 
-        <section className="contentSection">
+        <section className="contentSection" id="fukuoka-policy">
           <p className="eyebrow">Fukuoka Prefecture 2022–2026</p>
           <h2>4つの基本方向と30の取組事項</h2>
           <p className={styles.sectionLead}>

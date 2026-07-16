@@ -1,0 +1,49 @@
+.introLinks { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 18px; }
+.introLinks a { color: #173f35; font-size: .82rem; font-weight: 800; text-underline-offset: 4px; }
+.summaryGrid { display: grid; gap: 14px; grid-template-columns: repeat(4, 1fr); margin-bottom: 88px; }
+.summaryCard { background: #fff; border: 1px solid #d6d5ce; border-radius: 20px; padding: 24px; }
+.summaryCard span { color: #676960; display: block; font-size: .74rem; }
+.summaryCard strong { display: block; font-size: clamp(2rem, 4vw, 3.25rem); letter-spacing: -.06em; margin: 28px 0 8px; }
+.summaryCard p { border-top: 1px solid #d6d5ce; color: #676960; font-size: .78rem; line-height: 1.7; margin: 18px 0 0; padding-top: 14px; }
+.progressSection { border-bottom: 1px solid #d6d5ce; border-top: 1px solid #d6d5ce; display: grid; gap: 64px; grid-template-columns: .9fr 1.1fr; padding: 78px 0; }
+.progressSection h2 { font-size: clamp(1.9rem, 4vw, 3.25rem); }
+.progressTrack { background: #dcdad2; border-radius: 999px; height: 12px; overflow: hidden; }
+.progressTrack span { background: #173f35; display: block; height: 100%; }
+.progressDetail dl { margin: 24px 0 0; }
+.progressDetail dl div { align-items: baseline; border-top: 1px solid #d6d5ce; display: flex; justify-content: space-between; padding: 12px 0; }
+.progressDetail dt { color: #676960; font-size: .72rem; }
+.progressDetail dd { font-size: .82rem; font-weight: 800; margin: 0; }
+.progressDetail > p, .sectionLead, .hierarchyNote { color: #676960; font-size: .82rem; line-height: 1.8; }
+.sectionLead { max-width: 840px; }
+.directionGrid { display: grid; gap: 14px; grid-template-columns: repeat(3, 1fr); margin-top: 38px; }
+.directionCard { background: #fff; border: 1px solid #d6d5ce; border-radius: 20px; padding: 22px; }
+.directionHeader { align-items: flex-start; display: flex; justify-content: space-between; }
+.directionHeader > span { color: #173f35; font-size: 1.25rem; font-weight: 850; }
+.directionCard h3 { font-size: 1.18rem; line-height: 1.5; margin: 24px 0 8px; }
+.directionCard > p { color: #676960; font-size: .72rem; }
+.directionCard ul { list-style: none; margin: 20px 0 0; padding: 0; }
+.directionCard li { align-items: baseline; border-top: 1px solid #e1e0da; display: flex; gap: 10px; justify-content: space-between; padding: 10px 0; }
+.directionCard li span { font-size: .76rem; line-height: 1.5; }
+.directionCard li small { color: #999a94; flex: 0 0 auto; font-size: .62rem; }
+.directionCard .reviewedField span { font-weight: 800; }
+.directionCard .reviewedField small { color: #173f35; font-weight: 800; }
+.hierarchyNote { border-top: 1px solid #d6d5ce; margin-top: 24px; padding-top: 16px; }
+.boundary { display: grid; gap: 48px; grid-template-columns: .8fr 1.2fr; }
+.boundary ul { list-style: none; margin: 0; padding: 0; }
+.boundary li { border-top: 1px solid #d6d5ce; padding: 15px 0; }
+.boundary li::before { color: #765b12; content: "未接続"; display: inline-block; font-size: .64rem; font-weight: 750; margin-right: 12px; }
+.bottomNav { display: flex; flex-wrap: wrap; gap: 20px; padding: 36px 0 10px; }
+.bottomNav a { color: #173f35; font-size: .84rem; font-weight: 750; text-underline-offset: 4px; }
+
+@media (max-width: 1000px) {
+  .summaryGrid { grid-template-columns: repeat(2, 1fr); }
+  .directionGrid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 760px) {
+  .progressSection, .boundary { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 560px) {
+  .summaryGrid { grid-template-columns: 1fr; }
+}
