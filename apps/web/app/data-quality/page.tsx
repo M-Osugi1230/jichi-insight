@@ -76,10 +76,13 @@ export default function DataQualityPage() {
             <article className={styles.summaryCard}><span>宮城県政策体系</span><strong>{miyagiPolicyReviewStats.directions}・{miyagiPolicyReviewStats.policies}・{miyagiPolicyReviewStats.measures}</strong><p>基本方向・政策・取組。復興取組{miyagiPolicyReviewStats.recoveryAreas}分野は別系統。</p></article>
             <article className={styles.summaryCard}><span>宮城県KPI位置</span><strong>{miyagiPolicyReviewStats.targetGroups}</strong><p>目標グループ。個別系列は{miyagiPolicyReviewStats.indicatorSeries}件、掲載{miyagiPolicyReviewStats.sourcePages}ページ。</p></article>
             <article className={styles.summaryCard}><span>宮城県複数系列</span><strong>{miyagiPolicyReviewStats.multiSeriesGroups}</strong><p>追加系列{miyagiPolicyReviewStats.additionalSeries}件。位置は確認済み、本文はReviewed化中。</p></article>
-            <article className={styles.summaryCard}><span>宮城県Reviewed KPI</span><strong>{miyagiPolicyReviewStats.reviewedTargetGroups}</strong><p>柱1・取組1〜3の系列{miyagiPolicyReviewStats.reviewedIndicatorSeries}件を一次資料と照合。</p></article>
-            <article className={styles.summaryCard}><span>宮城県KPI Evidence</span><strong>{miyagiPolicyReviewStats.kpiEvidencePackets}</strong><p>Reviewed済み23グループすべてにEvidence Packetを付与。</p></article>
+            <article className={styles.summaryCard}><span>宮城県Reviewed KPI</span><strong>{miyagiPolicyReviewStats.reviewedTargetGroups}</strong><p>柱1・取組1〜5の系列{miyagiPolicyReviewStats.reviewedIndicatorSeries}件を一次資料と照合。</p></article>
+            <article className={styles.summaryCard}><span>宮城県KPI Evidence</span><strong>{miyagiPolicyReviewStats.kpiEvidencePackets}</strong><p>Reviewed済み{miyagiPolicyReviewStats.reviewedTargetGroups}グループすべてにEvidence Packetを付与。</p></article>
             <article className={styles.summaryCard}><span>宮城県・後期末未設定</span><strong>{miyagiPolicyReviewStats.lateTargetsNotSet}</strong><p>取組KPIの「－」を0へ変換せず、後期末目標未設定として保持。</p></article>
             <article className={styles.summaryCard}><span>宮城県・累計KPI</span><strong>{miyagiPolicyReviewStats.cumulativeGroups}</strong><p>［累計］表記を単年度値へ変換しない。</p></article>
+            <article className={styles.summaryCard}><span>宮城県・Reviewed複数系列</span><strong>{miyagiPolicyReviewStats.reviewedMultiSeriesGroups}</strong><p>農業・水産業・林業などの系列を単一値へ圧縮しない。</p></article>
+            <article className={styles.summaryCard}><span>宮城県・単位記載なし</span><strong>{miyagiPolicyReviewStats.missingUnitSeries}</strong><p>公式表にない単位を推測で補完しない。</p></article>
+            <article className={styles.summaryCard}><span>宮城県・原文数値表記</span><strong>{miyagiPolicyReviewStats.originalUnformattedTargets}</strong><p>21400、4126など原表の桁区切りなし表記を保持。</p></article>
             <article className={styles.summaryCard}><span>宮城県・負値</span><strong>{miyagiPolicyReviewStats.negativeValues}</strong><p>経済成長率の負値を欠損・エラーへ変換しない。</p></article>
             <article className={styles.summaryCard}><span>宮城県・非単調目標</span><strong>{miyagiPolicyReviewStats.decliningMidtermGroups}</strong><p>現況値より低い中期末目標も公式値のまま保持。</p></article>
             <article className={styles.summaryCard}><span>Reviewed基準実装</span><strong>{snapshot.waveOnePolicyReviewReferences}</strong><p>福岡県と北海道を全国展開のデータ・Evidence Packet基準として使用。</p></article>
