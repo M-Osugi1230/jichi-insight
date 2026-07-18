@@ -47,13 +47,13 @@ def test_reviewed_references_and_active_miyagi_progress():
     assert miyagi["status"] == "active_review"
     assert miyagi["source_inventory_status"] == "indicator_positions_reviewed"
     assert miyagi["next_gate"] == "kpi_catalog"
-    assert "目標グループ1〜38・系列1〜40" in miyagi["next_action"]
-    assert "目標グループ39〜40・系列41〜43" in miyagi["next_action"]
-    assert "15グループ・17系列" in miyagi["priority_basis"]
-    assert "農業・水産業・林業3系列" in miyagi["priority_basis"]
-    assert "後期末目標未設定15グループ" in miyagi["priority_basis"]
-    assert "中期末目標3件" in miyagi["priority_basis"]
-    assert "耕地利用率の単位確認" in miyagi["priority_basis"]
+    assert "目標グループ1〜40・系列1〜43" in miyagi["next_action"]
+    assert "目標グループ41〜45・系列44〜49" in miyagi["next_action"]
+    assert "柱2の2グループ・3系列" in miyagi["priority_basis"]
+    assert "合計特殊出生率の単位未表記" in miyagi["priority_basis"]
+    assert "小学6年生・中学3年生の2系列" in miyagi["priority_basis"]
+    assert "令和7年度現況値" in miyagi["priority_basis"]
+    assert "現況値より低い中期末目標" in miyagi["priority_basis"]
 
     assert {
         status: sum(item["status"] == status for item in queue["items"])
