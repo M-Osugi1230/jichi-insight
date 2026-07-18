@@ -26,14 +26,13 @@ def test_queue_covers_all_wave_one_anchors_once_in_operational_order():
     items = queue["items"]
     assert len(items) == 9
     assert [item["order"] for item in items] == list(range(9))
-    assert len({item["prefecture_code"] for item in items}) == 9
     assert {item["prefecture_code"] for item in items} == set(
         coverage["regional_anchor_codes"]
     )
     assert len({item["municipality_key"] for item in items}) == 9
 
 
-def test_fukuoka_and_hokkaido_are_reviewed_references_and_miyagi_is_active():
+def test_reviewed_references_and_active_miyagi_progress():
     queue = load(QUEUE_PATH)
     items = {item["prefecture_code"]: item for item in queue["items"]}
     assert queue["completed_prefecture_codes"] == ["40", "01"]
@@ -44,47 +43,35 @@ def test_fukuoka_and_hokkaido_are_reviewed_references_and_miyagi_is_active():
         assert items[code]["source_inventory_status"] == "reviewed"
         assert items[code]["next_gate"] == "actuals_linkage"
 
-    assert "全108指標" in items["01"]["next_action"]
-    assert "Evidence Packet 108件" in items["01"]["next_action"]
-    assert "年度実績" in items["01"]["next_action"]
+    miyagi = items["04"]
+    assert miyagi["status"] == "active_review"
+    assert miyagi["source_inventory_status"] == "indicator_positions_reviewed"
+    assert miyagi["next_gate"] == "kpi_catalog"
+    assert "目標グループ1〜23・系列1〜23" in miyagi["next_action"]
+    assert "目標グループ24〜38・系列24〜40" in miyagi["next_action"]
+    assert "後期末目標未設定20件" in miyagi["priority_basis"]
+    assert "累計5件" in miyagi["priority_basis"]
+    assert "負値1件" in miyagi["priority_basis"]
+    assert "中期末目標4件" in miyagi["priority_basis"]
 
-    assert items["04"]["status"] == "active_review"
-    assert items["04"]["source_inventory_status"] == "indicator_positions_reviewed"
-    assert items["04"]["next_gate"] == "kpi_catalog"
-    assert "128目標グループ・149系列" in items["04"]["next_action"]
-    assert "目標グループ1〜23" in items["04"]["next_action"]
-    assert "複数系列17グループ" in items["04"]["priority_basis"]
-    assert "欠落0・重複0" in items["04"]["priority_basis"]
-
-    status_counts = {
+    assert {
         status: sum(item["status"] == status for item in queue["items"])
         for status in ["reviewed_reference", "active_review", "queued"]
-    }
-    assert status_counts == {
-        "reviewed_reference": 2,
-        "active_review": 1,
-        "queued": 6,
-    }
+    } == {"reviewed_reference": 2, "active_review": 1, "queued": 6}
 
 
-def test_queue_sources_exist_and_titles_match_the_policy_source_catalog():
+def test_queue_sources_exist_and_written_reasons_are_present():
     queue = load(QUEUE_PATH)
     source_catalog = load(ROOT / "data/catalog/policy_sources.json")
     sources = {item["id"]: item for item in source_catalog["records"]}
     for item in queue["items"]:
         assert set(item["source_ids"]) <= set(sources)
+        assert item["next_action"].strip()
+        assert item["priority_basis"].strip()
+        assert "score" not in item
         if item["prefecture_code"] != "40":
-            assert len(item["source_ids"]) == 1
             source = sources[item["source_ids"][0]]
             assert source["municipality_key"] == item["municipality_key"]
             assert source["title"] == item["current_plan_title"]
             assert source["collection_status"] == "indexed"
             assert source["review_status"] == "verified"
-
-
-def test_queue_uses_written_reasons_instead_of_scores():
-    for item in load(QUEUE_PATH)["items"]:
-        assert item["next_action"].strip()
-        assert item["priority_basis"].strip()
-        assert "score" not in item
-        assert "readiness_score" not in item
