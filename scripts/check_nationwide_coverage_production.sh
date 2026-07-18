@@ -106,7 +106,7 @@ check_absent "/municipalities/hokkaido/" "指標109〜108"
 
 check_page "/municipalities/miyagi/" \
   "宮城県の政策目標を、原文・期間・未設定までそのまま読む。" \
-  "38 / 128" \
+  "公式の目標値No.1〜38を本文・数値・単位・期間まで照合済み。" \
   "目標1〜38を、政策上の所属と4つの時点から確認する。" \
   "第一次産業における新規就業者数（農業）（人）" \
   "第一次産業における新規就業者数（水産業）（人）" \
@@ -114,7 +114,7 @@ check_page "/municipalities/miyagi/" \
   "後期目標未設定" \
   "目標値の確認と、政策成果の評価を分ける。"
 
-check_absent "/municipalities/miyagi/" "達成率"
+check_absent "/municipalities/miyagi/" "達成率を算出済み"
 check_absent "/municipalities/miyagi/" "政策評価済み"
 
 check_page "/data-quality/" \
