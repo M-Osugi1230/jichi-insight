@@ -106,7 +106,7 @@ export default function MunicipalitiesPage() {
           <p className="eyebrow">Wave 1 review queue</p>
           <h2>北海道{hokkaidoIndicatorReviewStats.reviewedIndicators}指標を全件Reviewed化。次は宮城県。</h2>
           <p className={styles.sectionLead}>
-            福岡県を基準実装とし、北海道では18政策分野・108指標・Evidence Packet 108件のReviewed工程を完了しました。年度実績との接続は別工程として残し、同じ品質ゲートで宮城県の実施計画・数値目標・行政評価資料を固定します。順位は評価点ではなく、資料構造と作業依存関係に基づく運用順です。
+            福岡県を基準実装とし、北海道では18政策分野・108指標・Evidence Packet 108件のReviewed工程を完了しました。宮城県では128目標グループ・149系列の位置を確認し、先頭23グループ・23系列をReviewed化しました。年度実績との接続は別工程として残し、順位は評価点ではなく資料構造と作業依存関係に基づく運用順です。
           </p>
 
           <div className={styles.queueSummary} aria-label="第1波Reviewed化の進捗">
