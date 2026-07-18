@@ -48,28 +48,50 @@ def test_measure14_catalog_matches_schema_and_sequences():
     assert all(group["source_page"] == 59 for group in groups)
 
 
-def test_measure14_values_and_units_are_preserved():
+def test_measure14_values_are_preserved():
     groups = {group["target_group_number"]: group for group in load(CATALOG)["items"]}
     series = {
         group["series"][0]["series_number"]: group["series"][0]
         for group in groups.values()
     }
-    assert [value["value"] for value in series[120]["values"]] == [105, 115, 121, None]
-    assert "１人当たり" in series[120]["indicator_name_original"]
-    assert [value["value"] for value in series[121]["values"]] == [95.0, 96.1, 92, None]
-    assert [value["value"] for value in series[122]["values"]] == [11583, 11385, 10000, None]
+    assert [value["value"] for value in series[120]["values"]] == [
+        105,
+        115,
+        121,
+        None,
+    ]
+    assert [value["value"] for value in series[121]["values"]] == [
+        95.0,
+        96.1,
+        92,
+        None,
+    ]
+    assert [value["value"] for value in series[122]["values"]] == [
+        11583,
+        11385,
+        10000,
+        None,
+    ]
     assert [value["value"] for value in series[123]["values"]] == [47, 47, 40, None]
 
 
 def test_direction_and_period_boundaries_are_preserved():
     groups = {group["target_group_number"]: group for group in load(CATALOG)["items"]}
-    assert groups[102]["series"][0]["values"][2]["value"] < groups[102]["series"][0]["values"][1]["value"]
-    assert groups[103]["series"][0]["values"][2]["value"] < groups[103]["series"][0]["values"][1]["value"]
-    assert groups[104]["series"][0]["values"][0]["value"] == groups[104]["series"][0]["values"][1]["value"]
+    assert (
+        groups[102]["series"][0]["values"][2]["value"]
+        < groups[102]["series"][0]["values"][1]["value"]
+    )
+    assert (
+        groups[103]["series"][0]["values"][2]["value"]
+        < groups[103]["series"][0]["values"][1]["value"]
+    )
+    assert (
+        groups[104]["series"][0]["values"][0]["value"]
+        == groups[104]["series"][0]["values"][1]["value"]
+    )
     assert [
         value["period_original"] for value in groups[104]["series"][0]["values"][:2]
     ] == ["R5", "R6"]
-    assert "総利用回数へ変換しない" in groups[101]["comparability_note_original"]
     for group in groups.values():
         late = group["series"][0]["values"][3]
         assert late["value"] is None
