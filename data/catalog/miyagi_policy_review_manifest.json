@@ -43,7 +43,7 @@
     {
       "id": "kpi_catalog",
       "status": "active",
-      "deliverable": "128目標グループ・149系列を公式掲載順にEvidence Packet付きでReviewed化する。",
+      "deliverable": "128目標グループ・149系列を公式掲載順にEvidence Packet付きでReviewed化する。目標グループ1〜23はReviewed化済み。",
       "completion_gate": "指標名、初期値、現況値、中期末目標、後期末目標、単位、時点、複数系列、目標未設定を一次資料と照合する。"
     },
     {
@@ -54,9 +54,9 @@
     },
     {
       "id": "web_publication",
-      "status": "blocked",
-      "deliverable": "宮城県の政策体系・KPI・評価ページを公開する。",
-      "completion_gate": "KPI全件、Evidence Packet、スキーマ、全テスト、Webビルド、静的出力、公開後Smokeを通過する。"
+      "status": "active",
+      "deliverable": "政策体系とReviewed済みKPIを段階公開し、未Reviewed範囲と未接続の実績・評価を明示する。",
+      "completion_gate": "KPI全件、Evidence Packet、スキーマ、全テスト、Webビルド、静的出力、公開後Smokeを通過すると宮城県ページを完全公開へ昇格する。"
     }
   ],
   "quality_requirements": [
@@ -70,8 +70,8 @@
     "actuals_not_inferred"
   ],
   "open_questions": [
-    "149系列の指標名・値・単位・時点を公式掲載順にReviewed化する。",
-    "後期末目標がハイフンの取組KPIを目標未設定として保持する。",
+    "149系列のうち指標No.1〜23をReviewed化済み。残る系列の指標名・値・単位・時点を公式掲載順にReviewed化する。",
+    "次は目標グループ24〜38（取組4〜5）をReviewed化する。",
     "令和8年度評価原案の確定版公開後に版差分を履歴化する。"
   ]
 }
