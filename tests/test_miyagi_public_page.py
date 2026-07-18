@@ -12,27 +12,30 @@ def read(path: Path) -> str:
     return path.read_text(encoding="utf-8")
 
 
-def test_miyagi_page_exposes_reviewed_targets_without_assessment_inference():
+def test_miyagi_page_copy_and_boundaries():
     page = read(PAGE)
     assert STYLES.is_file()
-    assert "宮城県の政策目標を、原文・期間・未設定までそのまま読む。" in page
-    assert "成果の達成率ではなく" in page
-    assert "柱1と取組1〜5" in page
-    assert "目標1〜38を、政策上の所属と4つの時点から確認する。" in page
-    assert "次は柱2の目標39〜40" in page
-    assert "累計値。単年度値ではありません。" in page
-    assert "複数系列・累計範囲を保ちます" in page
-    assert "目標値の確認と、政策成果の評価を分ける。" in page
-    assert "評価原案と確定評価の版差分" in page
+    for text in [
+        "宮城県の政策目標を、原文・期間・未設定までそのまま読む。",
+        "成果の達成率ではなく",
+        "柱1〜2と取組1〜7",
+        "次は目標53〜68",
+        "累計値。単年度値ではありません。",
+        "目標値の確認と、政策成果の評価を分ける。",
+        "評価原案と確定評価の版差分",
+    ]:
+        assert text in page
+    assert "direction.display_order <= 2" in page
 
 
-def test_miyagi_page_is_linked_from_coverage_queue_and_sitemap():
+def test_miyagi_page_links_and_dynamic_counts():
     coverage = read(COVERAGE)
     municipalities = read(MUNICIPALITIES)
     sitemap = read(SITEMAP)
     assert 'record.prefecture_code === "04"' in coverage
     assert '"/municipalities/miyagi"' in coverage
     assert 'href="/municipalities/miyagi"' in municipalities
-    assert "宮城県の38目標を公開" in municipalities
-    assert "未Reviewedの90目標" in municipalities
+    assert "miyagiPolicyReviewStats.reviewedTargetGroups" in municipalities
+    assert "miyagiPolicyReviewStats.remainingTargetGroups" in municipalities
+    assert "miyagiPolicyReviewStats.reviewedIndicatorSeries" in municipalities
     assert '"/municipalities/miyagi"' in sitemap
