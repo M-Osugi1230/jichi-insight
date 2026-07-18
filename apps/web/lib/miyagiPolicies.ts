@@ -6,20 +6,26 @@ import measure2Catalog from "../../../data/entities/policy/miyagi_kpi_catalog_me
 import measure3Catalog from "../../../data/entities/policy/miyagi_kpi_catalog_measure3.json";
 import measure4Catalog from "../../../data/entities/policy/miyagi_kpi_catalog_measure4.json";
 import measure5Catalog from "../../../data/entities/policy/miyagi_kpi_catalog_measure5.json";
+import measure6Catalog from "../../../data/entities/policy/miyagi_kpi_catalog_measure6.json";
+import measure7Catalog from "../../../data/entities/policy/miyagi_kpi_catalog_measure7.json";
 import pillar1Catalog from "../../../data/entities/policy/miyagi_kpi_catalog_pillar1.json";
+import pillar2Catalog from "../../../data/entities/policy/miyagi_kpi_catalog_pillar2.json";
 import measure1Evidence from "../../../data/entities/policy/miyagi_kpi_measure1_evidence_packets.json";
 import measure2Evidence from "../../../data/entities/policy/miyagi_kpi_measure2_evidence_packets.json";
 import measure3aEvidence from "../../../data/entities/policy/miyagi_kpi_measure3a_evidence_packets.json";
 import measure3bEvidence from "../../../data/entities/policy/miyagi_kpi_measure3b_evidence_packets.json";
 import measure4Evidence from "../../../data/entities/policy/miyagi_kpi_measure4_evidence_packets.json";
 import measure5Evidence from "../../../data/entities/policy/miyagi_kpi_measure5_evidence_packets.json";
+import measure6Evidence from "../../../data/entities/policy/miyagi_kpi_measure6_evidence_packets.json";
+import measure7Evidence from "../../../data/entities/policy/miyagi_kpi_measure7_evidence_packets.json";
 import pillar1Evidence from "../../../data/entities/policy/miyagi_kpi_pillar1_evidence_packets.json";
+import pillar2Evidence from "../../../data/entities/policy/miyagi_kpi_pillar2_evidence_packets.json";
 import directionEvidence from "../../../data/entities/policy/miyagi_policy_direction_evidence_packets.json";
 import hierarchy from "../../../data/entities/policy/miyagi_policy_hierarchy.json";
 
 export type MiyagiKpiValue = {
   role: "initial" | "current" | "midterm_target" | "late_target";
-  period_original: "R3" | "R4" | "R5" | "R6" | "R9" | "R12";
+  period_original: "R3" | "R4" | "R5" | "R6" | "R7" | "R9" | "R12";
   period_year: number;
   value: number | null;
   status: "numeric" | "not_set" | "not_available" | "conditional";
@@ -58,6 +64,9 @@ const measures = policies.flatMap((policy) => policy.measures);
 const directionOneMeasures = hierarchy.directions[0].policies.flatMap(
   (policy) => policy.measures,
 );
+const directionTwoMeasures = hierarchy.directions[1].policies.flatMap(
+  (policy) => policy.measures,
+);
 const reviewedGroups = [
   ...pillar1Catalog.items,
   ...measure1Catalog.items,
@@ -65,6 +74,9 @@ const reviewedGroups = [
   ...measure3Catalog.items,
   ...measure4Catalog.items,
   ...measure5Catalog.items,
+  ...pillar2Catalog.items,
+  ...measure6Catalog.items,
+  ...measure7Catalog.items,
 ] as MiyagiKpiGroup[];
 const reviewedSeries = reviewedGroups.flatMap((group) => group.series);
 const kpiEvidence = [
@@ -75,6 +87,9 @@ const kpiEvidence = [
   ...measure3bEvidence,
   ...measure4Evidence,
   ...measure5Evidence,
+  ...pillar2Evidence,
+  ...measure6Evidence,
+  ...measure7Evidence,
 ];
 
 export const reviewedMiyagiPolicyHierarchy = hierarchy;
@@ -94,6 +109,22 @@ export const miyagiKpiScopes = [
     ),
   },
   ...directionOneMeasures.slice(0, 5).map((measure) => ({
+    id: measure.id,
+    label: `取組${measure.measure_number}`,
+    title: measure.title_original,
+    groups: reviewedMiyagiKpiGroups.filter(
+      (group) => group.scope_type === "measure" && group.scope_number === measure.measure_number,
+    ),
+  })),
+  {
+    id: "pillar-2",
+    label: "柱2",
+    title: hierarchy.directions[1].title_original,
+    groups: reviewedMiyagiKpiGroups.filter(
+      (group) => group.scope_type === "pillar" && group.scope_number === 2,
+    ),
+  },
+  ...directionTwoMeasures.slice(0, 2).map((measure) => ({
     id: measure.id,
     label: `取組${measure.measure_number}`,
     title: measure.title_original,
@@ -137,12 +168,13 @@ export const miyagiPolicyReviewStats = {
       total + series.values.filter((value) => value.value !== null && value.value < 0).length,
     0,
   ),
-  decliningMidtermGroups: reviewedGroups.filter((group) => {
-    const values = group.series[0]?.values;
-    return values?.[1]?.value !== null
-      && values?.[2]?.value !== null
-      && values[2].value < values[1].value;
-  }).length,
+  decliningMidtermGroups: reviewedGroups.filter((group) =>
+    group.series.some((series) => {
+      const current = series.values[1]?.value;
+      const target = series.values[2]?.value;
+      return current !== null && target !== null && target < current;
+    }),
+  ).length,
   expectedKpiCount: manifest.expected_kpi_count,
   kpiCountStatus: manifest.kpi_count_status,
   activeWorkPackage: manifest.active_work_package,
