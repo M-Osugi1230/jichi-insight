@@ -48,10 +48,14 @@ def test_measure15_values_units_and_periods_are_preserved():
 
 def test_measure15_direction_boundaries_and_missing_late_targets_are_preserved():
     groups = {group["target_group_number"]: group for group in load(CATALOG)["items"]}
-    assert groups[109]["series"][0]["values"][1]["value"] > groups[109]["series"][0]["values"][2]["value"]
-    assert groups[111]["series"][0]["values"][1]["value"] > groups[111]["series"][0]["values"][2]["value"]
-    assert groups[112]["series"][0]["values"][1]["value"] < groups[112]["series"][0]["values"][2]["value"]
-    assert groups[113]["series"][0]["values"][1]["value"] > groups[113]["series"][0]["values"][2]["value"]
+    value_pairs = {
+        number: [value["value"] for value in groups[number]["series"][0]["values"][1:3]]
+        for number in [109, 111, 112, 113]
+    }
+    assert value_pairs[109][0] > value_pairs[109][1]
+    assert value_pairs[111][0] > value_pairs[111][1]
+    assert value_pairs[112][0] < value_pairs[112][1]
+    assert value_pairs[113][0] > value_pairs[113][1]
     for group in groups.values():
         late = group["series"][0]["values"][3]
         assert late["value"] is None
