@@ -53,7 +53,7 @@ export default function MiyagiPage() {
         >
           <p>
             新・宮城の将来ビジョンの4基本方向・8政策・18取組をReviewed化し、
-            現行中期実施計画にある128目標グループのうち、柱1〜2と取組1〜7の
+            現行中期実施計画にある128目標グループのうち、柱1〜2と取組1〜9の
             {miyagiPolicyReviewStats.reviewedTargetGroups}件を公開しています。
             これは成果の達成率ではなく、一次資料を人が照合した作業カバレッジです。
           </p>
@@ -93,7 +93,7 @@ export default function MiyagiPage() {
             <p className="eyebrow">Review coverage</p>
             <h2 id="miyagi-review-progress">
               {miyagiPolicyReviewStats.reviewedTargetGroups} / {miyagiPolicyReviewStats.targetGroups}
-              をReviewed。次は目標53〜68。
+              をReviewed。次は柱3の目標69〜71。
             </h2>
           </div>
           <div className={styles.progressDetail}>
@@ -111,7 +111,7 @@ export default function MiyagiPage() {
               </div>
               <div>
                 <dt>今回の範囲</dt>
-                <dd>柱1〜2・取組1〜7</dd>
+                <dd>柱1〜2・取組1〜9</dd>
               </div>
             </dl>
             <p>
