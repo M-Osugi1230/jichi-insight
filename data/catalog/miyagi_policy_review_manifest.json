@@ -19,11 +19,11 @@
   "indicator_series_count": 149,
   "indicator_source_index_id": "miyagi-indicator-source-index",
   "kpi_count_status": "verified",
-  "reviewed_target_group_count": 23,
-  "reviewed_indicator_series_count": 23,
-  "remaining_target_group_count": 105,
-  "remaining_indicator_series_count": 126,
-  "kpi_evidence_packet_count": 23,
+  "reviewed_target_group_count": 38,
+  "reviewed_indicator_series_count": 40,
+  "remaining_target_group_count": 90,
+  "remaining_indicator_series_count": 109,
+  "kpi_evidence_packet_count": 38,
   "active_work_package": "kpi_catalog",
   "review_status": "in_progress",
   "work_packages": [
@@ -48,7 +48,7 @@
     {
       "id": "kpi_catalog",
       "status": "active",
-      "deliverable": "目標グループ1〜23・系列1〜23をEvidence Packet付きでReviewed化した。残る105目標グループ・126系列を公式掲載順に追加する。",
+      "deliverable": "目標グループ1〜38・系列1〜40をEvidence Packet付きでReviewed化した。残る90目標グループ・109系列を公式掲載順に追加する。",
       "completion_gate": "指標名、初期値、現況値、中期末目標、後期末目標、単位、時点、複数系列、目標未設定を一次資料と照合する。"
     },
     {
@@ -75,8 +75,8 @@
     "actuals_not_inferred"
   ],
   "open_questions": [
-    "目標グループ24〜38・系列24〜40を次バッチとしてReviewed化する。",
-    "複数系列グループ26の農業・水産業・林業を単一値へ圧縮しない。",
+    "目標グループ39〜52・系列41〜57を次バッチとしてReviewed化する。",
+    "柱2の複数系列グループ40と取組7の複数系列グループ49を単一値へ圧縮しない。",
     "令和8年度評価原案の確定版公開後に版差分を履歴化する。"
   ]
 }
