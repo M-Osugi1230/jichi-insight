@@ -24,6 +24,11 @@
   "remaining_target_group_count": 0,
   "remaining_indicator_series_count": 0,
   "kpi_evidence_packet_count": 128,
+  "actual_linked_target_group_count": 5,
+  "actual_linked_indicator_series_count": 5,
+  "actual_linkage_review_needed_series_count": 1,
+  "actual_result_row_count": 24,
+  "actual_evidence_packet_count": 6,
   "active_work_package": "evaluation_linkage",
   "review_status": "in_progress",
   "work_packages": [
@@ -54,13 +59,13 @@
     {
       "id": "evaluation_linkage",
       "status": "active",
-      "deliverable": "Connect final annual results to KPI records while keeping draft material as a separate version.",
-      "completion_gate": "Year, version status, definition changes, and related source context remain distinct."
+      "deliverable": "Measure 1 has five direct annual-result links, one definition-change review record, twenty-four annual rows, and six Evidence Packets.",
+      "completion_gate": "Reporting year, measurement year, legacy evaluation target, official achievement rate, and current-plan target remain distinct."
     },
     {
       "id": "web_publication",
       "status": "active",
-      "deliverable": "Publish the full reviewed KPI catalog while clearly marking annual results as not yet linked.",
+      "deliverable": "Publish the full KPI catalog and the reviewed annual-result pilot while clearly marking unlinked and review-needed series.",
       "completion_gate": "Schemas, tests, Web build, static export, and post-deploy smoke checks must pass."
     }
   ],
@@ -75,8 +80,9 @@
     "actuals_not_inferred"
   ],
   "open_questions": [
-    "Connect the final FY2025 results source to all 128 target groups and 149 series.",
-    "Keep the FY2026 draft separate from any future final version.",
-    "Do not generate achievement rates before annual values and definition changes are linked."
+    "Review the definition change between the former intellectual-property indicator and current series 7 before any linkage.",
+    "Connect the final FY2025 results source to the remaining 144 indicator series.",
+    "Keep official achievement rates tied to the evaluation document's R6 targets, not the current plan's R9 targets.",
+    "Keep the FY2026 draft separate from any future final version."
   ]
 }
