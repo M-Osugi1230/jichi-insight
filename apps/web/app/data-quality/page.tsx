@@ -74,9 +74,11 @@ export default function DataQualityPage() {
             <article className={styles.summaryCard}><span>北海道指標PDF</span><strong>{snapshot.indexedHokkaidoKpiSources}</strong><p>{snapshot.hokkaidoIndicatorSourcePages}ページを資料単位で索引済み。</p></article>
             <article className={styles.summaryCard}><span>宮城県政策資料</span><strong>{miyagiPolicyReviewStats.sources}</strong><p>うちReviewed済み{miyagiPolicyReviewStats.reviewedSources}件。評価原案は確定版と分離。</p></article>
             <article className={styles.summaryCard}><span>宮城県政策体系</span><strong>{miyagiPolicyReviewStats.directions}・{miyagiPolicyReviewStats.policies}・{miyagiPolicyReviewStats.measures}</strong><p>基本方向・政策・取組。復興取組{miyagiPolicyReviewStats.recoveryAreas}分野は別系統。</p></article>
-            <article className={styles.summaryCard}><span>宮城県政策Evidence</span><strong>{miyagiPolicyReviewStats.evidencePackets}</strong><p>KPI件数は一覧表の索引完了まで未確定。</p></article>
+            <article className={styles.summaryCard}><span>宮城県KPI位置</span><strong>{miyagiPolicyReviewStats.targetGroups}</strong><p>目標グループ。個別系列は149件、掲載5ページ。</p></article>
+            <article className={styles.summaryCard}><span>宮城県複数系列</span><strong>{miyagiPolicyReviewStats.multiSeriesGroups}</strong><p>追加系列21件。位置は確認済み、本文はReviewed化中。</p></article>
+            <article className={styles.summaryCard}><span>宮城県政策Evidence</span><strong>{miyagiPolicyReviewStats.evidencePackets}</strong><p>政策体系4方向に付与。KPI Evidenceは本文レビューと同時に追加。</p></article>
             <article className={styles.summaryCard}><span>Reviewed基準実装</span><strong>{snapshot.waveOnePolicyReviewReferences}</strong><p>福岡県と北海道を全国展開のデータ・Evidence Packet基準として使用。</p></article>
-            <article className={styles.summaryCard}><span>Reviewed化作業中</span><strong>{snapshot.waveOnePolicyActiveReviews}</strong><p>宮城県は政策体系Reviewed済み。目標指標一覧を索引中。</p></article>
+            <article className={styles.summaryCard}><span>Reviewed化作業中</span><strong>{snapshot.waveOnePolicyActiveReviews}</strong><p>宮城県は128目標グループ・149系列のKPI本文をReviewed化中。</p></article>
             <article className={styles.summaryCard}><span>作業待ち</span><strong>{snapshot.waveOnePolicyQueued}</strong><p>資料構造と作業依存関係に基づき順番に着手。</p></article>
           </div>
         </section>

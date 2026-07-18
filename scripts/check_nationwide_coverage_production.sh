@@ -73,10 +73,11 @@ check_page "/municipalities/" \
   "北海道108指標を全件Reviewed化。次は宮城県。" \
   "Reviewed基準実装" \
   "Reviewed化作業中" \
-  "政策体系Reviewed・KPI索引中" \
+  "KPI位置確認済み・本文レビュー中" \
   "全108指標とEvidence Packet 108件をReviewed化済み。" \
-  "目標指標一覧表" \
-  "一意指標数と掲載行数" \
+  "128目標グループ・149系列" \
+  "目標グループ1〜23" \
+  "複数系列17グループ" \
   "北海道108指標のReviewed完了。次は宮城県の資料固定へ。" \
   "公式URL候補" \
   "北海道" "宮城県" "東京都" "愛知県" "大阪府" "広島県" "香川県" "福岡県" "沖縄県" "福岡市" "北九州市"
@@ -84,7 +85,7 @@ check_page "/municipalities/" \
 check_absent "/municipalities/" "「未来の東京」戦略"
 check_absent "/municipalities/" "将来ビジョン・大阪"
 check_absent "/municipalities/" "大阪の再生・成長に向けた新戦略"
-check_absent "/municipalities/" "残る10指標"
+check_absent "/municipalities/" "一意指標数と掲載行数を確定する"
 
 check_page "/municipalities/hokkaido/" \
   "北海道の政策指標を、原文と期間から読む。" \
@@ -113,9 +114,12 @@ check_page "/data-quality/" \
   "うちReviewed済み3件。評価原案は確定版と分離。" \
   "宮城県政策体系" \
   "基本方向・政策・取組。復興取組4分野は別系統。" \
+  "宮城県KPI位置" \
+  "目標グループ。個別系列は149件、掲載5ページ。" \
+  "宮城県複数系列" \
+  "追加系列21件。位置は確認済み、本文はReviewed化中。" \
   "宮城県政策Evidence" \
-  "KPI件数は一覧表の索引完了まで未確定。" \
-  "宮城県は政策体系Reviewed済み。目標指標一覧を索引中。" \
+  "宮城県は128目標グループ・149系列のKPI本文をReviewed化中。" \
   "北海道指標位置" \
   "北海道複数分野参照" \
   "北海道Reviewed指標" \

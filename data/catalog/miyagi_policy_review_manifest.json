@@ -15,9 +15,11 @@
   "policy_count": 8,
   "measure_count": 18,
   "recovery_support_area_count": 4,
-  "expected_kpi_count": null,
-  "kpi_count_status": "pending_index",
-  "active_work_package": "kpi_source_index",
+  "expected_kpi_count": 128,
+  "indicator_series_count": 149,
+  "indicator_source_index_id": "miyagi-indicator-source-index",
+  "kpi_count_status": "verified",
+  "active_work_package": "kpi_catalog",
   "review_status": "in_progress",
   "work_packages": [
     {
@@ -34,15 +36,15 @@
     },
     {
       "id": "kpi_source_index",
-      "status": "active",
-      "deliverable": "現行中期実施計画の目標指標一覧表を、取組番号、指標名、現況値、目標値、時点、再掲の単位で索引化する。",
-      "completion_gate": "全掲載行と一意指標数を数え、欠落、重複、再掲、条件型、目標未設定を確認する。"
+      "status": "completed",
+      "deliverable": "目標指標一覧表のPDFページ56〜60を索引化し、目標値No. 1〜128、指標No. 1〜149、複数系列17グループ、追加系列21件を確定した。",
+      "completion_gate": "柱4件・取組18件の範囲、掲載ページ、128グループ、149系列を欠落0・重複0で検証済み。"
     },
     {
       "id": "kpi_catalog",
-      "status": "queued",
-      "deliverable": "索引化した全KPIをEvidence Packet付きでReviewed化する。",
-      "completion_gate": "本文、数値、単位、期間、条件を一次資料と照合する。"
+      "status": "active",
+      "deliverable": "128目標グループ・149系列を公式掲載順にEvidence Packet付きでReviewed化する。",
+      "completion_gate": "指標名、初期値、現況値、中期末目標、後期末目標、単位、時点、複数系列、目標未設定を一次資料と照合する。"
     },
     {
       "id": "evaluation_linkage",
@@ -68,8 +70,8 @@
     "actuals_not_inferred"
   ],
   "open_questions": [
-    "目標指標一覧表の一意指標数と政策・施策への再掲関係を確定する。",
-    "現況値と目標値の基準年度・暦年・時点値を個別に保持する。",
+    "149系列の指標名・値・単位・時点を公式掲載順にReviewed化する。",
+    "後期末目標がハイフンの取組KPIを目標未設定として保持する。",
     "令和8年度評価原案の確定版公開後に版差分を履歴化する。"
   ]
 }

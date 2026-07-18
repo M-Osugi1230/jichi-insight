@@ -26,12 +26,14 @@ def test_miyagi_manifest_matches_schema_and_review_stage():
     assert manifest["review_status"] == "in_progress"
 
 
-def test_kpi_count_is_explicitly_unknown_until_indexed():
+def test_kpi_counts_are_verified_before_content_review():
     manifest = load(MANIFEST)
-    assert manifest["expected_kpi_count"] is None
-    assert manifest["kpi_count_status"] == "pending_index"
-    assert manifest["active_work_package"] == "kpi_source_index"
-    assert "一意指標数" in manifest["open_questions"][0]
+    assert manifest["expected_kpi_count"] == 128
+    assert manifest["indicator_series_count"] == 149
+    assert manifest["indicator_source_index_id"] == "miyagi-indicator-source-index"
+    assert manifest["kpi_count_status"] == "verified"
+    assert manifest["active_work_package"] == "kpi_catalog"
+    assert "149系列" in manifest["open_questions"][0]
 
 
 def test_work_packages_separate_inventory_hierarchy_kpis_and_evaluation():
@@ -48,10 +50,11 @@ def test_work_packages_separate_inventory_hierarchy_kpis_and_evaluation():
     ]
     assert packages["source_inventory"]["status"] == "completed"
     assert packages["policy_hierarchy"]["status"] == "completed"
-    assert packages["kpi_source_index"]["status"] == "active"
-    assert packages["kpi_catalog"]["status"] == "queued"
+    assert packages["kpi_source_index"]["status"] == "completed"
+    assert packages["kpi_catalog"]["status"] == "active"
     assert packages["evaluation_linkage"]["status"] == "queued"
     assert packages["web_publication"]["status"] == "blocked"
+    assert "128目標グループ" in packages["kpi_catalog"]["deliverable"]
     assert "原案・確定" in packages["evaluation_linkage"]["completion_gate"]
 
 
