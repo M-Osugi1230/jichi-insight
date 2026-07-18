@@ -24,13 +24,13 @@ def test_manifest_schema_counts_and_progress():
     ] == [4, 8, 18, 4]
     assert manifest["expected_kpi_count"] == 128
     assert manifest["indicator_series_count"] == 149
-    assert manifest["reviewed_target_group_count"] == 80
-    assert manifest["reviewed_indicator_series_count"] == 98
-    assert manifest["remaining_target_group_count"] == 48
-    assert manifest["remaining_indicator_series_count"] == 51
-    assert manifest["kpi_evidence_packet_count"] == 80
-    assert 80 + 48 == 128
-    assert 98 + 51 == 149
+    assert manifest["reviewed_target_group_count"] == 84
+    assert manifest["reviewed_indicator_series_count"] == 103
+    assert manifest["remaining_target_group_count"] == 44
+    assert manifest["remaining_indicator_series_count"] == 46
+    assert manifest["kpi_evidence_packet_count"] == 84
+    assert 84 + 44 == 128
+    assert 103 + 46 == 149
     assert manifest["active_work_package"] == "kpi_catalog"
     assert manifest["review_status"] == "in_progress"
 
@@ -50,14 +50,14 @@ def test_work_packages_and_quality_boundaries():
     assert packages["policy_hierarchy"]["status"] == "completed"
     assert packages["kpi_source_index"]["status"] == "completed"
     assert packages["kpi_catalog"]["status"] == "active"
-    assert "目標グループ1〜80" in packages["kpi_catalog"]["deliverable"]
-    assert "残る48目標グループ" in packages["kpi_catalog"]["deliverable"]
+    assert "目標グループ1〜84" in packages["kpi_catalog"]["deliverable"]
+    assert "残る44目標グループ" in packages["kpi_catalog"]["deliverable"]
     assert packages["evaluation_linkage"]["status"] == "queued"
     assert packages["web_publication"]["status"] == "active"
     assert "段階公開" in packages["web_publication"]["deliverable"]
-    assert "目標グループ81〜84" in manifest["open_questions"][0]
-    assert "累計3グループ" in manifest["open_questions"][1]
-    assert "ハイフンを0へ変換しない" in manifest["open_questions"][1]
+    assert "目標グループ85〜93" in manifest["open_questions"][0]
+    assert "文化芸術の2系列" in manifest["open_questions"][1]
+    assert "人口千人当たり" in manifest["open_questions"][1]
     assert set(manifest["quality_requirements"]) == {
         "official_order_preserved",
         "original_text_preserved",
