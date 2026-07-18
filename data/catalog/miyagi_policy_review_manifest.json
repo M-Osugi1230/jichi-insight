@@ -19,11 +19,11 @@
   "indicator_series_count": 149,
   "indicator_source_index_id": "miyagi-indicator-source-index",
   "kpi_count_status": "verified",
-  "reviewed_target_group_count": 52,
-  "reviewed_indicator_series_count": 57,
-  "remaining_target_group_count": 76,
-  "remaining_indicator_series_count": 92,
-  "kpi_evidence_packet_count": 52,
+  "reviewed_target_group_count": 68,
+  "reviewed_indicator_series_count": 85,
+  "remaining_target_group_count": 60,
+  "remaining_indicator_series_count": 64,
+  "kpi_evidence_packet_count": 68,
   "active_work_package": "kpi_catalog",
   "review_status": "in_progress",
   "work_packages": [
@@ -48,7 +48,7 @@
     {
       "id": "kpi_catalog",
       "status": "active",
-      "deliverable": "目標グループ1〜52・系列1〜57をEvidence Packet付きでReviewed化した。残る76目標グループ・92系列を公式掲載順に追加する。",
+      "deliverable": "目標グループ1〜68・系列1〜85をEvidence Packet付きでReviewed化した。残る60目標グループ・64系列を公式掲載順に追加する。",
       "completion_gate": "指標名、初期値、現況値、中期末目標、後期末目標、単位、時点、複数系列、目標未設定を一次資料と照合する。"
     },
     {
@@ -75,8 +75,8 @@
     "actuals_not_inferred"
   ],
   "open_questions": [
-    "次は目標グループ53〜68・系列58〜85（取組8〜9）をReviewed化する。",
-    "複数系列グループ54・55・58〜60・62・63・66・67を単一値へ圧縮しない。",
+    "次は柱3の目標グループ69〜71・系列86〜89をReviewed化する。",
+    "複数系列グループ71の男性・女性を単一値へ圧縮しない。",
     "令和8年度評価原案の確定版公開後に版差分を履歴化する。"
   ]
 }
