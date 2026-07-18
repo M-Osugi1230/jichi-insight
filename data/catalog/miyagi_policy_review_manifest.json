@@ -19,11 +19,11 @@
   "indicator_series_count": 149,
   "indicator_source_index_id": "miyagi-indicator-source-index",
   "kpi_count_status": "verified",
-  "reviewed_target_group_count": 84,
-  "reviewed_indicator_series_count": 103,
-  "remaining_target_group_count": 44,
-  "remaining_indicator_series_count": 46,
-  "kpi_evidence_packet_count": 84,
+  "reviewed_target_group_count": 93,
+  "reviewed_indicator_series_count": 112,
+  "remaining_target_group_count": 35,
+  "remaining_indicator_series_count": 37,
+  "kpi_evidence_packet_count": 93,
   "active_work_package": "kpi_catalog",
   "review_status": "in_progress",
   "work_packages": [
@@ -48,7 +48,7 @@
     {
       "id": "kpi_catalog",
       "status": "active",
-      "deliverable": "目標グループ1〜84・系列1〜103をEvidence Packet付きでReviewed化した。残る44目標グループ・46系列を公式掲載順に追加する。",
+      "deliverable": "目標グループ1〜93・系列1〜112をEvidence Packet付きでReviewed化した。残る35目標グループ・37系列を公式掲載順に追加する。",
       "completion_gate": "指標名、初期値、現況値、中期末目標、後期末目標、単位、時点、複数系列、目標未設定を一次資料と照合する。"
     },
     {
@@ -75,8 +75,8 @@
     "actuals_not_inferred"
   ],
   "open_questions": [
-    "次は取組12の目標グループ85〜93・系列104〜112をReviewed化する。",
-    "文化芸術の2系列を単一値へ圧縮せず、人口千人当たりの値を参加者総数へ変換しない。",
+    "次は取組13の目標グループ94〜100・系列113〜119をReviewed化する。",
+    "取組12の累計4系列を単年度値へ変換せず、人口10万対の率を死亡者数へ変換しない。",
     "令和8年度評価原案の確定版公開後に版差分を履歴化する。"
   ]
 }
