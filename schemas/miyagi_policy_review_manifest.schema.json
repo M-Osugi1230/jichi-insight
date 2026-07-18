@@ -8,7 +8,8 @@
     "id", "updated_at", "prefecture_code", "municipality_key", "source_ids",
     "policy_direction_count", "policy_count", "measure_count",
     "recovery_support_area_count", "expected_kpi_count",
-    "indicator_series_count", "indicator_source_index_id", "kpi_count_status",
+    "indicator_series_count", "reviewed_target_group_count",
+    "reviewed_indicator_series_count", "indicator_source_index_id", "kpi_count_status",
     "active_work_package", "review_status", "work_packages",
     "quality_requirements", "open_questions"
   ],
@@ -27,6 +28,8 @@
     "recovery_support_area_count": {"const": 4},
     "expected_kpi_count": {"const": 128},
     "indicator_series_count": {"const": 149},
+    "reviewed_target_group_count": {"type": "integer", "minimum": 0, "maximum": 128},
+    "reviewed_indicator_series_count": {"type": "integer", "minimum": 0, "maximum": 149},
     "indicator_source_index_id": {"const": "miyagi-indicator-source-index"},
     "kpi_count_status": {"const": "verified"},
     "active_work_package": {"const": "kpi_catalog"},
