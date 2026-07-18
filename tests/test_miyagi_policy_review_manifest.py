@@ -18,11 +18,11 @@ def test_manifest_schema_counts_and_progress():
     assert list(validator.iter_errors(manifest)) == []
     assert manifest["expected_kpi_count"] == 128
     assert manifest["indicator_series_count"] == 149
-    assert manifest["reviewed_target_group_count"] == 104
-    assert manifest["reviewed_indicator_series_count"] == 123
-    assert manifest["remaining_target_group_count"] == 24
-    assert manifest["remaining_indicator_series_count"] == 26
-    assert manifest["kpi_evidence_packet_count"] == 104
+    assert manifest["reviewed_target_group_count"] == 106
+    assert manifest["reviewed_indicator_series_count"] == 125
+    assert manifest["remaining_target_group_count"] == 22
+    assert manifest["remaining_indicator_series_count"] == 24
+    assert manifest["kpi_evidence_packet_count"] == 106
     assert manifest["active_work_package"] == "kpi_catalog"
     assert manifest["review_status"] == "in_progress"
 
