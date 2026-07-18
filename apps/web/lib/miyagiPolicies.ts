@@ -19,7 +19,6 @@ import measure3aEvidence from "../../../data/entities/policy/miyagi_kpi_measure3
 import measure3bEvidence from "../../../data/entities/policy/miyagi_kpi_measure3b_evidence_packets.json";
 import measure4aEvidence from "../../../data/entities/policy/miyagi_kpi_measure4a_evidence_packets.json";
 import measure4bEvidence from "../../../data/entities/policy/miyagi_kpi_measure4b_evidence_packets.json";
-import measure5TailEvidence from "../../../data/entities/policy/miyagi_kpi_measure5_tail_evidence_packets.json";
 import pillar1Evidence from "../../../data/entities/policy/miyagi_kpi_pillar1_evidence_packets.json";
 import directionEvidence from "../../../data/entities/policy/miyagi_policy_direction_evidence_packets.json";
 import hierarchy from "../../../data/entities/policy/miyagi_policy_hierarchy.json";
@@ -85,7 +84,6 @@ const kpiEvidence = [
   ...groups33_34Evidence,
   ...group35Evidence,
   ...group36Evidence,
-  ...measure5TailEvidence,
 ];
 
 export const reviewedMiyagiPolicyHierarchy = hierarchy;
