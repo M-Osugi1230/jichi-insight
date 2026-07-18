@@ -17,6 +17,8 @@
   "recovery_support_area_count": 4,
   "expected_kpi_count": 128,
   "indicator_series_count": 149,
+  "reviewed_target_group_count": 9,
+  "reviewed_indicator_series_count": 9,
   "indicator_source_index_id": "miyagi-indicator-source-index",
   "kpi_count_status": "verified",
   "active_work_package": "kpi_catalog",
@@ -43,7 +45,7 @@
     {
       "id": "kpi_catalog",
       "status": "active",
-      "deliverable": "128目標グループ・149系列を公式掲載順にEvidence Packet付きでReviewed化する。",
+      "deliverable": "目標値No.1〜9・指標No.1〜9をEvidence Packet付きでReviewed化済み。残る目標値No.10〜128・指標No.10〜149を公式掲載順にReviewed化する。",
       "completion_gate": "指標名、初期値、現況値、中期末目標、後期末目標、単位、時点、複数系列、目標未設定を一次資料と照合する。"
     },
     {
@@ -70,7 +72,7 @@
     "actuals_not_inferred"
   ],
   "open_questions": [
-    "149系列の指標名・値・単位・時点を公式掲載順にReviewed化する。",
+    "目標値No.10〜128・指標No.10〜149の指標名・値・単位・時点を公式掲載順にReviewed化する。",
     "後期末目標がハイフンの取組KPIを目標未設定として保持する。",
     "令和8年度評価原案の確定版公開後に版差分を履歴化する。"
   ]
