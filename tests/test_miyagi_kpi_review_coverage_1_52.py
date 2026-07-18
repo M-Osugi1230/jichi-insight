@@ -29,12 +29,12 @@ def test_reviewed_groups_series_and_evidence_are_contiguous():
     groups = [group for catalog in reviewed_catalogs() for group in catalog["items"]]
     series = [entry for group in groups for entry in group["series"]]
     packets = reviewed_evidence_packets()
-    assert [group["target_group_number"] for group in groups] == list(range(1, 107))
-    assert [entry["series_number"] for entry in series] == list(range(1, 126))
-    assert len({group["id"] for group in groups}) == 106
-    assert len({entry["id"] for entry in series}) == 125
-    assert len(packets) == 106
-    assert len({packet["id"] for packet in packets}) == 106
+    assert [group["target_group_number"] for group in groups] == list(range(1, 114))
+    assert [entry["series_number"] for entry in series] == list(range(1, 133))
+    assert len({group["id"] for group in groups}) == 113
+    assert len({entry["id"] for entry in series}) == 132
+    assert len(packets) == 113
+    assert len({packet["id"] for packet in packets}) == 113
     assert {packet["subject_id"] for packet in packets} == {
         group["id"] for group in groups
     }
@@ -45,8 +45,8 @@ def test_manifest_matches_reviewed_files():
     groups = [group for catalog in reviewed_catalogs() for group in catalog["items"]]
     series = [entry for group in groups for entry in group["series"]]
     packets = reviewed_evidence_packets()
-    assert manifest["reviewed_target_group_count"] == len(groups) == 106
-    assert manifest["reviewed_indicator_series_count"] == len(series) == 125
-    assert manifest["kpi_evidence_packet_count"] == len(packets) == 106
-    assert manifest["remaining_target_group_count"] == 22
-    assert manifest["remaining_indicator_series_count"] == 24
+    assert manifest["reviewed_target_group_count"] == len(groups) == 113
+    assert manifest["reviewed_indicator_series_count"] == len(series) == 132
+    assert manifest["kpi_evidence_packet_count"] == len(packets) == 113
+    assert manifest["remaining_target_group_count"] == 15
+    assert manifest["remaining_indicator_series_count"] == 17
