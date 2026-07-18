@@ -85,7 +85,7 @@ def test_recovery_support_areas_remain_outside_eight_policy_hierarchy():
         for policy in direction["policies"]
     }
     assert policy_titles.isdisjoint(recovery_titles)
-    assert hierarchy["kpi_linkage_status"] == "positions_not_indexed"
+    assert hierarchy["kpi_linkage_status"] == "positions_indexed"
     assert hierarchy["evaluation_linkage_status"] == "sources_indexed"
 
 
