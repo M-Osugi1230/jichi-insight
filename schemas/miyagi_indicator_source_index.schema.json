@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.example/schemas/miyagi_indicator_source_index.schema.json",
+  "title": "Jichi Insight Miyagi indicator source index",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id", "updated_at", "prefecture_code", "municipality_key", "source_id",
+    "source_document_url", "source_table_title", "source_pdf_page_start",
+    "source_pdf_page_end", "printed_page_start", "printed_page_end",
+    "target_group_count", "indicator_series_count", "multi_series_group_count",
+    "additional_series_count", "count_status", "page_ranges", "target_groups",
+    "review_status", "content_review_status", "notes"
+  ],
+  "properties": {
+    "id": {"const": "miyagi-indicator-source-index"},
+    "updated_at": {"type": "string", "format": "date"},
+    "prefecture_code": {"const": "04"},
+    "municipality_key": {"const": "miyagi-prefecture"},
+    "source_id": {"const": "policy-source-miyagi-midterm-implementation-plan-2026"},
+    "source_document_url": {"type": "string", "format": "uri", "pattern": "^https://"},
+    "source_table_title": {"const": "（参考）目標指標一覧表"},
+    "source_pdf_page_start": {"const": 56},
+    "source_pdf_page_end": {"const": 60},
+    "printed_page_start": {"const": 55},
+    "printed_page_end": {"const": 59},
+    "target_group_count": {"const": 128},
+    "indicator_series_count": {"const": 149},
+    "multi_series_group_count": {"const": 17},
+    "additional_series_count": {"const": 21},
+    "count_status": {"const": "verified"},
+    "page_ranges": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "pdf_page_number", "printed_page_number", "target_group_start",
+          "target_group_end", "series_number_start", "series_number_end"
+        ],
+        "properties": {
+          "pdf_page_number": {"type": "integer", "minimum": 56, "maximum": 60},
+          "printed_page_number": {"type": "integer", "minimum": 55, "maximum": 59},
+          "target_group_start": {"type": "integer", "minimum": 1, "maximum": 128},
+          "target_group_end": {"type": "integer", "minimum": 1, "maximum": 128},
+          "series_number_start": {"type": "integer", "minimum": 1, "maximum": 149},
+          "series_number_end": {"type": "integer", "minimum": 1, "maximum": 149}
+        }
+      }
+    },
+    "target_groups": {
+      "type": "array",
+      "minItems": 128,
+      "maxItems": 128,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "target_group_number", "series_number_start", "series_number_end",
+          "series_count", "pdf_page_numbers", "scope_type", "scope_number",
+          "position_status", "content_review_status"
+        ],
+        "properties": {
+          "target_group_number": {"type": "integer", "minimum": 1, "maximum": 128},
+          "series_number_start": {"type": "integer", "minimum": 1, "maximum": 149},
+          "series_number_end": {"type": "integer", "minimum": 1, "maximum": 149},
+          "series_count": {"type": "integer", "minimum": 1, "maximum": 4},
+          "pdf_page_numbers": {
+            "type": "array", "minItems": 1, "maxItems": 2, "uniqueItems": true,
+            "items": {"type": "integer", "minimum": 56, "maximum": 60}
+          },
+          "scope_type": {"enum": ["pillar", "measure"]},
+          "scope_number": {"type": "integer", "minimum": 1, "maximum": 18},
+          "position_status": {"const": "verified"},
+          "content_review_status": {"const": "pending_review"}
+        }
+      }
+    },
+    "review_status": {"const": "positions_verified"},
+    "content_review_status": {"const": "pending_review"},
+    "notes": {"type": "string", "minLength": 1}
+  }
+}
