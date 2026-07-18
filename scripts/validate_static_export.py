@@ -142,21 +142,32 @@ def miyagi_requirements() -> dict[str, list[str]]:
     reviewed_groups = manifest["reviewed_target_group_count"]
     reviewed_series = manifest["reviewed_indicator_series_count"]
     remaining_groups = manifest["remaining_target_group_count"]
+    remaining_series = manifest["remaining_indicator_series_count"]
 
-    return {
-        "municipalities/index.html": [
+    if remaining_groups == 0 and remaining_series == 0:
+        municipality_copies = [
+            f"宮城県{reviewed_groups}目標のKPI本文を全件公開。次は年度実績との接続。",
+            f"宮城県では{reviewed_groups}目標グループ・{reviewed_series}系列を全件Reviewed化しました。",
+            f"宮城県の{reviewed_groups}目標を全件公開。年度実績は未接続と明示する。",
+            miyagi_queue["next_action"],
+        ]
+    else:
+        municipality_copies = [
             f"宮城県{reviewed_groups}目標を公開。",
             f"先頭{reviewed_groups}グループ・{reviewed_series}系列をReviewed化しました。",
             f"宮城県の{reviewed_groups}目標を公開。未Reviewedの{remaining_groups}目標も明示する。",
             miyagi_queue["next_action"],
-        ],
+        ]
+
+    return {
+        "municipalities/index.html": municipality_copies,
         "municipalities/miyagi/index.html": [
             f"公式の目標値No.1〜{reviewed_groups}を本文・数値・単位・期間まで照合済み。",
             f"目標1〜{reviewed_groups}を、政策上の所属と4つの時点から確認する。",
         ],
         "data-quality/index.html": [
             f"Reviewed済み{reviewed_groups}グループすべてにEvidence Packetを付与。",
-            f"宮城県は残る{remaining_groups}グループ・{manifest['remaining_indicator_series_count']}系列をReviewed化中。",
+            f"宮城県は残る{remaining_groups}グループ・{remaining_series}系列をReviewed化中。",
         ],
     }
 
