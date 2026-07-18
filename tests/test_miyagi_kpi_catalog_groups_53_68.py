@@ -48,7 +48,10 @@ def test_new_catalogs_match_schema_and_exact_sequences():
     assert [item["series_number"] for item in series] == list(range(58, 86))
     assert len(reviewed) == 16
     assert len(series) == 28
-    assert [(group["scope_number"], group["target_group_number"]) for group in reviewed] == [
+    assert [
+        (group["scope_number"], group["target_group_number"])
+        for group in reviewed
+    ] == [
         *[(8, number) for number in range(53, 63)],
         *[(9, number) for number in range(63, 69)],
     ]
@@ -56,7 +59,11 @@ def test_new_catalogs_match_schema_and_exact_sequences():
 
 def test_multi_series_groups_and_page_boundary_are_preserved():
     by_group = {group["target_group_number"]: group for group in groups()}
-    assert {number: len(by_group[number]["series"]) for number in [54, 55, 58, 59, 60, 62, 63, 66, 67]} == {
+    multi_series_counts = {
+        number: len(by_group[number]["series"])
+        for number in [54, 55, 58, 59, 60, 62, 63, 66, 67]
+    }
+    assert multi_series_counts == {
         54: 2,
         55: 2,
         58: 3,
@@ -79,8 +86,16 @@ def test_negative_zero_plus_and_original_comma_are_preserved():
         for group in groups()
         for item in group["series"]
     }
-    assert [value["value"] for value in series[70]["values"][:3]] == [-3.0, -2.5, 0]
-    assert [value["value"] for value in series[71]["values"][:3]] == [-1.5, -1.0, 0]
+    assert [value["value"] for value in series[70]["values"][:3]] == [
+        -3.0,
+        -2.5,
+        0,
+    ]
+    assert [value["value"] for value in series[71]["values"][:3]] == [
+        -1.5,
+        -1.0,
+        0,
+    ]
     assert series[64]["values"][0]["value_text_original"] == "+1.3"
     assert series[72]["values"][2]["value_text_original"] == "+1.5"
     assert series[75]["values"][1]["value"] == 1.19
@@ -97,8 +112,11 @@ def test_declining_midterm_targets_are_not_corrected():
     by_group = {group["target_group_number"]: group for group in groups()}
     for number in [55, 59, 62, 66, 67]:
         assert "公式値を修正しない" in by_group[number]["comparability_note_original"]
-    assert by_group[55]["series"][1]["values"][2]["value"] < by_group[55]["series"][1]["values"][1]["value"]
-    assert by_group[66]["series"][1]["values"][2]["value"] < by_group[66]["series"][1]["values"][1]["value"]
+
+    group55_junior = by_group[55]["series"][1]["values"]
+    group66_junior = by_group[66]["series"][1]["values"]
+    assert group55_junior[2]["value"] < group55_junior[1]["value"]
+    assert group66_junior[2]["value"] < group66_junior[1]["value"]
 
 
 def test_evidence_covers_all_16_groups():
