@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -61,10 +62,11 @@ def catalog_source_count() -> int:
 
 
 def require_copy(content: str, copies: list[str], label: str) -> list[str]:
+    normalized_content = re.sub(r"<!--.*?-->", "", content, flags=re.DOTALL)
     return [
         f"{label} is missing required copy: {copy}"
         for copy in copies
-        if copy not in content
+        if copy not in normalized_content
     ]
 
 
