@@ -105,9 +105,9 @@ export default function MunicipalitiesPage() {
 
         <section className="contentSection">
           <p className="eyebrow">Wave 1 review queue</p>
-          <h2>宮城県{miyagiPolicyReviewStats.reviewedTargetGroups}目標を公開。次は目標24〜38。</h2>
+          <h2>宮城県{miyagiPolicyReviewStats.reviewedTargetGroups}目標を公開。次は目標39〜52。</h2>
           <p className={styles.sectionLead}>
-            福岡県を基準実装とし、北海道では18政策分野・108指標・Evidence Packet 108件のReviewed工程を完了しました。宮城県では128目標グループ・149系列の位置を確認し、先頭23グループ・23系列をReviewed化しました。年度実績との接続は別工程として残し、順位は評価点ではなく資料構造と作業依存関係に基づく運用順です。
+            福岡県を基準実装とし、北海道では18政策分野・108指標・Evidence Packet 108件のReviewed工程を完了しました。宮城県では128目標グループ・149系列の位置を確認し、先頭{miyagiPolicyReviewStats.reviewedTargetGroups}グループ・{miyagiPolicyReviewStats.reviewedIndicatorSeries}系列をReviewed化しました。年度実績との接続は別工程として残し、順位は評価点ではなく資料構造と作業依存関係に基づく運用順です。
           </p>
 
           <div className={styles.queueSummary} aria-label="第1波Reviewed化の進捗">
@@ -196,7 +196,9 @@ export default function MunicipalitiesPage() {
         <section className="callout callout--dark">
           <div>
             <p className="eyebrow">Active review</p>
-            <h2>宮城県の23目標を公開。未Reviewedの105目標も明示する。</h2>
+            <h2>
+              宮城県の{miyagiPolicyReviewStats.reviewedTargetGroups}目標を公開。未Reviewedの{miyagiPolicyReviewStats.remainingTargetGroups}目標も明示する。
+            </h2>
             <p>
               初期値・現況値・中期末目標・後期末目標を原文のまま確認できます。後期末目標の「－」は0にせず未設定、累計値は単年度値に変換せず表示しています。
             </p>
