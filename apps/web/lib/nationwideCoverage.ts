@@ -97,9 +97,11 @@ export const nationwidePrefectureCoverage = records.map((record) => {
     publicHref:
       record.prefecture_code === "01"
         ? "/municipalities/hokkaido"
-        : record.prefecture_code === "40"
-          ? "/municipalities/fukuoka-prefecture"
-          : null,
+        : record.prefecture_code === "04"
+          ? "/municipalities/miyagi"
+          : record.prefecture_code === "40"
+            ? "/municipalities/fukuoka-prefecture"
+            : null,
   };
 });
 
