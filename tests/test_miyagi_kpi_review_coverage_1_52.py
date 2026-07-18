@@ -16,6 +16,7 @@ CATALOGS = [
     POLICY / "miyagi_kpi_catalog_measure8.json",
     POLICY / "miyagi_kpi_catalog_measure9.json",
     POLICY / "miyagi_kpi_catalog_pillar3.json",
+    POLICY / "miyagi_kpi_catalog_measure10.json",
 ]
 EVIDENCE = [
     POLICY / "miyagi_kpi_pillar1_evidence_packets.json",
@@ -31,6 +32,7 @@ EVIDENCE = [
     POLICY / "miyagi_kpi_measure8_evidence_packets.json",
     POLICY / "miyagi_kpi_measure9_evidence_packets.json",
     POLICY / "miyagi_kpi_pillar3_evidence_packets.json",
+    POLICY / "miyagi_kpi_measure10_evidence_packets.json",
 ]
 
 
@@ -42,12 +44,12 @@ def test_reviewed_groups_series_and_evidence_are_contiguous():
     groups = [item for path in CATALOGS for item in load(path)["items"]]
     series = [entry for group in groups for entry in group["series"]]
     packets = [packet for path in EVIDENCE for packet in load(path)]
-    assert [group["target_group_number"] for group in groups] == list(range(1, 72))
-    assert [entry["series_number"] for entry in series] == list(range(1, 90))
-    assert len({group["id"] for group in groups}) == 71
-    assert len({entry["id"] for entry in series}) == 89
-    assert len(packets) == 71
-    assert len({packet["id"] for packet in packets}) == 71
+    assert [group["target_group_number"] for group in groups] == list(range(1, 81))
+    assert [entry["series_number"] for entry in series] == list(range(1, 99))
+    assert len({group["id"] for group in groups}) == 80
+    assert len({entry["id"] for entry in series}) == 98
+    assert len(packets) == 80
+    assert len({packet["id"] for packet in packets}) == 80
     assert {packet["subject_id"] for packet in packets} == {
         group["id"] for group in groups
     }
@@ -58,8 +60,8 @@ def test_manifest_matches_reviewed_files():
     groups = [item for path in CATALOGS for item in load(path)["items"]]
     series = [entry for group in groups for entry in group["series"]]
     packets = [packet for path in EVIDENCE for packet in load(path)]
-    assert manifest["reviewed_target_group_count"] == len(groups) == 71
-    assert manifest["reviewed_indicator_series_count"] == len(series) == 89
-    assert manifest["kpi_evidence_packet_count"] == len(packets) == 71
-    assert manifest["remaining_target_group_count"] == 57
-    assert manifest["remaining_indicator_series_count"] == 60
+    assert manifest["reviewed_target_group_count"] == len(groups) == 80
+    assert manifest["reviewed_indicator_series_count"] == len(series) == 98
+    assert manifest["kpi_evidence_packet_count"] == len(packets) == 80
+    assert manifest["remaining_target_group_count"] == 48
+    assert manifest["remaining_indicator_series_count"] == 51
