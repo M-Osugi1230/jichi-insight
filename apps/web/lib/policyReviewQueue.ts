@@ -114,7 +114,7 @@ export function sourceInventoryStatusLabel(status: SourceInventoryStatus) {
   const labels: Record<SourceInventoryStatus, string> = {
     reviewed: "政策・KPI資料Reviewed",
     policy_hierarchy_reviewed: "政策体系Reviewed・KPI索引中",
-    indicator_positions_reviewed: "指標番号1〜108確認済み・関係確認中",
+    indicator_positions_reviewed: "KPI位置確認済み・本文レビュー中",
     indicator_relationships_reviewed: "指標関係Reviewed・KPI本文抽出中",
     plan_kpi_entry_indexed: "計画・指標入口確認済み",
     plan_followup_entry_indexed: "計画・進捗入口確認済み",
