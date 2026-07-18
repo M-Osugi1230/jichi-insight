@@ -19,64 +19,25 @@
   "indicator_series_count": 149,
   "indicator_source_index_id": "miyagi-indicator-source-index",
   "kpi_count_status": "verified",
-  "reviewed_target_group_count": 23,
-  "reviewed_indicator_series_count": 23,
-  "remaining_target_group_count": 105,
-  "remaining_indicator_series_count": 126,
-  "kpi_evidence_packet_count": 23,
+  "reviewed_target_group_count": 38,
+  "reviewed_indicator_series_count": 40,
+  "remaining_target_group_count": 90,
+  "remaining_indicator_series_count": 109,
+  "kpi_evidence_packet_count": 38,
   "active_work_package": "kpi_catalog",
   "review_status": "in_progress",
   "work_packages": [
-    {
-      "id": "source_inventory",
-      "status": "completed",
-      "deliverable": "基本ビジョン、現行中期実施計画、評価制度、令和7年度確定評価、令和8年度評価原案、評価反映状況を資料単位で固定した。",
-      "completion_gate": "公式URL、資料役割、対象年度、原案・確定版の区別を人が確認済み。"
-    },
-    {
-      "id": "policy_hierarchy",
-      "status": "completed",
-      "deliverable": "4基本方向、8政策、18取組、復興完了に向けた4取組分野を公式順序で登録し、4件のEvidence Packetを付与した。",
-      "completion_gate": "3層の政策体系と別系統の復興取組分野を一次資料と照合済み。"
-    },
-    {
-      "id": "kpi_source_index",
-      "status": "completed",
-      "deliverable": "目標指標一覧表のPDFページ56〜60を索引化し、目標値No. 1〜128、指標No. 1〜149、複数系列17グループ、追加系列21件を確定した。",
-      "completion_gate": "柱4件・取組18件の範囲、掲載ページ、128グループ、149系列を欠落0・重複0で検証済み。"
-    },
-    {
-      "id": "kpi_catalog",
-      "status": "active",
-      "deliverable": "目標グループ1〜23・系列1〜23をEvidence Packet付きでReviewed化した。残る105目標グループ・126系列を公式掲載順に追加する。",
-      "completion_gate": "指標名、初期値、現況値、中期末目標、後期末目標、単位、時点、複数系列、目標未設定を一次資料と照合する。"
-    },
-    {
-      "id": "evaluation_linkage",
-      "status": "queued",
-      "deliverable": "確定評価書の実績・評価とKPIを接続し、評価原案は別版として保持する。",
-      "completion_gate": "対象年度、原案・確定、指標定義変更、予算反映を区別して接続する。"
-    },
-    {
-      "id": "web_publication",
-      "status": "blocked",
-      "deliverable": "宮城県の政策体系・KPI・評価ページを公開する。",
-      "completion_gate": "KPI全件、Evidence Packet、スキーマ、全テスト、Webビルド、静的出力、公開後Smokeを通過する。"
-    }
+    {"id":"source_inventory","status":"completed","deliverable":"基本ビジョン、現行中期実施計画、評価制度、令和7年度確定評価、令和8年度評価原案、評価反映状況を資料単位で固定した。","completion_gate":"公式URL、資料役割、対象年度、原案・確定版の区別を人が確認済み。"},
+    {"id":"policy_hierarchy","status":"completed","deliverable":"4基本方向、8政策、18取組、復興完了に向けた4取組分野を公式順序で登録し、4件のEvidence Packetを付与した。","completion_gate":"3層の政策体系と別系統の復興取組分野を一次資料と照合済み。"},
+    {"id":"kpi_source_index","status":"completed","deliverable":"目標指標一覧表のPDFページ56〜60を索引化し、目標値No. 1〜128、指標No. 1〜149、複数系列17グループ、追加系列21件を確定した。","completion_gate":"柱4件・取組18件の範囲、掲載ページ、128グループ、149系列を欠落0・重複0で検証済み。"},
+    {"id":"kpi_catalog","status":"active","deliverable":"目標グループ1〜38・系列1〜40をEvidence Packet付きでReviewed化した。残る90目標グループ・109系列を公式掲載順に追加する。","completion_gate":"指標名、初期値、現況値、中期末目標、後期末目標、単位、時点、複数系列、目標未設定を一次資料と照合する。"},
+    {"id":"evaluation_linkage","status":"queued","deliverable":"確定評価書の実績・評価とKPIを接続し、評価原案は別版として保持する。","completion_gate":"対象年度、原案・確定、指標定義変更、予算反映を区別して接続する。"},
+    {"id":"web_publication","status":"blocked","deliverable":"宮城県の政策体系・KPI・評価ページを公開する。","completion_gate":"KPI全件、Evidence Packet、スキーマ、全テスト、Webビルド、静的出力、公開後Smokeを通過する。"}
   ],
-  "quality_requirements": [
-    "official_order_preserved",
-    "original_text_preserved",
-    "three_level_hierarchy_preserved",
-    "recovery_areas_kept_separate",
-    "draft_evaluation_not_promoted",
-    "kpi_count_not_guessed",
-    "evidence_packet_required",
-    "actuals_not_inferred"
-  ],
+  "quality_requirements": ["official_order_preserved","original_text_preserved","three_level_hierarchy_preserved","recovery_areas_kept_separate","draft_evaluation_not_promoted","kpi_count_not_guessed","evidence_packet_required","actuals_not_inferred"],
   "open_questions": [
-    "目標グループ24〜38・系列24〜40を次バッチとしてReviewed化する。",
-    "複数系列グループ26の農業・水産業・林業を単一値へ圧縮しない。",
+    "目標グループ39〜52・系列41〜57を次バッチとしてReviewed化する。",
+    "柱2と取組6〜7の複数系列グループ40・42・49を単一値へ圧縮しない。",
     "令和8年度評価原案の確定版公開後に版差分を履歴化する。"
   ]
 }
