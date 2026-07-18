@@ -1,0 +1,75 @@
+{
+  "id": "policy-review-manifest-miyagi",
+  "updated_at": "2026-07-18",
+  "prefecture_code": "04",
+  "municipality_key": "miyagi-prefecture",
+  "source_ids": [
+    "policy-source-miyagi-future-vision-pdf",
+    "policy-source-miyagi-midterm-implementation-plan-2026",
+    "policy-source-miyagi-evaluation-system",
+    "policy-source-miyagi-results-evaluation-2025",
+    "policy-source-miyagi-policy-evaluation-draft-2026",
+    "policy-source-miyagi-evaluation-reflection-2025"
+  ],
+  "policy_direction_count": 4,
+  "policy_count": 8,
+  "measure_count": 18,
+  "recovery_support_area_count": 4,
+  "expected_kpi_count": null,
+  "kpi_count_status": "pending_index",
+  "active_work_package": "kpi_source_index",
+  "review_status": "in_progress",
+  "work_packages": [
+    {
+      "id": "source_inventory",
+      "status": "completed",
+      "deliverable": "基本ビジョン、現行中期実施計画、評価制度、令和7年度確定評価、令和8年度評価原案、評価反映状況を資料単位で固定した。",
+      "completion_gate": "公式URL、資料役割、対象年度、原案・確定版の区別を人が確認済み。"
+    },
+    {
+      "id": "policy_hierarchy",
+      "status": "completed",
+      "deliverable": "4基本方向、8政策、18取組、復興完了に向けた4取組分野を公式順序で登録し、4件のEvidence Packetを付与した。",
+      "completion_gate": "3層の政策体系と別系統の復興取組分野を一次資料と照合済み。"
+    },
+    {
+      "id": "kpi_source_index",
+      "status": "active",
+      "deliverable": "現行中期実施計画の目標指標一覧表を、取組番号、指標名、現況値、目標値、時点、再掲の単位で索引化する。",
+      "completion_gate": "全掲載行と一意指標数を数え、欠落、重複、再掲、条件型、目標未設定を確認する。"
+    },
+    {
+      "id": "kpi_catalog",
+      "status": "queued",
+      "deliverable": "索引化した全KPIをEvidence Packet付きでReviewed化する。",
+      "completion_gate": "本文、数値、単位、期間、条件を一次資料と照合する。"
+    },
+    {
+      "id": "evaluation_linkage",
+      "status": "queued",
+      "deliverable": "確定評価書の実績・評価とKPIを接続し、評価原案は別版として保持する。",
+      "completion_gate": "対象年度、原案・確定、指標定義変更、予算反映を区別して接続する。"
+    },
+    {
+      "id": "web_publication",
+      "status": "blocked",
+      "deliverable": "宮城県の政策体系・KPI・評価ページを公開する。",
+      "completion_gate": "KPI全件、Evidence Packet、スキーマ、全テスト、Webビルド、静的出力、公開後Smokeを通過する。"
+    }
+  ],
+  "quality_requirements": [
+    "official_order_preserved",
+    "original_text_preserved",
+    "three_level_hierarchy_preserved",
+    "recovery_areas_kept_separate",
+    "draft_evaluation_not_promoted",
+    "kpi_count_not_guessed",
+    "evidence_packet_required",
+    "actuals_not_inferred"
+  ],
+  "open_questions": [
+    "目標指標一覧表の一意指標数と政策・施策への再掲関係を確定する。",
+    "現況値と目標値の基準年度・暦年・時点値を個別に保持する。",
+    "令和8年度評価原案の確定版公開後に版差分を履歴化する。"
+  ]
+}
