@@ -19,49 +19,49 @@
   "indicator_series_count": 149,
   "indicator_source_index_id": "miyagi-indicator-source-index",
   "kpi_count_status": "verified",
-  "reviewed_target_group_count": 113,
-  "reviewed_indicator_series_count": 132,
-  "remaining_target_group_count": 15,
-  "remaining_indicator_series_count": 17,
-  "kpi_evidence_packet_count": 113,
-  "active_work_package": "kpi_catalog",
+  "reviewed_target_group_count": 128,
+  "reviewed_indicator_series_count": 149,
+  "remaining_target_group_count": 0,
+  "remaining_indicator_series_count": 0,
+  "kpi_evidence_packet_count": 128,
+  "active_work_package": "evaluation_linkage",
   "review_status": "in_progress",
   "work_packages": [
     {
       "id": "source_inventory",
       "status": "completed",
-      "deliverable": "基本ビジョン、現行中期実施計画、評価制度、令和7年度確定評価、令和8年度評価原案、評価反映状況を資料単位で固定した。",
-      "completion_gate": "公式URL、資料役割、対象年度、原案・確定版の区別を人が確認済み。"
+      "deliverable": "The official plan and related annual source set are recorded separately.",
+      "completion_gate": "Source roles, years, URLs, and version status are reviewed."
     },
     {
       "id": "policy_hierarchy",
       "status": "completed",
-      "deliverable": "4基本方向、8政策、18取組、復興完了に向けた4取組分野を公式順序で登録し、4件のEvidence Packetを付与した。",
-      "completion_gate": "3層の政策体系と別系統の復興取組分野を一次資料と照合済み。"
+      "deliverable": "Four directions, eight policies, eighteen measures, and four recovery areas are recorded in official order.",
+      "completion_gate": "The policy hierarchy and separate recovery areas are reviewed."
     },
     {
       "id": "kpi_source_index",
       "status": "completed",
-      "deliverable": "目標指標一覧表のPDFページ56〜60を索引化し、目標値No. 1〜128、指標No. 1〜149、複数系列17グループ、追加系列21件を確定した。",
-      "completion_gate": "柱4件・取組18件の範囲、掲載ページ、128グループ、149系列を欠落0・重複0で検証済み。"
+      "deliverable": "PDF pages 56 through 60 are indexed for target groups 1 through 128 and series 1 through 149.",
+      "completion_gate": "All scope ranges, pages, groups, and series are verified without gaps or duplicates."
     },
     {
       "id": "kpi_catalog",
-      "status": "active",
-      "deliverable": "目標グループ1〜113・系列1〜132をEvidence Packet付きでReviewed化した。残る15目標グループ・17系列を公式掲載順に追加する。",
-      "completion_gate": "指標名、初期値、現況値、中期末目標、後期末目標、単位、時点、複数系列、目標未設定を一次資料と照合する。"
+      "status": "completed",
+      "deliverable": "Target groups 1 through 128 and series 1 through 149 are reviewed with 128 Evidence Packets.",
+      "completion_gate": "Names, values, periods, units, multiple series, cumulative scope, and unset targets are reviewed."
     },
     {
       "id": "evaluation_linkage",
-      "status": "queued",
-      "deliverable": "確定評価書の実績・評価とKPIを接続し、評価原案は別版として保持する。",
-      "completion_gate": "対象年度、原案・確定、指標定義変更、予算反映を区別して接続する。"
+      "status": "active",
+      "deliverable": "Connect final annual results to KPI records while keeping draft material as a separate version.",
+      "completion_gate": "Year, version status, definition changes, and related source context remain distinct."
     },
     {
       "id": "web_publication",
       "status": "active",
-      "deliverable": "政策体系とReviewed済みKPIを段階公開し、未Reviewed範囲と実績・評価の未接続を明示する。",
-      "completion_gate": "KPI全件、Evidence Packet、スキーマ、全テスト、Webビルド、静的出力、公開後Smokeを通過すると宮城県ページを完全公開へ昇格する。"
+      "deliverable": "Publish the full reviewed KPI catalog while clearly marking annual results as not yet linked.",
+      "completion_gate": "Schemas, tests, Web build, static export, and post-deploy smoke checks must pass."
     }
   ],
   "quality_requirements": [
@@ -75,8 +75,8 @@
     "actuals_not_inferred"
   ],
   "open_questions": [
-    "次は取組16の目標グループ114〜119・系列133〜139をReviewed化する。",
-    "取組15の同一時点、年当たり・一人一日当たり・千トン単位、現況値と目標の逆転を変換・評価せず保持する。",
-    "令和8年度評価原案の確定版公開後に版差分を履歴化する。"
+    "Connect the final FY2025 results source to all 128 target groups and 149 series.",
+    "Keep the FY2026 draft separate from any future final version.",
+    "Do not generate achievement rates before annual values and definition changes are linked."
   ]
 }
