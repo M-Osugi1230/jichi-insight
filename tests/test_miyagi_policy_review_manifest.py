@@ -26,14 +26,17 @@ def test_miyagi_manifest_matches_schema_and_review_stage():
     assert manifest["review_status"] == "in_progress"
 
 
-def test_kpi_counts_are_verified_before_content_review():
+def test_kpi_counts_and_review_progress_are_explicit():
     manifest = load(MANIFEST)
     assert manifest["expected_kpi_count"] == 128
     assert manifest["indicator_series_count"] == 149
+    assert manifest["reviewed_target_group_count"] == 9
+    assert manifest["reviewed_indicator_series_count"] == 9
     assert manifest["indicator_source_index_id"] == "miyagi-indicator-source-index"
     assert manifest["kpi_count_status"] == "verified"
     assert manifest["active_work_package"] == "kpi_catalog"
-    assert "149系列" in manifest["open_questions"][0]
+    assert "目標値No.10〜128" in manifest["open_questions"][0]
+    assert "指標No.10〜149" in manifest["open_questions"][0]
 
 
 def test_work_packages_separate_inventory_hierarchy_kpis_and_evaluation():
@@ -54,7 +57,8 @@ def test_work_packages_separate_inventory_hierarchy_kpis_and_evaluation():
     assert packages["kpi_catalog"]["status"] == "active"
     assert packages["evaluation_linkage"]["status"] == "queued"
     assert packages["web_publication"]["status"] == "blocked"
-    assert "128目標グループ" in packages["kpi_catalog"]["deliverable"]
+    assert "目標値No.1〜9" in packages["kpi_catalog"]["deliverable"]
+    assert "目標値No.10〜128" in packages["kpi_catalog"]["deliverable"]
     assert "原案・確定" in packages["evaluation_linkage"]["completion_gate"]
 
 
