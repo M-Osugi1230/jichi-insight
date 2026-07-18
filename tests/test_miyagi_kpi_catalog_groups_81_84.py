@@ -57,38 +57,13 @@ def test_official_values_and_two_culture_series_are_preserved():
         for item in group["series"]
     }
     assert [item["series_number"] for item in groups[81]["series"]] == [99, 100]
-    assert [value["value"] for value in series[99]["values"]] == [
-        77.3,
-        76.5,
-        79.1,
-        None,
-    ]
-    assert [value["value"] for value in series[100]["values"]] == [
-        81.4,
-        82.5,
-        82.6,
-        None,
-    ]
+    assert [value["value"] for value in series[99]["values"]] == [77.3, 76.5, 79.1, None]
+    assert [value["value"] for value in series[100]["values"]] == [81.4, 82.5, 82.6, None]
     assert "2系列を単一値へ圧縮しない" in groups[81]["comparability_note_original"]
 
-    assert [value["value"] for value in series[101]["values"]] == [
-        80.0,
-        80.0,
-        100,
-        None,
-    ]
-    assert [value["value"] for value in series[102]["values"]] == [
-        55831,
-        47766,
-        72000,
-        None,
-    ]
-    assert [value["value"] for value in series[103]["values"]] == [
-        373,
-        752,
-        790,
-        None,
-    ]
+    assert [value["value"] for value in series[101]["values"]] == [80.0, 80.0, 100, None]
+    assert [value["value"] for value in series[102]["values"]] == [55831, 47766, 72000, None]
+    assert [value["value"] for value in series[103]["values"]] == [373, 752, 790, None]
 
 
 def test_same_period_and_per_thousand_boundaries_are_preserved():
@@ -96,9 +71,7 @@ def test_same_period_and_per_thousand_boundaries_are_preserved():
     group82_values = groups[82]["series"][0]["values"]
     assert group82_values[0]["period_original"] == "R6"
     assert group82_values[1]["period_original"] == "R6"
-    assert "初期値と現況値はともに令和6年" in groups[82][
-        "comparability_note_original"
-    ]
+    assert "初期値と現況値はともに令和6年" in groups[82]["comparability_note_original"]
     assert "人口千人当たり" in groups[84]["series"][0]["indicator_name_original"]
     assert "参加者総数へ変換しない" in groups[84]["comparability_note_original"]
 
@@ -130,5 +103,15 @@ def test_all_reviewed_batches_form_84_groups_and_103_series():
     series = [item for group in groups for item in group["series"]]
     assert [group["target_group_number"] for group in groups] == list(range(1, 85))
     assert [item["series_number"] for item in series] == list(range(1, 104))
-    assert all(group["actual_linkage_status"] == "not_linked" for group in groups)
+    linked = {
+        group["target_group_number"]
+        for group in groups
+        if group["actual_linkage_status"] == "linked"
+    }
+    assert linked == {4, 5, 6, 8, 9}
+    assert all(
+        group["actual_linkage_status"] == "not_linked"
+        for group in groups
+        if group["target_group_number"] not in linked
+    )
     assert all(group["evaluation_status"] == "not_assessed" for group in groups)

@@ -86,16 +86,8 @@ def test_negative_zero_plus_and_original_comma_are_preserved():
         for group in groups()
         for item in group["series"]
     }
-    assert [value["value"] for value in series[70]["values"][:3]] == [
-        -3.0,
-        -2.5,
-        0,
-    ]
-    assert [value["value"] for value in series[71]["values"][:3]] == [
-        -1.5,
-        -1.0,
-        0,
-    ]
+    assert [value["value"] for value in series[70]["values"][:3]] == [-3.0, -2.5, 0]
+    assert [value["value"] for value in series[71]["values"][:3]] == [-1.5, -1.0, 0]
     assert series[64]["values"][0]["value_text_original"] == "+1.3"
     assert series[72]["values"][2]["value_text_original"] == "+1.5"
     assert series[75]["values"][1]["value"] == 1.19
@@ -135,5 +127,15 @@ def test_all_reviewed_batches_form_68_groups_and_85_series():
     series = [item for group in reviewed for item in group["series"]]
     assert [group["target_group_number"] for group in reviewed] == list(range(1, 69))
     assert [item["series_number"] for item in series] == list(range(1, 86))
-    assert all(group["actual_linkage_status"] == "not_linked" for group in reviewed)
+    linked = {
+        group["target_group_number"]
+        for group in reviewed
+        if group["actual_linkage_status"] == "linked"
+    }
+    assert linked == {4, 5, 6, 8, 9}
+    assert all(
+        group["actual_linkage_status"] == "not_linked"
+        for group in reviewed
+        if group["target_group_number"] not in linked
+    )
     assert all(group["evaluation_status"] == "not_assessed" for group in reviewed)

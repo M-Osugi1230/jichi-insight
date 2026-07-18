@@ -113,5 +113,15 @@ def test_all_reviewed_batches_form_100_groups_and_119_series():
     series = [item for group in groups for item in group["series"]]
     assert [group["target_group_number"] for group in groups] == list(range(1, 101))
     assert [item["series_number"] for item in series] == list(range(1, 120))
-    assert all(group["actual_linkage_status"] == "not_linked" for group in groups)
+    linked = {
+        group["target_group_number"]
+        for group in groups
+        if group["actual_linkage_status"] == "linked"
+    }
+    assert linked == {4, 5, 6, 8, 9}
+    assert all(
+        group["actual_linkage_status"] == "not_linked"
+        for group in groups
+        if group["target_group_number"] not in linked
+    )
     assert all(group["evaluation_status"] == "not_assessed" for group in groups)
