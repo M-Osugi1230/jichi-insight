@@ -108,7 +108,7 @@ def test_all_reviewed_batches_form_84_groups_and_103_series():
         for group in groups
         if group["actual_linkage_status"] == "linked"
     }
-    assert linked == {4, 5, 6, 8, 9}
+    assert linked == {4, 5, 6, 8, 9, 10, 11, 12, 14}
     assert all(
         group["actual_linkage_status"] == "not_linked"
         for group in groups
