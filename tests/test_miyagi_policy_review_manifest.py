@@ -54,7 +54,7 @@ def test_work_packages_separate_inventory_hierarchy_kpis_and_evaluation():
     assert packages["kpi_catalog"]["status"] == "active"
     assert packages["evaluation_linkage"]["status"] == "queued"
     assert packages["web_publication"]["status"] == "blocked"
-    assert "128グループ" in packages["kpi_catalog"]["deliverable"]
+    assert "128目標グループ" in packages["kpi_catalog"]["deliverable"]
     assert "原案・確定" in packages["evaluation_linkage"]["completion_gate"]
 
 
