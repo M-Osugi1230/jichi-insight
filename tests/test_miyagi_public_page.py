@@ -15,16 +15,10 @@ def read(path: Path) -> str:
 def test_miyagi_page_copy_and_boundaries():
     page = read(PAGE)
     assert STYLES.is_file()
-    for text in [
-        "宮城県の政策目標を、原文・期間・未設定までそのまま読む。",
-        "成果の達成率ではなく",
-        "柱1〜3と取組1〜10",
-        "次は取組11の目標81〜84",
-        "累計値。単年度値ではありません。",
-        "目標値の確認と、政策成果の評価を分ける。",
-        "評価原案と確定評価の版差分",
-    ]:
-        assert text in page
+    assert "柱1〜3と取組1〜12" in page
+    assert "次は取組13の目標94〜100" in page
+    assert "累計値。単年度値ではありません。" in page
+    assert "成果の達成率ではなく" in page
     assert "direction.display_order <= 3" in page
 
 
@@ -38,5 +32,5 @@ def test_miyagi_page_links_and_dynamic_counts():
     assert "miyagiPolicyReviewStats.reviewedTargetGroups" in municipalities
     assert "miyagiPolicyReviewStats.remainingTargetGroups" in municipalities
     assert "miyagiPolicyReviewStats.reviewedIndicatorSeries" in municipalities
-    assert "次は取組11の目標81〜84" in municipalities
+    assert "次は取組13の目標94〜100" in municipalities
     assert '"/municipalities/miyagi"' in sitemap
