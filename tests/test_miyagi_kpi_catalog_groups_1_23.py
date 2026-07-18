@@ -124,8 +124,18 @@ def test_cumulative_negative_and_declining_targets_are_explicit():
         assert "補正しない" in groups[number]["comparability_note_original"]
 
 
-def test_review_status_stops_before_actuals_and_evaluation():
+def test_review_status_preserves_actuals_boundary_and_evaluation_boundary():
     groups = all_groups()
     assert all(group["review_status"] == "reviewed" for group in groups)
-    assert all(group["actual_linkage_status"] == "not_linked" for group in groups)
+    linked = {
+        group["target_group_number"]
+        for group in groups
+        if group["actual_linkage_status"] == "linked"
+    }
+    assert linked == {4, 5, 6, 8, 9}
+    assert all(
+        group["actual_linkage_status"] == "not_linked"
+        for group in groups
+        if group["target_group_number"] not in linked
+    )
     assert all(group["evaluation_status"] == "not_assessed" for group in groups)
