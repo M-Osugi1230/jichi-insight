@@ -5,22 +5,12 @@
   "type": "object",
   "additionalProperties": false,
   "required": [
-    "id",
-    "updated_at",
-    "prefecture_code",
-    "municipality_key",
-    "source_ids",
-    "policy_direction_count",
-    "policy_count",
-    "measure_count",
-    "recovery_support_area_count",
-    "expected_kpi_count",
-    "kpi_count_status",
-    "active_work_package",
-    "review_status",
-    "work_packages",
-    "quality_requirements",
-    "open_questions"
+    "id", "updated_at", "prefecture_code", "municipality_key", "source_ids",
+    "policy_direction_count", "policy_count", "measure_count",
+    "recovery_support_area_count", "expected_kpi_count",
+    "indicator_series_count", "indicator_source_index_id", "kpi_count_status",
+    "active_work_package", "review_status", "work_packages",
+    "quality_requirements", "open_questions"
   ],
   "properties": {
     "id": {"const": "policy-review-manifest-miyagi"},
@@ -28,26 +18,23 @@
     "prefecture_code": {"const": "04"},
     "municipality_key": {"const": "miyagi-prefecture"},
     "source_ids": {
-      "type": "array",
-      "minItems": 6,
-      "uniqueItems": true,
+      "type": "array", "minItems": 6, "uniqueItems": true,
       "items": {"type": "string", "pattern": "^policy-source-[a-z0-9-]+$"}
     },
     "policy_direction_count": {"const": 4},
     "policy_count": {"const": 8},
     "measure_count": {"const": 18},
     "recovery_support_area_count": {"const": 4},
-    "expected_kpi_count": {"type": "null"},
-    "kpi_count_status": {"const": "pending_index"},
-    "active_work_package": {"const": "kpi_source_index"},
+    "expected_kpi_count": {"const": 128},
+    "indicator_series_count": {"const": 149},
+    "indicator_source_index_id": {"const": "miyagi-indicator-source-index"},
+    "kpi_count_status": {"const": "verified"},
+    "active_work_package": {"const": "kpi_catalog"},
     "review_status": {"const": "in_progress"},
     "work_packages": {
-      "type": "array",
-      "minItems": 6,
-      "maxItems": 6,
+      "type": "array", "minItems": 6, "maxItems": 6,
       "items": {
-        "type": "object",
-        "additionalProperties": false,
+        "type": "object", "additionalProperties": false,
         "required": ["id", "status", "deliverable", "completion_gate"],
         "properties": {
           "id": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"},
@@ -58,25 +45,18 @@
       }
     },
     "quality_requirements": {
-      "type": "array",
-      "uniqueItems": true,
-      "minItems": 6,
+      "type": "array", "uniqueItems": true, "minItems": 6,
       "items": {
         "enum": [
-          "official_order_preserved",
-          "original_text_preserved",
-          "three_level_hierarchy_preserved",
-          "recovery_areas_kept_separate",
-          "draft_evaluation_not_promoted",
-          "kpi_count_not_guessed",
-          "evidence_packet_required",
-          "actuals_not_inferred"
+          "official_order_preserved", "original_text_preserved",
+          "three_level_hierarchy_preserved", "recovery_areas_kept_separate",
+          "draft_evaluation_not_promoted", "kpi_count_not_guessed",
+          "evidence_packet_required", "actuals_not_inferred"
         ]
       }
     },
     "open_questions": {
-      "type": "array",
-      "minItems": 1,
+      "type": "array", "minItems": 1,
       "items": {"type": "string", "minLength": 1}
     }
   }
