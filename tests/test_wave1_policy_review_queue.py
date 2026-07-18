@@ -47,13 +47,12 @@ def test_reviewed_references_and_active_miyagi_progress():
     assert miyagi["status"] == "active_review"
     assert miyagi["source_inventory_status"] == "indicator_positions_reviewed"
     assert miyagi["next_gate"] == "kpi_catalog"
-    assert "目標グループ1〜93・系列1〜112" in miyagi["next_action"]
-    assert "目標グループ94〜100・系列113〜119" in miyagi["next_action"]
-    assert "取組12の9グループ・9系列" in miyagi["priority_basis"]
-    assert "累計4グループ" in miyagi["priority_basis"]
-    assert "同一年の3グループ" in miyagi["priority_basis"]
-    assert "人口10万対の率" in miyagi["priority_basis"]
-    assert "小数精度73.96" in miyagi["priority_basis"]
+    assert "目標グループ1〜100・系列1〜119" in miyagi["next_action"]
+    assert "目標グループ101〜104・系列120〜123" in miyagi["next_action"]
+    assert "取組13の7グループ・7系列" in miyagi["priority_basis"]
+    assert "累計1グループ" in miyagi["priority_basis"]
+    assert "同一年の2グループ" in miyagi["priority_basis"]
+    assert "原文表記3939・2428" in miyagi["priority_basis"]
     assert "後期末目標未設定" in miyagi["priority_basis"]
 
     assert {
