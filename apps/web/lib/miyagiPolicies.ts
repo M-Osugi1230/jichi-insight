@@ -24,6 +24,42 @@ import pillar1Evidence from "../../../data/entities/policy/miyagi_kpi_pillar1_ev
 import directionEvidence from "../../../data/entities/policy/miyagi_policy_direction_evidence_packets.json";
 import hierarchy from "../../../data/entities/policy/miyagi_policy_hierarchy.json";
 
+export type MiyagiKpiValue = {
+  role: "initial" | "current" | "midterm_target" | "late_target";
+  period_original: "R3" | "R4" | "R5" | "R6" | "R9" | "R12";
+  period_year: number;
+  value: number | null;
+  status: "numeric" | "not_set" | "not_available" | "conditional";
+  operator?: "exact" | "at_least" | "at_most";
+  value_text_original: string;
+};
+
+export type MiyagiKpiSeries = {
+  id: string;
+  series_number: number;
+  indicator_name_original: string;
+  unit_original: string;
+  aggregation_scope: "single_period" | "cumulative_to_date";
+  values: MiyagiKpiValue[];
+};
+
+export type MiyagiKpiGroup = {
+  id: string;
+  target_group_number: number;
+  scope_type: "pillar" | "measure";
+  scope_number: number;
+  source_page: number;
+  printed_page: number;
+  sdg_goal_numbers: number[];
+  series: MiyagiKpiSeries[];
+  target_setting_status: "set" | "partially_set" | "not_set";
+  comparability_note_original: string | null;
+  actual_linkage_status: "not_linked";
+  evaluation_status: "not_assessed";
+  review_status: "reviewed";
+  confidence: "high";
+};
+
 const policies = hierarchy.directions.flatMap((direction) => direction.policies);
 const measures = policies.flatMap((policy) => policy.measures);
 const reviewedGroups = [
@@ -35,7 +71,7 @@ const reviewedGroups = [
   ...measure4bCatalog.items,
   ...measure5aCatalog.items,
   ...measure5bCatalog.items,
-];
+] as MiyagiKpiGroup[];
 const reviewedSeries = reviewedGroups.flatMap((group) => group.series);
 const kpiEvidence = [
   ...pillar1Evidence,
@@ -50,6 +86,32 @@ const kpiEvidence = [
   ...group35Evidence,
   ...group36Evidence,
   ...measure5TailEvidence,
+];
+
+export const reviewedMiyagiPolicyHierarchy = hierarchy;
+export const reviewedMiyagiPolicyDirections = hierarchy.directions;
+export const reviewedMiyagiKpiGroups = [...reviewedGroups].sort(
+  (left, right) => left.target_group_number - right.target_group_number,
+);
+export const miyagiKpiEvidencePackets = kpiEvidence;
+
+export const miyagiKpiScopes = [
+  {
+    id: "pillar-1",
+    label: "柱1",
+    title: hierarchy.directions[0].title_original,
+    groups: reviewedMiyagiKpiGroups.filter(
+      (group) => group.scope_type === "pillar" && group.scope_number === 1,
+    ),
+  },
+  ...hierarchy.directions[0].policies.flatMap((policy) => policy.measures).slice(0, 5).map((measure) => ({
+    id: measure.id,
+    label: `取組${measure.measure_number}`,
+    title: measure.title_original,
+    groups: reviewedMiyagiKpiGroups.filter(
+      (group) => group.scope_type === "measure" && group.scope_number === measure.measure_number,
+    ),
+  })),
 ];
 
 export const miyagiPolicyReviewStats = {
