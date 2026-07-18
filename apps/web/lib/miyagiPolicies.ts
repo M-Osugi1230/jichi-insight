@@ -88,6 +88,13 @@ const kpiEvidence = [
   ...measure5TailEvidence,
 ];
 
+function numericValue(series: MiyagiKpiSeries, role: MiyagiKpiValue["role"]) {
+  const value = series.values.find((candidate) => candidate.role === role);
+  return value?.status === "numeric" && typeof value.value === "number"
+    ? value.value
+    : null;
+}
+
 export const reviewedMiyagiPolicyHierarchy = hierarchy;
 export const reviewedMiyagiPolicyDirections = hierarchy.directions;
 export const reviewedMiyagiKpiGroups = [...reviewedGroups].sort(
@@ -104,14 +111,19 @@ export const miyagiKpiScopes = [
       (group) => group.scope_type === "pillar" && group.scope_number === 1,
     ),
   },
-  ...hierarchy.directions[0].policies.flatMap((policy) => policy.measures).slice(0, 5).map((measure) => ({
-    id: measure.id,
-    label: `取組${measure.measure_number}`,
-    title: measure.title_original,
-    groups: reviewedMiyagiKpiGroups.filter(
-      (group) => group.scope_type === "measure" && group.scope_number === measure.measure_number,
-    ),
-  })),
+  ...hierarchy.directions[0].policies
+    .flatMap((policy) => policy.measures)
+    .slice(0, 5)
+    .map((measure) => ({
+      id: measure.id,
+      label: `取組${measure.measure_number}`,
+      title: measure.title_original,
+      groups: reviewedMiyagiKpiGroups.filter(
+        (group) =>
+          group.scope_type === "measure" &&
+          group.scope_number === measure.measure_number,
+      ),
+    })),
 ];
 
 export const miyagiPolicyReviewStats = {
@@ -149,20 +161,25 @@ export const miyagiPolicyReviewStats = {
   missingUnitSeries: reviewedSeries.filter(
     (series) => series.unit_original === "単位記載なし",
   ).length,
-  originalUnformattedTargets: reviewedSeries.filter(
-    (series) => ["21400", "4126"].includes(series.values[2]?.value_text_original),
+  originalUnformattedTargets: reviewedSeries.filter((series) =>
+    ["21400", "4126"].includes(
+      series.values.find((value) => value.role === "midterm_target")
+        ?.value_text_original ?? "",
+    ),
   ).length,
   negativeValues: reviewedSeries.reduce(
     (total, series) =>
-      total + series.values.filter((value) => value.value !== null && value.value < 0).length,
+      total +
+      series.values.filter(
+        (value) => typeof value.value === "number" && value.value < 0,
+      ).length,
     0,
   ),
   decliningMidtermGroups: reviewedGroups.filter((group) =>
     group.series.some((series) => {
-      const values = series.values;
-      return values?.[1]?.value !== null
-        && values?.[2]?.value !== null
-        && values[2].value < values[1].value;
+      const current = numericValue(series, "current");
+      const midtermTarget = numericValue(series, "midterm_target");
+      return current !== null && midtermTarget !== null && midtermTarget < current;
     }),
   ).length,
   expectedKpiCount: manifest.expected_kpi_count,
