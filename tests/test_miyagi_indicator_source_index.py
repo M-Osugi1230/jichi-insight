@@ -27,8 +27,10 @@ def test_miyagi_indicator_source_index_matches_schema():
     assert index["indicator_series_count"] == 149
     assert index["multi_series_group_count"] == 17
     assert index["additional_series_count"] == 21
+    assert index["reviewed_target_group_count"] == 9
+    assert index["reviewed_indicator_series_count"] == 9
     assert index["review_status"] == "positions_verified"
-    assert index["content_review_status"] == "pending_review"
+    assert index["content_review_status"] == "in_progress"
 
 
 def test_page_ranges_cover_all_series_without_gaps_or_duplicates():
