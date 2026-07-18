@@ -81,19 +81,31 @@ export const miyagiPolicyReviewStats = {
   cumulativeGroups: reviewedGroups.filter(
     (group) => group.series[0]?.aggregation_scope === "cumulative_to_date",
   ).length,
+  reviewedMultiSeriesGroups: reviewedGroups.filter(
+    (group) => group.series.length > 1,
+  ).length,
+  missingUnitSeries: reviewedSeries.filter(
+    (series) => series.unit_original === "単位記載なし",
+  ).length,
+  originalUnformattedTargets: reviewedSeries.filter(
+    (series) => ["21400", "4126"].includes(series.values[2]?.value_text_original),
+  ).length,
   negativeValues: reviewedSeries.reduce(
     (total, series) =>
       total + series.values.filter((value) => value.value !== null && value.value < 0).length,
     0,
   ),
-  decliningMidtermGroups: reviewedGroups.filter((group) => {
-    const values = group.series[0]?.values;
-    return values?.[1]?.value !== null
-      && values?.[2]?.value !== null
-      && values[2].value < values[1].value;
-  }).length,
+  decliningMidtermGroups: reviewedGroups.filter((group) =>
+    group.series.some((series) => {
+      const values = series.values;
+      return values?.[1]?.value !== null
+        && values?.[2]?.value !== null
+        && values[2].value < values[1].value;
+    }),
+  ).length,
   expectedKpiCount: manifest.expected_kpi_count,
   kpiCountStatus: manifest.kpi_count_status,
   activeWorkPackage: manifest.active_work_package,
   contentReviewStatus: indicatorIndex.content_review_status,
+  kpiLinkageStatus: hierarchy.kpi_linkage_status,
 };
