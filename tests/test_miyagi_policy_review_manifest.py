@@ -34,6 +34,7 @@ def test_kpi_counts_are_verified_before_content_review():
     assert manifest["kpi_count_status"] == "verified"
     assert manifest["active_work_package"] == "kpi_catalog"
     assert "149系列" in manifest["open_questions"][0]
+    assert "指標No.1〜23" in manifest["open_questions"][0]
 
 
 def test_work_packages_separate_inventory_hierarchy_kpis_and_evaluation():
@@ -53,8 +54,10 @@ def test_work_packages_separate_inventory_hierarchy_kpis_and_evaluation():
     assert packages["kpi_source_index"]["status"] == "completed"
     assert packages["kpi_catalog"]["status"] == "active"
     assert packages["evaluation_linkage"]["status"] == "queued"
-    assert packages["web_publication"]["status"] == "blocked"
+    assert packages["web_publication"]["status"] == "active"
     assert "128目標グループ" in packages["kpi_catalog"]["deliverable"]
+    assert "目標グループ1〜23" in packages["kpi_catalog"]["deliverable"]
+    assert "段階公開" in packages["web_publication"]["deliverable"]
     assert "原案・確定" in packages["evaluation_linkage"]["completion_gate"]
 
 
