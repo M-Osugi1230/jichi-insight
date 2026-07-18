@@ -18,11 +18,13 @@ def test_manifest_schema_counts_and_progress():
     assert list(validator.iter_errors(manifest)) == []
     assert manifest["expected_kpi_count"] == 128
     assert manifest["indicator_series_count"] == 149
-    assert manifest["reviewed_target_group_count"] == 106
-    assert manifest["reviewed_indicator_series_count"] == 125
-    assert manifest["remaining_target_group_count"] == 22
-    assert manifest["remaining_indicator_series_count"] == 24
-    assert manifest["kpi_evidence_packet_count"] == 106
+    assert manifest["reviewed_target_group_count"] == 113
+    assert manifest["reviewed_indicator_series_count"] == 132
+    assert manifest["remaining_target_group_count"] == 15
+    assert manifest["remaining_indicator_series_count"] == 17
+    assert manifest["kpi_evidence_packet_count"] == 113
+    assert 113 + 15 == 128
+    assert 132 + 17 == 149
     assert manifest["active_work_package"] == "kpi_catalog"
     assert manifest["review_status"] == "in_progress"
 
@@ -42,7 +44,10 @@ def test_manifest_work_packages_and_quality_requirements():
     assert packages["policy_hierarchy"]["status"] == "completed"
     assert packages["kpi_source_index"]["status"] == "completed"
     assert packages["kpi_catalog"]["status"] == "active"
+    assert "目標グループ1〜113" in packages["kpi_catalog"]["deliverable"]
+    assert "残る15目標グループ" in packages["kpi_catalog"]["deliverable"]
     assert packages["evaluation_linkage"]["status"] == "queued"
     assert packages["web_publication"]["status"] == "active"
+    assert "目標グループ114〜119" in manifest["open_questions"][0]
     assert len(manifest["quality_requirements"]) == 8
     assert len(set(manifest["quality_requirements"])) == 8
