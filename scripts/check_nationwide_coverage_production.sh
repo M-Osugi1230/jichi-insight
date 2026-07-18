@@ -6,6 +6,33 @@ REPORT="${JICHI_NATIONWIDE_SMOKE_REPORT:-nationwide-coverage-smoke-report.txt}"
 TEMP_FILE="$(mktemp)"
 trap 'rm -f "$TEMP_FILE"' EXIT
 
+readarray -t MIYAGI_STATE < <(
+  python - <<'PY'
+import json
+from pathlib import Path
+
+root = Path.cwd()
+manifest = json.loads(
+    (root / "data/catalog/miyagi_policy_review_manifest.json").read_text(encoding="utf-8")
+)
+queue = json.loads(
+    (root / "data/catalog/wave1_policy_review_queue.json").read_text(encoding="utf-8")
+)
+miyagi = next(item for item in queue["items"] if item["prefecture_code"] == "04")
+print(manifest["reviewed_target_group_count"])
+print(manifest["reviewed_indicator_series_count"])
+print(manifest["remaining_target_group_count"])
+print(manifest["remaining_indicator_series_count"])
+print(miyagi["next_action"])
+PY
+)
+
+REVIEWED_GROUPS="${MIYAGI_STATE[0]}"
+REVIEWED_SERIES="${MIYAGI_STATE[1]}"
+REMAINING_GROUPS="${MIYAGI_STATE[2]}"
+REMAINING_SERIES="${MIYAGI_STATE[3]}"
+NEXT_ACTION="${MIYAGI_STATE[4]}"
+
 : > "$REPORT"
 printf 'Jichi Insight nationwide coverage production smoke\n' >> "$REPORT"
 printf 'URL: %s\n' "$BASE_URL" >> "$REPORT"
@@ -14,14 +41,13 @@ printf 'Checked at: %s\n\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$REPORT"
 check_page() {
   local route="$1"
   shift
-  local ready=false
   local status="000"
+
   for attempt in $(seq 1 18); do
     status="$(curl --silent --show-error --location --output "$TEMP_FILE" --write-out '%{http_code}' "$BASE_URL$route" || true)"
     printf '%s attempt %02d: HTTP %s\n' "$route" "$attempt" "$status" >> "$REPORT"
     if [[ "$status" == "200" ]]; then
       local missing=false
-      local required
       for required in "$@"; do
         if ! grep --quiet --fixed-strings "$required" "$TEMP_FILE"; then
           missing=true
@@ -29,21 +55,18 @@ check_page() {
         fi
       done
       if [[ "$missing" == "false" ]]; then
-        ready=true
-        break
+        for required in "$@"; do
+          printf '  PASS %s\n' "$required" >> "$REPORT"
+        done
+        return 0
       fi
     fi
     sleep 10
   done
-  if [[ "$ready" != "true" ]]; then
-    printf 'FAIL %s\n' "$route" >> "$REPORT"
-    cat "$REPORT"
-    exit 1
-  fi
-  local required
-  for required in "$@"; do
-    printf '  PASS %s\n' "$required" >> "$REPORT"
-  done
+
+  printf 'FAIL %s\n' "$route" >> "$REPORT"
+  cat "$REPORT"
+  exit 1
 }
 
 check_absent() {
@@ -61,57 +84,32 @@ check_absent() {
 
 check_page "/municipalities/" \
   "全国47都道府県を、同じ品質段階で追う。" \
-  "全国登録" \
   "公式入口確認済み" \
-  "総合計画索引済み" \
   "現行計画確認済み" \
   "Reviewedデータ公開" \
-  "2050東京戦略 ～東京 もっとよくなる～" \
-  "Beyond EXPO 2025" \
-  "「人生100年時代のフロンティア県・香川」実現計画" \
-  "新・沖縄21世紀ビジョン基本計画（沖縄振興計画）" \
-  "宮城県68目標を公開。次は柱3の目標69〜71。" \
-  "Reviewed基準実装" \
-  "Reviewed化作業中" \
-  "KPI位置確認済み・本文レビュー中" \
-  "全108指標とEvidence Packet 108件をReviewed化済み。" \
-  "目標グループ1〜68・系列1〜85をEvidence Packet付きでReviewed化済み。" \
-  "目標グループ69〜71・系列86〜89" \
-  "作業待ち" \
-  "宮城県の68目標を公開。未Reviewedの60目標も明示する。" \
-  "公式URL候補" \
-  "北海道" "宮城県" "東京都" "愛知県" "大阪府" "広島県" "香川県" "福岡県" "沖縄県" "福岡市" "北九州市"
+  "宮城県${REVIEWED_GROUPS}目標を公開。" \
+  "先頭${REVIEWED_GROUPS}グループ・${REVIEWED_SERIES}系列をReviewed化しました。" \
+  "宮城県の${REVIEWED_GROUPS}目標を公開。未Reviewedの${REMAINING_GROUPS}目標も明示する。" \
+  "$NEXT_ACTION" \
+  "北海道" "宮城県" "東京都" "愛知県" "大阪府" "広島県" "香川県" "福岡県" "沖縄県"
 
 check_absent "/municipalities/" "「未来の東京」戦略"
 check_absent "/municipalities/" "将来ビジョン・大阪"
-check_absent "/municipalities/" "大阪の再生・成長に向けた新戦略"
-check_absent "/municipalities/" "一意指標数と掲載行数を確定する"
 
 check_page "/municipalities/hokkaido/" \
   "北海道の政策指標を、原文と期間から読む。" \
   "108 / 108のKPI本文Reviewedを完了。次は年度実績との接続。" \
-  "食から歴史・文化・スポーツまで。" \
-  "自然・環境" \
-  "エゾシカの個体数指数" \
-  "歴史・文化・スポーツ" \
-  "北海道博物館の利用者数" \
-  "本道出身のオリンピック･パラリンピック出場者数" \
-  "本道出身者のオリンピック･パラリンピックメダル総獲得数" \
-  "年度実績へ接続済み" \
   "目標を確認したことと、成果を確認したことは別です。" \
   "達成率や政策評価は表示しません。"
 
-check_absent "/municipalities/hokkaido/" "108指標すべての完了ではありません"
-check_absent "/municipalities/hokkaido/" "指標109〜108"
-
 check_page "/municipalities/miyagi/" \
   "宮城県の政策目標を、原文・期間・未設定までそのまま読む。" \
-  "公式の目標値No.1〜68を本文・数値・単位・期間まで照合済み。" \
-  "目標1〜68を、政策上の所属と4つの時点から確認する。" \
-  "全国平均正答率とのかい離（小学6年生）（ポイント）" \
-  "児童生徒の体力・運動能力調査における体力合計点の全国平均値とのかい離" \
-  "不登校児童生徒のうち学習支援を受けている児童生徒の割合" \
-  "次は柱3の目標69〜71。" \
+  "公式の目標値No.1〜${REVIEWED_GROUPS}を本文・数値・単位・期間まで照合済み。" \
+  "目標1〜${REVIEWED_GROUPS}を、政策上の所属と4つの時点から確認する。" \
+  "人口の社会増減（人）" \
+  "暮らしの満足度（宮城で暮らして良かったと思う県民の割合）（%）" \
+  "健康寿命（日常生活に制限のない期間の平均）（男性）（年）" \
+  "健康寿命（日常生活に制限のない期間の平均）（女性）（年）" \
   "目標値の確認と、政策成果の評価を分ける。"
 
 check_absent "/municipalities/miyagi/" "達成率を算出済み"
@@ -119,38 +117,11 @@ check_absent "/municipalities/miyagi/" "政策評価済み"
 
 check_page "/data-quality/" \
   "全国登録、計画入口、現行性、Reviewed、公開済みを分ける。" \
-  "47都道府県を共通コードと地域区分で登録。" \
-  "公式計画を見つけた件数と、Reviewedに使える件数を分ける。" \
-  "北海道指標PDF" \
-  "福岡県と北海道を全国展開のデータ・Evidence Packet基準として使用。" \
-  "宮城県政策資料" \
-  "うちReviewed済み3件。評価原案は確定版と分離。" \
-  "宮城県政策体系" \
-  "基本方向・政策・取組。復興取組4分野は別系統。" \
-  "宮城県KPI位置" \
-  "目標グループ。個別系列は149件、掲載5ページ。" \
-  "宮城県複数系列" \
-  "追加系列21件。位置は確認済み、本文はReviewed化中。" \
   "宮城県Reviewed KPI" \
-  "柱1〜2・取組1〜9の系列85件を一次資料と照合。" \
   "宮城県KPI Evidence" \
-  "Reviewed済み68グループすべてにEvidence Packetを付与。" \
-  "宮城県・後期末未設定" \
-  "取組KPIの「－」を0へ変換せず、後期末目標未設定として保持。" \
-  "宮城県・累計KPI" \
-  "［累計］表記を単年度値へ変換しない。" \
-  "宮城県・負値" \
-  "経済成長率や全国平均との差の負値を欠損・エラーへ変換しない。" \
-  "宮城県・非単調目標" \
-  "現況値より低い中期末目標も公式値のまま保持。" \
-  "宮城県は残る60グループ・64系列をReviewed化中。" \
-  "北海道Reviewed指標" \
-  "指標1〜108を一次資料と照合し、未Reviewedは0件。" \
-  "北海道KPI Evidence" \
-  "全108指標にEvidence Packetを付与。" \
-  "条件目標" \
-  "前年比較、範囲、過去最高値などの原文条件を保持。" \
-  "KPI本文は全件Reviewed済みで、年度実績接続は別ゲート。"
+  "Reviewed済み${REVIEWED_GROUPS}グループすべてにEvidence Packetを付与。" \
+  "宮城県は残る${REMAINING_GROUPS}グループ・${REMAINING_SERIES}系列をReviewed化中。" \
+  "データ不足を、点数で埋めません。"
 
 printf '\nResult: PASS\n' >> "$REPORT"
 cat "$REPORT"

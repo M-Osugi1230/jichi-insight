@@ -53,7 +53,7 @@ export default function MiyagiPage() {
         >
           <p>
             新・宮城の将来ビジョンの4基本方向・8政策・18取組をReviewed化し、
-            現行中期実施計画にある128目標グループのうち、柱1〜2と取組1〜9の
+            現行中期実施計画にある128目標グループのうち、柱1〜3と取組1〜9の
             {miyagiPolicyReviewStats.reviewedTargetGroups}件を公開しています。
             これは成果の達成率ではなく、一次資料を人が照合した作業カバレッジです。
           </p>
@@ -93,7 +93,7 @@ export default function MiyagiPage() {
             <p className="eyebrow">Review coverage</p>
             <h2 id="miyagi-review-progress">
               {miyagiPolicyReviewStats.reviewedTargetGroups} / {miyagiPolicyReviewStats.targetGroups}
-              をReviewed。次は柱3の目標69〜71。
+              をReviewed。次は取組10の目標72〜80。
             </h2>
           </div>
           <div className={styles.progressDetail}>
@@ -111,7 +111,7 @@ export default function MiyagiPage() {
               </div>
               <div>
                 <dt>今回の範囲</dt>
-                <dd>柱1〜2・取組1〜9</dd>
+                <dd>柱1〜3・取組1〜9</dd>
               </div>
             </dl>
             <p>
@@ -137,7 +137,7 @@ export default function MiyagiPage() {
                 <div className={styles.directionHeader}>
                   <span>{String(direction.display_order).padStart(2, "0")}</span>
                   <StatusBadge
-                    label={direction.display_order <= 2 ? "KPI一部公開" : "体系Reviewed"}
+                    label={direction.display_order <= 3 ? "KPI一部公開" : "体系Reviewed"}
                     tone="progress"
                   />
                 </div>

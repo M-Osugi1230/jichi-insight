@@ -12,6 +12,7 @@ import measure8Catalog from "../../../data/entities/policy/miyagi_kpi_catalog_me
 import measure9Catalog from "../../../data/entities/policy/miyagi_kpi_catalog_measure9.json";
 import pillar1Catalog from "../../../data/entities/policy/miyagi_kpi_catalog_pillar1.json";
 import pillar2Catalog from "../../../data/entities/policy/miyagi_kpi_catalog_pillar2.json";
+import pillar3Catalog from "../../../data/entities/policy/miyagi_kpi_catalog_pillar3.json";
 import measure1Evidence from "../../../data/entities/policy/miyagi_kpi_measure1_evidence_packets.json";
 import measure2Evidence from "../../../data/entities/policy/miyagi_kpi_measure2_evidence_packets.json";
 import measure3aEvidence from "../../../data/entities/policy/miyagi_kpi_measure3a_evidence_packets.json";
@@ -24,12 +25,13 @@ import measure8Evidence from "../../../data/entities/policy/miyagi_kpi_measure8_
 import measure9Evidence from "../../../data/entities/policy/miyagi_kpi_measure9_evidence_packets.json";
 import pillar1Evidence from "../../../data/entities/policy/miyagi_kpi_pillar1_evidence_packets.json";
 import pillar2Evidence from "../../../data/entities/policy/miyagi_kpi_pillar2_evidence_packets.json";
+import pillar3Evidence from "../../../data/entities/policy/miyagi_kpi_pillar3_evidence_packets.json";
 import directionEvidence from "../../../data/entities/policy/miyagi_policy_direction_evidence_packets.json";
 import hierarchy from "../../../data/entities/policy/miyagi_policy_hierarchy.json";
 
 export type MiyagiKpiValue = {
   role: "initial" | "current" | "midterm_target" | "late_target";
-  period_original: "R3" | "R4" | "R5" | "R6" | "R7" | "R9" | "R12";
+  period_original: "R1" | "R3" | "R4" | "R5" | "R6" | "R7" | "R9" | "R12";
   period_year: number;
   value: number | null;
   status: "numeric" | "not_set" | "not_available" | "conditional";
@@ -83,6 +85,7 @@ const reviewedGroups = [
   ...measure7Catalog.items,
   ...measure8Catalog.items,
   ...measure9Catalog.items,
+  ...pillar3Catalog.items,
 ] as MiyagiKpiGroup[];
 const reviewedSeries = reviewedGroups.flatMap((group) => group.series);
 const kpiEvidence = [
@@ -98,6 +101,7 @@ const kpiEvidence = [
   ...measure7Evidence,
   ...measure8Evidence,
   ...measure9Evidence,
+  ...pillar3Evidence,
 ];
 
 export const reviewedMiyagiPolicyHierarchy = hierarchy;
@@ -140,6 +144,14 @@ export const miyagiKpiScopes = [
       (group) => group.scope_type === "measure" && group.scope_number === measure.measure_number,
     ),
   })),
+  {
+    id: "pillar-3",
+    label: "柱3",
+    title: hierarchy.directions[2].title_original,
+    groups: reviewedMiyagiKpiGroups.filter(
+      (group) => group.scope_type === "pillar" && group.scope_number === 3,
+    ),
+  },
 ];
 
 export const miyagiPolicyReviewStats = {
