@@ -17,8 +17,11 @@ def test_miyagi_page_exposes_reviewed_targets_without_assessment_inference():
     assert STYLES.is_file()
     assert "宮城県の政策目標を、原文・期間・未設定までそのまま読む。" in page
     assert "成果の達成率ではなく" in page
-    assert "目標1〜23を、政策上の所属と4つの時点から確認する。" in page
+    assert "柱1と取組1〜5" in page
+    assert "目標1〜38を、政策上の所属と4つの時点から確認する。" in page
+    assert "次は柱2の目標39〜40" in page
     assert "累計値。単年度値ではありません。" in page
+    assert "複数系列・累計範囲を保ちます" in page
     assert "目標値の確認と、政策成果の評価を分ける。" in page
     assert "評価原案と確定評価の版差分" in page
 
@@ -30,5 +33,6 @@ def test_miyagi_page_is_linked_from_coverage_queue_and_sitemap():
     assert 'record.prefecture_code === "04"' in coverage
     assert '"/municipalities/miyagi"' in coverage
     assert 'href="/municipalities/miyagi"' in municipalities
-    assert "宮城県の23目標を公開" in municipalities
+    assert "宮城県の38目標を公開" in municipalities
+    assert "未Reviewedの90目標" in municipalities
     assert '"/municipalities/miyagi"' in sitemap
