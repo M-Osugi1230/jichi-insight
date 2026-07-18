@@ -8,6 +8,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { StatusBadge } from "@/components/StatusBadge";
 import { municipalityMeta, sourcesForMunicipality, type MunicipalityKey } from "@/lib/catalog";
 import { hokkaidoIndicatorReviewStats } from "@/lib/hokkaidoIndicators";
+import { miyagiPolicyReviewStats } from "@/lib/miyagiPolicies";
 import {
   nationwideCoverageStats,
   nationwidePrefectureCoverage,
@@ -85,7 +86,7 @@ export default function MunicipalitiesPage() {
           </div>
           <ol className={styles.ladder}>
             <li><strong>1</strong><span>全国登録済み</span><p>コード・名称・地域・公式URL候補を登録。</p></li>
-            <li><strong>2</strong><span>公式入口確認済み</span><p>自治体公式サイトであることを手動確認。</p></li>
+            <li><strong>2</strong><span>公式入口確認済み</span><p>自治体の公式入口を確認済み。</p></li>
             <li><strong>3</strong><span>計画資料索引済み</span><p>総合計画・実施計画の公式入口を固定。</p></li>
             <li><strong>4</strong><span>現行計画確認済み</span><p>後継計画、改定、計画期間を確認。</p></li>
             <li><strong>5</strong><span>Reviewedデータ公開</span><p>本文・数値・期間・単位を一次資料と照合。</p></li>
@@ -104,7 +105,7 @@ export default function MunicipalitiesPage() {
 
         <section className="contentSection">
           <p className="eyebrow">Wave 1 review queue</p>
-          <h2>北海道{hokkaidoIndicatorReviewStats.reviewedIndicators}指標を全件Reviewed化。次は宮城県。</h2>
+          <h2>宮城県{miyagiPolicyReviewStats.reviewedTargetGroups}目標を公開。次は目標24〜38。</h2>
           <p className={styles.sectionLead}>
             福岡県を基準実装とし、北海道では18政策分野・108指標・Evidence Packet 108件のReviewed工程を完了しました。宮城県では128目標グループ・149系列の位置を確認し、先頭23グループ・23系列をReviewed化しました。年度実績との接続は別工程として残し、順位は評価点ではなく資料構造と作業依存関係に基づく運用順です。
           </p>
@@ -153,6 +154,9 @@ export default function MunicipalitiesPage() {
                   <p>{item.priority_basis}</p>
                 </details>
                 <div className={styles.actions}>
+                  {item.prefecture_code === "04" ? (
+                    <Link href="/municipalities/miyagi">Reviewed目標を見る</Link>
+                  ) : null}
                   {item.sources.map((source) => (
                     <a href={source.url} target="_blank" rel="noreferrer" key={source.id}>
                       {source.title} ↗
@@ -191,14 +195,14 @@ export default function MunicipalitiesPage() {
 
         <section className="callout callout--dark">
           <div>
-            <p className="eyebrow">Next nationwide wave</p>
-            <h2>北海道108指標のReviewed完了。次は宮城県の資料固定へ。</h2>
+            <p className="eyebrow">Active review</p>
+            <h2>宮城県の23目標を公開。未Reviewedの105目標も明示する。</h2>
             <p>
-              第1波9拠点すべてで公式ホームページ、計画入口、現行計画を確認しました。北海道で確立した全指標の抽出・Evidence Packet・品質ゲートを宮城県へ展開し、北海道は並行して年度実績との接続へ進めます。
+              初期値・現況値・中期末目標・後期末目標を原文のまま確認できます。後期末目標の「－」は0にせず未設定、累計値は単年度値に変換せず表示しています。
             </p>
           </div>
-          <Link className="primaryAction" href="/municipalities/hokkaido">
-            北海道の{hokkaidoIndicatorReviewStats.reviewedIndicators}指標を見る
+          <Link className="primaryAction" href="/municipalities/miyagi">
+            宮城県の{miyagiPolicyReviewStats.reviewedTargetGroups}目標を見る
           </Link>
         </section>
       </div>
