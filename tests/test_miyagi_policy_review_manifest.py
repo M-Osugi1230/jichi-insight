@@ -24,13 +24,13 @@ def test_manifest_schema_counts_and_progress():
     ] == [4, 8, 18, 4]
     assert manifest["expected_kpi_count"] == 128
     assert manifest["indicator_series_count"] == 149
-    assert manifest["reviewed_target_group_count"] == 38
-    assert manifest["reviewed_indicator_series_count"] == 40
-    assert manifest["remaining_target_group_count"] == 90
-    assert manifest["remaining_indicator_series_count"] == 109
-    assert manifest["kpi_evidence_packet_count"] == 38
-    assert 38 + 90 == 128
-    assert 40 + 109 == 149
+    assert manifest["reviewed_target_group_count"] == 40
+    assert manifest["reviewed_indicator_series_count"] == 43
+    assert manifest["remaining_target_group_count"] == 88
+    assert manifest["remaining_indicator_series_count"] == 106
+    assert manifest["kpi_evidence_packet_count"] == 40
+    assert 40 + 88 == 128
+    assert 43 + 106 == 149
     assert manifest["active_work_package"] == "kpi_catalog"
     assert manifest["review_status"] == "in_progress"
 
@@ -50,12 +50,13 @@ def test_work_packages_and_quality_boundaries():
     assert packages["policy_hierarchy"]["status"] == "completed"
     assert packages["kpi_source_index"]["status"] == "completed"
     assert packages["kpi_catalog"]["status"] == "active"
-    assert "目標グループ1〜38" in packages["kpi_catalog"]["deliverable"]
-    assert "残る90目標グループ" in packages["kpi_catalog"]["deliverable"]
+    assert "目標グループ1〜40" in packages["kpi_catalog"]["deliverable"]
+    assert "残る88目標グループ" in packages["kpi_catalog"]["deliverable"]
     assert packages["evaluation_linkage"]["status"] == "queued"
     assert packages["web_publication"]["status"] == "active"
     assert "段階公開" in packages["web_publication"]["deliverable"]
-    assert "目標グループ39〜40" in manifest["open_questions"][0]
+    assert "目標グループ41〜45" in manifest["open_questions"][0]
+    assert "3歳児・小学6年生" in manifest["open_questions"][1]
     assert set(manifest["quality_requirements"]) == {
         "official_order_preserved",
         "original_text_preserved",
