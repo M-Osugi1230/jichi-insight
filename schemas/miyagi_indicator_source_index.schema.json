@@ -9,7 +9,8 @@
     "source_document_url", "source_table_title", "source_pdf_page_start",
     "source_pdf_page_end", "printed_page_start", "printed_page_end",
     "target_group_count", "indicator_series_count", "multi_series_group_count",
-    "additional_series_count", "count_status", "page_ranges", "scope_ranges",
+    "additional_series_count", "reviewed_target_group_count",
+    "reviewed_indicator_series_count", "count_status", "page_ranges", "scope_ranges",
     "multi_series_groups", "review_status", "content_review_status", "notes"
   ],
   "properties": {
@@ -28,6 +29,8 @@
     "indicator_series_count": {"const": 149},
     "multi_series_group_count": {"const": 17},
     "additional_series_count": {"const": 21},
+    "reviewed_target_group_count": {"type": "integer", "minimum": 0, "maximum": 128},
+    "reviewed_indicator_series_count": {"type": "integer", "minimum": 0, "maximum": 149},
     "count_status": {"const": "verified"},
     "page_ranges": {
       "type": "array",
@@ -56,7 +59,7 @@
       }
     },
     "review_status": {"const": "positions_verified"},
-    "content_review_status": {"const": "pending_review"},
+    "content_review_status": {"enum": ["pending_review", "in_progress", "reviewed"]},
     "notes": {"type": "string", "minLength": 1}
   },
   "$defs": {
