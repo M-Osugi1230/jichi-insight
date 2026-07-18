@@ -34,7 +34,8 @@ const roleLabels: Record<MiyagiKpiValue["role"], string> = {
 function valueLabel(value: MiyagiKpiValue, unit: string) {
   if (value.status === "not_set") return "未設定";
   if (value.status === "not_available") return "未公表";
-  return `${value.value_text_original}${unit}`;
+  const displayUnit = unit === "単位記載なし" ? "" : unit;
+  return `${value.value_text_original}${displayUnit}`;
 }
 
 export default function MiyagiPage() {
@@ -53,7 +54,7 @@ export default function MiyagiPage() {
         >
           <p>
             新・宮城の将来ビジョンの4基本方向・8政策・18取組をReviewed化し、
-            現行中期実施計画にある128目標グループのうち、柱1と取組1〜3の
+            現行中期実施計画にある128目標グループのうち、柱1と取組1〜5の
             {miyagiPolicyReviewStats.reviewedTargetGroups}件を公開しています。
             これは成果の達成率ではなく、一次資料を人が照合した作業カバレッジです。
           </p>
@@ -69,7 +70,9 @@ export default function MiyagiPage() {
           <article className={styles.summaryCard}>
             <span>Reviewed目標グループ</span>
             <strong>{miyagiPolicyReviewStats.reviewedTargetGroups}</strong>
-            <p>公式の目標値No.1〜23を本文・数値・単位・期間まで照合済み。</p>
+            <p>
+              公式の目標値No.1〜{miyagiPolicyReviewStats.reviewedTargetGroups}を本文・数値・単位・期間まで照合済み。
+            </p>
           </article>
           <article className={styles.summaryCard}>
             <span>全目標グループ</span>
@@ -93,7 +96,7 @@ export default function MiyagiPage() {
             <p className="eyebrow">Review coverage</p>
             <h2 id="miyagi-review-progress">
               {miyagiPolicyReviewStats.reviewedTargetGroups} / {miyagiPolicyReviewStats.targetGroups}
-              をReviewed。次は目標24〜38。
+              をReviewed。次は目標39〜52。
             </h2>
           </div>
           <div className={styles.progressDetail}>
@@ -111,7 +114,7 @@ export default function MiyagiPage() {
               </div>
               <div>
                 <dt>今回の範囲</dt>
-                <dd>柱1・取組1〜3</dd>
+                <dd>柱1・取組1〜5</dd>
               </div>
             </dl>
             <p>
@@ -158,7 +161,9 @@ export default function MiyagiPage() {
 
         <section className="contentSection" id="indicators">
           <p className="eyebrow">Reviewed targets</p>
-          <h2>目標1〜23を、政策上の所属と4つの時点から確認する。</h2>
+          <h2>
+            目標1〜{miyagiPolicyReviewStats.reviewedTargetGroups}を、政策上の所属と4つの時点から確認する。
+          </h2>
           <p className={styles.sectionLead}>
             初期値、現況値、令和9年度の中期末目標、令和12年度の後期末目標を原文どおり表示します。
             増減だけを見て良否を判定せず、実績年度・単位・累計範囲を保ちます。
@@ -202,10 +207,13 @@ export default function MiyagiPage() {
                               <div key={value.role}>
                                 <dt>{roleLabels[value.role]}</dt>
                                 <dd>{valueLabel(value, series.unit_original)}</dd>
-                                <small>{value.period_original}（{value.period_year}年）</small>
+                                <small>{value.period_original}（{value.period_year}年度）</small>
                               </div>
                             ))}
                           </dl>
+                          {series.unit_original === "単位記載なし" ? (
+                            <p className={styles.dataNote}>公式表に単位の記載がありません。</p>
+                          ) : null}
                           {series.aggregation_scope === "cumulative_to_date" ? (
                             <p className={styles.dataNote}>累計値。単年度値ではありません。</p>
                           ) : null}
