@@ -32,7 +32,7 @@ def test_queue_covers_all_wave_one_anchors_once_in_operational_order():
     assert len({item["municipality_key"] for item in items}) == 9
 
 
-def test_miyagi_advances_to_annual_results_linkage():
+def test_miyagi_advances_through_annual_results_linkage():
     queue = load(QUEUE_PATH)
     items = {item["prefecture_code"]: item for item in queue["items"]}
     assert queue["completed_prefecture_codes"] == ["40", "01"]
@@ -47,9 +47,13 @@ def test_miyagi_advances_to_annual_results_linkage():
     assert miyagi["status"] == "active_review"
     assert miyagi["source_inventory_status"] == "reviewed"
     assert miyagi["next_gate"] == "actuals_linkage"
-    assert "128" in miyagi["next_action"]
-    assert "149" in miyagi["next_action"]
-    assert miyagi["priority_basis"].strip()
+    assert "5系列" in miyagi["next_action"]
+    assert "1系列" in miyagi["next_action"]
+    assert "144系列" in miyagi["next_action"]
+    assert "取組2" in miyagi["next_action"]
+    assert "128目標" in miyagi["priority_basis"]
+    assert "149系列" in miyagi["priority_basis"]
+    assert "再計算しない" in miyagi["priority_basis"]
 
     assert {
         status: sum(item["status"] == status for item in queue["items"])
