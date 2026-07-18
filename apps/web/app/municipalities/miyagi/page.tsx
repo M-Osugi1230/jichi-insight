@@ -53,9 +53,9 @@ export default function MiyagiPage() {
         >
           <p>
             新・宮城の将来ビジョンの4基本方向・8政策・18取組をReviewed化し、
-            現行中期実施計画にある128目標グループのうち、柱1〜4と取組1〜15の
-            {miyagiPolicyReviewStats.reviewedTargetGroups}件を公開しています。
-            これは成果の達成率ではなく、一次資料を人が照合した作業カバレッジです。
+            現行中期実施計画の柱1〜4・取組1〜18にある全
+            {miyagiPolicyReviewStats.reviewedTargetGroups}目標を公開しています。
+            これは成果の達成率ではなく、一次資料を人が照合したKPI本文カバレッジです。
           </p>
           <div className={styles.introLinks}>
             <Link href="/municipalities">全国47都道府県へ戻る</Link>
@@ -84,7 +84,7 @@ export default function MiyagiPage() {
           <article className={styles.summaryCard}>
             <span>年度実績へ接続済み</span>
             <strong>0</strong>
-            <p>評価書との接続前に、達成率や政策評価を生成しません。</p>
+            <p>確定評価との接続前に、達成率や政策評価を生成しません。</p>
           </article>
         </section>
 
@@ -93,7 +93,7 @@ export default function MiyagiPage() {
             <p className="eyebrow">Review coverage</p>
             <h2 id="miyagi-review-progress">
               {miyagiPolicyReviewStats.reviewedTargetGroups} / {miyagiPolicyReviewStats.targetGroups}
-              をReviewed。次は取組16の目標114〜119。
+              をReviewed。次は令和7年度確定評価との接続。
             </h2>
           </div>
           <div className={styles.progressDetail}>
@@ -111,7 +111,7 @@ export default function MiyagiPage() {
               </div>
               <div>
                 <dt>今回の範囲</dt>
-                <dd>柱1〜4・取組1〜15</dd>
+                <dd>柱1〜4・取組1〜18</dd>
               </div>
             </dl>
             <p>
@@ -136,10 +136,7 @@ export default function MiyagiPage() {
               <article className={styles.directionCard} key={direction.id}>
                 <div className={styles.directionHeader}>
                   <span>{String(direction.display_order).padStart(2, "0")}</span>
-                  <StatusBadge
-                    label="KPI一部公開"
-                    tone="progress"
-                  />
+                  <StatusBadge label="KPI本文Reviewed" tone="verified" />
                 </div>
                 <h3>{direction.title_original}</h3>
                 <ul>
