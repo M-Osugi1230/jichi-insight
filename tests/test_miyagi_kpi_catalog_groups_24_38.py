@@ -12,6 +12,15 @@ CATALOGS = [
     POLICY / "miyagi_kpi_catalog_measure5a.json",
     POLICY / "miyagi_kpi_catalog_measure5b.json",
 ]
+EVIDENCE = [
+    POLICY / "miyagi_kpi_measure4a_evidence_packets.json",
+    POLICY / "miyagi_kpi_measure4b_evidence_packets.json",
+    POLICY / "miyagi_kpi_group32_evidence_packet.json",
+    POLICY / "miyagi_kpi_groups33_34_evidence_packets.json",
+    POLICY / "miyagi_kpi_group35_evidence_packet.json",
+    POLICY / "miyagi_kpi_group36_evidence_packet.json",
+    POLICY / "miyagi_kpi_measure5_tail_evidence_packets.json",
+]
 
 
 def load(path: Path):
@@ -60,3 +69,35 @@ def test_original_format_and_missing_unit_are_preserved():
         "R5",
         "R5",
     ]
+
+
+def test_late_targets_and_review_boundaries():
+    items = {item["target_group_number"]: item for item in groups()}
+    for item in items.values():
+        assert item["target_setting_status"] == "partially_set"
+        assert item["actual_linkage_status"] == "not_linked"
+        assert item["evaluation_status"] == "not_assessed"
+        for series in item["series"]:
+            late = series["values"][3]
+            assert (late["status"], late["value"], late["value_text_original"]) == (
+                "not_set",
+                None,
+                "-",
+            )
+    for number in [27, 31, 32]:
+        values = items[number]["series"][0]["values"]
+        assert values[2]["value"] < values[1]["value"]
+        assert items[number]["comparability_note_original"] is not None
+
+
+def test_evidence_packets_cover_each_group_once():
+    packets = [packet for path in EVIDENCE for packet in load(path)]
+    validator = Draft202012Validator(
+        load(ROOT / "schemas/evidence_packet.schema.json")
+    )
+    assert len(packets) == 15
+    assert all(list(validator.iter_errors(packet)) == [] for packet in packets)
+    assert {packet["subject_id"] for packet in packets} == {
+        item["id"] for item in groups()
+    }
+    assert len({packet["id"] for packet in packets}) == 15
