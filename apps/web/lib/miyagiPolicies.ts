@@ -9,17 +9,13 @@ import measure4bCatalog from "../../../data/entities/policy/miyagi_kpi_catalog_m
 import measure5aCatalog from "../../../data/entities/policy/miyagi_kpi_catalog_measure5a.json";
 import measure5bCatalog from "../../../data/entities/policy/miyagi_kpi_catalog_measure5b.json";
 import pillar1Catalog from "../../../data/entities/policy/miyagi_kpi_catalog_pillar1.json";
-import group32Evidence from "../../../data/entities/policy/miyagi_kpi_group32_evidence_packet.json";
-import groups33_34Evidence from "../../../data/entities/policy/miyagi_kpi_groups33_34_evidence_packets.json";
-import group35Evidence from "../../../data/entities/policy/miyagi_kpi_group35_evidence_packet.json";
-import group36Evidence from "../../../data/entities/policy/miyagi_kpi_group36_evidence_packet.json";
 import measure1Evidence from "../../../data/entities/policy/miyagi_kpi_measure1_evidence_packets.json";
 import measure2Evidence from "../../../data/entities/policy/miyagi_kpi_measure2_evidence_packets.json";
 import measure3aEvidence from "../../../data/entities/policy/miyagi_kpi_measure3a_evidence_packets.json";
 import measure3bEvidence from "../../../data/entities/policy/miyagi_kpi_measure3b_evidence_packets.json";
 import measure4aEvidence from "../../../data/entities/policy/miyagi_kpi_measure4a_evidence_packets.json";
 import measure4bEvidence from "../../../data/entities/policy/miyagi_kpi_measure4b_evidence_packets.json";
-import measure5TailEvidence from "../../../data/entities/policy/miyagi_kpi_measure5_tail_evidence_packets.json";
+import measure5Evidence from "../../../data/entities/policy/miyagi_kpi_measure5_evidence_packets.json";
 import pillar1Evidence from "../../../data/entities/policy/miyagi_kpi_pillar1_evidence_packets.json";
 import directionEvidence from "../../../data/entities/policy/miyagi_policy_direction_evidence_packets.json";
 import hierarchy from "../../../data/entities/policy/miyagi_policy_hierarchy.json";
@@ -81,11 +77,7 @@ const kpiEvidence = [
   ...measure3bEvidence,
   ...measure4aEvidence,
   ...measure4bEvidence,
-  ...group32Evidence,
-  ...groups33_34Evidence,
-  ...group35Evidence,
-  ...group36Evidence,
-  ...measure5TailEvidence,
+  ...measure5Evidence,
 ];
 
 export const reviewedMiyagiPolicyHierarchy = hierarchy;
