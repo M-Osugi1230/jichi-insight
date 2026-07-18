@@ -11,6 +11,7 @@ import measure7Catalog from "../../../data/entities/policy/miyagi_kpi_catalog_me
 import measure8Catalog from "../../../data/entities/policy/miyagi_kpi_catalog_measure8.json";
 import measure9Catalog from "../../../data/entities/policy/miyagi_kpi_catalog_measure9.json";
 import measure10Catalog from "../../../data/entities/policy/miyagi_kpi_catalog_measure10.json";
+import measure11Catalog from "../../../data/entities/policy/miyagi_kpi_catalog_measure11.json";
 import pillar1Catalog from "../../../data/entities/policy/miyagi_kpi_catalog_pillar1.json";
 import pillar2Catalog from "../../../data/entities/policy/miyagi_kpi_catalog_pillar2.json";
 import pillar3Catalog from "../../../data/entities/policy/miyagi_kpi_catalog_pillar3.json";
@@ -25,6 +26,7 @@ import measure7Evidence from "../../../data/entities/policy/miyagi_kpi_measure7_
 import measure8Evidence from "../../../data/entities/policy/miyagi_kpi_measure8_evidence_packets.json";
 import measure9Evidence from "../../../data/entities/policy/miyagi_kpi_measure9_evidence_packets.json";
 import measure10Evidence from "../../../data/entities/policy/miyagi_kpi_measure10_evidence_packets.json";
+import measure11Evidence from "../../../data/entities/policy/miyagi_kpi_measure11_evidence_packets.json";
 import pillar1Evidence from "../../../data/entities/policy/miyagi_kpi_pillar1_evidence_packets.json";
 import pillar2Evidence from "../../../data/entities/policy/miyagi_kpi_pillar2_evidence_packets.json";
 import pillar3Evidence from "../../../data/entities/policy/miyagi_kpi_pillar3_evidence_packets.json";
@@ -92,6 +94,7 @@ const reviewedGroups = [
   ...measure9Catalog.items,
   ...pillar3Catalog.items,
   ...measure10Catalog.items,
+  ...measure11Catalog.items,
 ] as MiyagiKpiGroup[];
 const reviewedSeries = reviewedGroups.flatMap((group) => group.series);
 const kpiEvidence = [
@@ -109,6 +112,7 @@ const kpiEvidence = [
   ...measure9Evidence,
   ...pillar3Evidence,
   ...measure10Evidence,
+  ...measure11Evidence,
 ];
 
 export const reviewedMiyagiPolicyHierarchy = hierarchy;
@@ -159,7 +163,7 @@ export const miyagiKpiScopes = [
       (group) => group.scope_type === "pillar" && group.scope_number === 3,
     ),
   },
-  ...directionThreeMeasures.slice(0, 1).map((measure) => ({
+  ...directionThreeMeasures.slice(0, 2).map((measure) => ({
     id: measure.id,
     label: `取組${measure.measure_number}`,
     title: measure.title_original,
