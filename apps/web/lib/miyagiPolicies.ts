@@ -87,6 +87,7 @@ export const miyagiPolicyReviewStats = {
   policies: policies.length,
   measures: measures.length,
   recoveryAreas: hierarchy.recovery_support_areas.length,
+  evidencePackets: directionEvidence.length,
   hierarchyEvidencePackets: directionEvidence.length,
   implementationPeriod:
     `${hierarchy.implementation_period_start}〜${hierarchy.implementation_period_end}年度`,
