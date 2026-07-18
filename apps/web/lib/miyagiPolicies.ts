@@ -4,11 +4,22 @@ import manifest from "../../../data/catalog/miyagi_policy_review_manifest.json";
 import measure1Catalog from "../../../data/entities/policy/miyagi_kpi_catalog_measure1.json";
 import measure2Catalog from "../../../data/entities/policy/miyagi_kpi_catalog_measure2.json";
 import measure3Catalog from "../../../data/entities/policy/miyagi_kpi_catalog_measure3.json";
+import measure4aCatalog from "../../../data/entities/policy/miyagi_kpi_catalog_measure4a.json";
+import measure4bCatalog from "../../../data/entities/policy/miyagi_kpi_catalog_measure4b.json";
+import measure5aCatalog from "../../../data/entities/policy/miyagi_kpi_catalog_measure5a.json";
+import measure5bCatalog from "../../../data/entities/policy/miyagi_kpi_catalog_measure5b.json";
 import pillar1Catalog from "../../../data/entities/policy/miyagi_kpi_catalog_pillar1.json";
+import group32Evidence from "../../../data/entities/policy/miyagi_kpi_group32_evidence_packet.json";
+import groups33_34Evidence from "../../../data/entities/policy/miyagi_kpi_groups33_34_evidence_packets.json";
+import group35Evidence from "../../../data/entities/policy/miyagi_kpi_group35_evidence_packet.json";
+import group36Evidence from "../../../data/entities/policy/miyagi_kpi_group36_evidence_packet.json";
 import measure1Evidence from "../../../data/entities/policy/miyagi_kpi_measure1_evidence_packets.json";
 import measure2Evidence from "../../../data/entities/policy/miyagi_kpi_measure2_evidence_packets.json";
 import measure3aEvidence from "../../../data/entities/policy/miyagi_kpi_measure3a_evidence_packets.json";
 import measure3bEvidence from "../../../data/entities/policy/miyagi_kpi_measure3b_evidence_packets.json";
+import measure4aEvidence from "../../../data/entities/policy/miyagi_kpi_measure4a_evidence_packets.json";
+import measure4bEvidence from "../../../data/entities/policy/miyagi_kpi_measure4b_evidence_packets.json";
+import measure5TailEvidence from "../../../data/entities/policy/miyagi_kpi_measure5_tail_evidence_packets.json";
 import pillar1Evidence from "../../../data/entities/policy/miyagi_kpi_pillar1_evidence_packets.json";
 import directionEvidence from "../../../data/entities/policy/miyagi_policy_direction_evidence_packets.json";
 import hierarchy from "../../../data/entities/policy/miyagi_policy_hierarchy.json";
@@ -56,6 +67,10 @@ const reviewedGroups = [
   ...measure1Catalog.items,
   ...measure2Catalog.items,
   ...measure3Catalog.items,
+  ...measure4aCatalog.items,
+  ...measure4bCatalog.items,
+  ...measure5aCatalog.items,
+  ...measure5bCatalog.items,
 ] as MiyagiKpiGroup[];
 const reviewedSeries = reviewedGroups.flatMap((group) => group.series);
 const kpiEvidence = [
@@ -64,6 +79,13 @@ const kpiEvidence = [
   ...measure2Evidence,
   ...measure3aEvidence,
   ...measure3bEvidence,
+  ...measure4aEvidence,
+  ...measure4bEvidence,
+  ...group32Evidence,
+  ...groups33_34Evidence,
+  ...group35Evidence,
+  ...group36Evidence,
+  ...measure5TailEvidence,
 ];
 
 export const reviewedMiyagiPolicyHierarchy = hierarchy;
@@ -82,7 +104,7 @@ export const miyagiKpiScopes = [
       (group) => group.scope_type === "pillar" && group.scope_number === 1,
     ),
   },
-  ...hierarchy.directions[0].policies[0].measures.slice(0, 3).map((measure) => ({
+  ...hierarchy.directions[0].policies[0].measures.slice(0, 5).map((measure) => ({
     id: measure.id,
     label: `取組${measure.measure_number}`,
     title: measure.title_original,
