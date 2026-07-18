@@ -34,7 +34,9 @@ def load(path: Path):
 
 def test_measure12_catalog_matches_schema_and_sequences():
     catalog = load(CATALOG)
-    validator = Draft202012Validator(load(CATALOG_SCHEMA), format_checker=FormatChecker())
+    validator = Draft202012Validator(
+        load(CATALOG_SCHEMA), format_checker=FormatChecker()
+    )
     assert list(validator.iter_errors(catalog)) == []
     groups = catalog["items"]
     series = [item for group in groups for item in group["series"]]
@@ -46,11 +48,24 @@ def test_measure12_catalog_matches_schema_and_sequences():
 
 def test_official_values_precision_and_rate_boundaries_are_preserved():
     groups = {group["target_group_number"]: group for group in load(CATALOG)["items"]}
-    series = {group["series"][0]["series_number"]: group["series"][0] for group in groups.values()}
-    assert [value["value"] for value in series[104]["values"]] == [32.2, 31.9, 29.0, None]
+    series = {
+        group["series"][0]["series_number"]: group["series"][0]
+        for group in groups.values()
+    }
+    assert [value["value"] for value in series[104]["values"]] == [
+        32.2,
+        31.9,
+        29.0,
+        None,
+    ]
     assert series[105]["values"][2]["value_text_original"] == "73.96"
     assert series[106]["unit_original"] == "人口10万対"
-    assert [value["value"] for value in series[106]["values"]] == [17.6, 17.1, 12.1, None]
+    assert [value["value"] for value in series[106]["values"]] == [
+        17.6,
+        17.1,
+        12.1,
+        None,
+    ]
     assert [value["value"] for value in series[107]["values"]] == [108, 108, 108, None]
     assert "方向評価" in groups[85]["comparability_note_original"]
     assert "死亡者数へ変換しない" in groups[87]["comparability_note_original"]
@@ -59,12 +74,19 @@ def test_official_values_precision_and_rate_boundaries_are_preserved():
 def test_cumulative_and_same_period_boundaries_are_preserved():
     groups = {group["target_group_number"]: group for group in load(CATALOG)["items"]}
     assert {
-        number for number, group in groups.items()
+        number
+        for number, group in groups.items()
         if group["series"][0]["aggregation_scope"] == "cumulative_to_date"
     } == {90, 91, 92, 93}
-    assert [value["period_original"] for value in groups[89]["series"][0]["values"][:2]] == ["R6", "R6"]
-    assert [value["period_original"] for value in groups[92]["series"][0]["values"][:2]] == ["R5", "R5"]
-    assert [value["period_original"] for value in groups[93]["series"][0]["values"][:2]] == ["R5", "R5"]
+    assert [
+        value["period_original"] for value in groups[89]["series"][0]["values"][:2]
+    ] == ["R6", "R6"]
+    assert [
+        value["period_original"] for value in groups[92]["series"][0]["values"][:2]
+    ] == ["R5", "R5"]
+    assert [
+        value["period_original"] for value in groups[93]["series"][0]["values"][:2]
+    ] == ["R5", "R5"]
     for group in groups.values():
         late = group["series"][0]["values"][3]
         assert late == {
