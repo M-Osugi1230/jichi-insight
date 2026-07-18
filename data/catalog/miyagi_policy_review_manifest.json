@@ -1,6 +1,6 @@
 {
   "id": "policy-review-manifest-miyagi",
-  "updated_at": "2026-07-18",
+  "updated_at": "2026-07-19",
   "prefecture_code": "04",
   "municipality_key": "miyagi-prefecture",
   "source_ids": [
@@ -19,11 +19,11 @@
   "indicator_series_count": 149,
   "indicator_source_index_id": "miyagi-indicator-source-index",
   "kpi_count_status": "verified",
-  "reviewed_target_group_count": 106,
-  "reviewed_indicator_series_count": 125,
-  "remaining_target_group_count": 22,
-  "remaining_indicator_series_count": 24,
-  "kpi_evidence_packet_count": 106,
+  "reviewed_target_group_count": 113,
+  "reviewed_indicator_series_count": 132,
+  "remaining_target_group_count": 15,
+  "remaining_indicator_series_count": 17,
+  "kpi_evidence_packet_count": 113,
   "active_work_package": "kpi_catalog",
   "review_status": "in_progress",
   "work_packages": [
@@ -48,7 +48,7 @@
     {
       "id": "kpi_catalog",
       "status": "active",
-      "deliverable": "目標グループ1〜106・系列1〜125をEvidence Packet付きでReviewed化した。残る22目標グループ・24系列を公式掲載順に追加する。",
+      "deliverable": "目標グループ1〜113・系列1〜132をEvidence Packet付きでReviewed化した。残る15目標グループ・17系列を公式掲載順に追加する。",
       "completion_gate": "指標名、初期値、現況値、中期末目標、後期末目標、単位、時点、複数系列、目標未設定を一次資料と照合する。"
     },
     {
@@ -75,8 +75,8 @@
     "actuals_not_inferred"
   ],
   "open_questions": [
-    "次は取組15の目標グループ107〜113・系列126〜132をReviewed化する。",
-    "柱4の令和2年基準値、千t-CO2単位、比較指標100を単純な達成率へ変換しない。",
+    "次は取組16の目標グループ114〜119・系列133〜139をReviewed化する。",
+    "取組15の同一時点、年当たり・一人一日当たり・千トン単位、現況値と目標の逆転を変換・評価せず保持する。",
     "令和8年度評価原案の確定版公開後に版差分を履歴化する。"
   ]
 }
