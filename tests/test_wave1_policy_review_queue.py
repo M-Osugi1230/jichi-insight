@@ -47,10 +47,10 @@ def test_miyagi_advances_through_annual_results_linkage():
     assert miyagi["status"] == "active_review"
     assert miyagi["source_inventory_status"] == "reviewed"
     assert miyagi["next_gate"] == "actuals_linkage"
-    assert "9系列" in miyagi["next_action"]
+    assert "18系列" in miyagi["next_action"]
     assert "2系列" in miyagi["next_action"]
-    assert "140系列" in miyagi["next_action"]
-    assert "取組3" in miyagi["next_action"]
+    assert "131系列" in miyagi["next_action"]
+    assert "取組4" in miyagi["next_action"]
     assert "128目標" in miyagi["priority_basis"]
     assert "149系列" in miyagi["priority_basis"]
     assert "再計算しない" in miyagi["priority_basis"]
