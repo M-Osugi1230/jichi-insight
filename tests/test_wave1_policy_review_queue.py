@@ -14,9 +14,7 @@ def load(path: Path):
 
 def test_queue_schema_and_operational_order():
     queue = load(QUEUE_PATH)
-    validator = Draft202012Validator(
-        load(SCHEMA_PATH), format_checker=FormatChecker()
-    )
+    validator = Draft202012Validator(load(SCHEMA_PATH), format_checker=FormatChecker())
     assert list(validator.iter_errors(queue)) == []
     coverage = load(ROOT / "data/catalog/prefecture_coverage.json")
     items = queue["items"]
