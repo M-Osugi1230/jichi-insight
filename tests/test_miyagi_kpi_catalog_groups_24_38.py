@@ -49,13 +49,22 @@ def test_measure4_and_5_schema_sequences_and_values():
         40: (3942, 3988, 4379, None),
     }
     for item in series:
-        assert tuple(value["value"] for value in item["values"]) == expected[item["series_number"]]
+        assert (
+            tuple(value["value"] for value in item["values"])
+            == expected[item["series_number"]]
+        )
         assert item["values"][3]["status"] == "not_set"
 
 
 def test_measure4_linked_and_measure5_unlinked():
     reviewed = groups()
     by_number = {group["target_group_number"]: group for group in reviewed}
-    assert all(by_number[number]["actual_linkage_status"] == "linked" for number in range(24, 32))
-    assert all(by_number[number]["actual_linkage_status"] == "not_linked" for number in range(32, 39))
+    assert all(
+        by_number[number]["actual_linkage_status"] == "linked"
+        for number in range(24, 32)
+    )
+    assert all(
+        by_number[number]["actual_linkage_status"] == "not_linked"
+        for number in range(32, 39)
+    )
     assert all(group["evaluation_status"] == "not_assessed" for group in reviewed)
