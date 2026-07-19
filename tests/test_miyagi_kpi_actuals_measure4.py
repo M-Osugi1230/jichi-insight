@@ -25,9 +25,7 @@ def test_measure4_schema_and_evidence_coverage():
     packets = load(EVIDENCE)
     evidence_validator = Draft202012Validator(load(EVIDENCE_SCHEMA))
     assert len(packets) == 10
-    assert all(
-        list(evidence_validator.iter_errors(packet)) == [] for packet in packets
-    )
+    assert all(list(evidence_validator.iter_errors(packet)) == [] for packet in packets)
     assert {packet["subject_id"] for packet in packets} == {
         record["id"] for record in actuals["records"]
     }
@@ -49,9 +47,7 @@ def test_measure4_links_ten_series_and_40_rows():
 
 
 def test_measure4_latest_results_and_measurement_periods():
-    records = {
-        record["series_id"]: record for record in load(ACTUALS)["records"]
-    }
+    records = {record["series_id"]: record for record in load(ACTUALS)["records"]}
     expected = {
         24: (61.1, "R6", "numeric", "D"),
         25: (35.5, "R5", "above_100", "A"),
@@ -75,16 +71,14 @@ def test_measure4_latest_results_and_measurement_periods():
     program_rows = records["policy-indicator-miyagi-31"]["annual_results"]
     assert program_rows[0]["achievement_rate_value"] == 0.0
     assert program_rows[1]["achievement_rate_value"] == 0.0
-    assert records["policy-indicator-miyagi-29"]["achievement_rate_type_original"].endswith("Ⅱ")
+    assert records["policy-indicator-miyagi-29"][
+        "achievement_rate_type_original"
+    ].endswith("Ⅱ")
 
 
 def test_measure4_target_and_group_boundaries():
-    records = {
-        record["series_id"]: record for record in load(ACTUALS)["records"]
-    }
-    groups = {
-        group["target_group_number"]: group for group in load(CATALOG)["items"]
-    }
+    records = {record["series_id"]: record for record in load(ACTUALS)["records"]}
+    groups = {group["target_group_number"]: group for group in load(CATALOG)["items"]}
     assert [series["series_number"] for series in groups[26]["series"]] == [26, 27, 28]
     assert records["policy-indicator-miyagi-24"]["evaluation_target"]["value"] == 62.0
     assert groups[24]["series"][0]["values"][2]["value"] == 61.4
@@ -95,4 +89,6 @@ def test_measure4_target_and_group_boundaries():
     assert records["policy-indicator-miyagi-33"]["evaluation_target"]["value"] == 6300
     assert groups[31]["series"][0]["values"][2]["value"] == 4900
     assert all(group["actual_linkage_status"] == "linked" for group in groups.values())
-    assert all(group["evaluation_status"] == "not_assessed" for group in groups.values())
+    assert all(
+        group["evaluation_status"] == "not_assessed" for group in groups.values()
+    )
