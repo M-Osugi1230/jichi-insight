@@ -12,7 +12,7 @@ def load(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def test_queue_schema_and_operational_order():
+def test_queue_schema_and_order():
     queue = load(QUEUE_PATH)
     validator = Draft202012Validator(load(SCHEMA_PATH), format_checker=FormatChecker())
     assert list(validator.iter_errors(queue)) == []
@@ -27,22 +27,22 @@ def test_queue_schema_and_operational_order():
     assert queue["active_prefecture_code"] == "04"
 
 
-def test_miyagi_queue_advances_to_measure5():
+def test_active_queue_progress_tokens():
     queue = load(QUEUE_PATH)
     items = {item["prefecture_code"]: item for item in queue["items"]}
-    miyagi = items["04"]
-    assert miyagi["status"] == "active_review"
-    assert miyagi["source_inventory_status"] == "reviewed"
-    assert miyagi["next_gate"] == "actuals_linkage"
-    assert all(token in miyagi["next_action"] for token in ["28", "2", "121", "5"])
-    assert all(token in miyagi["priority_basis"] for token in ["128", "149"])
+    active = items["04"]
+    assert active["status"] == "active_review"
+    assert active["source_inventory_status"] == "reviewed"
+    assert active["next_gate"] == "actuals_linkage"
+    assert all(token in active["next_action"] for token in ["32", "4", "117", "6"])
+    assert all(token in active["priority_basis"] for token in ["128", "149"])
     assert {
         status: sum(item["status"] == status for item in queue["items"])
         for status in ["reviewed_reference", "active_review", "queued"]
     } == {"reviewed_reference": 2, "active_review": 1, "queued": 6}
 
 
-def test_queue_sources_exist_and_descriptions_are_present():
+def test_queue_sources_and_descriptions():
     queue = load(QUEUE_PATH)
     source_catalog = load(ROOT / "data/catalog/policy_sources.json")
     sources = {item["id"]: item for item in source_catalog["records"]}
