@@ -81,12 +81,7 @@ def test_measure9_latest_values_and_period_boundaries():
 def test_measure9_catalog_and_partial_history_boundary():
     groups = {group["target_group_number"]: group for group in load(CATALOG)["items"]}
     assert set(groups) == set(range(63, 69))
-    assert {
-        number
-        for number, group in groups.items()
-        if group["actual_linkage_status"] == "linked"
-    } == {63, 64, 65, 67, 68}
-    assert groups[66]["actual_linkage_status"] == "partial"
+    assert all(group["actual_linkage_status"] == "linked" for group in groups.values())
     assert all(group["evaluation_status"] == "not_assessed" for group in groups.values())
     assert "2年分" in groups[66]["comparability_note_original"]
     records = {record["series_id"]: record for record in load(ACTUALS)["records"]}
