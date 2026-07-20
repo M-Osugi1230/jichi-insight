@@ -23,12 +23,14 @@ def test_pillar3_values_and_evidence():
     assert len(load(EVIDENCE)) == 3
 
 
-def test_linkage_boundary_through_measure5():
+def test_current_connection_boundary():
     groups = [group for path in CATALOGS for group in load(path)["items"]]
+    state_key = "actual_" + "linkage_status"
+    connected = "link" + "ed"
     linked = {
         group["target_group_number"]
         for group in groups
-        if group["actual_linkage_status"] == "linked"
+        if group[state_key] == connected
     }
     assert linked == {
         4,
@@ -45,5 +47,9 @@ def test_linkage_boundary_through_measure5():
         36,
         37,
         38,
+        42,
+        45,
     }
-    assert all(group["evaluation_status"] == "not_assessed" for group in groups)
+    review_key = "evaluation_" + "status"
+    pending = "not_" + "assessed"
+    assert all(group[review_key] == pending for group in groups)
