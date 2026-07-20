@@ -33,12 +33,27 @@ def test_measure10_values_and_evidence():
     assert len(load(EVIDENCE)) == 9
 
 
-def test_linkage_boundary_through_measure4():
+def test_linkage_boundary_through_measure5():
     groups = [group for path in CATALOGS for group in load(path)["items"]]
     linked = {
         group["target_group_number"]
         for group in groups
         if group["actual_linkage_status"] == "linked"
     }
-    assert linked == {4, 5, 6, 8, 9, 10, 11, 12, 14, *range(15, 32)}
+    assert linked == {
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        *range(15, 32),
+        33,
+        36,
+        37,
+        38,
+    }
     assert all(group["evaluation_status"] == "not_assessed" for group in groups)

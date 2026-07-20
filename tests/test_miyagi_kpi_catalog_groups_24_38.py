@@ -56,15 +56,17 @@ def test_measure4_and_5_schema_sequences_and_values():
         assert item["values"][3]["status"] == "not_set"
 
 
-def test_measure4_linked_and_measure5_unlinked():
-    reviewed = groups()
-    by_number = {group["target_group_number"]: group for group in reviewed}
+def test_measure4_and_5_linkage_boundaries():
+    by_number = {group["target_group_number"]: group for group in groups()}
     assert all(
         by_number[number]["actual_linkage_status"] == "linked"
         for number in range(24, 32)
     )
-    assert all(
-        by_number[number]["actual_linkage_status"] == "not_linked"
-        for number in range(32, 39)
-    )
-    assert all(group["evaluation_status"] == "not_assessed" for group in reviewed)
+    assert by_number[33]["actual_linkage_status"] == "linked"
+    assert by_number[36]["actual_linkage_status"] == "linked"
+    assert by_number[37]["actual_linkage_status"] == "linked"
+    assert by_number[38]["actual_linkage_status"] == "linked"
+    assert by_number[32]["actual_linkage_status"] == "not_linked"
+    assert by_number[34]["actual_linkage_status"] == "not_linked"
+    assert by_number[35]["actual_linkage_status"] == "not_linked"
+    assert all(group["evaluation_status"] == "not_assessed" for group in by_number.values())

@@ -132,7 +132,22 @@ def test_all_reviewed_batches_form_68_groups_and_85_series():
         for group in reviewed
         if group["actual_linkage_status"] == "linked"
     }
-    assert linked == {4, 5, 6, 8, 9, 10, 11, 12, 14, *range(15, 32)}
+    assert linked == {
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        *range(15, 32),
+        33,
+        36,
+        37,
+        38,
+    }
     assert all(
         group["actual_linkage_status"] == "not_linked"
         for group in reviewed
