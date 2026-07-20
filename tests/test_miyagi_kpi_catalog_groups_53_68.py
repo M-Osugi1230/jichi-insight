@@ -26,6 +26,7 @@ ALL_CATALOGS = [
     POLICY / "miyagi_kpi_catalog_measure6.json",
     POLICY / "miyagi_kpi_catalog_measure7.json",
     *NEW_CATALOGS,
+    POLICY / "miyagi_kpi_catalog_pillar3.json",
     POLICY / "miyagi_kpi_catalog_measure10.json",
 ]
 ACTUALS = sorted(POLICY.glob("miyagi_kpi_actuals_measure*_2024.json"))
