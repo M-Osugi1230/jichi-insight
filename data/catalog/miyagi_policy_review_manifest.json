@@ -1,6 +1,6 @@
 {
   "id": "policy-review-manifest-miyagi",
-  "updated_at": "2026-07-19",
+  "updated_at": "2026-07-20",
   "prefecture_code": "04",
   "municipality_key": "miyagi-prefecture",
   "source_ids": [
@@ -24,11 +24,11 @@
   "remaining_target_group_count": 0,
   "remaining_indicator_series_count": 0,
   "kpi_evidence_packet_count": 128,
-  "actual_linked_target_group_count": 26,
-  "actual_linked_indicator_series_count": 28,
-  "actual_linkage_review_needed_series_count": 2,
-  "actual_result_row_count": 120,
-  "actual_evidence_packet_count": 30,
+  "actual_linked_target_group_count": 30,
+  "actual_linked_indicator_series_count": 32,
+  "actual_linkage_review_needed_series_count": 4,
+  "actual_result_row_count": 144,
+  "actual_evidence_packet_count": 36,
   "active_work_package": "evaluation_linkage",
   "review_status": "in_progress",
   "work_packages": [
@@ -59,7 +59,7 @@
     {
       "id": "evaluation_linkage",
       "status": "active",
-      "deliverable": "Measures 1 through 4 have twenty-eight direct annual-result links, two definition-change review records, one hundred twenty annual rows, and thirty Evidence Packets.",
+      "deliverable": "Measures 1 through 5 have thirty-two direct annual-result links, four definition or coverage review records, one hundred forty-four annual rows, and thirty-six Evidence Packets.",
       "completion_gate": "Reporting year, measurement year, legacy evaluation target, official achievement rate, and current-plan target remain distinct."
     },
     {
@@ -83,8 +83,11 @@
     "Review the definition change between the former intellectual-property indicator and current series 7 before any linkage.",
     "Review the replacement of the former tourist-entry indicator by current foreign-visitor spending per person series 13.",
     "Review the value difference for service-sector value added at measurement year R4 across the evaluation document and current implementation plan.",
-    "Connect the final FY2025 results source to the remaining 121 indicator series.",
-    "Review measure 5 against the final FY2025 results source next.",
+    "Review the replacement of smart-interchange installation count by current daily usage series 34.",
+    "Review the coverage difference between former Sendai-port non-container cargo and current Sendai-Shiogama total cargo series 36.",
+    "No corresponding FY2025 evaluation indicator was found for current farmland utilization series 37.",
+    "Connect the final FY2025 results source to the remaining 117 indicator series.",
+    "Review measure 6 against the final FY2025 results source next.",
     "Keep official achievement rates tied to the evaluation document's R6 targets, not the current plan's R9 targets.",
     "Keep the FY2026 draft separate from any future final version."
   ]
