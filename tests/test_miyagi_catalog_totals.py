@@ -23,9 +23,9 @@ def test_manifest_schema_and_counts():
     assert manifest["remaining_target_group_count"] == 0
     assert manifest["remaining_indicator_series_count"] == 0
     assert manifest["kpi_evidence_packet_count"] == 128
-    assert manifest["actual_linked_target_group_count"] == 37
-    assert manifest["actual_linked_indicator_series_count"] == 40
-    assert manifest["actual_linkage_review_needed_series_count"] == 7
-    assert manifest["actual_result_row_count"] == 188
-    assert manifest["actual_evidence_packet_count"] == 47
+    assert manifest["actual_linked_target_group_count"] == 45
+    assert manifest["actual_linked_indicator_series_count"] == 55
+    assert manifest["actual_linkage_review_needed_series_count"] == 10
+    assert manifest["actual_result_row_count"] == 260
+    assert manifest["actual_evidence_packet_count"] == 65
     assert manifest["active_work_package"] == "evaluation_linkage"
