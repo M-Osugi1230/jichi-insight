@@ -15,6 +15,7 @@ NEW_EVIDENCE = [
     POLICY / "miyagi_kpi_measure8_evidence_packets.json",
     POLICY / "miyagi_kpi_measure9_evidence_packets.json",
 ]
+# Pillar 3 bridges measure 9 and measure 10 in the official target and series sequence.
 ALL_CATALOGS = [
     POLICY / "miyagi_kpi_catalog_pillar1.json",
     POLICY / "miyagi_kpi_catalog_measure1.json",
