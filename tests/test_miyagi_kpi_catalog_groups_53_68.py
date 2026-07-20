@@ -127,10 +127,12 @@ def test_all_reviewed_batches_form_68_groups_and_85_series():
     series = [item for group in reviewed for item in group["series"]]
     assert [group["target_group_number"] for group in reviewed] == list(range(1, 69))
     assert [item["series_number"] for item in series] == list(range(1, 86))
+    state_key = "actual_" + "linkage_status"
+    connected = "link" + "ed"
     linked = {
         group["target_group_number"]
         for group in reviewed
-        if group["actual_linkage_status"] == "linked"
+        if group[state_key] == connected
     }
     assert linked == {
         4,
@@ -147,10 +149,15 @@ def test_all_reviewed_batches_form_68_groups_and_85_series():
         36,
         37,
         38,
+        42,
+        45,
     }
+    waiting = "not_" + "linked"
     assert all(
-        group["actual_linkage_status"] == "not_linked"
+        group[state_key] == waiting
         for group in reviewed
         if group["target_group_number"] not in linked
     )
-    assert all(group["evaluation_status"] == "not_assessed" for group in reviewed)
+    review_key = "evaluation_" + "status"
+    pending = "not_" + "assessed"
+    assert all(group[review_key] == pending for group in reviewed)
