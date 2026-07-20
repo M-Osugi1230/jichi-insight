@@ -98,5 +98,16 @@ def test_evidence_and_review_status_are_complete():
     assert {packet["subject_id"] for packet in packets} == {
         item["id"] for item in items
     }
-    assert all(item["actual_linkage_status"] == "not_linked" for item in items)
+    statuses = {
+        item["target_group_number"]: item["actual_linkage_status"] for item in items
+    }
+    assert {number for number, status in statuses.items() if status == "linked"} == {
+        42,
+        45,
+    }
+    assert all(
+        status == "not_linked"
+        for number, status in statuses.items()
+        if number not in {42, 45}
+    )
     assert all(item["evaluation_status"] == "not_assessed" for item in items)
