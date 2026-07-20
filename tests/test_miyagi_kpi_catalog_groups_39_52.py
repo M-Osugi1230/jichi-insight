@@ -104,10 +104,15 @@ def test_evidence_and_review_status_are_complete():
     assert {number for number, status in statuses.items() if status == "linked"} == {
         42,
         45,
+        46,
+        47,
+        48,
+        51,
+        52,
     }
     assert all(
         status == "not_linked"
         for number, status in statuses.items()
-        if number not in {42, 45}
+        if number not in {42, 45, 46, 47, 48, 51, 52}
     )
     assert all(item["evaluation_status"] == "not_assessed" for item in items)

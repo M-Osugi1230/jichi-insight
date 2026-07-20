@@ -27,6 +27,7 @@ ALL_CATALOGS = [
     POLICY / "miyagi_kpi_catalog_measure7.json",
     *NEW_CATALOGS,
 ]
+ACTUALS = sorted(POLICY.glob("miyagi_kpi_actuals_measure*_2024.json"))
 
 
 def load(path: Path):
@@ -127,37 +128,21 @@ def test_all_reviewed_batches_form_68_groups_and_85_series():
     series = [item for group in reviewed for item in group["series"]]
     assert [group["target_group_number"] for group in reviewed] == list(range(1, 69))
     assert [item["series_number"] for item in series] == list(range(1, 86))
-    state_key = "actual_" + "linkage_status"
-    connected = "link" + "ed"
-    linked = {
+    connected_groups = {
         group["target_group_number"]
         for group in reviewed
-        if group[state_key] == connected
+        if group["actual_linkage_status"] == "linked"
     }
-    assert linked == {
-        4,
-        5,
-        6,
-        8,
-        9,
-        10,
-        11,
-        12,
-        14,
-        *range(15, 32),
-        33,
-        36,
-        37,
-        38,
-        42,
-        45,
+    expected_groups = {
+        int(record["target_group_id"].rsplit("-", 1)[1])
+        for path in ACTUALS
+        for record in load(path)["records"]
+        if record["linkage_status"] == "linked"
     }
-    waiting = "not_" + "linked"
+    assert connected_groups == expected_groups
     assert all(
-        group[state_key] == waiting
+        group["actual_linkage_status"] == "not_linked"
         for group in reviewed
-        if group["target_group_number"] not in linked
+        if group["target_group_number"] not in connected_groups
     )
-    review_key = "evaluation_" + "status"
-    pending = "not_" + "assessed"
-    assert all(group[review_key] == pending for group in reviewed)
+    assert all(group["evaluation_status"] == "not_assessed" for group in reviewed)
