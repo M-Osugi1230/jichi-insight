@@ -6,6 +6,7 @@ POLICY = ROOT / "data/entities/policy"
 CATALOG = POLICY / "miyagi_kpi_catalog_measure11.json"
 EVIDENCE = POLICY / "miyagi_kpi_measure11_evidence_packets.json"
 CATALOGS = sorted(POLICY.glob("miyagi_kpi_catalog_*.json"))
+ACTUALS = sorted(POLICY.glob("miyagi_kpi_actuals_measure*_2024.json"))
 
 
 def load(path: Path):
@@ -29,33 +30,18 @@ def test_measure11_values_and_evidence():
     assert len(load(EVIDENCE)) == 4
 
 
-def test_current_connection_boundary():
+def test_catalog_connections_match_reviewed_actual_records():
     groups = [group for path in CATALOGS for group in load(path)["items"]]
-    state_key = "actual_" + "linkage_status"
-    connected = "link" + "ed"
-    linked = {
+    connected_groups = {
         group["target_group_number"]
         for group in groups
-        if group[state_key] == connected
+        if group["actual_linkage_status"] == "linked"
     }
-    assert linked == {
-        4,
-        5,
-        6,
-        8,
-        9,
-        10,
-        11,
-        12,
-        14,
-        *range(15, 32),
-        33,
-        36,
-        37,
-        38,
-        42,
-        45,
+    expected_groups = {
+        int(record["target_group_id"].rsplit("-", 1)[1])
+        for path in ACTUALS
+        for record in load(path)["records"]
+        if record["linkage_status"] == "linked"
     }
-    review_key = "evaluation_" + "status"
-    pending = "not_" + "assessed"
-    assert all(group[review_key] == pending for group in groups)
+    assert connected_groups == expected_groups
+    assert all(group["evaluation_status"] == "not_assessed" for group in groups)
