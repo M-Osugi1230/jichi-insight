@@ -18,10 +18,26 @@ fetch_route() {
   curl --silent --show-error --location --output "$output" --write-out '%{http_code}' "$BASE_URL$route" || true
 }
 
+normalize_html_file() {
+  local path="$1"
+  python - "$path" <<'PY'
+import re
+import sys
+from pathlib import Path
+
+path = Path(sys.argv[1])
+content = path.read_text(encoding="utf-8")
+path.write_text(re.sub(r"<!--.*?-->", "", content, flags=re.DOTALL), encoding="utf-8")
+PY
+}
+
 ready=false
 for attempt in $(seq 1 18); do
   status="$(fetch_route "/" "$INDEX_FILE")"
   printf 'Attempt %02d: HTTP %s\n' "$attempt" "$status" >> "$REPORT"
+  if [[ "$status" == "200" ]]; then
+    normalize_html_file "$INDEX_FILE"
+  fi
   if [[ "$status" == "200" ]] \
     && grep --quiet --fixed-strings 'Jichi Insight' "$INDEX_FILE" \
     && grep --quiet --fixed-strings '全国47都道府県を探す' "$INDEX_FILE" \
@@ -73,6 +89,7 @@ check_content() {
     cat "$REPORT"
     exit 1
   fi
+  normalize_html_file "$CONTENT_FILE"
 
   local required
   for required in "$@"; do
