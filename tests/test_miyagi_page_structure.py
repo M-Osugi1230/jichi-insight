@@ -1,9 +1,11 @@
+import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PAGE = ROOT / "apps/web/app/municipalities/miyagi/page.tsx"
 LIBRARY = ROOT / "apps/web/lib/miyagiPolicies.ts"
 COVERAGE = ROOT / "apps/web/lib/nationwideCoverage.ts"
+PUBLISHED = ROOT / "data/catalog/published_prefecture_pages.json"
 MUNICIPALITIES = ROOT / "apps/web/app/municipalities/page.tsx"
 SITEMAP = ROOT / "apps/web/app/sitemap.ts"
 
@@ -25,10 +27,16 @@ def test_miyagi_page_uses_dynamic_catalog_totals_and_all_scopes():
 
 def test_miyagi_page_is_linked_from_nationwide_surfaces():
     coverage = read(COVERAGE)
+    published = json.loads(read(PUBLISHED))
     municipalities = read(MUNICIPALITIES)
     sitemap = read(SITEMAP)
-    assert 'record.prefecture_code === "04"' in coverage
-    assert '"/municipalities/miyagi"' in coverage
+    by_code = {
+        record["prefecture_code"]: record for record in published["records"]
+    }
+
+    assert by_code["04"]["route"] == "/municipalities/miyagi"
+    assert 'publishedPageRegistry from "../../../data/catalog/published_prefecture_pages.json"' in coverage
+    assert "publishedPrefecturePagesByCode" in coverage
     assert 'href="/municipalities/miyagi"' in municipalities
     assert "waveOnePolicyReviewQueue" in municipalities
     assert '"/municipalities/miyagi"' in sitemap
