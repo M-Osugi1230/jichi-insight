@@ -4,65 +4,62 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 
 import {
-  coverageStageLabel,
-  coverageStageTone,
   nationwidePrefectureCoverage,
+  nationwideSourceInventoryByCode,
   planCurrencyLabel,
   publicationStatusLabel,
   regionOrder,
-  type CoverageStage,
+  sourceInventoryCategoryLabel,
+  sourceInventoryCategoryOrder,
+  type SourceInventoryCategory,
+  type SourceInventoryStatus,
 } from "@/lib/nationwideCoverage";
 
 import { StatusBadge } from "./StatusBadge";
 import styles from "./CoverageExplorer.module.css";
 
-type QuickFilter = "all" | "official" | "current" | "reviewed" | "published";
+type QuickFilter = "all" | "public" | "kpi" | "evaluation" | "budget";
 
-const quickFilters: Array<{ value: QuickFilter; label: string }> = [
-  { value: "all", label: "すべて" },
-  { value: "official", label: "公式入口確認済み" },
-  { value: "current", label: "現行計画確認済み" },
-  { value: "reviewed", label: "Reviewed公開" },
-  { value: "published", label: "自治体ページ公開中" },
-];
-
-const planReviewLabels = {
-  not_started: "未着手",
-  indexed: "計画入口確認済み",
-  reviewed: "Reviewed",
-  verified: "Verified",
-} as const;
-
-const stageDescriptions: Record<CoverageStage, string> = {
-  registered: "全国一覧への登録のみ。公式入口はまだ確認していません。",
-  official_entry_verified: "自治体の公式入口を確認済み。政策計画入口は未索引です。",
-  plan_entry_indexed: "政策計画入口を索引済み。現行性の確認は別に管理します。",
-  current_plan_confirmed: "現行の政策計画入口まで確認済み。資料本文のReviewed化は別工程です。",
-  reviewed_data: "一次資料と人の照合を通過した政策データがあります。",
+const statusLabels: Record<SourceInventoryStatus, string> = {
+  not_indexed: "未索引",
+  indexed: "索引済",
+  reviewed: "照合済",
+  linked: "接続済",
 };
 
+const quickFilters: Array<{
+  value: QuickFilter;
+  label: string;
+  category?: SourceInventoryCategory;
+}> = [
+  { value: "all", label: "すべて" },
+  { value: "public", label: "自治体ページ公開中" },
+  { value: "kpi", label: "KPI資料あり", category: "kpi_source" },
+  { value: "evaluation", label: "年度評価あり", category: "annual_evaluation" },
+  { value: "budget", label: "予算・決算あり", category: "budget" },
+];
+
+function isIndexed(status: SourceInventoryStatus | undefined) {
+  return status !== undefined && status !== "not_indexed";
+}
+
+function matchesQuickFilter(
+  filter: QuickFilter,
+  record: (typeof nationwidePrefectureCoverage)[number],
+) {
+  if (filter === "all") return true;
+  if (filter === "public") return record.publicationStatus === "published";
+  const definition = quickFilters.find((item) => item.value === filter);
+  const inventory = nationwideSourceInventoryByCode.get(record.prefecture_code);
+  return definition?.category
+    ? isIndexed(inventory?.sources[definition.category])
+    : false;
+}
+
 function countForFilter(filter: QuickFilter) {
-  if (filter === "official") {
-    return nationwidePrefectureCoverage.filter(
-      (record) => record.officialEntryStatus === "verified",
-    ).length;
-  }
-  if (filter === "current") {
-    return nationwidePrefectureCoverage.filter(
-      (record) => record.planCurrencyStatus === "current_confirmed",
-    ).length;
-  }
-  if (filter === "reviewed") {
-    return nationwidePrefectureCoverage.filter(
-      (record) => record.coverageStage === "reviewed_data",
-    ).length;
-  }
-  if (filter === "published") {
-    return nationwidePrefectureCoverage.filter(
-      (record) => record.publicationStatus === "published",
-    ).length;
-  }
-  return nationwidePrefectureCoverage.length;
+  return nationwidePrefectureCoverage.filter((record) =>
+    matchesQuickFilter(filter, record),
+  ).length;
 }
 
 export function CoverageExplorer() {
@@ -73,22 +70,21 @@ export function CoverageExplorer() {
   const filteredGroups = useMemo(() => {
     const normalizedQuery = query.trim().toLocaleLowerCase("ja-JP");
     const records = nationwidePrefectureCoverage.filter((record) => {
+      const inventory = nationwideSourceInventoryByCode.get(record.prefecture_code);
       const matchesQuery =
         normalizedQuery.length === 0 ||
-        [record.name, record.region, record.planSource?.title ?? ""]
+        [
+          record.name,
+          record.region,
+          record.planSource?.title ?? "",
+          inventory?.next_action ?? "",
+        ]
           .join(" ")
           .toLocaleLowerCase("ja-JP")
           .includes(normalizedQuery);
       const matchesRegion = region === "all" || record.region === region;
-      const matchesQuickFilter =
-        quickFilter === "all" ||
-        (quickFilter === "official" && record.officialEntryStatus === "verified") ||
-        (quickFilter === "current" &&
-          record.planCurrencyStatus === "current_confirmed") ||
-        (quickFilter === "reviewed" && record.coverageStage === "reviewed_data") ||
-        (quickFilter === "published" && record.publicationStatus === "published");
 
-      return matchesQuery && matchesRegion && matchesQuickFilter;
+      return matchesQuery && matchesRegion && matchesQuickFilter(quickFilter, record);
     });
 
     return regionOrder
@@ -121,7 +117,7 @@ export function CoverageExplorer() {
             type="search"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            placeholder="例：東京都、沖縄、総合計画"
+            placeholder="例：宮城県、沖縄、長期ビジョン"
           />
         </div>
         <div className={styles.regionGroup}>
@@ -133,14 +129,12 @@ export function CoverageExplorer() {
           >
             <option value="all">全国</option>
             {regionOrder.map((regionName) => (
-              <option value={regionName} key={regionName}>
-                {regionName}
-              </option>
+              <option value={regionName} key={regionName}>{regionName}</option>
             ))}
           </select>
         </div>
         <fieldset className={styles.stageGroup}>
-          <legend>確認できた段階</legend>
+          <legend>確認したい資料の深さ</legend>
           <div className={styles.filterChips}>
             {quickFilters.map((filter) => (
               <button
@@ -156,6 +150,13 @@ export function CoverageExplorer() {
             ))}
           </div>
         </fieldset>
+      </div>
+
+      <div className={styles.legend} aria-label="資料状態の凡例">
+        <span>資料状態</span>
+        {(Object.keys(statusLabels) as SourceInventoryStatus[]).map((status) => (
+          <span className={styles[`status_${status}`]} key={status}>{statusLabels[status]}</span>
+        ))}
       </div>
 
       <div className={styles.resultBar}>
@@ -176,59 +177,62 @@ export function CoverageExplorer() {
                 <span>{group.records.length}都道府県</span>
               </div>
               <div className={styles.prefectureGrid}>
-                {group.records.map((record) => (
-                  <article className={styles.prefectureCard} key={record.prefecture_code}>
-                    <div className={styles.prefectureTop}>
-                      <div>
-                        <span className={styles.code}>{record.prefecture_code}</span>
-                        <h4>{record.name}</h4>
+                {group.records.map((record) => {
+                  const inventory = nationwideSourceInventoryByCode.get(record.prefecture_code);
+                  return (
+                    <article className={styles.prefectureCard} key={record.prefecture_code}>
+                      <div className={styles.prefectureTop}>
+                        <div>
+                          <span className={styles.code}>{record.prefecture_code} / {record.region}</span>
+                          <h4>{record.name}</h4>
+                        </div>
+                        <StatusBadge
+                          label={record.publicationStatus === "published" ? "自治体ページ公開中" : "現行計画確認済み"}
+                          tone={record.publicationStatus === "published" ? "verified" : "progress"}
+                        />
                       </div>
-                      <StatusBadge
-                        label={coverageStageLabel(record.coverageStage)}
-                        tone={coverageStageTone(record.coverageStage)}
-                      />
-                    </div>
 
-                    <p className={styles.stageDescription}>
-                      {stageDescriptions[record.coverageStage]}
-                    </p>
+                      <div className={styles.sourceDepth} aria-label={`${record.name}の資料カバレッジ`}>
+                        {sourceInventoryCategoryOrder.map((category) => {
+                          const status = inventory?.sources[category] ?? "not_indexed";
+                          return (
+                            <div className={styles[`status_${status}`]} key={category}>
+                              <dt>{sourceInventoryCategoryLabel(category)}</dt>
+                              <dd>{statusLabels[status]}</dd>
+                            </div>
+                          );
+                        })}
+                      </div>
 
-                    <dl className={styles.prefectureFacts}>
-                      <div>
-                        <dt>計画資料</dt>
-                        <dd>{record.planSource?.title ?? "未索引"}</dd>
-                      </div>
-                      <div>
-                        <dt>資料確認</dt>
-                        <dd>{planReviewLabels[record.planReviewStatus]}</dd>
-                      </div>
-                      <div>
-                        <dt>現行性</dt>
-                        <dd>{planCurrencyLabel(record.planCurrencyStatus)}</dd>
-                      </div>
-                      <div>
-                        <dt>公開状態</dt>
-                        <dd>{publicationStatusLabel(record.publicationStatus)}</dd>
-                      </div>
-                    </dl>
+                      <dl className={styles.prefectureFacts}>
+                        <div>
+                          <dt>現行の政策計画</dt>
+                          <dd>{record.planSource?.title ?? "未索引"}</dd>
+                        </div>
+                        <div>
+                          <dt>現行性</dt>
+                          <dd>{planCurrencyLabel(record.planCurrencyStatus)}</dd>
+                        </div>
+                        <div>
+                          <dt>公開状態</dt>
+                          <dd>{publicationStatusLabel(record.publicationStatus)}</dd>
+                        </div>
+                        <div>
+                          <dt>次に確認すること</dt>
+                          <dd>{inventory?.next_action ?? "資料インベントリを確認中"}</dd>
+                        </div>
+                      </dl>
 
-                    <div className={styles.actions}>
-                      {record.publicHref ? (
-                        <Link href={record.publicHref}>自治体ページ</Link>
-                      ) : null}
-                      {record.planSource ? (
-                        <a href={record.planSource.url} target="_blank" rel="noreferrer">
-                          計画資料 ↗
-                        </a>
-                      ) : null}
-                      <a href={record.official_url} target="_blank" rel="noreferrer">
-                        {record.officialEntryStatus === "verified"
-                          ? "公式サイト ↗"
-                          : "公式URL候補 ↗"}
-                      </a>
-                    </div>
-                  </article>
-                ))}
+                      <div className={styles.actions}>
+                        {record.publicHref ? <Link href={record.publicHref}>詳細ページ</Link> : null}
+                        {record.planSource ? (
+                          <a href={record.planSource.url} target="_blank" rel="noreferrer">政策計画 ↗</a>
+                        ) : null}
+                        <a href={record.official_url} target="_blank" rel="noreferrer">公式サイト ↗</a>
+                      </div>
+                    </article>
+                  );
+                })}
               </div>
             </section>
           ))}

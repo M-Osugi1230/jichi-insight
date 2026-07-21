@@ -1,335 +1,96 @@
-.summaryGrid {
-  display: grid;
-  gap: 14px;
-  grid-template-columns: repeat(5, 1fr);
-  margin-bottom: 80px;
-}
+.overview { background: #fffefa; border: 1px solid #d7d3c8; display: grid; grid-template-columns: minmax(210px, 0.75fr) minmax(0, 2.25fr); margin-bottom: 90px; }
+.overviewLead { background: #102e46; color: #fff; display: grid; padding: 26px; }
+.overviewLead > span { color: #ff9a80; font-size: 0.61rem; font-weight: 900; letter-spacing: 0.12em; }
+.overviewLead > strong { align-self: end; font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; font-size: 1.4rem; margin: 32px 0 12px; }
+.overviewLead > span:last-child { justify-self: start; }
+.overview dl { display: grid; grid-template-columns: repeat(5, 1fr); margin: 0; }
+.overview dl div { border-left: 1px solid #d7d3c8; display: flex; flex-direction: column; justify-content: space-between; padding: 25px 19px; }
+.overview dt { color: #68737b; font-size: 0.66rem; }
+.overview dd { font-size: clamp(2rem, 4vw, 3.3rem); font-weight: 850; letter-spacing: -0.065em; margin: 24px 0 0; }
+.overview dd small { color: #68737b; font-size: 0.62rem; font-weight: 650; margin-left: 3px; }
+.sectionHeading { align-items: end; display: grid; gap: 70px; grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr); }
+.sectionHeading h2 { margin-bottom: 0; }
+.sectionHeading > p { color: #42505b; margin-bottom: 8px; }
+.deepDiveGrid { display: grid; gap: 13px; grid-template-columns: repeat(3, 1fr); margin-top: 48px; }
+.deepDiveCard { background: #fffefa; border: 1px solid #d7d3c8; border-radius: 7px 28px 7px 7px; display: flex; flex-direction: column; min-height: 515px; overflow: hidden; padding: 24px; position: relative; }
+.deepDiveCard::before { background: #286f9f; content: ""; height: 5px; left: 0; position: absolute; right: 0; top: 0; }
+.deepDiveCard.miyagi::before { background: #de5a3d; }
+.deepDiveCard.hokkaido::before { background: #286f9f; }
+.deepDiveCard.fukuoka::before { background: #236958; }
+.deepDiveCard > div:first-child { align-items: center; display: flex; gap: 10px; justify-content: space-between; }
+.deepDiveCard > div:first-child > span { font-size: 0.67rem; font-weight: 900; }
+.deepDiveCard h3 { font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; font-size: clamp(1.65rem, 2.8vw, 2.35rem); margin: 50px 0 20px; }
+.deepDiveCard dl { display: grid; grid-template-columns: repeat(2, 1fr); margin: 0; }
+.deepDiveCard dl div { border-top: 1px solid #d7d3c8; padding: 11px 0; }
+.deepDiveCard dl div:nth-child(even) { padding-left: 12px; }
+.deepDiveCard dt { color: #68737b; font-size: 0.61rem; }
+.deepDiveCard dd { font-size: 0.78rem; font-weight: 850; margin: 2px 0 0; }
+.deepDiveCard > p { color: #42505b; font-size: 0.76rem; margin: 22px 0; }
+.deepDiveCard > a, .cityCard > a { border-top: 1px solid #d7d3c8; color: #286f9f; font-size: 0.73rem; font-weight: 850; margin-top: auto; padding-top: 15px; text-underline-offset: 4px; }
+.levelSection { background: #ece8dd; display: grid; gap: 60px; grid-template-columns: 0.7fr 1.3fr; margin: 20px 0 0; padding: 58px 48px; }
+.levelSection h2 { font-size: clamp(2rem, 4vw, 3.4rem); }
+.levelSection > div > p:last-child { color: #42505b; }
+.levelSection ol { display: grid; grid-template-columns: repeat(2, 1fr); list-style: none; margin: 0; padding: 0; }
+.levelSection li { border-left: 1px solid #b8b4aa; border-top: 1px solid #b8b4aa; display: grid; min-height: 205px; padding: 18px; }
+.levelSection li > span { color: #9b978d; font-size: 0.62rem; }
+.levelSection li small { align-self: end; color: #de5a3d; font-size: 0.62rem; font-weight: 900; margin-top: 28px; }
+.levelSection li strong { font-size: 1rem; margin-top: 4px; }
+.levelSection li p { color: #42505b; font-size: 0.7rem; margin: 8px 0 0; }
+.sourceSummary { display: grid; gap: 10px; grid-template-columns: repeat(3, 1fr); margin-top: 44px; }
+.sourceSummary article { background: #fffefa; border: 1px solid #d7d3c8; padding: 22px; }
+.sourceSummary article > span { color: #42505b; font-size: 0.68rem; font-weight: 800; }
+.sourceSummary strong { display: block; font-size: 2.3rem; letter-spacing: -0.06em; margin: 24px 0 12px; }
+.sourceSummary strong small { color: #68737b; font-size: 0.61rem; margin-left: 3px; }
+.sourceSummary article > div { background: #ddd9cf; height: 6px; }
+.sourceSummary article > div span { background: #286f9f; display: block; height: 100%; min-width: 2px; }
+.sourceSummary p { color: #68737b; font-size: 0.64rem; margin: 11px 0 0; }
+.cityGrid { display: grid; gap: 13px; grid-template-columns: repeat(2, 1fr); margin-top: 38px; }
+.cityCard { background: #fffefa; border: 1px solid #d7d3c8; border-radius: 7px 25px 7px 7px; display: flex; flex-direction: column; min-height: 340px; padding: 24px; }
+.cityCard > div:first-child { align-items: center; display: flex; justify-content: space-between; }
+.cityCard > div:first-child > span { color: #68737b; font-size: 0.66rem; }
+.cityCard h3 { font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; font-size: 1.75rem; margin: 36px 0 8px; }
+.cityCard > p { color: #42505b; font-size: 0.78rem; }
+.cityCard dl { margin: 12px 0 20px; }
+.cityCard dl div { border-top: 1px solid #d7d3c8; display: flex; gap: 15px; justify-content: space-between; padding: 9px 0; }
+.cityCard dt, .cityCard dd { font-size: 0.7rem; }
+.cityCard dt { color: #68737b; }
+.cityCard dd { font-weight: 800; margin: 0; text-align: right; }
+.roadmapGrid { display: grid; gap: 10px; grid-template-columns: repeat(3, 1fr); margin-top: 42px; }
+.roadmapGrid article { background: #fffefa; border: 1px solid #d7d3c8; display: flex; flex-direction: column; min-height: 265px; padding: 20px; }
+.roadmapGrid article > div { align-items: center; display: flex; justify-content: space-between; }
+.roadmapGrid article > div > span { color: #de5a3d; font-size: 0.65rem; font-weight: 900; }
+.roadmapGrid h3 { font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; font-size: 1.35rem; margin: 30px 0 10px; }
+.roadmapGrid p { color: #42505b; font-size: 0.68rem; line-height: 1.7; }
+.roadmapGrid article > a { border-top: 1px solid #d7d3c8; color: #286f9f; font-size: 0.68rem; font-weight: 850; margin-top: auto; padding-top: 12px; text-underline-offset: 3px; }
 
-.summaryCard,
-.cityCard,
-.reviewCard {
-  background: #fff;
-  border: 1px solid #d6d5ce;
-  border-radius: 20px;
-}
-
-.summaryCard {
-  padding: 22px;
-}
-
-.summaryCard span {
-  color: #676960;
-  display: block;
-  font-size: 0.72rem;
-}
-
-.summaryCard strong {
-  display: block;
-  font-size: clamp(2rem, 4vw, 3.2rem);
-  letter-spacing: -0.06em;
-  margin: 28px 0 8px;
-}
-
-.summaryCard p {
-  border-top: 1px solid #d6d5ce;
-  color: #676960;
-  font-size: 0.76rem;
-  line-height: 1.7;
-  margin: 18px 0 0;
-  padding-top: 14px;
-}
-
-.ladderSection {
-  display: grid;
-  gap: 40px;
-  grid-template-columns: 0.75fr 1.25fr;
-  margin-bottom: 96px;
-}
-
-.ladderSection h2 {
-  font-size: clamp(1.8rem, 4vw, 3rem);
-  letter-spacing: -0.04em;
-  line-height: 1.3;
-  margin: 10px 0 0;
-}
-
-.ladder {
-  display: grid;
-  gap: 12px;
-  grid-template-columns: repeat(2, 1fr);
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.ladder li {
-  background: #f0efe9;
-  border-radius: 18px;
-  padding: 20px;
-}
-
-.ladder strong {
-  align-items: center;
-  background: #173f35;
-  border-radius: 999px;
-  color: #fff;
-  display: flex;
-  height: 32px;
-  justify-content: center;
-  width: 32px;
-}
-
-.ladder span {
-  display: block;
-  font-weight: 800;
-  margin: 18px 0 8px;
-}
-
-.ladder p {
-  color: #676960;
-  font-size: 0.78rem;
-  line-height: 1.7;
-  margin: 0;
-}
-
-.sectionLead {
-  color: #676960;
-  line-height: 1.8;
-  max-width: 820px;
-}
-
-.queueSummary {
-  display: grid;
-  gap: 12px;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 32px 0;
-}
-
-.queueSummary article {
-  background: #f0efe9;
-  border-radius: 16px;
-  padding: 18px;
-}
-
-.queueSummary span {
-  color: #676960;
-  display: block;
-  font-size: 0.72rem;
-}
-
-.queueSummary strong {
-  display: block;
-  font-size: 2rem;
-  letter-spacing: -0.04em;
-  margin-top: 12px;
-}
-
-.reviewQueue {
-  display: grid;
-  gap: 14px;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.reviewCard {
-  display: flex;
-  flex-direction: column;
-  min-height: 390px;
-  padding: 24px;
-}
-
-.reviewCardActive {
-  border: 2px solid #765b12;
-  box-shadow: 0 12px 28px rgb(23 63 53 / 8%);
-}
-
-.reviewCardHeader {
-  align-items: flex-start;
-  display: flex;
-  gap: 18px;
-  justify-content: space-between;
-}
-
-.reviewCardHeader h3 {
-  font-size: 1.5rem;
-  margin: 6px 0 0;
-}
-
-.queueOrder {
-  color: #765b12;
-  font-size: 0.7rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-}
-
-.planTitle {
-  color: #4f514a;
-  font-size: 0.86rem;
-  font-weight: 700;
-  line-height: 1.65;
-  margin: 20px 0;
-}
-
-.reviewFacts {
-  display: grid;
-  margin: 0;
-}
-
-.reviewFacts div {
-  align-items: flex-start;
-  border-top: 1px solid #e1e0da;
-  display: flex;
-  font-size: 0.76rem;
-  gap: 16px;
-  justify-content: space-between;
-  padding: 10px 0;
-}
-
-.reviewFacts dt {
-  color: #676960;
-}
-
-.reviewFacts dd {
-  font-weight: 700;
-  margin: 0;
-  text-align: right;
-}
-
-.nextAction {
-  background: #f0efe9;
-  border-radius: 14px;
-  margin: 18px 0;
-  padding: 16px;
-}
-
-.nextAction span {
-  color: #676960;
-  font-size: 0.7rem;
-  font-weight: 800;
-}
-
-.nextAction p {
-  font-size: 0.82rem;
-  line-height: 1.7;
-  margin: 8px 0 0;
-}
-
-.priorityBasis {
-  border-top: 1px solid #e1e0da;
-  margin: 0 0 20px;
-  padding-top: 14px;
-}
-
-.priorityBasis summary {
-  color: #173f35;
-  cursor: pointer;
-  font-size: 0.75rem;
-  font-weight: 800;
-}
-
-.priorityBasis p {
-  color: #676960;
-  font-size: 0.76rem;
-  line-height: 1.7;
-  margin: 10px 0 0;
-}
-
-.actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: auto;
-}
-
-.actions a,
-.cityCard > a {
-  color: #173f35;
-  font-size: 0.75rem;
-  font-weight: 800;
-  text-underline-offset: 4px;
-}
-
-.cityGrid {
-  display: grid;
-  gap: 14px;
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: 32px;
-}
-
-.cityCard {
-  padding: 24px;
-}
-
-.cityCard > div:first-child {
-  align-items: start;
-  display: flex;
-  justify-content: space-between;
-}
-
-.cityCard p {
-  color: #676960;
-  line-height: 1.7;
-}
-
-.cityCard h3 {
-  font-size: 1.5rem;
-  margin: 4px 0 0;
-}
-
-.cityCard dl {
-  margin: 18px 0;
-}
-
-.cityCard dl div {
-  border-top: 1px solid #e1e0da;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 0;
-}
-
-.cityCard dt,
-.cityCard dd {
-  font-size: 0.78rem;
-}
-
-.cityCard dd {
-  font-weight: 700;
-  margin: 0;
-}
-
-@media (max-width: 1100px) {
-  .summaryGrid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+@media (max-width: 1000px) {
+  .overview { grid-template-columns: 1fr; }
+  .overviewLead { align-items: center; grid-template-columns: 1fr auto; }
+  .overviewLead > strong { margin: 12px 0; }
+  .overviewLead > span:last-child { justify-self: end; }
+  .deepDiveGrid { grid-template-columns: 1fr 1fr; }
+  .deepDiveCard:first-child { grid-column: 1 / -1; }
+  .levelSection { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 760px) {
-  .summaryGrid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .ladderSection,
-  .cityGrid,
-  .reviewQueue {
-    grid-template-columns: 1fr;
-  }
-
-  .queueSummary {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  .overview dl { grid-template-columns: repeat(2, 1fr); }
+  .overview dl div:nth-child(odd) { border-left: 0; }
+  .overview dl div:nth-child(n + 3) { border-top: 1px solid #d7d3c8; }
+  .sectionHeading, .deepDiveGrid { grid-template-columns: 1fr; }
+  .sectionHeading { align-items: start; gap: 22px; }
+  .deepDiveCard:first-child { grid-column: auto; }
+  .deepDiveCard { min-height: 440px; }
+  .levelSection { padding: 44px 25px; }
+  .sourceSummary { grid-template-columns: repeat(2, 1fr); }
+  .cityGrid { grid-template-columns: 1fr; }
+  .roadmapGrid { grid-template-columns: repeat(2, 1fr); }
 }
 
-@media (max-width: 540px) {
-  .summaryGrid,
-  .ladder,
-  .queueSummary {
-    grid-template-columns: 1fr;
-  }
-
-  .reviewCardHeader {
-    flex-direction: column;
-  }
-
-  .reviewCard {
-    min-height: 0;
-  }
+@media (max-width: 480px) {
+  .overviewLead { display: grid; grid-template-columns: 1fr; }
+  .overviewLead > span:last-child { justify-self: start; }
+  .levelSection ol, .sourceSummary { grid-template-columns: 1fr; }
+  .levelSection li { min-height: 170px; }
+  .roadmapGrid { grid-template-columns: 1fr; }
 }

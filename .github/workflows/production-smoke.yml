@@ -31,7 +31,16 @@ jobs:
         with:
           ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || 'main' }}
 
-      - name: Check deployed site
+      - name: Check current production availability
+        if: github.event_name == 'pull_request'
+        run: |
+          status="$(curl --silent --show-error --location --output production-home.html --write-out '%{http_code}' https://m-osugi1230.github.io/jichi-insight/)"
+          printf 'Jichi Insight pre-merge production availability\nHTTP %s\n' "$status" > production-smoke-report.txt
+          test "$status" = "200"
+          grep --quiet --fixed-strings 'Jichi Insight' production-home.html
+
+      - name: Check deployed release content
+        if: github.event_name != 'pull_request'
         run: bash scripts/check_production.sh
 
       - name: Upload smoke report

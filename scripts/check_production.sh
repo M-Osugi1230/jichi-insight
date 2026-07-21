@@ -40,7 +40,7 @@ for attempt in $(seq 1 18); do
   fi
   if [[ "$status" == "200" ]] \
     && grep --quiet --fixed-strings 'Jichi Insight' "$INDEX_FILE" \
-    && grep --quiet --fixed-strings '全国47都道府県を探す' "$INDEX_FILE" \
+    && grep --quiet --fixed-strings '全国47都道府県から探す' "$INDEX_FILE" \
     && grep --quiet --fixed-strings '/jichi-insight/_next/' "$INDEX_FILE"; then
     ready=true
     break
@@ -104,19 +104,19 @@ check_content() {
 }
 
 check_content "/municipalities/" \
-  "全国47都道府県を、同じ品質段階で追う。" \
-  "公式入口確認済み" \
-  "政策計画入口索引済み" \
-  "現行政策入口確認済み" \
-  "入口確認の先を、6つの資料カテゴリで追う。" \
+  "47都道府県を、資料の深さから探す。" \
+  "全国の入口整備" \
+  "政策計画入口" \
+  "確認したい資料の深さ" \
+  "都道府県と、確認できる資料。" \
   "政策計画" \
   "実施計画" \
   "KPI・数値目標" \
   "年度評価" \
   "予算・決算" \
   "事業評価" \
-  "47/47" \
-  "公開中" \
+  "自治体ページ公開中" \
+  "公開状態" \
   "未公開"
 
 printf '\nPrefecture coverage checks:\n' >> "$REPORT"
@@ -144,8 +144,9 @@ check_content "/municipalities/hokkaido/" \
   "108 / 108のKPI本文Reviewedを完了"
 
 check_content "/municipalities/miyagi/" \
-  "宮城県の政策目標を、原文・期間・未設定までそのまま読む。" \
-  "目標値の確認と、政策成果の評価を分ける。"
+  "目標と実績を、同じものにしない。" \
+  "2つの目標を、混ぜない。" \
+  "年度実績を、指標ごとに確かめる。"
 
 check_content "/municipalities/fukuoka-prefecture/" \
   "普通会計" \

@@ -7,7 +7,7 @@
 
 .prefectureIndex { border-bottom: 1px solid #d6d5ce; display: grid; gap: 48px; grid-template-columns: .75fr 1.25fr; margin-bottom: 78px; padding: 0 0 78px; }
 .prefectureIndex h2 { font-size: clamp(1.9rem, 4vw, 3.25rem); }
-.prefectureCards { display: grid; gap: 14px; grid-template-columns: repeat(2, 1fr); }
+.prefectureCards { display: grid; gap: 12px; grid-template-columns: repeat(3, 1fr); }
 .prefectureCards article { background: #fff; border: 1px solid #d6d5ce; border-radius: 20px; padding: 22px; }
 .prefectureCards article > div { align-items: center; display: flex; gap: 10px; justify-content: space-between; }
 .prefectureCards article > div > span { font-size: .78rem; font-weight: 800; }
@@ -70,6 +70,7 @@
 
 @media (max-width: 900px) {
   .prefectureIndex { grid-template-columns: 1fr; }
+  .prefectureCards { grid-template-columns: 1fr 1fr; }
   .directionCard { grid-template-columns: 70px 1fr; }
   .directionFacts,
   .initiativeList,

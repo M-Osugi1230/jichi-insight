@@ -9,6 +9,8 @@ import {
   hokkaidoIndicatorGroups,
   hokkaidoIndicatorReviewStats,
 } from "@/lib/hokkaidoIndicators";
+import { miyagiKpiActualStats } from "@/lib/miyagiActuals";
+import { miyagiPolicyReviewStats } from "@/lib/miyagiPolicies";
 import {
   evidenceForPolicyDirection,
   fukuokaPolicyDirections,
@@ -23,9 +25,9 @@ import { allPolicyTargetStats, policyTargetPages } from "@/lib/policyTargets";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
-  title: "政策体系",
+  title: "政策と成果",
   description:
-    "福岡県と北海道の総合計画・政策指標を、原文・掲載順・数値目標・未接続範囲とともに確認できます。",
+    "北海道・宮城県・福岡県の政策体系、数値目標、年度実績、未接続範囲を一次資料から確認できます。",
 };
 
 const targetDetails = Object.fromEntries(
@@ -43,10 +45,10 @@ export default function PoliciesPage() {
     <main>
       <SiteHeader />
       <div className="pageShell">
-        <PageIntro eyebrow="Policy registry" title="政策評価の前に、計画が何を目指すかを構造化する。">
+        <PageIntro eyebrow="Policies and results" title="目標を読み、実績の有無を確かめる。">
           <p>
-            福岡県総合計画の4つの基本方向・30の取組事項と、北海道総合計画の政策体系・Reviewed指標1〜{hokkaidoIndicatorReviewStats.reviewedIndicators}を公開しています。
-            数値目標は構造化しましたが、年度実績、予算、事業、公約との接続や達成度評価は行っていません。
+            北海道の全{hokkaidoIndicatorReviewStats.reviewedIndicators}指標、宮城県の全{miyagiPolicyReviewStats.reviewedTargetGroups}目標と{miyagiKpiActualStats.annualResultRows}件の年度実績、
+            福岡県の4基本方向・30取組と{allPolicyTargetStats.reviewedTargets}数値目標を公開しています。実績がないものに達成率は付けません。
           </p>
         </PageIntro>
 
@@ -57,10 +59,16 @@ export default function PoliciesPage() {
           </div>
           <div className={styles.prefectureCards}>
             <article>
-              <div><span>北海道</span><StatusBadge label="部分公開" tone="progress" /></div>
-              <strong>{hokkaidoIndicatorReviewStats.reviewedIndicators} / 108指標</strong>
-              <p>{hokkaidoIndicatorGroups.length}分野・指標1〜{hokkaidoIndicatorReviewStats.reviewedIndicators}をReviewed。残り{hokkaidoIndicatorReviewStats.remainingIndicators}指標と年度実績は未接続です。</p>
+              <div><span>北海道</span><StatusBadge label="KPI全件Reviewed" tone="verified" /></div>
+              <strong>{hokkaidoIndicatorReviewStats.reviewedIndicators}指標</strong>
+              <p>{hokkaidoIndicatorGroups.length}分野の全指標を照合済み。年度実績は未接続のため、計画の目標設計を読むページです。</p>
               <Link href="/municipalities/hokkaido">北海道の政策指標を見る</Link>
+            </article>
+            <article>
+              <div><span>宮城県</span><StatusBadge label="年度実績あり" tone="verified" /></div>
+              <strong>{miyagiPolicyReviewStats.reviewedTargetGroups}目標・{miyagiKpiActualStats.annualResultRows}実績</strong>
+              <p>{miyagiKpiActualStats.linkedSeries}系列を直接接続し、{miyagiKpiActualStats.reviewNeededSeries}系列は定義差などの要確認として分けています。</p>
+              <Link href="/municipalities/miyagi#results">宮城県の年度実績を見る</Link>
             </article>
             <article>
               <div><span>福岡県</span><StatusBadge label="Reviewed" tone="verified" /></div>
@@ -71,7 +79,7 @@ export default function PoliciesPage() {
           </div>
         </section>
 
-        <section className={styles.summaryGrid} aria-label="政策体系の整備状況">
+        <section className={styles.summaryGrid} aria-label="福岡県政策体系の整備状況">
           <article className={styles.summaryCard}><span>Reviewed基本方向</span><strong>{policyDirectionStats.reviewedDirections}</strong><p>福岡県総合計画の公式掲載順で登録。</p></article>
           <article className={styles.summaryCard}><span>Reviewed取組事項</span><strong>{policyInitiativeStats.reviewedInitiatives}</strong><p>目次PDFの1番から30番までを原文で登録。</p></article>
           <article className={styles.summaryCard}><span>Reviewed数値目標</span><strong>{allPolicyTargetStats.reviewedTargets}</strong><p>取組1から26の指標1から118まで。</p></article>
@@ -167,11 +175,11 @@ export default function PoliciesPage() {
 
         <section className="callout callout--dark">
           <div>
-            <p className="eyebrow">Next extraction</p>
-            <h2>次は取組27以降の数値目標を順に接続する。</h2>
+            <p className="eyebrow">Evidence boundary</p>
+            <h2>目標があっても、実績がなければ評価しない。</h2>
             <p>
-              同じ公式数値目標PDFから、基準値、目標値、期間、単位を保存します。
-              年度実績が確認できるまでは進捗率や評価点を表示しません。
+              福岡県は年度実績との対応が未接続です。宮城県のように公式評価書と定義を照合できるまで、
+              独自の進捗率や評価点を表示しません。
             </p>
           </div>
         </section>

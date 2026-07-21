@@ -45,28 +45,24 @@ REQUIRED_FILES = [
 
 BASE_PAGE_REQUIREMENTS: dict[str, list[str]] = {
     "index.html": [
-        "約束・予算・実行・成果を、",
-        "全国47都道府県を探す",
-        "Reviewed数値目標",
-        "公開済み評価",
+        "全国47都道府県から探す",
+        "440件の実績推移を公開",
+        "資料ではなく、判断の順番でつなぐ。",
+        "Jichi Insight評価",
     ],
     "municipalities/index.html": [
-        "全国47都道府県を、同じ品質段階で追う。",
-        "公式入口確認済み",
-        "政策計画入口索引済み",
-        "現行政策入口確認済み",
-        "Reviewedデータ",
-        "自治体ページ公開",
-        "入口確認の先を、6つの資料カテゴリで追う。",
+        "47都道府県を、資料の深さから探す。",
+        "全国の入口整備",
+        "PHASE 7 DATA GATE",
+        "いま、深く読める3都道府県。",
+        "確認したい資料の深さ",
+        "都道府県と、確認できる資料。",
         "政策計画",
         "実施計画",
         "KPI・数値目標",
         "年度評価",
         "予算・決算",
         "事業評価",
-        "公開状態はReviewedの深さと別に管理。",
-        "自治体ページの公開状態は、この確認の深さとは別軸です。",
-        "128目標グループ・149系列",
     ],
     "municipalities/hokkaido/index.html": [
         "北海道の政策指標を、原文と期間から読む。",
@@ -75,12 +71,14 @@ BASE_PAGE_REQUIREMENTS: dict[str, list[str]] = {
         "政策成果の達成率ではなく",
     ],
     "municipalities/miyagi/index.html": [
-        "宮城県の政策目標を、原文・期間・未設定までそのまま読む。",
+        "目標と実績を、同じものにしない。",
+        "2つの目標を、混ぜない。",
+        "年度実績を、指標ごとに確かめる。",
         "人口の社会増減（人）",
         "暮らしの満足度（宮城で暮らして良かったと思う県民の割合）（%）",
         "健康寿命（日常生活に制限のない期間の平均）（男性）（年）",
         "健康寿命（日常生活に制限のない期間の平均）（女性）（年）",
-        "目標値の確認と、政策成果の評価を分ける。",
+        "ここから先は、まだ評価しない。",
     ],
     "municipalities/fukuoka-prefecture/index.html": [
         "2.3兆円",
@@ -168,28 +166,20 @@ def nationwide_requirements() -> dict[str, list[str]]:
 
 def miyagi_requirements() -> dict[str, list[str]]:
     manifest = load_json(ROOT / "data/catalog/miyagi_policy_review_manifest.json")
-    queue = load_json(ROOT / "data/catalog/wave1_policy_review_queue.json")
-    miyagi_queue = next(
-        item for item in queue["items"] if item["prefecture_code"] == "04"
-    )
     reviewed_groups = manifest["reviewed_target_group_count"]
     reviewed_series = manifest["reviewed_indicator_series_count"]
     linked_series = manifest["actual_linked_indicator_series_count"]
+    review_needed_series = manifest["actual_linkage_review_needed_series_count"]
+    annual_rows = manifest["actual_result_row_count"]
     remaining_groups = manifest["remaining_target_group_count"]
     remaining_series = manifest["remaining_indicator_series_count"]
 
     if remaining_groups == 0 and remaining_series == 0:
         municipality_copies = [
-            f"宮城県{reviewed_groups}目標を全件Reviewed化し、年度実績を接続中。",
-            (
-                f"宮城県では{reviewed_groups}目標グループ・{reviewed_series}系列を"
-                f"全件Reviewed化し、{linked_series}系列を年度実績へ直接接続しています。"
-            ),
-            (
-                f"宮城県の{reviewed_groups}目標を全件公開し、"
-                f"{linked_series}系列を年度実績へ接続。"
-            ),
-            miyagi_queue["next_action"],
+            f"{reviewed_groups}目標",
+            f"{linked_series}系列",
+            f"{review_needed_series}系列",
+            f"{annual_rows}行",
         ]
     else:
         municipality_copies = [
@@ -199,18 +189,20 @@ def miyagi_requirements() -> dict[str, list[str]]:
                 f"宮城県の{reviewed_groups}目標を公開。"
                 f"未Reviewedの{remaining_groups}目標も明示する。"
             ),
-            miyagi_queue["next_action"],
         ]
 
     return {
         "municipalities/index.html": municipality_copies,
         "municipalities/miyagi/index.html": [
-            f"公式の目標値No.1〜{reviewed_groups}を本文・数値・単位・期間まで照合済み。",
-            f"目標1〜{reviewed_groups}を、政策上の所属と4つの時点から確認する。",
+            f"全{reviewed_groups}目標",
+            f"{annual_rows}件の実績",
+            f"現行計画の全{reviewed_groups}目標。",
         ],
         "data-quality/index.html": [
             f"Reviewed済み{reviewed_groups}グループすべてにEvidence Packetを付与。",
-            f"宮城県は残る{remaining_groups}グループ・{remaining_series}系列をReviewed化中。",
+            f"柱1〜4・取組1〜18の全{reviewed_series}系列を一次資料と照合。",
+            f"直接接続{linked_series}、要確認{review_needed_series}。",
+            f"{annual_rows}",
         ],
     }
 

@@ -9,12 +9,12 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Jichi Insight | 自治体インサイト",
     short_name: "Jichi Insight",
     description:
-      "自治体の約束・予算・実行・成果を、一次資料に基づいてつなぐ自治体IR基盤。",
+      "自治体の政策目標・予算・実行・成果を、住民が一次資料から確かめるための公共データ基盤。",
     start_url: `${basePath}/`,
     scope: `${basePath}/`,
     display: "standalone",
-    background_color: "#f4f3ee",
-    theme_color: "#173f35",
+    background_color: "#f5f3ed",
+    theme_color: "#102e46",
     lang: "ja",
   };
 }
