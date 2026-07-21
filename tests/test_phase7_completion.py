@@ -19,8 +19,7 @@ def load(path: Path):
 def test_phase7_completion_manifest_matches_schema():
     manifest = load(COMPLETION_PATH)
     validator = Draft202012Validator(
-        load(COMPLETION_SCHEMA_PATH),
-        format_checker=FormatChecker(),
+        load(COMPLETION_SCHEMA_PATH), format_checker=FormatChecker()
     )
     assert list(validator.iter_errors(manifest)) == []
 
@@ -28,8 +27,7 @@ def test_phase7_completion_manifest_matches_schema():
 def test_published_prefecture_page_registry_matches_schema():
     registry = load(PUBLISHED_PATH)
     validator = Draft202012Validator(
-        load(PUBLISHED_SCHEMA_PATH),
-        format_checker=FormatChecker(),
+        load(PUBLISHED_SCHEMA_PATH), format_checker=FormatChecker()
     )
     assert list(validator.iter_errors(registry)) == []
 
@@ -39,7 +37,6 @@ def test_phase7_counts_are_derived_from_canonical_registries():
     coverage = load(COVERAGE_PATH)
     inventory = load(INVENTORY_PATH)
     published = load(PUBLISHED_PATH)
-
     expected = {
         "registered_prefectures": len(coverage["records"]),
         "verified_official_entries": len(coverage["verified_official_codes"]),
@@ -55,7 +52,7 @@ def test_phase7_counts_are_derived_from_canonical_registries():
         "indexed_policy_plan_entries": 47,
         "current_policy_plan_entries": 47,
         "source_inventory_records": 47,
-        "published_prefecture_pages": 6,
+        "published_prefecture_pages": 7,
     }
 
 
@@ -66,8 +63,7 @@ def test_published_pages_are_unique_and_reference_registered_prefectures():
     records = load(PUBLISHED_PATH)["records"]
     codes = [record["prefecture_code"] for record in records]
     routes = [record["route"] for record in records]
-
-    assert codes == ["01", "04", "13", "23", "27", "40"]
+    assert codes == ["01", "04", "13", "23", "27", "34", "40"]
     assert len(codes) == len(set(codes))
     assert len(routes) == len(set(routes))
     assert set(codes) <= coverage_codes
@@ -84,19 +80,14 @@ def test_every_prefecture_tracks_all_phase7_source_categories():
         "budget",
         "project_evaluation",
     }
-
     assert set(inventory["categories"]) == required_categories
     assert len(inventory["records"]) == 47
-    assert all(
-        set(record["sources"]) == required_categories
-        for record in inventory["records"]
-    )
+    assert all(set(record["sources"]) == required_categories for record in inventory["records"])
 
 
 def test_phase7_gate_evidence_paths_exist_and_gate_ids_are_unique():
     manifest = load(COMPLETION_PATH)
     gate_ids = [gate["id"] for gate in manifest["gates"]]
-
     assert len(gate_ids) == len(set(gate_ids)) == 8
     for gate in manifest["gates"]:
         for relative_path in gate["evidence_paths"]:
@@ -106,7 +97,6 @@ def test_phase7_gate_evidence_paths_exist_and_gate_ids_are_unique():
 def test_phase7_status_cannot_overstate_production_verification():
     manifest = load(COMPLETION_PATH)
     gates = {gate["id"]: gate["status"] for gate in manifest["gates"]}
-
     if manifest["status"] == "complete":
         assert manifest["completed_at"] is not None
         assert set(gates.values()) == {"passed"}
