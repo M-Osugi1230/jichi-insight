@@ -1,0 +1,99 @@
+name: Hiroshima Integration
+
+on:
+  push:
+    branches:
+      - agent/hiroshima-revised-vision-indicators
+    paths:
+      - .github/workflows/hiroshima_integration.yml
+
+permissions:
+  contents: write
+
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/hiroshima-revised-vision-indicators
+          fetch-depth: 0
+      - name: Integrate Hiroshima into nationwide UI and verification
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          def replace(path, old, new):
+              file = Path(path)
+              text = file.read_text(encoding="utf-8")
+              if old not in text:
+                  raise SystemExit(f"Missing patch anchor in {path}: {old[:80]!r}")
+              file.write_text(text.replace(old, new, 1), encoding="utf-8")
+
+          page = "apps/web/app/municipalities/page.tsx"
+          replace(page,
+              'import { hokkaidoIndicatorReviewStats } from "@/lib/hokkaidoIndicators";\n',
+              'import { hiroshimaIndicatorStats } from "@/lib/hiroshimaIndicators";\nimport { hokkaidoIndicatorReviewStats } from "@/lib/hokkaidoIndicators";\n')
+          replace(page, 'いま、深く読める6都道府県。', 'いま、深く読める7都道府県。')
+          replace(page,
+              '              <Link href="/municipalities/osaka">大阪府の政策指標を見る →</Link>\n            </article>\n',
+              '              <Link href="/municipalities/osaka">大阪府の政策指標を見る →</Link>\n            </article>\n            <article className={`${styles.deepDiveCard} ${styles.miyagi}`}>\n              <div><span>34 / 広島県</span><StatusBadge label="改定版指標全件Reviewed" tone="verified" /></div>\n              <h3>62指標を改定後の定義で読む。</h3>\n              <dl>\n                <div><dt>政策分野</dt><dd>{hiroshimaIndicatorStats.policyAreas}</dd></div>\n                <div><dt>Reviewed指標</dt><dd>{hiroshimaIndicatorStats.reviewedIndicators}</dd></div>\n                <div><dt>現状値あり</dt><dd>{hiroshimaIndicatorStats.currentValues}</dd></div>\n                <div><dt>Evidence</dt><dd>{hiroshimaIndicatorStats.evidencePackets}</dd></div>\n              </dl>\n              <p>削除指標を除外し、R10/R12目標、未測定、定性目標、定義変更、複数年平均を保持します。</p>\n              <Link href="/municipalities/hiroshima">広島県の成果指標を見る →</Link>\n            </article>\n')
+          replace(page,
+              '                (category === "kpi_source" && osakaIndicatorStats.indicatorRows > 0 ? 1 : 0);',
+              '                (category === "kpi_source" && osakaIndicatorStats.indicatorRows > 0 ? 1 : 0) +\n                (category === "kpi_source" && hiroshimaIndicatorStats.reviewedIndicators > 0 ? 1 : 0);')
+          replace(page,
+              '公開済み6地域と、次に資料を深掘りする3地域を示します。',
+              '公開済み7地域と、次に資料を深掘りする2地域を示します。')
+          replace(page,
+              '                        : item.prefecture_code === "27"\n                          ? "/municipalities/osaka"\n                          : item.prefecture_code === "40"\n                            ? "/municipalities/fukuoka-prefecture"\n                            : null;',
+              '                        : item.prefecture_code === "27"\n                          ? "/municipalities/osaka"\n                          : item.prefecture_code === "34"\n                            ? "/municipalities/hiroshima"\n                            : item.prefecture_code === "40"\n                              ? "/municipalities/fukuoka-prefecture"\n                              : null;')
+
+          coverage = "apps/web/components/CoverageExplorer.tsx"
+          replace(coverage,
+              'import { aichiPolicyIndicatorStats } from "@/lib/aichiIndicators";\n',
+              'import { aichiPolicyIndicatorStats } from "@/lib/aichiIndicators";\nimport { hiroshimaIndicatorStats } from "@/lib/hiroshimaIndicators";\n')
+          replace(coverage,
+              '  const osakaReviewed =\n    prefectureCode === "27" && osakaIndicatorStats.indicatorRows > 0;\n',
+              '  const osakaReviewed =\n    prefectureCode === "27" && osakaIndicatorStats.indicatorRows > 0;\n  const hiroshimaReviewed =\n    prefectureCode === "34" && hiroshimaIndicatorStats.reviewedIndicators > 0;\n')
+          replace(coverage,
+              '(tokyoReviewed || aichiReviewed || osakaReviewed)',
+              '(tokyoReviewed || aichiReviewed || osakaReviewed || hiroshimaReviewed)')
+          replace(coverage,
+              '                        : record.prefecture_code === "27"\n                          ? `現行戦略の${osakaIndicatorStats.indicatorRows}指標・${osakaIndicatorStats.indicatorSeries}系列をReviewed済み。次に事業一覧と年次更新を別レイヤーで接続する。`\n                          : inventory?.next_action ?? "資料インベントリを確認中";',
+              '                        : record.prefecture_code === "27"\n                          ? `現行戦略の${osakaIndicatorStats.indicatorRows}指標・${osakaIndicatorStats.indicatorSeries}系列をReviewed済み。次に事業一覧と年次更新を別レイヤーで接続する。`\n                          : record.prefecture_code === "34"\n                            ? `改定版ビジョンの${hiroshimaIndicatorStats.reviewedIndicators}指標をReviewed済み。次に新アクションプランと年度実績を定義照合する。`\n                            : inventory?.next_action ?? "資料インベントリを確認中";')
+
+          static = "scripts/validate_static_export.py"
+          replace(static,
+              '    "municipalities/osaka/index.html",\n',
+              '    "municipalities/osaka/index.html",\n    "municipalities/hiroshima/index.html",\n')
+          replace(static, 'いま、深く読める6都道府県。', 'いま、深く読める7都道府県。')
+          replace(static,
+              '        "大阪府の政策指標を見る",\n',
+              '        "大阪府の政策指標を見る",\n        "広島県の成果指標を見る",\n')
+          replace(static,
+              '    "municipalities/fukuoka-prefecture/index.html": [\n',
+              '    "municipalities/hiroshima/index.html": [\n        "広島県の62指標を、改定後の定義と目標から読む。",\n        "Reviewed指標",\n        "現状値あり",\n        "Evidence ID",\n        "改定、未測定、定性目標を同じ数値にしない。",\n        "62指標を、分野・値・年度・出典から探す。",\n        "政策評価 未判定",\n    ],\n    "municipalities/fukuoka-prefecture/index.html": [\n')
+
+          production = "scripts/check_production.sh"
+          replace(production,
+              '  "/municipalities/osaka/"\n',
+              '  "/municipalities/osaka/"\n  "/municipalities/hiroshima/"\n')
+          replace(production, 'いま、深く読める6都道府県。', 'いま、深く読める7都道府県。')
+          replace(production,
+              '  "大阪府の政策指標を見る" \\\n',
+              '  "大阪府の政策指標を見る" \\\n  "広島県の成果指標を見る" \\\n')
+          replace(production,
+              'check_content "/municipalities/fukuoka-prefecture/" \\\n',
+              'check_content "/municipalities/hiroshima/" \\\n  "広島県の62指標を、改定後の定義と目標から読む。" \\\n  "Reviewed指標" \\\n  "現状値あり" \\\n  "Evidence ID" \\\n  "改定、未測定、定性目標を同じ数値にしない。" \\\n  "62指標を、分野・値・年度・出典から探す。" \\\n  "政策評価 未判定"\n\ncheck_content "/municipalities/fukuoka-prefecture/" \\\n')
+          replace(production,
+              "Phase 8 Tokyo, Aichi and Osaka reviewed publication checks: PASS",
+              "Phase 8 Tokyo, Aichi, Osaka and Hiroshima reviewed publication checks: PASS")
+          PY
+      - name: Commit integrated files and remove temporary workflow
+        run: |
+          rm .github/workflows/hiroshima_integration.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add apps/web/app/municipalities/page.tsx apps/web/components/CoverageExplorer.tsx scripts/validate_static_export.py scripts/check_production.sh .github/workflows/hiroshima_integration.yml
+          git commit -m "Integrate Hiroshima reviewed indicators"
+          git push origin HEAD:agent/hiroshima-revised-vision-indicators
