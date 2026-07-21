@@ -21,6 +21,7 @@ const staticRoutes = [
   "/municipalities/aichi",
   "/municipalities/osaka",
   "/municipalities/hiroshima",
+  "/municipalities/kagawa",
   "/municipalities/fukuoka-prefecture",
   "/municipalities/fukuoka-city",
   "/municipalities/kitakyushu-city",
