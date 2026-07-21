@@ -10,8 +10,12 @@ PART_PATHS = [
     ROOT / "data/reviewed/hiroshima_revised_vision_indicators_part3.json",
 ]
 SCHEMA_PATH = ROOT / "schemas/hiroshima_revised_vision_indicators.schema.json"
-MANIFEST_PATH = ROOT / "data/catalog/hiroshima_revised_vision_indicator_review_manifest.json"
-MANIFEST_SCHEMA_PATH = ROOT / "schemas/hiroshima_revised_vision_indicator_review_manifest.schema.json"
+MANIFEST_PATH = (
+    ROOT / "data/catalog/hiroshima_revised_vision_indicator_review_manifest.json"
+)
+MANIFEST_SCHEMA_PATH = (
+    ROOT / "schemas/hiroshima_revised_vision_indicator_review_manifest.schema.json"
+)
 
 
 def load(path: Path):
@@ -38,8 +42,12 @@ def test_hiroshima_parts_and_manifest_match_schemas():
 def test_hiroshima_has_complete_current_indicator_sequence_and_evidence():
     items = records()
     manifest = load(MANIFEST_PATH)
-    expected_ids = [f"hiroshima-vision-indicator-{number:03d}" for number in range(1, 63)]
-    expected_evidence = [f"hiroshima-vision-evidence-{number:03d}" for number in range(1, 63)]
+    expected_ids = [
+        f"hiroshima-vision-indicator-{number:03d}" for number in range(1, 63)
+    ]
+    expected_evidence = [
+        f"hiroshima-vision-evidence-{number:03d}" for number in range(1, 63)
+    ]
 
     assert len(items) == 62
     assert [item["id"] for item in items] == expected_ids
