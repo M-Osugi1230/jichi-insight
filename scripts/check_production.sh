@@ -153,11 +153,12 @@ check_content "/municipalities/miyagi/" \
 
 check_content "/municipalities/tokyo/" \
   "東京都の政策目標を、値と条件を変えずに読む。" \
-  "8目標・9系列" \
-  "2 / 60ページをReviewed。" \
+  "304目標カード" \
+  "60 / 60ページの政策目標カードReviewedを完了。" \
+  "25政策分野・304目標カードを横断検索。" \
+  "子供分野以外のグラフ点列は未正規化" \
   "年度実績 未接続" \
-  "政策評価 未判定" \
-  "02 子育て PDFページ3-4"
+  "政策評価 未判定"
 
 check_content "/municipalities/fukuoka-prefecture/" \
   "普通会計" \
@@ -168,6 +169,6 @@ check_content "/data-quality/" \
   "データ不足を、点数で埋めません。"
 
 printf '\nPhase 7 nationwide registry checks: PASS\n' >> "$REPORT"
-printf 'Phase 8 Tokyo partial Reviewed publication checks: PASS\n' >> "$REPORT"
+printf 'Phase 8 Tokyo complete target-card publication checks: PASS\n' >> "$REPORT"
 printf 'Result: PASS\n' >> "$REPORT"
 cat "$REPORT"

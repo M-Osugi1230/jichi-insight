@@ -106,15 +106,15 @@ export default function MunicipalitiesPage() {
               <Link href="/municipalities/hokkaido">北海道の指標を見る →</Link>
             </article>
             <article className={`${styles.deepDiveCard} ${styles.tokyo}`}>
-              <div><span>13 / 東京都</span><StatusBadge label="一部Reviewed" tone="progress" /></div>
-              <h3>60ページを索引し、子供分野から読む。</h3>
+              <div><span>13 / 東京都</span><StatusBadge label="目標カード全件Reviewed" tone="verified" /></div>
+              <h3>60ページ・304目標カードを読む。</h3>
               <dl>
-                <div><dt>位置索引</dt><dd>{tokyoPolicyTargetStats.sourcePages}ページ</dd></div>
+                <div><dt>政策分野</dt><dd>{tokyoPolicyTargetStats.policyAreas}</dd></div>
                 <div><dt>Reviewed目標</dt><dd>{tokyoPolicyTargetStats.reviewedTargetGroups}</dd></div>
-                <div><dt>Reviewed系列</dt><dd>{tokyoPolicyTargetStats.reviewedSeries}</dd></div>
+                <div><dt>Evidence</dt><dd>{tokyoPolicyTargetStats.evidencePackets}</dd></div>
                 <div><dt>年度実績</dt><dd>未接続</dd></div>
               </dl>
-              <p>子供分野の値、期間、母集団、維持・下限条件をEvidence Packet付きで公開しています。</p>
+              <p>25政策分野・304目標カードをEvidence付きで公開。子供分野以外のグラフ点列と年度実績は別工程です。</p>
               <Link href="/municipalities/tokyo">東京都の政策目標を見る →</Link>
             </article>
             <article className={`${styles.deepDiveCard} ${styles.fukuoka}`}>
