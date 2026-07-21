@@ -17,7 +17,7 @@ concurrency:
 jobs:
   kagawa-materialize:
     name: Materialize Kagawa canonical data
-    if: (github.event_name == 'pull_request' && github.head_ref == 'agent/kagawa-extended-plan-indicators') || (github.event_name == 'push' && github.ref_name == 'agent/kagawa-extended-plan-indicators')
+    if: github.event_name == 'push' && github.ref_name == 'agent/kagawa-extended-plan-indicators'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -27,6 +27,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Synchronize branch
+        run: git pull --rebase origin agent/kagawa-extended-plan-indicators
       - name: Check whether generation is required
         id: required
         run: |
@@ -50,7 +52,6 @@ jobs:
       - name: Commit canonical data
         if: steps.required.outputs.generate == 'true'
         run: |
-          set +e
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/reviewed/kagawa_extended_plan_indicators_part*.json \
@@ -58,17 +59,7 @@ jobs:
             data/evidence/kagawa_extended_plan_indicator_evidence_part*.json \
             data/catalog/kagawa_extended_plan_indicator_review_manifest.json
           git commit -m "Generate Kagawa extended-plan indicator catalog"
-          git push origin HEAD:agent/kagawa-extended-plan-indicators 2>&1 | tee kagawa-push.log
-          status=${PIPESTATUS[0]}
-          exit "$status"
-      - name: Upload Kagawa push diagnostics
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: kagawa-push-diagnostics
-          path: kagawa-push.log
-          if-no-files-found: ignore
-          retention-days: 7
+          git push origin HEAD:agent/kagawa-extended-plan-indicators
 
   repository:
     name: Repository and data
