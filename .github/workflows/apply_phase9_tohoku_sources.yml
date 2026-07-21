@@ -1,17 +1,24 @@
 name: Apply Phase 9 Tohoku Sources
 
 on:
-  push:
+  pull_request:
     branches:
-      - agent/phase9-tohoku-source-index
+      - main
     paths:
       - .github/workflows/apply_phase9_tohoku_sources.yml
+      - data/catalog/phase9_tohoku_source_registry.json
+      - scripts/apply_phase9_source_registry.py
 
 permissions:
   contents: write
 
+concurrency:
+  group: phase9-tohoku-source-application
+  cancel-in-progress: false
+
 jobs:
   apply:
+    if: github.head_ref == 'agent/phase9-tohoku-source-index'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
