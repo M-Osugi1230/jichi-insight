@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - main
+      - agent/kagawa-extended-plan-indicators
 
 permissions:
   contents: write
@@ -16,7 +17,7 @@ concurrency:
 jobs:
   kagawa-materialize:
     name: Materialize Kagawa canonical data
-    if: github.event_name == 'pull_request' && github.head_ref == 'agent/kagawa-extended-plan-indicators'
+    if: (github.event_name == 'pull_request' && github.head_ref == 'agent/kagawa-extended-plan-indicators') || (github.event_name == 'push' && github.ref_name == 'agent/kagawa-extended-plan-indicators')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
