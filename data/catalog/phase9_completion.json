@@ -1,18 +1,14 @@
 {
-  "id":"phase-9-remaining-prefecture-expansion",
-  "phase":9,
-  "scope_version":"2026-07-22",
-  "status":"in_progress",
-  "updated_at":"2026-07-22",
-  "counts":{"total_prefectures":47,"major_policy_plans_indexed":47,"numeric_target_entrances_indexed_or_reviewed":9,"evidence_backed_reviewed_prefectures":7,"remaining_phase9_prefectures":38,"phase9_prefectures_with_numeric_targets_indexed":0,"phase9_prefectures_with_reviewed_numeric_targets":0},
+  "id":"phase-9-remaining-prefecture-expansion","phase":9,"scope_version":"2026-07-22","status":"in_progress","updated_at":"2026-07-22",
+  "counts":{"total_prefectures":47,"major_policy_plans_indexed":47,"numeric_target_entrances_indexed_or_reviewed":9,"evidence_backed_reviewed_prefectures":8,"remaining_phase9_prefectures":38,"phase9_prefectures_with_numeric_targets_indexed":0,"phase9_prefectures_with_reviewed_numeric_targets":0},
   "gates":[
     {"id":"all_major_policy_plans_indexed","status":"passed","evidence_paths":["data/catalog/prefecture_coverage.json","tests/test_prefecture_coverage.py"]},
     {"id":"all_major_numeric_targets_indexed","status":"in_progress","evidence_paths":["data/catalog/regional_anchor_source_registry.json","data/catalog/phase9_execution_queue.json"]},
-    {"id":"published_numeric_evidence_coverage","status":"in_progress","evidence_paths":["data/catalog/phase8_completion.json","data/catalog/tokyo_policy_target_review_manifest.json","data/catalog/aichi_policy_indicator_review_manifest.json","data/catalog/osaka_beyond_expo_indicator_review_manifest.json","data/catalog/hiroshima_revised_vision_indicator_review_manifest.json","data/catalog/phase9_execution_queue.json"]},
-    {"id":"semantic_quality_tests","status":"in_progress","evidence_paths":["tests/test_phase9_execution_queue.py","tests/test_regional_anchor_source_registry.py","tests/test_tokyo_policy_targets_children.py","tests/test_aichi_policy_indicators.py","tests/test_osaka_beyond_expo_indicators.py","tests/test_hiroshima_revised_vision_indicators.py"]},
+    {"id":"published_numeric_evidence_coverage","status":"in_progress","evidence_paths":["data/catalog/phase8_completion.json","data/catalog/tokyo_policy_target_review_manifest.json","data/catalog/aichi_policy_indicator_review_manifest.json","data/catalog/osaka_beyond_expo_indicator_review_manifest.json","data/catalog/hiroshima_revised_vision_indicator_review_manifest.json","data/catalog/kagawa_extended_plan_indicator_review_manifest.json","data/catalog/phase9_execution_queue.json"]},
+    {"id":"semantic_quality_tests","status":"in_progress","evidence_paths":["tests/test_phase9_execution_queue.py","tests/test_regional_anchor_source_registry.py","tests/test_tokyo_policy_targets_children.py","tests/test_aichi_policy_indicators.py","tests/test_osaka_beyond_expo_indicators.py","tests/test_hiroshima_revised_vision_indicators.py","tests/test_kagawa_extended_plan_indicators.py"]},
     {"id":"plan_revision_and_history_tracking","status":"in_progress","evidence_paths":["docs/PHASE9_EXECUTION.md"]},
     {"id":"incomparable_ranking_exclusion","status":"passed","evidence_paths":["data/catalog/phase9_execution_queue.json","tests/test_phase9_execution_queue.py"]},
     {"id":"nationwide_publication_and_smoke","status":"in_progress","evidence_paths":["scripts/validate_static_export.py",".github/workflows/production-smoke.yml"]}
   ],
-  "scope_note":"Phase 9 is not complete until all 47 prefectures have major numeric targets indexed, every published number has Evidence coverage, semantic and history tests pass, incomparable indicators remain excluded from rankings, and nationwide publication passes Production Smoke. Seven regional anchors now have Evidence-backed Reviewed targets."
+  "scope_note":"Phase 9 is not complete until all 47 prefectures have major numeric targets indexed, every published number has Evidence coverage, semantic and history tests pass, incomparable indicators remain excluded from rankings, and nationwide publication passes Production Smoke. Eight regional anchors now have Evidence-backed Reviewed targets."
 }
