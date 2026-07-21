@@ -121,7 +121,7 @@
 
 ## Phase 7 — Nationwide prefecture registry
 
-Completion state: `verification_pending`
+Completion state: `complete`
 
 Phase 7は全国共通レジストリと品質状態の完成を対象とします。47都道府県すべての実施計画、KPI、年度評価、予算、事業評価をReviewed化する工程ではありません。それらはPhase 8・9で実施します。ただし、Phase 7の時点で各都道府県について6資料カテゴリの状態を必ず持ち、未索引を未索引のまま追跡できることを必須とします。
 
