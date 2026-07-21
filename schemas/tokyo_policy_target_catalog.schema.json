@@ -1,1 +1,134 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://jichi-insight.example/schemas/tokyo_policy_target_catalog.schema.json","title":"Tokyo policy target catalog","type":"object","required":["id","municipality_key","prefecture_code","policy_area_code","source_id","items","review_status"],"properties":{"id":{"type":"string"},"municipality_key":{"const":"tokyo-metropolis"},"prefecture_code":{"const":"13"},"policy_area_code":{"type":"string"},"policy_area_name_original":{"type":"string"},"source_id":{"const":"tokyo-policy-targets-2026"},"source_document_url":{"type":"string","format":"uri"},"target_group_number_start":{"type":"integer"},"target_group_number_end":{"type":"integer"},"items":{"type":"array","minItems":1,"items":{"type":"object","required":["id","target_group_number","target_name_original","policy_measure_original","source_page","series","actual_linkage_status","evaluation_status","review_status","confidence"],"properties":{"id":{"type":"string"},"target_group_number":{"type":"integer"},"target_name_original":{"type":"string"},"policy_measure_original":{"type":"string"},"source_page":{"type":"integer","minimum":1},"population_scope_original":{"type":["string","null"]},"series":{"type":"array","minItems":1,"items":{"type":"object","required":["id","unit_original","temporal_scope","direction","values"],"properties":{"id":{"type":"string"},"label":{"type":["string","null"]},"unit_original":{"type":"string"},"temporal_scope":{"enum":["calendar_year","fiscal_year","snapshot"]},"direction":{"enum":["increase","decrease","maintain","increase_then_maintain"]},"values":{"type":"array","minItems":1,"items":{"type":"object","required":["role","period","value","status","operator","aggregation_scope","value_text_original"],"properties":{"role":{"enum":["baseline","current","actual","intermediate_target","final_target"]},"period":{"type":"string"},"value":{"type":["number","string","null"]},"status":{"enum":["numeric","qualitative","missing","conditional"]},"operator":{"enum":["exact","minimum","maximum","maintain"]},"aggregation_scope":{"enum":["single_period","snapshot","cumulative"]},"value_text_original":{"type":["string","null"]}},"additionalProperties":false}},"additionalProperties":false}},"comparability_note_original":{"type":"string"},"actual_linkage_status":{"const":"not_linked"},"evaluation_status":{"const":"not_assessed"},"review_status":{"const":"reviewed"},"confidence":{"enum":["high","medium","low"]}},"additionalProperties":false}},"reviewed_at":{"type":"string","format":"date"},"review_status":{"const":"reviewed"},"confidence":{"enum":["high","medium","low"]}},"additionalProperties":false}
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.example/schemas/tokyo_policy_target_catalog.schema.json",
+  "title": "Tokyo policy target catalog",
+  "type": "object",
+  "required": [
+    "id",
+    "municipality_key",
+    "prefecture_code",
+    "policy_area_code",
+    "source_id",
+    "items",
+    "review_status"
+  ],
+  "properties": {
+    "id": {"type": "string"},
+    "municipality_key": {"const": "tokyo-metropolis"},
+    "prefecture_code": {"const": "13"},
+    "policy_area_code": {"type": "string"},
+    "policy_area_name_original": {"type": "string"},
+    "source_id": {"const": "tokyo-policy-targets-2026"},
+    "source_document_url": {"type": "string", "format": "uri"},
+    "target_group_number_start": {"type": "integer"},
+    "target_group_number_end": {"type": "integer"},
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "target_group_number",
+          "target_name_original",
+          "policy_measure_original",
+          "source_page",
+          "series",
+          "actual_linkage_status",
+          "evaluation_status",
+          "review_status",
+          "confidence"
+        ],
+        "properties": {
+          "id": {"type": "string"},
+          "target_group_number": {"type": "integer"},
+          "target_name_original": {"type": "string"},
+          "policy_measure_original": {"type": "string"},
+          "source_page": {"type": "integer", "minimum": 1},
+          "population_scope_original": {"type": ["string", "null"]},
+          "series": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "unit_original",
+                "temporal_scope",
+                "direction",
+                "values"
+              ],
+              "properties": {
+                "id": {"type": "string"},
+                "label": {"type": ["string", "null"]},
+                "unit_original": {"type": "string"},
+                "temporal_scope": {
+                  "enum": ["calendar_year", "fiscal_year", "snapshot"]
+                },
+                "direction": {
+                  "enum": [
+                    "increase",
+                    "decrease",
+                    "maintain",
+                    "increase_then_maintain"
+                  ]
+                },
+                "values": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "role",
+                      "period",
+                      "value",
+                      "status",
+                      "operator",
+                      "aggregation_scope",
+                      "value_text_original"
+                    ],
+                    "properties": {
+                      "role": {
+                        "enum": [
+                          "baseline",
+                          "current",
+                          "actual",
+                          "intermediate_target",
+                          "final_target"
+                        ]
+                      },
+                      "period": {"type": "string"},
+                      "value": {"type": ["number", "string", "null"]},
+                      "status": {
+                        "enum": ["numeric", "qualitative", "missing", "conditional"]
+                      },
+                      "operator": {
+                        "enum": ["exact", "minimum", "maximum", "maintain"]
+                      },
+                      "aggregation_scope": {
+                        "enum": ["single_period", "snapshot", "cumulative"]
+                      },
+                      "value_text_original": {"type": ["string", "null"]}
+                    },
+                    "additionalProperties": false
+                  }
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "comparability_note_original": {"type": "string"},
+          "actual_linkage_status": {"const": "not_linked"},
+          "evaluation_status": {"const": "not_assessed"},
+          "review_status": {"const": "reviewed"},
+          "confidence": {"enum": ["high", "medium", "low"]}
+        },
+        "additionalProperties": false
+      }
+    },
+    "reviewed_at": {"type": "string", "format": "date"},
+    "review_status": {"const": "reviewed"},
+    "confidence": {"enum": ["high", "medium", "low"]}
+  },
+  "additionalProperties": false
+}
