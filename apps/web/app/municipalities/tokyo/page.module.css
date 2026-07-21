@@ -1,0 +1,67 @@
+.introLinks { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 20px; }
+.introLinks a { color: #286f9f; font-size: 0.74rem; font-weight: 850; text-underline-offset: 4px; }
+.summaryGrid { display: grid; gap: 12px; grid-template-columns: repeat(4, 1fr); margin-bottom: 80px; }
+.summaryGrid article { background: #fffefa; border: 1px solid #d7d3c8; border-top: 5px solid #3e5d91; padding: 22px; }
+.summaryGrid span { color: #68737b; font-size: 0.68rem; font-weight: 800; }
+.summaryGrid strong { display: block; font-size: clamp(2.2rem, 4vw, 3.7rem); letter-spacing: -0.07em; margin: 22px 0 12px; }
+.summaryGrid p { color: #42505b; font-size: 0.7rem; margin: 0; }
+.progressSection { background: #ece8dd; display: grid; gap: 60px; grid-template-columns: 0.85fr 1.15fr; padding: 52px 46px; }
+.progressSection h2 { font-size: clamp(2rem, 4vw, 3.4rem); }
+.progressDetail { align-self: center; }
+.progressTrack { background: #d5d0c5; height: 9px; margin-bottom: 25px; overflow: hidden; }
+.progressTrack span { background: #3e5d91; display: block; height: 100%; min-width: 3px; }
+.progressDetail dl { display: grid; grid-template-columns: repeat(2, 1fr); margin: 0; }
+.progressDetail dl div { border-top: 1px solid #b8b4aa; padding: 13px 0; }
+.progressDetail dl div:nth-child(even) { padding-left: 15px; }
+.progressDetail dt { color: #68737b; font-size: 0.65rem; }
+.progressDetail dd { font-size: 0.82rem; font-weight: 850; margin: 3px 0 0; }
+.progressDetail > p { color: #42505b; font-size: 0.72rem; margin: 22px 0 0; }
+.sectionHeading { align-items: end; display: grid; gap: 60px; grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr); }
+.sectionHeading h2 { margin-bottom: 0; }
+.sectionHeading > p { color: #42505b; margin-bottom: 8px; }
+.targetGrid { display: grid; gap: 15px; grid-template-columns: repeat(2, 1fr); margin-top: 46px; }
+.targetCard { background: #fffefa; border: 1px solid #d7d3c8; border-radius: 6px 28px 6px 6px; display: flex; flex-direction: column; padding: 25px; }
+.targetHeader { align-items: center; display: flex; justify-content: space-between; }
+.targetHeader > span { color: #3e5d91; font-size: 0.7rem; font-weight: 900; }
+.measure { color: #68737b; font-size: 0.66rem; font-weight: 800; margin: 35px 0 7px; }
+.targetCard h3 { font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; font-size: 1.45rem; margin: 0 0 12px; }
+.scope { background: #f0ede5; color: #42505b; font-size: 0.68rem; margin: 0 0 18px; padding: 8px 10px; }
+.seriesList { display: grid; gap: 18px; }
+.seriesList section { border-top: 1px solid #d7d3c8; padding-top: 15px; }
+.seriesList h4 { font-size: 0.72rem; margin: 0 0 12px; }
+.valueGrid { display: grid; gap: 7px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.valueGrid > div { background: #f4f1e9; display: grid; min-height: 92px; padding: 10px; }
+.valueGrid span { color: #68737b; font-size: 0.56rem; }
+.valueGrid strong { font-size: 0.8rem; margin-top: 5px; overflow-wrap: anywhere; }
+.valueGrid small { align-self: end; color: #68737b; font-size: 0.58rem; margin-top: 7px; }
+.boundaryNote { border-left: 4px solid #d27b50; margin-top: 22px; padding: 3px 0 3px 13px; }
+.boundaryNote strong { font-size: 0.65rem; }
+.boundaryNote p { color: #42505b; font-size: 0.68rem; margin: 5px 0 0; }
+.targetCard footer { border-top: 1px solid #d7d3c8; display: flex; flex-wrap: wrap; gap: 8px 15px; margin-top: auto; padding-top: 17px; }
+.targetCard footer span { color: #68737b; font-size: 0.59rem; }
+.sourceSection { background: #102e46; color: #fff; display: grid; gap: 50px; grid-template-columns: 0.75fr 1.25fr; margin-top: 80px; padding: 56px 48px; }
+.sourceSection > div:first-child > p:last-child { color: #d9e1e7; }
+.sourceList { display: grid; gap: 9px; }
+.sourceList article { background: #fffefa; color: #17232c; padding: 19px; }
+.sourceList article > div { align-items: center; display: flex; justify-content: space-between; }
+.sourceList article > div > span { color: #68737b; font-size: 0.61rem; font-weight: 900; }
+.sourceList h3 { font-size: 0.95rem; margin: 19px 0 7px; }
+.sourceList p { color: #42505b; font-size: 0.66rem; margin: 0 0 14px; }
+.sourceList a { color: #286f9f; font-size: 0.65rem; font-weight: 850; text-underline-offset: 3px; }
+
+@media (max-width: 950px) {
+  .summaryGrid { grid-template-columns: repeat(2, 1fr); }
+  .progressSection, .sourceSection { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 720px) {
+  .sectionHeading, .targetGrid { grid-template-columns: 1fr; }
+  .sectionHeading { align-items: start; gap: 20px; }
+  .progressSection, .sourceSection { padding: 42px 24px; }
+  .valueGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 480px) {
+  .summaryGrid, .progressDetail dl, .valueGrid { grid-template-columns: 1fr; }
+  .progressDetail dl div:nth-child(even) { padding-left: 0; }
+}
