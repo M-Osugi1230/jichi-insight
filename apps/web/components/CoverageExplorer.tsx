@@ -8,6 +8,7 @@ import {
   coverageStageTone,
   nationwidePrefectureCoverage,
   planCurrencyLabel,
+  publicationStatusLabel,
   regionOrder,
   type CoverageStage,
 } from "@/lib/nationwideCoverage";
@@ -15,13 +16,14 @@ import {
 import { StatusBadge } from "./StatusBadge";
 import styles from "./CoverageExplorer.module.css";
 
-type QuickFilter = "all" | "official" | "current" | "reviewed";
+type QuickFilter = "all" | "official" | "current" | "reviewed" | "published";
 
 const quickFilters: Array<{ value: QuickFilter; label: string }> = [
   { value: "all", label: "すべて" },
   { value: "official", label: "公式入口確認済み" },
   { value: "current", label: "現行計画確認済み" },
   { value: "reviewed", label: "Reviewed公開" },
+  { value: "published", label: "自治体ページ公開中" },
 ];
 
 const planReviewLabels = {
@@ -33,9 +35,10 @@ const planReviewLabels = {
 
 const stageDescriptions: Record<CoverageStage, string> = {
   registered: "全国一覧への登録のみ。公式入口はまだ確認していません。",
-  official_entry_verified: "自治体の公式入口を確認済み。計画資料は未索引です。",
-  source_cataloged: "計画資料の入口を索引済み。現行性と本文の確認段階は項目ごとに表示します。",
-  reviewed_data: "一次資料と人の照合を通過したデータを公開しています。",
+  official_entry_verified: "自治体の公式入口を確認済み。政策計画入口は未索引です。",
+  plan_entry_indexed: "政策計画入口を索引済み。現行性の確認は別に管理します。",
+  current_plan_confirmed: "現行の政策計画入口まで確認済み。資料本文のReviewed化は別工程です。",
+  reviewed_data: "一次資料と人の照合を通過した政策データがあります。",
 };
 
 function countForFilter(filter: QuickFilter) {
@@ -52,6 +55,11 @@ function countForFilter(filter: QuickFilter) {
   if (filter === "reviewed") {
     return nationwidePrefectureCoverage.filter(
       (record) => record.coverageStage === "reviewed_data",
+    ).length;
+  }
+  if (filter === "published") {
+    return nationwidePrefectureCoverage.filter(
+      (record) => record.publicationStatus === "published",
     ).length;
   }
   return nationwidePrefectureCoverage.length;
@@ -77,7 +85,8 @@ export function CoverageExplorer() {
         (quickFilter === "official" && record.officialEntryStatus === "verified") ||
         (quickFilter === "current" &&
           record.planCurrencyStatus === "current_confirmed") ||
-        (quickFilter === "reviewed" && record.coverageStage === "reviewed_data");
+        (quickFilter === "reviewed" && record.coverageStage === "reviewed_data") ||
+        (quickFilter === "published" && record.publicationStatus === "published");
 
       return matchesQuery && matchesRegion && matchesQuickFilter;
     });
@@ -198,8 +207,8 @@ export function CoverageExplorer() {
                         <dd>{planCurrencyLabel(record.planCurrencyStatus)}</dd>
                       </div>
                       <div>
-                        <dt>自治体ページ</dt>
-                        <dd>{record.publicHref ? "公開中" : "未公開"}</dd>
+                        <dt>公開状態</dt>
+                        <dd>{publicationStatusLabel(record.publicationStatus)}</dd>
                       </div>
                     </dl>
 
