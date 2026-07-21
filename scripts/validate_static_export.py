@@ -53,8 +53,10 @@ BASE_PAGE_REQUIREMENTS: dict[str, list[str]] = {
     "municipalities/index.html": [
         "全国47都道府県を、同じ品質段階で追う。",
         "公式入口確認済み",
-        "現行計画確認済み",
-        "Reviewed公開",
+        "現行政策入口確認済み",
+        "Reviewedデータ公開",
+        "入口確認の先を、6つの資料カテゴリで追う。",
+        "事業評価",
         "128目標グループ・149系列",
     ],
     "municipalities/hokkaido/index.html": [
@@ -141,21 +143,31 @@ def miyagi_requirements() -> dict[str, list[str]]:
     )
     reviewed_groups = manifest["reviewed_target_group_count"]
     reviewed_series = manifest["reviewed_indicator_series_count"]
+    linked_series = manifest["actual_linked_indicator_series_count"]
     remaining_groups = manifest["remaining_target_group_count"]
     remaining_series = manifest["remaining_indicator_series_count"]
 
     if remaining_groups == 0 and remaining_series == 0:
         municipality_copies = [
-            f"宮城県{reviewed_groups}目標のKPI本文を全件公開。次は年度実績との接続。",
-            f"宮城県では{reviewed_groups}目標グループ・{reviewed_series}系列を全件Reviewed化しました。",
-            f"宮城県の{reviewed_groups}目標を全件公開。年度実績は未接続と明示する。",
+            f"宮城県{reviewed_groups}目標を全件Reviewed化し、年度実績を接続中。",
+            (
+                f"宮城県では{reviewed_groups}目標グループ・{reviewed_series}系列を"
+                f"全件Reviewed化し、{linked_series}系列を年度実績へ直接接続しています。"
+            ),
+            (
+                f"宮城県の{reviewed_groups}目標を全件公開し、"
+                f"{linked_series}系列を年度実績へ接続。"
+            ),
             miyagi_queue["next_action"],
         ]
     else:
         municipality_copies = [
             f"宮城県{reviewed_groups}目標を公開。",
             f"先頭{reviewed_groups}グループ・{reviewed_series}系列をReviewed化しました。",
-            f"宮城県の{reviewed_groups}目標を公開。未Reviewedの{remaining_groups}目標も明示する。",
+            (
+                f"宮城県の{reviewed_groups}目標を公開。"
+                f"未Reviewedの{remaining_groups}目標も明示する。"
+            ),
             miyagi_queue["next_action"],
         ]
 
@@ -185,7 +197,9 @@ def main() -> int:
         if not (EXPORT_ROOT / relative_path).is_file():
             failures.append(f"Missing static export file: {relative_path}")
 
-    requirements = {path: list(copies) for path, copies in BASE_PAGE_REQUIREMENTS.items()}
+    requirements = {
+        path: list(copies) for path, copies in BASE_PAGE_REQUIREMENTS.items()
+    }
     for path, copies in miyagi_requirements().items():
         requirements.setdefault(path, []).extend(copies)
 
