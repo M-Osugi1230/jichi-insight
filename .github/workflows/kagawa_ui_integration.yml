@@ -1,0 +1,115 @@
+name: Kagawa UI Integration
+
+on:
+  push:
+    branches:
+      - agent/kagawa-extended-plan-indicators
+    paths:
+      - .github/workflows/kagawa_ui_integration.yml
+  pull_request:
+    branches:
+      - main
+    paths:
+      - .github/workflows/kagawa_ui_integration.yml
+
+permissions:
+  contents: write
+
+jobs:
+  integrate:
+    if: github.head_ref == 'agent/kagawa-extended-plan-indicators' || github.ref_name == 'agent/kagawa-extended-plan-indicators'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/kagawa-extended-plan-indicators
+          fetch-depth: 0
+      - name: Apply nationwide Kagawa integration
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          def replace(path, old, new):
+              file = Path(path)
+              text = file.read_text(encoding="utf-8")
+              if old not in text:
+                  raise SystemExit(f"Missing patch anchor in {path}: {old[:100]!r}")
+              file.write_text(text.replace(old, new, 1), encoding="utf-8")
+
+          page = "apps/web/app/municipalities/page.tsx"
+          replace(
+              page,
+              'import { hiroshimaIndicatorStats } from "@/lib/hiroshimaIndicators";\n',
+              'import { hiroshimaIndicatorStats } from "@/lib/hiroshimaIndicators";\nimport { kagawaIndicatorStats } from "@/lib/kagawaIndicators";\n',
+          )
+          replace(page, "いま、深く読める7都道府県。", "いま、深く読める8都道府県。")
+          replace(
+              page,
+              '              <Link href="/municipalities/hiroshima">広島県の成果指標を見る →</Link>\n            </article>\n',
+              '              <Link href="/municipalities/hiroshima">広島県の成果指標を見る →</Link>\n            </article>\n            <article className={`${styles.deepDiveCard} ${styles.hokkaido}`}>\n              <div><span>37 / 香川県</span><StatusBadge label="延長後指標全件Reviewed" tone="verified" /></div>\n              <h3>135指標を新旧目標で読む。</h3>\n              <dl>\n                <div><dt>Reviewed指標</dt><dd>{kagawaIndicatorStats.reviewedIndicators}</dd></div>\n                <div><dt>掲載位置</dt><dd>{kagawaIndicatorStats.displayOccurrences}</dd></div>\n                <div><dt>目標更新</dt><dd>{kagawaIndicatorStats.targetRevisions}</dd></div>\n                <div><dt>Evidence</dt><dd>{kagawaIndicatorStats.evidencePackets}</dd></div>\n              </dl>\n              <p>令和7年度と令和8年度の目標、再掲6件、参考指標135番の令和12年目標を分離します。</p>\n              <Link href="/municipalities/kagawa">香川県の計画指標を見る →</Link>\n            </article>\n',
+          )
+          replace(
+              page,
+              '                (category === "kpi_source" && hiroshimaIndicatorStats.reviewedIndicators > 0 ? 1 : 0);',
+              '                (category === "kpi_source" && hiroshimaIndicatorStats.reviewedIndicators > 0 ? 1 : 0) +\n                (category === "kpi_source" && kagawaIndicatorStats.reviewedIndicators > 0 ? 1 : 0);',
+          )
+          replace(
+              page,
+              "公開済み7地域と、次に資料を深掘りする2地域を示します。",
+              "公開済み8地域と、次に資料を深掘りする1地域を示します。",
+          )
+          replace(
+              page,
+              '                            : item.prefecture_code === "40"\n                              ? "/municipalities/fukuoka-prefecture"\n                              : null;',
+              '                            : item.prefecture_code === "37"\n                              ? "/municipalities/kagawa"\n                              : item.prefecture_code === "40"\n                                ? "/municipalities/fukuoka-prefecture"\n                                : null;',
+          )
+
+          static = "scripts/validate_static_export.py"
+          replace(
+              static,
+              '    "municipalities/hiroshima/index.html",\n',
+              '    "municipalities/hiroshima/index.html",\n    "municipalities/kagawa/index.html",\n',
+          )
+          replace(static, "いま、深く読める7都道府県。", "いま、深く読める8都道府県。")
+          replace(
+              static,
+              '        "広島県の成果指標を見る",\n',
+              '        "広島県の成果指標を見る",\n        "香川県の計画指標を見る",\n',
+          )
+          replace(
+              static,
+              '    "municipalities/fukuoka-prefecture/index.html": [\n',
+              '    "municipalities/kagawa/index.html": [\n        "香川県の135指標を、延長前と延長後の目標から読む。",\n        "Reviewed指標",\n        "掲載位置",\n        "目標更新",\n        "計画延長を、単なる年度の置換にしない。",\n        "135指標を、名称・値・変更状態から探す。",\n        "政策評価 未判定",\n    ],\n    "municipalities/fukuoka-prefecture/index.html": [\n',
+          )
+
+          production = "scripts/check_production.sh"
+          replace(
+              production,
+              '  "/municipalities/hiroshima/"\n',
+              '  "/municipalities/hiroshima/"\n  "/municipalities/kagawa/"\n',
+          )
+          replace(production, "いま、深く読める7都道府県。", "いま、深く読める8都道府県。")
+          replace(
+              production,
+              '  "広島県の成果指標を見る" \\\n',
+              '  "広島県の成果指標を見る" \\\n  "香川県の計画指標を見る" \\\n',
+          )
+          replace(
+              production,
+              'check_content "/municipalities/fukuoka-prefecture/" \\\n',
+              'check_content "/municipalities/kagawa/" \\\n  "香川県の135指標を、延長前と延長後の目標から読む。" \\\n  "Reviewed指標" \\\n  "掲載位置" \\\n  "目標更新" \\\n  "計画延長を、単なる年度の置換にしない。" \\\n  "135指標を、名称・値・変更状態から探す。" \\\n  "政策評価 未判定"\n\ncheck_content "/municipalities/fukuoka-prefecture/" \\\n',
+          )
+          replace(
+              production,
+              "Phase 8 Tokyo, Aichi, Osaka and Hiroshima reviewed publication checks: PASS",
+              "Phase 8 Tokyo, Aichi, Osaka, Hiroshima and Kagawa reviewed publication checks: PASS",
+          )
+          PY
+      - name: Commit integration and remove temporary workflow
+        run: |
+          rm .github/workflows/kagawa_ui_integration.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add apps/web/app/municipalities/page.tsx scripts/validate_static_export.py scripts/check_production.sh .github/workflows/kagawa_ui_integration.yml
+          git commit -m "Integrate Kagawa reviewed indicators"
+          git push origin HEAD:agent/kagawa-extended-plan-indicators
