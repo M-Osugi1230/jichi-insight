@@ -15,7 +15,7 @@ NEW_EVIDENCE = [
     POLICY / "miyagi_kpi_measure8_evidence_packets.json",
     POLICY / "miyagi_kpi_measure9_evidence_packets.json",
 ]
-# Pillar 3 bridges measure 9 and measure 10 in the official target and series sequence.
+# Pillar catalogs bridge measure sequences in the official target and series order.
 ALL_CATALOGS = [
     POLICY / "miyagi_kpi_catalog_pillar1.json",
     POLICY / "miyagi_kpi_catalog_measure1.json",
@@ -33,6 +33,8 @@ ALL_CATALOGS = [
     POLICY / "miyagi_kpi_catalog_measure12.json",
     POLICY / "miyagi_kpi_catalog_measure13.json",
     POLICY / "miyagi_kpi_catalog_measure14.json",
+    POLICY / "miyagi_kpi_catalog_pillar4.json",
+    POLICY / "miyagi_kpi_catalog_measure15.json",
 ]
 ACTUALS = sorted(POLICY.glob("miyagi_kpi_actuals_measure*_2024.json"))
 
@@ -130,11 +132,11 @@ def test_evidence_covers_all_16_groups():
     assert all(packet["review_status"] == "reviewed" for packet in packets)
 
 
-def test_all_reviewed_batches_form_104_groups_and_123_series():
+def test_all_reviewed_batches_form_113_groups_and_132_series():
     reviewed = groups(ALL_CATALOGS)
     series = [item for group in reviewed for item in group["series"]]
-    assert [group["target_group_number"] for group in reviewed] == list(range(1, 105))
-    assert [item["series_number"] for item in series] == list(range(1, 124))
+    assert [group["target_group_number"] for group in reviewed] == list(range(1, 114))
+    assert [item["series_number"] for item in series] == list(range(1, 133))
     connected_groups = {
         group["target_group_number"]
         for group in reviewed
