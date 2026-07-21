@@ -11,6 +11,9 @@ PUBLISHED_PATH = ROOT / "data/catalog/published_prefecture_pages.json"
 TOKYO_MANIFEST_PATH = ROOT / "data/catalog/tokyo_policy_target_review_manifest.json"
 AICHI_MANIFEST_PATH = ROOT / "data/catalog/aichi_policy_indicator_review_manifest.json"
 OSAKA_MANIFEST_PATH = ROOT / "data/catalog/osaka_beyond_expo_indicator_review_manifest.json"
+HIROSHIMA_MANIFEST_PATH = (
+    ROOT / "data/catalog/hiroshima_revised_vision_indicator_review_manifest.json"
+)
 
 
 def load(path: Path):
@@ -18,38 +21,32 @@ def load(path: Path):
 
 
 def test_phase8_manifest_matches_schema():
-    validator = Draft202012Validator(
-        load(SCHEMA_PATH),
-        format_checker=FormatChecker(),
-    )
+    validator = Draft202012Validator(load(SCHEMA_PATH), format_checker=FormatChecker())
     assert list(validator.iter_errors(load(MANIFEST_PATH))) == []
 
 
 def test_phase8_counts_are_derived_from_canonical_registries():
     manifest = load(MANIFEST_PATH)
     anchors = load(ANCHOR_PATH)["records"]
-    tokyo_manifest = load(TOKYO_MANIFEST_PATH)
-    aichi_manifest = load(AICHI_MANIFEST_PATH)
-    osaka_manifest = load(OSAKA_MANIFEST_PATH)
     published_codes = {
         record["prefecture_code"] for record in load(PUBLISHED_PATH)["records"]
     }
     anchor_codes = {record["prefecture_code"] for record in anchors}
-
     reviewed_codes = {
         record["prefecture_code"]
         for record in anchors
         if record["numeric_target_status"] == "reviewed"
     }
-    if tokyo_manifest["reviewed_target_group_count"] > 0:
+    if load(TOKYO_MANIFEST_PATH)["reviewed_target_group_count"] > 0:
         reviewed_codes.add("13")
-    if aichi_manifest["status"] == "complete":
+    if load(AICHI_MANIFEST_PATH)["status"] == "complete":
         reviewed_codes.add("23")
-    if osaka_manifest["status"] == "complete":
+    if load(OSAKA_MANIFEST_PATH)["status"] == "complete":
         reviewed_codes.add("27")
+    if load(HIROSHIMA_MANIFEST_PATH)["status"] == "complete":
+        reviewed_codes.add("34")
     source_mapped = sum(len(record["sources"]) == 6 for record in anchors)
     published = len(anchor_codes & published_codes)
-
     assert manifest["counts"] == {
         "regional_anchors": 9,
         "anchors_with_plan_and_kpi_entrances": 9,
@@ -63,11 +60,10 @@ def test_phase8_counts_are_derived_from_canonical_registries():
 def test_phase8_cannot_be_complete_before_all_review_and_publication_gates_pass():
     manifest = load(MANIFEST_PATH)
     gates = {gate["id"]: gate["status"] for gate in manifest["gates"]}
-
     assert manifest["status"] == "in_progress"
-    assert manifest["counts"]["anchors_with_reviewed_numeric_targets"] == 6
-    assert manifest["counts"]["anchors_pending_numeric_target_review"] == 3
-    assert manifest["counts"]["anchors_with_published_prefecture_pages"] == 6
+    assert manifest["counts"]["anchors_with_reviewed_numeric_targets"] == 7
+    assert manifest["counts"]["anchors_pending_numeric_target_review"] == 2
+    assert manifest["counts"]["anchors_with_published_prefecture_pages"] == 7
     assert gates["plan_and_numeric_target_entrances"] == "passed"
     assert gates["evidence_packet_review"] == "in_progress"
     assert gates["published_pages_and_production_smoke"] == "in_progress"
