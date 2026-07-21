@@ -158,7 +158,7 @@ pnpm dev
 ### Repository validation
 
 ```bash
-python -m pip install -e "./[dev]"
+python -m pip install -e ".[dev]"
 python scripts/validate_repository.py
 pytest
 ```
