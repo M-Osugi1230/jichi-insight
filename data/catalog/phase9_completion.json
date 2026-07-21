@@ -8,7 +8,7 @@
     "total_prefectures": 47,
     "major_policy_plans_indexed": 47,
     "numeric_target_entrances_indexed_or_reviewed": 9,
-    "evidence_backed_reviewed_prefectures": 3,
+    "evidence_backed_reviewed_prefectures": 4,
     "remaining_phase9_prefectures": 38,
     "phase9_prefectures_with_numeric_targets_indexed": 0,
     "phase9_prefectures_with_reviewed_numeric_targets": 0
@@ -35,6 +35,7 @@
       "status": "in_progress",
       "evidence_paths": [
         "data/catalog/phase8_completion.json",
+        "data/catalog/tokyo_policy_target_review_manifest.json",
         "data/catalog/phase9_execution_queue.json"
       ]
     },
@@ -43,7 +44,8 @@
       "status": "in_progress",
       "evidence_paths": [
         "tests/test_phase9_execution_queue.py",
-        "tests/test_regional_anchor_source_registry.py"
+        "tests/test_regional_anchor_source_registry.py",
+        "tests/test_tokyo_policy_targets_children.py"
       ]
     },
     {
@@ -70,5 +72,5 @@
       ]
     }
   ],
-  "scope_note": "Phase 9 is not complete until all 47 prefectures have major numeric targets indexed, every published number has Evidence coverage, semantic and history tests pass, incomparable indicators remain excluded from rankings, and nationwide publication passes Production Smoke."
+  "scope_note": "Phase 9 is not complete until all 47 prefectures have major numeric targets indexed, every published number has Evidence coverage, semantic and history tests pass, incomparable indicators remain excluded from rankings, and nationwide publication passes Production Smoke. Tokyo contributes a partial Reviewed area while its remaining 58 pages stay explicitly unreviewed."
 }
