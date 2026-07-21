@@ -33,9 +33,13 @@ def test_miyagi_page_is_linked_from_nationwide_surfaces():
     by_code = {
         record["prefecture_code"]: record for record in published["records"]
     }
+    registry_import = (
+        'publishedPageRegistry from '
+        '"../../../data/catalog/published_prefecture_pages.json"'
+    )
 
     assert by_code["04"]["route"] == "/municipalities/miyagi"
-    assert 'publishedPageRegistry from "../../../data/catalog/published_prefecture_pages.json"' in coverage
+    assert registry_import in coverage
     assert "publishedPrefecturePagesByCode" in coverage
     assert 'href="/municipalities/miyagi"' in municipalities
     assert "waveOnePolicyReviewQueue" in municipalities
