@@ -39,3 +39,4 @@ jobs:
           git add apps data docs scripts tests .github/workflows/aichi_integration_patch.yml
           git commit -m "Integrate reviewed Aichi indicators"
           git push origin HEAD:agent/aichi-policy-indicators-complete
+# retrigger
