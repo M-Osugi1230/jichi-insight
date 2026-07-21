@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.example/schemas/nationwide_source_inventory.schema.json",
+  "title": "Jichi Insight nationwide source inventory",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "updated_at", "categories", "status_order", "records", "summary"],
+  "properties": {
+    "id": {"const": "nationwide-source-inventory"},
+    "updated_at": {"type": "string", "format": "date"},
+    "categories": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/category"}
+    },
+    "status_order": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/status"}
+    },
+    "records": {
+      "type": "array",
+      "minItems": 47,
+      "maxItems": 47,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["prefecture_code", "sources", "next_action"],
+        "properties": {
+          "prefecture_code": {"$ref": "#/$defs/prefectureCode"},
+          "sources": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["policy_plan", "implementation_plan", "kpi_source", "annual_evaluation", "budget", "project_evaluation"],
+            "properties": {
+              "policy_plan": {"$ref": "#/$defs/status"},
+              "implementation_plan": {"$ref": "#/$defs/status"},
+              "kpi_source": {"$ref": "#/$defs/status"},
+              "annual_evaluation": {"$ref": "#/$defs/status"},
+              "budget": {"$ref": "#/$defs/status"},
+              "project_evaluation": {"$ref": "#/$defs/status"}
+            }
+          },
+          "next_action": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["prefecture_count", "policy_plan", "implementation_plan", "kpi_source", "annual_evaluation", "budget", "project_evaluation"],
+      "properties": {
+        "prefecture_count": {"const": 47},
+        "policy_plan": {"$ref": "#/$defs/statusCounts"},
+        "implementation_plan": {"$ref": "#/$defs/statusCounts"},
+        "kpi_source": {"$ref": "#/$defs/statusCounts"},
+        "annual_evaluation": {"$ref": "#/$defs/statusCounts"},
+        "budget": {"$ref": "#/$defs/statusCounts"},
+        "project_evaluation": {"$ref": "#/$defs/statusCounts"}
+      }
+    }
+  },
+  "$defs": {
+    "prefectureCode": {"type": "string", "pattern": "^(0[1-9]|[1-3][0-9]|4[0-7])$"},
+    "category": {"enum": ["policy_plan", "implementation_plan", "kpi_source", "annual_evaluation", "budget", "project_evaluation"]},
+    "status": {"enum": ["not_indexed", "indexed", "reviewed", "linked"]},
+    "statusCounts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["not_indexed", "indexed", "reviewed", "linked"],
+      "properties": {
+        "not_indexed": {"type": "integer", "minimum": 0, "maximum": 47},
+        "indexed": {"type": "integer", "minimum": 0, "maximum": 47},
+        "reviewed": {"type": "integer", "minimum": 0, "maximum": 47},
+        "linked": {"type": "integer", "minimum": 0, "maximum": 47}
+      }
+    }
+  }
+}
