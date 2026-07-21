@@ -11,7 +11,6 @@ import { miyagiKpiActualStats } from "@/lib/miyagiActuals";
 import { miyagiPolicyReviewStats } from "@/lib/miyagiPolicies";
 import {
   nationwideCoverageStats,
-  nationwidePrefectureCoverage,
   nationwideSourceInventoryStats,
   sourceInventoryCategoryLabel,
   sourceInventoryCategoryOrder,
@@ -62,7 +61,7 @@ export default function MunicipalitiesPage() {
           </article>
           <article className={styles.summaryCard}>
             <span>政策計画入口索引済み</span>
-            <strong>{nationwideCoverageStats.sourceCatalogedPrefectures}</strong>
+            <strong>{nationwideCoverageStats.indexedPolicyPlanEntries}</strong>
             <p>全47都道府県で現行の政策計画入口を固定。</p>
           </article>
           <article className={styles.summaryCard}>
@@ -71,9 +70,14 @@ export default function MunicipalitiesPage() {
             <p>後継計画や改定状況まで確認した都道府県だけを計上。</p>
           </article>
           <article className={styles.summaryCard}>
-            <span>Reviewedデータ公開</span>
+            <span>Reviewedデータ</span>
             <strong>{nationwideCoverageStats.reviewedPrefectures}</strong>
             <p>一次資料と人の照合を通過した都道府県だけを計上。</p>
+          </article>
+          <article className={styles.summaryCard}>
+            <span>自治体ページ公開</span>
+            <strong>{nationwideCoverageStats.publishedPrefecturePages}</strong>
+            <p>公開状態はReviewedの深さと別に管理。</p>
           </article>
         </section>
 
@@ -108,8 +112,11 @@ export default function MunicipalitiesPage() {
             <li><strong>3</strong><span>政策計画入口索引済み</span><p>総合計画、長期ビジョン、総合戦略、政策集等の入口を固定。</p></li>
             <li><strong>4</strong><span>現行性確認済み</span><p>後継計画、改定、計画期間を確認。</p></li>
             <li><strong>5</strong><span>資料インベントリ</span><p>実施計画、KPI、年度評価、予算、事業評価を個別に索引。</p></li>
-            <li><strong>6</strong><span>Reviewedデータ公開</span><p>本文・数値・期間・単位を一次資料と照合。</p></li>
+            <li><strong>6</strong><span>Reviewedデータ</span><p>本文・数値・期間・単位を一次資料と照合。</p></li>
           </ol>
+          <p className={styles.sectionLead}>
+            自治体ページの公開状態は、この確認の深さとは別軸です。公開ページがあっても全資料がReviewedとは限らず、未公開でも公式入口の確認は進められます。
+          </p>
         </section>
 
         <section className="contentSection">
