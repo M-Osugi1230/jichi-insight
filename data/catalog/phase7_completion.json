@@ -2,8 +2,8 @@
   "id": "phase-7-nationwide-prefecture-registry",
   "phase": 7,
   "scope_version": "2026-07-21",
-  "status": "verification_pending",
-  "completed_at": null,
+  "status": "complete",
+  "completed_at": "2026-07-21",
   "counts": {
     "registered_prefectures": 47,
     "verified_official_entries": 47,
@@ -70,7 +70,7 @@
     },
     {
       "id": "production_smoke",
-      "status": "pending",
+      "status": "passed",
       "evidence_paths": [
         ".github/workflows/production-smoke.yml",
         "scripts/check_production.sh"
