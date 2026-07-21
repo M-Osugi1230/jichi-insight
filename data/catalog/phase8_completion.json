@@ -8,9 +8,9 @@
     "regional_anchors": 9,
     "anchors_with_plan_and_kpi_entrances": 9,
     "anchors_with_six_category_source_map": 6,
-    "anchors_with_reviewed_numeric_targets": 3,
-    "anchors_with_published_prefecture_pages": 3,
-    "anchors_pending_numeric_target_review": 6
+    "anchors_with_reviewed_numeric_targets": 4,
+    "anchors_with_published_prefecture_pages": 4,
+    "anchors_pending_numeric_target_review": 5
   },
   "gates": [
     {
@@ -33,7 +33,10 @@
       "id": "evidence_packet_review",
       "status": "in_progress",
       "evidence_paths": [
-        "data/catalog/regional_anchor_source_registry.json"
+        "data/catalog/regional_anchor_source_registry.json",
+        "data/catalog/tokyo_policy_target_review_manifest.json",
+        "data/entities/policy/tokyo_policy_target_catalog_children.json",
+        "data/entities/policy/tokyo_policy_target_children_evidence_packets.json"
       ]
     },
     {
@@ -42,7 +45,8 @@
       "evidence_paths": [
         "tests/test_regional_anchor_source_registry.py",
         "tests/test_hokkaido_reviewed_indicator_sequence.py",
-        "tests/test_miyagi_catalog_sequences.py"
+        "tests/test_miyagi_catalog_sequences.py",
+        "tests/test_tokyo_policy_targets_children.py"
       ]
     },
     {
@@ -54,6 +58,6 @@
       ]
     }
   ],
-  "next_review_order": ["13", "23", "27", "34", "37", "47"],
-  "scope_note": "Phase 8 is complete only when all nine regional anchors have Evidence Packet-backed Reviewed numeric targets and the published pages pass static export and Production Smoke. Source indexing alone does not satisfy the gate."
+  "next_review_order": ["23", "27", "34", "37", "47"],
+  "scope_note": "Phase 8 is complete only when all nine regional anchors have Evidence Packet-backed Reviewed numeric targets and the published pages pass static export and Production Smoke. Tokyo now has a fully Reviewed first policy area, but its remaining 58 source pages are not yet Reviewed."
 }
