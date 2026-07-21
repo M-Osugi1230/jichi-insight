@@ -1,0 +1,14 @@
+{
+  "id": "hokkaido-policy-kpi-evidence-index",
+  "prefecture_code": "01",
+  "subject_type": "policy_indicator",
+  "review_status": "reviewed",
+  "evidence_packet_count": 108,
+  "manifest_path": "data/catalog/hokkaido_policy_review_manifest.json",
+  "evidence_path_pattern": "data/entities/policy/hokkaido_indicator_*_evidence_packets.json",
+  "example_evidence_paths": [
+    "data/entities/policy/hokkaido_indicator_nature_environment_evidence_packets.json",
+    "data/entities/policy/hokkaido_indicator_history_culture_sports_evidence_packets.json"
+  ],
+  "scope_note": "This aggregate index does not replace the one-packet-per-indicator canonical files."
+}

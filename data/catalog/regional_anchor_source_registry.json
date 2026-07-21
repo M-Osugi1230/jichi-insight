@@ -1,0 +1,426 @@
+{
+  "id": "phase8-regional-anchor-source-registry",
+  "updated_at": "2026-07-21",
+  "anchor_codes": ["01", "04", "13", "23", "27", "34", "37", "40", "47"],
+  "source_categories": [
+    "policy_plan",
+    "implementation_plan",
+    "kpi_source",
+    "annual_evaluation",
+    "budget",
+    "project_evaluation"
+  ],
+  "records": [
+    {
+      "prefecture_code": "01",
+      "name": "北海道",
+      "anchor_status": "reviewed_reference",
+      "numeric_target_status": "reviewed",
+      "evidence_paths": [
+        "data/reviewed/hokkaido_policy_kpis.json",
+        "data/evidence/hokkaido_policy_kpi_evidence.json"
+      ],
+      "sources": []
+    },
+    {
+      "prefecture_code": "04",
+      "name": "宮城県",
+      "anchor_status": "active_review",
+      "numeric_target_status": "reviewed",
+      "evidence_paths": [
+        "data/catalog/miyagi_policy_review_manifest.json",
+        "data/reviewed/miyagi_policy_kpis.json"
+      ],
+      "sources": []
+    },
+    {
+      "prefecture_code": "13",
+      "name": "東京都",
+      "anchor_status": "source_indexed",
+      "numeric_target_status": "indexed",
+      "evidence_paths": [],
+      "sources": [
+        {
+          "id": "tokyo-2050-strategy",
+          "category": "policy_plan",
+          "title": "2050東京戦略 ～東京 もっとよくなる～",
+          "url": "https://www.seisakukikaku.metro.tokyo.lg.jp/basic-plan/2050-tokyo",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "都の総合計画。2035年に向けた政策体系を掲載。"
+        },
+        {
+          "id": "tokyo-action-plan-2026-2028",
+          "category": "implementation_plan",
+          "title": "2050東京戦略 3か年のアクションプラン（令和8～10年度）",
+          "url": "https://www.seisakukikaku.metro.tokyo.lg.jp/basic-plan/2050-tokyo",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "同一公式ページから現行アクションプランを取得する。"
+        },
+        {
+          "id": "tokyo-policy-targets-2026",
+          "category": "kpi_source",
+          "title": "2050東京戦略 政策目標一覧（令和8年1月）",
+          "url": "https://www.seisakukikaku.metro.tokyo.lg.jp/basic-plan/2050-tokyo",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "政策目標は戦略上のKPIとして位置付けられている。"
+        },
+        {
+          "id": "tokyo-policy-review-2025",
+          "category": "annual_evaluation",
+          "title": "2050東京戦略 政策レビュー 2025",
+          "url": "https://www.seisakukikaku.metro.tokyo.lg.jp/basic-plan/2050-tokyo",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "2024年度の事業実施状況と政策目標の進捗入口。"
+        },
+        {
+          "id": "tokyo-budget-2026",
+          "category": "budget",
+          "title": "令和8年度東京都予算",
+          "url": "https://www.zaimu.metro.tokyo.lg.jp/zaisei/yosan/r8",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "予算概要、主要事業、説明書を掲載。"
+        },
+        {
+          "id": "tokyo-merihari-review",
+          "category": "project_evaluation",
+          "title": "政策評価・事業評価・グループ連携事業評価",
+          "url": "https://www.zaimu.metro.tokyo.lg.jp/zaisei/zaisei",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "TOKYOメリハリレビューを含む評価入口。"
+        }
+      ]
+    },
+    {
+      "prefecture_code": "23",
+      "name": "愛知県",
+      "anchor_status": "source_indexed",
+      "numeric_target_status": "indexed",
+      "evidence_paths": [],
+      "sources": [
+        {
+          "id": "aichi-vision-2030",
+          "category": "policy_plan",
+          "title": "あいちビジョン2030",
+          "url": "https://www.pref.aichi.jp/soshiki/kikaku/aichivision2030-2024-2026keikaku.html",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "2024-2026実施計画と同じ年次レポート入口で体系を追跡。"
+        },
+        {
+          "id": "aichi-implementation-2024-2026",
+          "category": "implementation_plan",
+          "title": "あいちビジョン2030 2024-2026実施計画",
+          "url": "https://www.pref.aichi.jp/soshiki/kikaku/aichivision2030-2024-2026keikaku.html",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "重要政策の方向性に沿った主要政策の実施計画。"
+        },
+        {
+          "id": "aichi-vision-kpis",
+          "category": "kpi_source",
+          "title": "あいちビジョン2030 2024-2026実施計画 指標",
+          "url": "https://www.pref.aichi.jp/soshiki/kikaku/aichivision2030-2024-2026keikaku.html",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "実施計画本文に掲載される進行管理指標の入口。"
+        },
+        {
+          "id": "aichi-report-2025",
+          "category": "annual_evaluation",
+          "title": "あいちビジョン2030 2025年度版年次レポート あいちレポート2025",
+          "url": "https://www.pref.aichi.jp/soshiki/kikaku/2025vision-report.html",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "ビジョンの取組状況を毎年度進行管理する年次レポート。"
+        },
+        {
+          "id": "aichi-budget-2026",
+          "category": "budget",
+          "title": "愛知県 予算の概要",
+          "url": "https://www.pref.aichi.jp/soshiki/zaisei/0000007064.html",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "当初予算と補正予算の年度別入口。"
+        },
+        {
+          "id": "aichi-management-evaluation-2025",
+          "category": "project_evaluation",
+          "title": "2025年度管理事業評価の結果",
+          "url": "https://www.pref.aichi.jp/soshiki/somubu-somu/2025hyouka.html",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "296管理事業の評価結果と指標・目標の達成状況。"
+        }
+      ]
+    },
+    {
+      "prefecture_code": "27",
+      "name": "大阪府",
+      "anchor_status": "source_indexed",
+      "numeric_target_status": "indexed",
+      "evidence_paths": [],
+      "sources": [
+        {
+          "id": "osaka-future-vision",
+          "category": "policy_plan",
+          "title": "将来ビジョン・大阪",
+          "url": "https://www.pref.osaka.lg.jp/o020040/kikaku/bijyon/index.html",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "将来像と取組方向の公式入口。計画期間経過後も実現状況データが更新されているため履歴管理対象とする。"
+        },
+        {
+          "id": "osaka-administrative-plans",
+          "category": "implementation_plan",
+          "title": "大阪府の行政計画",
+          "url": "https://www.pref.osaka.lg.jp/o020040/kikaku/gyoseikeikaku/index.html",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "約170の分野別行政計画を横断する実施計画入口。単一総合実施計画がない構造を保持する。"
+        },
+        {
+          "id": "osaka-future-vision-indicators",
+          "category": "kpi_source",
+          "title": "将来像イメージの実現状況を知る項目",
+          "url": "https://www.pref.osaka.lg.jp/o020040/kikaku/bijyon/index.html",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "将来像の実現状況を追う最新データ。"
+        },
+        {
+          "id": "osaka-future-vision-progress",
+          "category": "annual_evaluation",
+          "title": "将来像イメージの実現状況を知る項目（令和7年更新）",
+          "url": "https://www.pref.osaka.lg.jp/o020040/kikaku/bijyon/index.html",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "目標の達成評価ではなく実現状況データとして登録する。"
+        },
+        {
+          "id": "osaka-budget-policy-2026",
+          "category": "budget",
+          "title": "令和8年度当初予算編成要領",
+          "url": "https://www.pref.osaka.lg.jp/o050010/zaisei/yosan/r8yosanhenseiyoryo.html",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "予算編成と事業効果のPDCA方針を確認できる入口。"
+        },
+        {
+          "id": "osaka-construction-project-evaluation-2025",
+          "category": "project_evaluation",
+          "title": "令和7年度 建設事業評価",
+          "url": "https://www.pref.osaka.lg.jp/o130020/jigyokanri/reiwa7_jigyouhyouka/index2.html",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "事前・再・事後評価を分けて公開。"
+        }
+      ]
+    },
+    {
+      "prefecture_code": "34",
+      "name": "広島県",
+      "anchor_status": "source_indexed",
+      "numeric_target_status": "indexed",
+      "evidence_paths": [],
+      "sources": [
+        {
+          "id": "hiroshima-vision",
+          "category": "policy_plan",
+          "title": "安心・誇り・挑戦 ひろしまビジョン",
+          "url": "https://www.pref.hiroshima.lg.jp/site/hiroshimavision/index.html",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "2026年6月改定後の現行ビジョン入口。"
+        },
+        {
+          "id": "hiroshima-action-plan",
+          "category": "implementation_plan",
+          "title": "安心・誇り・挑戦 ひろしまビジョン アクションプラン",
+          "url": "https://www.pref.hiroshima.lg.jp/site/hiroshimavision/index.html",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "17施策領域を実行へ接続する現行アクションプラン。2026年10月終期予定。"
+        },
+        {
+          "id": "hiroshima-action-plan-kpis",
+          "category": "kpi_source",
+          "title": "ひろしまビジョン アクションプラン 成果指標",
+          "url": "https://www.pref.hiroshima.lg.jp/site/hiroshimavision/index.html",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "アクションプラン本文の成果指標を抽出対象とする。"
+        },
+        {
+          "id": "hiroshima-policy-operation-2026",
+          "category": "annual_evaluation",
+          "title": "県政運営の基本方針2026",
+          "url": "https://www.pref.hiroshima.lg.jp/site/kihonhousin/kihonhousin2026.html",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "年度の政策基本方向を確認する入口。成果実績とは別に扱う。"
+        },
+        {
+          "id": "hiroshima-budget-projects-2026",
+          "category": "budget",
+          "title": "令和8年度当初予算事業",
+          "url": "https://www.pref.hiroshima.lg.jp/site/zaiseiyosann/reiwa08tosyozenjigyou.html",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "全事業の予算額を局別に公開。"
+        },
+        {
+          "id": "hiroshima-public-project-review-2025",
+          "category": "project_evaluation",
+          "title": "広島県公共事業評価監視委員会 意見具申",
+          "url": "https://www.pref.hiroshima.lg.jp/site/saihyouka/iinkai-ikengusin.html",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "公共事業再評価に対する委員会意見書の入口。"
+        }
+      ]
+    },
+    {
+      "prefecture_code": "37",
+      "name": "香川県",
+      "anchor_status": "source_indexed",
+      "numeric_target_status": "indexed",
+      "evidence_paths": [],
+      "sources": [
+        {
+          "id": "kagawa-frontier-plan",
+          "category": "policy_plan",
+          "title": "人生100年時代のフロンティア県・香川 実現計画",
+          "url": "https://www.pref.kagawa.lg.jp/seisaku/sogo/sogokeikakuminaoshi/keikakuminaoshi.html",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "2023年10月変更後の現行総合計画。"
+        },
+        {
+          "id": "kagawa-plan-system",
+          "category": "implementation_plan",
+          "title": "香川県 総合計画・行政評価",
+          "url": "https://www.pref.kagawa.lg.jp/seisaku/sogo/index.html",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "総合計画と行政評価を一体で追跡する公式入口。"
+        },
+        {
+          "id": "kagawa-plan-indicators",
+          "category": "kpi_source",
+          "title": "実現計画 指標体系",
+          "url": "https://www.pref.kagawa.lg.jp/seisaku/sogo/wbymjf201005102310.html",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "10の指標と目標値を持つ134指標の達成状況を掲載。"
+        },
+        {
+          "id": "kagawa-administrative-evaluation-2025",
+          "category": "annual_evaluation",
+          "title": "令和7年度 行政評価レポート",
+          "url": "https://www.pref.kagawa.lg.jp/seisaku/sogo/wbymjf201005102310.html",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "26分野82施策と134指標の令和6年度進捗を評価。"
+        },
+        {
+          "id": "kagawa-budget-2026",
+          "category": "budget",
+          "title": "令和8年度当初予算と主要事業の概要",
+          "url": "https://www.pref.kagawa.lg.jp/yosan/sogo/r8_tousyoyosan.html",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "総合計画と重点事業・予算を接続する入口。"
+        },
+        {
+          "id": "kagawa-project-evaluation-2025",
+          "category": "project_evaluation",
+          "title": "令和7年度 行政評価レポート 施策の実施状況",
+          "url": "https://www.pref.kagawa.lg.jp/seisaku/sogo/wbymjf201005102310.html",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "施策評価と事務事業の進捗管理を同一調書で公開。"
+        }
+      ]
+    },
+    {
+      "prefecture_code": "40",
+      "name": "福岡県",
+      "anchor_status": "reviewed_reference",
+      "numeric_target_status": "reviewed",
+      "evidence_paths": [
+        "data/reviewed/fukuoka_policy_kpis.json",
+        "data/evidence/fukuoka_policy_kpi_evidence.json"
+      ],
+      "sources": []
+    },
+    {
+      "prefecture_code": "47",
+      "name": "沖縄県",
+      "anchor_status": "source_indexed",
+      "numeric_target_status": "indexed",
+      "evidence_paths": [],
+      "sources": [
+        {
+          "id": "okinawa-21c-vision",
+          "category": "policy_plan",
+          "title": "新・沖縄21世紀ビジョン基本計画",
+          "url": "https://www.pref.okinawa.jp/kensei/shisaku/1014211/index.html",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "基本計画、実施計画、施策評価を束ねる公式入口。"
+        },
+        {
+          "id": "okinawa-midterm-implementation-2025-2027",
+          "category": "implementation_plan",
+          "title": "新・沖縄21世紀ビジョン実施計画（中期：令和7～9年度）",
+          "url": "https://www.pref.okinawa.jp/kensei/shisaku/1014211/1014230/1034436.html",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "現行中期実施計画。基本施策ごとの分割PDFと附属資料を掲載。"
+        },
+        {
+          "id": "okinawa-midterm-kpis",
+          "category": "kpi_source",
+          "title": "新・沖縄21世紀ビジョン実施計画 成果指標",
+          "url": "https://www.pref.okinawa.jp/kensei/shisaku/1014211/1014230/1034436.html",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "施策目的、成果指標、具体的取組と活動量を掲載。"
+        },
+        {
+          "id": "okinawa-pdca-2024-actual",
+          "category": "annual_evaluation",
+          "title": "沖縄県PDCA実施結果（対象年度：令和6年度）",
+          "url": "https://www.pref.okinawa.jp/kensei/shisaku/1014155/1014488.html",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "振興推進委員会資料として令和6年度取組のPDCA結果を掲載。"
+        },
+        {
+          "id": "okinawa-budget-2026",
+          "category": "budget",
+          "title": "令和8年度 予算資料及び当初予算編成方針",
+          "url": "https://www.pref.okinawa.jp/kensei/yosan/1015205/1015235.html",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "当初予算説明資料、要求額、編成方針を掲載。"
+        },
+        {
+          "id": "okinawa-basic-plan-evaluation-2026",
+          "category": "project_evaluation",
+          "title": "新・沖縄21世紀ビジョン基本計画 評価検証報告書",
+          "url": "https://www.pref.okinawa.jp/kensei/shisaku/1014211/1014223/1039989.html",
+          "status": "indexed",
+          "checked_at": "2026-07-21",
+          "note": "令和4～6年度の施策成果と課題を評価検証。個別事業評価と混同しない。"
+        }
+      ]
+    }
+  ]
+}

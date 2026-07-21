@@ -1,0 +1,12 @@
+{
+  "id": "miyagi-reviewed-policy-kpi-index",
+  "prefecture_code": "04",
+  "review_status": "reviewed",
+  "reviewed_target_group_count": 128,
+  "reviewed_indicator_series_count": 149,
+  "manifest_path": "data/catalog/miyagi_policy_review_manifest.json",
+  "source_index_path": "data/catalog/miyagi_indicator_source_index.json",
+  "catalog_path_pattern": "data/entities/policy/miyagi_kpi_catalog_*.json",
+  "evidence_path_pattern": "data/entities/policy/miyagi_kpi_*_evidence_packets.json",
+  "scope_note": "This is an aggregate index. Annual-result linkage and policy evaluation remain separate states."
+}

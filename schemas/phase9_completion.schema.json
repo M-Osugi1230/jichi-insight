@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.local/schemas/phase9_completion.schema.json",
+  "type": "object",
+  "required": ["id", "phase", "scope_version", "status", "updated_at", "counts", "gates", "scope_note"],
+  "properties": {
+    "id": {"const": "phase-9-remaining-prefecture-expansion"},
+    "phase": {"const": 9},
+    "scope_version": {"type":"string", "format":"date"},
+    "status": {"enum":["not_started", "in_progress", "verification_pending", "complete"]},
+    "updated_at": {"type":"string", "format":"date"},
+    "counts": {
+      "type":"object",
+      "required":["total_prefectures", "major_policy_plans_indexed", "numeric_target_entrances_indexed_or_reviewed", "evidence_backed_reviewed_prefectures", "remaining_phase9_prefectures", "phase9_prefectures_with_numeric_targets_indexed", "phase9_prefectures_with_reviewed_numeric_targets"],
+      "properties": {
+        "total_prefectures":{"const":47},
+        "major_policy_plans_indexed":{"type":"integer", "minimum":0, "maximum":47},
+        "numeric_target_entrances_indexed_or_reviewed":{"type":"integer", "minimum":0, "maximum":47},
+        "evidence_backed_reviewed_prefectures":{"type":"integer", "minimum":0, "maximum":47},
+        "remaining_phase9_prefectures":{"const":38},
+        "phase9_prefectures_with_numeric_targets_indexed":{"type":"integer", "minimum":0, "maximum":38},
+        "phase9_prefectures_with_reviewed_numeric_targets":{"type":"integer", "minimum":0, "maximum":38}
+      },
+      "additionalProperties":false
+    },
+    "gates": {
+      "type":"array",
+      "minItems":7,
+      "maxItems":7,
+      "items": {
+        "type":"object",
+        "required":["id", "status", "evidence_paths"],
+        "properties": {
+          "id":{"enum":["all_major_policy_plans_indexed", "all_major_numeric_targets_indexed", "published_numeric_evidence_coverage", "semantic_quality_tests", "plan_revision_and_history_tracking", "incomparable_ranking_exclusion", "nationwide_publication_and_smoke"]},
+          "status":{"enum":["pending", "in_progress", "passed"]},
+          "evidence_paths":{"type":"array", "minItems":1, "items":{"type":"string", "minLength":1}, "uniqueItems":true}
+        },
+        "additionalProperties":false
+      }
+    },
+    "scope_note":{"type":"string", "minLength":30}
+  },
+  "additionalProperties":false
+}

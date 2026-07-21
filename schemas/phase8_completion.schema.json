@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.local/schemas/phase8_completion.schema.json",
+  "type": "object",
+  "required": ["id", "phase", "scope_version", "status", "updated_at", "counts", "gates", "next_review_order", "scope_note"],
+  "properties": {
+    "id": {"const": "phase-8-regional-anchor-expansion"},
+    "phase": {"const": 8},
+    "scope_version": {"type": "string", "format": "date"},
+    "status": {"enum": ["not_started", "in_progress", "verification_pending", "complete"]},
+    "updated_at": {"type": "string", "format": "date"},
+    "counts": {
+      "type": "object",
+      "required": ["regional_anchors", "anchors_with_plan_and_kpi_entrances", "anchors_with_six_category_source_map", "anchors_with_reviewed_numeric_targets", "anchors_with_published_prefecture_pages", "anchors_pending_numeric_target_review"],
+      "properties": {
+        "regional_anchors": {"const": 9},
+        "anchors_with_plan_and_kpi_entrances": {"type": "integer", "minimum": 0, "maximum": 9},
+        "anchors_with_six_category_source_map": {"type": "integer", "minimum": 0, "maximum": 9},
+        "anchors_with_reviewed_numeric_targets": {"type": "integer", "minimum": 0, "maximum": 9},
+        "anchors_with_published_prefecture_pages": {"type": "integer", "minimum": 0, "maximum": 9},
+        "anchors_pending_numeric_target_review": {"type": "integer", "minimum": 0, "maximum": 9}
+      },
+      "additionalProperties": false
+    },
+    "gates": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "required": ["id", "status", "evidence_paths"],
+        "properties": {
+          "id": {"enum": ["plan_and_numeric_target_entrances", "six_category_source_discovery", "evidence_packet_review", "semantic_preservation", "published_pages_and_production_smoke"]},
+          "status": {"enum": ["pending", "in_progress", "passed"]},
+          "evidence_paths": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}, "uniqueItems": true}
+        },
+        "additionalProperties": false
+      }
+    },
+    "next_review_order": {
+      "type": "array",
+      "prefixItems": [{"const": "13"}, {"const": "23"}, {"const": "27"}, {"const": "34"}, {"const": "37"}, {"const": "47"}],
+      "minItems": 6,
+      "maxItems": 6
+    },
+    "scope_note": {"type": "string", "minLength": 20}
+  },
+  "additionalProperties": false
+}
