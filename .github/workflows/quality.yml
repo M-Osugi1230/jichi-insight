@@ -50,6 +50,7 @@ jobs:
       - name: Commit canonical data
         if: steps.required.outputs.generate == 'true'
         run: |
+          set +e
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/reviewed/kagawa_extended_plan_indicators_part*.json \
@@ -57,7 +58,17 @@ jobs:
             data/evidence/kagawa_extended_plan_indicator_evidence_part*.json \
             data/catalog/kagawa_extended_plan_indicator_review_manifest.json
           git commit -m "Generate Kagawa extended-plan indicator catalog"
-          git push origin HEAD:agent/kagawa-extended-plan-indicators
+          git push origin HEAD:agent/kagawa-extended-plan-indicators 2>&1 | tee kagawa-push.log
+          status=${PIPESTATUS[0]}
+          exit "$status"
+      - name: Upload Kagawa push diagnostics
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kagawa-push-diagnostics
+          path: kagawa-push.log
+          if-no-files-found: ignore
+          retention-days: 7
 
   repository:
     name: Repository and data
