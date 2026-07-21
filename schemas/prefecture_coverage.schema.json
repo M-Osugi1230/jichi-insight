@@ -37,7 +37,7 @@
           "prefecture_code": {"$ref": "#/$defs/prefectureCode"},
           "title": {"type": "string", "minLength": 1},
           "url": {"type": "string", "format": "uri", "pattern": "^https://"},
-          "source_kind": {"enum": ["comprehensive_plan", "long_term_vision", "regional_strategy", "governance_framework", "plan_index"]},
+          "source_kind": {"enum": ["comprehensive_plan", "long_term_vision", "regional_strategy", "annual_policy_portfolio", "governance_framework", "plan_index"]},
           "plan_status": {"enum": ["current_confirmed", "current_review_required"]},
           "review_status": {"enum": ["indexed", "reviewed", "verified"]},
           "verified_at": {"type": "string", "format": "date"}
