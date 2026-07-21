@@ -49,9 +49,8 @@ def test_nationwide_queue_preserves_reference_wave_and_active_work():
     assert wave1_codes == {"04", "13", "23", "27", "34", "37", "47"}
 
 
-def test_nationwide_queue_separates_source_review_from_deep_review():
+def test_all_remaining_prefectures_advance_to_source_inventory():
     queue = load(QUEUE_PATH)
-    by_code = {item["prefecture_code"]: item for item in queue["items"]}
     status_counts = {
         status: sum(item["status"] == status for item in queue["items"])
         for status in [
@@ -64,20 +63,9 @@ def test_nationwide_queue_separates_source_review_from_deep_review():
     assert status_counts == {
         "reviewed_reference": 2,
         "active_review": 1,
-        "indexed_queue": 41,
-        "source_review_required": 3,
+        "indexed_queue": 44,
+        "source_review_required": 0,
     }
-
-    review_required = {
-        code
-        for code, item in by_code.items()
-        if item["status"] == "source_review_required"
-    }
-    assert review_required == {"29", "39", "41"}
-    assert all(
-        by_code[code]["next_gate"] == "current_plan_confirmation"
-        for code in review_required
-    )
     assert all(
         item["next_gate"] == "source_inventory"
         for item in queue["items"]
@@ -92,15 +80,18 @@ def test_nationwide_queue_and_coverage_quality_states_agree():
 
     review_required = set(coverage["current_plan_review_required_codes"])
     reviewed = set(coverage["reviewed_prefecture_codes"])
+    confirmed = set(coverage["current_plan_confirmed_codes"])
 
+    assert review_required == set()
     assert {
         code
         for code, item in by_code.items()
         if item["status"] == "source_review_required"
-    } == review_required
+    } == set()
     assert {
         code
         for code, item in by_code.items()
         if item["status"] == "reviewed_reference"
     } == reviewed
+    assert confirmed == {item["prefecture_code"] for item in queue["items"]}
     assert all(item["next_action"].strip() for item in queue["items"])
