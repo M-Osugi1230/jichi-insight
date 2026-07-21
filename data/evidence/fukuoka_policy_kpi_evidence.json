@@ -1,0 +1,14 @@
+{
+  "id": "fukuoka-policy-kpi-evidence-index",
+  "prefecture_code": "40",
+  "subject_type": "policy_target",
+  "review_status": "reviewed",
+  "reviewed_target_count": 118,
+  "policy_direction_evidence_path": "data/entities/policy/fukuoka_prefecture_policy_direction_evidence_packets.json",
+  "target_evidence_path_pattern": "data/entities/policy/fukuoka_prefecture_initiative_*_target_evidence_packet.json",
+  "example_evidence_paths": [
+    "data/entities/policy/fukuoka_prefecture_initiative_01_target_evidence_packet.json",
+    "data/entities/policy/fukuoka_prefecture_initiative_23_target_evidence_packet.json"
+  ],
+  "scope_note": "This aggregate index does not replace initiative-level Evidence Packets."
+}
