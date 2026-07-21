@@ -57,7 +57,18 @@ jobs:
           retention-days: 7
 
       - name: Lint Python
-        run: ruff check scripts tests
+        run: |
+          set -o pipefail
+          ruff check scripts tests 2>&1 | tee ruff.log
+
+      - name: Upload Python lint diagnostics
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: python-lint-diagnostics
+          path: ruff.log
+          if-no-files-found: ignore
+          retention-days: 7
 
   web:
     name: Web
