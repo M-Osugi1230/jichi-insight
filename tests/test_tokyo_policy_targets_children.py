@@ -17,7 +17,10 @@ def load(path: Path):
 def validate(schema_name: str, instance):
     schema = load(ROOT / "schemas" / schema_name)
     errors = sorted(
-        Draft202012Validator(schema, format_checker=FormatChecker()).iter_errors(instance),
+        Draft202012Validator(
+            schema,
+            format_checker=FormatChecker(),
+        ).iter_errors(instance),
         key=lambda error: list(error.path),
     )
     assert not errors, [error.message for error in errors]
@@ -77,8 +80,14 @@ def test_tokyo_children_preserves_semantic_boundaries():
     }
 
     municipality_targets = [items[7], items[8]]
-    assert all(item["population_scope_original"] == "東京都内62区市町村" for item in municipality_targets)
-    assert all(item["series"][0]["values"][-1]["operator"] == "maintain" for item in municipality_targets)
+    assert all(
+        item["population_scope_original"] == "東京都内62区市町村"
+        for item in municipality_targets
+    )
+    assert all(
+        item["series"][0]["values"][-1]["operator"] == "maintain"
+        for item in municipality_targets
+    )
 
 
 def test_tokyo_source_index_and_manifest_counts_match_catalog():
@@ -91,7 +100,12 @@ def test_tokyo_source_index_and_manifest_counts_match_catalog():
     assert index["page_count"] == 60
     assert index["indexed_page_count"] == 60
     assert [page["page_number"] for page in index["pages"]] == list(range(1, 61))
-    assert [page["page_number"] for page in index["pages"] if page["review_status"] == "reviewed"] == [1, 2]
+    reviewed_pages = [
+        page["page_number"]
+        for page in index["pages"]
+        if page["review_status"] == "reviewed"
+    ]
+    assert reviewed_pages == [1, 2]
     assert manifest["reviewed_target_group_count"] == reviewed_groups == 8
     assert manifest["reviewed_indicator_series_count"] == reviewed_series == 9
     assert manifest["evidence_packet_count"] == 8
