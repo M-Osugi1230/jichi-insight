@@ -1,0 +1,39 @@
+name: Okinawa Indicator Audit
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - .github/workflows/okinawa_indicator_audit.yml
+      - scripts/audit_okinawa_indicator_tables.py
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    if: github.head_ref == 'agent/okinawa-midterm-indicator-review'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install PDF extraction dependency
+        run: python -m pip install pdfplumber==0.11.9
+      - name: Download official Okinawa appendix
+        run: |
+          curl --fail --location --retry 4 --output /tmp/okinawa-appendix.pdf \
+            https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/034/436/7_tyukijisshikeikaku_r2.pdf
+          test "$(stat -c%s /tmp/okinawa-appendix.pdf)" -gt 500000
+      - name: Audit indicator tables
+        run: |
+          python scripts/audit_okinawa_indicator_tables.py \
+            /tmp/okinawa-appendix.pdf artifacts/okinawa-indicator-audit.json
+      - name: Upload audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: okinawa-indicator-audit
+          path: artifacts/okinawa-indicator-audit.json
+          retention-days: 7
