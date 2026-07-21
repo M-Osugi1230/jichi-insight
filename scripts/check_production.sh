@@ -66,6 +66,7 @@ routes=(
   "/municipalities/aichi/"
   "/municipalities/osaka/"
   "/municipalities/hiroshima/"
+  "/municipalities/kagawa/"
   "/municipalities/fukuoka-prefecture/"
   "/sources/"
   "/robots.txt"
@@ -110,11 +111,12 @@ check_content() {
 check_content "/municipalities/" \
   "47都道府県を、資料の深さから探す。" \
   "全国の入口整備" \
-  "いま、深く読める7都道府県。" \
+  "いま、深く読める8都道府県。" \
   "東京都の政策目標を見る" \
   "愛知県の進捗指標を見る" \
   "大阪府の政策指標を見る" \
   "広島県の成果指標を見る" \
+  "香川県の計画指標を見る" \
   "政策計画入口" \
   "確認したい資料の深さ" \
   "都道府県と、確認できる資料。" \
@@ -196,6 +198,15 @@ check_content "/municipalities/hiroshima/" \
   "62指標を、分野・値・年度・出典から探す。" \
   "政策評価 未判定"
 
+check_content "/municipalities/kagawa/" \
+  "香川県の135指標を、延長前と延長後の目標から読む。" \
+  "Reviewed指標" \
+  "掲載位置" \
+  "目標更新" \
+  "計画延長を、単なる年度の置換にしない。" \
+  "135指標を、名称・値・変更状態から探す。" \
+  "政策評価 未判定"
+
 check_content "/municipalities/fukuoka-prefecture/" \
   "普通会計" \
   "まだ評価していないこと"
@@ -205,6 +216,6 @@ check_content "/data-quality/" \
   "データ不足を、点数で埋めません。"
 
 printf '\nPhase 7 nationwide registry checks: PASS\n' >> "$REPORT"
-printf 'Phase 8 Tokyo, Aichi, Osaka and Hiroshima reviewed publication checks: PASS\n' >> "$REPORT"
+printf 'Phase 8 Tokyo, Aichi, Osaka, Hiroshima and Kagawa reviewed publication checks: PASS\n' >> "$REPORT"
 printf 'Result: PASS\n' >> "$REPORT"
 cat "$REPORT"
