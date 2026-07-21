@@ -12,7 +12,9 @@ QUEUE_PATH = ROOT / "data/catalog/phase9_execution_queue.json"
 TOKYO_MANIFEST_PATH = ROOT / "data/catalog/tokyo_policy_target_review_manifest.json"
 AICHI_MANIFEST_PATH = ROOT / "data/catalog/aichi_policy_indicator_review_manifest.json"
 OSAKA_MANIFEST_PATH = ROOT / "data/catalog/osaka_beyond_expo_indicator_review_manifest.json"
-HIROSHIMA_MANIFEST_PATH = ROOT / "data/catalog/hiroshima_revised_vision_indicator_review_manifest.json"
+HIROSHIMA_MANIFEST_PATH = (
+    ROOT / "data/catalog/hiroshima_revised_vision_indicator_review_manifest.json"
+)
 
 
 def load(path: Path):
