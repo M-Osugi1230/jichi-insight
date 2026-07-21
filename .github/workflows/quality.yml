@@ -7,44 +7,13 @@ on:
       - main
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: quality-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  aichi-materialize:
-    name: Materialize Aichi integration
-    if: github.event_name == 'pull_request' && github.head_ref == 'agent/aichi-policy-indicators-complete'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: agent/aichi-policy-indicators-complete
-          fetch-depth: 0
-      - name: Apply integration patch
-        env:
-          PATCH_GZ_B64: H4sIAI+OX2oC/9VaeXMTRxb/X5+iayoVo4piGfkINrazbO5KKlAh/wElxlLbnrU0o8xINi5ClSVxmGADIWAOmyUkxnY4ZAIsMSaYwLXYCU4tpRcx9VXRaJ7pnpn3e+7b+36dHl8sBBY2SgU8MTItS5oISyyoHCtQCYtiLkJw+TJrVi7D0pkB7gBg2SEUnvhkp9pzq3a0PJm0Jc0UETucgJT9OTuH0XFO1PR9c2xrWkzo0GU5XhYYVVIzh/ToHQZahp3gkGEPJfG3yEgIQlO2z5VjOlsZaf5QhPP4QxPH+sYtvtkhMH56cjHPU5zt2cp5Is90udIuJvzgb79KqcvwCNzsv+Yzf2/Wq5/E/P6tT1WmNvYIzB2kDPHYQZy15eTSqRTFrgeMBN9jL1uxgcWiNG1Q0HQmLrgIApmslkrPhj1hBmypiyigZndPVxFlgiYirEdrtH1xr7BxIK21vcF2X1RxN78dqE/KMnoH9Z1WFkbLQ7FRr4chM6T9TEQOX+r0CZuBzSuZ/SQ9FE9LejLq9jkSqzOj/mzQv8j6M67bh9Uj3xCKUNiTHD4CtOwFj1hH7xCboMgzxgDeu7WDQBWJw1j4O+Q9RkrAXjT76EZ2G3Q7jaIsuAtPAOyAP5yAs5h0GxKfrfgaGeZRwR7sHkVPFqZFqRGEDLXLJbxsUFdJ5XJNOXSWrfjPv/f4bFUX+//tbk5nN8d3fH1+Tb+KVvO5d3P1m+ufglt/mu3N8Vm+/wv/QozL4EaMkZyTV7S+HOUnfgvAEX8NYQOkg++CKgPUZWBytmghHRIgAnYbA2gV3HSwNLBXTYIaZn8+p8d98wRCA9UujKo4vsXu3NTYyfP9vxtdsfcuPNzThTp2Oe4qCT1biXkwKSnWzpaRjzoymJ3XhHwz5NIqM7GO0rPthC3hdeW0US+H5hrRQkzqzEBrZisw7TdMj18p7roEqArJCx6vNyj5peXn06cgijPrLAfv2pz8WlvzvXlMXtX66p0eL788u58p9X1y2w5+xQY8WrAXvGJ/Qh3w2R0bXwEMiAojP75aXTt1AfuLyS2fHixNnLp9fX5WVUtxKk3LkvB8Ih4BQvEo+E8dVNU0JmBCHaYGQwU7djGmXCNZhkwfflZlzfjt8sDzrJDArxBTyl1JbVGsLPrjIbY1x8q0jo0P+XR4YY7D/QIXYKIb91X9ocMxf8x/YtJYp13+7f1vPbzFi+THF57f/LPj5z+TtIywwC3p6+soHFG+isWl71oVrtn4R7c/2W04+f2TuRuXvzcPT0auXKcsO/cxeXI+DH5Jzgxv5y9DqZrfn5S2f77RQv+D2Vtnsnx89ulx1gu/DHGePdydxKXyRv+jv7wdTQ9XEq+eWfSwu+vL5svH37ZPWw/DKUMUrtMd1WUN7x6nlf8+jhe+Xq6/eRG/brePdO36T7k8/LB/s/efTJ4PH0+u2Tx9vU7/1QDO8OvWlZ8/+rPy43j17PavBV9f/L7hffL5eI/ofVfvu1cL4/3D89yU0/PfBZ3t+PHg2e/Jo8PX8/09PTn6XLxT1geC/UJ5nlh0+eP5zwxNfyZ9H53t/XsXuIcO9ifn+OuIxsNn5+3vvrx+xQGlyhsRFsMMZJeOQFpwpK5OiGTfx41mzja2K13TjN9OfM9P7nFj7a3fuUIHf9DTka1wZVwd5xvhJ6sWhfJ5ud5Frjr0FmfKOllc34UFx2cNdDXrc7kj8OzDcD3+eKjzo8+Yl/nbW1tX/+vvvzhL/QL4JxwzZ5kOYdNkCI8Z64Aq2VLlAMiDUwOdaohX1ElhsKDD9yDgn7d/+v3H7kb9jhvfqz7lk5m1eSy4vXH11fntmWOHHG03X+CNJjo4qKHU2o3vsqE13Ly3TkVU+/9FBIgWf1NkdtzG3iQfh5BCzqwR2CSMIGBVsXAyMG8FAa+wH0tbIpH8I1qecZWoSvIfFCGZ2cpa22RyaAUNhiMkKzPq2s5TTfnbPV95fTk+M3R38yOr95Z+rRWFc88ioJNTU50Qj5t1oMgff77d1VNX/O/daXnEe6ijKtsn9G3GljwZXCXdCKfQpvf+8eJVS8yX6Mf69WKrTNdPeHPcz0mEkD7ur+rVZvjvf1z9djx5lVHoTI5G/c7kBzxyV0YUx4te2wxNtbvcHuvhbbF1P+6X/cf/gGQV91+s55m0rjC1f1TKqn5XrrtweJYJlVXE1pbKSq+YKydjs9KyA2mfMnZTFWw31NK3rEF6Q3AwoR3w3o33xTbBjMSxy5bOfgK25CVV4X9zQkklHTGi5sW6dNltK1D+B3qlLYT9VeYR13sv5IUzyvPghhkm1Ybg+UT/9mBU86Opy5UwtVF+wS6Nm1hw9CSw66GdMqa+02Ll2fMH7CU+G5xn1v1deLe+E/R+7FhYYCDnq6QEgTTmDcRmhFUaLPZDsYH5q2sL5qwXH0/gc8vJi5cLnrFDgY/NvwZ4z9GZS5dXW9qVnxr+C9j/Dqg/6Yp58bUtTI3S5tjGw0bA8NDUYMsQb4DteXXuM54vlvLg/DuS9/RPT/5ijGxb6dcxp9a5cXoOf7fTfo/dDaT4yNdHbfXlcnhn3jPOoV00iH2VtXz5mRYOn6VHNcrSQYwM9PyPB3cw3Bo5DLtjNkGZacv2bjTZQZBYPzcHlO5dR52fdtmhQ6XTfiY4cXRpxfRwvpDdwd+O7Vux/w1bmfF5/oYe+9Lhk51gXfr1Xh9M+j8bxjVLpsMWn4vHHxQpN1cPyzeukXNz9UwxWzfvriV1SYvL8RR6QzuP3bbFynV0cbGx09pko75s1jmPa34vqtZYKJ1Ff8jngk+LW/7W9wy0kn8tR87DHGtQEWmwTzNXaxKfZs0JrEn8x3E74tEYVSXyiK6YTYvo3S5bbjwLFNnFZYztdoOkiGmt1G4d28pA0NoIUKyPxFAY2C9BgzV+0wjbBu1YcrT/wd4lZjViY0wcXzhPK5H5nTt3Xf7srm2WaoJaY0W/B0N+kLKDvEuuES9rfvNOmfY3c0TfyNbC6RQnD4ZzjzpCUaRPI5kDuUX1/90GWEp0aOjnayZj9v79siFkYrThtq6e5JtJWjzXjxEGBrfvFryvUnvzG/XT6sbQ+q5E0rX4GlP5To0zTWBdmsw6uDHw3d4rO7phvDcGLM7oZb9hj4akHV8dDM2Dw+/sHPeX9Yf8BRPTsDI0iWnyryjfvt/Es0r2GdnZsJ9+nXEKFJ8yRvUDuTeW0d11g7nqNX5stCFHjGXgS7B3ZwLZVkCEZ0UK3MuE/6DlFidUycG/sGZ2Gw3gHmU9ItxHn4lB8RuhkttjdZ4qAM9KEx5DfcJYDWqsiYsvz1tcs4kmp7A9Zz9Gh0LZ7LirhfLx6lTcCG7jOcRgm9YQeqm5wOd+R44uEPGz6Y9/y7l1Ns+Tq0Jf3MW75v7x+M3xkcffy0PvX3l49/vzw6b35utXn9C/O+cVvsHf4nBEZDHbQrDe9eQz87i2fkHFhsE18nBIM3Z4+MnvDyy0efvE6+Gf8kx3iCZn3CyZhlrwhRS0dPW1yFsbsM1Sjth/5S5oXFNtsW1TKwmtB2wE1G8APSWvTZhH+NNsDPwkU0x1E97aPMtZ8eEhzLezNrcyQNDV63rsC1OlgtHSk0HnCbD73NFr2tveRk+7+1lqfR8jp4PJyf8I/SjW9X2B4ebZp0zPf7SbLJevvbtHw64puW1Tbi3Q1dvfZvORhMX7/PdVC1tNO0ohTxZq+LHzHvB/X+qh92FR2fnl7ZGf8e3Yr9QM7xPY8HpUWXAgAA
-        run: |
-          python - <<'PY'
-          import base64, gzip, os
-          from pathlib import Path
-          target = Path("scripts/_aichi_integration_patch.py")
-          target.write_bytes(gzip.decompress(base64.b64decode(os.environ["PATCH_GZ_B64"])))
-          PY
-          python scripts/_aichi_integration_patch.py
-      - name: Remove temporary workflow and commit
-        run: |
-          rm scripts/_aichi_integration_patch.py
-          rm .github/workflows/aichi_integration_patch.yml
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -f data/reviewed/aichi_policy_indicators.json
-          git add apps data docs scripts tests .github/workflows/aichi_integration_patch.yml
-          git commit -m "Materialize Aichi integration"
-          git push origin HEAD:agent/aichi-policy-indicators-complete
-
   repository:
     name: Repository and data
     runs-on: ubuntu-latest
