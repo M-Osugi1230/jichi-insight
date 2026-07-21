@@ -1,0 +1,44 @@
+.explorer { margin-top: 42px; }
+.controls { background: #ece8dd; display: grid; gap: 18px; grid-template-columns: minmax(0, 1.4fr) minmax(240px, 0.6fr); padding: 24px; }
+.searchField, .areaField { display: grid; gap: 8px; }
+.searchField label, .areaField label { color: #42505b; font-size: 0.66rem; font-weight: 850; }
+.searchField input, .areaField select { background: #fffefa; border: 1px solid #b8b4aa; border-radius: 0; color: #17232c; font: inherit; min-height: 48px; padding: 0 13px; width: 100%; }
+.searchField input:focus, .areaField select:focus { outline: 3px solid rgb(62 93 145 / 24%); outline-offset: 1px; }
+.resultBar { align-items: center; border-bottom: 1px solid #d7d3c8; display: flex; justify-content: space-between; margin: 26px 0 18px; padding-bottom: 14px; }
+.resultBar p { align-items: baseline; display: flex; flex-wrap: wrap; gap: 9px; margin: 0; }
+.resultBar strong { font-size: 1.65rem; }
+.resultBar p span, .resultBar > span { color: #68737b; font-size: 0.66rem; }
+.resultBar button, .emptyState button { background: none; border: 0; color: #286f9f; cursor: pointer; font-size: 0.69rem; font-weight: 850; padding: 7px; text-decoration: underline; text-underline-offset: 4px; }
+.cardGrid { display: grid; gap: 13px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.card { background: #fffefa; border: 1px solid #d7d3c8; border-radius: 6px 27px 6px 6px; display: flex; flex-direction: column; min-width: 0; padding: 23px; }
+.cardTop { align-items: center; display: flex; gap: 12px; justify-content: space-between; }
+.cardTop > span { color: #3e5d91; font-size: 0.65rem; font-weight: 900; }
+.measure { color: #68737b; font-size: 0.64rem; font-weight: 800; margin: 30px 0 7px; }
+.card h3 { font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; font-size: clamp(1.2rem, 2vw, 1.55rem); margin: 0 0 18px; }
+.targetValues { border-left: 4px solid #d27b50; display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 15px; padding-left: 12px; }
+.targetValues strong { background: #f4e3da; font-size: 0.73rem; padding: 6px 8px; }
+.flags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+.flags span { border: 1px solid #c7c2b7; color: #42505b; font-size: 0.59rem; font-weight: 800; padding: 4px 7px; }
+.facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 0 0 15px; }
+.facts div { border-top: 1px solid #d7d3c8; padding: 10px 0; }
+.facts div:nth-child(even) { padding-left: 12px; }
+.facts dt { color: #68737b; font-size: 0.57rem; }
+.facts dd { font-size: 0.68rem; font-weight: 750; margin: 4px 0 0; overflow-wrap: anywhere; }
+.sourceText { border-top: 1px solid #d7d3c8; margin-top: auto; padding-top: 12px; }
+.sourceText summary { color: #286f9f; cursor: pointer; font-size: 0.66rem; font-weight: 850; }
+.sourceText p { color: #42505b; font-size: 0.67rem; white-space: pre-line; }
+.card footer { border-top: 1px solid #d7d3c8; display: flex; flex-wrap: wrap; gap: 7px 14px; margin-top: 16px; padding-top: 14px; }
+.card footer span { color: #68737b; font-size: 0.57rem; }
+.emptyState { background: #ece8dd; padding: 50px 25px; text-align: center; }
+.emptyState p { margin: 0 0 12px; }
+
+@media (max-width: 760px) {
+  .controls, .cardGrid { grid-template-columns: 1fr; }
+  .resultBar { align-items: flex-start; gap: 10px; }
+}
+
+@media (max-width: 480px) {
+  .controls { padding: 18px; }
+  .facts { grid-template-columns: 1fr; }
+  .facts div:nth-child(even) { padding-left: 0; }
+}

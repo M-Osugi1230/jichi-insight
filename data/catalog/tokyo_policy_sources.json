@@ -1,1 +1,53 @@
-{"id":"tokyo-policy-source-inventory","municipality_key":"tokyo-metropolis","prefecture_code":"13","updated_at":"2026-07-21","records":[{"id":"tokyo-2050-strategy","category":"policy_plan","title":"2050東京戦略 ～東京 もっとよくなる～","url":"https://www.seisakukikaku.metro.tokyo.lg.jp/basic-plan/2050-tokyo","publication_date":"2025-03-28","review_status":"indexed","role_note":"都の総合計画。2035年に向けた政策体系。"},{"id":"tokyo-policy-targets-2026","category":"kpi_source","title":"2050東京戦略 政策目標一覧（令和8年1月）","url":"https://www.seisakukikaku.metro.tokyo.lg.jp/documents/d/seisakukikaku/2050tokyo-seisakumokuhyo2026","publication_date":"2026-01-30","review_status":"partially_reviewed","role_note":"60ページ。全ページ位置索引済み、PDFページ1-2の子供分野をReviewed。"},{"id":"tokyo-action-plan-2026-2028","category":"implementation_plan","title":"2050東京戦略 3か年のアクションプラン（令和8～10年度）","url":"https://www.seisakukikaku.metro.tokyo.lg.jp/basic-plan/2050-tokyo","publication_date":"2026-01-30","review_status":"indexed","role_note":"目標を実行事業へ接続する現行アクションプラン。"},{"id":"tokyo-policy-review-2025","category":"annual_evaluation","title":"2050東京戦略 政策レビュー 2025","url":"https://www.seisakukikaku.metro.tokyo.lg.jp/basic-plan/2050-tokyo","publication_date":"2025-08-01","review_status":"indexed","role_note":"2024年度の事業実施状況。現行2026年政策目標一覧とは版を分けて接続する。"},{"id":"tokyo-action-plan-progress-2025","category":"annual_evaluation","title":"3か年のアクションプラン取組状況一覧（2025年8月）","url":"https://www.seisakukikaku.metro.tokyo.lg.jp/documents/d/seisakukikaku/policy-review_2025_actionplan","publication_date":"2025-08-01","review_status":"indexed","role_note":"2025年時点のアクションプラン進捗。2026-2028版の目標値へ自動接続しない。"}]}
+{
+  "id": "tokyo-policy-source-inventory",
+  "municipality_key": "tokyo-metropolis",
+  "prefecture_code": "13",
+  "updated_at": "2026-07-21",
+  "records": [
+    {
+      "id": "tokyo-2050-strategy",
+      "category": "policy_plan",
+      "title": "2050東京戦略 ～東京 もっとよくなる～",
+      "url": "https://www.seisakukikaku.metro.tokyo.lg.jp/basic-plan/2050-tokyo",
+      "publication_date": "2025-03-28",
+      "review_status": "indexed",
+      "role_note": "都の総合計画。2035年に向けた政策体系。"
+    },
+    {
+      "id": "tokyo-policy-targets-2026",
+      "category": "kpi_source",
+      "title": "2050東京戦略 政策目標一覧（令和8年1月）",
+      "url": "https://www.seisakukikaku.metro.tokyo.lg.jp/documents/d/seisakukikaku/2050tokyo-seisakumokuhyo2026",
+      "publication_date": "2026-01-30",
+      "review_status": "reviewed",
+      "role_note": "60ページ・25政策分野・304目標カードをEvidence付きでReviewed。詳細グラフ点列は子供分野のみ、年度実績は未接続。"
+    },
+    {
+      "id": "tokyo-action-plan-2026-2028",
+      "category": "implementation_plan",
+      "title": "2050東京戦略 3か年のアクションプラン（令和8～10年度）",
+      "url": "https://www.seisakukikaku.metro.tokyo.lg.jp/basic-plan/2050-tokyo",
+      "publication_date": "2026-01-30",
+      "review_status": "indexed",
+      "role_note": "目標を実行事業へ接続する現行アクションプラン。"
+    },
+    {
+      "id": "tokyo-policy-review-2025",
+      "category": "annual_evaluation",
+      "title": "2050東京戦略 政策レビュー 2025",
+      "url": "https://www.seisakukikaku.metro.tokyo.lg.jp/basic-plan/2050-tokyo",
+      "publication_date": "2025-08-01",
+      "review_status": "indexed",
+      "role_note": "2024年度の事業実施状況。現行2026年政策目標一覧とは版を分けて接続する。"
+    },
+    {
+      "id": "tokyo-action-plan-progress-2025",
+      "category": "annual_evaluation",
+      "title": "3か年のアクションプラン取組状況一覧（2025年8月）",
+      "url": "https://www.seisakukikaku.metro.tokyo.lg.jp/documents/d/seisakukikaku/policy-review_2025_actionplan",
+      "publication_date": "2025-08-01",
+      "review_status": "indexed",
+      "role_note": "2025年時点のアクションプラン進捗。2026-2028版の目標値へ自動接続しない。"
+    }
+  ]
+}

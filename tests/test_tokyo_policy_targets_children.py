@@ -26,7 +26,7 @@ def validate(schema_name: str, instance):
     assert not errors, [error.message for error in errors]
 
 
-def test_tokyo_children_catalog_and_manifest_are_schema_valid():
+def test_tokyo_children_catalog_and_complete_manifest_are_schema_valid():
     catalog = load(CATALOG_PATH)
     manifest = load(MANIFEST_PATH)
     index = load(INDEX_PATH)
@@ -35,7 +35,7 @@ def test_tokyo_children_catalog_and_manifest_are_schema_valid():
     validate("tokyo_policy_target_source_index.schema.json", index)
 
 
-def test_tokyo_children_review_has_contiguous_groups_and_series():
+def test_tokyo_children_detailed_review_has_contiguous_groups_and_series():
     catalog = load(CATALOG_PATH)
     items = catalog["items"]
     assert [item["target_group_number"] for item in items] == list(range(1, 9))
@@ -45,7 +45,7 @@ def test_tokyo_children_review_has_contiguous_groups_and_series():
     assert all(item["evaluation_status"] == "not_assessed" for item in items)
 
 
-def test_tokyo_children_evidence_covers_every_reviewed_group():
+def test_tokyo_children_evidence_covers_every_detailed_group():
     catalog = load(CATALOG_PATH)
     evidence = load(EVIDENCE_PATH)
     expected_subjects = {item["id"] for item in catalog["items"]}
@@ -90,25 +90,23 @@ def test_tokyo_children_preserves_semantic_boundaries():
     )
 
 
-def test_tokyo_source_index_and_manifest_counts_match_catalog():
+def test_tokyo_source_index_is_complete_while_children_remains_detailed_layer():
     catalog = load(CATALOG_PATH)
     manifest = load(MANIFEST_PATH)
     index = load(INDEX_PATH)
-    reviewed_groups = len(catalog["items"])
-    reviewed_series = sum(len(item["series"]) for item in catalog["items"])
+    detailed_groups = len(catalog["items"])
+    detailed_series = sum(len(item["series"]) for item in catalog["items"])
 
     assert index["page_count"] == 60
     assert index["indexed_page_count"] == 60
+    assert index["reviewed_page_count"] == 60
     assert [page["page_number"] for page in index["pages"]] == list(range(1, 61))
-    reviewed_pages = [
-        page["page_number"]
-        for page in index["pages"]
-        if page["review_status"] == "reviewed"
-    ]
-    assert reviewed_pages == [1, 2]
-    assert manifest["reviewed_target_group_count"] == reviewed_groups == 8
-    assert manifest["reviewed_indicator_series_count"] == reviewed_series == 9
-    assert manifest["evidence_packet_count"] == 8
+    assert all(page["review_status"] == "reviewed" for page in index["pages"])
+    assert manifest["reviewed_target_card_count"] == 304
+    assert manifest["card_evidence_packet_count"] == 304
+    assert manifest["detailed_reviewed_target_group_count"] == detailed_groups == 8
+    assert manifest["detailed_reviewed_indicator_series_count"] == detailed_series == 9
+    assert manifest["detailed_evidence_packet_count"] == 8
     assert manifest["reviewed_page_count"] + manifest["remaining_page_count"] == 60
     assert manifest["actual_linked_indicator_series_count"] == 0
     assert manifest["evaluation_assessed_target_group_count"] == 0

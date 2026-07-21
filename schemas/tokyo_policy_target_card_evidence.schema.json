@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.example/schemas/tokyo_policy_target_card_evidence.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "source_id",
+    "source_document_sha256",
+    "packet_count",
+    "packets",
+    "reviewed_at",
+    "review_status"
+  ],
+  "properties": {
+    "id": {
+      "const": "tokyo-policy-target-card-evidence-2026"
+    },
+    "source_id": {
+      "const": "tokyo-policy-targets-2026"
+    },
+    "source_document_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "packet_count": {
+      "const": 304
+    },
+    "packets": {
+      "type": "array",
+      "minItems": 304,
+      "maxItems": 304,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "subject_type",
+          "subject_id",
+          "source_id",
+          "source_page",
+          "source_card_bbox",
+          "claims",
+          "open_questions",
+          "detailed_series_status",
+          "actual_linkage_status",
+          "evaluation_status",
+          "review_status"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "subject_type": {
+            "const": "policy_target_card"
+          },
+          "subject_id": {
+            "type": "string",
+            "pattern": "^policy-target-tokyo-card-[0-9]{3}$"
+          },
+          "source_id": {
+            "const": "tokyo-policy-targets-2026"
+          },
+          "source_page": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 60
+          },
+          "source_card_bbox": {
+            "type": "array",
+            "minItems": 4,
+            "maxItems": 4,
+            "items": {
+              "type": "number"
+            }
+          },
+          "claims": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "field",
+                "statement",
+                "source_ids",
+                "location_note",
+                "decision",
+                "review_note"
+              ],
+              "properties": {
+                "field": {
+                  "type": "string"
+                },
+                "statement": {
+                  "type": "string"
+                },
+                "source_ids": {
+                  "type": "array",
+                  "items": {
+                    "const": "tokyo-policy-targets-2026"
+                  }
+                },
+                "location_note": {
+                  "type": "string"
+                },
+                "decision": {
+                  "const": "accepted"
+                },
+                "review_note": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "open_questions": {
+            "type": "array",
+            "maxItems": 0
+          },
+          "detailed_series_status": {
+            "enum": [
+              "reviewed",
+              "not_normalized"
+            ]
+          },
+          "actual_linkage_status": {
+            "const": "not_linked"
+          },
+          "evaluation_status": {
+            "const": "not_assessed"
+          },
+          "review_status": {
+            "const": "reviewed"
+          }
+        }
+      }
+    },
+    "reviewed_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "review_status": {
+      "const": "complete"
+    }
+  }
+}

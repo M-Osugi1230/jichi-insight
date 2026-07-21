@@ -1,1 +1,111 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://jichi-insight.example/schemas/tokyo_policy_target_review_manifest.schema.json","type":"object","required":["id","prefecture_code","source_page_count","indexed_page_count","reviewed_page_count","reviewed_target_group_count","reviewed_indicator_series_count","evidence_packet_count","remaining_page_count","status","updated_at"],"properties":{"id":{"const":"tokyo-policy-target-review-manifest"},"prefecture_code":{"const":"13"},"municipality_key":{"const":"tokyo-metropolis"},"source_id":{"const":"tokyo-policy-targets-2026"},"source_page_count":{"const":60},"indexed_page_count":{"const":60},"reviewed_page_count":{"type":"integer","minimum":0,"maximum":60},"reviewed_policy_area_count":{"type":"integer","minimum":0},"reviewed_target_group_count":{"type":"integer","minimum":0},"reviewed_indicator_series_count":{"type":"integer","minimum":0},"evidence_packet_count":{"type":"integer","minimum":0},"actual_linked_indicator_series_count":{"const":0},"evaluation_assessed_target_group_count":{"const":0},"remaining_page_count":{"type":"integer","minimum":0},"reviewed_scope":{"type":"array","items":{"type":"string"}},"next_review_scope":{"type":"string"},"status":{"enum":["in_progress","complete"]},"updated_at":{"type":"string","format":"date"},"quality_note":{"type":"string"}},"additionalProperties":false}
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.example/schemas/tokyo_policy_target_review_manifest.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "prefecture_code",
+    "municipality_key",
+    "source_id",
+    "source_page_count",
+    "indexed_page_count",
+    "reviewed_page_count",
+    "reviewed_policy_area_count",
+    "reviewed_target_group_count",
+    "reviewed_target_card_count",
+    "reviewed_indicator_series_count",
+    "evidence_packet_count",
+    "card_evidence_packet_count",
+    "detailed_reviewed_target_group_count",
+    "detailed_reviewed_indicator_series_count",
+    "detailed_evidence_packet_count",
+    "actual_linked_indicator_series_count",
+    "evaluation_assessed_target_group_count",
+    "remaining_page_count",
+    "reviewed_scope",
+    "next_review_scope",
+    "status",
+    "updated_at",
+    "quality_note"
+  ],
+  "properties": {
+    "id": {
+      "const": "tokyo-policy-target-review-manifest"
+    },
+    "prefecture_code": {
+      "const": "13"
+    },
+    "municipality_key": {
+      "const": "tokyo-metropolis"
+    },
+    "source_id": {
+      "const": "tokyo-policy-targets-2026"
+    },
+    "source_page_count": {
+      "const": 60
+    },
+    "indexed_page_count": {
+      "const": 60
+    },
+    "reviewed_page_count": {
+      "const": 60
+    },
+    "reviewed_policy_area_count": {
+      "const": 25
+    },
+    "reviewed_target_group_count": {
+      "const": 304
+    },
+    "reviewed_target_card_count": {
+      "const": 304
+    },
+    "reviewed_indicator_series_count": {
+      "const": 9
+    },
+    "evidence_packet_count": {
+      "const": 304
+    },
+    "card_evidence_packet_count": {
+      "const": 304
+    },
+    "detailed_reviewed_target_group_count": {
+      "const": 8
+    },
+    "detailed_reviewed_indicator_series_count": {
+      "const": 9
+    },
+    "detailed_evidence_packet_count": {
+      "const": 8
+    },
+    "actual_linked_indicator_series_count": {
+      "const": 0
+    },
+    "evaluation_assessed_target_group_count": {
+      "const": 0
+    },
+    "remaining_page_count": {
+      "const": 0
+    },
+    "reviewed_scope": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "string"
+      }
+    },
+    "next_review_scope": {
+      "type": "string"
+    },
+    "status": {
+      "const": "complete"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "quality_note": {
+      "type": "string"
+    }
+  }
+}
