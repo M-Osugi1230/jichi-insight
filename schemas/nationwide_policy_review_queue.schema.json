@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.example/schemas/nationwide_policy_review_queue.schema.json",
+  "title": "Jichi Insight nationwide policy review queue",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "updated_at", "active_prefecture_code", "completed_prefecture_codes", "items"],
+  "properties": {
+    "id": {"const": "nationwide-policy-review-queue"},
+    "updated_at": {"type": "string", "format": "date"},
+    "active_prefecture_code": {"$ref": "#/$defs/prefectureCode"},
+    "completed_prefecture_codes": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/prefectureCode"}
+    },
+    "items": {
+      "type": "array",
+      "minItems": 47,
+      "maxItems": 47,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["prefecture_code", "order", "wave", "status", "next_gate", "next_action"],
+        "properties": {
+          "prefecture_code": {"$ref": "#/$defs/prefectureCode"},
+          "order": {"type": "integer", "minimum": 0, "maximum": 46},
+          "wave": {"enum": ["reference", "wave1", "wave2"]},
+          "status": {"enum": ["reviewed_reference", "active_review", "indexed_queue", "source_review_required"]},
+          "next_gate": {"enum": ["actuals_linkage", "source_inventory", "current_plan_confirmation"]},
+          "next_action": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "prefectureCode": {"type": "string", "pattern": "^(0[1-9]|[1-3][0-9]|4[0-7])$"}
+  }
+}
