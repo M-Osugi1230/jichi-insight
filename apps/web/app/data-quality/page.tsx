@@ -75,15 +75,18 @@ export default function DataQualityPage() {
             <article className={styles.summaryCard}><span>宮城県政策資料</span><strong>{miyagiPolicyReviewStats.sources}</strong><p>うちReviewed済み{miyagiPolicyReviewStats.reviewedSources}件。評価原案は確定版と分離。</p></article>
             <article className={styles.summaryCard}><span>宮城県政策体系</span><strong>{miyagiPolicyReviewStats.directions}・{miyagiPolicyReviewStats.policies}・{miyagiPolicyReviewStats.measures}</strong><p>基本方向・政策・取組。復興取組{miyagiPolicyReviewStats.recoveryAreas}分野は別系統。</p></article>
             <article className={styles.summaryCard}><span>宮城県KPI位置</span><strong>{miyagiPolicyReviewStats.targetGroups}</strong><p>目標グループ。個別系列は{miyagiPolicyReviewStats.indicatorSeries}件、掲載{miyagiPolicyReviewStats.sourcePages}ページ。</p></article>
-            <article className={styles.summaryCard}><span>宮城県複数系列</span><strong>{miyagiPolicyReviewStats.multiSeriesGroups}</strong><p>追加系列{miyagiPolicyReviewStats.additionalSeries}件。位置は確認済み、本文はReviewed化中。</p></article>
-            <article className={styles.summaryCard}><span>宮城県Reviewed KPI</span><strong>{miyagiPolicyReviewStats.reviewedTargetGroups}</strong><p>柱1〜4・取組1〜15の系列{miyagiPolicyReviewStats.reviewedIndicatorSeries}件を一次資料と照合。</p></article>
+            <article className={styles.summaryCard}><span>宮城県複数系列</span><strong>{miyagiPolicyReviewStats.multiSeriesGroups}</strong><p>追加系列{miyagiPolicyReviewStats.additionalSeries}件。複数系列を独立目標へ水増しせず保持。</p></article>
+            <article className={styles.summaryCard}><span>宮城県Reviewed KPI</span><strong>{miyagiPolicyReviewStats.reviewedTargetGroups}</strong><p>柱1〜4・取組1〜18の全{miyagiPolicyReviewStats.reviewedIndicatorSeries}系列を一次資料と照合。</p></article>
             <article className={styles.summaryCard}><span>宮城県KPI Evidence</span><strong>{miyagiPolicyReviewStats.kpiEvidencePackets}</strong><p>Reviewed済み{miyagiPolicyReviewStats.reviewedTargetGroups}グループすべてにEvidence Packetを付与。</p></article>
+            <article className={styles.summaryCard}><span>宮城県・実績レビュー</span><strong>{snapshot.miyagiKpiActualReviewRecords}</strong><p>年度実績の対応を確認した系列。直接接続{snapshot.miyagiDirectActualLinks}、要確認{snapshot.miyagiActualLinksNeedingReview}。</p></article>
+            <article className={styles.summaryCard}><span>宮城県・年度実績</span><strong>{snapshot.miyagiAnnualResultRows}</strong><p>2021〜2024年度の実績行。旧評価目標と現行計画目標を分離。</p></article>
+            <article className={styles.summaryCard}><span>宮城県・実績Evidence</span><strong>{snapshot.miyagiActualEvidencePackets}</strong><p>全実績レビュー系列に根拠と比較注意を保存。</p></article>
             <article className={styles.summaryCard}><span>宮城県・後期末未設定</span><strong>{miyagiPolicyReviewStats.lateTargetsNotSet}</strong><p>取組KPIの「－」を0へ変換せず、後期末目標未設定として保持。</p></article>
             <article className={styles.summaryCard}><span>宮城県・累計KPI</span><strong>{miyagiPolicyReviewStats.cumulativeGroups}</strong><p>［累計］表記を単年度値へ変換しない。</p></article>
             <article className={styles.summaryCard}><span>宮城県・負値</span><strong>{miyagiPolicyReviewStats.negativeValues}</strong><p>経済成長率や全国平均との差の負値を欠損・エラーへ変換しない。</p></article>
             <article className={styles.summaryCard}><span>宮城県・非単調目標</span><strong>{miyagiPolicyReviewStats.decliningMidtermGroups}</strong><p>現況値より低い中期末目標も公式値のまま保持。</p></article>
             <article className={styles.summaryCard}><span>Reviewed基準実装</span><strong>{snapshot.waveOnePolicyReviewReferences}</strong><p>福岡県と北海道を全国展開のデータ・Evidence Packet基準として使用。</p></article>
-            <article className={styles.summaryCard}><span>Reviewed化作業中</span><strong>{snapshot.waveOnePolicyActiveReviews}</strong><p>宮城県は残る{miyagiPolicyReviewStats.remainingTargetGroups}グループ・{miyagiPolicyReviewStats.remainingIndicatorSeries}系列をReviewed化中。</p></article>
+            <article className={styles.summaryCard}><span>Reviewed化作業中</span><strong>{snapshot.waveOnePolicyActiveReviews}</strong><p>宮城県のKPI本文は全件完了。現在は取組16〜18の年度実績接続と要確認{snapshot.miyagiActualLinksNeedingReview}系列の追加照合中。</p></article>
             <article className={styles.summaryCard}><span>作業待ち</span><strong>{snapshot.waveOnePolicyQueued}</strong><p>資料構造と作業依存関係に基づき順番に着手。</p></article>
           </div>
         </section>

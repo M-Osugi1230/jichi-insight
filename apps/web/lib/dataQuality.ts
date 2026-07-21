@@ -15,6 +15,7 @@ import { fukuokaCityFinance } from "./fukuokaCityFinance";
 import { hokkaidoIndicatorReviewStats } from "./hokkaidoIndicators";
 import { hokkaidoPolicyHierarchyStats } from "./hokkaidoPolicies";
 import { kitakyushuFinance } from "./kitakyushuFinance";
+import { miyagiKpiActualStats } from "./miyagiActuals";
 import { nationwideCoverageStats } from "./nationwideCoverage";
 import { policyDirectionStats, policyInitiativeStats } from "./policies";
 import { waveOnePolicyReviewStats } from "./policyReviewQueue";
@@ -64,7 +65,7 @@ const indexedHokkaidoKpiSources = policySourceRecords.filter(
 );
 
 export const dataQualitySnapshot = {
-  updatedAt: "2026-07-16",
+  updatedAt: nationwideCoverageStats.updatedAt,
   pilotMunicipalities: municipalityKeys.length,
   nationwidePrefectures: nationwideCoverageStats.totalPrefectures,
   verifiedPrefectureOfficialEntries: nationwideCoverageStats.verifiedOfficialEntries,
@@ -133,6 +134,11 @@ export const dataQualitySnapshot = {
   hokkaidoIndicatorTarget: hokkaidoPolicyHierarchyStats.indicatorTarget,
   hokkaidoDuplicateInclusiveIndicatorRows:
     hokkaidoPolicyHierarchyStats.duplicateInclusiveIndicatorRows,
+  miyagiKpiActualReviewRecords: miyagiKpiActualStats.reviewedLinks,
+  miyagiDirectActualLinks: miyagiKpiActualStats.linkedSeries,
+  miyagiActualLinksNeedingReview: miyagiKpiActualStats.reviewNeededSeries,
+  miyagiAnnualResultRows: miyagiKpiActualStats.annualResultRows,
+  miyagiActualEvidencePackets: miyagiKpiActualStats.evidencePackets,
   reviewedPolicyInitiatives: policyInitiativeStats.reviewedInitiatives,
   reviewedPolicyTargets: allPolicyTargetStats.reviewedTargets,
   policyTargetsActualsLinked: allPolicyTargetStats.actualsLinked,
@@ -178,7 +184,7 @@ export const municipalityQuality: MunicipalityQuality[] = municipalityKeys.map((
 
 export const publicationGaps = [
   "事業別の予算・契約・執行・決算",
-  "KPIの年度実績と公式説明",
+  "未接続KPIの年度実績と公式説明",
   "公約原文と事業の根拠付き対応付け",
   "議会の議案・採決・修正・監視活動",
   "類似自治体比較と外部要因の検討",

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: "%s | Jichi Insight",
   },
   description:
-    "自治体の約束・予算・実行・成果を、一次資料に基づいてつなぐ自治体IR・行政アカウンタビリティ基盤。",
+    "住民が自治体を自分で評価できるよう、政策計画・予算・事業・年度実績・議会を一次資料からつなぐ公共データ基盤。",
   applicationName: "Jichi Insight",
   manifest: `${siteUrl}/manifest.webmanifest`,
   openGraph: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     siteName: "Jichi Insight",
     title: "Jichi Insight | 自治体インサイト",
     description:
-      "約束・予算・実行・成果を、一次資料に基づいてひとつにつなぐ。",
+      "自治体を、自分で確かめる。政策目標・予算・実行・成果を一次資料からつなぎます。",
   },
   robots: {
     index: true,
@@ -34,7 +34,7 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   colorScheme: "light",
-  themeColor: "#173f35",
+  themeColor: "#102e46",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {

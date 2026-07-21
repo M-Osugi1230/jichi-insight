@@ -15,23 +15,19 @@ root = Path.cwd()
 manifest = json.loads(
     (root / "data/catalog/miyagi_policy_review_manifest.json").read_text(encoding="utf-8")
 )
-queue = json.loads(
-    (root / "data/catalog/wave1_policy_review_queue.json").read_text(encoding="utf-8")
-)
-miyagi = next(item for item in queue["items"] if item["prefecture_code"] == "04")
 print(manifest["reviewed_target_group_count"])
 print(manifest["reviewed_indicator_series_count"])
-print(manifest["remaining_target_group_count"])
-print(manifest["remaining_indicator_series_count"])
-print(miyagi["next_action"])
+print(manifest["actual_linked_indicator_series_count"])
+print(manifest["actual_linkage_review_needed_series_count"])
+print(manifest["actual_result_row_count"])
 PY
 )
 
 REVIEWED_GROUPS="${MIYAGI_STATE[0]}"
 REVIEWED_SERIES="${MIYAGI_STATE[1]}"
-REMAINING_GROUPS="${MIYAGI_STATE[2]}"
-REMAINING_SERIES="${MIYAGI_STATE[3]}"
-NEXT_ACTION="${MIYAGI_STATE[4]}"
+LINKED_SERIES="${MIYAGI_STATE[2]}"
+REVIEW_NEEDED_SERIES="${MIYAGI_STATE[3]}"
+ANNUAL_ROWS="${MIYAGI_STATE[4]}"
 
 : > "$REPORT"
 printf 'Jichi Insight nationwide coverage production smoke\n' >> "$REPORT"
@@ -83,14 +79,13 @@ check_absent() {
 }
 
 check_page "/municipalities/" \
-  "全国47都道府県を、同じ品質段階で追う。" \
-  "公式入口確認済み" \
-  "現行計画確認済み" \
-  "Reviewedデータ公開" \
-  "宮城県${REVIEWED_GROUPS}目標を公開。" \
-  "先頭${REVIEWED_GROUPS}グループ・${REVIEWED_SERIES}系列をReviewed化しました。" \
-  "宮城県の${REVIEWED_GROUPS}目標を公開。未Reviewedの${REMAINING_GROUPS}目標も明示する。" \
-  "$NEXT_ACTION" \
+  "47都道府県を、資料の深さから探す。" \
+  "全国の入口整備" \
+  "いま、深く読める3都道府県。" \
+  "確認したい資料の深さ" \
+  "都道府県と、確認できる資料。" \
+  "直接接続" \
+  "対応要確認" \
   "北海道" "宮城県" "東京都" "愛知県" "大阪府" "広島県" "香川県" "福岡県" "沖縄県"
 
 check_absent "/municipalities/" "「未来の東京」戦略"
@@ -103,14 +98,17 @@ check_page "/municipalities/hokkaido/" \
   "達成率や政策評価は表示しません。"
 
 check_page "/municipalities/miyagi/" \
-  "宮城県の政策目標を、原文・期間・未設定までそのまま読む。" \
-  "公式の目標値No.1〜${REVIEWED_GROUPS}を本文・数値・単位・期間まで照合済み。" \
-  "目標1〜${REVIEWED_GROUPS}を、政策上の所属と4つの時点から確認する。" \
+  "宮城県｜政策目標${REVIEWED_GROUPS}件・年度実績${ANNUAL_ROWS}件" \
+  "目標と実績を、同じものにしない。" \
+  "2つの目標を、混ぜない。" \
+  "年度実績を、指標ごとに確かめる。" \
+  "直接接続" \
+  "対応要確認" \
   "人口の社会増減（人）" \
   "暮らしの満足度（宮城で暮らして良かったと思う県民の割合）（%）" \
   "健康寿命（日常生活に制限のない期間の平均）（男性）（年）" \
   "健康寿命（日常生活に制限のない期間の平均）（女性）（年）" \
-  "目標値の確認と、政策成果の評価を分ける。"
+  "ここから先は、まだ評価しない。"
 
 check_absent "/municipalities/miyagi/" "達成率を算出済み"
 check_absent "/municipalities/miyagi/" "政策評価済み"
@@ -119,8 +117,9 @@ check_page "/data-quality/" \
   "全国登録、計画入口、現行性、Reviewed、公開済みを分ける。" \
   "宮城県Reviewed KPI" \
   "宮城県KPI Evidence" \
-  "Reviewed済み${REVIEWED_GROUPS}グループすべてにEvidence Packetを付与。" \
-  "宮城県は残る${REMAINING_GROUPS}グループ・${REMAINING_SERIES}系列をReviewed化中。" \
+  "宮城県・実績レビュー" \
+  "宮城県・年度実績" \
+  "宮城県・実績Evidence" \
   "データ不足を、点数で埋めません。"
 
 printf '\nResult: PASS\n' >> "$REPORT"
