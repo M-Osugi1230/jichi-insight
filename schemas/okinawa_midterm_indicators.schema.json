@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.example/schemas/okinawa_midterm_indicators.schema.json",
+  "title": "Okinawa mid-term reviewed indicators",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "prefecture_code",
+    "source_url",
+    "source_document_title",
+    "record_count",
+    "records",
+    "updated_at"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^okinawa-midterm-(major-indicators|outcome-indicators-part-[1-3])$"
+    },
+    "prefecture_code": {"const": "47"},
+    "source_url": {"type": "string", "format": "uri"},
+    "source_document_title": {"type": "string", "minLength": 1},
+    "record_count": {"type": "integer", "enum": [36, 113]},
+    "records": {
+      "type": "array",
+      "minItems": 36,
+      "maxItems": 113,
+      "items": {"$ref": "#/$defs/record"}
+    },
+    "updated_at": {"type": "string", "format": "date"}
+  },
+  "$defs": {
+    "nullableText": {"type": ["string", "null"]},
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "evidence_id",
+        "indicator_level",
+        "sequence",
+        "policy_code_original",
+        "policy_title_original",
+        "indicator_name_original",
+        "baseline_original",
+        "target_r9_original",
+        "national_current_original",
+        "rationale_source_original",
+        "island_indicator_original",
+        "sdgs_priority_original",
+        "is_island_indicator",
+        "has_sdgs_priority",
+        "target_value_kind",
+        "national_comparison_status",
+        "source_value_note",
+        "source_pdf_page",
+        "source_table_row",
+        "review_status",
+        "policy_achievement_assessment_status"
+      ],
+      "properties": {
+        "id": {"type": "string", "pattern": "^okinawa-midterm-(major|outcome)-[0-9]{3}$"},
+        "evidence_id": {"type": "string", "pattern": "^okinawa-midterm-(major|outcome)-[0-9]{3}-evidence$"},
+        "indicator_level": {"enum": ["major", "outcome"]},
+        "sequence": {"type": "integer", "minimum": 1, "maximum": 339},
+        "policy_code_original": {"type": "string", "minLength": 1},
+        "policy_title_original": {"type": "string", "minLength": 1},
+        "indicator_name_original": {"type": "string", "minLength": 1},
+        "baseline_original": {"type": "string", "minLength": 1},
+        "target_r9_original": {"type": "string", "minLength": 1},
+        "national_current_original": {"type": "string", "minLength": 1},
+        "rationale_source_original": {"type": "string", "minLength": 1},
+        "island_indicator_original": {"$ref": "#/$defs/nullableText"},
+        "sdgs_priority_original": {"$ref": "#/$defs/nullableText"},
+        "is_island_indicator": {"type": "boolean"},
+        "has_sdgs_priority": {"type": "boolean"},
+        "target_value_kind": {"enum": ["numeric_or_mixed", "qualitative"]},
+        "national_comparison_status": {"enum": ["provided", "unavailable"]},
+        "source_value_note": {"$ref": "#/$defs/nullableText"},
+        "source_pdf_page": {"type": "integer", "minimum": 5, "maximum": 71},
+        "source_table_row": {"type": "integer", "minimum": 1},
+        "review_status": {"const": "reviewed"},
+        "policy_achievement_assessment_status": {"const": "not_assessed"}
+      }
+    }
+  }
+}
