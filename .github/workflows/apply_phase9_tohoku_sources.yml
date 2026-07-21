@@ -1,0 +1,38 @@
+name: Apply Phase 9 Tohoku Sources
+
+on:
+  push:
+    branches:
+      - agent/phase9-tohoku-source-index
+    paths:
+      - .github/workflows/apply_phase9_tohoku_sources.yml
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/phase9-tohoku-source-index
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Synchronize branch
+        run: git pull --rebase origin agent/phase9-tohoku-source-index
+      - name: Apply Tohoku source registry
+        run: |
+          python scripts/apply_phase9_source_registry.py \
+            data/catalog/phase9_tohoku_source_registry.json
+      - name: Commit execution state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            data/catalog/phase9_execution_queue.json \
+            data/catalog/phase9_completion.json
+          git commit -m "Advance Phase 9 Tohoku source indexing"
+          git push origin HEAD:agent/phase9-tohoku-source-index
