@@ -1,0 +1,62 @@
+{
+  "id": "osaka-policy-source-inventory",
+  "municipality_key": "osaka-prefecture",
+  "prefecture_code": "27",
+  "updated_at": "2026-07-22",
+  "records": [
+    {
+      "id": "osaka-beyond-expo-2025-page",
+      "category": "policy_plan",
+      "title": "Beyond EXPO 2025",
+      "url": "https://www.pref.osaka.lg.jp/o020060/kikaku_keikaku/beyondexpo2025/index.html",
+      "publication_date": "2026-03-31",
+      "review_status": "reviewed",
+      "role_note": "2026年3月策定の現行成長戦略。最終版を正本とし、意見募集時の案は正本にしない。"
+    },
+    {
+      "id": "osaka-beyond-expo-2025-final",
+      "category": "kpi_source",
+      "title": "Beyond EXPO 2025（最終版PDF）",
+      "url": "https://www.pref.osaka.lg.jp/documents/127496/beyondexpo2025.pdf",
+      "publication_date": "2026-03-31",
+      "review_status": "reviewed",
+      "role_note": "経済目標1件、客観KPI27件、主観・Well-Being指標55件をReviewed。"
+    },
+    {
+      "id": "osaka-beyond-expo-2025-business-list",
+      "category": "implementation_plan",
+      "title": "Beyond EXPO 2025 事業一覧（令和8年度当初予算等）",
+      "url": "https://www.pref.osaka.lg.jp/documents/127496/jigyouitirannoosakahu.pdf",
+      "publication_date": "2026-03-31",
+      "review_status": "indexed",
+      "role_note": "戦略の施策方向に紐づく府事業とR8事業費。指標達成との因果関係は未接続。"
+    },
+    {
+      "id": "osaka-shorai-vision-actuals-2025",
+      "category": "annual_evaluation",
+      "title": "将来ビジョン・大阪 将来像イメージの実現状況を知る項目",
+      "url": "https://www.pref.osaka.lg.jp/o020040/kikaku/bijyon/index.html",
+      "publication_date": "2025-08-29",
+      "review_status": "indexed",
+      "role_note": "旧戦略系統の最新実績。Beyond EXPO 2025の指標へ自動接続しない。"
+    },
+    {
+      "id": "osaka-budget-fy2026",
+      "category": "budget",
+      "title": "令和8年度当初予算案",
+      "url": "https://www.pref.osaka.lg.jp/o050010/zaisei/yosan/r8tousho.html",
+      "publication_date": "2026-02-18",
+      "review_status": "indexed",
+      "role_note": "令和8年度当初予算。事業一覧の事業費と予算正本を別資料として追跡する。"
+    },
+    {
+      "id": "osaka-project-evaluation-2025",
+      "category": "project_evaluation",
+      "title": "令和7年度大阪府建設事業評価審議会の審議状況及び府の対応方針",
+      "url": "https://www.pref.osaka.lg.jp/hodo/fumin/o130020/prs_50243.html",
+      "publication_date": "2026-02-19",
+      "review_status": "indexed",
+      "role_note": "建設事業単位の評価。成長戦略KPIの政策評価とは別の評価単位。"
+    }
+  ]
+}
