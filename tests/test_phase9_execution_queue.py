@@ -7,6 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 QUEUE_PATH = ROOT / "data/catalog/phase9_execution_queue.json"
 SCHEMA_PATH = ROOT / "schemas/phase9_execution_queue.schema.json"
 COVERAGE_PATH = ROOT / "data/catalog/prefecture_coverage.json"
+TOHOKU_PATH = ROOT / "data/catalog/phase9_tohoku_source_registry.json"
 
 
 def load(path: Path):
@@ -52,14 +53,36 @@ def test_regional_batches_cover_every_queue_item_once():
             assert items[code]["region"] == batch["region"]
 
 
-def test_phase9_starts_from_confirmed_plan_entries_without_overstating_kpi_depth():
+def test_tohoku_batch_has_indexed_target_sources_without_overstating_review():
     queue = load(QUEUE_PATH)
+    items = {item["prefecture_code"]: item for item in queue["items"]}
+    tohoku_codes = set(load(TOHOKU_PATH)["prefecture_codes"])
 
     assert queue["status"] == "in_progress"
     assert all(item["policy_plan_status"] == "indexed" for item in queue["items"])
-    assert all(item["current_plan_status"] == "current_confirmed" for item in queue["items"])
-    assert all(item["numeric_target_status"] == "not_indexed" for item in queue["items"])
-    assert all(item["review_status"] == "queued" for item in queue["items"])
+    assert all(
+        item["current_plan_status"] == "current_confirmed"
+        for item in queue["items"]
+    )
+    assert all(items[code]["numeric_target_status"] == "indexed" for code in tohoku_codes)
+    assert all(items[code]["review_status"] == "source_indexing" for code in tohoku_codes)
+    assert all(
+        "Evidence付きReviewedデータへ昇格" in items[code]["next_action"]
+        for code in tohoku_codes
+    )
+
+    remaining_codes = set(items) - tohoku_codes
+    assert len(remaining_codes) == 33
+    assert all(
+        items[code]["numeric_target_status"] == "not_indexed"
+        for code in remaining_codes
+    )
+    assert all(items[code]["review_status"] == "queued" for code in remaining_codes)
+    assert sum(
+        item["numeric_target_status"] in {"indexed", "reviewed"}
+        for item in queue["items"]
+    ) == 5
+    assert sum(item["numeric_target_status"] == "reviewed" for item in queue["items"]) == 0
 
 
 def test_quality_rules_block_incomparable_rankings_and_unsupported_numbers():
