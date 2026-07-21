@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.local/schemas/phase9_execution_queue.schema.json",
+  "type": "object",
+  "required": ["id", "updated_at", "status", "excluded_regional_anchor_codes", "batches", "items", "quality_rules"],
+  "properties": {
+    "id": {"const": "phase9-remaining-prefecture-execution-queue"},
+    "updated_at": {"type": "string", "format": "date"},
+    "status": {"enum": ["not_started", "in_progress", "verification_pending", "complete"]},
+    "excluded_regional_anchor_codes": {
+      "type": "array",
+      "prefixItems": [{"const":"01"},{"const":"04"},{"const":"13"},{"const":"23"},{"const":"27"},{"const":"34"},{"const":"37"},{"const":"40"},{"const":"47"}],
+      "minItems": 9,
+      "maxItems": 9
+    },
+    "batches": {
+      "type": "array",
+      "minItems": 7,
+      "maxItems": 7,
+      "items": {
+        "type": "object",
+        "required": ["id", "region", "order", "prefecture_codes"],
+        "properties": {
+          "id": {"enum": ["tohoku", "kanto", "chubu", "kinki", "chugoku", "shikoku", "kyushu-okinawa"]},
+          "region": {"enum": ["東北", "関東", "中部", "近畿", "中国", "四国", "九州・沖縄"]},
+          "order": {"type": "integer", "minimum": 1, "maximum": 7},
+          "prefecture_codes": {"type": "array", "minItems": 3, "items": {"type":"string", "pattern":"^[0-4][0-9]$"}, "uniqueItems": true}
+        },
+        "additionalProperties": false
+      }
+    },
+    "items": {
+      "type": "array",
+      "minItems": 38,
+      "maxItems": 38,
+      "items": {
+        "type": "object",
+        "required": ["prefecture_code", "name", "region", "batch_id", "policy_plan_status", "current_plan_status", "numeric_target_status", "review_status", "next_action"],
+        "properties": {
+          "prefecture_code": {"type":"string", "pattern":"^[0-4][0-9]$"},
+          "name": {"type":"string", "minLength":2},
+          "region": {"enum": ["東北", "関東", "中部", "近畿", "中国", "四国", "九州・沖縄"]},
+          "batch_id": {"enum": ["tohoku", "kanto", "chubu", "kinki", "chugoku", "shikoku", "kyushu-okinawa"]},
+          "policy_plan_status": {"enum": ["not_indexed", "indexed", "reviewed"]},
+          "current_plan_status": {"enum": ["current_unconfirmed", "current_confirmed"]},
+          "numeric_target_status": {"enum": ["not_indexed", "indexed", "reviewed"]},
+          "review_status": {"enum": ["queued", "source_indexing", "numeric_review", "reviewed"]},
+          "next_action": {"type":"string", "minLength":10}
+        },
+        "additionalProperties": false
+      }
+    },
+    "quality_rules": {"type":"array", "minItems":6, "items":{"type":"string", "minLength":10}, "uniqueItems":true}
+  },
+  "additionalProperties": false
+}
