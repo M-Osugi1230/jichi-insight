@@ -147,9 +147,18 @@ def test_osaka_keeps_legacy_actuals_and_business_list_separate():
     catalog = load(CATALOG_PATH)
     manifest = load(MANIFEST_PATH)
 
-    assert all(item["legacy_vision_linkage_status"] == "separate_lineage" for item in catalog["items"])
-    assert all(item["business_list_linkage_status"] == "not_linked" for item in catalog["items"])
-    assert all(item["policy_achievement_assessment_status"] == "not_assessed" for item in catalog["items"])
+    assert all(
+        item["legacy_vision_linkage_status"] == "separate_lineage"
+        for item in catalog["items"]
+    )
+    assert all(
+        item["business_list_linkage_status"] == "not_linked"
+        for item in catalog["items"]
+    )
+    assert all(
+        item["policy_achievement_assessment_status"] == "not_assessed"
+        for item in catalog["items"]
+    )
     assert manifest["legacy_vision_linked_series_count"] == 0
     assert manifest["business_list_linked_indicator_count"] == 0
     assert manifest["policy_achievement_assessed_indicator_count"] == 0
