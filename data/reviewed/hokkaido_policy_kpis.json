@@ -1,0 +1,12 @@
+{
+  "id": "hokkaido-reviewed-policy-kpi-index",
+  "prefecture_code": "01",
+  "review_status": "reviewed",
+  "reviewed_indicator_count": 108,
+  "evidence_packet_count": 108,
+  "manifest_path": "data/catalog/hokkaido_policy_review_manifest.json",
+  "hierarchy_path": "data/entities/policy/hokkaido_policy_hierarchy.json",
+  "catalog_path_pattern": "data/entities/policy/hokkaido_indicator_catalog_*.json",
+  "evidence_path_pattern": "data/entities/policy/hokkaido_indicator_*_evidence_packets.json",
+  "scope_note": "This is an aggregate index. Indicator values and Evidence Packets remain in the field-specific canonical files."
+}
