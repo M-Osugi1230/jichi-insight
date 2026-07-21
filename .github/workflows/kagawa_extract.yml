@@ -11,7 +11,7 @@ on:
       - .github/workflows/kagawa_extract.yml
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   extract:
@@ -40,11 +40,9 @@ jobs:
           assert '135' in text and '県人口' in text
           print(len(text), text.count('\n'))
           PY
-      - name: Commit extraction and remove workflow
-        run: |
-          rm .github/workflows/kagawa_extract.yml
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/raw/kagawa_indicator_revision_2026.txt .github/workflows/kagawa_extract.yml
-          git commit -m "Extract Kagawa extended-plan indicator table"
-          git push origin HEAD:agent/kagawa-extended-plan-indicators
+      - name: Upload extracted official text
+        uses: actions/upload-artifact@v4
+        with:
+          name: kagawa-indicator-revision-text
+          path: data/raw/kagawa_indicator_revision_2026.txt
+          retention-days: 7
