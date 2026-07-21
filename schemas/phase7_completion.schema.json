@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.example/schemas/phase7_completion.schema.json",
+  "title": "Jichi Insight Phase 7 completion manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "phase",
+    "scope_version",
+    "status",
+    "completed_at",
+    "counts",
+    "gates",
+    "scope_note"
+  ],
+  "properties": {
+    "id": {"const": "phase-7-nationwide-prefecture-registry"},
+    "phase": {"const": 7},
+    "scope_version": {"type": "string", "format": "date"},
+    "status": {"enum": ["verification_pending", "complete"]},
+    "completed_at": {
+      "oneOf": [
+        {"type": "null"},
+        {"type": "string", "format": "date"}
+      ]
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "registered_prefectures",
+        "verified_official_entries",
+        "indexed_policy_plan_entries",
+        "current_policy_plan_entries",
+        "source_inventory_records",
+        "published_prefecture_pages"
+      ],
+      "properties": {
+        "registered_prefectures": {"type": "integer", "minimum": 0, "maximum": 47},
+        "verified_official_entries": {"type": "integer", "minimum": 0, "maximum": 47},
+        "indexed_policy_plan_entries": {"type": "integer", "minimum": 0, "maximum": 47},
+        "current_policy_plan_entries": {"type": "integer", "minimum": 0, "maximum": 47},
+        "source_inventory_records": {"type": "integer", "minimum": 0, "maximum": 47},
+        "published_prefecture_pages": {"type": "integer", "minimum": 0, "maximum": 47}
+      }
+    },
+    "gates": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "status", "evidence_paths"],
+        "properties": {
+          "id": {
+            "enum": [
+              "registry_integrity",
+              "official_entry_verification",
+              "current_policy_plan_index",
+              "nationwide_source_state_tracking",
+              "coverage_and_publication_state_model",
+              "nationwide_ui_and_static_export",
+              "repository_quality_gate",
+              "production_smoke"
+            ]
+          },
+          "status": {"enum": ["pending", "passed"]},
+          "evidence_paths": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {"type": "string", "minLength": 1}
+          }
+        }
+      }
+    },
+    "scope_note": {"type": "string", "minLength": 1}
+  }
+}
