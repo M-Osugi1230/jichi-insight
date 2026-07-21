@@ -24,25 +24,58 @@ def test_queue_schema_and_order():
         coverage["regional_anchor_codes"]
     )
     assert queue["completed_prefecture_codes"] == [
-        "40", "01", "04", "13", "23", "27", "34", "37"
+        "40",
+        "01",
+        "04",
+        "13",
+        "23",
+        "27",
+        "34",
+        "37",
+        "47",
     ]
-    assert queue["active_prefecture_code"] == "47"
+    assert queue["active_prefecture_code"] is None
 
 
-def test_okinawa_is_active_after_kagawa_indicator_completion():
+def test_all_nine_regional_anchors_are_reviewed_references():
     queue = load(QUEUE_PATH)
-    items = {item["prefecture_code"]: item for item in queue["items"]}
-    active = items["47"]
-    assert active["status"] == "active_review"
-    assert active["next_gate"] == "kpi_catalog"
+    assert all(item["status"] == "reviewed_reference" for item in queue["items"])
     assert all(
-        token in active["next_action"]
-        for token in ["令和7～9年度", "成果指標", "基本計画", "Evidence"]
+        item["source_inventory_status"] == "reviewed" for item in queue["items"]
     )
     assert {
         status: sum(item["status"] == status for item in queue["items"])
         for status in ["reviewed_reference", "active_review", "queued"]
-    } == {"reviewed_reference": 8, "active_review": 1, "queued": 0}
+    } == {"reviewed_reference": 9, "active_review": 0, "queued": 0}
+
+
+def test_okinawa_is_complete_reference_with_plan_layers_visible():
+    items = {
+        item["prefecture_code"]: item for item in load(QUEUE_PATH)["items"]
+    }
+    okinawa = items["47"]
+    assert okinawa["next_gate"] == "actuals_linkage"
+    expected_action_tokens = [
+        "主要指標36",
+        "成果指標339",
+        "375",
+        "Evidence 375",
+        "離島指標32",
+        "SDGs優先課題43",
+        "定性目標9",
+    ]
+    assert all(token in okinawa["next_action"] for token in expected_action_tokens)
+    assert all(
+        token in okinawa["priority_basis"]
+        for token in [
+            "基本計画",
+            "中期実施計画",
+            "主要指標",
+            "成果指標",
+            "活動指標",
+            "PDCA",
+        ]
+    )
 
 
 def test_kagawa_is_complete_reference_with_extension_boundaries_visible():
@@ -50,8 +83,6 @@ def test_kagawa_is_complete_reference_with_extension_boundaries_visible():
         item["prefecture_code"]: item for item in load(QUEUE_PATH)["items"]
     }
     kagawa = items["37"]
-    assert kagawa["status"] == "reviewed_reference"
-    assert kagawa["source_inventory_status"] == "reviewed"
     assert kagawa["next_gate"] == "actuals_linkage"
     assert all(
         token in kagawa["next_action"]

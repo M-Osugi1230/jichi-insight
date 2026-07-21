@@ -10,17 +10,72 @@
     "indexed_policy_plan_entries": 47,
     "current_policy_plan_entries": 47,
     "source_inventory_records": 47,
-    "published_prefecture_pages": 8
+    "published_prefecture_pages": 9
   },
   "gates": [
-    {"id":"registry_integrity","status":"passed","evidence_paths":["data/catalog/prefecture_coverage.json","tests/test_prefecture_coverage.py"]},
-    {"id":"official_entry_verification","status":"passed","evidence_paths":["data/catalog/prefecture_coverage.json","apps/web/components/CoverageExplorer.tsx"]},
-    {"id":"current_policy_plan_index","status":"passed","evidence_paths":["data/catalog/prefecture_coverage.json","tests/test_prefecture_coverage.py"]},
-    {"id":"nationwide_source_state_tracking","status":"passed","evidence_paths":["data/catalog/nationwide_source_inventory.json","tests/test_nationwide_source_inventory.py"]},
-    {"id":"coverage_and_publication_state_model","status":"passed","evidence_paths":["data/catalog/published_prefecture_pages.json","apps/web/lib/nationwideCoverage.ts"]},
-    {"id":"nationwide_ui_and_static_export","status":"passed","evidence_paths":["apps/web/app/municipalities/page.tsx","scripts/validate_static_export.py"]},
-    {"id":"repository_quality_gate","status":"passed","evidence_paths":[".github/workflows/quality.yml"]},
-    {"id":"production_smoke","status":"passed","evidence_paths":[".github/workflows/production-smoke.yml","scripts/check_production.sh"]}
+    {
+      "id": "registry_integrity",
+      "status": "passed",
+      "evidence_paths": [
+        "data/catalog/prefecture_coverage.json",
+        "tests/test_prefecture_coverage.py"
+      ]
+    },
+    {
+      "id": "official_entry_verification",
+      "status": "passed",
+      "evidence_paths": [
+        "data/catalog/prefecture_coverage.json",
+        "apps/web/components/CoverageExplorer.tsx"
+      ]
+    },
+    {
+      "id": "current_policy_plan_index",
+      "status": "passed",
+      "evidence_paths": [
+        "data/catalog/prefecture_coverage.json",
+        "tests/test_prefecture_coverage.py"
+      ]
+    },
+    {
+      "id": "nationwide_source_state_tracking",
+      "status": "passed",
+      "evidence_paths": [
+        "data/catalog/nationwide_source_inventory.json",
+        "tests/test_nationwide_source_inventory.py"
+      ]
+    },
+    {
+      "id": "coverage_and_publication_state_model",
+      "status": "passed",
+      "evidence_paths": [
+        "data/catalog/published_prefecture_pages.json",
+        "apps/web/lib/nationwideCoverage.ts"
+      ]
+    },
+    {
+      "id": "nationwide_ui_and_static_export",
+      "status": "passed",
+      "evidence_paths": [
+        "apps/web/app/municipalities/page.tsx",
+        "scripts/validate_static_export.py"
+      ]
+    },
+    {
+      "id": "repository_quality_gate",
+      "status": "passed",
+      "evidence_paths": [
+        ".github/workflows/quality.yml"
+      ]
+    },
+    {
+      "id": "production_smoke",
+      "status": "passed",
+      "evidence_paths": [
+        ".github/workflows/production-smoke.yml",
+        "scripts/check_production.sh"
+      ]
+    }
   ],
   "scope_note": "Phase 7 completes the nationwide registry, verified current policy-plan entrances, six-category source-state tracking, publication-state tracking, nationwide UI, and production verification. Indexing and reviewing every implementation plan, KPI, annual evaluation, budget, and project evaluation remain Phase 8 and Phase 9 work; Phase 7 requires every prefecture to have an explicit state for each category, including not_indexed. The publication count grows independently as later phases add reviewed pages."
 }

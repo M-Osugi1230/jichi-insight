@@ -17,6 +17,7 @@ import {
   type SourceInventoryCategory,
   type SourceInventoryStatus,
 } from "@/lib/nationwideCoverage";
+import { okinawaIndicatorStats } from "@/lib/okinawaIndicators";
 import { osakaIndicatorStats } from "@/lib/osakaIndicators";
 import { tokyoPolicyTargetStats } from "@/lib/tokyoPolicyTargets";
 
@@ -59,6 +60,8 @@ function displayedSourceStatus(
     prefectureCode === "34" && hiroshimaIndicatorStats.reviewedIndicators > 0;
   const kagawaReviewed =
     prefectureCode === "37" && kagawaIndicatorStats.reviewedIndicators > 0;
+  const okinawaReviewed =
+    prefectureCode === "47" && okinawaIndicatorStats.reviewedIndicators > 0;
   if (
     category === "kpi_source" &&
     (
@@ -66,7 +69,8 @@ function displayedSourceStatus(
       aichiReviewed ||
       osakaReviewed ||
       hiroshimaReviewed ||
-      kagawaReviewed
+      kagawaReviewed ||
+      okinawaReviewed
     ) &&
     status === "indexed"
   ) {
@@ -226,7 +230,9 @@ export function CoverageExplorer() {
                             ? `改定版ビジョンの${hiroshimaIndicatorStats.reviewedIndicators}指標をReviewed済み。次に新アクションプランと年度実績を定義照合する。`
                             : record.prefecture_code === "37"
                               ? `延長後計画の${kagawaIndicatorStats.reviewedIndicators}指標・Evidence ${kagawaIndicatorStats.evidencePackets}件をReviewed済み。次に行政評価と年度実績を接続する。`
-                              : inventory?.next_action ?? "資料インベントリを確認中";
+                              : record.prefecture_code === "47"
+                                ? `現行中期計画の${okinawaIndicatorStats.reviewedIndicators}指標（主要${okinawaIndicatorStats.majorIndicators}・成果${okinawaIndicatorStats.outcomeIndicators}）をReviewed済み。次に過年度PDCA実績を定義照合する。`
+                                : inventory?.next_action ?? "資料インベントリを確認中";
                   return (
                     <article className={styles.prefectureCard} key={record.prefecture_code}>
                       <div className={styles.prefectureTop}>

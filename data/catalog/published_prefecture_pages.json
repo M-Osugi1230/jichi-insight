@@ -2,13 +2,50 @@
   "id": "published-prefecture-pages",
   "updated_at": "2026-07-22",
   "records": [
-    {"prefecture_code":"01","route":"/municipalities/hokkaido","publication_status":"published"},
-    {"prefecture_code":"04","route":"/municipalities/miyagi","publication_status":"published"},
-    {"prefecture_code":"13","route":"/municipalities/tokyo","publication_status":"published"},
-    {"prefecture_code":"23","route":"/municipalities/aichi","publication_status":"published"},
-    {"prefecture_code":"27","route":"/municipalities/osaka","publication_status":"published"},
-    {"prefecture_code":"34","route":"/municipalities/hiroshima","publication_status":"published"},
-    {"prefecture_code":"37","route":"/municipalities/kagawa","publication_status":"published"},
-    {"prefecture_code":"40","route":"/municipalities/fukuoka-prefecture","publication_status":"published"}
+    {
+      "prefecture_code": "01",
+      "route": "/municipalities/hokkaido",
+      "publication_status": "published"
+    },
+    {
+      "prefecture_code": "04",
+      "route": "/municipalities/miyagi",
+      "publication_status": "published"
+    },
+    {
+      "prefecture_code": "13",
+      "route": "/municipalities/tokyo",
+      "publication_status": "published"
+    },
+    {
+      "prefecture_code": "23",
+      "route": "/municipalities/aichi",
+      "publication_status": "published"
+    },
+    {
+      "prefecture_code": "27",
+      "route": "/municipalities/osaka",
+      "publication_status": "published"
+    },
+    {
+      "prefecture_code": "34",
+      "route": "/municipalities/hiroshima",
+      "publication_status": "published"
+    },
+    {
+      "prefecture_code": "37",
+      "route": "/municipalities/kagawa",
+      "publication_status": "published"
+    },
+    {
+      "prefecture_code": "40",
+      "route": "/municipalities/fukuoka-prefecture",
+      "publication_status": "published"
+    },
+    {
+      "prefecture_code": "47",
+      "route": "/municipalities/okinawa",
+      "publication_status": "published"
+    }
   ]
 }

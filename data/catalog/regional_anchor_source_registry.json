@@ -1,7 +1,17 @@
 {
   "id": "phase8-regional-anchor-source-registry",
-  "updated_at": "2026-07-21",
-  "anchor_codes": ["01", "04", "13", "23", "27", "34", "37", "40", "47"],
+  "updated_at": "2026-07-22",
+  "anchor_codes": [
+    "01",
+    "04",
+    "13",
+    "23",
+    "27",
+    "34",
+    "37",
+    "40",
+    "47"
+  ],
   "source_categories": [
     "policy_plan",
     "implementation_plan",
@@ -25,7 +35,7 @@
     {
       "prefecture_code": "04",
       "name": "宮城県",
-      "anchor_status": "active_review",
+      "anchor_status": "reviewed_reference",
       "numeric_target_status": "reviewed",
       "evidence_paths": [
         "data/catalog/miyagi_policy_review_manifest.json",
@@ -36,9 +46,13 @@
     {
       "prefecture_code": "13",
       "name": "東京都",
-      "anchor_status": "source_indexed",
-      "numeric_target_status": "indexed",
-      "evidence_paths": [],
+      "anchor_status": "reviewed_reference",
+      "numeric_target_status": "reviewed",
+      "evidence_paths": [
+        "data/catalog/tokyo_policy_target_review_manifest.json",
+        "data/reviewed/tokyo_policy_target_cards.json",
+        "data/evidence/tokyo_policy_target_card_evidence.json"
+      ],
       "sources": [
         {
           "id": "tokyo-2050-strategy",
@@ -99,9 +113,13 @@
     {
       "prefecture_code": "23",
       "name": "愛知県",
-      "anchor_status": "source_indexed",
-      "numeric_target_status": "indexed",
-      "evidence_paths": [],
+      "anchor_status": "reviewed_reference",
+      "numeric_target_status": "reviewed",
+      "evidence_paths": [
+        "data/catalog/aichi_policy_indicator_review_manifest.json",
+        "data/reviewed/aichi_policy_indicators.json",
+        "data/evidence/aichi_policy_indicator_evidence.json"
+      ],
       "sources": [
         {
           "id": "aichi-vision-2030",
@@ -162,9 +180,13 @@
     {
       "prefecture_code": "27",
       "name": "大阪府",
-      "anchor_status": "source_indexed",
-      "numeric_target_status": "indexed",
-      "evidence_paths": [],
+      "anchor_status": "reviewed_reference",
+      "numeric_target_status": "reviewed",
+      "evidence_paths": [
+        "data/catalog/osaka_beyond_expo_indicator_review_manifest.json",
+        "data/reviewed/osaka_beyond_expo_indicators.json",
+        "data/evidence/osaka_beyond_expo_indicator_evidence.json"
+      ],
       "sources": [
         {
           "id": "osaka-future-vision",
@@ -225,9 +247,14 @@
     {
       "prefecture_code": "34",
       "name": "広島県",
-      "anchor_status": "source_indexed",
-      "numeric_target_status": "indexed",
-      "evidence_paths": [],
+      "anchor_status": "reviewed_reference",
+      "numeric_target_status": "reviewed",
+      "evidence_paths": [
+        "data/catalog/hiroshima_revised_vision_indicator_review_manifest.json",
+        "data/reviewed/hiroshima_revised_vision_indicators_part1.json",
+        "data/reviewed/hiroshima_revised_vision_indicators_part2.json",
+        "data/reviewed/hiroshima_revised_vision_indicators_part3.json"
+      ],
       "sources": [
         {
           "id": "hiroshima-vision",
@@ -288,9 +315,14 @@
     {
       "prefecture_code": "37",
       "name": "香川県",
-      "anchor_status": "source_indexed",
-      "numeric_target_status": "indexed",
-      "evidence_paths": [],
+      "anchor_status": "reviewed_reference",
+      "numeric_target_status": "reviewed",
+      "evidence_paths": [
+        "data/catalog/kagawa_extended_plan_indicator_review_manifest.json",
+        "data/evidence/kagawa_extended_plan_indicator_evidence_part1.json",
+        "data/evidence/kagawa_extended_plan_indicator_evidence_part2.json",
+        "data/evidence/kagawa_extended_plan_indicator_evidence_part3.json"
+      ],
       "sources": [
         {
           "id": "kagawa-frontier-plan",
@@ -362,9 +394,15 @@
     {
       "prefecture_code": "47",
       "name": "沖縄県",
-      "anchor_status": "source_indexed",
-      "numeric_target_status": "indexed",
-      "evidence_paths": [],
+      "anchor_status": "reviewed_reference",
+      "numeric_target_status": "reviewed",
+      "evidence_paths": [
+        "data/catalog/okinawa_midterm_indicator_review_manifest.json",
+        "data/evidence/okinawa_midterm_major_indicator_evidence.json",
+        "data/evidence/okinawa_midterm_outcome_indicator_evidence_part1.json",
+        "data/evidence/okinawa_midterm_outcome_indicator_evidence_part2.json",
+        "data/evidence/okinawa_midterm_outcome_indicator_evidence_part3.json"
+      ],
       "sources": [
         {
           "id": "okinawa-21c-vision",

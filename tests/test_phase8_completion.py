@@ -17,6 +17,7 @@ HIROSHIMA_MANIFEST_PATH = (
 KAGAWA_MANIFEST_PATH = (
     ROOT / "data/catalog/kagawa_extended_plan_indicator_review_manifest.json"
 )
+OKINAWA_MANIFEST_PATH = ROOT / "data/catalog/okinawa_midterm_indicator_review_manifest.json"
 
 
 def load(path: Path):
@@ -50,6 +51,8 @@ def test_phase8_counts_are_derived_from_canonical_registries():
         reviewed_codes.add("34")
     if load(KAGAWA_MANIFEST_PATH)["status"] == "complete":
         reviewed_codes.add("37")
+    if load(OKINAWA_MANIFEST_PATH)["status"] == "complete":
+        reviewed_codes.add("47")
     source_mapped = sum(len(record["sources"]) == 6 for record in anchors)
     published = len(anchor_codes & published_codes)
     assert manifest["counts"] == {
@@ -62,17 +65,20 @@ def test_phase8_counts_are_derived_from_canonical_registries():
     }
 
 
-def test_phase8_cannot_be_complete_before_all_review_and_publication_gates_pass():
+def test_phase8_is_complete_only_after_all_review_and_publication_gates_pass():
     manifest = load(MANIFEST_PATH)
     gates = {gate["id"]: gate["status"] for gate in manifest["gates"]}
-    assert manifest["status"] == "in_progress"
-    assert manifest["counts"]["anchors_with_reviewed_numeric_targets"] == 8
-    assert manifest["counts"]["anchors_pending_numeric_target_review"] == 1
-    assert manifest["counts"]["anchors_with_published_prefecture_pages"] == 8
-    assert gates["plan_and_numeric_target_entrances"] == "passed"
-    assert gates["evidence_packet_review"] == "in_progress"
-    assert gates["published_pages_and_production_smoke"] == "in_progress"
-    assert not all(status == "passed" for status in gates.values())
+    assert manifest["status"] == "complete"
+    assert manifest["counts"] == {
+        "regional_anchors": 9,
+        "anchors_with_plan_and_kpi_entrances": 9,
+        "anchors_with_six_category_source_map": 6,
+        "anchors_with_reviewed_numeric_targets": 9,
+        "anchors_with_published_prefecture_pages": 9,
+        "anchors_pending_numeric_target_review": 0,
+    }
+    assert set(gates.values()) == {"passed"}
+    assert manifest["next_review_order"] == []
 
 
 def test_phase8_evidence_paths_are_real_files():
