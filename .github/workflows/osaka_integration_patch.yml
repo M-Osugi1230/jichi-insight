@@ -1,0 +1,137 @@
+name: Osaka Integration Patch
+
+on:
+  push:
+    branches:
+      - agent/osaka-beyond-expo-indicators-complete
+    paths:
+      - .github/workflows/osaka_integration_patch.yml
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/osaka-beyond-expo-indicators-complete
+          fetch-depth: 0
+      - name: Patch Osaka nationwide integration
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          def replace_once(path: str, old: str, new: str) -> None:
+              target = Path(path)
+              text = target.read_text(encoding="utf-8")
+              count = text.count(old)
+              if count != 1:
+                  raise RuntimeError(f"{path}: expected one match, found {count}: {old[:80]!r}")
+              target.write_text(text.replace(old, new, 1), encoding="utf-8")
+
+          page = "apps/web/app/municipalities/page.tsx"
+          replace_once(
+              page,
+              'import { miyagiPolicyReviewStats } from "@/lib/miyagiPolicies";\n',
+              'import { miyagiPolicyReviewStats } from "@/lib/miyagiPolicies";\nimport { osakaIndicatorStats } from "@/lib/osakaIndicators";\n',
+          )
+          replace_once(page, "いま、深く読める5都道府県。", "いま、深く読める6都道府県。")
+          aichi_card_end = '''              <Link href="/municipalities/aichi">愛知県の進捗指標を見る →</Link>\n            </article>'''
+          osaka_card = aichi_card_end + '''\n            <article className={`${styles.deepDiveCard} ${styles.tokyo}`}>\n              <div><span>27 / 大阪府</span><StatusBadge label="戦略指標全件Reviewed" tone="verified" /></div>\n              <h3>83指標・91系列を三層で読む。</h3>\n              <dl>\n                <div><dt>戦略目標</dt><dd>{osakaIndicatorStats.strategyTargets}</dd></div>\n                <div><dt>客観KPI</dt><dd>{osakaIndicatorStats.objectiveKpis}</dd></div>\n                <div><dt>主観指標</dt><dd>{osakaIndicatorStats.subjectiveIndicators}</dd></div>\n                <div><dt>Evidence</dt><dd>{osakaIndicatorStats.evidencePackets}</dd></div>\n              </dl>\n              <p>経済目標、最新状態、Well-Beingを分離し、旧ビジョン実績と事業一覧を自動接続しません。</p>\n              <Link href="/municipalities/osaka">大阪府の政策指標を見る →</Link>\n            </article>'''
+          replace_once(page, aichi_card_end, osaka_card)
+          replace_once(
+              page,
+              '(category === "kpi_source" && aichiPolicyIndicatorStats.indicatorRows > 0 ? 1 : 0);',
+              '(category === "kpi_source" && aichiPolicyIndicatorStats.indicatorRows > 0 ? 1 : 0) +\n                (category === "kpi_source" && osakaIndicatorStats.indicatorRows > 0 ? 1 : 0);',
+          )
+          replace_once(
+              page,
+              "公開済み5地域と、次に資料を深掘りする4地域を示します。",
+              "公開済み6地域と、次に資料を深掘りする3地域を示します。",
+          )
+          replace_once(
+              page,
+              ''': item.prefecture_code === "40"\n                          ? "/municipalities/fukuoka-prefecture"\n                          : null;''',
+              ''': item.prefecture_code === "27"\n                          ? "/municipalities/osaka"\n                          : item.prefecture_code === "40"\n                            ? "/municipalities/fukuoka-prefecture"\n                            : null;''',
+          )
+
+          explorer = "apps/web/components/CoverageExplorer.tsx"
+          replace_once(
+              explorer,
+              'import { tokyoPolicyTargetStats } from "@/lib/tokyoPolicyTargets";\n',
+              'import { osakaIndicatorStats } from "@/lib/osakaIndicators";\nimport { tokyoPolicyTargetStats } from "@/lib/tokyoPolicyTargets";\n',
+          )
+          replace_once(
+              explorer,
+              '''  const aichiReviewed =\n    prefectureCode === "23" && aichiPolicyIndicatorStats.indicatorRows > 0;''',
+              '''  const aichiReviewed =\n    prefectureCode === "23" && aichiPolicyIndicatorStats.indicatorRows > 0;\n  const osakaReviewed =\n    prefectureCode === "27" && osakaIndicatorStats.indicatorRows > 0;''',
+          )
+          replace_once(
+              explorer,
+              "(tokyoReviewed || aichiReviewed)",
+              "(tokyoReviewed || aichiReviewed || osakaReviewed)",
+          )
+          replace_once(
+              explorer,
+              ''': record.prefecture_code === "23"\n                        ? `進捗管理指標${aichiPolicyIndicatorStats.indicatorRows}件・${aichiPolicyIndicatorStats.indicatorSeries}系列をReviewed済み。次に管理事業評価との対応を検証する。`\n                        : inventory?.next_action ?? "資料インベントリを確認中";''',
+              ''': record.prefecture_code === "23"\n                        ? `進捗管理指標${aichiPolicyIndicatorStats.indicatorRows}件・${aichiPolicyIndicatorStats.indicatorSeries}系列をReviewed済み。次に管理事業評価との対応を検証する。`\n                        : record.prefecture_code === "27"\n                          ? `現行戦略の${osakaIndicatorStats.indicatorRows}指標・${osakaIndicatorStats.indicatorSeries}系列をReviewed済み。次に事業一覧と年次更新を別レイヤーで接続する。`\n                          : inventory?.next_action ?? "資料インベントリを確認中";''',
+          )
+
+          static = "scripts/validate_static_export.py"
+          replace_once(static, '    "municipalities/aichi/index.html",\n', '    "municipalities/aichi/index.html",\n    "municipalities/osaka/index.html",\n')
+          replace_once(static, '        "いま、深く読める5都道府県。",\n', '        "いま、深く読める6都道府県。",\n')
+          replace_once(static, '        "愛知県の進捗指標を見る",\n', '        "愛知県の進捗指標を見る",\n        "大阪府の政策指標を見る",\n')
+          aichi_requirements_end = '''        "56指標を、政策方向・値・年度から探す。",\n    ],'''
+          osaka_requirements = aichi_requirements_end + '''\n    "municipalities/osaka/index.html": [\n        "大阪府の戦略目標とWell-Beingを、同じ点数にしない。",\n        "83指標",\n        "91系列",\n        "名目GDP80兆円",\n        "客観KPI",\n        "主観・Well-Being",\n        "初回調査待ち",\n        "旧戦略の実績",\n        "政策評価 未判定",\n        "83指標を、レイヤー・分野・値から探す。",\n    ],'''
+          replace_once(static, aichi_requirements_end, osaka_requirements)
+
+          smoke = "scripts/check_production.sh"
+          replace_once(smoke, '  "/municipalities/aichi/"\n', '  "/municipalities/aichi/"\n  "/municipalities/osaka/"\n')
+          replace_once(smoke, '  "いま、深く読める5都道府県。" \\\n', '  "いま、深く読める6都道府県。" \\\n')
+          replace_once(smoke, '  "愛知県の進捗指標を見る" \\\n', '  "愛知県の進捗指標を見る" \\\n  "大阪府の政策指標を見る" \\\n')
+          aichi_smoke_end = '''  "管理事業評価" \\\n  "政策評価 未判定"\n'''
+          osaka_smoke = aichi_smoke_end + '''\ncheck_content "/municipalities/osaka/" \\\n  "大阪府の戦略目標とWell-Beingを、同じ点数にしない。" \\\n  "83指標" \\\n  "91系列" \\\n  "名目GDP80兆円" \\\n  "客観KPI" \\\n  "主観・Well-Being" \\\n  "初回調査待ち" \\\n  "旧戦略の実績" \\\n  "政策評価 未判定"\n'''
+          replace_once(smoke, aichi_smoke_end, osaka_smoke)
+          replace_once(
+              smoke,
+              "Phase 8 Tokyo and Aichi reviewed publication checks: PASS",
+              "Phase 8 Tokyo, Aichi and Osaka reviewed publication checks: PASS",
+          )
+
+          docs = "docs/PHASE8_REGIONAL_ANCHORS.md"
+          replace_once(
+              docs,
+              "北海道、宮城県、東京都、愛知県、福岡県にEvidence Packet付きReviewedデータがあります。",
+              "北海道、宮城県、東京都、愛知県、大阪府、福岡県にEvidence Packet付きReviewedデータがあります。",
+          )
+          replace_once(
+              docs,
+              "大阪府、広島県、香川県、沖縄県は、政策計画、実施計画、KPI、年度評価、予算、事業評価の公式入口を6カテゴリで索引化しています。",
+              "広島県、香川県、沖縄県は、政策計画、実施計画、KPI、年度評価、予算、事業評価の公式入口を6カテゴリで索引化しています。",
+          )
+          replace_once(
+              docs,
+              '''### 大阪府\n\n単一の総合実施計画へ無理に統合せず、分野別行政計画群を実施体系として扱います。将来ビジョン・大阪は計画期間と更新状況を保持し、現行性を別途確認します。\n\n次のActive Review対象です。''',
+              '''### 大阪府\n\n2026年3月31日策定の最終版「Beyond EXPO 2025」を正本とし、経済目標1件、客観KPI27件、主観・Well-Being指標55件、合計83指標・91系列をEvidence付きでReviewed化しました。\n\n客観KPIの最新状態を個別の数値目標へ読み替えず、0〜10点と1〜5点の主観尺度、逆転項目、未調査5件を分離します。旧「将来ビジョン・大阪」の実績と令和8年度事業一覧は別レイヤーです。''',
+          )
+          replace_once(
+              docs,
+              "現在は9地域中5地域がReviewed・公開済みです。次のレビュー順は大阪府、広島県、香川県、沖縄県です。",
+              "現在は9地域中6地域がReviewed・公開済みです。次のレビュー順は広島県、香川県、沖縄県です。",
+          )
+          replace_once(
+              docs,
+              "愛知県の `data/catalog/aichi_policy_indicator_review_manifest.json` です。",
+              "愛知県の `data/catalog/aichi_policy_indicator_review_manifest.json`、大阪府の `data/catalog/osaka_beyond_expo_indicator_review_manifest.json` です。",
+          )
+          PY
+      - name: Remove workflow and commit
+        run: |
+          rm .github/workflows/osaka_integration_patch.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add apps scripts docs .github/workflows/osaka_integration_patch.yml
+          git commit -m "Integrate reviewed Osaka indicators"
+          git push origin HEAD:agent/osaka-beyond-expo-indicators-complete
