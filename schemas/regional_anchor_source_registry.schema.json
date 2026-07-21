@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.local/schemas/regional_anchor_source_registry.schema.json",
+  "type": "object",
+  "required": ["id", "updated_at", "anchor_codes", "source_categories", "records"],
+  "properties": {
+    "id": {"const": "phase8-regional-anchor-source-registry"},
+    "updated_at": {"type": "string", "format": "date"},
+    "anchor_codes": {
+      "type": "array",
+      "prefixItems": [
+        {"const": "01"}, {"const": "04"}, {"const": "13"},
+        {"const": "23"}, {"const": "27"}, {"const": "34"},
+        {"const": "37"}, {"const": "40"}, {"const": "47"}
+      ],
+      "minItems": 9,
+      "maxItems": 9
+    },
+    "source_categories": {
+      "type": "array",
+      "items": {"enum": ["policy_plan", "implementation_plan", "kpi_source", "annual_evaluation", "budget", "project_evaluation"]},
+      "minItems": 6,
+      "maxItems": 6,
+      "uniqueItems": true
+    },
+    "records": {
+      "type": "array",
+      "minItems": 9,
+      "maxItems": 9,
+      "items": {
+        "type": "object",
+        "required": ["prefecture_code", "name", "anchor_status", "numeric_target_status", "evidence_paths", "sources"],
+        "properties": {
+          "prefecture_code": {"type": "string", "pattern": "^[0-4][0-9]$"},
+          "name": {"type": "string", "minLength": 2},
+          "anchor_status": {"enum": ["reviewed_reference", "active_review", "source_indexed"]},
+          "numeric_target_status": {"enum": ["indexed", "reviewed"]},
+          "evidence_paths": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "category", "title", "url", "status", "checked_at", "note"],
+              "properties": {
+                "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+                "category": {"enum": ["policy_plan", "implementation_plan", "kpi_source", "annual_evaluation", "budget", "project_evaluation"]},
+                "title": {"type": "string", "minLength": 2},
+                "url": {"type": "string", "format": "uri", "pattern": "^https://"},
+                "status": {"const": "indexed"},
+                "checked_at": {"type": "string", "format": "date"},
+                "note": {"type": "string", "minLength": 4}
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
