@@ -55,13 +55,26 @@ def test_okinawa_is_complete_reference_with_plan_layers_visible():
     }
     okinawa = items["47"]
     assert okinawa["next_gate"] == "actuals_linkage"
-    assert all(
-        token in okinawa["next_action"]
-        for token in ["主要指標36", "成果指標339", "375", "Evidence 375", "離島指標32", "SDGs優先課題43", "定性目標9"]
-    )
+    expected_action_tokens = [
+        "主要指標36",
+        "成果指標339",
+        "375",
+        "Evidence 375",
+        "離島指標32",
+        "SDGs優先課題43",
+        "定性目標9",
+    ]
+    assert all(token in okinawa["next_action"] for token in expected_action_tokens)
     assert all(
         token in okinawa["priority_basis"]
-        for token in ["基本計画", "中期実施計画", "主要指標", "成果指標", "活動指標", "PDCA"]
+        for token in [
+            "基本計画",
+            "中期実施計画",
+            "主要指標",
+            "成果指標",
+            "活動指標",
+            "PDCA",
+        ]
     )
 
 
