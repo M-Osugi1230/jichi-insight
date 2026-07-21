@@ -7,10 +7,14 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { StatusBadge } from "@/components/StatusBadge";
 import { municipalityMeta, sourcesForMunicipality, type MunicipalityKey } from "@/lib/catalog";
+import { miyagiKpiActualStats } from "@/lib/miyagiActuals";
 import { miyagiPolicyReviewStats } from "@/lib/miyagiPolicies";
 import {
   nationwideCoverageStats,
   nationwidePrefectureCoverage,
+  nationwideSourceInventoryStats,
+  sourceInventoryCategoryLabel,
+  sourceInventoryCategoryOrder,
 } from "@/lib/nationwideCoverage";
 import {
   policyReviewNextGateLabel,
@@ -26,17 +30,12 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
   title: "全国自治体カバレッジ",
   description:
-    "全国47都道府県の登録状況、公式入口、総合計画の索引・現行性、Reviewedデータと公開ページの整備状況を確認できます。",
+    "全国47都道府県の登録状況、公式入口、政策計画の索引・現行性、資料カテゴリ別の整備状況、Reviewedデータと公開ページを確認できます。",
 };
 
 const cityKeys = (Object.keys(municipalityMeta) as MunicipalityKey[]).filter(
   (key) => municipalityMeta[key].type === "政令指定都市",
 );
-
-const indexedPlanNames = nationwidePrefectureCoverage
-  .filter((record) => record.planSource !== null)
-  .map((record) => record.name)
-  .join("、");
 
 export default function MunicipalitiesPage() {
   return (
@@ -45,7 +44,7 @@ export default function MunicipalitiesPage() {
       <div className="pageShell">
         <PageIntro eyebrow="Nationwide coverage" title="全国47都道府県を、同じ品質段階で追う。">
           <p>
-            全国を登録対象にしました。ただし、名前を登録した状態、公式サイトを確認した状態、計画入口を索引化した状態、現行計画であることを確認した状態、数値を人が照合した状態は同じではありません。
+            全国を登録対象にしました。ただし、名前を登録した状態、公式サイトを確認した状態、政策計画入口と現行性を確認した状態、実施計画・KPI・年度評価・予算を索引化した状態、数値を人が照合した状態は同じではありません。
             Jichi Insightは、未着手や旧計画を公開済みのように見せず、段階ごとの進捗をそのまま表示します。
           </p>
         </PageIntro>
@@ -54,20 +53,20 @@ export default function MunicipalitiesPage() {
           <article className={styles.summaryCard}>
             <span>全国登録</span>
             <strong>{nationwideCoverageStats.totalPrefectures}</strong>
-            <p>47都道府県を共通コード・地域区分・公式URL候補付きで登録。</p>
+            <p>47都道府県を共通コード・地域区分・公式URL付きで登録。</p>
           </article>
           <article className={styles.summaryCard}>
             <span>公式入口確認済み</span>
             <strong>{nationwideCoverageStats.verifiedOfficialEntries}</strong>
-            <p>各地域の先行拠点を中心に、公式ホームページを手動確認。</p>
+            <p>47都道府県の公式ホームページを手動確認。</p>
           </article>
           <article className={styles.summaryCard}>
-            <span>総合計画索引済み</span>
+            <span>政策計画入口索引済み</span>
             <strong>{nationwideCoverageStats.sourceCatalogedPrefectures}</strong>
-            <p>{indexedPlanNames}で計画資料の入口を確認。</p>
+            <p>全47都道府県で現行の政策計画入口を固定。</p>
           </article>
           <article className={styles.summaryCard}>
-            <span>現行計画確認済み</span>
+            <span>現行政策入口確認済み</span>
             <strong>{nationwideCoverageStats.currentPlanConfirmedPrefectures}</strong>
             <p>後継計画や改定状況まで確認した都道府県だけを計上。</p>
           </article>
@@ -78,17 +77,38 @@ export default function MunicipalitiesPage() {
           </article>
         </section>
 
+        <section className="contentSection">
+          <p className="eyebrow">Nationwide source inventory</p>
+          <h2>入口確認の先を、6つの資料カテゴリで追う。</h2>
+          <p className={styles.sectionLead}>
+            政策計画が見つかっていても、実施計画、KPI、年度評価、予算・決算、事業評価が揃っているとは限りません。索引以上とReviewed以上を分け、未索引は0ではなく未索引として表示します。
+          </p>
+          <div className={styles.summaryGrid} aria-label="全国資料インベントリ">
+            {sourceInventoryCategoryOrder.map((category) => {
+              const stats = nationwideSourceInventoryStats[category];
+              return (
+                <article className={styles.summaryCard} key={category}>
+                  <span>{sourceInventoryCategoryLabel(category)}</span>
+                  <strong>{stats.indexedOrHigher}/47</strong>
+                  <p>索引以上。うちReviewed以上は{stats.reviewedOrHigher}都道府県。</p>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+
         <section className={styles.ladderSection}>
           <div>
             <p className="eyebrow">Coverage ladder</p>
             <h2>量を増やしても、品質段階は混ぜない。</h2>
           </div>
           <ol className={styles.ladder}>
-            <li><strong>1</strong><span>全国登録済み</span><p>コード・名称・地域・公式URL候補を登録。</p></li>
+            <li><strong>1</strong><span>全国登録済み</span><p>コード・名称・地域・公式URLを登録。</p></li>
             <li><strong>2</strong><span>公式入口確認済み</span><p>自治体の公式入口を確認済み。</p></li>
-            <li><strong>3</strong><span>計画資料索引済み</span><p>総合計画・実施計画の公式入口を固定。</p></li>
-            <li><strong>4</strong><span>現行計画確認済み</span><p>後継計画、改定、計画期間を確認。</p></li>
-            <li><strong>5</strong><span>Reviewedデータ公開</span><p>本文・数値・期間・単位を一次資料と照合。</p></li>
+            <li><strong>3</strong><span>政策計画入口索引済み</span><p>総合計画、長期ビジョン、総合戦略、政策集等の入口を固定。</p></li>
+            <li><strong>4</strong><span>現行性確認済み</span><p>後継計画、改定、計画期間を確認。</p></li>
+            <li><strong>5</strong><span>資料インベントリ</span><p>実施計画、KPI、年度評価、予算、事業評価を個別に索引。</p></li>
+            <li><strong>6</strong><span>Reviewedデータ公開</span><p>本文・数値・期間・単位を一次資料と照合。</p></li>
           </ol>
         </section>
 
@@ -96,7 +116,7 @@ export default function MunicipalitiesPage() {
           <p className="eyebrow">47 prefectures</p>
           <h2>地域ごとの全国カバレッジ</h2>
           <p className={styles.sectionLead}>
-            第1波は各地域の拠点9都道府県です。候補URL、計画入口、現行性、Reviewed状態を分け、確認が終わった段階だけを昇格します。
+            全47都道府県で公式入口、政策計画入口、現行性を確認済みです。第1波は各地域の拠点9都道府県とし、実施計画・KPI・年度評価・予算の深掘りを進めます。
           </p>
 
           <CoverageExplorer />
@@ -104,9 +124,9 @@ export default function MunicipalitiesPage() {
 
         <section className="contentSection">
           <p className="eyebrow">Wave 1 review queue</p>
-          <h2>宮城県{miyagiPolicyReviewStats.reviewedTargetGroups}目標のKPI本文を全件公開。次は年度実績との接続。</h2>
+          <h2>宮城県{miyagiPolicyReviewStats.reviewedTargetGroups}目標を全件Reviewed化し、年度実績を接続中。</h2>
           <p className={styles.sectionLead}>
-            福岡県を基準実装とし、北海道では18政策分野・108指標・Evidence Packet 108件のReviewed工程を完了しました。宮城県では128目標グループ・149系列を全件Reviewed化しました。年度実績との接続は別工程として残し、順位は評価点ではなく資料構造と作業依存関係に基づく運用順です。
+            福岡県を基準実装とし、北海道では18政策分野・108指標・Evidence Packet 108件のReviewed工程を完了しました。宮城県では128目標グループ・149系列を全件Reviewed化し、{miyagiKpiActualStats.linkedSeries}系列を年度実績へ直接接続しています。順位は評価点ではなく資料構造と作業依存関係に基づく運用順です。
           </p>
 
           <div className={styles.queueSummary} aria-label="第1波Reviewed化の進捗">
@@ -195,9 +215,9 @@ export default function MunicipalitiesPage() {
         <section className="callout callout--dark">
           <div>
             <p className="eyebrow">Active review</p>
-            <h2>宮城県の{miyagiPolicyReviewStats.reviewedTargetGroups}目標を全件公開。年度実績は未接続と明示する。</h2>
+            <h2>宮城県の{miyagiPolicyReviewStats.reviewedTargetGroups}目標を全件公開し、{miyagiKpiActualStats.linkedSeries}系列を年度実績へ接続。</h2>
             <p>
-              初期値・現況値・中期末目標・後期末目標を原文のまま確認できます。後期末目標の「－」は0にせず未設定、複数系列や累計値は単一値や単年度値に変換せず表示しています。
+              初期値・現況値・中期末目標・後期末目標と年度実績を分離して確認できます。後期末目標の「－」は0にせず未設定、複数系列や累計値は単一値や単年度値に変換せず表示しています。
             </p>
           </div>
           <Link className="primaryAction" href="/municipalities/miyagi">
