@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 
 import { aichiPolicyIndicatorStats } from "@/lib/aichiIndicators";
+import { hiroshimaIndicatorStats } from "@/lib/hiroshimaIndicators";
 import {
   nationwidePrefectureCoverage,
   nationwideSourceInventoryByCode,
@@ -53,9 +54,11 @@ function displayedSourceStatus(
     prefectureCode === "23" && aichiPolicyIndicatorStats.indicatorRows > 0;
   const osakaReviewed =
     prefectureCode === "27" && osakaIndicatorStats.indicatorRows > 0;
+  const hiroshimaReviewed =
+    prefectureCode === "34" && hiroshimaIndicatorStats.reviewedIndicators > 0;
   if (
     category === "kpi_source" &&
-    (tokyoReviewed || aichiReviewed || osakaReviewed) &&
+    (tokyoReviewed || aichiReviewed || osakaReviewed || hiroshimaReviewed) &&
     status === "indexed"
   ) {
     return "reviewed";
@@ -210,7 +213,9 @@ export function CoverageExplorer() {
                         ? `進捗管理指標${aichiPolicyIndicatorStats.indicatorRows}件・${aichiPolicyIndicatorStats.indicatorSeries}系列をReviewed済み。次に管理事業評価との対応を検証する。`
                         : record.prefecture_code === "27"
                           ? `現行戦略の${osakaIndicatorStats.indicatorRows}指標・${osakaIndicatorStats.indicatorSeries}系列をReviewed済み。次に事業一覧と年次更新を別レイヤーで接続する。`
-                          : inventory?.next_action ?? "資料インベントリを確認中";
+                          : record.prefecture_code === "34"
+                            ? `改定版ビジョンの${hiroshimaIndicatorStats.reviewedIndicators}指標をReviewed済み。次に新アクションプランと年度実績を定義照合する。`
+                            : inventory?.next_action ?? "資料インベントリを確認中";
                   return (
                     <article className={styles.prefectureCard} key={record.prefecture_code}>
                       <div className={styles.prefectureTop}>
