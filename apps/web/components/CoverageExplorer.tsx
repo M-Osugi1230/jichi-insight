@@ -15,6 +15,7 @@ import {
   type SourceInventoryCategory,
   type SourceInventoryStatus,
 } from "@/lib/nationwideCoverage";
+import { osakaIndicatorStats } from "@/lib/osakaIndicators";
 import { tokyoPolicyTargetStats } from "@/lib/tokyoPolicyTargets";
 
 import { StatusBadge } from "./StatusBadge";
@@ -50,9 +51,11 @@ function displayedSourceStatus(
     prefectureCode === "13" && tokyoPolicyTargetStats.reviewedTargetGroups > 0;
   const aichiReviewed =
     prefectureCode === "23" && aichiPolicyIndicatorStats.indicatorRows > 0;
+  const osakaReviewed =
+    prefectureCode === "27" && osakaIndicatorStats.indicatorRows > 0;
   if (
     category === "kpi_source" &&
-    (tokyoReviewed || aichiReviewed) &&
+    (tokyoReviewed || aichiReviewed || osakaReviewed) &&
     status === "indexed"
   ) {
     return "reviewed";
@@ -205,7 +208,9 @@ export function CoverageExplorer() {
                       ? "政策目標一覧60ページ・25分野・304目標カードをReviewed済み。次に年度実績を定義照合する。"
                       : record.prefecture_code === "23"
                         ? `進捗管理指標${aichiPolicyIndicatorStats.indicatorRows}件・${aichiPolicyIndicatorStats.indicatorSeries}系列をReviewed済み。次に管理事業評価との対応を検証する。`
-                        : inventory?.next_action ?? "資料インベントリを確認中";
+                        : record.prefecture_code === "27"
+                          ? `現行戦略の${osakaIndicatorStats.indicatorRows}指標・${osakaIndicatorStats.indicatorSeries}系列をReviewed済み。次に事業一覧と年次更新を別レイヤーで接続する。`
+                          : inventory?.next_action ?? "資料インベントリを確認中";
                   return (
                     <article className={styles.prefectureCard} key={record.prefecture_code}>
                       <div className={styles.prefectureTop}>
