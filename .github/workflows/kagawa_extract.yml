@@ -25,13 +25,13 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y poppler-utils
       - name: Download official Kagawa indicator revision PDF
         run: |
-          curl --fail --location --retry 4 --output /tmp/kagawa-indicators.pdf \
+          mkdir -p data/raw
+          curl --fail --location --retry 4 --output data/raw/kagawa_indicator_revision_2026.pdf \
             https://www.pref.kagawa.lg.jp/documents/36520/shiryou3_shihyouminaoshi.pdf
-          test "$(stat -c%s /tmp/kagawa-indicators.pdf)" -gt 100000
+          test "$(stat -c%s data/raw/kagawa_indicator_revision_2026.pdf)" -gt 100000
       - name: Extract layout-preserving text
         run: |
-          mkdir -p data/raw
-          pdftotext -layout -nopgbrk /tmp/kagawa-indicators.pdf data/raw/kagawa_indicator_revision_2026.txt
+          pdftotext -layout -nopgbrk data/raw/kagawa_indicator_revision_2026.pdf data/raw/kagawa_indicator_revision_2026.txt
           python - <<'PY'
           from pathlib import Path
           path = Path('data/raw/kagawa_indicator_revision_2026.txt')
@@ -40,9 +40,11 @@ jobs:
           assert '135' in text and '県人口' in text
           print(len(text), text.count('\n'))
           PY
-      - name: Upload extracted official text
+      - name: Upload official PDF and extracted text
         uses: actions/upload-artifact@v4
         with:
-          name: kagawa-indicator-revision-text
-          path: data/raw/kagawa_indicator_revision_2026.txt
+          name: kagawa-indicator-revision-source
+          path: |
+            data/raw/kagawa_indicator_revision_2026.pdf
+            data/raw/kagawa_indicator_revision_2026.txt
           retention-days: 7
