@@ -16,7 +16,9 @@ The nine regional anchors are:
 - 福岡県
 - 沖縄県
 
-北海道、宮城県、福岡県は数値目標にEvidence Packet付きReviewedデータがあります。東京都、愛知県、大阪府、広島県、香川県、沖縄県は、政策計画、実施計画、KPI、年度評価、予算、事業評価の公式入口を6カテゴリで索引化しました。
+北海道、宮城県、福岡県に加え、東京都の最初の政策領域にEvidence Packet付きReviewedデータがあります。東京都は「2050東京戦略 政策目標一覧」全60ページを位置索引し、PDFページ1〜2の子供分野8目標・9系列をReviewed化しました。残る58ページは未Reviewedのまま明示しています。
+
+愛知県、大阪府、広島県、香川県、沖縄県は、政策計画、実施計画、KPI、年度評価、予算、事業評価の公式入口を6カテゴリで索引化しています。
 
 ## Source discovery rules
 
@@ -32,6 +34,10 @@ The nine regional anchors are:
 ### 東京都
 
 2050東京戦略の公式ページから、戦略本体、3か年アクションプラン、政策目標一覧、政策レビューを別の役割として追跡します。
+
+現在のReviewed範囲は政策目標一覧PDFページ1〜2です。下限型の割合目標、定性的な継続実施目標、母集団が異なる2系列、全62区市町村への整備・維持目標を原文どおり保持しています。2025年政策レビューの実績を2026年政策目標へ自動接続しません。
+
+次のレビュー単位は「02 子育て」PDFページ3〜4です。
 
 ### 愛知県
 
@@ -63,4 +69,4 @@ Phase 8は次をすべて満たした場合だけ`complete`になります。
 - 目標値と年度実績の混同0
 - 各公開ページの静的出力検証とProduction Smoke成功
 
-現在の正本は `data/catalog/regional_anchor_source_registry.json` と `data/catalog/phase8_completion.json` です。
+現在の正本は `data/catalog/regional_anchor_source_registry.json`、`data/catalog/phase8_completion.json`、東京都については `data/catalog/tokyo_policy_target_review_manifest.json` です。
