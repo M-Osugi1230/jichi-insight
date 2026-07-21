@@ -10,7 +10,7 @@
     "indexed_policy_plan_entries": 47,
     "current_policy_plan_entries": 47,
     "source_inventory_records": 47,
-    "published_prefecture_pages": 7
+    "published_prefecture_pages": 8
   },
   "gates": [
     {"id":"registry_integrity","status":"passed","evidence_paths":["data/catalog/prefecture_coverage.json","tests/test_prefecture_coverage.py"]},
