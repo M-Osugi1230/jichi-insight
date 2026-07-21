@@ -1,12 +1,13 @@
 {
   "id": "wave1-policy-review-queue",
   "updated_at": "2026-07-21",
-  "active_prefecture_code": "23",
+  "active_prefecture_code": "27",
   "completed_prefecture_codes": [
     "40",
     "01",
     "04",
-    "13"
+    "13",
+    "23"
   ],
   "items": [
     {
@@ -57,15 +58,15 @@
       "prefecture_code": "23",
       "municipality_key": "aichi-prefecture",
       "order": 3,
-      "status": "active_review",
+      "status": "reviewed_reference",
       "source_ids": [
         "policy-source-aichi-vision-2030"
       ],
       "current_plan_title": "あいちビジョン2030",
-      "source_inventory_status": "plan_followup_entry_indexed",
-      "next_gate": "kpi_catalog",
-      "next_action": "2024-2026実施計画の進行管理指標を位置索引し、最初の政策分野からEvidence付きReviewed化する。",
-      "priority_basis": "計画から年次フォローアップまでを追う継続監視モデルの検証対象。"
+      "source_inventory_status": "reviewed",
+      "next_gate": "management_evaluation_linkage",
+      "next_action": "56指標行・62系列をEvidence付きでReviewed済み。61系列の現状値、29系列の数値目標、再掲2件、目標改定1件を保持し、次に296管理事業の評価との対応を別レイヤーで検証する。",
+      "priority_basis": "年次レポートの進捗指標と管理事業評価を別レイヤーで扱う継続監視モデルの基準実装。"
     },
     {
       "prefecture_code": "37",
@@ -127,15 +128,15 @@
       "prefecture_code": "27",
       "municipality_key": "osaka-prefecture",
       "order": 8,
-      "status": "queued",
+      "status": "active_review",
       "source_ids": [
         "policy-source-osaka-beyond-expo-2025"
       ],
       "current_plan_title": "Beyond EXPO 2025",
       "source_inventory_status": "strategic_plan_indexed",
-      "next_gate": "source_inventory",
-      "next_action": "新戦略の政策階層、KPI、実行・進捗資料の公式入口を固定する。",
-      "priority_basis": "2026年策定の新戦略で資料体系が新しく、更新状況を確認しながら扱う。"
+      "next_gate": "kpi_catalog",
+      "next_action": "分野別行政計画群の政策体系と数値目標を索引し、公式の実現状況データからEvidence付きReviewed化する。",
+      "priority_basis": "2026年策定の新戦略と分野別行政計画群を接続する次の地域基準実装。"
     }
   ]
 }

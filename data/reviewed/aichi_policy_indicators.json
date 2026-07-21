@@ -1,0 +1,3240 @@
+{
+  "id": "aichi-vision-2030-progress-indicator-catalog-2025",
+  "municipality_key": "aichi-prefecture",
+  "prefecture_code": "23",
+  "source_id": "aichi-report-2025-progress-indicators",
+  "target_source_id": "aichi-vision-2030-2024-2026-progress-targets",
+  "source_title": "あいちビジョン2030の進捗管理指標一覧（あいちレポート2025）",
+  "source_document_url": "https://www.pref.aichi.jp/uploaded/attachment/609270.pdf",
+  "target_source_document_url": "https://www.pref.aichi.jp/uploaded/attachment/530475.pdf",
+  "policy_direction_count": 11,
+  "indicator_row_count": 56,
+  "unique_indicator_count": 54,
+  "indicator_series_count": 62,
+  "series_with_current_value": 61,
+  "series_with_target_value": 29,
+  "repost_indicator_count": 2,
+  "policy_directions": [
+    {
+      "code": "00",
+      "name_original": "2030年度に向けた基本目標",
+      "indicator_row_count": 3,
+      "indicator_series_count": 3
+    },
+    {
+      "code": "01",
+      "name_original": "危機に強い安全・安心な地域づくり",
+      "indicator_row_count": 5,
+      "indicator_series_count": 5
+    },
+    {
+      "code": "02",
+      "name_original": "次代を創る人づくり",
+      "indicator_row_count": 5,
+      "indicator_series_count": 6
+    },
+    {
+      "code": "03",
+      "name_original": "すべての人が生涯にわたって活躍できる社会づくり",
+      "indicator_row_count": 6,
+      "indicator_series_count": 7
+    },
+    {
+      "code": "04",
+      "name_original": "安心と支え合いの社会づくり",
+      "indicator_row_count": 5,
+      "indicator_series_count": 6
+    },
+    {
+      "code": "05",
+      "name_original": "豊かな時間を生み出す働き方が可能な社会づくり",
+      "indicator_row_count": 4,
+      "indicator_series_count": 4
+    },
+    {
+      "code": "06",
+      "name_original": "イノベーションを巻き起こす力強い産業づくり",
+      "indicator_row_count": 6,
+      "indicator_series_count": 6
+    },
+    {
+      "code": "07",
+      "name_original": "世界とつながるグローバルネットワークづくり",
+      "indicator_row_count": 5,
+      "indicator_series_count": 5
+    },
+    {
+      "code": "08",
+      "name_original": "日本中央回廊の中心を担う大都市圏づくり",
+      "indicator_row_count": 5,
+      "indicator_series_count": 5
+    },
+    {
+      "code": "09",
+      "name_original": "選ばれる魅力的な地域づくり",
+      "indicator_row_count": 6,
+      "indicator_series_count": 6
+    },
+    {
+      "code": "10",
+      "name_original": "持続可能な地域づくり",
+      "indicator_row_count": 6,
+      "indicator_series_count": 9
+    }
+  ],
+  "items": [
+    {
+      "id": "aichi-indicator-001",
+      "display_order": 1,
+      "policy_direction_code": "00",
+      "policy_direction_name_original": "2030年度に向けた基本目標",
+      "indicator_name_original": "県民の幸福感",
+      "source_page": 1,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "点",
+          "direction": "maintain_above",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2013年度",
+              "value": 5.7,
+              "value_text_original": "5.7点",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "baseline",
+              "period": "2015年度",
+              "value": 6.3,
+              "value_text_original": "6.3点",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "baseline",
+              "period": "2017年度",
+              "value": 7.2,
+              "value_text_original": "7.2点",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "baseline",
+              "period": "2019年度",
+              "value": 6.7,
+              "value_text_original": "6.7点",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2025年度",
+              "value": 6.8,
+              "value_text_original": "6.8点",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "～2026年度",
+              "value": 6.5,
+              "value_text_original": "平均6.5点超の維持",
+              "status": "numeric",
+              "operator": "minimum",
+              "aggregation_scope": "multi_period_average"
+            }
+          ],
+          "comparability_note_original": "複数年の平均を6.5点超で維持する目標。単年度の6.8点と直接同一視しない。"
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 1,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-002",
+      "display_order": 2,
+      "policy_direction_code": "00",
+      "policy_direction_name_original": "2030年度に向けた基本目標",
+      "indicator_name_original": "県内総生産の国内総生産に対するシェア",
+      "source_page": 1,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "％",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2017年度",
+              "value": 7.4,
+              "value_text_original": "7.4％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2023年度",
+              "value": 7.7,
+              "value_text_original": "7.7％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "2027年度",
+              "value": 7.6,
+              "value_text_original": "7.6％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 1,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-003",
+      "display_order": 3,
+      "policy_direction_code": "00",
+      "policy_direction_name_original": "2030年度に向けた基本目標",
+      "indicator_name_original": "温室効果ガスの総排出量の削減率（2013年度比）",
+      "source_page": 1,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "％削減",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2017年度",
+              "value": 1.0,
+              "value_text_original": "1.0％削減",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2022年度",
+              "value": 14.9,
+              "value_text_original": "14.9％削減",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "2030年度",
+              "value": 46.0,
+              "value_text_original": "46％削減",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": "2013年度比の削減率。排出量そのものではない。"
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 1,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-004",
+      "display_order": 4,
+      "policy_direction_code": "01",
+      "policy_direction_name_original": "危機に強い安全・安心な地域づくり",
+      "indicator_name_original": "家具の固定率",
+      "source_page": 1,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "％",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年度",
+              "value": 61.7,
+              "value_text_original": "61.7％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2025年度",
+              "value": 56.4,
+              "value_text_original": "56.4％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "2026年度",
+              "value": 65.0,
+              "value_text_original": "65％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 1,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-005",
+      "display_order": 5,
+      "policy_direction_code": "01",
+      "policy_direction_name_original": "危機に強い安全・安心な地域づくり",
+      "indicator_name_original": "自助、共助の取組を推進する防災人材の育成数",
+      "source_page": 1,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "人",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年度",
+              "value": 2319,
+              "value_text_original": "2,319人",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2025年度",
+              "value": 2995,
+              "value_text_original": "2,995人",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "未設定",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 0,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-006",
+      "display_order": 6,
+      "policy_direction_code": "01",
+      "policy_direction_name_original": "危機に強い安全・安心な地域づくり",
+      "indicator_name_original": "事業継続計画を策定している中小企業割合",
+      "source_page": 1,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "％",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年度",
+              "value": 9.7,
+              "value_text_original": "9.7％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2025年度",
+              "value": 13.7,
+              "value_text_original": "13.7％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "2026年度",
+              "value": 14.8,
+              "value_text_original": "14.8％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 1,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-007",
+      "display_order": 7,
+      "policy_direction_code": "01",
+      "policy_direction_name_original": "危機に強い安全・安心な地域づくり",
+      "indicator_name_original": "交通事故死者数",
+      "source_page": 1,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "人",
+          "direction": "decrease",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年",
+              "value": 156,
+              "value_text_original": "156人",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2025年",
+              "value": 112,
+              "value_text_original": "112人",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "2025年",
+              "value": 125,
+              "value_text_original": "125人以下",
+              "status": "numeric",
+              "operator": "maximum",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": "現状値と目標値は同じ2025年表記だが、資料上の役割を分けて保持する。"
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 1,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-008",
+      "display_order": 8,
+      "policy_direction_code": "01",
+      "policy_direction_name_original": "危機に強い安全・安心な地域づくり",
+      "indicator_name_original": "刑法犯認知件数",
+      "source_page": 1,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "件",
+          "direction": "decrease",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年",
+              "value": 49956,
+              "value_text_original": "49,956件",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2025年",
+              "value": 56515,
+              "value_text_original": "56,515件",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "未設定",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 0,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-009",
+      "display_order": 9,
+      "policy_direction_code": "02",
+      "policy_direction_name_original": "次代を創る人づくり",
+      "indicator_name_original": "県立全日制高等学校におけるインターンシップ等に参加した生徒数",
+      "source_page": 1,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "人",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年度",
+              "value": 20257,
+              "value_text_original": "20,257人",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年度",
+              "value": 11482,
+              "value_text_original": "11,482人",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "未設定",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 0,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-010",
+      "display_order": 10,
+      "policy_direction_code": "02",
+      "policy_direction_name_original": "次代を創る人づくり",
+      "indicator_name_original": "公立小中学校での特別支援学級及び通級指導教室の設置数",
+      "source_page": 1,
+      "repost_of": null,
+      "series": [
+        {
+          "label": "特別支援学級",
+          "unit_original": "学級",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年度",
+              "value": 3590,
+              "value_text_original": "3,590学級",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2025年度",
+              "value": 4626,
+              "value_text_original": "4,626学級",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "未設定",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        },
+        {
+          "label": "通級指導教室",
+          "unit_original": "教室",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年度",
+              "value": 348,
+              "value_text_original": "348教室",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2025年度",
+              "value": 662.5,
+              "value_text_original": "662.5教室",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "未設定",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": "公式資料の現状値は662.5教室。整数へ丸めない。"
+        }
+      ],
+      "linked_current_series_count": 2,
+      "target_series_count": 0,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-011",
+      "display_order": 11,
+      "policy_direction_code": "02",
+      "policy_direction_name_original": "次代を創る人づくり",
+      "indicator_name_original": "県立高等学校第3学年において、英検準2級以上を取得している生徒及び英検準2級以上相当の英語力を有すると思われる生徒の割合",
+      "source_page": 1,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "％",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年度",
+              "value": 36.7,
+              "value_text_original": "36.7％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年度",
+              "value": 46.6,
+              "value_text_original": "46.6％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "2026年度",
+              "value": 48.0,
+              "value_text_original": "48％程度",
+              "status": "numeric",
+              "operator": "approximate",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 1,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-012",
+      "display_order": 12,
+      "policy_direction_code": "02",
+      "policy_direction_name_original": "次代を創る人づくり",
+      "indicator_name_original": "授業中にICTを活用して指導できる公立学校の教員の割合",
+      "source_page": 1,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "％",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年度",
+              "value": 62.8,
+              "value_text_original": "62.8％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年度",
+              "value": 77.4,
+              "value_text_original": "77.4％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "2026年度",
+              "value": 100.0,
+              "value_text_original": "100％程度",
+              "status": "numeric",
+              "operator": "approximate",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": "2024-2026実施計画では100％（2025年度）、2025年次レポートでは100％程度（2026年度）へ更新。"
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 1,
+      "target_revision_status": "revised_in_2025_report",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-013",
+      "display_order": 13,
+      "policy_direction_code": "02",
+      "policy_direction_name_original": "次代を創る人づくり",
+      "indicator_name_original": "愛知県公立学校教員採用選考試験の志願者倍率",
+      "source_page": 1,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "倍",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年度",
+              "value": 5.1,
+              "value_text_original": "5.1倍",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2026年度",
+              "value": 3.3,
+              "value_text_original": "3.3倍",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "未設定",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 0,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-014",
+      "display_order": 14,
+      "policy_direction_code": "03",
+      "policy_direction_name_original": "すべての人が生涯にわたって活躍できる社会づくり",
+      "indicator_name_original": "労働力率",
+      "source_page": 2,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "％",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年",
+              "value": 64.5,
+              "value_text_original": "64.5％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 65.8,
+              "value_text_original": "65.8％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "2026年",
+              "value": 64.5,
+              "value_text_original": "64.5％を上回る",
+              "status": "numeric",
+              "operator": "minimum",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 1,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-015",
+      "display_order": 15,
+      "policy_direction_code": "03",
+      "policy_direction_name_original": "すべての人が生涯にわたって活躍できる社会づくり",
+      "indicator_name_original": "管理的職業従事者に占める女性の割合",
+      "source_page": 2,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "％",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2017年",
+              "value": 13.5,
+              "value_text_original": "13.5％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2022年",
+              "value": 14.4,
+              "value_text_original": "14.4％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "2025年",
+              "value": 20.0,
+              "value_text_original": "20％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 1,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-016",
+      "display_order": 16,
+      "policy_direction_code": "03",
+      "policy_direction_name_original": "すべての人が生涯にわたって活躍できる社会づくり",
+      "indicator_name_original": "共働き世帯の夫・妻の一週間の育児・家事関連平均時間",
+      "source_page": 2,
+      "repost_of": null,
+      "series": [
+        {
+          "label": "夫",
+          "unit_original": "分",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2016年",
+              "value": 34,
+              "value_text_original": "34分",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2021年",
+              "value": 50,
+              "value_text_original": "50分",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "未設定",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        },
+        {
+          "label": "妻",
+          "unit_original": "分",
+          "direction": "decrease_or_rebalance",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2016年",
+              "value": 255,
+              "value_text_original": "255分",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2021年",
+              "value": 267,
+              "value_text_original": "267分",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "未設定",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": "夫と妻は別系列。単純合算や男女差の評価をしない。"
+        }
+      ],
+      "linked_current_series_count": 2,
+      "target_series_count": 0,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-017",
+      "display_order": 17,
+      "policy_direction_code": "03",
+      "policy_direction_name_original": "すべての人が生涯にわたって活躍できる社会づくり",
+      "indicator_name_original": "高齢者（65歳以上）の労働力率",
+      "source_page": 2,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "％",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年",
+              "value": 25.9,
+              "value_text_original": "25.9％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 27.5,
+              "value_text_original": "27.5％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "未設定",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 0,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-018",
+      "display_order": 18,
+      "policy_direction_code": "03",
+      "policy_direction_name_original": "すべての人が生涯にわたって活躍できる社会づくり",
+      "indicator_name_original": "若者（25歳～44歳）の完全失業者数",
+      "source_page": 2,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "千人",
+          "direction": "decrease",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年",
+              "value": 34,
+              "value_text_original": "34千人",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 32,
+              "value_text_original": "32千人",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "未設定",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 0,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-019",
+      "display_order": 19,
+      "policy_direction_code": "03",
+      "policy_direction_name_original": "すべての人が生涯にわたって活躍できる社会づくり",
+      "indicator_name_original": "民間企業における障害者の実雇用率",
+      "source_page": 2,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "％",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年",
+              "value": 2.02,
+              "value_text_original": "2.02％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2025年",
+              "value": 2.4,
+              "value_text_original": "2.40％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "2026年",
+              "value": 2.7,
+              "value_text_original": "法定雇用率（2.7％）の達成（2026年7月以降）",
+              "status": "numeric",
+              "operator": "minimum",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": "法定雇用率は2026年7月以降2.7％。制度条件を数値から切り離さない。"
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 1,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-020",
+      "display_order": 20,
+      "policy_direction_code": "04",
+      "policy_direction_name_original": "安心と支え合いの社会づくり",
+      "indicator_name_original": "平均理想子ども数と平均予定子ども数の差",
+      "source_page": 2,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "人",
+          "direction": "decrease",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2018年度",
+              "value": 0.38,
+              "value_text_original": "0.38人",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2023年度",
+              "value": 0.35,
+              "value_text_original": "0.35人",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "2026年度",
+              "value": 0.35,
+              "value_text_original": "0.35人程度",
+              "status": "numeric",
+              "operator": "approximate",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 1,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-021",
+      "display_order": 21,
+      "policy_direction_code": "04",
+      "policy_direction_name_original": "安心と支え合いの社会づくり",
+      "indicator_name_original": "介護職員の離職率",
+      "source_page": 2,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "％",
+          "direction": "decrease",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年",
+              "value": 16.5,
+              "value_text_original": "16.5％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 14.0,
+              "value_text_original": "14.0％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "未設定",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 0,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-022",
+      "display_order": 22,
+      "policy_direction_code": "04",
+      "policy_direction_name_original": "安心と支え合いの社会づくり",
+      "indicator_name_original": "地域生活支援拠点等が有する機能の充実に取り組む市町村数",
+      "source_page": 2,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "市町村",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "策定時",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年度",
+              "value": "全市町村（予定含む）",
+              "value_text_original": "2024年度事業の運用状況に対する検証等の実施：全市町村（予定含む）",
+              "status": "qualitative",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "2026年度",
+              "value": "全市町村",
+              "value_text_original": "全市町村",
+              "status": "qualitative",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": "現状は機能整備数ではなく、運用状況の検証等を実施する市町村の状態。"
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 1,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-023",
+      "display_order": 23,
+      "policy_direction_code": "04",
+      "policy_direction_name_original": "安心と支え合いの社会づくり",
+      "indicator_name_original": "健康寿命",
+      "source_page": 2,
+      "repost_of": null,
+      "series": [
+        {
+          "label": "男性",
+          "unit_original": "年",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2016年",
+              "value": 73.06,
+              "value_text_original": "73.06年〔全国3位〕",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2022年",
+              "value": 72.91,
+              "value_text_original": "72.91年〔全国15位〕",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "2026年度",
+              "value": 73.87,
+              "value_text_original": "73.87年以上",
+              "status": "numeric",
+              "operator": "minimum",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": "全国順位は参考情報であり、年数と混ぜない。"
+        },
+        {
+          "label": "女性",
+          "unit_original": "年",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2016年",
+              "value": 76.32,
+              "value_text_original": "76.32年〔全国1位〕",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2022年",
+              "value": 76.07,
+              "value_text_original": "76.07年〔全国6位〕",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "2026年度",
+              "value": 76.65,
+              "value_text_original": "76.65年以上",
+              "status": "numeric",
+              "operator": "minimum",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": "全国順位は参考情報であり、年数と混ぜない。"
+        }
+      ],
+      "linked_current_series_count": 2,
+      "target_series_count": 2,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-024",
+      "display_order": 24,
+      "policy_direction_code": "04",
+      "policy_direction_name_original": "安心と支え合いの社会づくり",
+      "indicator_name_original": "子ども食堂の箇所数",
+      "source_page": 2,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "か所",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年",
+              "value": 140,
+              "value_text_original": "140か所",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2025年",
+              "value": 629,
+              "value_text_original": "629か所",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "未設定",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 0,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-025",
+      "display_order": 25,
+      "policy_direction_code": "05",
+      "policy_direction_name_original": "豊かな時間を生み出す働き方が可能な社会づくり",
+      "indicator_name_original": "中小企業のテレワーク導入率",
+      "source_page": 2,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "％",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年",
+              "value": 3.0,
+              "value_text_original": "3％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 17.5,
+              "value_text_original": "17.5％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "未設定",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 0,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-026",
+      "display_order": 26,
+      "policy_direction_code": "05",
+      "policy_direction_name_original": "豊かな時間を生み出す働き方が可能な社会づくり",
+      "indicator_name_original": "愛知県ファミリー・フレンドリー企業の新規登録企業数",
+      "source_page": 2,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "企業",
+          "direction": "context_dependent",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年度",
+              "value": 187,
+              "value_text_original": "187企業",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年度",
+              "value": 82,
+              "value_text_original": "82企業",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "未設定",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": "新規登録数はストックではなく年度フロー。減少を直ちに後退と評価しない。"
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 0,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-027",
+      "display_order": 27,
+      "policy_direction_code": "05",
+      "policy_direction_name_original": "豊かな時間を生み出す働き方が可能な社会づくり",
+      "indicator_name_original": "一般労働者の年間総実労働時間数",
+      "source_page": 2,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "時間",
+          "direction": "decrease",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年",
+              "value": 1996,
+              "value_text_original": "1,996時間",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 1955,
+              "value_text_original": "1,955時間",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "2025年",
+              "value": 1950,
+              "value_text_original": "1,950時間",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 1,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-028",
+      "display_order": 28,
+      "policy_direction_code": "05",
+      "policy_direction_name_original": "豊かな時間を生み出す働き方が可能な社会づくり",
+      "indicator_name_original": "家計を主に支える者の通勤時間中位数",
+      "source_page": 2,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "分",
+          "direction": "decrease",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2018年",
+              "value": 28.7,
+              "value_text_original": "28.7分",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2023年",
+              "value": 27.5,
+              "value_text_original": "27.5分",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "未設定",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 0,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-029",
+      "display_order": 29,
+      "policy_direction_code": "06",
+      "policy_direction_name_original": "イノベーションを巻き起こす力強い産業づくり",
+      "indicator_name_original": "製造品出荷額等の全国シェア",
+      "source_page": 3,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "％",
+          "direction": "increase_or_maintain",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2018年",
+              "value": 14.7,
+              "value_text_original": "14.7％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2023年",
+              "value": 15.5,
+              "value_text_original": "15.5％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "2026年",
+              "value": 15.1,
+              "value_text_original": "15.1％程度",
+              "status": "numeric",
+              "operator": "approximate",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 1,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-030",
+      "display_order": 30,
+      "policy_direction_code": "06",
+      "policy_direction_name_original": "イノベーションを巻き起こす力強い産業づくり",
+      "indicator_name_original": "スタートアップと様々なプレーヤー間の共創による新規事業開発件数",
+      "source_page": 3,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "件",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年度",
+              "value": 10,
+              "value_text_original": "10件",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年度",
+              "value": 107,
+              "value_text_original": "107件",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "未設定",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 0,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-031",
+      "display_order": 31,
+      "policy_direction_code": "06",
+      "policy_direction_name_original": "イノベーションを巻き起こす力強い産業づくり",
+      "indicator_name_original": "次世代成長産業分野における立地件数",
+      "source_page": 3,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "件",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年度",
+              "value": 14,
+              "value_text_original": "14件",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2025年度",
+              "value": 6,
+              "value_text_original": "6件",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "未設定",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 0,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-032",
+      "display_order": 32,
+      "policy_direction_code": "06",
+      "policy_direction_name_original": "イノベーションを巻き起こす力強い産業づくり",
+      "indicator_name_original": "研究開発費の全国シェア",
+      "source_page": 3,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "％",
+          "direction": "increase_or_maintain",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2018年度",
+              "value": 14.2,
+              "value_text_original": "14.2％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2020年度",
+              "value": 15.7,
+              "value_text_original": "15.7％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "2026年度",
+              "value": 15.1,
+              "value_text_original": "15.1％程度",
+              "status": "numeric",
+              "operator": "approximate",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 1,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-033",
+      "display_order": 33,
+      "policy_direction_code": "06",
+      "policy_direction_name_original": "イノベーションを巻き起こす力強い産業づくり",
+      "indicator_name_original": "農業産出額",
+      "source_page": 3,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "億円",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2018年",
+              "value": 3115,
+              "value_text_original": "3,115億円",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3551,
+              "value_text_original": "3,551億円",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "2026年",
+              "value": 3180,
+              "value_text_original": "3,180億円程度",
+              "status": "numeric",
+              "operator": "approximate",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 1,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-034",
+      "display_order": 34,
+      "policy_direction_code": "06",
+      "policy_direction_name_original": "イノベーションを巻き起こす力強い産業づくり",
+      "indicator_name_original": "農家当たりの生産農業所得",
+      "source_page": 3,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "千円",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2018年",
+              "value": 3557,
+              "value_text_original": "3,557千円",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年度",
+              "value": 6151,
+              "value_text_original": "6,151千円",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "未設定",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": "策定時は生産農業所得／販売農家数、現状値は生産農業所得／農業経営体数。定義が異なるため直接比較しない。"
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 0,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-035",
+      "display_order": 35,
+      "policy_direction_code": "07",
+      "policy_direction_name_original": "世界とつながるグローバルネットワークづくり",
+      "indicator_name_original": "国際会議の開催件数",
+      "source_page": 3,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "件",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2018年",
+              "value": 216,
+              "value_text_original": "216件",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 96,
+              "value_text_original": "96件",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "2026年",
+              "value": 260,
+              "value_text_original": "260件",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 1,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-036",
+      "display_order": 36,
+      "policy_direction_code": "07",
+      "policy_direction_name_original": "世界とつながるグローバルネットワークづくり",
+      "indicator_name_original": "外国人延べ宿泊者数",
+      "source_page": 3,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "万人泊",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年",
+              "value": 363.4,
+              "value_text_original": "363.4万人泊",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 390.5,
+              "value_text_original": "390.5万人泊",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "未設定",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 0,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-037",
+      "display_order": 37,
+      "policy_direction_code": "07",
+      "policy_direction_name_original": "世界とつながるグローバルネットワークづくり",
+      "indicator_name_original": "輸出額の全国シェア",
+      "source_page": 3,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "％",
+          "direction": "increase_or_maintain",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年",
+              "value": 20.7,
+              "value_text_original": "20.7％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 20.0,
+              "value_text_original": "20.0％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "未設定",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 0,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-038",
+      "display_order": 38,
+      "policy_direction_code": "07",
+      "policy_direction_name_original": "世界とつながるグローバルネットワークづくり",
+      "indicator_name_original": "外国企業の誘致件数",
+      "source_page": 3,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "件",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年度",
+              "value": 9,
+              "value_text_original": "9件",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2021年度",
+              "value": 25,
+              "value_text_original": "25件",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "2024～2026年度",
+              "value": 35,
+              "value_text_original": "35件",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "cumulative"
+            }
+          ],
+          "comparability_note_original": "目標は2024～2026年度累計。2021年度値と同一期間ではない。"
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 1,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-039",
+      "display_order": 39,
+      "policy_direction_code": "07",
+      "policy_direction_name_original": "世界とつながるグローバルネットワークづくり",
+      "indicator_name_original": "県内で就職を目的として在留資格を変更した留学生数",
+      "source_page": 3,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "人",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2018年",
+              "value": 1183,
+              "value_text_original": "1,183人",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 1700,
+              "value_text_original": "約1,700人",
+              "status": "numeric",
+              "operator": "approximate",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "2026年",
+              "value": 1600,
+              "value_text_original": "1,600人",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 1,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-040",
+      "display_order": 40,
+      "policy_direction_code": "08",
+      "policy_direction_name_original": "日本中央回廊の中心を担う大都市圏づくり",
+      "indicator_name_original": "主要な拠点間のアクセスを強化する道路整備延長",
+      "source_page": 3,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "km",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "策定時",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "現状",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "進捗目標",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": "公式一覧では策定時・現状・進捗目標がすべて未掲載。"
+        }
+      ],
+      "linked_current_series_count": 0,
+      "target_series_count": 0,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-041",
+      "display_order": 41,
+      "policy_direction_code": "08",
+      "policy_direction_name_original": "日本中央回廊の中心を担う大都市圏づくり",
+      "indicator_name_original": "中部国際空港旅客数",
+      "source_page": 3,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "万人",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年度",
+              "value": 1260,
+              "value_text_original": "1,260万人",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年度",
+              "value": 1104,
+              "value_text_original": "1,104万人",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "未設定",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 0,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-042",
+      "display_order": 42,
+      "policy_direction_code": "08",
+      "policy_direction_name_original": "日本中央回廊の中心を担う大都市圏づくり",
+      "indicator_name_original": "県内港の貿易収支",
+      "source_page": 3,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "円",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年",
+              "value": "8兆9,150億円",
+              "value_text_original": "8兆9,150億円",
+              "status": "numeric_text",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": "11兆2,837億円",
+              "value_text_original": "11兆2,837億円",
+              "status": "numeric_text",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "未設定",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": "兆円・億円表記を原文のまま保持し、暗黙に単位換算しない。"
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 0,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-043",
+      "display_order": 43,
+      "policy_direction_code": "08",
+      "policy_direction_name_original": "日本中央回廊の中心を担う大都市圏づくり",
+      "indicator_name_original": "企業の本所（本社・本店）の数の全国シェア",
+      "source_page": 3,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "％",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2016年",
+              "value": 6.2,
+              "value_text_original": "6.2％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2021年",
+              "value": 6.2,
+              "value_text_original": "6.2％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "2026年",
+              "value": 6.5,
+              "value_text_original": "6.5％程度",
+              "status": "numeric",
+              "operator": "approximate",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 1,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-044",
+      "display_order": 44,
+      "policy_direction_code": "08",
+      "policy_direction_name_original": "日本中央回廊の中心を担う大都市圏づくり",
+      "indicator_name_original": "労働力人口の全国シェア",
+      "source_page": 3,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "％",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年",
+              "value": 6.1,
+              "value_text_original": "6.1％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2025年",
+              "value": 6.2,
+              "value_text_original": "6.2％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "2026年",
+              "value": 6.4,
+              "value_text_original": "6.4％程度",
+              "status": "numeric",
+              "operator": "approximate",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 1,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-045",
+      "display_order": 45,
+      "policy_direction_code": "09",
+      "policy_direction_name_original": "選ばれる魅力的な地域づくり",
+      "indicator_name_original": "来県者数",
+      "source_page": 4,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "万人回",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年",
+              "value": 4741,
+              "value_text_original": "4,741万人回",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 5017,
+              "value_text_original": "5,017万人回",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "未設定",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 0,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-046",
+      "display_order": 46,
+      "policy_direction_code": "09",
+      "policy_direction_name_original": "選ばれる魅力的な地域づくり",
+      "indicator_name_original": "観光消費額",
+      "source_page": 4,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "円",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年",
+              "value": "8,599億円",
+              "value_text_original": "8,599億円",
+              "status": "numeric_text",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": "12,131億円",
+              "value_text_original": "12,131億円",
+              "status": "numeric_text",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "2026年",
+              "value": "1.1兆円",
+              "value_text_original": "1.1兆円",
+              "status": "numeric_text",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": "億円と兆円を原文のまま保持する。"
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 1,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-047",
+      "display_order": 47,
+      "policy_direction_code": "09",
+      "policy_direction_name_original": "選ばれる魅力的な地域づくり",
+      "indicator_name_original": "愛知県を訪れる観光客の満足度",
+      "source_page": 4,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "％",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年",
+              "value": 84.4,
+              "value_text_original": "84.4％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 86.3,
+              "value_text_original": "86.3％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "未設定",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 0,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-048",
+      "display_order": 48,
+      "policy_direction_code": "09",
+      "policy_direction_name_original": "選ばれる魅力的な地域づくり",
+      "indicator_name_original": "外国人延べ宿泊者数",
+      "source_page": 4,
+      "repost_of": "aichi-indicator-036",
+      "series": [
+        {
+          "label": null,
+          "unit_original": "万人泊",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年",
+              "value": 363.4,
+              "value_text_original": "363.4万人泊",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 390.5,
+              "value_text_original": "390.5万人泊",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "未設定",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 0,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": "重要政策の方向性⑦からの再掲。重複集計しない。"
+    },
+    {
+      "id": "aichi-indicator-049",
+      "display_order": 49,
+      "policy_direction_code": "09",
+      "policy_direction_name_original": "選ばれる魅力的な地域づくり",
+      "indicator_name_original": "愛知県の転出入者数（社会増減数）",
+      "source_page": 4,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "人",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2000～2019年",
+              "value": 15018,
+              "value_text_original": "年平均15,018人",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "multi_period_average"
+            },
+            {
+              "role": "current",
+              "period": "2025年",
+              "value": 25805,
+              "value_text_original": "25,805人",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "2024～2026年",
+              "value": 42000,
+              "value_text_original": "4.2万人（年平均1.4万人）の転入超過",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "cumulative"
+            }
+          ],
+          "comparability_note_original": "外国人を含む。基準値は年平均、現状は単年、目標は3年累計で集計範囲が異なる。"
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 1,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-050",
+      "display_order": 50,
+      "policy_direction_code": "09",
+      "policy_direction_name_original": "選ばれる魅力的な地域づくり",
+      "indicator_name_original": "20代女性の東京圏への転出超過数",
+      "source_page": 4,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "人",
+          "direction": "decrease",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年",
+              "value": 2916,
+              "value_text_original": "2,916人",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3187,
+              "value_text_original": "3,187人",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "未設定",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 0,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-051",
+      "display_order": 51,
+      "policy_direction_code": "10",
+      "policy_direction_name_original": "持続可能な地域づくり",
+      "indicator_name_original": "温室効果ガスの総排出量の削減率（2013年度比）",
+      "source_page": 4,
+      "repost_of": "aichi-indicator-003",
+      "series": [
+        {
+          "label": null,
+          "unit_original": "％削減",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2017年度",
+              "value": 1.0,
+              "value_text_original": "1.0％削減",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2022年度",
+              "value": 14.9,
+              "value_text_original": "14.9％削減",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "2030年度",
+              "value": 46.0,
+              "value_text_original": "46％削減",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 1,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": "2030年度に向けた基本目標からの再掲。重複集計しない。"
+    },
+    {
+      "id": "aichi-indicator-052",
+      "display_order": 52,
+      "policy_direction_code": "10",
+      "policy_direction_name_original": "持続可能な地域づくり",
+      "indicator_name_original": "県民の「生物多様性」という言葉の意味の認識状況",
+      "source_page": 4,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "％",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2020年度",
+              "value": 51.2,
+              "value_text_original": "51.2％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2025年度",
+              "value": 55.7,
+              "value_text_original": "55.7％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "2025年度",
+              "value": 63.1,
+              "value_text_original": "63.1％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": "現状値と目標値は同じ2025年度表記。達成・未達は本データでは判定しない。"
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 1,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-053",
+      "display_order": 53,
+      "policy_direction_code": "10",
+      "policy_direction_name_original": "持続可能な地域づくり",
+      "indicator_name_original": "公共用水域における環境基準の達成状況",
+      "source_page": 4,
+      "repost_of": null,
+      "series": [
+        {
+          "label": "河川 BOD",
+          "unit_original": "％",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年度",
+              "value": 94,
+              "value_text_original": "94％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年度",
+              "value": 98,
+              "value_text_original": "98％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "未設定",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        },
+        {
+          "label": "海域 COD",
+          "unit_original": "％",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年度",
+              "value": 45,
+              "value_text_original": "45％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年度",
+              "value": 45,
+              "value_text_original": "45％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "未設定",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        },
+        {
+          "label": "海域 全窒素",
+          "unit_original": "％",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年度",
+              "value": 83,
+              "value_text_original": "83％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年度",
+              "value": 100,
+              "value_text_original": "100％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "未設定",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        },
+        {
+          "label": "海域 全りん",
+          "unit_original": "％",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年度",
+              "value": 100,
+              "value_text_original": "100％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年度",
+              "value": 83,
+              "value_text_original": "83％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "未設定",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 4,
+      "target_series_count": 0,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-054",
+      "display_order": 54,
+      "policy_direction_code": "10",
+      "policy_direction_name_original": "持続可能な地域づくり",
+      "indicator_name_original": "循環ビジネス等の事業化件数",
+      "source_page": 4,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "件",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年度",
+              "value": 8,
+              "value_text_original": "8件",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年度",
+              "value": 14,
+              "value_text_original": "14件",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "未設定",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 0,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-055",
+      "display_order": 55,
+      "policy_direction_code": "10",
+      "policy_direction_name_original": "持続可能な地域づくり",
+      "indicator_name_original": "一人一日当たりの家庭系ごみ排出量",
+      "source_page": 4,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "g",
+          "direction": "decrease",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2018年度",
+              "value": 517,
+              "value_text_original": "517g",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2023年度",
+              "value": 475,
+              "value_text_original": "475g",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "未設定",
+              "value": null,
+              "value_text_original": "－",
+              "status": "missing",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 0,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    },
+    {
+      "id": "aichi-indicator-056",
+      "display_order": 56,
+      "policy_direction_code": "10",
+      "policy_direction_name_original": "持続可能な地域づくり",
+      "indicator_name_original": "SDGsの理解度",
+      "source_page": 4,
+      "repost_of": null,
+      "series": [
+        {
+          "label": null,
+          "unit_original": "％",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2019年度",
+              "value": 7.7,
+              "value_text_original": "7.7％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年度",
+              "value": 68.8,
+              "value_text_original": "68.8％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "target",
+              "period": "2026年度",
+              "value": 70.9,
+              "value_text_original": "70.9％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ],
+          "comparability_note_original": ""
+        }
+      ],
+      "linked_current_series_count": 1,
+      "target_series_count": 1,
+      "target_revision_status": "unchanged_or_not_applicable",
+      "review_status": "reviewed",
+      "evaluation_status": "not_assessed",
+      "quality_note": ""
+    }
+  ],
+  "reviewed_at": "2026-07-21",
+  "review_status": "complete",
+  "confidence": "high",
+  "quality_note": "All 56 published indicator rows and 62 series are reviewed from the official 2025 follow-up list. Reposts remain explicit; target and current values are not converted into achievement judgments."
+}

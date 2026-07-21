@@ -1,0 +1,292 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.example/schemas/aichi_policy_indicators.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "municipality_key",
+    "prefecture_code",
+    "source_id",
+    "policy_direction_count",
+    "indicator_row_count",
+    "unique_indicator_count",
+    "indicator_series_count",
+    "series_with_current_value",
+    "series_with_target_value",
+    "repost_indicator_count",
+    "policy_directions",
+    "items",
+    "reviewed_at",
+    "review_status",
+    "confidence",
+    "quality_note"
+  ],
+  "properties": {
+    "id": {
+      "const": "aichi-vision-2030-progress-indicator-catalog-2025"
+    },
+    "municipality_key": {
+      "const": "aichi-prefecture"
+    },
+    "prefecture_code": {
+      "const": "23"
+    },
+    "source_id": {
+      "const": "aichi-report-2025-progress-indicators"
+    },
+    "target_source_id": {
+      "const": "aichi-vision-2030-2024-2026-progress-targets"
+    },
+    "source_title": {
+      "type": "string"
+    },
+    "source_document_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "target_source_document_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "policy_direction_count": {
+      "const": 11
+    },
+    "indicator_row_count": {
+      "const": 56
+    },
+    "unique_indicator_count": {
+      "const": 54
+    },
+    "indicator_series_count": {
+      "const": 62
+    },
+    "series_with_current_value": {
+      "const": 61
+    },
+    "series_with_target_value": {
+      "const": 29
+    },
+    "repost_indicator_count": {
+      "const": 2
+    },
+    "policy_directions": {
+      "type": "array",
+      "minItems": 11,
+      "maxItems": 11,
+      "items": {
+        "type": "object",
+        "required": [
+          "code",
+          "name_original",
+          "indicator_row_count",
+          "indicator_series_count"
+        ],
+        "properties": {
+          "code": {
+            "pattern": "^(00|0[1-9]|10)$"
+          },
+          "name_original": {
+            "type": "string"
+          },
+          "indicator_row_count": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "indicator_series_count": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "items": {
+      "type": "array",
+      "minItems": 56,
+      "maxItems": 56,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "display_order",
+          "policy_direction_code",
+          "policy_direction_name_original",
+          "indicator_name_original",
+          "source_page",
+          "repost_of",
+          "series",
+          "linked_current_series_count",
+          "target_series_count",
+          "target_revision_status",
+          "review_status",
+          "evaluation_status",
+          "quality_note"
+        ],
+        "properties": {
+          "id": {
+            "pattern": "^aichi-indicator-[0-9]{3}$"
+          },
+          "display_order": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 56
+          },
+          "policy_direction_code": {
+            "pattern": "^(00|0[1-9]|10)$"
+          },
+          "policy_direction_name_original": {
+            "type": "string"
+          },
+          "indicator_name_original": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_page": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4
+          },
+          "repost_of": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "series": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "label",
+                "unit_original",
+                "direction",
+                "values",
+                "comparability_note_original"
+              ],
+              "properties": {
+                "label": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "unit_original": {
+                  "type": "string"
+                },
+                "direction": {
+                  "type": "string"
+                },
+                "values": {
+                  "type": "array",
+                  "minItems": 3,
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "role",
+                      "period",
+                      "value",
+                      "value_text_original",
+                      "status",
+                      "operator",
+                      "aggregation_scope"
+                    ],
+                    "properties": {
+                      "role": {
+                        "enum": [
+                          "baseline",
+                          "current",
+                          "target"
+                        ]
+                      },
+                      "period": {
+                        "type": "string"
+                      },
+                      "value": {
+                        "type": [
+                          "number",
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "value_text_original": {
+                        "type": "string"
+                      },
+                      "status": {
+                        "enum": [
+                          "numeric",
+                          "numeric_text",
+                          "qualitative",
+                          "missing"
+                        ]
+                      },
+                      "operator": {
+                        "enum": [
+                          "exact",
+                          "minimum",
+                          "maximum",
+                          "approximate"
+                        ]
+                      },
+                      "aggregation_scope": {
+                        "enum": [
+                          "single_period",
+                          "cumulative",
+                          "multi_period_average"
+                        ]
+                      }
+                    },
+                    "additionalProperties": false
+                  }
+                },
+                "comparability_note_original": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "linked_current_series_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "target_series_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "target_revision_status": {
+            "enum": [
+              "unchanged_or_not_applicable",
+              "revised_in_2025_report"
+            ]
+          },
+          "review_status": {
+            "const": "reviewed"
+          },
+          "evaluation_status": {
+            "const": "not_assessed"
+          },
+          "quality_note": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "reviewed_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "review_status": {
+      "const": "complete"
+    },
+    "confidence": {
+      "const": "high"
+    },
+    "quality_note": {
+      "type": "string",
+      "minLength": 30
+    }
+  }
+}

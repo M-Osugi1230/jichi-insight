@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.example/schemas/aichi_policy_indicator_evidence.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "source_id",
+    "packet_count",
+    "packets"
+  ],
+  "properties": {
+    "id": {
+      "const": "aichi-vision-2030-progress-indicator-evidence-2025"
+    },
+    "source_id": {
+      "const": "aichi-report-2025-progress-indicators"
+    },
+    "packet_count": {
+      "const": 56
+    },
+    "packets": {
+      "type": "array",
+      "minItems": 56,
+      "maxItems": 56,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "subject_type",
+          "subject_id",
+          "source_page",
+          "claims",
+          "open_questions",
+          "review_status"
+        ],
+        "properties": {
+          "id": {
+            "pattern": "^evidence-aichi-indicator-[0-9]{3}$"
+          },
+          "subject_type": {
+            "const": "policy_progress_indicator"
+          },
+          "subject_id": {
+            "pattern": "^aichi-indicator-[0-9]{3}$"
+          },
+          "source_page": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4
+          },
+          "claims": {
+            "type": "array",
+            "minItems": 4,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "field",
+                "statement",
+                "source_ids",
+                "location_note",
+                "decision",
+                "review_note"
+              ],
+              "properties": {
+                "field": {
+                  "type": "string"
+                },
+                "statement": {
+                  "type": "string"
+                },
+                "source_ids": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "enum": [
+                      "aichi-report-2025-progress-indicators",
+                      "aichi-vision-2030-2024-2026-progress-targets"
+                    ]
+                  }
+                },
+                "location_note": {
+                  "type": "string"
+                },
+                "decision": {
+                  "const": "accepted"
+                },
+                "review_note": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "open_questions": {
+            "type": "array"
+          },
+          "review_status": {
+            "const": "reviewed"
+          }
+        }
+      }
+    }
+  }
+}

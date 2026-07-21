@@ -8,9 +8,9 @@
     "regional_anchors": 9,
     "anchors_with_plan_and_kpi_entrances": 9,
     "anchors_with_six_category_source_map": 6,
-    "anchors_with_reviewed_numeric_targets": 4,
-    "anchors_with_published_prefecture_pages": 4,
-    "anchors_pending_numeric_target_review": 5
+    "anchors_with_reviewed_numeric_targets": 5,
+    "anchors_with_published_prefecture_pages": 5,
+    "anchors_pending_numeric_target_review": 4
   },
   "gates": [
     {
@@ -38,7 +38,10 @@
         "data/entities/policy/tokyo_policy_target_catalog_children.json",
         "data/entities/policy/tokyo_policy_target_children_evidence_packets.json",
         "data/reviewed/tokyo_policy_target_cards.json",
-        "data/evidence/tokyo_policy_target_card_evidence.json"
+        "data/evidence/tokyo_policy_target_card_evidence.json",
+        "data/catalog/aichi_policy_indicator_review_manifest.json",
+        "data/reviewed/aichi_policy_indicators.json",
+        "data/evidence/aichi_policy_indicator_evidence.json"
       ]
     },
     {
@@ -49,7 +52,8 @@
         "tests/test_hokkaido_reviewed_indicator_sequence.py",
         "tests/test_miyagi_catalog_sequences.py",
         "tests/test_tokyo_policy_targets_children.py",
-        "tests/test_tokyo_policy_target_cards.py"
+        "tests/test_tokyo_policy_target_cards.py",
+        "tests/test_aichi_policy_indicators.py"
       ]
     },
     {
@@ -62,11 +66,10 @@
     }
   ],
   "next_review_order": [
-    "23",
     "27",
     "34",
     "37",
     "47"
   ],
-  "scope_note": "Phase 8 is complete only when all nine regional anchors have Evidence Packet-backed Reviewed numeric targets and the published pages pass static export and Production Smoke. Tokyo now has all 60 pages, 25 policy areas and 304 target cards Reviewed; its annual-result linkage remains a separate follow-up."
+  "scope_note": "Phase 8 is complete only when all nine regional anchors have Evidence Packet-backed Reviewed numeric targets and the published pages pass static export and Production Smoke. Tokyo and Aichi are complete target-review references; Osaka, Hiroshima, Kagawa and Okinawa remain."
 }

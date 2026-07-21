@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 
+import { aichiPolicyIndicatorStats } from "@/lib/aichiIndicators";
 import {
   nationwidePrefectureCoverage,
   nationwideSourceInventoryByCode,
@@ -45,10 +46,13 @@ function displayedSourceStatus(
   category: SourceInventoryCategory,
   status: SourceInventoryStatus,
 ): SourceInventoryStatus {
+  const tokyoReviewed =
+    prefectureCode === "13" && tokyoPolicyTargetStats.reviewedTargetGroups > 0;
+  const aichiReviewed =
+    prefectureCode === "23" && aichiPolicyIndicatorStats.indicatorRows > 0;
   if (
-    prefectureCode === "13" &&
     category === "kpi_source" &&
-    tokyoPolicyTargetStats.reviewedTargetGroups > 0 &&
+    (tokyoReviewed || aichiReviewed) &&
     status === "indexed"
   ) {
     return "reviewed";
@@ -198,8 +202,10 @@ export function CoverageExplorer() {
                   const inventory = nationwideSourceInventoryByCode.get(record.prefecture_code);
                   const nextAction =
                     record.prefecture_code === "13"
-                      ? `政策目標一覧60ページを索引済み。子供分野${tokyoPolicyTargetStats.reviewedTargetGroups}目標・${tokyoPolicyTargetStats.reviewedSeries}系列をReviewed化し、次に子育て分野を確認する。`
-                      : inventory?.next_action ?? "資料インベントリを確認中";
+                      ? "政策目標一覧60ページ・25分野・304目標カードをReviewed済み。次に年度実績を定義照合する。"
+                      : record.prefecture_code === "23"
+                        ? `進捗管理指標${aichiPolicyIndicatorStats.indicatorRows}件・${aichiPolicyIndicatorStats.indicatorSeries}系列をReviewed済み。次に管理事業評価との対応を検証する。`
+                        : inventory?.next_action ?? "資料インベントリを確認中";
                   return (
                     <article className={styles.prefectureCard} key={record.prefecture_code}>
                       <div className={styles.prefectureTop}>

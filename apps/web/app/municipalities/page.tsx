@@ -6,6 +6,7 @@ import { PageIntro } from "@/components/PageIntro";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { StatusBadge } from "@/components/StatusBadge";
+import { aichiPolicyIndicatorStats } from "@/lib/aichiIndicators";
 import { municipalityMeta, sourcesForMunicipality, type MunicipalityKey } from "@/lib/catalog";
 import { hokkaidoIndicatorReviewStats } from "@/lib/hokkaidoIndicators";
 import { miyagiKpiActualStats } from "@/lib/miyagiActuals";
@@ -76,7 +77,7 @@ export default function MunicipalitiesPage() {
           <div className={styles.sectionHeading}>
             <div>
               <p className="eyebrow">Deep dives</p>
-              <h2>いま、深く読める4都道府県。</h2>
+              <h2>いま、深く読める5都道府県。</h2>
             </div>
             <p>自治体ごとに公開できる深さが違うため、同じ「公開済み」として扱いません。</p>
           </div>
@@ -129,6 +130,18 @@ export default function MunicipalitiesPage() {
               <p>県・福岡市・北九州市の財政資料と、福岡県の政策体系を別々の前提で確認できます。</p>
               <Link href="/municipalities/fukuoka-prefecture">福岡県を見る →</Link>
             </article>
+            <article className={`${styles.deepDiveCard} ${styles.fukuoka}`}>
+              <div><span>23 / 愛知県</span><StatusBadge label="指標＋年次現状値" tone="verified" /></div>
+              <h3>56指標・62系列の進捗を読む。</h3>
+              <dl>
+                <div><dt>政策方向</dt><dd>{aichiPolicyIndicatorStats.policyDirections}</dd></div>
+                <div><dt>Reviewed指標</dt><dd>{aichiPolicyIndicatorStats.indicatorRows}</dd></div>
+                <div><dt>現状値接続</dt><dd>{aichiPolicyIndicatorStats.currentLinkedSeries}系列</dd></div>
+                <div><dt>Evidence</dt><dd>{aichiPolicyIndicatorStats.evidencePackets}</dd></div>
+              </dl>
+              <p>再掲、目標改定、複数系列、欠損、定義変更を保持し、管理事業評価を政策達成判定へ転用しません。</p>
+              <Link href="/municipalities/aichi">愛知県の進捗指標を見る →</Link>
+            </article>
           </div>
         </section>
 
@@ -171,7 +184,8 @@ export default function MunicipalitiesPage() {
               const stats = nationwideSourceInventoryStats[category];
               const reviewedOrHigher =
                 stats.reviewedOrHigher +
-                (category === "kpi_source" && tokyoPolicyTargetStats.reviewedTargetGroups > 0 ? 1 : 0);
+                (category === "kpi_source" && tokyoPolicyTargetStats.reviewedTargetGroups > 0 ? 1 : 0) +
+                (category === "kpi_source" && aichiPolicyIndicatorStats.indicatorRows > 0 ? 1 : 0);
               return (
                 <article key={category}>
                   <span>{sourceInventoryCategoryLabel(category)}</span>
@@ -212,7 +226,7 @@ export default function MunicipalitiesPage() {
               <p className="eyebrow">Regional anchors</p>
               <h2>次に深くつなぐ、9つの地域拠点。</h2>
             </div>
-            <p>順位付けではなく、地域バランスと資料構造に基づく整備順です。公開済み4地域と、次に資料を深掘りする5地域を示します。</p>
+            <p>順位付けではなく、地域バランスと資料構造に基づく整備順です。公開済み5地域と、次に資料を深掘りする4地域を示します。</p>
           </div>
           <div className={styles.roadmapGrid}>
             {waveOnePolicyReviewQueue.map((item) => {
@@ -224,9 +238,11 @@ export default function MunicipalitiesPage() {
                     ? "/municipalities/miyagi"
                     : item.prefecture_code === "13"
                       ? "/municipalities/tokyo"
-                      : item.prefecture_code === "40"
-                        ? "/municipalities/fukuoka-prefecture"
-                        : null;
+                      : item.prefecture_code === "23"
+                        ? "/municipalities/aichi"
+                        : item.prefecture_code === "40"
+                          ? "/municipalities/fukuoka-prefecture"
+                          : null;
               return (
                 <article key={item.prefecture_code}>
                   <div>

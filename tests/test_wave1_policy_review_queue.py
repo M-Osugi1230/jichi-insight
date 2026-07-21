@@ -23,24 +23,43 @@ def test_queue_schema_and_order():
     assert {item["prefecture_code"] for item in items} == set(
         coverage["regional_anchor_codes"]
     )
-    assert queue["completed_prefecture_codes"] == ["40", "01", "04", "13"]
-    assert queue["active_prefecture_code"] == "23"
+    assert queue["completed_prefecture_codes"] == ["40", "01", "04", "13", "23"]
+    assert queue["active_prefecture_code"] == "27"
 
 
-def test_aichi_is_active_after_tokyo_target_card_completion():
+def test_osaka_is_active_after_aichi_indicator_completion():
     queue = load(QUEUE_PATH)
     items = {item["prefecture_code"]: item for item in queue["items"]}
-    active = items["23"]
+    active = items["27"]
     assert active["status"] == "active_review"
     assert active["next_gate"] == "kpi_catalog"
     assert all(
         token in active["next_action"]
-        for token in ["2024-2026", "進行管理指標", "Evidence"]
+        for token in ["政策体系", "数値目標", "Evidence"]
     )
     assert {
         status: sum(item["status"] == status for item in queue["items"])
         for status in ["reviewed_reference", "active_review", "queued"]
-    } == {"reviewed_reference": 4, "active_review": 1, "queued": 4}
+    } == {"reviewed_reference": 5, "active_review": 1, "queued": 3}
+
+
+def test_aichi_is_complete_indicator_reference_with_evaluation_boundary_visible():
+    items = {
+        item["prefecture_code"]: item
+        for item in load(QUEUE_PATH)["items"]
+    }
+    aichi = items["23"]
+    assert aichi["status"] == "reviewed_reference"
+    assert aichi["source_inventory_status"] == "reviewed"
+    assert aichi["next_gate"] == "management_evaluation_linkage"
+    assert all(
+        token in aichi["next_action"]
+        for token in ["56", "62", "61", "29", "再掲", "目標改定"]
+    )
+    assert all(
+        token in aichi["priority_basis"]
+        for token in ["年次レポート", "管理事業評価", "別レイヤー"]
+    )
 
 
 def test_tokyo_is_complete_target_card_reference_with_actuals_work_visible():
@@ -55,10 +74,6 @@ def test_tokyo_is_complete_target_card_reference_with_actuals_work_visible():
     assert all(
         token in tokyo["next_action"]
         for token in ["60", "25", "304", "Evidence", "年度実績"]
-    )
-    assert all(
-        token in tokyo["priority_basis"]
-        for token in ["目標カード", "グラフ点列", "政策評価"]
     )
 
 
