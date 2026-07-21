@@ -55,7 +55,7 @@ def test_phase7_counts_are_derived_from_canonical_registries():
         "indexed_policy_plan_entries": 47,
         "current_policy_plan_entries": 47,
         "source_inventory_records": 47,
-        "published_prefecture_pages": 4,
+        "published_prefecture_pages": 5,
     }
 
 
@@ -67,7 +67,7 @@ def test_published_pages_are_unique_and_reference_registered_prefectures():
     codes = [record["prefecture_code"] for record in records]
     routes = [record["route"] for record in records]
 
-    assert codes == ["01", "04", "13", "40"]
+    assert codes == ["01", "04", "13", "23", "40"]
     assert len(codes) == len(set(codes))
     assert len(routes) == len(set(routes))
     assert set(codes) <= coverage_codes
