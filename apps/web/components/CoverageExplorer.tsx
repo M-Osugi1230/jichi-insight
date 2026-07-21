@@ -14,6 +14,7 @@ import {
   type SourceInventoryCategory,
   type SourceInventoryStatus,
 } from "@/lib/nationwideCoverage";
+import { tokyoPolicyTargetStats } from "@/lib/tokyoPolicyTargets";
 
 import { StatusBadge } from "./StatusBadge";
 import styles from "./CoverageExplorer.module.css";
@@ -38,6 +39,22 @@ const quickFilters: Array<{
   { value: "evaluation", label: "年度評価あり", category: "annual_evaluation" },
   { value: "budget", label: "予算・決算あり", category: "budget" },
 ];
+
+function displayedSourceStatus(
+  prefectureCode: string,
+  category: SourceInventoryCategory,
+  status: SourceInventoryStatus,
+): SourceInventoryStatus {
+  if (
+    prefectureCode === "13" &&
+    category === "kpi_source" &&
+    tokyoPolicyTargetStats.reviewedTargetGroups > 0 &&
+    status === "indexed"
+  ) {
+    return "reviewed";
+  }
+  return status;
+}
 
 function isIndexed(status: SourceInventoryStatus | undefined) {
   return status !== undefined && status !== "not_indexed";
@@ -179,6 +196,10 @@ export function CoverageExplorer() {
               <div className={styles.prefectureGrid}>
                 {group.records.map((record) => {
                   const inventory = nationwideSourceInventoryByCode.get(record.prefecture_code);
+                  const nextAction =
+                    record.prefecture_code === "13"
+                      ? `政策目標一覧60ページを索引済み。子供分野${tokyoPolicyTargetStats.reviewedTargetGroups}目標・${tokyoPolicyTargetStats.reviewedSeries}系列をReviewed化し、次に子育て分野を確認する。`
+                      : inventory?.next_action ?? "資料インベントリを確認中";
                   return (
                     <article className={styles.prefectureCard} key={record.prefecture_code}>
                       <div className={styles.prefectureTop}>
@@ -194,7 +215,12 @@ export function CoverageExplorer() {
 
                       <div className={styles.sourceDepth} aria-label={`${record.name}の資料カバレッジ`}>
                         {sourceInventoryCategoryOrder.map((category) => {
-                          const status = inventory?.sources[category] ?? "not_indexed";
+                          const baseStatus = inventory?.sources[category] ?? "not_indexed";
+                          const status = displayedSourceStatus(
+                            record.prefecture_code,
+                            category,
+                            baseStatus,
+                          );
                           return (
                             <div className={styles[`status_${status}`]} key={category}>
                               <dt>{sourceInventoryCategoryLabel(category)}</dt>
@@ -219,7 +245,7 @@ export function CoverageExplorer() {
                         </div>
                         <div>
                           <dt>次に確認すること</dt>
-                          <dd>{inventory?.next_action ?? "資料インベントリを確認中"}</dd>
+                          <dd>{nextAction}</dd>
                         </div>
                       </dl>
 
