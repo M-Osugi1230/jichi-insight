@@ -8,67 +8,77 @@ on:
       - agent/okinawa-midterm-indicators
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: quality-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  okinawa-inspect:
-    name: Inspect Okinawa indicator annex
-    if: (github.event_name == 'push' && github.ref_name == 'agent/okinawa-midterm-indicators') || (github.event_name == 'pull_request' && github.head_ref == 'agent/okinawa-midterm-indicators')
+  okinawa-materialize:
+    name: Materialize Okinawa canonical data
+    if: github.event_name == 'push' && github.ref_name == 'agent/okinawa-midterm-indicators'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: agent/okinawa-midterm-indicators
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Synchronize branch
+        run: git pull --rebase origin agent/okinawa-midterm-indicators
+      - name: Check whether generation is required
+        id: required
+        run: |
+          if [[ -f data/catalog/okinawa_midterm_indicator_review_manifest.json ]]; then
+            echo "generate=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "generate=true" >> "$GITHUB_OUTPUT"
+          fi
       - name: Install extraction dependency
+        if: steps.required.outputs.generate == 'true'
         run: python -m pip install pdfplumber==0.11.9
       - name: Download official annex
+        if: steps.required.outputs.generate == 'true'
         run: |
           curl --fail --location --retry 4 --output /tmp/okinawa.pdf \
             https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/034/436/7_tyukijisshikeikaku_r2.pdf
           test "$(stat -c%s /tmp/okinawa.pdf)" -gt 100000
-      - name: Inspect tables
+      - name: Generate canonical catalog and Evidence
+        if: steps.required.outputs.generate == 'true'
+        run: python scripts/build_okinawa_midterm_indicator_catalog.py /tmp/okinawa.pdf
+      - name: Commit canonical data
+        if: steps.required.outputs.generate == 'true'
         run: |
-          python - <<'PY' > okinawa-annex-inspection.txt
-          import json
-          import pdfplumber
-          with pdfplumber.open('/tmp/okinawa.pdf') as pdf:
-              print('pages', len(pdf.pages))
-              for page_index, page in enumerate(pdf.pages):
-                  tables = page.extract_tables()
-                  print('PAGE', page_index + 1, 'tables', len(tables), 'rows', [len(t) for t in tables])
-                  for table_index, table in enumerate(tables[:2]):
-                      print('TABLE', table_index)
-                      for row in table[:4]:
-                          print(json.dumps(row, ensure_ascii=False))
-          PY
-          cat okinawa-annex-inspection.txt
-      - name: Upload inspection
-        uses: actions/upload-artifact@v4
-        with:
-          name: okinawa-annex-inspection
-          path: okinawa-annex-inspection.txt
-          retention-days: 7
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f data/reviewed/okinawa_midterm_indicators_part*.json
+          git add data/evidence/okinawa_midterm_indicator_evidence_part*.json \
+            data/catalog/okinawa_midterm_indicator_review_manifest.json
+          git commit -m "Generate Okinawa midterm indicator catalog"
+          git push origin HEAD:agent/okinawa-midterm-indicators
 
   repository:
     name: Repository and data
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
+
       - name: Install Python validation tools
         run: python -m pip install -e ".[dev]"
+
       - name: Validate repository
         run: |
           set -o pipefail
           python scripts/validate_repository.py 2>&1 | tee repository-validation.log
+
       - name: Upload repository validation diagnostics
         if: failure()
         uses: actions/upload-artifact@v4
@@ -77,10 +87,12 @@ jobs:
           path: repository-validation.log
           if-no-files-found: ignore
           retention-days: 7
+
       - name: Test
         run: |
           set -o pipefail
           pytest -vv 2>&1 | tee pytest.log
+
       - name: Upload pytest diagnostics
         if: failure()
         uses: actions/upload-artifact@v4
@@ -89,10 +101,12 @@ jobs:
           path: pytest.log
           if-no-files-found: ignore
           retention-days: 7
+
       - name: Lint Python
         run: |
           set -o pipefail
           ruff check scripts tests 2>&1 | tee ruff.log
+
       - name: Upload Python lint diagnostics
         if: failure()
         uses: actions/upload-artifact@v4
@@ -107,17 +121,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version: "24"
+
       - name: Enable pnpm
         run: corepack enable
+
       - name: Install dependencies
         run: pnpm install --no-frozen-lockfile
+
       - name: Lint
         run: pnpm lint
+
       - name: Typecheck
         run: pnpm typecheck
+
       - name: Build
         run: |
           set +e
@@ -129,6 +149,7 @@ jobs:
             exit "$status"
           fi
           cat build.log
+
       - name: Upload build diagnostics
         if: failure()
         uses: actions/upload-artifact@v4
@@ -137,10 +158,12 @@ jobs:
           path: build-error.log
           if-no-files-found: ignore
           retention-days: 7
+
       - name: Validate static export
         run: |
           set -o pipefail
           python scripts/validate_static_export.py 2>&1 | tee static-export.log
+
       - name: Upload static-export diagnostics
         if: failure()
         uses: actions/upload-artifact@v4
