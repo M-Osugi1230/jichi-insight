@@ -1,0 +1,47 @@
+name: Tokyo Source Extract
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/tokyo-source-extract.yml"
+      - "data/**"
+      - "scripts/**"
+      - "tests/**"
+      - "apps/web/**"
+
+permissions:
+  contents: read
+
+jobs:
+  extract:
+    name: Download and extract official Tokyo targets
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install PDF tools
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils
+
+      - name: Download official source
+        run: |
+          set -euo pipefail
+          mkdir -p artifacts/tokyo
+          curl --fail --location --retry 4 --retry-delay 3 \
+            "https://www.seisakukikaku.metro.tokyo.lg.jp/documents/d/seisakukikaku/2050tokyo-seisakumokuhyo2026" \
+            --output artifacts/tokyo/tokyo-policy-targets-2026.pdf
+          pdfinfo artifacts/tokyo/tokyo-policy-targets-2026.pdf \
+            > artifacts/tokyo/pdfinfo.txt
+          pdftotext -layout -enc UTF-8 \
+            artifacts/tokyo/tokyo-policy-targets-2026.pdf \
+            artifacts/tokyo/tokyo-policy-targets-2026-layout.txt
+          sha256sum artifacts/tokyo/tokyo-policy-targets-2026.pdf \
+            > artifacts/tokyo/sha256.txt
+          test "$(pdfinfo artifacts/tokyo/tokyo-policy-targets-2026.pdf | awk '/^Pages:/ {print $2}')" = "60"
+
+      - name: Upload official source extraction
+        uses: actions/upload-artifact@v4
+        with:
+          name: tokyo-policy-targets-official-source
+          path: artifacts/tokyo
+          if-no-files-found: error
+          retention-days: 7
