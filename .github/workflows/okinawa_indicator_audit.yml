@@ -1,22 +1,24 @@
-name: Okinawa Indicator Audit
+name: Okinawa Indicator Materialization
 
 on:
-  pull_request:
+  push:
     branches:
-      - main
+      - agent/okinawa-midterm-indicator-review
     paths:
       - .github/workflows/okinawa_indicator_audit.yml
-      - scripts/audit_okinawa_indicator_tables.py
+      - scripts/build_okinawa_midterm_indicator_catalog.py
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
-  audit:
-    if: github.head_ref == 'agent/okinawa-midterm-indicator-review'
+  materialize:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: agent/okinawa-midterm-indicator-review
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -27,13 +29,20 @@ jobs:
           curl --fail --location --retry 4 --output /tmp/okinawa-appendix.pdf \
             https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/034/436/7_tyukijisshikeikaku_r2.pdf
           test "$(stat -c%s /tmp/okinawa-appendix.pdf)" -gt 500000
-      - name: Audit indicator tables
+      - name: Generate reviewed catalog and Evidence
         run: |
-          python scripts/audit_okinawa_indicator_tables.py \
-            /tmp/okinawa-appendix.pdf artifacts/okinawa-indicator-audit.json
-      - name: Upload audit
-        uses: actions/upload-artifact@v4
-        with:
-          name: okinawa-indicator-audit
-          path: artifacts/okinawa-indicator-audit.json
-          retention-days: 7
+          python scripts/build_okinawa_midterm_indicator_catalog.py \
+            /tmp/okinawa-appendix.pdf
+      - name: Commit canonical data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f \
+            data/reviewed/okinawa_midterm_major_indicators.json \
+            data/reviewed/okinawa_midterm_outcome_indicators_part*.json
+          git add \
+            data/evidence/okinawa_midterm_major_indicator_evidence.json \
+            data/evidence/okinawa_midterm_outcome_indicator_evidence_part*.json \
+            data/catalog/okinawa_midterm_indicator_review_manifest.json
+          git commit -m "Generate Okinawa mid-term indicator catalog"
+          git push origin HEAD:agent/okinawa-midterm-indicator-review
