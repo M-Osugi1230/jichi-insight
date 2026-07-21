@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.example/schemas/osaka_beyond_expo_indicator_evidence.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "source_id", "packet_count", "packets"],
+  "properties": {
+    "id": {"const": "osaka-beyond-expo-indicator-evidence-2026"},
+    "source_id": {"const": "osaka-beyond-expo-2025-final"},
+    "packet_count": {"const": 83},
+    "packets": {
+      "type": "array",
+      "minItems": 83,
+      "maxItems": 83,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "subject_type",
+          "subject_id",
+          "source_id",
+          "source_page",
+          "claims",
+          "open_questions",
+          "legacy_vision_linkage_status",
+          "business_list_linkage_status",
+          "policy_achievement_assessment_status",
+          "review_status"
+        ],
+        "properties": {
+          "id": {"type": "string"},
+          "subject_type": {"const": "policy_indicator"},
+          "subject_id": {"type": "string", "pattern": "^policy-indicator-osaka-[0-9]{3}$"},
+          "source_id": {"const": "osaka-beyond-expo-2025-final"},
+          "source_page": {"enum": [73, 75, 76]},
+          "claims": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["field", "statement", "source_ids", "location_note", "decision", "review_note"],
+              "properties": {
+                "field": {"type": "string"},
+                "statement": {"type": "string"},
+                "source_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"const": "osaka-beyond-expo-2025-final"}},
+                "location_note": {"type": "string"},
+                "decision": {"const": "accepted"},
+                "review_note": {"type": "string"}
+              }
+            }
+          },
+          "open_questions": {"type": "array"},
+          "legacy_vision_linkage_status": {"const": "separate_lineage"},
+          "business_list_linkage_status": {"const": "not_linked"},
+          "policy_achievement_assessment_status": {"const": "not_assessed"},
+          "review_status": {"const": "reviewed"}
+        }
+      }
+    }
+  }
+}
