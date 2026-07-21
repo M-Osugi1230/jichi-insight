@@ -1,4 +1,5 @@
 import coverageRegistry from "../../../data/catalog/prefecture_coverage.json";
+import sourceInventoryRegistry from "../../../data/catalog/nationwide_source_inventory.json";
 
 export type PrefectureRegion =
   | "北海道"
@@ -21,6 +22,25 @@ export type PlanCurrencyStatus =
   | "not_started"
   | "current_unconfirmed"
   | "current_confirmed";
+export type PlanSourceKind =
+  | "comprehensive_plan"
+  | "long_term_vision"
+  | "regional_strategy"
+  | "annual_policy_portfolio"
+  | "governance_framework"
+  | "plan_index";
+export type SourceInventoryCategory =
+  | "policy_plan"
+  | "implementation_plan"
+  | "kpi_source"
+  | "annual_evaluation"
+  | "budget"
+  | "project_evaluation";
+export type SourceInventoryStatus =
+  | "not_indexed"
+  | "indexed"
+  | "reviewed"
+  | "linked";
 
 export type PrefectureCoverageRecord = {
   prefecture_code: string;
@@ -36,9 +56,19 @@ export type PrefecturePlanSource = {
   prefecture_code: string;
   title: string;
   url: string;
+  source_kind: PlanSourceKind;
+  plan_status: "current_confirmed" | "current_review_required";
   review_status: Exclude<PlanReviewStatus, "not_started">;
   verified_at: string;
 };
+
+export type PrefectureSourceInventoryRecord = {
+  prefecture_code: string;
+  sources: Record<SourceInventoryCategory, SourceInventoryStatus>;
+  next_action: string;
+};
+
+type SourceStatusCounts = Record<SourceInventoryStatus, number>;
 
 const records = coverageRegistry.records as PrefectureCoverageRecord[];
 const verifiedOfficialCodes = new Set(coverageRegistry.verified_official_codes);
@@ -140,6 +170,38 @@ export const nationwideCoverageStats = {
   updatedAt: coverageRegistry.updated_at,
 };
 
+export const nationwideSourceInventory =
+  sourceInventoryRegistry.records as PrefectureSourceInventoryRecord[];
+
+const sourceInventorySummary = sourceInventoryRegistry.summary as Record<
+  SourceInventoryCategory,
+  SourceStatusCounts
+>;
+
+export const sourceInventoryCategoryOrder =
+  sourceInventoryRegistry.categories as SourceInventoryCategory[];
+
+export const nationwideSourceInventoryStats = Object.fromEntries(
+  sourceInventoryCategoryOrder.map((category) => {
+    const counts = sourceInventorySummary[category];
+    return [
+      category,
+      {
+        ...counts,
+        indexedOrHigher: counts.indexed + counts.reviewed + counts.linked,
+        reviewedOrHigher: counts.reviewed + counts.linked,
+      },
+    ];
+  }),
+) as Record<
+  SourceInventoryCategory,
+  SourceStatusCounts & { indexedOrHigher: number; reviewedOrHigher: number }
+>;
+
+export const nationwideSourceInventoryByCode = new Map(
+  nationwideSourceInventory.map((record) => [record.prefecture_code, record]),
+);
+
 export const nationwideCoverageByRegion = regionOrder.map((region) => ({
   region,
   records: nationwidePrefectureCoverage.filter((record) => record.region === region),
@@ -170,4 +232,16 @@ export function planCurrencyLabel(status: PlanCurrencyStatus) {
     current_confirmed: "現行計画確認済み",
   };
   return labels[status];
+}
+
+export function sourceInventoryCategoryLabel(category: SourceInventoryCategory) {
+  const labels: Record<SourceInventoryCategory, string> = {
+    policy_plan: "政策計画",
+    implementation_plan: "実施計画",
+    kpi_source: "KPI・数値目標",
+    annual_evaluation: "年度評価",
+    budget: "予算・決算",
+    project_evaluation: "事業評価",
+  };
+  return labels[category];
 }
