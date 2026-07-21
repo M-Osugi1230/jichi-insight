@@ -8,7 +8,12 @@
   "properties": {
     "id": {"const": "wave1-policy-review-queue"},
     "updated_at": {"type": "string", "format": "date"},
-    "active_prefecture_code": {"$ref": "#/$defs/prefectureCode"},
+    "active_prefecture_code": {
+      "anyOf": [
+        {"$ref": "#/$defs/prefectureCode"},
+        {"type": "null"}
+      ]
+    },
     "completed_prefecture_codes": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/prefectureCode"}},
     "items": {
       "type": "array",
