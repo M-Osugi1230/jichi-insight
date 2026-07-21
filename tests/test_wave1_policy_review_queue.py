@@ -24,64 +24,51 @@ def test_queue_schema_and_order():
         coverage["regional_anchor_codes"]
     )
     assert queue["completed_prefecture_codes"] == [
-        "40", "01", "04", "13", "23", "27", "34"
+        "40", "01", "04", "13", "23", "27", "34", "37"
     ]
-    assert queue["active_prefecture_code"] == "37"
+    assert queue["active_prefecture_code"] == "47"
 
 
-def test_kagawa_is_active_after_hiroshima_indicator_completion():
+def test_okinawa_is_active_after_kagawa_indicator_completion():
     queue = load(QUEUE_PATH)
     items = {item["prefecture_code"]: item for item in queue["items"]}
-    active = items["37"]
+    active = items["47"]
     assert active["status"] == "active_review"
     assert active["next_gate"] == "kpi_catalog"
     assert all(
         token in active["next_action"]
-        for token in ["延長", "数値目標", "行政評価", "Evidence"]
+        for token in ["令和7～9年度", "成果指標", "基本計画", "Evidence"]
     )
     assert {
         status: sum(item["status"] == status for item in queue["items"])
         for status in ["reviewed_reference", "active_review", "queued"]
-    } == {"reviewed_reference": 7, "active_review": 1, "queued": 1}
+    } == {"reviewed_reference": 8, "active_review": 1, "queued": 0}
 
 
-def test_hiroshima_is_complete_reference_with_revision_boundaries_visible():
+def test_kagawa_is_complete_reference_with_extension_boundaries_visible():
     items = {
         item["prefecture_code"]: item for item in load(QUEUE_PATH)["items"]
     }
-    hiroshima = items["34"]
-    assert hiroshima["status"] == "reviewed_reference"
-    assert hiroshima["source_inventory_status"] == "reviewed"
-    assert hiroshima["next_gate"] == "actuals_linkage"
+    kagawa = items["37"]
+    assert kagawa["status"] == "reviewed_reference"
+    assert kagawa["source_inventory_status"] == "reviewed"
+    assert kagawa["next_gate"] == "actuals_linkage"
     assert all(
-        token in hiroshima["next_action"]
-        for token in ["62", "Evidence ID 62", "59", "未測定3", "R10/R12", "定性目標1"]
+        token in kagawa["next_action"]
+        for token in ["135", "141", "Evidence 135", "再掲6", "目標更新87", "令和12年"]
     )
     assert all(
-        token in hiroshima["priority_basis"]
-        for token in ["削除指標", "定義変更", "代替", "複数系列", "複数年平均"]
+        token in kagawa["priority_basis"]
+        for token in ["計画期間延長", "旧目標", "新目標", "重複排除"]
     )
 
 
-def test_osaka_is_complete_indicator_reference_with_lineage_boundaries_visible():
+def test_recent_reviewed_references_keep_their_boundaries():
     items = {
         item["prefecture_code"]: item for item in load(QUEUE_PATH)["items"]
     }
-    osaka = items["27"]
-    assert osaka["status"] == "reviewed_reference"
-    assert osaka["source_inventory_status"] == "reviewed"
-    assert osaka["next_gate"] == "actuals_linkage"
-    assert all(
-        token in osaka["next_action"]
-        for token in ["83", "91", "Evidence 83", "経済目標1", "客観KPI27", "主観指標55"]
-    )
-
-
-def test_aichi_tokyo_and_miyagi_remain_reviewed_references():
-    items = {
-        item["prefecture_code"]: item for item in load(QUEUE_PATH)["items"]
-    }
-    assert items["23"]["next_gate"] == "management_evaluation_linkage"
+    assert all(token in items["34"]["next_action"] for token in ["62", "59", "未測定3"])
+    assert all(token in items["27"]["next_action"] for token in ["83", "91", "Evidence 83"])
     assert all(token in items["23"]["next_action"] for token in ["56", "62", "61", "29"])
     assert all(token in items["13"]["next_action"] for token in ["60", "25", "304", "Evidence"])
     assert all(token in items["04"]["next_action"] for token in ["128", "149", "95", "15", "54"])

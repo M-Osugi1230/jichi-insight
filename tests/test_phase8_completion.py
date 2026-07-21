@@ -14,6 +14,9 @@ OSAKA_MANIFEST_PATH = ROOT / "data/catalog/osaka_beyond_expo_indicator_review_ma
 HIROSHIMA_MANIFEST_PATH = (
     ROOT / "data/catalog/hiroshima_revised_vision_indicator_review_manifest.json"
 )
+KAGAWA_MANIFEST_PATH = (
+    ROOT / "data/catalog/kagawa_extended_plan_indicator_review_manifest.json"
+)
 
 
 def load(path: Path):
@@ -45,6 +48,8 @@ def test_phase8_counts_are_derived_from_canonical_registries():
         reviewed_codes.add("27")
     if load(HIROSHIMA_MANIFEST_PATH)["status"] == "complete":
         reviewed_codes.add("34")
+    if load(KAGAWA_MANIFEST_PATH)["status"] == "complete":
+        reviewed_codes.add("37")
     source_mapped = sum(len(record["sources"]) == 6 for record in anchors)
     published = len(anchor_codes & published_codes)
     assert manifest["counts"] == {
@@ -61,9 +66,9 @@ def test_phase8_cannot_be_complete_before_all_review_and_publication_gates_pass(
     manifest = load(MANIFEST_PATH)
     gates = {gate["id"]: gate["status"] for gate in manifest["gates"]}
     assert manifest["status"] == "in_progress"
-    assert manifest["counts"]["anchors_with_reviewed_numeric_targets"] == 7
-    assert manifest["counts"]["anchors_pending_numeric_target_review"] == 2
-    assert manifest["counts"]["anchors_with_published_prefecture_pages"] == 7
+    assert manifest["counts"]["anchors_with_reviewed_numeric_targets"] == 8
+    assert manifest["counts"]["anchors_pending_numeric_target_review"] == 1
+    assert manifest["counts"]["anchors_with_published_prefecture_pages"] == 8
     assert gates["plan_and_numeric_target_entrances"] == "passed"
     assert gates["evidence_packet_review"] == "in_progress"
     assert gates["published_pages_and_production_smoke"] == "in_progress"

@@ -16,13 +16,19 @@ The nine regional anchors are:
 - 福岡県
 - 沖縄県
 
-北海道、宮城県、東京都、愛知県、大阪府、福岡県にEvidence Packet付きReviewedデータがあります。
+北海道、宮城県、東京都、愛知県、大阪府、広島県、香川県、福岡県にEvidence Packet付きReviewedデータがあります。
 
 東京都は「2050東京戦略 政策目標一覧」全60ページ・25政策分野・304目標カードをEvidence付きでReviewed化しました。子供分野の8目標・9系列はグラフ点列まで詳細Reviewedですが、それ以外の点列と年度実績は別工程です。
 
 愛知県は「あいちレポート2025」の進捗管理指標56行・62系列をEvidence付きでReviewed化し、61系列の現状値と29系列の数値目標を接続しました。再掲2件、目標改定1件、複数系列、欠損、定義変更を保持し、296管理事業の評価を政策指標の達成判定へ自動転用しません。
 
-広島県、香川県、沖縄県は、政策計画、実施計画、KPI、年度評価、予算、事業評価の公式入口を6カテゴリで索引化しています。
+大阪府は最終版「Beyond EXPO 2025」の83指標・91系列をEvidence付きでReviewed化しました。経済目標1件、客観KPI27件、主観・Well-Being指標55件を別レイヤーで保持します。
+
+広島県は2026年7月改定版ビジョンの現行62指標をReviewed化しました。削除指標を除外し、未測定3件、令和10年度・令和12年度目標、定性目標、複数年平均を保持します。
+
+香川県は令和8年度までの計画延長に伴う指標見直し表135件をEvidence付きでReviewed化しました。表上の掲載位置は141件、再掲は6指標、令和7年度目標と令和8年度目標の原文が異なる指標は87件です。参考指標135番の県人口は令和12年目標として保持します。
+
+沖縄県は、政策計画、実施計画、KPI、年度評価、予算、事業評価の公式入口を6カテゴリで索引化しています。次のActive Reviewは沖縄県です。
 
 ## Source discovery rules
 
@@ -55,11 +61,15 @@ The nine regional anchors are:
 
 ### 広島県
 
-ビジョン、アクションプラン、年度の県政運営方針、予算事業、公共事業評価を分けます。年度方針は年度実績の代替ではありません。
+改定版ビジョン、アクションプラン、年度の県政運営方針、予算事業、公共事業評価を分けます。年度方針は年度実績の代替ではありません。
+
+現行62指標はReviewed済みです。削除された旧指標は含めず、定義変更、代替、未測定、定性目標、比較値、複数年平均を保持します。
 
 ### 香川県
 
 総合計画と行政評価が近接した公式導線を持つため、計画上の目標と行政評価レポート上の進捗を別レコードとして保持します。
+
+延長後計画の135固有指標はReviewed済みです。令和7年度目標と令和8年度目標を分離し、再掲6指標は141掲載位置を保持しつつ固有指標数へ重複計上しません。
 
 ### 沖縄県
 
@@ -75,6 +85,6 @@ Phase 8は次をすべて満たした場合だけ`complete`になります。
 - 目標値と年度実績の混同0
 - 各公開ページの静的出力検証とProduction Smoke成功
 
-現在は9地域中6地域がReviewed・公開済みです。次のレビュー順は広島県、香川県、沖縄県です。
+現在は9地域中8地域がReviewed・公開済みです。残るActive Reviewは沖縄県です。
 
-現在の正本は `data/catalog/regional_anchor_source_registry.json`、`data/catalog/phase8_completion.json`、東京都の `data/catalog/tokyo_policy_target_review_manifest.json`、愛知県の `data/catalog/aichi_policy_indicator_review_manifest.json`、大阪府の `data/catalog/osaka_beyond_expo_indicator_review_manifest.json` です。
+現在の正本は `data/catalog/regional_anchor_source_registry.json`、`data/catalog/phase8_completion.json`、各地域のReview Manifest、ReviewedまたはEvidenceデータです。
