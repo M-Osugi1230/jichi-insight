@@ -1,6 +1,9 @@
 name: Production Smoke
 
 on:
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
   workflow_run:
     workflows:
@@ -22,10 +25,11 @@ jobs:
       github.event_name != 'workflow_run' ||
       github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || 'main' }}
 
       - name: Check deployed site
         run: bash scripts/check_production.sh

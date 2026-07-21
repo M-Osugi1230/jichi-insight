@@ -121,21 +121,37 @@
 
 ## Phase 7 — Nationwide prefecture registry
 
+Completion state: `complete`
+
+Phase 7は全国共通レジストリと品質状態の完成を対象とします。47都道府県すべての実施計画、KPI、年度評価、予算、事業評価をReviewed化する工程ではありません。それらはPhase 8・9で実施します。ただし、Phase 7の時点で各都道府県について6資料カテゴリの状態を必ず持ち、未索引を未索引のまま追跡できることを必須とします。
+
 ### Deliverables
 
 - 47都道府県の共通コード、名称、地域区分
-- 公式ホームページの確認状態
-- 総合計画・実施計画の資料入口
-- 都道府県ごとのCoverage、Indexed、Reviewed、Published状態
-- 全国カバレッジ画面と品質指標
+- 公式ホームページの候補・確認状態
+- 現行の政策計画入口と資料種別
+- 実施計画、KPI、年度評価、予算・決算、事業評価を含む6カテゴリの全国状態インベントリ
+- `registered → official_entry_verified → plan_entry_indexed → current_plan_confirmed → reviewed_data`のCoverage状態
+- Coverageとは独立した自治体ページのPublished状態
+- 全国カバレッジ画面、検索・地域絞り込み、品質指標
+- Phase 7完了マニフェスト、JSON Schema、回帰テスト、本番Smoke
 
 ### Exit gate
 
 - 47都道府県の登録欠落・重複が0
-- 候補URLと確認済みURLが画面上で明確に分離
+- 候補URLと確認済みURLをデータ・画面上で明確に分離
 - 47都道府県の公式入口を手動確認
-- 47都道府県の総合計画入口を索引化
-- 全国カバレッジの自動テストと公開後Smokeが成功
+- 47都道府県の現行政策計画入口を索引化し、旧計画の誤昇格が0
+- 47都道府県すべてに6資料カテゴリの明示的状態があり、`not_indexed`を不存在や0件へ変換していない
+- Coverage、Reviewed、Publishedの状態が別々の正本から導出され、公開ページの有無をReviewedと混同していない
+- 全国カバレッジのスキーマ検証、全回帰テスト、Lint、型検査、本番ビルド、静的出力検証が成功
+- 公開サイトで47都道府県、全国品質指標、主要自治体ページ、メタデータ経路のProduction Smokeが成功
+- [`data/catalog/phase7_completion.json`](../data/catalog/phase7_completion.json)が`complete`で、全ゲートが`passed`
+
+### Scope handoff
+
+- Phase 8：9地域拠点の実施計画・KPI・年度評価をEvidence Packet付きでReviewed化
+- Phase 9：残る38県へ同じ深度を横展開し、比較可能性メタデータと更新履歴を整備
 
 ## Phase 8 — Regional anchor expansion
 

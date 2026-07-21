@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.example/schemas/published_prefecture_pages.schema.json",
+  "title": "Jichi Insight published prefecture page registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "updated_at", "records"],
+  "properties": {
+    "id": {"const": "published-prefecture-pages"},
+    "updated_at": {"type": "string", "format": "date"},
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["prefecture_code", "route", "publication_status"],
+        "properties": {
+          "prefecture_code": {"type": "string", "pattern": "^(0[1-9]|[1-3][0-9]|4[0-7])$"},
+          "route": {"type": "string", "pattern": "^/municipalities/[a-z0-9-]+$"},
+          "publication_status": {"const": "published"}
+        }
+      }
+    }
+  }
+}

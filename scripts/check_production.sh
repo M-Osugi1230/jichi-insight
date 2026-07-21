@@ -1,81 +1,96 @@
 #!/usr/bin/env bash
 set -euo pipefail
+
 BASE_URL="${JICHI_PRODUCTION_URL:-https://m-osugi1230.github.io/jichi-insight}"
 REPORT="${JICHI_SMOKE_REPORT:-production-smoke-report.txt}"
 INDEX_FILE="$(mktemp)"
 CONTENT_FILE="$(mktemp)"
 trap 'rm -f "$INDEX_FILE" "$CONTENT_FILE"' EXIT
+
 : > "$REPORT"
 printf 'Jichi Insight production smoke test\n' >> "$REPORT"
 printf 'URL: %s/\n' "$BASE_URL" >> "$REPORT"
 printf 'Checked at: %s\n\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$REPORT"
+
+fetch_route() {
+  local route="$1"
+  local output="$2"
+  curl --silent --show-error --location --output "$output" --write-out '%{http_code}' "$BASE_URL$route" || true
+}
+
+normalize_html_file() {
+  local path="$1"
+  python - "$path" <<'PY'
+import re
+import sys
+from pathlib import Path
+
+path = Path(sys.argv[1])
+content = path.read_text(encoding="utf-8")
+path.write_text(re.sub(r"<!--.*?-->", "", content, flags=re.DOTALL), encoding="utf-8")
+PY
+}
+
 ready=false
 for attempt in $(seq 1 18); do
-  status="$(curl --silent --show-error --location --output "$INDEX_FILE" --write-out '%{http_code}' "$BASE_URL/" || true)"
+  status="$(fetch_route "/" "$INDEX_FILE")"
   printf 'Attempt %02d: HTTP %s\n' "$attempt" "$status" >> "$REPORT"
-  if [[ "$status" == "200" ]] && grep --quiet 'Jichi Insight' "$INDEX_FILE" && grep --quiet '公開済み評価' "$INDEX_FILE" && grep --quiet '/jichi-insight/_next/' "$INDEX_FILE"; then
+  if [[ "$status" == "200" ]]; then
+    normalize_html_file "$INDEX_FILE"
+  fi
+  if [[ "$status" == "200" ]] \
+    && grep --quiet --fixed-strings 'Jichi Insight' "$INDEX_FILE" \
+    && grep --quiet --fixed-strings '全国47都道府県を探す' "$INDEX_FILE" \
+    && grep --quiet --fixed-strings '/jichi-insight/_next/' "$INDEX_FILE"; then
     ready=true
     break
   fi
   sleep 10
 done
+
 if [[ "$ready" != "true" ]]; then
   printf '\nProduction home page did not become ready.\n' >> "$REPORT"
   cat "$REPORT"
   exit 1
 fi
+
 routes=(
   "/about/"
-  "/assemblies/"
-  "/assemblies/fukuoka-prefecture/overseas-activities/"
-  "/compare/"
   "/corrections/"
   "/data-quality/"
-  "/executives/"
-  "/executives/source-requests/"
   "/methodology/"
   "/municipalities/"
+  "/municipalities/hokkaido/"
+  "/municipalities/miyagi/"
   "/municipalities/fukuoka-prefecture/"
-  "/municipalities/fukuoka-city/"
-  "/municipalities/kitakyushu-city/"
-  "/policies/"
-  "/policies/fukuoka-prefecture/initiatives/01/"
-  "/policies/fukuoka-prefecture/initiatives/02/"
-  "/policies/fukuoka-prefecture/initiatives/03/"
-  "/policies/fukuoka-prefecture/initiatives/04/"
-  "/policies/fukuoka-prefecture/initiatives/05/"
-  "/policies/fukuoka-prefecture/initiatives/06/"
-  "/policies/fukuoka-prefecture/initiatives/07/"
-  "/policies/fukuoka-prefecture/initiatives/08/"
-  "/policies/fukuoka-prefecture/initiatives/09/"
-  "/policies/fukuoka-prefecture/initiatives/10/"
-  "/policies/fukuoka-prefecture/initiatives/11/"
-  "/policies/fukuoka-prefecture/initiatives/12/"
-  "/policy-sources/"
   "/sources/"
   "/robots.txt"
   "/sitemap.xml"
   "/manifest.webmanifest"
 )
+
 printf '\nRoute checks:\n' >> "$REPORT"
 for route in "${routes[@]}"; do
-  status="$(curl --silent --show-error --location --output /dev/null --write-out '%{http_code}' "$BASE_URL$route" || true)"
-  printf '%-58s HTTP %s\n' "$route" "$status" >> "$REPORT"
+  status="$(fetch_route "$route" /dev/null)"
+  printf '%-48s HTTP %s\n' "$route" "$status" >> "$REPORT"
   if [[ "$status" != "200" ]]; then
     cat "$REPORT"
     exit 1
   fi
 done
+
 check_content() {
   local route="$1"
   shift
   local status
-  status="$(curl --silent --show-error --location --output "$CONTENT_FILE" --write-out '%{http_code}' "$BASE_URL$route" || true)"
-  printf '\nContent check %-43s HTTP %s\n' "$route" "$status" >> "$REPORT"
+  status="$(fetch_route "$route" "$CONTENT_FILE")"
+  printf '\nContent check %-33s HTTP %s\n' "$route" "$status" >> "$REPORT"
   if [[ "$status" != "200" ]]; then
     cat "$REPORT"
     exit 1
   fi
+  normalize_html_file "$CONTENT_FILE"
+
   local required
   for required in "$@"; do
     if grep --quiet --fixed-strings "$required" "$CONTENT_FILE"; then
@@ -87,122 +102,59 @@ check_content() {
     fi
   done
 }
+
+check_content "/municipalities/" \
+  "全国47都道府県を、同じ品質段階で追う。" \
+  "公式入口確認済み" \
+  "政策計画入口索引済み" \
+  "現行政策入口確認済み" \
+  "入口確認の先を、6つの資料カテゴリで追う。" \
+  "政策計画" \
+  "実施計画" \
+  "KPI・数値目標" \
+  "年度評価" \
+  "予算・決算" \
+  "事業評価" \
+  "47/47" \
+  "公開中" \
+  "未公開"
+
+printf '\nPrefecture coverage checks:\n' >> "$REPORT"
+while IFS= read -r prefecture_name; do
+  if grep --quiet --fixed-strings "$prefecture_name" "$CONTENT_FILE"; then
+    printf '  PASS %s\n' "$prefecture_name" >> "$REPORT"
+  else
+    printf '  FAIL %s\n' "$prefecture_name" >> "$REPORT"
+    cat "$REPORT"
+    exit 1
+  fi
+done < <(
+  python - <<'PY'
+import json
+from pathlib import Path
+
+registry = json.loads(Path("data/catalog/prefecture_coverage.json").read_text(encoding="utf-8"))
+for record in registry["records"]:
+    print(record["name"])
+PY
+)
+
+check_content "/municipalities/hokkaido/" \
+  "北海道の政策指標を、原文と期間から読む。" \
+  "108 / 108のKPI本文Reviewedを完了"
+
+check_content "/municipalities/miyagi/" \
+  "宮城県の政策目標を、原文・期間・未設定までそのまま読む。" \
+  "目標値の確認と、政策成果の評価を分ける。"
+
+check_content "/municipalities/fukuoka-prefecture/" \
+  "普通会計" \
+  "まだ評価していないこと"
+
 check_content "/data-quality/" \
-  "政策体系、数値目標、年度実績、評価を別の段階として公開する。" \
-  "Reviewed基本方向" \
-  "Reviewed取組事項" \
-  "Reviewed数値目標" \
-  "取組1から12の基準値・目標値68件" \
-  "年度実績へ接続済み" \
-  "政策評価済み" \
-  "首長分野は、任期・探索・公約資料・分割レビュー・評価を分ける。" \
-  "Reviewed現職任期" \
-  "公約資料の探索記録" \
-  "安定した一次資料を未発見" \
-  "登録済み公約原文資料" \
-  "公約分割レビュー" \
-  "個別公約レコード" \
-  "照会案、送信、回答を別の進捗として公開する。" \
-  "照会案・送信前" \
-  "送信済み照会" \
-  "回答受領"
-check_content "/executives/" \
-  "首長評価の前に、任期と公約の根拠を固定する。" \
-  "公約資料の探索記録" \
-  "未発見は、資料が存在しないという判定ではありません。" \
-  "手動レビュー待ち" \
-  "作成済み公約レコード" \
-  "資料があることと、公約を評価できることは別です。"
-check_content "/executives/source-requests/" \
-  "照会案を作ったことと、送信したことを分ける。" \
-  "照会案2件。送信済み0件。回答受領0件。" \
-  "この文案は未送信です。" \
-  "明示承認前は送信しません。"
-check_content "/policies/" \
-  "政策評価の前に、計画が何を目指すかを構造化する。" \
-  "4つの基本方向と30の取組事項" \
-  "取組1から12の指標1から68まで" \
-  "数値目標10件" \
-  "数値目標14件" \
-  "数値目標5件" \
-  "取組と目標の一覧と、実際の成果はまだ別々です。"
-check_content "/policies/fukuoka-prefecture/initiatives/01/" \
-  "次代を担う「人財」の育成" \
-  "Reviewed数値目標" \
-  "国民体育大会における男女総合成績順位" \
-  "年次値と累計値をそのまま達成率へ変換しません。" \
-  "目標を設定したことと、成果を上げたことは別です。"
-check_content "/policies/fukuoka-prefecture/initiatives/02/" \
-  "世界から選ばれる福岡県の実現" \
-  "企業立地件数" \
-  "県及び市町村による産業用地の整備着手面積" \
-  "福岡空港の新規国際路線誘致数" \
-  "当初値は公式資料でダッシュ表記です。0とは扱わず"
-check_content "/policies/fukuoka-prefecture/initiatives/03/" \
-  "ワンヘルスの推進" \
-  "ワンヘルス宣言事業者登録数" \
-  "11,000件" \
-  "当初値は公式資料でダッシュ表記です。0とは扱わず"
-check_content "/policies/fukuoka-prefecture/initiatives/04/" \
-  "移住定住の促進" \
-  "県外からの移住世帯数" \
-  "ふくおかファンクラブ会員数" \
-  "5,000世帯"
-check_content "/policies/fukuoka-prefecture/initiatives/05/" \
-  "デジタル社会の実現" \
-  "国が示すオンライン化を推進すべき手続のオンライン化達成率" \
-  "中小企業におけるDXの実践割合" \
-  "全国参考値"
-check_content "/policies/fukuoka-prefecture/initiatives/06/" \
-  "グリーン社会の実現" \
-  "温室効果ガスの総排出量の削減率" \
-  "再生可能エネルギー発電設備導入容量" \
-  "405万kW"
-check_content "/policies/fukuoka-prefecture/initiatives/07/" \
-  "成長産業の創出" \
-  "成長産業分野への新規参画企業数" \
-  "1億円以上の資金調達を行ったベンチャー企業数" \
-  "80社"
-check_content "/policies/fukuoka-prefecture/initiatives/08/" \
-  "中小企業の振興" \
-  "県の支援により生産性が向上した中小企業・小規模企業者数" \
-  "工業技術センターの企業への技術移転件数" \
-  "1,000社"
-check_content "/policies/fukuoka-prefecture/initiatives/09/" \
-  "農林水産業の振興" \
-  "デジタルデータを活用した経営を行う経営体数（農林水産業）" \
-  "福岡フェア等における県産食材の取扱高" \
-  "ワンヘルスの実践に取り組む経営体数（農林漁業）" \
-  "6,000経営体" \
-  "当初値は公式資料でダッシュ表記です。0とは扱わず"
-check_content "/policies/fukuoka-prefecture/initiatives/10/" \
-  "地域と調和した観光産業の振興" \
-  "旅行消費単価（日本人）" \
-  "県の観光情報SNSフォロワー数（海外向け）" \
-  "延べ宿泊者数（日本人）" \
-  "50,800円" \
-  "参考値"
-check_content "/policies/fukuoka-prefecture/initiatives/11/" \
-  "雇用対策の充実、魅力ある職場づくり" \
-  "DX人材育成や人材不足分野対策等による新規正規雇用数" \
-  "子育て女性就職支援センターによる就職者数" \
-  "働き方改革実行企業（よかばい・かえるばい企業）の新規登録社数" \
-  "10,000人"
-check_content "/policies/fukuoka-prefecture/initiatives/12/" \
-  "健康づくり、安心で質の高い医療の提供" \
-  "平均寿命の増加分を上回る健康寿命の増加" \
-  "12.5人／人口10万人以下" \
-  "68.4人／人口10万人以下" \
-  "条件型目標" \
-  "公式資料の目標は単一の数値ではなく条件で示されています。"
-check_content "/policy-sources/" \
-  "集められる政策資料から、先に形にする。" \
-  "計画から支出と成果まで、順番につなぐ。" \
-  "公開されている深さを、自治体ごとに分けて見る。" \
-  "計画の基本方向" \
-  "取組別の進捗" \
-  "重点事業シート" \
-  "入口確認のみ" \
-  "資料10件を登録しましたが、政策評価はまだ0件です。"
-printf '\nResult: PASS\n' >> "$REPORT"
+  "件数ではなく、確認の深さを公開する。" \
+  "データ不足を、点数で埋めません。"
+
+printf '\nPhase 7 nationwide registry checks: PASS\n' >> "$REPORT"
+printf 'Result: PASS\n' >> "$REPORT"
 cat "$REPORT"

@@ -1,5 +1,6 @@
 import coverageRegistry from "../../../data/catalog/prefecture_coverage.json";
 import sourceInventoryRegistry from "../../../data/catalog/nationwide_source_inventory.json";
+import publishedPageRegistry from "../../../data/catalog/published_prefecture_pages.json";
 
 export type PrefectureRegion =
   | "北海道"
@@ -14,9 +15,11 @@ export type PrefectureRegion =
 export type CoverageStage =
   | "registered"
   | "official_entry_verified"
-  | "source_cataloged"
+  | "plan_entry_indexed"
+  | "current_plan_confirmed"
   | "reviewed_data";
 
+export type PublicationStatus = "unpublished" | "published";
 export type PlanReviewStatus = "not_started" | "indexed" | "reviewed" | "verified";
 export type PlanCurrencyStatus =
   | "not_started"
@@ -68,10 +71,17 @@ export type PrefectureSourceInventoryRecord = {
   next_action: string;
 };
 
+export type PublishedPrefecturePageRecord = {
+  prefecture_code: string;
+  route: string;
+  publication_status: "published";
+};
+
 type SourceStatusCounts = Record<SourceInventoryStatus, number>;
 
 const records = coverageRegistry.records as PrefectureCoverageRecord[];
 const verifiedOfficialCodes = new Set(coverageRegistry.verified_official_codes);
+const planEntryIndexedCodes = new Set(coverageRegistry.plan_entry_indexed_codes);
 const regionalAnchorCodes = new Set(coverageRegistry.regional_anchor_codes);
 const reviewedPrefectureCodes = new Set(coverageRegistry.reviewed_prefecture_codes);
 const currentPlanConfirmedCodes = new Set(
@@ -80,6 +90,11 @@ const currentPlanConfirmedCodes = new Set(
 const planSources = coverageRegistry.plan_sources as PrefecturePlanSource[];
 const planSourcesByCode = new Map(
   planSources.map((source) => [source.prefecture_code, source]),
+);
+const publishedPrefecturePages =
+  publishedPageRegistry.records as PublishedPrefecturePageRecord[];
+const publishedPrefecturePagesByCode = new Map(
+  publishedPrefecturePages.map((record) => [record.prefecture_code, record]),
 );
 
 export const regionOrder: PrefectureRegion[] = [
@@ -95,22 +110,28 @@ export const regionOrder: PrefectureRegion[] = [
 
 export const nationwidePrefectureCoverage = records.map((record) => {
   const planSource = planSourcesByCode.get(record.prefecture_code) ?? null;
+  const publishedPage = publishedPrefecturePagesByCode.get(record.prefecture_code) ?? null;
   const officialEntryVerified = verifiedOfficialCodes.has(record.prefecture_code);
+  const planEntryIndexed = planEntryIndexedCodes.has(record.prefecture_code);
+  const currentPlanConfirmed = currentPlanConfirmedCodes.has(record.prefecture_code);
   const reviewed = reviewedPrefectureCodes.has(record.prefecture_code);
-  const planCurrencyStatus: PlanCurrencyStatus = currentPlanConfirmedCodes.has(
-    record.prefecture_code,
-  )
+  const planCurrencyStatus: PlanCurrencyStatus = currentPlanConfirmed
     ? "current_confirmed"
     : planSource
       ? "current_unconfirmed"
       : "not_started";
   const coverageStage: CoverageStage = reviewed
     ? "reviewed_data"
-    : planSource
-      ? "source_cataloged"
-      : officialEntryVerified
-        ? "official_entry_verified"
-        : "registered";
+    : currentPlanConfirmed
+      ? "current_plan_confirmed"
+      : planEntryIndexed
+        ? "plan_entry_indexed"
+        : officialEntryVerified
+          ? "official_entry_verified"
+          : "registered";
+  const publicationStatus: PublicationStatus = publishedPage
+    ? "published"
+    : "unpublished";
 
   return {
     ...record,
@@ -121,17 +142,11 @@ export const nationwidePrefectureCoverage = records.map((record) => {
     planReviewStatus: planSource?.review_status ?? ("not_started" as const),
     planCurrencyStatus,
     coverageStage,
+    publicationStatus,
     expansionWave: regionalAnchorCodes.has(record.prefecture_code)
       ? ("wave_1_regional_anchor" as const)
       : ("wave_2_nationwide_followup" as const),
-    publicHref:
-      record.prefecture_code === "01"
-        ? "/municipalities/hokkaido"
-        : record.prefecture_code === "04"
-          ? "/municipalities/miyagi"
-          : record.prefecture_code === "40"
-            ? "/municipalities/fukuoka-prefecture"
-            : null,
+    publicHref: publishedPage?.route ?? null,
   };
 });
 
@@ -139,6 +154,12 @@ export const nationwideCoverageStats = {
   totalPrefectures: nationwidePrefectureCoverage.length,
   verifiedOfficialEntries: nationwidePrefectureCoverage.filter(
     (record) => record.officialEntryStatus === "verified",
+  ).length,
+  indexedPolicyPlanEntries: nationwidePrefectureCoverage.filter(
+    (record) =>
+      record.coverageStage === "plan_entry_indexed" ||
+      record.coverageStage === "current_plan_confirmed" ||
+      record.coverageStage === "reviewed_data",
   ).length,
   indexedPlanSources: planSources.filter(
     (source) => source.review_status === "indexed",
@@ -148,9 +169,7 @@ export const nationwideCoverageStats = {
       source.review_status === "reviewed" || source.review_status === "verified",
   ).length,
   sourceCatalogedPrefectures: nationwidePrefectureCoverage.filter(
-    (record) =>
-      record.coverageStage === "source_cataloged" ||
-      record.coverageStage === "reviewed_data",
+    (record) => record.planSource !== null,
   ).length,
   currentPlanConfirmedPrefectures: nationwidePrefectureCoverage.filter(
     (record) => record.planCurrencyStatus === "current_confirmed",
@@ -162,7 +181,7 @@ export const nationwideCoverageStats = {
     (record) => record.coverageStage === "reviewed_data",
   ).length,
   publishedPrefecturePages: nationwidePrefectureCoverage.filter(
-    (record) => record.publicHref !== null,
+    (record) => record.publicationStatus === "published",
   ).length,
   candidateOfficialEntries: nationwidePrefectureCoverage.filter(
     (record) => record.officialEntryStatus === "candidate",
@@ -211,7 +230,8 @@ export function coverageStageLabel(stage: CoverageStage) {
   const labels: Record<CoverageStage, string> = {
     registered: "全国登録済み",
     official_entry_verified: "公式入口確認済み",
-    source_cataloged: "計画資料索引済み",
+    plan_entry_indexed: "政策計画入口索引済み",
+    current_plan_confirmed: "現行政策入口確認済み",
     reviewed_data: "Reviewedデータ公開",
   };
   return labels[stage];
@@ -219,10 +239,22 @@ export function coverageStageLabel(stage: CoverageStage) {
 
 export function coverageStageTone(stage: CoverageStage) {
   if (stage === "reviewed_data") return "verified" as const;
-  if (stage === "source_cataloged" || stage === "official_entry_verified") {
+  if (
+    stage === "current_plan_confirmed" ||
+    stage === "plan_entry_indexed" ||
+    stage === "official_entry_verified"
+  ) {
     return "progress" as const;
   }
   return "neutral" as const;
+}
+
+export function publicationStatusLabel(status: PublicationStatus) {
+  const labels: Record<PublicationStatus, string> = {
+    unpublished: "未公開",
+    published: "公開中",
+  };
+  return labels[status];
 }
 
 export function planCurrencyLabel(status: PlanCurrencyStatus) {

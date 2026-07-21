@@ -53,10 +53,19 @@ BASE_PAGE_REQUIREMENTS: dict[str, list[str]] = {
     "municipalities/index.html": [
         "全国47都道府県を、同じ品質段階で追う。",
         "公式入口確認済み",
+        "政策計画入口索引済み",
         "現行政策入口確認済み",
-        "Reviewedデータ公開",
+        "Reviewedデータ",
+        "自治体ページ公開",
         "入口確認の先を、6つの資料カテゴリで追う。",
+        "政策計画",
+        "実施計画",
+        "KPI・数値目標",
+        "年度評価",
+        "予算・決算",
         "事業評価",
+        "公開状態はReviewedの深さと別に管理。",
+        "自治体ページの公開状態は、この確認の深さとは別軸です。",
         "128目標グループ・149系列",
     ],
     "municipalities/hokkaido/index.html": [
@@ -135,6 +144,28 @@ def catalog_source_count() -> int:
     return sum(len(load_json(path)["records"]) for path in SOURCE_CATALOG_PATHS)
 
 
+def nationwide_requirements() -> dict[str, list[str]]:
+    coverage = load_json(ROOT / "data/catalog/prefecture_coverage.json")
+    published = load_json(ROOT / "data/catalog/published_prefecture_pages.json")
+    required_files = {
+        f"{record['route'].strip('/')}/index.html" for record in published["records"]
+    }
+    missing_required_files = required_files - set(REQUIRED_FILES)
+    if missing_required_files:
+        raise ValueError(
+            "Published prefecture routes are missing from REQUIRED_FILES: "
+            + ", ".join(sorted(missing_required_files))
+        )
+
+    return {
+        "municipalities/index.html": [
+            *(record["name"] for record in coverage["records"]),
+            "自治体ページ公開中",
+            "公開状態",
+        ]
+    }
+
+
 def miyagi_requirements() -> dict[str, list[str]]:
     manifest = load_json(ROOT / "data/catalog/miyagi_policy_review_manifest.json")
     queue = load_json(ROOT / "data/catalog/wave1_policy_review_queue.json")
@@ -200,8 +231,9 @@ def main() -> int:
     requirements = {
         path: list(copies) for path, copies in BASE_PAGE_REQUIREMENTS.items()
     }
-    for path, copies in miyagi_requirements().items():
-        requirements.setdefault(path, []).extend(copies)
+    for dynamic_requirements in (nationwide_requirements(), miyagi_requirements()):
+        for path, copies in dynamic_requirements.items():
+            requirements.setdefault(path, []).extend(copies)
 
     for relative_path, copies in requirements.items():
         path = EXPORT_ROOT / relative_path
