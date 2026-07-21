@@ -1,24 +1,13 @@
 {
-  "id": "phase-8-regional-anchor-expansion",
-  "phase": 8,
-  "scope_version": "2026-07-22",
-  "status": "in_progress",
-  "updated_at": "2026-07-22",
-  "counts": {
-    "regional_anchors": 9,
-    "anchors_with_plan_and_kpi_entrances": 9,
-    "anchors_with_six_category_source_map": 6,
-    "anchors_with_reviewed_numeric_targets": 7,
-    "anchors_with_published_prefecture_pages": 7,
-    "anchors_pending_numeric_target_review": 2
-  },
-  "gates": [
+  "id":"phase-8-regional-anchor-expansion","phase":8,"scope_version":"2026-07-22","status":"in_progress","updated_at":"2026-07-22",
+  "counts":{"regional_anchors":9,"anchors_with_plan_and_kpi_entrances":9,"anchors_with_six_category_source_map":6,"anchors_with_reviewed_numeric_targets":8,"anchors_with_published_prefecture_pages":8,"anchors_pending_numeric_target_review":1},
+  "gates":[
     {"id":"plan_and_numeric_target_entrances","status":"passed","evidence_paths":["data/catalog/prefecture_coverage.json","data/catalog/regional_anchor_source_registry.json"]},
     {"id":"six_category_source_discovery","status":"in_progress","evidence_paths":["data/catalog/regional_anchor_source_registry.json","data/catalog/nationwide_source_inventory.json"]},
-    {"id":"evidence_packet_review","status":"in_progress","evidence_paths":["data/catalog/regional_anchor_source_registry.json","data/catalog/tokyo_policy_target_review_manifest.json","data/entities/policy/tokyo_policy_target_catalog_children.json","data/entities/policy/tokyo_policy_target_children_evidence_packets.json","data/reviewed/tokyo_policy_target_cards.json","data/evidence/tokyo_policy_target_card_evidence.json","data/catalog/aichi_policy_indicator_review_manifest.json","data/reviewed/aichi_policy_indicators.json","data/evidence/aichi_policy_indicator_evidence.json","data/catalog/osaka_beyond_expo_indicator_review_manifest.json","data/reviewed/osaka_beyond_expo_indicators.json","data/evidence/osaka_beyond_expo_indicator_evidence.json","data/catalog/hiroshima_revised_vision_indicator_review_manifest.json","data/reviewed/hiroshima_revised_vision_indicators_part1.json","data/reviewed/hiroshima_revised_vision_indicators_part2.json","data/reviewed/hiroshima_revised_vision_indicators_part3.json"]},
-    {"id":"semantic_preservation","status":"in_progress","evidence_paths":["tests/test_regional_anchor_source_registry.py","tests/test_hokkaido_reviewed_indicator_sequence.py","tests/test_miyagi_catalog_sequences.py","tests/test_tokyo_policy_targets_children.py","tests/test_tokyo_policy_target_cards.py","tests/test_aichi_policy_indicators.py","tests/test_osaka_beyond_expo_indicators.py","tests/test_hiroshima_revised_vision_indicators.py"]},
+    {"id":"evidence_packet_review","status":"in_progress","evidence_paths":["data/catalog/regional_anchor_source_registry.json","data/catalog/tokyo_policy_target_review_manifest.json","data/entities/policy/tokyo_policy_target_catalog_children.json","data/entities/policy/tokyo_policy_target_children_evidence_packets.json","data/reviewed/tokyo_policy_target_cards.json","data/evidence/tokyo_policy_target_card_evidence.json","data/catalog/aichi_policy_indicator_review_manifest.json","data/reviewed/aichi_policy_indicators.json","data/evidence/aichi_policy_indicator_evidence.json","data/catalog/osaka_beyond_expo_indicator_review_manifest.json","data/reviewed/osaka_beyond_expo_indicators.json","data/evidence/osaka_beyond_expo_indicator_evidence.json","data/catalog/hiroshima_revised_vision_indicator_review_manifest.json","data/reviewed/hiroshima_revised_vision_indicators_part1.json","data/reviewed/hiroshima_revised_vision_indicators_part2.json","data/reviewed/hiroshima_revised_vision_indicators_part3.json","data/catalog/kagawa_extended_plan_indicator_review_manifest.json","data/evidence/kagawa_extended_plan_indicator_evidence_part1.json","data/evidence/kagawa_extended_plan_indicator_evidence_part2.json","data/evidence/kagawa_extended_plan_indicator_evidence_part3.json"]},
+    {"id":"semantic_preservation","status":"in_progress","evidence_paths":["tests/test_regional_anchor_source_registry.py","tests/test_hokkaido_reviewed_indicator_sequence.py","tests/test_miyagi_catalog_sequences.py","tests/test_tokyo_policy_targets_children.py","tests/test_tokyo_policy_target_cards.py","tests/test_aichi_policy_indicators.py","tests/test_osaka_beyond_expo_indicators.py","tests/test_hiroshima_revised_vision_indicators.py","tests/test_kagawa_extended_plan_indicators.py"]},
     {"id":"published_pages_and_production_smoke","status":"in_progress","evidence_paths":["data/catalog/published_prefecture_pages.json",".github/workflows/production-smoke.yml"]}
   ],
-  "next_review_order": ["37", "47"],
-  "scope_note": "Phase 8 is complete only when all nine regional anchors have Evidence Packet-backed Reviewed numeric targets and the published pages pass static export and Production Smoke. Tokyo, Aichi, Osaka and Hiroshima are complete target-review references; Kagawa and Okinawa remain."
+  "next_review_order":["47"],
+  "scope_note":"Phase 8 is complete only when all nine regional anchors have Evidence Packet-backed Reviewed numeric targets and the published pages pass static export and Production Smoke. Tokyo, Aichi, Osaka, Hiroshima and Kagawa are complete target-review references; Okinawa remains."
 }
