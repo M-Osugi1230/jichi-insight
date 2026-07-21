@@ -1,0 +1,44 @@
+name: Kagawa Canonical Generation
+
+on:
+  push:
+    branches:
+      - agent/kagawa-extended-plan-indicators
+    paths:
+      - .github/workflows/kagawa_generate_retry.yml
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/kagawa-extended-plan-indicators
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install extraction dependency
+        run: python -m pip install pdfplumber==0.11.9
+      - name: Synchronize branch
+        run: git pull --rebase origin agent/kagawa-extended-plan-indicators
+      - name: Download official revision PDF
+        run: |
+          curl --fail --location --retry 4 --output /tmp/kagawa.pdf \
+            https://www.pref.kagawa.lg.jp/documents/36520/shiryou3_shihyouminaoshi.pdf
+          test "$(stat -c%s /tmp/kagawa.pdf)" -gt 100000
+      - name: Generate reviewed catalog and Evidence
+        run: python scripts/build_kagawa_indicator_catalog.py /tmp/kagawa.pdf
+      - name: Commit canonical data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/reviewed/kagawa_extended_plan_indicators_part*.json \
+            data/reviewed/kagawa_extended_plan_indicator_occurrences.json \
+            data/evidence/kagawa_extended_plan_indicator_evidence_part*.json \
+            data/catalog/kagawa_extended_plan_indicator_review_manifest.json
+          git commit -m "Generate Kagawa extended-plan indicator catalog"
+          git push origin HEAD:agent/kagawa-extended-plan-indicators
