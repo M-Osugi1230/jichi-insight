@@ -15,6 +15,9 @@ OSAKA_MANIFEST_PATH = ROOT / "data/catalog/osaka_beyond_expo_indicator_review_ma
 HIROSHIMA_MANIFEST_PATH = (
     ROOT / "data/catalog/hiroshima_revised_vision_indicator_review_manifest.json"
 )
+KAGAWA_MANIFEST_PATH = (
+    ROOT / "data/catalog/kagawa_extended_plan_indicator_review_manifest.json"
+)
 
 
 def load(path: Path):
@@ -48,6 +51,8 @@ def test_phase9_counts_are_derived_from_current_registries():
         anchor_reviewed_codes.add("27")
     if load(HIROSHIMA_MANIFEST_PATH)["status"] == "complete":
         anchor_reviewed_codes.add("34")
+    if load(KAGAWA_MANIFEST_PATH)["status"] == "complete":
+        anchor_reviewed_codes.add("37")
     phase9_indexed = sum(
         item["numeric_target_status"] in {"indexed", "reviewed"} for item in queue
     )
@@ -73,7 +78,7 @@ def test_phase9_stays_in_progress_until_nationwide_numeric_and_evidence_gates_pa
     assert manifest["status"] == "in_progress"
     assert manifest["counts"]["major_policy_plans_indexed"] == 47
     assert manifest["counts"]["numeric_target_entrances_indexed_or_reviewed"] == 9
-    assert manifest["counts"]["evidence_backed_reviewed_prefectures"] == 7
+    assert manifest["counts"]["evidence_backed_reviewed_prefectures"] == 8
     assert gates["all_major_policy_plans_indexed"] == "passed"
     assert gates["all_major_numeric_targets_indexed"] == "in_progress"
     assert gates["published_numeric_evidence_coverage"] == "in_progress"
