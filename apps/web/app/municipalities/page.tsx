@@ -13,6 +13,7 @@ import { kagawaIndicatorStats } from "@/lib/kagawaIndicators";
 import { hokkaidoIndicatorReviewStats } from "@/lib/hokkaidoIndicators";
 import { miyagiKpiActualStats } from "@/lib/miyagiActuals";
 import { miyagiPolicyReviewStats } from "@/lib/miyagiPolicies";
+import { okinawaIndicatorStats } from "@/lib/okinawaIndicators";
 import { osakaIndicatorStats } from "@/lib/osakaIndicators";
 import {
   nationwideCoverageStats,
@@ -80,7 +81,7 @@ export default function MunicipalitiesPage() {
           <div className={styles.sectionHeading}>
             <div>
               <p className="eyebrow">Deep dives</p>
-              <h2>いま、深く読める8都道府県。</h2>
+              <h2>いま、深く読める9都道府県。</h2>
             </div>
             <p>自治体ごとに公開できる深さが違うため、同じ「公開済み」として扱いません。</p>
           </div>
@@ -181,6 +182,18 @@ export default function MunicipalitiesPage() {
               <p>令和7年度と令和8年度の目標、再掲6件、参考指標135番の令和12年目標を分離します。</p>
               <Link href="/municipalities/kagawa">香川県の計画指標を見る →</Link>
             </article>
+            <article className={`${styles.deepDiveCard} ${styles.miyagi}`}>
+              <div><span>47 / 沖縄県</span><StatusBadge label="中期計画指標全件Reviewed" tone="verified" /></div>
+              <h3>375指標を二層で読む。</h3>
+              <dl>
+                <div><dt>主要指標</dt><dd>{okinawaIndicatorStats.majorIndicators}</dd></div>
+                <div><dt>成果指標</dt><dd>{okinawaIndicatorStats.outcomeIndicators}</dd></div>
+                <div><dt>離島指標</dt><dd>{okinawaIndicatorStats.islandIndicators}</dd></div>
+                <div><dt>Evidence</dt><dd>{okinawaIndicatorStats.evidencePackets}</dd></div>
+              </dl>
+              <p>主要指標と成果指標、離島・SDGs属性、定性目標、全国値を分離し、前期PDCA実績を自動接続しません。</p>
+              <Link href="/municipalities/okinawa">沖縄県の中期計画指標を見る →</Link>
+            </article>
           </div>
         </section>
 
@@ -227,7 +240,8 @@ export default function MunicipalitiesPage() {
                 (category === "kpi_source" && aichiPolicyIndicatorStats.indicatorRows > 0 ? 1 : 0) +
                 (category === "kpi_source" && osakaIndicatorStats.indicatorRows > 0 ? 1 : 0) +
                 (category === "kpi_source" && hiroshimaIndicatorStats.reviewedIndicators > 0 ? 1 : 0) +
-                (category === "kpi_source" && kagawaIndicatorStats.reviewedIndicators > 0 ? 1 : 0);
+                (category === "kpi_source" && kagawaIndicatorStats.reviewedIndicators > 0 ? 1 : 0) +
+                (category === "kpi_source" && okinawaIndicatorStats.reviewedIndicators > 0 ? 1 : 0);
               return (
                 <article key={category}>
                   <span>{sourceInventoryCategoryLabel(category)}</span>
@@ -268,7 +282,7 @@ export default function MunicipalitiesPage() {
               <p className="eyebrow">Regional anchors</p>
               <h2>次に深くつなぐ、9つの地域拠点。</h2>
             </div>
-            <p>順位付けではなく、地域バランスと資料構造に基づく整備順です。公開済み8地域と、次に資料を深掘りする1地域を示します。</p>
+            <p>順位付けではなく、地域バランスと資料構造に基づく整備順です。9地域すべてでEvidence付き数値目標を公開し、次は年度実績・予算・事業評価との接続を進めます。</p>
           </div>
           <div className={styles.roadmapGrid}>
             {waveOnePolicyReviewQueue.map((item) => {
@@ -290,7 +304,9 @@ export default function MunicipalitiesPage() {
                               ? "/municipalities/kagawa"
                               : item.prefecture_code === "40"
                                 ? "/municipalities/fukuoka-prefecture"
-                                : null;
+                                : item.prefecture_code === "47"
+                                  ? "/municipalities/okinawa"
+                                  : null;
               return (
                 <article key={item.prefecture_code}>
                   <div>
@@ -312,9 +328,9 @@ export default function MunicipalitiesPage() {
 
         <section className="callout callout--dark">
           <div>
-            <p className="eyebrow">Phase 8</p>
-            <h2>全国の入口から、目標・実績・予算の接続へ。</h2>
-            <p>次の重点は、各地域の拠点自治体でKPI、年度評価、予算・決算、事業評価を同じ品質基準でつなぐことです。</p>
+            <p className="eyebrow">Phase 8 complete / Phase 9 in progress</p>
+            <h2>9地域の目標レビューから、残り38県と年度実績の接続へ。</h2>
+            <p>地域拠点9県のEvidence付き目標レビューは完了しました。Phase 9では残る38県の数値目標索引と、実績・予算・事業評価の接続を進めます。</p>
           </div>
           <Link className="primaryAction" href="/data-quality">品質の内訳を見る</Link>
         </section>
