@@ -62,6 +62,7 @@ routes=(
   "/municipalities/"
   "/municipalities/hokkaido/"
   "/municipalities/miyagi/"
+  "/municipalities/tokyo/"
   "/municipalities/fukuoka-prefecture/"
   "/sources/"
   "/robots.txt"
@@ -106,6 +107,8 @@ check_content() {
 check_content "/municipalities/" \
   "47都道府県を、資料の深さから探す。" \
   "全国の入口整備" \
+  "いま、深く読める4都道府県。" \
+  "東京都の政策目標を見る" \
   "政策計画入口" \
   "確認したい資料の深さ" \
   "都道府県と、確認できる資料。" \
@@ -148,6 +151,14 @@ check_content "/municipalities/miyagi/" \
   "2つの目標を、混ぜない。" \
   "年度実績を、指標ごとに確かめる。"
 
+check_content "/municipalities/tokyo/" \
+  "東京都の政策目標を、値と条件を変えずに読む。" \
+  "8目標・9系列" \
+  "2 / 60ページをReviewed。" \
+  "年度実績 未接続" \
+  "政策評価 未判定" \
+  "02 子育て PDFページ3-4"
+
 check_content "/municipalities/fukuoka-prefecture/" \
   "普通会計" \
   "まだ評価していないこと"
@@ -157,5 +168,6 @@ check_content "/data-quality/" \
   "データ不足を、点数で埋めません。"
 
 printf '\nPhase 7 nationwide registry checks: PASS\n' >> "$REPORT"
+printf 'Phase 8 Tokyo partial Reviewed publication checks: PASS\n' >> "$REPORT"
 printf 'Result: PASS\n' >> "$REPORT"
 cat "$REPORT"

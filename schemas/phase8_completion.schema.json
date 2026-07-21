@@ -39,9 +39,10 @@
     },
     "next_review_order": {
       "type": "array",
-      "prefixItems": [{"const": "13"}, {"const": "23"}, {"const": "27"}, {"const": "34"}, {"const": "37"}, {"const": "47"}],
-      "minItems": 6,
-      "maxItems": 6
+      "minItems": 0,
+      "maxItems": 6,
+      "uniqueItems": true,
+      "items": {"enum": ["13", "23", "27", "34", "37", "47"]}
     },
     "scope_note": {"type": "string", "minLength": 20}
   },

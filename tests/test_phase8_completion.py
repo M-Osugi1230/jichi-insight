@@ -8,6 +8,7 @@ MANIFEST_PATH = ROOT / "data/catalog/phase8_completion.json"
 SCHEMA_PATH = ROOT / "schemas/phase8_completion.schema.json"
 ANCHOR_PATH = ROOT / "data/catalog/regional_anchor_source_registry.json"
 PUBLISHED_PATH = ROOT / "data/catalog/published_prefecture_pages.json"
+TOKYO_MANIFEST_PATH = ROOT / "data/catalog/tokyo_policy_target_review_manifest.json"
 
 
 def load(path: Path):
@@ -25,12 +26,19 @@ def test_phase8_manifest_matches_schema():
 def test_phase8_counts_are_derived_from_canonical_registries():
     manifest = load(MANIFEST_PATH)
     anchors = load(ANCHOR_PATH)["records"]
+    tokyo_manifest = load(TOKYO_MANIFEST_PATH)
     published_codes = {
         record["prefecture_code"] for record in load(PUBLISHED_PATH)["records"]
     }
     anchor_codes = {record["prefecture_code"] for record in anchors}
 
-    reviewed = sum(record["numeric_target_status"] == "reviewed" for record in anchors)
+    reviewed_codes = {
+        record["prefecture_code"]
+        for record in anchors
+        if record["numeric_target_status"] == "reviewed"
+    }
+    if tokyo_manifest["reviewed_target_group_count"] > 0:
+        reviewed_codes.add("13")
     source_mapped = sum(len(record["sources"]) == 6 for record in anchors)
     published = len(anchor_codes & published_codes)
 
@@ -38,9 +46,9 @@ def test_phase8_counts_are_derived_from_canonical_registries():
         "regional_anchors": 9,
         "anchors_with_plan_and_kpi_entrances": 9,
         "anchors_with_six_category_source_map": source_mapped,
-        "anchors_with_reviewed_numeric_targets": reviewed,
+        "anchors_with_reviewed_numeric_targets": len(reviewed_codes),
         "anchors_with_published_prefecture_pages": published,
-        "anchors_pending_numeric_target_review": 9 - reviewed,
+        "anchors_pending_numeric_target_review": 9 - len(reviewed_codes),
     }
 
 
@@ -49,8 +57,9 @@ def test_phase8_cannot_be_complete_before_all_review_and_publication_gates_pass(
     gates = {gate["id"]: gate["status"] for gate in manifest["gates"]}
 
     assert manifest["status"] == "in_progress"
-    assert manifest["counts"]["anchors_with_reviewed_numeric_targets"] == 3
-    assert manifest["counts"]["anchors_pending_numeric_target_review"] == 6
+    assert manifest["counts"]["anchors_with_reviewed_numeric_targets"] == 4
+    assert manifest["counts"]["anchors_pending_numeric_target_review"] == 5
+    assert manifest["counts"]["anchors_with_published_prefecture_pages"] == 4
     assert gates["plan_and_numeric_target_entrances"] == "passed"
     assert gates["evidence_packet_review"] == "in_progress"
     assert gates["published_pages_and_production_smoke"] == "in_progress"

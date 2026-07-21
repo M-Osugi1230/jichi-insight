@@ -18,6 +18,7 @@ import {
 } from "@/lib/nationwideCoverage";
 import { allPolicyTargetStats } from "@/lib/policyTargets";
 import { waveOnePolicyReviewQueue } from "@/lib/policyReviewQueue";
+import { tokyoPolicyTargetStats } from "@/lib/tokyoPolicyTargets";
 
 import styles from "./page.module.css";
 
@@ -75,7 +76,7 @@ export default function MunicipalitiesPage() {
           <div className={styles.sectionHeading}>
             <div>
               <p className="eyebrow">Deep dives</p>
-              <h2>いま、深く読める3都道府県。</h2>
+              <h2>いま、深く読める4都道府県。</h2>
             </div>
             <p>自治体ごとに公開できる深さが違うため、同じ「公開済み」として扱いません。</p>
           </div>
@@ -103,6 +104,18 @@ export default function MunicipalitiesPage() {
               </dl>
               <p>条件型、累計、未公表、比較注意など、単純な数値にできない情報も残します。</p>
               <Link href="/municipalities/hokkaido">北海道の指標を見る →</Link>
+            </article>
+            <article className={`${styles.deepDiveCard} ${styles.tokyo}`}>
+              <div><span>13 / 東京都</span><StatusBadge label="一部Reviewed" tone="progress" /></div>
+              <h3>60ページを索引し、子供分野から読む。</h3>
+              <dl>
+                <div><dt>位置索引</dt><dd>{tokyoPolicyTargetStats.sourcePages}ページ</dd></div>
+                <div><dt>Reviewed目標</dt><dd>{tokyoPolicyTargetStats.reviewedTargetGroups}</dd></div>
+                <div><dt>Reviewed系列</dt><dd>{tokyoPolicyTargetStats.reviewedSeries}</dd></div>
+                <div><dt>年度実績</dt><dd>未接続</dd></div>
+              </dl>
+              <p>子供分野の値、期間、母集団、維持・下限条件をEvidence Packet付きで公開しています。</p>
+              <Link href="/municipalities/tokyo">東京都の政策目標を見る →</Link>
             </article>
             <article className={`${styles.deepDiveCard} ${styles.fukuoka}`}>
               <div><span>40 / 福岡県</span><StatusBadge label="政策＋財政" tone="progress" /></div>
@@ -156,12 +169,15 @@ export default function MunicipalitiesPage() {
           <div className={styles.sourceSummary}>
             {sourceInventoryCategoryOrder.map((category) => {
               const stats = nationwideSourceInventoryStats[category];
+              const reviewedOrHigher =
+                stats.reviewedOrHigher +
+                (category === "kpi_source" && tokyoPolicyTargetStats.reviewedTargetGroups > 0 ? 1 : 0);
               return (
                 <article key={category}>
                   <span>{sourceInventoryCategoryLabel(category)}</span>
                   <strong>{stats.indexedOrHigher}<small>/47</small></strong>
                   <div><span style={{ width: `${(stats.indexedOrHigher / 47) * 100}%` }} /></div>
-                  <p>人手照合以上 {stats.reviewedOrHigher}都道府県</p>
+                  <p>人手照合以上 {reviewedOrHigher}都道府県</p>
                 </article>
               );
             })}
@@ -196,7 +212,7 @@ export default function MunicipalitiesPage() {
               <p className="eyebrow">Regional anchors</p>
               <h2>次に深くつなぐ、9つの地域拠点。</h2>
             </div>
-            <p>順位付けではなく、地域バランスと資料構造に基づく整備順です。公開済み3地域と、次に資料を深掘りする6地域を示します。</p>
+            <p>順位付けではなく、地域バランスと資料構造に基づく整備順です。公開済み4地域と、次に資料を深掘りする5地域を示します。</p>
           </div>
           <div className={styles.roadmapGrid}>
             {waveOnePolicyReviewQueue.map((item) => {
@@ -206,9 +222,11 @@ export default function MunicipalitiesPage() {
                   ? "/municipalities/hokkaido"
                   : item.prefecture_code === "04"
                     ? "/municipalities/miyagi"
-                    : item.prefecture_code === "40"
-                      ? "/municipalities/fukuoka-prefecture"
-                      : null;
+                    : item.prefecture_code === "13"
+                      ? "/municipalities/tokyo"
+                      : item.prefecture_code === "40"
+                        ? "/municipalities/fukuoka-prefecture"
+                        : null;
               return (
                 <article key={item.prefecture_code}>
                   <div>

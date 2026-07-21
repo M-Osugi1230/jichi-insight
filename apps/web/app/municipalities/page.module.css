@@ -11,11 +11,12 @@
 .sectionHeading { align-items: end; display: grid; gap: 70px; grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr); }
 .sectionHeading h2 { margin-bottom: 0; }
 .sectionHeading > p { color: #42505b; margin-bottom: 8px; }
-.deepDiveGrid { display: grid; gap: 13px; grid-template-columns: repeat(3, 1fr); margin-top: 48px; }
-.deepDiveCard { background: #fffefa; border: 1px solid #d7d3c8; border-radius: 7px 28px 7px 7px; display: flex; flex-direction: column; min-height: 515px; overflow: hidden; padding: 24px; position: relative; }
+.deepDiveGrid { display: grid; gap: 13px; grid-template-columns: repeat(2, 1fr); margin-top: 48px; }
+.deepDiveCard { background: #fffefa; border: 1px solid #d7d3c8; border-radius: 7px 28px 7px 7px; display: flex; flex-direction: column; min-height: 490px; overflow: hidden; padding: 24px; position: relative; }
 .deepDiveCard::before { background: #286f9f; content: ""; height: 5px; left: 0; position: absolute; right: 0; top: 0; }
 .deepDiveCard.miyagi::before { background: #de5a3d; }
 .deepDiveCard.hokkaido::before { background: #286f9f; }
+.deepDiveCard.tokyo::before { background: #3e5d91; }
 .deepDiveCard.fukuoka::before { background: #236958; }
 .deepDiveCard > div:first-child { align-items: center; display: flex; gap: 10px; justify-content: space-between; }
 .deepDiveCard > div:first-child > span { font-size: 0.67rem; font-weight: 900; }
@@ -68,8 +69,6 @@
   .overviewLead { align-items: center; grid-template-columns: 1fr auto; }
   .overviewLead > strong { margin: 12px 0; }
   .overviewLead > span:last-child { justify-self: end; }
-  .deepDiveGrid { grid-template-columns: 1fr 1fr; }
-  .deepDiveCard:first-child { grid-column: 1 / -1; }
   .levelSection { grid-template-columns: 1fr; }
 }
 
@@ -79,7 +78,6 @@
   .overview dl div:nth-child(n + 3) { border-top: 1px solid #d7d3c8; }
   .sectionHeading, .deepDiveGrid { grid-template-columns: 1fr; }
   .sectionHeading { align-items: start; gap: 22px; }
-  .deepDiveCard:first-child { grid-column: auto; }
   .deepDiveCard { min-height: 440px; }
   .levelSection { padding: 44px 25px; }
   .sourceSummary { grid-template-columns: repeat(2, 1fr); }

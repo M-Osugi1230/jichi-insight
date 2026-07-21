@@ -9,6 +9,7 @@ SCHEMA_PATH = ROOT / "schemas/phase9_completion.schema.json"
 COVERAGE_PATH = ROOT / "data/catalog/prefecture_coverage.json"
 ANCHOR_PATH = ROOT / "data/catalog/regional_anchor_source_registry.json"
 QUEUE_PATH = ROOT / "data/catalog/phase9_execution_queue.json"
+TOKYO_MANIFEST_PATH = ROOT / "data/catalog/tokyo_policy_target_review_manifest.json"
 
 
 def load(path: Path):
@@ -28,14 +29,19 @@ def test_phase9_counts_are_derived_from_current_registries():
     coverage = load(COVERAGE_PATH)
     anchors = load(ANCHOR_PATH)["records"]
     queue = load(QUEUE_PATH)["items"]
+    tokyo_manifest = load(TOKYO_MANIFEST_PATH)
 
     anchor_numeric_indexed = sum(
         record["numeric_target_status"] in {"indexed", "reviewed"}
         for record in anchors
     )
-    anchor_reviewed = sum(
-        record["numeric_target_status"] == "reviewed" for record in anchors
-    )
+    anchor_reviewed_codes = {
+        record["prefecture_code"]
+        for record in anchors
+        if record["numeric_target_status"] == "reviewed"
+    }
+    if tokyo_manifest["reviewed_target_group_count"] > 0:
+        anchor_reviewed_codes.add("13")
     phase9_indexed = sum(
         item["numeric_target_status"] in {"indexed", "reviewed"} for item in queue
     )
@@ -49,7 +55,9 @@ def test_phase9_counts_are_derived_from_current_registries():
         "numeric_target_entrances_indexed_or_reviewed": (
             anchor_numeric_indexed + phase9_indexed
         ),
-        "evidence_backed_reviewed_prefectures": anchor_reviewed + phase9_reviewed,
+        "evidence_backed_reviewed_prefectures": (
+            len(anchor_reviewed_codes) + phase9_reviewed
+        ),
         "remaining_phase9_prefectures": len(queue),
         "phase9_prefectures_with_numeric_targets_indexed": phase9_indexed,
         "phase9_prefectures_with_reviewed_numeric_targets": phase9_reviewed,
@@ -63,7 +71,7 @@ def test_phase9_stays_in_progress_until_nationwide_numeric_and_evidence_gates_pa
     assert manifest["status"] == "in_progress"
     assert manifest["counts"]["major_policy_plans_indexed"] == 47
     assert manifest["counts"]["numeric_target_entrances_indexed_or_reviewed"] == 9
-    assert manifest["counts"]["evidence_backed_reviewed_prefectures"] == 3
+    assert manifest["counts"]["evidence_backed_reviewed_prefectures"] == 4
     assert gates["all_major_policy_plans_indexed"] == "passed"
     assert gates["all_major_numeric_targets_indexed"] == "in_progress"
     assert gates["published_numeric_evidence_coverage"] == "in_progress"

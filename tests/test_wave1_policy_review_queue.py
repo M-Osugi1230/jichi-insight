@@ -23,23 +23,40 @@ def test_queue_schema_and_order():
     assert {item["prefecture_code"] for item in items} == set(
         coverage["regional_anchor_codes"]
     )
-    assert queue["completed_prefecture_codes"] == ["40", "01"]
-    assert queue["active_prefecture_code"] == "04"
+    assert queue["completed_prefecture_codes"] == ["40", "01", "04"]
+    assert queue["active_prefecture_code"] == "13"
 
 
 def test_active_queue_progress_tokens():
     queue = load(QUEUE_PATH)
     items = {item["prefecture_code"]: item for item in queue["items"]}
-    active = items["04"]
+    active = items["13"]
     assert active["status"] == "active_review"
     assert active["source_inventory_status"] == "reviewed"
-    assert active["next_gate"] == "actuals_linkage"
-    assert all(token in active["next_action"] for token in ["95", "15", "54", "16"])
-    assert all(token in active["priority_basis"] for token in ["128", "149"])
+    assert active["next_gate"] == "kpi_catalog"
+    assert all(
+        token in active["next_action"]
+        for token in ["60", "8", "9", "3〜4"]
+    )
+    assert all(
+        token in active["priority_basis"]
+        for token in ["政策目標", "アクションプラン", "政策レビュー"]
+    )
     assert {
         status: sum(item["status"] == status for item in queue["items"])
         for status in ["reviewed_reference", "active_review", "queued"]
-    } == {"reviewed_reference": 2, "active_review": 1, "queued": 6}
+    } == {"reviewed_reference": 3, "active_review": 1, "queued": 5}
+
+
+def test_miyagi_remains_a_reviewed_reference_with_actuals_work_visible():
+    items = {
+        item["prefecture_code"]: item
+        for item in load(QUEUE_PATH)["items"]
+    }
+    miyagi = items["04"]
+    assert miyagi["status"] == "reviewed_reference"
+    assert miyagi["next_gate"] == "actuals_linkage"
+    assert all(token in miyagi["next_action"] for token in ["128", "149", "95", "15", "54"])
 
 
 def test_queue_sources_and_descriptions():
