@@ -10,44 +10,36 @@
     "verified_official_codes",
     "regional_anchor_codes",
     "reviewed_prefecture_codes",
+    "plan_entry_indexed_codes",
     "current_plan_confirmed_codes",
+    "current_plan_review_required_codes",
     "plan_sources",
     "records"
   ],
   "properties": {
     "id": {"const": "nationwide-prefecture-coverage"},
     "updated_at": {"type": "string", "format": "date"},
-    "verified_official_codes": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {"$ref": "#/$defs/prefectureCode"}
-    },
-    "regional_anchor_codes": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {"$ref": "#/$defs/prefectureCode"}
-    },
-    "reviewed_prefecture_codes": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {"$ref": "#/$defs/prefectureCode"}
-    },
-    "current_plan_confirmed_codes": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {"$ref": "#/$defs/prefectureCode"}
-    },
+    "verified_official_codes": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/prefectureCode"}},
+    "regional_anchor_codes": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/prefectureCode"}},
+    "reviewed_prefecture_codes": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/prefectureCode"}},
+    "plan_entry_indexed_codes": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/prefectureCode"}},
+    "current_plan_confirmed_codes": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/prefectureCode"}},
+    "current_plan_review_required_codes": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/prefectureCode"}},
     "plan_sources": {
       "type": "array",
+      "minItems": 47,
+      "maxItems": 47,
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["prefecture_code", "title", "url", "review_status", "verified_at"],
+        "required": ["prefecture_code", "title", "url", "source_kind", "plan_status", "review_status", "verified_at"],
         "properties": {
           "prefecture_code": {"$ref": "#/$defs/prefectureCode"},
           "title": {"type": "string", "minLength": 1},
           "url": {"type": "string", "format": "uri", "pattern": "^https://"},
-          "review_status": {"type": "string", "enum": ["indexed", "reviewed", "verified"]},
+          "source_kind": {"enum": ["comprehensive_plan", "long_term_vision", "regional_strategy", "governance_framework", "plan_index"]},
+          "plan_status": {"enum": ["current_confirmed", "current_review_required"]},
+          "review_status": {"enum": ["indexed", "reviewed", "verified"]},
           "verified_at": {"type": "string", "format": "date"}
         }
       }
@@ -59,34 +51,20 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": [
-          "prefecture_code",
-          "entity_id",
-          "slug",
-          "name",
-          "region",
-          "government_type",
-          "official_url"
-        ],
+        "required": ["prefecture_code", "entity_id", "slug", "name", "region", "government_type", "official_url"],
         "properties": {
           "prefecture_code": {"$ref": "#/$defs/prefectureCode"},
           "entity_id": {"type": "string", "pattern": "^jp-pref-(0[1-9]|[1-3][0-9]|4[0-7])$"},
           "slug": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"},
           "name": {"type": "string", "minLength": 2},
-          "region": {
-            "type": "string",
-            "enum": ["北海道", "東北", "関東", "中部", "近畿", "中国", "四国", "九州・沖縄"]
-          },
-          "government_type": {"type": "string", "enum": ["都", "道", "府", "県"]},
+          "region": {"enum": ["北海道", "東北", "関東", "中部", "近畿", "中国", "四国", "九州・沖縄"]},
+          "government_type": {"enum": ["都", "道", "府", "県"]},
           "official_url": {"type": "string", "format": "uri", "pattern": "^https://"}
         }
       }
     }
   },
   "$defs": {
-    "prefectureCode": {
-      "type": "string",
-      "pattern": "^(0[1-9]|[1-3][0-9]|4[0-7])$"
-    }
+    "prefectureCode": {"type": "string", "pattern": "^(0[1-9]|[1-3][0-9]|4[0-7])$"}
   }
 }
