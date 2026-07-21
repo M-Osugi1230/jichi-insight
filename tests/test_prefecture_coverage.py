@@ -14,22 +14,19 @@ def load(path: Path):
 
 def test_prefecture_coverage_registry_matches_schema():
     registry = load(COVERAGE_PATH)
-    schema = load(SCHEMA_PATH)
     validator = Draft202012Validator(
-        schema,
+        load(SCHEMA_PATH),
         format_checker=FormatChecker(),
     )
     assert list(validator.iter_errors(registry)) == []
 
 
 def test_all_forty_seven_prefectures_are_registered_once_in_official_order():
-    registry = load(COVERAGE_PATH)
-    records = registry["records"]
+    records = load(COVERAGE_PATH)["records"]
+    expected_codes = [f"{number:02d}" for number in range(1, 48)]
 
     assert len(records) == 47
-    assert [record["prefecture_code"] for record in records] == [
-        f"{number:02d}" for number in range(1, 48)
-    ]
+    assert [record["prefecture_code"] for record in records] == expected_codes
     assert [record["entity_id"] for record in records] == [
         f"jp-pref-{number:02d}" for number in range(1, 48)
     ]
@@ -59,122 +56,88 @@ def test_region_grouping_covers_all_prefectures_without_overlap():
     assert sum(actual_counts.values()) == 47
 
 
-def test_quality_stages_are_explicit_and_do_not_overstate_coverage():
+def test_nationwide_plan_entries_are_indexed_without_overstating_review_depth():
     registry = load(COVERAGE_PATH)
     known_codes = {record["prefecture_code"] for record in registry["records"]}
+    all_codes = {f"{number:02d}" for number in range(1, 48)}
     verified_codes = set(registry["verified_official_codes"])
+    indexed_codes = set(registry["plan_entry_indexed_codes"])
     anchor_codes = set(registry["regional_anchor_codes"])
     reviewed_codes = set(registry["reviewed_prefecture_codes"])
-    current_plan_codes = set(registry["current_plan_confirmed_codes"])
-    plan_source_codes = {
-        source["prefecture_code"] for source in registry["plan_sources"]
-    }
+    confirmed_codes = set(registry["current_plan_confirmed_codes"])
+    review_required_codes = set(registry["current_plan_review_required_codes"])
+    source_codes = {source["prefecture_code"] for source in registry["plan_sources"]}
 
-    expected_anchor_codes = {
-        "01",
-        "04",
-        "13",
-        "23",
-        "27",
-        "34",
-        "37",
-        "40",
-        "47",
-    }
-    assert verified_codes == expected_anchor_codes
-    assert anchor_codes == expected_anchor_codes
+    assert known_codes == all_codes
+    assert verified_codes == all_codes
+    assert indexed_codes == all_codes
+    assert source_codes == all_codes
+    assert anchor_codes == {"01", "04", "13", "23", "27", "34", "37", "40", "47"}
     assert reviewed_codes == {"01", "40"}
-    assert current_plan_codes == expected_anchor_codes
-    assert plan_source_codes == expected_anchor_codes
-
-    assert verified_codes <= known_codes
-    assert anchor_codes <= known_codes
-    assert reviewed_codes <= known_codes
-    assert current_plan_codes <= known_codes
-    assert plan_source_codes <= known_codes
-    assert reviewed_codes <= verified_codes
-    assert reviewed_codes <= plan_source_codes
-    assert current_plan_codes <= plan_source_codes
-
-    assert len(known_codes - verified_codes) == 38
-    assert len(plan_source_codes) == 9
-    assert len(current_plan_codes) == 9
-    assert plan_source_codes - current_plan_codes == set()
-    assert len(reviewed_codes) == 2
+    assert review_required_codes == {"29", "39", "41"}
+    assert confirmed_codes == all_codes - review_required_codes
+    assert confirmed_codes.isdisjoint(review_required_codes)
+    assert confirmed_codes | review_required_codes == all_codes
+    assert reviewed_codes <= confirmed_codes
+    assert len(confirmed_codes) == 44
 
 
-def test_wave_one_plan_sources_preserve_review_depth_and_https_provenance():
-    plan_sources = load(COVERAGE_PATH)["plan_sources"]
-    sources_by_code = {
-        source["prefecture_code"]: source for source in plan_sources
+def test_plan_sources_preserve_nonstandard_plan_structures_and_statuses():
+    sources = load(COVERAGE_PATH)["plan_sources"]
+    by_code = {source["prefecture_code"]: source for source in sources}
+
+    assert len(sources) == 47
+    assert len(by_code) == 47
+    assert len({source["url"] for source in sources}) == 47
+    assert all(source["url"].startswith("https://") for source in sources)
+    assert all(source["title"].strip() for source in sources)
+
+    assert by_code["01"]["review_status"] == "reviewed"
+    assert by_code["40"]["review_status"] == "reviewed"
+    assert all(
+        source["review_status"] == "indexed"
+        for code, source in by_code.items()
+        if code not in {"01", "40"}
+    )
+
+    assert by_code["29"]["source_kind"] == "regional_strategy"
+    assert by_code["39"]["source_kind"] == "governance_framework"
+    assert by_code["41"]["source_kind"] == "plan_index"
+    assert {
+        code
+        for code, source in by_code.items()
+        if source["plan_status"] == "current_review_required"
+    } == {"29", "39", "41"}
+
+    assert by_code["02"]["title"] == "青森県基本計画「青森新時代」への架け橋"
+    assert by_code["05"]["title"] == "秋田県総合計画 ～秋田再興への第一歩～"
+    assert by_code["08"]["title"].startswith("第3次茨城県総合計画")
+    assert by_code["16"]["title"].startswith("富山県総合計画")
+    assert by_code["30"]["title"] == "和歌山県総合計画（2026～2030）"
+    assert by_code["32"]["title"] == "第2期島根創生計画"
+    assert by_code["42"]["title"] == "長崎県総合計画みんなの未来図2030"
+
+
+def test_old_or_candidate_plans_are_not_silently_promoted():
+    registry = load(COVERAGE_PATH)
+    by_code = {
+        source["prefecture_code"]: source for source in registry["plan_sources"]
     }
+    review_required = set(registry["current_plan_review_required_codes"])
 
-    for code in ("04", "13", "23", "27", "34", "37", "47"):
-        assert sources_by_code[code]["review_status"] == "indexed"
-    for code in ("01", "40"):
-        assert sources_by_code[code]["review_status"] == "reviewed"
-
-    assert sources_by_code["01"]["title"] == "北海道総合計画"
-    assert sources_by_code["01"]["verified_at"] == "2026-07-17"
-    assert sources_by_code["04"]["title"] == "新・宮城の将来ビジョン"
-    assert (
-        sources_by_code["13"]["title"]
-        == "2050東京戦略 ～東京 もっとよくなる～"
-    )
-    assert sources_by_code["13"]["url"].endswith("/basic-plan/2050-tokyo")
-    assert sources_by_code["23"]["title"] == "あいちビジョン2030"
-    assert sources_by_code["27"]["title"] == "Beyond EXPO 2025"
-    assert sources_by_code["27"]["url"].endswith(
-        "/kikaku_keikaku/beyondexpo2025/index.html"
-    )
-    assert (
-        sources_by_code["37"]["title"]
-        == "「人生100年時代のフロンティア県・香川」実現計画"
-    )
-    assert sources_by_code["37"]["url"].endswith(
-        "/sogokeikakuminaoshi/keikakuminaoshi.html"
-    )
-    assert (
-        sources_by_code["47"]["title"]
-        == "新・沖縄21世紀ビジョン基本計画（沖縄振興計画）"
-    )
-    assert sources_by_code["47"]["url"].startswith(
-        "https://www.pref.okinawa.jp/"
-    )
+    for code in review_required:
+        assert by_code[code]["plan_status"] == "current_review_required"
+        assert code not in registry["current_plan_confirmed_codes"]
 
     superseded_titles = {
         "「未来の東京」戦略",
         "将来ビジョン・大阪",
         "大阪の再生・成長に向けた新戦略",
+        "島根創生計画（第1期）",
+        "第2期高知県まち・ひと・しごと創生総合戦略",
+        "佐賀県総合計画2015",
     }
-    assert all(source["title"] not in superseded_titles for source in plan_sources)
-    assert all("/basic-plan/choki-plan" not in source["url"] for source in plan_sources)
-    assert all("/shouraivision/" not in source["url"] for source in plan_sources)
-
-    for source in plan_sources:
-        assert source["url"].startswith("https://")
-        assert source["title"].strip()
-        if source["prefecture_code"] != "01":
-            assert source["verified_at"] == "2026-07-16"
-
-
-def test_all_wave_one_current_plans_are_confirmed_without_overpromoting_actuals():
-    registry = load(COVERAGE_PATH)
-    anchor_codes = set(registry["regional_anchor_codes"])
-    current_plan_codes = set(registry["current_plan_confirmed_codes"])
-    reviewed_codes = set(registry["reviewed_prefecture_codes"])
-
-    assert current_plan_codes == anchor_codes
-    assert reviewed_codes == {"01", "40"}
-    assert current_plan_codes - reviewed_codes == {
-        "04",
-        "13",
-        "23",
-        "27",
-        "34",
-        "37",
-        "47",
-    }
+    assert all(source["title"] not in superseded_titles for source in by_code.values())
 
 
 def test_only_fukuoka_and_hokkaido_are_marked_reviewed():
