@@ -1,6 +1,7 @@
 import coverageRegistry from "../../../data/catalog/prefecture_coverage.json";
 import sourceInventoryRegistry from "../../../data/catalog/nationwide_source_inventory.json";
 import publishedPageRegistry from "../../../data/catalog/published_prefecture_pages.json";
+import regionalAnchorSourceRegistry from "../../../data/catalog/regional_anchor_source_registry.json";
 
 export type PrefectureRegion =
   | "北海道"
@@ -77,6 +78,14 @@ export type PublishedPrefecturePageRecord = {
   publication_status: "published";
 };
 
+type RegionalAnchorSourceRecord = {
+  prefecture_code: string;
+  sources: Array<{
+    category: SourceInventoryCategory;
+    status: "indexed";
+  }>;
+};
+
 type SourceStatusCounts = Record<SourceInventoryStatus, number>;
 
 const records = coverageRegistry.records as PrefectureCoverageRecord[];
@@ -107,6 +116,26 @@ export const regionOrder: PrefectureRegion[] = [
   "四国",
   "九州・沖縄",
 ];
+
+export const sourceInventoryCategoryOrder =
+  sourceInventoryRegistry.categories as SourceInventoryCategory[];
+
+const sourceInventoryStatusOrder: SourceInventoryStatus[] = [
+  "not_indexed",
+  "indexed",
+  "reviewed",
+  "linked",
+];
+
+function deeperSourceStatus(
+  current: SourceInventoryStatus,
+  candidate: SourceInventoryStatus,
+): SourceInventoryStatus {
+  return sourceInventoryStatusOrder.indexOf(candidate) >
+    sourceInventoryStatusOrder.indexOf(current)
+    ? candidate
+    : current;
+}
 
 export const nationwidePrefectureCoverage = records.map((record) => {
   const planSource = planSourcesByCode.get(record.prefecture_code) ?? null;
@@ -189,20 +218,61 @@ export const nationwideCoverageStats = {
   updatedAt: coverageRegistry.updated_at,
 };
 
-export const nationwideSourceInventory =
+const baseNationwideSourceInventory =
   sourceInventoryRegistry.records as PrefectureSourceInventoryRecord[];
+const anchorSourceRecords =
+  regionalAnchorSourceRegistry.records as RegionalAnchorSourceRecord[];
+const anchorSourceStatusesByCode = new Map(
+  anchorSourceRecords.map((record) => [
+    record.prefecture_code,
+    Object.fromEntries(
+      record.sources.map((source) => [source.category, source.status]),
+    ) as Partial<Record<SourceInventoryCategory, SourceInventoryStatus>>,
+  ]),
+);
 
-const sourceInventorySummary = sourceInventoryRegistry.summary as Record<
-  SourceInventoryCategory,
-  SourceStatusCounts
->;
+export const nationwideSourceInventory = baseNationwideSourceInventory.map(
+  (record) => {
+    const overlay = anchorSourceStatusesByCode.get(record.prefecture_code);
+    if (!overlay) return record;
 
-export const sourceInventoryCategoryOrder =
-  sourceInventoryRegistry.categories as SourceInventoryCategory[];
+    const sources = Object.fromEntries(
+      sourceInventoryCategoryOrder.map((category) => [
+        category,
+        deeperSourceStatus(
+          record.sources[category],
+          overlay[category] ?? "not_indexed",
+        ),
+      ]),
+    ) as Record<SourceInventoryCategory, SourceInventoryStatus>;
+
+    return {
+      ...record,
+      sources,
+      next_action:
+        Object.keys(overlay).length === 6
+          ? "6資料カテゴリの公式入口を索引済み。次に数値目標本文とEvidence PacketをReviewed化する。"
+          : record.next_action,
+    };
+  },
+);
+
+function countSourceStatuses(category: SourceInventoryCategory): SourceStatusCounts {
+  const counts: SourceStatusCounts = {
+    not_indexed: 0,
+    indexed: 0,
+    reviewed: 0,
+    linked: 0,
+  };
+  for (const record of nationwideSourceInventory) {
+    counts[record.sources[category]] += 1;
+  }
+  return counts;
+}
 
 export const nationwideSourceInventoryStats = Object.fromEntries(
   sourceInventoryCategoryOrder.map((category) => {
-    const counts = sourceInventorySummary[category];
+    const counts = countSourceStatuses(category);
     return [
       category,
       {
