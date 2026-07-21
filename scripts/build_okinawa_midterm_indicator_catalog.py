@@ -5,8 +5,8 @@ from __future__ import annotations
 
 import argparse
 import json
-from pathlib import Path
 import re
+from pathlib import Path
 
 import pdfplumber
 
@@ -124,15 +124,42 @@ def evidence_document(identifier: str, records: list[dict]) -> dict:
                 "source_pdf_page": record["source_pdf_page"],
                 "source_table_row": record["source_table_row"],
                 "claims": [
-                    {"field": "policy_code", "value_original": record["policy_code_original"]},
-                    {"field": "policy_title", "value_original": record["policy_title_original"]},
-                    {"field": "indicator_name", "value_original": record["indicator_name_original"]},
-                    {"field": "baseline", "value_original": record["baseline_original"]},
-                    {"field": "target_r9", "value_original": record["target_r9_original"]},
-                    {"field": "national_current", "value_original": record["national_current_original"]},
-                    {"field": "rationale_source", "value_original": record["rationale_source_original"]},
-                    {"field": "island_indicator", "value_original": record["island_indicator_original"]},
-                    {"field": "sdgs_priority", "value_original": record["sdgs_priority_original"]},
+                    {
+                        "field": "policy_code",
+                        "value_original": record["policy_code_original"],
+                    },
+                    {
+                        "field": "policy_title",
+                        "value_original": record["policy_title_original"],
+                    },
+                    {
+                        "field": "indicator_name",
+                        "value_original": record["indicator_name_original"],
+                    },
+                    {
+                        "field": "baseline",
+                        "value_original": record["baseline_original"],
+                    },
+                    {
+                        "field": "target_r9",
+                        "value_original": record["target_r9_original"],
+                    },
+                    {
+                        "field": "national_current",
+                        "value_original": record["national_current_original"],
+                    },
+                    {
+                        "field": "rationale_source",
+                        "value_original": record["rationale_source_original"],
+                    },
+                    {
+                        "field": "island_indicator",
+                        "value_original": record["island_indicator_original"],
+                    },
+                    {
+                        "field": "sdgs_priority",
+                        "value_original": record["sdgs_priority_original"],
+                    },
                 ],
                 "source_value_note": record["source_value_note"],
                 "review_status": "reviewed",
@@ -194,7 +221,9 @@ def build(pdf_path: Path, root: Path) -> None:
         "outcome_indicator_count": len(outcome),
         "evidence_packet_count": len(records),
         "island_indicator_count": sum(record["is_island_indicator"] for record in records),
-        "sdgs_priority_indicator_count": sum(record["has_sdgs_priority"] for record in records),
+        "sdgs_priority_indicator_count": sum(
+            record["has_sdgs_priority"] for record in records
+        ),
         "qualitative_target_count": sum(
             record["target_value_kind"] == "qualitative" for record in records
         ),
