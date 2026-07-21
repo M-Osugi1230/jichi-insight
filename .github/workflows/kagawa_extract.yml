@@ -1,0 +1,46 @@
+name: Kagawa Indicator Extraction
+
+on:
+  push:
+    branches:
+      - agent/kagawa-extended-plan-indicators
+    paths:
+      - .github/workflows/kagawa_extract.yml
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/kagawa-extended-plan-indicators
+      - name: Install PDF tools
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils
+      - name: Download official Kagawa indicator revision PDF
+        run: |
+          curl --fail --location --retry 4 --output /tmp/kagawa-indicators.pdf \
+            https://www.pref.kagawa.lg.jp/documents/36520/shiryou3_shihyouminaoshi.pdf
+          test "$(stat -c%s /tmp/kagawa-indicators.pdf)" -gt 100000
+      - name: Extract layout-preserving text
+        run: |
+          mkdir -p data/raw
+          pdftotext -layout -nopgbrk /tmp/kagawa-indicators.pdf data/raw/kagawa_indicator_revision_2026.txt
+          python - <<'PY'
+          from pathlib import Path
+          path = Path('data/raw/kagawa_indicator_revision_2026.txt')
+          text = path.read_text(encoding='utf-8')
+          assert '計画期間の延長及び指標の目標値等の見直しについて' in text
+          assert '135' in text and '県人口' in text
+          print(len(text), text.count('\n'))
+          PY
+      - name: Commit extraction and remove workflow
+        run: |
+          rm .github/workflows/kagawa_extract.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/raw/kagawa_indicator_revision_2026.txt .github/workflows/kagawa_extract.yml
+          git commit -m "Extract Kagawa extended-plan indicator table"
+          git push origin HEAD:agent/kagawa-extended-plan-indicators
