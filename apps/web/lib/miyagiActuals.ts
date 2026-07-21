@@ -22,6 +22,8 @@ import measure11Evidence from "../../../data/entities/policy/miyagi_kpi_actuals_
 import measure11Actuals from "../../../data/entities/policy/miyagi_kpi_actuals_measure11_2024.json";
 import measure12Evidence from "../../../data/entities/policy/miyagi_kpi_actuals_measure12_2024_evidence_packets.json";
 import measure12Actuals from "../../../data/entities/policy/miyagi_kpi_actuals_measure12_2024.json";
+import measure13Evidence from "../../../data/entities/policy/miyagi_kpi_actuals_measure13_2024_evidence_packets.json";
+import measure13Actuals from "../../../data/entities/policy/miyagi_kpi_actuals_measure13_2024.json";
 
 export type MiyagiAchievementRateStatus = "numeric" | "above_100" | "below_0";
 export type MiyagiAchievementGrade = "A" | "B" | "C" | "D" | "not_set";
@@ -83,6 +85,7 @@ export const reviewedMiyagiKpiActualLinks = [
   ...measure10Actuals.records,
   ...measure11Actuals.records,
   ...measure12Actuals.records,
+  ...measure13Actuals.records,
 ] as MiyagiKpiActualLink[];
 export const miyagiKpiActualEvidencePackets = [
   ...measure1Evidence,
@@ -97,6 +100,7 @@ export const miyagiKpiActualEvidencePackets = [
   ...measure10Evidence,
   ...measure11Evidence,
   ...measure12Evidence,
+  ...measure13Evidence,
 ];
 
 export const miyagiKpiActualBySeriesId = new Map(
@@ -122,6 +126,6 @@ export const miyagiKpiActualStats = {
     0,
   ),
   evidencePackets: miyagiKpiActualEvidencePackets.length,
-  subjectFiscalYear: measure12Actuals.subject_fiscal_year,
-  evaluationFiscalYear: measure12Actuals.evaluation_fiscal_year,
+  subjectFiscalYear: measure13Actuals.subject_fiscal_year,
+  evaluationFiscalYear: measure13Actuals.evaluation_fiscal_year,
 };
