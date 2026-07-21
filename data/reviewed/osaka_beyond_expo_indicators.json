@@ -1,0 +1,3464 @@
+{
+  "id": "osaka-beyond-expo-indicator-catalog-2026",
+  "municipality_key": "osaka-prefecture",
+  "prefecture_code": "27",
+  "source_id": "osaka-beyond-expo-2025-final",
+  "source_title": "Beyond EXPO 2025",
+  "source_document_url": "https://www.pref.osaka.lg.jp/documents/127496/beyondexpo2025.pdf",
+  "adopted_at": "2026-03-31",
+  "indicator_row_count": 83,
+  "indicator_series_count": 91,
+  "strategy_target_count": 1,
+  "objective_kpi_count": 27,
+  "subjective_indicator_count": 55,
+  "items": [
+    {
+      "id": "policy-indicator-osaka-001",
+      "display_order": 1,
+      "indicator_layer": "strategy_target",
+      "pillar_original": "全体",
+      "category_original": "経済目標",
+      "indicator_name_original": "2040年代に名目GDP80兆円を実現",
+      "source_page": 73,
+      "response_scale": null,
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "兆円",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "target",
+              "period": "2040年代",
+              "value": 80,
+              "value_text_original": "80兆円",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "現行戦略の明示的な経済目標。2030・2040・2050年代の副首都ビジョン上の参考値とは別に、Beyond EXPO 2025の目標として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-002",
+      "display_order": 2,
+      "indicator_layer": "objective_kpi",
+      "pillar_original": "全体",
+      "category_original": "全体",
+      "indicator_name_original": "実質成長率",
+      "source_page": 73,
+      "response_scale": null,
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "％",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "current",
+              "period": "2023年度",
+              "value": 1.2,
+              "value_text_original": "1.2％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "最新データを示す客観KPIであり、この表自体には個別の数値目標が設定されていない。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-003",
+      "display_order": 3,
+      "indicator_layer": "objective_kpi",
+      "pillar_original": "全体",
+      "category_original": "全体",
+      "indicator_name_original": "一人当たり雇用者報酬",
+      "source_page": 73,
+      "response_scale": null,
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "万円",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "current",
+              "period": "2023年度",
+              "value": 514,
+              "value_text_original": "514万円",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "最新データを示す客観KPIであり、この表自体には個別の数値目標が設定されていない。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-004",
+      "display_order": 4,
+      "indicator_layer": "objective_kpi",
+      "pillar_original": "全体",
+      "category_original": "全体",
+      "indicator_name_original": "完全失業率",
+      "source_page": 73,
+      "response_scale": null,
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "％",
+          "direction": "decrease",
+          "values": [
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.1,
+              "value_text_original": "3.1％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "最新データを示す客観KPIであり、この表自体には個別の数値目標が設定されていない。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-005",
+      "display_order": 5,
+      "indicator_layer": "objective_kpi",
+      "pillar_original": "全体",
+      "category_original": "全体",
+      "indicator_name_original": "世界の都市総合力ランキング＜総合＞（森記念財団）",
+      "source_page": 73,
+      "response_scale": null,
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "位",
+          "direction": "decrease",
+          "values": [
+            {
+              "role": "current",
+              "period": "2025年",
+              "value": 18,
+              "value_text_original": "18位",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "rank"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "最新データを示す客観KPIであり、この表自体には個別の数値目標が設定されていない。 順位は数値が小さいほど上位となるため、実数指標と同じ方向で比較しない。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-006",
+      "display_order": 6,
+      "indicator_layer": "objective_kpi",
+      "pillar_original": "経済力",
+      "category_original": "スタートアップ",
+      "indicator_name_original": "スタートアップ創出数",
+      "source_page": 73,
+      "response_scale": null,
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "社",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "current",
+              "period": "2024年度",
+              "value": 188,
+              "value_text_original": "188社",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "最新データを示す客観KPIであり、この表自体には個別の数値目標が設定されていない。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-007",
+      "display_order": 7,
+      "indicator_layer": "objective_kpi",
+      "pillar_original": "経済力",
+      "category_original": "スタートアップ",
+      "indicator_name_original": "スタートアップの海外からの資金調達件数",
+      "source_page": 73,
+      "response_scale": null,
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "社",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "current",
+              "period": "2020～2024年度",
+              "value": 3,
+              "value_text_original": "3社",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "cumulative"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "最新データを示す客観KPIであり、この表自体には個別の数値目標が設定されていない。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-008",
+      "display_order": 8,
+      "indicator_layer": "objective_kpi",
+      "pillar_original": "経済力",
+      "category_original": "企業生産性",
+      "indicator_name_original": "一企業当たり付加価値額",
+      "source_page": 73,
+      "response_scale": null,
+      "series": [
+        {
+          "label_original": "付加価値額",
+          "unit_original": "百万円",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "current",
+              "period": "2020年",
+              "value": 11734,
+              "value_text_original": "11,734百万円",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        },
+        {
+          "label_original": "純付加価値額",
+          "unit_original": "百万円",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "current",
+              "period": "2020年",
+              "value": 10407,
+              "value_text_original": "10,407百万円",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "最新データを示す客観KPIであり、この表自体には個別の数値目標が設定されていない。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-009",
+      "display_order": 9,
+      "indicator_layer": "objective_kpi",
+      "pillar_original": "経済力",
+      "category_original": "企業集積",
+      "indicator_name_original": "東証上場企業本社数（プライム、スタンダード、グロース）",
+      "source_page": 73,
+      "response_scale": null,
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "社",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "current",
+              "period": "2025年",
+              "value": 424,
+              "value_text_original": "424社",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "snapshot"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "最新データを示す客観KPIであり、この表自体には個別の数値目標が設定されていない。 2026年1月29日検索時点の2025年値。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-010",
+      "display_order": 10,
+      "indicator_layer": "objective_kpi",
+      "pillar_original": "経済力",
+      "category_original": "都市競争力",
+      "indicator_name_original": "世界の都市総合力ランキング（森記念財団）",
+      "source_page": 73,
+      "response_scale": null,
+      "series": [
+        {
+          "label_original": "経済",
+          "unit_original": "位",
+          "direction": "decrease",
+          "values": [
+            {
+              "role": "current",
+              "period": "2025年",
+              "value": 33,
+              "value_text_original": "33位",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "rank"
+            }
+          ]
+        },
+        {
+          "label_original": "研究・開発",
+          "unit_original": "位",
+          "direction": "decrease",
+          "values": [
+            {
+              "role": "current",
+              "period": "2025年",
+              "value": 18,
+              "value_text_original": "18位",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "rank"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "最新データを示す客観KPIであり、この表自体には個別の数値目標が設定されていない。 順位は数値が小さいほど上位となるため、実数指標と同じ方向で比較しない。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-011",
+      "display_order": 11,
+      "indicator_layer": "objective_kpi",
+      "pillar_original": "経済力",
+      "category_original": "企業集積",
+      "indicator_name_original": "企業（本社）の転入数",
+      "source_page": 73,
+      "response_scale": null,
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "社",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 174,
+              "value_text_original": "174社",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "最新データを示す客観KPIであり、この表自体には個別の数値目標が設定されていない。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-012",
+      "display_order": 12,
+      "indicator_layer": "objective_kpi",
+      "pillar_original": "都市力",
+      "category_original": "観光",
+      "indicator_name_original": "来阪者数",
+      "source_page": 73,
+      "response_scale": null,
+      "series": [
+        {
+          "label_original": "日本人",
+          "unit_original": "万人",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3232,
+              "value_text_original": "3,232万人",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        },
+        {
+          "label_original": "外国人",
+          "unit_original": "万人",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 1409,
+              "value_text_original": "1,409万人",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "最新データを示す客観KPIであり、この表自体には個別の数値目標が設定されていない。 大阪都市魅力創造戦略2030（案）における数値として注記されている。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-013",
+      "display_order": 13,
+      "indicator_layer": "objective_kpi",
+      "pillar_original": "都市力",
+      "category_original": "観光",
+      "indicator_name_original": "延べ宿泊者数",
+      "source_page": 73,
+      "response_scale": null,
+      "series": [
+        {
+          "label_original": "日本人",
+          "unit_original": "万人泊",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3204,
+              "value_text_original": "3,204万人泊",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        },
+        {
+          "label_original": "外国人",
+          "unit_original": "万人泊",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 2539,
+              "value_text_original": "2,539万人泊",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "最新データを示す客観KPIであり、この表自体には個別の数値目標が設定されていない。 大阪都市魅力創造戦略2030（案）における数値として注記されている。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-014",
+      "display_order": 14,
+      "indicator_layer": "objective_kpi",
+      "pillar_original": "都市力",
+      "category_original": "観光",
+      "indicator_name_original": "旅行消費単価",
+      "source_page": 73,
+      "response_scale": null,
+      "series": [
+        {
+          "label_original": "日本人",
+          "unit_original": "万円",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.0,
+              "value_text_original": "3.0万円",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        },
+        {
+          "label_original": "外国人",
+          "unit_original": "万円",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 9.2,
+              "value_text_original": "9.2万円",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "最新データを示す客観KPIであり、この表自体には個別の数値目標が設定されていない。 大阪都市魅力創造戦略2030（案）における数値として注記されている。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-015",
+      "display_order": 15,
+      "indicator_layer": "objective_kpi",
+      "pillar_original": "都市力",
+      "category_original": "都市競争力",
+      "indicator_name_original": "世界の都市総合力ランキング＜文化・交流＞（森記念財団）",
+      "source_page": 73,
+      "response_scale": null,
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "位",
+          "direction": "decrease",
+          "values": [
+            {
+              "role": "current",
+              "period": "2025年",
+              "value": 13,
+              "value_text_original": "13位",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "rank"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "最新データを示す客観KPIであり、この表自体には個別の数値目標が設定されていない。 順位は数値が小さいほど上位となるため、実数指標と同じ方向で比較しない。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-016",
+      "display_order": 16,
+      "indicator_layer": "objective_kpi",
+      "pillar_original": "都市力",
+      "category_original": "観光",
+      "indicator_name_original": "世界の観光都市ランキング（ユーロモニターインターナショナル）",
+      "source_page": 73,
+      "response_scale": null,
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "位",
+          "direction": "decrease",
+          "values": [
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 16,
+              "value_text_original": "16位",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "rank"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "最新データを示す客観KPIであり、この表自体には個別の数値目標が設定されていない。 順位は数値が小さいほど上位となるため、実数指標と同じ方向で比較しない。 大阪都市魅力創造戦略2030（案）における数値として注記されている。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-017",
+      "display_order": 17,
+      "indicator_layer": "objective_kpi",
+      "pillar_original": "都市力",
+      "category_original": "国際交流",
+      "indicator_name_original": "国際会議開催件数",
+      "source_page": 73,
+      "response_scale": null,
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "件",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 31,
+              "value_text_original": "31件",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "最新データを示す客観KPIであり、この表自体には個別の数値目標が設定されていない。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-018",
+      "display_order": 18,
+      "indicator_layer": "objective_kpi",
+      "pillar_original": "人材力",
+      "category_original": "雇用",
+      "indicator_name_original": "女性の就業率",
+      "source_page": 73,
+      "response_scale": null,
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "％",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 53.5,
+              "value_text_original": "53.5％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "最新データを示す客観KPIであり、この表自体には個別の数値目標が設定されていない。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-019",
+      "display_order": 19,
+      "indicator_layer": "objective_kpi",
+      "pillar_original": "人材力",
+      "category_original": "高度人材",
+      "indicator_name_original": "府内在留高度外国人材数",
+      "source_page": 73,
+      "response_scale": null,
+      "series": [
+        {
+          "label_original": "総数",
+          "unit_original": "人",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 50705,
+              "value_text_original": "50,705人",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "snapshot"
+            }
+          ]
+        },
+        {
+          "label_original": "うち高度専門職",
+          "unit_original": "人",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 2101,
+              "value_text_original": "2,101人",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "snapshot"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "最新データを示す客観KPIであり、この表自体には個別の数値目標が設定されていない。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-020",
+      "display_order": 20,
+      "indicator_layer": "objective_kpi",
+      "pillar_original": "人材力",
+      "category_original": "研究人材",
+      "indicator_name_original": "研究者数（世界の都市総合力ランキング＜研究・開発分野＞）",
+      "source_page": 73,
+      "response_scale": null,
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "位",
+          "direction": "decrease",
+          "values": [
+            {
+              "role": "current",
+              "period": "2025年",
+              "value": 17,
+              "value_text_original": "17位",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "rank"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "最新データを示す客観KPIであり、この表自体には個別の数値目標が設定されていない。 順位は数値が小さいほど上位となるため、実数指標と同じ方向で比較しない。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-021",
+      "display_order": 21,
+      "indicator_layer": "objective_kpi",
+      "pillar_original": "人材力",
+      "category_original": "国際教育",
+      "indicator_name_original": "インターナショナルスクール校数（大阪府・市把握分）",
+      "source_page": 73,
+      "response_scale": null,
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "校",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "current",
+              "period": "2025年",
+              "value": 6,
+              "value_text_original": "6校",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "snapshot"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "最新データを示す客観KPIであり、この表自体には個別の数値目標が設定されていない。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-022",
+      "display_order": 22,
+      "indicator_layer": "objective_kpi",
+      "pillar_original": "人材力",
+      "category_original": "英語力",
+      "indicator_name_original": "英語力を有する生徒の割合",
+      "source_page": 73,
+      "response_scale": null,
+      "series": [
+        {
+          "label_original": "中学3年・CEFR A1相当以上",
+          "unit_original": "％",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 54.1,
+              "value_text_original": "54.1％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        },
+        {
+          "label_original": "高校3年・CEFR A2相当以上",
+          "unit_original": "％",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 57.8,
+              "value_text_original": "57.8％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "最新データを示す客観KPIであり、この表自体には個別の数値目標が設定されていない。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-023",
+      "display_order": 23,
+      "indicator_layer": "objective_kpi",
+      "pillar_original": "人材力",
+      "category_original": "国際経験",
+      "indicator_name_original": "海外留学する高校生数",
+      "source_page": 73,
+      "response_scale": null,
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "人",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "current",
+              "period": "2023年",
+              "value": 311,
+              "value_text_original": "311人",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "最新データを示す客観KPIであり、この表自体には個別の数値目標が設定されていない。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-024",
+      "display_order": 24,
+      "indicator_layer": "objective_kpi",
+      "pillar_original": "人材力",
+      "category_original": "留学生",
+      "indicator_name_original": "大阪で学ぶ留学生数",
+      "source_page": 73,
+      "response_scale": null,
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "人",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 32451,
+              "value_text_original": "32,451人",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "snapshot"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "最新データを示す客観KPIであり、この表自体には個別の数値目標が設定されていない。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-025",
+      "display_order": 25,
+      "indicator_layer": "objective_kpi",
+      "pillar_original": "まちづくり・都市基盤",
+      "category_original": "人口集積",
+      "indicator_name_original": "転入超過率（対全国）",
+      "source_page": 73,
+      "response_scale": null,
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "％",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 0.19,
+              "value_text_original": "0.19％",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "最新データを示す客観KPIであり、この表自体には個別の数値目標が設定されていない。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-026",
+      "display_order": 26,
+      "indicator_layer": "objective_kpi",
+      "pillar_original": "まちづくり・都市基盤",
+      "category_original": "健康",
+      "indicator_name_original": "府民の健康寿命",
+      "source_page": 73,
+      "response_scale": null,
+      "series": [
+        {
+          "label_original": "男性",
+          "unit_original": "歳",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "current",
+              "period": "2022年",
+              "value": 71.77,
+              "value_text_original": "71.77歳",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        },
+        {
+          "label_original": "女性",
+          "unit_original": "歳",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "current",
+              "period": "2022年",
+              "value": 74.95,
+              "value_text_original": "74.95歳",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "最新データを示す客観KPIであり、この表自体には個別の数値目標が設定されていない。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-027",
+      "display_order": 27,
+      "indicator_layer": "objective_kpi",
+      "pillar_original": "まちづくり・都市基盤",
+      "category_original": "航空",
+      "indicator_name_original": "関西国際空港の年間発着回数",
+      "source_page": 73,
+      "response_scale": null,
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "万回",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "current",
+              "period": "2024年度",
+              "value": 19.9,
+              "value_text_original": "19.9万回",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "最新データを示す客観KPIであり、この表自体には個別の数値目標が設定されていない。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-028",
+      "display_order": 28,
+      "indicator_layer": "objective_kpi",
+      "pillar_original": "まちづくり・都市基盤",
+      "category_original": "港湾",
+      "indicator_name_original": "港湾外貿コンテナ取扱個数",
+      "source_page": 73,
+      "response_scale": null,
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "TEU",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 2038318,
+              "value_text_original": "2,038,318TEU",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "最新データを示す客観KPIであり、この表自体には個別の数値目標が設定されていない。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-029",
+      "display_order": 29,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "全体指標",
+      "category_original": "大阪府独自指標",
+      "indicator_name_original": "大阪の経済が活気づいていると思う人の割合",
+      "source_page": 75,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": null,
+              "value_text_original": "―",
+              "status": "missing",
+              "operator": "not_applicable",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": null,
+              "value_text_original": "―",
+              "status": "missing",
+              "operator": "not_applicable",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "大阪府独自指標。2023・2024年は未調査で、戦略では次年度から調査実施予定とされている。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-030",
+      "display_order": 30,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "全体指標",
+      "category_original": "大阪府独自指標",
+      "indicator_name_original": "大阪が世界の中で存在感を発揮していると思う人の割合",
+      "source_page": 75,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": null,
+              "value_text_original": "―",
+              "status": "missing",
+              "operator": "not_applicable",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": null,
+              "value_text_original": "―",
+              "status": "missing",
+              "operator": "not_applicable",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "大阪府独自指標。2023・2024年は未調査で、戦略では次年度から調査実施予定とされている。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-031",
+      "display_order": 31,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "全体指標",
+      "category_original": "大阪府独自指標",
+      "indicator_name_original": "大阪は人を惹きつける魅力があると思う人の割合",
+      "source_page": 75,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": null,
+              "value_text_original": "―",
+              "status": "missing",
+              "operator": "not_applicable",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": null,
+              "value_text_original": "―",
+              "status": "missing",
+              "operator": "not_applicable",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "大阪府独自指標。2023・2024年は未調査で、戦略では次年度から調査実施予定とされている。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-032",
+      "display_order": 32,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "全体指標",
+      "category_original": "大阪府独自指標",
+      "indicator_name_original": "地域に誇りを感じる人の割合",
+      "source_page": 75,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": null,
+              "value_text_original": "―",
+              "status": "missing",
+              "operator": "not_applicable",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": null,
+              "value_text_original": "―",
+              "status": "missing",
+              "operator": "not_applicable",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "大阪府独自指標。2023・2024年は未調査で、戦略では次年度から調査実施予定とされている。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-033",
+      "display_order": 33,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "全体指標",
+      "category_original": "大阪府独自指標",
+      "indicator_name_original": "暮らしが便利・快適になったと思う人の割合",
+      "source_page": 75,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": null,
+              "value_text_original": "―",
+              "status": "missing",
+              "operator": "not_applicable",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": null,
+              "value_text_original": "―",
+              "status": "missing",
+              "operator": "not_applicable",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "大阪府独自指標。2023・2024年は未調査で、戦略では次年度から調査実施予定とされている。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-034",
+      "display_order": 34,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "全体指標",
+      "category_original": "幸福度・満足度",
+      "indicator_name_original": "現在、あなたはどの程度幸せですか",
+      "source_page": 75,
+      "response_scale": "0_to_10",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 6.6,
+              "value_text_original": "6.6",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 6.0,
+              "value_text_original": "6.0",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "0～10点の11段階評価。1～5点尺度の地域幸福度指標と同じ尺度として比較しない。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-035",
+      "display_order": 35,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "チャレンジ",
+      "category_original": "子育て",
+      "indicator_name_original": "私の暮らしている地域では、子どもたちがいきいきと暮らせる",
+      "source_page": 75,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.4,
+              "value_text_original": "3.4",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.3,
+              "value_text_original": "3.3",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-036",
+      "display_order": 36,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "チャレンジ",
+      "category_original": "初等・中等教育",
+      "indicator_name_original": "私の暮らしている地域では、教育環境（小中高校）が整っている",
+      "source_page": 75,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.5,
+              "value_text_original": "3.5",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.5,
+              "value_text_original": "3.5",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-037",
+      "display_order": 37,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "チャレンジ",
+      "category_original": "初等・中等教育",
+      "indicator_name_original": "私の暮らしている地域では、通学しやすい場所に学校がある",
+      "source_page": 75,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.6,
+              "value_text_original": "3.6",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.6,
+              "value_text_original": "3.6",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-038",
+      "display_order": 38,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "チャレンジ",
+      "category_original": "自己効力感",
+      "indicator_name_original": "自分のことを好ましく感じる",
+      "source_page": 75,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.2,
+              "value_text_original": "3.2",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.1,
+              "value_text_original": "3.1",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-039",
+      "display_order": 39,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "チャレンジ",
+      "category_original": "教育機会の豊かさ",
+      "indicator_name_original": "私の暮らしている地域では、学びたいことを学べる機会がある",
+      "source_page": 75,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.2,
+              "value_text_original": "3.2",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.2,
+              "value_text_original": "3.2",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-040",
+      "display_order": 40,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "チャレンジ",
+      "category_original": "雇用・所得",
+      "indicator_name_original": "私の暮らしている地域では、やりたい仕事を見つけやすい",
+      "source_page": 75,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 2.9,
+              "value_text_original": "2.9",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 2.9,
+              "value_text_original": "2.9",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-041",
+      "display_order": 41,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "チャレンジ",
+      "category_original": "雇用・所得",
+      "indicator_name_original": "私の暮らしている地域では、適切な収入を得るための機会がある",
+      "source_page": 75,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.1,
+              "value_text_original": "3.1",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.1,
+              "value_text_original": "3.1",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-042",
+      "display_order": 42,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "チャレンジ",
+      "category_original": "事業創造",
+      "indicator_name_original": "暮らしている地域には、新たな事に挑戦・成長するための機会がある",
+      "source_page": 75,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.0,
+              "value_text_original": "3.0",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.0,
+              "value_text_original": "3.0",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-043",
+      "display_order": 43,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "ワクワク",
+      "category_original": "買物・飲食",
+      "indicator_name_original": "私の暮らしている地域では、飲食を楽しめる場所が充実している",
+      "source_page": 75,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.4,
+              "value_text_original": "3.4",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.5,
+              "value_text_original": "3.5",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-044",
+      "display_order": 44,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "ワクワク",
+      "category_original": "移動・交通",
+      "indicator_name_original": "私の暮らしている地域には、楽しい時間を過ごせる娯楽施設がある",
+      "source_page": 75,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.0,
+              "value_text_original": "3.0",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.1,
+              "value_text_original": "3.1",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-045",
+      "display_order": 45,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "ワクワク",
+      "category_original": "都市景観",
+      "indicator_name_original": "私の暮らしている地域には、自慢できる都市景観がある",
+      "source_page": 75,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.0,
+              "value_text_original": "3.0",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.0,
+              "value_text_original": "3.0",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-046",
+      "display_order": 46,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "ワクワク",
+      "category_original": "自然景観",
+      "indicator_name_original": "私の暮らしている地域には、自慢できる自然景観がある",
+      "source_page": 75,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.0,
+              "value_text_original": "3.0",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.0,
+              "value_text_original": "3.0",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-047",
+      "display_order": 47,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "ワクワク",
+      "category_original": "自然の恵み",
+      "indicator_name_original": "暮らしている地域では、身近に自然を感じることができる",
+      "source_page": 75,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.1,
+              "value_text_original": "3.1",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.1,
+              "value_text_original": "3.1",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-048",
+      "display_order": 48,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "ワクワク",
+      "category_original": "文化・芸術",
+      "indicator_name_original": "暮らしている地域は、文化・芸術・芸能が盛んで誇らしい",
+      "source_page": 75,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 2.9,
+              "value_text_original": "2.9",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 2.9,
+              "value_text_original": "2.9",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-049",
+      "display_order": 49,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "ワクワク",
+      "category_original": "文化・芸術",
+      "indicator_name_original": "将来生まれてくる世代のために、良い環境や文化を残したい",
+      "source_page": 75,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.5,
+              "value_text_original": "3.5",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.5,
+              "value_text_original": "3.5",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-050",
+      "display_order": 50,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "フレンドリー",
+      "category_original": "住宅環境",
+      "indicator_name_original": "自宅には、心地のいい居場所がある",
+      "source_page": 76,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.6,
+              "value_text_original": "3.6",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.6,
+              "value_text_original": "3.6",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-051",
+      "display_order": 51,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "フレンドリー",
+      "category_original": "子育て",
+      "indicator_name_original": "私の暮らしている地域では、子育て支援・補助が手厚い",
+      "source_page": 76,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.2,
+              "value_text_original": "3.2",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.2,
+              "value_text_original": "3.2",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-052",
+      "display_order": 52,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "フレンドリー",
+      "category_original": "地域行政",
+      "indicator_name_original": "暮らしている地域の行政は、地域のことを真剣に考えていると思う",
+      "source_page": 76,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.2,
+              "value_text_original": "3.2",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.2,
+              "value_text_original": "3.2",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-053",
+      "display_order": 53,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "フレンドリー",
+      "category_original": "地域行政",
+      "indicator_name_original": "暮らしている地域の公共施設は使い勝手がよく便利である",
+      "source_page": 76,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.3,
+              "value_text_original": "3.3",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.3,
+              "value_text_original": "3.3",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-054",
+      "display_order": 54,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "フレンドリー",
+      "category_original": "公共空間",
+      "indicator_name_original": "暮らしている地域の雰囲気は、自分にとって心地よい",
+      "source_page": 76,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.4,
+              "value_text_original": "3.4",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.4,
+              "value_text_original": "3.4",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-055",
+      "display_order": 55,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "フレンドリー",
+      "category_original": "公共空間",
+      "indicator_name_original": "私の暮らしている地域には、まちなか、公園、川沿い等で、心地よく歩ける場所がある",
+      "source_page": 76,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.4,
+              "value_text_original": "3.4",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.5,
+              "value_text_original": "3.5",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-056",
+      "display_order": 56,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "フレンドリー",
+      "category_original": "自然の恵み",
+      "indicator_name_original": "暮らしている地域の空気や水は澄んでいてきれいだと感じる",
+      "source_page": 76,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.0,
+              "value_text_original": "3.0",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.0,
+              "value_text_original": "3.0",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-057",
+      "display_order": 57,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "フレンドリー",
+      "category_original": "自然災害",
+      "indicator_name_original": "私の暮らしている地域では、防災対策がしっかりしている",
+      "source_page": 76,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.1,
+              "value_text_original": "3.1",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.1,
+              "value_text_original": "3.1",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-058",
+      "display_order": 58,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "フレンドリー",
+      "category_original": "事故・犯罪",
+      "indicator_name_original": "私の暮らしている地域は、防犯対策（交番・街燈・防犯カメラ・住民の見守り等）が整っており、治安がよい",
+      "source_page": 76,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.2,
+              "value_text_original": "3.2",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.2,
+              "value_text_original": "3.2",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-059",
+      "display_order": 59,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "フレンドリー",
+      "category_original": "事故・犯罪",
+      "indicator_name_original": "私の暮らしている地域では、歩道や信号が整備されていて安心である",
+      "source_page": 76,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.5,
+              "value_text_original": "3.5",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.5,
+              "value_text_original": "3.5",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-060",
+      "display_order": 60,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "フレンドリー",
+      "category_original": "地域とのつながり",
+      "indicator_name_original": "私は、同じ町内（集落）に住む人たちを信頼している",
+      "source_page": 76,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.1,
+              "value_text_original": "3.1",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.1,
+              "value_text_original": "3.1",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-061",
+      "display_order": 61,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "フレンドリー",
+      "category_original": "地域とのつながり",
+      "indicator_name_original": "私の暮らしている地域では、地域活動（自治会・地域行事・防災活動等）への市民参加が盛んである",
+      "source_page": 76,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.0,
+              "value_text_original": "3.0",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.0,
+              "value_text_original": "3.0",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-062",
+      "display_order": 62,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "フレンドリー",
+      "category_original": "地域とのつながり",
+      "indicator_name_original": "暮らしている地域には、困ったときに相談できる人が身近にいる",
+      "source_page": 76,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 2.8,
+              "value_text_original": "2.8",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 2.8,
+              "value_text_original": "2.8",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-063",
+      "display_order": 63,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "フレンドリー",
+      "category_original": "地域とのつながり",
+      "indicator_name_original": "私は、町内（集落）の人が困っていたら手助けをする",
+      "source_page": 76,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.1,
+              "value_text_original": "3.1",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.1,
+              "value_text_original": "3.1",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-064",
+      "display_order": 64,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "フレンドリー",
+      "category_original": "地域とのつながり",
+      "indicator_name_original": "私は、この町内（集落）に対して愛着を持っている",
+      "source_page": 76,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.2,
+              "value_text_original": "3.2",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.2,
+              "value_text_original": "3.2",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-065",
+      "display_order": 65,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "フレンドリー",
+      "category_original": "多様性と寛容性",
+      "indicator_name_original": "この町内（集落）には、どんな人の意見でも受け入れる雰囲気がある",
+      "source_page": 76,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.0,
+              "value_text_original": "3.0",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.0,
+              "value_text_original": "3.0",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-066",
+      "display_order": 66,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "フレンドリー",
+      "category_original": "多様性と寛容性",
+      "indicator_name_original": "私は、見知らぬ他者であっても信頼する",
+      "source_page": 76,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 2.8,
+              "value_text_original": "2.8",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 2.7,
+              "value_text_original": "2.7",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-067",
+      "display_order": 67,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "フレンドリー",
+      "category_original": "多様性と寛容性",
+      "indicator_name_original": "私は、町内（集落）の人が自分をどう思っているかが気になる",
+      "source_page": 76,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 2.7,
+              "value_text_original": "2.7",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 2.6,
+              "value_text_original": "2.6",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-068",
+      "display_order": 68,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "フレンドリー",
+      "category_original": "多様性と寛容性",
+      "indicator_name_original": "私の暮らしている地域には、女性が活躍しやすい雰囲気がある",
+      "source_page": 76,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.0,
+              "value_text_original": "3.0",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 2.9,
+              "value_text_original": "2.9",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-069",
+      "display_order": 69,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "フレンドリー",
+      "category_original": "多様性と寛容性",
+      "indicator_name_original": "私の暮らしている地域には、若者が活躍しやすい雰囲気がある",
+      "source_page": 76,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.0,
+              "value_text_original": "3.0",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.0,
+              "value_text_original": "3.0",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-070",
+      "display_order": 70,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "フレンドリー",
+      "category_original": "幸福度・満足度",
+      "indicator_name_original": "現在、あなたの町内（集落）の人々は、大体において、どれぐらい幸せだと思いますか",
+      "source_page": 76,
+      "response_scale": "0_to_10",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 6.3,
+              "value_text_original": "6.3",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 6.2,
+              "value_text_original": "6.2",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "0～10点の11段階評価。1～5点尺度の地域幸福度指標と同じ尺度として比較しない。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-071",
+      "display_order": 71,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "フレンドリー",
+      "category_original": "幸福度・満足度",
+      "indicator_name_original": "現在、あなたの住んでいる地域の暮らしにどの程度満足していますか",
+      "source_page": 76,
+      "response_scale": "0_to_10",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 5.1,
+              "value_text_original": "5.1",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 6.0,
+              "value_text_original": "6.0",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "0～10点の11段階評価。1～5点尺度の地域幸福度指標と同じ尺度として比較しない。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-072",
+      "display_order": 72,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "フレンドリー",
+      "category_original": "幸福度・満足度",
+      "indicator_name_original": "自分だけでなく、身近な周りの人も楽しい気持ちでいると思う",
+      "source_page": 76,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.6,
+              "value_text_original": "3.6",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.3,
+              "value_text_original": "3.3",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-073",
+      "display_order": 73,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "ライフ",
+      "category_original": "医療・福祉",
+      "indicator_name_original": "暮らしている地域は、医療機関が充実している",
+      "source_page": 76,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.5,
+              "value_text_original": "3.5",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.6,
+              "value_text_original": "3.6",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-074",
+      "display_order": 74,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "ライフ",
+      "category_original": "医療・福祉",
+      "indicator_name_original": "私の暮らしている地域では、介護・福祉施設のサービスが受けやすい",
+      "source_page": 76,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.4,
+              "value_text_original": "3.4",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.4,
+              "value_text_original": "3.4",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-075",
+      "display_order": 75,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "ライフ",
+      "category_original": "買物・飲食",
+      "indicator_name_original": "暮らしている地域は、日常の買い物にまったく不便がない",
+      "source_page": 76,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.8,
+              "value_text_original": "3.8",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.8,
+              "value_text_original": "3.8",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-076",
+      "display_order": 76,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "ライフ",
+      "category_original": "住宅環境",
+      "indicator_name_original": "自宅の近辺では、騒音に悩まされている",
+      "source_page": 76,
+      "response_scale": "1_to_5_reversed",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.4,
+              "value_text_original": "3.4",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.4,
+              "value_text_original": "3.4",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "逆転項目。回答点数は『非常にあてはまる』=1から『全くあてはまらない』=5で、値が高いほど騒音に悩まされていない方向を示す。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-077",
+      "display_order": 77,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "ライフ",
+      "category_original": "住宅環境",
+      "indicator_name_original": "私の暮らしている地域では、適度な費用で住居を確保できる",
+      "source_page": 76,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.3,
+              "value_text_original": "3.3",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.3,
+              "value_text_original": "3.3",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-078",
+      "display_order": 78,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "ライフ",
+      "category_original": "移動・交通",
+      "indicator_name_original": "私の暮らしている地域では、公共交通機関で、好きな時に好きなところへ移動ができる",
+      "source_page": 76,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.8,
+              "value_text_original": "3.8",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.8,
+              "value_text_original": "3.8",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-079",
+      "display_order": 79,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "ライフ",
+      "category_original": "デジタル生活",
+      "indicator_name_original": "私の暮らしている地域では、行政サービスのデジタル化が進んでいる",
+      "source_page": 76,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.1,
+              "value_text_original": "3.1",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.1,
+              "value_text_original": "3.1",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-080",
+      "display_order": 80,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "ライフ",
+      "category_original": "デジタル生活",
+      "indicator_name_original": "私の暮らしている地域では、仕事や日常生活の場でデジタルサービスを利用しやすい",
+      "source_page": 76,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.1,
+              "value_text_original": "3.1",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.2,
+              "value_text_original": "3.2",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-081",
+      "display_order": 81,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "ライフ",
+      "category_original": "環境共生",
+      "indicator_name_original": "私の暮らしている地域では、リサイクルや再生可能エネルギー活用等、環境への取組が盛んである",
+      "source_page": 76,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.1,
+              "value_text_original": "3.1",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.1,
+              "value_text_original": "3.1",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-082",
+      "display_order": 82,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "ライフ",
+      "category_original": "健康状態",
+      "indicator_name_original": "私は、精神的に健康な状態である",
+      "source_page": 76,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.4,
+              "value_text_original": "3.4",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.3,
+              "value_text_original": "3.3",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "policy-indicator-osaka-083",
+      "display_order": 83,
+      "indicator_layer": "subjective_wellbeing",
+      "pillar_original": "ライフ",
+      "category_original": "健康状態",
+      "indicator_name_original": "私は、身体的に健康な状態である",
+      "source_page": 76,
+      "response_scale": "1_to_5",
+      "series": [
+        {
+          "label_original": null,
+          "unit_original": "点",
+          "direction": "increase",
+          "values": [
+            {
+              "role": "baseline",
+              "period": "2023年",
+              "value": 3.5,
+              "value_text_original": "3.5",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            },
+            {
+              "role": "current",
+              "period": "2024年",
+              "value": 3.4,
+              "value_text_original": "3.4",
+              "status": "numeric",
+              "operator": "exact",
+              "aggregation_scope": "single_period"
+            }
+          ]
+        }
+      ],
+      "comparability_note_original": "1～5点の5段階評価。2024年値と2023年値を同じ設問の年次値として保持する。",
+      "legacy_vision_linkage_status": "separate_lineage",
+      "business_list_linkage_status": "not_linked",
+      "policy_achievement_assessment_status": "not_assessed",
+      "review_status": "reviewed",
+      "confidence": "high"
+    }
+  ],
+  "reviewed_at": "2026-07-22",
+  "review_status": "complete",
+  "quality_note": "All explicit indicator rows in the final Beyond EXPO 2025 indicator section are Evidence-backed. The legacy Shorai Vision Osaka actual series and the FY2026 business list remain separate layers. Review coverage is not policy achievement."
+}

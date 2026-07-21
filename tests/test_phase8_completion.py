@@ -10,6 +10,7 @@ ANCHOR_PATH = ROOT / "data/catalog/regional_anchor_source_registry.json"
 PUBLISHED_PATH = ROOT / "data/catalog/published_prefecture_pages.json"
 TOKYO_MANIFEST_PATH = ROOT / "data/catalog/tokyo_policy_target_review_manifest.json"
 AICHI_MANIFEST_PATH = ROOT / "data/catalog/aichi_policy_indicator_review_manifest.json"
+OSAKA_MANIFEST_PATH = ROOT / "data/catalog/osaka_beyond_expo_indicator_review_manifest.json"
 
 
 def load(path: Path):
@@ -29,6 +30,7 @@ def test_phase8_counts_are_derived_from_canonical_registries():
     anchors = load(ANCHOR_PATH)["records"]
     tokyo_manifest = load(TOKYO_MANIFEST_PATH)
     aichi_manifest = load(AICHI_MANIFEST_PATH)
+    osaka_manifest = load(OSAKA_MANIFEST_PATH)
     published_codes = {
         record["prefecture_code"] for record in load(PUBLISHED_PATH)["records"]
     }
@@ -43,6 +45,8 @@ def test_phase8_counts_are_derived_from_canonical_registries():
         reviewed_codes.add("13")
     if aichi_manifest["status"] == "complete":
         reviewed_codes.add("23")
+    if osaka_manifest["status"] == "complete":
+        reviewed_codes.add("27")
     source_mapped = sum(len(record["sources"]) == 6 for record in anchors)
     published = len(anchor_codes & published_codes)
 
@@ -61,9 +65,9 @@ def test_phase8_cannot_be_complete_before_all_review_and_publication_gates_pass(
     gates = {gate["id"]: gate["status"] for gate in manifest["gates"]}
 
     assert manifest["status"] == "in_progress"
-    assert manifest["counts"]["anchors_with_reviewed_numeric_targets"] == 5
-    assert manifest["counts"]["anchors_pending_numeric_target_review"] == 4
-    assert manifest["counts"]["anchors_with_published_prefecture_pages"] == 5
+    assert manifest["counts"]["anchors_with_reviewed_numeric_targets"] == 6
+    assert manifest["counts"]["anchors_pending_numeric_target_review"] == 3
+    assert manifest["counts"]["anchors_with_published_prefecture_pages"] == 6
     assert gates["plan_and_numeric_target_entrances"] == "passed"
     assert gates["evidence_packet_review"] == "in_progress"
     assert gates["published_pages_and_production_smoke"] == "in_progress"

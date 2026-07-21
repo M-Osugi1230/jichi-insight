@@ -1,13 +1,14 @@
 {
   "id": "wave1-policy-review-queue",
-  "updated_at": "2026-07-21",
-  "active_prefecture_code": "27",
+  "updated_at": "2026-07-22",
+  "active_prefecture_code": "34",
   "completed_prefecture_codes": [
     "40",
     "01",
     "04",
     "13",
-    "23"
+    "23",
+    "27"
   ],
   "items": [
     {
@@ -86,15 +87,15 @@
       "prefecture_code": "34",
       "municipality_key": "hiroshima-prefecture",
       "order": 5,
-      "status": "queued",
+      "status": "active_review",
       "source_ids": [
         "policy-source-hiroshima-vision-revised"
       ],
       "current_plan_title": "「安心▷誇り▷挑戦 ひろしまビジョン」改定版",
       "source_inventory_status": "strategic_plan_indexed",
-      "next_gate": "source_inventory",
-      "next_action": "政策体系、KPI、進捗管理資料の公式入口を分けて固定する。",
-      "priority_basis": "改定版の政策体系と進捗資料を接続するモデルの検証対象。"
+      "next_gate": "kpi_catalog",
+      "next_action": "改定版ビジョンとアクションプランの政策体系・KPI・進捗管理資料を固定し、Evidence付きReviewed指標カタログを作成する。",
+      "priority_basis": "改定版の政策体系と年次進捗資料を接続する次の地域基準実装。"
     },
     {
       "prefecture_code": "47",
@@ -128,15 +129,15 @@
       "prefecture_code": "27",
       "municipality_key": "osaka-prefecture",
       "order": 8,
-      "status": "active_review",
+      "status": "reviewed_reference",
       "source_ids": [
         "policy-source-osaka-beyond-expo-2025"
       ],
       "current_plan_title": "Beyond EXPO 2025",
-      "source_inventory_status": "strategic_plan_indexed",
-      "next_gate": "kpi_catalog",
-      "next_action": "分野別行政計画群の政策体系と数値目標を索引し、公式の実現状況データからEvidence付きReviewed化する。",
-      "priority_basis": "2026年策定の新戦略と分野別行政計画群を接続する次の地域基準実装。"
+      "source_inventory_status": "reviewed",
+      "next_gate": "actuals_linkage",
+      "next_action": "最終戦略の83指標・91系列とEvidence 83件をReviewed済み。経済目標1件、客観KPI27件、主観指標55件を分離し、次に令和8年度事業一覧と将来の年次更新を別レイヤーで接続する。",
+      "priority_basis": "最終戦略、旧ビジョン実績、事業一覧を別系統で扱う政策指標レビューの基準実装。"
     }
   ]
 }

@@ -23,24 +23,43 @@ def test_queue_schema_and_order():
     assert {item["prefecture_code"] for item in items} == set(
         coverage["regional_anchor_codes"]
     )
-    assert queue["completed_prefecture_codes"] == ["40", "01", "04", "13", "23"]
-    assert queue["active_prefecture_code"] == "27"
+    assert queue["completed_prefecture_codes"] == ["40", "01", "04", "13", "23", "27"]
+    assert queue["active_prefecture_code"] == "34"
 
 
-def test_osaka_is_active_after_aichi_indicator_completion():
+def test_hiroshima_is_active_after_osaka_indicator_completion():
     queue = load(QUEUE_PATH)
     items = {item["prefecture_code"]: item for item in queue["items"]}
-    active = items["27"]
+    active = items["34"]
     assert active["status"] == "active_review"
     assert active["next_gate"] == "kpi_catalog"
     assert all(
         token in active["next_action"]
-        for token in ["政策体系", "数値目標", "Evidence"]
+        for token in ["改定版", "アクションプラン", "KPI", "Evidence"]
     )
     assert {
         status: sum(item["status"] == status for item in queue["items"])
         for status in ["reviewed_reference", "active_review", "queued"]
-    } == {"reviewed_reference": 5, "active_review": 1, "queued": 3}
+    } == {"reviewed_reference": 6, "active_review": 1, "queued": 2}
+
+
+def test_osaka_is_complete_indicator_reference_with_lineage_boundaries_visible():
+    items = {
+        item["prefecture_code"]: item
+        for item in load(QUEUE_PATH)["items"]
+    }
+    osaka = items["27"]
+    assert osaka["status"] == "reviewed_reference"
+    assert osaka["source_inventory_status"] == "reviewed"
+    assert osaka["next_gate"] == "actuals_linkage"
+    assert all(
+        token in osaka["next_action"]
+        for token in ["83", "91", "Evidence 83", "経済目標1", "客観KPI27", "主観指標55"]
+    )
+    assert all(
+        token in osaka["priority_basis"]
+        for token in ["最終戦略", "旧ビジョン実績", "事業一覧", "別系統"]
+    )
 
 
 def test_aichi_is_complete_indicator_reference_with_evaluation_boundary_visible():
@@ -55,10 +74,6 @@ def test_aichi_is_complete_indicator_reference_with_evaluation_boundary_visible(
     assert all(
         token in aichi["next_action"]
         for token in ["56", "62", "61", "29", "再掲", "目標改定"]
-    )
-    assert all(
-        token in aichi["priority_basis"]
-        for token in ["年次レポート", "管理事業評価", "別レイヤー"]
     )
 
 

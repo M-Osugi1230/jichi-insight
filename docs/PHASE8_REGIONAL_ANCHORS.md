@@ -16,13 +16,13 @@ The nine regional anchors are:
 - 福岡県
 - 沖縄県
 
-北海道、宮城県、東京都、愛知県、福岡県にEvidence Packet付きReviewedデータがあります。
+北海道、宮城県、東京都、愛知県、大阪府、福岡県にEvidence Packet付きReviewedデータがあります。
 
 東京都は「2050東京戦略 政策目標一覧」全60ページ・25政策分野・304目標カードをEvidence付きでReviewed化しました。子供分野の8目標・9系列はグラフ点列まで詳細Reviewedですが、それ以外の点列と年度実績は別工程です。
 
 愛知県は「あいちレポート2025」の進捗管理指標56行・62系列をEvidence付きでReviewed化し、61系列の現状値と29系列の数値目標を接続しました。再掲2件、目標改定1件、複数系列、欠損、定義変更を保持し、296管理事業の評価を政策指標の達成判定へ自動転用しません。
 
-大阪府、広島県、香川県、沖縄県は、政策計画、実施計画、KPI、年度評価、予算、事業評価の公式入口を6カテゴリで索引化しています。
+広島県、香川県、沖縄県は、政策計画、実施計画、KPI、年度評価、予算、事業評価の公式入口を6カテゴリで索引化しています。
 
 ## Source discovery rules
 
@@ -49,9 +49,9 @@ The nine regional anchors are:
 
 ### 大阪府
 
-単一の総合実施計画へ無理に統合せず、分野別行政計画群を実施体系として扱います。将来ビジョン・大阪は計画期間と更新状況を保持し、現行性を別途確認します。
+2026年3月31日策定の最終版「Beyond EXPO 2025」を正本とし、経済目標1件、客観KPI27件、主観・Well-Being指標55件、合計83指標・91系列をEvidence付きでReviewed化しました。
 
-次のActive Review対象です。
+客観KPIの最新状態を個別の数値目標へ読み替えず、0〜10点と1〜5点の主観尺度、逆転項目、未調査5件を分離します。旧「将来ビジョン・大阪」の実績と令和8年度事業一覧は別レイヤーです。
 
 ### 広島県
 
@@ -75,6 +75,6 @@ Phase 8は次をすべて満たした場合だけ`complete`になります。
 - 目標値と年度実績の混同0
 - 各公開ページの静的出力検証とProduction Smoke成功
 
-現在は9地域中5地域がReviewed・公開済みです。次のレビュー順は大阪府、広島県、香川県、沖縄県です。
+現在は9地域中6地域がReviewed・公開済みです。次のレビュー順は広島県、香川県、沖縄県です。
 
-現在の正本は `data/catalog/regional_anchor_source_registry.json`、`data/catalog/phase8_completion.json`、東京都の `data/catalog/tokyo_policy_target_review_manifest.json`、愛知県の `data/catalog/aichi_policy_indicator_review_manifest.json` です。
+現在の正本は `data/catalog/regional_anchor_source_registry.json`、`data/catalog/phase8_completion.json`、東京都の `data/catalog/tokyo_policy_target_review_manifest.json`、愛知県の `data/catalog/aichi_policy_indicator_review_manifest.json`、大阪府の `data/catalog/osaka_beyond_expo_indicator_review_manifest.json` です。

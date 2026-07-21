@@ -1,14 +1,14 @@
 {
   "id": "phase-9-remaining-prefecture-expansion",
   "phase": 9,
-  "scope_version": "2026-07-21",
+  "scope_version": "2026-07-22",
   "status": "in_progress",
-  "updated_at": "2026-07-21",
+  "updated_at": "2026-07-22",
   "counts": {
     "total_prefectures": 47,
     "major_policy_plans_indexed": 47,
     "numeric_target_entrances_indexed_or_reviewed": 9,
-    "evidence_backed_reviewed_prefectures": 5,
+    "evidence_backed_reviewed_prefectures": 6,
     "remaining_phase9_prefectures": 38,
     "phase9_prefectures_with_numeric_targets_indexed": 0,
     "phase9_prefectures_with_reviewed_numeric_targets": 0
@@ -37,6 +37,7 @@
         "data/catalog/phase8_completion.json",
         "data/catalog/tokyo_policy_target_review_manifest.json",
         "data/catalog/aichi_policy_indicator_review_manifest.json",
+        "data/catalog/osaka_beyond_expo_indicator_review_manifest.json",
         "data/catalog/phase9_execution_queue.json"
       ]
     },
@@ -47,7 +48,8 @@
         "tests/test_phase9_execution_queue.py",
         "tests/test_regional_anchor_source_registry.py",
         "tests/test_tokyo_policy_targets_children.py",
-        "tests/test_aichi_policy_indicators.py"
+        "tests/test_aichi_policy_indicators.py",
+        "tests/test_osaka_beyond_expo_indicators.py"
       ]
     },
     {
@@ -74,5 +76,5 @@
       ]
     }
   ],
-  "scope_note": "Phase 9 is not complete until all 47 prefectures have major numeric targets indexed, every published number has Evidence coverage, semantic and history tests pass, incomparable indicators remain excluded from rankings, and nationwide publication passes Production Smoke. Five regional anchors now have Evidence-backed Reviewed targets."
+  "scope_note": "Phase 9 is not complete until all 47 prefectures have major numeric targets indexed, every published number has Evidence coverage, semantic and history tests pass, incomparable indicators remain excluded from rankings, and nationwide publication passes Production Smoke. Six regional anchors now have Evidence-backed Reviewed targets."
 }

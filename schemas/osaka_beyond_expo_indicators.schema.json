@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.example/schemas/osaka_beyond_expo_indicators.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "municipality_key",
+    "prefecture_code",
+    "source_id",
+    "source_title",
+    "source_document_url",
+    "adopted_at",
+    "indicator_row_count",
+    "indicator_series_count",
+    "strategy_target_count",
+    "objective_kpi_count",
+    "subjective_indicator_count",
+    "items",
+    "reviewed_at",
+    "review_status",
+    "quality_note"
+  ],
+  "properties": {
+    "id": {"const": "osaka-beyond-expo-indicator-catalog-2026"},
+    "municipality_key": {"const": "osaka-prefecture"},
+    "prefecture_code": {"const": "27"},
+    "source_id": {"const": "osaka-beyond-expo-2025-final"},
+    "source_title": {"type": "string"},
+    "source_document_url": {"type": "string", "format": "uri"},
+    "adopted_at": {"type": "string", "format": "date"},
+    "indicator_row_count": {"const": 83},
+    "indicator_series_count": {"const": 91},
+    "strategy_target_count": {"const": 1},
+    "objective_kpi_count": {"const": 27},
+    "subjective_indicator_count": {"const": 55},
+    "items": {
+      "type": "array",
+      "minItems": 83,
+      "maxItems": 83,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "display_order",
+          "indicator_layer",
+          "pillar_original",
+          "category_original",
+          "indicator_name_original",
+          "source_page",
+          "response_scale",
+          "series",
+          "comparability_note_original",
+          "legacy_vision_linkage_status",
+          "business_list_linkage_status",
+          "policy_achievement_assessment_status",
+          "review_status",
+          "confidence"
+        ],
+        "properties": {
+          "id": {"type": "string", "pattern": "^policy-indicator-osaka-[0-9]{3}$"},
+          "display_order": {"type": "integer", "minimum": 1, "maximum": 83},
+          "indicator_layer": {"enum": ["strategy_target", "objective_kpi", "subjective_wellbeing"]},
+          "pillar_original": {"type": "string", "minLength": 1},
+          "category_original": {"type": "string", "minLength": 1},
+          "indicator_name_original": {"type": "string", "minLength": 1},
+          "source_page": {"enum": [73, 75, 76]},
+          "response_scale": {"type": ["string", "null"], "enum": [null, "0_to_10", "1_to_5", "1_to_5_reversed"]},
+          "series": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["label_original", "unit_original", "direction", "values"],
+              "properties": {
+                "label_original": {"type": ["string", "null"]},
+                "unit_original": {"type": "string", "minLength": 1},
+                "direction": {"enum": ["increase", "decrease"]},
+                "values": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": ["role", "period", "value", "value_text_original", "status", "operator", "aggregation_scope"],
+                    "properties": {
+                      "role": {"enum": ["baseline", "current", "target"]},
+                      "period": {"type": "string", "minLength": 1},
+                      "value": {"type": ["number", "string", "null"]},
+                      "value_text_original": {"type": "string"},
+                      "status": {"enum": ["numeric", "missing"]},
+                      "operator": {"enum": ["exact", "not_applicable"]},
+                      "aggregation_scope": {"enum": ["single_period", "snapshot", "cumulative", "rank"]}
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "comparability_note_original": {"type": "string", "minLength": 1},
+          "legacy_vision_linkage_status": {"const": "separate_lineage"},
+          "business_list_linkage_status": {"const": "not_linked"},
+          "policy_achievement_assessment_status": {"const": "not_assessed"},
+          "review_status": {"const": "reviewed"},
+          "confidence": {"const": "high"}
+        }
+      }
+    },
+    "reviewed_at": {"type": "string", "format": "date"},
+    "review_status": {"const": "complete"},
+    "quality_note": {"type": "string", "minLength": 30}
+  }
+}
