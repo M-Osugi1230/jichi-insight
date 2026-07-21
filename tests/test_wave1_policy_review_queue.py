@@ -34,7 +34,7 @@ def test_active_queue_progress_tokens():
     assert active["status"] == "active_review"
     assert active["source_inventory_status"] == "reviewed"
     assert active["next_gate"] == "actuals_linkage"
-    assert all(token in active["next_action"] for token in ["73", "14", "76", "12"])
+    assert all(token in active["next_action"] for token in ["81", "14", "68", "13"])
     assert all(token in active["priority_basis"] for token in ["128", "149"])
     assert {
         status: sum(item["status"] == status for item in queue["items"])
