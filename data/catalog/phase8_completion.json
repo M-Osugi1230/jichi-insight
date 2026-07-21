@@ -36,7 +36,9 @@
         "data/catalog/regional_anchor_source_registry.json",
         "data/catalog/tokyo_policy_target_review_manifest.json",
         "data/entities/policy/tokyo_policy_target_catalog_children.json",
-        "data/entities/policy/tokyo_policy_target_children_evidence_packets.json"
+        "data/entities/policy/tokyo_policy_target_children_evidence_packets.json",
+        "data/reviewed/tokyo_policy_target_cards.json",
+        "data/evidence/tokyo_policy_target_card_evidence.json"
       ]
     },
     {
@@ -46,7 +48,8 @@
         "tests/test_regional_anchor_source_registry.py",
         "tests/test_hokkaido_reviewed_indicator_sequence.py",
         "tests/test_miyagi_catalog_sequences.py",
-        "tests/test_tokyo_policy_targets_children.py"
+        "tests/test_tokyo_policy_targets_children.py",
+        "tests/test_tokyo_policy_target_cards.py"
       ]
     },
     {
@@ -58,6 +61,12 @@
       ]
     }
   ],
-  "next_review_order": ["23", "27", "34", "37", "47"],
-  "scope_note": "Phase 8 is complete only when all nine regional anchors have Evidence Packet-backed Reviewed numeric targets and the published pages pass static export and Production Smoke. Tokyo now has a fully Reviewed first policy area, but its remaining 58 source pages are not yet Reviewed."
+  "next_review_order": [
+    "23",
+    "27",
+    "34",
+    "37",
+    "47"
+  ],
+  "scope_note": "Phase 8 is complete only when all nine regional anchors have Evidence Packet-backed Reviewed numeric targets and the published pages pass static export and Production Smoke. Tokyo now has all 60 pages, 25 policy areas and 304 target cards Reviewed; its annual-result linkage remains a separate follow-up."
 }

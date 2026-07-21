@@ -1,0 +1,243 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.example/schemas/tokyo_policy_target_cards.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "municipality_key",
+    "prefecture_code",
+    "source_id",
+    "source_title",
+    "source_document_url",
+    "source_document_sha256",
+    "source_page_count",
+    "policy_area_count",
+    "target_card_count",
+    "policy_areas",
+    "items",
+    "reviewed_at",
+    "review_status",
+    "confidence",
+    "review_scope_note"
+  ],
+  "properties": {
+    "id": {
+      "const": "tokyo-policy-target-card-catalog-2026"
+    },
+    "municipality_key": {
+      "const": "tokyo-metropolis"
+    },
+    "prefecture_code": {
+      "const": "13"
+    },
+    "source_id": {
+      "const": "tokyo-policy-targets-2026"
+    },
+    "source_title": {
+      "type": "string"
+    },
+    "source_document_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "source_document_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "source_page_count": {
+      "const": 60
+    },
+    "policy_area_count": {
+      "const": 25
+    },
+    "target_card_count": {
+      "const": 304
+    },
+    "policy_areas": {
+      "type": "array",
+      "minItems": 25,
+      "maxItems": 25,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "code",
+          "name_original",
+          "page_start",
+          "page_end",
+          "target_card_count",
+          "policy_measure_count"
+        ],
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "name_original": {
+            "type": "string"
+          },
+          "page_start": {
+            "type": "integer"
+          },
+          "page_end": {
+            "type": "integer"
+          },
+          "target_card_count": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "policy_measure_count": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "items": {
+      "type": "array",
+      "minItems": 304,
+      "maxItems": 304,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "display_order",
+          "policy_area_code",
+          "policy_area_name_original",
+          "policy_measure_original",
+          "target_name_original",
+          "source_page",
+          "source_card_bbox",
+          "highlighted_target_text_original",
+          "periods_original",
+          "units_original",
+          "semantic_flags",
+          "source_card_text_original",
+          "detailed_series_status",
+          "actual_linkage_status",
+          "evaluation_status",
+          "review_status",
+          "confidence"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^policy-target-tokyo-card-[0-9]{3}$"
+          },
+          "display_order": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 304
+          },
+          "policy_area_code": {
+            "type": "string",
+            "pattern": "^(0[1-9]|1[0-9]|2[0-5])$"
+          },
+          "policy_area_name_original": {
+            "type": "string",
+            "minLength": 1
+          },
+          "policy_measure_original": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "target_name_original": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_page": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 60
+          },
+          "source_card_bbox": {
+            "type": "array",
+            "minItems": 4,
+            "maxItems": 4,
+            "items": {
+              "type": "number"
+            }
+          },
+          "highlighted_target_text_original": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "periods_original": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "units_original": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "semantic_flags": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "cumulative",
+                "maintenance",
+                "minimum",
+                "maximum",
+                "ranking",
+                "qualitative",
+                "rate",
+                "count",
+                "distance_area_volume",
+                "money",
+                "time"
+              ]
+            }
+          },
+          "source_card_text_original": {
+            "type": "string",
+            "minLength": 1
+          },
+          "detailed_series_status": {
+            "enum": [
+              "reviewed",
+              "not_normalized"
+            ]
+          },
+          "actual_linkage_status": {
+            "const": "not_linked"
+          },
+          "evaluation_status": {
+            "const": "not_assessed"
+          },
+          "review_status": {
+            "const": "reviewed"
+          },
+          "confidence": {
+            "const": "high"
+          }
+        }
+      }
+    },
+    "reviewed_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "review_status": {
+      "const": "complete"
+    },
+    "confidence": {
+      "const": "high"
+    },
+    "review_scope_note": {
+      "type": "string",
+      "minLength": 30
+    }
+  }
+}
