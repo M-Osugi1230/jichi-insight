@@ -1,14 +1,146 @@
 {
-  "id":"wave1-policy-review-queue","updated_at":"2026-07-22","active_prefecture_code":"47","completed_prefecture_codes":["40","01","04","13","23","27","34","37"],
-  "items":[
-    {"prefecture_code":"40","municipality_key":"fukuoka-prefecture","order":0,"status":"reviewed_reference","source_ids":["policy-source-fukuoka-pref-plan-2022-2026","policy-source-fukuoka-pref-progress-reports","policy-source-fukuoka-pref-progress-2024-pdf"],"current_plan_title":"福岡県総合計画","source_inventory_status":"reviewed","next_gate":"actuals_linkage","next_action":"Reviewed数値目標118件を年度実績へ接続し、取組27以降の目標を追加する。","priority_basis":"全国展開の基準実装。政策体系・数値目標・Evidence Packetの公開方法を確立済み。"},
-    {"prefecture_code":"01","municipality_key":"hokkaido-prefecture","order":1,"status":"reviewed_reference","source_ids":["policy-source-hokkaido-comprehensive-plan"],"current_plan_title":"北海道総合計画","source_inventory_status":"reviewed","next_gate":"actuals_linkage","next_action":"全108指標とEvidence Packet 108件をReviewed化済み。年度実績・進捗評価資料を固定し、目標と実績を定義変更履歴付きで接続する。","priority_basis":"18政策分野、108指標、複数分野参照5件を一次資料と照合。条件目標、上下限、複数系列、累計、欠損、異なる目標年、過去最高値を原文のまま保持した。"},
-    {"prefecture_code":"04","municipality_key":"miyagi-prefecture","order":2,"status":"reviewed_reference","source_ids":["policy-source-miyagi-future-vision"],"current_plan_title":"新・宮城の将来ビジョン","source_inventory_status":"reviewed","next_gate":"actuals_linkage","next_action":"KPI本文128目標・149系列は全件Reviewed済み。95系列を年度評価へ直接接続し、15系列を定義・範囲の要確認として分離した。残る54系列の年度実績接続を継続する。","priority_basis":"KPI本文とEvidence Packetの地域基準実装。報告年度・測定年度・評価書のR6目標・現行計画のR9目標を分離し、公式達成率を再計算しない。"},
-    {"prefecture_code":"23","municipality_key":"aichi-prefecture","order":3,"status":"reviewed_reference","source_ids":["policy-source-aichi-vision-2030"],"current_plan_title":"あいちビジョン2030","source_inventory_status":"reviewed","next_gate":"management_evaluation_linkage","next_action":"56指標行・62系列をEvidence付きでReviewed済み。61系列の現状値、29系列の数値目標、再掲2件、目標改定1件を保持し、次に296管理事業の評価との対応を別レイヤーで検証する。","priority_basis":"年次レポートの進捗指標と管理事業評価を別レイヤーで扱う継続監視モデルの基準実装。"},
-    {"prefecture_code":"37","municipality_key":"kagawa-prefecture","order":4,"status":"reviewed_reference","source_ids":["policy-source-kagawa-frontier-plan"],"current_plan_title":"「人生100年時代のフロンティア県・香川」実現計画","source_inventory_status":"reviewed","next_gate":"actuals_linkage","next_action":"135固有指標・141掲載位置・Evidence 135件をReviewed済み。令和7年度と令和8年度の目標、再掲6件、目標更新87件、参考指標135番の令和12年目標を保持し、次に行政評価と年度実績を接続する。","priority_basis":"計画期間延長、旧目標と新目標、再掲の重複排除を同時に扱う改定履歴モデルの基準実装。"},
-    {"prefecture_code":"34","municipality_key":"hiroshima-prefecture","order":5,"status":"reviewed_reference","source_ids":["policy-source-hiroshima-vision-revised"],"current_plan_title":"「安心▷誇り▷挑戦 ひろしまビジョン」改定版","source_inventory_status":"reviewed","next_gate":"actuals_linkage","next_action":"改定版の現行62指標とEvidence ID 62件をReviewed済み。59指標の現状値、未測定3件、R10/R12目標、定性目標1件を保持し、次に2026年11月施行予定の新アクションプランと年度実績を接続する。","priority_basis":"削除指標を除外し、定義変更、代替、複数系列、比較値、複数年平均を保持する改定計画レビューの基準実装。"},
-    {"prefecture_code":"47","municipality_key":"okinawa-prefecture","order":6,"status":"active_review","source_ids":["policy-source-okinawa-21st-century-vision"],"current_plan_title":"新・沖縄21世紀ビジョン基本計画（沖縄振興計画）","source_inventory_status":"strategic_plan_indexed","next_gate":"kpi_catalog","next_action":"令和7～9年度実施計画の成果指標と基本計画の目標を固定し、Evidence付きReviewedカタログを作成する。","priority_basis":"基本計画、実施計画、PDCA評価を分離して扱うPhase 8最後の地域基準実装。"},
-    {"prefecture_code":"13","municipality_key":"tokyo-metropolis","order":7,"status":"reviewed_reference","source_ids":["policy-source-tokyo-2050-strategy"],"current_plan_title":"2050東京戦略 ～東京 もっとよくなる～","source_inventory_status":"reviewed","next_gate":"actuals_linkage","next_action":"政策目標一覧60ページ・25分野・304目標カードをEvidence付きでReviewed済み。次に政策レビュー・取組状況と定義を照合し、年度実績へ接続する。","priority_basis":"大規模戦略の目標カード全件レビュー基準実装。グラフ点列、年度実績、政策評価を別レイヤーで保持する。"},
-    {"prefecture_code":"27","municipality_key":"osaka-prefecture","order":8,"status":"reviewed_reference","source_ids":["policy-source-osaka-beyond-expo-2025"],"current_plan_title":"Beyond EXPO 2025","source_inventory_status":"reviewed","next_gate":"actuals_linkage","next_action":"最終戦略の83指標・91系列とEvidence 83件をReviewed済み。経済目標1件、客観KPI27件、主観指標55件を分離し、次に令和8年度事業一覧と将来の年次更新を別レイヤーで接続する。","priority_basis":"最終戦略、旧ビジョン実績、事業一覧を別系統で扱う政策指標レビューの基準実装。"}
+  "id": "wave1-policy-review-queue",
+  "updated_at": "2026-07-22",
+  "active_prefecture_code": null,
+  "completed_prefecture_codes": [
+    "40",
+    "01",
+    "04",
+    "13",
+    "23",
+    "27",
+    "34",
+    "37",
+    "47"
+  ],
+  "items": [
+    {
+      "prefecture_code": "40",
+      "municipality_key": "fukuoka-prefecture",
+      "order": 0,
+      "status": "reviewed_reference",
+      "source_ids": [
+        "policy-source-fukuoka-pref-plan-2022-2026",
+        "policy-source-fukuoka-pref-progress-reports",
+        "policy-source-fukuoka-pref-progress-2024-pdf"
+      ],
+      "current_plan_title": "福岡県総合計画",
+      "source_inventory_status": "reviewed",
+      "next_gate": "actuals_linkage",
+      "next_action": "Reviewed数値目標118件を年度実績へ接続し、取組27以降の目標を追加する。",
+      "priority_basis": "全国展開の基準実装。政策体系・数値目標・Evidence Packetの公開方法を確立済み。"
+    },
+    {
+      "prefecture_code": "01",
+      "municipality_key": "hokkaido-prefecture",
+      "order": 1,
+      "status": "reviewed_reference",
+      "source_ids": [
+        "policy-source-hokkaido-comprehensive-plan"
+      ],
+      "current_plan_title": "北海道総合計画",
+      "source_inventory_status": "reviewed",
+      "next_gate": "actuals_linkage",
+      "next_action": "全108指標とEvidence Packet 108件をReviewed化済み。年度実績・進捗評価資料を固定し、目標と実績を定義変更履歴付きで接続する。",
+      "priority_basis": "18政策分野、108指標、複数分野参照5件を一次資料と照合。条件目標、上下限、複数系列、累計、欠損、異なる目標年、過去最高値を原文のまま保持した。"
+    },
+    {
+      "prefecture_code": "04",
+      "municipality_key": "miyagi-prefecture",
+      "order": 2,
+      "status": "reviewed_reference",
+      "source_ids": [
+        "policy-source-miyagi-future-vision"
+      ],
+      "current_plan_title": "新・宮城の将来ビジョン",
+      "source_inventory_status": "reviewed",
+      "next_gate": "actuals_linkage",
+      "next_action": "KPI本文128目標・149系列は全件Reviewed済み。95系列を年度評価へ直接接続し、15系列を定義・範囲の要確認として分離した。残る54系列の年度実績接続を継続する。",
+      "priority_basis": "KPI本文とEvidence Packetの地域基準実装。報告年度・測定年度・評価書のR6目標・現行計画のR9目標を分離し、公式達成率を再計算しない。"
+    },
+    {
+      "prefecture_code": "23",
+      "municipality_key": "aichi-prefecture",
+      "order": 3,
+      "status": "reviewed_reference",
+      "source_ids": [
+        "policy-source-aichi-vision-2030"
+      ],
+      "current_plan_title": "あいちビジョン2030",
+      "source_inventory_status": "reviewed",
+      "next_gate": "management_evaluation_linkage",
+      "next_action": "56指標行・62系列をEvidence付きでReviewed済み。61系列の現状値、29系列の数値目標、再掲2件、目標改定1件を保持し、次に296管理事業の評価との対応を別レイヤーで検証する。",
+      "priority_basis": "年次レポートの進捗指標と管理事業評価を別レイヤーで扱う継続監視モデルの基準実装。"
+    },
+    {
+      "prefecture_code": "37",
+      "municipality_key": "kagawa-prefecture",
+      "order": 4,
+      "status": "reviewed_reference",
+      "source_ids": [
+        "policy-source-kagawa-frontier-plan"
+      ],
+      "current_plan_title": "「人生100年時代のフロンティア県・香川」実現計画",
+      "source_inventory_status": "reviewed",
+      "next_gate": "actuals_linkage",
+      "next_action": "135固有指標・141掲載位置・Evidence 135件をReviewed済み。令和7年度と令和8年度の目標、再掲6件、目標更新87件、参考指標135番の令和12年目標を保持し、次に行政評価と年度実績を接続する。",
+      "priority_basis": "計画期間延長、旧目標と新目標、再掲の重複排除を同時に扱う改定履歴モデルの基準実装。"
+    },
+    {
+      "prefecture_code": "34",
+      "municipality_key": "hiroshima-prefecture",
+      "order": 5,
+      "status": "reviewed_reference",
+      "source_ids": [
+        "policy-source-hiroshima-vision-revised"
+      ],
+      "current_plan_title": "「安心▷誇り▷挑戦 ひろしまビジョン」改定版",
+      "source_inventory_status": "reviewed",
+      "next_gate": "actuals_linkage",
+      "next_action": "改定版の現行62指標とEvidence ID 62件をReviewed済み。59指標の現状値、未測定3件、R10/R12目標、定性目標1件を保持し、次に2026年11月施行予定の新アクションプランと年度実績を接続する。",
+      "priority_basis": "削除指標を除外し、定義変更、代替、複数系列、比較値、複数年平均を保持する改定計画レビューの基準実装。"
+    },
+    {
+      "prefecture_code": "47",
+      "municipality_key": "okinawa-prefecture",
+      "order": 6,
+      "status": "reviewed_reference",
+      "source_ids": [
+        "policy-source-okinawa-21st-century-vision"
+      ],
+      "current_plan_title": "新・沖縄21世紀ビジョン基本計画（沖縄振興計画）",
+      "source_inventory_status": "reviewed",
+      "next_gate": "actuals_linkage",
+      "next_action": "主要指標36件・成果指標339件、合計375件とEvidence 375件をReviewed済み。離島指標32件、SDGs優先課題43件、定性目標9件を保持し、次に令和4～6年度PDCA実績を定義照合して接続する。",
+      "priority_basis": "基本計画、現行中期実施計画、主要指標、成果指標、活動指標、過年度PDCA評価を別レイヤーで扱う計画階層モデルの基準実装。"
+    },
+    {
+      "prefecture_code": "13",
+      "municipality_key": "tokyo-metropolis",
+      "order": 7,
+      "status": "reviewed_reference",
+      "source_ids": [
+        "policy-source-tokyo-2050-strategy"
+      ],
+      "current_plan_title": "2050東京戦略 ～東京 もっとよくなる～",
+      "source_inventory_status": "reviewed",
+      "next_gate": "actuals_linkage",
+      "next_action": "政策目標一覧60ページ・25分野・304目標カードをEvidence付きでReviewed済み。次に政策レビュー・取組状況と定義を照合し、年度実績へ接続する。",
+      "priority_basis": "大規模戦略の目標カード全件レビュー基準実装。グラフ点列、年度実績、政策評価を別レイヤーで保持する。"
+    },
+    {
+      "prefecture_code": "27",
+      "municipality_key": "osaka-prefecture",
+      "order": 8,
+      "status": "reviewed_reference",
+      "source_ids": [
+        "policy-source-osaka-beyond-expo-2025"
+      ],
+      "current_plan_title": "Beyond EXPO 2025",
+      "source_inventory_status": "reviewed",
+      "next_gate": "actuals_linkage",
+      "next_action": "最終戦略の83指標・91系列とEvidence 83件をReviewed済み。経済目標1件、客観KPI27件、主観指標55件を分離し、次に令和8年度事業一覧と将来の年次更新を別レイヤーで接続する。",
+      "priority_basis": "最終戦略、旧ビジョン実績、事業一覧を別系統で扱う政策指標レビューの基準実装。"
+    }
   ]
 }
