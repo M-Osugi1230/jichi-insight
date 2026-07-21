@@ -61,7 +61,7 @@ def test_measure15_direction_boundaries_and_missing_late_targets_are_preserved()
         assert late["value"] is None
         assert late["status"] == "not_set"
         assert late["value_text_original"] == "-"
-        assert group["actual_linkage_status"] == "not_linked"
+        assert group["actual_linkage_status"] == "linked"
         assert group["evaluation_status"] == "not_assessed"
 
 
