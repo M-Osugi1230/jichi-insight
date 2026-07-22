@@ -14,11 +14,14 @@ import {
 
 import styles from "../phase9.module.css";
 
+const GENERATION_PENDING_SLUG = "generation-pending";
+
 export const dynamic = "force-static";
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return loadPhase9Summary().records.map((record) => ({ slug: record.slug }));
+  const params = loadPhase9Summary().records.map((record) => ({ slug: record.slug }));
+  return params.length > 0 ? params : [{ slug: GENERATION_PENDING_SLUG }];
 }
 
 export async function generateMetadata({
@@ -29,7 +32,10 @@ export async function generateMetadata({
   const { slug } = await params;
   const catalog = loadPhase9Catalog(slug);
   if (!catalog) {
-    return { title: "Phase 9 Reviewed目標" };
+    return {
+      title: slug === GENERATION_PENDING_SLUG ? "Phase 9｜Reviewedデータ生成中" : "Phase 9 Reviewed目標",
+      robots: slug === GENERATION_PENDING_SLUG ? { index: false, follow: false } : undefined,
+    };
   }
   return {
     title: `${catalog.name}｜主要数値目標Reviewed`,
@@ -44,8 +50,40 @@ export default async function Phase9PrefecturePage({
 }) {
   const { slug } = await params;
   const catalog = loadPhase9Catalog(slug);
+
   if (!catalog) {
-    notFound();
+    if (slug !== GENERATION_PENDING_SLUG) {
+      notFound();
+    }
+    return (
+      <main id="main-content">
+        <SiteHeader />
+        <div className="pageShell">
+          <PageIntro
+            eyebrow="Phase 9 data generation"
+            title="38県のReviewedデータを検証しています。"
+          >
+            <p>
+              公式資料の原文、資料位置、文書ハッシュ、比較可能性境界を確認した後に公開します。
+              入口索引だけをReviewedとして表示することはありません。
+            </p>
+            <div className={styles.introLinks}>
+              <Link href="/municipalities/phase9">Phase 9の公開状況へ戻る</Link>
+              <Link href="/methodology">抽出・評価方法を確認する</Link>
+            </div>
+          </PageIntro>
+          <section className="contentSection">
+            <div className={styles.emptyState}>
+              <StatusBadge label="生成検証中" tone="neutral" />
+              <p>
+                38県すべてのEvidence整合性と静的ページ出力が完了すると、県別ページへ自動的に置き換わります。
+              </p>
+            </div>
+          </section>
+        </div>
+        <SiteFooter />
+      </main>
+    );
   }
 
   return (
