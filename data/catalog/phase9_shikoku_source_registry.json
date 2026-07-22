@@ -1,0 +1,50 @@
+{
+  "id": "phase9-shikoku-source-registry",
+  "batch_id": "shikoku",
+  "updated_at": "2026-07-22",
+  "prefecture_codes": ["36", "38", "39"],
+  "records": [
+    {
+      "prefecture_code": "36",
+      "name": "徳島県",
+      "current_plan_title": "徳島新未来創生総合計画",
+      "current_plan_period": "2024年度～2028年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "長期ビジョン、政策・施策、KPI、地方版総合戦略機能を一体計画内の別階層として保持する。総合計画審議会の進捗検証と県民意識調査を計画本文の独自達成率へ置換しない。",
+      "sources": [
+        {"id":"tokushima-new-future-creation-plan-2024-2028","role":"current_plan","title":"徳島新未来創生総合計画","url":"https://www.pref.tokushima.lg.jp/kenseijoho/kenseisogo/sogokeikaku/7238407","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"2024年度から2028年度の県政運営指針で、地方版総合戦略を一体化。"},
+        {"id":"tokushima-plan-policy-kpi-list","role":"numeric_target_source","title":"徳島新未来創生総合計画 政策・施策・KPI","url":"https://www.pref.tokushima.lg.jp/kenseijoho/kenseisogo/sogokeikaku/7238407","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"計画本編・概要版に掲載される政策体系、成果目標、KPIの公式入口。"},
+        {"id":"tokushima-plan-council-review-2026","role":"annual_evaluation","title":"徳島県総合計画審議会・計画進捗検証","url":"https://www.pref.tokushima.lg.jp/kenseijoho/kenseisogo/sogokeikaku/7309828/","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"令和8年開催の総合計画審議会資料を含む計画実施状況の検証入口。県民意識調査とは分離する。"}
+      ]
+    },
+    {
+      "prefecture_code": "38",
+      "name": "愛媛県",
+      "current_plan_title": "愛媛県総合計画～未来につなぐ えひめチャレンジプラン～",
+      "current_plan_period": "2023年度～2026年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "政策KGI、施策KGI、細施策KPI、事務事業KPI、県民アンケートを別階層で保持する。令和7年度のKGI追加・見直しを目標バージョンとして保存し、事後評価を上位政策の独自達成率へ再計算しない。",
+      "sources": [
+        {"id":"ehime-challenge-plan-2023-2026","role":"current_plan","title":"愛媛県総合計画～未来につなぐ えひめチャレンジプラン～","url":"https://www.pref.ehime.jp/page/4588.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"2023年度から2026年度の県政最上位計画。"},
+        {"id":"ehime-challenge-plan-kgi-revisions","role":"numeric_target_source","title":"えひめチャレンジプラン 政策・施策KGI一覧と令和7年度見直し","url":"https://www.pref.ehime.jp/page/4588.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"政策・施策KGI、目標値、追加・見直し履歴、KGIレポートの公式入口。"},
+        {"id":"ehime-challenge-plan-monitoring-2026","role":"annual_evaluation","title":"令和8年度えひめチャレンジプラン推進懇話会・KGIレポート","url":"https://www.pref.ehime.jp/page/143870.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"KGIレポート、県民アンケート、外部有識者意見を含む最新進捗検証入口。事務事業評価とは分離する。"}
+      ]
+    },
+    {
+      "prefecture_code": "39",
+      "name": "高知県",
+      "current_plan_title": "第5期高知県産業振興計画ver.2",
+      "current_plan_period": "2024年度～2027年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "総論、5産業分野と連携テーマの産業成長戦略、7地域の地域アクションプランを別階層で保持する。年度ごとのバージョンアップと戦略目標改定を履歴化し、部会の進捗見込みを確定実績へ置換しない。",
+      "sources": [
+        {"id":"kochi-industrial-promotion-plan-phase5-v2","role":"current_plan","title":"第5期高知県産業振興計画ver.2","url":"https://www.pref.kochi.lg.jp/doc/2025042800133/","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"第5期計画の現行バージョン。産業成長戦略と地域アクションプランで構成。"},
+        {"id":"kochi-phase5-strategic-targets","role":"numeric_target_source","title":"第5期高知県産業振興計画ver.2 戦略目標・KPI","url":"https://www.pref.kochi.lg.jp/doc/sanshin/","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"計画全体を貫く目標、分野別戦略目標、地域アクションプランの公式入口。"},
+        {"id":"kochi-phase5-followup-2025","role":"annual_evaluation","title":"令和7年度高知県産業振興計画フォローアップ委員会","url":"https://www.pref.kochi.lg.jp/doc/2026011600136/","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"計画全体目標の達成見込み、分野別進捗、翌年度強化方向を検証する外部フォローアップ入口。"}
+      ]
+    }
+  ]
+}
