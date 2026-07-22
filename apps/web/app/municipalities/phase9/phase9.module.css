@@ -1,0 +1,53 @@
+.introLinks { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 22px; }
+.introLinks a { color: #286f9f; font-size: .72rem; font-weight: 850; text-underline-offset: 4px; }
+.summaryGrid { display: grid; gap: 12px; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-bottom: 64px; }
+.summaryGrid article { background: #fffefa; border: 1px solid #d7d3c8; border-top: 5px solid #236958; padding: 22px; }
+.summaryGrid span { color: #68737b; font-size: .67rem; font-weight: 850; }
+.summaryGrid strong { display: block; font-size: clamp(2.1rem, 4vw, 3.6rem); letter-spacing: -.07em; margin: 18px 0 10px; }
+.summaryGrid p { color: #42505b; font-size: .68rem; margin: 0; }
+.boundary { background: #ece8dd; display: grid; gap: 38px; grid-template-columns: .75fr 1.25fr; margin-bottom: 72px; padding: 48px; }
+.boundary h2 { font-size: clamp(1.9rem, 4vw, 3.1rem); margin-bottom: 0; }
+.boundaryGrid { display: grid; gap: 10px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.boundaryGrid article { background: #fffefa; padding: 18px; }
+.boundaryGrid strong { font-size: .75rem; }
+.boundaryGrid p { color: #42505b; font-size: .67rem; margin: 8px 0 0; }
+.sectionHeading { align-items: end; display: grid; gap: 52px; grid-template-columns: minmax(0, 1.1fr) minmax(280px, .9fr); margin-bottom: 24px; }
+.sectionHeading h2 { margin-bottom: 0; }
+.sectionHeading > p { color: #42505b; margin-bottom: 8px; }
+.prefectureGrid { display: grid; gap: 12px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.prefectureCard { background: #fffefa; border: 1px solid #d7d3c8; display: flex; flex-direction: column; min-height: 245px; padding: 21px; }
+.prefectureCard > div:first-child { align-items: center; display: flex; gap: 8px; justify-content: space-between; }
+.prefectureCard span { color: #68737b; font-size: .63rem; font-weight: 850; }
+.prefectureCard h3 { font-size: 1.05rem; margin: 22px 0 8px; }
+.prefectureCard p { color: #42505b; font-size: .68rem; margin: 0 0 18px; }
+.prefectureCard dl { display: grid; gap: 8px; grid-template-columns: repeat(2, 1fr); margin: auto 0 18px; }
+.prefectureCard dl div { border-top: 1px solid #ded9cd; padding-top: 8px; }
+.prefectureCard dt { color: #68737b; font-size: .58rem; font-weight: 800; }
+.prefectureCard dd { font-size: .8rem; font-weight: 900; margin: 4px 0 0; }
+.prefectureCard a { color: #286f9f; font-size: .68rem; font-weight: 850; text-underline-offset: 4px; }
+.emptyState { background: #fffefa; border: 1px solid #d7d3c8; padding: 34px; }
+.emptyState p { color: #42505b; margin-bottom: 0; }
+.catalogMeta { background: #102e46; color: #fff; display: grid; gap: 42px; grid-template-columns: .8fr 1.2fr; margin-bottom: 56px; padding: 44px; }
+.catalogMeta p { color: #d9e1e7; }
+.catalogMeta dl { display: grid; gap: 10px; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 0; }
+.catalogMeta dl div { background: #fffefa; color: #17232c; padding: 16px; }
+.catalogMeta dt { color: #68737b; font-size: .6rem; font-weight: 850; }
+.catalogMeta dd { font-size: .77rem; font-weight: 850; margin: 7px 0 0; overflow-wrap: anywhere; }
+.recordList { display: grid; gap: 10px; }
+.recordCard { background: #fffefa; border: 1px solid #d7d3c8; padding: 0; }
+.recordCard summary { cursor: pointer; display: grid; gap: 10px; grid-template-columns: 68px minmax(0, 1fr) auto; list-style: none; padding: 18px 20px; }
+.recordCard summary::-webkit-details-marker { display: none; }
+.recordCard summary > span { color: #68737b; font-size: .62rem; font-weight: 900; }
+.recordCard summary strong { font-size: .78rem; line-height: 1.55; }
+.recordCard summary em { color: #236958; font-size: .58rem; font-style: normal; font-weight: 900; }
+.recordBody { border-top: 1px solid #ded9cd; display: grid; gap: 20px; grid-template-columns: minmax(0, 1.4fr) minmax(260px, .6fr); padding: 22px; }
+.originalText { background: #f2efe7; font-size: .72rem; line-height: 1.8; margin: 0; padding: 18px; white-space: pre-wrap; }
+.recordFacts { display: grid; gap: 8px; margin: 0; }
+.recordFacts div { border-bottom: 1px solid #ded9cd; padding-bottom: 8px; }
+.recordFacts dt { color: #68737b; font-size: .58rem; font-weight: 850; }
+.recordFacts dd { font-size: .68rem; font-weight: 750; margin: 4px 0 0; overflow-wrap: anywhere; }
+.recordFacts a { color: #286f9f; text-underline-offset: 3px; }
+.notice { background: #f5f2e9; border-left: 5px solid #b07b33; color: #42505b; font-size: .7rem; margin-top: 28px; padding: 18px; }
+@media (max-width: 980px) { .summaryGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .prefectureGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .boundary, .catalogMeta { grid-template-columns: 1fr; } }
+@media (max-width: 720px) { .sectionHeading { align-items: start; gap: 18px; grid-template-columns: 1fr; } .boundary, .catalogMeta { padding: 34px 22px; } .recordCard summary { grid-template-columns: 48px minmax(0, 1fr); } .recordCard summary em { grid-column: 2; } .recordBody { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .summaryGrid, .prefectureGrid, .boundaryGrid, .catalogMeta dl { grid-template-columns: 1fr; } }
