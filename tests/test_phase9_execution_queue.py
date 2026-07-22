@@ -7,8 +7,11 @@ ROOT = Path(__file__).resolve().parents[1]
 QUEUE_PATH = ROOT / "data/catalog/phase9_execution_queue.json"
 SCHEMA_PATH = ROOT / "schemas/phase9_execution_queue.schema.json"
 COVERAGE_PATH = ROOT / "data/catalog/prefecture_coverage.json"
-TOHOKU_PATH = ROOT / "data/catalog/phase9_tohoku_source_registry.json"
-KANTO_PATH = ROOT / "data/catalog/phase9_kanto_source_registry.json"
+SOURCE_REGISTRY_PATHS = [
+    ROOT / "data/catalog/phase9_tohoku_source_registry.json",
+    ROOT / "data/catalog/phase9_kanto_source_registry.json",
+    ROOT / "data/catalog/phase9_chubu_source_registry.json",
+]
 
 
 def load(path: Path):
@@ -17,8 +20,7 @@ def load(path: Path):
 
 def test_phase9_execution_queue_matches_schema():
     validator = Draft202012Validator(
-        load(SCHEMA_PATH),
-        format_checker=FormatChecker(),
+        load(SCHEMA_PATH), format_checker=FormatChecker()
     )
     assert list(validator.iter_errors(load(QUEUE_PATH))) == []
 
@@ -43,42 +45,43 @@ def test_regional_batches_cover_every_queue_item_once():
     batched_codes = [
         code for batch in queue["batches"] for code in batch["prefecture_codes"]
     ]
-
-    assert len(batched_codes) == 38
-    assert len(set(batched_codes)) == 38
+    assert len(batched_codes) == len(set(batched_codes)) == 38
     assert set(batched_codes) == set(items)
-
     for batch in queue["batches"]:
         for code in batch["prefecture_codes"]:
             assert items[code]["batch_id"] == batch["id"]
             assert items[code]["region"] == batch["region"]
 
 
-def test_tohoku_and_kanto_have_indexed_sources_without_overstating_review():
+def test_first_three_batches_are_indexed_without_overstating_review():
     queue = load(QUEUE_PATH)
     items = {item["prefecture_code"]: item for item in queue["items"]}
-    indexed_codes = set(load(TOHOKU_PATH)["prefecture_codes"]) | set(
-        load(KANTO_PATH)["prefecture_codes"]
-    )
+    indexed_codes = {
+        code
+        for path in SOURCE_REGISTRY_PATHS
+        for code in load(path)["prefecture_codes"]
+    }
 
     assert queue["status"] == "in_progress"
+    assert len(indexed_codes) == 20
     assert all(item["policy_plan_status"] == "indexed" for item in queue["items"])
     assert all(
         item["current_plan_status"] == "current_confirmed"
         for item in queue["items"]
     )
-    assert len(indexed_codes) == 11
     assert all(
         items[code]["numeric_target_status"] == "indexed" for code in indexed_codes
     )
-    assert all(items[code]["review_status"] == "source_indexing" for code in indexed_codes)
+    assert all(
+        items[code]["review_status"] == "source_indexing" for code in indexed_codes
+    )
     assert all(
         "Evidence付きReviewedデータへ昇格" in items[code]["next_action"]
         for code in indexed_codes
     )
 
     remaining_codes = set(items) - indexed_codes
-    assert len(remaining_codes) == 27
+    assert len(remaining_codes) == 18
     assert all(
         items[code]["numeric_target_status"] == "not_indexed"
         for code in remaining_codes
@@ -87,13 +90,14 @@ def test_tohoku_and_kanto_have_indexed_sources_without_overstating_review():
     assert sum(
         item["numeric_target_status"] in {"indexed", "reviewed"}
         for item in queue["items"]
-    ) == 11
-    assert sum(item["numeric_target_status"] == "reviewed" for item in queue["items"]) == 0
+    ) == 20
+    assert sum(
+        item["numeric_target_status"] == "reviewed" for item in queue["items"]
+    ) == 0
 
 
 def test_quality_rules_block_incomparable_rankings_and_unsupported_numbers():
     rules = " ".join(load(QUEUE_PATH)["quality_rules"])
-
     assert "Evidence Packet" in rules
     assert "比較不能な指標はランキング対象外" in rules
     assert "欠損、未設定、非公表、0を別状態" in rules
