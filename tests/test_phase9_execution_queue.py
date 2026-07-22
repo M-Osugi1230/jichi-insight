@@ -8,6 +8,7 @@ QUEUE_PATH = ROOT / "data/catalog/phase9_execution_queue.json"
 SCHEMA_PATH = ROOT / "schemas/phase9_execution_queue.schema.json"
 COVERAGE_PATH = ROOT / "data/catalog/prefecture_coverage.json"
 TOHOKU_PATH = ROOT / "data/catalog/phase9_tohoku_source_registry.json"
+KANTO_PATH = ROOT / "data/catalog/phase9_kanto_source_registry.json"
 
 
 def load(path: Path):
@@ -53,10 +54,12 @@ def test_regional_batches_cover_every_queue_item_once():
             assert items[code]["region"] == batch["region"]
 
 
-def test_tohoku_batch_has_indexed_target_sources_without_overstating_review():
+def test_tohoku_and_kanto_have_indexed_sources_without_overstating_review():
     queue = load(QUEUE_PATH)
     items = {item["prefecture_code"]: item for item in queue["items"]}
-    tohoku_codes = set(load(TOHOKU_PATH)["prefecture_codes"])
+    indexed_codes = set(load(TOHOKU_PATH)["prefecture_codes"]) | set(
+        load(KANTO_PATH)["prefecture_codes"]
+    )
 
     assert queue["status"] == "in_progress"
     assert all(item["policy_plan_status"] == "indexed" for item in queue["items"])
@@ -64,15 +67,18 @@ def test_tohoku_batch_has_indexed_target_sources_without_overstating_review():
         item["current_plan_status"] == "current_confirmed"
         for item in queue["items"]
     )
-    assert all(items[code]["numeric_target_status"] == "indexed" for code in tohoku_codes)
-    assert all(items[code]["review_status"] == "source_indexing" for code in tohoku_codes)
+    assert len(indexed_codes) == 11
+    assert all(
+        items[code]["numeric_target_status"] == "indexed" for code in indexed_codes
+    )
+    assert all(items[code]["review_status"] == "source_indexing" for code in indexed_codes)
     assert all(
         "Evidence付きReviewedデータへ昇格" in items[code]["next_action"]
-        for code in tohoku_codes
+        for code in indexed_codes
     )
 
-    remaining_codes = set(items) - tohoku_codes
-    assert len(remaining_codes) == 33
+    remaining_codes = set(items) - indexed_codes
+    assert len(remaining_codes) == 27
     assert all(
         items[code]["numeric_target_status"] == "not_indexed"
         for code in remaining_codes
@@ -81,7 +87,7 @@ def test_tohoku_batch_has_indexed_target_sources_without_overstating_review():
     assert sum(
         item["numeric_target_status"] in {"indexed", "reviewed"}
         for item in queue["items"]
-    ) == 5
+    ) == 11
     assert sum(item["numeric_target_status"] == "reviewed" for item in queue["items"]) == 0
 
 
