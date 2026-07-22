@@ -44,7 +44,7 @@ def apply(root: Path, registry_relative: Path) -> None:
         item["numeric_target_status"] = "indexed"
         item["review_status"] = "source_indexing"
         item["next_action"] = (
-            "現行計画・数値目標・年度評価の公式入口を固定済み。"
+            "現行計画・数値目標・評価資料の公式入口を固定済み。"
             "次に指標本文、値、単位、期間、母集団、定義変更を全件抽出し、"
             "Evidence付きReviewedデータへ昇格する。"
         )
@@ -71,12 +71,12 @@ def apply(root: Path, registry_relative: Path) -> None:
             "phase9_prefectures_with_reviewed_numeric_targets": phase9_reviewed,
         }
     )
+    batch_id = registry["batch_id"]
+    test_path = f"tests/test_phase9_{batch_id}_source_registry.py"
     evidence_additions = {
         "all_major_numeric_targets_indexed": [str(registry_relative)],
         "published_numeric_evidence_coverage": [str(registry_relative)],
-        "semantic_quality_tests": [
-            "tests/test_phase9_tohoku_source_registry.py",
-        ],
+        "semantic_quality_tests": [test_path],
     }
     for gate in completion["gates"]:
         for path in evidence_additions.get(gate["id"], []):
@@ -84,10 +84,10 @@ def apply(root: Path, registry_relative: Path) -> None:
                 gate["evidence_paths"].append(path)
     completion["scope_note"] = (
         "Phase 9 is in progress. All 47 major policy plans are indexed, all nine "
-        "regional anchors have Evidence-backed Reviewed targets, and the Tohoku "
-        "batch has official numeric-target entrances indexed for five additional "
-        "prefectures. The remaining work is full indicator extraction and review "
-        "for all 38 Phase 9 prefectures, followed by publication and smoke gates."
+        "regional anchors have Evidence-backed Reviewed targets, and "
+        f"{phase9_indexed} of the remaining 38 prefectures have official "
+        "numeric-target entrances indexed. Full indicator extraction, review, "
+        "publication and smoke verification remain in progress."
     )
     write(completion_path, completion)
 
