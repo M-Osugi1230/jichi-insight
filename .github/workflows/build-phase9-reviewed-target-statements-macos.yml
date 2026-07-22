@@ -5,6 +5,7 @@ on:
     paths:
       - scripts/audit_phase9_numeric_target_sources.py
       - scripts/build_phase9_reviewed_target_statements.py
+      - scripts/build_phase9_reviewed_target_statements_parallel.py
       - scripts/finalize_phase9_publication.py
       - data/catalog/phase9_*_source_registry.json
       - schemas/phase9_*.schema.json
@@ -16,6 +17,7 @@ on:
     paths:
       - scripts/audit_phase9_numeric_target_sources.py
       - scripts/build_phase9_reviewed_target_statements.py
+      - scripts/build_phase9_reviewed_target_statements_parallel.py
       - scripts/finalize_phase9_publication.py
       - data/catalog/phase9_*_source_registry.json
       - schemas/phase9_*.schema.json
@@ -46,7 +48,7 @@ jobs:
       - name: Build Evidence-backed target statements
         run: |
           set -o pipefail
-          python scripts/build_phase9_reviewed_target_statements.py 2>&1 | tee phase9-builder-macos.log
+          python scripts/build_phase9_reviewed_target_statements_parallel.py --workers 8 2>&1 | tee phase9-builder-macos.log
       - name: Finalize nationwide canonical registries
         run: python scripts/finalize_phase9_publication.py
       - name: Upload diagnostics
