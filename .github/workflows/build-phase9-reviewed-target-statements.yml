@@ -6,6 +6,7 @@ on:
       - scripts/audit_phase9_numeric_target_sources.py
       - scripts/build_phase9_reviewed_target_statements.py
       - data/catalog/phase9_*_source_registry.json
+      - schemas/phase9_*.schema.json
       - pyproject.toml
       - .github/workflows/build-phase9-reviewed-target-statements.yml
   push:
@@ -15,6 +16,7 @@ on:
       - scripts/audit_phase9_numeric_target_sources.py
       - scripts/build_phase9_reviewed_target_statements.py
       - data/catalog/phase9_*_source_registry.json
+      - schemas/phase9_*.schema.json
       - pyproject.toml
       - .github/workflows/build-phase9-reviewed-target-statements.yml
 
