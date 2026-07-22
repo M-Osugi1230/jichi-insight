@@ -77,7 +77,6 @@ jobs:
       - name: Validate generated JSON
         run: python scripts/validate_repository.py
       - name: Commit generated review data
-        if: github.event_name == 'push'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -96,5 +95,5 @@ jobs:
             echo "No generated changes"
           else
             git commit -m "Materialize Phase 9 reviewed target statements"
-            git push
+            git push origin HEAD:agent/phase9-full-review
           fi
