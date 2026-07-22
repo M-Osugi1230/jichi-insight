@@ -9,9 +9,9 @@ Phase 7で47都道府県の現行政策計画入口を確認し、Phase 8で9地
 現在の進捗は次のとおりです。
 
 - 主要政策計画の入口: 47/47
-- 数値目標入口 Indexed以上: 29/47
+- 数値目標入口 Indexed以上: 34/47
 - Evidence付きReviewed都道府県: 9/47
-- Phase 9対象県の数値目標入口 Indexed以上: 20/38
+- Phase 9対象県の数値目標入口 Indexed以上: 25/38
 - Phase 9対象県のReviewed数値目標: 0/38
 
 ## Regional batches
@@ -21,11 +21,11 @@ Phase 7で47都道府県の現行政策計画入口を確認し、Phase 8で9地
 | 1 | 東北 | 5 | 5 | 0 |
 | 2 | 関東 | 6 | 6 | 0 |
 | 3 | 中部 | 9 | 9 | 0 |
-| 4 | 近畿 | 5 | 0 | 0 |
+| 4 | 近畿 | 5 | 5 | 0 |
 | 5 | 中国 | 4 | 0 | 0 |
 | 6 | 四国 | 3 | 0 | 0 |
 | 7 | 九州・沖縄 | 6 | 0 | 0 |
-|  | Total | 38 | 20 | 0 |
+|  | Total | 38 | 25 | 0 |
 
 ## Completed source-index batches
 
@@ -49,6 +49,14 @@ Phase 7で47都道府県の現行政策計画入口を確認し、Phase 8で9地
 - 静岡県: 2025～2028年度ウェルビーイングプランを現行正本とし、旧白書で初回評価を代用しない。
 - 三重県: 政策・施策KPI、行政運営KPI、7つの挑戦、地方創生KPIを別レイヤーで保持。
 
+### 近畿5府県
+
+- 滋賀県: 2019～2030年度基本構想と2023～2026年度第2期実施計画を分離し、2024年7月改訂後の政策目標を現行版として保持。審議中の次期計画を先行昇格しない。
+- 京都府: 将来構想、基本計画、地域振興計画、広域連携プロジェクトを別階層で保持し、年度実績・変更指標を計画本文へ上書きしない。
+- 兵庫県: ひょうごビジョン2050の長期指標と第三期地域創生戦略のKPI・プロジェクトを分離。第二期戦略の最終実績を第三期へ自動接続しない。
+- 奈良県: 複数年の標準的総合計画ではなく年度版政策集で現行性を管理。令和8年度政策集と令和6年度重点課題評価を別年度版として保持。
+- 和歌山県: 2025年12月議決・2026年度開始の新総合計画を現行正本とし、旧長期総合計画を現行扱いしない。初回年次評価は未公表。
+
 ## Batch quality gates
 
 各バッチは、次の品質ゲートを順に通過します。
@@ -61,7 +69,7 @@ Phase 7で47都道府県の現行政策計画入口を確認し、Phase 8で9地
 6. 比較可能性メタデータの付与
 7. 公開ページ、静的出力、Production Smoke
 
-東北・関東・中部の20県は品質ゲート2まで完了しています。次工程は、近畿・中国・四国・九州の18県の公式入口を固定するとともに、Source Indexed県の指標本文と値をEvidence付きReviewedデータへ昇格することです。
+東北・関東・中部・近畿の25県は品質ゲート2まで完了しています。次工程は、中国・四国・九州の13県の公式入口を固定するとともに、Source Indexed県の指標本文と値をEvidence付きReviewedデータへ昇格することです。
 
 ## Comparability metadata
 
@@ -90,4 +98,4 @@ Phase 9は次をすべて満たした場合だけ`complete`になります。
 - 比較不能な指標をランキングへ含めないことを機械検証
 - 全国公開ページの静的出力とProduction Smoke成功
 
-実行順の正本は `data/catalog/phase9_execution_queue.json` です。公式入口は `data/catalog/phase9_tohoku_source_registry.json`、`data/catalog/phase9_kanto_source_registry.json`、`data/catalog/phase9_chubu_source_registry.json` に保持します。
+実行順の正本は `data/catalog/phase9_execution_queue.json` です。公式入口は `data/catalog/phase9_tohoku_source_registry.json`、`data/catalog/phase9_kanto_source_registry.json`、`data/catalog/phase9_chubu_source_registry.json`、`data/catalog/phase9_kinki_source_registry.json` に保持します。
