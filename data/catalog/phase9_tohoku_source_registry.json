@@ -1,0 +1,213 @@
+{
+  "id": "phase9-tohoku-source-registry",
+  "batch_id": "tohoku",
+  "updated_at": "2026-07-22",
+  "prefecture_codes": ["02", "03", "05", "06", "07"],
+  "records": [
+    {
+      "prefecture_code": "02",
+      "name": "青森県",
+      "current_plan_title": "青森県基本計画「青森新時代」への架け橋",
+      "current_plan_period": "2024年度～2028年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "基本計画の観察指標、あおもり創生総合戦略のKPI、政策点検による自己評価を別レイヤーで保持し、政策点検結果を計画目標の独自達成判定へ転用しない。",
+      "sources": [
+        {
+          "id": "aomori-current-plan-2024-2028",
+          "role": "current_plan",
+          "title": "青森県基本計画「青森新時代」への架け橋",
+          "url": "https://www.pref.aomori.lg.jp/soshiki/seisaku/seisaku/master-plan2024-2028.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "県行政運営の基本方針。7政策テーマと6圏域の取組方針を示す。"
+        },
+        {
+          "id": "aomori-observation-indicators-2024-2028",
+          "role": "numeric_target_source",
+          "title": "青森県基本計画 本文・観察指標",
+          "url": "https://www.pref.aomori.lg.jp/soshiki/seisaku/seisaku/master-plan2024-2028.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "計画本文と観察指標の公式入口。創生総合戦略KPIとは役割を分ける。"
+        },
+        {
+          "id": "aomori-policy-review-2025",
+          "role": "annual_evaluation",
+          "title": "政策点検レポート2025・観察指標一覧",
+          "url": "https://www.pref.aomori.lg.jp/soshiki/seisaku/seisaku/seisaku_hyoka.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "施策ごとの自己点検、観察指標、創生総合戦略KPIの進捗を掲載する年次入口。"
+        }
+      ]
+    },
+    {
+      "prefecture_code": "03",
+      "name": "岩手県",
+      "current_plan_title": "いわて県民計画（2019～2028）第2期アクションプラン",
+      "current_plan_period": "2023年度～2026年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "令和6年12月の指標変更別冊を現行定義として扱い、政策推進・復興推進・地域振興・行政経営の各プランを一つの指標表へ混合しない。",
+      "sources": [
+        {
+          "id": "iwate-second-action-plan",
+          "role": "current_plan",
+          "title": "いわて県民計画（2019～2028）第2期アクションプラン",
+          "url": "https://www.pref.iwate.jp/kensei/seisaku/suishin/1018014/1019685.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "政策推進、復興推進、4圏域の地域振興、行政経営の各プランの公式入口。"
+        },
+        {
+          "id": "iwate-policy-indicator-revision-2024",
+          "role": "numeric_target_source",
+          "title": "第2期政策推進プラン別冊（令和6年12月 指標一部変更）",
+          "url": "https://www.pref.iwate.jp/kensei/seisaku/suishin/1018014/1019685.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "具体的推進方策指標の現行定義を確認する改定別冊。"
+        },
+        {
+          "id": "iwate-annual-results-2024",
+          "role": "annual_evaluation",
+          "title": "令和6年度主要施策の成果に関する説明書",
+          "url": "https://www.pref.iwate.jp/kensei/seisaku/hyouka/kekka/1090419.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "政策推進プランの数値目標について令和6年度の実績測定評価を掲載。"
+        }
+      ]
+    },
+    {
+      "prefecture_code": "05",
+      "name": "秋田県",
+      "current_plan_title": "秋田県総合計画 ～秋田再興への第一歩～",
+      "current_plan_period": "2026年度～2029年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "2026年度開始の新計画を現行正本とし、2025年度で終了した新秋田元気創造プランの目標・実績を現行計画へ自動継承しない。初年度の年次評価は未公表として扱う。",
+      "sources": [
+        {
+          "id": "akita-comprehensive-plan-2026-2029",
+          "role": "current_plan",
+          "title": "秋田県総合計画 ～秋田再興への第一歩～",
+          "url": "https://www.pref.akita.lg.jp/pages/genre/92576",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "2026年度から2029年度の県政運営の最上位計画。"
+        },
+        {
+          "id": "akita-comprehensive-plan-indicators-2026-2029",
+          "role": "numeric_target_source",
+          "title": "秋田県総合計画2026-2029 本文・政策指標",
+          "url": "https://www.pref.akita.lg.jp/uploads/public/archive_0000094577_00/digital-book/pageindices/index4.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "新計画デジタルブック内の政策体系・政策指標を確認する入口。"
+        },
+        {
+          "id": "akita-comprehensive-plan-annual-evaluation-2026",
+          "role": "annual_evaluation",
+          "title": "秋田県総合計画2026-2029 年次評価",
+          "url": null,
+          "availability": "not_yet_published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "新計画の初年度であり、現行計画に対応する年次評価は未公表。"
+        }
+      ]
+    },
+    {
+      "prefecture_code": "06",
+      "name": "山形県",
+      "current_plan_title": "第4次山形県総合発展計画 後期実施計画（山形県版総合戦略第3期）",
+      "current_plan_period": "2025年度～2029年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "現行の後期実施計画と、令和6年度末時点の前期実施計画評価を別の計画版として保持し、旧KPI実績を後期計画目標へ自動接続しない。",
+      "sources": [
+        {
+          "id": "yamagata-late-implementation-plan-2025-2029",
+          "role": "current_plan",
+          "title": "第4次山形県総合発展計画 後期実施計画",
+          "url": "https://www.pref.yamagata.jp/020060/kensei/keikaku/keikaku4/kouki.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "令和7年度から令和11年度の現行実施計画。山形県版総合戦略第3期を兼ねる。"
+        },
+        {
+          "id": "yamagata-late-plan-kpis-2025-2029",
+          "role": "numeric_target_source",
+          "title": "後期実施計画 目標指標・重要業績評価指標（KPI）",
+          "url": "https://www.pref.yamagata.jp/020060/kensei/keikaku/keikaku4/kouki.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "現行後期実施計画本文に掲載される目標指標・KPIの公式入口。"
+        },
+        {
+          "id": "yamagata-prior-plan-evaluation-2024",
+          "role": "annual_evaluation",
+          "title": "前期実施計画の進捗状況・評価（令和6年度末時点）",
+          "url": "https://www.pref.yamagata.jp/020060/r7souseishin_.html",
+          "availability": "published",
+          "target_version_scope": "prior_plan",
+          "checked_at": "2026-07-22",
+          "note": "令和2～6年度の前期実施計画に対する最終評価。現行後期計画とは目標版が異なる。"
+        }
+      ]
+    },
+    {
+      "prefecture_code": "07",
+      "name": "福島県",
+      "current_plan_title": "福島県総合計画（2022▶2030）",
+      "current_plan_period": "2022年度～2030年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "政策に紐付く34指標と政策分野別主要施策の279指標を別階層で保持し、進行管理の評価結果を計画目標の独自達成率へ再計算しない。",
+      "sources": [
+        {
+          "id": "fukushima-comprehensive-plan-2022-2030",
+          "role": "current_plan",
+          "title": "福島県総合計画（2022▶2030）",
+          "url": "https://www.pref.fukushima.lg.jp/sec/11015b/comprehensiveplan2022-2030.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "復興・再生と地方創生を含む県政最上位計画。"
+        },
+        {
+          "id": "fukushima-major-policy-indicators-279",
+          "role": "numeric_target_source",
+          "title": "政策分野別主要施策に掲げる指標一覧（全279指標）",
+          "url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/666609.pdf",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "政策分野別主要施策の全279指標を掲載する現行指標一覧。"
+        },
+        {
+          "id": "fukushima-progress-management-2025",
+          "role": "annual_evaluation",
+          "title": "福島県総合計画 令和7年度の進行管理",
+          "url": "https://www.pref.fukushima.lg.jp/sec/11015b/2025.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "34政策指標、279施策指標、評価調書、実績修正、アニュアルレポートの入口。"
+        }
+      ]
+    }
+  ]
+}
