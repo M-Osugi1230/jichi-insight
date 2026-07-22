@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import copy
 import json
+import traceback
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Any
@@ -74,6 +75,7 @@ def review_one(prefecture: dict[str, Any]):
 def build(root: Path, workers: int) -> None:
     prefectures = apply_source_overrides(official_phase9_records(root), root)
     generated: dict[str, tuple[dict[str, Any], dict[str, Any], dict[str, Any]]] = {}
+    failures: list[dict[str, str]] = []
 
     with ThreadPoolExecutor(max_workers=workers) as executor:
         futures = {executor.submit(review_one, prefecture): prefecture for prefecture in prefectures}
@@ -82,14 +84,33 @@ def build(root: Path, workers: int) -> None:
             code = prefecture["prefecture_code"]
             try:
                 _, result = future.result()
-            except Exception as exc:
-                raise RuntimeError(f"Phase 9 review failed for {code} {prefecture['name']}") from exc
+            except Exception as exc:  # noqa: BLE001 - preserve all prefecture diagnostics
+                error = "".join(traceback.format_exception_only(type(exc), exc)).strip()
+                failures.append(
+                    {
+                        "prefecture_code": code,
+                        "name": prefecture["name"],
+                        "error": error,
+                    }
+                )
+                print(f"FAILED {code} {prefecture['name']}: {error}", flush=True)
+                continue
             generated[code] = result
             print(
                 f"Reviewed {code} {prefecture['name']}: "
                 f"{result[2]['reviewed_target_statement_count']} statements",
                 flush=True,
             )
+
+    if failures:
+        failures.sort(key=lambda item: item["prefecture_code"])
+        details = "\n".join(
+            f"- {item['prefecture_code']} {item['name']}: {item['error']}"
+            for item in failures
+        )
+        raise RuntimeError(
+            f"Phase 9 review failed for {len(failures)} prefecture(s):\n{details}"
+        )
 
     if set(generated) != {prefecture["prefecture_code"] for prefecture in prefectures}:
         raise ValueError("Parallel Phase 9 generation did not cover all prefectures")
