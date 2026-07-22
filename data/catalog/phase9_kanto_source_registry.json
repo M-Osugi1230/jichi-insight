@@ -1,0 +1,254 @@
+{
+  "id": "phase9-kanto-source-registry",
+  "batch_id": "kanto",
+  "updated_at": "2026-07-22",
+  "prefecture_codes": ["08", "09", "10", "11", "12", "14"],
+  "records": [
+    {
+      "prefecture_code": "08",
+      "name": "茨城県",
+      "current_plan_title": "第3次茨城県総合計画～「新しい茨城」への挑戦～",
+      "current_plan_period": "2026年度～2029年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "2026年度開始の第3次計画を現行正本とする。2026年5月時点の主要指標等実績一覧は定期更新されるモニタリング資料であり、計画初年度の総括評価や旧計画の最終評価と同一視しない。",
+      "sources": [
+        {
+          "id": "ibaraki-third-comprehensive-plan-2026-2029",
+          "role": "current_plan",
+          "title": "第3次茨城県総合計画～「新しい茨城」への挑戦～",
+          "url": "https://www.pref.ibaraki.jp/kikaku/kikaku/seisaku/kikaku1-sogo/shinkeikaku/sokeishin/r8sogokeikaku.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "2026年度から2029年度の県政運営の基本方針。"
+        },
+        {
+          "id": "ibaraki-third-plan-major-indicators",
+          "role": "numeric_target_source",
+          "title": "第3次茨城県総合計画 主要指標",
+          "url": "https://www.pref.ibaraki.jp/kikaku/kikaku/seisaku/kikaku1-sogo/shinkeikaku/sokeishin/r8sogokeikaku.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "第3次計画本文に含まれる主要指標の公式入口。"
+        },
+        {
+          "id": "ibaraki-major-indicator-monitoring-2026-05",
+          "role": "annual_monitoring",
+          "title": "主要指標等実績一覧（2026.5時点）",
+          "url": "https://www.pref.ibaraki.jp/kikaku/kikaku/seisaku/kikaku1-sogo/index.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "4つのチャレンジごとの主要指標を定期更新する実績スナップショット。年次政策評価とは区別する。"
+        }
+      ]
+    },
+    {
+      "prefecture_code": "09",
+      "name": "栃木県",
+      "current_plan_title": "新とちぎ未来創造プラン",
+      "current_plan_period": "2026年度～2030年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "2026年度開始の新計画を現行正本とし、2021～2025年度の旧とちぎ未来創造プラン及び第2期とちぎ創生15戦略の成果指標・KPIを現行目標へ自動継承しない。初年度の年次評価は未公表。",
+      "sources": [
+        {
+          "id": "tochigi-new-future-creation-plan-2026-2030",
+          "role": "current_plan",
+          "title": "新とちぎ未来創造プラン",
+          "url": "https://www.pref.tochigi.lg.jp/a01/newplan/shinmiraisouzouplan.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "2026年度から2030年度の県政基本指針。5重点戦略を持つ。"
+        },
+        {
+          "id": "tochigi-new-plan-outcome-action-indicators",
+          "role": "numeric_target_source",
+          "title": "新とちぎ未来創造プラン 成果・取組指標一覧",
+          "url": "https://www.pref.tochigi.lg.jp/a01/newplan/shinmiraisouzouplan.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "計画資料編に掲載された成果指標・取組指標の公式入口。二つの指標階層を分離する。"
+        },
+        {
+          "id": "tochigi-new-plan-annual-evaluation-2026",
+          "role": "annual_evaluation",
+          "title": "新とちぎ未来創造プラン 年次評価",
+          "url": null,
+          "availability": "not_yet_published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "新計画初年度のため、現行計画に対応する年次評価は未公表。"
+        }
+      ]
+    },
+    {
+      "prefecture_code": "10",
+      "name": "群馬県",
+      "current_plan_title": "新・群馬県総合計画（基本計画）",
+      "current_plan_period": "2021年度～2030年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "2040年ビジョンと2021～2030年度基本計画を分離し、7政策の柱ごとのKPIとロードマップを計画目標として扱う。毎年度の評価検証結果は県・有識者による評価であり、KPI本文の独自達成判定へ置換しない。",
+      "sources": [
+        {
+          "id": "gunma-g-vision-2040-current-plan",
+          "role": "current_plan",
+          "title": "G VISION 2040 新・群馬県総合計画",
+          "url": "https://gunma-v.jp/",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "群馬県戦略企画課が運営する総合計画公式ポータル。ビジョンと基本計画を掲載。"
+        },
+        {
+          "id": "gunma-basic-plan-kpi-roadmaps",
+          "role": "numeric_target_source",
+          "title": "新・群馬県総合計画（基本計画）デジタルブック",
+          "url": "https://gunma-v.jp/dbook/",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "7政策の柱ごとのロードマップ、KPI、現状値、目標値、設定根拠を掲載する正本入口。"
+        },
+        {
+          "id": "gunma-plan-evaluation-2024",
+          "role": "annual_evaluation",
+          "title": "新・群馬県総合計画 2024評価検証結果",
+          "url": "https://gunma-v.jp/pdca/",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "KPIとロードマップの進捗を毎年度評価検証する公式入口。最新掲載は2024年度結果。"
+        }
+      ]
+    },
+    {
+      "prefecture_code": "11",
+      "name": "埼玉県",
+      "current_plan_title": "埼玉県5か年計画 ～日本一暮らしやすい埼玉へ～",
+      "current_plan_period": "2022年度～2026年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "2025年の中間見直しで13指標の目標値等が変更されたため、当初版と変更後版を別バージョンで保持する。年度施策評価の最新値一覧・進捗シート・県民満足度を異なる評価単位として扱う。",
+      "sources": [
+        {
+          "id": "saitama-five-year-plan-2022-2026",
+          "role": "current_plan",
+          "title": "埼玉県5か年計画 ～日本一暮らしやすい埼玉へ～",
+          "url": "https://www.pref.saitama.lg.jp/a0102/5-keikaku/04-index.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "2022年度から2026年度の県政運営の基礎計画。2025年に一部変更。"
+        },
+        {
+          "id": "saitama-five-year-plan-revised-indicators-2025",
+          "role": "numeric_target_source",
+          "title": "埼玉県5か年計画 指標一覧・2025年一部変更",
+          "url": "https://www.pref.saitama.lg.jp/a0102/5-keikaku/04-rolling-iken-kekka.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "中間見直しで変更された13指標を含む現行目標版の確認入口。"
+        },
+        {
+          "id": "saitama-policy-evaluation-2025",
+          "role": "annual_evaluation",
+          "title": "令和7年度施策評価（令和6年度実績分）",
+          "url": "https://www.pref.saitama.lg.jp/a0102/sesakuhyouka.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "指標の最新値、進捗シート、主な取組実績、県民満足度を掲載する年次評価入口。"
+        }
+      ]
+    },
+    {
+      "prefecture_code": "12",
+      "name": "千葉県",
+      "current_plan_title": "千葉県総合計画 ～千葉の未来をともに創る～",
+      "current_plan_period": "2025年度～2028年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "現行計画の89社会目標と、2022～2024年度旧計画の76社会目標・最終評価を別バージョンで保持する。現行計画の政策評価ページは評価制度と対象を示す入口であり、旧計画の実績を新目標へ付け替えない。",
+      "sources": [
+        {
+          "id": "chiba-comprehensive-plan-2025-2028",
+          "role": "current_plan",
+          "title": "千葉県総合計画 ～千葉の未来をともに創る～",
+          "url": "https://www.pref.chiba.lg.jp/seisaku/sougou/sinchibakensoukei.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "2025年10月決定、2025年度から2028年度の県政最上位計画。"
+        },
+        {
+          "id": "chiba-current-plan-89-social-targets",
+          "role": "numeric_target_source",
+          "title": "千葉県総合計画 指標一覧（89社会目標）",
+          "url": "https://www.pref.chiba.lg.jp/seisaku/sougou/soukei-text/shihyou.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "令和10年度までに実現を目指す89の具体的数値目標の公式一覧。"
+        },
+        {
+          "id": "chiba-current-plan-policy-evaluation-framework",
+          "role": "evaluation_framework",
+          "title": "千葉県総合計画の政策評価（令和7年度から10年度）",
+          "url": "https://www.pref.chiba.lg.jp/seisaku/hyouka/shinkoukanri/index7.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "現行計画の全施策を毎年度評価する制度・対象の公式入口。旧計画最終評価とは分離する。"
+        }
+      ]
+    },
+    {
+      "prefecture_code": "14",
+      "name": "神奈川県",
+      "current_plan_title": "新かながわグランドデザイン 実施計画",
+      "current_plan_period": "2024年度～2027年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "実施計画の『指標』と『KPI』は目的・責任範囲が異なるため別階層で保持する。評価報告書の達成状況、追加公表された実績値、修正情報を計画策定時の目標本文へ上書きしない。",
+      "sources": [
+        {
+          "id": "kanagawa-new-grand-design-2024-2027",
+          "role": "current_plan",
+          "title": "新かながわグランドデザイン 実施計画",
+          "url": "https://www.pref.kanagawa.jp/docs/r5k/nkg.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "2040年基本構想を実現する2024年度から2027年度の実施計画。"
+        },
+        {
+          "id": "kanagawa-grand-design-indicators-and-kpis",
+          "role": "numeric_target_source",
+          "title": "新かながわグランドデザイン 実施計画 指標・KPI",
+          "url": "https://www.pref.kanagawa.jp/docs/r5k/nkg.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "各プロジェクトの指標とKPIを掲載する実施計画正本。二つの目標区分を混同しない。"
+        },
+        {
+          "id": "kanagawa-grand-design-evaluation-2025",
+          "role": "annual_evaluation",
+          "title": "新かながわグランドデザイン 評価報告書2025",
+          "url": "https://www.pref.kanagawa.jp/docs/r5k/cnt/f4895/hyoukahoukokusho2025.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "各プロジェクトの政策評価、数値目標達成状況、データ集を掲載する最新年次評価入口。"
+        }
+      ]
+    }
+  ]
+}
