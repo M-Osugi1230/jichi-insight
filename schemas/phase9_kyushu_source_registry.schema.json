@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.example/schemas/phase9_kyushu_source_registry.schema.json",
+  "title": "Phase 9 Kyushu numeric-target source registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "batch_id", "updated_at", "prefecture_codes", "records"],
+  "properties": {
+    "id": {"const": "phase9-kyushu-source-registry"},
+    "batch_id": {"const": "kyushu-okinawa"},
+    "updated_at": {"type": "string", "format": "date"},
+    "prefecture_codes": {
+      "type": "array",
+      "prefixItems": [{"const": "41"}, {"const": "42"}, {"const": "43"}, {"const": "44"}, {"const": "45"}, {"const": "46"}],
+      "minItems": 6,
+      "maxItems": 6
+    },
+    "records": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {"$ref": "#/$defs/record"}
+    }
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "role", "title", "url", "availability", "target_version_scope", "checked_at", "note"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+        "role": {"enum": ["current_plan", "numeric_target_source", "annual_monitoring", "annual_evaluation", "evaluation_framework"]},
+        "title": {"type": "string", "minLength": 1},
+        "url": {"anyOf": [{"type": "string", "format": "uri", "pattern": "^https://"}, {"type": "null"}]},
+        "availability": {"enum": ["published", "not_yet_published"]},
+        "target_version_scope": {"enum": ["current_plan", "prior_plan"]},
+        "checked_at": {"type": "string", "format": "date"},
+        "note": {"type": "string", "minLength": 10}
+      },
+      "allOf": [
+        {"if": {"properties": {"availability": {"const": "published"}}}, "then": {"properties": {"url": {"type": "string", "format": "uri"}}}},
+        {"if": {"properties": {"availability": {"const": "not_yet_published"}}}, "then": {"properties": {"url": {"type": "null"}}}}
+      ]
+    },
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["prefecture_code", "name", "current_plan_title", "current_plan_period", "numeric_target_status", "review_status", "target_source_boundary", "sources"],
+      "properties": {
+        "prefecture_code": {"enum": ["41", "42", "43", "44", "45", "46"]},
+        "name": {"enum": ["佐賀県", "長崎県", "熊本県", "大分県", "宮崎県", "鹿児島県"]},
+        "current_plan_title": {"type": "string", "minLength": 1},
+        "current_plan_period": {"type": "string", "minLength": 1},
+        "numeric_target_status": {"const": "indexed"},
+        "review_status": {"const": "source_indexed"},
+        "target_source_boundary": {"type": "string", "minLength": 20},
+        "sources": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"$ref": "#/$defs/source"}}
+      }
+    }
+  }
+}
