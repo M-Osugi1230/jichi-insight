@@ -9,9 +9,9 @@ Phase 7で47都道府県の現行政策計画入口を確認し、Phase 8で9地
 現在の進捗は次のとおりです。
 
 - 主要政策計画の入口: 47/47
-- 数値目標入口 Indexed以上: 34/47
+- 数値目標入口 Indexed以上: 47/47
 - Evidence付きReviewed都道府県: 9/47
-- Phase 9対象県の数値目標入口 Indexed以上: 25/38
+- Phase 9対象県の数値目標入口 Indexed以上: 38/38
 - Phase 9対象県のReviewed数値目標: 0/38
 
 ## Regional batches
@@ -22,10 +22,10 @@ Phase 7で47都道府県の現行政策計画入口を確認し、Phase 8で9地
 | 2 | 関東 | 6 | 6 | 0 |
 | 3 | 中部 | 9 | 9 | 0 |
 | 4 | 近畿 | 5 | 5 | 0 |
-| 5 | 中国 | 4 | 0 | 0 |
-| 6 | 四国 | 3 | 0 | 0 |
-| 7 | 九州・沖縄 | 6 | 0 | 0 |
-|  | Total | 38 | 25 | 0 |
+| 5 | 中国 | 4 | 4 | 0 |
+| 6 | 四国 | 3 | 3 | 0 |
+| 7 | 九州・沖縄 | 6 | 6 | 0 |
+|  | Total | 38 | 38 | 0 |
 
 ## Completed source-index batches
 
@@ -57,6 +57,28 @@ Phase 7で47都道府県の現行政策計画入口を確認し、Phase 8で9地
 - 奈良県: 複数年の標準的総合計画ではなく年度版政策集で現行性を管理。令和8年度政策集と令和6年度重点課題評価を別年度版として保持。
 - 和歌山県: 2025年12月議決・2026年度開始の新総合計画を現行正本とし、旧長期総合計画を現行扱いしない。初回年次評価は未公表。
 
+### 中国4県
+
+- 鳥取県: 2024～2027年度の輝く鳥取創造総合戦略を現行版とし、旧戦略、統合されたSociety5.0推進計画、会議ベースの検証を別レイヤーで保持。
+- 島根県: 2025～2029年度の第2期島根創生計画、施策KPI、年度版KPI資料、総合開発審議会の評価を分離。
+- 岡山県: 2025～2028年度の第4次生き活きプラン、生き活き指標、県民満足度、創生総合戦略KPIを分離。第3次プラン行政評価を現行評価へ付け替えない。
+- 山口県: 2022～2026年度の未来維新プラン、成果指標、重点プロジェクト、県民実感、政策評価を別レイヤーで保持。
+
+### 四国3県
+
+- 徳島県: 2024～2028年度計画の年度改訂版、基本構想、基本計画、93KPI、年度進捗評価を分離。
+- 愛媛県: 2023～2026年度計画の政策分野KGI、施策、事業、年次KGI報告を分離。
+- 高知県: 2024～2027年度戦略の令和8年度版を現行版とし、旧年度版、施策KPI、個別計画指標を別バージョンで保持。
+
+### 九州6県
+
+- 佐賀県: 10年後の将来像、2023～2026年度施策方針、成果指標、年度実施状況、決算成果を分離。
+- 長崎県: 2026～2030年度のみんなの未来図2030と第3期総合戦略、KPI設定根拠、施策評価制度を接続し、旧計画評価は分離。
+- 熊本県: 基本方針と総合戦略、4つの柱、66KPI、年度目安、実績、県民アンケートを別レイヤーで保持。
+- 大分県: 2024～2033年度ビジョン2024と旧プラン2015、政策・施策目標、行政評価を分離。
+- 宮崎県: 長期ビジョン、2023～2026年度アクションプラン、5プログラム、指標の目安値、年度政策評価を分離。
+- 鹿児島県: 長期ビジョンと、数値目標の出典となる個別計画、行政評価制度を分離し、出典計画・期間・単位・母集団を保持。
+
 ## Batch quality gates
 
 各バッチは、次の品質ゲートを順に通過します。
@@ -69,7 +91,7 @@ Phase 7で47都道府県の現行政策計画入口を確認し、Phase 8で9地
 6. 比較可能性メタデータの付与
 7. 公開ページ、静的出力、Production Smoke
 
-東北・関東・中部・近畿の25県は品質ゲート2まで完了しています。次工程は、中国・四国・九州の13県の公式入口を固定するとともに、Source Indexed県の指標本文と値をEvidence付きReviewedデータへ昇格することです。
+全7地域バッチ・38県で品質ゲート2まで完了しました。次工程は、Source Indexed県の指標本文と値を全件抽出し、Evidence付きReviewedデータへ昇格することです。Source IndexedはReviewedや独自の政策達成判定を意味しません。
 
 ## Comparability metadata
 
@@ -98,4 +120,4 @@ Phase 9は次をすべて満たした場合だけ`complete`になります。
 - 比較不能な指標をランキングへ含めないことを機械検証
 - 全国公開ページの静的出力とProduction Smoke成功
 
-実行順の正本は `data/catalog/phase9_execution_queue.json` です。公式入口は `data/catalog/phase9_tohoku_source_registry.json`、`data/catalog/phase9_kanto_source_registry.json`、`data/catalog/phase9_chubu_source_registry.json`、`data/catalog/phase9_kinki_source_registry.json` に保持します。
+実行順の正本は `data/catalog/phase9_execution_queue.json` です。公式入口は `data/catalog/phase9_tohoku_source_registry.json`、`data/catalog/phase9_kanto_source_registry.json`、`data/catalog/phase9_chubu_source_registry.json`、`data/catalog/phase9_kinki_source_registry.json`、`data/catalog/phase9_chugoku_source_registry.json`、`data/catalog/phase9_shikoku_source_registry.json`、`data/catalog/phase9_kyushu_okinawa_source_registry.json` に保持します。
