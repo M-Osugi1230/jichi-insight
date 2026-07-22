@@ -20,7 +20,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: phase9-source-audit-${{ github.ref }}
+  group: phase9-source-audit-${{ github.head_ref || github.ref_name }}
   cancel-in-progress: true
 
 jobs:
