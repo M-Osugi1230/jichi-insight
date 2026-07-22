@@ -1,0 +1,64 @@
+{
+  "id": "phase9-chugoku-source-registry",
+  "batch_id": "chugoku",
+  "updated_at": "2026-07-22",
+  "prefecture_codes": ["31", "32", "33", "35"],
+  "records": [
+    {
+      "prefecture_code": "31",
+      "name": "鳥取県",
+      "current_plan_title": "鳥取県人口減少対策戦略",
+      "current_plan_period": "2025年度～2029年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "5つの基本目標、10の重要業績評価指標、37政策の進捗指標を別階層で保持する。PDCAの外部評価を計画本文の独自達成率へ再計算せず、人口動態の観察指標とも混同しない。",
+      "sources": [
+        {"id":"tottori-population-decline-strategy-2025-2029","role":"current_plan","title":"鳥取県人口減少対策戦略","url":"https://www.pref.tottori.lg.jp/320055.htm","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"2025年度から2029年度の人口減少対策・地方創生の現行戦略。"},
+        {"id":"tottori-strategy-kpi-policy-indicators","role":"numeric_target_source","title":"鳥取県人口減少対策戦略 KPI・政策指標一覧","url":"https://www.pref.tottori.lg.jp/320055.htm","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"5基本目標、10KPI、37政策の指標・目標値を掲載する公式データ入口。"},
+        {"id":"tottori-strategy-pdca-2025","role":"annual_evaluation","title":"令和7年度 鳥取県人口減少対策戦略のPDCA","url":"https://www.pref.tottori.lg.jp/333100.htm","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"37政策と10KPIの進捗を外部評価する年次PDCA入口。公式評価区分を保持する。"}
+      ]
+    },
+    {
+      "prefecture_code": "32",
+      "name": "島根県",
+      "current_plan_title": "第2期島根創生計画",
+      "current_plan_period": "2025年度～2029年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "人口ビジョン、総合戦略、5か年アクションプラン、地域版、数値目標一覧を別レイヤーで保持する。第1期計画の実績・評価を第2期目標へ自動接続せず、現行計画の初回年次評価は未公表とする。",
+      "sources": [
+        {"id":"shimane-creation-plan-phase2-2025-2029","role":"current_plan","title":"第2期島根創生計画","url":"https://www.pref.shimane.lg.jp/admin/seisaku/keikaku/shimanesousei/senryaku2.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"2025年度から2029年度の島根創生計画・地方版総合戦略。"},
+        {"id":"shimane-phase2-target-list-action-plan","role":"numeric_target_source","title":"第2期島根創生計画 数値目標一覧・5か年アクションプラン","url":"https://www.pref.shimane.lg.jp/admin/seisaku/keikaku/shimanesousei/senryaku2.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"現行計画の数値目標、施策、地域版を確認する公式資料入口。"},
+        {"id":"shimane-phase2-first-annual-evaluation","role":"annual_evaluation","title":"第2期島根創生計画 初回年次評価","url":null,"availability":"not_yet_published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"第2期計画の初回年次評価は未公表。第1期計画の評価で代用しない。"}
+      ]
+    },
+    {
+      "prefecture_code": "33",
+      "name": "岡山県",
+      "current_plan_title": "第4次晴れの国おかやま生き活きプラン",
+      "current_plan_period": "2025年度～2028年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "第4次計画の生き活き指標を現行目標とし、令和7年度行政評価に含まれる第3次計画・令和6年度実績を旧バージョンとして保持する。旧評価を第4次計画の初年度実績へ付け替えない。",
+      "sources": [
+        {"id":"okayama-harenokuni-plan-phase4","role":"current_plan","title":"第4次晴れの国おかやま生き活きプラン","url":"https://www.pref.okayama.jp/page/958214.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"2025年度から2028年度の県政最上位計画。"},
+        {"id":"okayama-phase4-ikiiki-indicators","role":"numeric_target_source","title":"第4次晴れの国おかやま生き活きプラン 生き活き指標","url":"https://www.pref.okayama.jp/page/958214.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"第4次計画の政策体系、現状値、目標値を掲載する計画本文入口。"},
+        {"id":"okayama-administrative-evaluation-2025-prior-plan","role":"annual_evaluation","title":"令和7年度行政評価（第3次計画・令和6年度実績）","url":"https://www.pref.okayama.jp/page/1006419.html","availability":"published","target_version_scope":"prior_plan","checked_at":"2026-07-22","note":"第3次計画の最終年度実績に基づく行政評価。第4次計画とは目標版が異なる。"}
+      ]
+    },
+    {
+      "prefecture_code": "35",
+      "name": "山口県",
+      "current_plan_title": "やまぐち未来維新プラン",
+      "current_plan_period": "2022年度～2026年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "3つの維新と重点プロジェクトの成果指標を計画目標として保持し、政策評価、県民実感調査、進捗会議を別の評価単位で扱う。2026年策定中の次期計画を現行計画へ先行昇格しない。",
+      "sources": [
+        {"id":"yamaguchi-future-ishin-plan-2022-2026","role":"current_plan","title":"やまぐち未来維新プラン","url":"https://www.pref.yamaguchi.lg.jp/soshiki/19/185791.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"2022年度から2026年度の県政運営の総合計画。次期計画は策定中。"},
+        {"id":"yamaguchi-ishin-project-outcome-indicators","role":"numeric_target_source","title":"やまぐち未来維新プラン 重点プロジェクト成果指標","url":"https://www.pref.yamaguchi.lg.jp/soshiki/19/185791.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"3つの維新、重点プロジェクト、成果指標、目標値を確認する公式入口。"},
+        {"id":"yamaguchi-policy-evaluation-2025","role":"annual_evaluation","title":"令和7年度 政策評価・未来維新プラン進捗管理","url":"https://www.pref.yamaguchi.lg.jp/soshiki/19/11599.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"政策評価、成果指標進捗、県民実感を確認する年次評価入口。各資料の評価単位を分離する。"}
+      ]
+    }
+  ]
+}
