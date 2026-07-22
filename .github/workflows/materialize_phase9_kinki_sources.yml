@@ -1,38 +1,37 @@
 name: Materialize Phase 9 Kinki Sources
 
 on:
-  push:
+  pull_request:
     branches:
-      - agent/phase9-kinki-source-index
+      - main
     paths:
       - .github/workflows/materialize_phase9_kinki_sources.yml
+      - data/catalog/phase9_kinki_source_registry.json
+      - scripts/apply_phase9_source_registry.py
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   materialize:
+    if: github.head_ref == 'agent/phase9-kinki-source-index'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           ref: agent/phase9-kinki-source-index
-          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Synchronize branch
-        run: git pull --rebase origin agent/phase9-kinki-source-index
       - name: Apply Kinki source registry
         run: |
           python scripts/apply_phase9_source_registry.py \
             data/catalog/phase9_kinki_source_registry.json
-      - name: Commit generated execution state
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add \
-            data/catalog/phase9_execution_queue.json \
+      - name: Upload generated execution state
+        uses: actions/upload-artifact@v4
+        with:
+          name: phase9-kinki-execution-state
+          path: |
+            data/catalog/phase9_execution_queue.json
             data/catalog/phase9_completion.json
-          git commit -m "Advance Phase 9 Kinki execution queue"
-          git push origin HEAD:agent/phase9-kinki-source-index
+          retention-days: 7
