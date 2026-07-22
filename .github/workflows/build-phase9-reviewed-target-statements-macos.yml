@@ -5,6 +5,7 @@ on:
     paths:
       - scripts/audit_phase9_numeric_target_sources.py
       - scripts/build_phase9_reviewed_target_statements.py
+      - scripts/finalize_phase9_publication.py
       - data/catalog/phase9_*_source_registry.json
       - schemas/phase9_*.schema.json
       - pyproject.toml
@@ -15,6 +16,7 @@ on:
     paths:
       - scripts/audit_phase9_numeric_target_sources.py
       - scripts/build_phase9_reviewed_target_statements.py
+      - scripts/finalize_phase9_publication.py
       - data/catalog/phase9_*_source_registry.json
       - schemas/phase9_*.schema.json
       - pyproject.toml
@@ -45,6 +47,8 @@ jobs:
         run: |
           set -o pipefail
           python scripts/build_phase9_reviewed_target_statements.py 2>&1 | tee phase9-builder-macos.log
+      - name: Finalize nationwide canonical registries
+        run: python scripts/finalize_phase9_publication.py
       - name: Upload diagnostics
         if: always()
         uses: actions/upload-artifact@v4
@@ -65,6 +69,10 @@ jobs:
             data/catalog/phase9_plan_history.json
             data/catalog/phase9_execution_queue.json
             data/catalog/phase9_completion.json
+            data/catalog/prefecture_coverage.json
+            data/catalog/published_prefecture_pages.json
+            data/catalog/nationwide_source_inventory.json
+            data/catalog/phase7_completion.json
           retention-days: 14
       - name: Validate generated JSON
         run: python scripts/validate_repository.py
@@ -79,7 +87,11 @@ jobs:
             data/catalog/phase9_review_summary.json \
             data/catalog/phase9_plan_history.json \
             data/catalog/phase9_execution_queue.json \
-            data/catalog/phase9_completion.json
+            data/catalog/phase9_completion.json \
+            data/catalog/prefecture_coverage.json \
+            data/catalog/published_prefecture_pages.json \
+            data/catalog/nationwide_source_inventory.json \
+            data/catalog/phase7_completion.json
           if git diff --cached --quiet; then
             echo "No generated changes"
           else
