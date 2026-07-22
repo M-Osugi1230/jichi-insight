@@ -1,0 +1,20 @@
+name: Audit Phase 9 numeric-target sources
+
+on:
+  pull_request:
+  push:
+    branches:
+      - agent/phase9-full-review
+
+permissions:
+  contents: read
+
+concurrency:
+  group: phase9-source-audit-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  supersede:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Legacy standalone audit superseded by the Phase 9 reviewed target builder."
