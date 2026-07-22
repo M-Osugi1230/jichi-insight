@@ -1,0 +1,134 @@
+{
+  "id": "phase9-chubu-source-registry",
+  "batch_id": "chubu",
+  "updated_at": "2026-07-22",
+  "prefecture_codes": ["15", "16", "17", "18", "19", "20", "21", "22", "24"],
+  "records": [
+    {
+      "prefecture_code": "15",
+      "name": "新潟県",
+      "current_plan_title": "新潟県総合計画",
+      "current_plan_period": "2025年度～2032年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "2025年度開始の新計画を現行正本とし、2018～2024年度前計画の最終評価を旧バージョンとして保持する。成果指標の県民満足度調査は一部指標の年次モニタリングであり、計画全体の総括評価へ読み替えない。",
+      "sources": [
+        {"id":"niigata-comprehensive-plan-2025-2032","role":"current_plan","title":"新潟県総合計画","url":"https://www.pref.niigata.lg.jp/sec/seisaku/1356915122382.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"2025年度から2032年度の県政最上位計画。前計画の最終評価と分離する。"},
+        {"id":"niigata-current-plan-outcome-indicators","role":"numeric_target_source","title":"新潟県総合計画 本文・主要成果指標","url":"https://www.pref.niigata.lg.jp/sec/seisaku/1356915122382.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"現行計画本文に掲げる達成目標・主要成果指標の公式入口。"},
+        {"id":"niigata-outcome-satisfaction-monitoring-2025","role":"annual_monitoring","title":"令和7年度 新潟県総合計画成果指標に関する県民満足度調査","url":"https://www.pref.niigata.lg.jp/sec/seisaku/sougoukeikaku-seikashihyo-chousakekka-r7.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"意識・満足度系成果指標の状況把握資料。計画全指標の年次評価とは区別する。"}
+      ]
+    },
+    {
+      "prefecture_code": "16",
+      "name": "富山県",
+      "current_plan_title": "富山県総合計画－幸せ人口1000万～ウェルビーイング先進地域、富山～を目指して",
+      "current_plan_period": "2025年度～2029年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "2025年12月決定の新総合計画を現行正本とし、旧元気とやま創造計画の100政策評価を現行計画へ自動継承しない。新計画の12政策分野とウェルビーイング指標を分離し、初回政策評価は未公表として扱う。",
+      "sources": [
+        {"id":"toyama-comprehensive-plan-2025-2029","role":"current_plan","title":"富山県総合計画－幸せ人口1000万～ウェルビーイング先進地域、富山～を目指して","url":"https://www.pref.toyama.jp/101731/kensei/kenseiunei/keikaku/071224.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"2025年度から2029年度の新総合計画。12政策分野で主要施策を展開する。"},
+        {"id":"toyama-current-plan-policy-indicators","role":"numeric_target_source","title":"富山県総合計画 本文・政策指標","url":"https://www.pref.toyama.jp/101741/kensei/kenseiunei/soshiki/19/100224.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"新総合計画とウェルビーイング・総合計画推進の公式入口。政策指標と主観指標を混同しない。"},
+        {"id":"toyama-current-plan-first-policy-evaluation","role":"annual_evaluation","title":"富山県総合計画2025-2029 初回政策評価","url":null,"availability":"not_yet_published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"新計画決定後の初回政策評価は未公表。旧計画の令和7年度政策評価で代用しない。"}
+      ]
+    },
+    {
+      "prefecture_code": "17",
+      "name": "石川県",
+      "current_plan_title": "石川県成長戦略",
+      "current_plan_period": "2023年度～2032年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "14主要目標と160KPIを別階層で保持し、令和6年能登半島地震後の創造的復興プランを成長戦略の目標本文へ上書きしない。年度実施状況の前進・後退等は公式評価区分として保存する。",
+      "sources": [
+        {"id":"ishikawa-growth-strategy-2023-2032","role":"current_plan","title":"石川県成長戦略","url":"https://www.pref.ishikawa.lg.jp/kikaku/keikaku/seichosenryaku.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"2023年度から2032年度の県政最上位計画。創造的復興プランとは別レイヤー。"},
+        {"id":"ishikawa-growth-strategy-major-goals-kpis","role":"numeric_target_source","title":"石川県成長戦略 主要目標とKPI","url":"https://www.pref.ishikawa.lg.jp/kikaku/keikaku/seichosenryaku.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"14主要目標と160KPIの公式資料入口。二つの指標階層を分離する。"},
+        {"id":"ishikawa-growth-strategy-results-2024","role":"annual_evaluation","title":"石川県成長戦略 令和6年度実施状況","url":"https://www.pref.ishikawa.lg.jp/kikaku/keikaku/seichosenryaku.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"主要目標・KPIの令和6年度実施状況を掲載する公式年次入口。"}
+      ]
+    },
+    {
+      "prefecture_code": "18",
+      "name": "福井県",
+      "current_plan_title": "福井県長期ビジョン（2025年3月改定版）",
+      "current_plan_period": "2025年度～2029年度（実行プラン・地域プラン）",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "2040年将来構想と2025～2029年度実行・地域プランを別階層で保持する。毎年度の実践目標は政策・年度実績を示す運用資料であり、改定版ビジョンの目標本文を上書きしない。",
+      "sources": [
+        {"id":"fukui-long-term-vision-2025-revision","role":"current_plan","title":"福井県長期ビジョン（2025年3月改定版）","url":"https://www.pref.fukui.lg.jp/doc/seiki/vision2019/top.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"2040年将来構想と2025～2029年度実行プラン・地域プランの公式入口。"},
+        {"id":"fukui-revised-execution-plan-targets-2025-2029","role":"numeric_target_source","title":"福井県長期ビジョン 改定実行プラン・地域プラン","url":"https://www.pref.fukui.lg.jp/doc/seiki/vision2024_sakutei.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"2025年3月改定後の5年間の政策・施策・目標を確認する正本入口。"},
+        {"id":"fukui-challenge-2025-results","role":"annual_evaluation","title":"未来をつくる実践目標 チャレンジ2025（年度実績）","url":"https://www.pref.fukui.lg.jp/doc/seiki/syuyouseisaku/syuyouseisaku.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"長期ビジョン体系で整理した令和7年度主要政策の年度実績。計画目標とは別レイヤー。"}
+      ]
+    },
+    {
+      "prefecture_code": "19",
+      "name": "山梨県",
+      "current_plan_title": "山梨県総合計画 2023年策定版",
+      "current_plan_period": "2023年度～2026年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "5戦略のアクションプランに掲げる目標と、総合計画実施状況報告、施策・事務事業評価、部局別成果を別の評価単位で保持する。行政評価の事業評価を計画指標の独自達成率へ置換しない。",
+      "sources": [
+        {"id":"yamanashi-comprehensive-plan-2023-2026","role":"current_plan","title":"山梨県総合計画 2023年策定版","url":"https://www.pref.yamanashi.jp/seisaku/sogokeikaku/shin-sougoukeikaku.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"2023年度から2026年度の県政基本方針と5戦略のアクションプラン。"},
+        {"id":"yamanashi-action-plan-targets-2023-2026","role":"numeric_target_source","title":"山梨県総合計画2023 アクションプラン・目標","url":"https://www.pref.yamanashi.jp/seisaku/sogokeikaku/shin-sougoukeikaku.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"5戦略の施策・目指す姿・目標を掲載する計画本文の公式入口。"},
+        {"id":"yamanashi-plan-implementation-report-2024","role":"annual_evaluation","title":"主要施策成果説明書・総合計画実施状況報告書（令和6年度）","url":"https://www.pref.yamanashi.jp/seisaku/shuyousesakuseika.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"前年度決算の主要施策成果と総合計画実施状況を戦略別に報告する年次入口。"}
+      ]
+    },
+    {
+      "prefecture_code": "20",
+      "name": "長野県",
+      "current_plan_title": "しあわせ信州創造プラン3.0",
+      "current_plan_period": "2023年度～2027年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "主要目標、達成目標、新時代創造プロジェクト、地域計画の指標を別階層で保持する。政策評価のA～D区分と判定なしを公式評価として保存し、未判明値を未達や0へ変換しない。",
+      "sources": [
+        {"id":"nagano-happy-shinshu-plan-3","role":"current_plan","title":"しあわせ信州創造プラン3.0","url":"https://www.pref.nagano.lg.jp/kikaku/kensei/soshiki/shingikai/ichiran/sogokeikaku/plan3/keikaku_kouhyou_20230324.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"2023年度から2027年度の長野県総合5か年計画。"},
+        {"id":"nagano-plan3-target-indicators","role":"numeric_target_source","title":"しあわせ信州創造プラン3.0 主要目標・達成目標","url":"https://www.pref.nagano.lg.jp/kikaku/kensei/soshiki/shingikai/ichiran/sogokeikaku/plan3/keikaku_kouhyou_20230324.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"計画全体の主要目標、施策達成目標、プロジェクト・地域計画指標の公式入口。"},
+        {"id":"nagano-plan3-policy-evaluation-2025","role":"annual_evaluation","title":"令和7年度しあわせ信州創造プラン3.0政策評価","url":"https://www.pref.nagano.lg.jp/seisaku-hyoka/hyouka/r07hyoka.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"令和6年度取組実績による政策評価。A～Dと判定なしを区別する。"}
+      ]
+    },
+    {
+      "prefecture_code": "21",
+      "name": "岐阜県",
+      "current_plan_title": "「清流の国ぎふ」創生総合戦略（2023～2027年度）",
+      "current_plan_period": "2023年度～2027年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "2026年3月改訂施策編を現行目標版として扱い、2019～2023年度旧戦略を現行計画へ混入させない。基本目標・KPIと地方創生交付金事業の効果検証を別の評価単位で保持する。",
+      "sources": [
+        {"id":"gifu-creation-strategy-2023-2027","role":"current_plan","title":"「清流の国ぎふ」創生総合戦略（2023～2027年度）","url":"https://www.pref.gifu.lg.jp/page/174830.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"2023年度から2027年度の県政・地方創生戦略。"},
+        {"id":"gifu-strategy-policy-targets-2026-revision","role":"numeric_target_source","title":"創生総合戦略 施策編（2026年3月改訂版）","url":"https://www.pref.gifu.lg.jp/page/174830.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"2026年3月改訂後の施策・基本目標・KPIを確認する現行目標版。"},
+        {"id":"gifu-creation-strategy-implementation-status","role":"annual_evaluation","title":"「清流の国ぎふ」創生総合戦略 実施状況","url":"https://www.pref.gifu.lg.jp/page/174830.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"現行戦略の実施状況を年度別に掲載する公式評価入口。"}
+      ]
+    },
+    {
+      "prefecture_code": "22",
+      "name": "静岡県",
+      "current_plan_title": "静岡県総合計画～しずおか ウェルビーイングプラン～",
+      "current_plan_period": "2025年度～2028年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "2025～2028年度の新計画を現行正本とし、2022～2025年度後期アクションプランを過去計画として保持する。旧白書の進捗評価を新計画へ自動接続せず、現行計画の初回年次評価は未公表とする。",
+      "sources": [
+        {"id":"shizuoka-wellbeing-plan-2025-2028","role":"current_plan","title":"静岡県総合計画～しずおか ウェルビーイングプラン～","url":"https://www.pref.shizuoka.jp/kensei/keikaku/sogokeikaku/1054440.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"2025年度から2028年度の県政最上位計画。旧新ビジョン後期計画と分離する。"},
+        {"id":"shizuoka-wellbeing-plan-indicators","role":"numeric_target_source","title":"しずおか ウェルビーイングプラン 行動計画・成果指標","url":"https://www.pref.shizuoka.jp/kensei/keikaku/sogokeikaku/1054440.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"新総合計画の施策展開、行動計画、成果指標を確認する公式入口。"},
+        {"id":"shizuoka-wellbeing-plan-first-evaluation","role":"annual_evaluation","title":"しずおか ウェルビーイングプラン 初回年次評価","url":null,"availability":"not_yet_published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"新計画の初回年次評価は未公表。旧ふじのくにづくり白書で代用しない。"}
+      ]
+    },
+    {
+      "prefecture_code": "24",
+      "name": "三重県",
+      "current_plan_title": "みえ元気プラン",
+      "current_plan_period": "2022年度～2026年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "長期構想と中期戦略計画を分離し、政策・施策KPI、行政運営KPI、7つの挑戦、地方創生交付金KPIを別レイヤーで保持する。県政レポートの総合評価とKPI達成状況を計画本文へ上書きしない。",
+      "sources": [
+        {"id":"mie-genki-plan-2022-2026","role":"current_plan","title":"みえ元気プラン","url":"https://www.pref.mie.lg.jp/VISION/","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"長期ビジョンを具体化する2022年度から2026年度の中期戦略計画。"},
+        {"id":"mie-genki-plan-policy-kpis","role":"numeric_target_source","title":"みえ元気プラン 政策・施策・行政運営KPI","url":"https://www.pref.mie.lg.jp/VISION/","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"7つの挑戦、政策・施策、行政運営の目標・KPIを掲載する計画正本。"},
+        {"id":"mie-prefectural-report-2026","role":"annual_evaluation","title":"令和8年版県政レポート","url":"https://www.pref.mie.lg.jp/ZAISEI/HP/m0036300340.htm","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"令和7年度実績、施策・行政運営の総合評価、KPI達成状況を掲載する最新年次評価。"}
+      ]
+    }
+  ]
+}
