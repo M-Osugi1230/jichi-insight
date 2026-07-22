@@ -1,0 +1,38 @@
+name: Materialize Phase 9 Chubu Sources
+
+on:
+  push:
+    branches:
+      - agent/phase9-chubu-source-index
+    paths:
+      - .github/workflows/materialize_phase9_chubu_sources.yml
+
+permissions:
+  contents: write
+
+jobs:
+  materialize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/phase9-chubu-source-index
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Synchronize branch
+        run: git pull --rebase origin agent/phase9-chubu-source-index
+      - name: Apply Chubu source registry
+        run: |
+          python scripts/apply_phase9_source_registry.py \
+            data/catalog/phase9_chubu_source_registry.json
+      - name: Commit generated execution state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            data/catalog/phase9_execution_queue.json \
+            data/catalog/phase9_completion.json
+          git commit -m "Advance Phase 9 Chubu execution queue"
+          git push origin HEAD:agent/phase9-chubu-source-index
