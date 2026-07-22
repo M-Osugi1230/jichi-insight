@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Audit Phase 9 official numeric-target sources and discover extractable target rows.
+"""Resolve and audit Phase 9 official numeric-target sources.
 
-This script is intentionally conservative. It does not publish Reviewed records. It resolves
-landing pages to official documents, extracts machine-readable text/table rows, and records
-candidate counts and source hashes so the full review builder can use an auditable inventory.
+PDF text is extracted from every page, while expensive table recognition is limited to pages
+that contain target-related vocabulary or have no extractable text. The module also provides the
+shared source-resolution and extraction primitives used by the Reviewed catalog builder.
 """
 
 from __future__ import annotations
@@ -59,6 +59,9 @@ LINK_KEYWORDS = (
     "資料",
     "本編",
     "概要",
+    "別冊",
+    "付属",
+    "附属",
 )
 DOCUMENT_SUFFIXES = (".pdf", ".xlsx", ".xlsm", ".docx")
 NUMBER_RE = re.compile(r"(?<![A-Za-z])[▲△▽▼＋+－-]?[0-9０-９][0-9０-９,，.．％%]*")
@@ -92,27 +95,20 @@ def load_json(path: Path) -> Any:
 
 def write_json(path: Path, value: object) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(
-        json.dumps(value, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
+    path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
 def source_registry_paths(root: Path) -> list[Path]:
-    paths = sorted((root / "data/catalog").glob("phase9_*_source_registry.json"))
-    return [path for path in paths if "remaining" not in path.name]
+    return sorted((root / "data/catalog").glob("phase9_*_source_registry.json"))
 
 
 def official_phase9_records(root: Path) -> list[dict[str, Any]]:
     records: list[dict[str, Any]] = []
     for path in source_registry_paths(root):
         registry = load_json(path)
-        batch_id = registry["batch_id"]
         for record in registry["records"]:
             target_sources = [
-                source
-                for source in record["sources"]
-                if source["role"] == "numeric_target_source"
+                source for source in record["sources"] if source["role"] == "numeric_target_source"
             ]
             if len(target_sources) != 1:
                 raise ValueError(
@@ -120,7 +116,7 @@ def official_phase9_records(root: Path) -> list[dict[str, Any]]:
                 )
             records.append(
                 {
-                    "batch_id": batch_id,
+                    "batch_id": registry["batch_id"],
                     "prefecture_code": record["prefecture_code"],
                     "name": record["name"],
                     "current_plan_title": record["current_plan_title"],
@@ -137,7 +133,7 @@ def official_phase9_records(root: Path) -> list[dict[str, Any]]:
 
 
 def request(session: requests.Session, url: str) -> requests.Response:
-    response = session.get(url, timeout=(15, 60), allow_redirects=True)
+    response = session.get(url, timeout=(12, 45), allow_redirects=True)
     response.raise_for_status()
     return response
 
@@ -147,24 +143,21 @@ def normalized_content_type(response: requests.Response) -> str:
 
 
 def is_document_url(url: str) -> bool:
-    path = urlparse(url).path.lower()
-    return any(path.endswith(suffix) for suffix in DOCUMENT_SUFFIXES)
+    return urlparse(url).path.lower().endswith(DOCUMENT_SUFFIXES)
 
 
 def link_score(text: str, href: str, same_host: bool) -> int:
     combined = f"{text} {href}".lower()
-    score = 0
-    if same_host:
-        score += 2
+    score = 2 if same_host else 0
     if is_document_url(href):
-        score += 6
+        score += 8
     for keyword in LINK_KEYWORDS:
         if keyword.lower() in combined:
             score += 2
-    if "様式" in combined or "募集" in combined or "予算" in combined:
+    if any(token in combined for token in ("様式", "募集", "予算", "会議録", "議事録")):
+        score -= 3
+    if any(token in combined for token in ("過去", "旧計画", "バックナンバー")):
         score -= 2
-    if "過去" in combined or "旧" in combined:
-        score -= 1
     return score
 
 
@@ -175,7 +168,7 @@ def resolve_documents(
 ) -> tuple[list[ResolvedDocument], dict[str, Any]]:
     response = request(session, source_url)
     content_type = normalized_content_type(response)
-    audit = {
+    audit: dict[str, Any] = {
         "landing_final_url": response.url,
         "landing_status_code": response.status_code,
         "landing_content_type": content_type,
@@ -195,24 +188,28 @@ def resolve_documents(
         href = urljoin(response.url, anchor.get("href", "").strip())
         if not href.startswith("http"):
             continue
-        parsed = urlparse(href)
         text = clean(anchor.get_text(" ", strip=True))
-        score = link_score(text, href, parsed.netloc == base_host)
+        score = link_score(text, href, urlparse(href).netloc == base_host)
         if score < 5:
             continue
-        previous = candidates.get(href)
         candidate = ResolvedDocument(href, text or source_title, "", score)
+        previous = candidates.get(href)
         if previous is None or candidate.score > previous.score:
             candidates[href] = candidate
 
     ranked = sorted(candidates.values(), key=lambda item: (-item.score, item.url))
-    document_candidates = [item for item in ranked if is_document_url(item.url)]
-    selected = document_candidates[:8]
+    direct_documents = [item for item in ranked if is_document_url(item.url)]
+    selected = direct_documents[:6] or ranked[:4]
     if not selected:
         selected = [ResolvedDocument(response.url, source_title, content_type, 1)]
     audit["discovered_link_count"] = len(candidates)
     audit["selected_document_count"] = len(selected)
     return selected, audit
+
+
+def target_context(text: str) -> bool:
+    lowered = text.lower()
+    return any(keyword.lower() in lowered for keyword in TARGET_KEYWORDS)
 
 
 def pdf_rows(content: bytes) -> tuple[list[dict[str, Any]], int]:
@@ -221,33 +218,35 @@ def pdf_rows(content: bytes) -> tuple[list[dict[str, Any]], int]:
         page_count = len(pdf.pages)
         for page_number, page in enumerate(pdf.pages, 1):
             text = page.extract_text(x_tolerance=2, y_tolerance=3) or ""
-            for line_number, raw_line in enumerate(text.splitlines(), 1):
-                line = clean(raw_line)
-                if line:
-                    rows.append(
-                        {
-                            "location_kind": "pdf_text_line",
-                            "page": page_number,
-                            "row": line_number,
-                            "text": line,
-                        }
-                    )
+            lines = [clean(raw_line) for raw_line in text.splitlines()]
+            lines = [line for line in lines if line]
+            for line_number, line in enumerate(lines, 1):
+                rows.append(
+                    {
+                        "location_kind": "pdf_text_line",
+                        "page": page_number,
+                        "row": line_number,
+                        "text": line,
+                    }
+                )
+            should_extract_tables = not lines or any(target_context(line) for line in lines)
+            if not should_extract_tables:
+                continue
             for table_number, table in enumerate(page.extract_tables(), 1):
                 for row_number, raw_row in enumerate(table or [], 1):
                     cells = [clean(cell) for cell in (raw_row or [])]
                     cells = [cell for cell in cells if cell]
-                    if not cells:
-                        continue
-                    rows.append(
-                        {
-                            "location_kind": "pdf_table_row",
-                            "page": page_number,
-                            "table": table_number,
-                            "row": row_number,
-                            "text": " | ".join(cells),
-                            "cells": cells,
-                        }
-                    )
+                    if cells:
+                        rows.append(
+                            {
+                                "location_kind": "pdf_table_row",
+                                "page": page_number,
+                                "table": table_number,
+                                "row": row_number,
+                                "text": " | ".join(cells),
+                                "cells": cells,
+                            }
+                        )
     return rows, page_count
 
 
@@ -285,13 +284,7 @@ def docx_rows(content: bytes) -> tuple[list[dict[str, Any]], int]:
     for row_number, paragraph in enumerate(document.paragraphs, 1):
         text = clean(paragraph.text)
         if text:
-            rows.append(
-                {
-                    "location_kind": "docx_paragraph",
-                    "row": row_number,
-                    "text": text,
-                }
-            )
+            rows.append({"location_kind": "docx_paragraph", "row": row_number, "text": text})
     for table_number, table in enumerate(document.tables, 1):
         for row_number, row in enumerate(table.rows, 1):
             cells = [clean(cell.text) for cell in row.cells]
@@ -314,7 +307,8 @@ def html_rows(content: bytes, url: str) -> tuple[list[dict[str, Any]], int]:
     for element in soup(["script", "style", "noscript", "svg"]):
         element.decompose()
     rows: list[dict[str, Any]] = []
-    for table_number, table in enumerate(soup.find_all("table"), 1):
+    tables = soup.find_all("table")
+    for table_number, table in enumerate(tables, 1):
         for row_number, tr in enumerate(table.find_all("tr"), 1):
             cells = [clean(cell.get_text(" ", strip=True)) for cell in tr.find_all(["th", "td"])]
             cells = [cell for cell in cells if cell]
@@ -340,7 +334,7 @@ def html_rows(content: bytes, url: str) -> tuple[list[dict[str, Any]], int]:
                     "url": url,
                 }
             )
-    return rows, len(soup.find_all("table"))
+    return rows, len(tables)
 
 
 def extract_rows(content: bytes, content_type: str, url: str) -> tuple[list[dict[str, Any]], int]:
@@ -354,94 +348,37 @@ def extract_rows(content: bytes, content_type: str, url: str) -> tuple[list[dict
     return html_rows(content, url)
 
 
-def candidate_score(text: str, row: dict[str, Any]) -> tuple[int, list[str], int, int]:
-    keywords = [keyword for keyword in TARGET_KEYWORDS if keyword.lower() in text.lower()]
-    numbers = NUMBER_RE.findall(text)
-    years = YEAR_RE.findall(text)
-    score = len(keywords) * 3 + min(len(numbers), 5) + min(len(years), 2) * 2
-    if row["location_kind"].endswith("table_row"):
-        score += 2
-    if "目次" in text or "索引" in text:
-        score -= 5
-    if len(text) > 600:
-        score -= 2
-    return score, keywords, len(numbers), len(years)
-
-
 def candidate_rows(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
     candidates: list[dict[str, Any]] = []
     seen: set[str] = set()
     for row in rows:
         text = clean(row.get("text"))
-        if len(text) < 6 or len(text) > 1200:
+        if len(text) < 6 or len(text) > 1200 or not NUMBER_RE.search(text):
             continue
-        score, keywords, number_count, year_count = candidate_score(text, row)
-        has_target_keyword = bool(keywords)
-        qualifies = (
-            (has_target_keyword and number_count >= 1)
-            or (row["location_kind"].endswith("table_row") and number_count >= 2 and year_count >= 1)
-        )
-        if not qualifies or score < 5:
+        keywords = [keyword for keyword in TARGET_KEYWORDS if keyword.lower() in text.lower()]
+        if not keywords and not row["location_kind"].endswith("table_row"):
             continue
         normalized = re.sub(r"[\s|]+", "", text).lower()
         if normalized in seen:
             continue
         seen.add(normalized)
-        candidate = {
-            key: value
-            for key, value in row.items()
-            if key in {"location_kind", "page", "sheet", "table", "row", "text", "cells"}
-        }
-        candidate.update(
+        candidates.append(
             {
-                "score": score,
+                **{
+                    key: value
+                    for key, value in row.items()
+                    if key in {"location_kind", "page", "sheet", "table", "row", "text"}
+                },
                 "matched_keywords": keywords,
-                "number_count": number_count,
-                "year_count": year_count,
+                "numeric_token_count": len(NUMBER_RE.findall(text)),
             }
         )
-        candidates.append(candidate)
-    candidates.sort(
-        key=lambda item: (
-            -item["score"],
-            item.get("page", 0),
-            str(item.get("sheet", "")),
-            item.get("row", 0),
-        )
-    )
     return candidates[:2000]
 
 
-def audit_document(
-    session: requests.Session,
-    document: ResolvedDocument,
-) -> dict[str, Any]:
-    response = request(session, document.url)
-    content_type = normalized_content_type(response) or document.content_type
-    rows, structural_count = extract_rows(response.content, content_type, response.url)
-    candidates = candidate_rows(rows)
-    return {
-        "requested_url": document.url,
-        "final_url": response.url,
-        "title": document.title,
-        "link_score": document.score,
-        "status_code": response.status_code,
-        "content_type": content_type,
-        "size_bytes": len(response.content),
-        "sha256": sha256_bytes(response.content),
-        "structural_count": structural_count,
-        "extracted_row_count": len(rows),
-        "candidate_count": len(candidates),
-        "candidate_sample": candidates[:20],
-    }
-
-
-def audit_prefecture(
-    session: requests.Session,
-    record: dict[str, Any],
-) -> dict[str, Any]:
+def audit_prefecture(session: requests.Session, record: dict[str, Any]) -> dict[str, Any]:
     source = record["target_source"]
-    result = {
+    result: dict[str, Any] = {
         **{key: value for key, value in record.items() if key != "target_source"},
         "target_source": source,
         "resolution_status": "pending",
@@ -454,56 +391,59 @@ def audit_prefecture(
         result["landing_audit"] = landing_audit
         for document in documents:
             try:
-                document_audit = audit_document(session, document)
-                result["documents"].append(document_audit)
-                result["candidate_count"] += document_audit["candidate_count"]
-            except Exception as exc:  # noqa: BLE001 - audit must preserve per-document failures
-                result["errors"].append(
+                response = request(session, document.url)
+                content_type = normalized_content_type(response) or document.content_type
+                rows, structural_count = extract_rows(response.content, content_type, response.url)
+                candidates = candidate_rows(rows)
+                result["documents"].append(
                     {
-                        "scope": "document",
-                        "url": document.url,
-                        "error": f"{type(exc).__name__}: {exc}",
+                        "url": response.url,
+                        "title": document.title,
+                        "content_type": content_type,
+                        "sha256": sha256_bytes(response.content),
+                        "structural_count": structural_count,
+                        "row_count": len(rows),
+                        "candidate_count": len(candidates),
+                        "candidate_sample": candidates[:12],
                     }
+                )
+                result["candidate_count"] += len(candidates)
+            except Exception as exc:  # noqa: BLE001
+                result["errors"].append(
+                    {"url": document.url, "error": f"{type(exc).__name__}: {exc}"}
                 )
         result["resolution_status"] = (
             "resolved_with_candidates"
-            if result["candidate_count"] > 0
+            if result["candidate_count"]
             else "resolved_without_candidates"
         )
-    except Exception as exc:  # noqa: BLE001 - audit must continue across prefectures
+    except Exception as exc:  # noqa: BLE001
         result["resolution_status"] = "failed"
-        result["errors"].append(
-            {"scope": "landing", "url": source["url"], "error": f"{type(exc).__name__}: {exc}"}
-        )
+        result["errors"].append({"url": source["url"], "error": f"{type(exc).__name__}: {exc}"})
     return result
 
 
 def build(root: Path, output: Path) -> None:
     session = requests.Session()
-    session.headers.update(
-        {
-            "User-Agent": USER_AGENT,
-            "Accept-Language": "ja,en-US;q=0.8,en;q=0.5",
-        }
-    )
-    records = official_phase9_records(root)
-    audited = [audit_prefecture(session, record) for record in records]
+    session.headers.update({"User-Agent": USER_AGENT, "Accept-Language": "ja,en;q=0.6"})
+    audited = [audit_prefecture(session, record) for record in official_phase9_records(root)]
     status_counts: dict[str, int] = {}
     for record in audited:
-        status = record["resolution_status"]
-        status_counts[status] = status_counts.get(status, 0) + 1
-    document_count = sum(len(record["documents"]) for record in audited)
-    candidate_count = sum(record["candidate_count"] for record in audited)
-    value = {
-        "id": "phase9-numeric-target-source-audit",
-        "updated_at": UPDATED_AT,
-        "prefecture_count": len(audited),
-        "document_count": document_count,
-        "candidate_count": candidate_count,
-        "status_counts": status_counts,
-        "records": audited,
-    }
-    write_json(output, value)
+        status_counts[record["resolution_status"]] = status_counts.get(
+            record["resolution_status"], 0
+        ) + 1
+    write_json(
+        output,
+        {
+            "id": "phase9-numeric-target-source-audit",
+            "updated_at": UPDATED_AT,
+            "prefecture_count": len(audited),
+            "document_count": sum(len(record["documents"]) for record in audited),
+            "candidate_count": sum(record["candidate_count"] for record in audited),
+            "status_counts": status_counts,
+            "records": audited,
+        },
+    )
 
 
 def main() -> None:
