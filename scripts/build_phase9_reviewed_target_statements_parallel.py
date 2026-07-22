@@ -30,9 +30,15 @@ from build_phase9_reviewed_target_statements import (
 ROOT = Path(__file__).resolve().parents[1]
 OVERRIDE_PATH = ROOT / "data/catalog/phase9_review_source_overrides.json"
 MAX_PREFECTURE_ATTEMPTS = 5
+SLOW_PREFECTURE_CODES = {"41"}
+BROWSER_USER_AGENT = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/138.0.0.0 Safari/537.36"
+)
 
 
-def session() -> requests.Session:
+def session(prefecture: dict[str, Any]) -> requests.Session:
     value = requests.Session()
     retries = Retry(
         total=5,
@@ -47,13 +53,21 @@ def session() -> requests.Session:
     adapter = HTTPAdapter(max_retries=retries, pool_connections=4, pool_maxsize=4)
     value.mount("https://", adapter)
     value.mount("http://", adapter)
-    value.headers.update(
-        {
-            "User-Agent": USER_AGENT,
-            "Accept-Language": "ja,en-US;q=0.8,en;q=0.5",
-            "Connection": "close",
-        }
-    )
+    headers = {
+        "User-Agent": USER_AGENT,
+        "Accept-Language": "ja,en-US;q=0.8,en;q=0.5",
+        "Connection": "close",
+    }
+    if prefecture["prefecture_code"] == "41":
+        headers.update(
+            {
+                "User-Agent": BROWSER_USER_AGENT,
+                "Referer": "https://www.pref.saga.lg.jp/kiji003117409/index.html",
+                "Accept": "application/pdf,text/html,application/xhtml+xml;q=0.9,*/*;q=0.8",
+                "Cache-Control": "no-cache",
+            }
+        )
+    value.headers.update(headers)
     return value
 
 
@@ -79,26 +93,39 @@ def apply_source_overrides(
             value["target_source"]["title"] = override["title"]
             value["target_source"]["url"] = override["url"]
             value["review_source_override_reason"] = override["reason"]
+            value["review_source_fallbacks"] = override.get("fallback_sources", [])
         applied.append(value)
     if set(overrides) - {item["prefecture_code"] for item in applied}:
         raise ValueError("Phase 9 review-source override references an unknown prefecture")
     return applied
 
 
-def review_one(prefecture: dict[str, Any]):
+def source_variants(prefecture: dict[str, Any]) -> list[dict[str, Any]]:
+    variants = [prefecture]
+    for fallback in prefecture.get("review_source_fallbacks", []):
+        value = copy.deepcopy(prefecture)
+        value["target_source"]["title"] = fallback["title"]
+        value["target_source"]["url"] = fallback["url"]
+        value["review_source_override_reason"] = fallback["reason"]
+        value["using_review_source_fallback"] = True
+        variants.append(value)
+    return variants
+
+
+def extract_variant(prefecture: dict[str, Any], attempts: int):
     last_error: requests.RequestException | None = None
-    for attempt in range(1, MAX_PREFECTURE_ATTEMPTS + 1):
+    for attempt in range(1, attempts + 1):
         try:
-            with session() as client:
-                return prefecture, extract_prefecture(client, prefecture)
+            with session(prefecture) as client:
+                return extract_prefecture(client, prefecture)
         except requests.RequestException as exc:
             last_error = exc
-            if attempt == MAX_PREFECTURE_ATTEMPTS:
+            if attempt == attempts:
                 break
             delay_seconds = min(2 ** attempt, 20)
             print(
                 f"RETRY {prefecture['prefecture_code']} {prefecture['name']} "
-                f"after {type(exc).__name__} ({attempt}/{MAX_PREFECTURE_ATTEMPTS}); "
+                f"after {type(exc).__name__} ({attempt}/{attempts}); "
                 f"sleeping {delay_seconds}s",
                 flush=True,
             )
@@ -107,35 +134,101 @@ def review_one(prefecture: dict[str, Any]):
     raise last_error
 
 
+def review_one(prefecture: dict[str, Any]):
+    variants = source_variants(prefecture)
+    last_error: Exception | None = None
+    for index, variant in enumerate(variants):
+        attempts = 3 if index == 0 and variant["prefecture_code"] == "41" else MAX_PREFECTURE_ATTEMPTS
+        try:
+            result = extract_variant(variant, attempts)
+            if index > 0:
+                print(
+                    f"FALLBACK USED {variant['prefecture_code']} {variant['name']}: "
+                    f"{variant['target_source']['title']}",
+                    flush=True,
+                )
+            return variant, result
+        except (requests.RequestException, ValueError) as exc:
+            last_error = exc
+            if index + 1 < len(variants):
+                print(
+                    f"FALLBACK {variant['prefecture_code']} {variant['name']} after "
+                    f"{type(exc).__name__}: trying the next official current-plan source",
+                    flush=True,
+                )
+                time.sleep(5)
+                continue
+            raise
+    assert last_error is not None
+    raise last_error
+
+
+def record_result(
+    generated: dict[str, tuple[dict[str, Any], dict[str, Any], dict[str, Any]]],
+    failures: list[dict[str, str]],
+    prefecture: dict[str, Any],
+    result_future,
+) -> None:
+    code = prefecture["prefecture_code"]
+    try:
+        _, result = result_future.result() if hasattr(result_future, "result") else result_future
+    except Exception as exc:  # noqa: BLE001 - preserve all prefecture diagnostics
+        error = "".join(traceback.format_exception_only(type(exc), exc)).strip()
+        failures.append(
+            {
+                "prefecture_code": code,
+                "name": prefecture["name"],
+                "error": error,
+            }
+        )
+        print(f"FAILED {code} {prefecture['name']}: {error}", flush=True)
+        return
+    generated[code] = result
+    print(
+        f"Reviewed {code} {prefecture['name']}: "
+        f"{result[2]['reviewed_target_statement_count']} statements",
+        flush=True,
+    )
+
+
 def build(root: Path, workers: int) -> None:
     prefectures = apply_source_overrides(official_phase9_records(root), root)
     generated: dict[str, tuple[dict[str, Any], dict[str, Any], dict[str, Any]]] = {}
     failures: list[dict[str, str]] = []
 
+    slow_prefectures = [
+        item for item in prefectures if item["prefecture_code"] in SLOW_PREFECTURE_CODES
+    ]
+    parallel_prefectures = [
+        item for item in prefectures if item["prefecture_code"] not in SLOW_PREFECTURE_CODES
+    ]
+
+    for prefecture in slow_prefectures:
+        try:
+            result = review_one(prefecture)
+        except Exception as exc:  # noqa: BLE001 - preserve diagnostics
+            class FailedResult:
+                def result(self):
+                    raise exc
+
+            record_result(generated, failures, prefecture, FailedResult())
+        else:
+            record_result(generated, failures, prefecture, result)
+
+    if failures:
+        details = "\n".join(
+            f"- {item['prefecture_code']} {item['name']}: {item['error']}"
+            for item in failures
+        )
+        raise RuntimeError(f"Phase 9 slow-source review failed:\n{details}")
+
     with ThreadPoolExecutor(max_workers=workers) as executor:
-        futures = {executor.submit(review_one, prefecture): prefecture for prefecture in prefectures}
+        futures = {
+            executor.submit(review_one, prefecture): prefecture
+            for prefecture in parallel_prefectures
+        }
         for future in as_completed(futures):
-            prefecture = futures[future]
-            code = prefecture["prefecture_code"]
-            try:
-                _, result = future.result()
-            except Exception as exc:  # noqa: BLE001 - preserve all prefecture diagnostics
-                error = "".join(traceback.format_exception_only(type(exc), exc)).strip()
-                failures.append(
-                    {
-                        "prefecture_code": code,
-                        "name": prefecture["name"],
-                        "error": error,
-                    }
-                )
-                print(f"FAILED {code} {prefecture['name']}: {error}", flush=True)
-                continue
-            generated[code] = result
-            print(
-                f"Reviewed {code} {prefecture['name']}: "
-                f"{result[2]['reviewed_target_statement_count']} statements",
-                flush=True,
-            )
+            record_result(generated, failures, futures[future], future)
 
     if failures:
         failures.sort(key=lambda item: item["prefecture_code"])
