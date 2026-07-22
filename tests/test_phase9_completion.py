@@ -75,17 +75,17 @@ def test_phase9_counts_are_derived_from_current_registries():
     }
 
 
-def test_phase9_stays_in_progress_until_nationwide_numeric_and_evidence_gates_pass():
+def test_phase9_stays_in_progress_until_nationwide_evidence_gates_pass():
     manifest = load(MANIFEST_PATH)
     gates = {gate["id"]: gate["status"] for gate in manifest["gates"]}
     assert manifest["status"] == "in_progress"
     assert manifest["counts"]["major_policy_plans_indexed"] == 47
-    assert manifest["counts"]["numeric_target_entrances_indexed_or_reviewed"] == 34
+    assert manifest["counts"]["numeric_target_entrances_indexed_or_reviewed"] == 47
     assert manifest["counts"]["evidence_backed_reviewed_prefectures"] == 9
-    assert manifest["counts"]["phase9_prefectures_with_numeric_targets_indexed"] == 25
+    assert manifest["counts"]["phase9_prefectures_with_numeric_targets_indexed"] == 38
     assert manifest["counts"]["phase9_prefectures_with_reviewed_numeric_targets"] == 0
     assert gates["all_major_policy_plans_indexed"] == "passed"
-    assert gates["all_major_numeric_targets_indexed"] == "in_progress"
+    assert gates["all_major_numeric_targets_indexed"] == "passed"
     assert gates["published_numeric_evidence_coverage"] == "in_progress"
     assert gates["incomparable_ranking_exclusion"] == "passed"
     assert not all(status == "passed" for status in gates.values())
