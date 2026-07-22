@@ -11,6 +11,7 @@ SOURCE_REGISTRY_PATHS = [
     ROOT / "data/catalog/phase9_tohoku_source_registry.json",
     ROOT / "data/catalog/phase9_kanto_source_registry.json",
     ROOT / "data/catalog/phase9_chubu_source_registry.json",
+    ROOT / "data/catalog/phase9_kinki_source_registry.json",
 ]
 
 
@@ -53,7 +54,7 @@ def test_regional_batches_cover_every_queue_item_once():
             assert items[code]["region"] == batch["region"]
 
 
-def test_first_three_batches_are_indexed_without_overstating_review():
+def test_first_four_batches_are_indexed_without_overstating_review():
     queue = load(QUEUE_PATH)
     items = {item["prefecture_code"]: item for item in queue["items"]}
     indexed_codes = {
@@ -63,7 +64,7 @@ def test_first_three_batches_are_indexed_without_overstating_review():
     }
 
     assert queue["status"] == "in_progress"
-    assert len(indexed_codes) == 20
+    assert len(indexed_codes) == 25
     assert all(item["policy_plan_status"] == "indexed" for item in queue["items"])
     assert all(
         item["current_plan_status"] == "current_confirmed"
@@ -81,7 +82,7 @@ def test_first_three_batches_are_indexed_without_overstating_review():
     )
 
     remaining_codes = set(items) - indexed_codes
-    assert len(remaining_codes) == 18
+    assert len(remaining_codes) == 13
     assert all(
         items[code]["numeric_target_status"] == "not_indexed"
         for code in remaining_codes
@@ -90,7 +91,7 @@ def test_first_three_batches_are_indexed_without_overstating_review():
     assert sum(
         item["numeric_target_status"] in {"indexed", "reviewed"}
         for item in queue["items"]
-    ) == 20
+    ) == 25
     assert sum(
         item["numeric_target_status"] == "reviewed" for item in queue["items"]
     ) == 0
