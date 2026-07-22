@@ -12,6 +12,8 @@ from pathlib import Path
 from typing import Any
 
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 from audit_phase9_numeric_target_sources import (
     UPDATED_AT,
@@ -30,10 +32,24 @@ OVERRIDE_PATH = ROOT / "data/catalog/phase9_review_source_overrides.json"
 
 def session() -> requests.Session:
     value = requests.Session()
+    retries = Retry(
+        total=5,
+        connect=5,
+        read=5,
+        other=5,
+        backoff_factor=1.5,
+        status_forcelist=(429, 500, 502, 503, 504),
+        allowed_methods=frozenset({"GET"}),
+        raise_on_status=False,
+    )
+    adapter = HTTPAdapter(max_retries=retries, pool_connections=4, pool_maxsize=4)
+    value.mount("https://", adapter)
+    value.mount("http://", adapter)
     value.headers.update(
         {
             "User-Agent": USER_AGENT,
             "Accept-Language": "ja,en-US;q=0.8,en;q=0.5",
+            "Connection": "close",
         }
     )
     return value
