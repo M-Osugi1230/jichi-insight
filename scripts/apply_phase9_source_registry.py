@@ -83,13 +83,24 @@ def apply(root: Path, registry_relative: Path) -> None:
         for path in evidence_additions.get(gate["id"], []):
             if path not in gate["evidence_paths"]:
                 gate["evidence_paths"].append(path)
-    completion["scope_note"] = (
-        "Phase 9 is in progress. All 47 major policy plans are indexed, all nine "
-        "regional anchors have Evidence-backed Reviewed targets, and "
-        f"{phase9_indexed} of the remaining 38 prefectures have official "
-        "numeric-target entrances indexed. Full indicator extraction, review, "
-        "publication and smoke verification remain in progress."
-    )
+        if gate["id"] == "all_major_numeric_targets_indexed":
+            gate["status"] = "passed" if phase9_indexed == 38 else "in_progress"
+    if phase9_indexed == 38:
+        completion["scope_note"] = (
+            "Phase 9 is in progress. All 47 major policy plans and major numeric-"
+            "target entrances are indexed, while all nine regional anchors have "
+            "Evidence-backed Reviewed targets. The remaining Phase 9 work is full "
+            "indicator extraction, Evidence review, history linkage and publication "
+            "for the 38 expansion prefectures."
+        )
+    else:
+        completion["scope_note"] = (
+            "Phase 9 is in progress. All 47 major policy plans are indexed, all nine "
+            "regional anchors have Evidence-backed Reviewed targets, and "
+            f"{phase9_indexed} of the remaining 38 prefectures have official "
+            "numeric-target entrances indexed. Full indicator extraction, review, "
+            "publication and smoke verification remain in progress."
+        )
     write(completion_path, completion)
 
 
