@@ -1,0 +1,213 @@
+{
+  "id": "phase9-kinki-source-registry",
+  "batch_id": "kinki",
+  "updated_at": "2026-07-22",
+  "prefecture_codes": ["25", "26", "28", "29", "30"],
+  "records": [
+    {
+      "prefecture_code": "25",
+      "name": "滋賀県",
+      "current_plan_title": "滋賀県基本構想実施計画（第2期）",
+      "current_plan_period": "2023年度～2026年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "2019～2030年度基本構想と2023～2026年度第2期実施計画を別階層で保持し、2024年7月改訂後の政策目標を現行版とする。次期実施計画は審議中であり、現行計画へ先行昇格させない。",
+      "sources": [
+        {
+          "id": "shiga-basic-concept-implementation-plan-phase2",
+          "role": "current_plan",
+          "title": "滋賀県基本構想実施計画（第2期）",
+          "url": "https://www.pref.shiga.lg.jp/kensei/kenseiunei/kousou/10081.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "2023年度から2026年度の現行実施計画。2024年7月一部改訂版を現行とする。"
+        },
+        {
+          "id": "shiga-phase2-policy-targets-2025-04",
+          "role": "numeric_target_source",
+          "title": "基本構想実施計画（第2期）政策目標・事業（2025年4月時点）",
+          "url": "https://www.pref.shiga.lg.jp/kensei/kenseiunei/kousou/10081.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "政策目標と事業を進行管理に用いる現行目標資料。基本構想の長期指標とは分離する。"
+        },
+        {
+          "id": "shiga-basic-concept-progress-management-2025",
+          "role": "annual_evaluation",
+          "title": "滋賀県基本構想の進行管理・令和7年度実施状況",
+          "url": "https://www.pref.shiga.lg.jp/kensei/kenseiunei/kaikaku/20182.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "基本構想指標と実施計画政策目標の達成状況を取りまとめる公式進行管理入口。"
+        }
+      ]
+    },
+    {
+      "prefecture_code": "26",
+      "name": "京都府",
+      "current_plan_title": "京都府総合計画",
+      "current_plan_period": "2023年度～2026年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "将来構想、基本計画、地域振興計画、広域連携プロジェクトを別階層で保持する。令和6年度実施状況報告書の数値実績と、他計画改定に伴い変更された指標を現行目標本文へ上書きしない。",
+      "sources": [
+        {
+          "id": "kyoto-comprehensive-plan-2023-2026",
+          "role": "current_plan",
+          "title": "京都府総合計画",
+          "url": "https://www.pref.kyoto.jp/shinsougoukeikaku/index.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "令和5年4月から令和9年3月の基本計画・地域振興計画を含む府政運営指針。"
+        },
+        {
+          "id": "kyoto-comprehensive-plan-numeric-targets",
+          "role": "numeric_target_source",
+          "title": "京都府総合計画 詳細版・数値目標",
+          "url": "https://www.pref.kyoto.jp/shinsougoukeikaku/shousai/6.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "基本計画、地域振興計画、広域連携プロジェクトの数値目標を掲載する詳細版入口。"
+        },
+        {
+          "id": "kyoto-comprehensive-plan-results-2024",
+          "role": "annual_evaluation",
+          "title": "令和6年度京都府総合計画 実施状況報告書",
+          "url": "https://www.pref.kyoto.jp/shinsougoukeikaku/zixtusizyoukyou/houkokusyo.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "基本計画・地域振興計画の取組状況、数値目標、変更指標、府民意識をまとめた年次報告。"
+        }
+      ]
+    },
+    {
+      "prefecture_code": "28",
+      "name": "兵庫県",
+      "current_plan_title": "第三期兵庫県地域創生戦略（2025～2029）",
+      "current_plan_period": "2025年度～2029年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "ひょうごビジョン2050の長期的なゆたかさ指標と、第三期地域創生戦略のKPI・戦略推進プロジェクトを別階層で保持する。第二期戦略の最終実施状況報告を第三期目標へ自動接続しない。",
+      "sources": [
+        {
+          "id": "hyogo-third-regional-revitalization-strategy",
+          "role": "current_plan",
+          "title": "第三期兵庫県地域創生戦略（2025～2029）",
+          "url": "https://web.pref.hyogo.lg.jp/kk07/2025chiikisousei/sennryaku.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "ひょうごビジョン2050の実行プログラムとして位置付けられた現行5か年戦略。"
+        },
+        {
+          "id": "hyogo-third-strategy-kpis-action-plan-2026",
+          "role": "numeric_target_source",
+          "title": "第三期地域創生戦略・令和8年度アクションプラン",
+          "url": "https://web.pref.hyogo.lg.jp/kk07/2025chiikisousei/sennryaku.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "8つの方向性の目標、KPI、戦略推進プロジェクトと年度対策を確認する公式入口。"
+        },
+        {
+          "id": "hyogo-third-strategy-action-monitoring-2026",
+          "role": "annual_monitoring",
+          "title": "令和8年度兵庫県地域創生アクション委員会・戦略実施状況",
+          "url": "https://web.pref.hyogo.lg.jp/kk07/2025chiikisousei/action.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "第三期戦略のプロジェクト推進状況を確認する委員会入口。年度終了後の正式実施状況報告とは区別する。"
+        }
+      ]
+    },
+    {
+      "prefecture_code": "29",
+      "name": "奈良県",
+      "current_plan_title": "奈良県政策集＜令和8年度版＞",
+      "current_plan_period": "2026年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "奈良県は年度版政策集を県政運営の現行政策体系として更新する。令和8年度版政策集と、令和6年度重点課題評価を異なる年度版として保持し、旧評価を現行政策集の実績へ付け替えない。",
+      "sources": [
+        {
+          "id": "nara-policy-collection-2026",
+          "role": "current_plan",
+          "title": "奈良県政策集＜令和8年度版＞",
+          "url": "https://www.pref.nara.jp/11868.htm",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "2026年2月公表の年度版政策集。標準的な複数年総合計画ではなく年度版で現行性を管理する。"
+        },
+        {
+          "id": "nara-policy-collection-2026-targets",
+          "role": "numeric_target_source",
+          "title": "奈良県政策集＜令和8年度版＞ 政策目標・重要指標",
+          "url": "https://www.pref.nara.jp/item/134459.htm",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "年度版政策集に掲載される政策・目標・指標の公式入口。年度版間の同名指標は別バージョンとする。"
+        },
+        {
+          "id": "nara-priority-issues-evaluation-2024",
+          "role": "annual_evaluation",
+          "title": "令和6年度 重点課題に関する評価",
+          "url": "https://www.pref.nara.jp/11868.htm",
+          "availability": "published",
+          "target_version_scope": "prior_plan",
+          "checked_at": "2026-07-22",
+          "note": "2025年9月公表の過年度重点課題評価。令和8年度政策集とは対象年度が異なる。"
+        }
+      ]
+    },
+    {
+      "prefecture_code": "30",
+      "name": "和歌山県",
+      "current_plan_title": "和歌山県新総合計画",
+      "current_plan_period": "2026年度～2030年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "2025年12月議決、2026年度開始の新総合計画を現行正本とし、旧長期総合計画を現行扱いしない。長期構想と2026～2030年度アクションプランを別階層で保持し、初年度評価は未公表とする。",
+      "sources": [
+        {
+          "id": "wakayama-new-comprehensive-plan-2026-2030",
+          "role": "current_plan",
+          "title": "和歌山県新総合計画",
+          "url": "https://www.pref.wakayama.lg.jp/prefg/020100/d00217904.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "2040年頃を展望する長期構想と2026～2030年度実施計画を持つ新県政指針。"
+        },
+        {
+          "id": "wakayama-new-plan-action-targets-2026-2030",
+          "role": "numeric_target_source",
+          "title": "和歌山県新総合計画 実施計画（アクションプラン）",
+          "url": "https://www.pref.wakayama.lg.jp/prefg/020100/d00217904.html",
+          "availability": "published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "6つの政策の柱、施策、2026～2030年度の目標を掲載する実行計画入口。"
+        },
+        {
+          "id": "wakayama-new-plan-first-evaluation",
+          "role": "annual_evaluation",
+          "title": "和歌山県新総合計画 初回年次評価",
+          "url": null,
+          "availability": "not_yet_published",
+          "target_version_scope": "current_plan",
+          "checked_at": "2026-07-22",
+          "note": "新総合計画の初年度であり、現行計画に対応する年次評価は未公表。旧計画評価で代用しない。"
+        }
+      ]
+    }
+  ]
+}
