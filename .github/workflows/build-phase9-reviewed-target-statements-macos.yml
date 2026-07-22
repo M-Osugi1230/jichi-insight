@@ -1,6 +1,14 @@
 name: Build Phase 9 reviewed targets macOS
 
 on:
+  pull_request:
+    paths:
+      - scripts/audit_phase9_numeric_target_sources.py
+      - scripts/build_phase9_reviewed_target_statements.py
+      - data/catalog/phase9_*_source_registry.json
+      - schemas/phase9_*.schema.json
+      - pyproject.toml
+      - .github/workflows/build-phase9-reviewed-target-statements-macos.yml
   push:
     branches:
       - agent/phase9-full-review
@@ -16,7 +24,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: phase9-reviewed-target-build-macos
+  group: phase9-reviewed-target-build-macos-${{ github.head_ref || github.ref_name }}
   cancel-in-progress: true
 
 jobs:
@@ -45,9 +53,23 @@ jobs:
           path: phase9-builder-macos.log
           if-no-files-found: ignore
           retention-days: 14
+      - name: Upload generated review data
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: phase9-reviewed-target-statements-macos
+          path: |
+            data/reviewed/phase9
+            data/evidence/phase9
+            data/catalog/phase9_review_summary.json
+            data/catalog/phase9_plan_history.json
+            data/catalog/phase9_execution_queue.json
+            data/catalog/phase9_completion.json
+          retention-days: 14
       - name: Validate generated JSON
         run: python scripts/validate_repository.py
       - name: Commit generated review data
+        if: github.event_name == 'push'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
