@@ -1,12 +1,19 @@
 name: Audit Phase 9 numeric-target sources
 
 on:
+  pull_request:
+    paths:
+      - scripts/audit_phase9_numeric_target_sources.py
+      - data/catalog/phase9_*_source_registry.json
+      - pyproject.toml
+      - .github/workflows/audit-phase9-numeric-target-sources.yml
   push:
     branches:
       - agent/phase9-full-review
     paths:
       - scripts/audit_phase9_numeric_target_sources.py
       - data/catalog/phase9_*_source_registry.json
+      - pyproject.toml
       - .github/workflows/audit-phase9-numeric-target-sources.yml
 
 permissions:
@@ -18,18 +25,22 @@ jobs:
     timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: agent/phase9-full-review
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: pip
       - name: Install extraction dependencies
-        run: |
-          python -m pip install --upgrade pip
-          python -m pip install requests beautifulsoup4 pdfplumber openpyxl python-docx
+        run: python -m pip install -e .
       - name: Audit official numeric-target sources
         run: python scripts/audit_phase9_numeric_target_sources.py
+      - name: Upload audit inventory
+        uses: actions/upload-artifact@v4
+        with:
+          name: phase9-numeric-target-source-audit
+          path: data/extracted/phase9_numeric_target_source_audit.json
+          retention-days: 14
       - name: Commit audit inventory
+        if: github.event_name == 'push'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
