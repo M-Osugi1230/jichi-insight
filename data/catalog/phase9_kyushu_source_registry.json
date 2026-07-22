@@ -1,0 +1,92 @@
+{
+  "id": "phase9-kyushu-source-registry",
+  "batch_id": "kyushu-okinawa",
+  "updated_at": "2026-07-22",
+  "prefecture_codes": ["41", "42", "43", "44", "45", "46"],
+  "records": [
+    {
+      "prefecture_code": "41",
+      "name": "佐賀県",
+      "current_plan_title": "佐賀県施策方針2023",
+      "current_plan_period": "2023年度～2026年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "複数年の施策方針と年度ごとの重点施策・予算、個別事業の行政評価を別レイヤーで保持する。県民意識調査を特定施策の進捗把握に用いても、施策方針全体の独自達成率へ転用しない。",
+      "sources": [
+        {"id":"saga-policy-direction-2023-2026","role":"current_plan","title":"佐賀県施策方針2023","url":"https://www.pref.saga.lg.jp/kiji00396396/index.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"2023年度から2026年度の県政運営の基本方向と重点施策。"},
+        {"id":"saga-policy-direction-targets","role":"numeric_target_source","title":"佐賀県施策方針2023 政策目標・指標","url":"https://www.pref.saga.lg.jp/kiji00396396/index.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"施策ごとの目指す姿、目標、指標を確認する公式資料入口。"},
+        {"id":"saga-administrative-evaluation-current","role":"evaluation_framework","title":"佐賀県行政評価・施策評価","url":"https://www.pref.saga.lg.jp/list01431.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"施策・事務事業の評価制度と公表結果の公式入口。年度施策方針とは評価単位を分離する。"}
+      ]
+    },
+    {
+      "prefecture_code": "42",
+      "name": "長崎県",
+      "current_plan_title": "新しい長崎県総合計画",
+      "current_plan_period": "2026年度～2030年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "2026年度開始の新計画を現行正本とし、2021～2025年度旧計画の最終実績を現行KPIへ自動接続しない。政策体系、KPI一覧、地域別計画を別階層で保持し、初年度年次評価は未公表とする。",
+      "sources": [
+        {"id":"nagasaki-new-comprehensive-plan-2026-2030","role":"current_plan","title":"新しい長崎県総合計画","url":"https://www.pref.nagasaki.jp/bunrui/kenseijoho/kennokeikaku-project/sougoukeikaku/759241.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"2026年度から2030年度の県政最上位計画。"},
+        {"id":"nagasaki-new-plan-kpi-list","role":"numeric_target_source","title":"新しい長崎県総合計画 KPI一覧・詳細版","url":"https://www.pref.nagasaki.jp/bunrui/kenseijoho/kennokeikaku-project/sougoukeikaku/759241.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"基本理念、政策、施策、KPI、地域別計画を掲載する現行目標資料。"},
+        {"id":"nagasaki-new-plan-first-evaluation","role":"annual_evaluation","title":"新しい長崎県総合計画 初回年次評価","url":null,"availability":"not_yet_published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"新計画初年度の年次評価は未公表。旧計画の最終評価で代用しない。"}
+      ]
+    },
+    {
+      "prefecture_code": "43",
+      "name": "熊本県",
+      "current_plan_title": "くまもと新時代共創基本方針・総合戦略",
+      "current_plan_period": "2024年度～2027年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "県政運営の基本方針と、具体施策・KPIを持つ総合戦略を別階層で保持する。総合戦略推進ページの進捗・会議資料を、基本方針の独自達成率や災害復旧計画の評価へ転用しない。",
+      "sources": [
+        {"id":"kumamoto-new-era-co-creation-policy-strategy","role":"current_plan","title":"くまもと新時代共創基本方針及び総合戦略","url":"https://www.pref.kumamoto.jp/soshiki/18/209613.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"2024年12月策定の県政基本方針と地方版総合戦略。"},
+        {"id":"kumamoto-co-creation-strategy-kpis","role":"numeric_target_source","title":"くまもと新時代共創総合戦略 施策・KPI","url":"https://www.pref.kumamoto.jp/soshiki/18/209613.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"具体施策、重要業績評価指標、目標値を掲載する総合戦略資料入口。"},
+        {"id":"kumamoto-co-creation-strategy-promotion","role":"annual_monitoring","title":"くまもと新時代共創総合戦略の推進","url":"https://www.pref.kumamoto.jp/soshiki/18/245862.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"総合戦略の推進状況、会議、検証資料を公表する公式モニタリング入口。"}
+      ]
+    },
+    {
+      "prefecture_code": "44",
+      "name": "大分県",
+      "current_plan_title": "安心・元気・未来創造ビジョン2024",
+      "current_plan_period": "2024年度～2033年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "10年間の長期総合計画と、前期4年間の行動計画・地方版総合戦略を別階層で保持する。推進委員会の意見、県民意識、事業評価を計画本文の独自達成率へ置換しない。",
+      "sources": [
+        {"id":"oita-vision-2024-2033","role":"current_plan","title":"安心・元気・未来創造ビジョン2024","url":"https://www.pref.oita.jp/soshiki/10111/oita-vision2024.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"2024年度から2033年度の大分県長期総合計画。"},
+        {"id":"oita-vision2024-action-targets","role":"numeric_target_source","title":"ビジョン2024 行動計画・目標指標","url":"https://www.pref.oita.jp/site/vision2024/vision2024.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"前期行動計画、施策、目標指標、地方版総合戦略の公式入口。"},
+        {"id":"oita-vision2024-promotion-committee","role":"annual_monitoring","title":"安心・元気・未来創造ビジョン2024推進委員会","url":"https://www.pref.oita.jp/site/vision2024/","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"計画推進、総合戦略、委員意見を確認する公式モニタリング入口。正式年次評価とは区別する。"}
+      ]
+    },
+    {
+      "prefecture_code": "45",
+      "name": "宮崎県",
+      "current_plan_title": "宮崎県総合計画2023 第3期アクションプラン",
+      "current_plan_period": "2023年度～2026年度",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "長期ビジョン、5プログラムのアクションプラン、地域計画、73指標の内部評価、プログラム単位の外部評価を別階層で保持する。県の公式達成区分を再計算しない。",
+      "sources": [
+        {"id":"miyazaki-comprehensive-plan-2023-action3","role":"current_plan","title":"宮崎県総合計画2023 第3期アクションプラン","url":"https://www.pref.miyazaki.lg.jp/sogoseisaku/kense/kekaku/20230614132936.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"2023年度から2026年度の5プログラムを持つ現行アクションプラン。"},
+        {"id":"miyazaki-action3-target-indicators","role":"numeric_target_source","title":"宮崎県総合計画2023 アクションプラン 指標一覧","url":"https://www.pref.miyazaki.lg.jp/sogoseisaku/kense/kekaku/20230614132936.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"5プログラム、施策、73指標、年度目安値を掲載する計画資料入口。"},
+        {"id":"miyazaki-policy-evaluation-2024-results","role":"annual_evaluation","title":"令和6年度取組に係る政策評価の結果","url":"https://www.pref.miyazaki.lg.jp/sogoseisaku/kense/kekaku/20250806174150.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"73指標の内部評価と5プログラムの外部評価を公表する最新政策評価入口。"}
+      ]
+    },
+    {
+      "prefecture_code": "46",
+      "name": "鹿児島県",
+      "current_plan_title": "かごしま未来創造ビジョン〈改訂版〉",
+      "current_plan_period": "2026年改訂・おおむね10年間",
+      "numeric_target_status": "indexed",
+      "review_status": "source_indexed",
+      "target_source_boundary": "2026年改訂版を現行目標版とし、当初版を履歴として保持する。分野別施策・数値目標と個別計画、行政評価を別レイヤーで管理し、改訂後の初回年次評価は未公表とする。",
+      "sources": [
+        {"id":"kagoshima-future-vision-2026-revision","role":"current_plan","title":"かごしま未来創造ビジョン〈改訂版〉","url":"https://www.pref.kagoshima.jp/ac01/kensei/keikaku/vision/documents/new_vision.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"2026年3月公表の改訂版県政ビジョン。当初版とは別バージョンで保持する。"},
+        {"id":"kagoshima-revised-vision-targets","role":"numeric_target_source","title":"かごしま未来創造ビジョン〈改訂版〉 分野別施策・数値目標","url":"https://www.pref.kagoshima.jp/ac01/kensei/keikaku/vision/documents/new_vision.html","availability":"published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"改訂後の目指す姿、政策展開、数値目標を掲載する正本入口。"},
+        {"id":"kagoshima-revised-vision-first-evaluation","role":"annual_evaluation","title":"かごしま未来創造ビジョン〈改訂版〉 初回年次評価","url":null,"availability":"not_yet_published","target_version_scope":"current_plan","checked_at":"2026-07-22","note":"改訂版に対応する初回年次評価は未公表。当初版や個別計画の評価で代用しない。"}
+      ]
+    }
+  ]
+}
