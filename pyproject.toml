@@ -44,3 +44,4 @@ select = ["E", "F", "I", "UP", "B", "SIM"]
 
 [tool.ruff.lint.per-file-ignores]
 "scripts/audit_phase9_numeric_target_sources.py" = ["E501"]
+"scripts/build_phase9_reviewed_target_statements.py" = ["I001"]
