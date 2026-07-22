@@ -4,6 +4,8 @@
 from __future__ import annotations
 
 import argparse
+import copy
+import json
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Any
@@ -22,6 +24,7 @@ from build_phase9_reviewed_target_statements import (
 )
 
 ROOT = Path(__file__).resolve().parents[1]
+OVERRIDE_PATH = ROOT / "data/catalog/phase9_review_source_overrides.json"
 
 
 def session() -> requests.Session:
@@ -35,13 +38,41 @@ def session() -> requests.Session:
     return value
 
 
+def apply_source_overrides(
+    prefectures: list[dict[str, Any]], root: Path
+) -> list[dict[str, Any]]:
+    override_path = root / "data/catalog/phase9_review_source_overrides.json"
+    if not override_path.is_file():
+        return prefectures
+    override_document = json.loads(override_path.read_text(encoding="utf-8"))
+    overrides = {
+        record["prefecture_code"]: record for record in override_document["records"]
+    }
+    applied: list[dict[str, Any]] = []
+    for prefecture in prefectures:
+        value = copy.deepcopy(prefecture)
+        override = overrides.get(value["prefecture_code"])
+        if override is not None:
+            if value["target_source"]["id"] != override["source_id"]:
+                raise ValueError(
+                    f"Override source ID mismatch for {value['prefecture_code']}"
+                )
+            value["target_source"]["title"] = override["title"]
+            value["target_source"]["url"] = override["url"]
+            value["review_source_override_reason"] = override["reason"]
+        applied.append(value)
+    if set(overrides) - {item["prefecture_code"] for item in applied}:
+        raise ValueError("Phase 9 review-source override references an unknown prefecture")
+    return applied
+
+
 def review_one(prefecture: dict[str, Any]):
     with session() as client:
         return prefecture, extract_prefecture(client, prefecture)
 
 
 def build(root: Path, workers: int) -> None:
-    prefectures = official_phase9_records(root)
+    prefectures = apply_source_overrides(official_phase9_records(root), root)
     generated: dict[str, tuple[dict[str, Any], dict[str, Any], dict[str, Any]]] = {}
 
     with ThreadPoolExecutor(max_workers=workers) as executor:
