@@ -1,0 +1,39 @@
+name: Materialize Phase 9 remaining source state
+
+on:
+  push:
+    branches:
+      - agent/phase9-remaining-source-index
+    paths:
+      - data/catalog/phase9_chugoku_source_registry.json
+      - data/catalog/phase9_shikoku_source_registry.json
+      - data/catalog/phase9_kyushu_okinawa_source_registry.json
+      - scripts/apply_phase9_remaining_source_registries.py
+      - .github/workflows/materialize-phase9-remaining-source-index.yml
+
+permissions:
+  contents: write
+
+jobs:
+  materialize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/phase9-remaining-source-index
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Materialize queue and completion state
+        run: python scripts/apply_phase9_remaining_source_registries.py
+      - name: Commit generated state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/catalog/phase9_execution_queue.json data/catalog/phase9_completion.json
+          if git diff --cached --quiet; then
+            echo "No generated changes"
+          else
+            git commit -m "Materialize remaining Phase 9 source state"
+            git push
+          fi
