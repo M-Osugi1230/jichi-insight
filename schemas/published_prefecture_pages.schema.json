@@ -10,13 +10,15 @@
     "updated_at": {"type": "string", "format": "date"},
     "records": {
       "type": "array",
+      "minItems": 9,
+      "maxItems": 47,
       "items": {
         "type": "object",
         "additionalProperties": false,
         "required": ["prefecture_code", "route", "publication_status"],
         "properties": {
           "prefecture_code": {"type": "string", "pattern": "^(0[1-9]|[1-3][0-9]|4[0-7])$"},
-          "route": {"type": "string", "pattern": "^/municipalities/[a-z0-9-]+$"},
+          "route": {"type": "string", "pattern": "^/municipalities/(?:phase9/)?[a-z0-9-]+$"},
           "publication_status": {"const": "published"}
         }
       }
