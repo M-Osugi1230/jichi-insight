@@ -72,7 +72,8 @@ def apply(root: Path, registry_relative: Path) -> None:
         }
     )
     batch_id = registry["batch_id"]
-    test_path = f"tests/test_phase9_{batch_id}_source_registry.py"
+    test_slug = batch_id.replace("-", "_")
+    test_path = f"tests/test_phase9_{test_slug}_source_registry.py"
     evidence_additions = {
         "all_major_numeric_targets_indexed": [str(registry_relative)],
         "published_numeric_evidence_coverage": [str(registry_relative)],
