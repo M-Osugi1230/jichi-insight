@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import copy
 import json
+import time
 import traceback
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
@@ -28,6 +29,7 @@ from build_phase9_reviewed_target_statements import (
 
 ROOT = Path(__file__).resolve().parents[1]
 OVERRIDE_PATH = ROOT / "data/catalog/phase9_review_source_overrides.json"
+MAX_PREFECTURE_ATTEMPTS = 5
 
 
 def session() -> requests.Session:
@@ -84,8 +86,25 @@ def apply_source_overrides(
 
 
 def review_one(prefecture: dict[str, Any]):
-    with session() as client:
-        return prefecture, extract_prefecture(client, prefecture)
+    last_error: requests.RequestException | None = None
+    for attempt in range(1, MAX_PREFECTURE_ATTEMPTS + 1):
+        try:
+            with session() as client:
+                return prefecture, extract_prefecture(client, prefecture)
+        except requests.RequestException as exc:
+            last_error = exc
+            if attempt == MAX_PREFECTURE_ATTEMPTS:
+                break
+            delay_seconds = min(2 ** attempt, 20)
+            print(
+                f"RETRY {prefecture['prefecture_code']} {prefecture['name']} "
+                f"after {type(exc).__name__} ({attempt}/{MAX_PREFECTURE_ATTEMPTS}); "
+                f"sleeping {delay_seconds}s",
+                flush=True,
+            )
+            time.sleep(delay_seconds)
+    assert last_error is not None
+    raise last_error
 
 
 def build(root: Path, workers: int) -> None:
