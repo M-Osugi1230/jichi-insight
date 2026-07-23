@@ -1,4 +1,4 @@
-"""Keep Miyagi measure 16 actuals and totals on the public-data path."""
+"""Keep Miyagi measures 16 and 17 on the public-data path."""
 
 import json
 from pathlib import Path
@@ -8,19 +8,22 @@ LOADER = ROOT / "apps/web/lib/miyagiActuals.ts"
 MANIFEST = ROOT / "data/catalog/miyagi_policy_review_manifest.json"
 
 
-def test_measure16_actuals_and_evidence_are_loaded_for_publication():
+def test_measure16_and_measure17_actuals_remain_loaded_for_publication():
     loader = LOADER.read_text(encoding="utf-8")
-    assert "miyagi_kpi_actuals_measure16_2024.json" in loader
-    assert "miyagi_kpi_actuals_measure16_2024_evidence_packets.json" in loader
-    assert "...measure16Actuals.records" in loader
-    assert "...measure16Evidence" in loader
-    assert "subjectFiscalYear: measure16Actuals.subject_fiscal_year" in loader
+    for measure in (16, 17):
+        assert f"miyagi_kpi_actuals_measure{measure}_2024.json" in loader
+        assert f"miyagi_kpi_actuals_measure{measure}_2024_evidence_packets.json" in loader
+        assert f"...measure{measure}Actuals.records" in loader
+        assert f"...measure{measure}Evidence" in loader
+
+    assert "subjectFiscalYear: measure17Actuals.subject_fiscal_year" in loader
+    assert "evaluationFiscalYear: measure17Actuals.evaluation_fiscal_year" in loader
 
 
-def test_public_miyagi_totals_include_measure16():
+def test_public_miyagi_totals_include_measure17():
     manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
-    assert manifest["actual_linked_target_group_count"] == 87
-    assert manifest["actual_linked_indicator_series_count"] == 100
-    assert manifest["actual_linkage_review_needed_series_count"] == 17
-    assert manifest["actual_result_row_count"] == 468
-    assert manifest["actual_evidence_packet_count"] == 117
+    assert manifest["actual_linked_target_group_count"] == 92
+    assert manifest["actual_linked_indicator_series_count"] == 106
+    assert manifest["actual_linkage_review_needed_series_count"] == 18
+    assert manifest["actual_result_row_count"] == 496
+    assert manifest["actual_evidence_packet_count"] == 124
