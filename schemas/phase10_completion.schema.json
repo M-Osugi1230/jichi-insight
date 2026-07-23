@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.example/schemas/phase10_completion.schema.json",
+  "title": "Phase 10 completion manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "phase",
+    "status",
+    "scope_version",
+    "counts",
+    "gates",
+    "scope_note",
+    "updated_at"
+  ],
+  "properties": {
+    "id": {
+      "const": "phase10-vertical-linkage-completion"
+    },
+    "phase": {
+      "const": 10
+    },
+    "status": {
+      "enum": [
+        "in_progress",
+        "verification_pending",
+        "complete"
+      ]
+    },
+    "scope_version": {
+      "type": "string",
+      "format": "date"
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "total_prefectures",
+        "wave1_prefectures",
+        "target_statements_reviewed",
+        "annual_evaluation_linked",
+        "annual_evaluation_indexed",
+        "budget_reviewed",
+        "project_evaluation_indexed_or_better",
+        "contracts_indexed_or_better",
+        "published_phase10_pages"
+      ],
+      "properties": {
+        "total_prefectures": {
+          "const": 47
+        },
+        "wave1_prefectures": {
+          "const": 9
+        },
+        "target_statements_reviewed": {
+          "const": 47
+        },
+        "annual_evaluation_linked": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 47
+        },
+        "annual_evaluation_indexed": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 47
+        },
+        "budget_reviewed": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 47
+        },
+        "project_evaluation_indexed_or_better": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 47
+        },
+        "contracts_indexed_or_better": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 47
+        },
+        "published_phase10_pages": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "gates": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "status",
+          "evidence_paths"
+        ],
+        "properties": {
+          "id": {
+            "enum": [
+              "phase9_handoff_verified",
+              "nationwide_vertical_source_inventory",
+              "wave1_annual_actuals_linkage",
+              "wave1_money_and_project_spine",
+              "contracts_and_accountability_linkage",
+              "phase10_publication_and_smoke"
+            ]
+          },
+          "status": {
+            "enum": [
+              "pending",
+              "in_progress",
+              "passed"
+            ]
+          },
+          "evidence_paths": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 3
+            }
+          }
+        }
+      }
+    },
+    "scope_note": {
+      "type": "string",
+      "minLength": 100
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}
