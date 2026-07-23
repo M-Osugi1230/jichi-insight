@@ -24,7 +24,9 @@ def write_json(path: Path, value: object) -> None:
 
 def replace_once(text: str, old: str, new: str, label: str) -> str:
     if text.count(old) != 1:
-        raise ValueError(f"Expected one {label} replacement, found {text.count(old)}")
+        raise ValueError(
+            f"Expected one {label} replacement, found {text.count(old)}"
+        )
     return text.replace(old, new)
 
 
@@ -87,11 +89,21 @@ def update_manifest() -> None:
     )
     manifest["open_questions"] = [
         "Complete the seventeen open definition and scope reviews.",
-        "Keep the measure 16 wild-boar and sika-deer capture-count series separate from the current estimated-population series unless an official definition bridge is verified.",
-        "Locate complete four-year annual-result counterparts for current series that remain unmatched or only partially represented.",
+        (
+            "Keep the measure 16 wild-boar and sika-deer capture-count series "
+            "separate from the current estimated-population series unless an "
+            "official definition bridge is verified."
+        ),
+        (
+            "Locate complete four-year annual-result counterparts for current "
+            "series that remain unmatched or only partially represented."
+        ),
         "Connect the final FY2025 results source to the remaining 49 indicator series.",
         "Review measure 17 against the final FY2025 results source next.",
-        "Keep official achievement rates tied to the evaluation document's R6 targets, not the current plan's R9 targets.",
+        (
+            "Keep official achievement rates tied to the evaluation document's "
+            "R6 targets, not the current plan's R9 targets."
+        ),
         "Keep the FY2026 draft separate from any future final version.",
     ]
     write_json(path, manifest)
@@ -100,7 +112,9 @@ def update_manifest() -> None:
 def update_wave1_queue() -> None:
     path = ROOT / "data/catalog/wave1_policy_review_queue.json"
     queue = load(path)
-    miyagi = next(item for item in queue["items"] if item["prefecture_code"] == "04")
+    miyagi = next(
+        item for item in queue["items"] if item["prefecture_code"] == "04"
+    )
     miyagi["next_action"] = (
         "KPI本文128目標・149系列は全件Reviewed済み。100系列を年度評価へ直接接続し、"
         "17系列を定義・範囲の要確認として分離した。残る49系列の年度実績接続を継続する。"
@@ -112,30 +126,66 @@ def update_wave1_queue() -> None:
 def update_web_loader() -> None:
     path = ROOT / "apps/web/lib/miyagiActuals.ts"
     text = path.read_text(encoding="utf-8")
+
+    measure15_import = (
+        'import measure15Actuals from "../../../data/entities/policy/'
+        'miyagi_kpi_actuals_measure15_2024.json";\n'
+    )
+    measure16_imports = (
+        measure15_import
+        + 'import measure16Evidence from "../../../data/entities/policy/'
+        'miyagi_kpi_actuals_measure16_2024_evidence_packets.json";\n'
+        + 'import measure16Actuals from "../../../data/entities/policy/'
+        'miyagi_kpi_actuals_measure16_2024.json";\n'
+    )
     text = replace_once(
         text,
-        'import measure15Actuals from "../../../data/entities/policy/miyagi_kpi_actuals_measure15_2024.json";\n',
-        'import measure15Actuals from "../../../data/entities/policy/miyagi_kpi_actuals_measure15_2024.json";\n'
-        'import measure16Evidence from "../../../data/entities/policy/miyagi_kpi_actuals_measure16_2024_evidence_packets.json";\n'
-        'import measure16Actuals from "../../../data/entities/policy/miyagi_kpi_actuals_measure16_2024.json";\n',
+        measure15_import,
+        measure16_imports,
         "measure16 imports",
     )
+
+    old_actual_spread = (
+        "  ...measure15Actuals.records,\n"
+        "] as MiyagiKpiActualLink[];"
+    )
+    new_actual_spread = (
+        "  ...measure15Actuals.records,\n"
+        "  ...measure16Actuals.records,\n"
+        "] as MiyagiKpiActualLink[];"
+    )
     text = replace_once(
         text,
-        "  ...measure15Actuals.records,\n] as MiyagiKpiActualLink[];",
-        "  ...measure15Actuals.records,\n  ...measure16Actuals.records,\n] as MiyagiKpiActualLink[];",
+        old_actual_spread,
+        new_actual_spread,
         "measure16 actual spread",
     )
-    text = replace_once(
-        text,
-        "  ...measure15Evidence,\n];",
-        "  ...measure15Evidence,\n  ...measure16Evidence,\n];",
-        "measure16 evidence spread",
+
+    old_evidence_spread = "  ...measure15Evidence,\n];"
+    new_evidence_spread = (
+        "  ...measure15Evidence,\n"
+        "  ...measure16Evidence,\n"
+        "];"
     )
     text = replace_once(
         text,
-        "  subjectFiscalYear: measure15Actuals.subject_fiscal_year,\n  evaluationFiscalYear: measure15Actuals.evaluation_fiscal_year,",
-        "  subjectFiscalYear: measure16Actuals.subject_fiscal_year,\n  evaluationFiscalYear: measure16Actuals.evaluation_fiscal_year,",
+        old_evidence_spread,
+        new_evidence_spread,
+        "measure16 evidence spread",
+    )
+
+    old_fiscal_source = (
+        "  subjectFiscalYear: measure15Actuals.subject_fiscal_year,\n"
+        "  evaluationFiscalYear: measure15Actuals.evaluation_fiscal_year,"
+    )
+    new_fiscal_source = (
+        "  subjectFiscalYear: measure16Actuals.subject_fiscal_year,\n"
+        "  evaluationFiscalYear: measure16Actuals.evaluation_fiscal_year,"
+    )
+    text = replace_once(
+        text,
+        old_fiscal_source,
+        new_fiscal_source,
         "latest fiscal-year source",
     )
     path.write_text(text, encoding="utf-8")
@@ -144,23 +194,46 @@ def update_web_loader() -> None:
 def update_tests() -> None:
     totals_path = ROOT / "tests/test_miyagi_catalog_totals.py"
     totals = totals_path.read_text(encoding="utf-8")
-    replacements = {
-        'manifest["actual_linked_target_group_count"] == 82': 'manifest["actual_linked_target_group_count"] == 87',
-        'manifest["actual_linked_indicator_series_count"] == 95': 'manifest["actual_linked_indicator_series_count"] == 100',
-        'manifest["actual_linkage_review_needed_series_count"] == 15': 'manifest["actual_linkage_review_needed_series_count"] == 17',
-        'manifest["actual_result_row_count"] == 440': 'manifest["actual_result_row_count"] == 468',
-        'manifest["actual_evidence_packet_count"] == 110': 'manifest["actual_evidence_packet_count"] == 117',
-    }
-    for old, new in replacements.items():
+    replacements = [
+        (
+            'manifest["actual_linked_target_group_count"] == 82',
+            'manifest["actual_linked_target_group_count"] == 87',
+        ),
+        (
+            'manifest["actual_linked_indicator_series_count"] == 95',
+            'manifest["actual_linked_indicator_series_count"] == 100',
+        ),
+        (
+            'manifest["actual_linkage_review_needed_series_count"] == 15',
+            'manifest["actual_linkage_review_needed_series_count"] == 17',
+        ),
+        (
+            'manifest["actual_result_row_count"] == 440',
+            'manifest["actual_result_row_count"] == 468',
+        ),
+        (
+            'manifest["actual_evidence_packet_count"] == 110',
+            'manifest["actual_evidence_packet_count"] == 117',
+        ),
+    ]
+    for old, new in replacements:
         totals = replace_once(totals, old, new, old)
     totals_path.write_text(totals, encoding="utf-8")
 
     queue_path = ROOT / "tests/test_wave1_policy_review_queue.py"
     queue_test = queue_path.read_text(encoding="utf-8")
+    old_queue_assertion = (
+        'assert all(token in items["04"]["next_action"] for token in '
+        '["128", "149", "95", "15", "54"])'
+    )
+    new_queue_assertion = (
+        'assert all(token in items["04"]["next_action"] for token in '
+        '["128", "149", "100", "17", "49"])'
+    )
     queue_test = replace_once(
         queue_test,
-        'assert all(token in items["04"]["next_action"] for token in ["128", "149", "95", "15", "54"])',
-        'assert all(token in items["04"]["next_action"] for token in ["128", "149", "100", "17", "49"])',
+        old_queue_assertion,
+        new_queue_assertion,
         "Miyagi queue totals",
     )
     queue_path.write_text(queue_test, encoding="utf-8")
