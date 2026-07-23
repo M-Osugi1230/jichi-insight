@@ -56,7 +56,7 @@
           "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
           "size_bytes": {"type": "integer", "minimum": 1},
           "structural_count": {"type": "integer", "minimum": 0},
-          "extracted_row_count": {"type": "integer", "minimum": 1},
+          "extracted_row_count": {"type": "integer", "minimum": 0},
           "reviewed_row_count": {"type": "integer", "minimum": 0}
         }
       }
