@@ -1,6 +1,9 @@
 name: Materialize Phase 10 Wave 1 source state
 
 on:
+  pull_request:
+    paths:
+      - .github/workflows/materialize-phase10-wave1-source-state.yml
   push:
     branches:
       - agent/phase10-miyagi-fukuoka-source-inventory
