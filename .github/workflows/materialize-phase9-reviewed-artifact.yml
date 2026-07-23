@@ -66,23 +66,39 @@ jobs:
             phase9-materialize-pytest.log
           if-no-files-found: ignore
           retention-days: 14
-      - name: Commit reviewed data
+      - name: Commit reviewed data from latest branch
         run: |
           set -euo pipefail
+          generated_paths=(
+            data/reviewed/phase9
+            data/evidence/phase9
+            data/catalog/phase9_review_summary.json
+            data/catalog/phase9_plan_history.json
+            data/catalog/phase9_execution_queue.json
+            data/catalog/phase9_completion.json
+            data/catalog/prefecture_coverage.json
+            data/catalog/published_prefecture_pages.json
+            data/catalog/nationwide_source_inventory.json
+            data/catalog/phase7_completion.json
+          )
+          tar -czf /tmp/phase9-reviewed-data.tgz "${generated_paths[@]}"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/reviewed/phase9 data/evidence/phase9 data/catalog
-          if git diff --cached --quiet; then
-            echo "Artifact data is already materialized"
-            exit 0
-          fi
-          git commit -m "Materialize Phase 9 reviewed target statements"
+
           for attempt in 1 2 3; do
             git fetch origin "$BRANCH"
-            git rebase "origin/$BRANCH"
+            git reset --hard "origin/$BRANCH"
+            tar -xzf /tmp/phase9-reviewed-data.tgz
+            git add "${generated_paths[@]}"
+            if git diff --cached --quiet; then
+              echo "Artifact data is already materialized"
+              exit 0
+            fi
+            git commit -m "Materialize Phase 9 reviewed target statements"
             if git push origin "HEAD:$BRANCH"; then
               exit 0
             fi
+            echo "Materialization push attempt $attempt failed; retrying from latest branch"
             sleep $((attempt * 5))
           done
           exit 1
