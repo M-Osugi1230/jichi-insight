@@ -18,12 +18,18 @@ def test_phase10_public_page_and_loader_exist():
         "9地域拠点の接続状態。",
         "政策評価は未判定",
         "宮城県：年度実績の次に、予算・事業・契約をつなぐ。",
+        "公式資料入口",
+        "事業・契約 入口確認",
     ):
         assert required in page
 
     assert "phase10_execution_queue.json" in loader
+    assert "phase10_wave1_source_inventory.json" in loader
+    assert "loadPhase10SourceInventory" in loader
+    assert "phase10SourcesByPrefecture" in loader
     assert "phase10DepthLabel" in loader
     assert ".prefectureGrid" in css
+    assert ".sourceList" in css
 
 
 def test_phase10_is_linked_from_phase9_and_sitemap():
