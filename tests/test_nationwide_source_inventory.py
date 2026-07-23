@@ -82,8 +82,8 @@ def test_source_depth_is_conservative_and_evidence_backed():
         "implementation_plan": "reviewed",
         "kpi_source": "reviewed",
         "annual_evaluation": "linked",
-        "budget": "not_indexed",
-        "project_evaluation": "not_indexed",
+        "budget": "indexed",
+        "project_evaluation": "indexed",
     }
     assert records["40"]["sources"] == {
         "policy_plan": "reviewed",
@@ -91,7 +91,7 @@ def test_source_depth_is_conservative_and_evidence_backed():
         "kpi_source": "reviewed",
         "annual_evaluation": "indexed",
         "budget": "reviewed",
-        "project_evaluation": "not_indexed",
+        "project_evaluation": "indexed",
     }
 
     assert all(
@@ -113,8 +113,8 @@ def test_source_depth_is_conservative_and_evidence_backed():
 def test_no_prefecture_is_mistakenly_marked_complete():
     inventory = load(INVENTORY_PATH)
     assert inventory["summary"]["project_evaluation"] == {
-        "not_indexed": 47,
-        "indexed": 0,
+        "not_indexed": 45,
+        "indexed": 2,
         "reviewed": 0,
         "linked": 0,
     }
