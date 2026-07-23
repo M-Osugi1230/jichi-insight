@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Materialize Miyagi measure 16 annual-actual linkage into canonical state."""
+"""Materialize Miyagi measure 16 actuals without bridging changed definitions."""
 
 from __future__ import annotations
 
