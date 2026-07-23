@@ -35,6 +35,9 @@ jobs:
       - name: Apply measure 17 canonical state
         run: python scripts/apply_miyagi_measure17_actuals.py
 
+      - name: Format measure 17 materializer
+        run: ruff format scripts/apply_miyagi_measure17_actuals.py
+
       - name: Validate repository state
         run: python scripts/validate_repository.py
 
@@ -97,6 +100,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add \
+            scripts/apply_miyagi_measure17_actuals.py \
             data/entities/policy/miyagi_kpi_catalog_measure17.json \
             data/catalog/miyagi_policy_review_manifest.json \
             data/catalog/wave1_policy_review_queue.json \
