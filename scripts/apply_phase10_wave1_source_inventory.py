@@ -154,13 +154,17 @@ def update_nationwide_inventory(root: Path) -> None:
     )
 
     inventory["summary"] = {
-        category: {
-            status: sum(
-                record["sources"][category] == status for record in inventory["records"]
-            )
-            for status in inventory["status_order"]
-        }
-        for category in inventory["categories"]
+        "prefecture_count": len(inventory["records"]),
+        **{
+            category: {
+                status: sum(
+                    record["sources"][category] == status
+                    for record in inventory["records"]
+                )
+                for status in inventory["status_order"]
+            }
+            for category in inventory["categories"]
+        },
     }
     inventory["updated_at"] = UPDATED_AT
     write(path, inventory)
