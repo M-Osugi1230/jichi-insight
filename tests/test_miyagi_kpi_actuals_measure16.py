@@ -3,6 +3,7 @@ from pathlib import Path
 
 from jsonschema import Draft202012Validator, FormatChecker
 
+# Measure 16 keeps definition changes explicit instead of forcing continuity.
 ROOT = Path(__file__).resolve().parents[1]
 POLICY = ROOT / "data/entities/policy"
 ACTUALS = POLICY / "miyagi_kpi_actuals_measure16_2024.json"
