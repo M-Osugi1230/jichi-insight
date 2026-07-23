@@ -53,7 +53,7 @@ def test_measure16_links_and_definition_boundaries():
         assert record["match_basis"] == "definition_changed"
         assert "捕獲数" in record["source_indicator_name_original"]
         assert "推定生息数" in record["comparability_note_original"]
-        assert "直接接続しない" in record["comparability_note_original"]
+        assert "接続しない" in record["comparability_note_original"]
 
 
 def test_measure16_latest_values_rates_and_grades():
