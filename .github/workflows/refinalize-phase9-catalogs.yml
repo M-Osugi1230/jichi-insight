@@ -1,10 +1,23 @@
 name: Refinalize Phase 9 catalogs
 
 on:
+  pull_request:
+    paths:
+      - scripts/finalize_phase9_publication.py
+      - tests/test_all_reviewed_data.py
+      - tests/test_nationwide_policy_review_queue.py
+      - tests/test_nationwide_source_inventory.py
+      - tests/test_prefecture_coverage.py
+      - .github/workflows/refinalize-phase9-catalogs.yml
   push:
     branches:
       - agent/phase9-full-review
     paths:
+      - scripts/finalize_phase9_publication.py
+      - tests/test_all_reviewed_data.py
+      - tests/test_nationwide_policy_review_queue.py
+      - tests/test_nationwide_source_inventory.py
+      - tests/test_prefecture_coverage.py
       - .github/workflows/refinalize-phase9-catalogs.yml
 
 permissions:
