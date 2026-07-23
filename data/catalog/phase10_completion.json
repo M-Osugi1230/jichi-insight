@@ -10,8 +10,8 @@
     "annual_evaluation_linked": 1,
     "annual_evaluation_indexed": 1,
     "budget_reviewed": 1,
-    "project_evaluation_indexed_or_better": 0,
-    "contracts_indexed_or_better": 0,
+    "project_evaluation_indexed_or_better": 2,
+    "contracts_indexed_or_better": 2,
     "published_phase10_pages": 1
   },
   "gates": [
@@ -30,7 +30,9 @@
       "evidence_paths": [
         "data/catalog/nationwide_source_inventory.json",
         "data/catalog/phase10_execution_queue.json",
-        "tests/test_phase10_execution_queue.py"
+        "tests/test_phase10_execution_queue.py",
+        "data/catalog/phase10_wave1_source_inventory.json",
+        "tests/test_phase10_wave1_source_inventory.py"
       ]
     },
     {
@@ -38,21 +40,27 @@
       "status": "in_progress",
       "evidence_paths": [
         "data/catalog/phase10_execution_queue.json",
-        "data/catalog/miyagi_policy_review_manifest.json"
+        "data/catalog/miyagi_policy_review_manifest.json",
+        "data/catalog/phase10_wave1_source_inventory.json",
+        "tests/test_phase10_wave1_source_inventory.py"
       ]
     },
     {
       "id": "wave1_money_and_project_spine",
-      "status": "pending",
+      "status": "in_progress",
       "evidence_paths": [
-        "data/catalog/phase10_execution_queue.json"
+        "data/catalog/phase10_execution_queue.json",
+        "data/catalog/phase10_wave1_source_inventory.json",
+        "tests/test_phase10_wave1_source_inventory.py"
       ]
     },
     {
       "id": "contracts_and_accountability_linkage",
-      "status": "pending",
+      "status": "in_progress",
       "evidence_paths": [
-        "data/catalog/phase10_execution_queue.json"
+        "data/catalog/phase10_execution_queue.json",
+        "data/catalog/phase10_wave1_source_inventory.json",
+        "tests/test_phase10_wave1_source_inventory.py"
       ]
     },
     {

@@ -1,6 +1,6 @@
 {
   "id": "nationwide-source-inventory",
-  "updated_at": "2026-07-22",
+  "updated_at": "2026-07-23",
   "categories": [
     "policy_plan",
     "implementation_plan",
@@ -59,10 +59,10 @@
         "implementation_plan": "reviewed",
         "kpi_source": "reviewed",
         "annual_evaluation": "linked",
-        "budget": "not_indexed",
-        "project_evaluation": "not_indexed"
+        "budget": "indexed",
+        "project_evaluation": "indexed"
       },
-      "next_action": "政策体系・現行中期実施計画・149系列をReviewed化し、年度実績接続を進行中。予算・重点事業は未索引。"
+      "next_action": "年度実績を接続済み。令和8年度予算、事業評価、入札結果の入口を確認し、政策・施策・事業IDの照合を進める。"
     },
     {
       "prefecture_code": "05",
@@ -492,9 +492,9 @@
         "kpi_source": "reviewed",
         "annual_evaluation": "indexed",
         "budget": "reviewed",
-        "project_evaluation": "not_indexed"
+        "project_evaluation": "indexed"
       },
-      "next_action": "政策数値目標と財政値をReviewed化済み。年度実績、重点事業、事業評価の接続を拡張する。"
+      "next_action": "総合計画実施状況、重点事業評価、Reviewed財政値、入札結果の入口を確認済み。共通事業IDと年度実績の照合を進める。"
     },
     {
       "prefecture_code": "41",
@@ -608,14 +608,14 @@
       "linked": 1
     },
     "budget": {
-      "not_indexed": 46,
-      "indexed": 0,
+      "not_indexed": 45,
+      "indexed": 1,
       "reviewed": 1,
       "linked": 0
     },
     "project_evaluation": {
-      "not_indexed": 47,
-      "indexed": 0,
+      "not_indexed": 45,
+      "indexed": 2,
       "reviewed": 0,
       "linked": 0
     }
