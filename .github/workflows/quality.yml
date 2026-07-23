@@ -35,13 +35,20 @@ jobs:
       - name: Apply measure 16 canonical state
         run: python scripts/apply_miyagi_measure16_actuals.py
 
-      - name: Validate materialized state
+      - name: Validate repository state
+        run: python scripts/validate_repository.py
+
+      - name: Test measure 16 state
+        run: pytest tests/test_miyagi_kpi_actuals_measure16.py
+
+      - name: Test Miyagi aggregate totals
+        run: pytest tests/test_miyagi_catalog_totals.py
+
+      - name: Test Wave 1 queue
+        run: pytest tests/test_wave1_policy_review_queue.py
+
+      - name: Lint changed Python
         run: |
-          python scripts/validate_repository.py
-          pytest \
-            tests/test_miyagi_kpi_actuals_measure16.py \
-            tests/test_miyagi_catalog_totals.py \
-            tests/test_wave1_policy_review_queue.py
           ruff check \
             scripts/apply_miyagi_measure16_actuals.py \
             tests/test_miyagi_kpi_actuals_measure16.py \
