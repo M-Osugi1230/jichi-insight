@@ -71,9 +71,7 @@ jobs:
           set -o pipefail
           {
             set -euo pipefail
-            generated_paths=(
-              data/reviewed/phase9
-              data/evidence/phase9
+            catalog_paths=(
               data/catalog/phase9_review_summary.json
               data/catalog/phase9_plan_history.json
               data/catalog/phase9_execution_queue.json
@@ -83,6 +81,11 @@ jobs:
               data/catalog/nationwide_source_inventory.json
               data/catalog/phase7_completion.json
             )
+            generated_paths=(
+              data/reviewed/phase9
+              data/evidence/phase9
+              "${catalog_paths[@]}"
+            )
             tar -czf /tmp/phase9-reviewed-data.tgz "${generated_paths[@]}"
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -91,7 +94,8 @@ jobs:
               git fetch origin "$BRANCH"
               git reset --hard "origin/$BRANCH"
               tar -xzf /tmp/phase9-reviewed-data.tgz
-              git add "${generated_paths[@]}"
+              git add -f data/reviewed/phase9 data/evidence/phase9
+              git add "${catalog_paths[@]}"
               if git diff --cached --quiet; then
                 echo "Artifact data is already materialized"
                 exit 0
