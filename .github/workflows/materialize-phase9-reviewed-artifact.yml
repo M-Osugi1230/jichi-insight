@@ -1,0 +1,72 @@
+name: Materialize Phase 9 reviewed artifact
+
+on:
+  push:
+    branches:
+      - agent/phase9-full-review
+    paths:
+      - .github/workflows/materialize-phase9-reviewed-artifact.yml
+
+permissions:
+  actions: read
+  contents: write
+
+concurrency:
+  group: phase9-reviewed-artifact-materialization
+  cancel-in-progress: true
+
+jobs:
+  materialize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ARTIFACT_ID: "8529053369"
+      BRANCH: agent/phase9-full-review
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/phase9-full-review
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Download successful reviewed artifact
+        run: |
+          gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts/${ARTIFACT_ID}/zip" > phase9-reviewed.zip
+          mkdir -p phase9-artifact
+          unzip -q phase9-reviewed.zip -d phase9-artifact
+      - name: Copy generated data into canonical paths
+        run: |
+          mkdir -p data/reviewed data/evidence data/catalog
+          rm -rf data/reviewed/phase9 data/evidence/phase9
+          cp -R phase9-artifact/reviewed/phase9 data/reviewed/phase9
+          cp -R phase9-artifact/evidence/phase9 data/evidence/phase9
+          cp phase9-artifact/catalog/*.json data/catalog/
+      - name: Install validation dependencies
+        run: python -m pip install -e .[dev]
+      - name: Validate generated data
+        run: |
+          python scripts/validate_repository.py
+          pytest tests/test_phase9_reviewed_target_statements.py tests/test_phase9_execution_queue.py tests/test_phase9_completion.py tests/test_phase7_completion.py
+      - name: Commit reviewed data
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/reviewed/phase9 data/evidence/phase9 data/catalog
+          if git diff --cached --quiet; then
+            echo "Artifact data is already materialized"
+            exit 0
+          fi
+          git commit -m "Materialize Phase 9 reviewed target statements"
+          for attempt in 1 2 3; do
+            git fetch origin "$BRANCH"
+            git rebase "origin/$BRANCH"
+            if git push origin "HEAD:$BRANCH"; then
+              exit 0
+            fi
+            sleep $((attempt * 5))
+          done
+          exit 1
