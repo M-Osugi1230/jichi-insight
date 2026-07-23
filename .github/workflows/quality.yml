@@ -30,7 +30,7 @@ jobs:
           cache: pip
 
       - name: Install Python validation tools
-        run: python -m pip install -e "[dev]"
+        run: python -m pip install -e ".[dev]"
 
       - name: Apply measure 16 canonical state
         run: python scripts/apply_miyagi_measure16_actuals.py
@@ -83,7 +83,7 @@ jobs:
           cache: pip
 
       - name: Install Python validation tools
-        run: python -m pip install -e "[dev]"
+        run: python -m pip install -e ".[dev]"
 
       - name: Validate repository
         run: |
