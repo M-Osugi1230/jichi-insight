@@ -51,8 +51,19 @@ jobs:
         run: python -m pip install -e .[dev]
       - name: Validate generated data
         run: |
-          python scripts/validate_repository.py
-          pytest tests/test_phase9_reviewed_target_statements.py tests/test_phase9_execution_queue.py tests/test_phase9_completion.py tests/test_phase7_completion.py
+          set -o pipefail
+          python scripts/validate_repository.py 2>&1 | tee phase9-materialize-validation.log
+          pytest tests/test_phase9_reviewed_target_statements.py tests/test_phase9_execution_queue.py tests/test_phase9_completion.py tests/test_phase7_completion.py 2>&1 | tee phase9-materialize-pytest.log
+      - name: Upload validation diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: phase9-materialize-validation-diagnostics
+          path: |
+            phase9-materialize-validation.log
+            phase9-materialize-pytest.log
+          if-no-files-found: ignore
+          retention-days: 14
       - name: Commit reviewed data
         run: |
           set -euo pipefail
