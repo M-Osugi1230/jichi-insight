@@ -1,3 +1,5 @@
+"""Keep Miyagi measure 16 actuals and totals on the public-data path."""
+
 import json
 from pathlib import Path
 
