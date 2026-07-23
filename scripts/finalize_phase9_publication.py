@@ -5,12 +5,17 @@ from __future__ import annotations
 
 import argparse
 import json
+from collections import Counter
 from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 UPDATED_AT = "2026-07-22"
 ALL_CODES = [f"{value:02d}" for value in range(1, 48)]
+PHASE9_NEXT_ACTION = (
+    "主要数値目標とEvidenceをReviewed化済み。"
+    "次に年度実績、重点事業、予算、契約を定義照合して接続する。"
+)
 
 
 def load(path: Path) -> Any:
@@ -22,6 +27,17 @@ def write(path: Path, value: object) -> None:
         json.dumps(value, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
+
+
+def rebuild_inventory_summary(inventory: dict[str, Any]) -> None:
+    statuses = inventory["status_order"]
+    summary: dict[str, Any] = {"prefecture_count": len(inventory["records"])}
+    for category in inventory["categories"]:
+        counts = Counter(
+            record["sources"][category] for record in inventory["records"]
+        )
+        summary[category] = {status: counts[status] for status in statuses}
+    inventory["summary"] = summary
 
 
 def finalize(root: Path) -> None:
@@ -62,18 +78,25 @@ def finalize(root: Path) -> None:
     inventory_path = root / "data/catalog/nationwide_source_inventory.json"
     inventory = load(inventory_path)
     phase9_codes = {record["prefecture_code"] for record in summary["records"]}
+    reviewed_codes = set(coverage["reviewed_prefecture_codes"])
     for record in inventory["records"]:
-        if record["prefecture_code"] not in phase9_codes:
+        code = record["prefecture_code"]
+        if code in reviewed_codes:
+            record["sources"]["policy_plan"] = "reviewed"
+            record["sources"]["kpi_source"] = "reviewed"
+        if code not in phase9_codes:
             continue
-        record["sources"]["policy_plan"] = "reviewed"
-        record["sources"]["kpi_source"] = "reviewed"
-        if record["sources"]["annual_evaluation"] == "not_indexed":
-            record["sources"]["annual_evaluation"] = "indexed"
-        record["next_action"] = (
-            "主要数値目標とEvidenceをReviewed化済み。"
-            "次に年度実績、重点事業、予算、契約を定義照合して接続する。"
-        )
+
+        # Phase 9 reviewed current-plan target statements. It did not review or
+        # link annual results, so never infer annual-evaluation depth from the
+        # existence of a target source. Repair the earlier auto-promotion only
+        # while this Phase 9 next-action boundary is still active.
+        if record["next_action"] == PHASE9_NEXT_ACTION:
+            record["sources"]["annual_evaluation"] = "not_indexed"
+        record["next_action"] = PHASE9_NEXT_ACTION
+
     inventory["updated_at"] = UPDATED_AT
+    rebuild_inventory_summary(inventory)
     write(inventory_path, inventory)
 
     phase7_path = root / "data/catalog/phase7_completion.json"
