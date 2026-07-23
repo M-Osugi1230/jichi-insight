@@ -9,6 +9,7 @@ on:
       - scripts/apply_phase10_wave1_source_inventory.py
       - tests/test_phase10_execution_queue.py
       - tests/test_phase10_wave1_source_inventory.py
+      - tests/test_nationwide_source_inventory.py
   push:
     branches:
       - agent/phase10-miyagi-fukuoka-source-inventory
@@ -19,6 +20,7 @@ on:
       - scripts/apply_phase10_wave1_source_inventory.py
       - tests/test_phase10_execution_queue.py
       - tests/test_phase10_wave1_source_inventory.py
+      - tests/test_nationwide_source_inventory.py
 
 permissions:
   contents: write
