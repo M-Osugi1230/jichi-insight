@@ -7,128 +7,18 @@ on:
       - main
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: quality-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  materialize:
-    name: Materialize Miyagi measure 17
-    if: github.head_ref == 'agent/miyagi-actuals-measure17'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: agent/miyagi-actuals-measure17
-          fetch-depth: 0
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-          cache: pip
-
-      - name: Install Python validation tools
-        run: python -m pip install -e ".[dev]"
-
-      - name: Apply measure 17 canonical state
-        run: python scripts/apply_miyagi_measure17_actuals.py
-
-      - name: Format measure 17 materializer
-        run: ruff format scripts/apply_miyagi_measure17_actuals.py
-
-      - name: Validate repository state
-        run: python scripts/validate_repository.py
-
-      - name: Test measure 17 schema and Evidence
-        run: pytest tests/test_miyagi_kpi_actuals_measure17.py::test_measure17_schema_and_evidence_coverage
-
-      - name: Test measure 17 linkage boundary
-        run: pytest tests/test_miyagi_kpi_actuals_measure17.py::test_measure17_links_and_definition_boundary
-
-      - name: Test measure 17 latest values
-        run: pytest tests/test_miyagi_kpi_actuals_measure17.py::test_measure17_latest_values_and_source_version_differences
-
-      - name: Test measure 17 catalog state
-        run: pytest tests/test_miyagi_kpi_actuals_measure17.py::test_measure17_catalog_connection_statuses
-
-      - name: Test Miyagi aggregate totals
-        run: pytest tests/test_miyagi_catalog_totals.py
-
-      - name: Test Wave 1 queue
-        run: pytest tests/test_wave1_policy_review_queue.py
-
-      - name: Test final Miyagi KPI batch
-        run: pytest tests/test_miyagi_kpi_catalog_groups_114_128.py
-
-      - name: Test reviewed sequence
-        run: pytest tests/test_miyagi_kpi_catalog_groups_53_68.py
-
-      - name: Capture materializer lint diagnostics
-        run: |
-          ruff check --select E --output-format json \
-            scripts/apply_miyagi_measure17_actuals.py \
-            > measure17-materializer-ruff.json || true
-
-      - name: Upload materializer lint diagnostics
-        uses: actions/upload-artifact@v4
-        with:
-          name: measure17-materializer-ruff-diagnostics
-          path: measure17-materializer-ruff.json
-          if-no-files-found: error
-          retention-days: 7
-
-      - name: Lint materializer errors
-        run: ruff check --select E scripts/apply_miyagi_measure17_actuals.py
-
-      - name: Lint materializer remaining rules
-        run: ruff check --select F,I,UP,B,SIM scripts/apply_miyagi_measure17_actuals.py
-
-      - name: Lint measure 17 tests
-        run: ruff check tests/test_miyagi_kpi_actuals_measure17.py
-
-      - name: Lint aggregate tests
-        run: |
-          ruff check \
-            tests/test_miyagi_catalog_totals.py \
-            tests/test_wave1_policy_review_queue.py \
-            tests/test_miyagi_kpi_catalog_groups_114_128.py \
-            tests/test_miyagi_kpi_catalog_groups_53_68.py
-
-      - name: Commit canonical state
-        run: |
-          set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add \
-            scripts/apply_miyagi_measure17_actuals.py \
-            data/entities/policy/miyagi_kpi_catalog_measure17.json \
-            data/catalog/miyagi_policy_review_manifest.json \
-            data/catalog/wave1_policy_review_queue.json \
-            schemas/miyagi_policy_review_manifest.schema.json \
-            apps/web/lib/miyagiActuals.ts \
-            tests/test_miyagi_catalog_totals.py \
-            tests/test_wave1_policy_review_queue.py \
-            tests/test_miyagi_kpi_catalog_groups_114_128.py \
-            tests/test_miyagi_kpi_catalog_groups_53_68.py \
-            scripts/validate_static_export.py
-          if git diff --cached --quiet; then
-            echo "Measure 17 canonical state is already current"
-            exit 0
-          fi
-          git commit -m "Materialize Miyagi measure 17 actual linkage"
-          git push origin HEAD:agent/miyagi-actuals-measure17
-
   repository:
     name: Repository and data
-    needs: materialize
-    if: always() && (needs.materialize.result == 'success' || needs.materialize.result == 'skipped')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: ${{ github.head_ref || github.ref_name }}
 
       - uses: actions/setup-python@v5
         with:
@@ -182,13 +72,9 @@ jobs:
 
   web:
     name: Web
-    needs: materialize
-    if: always() && (needs.materialize.result == 'success' || needs.materialize.result == 'skipped')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: ${{ github.head_ref || github.ref_name }}
 
       - uses: actions/setup-node@v4
         with:
