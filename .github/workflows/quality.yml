@@ -7,55 +7,18 @@ on:
       - main
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: quality-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  materialize:
-    name: Update Miyagi static count
-    if: github.head_ref == 'agent/miyagi-actuals-measure16'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: agent/miyagi-actuals-measure16
-          fetch-depth: 0
-
-      - name: Replace the former annual-row count
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-
-          path = Path("scripts/validate_static_export.py")
-          text = path.read_text(encoding="utf-8")
-          old = "440件の実績推移を公開"
-          new = "468件の実績推移を公開"
-          if text.count(old) != 1:
-              raise SystemExit(f"Expected one old count, found {text.count(old)}")
-          path.write_text(text.replace(old, new), encoding="utf-8")
-          PY
-
-      - name: Commit the canonical static requirement
-        run: |
-          set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add scripts/validate_static_export.py
-          git commit -m "Advance Miyagi static actual count"
-          git push origin HEAD:agent/miyagi-actuals-measure16
-
   repository:
     name: Repository and data
-    needs: materialize
-    if: always() && (needs.materialize.result == 'success' || needs.materialize.result == 'skipped')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: ${{ github.head_ref || github.ref_name }}
 
       - uses: actions/setup-python@v5
         with:
@@ -109,13 +72,9 @@ jobs:
 
   web:
     name: Web
-    needs: materialize
-    if: always() && (needs.materialize.result == 'success' || needs.materialize.result == 'skipped')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: ${{ github.head_ref || github.ref_name }}
 
       - uses: actions/setup-node@v4
         with:
