@@ -54,6 +54,43 @@ export type Phase10Queue = {
   updated_at: string;
 };
 
+export type Phase10SourceRecord = {
+  id: string;
+  prefecture_code: string;
+  name: string;
+  category: "annual_evaluation" | "budget" | "project_evaluation" | "contracts";
+  coverage_role: string;
+  title: string;
+  url: string;
+  official_owner: string;
+  source_status: "indexed" | "reviewed";
+  linkage_status: "not_linked" | "candidate_linkage" | "linked_existing";
+  currentness_status: "current" | "latest_available";
+  reporting_period: string | null;
+  plan_alignment: "current_plan" | "current_budget_cycle" | "crosswalk_required";
+  supports: string[];
+  scope_boundary: string;
+  observed_at: string;
+};
+
+export type Phase10SourceInventory = {
+  id: string;
+  status: "in_progress" | "verification_pending" | "complete";
+  prefecture_codes: string[];
+  categories: Phase10SourceRecord["category"][];
+  records: Phase10SourceRecord[];
+  summary: {
+    prefecture_count: number;
+    source_count: number;
+    category_prefecture_counts: Record<Phase10SourceRecord["category"], number>;
+    linked_existing_source_count: number;
+    candidate_linkage_source_count: number;
+    not_linked_source_count: number;
+  };
+  policy_achievement_assessment_status: "not_assessed";
+  updated_at: string;
+};
+
 function findDataRoot(): string {
   const candidates = [
     path.resolve(process.cwd(), "data"),
@@ -62,13 +99,30 @@ function findDataRoot(): string {
   return candidates.find((candidate) => fs.existsSync(candidate)) ?? candidates[0];
 }
 
+function loadCatalog<T>(filename: string): T {
+  const catalogPath = path.join(findDataRoot(), "catalog", filename);
+  return JSON.parse(fs.readFileSync(catalogPath, "utf-8")) as T;
+}
+
 export function loadPhase10Queue(): Phase10Queue {
-  const queuePath = path.join(
-    findDataRoot(),
-    "catalog",
-    "phase10_execution_queue.json",
-  );
-  return JSON.parse(fs.readFileSync(queuePath, "utf-8")) as Phase10Queue;
+  return loadCatalog<Phase10Queue>("phase10_execution_queue.json");
+}
+
+export function loadPhase10SourceInventory(): Phase10SourceInventory {
+  return loadCatalog<Phase10SourceInventory>("phase10_wave1_source_inventory.json");
+}
+
+export function phase10SourcesByPrefecture(
+  inventory: Phase10SourceInventory,
+): Map<string, Phase10SourceRecord[]> {
+  const result = new Map<string, Phase10SourceRecord[]>();
+  for (const record of inventory.records) {
+    result.set(record.prefecture_code, [
+      ...(result.get(record.prefecture_code) ?? []),
+      record,
+    ]);
+  }
+  return result;
 }
 
 export function phase10DepthLabel(status: Phase10DepthStatus): string {
