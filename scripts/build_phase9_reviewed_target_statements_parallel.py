@@ -122,7 +122,7 @@ def extract_variant(prefecture: dict[str, Any], attempts: int):
             last_error = exc
             if attempt == attempts:
                 break
-            delay_seconds = min(2 ** attempt, 20)
+            delay_seconds = min(2**attempt, 20)
             print(
                 f"RETRY {prefecture['prefecture_code']} {prefecture['name']} "
                 f"after {type(exc).__name__} ({attempt}/{attempts}); "
@@ -138,7 +138,11 @@ def review_one(prefecture: dict[str, Any]):
     variants = source_variants(prefecture)
     last_error: Exception | None = None
     for index, variant in enumerate(variants):
-        attempts = 3 if index == 0 and variant["prefecture_code"] == "41" else MAX_PREFECTURE_ATTEMPTS
+        attempts = (
+            3
+            if index == 0 and variant["prefecture_code"] == "41"
+            else MAX_PREFECTURE_ATTEMPTS
+        )
         try:
             result = extract_variant(variant, attempts)
             if index > 0:
@@ -171,7 +175,9 @@ def record_result(
 ) -> None:
     code = prefecture["prefecture_code"]
     try:
-        _, result = result_future.result() if hasattr(result_future, "result") else result_future
+        _, result = (
+            result_future.result() if hasattr(result_future, "result") else result_future
+        )
     except Exception as exc:  # noqa: BLE001 - preserve all prefecture diagnostics
         error = "".join(traceback.format_exception_only(type(exc), exc)).strip()
         failures.append(
@@ -207,11 +213,18 @@ def build(root: Path, workers: int) -> None:
         try:
             result = review_one(prefecture)
         except Exception as exc:  # noqa: BLE001 - preserve diagnostics
-            class FailedResult:
-                def result(self):
-                    raise exc
-
-            record_result(generated, failures, prefecture, FailedResult())
+            error = "".join(traceback.format_exception_only(type(exc), exc)).strip()
+            failures.append(
+                {
+                    "prefecture_code": prefecture["prefecture_code"],
+                    "name": prefecture["name"],
+                    "error": error,
+                }
+            )
+            print(
+                f"FAILED {prefecture['prefecture_code']} {prefecture['name']}: {error}",
+                flush=True,
+            )
         else:
             record_result(generated, failures, prefecture, result)
 
