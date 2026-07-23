@@ -17,6 +17,7 @@ const staticRoutes = [
   "/methodology",
   "/municipalities",
   "/municipalities/phase9",
+  "/municipalities/phase10",
   "/municipalities/hokkaido",
   "/municipalities/miyagi",
   "/municipalities/tokyo",
@@ -43,7 +44,7 @@ export const dynamic = "force-static";
 export default function sitemap(): MetadataRoute.Sitemap {
   return routes.map((route) => ({
     url: `${siteUrl}${route}`,
-    lastModified: new Date("2026-07-22"),
+    lastModified: new Date("2026-07-23"),
     changeFrequency: route === "" ? "weekly" : "monthly",
     priority:
       route === ""
