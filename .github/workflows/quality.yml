@@ -7,91 +7,18 @@ on:
       - main
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: quality-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  materialize:
-    name: Materialize Miyagi measure 16
-    if: github.head_ref == 'agent/miyagi-actuals-measure16'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: agent/miyagi-actuals-measure16
-          fetch-depth: 0
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-          cache: pip
-
-      - name: Install Python validation tools
-        run: python -m pip install -e ".[dev]"
-
-      - name: Apply measure 16 canonical state
-        run: python scripts/apply_miyagi_measure16_actuals.py
-
-      - name: Validate repository state
-        run: python scripts/validate_repository.py
-
-      - name: Test measure 16 schema and Evidence
-        run: pytest tests/test_miyagi_kpi_actuals_measure16.py::test_measure16_schema_and_evidence_coverage
-
-      - name: Test measure 16 linkage boundaries
-        run: pytest tests/test_miyagi_kpi_actuals_measure16.py::test_measure16_links_and_definition_boundaries
-
-      - name: Test measure 16 latest values
-        run: pytest tests/test_miyagi_kpi_actuals_measure16.py::test_measure16_latest_values_rates_and_grades
-
-      - name: Test measure 16 catalog state
-        run: pytest tests/test_miyagi_kpi_actuals_measure16.py::test_measure16_catalog_connection_statuses
-
-      - name: Test Miyagi aggregate totals
-        run: pytest tests/test_miyagi_catalog_totals.py
-
-      - name: Test Wave 1 queue
-        run: pytest tests/test_wave1_policy_review_queue.py
-
-      - name: Lint changed Python
-        run: |
-          ruff check \
-            scripts/apply_miyagi_measure16_actuals.py \
-            tests/test_miyagi_kpi_actuals_measure16.py \
-            tests/test_miyagi_catalog_totals.py \
-            tests/test_wave1_policy_review_queue.py
-
-      - name: Commit canonical state
-        run: |
-          set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add \
-            data/entities/policy/miyagi_kpi_catalog_measure16.json \
-            data/catalog/miyagi_policy_review_manifest.json \
-            data/catalog/wave1_policy_review_queue.json \
-            apps/web/lib/miyagiActuals.ts \
-            tests/test_miyagi_catalog_totals.py \
-            tests/test_wave1_policy_review_queue.py
-          if git diff --cached --quiet; then
-            echo "Measure 16 canonical state is already current"
-            exit 0
-          fi
-          git commit -m "Materialize Miyagi measure 16 actual linkage"
-          git push origin HEAD:agent/miyagi-actuals-measure16
-
   repository:
     name: Repository and data
-    needs: materialize
-    if: always() && (needs.materialize.result == 'success' || needs.materialize.result == 'skipped')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: ${{ github.head_ref || github.ref_name }}
 
       - uses: actions/setup-python@v5
         with:
@@ -145,13 +72,9 @@ jobs:
 
   web:
     name: Web
-    needs: materialize
-    if: always() && (needs.materialize.result == 'success' || needs.materialize.result == 'skipped')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: ${{ github.head_ref || github.ref_name }}
 
       - uses: actions/setup-node@v4
         with:
