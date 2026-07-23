@@ -1,0 +1,260 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.example/schemas/phase10_wave1_source_inventory.schema.json",
+  "title": "Phase 10 Wave 1 source inventory",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "status",
+    "prefecture_codes",
+    "categories",
+    "records",
+    "summary",
+    "policy_achievement_assessment_status",
+    "updated_at"
+  ],
+  "properties": {
+    "id": {
+      "const": "phase10-wave1-source-inventory"
+    },
+    "status": {
+      "enum": [
+        "in_progress",
+        "verification_pending",
+        "complete"
+      ]
+    },
+    "prefecture_codes": {
+      "type": "array",
+      "minItems": 2,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9]{2}$"
+      }
+    },
+    "categories": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/category"
+      }
+    },
+    "records": {
+      "type": "array",
+      "minItems": 8,
+      "items": {
+        "$ref": "#/$defs/sourceRecord"
+      }
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "prefecture_count",
+        "source_count",
+        "category_prefecture_counts",
+        "linked_existing_source_count",
+        "candidate_linkage_source_count",
+        "not_linked_source_count"
+      ],
+      "properties": {
+        "prefecture_count": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9
+        },
+        "source_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "category_prefecture_counts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "annual_evaluation",
+            "budget",
+            "project_evaluation",
+            "contracts"
+          ],
+          "properties": {
+            "annual_evaluation": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9
+            },
+            "budget": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9
+            },
+            "project_evaluation": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9
+            },
+            "contracts": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9
+            }
+          }
+        },
+        "linked_existing_source_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "candidate_linkage_source_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "not_linked_source_count": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "policy_achievement_assessment_status": {
+      "const": "not_assessed"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "$defs": {
+    "category": {
+      "enum": [
+        "annual_evaluation",
+        "budget",
+        "project_evaluation",
+        "contracts"
+      ]
+    },
+    "sourceRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "prefecture_code",
+        "name",
+        "category",
+        "coverage_role",
+        "title",
+        "url",
+        "official_owner",
+        "source_status",
+        "linkage_status",
+        "currentness_status",
+        "reporting_period",
+        "plan_alignment",
+        "supports",
+        "scope_boundary",
+        "observed_at"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "prefecture_code": {
+          "enum": [
+            "04",
+            "40"
+          ]
+        },
+        "name": {
+          "enum": [
+            "宮城県",
+            "福岡県"
+          ]
+        },
+        "category": {
+          "$ref": "#/$defs/category"
+        },
+        "coverage_role": {
+          "enum": [
+            "system_portal",
+            "annual_report",
+            "budget_bridge",
+            "budget_package",
+            "evaluation_system",
+            "evaluation_report",
+            "procurement_portal",
+            "contract_results"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "minLength": 2
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://www\\.pref\\.(miyagi|fukuoka)\\.jp/"
+        },
+        "official_owner": {
+          "type": "string",
+          "minLength": 3
+        },
+        "source_status": {
+          "enum": [
+            "indexed",
+            "reviewed"
+          ]
+        },
+        "linkage_status": {
+          "enum": [
+            "not_linked",
+            "candidate_linkage",
+            "linked_existing"
+          ]
+        },
+        "currentness_status": {
+          "enum": [
+            "current",
+            "latest_available"
+          ]
+        },
+        "reporting_period": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "plan_alignment": {
+          "enum": [
+            "current_plan",
+            "current_budget_cycle",
+            "crosswalk_required"
+          ]
+        },
+        "supports": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "target_actual",
+              "target_budget",
+              "project_spine",
+              "contract_linkage",
+              "accountability"
+            ]
+          }
+        },
+        "scope_boundary": {
+          "type": "string",
+          "minLength": 30
+        },
+        "observed_at": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    }
+  }
+}
