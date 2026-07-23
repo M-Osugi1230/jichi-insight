@@ -1,0 +1,70 @@
+{
+  "id": "phase10-vertical-linkage-completion",
+  "phase": 10,
+  "status": "in_progress",
+  "scope_version": "2026-07-23",
+  "counts": {
+    "total_prefectures": 47,
+    "wave1_prefectures": 9,
+    "target_statements_reviewed": 47,
+    "annual_evaluation_linked": 1,
+    "annual_evaluation_indexed": 1,
+    "budget_reviewed": 1,
+    "project_evaluation_indexed_or_better": 0,
+    "contracts_indexed_or_better": 0,
+    "published_phase10_pages": 1
+  },
+  "gates": [
+    {
+      "id": "phase9_handoff_verified",
+      "status": "passed",
+      "evidence_paths": [
+        "data/catalog/phase9_completion.json",
+        "data/catalog/phase9_review_summary.json",
+        "tests/test_phase9_completion.py"
+      ]
+    },
+    {
+      "id": "nationwide_vertical_source_inventory",
+      "status": "in_progress",
+      "evidence_paths": [
+        "data/catalog/nationwide_source_inventory.json",
+        "data/catalog/phase10_execution_queue.json",
+        "tests/test_phase10_execution_queue.py"
+      ]
+    },
+    {
+      "id": "wave1_annual_actuals_linkage",
+      "status": "in_progress",
+      "evidence_paths": [
+        "data/catalog/phase10_execution_queue.json",
+        "data/catalog/miyagi_policy_review_manifest.json"
+      ]
+    },
+    {
+      "id": "wave1_money_and_project_spine",
+      "status": "pending",
+      "evidence_paths": [
+        "data/catalog/phase10_execution_queue.json"
+      ]
+    },
+    {
+      "id": "contracts_and_accountability_linkage",
+      "status": "pending",
+      "evidence_paths": [
+        "data/catalog/phase10_execution_queue.json"
+      ]
+    },
+    {
+      "id": "phase10_publication_and_smoke",
+      "status": "in_progress",
+      "evidence_paths": [
+        "apps/web/app/municipalities/phase10/page.tsx",
+        "scripts/validate_static_export.py",
+        "scripts/check_production.sh"
+      ]
+    }
+  ],
+  "scope_note": "Phase 10 connects Reviewed target statements to annual actuals, budgets, priority projects, contracts, and accountability evidence. Source indexing and linkage are tracked separately. No independent policy-achievement score or cross-prefecture ranking is introduced.",
+  "updated_at": "2026-07-23"
+}
