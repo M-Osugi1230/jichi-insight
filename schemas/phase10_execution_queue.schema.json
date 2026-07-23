@@ -1,0 +1,259 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.example/schemas/phase10_execution_queue.schema.json",
+  "title": "Phase 10 vertical linkage execution queue",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "phase",
+    "status",
+    "scope_version",
+    "current_focus",
+    "active_prefecture_code",
+    "prefecture_order",
+    "waves",
+    "default_depth",
+    "wave1_records",
+    "counts",
+    "policy_achievement_assessment_status",
+    "ranking_eligibility",
+    "updated_at"
+  ],
+  "properties": {
+    "id": {
+      "const": "phase10-vertical-linkage-execution-queue"
+    },
+    "phase": {
+      "const": 10
+    },
+    "status": {
+      "enum": [
+        "in_progress",
+        "verification_pending",
+        "complete"
+      ]
+    },
+    "scope_version": {
+      "type": "string",
+      "format": "date"
+    },
+    "current_focus": {
+      "const": "annual_actuals_money_action_spine"
+    },
+    "active_prefecture_code": {
+      "type": "string",
+      "pattern": "^[0-9]{2}$"
+    },
+    "prefecture_order": {
+      "type": "array",
+      "minItems": 47,
+      "maxItems": 47,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9]{2}$"
+      }
+    },
+    "waves": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "prefecture_codes",
+          "objective"
+        ],
+        "properties": {
+          "id": {
+            "pattern": "^wave[12]-[a-z0-9-]+$"
+          },
+          "prefecture_codes": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[0-9]{2}$"
+            }
+          },
+          "objective": {
+            "type": "string",
+            "minLength": 10
+          }
+        }
+      }
+    },
+    "default_depth": {
+      "$ref": "#/$defs/depth"
+    },
+    "wave1_records": {
+      "type": "array",
+      "minItems": 9,
+      "maxItems": 9,
+      "items": {
+        "$ref": "#/$defs/wave1Record"
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "total_prefectures",
+        "wave1_prefectures",
+        "target_statements_reviewed",
+        "annual_evaluation_linked",
+        "annual_evaluation_indexed",
+        "budget_reviewed",
+        "project_evaluation_indexed_or_better",
+        "contracts_indexed_or_better"
+      ],
+      "properties": {
+        "total_prefectures": {
+          "const": 47
+        },
+        "wave1_prefectures": {
+          "const": 9
+        },
+        "target_statements_reviewed": {
+          "const": 47
+        },
+        "annual_evaluation_linked": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 47
+        },
+        "annual_evaluation_indexed": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 47
+        },
+        "budget_reviewed": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 47
+        },
+        "project_evaluation_indexed_or_better": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 47
+        },
+        "contracts_indexed_or_better": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 47
+        }
+      }
+    },
+    "policy_achievement_assessment_status": {
+      "const": "not_assessed"
+    },
+    "ranking_eligibility": {
+      "const": "excluded_until_comparability_verified"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "$defs": {
+    "depthStatus": {
+      "enum": [
+        "not_indexed",
+        "indexed",
+        "reviewed",
+        "linked"
+      ]
+    },
+    "depth": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "target_statements",
+        "annual_evaluation",
+        "budget",
+        "project_evaluation",
+        "contracts"
+      ],
+      "properties": {
+        "target_statements": {
+          "const": "reviewed"
+        },
+        "annual_evaluation": {
+          "$ref": "#/$defs/depthStatus"
+        },
+        "budget": {
+          "$ref": "#/$defs/depthStatus"
+        },
+        "project_evaluation": {
+          "$ref": "#/$defs/depthStatus"
+        },
+        "contracts": {
+          "$ref": "#/$defs/depthStatus"
+        }
+      }
+    },
+    "wave1Record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "prefecture_code",
+        "name",
+        "region",
+        "status",
+        "current_depth",
+        "next_gate",
+        "next_action"
+      ],
+      "properties": {
+        "prefecture_code": {
+          "type": "string",
+          "pattern": "^[0-9]{2}$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 2
+        },
+        "region": {
+          "enum": [
+            "北海道",
+            "東北",
+            "関東",
+            "中部",
+            "近畿",
+            "中国",
+            "四国",
+            "九州・沖縄"
+          ]
+        },
+        "status": {
+          "enum": [
+            "queued",
+            "review_ready",
+            "linked_baseline",
+            "complete"
+          ]
+        },
+        "current_depth": {
+          "$ref": "#/$defs/depth"
+        },
+        "next_gate": {
+          "enum": [
+            "source_inventory",
+            "annual_actuals_linkage",
+            "budget_linkage",
+            "project_spine",
+            "publication_verification"
+          ]
+        },
+        "next_action": {
+          "type": "string",
+          "minLength": 20
+        }
+      }
+    }
+  }
+}
