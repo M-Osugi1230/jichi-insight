@@ -4,11 +4,21 @@ on:
   pull_request:
     paths:
       - .github/workflows/materialize-phase10-wave1-source-state.yml
+      - data/catalog/phase10_wave1_source_inventory.json
+      - schemas/phase10_wave1_source_inventory.schema.json
+      - scripts/apply_phase10_wave1_source_inventory.py
+      - tests/test_phase10_execution_queue.py
+      - tests/test_phase10_wave1_source_inventory.py
   push:
     branches:
       - agent/phase10-miyagi-fukuoka-source-inventory
     paths:
       - .github/workflows/materialize-phase10-wave1-source-state.yml
+      - data/catalog/phase10_wave1_source_inventory.json
+      - schemas/phase10_wave1_source_inventory.schema.json
+      - scripts/apply_phase10_wave1_source_inventory.py
+      - tests/test_phase10_execution_queue.py
+      - tests/test_phase10_wave1_source_inventory.py
 
 permissions:
   contents: write
