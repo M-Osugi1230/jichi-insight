@@ -244,7 +244,7 @@ def nationwide_requirements() -> dict[str, list[str]]:
         return requirements
 
     summary = load_json(summary_path)
-    requirements["municipalities/phase9/index.html"].extend(
+    requirements.setdefault("municipalities/phase9/index.html", []).extend(
         [
             str(summary["prefecture_count"]),
             str(summary["reviewed_target_statement_count"]),
