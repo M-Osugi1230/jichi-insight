@@ -11,6 +11,7 @@ COMPLETION_SCHEMA_PATH = ROOT / "schemas/phase10_completion.schema.json"
 
 ALL_CODES = [f"{value:02d}" for value in range(1, 48)]
 WAVE1_CODES = {"01", "04", "13", "23", "27", "34", "37", "40", "47"}
+INDEXED_OR_BETTER = {"indexed", "reviewed", "linked"}
 
 
 def load(path: Path):
@@ -70,7 +71,7 @@ def test_phase10_wave1_baseline_is_conservative_and_verified():
     assert queue["ranking_eligibility"] == "excluded_until_comparability_verified"
 
 
-def test_phase10_counts_match_baseline_overrides():
+def test_phase10_counts_are_derived_from_wave1_depth():
     queue = load(QUEUE_PATH)
     records = queue["wave1_records"]
     counts = queue["counts"]
@@ -90,8 +91,14 @@ def test_phase10_counts_match_baseline_overrides():
         record["current_depth"]["budget"] == "reviewed"
         for record in records
     )
-    assert counts["project_evaluation_indexed_or_better"] == 0
-    assert counts["contracts_indexed_or_better"] == 0
+    assert counts["project_evaluation_indexed_or_better"] == sum(
+        record["current_depth"]["project_evaluation"] in INDEXED_OR_BETTER
+        for record in records
+    )
+    assert counts["contracts_indexed_or_better"] == sum(
+        record["current_depth"]["contracts"] in INDEXED_OR_BETTER
+        for record in records
+    )
 
 
 def test_phase10_completion_counts_match_execution_queue():

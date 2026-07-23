@@ -5,7 +5,12 @@ import { PageIntro } from "@/components/PageIntro";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { StatusBadge } from "@/components/StatusBadge";
-import { loadPhase10Queue, phase10DepthLabel } from "@/lib/phase10";
+import {
+  loadPhase10Queue,
+  loadPhase10SourceInventory,
+  phase10DepthLabel,
+  phase10SourcesByPrefecture,
+} from "@/lib/phase10";
 
 import styles from "./phase10.module.css";
 
@@ -24,8 +29,17 @@ const depthFields = [
   ["contracts", "契約"],
 ] as const;
 
+const sourceCategoryLabels = {
+  annual_evaluation: "年度実績",
+  budget: "予算",
+  project_evaluation: "事業評価",
+  contracts: "契約",
+};
+
 export default function Phase10MunicipalitiesPage() {
   const queue = loadPhase10Queue();
+  const sourceInventory = loadPhase10SourceInventory();
+  const sourcesByPrefecture = phase10SourcesByPrefecture(sourceInventory);
 
   return (
     <main id="main-content">
@@ -58,14 +72,16 @@ export default function Phase10MunicipalitiesPage() {
             <p>目標と年度実績の定義・期間を照合した県です。</p>
           </article>
           <article>
-            <span>予算 Reviewed</span>
-            <strong>{queue.counts.budget_reviewed}</strong>
-            <p>予算・決算値のEvidence確認が完了している県です。</p>
+            <span>事業・契約 入口確認</span>
+            <strong>
+              {queue.counts.project_evaluation_indexed_or_better} / {queue.counts.contracts_indexed_or_better}
+            </strong>
+            <p>事業評価と契約の公式入口を確認した県数です。</p>
           </article>
           <article>
-            <span>先行波</span>
-            <strong>{queue.counts.wave1_prefectures}</strong>
-            <p>9地域拠点から縦接続モデルを固めます。</p>
+            <span>公式ソース</span>
+            <strong>{sourceInventory.summary.source_count}</strong>
+            <p>宮城県・福岡県で確認した年度実績、予算、事業、契約の入口です。</p>
           </article>
         </section>
 
@@ -107,33 +123,47 @@ export default function Phase10MunicipalitiesPage() {
           </div>
 
           <div className={styles.prefectureGrid}>
-            {queue.wave1_records.map((record) => (
-              <article className={styles.prefectureCard} key={record.prefecture_code}>
-                <div className={styles.cardHeader}>
-                  <span>{record.prefecture_code} / {record.region}</span>
-                  <StatusBadge
-                    label={
-                      record.status === "linked_baseline"
-                        ? "接続基準"
-                        : record.status === "review_ready"
-                          ? "接続準備"
-                          : "資料索引待ち"
-                    }
-                    tone={record.status === "queued" ? "neutral" : "verified"}
-                  />
-                </div>
-                <h3>{record.name}</h3>
-                <dl>
-                  {depthFields.map(([field, label]) => (
-                    <div key={field}>
-                      <dt>{label}</dt>
-                      <dd>{phase10DepthLabel(record.current_depth[field])}</dd>
+            {queue.wave1_records.map((record) => {
+              const sources = sourcesByPrefecture.get(record.prefecture_code) ?? [];
+              return (
+                <article className={styles.prefectureCard} key={record.prefecture_code}>
+                  <div className={styles.cardHeader}>
+                    <span>{record.prefecture_code} / {record.region}</span>
+                    <StatusBadge
+                      label={
+                        record.status === "linked_baseline"
+                          ? "接続基準"
+                          : record.status === "review_ready"
+                            ? "接続準備"
+                            : "資料索引待ち"
+                      }
+                      tone={record.status === "queued" ? "neutral" : "verified"}
+                    />
+                  </div>
+                  <h3>{record.name}</h3>
+                  <dl>
+                    {depthFields.map(([field, label]) => (
+                      <div key={field}>
+                        <dt>{label}</dt>
+                        <dd>{phase10DepthLabel(record.current_depth[field])}</dd>
+                      </div>
+                    ))}
+                  </dl>
+                  <p>{record.next_action}</p>
+                  {sources.length > 0 ? (
+                    <div className={styles.sourceList}>
+                      <strong>公式資料入口</strong>
+                      {sources.map((source) => (
+                        <a href={source.url} key={source.id} target="_blank" rel="noreferrer">
+                          <span>{sourceCategoryLabels[source.category]}</span>
+                          {source.title} ↗
+                        </a>
+                      ))}
                     </div>
-                  ))}
-                </dl>
-                <p>{record.next_action}</p>
-              </article>
-            ))}
+                  ) : null}
+                </article>
+              );
+            })}
           </div>
         </section>
 
@@ -142,8 +172,8 @@ export default function Phase10MunicipalitiesPage() {
             <p className="eyebrow">Current active reference</p>
             <h2>宮城県：年度実績の次に、予算・事業・契約をつなぐ。</h2>
             <p>
-              既に接続した年度実績の定義を崩さず、予算・重点事業・契約の公式入口を追加します。
-              次に福岡県のReviewed財政値を政策目標へ接続します。
+              公式入口の索引化は完了しました。次は予算資料と事業評価を政策・施策・事業IDへ照合し、
+              契約結果を同じ事業へ接続できるか確認します。
             </p>
           </div>
           <Link href="/municipalities/miyagi">宮城県の年度実績を見る →</Link>

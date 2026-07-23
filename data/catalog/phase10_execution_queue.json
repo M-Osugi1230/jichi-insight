@@ -182,12 +182,12 @@
       "current_depth": {
         "target_statements": "reviewed",
         "annual_evaluation": "linked",
-        "budget": "not_indexed",
-        "project_evaluation": "not_indexed",
-        "contracts": "not_indexed"
+        "budget": "indexed",
+        "project_evaluation": "indexed",
+        "contracts": "indexed"
       },
       "next_gate": "budget_linkage",
-      "next_action": "年度実績との定義照合を維持し、予算・重点事業・契約の資料入口を追加する。"
+      "next_action": "年度実績接続を維持し、索引化した令和8年度予算、事業評価制度、入札結果を政策・施策・事業IDへ照合する。"
     },
     {
       "prefecture_code": "13",
@@ -273,11 +273,11 @@
         "target_statements": "reviewed",
         "annual_evaluation": "indexed",
         "budget": "reviewed",
-        "project_evaluation": "not_indexed",
-        "contracts": "not_indexed"
+        "project_evaluation": "indexed",
+        "contracts": "indexed"
       },
       "next_gate": "annual_actuals_linkage",
-      "next_action": "Reviewed済み予算と年度評価入口を目標系列へ接続し、実績値の定義照合を開始する。"
+      "next_action": "総合計画実施状況報告、重点事業評価、Reviewed財政値、入札結果を共通事業IDへ照合し、目標との接続候補を確定する。"
     },
     {
       "prefecture_code": "47",
@@ -302,8 +302,8 @@
     "annual_evaluation_linked": 1,
     "annual_evaluation_indexed": 1,
     "budget_reviewed": 1,
-    "project_evaluation_indexed_or_better": 0,
-    "contracts_indexed_or_better": 0
+    "project_evaluation_indexed_or_better": 2,
+    "contracts_indexed_or_better": 2
   },
   "policy_achievement_assessment_status": "not_assessed",
   "ranking_eligibility": "excluded_until_comparability_verified",

@@ -1,0 +1,309 @@
+{
+  "id": "phase10-wave1-source-inventory",
+  "status": "in_progress",
+  "prefecture_codes": [
+    "04",
+    "40"
+  ],
+  "categories": [
+    "annual_evaluation",
+    "budget",
+    "project_evaluation",
+    "contracts"
+  ],
+  "records": [
+    {
+      "id": "miyagi-administrative-evaluation-portal",
+      "prefecture_code": "04",
+      "name": "宮城県",
+      "category": "annual_evaluation",
+      "coverage_role": "system_portal",
+      "title": "行政評価",
+      "url": "https://www.pref.miyagi.jp/site/hyoka/index.html",
+      "official_owner": "宮城県企画部総合政策課",
+      "source_status": "indexed",
+      "linkage_status": "linked_existing",
+      "currentness_status": "current",
+      "reporting_period": null,
+      "plan_alignment": "current_plan",
+      "supports": [
+        "target_actual",
+        "project_spine",
+        "accountability"
+      ],
+      "scope_boundary": "行政評価制度全体の公式入口。個別の目標・実績接続は既存Reviewedデータと年度別評価書で確認する。",
+      "observed_at": "2026-07-23"
+    },
+    {
+      "id": "miyagi-vision-results-evaluation-fy2024",
+      "prefecture_code": "04",
+      "name": "宮城県",
+      "category": "annual_evaluation",
+      "coverage_role": "annual_report",
+      "title": "新・宮城の将来ビジョン 成果と評価（令和6年度の政策・施策及び事業）",
+      "url": "https://www.pref.miyagi.jp/site/hyoka/r7seika-hyoka.html",
+      "official_owner": "宮城県企画部総合政策課",
+      "source_status": "reviewed",
+      "linkage_status": "linked_existing",
+      "currentness_status": "latest_available",
+      "reporting_period": "令和6年度実績・令和7年度評価",
+      "plan_alignment": "current_plan",
+      "supports": [
+        "target_actual",
+        "project_spine",
+        "accountability"
+      ],
+      "scope_boundary": "8政策・18施策と構成事業の成果・評価を掲載する年度資料。報告年度と測定年度を分離して扱う。",
+      "observed_at": "2026-07-23"
+    },
+    {
+      "id": "miyagi-evaluation-budget-reflection-fy2026",
+      "prefecture_code": "04",
+      "name": "宮城県",
+      "category": "budget",
+      "coverage_role": "budget_bridge",
+      "title": "令和7年度行政活動の評価の結果の反映状況説明書",
+      "url": "https://www.pref.miyagi.jp/site/hyoka/r7haneijyokyo.html",
+      "official_owner": "宮城県企画部総合政策課",
+      "source_status": "indexed",
+      "linkage_status": "candidate_linkage",
+      "currentness_status": "latest_available",
+      "reporting_period": "令和8年度当初予算への反映",
+      "plan_alignment": "current_budget_cycle",
+      "supports": [
+        "target_budget",
+        "project_spine",
+        "accountability"
+      ],
+      "scope_boundary": "政策・施策評価と公共事業再評価の結果を翌年度予算へどう反映したかを示す公式説明書。個別金額の接続は未完了。",
+      "observed_at": "2026-07-23"
+    },
+    {
+      "id": "miyagi-initial-budget-fy2026",
+      "prefecture_code": "04",
+      "name": "宮城県",
+      "category": "budget",
+      "coverage_role": "budget_package",
+      "title": "令和8年度当初予算等提出議案",
+      "url": "https://www.pref.miyagi.jp/soshiki/zaisei/zei-r08-yosan.html",
+      "official_owner": "宮城県総務部財政課",
+      "source_status": "indexed",
+      "linkage_status": "candidate_linkage",
+      "currentness_status": "current",
+      "reporting_period": "令和8年度当初予算",
+      "plan_alignment": "current_budget_cycle",
+      "supports": [
+        "target_budget",
+        "project_spine"
+      ],
+      "scope_boundary": "重点項目、主な事業、主要事業概要、計数資料を含む当初予算入口。目標系列との金額対応は未照合。",
+      "observed_at": "2026-07-23"
+    },
+    {
+      "id": "miyagi-administrative-evaluation-system-fy2026",
+      "prefecture_code": "04",
+      "name": "宮城県",
+      "category": "project_evaluation",
+      "coverage_role": "evaluation_system",
+      "title": "宮城県の行政評価の仕組み",
+      "url": "https://www.pref.miyagi.jp/soshiki/seisaku/hyoka-sikumi.html",
+      "official_owner": "宮城県企画部総合政策課",
+      "source_status": "indexed",
+      "linkage_status": "candidate_linkage",
+      "currentness_status": "current",
+      "reporting_period": "令和8年4月制度概要",
+      "plan_alignment": "current_plan",
+      "supports": [
+        "project_spine",
+        "accountability"
+      ],
+      "scope_boundary": "政策・施策評価、大規模事業評価、公共事業再評価、事業箇所評価の制度入口。個別事業の同一性照合は未完了。",
+      "observed_at": "2026-07-23"
+    },
+    {
+      "id": "miyagi-procurement-information-service",
+      "prefecture_code": "04",
+      "name": "宮城県",
+      "category": "contracts",
+      "coverage_role": "procurement_portal",
+      "title": "入札情報サービスシステム概要",
+      "url": "https://www.pref.miyagi.jp/soshiki/keiyaku/ksn24.html",
+      "official_owner": "宮城県出納局契約課",
+      "source_status": "indexed",
+      "linkage_status": "not_linked",
+      "currentness_status": "current",
+      "reporting_period": null,
+      "plan_alignment": "crosswalk_required",
+      "supports": [
+        "contract_linkage"
+      ],
+      "scope_boundary": "建設工事・建設関連業務の発注情報と入札結果を公開する入口。政策目標・予算事業との案件照合は未実施。",
+      "observed_at": "2026-07-23"
+    },
+    {
+      "id": "fukuoka-comprehensive-plan-progress-fy2024",
+      "prefecture_code": "40",
+      "name": "福岡県",
+      "category": "annual_evaluation",
+      "coverage_role": "annual_report",
+      "title": "福岡県総合計画実施状況報告",
+      "url": "https://www.pref.fukuoka.lg.jp/contents/sougoukeikakureport.html",
+      "official_owner": "福岡県企画・地域振興部企画総務課",
+      "source_status": "indexed",
+      "linkage_status": "candidate_linkage",
+      "currentness_status": "latest_available",
+      "reporting_period": "令和6年度",
+      "plan_alignment": "current_plan",
+      "supports": [
+        "target_actual",
+        "project_spine",
+        "accountability"
+      ],
+      "scope_boundary": "30取組事項の実施状況と総合計画の数値目標進捗を毎年度整理する公式報告。Reviewed目標との系列照合は未完了。",
+      "observed_at": "2026-07-23"
+    },
+    {
+      "id": "fukuoka-administrative-evaluation-fy2025",
+      "prefecture_code": "40",
+      "name": "福岡県",
+      "category": "project_evaluation",
+      "coverage_role": "evaluation_report",
+      "title": "福岡県の行政評価（令和7年度）",
+      "url": "https://www.pref.fukuoka.lg.jp/contents/gyouseihyouka-01.html",
+      "official_owner": "福岡県総務部行政マネジメント課",
+      "source_status": "indexed",
+      "linkage_status": "candidate_linkage",
+      "currentness_status": "latest_available",
+      "reporting_period": "令和7年度行政評価",
+      "plan_alignment": "crosswalk_required",
+      "supports": [
+        "project_spine",
+        "target_budget",
+        "accountability"
+      ],
+      "scope_boundary": "重点事業の事務事業評価と新規重点事業の政策事前評価を掲載。総合計画の目標系列との対応表は未作成。",
+      "observed_at": "2026-07-23"
+    },
+    {
+      "id": "fukuoka-administrative-evaluation-report-fy2025",
+      "prefecture_code": "40",
+      "name": "福岡県",
+      "category": "project_evaluation",
+      "coverage_role": "evaluation_report",
+      "title": "行政評価レポート 令和7年度",
+      "url": "https://www.pref.fukuoka.lg.jp/gyosei-shiryo/gyouseihyoukarepo-to-07.html",
+      "official_owner": "福岡県総務部行政マネジメント課",
+      "source_status": "indexed",
+      "linkage_status": "candidate_linkage",
+      "currentness_status": "latest_available",
+      "reporting_period": "令和7年度行政評価",
+      "plan_alignment": "crosswalk_required",
+      "supports": [
+        "project_spine",
+        "target_budget",
+        "accountability"
+      ],
+      "scope_boundary": "部局別事務事業評価書、政策事前評価書、公共事業再評価等の分割資料入口。個別事業IDの正規化は未完了。",
+      "observed_at": "2026-07-23"
+    },
+    {
+      "id": "fukuoka-budget-fy2026",
+      "prefecture_code": "40",
+      "name": "福岡県",
+      "category": "budget",
+      "coverage_role": "budget_package",
+      "title": "令和8年度（2026年度）予算",
+      "url": "https://www.pref.fukuoka.lg.jp/contents/r8-2026.html",
+      "official_owner": "福岡県総務部財政課",
+      "source_status": "indexed",
+      "linkage_status": "candidate_linkage",
+      "currentness_status": "current",
+      "reporting_period": "令和8年度当初予算・補正予算",
+      "plan_alignment": "current_budget_cycle",
+      "supports": [
+        "target_budget",
+        "project_spine"
+      ],
+      "scope_boundary": "当初予算、補正予算、編成概要、分野別施策資料の入口。既存Reviewed財政値と政策目標の直接接続は未完了。",
+      "observed_at": "2026-07-23"
+    },
+    {
+      "id": "fukuoka-budget-bills-fy2026",
+      "prefecture_code": "40",
+      "name": "福岡県",
+      "category": "budget",
+      "coverage_role": "budget_package",
+      "title": "予算議案及び予算に関する説明書",
+      "url": "https://www.pref.fukuoka.lg.jp/contents/yosanngiann.html",
+      "official_owner": "福岡県総務部財政課",
+      "source_status": "indexed",
+      "linkage_status": "candidate_linkage",
+      "currentness_status": "current",
+      "reporting_period": "令和8年度予算議案・説明書",
+      "plan_alignment": "current_budget_cycle",
+      "supports": [
+        "target_budget",
+        "project_spine",
+        "accountability"
+      ],
+      "scope_boundary": "予算議案と一般会計等の説明書を年度別に掲載する入口。事業別金額とReviewed目標の対応は未照合。",
+      "observed_at": "2026-07-23"
+    },
+    {
+      "id": "fukuoka-procurement-results-portal",
+      "prefecture_code": "40",
+      "name": "福岡県",
+      "category": "contracts",
+      "coverage_role": "procurement_portal",
+      "title": "入札・公募・公売",
+      "url": "https://www.pref.fukuoka.lg.jp/life/8/63/",
+      "official_owner": "福岡県",
+      "source_status": "indexed",
+      "linkage_status": "not_linked",
+      "currentness_status": "current",
+      "reporting_period": null,
+      "plan_alignment": "crosswalk_required",
+      "supports": [
+        "contract_linkage"
+      ],
+      "scope_boundary": "県の入札公告、企画提案、公募、入札結果の横断入口。政策目標・予算事業との案件照合は未実施。",
+      "observed_at": "2026-07-23"
+    },
+    {
+      "id": "fukuoka-construction-contract-results",
+      "prefecture_code": "40",
+      "name": "福岡県",
+      "category": "contracts",
+      "coverage_role": "contract_results",
+      "title": "建設工事の入札結果一覧を公表します",
+      "url": "https://www.pref.fukuoka.lg.jp/contents/nyusatsukouhyou.html",
+      "official_owner": "福岡県総務部財産活用課",
+      "source_status": "indexed",
+      "linkage_status": "not_linked",
+      "currentness_status": "current",
+      "reporting_period": "四半期別契約締結分",
+      "plan_alignment": "crosswalk_required",
+      "supports": [
+        "contract_linkage",
+        "accountability"
+      ],
+      "scope_boundary": "一定額を超える建設工事の入札結果を部局別PDF・Excelで公表する入口。事業・政策系列との接続は未実施。",
+      "observed_at": "2026-07-23"
+    }
+  ],
+  "summary": {
+    "prefecture_count": 2,
+    "source_count": 13,
+    "category_prefecture_counts": {
+      "annual_evaluation": 2,
+      "budget": 2,
+      "project_evaluation": 2,
+      "contracts": 2
+    },
+    "linked_existing_source_count": 2,
+    "candidate_linkage_source_count": 8,
+    "not_linked_source_count": 3
+  },
+  "policy_achievement_assessment_status": "not_assessed",
+  "updated_at": "2026-07-23"
+}

@@ -24,6 +24,10 @@
 .prefectureCard dl div { border-top: 1px solid #ded9cd; padding-top: 8px; }
 .prefectureCard dt { color: #68737b; font-size: .58rem; font-weight: 800; }
 .prefectureCard dd { font-size: .72rem; font-weight: 900; margin: 4px 0 0; }
+.sourceList { border-top: 1px solid #c8c2b4; display: grid; gap: 8px; margin-top: 20px; padding-top: 16px; }
+.sourceList > strong { font-size: .64rem; letter-spacing: .04em; }
+.sourceList a { color: #286f9f; display: grid; font-size: .65rem; line-height: 1.45; text-underline-offset: 3px; }
+.sourceList a span { color: #68737b; font-size: .55rem; font-weight: 850; text-decoration: none; }
 .nextSection { align-items: end; background: #102e46; color: #fff; display: flex; gap: 42px; justify-content: space-between; margin: 72px 0 0; padding: 44px; }
 .nextSection h2 { color: #fff; margin-bottom: 12px; }
 .nextSection p { color: #d9e1e7; margin-bottom: 0; }
