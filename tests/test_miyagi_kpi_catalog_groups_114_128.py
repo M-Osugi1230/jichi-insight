@@ -55,7 +55,7 @@ def test_multiple_series_cumulative_and_zero_boundaries_are_preserved():
     assert groups[126]["series"][0]["values"][0]["status"] == "numeric"
 
 
-def test_same_period_and_direction_boundaries_are_preserved():
+def test_same_period_direction_and_actual_boundaries_are_preserved():
     groups = {
         group["target_group_number"]: group
         for catalog in CATALOGS
@@ -68,8 +68,20 @@ def test_same_period_and_direction_boundaries_are_preserved():
     for number in [116, 118, 119]:
         values = groups[number]["series"][0]["values"]
         assert values[1]["value"] > values[2]["value"]
-    for group in groups.values():
-        assert group["actual_linkage_status"] == "not_linked"
+
+    expected_linkage = {
+        114: "linked",
+        115: "linked",
+        116: "needs_review",
+        117: "linked",
+        118: "linked",
+        119: "linked",
+    }
+    for number, group in groups.items():
+        assert group["actual_linkage_status"] == expected_linkage.get(
+            number,
+            "not_linked",
+        )
         assert group["evaluation_status"] == "not_assessed"
         late_values = [series["values"][3] for series in group["series"]]
         assert all(value["status"] == "not_set" for value in late_values)
