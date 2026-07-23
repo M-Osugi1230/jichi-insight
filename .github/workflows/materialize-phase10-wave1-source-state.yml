@@ -32,12 +32,12 @@ jobs:
         run: python scripts/apply_phase10_wave1_source_inventory.py
       - name: Validate repository
         run: python scripts/validate_repository.py
-      - name: Test materialized state
-        run: |
-          pytest \
-            tests/test_phase10_execution_queue.py \
-            tests/test_phase10_wave1_source_inventory.py \
-            tests/test_nationwide_source_inventory.py
+      - name: Test Phase 10 execution queue
+        run: pytest tests/test_phase10_execution_queue.py
+      - name: Test Wave 1 source inventory
+        run: pytest tests/test_phase10_wave1_source_inventory.py
+      - name: Test nationwide source inventory
+        run: pytest tests/test_nationwide_source_inventory.py
       - name: Lint materialization code
         run: ruff check scripts/apply_phase10_wave1_source_inventory.py tests/test_phase10_wave1_source_inventory.py
       - name: Commit canonical state
