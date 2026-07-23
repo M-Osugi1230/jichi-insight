@@ -65,23 +65,25 @@ jobs:
       - name: Test reviewed sequence
         run: pytest tests/test_miyagi_kpi_catalog_groups_53_68.py
 
+      - name: Capture materializer lint diagnostics
+        run: |
+          ruff check --select E --output-format json \
+            scripts/apply_miyagi_measure17_actuals.py \
+            > measure17-materializer-ruff.json || true
+
+      - name: Upload materializer lint diagnostics
+        uses: actions/upload-artifact@v4
+        with:
+          name: measure17-materializer-ruff-diagnostics
+          path: measure17-materializer-ruff.json
+          if-no-files-found: error
+          retention-days: 7
+
       - name: Lint materializer errors
         run: ruff check --select E scripts/apply_miyagi_measure17_actuals.py
 
-      - name: Lint materializer pyflakes
-        run: ruff check --select F scripts/apply_miyagi_measure17_actuals.py
-
-      - name: Lint materializer imports
-        run: ruff check --select I scripts/apply_miyagi_measure17_actuals.py
-
-      - name: Lint materializer upgrades
-        run: ruff check --select UP scripts/apply_miyagi_measure17_actuals.py
-
-      - name: Lint materializer bugbear
-        run: ruff check --select B scripts/apply_miyagi_measure17_actuals.py
-
-      - name: Lint materializer simplify
-        run: ruff check --select SIM scripts/apply_miyagi_measure17_actuals.py
+      - name: Lint materializer remaining rules
+        run: ruff check --select F,I,UP,B,SIM scripts/apply_miyagi_measure17_actuals.py
 
       - name: Lint measure 17 tests
         run: ruff check tests/test_miyagi_kpi_actuals_measure17.py
