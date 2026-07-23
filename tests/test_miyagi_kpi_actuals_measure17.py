@@ -68,7 +68,9 @@ def test_measure17_latest_values_and_source_version_differences():
         ) == values
 
     for number in (143, 144, 145, 146):
-        assert "資料版差" in records[f"policy-indicator-miyagi-{number}"]["comparability_note_original"]
+        note = records[f"policy-indicator-miyagi-{number}"]["comparability_note_original"]
+        assert "資料版" in note
+        assert "両値を保持" in note
 
 
 def test_measure17_catalog_connection_statuses():
