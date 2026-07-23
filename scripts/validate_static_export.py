@@ -53,7 +53,7 @@ REQUIRED_FILES = [
 BASE_PAGE_REQUIREMENTS: dict[str, list[str]] = {
     "index.html": [
         "全国47都道府県から探す",
-        "440件の実績推移を公開",
+        "468件の実績推移を公開",
         "資料ではなく、判断の順番でつなぐ。",
         "Jichi Insight評価",
     ],
