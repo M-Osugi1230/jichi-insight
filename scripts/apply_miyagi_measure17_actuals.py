@@ -49,8 +49,7 @@ def update_catalog() -> None:
         "公式定義を未確認のため直接接続しない。"
     )
     by_number[122]["comparability_note_original"] = (
-        "評価書の令和6年度47.3%を接続する。評価書R6目標70.0%と"
-        "現行R9目標72.0%を分離する。"
+        "評価書の令和6年度47.3%を接続する。評価書R6目標70.0%と現行R9目標72.0%を分離する。"
     )
     by_number[123]["comparability_note_original"] = (
         "評価書の令和6年度76.4%と現行計画の現況値80.0%の資料版差を保持する。"
@@ -113,9 +112,7 @@ def update_manifest() -> None:
 def update_queue() -> None:
     path = ROOT / "data/catalog/wave1_policy_review_queue.json"
     queue = load(path)
-    miyagi = next(
-        item for item in queue["items"] if item["prefecture_code"] == "04"
-    )
+    miyagi = next(item for item in queue["items"] if item["prefecture_code"] == "04")
     miyagi["next_action"] = (
         "KPI本文128目標・149系列は全件Reviewed済み。106系列を年度評価へ直接接続し、"
         "18系列を定義・範囲の要確認として分離した。残る43系列の年度実績接続を継続する。"
@@ -220,11 +217,7 @@ def update_tests_and_static_requirement() -> None:
 def update_cross_catalog_tests() -> None:
     final_path = ROOT / "tests/test_miyagi_kpi_catalog_groups_114_128.py"
     final_text = final_path.read_text(encoding="utf-8")
-    old_mapping = (
-        '        118: "linked",\n'
-        '        119: "linked",\n'
-        "    }"
-    )
+    old_mapping = '        118: "linked",\n        119: "linked",\n    }'
     new_mapping = (
         '        118: "linked",\n'
         '        119: "linked",\n'

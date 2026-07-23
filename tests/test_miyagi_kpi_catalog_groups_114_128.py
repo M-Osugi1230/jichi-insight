@@ -76,6 +76,12 @@ def test_same_period_direction_and_actual_boundaries_are_preserved():
         117: "linked",
         118: "linked",
         119: "linked",
+        120: "linked",
+        121: "needs_review",
+        122: "linked",
+        123: "linked",
+        124: "linked",
+        125: "linked",
     }
     for number, group in groups.items():
         assert group["actual_linkage_status"] == expected_linkage.get(
