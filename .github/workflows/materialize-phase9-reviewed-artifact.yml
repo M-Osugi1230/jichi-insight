@@ -1,6 +1,9 @@
 name: Materialize Phase 9 reviewed artifact
 
 on:
+  pull_request:
+    paths:
+      - .github/workflows/materialize-phase9-reviewed-artifact.yml
   push:
     branches:
       - agent/phase9-full-review
@@ -12,7 +15,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: phase9-reviewed-artifact-materialization
+  group: phase9-reviewed-artifact-materialization-${{ github.head_ref || github.ref_name }}
   cancel-in-progress: true
 
 jobs:
