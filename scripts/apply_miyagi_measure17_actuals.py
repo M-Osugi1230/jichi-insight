@@ -92,8 +92,8 @@ def update_manifest() -> None:
         "Complete the eighteen open definition and scope reviews.",
         (
             "Verify whether the former autonomous disaster-prevention organization "
-            "organization rate and the current activity coverage rate have the same "
-            "denominator and population scope."
+            "rate and the current activity coverage rate have the same denominator "
+            "and population scope."
         ),
         (
             "Keep the measure 16 wildlife capture-count series separate from the "
@@ -139,22 +139,30 @@ def update_manifest_schema() -> None:
 def update_web_loader() -> None:
     path = ROOT / "apps/web/lib/miyagiActuals.ts"
     text = path.read_text(encoding="utf-8")
+
     old_import = (
         'import measure16Actuals from "../../../data/entities/policy/'
         'miyagi_kpi_actuals_measure16_2024.json";\n'
     )
-    new_imports = (
-        old_import
-        + 'import measure17Evidence from "../../../data/entities/policy/'
+    evidence_import = (
+        'import measure17Evidence from "../../../data/entities/policy/'
         'miyagi_kpi_actuals_measure17_2024_evidence_packets.json";\n'
-        + 'import measure17Actuals from "../../../data/entities/policy/'
+    )
+    actuals_import = (
+        'import measure17Actuals from "../../../data/entities/policy/'
         'miyagi_kpi_actuals_measure17_2024.json";\n'
     )
-    text = replace_once(text, old_import, new_imports, "measure17 imports")
+    text = replace_once(
+        text,
+        old_import,
+        old_import + evidence_import + actuals_import,
+        "measure17 imports",
+    )
     text = replace_once(
         text,
         "  ...measure16Actuals.records,\n] as MiyagiKpiActualLink[];",
-        "  ...measure16Actuals.records,\n  ...measure17Actuals.records,\n] as MiyagiKpiActualLink[];",
+        "  ...measure16Actuals.records,\n  ...measure17Actuals.records,\n] as "
+        "MiyagiKpiActualLink[];",
         "measure17 actual spread",
     )
     text = replace_once(
@@ -213,19 +221,19 @@ def update_cross_catalog_tests() -> None:
     final_path = ROOT / "tests/test_miyagi_kpi_catalog_groups_114_128.py"
     final_text = final_path.read_text(encoding="utf-8")
     old_mapping = (
-        "        118: \"linked\",\n"
-        "        119: \"linked\",\n"
+        '        118: "linked",\n'
+        '        119: "linked",\n'
         "    }"
     )
     new_mapping = (
-        "        118: \"linked\",\n"
-        "        119: \"linked\",\n"
-        "        120: \"linked\",\n"
-        "        121: \"needs_review\",\n"
-        "        122: \"linked\",\n"
-        "        123: \"linked\",\n"
-        "        124: \"linked\",\n"
-        "        125: \"linked\",\n"
+        '        118: "linked",\n'
+        '        119: "linked",\n'
+        '        120: "linked",\n'
+        '        121: "needs_review",\n'
+        '        122: "linked",\n'
+        '        123: "linked",\n'
+        '        124: "linked",\n'
+        '        125: "linked",\n'
         "    }"
     )
     final_text = replace_once(
