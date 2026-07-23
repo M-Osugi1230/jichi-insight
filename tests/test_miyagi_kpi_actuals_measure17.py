@@ -69,8 +69,10 @@ def test_measure17_latest_values_and_source_version_differences():
 
     for number in (143, 144, 145, 146):
         note = records[f"policy-indicator-miyagi-{number}"]["comparability_note_original"]
+        assert "評価書" in note
+        assert "現行計画" in note
         assert "資料版" in note
-        assert "両値を保持" in note
+        assert "保持" in note
 
 
 def test_measure17_catalog_connection_statuses():
