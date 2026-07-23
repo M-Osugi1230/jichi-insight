@@ -194,7 +194,7 @@
         "url": {
           "type": "string",
           "format": "uri",
-          "pattern": "^https://www\\.pref\\.(miyagi|fukuoka)\\.jp/"
+          "pattern": "^https://www\\.pref\\.(miyagi\\.jp|fukuoka\\.lg\\.jp)/"
         },
         "official_owner": {
           "type": "string",
