@@ -56,7 +56,7 @@ def test_region_grouping_covers_all_prefectures_without_overlap():
     assert sum(actual_counts.values()) == 47
 
 
-def test_all_current_policy_plan_entries_are_confirmed_without_overstating_review_depth():
+def test_all_current_policy_plan_entries_are_confirmed_and_reviewed():
     registry = load(COVERAGE_PATH)
     known_codes = {record["prefecture_code"] for record in registry["records"]}
     all_codes = {f"{number:02d}" for number in range(1, 48)}
@@ -73,10 +73,10 @@ def test_all_current_policy_plan_entries_are_confirmed_without_overstating_revie
     assert indexed_codes == all_codes
     assert source_codes == all_codes
     assert anchor_codes == {"01", "04", "13", "23", "27", "34", "37", "40", "47"}
-    assert reviewed_codes == {"01", "40"}
+    assert reviewed_codes == all_codes
     assert confirmed_codes == all_codes
     assert review_required_codes == set()
-    assert reviewed_codes <= confirmed_codes
+    assert reviewed_codes == confirmed_codes
     assert len(confirmed_codes) == 47
 
 
@@ -90,14 +90,7 @@ def test_plan_sources_preserve_nonstandard_plan_structures_and_statuses():
     assert all(source["url"].startswith("https://") for source in sources)
     assert all(source["title"].strip() for source in sources)
     assert all(source["plan_status"] == "current_confirmed" for source in sources)
-
-    assert by_code["01"]["review_status"] == "reviewed"
-    assert by_code["40"]["review_status"] == "reviewed"
-    assert all(
-        source["review_status"] == "indexed"
-        for code, source in by_code.items()
-        if code not in {"01", "40"}
-    )
+    assert all(source["review_status"] == "reviewed" for source in sources)
 
     assert by_code["29"]["source_kind"] == "annual_policy_portfolio"
     assert by_code["39"]["source_kind"] == "regional_strategy"
@@ -131,7 +124,7 @@ def test_old_or_candidate_plans_are_not_silently_promoted():
     assert all(source["title"] not in superseded_titles for source in sources)
 
 
-def test_only_fukuoka_and_hokkaido_are_marked_reviewed():
+def test_reviewed_codes_and_plan_sources_are_consistent():
     registry = load(COVERAGE_PATH)
     reviewed_codes = set(registry["reviewed_prefecture_codes"])
     reviewed_plan_sources = {
@@ -139,4 +132,6 @@ def test_only_fukuoka_and_hokkaido_are_marked_reviewed():
         for source in registry["plan_sources"]
         if source["review_status"] in {"reviewed", "verified"}
     }
-    assert reviewed_codes == reviewed_plan_sources == {"01", "40"}
+    assert reviewed_codes == reviewed_plan_sources == {
+        f"{number:02d}" for number in range(1, 48)
+    }

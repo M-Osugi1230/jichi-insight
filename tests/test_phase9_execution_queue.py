@@ -57,32 +57,31 @@ def test_regional_batches_cover_every_queue_item_once():
             assert items[code]["region"] == batch["region"]
 
 
-def test_all_seven_batches_are_indexed_without_overstating_review():
+def test_all_seven_batches_are_reviewed_without_overstating_achievement():
     queue = load(QUEUE_PATH)
     items = {item["prefecture_code"]: item for item in queue["items"]}
-    indexed_codes = {
+    source_codes = {
         code
         for path in SOURCE_REGISTRY_PATHS
         for code in load(path)["prefecture_codes"]
     }
 
-    assert queue["status"] == "in_progress"
-    assert len(indexed_codes) == 38
-    assert indexed_codes == set(items)
+    assert queue["status"] == "complete"
+    assert len(source_codes) == 38
+    assert source_codes == set(items)
     assert all(item["policy_plan_status"] == "indexed" for item in queue["items"])
     assert all(
         item["current_plan_status"] == "current_confirmed"
         for item in queue["items"]
     )
     assert all(
-        items[code]["numeric_target_status"] == "indexed" for code in indexed_codes
+        items[code]["numeric_target_status"] == "reviewed" for code in source_codes
     )
+    assert all(items[code]["review_status"] == "reviewed" for code in source_codes)
     assert all(
-        items[code]["review_status"] == "source_indexing" for code in indexed_codes
-    )
-    assert all(
-        "Evidence付きReviewedデータへ昇格" in items[code]["next_action"]
-        for code in indexed_codes
+        "主要数値目標の原文行・資料位置・EvidenceをReviewed化済み"
+        in items[code]["next_action"]
+        for code in source_codes
     )
     assert sum(
         item["numeric_target_status"] in {"indexed", "reviewed"}
@@ -90,7 +89,7 @@ def test_all_seven_batches_are_indexed_without_overstating_review():
     ) == 38
     assert sum(
         item["numeric_target_status"] == "reviewed" for item in queue["items"]
-    ) == 0
+    ) == 38
 
 
 def test_quality_rules_block_incomparable_rankings_and_unsupported_numbers():

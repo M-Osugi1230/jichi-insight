@@ -1,0 +1,37 @@
+{
+  "id": "phase9-reviewed-source-overrides",
+  "updated_at": "2026-07-22",
+  "records": [
+    {
+      "prefecture_code": "26",
+      "source_id": "kyoto-comprehensive-plan-numeric-targets",
+      "title": "京都府総合計画詳細版 4.基本計画の数値目標",
+      "url": "https://www.pref.kyoto.jp/shinsougoukeikaku/advanced.html",
+      "reason": "旧音声読み上げ階層ではなく、令和4年12月改定後の現行総合計画詳細版にある基本計画数値目標（169～183ページ）をReviewed抽出の正本とする。",
+      "checked_at": "2026-07-22"
+    },
+    {
+      "prefecture_code": "29",
+      "source_id": "nara-policy-collection-2026-targets",
+      "title": "奈良県政策集＜令和8年度版＞ 全体版",
+      "url": "https://www.pref.nara.lg.jp/documents/18365/20260310092157.pdf",
+      "reason": "旧サイトの案内ページではなく、2026年3月更新の現行政策集各分野ページからリンクされる令和8年度版全体PDFをReviewed抽出の正本とする。",
+      "checked_at": "2026-07-22"
+    },
+    {
+      "prefecture_code": "41",
+      "source_id": "saga-policy-direction-2023-indicators",
+      "title": "令和6年度 決算説明報告書・佐賀県施策方針2023実施状況報告書",
+      "url": "https://www.pref.saga.lg.jp/kiji003117409/3_117409_376344_up_aqe4xr00.pdf",
+      "reason": "施策方針本体は定性的な将来像と主な取組が中心で数値目標表を持たないため、現行施策方針の目指す方向性・基準値・年度実績を掲載する公式実施状況報告書をReviewed抽出の正本とする。",
+      "checked_at": "2026-07-22",
+      "fallback_sources": [
+        {
+          "title": "令和5年度 決算説明報告書・佐賀県施策方針2023実施状況報告書",
+          "url": "https://www.pref.saga.lg.jp/kiji003111188/3_111188_340384_up_x8hmax1a.pdf",
+          "reason": "最新の令和6年度公式PDFが継続的な503で取得不能な場合に限り、同じ現行施策方針2023の基準値・目指す方向性・年度実績を掲載する前年度公式報告書を使用する。最新年度の実績とは扱わない。"
+        }
+      ]
+    }
+  ]
+}

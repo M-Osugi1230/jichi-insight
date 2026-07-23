@@ -9,6 +9,7 @@ INVENTORY_PATH = ROOT / "data/catalog/nationwide_source_inventory.json"
 SCHEMA_PATH = ROOT / "schemas/nationwide_source_inventory.schema.json"
 COVERAGE_PATH = ROOT / "data/catalog/prefecture_coverage.json"
 QUEUE_PATH = ROOT / "data/catalog/nationwide_policy_review_queue.json"
+PHASE9_SUMMARY_PATH = ROOT / "data/catalog/phase9_review_summary.json"
 
 
 def load(path: Path):
@@ -48,6 +49,7 @@ def test_inventory_summary_is_derived_from_records():
     categories = inventory["categories"]
     statuses = inventory["status_order"]
 
+    assert inventory["summary"]["prefecture_count"] == 47
     for category in categories:
         counts = Counter(
             record["sources"][category] for record in inventory["records"]
@@ -61,6 +63,10 @@ def test_inventory_summary_is_derived_from_records():
 def test_source_depth_is_conservative_and_evidence_backed():
     records = {
         record["prefecture_code"]: record for record in load(INVENTORY_PATH)["records"]
+    }
+    phase9_codes = {
+        record["prefecture_code"]
+        for record in load(PHASE9_SUMMARY_PATH)["records"]
     }
 
     assert records["01"]["sources"] == {
@@ -88,14 +94,20 @@ def test_source_depth_is_conservative_and_evidence_backed():
         "project_evaluation": "not_indexed",
     }
 
-    for code, record in records.items():
-        if code not in {"01", "04", "40"}:
-            assert record["sources"]["policy_plan"] == "indexed"
-            assert all(
-                status == "not_indexed"
-                for category, status in record["sources"].items()
-                if category != "policy_plan"
-            )
+    assert all(
+        record["sources"]["policy_plan"] == "reviewed"
+        and record["sources"]["kpi_source"] == "reviewed"
+        for record in records.values()
+    )
+    for code in phase9_codes:
+        assert records[code]["sources"] == {
+            "policy_plan": "reviewed",
+            "implementation_plan": "not_indexed",
+            "kpi_source": "reviewed",
+            "annual_evaluation": "not_indexed",
+            "budget": "not_indexed",
+            "project_evaluation": "not_indexed",
+        }
 
 
 def test_no_prefecture_is_mistakenly_marked_complete():

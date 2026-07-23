@@ -32,6 +32,7 @@ REQUIRED_FILES = [
     "executives/index.html",
     "methodology/index.html",
     "municipalities/index.html",
+    "municipalities/phase9/index.html",
     "municipalities/hokkaido/index.html",
     "municipalities/miyagi/index.html",
     "municipalities/tokyo/index.html",
@@ -60,7 +61,6 @@ BASE_PAGE_REQUIREMENTS: dict[str, list[str]] = {
         "47都道府県を、資料の深さから探す。",
         "全国の入口整備",
         "PHASE 7 DATA GATE",
-        "いま、深く読める9都道府県。",
         "東京都の政策目標を見る",
         "愛知県の進捗指標を見る",
         "大阪府の政策指標を見る",
@@ -75,6 +75,12 @@ BASE_PAGE_REQUIREMENTS: dict[str, list[str]] = {
         "年度評価",
         "予算・決算",
         "事業評価",
+    ],
+    "municipalities/phase9/index.html": [
+        "38県の数値目標を、原文とEvidenceから読む。",
+        "Evidence coverage",
+        "比較不能を保持",
+        "政策評価は未判定",
     ],
     "municipalities/hokkaido/index.html": [
         "北海道の政策指標を、原文と期間から読む。",
@@ -215,26 +221,46 @@ def catalog_source_count() -> int:
     return sum(len(load_json(path)["records"]) for path in SOURCE_CATALOG_PATHS)
 
 
+def route_file(route: str) -> str:
+    return f"{route.strip('/')}/index.html"
+
+
+def published_required_files() -> set[str]:
+    published = load_json(ROOT / "data/catalog/published_prefecture_pages.json")
+    return {route_file(record["route"]) for record in published["records"]}
+
+
 def nationwide_requirements() -> dict[str, list[str]]:
     coverage = load_json(ROOT / "data/catalog/prefecture_coverage.json")
-    published = load_json(ROOT / "data/catalog/published_prefecture_pages.json")
-    required_files = {
-        f"{record['route'].strip('/')}/index.html" for record in published["records"]
-    }
-    missing_required_files = required_files - set(REQUIRED_FILES)
-    if missing_required_files:
-        raise ValueError(
-            "Published prefecture routes are missing from REQUIRED_FILES: "
-            + ", ".join(sorted(missing_required_files))
-        )
-
-    return {
+    requirements: dict[str, list[str]] = {
         "municipalities/index.html": [
             *(record["name"] for record in coverage["records"]),
             "自治体ページ公開中",
             "公開状態",
         ]
     }
+    summary_path = ROOT / "data/catalog/phase9_review_summary.json"
+    if not summary_path.is_file():
+        return requirements
+
+    summary = load_json(summary_path)
+    requirements.setdefault("municipalities/phase9/index.html", []).extend(
+        [
+            str(summary["prefecture_count"]),
+            str(summary["reviewed_target_statement_count"]),
+            str(summary["evidence_packet_count"]),
+            f"{summary['evidence_coverage_percent']}%",
+        ]
+    )
+    for record in summary["records"]:
+        requirements[route_file(record["route"])] = [
+            record["name"],
+            record["plan_title"],
+            "Reviewed / Not comparable",
+            "Evidence ID",
+            "比較対象外の理由",
+        ]
+    return requirements
 
 
 def miyagi_requirements() -> dict[str, list[str]]:
@@ -288,8 +314,9 @@ def normalized_html(path: Path) -> str:
 def main() -> int:
     args = parse_args()
     failures: list[str] = []
+    required_files = set(REQUIRED_FILES) | published_required_files()
 
-    for relative_path in REQUIRED_FILES:
+    for relative_path in sorted(required_files):
         if not (EXPORT_ROOT / relative_path).is_file():
             failures.append(f"Missing static export file: {relative_path}")
 

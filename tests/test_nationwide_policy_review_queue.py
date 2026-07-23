@@ -7,6 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 QUEUE_PATH = ROOT / "data/catalog/nationwide_policy_review_queue.json"
 SCHEMA_PATH = ROOT / "schemas/nationwide_policy_review_queue.schema.json"
 COVERAGE_PATH = ROOT / "data/catalog/prefecture_coverage.json"
+PHASE9_QUEUE_PATH = ROOT / "data/catalog/phase9_execution_queue.json"
 
 
 def load(path: Path):
@@ -35,6 +36,9 @@ def test_nationwide_queue_preserves_reference_wave_and_active_work():
     queue = load(QUEUE_PATH)
     by_code = {item["prefecture_code"]: item for item in queue["items"]}
 
+    # This is the historical Phase 7 execution queue. Later Phase 8/9 review
+    # completion is represented by their own manifests rather than rewriting
+    # the original wave and active-work history.
     assert queue["active_prefecture_code"] == "04"
     assert queue["completed_prefecture_codes"] == ["40", "01"]
     assert by_code["40"]["status"] == "reviewed_reference"
@@ -73,14 +77,26 @@ def test_all_remaining_prefectures_advance_to_source_inventory():
     )
 
 
-def test_nationwide_queue_and_coverage_quality_states_agree():
+def test_nationwide_queue_and_current_review_manifests_agree():
     queue = load(QUEUE_PATH)
     coverage = load(COVERAGE_PATH)
+    phase9 = load(PHASE9_QUEUE_PATH)
     by_code = {item["prefecture_code"]: item for item in queue["items"]}
 
     review_required = set(coverage["current_plan_review_required_codes"])
     reviewed = set(coverage["reviewed_prefecture_codes"])
     confirmed = set(coverage["current_plan_confirmed_codes"])
+    historical_references = {
+        code
+        for code, item in by_code.items()
+        if item["status"] == "reviewed_reference"
+    }
+    phase9_reviewed = {
+        item["prefecture_code"]
+        for item in phase9["items"]
+        if item["review_status"] == "reviewed"
+    }
+    anchor_codes = set(phase9["excluded_regional_anchor_codes"])
 
     assert review_required == set()
     assert {
@@ -88,10 +104,8 @@ def test_nationwide_queue_and_coverage_quality_states_agree():
         for code, item in by_code.items()
         if item["status"] == "source_review_required"
     } == set()
-    assert {
-        code
-        for code, item in by_code.items()
-        if item["status"] == "reviewed_reference"
-    } == reviewed
-    assert confirmed == {item["prefecture_code"] for item in queue["items"]}
+    assert historical_references <= reviewed
+    assert phase9_reviewed == confirmed - anchor_codes
+    assert anchor_codes <= reviewed
+    assert reviewed == confirmed == {f"{number:02d}" for number in range(1, 48)}
     assert all(item["next_action"].strip() for item in queue["items"])

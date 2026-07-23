@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 
+import { loadPhase9Summary } from "@/lib/phase9Targets";
 import { policyTargetPages } from "@/lib/policyTargets";
 
 const siteUrl = "https://m-osugi1230.github.io/jichi-insight";
@@ -15,6 +16,7 @@ const staticRoutes = [
   "/executives/source-requests",
   "/methodology",
   "/municipalities",
+  "/municipalities/phase9",
   "/municipalities/hokkaido",
   "/municipalities/miyagi",
   "/municipalities/tokyo",
@@ -33,7 +35,8 @@ const staticRoutes = [
 const policyTargetRoutes = policyTargetPages.map(
   (page) => `/policies/fukuoka-prefecture/initiatives/${page.slug}`,
 );
-const routes = [...staticRoutes, ...policyTargetRoutes];
+const phase9Routes = loadPhase9Summary().records.map((record) => record.route);
+const routes = [...staticRoutes, ...policyTargetRoutes, ...phase9Routes];
 
 export const dynamic = "force-static";
 

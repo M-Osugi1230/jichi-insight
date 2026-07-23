@@ -44,9 +44,7 @@ def referenced_sources(value: Any) -> set[str]:
         for key, child in value.items():
             source_keys = {"sources", "source_ids", "manifesto_source_ids"}
             if key in source_keys and isinstance(child, list):
-                result.update(
-                    item for item in child if isinstance(item, str)
-                )
+                result.update(item for item in child if isinstance(item, str))
             result.update(referenced_sources(child))
     elif isinstance(value, list):
         for child in value:
@@ -57,13 +55,24 @@ def referenced_sources(value: Any) -> set[str]:
 def test_all_reviewed_municipalities_have_complete_evidence() -> None:
     known_sources = source_ids()
     reviewed_root = ROOT / "data" / "reviewed"
-    municipalities = sorted(
-        path for path in reviewed_root.iterdir() if path.is_dir()
-    )
-    assert [path.name for path in municipalities] == [
+    legacy_names = [
         "fukuoka-city",
         "fukuoka-prefecture",
         "kitakyushu-city",
+    ]
+    directory_names = sorted(path.name for path in reviewed_root.iterdir() if path.is_dir())
+
+    # Phase 9 uses its own target-statement and Evidence Packet schemas and is
+    # exhaustively validated in test_phase9_reviewed_target_statements.py. Keep
+    # this legacy fiscal-record test scoped to municipality.json directories.
+    assert directory_names == [*legacy_names, "phase9"]
+    municipalities = [reviewed_root / name for name in legacy_names]
+
+    phase9_summary = load_json(ROOT / "data/catalog/phase9_review_summary.json")
+    assert phase9_summary["status"] == "reviewed_complete"
+    assert phase9_summary["prefecture_count"] == 38
+    assert phase9_summary["evidence_packet_count"] == phase9_summary[
+        "reviewed_target_statement_count"
     ]
 
     total_records = 0
@@ -72,10 +81,7 @@ def test_all_reviewed_municipalities_have_complete_evidence() -> None:
 
     for directory in municipalities:
         municipality = load_json(directory / "municipality.json")
-        assert validate(
-            "schemas/municipality.schema.json",
-            municipality,
-        ) == []
+        assert validate("schemas/municipality.schema.json", municipality) == []
 
         record_files = sorted(directory.glob("*records.json"))
         packet_files = sorted(directory.glob("*evidence_packets.json"))
@@ -96,8 +102,7 @@ def test_all_reviewed_municipalities_have_complete_evidence() -> None:
             record["id"] for record in records
         }
         assert all(
-            record["municipality_id"] == municipality["id"]
-            for record in records
+            record["municipality_id"] == municipality["id"] for record in records
         )
         assert all(
             record["review_status"] in {"reviewed", "verified"}

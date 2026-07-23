@@ -60,6 +60,7 @@ routes=(
   "/data-quality/"
   "/methodology/"
   "/municipalities/"
+  "/municipalities/phase9/"
   "/municipalities/hokkaido/"
   "/municipalities/miyagi/"
   "/municipalities/tokyo/"
@@ -75,10 +76,27 @@ routes=(
   "/manifest.webmanifest"
 )
 
+if [[ -f data/catalog/published_prefecture_pages.json ]]; then
+  while IFS= read -r route; do
+    routes+=("${route%/}/")
+  done < <(
+    python - <<'PY'
+import json
+from pathlib import Path
+
+registry = json.loads(
+    Path("data/catalog/published_prefecture_pages.json").read_text(encoding="utf-8")
+)
+for record in registry["records"]:
+    print(record["route"])
+PY
+  )
+fi
+
 printf '\nRoute checks:\n' >> "$REPORT"
-for route in "${routes[@]}"; do
+printf '%s\n' "${routes[@]}" | awk '!seen[$0]++' | while IFS= read -r route; do
   status="$(fetch_route "$route" /dev/null)"
-  printf '%-48s HTTP %s\n' "$route" "$status" >> "$REPORT"
+  printf '%-55s HTTP %s\n' "$route" "$status" >> "$REPORT"
   if [[ "$status" != "200" ]]; then
     cat "$REPORT"
     exit 1
@@ -90,7 +108,7 @@ check_content() {
   shift
   local status
   status="$(fetch_route "$route" "$CONTENT_FILE")"
-  printf '\nContent check %-33s HTTP %s\n' "$route" "$status" >> "$REPORT"
+  printf '\nContent check %-40s HTTP %s\n' "$route" "$status" >> "$REPORT"
   if [[ "$status" != "200" ]]; then
     cat "$REPORT"
     exit 1
@@ -112,7 +130,6 @@ check_content() {
 check_content "/municipalities/" \
   "47都道府県を、資料の深さから探す。" \
   "全国の入口整備" \
-  "いま、深く読める9都道府県。" \
   "東京都の政策目標を見る" \
   "愛知県の進捗指標を見る" \
   "大阪府の政策指標を見る" \
@@ -129,8 +146,7 @@ check_content "/municipalities/" \
   "予算・決算" \
   "事業評価" \
   "自治体ページ公開中" \
-  "公開状態" \
-  "未公開"
+  "公開状態"
 
 printf '\nPrefecture coverage checks:\n' >> "$REPORT"
 while IFS= read -r prefecture_name; do
@@ -151,6 +167,32 @@ for record in registry["records"]:
     print(record["name"])
 PY
 )
+
+check_content "/municipalities/phase9/" \
+  "38県の数値目標を、原文とEvidenceから読む。" \
+  "Evidence coverage" \
+  "比較不能を保持" \
+  "政策評価は未判定"
+
+if [[ -f data/catalog/phase9_review_summary.json ]]; then
+  while IFS=$'\t' read -r route name plan_title; do
+    check_content "${route%/}/" \
+      "$name" \
+      "$plan_title" \
+      "Reviewed / Not comparable" \
+      "Evidence ID" \
+      "比較対象外の理由"
+  done < <(
+    python - <<'PY'
+import json
+from pathlib import Path
+
+summary = json.loads(Path("data/catalog/phase9_review_summary.json").read_text(encoding="utf-8"))
+for record in summary["records"]:
+    print(f"{record['route']}\t{record['name']}\t{record['plan_title']}")
+PY
+  )
+fi
 
 check_content "/municipalities/hokkaido/" \
   "北海道の政策指標を、原文と期間から読む。" \
@@ -227,5 +269,6 @@ check_content "/data-quality/" \
 
 printf '\nPhase 7 nationwide registry checks: PASS\n' >> "$REPORT"
 printf 'Phase 8 all nine regional anchors reviewed publication checks: PASS\n' >> "$REPORT"
+printf 'Phase 9 all 38 remaining prefectures reviewed publication checks: PASS\n' >> "$REPORT"
 printf 'Result: PASS\n' >> "$REPORT"
 cat "$REPORT"
