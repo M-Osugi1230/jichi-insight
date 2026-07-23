@@ -38,8 +38,17 @@ jobs:
       - name: Validate repository state
         run: python scripts/validate_repository.py
 
-      - name: Test measure 16 state
-        run: pytest tests/test_miyagi_kpi_actuals_measure16.py
+      - name: Test measure 16 schema and Evidence
+        run: pytest tests/test_miyagi_kpi_actuals_measure16.py::test_measure16_schema_and_evidence_coverage
+
+      - name: Test measure 16 linkage boundaries
+        run: pytest tests/test_miyagi_kpi_actuals_measure16.py::test_measure16_links_and_definition_boundaries
+
+      - name: Test measure 16 latest values
+        run: pytest tests/test_miyagi_kpi_actuals_measure16.py::test_measure16_latest_values_rates_and_grades
+
+      - name: Test measure 16 catalog state
+        run: pytest tests/test_miyagi_kpi_actuals_measure16.py::test_measure16_catalog_connection_statuses
 
       - name: Test Miyagi aggregate totals
         run: pytest tests/test_miyagi_catalog_totals.py
