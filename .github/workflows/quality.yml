@@ -62,11 +62,15 @@ jobs:
       - name: Test reviewed sequence
         run: pytest tests/test_miyagi_kpi_catalog_groups_53_68.py
 
-      - name: Lint changed Python
+      - name: Lint measure 17 materializer
+        run: ruff check scripts/apply_miyagi_measure17_actuals.py
+
+      - name: Lint measure 17 tests
+        run: ruff check tests/test_miyagi_kpi_actuals_measure17.py
+
+      - name: Lint aggregate tests
         run: |
           ruff check \
-            scripts/apply_miyagi_measure17_actuals.py \
-            tests/test_miyagi_kpi_actuals_measure17.py \
             tests/test_miyagi_catalog_totals.py \
             tests/test_wave1_policy_review_queue.py \
             tests/test_miyagi_kpi_catalog_groups_114_128.py \
