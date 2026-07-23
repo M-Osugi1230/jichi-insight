@@ -36,6 +36,7 @@ export default function Phase9MunicipalitiesPage() {
           </p>
           <div className={styles.introLinks}>
             <Link href="/municipalities">全国47都道府県へ戻る</Link>
+            <Link href="/municipalities/phase10">目標・実績・予算の接続状況を見る</Link>
             <Link href="/methodology">抽出・評価方法を確認する</Link>
           </div>
         </PageIntro>
