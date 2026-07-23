@@ -62,8 +62,23 @@ jobs:
       - name: Test reviewed sequence
         run: pytest tests/test_miyagi_kpi_catalog_groups_53_68.py
 
-      - name: Lint measure 17 materializer
-        run: ruff check scripts/apply_miyagi_measure17_actuals.py
+      - name: Lint materializer errors
+        run: ruff check --select E scripts/apply_miyagi_measure17_actuals.py
+
+      - name: Lint materializer pyflakes
+        run: ruff check --select F scripts/apply_miyagi_measure17_actuals.py
+
+      - name: Lint materializer imports
+        run: ruff check --select I scripts/apply_miyagi_measure17_actuals.py
+
+      - name: Lint materializer upgrades
+        run: ruff check --select UP scripts/apply_miyagi_measure17_actuals.py
+
+      - name: Lint materializer bugbear
+        run: ruff check --select B scripts/apply_miyagi_measure17_actuals.py
+
+      - name: Lint materializer simplify
+        run: ruff check --select SIM scripts/apply_miyagi_measure17_actuals.py
 
       - name: Lint measure 17 tests
         run: ruff check tests/test_miyagi_kpi_actuals_measure17.py
