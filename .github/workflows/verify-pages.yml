@@ -33,66 +33,88 @@ jobs:
           ref: main
 
       - name: Verify deployed pages
+        id: verify
+        continue-on-error: true
         env:
           SITE_ROOT: https://m-osugi1230.github.io/jichi-insight
           DEPLOYED_SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
         run: |
-          set -euo pipefail
+          set -uo pipefail
           cache_bust="verify=${DEPLOYED_SHA}"
+          : > /tmp/verification.log
           for attempt in $(seq 1 20); do
-            if curl --fail --silent --show-error --location \
-              "${SITE_ROOT}/?${cache_bust}" -o /tmp/home.html \
-              && curl --fail --silent --show-error --location \
-              "${SITE_ROOT}/municipalities/miyagi/?${cache_bust}" -o /tmp/miyagi.html \
-              && curl --fail --silent --show-error --location \
-              "${SITE_ROOT}/robots.txt?${cache_bust}" -o /tmp/robots.txt \
-              && curl --fail --silent --show-error --location \
-              "${SITE_ROOT}/sitemap.xml?${cache_bust}" -o /tmp/sitemap.xml \
-              && grep -Fq "508件の実績推移を公開" /tmp/home.html \
-              && grep -Fq "全128目標" /tmp/miyagi.html \
-              && grep -Fq "508件の実績" /tmp/miyagi.html \
-              && grep -Fq "Sitemap:" /tmp/robots.txt \
-              && grep -Fq "/jichi-insight/municipalities/miyagi/" /tmp/sitemap.xml; then
-              echo "Public verification passed on attempt ${attempt}."
+            home_code=$(curl --silent --show-error --location --output /tmp/home.html --write-out '%{http_code}' "${SITE_ROOT}/?${cache_bust}" || true)
+            miyagi_code=$(curl --silent --show-error --location --output /tmp/miyagi.html --write-out '%{http_code}' "${SITE_ROOT}/municipalities/miyagi/?${cache_bust}" || true)
+            robots_code=$(curl --silent --show-error --location --output /tmp/robots.txt --write-out '%{http_code}' "${SITE_ROOT}/robots.txt?${cache_bust}" || true)
+            sitemap_code=$(curl --silent --show-error --location --output /tmp/sitemap.xml --write-out '%{http_code}' "${SITE_ROOT}/sitemap.xml?${cache_bust}" || true)
+            home_copy=false; grep -Fq "508件の実績推移を公開" /tmp/home.html 2>/dev/null && home_copy=true
+            miyagi_targets=false; grep -Fq "全128目標" /tmp/miyagi.html 2>/dev/null && miyagi_targets=true
+            miyagi_actuals=false; grep -Fq "508件の実績" /tmp/miyagi.html 2>/dev/null && miyagi_actuals=true
+            robots_sitemap=false; grep -Fq "Sitemap:" /tmp/robots.txt 2>/dev/null && robots_sitemap=true
+            sitemap_miyagi=false; grep -Fq "/jichi-insight/municipalities/miyagi/" /tmp/sitemap.xml 2>/dev/null && sitemap_miyagi=true
+            printf 'attempt=%s home=%s miyagi=%s robots=%s sitemap=%s home_copy=%s miyagi_targets=%s miyagi_actuals=%s robots_sitemap=%s sitemap_miyagi=%s\n' \
+              "$attempt" "$home_code" "$miyagi_code" "$robots_code" "$sitemap_code" "$home_copy" "$miyagi_targets" "$miyagi_actuals" "$robots_sitemap" "$sitemap_miyagi" | tee -a /tmp/verification.log
+            if [ "$home_code" = 200 ] && [ "$miyagi_code" = 200 ] && [ "$robots_code" = 200 ] && [ "$sitemap_code" = 200 ] \
+              && [ "$home_copy" = true ] && [ "$miyagi_targets" = true ] && [ "$miyagi_actuals" = true ] \
+              && [ "$robots_sitemap" = true ] && [ "$sitemap_miyagi" = true ]; then
+              echo verified > /tmp/verification-status
               exit 0
             fi
-            echo "Public site is not current yet; retrying (${attempt}/20)."
             sleep 15
           done
-          echo "Public verification failed after all retries."
+          echo failed > /tmp/verification-status
           exit 1
 
-      - name: Record verified deployment
+      - name: Record publication status
+        if: always()
         env:
           DEPLOYED_SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
           WORKFLOW_RUN_URL: ${{ github.event.workflow_run.html_url || format('{0}/{1}/actions/runs/{2}', github.server_url, github.repository, github.run_id) }}
         run: |
           set -euo pipefail
           verified_at=$(date -u +%Y-%m-%dT%H:%M:%SZ)
-          cat > .github/publication-status.json <<EOF
-          {
-            "status": "verified",
-            "site_url": "https://m-osugi1230.github.io/jichi-insight/",
-            "deployed_commit_sha": "${DEPLOYED_SHA}",
-            "verified_at": "${verified_at}",
-            "deployment_workflow_run_url": "${WORKFLOW_RUN_URL}",
-            "checks": [
-              "homepage_http_200",
-              "homepage_508_annual_results",
-              "miyagi_page_http_200",
-              "miyagi_128_targets",
-              "miyagi_508_annual_results",
-              "robots_http_200_and_sitemap_declared",
-              "sitemap_http_200_and_miyagi_route_present"
-            ]
-          }
-          EOF
+          status=$(cat /tmp/verification-status 2>/dev/null || echo failed)
+          diagnostic=$(tail -n 1 /tmp/verification.log 2>/dev/null || echo 'verification did not start')
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          Path('.github/publication-status.json').write_text(
+              json.dumps(
+                  {
+                      'status': os.environ['STATUS'],
+                      'site_url': 'https://m-osugi1230.github.io/jichi-insight/',
+                      'deployed_commit_sha': os.environ['DEPLOYED_SHA'],
+                      'verified_at': os.environ['VERIFIED_AT'],
+                      'deployment_workflow_run_url': os.environ['WORKFLOW_RUN_URL'],
+                      'diagnostic': os.environ['DIAGNOSTIC'],
+                  },
+                  ensure_ascii=False,
+                  indent=2,
+              ) + '\n',
+              encoding='utf-8',
+          )
+          PY
+        env:
+          DEPLOYED_SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
+          WORKFLOW_RUN_URL: ${{ github.event.workflow_run.html_url || format('{0}/{1}/actions/runs/{2}', github.server_url, github.repository, github.run_id) }}
+          STATUS: ${{ steps.verify.outcome == 'success' && 'verified' || 'failed' }}
+          VERIFIED_AT: ${{ github.event.repository.updated_at }}
+          DIAGNOSTIC: ${{ steps.verify.outcome }}
+
+      - name: Commit publication status
+        if: always()
+        run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add .github/publication-status.json
           if git diff --cached --quiet; then
-            echo "Publication marker already current."
             exit 0
           fi
-          git commit -m "Record verified Pages deployment"
+          git commit -m "Record Pages publication status"
           git push origin HEAD:main
+
+      - name: Fail when public verification failed
+        if: steps.verify.outcome != 'success'
+        run: exit 1
