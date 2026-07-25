@@ -82,12 +82,12 @@ def test_same_period_direction_and_actual_boundaries_are_preserved():
         123: "linked",
         124: "linked",
         125: "linked",
+        126: "needs_review",
+        127: "linked",
+        128: "linked",
     }
     for number, group in groups.items():
-        assert group["actual_linkage_status"] == expected_linkage.get(
-            number,
-            "not_linked",
-        )
+        assert group["actual_linkage_status"] == expected_linkage[number]
         assert group["evaluation_status"] == "not_assessed"
         late_values = [series["values"][3] for series in group["series"]]
         assert all(value["status"] == "not_set" for value in late_values)
