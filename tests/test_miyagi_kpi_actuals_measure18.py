@@ -37,11 +37,13 @@ def test_measure18_links_and_definition_boundary():
         "policy-indicator-miyagi-148",
         "policy-indicator-miyagi-149",
     }
-    assert records["policy-indicator-miyagi-147"]["linkage_status"] == "needs_review"
-    assert records["policy-indicator-miyagi-147"]["match_basis"] == "definition_changed"
-    assert "44.3%" in records["policy-indicator-miyagi-147"]["comparability_note_original"]
-    assert "0.0%" in records["policy-indicator-miyagi-147"]["comparability_note_original"]
-    assert "直接接続しない" in records["policy-indicator-miyagi-147"]["comparability_note_original"]
+    bridge = records["policy-indicator-miyagi-147"]
+    assert bridge["linkage_status"] == "needs_review"
+    assert bridge["match_basis"] == "definition_changed"
+    assert bridge["confidence"] == "medium"
+    assert "44.3%" in bridge["comparability_note_original"]
+    assert "0.0%" in bridge["comparability_note_original"]
+    assert "直接接続しない" in bridge["comparability_note_original"]
     assert records["policy-indicator-miyagi-148"]["linkage_status"] == "linked"
     assert records["policy-indicator-miyagi-149"]["linkage_status"] == "linked"
     assert sum(len(record["annual_results"]) for record in records.values()) == 12
@@ -70,7 +72,7 @@ def test_measure18_catalog_connection_statuses():
     groups = {group["target_group_number"]: group for group in load(CATALOG)["items"]}
     assert set(groups) == {126, 127, 128}
     assert groups[126]["actual_linkage_status"] == "needs_review"
-    assert groups[126]["confidence"] == "medium"
+    assert groups[126]["confidence"] == "high"
     assert groups[127]["actual_linkage_status"] == "linked"
     assert groups[128]["actual_linkage_status"] == "linked"
     assert all(group["evaluation_status"] == "not_assessed" for group in groups.values())
