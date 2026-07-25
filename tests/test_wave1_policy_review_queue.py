@@ -102,7 +102,13 @@ def test_recent_reviewed_references_keep_their_boundaries():
     assert all(token in items["27"]["next_action"] for token in ["83", "91", "Evidence 83"])
     assert all(token in items["23"]["next_action"] for token in ["56", "62", "61", "29"])
     assert all(token in items["13"]["next_action"] for token in ["60", "25", "304", "Evidence"])
-    assert all(token in items["04"]["next_action"] for token in ["128", "149", "106", "18", "43"])
+
+    miyagi = items["04"]
+    assert miyagi["next_gate"] == "budget_linkage"
+    assert all(
+        token in miyagi["next_action"]
+        for token in ["施策1〜18", "128", "149", "108", "19", "22", "予算", "事業", "契約"]
+    )
 
 
 def test_queue_sources_and_descriptions():
