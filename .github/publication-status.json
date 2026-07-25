@@ -1,9 +1,9 @@
 {
-  "status": "failed",
+  "status": "verified",
   "site_url": "https://m-osugi1230.github.io/jichi-insight/",
-  "deployed_commit_sha": "057c239cb38b3bdef328a19e2820ffddd6ddf941",
-  "verified_at": "2026-07-25T16:36:50Z",
-  "deployment_workflow_run_url": "https://github.com/M-Osugi1230/jichi-insight/actions/runs/30165761293",
-  "verification_outcome": "failure",
-  "diagnostic": "attempt=20 home=200 miyagi=200 robots=200 sitemap=200 home_copy=true miyagi_targets=false miyagi_actuals=false robots_sitemap=true sitemap_miyagi=false"
+  "deployed_commit_sha": "ce6f30bee0b8e76764933f0991316db22ea8afe7",
+  "verified_at": "2026-07-25T16:37:11Z",
+  "deployment_workflow_run_url": "https://github.com/M-Osugi1230/jichi-insight/actions/runs/30165989916",
+  "verification_outcome": "success",
+  "diagnostic": "attempt=1 home=200 miyagi=200 robots=200 sitemap=200 home_copy=true miyagi_targets=true miyagi_actuals=true robots_sitemap=true sitemap_miyagi=true"
 }
