@@ -37,6 +37,7 @@ ALL_CATALOGS = [
     POLICY / "miyagi_kpi_catalog_measure15.json",
     POLICY / "miyagi_kpi_catalog_measure16.json",
     POLICY / "miyagi_kpi_catalog_measure17.json",
+    POLICY / "miyagi_kpi_catalog_measure18.json",
 ]
 ACTUALS = sorted(POLICY.glob("miyagi_kpi_actuals_measure*_2024.json"))
 
@@ -134,11 +135,11 @@ def test_evidence_covers_all_16_groups():
     assert all(packet["review_status"] == "reviewed" for packet in packets)
 
 
-def test_all_reviewed_batches_form_125_groups_and_146_series():
+def test_all_reviewed_batches_form_128_groups_and_149_series():
     reviewed = groups(ALL_CATALOGS)
     series = [item for group in reviewed for item in group["series"]]
-    assert [group["target_group_number"] for group in reviewed] == list(range(1, 126))
-    assert [item["series_number"] for item in series] == list(range(1, 147))
+    assert [group["target_group_number"] for group in reviewed] == list(range(1, 129))
+    assert [item["series_number"] for item in series] == list(range(1, 150))
     connected_groups = {
         group["target_group_number"]
         for group in reviewed
