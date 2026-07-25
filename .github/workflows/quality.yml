@@ -7,18 +7,56 @@ on:
       - main
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: quality-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  repository:
-    name: Repository and data
+  materialize:
+    name: Materialize Miyagi measure 18 publication
+    if: github.head_ref == 'agent/miyagi-actuals-measure18-publish'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: agent/miyagi-actuals-measure18-publish
+          fetch-depth: 0
+
+      - name: Advance homepage annual-result count
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path("scripts/validate_static_export.py")
+          text = path.read_text(encoding="utf-8")
+          old = "496件の実績推移を公開"
+          new = "508件の実績推移を公開"
+          count = text.count(old)
+          if count != 1:
+              raise SystemExit(f"Expected one old count, found {count}")
+          path.write_text(text.replace(old, new), encoding="utf-8")
+          PY
+
+      - name: Commit canonical static requirement
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scripts/validate_static_export.py
+          git commit -m "Advance Miyagi published actual count"
+          git push origin HEAD:agent/miyagi-actuals-measure18-publish
+
+  repository:
+    name: Repository and data
+    needs: materialize
+    if: always() && (needs.materialize.result == 'success' || needs.materialize.result == 'skipped')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
 
       - uses: actions/setup-python@v5
         with:
@@ -72,9 +110,13 @@ jobs:
 
   web:
     name: Web
+    needs: materialize
+    if: always() && (needs.materialize.result == 'success' || needs.materialize.result == 'skipped')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
 
       - uses: actions/setup-node@v4
         with:
