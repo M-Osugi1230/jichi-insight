@@ -1,6 +1,11 @@
 name: Verify Pages Publication
 
 on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - .github/publication-status.json
   workflow_run:
     workflows:
       - Deploy Pages
@@ -18,8 +23,9 @@ jobs:
   verify:
     name: Verify public site
     if: >-
-      github.event.workflow_run.conclusion == 'success' &&
-      github.event.workflow_run.head_branch == 'main'
+      github.event_name == 'push' ||
+      (github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.head_branch == 'main')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -29,7 +35,7 @@ jobs:
       - name: Verify deployed pages
         env:
           SITE_ROOT: https://m-osugi1230.github.io/jichi-insight
-          DEPLOYED_SHA: ${{ github.event.workflow_run.head_sha }}
+          DEPLOYED_SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
         run: |
           set -euo pipefail
           cache_bust="verify=${DEPLOYED_SHA}"
@@ -58,8 +64,8 @@ jobs:
 
       - name: Record verified deployment
         env:
-          DEPLOYED_SHA: ${{ github.event.workflow_run.head_sha }}
-          WORKFLOW_RUN_URL: ${{ github.event.workflow_run.html_url }}
+          DEPLOYED_SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
+          WORKFLOW_RUN_URL: ${{ github.event.workflow_run.html_url || format('{0}/{1}/actions/runs/{2}', github.server_url, github.repository, github.run_id) }}
         run: |
           set -euo pipefail
           verified_at=$(date -u +%Y-%m-%dT%H:%M:%SZ)
