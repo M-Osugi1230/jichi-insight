@@ -209,8 +209,8 @@ export default function MiyagiPage() {
             <h2>ここから先は、まだ評価しない。</h2>
           </div>
           <ul>
-            <li><strong>対応要確認 15系列</strong><span>定義・対象範囲・名称変更の追加照合</span></li>
-            <li><strong>取組16〜18の年度実績</strong><span>確定評価資料との接続</span></li>
+            <li><strong>対応要確認 {miyagiKpiActualStats.reviewNeededSeries}系列</strong><span>定義・対象範囲・名称変更の追加照合</span></li>
+            <li><strong>確定評価書に対応系列なし 22系列</strong><span>完全な4年系列がないものを未接続として明示</span></li>
             <li><strong>予算・事業・契約</strong><span>指標変化へ寄与した実行内容との接続</span></li>
             <li><strong>政策効果</strong><span>外部要因を含む因果関係の検討</span></li>
           </ul>

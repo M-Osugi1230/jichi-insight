@@ -17,7 +17,7 @@ permissions:
 
 concurrency:
   group: verify-pages-publication
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   verify:
@@ -47,11 +47,11 @@ jobs:
             miyagi_code=$(curl --silent --show-error --location --output /tmp/miyagi.html --write-out '%{http_code}' "${SITE_ROOT}/municipalities/miyagi/?${cache_bust}" || true)
             robots_code=$(curl --silent --show-error --location --output /tmp/robots.txt --write-out '%{http_code}' "${SITE_ROOT}/robots.txt?${cache_bust}" || true)
             sitemap_code=$(curl --silent --show-error --location --output /tmp/sitemap.xml --write-out '%{http_code}' "${SITE_ROOT}/sitemap.xml?${cache_bust}" || true)
-            home_copy=false; grep -Fq "508件の実績推移を公開" /tmp/home.html 2>/dev/null && home_copy=true
-            miyagi_targets=false; grep -Fq "全128目標" /tmp/miyagi.html 2>/dev/null && miyagi_targets=true
-            miyagi_actuals=false; grep -Fq "508件の実績" /tmp/miyagi.html 2>/dev/null && miyagi_actuals=true
-            robots_sitemap=false; grep -Fq "Sitemap:" /tmp/robots.txt 2>/dev/null && robots_sitemap=true
-            sitemap_miyagi=false; grep -Fq "/jichi-insight/municipalities/miyagi/" /tmp/sitemap.xml 2>/dev/null && sitemap_miyagi=true
+            home_copy=false; grep -Eq '508(<!-- -->)?件の実績推移を公開' /tmp/home.html 2>/dev/null && home_copy=true
+            miyagi_targets=false; grep -Eq '全(<!-- -->)?128(<!-- -->)?目標' /tmp/miyagi.html 2>/dev/null && miyagi_targets=true
+            miyagi_actuals=false; grep -Eq '508(<!-- -->)?件の実績' /tmp/miyagi.html 2>/dev/null && miyagi_actuals=true
+            robots_sitemap=false; grep -Fq 'Sitemap:' /tmp/robots.txt 2>/dev/null && robots_sitemap=true
+            sitemap_miyagi=false; grep -Fq '/jichi-insight/municipalities/miyagi' /tmp/sitemap.xml 2>/dev/null && sitemap_miyagi=true
             printf 'attempt=%s home=%s miyagi=%s robots=%s sitemap=%s home_copy=%s miyagi_targets=%s miyagi_actuals=%s robots_sitemap=%s sitemap_miyagi=%s\n' \
               "$attempt" "$home_code" "$miyagi_code" "$robots_code" "$sitemap_code" "$home_copy" "$miyagi_targets" "$miyagi_actuals" "$robots_sitemap" "$sitemap_miyagi" | tee -a /tmp/verification.log
             if [ "$home_code" = 200 ] && [ "$miyagi_code" = 200 ] && [ "$robots_code" = 200 ] && [ "$sitemap_code" = 200 ] \
