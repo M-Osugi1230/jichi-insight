@@ -70,15 +70,17 @@ jobs:
         env:
           DEPLOYED_SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
           WORKFLOW_RUN_URL: ${{ github.event.workflow_run.html_url || format('{0}/{1}/actions/runs/{2}', github.server_url, github.repository, github.run_id) }}
+          VERIFY_OUTCOME: ${{ steps.verify.outcome }}
         run: |
           set -euo pipefail
-          verified_at=$(date -u +%Y-%m-%dT%H:%M:%SZ)
-          status=$(cat /tmp/verification-status 2>/dev/null || echo failed)
-          diagnostic=$(tail -n 1 /tmp/verification.log 2>/dev/null || echo 'verification did not start')
+          export VERIFIED_AT=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          export STATUS=$(cat /tmp/verification-status 2>/dev/null || echo failed)
+          export DIAGNOSTIC=$(tail -n 1 /tmp/verification.log 2>/dev/null || echo 'verification did not start')
           python - <<'PY'
           import json
           import os
           from pathlib import Path
+
           Path('.github/publication-status.json').write_text(
               json.dumps(
                   {
@@ -87,6 +89,7 @@ jobs:
                       'deployed_commit_sha': os.environ['DEPLOYED_SHA'],
                       'verified_at': os.environ['VERIFIED_AT'],
                       'deployment_workflow_run_url': os.environ['WORKFLOW_RUN_URL'],
+                      'verification_outcome': os.environ['VERIFY_OUTCOME'],
                       'diagnostic': os.environ['DIAGNOSTIC'],
                   },
                   ensure_ascii=False,
@@ -95,12 +98,6 @@ jobs:
               encoding='utf-8',
           )
           PY
-        env:
-          DEPLOYED_SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
-          WORKFLOW_RUN_URL: ${{ github.event.workflow_run.html_url || format('{0}/{1}/actions/runs/{2}', github.server_url, github.repository, github.run_id) }}
-          STATUS: ${{ steps.verify.outcome == 'success' && 'verified' || 'failed' }}
-          VERIFIED_AT: ${{ github.event.repository.updated_at }}
-          DIAGNOSTIC: ${{ steps.verify.outcome }}
 
       - name: Commit publication status
         if: always()
