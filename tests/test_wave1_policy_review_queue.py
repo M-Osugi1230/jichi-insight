@@ -102,7 +102,7 @@ def test_recent_reviewed_references_keep_their_boundaries():
     assert all(token in items["27"]["next_action"] for token in ["83", "91", "Evidence 83"])
     assert all(token in items["23"]["next_action"] for token in ["56", "62", "61", "29"])
     assert all(token in items["13"]["next_action"] for token in ["60", "25", "304", "Evidence"])
-    assert all(token in items["04"]["next_action"] for token in ["128", "149", "100", "17", "49"])
+    assert all(token in items["04"]["next_action"] for token in ["128", "149", "106", "18", "43"])
 
 
 def test_queue_sources_and_descriptions():
