@@ -26,6 +26,12 @@ export function SiteFooter() {
         <Link href="/sources">公式資料</Link>
         <Link href="/corrections">訂正・反論</Link>
       </div>
+      <div className="footerNavGroup">
+        <p>運営方針</p>
+        <Link href="/terms">利用規約</Link>
+        <Link href="/privacy">プライバシー</Link>
+        <Link href="/disclaimer">免責事項</Link>
+      </div>
       <div className="footerBottom">
         <span>Facts before scores.</span>
         <span>一次資料・更新日・未確認範囲を表示します。</span>
