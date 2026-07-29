@@ -166,10 +166,11 @@ def audit_robots(export_root: Path, base_path: str) -> list[str]:
     if not path.is_file():
         return ["Missing robots.txt"]
     content = path.read_text(encoding="utf-8")
+    normalized_content = content.lower()
     failures: list[str] = []
-    if "User-agent:" not in content:
+    if "user-agent:" not in normalized_content:
         failures.append("robots.txt: missing User-agent directive")
-    if "Sitemap:" not in content:
+    if "sitemap:" not in normalized_content:
         failures.append("robots.txt: missing Sitemap directive")
     normalized = "/" + base_path.strip("/") if base_path else ""
     if normalized and normalized not in content:
