@@ -4,7 +4,6 @@
 from __future__ import annotations
 
 import argparse
-import re
 import sys
 from html.parser import HTMLParser
 from pathlib import Path
@@ -188,7 +187,11 @@ def audit_sitemap(export_root: Path, base_path: str) -> list[str]:
     except (ElementTree.ParseError, OSError, UnicodeError) as exc:
         return [f"sitemap.xml: invalid XML: {exc}"]
 
-    locations = [element.text.strip() for element in root.iter() if element.tag.endswith("loc") and element.text]
+    locations = [
+        element.text.strip()
+        for element in root.iter()
+        if element.tag.endswith("loc") and element.text
+    ]
     if not locations:
         failures.append("sitemap.xml: no loc entries")
         return failures
