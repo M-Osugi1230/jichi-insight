@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { nationwideCoverageStats } from "@/lib/nationwideCoverage";
+import { reviewedCoverageStats } from "@/lib/reviewedCoverage";
 
 export function SiteFooter() {
   return (
@@ -8,7 +8,10 @@ export function SiteFooter() {
       <div className="footerMission">
         <p className="footerBrand">Jichi Insight</p>
         <p>住民が、自分自身で自治体、知事・市長、議会を評価できる情報環境をつくる。</p>
-        <span>最終データ更新 {nationwideCoverageStats.updatedAt}</span>
+        <span>
+          最終データ更新 {reviewedCoverageStats.updatedAt}・全国
+          {reviewedCoverageStats.reviewedPrefectures}/47 Reviewed
+        </span>
       </div>
       <div className="footerNavGroup">
         <p>調べる</p>

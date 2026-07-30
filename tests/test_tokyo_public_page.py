@@ -7,6 +7,7 @@ EXPLORER_PATH = ROOT / "apps/web/components/TokyoPolicyTargetExplorer.tsx"
 SITEMAP_PATH = ROOT / "apps/web/app/sitemap.ts"
 NATIONWIDE_PAGE_PATH = ROOT / "apps/web/app/municipalities/page.tsx"
 COVERAGE_EXPLORER_PATH = ROOT / "apps/web/components/CoverageExplorer.tsx"
+REVIEWED_COVERAGE_PATH = ROOT / "apps/web/lib/reviewedCoverage.ts"
 
 
 def test_tokyo_public_page_exposes_complete_card_scope_without_claiming_achievement():
@@ -47,9 +48,10 @@ def test_tokyo_route_is_linked_from_nationwide_page_and_sitemap():
     nationwide_page = NATIONWIDE_PAGE_PATH.read_text(encoding="utf-8")
     sitemap = SITEMAP_PATH.read_text(encoding="utf-8")
     explorer = COVERAGE_EXPLORER_PATH.read_text(encoding="utf-8")
+    reviewed_coverage = REVIEWED_COVERAGE_PATH.read_text(encoding="utf-8")
 
-    assert 'href="/municipalities/tokyo"' in nationwide_page
+    assert "CoverageExplorer" in nationwide_page
     assert '"/municipalities/tokyo"' in sitemap
-    assert 'prefectureCode === "13"' in explorer
-    assert 'category === "kpi_source"' in explorer
-    assert 'return "reviewed"' in explorer
+    assert "reviewedPrefectureCoverage" in explorer
+    assert '"13": {' in reviewed_coverage
+    assert "tokyoPolicyTargetStats.reviewedTargetCards" in reviewed_coverage

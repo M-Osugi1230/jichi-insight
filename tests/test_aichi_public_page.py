@@ -6,6 +6,7 @@ LIB_PATH = ROOT / "apps/web/lib/aichiIndicators.ts"
 EXPLORER_PATH = ROOT / "apps/web/components/AichiIndicatorExplorer.tsx"
 SITEMAP_PATH = ROOT / "apps/web/app/sitemap.ts"
 NATIONWIDE_PATH = ROOT / "apps/web/app/municipalities/page.tsx"
+REVIEWED_COVERAGE_PATH = ROOT / "apps/web/lib/reviewedCoverage.ts"
 
 
 def test_aichi_public_page_exposes_reviewed_scope_without_claiming_achievement():
@@ -37,7 +38,9 @@ def test_aichi_page_supports_search_and_semantic_boundaries():
 def test_aichi_route_is_linked_from_nationwide_page_and_sitemap():
     sitemap = SITEMAP_PATH.read_text(encoding="utf-8")
     nationwide = NATIONWIDE_PATH.read_text(encoding="utf-8")
+    reviewed_coverage = REVIEWED_COVERAGE_PATH.read_text(encoding="utf-8")
 
     assert '"/municipalities/aichi"' in sitemap
-    assert 'href="/municipalities/aichi"' in nationwide
-    assert "愛知県の進捗指標を見る" in nationwide
+    assert "CoverageExplorer" in nationwide
+    assert '"23": {' in reviewed_coverage
+    assert "aichiPolicyIndicatorStats.indicatorRows" in reviewed_coverage

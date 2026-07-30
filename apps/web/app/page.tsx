@@ -3,60 +3,92 @@ import Link from "next/link";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { StatusBadge } from "@/components/StatusBadge";
-import { catalogStats } from "@/lib/catalog";
-import { hokkaidoIndicatorReviewStats } from "@/lib/hokkaidoIndicators";
-import { miyagiKpiActualStats } from "@/lib/miyagiActuals";
-import { miyagiPolicyReviewStats } from "@/lib/miyagiPolicies";
 import {
-  nationwideCoverageStats,
-  nationwideSourceInventoryStats,
-  sourceInventoryCategoryLabel,
-  sourceInventoryCategoryOrder,
-} from "@/lib/nationwideCoverage";
-import { allPolicyTargetStats } from "@/lib/policyTargets";
+  phase10StageSummary,
+  reviewedCoverageStats,
+} from "@/lib/reviewedCoverage";
 
 import styles from "./page.module.css";
 
 const evidenceChain = [
-  { number: "01", key: "Promise", title: "何を目指すか", text: "計画、公約、数値目標を原文と期間から読む。" },
-  { number: "02", key: "Money", title: "いくら使うか", text: "予算、補正、執行、決算を同じ金額として混ぜない。" },
-  { number: "03", key: "Action", title: "何をしたか", text: "事業、契約、支出先、実施内容を目標へつなぐ。" },
-  { number: "04", key: "Result", title: "何が変わったか", text: "年度実績とKPIを比較可能な条件で確かめる。" },
-  { number: "05", key: "Accountability", title: "どう説明したか", text: "首長、議会、監査、訂正履歴から説明責任を見る。" },
+  {
+    number: "01",
+    key: "Promise",
+    title: "何を目指すか",
+    text: "計画、公約、数値目標を原文と期間から読む。",
+  },
+  {
+    number: "02",
+    key: "Money",
+    title: "いくら使うか",
+    text: "予算、補正、執行、決算を同じ金額として混ぜない。",
+  },
+  {
+    number: "03",
+    key: "Action",
+    title: "何をしたか",
+    text: "事業、契約、支出先、実施内容を目標へつなぐ。",
+  },
+  {
+    number: "04",
+    key: "Result",
+    title: "何が変わったか",
+    text: "年度実績とKPIを比較可能な条件で確かめる。",
+  },
+  {
+    number: "05",
+    key: "Accountability",
+    title: "どう説明したか",
+    text: "首長、議会、監査、訂正履歴から説明責任を見る。",
+  },
 ];
 
 const depthCards = [
   {
+    className: styles.nationwideCard,
+    area: "全国47都道府県",
+    label: "目標原文から探す",
+    title: `${formatNumber(reviewedCoverageStats.reviewedRecords)}件をEvidence付きで公開`,
+    text: "47都道府県すべてで目標・指標の原文をReviewed。計画ごとの粒度を保ち、件数ランキングには使いません。",
+    facts: ["47/47 Reviewed", "Evidence 100%", "公開ページ47"],
+    href: "/municipalities#prefectures",
+    action: "全国の目標を探す",
+  },
+  {
     className: styles.miyagiCard,
     area: "宮城県",
     label: "年度実績まで読む",
-    title: `${miyagiKpiActualStats.annualResultRows}件の実績推移を公開`,
-    text: `${miyagiKpiActualStats.linkedSeries}系列を直接接続し、${miyagiKpiActualStats.reviewNeededSeries}系列は定義差などの要確認として分けています。`,
-    facts: [`${miyagiPolicyReviewStats.reviewedTargetGroups}目標`, `${miyagiPolicyReviewStats.reviewedIndicatorSeries}系列`, "2021–2024年度"],
+    title: `${reviewedCoverageStats.annualResultRows}件の実績推移を公開`,
+    text: `${reviewedCoverageStats.linkedAnnualSeries}系列を直接接続し、${reviewedCoverageStats.reviewNeededAnnualSeries}系列は定義差などの要確認として分けています。`,
+    facts: ["128目標", "149系列", "2021–2024年度"],
     href: "/municipalities/miyagi#results",
     action: "実績を確かめる",
-  },
-  {
-    className: styles.hokkaidoCard,
-    area: "北海道",
-    label: "政策指標を読む",
-    title: `${hokkaidoIndicatorReviewStats.reviewedIndicators}指標を全件照合`,
-    text: "条件型目標、累計値、未公表値、比較上の注意を消さずに、公式計画の構造をそのまま確認できます。",
-    facts: ["18政策分野", "108根拠記録", "実績は未接続"],
-    href: "/municipalities/hokkaido",
-    action: "政策指標を見る",
   },
   {
     className: styles.fukuokaCard,
     area: "福岡県",
     label: "政策と財政を読む",
-    title: `${allPolicyTargetStats.reviewedTargets}件の数値目標`,
-    text: "4基本方向・30取組と財政資料を公開。実績が未接続の目標には、達成率を付けていません。",
-    facts: ["30取組", "政策目標118件", "県・2市の財政"],
+    title: "118件の数値目標と、予算・決算。",
+    text: "政策目標とReviewed財政値を別レイヤーで公開。実績が未接続の目標に、達成率は付けません。",
+    facts: ["4基本方向", "30取組", "財政値Reviewed"],
     href: "/municipalities/fukuoka-prefecture",
     action: "福岡県を見る",
   },
+  {
+    className: styles.qualityCard,
+    area: "Phase 10",
+    label: "接続状況を読む",
+    title: "目標から、実績・お金・事業へ。",
+    text: "目標は47県でReviewed済み。その先の実績、予算、事業、契約は、索引・照合・接続を分けて進捗公開しています。",
+    facts: ["実績 1接続", "予算 1照合", "評価0件"],
+    href: "/municipalities/phase10",
+    action: "Evidence Chainの進捗を見る",
+  },
 ];
+
+function formatNumber(value: number) {
+  return new Intl.NumberFormat("ja-JP").format(value);
+}
 
 export default function Home() {
   return (
@@ -65,15 +97,25 @@ export default function Home() {
 
       <section className={styles.hero}>
         <div className={styles.heroCopy}>
-          <p className={styles.heroKicker}>PUBLIC EVIDENCE FOR LOCAL GOVERNMENT</p>
-          <h1>自治体を、<br /><em>自分で確かめる。</em></h1>
+          <p className={styles.heroKicker}>
+            PUBLIC EVIDENCE FOR LOCAL GOVERNMENT
+          </p>
+          <h1>
+            自治体を、
+            <br />
+            <em>根拠から読む。</em>
+          </h1>
           <p className={styles.heroLead}>
             計画、予算、事業、成果、議会。ばらばらに公開された一次資料を、
-            住民が判断できる順序へつなぎ直します。
+            住民が自分で判断できる順序へつなぎ直します。
           </p>
           <div className={styles.heroActions}>
-            <Link className="primaryAction" href="/municipalities">全国47都道府県から探す</Link>
-            <Link className="secondaryAction" href="/about">このサイトの目的</Link>
+            <Link className="primaryAction" href="/municipalities">
+              47都道府県から探す
+            </Link>
+            <Link className="secondaryAction" href="/about">
+              このサイトの目的
+            </Link>
           </div>
           <div className={styles.heroPrinciples} aria-label="表示原則">
             <span>一次資料を表示</span>
@@ -82,22 +124,40 @@ export default function Home() {
           </div>
         </div>
 
-        <aside className={styles.currentFocus} aria-labelledby="current-focus-title">
+        <aside
+          className={styles.currentFocus}
+          aria-labelledby="current-focus-title"
+        >
           <div className={styles.focusHeader}>
-            <span>いま最も深く読める自治体</span>
-            <StatusBadge label="年度実績あり" tone="verified" />
+            <span>NATIONWIDE REVIEW</span>
+            <StatusBadge label="47 / 47 公開" tone="verified" />
           </div>
-          <p className={styles.focusArea}>04 / MIYAGI</p>
-          <h2 id="current-focus-title">宮城県の目標と、4年分の実績。</h2>
+          <p className={styles.focusArea}>ALL PREFECTURES / EVIDENCE 100%</p>
+          <h2 id="current-focus-title">
+            {formatNumber(reviewedCoverageStats.reviewedRecords)}件の目標・指標を、
+            根拠付きで。
+          </h2>
           <dl className={styles.focusMetrics}>
-            <div><dt>直接接続</dt><dd>{miyagiKpiActualStats.linkedSeries}<small>系列</small></dd></div>
-            <div><dt>対応要確認</dt><dd>{miyagiKpiActualStats.reviewNeededSeries}<small>系列</small></dd></div>
-            <div><dt>年度実績</dt><dd>{miyagiKpiActualStats.annualResultRows}<small>行</small></dd></div>
+            <div>
+              <dt>Reviewed</dt>
+              <dd>{reviewedCoverageStats.reviewedPrefectures}<small>県</small></dd>
+            </div>
+            <div>
+              <dt>Evidence</dt>
+              <dd>{formatNumber(reviewedCoverageStats.evidencePackets)}<small>件</small></dd>
+            </div>
+            <div>
+              <dt>根拠付与率</dt>
+              <dd>{reviewedCoverageStats.evidenceCoveragePercent}<small>%</small></dd>
+            </div>
           </dl>
           <p className={styles.focusNote}>
-            公式評価書の令和6年度目標と、現行計画の令和9年度目標を分けて表示します。
+            計画ごとの記載単位を保持しているため、件数は自治体間の優劣を示しません。
+            目標の掲載と、達成評価も分けています。
           </p>
-          <Link href="/municipalities/miyagi#results">実績の推移を見る <span aria-hidden="true">→</span></Link>
+          <Link href="/municipalities#prefectures">
+            47都道府県の統合索引へ <span aria-hidden="true">→</span>
+          </Link>
         </aside>
       </section>
 
@@ -105,14 +165,29 @@ export default function Home() {
         <div className={styles.snapshotLead}>
           <p>JICHI INSIGHT NOW</p>
           <strong>現在地を、数字で。</strong>
-          <span>更新 {nationwideCoverageStats.updatedAt}</span>
+          <span>更新 {reviewedCoverageStats.updatedAt}</span>
         </div>
         <dl>
-          <div><dt>現行計画を確認</dt><dd>{nationwideCoverageStats.currentPlanConfirmedPrefectures}<small>/47</small></dd></div>
-          <div><dt>都道府県詳細</dt><dd>{nationwideCoverageStats.publishedPrefecturePages}<small>地域</small></dd></div>
-          <div><dt>Reviewed目標・指標</dt><dd>{hokkaidoIndicatorReviewStats.reviewedIndicators + miyagiPolicyReviewStats.reviewedTargetGroups + allPolicyTargetStats.reviewedTargets}<small>件</small></dd></div>
-          <div><dt>宮城・年度実績</dt><dd>{miyagiKpiActualStats.annualResultRows}<small>行</small></dd></div>
-          <div><dt>Jichi Insight評価</dt><dd>{catalogStats.publishedEvaluations}<small>件</small></dd></div>
+          <div>
+            <dt>Reviewed都道府県</dt>
+            <dd>{reviewedCoverageStats.reviewedPrefectures}<small>/47</small></dd>
+          </div>
+          <div>
+            <dt>目標・指標レコード</dt>
+            <dd>{formatNumber(reviewedCoverageStats.reviewedRecords)}<small>件</small></dd>
+          </div>
+          <div>
+            <dt>Evidence Packet</dt>
+            <dd>{formatNumber(reviewedCoverageStats.evidencePackets)}<small>件</small></dd>
+          </div>
+          <div>
+            <dt>年度実績</dt>
+            <dd>{reviewedCoverageStats.annualResultRows}<small>行</small></dd>
+          </div>
+          <div>
+            <dt>政策達成評価</dt>
+            <dd>{reviewedCoverageStats.policyAssessments}<small>件</small></dd>
+          </div>
         </dl>
       </section>
 
@@ -122,25 +197,30 @@ export default function Home() {
             <p className="eyebrow">Start with a question</p>
             <h2>知りたい深さから、入口を選ぶ。</h2>
           </div>
-          <p>掲載件数の多さではなく、何をどこまで確認できるかで選べます。</p>
+          <p>
+            掲載件数の多さではなく、何をどこまで確認できるかで選べます。
+          </p>
         </div>
         <div className={styles.depthGrid}>
           {depthCards.map((card) => (
-            <article className={`${styles.depthCard} ${card.className}`} key={card.area}>
-              <div className={styles.depthTop}><span>{card.area}</span><small>{card.label}</small></div>
+            <article
+              className={`${styles.depthCard} ${card.className}`}
+              key={card.area}
+            >
+              <div className={styles.depthTop}>
+                <span>{card.area}</span>
+                <small>{card.label}</small>
+              </div>
               <h3>{card.title}</h3>
               <p>{card.text}</p>
-              <ul>{card.facts.map((fact) => <li key={fact}>{fact}</li>)}</ul>
-              <Link href={card.href}>{card.action} <span aria-hidden="true">→</span></Link>
+              <ul>
+                {card.facts.map((fact) => <li key={fact}>{fact}</li>)}
+              </ul>
+              <Link href={card.href}>
+                {card.action} <span aria-hidden="true">→</span>
+              </Link>
             </article>
           ))}
-          <article className={`${styles.depthCard} ${styles.nationwideCard}`}>
-            <div className={styles.depthTop}><span>全国</span><small>資料の深さを探す</small></div>
-            <h3>47都道府県を、6種類の資料で比較。</h3>
-            <p>政策計画、実施計画、KPI、年度評価、予算・決算、事業評価の索引状況を確認できます。</p>
-            <ul><li>公式入口 47/47</li><li>現行計画 47/47</li><li>未索引も表示</li></ul>
-            <Link href="/municipalities#prefectures">全国から探す <span aria-hidden="true">→</span></Link>
-          </article>
         </div>
       </section>
 
@@ -150,7 +230,9 @@ export default function Home() {
             <p className="eyebrow">One chain, five questions</p>
             <h2>資料ではなく、判断の順番でつなぐ。</h2>
           </div>
-          <p>目標だけ、金額だけ、結果だけを切り取らず、前後の根拠をたどれる状態を目指します。</p>
+          <p>
+            目標だけ、金額だけ、結果だけを切り取らず、前後の根拠をたどれる状態を目指します。
+          </p>
         </div>
         <ol className={styles.chain}>
           {evidenceChain.map((item) => (
@@ -167,26 +249,35 @@ export default function Home() {
       <section className={styles.section}>
         <div className={styles.readinessLayout}>
           <div>
-            <p className="eyebrow">Nationwide source depth</p>
-            <h2>47の入口は揃った。<br />次は、資料の奥行き。</h2>
+            <p className="eyebrow">Phase 10 / vertical linkage</p>
+            <h2>
+              目標は47県。
+              <br />
+              次は、根拠の縦接続。
+            </h2>
             <p className={styles.readinessLead}>
-              現行の政策計画は全都道府県で確認済みです。一方、年度評価や事業評価はまだ多くが未索引です。
-              「ない」と「まだ確認していない」を分けて公開します。
+              目標原文は全国でReviewed済みです。一方、年度実績や予算、事業、契約との接続は始まったばかりです。
+              「未索引」「索引済」「照合済」「接続済」を分けて公開します。
             </p>
-            <Link className="secondaryAction" href="/municipalities">資料カバレッジを見る</Link>
+            <Link className="secondaryAction" href="/municipalities/phase10">
+              Phase 10の進捗を見る
+            </Link>
           </div>
           <div className={styles.readinessBars}>
-            {sourceInventoryCategoryOrder.map((category) => {
-              const count = nationwideSourceInventoryStats[category].indexedOrHigher;
-              return (
-                <div key={category}>
-                  <div><span>{sourceInventoryCategoryLabel(category)}</span><strong>{count}<small>/47</small></strong></div>
-                  <div className={styles.bar} aria-label={`${sourceInventoryCategoryLabel(category)} ${count}/47`}>
-                    <span style={{ width: `${(count / 47) * 100}%` }} />
-                  </div>
+            {phase10StageSummary.map((stage) => (
+              <div key={stage.key}>
+                <div>
+                  <span>{stage.label}<small>{stage.note}</small></span>
+                  <strong>{stage.count}<small>/47</small></strong>
                 </div>
-              );
-            })}
+                <div
+                  className={styles.bar}
+                  aria-label={`${stage.label} ${stage.count}/47`}
+                >
+                  <span style={{ width: `${(stage.count / 47) * 100}%` }} />
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -194,7 +285,11 @@ export default function Home() {
       <section className={styles.trustSection}>
         <div>
           <p className="eyebrow">Facts before scores</p>
-          <h2>評価より先に、<br />評価できる状態かを示す。</h2>
+          <h2>
+            評価より先に、
+            <br />
+            評価できる状態かを示す。
+          </h2>
         </div>
         <div>
           <p>
@@ -202,13 +297,15 @@ export default function Home() {
             事実、比較、解釈、評価を分け、足りない根拠は足りないまま表示します。
           </p>
           <ul>
-            <li><strong>確認済み</strong><span>一次資料と人が照合</span></li>
+            <li><strong>Reviewed</strong><span>一次資料と人が照合</span></li>
             <li><strong>要確認</strong><span>定義差・系列差などを保留</span></li>
             <li><strong>未接続</strong><span>実績・予算・事業との対応なし</span></li>
             <li><strong>評価不能</strong><span>根拠不足を点数で埋めない</span></li>
           </ul>
           <div className={styles.trustActions}>
-            <Link className="invertedAction" href="/methodology">読み方・評価方法</Link>
+            <Link className="invertedAction" href="/methodology">
+              読み方・評価方法
+            </Link>
             <Link href="/data-quality">全データ品質を見る →</Link>
           </div>
         </div>

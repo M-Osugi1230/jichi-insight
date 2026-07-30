@@ -20,6 +20,31 @@ print(manifest["reviewed_indicator_series_count"])
 print(manifest["actual_linked_indicator_series_count"])
 print(manifest["actual_linkage_review_needed_series_count"])
 print(manifest["actual_result_row_count"])
+
+phase9 = json.loads(
+    (root / "data/catalog/phase9_review_summary.json").read_text(encoding="utf-8")
+)
+manifest_fields = [
+    ("hokkaido_policy_review_manifest.json", "reviewed_indicator_count"),
+    ("miyagi_policy_review_manifest.json", "reviewed_target_group_count"),
+    ("tokyo_policy_target_review_manifest.json", "reviewed_target_card_count"),
+    ("aichi_policy_indicator_review_manifest.json", "reviewed_indicator_row_count"),
+    ("osaka_beyond_expo_indicator_review_manifest.json", "reviewed_indicator_row_count"),
+    ("hiroshima_revised_vision_indicator_review_manifest.json", "reviewed_indicator_count"),
+    ("kagawa_extended_plan_indicator_review_manifest.json", "reviewed_indicator_count"),
+    ("okinawa_midterm_indicator_review_manifest.json", "reviewed_indicator_count"),
+]
+anchor_total = sum(
+    json.loads((root / "data/catalog" / filename).read_text(encoding="utf-8"))[field]
+    for filename, field in manifest_fields
+)
+fukuoka_total = sum(
+    len(json.loads(path.read_text(encoding="utf-8"))["items"])
+    for path in (root / "data/entities/policy").glob(
+        "fukuoka_prefecture_initiative_*_targets.json"
+    )
+)
+print(f"{phase9['reviewed_target_statement_count'] + anchor_total + fukuoka_total:,}")
 PY
 )
 
@@ -28,6 +53,7 @@ REVIEWED_SERIES="${MIYAGI_STATE[1]}"
 LINKED_SERIES="${MIYAGI_STATE[2]}"
 REVIEW_NEEDED_SERIES="${MIYAGI_STATE[3]}"
 ANNUAL_ROWS="${MIYAGI_STATE[4]}"
+REVIEWED_TOTAL="${MIYAGI_STATE[5]}"
 
 : > "$REPORT"
 printf 'Jichi Insight nationwide coverage production smoke\n' >> "$REPORT"
@@ -79,13 +105,14 @@ check_absent() {
 }
 
 check_page "/municipalities/" \
-  "47都道府県を、資料の深さから探す。" \
-  "全国の入口整備" \
-  "いま、深く読める3都道府県。" \
-  "確認したい資料の深さ" \
-  "都道府県と、確認できる資料。" \
-  "直接接続" \
-  "対応要確認" \
+  "47都道府県の目標原文を、Evidenceから探す。" \
+  "PHASE 9 COMPLETE" \
+  "${REVIEWED_TOTAL}件" \
+  "読みたいデータの深さ" \
+  "47都道府県の統合索引。" \
+  "年度実績を接続" \
+  "財政値をReviewed" \
+  "目標" "実績" "予算" "事業" "契約" \
   "北海道" "宮城県" "東京都" "愛知県" "大阪府" "広島県" "香川県" "福岡県" "沖縄県"
 
 check_absent "/municipalities/" "「未来の東京」戦略"
@@ -114,12 +141,10 @@ check_absent "/municipalities/miyagi/" "達成率を算出済み"
 check_absent "/municipalities/miyagi/" "政策評価済み"
 
 check_page "/data-quality/" \
-  "全国登録、計画入口、現行性、Reviewed、公開済みを分ける。" \
-  "宮城県Reviewed KPI" \
-  "宮城県KPI Evidence" \
-  "宮城県・実績レビュー" \
-  "宮城県・年度実績" \
-  "宮城県・実績Evidence" \
+  "件数ではなく、確認の深さを公開する。" \
+  "${REVIEWED_TOTAL}件の内訳。" \
+  "目標から契約までの現在地。" \
+  "宮城県では${LINKED_SERIES}系列を直接接続し、${REVIEW_NEEDED_SERIES}系列を要確認" \
   "データ不足を、点数で埋めません。"
 
 printf '\nResult: PASS\n' >> "$REPORT"

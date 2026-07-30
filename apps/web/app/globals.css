@@ -197,7 +197,7 @@ h3 { letter-spacing: -0.025em; line-height: 1.45; }
 }
 
 @media (max-width: 700px) {
-  .dataPulseLabel, .dataPulseDivider, .dataPulse > div > span:nth-last-child(2) { display: none; }
+  .dataPulseLabel, .dataPulseDate, .dataPulseDivider { display: none; }
   .dataPulse > div { justify-content: center; }
   .brandText small { display: none; }
   .brandMark { height: 34px; width: 34px; }

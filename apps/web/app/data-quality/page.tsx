@@ -1,143 +1,236 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import { PageIntro } from "@/components/PageIntro";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
-import { StatusBadge } from "@/components/StatusBadge";
 import {
-  dataQualitySnapshot,
-  municipalityQuality,
-  publicationGaps,
-} from "@/lib/dataQuality";
-import { miyagiPolicyReviewStats } from "@/lib/miyagiPolicies";
+  phase10StageSummary,
+  reviewedCoverageStats,
+} from "@/lib/reviewedCoverage";
 
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
-  title: "データ品質",
+  title: "データ品質と公開範囲",
   description:
-    "Jichi Insightの資料件数、レビュー状態、Evidence coverage、欠損、公開準備状況を確認できます。",
+    "全国47都道府県、15,124件のReviewed目標・指標のEvidence coverage、接続状況、欠損、評価可能性を公開します。",
 };
 
 const qualityLevels = [
-  ["Coverage", "対象・資料の存在を把握", "収録候補の管理"],
-  ["Indexed", "公式URL、資料、年度、位置を特定", "公式資料カタログ"],
-  ["Current", "後継計画・改定・有効期間を確認", "現行計画の判定"],
-  ["Extracted", "候補値を抽出、未レビュー", "原則として非公開"],
-  ["Reviewed", "一次資料と人が照合", "事実表示に利用"],
-  ["Verified", "独立した二重確認を完了", "重要評価の主要根拠"],
-  ["Published", "公開基準と画面検証を通過", "本番サイト"],
+  ["Coverage", "対象と資料の存在を把握", "収録候補。事実表示には未使用"],
+  ["Indexed", "公式URL、年度、資料位置を特定", "一次資料へ戻るための索引"],
+  ["Current", "後継計画、改定、有効期間を確認", "現行資料として扱える状態"],
+  ["Extracted", "原文や候補値を機械抽出", "人手照合前。原則として非公開"],
+  ["Reviewed", "本文、値、単位、期間を人が照合", "事実表示に利用"],
+  ["Linked", "別資料との定義と期間を照合して接続", "目標と実績などを並べて確認"],
+  ["Published", "公開基準、画面、リンクを検証", "本番サイトで閲覧可能"],
 ];
 
+const boundaries = [
+  {
+    label: "粒度",
+    title: "件数を自治体間で比べない",
+    text: "目標原文、指標行、目標カードなど、計画が採用する公式な記載単位を保持しています。",
+  },
+  {
+    label: "欠損",
+    title: "抽出エラーを0にしない",
+    text: `Phase 9の抽出エラー${reviewedCoverageStats.phase9ExtractionErrors}件は、推測で補完せず欠損と原資料への導線を残しています。`,
+  },
+  {
+    label: "接続",
+    title: "定義差を保留する",
+    text: `宮城県では${reviewedCoverageStats.linkedAnnualSeries}系列を直接接続し、${reviewedCoverageStats.reviewNeededAnnualSeries}系列を要確認として分離しています。`,
+  },
+  {
+    label: "評価",
+    title: "目標の掲載を達成と呼ばない",
+    text: "実績、予算、事業、説明責任の根拠が揃うまで、独自の政策達成率や自治体ランキングを出しません。",
+  },
+];
+
+const knownLimits = [
+  `年度実績を目標へ直接接続できているのは${reviewedCoverageStats.annualLinkedPrefectures}都道府県です。`,
+  `予算・決算を人がReviewedした政策接続候補は${reviewedCoverageStats.budgetReviewedPrefectures}都道府県です。`,
+  `事業評価と契約の公式入口を索引できているのは各${reviewedCoverageStats.projectIndexedOrBetterPrefectures}都道府県です。`,
+  "Reporting yearとmeasurement year、旧計画と現行計画、公式達成率と独自計算を混ぜません。",
+  "資料が未索引であることを、資料が存在しないこととは扱いません。",
+];
+
+function formatNumber(value: number) {
+  return new Intl.NumberFormat("ja-JP").format(value);
+}
+
 export default function DataQualityPage() {
-  const snapshot = dataQualitySnapshot;
   return (
-    <main>
+    <main id="main-content">
       <SiteHeader />
       <div className="pageShell">
-        <PageIntro eyebrow="Data quality" title="件数ではなく、確認の深さを公開する。">
+        <PageIntro
+          eyebrow="Data quality / current scope"
+          title="件数ではなく、確認の深さを公開する。"
+        >
           <p>
-            資料を見つけた状態、現行資料であることを確認した状態、値を人が確認した状態、評価に使える状態は異なります。
-            Jichi Insightは、収録件数と品質段階、欠損、更新日を同時に表示します。
+            資料を見つけた状態、値を人が確認した状態、別資料と接続できた状態、評価に使える状態は異なります。
+            Jichi Insightは、公開量と品質段階、欠損、未接続範囲を同時に示します。
           </p>
         </PageIntro>
 
-        <section className={styles.summaryGrid} aria-label="データ品質概要">
-          <article className={styles.summaryCard}><span>公式資料・年度別資料</span><strong>{snapshot.officialSources}</strong><p>{snapshot.pilotMunicipalities}自治体の公式入口と個別資料。</p></article>
-          <article className={styles.summaryCard}><span>Reviewed財政値</span><strong>{snapshot.reviewedFiscalValues}</strong><p>当初予算{snapshot.initialBudgetValues}件、決算{snapshot.settlementValues}件。</p></article>
-          <article className={styles.summaryCard}><span>Evidence coverage</span><strong>{snapshot.evidenceCoveragePercent}%</strong><p>Reviewed財政値に対応するEvidence Packetの割合。</p></article>
-          <article className={styles.summaryCard}><span>公開済み評価</span><strong>{snapshot.publicEvaluations}</strong><p>比較条件と成果データが不足するため、まだ評価していません。</p></article>
-        </section>
-
-        <section className="contentSection">
-          <p className="eyebrow">Nationwide coverage readiness</p>
-          <h2>全国登録、計画入口、現行性、Reviewed、公開済みを分ける。</h2>
-          <div className={styles.summaryGrid} aria-label="全国展開の品質概要">
-            <article className={styles.summaryCard}><span>全国登録</span><strong>{snapshot.nationwidePrefectures}</strong><p>47都道府県を共通コードと地域区分で登録。</p></article>
-            <article className={styles.summaryCard}><span>公式入口確認済み</span><strong>{snapshot.verifiedPrefectureOfficialEntries}</strong><p>自治体公式ホームページを手動確認した都道府県。</p></article>
-            <article className={styles.summaryCard}><span>総合計画索引済み</span><strong>{snapshot.sourceCatalogedPrefectures}</strong><p>計画資料の公式入口を固定した都道府県。</p></article>
-            <article className={styles.summaryCard}><span>現行計画確認済み</span><strong>{snapshot.currentPlanConfirmedPrefectures}</strong><p>後継計画・改定・有効期間まで確認した都道府県。</p></article>
-            <article className={styles.summaryCard}><span>現行性確認待ち</span><strong>{snapshot.currentPlanUnconfirmedPrefectures}</strong><p>公式計画入口はあるが、後継計画の確認が未完了。</p></article>
-            <article className={styles.summaryCard}><span>Reviewed都道府県</span><strong>{snapshot.reviewedPrefectures}</strong><p>本文・数値・期間・単位を人が照合済み。</p></article>
-            <article className={styles.summaryCard}><span>公開済み都道府県ページ</span><strong>{snapshot.publishedPrefecturePages}</strong><p>公開ゲートと本番確認を通過したページ。</p></article>
-            <article className={styles.summaryCard}><span>公式URL候補・未確認</span><strong>{snapshot.candidatePrefectureOfficialEntries}</strong><p>全国登録済みだが、手動確認前の候補URL。</p></article>
+        <section className={styles.snapshot} aria-label="全国データ品質概要">
+          <div>
+            <span>Reviewed都道府県</span>
+            <strong>{reviewedCoverageStats.reviewedPrefectures}<small>/47</small></strong>
+            <p>現行計画の目標・指標を全47都道府県で人手照合。</p>
+          </div>
+          <div>
+            <span>目標・指標レコード</span>
+            <strong>{formatNumber(reviewedCoverageStats.reviewedRecords)}<small>件</small></strong>
+            <p>公式な記載単位を保持。自治体間の件数比較には不使用。</p>
+          </div>
+          <div>
+            <span>Evidence coverage</span>
+            <strong>{reviewedCoverageStats.evidenceCoveragePercent}<small>%</small></strong>
+            <p>{formatNumber(reviewedCoverageStats.evidencePackets)}件すべてにEvidence Packet。</p>
+          </div>
+          <div>
+            <span>年度実績</span>
+            <strong>{reviewedCoverageStats.annualResultRows}<small>行</small></strong>
+            <p>宮城県の2021〜2024年度。目標値と測定年を分離。</p>
+          </div>
+          <div>
+            <span>政策達成評価</span>
+            <strong>{reviewedCoverageStats.policyAssessments}<small>件</small></strong>
+            <p>根拠不足を点数や達成率で埋めていません。</p>
           </div>
         </section>
 
         <section className="contentSection">
-          <p className="eyebrow">Policy source pipeline</p>
-          <h2>公式計画を見つけた件数と、Reviewedに使える件数を分ける。</h2>
-          <div className={styles.summaryGrid} aria-label="政策資料カタログと作業キュー">
-            <article className={styles.summaryCard}><span>政策資料カタログ</span><strong>{snapshot.policySourceRecords}</strong><p>戦略、実施計画、年度報告、事業評価を資料単位で登録。</p></article>
-            <article className={styles.summaryCard}><span>Reviewed政策資料</span><strong>{snapshot.reviewedPolicySourceRecords}</strong><p>福岡県・福岡市・北九州市で本文確認済みの資料。</p></article>
-            <article className={styles.summaryCard}><span>第1波・索引済み計画</span><strong>{snapshot.indexedPolicySourceRecords}</strong><p>現行性は確認済みだが、政策本文・KPI抽出前の都道府県。</p></article>
-            <article className={styles.summaryCard}><span>北海道指標PDF</span><strong>{snapshot.indexedHokkaidoKpiSources}</strong><p>{snapshot.hokkaidoIndicatorSourcePages}ページを資料単位で索引済み。</p></article>
-            <article className={styles.summaryCard}><span>宮城県政策資料</span><strong>{miyagiPolicyReviewStats.sources}</strong><p>うちReviewed済み{miyagiPolicyReviewStats.reviewedSources}件。評価原案は確定版と分離。</p></article>
-            <article className={styles.summaryCard}><span>宮城県政策体系</span><strong>{miyagiPolicyReviewStats.directions}・{miyagiPolicyReviewStats.policies}・{miyagiPolicyReviewStats.measures}</strong><p>基本方向・政策・取組。復興取組{miyagiPolicyReviewStats.recoveryAreas}分野は別系統。</p></article>
-            <article className={styles.summaryCard}><span>宮城県KPI位置</span><strong>{miyagiPolicyReviewStats.targetGroups}</strong><p>目標グループ。個別系列は{miyagiPolicyReviewStats.indicatorSeries}件、掲載{miyagiPolicyReviewStats.sourcePages}ページ。</p></article>
-            <article className={styles.summaryCard}><span>宮城県複数系列</span><strong>{miyagiPolicyReviewStats.multiSeriesGroups}</strong><p>追加系列{miyagiPolicyReviewStats.additionalSeries}件。複数系列を独立目標へ水増しせず保持。</p></article>
-            <article className={styles.summaryCard}><span>宮城県Reviewed KPI</span><strong>{miyagiPolicyReviewStats.reviewedTargetGroups}</strong><p>柱1〜4・取組1〜18の全{miyagiPolicyReviewStats.reviewedIndicatorSeries}系列を一次資料と照合。</p></article>
-            <article className={styles.summaryCard}><span>宮城県KPI Evidence</span><strong>{miyagiPolicyReviewStats.kpiEvidencePackets}</strong><p>Reviewed済み{miyagiPolicyReviewStats.reviewedTargetGroups}グループすべてにEvidence Packetを付与。</p></article>
-            <article className={styles.summaryCard}><span>宮城県・実績レビュー</span><strong>{snapshot.miyagiKpiActualReviewRecords}</strong><p>年度実績の対応を確認した系列。直接接続{snapshot.miyagiDirectActualLinks}、要確認{snapshot.miyagiActualLinksNeedingReview}。</p></article>
-            <article className={styles.summaryCard}><span>宮城県・年度実績</span><strong>{snapshot.miyagiAnnualResultRows}</strong><p>2021〜2024年度の実績行。旧評価目標と現行計画目標を分離。</p></article>
-            <article className={styles.summaryCard}><span>宮城県・実績Evidence</span><strong>{snapshot.miyagiActualEvidencePackets}</strong><p>全実績レビュー系列に根拠と比較注意を保存。</p></article>
-            <article className={styles.summaryCard}><span>宮城県・後期末未設定</span><strong>{miyagiPolicyReviewStats.lateTargetsNotSet}</strong><p>取組KPIの「－」を0へ変換せず、後期末目標未設定として保持。</p></article>
-            <article className={styles.summaryCard}><span>宮城県・累計KPI</span><strong>{miyagiPolicyReviewStats.cumulativeGroups}</strong><p>［累計］表記を単年度値へ変換しない。</p></article>
-            <article className={styles.summaryCard}><span>宮城県・負値</span><strong>{miyagiPolicyReviewStats.negativeValues}</strong><p>経済成長率や全国平均との差の負値を欠損・エラーへ変換しない。</p></article>
-            <article className={styles.summaryCard}><span>宮城県・非単調目標</span><strong>{miyagiPolicyReviewStats.decliningMidtermGroups}</strong><p>現況値より低い中期末目標も公式値のまま保持。</p></article>
-            <article className={styles.summaryCard}><span>Reviewed基準実装</span><strong>{snapshot.waveOnePolicyReviewReferences}</strong><p>福岡県と北海道を全国展開のデータ・Evidence Packet基準として使用。</p></article>
-            <article className={styles.summaryCard}><span>Reviewed化作業中</span><strong>{snapshot.waveOnePolicyActiveReviews}</strong><p>宮城県のKPI本文は全件完了。現在は取組16〜18の年度実績接続と要確認{snapshot.miyagiActualLinksNeedingReview}系列の追加照合中。</p></article>
-            <article className={styles.summaryCard}><span>作業待ち</span><strong>{snapshot.waveOnePolicyQueued}</strong><p>資料構造と作業依存関係に基づき順番に着手。</p></article>
+          <div className={styles.sectionHeading}>
+            <div>
+              <p className="eyebrow">Coverage composition</p>
+              <h2>15,124件の内訳。</h2>
+            </div>
+            <p>
+              9地域の専用データと、Phase 9で追加した38県の目標原文を合算しています。どちらもEvidence Packet必須です。
+            </p>
+          </div>
+          <div className={styles.composition}>
+            <article>
+              <span>専用分析 / 9都道府県</span>
+              <strong>{formatNumber(reviewedCoverageStats.anchorReviewedRecords)}</strong>
+              <p>北海道、宮城、東京、愛知、大阪、広島、香川、福岡、沖縄。計画構造に合わせた専用画面。</p>
+              <Link href="/municipalities#prefectures">
+                全国索引で見る →
+              </Link>
+            </article>
+            <article>
+              <span>Phase 9 / 38都道府県</span>
+              <strong>{formatNumber(reviewedCoverageStats.phase9ReviewedRecords)}</strong>
+              <p>{reviewedCoverageStats.phase9SourceDocuments}公式文書から目標原文を抽出・照合。比較不能情報も保持。</p>
+              <Link href="/municipalities/phase9">
+                Phase 9の検証情報 →
+              </Link>
+            </article>
           </div>
         </section>
 
         <section className="contentSection">
-          <p className="eyebrow">Policy data readiness</p>
-          <h2>政策体系、数値目標、年度実績、評価を別の段階として公開する。</h2>
-          <div className={styles.summaryGrid} aria-label="政策データ品質概要">
-            <article className={styles.summaryCard}><span>Reviewed基本方向</span><strong>{snapshot.reviewedPolicyDirections}</strong><p>福岡県4方向と北海道3方向を原文・公式順序で登録。</p></article>
-            <article className={styles.summaryCard}><span>北海道Reviewed政策分野</span><strong>{snapshot.reviewedHokkaidoPolicyFields}</strong><p>3基本方向に属する18分野を原文・公式順序で登録。</p></article>
-            <article className={styles.summaryCard}><span>北海道政策体系Evidence</span><strong>{snapshot.hokkaidoPolicyEvidencePackets}</strong><p>3基本方向の名称、6分野、計画期間を一次資料と照合。</p></article>
-            <article className={styles.summaryCard}><span>北海道指標位置</span><strong>{snapshot.hokkaidoIndicatorPositions}</strong><p>指標番号1〜108を公式PDFとページへ欠落なく対応。</p></article>
-            <article className={styles.summaryCard}><span>北海道複数分野参照</span><strong>{snapshot.hokkaidoIndicatorRelationshipCount}</strong><p>108一意指標と113掲載行の差分を、重複KPIではなく参照として確認済み。</p></article>
-            <article className={styles.summaryCard}><span>北海道Reviewed指標</span><strong>{snapshot.reviewedHokkaidoIndicators}</strong><p>指標1〜108を一次資料と照合し、未Reviewedは0件。</p></article>
-            <article className={styles.summaryCard}><span>北海道KPI Evidence</span><strong>{snapshot.hokkaidoIndicatorEvidencePackets}</strong><p>全108指標にEvidence Packetを付与。</p></article>
-            <article className={styles.summaryCard}><span>目標設定あり</span><strong>{snapshot.hokkaidoIndicatorsWithTargets}</strong><p>数値目標と条件目標を区別し、原文の目標設計を保持。</p></article>
-            <article className={styles.summaryCard}><span>条件目標</span><strong>{snapshot.hokkaidoConditionalTargetValues}</strong><p>具体値を補わず、前年比較、範囲、過去最高値などの原文条件を保持。</p></article>
-            <article className={styles.summaryCard}><span>累計系列</span><strong>{snapshot.hokkaidoMultiYearCumulativeSeries + snapshot.hokkaidoCumulativeToDateSeries}</strong><p>期間累計と各時点までの累計到達値を分離。</p></article>
-            <article className={styles.summaryCard}><span>目標未設定</span><strong>{snapshot.hokkaidoIndicatorsWithoutTargets}</strong><p>「―」を0へ変換せず、nullと原文説明で保持。</p></article>
-            <article className={styles.summaryCard}><span>現状値なし</span><strong>{snapshot.hokkaidoUnavailableCurrentSeries}</strong><p>未公表・利用不可の現状値を0へ変換しない。</p></article>
-            <article className={styles.summaryCard}><span>比較注意あり</span><strong>{snapshot.hokkaidoIndicatorComparabilityWarnings}</strong><p>調査対象変更、別番号、系列差などの注意を個別指標に保持。</p></article>
-            <article className={styles.summaryCard}><span>北海道指標対象</span><strong>{snapshot.hokkaidoIndicatorTarget}</strong><p>重複を含む掲載行は{snapshot.hokkaidoDuplicateInclusiveIndicatorRows}。KPI本文は全件Reviewed済みで、年度実績接続は別ゲート。</p></article>
-            <article className={styles.summaryCard}><span>Reviewed取組事項</span><strong>{snapshot.reviewedPolicyInitiatives}</strong><p>福岡県公式目次の1番から30番までを原文で登録。</p></article>
-            <article className={styles.summaryCard}><span>Reviewed数値目標</span><strong>{snapshot.reviewedPolicyTargets}</strong><p>福岡県取組1から26の基準値・目標値118件を期間単位付きで登録。</p></article>
-            <article className={styles.summaryCard}><span>年度実績へ接続済み</span><strong>{snapshot.policyTargetsActualsLinked}</strong><p>個別KPIとの年度実績対応は未実施。</p></article>
-            <article className={styles.summaryCard}><span>取組進捗へ接続済み</span><strong>{snapshot.policyInitiativesProgressLinked}</strong><p>年度報告の実績・課題との対応付けは未実施。</p></article>
-            <article className={styles.summaryCard}><span>政策評価済み</span><strong>{snapshot.assessedPolicyInitiatives}</strong><p>計画文と目標値だけでは成果を評価しません。</p></article>
+          <div className={styles.sectionHeading}>
+            <div>
+              <p className="eyebrow">Vertical linkage</p>
+              <h2>目標から契約までの現在地。</h2>
+            </div>
+            <p>
+              Phase 10は進行中です。47県の目標Reviewed完了と、縦接続の完成は別の進捗として扱います。
+            </p>
+          </div>
+          <div className={styles.stageGrid}>
+            {phase10StageSummary.map((stage, index) => (
+              <article key={stage.key}>
+                <span>0{index + 1}</span>
+                <small>{stage.label}</small>
+                <strong>{stage.count}<em>/47</em></strong>
+                <div aria-label={`${stage.label} ${stage.count}/47`}>
+                  <span style={{ width: `${(stage.count / 47) * 100}%` }} />
+                </div>
+                <p>{stage.note}</p>
+              </article>
+            ))}
+          </div>
+          <div className={styles.inlineAction}>
+            <Link className="secondaryAction" href="/municipalities/phase10">
+              Phase 10の出典とゲートを確認
+            </Link>
           </div>
         </section>
 
-        <section className="contentSection"><p className="eyebrow">Executive evidence readiness</p><h2>首長分野は、任期・探索・公約資料・分割レビュー・評価を分ける。</h2><div className={styles.summaryGrid} aria-label="首長分野の品質概要">
-          <article className={styles.summaryCard}><span>Reviewed首長任期</span><strong>{snapshot.reviewedExecutiveTerms}</strong><p>氏名、就任日、任期終了予定を一次資料と照合。</p></article>
-          <article className={styles.summaryCard}><span>首長Evidence Packet</span><strong>{snapshot.executiveEvidencePackets}</strong><p>任期情報の根拠と判断を保存。</p></article>
-          <article className={styles.summaryCard}><span>公約資料の探索記録</span><strong>{snapshot.manifestoSourceSearches}</strong><p>確認範囲、未発見、次の確認方法を保存。</p></article>
-          <article className={styles.summaryCard}><span>安定した一次資料を未発見</span><strong>{snapshot.manifestoSourcesNotFound}</strong><p>不存在ではなく、現時点の探索結果として表示。</p></article>
-          <article className={styles.summaryCard}><span>登録済み公約原文資料</span><strong>{snapshot.registeredManifestos}</strong><p>北九州市長選挙の公式選挙公報1件。</p></article>
-          <article className={styles.summaryCard}><span>公約分割レビュー</span><strong>{snapshot.manifestoReviews}</strong><p>文章境界と分割可否を人手レビューした資料数。</p></article>
-          <article className={styles.summaryCard}><span>個別公約レコード</span><strong>{snapshot.extractedPromiseRecords}</strong><p>明確な原文境界を確認できるまで0件を維持。</p></article>
-        </div></section>
+        <section className="contentSection">
+          <div className={styles.sectionHeading}>
+            <div>
+              <p className="eyebrow">Quality boundaries</p>
+              <h2>壊さない4つの境界。</h2>
+            </div>
+            <p>
+              データ量が増えても、原文、欠損、比較条件、評価可能性を平らにしません。
+            </p>
+          </div>
+          <div className={styles.boundaryGrid}>
+            {boundaries.map((boundary) => (
+              <article key={boundary.label}>
+                <span>{boundary.label}</span>
+                <h3>{boundary.title}</h3>
+                <p>{boundary.text}</p>
+              </article>
+            ))}
+          </div>
+        </section>
 
-        <section className="contentSection"><p className="eyebrow">Evidence acquisition pipeline</p><h2>照会案、送信、回答を別の進捗として公開する。</h2><div className={styles.summaryGrid} aria-label="資料照会の進捗">
-          <article className={styles.summaryCard}><span>照会案・送信前</span><strong>{snapshot.sourceRequestDrafts}</strong><p>文案は作成済み。行政機関へは未送信。</p></article>
-          <article className={styles.summaryCard}><span>送信済み照会</span><strong>{snapshot.sourceRequestsSent}</strong><p>明示承認と送信日時の記録があるものだけを計上。</p></article>
-          <article className={styles.summaryCard}><span>回答受領</span><strong>{snapshot.sourceRequestResponses}</strong><p>回答日時と回答概要を確認できるものだけを計上。</p></article>
-        </div></section>
+        <section className="contentSection">
+          <p className="eyebrow">Quality ladder</p>
+          <h2>公開までの7段階。</h2>
+          <div className={styles.qualityTableWrap}>
+            <table className={styles.qualityTable}>
+              <thead>
+                <tr>
+                  <th>段階</th>
+                  <th>意味</th>
+                  <th>利用方法</th>
+                </tr>
+              </thead>
+              <tbody>
+                {qualityLevels.map(([level, meaning, use]) => (
+                  <tr key={level}>
+                    <td>{level}</td>
+                    <td>{meaning}</td>
+                    <td>{use}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
 
-        <section className="contentSection"><p className="eyebrow">Coverage by municipality</p><h2>自治体ごとの深さを、同じ件数として扱わない。</h2><div className={styles.coverageGrid}>{municipalityQuality.map((municipality) => <article className={styles.coverageCard} key={municipality.key}><div className={styles.coverageHeader}><h3>{municipality.name}</h3><StatusBadge label={municipality.status === "reviewed-data" ? "Reviewed data" : "Indexed only"} tone={municipality.status === "reviewed-data" ? "verified" : "progress"} /></div><dl className={styles.coverageFacts}><div><dt>公式資料</dt><dd>{municipality.officialSources}件</dd></div><div><dt>Reviewed財政値</dt><dd>{municipality.reviewedFiscalValues}件</dd></div><div><dt>Evidence Packet</dt><dd>{municipality.evidencePackets}件</dd></div><div><dt>評価</dt><dd>{municipality.publicEvaluations}件</dd></div></dl></article>)}</div></section>
+        <section className="contentSection">
+          <p className="eyebrow">Known limitations</p>
+          <h2>いま、まだ評価できない理由。</h2>
+          <ul className={styles.gapList}>
+            {knownLimits.map((limit) => <li key={limit}>{limit}</li>)}
+          </ul>
+        </section>
 
-        <section className="contentSection"><p className="eyebrow">Quality ladder</p><h2>公開までの7段階</h2><div className={styles.qualityTableWrap}><table className={styles.qualityTable}><thead><tr><th>段階</th><th>意味</th><th>利用方法</th></tr></thead><tbody>{qualityLevels.map(([level, meaning, use]) => <tr key={level}><td>{level}</td><td>{meaning}</td><td>{use}</td></tr>)}</tbody></table></div></section>
-        <section className="contentSection"><p className="eyebrow">Publication gaps</p><h2>評価を始める前に、まだ必要なもの</h2><ul className={styles.gapList}>{publicationGaps.map((gap) => <li key={gap}>{gap}</li>)}</ul></section>
-        <section className="callout callout--dark"><div><p className="eyebrow">Why zero evaluations</p><h2>データ不足を、点数で埋めません。</h2><p>財政値だけでは、政策成果、首長の実行、議会の監視を公平に評価できません。類似団体比較、事業・契約・KPI、公約、議会資料が接続されるまで、評価0件を維持します。</p></div></section>
+        <section className="callout callout--dark">
+          <div>
+            <p className="eyebrow">Why zero evaluations</p>
+            <h2>データ不足を、点数で埋めません。</h2>
+            <p>
+              15,124件の目標・指標は、政策成果の評価件数ではありません。目標、実績、予算、事業、契約、説明責任が比較可能な条件でつながるまで、政策達成評価0件を維持します。
+            </p>
+          </div>
+          <Link className="primaryAction" href="/methodology">
+            読み方・評価方法
+          </Link>
+        </section>
       </div>
       <SiteFooter />
     </main>
