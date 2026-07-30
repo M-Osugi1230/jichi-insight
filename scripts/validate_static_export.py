@@ -52,29 +52,25 @@ REQUIRED_FILES = [
 
 BASE_PAGE_REQUIREMENTS: dict[str, list[str]] = {
     "index.html": [
-        "全国47都道府県から探す",
+        "47都道府県から探す",
         "508件の実績推移を公開",
         "資料ではなく、判断の順番でつなぐ。",
-        "Jichi Insight評価",
+        "政策達成評価",
     ],
     "municipalities/index.html": [
-        "47都道府県を、資料の深さから探す。",
-        "全国の入口整備",
-        "PHASE 7 DATA GATE",
-        "東京都の政策目標を見る",
-        "愛知県の進捗指標を見る",
-        "大阪府の政策指標を見る",
-        "広島県の成果指標を見る",
-        "香川県の計画指標を見る",
-        "沖縄県の中期計画指標を見る",
-        "確認したい資料の深さ",
-        "都道府県と、確認できる資料。",
-        "政策計画",
-        "実施計画",
-        "KPI・数値目標",
-        "年度評価",
-        "予算・決算",
-        "事業評価",
+        "47都道府県の目標原文を、Evidenceから探す。",
+        "PHASE 9 COMPLETE",
+        "目標・指標レコード",
+        "Evidence Packet",
+        "読みたいデータの深さ",
+        "47都道府県の統合索引。",
+        "目標",
+        "実績",
+        "予算",
+        "事業",
+        "契約",
+        "根拠を読む",
+        "公式計画",
     ],
     "municipalities/phase9/index.html": [
         "38県の数値目標を、原文とEvidenceから読む。",
@@ -196,8 +192,9 @@ BASE_PAGE_REQUIREMENTS: dict[str, list[str]] = {
     "data-quality/index.html": [
         "件数ではなく、確認の深さを公開する。",
         "Evidence coverage",
-        "宮城県Reviewed KPI",
-        "宮城県KPI Evidence",
+        "15,124件の内訳。",
+        "目標から契約までの現在地。",
+        "壊さない4つの境界。",
         "データ不足を、点数で埋めません。",
     ],
 }
@@ -235,8 +232,9 @@ def nationwide_requirements() -> dict[str, list[str]]:
     requirements: dict[str, list[str]] = {
         "municipalities/index.html": [
             *(record["name"] for record in coverage["records"]),
-            "自治体ページ公開中",
-            "公開状態",
+            "Reviewed",
+            "Evidence Packet",
+            "根拠を読む",
         ]
     }
     summary_path = ROOT / "data/catalog/phase9_review_summary.json"
@@ -298,11 +296,54 @@ def miyagi_requirements() -> dict[str, list[str]]:
             f"現行計画の全{reviewed_groups}目標。",
         ],
         "data-quality/index.html": [
-            f"Reviewed済み{reviewed_groups}グループすべてにEvidence Packetを付与。",
-            f"柱1〜4・取組1〜18の全{reviewed_series}系列を一次資料と照合。",
-            f"直接接続{linked_series}、要確認{review_needed_series}。",
+            f"宮城県では{linked_series}系列を直接接続し、{review_needed_series}系列を要確認",
             f"{annual_rows}",
         ],
+    }
+
+
+def reviewed_coverage_requirements() -> dict[str, list[str]]:
+    phase9 = load_json(ROOT / "data/catalog/phase9_review_summary.json")
+    manifest_fields = [
+        ("hokkaido_policy_review_manifest.json", "reviewed_indicator_count"),
+        ("miyagi_policy_review_manifest.json", "reviewed_target_group_count"),
+        ("tokyo_policy_target_review_manifest.json", "reviewed_target_card_count"),
+        ("aichi_policy_indicator_review_manifest.json", "reviewed_indicator_row_count"),
+        (
+            "osaka_beyond_expo_indicator_review_manifest.json",
+            "reviewed_indicator_row_count",
+        ),
+        (
+            "hiroshima_revised_vision_indicator_review_manifest.json",
+            "reviewed_indicator_count",
+        ),
+        (
+            "kagawa_extended_plan_indicator_review_manifest.json",
+            "reviewed_indicator_count",
+        ),
+        (
+            "okinawa_midterm_indicator_review_manifest.json",
+            "reviewed_indicator_count",
+        ),
+    ]
+    anchor_total = sum(
+        load_json(ROOT / "data/catalog" / filename)[field]
+        for filename, field in manifest_fields
+    )
+    fukuoka_total = sum(
+        len(load_json(path)["items"])
+        for path in (ROOT / "data/entities/policy").glob(
+            "fukuoka_prefecture_initiative_*_targets.json"
+        )
+    )
+    reviewed_total = (
+        phase9["reviewed_target_statement_count"] + anchor_total + fukuoka_total
+    )
+    formatted_total = f"{reviewed_total:,}"
+    return {
+        "index.html": [formatted_total],
+        "municipalities/index.html": [formatted_total],
+        "data-quality/index.html": [formatted_total],
     }
 
 
@@ -323,7 +364,11 @@ def main() -> int:
     requirements = {
         path: list(copies) for path, copies in BASE_PAGE_REQUIREMENTS.items()
     }
-    for dynamic_requirements in (nationwide_requirements(), miyagi_requirements()):
+    for dynamic_requirements in (
+        nationwide_requirements(),
+        miyagi_requirements(),
+        reviewed_coverage_requirements(),
+    ):
         for path, copies in dynamic_requirements.items():
             requirements.setdefault(path, []).extend(copies)
 

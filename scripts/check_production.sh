@@ -7,6 +7,38 @@ INDEX_FILE="$(mktemp)"
 CONTENT_FILE="$(mktemp)"
 trap 'rm -f "$INDEX_FILE" "$CONTENT_FILE"' EXIT
 
+REVIEWED_TOTAL="$(
+  python - <<'PY'
+import json
+from pathlib import Path
+
+root = Path.cwd()
+catalog = root / "data/catalog"
+phase9 = json.loads((catalog / "phase9_review_summary.json").read_text(encoding="utf-8"))
+manifest_fields = [
+    ("hokkaido_policy_review_manifest.json", "reviewed_indicator_count"),
+    ("miyagi_policy_review_manifest.json", "reviewed_target_group_count"),
+    ("tokyo_policy_target_review_manifest.json", "reviewed_target_card_count"),
+    ("aichi_policy_indicator_review_manifest.json", "reviewed_indicator_row_count"),
+    ("osaka_beyond_expo_indicator_review_manifest.json", "reviewed_indicator_row_count"),
+    ("hiroshima_revised_vision_indicator_review_manifest.json", "reviewed_indicator_count"),
+    ("kagawa_extended_plan_indicator_review_manifest.json", "reviewed_indicator_count"),
+    ("okinawa_midterm_indicator_review_manifest.json", "reviewed_indicator_count"),
+]
+anchor_total = sum(
+    json.loads((catalog / filename).read_text(encoding="utf-8"))[field]
+    for filename, field in manifest_fields
+)
+fukuoka_total = sum(
+    len(json.loads(path.read_text(encoding="utf-8"))["items"])
+    for path in (root / "data/entities/policy").glob(
+        "fukuoka_prefecture_initiative_*_targets.json"
+    )
+)
+print(f"{phase9['reviewed_target_statement_count'] + anchor_total + fukuoka_total:,}")
+PY
+)"
+
 : > "$REPORT"
 printf 'Jichi Insight production smoke test\n' >> "$REPORT"
 printf 'URL: %s/\n' "$BASE_URL" >> "$REPORT"
@@ -40,7 +72,8 @@ for attempt in $(seq 1 18); do
   fi
   if [[ "$status" == "200" ]] \
     && grep --quiet --fixed-strings 'Jichi Insight' "$INDEX_FILE" \
-    && grep --quiet --fixed-strings '全国47都道府県から探す' "$INDEX_FILE" \
+    && grep --quiet --fixed-strings '47都道府県から探す' "$INDEX_FILE" \
+    && grep --quiet --fixed-strings "${REVIEWED_TOTAL}件" "$INDEX_FILE" \
     && grep --quiet --fixed-strings '/jichi-insight/_next/' "$INDEX_FILE"; then
     ready=true
     break
@@ -128,25 +161,20 @@ check_content() {
 }
 
 check_content "/municipalities/" \
-  "47都道府県を、資料の深さから探す。" \
-  "全国の入口整備" \
-  "東京都の政策目標を見る" \
-  "愛知県の進捗指標を見る" \
-  "大阪府の政策指標を見る" \
-  "広島県の成果指標を見る" \
-  "香川県の計画指標を見る" \
-  "沖縄県の中期計画指標を見る" \
-  "政策計画入口" \
-  "確認したい資料の深さ" \
-  "都道府県と、確認できる資料。" \
-  "政策計画" \
-  "実施計画" \
-  "KPI・数値目標" \
-  "年度評価" \
-  "予算・決算" \
-  "事業評価" \
-  "自治体ページ公開中" \
-  "公開状態"
+  "47都道府県の目標原文を、Evidenceから探す。" \
+  "PHASE 9 COMPLETE" \
+  "${REVIEWED_TOTAL}件" \
+  "読みたいデータの深さ" \
+  "47都道府県の統合索引。" \
+  "Reviewed" \
+  "Evidence Packet" \
+  "目標" \
+  "実績" \
+  "予算" \
+  "事業" \
+  "契約" \
+  "根拠を読む" \
+  "公式計画"
 
 printf '\nPrefecture coverage checks:\n' >> "$REPORT"
 while IFS= read -r prefecture_name; do
@@ -265,10 +293,13 @@ check_content "/municipalities/fukuoka-prefecture/" \
 
 check_content "/data-quality/" \
   "件数ではなく、確認の深さを公開する。" \
+  "${REVIEWED_TOTAL}件の内訳。" \
+  "目標から契約までの現在地。" \
+  "壊さない4つの境界。" \
   "データ不足を、点数で埋めません。"
 
-printf '\nPhase 7 nationwide registry checks: PASS\n' >> "$REPORT"
-printf 'Phase 8 all nine regional anchors reviewed publication checks: PASS\n' >> "$REPORT"
+printf '\nNationwide 47/47 reviewed publication checks: PASS\n' >> "$REPORT"
 printf 'Phase 9 all 38 remaining prefectures reviewed publication checks: PASS\n' >> "$REPORT"
+printf 'Phase 10 vertical linkage visibility checks: PASS\n' >> "$REPORT"
 printf 'Result: PASS\n' >> "$REPORT"
 cat "$REPORT"

@@ -1,68 +1,50 @@
-.overview { background: #fffefa; border: 1px solid #d7d3c8; display: grid; grid-template-columns: minmax(210px, 0.75fr) minmax(0, 2.25fr); margin-bottom: 90px; }
+.overview { background: #fffefa; border: 1px solid #d7d3c8; display: grid; grid-template-columns: minmax(210px, .68fr) minmax(0, 2.32fr); }
 .overviewLead { background: #102e46; color: #fff; display: grid; padding: 26px; }
-.overviewLead > span { color: #ff9a80; font-size: 0.61rem; font-weight: 900; letter-spacing: 0.12em; }
+.overviewLead > span { color: #ff9a80; font-size: .61rem; font-weight: 900; letter-spacing: .12em; }
 .overviewLead > strong { align-self: end; font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; font-size: 1.4rem; margin: 32px 0 12px; }
 .overviewLead > span:last-child { justify-self: start; }
 .overview dl { display: grid; grid-template-columns: repeat(5, 1fr); margin: 0; }
-.overview dl div { border-left: 1px solid #d7d3c8; display: flex; flex-direction: column; justify-content: space-between; padding: 25px 19px; }
-.overview dt { color: #68737b; font-size: 0.66rem; }
-.overview dd { font-size: clamp(2rem, 4vw, 3.3rem); font-weight: 850; letter-spacing: -0.065em; margin: 24px 0 0; }
-.overview dd small { color: #68737b; font-size: 0.62rem; font-weight: 650; margin-left: 3px; }
-.sectionHeading { align-items: end; display: grid; gap: 70px; grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr); }
+.overview dl div { border-left: 1px solid #d7d3c8; display: flex; flex-direction: column; justify-content: space-between; min-width: 0; padding: 25px 16px; }
+.overview dt { color: #68737b; font-size: .62rem; line-height: 1.5; }
+.overview dd { font-size: clamp(1.65rem, 3.3vw, 2.75rem); font-weight: 850; letter-spacing: -.065em; margin: 24px 0 0; }
+.overview dd small { color: #68737b; font-size: .58rem; font-weight: 650; margin-left: 3px; }
+.countNote { color: #68737b; font-size: .64rem; line-height: 1.75; margin: 12px 4px 0; }
+.sectionHeading { align-items: end; display: grid; gap: 70px; grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr); }
 .sectionHeading h2 { margin-bottom: 0; }
 .sectionHeading > p { color: #42505b; margin-bottom: 8px; }
-.deepDiveGrid { display: grid; gap: 13px; grid-template-columns: repeat(2, 1fr); margin-top: 48px; }
-.deepDiveCard { background: #fffefa; border: 1px solid #d7d3c8; border-radius: 7px 28px 7px 7px; display: flex; flex-direction: column; min-height: 490px; overflow: hidden; padding: 24px; position: relative; }
-.deepDiveCard::before { background: #286f9f; content: ""; height: 5px; left: 0; position: absolute; right: 0; top: 0; }
-.deepDiveCard.miyagi::before { background: #de5a3d; }
-.deepDiveCard.hokkaido::before { background: #286f9f; }
-.deepDiveCard.tokyo::before { background: #3e5d91; }
-.deepDiveCard.fukuoka::before { background: #236958; }
-.deepDiveCard > div:first-child { align-items: center; display: flex; gap: 10px; justify-content: space-between; }
-.deepDiveCard > div:first-child > span { font-size: 0.67rem; font-weight: 900; }
-.deepDiveCard h3 { font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; font-size: clamp(1.65rem, 2.8vw, 2.35rem); margin: 50px 0 20px; }
-.deepDiveCard dl { display: grid; grid-template-columns: repeat(2, 1fr); margin: 0; }
-.deepDiveCard dl div { border-top: 1px solid #d7d3c8; padding: 11px 0; }
-.deepDiveCard dl div:nth-child(even) { padding-left: 12px; }
-.deepDiveCard dt { color: #68737b; font-size: 0.61rem; }
-.deepDiveCard dd { font-size: 0.78rem; font-weight: 850; margin: 2px 0 0; }
-.deepDiveCard > p { color: #42505b; font-size: 0.76rem; margin: 22px 0; }
-.deepDiveCard > a, .cityCard > a { border-top: 1px solid #d7d3c8; color: #286f9f; font-size: 0.73rem; font-weight: 850; margin-top: auto; padding-top: 15px; text-underline-offset: 4px; }
-.levelSection { background: #ece8dd; display: grid; gap: 60px; grid-template-columns: 0.7fr 1.3fr; margin: 20px 0 0; padding: 58px 48px; }
+.featuredGrid { display: grid; gap: 12px; grid-template-columns: repeat(3, 1fr); margin-top: 46px; }
+.featuredCard { background: #fffefa; border: 1px solid #d7d3c8; border-radius: 7px 26px 7px 7px; display: flex; flex-direction: column; min-height: 390px; overflow: hidden; padding: 23px; position: relative; }
+.featuredCard::before { background: #286f9f; content: ""; height: 5px; left: 0; position: absolute; right: 0; top: 0; }
+.featuredCard:first-child::before { background: #de5a3d; }
+.featuredCard:nth-child(2)::before { background: #236958; }
+.featuredTop { align-items: center; display: flex; gap: 10px; justify-content: space-between; }
+.featuredTop > span { font-size: .63rem; font-weight: 900; }
+.featuredCard h3 { font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; font-size: clamp(1.45rem, 2.5vw, 2rem); line-height: 1.45; margin: 44px 0 13px; }
+.featuredCard > p { color: #42505b; font-size: .73rem; }
+.featuredCard ul { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; margin: 18px 0; padding: 0; }
+.featuredCard li { background: #f0ede5; border-radius: 999px; color: #42505b; font-size: .59rem; font-weight: 750; padding: 5px 8px; }
+.featuredCard > a { border-top: 1px solid #d7d3c8; color: #286f9f; font-size: .7rem; font-weight: 850; margin-top: auto; padding-top: 14px; text-underline-offset: 4px; }
+.levelSection { background: #ece8dd; display: grid; gap: 60px; grid-template-columns: .7fr 1.3fr; margin: 104px 0 0; padding: 58px 48px; }
 .levelSection h2 { font-size: clamp(2rem, 4vw, 3.4rem); }
 .levelSection > div > p:last-child { color: #42505b; }
 .levelSection ol { display: grid; grid-template-columns: repeat(2, 1fr); list-style: none; margin: 0; padding: 0; }
 .levelSection li { border-left: 1px solid #b8b4aa; border-top: 1px solid #b8b4aa; display: grid; min-height: 205px; padding: 18px; }
-.levelSection li > span { color: #9b978d; font-size: 0.62rem; }
-.levelSection li small { align-self: end; color: #de5a3d; font-size: 0.62rem; font-weight: 900; margin-top: 28px; }
+.levelSection li > span { color: #9b978d; font-size: .62rem; }
+.levelSection li small { align-self: end; color: #de5a3d; font-size: .62rem; font-weight: 900; margin-top: 28px; }
 .levelSection li strong { font-size: 1rem; margin-top: 4px; }
-.levelSection li p { color: #42505b; font-size: 0.7rem; margin: 8px 0 0; }
-.sourceSummary { display: grid; gap: 10px; grid-template-columns: repeat(3, 1fr); margin-top: 44px; }
-.sourceSummary article { background: #fffefa; border: 1px solid #d7d3c8; padding: 22px; }
-.sourceSummary article > span { color: #42505b; font-size: 0.68rem; font-weight: 800; }
-.sourceSummary strong { display: block; font-size: 2.3rem; letter-spacing: -0.06em; margin: 24px 0 12px; }
-.sourceSummary strong small { color: #68737b; font-size: 0.61rem; margin-left: 3px; }
-.sourceSummary article > div { background: #ddd9cf; height: 6px; }
-.sourceSummary article > div span { background: #286f9f; display: block; height: 100%; min-width: 2px; }
-.sourceSummary p { color: #68737b; font-size: 0.64rem; margin: 11px 0 0; }
-.cityGrid { display: grid; gap: 13px; grid-template-columns: repeat(2, 1fr); margin-top: 38px; }
-.cityCard { background: #fffefa; border: 1px solid #d7d3c8; border-radius: 7px 25px 7px 7px; display: flex; flex-direction: column; min-height: 340px; padding: 24px; }
-.cityCard > div:first-child { align-items: center; display: flex; justify-content: space-between; }
-.cityCard > div:first-child > span { color: #68737b; font-size: 0.66rem; }
-.cityCard h3 { font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; font-size: 1.75rem; margin: 36px 0 8px; }
-.cityCard > p { color: #42505b; font-size: 0.78rem; }
-.cityCard dl { margin: 12px 0 20px; }
-.cityCard dl div { border-top: 1px solid #d7d3c8; display: flex; gap: 15px; justify-content: space-between; padding: 9px 0; }
-.cityCard dt, .cityCard dd { font-size: 0.7rem; }
-.cityCard dt { color: #68737b; }
-.cityCard dd { font-weight: 800; margin: 0; text-align: right; }
-.roadmapGrid { display: grid; gap: 10px; grid-template-columns: repeat(3, 1fr); margin-top: 42px; }
-.roadmapGrid article { background: #fffefa; border: 1px solid #d7d3c8; display: flex; flex-direction: column; min-height: 265px; padding: 20px; }
-.roadmapGrid article > div { align-items: center; display: flex; justify-content: space-between; }
-.roadmapGrid article > div > span { color: #de5a3d; font-size: 0.65rem; font-weight: 900; }
-.roadmapGrid h3 { font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; font-size: 1.35rem; margin: 30px 0 10px; }
-.roadmapGrid p { color: #42505b; font-size: 0.68rem; line-height: 1.7; }
-.roadmapGrid article > a { border-top: 1px solid #d7d3c8; color: #286f9f; font-size: 0.68rem; font-weight: 850; margin-top: auto; padding-top: 12px; text-underline-offset: 3px; }
+.levelSection li p { color: #42505b; font-size: .7rem; margin: 8px 0 0; }
+.stageGrid { display: grid; grid-template-columns: repeat(5, 1fr); margin-top: 48px; }
+.stageGrid article { border-left: 1px solid #b8b4aa; min-height: 250px; padding: 17px; }
+.stageGrid article:last-child { border-right: 1px solid #b8b4aa; }
+.stageGrid article > span { color: #9b978d; display: block; font-size: .58rem; }
+.stageGrid small { color: #de5a3d; display: block; font-size: .65rem; font-weight: 900; margin-top: 35px; }
+.stageGrid strong { display: block; font-size: 2.3rem; letter-spacing: -.06em; margin: 5px 0 12px; }
+.stageGrid strong em { color: #68737b; font-size: .58rem; font-style: normal; margin-left: 3px; }
+.stageGrid article > div { background: #ddd9cf; height: 6px; }
+.stageGrid article > div span { background: #286f9f; display: block; height: 100%; min-width: 2px; }
+.stageGrid p { color: #68737b; font-size: .62rem; line-height: 1.6; margin-top: 10px; }
+.calloutActions { align-items: flex-start; display: flex; flex-direction: column; gap: 18px; }
+.calloutActions > a:last-child { color: #dce8ee; font-size: .72rem; font-weight: 800; text-underline-offset: 4px; }
 
 @media (max-width: 1000px) {
   .overview { grid-template-columns: 1fr; }
@@ -70,25 +52,26 @@
   .overviewLead > strong { margin: 12px 0; }
   .overviewLead > span:last-child { justify-self: end; }
   .levelSection { grid-template-columns: 1fr; }
+  .featuredGrid { grid-template-columns: 1fr 1fr; }
+  .stageGrid { grid-template-columns: repeat(3, 1fr); }
+  .stageGrid article:nth-child(n + 4) { border-top: 1px solid #b8b4aa; }
 }
 
 @media (max-width: 760px) {
   .overview dl { grid-template-columns: repeat(2, 1fr); }
   .overview dl div:nth-child(odd) { border-left: 0; }
   .overview dl div:nth-child(n + 3) { border-top: 1px solid #d7d3c8; }
-  .sectionHeading, .deepDiveGrid { grid-template-columns: 1fr; }
+  .overview dl div:last-child { grid-column: 1 / -1; }
+  .sectionHeading, .featuredGrid { grid-template-columns: 1fr; }
   .sectionHeading { align-items: start; gap: 22px; }
-  .deepDiveCard { min-height: 440px; }
+  .featuredCard { min-height: 350px; }
   .levelSection { padding: 44px 25px; }
-  .sourceSummary { grid-template-columns: repeat(2, 1fr); }
-  .cityGrid { grid-template-columns: 1fr; }
-  .roadmapGrid { grid-template-columns: repeat(2, 1fr); }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 520px) {
   .overviewLead { display: grid; grid-template-columns: 1fr; }
   .overviewLead > span:last-child { justify-self: start; }
-  .levelSection ol, .sourceSummary { grid-template-columns: 1fr; }
-  .levelSection li { min-height: 170px; }
-  .roadmapGrid { grid-template-columns: 1fr; }
+  .levelSection ol, .stageGrid { grid-template-columns: 1fr; }
+  .levelSection li, .stageGrid article { border: 0; border-top: 1px solid #b8b4aa; min-height: 170px; }
+  .stageGrid article:last-child { border-right: 0; }
 }

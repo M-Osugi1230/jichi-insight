@@ -6,6 +6,7 @@ LIB_PATH = ROOT / "apps/web/lib/osakaIndicators.ts"
 EXPLORER_PATH = ROOT / "apps/web/components/OsakaIndicatorExplorer.tsx"
 SITEMAP_PATH = ROOT / "apps/web/app/sitemap.ts"
 NATIONWIDE_PATH = ROOT / "apps/web/app/municipalities/page.tsx"
+REVIEWED_COVERAGE_PATH = ROOT / "apps/web/lib/reviewedCoverage.ts"
 
 
 def test_osaka_page_exposes_reviewed_scope_without_claiming_achievement():
@@ -39,7 +40,9 @@ def test_osaka_page_supports_layer_and_scale_boundaries():
 def test_osaka_route_is_linked_from_nationwide_page_and_sitemap():
     sitemap = SITEMAP_PATH.read_text(encoding="utf-8")
     nationwide = NATIONWIDE_PATH.read_text(encoding="utf-8")
+    reviewed_coverage = REVIEWED_COVERAGE_PATH.read_text(encoding="utf-8")
 
     assert '"/municipalities/osaka"' in sitemap
-    assert 'href="/municipalities/osaka"' in nationwide
-    assert "大阪府の政策指標を見る" in nationwide
+    assert "CoverageExplorer" in nationwide
+    assert '"27": {' in reviewed_coverage
+    assert "osakaIndicatorStats.indicatorRows" in reviewed_coverage

@@ -56,6 +56,7 @@
 .hokkaidoCard::before { background: #286f9f; }
 .fukuokaCard::before { background: #236958; }
 .nationwideCard::before { background: #986b16; }
+.qualityCard::before { background: #7a557d; }
 .depthTop { align-items: center; display: flex; justify-content: space-between; }
 .depthTop span { font-size: 0.78rem; font-weight: 900; }
 .depthTop small { color: #68737b; font-size: 0.64rem; }
@@ -81,6 +82,7 @@
 .readinessBars { align-self: end; display: grid; gap: 18px; }
 .readinessBars > div > div:first-child { align-items: baseline; display: flex; justify-content: space-between; }
 .readinessBars span { font-size: 0.77rem; font-weight: 750; }
+.readinessBars span small { color: #68737b; display: block; font-size: .58rem; font-weight: 650; margin-top: 2px; }
 .readinessBars strong { font-size: 1.35rem; }
 .readinessBars strong small { color: #68737b; font-size: 0.62rem; margin-left: 2px; }
 .bar { background: #ddd9cf; height: 8px; margin-top: 7px; overflow: hidden; }

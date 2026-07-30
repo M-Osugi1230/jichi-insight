@@ -3,6 +3,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 COVERAGE = ROOT / "apps/web/lib/nationwideCoverage.ts"
 MUNICIPALITIES = ROOT / "apps/web/app/municipalities/page.tsx"
+REVIEWED_COVERAGE = ROOT / "apps/web/lib/reviewedCoverage.ts"
+EXPLORER = ROOT / "apps/web/components/CoverageExplorer.tsx"
 
 
 def read(path: Path) -> str:
@@ -27,11 +29,16 @@ def test_overlay_cannot_downgrade_reviewed_or_linked_source_depth():
     assert "sourceInventoryStatusOrder.indexOf(current)" in coverage
 
 
-def test_nationwide_page_exposes_effective_source_depth():
+def test_nationwide_page_exposes_reviewed_counts_and_vertical_depth():
     page = read(MUNICIPALITIES)
+    reviewed_coverage = read(REVIEWED_COVERAGE)
+    explorer = read(EXPLORER)
 
-    assert "nationwideSourceInventoryStats" in page
-    assert "stats.indexedOrHigher" in page
-    assert "stats.reviewedOrHigher" in page
-    assert "索引以上" in page
-    assert "人手照合以上" in page
+    assert "reviewedCoverageStats.reviewedRecords" in page
+    assert "phase10StageSummary" in page
+    assert "reviewedPrefectureCoverage" in reviewed_coverage
+    assert "phase9Summary.reviewed_target_statement_count" in reviewed_coverage
+    assert "evidenceDepthOrder.map" in explorer
+    assert "索引済" in explorer
+    assert "照合済" in explorer
+    assert "接続済" in explorer

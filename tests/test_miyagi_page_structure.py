@@ -7,6 +7,7 @@ LIBRARY = ROOT / "apps/web/lib/miyagiPolicies.ts"
 COVERAGE = ROOT / "apps/web/lib/nationwideCoverage.ts"
 PUBLISHED = ROOT / "data/catalog/published_prefecture_pages.json"
 MUNICIPALITIES = ROOT / "apps/web/app/municipalities/page.tsx"
+REVIEWED_COVERAGE = ROOT / "apps/web/lib/reviewedCoverage.ts"
 SITEMAP = ROOT / "apps/web/app/sitemap.ts"
 
 
@@ -29,6 +30,7 @@ def test_miyagi_page_is_linked_from_nationwide_surfaces():
     coverage = read(COVERAGE)
     published = json.loads(read(PUBLISHED))
     municipalities = read(MUNICIPALITIES)
+    reviewed_coverage = read(REVIEWED_COVERAGE)
     sitemap = read(SITEMAP)
     by_code = {
         record["prefecture_code"]: record for record in published["records"]
@@ -41,6 +43,8 @@ def test_miyagi_page_is_linked_from_nationwide_surfaces():
     assert by_code["04"]["route"] == "/municipalities/miyagi"
     assert registry_import in coverage
     assert "publishedPrefecturePagesByCode" in coverage
-    assert 'href="/municipalities/miyagi"' in municipalities
-    assert "waveOnePolicyReviewQueue" in municipalities
+    assert 'href: "/municipalities/miyagi#results"' in municipalities
+    assert '"04": {' in reviewed_coverage
+    assert 'profile: "actuals_linked"' in reviewed_coverage
+    assert "reviewedPrefectureCoverage" in reviewed_coverage
     assert '"/municipalities/miyagi"' in sitemap

@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { nationwideCoverageStats } from "@/lib/nationwideCoverage";
+import { reviewedCoverageStats } from "@/lib/reviewedCoverage";
 
 const primaryNavigation = [
   { href: "/municipalities", label: "全国から探す" },
@@ -26,9 +26,12 @@ export function SiteHeader() {
         <div>
           <span className="dataPulseDot" aria-hidden="true" />
           <span className="dataPulseLabel">DATA UPDATE</span>
-          <span>{nationwideCoverageStats.updatedAt}</span>
+          <span className="dataPulseDate">{reviewedCoverageStats.updatedAt}</span>
           <span className="dataPulseDivider" aria-hidden="true" />
-          <span>全国 {nationwideCoverageStats.currentPlanConfirmedPrefectures}/47 の現行計画を確認</span>
+          <span>
+            全国 {reviewedCoverageStats.reviewedPrefectures}/47 Reviewed・
+            {reviewedCoverageStats.reviewedRecords.toLocaleString("ja-JP")}件
+          </span>
         </div>
       </div>
       <header className="siteHeader">
