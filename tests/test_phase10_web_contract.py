@@ -7,29 +7,28 @@ def read(path: str) -> str:
     return (ROOT / path).read_text(encoding="utf-8")
 
 
-def test_phase10_public_page_and_loader_exist():
+def test_phase10_public_page_and_uniform_loader_exist():
     page = read("apps/web/app/municipalities/phase10/page.tsx")
     loader = read("apps/web/lib/phase10.ts")
     css = read("apps/web/app/municipalities/phase10/phase10.module.css")
 
     for required in (
-        "目標から、実績・予算・事業へつなぐ。",
-        "資料がある",
-        "9地域拠点の接続状態。",
-        "政策評価は未判定",
-        "宮城県：年度実績の次に、予算・事業・契約をつなぐ。",
+        "47都道府県を、同じ深さまで掘る。",
+        "深い県だけで、全国対応とは呼ばない。",
+        "全47都道府県の深度差を、そのまま表示。",
+        "部分完了なし",
+        "目標へ接続",
         "公式資料入口",
-        "事業・契約 入口確認",
+        "予算 / 決算 入口以上",
     ):
         assert required in page
 
-    assert "phase10_execution_queue.json" in loader
-    assert "phase10_wave1_source_inventory.json" in loader
-    assert "loadPhase10SourceInventory" in loader
-    assert "phase10SourcesByPrefecture" in loader
-    assert "phase10DepthLabel" in loader
-    assert ".prefectureGrid" in css
-    assert ".sourceList" in css
+    assert "phase10_uniformity.json" in loader
+    assert "loadPhase10Uniformity" in loader
+    assert "phase10UniformRecords" in loader
+    assert "phase10UniformSummary" in loader
+    assert ".depthMatrix" in css
+    assert '.depthState[data-state="linked"]' in css
 
 
 def test_phase10_is_linked_from_phase9_and_sitemap():
