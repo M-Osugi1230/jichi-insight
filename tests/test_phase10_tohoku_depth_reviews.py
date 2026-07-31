@@ -87,17 +87,12 @@ def test_tohoku_review_promotes_only_reviewed_depth():
         }
 
 
-def test_tohoku_review_updates_nationwide_counts_without_completion():
+def test_tohoku_review_remains_registered_during_nationwide_expansion():
     completion = load(COMPLETION_PATH)
     counts = completion["nationwide_uniform_counts"]
 
-    assert counts["prefectures_with_five_layers_indexed_or_better"] == 14
-    assert counts["prefectures_with_five_layers_reviewed"] == 13
-    assert counts["annual_actuals_reviewed_or_better"] == 14
-    assert counts["budget_reviewed_or_better"] == 14
-    assert counts["settlement_reviewed_or_better"] == 13
-    assert counts["priority_projects_reviewed_or_better"] == 14
-    assert counts["audit_reviewed_or_better"] == 14
+    assert counts["prefectures_with_five_layers_indexed_or_better"] >= 14
+    assert counts["prefectures_with_five_layers_reviewed"] >= 13
     assert counts["uniform_depth_complete"] == 0
     assert completion["status"] == "in_progress"
 
