@@ -73,7 +73,8 @@
       "additionalProperties": false,
       "required": [
         "reviewed_anchor_prefectures",
-        "reviewed_prefectures_with_five_layers",
+        "prefectures_with_five_layers_indexed_or_better",
+        "prefectures_with_five_layers_reviewed",
         "annual_actuals_reviewed_or_better",
         "budget_reviewed_or_better",
         "settlement_reviewed_or_better",
@@ -87,7 +88,12 @@
           "minimum": 0,
           "maximum": 9
         },
-        "reviewed_prefectures_with_five_layers": {
+        "prefectures_with_five_layers_indexed_or_better": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 47
+        },
+        "prefectures_with_five_layers_reviewed": {
           "type": "integer",
           "minimum": 0,
           "maximum": 47
