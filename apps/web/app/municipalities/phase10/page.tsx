@@ -7,9 +7,11 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { StatusBadge } from "@/components/StatusBadge";
 import {
   loadPhase10Queue,
+  loadPhase10ReferenceReviews,
   loadPhase10SourceInventory,
   loadPhase10Uniformity,
   phase10DepthLabel,
+  phase10ReferenceReviewsByPrefecture,
   phase10SourcesByPrefecture,
   phase10UniformRecords,
   phase10UniformSummary,
@@ -57,6 +59,22 @@ const sourceCategoryLabels = {
   contracts: "契約",
 };
 
+const referenceDimensionLabels = {
+  annual_actuals: "年度実績",
+  budget: "予算",
+  settlement: "決算",
+  priority_projects: "重点事業",
+  assembly: "議会",
+  audit: "監査",
+};
+
+const wave1DepthMap = {
+  annual_evaluation: "annual_actuals",
+  budget: "budget",
+  project_evaluation: "priority_projects",
+  contracts: "contracts",
+} as const;
+
 function indexedOrBetter(counts: Record<Phase10DepthStatus, number>): number {
   return counts.indexed + counts.reviewed + counts.linked;
 }
@@ -83,6 +101,12 @@ export default function Phase10MunicipalitiesPage() {
   const uniformSummary = phase10UniformSummary(uniformity, uniformRecords);
   const sourceInventory = loadPhase10SourceInventory();
   const sourcesByPrefecture = phase10SourcesByPrefecture(sourceInventory);
+  const referenceReviews = loadPhase10ReferenceReviews();
+  const referenceReviewsByPrefecture =
+    phase10ReferenceReviewsByPrefecture(referenceReviews);
+  const uniformByCode = new Map(
+    uniformRecords.map((record) => [record.prefecture_code, record]),
+  );
   const budgetIndexed = indexedOrBetter(uniformSummary.budget);
   const settlementIndexed = indexedOrBetter(uniformSummary.settlement);
 
@@ -217,6 +241,50 @@ export default function Phase10MunicipalitiesPage() {
           </p>
         </section>
 
+        <section className="contentSection" aria-labelledby="reference-depth-reviews">
+          <div className={styles.sectionHeading}>
+            <div>
+              <p className="eyebrow">Reviewed reference depth</p>
+              <h2 id="reference-depth-reviews">宮城県と福岡県の次の層を、公式資料で確認。</h2>
+            </div>
+            <p>
+              年度実績の先にある予算、決算、重点事業、議会、監査について、
+              公式資料の内容と未接続範囲を分けてReviewed化しました。
+            </p>
+          </div>
+
+          <div className={styles.reviewGrid}>
+            {referenceReviews.prefecture_codes.map((code) => {
+              const records = referenceReviewsByPrefecture.get(code) ?? [];
+              const prefecture = uniformByCode.get(code);
+              return (
+                <article className={styles.reviewCard} key={code}>
+                  <div className={styles.cardHeader}>
+                    <span>{code} / {prefecture?.region}</span>
+                    <StatusBadge label="深掘りReviewed" tone="verified" />
+                  </div>
+                  <h3>{prefecture?.name}</h3>
+                  <div className={styles.reviewList}>
+                    {records.map((record) => (
+                      <div key={record.id}>
+                        <div className={styles.reviewMeta}>
+                          <strong>{referenceDimensionLabels[record.dimension]}</strong>
+                          <span>{phase10DepthLabel(record.resulting_depth)}</span>
+                        </div>
+                        <a href={record.url} target="_blank" rel="noreferrer">
+                          {record.title} ↗
+                        </a>
+                        <p>{record.claims[0]}</p>
+                        <small>{record.boundary}</small>
+                      </div>
+                    ))}
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+
         <section className="contentSection" aria-labelledby="phase10-wave1">
           <div className={styles.sectionHeading}>
             <div>
@@ -232,19 +300,18 @@ export default function Phase10MunicipalitiesPage() {
           <div className={styles.prefectureGrid}>
             {queue.wave1_records.map((record) => {
               const sources = sourcesByPrefecture.get(record.prefecture_code) ?? [];
+              const uniformRecord = uniformByCode.get(record.prefecture_code);
               return (
                 <article className={styles.prefectureCard} key={record.prefecture_code}>
                   <div className={styles.cardHeader}>
                     <span>{record.prefecture_code} / {record.region}</span>
                     <StatusBadge
                       label={
-                        record.status === "linked_baseline"
-                          ? "接続基準"
-                          : record.status === "review_ready"
-                            ? "接続準備"
-                            : "資料索引待ち"
+                        uniformRecord
+                          ? phase10UniformRecordStatusLabel(uniformRecord.status)
+                          : "資料索引待ち"
                       }
-                      tone={record.status === "queued" ? "neutral" : "verified"}
+                      tone={uniformRecord ? statusTone(uniformRecord.status) : "neutral"}
                     />
                   </div>
                   <h3>{record.name}</h3>
@@ -252,11 +319,16 @@ export default function Phase10MunicipalitiesPage() {
                     {depthFields.map(([field, label]) => (
                       <div key={field}>
                         <dt>{label}</dt>
-                        <dd>{phase10DepthLabel(record.current_depth[field])}</dd>
+                        <dd>
+                          {phase10DepthLabel(
+                            uniformRecord?.current_depth[wave1DepthMap[field]] ??
+                              record.current_depth[field],
+                          )}
+                        </dd>
                       </div>
                     ))}
                   </dl>
-                  <p>{record.next_action}</p>
+                  <p>{uniformRecord?.next_action ?? record.next_action}</p>
                   {sources.length > 0 ? (
                     <div className={styles.sourceList}>
                       <strong>公式資料入口</strong>
