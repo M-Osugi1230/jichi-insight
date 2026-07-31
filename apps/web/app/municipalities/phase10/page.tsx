@@ -8,16 +8,23 @@ import { StatusBadge } from "@/components/StatusBadge";
 import {
   loadPhase10Queue,
   loadPhase10SourceInventory,
+  loadPhase10Uniformity,
   phase10DepthLabel,
   phase10SourcesByPrefecture,
+  phase10UniformRecords,
+  phase10UniformSummary,
+  phase10UniformRecordStatusLabel,
+  type Phase10DepthStatus,
+  type Phase10DimensionId,
+  type Phase10UniformRecord,
 } from "@/lib/phase10";
 
 import styles from "./phase10.module.css";
 
 export const metadata: Metadata = {
-  title: "Phase 10｜目標・実績・予算・事業の接続",
+  title: "Phase 10｜全国47都道府県の情報深度をそろえる",
   description:
-    "全国47都道府県のReviewed目標を、年度実績、予算、重点事業、契約、説明責任へ接続するPhase 10の進行状況を公開します。",
+    "全国47都道府県を同じ品質ゲートで管理し、政策目標を年度実績、予算・決算、重点事業、契約、議会、監査、首長公約へ接続するPhase 10の進行状況を公開します。",
 };
 
 export const dynamic = "force-static";
@@ -29,6 +36,20 @@ const depthFields = [
   ["contracts", "契約"],
 ] as const;
 
+const matrixDimensions: Array<{
+  id: Phase10DimensionId;
+  label: string;
+}> = [
+  { id: "annual_actuals", label: "年度実績" },
+  { id: "budget", label: "予算" },
+  { id: "settlement", label: "決算" },
+  { id: "priority_projects", label: "重点事業" },
+  { id: "contracts", label: "契約" },
+  { id: "assembly", label: "議会" },
+  { id: "audit", label: "監査" },
+  { id: "executive_manifesto", label: "首長公約" },
+];
+
 const sourceCategoryLabels = {
   annual_evaluation: "年度実績",
   budget: "予算",
@@ -36,23 +57,47 @@ const sourceCategoryLabels = {
   contracts: "契約",
 };
 
+function indexedOrBetter(counts: Record<Phase10DepthStatus, number>): number {
+  return counts.indexed + counts.reviewed + counts.linked;
+}
+
+function statusTone(
+  status: Phase10UniformRecord["status"],
+): "neutral" | "progress" | "warning" | "verified" {
+  if (status === "complete" || status === "review_ready") {
+    return "verified";
+  }
+  if (status === "linkage_in_progress") {
+    return "progress";
+  }
+  if (status === "source_indexing") {
+    return "warning";
+  }
+  return "neutral";
+}
+
 export default function Phase10MunicipalitiesPage() {
   const queue = loadPhase10Queue();
+  const uniformity = loadPhase10Uniformity();
+  const uniformRecords = phase10UniformRecords(uniformity);
+  const uniformSummary = phase10UniformSummary(uniformity, uniformRecords);
   const sourceInventory = loadPhase10SourceInventory();
   const sourcesByPrefecture = phase10SourcesByPrefecture(sourceInventory);
+  const budgetIndexed = indexedOrBetter(uniformSummary.budget);
+  const settlementIndexed = indexedOrBetter(uniformSummary.settlement);
 
   return (
     <main id="main-content">
       <SiteHeader />
       <div className="pageShell">
         <PageIntro
-          eyebrow="Phase 10 vertical linkage"
-          title="目標から、実績・予算・事業へつなぐ。"
+          eyebrow="Phase 10 nationwide uniform depth"
+          title="47都道府県を、同じ深さまで掘る。"
         >
           <p>
             Phase 9で確認した全国47都道府県の目標原文を、年度実績、予算・決算、
-            重点事業、契約、評価・監査・議会説明へ順番につなぎます。資料入口を
-            見つけた状態と、定義を照合して目標へ接続した状態は分けて表示します。
+            重点事業、契約、議会、監査、首長公約へつなぎます。掲載件数ではなく、
+            全都道府県が同じ品質ゲートを通過したかでPhase 10の完了を判断します。
           </p>
           <div className={styles.introLinks}>
             <Link href="/municipalities/phase9">全国のReviewed目標を見る</Link>
@@ -62,33 +107,36 @@ export default function Phase10MunicipalitiesPage() {
 
         <section className={styles.summaryGrid} aria-label="Phase 10進行状況">
           <article>
-            <span>Reviewed目標</span>
-            <strong>{queue.counts.target_statements_reviewed} / 47</strong>
-            <p>Phase 10の接続元となる全国の政策目標です。</p>
+            <span>同一粒度 完了</span>
+            <strong>{uniformSummary.uniform_depth_complete} / 47</strong>
+            <p>11項目すべてが共通ゲートへ到達した都道府県数です。</p>
+          </article>
+          <article>
+            <span>Reviewed目標・Evidence</span>
+            <strong>47 / 47</strong>
+            <p>全都道府県でPhase 10の接続元を確保済みです。</p>
           </article>
           <article>
             <span>年度実績 接続済み</span>
-            <strong>{queue.counts.annual_evaluation_linked}</strong>
-            <p>目標と年度実績の定義・期間を照合した県です。</p>
+            <strong>{uniformSummary.annual_actuals.linked}</strong>
+            <p>定義、期間、対象範囲を確認して目標へ接続した県数です。</p>
           </article>
           <article>
-            <span>事業・契約 入口確認</span>
-            <strong>
-              {queue.counts.project_evaluation_indexed_or_better} / {queue.counts.contracts_indexed_or_better}
-            </strong>
-            <p>事業評価と契約の公式入口を確認した県数です。</p>
+            <span>予算 / 決算 入口以上</span>
+            <strong>{budgetIndexed} / {settlementIndexed}</strong>
+            <p>入口確認以上の県数です。金額接続済みを意味しません。</p>
           </article>
           <article>
             <span>公式ソース</span>
             <strong>{sourceInventory.summary.source_count}</strong>
-            <p>宮城県・福岡県で確認した年度実績、予算、事業、契約の入口です。</p>
+            <p>現在の参照実装で確認した年度実績、予算、事業、契約の入口です。</p>
           </article>
         </section>
 
         <section className={styles.boundary}>
           <div>
-            <p className="eyebrow">Linkage boundaries</p>
-            <h2>「資料がある」と「同じ政策へつながる」を混同しない。</h2>
+            <p className="eyebrow">One gate for all 47</p>
+            <h2>深い県だけで、全国対応とは呼ばない。</h2>
           </div>
           <div className={styles.boundaryGrid}>
             <article>
@@ -97,28 +145,87 @@ export default function Phase10MunicipalitiesPage() {
             </article>
             <article>
               <strong>Reviewed</strong>
-              <p>値、年度、会計区分、資料位置をEvidenceとともに確認した状態です。</p>
+              <p>値、年度、範囲、資料位置をEvidenceとともに確認した状態です。</p>
             </article>
             <article>
               <strong>目標へ接続</strong>
-              <p>指標定義、期間、対象範囲を照合し、同じ政策系列として接続した状態です。</p>
+              <p>定義、期間、対象範囲を照合し、同じ政策系列として接続した状態です。</p>
             </article>
             <article>
-              <strong>政策評価は未判定</strong>
-              <p>支出や事業実施だけを理由に、達成・未達や自治体の優劣を判定しません。</p>
+              <strong>部分完了なし</strong>
+              <p>47都道府県すべてが共通ゲートを通るまでPhase 10は完了にしません。</p>
             </article>
           </div>
+        </section>
+
+        <section className="contentSection" aria-labelledby="uniform-depth-matrix">
+          <div className={styles.sectionHeading}>
+            <div>
+              <p className="eyebrow">Nationwide depth matrix</p>
+              <h2 id="uniform-depth-matrix">全47都道府県の深度差を、そのまま表示。</h2>
+            </div>
+            <p>
+              政策目標、Evidence、公開検証は47都道府県でReviewed済みです。
+              下表は、その先の実績・金額・事業・説明責任の未完範囲を示します。
+            </p>
+          </div>
+
+          <div className={styles.matrixWrap}>
+            <table className={styles.depthMatrix}>
+              <thead>
+                <tr>
+                  <th scope="col">都道府県</th>
+                  <th scope="col">状態</th>
+                  {matrixDimensions.map((dimension) => (
+                    <th scope="col" key={dimension.id}>{dimension.label}</th>
+                  ))}
+                  <th scope="col">残り</th>
+                </tr>
+              </thead>
+              <tbody>
+                {uniformRecords.map((record) => (
+                  <tr key={record.prefecture_code}>
+                    <th scope="row">
+                      <span>{record.prefecture_code}</span>
+                      {record.name}
+                      <small>{record.region}</small>
+                    </th>
+                    <td>
+                      <StatusBadge
+                        label={phase10UniformRecordStatusLabel(record.status)}
+                        tone={statusTone(record.status)}
+                      />
+                    </td>
+                    {matrixDimensions.map((dimension) => {
+                      const depth = record.current_depth[dimension.id];
+                      return (
+                        <td key={dimension.id}>
+                          <span className={styles.depthState} data-state={depth}>
+                            {phase10DepthLabel(depth)}
+                          </span>
+                        </td>
+                      );
+                    })}
+                    <td className={styles.gapCell}>{record.gap_count}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className={styles.matrixNote}>
+            「未索引」は不存在を意味しません。公式資料入口をまだ固定していない状態です。
+          </p>
         </section>
 
         <section className="contentSection" aria-labelledby="phase10-wave1">
           <div className={styles.sectionHeading}>
             <div>
-              <p className="eyebrow">Wave 1 regional anchors</p>
-              <h2 id="phase10-wave1">9地域拠点の接続状態。</h2>
+              <p className="eyebrow">Reference implementations</p>
+              <h2 id="phase10-wave1">9地域拠点から、接続方法を確立する。</h2>
             </div>
             <p>
-              宮城県を年度実績接続の基準、福岡県を予算・財政接続の基準として、
-              残る7拠点の資料入口を順に固定します。
+              宮城県を年度実績接続の基準、福岡県を予算・決算接続の基準として、
+              残る7拠点へ同じ工程を適用します。
             </p>
           </div>
 
@@ -170,10 +277,10 @@ export default function Phase10MunicipalitiesPage() {
         <section className={styles.nextSection}>
           <div>
             <p className="eyebrow">Current active reference</p>
-            <h2>宮城県：年度実績の次に、予算・事業・契約をつなぐ。</h2>
+            <h2>宮城県と福岡県で、実績・金額・事業の接続基準を固める。</h2>
             <p>
-              公式入口の索引化は完了しました。次は予算資料と事業評価を政策・施策・事業IDへ照合し、
-              契約結果を同じ事業へ接続できるか確認します。
+              宮城県の年度実績接続と福岡県のReviewed財政・決算を基準に、
+              予算、重点事業、契約、議会、監査、公約を同じ政策系列へ接続します。
             </p>
           </div>
           <Link href="/municipalities/miyagi">宮城県の年度実績を見る →</Link>

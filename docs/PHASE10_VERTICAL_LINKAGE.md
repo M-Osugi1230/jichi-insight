@@ -1,85 +1,134 @@
-# Phase 10 — Vertical linkage from targets to delivery
+# Phase 10 — Nationwide uniform depth
 
-Phase 10 connects the nationwide Reviewed target statements completed in Phase 9 to the evidence required to understand delivery:
+Phase 10 brings all 47 prefectures to the same minimum information depth. Phase 9 completed Evidence-backed Reviewed target statements nationwide. Phase 10 connects those targets to delivery and accountability evidence without pretending that a source entrance is already a verified linkage.
 
 ```text
-Target statement
-→ Annual actual
-→ Budget and expenditure
-→ Priority project
-→ Contract and procurement
-→ Evaluation, audit, assembly explanation
+Reviewed target statement
+→ annual actual
+→ budget
+→ settlement
+→ priority project
+→ contract / procurement
+→ assembly explanation
+→ audit finding
+→ executive manifesto
+→ publication verification
 ```
 
-The phase does not create an independent policy score. A target is not marked achieved merely because a value increased, a budget exists, or a project was executed.
+Phase 10 does not create an independent policy score. An increase in a value, the existence of a budget, or the execution of a project is not by itself evidence that a policy succeeded.
 
-## Starting point
+## Canonical machine-readable state
 
-Phase 9 completed Evidence-backed Reviewed numeric-target coverage for all 47 prefectures.
-
-The nationwide source inventory remains much shallower outside policy plans and KPI sources:
-
-- annual evaluation: 1 linked, 1 indexed, 45 not indexed
-- budget: 1 reviewed, 46 not indexed
-- project evaluation: 47 not indexed
-- contracts: tracked for Phase 10, with no prefecture promoted before an official source is cataloged
-
-The machine-readable baseline is:
-
+- `data/catalog/phase10_uniformity.json`
 - `data/catalog/phase10_execution_queue.json`
 - `data/catalog/phase10_completion.json`
+- `data/catalog/phase10_wave1_source_inventory.json`
+- `schemas/phase10_uniformity.schema.json`
 
-## Scope
+`phase10_uniformity.json` stores the common eleven-dimension baseline and only the verified prefecture-specific differences. The public 47-prefecture matrix is derived from this manifest, preventing duplicated state and update drift. It is the canonical answer to “are all prefectures equally deep?”
 
-### Wave 1 — nine regional anchors
+## Uniform dimensions
 
-Hokkaido, Miyagi, Tokyo, Aichi, Osaka, Hiroshima, Kagawa, Fukuoka, and Okinawa are the first vertical-linkage wave because their target structures are already deeply Reviewed and published.
+Every prefecture is tracked against the same eleven dimensions.
 
-The initial verified baseline is conservative:
+| Dimension | Phase 10 completion requirement |
+| --- | --- |
+| Policy targets and KPI | `reviewed` or better |
+| Evidence Packet | `reviewed` or better |
+| Annual actuals | `linked` |
+| Budget | `linked` |
+| Settlement | `linked` |
+| Priority projects | `linked` |
+| Contracts and procurement | `linked` |
+| Assembly explanation | `linked` |
+| Audit | `linked` |
+| Executive manifesto | `linked` |
+| Publication verification | `reviewed` or better |
 
-- Miyagi: annual actuals linked; budget, projects, and contracts not yet linked
-- Fukuoka: annual-evaluation entrance indexed and budget data Reviewed; target-to-actual linkage still pending
-- the other seven anchors: source inventory required before promotion
+A prefecture is not complete because one policy is deeply linked. It is complete only when the agreed publication scope for every dimension passes the same gate and unsupported relationships remain explicitly unresolved.
 
-### Wave 2 — remaining 38 prefectures
+## Status vocabulary
 
-The seven Phase 9 regional batches are retained. Each prefecture advances independently through:
+- `not_indexed`: no official entrance has been fixed in the catalog.
+- `indexed`: an official source entrance has been confirmed.
+- `reviewed`: contents, period, scope, and evidence location have been checked.
+- `linked`: the downstream record has been definition-checked against the same target, policy, project, or term.
 
-```text
-source_inventory
-→ annual_actuals_linkage
-→ budget_linkage
-→ project_spine
-→ publication_verification
-```
+Source state and linkage state remain different. A budget page can be `indexed` while no budget line is yet linked to a target.
+
+## Baseline on 2026-08-01
+
+Nationwide target and Evidence coverage is already uniform:
+
+- Reviewed target statements: 47 / 47
+- Reviewed Evidence Packet coverage: 47 / 47
+- Publication verification baseline: 47 / 47
+
+Downstream depth is not yet uniform:
+
+- annual actuals linked: 1 prefecture
+- annual actuals indexed but not linked: 1 prefecture
+- budget indexed or better: 2 prefectures
+- settlement Reviewed or better: 1 prefecture
+- priority-project entrances indexed: 2 prefectures
+- contract entrances indexed: 2 prefectures
+- assembly evidence indexed: 1 prefecture
+- audit evidence indexed: 0 prefectures
+- executive-manifesto evidence indexed: 1 prefecture
+- prefectures passing the complete uniform gate: 0 / 47
+
+These counts are deliberately conservative. Partial pilot records do not promote an entire prefecture to `linked`.
+
+## Execution order
+
+### Work package A — finish the reference implementations
+
+1. Miyagi: connect the existing annual-actual spine to budget, settlement, priority projects, and contracts.
+2. Fukuoka: connect Reviewed finance and settlement records to policy targets, then attach annual evaluation and project records.
+3. Extend both references to assembly, audit, and executive-manifesto evidence.
+
+### Work package B — complete the remaining seven regional anchors
+
+Hokkaido, Tokyo, Aichi, Osaka, Hiroshima, Kagawa, and Okinawa receive the same source inventory and linkage gates. No anchor is promoted by analogy to Miyagi or Fukuoka.
+
+### Work package C — expand through seven regional batches
+
+- Tohoku
+- Kanto
+- Chubu
+- Kinki
+- Chugoku
+- Shikoku
+- Kyushu and Okinawa
+
+Each prefecture advances independently. Regional batches are an execution convenience, not a quality shortcut.
 
 ## Data rules
 
-1. **Source state and linkage state are separate.** Indexed means an official source entrance exists. Linked means a target and a downstream record were definition-checked.
-2. **Reporting year and measurement year remain separate.**
-3. **Target versions remain separate.** Actuals from a previous plan are not silently attached to a current target.
-4. **Budget, expenditure, project, and contract amounts are not interchangeable.**
-5. **No inferred achievement rate.** Official rates may be stored as official statements, but Jichi Insight does not recalculate them without a defined method.
-6. **No nationwide ranking before comparability verification.**
-7. **Every promoted public record requires Evidence.**
+1. Reporting year and measurement year remain separate.
+2. Current and previous plan versions remain separate.
+3. Budget, revised budget, expenditure, settlement, project cost, and contract amount are not interchangeable.
+4. A project name match is not sufficient; department, period, scope, and identifier must also be checked.
+5. Assembly questions and audit findings are evidence of explanation and oversight, not automatic proof of success or failure.
+6. Manifesto promises are linked only where the responsible government, term, wording, and policy scope can be verified.
+7. Every promoted public record requires Evidence.
+8. Unsupported links stay review-needed rather than being guessed.
+9. No nationwide ranking is allowed before comparability is verified.
+10. `not_indexed` means “not yet indexed,” not “does not exist.”
 
 ## Exit gates
 
 Phase 10 is complete only when:
 
-- all 47 prefectures have explicit source states for annual evaluation, budget, project evaluation, and contracts
-- the nine regional anchors have annual actuals linked to Reviewed targets where definitions permit
-- the nine anchors have a Reviewed money-and-project spine for selected priority policies
-- contract and accountability evidence is linked without conflating procurement with outcomes
-- all public values have Evidence coverage of 100%
-- unsupported links remain review-needed rather than being guessed
-- static export, regression tests, and Production Smoke pass
-- `data/catalog/phase10_completion.json` is `complete` with every gate `passed`
+- all 47 prefectures are present in the uniform depth matrix;
+- all 47 meet the completion threshold for all eleven dimensions;
+- all public values and relationships have Evidence coverage of 100%;
+- old plans, current plans, reporting years, and measurement years remain separated;
+- budget, settlement, project, and contract values are not conflated;
+- assembly, audit, and manifesto links are role- and term-correct;
+- unsupported relationships remain explicit;
+- the public Phase 10 matrix matches the machine-readable catalog;
+- schema validation, regression tests, lint, typecheck, static export, and Production Smoke pass;
+- `data/catalog/phase10_completion.json` is `complete` and every gate is `passed`.
 
-## Immediate execution order
-
-1. Keep Miyagi as the active reference implementation and add budget/project/contract entrances.
-2. Use Fukuoka as the money-spine reference and connect existing Reviewed finance data to policy targets.
-3. Inventory annual evaluation, budget, project evaluation, and contract sources for the remaining seven anchors.
-4. Publish linkage-state visibility before publishing any policy-achievement judgment.
-5. Expand the same model through the seven regional Wave 2 batches.
+Until every condition is met, the phase remains `in_progress`.

@@ -1,231 +1,189 @@
-# Roadmap to public launch
+# Roadmap
 
-ロードマップは日付ありきではなく、品質ゲート通過を基準に進めます。作業は並列化しますが、出典・スキーマ・評価方法が固まる前に大量収集へ進みません。
+Jichi Insightは日付ではなく、品質ゲートの通過で進行を管理します。`indexed`、`reviewed`、`linked`、`published`を混同せず、一次資料とEvidenceが不足する状態を推測で埋めません。
 
 ## Phase 0 — Foundation
 
-### Deliverables
+Status: `complete`
 
 - プロジェクト憲章、PRD、編集・データ方針
-- モノレポとWeb最小構成
-- 初期JSON Schema
-- CI、Issue、PRテンプレート
-- リスク登録簿
-- パイロット対象カタログ
-
-### Exit gate
-
-- 全自動チェック成功
-- 重要概念と状態値が定義済み
-- main保護、PR運用、訂正Issueが利用可能
+- モノレポ、Web、JSON Schema、CI
+- 訂正・反論、リスク、運用ルール
 
 ## Phase 1 — Source map and prototype
 
-### Deliverables
+Status: `complete`
 
-- 3自治体の公式資料マップ
-- 財政、総合計画、事務事業評価、契約、議会、選挙資料の所在
-- 重点事業候補リスト
-- 自治体ページと事業ページのUIプロトタイプ
-- 出典・品質コンポーネント
-
-### Exit gate
-
-- 主要資料カテゴリの90%以上について所在または未公開状態を確認
-- 架空データではなく、レビュー済み実データで主要画面が成立
-- スマートフォンで3分以内に主要情報を理解できる
+- パイロット自治体の公式資料マップ
+- 財政、計画、事業、契約、議会、選挙資料の入口
+- 出典・品質状態を表示するUI
 
 ## Phase 2 — Finance and project spine
 
-### Deliverables
+Status: `in_progress`
 
-- 直近3年度以上の財政
-- 重点事業30件
-- 予算・補正・決算・KPI・成果
-- 事業と契約、監査、議会質疑の接続
-- 類似自治体比較の定義
+- Reviewed財政・決算
+- 政策、施策、事業、契約、KPIの接続
+- 年度・会計区分・金額種別の分離
 
-### Exit gate
-
-- 主要数値の出典率100%
-- 単位・年度・会計区分の検証成功
-- 30事業がReviewed以上
-- 欠損と評価不能を正しく表示
+この工程はPhase 10の全国均質化へ統合して継続します。
 
 ## Phase 3 — Manifesto and executive
 
-### Deliverables
+Status: `in_progress`
 
-- 現職首長の公約原文と構造化
-- 公約と予算事業の対応付け
-- 進捗、方針変更、説明
-- 公約品質の領域別表示
-
-### Exit gate
-
-- 全公約が収録または収録不能理由を記録
-- 対応付けに根拠と信頼度
-- 公約の思想を評価していないことをレビュー
+- 首長任期、選挙結果、公約原文、資料探索履歴
+- 公約と政策・予算・事業の接続
+- 未発見と不存在の分離
 
 ## Phase 4 — Assembly accountability
 
-### Deliverables
+Status: `in_progress`
 
-- 議会構成、会派、委員会
-- 議案、採決、修正、附帯決議
-- 政務活動費、視察、議会費
-- 情報公開と住民参加
-- 首長と議会の役割別表示
+- 議会、議案、採決、委員会、視察、説明
+- 行政成果と議会の役割を分離
+- 政策系列への議会Evidence接続
 
-### Exit gate
+## Phase 5 — Trust, legal, and operations
 
-- 主要議案と公開資料を検証可能
-- 視察費等の支出と成果資料を接続
-- 議会を行政成果で直接採点していない
+Status: `complete_for_initial_publication`
 
-## Phase 5 — Trust, legal, and closed beta
-
-### Deliverables
-
-- 外部レビュー
+- 利用規約、プライバシー、免責事項
 - 訂正・反論受付
-- 利用規約、プライバシー、免責、ライセンス
-- アクセシビリティ、セキュリティ、性能
-- 更新運用と障害対応
-- クローズドβ
-
-### Exit gate
-
-- P0/P1欠陥ゼロ
-- 主要表示の出典・更新日・品質率100%
-- 訂正フローのテスト完了
-- モバイル・アクセシビリティ基準達成
-- 公開可否レビュー承認
+- アクセシビリティ、セキュリティ、運用手順
+- 公開前監査とProduction Smoke
 
 ## Phase 6 — Public beta
 
-### Deliverables
+Status: `ready`
 
-- 福岡県・福岡市・北九州市の公開
-- 方法論とデータ品質ページ
-- フィードバック受付
-- 更新履歴
-- 利用状況計測
+- 全国公開サイト
+- 方法論、データ品質、更新状態
+- フィードバックと訂正フロー
 
-### Exit gate for v1
-
-- 4週間以上の安定運用
-- 重大訂正を期限内に処理
-- 更新作業の再現性
-- 次地域へ横展開できるデータモデル
+独自ドメイン、Search Console、OGP、faviconは公開設定として別管理します。
 
 ## Phase 7 — Nationwide prefecture registry
 
-Completion state: `complete`
-
-Phase 7は全国共通レジストリと品質状態の完成を対象とします。47都道府県すべての実施計画、KPI、年度評価、予算、事業評価をReviewed化する工程ではありません。それらはPhase 8・9で実施します。ただし、Phase 7の時点で各都道府県について6資料カテゴリの状態を必ず持ち、未索引を未索引のまま追跡できることを必須とします。
-
-### Deliverables
+Status: `complete`
 
 - 47都道府県の共通コード、名称、地域区分
-- 公式ホームページの候補・確認状態
-- 現行の政策計画入口と資料種別
-- 実施計画、KPI、年度評価、予算・決算、事業評価を含む6カテゴリの全国状態インベントリ
-- `registered → official_entry_verified → plan_entry_indexed → current_plan_confirmed → reviewed_data`のCoverage状態
-- Coverageとは独立した自治体ページのPublished状態
-- 全国カバレッジ画面、検索・地域絞り込み、品質指標
-- Phase 7完了マニフェスト、JSON Schema、回帰テスト、本番Smoke
+- 47/47公式入口確認
+- 47/47現行政策計画確認
+- 全国資料カバレッジ
+- Coverage、Reviewed、Publishedの状態分離
+- 静的出力とProduction Smoke
 
-### Exit gate
-
-- 47都道府県の登録欠落・重複が0
-- 候補URLと確認済みURLをデータ・画面上で明確に分離
-- 47都道府県の公式入口を手動確認
-- 47都道府県の現行政策計画入口を索引化し、旧計画の誤昇格が0
-- 47都道府県すべてに6資料カテゴリの明示的状態があり、`not_indexed`を不存在や0件へ変換していない
-- Coverage、Reviewed、Publishedの状態が別々の正本から導出され、公開ページの有無をReviewedと混同していない
-- 全国カバレッジのスキーマ検証、全回帰テスト、Lint、型検査、本番ビルド、静的出力検証が成功
-- 公開サイトで47都道府県、全国品質指標、主要自治体ページ、メタデータ経路のProduction Smokeが成功
-- [`data/catalog/phase7_completion.json`](../data/catalog/phase7_completion.json)が`complete`で、全ゲートが`passed`
-
-### Scope handoff
-
-- Phase 8：9地域拠点の実施計画・KPI・年度評価をEvidence Packet付きでReviewed化
-- Phase 9：残る38県へ同じ深度を横展開し、比較可能性メタデータと更新履歴を整備
+正本: `data/catalog/phase7_completion.json`
 
 ## Phase 8 — Regional anchor expansion
 
-Completion state: `complete`
+Status: `complete`
 
-北海道、宮城県、東京都、愛知県、大阪府、広島県、香川県、福岡県、沖縄県の9地域拠点について、現行計画、主要数値目標、Evidence Packet、公開ページ、静的出力、Production Smokeまで完了しました。Reviewedは公式資料の抽出・照合完了を意味し、独自の政策達成判定ではありません。
+対象:
 
-### Deliverables
+- 北海道
+- 宮城県
+- 東京都
+- 愛知県
+- 大阪府
+- 広島県
+- 香川県
+- 福岡県
+- 沖縄県
 
-- 9地域拠点の計画体系と現行版境界
-- 各都道府県の主要数値目標と年度実績の分離
-- 一つの公開数値につき一つ以上のEvidence Packet
-- 地域ごとの資料構造差に対応する再現可能な抽出・レビュー手順
-- 公開都道府県ページ、Phase 8完了マニフェスト、回帰テスト、本番Smoke
+9地域拠点で、政策計画、主要数値目標、Evidence Packet、公開ページ、静的出力、本番確認を完了しました。
 
-### Current progress
+正本: `data/catalog/phase8_completion.json`
 
-- 政策計画・数値目標入口：9 / 9
-- Evidence Packet付きReviewed数値目標：9 / 9
-- 公開済み都道府県ページ：9 / 9
-- Phase 8完了ゲート：全件`passed`
+## Phase 9 — Nationwide Reviewed targets
+
+Status: `complete`
+
+Phase 8を除く38県を7地域バッチで処理し、全47都道府県を同じReviewed目標基盤へ引き上げました。
+
+完了状態:
+
+- 現行政策計画: 47 / 47
+- 主要数値目標入口: 47 / 47
+- Evidence-backed Reviewed数値目標: 47 / 47
+- 計画改定・後継計画・旧計画の履歴: 47 / 47
+- 全国公開ページとProduction Smoke: 完了
+- 独自の政策達成評価: 0件
+- 比較可能性未確認の全国ランキング: 0件
+
+正本:
+
+- `data/catalog/phase9_completion.json`
+- `data/catalog/phase9_review_summary.json`
+- `docs/PHASE9_EXECUTION.md`
+
+## Phase 10 — Nationwide uniform depth
+
+Status: `in_progress`
+
+目的は「一部の県だけ深い」状態を解消し、47都道府県を同じ最低粒度へ引き上げることです。
+
+共通の11項目:
+
+1. 政策・KPI
+2. Evidence Packet
+3. 年度実績
+4. 予算
+5. 決算
+6. 重点事業
+7. 契約
+8. 議会
+9. 監査
+10. 首長公約
+11. 公開検証
+
+Phase 10では、資料入口を確認した`indexed`と、定義・期間・対象範囲を照合して同じ政策系列へ接続した`linked`を分離します。
+
+### Current baseline
+
+- Reviewed政策目標: 47 / 47
+- Reviewed Evidence: 47 / 47
+- 公開検証基盤: 47 / 47
+- 年度実績 linked: 1 / 47
+- 予算 indexed以上: 2 / 47
+- 決算 reviewed以上: 1 / 47
+- 重点事業 indexed以上: 2 / 47
+- 契約 indexed以上: 2 / 47
+- 議会 indexed以上: 1 / 47
+- 監査 indexed以上: 0 / 47
+- 首長公約 indexed以上: 1 / 47
+- 11項目の同一粒度完了: 0 / 47
+
+### Execution order
+
+1. 宮城県で年度実績から予算・決算・事業・契約へ接続
+2. 福岡県でReviewed財政・決算から政策目標へ接続
+3. 残る7地域拠点を同じ工程へ引き上げ
+4. 東北、関東、中部、近畿、中国、四国、九州・沖縄の順に全国展開
+5. 議会、監査、公約まで含めた説明責任の接続
+6. 全47都道府県の公開検証
 
 ### Exit gate
 
-- 9地域拠点すべてで総合計画と数値目標の公式入口を確認
-- 各拠点にEvidence Packet付きReviewedデータ
-- 目標値と年度実績の混同0
-- 条件型・上限型・下限型・再掲・欠損の意味保持
-- 公開ページが静的ビルドと本番Smokeを通過
-- [`data/catalog/phase8_completion.json`](../data/catalog/phase8_completion.json)が`complete`で、全ゲートが`passed`
+Phase 10は次の条件をすべて満たすまで`complete`にしません。
 
-詳細は [Phase 8 regional anchors](PHASE8_REGIONAL_ANCHORS.md) を参照してください。
+- 47都道府県すべてが11項目の共通ゲートを通過
+- 公開値・公開接続のEvidence coverage 100%
+- 計画版、報告年度、測定年度、会計区分の混同0
+- 予算、決算、事業費、契約額の混同0
+- 議会、監査、公約の主体・任期・役割の誤接続0
+- 未確認関係を推測で接続しない
+- 比較可能性未確認の全国ランキングを公開しない
+- Schema、回帰テスト、Lint、型検査、静的出力、Production Smoke成功
+- `data/catalog/phase10_completion.json`が`complete`で全ゲート`passed`
 
-## Phase 9 — Remaining prefectures
+詳細は [Phase 10 nationwide uniform depth](PHASE10_VERTICAL_LINKAGE.md) を参照してください。
 
-Completion state: `in_progress`
+## After Phase 10
 
-Phase 8の9地域拠点を除く38県を、東北、関東、中部、近畿、中国、四国、九州・沖縄の7地域バッチへ分割しました。全38県で現行計画、主要数値目標、評価資料の公式入口と旧計画・改定版の境界を固定し、全国47都道府県の主要数値目標入口がIndexed以上になりました。次工程は、38県の指標本文と値をEvidence付きReviewedデータへ昇格することです。
-
-### Deliverables
-
-- 残る38県の総合計画・数値目標
-- 地域単位の収集・レビュー運用
-- 横断検索と比較可能性メタデータ
-- 更新周期・改定・旧計画の履歴
-- 38県の実行キューと品質ルール
-
-### Current progress
-
-- 実行対象：38 / 38県をキュー登録
-- 地域バッチ：7 / 7を定義
-- 現行政策計画入口：38 / 38確認済み
-- 数値目標入口：38 / 38 Indexed
-- 全国主要数値目標入口：47 / 47 Indexed以上
-- Evidence Packet付きReviewed数値目標：0 / 38
-- Evidence付きReviewed都道府県：9 / 47
-
-### Exit gate
-
-- 47都道府県すべてで主要計画と主要数値目標をIndexed以上
-- 公開する数値のEvidence coverage 100%
-- 再掲・欠損・単位・期間・母集団・目標型の品質テスト成功
-- 更新周期、改定、後継・旧計画の履歴を追跡
-- 比較不能な指標をランキングへ含めない
-- 全国公開ページの静的出力とProduction Smoke成功
-
-詳細は [Phase 9 execution](PHASE9_EXECUTION.md) を参照してください。
-
-## Post-launch
-
-1. 47都道府県の年度実績・重点事業・予算・契約を接続
-2. 政令指定都市・中核市・県庁所在地
-3. その他の市区町村
-4. 議員・候補者・選挙比較
-5. API、データダウンロード、報道・研究者向け機能
-
-全国展開の詳細は [Nationwide expansion](NATIONWIDE_EXPANSION.md) を参照してください。
+1. 政令指定都市
+2. 中核市・県庁所在地
+3. その他市区町村
+4. 選挙・候補者比較
+5. API、データダウンロード、研究・報道向け機能

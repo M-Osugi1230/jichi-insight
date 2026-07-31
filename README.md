@@ -2,24 +2,29 @@
 
 **約束・予算・実行・成果を、ひとつにつなぐ。**
 
-Jichi Insight（自治体インサイト）は、自治体が公開する財政、事業、契約、政策評価、マニフェスト、議会資料を構造化し、自治体・首長・議会が「何を約束し、いくら使い、何を実行し、何を実現したか」を、一次資料に基づいて理解できるようにする自治体IR・行政アカウンタビリティ基盤です。
+Jichi Insight（自治体インサイト）は、自治体が公開する政策計画、財政、事業、契約、政策評価、監査、議会、首長公約を構造化し、「何を目指し、いくら使い、何を実行し、何が変わり、どう説明したか」を一次資料から確認できるようにする自治体IR・行政アカウンタビリティ基盤です。
 
 ## Product status
 
-`47/47 official entries verified / 47/47 current policy plans indexed / 47/47 major numeric-target entrances indexed or reviewed / 9/47 prefectures Evidence-backed Reviewed / 38/38 Phase 9 prefectures source indexed / pre-alpha`
+`Phase 9 complete / Phase 10 in progress / 47 prefectures published / pre-alpha`
 
-全国登録、公式入口、政策計画入口、数値目標入口、Reviewedデータ、年度実績接続、公開を別々の品質状態として管理します。候補URL、未確認資料、旧計画を公開済みのように扱いません。
+- 全国登録: 47 / 47
+- 公式ホームページ確認: 47 / 47
+- 現行政策計画確認: 47 / 47
+- Evidence-backed Reviewed数値目標: 47 / 47
+- 全国公開ページ: 47 / 47
+- Phase 10同一粒度完了: 0 / 47
+- 独自の政策達成評価: 0件
+- 比較可能性未確認の全国ランキング: 0件
 
-## The problem
+Phase 9で、全47都道府県の政策目標とEvidence-backed Reviewed基盤が揃いました。Phase 10では、年度実績、予算、決算、重点事業、契約、議会、監査、首長公約を同じ品質ゲートで接続します。
 
-自治体情報は相当量が公開されています。しかし、予算書、決算書、事務事業評価、契約情報、議事録、監査報告、選挙公報が別々の場所と形式に分散し、住民が「一つの政策」を追うには大きな負担があります。
-
-Jichi Insightは、公開情報を次の流れへ接続します。
+## Evidence chain
 
 ```text
-Promise        選挙・計画で何を約束したか
+Promise        計画・選挙で何を約束したか
    ↓
-Money          いくら確保し、何に使ったか
+Money          いくら確保し、いくら使ったか
    ↓
 Action         どの事業・契約を実行したか
    ↓
@@ -30,27 +35,18 @@ Accountability 誰が判断し、どう説明したか
 
 ## Non-negotiable principles
 
-- **事実、比較、解釈、評価を分ける**
-- **一次資料を優先する**
-- **未公開・未確認・不明を推測で補完しない**
-- **政策思想、政党、人物の好悪を採点しない**
-- **出典、更新日、抽出方法、レビュー状態を表示する**
-- **自治体、首長、議会を役割別に扱う**
-- **訂正、反論、変更履歴を残す**
-- **根拠が不足する場合は、無理に評価しない**
+- 事実、比較、解釈、評価を分ける
+- 一次資料を優先する
+- 未公開・未確認・不明を推測で補完しない
+- 政策思想、政党、人物の好悪を採点しない
+- 出典、更新日、抽出方法、レビュー状態を表示する
+- 自治体、首長、議会、監査を役割別に扱う
+- 訂正、反論、変更履歴を残す
+- 根拠が不足する場合は評価しない
+- `not_indexed`を「存在しない」に読み替えない
+- 比較可能性が未確認の指標をランキングへ含めない
 
-## Current nationwide coverage
-
-- 全国登録：47/47都道府県
-- 公式ホームページ確認：47/47都道府県
-- 政策計画入口索引・現行性確認：47/47都道府県
-- 主要数値目標入口 Indexed以上：47/47都道府県
-- Evidence Packet付きReviewed政策データ：9/47都道府県
-- Phase 9対象県の公式ソース境界固定：38/38都道府県
-- Phase 9対象県のEvidence付きReviewed化：0/38都道府県
-- 公開済み地域拠点ページ：9/9都道府県
-
-全国展開は、
+## Quality states
 
 ```text
 registered
@@ -63,63 +59,54 @@ registered
 → published
 ```
 
-の品質段階で進めます。
+資料入口を確認した`indexed`と、値・期間・対象範囲を確認した`reviewed`、同じ政策系列へ接続した`linked`は別の状態です。
 
-単一の「総合計画」を持たない県についても、長期ビジョン、総合戦略、年度版政策集、施策方針など、公式の名称と役割を保持します。Source IndexedはReviewedや政策達成判定を意味しません。全国ランキングは比較可能性の確認前に公開しません。
+## Phase 10 — Nationwide uniform depth
 
-機械可読な正本：
+47都道府県すべてを、次の11項目で同じ最低粒度へ引き上げます。
 
-- [`data/catalog/prefecture_coverage.json`](data/catalog/prefecture_coverage.json)
-- [`data/catalog/phase9_execution_queue.json`](data/catalog/phase9_execution_queue.json)
-- [`data/catalog/phase9_completion.json`](data/catalog/phase9_completion.json)
-- [Nationwide expansion](docs/NATIONWIDE_EXPANSION.md)
-- [Phase 9 execution](docs/PHASE9_EXECUTION.md)
+1. 政策・KPI
+2. Evidence Packet
+3. 年度実績
+4. 予算
+5. 決算
+6. 重点事業
+7. 契約
+8. 議会
+9. 監査
+10. 首長公約
+11. 公開検証
 
-## Reviewed data status
+現在の保守的な基準値:
 
-### Hokkaido
+- Reviewed政策目標: 47 / 47
+- Reviewed Evidence: 47 / 47
+- 年度実績 linked: 1 / 47
+- 予算 indexed以上: 2 / 47
+- 決算 reviewed以上: 1 / 47
+- 重点事業 indexed以上: 2 / 47
+- 契約 indexed以上: 2 / 47
+- 議会 indexed以上: 1 / 47
+- 監査 indexed以上: 0 / 47
+- 首長公約 indexed以上: 1 / 47
 
-- Reviewed指標：108/108件
-- KPI Evidence Packet：108件
-- 複数分野参照、条件目標、上下限、範囲、累計、欠損、異なる最終目標年を原文の意味のまま保持
-- 年度実績・政策評価：未接続
+正本:
 
-### Miyagi
-
-- 政策体系：4基本方向、8政策、18取組
-- 目標値グループ：128/128件
-- 個別指標系列：149/149件
-- KPI Evidence Packet：128件
-- 年度実績を直接接続した目標グループ：82件
-- 年度実績を直接接続した系列：95件
-- 定義・範囲の要確認系列：15件
-- 年度実績行：440件
-- 年度実績Evidence Packet：110件
-- 未直接接続系列：54件
-- 次工程：取組16〜18と残る系列の年度実績接続
-
-報告年度と測定年度、評価書の旧目標と現行計画の目標を分離し、公式達成率を独自に再計算しません。政策評価は全件`not_assessed`です。
-
-### Fukuoka and other reviewed data
-
-- Reviewed財政値：22件（福岡県13、福岡市4、北九州市5）
-- 財政Evidence Packet coverage：22/22件
-- Reviewed政策取組事項：30件（福岡県）
-- Reviewed政策数値目標：118件（福岡県）
-- Reviewed議会海外活動：福岡県議会3件
-- 東京都、愛知県、大阪府、広島県、香川県、沖縄県を含む9地域拠点でPhase 8のEvidence付きReviewed化と公開Smokeを完了
-- 公開済み総合評価：0件
+- [`data/catalog/phase10_uniformity.json`](data/catalog/phase10_uniformity.json)
+- [`data/catalog/phase10_execution_queue.json`](data/catalog/phase10_execution_queue.json)
+- [`data/catalog/phase10_completion.json`](data/catalog/phase10_completion.json)
+- [Phase 10 nationwide uniform depth](docs/PHASE10_VERTICAL_LINKAGE.md)
 
 ## Repository map
 
 ```text
 apps/web/       公開サイト
 pipelines/      収集・抽出・正規化・検証
-data/           カタログ、例示データ、レビュー済みデータ
+data/           カタログ、Reviewedデータ、Evidence
 schemas/        公開データのJSON Schema
-scripts/        リポジトリ・データ品質検証
-tests/          自動テスト
-docs/           方針、設計、ロードマップ、評価方法
+scripts/        リポジトリ・データ・公開品質検証
+tests/          回帰テスト
+docs/           方針、設計、ロードマップ、方法論
 .github/        CI、Issue、PR、依存関係更新
 ```
 
@@ -159,23 +146,23 @@ pnpm check
 - [Editorial policy](docs/EDITORIAL_POLICY.md)
 - [Assembly accountability](docs/ASSEMBLY_ACCOUNTABILITY.md)
 - [Nationwide expansion](docs/NATIONWIDE_EXPANSION.md)
-- [Wave 1 policy review queue](docs/WAVE1_POLICY_REVIEW_QUEUE.md)
-- [Data quality and publication readiness](docs/DATA_QUALITY.md)
+- [Data quality](docs/DATA_QUALITY.md)
 - [Corrections and right of reply](docs/CORRECTIONS.md)
-- [Development plan](docs/DEVELOPMENT_PLAN.md)
 - [Roadmap](docs/ROADMAP.md)
+- [Phase 9 execution](docs/PHASE9_EXECUTION.md)
+- [Phase 10 nationwide uniform depth](docs/PHASE10_VERTICAL_LINKAGE.md)
 - [Release checklist](docs/RELEASE_CHECKLIST.md)
 - [Risk register](docs/RISK_REGISTER.md)
 
-## Next delivery gates
+## Current execution order
 
-1. Phase 9対象38県の指標本文、値、単位、期間、母集団を全件抽出
-2. 各公開数値へEvidence Packetを付与し、Source IndexedからReviewedへ昇格
-3. 計画改定・後継計画・年度版の履歴と年度実績を正しい目標版へ接続
-4. 重点事業、予算、契約、監査、議会、公約を政策目標へ縦接続
-5. 比較可能性を検証した指標だけを横断比較へ昇格
-6. 全国公開ページの静的出力とProduction Smokeを完了
+1. 宮城県の年度実績を予算・決算・重点事業・契約へ接続
+2. 福岡県のReviewed財政・決算を政策目標へ接続
+3. 残る7地域拠点を同じ深度へ引き上げ
+4. 残る38県を7地域バッチで処理
+5. 議会、監査、首長公約を政策系列へ接続
+6. 全47都道府県の公開検証
 
 ## License
 
-コード・方法論・データの権利関係は性質が異なるため、公開ライセンスは分離して確定します。ライセンス決定前の内容は、権利者の明示的な許可なく再利用できません。詳細は [DATA_POLICY.md](DATA_POLICY.md) を参照してください。
+コード、方法論、データの権利関係は分離して扱います。ライセンス確定前の内容は、権利者の明示的な許可なく再利用できません。詳細は [DATA_POLICY.md](DATA_POLICY.md) を参照してください。
