@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.example/schemas/phase10_reference_depth_reviews.schema.json",
+  "title": "Phase 10 reference depth reviews",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "status",
+    "prefecture_codes",
+    "records",
+    "summary",
+    "policy_achievement_assessment_status",
+    "updated_at"
+  ],
+  "properties": {
+    "id": {"const": "phase10-reference-depth-reviews"},
+    "status": {"const": "reviewed"},
+    "prefecture_codes": {
+      "type": "array",
+      "const": ["04", "40"]
+    },
+    "records": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/record"}
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "prefecture_count",
+        "record_count",
+        "dimension_prefecture_counts",
+        "resulting_depth_counts"
+      ],
+      "properties": {
+        "prefecture_count": {"const": 2},
+        "record_count": {"type": "integer", "minimum": 1},
+        "dimension_prefecture_counts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "annual_actuals",
+            "budget",
+            "settlement",
+            "priority_projects",
+            "assembly",
+            "audit"
+          ],
+          "properties": {
+            "annual_actuals": {"type": "integer", "minimum": 0, "maximum": 2},
+            "budget": {"type": "integer", "minimum": 0, "maximum": 2},
+            "settlement": {"type": "integer", "minimum": 0, "maximum": 2},
+            "priority_projects": {"type": "integer", "minimum": 0, "maximum": 2},
+            "assembly": {"type": "integer", "minimum": 0, "maximum": 2},
+            "audit": {"type": "integer", "minimum": 0, "maximum": 2}
+          }
+        },
+        "resulting_depth_counts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["indexed", "reviewed", "linked"],
+          "properties": {
+            "indexed": {"type": "integer", "minimum": 0},
+            "reviewed": {"type": "integer", "minimum": 0},
+            "linked": {"type": "integer", "minimum": 0}
+          }
+        }
+      }
+    },
+    "policy_achievement_assessment_status": {"const": "not_assessed"},
+    "updated_at": {"type": "string", "format": "date"}
+  },
+  "$defs": {
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "prefecture_code",
+        "name",
+        "dimension",
+        "resulting_depth",
+        "title",
+        "url",
+        "official_owner",
+        "reporting_period",
+        "relationship",
+        "claims",
+        "boundary",
+        "observed_at"
+      ],
+      "properties": {
+        "id": {"type": "string", "minLength": 3},
+        "prefecture_code": {"enum": ["04", "40"]},
+        "name": {"enum": ["宮城県", "福岡県"]},
+        "dimension": {
+          "enum": [
+            "annual_actuals",
+            "budget",
+            "settlement",
+            "priority_projects",
+            "assembly",
+            "audit"
+          ]
+        },
+        "resulting_depth": {"enum": ["indexed", "reviewed", "linked"]},
+        "title": {"type": "string", "minLength": 3},
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "anyOf": [
+            {"pattern": "^https://www[.]pref[.]miyagi[.]jp/"},
+            {"pattern": "^https://www[.]pref[.]fukuoka[.]lg[.]jp/"}
+          ]
+        },
+        "official_owner": {"type": "string", "minLength": 3},
+        "reporting_period": {"type": "string", "minLength": 3},
+        "relationship": {"type": "string", "minLength": 3},
+        "claims": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"type": "string", "minLength": 10}
+        },
+        "boundary": {"type": "string", "minLength": 20},
+        "observed_at": {"type": "string", "format": "date"}
+      }
+    }
+  }
+}

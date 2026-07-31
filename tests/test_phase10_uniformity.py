@@ -98,25 +98,25 @@ def test_baseline_is_conservative_and_matches_verified_work():
         "target_statements": "reviewed",
         "evidence_packets": "reviewed",
         "annual_actuals": "linked",
-        "budget": "indexed",
-        "settlement": "not_indexed",
-        "priority_projects": "indexed",
+        "budget": "reviewed",
+        "settlement": "indexed",
+        "priority_projects": "reviewed",
         "contracts": "indexed",
-        "assembly": "not_indexed",
-        "audit": "not_indexed",
+        "assembly": "indexed",
+        "audit": "reviewed",
         "executive_manifesto": "not_indexed",
         "publication": "reviewed",
     }
     assert by_code["40"]["current_depth"] == {
         "target_statements": "reviewed",
         "evidence_packets": "reviewed",
-        "annual_actuals": "indexed",
+        "annual_actuals": "reviewed",
         "budget": "reviewed",
         "settlement": "reviewed",
-        "priority_projects": "indexed",
+        "priority_projects": "reviewed",
         "contracts": "indexed",
         "assembly": "indexed",
-        "audit": "not_indexed",
+        "audit": "reviewed",
         "executive_manifesto": "indexed",
         "publication": "reviewed",
     }
@@ -141,26 +141,38 @@ def test_uniform_summary_matches_expected_baseline():
 
     assert summary["annual_actuals"] == {
         "not_indexed": 45,
-        "indexed": 1,
-        "reviewed": 0,
+        "indexed": 0,
+        "reviewed": 1,
         "linked": 1,
     }
     assert summary["budget"] == {
+        "not_indexed": 45,
+        "indexed": 0,
+        "reviewed": 2,
+        "linked": 0,
+    }
+    assert summary["settlement"] == {
         "not_indexed": 45,
         "indexed": 1,
         "reviewed": 1,
         "linked": 0,
     }
-    assert summary["settlement"] == {
-        "not_indexed": 46,
+    assert summary["priority_projects"] == {
+        "not_indexed": 45,
         "indexed": 0,
-        "reviewed": 1,
+        "reviewed": 2,
+        "linked": 0,
+    }
+    assert summary["assembly"] == {
+        "not_indexed": 45,
+        "indexed": 2,
+        "reviewed": 0,
         "linked": 0,
     }
     assert summary["audit"] == {
-        "not_indexed": 47,
+        "not_indexed": 45,
         "indexed": 0,
-        "reviewed": 0,
+        "reviewed": 2,
         "linked": 0,
     }
 

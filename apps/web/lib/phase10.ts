@@ -136,6 +136,49 @@ export type Phase10SourceInventory = {
   updated_at: string;
 };
 
+export type Phase10ReferenceReview = {
+  id: string;
+  prefecture_code: "04" | "40";
+  name: "宮城県" | "福岡県";
+  dimension:
+    | "annual_actuals"
+    | "budget"
+    | "settlement"
+    | "priority_projects"
+    | "assembly"
+    | "audit";
+  resulting_depth: "indexed" | "reviewed" | "linked";
+  title: string;
+  url: string;
+  official_owner: string;
+  reporting_period: string;
+  relationship: string;
+  claims: string[];
+  boundary: string;
+  observed_at: string;
+};
+
+export type Phase10ReferenceReviews = {
+  id: "phase10-reference-depth-reviews";
+  status: "reviewed";
+  prefecture_codes: Array<"04" | "40">;
+  records: Phase10ReferenceReview[];
+  summary: {
+    prefecture_count: number;
+    record_count: number;
+    dimension_prefecture_counts: Record<
+      Phase10ReferenceReview["dimension"],
+      number
+    >;
+    resulting_depth_counts: Record<
+      Phase10ReferenceReview["resulting_depth"],
+      number
+    >;
+  };
+  policy_achievement_assessment_status: "not_assessed";
+  updated_at: string;
+};
+
 const prefectures = [
   ["01", "北海道", "北海道"], ["02", "青森県", "東北"], ["03", "岩手県", "東北"], ["04", "宮城県", "東北"], ["05", "秋田県", "東北"], ["06", "山形県", "東北"], ["07", "福島県", "東北"],
   ["08", "茨城県", "関東"], ["09", "栃木県", "関東"], ["10", "群馬県", "関東"], ["11", "埼玉県", "関東"], ["12", "千葉県", "関東"], ["13", "東京都", "関東"], ["14", "神奈川県", "関東"],
@@ -205,6 +248,25 @@ export function loadPhase10SourceInventory(): Phase10SourceInventory {
 export function phase10SourcesByPrefecture(inventory: Phase10SourceInventory): Map<string, Phase10SourceRecord[]> {
   const result = new Map<string, Phase10SourceRecord[]>();
   for (const record of inventory.records) result.set(record.prefecture_code, [...(result.get(record.prefecture_code) ?? []), record]);
+  return result;
+}
+
+export function loadPhase10ReferenceReviews(): Phase10ReferenceReviews {
+  return loadCatalog<Phase10ReferenceReviews>(
+    "phase10_reference_depth_reviews.json",
+  );
+}
+
+export function phase10ReferenceReviewsByPrefecture(
+  reviews: Phase10ReferenceReviews,
+): Map<string, Phase10ReferenceReview[]> {
+  const result = new Map<string, Phase10ReferenceReview[]>();
+  for (const record of reviews.records) {
+    result.set(record.prefecture_code, [
+      ...(result.get(record.prefecture_code) ?? []),
+      record,
+    ]);
+  }
   return result;
 }
 
