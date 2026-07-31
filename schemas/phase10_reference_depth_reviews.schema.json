@@ -110,7 +110,7 @@
         "url": {
           "type": "string",
           "format": "uri",
-          "pattern": "^https://www\\.pref\\.(miyagi|fukuoka)\\.jp/"
+          "pattern": "^https://www[.]pref[.](miyagi|fukuoka)[.]jp/"
         },
         "official_owner": {"type": "string", "minLength": 3},
         "reporting_period": {"type": "string", "minLength": 3},
