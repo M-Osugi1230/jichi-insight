@@ -81,13 +81,14 @@ registered
 
 - Reviewed政策目標: 47 / 47
 - Reviewed Evidence: 47 / 47
-- 5層Reviewed都道府県: 14 / 47
+- 5層すべて入口確認以上: 14 / 47
   - 9地域拠点＋東北5県
+- 5層すべてReviewed: 13 / 47
+  - 宮城県の決算は入口確認
 - 年度実績 Reviewed以上: 14 / 47
   - うちLinked: 1 / 47（宮城県）
 - 予算 Reviewed以上: 14 / 47
 - 決算 Reviewed以上: 13 / 47
-  - 宮城県は入口確認
 - 重点事業 Reviewed以上: 14 / 47
 - 監査 Reviewed以上: 14 / 47
 - 契約 indexed以上: 2 / 47
