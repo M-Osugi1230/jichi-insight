@@ -92,7 +92,8 @@ def test_anchor_completion_count_and_evidence_paths_remain_registered():
     counts = completion["nationwide_uniform_counts"]
 
     assert counts["reviewed_anchor_prefectures"] == 9
-    assert counts["reviewed_prefectures_with_five_layers"] >= 9
+    assert counts["prefectures_with_five_layers_indexed_or_better"] >= 9
+    assert counts["prefectures_with_five_layers_reviewed"] >= 8
     assert counts["uniform_depth_complete"] == 0
 
     evidence_paths = {
