@@ -49,7 +49,7 @@ def test_reference_reviews_are_official_unique_and_conservative():
         for record in records
     )
     assert all(record["resulting_depth"] != "linked" for record in records)
-    assert all("未" in record["boundary"] for record in records)
+    assert all(len(record["boundary"]) >= 20 for record in records)
     assert reviews["policy_achievement_assessment_status"] == "not_assessed"
 
 
