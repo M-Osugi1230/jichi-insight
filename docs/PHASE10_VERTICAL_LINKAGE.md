@@ -22,10 +22,17 @@ Phase 10 does not create an independent policy score. An increase in a value, th
 - `data/catalog/phase10_uniformity.json`
 - `data/catalog/phase10_execution_queue.json`
 - `data/catalog/phase10_completion.json`
+- `data/catalog/phase10_reference_depth_reviews.json`
+- `data/catalog/phase10_anchor_depth_reviews.json`
 - `data/catalog/phase10_wave1_source_inventory.json`
 - `schemas/phase10_uniformity.schema.json`
 
 `phase10_uniformity.json` stores the common eleven-dimension baseline and only the verified prefecture-specific differences. The public 47-prefecture matrix is derived from this manifest, preventing duplicated state and update drift. It is the canonical answer to “are all prefectures equally deep?”
+
+The two depth-review registries preserve the official source, reporting period, accepted claim, and unresolved linkage boundary behind every promotion:
+
+- `phase10_reference_depth_reviews.json`: Miyagi and Fukuoka reference implementations
+- `phase10_anchor_depth_reviews.json`: Hokkaido, Tokyo, Aichi, Osaka, Hiroshima, Kagawa, and Okinawa
 
 ## Uniform dimensions
 
@@ -54,9 +61,9 @@ A prefecture is not complete because one policy is deeply linked. It is complete
 - `reviewed`: contents, period, scope, and evidence location have been checked.
 - `linked`: the downstream record has been definition-checked against the same target, policy, project, or term.
 
-Source state and linkage state remain different. A budget page can be `indexed` while no budget line is yet linked to a target.
+Source state and linkage state remain different. A budget page can be `reviewed` while no budget line is yet linked to a target.
 
-## Baseline on 2026-08-01
+## Current verified depth on 2026-08-01
 
 Nationwide target and Evidence coverage is already uniform:
 
@@ -64,34 +71,64 @@ Nationwide target and Evidence coverage is already uniform:
 - Reviewed Evidence Packet coverage: 47 / 47
 - Publication verification baseline: 47 / 47
 
-Downstream depth is not yet uniform:
+The nine regional anchors now have the next five evidence layers reviewed:
 
-- annual actuals linked: 1 prefecture
-- annual actuals indexed but not linked: 1 prefecture
-- budget indexed or better: 2 prefectures
-- settlement Reviewed or better: 1 prefecture
-- priority-project entrances indexed: 2 prefectures
-- contract entrances indexed: 2 prefectures
-- assembly evidence indexed: 1 prefecture
-- audit evidence indexed: 0 prefectures
-- executive-manifesto evidence indexed: 1 prefecture
-- prefectures passing the complete uniform gate: 0 / 47
+- annual actuals Reviewed or better: 9 / 47
+  - Miyagi is `linked`
+  - the other eight anchors are `reviewed`
+- budget Reviewed or better: 9 / 47
+- settlement Reviewed or better: 8 / 47
+  - Miyagi has the official settlement entrance `indexed`
+- priority projects Reviewed or better: 9 / 47
+- audit Reviewed or better: 9 / 47
 
-These counts are deliberately conservative. Partial pilot records do not promote an entire prefecture to `linked`.
+Accountability and delivery linkage remains shallower:
 
-## Execution order
+- contract entrances indexed: 2 / 47
+- assembly evidence indexed: 2 / 47
+- executive-manifesto evidence indexed: 1 / 47
+- prefectures passing the complete eleven-dimension gate: 0 / 47
 
-### Work package A — finish the reference implementations
+These counts are deliberately conservative. Reviewed source coverage does not promote a dimension to `linked`; target, period, scope, department, project identity, and amount must still be checked.
 
-1. Miyagi: connect the existing annual-actual spine to budget, settlement, priority projects, and contracts.
-2. Fukuoka: connect Reviewed finance and settlement records to policy targets, then attach annual evaluation and project records.
-3. Extend both references to assembly, audit, and executive-manifesto evidence.
+## Work completed in the reference and anchor review
 
-### Work package B — complete the remaining seven regional anchors
+### Miyagi
 
-Hokkaido, Tokyo, Aichi, Osaka, Hiroshima, Kagawa, and Okinawa receive the same source inventory and linkage gates. No anchor is promoted by analogy to Miyagi or Fukuoka.
+- annual actuals remain the only downstream layer already linked to policy targets;
+- budget, priority-project, and audit evidence are Reviewed;
+- settlement, contract, and assembly entrances are indexed;
+- budget, settlement, and project records still require common policy / measure / project IDs.
 
-### Work package C — expand through seven regional batches
+### Fukuoka
+
+- annual actuals, budget, settlement, priority projects, and audit are Reviewed;
+- contract, assembly, and executive-manifesto entrances are indexed;
+- 118 Reviewed targets still require one-to-one actual-series and project crosswalks.
+
+### Remaining seven regional anchors
+
+For Hokkaido, Tokyo, Aichi, Osaka, Hiroshima, Kagawa, and Okinawa, the following official layers are Reviewed:
+
+- annual progress or policy-results report;
+- current budget package;
+- latest available settlement package;
+- priority-project, management-project, or major-policy results;
+- audit or settlement-review report.
+
+No layer was promoted by analogy. Each prefecture has its own official sources and explicit boundary text.
+
+## Execution order from here
+
+### Work package A — link the nine regional anchors
+
+1. Link each anchor’s annual actuals to its Reviewed target statements.
+2. Create stable policy / measure / project crosswalks.
+3. Keep budget, revised budget, settlement, project cost, and contract amount separate.
+4. Link audit findings only where the subject policy or project is verifiable.
+5. Add assembly and executive-manifesto evidence without conflating political promises and administrative plans.
+
+### Work package B — expand through the remaining 38 prefectures
 
 - Tohoku
 - Kanto
@@ -102,6 +139,16 @@ Hokkaido, Tokyo, Aichi, Osaka, Hiroshima, Kagawa, and Okinawa receive the same s
 - Kyushu and Okinawa
 
 Each prefecture advances independently. Regional batches are an execution convenience, not a quality shortcut.
+
+### Work package C — complete delivery and accountability depth
+
+After source review and target linkage:
+
+- index and review contract / procurement evidence;
+- connect assembly questions, proposals, decisions, and explanations;
+- connect audit findings and corrective action;
+- connect current-term executive manifesto promises where primary evidence is available;
+- verify all public routes and Evidence coverage.
 
 ## Data rules
 
