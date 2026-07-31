@@ -81,20 +81,26 @@ registered
 
 - Reviewed政策目標: 47 / 47
 - Reviewed Evidence: 47 / 47
-- 年度実績 linked: 1 / 47
-- 予算 indexed以上: 2 / 47
-- 決算 reviewed以上: 1 / 47
-- 重点事業 indexed以上: 2 / 47
+- 年度実績 Reviewed以上: 9 / 47
+  - うちLinked: 1 / 47（宮城県）
+- 予算 Reviewed以上: 9 / 47
+- 決算 Reviewed以上: 8 / 47
+  - 宮城県は入口確認
+- 重点事業 Reviewed以上: 9 / 47
+- 監査 Reviewed以上: 9 / 47
 - 契約 indexed以上: 2 / 47
-- 議会 indexed以上: 1 / 47
-- 監査 indexed以上: 0 / 47
+- 議会 indexed以上: 2 / 47
 - 首長公約 indexed以上: 1 / 47
+- 11項目すべて同一粒度完了: 0 / 47
+
+9地域拠点について、年度実績、現年度予算、直近決算、重点事業、監査の公式資料を個別に確認しました。Reviewedは資料内容・期間・範囲・出典を確認した状態であり、政策目標との直接接続を意味しません。
 
 正本:
 
 - [`data/catalog/phase10_uniformity.json`](data/catalog/phase10_uniformity.json)
-- [`data/catalog/phase10_execution_queue.json`](data/catalog/phase10_execution_queue.json)
 - [`data/catalog/phase10_completion.json`](data/catalog/phase10_completion.json)
+- [`data/catalog/phase10_reference_depth_reviews.json`](data/catalog/phase10_reference_depth_reviews.json)
+- [`data/catalog/phase10_anchor_depth_reviews.json`](data/catalog/phase10_anchor_depth_reviews.json)
 - [Phase 10 nationwide uniform depth](docs/PHASE10_VERTICAL_LINKAGE.md)
 
 ## Repository map
@@ -156,12 +162,12 @@ pnpm check
 
 ## Current execution order
 
-1. 宮城県の年度実績を予算・決算・重点事業・契約へ接続
-2. 福岡県のReviewed財政・決算を政策目標へ接続
-3. 残る7地域拠点を同じ深度へ引き上げ
-4. 残る38県を7地域バッチで処理
-5. 議会、監査、首長公約を政策系列へ接続
-6. 全47都道府県の公開検証
+1. 9地域拠点の年度実績をReviewed政策目標へ一対一照合
+2. 政策・施策・事業の共通IDを作り、予算・決算・重点事業を接続
+3. 契約、議会、監査、首長公約を同じ政策系列へ接続
+4. 残る38県を7地域バッチで同じ工程へ展開
+5. 全47都道府県のEvidence coverageと公開状態を検証
+6. 11項目すべてが共通ゲートへ到達した場合のみPhase 10を完了
 
 ## License
 
