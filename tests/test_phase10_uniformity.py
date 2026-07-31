@@ -11,6 +11,7 @@ QUEUE_PATH = ROOT / "data/catalog/phase10_execution_queue.json"
 COMPLETION_PATH = ROOT / "data/catalog/phase10_completion.json"
 
 ALL_CODES = [f"{value:02d}" for value in range(1, 48)]
+ANCHOR_CODES = {"01", "13", "23", "27", "34", "37", "47"}
 STATUSES = ("not_indexed", "indexed", "reviewed", "linked")
 STATUS_RANK = {status: index for index, status in enumerate(STATUSES)}
 
@@ -120,6 +121,22 @@ def test_baseline_is_conservative_and_matches_verified_work():
         "executive_manifesto": "indexed",
         "publication": "reviewed",
     }
+    for code in ANCHOR_CODES:
+        assert by_code[code]["status"] == "linkage_in_progress"
+        for dimension in (
+            "annual_actuals",
+            "budget",
+            "settlement",
+            "priority_projects",
+            "audit",
+        ):
+            assert by_code[code]["current_depth"][dimension] == "reviewed"
+        assert by_code[code]["current_depth"]["contracts"] == "not_indexed"
+        assert by_code[code]["current_depth"]["assembly"] == "not_indexed"
+        assert by_code[code]["current_depth"]["executive_manifesto"] == (
+            "not_indexed"
+        )
+
     assert all(
         record["current_depth"]["target_statements"] == "reviewed"
         and record["current_depth"]["evidence_packets"] == "reviewed"
@@ -140,27 +157,27 @@ def test_uniform_summary_matches_expected_baseline():
         summary[dimension_id] = {status: counts[status] for status in STATUSES}
 
     assert summary["annual_actuals"] == {
-        "not_indexed": 45,
+        "not_indexed": 38,
         "indexed": 0,
-        "reviewed": 1,
+        "reviewed": 8,
         "linked": 1,
     }
     assert summary["budget"] == {
-        "not_indexed": 45,
+        "not_indexed": 38,
         "indexed": 0,
-        "reviewed": 2,
+        "reviewed": 9,
         "linked": 0,
     }
     assert summary["settlement"] == {
-        "not_indexed": 45,
+        "not_indexed": 38,
         "indexed": 1,
-        "reviewed": 1,
+        "reviewed": 8,
         "linked": 0,
     }
     assert summary["priority_projects"] == {
-        "not_indexed": 45,
+        "not_indexed": 38,
         "indexed": 0,
-        "reviewed": 2,
+        "reviewed": 9,
         "linked": 0,
     }
     assert summary["assembly"] == {
@@ -170,9 +187,9 @@ def test_uniform_summary_matches_expected_baseline():
         "linked": 0,
     }
     assert summary["audit"] == {
-        "not_indexed": 45,
+        "not_indexed": 38,
         "indexed": 0,
-        "reviewed": 2,
+        "reviewed": 9,
         "linked": 0,
     }
 

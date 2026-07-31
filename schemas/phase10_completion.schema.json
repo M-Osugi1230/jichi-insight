@@ -10,28 +10,18 @@
     "status",
     "scope_version",
     "counts",
+    "nationwide_uniform_counts",
     "gates",
     "scope_note",
     "updated_at"
   ],
   "properties": {
-    "id": {
-      "const": "phase10-vertical-linkage-completion"
-    },
-    "phase": {
-      "const": 10
-    },
+    "id": {"const": "phase10-vertical-linkage-completion"},
+    "phase": {"const": 10},
     "status": {
-      "enum": [
-        "in_progress",
-        "verification_pending",
-        "complete"
-      ]
+      "enum": ["in_progress", "verification_pending", "complete"]
     },
-    "scope_version": {
-      "type": "string",
-      "format": "date"
-    },
+    "scope_version": {"type": "string", "format": "date"},
     "counts": {
       "type": "object",
       "additionalProperties": false,
@@ -47,15 +37,9 @@
         "published_phase10_pages"
       ],
       "properties": {
-        "total_prefectures": {
-          "const": 47
-        },
-        "wave1_prefectures": {
-          "const": 9
-        },
-        "target_statements_reviewed": {
-          "const": 47
-        },
+        "total_prefectures": {"const": 47},
+        "wave1_prefectures": {"const": 9},
+        "target_statements_reviewed": {"const": 47},
         "annual_evaluation_linked": {
           "type": "integer",
           "minimum": 0,
@@ -81,10 +65,29 @@
           "minimum": 0,
           "maximum": 47
         },
-        "published_phase10_pages": {
-          "type": "integer",
-          "minimum": 0
-        }
+        "published_phase10_pages": {"type": "integer", "minimum": 0}
+      }
+    },
+    "nationwide_uniform_counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reviewed_anchor_prefectures",
+        "annual_actuals_reviewed_or_better",
+        "budget_reviewed_or_better",
+        "settlement_reviewed_or_better",
+        "priority_projects_reviewed_or_better",
+        "audit_reviewed_or_better",
+        "uniform_depth_complete"
+      ],
+      "properties": {
+        "reviewed_anchor_prefectures": {"type": "integer", "minimum": 0, "maximum": 9},
+        "annual_actuals_reviewed_or_better": {"type": "integer", "minimum": 0, "maximum": 47},
+        "budget_reviewed_or_better": {"type": "integer", "minimum": 0, "maximum": 47},
+        "settlement_reviewed_or_better": {"type": "integer", "minimum": 0, "maximum": 47},
+        "priority_projects_reviewed_or_better": {"type": "integer", "minimum": 0, "maximum": 47},
+        "audit_reviewed_or_better": {"type": "integer", "minimum": 0, "maximum": 47},
+        "uniform_depth_complete": {"type": "integer", "minimum": 0, "maximum": 47}
       }
     },
     "gates": {
@@ -94,11 +97,7 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": [
-          "id",
-          "status",
-          "evidence_paths"
-        ],
+        "required": ["id", "status", "evidence_paths"],
         "properties": {
           "id": {
             "enum": [
@@ -110,32 +109,17 @@
               "phase10_publication_and_smoke"
             ]
           },
-          "status": {
-            "enum": [
-              "pending",
-              "in_progress",
-              "passed"
-            ]
-          },
+          "status": {"enum": ["pending", "in_progress", "passed"]},
           "evidence_paths": {
             "type": "array",
             "minItems": 1,
             "uniqueItems": true,
-            "items": {
-              "type": "string",
-              "minLength": 3
-            }
+            "items": {"type": "string", "minLength": 3}
           }
         }
       }
     },
-    "scope_note": {
-      "type": "string",
-      "minLength": 100
-    },
-    "updated_at": {
-      "type": "string",
-      "format": "date"
-    }
+    "scope_note": {"type": "string", "minLength": 100},
+    "updated_at": {"type": "string", "format": "date"}
   }
 }
