@@ -73,6 +73,8 @@
       "additionalProperties": false,
       "required": [
         "reviewed_anchor_prefectures",
+        "prefectures_with_five_layers_indexed_or_better",
+        "prefectures_with_five_layers_reviewed",
         "annual_actuals_reviewed_or_better",
         "budget_reviewed_or_better",
         "settlement_reviewed_or_better",
@@ -81,13 +83,51 @@
         "uniform_depth_complete"
       ],
       "properties": {
-        "reviewed_anchor_prefectures": {"type": "integer", "minimum": 0, "maximum": 9},
-        "annual_actuals_reviewed_or_better": {"type": "integer", "minimum": 0, "maximum": 47},
-        "budget_reviewed_or_better": {"type": "integer", "minimum": 0, "maximum": 47},
-        "settlement_reviewed_or_better": {"type": "integer", "minimum": 0, "maximum": 47},
-        "priority_projects_reviewed_or_better": {"type": "integer", "minimum": 0, "maximum": 47},
-        "audit_reviewed_or_better": {"type": "integer", "minimum": 0, "maximum": 47},
-        "uniform_depth_complete": {"type": "integer", "minimum": 0, "maximum": 47}
+        "reviewed_anchor_prefectures": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9
+        },
+        "prefectures_with_five_layers_indexed_or_better": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 47
+        },
+        "prefectures_with_five_layers_reviewed": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 47
+        },
+        "annual_actuals_reviewed_or_better": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 47
+        },
+        "budget_reviewed_or_better": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 47
+        },
+        "settlement_reviewed_or_better": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 47
+        },
+        "priority_projects_reviewed_or_better": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 47
+        },
+        "audit_reviewed_or_better": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 47
+        },
+        "uniform_depth_complete": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 47
+        }
       }
     },
     "gates": {

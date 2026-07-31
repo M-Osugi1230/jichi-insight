@@ -1,0 +1,33 @@
+.introLinks { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 22px; }
+.introLinks a { color: #286f9f; font-size: .72rem; font-weight: 850; text-underline-offset: 4px; }
+.summaryGrid { display: grid; gap: 12px; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-bottom: 70px; }
+.summaryGrid article { background: #fffefa; border: 1px solid #d7d3c8; border-top: 5px solid #236958; padding: 22px; }
+.summaryGrid span { color: #68737b; font-size: .65rem; font-weight: 850; }
+.summaryGrid strong { display: block; font-size: clamp(2.2rem, 4vw, 3.7rem); letter-spacing: -.07em; margin: 17px 0 9px; }
+.summaryGrid p { color: #42505b; font-size: .66rem; margin: 0; }
+.boundary { background: #ece8dd; display: grid; gap: 45px; grid-template-columns: .85fr 1.15fr; margin-bottom: 78px; padding: 48px; }
+.boundary h2 { font-size: clamp(2rem, 4vw, 3.2rem); margin-bottom: 0; }
+.boundary ul { list-style: none; margin: 0; padding: 0; }
+.boundary li { border-top: 1px solid #c7c1b4; color: #42505b; font-size: .76rem; padding: 14px 0; }
+.boundary li::before { color: #de5a3d; content: "—"; margin-right: 10px; }
+.sectionHeading { align-items: end; display: grid; gap: 52px; grid-template-columns: minmax(0, 1.1fr) minmax(280px, .9fr); margin-bottom: 30px; }
+.sectionHeading h2 { margin-bottom: 0; }
+.sectionHeading > p { color: #42505b; margin-bottom: 8px; }
+.prefectureGrid { display: grid; gap: 14px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.prefectureCard { background: #fffefa; border: 1px solid #d7d3c8; border-top: 5px solid #286f9f; padding: 25px; }
+.cardHeader { align-items: center; display: flex; gap: 10px; justify-content: space-between; }
+.cardHeader > span { color: #68737b; font-size: .63rem; font-weight: 850; }
+.prefectureCard h3 { font-size: 1.4rem; margin: 24px 0 12px; }
+.sourceList { display: grid; gap: 18px; margin-top: 20px; }
+.sourceList > div { border-top: 1px solid #ded9cd; display: grid; padding-top: 15px; }
+.sourceList strong { color: #236958; font-size: .66rem; }
+.sourceList a { color: #286f9f; font-size: .72rem; font-weight: 850; margin-top: 5px; text-underline-offset: 3px; }
+.sourceList span { color: #68737b; font-size: .56rem; margin-top: 4px; }
+.sourceList p { color: #42505b; font-size: .67rem; margin: 8px 0 4px; }
+.sourceList small { color: #68737b; font-size: .6rem; line-height: 1.7; }
+.nextAction { background: #f5f3ed; border-left: 3px solid #de5a3d; margin-top: 22px; padding: 13px 15px; }
+.nextAction strong { font-size: .63rem; }
+.nextAction p { color: #42505b; font-size: .66rem; margin: 6px 0 0; }
+@media (max-width: 900px) { .summaryGrid, .prefectureGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .boundary { grid-template-columns: 1fr; } }
+@media (max-width: 720px) { .sectionHeading { align-items: start; gap: 18px; grid-template-columns: 1fr; } .boundary { padding: 34px 22px; } }
+@media (max-width: 520px) { .summaryGrid, .prefectureGrid { grid-template-columns: 1fr; } }
