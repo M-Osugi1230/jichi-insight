@@ -13,7 +13,8 @@ COMPLETION_PATH = ROOT / "data/catalog/phase10_completion.json"
 ALL_CODES = [f"{value:02d}" for value in range(1, 48)]
 ANCHOR_CODES = {"01", "13", "23", "27", "34", "37", "47"}
 TOHOKU_CODES = {"02", "03", "05", "06", "07"}
-FIVE_LAYER_CODES = ANCHOR_CODES | TOHOKU_CODES
+KANTO_CODES = {"08", "09", "10", "11", "12", "14"}
+FIVE_LAYER_CODES = ANCHOR_CODES | TOHOKU_CODES | KANTO_CODES
 STATUSES = ("not_indexed", "indexed", "reviewed", "linked")
 STATUS_RANK = {status: index for index, status in enumerate(STATUSES)}
 
@@ -159,27 +160,27 @@ def test_uniform_summary_matches_expected_baseline():
         summary[dimension_id] = {status: counts[status] for status in STATUSES}
 
     assert summary["annual_actuals"] == {
-        "not_indexed": 33,
+        "not_indexed": 27,
         "indexed": 0,
-        "reviewed": 13,
+        "reviewed": 19,
         "linked": 1,
     }
     assert summary["budget"] == {
-        "not_indexed": 33,
+        "not_indexed": 27,
         "indexed": 0,
-        "reviewed": 14,
+        "reviewed": 20,
         "linked": 0,
     }
     assert summary["settlement"] == {
-        "not_indexed": 33,
+        "not_indexed": 27,
         "indexed": 1,
-        "reviewed": 13,
+        "reviewed": 19,
         "linked": 0,
     }
     assert summary["priority_projects"] == {
-        "not_indexed": 33,
+        "not_indexed": 27,
         "indexed": 0,
-        "reviewed": 14,
+        "reviewed": 20,
         "linked": 0,
     }
     assert summary["assembly"] == {
@@ -189,9 +190,9 @@ def test_uniform_summary_matches_expected_baseline():
         "linked": 0,
     }
     assert summary["audit"] == {
-        "not_indexed": 33,
+        "not_indexed": 27,
         "indexed": 0,
-        "reviewed": 14,
+        "reviewed": 20,
         "linked": 0,
     }
 
