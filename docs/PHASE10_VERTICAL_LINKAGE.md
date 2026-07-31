@@ -24,15 +24,18 @@ Phase 10 does not create an independent policy score. An increase in a value, th
 - `data/catalog/phase10_completion.json`
 - `data/catalog/phase10_reference_depth_reviews.json`
 - `data/catalog/phase10_anchor_depth_reviews.json`
+- `data/catalog/phase10_tohoku_depth_reviews.json`
 - `data/catalog/phase10_wave1_source_inventory.json`
 - `schemas/phase10_uniformity.schema.json`
+- `schemas/phase10_regional_depth_reviews.schema.json`
 
 `phase10_uniformity.json` stores the common eleven-dimension baseline and only the verified prefecture-specific differences. The public 47-prefecture matrix is derived from this manifest, preventing duplicated state and update drift. It is the canonical answer to “are all prefectures equally deep?”
 
-The two depth-review registries preserve the official source, reporting period, accepted claim, and unresolved linkage boundary behind every promotion:
+The depth-review registries preserve the official source, reporting period, accepted claim, and unresolved linkage boundary behind every promotion:
 
 - `phase10_reference_depth_reviews.json`: Miyagi and Fukuoka reference implementations
 - `phase10_anchor_depth_reviews.json`: Hokkaido, Tokyo, Aichi, Osaka, Hiroshima, Kagawa, and Okinawa
+- `phase10_tohoku_depth_reviews.json`: Aomori, Iwate, Akita, Yamagata, and Fukushima
 
 ## Uniform dimensions
 
@@ -71,16 +74,21 @@ Nationwide target and Evidence coverage is already uniform:
 - Reviewed Evidence Packet coverage: 47 / 47
 - Publication verification baseline: 47 / 47
 
-The nine regional anchors now have the next five evidence layers reviewed:
+Fourteen prefectures now have the next five evidence layers reviewed:
 
-- annual actuals Reviewed or better: 9 / 47
+- nine regional anchors;
+- the five remaining Tohoku prefectures: Aomori, Iwate, Akita, Yamagata, and Fukushima.
+
+Current depth:
+
+- annual actuals Reviewed or better: 14 / 47
   - Miyagi is `linked`
-  - the other eight anchors are `reviewed`
-- budget Reviewed or better: 9 / 47
-- settlement Reviewed or better: 8 / 47
+  - thirteen prefectures are `reviewed`
+- budget Reviewed or better: 14 / 47
+- settlement Reviewed or better: 13 / 47
   - Miyagi has the official settlement entrance `indexed`
-- priority projects Reviewed or better: 9 / 47
-- audit Reviewed or better: 9 / 47
+- priority projects Reviewed or better: 14 / 47
+- audit Reviewed or better: 14 / 47
 
 Accountability and delivery linkage remains shallower:
 
@@ -91,58 +99,48 @@ Accountability and delivery linkage remains shallower:
 
 These counts are deliberately conservative. Reviewed source coverage does not promote a dimension to `linked`; target, period, scope, department, project identity, and amount must still be checked.
 
-## Work completed in the reference and anchor review
+## Completed review batches
 
-### Miyagi
+### Miyagi and Fukuoka reference implementations
 
-- annual actuals remain the only downstream layer already linked to policy targets;
-- budget, priority-project, and audit evidence are Reviewed;
-- settlement, contract, and assembly entrances are indexed;
-- budget, settlement, and project records still require common policy / measure / project IDs.
+Miyagi remains the annual-actual linkage reference. Fukuoka remains the finance and settlement review reference. Both retain explicit boundaries for budget, settlement, priority-project, assembly, audit, contract, and manifesto linkage.
 
-### Fukuoka
+### Seven additional regional anchors
 
-- annual actuals, budget, settlement, priority projects, and audit are Reviewed;
-- contract, assembly, and executive-manifesto entrances are indexed;
-- 118 Reviewed targets still require one-to-one actual-series and project crosswalks.
+Hokkaido, Tokyo, Aichi, Osaka, Hiroshima, Kagawa, and Okinawa have Reviewed annual-progress, budget, settlement, priority-project, and audit sources.
 
-### Remaining seven regional anchors
+### Tohoku batch
 
-For Hokkaido, Tokyo, Aichi, Osaka, Hiroshima, Kagawa, and Okinawa, the following official layers are Reviewed:
+Aomori, Iwate, Akita, Yamagata, and Fukushima have the same five layers Reviewed. Important plan-version boundaries remain explicit:
 
-- annual progress or policy-results report;
-- current budget package;
-- latest available settlement package;
-- priority-project, management-project, or major-policy results;
-- audit or settlement-review report.
+- Akita: old-plan evaluation and settlement are not attached to the new plan automatically.
+- Yamagata: prior and later implementation-plan target versions remain separate.
+- other prefectures retain reporting-year, measurement-year, and project-identity boundaries.
 
-No layer was promoted by analogy. Each prefecture has its own official sources and explicit boundary text.
+The Tohoku evidence is published at `/municipalities/phase10/tohoku`.
 
 ## Execution order from here
 
-### Work package A — link the nine regional anchors
+### Work package A — complete five-layer review nationwide
 
-1. Link each anchor’s annual actuals to its Reviewed target statements.
+1. Kanto: Ibaraki, Tochigi, Gunma, Saitama, Chiba, and Kanagawa.
+2. Chubu.
+3. Kinki.
+4. Chugoku.
+5. Shikoku.
+6. Kyushu and Okinawa.
+
+Each prefecture advances independently. Regional batches are an execution convenience, not a quality shortcut.
+
+### Work package B — link reviewed evidence to targets and projects
+
+1. Link annual actuals to Reviewed target statements.
 2. Create stable policy / measure / project crosswalks.
 3. Keep budget, revised budget, settlement, project cost, and contract amount separate.
 4. Link audit findings only where the subject policy or project is verifiable.
 5. Add assembly and executive-manifesto evidence without conflating political promises and administrative plans.
 
-### Work package B — expand through the remaining 38 prefectures
-
-- Tohoku
-- Kanto
-- Chubu
-- Kinki
-- Chugoku
-- Shikoku
-- Kyushu and Okinawa
-
-Each prefecture advances independently. Regional batches are an execution convenience, not a quality shortcut.
-
 ### Work package C — complete delivery and accountability depth
-
-After source review and target linkage:
 
 - index and review contract / procurement evidence;
 - connect assembly questions, proposals, decisions, and explanations;
