@@ -8,6 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 REVIEWS_PATH = ROOT / "data/catalog/phase10_anchor_depth_reviews.json"
 SCHEMA_PATH = ROOT / "schemas/phase10_anchor_depth_reviews.schema.json"
 UNIFORMITY_PATH = ROOT / "data/catalog/phase10_uniformity.json"
+COMPLETION_PATH = ROOT / "data/catalog/phase10_completion.json"
 
 CODES = ["01", "13", "23", "27", "34", "37", "47"]
 DIMENSIONS = [
@@ -86,9 +87,63 @@ def test_anchor_reviews_promote_only_reviewed_depth():
         assert override["next_action"] == record["next_linkage"]
 
 
+def test_nationwide_uniform_completion_counts_match_reviewed_depth():
+    uniformity = load(UNIFORMITY_PATH)
+    completion = load(COMPLETION_PATH)
+    counts = completion["nationwide_uniform_counts"]
+
+    assert counts == {
+        "reviewed_anchor_prefectures": 9,
+        "annual_actuals_reviewed_or_better": 9,
+        "budget_reviewed_or_better": 9,
+        "settlement_reviewed_or_better": 8,
+        "priority_projects_reviewed_or_better": 9,
+        "audit_reviewed_or_better": 9,
+        "uniform_depth_complete": 0,
+    }
+
+    overrides = uniformity["overrides"]
+    assert counts["reviewed_anchor_prefectures"] == len(overrides)
+    assert counts["annual_actuals_reviewed_or_better"] == sum(
+        record["current_depth"].get("annual_actuals") in {"reviewed", "linked"}
+        for record in overrides.values()
+    )
+    assert counts["budget_reviewed_or_better"] == sum(
+        record["current_depth"].get("budget") in {"reviewed", "linked"}
+        for record in overrides.values()
+    )
+    assert counts["settlement_reviewed_or_better"] == sum(
+        record["current_depth"].get("settlement") in {"reviewed", "linked"}
+        for record in overrides.values()
+    )
+    assert counts["priority_projects_reviewed_or_better"] == sum(
+        record["current_depth"].get("priority_projects")
+        in {"reviewed", "linked"}
+        for record in overrides.values()
+    )
+    assert counts["audit_reviewed_or_better"] == sum(
+        record["current_depth"].get("audit") in {"reviewed", "linked"}
+        for record in overrides.values()
+    )
+
+    evidence_paths = {
+        path
+        for gate in completion["gates"]
+        for path in gate["evidence_paths"]
+    }
+    assert REVIEWS_PATH.relative_to(ROOT).as_posix() in evidence_paths
+    assert SCHEMA_PATH.relative_to(ROOT).as_posix() in evidence_paths
+    assert (
+        Path("tests/test_phase10_anchor_depth_reviews.py").as_posix()
+        in evidence_paths
+    )
+
+
 def test_anchor_review_does_not_claim_phase_completion():
     uniformity = load(UNIFORMITY_PATH)
+    completion = load(COMPLETION_PATH)
     assert uniformity["status"] == "in_progress"
+    assert completion["status"] == "in_progress"
     assert uniformity["completion_rule"]["allow_partial_complete"] is False
     assert uniformity["policy_achievement_assessment_status"] == "not_assessed"
     assert uniformity["ranking_eligibility"] == (
