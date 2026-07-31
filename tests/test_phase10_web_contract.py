@@ -20,15 +20,22 @@ def test_phase10_public_page_and_uniform_loader_exist():
         "目標へ接続",
         "公式資料入口",
         "予算 / 決算 入口以上",
+        "宮城県と福岡県の次の層を、公式資料で確認。",
+        "深掘りReviewed",
     ):
         assert required in page
 
     assert "phase10_uniformity.json" in loader
+    assert "phase10_reference_depth_reviews.json" in loader
     assert "loadPhase10Uniformity" in loader
     assert "phase10UniformRecords" in loader
     assert "phase10UniformSummary" in loader
+    assert "loadPhase10ReferenceReviews" in loader
+    assert "phase10ReferenceReviewsByPrefecture" in loader
     assert ".depthMatrix" in css
     assert '.depthState[data-state="linked"]' in css
+    assert ".reviewGrid" in css
+    assert ".reviewList" in css
 
 
 def test_phase10_is_linked_from_phase9_and_sitemap():
