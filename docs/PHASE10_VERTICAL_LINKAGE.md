@@ -74,10 +74,12 @@ Nationwide target and Evidence coverage is already uniform:
 - Reviewed Evidence Packet coverage: 47 / 47
 - Publication verification baseline: 47 / 47
 
-Fourteen prefectures now have the next five evidence layers reviewed:
+Fourteen prefectures have all five delivery-evidence layers indexed or better:
 
 - nine regional anchors;
 - the five remaining Tohoku prefectures: Aomori, Iwate, Akita, Yamagata, and Fukushima.
+
+Thirteen prefectures have all five layers Reviewed. Miyagi is the exception because its settlement layer remains `indexed` while its annual actuals are already `linked`.
 
 Current depth:
 
