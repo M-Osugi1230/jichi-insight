@@ -11,6 +11,7 @@ export default function Phase10Layout({ children }: { children: ReactNode }) {
           <span>PHASE 10</span>
           <Link href="/municipalities/phase10">全国深度マトリクス</Link>
           <Link href="/municipalities/phase10/tohoku">東北5県の深掘り</Link>
+          <Link href="/municipalities/phase10/kanto">関東6県の深掘り</Link>
         </div>
       </nav>
       {children}
