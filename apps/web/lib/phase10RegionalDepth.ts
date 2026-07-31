@@ -66,6 +66,10 @@ export function loadPhase10TohokuDepth(): RegionalDepthReviews {
   return loadPhase10RegionalDepth("phase10_tohoku_depth_reviews.json");
 }
 
+export function loadPhase10KantoDepth(): RegionalDepthReviews {
+  return loadPhase10RegionalDepth("phase10_kanto_depth_reviews.json");
+}
+
 export const regionalDepthLabels: Record<RegionalDepthDimension, string> = {
   annual_actuals: "年度実績",
   budget: "予算",
