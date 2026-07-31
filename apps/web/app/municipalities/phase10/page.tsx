@@ -6,6 +6,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { StatusBadge } from "@/components/StatusBadge";
 import {
+  loadPhase10AnchorReviews,
   loadPhase10Queue,
   loadPhase10ReferenceReviews,
   loadPhase10SourceInventory,
@@ -104,11 +105,15 @@ export default function Phase10MunicipalitiesPage() {
   const referenceReviews = loadPhase10ReferenceReviews();
   const referenceReviewsByPrefecture =
     phase10ReferenceReviewsByPrefecture(referenceReviews);
+  const anchorReviews = loadPhase10AnchorReviews();
   const uniformByCode = new Map(
     uniformRecords.map((record) => [record.prefecture_code, record]),
   );
   const budgetIndexed = indexedOrBetter(uniformSummary.budget);
   const settlementIndexed = indexedOrBetter(uniformSummary.settlement);
+  const reviewedAnchorSources =
+    referenceReviews.summary.record_count +
+    anchorReviews.summary.reviewed_source_count;
 
   return (
     <main id="main-content">
@@ -141,9 +146,9 @@ export default function Phase10MunicipalitiesPage() {
             <p>全都道府県でPhase 10の接続元を確保済みです。</p>
           </article>
           <article>
-            <span>年度実績 接続済み</span>
-            <strong>{uniformSummary.annual_actuals.linked}</strong>
-            <p>定義、期間、対象範囲を確認して目標へ接続した県数です。</p>
+            <span>年度実績 Reviewed以上</span>
+            <strong>{indexedOrBetter(uniformSummary.annual_actuals) - uniformSummary.annual_actuals.indexed}</strong>
+            <p>うち目標へ直接接続済みは{uniformSummary.annual_actuals.linked}県です。</p>
           </article>
           <article>
             <span>予算 / 決算 入口以上</span>
@@ -151,9 +156,9 @@ export default function Phase10MunicipalitiesPage() {
             <p>入口確認以上の県数です。金額接続済みを意味しません。</p>
           </article>
           <article>
-            <span>公式ソース</span>
-            <strong>{sourceInventory.summary.source_count}</strong>
-            <p>現在の参照実装で確認した年度実績、予算、事業、契約の入口です。</p>
+            <span>拠点・Reviewed公式資料</span>
+            <strong>{reviewedAnchorSources}</strong>
+            <p>9地域拠点で内容・期間・範囲まで確認した資料記録です。</p>
           </article>
         </section>
 
@@ -201,7 +206,9 @@ export default function Phase10MunicipalitiesPage() {
                   <th scope="col">都道府県</th>
                   <th scope="col">状態</th>
                   {matrixDimensions.map((dimension) => (
-                    <th scope="col" key={dimension.id}>{dimension.label}</th>
+                    <th scope="col" key={dimension.id}>
+                      {dimension.label}
+                    </th>
                   ))}
                   <th scope="col">残り</th>
                 </tr>
@@ -285,15 +292,57 @@ export default function Phase10MunicipalitiesPage() {
           </div>
         </section>
 
+        <section className="contentSection" aria-labelledby="anchor-depth-reviews">
+          <div className={styles.sectionHeading}>
+            <div>
+              <p className="eyebrow">Seven regional anchors</p>
+              <h2 id="anchor-depth-reviews">残る7拠点も、5層の公式資料をReviewed化。</h2>
+            </div>
+            <p>
+              北海道、東京都、愛知県、大阪府、広島県、香川県、沖縄県について、
+              年度実績、予算、決算、重点事業、監査を個別に確認しました。
+            </p>
+          </div>
+
+          <div className={styles.anchorReviewGrid}>
+            {anchorReviews.records.map((record) => (
+              <article className={styles.anchorReviewCard} key={record.prefecture_code}>
+                <div className={styles.cardHeader}>
+                  <span>{record.prefecture_code} / {record.region}</span>
+                  <StatusBadge label="5層Reviewed" tone="verified" />
+                </div>
+                <h3>{record.name}</h3>
+                <div className={styles.anchorSourceList}>
+                  {anchorReviews.dimensions.map((dimension) => {
+                    const source = record.sources[dimension];
+                    return (
+                      <div key={dimension}>
+                        <strong>{referenceDimensionLabels[dimension]}</strong>
+                        <a href={source.url} target="_blank" rel="noreferrer">
+                          {source.title} ↗
+                        </a>
+                        <small>{source.reporting_period}</small>
+                        <p>{source.claim}</p>
+                        <em>{source.boundary}</em>
+                      </div>
+                    );
+                  })}
+                </div>
+                <p className={styles.nextLinkage}>{record.next_linkage}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
         <section className="contentSection" aria-labelledby="phase10-wave1">
           <div className={styles.sectionHeading}>
             <div>
               <p className="eyebrow">Reference implementations</p>
-              <h2 id="phase10-wave1">9地域拠点から、接続方法を確立する。</h2>
+              <h2 id="phase10-wave1">9地域拠点で、接続工程へ進む。</h2>
             </div>
             <p>
-              宮城県を年度実績接続の基準、福岡県を予算・決算接続の基準として、
-              残る7拠点へ同じ工程を適用します。
+              9拠点の5層レビューは完了しました。次は年度実績を目標へ照合し、
+              政策・施策・事業の共通IDで予算・決算・重点事業を接続します。
             </p>
           </div>
 
@@ -333,7 +382,12 @@ export default function Phase10MunicipalitiesPage() {
                     <div className={styles.sourceList}>
                       <strong>公式資料入口</strong>
                       {sources.map((source) => (
-                        <a href={source.url} key={source.id} target="_blank" rel="noreferrer">
+                        <a
+                          href={source.url}
+                          key={source.id}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           <span>{sourceCategoryLabels[source.category]}</span>
                           {source.title} ↗
                         </a>
@@ -348,11 +402,11 @@ export default function Phase10MunicipalitiesPage() {
 
         <section className={styles.nextSection}>
           <div>
-            <p className="eyebrow">Current active reference</p>
-            <h2>宮城県と福岡県で、実績・金額・事業の接続基準を固める。</h2>
+            <p className="eyebrow">Current active work</p>
+            <h2>9地域拠点で、Reviewed資料を政策系列へ接続する。</h2>
             <p>
-              宮城県の年度実績接続と福岡県のReviewed財政・決算を基準に、
-              予算、重点事業、契約、議会、監査、公約を同じ政策系列へ接続します。
+              年度実績とReviewed目標を照合し、政策・施策・事業の共通IDを作ります。
+              その後、予算、決算、重点事業、契約、議会、監査、公約を接続します。
             </p>
           </div>
           <Link href="/municipalities/miyagi">宮城県の年度実績を見る →</Link>
