@@ -84,7 +84,8 @@ def test_uniformity_uses_all_eleven_dimensions_once():
 def test_compact_manifest_expands_to_all_prefectures():
     uniformity, records = expanded_records()
     assert [record["prefecture_code"] for record in records] == ALL_CODES
-    assert len(records) == len({record["prefecture_code"] for record in records}) == 47
+    unique_codes = {record["prefecture_code"] for record in records}
+    assert len(records) == len(unique_codes) == 47
     assert set(uniformity["overrides"]) <= set(ALL_CODES)
     assert all(record["gap_count"] >= 0 for record in records)
 
@@ -133,7 +134,9 @@ def test_uniform_summary_matches_expected_baseline():
     summary = {}
     for dimension in uniformity["dimensions"]:
         dimension_id = dimension["id"]
-        counts = Counter(record["current_depth"][dimension_id] for record in records)
+        counts = Counter(
+            record["current_depth"][dimension_id] for record in records
+        )
         summary[dimension_id] = {status: counts[status] for status in STATUSES}
 
     assert summary["annual_actuals"] == {
