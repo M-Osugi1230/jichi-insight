@@ -40,6 +40,17 @@
 .reviewList a { color: #286f9f; display: inline-block; font-size: .72rem; font-weight: 850; margin-top: 8px; text-underline-offset: 3px; }
 .reviewList p { color: #42505b; font-size: .67rem; margin: 9px 0 5px; }
 .reviewList small { color: #68737b; display: block; font-size: .6rem; line-height: 1.65; }
+.anchorReviewGrid { display: grid; gap: 14px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.anchorReviewCard { background: #fffefa; border: 1px solid #d7d3c8; border-top: 5px solid #236958; padding: 24px; }
+.anchorReviewCard h3 { font-size: 1.35rem; margin: 22px 0 10px; }
+.anchorSourceList { display: grid; gap: 17px; margin-top: 22px; }
+.anchorSourceList > div { border-top: 1px solid #ded9cd; display: grid; padding-top: 14px; }
+.anchorSourceList strong { color: #236958; font-size: .65rem; }
+.anchorSourceList a { color: #286f9f; font-size: .72rem; font-weight: 850; margin-top: 5px; text-underline-offset: 3px; }
+.anchorSourceList small { color: #68737b; font-size: .56rem; margin-top: 4px; }
+.anchorSourceList p { color: #42505b; font-size: .66rem; margin: 8px 0 4px; }
+.anchorSourceList em { color: #68737b; font-size: .59rem; font-style: normal; line-height: 1.65; }
+.nextLinkage { background: #f5f3ed; border-left: 3px solid #de5a3d; color: #42505b; font-size: .66rem; margin: 22px 0 0; padding: 12px 14px; }
 .prefectureGrid { display: grid; gap: 12px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .prefectureCard { background: #fffefa; border: 1px solid #d7d3c8; display: flex; flex-direction: column; min-height: 300px; padding: 21px; }
 .cardHeader { align-items: center; display: flex; gap: 8px; justify-content: space-between; }
@@ -58,6 +69,6 @@
 .nextSection h2 { color: #fff; margin-bottom: 12px; }
 .nextSection p { color: #d9e1e7; margin-bottom: 0; }
 .nextSection a { color: #fff; flex: 0 0 auto; }
-@media (max-width: 980px) { .reviewGrid, .prefectureGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .boundary { grid-template-columns: 1fr; } }
+@media (max-width: 980px) { .reviewGrid, .anchorReviewGrid, .prefectureGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .boundary { grid-template-columns: 1fr; } }
 @media (max-width: 720px) { .sectionHeading { align-items: start; gap: 18px; grid-template-columns: 1fr; } .boundary, .nextSection { padding: 34px 22px; } .nextSection { align-items: start; flex-direction: column; } }
-@media (max-width: 520px) { .reviewGrid, .prefectureGrid, .boundaryGrid, .prefectureCard dl { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .reviewGrid, .anchorReviewGrid, .prefectureGrid, .boundaryGrid, .prefectureCard dl { grid-template-columns: 1fr; } }
