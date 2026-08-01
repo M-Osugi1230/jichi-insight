@@ -3,16 +3,14 @@ from __future__ import annotations
 import argparse
 import json
 import time
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass
 from pathlib import Path
-from typing import Iterable
 from urllib.parse import parse_qs, quote_plus, unquote, urlparse
 
 import requests
 from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parents[1]
-
 PREFECTURES = {
     f"{index:02d}": name
     for index, name in enumerate(
@@ -28,7 +26,6 @@ PREFECTURES = {
         start=1,
     )
 }
-
 REVIEW_FILES = [
     "data/catalog/phase10_reference_depth_reviews.json",
     "data/catalog/phase10_anchor_depth_reviews.json",
@@ -40,28 +37,33 @@ REVIEW_FILES = [
     "data/catalog/phase10_shikoku_depth_reviews.json",
     "data/catalog/phase10_kyushu_depth_reviews.json",
 ]
-
 ROLE_CONFIG = {
     "contracts": {
-        "query": "入札 契約 調達 電子調達",
-        "positive": ("入札", "契約", "調達", "落札", "nyusatsu", "keiyaku", "procurement", "bid"),
-        "negative": ("採用", "試験", "統計"),
+        "query": "入札 契約 調達",
+        "positive": ("入札", "契約", "調達", "落札", "nyusatsu", "keiyaku"),
+        "negative": ("採用", "試験"),
     },
     "assembly": {
-        "query": "県議会 会議録 本会議 委員会",
-        "positive": ("議会", "会議録", "本会議", "委員会", "gikai", "kaigiroku", "assembly"),
+        "query": "議会 会議録 本会議",
+        "positive": ("議会", "会議録", "本会議", "委員会", "gikai", "kaigiroku"),
         "negative": ("市議会", "町議会", "村議会"),
     },
     "executive_manifesto": {
-        "query": "知事 選挙公報 公約 マニフェスト",
-        "positive": ("知事", "選挙公報", "公約", "マニフェスト", "senkyo", "kouhou", "manifesto"),
+        "query": "知事 選挙公報 公約",
+        "positive": ("知事", "選挙公報", "公約", "マニフェスト", "senkyo", "kouhou"),
         "negative": ("市長", "町長", "村長", "議員"),
     },
 }
-
-USER_AGENT = "JichiInsightPhase10SourceDiscovery/1.0 (+https://github.com/M-Osugi1230/jichi-insight)"
 SESSION = requests.Session()
-SESSION.headers.update({"User-Agent": USER_AGENT, "Accept-Language": "ja,en;q=0.5"})
+SESSION.headers.update(
+    {
+        "User-Agent": (
+            "JichiInsightPhase10SourceDiscovery/1.1 "
+            "(+https://github.com/M-Osugi1230/jichi-insight)"
+        ),
+        "Accept-Language": "ja,en;q=0.5",
+    }
+)
 
 
 @dataclass(frozen=True)
@@ -69,207 +71,152 @@ class Candidate:
     url: str
     title: str
     score: int
-    source: str
+    discovery_query: str
     http_status: int | None
     official_domain: bool
 
 
-def load_json(path: Path) -> dict:
+def load(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def normalize_host(host: str) -> str:
-    return host.lower().split(":", 1)[0].removeprefix("www.")
+def host(url: str) -> str:
+    return urlparse(url).netloc.lower().split(":", 1)[0].removeprefix("www.")
 
 
-def official_host(host: str) -> bool:
-    normalized = normalize_host(host)
+def is_official(url: str) -> bool:
+    value = host(url)
     return (
-        normalized.endswith(".lg.jp")
-        or normalized.endswith(".go.jp")
-        or normalized.endswith("metro.tokyo.jp")
+        value.endswith(".lg.jp")
+        or value.endswith(".go.jp")
+        or value.endswith("metro.tokyo.jp")
     )
 
 
-def source_hosts_by_prefecture() -> dict[str, set[str]]:
-    hosts = {code: set() for code in PREFECTURES}
+def known_hosts() -> dict[str, set[str]]:
+    result = {code: set() for code in PREFECTURES}
     for relative in REVIEW_FILES:
-        payload = load_json(ROOT / relative)
-        for record in payload.get("records", []):
+        for record in load(ROOT / relative)["records"]:
             code = record["prefecture_code"]
-            direct_url = record.get("url")
-            if direct_url:
-                host = normalize_host(urlparse(direct_url).netloc)
-                if host:
-                    hosts[code].add(host)
-            for source in record.get("sources", {}).values():
-                host = normalize_host(urlparse(source["url"]).netloc)
-                if host:
-                    hosts[code].add(host)
-    return hosts
+            urls = [record.get("url")]
+            urls.extend(
+                source.get("url")
+                for source in record.get("sources", {}).values()
+            )
+            result[code].update(host(url) for url in urls if url)
+    return result
 
 
-def unwrap_search_url(url: str) -> str:
+def unwrap(url: str) -> str:
     parsed = urlparse(url)
     if "duckduckgo.com" in parsed.netloc:
-        query = parse_qs(parsed.query)
-        if "uddg" in query:
-            return unquote(query["uddg"][0])
+        values = parse_qs(parsed.query).get("uddg")
+        if values:
+            return unquote(values[0])
     return url
 
 
-def search_duckduckgo(query: str, limit: int = 10) -> list[tuple[str, str]]:
-    url = f"https://html.duckduckgo.com/html/?q={quote_plus(query)}"
-    response = SESSION.get(url, timeout=20)
+def search(query: str, limit: int = 12) -> list[tuple[str, str]]:
+    response = SESSION.get(
+        f"https://html.duckduckgo.com/html/?q={quote_plus(query)}",
+        timeout=20,
+    )
     response.raise_for_status()
     soup = BeautifulSoup(response.text, "html.parser")
-    results: list[tuple[str, str]] = []
+    output = []
     for anchor in soup.select("a.result__a"):
-        href = unwrap_search_url(anchor.get("href", ""))
+        url = unwrap(anchor.get("href", ""))
         title = " ".join(anchor.get_text(" ", strip=True).split())
-        if href.startswith("http") and title:
-            results.append((href, title))
-        if len(results) >= limit:
+        if url.startswith("http") and title:
+            output.append((url, title))
+        if len(output) >= limit:
             break
-    return results
+    return output
 
 
-def verify_url(url: str) -> tuple[str, int | None]:
+def score(url: str, title: str, prefecture: str, role: str) -> int:
+    config = ROLE_CONFIG[role]
+    text = f"{unquote(url)} {title}".lower()
+    short_name = prefecture.removesuffix("県").removesuffix("府").removesuffix("都")
+    value = 8 if is_official(url) else 0
+    value += 2 if short_name.lower() in text else 0
+    value += sum(3 for word in config["positive"] if word.lower() in text)
+    value -= sum(5 for word in config["negative"] if word.lower() in text)
+    if role == "contracts" and any(word in text for word in ("入札", "調達", "落札")):
+        value += 4
+    if role == "assembly" and "会議録" in text:
+        value += 5
+    if role == "executive_manifesto" and "選挙公報" in text:
+        value += 6
+    return value
+
+
+def verify(url: str) -> tuple[str, int | None]:
     try:
         response = SESSION.get(
             url,
-            timeout=12,
+            timeout=10,
             allow_redirects=True,
-            headers={"Range": "bytes=0-200000"},
+            headers={"Range": "bytes=0-150000"},
         )
     except requests.RequestException:
         return "", None
-    status = response.status_code
-    if status >= 400:
-        return "", status
-    content_type = response.headers.get("content-type", "")
-    if "pdf" in content_type.lower() or response.url.lower().endswith(".pdf"):
-        return Path(urlparse(response.url).path).name, status
-    if "html" not in content_type.lower() and not response.text.lstrip().startswith("<"):
-        return "", status
-    soup = BeautifulSoup(response.text[:200_000], "html.parser")
-    if soup.title:
-        return " ".join(soup.title.get_text(" ", strip=True).split()), status
-    return "", status
+    if response.status_code >= 400:
+        return "", response.status_code
+    content_type = response.headers.get("content-type", "").lower()
+    if "pdf" in content_type or response.url.lower().endswith(".pdf"):
+        return Path(urlparse(response.url).path).name, response.status_code
+    soup = BeautifulSoup(response.text[:150_000], "html.parser")
+    title = soup.title.get_text(" ", strip=True) if soup.title else ""
+    return " ".join(title.split()), response.status_code
 
 
-def score_candidate(
-    *,
-    url: str,
-    title: str,
+def ranked_results(
+    prefecture: str,
     role: str,
-    prefecture_name: str,
-    known_hosts: set[str],
-) -> tuple[int, bool]:
-    config = ROLE_CONFIG[role]
-    text = f"{unquote(url)} {title}".lower()
-    host = normalize_host(urlparse(url).netloc)
-    is_official = official_host(host) or any(
-        host == known or host.endswith(f".{known}") for known in known_hosts
-    )
-    score = 8 if is_official else 0
-    short_name = prefecture_name.removesuffix("県").removesuffix("府").removesuffix("都")
-    if short_name.lower() in text:
-        score += 2
-    score += sum(3 for keyword in config["positive"] if keyword.lower() in text)
-    score -= sum(5 for keyword in config["negative"] if keyword.lower() in text)
-    if role == "executive_manifesto" and "選挙公報" in text:
-        score += 6
-    if role == "assembly" and "会議録" in text:
-        score += 5
-    if role == "contracts" and any(word in text for word in ("入札", "調達", "落札")):
-        score += 4
-    return score, is_official
-
-
-def dedupe(values: Iterable[Candidate]) -> list[Candidate]:
-    best: dict[str, Candidate] = {}
-    for candidate in values:
-        key = candidate.url.rstrip("/")
-        previous = best.get(key)
-        if previous is None or candidate.score > previous.score:
-            best[key] = candidate
-    return sorted(best.values(), key=lambda item: (-item.score, item.url))
-
-
-def discover_role(
-    *,
-    prefecture_name: str,
-    role: str,
-    known_hosts: set[str],
+    official_hosts: set[str],
 ) -> list[Candidate]:
     config = ROLE_CONFIG[role]
-    preferred_host = sorted(known_hosts)[0] if known_hosts else None
-    query = f'"{prefecture_name}" {config["query"]}'
-    if preferred_host:
-        query = f"site:{preferred_host} {config['query']}"
-    try:
-        results = search_duckduckgo(query)
-    except requests.RequestException:
-        results = []
+    queries = [f'"{prefecture}" {config["query"]}']
+    if official_hosts:
+        queries.append(f"site:{sorted(official_hosts)[0]} {config['query']}")
 
-    ranked: list[Candidate] = []
-    for url, title in results:
-        host = normalize_host(urlparse(url).netloc)
-        if not host or not official_host(host):
+    raw: dict[str, tuple[str, str]] = {}
+    for query in queries:
+        try:
+            for url, title in search(query):
+                if is_official(url):
+                    raw.setdefault(url.rstrip("/"), (title, query))
+        except requests.RequestException:
             continue
-        score, is_official = score_candidate(
-            url=url,
-            title=title,
-            role=role,
-            prefecture_name=prefecture_name,
-            known_hosts=known_hosts,
-        )
-        ranked.append(
-            Candidate(
-                url=url,
-                title=title,
-                score=score,
-                source=query,
-                http_status=None,
-                official_domain=is_official,
+        if raw:
+            break
+        time.sleep(0.05)
+
+    preliminary = sorted(
+        (
+            (score(url, title, prefecture, role), url, title, query)
+            for url, (title, query) in raw.items()
+        ),
+        reverse=True,
+    )[:4]
+    candidates = []
+    for _, url, search_title, query in preliminary:
+        fetched_title, status = verify(url)
+        title = fetched_title or search_title
+        final_score = score(url, title, prefecture, role)
+        if final_score >= 10:
+            candidates.append(
+                Candidate(
+                    url=url,
+                    title=title,
+                    score=final_score,
+                    discovery_query=query,
+                    http_status=status,
+                    official_domain=True,
+                )
             )
-        )
-
-    verified: list[Candidate] = []
-    for candidate in dedupe(ranked)[:3]:
-        fetched_title, status = verify_url(candidate.url)
-        title = fetched_title or candidate.title
-        score, is_official = score_candidate(
-            url=candidate.url,
-            title=title,
-            role=role,
-            prefecture_name=prefecture_name,
-            known_hosts=known_hosts,
-        )
-        verified.append(
-            Candidate(
-                url=candidate.url,
-                title=title,
-                score=score,
-                source=query,
-                http_status=status,
-                official_domain=is_official,
-            )
-        )
-    time.sleep(0.05)
-    return [candidate for candidate in dedupe(verified) if candidate.score >= 10][:3]
-
-
-def serialize(candidate: Candidate) -> dict:
-    return {
-        "url": candidate.url,
-        "title": candidate.title,
-        "score": candidate.score,
-        "discovery_query": candidate.source,
-        "http_status": candidate.http_status,
-        "official_domain": candidate.official_domain,
-    }
+    return sorted(candidates, key=lambda item: (-item.score, item.url))[:3]
 
 
 def main() -> None:
@@ -279,26 +226,22 @@ def main() -> None:
     parser.add_argument("--codes", nargs="*", default=list(PREFECTURES))
     args = parser.parse_args()
 
-    hosts_by_code = source_hosts_by_prefecture()
+    official_hosts = known_hosts()
     records = []
     for code in args.codes:
-        name = PREFECTURES[code]
+        prefecture = PREFECTURES[code]
         roles = {}
         for role in ROLE_CONFIG:
-            candidates = discover_role(
-                prefecture_name=name,
-                role=role,
-                known_hosts=hosts_by_code[code],
-            )
+            candidates = ranked_results(prefecture, role, official_hosts[code])
             roles[role] = {
                 "status": "candidate_found" if candidates else "not_found",
-                "candidates": [serialize(candidate) for candidate in candidates],
+                "candidates": [asdict(item) for item in candidates],
             }
         records.append(
             {
                 "prefecture_code": code,
-                "name": name,
-                "known_official_hosts": sorted(hosts_by_code[code]),
+                "name": prefecture,
+                "known_official_hosts": sorted(official_hosts[code]),
                 "roles": roles,
             }
         )
@@ -307,8 +250,9 @@ def main() -> None:
         "id": "phase10-accountability-source-candidates",
         "status": "candidate_only",
         "review_rule": (
-            "Candidates must be reviewed for prefecture, source role, reporting period, "
-            "and current executive term before promotion."
+            "Candidates require review for prefecture, source role, reporting period, "
+            "and current executive term before promotion. A missing result is not an "
+            "assertion that a source does not exist."
         ),
         "records": records,
     }
@@ -323,8 +267,7 @@ def main() -> None:
         lines.append(f"## {record['prefecture_code']} {record['name']}")
         for role, role_data in record["roles"].items():
             lines.append(
-                f"- {role}: {role_data['status']} "
-                f"({len(role_data['candidates'])})"
+                f"- {role}: {role_data['status']} ({len(role_data['candidates'])})"
             )
             for candidate in role_data["candidates"]:
                 lines.append(
