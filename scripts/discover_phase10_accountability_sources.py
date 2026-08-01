@@ -56,11 +56,20 @@ ROLE_CONFIG = {
 }
 HEADERS = {
     "User-Agent": (
-        "JichiInsightPhase10SourceDiscovery/1.2 "
+        "JichiInsightPhase10SourceDiscovery/1.3 "
         "(+https://github.com/M-Osugi1230/jichi-insight)"
     ),
     "Accept-Language": "ja,en;q=0.5",
 }
+LOCAL_GOVERNMENT_HOST_MARKERS = (
+    ".city.",
+    ".town.",
+    ".vill.",
+    ".village.",
+    "city.",
+    "town.",
+    "vill.",
+)
 
 
 @dataclass(frozen=True)
@@ -71,6 +80,7 @@ class Candidate:
     discovery_query: str
     http_status: int | None
     official_domain: bool
+    prefecture_host_match: bool
 
 
 def load(path: Path) -> dict:
@@ -88,6 +98,13 @@ def is_official(url: str) -> bool:
         or value.endswith(".go.jp")
         or value.endswith("metro.tokyo.jp")
     )
+
+
+def matches_prefecture_host(url: str, official_hosts: set[str]) -> bool:
+    value = host(url)
+    if any(marker in value for marker in LOCAL_GOVERNMENT_HOST_MARKERS):
+        return False
+    return any(value == known or value.endswith(f".{known}") for known in official_hosts)
 
 
 def known_hosts() -> dict[str, set[str]]:
@@ -120,6 +137,7 @@ def search(query: str, limit: int = 12) -> list[tuple[str, str]]:
         headers=HEADERS,
     )
     response.raise_for_status()
+    response.encoding = response.apparent_encoding
     soup = BeautifulSoup(response.text, "html.parser")
     output = []
     for anchor in soup.select("a.result__a"):
@@ -164,6 +182,7 @@ def verify(url: str) -> tuple[str, int | None]:
     content_type = response.headers.get("content-type", "").lower()
     if "pdf" in content_type or response.url.lower().endswith(".pdf"):
         return Path(urlparse(response.url).path).name, response.status_code
+    response.encoding = response.apparent_encoding
     soup = BeautifulSoup(response.text[:150_000], "html.parser")
     title = soup.title.get_text(" ", strip=True) if soup.title else ""
     return " ".join(title.split()), response.status_code
@@ -183,7 +202,7 @@ def ranked_results(
     for query in queries:
         try:
             for url, title in search(query):
-                if is_official(url):
+                if is_official(url) and matches_prefecture_host(url, official_hosts):
                     raw.setdefault(url.rstrip("/"), (title, query))
         except requests.RequestException:
             continue
@@ -211,6 +230,7 @@ def ranked_results(
                     discovery_query=query,
                     http_status=status,
                     official_domain=True,
+                    prefecture_host_match=True,
                 )
             )
     return sorted(candidates, key=lambda item: (-item.score, item.url))[:3]
@@ -269,8 +289,8 @@ def main() -> None:
         "id": "phase10-accountability-source-candidates",
         "status": "candidate_only",
         "review_rule": (
-            "Candidates require review for prefecture, source role, reporting period, "
-            "and current executive term before promotion. A missing result is not an "
+            "Candidates require exact prefecture-host, source-role, reporting-period, and "
+            "current executive-term review before registration. A missing result is not an "
             "assertion that a source does not exist."
         ),
         "records": records,
