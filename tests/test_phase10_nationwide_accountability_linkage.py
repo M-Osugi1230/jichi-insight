@@ -57,7 +57,7 @@ def test_all_prefectures_and_roles_are_reviewed_once():
 def test_registered_sources_are_prefecture_level_official_and_reachable():
     catalog = load(CATALOG_PATH)
 
-    for record, role, result in all_role_results(catalog):
+    for _record, role, result in all_role_results(catalog):
         source = result["source"]
         if result["result_status"] == "source_registered":
             assert role in {"contracts", "assembly"}
@@ -70,7 +70,10 @@ def test_registered_sources_are_prefecture_level_official_and_reachable():
                 source_host == known or source_host.endswith(f".{known}")
                 for known in result["checked_official_hosts"]
             )
-            assert all(marker not in source_host for marker in (".city.", ".town.", ".vill."))
+            assert all(
+                marker not in source_host
+                for marker in (".city.", ".town.", ".vill.")
+            )
         elif result["result_status"] == "term_verification_required":
             assert role == "executive_manifesto"
             assert result["coverage_status"] == "search_reviewed"
