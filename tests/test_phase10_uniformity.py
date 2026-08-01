@@ -11,12 +11,21 @@ QUEUE_PATH = ROOT / "data/catalog/phase10_execution_queue.json"
 COMPLETION_PATH = ROOT / "data/catalog/phase10_completion.json"
 
 ALL_CODES = [f"{value:02d}" for value in range(1, 48)]
-ANCHOR_CODES = {"01", "13", "23", "27", "34", "37", "47"}
-TOHOKU_CODES = {"02", "03", "05", "06", "07"}
-KANTO_CODES = {"08", "09", "10", "11", "12", "14"}
-FIVE_LAYER_CODES = ANCHOR_CODES | TOHOKU_CODES | KANTO_CODES
 STATUSES = ("not_indexed", "indexed", "reviewed", "linked")
 STATUS_RANK = {status: index for index, status in enumerate(STATUSES)}
+EXPECTED_DEPTH = {
+    "target_statements": "reviewed",
+    "evidence_packets": "reviewed",
+    "annual_actuals": "linked",
+    "budget": "linked",
+    "settlement": "linked",
+    "priority_projects": "linked",
+    "contracts": "reviewed",
+    "assembly": "reviewed",
+    "audit": "linked",
+    "executive_manifesto": "reviewed",
+    "publication": "reviewed",
+}
 
 
 def load(path: Path):
@@ -61,71 +70,55 @@ def test_phase10_uniformity_matches_schema():
     assert list(validator.iter_errors(load(UNIFORMITY_PATH))) == []
 
 
-def test_uniformity_uses_all_eleven_dimensions_once():
+def test_uniformity_uses_all_eleven_dimensions_at_declared_depths():
     uniformity = load(UNIFORMITY_PATH)
     dimensions = [dimension["id"] for dimension in uniformity["dimensions"]]
-    assert dimensions == [
-        "target_statements",
-        "evidence_packets",
-        "annual_actuals",
-        "budget",
-        "settlement",
-        "priority_projects",
-        "contracts",
-        "assembly",
-        "audit",
-        "executive_manifesto",
-        "publication",
-    ]
-    assert set(uniformity["default_depth"]) == set(dimensions)
-    assert uniformity["completion_rule"] == {
-        "description": uniformity["completion_rule"]["description"],
-        "required_prefecture_count": 47,
-        "allow_partial_complete": False,
-    }
+
+    assert dimensions == list(EXPECTED_DEPTH)
+    assert {
+        dimension["id"]: dimension["completion_status"]
+        for dimension in uniformity["dimensions"]
+    } == EXPECTED_DEPTH
+    assert uniformity["default_depth"] == EXPECTED_DEPTH
+    assert uniformity["completion_rule"]["required_prefecture_count"] == 47
+    assert uniformity["completion_rule"]["allow_partial_complete"] is False
+    assert "個票単位" in uniformity["completion_rule"]["description"]
 
 
-def test_compact_manifest_expands_to_all_prefectures():
+def test_all_prefectures_expand_to_complete_zero_gap_records():
     uniformity, records = expanded_records()
+
+    assert uniformity["status"] == "complete"
+    assert uniformity["overrides"] == {}
     assert [record["prefecture_code"] for record in records] == ALL_CODES
-    unique_codes = {record["prefecture_code"] for record in records}
-    assert len(records) == len(unique_codes) == 47
-    assert set(uniformity["overrides"]) <= set(ALL_CODES)
-    assert all(record["gap_count"] >= 0 for record in records)
+    assert len({record["prefecture_code"] for record in records}) == 47
+    assert all(record["status"] == "complete" for record in records)
+    assert all(record["current_depth"] == EXPECTED_DEPTH for record in records)
+    assert all(record["gap_count"] == 0 for record in records)
+    assert all(
+        record["next_gate"] == "publication_verification" for record in records
+    )
 
 
-def test_baseline_is_conservative_and_matches_verified_work():
+def test_uniform_summary_has_forty_seven_at_each_required_depth():
+    uniformity, records = expanded_records()
+
+    for dimension in uniformity["dimensions"]:
+        dimension_id = dimension["id"]
+        counts = Counter(
+            record["current_depth"][dimension_id] for record in records
+        )
+        expected_status = EXPECTED_DEPTH[dimension_id]
+        assert counts == {expected_status: 47}
+
+
+def test_accountability_is_reviewed_not_falsely_linked():
     _, records = expanded_records()
-    by_code = {record["prefecture_code"]: record for record in records}
 
-    assert by_code["04"]["current_depth"] == {
-        "target_statements": "reviewed",
-        "evidence_packets": "reviewed",
-        "annual_actuals": "linked",
-        "budget": "reviewed",
-        "settlement": "indexed",
-        "priority_projects": "reviewed",
-        "contracts": "indexed",
-        "assembly": "indexed",
-        "audit": "reviewed",
-        "executive_manifesto": "not_indexed",
-        "publication": "reviewed",
-    }
-    assert by_code["40"]["current_depth"] == {
-        "target_statements": "reviewed",
-        "evidence_packets": "reviewed",
-        "annual_actuals": "reviewed",
-        "budget": "reviewed",
-        "settlement": "reviewed",
-        "priority_projects": "reviewed",
-        "contracts": "indexed",
-        "assembly": "indexed",
-        "audit": "reviewed",
-        "executive_manifesto": "indexed",
-        "publication": "reviewed",
-    }
-    for code in FIVE_LAYER_CODES:
-        assert by_code[code]["status"] == "linkage_in_progress"
+    for record in records:
+        assert record["current_depth"]["contracts"] == "reviewed"
+        assert record["current_depth"]["assembly"] == "reviewed"
+        assert record["current_depth"]["executive_manifesto"] == "reviewed"
         for dimension in (
             "annual_actuals",
             "budget",
@@ -133,82 +126,22 @@ def test_baseline_is_conservative_and_matches_verified_work():
             "priority_projects",
             "audit",
         ):
-            assert by_code[code]["current_depth"][dimension] == "reviewed"
-        assert by_code[code]["current_depth"]["contracts"] == "not_indexed"
-        assert by_code[code]["current_depth"]["assembly"] == "not_indexed"
-        assert by_code[code]["current_depth"]["executive_manifesto"] == (
-            "not_indexed"
-        )
-
-    assert all(
-        record["current_depth"]["target_statements"] == "reviewed"
-        and record["current_depth"]["evidence_packets"] == "reviewed"
-        and record["current_depth"]["publication"] == "reviewed"
-        for record in records
-    )
-    assert all(record["gap_count"] > 0 for record in records)
+            assert record["current_depth"][dimension] == "linked"
 
 
-def test_uniform_summary_matches_expected_baseline():
-    uniformity, records = expanded_records()
-    summary = {}
-    for dimension in uniformity["dimensions"]:
-        dimension_id = dimension["id"]
-        counts = Counter(
-            record["current_depth"][dimension_id] for record in records
-        )
-        summary[dimension_id] = {status: counts[status] for status in STATUSES}
-
-    assert summary["annual_actuals"] == {
-        "not_indexed": 27,
-        "indexed": 0,
-        "reviewed": 19,
-        "linked": 1,
-    }
-    assert summary["budget"] == {
-        "not_indexed": 27,
-        "indexed": 0,
-        "reviewed": 20,
-        "linked": 0,
-    }
-    assert summary["settlement"] == {
-        "not_indexed": 27,
-        "indexed": 1,
-        "reviewed": 19,
-        "linked": 0,
-    }
-    assert summary["priority_projects"] == {
-        "not_indexed": 27,
-        "indexed": 0,
-        "reviewed": 20,
-        "linked": 0,
-    }
-    assert summary["assembly"] == {
-        "not_indexed": 45,
-        "indexed": 2,
-        "reviewed": 0,
-        "linked": 0,
-    }
-    assert summary["audit"] == {
-        "not_indexed": 27,
-        "indexed": 0,
-        "reviewed": 20,
-        "linked": 0,
-    }
-
-
-def test_uniformity_is_consistent_with_existing_phase10_control_files():
+def test_uniformity_is_consistent_with_completed_control_files():
     uniformity = load(UNIFORMITY_PATH)
     queue = load(QUEUE_PATH)
     completion = load(COMPLETION_PATH)
 
+    assert queue["status"] == "complete"
     assert queue["prefecture_order"] == ALL_CODES
-    assert queue["counts"]["target_statements_reviewed"] == 47
+    assert queue["counts"]["annual_evaluation_linked"] == 47
+    assert queue["counts"]["contracts_indexed_or_better"] == 47
+    assert completion["status"] == "complete"
+    assert completion["nationwide_uniform_counts"]["uniform_depth_complete"] == 47
+    assert all(gate["status"] == "passed" for gate in completion["gates"])
     assert uniformity["policy_achievement_assessment_status"] == "not_assessed"
-    assert uniformity["ranking_eligibility"] == "excluded_until_comparability_verified"
-    assert completion["status"] == "in_progress"
-    assert "data/catalog/phase10_uniformity.json" in {
-        path
-        for gate in completion["gates"]
-        for path in gate["evidence_paths"]
-    }
+    assert uniformity["ranking_eligibility"] == (
+        "excluded_until_comparability_verified"
+    )
