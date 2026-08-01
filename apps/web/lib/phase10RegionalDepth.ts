@@ -45,6 +45,24 @@ export type RegionalDepthReviews = {
   updated_at: string;
 };
 
+export type RegionalDepthBatch = {
+  slug: string;
+  label: string;
+  region: string;
+  filename: string;
+  route: string;
+  prefecture_codes: string[];
+};
+
+export type RegionalDepthIndex = {
+  id: "phase10-regional-depth-index";
+  phase: 10;
+  status: "in_progress" | "complete";
+  batches: RegionalDepthBatch[];
+  reviewed_prefecture_count: number;
+  updated_at: string;
+};
+
 function findDataRoot(): string {
   const candidates = [
     path.resolve(process.cwd(), "data"),
@@ -53,21 +71,49 @@ function findDataRoot(): string {
   return candidates.find((candidate) => fs.existsSync(candidate)) ?? candidates[0];
 }
 
+function loadCatalog<T>(filename: string): T {
+  const catalogPath = path.join(findDataRoot(), "catalog", filename);
+  return JSON.parse(fs.readFileSync(catalogPath, "utf-8")) as T;
+}
+
 export function loadPhase10RegionalDepth(
   filename: string,
 ): RegionalDepthReviews {
-  const catalogPath = path.join(findDataRoot(), "catalog", filename);
-  return JSON.parse(
-    fs.readFileSync(catalogPath, "utf-8"),
-  ) as RegionalDepthReviews;
+  return loadCatalog<RegionalDepthReviews>(filename);
+}
+
+export function loadPhase10RegionalDepthIndex(): RegionalDepthIndex {
+  return loadCatalog<RegionalDepthIndex>("phase10_regional_depth_index.json");
+}
+
+export function loadPhase10RegionalDepthBySlug(
+  slug: string,
+): RegionalDepthReviews {
+  const batch = loadPhase10RegionalDepthIndex().batches.find(
+    (candidate) => candidate.slug === slug,
+  );
+  if (!batch) {
+    throw new Error(`Unknown Phase 10 regional depth batch: ${slug}`);
+  }
+  return loadPhase10RegionalDepth(batch.filename);
+}
+
+export function loadAllPhase10RegionalDepth(): RegionalDepthReviews[] {
+  return loadPhase10RegionalDepthIndex().batches.map((batch) =>
+    loadPhase10RegionalDepth(batch.filename),
+  );
 }
 
 export function loadPhase10TohokuDepth(): RegionalDepthReviews {
-  return loadPhase10RegionalDepth("phase10_tohoku_depth_reviews.json");
+  return loadPhase10RegionalDepthBySlug("tohoku");
 }
 
 export function loadPhase10KantoDepth(): RegionalDepthReviews {
-  return loadPhase10RegionalDepth("phase10_kanto_depth_reviews.json");
+  return loadPhase10RegionalDepthBySlug("kanto");
+}
+
+export function loadPhase10ChubuDepth(): RegionalDepthReviews {
+  return loadPhase10RegionalDepthBySlug("chubu");
 }
 
 export const regionalDepthLabels: Record<RegionalDepthDimension, string> = {

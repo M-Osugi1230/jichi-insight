@@ -11,6 +11,7 @@ def test_tohoku_depth_page_publishes_review_evidence_and_boundaries():
     page = read("apps/web/app/municipalities/phase10/tohoku/page.tsx")
     css = read("apps/web/app/municipalities/phase10/tohoku/page.module.css")
     loader = read("apps/web/lib/phase10RegionalDepth.ts")
+    index = read("data/catalog/phase10_regional_depth_index.json")
 
     for required in (
         "東北5県も、同じ5層をReviewed化。",
@@ -21,8 +22,9 @@ def test_tohoku_depth_page_publishes_review_evidence_and_boundaries():
     ):
         assert required in page
 
-    assert "phase10_tohoku_depth_reviews.json" in loader
+    assert "phase10_tohoku_depth_reviews.json" in index
     assert "loadPhase10TohokuDepth" in loader
+    assert "loadPhase10RegionalDepthBySlug" in loader
     assert "regionalDepthLabels" in loader
     assert ".prefectureGrid" in css
     assert ".sourceList" in css

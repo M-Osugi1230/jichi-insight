@@ -88,17 +88,17 @@ def test_kanto_review_promotes_only_reviewed_depth():
         }
 
 
-def test_kanto_review_updates_nationwide_counts_without_completion():
+def test_kanto_review_remains_registered_after_later_batches():
     completion = load(COMPLETION_PATH)
     counts = completion["nationwide_uniform_counts"]
 
-    assert counts["prefectures_with_five_layers_indexed_or_better"] == 20
-    assert counts["prefectures_with_five_layers_reviewed"] == 19
-    assert counts["annual_actuals_reviewed_or_better"] == 20
-    assert counts["budget_reviewed_or_better"] == 20
-    assert counts["settlement_reviewed_or_better"] == 19
-    assert counts["priority_projects_reviewed_or_better"] == 20
-    assert counts["audit_reviewed_or_better"] == 20
+    assert counts["prefectures_with_five_layers_indexed_or_better"] >= 20
+    assert counts["prefectures_with_five_layers_reviewed"] >= 19
+    assert counts["annual_actuals_reviewed_or_better"] >= 20
+    assert counts["budget_reviewed_or_better"] >= 20
+    assert counts["settlement_reviewed_or_better"] >= 19
+    assert counts["priority_projects_reviewed_or_better"] >= 20
+    assert counts["audit_reviewed_or_better"] >= 20
     assert counts["uniform_depth_complete"] == 0
     assert completion["status"] == "in_progress"
 
