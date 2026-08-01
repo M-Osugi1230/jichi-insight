@@ -19,6 +19,7 @@ const staticRoutes = [
   "/municipalities/phase9",
   "/municipalities/phase10",
   "/municipalities/phase10/tohoku",
+  "/municipalities/phase10/kanto",
   "/municipalities/hokkaido",
   "/municipalities/miyagi",
   "/municipalities/tokyo",
