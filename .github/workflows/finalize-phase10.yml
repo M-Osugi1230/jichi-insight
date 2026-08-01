@@ -5,6 +5,7 @@ on:
     branches:
       - agent/phase10-progress-sync
     paths:
+      - .github/workflows/finalize-phase10.yml
       - data/catalog/phase10_nationwide_core_linkage.json
       - data/catalog/phase10_nationwide_accountability_linkage.json
   workflow_dispatch:
@@ -19,6 +20,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.ref_name }}
+          fetch-depth: 0
       - name: Finalize canonical Phase 10 state
         run: |
           python scripts/finalize_phase10.py
@@ -41,4 +43,5 @@ jobs:
             docs/ROADMAP.md \
             docs/PHASE10_VERTICAL_LINKAGE.md
           git commit -m "Finalize Phase 10 nationwide completion"
+          git pull --rebase origin ${{ github.ref_name }}
           git push origin HEAD:${{ github.ref_name }}
