@@ -273,9 +273,16 @@ def main() -> None:
         "prefecture_code": "40",
         "status": "candidate_review",
         "sources": {
-            "evaluation": "https://www.pref.fukuoka.lg.jp/uploaded/life/810515_62838386_misc.pdf",
-            "budget": "https://www.pref.fukuoka.lg.jp/uploaded/attachment/278132.pdf",
-            "settlement": "https://www.pref.fukuoka.lg.jp/uploaded/attachment/272597.pdf",
+            "evaluation": (
+                "https://www.pref.fukuoka.lg.jp/uploaded/life/"
+                "810515_62838386_misc.pdf"
+            ),
+            "budget": (
+                "https://www.pref.fukuoka.lg.jp/uploaded/attachment/278132.pdf"
+            ),
+            "settlement": (
+                "https://www.pref.fukuoka.lg.jp/uploaded/attachment/272597.pdf"
+            ),
         },
         "evaluated_project_count": len(projects),
         "target_catalog_count": len(targets),
@@ -287,7 +294,10 @@ def main() -> None:
             "partial_record_count": status_counts["partial"],
             "not_linked_record_count": status_counts["not_linked"],
         },
-        "promotion_rule": "candidate-only until department, office, plan initiative, and fiscal-year identity are reviewed",
+        "promotion_rule": (
+            "candidate-only until department, office, plan initiative, "
+            "and fiscal-year identity are reviewed"
+        ),
         "evaluation_status": "not_assessed",
         "updated_at": "2026-08-01",
     }
