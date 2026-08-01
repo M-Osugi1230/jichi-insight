@@ -18,6 +18,7 @@ const staticRoutes = [
   "/municipalities",
   "/municipalities/phase9",
   "/municipalities/phase10",
+  "/municipalities/phase10/fukuoka-actuals",
   "/municipalities/phase10/tohoku",
   "/municipalities/phase10/kanto",
   "/municipalities/phase10/chubu",
