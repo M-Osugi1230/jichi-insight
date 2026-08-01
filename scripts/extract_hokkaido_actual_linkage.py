@@ -2,8 +2,8 @@
 """Create reviewed Hokkaido annual-actual linkage records.
 
 The official indicator number is the primary key. Indicators with a revised name,
-target version, or component structure remain Partial and are never promoted by
-position alone.
+target version, unit scale, or component structure remain Partial and are never
+promoted by position alone.
 """
 
 from __future__ import annotations
@@ -17,7 +17,7 @@ from pathlib import Path
 
 import pdfplumber
 
-PARTIAL_NUMBERS = {6, 10, 21, *range(31, 40), 65, 107, 108}
+PARTIAL_NUMBERS = {4, 6, 10, 21, 23, *range(31, 40), 49, 65, 107, 108}
 
 
 def clean(value: object) -> str:
@@ -129,6 +129,8 @@ def actual_components(indicator: dict, row: dict) -> list[dict]:
 
 
 def partial_reason(number: int) -> str:
+    if number in {4, 23, 49}:
+        return "unit_scale_changed_or_requires_conversion"
     if number in {6, 10, 21}:
         return "target_version_changed"
     if 31 <= number <= 39 or number == 65:
@@ -193,8 +195,8 @@ def build_records(indicators: list[dict], rows: dict[int, list[dict]]) -> list[d
                     "公式指標番号、指標名、単位、構成系列を確認し、年度実績を接続した。"
                     "実績値から政策の達成・未達は判定しない。"
                     if status == "linked"
-                    else "公式指標番号は存在するが、指標定義、目標版、または構成系列が"
-                    "現行Reviewedカタログと一致しないため実績を接続しない。"
+                    else "公式指標番号は存在するが、指標定義、目標版、単位スケール、または"
+                    "構成系列が現行Reviewedカタログと一致しないため実績を接続しない。"
                 ),
             }
         )
