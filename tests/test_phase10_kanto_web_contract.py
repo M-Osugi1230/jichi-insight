@@ -10,6 +10,7 @@ def read(path: str) -> str:
 def test_kanto_depth_page_publishes_review_evidence_and_boundaries():
     page = read("apps/web/app/municipalities/phase10/kanto/page.tsx")
     loader = read("apps/web/lib/phase10RegionalDepth.ts")
+    index = read("data/catalog/phase10_regional_depth_index.json")
     shared_css = read(
         "apps/web/app/municipalities/phase10/tohoku/page.module.css"
     )
@@ -23,8 +24,9 @@ def test_kanto_depth_page_publishes_review_evidence_and_boundaries():
     ):
         assert required in page
 
-    assert "phase10_kanto_depth_reviews.json" in loader
+    assert "phase10_kanto_depth_reviews.json" in index
     assert "loadPhase10KantoDepth" in loader
+    assert "loadPhase10RegionalDepthBySlug" in loader
     assert "regionalDepthLabels" in loader
     assert ".prefectureGrid" in shared_css
     assert ".sourceList" in shared_css
