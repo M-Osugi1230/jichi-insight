@@ -7,16 +7,18 @@ on:
     paths:
       - .github/workflows/extract-hokkaido-actual-candidates.yml
       - scripts/extract_hokkaido_actual_candidates.py
+      - scripts/extract_hokkaido_actual_linkage.py
   pull_request:
     branches:
       - main
     paths:
       - .github/workflows/extract-hokkaido-actual-candidates.yml
       - scripts/extract_hokkaido_actual_candidates.py
+      - scripts/extract_hokkaido_actual_linkage.py
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   extract:
@@ -43,10 +45,31 @@ jobs:
             --pdf /tmp/hokkaido-direction-2.pdf \
             --pdf /tmp/hokkaido-direction-3.pdf \
             --catalog-root data/entities/policy \
-            --output-dir extracted-hokkaido-actuals
+            --output-dir extracted-hokkaido-candidates
+      - name: Create reviewed linkage registry
+        run: |
+          python scripts/extract_hokkaido_actual_linkage.py \
+            --pdf /tmp/hokkaido-direction-1.pdf \
+            --pdf /tmp/hokkaido-direction-2.pdf \
+            --pdf /tmp/hokkaido-direction-3.pdf \
+            --catalog-root data/entities/policy \
+            --output-dir extracted-hokkaido-reviewed
+      - name: Commit reviewed registries
+        if: github.event_name == 'push'
+        run: |
+          cp extracted-hokkaido-reviewed/hokkaido_annual_actual_linkage*.json data/catalog/
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/catalog/hokkaido_annual_actual_linkage*.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: update Hokkaido annual actual linkage"
+            git push
+          fi
       - uses: actions/upload-artifact@v4
         with:
           name: hokkaido-annual-actual-candidates
-          path: extracted-hokkaido-actuals
+          path: |
+            extracted-hokkaido-candidates
+            extracted-hokkaido-reviewed
           if-no-files-found: error
           retention-days: 7
