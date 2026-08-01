@@ -270,6 +270,17 @@ export type Phase10AnchorReviews = {
   updated_at: string;
 };
 
+type RegionalDepthIndex = {
+  batches: Array<{ filename: string }>;
+};
+
+type RegionalDepthReviews = {
+  records: Array<{
+    prefecture_code: string;
+    next_linkage: string;
+  }>;
+};
+
 const prefectures = [
   ["01", "北海道", "北海道"],
   ["02", "青森県", "東北"],
@@ -346,7 +357,32 @@ export function loadPhase10Queue(): Phase10Queue {
 }
 
 export function loadPhase10Uniformity(): Phase10Uniformity {
-  return loadCatalog<Phase10Uniformity>("phase10_uniformity.json");
+  const uniformity = loadCatalog<Phase10Uniformity>("phase10_uniformity.json");
+  const index = loadCatalog<RegionalDepthIndex>(
+    "phase10_regional_depth_index.json",
+  );
+
+  for (const batch of index.batches) {
+    const reviews = loadCatalog<RegionalDepthReviews>(batch.filename);
+    for (const record of reviews.records) {
+      const existing = uniformity.overrides[record.prefecture_code];
+      uniformity.overrides[record.prefecture_code] = {
+        status: existing?.status ?? "linkage_in_progress",
+        current_depth: {
+          ...(existing?.current_depth ?? {}),
+          annual_actuals: "reviewed",
+          budget: "reviewed",
+          settlement: "reviewed",
+          priority_projects: "reviewed",
+          audit: "reviewed",
+        },
+        next_gate: existing?.next_gate ?? "annual_actuals_linkage",
+        next_action: existing?.next_action ?? record.next_linkage,
+      };
+    }
+  }
+
+  return uniformity;
 }
 
 export function phase10UniformRecords(
