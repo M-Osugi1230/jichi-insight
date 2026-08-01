@@ -11,6 +11,7 @@ def test_chubu_page_publishes_reviewed_sources_and_boundaries():
     page = read("apps/web/app/municipalities/phase10/chubu/page.tsx")
     loader = read("apps/web/lib/phase10RegionalDepth.ts")
     phase10_loader = read("apps/web/lib/phase10.ts")
+    uniformity = read("data/catalog/phase10_uniformity.json")
 
     for required in (
         "中部8県も、同じ5層をReviewed化。",
@@ -24,8 +25,9 @@ def test_chubu_page_publishes_reviewed_sources_and_boundaries():
     assert "loadPhase10ChubuDepth" in loader
     assert "phase10_regional_depth_index.json" in loader
     assert "phase10_regional_depth_index.json" in phase10_loader
-    assert "annual_actuals: \"reviewed\"" in phase10_loader
-    assert "settlement: \"reviewed\"" in phase10_loader
+    assert "atLeastDepth" in phase10_loader
+    assert '"annual_actuals": "linked"' in uniformity
+    assert '"settlement": "linked"' in uniformity
 
 
 def test_chubu_route_is_linked_and_indexed():
