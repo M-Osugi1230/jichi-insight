@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
-import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import asdict, dataclass
 from pathlib import Path
 from urllib.parse import parse_qs, quote_plus, unquote, urlparse
@@ -54,16 +54,13 @@ ROLE_CONFIG = {
         "negative": ("市長", "町長", "村長", "議員"),
     },
 }
-SESSION = requests.Session()
-SESSION.headers.update(
-    {
-        "User-Agent": (
-            "JichiInsightPhase10SourceDiscovery/1.1 "
-            "(+https://github.com/M-Osugi1230/jichi-insight)"
-        ),
-        "Accept-Language": "ja,en;q=0.5",
-    }
-)
+HEADERS = {
+    "User-Agent": (
+        "JichiInsightPhase10SourceDiscovery/1.2 "
+        "(+https://github.com/M-Osugi1230/jichi-insight)"
+    ),
+    "Accept-Language": "ja,en;q=0.5",
+}
 
 
 @dataclass(frozen=True)
@@ -117,9 +114,10 @@ def unwrap(url: str) -> str:
 
 
 def search(query: str, limit: int = 12) -> list[tuple[str, str]]:
-    response = SESSION.get(
+    response = requests.get(
         f"https://html.duckduckgo.com/html/?q={quote_plus(query)}",
         timeout=20,
+        headers=HEADERS,
     )
     response.raise_for_status()
     soup = BeautifulSoup(response.text, "html.parser")
@@ -153,11 +151,11 @@ def score(url: str, title: str, prefecture: str, role: str) -> int:
 
 def verify(url: str) -> tuple[str, int | None]:
     try:
-        response = SESSION.get(
+        response = requests.get(
             url,
             timeout=10,
             allow_redirects=True,
-            headers={"Range": "bytes=0-150000"},
+            headers={**HEADERS, "Range": "bytes=0-150000"},
         )
     except requests.RequestException:
         return "", None
@@ -191,7 +189,6 @@ def ranked_results(
             continue
         if raw:
             break
-        time.sleep(0.05)
 
     preliminary = sorted(
         (
@@ -219,6 +216,14 @@ def ranked_results(
     return sorted(candidates, key=lambda item: (-item.score, item.url))[:3]
 
 
+def discover_task(
+    code: str,
+    role: str,
+    official_hosts: dict[str, set[str]],
+) -> tuple[str, str, list[Candidate]]:
+    return code, role, ranked_results(PREFECTURES[code], role, official_hosts[code])
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", type=Path, required=True)
@@ -227,12 +232,26 @@ def main() -> None:
     args = parser.parse_args()
 
     official_hosts = known_hosts()
+    results: dict[tuple[str, str], list[Candidate]] = {}
+    tasks = [(code, role) for code in args.codes for role in ROLE_CONFIG]
+    with ThreadPoolExecutor(max_workers=6) as executor:
+        futures = {
+            executor.submit(discover_task, code, role, official_hosts): (code, role)
+            for code, role in tasks
+        }
+        for future in as_completed(futures):
+            code, role = futures[future]
+            try:
+                _, _, candidates = future.result()
+            except Exception:
+                candidates = []
+            results[(code, role)] = candidates
+
     records = []
     for code in args.codes:
-        prefecture = PREFECTURES[code]
         roles = {}
         for role in ROLE_CONFIG:
-            candidates = ranked_results(prefecture, role, official_hosts[code])
+            candidates = results[(code, role)]
             roles[role] = {
                 "status": "candidate_found" if candidates else "not_found",
                 "candidates": [asdict(item) for item in candidates],
@@ -240,7 +259,7 @@ def main() -> None:
         records.append(
             {
                 "prefecture_code": code,
-                "name": prefecture,
+                "name": PREFECTURES[code],
                 "known_official_hosts": sorted(official_hosts[code]),
                 "roles": roles,
             }
