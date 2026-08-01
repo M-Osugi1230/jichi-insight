@@ -14,6 +14,13 @@ def load(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def series_values(records: dict[int, dict], number: int) -> list[tuple[str, str]]:
+    return [
+        (item["actual_value_text"], item["actual_period"])
+        for item in records[number]["linked_series"]
+    ]
+
+
 def test_tokyo_children_linkage_matches_schema():
     validator = Draft202012Validator(
         load(SCHEMA_PATH), format_checker=FormatChecker()
@@ -55,21 +62,29 @@ def test_six_groups_and_seven_series_are_linked_conservatively():
 
 def test_linked_values_and_periods_match_the_same_2050_tokyo_strategy_series():
     records = {
-        record["target_group_number"]: record for record in load(CATALOG_PATH)["records"]
+        record["target_group_number"]: record
+        for record in load(CATALOG_PATH)["records"]
     }
 
-    assert [(item["actual_value_text"], item["actual_period"]) for item in records[1]["linked_series"]] == [("64.3", "2025年")]
-    assert [(item["actual_value_text"], item["actual_period"]) for item in records[2]["linked_series"]] == [("44.6", "2025年")]
-    assert [(item["actual_value_text"], item["actual_period"]) for item in records[3]["linked_series"]] == [("55.0", "2025年")]
-    assert [(item["actual_value_text"], item["actual_period"]) for item in records[5]["linked_series"]] == [("17.5", "2023年")]
-    assert [(item["actual_value_text"], item["actual_period"]) for item in records[6]["linked_series"]] == [("64.2", "2022年"), ("33.9", "2022年")]
-    assert [(item["actual_value_text"], item["actual_period"]) for item in records[8]["linked_series"]] == [("14", "2024年")]
-    assert all("達成・未達は判定しない" in records[number]["boundary"] for number in (1, 2, 3, 5, 6, 8))
+    assert series_values(records, 1) == [("64.3", "2025年")]
+    assert series_values(records, 2) == [("44.6", "2025年")]
+    assert series_values(records, 3) == [("55.0", "2025年")]
+    assert series_values(records, 5) == [("17.5", "2023年")]
+    assert series_values(records, 6) == [
+        ("64.2", "2022年"),
+        ("33.9", "2022年"),
+    ]
+    assert series_values(records, 8) == [("14", "2024年")]
+    assert all(
+        "達成・未達は判定しない" in records[number]["boundary"]
+        for number in (1, 2, 3, 5, 6, 8)
+    )
 
 
 def test_two_document_conflicts_remain_partial_without_overwrite():
     records = {
-        record["target_group_number"]: record for record in load(CATALOG_PATH)["records"]
+        record["target_group_number"]: record
+        for record in load(CATALOG_PATH)["records"]
     }
 
     assert records[4]["partial_reason"] == "reporting_period_conflict"
@@ -93,7 +108,11 @@ def test_two_document_conflicts_remain_partial_without_overwrite():
 def test_target_and_review_documents_are_same_strategy_but_separate_versions():
     linkage = load(CATALOG_PATH)
 
-    assert linkage["target_source_version"] == "2050東京戦略 政策目標一覧（令和8年1月）"
-    assert linkage["review_source_version"] == "2050東京戦略 政策レビュー（2025年8月）"
+    assert linkage["target_source_version"] == (
+        "2050東京戦略 政策目標一覧（令和8年1月）"
+    )
+    assert linkage["review_source_version"] == (
+        "2050東京戦略 政策レビュー（2025年8月）"
+    )
     assert "2050tokyo-seisakumokuhyo2026" in linkage["target_source_url"]
     assert "policy-review_2025" in linkage["review_source_url"]
