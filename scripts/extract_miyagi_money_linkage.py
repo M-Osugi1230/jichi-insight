@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Extract Miyagi measure/project money candidates from two official PDFs.
+"""Extract and conservatively classify Miyagi project-money linkages.
 
-The output is candidate-only. It does not mark any budget or settlement record as
-linked until measure, project name, department, office, and period are reviewed.
+The extractor links only exact project-name matches with the same normalized
+responsible department and office. Multiple appearances, organization changes,
+renamed projects, and new projects remain Partial or Not linked.
 """
 
 from __future__ import annotations
@@ -25,6 +26,10 @@ def clean(value) -> str:
 def normalize(value: str) -> str:
     value = unicodedata.normalize("NFKC", value)
     return re.sub(r"[\s・･()（）\[\]［］「」『』,，.。:：/／-]", "", value)
+
+
+def normalize_organization(value: str) -> str:
+    return re.sub(r"\s+", "", unicodedata.normalize("NFKC", value or ""))
 
 
 def parse_amount(value: str) -> int | None:
@@ -60,8 +65,11 @@ def extract_budget(path: Path) -> list[dict]:
                 for row_index, row in enumerate(rows[1:], start=1):
                     if len(row) < 7:
                         continue
-                    number, name, description, department, office, period, amount = row[:7]
-                    if not name or not parse_amount(amount):
+                    number, name, description, department, office, period, amount = (
+                        row[:7]
+                    )
+                    parsed_amount = parse_amount(amount)
+                    if not name or parsed_amount is None:
                         continue
                     records.append(
                         {
@@ -78,7 +86,7 @@ def extract_budget(path: Path) -> list[dict]:
                             "department": department,
                             "office": office,
                             "implementation_period": period,
-                            "amount_thousand_yen": parse_amount(amount),
+                            "amount_thousand_yen": parsed_amount,
                             "amount_text": amount,
                         }
                     )
@@ -103,7 +111,8 @@ def extract_settlement(path: Path) -> list[dict]:
                     if len(row) < 6:
                         continue
                     number, name, department, office, amount, evidence = row[:6]
-                    if not name or not parse_amount(amount):
+                    parsed_amount = parse_amount(amount)
+                    if not name or parsed_amount is None:
                         continue
                     records.append(
                         {
@@ -118,7 +127,7 @@ def extract_settlement(path: Path) -> list[dict]:
                             "project_name_normalized": normalize(name),
                             "department": department,
                             "office": office,
-                            "amount_thousand_yen": parse_amount(amount),
+                            "amount_thousand_yen": parsed_amount,
                             "amount_text": amount,
                             "result_evidence": evidence,
                         }
@@ -132,25 +141,62 @@ def match_candidates(budget: list[dict], settlement: list[dict]) -> list[dict]:
         by_name.setdefault(record["project_name_normalized"], []).append(record)
 
     candidates = []
-    for record in budget:
-        matches = by_name.get(record["project_name_normalized"], [])
-        reviewed_candidates = [
+    for index, budget_record in enumerate(budget, start=1):
+        name_matches = by_name.get(budget_record["project_name_normalized"], [])
+        organization_matches = [
             match
-            for match in matches
-            if record["measure_number"] == match["measure_number"]
-            and (not record["department"] or record["department"] == match["department"])
+            for match in name_matches
+            if normalize_organization(budget_record["department"])
+            == normalize_organization(match["department"])
+            and normalize_organization(budget_record["office"])
+            == normalize_organization(match["office"])
         ]
+
+        if len(organization_matches) == 1:
+            status = "linked"
+            match_basis = "exact_project_name_department_office"
+            selected = organization_matches[0]
+            candidates_for_review = []
+        elif len(name_matches) == 1:
+            status = "partial"
+            match_basis = "exact_project_name_organization_changed"
+            selected = None
+            candidates_for_review = name_matches
+        elif len(name_matches) > 1:
+            status = "partial"
+            match_basis = "exact_project_name_multiple_measure_candidates"
+            selected = None
+            candidates_for_review = name_matches
+        else:
+            status = "not_linked"
+            match_basis = "exact_project_name_not_found"
+            selected = None
+            candidates_for_review = []
+
+        effective_measure = (
+            selected["measure_number"] if selected is not None else None
+        )
         candidates.append(
             {
-                "budget_record": record,
-                "candidate_status": (
-                    "single_candidate"
-                    if len(reviewed_candidates) == 1
-                    else "multiple_candidates"
-                    if reviewed_candidates
-                    else "not_found"
+                "id": f"miyagi-project-money-candidate-{index:04d}",
+                "linkage_status": status,
+                "match_basis": match_basis,
+                "measure_id": (
+                    f"miyagi-prefecture-policy-measure-{effective_measure:02d}"
+                    if effective_measure is not None
+                    else None
                 ),
-                "settlement_candidates": reviewed_candidates,
+                "budget_record": budget_record,
+                "settlement_record": selected,
+                "settlement_candidates": candidates_for_review,
+                "boundary": (
+                    "同一事業名・部局・担当課を確認したが、令和8年度予算額と"
+                    "令和6年度決算額は別年度の別金額として保持し、成果評価へ"
+                    "自動変換しない。"
+                    if status == "linked"
+                    else "同一施策・同一事業として確定できないため、改称、組織変更、"
+                    "複数施策への再掲、新規事業の可能性を追加確認する。"
+                ),
             }
         )
     return candidates
@@ -168,16 +214,31 @@ def main() -> None:
     settlement = extract_settlement(args.settlement_pdf)
     candidates = match_candidates(budget, settlement)
     status_counts = {
-        status: sum(item["candidate_status"] == status for item in candidates)
-        for status in ("single_candidate", "multiple_candidates", "not_found")
+        status: sum(item["linkage_status"] == status for item in candidates)
+        for status in ("linked", "partial", "not_linked")
+    }
+    basis_counts = {
+        basis: sum(item["match_basis"] == basis for item in candidates)
+        for basis in (
+            "exact_project_name_department_office",
+            "exact_project_name_organization_changed",
+            "exact_project_name_multiple_measure_candidates",
+            "exact_project_name_not_found",
+        )
     }
     summary = {
-        "budget_source_url": "https://www.pref.miyagi.jp/documents/59763/r7hanneijyoukyousetumeisyo.pdf",
-        "settlement_source_url": "https://www.pref.miyagi.jp/documents/59769/r7-seikatohyouka_1.pdf",
+        "budget_source_url": (
+            "https://www.pref.miyagi.jp/documents/59763/"
+            "r7hanneijyoukyousetumeisyo.pdf"
+        ),
+        "settlement_source_url": (
+            "https://www.pref.miyagi.jp/documents/59769/r7-seikatohyouka_1.pdf"
+        ),
         "budget_record_count": len(budget),
         "settlement_record_count": len(settlement),
-        "candidate_status_counts": status_counts,
-        "promotion_policy": "candidate_only_no_automatic_linkage",
+        "linkage_status_counts": status_counts,
+        "match_basis_counts": basis_counts,
+        "promotion_policy": "exact_name_department_office_only",
     }
 
     for filename, value in (
