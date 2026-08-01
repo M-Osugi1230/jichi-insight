@@ -201,7 +201,8 @@ def finalize_completion() -> None:
         "prefecture-level official source entrance or an explicit official-host search outcome; a "
         "missing stable source is never treated as proof of nonexistence. Publication is Reviewed. "
         "Record-level one-to-one linkage is deeper in Hokkaido, Miyagi, Tokyo, and Fukuoka and "
-        "continues separately. No policy-achievement assessment or cross-prefecture ranking is made."
+        "continues separately. No policy-achievement assessment or "
+        "cross-prefecture ranking is made."
     )
     payload["updated_at"] = TODAY
     write(path, payload)
