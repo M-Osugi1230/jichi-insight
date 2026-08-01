@@ -22,6 +22,7 @@ export type HokkaidoActualRecord = {
   linkage_status: HokkaidoActualStatus;
   partial_reason:
     | "target_version_changed"
+    | "unit_scale_changed_or_requires_conversion"
     | "indicator_definition_or_numbering_changed"
     | "component_structure_changed"
     | null;
@@ -57,6 +58,9 @@ export function partialReasonLabel(
   reason: HokkaidoActualRecord["partial_reason"],
 ): string {
   if (reason === "target_version_changed") return "目標版が変更";
+  if (reason === "unit_scale_changed_or_requires_conversion") {
+    return "単位スケールの換算が必要";
+  }
   if (reason === "component_structure_changed") return "構成系列が変更";
   if (reason === "indicator_definition_or_numbering_changed") {
     return "指標定義・番号体系が変更";
