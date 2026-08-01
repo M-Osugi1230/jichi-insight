@@ -17,7 +17,7 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
   title: "北海道 108指標の年度実績接続｜Phase 10",
   description:
-    "北海道総合計画の108指標を令和6年度推進状況へ照合し、年度実績へ接続した指標と版・定義変更を分けて公開します。",
+    "北海道総合計画の108指標を令和6年度推進状況へ照合し、年度実績へ接続した指標と版・定義・単位変更を分けて公開します。",
 };
 
 export const dynamic = "force-static";
@@ -66,7 +66,7 @@ export default function HokkaidoAnnualActualsPage() {
           <article data-status="partial">
             <span>接続保留</span>
             <strong>{summary.partial_record_count}</strong>
-            <p>指標改定・目標版変更・系列構成変更を確認。</p>
+            <p>指標改定・単位換算・目標版・系列変更を確認。</p>
           </article>
           <article>
             <span>政策達成判定</span>
@@ -78,11 +78,11 @@ export default function HokkaidoAnnualActualsPage() {
         <section className={styles.boundary}>
           <div>
             <p className="eyebrow">Evidence boundary</p>
-            <h2>同じ番号でも、定義が違えばつながない。</h2>
+            <h2>同じ番号でも、定義や単位が違えばつながない。</h2>
           </div>
           <div>
             <p>
-              15件は、現行カタログとの目標版、指標定義、番号体系、構成系列の違いを確認したためPartialに留めています。
+              {summary.partial_record_count}件は、現行カタログとの目標版、指標定義、番号体系、単位スケール、構成系列の違いを確認したためPartialに留めています。
             </p>
             <p>
               実績が掲載されていても、目標値との単純比較から政策の成功・失敗や都道府県ランキングを生成しません。
@@ -154,7 +154,7 @@ export default function HokkaidoAnnualActualsPage() {
             <p className="eyebrow">Next linkage</p>
             <h2>基本評価調書の事務事業を、予算・決算へ接続する。</h2>
             <p>
-              年度実績へ接続した93指標を起点に、施策を構成する事務事業、令和8年度予算、令和6年度決算、監査記録の共通ID化へ進みます。
+              年度実績へ接続した{summary.linked_record_count}指標を起点に、施策を構成する事務事業、令和8年度予算、令和6年度決算、監査記録の共通ID化へ進みます。
             </p>
           </div>
           <Link className="primaryAction" href="/municipalities/phase10">
