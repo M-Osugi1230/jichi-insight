@@ -41,13 +41,15 @@ jobs:
           page = "https://www.pref.fukuoka.lg.jp/contents/kessan.html"
           response = requests.get(page, timeout=60)
           response.raise_for_status()
+          response.encoding = "utf-8"
           soup = BeautifulSoup(response.text, "html.parser")
           links = [
               link for link in soup.find_all("a", href=True)
               if "主要施策の成果に関する説明書" in link.get_text(" ", strip=True)
           ]
           if not links:
-              raise SystemExit("FY2024 major-policy-results PDF was not found")
+              samples = [link.get_text(" ", strip=True) for link in soup.find_all("a")]
+              raise SystemExit(f"FY2024 major-policy-results PDF was not found: {samples[-20:]}")
           url = urljoin(page, links[0]["href"])
           pdf = requests.get(url, timeout=120)
           pdf.raise_for_status()
