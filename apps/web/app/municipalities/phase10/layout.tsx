@@ -11,6 +11,7 @@ export default function Phase10Layout({ children }: { children: ReactNode }) {
           <span>PHASE 10</span>
           <Link href="/municipalities/phase10">全国深度マトリクス</Link>
           <Link href="/municipalities/phase10/hokkaido-actuals">北海道108指標の実績接続</Link>
+          <Link href="/municipalities/phase10/tokyo-children-actuals">東京都子供分野8目標の実績接続</Link>
           <Link href="/municipalities/phase10/miyagi-money">宮城県627事業の予算・決算接続</Link>
           <Link href="/municipalities/phase10/fukuoka-actuals">福岡県118目標の実績接続</Link>
           <Link href="/municipalities/phase10/fukuoka-projects">福岡県266重点事業の接続候補</Link>
