@@ -49,6 +49,7 @@ DEEPER_EVIDENCE = {
         "tests/test_hokkaido_annual_actual_linkage.py",
     ],
     "04": [
+        "data/catalog/miyagi_policy_review_manifest.json",
         "data/catalog/miyagi_project_money_linkage_index.json",
         "data/entities/policy/miyagi_kpi_actuals_measure1.json",
         "tests/test_miyagi_project_money_linkage.py",
@@ -104,6 +105,22 @@ def collect_reviewed_sources() -> dict[str, dict[str, dict]]:
                 code, dimension, source = normalize_reference_record(record, registry_path)
                 if dimension in CORE_DIMENSIONS:
                     by_code[code][dimension] = source
+
+    by_code["04"]["annual_actuals"] = {
+        "title": "令和7年度政策評価・施策評価に係る評価書（令和6年度事業）",
+        "url": "https://www.pref.miyagi.jp/documents/59769/r7-seikatohyouka_1.pdf",
+        "official_owner": "宮城県企画部総合政策課",
+        "reporting_period": "令和6年度事業・令和7年度確定評価",
+        "claim": (
+            "8政策・18施策の確定評価書を、128目標群・149系列の現行計画カタログへ"
+            "照合し、108系列を直接接続、19系列を要確認として分離した。"
+        ),
+        "boundary": (
+            "評価書の令和6年度目標、現行計画の令和9年度目標、定義変更系列、"
+            "完全な4年系列がない22系列を混同せず、未確定関係は接続しない。"
+        ),
+        "source_registry": "data/catalog/miyagi_policy_review_manifest.json",
+    }
     return by_code
 
 
