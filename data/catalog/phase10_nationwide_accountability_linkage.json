@@ -25,16 +25,11 @@
           "review_status": "reviewed",
           "nonexistence_claim": false,
           "policy_achievement_assessment": "not_assessed",
-          "coverage_status": "source_reviewed",
-          "result_status": "source_registered",
-          "source": {
-            "title": "入札・調達・売却 - 北海道のホームページ",
-            "url": "https://www.pref.hokkaido.lg.jp/category/d003",
-            "http_status": 206,
-            "discovery_query": "\"北海道\" 入札 契約 調達"
-          },
-          "review_note": "The page is registered as the prefecture-level official source entrance. Individual contracts, statements, agenda items, and votes remain separate record-level work.",
-          "next_action": "Expand the source entrance into stable record-level identifiers without changing the source role, organization boundary, or reporting-period boundary."
+          "coverage_status": "search_reviewed",
+          "result_status": "no_stable_primary_source_found",
+          "source": null,
+          "review_note": "The prefecture-host search did not produce a stable primary source that passed role and HTTP checks. This is a reviewed search outcome, not a claim that the source does not exist.",
+          "next_action": "Recheck the official site search, document archive, and current-term source when the prefecture publishes or relocates a stable primary source."
         },
         "assembly": {
           "role": "assembly",
@@ -2630,11 +2625,11 @@
   "summary": {
     "prefecture_count": 47,
     "reviewed_role_count": 141,
-    "source_registered_count": 4,
+    "source_registered_count": 3,
     "term_verification_required_count": 1,
-    "no_stable_primary_source_found_count": 136,
+    "no_stable_primary_source_found_count": 137,
     "source_registered_by_role": {
-      "contracts": 2,
+      "contracts": 1,
       "assembly": 2,
       "executive_manifesto": 0
     },
