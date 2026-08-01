@@ -4,6 +4,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PAGE = ROOT / "apps/web/app/municipalities/phase10/page.tsx"
+COMPLETION_MARKER = "Completed on 2026-08-01"
 
 
 def replace_once(text: str, old: str, new: str) -> str:
@@ -14,11 +15,20 @@ def replace_once(text: str, old: str, new: str) -> str:
 
 def main() -> None:
     text = PAGE.read_text(encoding="utf-8")
-    text = replace_once(
-        text,
-        '    "全国47都道府県を同じ品質ゲートで管理し、政策目標を年度実績、予算・決算、重点事業、契約、議会、監査、首長公約へ接続するPhase 10の進行状況を公開します。",',
-        '    "全国47都道府県がPhase 10の共通品質ゲートへ到達した完了状態と、文書スコープ・個票スコープの境界を公開します。",',
+    if COMPLETION_MARKER in text:
+        return
+
+    old_description = (
+        '    "全国47都道府県を同じ品質ゲートで管理し、政策目標を年度実績、'
+        '予算・決算、重点事業、契約、議会、監査、首長公約へ接続する'
+        'Phase 10の進行状況を公開します。",'
     )
+    new_description = (
+        '    "全国47都道府県がPhase 10の共通品質ゲートへ到達した完了状態と、'
+        '文書スコープ・個票スコープの境界を公開します。",'
+    )
+    text = replace_once(text, old_description, new_description)
+
     text = replace_once(
         text,
         '''          <p>
@@ -36,6 +46,7 @@ def main() -> None:
             契約、発言、監査指摘をすべて一対一接続したという意味ではありません。
           </p>''',
     )
+
     marker = "        </PageIntro>\n\n        <section className={styles.summaryGrid}"
     banner = '''        </PageIntro>
 
@@ -59,27 +70,45 @@ def main() -> None:
 
         <section className={styles.summaryGrid}'''
     text = replace_once(text, marker, banner)
-    text = text.replace('aria-label="Phase 10進行状況"', 'aria-label="Phase 10完了状況"')
+    text = text.replace(
+        'aria-label="Phase 10進行状況"',
+        'aria-label="Phase 10完了状況"',
+    )
     text = replace_once(
         text,
         "            <span>年度実績 Reviewed以上</span>",
         "            <span>年度実績 文書接続</span>",
     )
-    text = replace_once(
-        text,
-        "            <p>うち目標へ直接接続済みは{uniformSummary.annual_actuals.linked}県です。</p>",
-        "            <p>全47都道府県で公式年度実績を正しい資料役割・期間へ接続しています。</p>",
+
+    old_actuals = (
+        "            <p>うち目標へ直接接続済みは"
+        "{uniformSummary.annual_actuals.linked}県です。</p>"
     )
+    new_actuals = (
+        "            <p>全47都道府県で公式年度実績を"
+        "正しい資料役割・期間へ接続しています。</p>"
+    )
+    text = replace_once(text, old_actuals, new_actuals)
+
     text = replace_once(
         text,
         "            <p>入口確認以上の県数です。金額接続済みを意味しません。</p>",
-        "            <p>文書スコープの接続数です。全科目・全事業の個票接続を意味しません。</p>",
+        (
+            "            <p>文書スコープの接続数です。"
+            "全科目・全事業の個票接続を意味しません。</p>"
+        ),
     )
-    text = replace_once(
-        text,
-        "              <p>47都道府県すべてが共通ゲートを通るまでPhase 10は完了にしません。</p>",
-        "              <p>47都道府県すべてが共通ゲートへ到達したため、Phase 10を完了としました。</p>",
+
+    old_completion = (
+        "              <p>47都道府県すべてが共通ゲートを通るまで"
+        "Phase 10は完了にしません。</p>"
     )
+    new_completion = (
+        "              <p>47都道府県すべてが共通ゲートへ到達したため、"
+        "Phase 10を完了としました。</p>"
+    )
+    text = replace_once(text, old_completion, new_completion)
+
     text = replace_once(
         text,
         '''              政策目標、Evidence、公開検証は47都道府県でReviewed済みです。
