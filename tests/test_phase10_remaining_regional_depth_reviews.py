@@ -11,6 +11,7 @@ INDEX_SCHEMA_PATH = ROOT / "schemas/phase10_regional_depth_index.schema.json"
 INDEX_PATH = CATALOG / "phase10_regional_depth_index.json"
 UNIFORMITY_PATH = CATALOG / "phase10_uniformity.json"
 COMPLETION_PATH = CATALOG / "phase10_completion.json"
+CORE_PATH = CATALOG / "phase10_nationwide_core_linkage.json"
 
 BATCHES = {
     "kinki": {
@@ -68,21 +69,18 @@ def load(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def effective_overrides():
+def expanded_uniformity():
     uniformity = load(UNIFORMITY_PATH)
-    overrides = dict(uniformity["overrides"])
-    for batch in load(INDEX_PATH)["batches"]:
-        reviews = load(CATALOG / batch["filename"])
-        for record in reviews["records"]:
-            current = overrides.get(record["prefecture_code"], {})
-            overrides[record["prefecture_code"]] = {
-                **current,
-                "current_depth": {
-                    **current.get("current_depth", {}),
-                    **{dimension: "reviewed" for dimension in DIMENSIONS},
-                },
-            }
-    return overrides
+    return {
+        f"{value:02d}": {
+            **uniformity["default_depth"],
+            **uniformity["overrides"].get(f"{value:02d}", {}).get(
+                "current_depth",
+                {},
+            ),
+        }
+        for value in range(1, 48)
+    }
 
 
 def test_completed_regional_index_matches_schema_and_covers_38_prefectures():
@@ -142,71 +140,45 @@ def test_remaining_four_batches_match_schema_and_official_hosts():
 
 
 def test_effective_five_layer_coverage_reaches_all_prefectures():
-    overrides = effective_overrides()
-    assert len(overrides) == 47
+    records = expanded_uniformity()
+    assert len(records) == 47
 
-    reviewed_counts = {
-        dimension: sum(
-            record.get("current_depth", {}).get(dimension)
-            in {"reviewed", "linked"}
-            for record in overrides.values()
-        )
-        for dimension in DIMENSIONS
-    }
-    indexed_or_better = sum(
-        all(
-            record.get("current_depth", {}).get(dimension)
-            in {"indexed", "reviewed", "linked"}
-            for dimension in DIMENSIONS
-        )
-        for record in overrides.values()
-    )
-    fully_reviewed = sum(
-        all(
-            record.get("current_depth", {}).get(dimension)
-            in {"reviewed", "linked"}
-            for dimension in DIMENSIONS
-        )
-        for record in overrides.values()
-    )
-
-    assert indexed_or_better == 47
-    assert fully_reviewed == 46
-    assert reviewed_counts == {
-        "annual_actuals": 47,
-        "budget": 47,
-        "settlement": 46,
-        "priority_projects": 47,
-        "audit": 47,
-    }
+    for depth in records.values():
+        assert {dimension: depth[dimension] for dimension in DIMENSIONS} == {
+            dimension: "linked" for dimension in DIMENSIONS
+        }
 
 
-def test_completion_records_source_review_without_false_phase_completion():
+def test_completion_and_core_registry_preserve_all_regional_sources():
     completion = load(COMPLETION_PATH)
+    core = load(CORE_PATH)
     counts = completion["nationwide_uniform_counts"]
 
     assert counts == {
         "reviewed_anchor_prefectures": 9,
         "prefectures_with_five_layers_indexed_or_better": 47,
-        "prefectures_with_five_layers_reviewed": 46,
+        "prefectures_with_five_layers_reviewed": 47,
         "annual_actuals_reviewed_or_better": 47,
         "budget_reviewed_or_better": 47,
-        "settlement_reviewed_or_better": 46,
+        "settlement_reviewed_or_better": 47,
         "priority_projects_reviewed_or_better": 47,
         "audit_reviewed_or_better": 47,
-        "uniform_depth_complete": 0,
+        "uniform_depth_complete": 47,
     }
-    assert completion["status"] == "in_progress"
-    assert "one-to-one target linkage are not complete" in completion["scope_note"]
+    assert completion["status"] == "complete"
+    assert "document scope" in completion["scope_note"]
+    assert "missing stable source is never treated" in completion["scope_note"]
+
+    core_registries = {
+        group["source_registry"] for group in core["link_groups"]
+    }
+    for expected in BATCHES.values():
+        assert f"data/catalog/{expected['filename']}" in core_registries
 
     evidence_paths = {
         path
         for gate in completion["gates"]
         for path in gate["evidence_paths"]
     }
-    for expected in BATCHES.values():
-        assert f"data/catalog/{expected['filename']}" in evidence_paths
-    assert "schemas/phase10_regional_depth_index.schema.json" in evidence_paths
-    assert "tests/test_phase10_remaining_regional_depth_reviews.py" in (
-        evidence_paths
-    )
+    assert CORE_PATH.relative_to(ROOT).as_posix() in evidence_paths
+    assert "tests/test_phase10_nationwide_core_linkage.py" in evidence_paths
