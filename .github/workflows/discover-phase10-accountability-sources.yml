@@ -34,6 +34,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.ref || github.ref_name }}
+          fetch-depth: 0
       - name: Install discovery dependencies
         run: python -m pip install --disable-pip-version-check requests beautifulsoup4
       - name: Discover official accountability source candidates
@@ -66,4 +67,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/catalog/phase10_nationwide_accountability_linkage.json
           git commit -m "Generate Phase 10 accountability coverage"
+          git pull --rebase origin ${{ github.ref_name }}
           git push origin HEAD:${{ github.ref_name }}
