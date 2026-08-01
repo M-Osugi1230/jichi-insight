@@ -15,8 +15,9 @@ def test_hokkaido_page_publishes_linkage_and_definition_boundaries():
     page = text(PAGE)
 
     assert "108指標を、公式番号で年度実績へ接続" in page
-    assert "同じ番号でも、定義が違えばつながない" in page
-    assert "15件" in page
+    assert "同じ番号でも、定義や単位が違えばつながない" in page
+    assert "summary.partial_record_count" in page
+    assert "単位スケール" in page
     assert "政策達成判定" in page
     assert "達成・未達の判断を分離" in page
     assert "hokkaidoAnnualActualRecords" in page
@@ -32,6 +33,7 @@ def test_hokkaido_library_loads_both_registry_parts():
     assert "年度実績へ接続" in library
     assert "版・定義の確認が必要" in library
     assert "目標版が変更" in library
+    assert "単位スケールの換算が必要" in library
 
 
 def test_hokkaido_route_is_in_navigation_and_sitemap():
