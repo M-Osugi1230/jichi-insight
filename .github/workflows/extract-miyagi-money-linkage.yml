@@ -1,0 +1,49 @@
+name: Extract Miyagi Money Linkage
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/extract-miyagi-money-linkage.yml
+      - scripts/extract_miyagi_money_linkage.py
+      - scripts/extract_miyagi_money_linkage_reviewed.py
+  pull_request:
+    branches:
+      - main
+    paths:
+      - .github/workflows/extract-miyagi-money-linkage.yml
+      - scripts/extract_miyagi_money_linkage.py
+      - scripts/extract_miyagi_money_linkage_reviewed.py
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install extraction dependencies
+        run: python -m pip install --disable-pip-version-check pdfplumber
+      - name: Download official Miyagi PDFs
+        run: |
+          curl --fail --location --retry 3 \
+            --output /tmp/miyagi-budget-reflection.pdf \
+            https://www.pref.miyagi.jp/documents/59763/r7hanneijyoukyousetumeisyo.pdf
+          curl --fail --location --retry 3 \
+            --output /tmp/miyagi-settlement-results.pdf \
+            https://www.pref.miyagi.jp/documents/59769/r7-seikatohyouka_1.pdf
+      - name: Extract reviewed project and money records
+        run: |
+          python scripts/extract_miyagi_money_linkage_reviewed.py \
+            --budget-pdf /tmp/miyagi-budget-reflection.pdf \
+            --settlement-pdf /tmp/miyagi-settlement-results.pdf \
+            --output-dir extracted-miyagi-money-linkage
+      - uses: actions/upload-artifact@v4
+        with:
+          name: miyagi-money-linkage-extraction
+          path: extracted-miyagi-money-linkage
+          if-no-files-found: error
+          retention-days: 7
