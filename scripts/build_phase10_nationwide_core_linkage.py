@@ -6,23 +6,7 @@ from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-
-PREFECTURES = {
-    f"{index:02d}": name
-    for index, name in enumerate(
-        [
-            "北海道", "青森県", "岩手県", "宮城県", "秋田県", "山形県", "福島県",
-            "茨城県", "栃木県", "群馬県", "埼玉県", "千葉県", "東京都", "神奈川県",
-            "新潟県", "富山県", "石川県", "福井県", "山梨県", "長野県", "岐阜県",
-            "静岡県", "愛知県", "三重県", "滋賀県", "京都府", "大阪府", "兵庫県",
-            "奈良県", "和歌山県", "鳥取県", "島根県", "岡山県", "広島県", "山口県",
-            "徳島県", "香川県", "愛媛県", "高知県", "福岡県", "佐賀県", "長崎県",
-            "熊本県", "大分県", "宮崎県", "鹿児島県", "沖縄県",
-        ],
-        start=1,
-    )
-}
-
+ALL_CODES = [f"{value:02d}" for value in range(1, 48)]
 CORE_DIMENSIONS = (
     "annual_actuals",
     "budget",
@@ -70,45 +54,18 @@ def load(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def collect_registry_dimensions() -> tuple[dict[str, dict[str, str]], dict[str, set[str]]]:
-    registry_by_code: dict[str, dict[str, str]] = {code: {} for code in PREFECTURES}
-    dimensions_by_code: dict[str, set[str]] = {code: set() for code in PREFECTURES}
-    for registry_path in REVIEW_FILES:
-        payload = load(ROOT / registry_path)
-        for record in payload["records"]:
-            code = record["prefecture_code"]
-            if "sources" in record:
-                for dimension in record["sources"]:
-                    if dimension in CORE_DIMENSIONS:
-                        registry_by_code[code][dimension] = registry_path
-                        dimensions_by_code[code].add(dimension)
-            else:
-                dimension = record["dimension"]
-                if dimension in CORE_DIMENSIONS:
-                    registry_by_code[code][dimension] = registry_path
-                    dimensions_by_code[code].add(dimension)
-
-    registry_by_code["04"]["annual_actuals"] = (
-        "data/catalog/miyagi_policy_review_manifest.json"
-    )
-    dimensions_by_code["04"].add("annual_actuals")
-    return registry_by_code, dimensions_by_code
-
-
-def compact_registry_map(registry_by_dimension: dict[str, str]) -> list[dict]:
-    grouped: dict[str, list[str]] = {}
-    for dimension in CORE_DIMENSIONS:
-        grouped.setdefault(registry_by_dimension[dimension], []).append(dimension)
-    return [
-        {
-            "source_registry": registry,
-            "dimensions": dimensions,
-            "selector": "prefecture_code_and_dimension",
-            "linkage_status": "linked",
-            "linkage_level": "document_scope",
-        }
-        for registry, dimensions in sorted(grouped.items())
-    ]
+def registry_coverage(registry_path: str) -> dict[str, set[str]]:
+    payload = load(ROOT / registry_path)
+    coverage: dict[str, set[str]] = {}
+    for record in payload["records"]:
+        code = record["prefecture_code"]
+        dimensions = record.get("sources", {}).keys()
+        if not dimensions and record.get("dimension"):
+            dimensions = [record["dimension"]]
+        coverage.setdefault(code, set()).update(
+            dimension for dimension in dimensions if dimension in CORE_DIMENSIONS
+        )
+    return coverage
 
 
 def main() -> None:
@@ -116,29 +73,50 @@ def main() -> None:
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
 
-    registry_by_code, dimensions_by_code = collect_registry_dimensions()
-    records = []
-    for code, name in PREFECTURES.items():
-        missing = sorted(set(CORE_DIMENSIONS) - dimensions_by_code[code])
-        if missing:
-            raise SystemExit(f"{code} {name}: missing reviewed core dimensions {missing}")
-        records.append(
-            {
-                "prefecture_code": code,
-                "name": name,
-                "status": "linked",
-                "source_registry_links": compact_registry_map(registry_by_code[code]),
-                "linked_dimensions": list(CORE_DIMENSIONS),
-                "deeper_record_level_evidence_paths": [
-                    path for path in DEEPER_EVIDENCE.get(code, []) if (ROOT / path).exists()
-                ],
-            }
-        )
+    groups = []
+    expanded: dict[str, set[str]] = {code: set() for code in ALL_CODES}
+    for registry_path in REVIEW_FILES:
+        coverage = registry_coverage(registry_path)
+        by_dimensions: dict[tuple[str, ...], list[str]] = {}
+        for code, dimensions in coverage.items():
+            key = tuple(dimension for dimension in CORE_DIMENSIONS if dimension in dimensions)
+            if key:
+                by_dimensions.setdefault(key, []).append(code)
+                expanded[code].update(key)
+        for dimensions, codes in sorted(by_dimensions.items()):
+            groups.append(
+                {
+                    "source_registry": registry_path,
+                    "prefecture_codes": sorted(codes),
+                    "dimensions": list(dimensions),
+                    "selector": "prefecture_code_and_dimension",
+                    "linkage_status": "linked",
+                    "linkage_level": "document_scope",
+                }
+            )
 
-    dimension_counts = Counter(
-        dimension
-        for record in records
-        for dimension in record["linked_dimensions"]
+    groups.append(
+        {
+            "source_registry": "data/catalog/miyagi_policy_review_manifest.json",
+            "prefecture_codes": ["04"],
+            "dimensions": ["annual_actuals"],
+            "selector": "prefecture_code_and_work_package:evaluation_linkage",
+            "linkage_status": "linked",
+            "linkage_level": "record_and_document_scope",
+        }
+    )
+    expanded["04"].add("annual_actuals")
+
+    missing = {
+        code: sorted(set(CORE_DIMENSIONS) - dimensions)
+        for code, dimensions in expanded.items()
+        if set(CORE_DIMENSIONS) - dimensions
+    }
+    if missing:
+        raise SystemExit(f"Missing core linkage coverage: {missing}")
+
+    counts = Counter(
+        dimension for dimensions in expanded.values() for dimension in dimensions
     )
     payload = {
         "id": "phase10-nationwide-core-linkage",
@@ -155,12 +133,15 @@ def main() -> None:
             "registries and are not used for policy-achievement assessment or ranking."
         ),
         "dimensions": list(CORE_DIMENSIONS),
-        "records": records,
+        "link_groups": groups,
+        "deeper_record_level_evidence": DEEPER_EVIDENCE,
         "summary": {
-            "prefecture_count": len(records),
-            "linked_prefecture_count": sum(record["status"] == "linked" for record in records),
+            "prefecture_count": len(expanded),
+            "linked_prefecture_count": sum(
+                dimensions == set(CORE_DIMENSIONS) for dimensions in expanded.values()
+            ),
             "linked_dimension_counts": {
-                dimension: dimension_counts[dimension] for dimension in CORE_DIMENSIONS
+                dimension: counts[dimension] for dimension in CORE_DIMENSIONS
             },
             "policy_achievement_assessment_count": 0,
         },
@@ -168,7 +149,10 @@ def main() -> None:
         "updated_at": "2026-08-01",
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    args.output.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
 
 
 if __name__ == "__main__":
