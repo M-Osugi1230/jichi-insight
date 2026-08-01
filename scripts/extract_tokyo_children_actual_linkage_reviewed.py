@@ -7,6 +7,7 @@ import extract_tokyo_children_actual_linkage as base
 
 base.LINKAGE_RULES[2]["alias"] = "自分の行動で社会を変えられる"
 base.LINKAGE_RULES[3]["alias"] = "子供が権利の主体であることを知って"
+base.LINKAGE_RULES[7]["source_period"] = "2023"
 base.LINKAGE_RULES[8]["alias"] = "母子保健部門と児童福祉部門が連携した"
 
 
