@@ -1,0 +1,27 @@
+name: Inventory Hokkaido Targets
+
+on:
+  push:
+    branches:
+      - agent/phase10-hokkaido-actual-linkage
+    paths:
+      - .github/workflows/inventory-hokkaido-targets.yml
+      - scripts/inventory_hokkaido_targets.py
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inventory target data
+        run: python scripts/inventory_hokkaido_targets.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: hokkaido-target-inventory
+          path: hokkaido-target-inventory.json
+          if-no-files-found: error
+          retention-days: 7
