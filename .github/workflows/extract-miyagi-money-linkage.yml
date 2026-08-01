@@ -7,12 +7,14 @@ on:
     paths:
       - .github/workflows/extract-miyagi-money-linkage.yml
       - scripts/extract_miyagi_money_linkage.py
+      - scripts/extract_miyagi_money_linkage_reviewed.py
   pull_request:
     branches:
       - main
     paths:
       - .github/workflows/extract-miyagi-money-linkage.yml
       - scripts/extract_miyagi_money_linkage.py
+      - scripts/extract_miyagi_money_linkage_reviewed.py
   workflow_dispatch:
 
 permissions:
@@ -33,9 +35,9 @@ jobs:
           curl --fail --location --retry 3 \
             --output /tmp/miyagi-settlement-results.pdf \
             https://www.pref.miyagi.jp/documents/59769/r7-seikatohyouka_1.pdf
-      - name: Extract candidate project and money records
+      - name: Extract reviewed project and money records
         run: |
-          python scripts/extract_miyagi_money_linkage.py \
+          python scripts/extract_miyagi_money_linkage_reviewed.py \
             --budget-pdf /tmp/miyagi-budget-reflection.pdf \
             --settlement-pdf /tmp/miyagi-settlement-results.pdf \
             --output-dir extracted-miyagi-money-linkage
