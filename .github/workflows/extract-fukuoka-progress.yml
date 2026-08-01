@@ -1,0 +1,41 @@
+name: Extract Fukuoka Progress
+
+on:
+  push:
+    branches:
+      - agent/phase10-reference-linkage
+    paths:
+      - .github/workflows/extract-fukuoka-progress.yml
+      - scripts/extract_fukuoka_progress.py
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install PDF text tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils
+      - name: Download official report
+        run: |
+          curl --fail --location --retry 3 \
+            --output /tmp/fukuoka-progress.pdf \
+            https://www.pref.fukuoka.lg.jp/uploaded/attachment/269803.pdf
+      - name: Extract text and candidate rows
+        run: |
+          pdftotext -layout /tmp/fukuoka-progress.pdf /tmp/fukuoka-progress.txt
+          python scripts/extract_fukuoka_progress.py \
+            --pdf /tmp/fukuoka-progress.pdf \
+            --text /tmp/fukuoka-progress.txt \
+            --output-dir extracted-fukuoka-progress
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fukuoka-progress-extraction
+          path: extracted-fukuoka-progress
+          if-no-files-found: error
+          retention-days: 7
