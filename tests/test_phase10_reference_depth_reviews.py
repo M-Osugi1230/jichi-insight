@@ -8,6 +8,10 @@ ROOT = Path(__file__).resolve().parents[1]
 REVIEWS_PATH = ROOT / "data/catalog/phase10_reference_depth_reviews.json"
 SCHEMA_PATH = ROOT / "schemas/phase10_reference_depth_reviews.schema.json"
 UNIFORMITY_PATH = ROOT / "data/catalog/phase10_uniformity.json"
+CORE_PATH = ROOT / "data/catalog/phase10_nationwide_core_linkage.json"
+ACCOUNTABILITY_PATH = (
+    ROOT / "data/catalog/phase10_nationwide_accountability_linkage.json"
+)
 
 DIMENSIONS = {
     "annual_actuals",
@@ -90,15 +94,17 @@ def test_reference_summary_is_derived_from_records():
     }
 
 
-def test_reference_reviews_back_every_promoted_uniformity_dimension():
+def test_reference_reviews_remain_history_beneath_completed_canonical_depth():
     reviews = load(REVIEWS_PATH)
     uniformity = load(UNIFORMITY_PATH)
+    core = load(CORE_PATH)
+    accountability = load(ACCOUNTABILITY_PATH)
     by_key = {
         (record["prefecture_code"], record["dimension"]): record
         for record in reviews["records"]
     }
 
-    expected = {
+    expected_history = {
         ("04", "budget"): "reviewed",
         ("04", "settlement"): "indexed",
         ("04", "priority_projects"): "reviewed",
@@ -111,10 +117,36 @@ def test_reference_reviews_back_every_promoted_uniformity_dimension():
         ("40", "assembly"): "indexed",
         ("40", "audit"): "reviewed",
     }
+    assert {
+        key: record["resulting_depth"] for key, record in by_key.items()
+    } == expected_history
 
-    for key, depth in expected.items():
-        code, dimension = key
-        assert by_key[key]["resulting_depth"] == depth
-        assert uniformity["overrides"][code]["current_depth"][dimension] == depth
+    assert uniformity["overrides"] == {}
+    for dimension in (
+        "annual_actuals",
+        "budget",
+        "settlement",
+        "priority_projects",
+        "audit",
+    ):
+        assert uniformity["default_depth"][dimension] == "linked"
+    assert uniformity["default_depth"]["assembly"] == "reviewed"
 
-    assert set(by_key) == set(expected)
+    reference_groups = [
+        group
+        for group in core["link_groups"]
+        if group["source_registry"]
+        == REVIEWS_PATH.relative_to(ROOT).as_posix()
+    ]
+    assert {code for group in reference_groups for code in group["prefecture_codes"]} == {
+        "04",
+        "40",
+    }
+    accountability_by_code = {
+        record["prefecture_code"]: record for record in accountability["records"]
+    }
+    assert all(
+        accountability_by_code[code]["roles"]["assembly"]["review_status"]
+        == "reviewed"
+        for code in ("04", "40")
+    )

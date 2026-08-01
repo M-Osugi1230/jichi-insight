@@ -9,6 +9,7 @@ REVIEWS_PATH = ROOT / "data/catalog/phase10_kanto_depth_reviews.json"
 SCHEMA_PATH = ROOT / "schemas/phase10_regional_depth_reviews.schema.json"
 UNIFORMITY_PATH = ROOT / "data/catalog/phase10_uniformity.json"
 COMPLETION_PATH = ROOT / "data/catalog/phase10_completion.json"
+CORE_PATH = ROOT / "data/catalog/phase10_nationwide_core_linkage.json"
 
 CODES = ["08", "09", "10", "11", "12", "14"]
 DIMENSIONS = [
@@ -72,44 +73,47 @@ def test_kanto_has_five_reviewed_sources_per_prefecture():
     )
 
 
-def test_kanto_review_promotes_only_reviewed_depth():
+def test_kanto_reviews_are_promoted_by_the_canonical_core_linkage():
     reviews = load(REVIEWS_PATH)
     uniformity = load(UNIFORMITY_PATH)
+    core = load(CORE_PATH)
 
-    for record in reviews["records"]:
-        override = uniformity["overrides"][record["prefecture_code"]]
-        assert override["status"] == "linkage_in_progress"
-        assert override["next_gate"] == "annual_actuals_linkage"
-        assert override["next_action"] == record["next_linkage"]
-        for dimension in DIMENSIONS:
-            assert override["current_depth"][dimension] == "reviewed"
-        assert "linked" not in {
-            override["current_depth"][dimension] for dimension in DIMENSIONS
-        }
+    assert uniformity["overrides"] == {}
+    assert all(
+        uniformity["default_depth"][dimension] == "linked"
+        for dimension in DIMENSIONS
+    )
+    groups = [
+        group
+        for group in core["link_groups"]
+        if group["source_registry"]
+        == REVIEWS_PATH.relative_to(ROOT).as_posix()
+    ]
+    assert len(groups) == 1
+    assert groups[0]["prefecture_codes"] == CODES
+    assert groups[0]["dimensions"] == DIMENSIONS
+    assert groups[0]["linkage_level"] == "document_scope"
+    assert reviews["records"]
 
 
-def test_kanto_review_remains_registered_after_later_batches():
+def test_kanto_review_remains_registered_after_completion():
     completion = load(COMPLETION_PATH)
     counts = completion["nationwide_uniform_counts"]
 
-    assert counts["prefectures_with_five_layers_indexed_or_better"] >= 20
-    assert counts["prefectures_with_five_layers_reviewed"] >= 19
-    assert counts["annual_actuals_reviewed_or_better"] >= 20
-    assert counts["budget_reviewed_or_better"] >= 20
-    assert counts["settlement_reviewed_or_better"] >= 19
-    assert counts["priority_projects_reviewed_or_better"] >= 20
-    assert counts["audit_reviewed_or_better"] >= 20
-    assert counts["uniform_depth_complete"] == 0
-    assert completion["status"] == "in_progress"
+    assert counts["prefectures_with_five_layers_indexed_or_better"] == 47
+    assert counts["prefectures_with_five_layers_reviewed"] == 47
+    assert counts["annual_actuals_reviewed_or_better"] == 47
+    assert counts["budget_reviewed_or_better"] == 47
+    assert counts["settlement_reviewed_or_better"] == 47
+    assert counts["priority_projects_reviewed_or_better"] == 47
+    assert counts["audit_reviewed_or_better"] == 47
+    assert counts["uniform_depth_complete"] == 47
+    assert completion["status"] == "complete"
 
     evidence_paths = {
         path
         for gate in completion["gates"]
         for path in gate["evidence_paths"]
     }
-    assert REVIEWS_PATH.relative_to(ROOT).as_posix() in evidence_paths
-    assert SCHEMA_PATH.relative_to(ROOT).as_posix() in evidence_paths
-    assert (
-        Path("tests/test_phase10_kanto_depth_reviews.py").as_posix()
-        in evidence_paths
-    )
+    assert CORE_PATH.relative_to(ROOT).as_posix() in evidence_paths
+    assert "tests/test_phase10_nationwide_core_linkage.py" in evidence_paths

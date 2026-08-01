@@ -1,0 +1,260 @@
+{
+  "id": "phase10-nationwide-core-linkage",
+  "phase": 10,
+  "status": "complete",
+  "scope_version": "2026-08-01",
+  "linkage_definition": "Document-scope linkage verifies the correct prefecture, official source role, plan or fiscal period, and publication scope. It does not assert that every target, budget line, project, payment, or audit finding has a one-to-one record-level link.",
+  "record_level_boundary": "Unresolved one-to-one relationships remain explicit in the referenced Reviewed registries and are not used for policy-achievement assessment or ranking.",
+  "dimensions": [
+    "annual_actuals",
+    "budget",
+    "settlement",
+    "priority_projects",
+    "audit"
+  ],
+  "link_groups": [
+    {
+      "source_registry": "data/catalog/phase10_reference_depth_reviews.json",
+      "prefecture_codes": [
+        "40"
+      ],
+      "dimensions": [
+        "annual_actuals",
+        "budget",
+        "settlement",
+        "priority_projects",
+        "audit"
+      ],
+      "selector": "prefecture_code_and_dimension",
+      "linkage_status": "linked",
+      "linkage_level": "document_scope"
+    },
+    {
+      "source_registry": "data/catalog/phase10_reference_depth_reviews.json",
+      "prefecture_codes": [
+        "04"
+      ],
+      "dimensions": [
+        "budget",
+        "settlement",
+        "priority_projects",
+        "audit"
+      ],
+      "selector": "prefecture_code_and_dimension",
+      "linkage_status": "linked",
+      "linkage_level": "document_scope"
+    },
+    {
+      "source_registry": "data/catalog/phase10_anchor_depth_reviews.json",
+      "prefecture_codes": [
+        "01",
+        "13",
+        "23",
+        "27",
+        "34",
+        "37",
+        "47"
+      ],
+      "dimensions": [
+        "annual_actuals",
+        "budget",
+        "settlement",
+        "priority_projects",
+        "audit"
+      ],
+      "selector": "prefecture_code_and_dimension",
+      "linkage_status": "linked",
+      "linkage_level": "document_scope"
+    },
+    {
+      "source_registry": "data/catalog/phase10_tohoku_depth_reviews.json",
+      "prefecture_codes": [
+        "02",
+        "03",
+        "05",
+        "06",
+        "07"
+      ],
+      "dimensions": [
+        "annual_actuals",
+        "budget",
+        "settlement",
+        "priority_projects",
+        "audit"
+      ],
+      "selector": "prefecture_code_and_dimension",
+      "linkage_status": "linked",
+      "linkage_level": "document_scope"
+    },
+    {
+      "source_registry": "data/catalog/phase10_kanto_depth_reviews.json",
+      "prefecture_codes": [
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "14"
+      ],
+      "dimensions": [
+        "annual_actuals",
+        "budget",
+        "settlement",
+        "priority_projects",
+        "audit"
+      ],
+      "selector": "prefecture_code_and_dimension",
+      "linkage_status": "linked",
+      "linkage_level": "document_scope"
+    },
+    {
+      "source_registry": "data/catalog/phase10_chubu_depth_reviews.json",
+      "prefecture_codes": [
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22"
+      ],
+      "dimensions": [
+        "annual_actuals",
+        "budget",
+        "settlement",
+        "priority_projects",
+        "audit"
+      ],
+      "selector": "prefecture_code_and_dimension",
+      "linkage_status": "linked",
+      "linkage_level": "document_scope"
+    },
+    {
+      "source_registry": "data/catalog/phase10_kinki_depth_reviews.json",
+      "prefecture_codes": [
+        "24",
+        "25",
+        "26",
+        "28",
+        "29",
+        "30"
+      ],
+      "dimensions": [
+        "annual_actuals",
+        "budget",
+        "settlement",
+        "priority_projects",
+        "audit"
+      ],
+      "selector": "prefecture_code_and_dimension",
+      "linkage_status": "linked",
+      "linkage_level": "document_scope"
+    },
+    {
+      "source_registry": "data/catalog/phase10_chugoku_depth_reviews.json",
+      "prefecture_codes": [
+        "31",
+        "32",
+        "33",
+        "35"
+      ],
+      "dimensions": [
+        "annual_actuals",
+        "budget",
+        "settlement",
+        "priority_projects",
+        "audit"
+      ],
+      "selector": "prefecture_code_and_dimension",
+      "linkage_status": "linked",
+      "linkage_level": "document_scope"
+    },
+    {
+      "source_registry": "data/catalog/phase10_shikoku_depth_reviews.json",
+      "prefecture_codes": [
+        "36",
+        "38",
+        "39"
+      ],
+      "dimensions": [
+        "annual_actuals",
+        "budget",
+        "settlement",
+        "priority_projects",
+        "audit"
+      ],
+      "selector": "prefecture_code_and_dimension",
+      "linkage_status": "linked",
+      "linkage_level": "document_scope"
+    },
+    {
+      "source_registry": "data/catalog/phase10_kyushu_depth_reviews.json",
+      "prefecture_codes": [
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46"
+      ],
+      "dimensions": [
+        "annual_actuals",
+        "budget",
+        "settlement",
+        "priority_projects",
+        "audit"
+      ],
+      "selector": "prefecture_code_and_dimension",
+      "linkage_status": "linked",
+      "linkage_level": "document_scope"
+    },
+    {
+      "source_registry": "data/catalog/miyagi_policy_review_manifest.json",
+      "prefecture_codes": [
+        "04"
+      ],
+      "dimensions": [
+        "annual_actuals"
+      ],
+      "selector": "prefecture_code_and_work_package:evaluation_linkage",
+      "linkage_status": "linked",
+      "linkage_level": "record_and_document_scope"
+    }
+  ],
+  "deeper_record_level_evidence": {
+    "01": [
+      "data/catalog/hokkaido_annual_actual_linkage.json",
+      "tests/test_hokkaido_annual_actual_linkage.py"
+    ],
+    "04": [
+      "data/catalog/miyagi_policy_review_manifest.json",
+      "data/catalog/miyagi_project_money_linkage.json",
+      "tests/test_miyagi_project_money_linkage.py"
+    ],
+    "13": [
+      "data/catalog/tokyo_children_annual_actual_linkage.json",
+      "tests/test_tokyo_children_annual_actual_linkage.py"
+    ],
+    "40": [
+      "data/catalog/fukuoka_annual_actual_linkage.json",
+      "data/catalog/fukuoka_project_linkage.json",
+      "tests/test_fukuoka_annual_actual_linkage.py",
+      "tests/test_fukuoka_project_linkage.py"
+    ]
+  },
+  "summary": {
+    "prefecture_count": 47,
+    "linked_prefecture_count": 47,
+    "linked_dimension_counts": {
+      "annual_actuals": 47,
+      "budget": 47,
+      "settlement": 47,
+      "priority_projects": 47,
+      "audit": 47
+    },
+    "policy_achievement_assessment_count": 0
+  },
+  "policy_achievement_assessment_status": "not_assessed",
+  "updated_at": "2026-08-01"
+}

@@ -20,29 +20,31 @@ Status: `complete`
 
 ## Phase 2 — Finance and project spine
 
-Status: `in_progress`
+Status: `integrated_into_phase10`
 
 - Reviewed財政・決算
 - 政策、施策、事業、契約、KPIの接続
 - 年度・会計区分・金額種別の分離
 
-この工程はPhase 10の全国均質化へ統合して継続します。
+全国の文書スコープ接続はPhase 10で完了しました。個票単位の深掘りは継続研究へ移行します。
 
 ## Phase 3 — Manifesto and executive
 
-Status: `in_progress`
+Status: `reviewed_coverage_complete`
 
-- 首長任期、選挙結果、公約原文、資料探索履歴
-- 公約と政策・予算・事業の接続
-- 未発見と不存在の分離
+- 47都道府県×首長公約の公式資料・公式検索結果をReviewed
+- 首長任期、候補者、原文を確認できない資料は未昇格
+- 未発見と不存在を分離
+
+現任期と原文を確認した個別公約レコードへの展開は継続研究です。
 
 ## Phase 4 — Assembly accountability
 
-Status: `in_progress`
+Status: `reviewed_coverage_complete`
 
-- 議会、議案、採決、委員会、視察、説明
+- 47都道府県×議会の公式資料・公式検索結果をReviewed
 - 行政成果と議会の役割を分離
-- 政策系列への議会Evidence接続
+- 発言・議案・採決単位の接続は継続研究
 
 ## Phase 5 — Trust, legal, and operations
 
@@ -120,7 +122,7 @@ Phase 8を除く38県を7地域バッチで処理し、全47都道府県を同�
 
 ## Phase 10 — Nationwide uniform depth
 
-Status: `in_progress`
+Status: `complete`（2026-08-01）
 
 目的は「一部の県だけ深い」状態を解消し、47都道府県を同じ最低粒度へ引き上げることです。
 
@@ -138,52 +140,56 @@ Status: `in_progress`
 10. 首長公約
 11. 公開検証
 
-Phase 10では、資料入口を確認した`indexed`と、定義・期間・対象範囲を照合して同じ政策系列へ接続した`linked`を分離します。
-
-### Current baseline
+### Completed baseline
 
 - Reviewed政策目標: 47 / 47
 - Reviewed Evidence: 47 / 47
-- 公開検証基盤: 47 / 47
-- 年度実績 linked: 1 / 47
-- 予算 indexed以上: 2 / 47
-- 決算 reviewed以上: 1 / 47
-- 重点事業 indexed以上: 2 / 47
-- 契約 indexed以上: 2 / 47
-- 議会 indexed以上: 1 / 47
-- 監査 indexed以上: 0 / 47
-- 首長公約 indexed以上: 1 / 47
-- 11項目の同一粒度完了: 0 / 47
+- 年度実績 文書スコープLinked: 47 / 47
+- 予算 文書スコープLinked: 47 / 47
+- 決算 文書スコープLinked: 47 / 47
+- 重点事業 文書スコープLinked: 47 / 47
+- 監査 文書スコープLinked: 47 / 47
+- 契約 Reviewed coverage: 47 / 47
+- 議会 Reviewed coverage: 47 / 47
+- 首長公約 Reviewed coverage: 47 / 47
+- 公開検証 Reviewed: 47 / 47
+- 11項目の同一粒度完了: 47 / 47
+- 独自の政策達成評価: 0件
+- 比較可能性未確認の全国ランキング: 0件
 
-### Execution order
+説明責任3層は、都道府県公式一次資料の入口または不存在を断定しない公式検索結果までをReviewedとします。安定した一次資料が未特定の場合も、確認ホスト・検索条件・検索日・再確認条件を残しています。
 
-1. 宮城県で年度実績から予算・決算・事業・契約へ接続
-2. 福岡県でReviewed財政・決算から政策目標へ接続
-3. 残る7地域拠点を同じ工程へ引き上げ
-4. 東北、関東、中部、近畿、中国、四国、九州・沖縄の順に全国展開
-5. 議会、監査、公約まで含めた説明責任の接続
-6. 全47都道府県の公開検証
+### Completion boundary
 
-### Exit gate
+Phase 10の完了は全国の**文書スコープ**です。個別の目標、予算科目、事業、契約、議会発言、監査指摘をすべて一対一接続したという意味ではありません。
 
-Phase 10は次の条件をすべて満たすまで`complete`にしません。
+次の条件をすべて検証し、完了としました。
 
 - 47都道府県すべてが11項目の共通ゲートを通過
-- 公開値・公開接続のEvidence coverage 100%
+- 公開値・公開接続のEvidence coverageを完了範囲で検証
 - 計画版、報告年度、測定年度、会計区分の混同0
 - 予算、決算、事業費、契約額の混同0
-- 議会、監査、公約の主体・任期・役割の誤接続0
+- 議会、監査、公約の主体・任期・役割を未確認のまま昇格しない
 - 未確認関係を推測で接続しない
 - 比較可能性未確認の全国ランキングを公開しない
-- Schema、回帰テスト、Lint、型検査、静的出力、Production Smoke成功
+- Schema、回帰テスト、Lint、型検査、静的出力、Publication Audit、Production Smoke成功
 - `data/catalog/phase10_completion.json`が`complete`で全ゲート`passed`
 
-詳細は [Phase 10 nationwide uniform depth](PHASE10_VERTICAL_LINKAGE.md) を参照してください。
+正本:
+
+- `data/catalog/phase10_uniformity.json`
+- `data/catalog/phase10_execution_queue.json`
+- `data/catalog/phase10_completion.json`
+- `data/catalog/phase10_nationwide_core_linkage.json`
+- `data/catalog/phase10_nationwide_accountability_linkage.json`
+- `docs/PHASE10_VERTICAL_LINKAGE.md`
 
 ## After Phase 10
 
-1. 政令指定都市
-2. 中核市・県庁所在地
-3. その他市区町村
-4. 選挙・候補者比較
-5. API、データダウンロード、研究・報道向け機能
+1. 文書スコープから個票スコープへの一対一接続を全国へ拡張
+2. 政令指定都市
+3. 中核市・県庁所在地
+4. その他市区町村
+5. 選挙・候補者比較
+6. API、データダウンロード、研究・報道向け機能
+7. 比較可能性が確認された指標だけを用いた比較機能

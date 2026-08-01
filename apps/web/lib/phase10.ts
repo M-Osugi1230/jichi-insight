@@ -338,6 +338,13 @@ const statusRank: Record<Phase10DepthStatus, number> = {
   linked: 3,
 };
 
+function atLeastDepth(
+  current: Phase10DepthStatus,
+  minimum: Phase10DepthStatus,
+): Phase10DepthStatus {
+  return statusRank[current] >= statusRank[minimum] ? current : minimum;
+}
+
 function findDataRoot(): string {
   const candidates = [
     path.resolve(process.cwd(), "data"),
@@ -370,11 +377,29 @@ export function loadPhase10Uniformity(): Phase10Uniformity {
         status: existing?.status ?? "linkage_in_progress",
         current_depth: {
           ...(existing?.current_depth ?? {}),
-          annual_actuals: "reviewed",
-          budget: "reviewed",
-          settlement: "reviewed",
-          priority_projects: "reviewed",
-          audit: "reviewed",
+          annual_actuals: atLeastDepth(
+            existing?.current_depth.annual_actuals ??
+              uniformity.default_depth.annual_actuals,
+            "reviewed",
+          ),
+          budget: atLeastDepth(
+            existing?.current_depth.budget ?? uniformity.default_depth.budget,
+            "reviewed",
+          ),
+          settlement: atLeastDepth(
+            existing?.current_depth.settlement ??
+              uniformity.default_depth.settlement,
+            "reviewed",
+          ),
+          priority_projects: atLeastDepth(
+            existing?.current_depth.priority_projects ??
+              uniformity.default_depth.priority_projects,
+            "reviewed",
+          ),
+          audit: atLeastDepth(
+            existing?.current_depth.audit ?? uniformity.default_depth.audit,
+            "reviewed",
+          ),
         },
         next_gate: existing?.next_gate ?? "annual_actuals_linkage",
         next_action: existing?.next_action ?? record.next_linkage,

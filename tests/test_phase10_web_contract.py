@@ -7,42 +7,40 @@ def read(path: str) -> str:
     return (ROOT / path).read_text(encoding="utf-8")
 
 
-def test_phase10_public_page_and_uniform_loader_exist():
+def test_phase10_public_page_exposes_completion_and_boundaries():
     page = read("apps/web/app/municipalities/phase10/page.tsx")
     loader = read("apps/web/lib/phase10.ts")
     css = read("apps/web/app/municipalities/phase10/phase10.module.css")
 
     for required in (
         "47都道府県を、同じ深さまで掘る。",
-        "深い県だけで、全国対応とは呼ばない。",
-        "全47都道府県の深度差を、そのまま表示。",
+        "2026年8月1日に全都道府県で完了しました。",
+        "Phase 10 完了",
+        "Completed on 2026-08-01",
+        "文書スコープLinked",
+        "不存在を断定しない公式検索結果までReviewed",
+        "個別の目標、予算科目、事業",
+        "政策の達成・未達は判定せず",
         "部分完了なし",
-        "目標へ接続",
-        "公式資料入口",
-        "予算 / 決算 入口以上",
-        "宮城県と福岡県の次の層を、公式資料で確認。",
-        "深掘りReviewed",
-        "残る7拠点も、5層の公式資料をReviewed化。",
-        "5層Reviewed",
-        "9地域拠点で、接続工程へ進む。",
+        "47都道府県すべてが共通ゲートへ到達",
+        "全47都道府県が到達した共通深度",
+        "未特定を不存在とは扱いません",
     ):
         assert required in page
 
+    assert 'aria-label="Phase 10完了宣言"' in page
+    assert 'aria-label="Phase 10完了状況"' in page
     assert "phase10_uniformity.json" in loader
     assert "phase10_reference_depth_reviews.json" in loader
     assert "phase10_anchor_depth_reviews.json" in loader
     assert "loadPhase10Uniformity" in loader
     assert "phase10UniformRecords" in loader
     assert "phase10UniformSummary" in loader
-    assert "loadPhase10ReferenceReviews" in loader
-    assert "phase10ReferenceReviewsByPrefecture" in loader
-    assert "loadPhase10AnchorReviews" in loader
+    assert "atLeastDepth" in loader
     assert ".depthMatrix" in css
     assert '.depthState[data-state="linked"]' in css
     assert ".reviewGrid" in css
-    assert ".reviewList" in css
     assert ".anchorReviewGrid" in css
-    assert ".anchorSourceList" in css
 
 
 def test_phase10_is_linked_from_phase9_and_sitemap():

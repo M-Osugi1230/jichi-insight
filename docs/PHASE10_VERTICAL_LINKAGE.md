@@ -1,6 +1,8 @@
 # Phase 10 — Nationwide uniform depth
 
-Phase 10 brings all 47 prefectures to the same minimum information depth. Phase 9 completed Evidence-backed Reviewed target statements nationwide. Phase 10 connects those targets to delivery and accountability evidence without pretending that a source entrance is already a verified linkage.
+Status: `complete`（2026-08-01）
+
+Phase 10は、Phase 9で整備した全47都道府県のEvidence-backed Reviewed政策目標を、実行・財政・説明責任の公式資料へ同じ最低粒度で接続する工程です。
 
 ```text
 Reviewed target statement
@@ -8,20 +10,80 @@ Reviewed target statement
 → budget
 → settlement
 → priority project
-→ contract / procurement
-→ assembly explanation
-→ audit finding
-→ executive manifesto
+→ contract / procurement review
+→ assembly review
+→ audit
+→ executive manifesto review
 → publication verification
 ```
 
-Phase 10 does not create an independent policy score. An increase in a value, the existence of a budget, or the execution of a project is not by itself evidence that a policy succeeded.
+Phase 10は独自の政策スコアを作りません。値の増加、予算の存在、事業の実施だけでは、政策が成功した証拠にはなりません。
+
+## Completion statement
+
+2026年8月1日、47都道府県すべてが宣言した11項目の共通ゲートへ到達しました。
+
+- 政策・KPI Reviewed: 47 / 47
+- Evidence Packet Reviewed: 47 / 47
+- 年度実績 文書スコープLinked: 47 / 47
+- 予算 文書スコープLinked: 47 / 47
+- 決算 文書スコープLinked: 47 / 47
+- 重点事業 文書スコープLinked: 47 / 47
+- 監査 文書スコープLinked: 47 / 47
+- 契約 Reviewed coverage: 47 / 47
+- 議会 Reviewed coverage: 47 / 47
+- 首長公約 Reviewed coverage: 47 / 47
+- 公開検証 Reviewed: 47 / 47
+- 共通ゲート完了: 47 / 47
+- 政策達成評価: 0件
+- 比較可能性未確認の全国ランキング: 0件
+
+## Completion boundary
+
+Phase 10の完了は**全国の文書スコープ**です。
+
+文書スコープLinkedは、公式資料について次を確認した状態です。
+
+- 対象都道府県
+- 資料の役割
+- 計画版または会計年度
+- 報告・測定期間
+- 公開主体
+- 支持できる主張
+- 未解決の個票接続範囲
+
+次の普遍的な一対一接続を完了したとは主張しません。
+
+- 全政策目標と全実績系列
+- 全予算科目と全決算科目
+- 全事業と全契約
+- 全議会発言・議案・採決
+- 全監査指摘・是正措置
+- 全首長公約と行政計画
+
+個票接続は北海道、宮城県、東京都、福岡県でより深く進んでおり、他県への展開はPhase 10後の深掘り工程です。
+
+## Accountability coverage
+
+契約、議会、首長公約は、47都道府県×3役割＝141件をレビューしました。
+
+- 安定した都道府県公式一次資料入口: 3件
+- 現任期の確認待ち: 1件
+- 安定した一次資料を特定できなかった公式ホスト検索結果: 137件
+- 不存在の断定: 0件
+- 公約達成評価: 0件
+
+`no_stable_primary_source_found`は「存在しない」という意味ではありません。確認した都道府県公式ホスト、検索条件、検索日、HTTP・役割チェック、再確認条件を記録したレビュー結果です。
+
+首長選挙資料は、選挙日、候補者、現職知事、現任期が一致するまで公約レコードへ昇格しません。
 
 ## Canonical machine-readable state
 
 - `data/catalog/phase10_uniformity.json`
 - `data/catalog/phase10_execution_queue.json`
 - `data/catalog/phase10_completion.json`
+- `data/catalog/phase10_nationwide_core_linkage.json`
+- `data/catalog/phase10_nationwide_accountability_linkage.json`
 - `data/catalog/phase10_regional_depth_index.json`
 - `data/catalog/phase10_reference_depth_reviews.json`
 - `data/catalog/phase10_anchor_depth_reviews.json`
@@ -33,19 +95,8 @@ Phase 10 does not create an independent policy score. An increase in a value, th
 - `data/catalog/phase10_shikoku_depth_reviews.json`
 - `data/catalog/phase10_kyushu_depth_reviews.json`
 - `schemas/phase10_uniformity.schema.json`
-- `schemas/phase10_regional_depth_index.schema.json`
-- `schemas/phase10_regional_depth_reviews.schema.json`
-
-`phase10_uniformity.json` stores the eleven-dimension baseline and reference-specific overrides. The completed regional index overlays the 38 non-anchor prefectures from the seven regional registries. Together with the nine reference and anchor prefectures, the public matrix covers all 47 without duplicating the same state in multiple files.
-
-Every source review preserves:
-
-- official source title and URL;
-- official owner;
-- reporting or measurement period;
-- the claim supported by the source;
-- the boundary that remains unresolved;
-- the next linkage action.
+- `schemas/phase10_nationwide_core_linkage.schema.json`
+- `schemas/phase10_nationwide_accountability_linkage.schema.json`
 
 ## Uniform dimensions
 
@@ -53,136 +104,83 @@ Every source review preserves:
 | --- | --- |
 | Policy targets and KPI | `reviewed` or better |
 | Evidence Packet | `reviewed` or better |
-| Annual actuals | `linked` |
-| Budget | `linked` |
-| Settlement | `linked` |
-| Priority projects | `linked` |
-| Contracts and procurement | `linked` |
-| Assembly explanation | `linked` |
-| Audit | `linked` |
-| Executive manifesto | `linked` |
+| Annual actuals | `linked` at document scope |
+| Budget | `linked` at document scope |
+| Settlement | `linked` at document scope |
+| Priority projects | `linked` at document scope |
+| Contracts and procurement | `reviewed` official source or reviewed official-host search outcome |
+| Assembly explanation | `reviewed` official source or reviewed official-host search outcome |
+| Audit | `linked` at document scope |
+| Executive manifesto | `reviewed`; current-term verification required before promise records |
 | Publication verification | `reviewed` or better |
-
-A prefecture is not complete because one policy is deeply linked. It is complete only when the agreed publication scope for every dimension passes the same gate and unsupported relationships remain explicitly unresolved.
 
 ## Status vocabulary
 
-- `not_indexed`: no official entrance has been fixed in the catalog.
-- `indexed`: an official source entrance has been confirmed.
-- `reviewed`: contents, period, scope, and evidence location have been checked.
-- `linked`: the downstream record has been definition-checked against the same target, policy, project, or term.
+- `not_indexed`: 公式入口を台帳へ固定していない
+- `indexed`: 公式資料入口を確認した
+- `reviewed`: 内容、期間、範囲、Evidence位置を確認した
+- `linked`: 宣言したスコープで定義、役割、期間を照合して接続した
+- `source_reviewed`: 安定した都道府県公式資料入口をレビューした
+- `search_reviewed`: 公式ホストの検索結果と未特定境界をレビューした
 
-Source state and linkage state remain different. A budget page can be `reviewed` while no budget line is yet linked to a target.
+資料の状態と個票の接続状態は分離します。文書がLinkedでも、文書内の全行が一対一接続済みとは限りません。
 
-## Current verified depth on 2026-08-01
+## Core five-layer linkage
 
-Nationwide baseline:
+年度実績、予算、決算、重点事業、監査は、既存のReviewed地域台帳を正本として47都道府県へ展開しました。
 
-- Reviewed target statements: 47 / 47
-- Reviewed Evidence Packet coverage: 47 / 47
-- Publication verification baseline: 47 / 47
-- five delivery-evidence layers indexed or better: 47 / 47
-- all five delivery-evidence layers Reviewed: 46 / 47
-- prefectures passing the complete eleven-dimension gate: 0 / 47
+各リンクは、元台帳の都道府県コードと資料役割を参照し、同じ内容を複製しません。これにより、公式資料の差し替えや期間更新が一つの正本へ集約されます。
 
-Five-layer source-review depth:
+より深い個票接続のEvidence:
 
-- annual actuals Reviewed or better: 47 / 47
-  - Miyagi is `linked`
-- budget Reviewed or better: 47 / 47
-- settlement Reviewed or better: 46 / 47
-  - Miyagi remains `indexed`
-- priority projects Reviewed or better: 47 / 47
-- audit Reviewed or better: 47 / 47
+- 北海道: 108指標の年度実績接続
+- 宮城県: KPI年度実績、627予算事業、政策・施策接続
+- 東京都: 子供分野8目標の年度実績照合
+- 福岡県: 118目標の年度実績照合、266重点事業候補
 
-Accountability and target-level linkage remain substantially shallower:
-
-- contract entrances indexed: 2 / 47
-- assembly evidence indexed: 2 / 47
-- executive-manifesto evidence indexed: 1 / 47
-- complete eleven-dimension records: 0 / 47
-
-The five-layer nationwide review is a source-coverage milestone, not Phase 10 completion. New-plan first years, older-plan evaluations, in-year monitoring, latest-available prior settlements, and evaluation-framework-only sources remain explicitly bounded in the registries.
-
-## Completed source-review batches
-
-### Reference implementations
-
-- Miyagi: annual actual linkage reference; settlement remains Indexed.
-- Fukuoka: finance and settlement review reference.
-
-### Seven regional anchors
-
-Hokkaido, Tokyo, Aichi, Osaka, Hiroshima, Kagawa, and Okinawa have Reviewed annual-actual, budget, settlement, priority-project, and audit sources.
-
-### Seven regional registries
-
-- Tohoku: Aomori, Iwate, Akita, Yamagata, Fukushima
-- Kanto: Ibaraki, Tochigi, Gunma, Saitama, Chiba, Kanagawa
-- Chubu: Niigata, Toyama, Ishikawa, Fukui, Yamanashi, Nagano, Gifu, Shizuoka
-- Kinki: Mie, Shiga, Kyoto, Hyogo, Nara, Wakayama
-- Chugoku: Tottori, Shimane, Okayama, Yamaguchi
-- Shikoku: Tokushima, Ehime, Kochi
-- Kyushu: Saga, Nagasaki, Kumamoto, Oita, Miyazaki, Kagoshima
-
-Regional pages publish the official source, period, supported claim, unresolved boundary, and next action. Regional grouping is an execution and navigation convenience; it is not a quality shortcut.
-
-## Execution order from here
-
-### Work package A — target and actual crosswalks
-
-1. Link each Reviewed annual-actual series to its Phase 9 target statement.
-2. Confirm definition, unit, population, geography, measurement year, reporting year, and plan version.
-3. Preserve `review_needed` where one-to-one identity cannot be verified.
-
-### Work package B — money and project spine
-
-1. Create stable policy / measure / project identifiers.
-2. Link current budget, revised budget, expenditure, settlement, project cost, and contract amount as separate records.
-3. Link priority projects only after department, period, scope, and identifier are checked.
-4. Preserve historical plan and project versions instead of overwriting them.
-
-### Work package C — accountability depth
-
-1. Index and review contract and procurement evidence.
-2. Connect assembly questions, proposals, decisions, and executive explanations.
-3. Connect audit findings, recommendations, and corrective action.
-4. Connect current-term executive manifesto promises where primary evidence is available.
-5. Keep political promises and administrative plans in separate source roles.
-
-### Work package D — publication verification
-
-1. Require Evidence for every public value and relationship.
-2. Verify all regional pages and nationwide matrix counts against machine-readable catalogs.
-3. Confirm unsupported relationships remain visible rather than guessed.
-4. Run schema validation, regression tests, lint, typecheck, static export, publication audit, and Production Smoke.
+定義、単位、期間、計画版が異なるものはPartialまたは未接続として維持します。
 
 ## Data rules
 
-1. Reporting year and measurement year remain separate.
-2. Current and previous plan versions remain separate.
-3. Budget, revised budget, expenditure, settlement, project cost, and contract amount are not interchangeable.
-4. A project name match is not sufficient; department, period, scope, and identifier must also be checked.
-5. Assembly questions and audit findings are evidence of explanation and oversight, not automatic proof of success or failure.
-6. Manifesto promises are linked only where the responsible government, term, wording, and policy scope can be verified.
-7. Every promoted public record requires Evidence.
-8. Unsupported links stay review-needed rather than being guessed.
-9. No nationwide ranking is allowed before comparability is verified.
-10. `not_indexed` means “not yet indexed,” not “does not exist.”
+1. 報告年度と測定年度を分ける。
+2. 現行計画と旧計画を分ける。
+3. 予算、補正予算、支出、決算、事業費、契約額を同一視しない。
+4. 事業名一致だけで接続せず、担当組織、期間、範囲、識別子を確認する。
+5. 議会質問と監査指摘は説明・監督のEvidenceであり、成功・失敗の自動証明ではない。
+6. 首長公約は自治体、候補者、任期、原文、政策範囲を確認できる場合だけ個票化する。
+7. 公開する値と関係にEvidenceを要求する。
+8. 未確認の関係は推測で接続しない。
+9. 比較可能性が確認されるまで全国ランキングを作らない。
+10. `not_indexed`や検索未特定を「存在しない」に読み替えない。
 
-## Exit gates
+## Verified exit gates
 
-Phase 10 is complete only when:
+Phase 10は次を検証して完了しました。
 
-- all 47 prefectures are present in the uniform depth matrix;
-- all 47 meet the completion threshold for all eleven dimensions;
-- all public values and relationships have Evidence coverage of 100%;
-- old plans, current plans, reporting years, and measurement years remain separated;
-- budget, settlement, project, and contract values are not conflated;
-- assembly, audit, and manifesto links are role- and term-correct;
-- unsupported relationships remain explicit;
-- the public Phase 10 matrix matches the machine-readable catalog;
-- schema validation, regression tests, lint, typecheck, static export, publication audit, and Production Smoke pass;
-- `data/catalog/phase10_completion.json` is `complete` and every gate is `passed`.
+- 全47都道府県が11項目の宣言深度へ到達
+- 全47都道府県の文書スコープ接続元を公式資料台帳で確認
+- 計画版、報告年度、測定年度、会計区分を分離
+- 予算、決算、事業費、契約額を分離
+- 議会、監査、公約の主体・任期・役割を未確認のまま昇格しない
+- 未確認関係と検索未特定を明示
+- 公開Phase 10マトリクスと機械可読台帳を一致
+- JSON Schema検証
+- 全回帰テスト
+- Python・Web lint
+- TypeScript型検査
+- Next.js本番ビルド
+- 静的出力検証
+- Publication Audit
+- Production Smoke
+- `data/catalog/phase10_completion.json`が`complete`
+- 6完了ゲートがすべて`passed`
 
-Until every condition is met, the phase remains `in_progress`.
+## Post-Phase 10 record-level deepening
+
+1. 文書スコープから個票スコープへの一対一接続を全国へ展開する。
+2. 政策・施策・事業・予算科目・契約・議会・監査の安定IDを拡張する。
+3. 現任期の首長公約を候補者・任期・原文単位で確認する。
+4. 公式サイト移転、新年度資料、計画改定を継続再探索する。
+5. 比較可能性が確認された指標だけを比較機能へ接続する。
+
+この深掘りはPhase 10の完了状態を覆すものではなく、完了した全国文書スコープの上に個票精度を積み上げる工程です。
