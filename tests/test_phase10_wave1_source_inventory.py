@@ -10,12 +10,23 @@ SCHEMA_PATH = ROOT / "schemas/phase10_wave1_source_inventory.schema.json"
 QUEUE_PATH = ROOT / "data/catalog/phase10_execution_queue.json"
 COMPLETION_PATH = ROOT / "data/catalog/phase10_completion.json"
 NATIONWIDE_PATH = ROOT / "data/catalog/nationwide_source_inventory.json"
+CORE_PATH = ROOT / "data/catalog/phase10_nationwide_core_linkage.json"
+ACCOUNTABILITY_PATH = (
+    ROOT / "data/catalog/phase10_nationwide_accountability_linkage.json"
+)
 
 CATEGORIES = {
     "annual_evaluation",
     "budget",
     "project_evaluation",
     "contracts",
+}
+COMPLETED_DEPTH = {
+    "target_statements": "reviewed",
+    "annual_evaluation": "linked",
+    "budget": "linked",
+    "project_evaluation": "linked",
+    "contracts": "reviewed",
 }
 
 
@@ -73,32 +84,25 @@ def test_source_inventory_summary_is_derived_from_records():
     assert inventory["policy_achievement_assessment_status"] == "not_assessed"
 
 
-def test_wave1_queue_promotes_only_source_inventory_depth():
+def test_wave1_queue_preserves_history_and_reports_completed_depth():
     queue = load(QUEUE_PATH)
     by_code = {
         record["prefecture_code"]: record for record in queue["wave1_records"]
     }
 
-    assert by_code["04"]["current_depth"] == {
-        "target_statements": "reviewed",
-        "annual_evaluation": "linked",
-        "budget": "indexed",
-        "project_evaluation": "indexed",
-        "contracts": "indexed",
-    }
-    assert by_code["40"]["current_depth"] == {
-        "target_statements": "reviewed",
-        "annual_evaluation": "indexed",
-        "budget": "reviewed",
-        "project_evaluation": "indexed",
-        "contracts": "indexed",
-    }
-    assert queue["counts"]["project_evaluation_indexed_or_better"] == 2
-    assert queue["counts"]["contracts_indexed_or_better"] == 2
+    assert by_code["04"]["current_depth"] == COMPLETED_DEPTH
+    assert by_code["40"]["current_depth"] == COMPLETED_DEPTH
+    assert all(record["status"] == "complete" for record in by_code.values())
+    assert all(
+        record["next_gate"] == "publication_verification"
+        for record in by_code.values()
+    )
+    assert queue["counts"]["project_evaluation_indexed_or_better"] == 47
+    assert queue["counts"]["contracts_indexed_or_better"] == 47
     assert queue["policy_achievement_assessment_status"] == "not_assessed"
 
 
-def test_nationwide_inventory_reflects_miyagi_and_fukuoka_source_indexing():
+def test_nationwide_inventory_remains_a_historical_source_index():
     inventory = load(NATIONWIDE_PATH)
     by_code = {record["prefecture_code"]: record for record in inventory["records"]}
 
@@ -119,21 +123,22 @@ def test_nationwide_inventory_reflects_miyagi_and_fukuoka_source_indexing():
         }
 
 
-def test_phase10_completion_tracks_new_source_inventory_depth():
+def test_phase10_completion_uses_new_canonical_registries():
     completion = load(COMPLETION_PATH)
-    assert completion["counts"]["project_evaluation_indexed_or_better"] == 2
-    assert completion["counts"]["contracts_indexed_or_better"] == 2
+    core = load(CORE_PATH)
+    accountability = load(ACCOUNTABILITY_PATH)
+
+    assert completion["counts"]["project_evaluation_indexed_or_better"] == 47
+    assert completion["counts"]["contracts_indexed_or_better"] == 47
+    assert core["summary"]["linked_prefecture_count"] == 47
+    assert accountability["summary"]["reviewed_role_count"] == 141
 
     gates = {gate["id"]: gate for gate in completion["gates"]}
-    assert gates["wave1_money_and_project_spine"]["status"] == "in_progress"
-    assert gates["contracts_and_accountability_linkage"]["status"] == "in_progress"
-    assert all(
-        "data/catalog/phase10_wave1_source_inventory.json"
-        in gates[gate_id]["evidence_paths"]
-        for gate_id in (
-            "nationwide_vertical_source_inventory",
-            "wave1_annual_actuals_linkage",
-            "wave1_money_and_project_spine",
-            "contracts_and_accountability_linkage",
-        )
-    )
+    assert gates["wave1_money_and_project_spine"]["status"] == "passed"
+    assert gates["contracts_and_accountability_linkage"]["status"] == "passed"
+    assert CORE_PATH.relative_to(ROOT).as_posix() in gates[
+        "wave1_money_and_project_spine"
+    ]["evidence_paths"]
+    assert ACCOUNTABILITY_PATH.relative_to(ROOT).as_posix() in gates[
+        "contracts_and_accountability_linkage"
+    ]["evidence_paths"]
