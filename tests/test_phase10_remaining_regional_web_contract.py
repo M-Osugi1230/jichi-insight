@@ -14,7 +14,7 @@ def test_shared_regional_page_preserves_review_boundaries():
     for required in (
         "5層Reviewed",
         "次の接続",
-        "policy-achievement",
+        "資料確認だけで達成・未達を判定しません。",
         "regionalDepthLabels",
         "source.boundary",
         "record.next_linkage",
