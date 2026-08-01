@@ -186,3 +186,7 @@ pnpm check
 ## License
 
 コード、方法論、データの権利関係は分離して扱います。ライセンス確定前の内容は、権利者の明示的な許可なく再利用できません。詳細は [DATA_POLICY.md](DATA_POLICY.md) を参照してください。
+
+## Phase 10 completion (2026-08-01)
+
+Phase 10 is complete at nationwide document scope for all 47 prefectures. The five delivery-evidence layers are linked by prefecture, official role, and reporting period. Contracts, assembly, and executive-manifesto coverage is Reviewed through an official source entrance or an explicit official-host search outcome. Missing results do not assert nonexistence. Record-level one-to-one deepening and policy-achievement assessment remain outside this completion claim.

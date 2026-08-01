@@ -187,3 +187,7 @@ Phase 10は次の条件をすべて満たすまで`complete`にしません。
 3. その他市区町村
 4. 選挙・候補者比較
 5. API、データダウンロード、研究・報道向け機能
+
+## Phase 10 — Complete (2026-08-01)
+
+All 47 prefectures satisfy the declared 11-dimension completion depths. Nationwide document-scope linkage and accountability-source review are complete; record-level deepening continues as the next research track without changing Phase 10 status.

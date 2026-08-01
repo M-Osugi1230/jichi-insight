@@ -186,3 +186,7 @@ Phase 10 is complete only when:
 - `data/catalog/phase10_completion.json` is `complete` and every gate is `passed`.
 
 Until every condition is met, the phase remains `in_progress`.
+
+## Completion boundary (2026-08-01)
+
+Phase 10 completion means nationwide document-scope linkage, not universal one-to-one target, budget-line, project, contract, statement, or audit-finding linkage. For accountability roles, a Reviewed official-host search outcome is retained when no stable primary source is identified; it is not a nonexistence claim. Achievement is not assessed.

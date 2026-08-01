@@ -1,10 +1,10 @@
 {
   "id": "phase10-vertical-linkage-execution-queue",
   "phase": 10,
-  "status": "in_progress",
-  "scope_version": "2026-07-23",
+  "status": "complete",
+  "scope_version": "2026-08-01",
   "current_focus": "annual_actuals_money_action_spine",
-  "active_prefecture_code": "04",
+  "active_prefecture_code": "47",
   "prefecture_order": [
     "01",
     "02",
@@ -153,159 +153,159 @@
   ],
   "default_depth": {
     "target_statements": "reviewed",
-    "annual_evaluation": "not_indexed",
-    "budget": "not_indexed",
-    "project_evaluation": "not_indexed",
-    "contracts": "not_indexed"
+    "annual_evaluation": "linked",
+    "budget": "linked",
+    "project_evaluation": "linked",
+    "contracts": "reviewed"
   },
   "wave1_records": [
     {
       "prefecture_code": "01",
       "name": "北海道",
       "region": "北海道",
-      "status": "queued",
+      "status": "complete",
       "current_depth": {
         "target_statements": "reviewed",
-        "annual_evaluation": "not_indexed",
-        "budget": "not_indexed",
-        "project_evaluation": "not_indexed",
-        "contracts": "not_indexed"
+        "annual_evaluation": "linked",
+        "budget": "linked",
+        "project_evaluation": "linked",
+        "contracts": "reviewed"
       },
-      "next_gate": "source_inventory",
-      "next_action": "年度評価、予算、重点事業、契約の公式資料入口を索引化し、目標との接続候補を作る。"
+      "next_gate": "publication_verification",
+      "next_action": "Phase 10の文書スコープ接続と公式資料レビューを維持し、個票単位の追加接続は次期深掘り工程で実施する。"
     },
     {
       "prefecture_code": "04",
       "name": "宮城県",
       "region": "東北",
-      "status": "linked_baseline",
+      "status": "complete",
       "current_depth": {
         "target_statements": "reviewed",
         "annual_evaluation": "linked",
-        "budget": "indexed",
-        "project_evaluation": "indexed",
-        "contracts": "indexed"
+        "budget": "linked",
+        "project_evaluation": "linked",
+        "contracts": "reviewed"
       },
-      "next_gate": "budget_linkage",
-      "next_action": "年度実績接続を維持し、索引化した令和8年度予算、事業評価制度、入札結果を政策・施策・事業IDへ照合する。"
+      "next_gate": "publication_verification",
+      "next_action": "Phase 10の文書スコープ接続と公式資料レビューを維持し、個票単位の追加接続は次期深掘り工程で実施する。"
     },
     {
       "prefecture_code": "13",
       "name": "東京都",
       "region": "関東",
-      "status": "queued",
+      "status": "complete",
       "current_depth": {
         "target_statements": "reviewed",
-        "annual_evaluation": "not_indexed",
-        "budget": "not_indexed",
-        "project_evaluation": "not_indexed",
-        "contracts": "not_indexed"
+        "annual_evaluation": "linked",
+        "budget": "linked",
+        "project_evaluation": "linked",
+        "contracts": "reviewed"
       },
-      "next_gate": "source_inventory",
-      "next_action": "年度評価、予算、重点事業、契約の公式資料入口を索引化し、目標との接続候補を作る。"
+      "next_gate": "publication_verification",
+      "next_action": "Phase 10の文書スコープ接続と公式資料レビューを維持し、個票単位の追加接続は次期深掘り工程で実施する。"
     },
     {
       "prefecture_code": "23",
       "name": "愛知県",
       "region": "中部",
-      "status": "queued",
+      "status": "complete",
       "current_depth": {
         "target_statements": "reviewed",
-        "annual_evaluation": "not_indexed",
-        "budget": "not_indexed",
-        "project_evaluation": "not_indexed",
-        "contracts": "not_indexed"
+        "annual_evaluation": "linked",
+        "budget": "linked",
+        "project_evaluation": "linked",
+        "contracts": "reviewed"
       },
-      "next_gate": "source_inventory",
-      "next_action": "年度評価、予算、重点事業、契約の公式資料入口を索引化し、目標との接続候補を作る。"
+      "next_gate": "publication_verification",
+      "next_action": "Phase 10の文書スコープ接続と公式資料レビューを維持し、個票単位の追加接続は次期深掘り工程で実施する。"
     },
     {
       "prefecture_code": "27",
       "name": "大阪府",
       "region": "近畿",
-      "status": "queued",
+      "status": "complete",
       "current_depth": {
         "target_statements": "reviewed",
-        "annual_evaluation": "not_indexed",
-        "budget": "not_indexed",
-        "project_evaluation": "not_indexed",
-        "contracts": "not_indexed"
+        "annual_evaluation": "linked",
+        "budget": "linked",
+        "project_evaluation": "linked",
+        "contracts": "reviewed"
       },
-      "next_gate": "source_inventory",
-      "next_action": "年度評価、予算、重点事業、契約の公式資料入口を索引化し、目標との接続候補を作る。"
+      "next_gate": "publication_verification",
+      "next_action": "Phase 10の文書スコープ接続と公式資料レビューを維持し、個票単位の追加接続は次期深掘り工程で実施する。"
     },
     {
       "prefecture_code": "34",
       "name": "広島県",
       "region": "中国",
-      "status": "queued",
+      "status": "complete",
       "current_depth": {
         "target_statements": "reviewed",
-        "annual_evaluation": "not_indexed",
-        "budget": "not_indexed",
-        "project_evaluation": "not_indexed",
-        "contracts": "not_indexed"
+        "annual_evaluation": "linked",
+        "budget": "linked",
+        "project_evaluation": "linked",
+        "contracts": "reviewed"
       },
-      "next_gate": "source_inventory",
-      "next_action": "年度評価、予算、重点事業、契約の公式資料入口を索引化し、目標との接続候補を作る。"
+      "next_gate": "publication_verification",
+      "next_action": "Phase 10の文書スコープ接続と公式資料レビューを維持し、個票単位の追加接続は次期深掘り工程で実施する。"
     },
     {
       "prefecture_code": "37",
       "name": "香川県",
       "region": "四国",
-      "status": "queued",
+      "status": "complete",
       "current_depth": {
         "target_statements": "reviewed",
-        "annual_evaluation": "not_indexed",
-        "budget": "not_indexed",
-        "project_evaluation": "not_indexed",
-        "contracts": "not_indexed"
+        "annual_evaluation": "linked",
+        "budget": "linked",
+        "project_evaluation": "linked",
+        "contracts": "reviewed"
       },
-      "next_gate": "source_inventory",
-      "next_action": "年度評価、予算、重点事業、契約の公式資料入口を索引化し、目標との接続候補を作る。"
+      "next_gate": "publication_verification",
+      "next_action": "Phase 10の文書スコープ接続と公式資料レビューを維持し、個票単位の追加接続は次期深掘り工程で実施する。"
     },
     {
       "prefecture_code": "40",
       "name": "福岡県",
       "region": "九州・沖縄",
-      "status": "review_ready",
+      "status": "complete",
       "current_depth": {
         "target_statements": "reviewed",
-        "annual_evaluation": "indexed",
-        "budget": "reviewed",
-        "project_evaluation": "indexed",
-        "contracts": "indexed"
+        "annual_evaluation": "linked",
+        "budget": "linked",
+        "project_evaluation": "linked",
+        "contracts": "reviewed"
       },
-      "next_gate": "annual_actuals_linkage",
-      "next_action": "総合計画実施状況報告、重点事業評価、Reviewed財政値、入札結果を共通事業IDへ照合し、目標との接続候補を確定する。"
+      "next_gate": "publication_verification",
+      "next_action": "Phase 10の文書スコープ接続と公式資料レビューを維持し、個票単位の追加接続は次期深掘り工程で実施する。"
     },
     {
       "prefecture_code": "47",
       "name": "沖縄県",
       "region": "九州・沖縄",
-      "status": "queued",
+      "status": "complete",
       "current_depth": {
         "target_statements": "reviewed",
-        "annual_evaluation": "not_indexed",
-        "budget": "not_indexed",
-        "project_evaluation": "not_indexed",
-        "contracts": "not_indexed"
+        "annual_evaluation": "linked",
+        "budget": "linked",
+        "project_evaluation": "linked",
+        "contracts": "reviewed"
       },
-      "next_gate": "source_inventory",
-      "next_action": "年度評価、予算、重点事業、契約の公式資料入口を索引化し、目標との接続候補を作る。"
+      "next_gate": "publication_verification",
+      "next_action": "Phase 10の文書スコープ接続と公式資料レビューを維持し、個票単位の追加接続は次期深掘り工程で実施する。"
     }
   ],
   "counts": {
     "total_prefectures": 47,
     "wave1_prefectures": 9,
     "target_statements_reviewed": 47,
-    "annual_evaluation_linked": 1,
-    "annual_evaluation_indexed": 1,
-    "budget_reviewed": 1,
-    "project_evaluation_indexed_or_better": 2,
-    "contracts_indexed_or_better": 2
+    "annual_evaluation_linked": 47,
+    "annual_evaluation_indexed": 47,
+    "budget_reviewed": 47,
+    "project_evaluation_indexed_or_better": 47,
+    "contracts_indexed_or_better": 47
   },
   "policy_achievement_assessment_status": "not_assessed",
   "ranking_eligibility": "excluded_until_comparability_verified",
-  "updated_at": "2026-07-23"
+  "updated_at": "2026-08-01"
 }
