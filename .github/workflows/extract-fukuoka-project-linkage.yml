@@ -1,0 +1,72 @@
+name: Extract Fukuoka Project Linkage
+
+on:
+  push:
+    branches:
+      - agent/phase10-fukuoka-money-linkage
+    paths:
+      - .github/workflows/extract-fukuoka-project-linkage.yml
+      - scripts/extract_fukuoka_project_linkage.py
+  pull_request:
+    branches:
+      - main
+    paths:
+      - .github/workflows/extract-fukuoka-project-linkage.yml
+      - scripts/extract_fukuoka_project_linkage.py
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install extraction dependencies
+        run: python -m pip install --disable-pip-version-check pdfplumber requests beautifulsoup4
+      - name: Download official Fukuoka PDFs
+        run: |
+          curl --fail --location --retry 3 \
+            --output /tmp/fukuoka-evaluation-summary.pdf \
+            https://www.pref.fukuoka.lg.jp/uploaded/life/810515_62838386_misc.pdf
+          curl --fail --location --retry 3 \
+            --output /tmp/fukuoka-budget-2026.pdf \
+            https://www.pref.fukuoka.lg.jp/uploaded/attachment/278132.pdf
+          python - <<'PY'
+          from urllib.parse import urljoin
+          import requests
+          from bs4 import BeautifulSoup
+
+          page = "https://www.pref.fukuoka.lg.jp/contents/kessan.html"
+          response = requests.get(page, timeout=60)
+          response.raise_for_status()
+          soup = BeautifulSoup(response.text, "html.parser")
+          links = [
+              link for link in soup.find_all("a", href=True)
+              if "主要施策の成果に関する説明書" in link.get_text(" ", strip=True)
+          ]
+          if not links:
+              raise SystemExit("FY2024 major-policy-results PDF was not found")
+          url = urljoin(page, links[0]["href"])
+          pdf = requests.get(url, timeout=120)
+          pdf.raise_for_status()
+          open("/tmp/fukuoka-settlement-2024.pdf", "wb").write(pdf.content)
+          open("/tmp/fukuoka-settlement-url.txt", "w", encoding="utf-8").write(url)
+          print(url)
+          PY
+      - name: Extract candidate project linkages
+        run: |
+          python scripts/extract_fukuoka_project_linkage.py \
+            --evaluation-pdf /tmp/fukuoka-evaluation-summary.pdf \
+            --budget-pdf /tmp/fukuoka-budget-2026.pdf \
+            --settlement-pdf /tmp/fukuoka-settlement-2024.pdf \
+            --target-root data/entities/policy \
+            --output-dir extracted-fukuoka-project-linkage
+          cp /tmp/fukuoka-settlement-url.txt extracted-fukuoka-project-linkage/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fukuoka-project-linkage-extraction
+          path: extracted-fukuoka-project-linkage
+          if-no-files-found: error
+          retention-days: 7
