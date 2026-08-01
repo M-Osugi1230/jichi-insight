@@ -22,20 +22,34 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref || github.ref_name }}
       - name: Generate nationwide core linkage registry
         run: |
           python scripts/build_phase10_nationwide_core_linkage.py \
-            --output extracted-phase10-core-linkage/phase10_nationwide_core_linkage.json
+            --output data/catalog/phase10_nationwide_core_linkage.json
       - uses: actions/upload-artifact@v4
         with:
           name: phase10-nationwide-core-linkage
-          path: extracted-phase10-core-linkage
+          path: data/catalog/phase10_nationwide_core_linkage.json
           if-no-files-found: error
           retention-days: 7
+      - name: Commit generated registry
+        if: github.event_name == 'push'
+        run: |
+          if git diff --quiet -- data/catalog/phase10_nationwide_core_linkage.json; then
+            echo "Registry is already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/catalog/phase10_nationwide_core_linkage.json
+          git commit -m "Generate Phase 10 nationwide core linkage"
+          git push origin HEAD:${{ github.ref_name }}
