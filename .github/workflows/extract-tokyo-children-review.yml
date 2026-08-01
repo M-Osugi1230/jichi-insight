@@ -8,6 +8,7 @@ on:
       - .github/workflows/extract-tokyo-children-review.yml
       - scripts/extract_tokyo_children_review_candidates.py
       - scripts/extract_tokyo_children_actual_linkage.py
+      - scripts/extract_tokyo_children_actual_linkage_reviewed.py
   pull_request:
     branches:
       - main
@@ -15,6 +16,7 @@ on:
       - .github/workflows/extract-tokyo-children-review.yml
       - scripts/extract_tokyo_children_review_candidates.py
       - scripts/extract_tokyo_children_actual_linkage.py
+      - scripts/extract_tokyo_children_actual_linkage_reviewed.py
   workflow_dispatch:
 
 permissions:
@@ -42,7 +44,7 @@ jobs:
             --output-dir extracted-tokyo-children-review
       - name: Create reviewed linkage registry
         run: |
-          python scripts/extract_tokyo_children_actual_linkage.py \
+          python scripts/extract_tokyo_children_actual_linkage_reviewed.py \
             --catalog data/entities/policy/tokyo_policy_target_catalog_children.json \
             --review-pdf /tmp/tokyo-policy-review-2025.pdf \
             --output-dir extracted-tokyo-children-reviewed
