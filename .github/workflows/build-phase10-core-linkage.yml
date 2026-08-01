@@ -1,0 +1,41 @@
+name: Build Phase 10 Nationwide Core Linkage
+
+on:
+  push:
+    branches:
+      - agent/phase10-progress-sync
+    paths:
+      - .github/workflows/build-phase10-core-linkage.yml
+      - scripts/build_phase10_nationwide_core_linkage.py
+      - data/catalog/phase10_reference_depth_reviews.json
+      - data/catalog/phase10_anchor_depth_reviews.json
+      - data/catalog/phase10_*_depth_reviews.json
+  pull_request:
+    branches:
+      - main
+    paths:
+      - .github/workflows/build-phase10-core-linkage.yml
+      - scripts/build_phase10_nationwide_core_linkage.py
+      - data/catalog/phase10_reference_depth_reviews.json
+      - data/catalog/phase10_anchor_depth_reviews.json
+      - data/catalog/phase10_*_depth_reviews.json
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate nationwide core linkage registry
+        run: |
+          python scripts/build_phase10_nationwide_core_linkage.py \
+            --output extracted-phase10-core-linkage/phase10_nationwide_core_linkage.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: phase10-nationwide-core-linkage
+          path: extracted-phase10-core-linkage
+          if-no-files-found: error
+          retention-days: 7
