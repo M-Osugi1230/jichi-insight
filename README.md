@@ -13,6 +13,7 @@ Jichi Insight（自治体インサイト）は、自治体が公開する政策�
 - 現行政策計画確認: 47 / 47
 - Evidence-backed Reviewed数値目標: 47 / 47
 - 全国公開ページ: 47 / 47
+- Phase 10の5層公式資料入口: 47 / 47
 - Phase 10同一粒度完了: 0 / 47
 - 独自の政策達成評価: 0件
 - 比較可能性未確認の全国ランキング: 0件
@@ -59,7 +60,7 @@ registered
 → published
 ```
 
-資料入口を確認した`indexed`と、値・期間・対象範囲を確認した`reviewed`、同じ政策系列へ接続した`linked`は別の状態です。
+資料入口を確認した`indexed`と、内容・期間・対象範囲・出典を確認した`reviewed`、同じ政策系列へ一対一で接続した`linked`は別の状態です。
 
 ## Phase 10 — Nationwide uniform depth
 
@@ -77,34 +78,42 @@ registered
 10. 首長公約
 11. 公開検証
 
-現在の保守的な基準値:
+### 2026-08-01時点の保守的な基準値
 
 - Reviewed政策目標: 47 / 47
 - Reviewed Evidence: 47 / 47
-- 5層すべて入口確認以上: 14 / 47
-  - 9地域拠点＋東北5県
-- 5層すべてReviewed: 13 / 47
+- 年度実績・予算・決算・重点事業・監査の5層すべて入口確認以上: 47 / 47
+- 5層すべてReviewed: 46 / 47
   - 宮城県の決算は入口確認
-- 年度実績 Reviewed以上: 14 / 47
+- 年度実績 Reviewed以上: 47 / 47
   - うちLinked: 1 / 47（宮城県）
-- 予算 Reviewed以上: 14 / 47
-- 決算 Reviewed以上: 13 / 47
-- 重点事業 Reviewed以上: 14 / 47
-- 監査 Reviewed以上: 14 / 47
+- 予算 Reviewed以上: 47 / 47
+- 決算 Reviewed以上: 46 / 47
+- 重点事業 Reviewed以上: 47 / 47
+- 監査 Reviewed以上: 47 / 47
 - 契約 indexed以上: 2 / 47
 - 議会 indexed以上: 2 / 47
 - 首長公約 indexed以上: 1 / 47
 - 11項目すべて同一粒度完了: 0 / 47
 
-9地域拠点と東北5県について、年度実績、現年度予算、直近決算、重点事業、監査の公式資料を個別に確認しました。Reviewedは資料内容・期間・範囲・出典を確認した状態であり、政策目標との直接接続を意味しません。
+5層の公式資料レビューは全国まで到達しました。ただし、これは資料の内容・期間・役割・未接続範囲を確認した状態です。政策目標と年度実績、予算額、決算額、重点事業、監査意見を一対一で接続したことを意味しません。
+
+新計画初年度、旧計画評価、年度途中モニタリング、過年度決算、評価制度入口しか確認できない場合は、その制約を各地域台帳と公開ページに明記しています。
 
 正本:
 
 - [`data/catalog/phase10_uniformity.json`](data/catalog/phase10_uniformity.json)
 - [`data/catalog/phase10_completion.json`](data/catalog/phase10_completion.json)
+- [`data/catalog/phase10_regional_depth_index.json`](data/catalog/phase10_regional_depth_index.json)
 - [`data/catalog/phase10_reference_depth_reviews.json`](data/catalog/phase10_reference_depth_reviews.json)
 - [`data/catalog/phase10_anchor_depth_reviews.json`](data/catalog/phase10_anchor_depth_reviews.json)
 - [`data/catalog/phase10_tohoku_depth_reviews.json`](data/catalog/phase10_tohoku_depth_reviews.json)
+- [`data/catalog/phase10_kanto_depth_reviews.json`](data/catalog/phase10_kanto_depth_reviews.json)
+- [`data/catalog/phase10_chubu_depth_reviews.json`](data/catalog/phase10_chubu_depth_reviews.json)
+- [`data/catalog/phase10_kinki_depth_reviews.json`](data/catalog/phase10_kinki_depth_reviews.json)
+- [`data/catalog/phase10_chugoku_depth_reviews.json`](data/catalog/phase10_chugoku_depth_reviews.json)
+- [`data/catalog/phase10_shikoku_depth_reviews.json`](data/catalog/phase10_shikoku_depth_reviews.json)
+- [`data/catalog/phase10_kyushu_depth_reviews.json`](data/catalog/phase10_kyushu_depth_reviews.json)
 - [Phase 10 nationwide uniform depth](docs/PHASE10_VERTICAL_LINKAGE.md)
 
 ## Repository map
@@ -166,13 +175,13 @@ pnpm check
 
 ## Current execution order
 
-1. 関東6県を年度実績・予算・決算・重点事業・監査までReviewed化
-2. 中部、近畿、中国、四国、九州・沖縄を同じ工程へ展開
-3. 14県の年度実績をReviewed政策目標へ一対一照合
-4. 政策・施策・事業の共通IDを作り、予算・決算・重点事業を接続
-5. 契約、議会、監査、首長公約を同じ政策系列へ接続
-6. 全47都道府県のEvidence coverageと公開状態を検証
-7. 11項目すべてが共通ゲートへ到達した場合のみPhase 10を完了
+1. 全47都道府県の年度実績をReviewed政策目標へ一対一照合
+2. 政策・施策・事業の共通IDを作成
+3. 予算、補正予算、決算、事業費、契約額を別レコードで接続
+4. 契約・調達、議会説明、監査指摘、是正措置を同じ政策系列へ接続
+5. 現任期の首長公約を行政計画と分離して接続
+6. 全公開値・関係のEvidence coverageと公開状態を検証
+7. 47都道府県すべてが11項目の共通ゲートへ到達した場合のみPhase 10を完了
 
 ## License
 
