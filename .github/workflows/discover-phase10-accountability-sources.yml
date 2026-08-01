@@ -58,7 +58,7 @@ jobs:
       - name: Commit reviewed accountability registry
         if: github.event_name == 'push'
         run: |
-          if git diff --quiet -- data/catalog/phase10_nationwide_accountability_linkage.json; then
+          if [ -z "$(git status --porcelain -- data/catalog/phase10_nationwide_accountability_linkage.json)" ]; then
             echo "Registry is already current."
             exit 0
           fi
