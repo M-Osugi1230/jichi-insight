@@ -48,7 +48,9 @@ def role_match(role: str, candidate: dict) -> bool:
 
 def select_source(role: str, role_data: dict) -> dict | None:
     for candidate in role_data["candidates"]:
-        if not candidate["official_domain"] or not official_url(candidate["url"]):
+        if not candidate["official_domain"] or not candidate["prefecture_host_match"]:
+            continue
+        if not official_url(candidate["url"]):
             continue
         if candidate["http_status"] not in {200, 206}:
             continue
@@ -72,11 +74,11 @@ def reviewed_role(record: dict, role: str) -> dict:
     if source is None:
         return {
             **common,
-            "linkage_status": "search_outcome_linked",
+            "coverage_status": "search_reviewed",
             "result_status": "no_stable_primary_source_found",
             "source": None,
             "review_note": (
-                "The official-domain search did not produce a stable primary source that "
+                "The prefecture-host search did not produce a stable primary source that "
                 "passed role and HTTP checks. This is a reviewed search outcome, not a claim "
                 "that the source does not exist."
             ),
@@ -86,35 +88,44 @@ def reviewed_role(record: dict, role: str) -> dict:
             ),
         }
 
-    term_note = (
-        "The page is linked as an official source entrance. Individual contracts, statements, "
-        "or agenda items remain separate record-level work."
-    )
     if role == "executive_manifesto":
-        term_note = (
-            "The source is an official candidate only until the election date and current "
-            "executive term are confirmed. It is not used to assess promise progress."
-        )
+        return {
+            **common,
+            "coverage_status": "search_reviewed",
+            "result_status": "term_verification_required",
+            "source": {
+                "title": source["title"],
+                "url": source["url"],
+                "http_status": source["http_status"],
+                "discovery_query": source["discovery_query"],
+            },
+            "review_note": (
+                "The source is retained as an official candidate until its election date and "
+                "the current governor term are confirmed. It is not used to assess progress."
+            ),
+            "next_action": (
+                "Confirm the election date, candidate identity, and current governor term before "
+                "creating promise records or linking implementation evidence."
+            ),
+        }
+
     return {
         **common,
-        "linkage_status": (
-            "source_linked" if role != "executive_manifesto" else "search_outcome_linked"
-        ),
-        "result_status": (
-            "source_registered"
-            if role != "executive_manifesto"
-            else "term_verification_required"
-        ),
+        "coverage_status": "source_reviewed",
+        "result_status": "source_registered",
         "source": {
             "title": source["title"],
             "url": source["url"],
             "http_status": source["http_status"],
             "discovery_query": source["discovery_query"],
         },
-        "review_note": term_note,
+        "review_note": (
+            "The page is registered as the prefecture-level official source entrance. Individual "
+            "contracts, statements, agenda items, and votes remain separate record-level work."
+        ),
         "next_action": (
             "Expand the source entrance into stable record-level identifiers without changing "
-            "the document role or reporting-term boundary."
+            "the source role, organization boundary, or reporting-period boundary."
         ),
     }
 
@@ -128,10 +139,7 @@ def main() -> None:
     candidates = load(args.candidates)
     records = []
     for record in candidates["records"]:
-        roles = {
-            role: reviewed_role(record, role)
-            for role in ROLES
-        }
+        roles = {role: reviewed_role(record, role) for role in ROLES}
         records.append(
             {
                 "prefecture_code": record["prefecture_code"],
@@ -159,9 +167,10 @@ def main() -> None:
         "status": "complete",
         "scope_version": "2026-08-01",
         "completion_definition": (
-            "Each prefecture and accountability role is linked either to a reviewed official "
-            "source entrance or to an explicit reviewed official-search outcome. Search outcomes "
-            "do not assert nonexistence, and executive candidates are not promoted across terms."
+            "Each prefecture and accountability role has a completed review record: either a "
+            "prefecture-level official source entrance passed role and HTTP checks, or the "
+            "prefecture-host search outcome is recorded explicitly. Search outcomes do not "
+            "assert nonexistence, and executive candidates are never promoted across terms."
         ),
         "roles": list(ROLES),
         "records": records,
