@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.example/schemas/phase10_regional_depth_index.schema.json",
+  "title": "Phase 10 regional depth index",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "phase",
+    "status",
+    "batches",
+    "reviewed_prefecture_count",
+    "updated_at"
+  ],
+  "properties": {
+    "id": {"const": "phase10-regional-depth-index"},
+    "phase": {"const": 10},
+    "status": {"enum": ["in_progress", "complete"]},
+    "batches": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 7,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "slug",
+          "label",
+          "region",
+          "filename",
+          "route",
+          "prefecture_codes"
+        ],
+        "properties": {
+          "slug": {
+            "enum": [
+              "tohoku",
+              "kanto",
+              "chubu",
+              "kinki",
+              "chugoku",
+              "shikoku",
+              "kyushu"
+            ]
+          },
+          "label": {"type": "string", "minLength": 3},
+          "region": {
+            "enum": ["東北", "関東", "中部", "近畿", "中国", "四国", "九州・沖縄"]
+          },
+          "filename": {
+            "type": "string",
+            "pattern": "^phase10_[a-z]+_depth_reviews\\.json$"
+          },
+          "route": {
+            "type": "string",
+            "pattern": "^/municipalities/phase10/[a-z]+$"
+          },
+          "prefecture_codes": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^(0[1-9]|[1-3][0-9]|4[0-7])$"
+            }
+          }
+        }
+      }
+    },
+    "reviewed_prefecture_count": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 38
+    },
+    "updated_at": {"type": "string", "format": "date"}
+  }
+}
