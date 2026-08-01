@@ -34,7 +34,7 @@ DEEPER_EVIDENCE = {
     ],
     "04": [
         "data/catalog/miyagi_policy_review_manifest.json",
-        "data/catalog/miyagi_project_money_linkage_index.json",
+        "data/catalog/miyagi_project_money_linkage.json",
         "tests/test_miyagi_project_money_linkage.py",
     ],
     "13": [
@@ -42,8 +42,8 @@ DEEPER_EVIDENCE = {
         "tests/test_tokyo_children_annual_actual_linkage.py",
     ],
     "40": [
-        "data/catalog/fukuoka_annual_actual_linkage_index.json",
-        "data/catalog/fukuoka_project_linkage_index.json",
+        "data/catalog/fukuoka_annual_actual_linkage.json",
+        "data/catalog/fukuoka_project_linkage.json",
         "tests/test_fukuoka_annual_actual_linkage.py",
         "tests/test_fukuoka_project_linkage.py",
     ],
