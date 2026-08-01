@@ -3,7 +3,7 @@ name: Extract Fukuoka Project Linkage
 on:
   push:
     branches:
-      - agent/phase10-fukuoka-money-linkage
+      - main
     paths:
       - .github/workflows/extract-fukuoka-project-linkage.yml
       - scripts/extract_fukuoka_project_linkage.py
@@ -16,7 +16,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   extract:
@@ -63,17 +63,6 @@ jobs:
             --settlement-pdf /tmp/fukuoka-settlement-2024.pdf \
             --target-root data/entities/policy \
             --output-dir extracted-fukuoka-project-linkage
-      - name: Commit candidate registries
-        if: github.event_name == 'push'
-        run: |
-          cp extracted-fukuoka-project-linkage/fukuoka_project_linkage*.json data/catalog/
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/catalog/fukuoka_project_linkage*.json
-          if ! git diff --cached --quiet; then
-            git commit -m "data: update Fukuoka project linkage candidates"
-            git push
-          fi
       - uses: actions/upload-artifact@v4
         with:
           name: fukuoka-project-linkage-extraction
