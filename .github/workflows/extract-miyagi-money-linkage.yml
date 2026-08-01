@@ -18,7 +18,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   extract:
@@ -41,6 +41,17 @@ jobs:
             --budget-pdf /tmp/miyagi-budget-reflection.pdf \
             --settlement-pdf /tmp/miyagi-settlement-results.pdf \
             --output-dir extracted-miyagi-money-linkage
+      - name: Commit reviewed registries
+        if: github.event_name == 'push'
+        run: |
+          cp extracted-miyagi-money-linkage/miyagi_project_money_linkage*.json data/catalog/
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/catalog/miyagi_project_money_linkage*.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: update Miyagi project money linkage"
+            git push
+          fi
       - uses: actions/upload-artifact@v4
         with:
           name: miyagi-money-linkage-extraction
