@@ -5,13 +5,7 @@
   "scope_version": "2026-08-01",
   "linkage_definition": "Document-scope linkage verifies the correct prefecture, official source role, plan or fiscal period, and publication scope. It does not assert that every target, budget line, project, payment, or audit finding has a one-to-one record-level link.",
   "record_level_boundary": "Unresolved one-to-one relationships remain explicit in the referenced Reviewed registries and are not used for policy-achievement assessment or ranking.",
-  "dimensions": [
-    "annual_actuals",
-    "budget",
-    "settlement",
-    "priority_projects",
-    "audit"
-  ],
+  "dimensions": ["annual_actuals", "budget", "settlement", "priority_projects", "audit"],
   "link_groups": [
     {
       "source_registry": "data/catalog/phase10_reference_depth_reviews.json",
@@ -109,7 +103,7 @@
     ],
     "04": [
       "data/catalog/miyagi_policy_review_manifest.json",
-      "data/catalog/miyagi_project_money_linkage_index.json",
+      "data/catalog/miyagi_project_money_linkage.json",
       "tests/test_miyagi_project_money_linkage.py"
     ],
     "13": [
@@ -117,8 +111,8 @@
       "tests/test_tokyo_children_annual_actual_linkage.py"
     ],
     "40": [
-      "data/catalog/fukuoka_annual_actual_linkage_index.json",
-      "data/catalog/fukuoka_project_linkage_index.json",
+      "data/catalog/fukuoka_annual_actual_linkage.json",
+      "data/catalog/fukuoka_project_linkage.json",
       "tests/test_fukuoka_annual_actual_linkage.py",
       "tests/test_fukuoka_project_linkage.py"
     ]
