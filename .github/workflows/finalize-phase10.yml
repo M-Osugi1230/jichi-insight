@@ -20,7 +20,9 @@ jobs:
         with:
           ref: ${{ github.ref_name }}
       - name: Finalize canonical Phase 10 state
-        run: python scripts/finalize_phase10.py
+        run: |
+          python scripts/finalize_phase10.py
+          python scripts/finalize_phase10_public_page.py
       - name: Commit final Phase 10 state
         run: |
           if git diff --quiet; then
@@ -34,6 +36,7 @@ jobs:
             data/catalog/phase10_execution_queue.json \
             data/catalog/phase10_completion.json \
             apps/web/lib/phase10.ts \
+            apps/web/app/municipalities/phase10/page.tsx \
             README.md \
             docs/ROADMAP.md \
             docs/PHASE10_VERTICAL_LINKAGE.md
