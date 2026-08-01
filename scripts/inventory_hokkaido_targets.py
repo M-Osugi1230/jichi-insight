@@ -7,6 +7,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+OUTPUT_PATH = Path("hokkaido-target-inventory.json")
 
 
 def count_objects(value: object) -> int:
@@ -79,7 +80,7 @@ def main() -> None:
         "file_count": len(records),
         "files": records,
     }
-    Path("hokkaido-target-inventory.json").write_text(
+    OUTPUT_PATH.write_text(
         json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8"
     )
     print(json.dumps({"file_count": len(records)}, ensure_ascii=False))
