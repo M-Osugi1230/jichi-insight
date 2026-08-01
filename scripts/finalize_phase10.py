@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import json
-import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -34,21 +33,21 @@ def write(path: Path, payload: dict) -> None:
     )
 
 
-def assert_core(core: dict) -> None:
+def validate_inputs(core: dict, accountability: dict) -> None:
     assert core["status"] == "complete"
     assert core["summary"]["prefecture_count"] == 47
     assert core["summary"]["linked_prefecture_count"] == 47
     assert set(core["summary"]["linked_dimension_counts"].values()) == {47}
     assert core["summary"]["policy_achievement_assessment_count"] == 0
 
-
-def assert_accountability(accountability: dict) -> None:
     assert accountability["status"] == "complete"
     assert accountability["summary"]["prefecture_count"] == 47
     assert accountability["summary"]["reviewed_role_count"] == 141
     assert accountability["summary"]["nonexistence_claim_count"] == 0
     assert accountability["summary"]["policy_achievement_assessment_count"] == 0
-    assert len({record["prefecture_code"] for record in accountability["records"]}) == 47
+    assert len(
+        {record["prefecture_code"] for record in accountability["records"]}
+    ) == 47
 
 
 def finalize_uniformity() -> None:
@@ -211,11 +210,20 @@ def finalize_completion() -> None:
 def preserve_linked_depth_in_web_loader() -> None:
     path = ROOT / "apps/web/lib/phase10.ts"
     text = path.read_text(encoding="utf-8")
+    if "function atLeastDepth(" in text:
+        return
+
     marker = "const statusRank: Record<Phase10DepthStatus, number> = {"
-    if "function atLeastDepth(" not in text:
-        end = text.index("};", text.index(marker)) + 2
-        helper = "\n\nfunction atLeastDepth(\n  current: Phase10DepthStatus,\n  minimum: Phase10DepthStatus,\n): Phase10DepthStatus {\n  return statusRank[current] >= statusRank[minimum] ? current : minimum;\n}"
-        text = text[:end] + helper + text[end:]
+    end = text.index("};", text.index(marker)) + 2
+    helper = """
+
+function atLeastDepth(
+  current: Phase10DepthStatus,
+  minimum: Phase10DepthStatus,
+): Phase10DepthStatus {
+  return statusRank[current] >= statusRank[minimum] ? current : minimum;
+}"""
+    text = text[:end] + helper + text[end:]
 
     old = '''        current_depth: {
           ...(existing?.current_depth ?? {}),
@@ -253,40 +261,7 @@ def preserve_linked_depth_in_web_loader() -> None:
         },'''
     if old not in text:
         raise SystemExit("Phase 10 web-loader overlay block was not found")
-    text = text.replace(old, new, 1)
-    path.write_text(text, encoding="utf-8")
-
-
-def append_completion_docs() -> None:
-    entries = {
-        ROOT / "README.md": (
-            "## Phase 10 completion (2026-08-01)\n\n"
-            "Phase 10 is complete at nationwide document scope for all 47 prefectures. The five "
-            "delivery-evidence layers are linked by prefecture, official role, and reporting period. "
-            "Contracts, assembly, and executive-manifesto coverage is Reviewed through an official "
-            "source entrance or an explicit official-host search outcome. Missing results do not "
-            "assert nonexistence. Record-level one-to-one deepening and policy-achievement assessment "
-            "remain outside this completion claim.\n"
-        ),
-        ROOT / "docs/ROADMAP.md": (
-            "## Phase 10 — Complete (2026-08-01)\n\n"
-            "All 47 prefectures satisfy the declared 11-dimension completion depths. Nationwide "
-            "document-scope linkage and accountability-source review are complete; record-level "
-            "deepening continues as the next research track without changing Phase 10 status.\n"
-        ),
-        ROOT / "docs/PHASE10_VERTICAL_LINKAGE.md": (
-            "## Completion boundary (2026-08-01)\n\n"
-            "Phase 10 completion means nationwide document-scope linkage, not universal one-to-one "
-            "target, budget-line, project, contract, statement, or audit-finding linkage. For "
-            "accountability roles, a Reviewed official-host search outcome is retained when no stable "
-            "primary source is identified; it is not a nonexistence claim. Achievement is not assessed.\n"
-        ),
-    }
-    for path, section in entries.items():
-        text = path.read_text(encoding="utf-8")
-        heading = section.splitlines()[0]
-        if heading not in text:
-            path.write_text(text.rstrip() + "\n\n" + section, encoding="utf-8")
+    path.write_text(text.replace(old, new, 1), encoding="utf-8")
 
 
 def main() -> None:
@@ -294,13 +269,11 @@ def main() -> None:
     accountability = load(
         CATALOG / "phase10_nationwide_accountability_linkage.json"
     )
-    assert_core(core)
-    assert_accountability(accountability)
+    validate_inputs(core, accountability)
     finalize_uniformity()
     finalize_queue()
     finalize_completion()
     preserve_linked_depth_in_web_loader()
-    append_completion_docs()
 
 
 if __name__ == "__main__":
