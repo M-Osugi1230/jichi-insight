@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Phase 10 nationwide accountability linkage",
+  "title": "Phase 10 nationwide accountability coverage",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -20,7 +20,7 @@
     "phase": {"const": 10},
     "status": {"const": "complete"},
     "scope_version": {"type": "string", "format": "date"},
-    "completion_definition": {"type": "string", "minLength": 150},
+    "completion_definition": {"type": "string", "minLength": 180},
     "roles": {"const": ["contracts", "assembly", "executive_manifesto"]},
     "records": {
       "type": "array",
@@ -66,15 +66,20 @@
   },
   "$defs": {
     "source": {
-      "type": ["object", "null"],
-      "additionalProperties": false,
-      "required": ["title", "url", "http_status", "discovery_query"],
-      "properties": {
-        "title": {"type": "string", "minLength": 1},
-        "url": {"type": "string", "format": "uri"},
-        "http_status": {"enum": [200, 206]},
-        "discovery_query": {"type": "string", "minLength": 5}
-      }
+      "oneOf": [
+        {"type": "null"},
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["title", "url", "http_status", "discovery_query"],
+          "properties": {
+            "title": {"type": "string", "minLength": 1},
+            "url": {"type": "string", "format": "uri"},
+            "http_status": {"enum": [200, 206]},
+            "discovery_query": {"type": "string", "minLength": 5}
+          }
+        }
+      ]
     },
     "roleResult": {
       "type": "object",
@@ -87,7 +92,7 @@
         "review_status",
         "nonexistence_claim",
         "policy_achievement_assessment",
-        "linkage_status",
+        "coverage_status",
         "result_status",
         "source",
         "review_note",
@@ -106,7 +111,7 @@
         "review_status": {"const": "reviewed"},
         "nonexistence_claim": {"const": false},
         "policy_achievement_assessment": {"const": "not_assessed"},
-        "linkage_status": {"enum": ["source_linked", "search_outcome_linked"]},
+        "coverage_status": {"enum": ["source_reviewed", "search_reviewed"]},
         "result_status": {
           "enum": [
             "source_registered",
@@ -123,7 +128,7 @@
           "if": {"properties": {"result_status": {"const": "source_registered"}}},
           "then": {
             "properties": {
-              "linkage_status": {"const": "source_linked"},
+              "coverage_status": {"const": "source_reviewed"},
               "source": {"type": "object"}
             }
           }
@@ -132,7 +137,7 @@
           "if": {"properties": {"result_status": {"const": "no_stable_primary_source_found"}}},
           "then": {
             "properties": {
-              "linkage_status": {"const": "search_outcome_linked"},
+              "coverage_status": {"const": "search_reviewed"},
               "source": {"type": "null"}
             }
           }
@@ -142,7 +147,7 @@
           "then": {
             "properties": {
               "role": {"const": "executive_manifesto"},
-              "linkage_status": {"const": "search_outcome_linked"},
+              "coverage_status": {"const": "search_reviewed"},
               "source": {"type": "object"}
             }
           }
