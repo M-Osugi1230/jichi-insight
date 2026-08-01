@@ -23,10 +23,13 @@ def records():
 
 
 def catalog_ids():
-    ids = []
+    items = []
     for path in sorted(POLICY.glob("hokkaido_indicator_catalog_*.json")):
-        ids.extend(item["id"] for item in load(path)["items"])
-    return ids
+        items.extend(load(path)["items"])
+    return [
+        item["id"]
+        for item in sorted(items, key=lambda item: item["indicator_number"])
+    ]
 
 
 def test_index_and_parts_match_schema():
@@ -68,14 +71,15 @@ def test_reviewed_classification_remains_conservative():
         if item["linkage_status"] == "partial"
     )
 
-    assert statuses == {"linked": 93, "partial": 15}
+    assert statuses == {"linked": 90, "partial": 18}
     assert index["summary"] == {
-        "linked_record_count": 93,
-        "partial_record_count": 15,
+        "linked_record_count": 90,
+        "partial_record_count": 18,
         "not_linked_record_count": 0,
     }
     assert reasons == {
         "target_version_changed": 3,
+        "unit_scale_changed_or_requires_conversion": 3,
         "indicator_definition_or_numbering_changed": 10,
         "component_structure_changed": 2,
     }
@@ -90,7 +94,12 @@ def test_partial_indicator_numbers_are_explicit_and_not_promoted():
         if item["linkage_status"] == "partial"
     }
 
-    assert set(partial) == {6, 10, 21, *range(31, 40), 65, 107, 108}
+    assert set(partial) == {4, 6, 10, 21, 23, *range(31, 40), 49, 65, 107, 108}
+    assert {number for number, reason in partial.items() if "unit_scale" in reason} == {
+        4,
+        23,
+        49,
+    }
     for item in items:
         assert item["evaluation_status"] == "not_assessed"
         assert item["related_source_locations"]
@@ -111,26 +120,33 @@ def test_reprinted_rows_keep_one_primary_source_and_all_locations():
         item = by_number[number]
         assert len(item["related_source_locations"]) == 2
         assert sum(location["is_reprint"] for location in item["related_source_locations"]) == 1
-        assert not next(
-            location["is_reprint"]
+        primary = next(
+            location
             for location in item["related_source_locations"]
             if location["source_number"] == item["source_number"]
             and location["pdf_page"] == item["pdf_page"]
         )
+        assert primary["is_reprint"] is False
 
 
 def test_linked_actuals_preserve_raw_values_periods_and_components():
     _, _, items = records()
     by_number = {item["indicator_number"]: item for item in items}
 
+    assert by_number[4]["linkage_status"] == "partial"
+    assert by_number[4]["partial_reason"] == (
+        "unit_scale_changed_or_requires_conversion"
+    )
     assert by_number[4]["actual_value_text"] == "1,479"
     assert by_number[4]["actual_period_text"] == "r4 （2022）"
-    assert by_number[4]["actual_components"] == [
+    assert by_number[4]["actual_components"] == []
+
+    assert by_number[5]["actual_components"] == [
         {
             "label": None,
-            "unit": "万円",
-            "value_text": "1,479",
-            "value": 1479,
+            "unit": "％",
+            "value_text": "71.3",
+            "value": 71.3,
             "value_status": "numeric",
         }
     ]
