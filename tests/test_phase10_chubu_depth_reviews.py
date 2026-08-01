@@ -9,6 +9,7 @@ REVIEWS_PATH = ROOT / "data/catalog/phase10_chubu_depth_reviews.json"
 INDEX_PATH = ROOT / "data/catalog/phase10_regional_depth_index.json"
 SCHEMA_PATH = ROOT / "schemas/phase10_regional_depth_reviews.schema.json"
 COMPLETION_PATH = ROOT / "data/catalog/phase10_completion.json"
+CORE_PATH = ROOT / "data/catalog/phase10_nationwide_core_linkage.json"
 
 CODES = ["15", "16", "17", "18", "19", "20", "21", "22"]
 DIMENSIONS = [
@@ -88,24 +89,38 @@ def test_chubu_remains_registered_in_completed_regional_index():
     assert sum(len(batch["prefecture_codes"]) for batch in index["batches"]) == 38
 
 
-def test_chubu_review_remains_conservative_after_nationwide_expansion():
+def test_chubu_reviews_feed_completed_nationwide_linkage():
     completion = load(COMPLETION_PATH)
+    core = load(CORE_PATH)
     counts = completion["nationwide_uniform_counts"]
 
-    assert counts["prefectures_with_five_layers_indexed_or_better"] == 47
-    assert counts["prefectures_with_five_layers_reviewed"] == 46
-    assert counts["annual_actuals_reviewed_or_better"] == 47
-    assert counts["budget_reviewed_or_better"] == 47
-    assert counts["settlement_reviewed_or_better"] == 46
-    assert counts["priority_projects_reviewed_or_better"] == 47
-    assert counts["audit_reviewed_or_better"] == 47
-    assert counts["uniform_depth_complete"] == 0
-    assert completion["status"] == "in_progress"
+    assert counts == {
+        "reviewed_anchor_prefectures": 9,
+        "prefectures_with_five_layers_indexed_or_better": 47,
+        "prefectures_with_five_layers_reviewed": 47,
+        "annual_actuals_reviewed_or_better": 47,
+        "budget_reviewed_or_better": 47,
+        "settlement_reviewed_or_better": 47,
+        "priority_projects_reviewed_or_better": 47,
+        "audit_reviewed_or_better": 47,
+        "uniform_depth_complete": 47,
+    }
+    assert completion["status"] == "complete"
+
+    groups = [
+        group
+        for group in core["link_groups"]
+        if group["source_registry"]
+        == REVIEWS_PATH.relative_to(ROOT).as_posix()
+    ]
+    assert len(groups) == 1
+    assert groups[0]["prefecture_codes"] == CODES
+    assert groups[0]["dimensions"] == DIMENSIONS
+    assert groups[0]["linkage_level"] == "document_scope"
 
     evidence_paths = {
         path
         for gate in completion["gates"]
         for path in gate["evidence_paths"]
     }
-    assert REVIEWS_PATH.relative_to(ROOT).as_posix() in evidence_paths
-    assert INDEX_PATH.relative_to(ROOT).as_posix() in evidence_paths
+    assert CORE_PATH.relative_to(ROOT).as_posix() in evidence_paths
