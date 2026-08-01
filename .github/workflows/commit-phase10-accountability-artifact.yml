@@ -29,6 +29,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Install reviewed registry
         run: |
+          # Reuse the host-validated, role-reviewed successful extraction artifact.
           cp downloaded-accountability/phase10_nationwide_accountability_linkage.json \
             data/catalog/phase10_nationwide_accountability_linkage.json
       - name: Commit reviewed registry
