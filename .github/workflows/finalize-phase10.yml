@@ -6,6 +6,9 @@ on:
       - agent/phase10-progress-sync
     paths:
       - .github/workflows/finalize-phase10.yml
+      - scripts/finalize_phase10.py
+      - scripts/finalize_phase10_public_page.py
+      - scripts/normalize_phase10_completion_docs.py
       - data/catalog/phase10_nationwide_core_linkage.json
       - data/catalog/phase10_nationwide_accountability_linkage.json
   workflow_dispatch:
@@ -25,6 +28,7 @@ jobs:
         run: |
           python scripts/finalize_phase10.py
           python scripts/finalize_phase10_public_page.py
+          python scripts/normalize_phase10_completion_docs.py
       - name: Commit final Phase 10 state
         run: |
           if git diff --quiet; then
@@ -42,6 +46,6 @@ jobs:
             README.md \
             docs/ROADMAP.md \
             docs/PHASE10_VERTICAL_LINKAGE.md
-          git commit -m "Finalize Phase 10 nationwide completion"
+          git commit -m "Normalize Phase 10 completion state"
           git pull --rebase origin ${{ github.ref_name }}
           git push origin HEAD:${{ github.ref_name }}
