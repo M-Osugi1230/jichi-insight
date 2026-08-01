@@ -7,6 +7,12 @@ on:
     paths:
       - .github/workflows/extract-fukuoka-progress.yml
       - scripts/extract_fukuoka_progress.py
+  pull_request:
+    branches:
+      - main
+    paths:
+      - .github/workflows/extract-fukuoka-progress.yml
+      - scripts/extract_fukuoka_progress.py
   workflow_dispatch:
 
 permissions:
