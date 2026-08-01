@@ -11,7 +11,13 @@ COMPLETION_SCHEMA_PATH = ROOT / "schemas/phase10_completion.schema.json"
 
 ALL_CODES = [f"{value:02d}" for value in range(1, 48)]
 WAVE1_CODES = {"01", "04", "13", "23", "27", "34", "37", "40", "47"}
-INDEXED_OR_BETTER = {"indexed", "reviewed", "linked"}
+EXPECTED_WAVE1_DEPTH = {
+    "target_statements": "reviewed",
+    "annual_evaluation": "linked",
+    "budget": "linked",
+    "project_evaluation": "linked",
+    "contracts": "reviewed",
+}
 
 
 def load(path: Path):
@@ -46,78 +52,64 @@ def test_phase10_waves_cover_all_prefectures_once():
     assert set(queue["waves"][0]["prefecture_codes"]) == WAVE1_CODES
 
 
-def test_phase10_wave1_baseline_is_conservative_and_verified():
+def test_phase10_wave1_records_are_complete_at_declared_depth():
     queue = load(QUEUE_PATH)
     by_code = {
         record["prefecture_code"]: record for record in queue["wave1_records"]
     }
 
+    assert queue["status"] == "complete"
+    assert queue["active_prefecture_code"] == "47"
     assert set(by_code) == WAVE1_CODES
-    assert queue["active_prefecture_code"] == "04"
-    assert by_code["04"]["status"] == "linked_baseline"
-    assert by_code["04"]["current_depth"]["annual_evaluation"] == "linked"
-    assert by_code["04"]["next_gate"] == "budget_linkage"
-
-    assert by_code["40"]["status"] == "review_ready"
-    assert by_code["40"]["current_depth"]["annual_evaluation"] == "indexed"
-    assert by_code["40"]["current_depth"]["budget"] == "reviewed"
-    assert by_code["40"]["next_gate"] == "annual_actuals_linkage"
-
+    assert queue["default_depth"] == EXPECTED_WAVE1_DEPTH
+    assert all(record["status"] == "complete" for record in by_code.values())
     assert all(
-        record["current_depth"]["target_statements"] == "reviewed"
-        for record in queue["wave1_records"]
+        record["current_depth"] == EXPECTED_WAVE1_DEPTH
+        for record in by_code.values()
+    )
+    assert all(
+        record["next_gate"] == "publication_verification"
+        for record in by_code.values()
     )
     assert queue["policy_achievement_assessment_status"] == "not_assessed"
     assert queue["ranking_eligibility"] == "excluded_until_comparability_verified"
 
 
-def test_phase10_counts_are_derived_from_wave1_depth():
+def test_phase10_global_counts_are_complete():
     queue = load(QUEUE_PATH)
-    records = queue["wave1_records"]
-    counts = queue["counts"]
 
-    assert counts["total_prefectures"] == 47
-    assert counts["wave1_prefectures"] == len(records)
-    assert counts["target_statements_reviewed"] == 47
-    assert counts["annual_evaluation_linked"] == sum(
-        record["current_depth"]["annual_evaluation"] == "linked"
-        for record in records
-    )
-    assert counts["annual_evaluation_indexed"] == sum(
-        record["current_depth"]["annual_evaluation"] == "indexed"
-        for record in records
-    )
-    assert counts["budget_reviewed"] == sum(
-        record["current_depth"]["budget"] == "reviewed"
-        for record in records
-    )
-    assert counts["project_evaluation_indexed_or_better"] == sum(
-        record["current_depth"]["project_evaluation"] in INDEXED_OR_BETTER
-        for record in records
-    )
-    assert counts["contracts_indexed_or_better"] == sum(
-        record["current_depth"]["contracts"] in INDEXED_OR_BETTER
-        for record in records
-    )
+    assert queue["counts"] == {
+        "total_prefectures": 47,
+        "wave1_prefectures": 9,
+        "target_statements_reviewed": 47,
+        "annual_evaluation_linked": 47,
+        "annual_evaluation_indexed": 47,
+        "budget_reviewed": 47,
+        "project_evaluation_indexed_or_better": 47,
+        "contracts_indexed_or_better": 47,
+    }
 
 
-def test_phase10_completion_counts_match_execution_queue():
+def test_phase10_completion_counts_and_gates_match_execution_queue():
     queue = load(QUEUE_PATH)
     completion = load(COMPLETION_PATH)
 
-    for key in (
-        "total_prefectures",
-        "wave1_prefectures",
-        "target_statements_reviewed",
-        "annual_evaluation_linked",
-        "annual_evaluation_indexed",
-        "budget_reviewed",
-        "project_evaluation_indexed_or_better",
-        "contracts_indexed_or_better",
-    ):
-        assert completion["counts"][key] == queue["counts"][key]
+    for key, value in queue["counts"].items():
+        assert completion["counts"][key] == value
 
-    gates = {gate["id"]: gate for gate in completion["gates"]}
-    assert gates["phase9_handoff_verified"]["status"] == "passed"
-    assert gates["nationwide_vertical_source_inventory"]["status"] == "in_progress"
-    assert completion["status"] == "in_progress"
+    assert completion["status"] == "complete"
+    assert completion["counts"]["published_phase10_pages"] >= 9
+    assert completion["nationwide_uniform_counts"] == {
+        "reviewed_anchor_prefectures": 9,
+        "prefectures_with_five_layers_indexed_or_better": 47,
+        "prefectures_with_five_layers_reviewed": 47,
+        "annual_actuals_reviewed_or_better": 47,
+        "budget_reviewed_or_better": 47,
+        "settlement_reviewed_or_better": 47,
+        "priority_projects_reviewed_or_better": 47,
+        "audit_reviewed_or_better": 47,
+        "uniform_depth_complete": 47,
+    }
+    assert all(gate["status"] == "passed" for gate in completion["gates"])
+    assert "document scope" in completion["scope_note"]
+    assert "No policy-achievement assessment" in completion["scope_note"]
