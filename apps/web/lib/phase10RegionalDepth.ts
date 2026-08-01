@@ -116,6 +116,22 @@ export function loadPhase10ChubuDepth(): RegionalDepthReviews {
   return loadPhase10RegionalDepthBySlug("chubu");
 }
 
+export function loadPhase10KinkiDepth(): RegionalDepthReviews {
+  return loadPhase10RegionalDepthBySlug("kinki");
+}
+
+export function loadPhase10ChugokuDepth(): RegionalDepthReviews {
+  return loadPhase10RegionalDepthBySlug("chugoku");
+}
+
+export function loadPhase10ShikokuDepth(): RegionalDepthReviews {
+  return loadPhase10RegionalDepthBySlug("shikoku");
+}
+
+export function loadPhase10KyushuDepth(): RegionalDepthReviews {
+  return loadPhase10RegionalDepthBySlug("kyushu");
+}
+
 export const regionalDepthLabels: Record<RegionalDepthDimension, string> = {
   annual_actuals: "年度実績",
   budget: "予算",
