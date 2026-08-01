@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Phase 10 nationwide core linkage",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "phase",
+    "status",
+    "scope_version",
+    "linkage_definition",
+    "record_level_boundary",
+    "dimensions",
+    "link_groups",
+    "deeper_record_level_evidence",
+    "summary",
+    "policy_achievement_assessment_status",
+    "updated_at"
+  ],
+  "properties": {
+    "id": {"const": "phase10-nationwide-core-linkage"},
+    "phase": {"const": 10},
+    "status": {"const": "complete"},
+    "scope_version": {"type": "string", "minLength": 10},
+    "linkage_definition": {"type": "string", "minLength": 100},
+    "record_level_boundary": {"type": "string", "minLength": 80},
+    "dimensions": {
+      "const": [
+        "annual_actuals",
+        "budget",
+        "settlement",
+        "priority_projects",
+        "audit"
+      ]
+    },
+    "link_groups": {
+      "type": "array",
+      "minItems": 11,
+      "items": {"$ref": "#/$defs/linkGroup"}
+    },
+    "deeper_record_level_evidence": {
+      "type": "object",
+      "propertyNames": {"pattern": "^[0-9]{2}$"},
+      "additionalProperties": {
+        "type": "array",
+        "minItems": 1,
+        "items": {"type": "string", "minLength": 10}
+      }
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "prefecture_count",
+        "linked_prefecture_count",
+        "linked_dimension_counts",
+        "policy_achievement_assessment_count"
+      ],
+      "properties": {
+        "prefecture_count": {"const": 47},
+        "linked_prefecture_count": {"const": 47},
+        "linked_dimension_counts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "annual_actuals",
+            "budget",
+            "settlement",
+            "priority_projects",
+            "audit"
+          ],
+          "properties": {
+            "annual_actuals": {"const": 47},
+            "budget": {"const": 47},
+            "settlement": {"const": 47},
+            "priority_projects": {"const": 47},
+            "audit": {"const": 47}
+          }
+        },
+        "policy_achievement_assessment_count": {"const": 0}
+      }
+    },
+    "policy_achievement_assessment_status": {"const": "not_assessed"},
+    "updated_at": {"type": "string", "format": "date"}
+  },
+  "$defs": {
+    "linkGroup": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_registry",
+        "prefecture_codes",
+        "dimensions",
+        "selector",
+        "linkage_status",
+        "linkage_level"
+      ],
+      "properties": {
+        "source_registry": {"type": "string", "pattern": "^(data|tests)/"},
+        "prefecture_codes": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "pattern": "^[0-9]{2}$"}
+        },
+        "dimensions": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "annual_actuals",
+              "budget",
+              "settlement",
+              "priority_projects",
+              "audit"
+            ]
+          }
+        },
+        "selector": {"type": "string", "minLength": 15},
+        "linkage_status": {"const": "linked"},
+        "linkage_level": {
+          "enum": ["document_scope", "record_and_document_scope"]
+        }
+      }
+    }
+  }
+}
