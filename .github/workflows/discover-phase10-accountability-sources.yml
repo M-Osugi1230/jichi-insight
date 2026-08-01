@@ -7,6 +7,7 @@ on:
     paths:
       - .github/workflows/discover-phase10-accountability-sources.yml
       - scripts/discover_phase10_accountability_sources.py
+      - scripts/build_phase10_accountability_linkage.py
       - data/catalog/phase10_reference_depth_reviews.json
       - data/catalog/phase10_anchor_depth_reviews.json
       - data/catalog/phase10_*_depth_reviews.json
@@ -16,6 +17,7 @@ on:
     paths:
       - .github/workflows/discover-phase10-accountability-sources.yml
       - scripts/discover_phase10_accountability_sources.py
+      - scripts/build_phase10_accountability_linkage.py
       - data/catalog/phase10_reference_depth_reviews.json
       - data/catalog/phase10_anchor_depth_reviews.json
       - data/catalog/phase10_*_depth_reviews.json
@@ -37,6 +39,11 @@ jobs:
           python scripts/discover_phase10_accountability_sources.py \
             --output extracted-phase10-accountability/candidates.json \
             --summary extracted-phase10-accountability/summary.md
+      - name: Build reviewed accountability linkage registry
+        run: |
+          python scripts/build_phase10_accountability_linkage.py \
+            --candidates extracted-phase10-accountability/candidates.json \
+            --output extracted-phase10-accountability/phase10_nationwide_accountability_linkage.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:
