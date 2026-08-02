@@ -250,16 +250,20 @@ def test_current_target_repost_and_revision_counts_match_source_summary():
         for value in series["values"]
         if value["role"] == "current"
     ]
-    target_series = [
+    report_target_series = [
         series
         for row in original["items"]
         for series in row["series"]
         if any(value["role"] == "target" for value in series["values"])
     ]
+    configured_progress_target_series = sum(
+        row["target_series_count"] for row in original["items"]
+    )
 
     assert sum(value["status"] != "missing" for value in current_values) == 61
     assert sum(value["status"] == "missing" for value in current_values) == 1
-    assert len(target_series) == 29
+    assert len(report_target_series) == 62
+    assert configured_progress_target_series == 29
     assert summary["linked_current_series_count"] == 61
     assert summary["missing_current_series_count"] == 1
     assert summary["target_series_count"] == 29
