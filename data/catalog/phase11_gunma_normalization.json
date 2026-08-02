@@ -1,0 +1,31 @@
+{
+  "id": "phase11-gunma-normalization",
+  "phase": 11,
+  "status": "reviewed_maximum_depth",
+  "prefecture_code": "10",
+  "source_catalog": "data/reviewed/phase9/10.json",
+  "normalizer": "scripts/normalize_phase11_gunma.py",
+  "shared_normalizer": "scripts/phase11_phase9_raw.py",
+  "record_schema": "schemas/phase11_record_linkage.schema.json",
+  "expected_normalization": {
+    "record_count": 182,
+    "linked_record_count": 0,
+    "partial_record_count": 182,
+    "not_linked_record_count": 0,
+    "indicator_series_count": 182,
+    "annual_actual_available_count": 0,
+    "future_target_available_count": 0,
+    "reviewed_maximum_depth_record_count": 182,
+    "policy_achievement_assessment_count": 0
+  },
+  "maximum_depth_rule": "All 182 Phase 9 Reviewed statements remain raw maximum-depth records until KPI names, values, periods, units, Japanese and English source roles, and roadmap structure can be mapped through reviewed table-level evidence.",
+  "plan_boundary": "The five registered official documents include the 2040 vision, the 2021-2030 basic plan, Japanese and English digests, and a manga document with no reviewed rows. Generic download titles, extraction artifacts, and multiple numeric tokens are retained without inferring structured actuals or targets.",
+  "non_goals": [
+    "Do not infer annual actual or target fields from mixed raw statements.",
+    "Do not merge Japanese and English source rows as one KPI without review.",
+    "Do not correct PDF extraction artifacts or replace missing units by inference.",
+    "Do not convert prefectural or expert evaluation into an independent achievement judgment.",
+    "Do not calculate causality or cross-prefecture ranking."
+  ],
+  "updated_at": "2026-08-02"
+}
