@@ -149,19 +149,10 @@ Status: `complete`
 
 4つのNormalizerを統合実行し、全861件について共通Schema、ID一意性、元カタログ件数、状態内訳、Evidence参照、非評価境界を一括検証します。
 
-- 北海道: 108件
-- 宮城県: 627件
-- 東京都: 8件
-- 福岡県: 118件
-
 正本:
 
 - `data/catalog/phase11_wave1_migration.json`
 - `data/catalog/phase11_wave1_completion.json`
-- `data/catalog/phase11_hokkaido_normalization.json`
-- `data/catalog/phase11_miyagi_normalization.json`
-- `data/catalog/phase11_tokyo_normalization.json`
-- `data/catalog/phase11_fukuoka_normalization.json`
 - `schemas/phase11_record_linkage.schema.json`
 - `tests/test_phase11_wave1_completion.py`
 
@@ -177,7 +168,42 @@ Status: `in_progress`
 - 香川県
 - 沖縄県
 
-次は愛知県です。現行指標カタログと最新の公式進捗資料を全件照合し、個票接続が可能な系列だけを昇格します。個票接続を支える公式資料が不足する場合は、最大到達深度と不足条件をReviewedとして記録します。
+#### 愛知県
+
+Status: `complete`
+
+2026年8月2日に愛知県公式ページを再確認し、最新掲載年次資料が2026年3月30日更新の「あいちレポート2025」であることを確認しました。既存Reviewedカタログはこの最新資料に基づいています。
+
+- 指標行: 56 / 56
+- 固有指標: 54
+- 系列: 62 / 62
+- current値あり: 61系列
+- current値欠損: 1系列
+- target値あり: 29系列
+- 再掲行: 2
+- 2025年次資料での目標改定行: 1
+- 独自の政策達成評価: 0件
+- 比較対象へ昇格したレコード: 0件
+
+1行に複数系列、1系列に複数基準年がある構造を圧縮せず、全baseline/current/target値を系列ID、期間、原文値、解析値、source status、単位、集計範囲、演算子、方向性、比較注意事項付きで保持します。
+
+current値欠損または目標改定がある行はPartialとし、値を推測・上書きしません。再掲2行は元ページと再掲ページの両方をEvidenceとして保持します。
+
+正本:
+
+- `data/catalog/phase11_aichi_normalization.json`
+- `schemas/phase11_aichi_normalization.schema.json`
+- `scripts/normalize_phase11_aichi.py`
+- `tests/test_phase11_aichi_normalization.py`
+
+#### Wave 2 progress
+
+- 完了地域拠点: 1 / 5
+- 正規化済み行: 56
+- 正規化済み系列: 62
+- 次の対象: 大阪府
+
+大阪府では、Reviewed戦略指標と最新公式進捗資料を全件棚卸しし、各系列の期間・欠損・目標版を確認してから昇格します。
 
 ### Wave 3 — Nationwide minimum record depth
 

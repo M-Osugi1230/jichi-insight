@@ -38,7 +38,7 @@
         "Each remaining anchor has a schema-valid record or explicit maximum-depth boundary.",
         "Every promoted link passes the same version, period, organization, and evidence gates."
       ],
-      "next_action": "Start with Aichi and inventory the current indicator catalog against the latest official progress source before promoting any annual actual."
+      "next_action": "Process Osaka next by inventorying its reviewed strategy indicators and the latest official progress source, preserving every series, value period, missing state, and target-version boundary."
     },
     {
       "id": "wave3-nationwide-minimum-record-depth",
@@ -75,6 +75,15 @@
       "linked_complete": 420,
       "partial_complete": 58,
       "not_linked_complete": 383
+    },
+    "wave2_normalization": {
+      "anchors_complete": 1,
+      "anchors_remaining": 4,
+      "records_complete": 56,
+      "indicator_series_complete": 62,
+      "linked_current_series": 61,
+      "missing_current_series": 1,
+      "target_series": 29
     }
   },
   "updated_at": "2026-08-02"
