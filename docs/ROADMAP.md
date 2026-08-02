@@ -172,22 +172,20 @@ Status: `in_progress`
 
 Status: `complete`
 
-2026年8月2日に愛知県公式ページを再確認し、最新掲載年次資料が2026年3月30日更新の「あいちレポート2025」であることを確認しました。既存Reviewedカタログはこの最新資料に基づいています。
+2026年8月2日に愛知県公式ページを再確認し、最新掲載年次資料が2026年3月30日更新の「あいちレポート2025」であることを確認しました。
 
 - 指標行: 56 / 56
 - 固有指標: 54
 - 系列: 62 / 62
 - current値あり: 61系列
 - current値欠損: 1系列
-- target値あり: 29系列
+- 実施計画由来の進捗目標: 29系列
+- 年次資料上のtarget表示: 62系列
 - 再掲行: 2
 - 2025年次資料での目標改定行: 1
 - 独自の政策達成評価: 0件
-- 比較対象へ昇格したレコード: 0件
 
-1行に複数系列、1系列に複数基準年がある構造を圧縮せず、全baseline/current/target値を系列ID、期間、原文値、解析値、source status、単位、集計範囲、演算子、方向性、比較注意事項付きで保持します。
-
-current値欠損または目標改定がある行はPartialとし、値を推測・上書きしません。再掲2行は元ページと再掲ページの両方をEvidenceとして保持します。
+全baseline/current/target値を系列ID、期間、原文値、解析値、source status、単位、集計範囲、演算子、方向性、比較注意事項付きで保持します。current値欠損または目標改定がある行はPartialとし、値を推測・上書きしません。
 
 正本:
 
@@ -196,14 +194,44 @@ current値欠損または目標改定がある行はPartialとし、値を推測
 - `scripts/normalize_phase11_aichi.py`
 - `tests/test_phase11_aichi_normalization.py`
 
+#### 大阪府
+
+Status: `complete`
+
+2026年3月31日策定の現行戦略「Beyond EXPO 2025」のReviewed指標を全件正規化しました。
+
+- 指標行: 83 / 83
+- 系列: 91 / 91
+- 経済目標: 1
+- 客観KPI: 27
+- 主観・Well-Being指標: 55
+- Linked: 77
+- Partial: 6
+- current値あり: 85系列
+- current値欠損: 6系列
+- 明示的target: 1系列
+- 独自の政策達成評価: 0件
+
+2040年代の経済目標1件は同じ指標行にcurrent値がないためPartialです。初回調査前の大阪府独自指標5件もPartialとして欠損を保持します。旧「将来ビジョン・大阪」の実績系列は別系統のまま、令和8年度事業一覧は因果関係を示さないため未接続のままです。
+
+正本:
+
+- `data/catalog/phase11_osaka_normalization.json`
+- `schemas/phase11_osaka_normalization.schema.json`
+- `scripts/normalize_phase11_osaka.py`
+- `tests/test_phase11_osaka_normalization.py`
+
 #### Wave 2 progress
 
-- 完了地域拠点: 1 / 5
-- 正規化済み行: 56
-- 正規化済み系列: 62
-- 次の対象: 大阪府
+- 完了地域拠点: 2 / 5
+- 正規化済み行: 139
+- 正規化済み系列: 153
+- current値あり: 146系列
+- current値欠損: 7系列
+- 進捗目標または明示的target: 30系列
+- 次の対象: 広島県
 
-大阪府では、Reviewed戦略指標と最新公式進捗資料を全件棚卸しし、各系列の期間・欠損・目標版を確認してから昇格します。
+広島県は改定版ビジョンの62指標を対象に、59件の現状値と3件の測定待ちを分離し、基準値・現状値・目標値の原文、目標年度、定義変更、定性条件を保持して正規化します。
 
 ### Wave 3 — Nationwide minimum record depth
 
