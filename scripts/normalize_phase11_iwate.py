@@ -67,6 +67,7 @@ def quality_note(source: dict[str, Any], record: dict[str, Any]) -> str:
             ],
             "matched_keywords": record["matched_keywords"],
             "keyword_match_kind": record["keyword_match_kind"],
+            "unit_original": record["unit_original"],
             "population_scope_original": record[
                 "population_scope_original"
             ],
@@ -119,7 +120,7 @@ def normalize_record(
                 {
                     "series_ref": f"{record['id']}-raw-series-01",
                     "label": record["indicator_name_original"],
-                    "unit": record["unit_original"],
+                    "unit": record["unit_original"] or "未記載",
                     "direction": "not_inferred",
                     "comparability_note": (
                         "変更別冊からReviewedされた原文行であり、現状値、"
