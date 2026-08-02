@@ -54,7 +54,7 @@
         "All 38 prefectures have at least one linked record or a reviewed maximum-source-depth record.",
         "All records preserve missing, unpublished, partial, and not-assessable states without guessing."
       ],
-      "next_action": "Process Yamagata prefecture code 06 next. The existing Phase 9 reviewed file is empty, so create an explicit reviewed-empty-source boundary before attempting any deeper extraction, then continue to Fukushima 07."
+      "next_action": "Process Fukushima prefecture code 07 next. Normalize all 1,500 Phase 9 Reviewed statements from the current 2022-2030 comprehensive plan, preserving source positions and raw mixed values without inferred actual-target separation."
     }
   ],
   "summary": {
@@ -87,13 +87,13 @@
       "reviewed_maximum_depth_records": 375
     },
     "wave3_normalization": {
-      "prefectures_complete": 3,
-      "prefectures_remaining": 35,
-      "records_complete": 210,
-      "reviewed_maximum_depth_records": 210,
+      "prefectures_complete": 4,
+      "prefectures_remaining": 34,
+      "records_complete": 1017,
+      "reviewed_maximum_depth_records": 1017,
       "linked_records": 0,
-      "partial_records": 210,
-      "next_prefecture_code": "06"
+      "partial_records": 1017,
+      "next_prefecture_code": "07"
     }
   },
   "updated_at": "2026-08-02"
