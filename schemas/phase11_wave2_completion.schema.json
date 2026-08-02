@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Phase 11 Wave 2 completion",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id", "phase", "wave", "status", "prefecture_codes",
+    "normalizers", "completion_manifests", "record_schema", "summary",
+    "completion_gates", "completion_boundary", "updated_at"
+  ],
+  "properties": {
+    "id": {"const": "phase11-wave2-completion"},
+    "phase": {"const": 11},
+    "wave": {"const": "wave2-remaining-regional-anchors"},
+    "status": {"const": "complete"},
+    "prefecture_codes": {"const": ["23", "27", "34", "37", "47"]},
+    "normalizers": {
+      "const": [
+        "scripts/normalize_phase11_aichi.py",
+        "scripts/normalize_phase11_osaka.py",
+        "scripts/normalize_phase11_hiroshima.py",
+        "scripts/normalize_phase11_kagawa.py",
+        "scripts/normalize_phase11_okinawa.py"
+      ]
+    },
+    "completion_manifests": {
+      "const": [
+        "data/catalog/phase11_aichi_normalization.json",
+        "data/catalog/phase11_osaka_normalization.json",
+        "data/catalog/phase11_hiroshima_normalization.json",
+        "data/catalog/phase11_kagawa_normalization.json",
+        "data/catalog/phase11_okinawa_normalization.json"
+      ]
+    },
+    "record_schema": {"const": "schemas/phase11_record_linkage.schema.json"},
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "anchors_complete", "records", "indicator_series",
+        "current_value_series_available",
+        "current_value_series_missing_or_unavailable",
+        "progress_or_explicit_target_series",
+        "reviewed_maximum_depth_records",
+        "policy_achievement_assessment_count",
+        "comparison_eligible_record_count"
+      ],
+      "properties": {
+        "anchors_complete": {"const": 5},
+        "records": {"const": 711},
+        "indicator_series": {"const": 725},
+        "current_value_series_available": {"const": 340},
+        "current_value_series_missing_or_unavailable": {"const": 385},
+        "progress_or_explicit_target_series": {"const": 602},
+        "reviewed_maximum_depth_records": {"const": 375},
+        "policy_achievement_assessment_count": {"const": 0},
+        "comparison_eligible_record_count": {"const": 0}
+      }
+    },
+    "completion_gates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "all_normalizers_execute", "all_records_validate_shared_schema",
+        "global_normalized_ids_unique", "global_source_record_keys_unique",
+        "source_registries_resolve", "anchor_record_counts_reconcile",
+        "missing_and_partial_states_preserved", "all_records_not_assessed",
+        "all_records_excluded_from_comparison", "deterministic_normalization"
+      ],
+      "properties": {
+        "all_normalizers_execute": {"const": "passed"},
+        "all_records_validate_shared_schema": {"const": "passed"},
+        "global_normalized_ids_unique": {"const": "passed"},
+        "global_source_record_keys_unique": {"const": "passed"},
+        "source_registries_resolve": {"const": "passed"},
+        "anchor_record_counts_reconcile": {"const": "passed"},
+        "missing_and_partial_states_preserved": {"const": "passed"},
+        "all_records_not_assessed": {"const": "passed"},
+        "all_records_excluded_from_comparison": {"const": "passed"},
+        "deterministic_normalization": {"const": "passed"}
+      }
+    },
+    "completion_boundary": {"type": "string", "minLength": 200},
+    "updated_at": {"type": "string", "format": "date"}
+  }
+}
