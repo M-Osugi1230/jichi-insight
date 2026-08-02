@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Phase 11 wave 1 full migration",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "phase",
+    "wave",
+    "status",
+    "scope_version",
+    "migration_definition",
+    "sources",
+    "summary",
+    "updated_at"
+  ],
+  "properties": {
+    "id": {"const": "phase11-wave1-full-migration"},
+    "phase": {"const": 11},
+    "wave": {"const": "wave1-reference-implementations"},
+    "status": {"const": "inventory_complete"},
+    "scope_version": {"type": "string", "format": "date"},
+    "migration_definition": {"type": "string", "minLength": 160},
+    "sources": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {"$ref": "#/$defs/source"}
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "prefecture_count",
+        "record_file_count",
+        "record_count",
+        "linked_record_count",
+        "partial_record_count",
+        "not_linked_record_count",
+        "policy_achievement_assessment_count"
+      ],
+      "properties": {
+        "prefecture_count": {"const": 4},
+        "record_file_count": {"const": 11},
+        "record_count": {"const": 861},
+        "linked_record_count": {"const": 420},
+        "partial_record_count": {"const": 58},
+        "not_linked_record_count": {"const": 383},
+        "policy_achievement_assessment_count": {"const": 0}
+      }
+    },
+    "updated_at": {"type": "string", "format": "date"}
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "prefecture_code",
+        "name",
+        "catalog_path",
+        "record_files",
+        "record_id_field",
+        "status_field",
+        "expected_counts",
+        "migration_boundary"
+      ],
+      "properties": {
+        "prefecture_code": {"enum": ["01", "04", "13", "40"]},
+        "name": {"type": "string", "minLength": 3},
+        "catalog_path": {
+          "type": "string",
+          "pattern": "^data/catalog/[a-z0-9_]+\\.json$"
+        },
+        "record_files": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^data/catalog/[a-z0-9_]+\\.json$"
+          }
+        },
+        "record_id_field": {"enum": ["id", "target_id"]},
+        "status_field": {"const": "linkage_status"},
+        "expected_counts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["total", "linked", "partial", "not_linked"],
+          "properties": {
+            "total": {"type": "integer", "minimum": 1},
+            "linked": {"type": "integer", "minimum": 0},
+            "partial": {"type": "integer", "minimum": 0},
+            "not_linked": {"type": "integer", "minimum": 0}
+          }
+        },
+        "migration_boundary": {"type": "string", "minLength": 100}
+      }
+    }
+  }
+}
