@@ -166,7 +166,8 @@ All 56 reviewed indicator rows and all 62 series are normalized.
 
 - Current-value series available: 61
 - Current-value series missing: 1
-- Series with target values: 29
+- Progress-target series configured by the implementation plan: 29
+- Target values displayed in the annual report: 62 series
 - Repost rows: 2
 - Rows with a 2025 target revision: 1
 - Policy-achievement assessments: 0
@@ -183,12 +184,41 @@ Files:
 - `scripts/normalize_phase11_aichi.py`
 - `tests/test_phase11_aichi_normalization.py`
 
+### Osaka normalization complete
+
+All 83 reviewed `Beyond EXPO 2025` indicator rows and all 91 series are normalized.
+
+- Strategy target: 1
+- Objective KPIs: 27
+- Subjective and Well-Being indicators: 55
+- Linked rows with complete current observations: 77
+- Partial rows: 6
+- Not linked rows: 0
+- Series with current observations: 85
+- Series without current observations: 6
+- Explicit target series: 1
+- Policy-achievement assessments: 0
+
+The one economic target for the 2040s has no current observation in the same indicator row and remains Partial. Five Osaka-original subjective indicators awaiting their first survey also remain Partial with missing current values. No missing observation is filled from another source.
+
+Objective KPIs are current-state observations rather than individual achievement targets. The legacy `将来ビジョン・大阪` series remains a separate lineage, and the FY2026 business list remains not linked because project identity does not establish indicator causality.
+
+Files:
+
+- `data/catalog/phase11_osaka_normalization.json`
+- `schemas/phase11_osaka_normalization.schema.json`
+- `scripts/normalize_phase11_osaka.py`
+- `tests/test_phase11_osaka_normalization.py`
+
 ### Wave 2 progress
 
-- Anchors complete: 1 / 5
-- Records normalized: 56
-- Indicator series normalized: 62
-- Next anchor: Osaka
+- Anchors complete: 2 / 5
+- Records normalized: 139
+- Indicator series normalized: 153
+- Current-value series available: 146
+- Current-value series missing: 7
+- Progress or explicit target series: 30
+- Next anchor: Hiroshima
 
 Each remaining anchor must reach one of two valid states:
 
