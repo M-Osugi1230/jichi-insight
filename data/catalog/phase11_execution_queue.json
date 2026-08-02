@@ -20,13 +20,14 @@
       "id": "wave1-reference-implementations",
       "status": "in_progress",
       "prefecture_codes": ["01", "04", "13", "40"],
-      "objective": "Unify the existing Hokkaido, Miyagi, Tokyo, and Fukuoka record-level implementations under one reusable contract.",
+      "objective": "Unify the existing Hokkaido, Miyagi, Tokyo, and Fukuoka record-level implementations under one reusable contract without dropping partial or not-linked records.",
       "exit_criteria": [
-        "Four reference records validate against the shared Phase 11 schema.",
-        "Every reference resolves to an existing reviewed source record and evidence path.",
-        "Layer periods and money types remain separate without policy assessment."
+        "All 861 existing source records are included exactly once across the declared 11 source files.",
+        "The 420 linked, 58 partial, and 383 not-linked records reconcile with their canonical source catalogs.",
+        "Every representative common-schema reference resolves to a member of the exhaustive inventory.",
+        "Reusable normalizers preserve source-specific values, periods, identifiers, and unresolved boundaries."
       ],
-      "next_action": "Expand the reference catalog beyond one representative record per prefecture and extract reusable promotion rules."
+      "next_action": "Normalize the 420 linked records in deterministic prefecture batches, starting with all 90 Hokkaido annual-actual links and preserving the 18 partial records as explicit review boundaries."
     },
     {
       "id": "wave2-remaining-regional-anchors",
@@ -60,7 +61,14 @@
     "total_prefectures": 47,
     "reference_prefectures": 4,
     "remaining_anchor_prefectures": 5,
-    "nationwide_prefectures": 38
+    "nationwide_prefectures": 38,
+    "wave1_inventory": {
+      "record_files": 11,
+      "records": 861,
+      "linked": 420,
+      "partial": 58,
+      "not_linked": 383
+    }
   },
   "updated_at": "2026-08-02"
 }
