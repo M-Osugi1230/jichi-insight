@@ -8,17 +8,17 @@
   "shared_normalizer": "scripts/phase11_phase9_raw.py",
   "record_schema": "schemas/phase11_record_linkage.schema.json",
   "expected_normalization": {
-    "record_count": 1500,
+    "record_count": 257,
     "linked_record_count": 0,
-    "partial_record_count": 1500,
+    "partial_record_count": 257,
     "not_linked_record_count": 0,
-    "indicator_series_count": 1500,
+    "indicator_series_count": 257,
     "annual_actual_available_count": 0,
     "future_target_available_count": 0,
-    "reviewed_maximum_depth_record_count": 1500,
+    "reviewed_maximum_depth_record_count": 257,
     "policy_achievement_assessment_count": 0
   },
-  "maximum_depth_rule": "All 1,500 Phase 9 Reviewed statements remain raw maximum-depth records until current values, targets, and annotations can be separated through reviewed source-table mappings.",
+  "maximum_depth_rule": "All 257 Phase 9 Reviewed statements remain raw maximum-depth records until current values, targets, and annotations can be separated through reviewed source-table mappings.",
   "history_boundary": "Plan-history references remain source context. No prior or successor plan series is attached automatically, and mixed statements are not converted into annual actuals or achievement results.",
   "non_goals": [
     "Do not infer annual actual and target fields from mixed raw statements.",
