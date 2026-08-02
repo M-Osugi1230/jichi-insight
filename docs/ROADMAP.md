@@ -26,7 +26,7 @@ Status: `integrated_into_phase10`
 - 政策、施策、事業、契約、KPIの接続
 - 年度・会計区分・金額種別の分離
 
-全国の文書スコープ接続はPhase 10で完了しました。個票単位の深掘りは継続研究へ移行します。
+全国の文書スコープ接続はPhase 10で完了しました。個票単位の深掘りはPhase 11へ移行しました。
 
 ## Phase 3 — Manifesto and executive
 
@@ -36,7 +36,7 @@ Status: `reviewed_coverage_complete`
 - 首長任期、候補者、原文を確認できない資料は未昇格
 - 未発見と不存在を分離
 
-現任期と原文を確認した個別公約レコードへの展開は継続研究です。
+現任期と原文を確認した個別公約レコードへの展開はPhase 11以降の継続研究です。
 
 ## Phase 4 — Assembly accountability
 
@@ -44,7 +44,7 @@ Status: `reviewed_coverage_complete`
 
 - 47都道府県×議会の公式資料・公式検索結果をReviewed
 - 行政成果と議会の役割を分離
-- 発言・議案・採決単位の接続は継続研究
+- 発言・議案・採決単位の接続はPhase 11以降の継続研究
 
 ## Phase 5 — Trust, legal, and operations
 
@@ -184,12 +184,48 @@ Phase 10の完了は全国の**文書スコープ**です。個別の目標、�
 - `data/catalog/phase10_nationwide_accountability_linkage.json`
 - `docs/PHASE10_VERTICAL_LINKAGE.md`
 
-## After Phase 10
+## Phase 11 — Nationwide record-level linkage
 
-1. 文書スコープから個票スコープへの一対一接続を全国へ拡張
-2. 政令指定都市
-3. 中核市・県庁所在地
-4. その他市区町村
-5. 選挙・候補者比較
-6. API、データダウンロード、研究・報道向け機能
-7. 比較可能性が確認された指標だけを用いた比較機能
+Status: `in_progress`（2026-08-02開始）
+
+Phase 10の文書スコープから、個別の政策目標、年度実績、予算、決算、重点事業、契約、監査、議会、公約を一対一で追跡できる個票スコープへ進みます。
+
+### Wave 1 current state
+
+北海道、宮城県、東京都、福岡県の既存個票データについて、代表例だけでなく全レコードを移行管理対象へ登録しました。
+
+- 対象ファイル: 11
+- 全レコード: 861
+- Linked: 420
+- Partial: 58
+- Not linked: 383
+- 独自の政策達成評価: 0件
+
+全件移行台帳は、元カタログのファイル一覧、ID、状態内訳、件数と動的に照合します。部分接続や未接続を除外せず、解決していない状態のまま保持します。
+
+### Next gate
+
+1. 北海道のLinked 90件を共通個票形式へ正規化
+2. 北海道のPartial 18件を理由付きで保持
+3. 宮城県238件、東京都6件、福岡県86件のLinkedレコードを順次正規化
+4. Partial 58件、Not linked 383件を推測で昇格しない
+5. 愛知県、大阪府、広島県、香川県、沖縄県へ同じ工程を展開
+6. 残る38県へ同じ品質ゲートを展開
+
+正本:
+
+- `data/catalog/phase11_reference_records.json`
+- `data/catalog/phase11_wave1_migration.json`
+- `data/catalog/phase11_execution_queue.json`
+- `schemas/phase11_reference_records.schema.json`
+- `schemas/phase11_wave1_migration.schema.json`
+- `docs/PHASE11_RECORD_LINKAGE.md`
+
+## After Phase 11
+
+1. 政令指定都市
+2. 中核市・県庁所在地
+3. その他市区町村
+4. 選挙・候補者比較
+5. API、データダウンロード、研究・報道向け機能
+6. 比較可能性が確認された指標だけを用いた比較機能
