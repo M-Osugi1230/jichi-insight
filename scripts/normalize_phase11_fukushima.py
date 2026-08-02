@@ -4,12 +4,13 @@
 from __future__ import annotations
 
 import argparse
+import importlib.util
 import json
 from pathlib import Path
-
-from scripts.phase11_phase9_raw import build_raw_catalog
+from types import ModuleType
 
 ROOT = Path(__file__).resolve().parents[1]
+HELPER_PATH = ROOT / "scripts/phase11_phase9_raw.py"
 SOURCE_RELATIVE_PATH = "data/reviewed/phase9/07.json"
 BOUNDARY = (
     "福島県総合計画（2022▶2030）のPhase 9 Reviewed正本に収録された"
@@ -21,8 +22,18 @@ BOUNDARY = (
 )
 
 
+def load_helper(path: Path = HELPER_PATH) -> ModuleType:
+    spec = importlib.util.spec_from_file_location("phase11_phase9_raw", path)
+    if spec is None or spec.loader is None:
+        raise RuntimeError(f"Cannot load shared normalizer: {path}")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
 def build_catalog(root: Path = ROOT) -> dict:
-    return build_raw_catalog(
+    helper = load_helper(root / "scripts/phase11_phase9_raw.py")
+    return helper.build_raw_catalog(
         root,
         prefecture_code="07",
         slug="fukushima",
