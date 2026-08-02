@@ -44,15 +44,19 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "registered_document_count", "document_reviewed_row_total",
+        "registered_document_count", "documents_with_reviewed_rows",
+        "documents_used_by_canonical_records", "document_reviewed_row_total",
         "canonical_record_count", "overlap_difference",
-        "documents_with_zero_reviewed_rows"
+        "fully_overlapped_document_count", "documents_with_zero_reviewed_rows"
       ],
       "properties": {
         "registered_document_count": {"const": 6},
+        "documents_with_reviewed_rows": {"const": 3},
+        "documents_used_by_canonical_records": {"const": 2},
         "document_reviewed_row_total": {"const": 11},
         "canonical_record_count": {"const": 9},
         "overlap_difference": {"const": 2},
+        "fully_overlapped_document_count": {"const": 1},
         "documents_with_zero_reviewed_rows": {"const": 3}
       }
     },
