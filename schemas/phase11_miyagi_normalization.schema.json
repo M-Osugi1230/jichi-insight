@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Phase 11 Miyagi normalization completion",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "phase",
+    "prefecture_code",
+    "status",
+    "source_catalog",
+    "source_files",
+    "normalizer",
+    "record_schema",
+    "regression_test",
+    "summary",
+    "match_basis_counts",
+    "completion_boundary",
+    "updated_at"
+  ],
+  "properties": {
+    "id": {"const": "phase11-miyagi-normalization"},
+    "phase": {"const": 11},
+    "prefecture_code": {"const": "04"},
+    "status": {"const": "complete"},
+    "source_catalog": {
+      "const": "data/catalog/miyagi_project_money_linkage.json"
+    },
+    "source_files": {
+      "const": [
+        "data/catalog/miyagi_project_money_linkage_part_01.json",
+        "data/catalog/miyagi_project_money_linkage_part_02.json",
+        "data/catalog/miyagi_project_money_linkage_part_03.json",
+        "data/catalog/miyagi_project_money_linkage_part_04.json"
+      ]
+    },
+    "normalizer": {"const": "scripts/normalize_phase11_miyagi.py"},
+    "record_schema": {
+      "const": "schemas/phase11_record_linkage.schema.json"
+    },
+    "regression_test": {
+      "const": "tests/test_phase11_miyagi_normalization.py"
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_count",
+        "linked_record_count",
+        "partial_record_count",
+        "not_linked_record_count",
+        "policy_achievement_assessment_count"
+      ],
+      "properties": {
+        "record_count": {"const": 627},
+        "linked_record_count": {"const": 238},
+        "partial_record_count": {"const": 26},
+        "not_linked_record_count": {"const": 363},
+        "policy_achievement_assessment_count": {"const": 0}
+      }
+    },
+    "match_basis_counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "exact_name_measure_department_office",
+        "exact_name_measure_changed_or_relisted",
+        "same_measure_organization_changed",
+        "exact_name_not_found_in_fy2024_settlement"
+      ],
+      "properties": {
+        "exact_name_measure_department_office": {"const": 238},
+        "exact_name_measure_changed_or_relisted": {"const": 24},
+        "same_measure_organization_changed": {"const": 2},
+        "exact_name_not_found_in_fy2024_settlement": {"const": 363}
+      }
+    },
+    "completion_boundary": {"type": "string", "minLength": 220},
+    "updated_at": {"type": "string", "format": "date"}
+  }
+}
