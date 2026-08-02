@@ -1,0 +1,40 @@
+{
+  "id": "phase11-yamanashi-normalization",
+  "phase": 11,
+  "status": "reviewed_maximum_depth",
+  "prefecture_code": "19",
+  "source_catalog": "data/reviewed/phase9/19.json",
+  "normalizer": "scripts/normalize_phase11_yamanashi.py",
+  "shared_normalizer": "scripts/phase11_phase9_raw.py",
+  "record_schema": "schemas/phase11_record_linkage.schema.json",
+  "expected_normalization": {
+    "record_count": 314,
+    "linked_record_count": 0,
+    "partial_record_count": 314,
+    "not_linked_record_count": 0,
+    "indicator_series_count": 314,
+    "annual_actual_available_count": 0,
+    "future_target_available_count": 0,
+    "reviewed_maximum_depth_record_count": 314,
+    "policy_achievement_assessment_count": 0
+  },
+  "document_boundary": {
+    "registered_document_count": 6,
+    "document_reviewed_row_counts": [2, 4, 4, 0, 0, 304],
+    "document_reviewed_row_total": 314,
+    "canonical_record_count": 314,
+    "documents_with_zero_reviewed_rows": 2
+  },
+  "maximum_depth_rule": "All 314 canonical Phase 9 Reviewed statements remain raw maximum-depth records until strategy, KPI, current, target, national, regional, provisional, and multi-year series can be mapped through reviewed table-level evidence.",
+  "evaluation_boundary": "Targets and key performance indicators in the five strategy action plans remain separate from comprehensive-plan implementation reports, policy evaluation, project evaluation, and department-level results. Administrative project evaluation is not converted into a plan-indicator achievement rate.",
+  "series_boundary": "Current values, target values, nationwide values, medical-area values, provisional values, and multiple reporting years remain separate until definitions, units, periods, and populations are reviewed.",
+  "non_goals": [
+    "Do not fill the zero-row strategy four and strategy five documents by inference.",
+    "Do not convert project evaluation into plan-indicator achievement.",
+    "Do not merge current, target, national, regional, and provisional values automatically.",
+    "Do not infer actuals or targets from the large reference-material extraction.",
+    "Do not replace missing units or split multiple values by inference.",
+    "Do not calculate policy causality or cross-prefecture ranking."
+  ],
+  "updated_at": "2026-08-02"
+}
