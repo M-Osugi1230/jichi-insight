@@ -46,6 +46,7 @@
     "partial_reason": {"type": ["string", "null"]},
     "subject": {"$ref": "#/$defs/subject"},
     "context": {"$ref": "#/$defs/context"},
+    "conflict": {"$ref": "#/$defs/conflict"},
     "measurements": {
       "type": "array",
       "minItems": 1,
@@ -152,11 +153,29 @@
         }
       }
     },
+    "conflict": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": [
+        "source_value",
+        "source_period",
+        "catalog_value",
+        "catalog_period"
+      ],
+      "properties": {
+        "source_value": {"type": ["string", "null"]},
+        "source_period": {"type": ["string", "null"]},
+        "catalog_value": {"type": ["string", "null"]},
+        "catalog_period": {"type": ["string", "null"]}
+      }
+    },
     "component": {
       "type": "object",
       "additionalProperties": false,
       "required": ["label", "unit", "value_text", "value", "value_status"],
       "properties": {
+        "record_ref": {"type": "string", "minLength": 1},
+        "catalog_role": {"type": "string", "minLength": 1},
         "label": {"type": ["string", "null"]},
         "unit": {"type": ["string", "null"]},
         "value_text": {"type": "string"},
