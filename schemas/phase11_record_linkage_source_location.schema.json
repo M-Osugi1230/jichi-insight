@@ -1,0 +1,217 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Phase 11 normalized record linkage with source locator",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id", "prefecture_code", "source_registry", "source_record_id",
+    "linkage_kind", "linkage_status", "partial_reason", "subject",
+    "indicator_context", "measurements", "evidence", "boundary",
+    "evaluation_status", "comparability_status"
+  ],
+  "properties": {
+    "id": {"type": "string", "pattern": "^phase11-record-[a-z0-9-]+$"},
+    "prefecture_code": {"type": "string", "pattern": "^[0-9]{2}$"},
+    "source_registry": {
+      "type": "string",
+      "pattern": "^data/(catalog|reviewed)/.+\\.json$"
+    },
+    "source_record_id": {"type": "string", "minLength": 5},
+    "linkage_kind": {"const": "target_to_annual_actual"},
+    "linkage_status": {"const": "partial"},
+    "partial_reason": {"type": "string", "minLength": 3},
+    "subject": {"$ref": "#/$defs/subject"},
+    "indicator_context": {"$ref": "#/$defs/indicatorContext"},
+    "measurements": {
+      "type": "array",
+      "minItems": 3,
+      "items": {"$ref": "#/$defs/measurement"}
+    },
+    "evidence": {"$ref": "#/$defs/evidence"},
+    "boundary": {"type": "string", "minLength": 30},
+    "evaluation_status": {"const": "not_assessed"},
+    "comparability_status": {"const": "excluded_until_verified"}
+  },
+  "$defs": {
+    "sourceLocation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["location_kind"],
+      "properties": {
+        "location_kind": {
+          "enum": [
+            "pdf_text_line", "pdf_table_row", "html_text_line",
+            "html_table_row", "digital_book_page"
+          ]
+        },
+        "page": {"type": ["integer", "null"], "minimum": 1},
+        "row": {"type": ["integer", "null"], "minimum": 1},
+        "table": {"type": ["integer", "null"], "minimum": 1}
+      },
+      "anyOf": [
+        {
+          "required": ["page"],
+          "properties": {"page": {"type": "integer", "minimum": 1}}
+        },
+        {
+          "required": ["row"],
+          "properties": {"row": {"type": "integer", "minimum": 1}}
+        }
+      ]
+    },
+    "subject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_ref", "sequence", "name", "source_name",
+        "definition", "hierarchy_refs"
+      ],
+      "properties": {
+        "record_ref": {"type": "string", "minLength": 3},
+        "sequence": {"type": "integer", "minimum": 1},
+        "name": {"type": "string", "minLength": 1},
+        "source_name": {"type": "string", "minLength": 1},
+        "definition": {"type": "string"},
+        "hierarchy_refs": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "seriesContext": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "series_ref", "label", "unit", "direction",
+        "comparability_note", "value_count"
+      ],
+      "properties": {
+        "series_ref": {"type": "string", "minLength": 3},
+        "label": {"type": ["string", "null"]},
+        "unit": {"type": "string"},
+        "direction": {"type": "string", "minLength": 3},
+        "comparability_note": {"type": "string"},
+        "value_count": {"type": "integer", "minimum": 1}
+      }
+    },
+    "indicatorContext": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "policy_direction_code", "policy_direction_name", "source_page",
+        "source_location", "repost_of", "target_revision_status",
+        "linked_current_series_count", "target_series_count",
+        "review_status", "quality_note", "series"
+      ],
+      "properties": {
+        "policy_direction_code": {"type": "string", "minLength": 2},
+        "policy_direction_name": {"type": "string", "minLength": 1},
+        "source_page": {"type": ["integer", "null"], "minimum": 1},
+        "source_location": {"$ref": "#/$defs/sourceLocation"},
+        "repost_of": {"type": ["string", "null"]},
+        "target_revision_status": {"type": "string", "minLength": 3},
+        "linked_current_series_count": {"type": "integer", "minimum": 0},
+        "target_series_count": {"type": "integer", "minimum": 0},
+        "review_status": {"type": "string", "minLength": 3},
+        "quality_note": {"type": "string"},
+        "series": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/seriesContext"}
+        }
+      }
+    },
+    "component": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_ref", "catalog_role", "label", "unit", "period_text",
+        "value_text", "value", "value_status", "source_status", "scope",
+        "aggregation_scope", "preferred_direction", "operator"
+      ],
+      "properties": {
+        "record_ref": {"type": "string", "minLength": 1},
+        "catalog_role": {"type": "string", "minLength": 1},
+        "label": {"type": ["string", "null"]},
+        "unit": {"type": ["string", "null"]},
+        "period_text": {"type": "string"},
+        "value_text": {"type": "string"},
+        "value": {"type": ["number", "string", "null"]},
+        "value_status": {"enum": ["numeric", "textual", "missing"]},
+        "source_status": {"type": "string", "minLength": 3},
+        "scope": {"type": ["string", "null"]},
+        "aggregation_scope": {"type": ["string", "null"]},
+        "preferred_direction": {"type": ["string", "null"]},
+        "operator": {"type": ["string", "null"]}
+      }
+    },
+    "measurementEvidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_number", "page", "source_location"],
+      "properties": {
+        "source_number": {"type": ["integer", "null"], "minimum": 1},
+        "page": {"type": ["integer", "null"], "minimum": 1},
+        "source_location": {
+          "oneOf": [
+            {"$ref": "#/$defs/sourceLocation"},
+            {"type": "null"}
+          ]
+        }
+      }
+    },
+    "measurement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "role", "status", "period_text", "value_text",
+        "components", "evidence"
+      ],
+      "properties": {
+        "role": {
+          "enum": ["plan_current", "annual_actual", "final_target"]
+        },
+        "status": {"enum": ["reported", "not_available"]},
+        "period_text": {"type": "string"},
+        "value_text": {"type": "string"},
+        "components": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/component"}
+        },
+        "evidence": {"$ref": "#/$defs/measurementEvidence"}
+      }
+    },
+    "evidenceLocation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_number", "page", "source_location", "is_reprint"
+      ],
+      "properties": {
+        "source_number": {"type": "integer", "minimum": 1},
+        "page": {"type": ["integer", "null"], "minimum": 1},
+        "source_location": {"$ref": "#/$defs/sourceLocation"},
+        "is_reprint": {"type": "boolean"}
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "primary_source_number", "primary_page", "primary_location",
+        "locations"
+      ],
+      "properties": {
+        "primary_source_number": {"type": "integer", "minimum": 1},
+        "primary_page": {"type": ["integer", "null"], "minimum": 1},
+        "primary_location": {"$ref": "#/$defs/sourceLocation"},
+        "locations": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/evidenceLocation"}
+        }
+      }
+    }
+  }
+}
