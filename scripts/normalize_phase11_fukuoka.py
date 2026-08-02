@@ -97,7 +97,9 @@ def canonical_components(
 
 def canonical_period(target: dict[str, Any], role: str) -> str:
     field = "baseline_period" if role == "plan_current" else "target_period"
-    periods = list(dict.fromkeys(component[field] for component in target["components"]))
+    periods = list(
+        dict.fromkeys((component[field] or "") for component in target["components"])
+    )
     return " / ".join(periods)
 
 
