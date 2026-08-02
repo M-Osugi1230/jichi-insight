@@ -8,7 +8,7 @@
     "id": {"const": "phase11-record-linkage-execution-queue"},
     "phase": {"const": 11},
     "status": {"const": "in_progress"},
-    "active_wave": {"const": "wave2-remaining-regional-anchors"},
+    "active_wave": {"const": "wave3-nationwide-minimum-record-depth"},
     "quality_gate": {
       "type": "array",
       "minItems": 8,
@@ -25,13 +25,10 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "total_prefectures",
-        "reference_prefectures",
-        "remaining_anchor_prefectures",
-        "nationwide_prefectures",
-        "wave1_inventory",
-        "wave1_normalization",
-        "wave2_normalization"
+        "total_prefectures", "reference_prefectures",
+        "remaining_anchor_prefectures", "nationwide_prefectures",
+        "wave1_inventory", "wave1_normalization",
+        "wave2_normalization", "wave3_normalization"
       ],
       "properties": {
         "total_prefectures": {"const": 47},
@@ -54,11 +51,8 @@
           "type": "object",
           "additionalProperties": false,
           "required": [
-            "prefectures_complete",
-            "records_complete",
-            "linked_complete",
-            "partial_complete",
-            "not_linked_complete"
+            "prefectures_complete", "records_complete", "linked_complete",
+            "partial_complete", "not_linked_complete"
           ],
           "properties": {
             "prefectures_complete": {"const": 4},
@@ -72,22 +66,33 @@
           "type": "object",
           "additionalProperties": false,
           "required": [
-            "anchors_complete",
-            "anchors_remaining",
-            "records_complete",
-            "indicator_series_complete",
-            "linked_current_series",
-            "missing_current_series",
-            "target_series"
+            "anchors_complete", "anchors_remaining", "records_complete",
+            "indicator_series_complete", "linked_current_series",
+            "missing_or_unavailable_current_series", "target_series",
+            "reviewed_maximum_depth_records"
           ],
           "properties": {
-            "anchors_complete": {"const": 4},
-            "anchors_remaining": {"const": 1},
-            "records_complete": {"const": 336},
-            "indicator_series_complete": {"const": 350},
+            "anchors_complete": {"const": 5},
+            "anchors_remaining": {"const": 0},
+            "records_complete": {"const": 711},
+            "indicator_series_complete": {"const": 725},
             "linked_current_series": {"const": 340},
-            "missing_current_series": {"const": 10},
-            "target_series": {"const": 227}
+            "missing_or_unavailable_current_series": {"const": 385},
+            "target_series": {"const": 602},
+            "reviewed_maximum_depth_records": {"const": 375}
+          }
+        },
+        "wave3_normalization": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "prefectures_complete", "prefectures_remaining",
+            "next_prefecture_code"
+          ],
+          "properties": {
+            "prefectures_complete": {"const": 0},
+            "prefectures_remaining": {"const": 38},
+            "next_prefecture_code": {"const": "02"}
           }
         }
       }
