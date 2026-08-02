@@ -45,6 +45,7 @@
     },
     "partial_reason": {"type": ["string", "null"]},
     "subject": {"$ref": "#/$defs/subject"},
+    "context": {"$ref": "#/$defs/context"},
     "measurements": {
       "type": "array",
       "minItems": 1,
@@ -100,6 +101,57 @@
         }
       }
     },
+    "candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "policy_ref",
+        "measure_ref",
+        "name",
+        "department",
+        "office",
+        "amount_thousand_yen",
+        "page"
+      ],
+      "properties": {
+        "policy_ref": {"type": ["string", "null"]},
+        "measure_ref": {"type": ["string", "null"]},
+        "name": {"type": "string", "minLength": 1},
+        "department": {"type": "string", "minLength": 1},
+        "office": {"type": "string", "minLength": 1},
+        "amount_thousand_yen": {"type": "integer", "minimum": 0},
+        "page": {"type": "integer", "minimum": 1}
+      }
+    },
+    "context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "policy_ref",
+        "measure_ref",
+        "normalized_name",
+        "department",
+        "office",
+        "implementation_period",
+        "match_basis",
+        "settlement_project_number_text",
+        "settlement_candidates"
+      ],
+      "properties": {
+        "policy_ref": {"type": ["string", "null"]},
+        "measure_ref": {"type": ["string", "null"]},
+        "normalized_name": {"type": ["string", "null"]},
+        "department": {"type": ["string", "null"]},
+        "office": {"type": ["string", "null"]},
+        "implementation_period": {"type": ["string", "null"]},
+        "match_basis": {"type": ["string", "null"]},
+        "settlement_project_number_text": {"type": ["string", "null"]},
+        "settlement_candidates": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/candidate"}
+        }
+      }
+    },
     "component": {
       "type": "object",
       "additionalProperties": false,
@@ -110,6 +162,15 @@
         "value_text": {"type": "string"},
         "value": {"type": ["number", "null"]},
         "value_status": {"enum": ["numeric", "textual"]}
+      }
+    },
+    "measurementEvidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_number", "page"],
+      "properties": {
+        "source_number": {"type": ["integer", "null"], "minimum": 1},
+        "page": {"type": ["integer", "null"], "minimum": 1}
       }
     },
     "measurement": {
@@ -149,7 +210,8 @@
         "components": {
           "type": "array",
           "items": {"$ref": "#/$defs/component"}
-        }
+        },
+        "evidence": {"$ref": "#/$defs/measurementEvidence"}
       }
     },
     "location": {
