@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Phase 11 Osaka normalization manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "phase",
+    "status",
+    "prefecture_code",
+    "source_catalog",
+    "source_review_manifest",
+    "normalizer",
+    "record_schema",
+    "source",
+    "expected_normalization",
+    "partial_boundaries",
+    "promotion_rule",
+    "non_goals",
+    "updated_at"
+  ],
+  "properties": {
+    "id": {"const": "phase11-osaka-normalization"},
+    "phase": {"const": 11},
+    "status": {"const": "normalized"},
+    "prefecture_code": {"const": "27"},
+    "source_catalog": {"const": "data/reviewed/osaka_beyond_expo_indicators.json"},
+    "source_review_manifest": {"const": "data/catalog/osaka_beyond_expo_indicator_review_manifest.json"},
+    "normalizer": {"const": "scripts/normalize_phase11_osaka.py"},
+    "record_schema": {"const": "schemas/phase11_record_linkage.schema.json"},
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "adopted_at",
+        "indicator_pages",
+        "record_count",
+        "series_count",
+        "strategy_target_count",
+        "objective_kpi_count",
+        "subjective_indicator_count"
+      ],
+      "properties": {
+        "title": {"const": "Beyond EXPO 2025"},
+        "adopted_at": {"const": "2026-03-31"},
+        "indicator_pages": {
+          "const": [73, 75, 76]
+        },
+        "record_count": {"const": 83},
+        "series_count": {"const": 91},
+        "strategy_target_count": {"const": 1},
+        "objective_kpi_count": {"const": 27},
+        "subjective_indicator_count": {"const": 55}
+      }
+    },
+    "expected_normalization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_count",
+        "linked_record_count",
+        "partial_record_count",
+        "not_linked_record_count",
+        "rows_with_current_observation",
+        "rows_without_current_observation",
+        "policy_achievement_assessment_count"
+      ],
+      "properties": {
+        "record_count": {"const": 83},
+        "linked_record_count": {"const": 77},
+        "partial_record_count": {"const": 6},
+        "not_linked_record_count": {"const": 0},
+        "rows_with_current_observation": {"const": 77},
+        "rows_without_current_observation": {"const": 6},
+        "policy_achievement_assessment_count": {"const": 0}
+      }
+    },
+    "partial_boundaries": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "strategy_target_without_current",
+        "subjective_indicator_pending_first_survey"
+      ],
+      "properties": {
+        "strategy_target_without_current": {"const": 1},
+        "subjective_indicator_pending_first_survey": {"const": 5}
+      }
+    },
+    "promotion_rule": {"type": "string", "minLength": 80},
+    "non_goals": {
+      "type": "array",
+      "minItems": 4,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 30}
+    },
+    "updated_at": {"type": "string", "format": "date"}
+  }
+}
