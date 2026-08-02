@@ -1,0 +1,30 @@
+{
+  "id": "phase11-akita-normalization",
+  "phase": 11,
+  "status": "reviewed_maximum_depth",
+  "prefecture_code": "05",
+  "source_catalog": "data/reviewed/phase9/05.json",
+  "normalizer": "scripts/normalize_phase11_akita.py",
+  "record_schema": "schemas/phase11_record_linkage.schema.json",
+  "expected_normalization": {
+    "record_count": 1,
+    "linked_record_count": 0,
+    "partial_record_count": 1,
+    "not_linked_record_count": 0,
+    "indicator_series_count": 1,
+    "annual_actual_available_count": 0,
+    "structured_future_target_available_count": 0,
+    "reviewed_maximum_depth_record_count": 1,
+    "policy_achievement_assessment_count": 0
+  },
+  "maximum_depth_rule": "The current-plan digital-book page contains one compound line covering several industries, population, income, lodging, enterprise, and estimate values. The line remains one raw maximum-depth record until an official structured table can be reviewed.",
+  "page_boundary": "Evidence page 24 is derived transparently from the official digital-book URL segment index24.html; the original reviewed source location remains HTML row 3.",
+  "history_boundary": "The 2026-2029 plan is the current source. Targets, results, and self-evaluations from the plan ending in fiscal 2025 are not inherited automatically, and the first annual evaluation is not yet published.",
+  "non_goals": [
+    "Do not split the compound digital-book line into inferred independent indicators.",
+    "Do not promote mixed estimates or plan values to a separately reviewed annual actual.",
+    "Do not inherit prior-plan targets or results into the current plan.",
+    "Do not calculate achievement, causality, or cross-prefecture ranking."
+  ],
+  "updated_at": "2026-08-02"
+}
