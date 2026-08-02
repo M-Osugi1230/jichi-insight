@@ -31,13 +31,24 @@ def catalog() -> dict:
 
 def test_manifest_and_phase9_counts_reconcile():
     manifest = load(MANIFEST_PATH)
-    validator = Draft202012Validator(load(MANIFEST_SCHEMA_PATH), format_checker=FormatChecker())
+    validator = Draft202012Validator(
+        load(MANIFEST_SCHEMA_PATH), format_checker=FormatChecker()
+    )
     assert list(validator.iter_errors(manifest)) == []
-    for field in ("source_catalog", "normalizer", "shared_normalizer", "record_schema"):
+    for field in (
+        "source_catalog",
+        "normalizer",
+        "shared_normalizer",
+        "record_schema",
+    ):
         assert (ROOT / manifest[field]).exists()
 
     source = load(SOURCE_PATH)
-    summary = next(item for item in load(SUMMARY_PATH)["records"] if item["prefecture_code"] == "09")
+    summary = next(
+        item
+        for item in load(SUMMARY_PATH)["records"]
+        if item["prefecture_code"] == "09"
+    )
     assert len(source["records"]) == 257
     assert source["reviewed_target_statement_count"] == 257
     assert source["evidence_packet_count"] == 257
@@ -51,10 +62,14 @@ def test_manifest_and_phase9_counts_reconcile():
 def test_all_records_validate_and_preserve_every_source_field():
     source_records = load(SOURCE_PATH)["records"]
     records = catalog()["records"]
-    validator = Draft202012Validator(load(RECORD_SCHEMA_PATH), format_checker=FormatChecker())
+    validator = Draft202012Validator(
+        load(RECORD_SCHEMA_PATH), format_checker=FormatChecker()
+    )
     assert [item["display_order"] for item in source_records] == list(range(1, 258))
     assert [item["subject"]["sequence"] for item in records] == list(range(1, 258))
-    assert [item["source_record_id"] for item in records] == [item["id"] for item in source_records]
+    assert [item["source_record_id"] for item in records] == [
+        item["id"] for item in source_records
+    ]
     assert len({item["id"] for item in records}) == 257
 
     source_by_id = {item["id"]: item for item in source_records}
@@ -62,14 +77,24 @@ def test_all_records_validate_and_preserve_every_source_field():
         assert list(validator.iter_errors(record)) == []
         source = source_by_id[record["source_record_id"]]
         note = json.loads(record["indicator_context"]["quality_note"])
-        plan = next(item for item in record["measurements"] if item["role"] == "plan_current")
+        plan = next(
+            item for item in record["measurements"] if item["role"] == "plan_current"
+        )
         assert plan["value_text"] == source["target_statement_original"]
         assert plan["components"][0]["unit"] == source["unit_original"]
         for field in (
-            "source_document_url", "source_document_sha256", "source_location",
-            "numeric_tokens_original", "period_tokens_original", "matched_keywords",
-            "keyword_match_kind", "unit_original", "population_scope_original",
-            "aggregation_scope", "target_operator", "comparability",
+            "source_document_url",
+            "source_document_sha256",
+            "source_location",
+            "numeric_tokens_original",
+            "period_tokens_original",
+            "matched_keywords",
+            "keyword_match_kind",
+            "unit_original",
+            "population_scope_original",
+            "aggregation_scope",
+            "target_operator",
+            "comparability",
         ):
             assert note[field] == source[field]
         assert record["evidence"]["primary_page"] == source["source_location"]["page"]
@@ -92,7 +117,9 @@ def test_dynamic_counts_and_determinism():
     source_records = source["records"]
     normalized = catalog()
     used_titles = Counter(item["source_document_title"] for item in source_records)
-    locations = Counter(item["source_location"]["location_kind"] for item in source_records)
+    locations = Counter(
+        item["source_location"]["location_kind"] for item in source_records
+    )
     missing_units = sum(item["unit_original"] is None for item in source_records)
     assert len(source["documents"]) == 6
     assert len(used_titles) == 3
