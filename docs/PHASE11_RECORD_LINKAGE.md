@@ -38,7 +38,7 @@ Automated extraction may identify candidates but cannot promote them to `linked`
 
 ## Wave 1 exhaustive inventory
 
-The first implementation no longer relies on four representative examples alone. All existing record-level results in the four reference prefectures are controlled by one exhaustive migration inventory.
+All existing record-level results in the four reference prefectures are controlled by one exhaustive migration inventory.
 
 | Prefecture | Source records | Linked | Partial | Not linked |
 |---|---:|---:|---:|---:|
@@ -69,23 +69,22 @@ Canonical inventory files:
 `schemas/phase11_record_linkage.schema.json` defines the reusable Phase 11 record shape. It preserves:
 
 - original record and hierarchy identifiers;
-- the reviewed linkage status and partial reason;
+- the reviewed linkage status and unresolved reason;
+- source-specific identity context such as department, office, normalized project name, match basis, and candidate matches;
 - current, intermediate target, final target, actual, budget, settlement, project-cost, and contract-amount roles as separate measurements;
 - raw value text, periods, numeric or textual components;
-- primary Evidence page and every reprint location;
+- Evidence locations for the whole record and individual money measurements;
 - the original review boundary;
 - `not_assessed` and comparison-exclusion states.
 
 ## Hokkaido normalization complete
 
-All 108 Hokkaido records now transform deterministically into the reusable record shape.
+All 108 Hokkaido records transform deterministically into the reusable record shape.
 
 - Linked: 90
 - Partial: 18
 - Not linked: 0
 - Policy-achievement assessments: 0
-
-The transformation maps every original field or preserves it through the normalized subject, measurements, evidence, status, reason, or boundary. Tests compare every normalized record back to the source record, not only aggregate counts.
 
 The 18 partial records retain all original reason groups:
 
@@ -98,9 +97,50 @@ Canonical files:
 
 - `data/catalog/phase11_hokkaido_normalization.json`
 - `schemas/phase11_hokkaido_normalization.schema.json`
-- `schemas/phase11_record_linkage.schema.json`
 - `scripts/normalize_phase11_hokkaido.py`
 - `tests/test_phase11_hokkaido_normalization.py`
+
+## Miyagi normalization complete
+
+All 627 Miyagi budget-project records transform deterministically into the reusable record shape.
+
+- Linked: 238
+- Partial: 26
+- Not linked: 363
+- Policy-achievement assessments: 0
+
+For every record, the transformation preserves policy and measure references, original and normalized project names, department, office, implementation period, match basis, budget amount and page, settlement amount and page, project number, candidate matches, and review boundary.
+
+The three result states remain distinct:
+
+- `linked`: the same measure, normalized project name, department, and office identify one settlement record;
+- `partial`: one or more settlement candidates are retained, but no candidate is promoted;
+- `not_linked`: no FY2024 settlement candidate is available, and the missing relationship remains explicit.
+
+FY2026 budget and FY2024 settlement values are always separate measurements. A difference between them is not converted into an execution rate or policy outcome.
+
+Canonical files:
+
+- `data/catalog/phase11_miyagi_normalization.json`
+- `schemas/phase11_miyagi_normalization.schema.json`
+- `scripts/normalize_phase11_miyagi.py`
+- `tests/test_phase11_miyagi_normalization.py`
+
+## Normalization progress
+
+| Prefecture | Records normalized | Status |
+|---|---:|---|
+| Hokkaido | 108 / 108 | Complete |
+| Miyagi | 627 / 627 | Complete |
+| Tokyo | 0 / 8 | Next |
+| Fukuoka | 0 / 118 | Pending |
+| **Wave 1** | **735 / 861** | In progress |
+
+State totals normalized so far:
+
+- Linked: 328 / 420
+- Partial: 44 / 58
+- Not linked: 363 / 383
 
 ## Initial common-schema reference records
 
@@ -125,8 +165,8 @@ Wave 1 proceeds without skipping source states.
 
 1. ~~Normalize all 90 Hokkaido linked annual-actual records.~~ Complete.
 2. ~~Preserve all 18 Hokkaido partial records with their exact unresolved reason.~~ Complete.
-3. Normalize all 238 Miyagi linked project-money records.
-4. Preserve 26 Miyagi partial and 363 not-linked records without promotion.
+3. ~~Normalize all 238 Miyagi linked project-money records.~~ Complete.
+4. ~~Preserve 26 Miyagi partial and 363 not-linked records without promotion.~~ Complete.
 5. Normalize the six Tokyo linked target groups and preserve the two source conflicts.
 6. Normalize 86 Fukuoka linked targets, 12 revised-target partial records, and 20 not-linked records.
 7. Derive reusable normalizers only after every source-specific field has an explicit mapping or retained boundary.
@@ -135,7 +175,7 @@ Wave 1 proceeds without skipping source states.
 
 ### Wave 1 — Reference implementations
 
-Unify the existing Hokkaido, Miyagi, Tokyo, and Fukuoka records under the shared contract and derive reusable promotion rules. The exhaustive inventory is complete. Hokkaido 108/108 is normalized; Miyagi, Tokyo, and Fukuoka remain.
+Unify the existing Hokkaido, Miyagi, Tokyo, and Fukuoka records under the shared contract and derive reusable promotion rules. The exhaustive inventory is complete. Hokkaido and Miyagi are normalized; Tokyo and Fukuoka remain.
 
 ### Wave 2 — Remaining regional anchors
 
