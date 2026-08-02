@@ -67,9 +67,12 @@ def test_manifest_source_and_phase9_summary_reconcile():
     assert summary["extraction_error_count"] == 0
     assert manifest["overlap_boundary"] == {
         "registered_document_count": 6,
+        "documents_with_reviewed_rows": 3,
+        "documents_used_by_canonical_records": 2,
         "document_reviewed_row_total": 11,
         "canonical_record_count": 9,
         "overlap_difference": 2,
+        "fully_overlapped_document_count": 1,
         "documents_with_zero_reviewed_rows": 3,
     }
 
@@ -124,6 +127,11 @@ def test_every_source_field_and_evidence_page_are_retained():
 def test_document_overlap_and_zero_row_documents_remain_explicit():
     source = load(SOURCE_PATH)
     registered_hashes = {item["sha256"] for item in source["documents"]}
+    nonzero_hashes = {
+        item["sha256"]
+        for item in source["documents"]
+        if item["reviewed_row_count"] > 0
+    }
     used_hashes = {item["source_document_sha256"] for item in source["records"]}
     zero_row_hashes = {
         item["sha256"]
@@ -132,7 +140,9 @@ def test_document_overlap_and_zero_row_documents_remain_explicit():
     }
     assert used_hashes <= registered_hashes
     assert len(registered_hashes) == 6
-    assert len(used_hashes) == 3
+    assert len(nonzero_hashes) == 3
+    assert len(used_hashes) == 2
+    assert len(nonzero_hashes - used_hashes) == 1
     assert len(zero_row_hashes) == 3
     assert used_hashes.isdisjoint(zero_row_hashes)
     assert catalog()["sources"][0]["document_count"] == 6
