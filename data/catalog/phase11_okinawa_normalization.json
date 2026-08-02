@@ -1,0 +1,42 @@
+{
+  "id": "phase11-okinawa-normalization",
+  "phase": 11,
+  "status": "reviewed_maximum_depth",
+  "prefecture_code": "47",
+  "source_catalogs": [
+    "data/reviewed/okinawa_midterm_major_indicators.json",
+    "data/reviewed/okinawa_midterm_outcome_indicators_part1.json",
+    "data/reviewed/okinawa_midterm_outcome_indicators_part2.json",
+    "data/reviewed/okinawa_midterm_outcome_indicators_part3.json"
+  ],
+  "source_review_manifest": "data/catalog/okinawa_midterm_indicator_review_manifest.json",
+  "normalizer": "scripts/normalize_phase11_okinawa.py",
+  "record_schema": "schemas/phase11_record_linkage.schema.json",
+  "expected_normalization": {
+    "record_count": 375,
+    "linked_record_count": 0,
+    "partial_record_count": 375,
+    "not_linked_record_count": 0,
+    "major_indicator_count": 36,
+    "outcome_indicator_count": 339,
+    "indicator_series_count": 375,
+    "annual_actual_available_count": 0,
+    "annual_actual_unavailable_count": 375,
+    "island_indicator_count": 32,
+    "sdgs_priority_indicator_count": 43,
+    "qualitative_target_count": 9,
+    "national_comparison_provided_count": 174,
+    "national_comparison_unavailable_count": 201,
+    "source_value_note_count": 1,
+    "policy_achievement_assessment_count": 0
+  },
+  "maximum_depth_rule": "The reviewed current source provides plan baselines and R9 targets, not reviewed annual actuals. Every record therefore remains partial with annual_actual explicitly unavailable.",
+  "reference_boundary": "National values are retained only as official reference context. They are not Okinawa annual actuals and do not make a record comparable across prefectures.",
+  "non_goals": [
+    "Do not promote a plan baseline to an annual actual.",
+    "Do not use national reference values as Okinawa current results.",
+    "Do not correct the single official source anomaly without a replacement source.",
+    "Do not calculate achievement, causality, or cross-prefecture ranking."
+  ],
+  "updated_at": "2026-08-02"
+}
