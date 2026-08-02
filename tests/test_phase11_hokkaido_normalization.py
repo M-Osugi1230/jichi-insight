@@ -5,11 +5,15 @@ import json
 from collections import Counter
 from pathlib import Path
 
-from jsonschema import Draft202012Validator
+from jsonschema import Draft202012Validator, FormatChecker
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPT_PATH = ROOT / "scripts/normalize_phase11_hokkaido.py"
 SCHEMA_PATH = ROOT / "schemas/phase11_record_linkage.schema.json"
+MANIFEST_PATH = ROOT / "data/catalog/phase11_hokkaido_normalization.json"
+MANIFEST_SCHEMA_PATH = (
+    ROOT / "schemas/phase11_hokkaido_normalization.schema.json"
+)
 
 spec = importlib.util.spec_from_file_location(
     "normalize_phase11_hokkaido",
@@ -32,6 +36,24 @@ def source_records() -> list[tuple[str, dict]]:
 
 def normalized_catalog() -> dict:
     return normalizer.build_catalog(ROOT)
+
+
+def test_hokkaido_normalization_manifest_matches_schema():
+    validator = Draft202012Validator(
+        load(MANIFEST_SCHEMA_PATH),
+        format_checker=FormatChecker(),
+    )
+    manifest = load(MANIFEST_PATH)
+
+    assert list(validator.iter_errors(manifest)) == []
+    for path_field in (
+        "source_catalog",
+        "normalizer",
+        "record_schema",
+        "regression_test",
+    ):
+        assert (ROOT / manifest[path_field]).exists()
+    assert all((ROOT / path).exists() for path in manifest["source_files"])
 
 
 def test_all_108_records_match_the_reusable_phase11_schema():
@@ -68,6 +90,7 @@ def test_source_order_ids_and_statuses_are_preserved_without_skips():
         "not_linked_record_count": 0,
         "policy_achievement_assessment_count": 0,
     }
+    assert catalog["summary"] == load(MANIFEST_PATH)["summary"]
 
 
 def test_every_source_field_is_mapped_or_retained_in_the_normalized_record():
@@ -156,6 +179,7 @@ def test_partial_records_keep_all_four_original_reason_groups():
         "indicator_definition_or_numbering_changed": 10,
         "component_structure_changed": 2,
     }
+    assert reasons == load(MANIFEST_PATH)["partial_reason_counts"]
     for record in partial_records:
         actual = next(
             measurement
