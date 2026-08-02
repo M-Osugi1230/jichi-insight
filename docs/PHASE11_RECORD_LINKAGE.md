@@ -71,8 +71,10 @@ Canonical completion controls:
 - record and hierarchy identifiers;
 - project identity, departments, offices, match bases, and candidate settlements;
 - canonical target context and annual-report target context as separate layers;
-- series IDs, labels, units, raw values, scopes, operators, and periods;
+- multi-series indicator histories with series identity and per-value periods;
+- series IDs, labels, units, raw values, source statuses, scopes, operators, and directions;
 - source-versus-catalog conflicts with nullable missing sides;
+- original and repost Evidence locations;
 - record-level and measurement-level Evidence;
 - `linked`, `partial`, and `not_linked` without automatic promotion;
 - `not_assessed` and comparison exclusion.
@@ -156,9 +158,39 @@ Targets:
 - Kagawa
 - Okinawa
 
-The next action is Aichi. Its current indicator catalog will be inventoried against the latest official progress source before any annual actual is promoted.
+### Aichi normalization complete
 
-Each anchor must reach one of two valid states:
+The official Aichi Vision page was rechecked on 2026-08-02. The newest listed annual report remains `あいちレポート2025`, published on the page updated 2026-03-30. The repository source therefore remains the latest official annual report available for this implementation.
+
+All 56 reviewed indicator rows and all 62 series are normalized.
+
+- Current-value series available: 61
+- Current-value series missing: 1
+- Series with target values: 29
+- Repost rows: 2
+- Rows with a 2025 target revision: 1
+- Policy-achievement assessments: 0
+- Ranking-eligible records: 0
+
+One row may contain several series, and one series may contain several baseline years. The normalizer keeps every original value separately with its role, period, raw text, parsed value, source status, unit, aggregation scope, operator, direction, and comparability note. It never compresses these into a single indicator value.
+
+Rows become Partial when a current series is missing or the 2025 report revised the target. Repost rows retain the original Evidence page and the repost page with explicit `is_reprint` states.
+
+Files:
+
+- `data/catalog/phase11_aichi_normalization.json`
+- `schemas/phase11_aichi_normalization.schema.json`
+- `scripts/normalize_phase11_aichi.py`
+- `tests/test_phase11_aichi_normalization.py`
+
+### Wave 2 progress
+
+- Anchors complete: 1 / 5
+- Records normalized: 56
+- Indicator series normalized: 62
+- Next anchor: Osaka
+
+Each remaining anchor must reach one of two valid states:
 
 1. at least one Schema-valid record-level Evidence Chain; or
 2. a reviewed maximum official-source depth explaining why deeper linkage is not yet supportable.
