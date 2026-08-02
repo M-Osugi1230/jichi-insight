@@ -1,0 +1,31 @@
+{
+  "id": "phase11-saitama-normalization",
+  "phase": 11,
+  "status": "reviewed_maximum_depth",
+  "prefecture_code": "11",
+  "source_catalog": "data/reviewed/phase9/11.json",
+  "normalizer": "scripts/normalize_phase11_saitama.py",
+  "shared_normalizer": "scripts/phase11_phase9_raw.py",
+  "record_schema": "schemas/phase11_record_linkage.schema.json",
+  "expected_normalization": {
+    "record_count": 3,
+    "linked_record_count": 0,
+    "partial_record_count": 3,
+    "not_linked_record_count": 0,
+    "indicator_series_count": 3,
+    "annual_actual_available_count": 0,
+    "future_target_available_count": 0,
+    "reviewed_maximum_depth_record_count": 3,
+    "policy_achievement_assessment_count": 0
+  },
+  "maximum_depth_rule": "All three reviewed rows remain raw maximum-depth records because they are public comments and prefectural responses about the 2025 partial plan change, not the revised KPI table, annual actuals, or an official achievement assessment.",
+  "version_boundary": "The 2022-2026 plan, its original targets, the 2025 partial-change proposal and adopted revisions, annual policy evaluation, progress sheets, and resident-satisfaction results remain separate source and evaluation units.",
+  "non_goals": [
+    "Do not treat a public comment or prefectural response as a KPI actual.",
+    "Do not reconstruct any of the thirteen revised indicator values from comment text.",
+    "Do not merge original and revised plan versions without reviewed source tables.",
+    "Do not replace missing units or split mixed comment-and-response text by inference.",
+    "Do not calculate achievement, causality, or cross-prefecture ranking."
+  ],
+  "updated_at": "2026-08-02"
+}
