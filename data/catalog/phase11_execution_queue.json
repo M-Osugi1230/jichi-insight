@@ -54,7 +54,7 @@
         "All 38 prefectures have at least one linked record or a reviewed maximum-source-depth record.",
         "All records preserve missing, unpublished, partial, and not-assessable states without guessing."
       ],
-      "next_action": "Process Gunma prefecture code 10 next. Normalize all 633 Phase 9 Reviewed statements and preserve all source documents, pages, mixed values, and unresolved field boundaries."
+      "next_action": "Process Gunma prefecture code 10 next. Normalize all 182 Phase 9 Reviewed statements from five official documents while preserving source positions and unresolved field boundaries."
     }
   ],
   "summary": {
@@ -89,10 +89,10 @@
     "wave3_normalization": {
       "prefectures_complete": 7,
       "prefectures_remaining": 31,
-      "records_complete": 4409,
-      "reviewed_maximum_depth_records": 4409,
+      "records_complete": 3166,
+      "reviewed_maximum_depth_records": 3166,
       "linked_records": 0,
-      "partial_records": 4409,
+      "partial_records": 3166,
       "next_prefecture_code": "10"
     }
   },
