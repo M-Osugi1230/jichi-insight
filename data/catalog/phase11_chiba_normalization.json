@@ -1,0 +1,31 @@
+{
+  "id": "phase11-chiba-normalization",
+  "phase": 11,
+  "status": "reviewed_maximum_depth",
+  "prefecture_code": "12",
+  "source_catalog": "data/reviewed/phase9/12.json",
+  "normalizer": "scripts/normalize_phase11_chiba.py",
+  "shared_normalizer": "scripts/phase11_phase9_raw.py",
+  "record_schema": "schemas/phase11_record_linkage.schema.json",
+  "expected_normalization": {
+    "record_count": 1,
+    "linked_record_count": 0,
+    "partial_record_count": 1,
+    "not_linked_record_count": 0,
+    "indicator_series_count": 1,
+    "annual_actual_available_count": 0,
+    "future_target_available_count": 0,
+    "reviewed_maximum_depth_record_count": 1,
+    "policy_achievement_assessment_count": 0
+  },
+  "maximum_depth_rule": "The single reviewed row remains a raw maximum-depth record because it describes the annual inspection and analysis process, rather than one of the 89 social target values, an annual actual, or a policy achievement result.",
+  "version_boundary": "The current 2025-2028 plan and its 89 social targets remain separate from the 2022-2024 former plan, its 76 social targets, and its final evaluation. Former-plan actuals are not reassigned to current-plan targets.",
+  "non_goals": [
+    "Do not treat the annual review-process description as one of the 89 KPI values.",
+    "Do not interpret PDF character-extraction noise as a numeric measurement.",
+    "Do not inherit former-plan actuals or final evaluation into the current plan.",
+    "Do not replace units or split the raw sentence into inferred fields.",
+    "Do not calculate achievement, causality, or cross-prefecture ranking."
+  ],
+  "updated_at": "2026-08-02"
+}
