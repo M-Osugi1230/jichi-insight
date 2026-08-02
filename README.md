@@ -6,18 +6,20 @@ Jichi Insight（自治体インサイト）は、自治体が公開する政策�
 
 ## Product status
 
-`Phase 10 complete / 47 prefectures published / pre-alpha`
+`Phase 10 complete / Phase 11 Wave 2 complete / Wave 3 active / 47 prefectures published / pre-alpha`
 
-- 全国登録: 47 / 47
-- 公式ホームページ確認: 47 / 47
-- 現行政策計画確認: 47 / 47
+- 全国登録・公式入口・現行政策計画: 47 / 47
 - Evidence-backed Reviewed数値目標: 47 / 47
-- 全国公開ページ: 47 / 47
-- Phase 10同一粒度完了: 47 / 47
+- Phase 10文書スコープ同一粒度: 47 / 47
+- Phase 11 Wave 1: 4都道府県・861個票を全件正規化
+- Phase 11 Wave 2: 5地域拠点・711件・725系列を全件正規化
+- Wave 2 current値あり / 欠損・未接続: 340 / 385系列
+- Wave 3: 残る38県を都道府県コード順に処理中
+- 次の対象: 青森県（02）、岩手県（03）
 - 独自の政策達成評価: 0件
 - 比較可能性未確認の全国ランキング: 0件
 
-Phase 9で全47都道府県の政策目標とEvidence-backed Reviewed基盤を整備し、Phase 10で年度実績、予算、決算、重点事業、監査を文書スコープで接続しました。契約・議会・首長公約は、都道府県公式一次資料または「不存在を断定しない公式検索結果」までReviewedとしています。
+Phase 10は全国の文書スコープを完成させました。Phase 11では個票接続またはReviewed最大到達深度へ進めています。公式資料が不足する場合も推測で埋めず、何が未接続かを明示します。
 
 ## Evidence chain
 
@@ -55,78 +57,68 @@ registered
 → current_plan_confirmed
 → source_cataloged
 → reviewed_data
-→ actuals_linked
+→ actuals_linked or reviewed_maximum_depth
 → published
 ```
 
-資料入口を確認した`indexed`、内容・期間・対象範囲・出典を確認した`reviewed`、定義と期間を照合して同じ系列へ接続した`linked`は別の状態です。
+`indexed`、`reviewed`、`linked`、`reviewed_maximum_depth`、`published`は別の状態です。計画基準値を年度実績へ流用せず、全国参考値を自治体実績へ読み替えません。
 
 ## Phase 10 — Nationwide uniform depth
 
-2026年8月1日、47都道府県すべてが次の11項目の共通ゲートへ到達しました。
+2026年8月1日、47都道府県すべてが政策・KPI、Evidence、年度実績、予算、決算、重点事業、契約、議会、監査、首長公約、公開検証の11項目共通ゲートへ到達しました。
 
-1. 政策・KPI
-2. Evidence Packet
-3. 年度実績
-4. 予算
-5. 決算
-6. 重点事業
-7. 契約
-8. 議会
-9. 監査
-10. 首長公約
-11. 公開検証
+Phase 10の完了は**全国の文書スコープ**です。個別目標、予算科目、事業、契約、議会発言、監査指摘をすべて一対一接続したという意味ではありません。
 
-### 完了状態
+正本:
 
-- Reviewed政策目標: 47 / 47
-- Reviewed Evidence: 47 / 47
-- 年度実績 文書スコープLinked: 47 / 47
-- 予算 文書スコープLinked: 47 / 47
-- 決算 文書スコープLinked: 47 / 47
-- 重点事業 文書スコープLinked: 47 / 47
-- 監査 文書スコープLinked: 47 / 47
-- 契約・議会・首長公約 Reviewed coverage: 47 / 47（141役割）
-  - 安定した公式一次資料入口: 3件
-  - 現任期確認待ち: 1件
-  - 安定一次資料未特定の公式検索結果: 137件
-- 公開検証 Reviewed: 47 / 47
-- 11項目すべて同一粒度完了: 47 / 47
-
-### 完了範囲
-
-Phase 10の完了は**全国の文書スコープ**を対象とします。個別の目標、予算科目、事業、契約、議会発言、監査指摘をすべて一対一接続したという意味ではありません。
-
-安定した一次資料が見つからない場合は、不存在とは断定せず、確認した公式ホスト、検索条件、検索日、再確認条件をEvidenceとして保持します。政策の達成・未達は判定せず、比較可能性が確認されるまで全国ランキングにも使用しません。
-
-### 正本
-
-- [`data/catalog/phase10_uniformity.json`](data/catalog/phase10_uniformity.json)
-- [`data/catalog/phase10_execution_queue.json`](data/catalog/phase10_execution_queue.json)
 - [`data/catalog/phase10_completion.json`](data/catalog/phase10_completion.json)
-- [`data/catalog/phase10_nationwide_core_linkage.json`](data/catalog/phase10_nationwide_core_linkage.json)
-- [`data/catalog/phase10_nationwide_accountability_linkage.json`](data/catalog/phase10_nationwide_accountability_linkage.json)
-- [`data/catalog/phase10_regional_depth_index.json`](data/catalog/phase10_regional_depth_index.json)
-- [`data/catalog/phase10_reference_depth_reviews.json`](data/catalog/phase10_reference_depth_reviews.json)
-- [`data/catalog/phase10_anchor_depth_reviews.json`](data/catalog/phase10_anchor_depth_reviews.json)
-- [`data/catalog/phase10_tohoku_depth_reviews.json`](data/catalog/phase10_tohoku_depth_reviews.json)
-- [`data/catalog/phase10_kanto_depth_reviews.json`](data/catalog/phase10_kanto_depth_reviews.json)
-- [`data/catalog/phase10_chubu_depth_reviews.json`](data/catalog/phase10_chubu_depth_reviews.json)
-- [`data/catalog/phase10_kinki_depth_reviews.json`](data/catalog/phase10_kinki_depth_reviews.json)
-- [`data/catalog/phase10_chugoku_depth_reviews.json`](data/catalog/phase10_chugoku_depth_reviews.json)
-- [`data/catalog/phase10_shikoku_depth_reviews.json`](data/catalog/phase10_shikoku_depth_reviews.json)
-- [`data/catalog/phase10_kyushu_depth_reviews.json`](data/catalog/phase10_kyushu_depth_reviews.json)
 - [Phase 10 nationwide uniform depth](docs/PHASE10_VERTICAL_LINKAGE.md)
 
-## Post-Phase 10 deepening
+## Phase 11 — Nationwide record-level linkage
 
-1. 北海道・宮城県・東京都・福岡県で確立した個票接続工程を他県へ展開
-2. 政策・施策・事業・予算科目・契約・議会発言・監査指摘の安定IDを拡張
-3. 現任期の首長公約を候補者・任期・原文単位で確認
-4. 公式サイト移転や新年度資料を再探索し、検索結果から一次資料へ昇格
-5. 比較可能性が確認された指標だけを将来の比較機能へ接続
+### Wave 1 complete
 
-この深掘りはPhase 10の完了状態を覆すものではなく、文書スコープから個票スコープへ精度を高める継続工程です。
+北海道、宮城県、東京都、福岡県の861個票を共通Schemaへ正規化しました。
+
+- Linked: 420
+- Partial: 58
+- Not linked: 383
+
+### Wave 2 complete
+
+愛知県、大阪府、広島県、香川県、沖縄県の5拠点を完了しました。
+
+| 都道府県 | レコード | 境界 |
+|---|---:|---|
+| 愛知県 | 56 | 62系列、current値1系列欠損、目標改定と再掲を保持 |
+| 大阪府 | 83 | 77 Linked、6 Partial、旧系列と事業因果は未接続 |
+| 広島県 | 62 | 59 Linked、3測定待ちPartial、複合原文を保持 |
+| 香川県 | 135 | 141表示箇所、再掲6、R7→R8改定87を保持 |
+| 沖縄県 | 375 | 計画基準値→R9目標の最大深度、全件Partial |
+
+沖縄県の現在の正本は計画カタログでありReviewed年度実績ではありません。375件すべてで`annual_actual`を未接続のまま保持し、全国値も参考情報として分離しています。
+
+Wave 2統合ゲート:
+
+- 5拠点・711件
+- 725指標系列
+- current値あり340系列
+- current値欠損・未接続385系列
+- 進捗目標または明示的target 602系列
+- 政策達成評価0件
+- 比較対象への昇格0件
+
+正本:
+
+- [`data/catalog/phase11_wave1_completion.json`](data/catalog/phase11_wave1_completion.json)
+- [`data/catalog/phase11_wave2_completion.json`](data/catalog/phase11_wave2_completion.json)
+- [`data/catalog/phase11_execution_queue.json`](data/catalog/phase11_execution_queue.json)
+- [`schemas/phase11_record_linkage.schema.json`](schemas/phase11_record_linkage.schema.json)
+- [Phase 11 methodology](docs/PHASE11_RECORD_LINKAGE.md)
+
+### Wave 3 active
+
+残る38県を都道府県コード順に処理します。各県はReviewed個票接続またはReviewed最大到達深度へ必ず到達させます。最初は青森県（02）、次に岩手県（03）です。
 
 ## Repository map
 
@@ -169,21 +161,16 @@ pnpm check
 
 - [North Star](docs/NORTH_STAR.md)
 - [Project Memory](docs/PROJECT_MEMORY.md)
-- [Project charter](docs/PROJECT_CHARTER.md)
-- [Product requirements](docs/PRODUCT_REQUIREMENTS.md)
 - [Architecture](docs/ARCHITECTURE.md)
 - [Data model](docs/DATA_MODEL.md)
 - [Methodology](docs/METHODOLOGY.md)
 - [Editorial policy](docs/EDITORIAL_POLICY.md)
-- [Assembly accountability](docs/ASSEMBLY_ACCOUNTABILITY.md)
-- [Nationwide expansion](docs/NATIONWIDE_EXPANSION.md)
 - [Data quality](docs/DATA_QUALITY.md)
 - [Corrections and right of reply](docs/CORRECTIONS.md)
 - [Roadmap](docs/ROADMAP.md)
-- [Phase 9 execution](docs/PHASE9_EXECUTION.md)
 - [Phase 10 nationwide uniform depth](docs/PHASE10_VERTICAL_LINKAGE.md)
+- [Phase 11 record linkage](docs/PHASE11_RECORD_LINKAGE.md)
 - [Release checklist](docs/RELEASE_CHECKLIST.md)
-- [Risk register](docs/RISK_REGISTER.md)
 
 ## License
 
