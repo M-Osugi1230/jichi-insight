@@ -1,0 +1,29 @@
+{
+  "id": "phase11-hokkaido-normalization",
+  "phase": 11,
+  "prefecture_code": "01",
+  "status": "complete",
+  "source_catalog": "data/catalog/hokkaido_annual_actual_linkage.json",
+  "source_files": [
+    "data/catalog/hokkaido_annual_actual_linkage_part_01.json",
+    "data/catalog/hokkaido_annual_actual_linkage_part_02.json"
+  ],
+  "normalizer": "scripts/normalize_phase11_hokkaido.py",
+  "record_schema": "schemas/phase11_record_linkage.schema.json",
+  "regression_test": "tests/test_phase11_hokkaido_normalization.py",
+  "summary": {
+    "record_count": 108,
+    "linked_record_count": 90,
+    "partial_record_count": 18,
+    "not_linked_record_count": 0,
+    "policy_achievement_assessment_count": 0
+  },
+  "partial_reason_counts": {
+    "target_version_changed": 3,
+    "unit_scale_changed_or_requires_conversion": 3,
+    "indicator_definition_or_numbering_changed": 10,
+    "component_structure_changed": 2
+  },
+  "completion_boundary": "All 108 Hokkaido records are deterministically transformed into the reusable Phase 11 record shape. The 90 linked records and 18 partial records preserve their original identifiers, values, periods, components, evidence locations, reasons, and non-assessment boundary. No partial record is promoted.",
+  "updated_at": "2026-08-02"
+}

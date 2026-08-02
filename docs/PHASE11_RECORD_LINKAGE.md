@@ -38,7 +38,7 @@ Automated extraction may identify candidates but cannot promote them to `linked`
 
 ## Wave 1 exhaustive inventory
 
-The first implementation no longer relies on four representative examples alone. All existing record-level results in the four reference prefectures are now controlled by one exhaustive migration inventory.
+The first implementation no longer relies on four representative examples alone. All existing record-level results in the four reference prefectures are controlled by one exhaustive migration inventory.
 
 | Prefecture | Source records | Linked | Partial | Not linked |
 |---|---:|---:|---:|---:|
@@ -64,6 +64,44 @@ Canonical inventory files:
 - `schemas/phase11_wave1_migration.schema.json`
 - `tests/test_phase11_wave1_migration.py`
 
+## Reusable normalized record shape
+
+`schemas/phase11_record_linkage.schema.json` defines the reusable Phase 11 record shape. It preserves:
+
+- original record and hierarchy identifiers;
+- the reviewed linkage status and partial reason;
+- current, intermediate target, final target, actual, budget, settlement, project-cost, and contract-amount roles as separate measurements;
+- raw value text, periods, numeric or textual components;
+- primary Evidence page and every reprint location;
+- the original review boundary;
+- `not_assessed` and comparison-exclusion states.
+
+## Hokkaido normalization complete
+
+All 108 Hokkaido records now transform deterministically into the reusable record shape.
+
+- Linked: 90
+- Partial: 18
+- Not linked: 0
+- Policy-achievement assessments: 0
+
+The transformation maps every original field or preserves it through the normalized subject, measurements, evidence, status, reason, or boundary. Tests compare every normalized record back to the source record, not only aggregate counts.
+
+The 18 partial records retain all original reason groups:
+
+- target version changed: 3
+- unit scale changed or requires explicit conversion: 3
+- indicator definition or numbering changed: 10
+- component structure changed: 2
+
+Canonical files:
+
+- `data/catalog/phase11_hokkaido_normalization.json`
+- `schemas/phase11_hokkaido_normalization.schema.json`
+- `schemas/phase11_record_linkage.schema.json`
+- `scripts/normalize_phase11_hokkaido.py`
+- `tests/test_phase11_hokkaido_normalization.py`
+
 ## Initial common-schema reference records
 
 Four records demonstrate the shared cross-layer representation while the full source inventory remains canonical.
@@ -85,8 +123,8 @@ Canonical files:
 
 Wave 1 proceeds without skipping source states.
 
-1. Normalize all 90 Hokkaido linked annual-actual records.
-2. Preserve all 18 Hokkaido partial records with their exact unresolved reason.
+1. ~~Normalize all 90 Hokkaido linked annual-actual records.~~ Complete.
+2. ~~Preserve all 18 Hokkaido partial records with their exact unresolved reason.~~ Complete.
 3. Normalize all 238 Miyagi linked project-money records.
 4. Preserve 26 Miyagi partial and 363 not-linked records without promotion.
 5. Normalize the six Tokyo linked target groups and preserve the two source conflicts.
@@ -97,7 +135,7 @@ Wave 1 proceeds without skipping source states.
 
 ### Wave 1 — Reference implementations
 
-Unify the existing Hokkaido, Miyagi, Tokyo, and Fukuoka records under the shared contract and derive reusable promotion rules. The exhaustive inventory is complete; common-schema normalization of all 861 source records remains in progress.
+Unify the existing Hokkaido, Miyagi, Tokyo, and Fukuoka records under the shared contract and derive reusable promotion rules. The exhaustive inventory is complete. Hokkaido 108/108 is normalized; Miyagi, Tokyo, and Fukuoka remain.
 
 ### Wave 2 — Remaining regional anchors
 

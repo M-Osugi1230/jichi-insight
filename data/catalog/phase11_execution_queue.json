@@ -27,7 +27,7 @@
         "Every representative common-schema reference resolves to a member of the exhaustive inventory.",
         "Reusable normalizers preserve source-specific values, periods, identifiers, and unresolved boundaries."
       ],
-      "next_action": "Normalize the 420 linked records in deterministic prefecture batches, starting with all 90 Hokkaido annual-actual links and preserving the 18 partial records as explicit review boundaries."
+      "next_action": "Normalize all 627 Miyagi project-money records next, preserving 238 linked, 26 partial, and 363 not-linked judgments and keeping budget and settlement fiscal years separate."
     },
     {
       "id": "wave2-remaining-regional-anchors",
@@ -68,6 +68,13 @@
       "linked": 420,
       "partial": 58,
       "not_linked": 383
+    },
+    "wave1_normalization": {
+      "prefectures_complete": 1,
+      "records_complete": 108,
+      "linked_complete": 90,
+      "partial_complete": 18,
+      "not_linked_complete": 0
     }
   },
   "updated_at": "2026-08-02"
