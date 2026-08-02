@@ -29,7 +29,8 @@
         "reference_prefectures",
         "remaining_anchor_prefectures",
         "nationwide_prefectures",
-        "wave1_inventory"
+        "wave1_inventory",
+        "wave1_normalization"
       ],
       "properties": {
         "total_prefectures": {"const": 47},
@@ -46,6 +47,24 @@
             "linked": {"const": 420},
             "partial": {"const": 58},
             "not_linked": {"const": 383}
+          }
+        },
+        "wave1_normalization": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "prefectures_complete",
+            "records_complete",
+            "linked_complete",
+            "partial_complete",
+            "not_linked_complete"
+          ],
+          "properties": {
+            "prefectures_complete": {"const": 1},
+            "records_complete": {"const": 108},
+            "linked_complete": {"const": 90},
+            "partial_complete": {"const": 18},
+            "not_linked_complete": {"const": 0}
           }
         }
       }
