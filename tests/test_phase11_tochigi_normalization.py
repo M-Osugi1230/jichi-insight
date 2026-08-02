@@ -41,6 +41,7 @@ def test_manifest_and_phase9_counts_reconcile():
     assert len(source["records"]) == 257
     assert source["reviewed_target_statement_count"] == 257
     assert source["evidence_packet_count"] == 257
+    assert len(source["documents"]) == 6
     assert summary["reviewed_target_statement_count"] == 257
     assert summary["evidence_packet_count"] == 257
     assert summary["document_count"] == 6
@@ -87,25 +88,28 @@ def test_all_records_remain_partial_unassessed_and_noncomparable():
 
 
 def test_dynamic_counts_and_determinism():
-    source_records = load(SOURCE_PATH)["records"]
+    source = load(SOURCE_PATH)
+    source_records = source["records"]
     normalized = catalog()
-    documents = Counter(item["source_document_title"] for item in source_records)
+    used_titles = Counter(item["source_document_title"] for item in source_records)
     locations = Counter(item["source_location"]["location_kind"] for item in source_records)
     missing_units = sum(item["unit_original"] is None for item in source_records)
+    assert len(source["documents"]) == 6
+    assert len(used_titles) == 3
     assert normalized["summary"] == {
         "record_count": 257,
         "linked_record_count": 0,
         "partial_record_count": 257,
         "not_linked_record_count": 0,
         "indicator_series_count": 257,
-        "source_document_count": 6,
+        "source_document_count": 3,
         "missing_unit_record_count": missing_units,
         "annual_actual_available_count": 0,
         "future_target_available_count": 0,
         "reviewed_maximum_depth_record_count": 257,
         "policy_achievement_assessment_count": 0,
     }
-    assert len(documents) == 6
-    assert normalized["document_record_counts"] == dict(sorted(documents.items()))
+    assert normalized["sources"][0]["document_count"] == 6
+    assert normalized["document_record_counts"] == dict(sorted(used_titles.items()))
     assert normalized["source_location_counts"] == dict(sorted(locations.items()))
     assert normalizer.build_catalog(ROOT) == normalizer.build_catalog(ROOT)
