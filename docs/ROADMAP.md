@@ -205,33 +205,36 @@ Phase 10の文書スコープから、個別の政策目標、年度実績、予
 
 ### Normalization progress
 
-北海道108件の共通個票形式への正規化を完了しました。
+北海道108件と宮城県627件の共通個票形式への正規化を完了しました。
 
-- 正規化済み都道府県: 1 / 4
-- 正規化済みレコード: 108 / 861
-- Linked正規化済み: 90 / 420
-- Partial正規化済み: 18 / 58
-- Not linked正規化済み: 0 / 383
+- 正規化済み都道府県: 2 / 4
+- 正規化済みレコード: 735 / 861
+- Linked正規化済み: 328 / 420
+- Partial正規化済み: 44 / 58
+- Not linked正規化済み: 363 / 383
 
 北海道では、指標ID、階層、名称、定義、現状値、中間目標、最終目標、年度実績、構成値、期間、Evidence位置、再掲位置、Partial理由を全件で元レコードと照合します。
 
+宮城県では、政策・施策ID、事業名、正規化名称、部局、担当課、実施期間、予算、決算、候補決算、PDFページ、判定根拠を全627件で元レコードと照合します。令和8年度予算と令和6年度決算は別の測定値として保持します。
+
 ### Next gate
 
-1. 宮城県238件のLinked事業・予算・決算レコードを共通形式へ正規化
-2. 宮城県26件のPartialと363件のNot linkedを判断を変えずに保持
-3. 東京都6件のLinkedと2件のPartialを正規化
-4. 福岡県86件のLinked、12件のPartial、20件のNot linkedを正規化
-5. 愛知県、大阪府、広島県、香川県、沖縄県へ同じ工程を展開
-6. 残る38県へ同じ品質ゲートを展開
+1. 東京都6件のLinkedと2件のPartialを正規化
+2. 福岡県86件のLinked、12件のPartial、20件のNot linkedを正規化
+3. Wave 1の861件すべてが共通Schemaを通過する統合ゲートを作成
+4. 愛知県、大阪府、広島県、香川県、沖縄県へ同じ工程を展開
+5. 残る38県へ同じ品質ゲートを展開
 
 正本:
 
 - `data/catalog/phase11_reference_records.json`
 - `data/catalog/phase11_wave1_migration.json`
 - `data/catalog/phase11_hokkaido_normalization.json`
+- `data/catalog/phase11_miyagi_normalization.json`
 - `data/catalog/phase11_execution_queue.json`
 - `schemas/phase11_record_linkage.schema.json`
 - `scripts/normalize_phase11_hokkaido.py`
+- `scripts/normalize_phase11_miyagi.py`
 - `docs/PHASE11_RECORD_LINKAGE.md`
 
 ## After Phase 11
