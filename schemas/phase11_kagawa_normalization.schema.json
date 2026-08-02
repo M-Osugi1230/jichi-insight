@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Phase 11 Kagawa normalization manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id", "phase", "status", "prefecture_code", "source_catalogs",
+    "occurrence_catalog", "source_review_manifest", "normalizer",
+    "record_schema", "expected_normalization", "promotion_rule",
+    "repost_boundary", "raw_text_boundary", "non_goals", "updated_at"
+  ],
+  "properties": {
+    "id": {"const": "phase11-kagawa-normalization"},
+    "phase": {"const": 11},
+    "status": {"const": "normalized"},
+    "prefecture_code": {"const": "37"},
+    "source_catalogs": {
+      "type": "array",
+      "const": [
+        "data/reviewed/kagawa_extended_plan_indicators_part1.json",
+        "data/reviewed/kagawa_extended_plan_indicators_part2.json",
+        "data/reviewed/kagawa_extended_plan_indicators_part3.json"
+      ]
+    },
+    "occurrence_catalog": {"const": "data/reviewed/kagawa_extended_plan_indicator_occurrences.json"},
+    "source_review_manifest": {"const": "data/catalog/kagawa_extended_plan_indicator_review_manifest.json"},
+    "normalizer": {"const": "scripts/normalize_phase11_kagawa.py"},
+    "record_schema": {"const": "schemas/phase11_record_linkage.schema.json"},
+    "expected_normalization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_count", "linked_record_count", "partial_record_count",
+        "not_linked_record_count", "indicator_series_count",
+        "display_occurrence_count", "reposted_indicator_count",
+        "target_revision_count", "unchanged_target_count",
+        "policy_achievement_assessment_count"
+      ],
+      "properties": {
+        "record_count": {"const": 135},
+        "linked_record_count": {"const": 135},
+        "partial_record_count": {"const": 0},
+        "not_linked_record_count": {"const": 0},
+        "indicator_series_count": {"const": 135},
+        "display_occurrence_count": {"const": 141},
+        "reposted_indicator_count": {"const": 6},
+        "target_revision_count": {"const": 87},
+        "unchanged_target_count": {"const": 48},
+        "policy_achievement_assessment_count": {"const": 0}
+      }
+    },
+    "promotion_rule": {"type": "string", "minLength": 80},
+    "repost_boundary": {"type": "string", "minLength": 80},
+    "raw_text_boundary": {"type": "string", "minLength": 80},
+    "non_goals": {
+      "type": "array",
+      "minItems": 4,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 30}
+    },
+    "updated_at": {"type": "string", "format": "date"}
+  }
+}
