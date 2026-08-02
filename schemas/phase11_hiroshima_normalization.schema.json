@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Phase 11 Hiroshima normalization manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "phase",
+    "status",
+    "prefecture_code",
+    "source_catalogs",
+    "source_review_manifest",
+    "normalizer",
+    "record_schema",
+    "expected_normalization",
+    "promotion_rule",
+    "raw_text_boundary",
+    "non_goals",
+    "updated_at"
+  ],
+  "properties": {
+    "id": {"const": "phase11-hiroshima-normalization"},
+    "phase": {"const": 11},
+    "status": {"const": "normalized"},
+    "prefecture_code": {"const": "34"},
+    "source_catalogs": {
+      "const": [
+        "data/reviewed/hiroshima_revised_vision_indicators_part1.json",
+        "data/reviewed/hiroshima_revised_vision_indicators_part2.json",
+        "data/reviewed/hiroshima_revised_vision_indicators_part3.json"
+      ]
+    },
+    "source_review_manifest": {"const": "data/catalog/hiroshima_revised_vision_indicator_review_manifest.json"},
+    "normalizer": {"const": "scripts/normalize_phase11_hiroshima.py"},
+    "record_schema": {"const": "schemas/phase11_record_linkage.schema.json"},
+    "expected_normalization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_count",
+        "linked_record_count",
+        "partial_record_count",
+        "not_linked_record_count",
+        "policy_area_count",
+        "pending_measurement_record_count",
+        "qualitative_target_record_count",
+        "policy_achievement_assessment_count"
+      ],
+      "properties": {
+        "record_count": {"const": 62},
+        "linked_record_count": {"const": 59},
+        "partial_record_count": {"const": 3},
+        "not_linked_record_count": {"const": 0},
+        "policy_area_count": {"const": 17},
+        "pending_measurement_record_count": {"const": 3},
+        "qualitative_target_record_count": {"const": 1},
+        "policy_achievement_assessment_count": {"const": 0}
+      }
+    },
+    "promotion_rule": {"type": "string", "minLength": 80},
+    "raw_text_boundary": {"type": "string", "minLength": 80},
+    "non_goals": {
+      "type": "array",
+      "minItems": 4,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 30}
+    },
+    "updated_at": {"type": "string", "format": "date"}
+  }
+}
