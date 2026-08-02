@@ -48,15 +48,7 @@ All existing record-level results in the four reference prefectures are controll
 | Fukuoka | 118 | 86 | 12 | 20 |
 | **Total** | **861** | **420** | **58** | **383** |
 
-The inventory references all 11 canonical record files. Regression tests load every record dynamically and fail when:
-
-- a catalog part file is omitted or reordered;
-- a record ID appears twice within a prefecture source;
-- a linkage state falls outside `linked`, `partial`, or `not_linked`;
-- source-record counts differ from the canonical catalog summary;
-- aggregate totals differ from 861 / 420 / 58 / 383;
-- one of the initial common-schema references no longer resolves to the full inventory;
-- a source is promoted from `not_assessed` without an explicit methodology change.
+The inventory references all 11 canonical record files. Regression tests load every record dynamically and fail when a source file, record ID, status, count, or non-assessment boundary changes unexpectedly.
 
 Canonical inventory files:
 
@@ -66,16 +58,17 @@ Canonical inventory files:
 
 ## Reusable normalized record shape
 
-`schemas/phase11_record_linkage.schema.json` defines the reusable Phase 11 record shape. It preserves:
+`schemas/phase11_record_linkage.schema.json` preserves source-specific identity, measurement roles, components, Evidence locations, unresolved candidate matches, and official-source conflicts without forcing them into one value.
 
-- original record and hierarchy identifiers;
-- the reviewed linkage status and unresolved reason;
-- source-specific identity context such as department, office, normalized project name, match basis, and candidate matches;
-- current, intermediate target, final target, actual, budget, settlement, project-cost, and contract-amount roles as separate measurements;
-- raw value text, periods, numeric or textual components;
-- Evidence locations for the whole record and individual money measurements;
-- the original review boundary;
-- `not_assessed` and comparison-exclusion states.
+The schema now supports:
+
+- record and hierarchy identifiers;
+- project identity and candidate settlement matches;
+- target series IDs, catalog roles, labels, units, values, and periods;
+- source-versus-catalog conflicts with nullable missing sides;
+- record-level and measurement-level Evidence;
+- `linked`, `partial`, and `not_linked` without automatic promotion;
+- `not_assessed` and comparison exclusion.
 
 ## Hokkaido normalization complete
 
@@ -84,14 +77,8 @@ All 108 Hokkaido records transform deterministically into the reusable record sh
 - Linked: 90
 - Partial: 18
 - Not linked: 0
-- Policy-achievement assessments: 0
 
-The 18 partial records retain all original reason groups:
-
-- target version changed: 3
-- unit scale changed or requires explicit conversion: 3
-- indicator definition or numbering changed: 10
-- component structure changed: 2
+The 18 partial records retain target-version, unit-scale, definition/numbering, and component-structure reasons.
 
 Canonical files:
 
@@ -107,17 +94,8 @@ All 627 Miyagi budget-project records transform deterministically into the reusa
 - Linked: 238
 - Partial: 26
 - Not linked: 363
-- Policy-achievement assessments: 0
 
-For every record, the transformation preserves policy and measure references, original and normalized project names, department, office, implementation period, match basis, budget amount and page, settlement amount and page, project number, candidate matches, and review boundary.
-
-The three result states remain distinct:
-
-- `linked`: the same measure, normalized project name, department, and office identify one settlement record;
-- `partial`: one or more settlement candidates are retained, but no candidate is promoted;
-- `not_linked`: no FY2024 settlement candidate is available, and the missing relationship remains explicit.
-
-FY2026 budget and FY2024 settlement values are always separate measurements. A difference between them is not converted into an execution rate or policy outcome.
+FY2026 budget and FY2024 settlement remain separate measurements. Candidate matches are retained without promotion, and records absent from the settlement source remain explicitly not linked.
 
 Canonical files:
 
@@ -126,56 +104,62 @@ Canonical files:
 - `scripts/normalize_phase11_miyagi.py`
 - `tests/test_phase11_miyagi_normalization.py`
 
+## Tokyo normalization complete
+
+All eight Tokyo children-policy target groups transform deterministically into the reusable record shape.
+
+- Linked target groups: 6
+- Linked series: 7
+- Partial target groups: 2
+- Not linked: 0
+
+Each linked series retains its stable series ID, catalog role, label, unit, raw value, value status, and measurement period.
+
+The two partial records retain both official-source sides:
+
+- life-plan education remains partial because the policy review reports FY2023 while the January 2026 target list records FY2024;
+- disabled-child and medical-care-child acceptance remains partial because the policy review reports 44 municipalities / 2023 while the target list records 47 municipalities / 2024.
+
+A missing catalog value in one conflict is stored as `null`, not guessed. Neither official document overwrites the other.
+
+Canonical files:
+
+- `data/catalog/phase11_tokyo_normalization.json`
+- `schemas/phase11_tokyo_normalization.schema.json`
+- `scripts/normalize_phase11_tokyo.py`
+- `tests/test_phase11_tokyo_normalization.py`
+
 ## Normalization progress
 
 | Prefecture | Records normalized | Status |
 |---|---:|---|
 | Hokkaido | 108 / 108 | Complete |
 | Miyagi | 627 / 627 | Complete |
-| Tokyo | 0 / 8 | Next |
-| Fukuoka | 0 / 118 | Pending |
-| **Wave 1** | **735 / 861** | In progress |
+| Tokyo | 8 / 8 | Complete |
+| Fukuoka | 0 / 118 | Next |
+| **Wave 1** | **743 / 861** | In progress |
 
 State totals normalized so far:
 
-- Linked: 328 / 420
-- Partial: 44 / 58
+- Linked: 334 / 420
+- Partial: 46 / 58
 - Not linked: 363 / 383
-
-## Initial common-schema reference records
-
-Four records demonstrate the shared cross-layer representation while the full source inventory remains canonical.
-
-1. Hokkaido: food self-sufficiency target to annual actual
-2. Miyagi: policy measure to priority project, budget, and settlement
-3. Tokyo: children-policy target to annual actual
-4. Fukuoka: policy target to annual actual
-
-Canonical files:
-
-- `data/catalog/phase11_reference_records.json`
-- `schemas/phase11_reference_records.schema.json`
-- `data/catalog/phase11_execution_queue.json`
-- `schemas/phase11_execution_queue.schema.json`
-- `tests/test_phase11_reference_records.py`
 
 ## Next normalization order
 
 Wave 1 proceeds without skipping source states.
 
-1. ~~Normalize all 90 Hokkaido linked annual-actual records.~~ Complete.
-2. ~~Preserve all 18 Hokkaido partial records with their exact unresolved reason.~~ Complete.
-3. ~~Normalize all 238 Miyagi linked project-money records.~~ Complete.
-4. ~~Preserve 26 Miyagi partial and 363 not-linked records without promotion.~~ Complete.
-5. Normalize the six Tokyo linked target groups and preserve the two source conflicts.
-6. Normalize 86 Fukuoka linked targets, 12 revised-target partial records, and 20 not-linked records.
-7. Derive reusable normalizers only after every source-specific field has an explicit mapping or retained boundary.
+1. ~~Normalize all Hokkaido records.~~ Complete.
+2. ~~Normalize all Miyagi records.~~ Complete.
+3. ~~Normalize all Tokyo records and preserve both conflicts.~~ Complete.
+4. Normalize 86 Fukuoka linked targets, 12 revised-target partial records, and 20 not-linked records.
+5. Run one integrated Wave 1 gate over all 861 normalized records.
 
 ## Waves
 
 ### Wave 1 — Reference implementations
 
-Unify the existing Hokkaido, Miyagi, Tokyo, and Fukuoka records under the shared contract and derive reusable promotion rules. The exhaustive inventory is complete. Hokkaido and Miyagi are normalized; Tokyo and Fukuoka remain.
+The exhaustive inventory is complete. Hokkaido, Miyagi, and Tokyo are normalized; Fukuoka remains.
 
 ### Wave 2 — Remaining regional anchors
 

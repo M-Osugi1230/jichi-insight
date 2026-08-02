@@ -192,7 +192,7 @@ Phase 10の文書スコープから、個別の政策目標、年度実績、予
 
 ### Wave 1 inventory
 
-北海道、宮城県、東京都、福岡県の既存個票データについて、代表例だけでなく全レコードを移行管理対象へ登録しました。
+北海道、宮城県、東京都、福岡県の既存個票データについて、全861件を移行管理対象へ登録しました。
 
 - 対象ファイル: 11
 - 全レコード: 861
@@ -201,29 +201,24 @@ Phase 10の文書スコープから、個別の政策目標、年度実績、予
 - Not linked: 383
 - 独自の政策達成評価: 0件
 
-全件移行台帳は、元カタログのファイル一覧、ID、状態内訳、件数と動的に照合します。部分接続や未接続を除外せず、解決していない状態のまま保持します。
-
 ### Normalization progress
 
-北海道108件と宮城県627件の共通個票形式への正規化を完了しました。
+北海道108件、宮城県627件、東京都8件の共通個票形式への正規化を完了しました。
 
-- 正規化済み都道府県: 2 / 4
-- 正規化済みレコード: 735 / 861
-- Linked正規化済み: 328 / 420
-- Partial正規化済み: 44 / 58
+- 正規化済み都道府県: 3 / 4
+- 正規化済みレコード: 743 / 861
+- Linked正規化済み: 334 / 420
+- Partial正規化済み: 46 / 58
 - Not linked正規化済み: 363 / 383
 
-北海道では、指標ID、階層、名称、定義、現状値、中間目標、最終目標、年度実績、構成値、期間、Evidence位置、再掲位置、Partial理由を全件で元レコードと照合します。
-
-宮城県では、政策・施策ID、事業名、正規化名称、部局、担当課、実施期間、予算、決算、候補決算、PDFページ、判定根拠を全627件で元レコードと照合します。令和8年度予算と令和6年度決算は別の測定値として保持します。
+東京都では、7系列のID、ラベル、単位、値、期間を保持し、2件の資料間不一致について両方の公式値・期間をConflictとして保存します。欠けた値は推測せず`null`です。
 
 ### Next gate
 
-1. 東京都6件のLinkedと2件のPartialを正規化
-2. 福岡県86件のLinked、12件のPartial、20件のNot linkedを正規化
-3. Wave 1の861件すべてが共通Schemaを通過する統合ゲートを作成
-4. 愛知県、大阪府、広島県、香川県、沖縄県へ同じ工程を展開
-5. 残る38県へ同じ品質ゲートを展開
+1. 福岡県86件のLinked、12件のPartial、20件のNot linkedを正規化
+2. Wave 1の861件すべてが共通Schemaを通過する統合ゲートを作成
+3. 愛知県、大阪府、広島県、香川県、沖縄県へ同じ工程を展開
+4. 残る38県へ同じ品質ゲートを展開
 
 正本:
 
@@ -231,10 +226,12 @@ Phase 10の文書スコープから、個別の政策目標、年度実績、予
 - `data/catalog/phase11_wave1_migration.json`
 - `data/catalog/phase11_hokkaido_normalization.json`
 - `data/catalog/phase11_miyagi_normalization.json`
+- `data/catalog/phase11_tokyo_normalization.json`
 - `data/catalog/phase11_execution_queue.json`
 - `schemas/phase11_record_linkage.schema.json`
 - `scripts/normalize_phase11_hokkaido.py`
 - `scripts/normalize_phase11_miyagi.py`
+- `scripts/normalize_phase11_tokyo.py`
 - `docs/PHASE11_RECORD_LINKAGE.md`
 
 ## After Phase 11
