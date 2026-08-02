@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Phase 11 Toyama maximum-depth manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id", "phase", "status", "prefecture_code", "source_catalog",
+    "normalizer", "record_schema", "expected_normalization",
+    "source_location_contract", "maximum_depth_rule", "version_boundary",
+    "non_goals", "updated_at"
+  ],
+  "properties": {
+    "id": {"const": "phase11-toyama-normalization"},
+    "phase": {"const": 11},
+    "status": {"const": "reviewed_maximum_depth"},
+    "prefecture_code": {"const": "16"},
+    "source_catalog": {"const": "data/reviewed/phase9/16.json"},
+    "normalizer": {"const": "scripts/normalize_phase11_toyama.py"},
+    "record_schema": {
+      "const": "schemas/phase11_record_linkage_source_location.schema.json"
+    },
+    "expected_normalization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_count", "linked_record_count", "partial_record_count",
+        "not_linked_record_count", "indicator_series_count",
+        "annual_actual_available_count", "future_target_available_count",
+        "reviewed_maximum_depth_record_count",
+        "policy_achievement_assessment_count"
+      ],
+      "properties": {
+        "record_count": {"const": 1},
+        "linked_record_count": {"const": 0},
+        "partial_record_count": {"const": 1},
+        "not_linked_record_count": {"const": 0},
+        "indicator_series_count": {"const": 1},
+        "annual_actual_available_count": {"const": 0},
+        "future_target_available_count": {"const": 0},
+        "reviewed_maximum_depth_record_count": {"const": 1},
+        "policy_achievement_assessment_count": {"const": 0}
+      }
+    },
+    "source_location_contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "location_kind", "page", "row", "page_surrogate_prohibited"
+      ],
+      "properties": {
+        "location_kind": {"const": "html_text_line"},
+        "page": {"const": null},
+        "row": {"const": 79},
+        "page_surrogate_prohibited": {"const": true}
+      }
+    },
+    "maximum_depth_rule": {"type": "string", "minLength": 165},
+    "version_boundary": {"type": "string", "minLength": 210},
+    "non_goals": {
+      "type": "array",
+      "minItems": 6,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 30}
+    },
+    "updated_at": {"type": "string", "format": "date"}
+  }
+}
