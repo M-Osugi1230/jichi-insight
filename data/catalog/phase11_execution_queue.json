@@ -2,7 +2,7 @@
   "id": "phase11-record-linkage-execution-queue",
   "phase": 11,
   "status": "in_progress",
-  "active_wave": "wave2-remaining-regional-anchors",
+  "active_wave": "wave3-nationwide-minimum-record-depth",
   "quality_gate": [
     "Confirm the current plan and target version before promoting a relationship.",
     "Match indicator name, definition, unit, population, and component structure.",
@@ -31,18 +31,18 @@
     },
     {
       "id": "wave2-remaining-regional-anchors",
-      "status": "in_progress",
+      "status": "complete",
       "prefecture_codes": ["23", "27", "34", "37", "47"],
       "objective": "Create at least one reviewed record-level Evidence Chain or explicit maximum official-source depth for each remaining regional anchor.",
       "exit_criteria": [
         "Each remaining anchor has a schema-valid record or explicit maximum-depth boundary.",
         "Every promoted link passes the same version, period, organization, and evidence gates."
       ],
-      "next_action": "Normalize all 375 Okinawa mid-term plan indicators as reviewed maximum-depth records, preserving 36 major and 339 outcome indicators, baselines, R9 targets, national comparators, 32 island flags, 43 SDGs priorities, nine qualitative targets, and the one source anomaly without treating the plan baseline as an annual actual."
+      "next_action": "Maintain the completed five-anchor integration gate and deepen Okinawa when a reviewed annual progress source can be connected without treating the plan baseline as an actual."
     },
     {
       "id": "wave3-nationwide-minimum-record-depth",
-      "status": "pending",
+      "status": "in_progress",
       "prefecture_codes": [
         "02", "03", "05", "06", "07", "08", "09", "10", "11", "12", "14",
         "15", "16", "17", "18", "19", "20", "21", "22", "24", "25", "26",
@@ -54,7 +54,7 @@
         "All 38 prefectures have at least one linked record or a reviewed maximum-source-depth record.",
         "All records preserve missing, unpublished, partial, and not-assessable states without guessing."
       ],
-      "next_action": "Process regional batches using stable official indicator numbers first, then project and accountability layers where identifiers permit."
+      "next_action": "Process the remaining prefectures in code order without skipping, beginning with Aomori 02 and Iwate 03. Reuse stable indicator identifiers where present and record reviewed maximum depth where annual actuals cannot be connected."
     }
   ],
   "summary": {
@@ -77,13 +77,19 @@
       "not_linked_complete": 383
     },
     "wave2_normalization": {
-      "anchors_complete": 4,
-      "anchors_remaining": 1,
-      "records_complete": 336,
-      "indicator_series_complete": 350,
+      "anchors_complete": 5,
+      "anchors_remaining": 0,
+      "records_complete": 711,
+      "indicator_series_complete": 725,
       "linked_current_series": 340,
-      "missing_current_series": 10,
-      "target_series": 227
+      "missing_or_unavailable_current_series": 385,
+      "target_series": 602,
+      "reviewed_maximum_depth_records": 375
+    },
+    "wave3_normalization": {
+      "prefectures_complete": 0,
+      "prefectures_remaining": 38,
+      "next_prefecture_code": "02"
     }
   },
   "updated_at": "2026-08-02"
