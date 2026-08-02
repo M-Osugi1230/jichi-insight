@@ -1,0 +1,41 @@
+{
+  "id": "phase11-ishikawa-normalization",
+  "phase": 11,
+  "status": "reviewed_maximum_depth",
+  "prefecture_code": "17",
+  "source_catalog": "data/reviewed/phase9/17.json",
+  "normalizer": "scripts/normalize_phase11_ishikawa.py",
+  "shared_normalizer": "scripts/phase11_phase9_raw.py",
+  "record_schema": "schemas/phase11_record_linkage.schema.json",
+  "expected_normalization": {
+    "record_count": 9,
+    "linked_record_count": 0,
+    "partial_record_count": 9,
+    "not_linked_record_count": 0,
+    "indicator_series_count": 9,
+    "annual_actual_available_count": 0,
+    "future_target_available_count": 0,
+    "reviewed_maximum_depth_record_count": 9,
+    "policy_achievement_assessment_count": 0
+  },
+  "overlap_boundary": {
+    "registered_document_count": 6,
+    "document_reviewed_row_total": 11,
+    "canonical_record_count": 9,
+    "overlap_difference": 2,
+    "documents_with_zero_reviewed_rows": 3
+  },
+  "maximum_depth_rule": "All nine canonical Phase 9 Reviewed statements remain raw maximum-depth records until the fourteen major goals, one hundred sixty KPIs, values, periods, units, and publication-version relationships can be mapped through reviewed table-level evidence.",
+  "hierarchy_boundary": "The fourteen major goals and one hundred sixty KPIs remain separate hierarchy levels. Draft-outline publications and the adopted strategy remain separate versions, and duplicate publication rows do not increase the canonical record count.",
+  "evaluation_boundary": "The post-earthquake creative-recovery plan does not overwrite the original growth-strategy targets. Annual forward-or-backward statuses remain official evaluation classifications rather than independent achievement judgments.",
+  "non_goals": [
+    "Do not count duplicate draft and adopted publication rows as new policy records.",
+    "Do not fill the zero-row major-goal and KPI document with inferred records.",
+    "Do not merge fourteen major goals and one hundred sixty KPIs into one layer.",
+    "Do not overwrite strategy targets with the post-earthquake recovery plan.",
+    "Do not convert official progress classifications into independent achievement scores.",
+    "Do not replace missing units or split mixed values by inference.",
+    "Do not calculate causality or cross-prefecture ranking."
+  ],
+  "updated_at": "2026-08-02"
+}
