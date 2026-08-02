@@ -55,12 +55,7 @@ Status: `ready`
 
 Status: `complete`
 
-- 47都道府県の共通コード、名称、地域区分
-- 47/47公式入口確認
-- 47/47現行政策計画確認
-- 全国資料カバレッジ
-- Coverage、Reviewed、Publishedの状態分離
-- 静的出力とProduction Smoke
+47都道府県の共通コード、公式入口、現行政策計画、全国資料カバレッジ、状態分離、静的出力、Production Smokeを完了しました。
 
 正本: `data/catalog/phase7_completion.json`
 
@@ -79,7 +74,6 @@ Status: `complete`
 全47都道府県を同じEvidence-backed Reviewed目標基盤へ引き上げました。
 
 - 現行政策計画: 47 / 47
-- 主要数値目標入口: 47 / 47
 - Evidence-backed Reviewed数値目標: 47 / 47
 - 計画改定・後継計画・旧計画の履歴: 47 / 47
 - 全国公開ページとProduction Smoke: 完了
@@ -96,28 +90,9 @@ Status: `complete`
 
 Status: `complete`（2026-08-01）
 
-47都道府県すべてを次の11項目の共通ゲートへ引き上げました。
-
-1. 政策・KPI
-2. Evidence Packet
-3. 年度実績
-4. 予算
-5. 決算
-6. 重点事業
-7. 契約
-8. 議会
-9. 監査
-10. 首長公約
-11. 公開検証
+47都道府県すべてを、政策・KPI、Evidence、年度実績、予算、決算、重点事業、契約、議会、監査、首長公約、公開検証の共通ゲートへ引き上げました。
 
 完了は全国の**文書スコープ**です。個別目標・予算科目・事業・契約・議会発言・監査指摘をすべて一対一接続したという意味ではありません。
-
-- Reviewed政策目標・Evidence: 47 / 47
-- 年度実績・予算・決算・重点事業・監査 文書スコープLinked: 47 / 47
-- 契約・議会・首長公約 Reviewed coverage: 47 / 47
-- 公開検証 Reviewed: 47 / 47
-- 独自の政策達成評価: 0件
-- 比較可能性未確認の全国ランキング: 0件
 
 正本:
 
@@ -138,16 +113,12 @@ Status: `complete`
 
 北海道、宮城県、東京都、福岡県の既存個票を全件移行・正規化しました。
 
-- 対象ファイル: 11
 - 対象レコード: 861 / 861
 - Linked: 420 / 420
 - Partial: 58 / 58
 - Not linked: 383 / 383
-- 正規化済み都道府県: 4 / 4
 - 独自の政策達成評価: 0件
 - 比較対象へ昇格したレコード: 0件
-
-4つのNormalizerを統合実行し、全861件について共通Schema、ID一意性、元カタログ件数、状態内訳、Evidence参照、非評価境界を一括検証します。
 
 正本:
 
@@ -172,20 +143,16 @@ Status: `in_progress`
 
 Status: `complete`
 
-2026年8月2日に愛知県公式ページを再確認し、最新掲載年次資料が2026年3月30日更新の「あいちレポート2025」であることを確認しました。
-
 - 指標行: 56 / 56
-- 固有指標: 54
 - 系列: 62 / 62
 - current値あり: 61系列
 - current値欠損: 1系列
 - 実施計画由来の進捗目標: 29系列
-- 年次資料上のtarget表示: 62系列
 - 再掲行: 2
-- 2025年次資料での目標改定行: 1
+- 目標改定行: 1
 - 独自の政策達成評価: 0件
 
-全baseline/current/target値を系列ID、期間、原文値、解析値、source status、単位、集計範囲、演算子、方向性、比較注意事項付きで保持します。current値欠損または目標改定がある行はPartialとし、値を推測・上書きしません。
+全baseline/current/target値を系列ID、期間、原文値、解析値、source status、単位、集計範囲、演算子、方向性、比較注意事項付きで保持します。
 
 正本:
 
@@ -198,13 +165,8 @@ Status: `complete`
 
 Status: `complete`
 
-2026年3月31日策定の現行戦略「Beyond EXPO 2025」のReviewed指標を全件正規化しました。
-
 - 指標行: 83 / 83
 - 系列: 91 / 91
-- 経済目標: 1
-- 客観KPI: 27
-- 主観・Well-Being指標: 55
 - Linked: 77
 - Partial: 6
 - current値あり: 85系列
@@ -212,7 +174,7 @@ Status: `complete`
 - 明示的target: 1系列
 - 独自の政策達成評価: 0件
 
-2040年代の経済目標1件は同じ指標行にcurrent値がないためPartialです。初回調査前の大阪府独自指標5件もPartialとして欠損を保持します。旧「将来ビジョン・大阪」の実績系列は別系統のまま、令和8年度事業一覧は因果関係を示さないため未接続のままです。
+2040年代の経済目標1件と初回調査前の5件をPartialとして保持します。旧ビジョン実績系列と令和8年度事業一覧は自動接続しません。
 
 正本:
 
@@ -221,17 +183,41 @@ Status: `complete`
 - `scripts/normalize_phase11_osaka.py`
 - `tests/test_phase11_osaka_normalization.py`
 
+#### 広島県
+
+Status: `complete`
+
+改定版ビジョンの3分割カタログを横断し、62指標を全件正規化しました。
+
+- 指標: 62 / 62
+- Linked: 59
+- Partial: 3
+- Not linked: 0
+- 政策分野: 17
+- 測定待ち: 3
+- 定性目標: 1
+- 独自の政策達成評価: 0件
+
+複数系列、全国比較値、平均期間、概数、減少方向、定性条件を含み得るセルを推測で分解せず、基準値・現状値・目標値・目標年度・変更区分・出典・Evidence ID・ページを原文のまま保持します。指標006〜008は現状値が新規調査予定のためPartialです。
+
+正本:
+
+- `data/catalog/phase11_hiroshima_normalization.json`
+- `schemas/phase11_hiroshima_normalization.schema.json`
+- `scripts/normalize_phase11_hiroshima.py`
+- `tests/test_phase11_hiroshima_normalization.py`
+
 #### Wave 2 progress
 
-- 完了地域拠点: 2 / 5
-- 正規化済み行: 139
-- 正規化済み系列: 153
-- current値あり: 146系列
-- current値欠損: 7系列
-- 進捗目標または明示的target: 30系列
-- 次の対象: 広島県
+- 完了地域拠点: 3 / 5
+- 正規化済み行: 201
+- 正規化済み系列: 215
+- current値あり: 205系列
+- current値欠損: 10系列
+- 進捗目標または明示的target: 92系列
+- 次の対象: 香川県
 
-広島県は改定版ビジョンの62指標を対象に、59件の現状値と3件の測定待ちを分離し、基準値・現状値・目標値の原文、目標年度、定義変更、定性条件を保持して正規化します。
+香川県は135固有指標、141表示箇所、再掲6件、R7からR8への目標改定87件、訂正値、累積期間、参考目標を保持して正規化します。
 
 ### Wave 3 — Nationwide minimum record depth
 
