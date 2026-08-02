@@ -31,39 +31,30 @@ def catalog() -> dict:
 
 def test_manifest_and_phase9_counts_reconcile():
     manifest = load(MANIFEST_PATH)
-    validator = Draft202012Validator(
-        load(MANIFEST_SCHEMA_PATH), format_checker=FormatChecker()
-    )
+    validator = Draft202012Validator(load(MANIFEST_SCHEMA_PATH), format_checker=FormatChecker())
     assert list(validator.iter_errors(manifest)) == []
     for field in ("source_catalog", "normalizer", "shared_normalizer", "record_schema"):
         assert (ROOT / manifest[field]).exists()
 
     source = load(SOURCE_PATH)
-    summary = next(
-        item for item in load(SUMMARY_PATH)["records"]
-        if item["prefecture_code"] == "09"
-    )
-    assert len(source["records"]) == 1500
-    assert source["reviewed_target_statement_count"] == 1500
-    assert source["evidence_packet_count"] == 1500
-    assert summary["reviewed_target_statement_count"] == 1500
-    assert summary["evidence_packet_count"] == 1500
-    assert summary["document_count"] == 1
+    summary = next(item for item in load(SUMMARY_PATH)["records"] if item["prefecture_code"] == "09")
+    assert len(source["records"]) == 257
+    assert source["reviewed_target_statement_count"] == 257
+    assert source["evidence_packet_count"] == 257
+    assert summary["reviewed_target_statement_count"] == 257
+    assert summary["evidence_packet_count"] == 257
+    assert summary["document_count"] == 6
     assert summary["extraction_error_count"] == 0
 
 
 def test_all_records_validate_and_preserve_every_source_field():
     source_records = load(SOURCE_PATH)["records"]
     records = catalog()["records"]
-    validator = Draft202012Validator(
-        load(RECORD_SCHEMA_PATH), format_checker=FormatChecker()
-    )
-    assert [item["display_order"] for item in source_records] == list(range(1, 1501))
-    assert [item["subject"]["sequence"] for item in records] == list(range(1, 1501))
-    assert [item["source_record_id"] for item in records] == [
-        item["id"] for item in source_records
-    ]
-    assert len({item["id"] for item in records}) == 1500
+    validator = Draft202012Validator(load(RECORD_SCHEMA_PATH), format_checker=FormatChecker())
+    assert [item["display_order"] for item in source_records] == list(range(1, 258))
+    assert [item["subject"]["sequence"] for item in records] == list(range(1, 258))
+    assert [item["source_record_id"] for item in records] == [item["id"] for item in source_records]
+    assert len({item["id"] for item in records}) == 257
 
     source_by_id = {item["id"]: item for item in source_records}
     for record in records:
@@ -102,19 +93,19 @@ def test_dynamic_counts_and_determinism():
     locations = Counter(item["source_location"]["location_kind"] for item in source_records)
     missing_units = sum(item["unit_original"] is None for item in source_records)
     assert normalized["summary"] == {
-        "record_count": 1500,
+        "record_count": 257,
         "linked_record_count": 0,
-        "partial_record_count": 1500,
+        "partial_record_count": 257,
         "not_linked_record_count": 0,
-        "indicator_series_count": 1500,
-        "source_document_count": len(documents),
+        "indicator_series_count": 257,
+        "source_document_count": 6,
         "missing_unit_record_count": missing_units,
         "annual_actual_available_count": 0,
         "future_target_available_count": 0,
-        "reviewed_maximum_depth_record_count": 1500,
+        "reviewed_maximum_depth_record_count": 257,
         "policy_achievement_assessment_count": 0,
     }
-    assert len(documents) == 1
+    assert len(documents) == 6
     assert normalized["document_record_counts"] == dict(sorted(documents.items()))
     assert normalized["source_location_counts"] == dict(sorted(locations.items()))
     assert normalizer.build_catalog(ROOT) == normalizer.build_catalog(ROOT)
