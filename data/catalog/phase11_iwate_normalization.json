@@ -1,0 +1,30 @@
+{
+  "id": "phase11-iwate-normalization",
+  "phase": 11,
+  "status": "reviewed_maximum_depth",
+  "prefecture_code": "03",
+  "source_catalog": "data/reviewed/phase9/03.json",
+  "normalizer": "scripts/normalize_phase11_iwate.py",
+  "record_schema": "schemas/phase11_record_linkage.schema.json",
+  "expected_normalization": {
+    "record_count": 208,
+    "linked_record_count": 0,
+    "partial_record_count": 208,
+    "not_linked_record_count": 0,
+    "indicator_series_count": 208,
+    "source_document_count": 6,
+    "annual_actual_available_count": 0,
+    "future_target_available_count": 0,
+    "reviewed_maximum_depth_record_count": 208,
+    "policy_achievement_assessment_count": 0
+  },
+  "maximum_depth_rule": "The reviewed source is a set of December 2024 indicator-change booklets. Extracted lines may combine current values, target values, annotations, duplicated table text, and several series. Every line remains a raw maximum-depth record until a reviewed structured table mapping is available.",
+  "plan_boundary": "Policy-promotion, reconstruction-promotion, and the four regional-promotion booklets remain separate source documents. Their rows are not merged into one inferred indicator table, and no administrative-management series is inherited automatically.",
+  "non_goals": [
+    "Do not parse mixed raw lines into inferred current and target values.",
+    "Do not merge rows from separate policy, reconstruction, or regional plan booklets.",
+    "Do not treat change annotations as independent policy results.",
+    "Do not calculate achievement, causality, or cross-prefecture ranking."
+  ],
+  "updated_at": "2026-08-02"
+}
