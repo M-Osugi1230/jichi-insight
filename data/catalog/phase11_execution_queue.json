@@ -54,7 +54,7 @@
         "All 38 prefectures have at least one linked record or a reviewed maximum-source-depth record.",
         "All records preserve missing, unpublished, partial, and not-assessable states without guessing."
       ],
-      "next_action": "Process the remaining prefectures in code order without skipping, beginning with Aomori 02 and Iwate 03. Reuse stable indicator identifiers where present and record reviewed maximum depth where annual actuals cannot be connected."
+      "next_action": "Process Yamagata prefecture code 06 next. The existing Phase 9 reviewed file is empty, so create an explicit reviewed-empty-source boundary before attempting any deeper extraction, then continue to Fukushima 07."
     }
   ],
   "summary": {
@@ -87,9 +87,13 @@
       "reviewed_maximum_depth_records": 375
     },
     "wave3_normalization": {
-      "prefectures_complete": 0,
-      "prefectures_remaining": 38,
-      "next_prefecture_code": "02"
+      "prefectures_complete": 3,
+      "prefectures_remaining": 35,
+      "records_complete": 210,
+      "reviewed_maximum_depth_records": 210,
+      "linked_records": 0,
+      "partial_records": 210,
+      "next_prefecture_code": "06"
     }
   },
   "updated_at": "2026-08-02"
