@@ -22,29 +22,19 @@ Status: `complete`
 
 Status: `integrated_into_phase10`
 
-- Reviewed財政・決算
-- 政策、施策、事業、契約、KPIの接続
-- 年度・会計区分・金額種別の分離
-
 全国の文書スコープ接続はPhase 10で完了しました。個票単位の深掘りはPhase 11へ移行しました。
 
 ## Phase 3 — Manifesto and executive
 
 Status: `reviewed_coverage_complete`
 
-- 47都道府県×首長公約の公式資料・公式検索結果をReviewed
-- 首長任期、候補者、原文を確認できない資料は未昇格
-- 未発見と不存在を分離
-
-現任期と原文を確認した個別公約レコードへの展開はPhase 11以降の継続研究です。
+47都道府県の首長公約資料または公式検索結果をReviewedとし、現任期・候補者・原文を確認できない資料は個票へ昇格しません。
 
 ## Phase 4 — Assembly accountability
 
 Status: `reviewed_coverage_complete`
 
-- 47都道府県×議会の公式資料・公式検索結果をReviewed
-- 行政成果と議会の役割を分離
-- 発言・議案・採決単位の接続はPhase 11以降の継続研究
+47都道府県の議会資料または公式検索結果をReviewedとし、発言・議案・採決単位の接続はPhase 11以降で進めます。
 
 ## Phase 5 — Trust, legal, and operations
 
@@ -59,11 +49,7 @@ Status: `complete_for_initial_publication`
 
 Status: `ready`
 
-- 全国公開サイト
-- 方法論、データ品質、更新状態
-- フィードバックと訂正フロー
-
-独自ドメイン、Search Console、OGP、faviconは公開設定として別管理します。
+全国公開サイト、方法論、データ品質、更新状態、フィードバックと訂正フローを実装済みです。正式なPublic betaには外部法務・アクセシビリティ・運用の実地ゲートが残ります。
 
 ## Phase 7 — Nationwide prefecture registry
 
@@ -82,19 +68,7 @@ Status: `complete`
 
 Status: `complete`
 
-対象:
-
-- 北海道
-- 宮城県
-- 東京都
-- 愛知県
-- 大阪府
-- 広島県
-- 香川県
-- 福岡県
-- 沖縄県
-
-9地域拠点で、政策計画、主要数値目標、Evidence Packet、公開ページ、静的出力、本番確認を完了しました。
+北海道、宮城県、東京都、愛知県、大阪府、広島県、香川県、福岡県、沖縄県の9地域拠点で、政策計画、主要数値目標、Evidence Packet、公開ページ、静的出力、本番確認を完了しました。
 
 正本: `data/catalog/phase8_completion.json`
 
@@ -102,9 +76,7 @@ Status: `complete`
 
 Status: `complete`
 
-Phase 8を除く38県を7地域バッチで処理し、全47都道府県を同じReviewed目標基盤へ引き上げました。
-
-完了状態:
+全47都道府県を同じEvidence-backed Reviewed目標基盤へ引き上げました。
 
 - 現行政策計画: 47 / 47
 - 主要数値目標入口: 47 / 47
@@ -124,9 +96,7 @@ Phase 8を除く38県を7地域バッチで処理し、全47都道府県を同�
 
 Status: `complete`（2026-08-01）
 
-目的は「一部の県だけ深い」状態を解消し、47都道府県を同じ最低粒度へ引き上げることです。
-
-共通の11項目:
+47都道府県すべてを次の11項目の共通ゲートへ引き上げました。
 
 1. 政策・KPI
 2. Evidence Packet
@@ -140,45 +110,17 @@ Status: `complete`（2026-08-01）
 10. 首長公約
 11. 公開検証
 
-### Completed baseline
+完了は全国の**文書スコープ**です。個別目標・予算科目・事業・契約・議会発言・監査指摘をすべて一対一接続したという意味ではありません。
 
-- Reviewed政策目標: 47 / 47
-- Reviewed Evidence: 47 / 47
-- 年度実績 文書スコープLinked: 47 / 47
-- 予算 文書スコープLinked: 47 / 47
-- 決算 文書スコープLinked: 47 / 47
-- 重点事業 文書スコープLinked: 47 / 47
-- 監査 文書スコープLinked: 47 / 47
-- 契約 Reviewed coverage: 47 / 47
-- 議会 Reviewed coverage: 47 / 47
-- 首長公約 Reviewed coverage: 47 / 47
+- Reviewed政策目標・Evidence: 47 / 47
+- 年度実績・予算・決算・重点事業・監査 文書スコープLinked: 47 / 47
+- 契約・議会・首長公約 Reviewed coverage: 47 / 47
 - 公開検証 Reviewed: 47 / 47
-- 11項目の同一粒度完了: 47 / 47
 - 独自の政策達成評価: 0件
 - 比較可能性未確認の全国ランキング: 0件
 
-説明責任3層は、都道府県公式一次資料の入口または不存在を断定しない公式検索結果までをReviewedとします。安定した一次資料が未特定の場合も、確認ホスト・検索条件・検索日・再確認条件を残しています。
-
-### Completion boundary
-
-Phase 10の完了は全国の**文書スコープ**です。個別の目標、予算科目、事業、契約、議会発言、監査指摘をすべて一対一接続したという意味ではありません。
-
-次の条件をすべて検証し、完了としました。
-
-- 47都道府県すべてが11項目の共通ゲートを通過
-- 公開値・公開接続のEvidence coverageを完了範囲で検証
-- 計画版、報告年度、測定年度、会計区分の混同0
-- 予算、決算、事業費、契約額の混同0
-- 議会、監査、公約の主体・任期・役割を未確認のまま昇格しない
-- 未確認関係を推測で接続しない
-- 比較可能性未確認の全国ランキングを公開しない
-- Schema、回帰テスト、Lint、型検査、静的出力、Publication Audit、Production Smoke成功
-- `data/catalog/phase10_completion.json`が`complete`で全ゲート`passed`
-
 正本:
 
-- `data/catalog/phase10_uniformity.json`
-- `data/catalog/phase10_execution_queue.json`
 - `data/catalog/phase10_completion.json`
 - `data/catalog/phase10_nationwide_core_linkage.json`
 - `data/catalog/phase10_nationwide_accountability_linkage.json`
@@ -190,49 +132,58 @@ Status: `in_progress`（2026-08-02開始）
 
 Phase 10の文書スコープから、個別の政策目標、年度実績、予算、決算、重点事業、契約、監査、議会、公約を一対一で追跡できる個票スコープへ進みます。
 
-### Wave 1 inventory
+### Wave 1 — Reference implementations
 
-北海道、宮城県、東京都、福岡県の既存個票データについて、全861件を移行管理対象へ登録しました。
+Status: `complete`
+
+北海道、宮城県、東京都、福岡県の既存個票を全件移行・正規化しました。
 
 - 対象ファイル: 11
-- 全レコード: 861
-- Linked: 420
-- Partial: 58
-- Not linked: 383
+- 対象レコード: 861 / 861
+- Linked: 420 / 420
+- Partial: 58 / 58
+- Not linked: 383 / 383
+- 正規化済み都道府県: 4 / 4
 - 独自の政策達成評価: 0件
+- 比較対象へ昇格したレコード: 0件
 
-### Normalization progress
+4つのNormalizerを統合実行し、全861件について共通Schema、ID一意性、元カタログ件数、状態内訳、Evidence参照、非評価境界を一括検証します。
 
-北海道108件、宮城県627件、東京都8件の共通個票形式への正規化を完了しました。
-
-- 正規化済み都道府県: 3 / 4
-- 正規化済みレコード: 743 / 861
-- Linked正規化済み: 334 / 420
-- Partial正規化済み: 46 / 58
-- Not linked正規化済み: 363 / 383
-
-東京都では、7系列のID、ラベル、単位、値、期間を保持し、2件の資料間不一致について両方の公式値・期間をConflictとして保存します。欠けた値は推測せず`null`です。
-
-### Next gate
-
-1. 福岡県86件のLinked、12件のPartial、20件のNot linkedを正規化
-2. Wave 1の861件すべてが共通Schemaを通過する統合ゲートを作成
-3. 愛知県、大阪府、広島県、香川県、沖縄県へ同じ工程を展開
-4. 残る38県へ同じ品質ゲートを展開
+- 北海道: 108件
+- 宮城県: 627件
+- 東京都: 8件
+- 福岡県: 118件
 
 正本:
 
-- `data/catalog/phase11_reference_records.json`
 - `data/catalog/phase11_wave1_migration.json`
+- `data/catalog/phase11_wave1_completion.json`
 - `data/catalog/phase11_hokkaido_normalization.json`
 - `data/catalog/phase11_miyagi_normalization.json`
 - `data/catalog/phase11_tokyo_normalization.json`
-- `data/catalog/phase11_execution_queue.json`
+- `data/catalog/phase11_fukuoka_normalization.json`
 - `schemas/phase11_record_linkage.schema.json`
-- `scripts/normalize_phase11_hokkaido.py`
-- `scripts/normalize_phase11_miyagi.py`
-- `scripts/normalize_phase11_tokyo.py`
-- `docs/PHASE11_RECORD_LINKAGE.md`
+- `tests/test_phase11_wave1_completion.py`
+
+### Wave 2 — Remaining regional anchors
+
+Status: `in_progress`
+
+対象:
+
+- 愛知県
+- 大阪府
+- 広島県
+- 香川県
+- 沖縄県
+
+次は愛知県です。現行指標カタログと最新の公式進捗資料を全件照合し、個票接続が可能な系列だけを昇格します。個票接続を支える公式資料が不足する場合は、最大到達深度と不足条件をReviewedとして記録します。
+
+### Wave 3 — Nationwide minimum record depth
+
+Status: `pending`
+
+残る38県へ同じ品質ゲートを展開します。同じ件数ではなく、同じ昇格条件・Evidence水準・欠損状態の扱いを要求します。
 
 ## After Phase 11
 
