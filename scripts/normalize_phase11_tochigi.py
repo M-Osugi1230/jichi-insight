@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Normalize all 1,500 reviewed Tochigi Phase 9 statements."""
+"""Normalize all 257 reviewed Tochigi Phase 9 statements."""
 
 from __future__ import annotations
 
@@ -37,7 +37,7 @@ def build_catalog(root: Path = ROOT) -> dict:
         prefecture_code="09",
         slug="tochigi",
         source_registry=SOURCE_RELATIVE_PATH,
-        expected_record_count=1500,
+        expected_record_count=257,
         boundary=BOUNDARY,
     )
 
