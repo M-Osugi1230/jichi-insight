@@ -150,13 +150,16 @@ def test_every_record_preserves_non_assessment_and_comparison_exclusion():
     assert completion["ranking_eligible_record_count"] == 0
 
 
-def test_wave1_queue_is_complete_and_wave2_is_active():
+def test_wave1_queue_stays_complete_after_later_waves_advance():
     queue = load(QUEUE_PATH)
     waves = {wave["id"]: wave for wave in queue["waves"]}
 
-    assert queue["active_wave"] == "wave2-remaining-regional-anchors"
+    assert queue["active_wave"] == "wave3-nationwide-minimum-record-depth"
     assert waves["wave1-reference-implementations"]["status"] == "complete"
-    assert waves["wave2-remaining-regional-anchors"]["status"] == "in_progress"
+    assert waves["wave2-remaining-regional-anchors"]["status"] == "complete"
+    assert waves["wave3-nationwide-minimum-record-depth"]["status"] == (
+        "in_progress"
+    )
     assert queue["summary"]["wave1_normalization"] == {
         "prefectures_complete": 4,
         "records_complete": 861,
