@@ -77,12 +77,12 @@ const depthCards = [
   {
     className: styles.qualityCard,
     area: "Phase 10",
-    label: "接続状況を読む",
-    title: "目標から、実績・お金・事業へ。",
-    text: "目標は47県でReviewed済み。その先の実績、予算、事業、契約は、索引・照合・接続を分けて進捗公開しています。",
-    facts: ["実績 1接続", "予算 1照合", "評価0件"],
+    label: "完了範囲を読む",
+    title: "47都道府県で、文書スコープ接続完了。",
+    text: "年度実績、予算・決算、重点事業、監査は全国で文書単位まで接続。個別目標・事業の一対一接続は次の深掘り工程です。",
+    facts: ["47/47 同一粒度", "文書スコープ完了", "政策評価0件"],
     href: "/municipalities/phase10",
-    action: "Evidence Chainの進捗を見る",
+    action: "Phase 10の完了境界を見る",
   },
 ];
 
@@ -249,25 +249,34 @@ export default function Home() {
       <section className={styles.section}>
         <div className={styles.readinessLayout}>
           <div>
-            <p className="eyebrow">Phase 10 / vertical linkage</p>
+            <p className="eyebrow">Post-Phase 10 / record-level deepening</p>
             <h2>
-              目標は47県。
+              全国の文書基盤は完了。
               <br />
-              次は、根拠の縦接続。
+              次は、個票の一対一接続。
             </h2>
             <p className={styles.readinessLead}>
-              目標原文は全国でReviewed済みです。一方、年度実績や予算、事業、契約との接続は始まったばかりです。
-              「未索引」「索引済」「照合済」「接続済」を分けて公開します。
+              年度実績、予算・決算、重点事業、監査は47都道府県で文書スコープまで接続済みです。
+              次は、個別の目標、予算科目、事業、契約、議会発言、監査指摘を、定義・期間・主体を照合しながら一対一で深めます。
             </p>
             <Link className="secondaryAction" href="/municipalities/phase10">
-              Phase 10の進捗を見る
+              Phase 10の完了境界を見る
             </Link>
           </div>
           <div className={styles.readinessBars}>
             {phase10StageSummary.map((stage) => (
               <div key={stage.key}>
                 <div>
-                  <span>{stage.label}<small>{stage.note}</small></span>
+                  <span>
+                    {stage.label}
+                    <small>
+                      {stage.key === "project_evaluation"
+                        ? "47都道府県で文書スコープ接続"
+                        : stage.key === "contracts"
+                          ? "47都道府県でReviewed coverage"
+                          : stage.note}
+                    </small>
+                  </span>
                   <strong>{stage.count}<small>/47</small></strong>
                 </div>
                 <div
