@@ -190,7 +190,7 @@ Status: `in_progress`（2026-08-02開始）
 
 Phase 10の文書スコープから、個別の政策目標、年度実績、予算、決算、重点事業、契約、監査、議会、公約を一対一で追跡できる個票スコープへ進みます。
 
-### Wave 1 current state
+### Wave 1 inventory
 
 北海道、宮城県、東京都、福岡県の既存個票データについて、代表例だけでなく全レコードを移行管理対象へ登録しました。
 
@@ -203,12 +203,24 @@ Phase 10の文書スコープから、個別の政策目標、年度実績、予
 
 全件移行台帳は、元カタログのファイル一覧、ID、状態内訳、件数と動的に照合します。部分接続や未接続を除外せず、解決していない状態のまま保持します。
 
+### Normalization progress
+
+北海道108件の共通個票形式への正規化を完了しました。
+
+- 正規化済み都道府県: 1 / 4
+- 正規化済みレコード: 108 / 861
+- Linked正規化済み: 90 / 420
+- Partial正規化済み: 18 / 58
+- Not linked正規化済み: 0 / 383
+
+北海道では、指標ID、階層、名称、定義、現状値、中間目標、最終目標、年度実績、構成値、期間、Evidence位置、再掲位置、Partial理由を全件で元レコードと照合します。
+
 ### Next gate
 
-1. 北海道のLinked 90件を共通個票形式へ正規化
-2. 北海道のPartial 18件を理由付きで保持
-3. 宮城県238件、東京都6件、福岡県86件のLinkedレコードを順次正規化
-4. Partial 58件、Not linked 383件を推測で昇格しない
+1. 宮城県238件のLinked事業・予算・決算レコードを共通形式へ正規化
+2. 宮城県26件のPartialと363件のNot linkedを判断を変えずに保持
+3. 東京都6件のLinkedと2件のPartialを正規化
+4. 福岡県86件のLinked、12件のPartial、20件のNot linkedを正規化
 5. 愛知県、大阪府、広島県、香川県、沖縄県へ同じ工程を展開
 6. 残る38県へ同じ品質ゲートを展開
 
@@ -216,9 +228,10 @@ Phase 10の文書スコープから、個別の政策目標、年度実績、予
 
 - `data/catalog/phase11_reference_records.json`
 - `data/catalog/phase11_wave1_migration.json`
+- `data/catalog/phase11_hokkaido_normalization.json`
 - `data/catalog/phase11_execution_queue.json`
-- `schemas/phase11_reference_records.schema.json`
-- `schemas/phase11_wave1_migration.schema.json`
+- `schemas/phase11_record_linkage.schema.json`
+- `scripts/normalize_phase11_hokkaido.py`
 - `docs/PHASE11_RECORD_LINKAGE.md`
 
 ## After Phase 11
