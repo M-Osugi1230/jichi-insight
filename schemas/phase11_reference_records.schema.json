@@ -1,0 +1,148 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Phase 11 reference record linkage",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "phase",
+    "status",
+    "scope_version",
+    "record_level_definition",
+    "records",
+    "summary",
+    "updated_at"
+  ],
+  "properties": {
+    "id": {"const": "phase11-reference-records"},
+    "phase": {"const": 11},
+    "status": {"const": "in_progress"},
+    "scope_version": {"type": "string", "format": "date"},
+    "record_level_definition": {"type": "string", "minLength": 100},
+    "records": {
+      "type": "array",
+      "minItems": 4,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/referenceRecord"}
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reference_record_count",
+        "prefecture_count",
+        "linked_reference_count",
+        "policy_achievement_assessment_count"
+      ],
+      "properties": {
+        "reference_record_count": {"const": 4},
+        "prefecture_count": {"const": 4},
+        "linked_reference_count": {"const": 4},
+        "policy_achievement_assessment_count": {"const": 0}
+      }
+    },
+    "updated_at": {"type": "string", "format": "date"}
+  },
+  "$defs": {
+    "referenceRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "prefecture_code",
+        "source_registry",
+        "source_record_id",
+        "linkage_kind",
+        "linkage_status",
+        "layers",
+        "evidence_paths",
+        "boundary",
+        "evaluation_status",
+        "comparability_status"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^phase11-ref-[a-z0-9-]+$"
+        },
+        "prefecture_code": {
+          "type": "string",
+          "pattern": "^[0-9]{2}$"
+        },
+        "source_registry": {
+          "type": "string",
+          "pattern": "^data/catalog/.+\\.json$"
+        },
+        "source_record_id": {"type": "string", "minLength": 5},
+        "linkage_kind": {
+          "enum": [
+            "target_to_annual_actual",
+            "policy_measure_to_project_money"
+          ]
+        },
+        "linkage_status": {"const": "linked"},
+        "layers": {
+          "type": "array",
+          "minItems": 2,
+          "items": {"$ref": "#/$defs/layer"}
+        },
+        "evidence_paths": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^(data|tests|docs)/"
+          }
+        },
+        "boundary": {"type": "string", "minLength": 60},
+        "evaluation_status": {"const": "not_assessed"},
+        "comparability_status": {"const": "excluded_until_verified"}
+      }
+    },
+    "layer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "layer",
+        "status",
+        "record_ref",
+        "period",
+        "value_text",
+        "evidence_page"
+      ],
+      "properties": {
+        "layer": {
+          "enum": [
+            "policy_target",
+            "policy_measure",
+            "annual_actual",
+            "budget",
+            "settlement",
+            "priority_project",
+            "contract",
+            "audit",
+            "assembly",
+            "executive_promise"
+          ]
+        },
+        "status": {
+          "enum": [
+            "linked",
+            "partial",
+            "not_linked",
+            "not_published",
+            "not_assessable"
+          ]
+        },
+        "record_ref": {"type": ["string", "null"]},
+        "period": {"type": ["string", "null"]},
+        "value_text": {"type": ["string", "null"]},
+        "evidence_page": {
+          "type": ["integer", "null"],
+          "minimum": 1
+        }
+      }
+    }
+  }
+}
