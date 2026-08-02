@@ -24,12 +24,30 @@
     "summary": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["total_prefectures", "reference_prefectures", "remaining_anchor_prefectures", "nationwide_prefectures"],
+      "required": [
+        "total_prefectures",
+        "reference_prefectures",
+        "remaining_anchor_prefectures",
+        "nationwide_prefectures",
+        "wave1_inventory"
+      ],
       "properties": {
         "total_prefectures": {"const": 47},
         "reference_prefectures": {"const": 4},
         "remaining_anchor_prefectures": {"const": 5},
-        "nationwide_prefectures": {"const": 38}
+        "nationwide_prefectures": {"const": 38},
+        "wave1_inventory": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["record_files", "records", "linked", "partial", "not_linked"],
+          "properties": {
+            "record_files": {"const": 11},
+            "records": {"const": 861},
+            "linked": {"const": 420},
+            "partial": {"const": 58},
+            "not_linked": {"const": 383}
+          }
+        }
       }
     },
     "updated_at": {"type": "string", "format": "date"}
