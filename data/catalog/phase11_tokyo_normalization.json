@@ -1,0 +1,24 @@
+{
+  "id": "phase11-tokyo-normalization",
+  "phase": 11,
+  "prefecture_code": "13",
+  "status": "complete",
+  "source_catalog": "data/catalog/tokyo_children_annual_actual_linkage.json",
+  "normalizer": "scripts/normalize_phase11_tokyo.py",
+  "record_schema": "schemas/phase11_record_linkage.schema.json",
+  "regression_test": "tests/test_phase11_tokyo_normalization.py",
+  "summary": {
+    "record_count": 8,
+    "linked_record_count": 6,
+    "linked_series_count": 7,
+    "partial_record_count": 2,
+    "not_linked_record_count": 0,
+    "policy_achievement_assessment_count": 0
+  },
+  "partial_reason_counts": {
+    "reporting_period_conflict": 1,
+    "actual_value_and_period_conflict": 1
+  },
+  "completion_boundary": "All eight Tokyo children-policy target groups are deterministically transformed into the reusable Phase 11 record shape. Seven linked series retain their series IDs, labels, units, raw values, and periods. The two partial records retain both sides of the official-source conflict, including absent catalog values as null, and neither record is promoted or overwritten.",
+  "updated_at": "2026-08-02"
+}
