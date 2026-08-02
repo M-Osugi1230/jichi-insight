@@ -11,7 +11,7 @@
     "Match project identity using policy measure, department, office, year, and normalized name.",
     "Verify candidate, election, term, and original wording before linking an executive promise.",
     "Treat assembly and audit evidence as separate accountability roles from executive outcomes.",
-    "Retain official URL, page, extraction position, review date, and unresolved boundary.",
+    "Retain official URL, page or source line, extraction position, review date, and unresolved boundary.",
     "Do not promote automated extraction to linked without reviewed evidence.",
     "Do not infer policy achievement, causality, or cross-prefecture comparability."
   ],
@@ -54,7 +54,7 @@
         "All 38 prefectures have at least one linked record or a reviewed maximum-source-depth record.",
         "All records preserve missing, unpublished, partial, and not-assessable states without guessing."
       ],
-      "next_action": "Process Toyama prefecture code 16 next. Normalize the single Phase 9 Reviewed statement while preserving the new-plan, wellbeing-indicator, and not-yet-published first-evaluation boundaries."
+      "next_action": "Process Ishikawa prefecture code 17 next. Normalize all nine Phase 9 Reviewed statements from six official documents while preserving the 14-major-goal, 160-KPI, recovery-plan, and annual-evaluation boundaries."
     }
   ],
   "summary": {
@@ -87,13 +87,13 @@
       "reviewed_maximum_depth_records": 375
     },
     "wave3_normalization": {
-      "prefectures_complete": 12,
-      "prefectures_remaining": 26,
-      "records_complete": 3666,
-      "reviewed_maximum_depth_records": 3666,
+      "prefectures_complete": 13,
+      "prefectures_remaining": 25,
+      "records_complete": 3667,
+      "reviewed_maximum_depth_records": 3667,
       "linked_records": 0,
-      "partial_records": 3666,
-      "next_prefecture_code": "16"
+      "partial_records": 3667,
+      "next_prefecture_code": "17"
     }
   },
   "updated_at": "2026-08-02"
