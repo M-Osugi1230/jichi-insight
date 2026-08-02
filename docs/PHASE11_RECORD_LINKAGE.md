@@ -36,9 +36,37 @@ A relationship can be `linked` only when reviewers confirm the relevant combinat
 
 Automated extraction may identify candidates but cannot promote them to `linked` without reviewed evidence.
 
-## Initial reference records
+## Wave 1 exhaustive inventory
 
-The first shared contract preserves four existing implementations without rewriting their source registries.
+The first implementation no longer relies on four representative examples alone. All existing record-level results in the four reference prefectures are now controlled by one exhaustive migration inventory.
+
+| Prefecture | Source records | Linked | Partial | Not linked |
+|---|---:|---:|---:|---:|
+| Hokkaido | 108 | 90 | 18 | 0 |
+| Miyagi | 627 | 238 | 26 | 363 |
+| Tokyo | 8 | 6 | 2 | 0 |
+| Fukuoka | 118 | 86 | 12 | 20 |
+| **Total** | **861** | **420** | **58** | **383** |
+
+The inventory references all 11 canonical record files. Regression tests load every record dynamically and fail when:
+
+- a catalog part file is omitted or reordered;
+- a record ID appears twice within a prefecture source;
+- a linkage state falls outside `linked`, `partial`, or `not_linked`;
+- source-record counts differ from the canonical catalog summary;
+- aggregate totals differ from 861 / 420 / 58 / 383;
+- one of the initial common-schema references no longer resolves to the full inventory;
+- a source is promoted from `not_assessed` without an explicit methodology change.
+
+Canonical inventory files:
+
+- `data/catalog/phase11_wave1_migration.json`
+- `schemas/phase11_wave1_migration.schema.json`
+- `tests/test_phase11_wave1_migration.py`
+
+## Initial common-schema reference records
+
+Four records demonstrate the shared cross-layer representation while the full source inventory remains canonical.
 
 1. Hokkaido: food self-sufficiency target to annual actual
 2. Miyagi: policy measure to priority project, budget, and settlement
@@ -53,11 +81,23 @@ Canonical files:
 - `schemas/phase11_execution_queue.schema.json`
 - `tests/test_phase11_reference_records.py`
 
+## Next normalization order
+
+Wave 1 proceeds without skipping source states.
+
+1. Normalize all 90 Hokkaido linked annual-actual records.
+2. Preserve all 18 Hokkaido partial records with their exact unresolved reason.
+3. Normalize all 238 Miyagi linked project-money records.
+4. Preserve 26 Miyagi partial and 363 not-linked records without promotion.
+5. Normalize the six Tokyo linked target groups and preserve the two source conflicts.
+6. Normalize 86 Fukuoka linked targets, 12 revised-target partial records, and 20 not-linked records.
+7. Derive reusable normalizers only after every source-specific field has an explicit mapping or retained boundary.
+
 ## Waves
 
 ### Wave 1 — Reference implementations
 
-Unify the existing Hokkaido, Miyagi, Tokyo, and Fukuoka records under the shared contract and derive reusable promotion rules.
+Unify the existing Hokkaido, Miyagi, Tokyo, and Fukuoka records under the shared contract and derive reusable promotion rules. The exhaustive inventory is complete; common-schema normalization of all 861 source records remains in progress.
 
 ### Wave 2 — Remaining regional anchors
 
