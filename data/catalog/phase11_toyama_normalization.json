@@ -1,0 +1,37 @@
+{
+  "id": "phase11-toyama-normalization",
+  "phase": 11,
+  "status": "reviewed_maximum_depth",
+  "prefecture_code": "16",
+  "source_catalog": "data/reviewed/phase9/16.json",
+  "normalizer": "scripts/normalize_phase11_toyama.py",
+  "record_schema": "schemas/phase11_record_linkage_source_location.schema.json",
+  "expected_normalization": {
+    "record_count": 1,
+    "linked_record_count": 0,
+    "partial_record_count": 1,
+    "not_linked_record_count": 0,
+    "indicator_series_count": 1,
+    "annual_actual_available_count": 0,
+    "future_target_available_count": 0,
+    "reviewed_maximum_depth_record_count": 1,
+    "policy_achievement_assessment_count": 0
+  },
+  "source_location_contract": {
+    "location_kind": "html_text_line",
+    "page": null,
+    "row": 79,
+    "page_surrogate_prohibited": true
+  },
+  "maximum_depth_rule": "The single reviewed HTML row remains a raw maximum-depth record because it explains the creation of Toyama's wellbeing indicators and does not itself provide a current-plan KPI value, annual actual, or future target.",
+  "version_boundary": "The 2025-2029 comprehensive plan and its twelve policy fields remain separate from the wellbeing indicator framework based on the September 2022 resident survey, the former plan's one hundred policy evaluations, and the not-yet-published first evaluation of the new plan.",
+  "non_goals": [
+    "Do not convert HTML row 79 into a fabricated PDF page number.",
+    "Do not treat the indicator-development explanation as a policy indicator value.",
+    "Do not inherit one hundred former-plan policy evaluations into the new plan.",
+    "Do not treat the 2022 resident survey as an annual actual for the new plan.",
+    "Do not treat an unpublished first evaluation as zero or completed.",
+    "Do not calculate achievement, causality, or cross-prefecture ranking."
+  ],
+  "updated_at": "2026-08-02"
+}
