@@ -1,0 +1,33 @@
+{
+  "id": "phase11-kanagawa-normalization",
+  "phase": 11,
+  "status": "reviewed_maximum_depth",
+  "prefecture_code": "14",
+  "source_catalog": "data/reviewed/phase9/14.json",
+  "normalizer": "scripts/normalize_phase11_kanagawa.py",
+  "shared_normalizer": "scripts/phase11_phase9_raw.py",
+  "record_schema": "schemas/phase11_record_linkage.schema.json",
+  "expected_normalization": {
+    "record_count": 225,
+    "linked_record_count": 0,
+    "partial_record_count": 225,
+    "not_linked_record_count": 0,
+    "indicator_series_count": 225,
+    "annual_actual_available_count": 0,
+    "future_target_available_count": 0,
+    "reviewed_maximum_depth_record_count": 225,
+    "policy_achievement_assessment_count": 0
+  },
+  "maximum_depth_rule": "All 225 canonical Phase 9 Reviewed statements remain raw maximum-depth records until indicators, KPIs, values, periods, units, and source-version relationships can be mapped through reviewed table-level evidence.",
+  "overlap_boundary": "The six registered documents include split, full-text, and A4 versions of the basic concept and implementation plan. Their document metadata declares 233 reviewed rows, while the canonical deduplicated record set contains 225 rows; the eight-row difference is not added as new records.",
+  "evaluation_boundary": "Indicators and KPIs remain separate layers. Evaluation-report achievement statuses, subsequently published actuals, corrections, and revised target years are not written over the original plan statements.",
+  "non_goals": [
+    "Do not count duplicate publication formats as additional policy records.",
+    "Do not merge indicators and KPIs without reviewed definition and responsibility mapping.",
+    "Do not infer annual actuals or future targets from contents pages or mixed raw text.",
+    "Do not overwrite plan statements with later evaluations, actuals, or corrections.",
+    "Do not replace missing units or split multiple values by inference.",
+    "Do not calculate achievement, causality, or cross-prefecture ranking."
+  ],
+  "updated_at": "2026-08-02"
+}
