@@ -30,7 +30,8 @@
         "remaining_anchor_prefectures",
         "nationwide_prefectures",
         "wave1_inventory",
-        "wave1_normalization"
+        "wave1_normalization",
+        "wave2_normalization"
       ],
       "properties": {
         "total_prefectures": {"const": 47},
@@ -65,6 +66,28 @@
             "linked_complete": {"const": 420},
             "partial_complete": {"const": 58},
             "not_linked_complete": {"const": 383}
+          }
+        },
+        "wave2_normalization": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "anchors_complete",
+            "anchors_remaining",
+            "records_complete",
+            "indicator_series_complete",
+            "linked_current_series",
+            "missing_current_series",
+            "target_series"
+          ],
+          "properties": {
+            "anchors_complete": {"const": 1},
+            "anchors_remaining": {"const": 4},
+            "records_complete": {"const": 56},
+            "indicator_series_complete": {"const": 62},
+            "linked_current_series": {"const": 61},
+            "missing_current_series": {"const": 1},
+            "target_series": {"const": 29}
           }
         }
       }
