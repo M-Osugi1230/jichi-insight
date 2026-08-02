@@ -6,17 +6,13 @@ Jichi Insightは日付ではなく、品質ゲートの通過で進行を管理�
 
 Status: `complete`
 
-- プロジェクト憲章、PRD、編集・データ方針
-- モノレポ、Web、JSON Schema、CI
-- 訂正・反論、リスク、運用ルール
+プロジェクト憲章、PRD、編集・データ方針、モノレポ、Web、JSON Schema、CI、訂正・反論、リスク、運用ルールを整備しました。
 
 ## Phase 1 — Source map and prototype
 
 Status: `complete`
 
-- パイロット自治体の公式資料マップ
-- 財政、計画、事業、契約、議会、選挙資料の入口
-- 出典・品質状態を表示するUI
+公式資料入口、財政・計画・事業・契約・議会・選挙資料マップ、出典・品質状態UIを実装しました。
 
 ## Phase 2 — Finance and project spine
 
@@ -40,10 +36,7 @@ Status: `reviewed_coverage_complete`
 
 Status: `complete_for_initial_publication`
 
-- 利用規約、プライバシー、免責事項
-- 訂正・反論受付
-- アクセシビリティ、セキュリティ、運用手順
-- 公開前監査とProduction Smoke
+利用規約、プライバシー、免責事項、訂正・反論受付、アクセシビリティ、セキュリティ、運用手順、公開前監査、Production Smokeを実装しました。
 
 ## Phase 6 — Public beta
 
@@ -80,19 +73,11 @@ Status: `complete`
 - 独自の政策達成評価: 0件
 - 比較可能性未確認の全国ランキング: 0件
 
-正本:
-
-- `data/catalog/phase9_completion.json`
-- `data/catalog/phase9_review_summary.json`
-- `docs/PHASE9_EXECUTION.md`
-
 ## Phase 10 — Nationwide uniform depth
 
 Status: `complete`（2026-08-01）
 
-47都道府県すべてを、政策・KPI、Evidence、年度実績、予算、決算、重点事業、契約、議会、監査、首長公約、公開検証の共通ゲートへ引き上げました。
-
-完了は全国の**文書スコープ**です。個別目標・予算科目・事業・契約・議会発言・監査指摘をすべて一対一接続したという意味ではありません。
+47都道府県を、政策・KPI、Evidence、年度実績、予算、決算、重点事業、契約、議会、監査、首長公約、公開検証の共通文書スコープへ引き上げました。
 
 正本:
 
@@ -118,7 +103,6 @@ Status: `complete`
 - Partial: 58 / 58
 - Not linked: 383 / 383
 - 独自の政策達成評価: 0件
-- 比較対象へ昇格したレコード: 0件
 
 正本:
 
@@ -131,93 +115,66 @@ Status: `complete`
 
 Status: `in_progress`
 
-対象:
+対象は愛知県、大阪府、広島県、香川県、沖縄県です。
 
-- 愛知県
-- 大阪府
-- 広島県
-- 香川県
-- 沖縄県
+#### 愛知県 — complete
 
-#### 愛知県
-
-Status: `complete`
-
-- 指標行: 56 / 56
-- 系列: 62 / 62
-- current値あり: 61系列
-- current値欠損: 1系列
-- 実施計画由来の進捗目標: 29系列
+- 指標行: 56
+- 系列: 62
+- current値あり / 欠損: 61 / 1
+- 実施計画由来の進捗目標: 29
 - 再掲行: 2
 - 目標改定行: 1
-- 独自の政策達成評価: 0件
 
-全baseline/current/target値を系列ID、期間、原文値、解析値、source status、単位、集計範囲、演算子、方向性、比較注意事項付きで保持します。
+#### 大阪府 — complete
 
-正本:
+- 指標行: 83
+- 系列: 91
+- Linked / Partial: 77 / 6
+- current値あり / 欠損: 85 / 6
+- 明示的target: 1
 
-- `data/catalog/phase11_aichi_normalization.json`
-- `schemas/phase11_aichi_normalization.schema.json`
-- `scripts/normalize_phase11_aichi.py`
-- `tests/test_phase11_aichi_normalization.py`
+2040年代の経済目標1件と初回調査前の5件をPartialとして保持し、旧ビジョン系列と事業一覧を自動接続しません。
 
-#### 大阪府
+#### 広島県 — complete
 
-Status: `complete`
-
-- 指標行: 83 / 83
-- 系列: 91 / 91
-- Linked: 77
-- Partial: 6
-- current値あり: 85系列
-- current値欠損: 6系列
-- 明示的target: 1系列
-- 独自の政策達成評価: 0件
-
-2040年代の経済目標1件と初回調査前の5件をPartialとして保持します。旧ビジョン実績系列と令和8年度事業一覧は自動接続しません。
-
-正本:
-
-- `data/catalog/phase11_osaka_normalization.json`
-- `schemas/phase11_osaka_normalization.schema.json`
-- `scripts/normalize_phase11_osaka.py`
-- `tests/test_phase11_osaka_normalization.py`
-
-#### 広島県
-
-Status: `complete`
-
-改定版ビジョンの3分割カタログを横断し、62指標を全件正規化しました。
-
-- 指標: 62 / 62
-- Linked: 59
-- Partial: 3
-- Not linked: 0
+- 指標: 62
+- Linked / Partial: 59 / 3
 - 政策分野: 17
 - 測定待ち: 3
 - 定性目標: 1
-- 独自の政策達成評価: 0件
 
-複数系列、全国比較値、平均期間、概数、減少方向、定性条件を含み得るセルを推測で分解せず、基準値・現状値・目標値・目標年度・変更区分・出典・Evidence ID・ページを原文のまま保持します。指標006〜008は現状値が新規調査予定のためPartialです。
+複合セルを推測で分解せず、基準値・現状値・目標値・目標年度・変更区分・出典・Evidence ID・ページを原文のまま保持します。
+
+#### 香川県 — complete
+
+- 固有指標: 135
+- Linked: 135
+- 表示箇所: 141
+- 再掲指標: 6
+- R7→R8目標改定: 87
+- 同値目標版: 48
+
+現状値、R7目標、延長後R8目標を別Measurementとして保持します。訂正値、複数系列、累積期間、参考目標を原文のまま残し、再掲を別指標として重複計上しません。
 
 正本:
 
-- `data/catalog/phase11_hiroshima_normalization.json`
-- `schemas/phase11_hiroshima_normalization.schema.json`
-- `scripts/normalize_phase11_hiroshima.py`
-- `tests/test_phase11_hiroshima_normalization.py`
+- `data/catalog/phase11_kagawa_normalization.json`
+- `schemas/phase11_kagawa_normalization.schema.json`
+- `scripts/normalize_phase11_kagawa.py`
+- `tests/test_phase11_kagawa_normalization.py`
 
 #### Wave 2 progress
 
-- 完了地域拠点: 3 / 5
-- 正規化済み行: 201
-- 正規化済み系列: 215
-- current値あり: 205系列
+- 完了地域拠点: 4 / 5
+- 正規化済み行: 336
+- 正規化済み系列: 350
+- current値あり: 340系列
 - current値欠損: 10系列
-- 進捗目標または明示的target: 92系列
-- 次の対象: 香川県
+- 進捗目標または明示的target: 227系列
+- 次の対象: 沖縄県
 
-香川県は135固有指標、141表示箇所、再掲6件、R7からR8への目標改定87件、訂正値、累積期間、参考目標を保持して正規化します。
+沖縄県は主要36・成果339、合計375指標を最大到達深度として正規化します。現在の正本は計画基準値とR9目標であり、Reviewed年度実績ではないため、375件をPartialとして保持し、年次実績を捏造しません。
 
 ### Wave 3 — Nationwide minimum record depth
 
