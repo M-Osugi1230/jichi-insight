@@ -79,75 +79,6 @@ Canonical completion controls:
 - `linked`, `partial`, and `not_linked` without automatic promotion;
 - `not_assessed` and comparison exclusion.
 
-## Hokkaido normalization
-
-All 108 records are normalized.
-
-- Linked: 90
-- Partial: 18
-- Not linked: 0
-
-The 18 partial records retain target-version, unit-scale, definition/numbering, and component-structure reasons.
-
-Files:
-
-- `data/catalog/phase11_hokkaido_normalization.json`
-- `scripts/normalize_phase11_hokkaido.py`
-- `tests/test_phase11_hokkaido_normalization.py`
-
-## Miyagi normalization
-
-All 627 budget-project records are normalized.
-
-- Linked: 238
-- Partial: 26
-- Not linked: 363
-
-FY2026 budget and FY2024 settlement remain separate measurements. Candidate matches are retained without promotion, and records absent from the settlement source remain explicitly not linked.
-
-Files:
-
-- `data/catalog/phase11_miyagi_normalization.json`
-- `scripts/normalize_phase11_miyagi.py`
-- `tests/test_phase11_miyagi_normalization.py`
-
-## Tokyo normalization
-
-All eight children-policy target groups are normalized.
-
-- Linked target groups: 6
-- Linked series: 7
-- Partial target groups: 2
-
-The two partial records retain both official-source sides. Neither official document overwrites the other, and missing catalog values remain `null`.
-
-Files:
-
-- `data/catalog/phase11_tokyo_normalization.json`
-- `scripts/normalize_phase11_tokyo.py`
-- `tests/test_phase11_tokyo_normalization.py`
-
-## Fukuoka normalization
-
-All 118 target-actual records are normalized and resolved against all 26 canonical policy-target catalogs.
-
-- Linked: 86
-- Partial: 12
-- Not linked: 20
-
-Each record preserves the canonical plan baseline and target separately from the annual report's initial value, reported target, and annual actual.
-
-- Linked records use the same target definition and retain the reported actual.
-- Partial records retain the revised annual-report target and raw actual as `available_raw_only`; the revised target does not overwrite the canonical plan target.
-- Not-linked records retain their canonical targets while the missing annual-report row remains explicit with no invented page or value.
-- Ten reviewed aliases retain the official source indicator name and review note.
-
-Files:
-
-- `data/catalog/phase11_fukuoka_normalization.json`
-- `scripts/normalize_phase11_fukuoka.py`
-- `tests/test_phase11_fukuoka_normalization.py`
-
 ## Wave 2 active — Remaining regional anchors
 
 Targets:
@@ -160,8 +91,6 @@ Targets:
 
 ### Aichi normalization complete
 
-The official Aichi Vision page was rechecked on 2026-08-02. The newest listed annual report remains `あいちレポート2025`, published on the page updated 2026-03-30. The repository source therefore remains the latest official annual report available for this implementation.
-
 All 56 reviewed indicator rows and all 62 series are normalized.
 
 - Current-value series available: 61
@@ -171,11 +100,8 @@ All 56 reviewed indicator rows and all 62 series are normalized.
 - Repost rows: 2
 - Rows with a 2025 target revision: 1
 - Policy-achievement assessments: 0
-- Ranking-eligible records: 0
 
-One row may contain several series, and one series may contain several baseline years. The normalizer keeps every original value separately with its role, period, raw text, parsed value, source status, unit, aggregation scope, operator, direction, and comparability note. It never compresses these into a single indicator value.
-
-Rows become Partial when a current series is missing or the 2025 report revised the target. Repost rows retain the original Evidence page and the repost page with explicit `is_reprint` states.
+Rows become Partial when a current series is missing or the 2025 report revised the target. Repost rows retain the original Evidence page and the repost page.
 
 Files:
 
@@ -191,17 +117,14 @@ All 83 reviewed `Beyond EXPO 2025` indicator rows and all 91 series are normaliz
 - Strategy target: 1
 - Objective KPIs: 27
 - Subjective and Well-Being indicators: 55
-- Linked rows with complete current observations: 77
+- Linked rows: 77
 - Partial rows: 6
-- Not linked rows: 0
 - Series with current observations: 85
 - Series without current observations: 6
 - Explicit target series: 1
 - Policy-achievement assessments: 0
 
-The one economic target for the 2040s has no current observation in the same indicator row and remains Partial. Five Osaka-original subjective indicators awaiting their first survey also remain Partial with missing current values. No missing observation is filled from another source.
-
-Objective KPIs are current-state observations rather than individual achievement targets. The legacy `将来ビジョン・大阪` series remains a separate lineage, and the FY2026 business list remains not linked because project identity does not establish indicator causality.
+The 2040s economic target and five first-survey-pending indicators remain Partial. The legacy `将来ビジョン・大阪` series remains a separate lineage, and the FY2026 business list remains not linked.
 
 Files:
 
@@ -210,15 +133,39 @@ Files:
 - `scripts/normalize_phase11_osaka.py`
 - `tests/test_phase11_osaka_normalization.py`
 
+### Hiroshima normalization complete
+
+All 62 reviewed indicators from the revised Hiroshima Vision are normalized across the three canonical source files.
+
+- Linked indicators with current observations: 59
+- Partial indicators pending measurement: 3
+- Not linked: 0
+- Policy areas: 17
+- Qualitative target records: 1
+- Policy-achievement assessments: 0
+
+Indicator cells may contain several sub-values, national comparators, average periods, approximate values, decrease semantics, or qualitative conditions. The normalization therefore retains each official baseline, current, target, target period, source, change state, Evidence ID, and PDF page as reviewed raw text instead of inferring a component structure.
+
+Indicators 006, 007, and 008 remain Partial because the revised vision records a future first survey rather than a current observation. Their original text remains visible and their numeric value remains missing. Indicator 042 retains its qualitative nuclear-disarmament target without numeric conversion.
+
+Files:
+
+- `data/catalog/phase11_hiroshima_normalization.json`
+- `schemas/phase11_hiroshima_normalization.schema.json`
+- `scripts/normalize_phase11_hiroshima.py`
+- `tests/test_phase11_hiroshima_normalization.py`
+
 ### Wave 2 progress
 
-- Anchors complete: 2 / 5
-- Records normalized: 139
-- Indicator series normalized: 153
-- Current-value series available: 146
-- Current-value series missing: 7
-- Progress or explicit target series: 30
-- Next anchor: Hiroshima
+- Anchors complete: 3 / 5
+- Records normalized: 201
+- Indicator series normalized: 215
+- Current-value series available: 205
+- Current-value series missing: 10
+- Progress or explicit target series: 92
+- Next anchor: Kagawa
+
+Kagawa will preserve all 135 unique indicators, 141 display occurrences, six reposts, 87 R7-to-R8 target revisions, corrected values, cumulative periods, and reference targets without duplicate promotion.
 
 Each remaining anchor must reach one of two valid states:
 
