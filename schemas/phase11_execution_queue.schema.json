@@ -87,12 +87,17 @@
           "additionalProperties": false,
           "required": [
             "prefectures_complete", "prefectures_remaining",
-            "next_prefecture_code"
+            "records_complete", "reviewed_maximum_depth_records",
+            "linked_records", "partial_records", "next_prefecture_code"
           ],
           "properties": {
-            "prefectures_complete": {"const": 0},
-            "prefectures_remaining": {"const": 38},
-            "next_prefecture_code": {"const": "02"}
+            "prefectures_complete": {"const": 3},
+            "prefectures_remaining": {"const": 35},
+            "records_complete": {"const": 210},
+            "reviewed_maximum_depth_records": {"const": 210},
+            "linked_records": {"const": 0},
+            "partial_records": {"const": 210},
+            "next_prefecture_code": {"const": "06"}
           }
         }
       }
