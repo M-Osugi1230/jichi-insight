@@ -54,7 +54,7 @@
         "All 38 prefectures have at least one linked record or a reviewed maximum-source-depth record.",
         "All records preserve missing, unpublished, partial, and not-assessable states without guessing."
       ],
-      "next_action": "Process Niigata prefecture code 15 next. Normalize all 89 Phase 9 Reviewed statements from one official document and preserve the single registered extraction error as an explicit unresolved boundary rather than silently treating the source as error-free."
+      "next_action": "Process Toyama prefecture code 16 next. Normalize the single Phase 9 Reviewed statement while preserving the new-plan, wellbeing-indicator, and not-yet-published first-evaluation boundaries."
     }
   ],
   "summary": {
@@ -87,13 +87,13 @@
       "reviewed_maximum_depth_records": 375
     },
     "wave3_normalization": {
-      "prefectures_complete": 11,
-      "prefectures_remaining": 27,
-      "records_complete": 3577,
-      "reviewed_maximum_depth_records": 3577,
+      "prefectures_complete": 12,
+      "prefectures_remaining": 26,
+      "records_complete": 3666,
+      "reviewed_maximum_depth_records": 3666,
       "linked_records": 0,
-      "partial_records": 3577,
-      "next_prefecture_code": "15"
+      "partial_records": 3666,
+      "next_prefecture_code": "16"
     }
   },
   "updated_at": "2026-08-02"
