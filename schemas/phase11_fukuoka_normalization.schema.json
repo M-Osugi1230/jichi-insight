@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Phase 11 Fukuoka normalization completion",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "phase",
+    "prefecture_code",
+    "status",
+    "source_catalog",
+    "source_files",
+    "target_catalog_count",
+    "normalizer",
+    "record_schema",
+    "regression_test",
+    "summary",
+    "match_basis_counts",
+    "target_version_counts",
+    "completion_boundary",
+    "updated_at"
+  ],
+  "properties": {
+    "id": {"const": "phase11-fukuoka-normalization"},
+    "phase": {"const": 11},
+    "prefecture_code": {"const": "40"},
+    "status": {"const": "complete"},
+    "source_catalog": {
+      "const": "data/catalog/fukuoka_annual_actual_linkage.json"
+    },
+    "source_files": {
+      "const": [
+        "data/catalog/fukuoka_annual_actual_linkage_part_01.json",
+        "data/catalog/fukuoka_annual_actual_linkage_part_02.json",
+        "data/catalog/fukuoka_annual_actual_linkage_part_03.json",
+        "data/catalog/fukuoka_annual_actual_linkage_part_04.json"
+      ]
+    },
+    "target_catalog_count": {"const": 26},
+    "normalizer": {"const": "scripts/normalize_phase11_fukuoka.py"},
+    "record_schema": {
+      "const": "schemas/phase11_record_linkage.schema.json"
+    },
+    "regression_test": {
+      "const": "tests/test_phase11_fukuoka_normalization.py"
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_count",
+        "linked_record_count",
+        "partial_record_count",
+        "not_linked_record_count",
+        "policy_achievement_assessment_count"
+      ],
+      "properties": {
+        "record_count": {"const": 118},
+        "linked_record_count": {"const": 86},
+        "partial_record_count": {"const": 12},
+        "not_linked_record_count": {"const": 20},
+        "policy_achievement_assessment_count": {"const": 0}
+      }
+    },
+    "match_basis_counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "normalized_indicator_exact",
+        "reviewed_alias",
+        "not_present_in_fy2024_progress_report"
+      ],
+      "properties": {
+        "normalized_indicator_exact": {"const": 88},
+        "reviewed_alias": {"const": 10},
+        "not_present_in_fy2024_progress_report": {"const": 20}
+      }
+    },
+    "target_version_counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "same_target_definition",
+        "revised_target_detected",
+        "source_row_not_found"
+      ],
+      "properties": {
+        "same_target_definition": {"const": 86},
+        "revised_target_detected": {"const": 12},
+        "source_row_not_found": {"const": 20}
+      }
+    },
+    "completion_boundary": {"type": "string", "minLength": 250},
+    "updated_at": {"type": "string", "format": "date"}
+  }
+}

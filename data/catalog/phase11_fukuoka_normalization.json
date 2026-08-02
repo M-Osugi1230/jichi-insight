@@ -1,0 +1,36 @@
+{
+  "id": "phase11-fukuoka-normalization",
+  "phase": 11,
+  "prefecture_code": "40",
+  "status": "complete",
+  "source_catalog": "data/catalog/fukuoka_annual_actual_linkage.json",
+  "source_files": [
+    "data/catalog/fukuoka_annual_actual_linkage_part_01.json",
+    "data/catalog/fukuoka_annual_actual_linkage_part_02.json",
+    "data/catalog/fukuoka_annual_actual_linkage_part_03.json",
+    "data/catalog/fukuoka_annual_actual_linkage_part_04.json"
+  ],
+  "target_catalog_count": 26,
+  "normalizer": "scripts/normalize_phase11_fukuoka.py",
+  "record_schema": "schemas/phase11_record_linkage.schema.json",
+  "regression_test": "tests/test_phase11_fukuoka_normalization.py",
+  "summary": {
+    "record_count": 118,
+    "linked_record_count": 86,
+    "partial_record_count": 12,
+    "not_linked_record_count": 20,
+    "policy_achievement_assessment_count": 0
+  },
+  "match_basis_counts": {
+    "normalized_indicator_exact": 88,
+    "reviewed_alias": 10,
+    "not_present_in_fy2024_progress_report": 20
+  },
+  "target_version_counts": {
+    "same_target_definition": 86,
+    "revised_target_detected": 12,
+    "source_row_not_found": 20
+  },
+  "completion_boundary": "All 118 Fukuoka target-actual records are deterministically transformed into the reusable Phase 11 record shape and resolved against all 26 canonical target catalogs. The 86 linked, 12 revised-target partial, and 20 not-linked judgments remain unchanged. Canonical plan values, report initial and target values, annual actuals, aliases, pages, and missing source rows remain separate. No revised target or missing row is promoted.",
+  "updated_at": "2026-08-02"
+}

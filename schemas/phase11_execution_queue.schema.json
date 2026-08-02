@@ -8,7 +8,7 @@
     "id": {"const": "phase11-record-linkage-execution-queue"},
     "phase": {"const": 11},
     "status": {"const": "in_progress"},
-    "active_wave": {"const": "wave1-reference-implementations"},
+    "active_wave": {"const": "wave2-remaining-regional-anchors"},
     "quality_gate": {
       "type": "array",
       "minItems": 8,
@@ -60,11 +60,11 @@
             "not_linked_complete"
           ],
           "properties": {
-            "prefectures_complete": {"const": 3},
-            "records_complete": {"const": 743},
-            "linked_complete": {"const": 334},
-            "partial_complete": {"const": 46},
-            "not_linked_complete": {"const": 363}
+            "prefectures_complete": {"const": 4},
+            "records_complete": {"const": 861},
+            "linked_complete": {"const": 420},
+            "partial_complete": {"const": 58},
+            "not_linked_complete": {"const": 383}
           }
         }
       }

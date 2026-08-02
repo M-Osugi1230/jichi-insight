@@ -2,7 +2,7 @@
   "id": "phase11-record-linkage-execution-queue",
   "phase": 11,
   "status": "in_progress",
-  "active_wave": "wave1-reference-implementations",
+  "active_wave": "wave2-remaining-regional-anchors",
   "quality_gate": [
     "Confirm the current plan and target version before promoting a relationship.",
     "Match indicator name, definition, unit, population, and component structure.",
@@ -18,7 +18,7 @@
   "waves": [
     {
       "id": "wave1-reference-implementations",
-      "status": "in_progress",
+      "status": "complete",
       "prefecture_codes": ["01", "04", "13", "40"],
       "objective": "Unify the existing Hokkaido, Miyagi, Tokyo, and Fukuoka record-level implementations under one reusable contract without dropping partial or not-linked records.",
       "exit_criteria": [
@@ -27,18 +27,18 @@
         "Every representative common-schema reference resolves to a member of the exhaustive inventory.",
         "Reusable normalizers preserve source-specific values, periods, identifiers, and unresolved boundaries."
       ],
-      "next_action": "Normalize all 118 Fukuoka target-actual records next, preserving 86 linked, 12 revised-target partial, and 20 not-linked records without treating actual values as policy achievement."
+      "next_action": "Maintain the completed 861-record integration gate while source plans and annual reports are updated."
     },
     {
       "id": "wave2-remaining-regional-anchors",
-      "status": "pending",
+      "status": "in_progress",
       "prefecture_codes": ["23", "27", "34", "37", "47"],
       "objective": "Create at least one reviewed record-level Evidence Chain or explicit maximum official-source depth for each remaining regional anchor.",
       "exit_criteria": [
         "Each remaining anchor has a schema-valid record or explicit maximum-depth boundary.",
         "Every promoted link passes the same version, period, organization, and evidence gates."
       ],
-      "next_action": "Start with annual-actual linkage for the anchor whose current plan and annual report share the clearest stable indicator identifiers."
+      "next_action": "Start with Aichi and inventory the current indicator catalog against the latest official progress source before promoting any annual actual."
     },
     {
       "id": "wave3-nationwide-minimum-record-depth",
@@ -70,11 +70,11 @@
       "not_linked": 383
     },
     "wave1_normalization": {
-      "prefectures_complete": 3,
-      "records_complete": 743,
-      "linked_complete": 334,
-      "partial_complete": 46,
-      "not_linked_complete": 363
+      "prefectures_complete": 4,
+      "records_complete": 861,
+      "linked_complete": 420,
+      "partial_complete": 58,
+      "not_linked_complete": 383
     }
   },
   "updated_at": "2026-08-02"

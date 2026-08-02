@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Phase 11 wave 1 completion",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "phase",
+    "wave",
+    "status",
+    "prefecture_codes",
+    "normalizers",
+    "completion_manifests",
+    "record_schema",
+    "integration_test",
+    "summary",
+    "gates",
+    "completion_boundary",
+    "updated_at"
+  ],
+  "properties": {
+    "id": {"const": "phase11-wave1-record-normalization-completion"},
+    "phase": {"const": 11},
+    "wave": {"const": "wave1-reference-implementations"},
+    "status": {"const": "complete"},
+    "prefecture_codes": {"const": ["01", "04", "13", "40"]},
+    "normalizers": {
+      "const": [
+        "scripts/normalize_phase11_hokkaido.py",
+        "scripts/normalize_phase11_miyagi.py",
+        "scripts/normalize_phase11_tokyo.py",
+        "scripts/normalize_phase11_fukuoka.py"
+      ]
+    },
+    "completion_manifests": {
+      "const": [
+        "data/catalog/phase11_hokkaido_normalization.json",
+        "data/catalog/phase11_miyagi_normalization.json",
+        "data/catalog/phase11_tokyo_normalization.json",
+        "data/catalog/phase11_fukuoka_normalization.json"
+      ]
+    },
+    "record_schema": {"const": "schemas/phase11_record_linkage.schema.json"},
+    "integration_test": {"const": "tests/test_phase11_wave1_completion.py"},
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "prefecture_count",
+        "record_count",
+        "linked_record_count",
+        "partial_record_count",
+        "not_linked_record_count",
+        "policy_achievement_assessment_count",
+        "ranking_eligible_record_count"
+      ],
+      "properties": {
+        "prefecture_count": {"const": 4},
+        "record_count": {"const": 861},
+        "linked_record_count": {"const": 420},
+        "partial_record_count": {"const": 58},
+        "not_linked_record_count": {"const": 383},
+        "policy_achievement_assessment_count": {"const": 0},
+        "ranking_eligible_record_count": {"const": 0}
+      }
+    },
+    "gates": {
+      "type": "array",
+      "minItems": 5,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "status", "evidence_path"],
+        "properties": {
+          "id": {"type": "string", "minLength": 5},
+          "status": {"const": "passed"},
+          "evidence_path": {"type": "string", "minLength": 10}
+        }
+      }
+    },
+    "completion_boundary": {"type": "string", "minLength": 260},
+    "updated_at": {"type": "string", "format": "date"}
+  }
+}
