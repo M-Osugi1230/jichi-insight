@@ -26,6 +26,27 @@ EXPECTED_RECORD_COUNTS = {
     "37": 135,
     "47": 375,
 }
+EXPECTED_SERIES_COUNTS = {
+    "23": 62,
+    "27": 91,
+    "34": 62,
+    "37": 135,
+    "47": 375,
+}
+EXPECTED_CURRENT_COUNTS = {
+    "23": 61,
+    "27": 85,
+    "34": 59,
+    "37": 135,
+    "47": 0,
+}
+EXPECTED_TARGET_COUNTS = {
+    "23": 29,
+    "27": 1,
+    "34": 62,
+    "37": 135,
+    "47": 375,
+}
 
 
 def load(path: Path):
@@ -93,6 +114,13 @@ def test_all_five_normalizers_execute_and_record_counts_reconcile():
     assert sum(len(catalog["records"]) for catalog in built.values()) == 711
 
 
+def test_shared_schema_accepts_catalog_and_reviewed_source_registries():
+    schema = load(RECORD_SCHEMA_PATH)
+    assert schema["properties"]["source_registry"]["pattern"] == (
+        r"^data/(catalog|reviewed)/.+\.json$"
+    )
+
+
 def test_all_711_records_validate_against_one_shared_schema():
     validator = Draft202012Validator(
         load(RECORD_SCHEMA_PATH),
@@ -120,19 +148,36 @@ def test_global_ids_source_keys_and_source_registries_are_complete():
 
 
 def test_wave2_series_current_and_target_totals_are_exact():
-    records = all_records()
-    indicator_series = sum(
-        len(record["indicator_context"]["series"])
-        for record in records
-    )
-    current_available = sum(
-        record["indicator_context"]["linked_current_series_count"]
-        for record in records
-    )
-    target_series = sum(
-        record["indicator_context"]["target_series_count"]
-        for record in records
-    )
+    built = catalogs()
+    series_by_prefecture = {
+        code: sum(
+            len(record["indicator_context"]["series"])
+            for record in catalog["records"]
+        )
+        for code, catalog in built.items()
+    }
+    current_by_prefecture = {
+        code: sum(
+            record["indicator_context"]["linked_current_series_count"]
+            for record in catalog["records"]
+        )
+        for code, catalog in built.items()
+    }
+    target_by_prefecture = {
+        code: sum(
+            record["indicator_context"]["target_series_count"]
+            for record in catalog["records"]
+        )
+        for code, catalog in built.items()
+    }
+
+    assert series_by_prefecture == EXPECTED_SERIES_COUNTS
+    assert current_by_prefecture == EXPECTED_CURRENT_COUNTS
+    assert target_by_prefecture == EXPECTED_TARGET_COUNTS
+
+    indicator_series = sum(series_by_prefecture.values())
+    current_available = sum(current_by_prefecture.values())
+    target_series = sum(target_by_prefecture.values())
 
     assert indicator_series == 725
     assert current_available == 340
