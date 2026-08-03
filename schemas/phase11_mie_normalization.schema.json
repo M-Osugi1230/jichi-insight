@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Phase 11 Mie maximum-depth manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id", "phase", "status", "prefecture_code", "source_catalog",
+    "normalizer", "shared_normalizer", "record_schema",
+    "expected_normalization", "source_document_inventory",
+    "source_document_summary", "maximum_depth_rule", "version_boundary",
+    "non_goals", "updated_at"
+  ],
+  "properties": {
+    "id": {"const": "phase11-mie-normalization"},
+    "phase": {"const": 11},
+    "status": {"const": "reviewed_maximum_depth"},
+    "prefecture_code": {"const": "24"},
+    "source_catalog": {"const": "data/reviewed/phase9/24.json"},
+    "normalizer": {"const": "scripts/normalize_phase11_mie.py"},
+    "shared_normalizer": {"const": "scripts/phase11_phase9_raw.py"},
+    "record_schema": {"const": "schemas/phase11_record_linkage.schema.json"},
+    "expected_normalization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_count", "linked_record_count", "partial_record_count",
+        "not_linked_record_count", "indicator_series_count",
+        "source_document_count", "missing_unit_record_count",
+        "annual_actual_available_count", "future_target_available_count",
+        "reviewed_maximum_depth_record_count",
+        "policy_achievement_assessment_count"
+      ],
+      "properties": {
+        "record_count": {"const": 584},
+        "linked_record_count": {"const": 0},
+        "partial_record_count": {"const": 584},
+        "not_linked_record_count": {"const": 0},
+        "indicator_series_count": {"const": 584},
+        "source_document_count": {"const": 4},
+        "missing_unit_record_count": {"const": 36},
+        "annual_actual_available_count": {"const": 0},
+        "future_target_available_count": {"const": 0},
+        "reviewed_maximum_depth_record_count": {"const": 584},
+        "policy_achievement_assessment_count": {"const": 0}
+      }
+    },
+    "source_document_inventory": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {"$ref": "#/$defs/source_document"}
+    },
+    "source_document_summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "registered_documents", "documents_with_reviewed_candidates",
+        "documents_with_canonical_records", "documents_without_canonical_records",
+        "reviewed_candidate_rows", "canonical_records",
+        "unique_canonical_source_hashes", "pdf_table_row_records",
+        "pdf_text_line_records"
+      ],
+      "properties": {
+        "registered_documents": {"const": 6},
+        "documents_with_reviewed_candidates": {"const": 4},
+        "documents_with_canonical_records": {"const": 4},
+        "documents_without_canonical_records": {"const": 2},
+        "reviewed_candidate_rows": {"const": 584},
+        "canonical_records": {"const": 584},
+        "unique_canonical_source_hashes": {"const": 4},
+        "pdf_table_row_records": {"const": 506},
+        "pdf_text_line_records": {"const": 78}
+      }
+    },
+    "maximum_depth_rule": {"type": "string", "minLength": 160},
+    "version_boundary": {"type": "string", "minLength": 160},
+    "non_goals": {
+      "type": "array",
+      "minItems": 4,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 30}
+    },
+    "updated_at": {"type": "string", "format": "date"}
+  },
+  "$defs": {
+    "source_document": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title", "url", "sha256", "reviewed_candidate_rows",
+        "canonical_records", "canonical_status"
+      ],
+      "properties": {
+        "title": {"type": "string", "minLength": 1},
+        "url": {"type": "string", "format": "uri", "pattern": "^https://www\\.pref\\.mie\\.lg\\.jp/"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "reviewed_candidate_rows": {"type": "integer", "minimum": 0},
+        "canonical_records": {"type": "integer", "minimum": 0},
+        "canonical_status": {
+          "enum": ["used", "registered_without_reviewed_record"]
+        }
+      }
+    }
+  }
+}
