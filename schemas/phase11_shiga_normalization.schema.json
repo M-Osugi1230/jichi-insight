@@ -17,7 +17,7 @@
       "type": "object", "additionalProperties": false,
       "required": ["record_count", "linked_record_count", "partial_record_count", "not_linked_record_count", "indicator_series_count", "source_document_count", "missing_unit_record_count", "annual_actual_available_count", "future_target_available_count", "reviewed_maximum_depth_record_count", "policy_achievement_assessment_count"],
       "properties": {
-        "record_count": {"const": 1500}, "linked_record_count": {"const": 0}, "partial_record_count": {"const": 1500}, "not_linked_record_count": {"const": 0}, "indicator_series_count": {"const": 1500}, "source_document_count": {"const": 5}, "missing_unit_record_count": {"const": 272}, "annual_actual_available_count": {"const": 0}, "future_target_available_count": {"const": 0}, "reviewed_maximum_depth_record_count": {"const": 1500}, "policy_achievement_assessment_count": {"const": 0}
+        "record_count": {"const": 1500}, "linked_record_count": {"const": 0}, "partial_record_count": {"const": 1500}, "not_linked_record_count": {"const": 0}, "indicator_series_count": {"const": 1500}, "source_document_count": {"const": 2}, "missing_unit_record_count": {"const": 272}, "annual_actual_available_count": {"const": 0}, "future_target_available_count": {"const": 0}, "reviewed_maximum_depth_record_count": {"const": 1500}, "policy_achievement_assessment_count": {"const": 0}
       }
     },
     "source_document_inventory": {"type": "array", "minItems": 6, "maxItems": 6, "items": {"$ref": "#/$defs/source_document"}},
