@@ -4,7 +4,14 @@ import json
 from collections import Counter
 from pathlib import Path
 
-from scripts.normalize_phase11_gifu import SOURCE_DOCUMENTS
+REGISTERED_SOURCE_URLS = [
+    "https://www.pref.gifu.lg.jp/page/289497.html",
+    "https://www.pref.gifu.lg.jp/page/310761.html",
+    "https://www.pref.gifu.lg.jp/page/376499.html",
+    "https://www.pref.gifu.lg.jp/page/448022.html",
+    "https://www.pref.gifu.lg.jp/uploaded/attachment/452282.pdf",
+    "https://www.pref.gifu.lg.jp/page/426459.html",
+]
 
 
 def test_print_gifu_phase9_summary() -> None:
@@ -32,7 +39,6 @@ def test_print_gifu_phase9_summary() -> None:
             page = (item.get("Location") or {}).get("page")
             page_types[type(page).__name__] += 1
 
-    registered_urls = [item["url"] for item in SOURCE_DOCUMENTS]
     used_urls = {url for url in url_counts if url != "None"}
     summary = {
         "prefecture_code": source.get("prefecture_code"),
@@ -51,11 +57,15 @@ def test_print_gifu_phase9_summary() -> None:
         "source_hash_counts": dict(hash_counts),
         "source_url_counts": dict(url_counts),
         "source_page_types": dict(page_types),
-        "registered_source_urls": registered_urls,
-        "registered_source_documents": len(registered_urls),
-        "registered_sources_with_reviewed_records": [url for url in registered_urls if url in used_urls],
-        "registered_sources_without_reviewed_records": [url for url in registered_urls if url not in used_urls],
-        "unregistered_used_urls": sorted(used_urls - set(registered_urls)),
+        "registered_source_urls": REGISTERED_SOURCE_URLS,
+        "registered_source_documents": len(REGISTERED_SOURCE_URLS),
+        "registered_sources_with_reviewed_records": [
+            url for url in REGISTERED_SOURCE_URLS if url in used_urls
+        ],
+        "registered_sources_without_reviewed_records": [
+            url for url in REGISTERED_SOURCE_URLS if url not in used_urls
+        ],
+        "unregistered_used_urls": sorted(used_urls - set(REGISTERED_SOURCE_URLS)),
         "first_record": records[0],
         "last_record": records[-1],
     }
