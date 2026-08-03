@@ -1,0 +1,51 @@
+{
+  "id": "phase11-kyoto-normalization",
+  "phase": 11,
+  "status": "reviewed_maximum_depth",
+  "prefecture_code": "26",
+  "source_catalog": "data/reviewed/phase9/26.json",
+  "normalizer": "scripts/normalize_phase11_kyoto.py",
+  "shared_normalizer": "scripts/phase11_phase9_raw.py",
+  "record_schema": "schemas/phase11_record_linkage.schema.json",
+  "expected_normalization": {
+    "record_count": 282,
+    "linked_record_count": 0,
+    "partial_record_count": 282,
+    "not_linked_record_count": 0,
+    "indicator_series_count": 282,
+    "source_document_count": 3,
+    "missing_unit_record_count": 9,
+    "annual_actual_available_count": 0,
+    "future_target_available_count": 0,
+    "reviewed_maximum_depth_record_count": 282,
+    "policy_achievement_assessment_count": 0
+  },
+  "source_document_inventory": [
+    {"title":"表紙～37ページ","url":"https://www.pref.kyoto.jp/shinsougoukeikaku/documents/1-39.pdf","sha256":"7820dcda09749bf84e1f8b7e04dbccdc0a3706de01f44d28460eddc7fef5dd2d","reviewed_candidate_rows":7,"canonical_records":7,"canonical_status":"used"},
+    {"title":"169～183ページ","url":"https://www.pref.kyoto.jp/shinsougoukeikaku/documents/169~183.pdf","sha256":"27b8f195164656186fdc3f8a2262189f9e48e169fcdfc660e2be17faa2903057","reviewed_candidate_rows":274,"canonical_records":274,"canonical_status":"used"},
+    {"title":"184～185ページ","url":"https://www.pref.kyoto.jp/shinsougoukeikaku/documents/184~185.pdf","sha256":"2e3a5ae8459de6a4f667c11a8cb249362e4c11c445e464bc57f72261cf5ffe8b","reviewed_candidate_rows":0,"canonical_records":0,"canonical_status":"registered_without_reviewed_record"},
+    {"title":"186ページ","url":"https://www.pref.kyoto.jp/shinsougoukeikaku/documents/186.pdf","sha256":"2c0612bbc4e22f24b00ad08a1ee4c6996b907b69c377ef702de2911051d4b4f4","reviewed_candidate_rows":0,"canonical_records":0,"canonical_status":"registered_without_reviewed_record"},
+    {"title":"317～328ページ","url":"https://www.pref.kyoto.jp/shinsougoukeikaku/documents/317~328.pdf","sha256":"1fb022ba43d01162fd5d3471be1695c84ad36c04050a2cc67adc0caeeacdf47e","reviewed_candidate_rows":1,"canonical_records":1,"canonical_status":"used"},
+    {"title":"61～69ページ","url":"https://www.pref.kyoto.jp/shinsougoukeikaku/documents/61~69.pdf","sha256":"a59c813270b590ffbfa01f7aa95f3fd69454a0eb5f64c57a44f456dc83519023","reviewed_candidate_rows":0,"canonical_records":0,"canonical_status":"registered_without_reviewed_record"}
+  ],
+  "source_document_summary": {
+    "registered_documents": 6,
+    "documents_with_reviewed_candidates": 3,
+    "documents_with_canonical_records": 3,
+    "documents_without_canonical_records": 3,
+    "reviewed_candidate_rows": 282,
+    "canonical_records": 282,
+    "unique_canonical_source_hashes": 3,
+    "pdf_table_row_records": 206,
+    "pdf_text_line_records": 76
+  },
+  "maximum_depth_rule": "All 282 canonical Kyoto Phase 9 Reviewed statements are retained exactly once. Three registered zero-row documents remain explicit and are not filled by inference. Raw mixed statements remain partial until reviewed field-level evidence exists.",
+  "version_boundary": "The future vision, basic plan, regional promotion plans, wide-area collaboration projects, annual implementation reports, and indicators revised through other plans remain separate layers and versions without silent overwrite.",
+  "non_goals": [
+    "Do not fill registered zero-row documents with inferred records.",
+    "Do not merge plan layers or document versions by similar wording.",
+    "Do not split mixed raw statements into inferred annual actual and future target values.",
+    "Do not calculate policy achievement, causality, or cross-prefecture rankings."
+  ],
+  "updated_at": "2026-08-03"
+}
