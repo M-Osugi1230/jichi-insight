@@ -35,7 +35,7 @@ def load_helper(root: Path = ROOT) -> ModuleType:
 
 
 def build_catalog(root: Path = ROOT) -> dict:
-    return load_helper(root).build_raw_catalog(
+    catalog = load_helper(root).build_raw_catalog(
         root,
         prefecture_code="22",
         slug="shizuoka",
@@ -43,6 +43,20 @@ def build_catalog(root: Path = ROOT) -> dict:
         expected_record_count=985,
         boundary=BOUNDARY,
     )
+    source = json.loads(
+        (root / SOURCE_RELATIVE_PATH).read_text(encoding="utf-8")
+    )
+    for normalized, reviewed in zip(
+        catalog["records"], source["records"], strict=True
+    ):
+        note = json.loads(normalized["indicator_context"]["quality_note"])
+        note["plan_history_boundary"] = reviewed["plan_history_boundary"]
+        normalized["indicator_context"]["quality_note"] = json.dumps(
+            note,
+            ensure_ascii=False,
+            sort_keys=True,
+        )
+    return catalog
 
 
 def main() -> None:
