@@ -1,0 +1,68 @@
+{
+  "id": "phase11-shizuoka-normalization",
+  "phase": 11,
+  "status": "reviewed_maximum_depth",
+  "prefecture_code": "22",
+  "source_catalog": "data/reviewed/phase9/22.json",
+  "normalizer": "scripts/normalize_phase11_shizuoka.py",
+  "shared_normalizer": "scripts/phase11_phase9_raw.py",
+  "record_schema": "schemas/phase11_record_linkage.schema.json",
+  "expected_normalization": {
+    "record_count": 985,
+    "linked_record_count": 0,
+    "partial_record_count": 985,
+    "not_linked_record_count": 0,
+    "indicator_series_count": 985,
+    "source_document_count": 2,
+    "missing_unit_record_count": 208,
+    "annual_actual_available_count": 0,
+    "future_target_available_count": 0,
+    "reviewed_maximum_depth_record_count": 985,
+    "policy_achievement_assessment_count": 0
+  },
+  "source_document_inventory": [
+    {
+      "title": "静岡県総合計画～しずおか ウェルビーイングプラン～概要版 （PDF 9.3MB）",
+      "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/054/440/sougoukeikakugaiyou.pdf",
+      "sha256": "e51f4499ab957a1c4a0e76c822e01be3d01c732c39e200babbcfb8698e470542",
+      "extracted_rows": 191,
+      "reviewed_candidate_rows": 2,
+      "canonical_records": 2,
+      "structural_count": 4,
+      "canonical_status": "used"
+    },
+    {
+      "title": "静岡県総合計画～しずおか ウェルビーイングプラン～全体版 （PDF 25.1MB）",
+      "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/054/440/sougoukeikaku2025.3.pdf",
+      "sha256": "f2a79188d07313f25aa7c562d3c980ddf4619ba85730fa06353eb0a3771d1781",
+      "extracted_rows": 8809,
+      "reviewed_candidate_rows": 983,
+      "canonical_records": 983,
+      "structural_count": 126,
+      "canonical_status": "used"
+    }
+  ],
+  "source_document_summary": {
+    "registered_documents": 2,
+    "documents_with_reviewed_candidates": 2,
+    "documents_with_canonical_records": 2,
+    "reviewed_candidate_rows": 985,
+    "canonical_records": 985,
+    "unique_canonical_source_hashes": 2,
+    "pdf_table_row_records": 660,
+    "pdf_text_line_records": 325
+  },
+  "maximum_depth_rule": "All 985 Phase 9 Reviewed statements are retained exactly once. The overview contributes two canonical rows and the full plan contributes 983 canonical rows. Candidate and canonical totals are both 985, but the two official document layers remain separate unless a reviewed crosswalk establishes one indicator series.",
+  "plan_history_boundary": "The 2025-2028 Shizuoka Well-being Plan is the current canonical plan. The 2022-2025 late action plan and progress evaluations in prior white papers are historical sources and are not inherited by the new plan. The first annual evaluation for the current plan remains unpublished.",
+  "raw_statement_boundaries": [
+    "The overview carbon-neutrality sentence contains several numeric tokens and an extracted unit of year. It remains one raw reviewed statement and is not split into seven measurements or promoted to an annual actual or future target.",
+    "The final full-plan record is a glossary line describing 50 subjective well-being questions plus two prefecture-specific questions. It remains glossary text and is not promoted to a KPI score, target, or assessed outcome."
+  ],
+  "non_goals": [
+    "Do not merge overview and full-plan statements into one series without a reviewed definition-level crosswalk.",
+    "Do not inherit prior-plan white-paper progress results into the 2025-2028 current plan.",
+    "Do not parse mixed raw statements into inferred annual actual and future target values.",
+    "Do not calculate policy achievement, causality, or cross-prefecture rankings."
+  ],
+  "updated_at": "2026-08-03"
+}
