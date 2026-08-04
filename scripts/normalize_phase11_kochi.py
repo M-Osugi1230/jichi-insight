@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Normalize all 270 reviewed Kochi Phase 9 statements."""
+"""Normalize all 270 canonical reviewed Kochi Phase 9 statements."""
 
 from __future__ import annotations
 
