@@ -1,0 +1,37 @@
+{
+  "id": "phase11-okayama-normalization",
+  "phase": 11,
+  "status": "reviewed_maximum_depth",
+  "prefecture_code": "33",
+  "source_catalog": "data/reviewed/phase9/33.json",
+  "normalizer": "scripts/normalize_phase11_okayama.py",
+  "shared_normalizer": "scripts/phase11_phase9_raw.py",
+  "record_schema": "schemas/phase11_record_linkage.schema.json",
+  "expected_normalization": {
+    "record_count": 343,
+    "linked_record_count": 0,
+    "partial_record_count": 343,
+    "not_linked_record_count": 0,
+    "indicator_series_count": 343,
+    "annual_actual_available_count": 0,
+    "future_target_available_count": 0,
+    "reviewed_maximum_depth_record_count": 343,
+    "policy_achievement_assessment_count": 0
+  },
+  "document_boundary": {
+    "registered_document_count": 5,
+    "document_reviewed_row_counts": [30, 91, 0, 216, 6],
+    "document_reviewed_row_total": 343,
+    "canonical_record_count": 343,
+    "documents_with_zero_reviewed_rows": 1
+  },
+  "maximum_depth_rule": "All 343 canonical Phase 9 Reviewed statements are retained exactly once. Counts from the full plan, individual-plan hierarchy, booklet, and leaflet are not reinterpreted as independent comparable KPI inventories.",
+  "version_boundary": "The fiscal 2025 to 2028 fourth plan, the third-plan administrative evaluation, Ikiiki indicators, resident satisfaction, and regional revitalization KPIs remain separate versions and analytical layers.",
+  "non_goals": [
+    "Do not infer records from the registered contact-list document with zero reviewed rows.",
+    "Do not collapse possible repeated plan expressions across document editions.",
+    "Do not convert resident satisfaction into a policy achievement rate.",
+    "Do not calculate policy achievement, causality, or cross-prefecture ranking."
+  ],
+  "updated_at": "2026-08-04"
+}
