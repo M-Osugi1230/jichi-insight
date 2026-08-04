@@ -1,0 +1,38 @@
+{
+  "id": "phase11-tokushima-normalization",
+  "phase": 11,
+  "status": "reviewed_maximum_depth",
+  "prefecture_code": "36",
+  "source_catalog": "data/reviewed/phase9/36.json",
+  "normalizer": "scripts/normalize_phase11_tokushima.py",
+  "shared_normalizer": "scripts/phase11_phase9_raw.py",
+  "record_schema": "schemas/phase11_record_linkage.schema.json",
+  "expected_normalization": {
+    "record_count": 426,
+    "linked_record_count": 0,
+    "partial_record_count": 426,
+    "not_linked_record_count": 0,
+    "indicator_series_count": 426,
+    "annual_actual_available_count": 0,
+    "future_target_available_count": 0,
+    "reviewed_maximum_depth_record_count": 426,
+    "policy_achievement_assessment_count": 0
+  },
+  "document_boundary": {
+    "registered_document_count": 5,
+    "landing_selected_document_count": 6,
+    "document_reviewed_row_counts": [0, 132, 112, 179, 3],
+    "document_reviewed_row_total": 426,
+    "canonical_record_count": 426,
+    "documents_with_zero_reviewed_rows": 1
+  },
+  "maximum_depth_rule": "All 426 canonical Phase 9 Reviewed statements are retained exactly once with their registered document, PDF location, raw text, tokens, unit, scope, operator, and unresolved comparability boundary.",
+  "version_boundary": "The fiscal 2024 to 2028 plan, annual revisions, overview and full editions, responsibility lists, 93 KPI layer, annual progress evaluation, and prior regional revitalization strategy remain separate versions and layers.",
+  "non_goals": [
+    "Do not infer records from the fiscal 2024 overview document with zero reviewed rows.",
+    "Do not treat overview and full-edition repetitions as independently achieved outcomes.",
+    "Do not promote responsibility lists, plan structure, or SDG correspondence into verified outcomes.",
+    "Do not calculate policy achievement, causality, or cross-prefecture ranking."
+  ],
+  "updated_at": "2026-08-04"
+}
