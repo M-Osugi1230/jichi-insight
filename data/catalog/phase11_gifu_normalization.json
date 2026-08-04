@@ -1,0 +1,38 @@
+{
+  "id": "phase11-gifu-normalization",
+  "phase": 11,
+  "status": "reviewed_maximum_depth",
+  "prefecture_code": "21",
+  "source_catalog": "data/reviewed/phase9/21.json",
+  "normalizer": "scripts/normalize_phase11_gifu.py",
+  "shared_normalizer": "scripts/phase11_phase9_raw.py",
+  "record_schema": "schemas/phase11_record_linkage.schema.json",
+  "expected_normalization": {
+    "record_count": 1500,
+    "linked_record_count": 0,
+    "partial_record_count": 1500,
+    "not_linked_record_count": 0,
+    "indicator_series_count": 1500,
+    "annual_actual_available_count": 0,
+    "future_target_available_count": 0,
+    "reviewed_maximum_depth_record_count": 1500,
+    "policy_achievement_assessment_count": 0
+  },
+  "document_boundary": {
+    "registered_document_count": 6,
+    "canonical_record_count": 1500
+  },
+  "maximum_depth_rule": "All 1,500 canonical Phase 9 Reviewed statements remain raw maximum-depth records until strategy, policy, measure, KPI, implementation, annual-progress, and evaluation layers can be mapped through reviewed table-level evidence.",
+  "hierarchy_boundary": "Strategy, policy and measure hierarchy, KPI definitions, implementation plans, project evaluations, and annual progress remain separate source roles until their identifiers and responsibility layers are verified.",
+  "evaluation_boundary": "Official evaluation labels and progress descriptions remain source classifications. Missing, unknown, qualitative, or non-assessed values are not converted to failure, zero, or an achievement judgment.",
+  "series_boundary": "Current, baseline, target, annual actual, cumulative, reference, national, budget, settlement, and project-cost values remain separate until definitions, units, periods, populations, and organizations are reviewed.",
+  "non_goals": [
+    "Do not merge records across the six official documents by similar wording alone.",
+    "Do not infer missing units, reporting years, populations, or responsible organizations.",
+    "Do not convert plan values or baselines into annual actuals.",
+    "Do not convert targets or reference values into comparable time series.",
+    "Do not interpret qualitative evaluations as numeric achievement rates.",
+    "Do not calculate policy causality or cross-prefecture ranking."
+  ],
+  "updated_at": "2026-08-04"
+}
