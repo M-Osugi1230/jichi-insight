@@ -35,7 +35,10 @@ def test_manifest_source_and_phase9_summary_reconcile() -> None:
     assert source["reviewed_target_statement_count"] == 343
     assert source["evidence_packet_count"] == 343
     assert manifest["expected_normalization"]["record_count"] == 343
-    assert [document["reviewed_row_count"] for document in source["documents"]] == [30, 91, 0, 216, 6]
+    reviewed_rows = [
+        document["reviewed_row_count"] for document in source["documents"]
+    ]
+    assert reviewed_rows == [30, 91, 0, 216, 6]
 
 
 def test_all_343_records_validate_and_preserve_sequence() -> None:
