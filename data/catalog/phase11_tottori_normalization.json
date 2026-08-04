@@ -1,0 +1,36 @@
+{
+  "id": "phase11-tottori-normalization",
+  "phase": 11,
+  "status": "reviewed_maximum_depth",
+  "prefecture_code": "31",
+  "source_catalog": "data/reviewed/phase9/31.json",
+  "normalizer": "scripts/normalize_phase11_tottori.py",
+  "shared_normalizer": "scripts/phase11_phase9_raw.py",
+  "record_schema": "schemas/phase11_record_linkage.schema.json",
+  "expected_normalization": {
+    "record_count": 91,
+    "linked_record_count": 0,
+    "partial_record_count": 91,
+    "not_linked_record_count": 0,
+    "indicator_series_count": 91,
+    "annual_actual_available_count": 0,
+    "future_target_available_count": 0,
+    "reviewed_maximum_depth_record_count": 91,
+    "policy_achievement_assessment_count": 0
+  },
+  "document_boundary": {
+    "registered_document_count": 2,
+    "document_reviewed_row_counts": [4, 87],
+    "document_reviewed_row_total": 91,
+    "canonical_record_count": 91
+  },
+  "maximum_depth_rule": "All 91 canonical Phase 9 Reviewed statements are retained exactly once with their source document, version, PDF location, raw text, tokens, unit, scope, and unresolved comparability boundary.",
+  "version_boundary": "The 2024 to 2027 strategy, the prior 2020 to 2023 strategy, and the integrated Society 5.0 plan remain separate versions and roles. Prior results are not attached automatically to current strategy targets.",
+  "non_goals": [
+    "Do not promote contents, explanatory text, or SDGs references into structured KPI values.",
+    "Do not split mixed baseline and target statements without reviewed field-level mappings.",
+    "Do not attach prior-strategy results to the current strategy automatically.",
+    "Do not calculate policy achievement, causality, or cross-prefecture ranking."
+  ],
+  "updated_at": "2026-08-04"
+}
