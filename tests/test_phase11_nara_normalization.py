@@ -48,7 +48,8 @@ def test_manifest_and_phase9_source_reconcile():
     assert source["evidence_packet_count"] == 59
     assert len(source["documents"]) == 1
     assert source["documents"][0]["reviewed_row_count"] == 59
-    assert source["landing_audit"]["selected_document_count"] == 1
+    assert source["landing_audit"]["landing_status_code"] == 200
+    assert source["landing_audit"]["landing_content_type"] == "application/pdf"
     assert summary["reviewed_target_statement_count"] == 59
     assert summary["evidence_packet_count"] == 59
     assert summary["document_count"] == 1
