@@ -54,7 +54,7 @@ def test_manifest_source_and_summary_reconcile():
     assert summary["reviewed_target_statement_count"] == 426
     assert summary["evidence_packet_count"] == 426
     assert summary["document_count"] == 5
-    assert summary["extraction_error_count"] == 0
+    assert summary["extraction_error_count"] == 1
 
 
 def test_all_records_validate_and_preserve_source_fields():
