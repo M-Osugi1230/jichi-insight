@@ -1,0 +1,38 @@
+{
+  "id": "phase11-ehime-normalization",
+  "phase": 11,
+  "status": "reviewed_maximum_depth",
+  "prefecture_code": "38",
+  "source_catalog": "data/reviewed/phase9/38.json",
+  "normalizer": "scripts/normalize_phase11_ehime.py",
+  "shared_normalizer": "scripts/phase11_phase9_raw.py",
+  "record_schema": "schemas/phase11_record_linkage.schema.json",
+  "expected_normalization": {
+    "record_count": 20,
+    "linked_record_count": 0,
+    "partial_record_count": 20,
+    "not_linked_record_count": 0,
+    "indicator_series_count": 20,
+    "annual_actual_available_count": 0,
+    "future_target_available_count": 0,
+    "reviewed_maximum_depth_record_count": 20,
+    "policy_achievement_assessment_count": 0
+  },
+  "document_boundary": {
+    "registered_document_count": 5,
+    "landing_selected_document_count": 6,
+    "document_reviewed_row_counts": [8, 4, 3, 5, 0],
+    "document_reviewed_row_total": 20,
+    "canonical_record_count": 20,
+    "documents_with_zero_reviewed_rows": 1
+  },
+  "maximum_depth_rule": "All 20 canonical Phase 9 Reviewed statements are retained exactly once with their registered document, PDF location, raw text, tokens, unit, scope, operator, and unresolved comparability boundary.",
+  "version_boundary": "The 2023 to 2026 plan, fiscal 2024 and fiscal 2025 KGI revisions, upward revisions, additions, partial reviews, overview pamphlet, annual reporting, and resident sentiment remain separate versions and layers.",
+  "non_goals": [
+    "Do not infer records from the overview pamphlet document with zero reviewed rows.",
+    "Do not merge fiscal 2024 and fiscal 2025 revisions into one unreviewed value series.",
+    "Do not convert national rank, prior value, revised value, or revision rationale into verified annual outcomes.",
+    "Do not calculate policy achievement, causality, or cross-prefecture ranking."
+  ],
+  "updated_at": "2026-08-05"
+}
