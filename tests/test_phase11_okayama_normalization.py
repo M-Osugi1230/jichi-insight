@@ -41,9 +41,14 @@ def test_manifest_source_and_phase9_summary_reconcile() -> None:
 def test_all_343_records_validate_and_preserve_sequence() -> None:
     source = load_json(SOURCE_PATH)
     catalog = load_script().build_catalog()
-    validator = Draft202012Validator(load_json(RECORD_SCHEMA_PATH), format_checker=FormatChecker())
+    validator = Draft202012Validator(
+        load_json(RECORD_SCHEMA_PATH), format_checker=FormatChecker()
+    )
     assert len(catalog["records"]) == 343
     assert [record["display_order"] for record in source["records"]] == list(range(1, 344))
+    assert [record["subject"]["sequence"] for record in catalog["records"]] == list(
+        range(1, 344)
+    )
     assert [record["source_record_id"] for record in catalog["records"]] == [
         record["id"] for record in source["records"]
     ]
@@ -55,38 +60,58 @@ def test_every_source_field_and_evidence_location_are_retained() -> None:
     source = load_json(SOURCE_PATH)
     catalog = load_script().build_catalog()
     for raw, normalized in zip(source["records"], catalog["records"], strict=True):
-        note = normalized["quality_note"]
-        assert raw["indicator_name_original"] in note
-        assert raw["target_statement_original"] in note
-        assert raw["source_document_url"] in note
-        assert raw["source_document_sha256"] in note
-        assert json.dumps(raw["source_location"], ensure_ascii=False, sort_keys=True) in note
-        assert raw["numeric_tokens_original"] == normalized["source_numeric_tokens"]
-        assert raw["period_tokens_original"] == normalized["source_period_tokens"]
+        note = json.loads(normalized["indicator_context"]["quality_note"])
+        plan = next(
+            item for item in normalized["measurements"] if item["role"] == "plan_current"
+        )
+        assert plan["value_text"] == raw["target_statement_original"]
+        for field in (
+            "source_document_url",
+            "source_document_sha256",
+            "source_location",
+            "numeric_tokens_original",
+            "period_tokens_original",
+            "matched_keywords",
+            "keyword_match_kind",
+            "unit_original",
+            "population_scope_original",
+            "aggregation_scope",
+            "target_operator",
+            "comparability",
+        ):
+            assert note[field] == raw[field]
 
 
 def test_document_layers_and_zero_row_document_remain_explicit() -> None:
     source = load_json(SOURCE_PATH)
     catalog = load_script().build_catalog()
-    counts = Counter(record["source_document_url"] for record in source["records"])
+    counts = Counter(record["source_document_sha256"] for record in source["records"])
     assert sorted(counts.values()) == [6, 30, 91, 216]
-    assert sum(document["reviewed_row_count"] == 0 for document in source["documents"]) == 1
-    assert catalog["summary"]["record_count"] == 343
-    assert "0行状態" in catalog["normalization_boundary"]
-    assert "一度だけ正規化" in catalog["normalization_boundary"]
+    assert source["documents"][2]["reviewed_row_count"] == 0
+    assert source["documents"][2]["sha256"] not in counts
+    for record in catalog["records"]:
+        assert "全文30行" in record["boundary"]
+        assert "個別計画体系91行" in record["boundary"]
+        assert "冊子216行" in record["boundary"]
+        assert "リーフレット6行" in record["boundary"]
+        assert "問い合わせ先資料の0行状態" in record["boundary"]
+        assert "正本343件を一度だけ正規化" in record["boundary"]
 
 
 def test_records_remain_partial_unassessed_and_noncomparable() -> None:
-    catalog = load_script().build_catalog()
-    assert all(record["linkage_status"] == "partial" for record in catalog["records"])
-    assert all(record["policy_achievement_assessment_status"] == "not_assessed" for record in catalog["records"])
-    assert all(record["ranking_eligibility"] == "excluded_until_comparability_verified" for record in catalog["records"])
-    assert all(record["annual_actual"] is None for record in catalog["records"])
-    assert all(record["future_target"] is None for record in catalog["records"])
+    for record in load_script().build_catalog()["records"]:
+        assert record["linkage_status"] == "partial"
+        assert record["partial_reason"] == "structured_actual_and_target_not_reviewed"
+        assert record["evaluation_status"] == "not_assessed"
+        assert record["comparability_status"] == "excluded_until_verified"
+        by_role = {item["role"]: item for item in record["measurements"]}
+        assert by_role["annual_actual"]["status"] == "not_available"
+        assert by_role["final_target"]["status"] == "not_available"
 
 
 def test_dynamic_counts_and_determinism_are_exact() -> None:
     module = load_script()
+    source_records = load_json(SOURCE_PATH)["records"]
     first = module.build_catalog()
     second = module.build_catalog()
     assert first == second
@@ -96,6 +121,12 @@ def test_dynamic_counts_and_determinism_are_exact() -> None:
         "partial_record_count": 343,
         "not_linked_record_count": 0,
         "indicator_series_count": 343,
+        "source_document_count": len(
+            {record["source_document_title"] for record in source_records}
+        ),
+        "missing_unit_record_count": sum(
+            record["unit_original"] is None for record in source_records
+        ),
         "annual_actual_available_count": 0,
         "future_target_available_count": 0,
         "reviewed_maximum_depth_record_count": 343,
