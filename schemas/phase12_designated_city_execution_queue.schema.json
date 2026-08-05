@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Phase 12 designated city execution queue",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "phase", "status", "scope", "quality_gate", "reference_implementations", "execution_queue", "summary", "updated_at"],
+  "properties": {
+    "id": {"const": "phase12-designated-city-execution-queue"},
+    "phase": {"const": 12},
+    "status": {"const": "in_progress"},
+    "scope": {"const": "designated_cities"},
+    "quality_gate": {"type": "array", "minItems": 9, "uniqueItems": true, "items": {"type": "string", "minLength": 40}},
+    "reference_implementations": {
+      "type": "array", "minItems": 2, "maxItems": 2,
+      "items": {"$ref": "#/$defs/reference"}
+    },
+    "execution_queue": {
+      "type": "array", "minItems": 18, "maxItems": 18,
+      "items": {"$ref": "#/$defs/queuedCity"}
+    },
+    "summary": {
+      "type": "object", "additionalProperties": false,
+      "required": ["designated_city_count", "reference_implementation_count", "queued_city_count", "reviewed_city_count", "pending_city_count", "next_official_code"],
+      "properties": {
+        "designated_city_count": {"const": 20},
+        "reference_implementation_count": {"const": 2},
+        "queued_city_count": {"const": 18},
+        "reviewed_city_count": {"const": 2},
+        "pending_city_count": {"const": 18},
+        "next_official_code": {"const": "011002"}
+      }
+    },
+    "updated_at": {"const": "2026-08-06", "format": "date"}
+  },
+  "$defs": {
+    "reference": {
+      "type": "object", "additionalProperties": false,
+      "required": ["official_code", "name_ja", "prefecture_name_ja", "status", "municipality_path", "reviewed_data_path", "next_action"],
+      "properties": {
+        "official_code": {"type": "string", "pattern": "^[0-9]{6}$"},
+        "name_ja": {"type": "string", "minLength": 2},
+        "prefecture_name_ja": {"type": "string", "minLength": 3},
+        "status": {"const": "reviewed_reference"},
+        "municipality_path": {"type": "string", "pattern": "^data/reviewed/.+/municipality\\.json$"},
+        "reviewed_data_path": {"type": "string", "pattern": "^data/reviewed/.+$"},
+        "next_action": {"type": "string", "minLength": 40}
+      }
+    },
+    "queuedCity": {
+      "type": "object", "additionalProperties": false,
+      "required": ["sequence", "official_code", "name_ja", "prefecture_name_ja", "status"],
+      "properties": {
+        "sequence": {"type": "integer", "minimum": 1, "maximum": 18},
+        "official_code": {"type": "string", "pattern": "^[0-9]{6}$"},
+        "name_ja": {"type": "string", "minLength": 2},
+        "prefecture_name_ja": {"type": "string", "minLength": 3},
+        "status": {"const": "pending_source_inventory"}
+      }
+    }
+  }
+}
