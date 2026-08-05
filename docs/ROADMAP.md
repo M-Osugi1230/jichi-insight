@@ -39,9 +39,18 @@ Status: `complete`（2026-08-01）
 
 ## Phase 11 — Nationwide record-level linkage
 
-Status: `in_progress`（2026-08-02開始）
+Status: `complete`（2026-08-05）
 
-文書スコープから、個別の政策目標、年度実績、予算、決算、重点事業、契約、監査、議会、公約を一対一で追跡できる個票スコープへ進みます。公式資料が不足する場合は、最大到達深度と不足条件をReviewedとして固定します。
+47都道府県すべてを、共通Schemaを通るReviewed個票接続または公式資料上の最大到達深度へ引き上げました。全15,327レコードについて、一次資料、Evidence位置、版、期間、単位、母集団、欠損・未接続境界を保持しています。
+
+- Wave 1: 4都道府県、861レコード
+- Wave 2: 5都道府県、711レコード
+- Wave 3: 38都道府県、13,755レコード
+- 合計: 47都道府県、15,327レコード
+- 独自の政策達成評価: 0
+- 比較対象への自動昇格: 0
+
+Phase 11完了は、すべての個票が目標・実績・予算・決算・事業・契約・監査・議会・公約まで完全接続されたことを意味しません。公式資料が不足する個票はPartialまたはNot linkedとして残し、推測で補完していません。
 
 ### Wave 1 — Reference implementations
 
@@ -63,21 +72,8 @@ Status: `complete`
 
 Status: `complete`
 
-愛知県、大阪府、広島県、香川県、沖縄県の5拠点を完了しました。
+愛知県、大阪府、広島県、香川県、沖縄県の5拠点、711レコード、725指標系列を完了しました。
 
-| 都道府県 | レコード | 到達状態 |
-|---|---:|---|
-| 愛知県 | 56 | 62系列、current値61系列、欠損1系列 |
-| 大阪府 | 83 | Linked 77、Partial 6 |
-| 広島県 | 62 | Linked 59、測定待ちPartial 3 |
-| 香川県 | 135 | 135 Linked、141表示箇所、目標改定87 |
-| 沖縄県 | 375 | 計画基準値→R9目標の最大深度、全件Partial |
-
-Wave 2統合値:
-
-- 完了拠点: 5 / 5
-- レコード: 711
-- 指標系列: 725
 - current値あり: 340系列
 - current値欠損・未接続: 385系列
 - 進捗目標または明示的target: 602系列
@@ -92,20 +88,25 @@ Wave 2統合値:
 - `data/catalog/phase11_wave2_completion.json`
 - `schemas/phase11_wave2_completion.schema.json`
 - `tests/test_phase11_wave2_completion.py`
-- `data/catalog/phase11_okinawa_normalization.json`
 
 ### Wave 3 — Nationwide minimum record depth
 
-Status: `in_progress`
+Status: `complete`
 
-残る38県を都道府県コード順に処理します。最初は青森県（02）、次に岩手県（03）です。
+残る38県、13,755レコードを都道府県コード順に処理しました。全件が共通Schemaと同じEvidence・欠損状態・非評価境界を通過する設計です。
 
-各県は必ず次のいずれかへ到達させます。
+- 完了県: 38 / 38
+- Reviewed最大到達深度: 13,755レコード
+- Linkedへ推測昇格したレコード: 0
+- Partial: 13,755
+- 政策達成・因果関係・全国比較の独自判定: 0
 
-1. 共通Schemaを通るReviewed個票接続
-2. 深い接続を支える公式資料が不足する場合のReviewed最大到達深度
+正本:
 
-同じ件数ではなく、同じ昇格条件・Evidence水準・欠損状態の扱いを要求します。未公開、未確認、Partial、not assessableを推測で埋めません。
+- `data/catalog/phase11_execution_queue.json`
+- `data/catalog/phase11_completion.json`
+- `schemas/phase11_completion.schema.json`
+- `tests/test_phase11_completion.py`
 
 ## After Phase 11
 

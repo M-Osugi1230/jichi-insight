@@ -1,7 +1,7 @@
 {
   "id": "phase11-record-linkage-execution-queue",
   "phase": 11,
-  "status": "in_progress",
+  "status": "complete",
   "active_wave": "wave3-nationwide-minimum-record-depth",
   "quality_gate": [
     "Confirm the current plan and target version before promoting a relationship.",
@@ -42,7 +42,7 @@
     },
     {
       "id": "wave3-nationwide-minimum-record-depth",
-      "status": "in_progress",
+      "status": "complete",
       "prefecture_codes": [
         "02", "03", "05", "06", "07", "08", "09", "10", "11", "12", "14",
         "15", "16", "17", "18", "19", "20", "21", "22", "24", "25", "26",
@@ -54,7 +54,7 @@
         "All 38 prefectures have at least one linked record or a reviewed maximum-source-depth record.",
         "All records preserve missing, unpublished, partial, and not-assessable states without guessing."
       ],
-      "next_action": "Process Kochi prefecture code 39 next. Normalize all Phase 9 Reviewed statements while preserving official document versions, source locations, and unresolved evaluation boundaries."
+      "next_action": "Maintain all 38 completed prefecture gates, run the nationwide completion audit, and proceed to designated cities without weakening the Phase 11 evidence boundary."
     }
   ],
   "summary": {
@@ -66,13 +66,13 @@
     "wave1_normalization": {"prefectures_complete": 4, "records_complete": 861, "linked_complete": 420, "partial_complete": 58, "not_linked_complete": 383},
     "wave2_normalization": {"anchors_complete": 5, "anchors_remaining": 0, "records_complete": 711, "indicator_series_complete": 725, "linked_current_series": 340, "missing_or_unavailable_current_series": 385, "target_series": 602, "reviewed_maximum_depth_records": 375},
     "wave3_normalization": {
-      "prefectures_complete": 31,
-      "prefectures_remaining": 7,
-      "records_complete": 11236,
-      "reviewed_maximum_depth_records": 11236,
+      "prefectures_complete": 38,
+      "prefectures_remaining": 0,
+      "records_complete": 13755,
+      "reviewed_maximum_depth_records": 13755,
       "linked_records": 0,
-      "partial_records": 11236,
-      "next_prefecture_code": "39"
+      "partial_records": 13755,
+      "next_prefecture_code": null
     }
   },
   "updated_at": "2026-08-05"
