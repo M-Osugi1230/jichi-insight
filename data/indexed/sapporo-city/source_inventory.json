@@ -1,0 +1,64 @@
+{
+  "id": "phase12-sapporo-source-inventory",
+  "phase": 12,
+  "status": "source_inventory_complete",
+  "official_code": "011002",
+  "name_ja": "札幌市",
+  "prefecture_name_ja": "北海道",
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "start_fiscal_year": 2022,
+    "end_fiscal_year": 2031,
+    "current_plan_name": "第2次札幌市まちづくり戦略ビジョン"
+  },
+  "sources": [
+    {
+      "id": "sapporo-vision2-home",
+      "layer": "comprehensive_plan",
+      "title": "第2次札幌市まちづくり戦略ビジョン",
+      "official_url": "https://www.city.sapporo.jp/kikaku/vision/vision2/index.html",
+      "status": "official_landing_verified",
+      "effective_period": "2022年度～2031年度",
+      "review_boundary": "The official landing and plan period are verified. Individual policy targets and PDF page locations are not yet reviewed at record level."
+    },
+    {
+      "id": "sapporo-action-plan-2023",
+      "layer": "implementation_plan",
+      "title": "第2次札幌市まちづくり戦略ビジョン・アクションプラン2023",
+      "official_url": "https://www.city.sapporo.jp/kikaku/actionplan2023/",
+      "status": "official_landing_to_verify",
+      "effective_period": "2023年度以降の5年間",
+      "review_boundary": "The plan is identified from official Sapporo materials, but the canonical landing, document versions, projects, targets, and fiscal links require record-level verification."
+    },
+    {
+      "id": "sapporo-vision2-progress",
+      "layer": "annual_progress",
+      "title": "第2次戦略ビジョンの進捗状況",
+      "official_url": "https://www.city.sapporo.jp/kikaku/vision/vision2/progress.html",
+      "status": "official_landing_verified",
+      "available_periods": ["2022年度", "2023年度", "2024年度", "2025年度"],
+      "review_boundary": "Citizen survey results are official progress evidence but are not automatically equivalent to administrative outcome actuals or policy achievement."
+    },
+    {
+      "id": "sapporo-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算",
+      "official_url": "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r8/reiwa8nendo_yosan.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "Initial budget, special accounts, enterprise accounts, projects, corrections, and future fiscal estimates remain separate evidence layers."
+    },
+    {
+      "id": "sapporo-budget-settlement-home",
+      "layer": "budget_and_settlement_index",
+      "title": "予算・決算",
+      "official_url": "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/index.html",
+      "status": "official_landing_verified",
+      "available_fiscal_years": [2022, 2023, 2024, 2025, 2026],
+      "review_boundary": "Budget and settlement values must remain separated by fiscal year, account, revision stage, carryover, and fund transfer."
+    }
+  ],
+  "quality_boundary": "This inventory confirms official entry points and high-level periods only. It does not promote extracted statements, survey values, budget projects, or settlement values to Reviewed, linked, comparable, or policy-achievement status.",
+  "next_action": "Resolve the canonical Action Plan 2023 landing and document set, then review comprehensive-plan targets, annual progress evidence, budget projects, and fiscal 2024 settlement records at page-level evidence depth.",
+  "verified_at": "2026-08-06"
+}
