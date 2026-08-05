@@ -1,0 +1,48 @@
+{
+  "id": "phase11-nationwide-record-linkage-completion",
+  "phase": 11,
+  "status": "complete",
+  "completed_at": "2026-08-05",
+  "prefecture_coverage": {
+    "total_prefectures": 47,
+    "wave1_reference_prefectures": 4,
+    "wave2_anchor_prefectures": 5,
+    "wave3_nationwide_prefectures": 38,
+    "prefectures_remaining": 0
+  },
+  "record_summary": {
+    "wave1_records": 861,
+    "wave2_records": 711,
+    "wave3_records": 13755,
+    "total_records": 15327,
+    "wave1_linked_records": 420,
+    "wave1_partial_records": 58,
+    "wave1_not_linked_records": 383,
+    "wave2_reviewed_maximum_depth_records": 375,
+    "wave3_partial_records": 13755,
+    "policy_achievement_assessment_count": 0,
+    "comparison_eligible_record_count": 0
+  },
+  "canonical_sources": [
+    "data/catalog/phase11_wave1_completion.json",
+    "data/catalog/phase11_wave2_completion.json",
+    "data/catalog/phase11_execution_queue.json",
+    "data/catalog/phase9_review_summary.json"
+  ],
+  "completion_gates": [
+    "All 47 prefectures are represented by a reviewed record-level implementation or an explicit maximum official-source depth.",
+    "All 15,327 normalized records preserve official source identity, evidence location, version, period, and unresolved boundaries.",
+    "Missing, unpublished, partial, not-linked, and not-assessable states remain distinct and are not replaced by guesses.",
+    "Policy achievement, causal attribution, and cross-prefecture comparability are not inferred automatically.",
+    "The execution queue, completion manifests, JSON Schemas, regression tests, publication audit, and production smoke must pass on the final head."
+  ],
+  "completion_boundary": "Phase 11 completes nationwide record-level normalization for all 47 prefectures at the maximum reviewed depth supported by current official sources. Completion does not mean that every record is linked across target, actual, budget, settlement, project, contract, audit, assembly, and executive-promise layers. Partial and not-linked records remain explicit, and no independent policy-achievement judgment, causal attribution, or cross-prefecture ranking is introduced.",
+  "next_scope": [
+    "Designated cities",
+    "Core cities and prefectural capitals",
+    "Other municipalities",
+    "Election and candidate comparison",
+    "API, downloads, and research or reporting features",
+    "Comparison features limited to indicators with verified comparability"
+  ]
+}

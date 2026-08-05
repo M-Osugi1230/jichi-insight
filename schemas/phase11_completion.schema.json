@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Phase 11 nationwide completion",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id","phase","status","completed_at","prefecture_coverage","record_summary","canonical_sources","completion_gates","completion_boundary","next_scope"],
+  "properties": {
+    "id": {"const": "phase11-nationwide-record-linkage-completion"},
+    "phase": {"const": 11},
+    "status": {"const": "complete"},
+    "completed_at": {"const": "2026-08-05", "format": "date"},
+    "prefecture_coverage": {
+      "type": "object", "additionalProperties": false,
+      "required": ["total_prefectures","wave1_reference_prefectures","wave2_anchor_prefectures","wave3_nationwide_prefectures","prefectures_remaining"],
+      "properties": {
+        "total_prefectures": {"const": 47},
+        "wave1_reference_prefectures": {"const": 4},
+        "wave2_anchor_prefectures": {"const": 5},
+        "wave3_nationwide_prefectures": {"const": 38},
+        "prefectures_remaining": {"const": 0}
+      }
+    },
+    "record_summary": {
+      "type": "object", "additionalProperties": false,
+      "required": ["wave1_records","wave2_records","wave3_records","total_records","wave1_linked_records","wave1_partial_records","wave1_not_linked_records","wave2_reviewed_maximum_depth_records","wave3_partial_records","policy_achievement_assessment_count","comparison_eligible_record_count"],
+      "properties": {
+        "wave1_records": {"const": 861},
+        "wave2_records": {"const": 711},
+        "wave3_records": {"const": 13755},
+        "total_records": {"const": 15327},
+        "wave1_linked_records": {"const": 420},
+        "wave1_partial_records": {"const": 58},
+        "wave1_not_linked_records": {"const": 383},
+        "wave2_reviewed_maximum_depth_records": {"const": 375},
+        "wave3_partial_records": {"const": 13755},
+        "policy_achievement_assessment_count": {"const": 0},
+        "comparison_eligible_record_count": {"const": 0}
+      }
+    },
+    "canonical_sources": {"type": "array", "minItems": 4, "uniqueItems": true, "items": {"type": "string", "pattern": "^(data|schemas|tests)/"}},
+    "completion_gates": {"type": "array", "minItems": 5, "uniqueItems": true, "items": {"type": "string", "minLength": 60}},
+    "completion_boundary": {"type": "string", "minLength": 250},
+    "next_scope": {"type": "array", "minItems": 6, "uniqueItems": true, "items": {"type": "string", "minLength": 10}}
+  }
+}
