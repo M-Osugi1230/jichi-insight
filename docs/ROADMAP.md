@@ -52,55 +52,6 @@ Status: `complete`（2026-08-05）
 
 Phase 11完了は、すべての個票が目標・実績・予算・決算・事業・契約・監査・議会・公約まで完全接続されたことを意味しません。公式資料が不足する個票はPartialまたはNot linkedとして残し、推測で補完していません。
 
-### Wave 1 — Reference implementations
-
-Status: `complete`
-
-北海道、宮城県、東京都、福岡県の861個票を全件正規化しました。
-
-- Linked: 420
-- Partial: 58
-- Not linked: 383
-- 独自の政策達成評価: 0
-
-正本:
-
-- `data/catalog/phase11_wave1_completion.json`
-- `tests/test_phase11_wave1_completion.py`
-
-### Wave 2 — Remaining regional anchors
-
-Status: `complete`
-
-愛知県、大阪府、広島県、香川県、沖縄県の5拠点、711レコード、725指標系列を完了しました。
-
-- current値あり: 340系列
-- current値欠損・未接続: 385系列
-- 進捗目標または明示的target: 602系列
-- 最大到達深度レコード: 375
-- 独自の政策達成評価: 0
-- 比較対象への昇格: 0
-
-沖縄県の正本は計画基準値とR9目標であり、Reviewed年度実績ではありません。計画基準値をannual actualへ流用せず、全国値も参考情報のまま保持します。
-
-正本:
-
-- `data/catalog/phase11_wave2_completion.json`
-- `schemas/phase11_wave2_completion.schema.json`
-- `tests/test_phase11_wave2_completion.py`
-
-### Wave 3 — Nationwide minimum record depth
-
-Status: `complete`
-
-残る38県、13,755レコードを都道府県コード順に処理しました。全件が共通Schemaと同じEvidence・欠損状態・非評価境界を通過する設計です。
-
-- 完了県: 38 / 38
-- Reviewed最大到達深度: 13,755レコード
-- Linkedへ推測昇格したレコード: 0
-- Partial: 13,755
-- 政策達成・因果関係・全国比較の独自判定: 0
-
 正本:
 
 - `data/catalog/phase11_execution_queue.json`
@@ -108,11 +59,40 @@ Status: `complete`
 - `schemas/phase11_completion.schema.json`
 - `tests/test_phase11_completion.py`
 
-## After Phase 11
+## Phase 12 — Designated city expansion
 
-1. 政令指定都市
-2. 中核市・県庁所在地
-3. その他市区町村
-4. 選挙・候補者比較
-5. API、データダウンロード、研究・報道向け機能
-6. 比較可能性が確認された指標だけを用いた比較機能
+Status: `in_progress`（2026-08-06開始）
+
+全国20政令指定都市を、都道府県と同じ状態分離・Evidence・期間・単位・母集団・比較不能境界を持つ共通基盤へ展開します。
+
+- 対象都市: 20
+- Reviewed reference実装: 北九州市、福岡市
+- 実行キュー: 残り18都市
+- 次の対象: 札幌市（自治体コード011002）
+- 独自の政策達成評価: 0
+- 比較可能性未確認データのランキング昇格: 0
+
+### Phase 12 quality gates
+
+1. 6桁自治体コードで同一性を固定する。
+2. 現行総合計画と有効期間を確認してから政策目標をReviewedへ昇格する。
+3. 予算、補正予算、執行、決算、事業費、契約額、補助額を分離する。
+4. 目標年度、報告年度、測定年度、会計年度、公表年度、選挙任期を分離する。
+5. 区別、市全体、対象人口、調査母集団などの分母を分離する。
+6. 一次資料URL、資料名、ページ・位置、レビュー日、未解決境界を保持する。
+7. 自動抽出だけでReviewedへ昇格しない。
+8. 比較定義が一致しない都市間ランキングを作らない。
+
+正本:
+
+- `data/catalog/phase12_designated_city_execution_queue.json`
+- `schemas/phase12_designated_city_execution_queue.schema.json`
+- `tests/test_phase12_designated_city_execution_queue.py`
+
+## After Phase 12
+
+1. 中核市・県庁所在地
+2. その他市区町村
+3. 選挙・候補者比較
+4. API、データダウンロード、研究・報道向け機能
+5. 比較可能性が確認された指標だけを用いた比較機能
