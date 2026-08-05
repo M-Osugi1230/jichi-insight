@@ -35,7 +35,7 @@
     }
   ],
   "execution_queue": [
-    {"sequence": 1, "official_code": "011002", "name_ja": "札幌市", "prefecture_name_ja": "北海道", "status": "pending_source_inventory"},
+    {"sequence": 1, "official_code": "011002", "name_ja": "札幌市", "prefecture_name_ja": "北海道", "status": "source_inventory_complete", "inventory_path": "data/indexed/sapporo-city/source_inventory.json"},
     {"sequence": 2, "official_code": "041009", "name_ja": "仙台市", "prefecture_name_ja": "宮城県", "status": "pending_source_inventory"},
     {"sequence": 3, "official_code": "111007", "name_ja": "さいたま市", "prefecture_name_ja": "埼玉県", "status": "pending_source_inventory"},
     {"sequence": 4, "official_code": "121002", "name_ja": "千葉市", "prefecture_name_ja": "千葉県", "status": "pending_source_inventory"},
@@ -59,8 +59,9 @@
     "reference_implementation_count": 2,
     "queued_city_count": 18,
     "reviewed_city_count": 2,
-    "pending_city_count": 18,
-    "next_official_code": "011002"
+    "source_inventory_complete_count": 1,
+    "pending_city_count": 17,
+    "next_official_code": "041009"
   },
   "updated_at": "2026-08-06"
 }
