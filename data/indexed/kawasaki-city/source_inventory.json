@@ -1,0 +1,64 @@
+{
+  "id": "phase12-kawasaki-source-inventory",
+  "phase": 12,
+  "status": "source_inventory_complete",
+  "official_code": "141305",
+  "name_ja": "川崎市",
+  "prefecture_name_ja": "神奈川県",
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "start_fiscal_year": 2026,
+    "end_fiscal_year": 2029,
+    "current_plan_name": "川崎市総合計画 第4期実施計画"
+  },
+  "sources": [
+    {
+      "id": "kawasaki-comprehensive-plan-2026",
+      "layer": "comprehensive_plan",
+      "title": "川崎市総合計画 2026",
+      "official_url": "https://www.city.kawasaki.jp/170/page/0000185344.html",
+      "status": "official_landing_verified",
+      "effective_period": "基本計画2026年度～2037年度",
+      "review_boundary": "The revised basic concept, basic plan, and official publication landing are verified. Policy indicators and page-level evidence remain unreviewed."
+    },
+    {
+      "id": "kawasaki-fourth-implementation-plan",
+      "layer": "implementation_plan",
+      "title": "川崎市総合計画 第4期実施計画",
+      "official_url": "https://www.city.kawasaki.jp/170/page/0000185344.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2029年度",
+      "review_boundary": "The four-year implementation plan and its five basic policy structure are verified. Individual projects, targets, departments, and fiscal links require record-level review."
+    },
+    {
+      "id": "kawasaki-third-plan-evaluation-2024",
+      "layer": "annual_progress",
+      "title": "川崎市総合計画 第3期実施計画 令和6年度事務事業評価結果",
+      "official_url": "https://www.city.kawasaki.jp/170/page/0000178614.html",
+      "status": "official_landing_verified",
+      "available_periods": ["令和6年度事務事業評価"],
+      "review_boundary": "The evaluation belongs to the prior 2022–2025 implementation plan and must not be used as an actual for the 2026–2029 plan without an explicit version bridge."
+    },
+    {
+      "id": "kawasaki-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算について",
+      "official_url": "https://www.city.kawasaki.jp/230/page/0000186101.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "The approved budget landing is verified. General, special, enterprise, supplementary, account-level, and project-level amounts remain separate until page-level review."
+    },
+    {
+      "id": "kawasaki-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度決算及び財政状況",
+      "official_url": "https://www.city.kawasaki.jp/shisei/category/47-3-4-22-0-0-0-0-0-0.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "Settlement estimates, final financial statements, financial-condition datasets, public-accounting statements, and fiscal-health ratios remain separate evidence layers."
+    }
+  ],
+  "quality_boundary": "This inventory confirms official entry points, the revised basic plan period, the fourth implementation plan, prior-plan evaluation, and fiscal document landings only. It does not promote indicators, evaluation classes, budget items, settlement values, project execution, or outcome claims to Reviewed, linked, comparable, or policy-achievement status.",
+  "next_action": "Resolve canonical page ranges for the revised basic plan and fourth implementation plan, map five basic policies and project targets, preserve the third-to-fourth-plan version bridge, and review fiscal 2026 budget and fiscal 2024 settlement records at page-level evidence depth.",
+  "verified_at": "2026-08-06"
+}
