@@ -8,11 +8,30 @@ from jsonschema import Draft202012Validator, FormatChecker
 ROOT = Path(__file__).resolve().parents[1]
 QUEUE_PATH = ROOT / "data/catalog/phase12_designated_city_execution_queue.json"
 SCHEMA_PATH = ROOT / "schemas/phase12_designated_city_execution_queue.schema.json"
+SAPPORO_INVENTORY_PATH = ROOT / "data/indexed/sapporo-city/source_inventory.json"
+SAPPORO_SCHEMA_PATH = ROOT / "schemas/phase12_sapporo_source_inventory.schema.json"
 
 EXPECTED_CODES = [
-    "011002", "041009", "111007", "121002", "141003", "141305", "141500",
-    "151009", "221007", "221309", "231002", "261009", "271004", "271403",
-    "281000", "331007", "341002", "401005", "401307", "431001",
+    "011002",
+    "041009",
+    "111007",
+    "121002",
+    "141003",
+    "141305",
+    "141500",
+    "151009",
+    "221007",
+    "221309",
+    "231002",
+    "261009",
+    "271004",
+    "271403",
+    "281000",
+    "331007",
+    "341002",
+    "401005",
+    "401307",
+    "431001",
 ]
 
 
@@ -52,17 +71,41 @@ def test_reference_implementations_resolve_to_reviewed_municipalities():
         assert municipality["data_status"] == "reviewed"
 
 
+def test_sapporo_inventory_is_valid_but_not_promoted_to_reviewed():
+    inventory = load(SAPPORO_INVENTORY_PATH)
+    validator = Draft202012Validator(
+        load(SAPPORO_SCHEMA_PATH), format_checker=FormatChecker()
+    )
+    assert list(validator.iter_errors(inventory)) == []
+    assert inventory["review_status"] == "indexed_not_reviewed"
+    assert inventory["official_code"] == "011002"
+    assert len(inventory["sources"]) == 5
+    assert all(
+        source["official_url"].startswith("https://www.city.sapporo.jp/")
+        for source in inventory["sources"]
+    )
+
+
 def test_summary_is_derived_from_queue_contents():
     queue = load(QUEUE_PATH)
     references = queue["reference_implementations"]
-    pending = queue["execution_queue"]
+    cities = queue["execution_queue"]
     assert queue["summary"] == {
-        "designated_city_count": len(references) + len(pending),
+        "designated_city_count": len(references) + len(cities),
         "reference_implementation_count": len(references),
-        "queued_city_count": len(pending),
+        "queued_city_count": len(cities),
         "reviewed_city_count": 2,
-        "pending_city_count": 18,
-        "next_official_code": pending[0]["official_code"],
+        "source_inventory_complete_count": sum(
+            item["status"] == "source_inventory_complete" for item in cities
+        ),
+        "pending_city_count": sum(
+            item["status"] == "pending_source_inventory" for item in cities
+        ),
+        "next_official_code": next(
+            item["official_code"]
+            for item in cities
+            if item["status"] == "pending_source_inventory"
+        ),
     }
 
 
