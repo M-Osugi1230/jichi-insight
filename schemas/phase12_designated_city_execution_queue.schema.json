@@ -14,14 +14,15 @@
     "execution_queue": {"type": "array", "minItems": 18, "maxItems": 18, "items": {"$ref": "#/$defs/queuedCity"}},
     "summary": {
       "type": "object", "additionalProperties": false,
-      "required": ["designated_city_count", "reference_implementation_count", "queued_city_count", "reviewed_city_count", "source_inventory_complete_count", "pending_city_count", "next_official_code"],
+      "required": ["designated_city_count", "reference_implementation_count", "queued_city_count", "reviewed_city_count", "source_inventory_complete_count", "source_inventory_partial_count", "pending_city_count", "next_official_code"],
       "properties": {
         "designated_city_count": {"const": 20},
         "reference_implementation_count": {"const": 2},
         "queued_city_count": {"const": 18},
         "reviewed_city_count": {"const": 2},
         "source_inventory_complete_count": {"const": 2},
-        "pending_city_count": {"const": 16},
+        "source_inventory_partial_count": {"const": 1},
+        "pending_city_count": {"const": 15},
         "next_official_code": {"const": "111007"}
       }
     },
@@ -49,7 +50,7 @@
         "official_code": {"type": "string", "pattern": "^[0-9]{6}$"},
         "name_ja": {"type": "string", "minLength": 2},
         "prefecture_name_ja": {"type": "string", "minLength": 3},
-        "status": {"enum": ["pending_source_inventory", "source_inventory_complete"]},
+        "status": {"enum": ["pending_source_inventory", "source_inventory_partial", "source_inventory_complete"]},
         "inventory_path": {"type": "string", "pattern": "^data/indexed/.+/source_inventory\\.json$"}
       }
     }
