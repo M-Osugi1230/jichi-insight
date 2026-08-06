@@ -12,9 +12,26 @@ SAPPORO_INVENTORY_PATH = ROOT / "data/indexed/sapporo-city/source_inventory.json
 SAPPORO_SCHEMA_PATH = ROOT / "schemas/phase12_sapporo_source_inventory.schema.json"
 
 EXPECTED_CODES = [
-    "011002", "041009", "111007", "121002", "141003", "141305", "141500",
-    "151009", "221007", "221309", "231002", "261009", "271004", "271403",
-    "281000", "331007", "341002", "401005", "401307", "431001",
+    "011002",
+    "041009",
+    "111007",
+    "121002",
+    "141003",
+    "141305",
+    "141500",
+    "151009",
+    "221007",
+    "221309",
+    "231002",
+    "261009",
+    "271004",
+    "271403",
+    "281000",
+    "331007",
+    "341002",
+    "401005",
+    "401307",
+    "431001",
 ]
 
 
@@ -63,7 +80,10 @@ def test_sapporo_inventory_is_valid_but_not_promoted_to_reviewed():
     assert inventory["review_status"] == "indexed_not_reviewed"
     assert inventory["official_code"] == "011002"
     assert len(inventory["sources"]) == 5
-    assert all(source["official_url"].startswith("https://www.city.sapporo.jp/") for source in inventory["sources"])
+    assert all(
+        source["official_url"].startswith("https://www.city.sapporo.jp/")
+        for source in inventory["sources"]
+    )
 
 
 def test_summary_is_derived_from_queue_contents():
