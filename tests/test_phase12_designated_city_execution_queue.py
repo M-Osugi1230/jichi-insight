@@ -12,6 +12,8 @@ SAPPORO_INVENTORY_PATH = ROOT / "data/indexed/sapporo-city/source_inventory.json
 SAPPORO_SCHEMA_PATH = ROOT / "schemas/phase12_sapporo_source_inventory.schema.json"
 SENDAI_INVENTORY_PATH = ROOT / "data/indexed/sendai-city/source_inventory.json"
 SENDAI_SCHEMA_PATH = ROOT / "schemas/phase12_sendai_source_inventory.schema.json"
+CHIBA_INVENTORY_PATH = ROOT / "data/indexed/chiba-city/source_inventory.json"
+CHIBA_SCHEMA_PATH = ROOT / "schemas/phase12_chiba_source_inventory.schema.json"
 
 EXPECTED_CODES = [
     "011002",
@@ -103,6 +105,28 @@ def test_sendai_inventory_is_valid_but_not_promoted_to_reviewed():
         "041009",
         "https://www.city.sendai.jp/",
     )
+
+
+def test_chiba_inventory_is_valid_but_not_promoted_to_reviewed():
+    assert_indexed_inventory(
+        CHIBA_INVENTORY_PATH,
+        CHIBA_SCHEMA_PATH,
+        "121002",
+        "https://www.city.chiba.jp/",
+    )
+    inventory = load(CHIBA_INVENTORY_PATH)
+    assert {source["layer"] for source in inventory["sources"]} == {
+        "comprehensive_plan",
+        "implementation_plan",
+        "annual_progress",
+        "budget",
+        "settlement",
+    }
+    assert inventory["plan_period"] == {
+        "start_fiscal_year": 2023,
+        "end_fiscal_year": 2032,
+        "current_plan_name": "千葉市基本計画",
+    }
 
 
 def test_summary_is_derived_from_queue_contents():
