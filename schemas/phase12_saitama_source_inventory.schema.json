@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Phase 12 Saitama partial official source inventory",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id","phase","status","official_code","name_ja","prefecture_name_ja","review_status","plan_period","verified_sources","unresolved_layers","quality_boundary","next_action","verified_at"],
+  "properties": {
+    "id": {"const": "phase12-saitama-source-inventory"},
+    "phase": {"const": 12},
+    "status": {"const": "source_inventory_partial"},
+    "official_code": {"const": "111007"},
+    "name_ja": {"const": "さいたま市"},
+    "prefecture_name_ja": {"const": "埼玉県"},
+    "review_status": {"const": "indexed_not_reviewed"},
+    "plan_period": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start_fiscal_year","end_fiscal_year","current_plan_name"],
+      "properties": {
+        "start_fiscal_year": {"const": 2021},
+        "end_fiscal_year": {"const": 2030},
+        "current_plan_name": {"const": "2030さいたま輝く未来と希望のまちプラン"}
+      }
+    },
+    "verified_sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id","layer","title","official_url","status","effective_period","review_boundary"],
+        "properties": {
+          "id": {"type": "string","minLength": 5},
+          "layer": {"const": "comprehensive_plan"},
+          "title": {"type": "string","minLength": 10},
+          "official_url": {"type": "string","format": "uri","pattern": "^https://gakushu\\.city\\.saitama\\.jp/"},
+          "status": {"const": "official_overview_verified"},
+          "effective_period": {"const": "2021年度～2030年度"},
+          "review_boundary": {"type": "string","minLength": 120}
+        }
+      }
+    },
+    "unresolved_layers": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["layer","required_resolution"],
+        "properties": {
+          "layer": {"enum": ["canonical_comprehensive_plan","implementation_plan","annual_progress","budget","settlement"]},
+          "required_resolution": {"type": "string","minLength": 80}
+        }
+      }
+    },
+    "quality_boundary": {"type": "string","minLength": 180},
+    "next_action": {"type": "string","minLength": 160},
+    "verified_at": {"const": "2026-08-06","format": "date"}
+  }
+}
