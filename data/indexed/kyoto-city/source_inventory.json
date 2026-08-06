@@ -1,0 +1,64 @@
+{
+  "id": "phase12-kyoto-source-inventory",
+  "phase": 12,
+  "status": "source_inventory_complete",
+  "official_code": "261009",
+  "name_ja": "京都市",
+  "prefecture_name_ja": "京都府",
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "start_fiscal_year": 2026,
+    "end_fiscal_year": 2050,
+    "current_plan_name": "京都基本構想"
+  },
+  "sources": [
+    {
+      "id": "kyoto-basic-concept-2026-2050",
+      "layer": "comprehensive_plan",
+      "title": "京都基本構想（2026年～2050年）",
+      "official_url": "https://www.city.kyoto.lg.jp/menu5/category/62-21-0-0-0-0-0-0-0-0.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年～2050年",
+      "review_boundary": "The current long-term basic concept is verified as the citywide top-level policy direction. It is a strategic vision rather than a record-level implementation ledger, so policy outcomes and comparability remain unreviewed."
+    },
+    {
+      "id": "kyoto-new-strategy-2024-2027",
+      "layer": "implementation_plan",
+      "title": "新京都戦略（令和8年3月改定）",
+      "official_url": "https://www.city.kyoto.lg.jp/sogo/page/0000339369.html",
+      "status": "official_landing_verified",
+      "effective_period": "2024年度～2027年度",
+      "review_boundary": "The March 2026 revised New Kyoto Strategy is verified as the cross-sector action plan that concretizes the Kyoto Basic Concept. Mayor pledges, reform measures, fiscal policy, and individual projects remain separate evidence roles until reviewed linkage."
+    },
+    {
+      "id": "kyoto-progress-2024",
+      "layer": "annual_progress",
+      "title": "令和6年度京都市基本計画実施状況（報告）",
+      "official_url": "https://www.city.kyoto.lg.jp/sogo/page/0000345437.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "The fiscal 2024 report covers the former Miyako Plan 2025 and also reports New Kyoto Strategy implementation. The expired basic-plan layer is not treated as the current comprehensive plan, and policy-evaluation results remain source statements rather than Jichi Insight judgments."
+    },
+    {
+      "id": "kyoto-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算について",
+      "official_url": "https://www.city.kyoto.lg.jp/gyozai/page/0000347934.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "The fiscal 2026 budget landing, initial-budget materials, later supplementary budgets, and bureau-level project documents are verified as distinct fiscal evidence. Proposed, enacted, and supplementary amounts are not collapsed into one value."
+    },
+    {
+      "id": "kyoto-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度決算について",
+      "official_url": "https://www.city.kyoto.lg.jp/gyozai/page/0000344356.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "The fiscal 2024 settlement landing includes general, special, public-enterprise, bureau, and New Kyoto Strategy reporting. Financial results and policy narratives remain separate from causal or achievement assessment until record-level evidence review."
+    }
+  ],
+  "quality_boundary": "Kyoto City's current policy system is represented as the 2026–2050 Kyoto Basic Concept plus the 2024–2027 New Kyoto Strategy revised in March 2026. The expired Miyako Plan 2025 is retained only as the version context for fiscal 2024 progress reporting. No budget, settlement, policy-evaluation result, mayor pledge, project status, or narrative outcome is promoted to Reviewed, linked, comparable, causal, or policy-achievement status without record-level evidence review.",
+  "next_action": "Map the revised New Kyoto Strategy policy set to the Kyoto Basic Concept, review the fiscal 2024 progress report's old-plan and new-strategy sections separately, and connect fiscal 2026 budget and fiscal 2024 settlement records only where project identity, account, period, unit, and responsibility are verified.",
+  "verified_at": "2026-08-07"
+}
