@@ -10,28 +10,13 @@ QUEUE_PATH = ROOT / "data/catalog/phase12_designated_city_execution_queue.json"
 SCHEMA_PATH = ROOT / "schemas/phase12_designated_city_execution_queue.schema.json"
 SAPPORO_INVENTORY_PATH = ROOT / "data/indexed/sapporo-city/source_inventory.json"
 SAPPORO_SCHEMA_PATH = ROOT / "schemas/phase12_sapporo_source_inventory.schema.json"
+SENDAI_INVENTORY_PATH = ROOT / "data/indexed/sendai-city/source_inventory.json"
+SENDAI_SCHEMA_PATH = ROOT / "schemas/phase12_sendai_source_inventory.schema.json"
 
 EXPECTED_CODES = [
-    "011002",
-    "041009",
-    "111007",
-    "121002",
-    "141003",
-    "141305",
-    "141500",
-    "151009",
-    "221007",
-    "221309",
-    "231002",
-    "261009",
-    "271004",
-    "271403",
-    "281000",
-    "331007",
-    "341002",
-    "401005",
-    "401307",
-    "431001",
+    "011002", "041009", "111007", "121002", "141003", "141305", "141500",
+    "151009", "221007", "221309", "231002", "261009", "271004", "271403",
+    "281000", "331007", "341002", "401005", "401307", "431001",
 ]
 
 
@@ -71,18 +56,33 @@ def test_reference_implementations_resolve_to_reviewed_municipalities():
         assert municipality["data_status"] == "reviewed"
 
 
-def test_sapporo_inventory_is_valid_but_not_promoted_to_reviewed():
-    inventory = load(SAPPORO_INVENTORY_PATH)
+def assert_indexed_inventory(path: Path, schema_path: Path, code: str, host: str):
+    inventory = load(path)
     validator = Draft202012Validator(
-        load(SAPPORO_SCHEMA_PATH), format_checker=FormatChecker()
+        load(schema_path), format_checker=FormatChecker()
     )
     assert list(validator.iter_errors(inventory)) == []
     assert inventory["review_status"] == "indexed_not_reviewed"
-    assert inventory["official_code"] == "011002"
+    assert inventory["official_code"] == code
     assert len(inventory["sources"]) == 5
-    assert all(
-        source["official_url"].startswith("https://www.city.sapporo.jp/")
-        for source in inventory["sources"]
+    assert all(source["official_url"].startswith(host) for source in inventory["sources"])
+
+
+def test_sapporo_inventory_is_valid_but_not_promoted_to_reviewed():
+    assert_indexed_inventory(
+        SAPPORO_INVENTORY_PATH,
+        SAPPORO_SCHEMA_PATH,
+        "011002",
+        "https://www.city.sapporo.jp/",
+    )
+
+
+def test_sendai_inventory_is_valid_but_not_promoted_to_reviewed():
+    assert_indexed_inventory(
+        SENDAI_INVENTORY_PATH,
+        SENDAI_SCHEMA_PATH,
+        "041009",
+        "https://www.city.sendai.jp/",
     )
 
 
