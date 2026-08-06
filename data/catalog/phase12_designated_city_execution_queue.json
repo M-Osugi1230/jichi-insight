@@ -24,7 +24,7 @@
     {"sequence":3,"official_code":"111007","name_ja":"さいたま市","prefecture_name_ja":"埼玉県","status":"source_inventory_partial","inventory_path":"data/indexed/saitama-city/source_inventory.json"},
     {"sequence":4,"official_code":"121002","name_ja":"千葉市","prefecture_name_ja":"千葉県","status":"source_inventory_complete","inventory_path":"data/indexed/chiba-city/source_inventory.json"},
     {"sequence":5,"official_code":"141003","name_ja":"横浜市","prefecture_name_ja":"神奈川県","status":"source_inventory_complete","inventory_path":"data/indexed/yokohama-city/source_inventory.json"},
-    {"sequence":6,"official_code":"141305","name_ja":"川崎市","prefecture_name_ja":"神奈川県","status":"pending_source_inventory"},
+    {"sequence":6,"official_code":"141305","name_ja":"川崎市","prefecture_name_ja":"神奈川県","status":"source_inventory_complete","inventory_path":"data/indexed/kawasaki-city/source_inventory.json"},
     {"sequence":7,"official_code":"141500","name_ja":"相模原市","prefecture_name_ja":"神奈川県","status":"pending_source_inventory"},
     {"sequence":8,"official_code":"151009","name_ja":"新潟市","prefecture_name_ja":"新潟県","status":"pending_source_inventory"},
     {"sequence":9,"official_code":"221007","name_ja":"静岡市","prefecture_name_ja":"静岡県","status":"pending_source_inventory"},
@@ -38,6 +38,6 @@
     {"sequence":17,"official_code":"341002","name_ja":"広島市","prefecture_name_ja":"広島県","status":"pending_source_inventory"},
     {"sequence":18,"official_code":"431001","name_ja":"熊本市","prefecture_name_ja":"熊本県","status":"pending_source_inventory"}
   ],
-  "summary": {"designated_city_count":20,"reference_implementation_count":2,"queued_city_count":18,"reviewed_city_count":2,"source_inventory_complete_count":4,"source_inventory_partial_count":1,"pending_city_count":13,"next_official_code":"111007"},
+  "summary": {"designated_city_count":20,"reference_implementation_count":2,"queued_city_count":18,"reviewed_city_count":2,"source_inventory_complete_count":5,"source_inventory_partial_count":1,"pending_city_count":12,"next_official_code":"111007"},
   "updated_at": "2026-08-06"
 }
