@@ -1,0 +1,64 @@
+{
+  "id": "phase12-chiba-source-inventory",
+  "phase": 12,
+  "status": "source_inventory_complete",
+  "official_code": "121002",
+  "name_ja": "千葉市",
+  "prefecture_name_ja": "千葉県",
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "start_fiscal_year": 2023,
+    "end_fiscal_year": 2032,
+    "current_plan_name": "千葉市基本計画"
+  },
+  "sources": [
+    {
+      "id": "chiba-comprehensive-plan-home",
+      "layer": "comprehensive_plan",
+      "title": "千葉市基本計画（令和5～14年度）",
+      "official_url": "https://www.city.chiba.jp/sogoseisaku/sogoseisaku/kikaku/sougoukeikaku/kihonkeikaku.html",
+      "status": "official_landing_verified",
+      "effective_period": "2023年度～2032年度",
+      "review_boundary": "The current basic-plan landing, effective period, plan chapters, and evaluation framework are verified. Individual indicators and page-level evidence are not yet reviewed."
+    },
+    {
+      "id": "chiba-implementation-plan-2026-2028",
+      "layer": "implementation_plan",
+      "title": "千葉市基本計画第2次実施計画",
+      "official_url": "https://www.city.chiba.jp/sogoseisaku/sogoseisaku/kikaku/sougoukeikaku/kihonkeikaku-dai2jijissikeikaku-sakutei.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2028年度",
+      "review_boundary": "The second implementation-plan period and official landing are verified. Projects, quantities, departments, and policy links require record-level review."
+    },
+    {
+      "id": "chiba-implementation-progress-2024-settlement",
+      "layer": "annual_progress",
+      "title": "第1次実施計画の取組状況（令和6年度決算時点）",
+      "official_url": "https://www.city.chiba.jp/sogoseisaku/sogoseisaku/kikaku/sougoukeikaku/kihonkeikaku-dai1jijissikeikaku.html",
+      "status": "official_landing_verified",
+      "available_periods": ["令和5年度決算時点", "令和6年度決算時点"],
+      "review_boundary": "Progress records remain tied to the first implementation-plan version and settlement timing. They are not automatically comparable with the second plan or interpreted as policy achievement."
+    },
+    {
+      "id": "chiba-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算",
+      "official_url": "https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/r8yosan.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "Initial budget, budget requests, assessed projects, fees, account totals, and later supplementary budgets remain separate until page-level fiscal review is completed."
+    },
+    {
+      "id": "chiba-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度決算",
+      "official_url": "https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/r6kessan.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "Settlement overview, settlement card, fund materials, and major-policy result explanations remain separate from initial budgets, supplementary budgets, execution records, and outcomes."
+    }
+  ],
+  "quality_boundary": "This inventory confirms official entry points and high-level plan, implementation, progress, budget, and settlement periods only. It does not promote plan targets, implementation quantities, progress claims, budget items, settlement values, or project outcomes to Reviewed, linked, comparable, or policy-achievement status.",
+  "next_action": "Resolve the canonical PDFs and page ranges for the basic and second implementation plans, then review indicator definitions, implementation quantities, fiscal 2024 progress records, fiscal 2026 budget items, and fiscal 2024 settlement evidence at record-level depth.",
+  "verified_at": "2026-08-06"
+}
