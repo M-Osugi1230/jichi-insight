@@ -1,0 +1,64 @@
+{
+  "id": "phase12-yokohama-source-inventory",
+  "phase": 12,
+  "status": "source_inventory_complete",
+  "official_code": "141003",
+  "name_ja": "横浜市",
+  "prefecture_name_ja": "神奈川県",
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "start_fiscal_year": 2026,
+    "end_fiscal_year": 2029,
+    "current_plan_name": "横浜市中期計画2026～2029"
+  },
+  "sources": [
+    {
+      "id": "yokohama-medium-term-plan-2026-2029",
+      "layer": "comprehensive_plan",
+      "title": "横浜市中期計画2026～2029",
+      "official_url": "https://www.city.yokohama.lg.jp/city-info/seisaku/hoshin/4kanen/2026-2029/chuki2026-.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2029年度",
+      "review_boundary": "The final council-approved plan, its period, 14 policy groups, cross-cutting projects, and publication page are verified. Policy-level outcomes and page-level indicators remain unreviewed."
+    },
+    {
+      "id": "yokohama-medium-term-plan-structure",
+      "layer": "implementation_plan",
+      "title": "横浜市中期計画2026～2029 政策・施策及び行財政運営",
+      "official_url": "https://www.city.yokohama.lg.jp/city-info/seisaku/hoshin/4kanen/2026-2029/chuki2026-.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2029年度",
+      "review_boundary": "The implementation structure is embedded in the medium-term plan and remains separate from annual bureau plans, project budgets, contracts, and settlement evidence until record-level review."
+    },
+    {
+      "id": "yokohama-medium-term-progress-2024",
+      "layer": "annual_progress",
+      "title": "横浜市中期計画2022～2025 令和6年度実績 進捗状況（第3期）",
+      "official_url": "https://www.city.yokohama.lg.jp/city-info/seisaku/hoshin/4kanen/2022-2025/chuki2022-.html",
+      "status": "official_landing_verified",
+      "available_periods": ["令和4年度実績", "令和5年度中間振り返り", "令和6年度実績"],
+      "review_boundary": "Progress evidence belongs to the prior 2022–2025 plan and must not be treated as actuals for the 2026–2029 plan without an explicit version bridge."
+    },
+    {
+      "id": "yokohama-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算",
+      "official_url": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r8/r8yosan.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "The approved budget landing and plan-year relationship are verified. Initial, supplementary, bureau-level, account-level, and project-level amounts remain separate until page-level review."
+    },
+    {
+      "id": "yokohama-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度決算",
+      "official_url": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/ketu/R06ketu.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "General-account settlement, major-project execution results, subsidies, and reference materials remain separate from budgets and policy outcomes until evidence-level linkage is reviewed."
+    }
+  ],
+  "quality_boundary": "This inventory confirms official entry points, current and prior plan periods, the embedded implementation structure, and fiscal document landings only. It does not promote indicators, progress claims, budget items, settlement values, project execution, or outcome claims to Reviewed, linked, comparable, or policy-achievement status.",
+  "next_action": "Resolve the canonical page ranges for the 2026–2029 plan, map its 14 policy groups and 33 measure groups, preserve the prior-plan progress bridge, and review fiscal 2026 budget and fiscal 2024 settlement records at page-level evidence depth.",
+  "verified_at": "2026-08-06"
+}
