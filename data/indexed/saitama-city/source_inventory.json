@@ -1,0 +1,50 @@
+{
+  "id": "phase12-saitama-source-inventory",
+  "phase": 12,
+  "status": "source_inventory_partial",
+  "official_code": "111007",
+  "name_ja": "さいたま市",
+  "prefecture_name_ja": "埼玉県",
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "start_fiscal_year": 2021,
+    "end_fiscal_year": 2030,
+    "current_plan_name": "2030さいたま輝く未来と希望のまちプラン"
+  },
+  "verified_sources": [
+    {
+      "id": "saitama-comprehensive-plan-overview",
+      "layer": "comprehensive_plan",
+      "title": "2030さいたま輝く未来と希望のまちプラン",
+      "official_url": "https://gakushu.city.saitama.jp/sp/search/searchdtl.aspx?ht=5&knd=1&ordtyp=1&pageNum=1&pageSiz=10&skbn=0&stdycd=60701",
+      "status": "official_overview_verified",
+      "effective_period": "2021年度～2030年度",
+      "review_boundary": "The official municipal learning system confirms the comprehensive-plan title, purpose, future-city vision, and strategic positioning. The canonical plan PDF, target pages, definitions, and record-level evidence remain unresolved."
+    }
+  ],
+  "unresolved_layers": [
+    {
+      "layer": "canonical_comprehensive_plan",
+      "required_resolution": "Resolve the canonical city landing and current full plan PDF, including revision history and page-level target locations."
+    },
+    {
+      "layer": "implementation_plan",
+      "required_resolution": "Resolve the current implementation-plan edition, period, project list, responsible departments, and target pages."
+    },
+    {
+      "layer": "annual_progress",
+      "required_resolution": "Resolve the official progress-management or evaluation source and keep citizen surveys and administrative actuals separate."
+    },
+    {
+      "layer": "budget",
+      "required_resolution": "Resolve the fiscal 2026 initial-budget landing and separate general, special, enterprise, and supplementary accounts."
+    },
+    {
+      "layer": "settlement",
+      "required_resolution": "Resolve the fiscal 2024 settlement landing and separate settlement, execution, major-project explanation, and outcome evidence."
+    }
+  ],
+  "quality_boundary": "This partial inventory records only a verified official overview of the current comprehensive plan. It does not invent unresolved city URLs or promote plan claims, targets, surveys, projects, budget values, settlement values, or outcome claims to Reviewed, linked, comparable, or policy-achievement status.",
+  "next_action": "Resolve the canonical comprehensive-plan landing first, then the implementation plan, annual progress source, fiscal 2026 budget, and fiscal 2024 settlement. Promote the city to source-inventory-complete only after all five layers have verified official entry points.",
+  "verified_at": "2026-08-06"
+}
