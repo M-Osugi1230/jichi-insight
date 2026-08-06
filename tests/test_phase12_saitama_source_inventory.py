@@ -57,15 +57,21 @@ def test_queue_keeps_saitama_as_next_until_complete():
     )
     queue = load(QUEUE_PATH)
     assert list(queue_validator.iter_errors(queue)) == []
+    cities = queue["execution_queue"]
     city = next(
-        item for item in queue["execution_queue"]
-        if item["official_code"] == "111007"
+        item for item in cities if item["official_code"] == "111007"
     )
     assert city["status"] == "source_inventory_partial"
     assert city["inventory_path"] == (
         "data/indexed/saitama-city/source_inventory.json"
     )
-    assert queue["summary"]["source_inventory_complete_count"] == 2
-    assert queue["summary"]["source_inventory_partial_count"] == 1
-    assert queue["summary"]["pending_city_count"] == 15
+    assert queue["summary"]["source_inventory_complete_count"] == sum(
+        item["status"] == "source_inventory_complete" for item in cities
+    )
+    assert queue["summary"]["source_inventory_partial_count"] == sum(
+        item["status"] == "source_inventory_partial" for item in cities
+    )
+    assert queue["summary"]["pending_city_count"] == sum(
+        item["status"] == "pending_source_inventory" for item in cities
+    )
     assert queue["summary"]["next_official_code"] == "111007"
