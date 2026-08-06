@@ -1,3 +1,5 @@
+"""Regression coverage for the Sagamihara Phase 12 source inventory."""
+
 from __future__ import annotations
 
 import json
