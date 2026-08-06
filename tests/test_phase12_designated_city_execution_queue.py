@@ -14,6 +14,8 @@ SENDAI_INVENTORY_PATH = ROOT / "data/indexed/sendai-city/source_inventory.json"
 SENDAI_SCHEMA_PATH = ROOT / "schemas/phase12_sendai_source_inventory.schema.json"
 CHIBA_INVENTORY_PATH = ROOT / "data/indexed/chiba-city/source_inventory.json"
 CHIBA_SCHEMA_PATH = ROOT / "schemas/phase12_chiba_source_inventory.schema.json"
+YOKOHAMA_INVENTORY_PATH = ROOT / "data/indexed/yokohama-city/source_inventory.json"
+YOKOHAMA_SCHEMA_PATH = ROOT / "schemas/phase12_yokohama_source_inventory.schema.json"
 
 EXPECTED_CODES = [
     "011002",
@@ -127,6 +129,33 @@ def test_chiba_inventory_is_valid_but_not_promoted_to_reviewed():
         "end_fiscal_year": 2032,
         "current_plan_name": "千葉市基本計画",
     }
+
+
+def test_yokohama_inventory_preserves_current_and_prior_plan_boundary():
+    assert_indexed_inventory(
+        YOKOHAMA_INVENTORY_PATH,
+        YOKOHAMA_SCHEMA_PATH,
+        "141003",
+        "https://www.city.yokohama.lg.jp/",
+    )
+    inventory = load(YOKOHAMA_INVENTORY_PATH)
+    assert {source["layer"] for source in inventory["sources"]} == {
+        "comprehensive_plan",
+        "implementation_plan",
+        "annual_progress",
+        "budget",
+        "settlement",
+    }
+    assert inventory["plan_period"] == {
+        "start_fiscal_year": 2026,
+        "end_fiscal_year": 2029,
+        "current_plan_name": "横浜市中期計画2026～2029",
+    }
+    progress = next(
+        source for source in inventory["sources"] if source["layer"] == "annual_progress"
+    )
+    assert "prior 2022–2025 plan" in progress["review_boundary"]
+    assert "must not be treated as actuals" in progress["review_boundary"]
 
 
 def test_summary_is_derived_from_queue_contents():
