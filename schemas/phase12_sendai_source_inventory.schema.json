@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Phase 12 Sendai official source inventory",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id","phase","status","official_code","name_ja","prefecture_name_ja","review_status","plan_period","sources","quality_boundary","next_action","verified_at"],
+  "properties": {
+    "id": {"const": "phase12-sendai-source-inventory"},
+    "phase": {"const": 12},
+    "status": {"const": "source_inventory_complete"},
+    "official_code": {"const": "041009"},
+    "name_ja": {"const": "仙台市"},
+    "prefecture_name_ja": {"const": "宮城県"},
+    "review_status": {"const": "indexed_not_reviewed"},
+    "plan_period": {"type":"object","additionalProperties":false,"required":["start_fiscal_year","end_fiscal_year","current_plan_name"],"properties":{"start_fiscal_year":{"const":2021},"end_fiscal_year":{"const":2030},"current_plan_name":{"const":"仙台市基本計画2021-2030"}}},
+    "sources": {"type":"array","minItems":5,"uniqueItems":true,"items":{"type":"object","required":["id","layer","title","official_url","status","review_boundary"],"properties":{"id":{"type":"string","minLength":5},"layer":{"type":"string","minLength":5},"title":{"type":"string","minLength":3},"official_url":{"type":"string","format":"uri","pattern":"^https://www\\.city\\.sendai\\.jp/"},"status":{"const":"official_landing_verified"},"review_boundary":{"type":"string","minLength":60},"effective_period":{"type":"string"},"available_periods":{"type":"array","items":{"type":"string"}},"fiscal_year":{"type":"integer"}}}},
+    "quality_boundary": {"type":"string","minLength":150},
+    "next_action": {"type":"string","minLength":120},
+    "verified_at": {"const":"2026-08-06","format":"date"}
+  }
+}
