@@ -21,12 +21,12 @@
         "queued_city_count": {"const": 18},
         "reviewed_city_count": {"const": 2},
         "source_inventory_complete_count": {"const": 11},
-        "source_inventory_partial_count": {"const": 2},
-        "pending_city_count": {"const": 5},
+        "source_inventory_partial_count": {"const": 3},
+        "pending_city_count": {"const": 4},
         "next_official_code": {"const": "111007"}
       }
     },
-    "updated_at": {"const": "2026-08-07", "format": "date"}
+    "updated_at": {"const": "2026-08-08", "format": "date"}
   },
   "$defs": {
     "reference": {
