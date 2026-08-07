@@ -37,14 +37,22 @@ def test_osaka_inventory_preserves_decentralized_operating_model():
         "budget",
         "settlement",
     }
-    assert "not a multi-year implementation plan" in by_layer["implementation_plan"]["review_boundary"]
-    assert "decentralized self-evaluations" in by_layer["annual_progress"]["review_boundary"]
+    assert (
+        "not a multi-year implementation plan"
+        in by_layer["implementation_plan"]["review_boundary"]
+    )
+    assert (
+        "decentralized self-evaluations"
+        in by_layer["annual_progress"]["review_boundary"]
+    )
     assert "attached resolution" in by_layer["budget"]["review_boundary"]
 
 
 def test_osaka_queue_entry_is_complete_but_not_reviewed():
     queue = load(QUEUE_PATH)
-    city = next(item for item in queue["execution_queue"] if item["official_code"] == "271004")
+    city = next(
+        item for item in queue["execution_queue"] if item["official_code"] == "271004"
+    )
     assert city == {
         "sequence": 13,
         "official_code": "271004",
@@ -54,13 +62,16 @@ def test_osaka_queue_entry_is_complete_but_not_reviewed():
         "inventory_path": "data/indexed/osaka-city/source_inventory.json",
     }
     complete_count = sum(
-        item["status"] == "source_inventory_complete" for item in queue["execution_queue"]
+        item["status"] == "source_inventory_complete"
+        for item in queue["execution_queue"]
     )
     partial_count = sum(
-        item["status"] == "source_inventory_partial" for item in queue["execution_queue"]
+        item["status"] == "source_inventory_partial"
+        for item in queue["execution_queue"]
     )
     pending_count = sum(
-        item["status"] == "pending_source_inventory" for item in queue["execution_queue"]
+        item["status"] == "pending_source_inventory"
+        for item in queue["execution_queue"]
     )
     assert queue["summary"]["source_inventory_complete_count"] == complete_count
     assert queue["summary"]["source_inventory_partial_count"] == partial_count
