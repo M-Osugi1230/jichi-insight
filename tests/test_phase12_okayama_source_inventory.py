@@ -40,13 +40,22 @@ def test_okayama_current_plan_has_pdca_without_invented_result():
         "settlement",
     }
     assert inventory["unresolved_layers"][0]["layer"] == "annual_progress"
-    governance = next(source for source in inventory["sources"] if source["layer"] == "progress_governance")
-    assert "does not infer a completed current-plan annual result" in governance["review_boundary"]
+    governance = next(
+        source
+        for source in inventory["sources"]
+        if source["layer"] == "progress_governance"
+    )
+    assert (
+        "does not infer a completed current-plan annual result"
+        in governance["review_boundary"]
+    )
 
 
 def test_okayama_queue_entry_is_partial_and_counts_are_consistent():
     queue = load(QUEUE_PATH)
-    city = next(item for item in queue["execution_queue"] if item["official_code"] == "331007")
+    city = next(
+        item for item in queue["execution_queue"] if item["official_code"] == "331007"
+    )
     assert city == {
         "sequence": 16,
         "official_code": "331007",
@@ -56,6 +65,12 @@ def test_okayama_queue_entry_is_partial_and_counts_are_consistent():
         "inventory_path": "data/indexed/okayama-city/source_inventory.json",
     }
     statuses = [item["status"] for item in queue["execution_queue"]]
-    assert queue["summary"]["source_inventory_complete_count"] == statuses.count("source_inventory_complete")
-    assert queue["summary"]["source_inventory_partial_count"] == statuses.count("source_inventory_partial")
-    assert queue["summary"]["pending_city_count"] == statuses.count("pending_source_inventory")
+    assert queue["summary"]["source_inventory_complete_count"] == statuses.count(
+        "source_inventory_complete"
+    )
+    assert queue["summary"]["source_inventory_partial_count"] == statuses.count(
+        "source_inventory_partial"
+    )
+    assert queue["summary"]["pending_city_count"] == statuses.count(
+        "pending_source_inventory"
+    )
