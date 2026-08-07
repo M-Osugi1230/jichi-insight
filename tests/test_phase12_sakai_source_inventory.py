@@ -42,13 +42,19 @@ def test_sakai_preserves_current_and_legacy_plan_boundaries():
     }
     unresolved = {item["layer"] for item in inventory["unresolved_layers"]}
     assert unresolved == {"implementation_plan", "annual_progress"}
-    legacy = next(source for source in inventory["sources"] if source["layer"] == "legacy_progress")
+    legacy = next(
+        source
+        for source in inventory["sources"]
+        if source["layer"] == "legacy_progress"
+    )
     assert "must not be attributed" in legacy["review_boundary"]
 
 
 def test_sakai_queue_entry_is_partial_and_counts_are_consistent():
     queue = load(QUEUE_PATH)
-    city = next(item for item in queue["execution_queue"] if item["official_code"] == "271403")
+    city = next(
+        item for item in queue["execution_queue"] if item["official_code"] == "271403"
+    )
     assert city == {
         "sequence": 14,
         "official_code": "271403",
@@ -58,6 +64,12 @@ def test_sakai_queue_entry_is_partial_and_counts_are_consistent():
         "inventory_path": "data/indexed/sakai-city/source_inventory.json",
     }
     statuses = [item["status"] for item in queue["execution_queue"]]
-    assert queue["summary"]["source_inventory_complete_count"] == statuses.count("source_inventory_complete")
-    assert queue["summary"]["source_inventory_partial_count"] == statuses.count("source_inventory_partial")
-    assert queue["summary"]["pending_city_count"] == statuses.count("pending_source_inventory")
+    assert queue["summary"]["source_inventory_complete_count"] == statuses.count(
+        "source_inventory_complete"
+    )
+    assert queue["summary"]["source_inventory_partial_count"] == statuses.count(
+        "source_inventory_partial"
+    )
+    assert queue["summary"]["pending_city_count"] == statuses.count(
+        "pending_source_inventory"
+    )
