@@ -15,6 +15,19 @@ def load(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def assert_summary_matches_queue(queue: dict) -> None:
+    statuses = [item["status"] for item in queue["execution_queue"]]
+    assert queue["summary"]["source_inventory_complete_count"] == statuses.count(
+        "source_inventory_complete"
+    )
+    assert queue["summary"]["source_inventory_partial_count"] == statuses.count(
+        "source_inventory_partial"
+    )
+    assert queue["summary"]["pending_city_count"] == statuses.count(
+        "pending_source_inventory"
+    )
+
+
 def test_shizuoka_partial_inventory_matches_schema():
     validator = Draft202012Validator(
         load(SCHEMA_PATH), format_checker=FormatChecker()
@@ -63,6 +76,4 @@ def test_shizuoka_queue_entry_stays_partial_until_progress_is_resolved():
         "status": "source_inventory_partial",
         "inventory_path": "data/indexed/shizuoka-city/source_inventory.json",
     }
-    assert queue["summary"]["source_inventory_complete_count"] == 7
-    assert queue["summary"]["source_inventory_partial_count"] == 2
-    assert queue["summary"]["pending_city_count"] == 9
+    assert_summary_matches_queue(queue)
