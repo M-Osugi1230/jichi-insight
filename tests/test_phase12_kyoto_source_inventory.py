@@ -37,14 +37,22 @@ def test_kyoto_inventory_preserves_current_and_expired_plan_boundaries():
         "budget",
         "settlement",
     }
-    assert "March 2026 revised New Kyoto Strategy" in by_layer["implementation_plan"]["review_boundary"]
+    assert (
+        "March 2026 revised New Kyoto Strategy"
+        in by_layer["implementation_plan"]["review_boundary"]
+    )
     assert "former Miyako Plan 2025" in by_layer["annual_progress"]["review_boundary"]
-    assert "not treated as the current comprehensive plan" in by_layer["annual_progress"]["review_boundary"]
+    assert (
+        "not treated as the current comprehensive plan"
+        in by_layer["annual_progress"]["review_boundary"]
+    )
 
 
 def test_kyoto_queue_entry_is_complete_but_not_reviewed():
     queue = load(QUEUE_PATH)
-    city = next(item for item in queue["execution_queue"] if item["official_code"] == "261009")
+    city = next(
+        item for item in queue["execution_queue"] if item["official_code"] == "261009"
+    )
     assert city == {
         "sequence": 12,
         "official_code": "261009",
@@ -54,13 +62,16 @@ def test_kyoto_queue_entry_is_complete_but_not_reviewed():
         "inventory_path": "data/indexed/kyoto-city/source_inventory.json",
     }
     complete_count = sum(
-        item["status"] == "source_inventory_complete" for item in queue["execution_queue"]
+        item["status"] == "source_inventory_complete"
+        for item in queue["execution_queue"]
     )
     partial_count = sum(
-        item["status"] == "source_inventory_partial" for item in queue["execution_queue"]
+        item["status"] == "source_inventory_partial"
+        for item in queue["execution_queue"]
     )
     pending_count = sum(
-        item["status"] == "pending_source_inventory" for item in queue["execution_queue"]
+        item["status"] == "pending_source_inventory"
+        for item in queue["execution_queue"]
     )
     assert queue["summary"]["source_inventory_complete_count"] == complete_count
     assert queue["summary"]["source_inventory_partial_count"] == partial_count
