@@ -37,14 +37,19 @@ def test_nagoya_inventory_preserves_embedded_implementation_boundary():
         "budget",
         "settlement",
     }
-    assert "42 measures and 506 listed projects" in by_layer["implementation_plan"]["review_boundary"]
+    assert (
+        "42 measures and 506 listed projects"
+        in by_layer["implementation_plan"]["review_boundary"]
+    )
     assert "135 plan indicators" in by_layer["annual_progress"]["review_boundary"]
     assert "council amendment" in by_layer["budget"]["review_boundary"]
 
 
 def test_nagoya_queue_entry_is_complete_but_not_reviewed():
     queue = load(QUEUE_PATH)
-    city = next(item for item in queue["execution_queue"] if item["official_code"] == "231002")
+    city = next(
+        item for item in queue["execution_queue"] if item["official_code"] == "231002"
+    )
     assert city == {
         "sequence": 11,
         "official_code": "231002",
@@ -54,13 +59,16 @@ def test_nagoya_queue_entry_is_complete_but_not_reviewed():
         "inventory_path": "data/indexed/nagoya-city/source_inventory.json",
     }
     complete_count = sum(
-        item["status"] == "source_inventory_complete" for item in queue["execution_queue"]
+        item["status"] == "source_inventory_complete"
+        for item in queue["execution_queue"]
     )
     partial_count = sum(
-        item["status"] == "source_inventory_partial" for item in queue["execution_queue"]
+        item["status"] == "source_inventory_partial"
+        for item in queue["execution_queue"]
     )
     pending_count = sum(
-        item["status"] == "pending_source_inventory" for item in queue["execution_queue"]
+        item["status"] == "pending_source_inventory"
+        for item in queue["execution_queue"]
     )
     assert queue["summary"]["source_inventory_complete_count"] == complete_count
     assert queue["summary"]["source_inventory_partial_count"] == partial_count
