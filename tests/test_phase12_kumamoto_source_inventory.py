@@ -32,17 +32,30 @@ def test_kumamoto_preserves_budget_state_boundary():
         "current_plan_name": "熊本市第8次総合計画",
     }
     assert inventory["unresolved_layers"][0]["layer"] == "enacted_budget"
-    proposal = next(source for source in inventory["sources"] if source["layer"] == "budget_proposal")
-    assert "must not be relabeled as final enacted budget values" in proposal["review_boundary"]
+    proposal = next(
+        source
+        for source in inventory["sources"]
+        if source["layer"] == "budget_proposal"
+    )
+    assert (
+        "must not be relabeled as final enacted budget values"
+        in proposal["review_boundary"]
+    )
 
 
 def test_kumamoto_queue_closes_pending_source_inventory_count():
     queue = load(QUEUE_PATH)
-    city = next(item for item in queue["execution_queue"] if item["official_code"] == "431001")
+    city = next(
+        item for item in queue["execution_queue"] if item["official_code"] == "431001"
+    )
     assert city["status"] == "source_inventory_partial"
     assert city["inventory_path"] == "data/indexed/kumamoto-city/source_inventory.json"
     statuses = [item["status"] for item in queue["execution_queue"]]
-    assert queue["summary"]["source_inventory_complete_count"] == statuses.count("source_inventory_complete")
-    assert queue["summary"]["source_inventory_partial_count"] == statuses.count("source_inventory_partial")
+    assert queue["summary"]["source_inventory_complete_count"] == statuses.count(
+        "source_inventory_complete"
+    )
+    assert queue["summary"]["source_inventory_partial_count"] == statuses.count(
+        "source_inventory_partial"
+    )
     assert queue["summary"]["pending_city_count"] == 0
     assert "pending_source_inventory" not in statuses
