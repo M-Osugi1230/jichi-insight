@@ -15,6 +15,19 @@ def load(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def assert_summary_matches_queue(queue: dict) -> None:
+    statuses = [item["status"] for item in queue["execution_queue"]]
+    assert queue["summary"]["source_inventory_complete_count"] == statuses.count(
+        "source_inventory_complete"
+    )
+    assert queue["summary"]["source_inventory_partial_count"] == statuses.count(
+        "source_inventory_partial"
+    )
+    assert queue["summary"]["pending_city_count"] == statuses.count(
+        "pending_source_inventory"
+    )
+
+
 def test_niigata_inventory_matches_schema():
     validator = Draft202012Validator(
         load(SCHEMA_PATH), format_checker=FormatChecker()
@@ -63,5 +76,4 @@ def test_niigata_queue_entry_is_complete_but_not_reviewed():
         "status": "source_inventory_complete",
         "inventory_path": "data/indexed/niigata-city/source_inventory.json",
     }
-    assert queue["summary"]["source_inventory_complete_count"] == 7
-    assert queue["summary"]["pending_city_count"] == 10
+    assert_summary_matches_queue(queue)
