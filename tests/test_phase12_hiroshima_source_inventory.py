@@ -27,18 +27,34 @@ def test_hiroshima_keeps_current_cycle_progress_unresolved():
     assert inventory["official_code"] == "341002"
     assert inventory["status"] == "source_inventory_partial"
     assert inventory["unresolved_layers"][0]["layer"] == "annual_progress"
-    implementation = next(source for source in inventory["sources"] if source["layer"] == "implementation_plan")
+    implementation = next(
+        source
+        for source in inventory["sources"]
+        if source["layer"] == "implementation_plan"
+    )
     assert implementation["effective_period"] == "2025年度～2030年度"
-    governance = next(source for source in inventory["sources"] if source["layer"] == "progress_governance")
+    governance = next(
+        source
+        for source in inventory["sources"]
+        if source["layer"] == "progress_governance"
+    )
     assert "not inferred" in governance["review_boundary"]
 
 
 def test_hiroshima_queue_entry_is_partial_and_counts_are_consistent():
     queue = load(QUEUE_PATH)
-    city = next(item for item in queue["execution_queue"] if item["official_code"] == "341002")
+    city = next(
+        item for item in queue["execution_queue"] if item["official_code"] == "341002"
+    )
     assert city["status"] == "source_inventory_partial"
     assert city["inventory_path"] == "data/indexed/hiroshima-city/source_inventory.json"
     statuses = [item["status"] for item in queue["execution_queue"]]
-    assert queue["summary"]["source_inventory_complete_count"] == statuses.count("source_inventory_complete")
-    assert queue["summary"]["source_inventory_partial_count"] == statuses.count("source_inventory_partial")
-    assert queue["summary"]["pending_city_count"] == statuses.count("pending_source_inventory")
+    assert queue["summary"]["source_inventory_complete_count"] == statuses.count(
+        "source_inventory_complete"
+    )
+    assert queue["summary"]["source_inventory_partial_count"] == statuses.count(
+        "source_inventory_partial"
+    )
+    assert queue["summary"]["pending_city_count"] == statuses.count(
+        "pending_source_inventory"
+    )
