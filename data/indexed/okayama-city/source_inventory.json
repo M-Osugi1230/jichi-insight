@@ -1,0 +1,71 @@
+{
+  "id": "phase12-okayama-source-inventory",
+  "phase": 12,
+  "status": "source_inventory_partial",
+  "official_code": "331007",
+  "name_ja": "岡山市",
+  "prefecture_name_ja": "岡山県",
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "start_fiscal_year": 2026,
+    "end_fiscal_year": 2035,
+    "current_plan_name": "岡山市第七次総合計画"
+  },
+  "sources": [
+    {
+      "id": "okayama-seventh-comprehensive-plan",
+      "layer": "comprehensive_plan",
+      "title": "岡山市第七次総合計画",
+      "official_url": "https://www.city.okayama.jp/shisei/0000078071.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2035年度",
+      "review_boundary": "The current ten-year long-term concept is verified. Policy definitions, target values, denominators, and page-level evidence remain unreviewed."
+    },
+    {
+      "id": "okayama-seventh-first-midterm-plan",
+      "layer": "implementation_plan",
+      "title": "岡山市第七次総合計画 前期中期計画",
+      "official_url": "https://www.city.okayama.jp/shisei/0000078071.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2030年度",
+      "review_boundary": "The current five-year policy and implementation layer is verified. The 30 policy indicators, individual measures, projects, and fiscal links remain unreviewed."
+    },
+    {
+      "id": "okayama-seventh-plan-progress-governance",
+      "layer": "progress_governance",
+      "title": "第七次総合計画 前期中期計画の進行管理",
+      "official_url": "https://www.city.okayama.jp/shisei/0000079070.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度以降毎年度",
+      "review_boundary": "The official plan establishes annual PDCA evaluation for 30 policies and publication of results. This verifies the governance route only and does not infer a completed current-plan annual result."
+    },
+    {
+      "id": "okayama-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算",
+      "official_url": "https://www.city.okayama.jp/shisei/0000075851.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "The fiscal 2026 budget landing and initial budget books are verified. Initial, supplementary, request-stage, account-level, and project-level values remain separate until record-level review."
+    },
+    {
+      "id": "okayama-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度決算",
+      "official_url": "https://www.city.okayama.jp/shisei/0000074977.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "The fiscal 2024 settlement landing and financial-statement route are verified. General, special, enterprise, financial-statement, audit, and policy-outcome records remain separate until record-level review."
+    }
+  ],
+  "unresolved_layers": [
+    {
+      "layer": "annual_progress",
+      "status": "current_plan_first_annual_result_not_yet_published_or_resolved",
+      "boundary": "The seventh comprehensive plan began in fiscal 2026. Its annual PDCA method is specified, but a completed current-plan annual progress result has not yet been resolved and prior sixth-plan reports must not be substituted."
+    }
+  ],
+  "quality_boundary": "This partial inventory confirms the current 2026–2035 comprehensive plan, its 2026–2030 first midterm implementation layer, the official annual PDCA governance model, fiscal 2026 budget, and fiscal 2024 settlement. It does not substitute sixth-plan reports for seventh-plan progress or promote indicators, projects, budget, settlement, governance, or outcomes to Reviewed, linked, comparable, causal, or policy-achievement status.",
+  "next_action": "Capture the first published seventh-plan annual PDCA report when available, then review the 30 policy indicators, measure and project mappings, fiscal 2026 budget records, and fiscal 2024 settlement evidence at record level while preserving the sixth-to-seventh plan version boundary.",
+  "verified_at": "2026-08-08"
+}

@@ -6,8 +6,8 @@ from pathlib import Path
 from jsonschema import Draft202012Validator, FormatChecker
 
 ROOT = Path(__file__).resolve().parents[1]
-INVENTORY_PATH = ROOT / "data/indexed/kawasaki-city/source_inventory.json"
-SCHEMA_PATH = ROOT / "schemas/phase12_kawasaki_source_inventory.schema.json"
+INVENTORY_PATH = ROOT / "data/indexed/shizuoka-city/source_inventory.json"
+SCHEMA_PATH = ROOT / "schemas/phase12_shizuoka_source_inventory.schema.json"
 QUEUE_PATH = ROOT / "data/catalog/phase12_designated_city_execution_queue.json"
 
 
@@ -28,47 +28,52 @@ def assert_summary_matches_queue(queue: dict) -> None:
     )
 
 
-def test_kawasaki_inventory_matches_schema():
+def test_shizuoka_partial_inventory_matches_schema():
     validator = Draft202012Validator(
         load(SCHEMA_PATH), format_checker=FormatChecker()
     )
     assert list(validator.iter_errors(load(INVENTORY_PATH))) == []
 
 
-def test_kawasaki_inventory_preserves_current_and_prior_plan_boundary():
+def test_shizuoka_preserves_unresolved_citywide_progress_boundary():
     inventory = load(INVENTORY_PATH)
-    assert inventory["official_code"] == "141305"
+    assert inventory["official_code"] == "221007"
+    assert inventory["status"] == "source_inventory_partial"
     assert inventory["review_status"] == "indexed_not_reviewed"
     assert inventory["plan_period"] == {
-        "start_fiscal_year": 2026,
-        "end_fiscal_year": 2029,
-        "current_plan_name": "川崎市総合計画 第4期実施計画",
+        "start_fiscal_year": 2023,
+        "end_fiscal_year": 2030,
+        "current_plan_name": "第4次静岡市総合計画",
     }
     assert {source["layer"] for source in inventory["sources"]} == {
         "comprehensive_plan",
         "implementation_plan",
-        "annual_progress",
         "budget",
         "settlement",
     }
-    progress = next(
-        source for source in inventory["sources"] if source["layer"] == "annual_progress"
-    )
-    assert "prior 2022–2025 implementation plan" in progress["review_boundary"]
-    assert "must not be used as an actual" in progress["review_boundary"]
+    assert inventory["unresolved_layers"] == [
+        {
+            "layer": "annual_progress",
+            "status": "official_citywide_progress_landing_not_yet_resolved",
+            "boundary": inventory["unresolved_layers"][0]["boundary"],
+        }
+    ]
+    assert "Sector-plan progress must not be substituted" in inventory[
+        "unresolved_layers"
+    ][0]["boundary"]
 
 
-def test_kawasaki_queue_entry_is_complete_but_not_reviewed():
+def test_shizuoka_queue_entry_stays_partial_until_progress_is_resolved():
     queue = load(QUEUE_PATH)
     city = next(
-        item for item in queue["execution_queue"] if item["official_code"] == "141305"
+        item for item in queue["execution_queue"] if item["official_code"] == "221007"
     )
     assert city == {
-        "sequence": 6,
-        "official_code": "141305",
-        "name_ja": "川崎市",
-        "prefecture_name_ja": "神奈川県",
-        "status": "source_inventory_complete",
-        "inventory_path": "data/indexed/kawasaki-city/source_inventory.json",
+        "sequence": 9,
+        "official_code": "221007",
+        "name_ja": "静岡市",
+        "prefecture_name_ja": "静岡県",
+        "status": "source_inventory_partial",
+        "inventory_path": "data/indexed/shizuoka-city/source_inventory.json",
     }
     assert_summary_matches_queue(queue)

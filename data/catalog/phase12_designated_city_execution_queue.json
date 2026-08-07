@@ -25,19 +25,19 @@
     {"sequence":4,"official_code":"121002","name_ja":"千葉市","prefecture_name_ja":"千葉県","status":"source_inventory_complete","inventory_path":"data/indexed/chiba-city/source_inventory.json"},
     {"sequence":5,"official_code":"141003","name_ja":"横浜市","prefecture_name_ja":"神奈川県","status":"source_inventory_complete","inventory_path":"data/indexed/yokohama-city/source_inventory.json"},
     {"sequence":6,"official_code":"141305","name_ja":"川崎市","prefecture_name_ja":"神奈川県","status":"source_inventory_complete","inventory_path":"data/indexed/kawasaki-city/source_inventory.json"},
-    {"sequence":7,"official_code":"141500","name_ja":"相模原市","prefecture_name_ja":"神奈川県","status":"pending_source_inventory"},
-    {"sequence":8,"official_code":"151009","name_ja":"新潟市","prefecture_name_ja":"新潟県","status":"pending_source_inventory"},
-    {"sequence":9,"official_code":"221007","name_ja":"静岡市","prefecture_name_ja":"静岡県","status":"pending_source_inventory"},
-    {"sequence":10,"official_code":"221309","name_ja":"浜松市","prefecture_name_ja":"静岡県","status":"pending_source_inventory"},
-    {"sequence":11,"official_code":"231002","name_ja":"名古屋市","prefecture_name_ja":"愛知県","status":"pending_source_inventory"},
-    {"sequence":12,"official_code":"261009","name_ja":"京都市","prefecture_name_ja":"京都府","status":"pending_source_inventory"},
-    {"sequence":13,"official_code":"271004","name_ja":"大阪市","prefecture_name_ja":"大阪府","status":"pending_source_inventory"},
-    {"sequence":14,"official_code":"271403","name_ja":"堺市","prefecture_name_ja":"大阪府","status":"pending_source_inventory"},
-    {"sequence":15,"official_code":"281000","name_ja":"神戸市","prefecture_name_ja":"兵庫県","status":"pending_source_inventory"},
-    {"sequence":16,"official_code":"331007","name_ja":"岡山市","prefecture_name_ja":"岡山県","status":"pending_source_inventory"},
-    {"sequence":17,"official_code":"341002","name_ja":"広島市","prefecture_name_ja":"広島県","status":"pending_source_inventory"},
-    {"sequence":18,"official_code":"431001","name_ja":"熊本市","prefecture_name_ja":"熊本県","status":"pending_source_inventory"}
+    {"sequence":7,"official_code":"141500","name_ja":"相模原市","prefecture_name_ja":"神奈川県","status":"source_inventory_complete","inventory_path":"data/indexed/sagamihara-city/source_inventory.json"},
+    {"sequence":8,"official_code":"151009","name_ja":"新潟市","prefecture_name_ja":"新潟県","status":"source_inventory_complete","inventory_path":"data/indexed/niigata-city/source_inventory.json"},
+    {"sequence":9,"official_code":"221007","name_ja":"静岡市","prefecture_name_ja":"静岡県","status":"source_inventory_partial","inventory_path":"data/indexed/shizuoka-city/source_inventory.json"},
+    {"sequence":10,"official_code":"221309","name_ja":"浜松市","prefecture_name_ja":"静岡県","status":"source_inventory_complete","inventory_path":"data/indexed/hamamatsu-city/source_inventory.json"},
+    {"sequence":11,"official_code":"231002","name_ja":"名古屋市","prefecture_name_ja":"愛知県","status":"source_inventory_complete","inventory_path":"data/indexed/nagoya-city/source_inventory.json"},
+    {"sequence":12,"official_code":"261009","name_ja":"京都市","prefecture_name_ja":"京都府","status":"source_inventory_complete","inventory_path":"data/indexed/kyoto-city/source_inventory.json"},
+    {"sequence":13,"official_code":"271004","name_ja":"大阪市","prefecture_name_ja":"大阪府","status":"source_inventory_complete","inventory_path":"data/indexed/osaka-city/source_inventory.json"},
+    {"sequence":14,"official_code":"271403","name_ja":"堺市","prefecture_name_ja":"大阪府","status":"source_inventory_partial","inventory_path":"data/indexed/sakai-city/source_inventory.json"},
+    {"sequence":15,"official_code":"281000","name_ja":"神戸市","prefecture_name_ja":"兵庫県","status":"source_inventory_partial","inventory_path":"data/indexed/kobe-city/source_inventory.json"},
+    {"sequence":16,"official_code":"331007","name_ja":"岡山市","prefecture_name_ja":"岡山県","status":"source_inventory_partial","inventory_path":"data/indexed/okayama-city/source_inventory.json"},
+    {"sequence":17,"official_code":"341002","name_ja":"広島市","prefecture_name_ja":"広島県","status":"source_inventory_partial","inventory_path":"data/indexed/hiroshima-city/source_inventory.json"},
+    {"sequence":18,"official_code":"431001","name_ja":"熊本市","prefecture_name_ja":"熊本県","status":"source_inventory_partial","inventory_path":"data/indexed/kumamoto-city/source_inventory.json"}
   ],
-  "summary": {"designated_city_count":20,"reference_implementation_count":2,"queued_city_count":18,"reviewed_city_count":2,"source_inventory_complete_count":5,"source_inventory_partial_count":1,"pending_city_count":12,"next_official_code":"111007"},
-  "updated_at": "2026-08-06"
+  "summary": {"designated_city_count":20,"reference_implementation_count":2,"queued_city_count":18,"reviewed_city_count":2,"source_inventory_complete_count":11,"source_inventory_partial_count":7,"pending_city_count":0,"next_official_code":"111007"},
+  "updated_at": "2026-08-08"
 }

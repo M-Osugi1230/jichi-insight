@@ -1,0 +1,27 @@
+{
+  "id": "phase12-hiroshima-source-inventory",
+  "phase": 12,
+  "status": "source_inventory_partial",
+  "official_code": "341002",
+  "name_ja": "広島市",
+  "prefecture_name_ja": "広島県",
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "start_fiscal_year": 2020,
+    "end_fiscal_year": 2030,
+    "current_plan_name": "第6次広島市基本計画"
+  },
+  "sources": [
+    {"id":"hiroshima-sixth-basic-plan","layer":"comprehensive_plan","title":"第6次広島市基本計画","official_url":"https://www.city.hiroshima.lg.jp/shisei/keikaku-shingikai/1021764/1017052.html","status":"official_landing_verified","effective_period":"2020年度～2030年度","review_boundary":"The current basic plan and its 2020–2030 period are verified. Policy targets, indicators, denominators, and page-level evidence remain unreviewed."},
+    {"id":"hiroshima-implementation-2025-2030","layer":"implementation_plan","title":"広島市実施計画（2025-2030）、第3期「世界に誇れる『まち』広島」創生総合戦略","official_url":"https://www.city.hiroshima.lg.jp/faq/administration/1001679/1002826.html","status":"official_landing_verified","effective_period":"2025年度～2030年度","review_boundary":"The current implementation and fiscal-planning layer is verified. Individual projects, KPI records, financial-plan values, and cross-program links remain unreviewed."},
+    {"id":"hiroshima-current-plan-pdca","layer":"progress_governance","title":"広島市実施計画のPDCAサイクル","official_url":"https://www.city.hiroshima.lg.jp/shisei/toukei/1006109/1027849/1048203/1048213.html","status":"official_landing_verified","effective_period":"2025年度以降","review_boundary":"The official current-plan PDCA method, KPI-based verification, and external stakeholder input route are verified. A completed current implementation-plan annual result is not inferred from governance alone."},
+    {"id":"hiroshima-budget-2026","layer":"budget","title":"令和8年度当初予算","official_url":"https://www.city.hiroshima.lg.jp/shisei/zaisei/1003079/1043845/1047851.html","status":"official_landing_verified","fiscal_year":2026,"review_boundary":"The fiscal 2026 initial-budget landing is verified. Initial, supplementary, account-level, district-level, project-level, and explanatory records remain separate until record-level review."},
+    {"id":"hiroshima-settlement-2024","layer":"settlement","title":"令和6年度会計決算の概況","official_url":"https://www.city.hiroshima.lg.jp/shisei/zaisei/1006014/1027444/1044141.html","status":"official_landing_verified","fiscal_year":2024,"review_boundary":"The fiscal 2024 settlement overview is verified. Account summaries, financial statements, health ratios, audit records, and policy outcomes remain separate until record-level review."}
+  ],
+  "unresolved_layers": [
+    {"layer":"annual_progress","status":"current_implementation_plan_annual_result_not_yet_resolved","boundary":"The 2025–2030 implementation plan has an official KPI-based PDCA framework, but a canonical published annual result for the current implementation-plan cycle has not yet been resolved and prior 2020–2024 cycle results must not be substituted."}
+  ],
+  "quality_boundary": "This partial inventory confirms the current basic plan, current 2025–2030 implementation plan, official PDCA governance route, fiscal 2026 budget, and fiscal 2024 settlement. It does not substitute the prior implementation cycle for current annual progress or promote KPI, project, budget, settlement, governance, or outcome records to Reviewed, linked, comparable, causal, or policy-achievement status.",
+  "next_action": "Resolve the first canonical annual result for the 2025–2030 implementation-plan cycle, then review KPI definitions, implementation projects, fiscal-plan records, fiscal 2026 budget records, and fiscal 2024 settlement evidence at record level while preserving the 2020–2024 versus 2025–2030 cycle boundary.",
+  "verified_at": "2026-08-08"
+}

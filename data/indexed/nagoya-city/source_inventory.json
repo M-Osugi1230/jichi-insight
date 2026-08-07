@@ -1,0 +1,64 @@
+{
+  "id": "phase12-nagoya-source-inventory",
+  "phase": 12,
+  "status": "source_inventory_complete",
+  "official_code": "231002",
+  "name_ja": "名古屋市",
+  "prefecture_name_ja": "愛知県",
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "start_fiscal_year": 2024,
+    "end_fiscal_year": 2028,
+    "current_plan_name": "名古屋市総合計画2028"
+  },
+  "sources": [
+    {
+      "id": "nagoya-comprehensive-plan-2028",
+      "layer": "comprehensive_plan",
+      "title": "名古屋市総合計画2028",
+      "official_url": "https://www.city.nagoya.jp/shisei/keikaku/1010854/1010856/1010858.html",
+      "status": "official_landing_verified",
+      "effective_period": "2024年度～2028年度",
+      "review_boundary": "The current five-year comprehensive plan and its 2040 outlook are verified. Individual indicators, target values, projects, and page-level evidence remain unreviewed."
+    },
+    {
+      "id": "nagoya-embedded-implementation-2028",
+      "layer": "implementation_plan",
+      "title": "名古屋市総合計画2028（42施策・506掲載事業）",
+      "official_url": "https://www.city.nagoya.jp/shisei/keikaku/1010854/1010856/1010858.html",
+      "status": "official_landing_verified",
+      "effective_period": "2024年度～2028年度",
+      "review_boundary": "Nagoya embeds the implementation layer in the comprehensive plan through 42 measures and 506 listed projects rather than a separately verified citywide implementation-plan landing. Project identity, cost, owner, and annual execution remain unreviewed."
+    },
+    {
+      "id": "nagoya-progress-2024",
+      "layer": "annual_progress",
+      "title": "名古屋市総合計画2028進行管理（令和6年度）",
+      "official_url": "https://www.city.nagoya.jp/shisei/keikaku/1010854/1010856/1040445/1040446.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "The citywide progress report covers 42 measures, 135 plan indicators, and 506 listed projects. Reported achievement or progress classifications are source statements and are not promoted to Jichi Insight policy-achievement judgments."
+    },
+    {
+      "id": "nagoya-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度名古屋市各会計予算（修正後）",
+      "official_url": "https://www.city.nagoya.jp/shisei/zaisei/1002655/1042582/1042583/1046227/1046325/1046326.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "The enacted fiscal 2026 budget landing is verified after the council amendment. General, special, and public-enterprise accounts remain separate, and amended amounts are not linked to policy outcomes without record-level review."
+    },
+    {
+      "id": "nagoya-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度名古屋市各会計歳入歳出決算及び基金運用状況審査意見書",
+      "official_url": "https://www.city.nagoya.jp/shisei/kansa/1030226/1030276/1040364.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "The official all-account settlement review landing is verified. Audit conclusions, account totals, fund operations, public-enterprise accounts, projects, and policy outcomes remain separate evidence roles until reviewed linkage."
+    }
+  ],
+  "quality_boundary": "This inventory confirms Nagoya City's official current-plan, embedded implementation, annual progress, enacted budget, and settlement-review entry points only. It does not convert source-reported achievement classes, project progress, budget values, settlement values, audit conclusions, or narrative outcomes into Reviewed evidence, causal attribution, cross-city comparability, or Jichi Insight policy-achievement judgments.",
+  "next_action": "Review the 42 measures, 135 indicators, and 506 listed projects at record level; preserve the embedded implementation structure instead of inventing a separate plan; connect fiscal 2026 budget and fiscal 2024 settlement evidence only where project identity, period, account, unit, and responsibility are verified.",
+  "verified_at": "2026-08-07"
+}
