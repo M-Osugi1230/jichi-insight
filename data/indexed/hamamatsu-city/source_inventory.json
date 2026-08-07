@@ -1,0 +1,20 @@
+{
+  "id": "phase12-hamamatsu-source-inventory",
+  "phase": 12,
+  "status": "source_inventory_complete",
+  "official_code": "221309",
+  "name_ja": "浜松市",
+  "prefecture_name_ja": "静岡県",
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {"start_fiscal_year": 2025, "end_fiscal_year": 2034, "current_plan_name": "浜松市総合計画 第2期基本計画"},
+  "sources": [
+    {"id":"hamamatsu-basic-plan-2025-2034","layer":"comprehensive_plan","title":"基本計画（2025～2034年度）","official_url":"https://www.city.hamamatsu.shizuoka.jp/kikaku/totalplan2025/plan/index.html","status":"official_landing_verified","effective_period":"2025年度～2034年度","review_boundary":"The second basic plan landing and policy structure are verified. Indicators, denominators, target definitions, and page-level evidence remain unreviewed."},
+    {"id":"hamamatsu-implementation-plan-2026","layer":"implementation_plan","title":"2026年度実施計画","official_url":"https://www.city.hamamatsu.shizuoka.jp/kikaku/spr_rv/seisakukeiseikatei.html","status":"official_landing_verified","effective_period":"2026年度","review_boundary":"The annual implementation plan is verified as the current implementation layer. Projects, responsible units, targets, and fiscal links require record-level review."},
+    {"id":"hamamatsu-review-2026","layer":"annual_progress","title":"実施計画・レビュー","official_url":"https://www.city.hamamatsu.shizuoka.jp/kikaku/spr_rv/seisakukeiseikatei.html","status":"official_landing_verified","available_periods":["2026年度実施計画","過年度評価レポート"],"review_boundary":"The PDCA review route is verified. Prior-plan evaluations and current-plan implementation records remain version-separated until record-level linkage is reviewed."},
+    {"id":"hamamatsu-budget-2026","layer":"budget","title":"令和8年度当初予算の概要","official_url":"https://www.city.hamamatsu.shizuoka.jp/zaisek/budget/budget08/index.html","status":"official_landing_verified","fiscal_year":2026,"review_boundary":"The approved initial-budget landing is verified. Initial budget, supplements, debt authorizations, project financing, and execution remain separate evidence states."},
+    {"id":"hamamatsu-settlement-2024","layer":"settlement","title":"2024（令和6）年度 浜松市の決算","official_url":"https://www.city.hamamatsu.shizuoka.jp/koho2/pr/kouhou_all/2511/3news-02.html","status":"official_landing_verified","fiscal_year":2024,"review_boundary":"The fiscal 2024 settlement publication is verified. General, special, enterprise, preliminary, audit, and project-level records remain separate until reviewed."}
+  ],
+  "quality_boundary": "This inventory confirms the current basic plan, annual implementation and review route, fiscal 2026 initial budget, and fiscal 2024 settlement landing only. It does not promote indicators, evaluation results, budget values, settlement values, projects, or outcomes to Reviewed, linked, comparable, or policy-achievement status.",
+  "next_action": "Map current-plan policy indicators and 2026 implementation projects to page-level evidence, retain prior-plan review records as separate versions, and review fiscal 2026 budget and fiscal 2024 settlement records without inferring causal attribution or cross-city comparability.",
+  "verified_at": "2026-08-07"
+}

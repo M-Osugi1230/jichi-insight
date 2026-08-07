@@ -1,0 +1,76 @@
+{
+  "id": "phase12-sakai-source-inventory",
+  "phase": 12,
+  "status": "source_inventory_partial",
+  "official_code": "271403",
+  "name_ja": "堺市",
+  "prefecture_name_ja": "大阪府",
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "start_fiscal_year": 2026,
+    "end_fiscal_year": 2030,
+    "current_plan_name": "堺市基本計画2030"
+  },
+  "sources": [
+    {
+      "id": "sakai-basic-plan-2030",
+      "layer": "comprehensive_plan",
+      "title": "堺市基本計画2030",
+      "official_url": "https://www.city.sakai.lg.jp/shisei/gyosei/shishin/shisei/kihonkeikaku/kihonnkeikaku2030.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2030年度",
+      "review_boundary": "The current highest-level municipal plan and its 2026–2030 period are verified. KPI definitions, targets, denominators, policy links, and page-level evidence remain unreviewed."
+    },
+    {
+      "id": "sakai-basic-plan-2030-kpi",
+      "layer": "kpi_reference",
+      "title": "堺市基本計画2030のKPI",
+      "official_url": "https://www.city.sakai.lg.jp/shisei/gyosei/shishin/shisei/kihonkeikaku/kihonnkeikaku2030.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2030年度",
+      "review_boundary": "The official KPI reference is verified as supporting material for the current plan. It is not treated as a separate implementation plan, and indicator comparability or achievement is not inferred."
+    },
+    {
+      "id": "sakai-legacy-progress-2025-final",
+      "layer": "legacy_progress",
+      "title": "堺市基本計画2025の進捗状況（2026年1月）",
+      "official_url": "https://www.city.sakai.lg.jp/shisei/gyosei/shishin/shisei/kihonkeikaku/kakokeikaku/kihonkeikaku2025.html",
+      "status": "official_landing_verified",
+      "effective_period": "旧計画2021年度～2025年度",
+      "review_boundary": "The final progress publication for the expired 2021–2025 plan is verified only as version context. It must not be attributed to the current 2026–2030 plan or reused as current-plan achievement evidence."
+    },
+    {
+      "id": "sakai-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算",
+      "official_url": "https://www.city.sakai.lg.jp/shisei/zaisei/yosan_kessan_shushj/yosan/R8yosan.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "The enacted fiscal 2026 budget landing is verified. Initial, supplementary, account-level, project-level, and budget-formation records remain separate until record-level review."
+    },
+    {
+      "id": "sakai-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度決算概要",
+      "official_url": "https://www.city.sakai.lg.jp/shisei/zaisei/yosan_kessan_shushj/kessan/R6kessanngaiyou.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "The fiscal 2024 settlement overview is verified. General, special, enterprise, financial-health, audit, and policy-outcome records remain separate until record-level review."
+    }
+  ],
+  "unresolved_layers": [
+    {
+      "layer": "implementation_plan",
+      "status": "separate_current_implementation_plan_not_yet_resolved",
+      "boundary": "No separate canonical implementation-plan landing for the 2026–2030 basic plan has yet been resolved. The KPI reference and fiscal 2026 project materials must not be relabeled as an implementation plan without official structural evidence."
+    },
+    {
+      "layer": "annual_progress",
+      "status": "current_plan_progress_not_yet_available_or_resolved",
+      "boundary": "The current plan began in fiscal 2026. The January 2026 progress publication belongs to the expired 2021–2025 plan and must not be substituted for current-plan annual progress."
+    }
+  ],
+  "quality_boundary": "This partial inventory confirms the current 2026–2030 basic plan, its official KPI reference, the expired 2021–2025 plan's final progress publication as version context only, fiscal 2026 budget, and fiscal 2024 settlement. It does not invent a separate implementation plan, transfer legacy progress into the current plan, or promote KPI, budget, settlement, project, or outcome records to Reviewed, linked, comparable, causal, or policy-achievement status.",
+  "next_action": "Resolve whether Sakai publishes a canonical implementation layer for Basic Plan 2030 and the first current-plan annual progress source when available, then map KPI definitions, fiscal 2026 project records, and fiscal 2024 settlement evidence at record level while preserving the 2025-to-2030 plan-version boundary.",
+  "verified_at": "2026-08-08"
+}

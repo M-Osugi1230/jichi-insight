@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Phase 12 Osaka official source inventory",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id","phase","status","official_code","name_ja","prefecture_name_ja","review_status","plan_structure","sources","quality_boundary","next_action","verified_at"],
+  "properties": {
+    "id": {"const": "phase12-osaka-source-inventory"},
+    "phase": {"const": 12},
+    "status": {"const": "source_inventory_complete"},
+    "official_code": {"const": "271004"},
+    "name_ja": {"const": "大阪市"},
+    "prefecture_name_ja": {"const": "大阪府"},
+    "review_status": {"const": "indexed_not_reviewed"},
+    "plan_structure": {
+      "type": "object", "additionalProperties": false,
+      "required": ["current_plan_name","period_status","implementation_model"],
+      "properties": {
+        "current_plan_name": {"const": "大阪市基本構想"},
+        "period_status": {"const": "no_fixed_end_verified"},
+        "implementation_model": {"const": "annual_city_policy_plus_ward_and_bureau_operating_policies"}
+      }
+    },
+    "sources": {
+      "type": "array", "minItems": 5, "maxItems": 5, "uniqueItems": true,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["id","layer","title","official_url","status","review_boundary"],
+        "properties": {
+          "id": {"type": "string", "minLength": 5},
+          "layer": {"enum": ["comprehensive_plan","implementation_plan","annual_progress","budget","settlement"]},
+          "title": {"type": "string", "minLength": 3},
+          "official_url": {"type": "string", "format": "uri", "pattern": "^https://www\\.city\\.osaka\\.lg\\.jp/"},
+          "status": {"const": "official_landing_verified"},
+          "review_boundary": {"type": "string", "minLength": 60},
+          "fiscal_year": {"type": "integer"}
+        }
+      }
+    },
+    "quality_boundary": {"type": "string", "minLength": 200},
+    "next_action": {"type": "string", "minLength": 140},
+    "verified_at": {"const": "2026-08-07", "format": "date"}
+  }
+}

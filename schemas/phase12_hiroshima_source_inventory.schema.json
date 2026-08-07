@@ -1,0 +1,22 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"Phase 12 Hiroshima official source inventory",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["id","phase","status","official_code","name_ja","prefecture_name_ja","review_status","plan_period","sources","unresolved_layers","quality_boundary","next_action","verified_at"],
+  "properties":{
+    "id":{"const":"phase12-hiroshima-source-inventory"},
+    "phase":{"const":12},
+    "status":{"const":"source_inventory_partial"},
+    "official_code":{"const":"341002"},
+    "name_ja":{"const":"広島市"},
+    "prefecture_name_ja":{"const":"広島県"},
+    "review_status":{"const":"indexed_not_reviewed"},
+    "plan_period":{"type":"object","additionalProperties":false,"required":["start_fiscal_year","end_fiscal_year","current_plan_name"],"properties":{"start_fiscal_year":{"const":2020},"end_fiscal_year":{"const":2030},"current_plan_name":{"const":"第6次広島市基本計画"}}},
+    "sources":{"type":"array","minItems":5,"maxItems":5,"uniqueItems":true,"items":{"type":"object","additionalProperties":false,"required":["id","layer","title","official_url","status","review_boundary"],"properties":{"id":{"type":"string","minLength":5},"layer":{"enum":["comprehensive_plan","implementation_plan","progress_governance","budget","settlement"]},"title":{"type":"string","minLength":3},"official_url":{"type":"string","format":"uri","pattern":"^https://www\\.city\\.hiroshima\\.lg\\.jp/"},"status":{"const":"official_landing_verified"},"review_boundary":{"type":"string","minLength":60},"effective_period":{"type":"string"},"fiscal_year":{"type":"integer"}}}},
+    "unresolved_layers":{"type":"array","minItems":1,"maxItems":1,"items":{"type":"object","additionalProperties":false,"required":["layer","status","boundary"],"properties":{"layer":{"const":"annual_progress"},"status":{"type":"string","minLength":20},"boundary":{"type":"string","minLength":120}}}},
+    "quality_boundary":{"type":"string","minLength":180},
+    "next_action":{"type":"string","minLength":140},
+    "verified_at":{"const":"2026-08-08","format":"date"}
+  }
+}
