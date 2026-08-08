@@ -7,37 +7,46 @@
   "prefecture_name_ja": "静岡県",
   "review_status": "indexed_not_reviewed",
   "plan_period": {
-    "start_fiscal_year": 2023,
-    "end_fiscal_year": 2030,
-    "current_plan_name": "第4次静岡市総合計画"
+    "start_fiscal_year": 2026,
+    "end_fiscal_year": 2035,
+    "current_plan_name": "第5次静岡市総合計画"
   },
   "sources": [
     {
-      "id": "shizuoka-fourth-comprehensive-plan",
+      "id": "shizuoka-fifth-comprehensive-plan",
       "layer": "comprehensive_plan",
-      "title": "第4次静岡市総合計画",
-      "official_url": "https://www.city.shizuoka.lg.jp/s2934/s007372.html",
-      "status": "official_landing_verified",
-      "effective_period": "2023年度～2030年度",
-      "review_boundary": "The council-approved basic concept and basic plan landing is verified. Policy indicators, target definitions, denominators, and page-level evidence remain unreviewed."
+      "title": "第5次静岡市総合計画",
+      "official_url": "https://www.city.shizuoka.lg.jp/s8957/s009252.html",
+      "status": "official_document_route_verified",
+      "effective_period": "2026年度～2035年度",
+      "review_boundary": "The official February 17, 2026 mayoral press-material route publishes the fifth comprehensive plan, and the mayoral policy statement confirms the new 2026–2035 plan period. A dedicated canonical plan landing, exact indicator pages, target definitions, denominators, and record-level evidence remain to be resolved."
     },
     {
-      "id": "shizuoka-fourth-plan-first-implementation",
-      "layer": "implementation_plan",
-      "title": "第4次静岡市総合計画 前期実施計画",
-      "official_url": "https://www.city.shizuoka.lg.jp/s2934/s007372.html",
+      "id": "shizuoka-fifth-plan-implementation-reference",
+      "layer": "implementation_plan_reference",
+      "title": "第5次静岡市総合計画実施計画の期間・評価運用に関する公式参照",
+      "official_url": "https://www.city.shizuoka.lg.jp/s2547/s012631.html",
+      "status": "official_reference_verified",
+      "effective_period": "2026年度～2030年度",
+      "review_boundary": "The official administrative-reform plan states that the fifth comprehensive-plan implementation plan initially covers fiscal 2026–2030 and will be evaluated against planned indicators and revised from results. This page is a structural reference, not a substitute for the canonical implementation-plan document."
+    },
+    {
+      "id": "shizuoka-fourth-plan-progress-2024",
+      "layer": "legacy_progress",
+      "title": "令和6年度 取組評価シート②（第4次総合計画実施計画登載取組）",
+      "official_url": "https://www.city.shizuoka.lg.jp/s2547/s012626.html",
       "status": "official_landing_verified",
-      "effective_period": "2023年度～2026年度",
-      "review_boundary": "The rolling first implementation plan is verified as the current implementation layer. Individual projects, annual revisions, project costs, and fiscal links require record-level review."
+      "reporting_fiscal_year": 2024,
+      "review_boundary": "The fiscal 2024 evaluation sheet covers initiatives listed in the fourth comprehensive-plan implementation plan. It is retained as legacy evidence and must not be attributed to the fifth comprehensive plan that starts in fiscal 2026."
     },
     {
       "id": "shizuoka-budget-2026",
       "layer": "budget",
-      "title": "令和8年度当初予算（案）の概要",
-      "official_url": "https://www.city.shizuoka.lg.jp/documents/56762/01_r8tousyoyosangaiyou.pdf",
-      "status": "official_document_verified",
+      "title": "令和8年度当初予算",
+      "official_url": "https://www.city.shizuoka.lg.jp/s3627/s012583.html",
+      "status": "official_landing_verified",
       "fiscal_year": 2026,
-      "review_boundary": "The official initial-budget document is verified. Prior-year February supplementary amounts, debt-authorized amounts, approved budget values, and project-level financing remain separate evidence states."
+      "review_boundary": "The official fiscal 2026 initial-budget landing publishes the budget proposal overview, account budget books, and explanatory materials. Proposal values, enacted values, supplementary budgets, debt authorizations, execution, and project financing remain separate evidence states until approval status and record-level values are reviewed."
     },
     {
       "id": "shizuoka-settlement-2024",
@@ -46,17 +55,22 @@
       "official_url": "https://www.city.shizuoka.lg.jp/s3627/s008127.html",
       "status": "official_landing_verified",
       "fiscal_year": 2024,
-      "review_boundary": "The fiscal 2024 major-policy-results and settlement publication route is verified. General, special, enterprise, audit-opinion, and financial-health records remain separate until record-level review."
+      "review_boundary": "The fiscal 2024 major-policy-results and settlement publication route is verified. It predates the fifth comprehensive plan; general, special, enterprise, audit-opinion, financial-health, and policy-outcome records remain separate until record-level review."
     }
   ],
   "unresolved_layers": [
     {
+      "layer": "canonical_implementation_plan",
+      "status": "canonical_current_document_not_yet_resolved",
+      "boundary": "An official city page verifies that the fifth-plan implementation period is initially fiscal 2026–2030, but the canonical fifth comprehensive-plan implementation-plan document or dedicated landing has not yet been resolved and must not be replaced by the administrative-reform reference page."
+    },
+    {
       "layer": "annual_progress",
-      "status": "official_citywide_progress_landing_not_yet_resolved",
-      "boundary": "Individual sector plans publish progress reports, but a canonical citywide annual progress or policy-measure evaluation landing for the fourth comprehensive plan has not yet been resolved. Sector-plan progress must not be substituted for overall comprehensive-plan progress."
+      "status": "current_plan_result_not_yet_available",
+      "boundary": "The fifth comprehensive plan starts in fiscal 2026, so fiscal 2024 fourth-plan evaluation material cannot serve as a current fifth-plan annual result. Keep current-plan annual progress unresolved until an official fifth-plan evaluation or progress publication is available."
     }
   ],
-  "quality_boundary": "This partial inventory confirms the current comprehensive plan, first implementation plan, fiscal 2026 initial-budget document, and fiscal 2024 settlement publication route. It does not infer a citywide annual-progress source from sector-specific reports and does not promote indicators, project execution, budget values, settlement values, or outcomes to Reviewed, linked, comparable, or policy-achievement status.",
-  "next_action": "Resolve the canonical citywide annual progress or policy-measure evaluation source for the fourth comprehensive plan, then map plan indicators, implementation projects, fiscal 2026 budget records, and fiscal 2024 settlement records at page-level evidence depth without substituting sector-plan evaluations.",
-  "verified_at": "2026-08-07"
+  "quality_boundary": "This corrected partial inventory recognizes the fifth comprehensive plan as the current 2026–2035 plan, preserves the official 2026–2030 implementation-period reference, and explicitly isolates fiscal 2024 fourth-plan evaluation as legacy evidence. It does not silently carry the fourth plan into the current period and does not promote indicators, progress judgments, projects, budget values, settlement values, causal claims, cross-city comparability, or policy achievement to Reviewed status.",
+  "next_action": "Resolve the canonical fifth comprehensive-plan landing and implementation-plan document, then wait for or resolve an official fifth-plan annual progress publication. Review fiscal 2026 budget approval state and record-level values separately from proposal materials, and retain fiscal 2024 settlement and fourth-plan progress as pre-fifth-plan historical evidence.",
+  "verified_at": "2026-08-08"
 }
