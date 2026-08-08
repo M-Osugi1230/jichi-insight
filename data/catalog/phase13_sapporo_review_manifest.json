@@ -1,0 +1,57 @@
+{
+  "id": "phase13-sapporo-review-manifest",
+  "phase": 13,
+  "status": "review_in_progress",
+  "official_code": "011002",
+  "name_ja": "札幌市",
+  "source_inventory_path": "data/indexed/sapporo-city/source_inventory.json",
+  "promotion_target": "reviewed",
+  "review_packages": [
+    {
+      "id": "sapporo-comprehensive-plan-record-review",
+      "layer": "comprehensive_plan",
+      "source_id": "sapporo-vision2-home",
+      "status": "pending_record_review",
+      "review_requirement": "Resolve the current-plan target and indicator document set, then attach record-level page or stable HTML locations for every promoted plan identity, target, baseline, unit, period, and denominator field."
+    },
+    {
+      "id": "sapporo-implementation-plan-source-resolution",
+      "layer": "implementation_plan",
+      "source_id": "sapporo-action-plan-2023",
+      "status": "blocked_source_verification",
+      "review_requirement": "The Phase 12 inventory marks the Action Plan 2023 landing as still requiring canonical verification. Resolve the authoritative landing and document versions before any project, target, or fiscal linkage is promoted."
+    },
+    {
+      "id": "sapporo-annual-progress-record-review",
+      "layer": "annual_progress",
+      "source_id": "sapporo-vision2-progress",
+      "status": "pending_record_review",
+      "review_requirement": "Review published 2022 through 2025 progress evidence at record level while keeping citizen-survey results distinct from administrative outcome actuals and independent policy-achievement judgments."
+    },
+    {
+      "id": "sapporo-budget-2026-record-review",
+      "layer": "budget",
+      "source_id": "sapporo-budget-2026",
+      "status": "pending_record_review",
+      "review_requirement": "Review fiscal 2026 initial-budget records by account, project, stage, unit, and source location without conflating supplementary budgets, corrections, enterprise accounts, or future fiscal estimates."
+    },
+    {
+      "id": "sapporo-settlement-2024-source-resolution",
+      "layer": "settlement",
+      "source_id": "sapporo-budget-settlement-home",
+      "status": "blocked_source_verification",
+      "review_requirement": "Resolve the canonical fiscal 2024 settlement document set from the verified budget-and-settlement index before reviewing account-level settlement values, carryovers, fund transfers, financial statements, or audit evidence."
+    }
+  ],
+  "summary": {
+    "package_count": 5,
+    "reviewed_package_count": 0,
+    "pending_record_review_count": 3,
+    "blocked_source_verification_count": 2,
+    "reviewed_record_count": 0,
+    "promotion_ready": false,
+    "next_package_id": "sapporo-implementation-plan-source-resolution"
+  },
+  "quality_boundary": "This manifest starts record-level review but promotes no Sapporo records to Reviewed. Phase 12 source identities are used only as review inputs. Canonical source gaps for the implementation plan and fiscal 2024 settlement remain explicit blockers, citizen-survey progress remains distinct from administrative outcomes, and no budget value, outcome, causal claim, cross-city comparison, or policy-achievement judgment is inferred.",
+  "updated_at": "2026-08-08"
+}
