@@ -1,7 +1,7 @@
 {
   "id": "phase12-saitama-source-inventory",
   "phase": 12,
-  "status": "source_inventory_partial",
+  "status": "source_inventory_complete",
   "official_code": "111007",
   "name_ja": "さいたま市",
   "prefecture_name_ja": "埼玉県",
@@ -11,40 +11,54 @@
     "end_fiscal_year": 2030,
     "current_plan_name": "2030さいたま輝く未来と希望のまちプラン"
   },
-  "verified_sources": [
+  "sources": [
     {
-      "id": "saitama-comprehensive-plan-overview",
+      "id": "saitama-basic-plan-2021-2030",
       "layer": "comprehensive_plan",
-      "title": "2030さいたま輝く未来と希望のまちプラン",
-      "official_url": "https://gakushu.city.saitama.jp/sp/search/searchdtl.aspx?ht=5&knd=1&ordtyp=1&pageNum=1&pageSiz=10&skbn=0&stdycd=60701",
-      "status": "official_overview_verified",
+      "title": "総合振興計画基本計画（令和3年度～令和12年度）",
+      "official_url": "https://www.city.saitama.lg.jp/006/007/004/011/004/p080066.html",
+      "status": "official_landing_verified",
       "effective_period": "2021年度～2030年度",
-      "review_boundary": "The official municipal learning system confirms the comprehensive-plan title, purpose, future-city vision, and strategic positioning. The canonical plan PDF, target pages, definitions, and record-level evidence remain unresolved."
-    }
-  ],
-  "unresolved_layers": [
-    {
-      "layer": "canonical_comprehensive_plan",
-      "required_resolution": "Resolve the canonical city landing and current full plan PDF, including revision history and page-level target locations."
+      "review_boundary": "The canonical city landing for the current basic plan is verified. Policy indicators, target definitions, denominators, revisions, and page-level evidence remain unreviewed and must not be inferred from the landing page alone."
     },
     {
+      "id": "saitama-implementation-plan-2026-2030",
       "layer": "implementation_plan",
-      "required_resolution": "Resolve the current implementation-plan edition, period, project list, responsible departments, and target pages."
+      "title": "総合振興計画実施計画（令和8年度～令和12年度）",
+      "official_url": "https://www.city.saitama.lg.jp/006/007/004/011/004/p126453.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2030年度",
+      "review_boundary": "The current five-year implementation plan and its annual-review policy are verified. Individual projects, departments, targets, annual revisions, costs, and fiscal links require record-level evidence review."
     },
     {
+      "id": "saitama-progress-2024",
       "layer": "annual_progress",
-      "required_resolution": "Resolve the official progress-management or evaluation source and keep citizen surveys and administrative actuals separate."
+      "title": "総合振興計画基本計画の令和6年度の実施状況について",
+      "official_url": "https://www.city.saitama.lg.jp/006/007/004/011/006/001/001/p123882.html",
+      "status": "official_landing_verified",
+      "reporting_fiscal_year": 2024,
+      "review_boundary": "The official fiscal 2024 PDCA progress publication for the current 2021–2030 basic plan is verified. It reflects the prior 2021–2025 implementation-plan cycle and must not be relabeled as a result of the 2026–2030 implementation plan."
     },
     {
+      "id": "saitama-budget-2026",
       "layer": "budget",
-      "required_resolution": "Resolve the fiscal 2026 initial-budget landing and separate general, special, enterprise, and supplementary accounts."
+      "title": "令和8年度当初予算",
+      "official_url": "https://www.city.saitama.lg.jp/006/007/011/001/021/p129189.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "The official landing confirms that the fiscal 2026 initial budget was enacted on March 12, 2026. General, special, water, hospital, sewer, supplementary, execution, and project-financing records remain separate evidence states."
     },
     {
+      "id": "saitama-settlement-2024",
       "layer": "settlement",
-      "required_resolution": "Resolve the fiscal 2024 settlement landing and separate settlement, execution, major-project explanation, and outcome evidence."
+      "title": "令和6年度決算",
+      "official_url": "https://www.city.saitama.lg.jp/006/007/011/002/p124022.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "The fiscal 2024 settlement landing, general-account overview, administrative report, and continuing-expenditure settlement route are verified. Account-level values, audit findings, execution, and policy outcomes remain separate until record-level review."
     }
   ],
-  "quality_boundary": "This partial inventory records only a verified official overview of the current comprehensive plan. It does not invent unresolved city URLs or promote plan claims, targets, surveys, projects, budget values, settlement values, or outcome claims to Reviewed, linked, comparable, or policy-achievement status.",
-  "next_action": "Resolve the canonical comprehensive-plan landing first, then the implementation plan, annual progress source, fiscal 2026 budget, and fiscal 2024 settlement. Promote the city to source-inventory-complete only after all five layers have verified official entry points.",
-  "verified_at": "2026-08-06"
+  "quality_boundary": "This inventory verifies the canonical current basic plan, the current 2026–2030 implementation plan, the fiscal 2024 PDCA progress route, the enacted fiscal 2026 initial budget, and the fiscal 2024 settlement route. It does not promote plan indicators, progress judgments, projects, budget values, settlement values, or outcomes to Reviewed, linked, comparable, causal, or policy-achievement status, and it keeps the 2024 progress report version-separated from the new 2026–2030 implementation plan.",
+  "next_action": "Review the current basic-plan indicators and 2026–2030 implementation projects at page-level evidence depth, preserve the prior implementation-cycle boundary for fiscal 2024 progress, and map fiscal 2026 budget and fiscal 2024 settlement records without inferring causal attribution or cross-city comparability.",
+  "verified_at": "2026-08-08"
 }
