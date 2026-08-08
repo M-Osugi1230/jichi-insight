@@ -25,10 +25,10 @@
       "id": "sapporo-action-plan-2023",
       "layer": "implementation_plan",
       "title": "第2次札幌市まちづくり戦略ビジョン・アクションプラン2023",
-      "official_url": "https://www.city.sapporo.jp/kikaku/actionplan2023/",
-      "status": "official_landing_to_verify",
-      "effective_period": "2023年度以降の5年間",
-      "review_boundary": "The plan is identified from official Sapporo materials, but the canonical landing, document versions, projects, targets, and fiscal links require record-level verification."
+      "official_url": "https://www.city.sapporo.jp/chosei/actionplan2023.html",
+      "status": "official_landing_verified",
+      "effective_period": "2023年度～2027年度",
+      "review_boundary": "The canonical official landing is verified. Phase 13 reviewed the five-year period, 599 planned projects, and total planned project cost of 1.7854 trillion yen. Individual project records, targets, page locations, and fiscal links still require record-level review."
     },
     {
       "id": "sapporo-vision2-progress",
@@ -38,6 +38,15 @@
       "status": "official_landing_verified",
       "available_periods": ["2022年度", "2023年度", "2024年度", "2025年度"],
       "review_boundary": "Citizen survey results are official progress evidence but are not automatically equivalent to administrative outcome actuals or policy achievement."
+    },
+    {
+      "id": "sapporo-action-plan-2023-progress",
+      "layer": "annual_progress",
+      "title": "計画の進捗報告（第2次札幌市まちづくり戦略ビジョン・アクションプラン2023）",
+      "official_url": "https://www.city.sapporo.jp/chosei/actionplan2023-shinchoku.html",
+      "status": "official_landing_verified",
+      "available_periods": ["2023年度実績", "2024年度実績"],
+      "review_boundary": "Phase 13 reviewed aggregate source-reported facts from the 2025 report: 17 of 26 outcome indicators above the planning baseline, 394 of 403 principal project targets expected to be achieved, and a mixed settlement-plus-budget cumulative project amount of 998.3 billion yen. These values are not independent Jichi Insight achievement judgments."
     },
     {
       "id": "sapporo-budget-2026",
@@ -58,7 +67,7 @@
       "review_boundary": "Budget and settlement values must remain separated by fiscal year, account, revision stage, carryover, and fund transfer."
     }
   ],
-  "quality_boundary": "This inventory confirms official entry points and high-level periods only. It does not promote extracted statements, survey values, budget projects, or settlement values to Reviewed, linked, comparable, or policy-achievement status.",
-  "next_action": "Resolve the canonical Action Plan 2023 landing and document set, then review comprehensive-plan targets, annual progress evidence, budget projects, and fiscal 2024 settlement records at page-level evidence depth.",
-  "verified_at": "2026-08-06"
+  "quality_boundary": "This inventory confirms official entry points and high-level periods. Phase 13 has promoted selected fiscal and implementation-plan aggregate facts to Reviewed in separate review packages, while individual policy targets, projects, survey values, fiscal links, cross-city comparability, causal claims, and policy-achievement judgments remain outside this inventory state.",
+  "next_action": "Review the second strategic vision policy targets and the Action Plan 2023 individual 599-project catalog at page-level evidence depth, then expand the 2025 progress report from aggregate facts to its 26 individual outcome indicators and 403 principal project targets.",
+  "verified_at": "2026-08-08"
 }
