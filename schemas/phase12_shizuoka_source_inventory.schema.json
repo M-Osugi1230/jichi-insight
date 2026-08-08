@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Phase 12 Shizuoka official source inventory",
+  "title": "Phase 12 Shizuoka current-plan partial official source inventory",
   "type": "object",
   "additionalProperties": false,
   "required": ["id","phase","status","official_code","name_ja","prefecture_name_ja","review_status","plan_period","sources","unresolved_layers","quality_boundary","next_action","verified_at"],
@@ -17,15 +17,15 @@
       "additionalProperties": false,
       "required": ["start_fiscal_year","end_fiscal_year","current_plan_name"],
       "properties": {
-        "start_fiscal_year": {"const": 2023},
-        "end_fiscal_year": {"const": 2030},
-        "current_plan_name": {"const": "第4次静岡市総合計画"}
+        "start_fiscal_year": {"const": 2026},
+        "end_fiscal_year": {"const": 2035},
+        "current_plan_name": {"const": "第5次静岡市総合計画"}
       }
     },
     "sources": {
       "type": "array",
-      "minItems": 4,
-      "maxItems": 4,
+      "minItems": 5,
+      "maxItems": 5,
       "uniqueItems": true,
       "items": {
         "type": "object",
@@ -33,33 +33,35 @@
         "required": ["id","layer","title","official_url","status","review_boundary"],
         "properties": {
           "id": {"type": "string", "minLength": 5},
-          "layer": {"enum": ["comprehensive_plan","implementation_plan","budget","settlement"]},
+          "layer": {"enum": ["comprehensive_plan","implementation_plan_reference","legacy_progress","budget","settlement"]},
           "title": {"type": "string", "minLength": 2},
           "official_url": {"type": "string", "format": "uri", "pattern": "^https://www\\.city\\.shizuoka\\.lg\\.jp/"},
-          "status": {"enum": ["official_landing_verified","official_document_verified"]},
-          "review_boundary": {"type": "string", "minLength": 80},
-          "effective_period": {"type": "string"},
-          "fiscal_year": {"type": "integer"}
+          "status": {"enum": ["official_landing_verified","official_document_route_verified","official_reference_verified"]},
+          "review_boundary": {"type": "string", "minLength": 120},
+          "effective_period": {"type": "string", "minLength": 8},
+          "fiscal_year": {"type": "integer", "minimum": 2024, "maximum": 2026},
+          "reporting_fiscal_year": {"type": "integer", "minimum": 2024, "maximum": 2024}
         }
       }
     },
     "unresolved_layers": {
       "type": "array",
-      "minItems": 1,
-      "maxItems": 1,
+      "minItems": 2,
+      "maxItems": 2,
+      "uniqueItems": true,
       "items": {
         "type": "object",
         "additionalProperties": false,
         "required": ["layer","status","boundary"],
         "properties": {
-          "layer": {"const": "annual_progress"},
-          "status": {"const": "official_citywide_progress_landing_not_yet_resolved"},
-          "boundary": {"type": "string", "minLength": 120}
+          "layer": {"enum": ["canonical_implementation_plan","annual_progress"]},
+          "status": {"enum": ["canonical_current_document_not_yet_resolved","current_plan_result_not_yet_available"]},
+          "boundary": {"type": "string", "minLength": 160}
         }
       }
     },
-    "quality_boundary": {"type": "string", "minLength": 200},
-    "next_action": {"type": "string", "minLength": 160},
-    "verified_at": {"const": "2026-08-07", "format": "date"}
+    "quality_boundary": {"type": "string", "minLength": 300},
+    "next_action": {"type": "string", "minLength": 220},
+    "verified_at": {"const": "2026-08-08", "format": "date"}
   }
 }
