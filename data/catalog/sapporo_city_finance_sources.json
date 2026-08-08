@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-08-08",
+  "scope": "phase13-designated-city-review",
+  "records": [
+    {
+      "id": "sapporo-city-home",
+      "municipality_key": "sapporo-city",
+      "organization": "札幌市",
+      "category": "municipality_profile",
+      "title": "札幌市公式ホームページ",
+      "url": "https://www.city.sapporo.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-08-08",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "札幌市の公式自治体サイト。"
+    },
+    {
+      "id": "sapporo-city-budget-2026-page",
+      "municipality_key": "sapporo-city",
+      "organization": "札幌市",
+      "category": "budget",
+      "title": "令和8年度予算",
+      "url": "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r8/reiwa8nendo_yosan.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-08-08",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算案の規模を掲載する公式ページ。予算案であり、補正後予算・執行額・決算額とは区別する。"
+    },
+    {
+      "id": "sapporo-city-settlement-2024-page",
+      "municipality_key": "sapporo-city",
+      "organization": "札幌市",
+      "category": "settlement",
+      "title": "令和6年度予算・決算",
+      "url": "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r6/reiwa6nendo_yosan.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-08-08",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "令和6年度一般会計の歳入・歳出決算概要と決算書等への公式入口。"
+    }
+  ]
+}
