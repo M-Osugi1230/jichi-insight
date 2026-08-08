@@ -58,6 +58,6 @@
     },
     "quality_boundary": {"type": "string", "minLength": 150},
     "next_action": {"type": "string", "minLength": 120},
-    "verified_at": {"const": "2026-08-06", "format": "date"}
+    "verified_at": {"const": "2026-08-08", "format": "date"}
   }
 }

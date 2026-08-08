@@ -1,0 +1,92 @@
+{
+  "id": "phase13-sapporo-policy-review-manifest",
+  "phase": 13,
+  "official_code": "011002",
+  "name_ja": "札幌市",
+  "status": "review_in_progress",
+  "reviewed_at": "2026-08-08",
+  "source_ids": [
+    "sapporo-action-plan-2023-page",
+    "sapporo-action-plan-2023-progress-page"
+  ],
+  "reviewed_facts": [
+    {
+      "id": "action-plan-period",
+      "layer": "implementation_plan",
+      "field": "plan_period",
+      "value": "2023年度～2027年度",
+      "source_id": "sapporo-action-plan-2023-page",
+      "location_note": "公式HTML「計画の概要」→「策定の趣旨など」。",
+      "review_status": "reviewed"
+    },
+    {
+      "id": "action-plan-project-count",
+      "layer": "implementation_plan",
+      "field": "planned_project_count",
+      "value": 599,
+      "unit": "projects",
+      "source_id": "sapporo-action-plan-2023-page",
+      "location_note": "公式HTML「計画事業数及び計画事業費」。",
+      "review_status": "reviewed"
+    },
+    {
+      "id": "action-plan-project-cost",
+      "layer": "implementation_plan",
+      "field": "planned_project_cost_yen",
+      "value": 1785400000000,
+      "unit": "yen",
+      "source_id": "sapporo-action-plan-2023-page",
+      "location_note": "公式HTML「計画事業数及び計画事業費」。1兆7,854億円を円換算。",
+      "review_status": "reviewed"
+    },
+    {
+      "id": "progress-outcome-indicators",
+      "layer": "annual_progress",
+      "field": "outcome_indicators_above_baseline",
+      "reporting_year": 2025,
+      "measurement_fiscal_year": 2024,
+      "numerator": 17,
+      "denominator": 26,
+      "reported_ratio_percent": 65.4,
+      "source_id": "sapporo-action-plan-2023-progress-page",
+      "location_note": "公式HTML「成果指標の状況」。再掲指標を除く26項目中17項目。",
+      "review_status": "reviewed",
+      "interpretation_boundary": "札幌市が『計画現状値より上昇』と分類した事実のみを保持し、Jichi Insight独自の達成判定には変換しない。"
+    },
+    {
+      "id": "progress-project-targets",
+      "layer": "annual_progress",
+      "field": "project_targets_expected_achieved",
+      "reporting_year": 2025,
+      "measurement_fiscal_year": 2024,
+      "numerator": 394,
+      "denominator": 403,
+      "reported_ratio_percent": 97.8,
+      "source_id": "sapporo-action-plan-2023-progress-page",
+      "location_note": "公式HTML「事業目標の状況」。目標設定のない3事業を除く主な事業403項目。",
+      "review_status": "reviewed",
+      "interpretation_boundary": "『達成見込み』は札幌市の自己評価区分として保持し、政策効果や因果関係を意味しない。"
+    },
+    {
+      "id": "progress-project-cost",
+      "layer": "annual_progress",
+      "field": "cumulative_project_cost_yen",
+      "reporting_year": 2025,
+      "coverage": "2023～2024年度決算額及び2025年度予算額（令和7年度第3回定例市議会の補正予算分まで）",
+      "value": 998300000000,
+      "unit": "yen",
+      "reported_progress_percent": 55.9,
+      "source_id": "sapporo-action-plan-2023-progress-page",
+      "location_note": "公式HTML「事業費の状況」。累計9,983億円、実績の進捗率55.9%。",
+      "review_status": "reviewed",
+      "interpretation_boundary": "決算額と予算額が混在する公式累計であるため、全額を決算実績とは扱わない。"
+    }
+  ],
+  "quality_boundary": "実施計画の期間・事業数・計画事業費と、2025年度進捗報告に掲載された集計値を公式HTMLの記載どおりReviewed化した。市の自己評価表現はsource-reported factとして保存し、独自の政策達成判定、因果推論、他都市比較には使用しない。",
+  "remaining_work": [
+    "第2次戦略ビジョン本体の政策目標・成果指標をページ単位でレビューする。",
+    "アクションプラン2023の個別599事業を公式順序とページ位置付きで索引化する。",
+    "2025年度進捗報告の個別成果指標26項目と主な事業403項目をレコード単位でレビューする。",
+    "財政レコードとの事業単位リンクは名称・年度・会計状態を照合した後に別工程で行う。"
+  ]
+}
