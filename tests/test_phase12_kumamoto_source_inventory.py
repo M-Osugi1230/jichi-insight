@@ -22,36 +22,33 @@ def test_kumamoto_inventory_matches_schema():
     assert list(validator.iter_errors(load(INVENTORY_PATH))) == []
 
 
-def test_kumamoto_preserves_proposal_and_enacted_budget_lineage():
+def test_kumamoto_preserves_budget_state_boundary():
     inventory = load(INVENTORY_PATH)
     assert inventory["official_code"] == "431001"
-    assert inventory["status"] == "source_inventory_complete"
+    assert inventory["status"] == "source_inventory_partial"
     assert inventory["plan_period"] == {
         "start_fiscal_year": 2024,
         "end_fiscal_year": 2031,
         "current_plan_name": "熊本市第8次総合計画",
     }
-    assert inventory["unresolved_layers"] == []
-    by_layer = {source["layer"]: source for source in inventory["sources"]}
-    assert set(by_layer) == {
-        "comprehensive_plan",
-        "implementation_plan",
-        "annual_progress",
-        "budget_proposal",
-        "budget",
-        "settlement",
-    }
-    assert "proposal-stage evidence" in by_layer["budget_proposal"]["review_boundary"]
-    assert "approved as originally proposed" in by_layer["budget"]["review_boundary"]
-    assert "March 24, 2026" in by_layer["budget"]["review_boundary"]
+    assert inventory["unresolved_layers"][0]["layer"] == "enacted_budget"
+    proposal = next(
+        source
+        for source in inventory["sources"]
+        if source["layer"] == "budget_proposal"
+    )
+    assert (
+        "must not be relabeled as final enacted budget values"
+        in proposal["review_boundary"]
+    )
 
 
-def test_kumamoto_queue_entry_is_complete_and_counts_are_consistent():
+def test_kumamoto_queue_closes_pending_source_inventory_count():
     queue = load(QUEUE_PATH)
     city = next(
         item for item in queue["execution_queue"] if item["official_code"] == "431001"
     )
-    assert city["status"] == "source_inventory_complete"
+    assert city["status"] == "source_inventory_partial"
     assert city["inventory_path"] == "data/indexed/kumamoto-city/source_inventory.json"
     statuses = [item["status"] for item in queue["execution_queue"]]
     assert queue["summary"]["source_inventory_complete_count"] == statuses.count(

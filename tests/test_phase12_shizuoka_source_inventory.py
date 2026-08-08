@@ -28,52 +28,42 @@ def assert_summary_matches_queue(queue: dict) -> None:
     )
 
 
-def test_shizuoka_current_plan_partial_inventory_matches_schema():
+def test_shizuoka_partial_inventory_matches_schema():
     validator = Draft202012Validator(
         load(SCHEMA_PATH), format_checker=FormatChecker()
     )
     assert list(validator.iter_errors(load(INVENTORY_PATH))) == []
 
 
-def test_shizuoka_uses_fifth_plan_and_keeps_fourth_plan_legacy():
+def test_shizuoka_preserves_unresolved_citywide_progress_boundary():
     inventory = load(INVENTORY_PATH)
     assert inventory["official_code"] == "221007"
     assert inventory["status"] == "source_inventory_partial"
     assert inventory["review_status"] == "indexed_not_reviewed"
     assert inventory["plan_period"] == {
-        "start_fiscal_year": 2026,
-        "end_fiscal_year": 2035,
-        "current_plan_name": "第5次静岡市総合計画",
+        "start_fiscal_year": 2023,
+        "end_fiscal_year": 2030,
+        "current_plan_name": "第4次静岡市総合計画",
     }
-    layers = {source["layer"] for source in inventory["sources"]}
-    assert layers == {
+    assert {source["layer"] for source in inventory["sources"]} == {
         "comprehensive_plan",
-        "implementation_plan_reference",
-        "legacy_progress",
+        "implementation_plan",
         "budget",
         "settlement",
     }
-    legacy = next(
-        source for source in inventory["sources"] if source["layer"] == "legacy_progress"
-    )
-    assert legacy["reporting_fiscal_year"] == 2024
-    assert "must not be attributed" in legacy["review_boundary"]
+    assert inventory["unresolved_layers"] == [
+        {
+            "layer": "annual_progress",
+            "status": "official_citywide_progress_landing_not_yet_resolved",
+            "boundary": inventory["unresolved_layers"][0]["boundary"],
+        }
+    ]
+    assert "Sector-plan progress must not be substituted" in inventory[
+        "unresolved_layers"
+    ][0]["boundary"]
 
 
-def test_shizuoka_preserves_current_plan_unresolved_layers():
-    inventory = load(INVENTORY_PATH)
-    unresolved = {item["layer"]: item for item in inventory["unresolved_layers"]}
-    assert set(unresolved) == {"canonical_implementation_plan", "annual_progress"}
-    assert unresolved["canonical_implementation_plan"]["status"] == (
-        "canonical_current_document_not_yet_resolved"
-    )
-    assert unresolved["annual_progress"]["status"] == (
-        "current_plan_result_not_yet_available"
-    )
-    assert "fiscal 2026" in unresolved["annual_progress"]["boundary"]
-
-
-def test_shizuoka_queue_entry_stays_partial_until_current_sources_resolve():
+def test_shizuoka_queue_entry_stays_partial_until_progress_is_resolved():
     queue = load(QUEUE_PATH)
     city = next(
         item for item in queue["execution_queue"] if item["official_code"] == "221007"
@@ -86,5 +76,4 @@ def test_shizuoka_queue_entry_stays_partial_until_current_sources_resolve():
         "status": "source_inventory_partial",
         "inventory_path": "data/indexed/shizuoka-city/source_inventory.json",
     }
-    assert queue["summary"]["next_official_code"] == "221007"
     assert_summary_matches_queue(queue)
