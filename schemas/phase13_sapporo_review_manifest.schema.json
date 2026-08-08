@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Phase 13 Sapporo record review manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "phase", "status", "official_code", "name_ja", "source_inventory_path", "promotion_target", "review_packages", "summary", "quality_boundary", "updated_at"],
+  "properties": {
+    "id": {"const": "phase13-sapporo-review-manifest"},
+    "phase": {"const": 13},
+    "status": {"const": "review_in_progress"},
+    "official_code": {"const": "011002"},
+    "name_ja": {"const": "札幌市"},
+    "source_inventory_path": {"const": "data/indexed/sapporo-city/source_inventory.json"},
+    "promotion_target": {"const": "reviewed"},
+    "review_packages": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "layer", "source_id", "status", "review_requirement"],
+        "properties": {
+          "id": {"type": "string", "minLength": 20},
+          "layer": {"enum": ["comprehensive_plan", "implementation_plan", "annual_progress", "budget", "settlement"]},
+          "source_id": {"type": "string", "minLength": 10},
+          "status": {"enum": ["pending_record_review", "blocked_source_verification", "reviewed_complete"]},
+          "review_requirement": {"type": "string", "minLength": 120}
+        }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["package_count", "reviewed_package_count", "pending_record_review_count", "blocked_source_verification_count", "reviewed_record_count", "promotion_ready", "next_package_id"],
+      "properties": {
+        "package_count": {"const": 5},
+        "reviewed_package_count": {"const": 0},
+        "pending_record_review_count": {"const": 3},
+        "blocked_source_verification_count": {"const": 2},
+        "reviewed_record_count": {"const": 0},
+        "promotion_ready": {"const": false},
+        "next_package_id": {"const": "sapporo-implementation-plan-source-resolution"}
+      }
+    },
+    "quality_boundary": {"type": "string", "minLength": 240},
+    "updated_at": {"const": "2026-08-08", "format": "date"}
+  }
+}
