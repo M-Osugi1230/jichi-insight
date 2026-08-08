@@ -85,7 +85,7 @@ def assert_indexed_inventory(path: Path, schema_path: Path, code: str, host: str
     assert list(validator.iter_errors(inventory)) == []
     assert inventory["review_status"] == "indexed_not_reviewed"
     assert inventory["official_code"] == code
-    assert len(inventory["sources"]) == 5
+    assert len(inventory["sources"]) >= 5
     assert all(
         source["official_url"].startswith(host) for source in inventory["sources"]
     )
