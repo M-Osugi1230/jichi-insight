@@ -55,18 +55,19 @@ def referenced_sources(value: Any) -> set[str]:
 def test_all_reviewed_municipalities_have_complete_evidence() -> None:
     known_sources = source_ids()
     reviewed_root = ROOT / "data" / "reviewed"
-    legacy_names = [
+    municipality_names = [
         "fukuoka-city",
         "fukuoka-prefecture",
         "kitakyushu-city",
+        "sapporo-city",
     ]
     directory_names = sorted(path.name for path in reviewed_root.iterdir() if path.is_dir())
 
     # Phase 9 uses its own target-statement and Evidence Packet schemas and is
     # exhaustively validated in test_phase9_reviewed_target_statements.py. Keep
-    # this legacy fiscal-record test scoped to municipality.json directories.
-    assert directory_names == [*legacy_names, "phase9"]
-    municipalities = [reviewed_root / name for name in legacy_names]
+    # this fiscal-record test scoped to municipality.json directories.
+    assert directory_names == sorted([*municipality_names, "phase9"])
+    municipalities = [reviewed_root / name for name in municipality_names]
 
     phase9_summary = load_json(ROOT / "data/catalog/phase9_review_summary.json")
     assert phase9_summary["status"] == "reviewed_complete"
@@ -125,5 +126,5 @@ def test_all_reviewed_municipalities_have_complete_evidence() -> None:
         total_records += len(records)
         total_packets += len(packets)
 
-    assert total_records == 22
-    assert total_packets == 22
+    assert total_records == 25
+    assert total_packets == 25
