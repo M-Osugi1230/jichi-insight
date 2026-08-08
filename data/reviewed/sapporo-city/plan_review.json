@@ -1,0 +1,44 @@
+{
+  "id": "phase13-sapporo-plan-review",
+  "official_code": "011002",
+  "name_ja": "札幌市",
+  "review_status": "review_in_progress",
+  "reviewed_at": "2026-08-08",
+  "records": [
+    {
+      "id": "sapporo-vision2-plan-period",
+      "evidence_role": "current_plan_identity",
+      "title": "第2次札幌市まちづくり戦略ビジョン",
+      "statement": "計画期間は2022年度から2031年度までの10年間。",
+      "source_url": "https://www.city.sapporo.jp/kikaku/vision/vision2/summary.html",
+      "evidence_location": "第1章 はじめに > 3.計画期間",
+      "decision": "accepted",
+      "review_note": "現行最上位計画の期間として保存し、実施計画の期間とは分離する。"
+    },
+    {
+      "id": "sapporo-action-plan-2023-project-count",
+      "evidence_role": "implementation_layer",
+      "title": "第2次札幌市まちづくり戦略ビジョン・アクションプラン2023",
+      "statement": "アクションプラン2023の計画事業数は599事業。",
+      "value": 599,
+      "unit": "projects",
+      "source_url": "https://www.city.sapporo.jp/chosei/documents/ap2023-gaiyou.pdf",
+      "evidence_location": "概要PDF 2ページ『2 まちづくりの取組』(1)計画事業費",
+      "decision": "accepted",
+      "review_note": "パブリックコメント案の600事業ではなく、確定版概要の599事業を採用する。"
+    },
+    {
+      "id": "sapporo-action-plan-2023-planned-cost",
+      "evidence_role": "implementation_layer",
+      "title": "第2次札幌市まちづくり戦略ビジョン・アクションプラン2023",
+      "statement": "2023年度から2027年度までの計画事業費は1兆7,854億円。",
+      "amount_yen": 1785400000000,
+      "source_url": "https://www.city.sapporo.jp/chosei/documents/ap2023-gaiyou.pdf",
+      "evidence_location": "概要PDF 2ページ『2 まちづくりの取組』(1)計画事業費",
+      "decision": "accepted",
+      "review_note": "5年間の計画事業費であり、単年度予算・執行額・決算額とは結合しない。"
+    }
+  ],
+  "quality_boundary": "This package preserves official plan identity and implementation-plan facts only. It does not infer policy achievement, causal effects, or cross-city comparability.",
+  "next_action": "Review the current annual-progress evidence at indicator level and connect only records with stable official evidence locations."
+}
