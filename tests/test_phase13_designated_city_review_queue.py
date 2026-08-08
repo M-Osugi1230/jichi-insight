@@ -67,12 +67,14 @@ def test_phase13_summary_is_derived_from_queue_contents():
     )
 
 
-def test_phase13_first_review_target_is_sapporo():
+def test_phase13_first_review_target_is_sapporo_and_in_progress():
     queue = load(QUEUE_PATH)
     first = queue["execution_queue"][0]
     assert first["sequence"] == 1
     assert first["official_code"] == "011002"
-    assert first["status"] == "pending_record_review"
+    assert first["status"] == "review_in_progress"
+    assert queue["summary"]["review_in_progress_count"] == 1
+    assert queue["summary"]["pending_record_review_count"] == 12
     assert queue["summary"]["next_official_code"] == "011002"
 
 
