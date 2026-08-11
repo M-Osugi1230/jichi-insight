@@ -1,0 +1,44 @@
+{
+  "id": "phase13-sendai-challenge-project-reviews-part2-evidence",
+  "phase": 13,
+  "official_code": "041009",
+  "name_ja": "仙台市",
+  "reviewed_at": "2026-08-11",
+  "source": {
+    "source_id": "sendai-city-challenge-project-self-evaluation-2024-report",
+    "title": "チャレンジプロジェクトの自己評価報告書（令和6年度自己評価シート取りまとめ）",
+    "source_kind": "pdf",
+    "page_count": 126,
+    "review_method": "record_level_pdf_review"
+  },
+  "evidence_packets": [
+    {
+      "evidence_id": "sendai-challenge-p9-coastal-revitalization",
+      "project_id": "coastal_area_revitalization",
+      "source_pdf_page_index_0_based": 9,
+      "location_note": "Individual self-evaluation sheet for 海浜エリア活性化事業.",
+      "reviewed_fields": ["project_group_ja", "subsection_ja", "project_name_ja", "responsible_bureau_ja", "lead_section_ja", "source_reported_evaluation"],
+      "evidence_status": "reviewed",
+      "boundary": "The municipality-reported triangle rating is preserved without converting narrative explanations or numeric results into an independent score."
+    },
+    {
+      "evidence_id": "sendai-challenge-p10-eastern-relocation-sites",
+      "project_id": "eastern_relocation_site_utilization",
+      "source_pdf_page_index_0_based": 10,
+      "location_note": "Individual self-evaluation sheet for 東部地域移転跡地利活用推進事業.",
+      "reviewed_fields": ["project_group_ja", "subsection_ja", "project_name_ja", "responsible_bureau_ja", "lead_section_ja", "source_reported_evaluation"],
+      "evidence_status": "reviewed",
+      "boundary": "The municipality-reported circle rating is preserved without converting narrative explanations or numeric results into an independent score."
+    },
+    {
+      "evidence_id": "sendai-challenge-p11-coastal-park",
+      "project_id": "coastal_park_development",
+      "source_pdf_page_index_0_based": 11,
+      "location_note": "Individual self-evaluation sheet for 海岸公園整備事業.",
+      "reviewed_fields": ["project_group_ja", "subsection_ja", "project_name_ja", "responsible_bureau_ja", "lead_section_ja", "source_reported_evaluation"],
+      "evidence_status": "reviewed",
+      "boundary": "The municipality-reported circle rating is preserved without converting narrative explanations or numeric results into an independent score."
+    }
+  ],
+  "quality_boundary": "This evidence map covers exactly the second three-record batch and keeps Sendai's evaluation marks as source-reported facts. Together with part 1, reviewed coverage is 6 of the official 108 projects; the remaining 102 records have no reviewed individual evidence yet."
+}

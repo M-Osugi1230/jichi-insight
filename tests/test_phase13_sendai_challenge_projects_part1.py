@@ -115,11 +115,20 @@ def test_sendai_challenge_project_source_and_manifest_stay_partial():
     manifest = load(MANIFEST_PATH)
     facts = {fact["id"]: fact for fact in manifest["reviewed_facts"]}
     batch = facts["sendai-challenge-project-records-part1"]
+    reviewed_batches = [
+        fact
+        for fact in manifest["reviewed_facts"]
+        if fact["id"].startswith("sendai-challenge-project-records-part")
+    ]
+    cumulative_reviewed = sum(fact["value"] for fact in reviewed_batches)
+    remaining = 108 - cumulative_reviewed
 
     assert source["page_count"] == 126
     assert source["review_status"] == "partial_record_review_in_progress"
     assert batch["value"] == 3
     assert batch["review_status"] == "reviewed_core_evaluation"
-    assert "残り105事業" in batch["interpretation_boundary"]
+    assert "独自達成スコアへ変換しない" in batch["interpretation_boundary"]
     assert manifest["status"] == "review_in_progress"
-    assert "3事業を個票レビュー済み" in manifest["remaining_work"][0]
+    assert 3 <= cumulative_reviewed < 108
+    assert f"{cumulative_reviewed}事業を個票レビュー済み" in manifest["remaining_work"][0]
+    assert f"残り{remaining}事業" in manifest["remaining_work"][0]
