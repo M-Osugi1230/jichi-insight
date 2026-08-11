@@ -1,0 +1,67 @@
+{
+  "id": "phase13-sendai-challenge-project-reviews-part11",
+  "phase": 13,
+  "official_code": "041009",
+  "name_ja": "仙台市",
+  "reporting_fiscal_year": 2024,
+  "reviewed_at": "2026-08-11",
+  "status": "reviewed_core_evaluation_batch",
+  "source_id": "sendai-city-challenge-project-self-evaluation-2024-report",
+  "source_reported_rating_scale": {
+    "double_circle": "予定を上回る成果が出ている",
+    "circle": "予定どおり進んでいる",
+    "triangle": "一部にやや遅れが出ている",
+    "cross": "遅れている"
+  },
+  "summary": {
+    "prior_reviewed_record_count": 30,
+    "batch_reviewed_record_count": 3,
+    "cumulative_reviewed_record_count": 33,
+    "total_source_project_count": 108,
+    "remaining_record_count": 75,
+    "complete": false
+  },
+  "records": [
+    {
+      "sequence_within_batch": 1,
+      "id": "suicide-prevention",
+      "project_group_ja": "心の伴走プロジェクト",
+      "subsection_ja": "孤立しない、取り残さない支援",
+      "project_name_ja": "自殺対策事業",
+      "responsible_bureau_ja": "健康福祉局",
+      "lead_section_ja": "障害者支援課",
+      "source_pdf_page_index_0_based": 41,
+      "source_reported_evaluation": "circle",
+      "review_status": "reviewed_core_evaluation",
+      "evidence_id": "evidence-sendai-challenge-p41-suicide-prevention"
+    },
+    {
+      "sequence_within_batch": 2,
+      "id": "disability-consultation-support-system",
+      "project_group_ja": "心の伴走プロジェクト",
+      "subsection_ja": "孤立しない、取り残さない支援",
+      "project_name_ja": "障害者相談支援体制推進事業",
+      "responsible_bureau_ja": "健康福祉局",
+      "lead_section_ja": "障害者支援課",
+      "source_pdf_page_index_0_based": 42,
+      "source_reported_evaluation": "circle",
+      "review_status": "reviewed_core_evaluation",
+      "evidence_id": "evidence-sendai-challenge-p42-disability-consultation-support-system"
+    },
+    {
+      "sequence_within_batch": 3,
+      "id": "elderly-life-support",
+      "project_group_ja": "心の伴走プロジェクト",
+      "subsection_ja": "孤立しない、取り残さない支援",
+      "project_name_ja": "高齢者生活支援事業",
+      "responsible_bureau_ja": "健康福祉局",
+      "lead_section_ja": "地域包括ケア推進課",
+      "source_pdf_page_index_0_based": 43,
+      "source_reported_evaluation": "circle",
+      "review_status": "reviewed_core_evaluation",
+      "evidence_id": "evidence-sendai-challenge-p43-elderly-life-support"
+    }
+  ],
+  "quality_boundary": "This batch reviews three further project identities in the no-isolation/no-one-left-behind support subsection together with Sendai City's own FY2024 self-evaluation classes. All circle ratings remain municipality-reported judgments. Source narrative about effects or outcomes is not promoted into a Jichi Insight causal claim or achievement score. Cumulative coverage is exactly 33 of 108, leaving 75 records pending.",
+  "next_action": "Continue in official report order with the remaining projects in the no-isolation/no-one-left-behind support subsection, preserving project identity, responsible bureau, lead section, page-level evidence, and municipality-defined evaluation classes."
+}
