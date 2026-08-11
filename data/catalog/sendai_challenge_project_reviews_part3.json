@@ -1,0 +1,67 @@
+{
+  "id": "phase13-sendai-challenge-project-reviews-part3",
+  "phase": 13,
+  "official_code": "041009",
+  "name_ja": "仙台市",
+  "reporting_fiscal_year": 2024,
+  "reviewed_at": "2026-08-11",
+  "status": "reviewed_core_evaluation_batch",
+  "source_id": "sendai-city-challenge-project-self-evaluation-2024-report",
+  "source_reported_rating_scale": {
+    "double_circle": "予定を上回る成果が出ている",
+    "circle": "予定どおり進んでいる",
+    "triangle": "一部にやや遅れが出ている",
+    "cross": "遅れている"
+  },
+  "summary": {
+    "prior_reviewed_record_count": 6,
+    "batch_reviewed_record_count": 3,
+    "cumulative_reviewed_record_count": 9,
+    "total_source_project_count": 108,
+    "remaining_record_count": 99,
+    "complete": false
+  },
+  "records": [
+    {
+      "sequence_within_batch": 1,
+      "id": "citizen_green_citymaking",
+      "project_group_ja": "杜と水の都プロジェクト",
+      "subsection_ja": "みどりでつながるまちづくり",
+      "project_name_ja": "市民協働によるみどりのまちづくり事業",
+      "responsible_bureau_ja": "建設局",
+      "lead_section_ja": "百年の杜推進課",
+      "source_pdf_page_index_0_based": 13,
+      "source_reported_evaluation": "double_circle",
+      "review_status": "reviewed_core_evaluation",
+      "evidence_id": "evidence-sendai-challenge-p13-citizen-green-citymaking"
+    },
+    {
+      "sequence_within_batch": 2,
+      "id": "urban_green_infrastructure",
+      "project_group_ja": "杜と水の都プロジェクト",
+      "subsection_ja": "みどりでつながるまちづくり",
+      "project_name_ja": "市街地のグリーンインフラ推進事業",
+      "responsible_bureau_ja": "建設局",
+      "lead_section_ja": "百年の杜推進課",
+      "source_pdf_page_index_0_based": 14,
+      "source_reported_evaluation": "circle",
+      "review_status": "reviewed_core_evaluation",
+      "evidence_id": "evidence-sendai-challenge-p14-urban-green-infrastructure"
+    },
+    {
+      "sequence_within_batch": 3,
+      "id": "landscape-formation-promotion",
+      "project_group_ja": "杜と水の都プロジェクト",
+      "subsection_ja": "みどりでつながるまちづくり",
+      "project_name_ja": "杜の都の風土を育む景観形成推進事業",
+      "responsible_bureau_ja": "都市整備局",
+      "lead_section_ja": "都市景観課",
+      "source_pdf_page_index_0_based": 15,
+      "source_reported_evaluation": "circle",
+      "review_status": "reviewed_core_evaluation",
+      "evidence_id": "evidence-sendai-challenge-p15-landscape-formation"
+    }
+  ],
+  "quality_boundary": "This batch reviews three additional project identities and Sendai City's own FY2024 self-evaluation classes from the official 108-project report. The double-circle and circle ratings remain municipality-reported judgments and are not converted into Jichi Insight achievement scores, causal claims, or cross-city rankings. Cumulative coverage is exactly 9 of 108, leaving 99 records pending.",
+  "next_action": "Continue in official report order with the remaining two projects in the green-citymaking subsection, then advance to the disaster-environment-city project while preserving page-level evidence and municipality-defined evaluation classes."
+}
