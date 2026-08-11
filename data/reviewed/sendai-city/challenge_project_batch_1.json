@@ -1,0 +1,172 @@
+{
+  "id": "phase13-sendai-challenge-project-batch-1",
+  "official_code": "041009",
+  "name_ja": "仙台市",
+  "plan": "仙台市実施計画2024-2026",
+  "source_id": "sendai-city-implementation-plan-2024-2026-pdf",
+  "review_status": "reviewed_partial",
+  "reviewed_at": "2026-08-11",
+  "scope": {
+    "chapter": "第2章 チャレンジプロジェクト",
+    "challenge_project_number": 1,
+    "challenge_project_title": "杜と水の都プロジェクト",
+    "challenge_project_goal": "「杜の都」の風土と文化に巡りあえる都市空間をつくる",
+    "reviewed_measure_count": 3,
+    "reviewed_priority_project_count": 11,
+    "reviewed_kpi_count": 7,
+    "total_challenge_priority_project_count": 108,
+    "boundary": "108重点事業のうち、最初のチャレンジプロジェクトに属する3施策・重点事業11件・数値目標7件だけをReviewed化する。残りの重点事業、関連事業、全220事業は未レビューのまま保持する。"
+  },
+  "measures": [
+    {
+      "id": "sendai-challenge-01-measure-01",
+      "sequence": 1,
+      "title": "勾当台・定禅寺通エリア活性化",
+      "evidence_location": {
+        "pdf_page_index": 9,
+        "printed_page": 7
+      },
+      "kpis": [
+        {
+          "name": "定禅寺通における個別アクティビティ（活動）の種類",
+          "unit": "types",
+          "baseline": {
+            "fiscal_year": 2023,
+            "weekday": 9,
+            "holiday": 8
+          },
+          "target": {
+            "type": "at_least_baseline",
+            "raw": "基準値以上"
+          },
+          "actual": null,
+          "assessment": "not_assessable"
+        },
+        {
+          "name": "定禅寺通における人の活動量",
+          "unit": "person_hours",
+          "baseline": {
+            "fiscal_year": 2023,
+            "weekday": 10.25,
+            "holiday": 17.58
+          },
+          "target": {
+            "type": "at_least_baseline",
+            "raw": "基準値以上"
+          },
+          "actual": null,
+          "assessment": "not_assessable"
+        }
+      ],
+      "priority_projects": [
+        {"title": "新本庁舎整備事業", "listed_page": 68},
+        {"title": "勾当台公園及び周辺再整備事業", "listed_page": 69},
+        {"title": "西公園再整備事業", "listed_page": 70}
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "id": "sendai-challenge-01-measure-02",
+      "sequence": 2,
+      "title": "海浜エリア活性化",
+      "evidence_location": {
+        "pdf_page_index": 10,
+        "printed_page": 8
+      },
+      "kpis": [
+        {
+          "name": "海浜エリア内の主要公共施設年間利用者数",
+          "unit": "persons",
+          "baseline": {
+            "fiscal_year": 2022,
+            "value": 735212
+          },
+          "target": {
+            "fiscal_year": 2026,
+            "value": 800000
+          },
+          "actual": null,
+          "assessment": "not_assessable"
+        },
+        {
+          "name": "跡地利活用事業に着手した面積の割合",
+          "unit": "percent",
+          "baseline": {
+            "fiscal_year_end": 2022,
+            "value": 64.7
+          },
+          "target": {
+            "fiscal_year_end": 2026,
+            "value": 100.0
+          },
+          "actual": null,
+          "assessment": "not_assessable"
+        }
+      ],
+      "priority_projects": [
+        {"title": "海浜エリア活性化事業", "listed_page": 68},
+        {"title": "東部地域移転跡地利活用推進事業", "listed_page": 68},
+        {"title": "海岸公園整備事業", "listed_page": 70}
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "id": "sendai-challenge-01-measure-03",
+      "sequence": 3,
+      "title": "みどりでつながるまちづくり",
+      "evidence_location": {
+        "pdf_page_index": 11,
+        "printed_page": 9
+      },
+      "kpis": [
+        {
+          "name": "緑化フェアレガシー事業の参加者数",
+          "unit": "persons_cumulative",
+          "baseline": null,
+          "target": {
+            "fiscal_year_end": 2026,
+            "value": 1000,
+            "raw": "延べ1,000人"
+          },
+          "actual": null,
+          "assessment": "not_assessable"
+        },
+        {
+          "name": "育樹に関するイベントやプログラムの実施回数",
+          "unit": "events_per_fiscal_year",
+          "baseline": null,
+          "target": {
+            "type": "at_least",
+            "value": 13,
+            "period": "各年度"
+          },
+          "actual": null,
+          "assessment": "not_assessable"
+        },
+        {
+          "name": "都心部の主要道路の緑視率",
+          "unit": "percent",
+          "baseline": {
+            "fiscal_year": 2023,
+            "value": 31.0
+          },
+          "target": {
+            "type": "at_least_baseline",
+            "raw": "基準値以上"
+          },
+          "actual": null,
+          "assessment": "not_assessable"
+        }
+      ],
+      "priority_projects": [
+        {"title": "市民協働によるみどりのまちづくり事業", "listed_page": 68},
+        {"title": "市街地のグリーンインフラ推進事業", "listed_page": 69},
+        {"title": "杜の都の風土を育む景観形成推進事業", "listed_page": 68},
+        {"title": "広瀬川創生・清流保全事業", "listed_page": 69},
+        {"title": "青葉山公園整備事業", "listed_page": 70}
+      ],
+      "review_status": "reviewed"
+    }
+  ],
+  "quality_boundary": "KPI actuals are null because this package reviews plan baselines and targets, not annual actuals. Every assessment remains not_assessable. Priority-project inclusion is preserved as a plan fact and is not treated as evidence of delivery, effectiveness, or budget execution."
+}
