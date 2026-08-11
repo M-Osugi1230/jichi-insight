@@ -9,7 +9,8 @@
     "sapporo-action-plan-2023-page",
     "sapporo-action-plan-2023-progress-page",
     "sapporo-action-plan-2023-outcomes-2024-report",
-    "sapporo-action-plan-2023-outcomes-2025-report"
+    "sapporo-action-plan-2023-outcomes-2025-report",
+    "sapporo-action-plan-2023-projects-safety-security"
   ],
   "reviewed_facts": [
     {
@@ -41,7 +42,21 @@
       "registry_path": "data/catalog/sapporo_action_plan_project_source_index.json",
       "location_note": "公式HTMLの第2章「3 計画体系別事業」にある8分野PDFと、第3章の行政運営・財政運営PDFを資料単位で索引化。",
       "review_status": "reviewed",
-      "interpretation_boundary": "確認済みなのは599事業を確認するための公式資料10本の識別までであり、599事業の個別事業レコード、資料別事業数、行政運営・財政運営資料の599事業分母への包含関係は未レビューのまま保持する。"
+      "interpretation_boundary": "確認済みなのは599事業を確認するための公式資料10本の識別までであり、資料別事業数や行政運営・財政運営資料の599事業分母への包含関係は未レビューのまま保持する。"
+    },
+    {
+      "id": "action-plan-safety-security-project-records-part1",
+      "layer": "implementation_plan",
+      "field": "reviewed_project_record_count",
+      "value": 4,
+      "unit": "projects",
+      "source_id": "sapporo-action-plan-2023-projects-safety-security",
+      "registry_path": "data/catalog/sapporo_action_plan_safety_security_projects_part1.json",
+      "evidence_path": "data/evidence/sapporo_action_plan_safety_security_projects_part1_evidence.json",
+      "source_page_label": 80,
+      "review_status": "reviewed_core_fields",
+      "location_note": "分野4「安全・安心」PDFの印刷ページ80「主な事業」表に表示された最初の4事業を、事業名・担当部・計画事業費・事業目標・2022基準値・2027目標値まで1対1のEvidence Packet付きでレビュー。",
+      "interpretation_boundary": "4事業のコア項目のみをReviewed化した。事業内容欄、同PDF残ページ、分野内総事業数、599事業全体での通し順、年度進捗との接続は未レビューであり、この4件から全体傾向や達成度を推論しない。"
     },
     {
       "id": "action-plan-project-cost",
@@ -109,10 +124,10 @@
       "interpretation_boundary": "決算額と予算額が混在する公式累計であるため、全額を決算実績とは扱わない。"
     }
   ],
-  "quality_boundary": "実施計画の期間・事業数・計画事業費、599事業を確認する公式資料10本の資料単位索引、2025年度進捗報告の集計値、成果指標33表示行から再掲7件を除いた26ユニーク指標の正式名称と掲載ページをReviewed化した。資料10本の索引は個別599事業のレビュー完了を意味せず、資料別事業数や第3章資料の599事業分母への包含関係も未確定とする。2025年度報告の個別2024年度実績値・個別傾向は行対応を独立検証するまで未確定とし、市の自己評価表現を独自の政策達成判定、因果推論、他都市比較には使用しない。",
+  "quality_boundary": "実施計画の期間・事業数・計画事業費、599事業を確認する公式資料10本の資料単位索引、分野4「安全・安心」の印刷ページ80に表示された4事業のコア項目、2025年度進捗報告の集計値、成果指標33表示行から再掲7件を除いた26ユニーク指標の正式名称と掲載ページをReviewed化した。4事業のレビューは事業内容欄や残ページ、分野内総数、599事業全体での通し順、年度実績との接続を意味しない。資料別事業数や第3章資料の599事業分母への包含関係も未確定とする。2025年度報告の個別2024年度実績値・個別傾向は行対応を独立検証するまで未確定とし、市の自己評価表現を独自の政策達成判定、因果推論、他都市比較には使用しない。",
   "remaining_work": [
     "第2次戦略ビジョン本体の政策目標・成果指標をページ単位でレビューする。",
-    "アクションプラン2023の公式資料10本の資料単位索引は完了。次に個別599事業を公式順序・分野・ページ位置付きで索引化し、第3章資料が599事業分母へ含まれる範囲もレコード単位で確定する。",
+    "アクションプラン2023の公式資料10本の資料単位索引は完了し、分野4「安全・安心」の4事業をコア項目までReviewed化した。次に印刷ページ81以降を順にレビューし、その後ほか7分野へ展開して個別599事業のカバー率を上げ、第3章資料が599事業分母へ含まれる範囲もレコード単位で確定する。",
     "成果指標26項目の正式名称ID台帳は完了。次に2025年度報告の個別2024年度実績値・傾向を各IDへ行単位で接続し、主な事業403項目もレコード単位でレビューする。",
     "財政レコードとの事業単位リンクは名称・年度・会計状態を照合した後に別工程で行う。"
   ]
