@@ -1,0 +1,142 @@
+{
+  "id": "phase13-sapporo-action-plan-project-source-index",
+  "phase": 13,
+  "official_code": "011002",
+  "name_ja": "札幌市",
+  "reviewed_at": "2026-08-11",
+  "status": "source_documents_indexed_project_records_pending",
+  "source_landing": {
+    "title": "第2次札幌市まちづくり戦略ビジョン・アクションプラン2023",
+    "url": "https://www.city.sapporo.jp/chosei/actionplan2023.html",
+    "reviewed_sections": [
+      "第2章 まちづくりの取組 3 計画体系別事業",
+      "第3章 行政運営と財政運営の取組"
+    ],
+    "review_status": "reviewed_for_source_document_identity"
+  },
+  "plan_level_aggregate": {
+    "planned_project_count": 599,
+    "planned_project_cost_yen": 1785400000000,
+    "source_scope": "Action Plan 2023 plan-level aggregate",
+    "allocation_status": "not_allocated_to_source_documents",
+    "review_boundary": "The official landing states 599 planned projects and total planned project cost of 1.7854 trillion yen. Neither value is distributed across the ten indexed source documents until record-level project review establishes the denominator and document membership."
+  },
+  "machizukuri_field_sources": [
+    {
+      "sequence": 1,
+      "field_id": "children_youth",
+      "field_ja": "子ども・若者",
+      "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_1.pdf",
+      "source_role": "chapter2_project_catalog_segment",
+      "source_identification_status": "official_link_verified",
+      "content_review_status": "document_opened_record_index_pending",
+      "page_count": 16
+    },
+    {
+      "sequence": 2,
+      "field_id": "daily_life",
+      "field_ja": "生活・暮らし",
+      "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_2.pdf",
+      "source_role": "chapter2_project_catalog_segment",
+      "source_identification_status": "official_link_verified",
+      "content_review_status": "document_opened_record_index_pending",
+      "page_count": 13
+    },
+    {
+      "sequence": 3,
+      "field_id": "community",
+      "field_ja": "地域",
+      "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_3.pdf",
+      "source_role": "chapter2_project_catalog_segment",
+      "source_identification_status": "official_link_verified",
+      "content_review_status": "official_link_verified_fetch_pending",
+      "page_count": null
+    },
+    {
+      "sequence": 4,
+      "field_id": "safety_security",
+      "field_ja": "安全・安心",
+      "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_4.pdf",
+      "source_role": "chapter2_project_catalog_segment",
+      "source_identification_status": "official_link_verified",
+      "content_review_status": "document_opened_record_index_pending",
+      "page_count": 10
+    },
+    {
+      "sequence": 5,
+      "field_id": "economy",
+      "field_ja": "経済",
+      "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_5.pdf",
+      "source_role": "chapter2_project_catalog_segment",
+      "source_identification_status": "official_link_verified",
+      "content_review_status": "official_link_verified_fetch_pending",
+      "page_count": null
+    },
+    {
+      "sequence": 6,
+      "field_id": "sports_culture",
+      "field_ja": "スポーツ・文化",
+      "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_6.pdf",
+      "source_role": "chapter2_project_catalog_segment",
+      "source_identification_status": "official_link_verified",
+      "content_review_status": "document_opened_record_index_pending",
+      "page_count": 9
+    },
+    {
+      "sequence": 7,
+      "field_id": "environment",
+      "field_ja": "環境",
+      "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_7.pdf",
+      "source_role": "chapter2_project_catalog_segment",
+      "source_identification_status": "official_link_verified",
+      "content_review_status": "official_link_verified_fetch_pending",
+      "page_count": null
+    },
+    {
+      "sequence": 8,
+      "field_id": "urban_space",
+      "field_ja": "都市空間",
+      "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_8.pdf",
+      "source_role": "chapter2_project_catalog_segment",
+      "source_identification_status": "official_link_verified",
+      "content_review_status": "document_opened_record_index_pending",
+      "page_count": 12
+    }
+  ],
+  "chapter3_sources": [
+    {
+      "sequence": 1,
+      "source_id": "administrative_operations",
+      "title_ja": "行政運営の取組",
+      "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_3_1.pdf",
+      "source_role": "chapter3_administrative_operations",
+      "source_identification_status": "official_link_verified",
+      "content_review_status": "document_opened_record_index_pending",
+      "page_count": 29,
+      "project_denominator_membership_status": "pending_record_level_review"
+    },
+    {
+      "sequence": 2,
+      "source_id": "fiscal_operations",
+      "title_ja": "財政運営の取組",
+      "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_3_2.pdf",
+      "source_role": "chapter3_fiscal_operations",
+      "source_identification_status": "official_link_verified",
+      "content_review_status": "official_link_verified_fetch_pending",
+      "page_count": null,
+      "project_denominator_membership_status": "pending_record_level_review"
+    }
+  ],
+  "summary": {
+    "official_field_source_count": 8,
+    "chapter3_source_count": 2,
+    "total_identified_document_count": 10,
+    "total_action_plan_project_count": 599,
+    "per_document_project_counts_reviewed": 0,
+    "individual_project_records_reviewed": 0,
+    "project_count_allocation_status": "not_allocated_to_documents",
+    "chapter3_denominator_membership_review_status": "pending"
+  },
+  "quality_boundary": "The official Action Plan landing identifies eight Chapter 2 field documents plus two Chapter 3 administrative/fiscal documents and separately reports a plan-level total of 599 planned projects. This index reviews document identity only. It does not allocate the 599-project denominator among documents, infer project counts from page counts, assume Chapter 3 denominator membership, merge administrative and fiscal records, or promote any individual project to Reviewed before row-level evidence is established.",
+  "next_action": "Review the eight Chapter 2 field PDFs record by record to establish project identity, official order, field, and source page; independently determine Chapter 3 membership in the 599-project denominator; only then reconcile complete project coverage and link annual progress or fiscal records."
+}
