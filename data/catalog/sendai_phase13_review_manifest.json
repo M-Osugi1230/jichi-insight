@@ -8,20 +8,106 @@
   "source_catalog_path": "data/catalog/sendai_phase13_sources.json",
   "reviewed_data_path": "data/reviewed/sendai-city",
   "reviewed_facts": [
-    {"id":"sendai-current-plan-period","layer":"comprehensive_plan","field":"plan_period","value":"2021年度～2030年度","source_id":"sendai-city-comprehensive-plan-page","review_status":"reviewed"},
-    {"id":"sendai-current-implementation-plan-period","layer":"implementation_plan","field":"plan_period","value":"2024年度～2026年度","source_id":"sendai-city-implementation-plan-2024-2026-page","review_status":"reviewed"},
-    {"id":"sendai-2025-survey-sample","layer":"annual_progress","field":"survey_sample_count","value":6000,"unit":"persons","source_id":"sendai-city-progress-2025-page","review_status":"reviewed_methodology","interpretation_boundary":"市民意識調査の抽出対象数であり、回答数、人口、政策成果値ではない。"},
-    {"id":"sendai-2025-survey-valid-responses","layer":"annual_progress","field":"valid_response_count","value":2794,"unit":"responses","reported_rate_percent":46.8,"source_id":"sendai-city-progress-2025-page","review_status":"reviewed_methodology","interpretation_boundary":"46.8%は仙台市が注記した算出方法による公式有効回収率として保存し、別分母から再計算しない。"},
-    {"id":"sendai-2024-challenge-project-self-evaluation","layer":"annual_progress","field":"source_reported_self_evaluation_project_count","value":108,"unit":"projects","source_id":"sendai-city-progress-2025-page","review_status":"reviewed_source_reported_evaluation","source_reported_breakdown":{"double_circle":12,"circle":89,"triangle":7,"cross":0},"interpretation_boundary":"仙台市による4段階自己評価の集計をそのまま保持する。Jichi Insight独自の達成率、因果評価、他都市比較スコアには変換しない。"},
-    {"id":"sendai-challenge-project-records-part1","layer":"annual_progress","field":"reviewed_challenge_project_record_count","value":3,"unit":"projects","source_id":"sendai-city-challenge-project-self-evaluation-2024-report","registry_path":"data/catalog/sendai_challenge_project_reviews_part1.json","evidence_path":"data/evidence/sendai_challenge_project_reviews_part1_evidence.json","review_status":"reviewed_core_evaluation","location_note":"公式126ページ自己評価報告書の先頭セクションから、新本庁舎整備事業、西公園再整備事業、勾当台公園及び周辺再整備事業の3事業を個票レビュー。","interpretation_boundary":"3件はいずれも仙台市の自己評価○をsource-reported factとして保持し、独自達成スコアへ変換しない。"},
-    {"id":"sendai-challenge-project-records-part2","layer":"annual_progress","field":"reviewed_challenge_project_record_count","value":3,"cumulative_value":6,"unit":"projects","source_id":"sendai-city-challenge-project-self-evaluation-2024-report","registry_path":"data/catalog/sendai_challenge_project_reviews_part2.json","evidence_path":"data/evidence/sendai_challenge_project_reviews_part2_evidence.json","review_status":"reviewed_core_evaluation","location_note":"海浜エリア活性化事業、東部地域移転跡地利活用推進事業、海岸公園整備事業の3事業を個票レビュー。","source_reported_breakdown":{"triangle":1,"circle":2},"interpretation_boundary":"△1件・○2件はいずれも仙台市の自己評価区分。累計6/108の個票レビューであり、残り102事業、成果記述、財政リンク、因果効果は未レビューのまま保持する。"},
-    {"id":"sendai-2026-general-account-initial-budget","layer":"budget","field":"general_account_initial_budget_yen","value":730600000000,"unit":"yen","source_ids":["sendai-city-budget-2026-announcement","sendai-city-budget-2026-enactment-page"],"review_status":"reviewed","interpretation_boundary":"当初予算案7,306億円が2026年3月12日に原案通り可決された状態を保存する。補正後予算・執行・決算とは分離する。"},
-    {"id":"sendai-2024-general-account-settlement-revenue","layer":"settlement","field":"general_account_revenue_received_yen","value":627113991995,"unit":"yen","source_id":"sendai-city-settlement-2024-general-account-pdf","review_status":"reviewed"},
-    {"id":"sendai-2024-general-account-settlement-expenditure","layer":"settlement","field":"general_account_expenditure_paid_yen","value":619037397835,"unit":"yen","source_id":"sendai-city-settlement-2024-general-account-pdf","review_status":"reviewed"}
+    {
+      "id": "sendai-current-plan-period",
+      "layer": "comprehensive_plan",
+      "field": "plan_period",
+      "value": "2021年度～2030年度",
+      "source_id": "sendai-city-comprehensive-plan-page",
+      "review_status": "reviewed"
+    },
+    {
+      "id": "sendai-current-implementation-plan-period",
+      "layer": "implementation_plan",
+      "field": "plan_period",
+      "value": "2024年度～2026年度",
+      "source_id": "sendai-city-implementation-plan-2024-2026-page",
+      "review_status": "reviewed"
+    },
+    {
+      "id": "sendai-challenge-project-batch-1",
+      "layer": "implementation_plan",
+      "field": "reviewed_priority_project_entries",
+      "value": 11,
+      "unit": "project_entries",
+      "measure_count": 3,
+      "kpi_count": 7,
+      "source_id": "sendai-city-implementation-plan-2024-2026-pdf",
+      "review_status": "reviewed_partial",
+      "interpretation_boundary": "『杜と水の都プロジェクト』の最初の3施策に掲載された重点事業11エントリと数値目標7件をレビューした。全108事業に対する一意事業カバレッジ率は、重複掲載の有無を全章で確認するまで算出しない。"
+    },
+    {
+      "id": "sendai-2025-survey-sample",
+      "layer": "annual_progress",
+      "field": "survey_sample_count",
+      "value": 6000,
+      "unit": "persons",
+      "source_id": "sendai-city-progress-2025-page",
+      "review_status": "reviewed_methodology",
+      "interpretation_boundary": "市民意識調査の抽出対象数であり、回答数、人口、政策成果値ではない。"
+    },
+    {
+      "id": "sendai-2025-survey-valid-responses",
+      "layer": "annual_progress",
+      "field": "valid_response_count",
+      "value": 2794,
+      "unit": "responses",
+      "reported_rate_percent": 46.8,
+      "source_id": "sendai-city-progress-2025-page",
+      "review_status": "reviewed_methodology",
+      "interpretation_boundary": "46.8%は仙台市が注記した算出方法による公式有効回収率として保存し、別分母から再計算しない。"
+    },
+    {
+      "id": "sendai-2024-challenge-project-self-evaluation",
+      "layer": "annual_progress",
+      "field": "source_reported_self_evaluation_project_count",
+      "value": 108,
+      "unit": "projects",
+      "source_id": "sendai-city-progress-2025-page",
+      "review_status": "reviewed_source_reported_evaluation",
+      "source_reported_breakdown": {
+        "double_circle": 12,
+        "circle": 89,
+        "triangle": 7,
+        "cross": 0
+      },
+      "interpretation_boundary": "仙台市による4段階自己評価の集計をそのまま保持する。Jichi Insight独自の達成率、因果評価、他都市比較スコアには変換しない。"
+    },
+    {
+      "id": "sendai-2026-general-account-initial-budget",
+      "layer": "budget",
+      "field": "general_account_initial_budget_yen",
+      "value": 730600000000,
+      "unit": "yen",
+      "source_ids": [
+        "sendai-city-budget-2026-announcement",
+        "sendai-city-budget-2026-enactment-page"
+      ],
+      "review_status": "reviewed",
+      "interpretation_boundary": "当初予算案7,306億円が2026年3月12日に原案通り可決された状態を保存する。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "sendai-2024-general-account-settlement-revenue",
+      "layer": "settlement",
+      "field": "general_account_revenue_received_yen",
+      "value": 627113991995,
+      "unit": "yen",
+      "source_id": "sendai-city-settlement-2024-general-account-pdf",
+      "review_status": "reviewed"
+    },
+    {
+      "id": "sendai-2024-general-account-settlement-expenditure",
+      "layer": "settlement",
+      "field": "general_account_expenditure_paid_yen",
+      "value": 619037397835,
+      "unit": "yen",
+      "source_id": "sendai-city-settlement-2024-general-account-pdf",
+      "review_status": "reviewed"
+    }
   ],
-  "quality_boundary": "The Sendai review separates plan layers, survey methodology, municipality self-evaluation, budget, and settlement evidence. Six of 108 challenge projects are now reviewed at core identity/evaluation depth with page-level evidence. The first batch contains three circle ratings; the second contains one triangle and two circle ratings. All ratings remain Sendai source-reported self-evaluations, not independent Jichi Insight achievement scores. The other 102 projects remain unreviewed, and fiscal states remain separate.",
+  "quality_boundary": "The Sendai review separates the 2021-2030 basic plan, 2024-2026 implementation plan, plan-level priority-project entries and KPI targets, survey methodology, municipality self-evaluation, enacted initial budget, and settlement values into distinct evidence roles. The 108-project 12/89/7/0 breakdown remains a source-reported self-evaluation and is not converted into an independent achievement score. Plan targets are not treated as actuals, and budget state is not collapsed into settlement state.",
   "remaining_work": [
-    "チャレンジプロジェクト108事業のうち6事業を個票レビュー済み。公式報告書の順序を維持して残り102事業を事業名・担当局・主担当課・自己評価区分・証拠位置付きでレビューする。",
+    "仙台市実施計画2024-2026の残るチャレンジプロジェクト施策を公式順序・数値目標・重点事業・証拠位置付きで個票レビューする。全108事業に対する一意事業カバレッジ率は重複掲載を全章確認するまで算出しない。",
     "市民意識調査報告書の設問・母数・回答区分をレコード単位でレビューし、行政実績とアンケート評価を分離する。",
     "予算・決算の内訳レコードは会計・年度・状態を維持したまま追加し、実施計画事業とのリンクは名称と財政状態を照合した後に行う。"
   ]

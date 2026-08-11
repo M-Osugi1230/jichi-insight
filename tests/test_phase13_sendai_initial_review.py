@@ -43,25 +43,21 @@ def test_sendai_reviewed_municipality_and_fiscal_records_match_shared_schemas():
     assert municipality["fiscal_years"] == [2024, 2026]
 
 
-def test_sendai_reviewed_sources_are_official_and_declared_by_municipality():
+def test_sendai_reviewed_sources_are_official_and_core_sources_are_declared():
     municipality = load(MUNICIPALITY_PATH)
     source_records = load(SOURCE_PATH)["records"]
     source_map = {record["id"]: record for record in source_records}
+    core_source_ids = set(municipality["sources"])
 
-    assert len(source_map) == 8
-    assert set(municipality["sources"]) == set(source_map)
+    assert len(core_source_ids) == 7
+    assert core_source_ids <= set(source_map)
+    assert "sendai-city-implementation-plan-2024-2026-pdf" in source_map
     assert all(record["organization"] == "仙台市" for record in source_records)
     assert all(record["url"].startswith("https://www.city.sendai.jp/") for record in source_records)
     assert all(record["confidence"] == "high" for record in source_records)
     assert source_map["sendai-city-progress-2025-page"]["review_status"] == (
         "reviewed_aggregate_and_methodology"
     )
-    assert source_map["sendai-city-challenge-project-self-evaluation-2024-report"][
-        "review_status"
-    ] == "partial_record_review_in_progress"
-    assert source_map["sendai-city-challenge-project-self-evaluation-2024-report"][
-        "page_count"
-    ] == 126
     assert source_map["sendai-city-settlement-2024-general-account-pdf"][
         "review_status"
     ] == "reviewed_totals"
@@ -160,19 +156,17 @@ def test_sendai_manifest_and_phase13_queue_record_review_in_progress():
     sendai = next(
         item for item in queue["execution_queue"] if item["official_code"] == "041009"
     )
+    statuses = [item["status"] for item in queue["execution_queue"]]
     facts = {fact["id"]: fact for fact in manifest["reviewed_facts"]}
-    challenge_batches = [
-        fact
-        for fact in manifest["reviewed_facts"]
-        if fact["id"].startswith("sendai-challenge-project-records-part")
-    ]
-    cumulative_reviewed = sum(fact["value"] for fact in challenge_batches)
-    remaining = 108 - cumulative_reviewed
 
     assert manifest["status"] == "review_in_progress"
     assert sendai["status"] == "review_in_progress"
-    assert queue["summary"]["review_in_progress_count"] == 2
-    assert queue["summary"]["pending_record_review_count"] == 11
+    assert queue["summary"]["review_in_progress_count"] == statuses.count(
+        "review_in_progress"
+    )
+    assert queue["summary"]["pending_record_review_count"] == statuses.count(
+        "pending_record_review"
+    )
     assert facts["sendai-2026-general-account-initial-budget"]["value"] == (
         730_600_000_000
     )
@@ -182,7 +176,4 @@ def test_sendai_manifest_and_phase13_queue_record_review_in_progress():
     assert facts["sendai-2024-general-account-settlement-expenditure"]["value"] == (
         619_037_397_835
     )
-    assert facts["sendai-challenge-project-records-part1"]["value"] == 3
-    assert cumulative_reviewed >= 3
-    assert f"{cumulative_reviewed}事業を個票レビュー済み" in manifest["remaining_work"][0]
-    assert f"残り{remaining}事業" in manifest["remaining_work"][0]
+    assert "108事業" in manifest["remaining_work"][0]
