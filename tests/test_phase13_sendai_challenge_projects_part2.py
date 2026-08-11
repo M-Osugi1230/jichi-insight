@@ -53,8 +53,14 @@ def test_sendai_challenge_project_batch2_preserves_exact_identity_and_ratings():
     assert park["source_pdf_page_index_0_based"] == 11
     assert park["source_reported_evaluation"] == "circle"
 
-    assert all(record["project_group_ja"] == "杜と水の都プロジェクト" for record in records.values())
-    assert all(record["subsection_ja"] == "海浜エリア活性化" for record in records.values())
+    assert all(
+        record["project_group_ja"] == "杜と水の都プロジェクト"
+        for record in records.values()
+    )
+    assert all(
+        record["subsection_ja"] == "海浜エリア活性化"
+        for record in records.values()
+    )
 
 
 def test_sendai_challenge_project_batch2_has_one_to_one_page_evidence():
@@ -84,14 +90,23 @@ def test_sendai_challenge_project_batch2_keeps_source_ratings_bounded():
     assert all("achievement_score" not in record for record in catalog["records"])
 
 
-def test_sendai_manifest_records_cumulative_six_project_review_without_completion():
+def test_sendai_manifest_records_batch2_without_freezing_later_cumulative_progress():
     manifest = load(MANIFEST_PATH)
     facts = {fact["id"]: fact for fact in manifest["reviewed_facts"]}
     batch2 = facts["sendai-challenge-project-records-part2"]
+    batches = [
+        fact
+        for fact in manifest["reviewed_facts"]
+        if fact["id"].startswith("sendai-challenge-project-records-part")
+    ]
+    cumulative_reviewed = sum(fact["value"] for fact in batches)
+    remaining = 108 - cumulative_reviewed
 
     assert manifest["status"] == "review_in_progress"
     assert batch2["value"] == 3
     assert batch2["cumulative_value"] == 6
     assert batch2["source_reported_breakdown"] == {"triangle": 1, "circle": 2}
     assert "残り102事業" in batch2["interpretation_boundary"]
-    assert "6事業を個票レビュー済み" in manifest["remaining_work"][0]
+    assert cumulative_reviewed >= 6
+    assert f"{cumulative_reviewed}事業を個票レビュー済み" in manifest["remaining_work"][0]
+    assert f"残り{remaining}事業" in manifest["remaining_work"][0]
