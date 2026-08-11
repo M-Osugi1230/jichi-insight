@@ -1,6 +1,6 @@
 {
-  "version": "0.1.0",
-  "updated_at": "2026-08-08",
+  "version": "0.2.0",
+  "updated_at": "2026-08-11",
   "scope": "phase13_sapporo_policy_review",
   "records": [
     {
@@ -29,7 +29,40 @@
       "indexed_at": "2026-08-08",
       "review_status": "reviewed",
       "confidence": "high",
-      "notes": "2025年度報告（2024年度実績）の成果指標、事業目標、事業費進捗を公式HTMLで確認。"
+      "notes": "公式HTMLで成果指標は33表示行・再掲除外26項目、2025年度報告では17上昇・8下降・1未集計、主な事業403項目中394項目が達成見込み、累計事業費9,983億円を確認。"
+    },
+    {
+      "id": "sapporo-action-plan-2023-outcomes-2024-report",
+      "municipality_key": "sapporo-city",
+      "organization": "札幌市",
+      "category": "annual_progress_outcome_indicators",
+      "title": "【成果指標】2024年度AP2023進捗報告（2023年度実績）",
+      "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_houkoku2024_seikashihyo.pdf",
+      "source_kind": "pdf",
+      "availability": "published",
+      "indexed_at": "2026-08-11",
+      "reporting_year": 2024,
+      "measurement_fiscal_year": 2023,
+      "review_status": "reviewed_for_indicator_identity_and_prior_values",
+      "confidence": "high",
+      "notes": "公式PDFのテキスト層から26ユニーク成果指標の正式名称、当初値、2023年度時点の現状値、傾向、目標値を行単位で確認可能。最新値ではなく前年報告として保持する。"
+    },
+    {
+      "id": "sapporo-action-plan-2023-outcomes-2025-report",
+      "municipality_key": "sapporo-city",
+      "organization": "札幌市",
+      "category": "annual_progress_outcome_indicators",
+      "title": "【成果指標】2025年度AP2023進捗報告（2024年度実績）",
+      "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_houkoku2025_seikashihyo.pdf",
+      "source_kind": "pdf",
+      "availability": "published",
+      "indexed_at": "2026-08-11",
+      "reporting_year": 2025,
+      "measurement_fiscal_year": 2024,
+      "page_count": 3,
+      "review_status": "aggregate_reviewed_record_values_pending",
+      "confidence": "high_for_source_and_aggregate_pending_for_rows",
+      "notes": "公式進捗ページから最新成果指標PDFとして確認。公式HTMLでは26項目中17上昇・8下降・1未集計。PDFは現行取得経路で行テキストを安定抽出できないため、個別2024年度実績値と矢印は推測せずpendingとする。"
     }
   ]
 }
