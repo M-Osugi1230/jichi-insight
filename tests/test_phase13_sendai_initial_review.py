@@ -161,6 +161,13 @@ def test_sendai_manifest_and_phase13_queue_record_review_in_progress():
         item for item in queue["execution_queue"] if item["official_code"] == "041009"
     )
     facts = {fact["id"]: fact for fact in manifest["reviewed_facts"]}
+    challenge_batches = [
+        fact
+        for fact in manifest["reviewed_facts"]
+        if fact["id"].startswith("sendai-challenge-project-records-part")
+    ]
+    cumulative_reviewed = sum(fact["value"] for fact in challenge_batches)
+    remaining = 108 - cumulative_reviewed
 
     assert manifest["status"] == "review_in_progress"
     assert sendai["status"] == "review_in_progress"
@@ -176,4 +183,6 @@ def test_sendai_manifest_and_phase13_queue_record_review_in_progress():
         619_037_397_835
     )
     assert facts["sendai-challenge-project-records-part1"]["value"] == 3
-    assert "3事業を個票レビュー済み" in manifest["remaining_work"][0]
+    assert cumulative_reviewed >= 3
+    assert f"{cumulative_reviewed}事業を個票レビュー済み" in manifest["remaining_work"][0]
+    assert f"残り{remaining}事業" in manifest["remaining_work"][0]
