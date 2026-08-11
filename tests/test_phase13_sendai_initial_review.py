@@ -156,12 +156,17 @@ def test_sendai_manifest_and_phase13_queue_record_review_in_progress():
     sendai = next(
         item for item in queue["execution_queue"] if item["official_code"] == "041009"
     )
+    statuses = [item["status"] for item in queue["execution_queue"]]
     facts = {fact["id"]: fact for fact in manifest["reviewed_facts"]}
 
     assert manifest["status"] == "review_in_progress"
     assert sendai["status"] == "review_in_progress"
-    assert queue["summary"]["review_in_progress_count"] == 2
-    assert queue["summary"]["pending_record_review_count"] == 11
+    assert queue["summary"]["review_in_progress_count"] == statuses.count(
+        "review_in_progress"
+    )
+    assert queue["summary"]["pending_record_review_count"] == statuses.count(
+        "pending_record_review"
+    )
     assert facts["sendai-2026-general-account-initial-budget"]["value"] == (
         730_600_000_000
     )
