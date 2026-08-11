@@ -1,0 +1,69 @@
+{
+  "id": "phase13-sendai-challenge-project-reviews-part2",
+  "phase": 13,
+  "official_code": "041009",
+  "name_ja": "仙台市",
+  "reporting_fiscal_year": 2024,
+  "reviewed_at": "2026-08-11",
+  "status": "reviewed_core_evaluation_batch",
+  "source_id": "sendai-city-challenge-project-self-evaluation-2024-report",
+  "source_reported_rating_scale": {
+    "double_circle": "予定を上回る成果が出ている",
+    "circle": "予定どおり進んでいる",
+    "triangle": "一部にやや遅れが出ている",
+    "cross": "遅れている"
+  },
+  "summary": {
+    "batch_reviewed_record_count": 3,
+    "cumulative_reviewed_record_count": 6,
+    "total_source_project_count": 108,
+    "remaining_record_count": 102,
+    "complete": false
+  },
+  "records": [
+    {
+      "sequence_within_batch": 1,
+      "cumulative_sequence": 4,
+      "id": "coastal_area_revitalization",
+      "project_group_ja": "杜と水の都プロジェクト",
+      "subsection_ja": "海浜エリア活性化",
+      "project_name_ja": "海浜エリア活性化事業",
+      "responsible_bureau_ja": "文化観光局・宮城野区・若林区",
+      "lead_section_ja": "若林区 海浜エリア活性化企画室",
+      "source_pdf_page_index_0_based": 9,
+      "source_reported_evaluation": "triangle",
+      "review_status": "reviewed_core_evaluation",
+      "evidence_id": "sendai-challenge-p9-coastal-area"
+    },
+    {
+      "sequence_within_batch": 2,
+      "cumulative_sequence": 5,
+      "id": "eastern-relocation-site-utilization",
+      "project_group_ja": "杜と水の都プロジェクト",
+      "subsection_ja": "海浜エリア活性化",
+      "project_name_ja": "東部地域移転跡地利活用推進事業",
+      "responsible_bureau_ja": "都市整備局",
+      "lead_section_ja": "市街地整備課",
+      "source_pdf_page_index_0_based": 10,
+      "source_reported_evaluation": "circle",
+      "review_status": "reviewed_core_evaluation",
+      "evidence_id": "sendai-challenge-p10-eastern-relocation"
+    },
+    {
+      "sequence_within_batch": 3,
+      "cumulative_sequence": 6,
+      "id": "coastal-park-development",
+      "project_group_ja": "杜と水の都プロジェクト",
+      "subsection_ja": "海浜エリア活性化",
+      "project_name_ja": "海岸公園整備事業",
+      "responsible_bureau_ja": "建設局",
+      "lead_section_ja": "公園整備課",
+      "source_pdf_page_index_0_based": 11,
+      "source_reported_evaluation": "circle",
+      "review_status": "reviewed_core_evaluation",
+      "evidence_id": "sendai-challenge-p11-coastal-park"
+    }
+  ],
+  "quality_boundary": "This batch reviews exactly the next three individual project sheets in source order after part1. The triangle and circle ratings are retained only as Sendai City's source-reported self-evaluations. No independent Jichi Insight achievement score, causal judgment, fiscal linkage, or inference about the remaining 102 projects is created.",
+  "next_action": "Continue the official report in source order with the next individual project sheets, preserving page-level evidence and municipality-reported ratings until all 108 records are explicitly reviewed."
+}
