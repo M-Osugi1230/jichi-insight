@@ -1,0 +1,53 @@
+[
+  {
+    "id": "sendai-challenge-p13-citizen-green-citymaking",
+    "subject_type": "project",
+    "subject_id": "citizen_green_citymaking",
+    "claims": [
+      {
+        "field": "project_identity_and_evaluation",
+        "statement": "市民協働によるみどりのまちづくり事業は建設局・百年の杜推進課所管で、令和6年度の仙台市自己評価は◎。",
+        "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+        "location_note": "公式PDF page index 13。事業名・担当・主担当課・進捗状況欄。",
+        "decision": "accepted",
+        "review_note": "◎は仙台市の自己評価区分として保持し、独自達成スコアへ変換しない。"
+      }
+    ],
+    "open_questions": ["個別成果・費用・因果効果は別レビューとする。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "sendai-challenge-p14-urban-green-infrastructure",
+    "subject_type": "project",
+    "subject_id": "urban_green_infrastructure",
+    "claims": [
+      {
+        "field": "project_identity_and_evaluation",
+        "statement": "市街地のグリーンインフラ推進事業は建設局・百年の杜推進課所管で、令和6年度の仙台市自己評価は○。",
+        "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+        "location_note": "公式PDF page index 14。事業名・担当・主担当課・進捗状況欄。",
+        "decision": "accepted",
+        "review_note": "○は仙台市の自己評価区分として保持し、独自達成スコアへ変換しない。"
+      }
+    ],
+    "open_questions": ["緑視率などの個別KPI実績は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "sendai-challenge-p15-landscape-formation",
+    "subject_type": "project",
+    "subject_id": "landscape-formation-promotion",
+    "claims": [
+      {
+        "field": "project_identity_and_evaluation",
+        "statement": "杜の都の風土を育む景観形成推進事業は都市整備局・都市景観課所管で、令和6年度の仙台市自己評価は○。",
+        "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+        "location_note": "公式PDF page index 15。事業名・担当・主担当課・進捗状況欄。",
+        "decision": "accepted",
+        "review_note": "○は仙台市の自己評価区分として保持し、独自達成スコアへ変換しない。"
+      }
+    ],
+    "open_questions": ["ビューポイント公表件数等の年度実績は別レコードとしてレビューする。"],
+    "review_status": "reviewed"
+  }
+]
