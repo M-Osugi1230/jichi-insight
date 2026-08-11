@@ -1,0 +1,67 @@
+{
+  "id": "phase13-sendai-challenge-project-reviews-part8",
+  "phase": 13,
+  "official_code": "041009",
+  "name_ja": "仙台市",
+  "reporting_fiscal_year": 2024,
+  "reviewed_at": "2026-08-11",
+  "status": "reviewed_core_evaluation_batch",
+  "source_id": "sendai-city-challenge-project-self-evaluation-2024-report",
+  "source_reported_rating_scale": {
+    "double_circle": "予定を上回る成果が出ている",
+    "circle": "予定どおり進んでいる",
+    "triangle": "一部にやや遅れが出ている",
+    "cross": "遅れている"
+  },
+  "summary": {
+    "prior_reviewed_record_count": 21,
+    "batch_reviewed_record_count": 3,
+    "cumulative_reviewed_record_count": 24,
+    "total_source_project_count": 108,
+    "remaining_record_count": 84,
+    "complete": false
+  },
+  "records": [
+    {
+      "sequence_within_batch": 1,
+      "id": "sendai-basin-flood-control-model",
+      "project_group_ja": "防災環境都市プロジェクト",
+      "subsection_ja": "防災・減災の取り組みと消防力強化",
+      "project_name_ja": "仙台市流域治水推進モデル事業",
+      "responsible_bureau_ja": "危機管理局・経済局・建設局・教育局・宮城野区",
+      "lead_section_ja": "建設局　下水道計画課",
+      "source_pdf_page_index_0_based": 30,
+      "source_reported_evaluation": "circle",
+      "review_status": "reviewed_core_evaluation",
+      "evidence_id": "evidence-sendai-challenge-p30-basin-flood-control-model"
+    },
+    {
+      "sequence_within_batch": 2,
+      "id": "road-development-disaster-prevention",
+      "project_group_ja": "防災環境都市プロジェクト",
+      "subsection_ja": "防災・減災の取り組みと消防力強化",
+      "project_name_ja": "道路整備・防災対策推進事業",
+      "responsible_bureau_ja": "建設局",
+      "lead_section_ja": "道路計画課",
+      "source_pdf_page_index_0_based": 31,
+      "source_reported_evaluation": "circle",
+      "review_status": "reviewed_core_evaluation",
+      "evidence_id": "evidence-sendai-challenge-p31-road-development-disaster-prevention"
+    },
+    {
+      "sequence_within_batch": 3,
+      "id": "community-fire-prevention",
+      "project_group_ja": "防災環境都市プロジェクト",
+      "subsection_ja": "防災・減災の取り組みと消防力強化",
+      "project_name_ja": "地域密着で取り組む火災のないまちづくり事業",
+      "responsible_bureau_ja": "消防局",
+      "lead_section_ja": "予防課",
+      "source_pdf_page_index_0_based": 32,
+      "source_reported_evaluation": "double_circle",
+      "review_status": "reviewed_core_evaluation",
+      "evidence_id": "evidence-sendai-challenge-p32-community-fire-prevention"
+    }
+  ],
+  "quality_boundary": "This batch reviews the remaining three project identities in the disaster-prevention/disaster-mitigation and fire-capability subsection together with Sendai City's own FY2024 self-evaluation classes. The two circle ratings and one double-circle rating remain municipality-reported judgments and are not converted into Jichi Insight achievement scores, causal claims, or cross-city rankings. Cumulative coverage is exactly 24 of 108, leaving 84 records pending.",
+  "next_action": "Continue in official report order with the first projects in the diversity/respect and livability subsection, preserving project identity, responsible bureau, lead section, page-level evidence, and municipality-defined evaluation classes."
+}
