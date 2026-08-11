@@ -1,0 +1,53 @@
+[
+  {
+    "id": "evidence-sendai-challenge-p53-fun-fan-find-aoba",
+    "subject_type": "project",
+    "subject_id": "fun-fan-find-aoba",
+    "claims": [
+      {
+        "field": "project_identity_and_evaluation",
+        "statement": "「Fun,Fan,Find青葉」事業は青葉区・まちづくり推進課所管で、令和6年度の仙台市自己評価は○。",
+        "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+        "location_note": "公式PDF page index 53。事業名・担当・主担当課・進捗状況欄。",
+        "decision": "accepted",
+        "review_note": "○は仙台市の自己評価区分として保持する。交流会やフォトコンテスト等により地域の新たな魅力発見を図ったという資料記述を、独自の因果評価や達成スコアへ変換しない。"
+      }
+    ],
+    "open_questions": ["交流会回数・参加者数、フォトコンテスト応募数、西公園イベント参加者数等は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-challenge-p54-miyagi-district-advanced-technology-problem-solving",
+    "subject_type": "project",
+    "subject_id": "miyagi-district-advanced-technology-problem-solving",
+    "claims": [
+      {
+        "field": "project_identity_and_evaluation",
+        "statement": "先端技術等を活用した宮城地区の課題解決事業は青葉区 宮城総合支所所管、主担当課は地域活性化推進室で、令和6年度の仙台市自己評価は○。",
+        "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+        "location_note": "公式PDF page index 54。事業名・担当・主担当課・進捗状況欄。",
+        "decision": "accepted",
+        "review_note": "○は仙台市の自己評価区分として保持し、電子回覧板、農業実証、AIカメラ等が地域課題解決に寄与したという自治体記述を独自の因果評価へ昇格させない。"
+      }
+    ],
+    "open_questions": ["電子回覧板、深水農法・直播、AIカメラ、若者交流、学校跡施設活用等の実証内容は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-challenge-p54-nagamachi-walkable-streetscape-promotion",
+    "subject_type": "project",
+    "subject_id": "nagamachi-walkable-streetscape-promotion",
+    "claims": [
+      {
+        "field": "project_identity_and_evaluation",
+        "statement": "長町・歩いて楽しい街並み形成促進事業は太白区・長町地域活性化推進室所管で、令和6年度の仙台市自己評価は○。",
+        "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+        "location_note": "公式PDF page index 54。事業名・担当・主担当課と、同区分の概要表で○評価以外に列挙されていないことおよび個票の順調進捗記述を突き合わせて確認。",
+        "decision": "accepted",
+        "review_note": "○は仙台市の自己評価区分として保持する。官民連携体制、社会実験、効果検証等の資料記述をJichi Insight独自の達成判定や因果評価へ変換しない。"
+      }
+    ],
+    "open_questions": ["検討会・ワーキング回数、道路空間社会実験、広報紙発行回数等は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  }
+]
