@@ -1,0 +1,53 @@
+[
+  {
+    "id": "evidence-sendai-challenge-p20-disaster-memorial",
+    "subject_type": "project",
+    "subject_id": "disaster-memorial",
+    "claims": [
+      {
+        "field": "project_identity_and_evaluation",
+        "statement": "震災メモリアル事業はまちづくり政策局・防災環境都市推進室所管で、令和6年度の仙台市自己評価は○。",
+        "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+        "location_note": "公式PDF page index 20。事業名・担当・主担当課・進捗状況欄。",
+        "decision": "accepted",
+        "review_note": "○は仙台市の自己評価区分として保持し、独自達成スコアへ変換しない。"
+      }
+    ],
+    "open_questions": ["来館者数、アーカイブ登録数、複合施設整備等の個別実績は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-challenge-p22-decarbonized-citymaking-promotion",
+    "subject_type": "project",
+    "subject_id": "decarbonized-citymaking-promotion",
+    "claims": [
+      {
+        "field": "project_identity_and_evaluation",
+        "statement": "脱炭素都市づくり推進事業は環境局・脱炭素政策課所管で、令和6年度の仙台市自己評価は○。",
+        "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+        "location_note": "公式PDF page index 22。事業名・担当・主担当課・進捗状況欄。",
+        "decision": "accepted",
+        "review_note": "○は仙台市の自己評価区分として保持し、独自達成スコアへ変換しない。"
+      }
+    ],
+    "open_questions": ["補助利用件数、交通利用、温室効果ガス削減アクションプログラム参加事業所数等の個別実績は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-challenge-p23-public-facility-decarbonization",
+    "subject_type": "project",
+    "subject_id": "public-facility-decarbonization",
+    "claims": [
+      {
+        "field": "project_identity_and_evaluation",
+        "statement": "公共施設脱炭素化事業は環境局・都市整備局所管、主担当課は環境局 脱炭素経営推進課で、令和6年度の仙台市自己評価は○。",
+        "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+        "location_note": "公式PDF page index 23。事業名・担当・主担当課・進捗状況欄。",
+        "decision": "accepted",
+        "review_note": "○は仙台市の自己評価区分として保持し、独自達成スコアへ変換しない。"
+      }
+    ],
+    "open_questions": ["ZEB Ready認証施設数、PPA導入施設・設備容量等の個別実績は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  }
+]
