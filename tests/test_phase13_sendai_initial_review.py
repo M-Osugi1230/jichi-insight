@@ -43,13 +43,15 @@ def test_sendai_reviewed_municipality_and_fiscal_records_match_shared_schemas():
     assert municipality["fiscal_years"] == [2024, 2026]
 
 
-def test_sendai_reviewed_sources_are_official_and_declared_by_municipality():
+def test_sendai_reviewed_sources_are_official_and_core_sources_are_declared():
     municipality = load(MUNICIPALITY_PATH)
     source_records = load(SOURCE_PATH)["records"]
     source_map = {record["id"]: record for record in source_records}
+    core_source_ids = set(municipality["sources"])
 
-    assert len(source_map) == 7
-    assert set(municipality["sources"]) == set(source_map)
+    assert len(core_source_ids) == 7
+    assert core_source_ids <= set(source_map)
+    assert "sendai-city-implementation-plan-2024-2026-pdf" in source_map
     assert all(record["organization"] == "仙台市" for record in source_records)
     assert all(record["url"].startswith("https://www.city.sendai.jp/") for record in source_records)
     assert all(record["confidence"] == "high" for record in source_records)
