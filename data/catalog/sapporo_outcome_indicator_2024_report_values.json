@@ -1,0 +1,358 @@
+{
+  "id": "phase13-sapporo-outcome-indicator-2024-report-values",
+  "phase": 13,
+  "official_code": "011002",
+  "name_ja": "札幌市",
+  "reporting_year": 2024,
+  "report_title": "【成果指標】2024年度AP2023進捗報告（2023年度実績）",
+  "source_url": "https://www.city.sapporo.jp/chosei/documents/ap2023_houkoku2024_seikashihyo.pdf",
+  "reviewed_at": "2026-08-11",
+  "status": "reviewed_prior_values_complete",
+  "summary": {
+    "unique_indicator_count": 26,
+    "reviewed_indicator_count": 26,
+    "source_reported_up_count": 13,
+    "source_reported_down_count": 11,
+    "source_reported_not_evaluated_count": 1,
+    "source_reported_unaggregated_count": 1,
+    "latest_2025_values_reviewed_count": 0
+  },
+  "records": [
+    {
+      "sequence": 1,
+      "id": "total_fertility_rate",
+      "field": "children_youth",
+      "name_ja": "合計特殊出生率",
+      "source_page": 1,
+      "value_type": "scalar",
+      "baseline": {"value": 1.08, "unit": "ratio", "fiscal_year": 2021},
+      "prior_actual": {"value": 1.02, "unit": "ratio", "fiscal_year": 2022},
+      "target": {"value": 1.3, "unit": "ratio", "fiscal_year": 2027},
+      "source_trend_classification": "source_reported_down"
+    },
+    {
+      "sequence": 2,
+      "id": "young_adult_outmigration_excess",
+      "field": "children_youth",
+      "name_ja": "20～29歳の道外への転出超過数（日本人のみ）",
+      "source_page": 1,
+      "value_type": "scalar",
+      "baseline": {"value": 2135, "unit": "people", "fiscal_year": 2022},
+      "prior_actual": {"value": 2468, "unit": "people", "fiscal_year": 2023},
+      "target": {"value": 950, "unit": "people", "fiscal_year": 2027},
+      "source_trend_classification": "source_reported_down"
+    },
+    {
+      "sequence": 3,
+      "id": "parent_support_access",
+      "field": "children_youth",
+      "name_ja": "18歳以下の子がいて、妊娠・出産や子育てについて相談相手や情報収集手段がある親の割合",
+      "source_page": 1,
+      "value_type": "scalar",
+      "baseline": {"value": 86.4, "unit": "percent", "fiscal_year": 2022},
+      "prior_actual": {"value": 76.3, "unit": "percent", "fiscal_year": 2023},
+      "target": {"value": 92, "unit": "percent", "fiscal_year": 2027},
+      "source_trend_classification": "source_reported_down"
+    },
+    {
+      "sequence": 4,
+      "id": "childcare_service_access",
+      "field": "children_youth",
+      "name_ja": "希望に応じた保育サービスが利用できた保護者の割合",
+      "source_page": 1,
+      "value_type": "scalar",
+      "baseline": {"value": 80.7, "unit": "percent", "fiscal_year": 2022},
+      "prior_actual": {"value": 84.1, "unit": "percent", "fiscal_year": 2023},
+      "target": {"value": 86, "unit": "percent", "fiscal_year": 2027},
+      "source_trend_classification": "source_reported_up"
+    },
+    {
+      "sequence": 5,
+      "id": "children_with_personal_goals",
+      "field": "children_youth",
+      "name_ja": "自分の目標をもって生活している子どもの割合",
+      "source_page": 1,
+      "value_type": "scalar",
+      "baseline": {"value": 71.6, "unit": "percent", "fiscal_year": 2023},
+      "prior_actual": {"value": 71.6, "unit": "percent", "fiscal_year": 2023},
+      "target": {"value": 80, "unit": "percent", "fiscal_year": 2027},
+      "source_trend_classification": "source_reported_not_evaluated",
+      "source_note": "2023年度からの新規項目のため、2023年度数値を当初値とし、2024年度から評価すると公式表に記載。"
+    },
+    {
+      "sequence": 6,
+      "id": "perceived_barrier_free_progress",
+      "field": "daily_life",
+      "name_ja": "まちのバリアフリー化が進んでいると感じる市民の割合",
+      "source_page": 1,
+      "value_type": "scalar",
+      "baseline": {"value": 54.9, "unit": "percent", "fiscal_year": 2022},
+      "prior_actual": {"value": 53.5, "unit": "percent", "fiscal_year": 2023},
+      "target": {"value": 66, "unit": "percent", "fiscal_year": 2027},
+      "source_trend_classification": "source_reported_down"
+    },
+    {
+      "sequence": 7,
+      "id": "understanding_elderly_disabled",
+      "field": "daily_life",
+      "name_ja": "高齢者・障がいのある方等の立場を理解して行動ができている人の割合",
+      "source_page": 1,
+      "value_type": "scalar",
+      "baseline": {"value": 37, "unit": "percent", "fiscal_year": 2022},
+      "prior_actual": {"value": 40, "unit": "percent", "fiscal_year": 2023},
+      "target": {"value": 55, "unit": "percent", "fiscal_year": 2027},
+      "source_trend_classification": "source_reported_up"
+    },
+    {
+      "sequence": 8,
+      "id": "healthy_life_expectancy",
+      "field": "daily_life",
+      "name_ja": "市民の健康寿命",
+      "source_page": 1,
+      "value_type": "composite",
+      "dimensions": [
+        {
+          "dimension": "male",
+          "baseline": {"value": 71.34, "unit": "years", "fiscal_year": 2016},
+          "prior_actual": {"value": 72.08, "unit": "years", "fiscal_year": 2019},
+          "target": {"value": 72.72, "unit": "years", "fiscal_year": 2027}
+        },
+        {
+          "dimension": "female",
+          "baseline": {"value": 72.89, "unit": "years", "fiscal_year": 2016},
+          "prior_actual": {"value": 74.69, "unit": "years", "fiscal_year": 2019},
+          "target": {"value": 74.27, "unit": "years", "fiscal_year": 2027}
+        }
+      ],
+      "source_trend_classification": "source_reported_up"
+    },
+    {
+      "sequence": 9,
+      "id": "lifelong_learning_participation",
+      "field": "daily_life",
+      "name_ja": "生涯学習をしている市民の割合",
+      "source_page": 1,
+      "value_type": "scalar",
+      "baseline": {"value": 76.2, "unit": "percent", "fiscal_year": 2022},
+      "prior_actual": {"value": 76.4, "unit": "percent", "fiscal_year": 2023},
+      "target": {"value": 78, "unit": "percent", "fiscal_year": 2027},
+      "source_trend_classification": "source_reported_up"
+    },
+    {
+      "sequence": 10,
+      "id": "perceived_digitalization_progress",
+      "field": "daily_life",
+      "name_ja": "デジタル化が進んでいると実感している市民の割合",
+      "source_page": 1,
+      "value_type": "scalar",
+      "baseline": {"value": 50.2, "unit": "percent", "fiscal_year": 2022},
+      "prior_actual": {"value": 57.4, "unit": "percent", "fiscal_year": 2023},
+      "target": {"value": 61, "unit": "percent", "fiscal_year": 2027},
+      "source_trend_classification": "source_reported_up"
+    },
+    {
+      "sequence": 11,
+      "id": "single_operator_snow_removal_machines",
+      "field": "daily_life",
+      "name_ja": "１人乗りが可能な除雪機械台数",
+      "source_page": 1,
+      "value_type": "scalar",
+      "baseline": {"value": 175, "unit": "machines", "fiscal_year": 2022},
+      "prior_actual": {"value": 197, "unit": "machines", "fiscal_year": 2023},
+      "target": {"value": 390, "unit": "machines", "fiscal_year": 2027},
+      "source_trend_classification": "source_reported_up"
+    },
+    {
+      "sequence": 12,
+      "id": "citizens_feeling_social_role",
+      "field": "community",
+      "name_ja": "社会的役割を感じる市民の割合",
+      "source_page": 1,
+      "value_type": "composite",
+      "dimensions": [
+        {
+          "dimension": "age_18_64",
+          "baseline": {"value": 44.4, "unit": "percent", "fiscal_year": 2022},
+          "prior_actual": {"value": 44.5, "unit": "percent", "fiscal_year": 2023},
+          "target": {"value": 59, "unit": "percent", "fiscal_year": 2027}
+        },
+        {
+          "dimension": "age_65_plus",
+          "baseline": {"value": 40.9, "unit": "percent", "fiscal_year": 2022},
+          "prior_actual": {"value": 45.3, "unit": "percent", "fiscal_year": 2023},
+          "target": {"value": 54, "unit": "percent", "fiscal_year": 2027}
+        }
+      ],
+      "source_trend_classification": "source_reported_up"
+    },
+    {
+      "sequence": 13,
+      "id": "citizen_machizukuri_participation",
+      "field": "community",
+      "name_ja": "市民まちづくり活動に参加したことのある人の割合",
+      "source_page": 1,
+      "value_type": "scalar",
+      "baseline": {"value": 86.3, "unit": "percent", "fiscal_year": 2022},
+      "prior_actual": {"value": 84.9, "unit": "percent", "fiscal_year": 2023},
+      "target": {"value": 90, "unit": "percent", "fiscal_year": 2027},
+      "source_trend_classification": "source_reported_down"
+    },
+    {
+      "sequence": 14,
+      "id": "citizens_prepared_for_disasters",
+      "field": "safety_security",
+      "name_ja": "災害に対する備えを行っている市民の割合",
+      "source_page": 2,
+      "value_type": "scalar",
+      "baseline": {"value": 89.9, "unit": "percent", "fiscal_year": 2022},
+      "prior_actual": {"value": 88.2, "unit": "percent", "fiscal_year": 2023},
+      "target": {"value": 100, "unit": "percent", "fiscal_year": 2027},
+      "source_trend_classification": "source_reported_down"
+    },
+    {
+      "sequence": 15,
+      "id": "gdp_per_capita_nominal",
+      "field": "economy",
+      "name_ja": "人口一人当たりの市内総生産（名目）",
+      "source_page": 2,
+      "value_type": "scalar",
+      "baseline": {"value": 386, "unit": "10k_yen_per_person", "fiscal_year": 2019},
+      "prior_actual": {"value": 378, "unit": "10k_yen_per_person", "fiscal_year": 2021},
+      "target": {"value": 399, "unit": "10k_yen_per_person", "fiscal_year": 2027},
+      "source_trend_classification": "source_reported_down"
+    },
+    {
+      "sequence": 16,
+      "id": "winter_tourist_count",
+      "field": "economy",
+      "name_ja": "冬期（12～３月）の観光客数",
+      "source_page": 2,
+      "value_type": "scalar",
+      "baseline": {"value": 421, "unit": "10k_people", "fiscal_year": 2018},
+      "prior_actual": {"value": 388, "unit": "10k_people", "fiscal_year": 2023},
+      "target": {"value": 451, "unit": "10k_people", "fiscal_year": 2027},
+      "source_trend_classification": "source_reported_down"
+    },
+    {
+      "sequence": 17,
+      "id": "total_tourism_consumption",
+      "field": "economy",
+      "name_ja": "札幌市内での総観光消費額",
+      "source_page": 2,
+      "value_type": "scalar",
+      "baseline": {"value": 5780, "unit": "100m_yen", "fiscal_year": 2018},
+      "prior_actual": {"value": 4921, "unit": "100m_yen", "fiscal_year": 2023},
+      "target": {"value": 7211, "unit": "100m_yen", "fiscal_year": 2027},
+      "source_trend_classification": "source_reported_down"
+    },
+    {
+      "sequence": 18,
+      "id": "employment_rate",
+      "field": "economy",
+      "name_ja": "就業率",
+      "source_page": 2,
+      "value_type": "unaggregated",
+      "baseline": {"value": 49, "unit": "percent", "fiscal_year": 2020},
+      "prior_actual": {"status": "unaggregated"},
+      "target": {"value": 52, "unit": "percent", "fiscal_year": 2027},
+      "source_trend_classification": "source_reported_unaggregated"
+    },
+    {
+      "sequence": 19,
+      "id": "citizens_doing_sports",
+      "field": "sports_culture",
+      "name_ja": "スポーツ（運動）をする市民の割合",
+      "source_page": 2,
+      "value_type": "scalar",
+      "baseline": {"value": 57.0, "unit": "percent", "fiscal_year": 2022},
+      "prior_actual": {"value": 60.2, "unit": "percent", "fiscal_year": 2023},
+      "target": {"value": 70, "unit": "percent", "fiscal_year": 2027},
+      "source_trend_classification": "source_reported_up"
+    },
+    {
+      "sequence": 20,
+      "id": "culture_arts_participation",
+      "field": "sports_culture",
+      "name_ja": "文化芸術活動への参加割合",
+      "source_page": 2,
+      "value_type": "scalar",
+      "baseline": {"value": 81.8, "unit": "percent", "fiscal_year": 2022},
+      "prior_actual": {"value": 75.3, "unit": "percent", "fiscal_year": 2023},
+      "target": {"value": 85, "unit": "percent", "fiscal_year": 2027},
+      "source_trend_classification": "source_reported_down"
+    },
+    {
+      "sequence": 21,
+      "id": "daily_walking_minutes",
+      "field": "environment",
+      "name_ja": "日常生活における１日あたりの歩行時間",
+      "source_page": 2,
+      "value_type": "scalar",
+      "baseline": {"value": 60, "unit": "minutes", "fiscal_year": 2022},
+      "prior_actual": {"value": 61, "unit": "minutes", "fiscal_year": 2023},
+      "target": {"value": 65, "unit": "minutes", "fiscal_year": 2027},
+      "source_trend_classification": "source_reported_up"
+    },
+    {
+      "sequence": 22,
+      "id": "citywide_ghg_emissions",
+      "field": "environment",
+      "name_ja": "温室効果ガス排出量",
+      "source_page": 2,
+      "value_type": "scalar",
+      "baseline": {"value": 1150, "unit": "10k_t_co2", "fiscal_year": 2018},
+      "prior_actual": {"value": 1025, "unit": "10k_t_co2", "fiscal_year": 2021},
+      "target": {"value": 690, "unit": "10k_t_co2", "fiscal_year": 2027},
+      "source_trend_classification": "source_reported_up"
+    },
+    {
+      "sequence": 23,
+      "id": "municipal_facility_ghg_emissions",
+      "field": "environment",
+      "name_ja": "市有施設等における温室効果ガス排出量",
+      "source_page": 2,
+      "value_type": "scalar",
+      "baseline": {"value": 66.0, "unit": "10k_t_co2", "fiscal_year": 2021},
+      "prior_actual": {"value": 65.4, "unit": "10k_t_co2", "fiscal_year": 2022},
+      "target": {"value": 44.2, "unit": "10k_t_co2", "fiscal_year": 2027},
+      "source_trend_classification": "source_reported_up"
+    },
+    {
+      "sequence": 24,
+      "id": "waste_resource_collection_satisfaction",
+      "field": "environment",
+      "name_ja": "ごみや資源回収に関することについて満足している市民の割合",
+      "source_page": 2,
+      "value_type": "scalar",
+      "baseline": {"value": 75.4, "unit": "percent", "fiscal_year": 2022},
+      "prior_actual": {"value": 73.6, "unit": "percent", "fiscal_year": 2023},
+      "target": {"value": 77, "unit": "percent", "fiscal_year": 2027},
+      "source_trend_classification": "source_reported_down"
+    },
+    {
+      "sequence": 25,
+      "id": "central_city_effective_far",
+      "field": "urban_space",
+      "name_ja": "都心の区域内実容積率",
+      "source_page": 2,
+      "value_type": "scalar",
+      "baseline": {"value": 237.8, "unit": "percent", "fiscal_year": 2021},
+      "prior_actual": {"value": 241.6, "unit": "percent", "fiscal_year": 2022},
+      "target": {"value": 255, "unit": "percent", "fiscal_year": 2027},
+      "source_trend_classification": "source_reported_up"
+    },
+    {
+      "sequence": 26,
+      "id": "regional_hub_effective_far",
+      "field": "urban_space",
+      "name_ja": "地域交流拠点の区域内実容積率",
+      "source_page": 2,
+      "value_type": "scalar",
+      "baseline": {"value": 102.0, "unit": "percent", "fiscal_year": 2021},
+      "prior_actual": {"value": 102.4, "unit": "percent", "fiscal_year": 2022},
+      "target": {"value": 110, "unit": "percent", "fiscal_year": 2027},
+      "source_trend_classification": "source_reported_up"
+    }
+  ],
+  "quality_boundary": "This file reviews all 26 unique indicator rows from the official 2024 report after excluding seven gray repost occurrences. Values retain the fiscal year printed in each row, so a reporting-year label is never substituted for the actual measurement year. The source trend arrow is stored as a source-reported classification rather than recalculated from the numeric direction; this matters for indicators such as greenhouse-gas emissions where a numerically lower value is shown with an upward source trend. These are prior-report values only and must not be presented as the latest 2024 actuals from the 2025 report."
+}
