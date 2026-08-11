@@ -1,0 +1,87 @@
+{
+  "id": "phase13-sapporo-action-plan-safety-security-projects-part1-evidence",
+  "phase": 13,
+  "official_code": "011002",
+  "name_ja": "札幌市",
+  "reviewed_at": "2026-08-11",
+  "source": {
+    "source_id": "sapporo-action-plan-2023-projects-safety-security",
+    "title": "第2次札幌市まちづくり戦略ビジョン・アクションプラン2023 第2章 分野4 安全・安心",
+    "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_4.pdf",
+    "source_page_label": 80,
+    "pdf_page_index_0_based": 1,
+    "review_method": "visual_page_review",
+    "table_heading": "主な事業"
+  },
+  "evidence_packets": [
+    {
+      "evidence_id": "sapporo-safety-page80-row1",
+      "project_id": "disaster_response_headquarters_function_enhancement",
+      "location_note": "Printed page 80, 主な事業 table, first visible project row.",
+      "reviewed_fields": [
+        "project_name_ja",
+        "responsible_department_ja",
+        "planned_project_cost_yen",
+        "target_name_ja",
+        "baseline_year",
+        "baseline_value",
+        "target_year",
+        "target_value"
+      ],
+      "evidence_status": "reviewed",
+      "boundary": "Project-description text is not promoted in this batch."
+    },
+    {
+      "evidence_id": "sapporo-safety-page80-row2",
+      "project_id": "disaster_prevention_awareness_promotion",
+      "location_note": "Printed page 80, 主な事業 table, second visible project row.",
+      "reviewed_fields": [
+        "project_name_ja",
+        "responsible_department_ja",
+        "planned_project_cost_yen",
+        "target_name_ja",
+        "baseline_year",
+        "baseline_value",
+        "target_year",
+        "target_value"
+      ],
+      "evidence_status": "reviewed",
+      "boundary": "Project-description text is not promoted in this batch."
+    },
+    {
+      "evidence_id": "sapporo-safety-page80-row3",
+      "project_id": "community_disaster_prevention_activity_promotion",
+      "location_note": "Printed page 80, 主な事業 table, third visible project row.",
+      "reviewed_fields": [
+        "project_name_ja",
+        "responsible_department_ja",
+        "planned_project_cost_yen",
+        "target_name_ja",
+        "baseline_year",
+        "baseline_value",
+        "target_year",
+        "target_value"
+      ],
+      "evidence_status": "reviewed",
+      "boundary": "Project-description text is not promoted in this batch."
+    },
+    {
+      "evidence_id": "sapporo-safety-page80-row4",
+      "project_id": "emergency_stockpile_materials_development",
+      "location_note": "Printed page 80, 主な事業 table, fourth visible project row.",
+      "reviewed_fields": [
+        "project_name_ja",
+        "responsible_department_ja",
+        "planned_project_cost_yen",
+        "target_name_ja",
+        "baseline_year",
+        "baseline_value",
+        "target_year",
+        "target_value"
+      ],
+      "evidence_status": "reviewed",
+      "boundary": "Project-description text is not promoted in this batch."
+    }
+  ],
+  "quality_boundary": "Each Evidence Packet points to one visible row on printed page 80 of the official safety/security PDF. No evidence packet is created for unseen rows, project descriptions, annual progress, or any inferred relationship to the remaining Action Plan projects."
+}

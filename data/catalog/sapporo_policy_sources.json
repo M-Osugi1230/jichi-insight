@@ -1,5 +1,5 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "updated_at": "2026-08-11",
   "scope": "phase13_sapporo_policy_review",
   "records": [
@@ -63,6 +63,21 @@
       "review_status": "aggregate_reviewed_record_values_pending",
       "confidence": "high_for_source_and_aggregate_pending_for_rows",
       "notes": "公式進捗ページから最新成果指標PDFとして確認。公式HTMLでは26項目中17上昇・8下降・1未集計。PDFは現行取得経路で行テキストを安定抽出できないため、個別2024年度実績値と矢印は推測せずpendingとする。"
+    },
+    {
+      "id": "sapporo-action-plan-2023-projects-safety-security",
+      "municipality_key": "sapporo-city",
+      "organization": "札幌市",
+      "category": "implementation_plan_projects",
+      "title": "アクションプラン2023 第2章 分野4 安全・安心",
+      "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_4.pdf",
+      "source_kind": "pdf",
+      "availability": "published",
+      "indexed_at": "2026-08-11",
+      "page_count": 10,
+      "review_status": "partial_record_review_in_progress",
+      "confidence": "high",
+      "notes": "公式Action Planページから分野4の計画体系別事業PDFとして確認。印刷ページ80の主な事業表で最初の4事業について事業名、担当部、計画事業費、事業目標、2022基準値、2027目標値をReviewed化。残ページ・分野内総事業数・599事業全体での位置は未レビュー。"
     }
   ]
 }
