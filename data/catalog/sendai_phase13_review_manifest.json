@@ -25,6 +25,18 @@
       "review_status": "reviewed"
     },
     {
+      "id": "sendai-challenge-project-batch-1",
+      "layer": "implementation_plan",
+      "field": "reviewed_priority_project_entries",
+      "value": 11,
+      "unit": "project_entries",
+      "measure_count": 3,
+      "kpi_count": 7,
+      "source_id": "sendai-city-implementation-plan-2024-2026-pdf",
+      "review_status": "reviewed_partial",
+      "interpretation_boundary": "『杜と水の都プロジェクト』の最初の3施策に掲載された重点事業11エントリと数値目標7件をレビューした。全108事業に対する一意事業カバレッジ率は、重複掲載の有無を全章で確認するまで算出しない。"
+    },
+    {
       "id": "sendai-2025-survey-sample",
       "layer": "annual_progress",
       "field": "survey_sample_count",
@@ -93,9 +105,9 @@
       "review_status": "reviewed"
     }
   ],
-  "quality_boundary": "The initial Sendai review separates the 2021-2030 basic plan, 2024-2026 implementation plan, survey methodology, municipality self-evaluation, enacted initial budget, and settlement values into distinct evidence roles. The 108-project 12/89/7/0 breakdown remains a source-reported self-evaluation and is not converted into an independent achievement score. Fiscal revenue and expenditure are retained separately, and budget state is not collapsed into settlement state.",
+  "quality_boundary": "The Sendai review separates the 2021-2030 basic plan, 2024-2026 implementation plan, plan-level priority-project entries and KPI targets, survey methodology, municipality self-evaluation, enacted initial budget, and settlement values into distinct evidence roles. The 108-project 12/89/7/0 breakdown remains a source-reported self-evaluation and is not converted into an independent achievement score. Plan targets are not treated as actuals, and budget state is not collapsed into settlement state.",
   "remaining_work": [
-    "仙台市実施計画2024-2026のチャレンジプロジェクト108事業を公式順序・指標・自己評価区分・証拠位置付きで個票レビューする。",
+    "仙台市実施計画2024-2026の残るチャレンジプロジェクト施策を公式順序・数値目標・重点事業・証拠位置付きで個票レビューする。全108事業に対する一意事業カバレッジ率は重複掲載を全章確認するまで算出しない。",
     "市民意識調査報告書の設問・母数・回答区分をレコード単位でレビューし、行政実績とアンケート評価を分離する。",
     "予算・決算の内訳レコードは会計・年度・状態を維持したまま追加し、実施計画事業とのリンクは名称と財政状態を照合した後に行う。"
   ]
