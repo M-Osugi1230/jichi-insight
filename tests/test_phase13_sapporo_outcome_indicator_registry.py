@@ -17,12 +17,16 @@ def test_sapporo_outcome_indicator_registry_covers_all_unique_indicators_once():
     records = registry["records"]
 
     assert registry["official_code"] == "011002"
-    assert registry["status"] == "identity_review_complete_value_review_pending"
+    assert registry["status"] == (
+        "identity_and_prior_value_review_complete_current_value_review_pending"
+    )
     assert len(records) == 26
     assert [record["sequence"] for record in records] == list(range(1, 27))
     assert len({record["id"] for record in records}) == 26
     assert len({record["name_ja"] for record in records}) == 26
     assert all(record["identity_review_status"] == "reviewed" for record in records)
+    assert registry["summary"]["prior_value_reviewed_count"] == 26
+    assert registry["summary"]["current_value_reviewed_count"] == 0
 
 
 def test_sapporo_registry_preserves_33_to_26_repost_boundary():
@@ -78,15 +82,30 @@ def test_sapporo_registry_has_exact_reviewed_identity_anchors():
     assert records["young_adult_outmigration_excess"]["name_ja"] == (
         "20～29歳の道外への転出超過数（日本人のみ）"
     )
+    assert records["perceived_barrier_free_progress"]["sequence"] == 6
+    assert records["understanding_elderly_disabled"]["sequence"] == 7
+    assert records["healthy_life_expectancy"]["sequence"] == 8
+    assert records["lifelong_learning_participation"]["sequence"] == 9
+    assert records["citizens_feeling_social_role"]["sequence"] == 12
+    assert records["citizen_machizukuri_participation"]["sequence"] == 13
     assert records["understanding_elderly_disabled"]["reposted_elsewhere"] is True
     assert records["citizens_prepared_for_disasters"]["source_page"] == 2
     assert records["regional_hub_effective_far"]["sequence"] == 26
 
 
-def test_sapporo_current_values_are_not_invented_before_row_alignment_review():
+def test_sapporo_prior_values_are_complete_but_current_values_stay_pending():
     registry = load(REGISTRY_PATH)
     records = registry["records"]
+    prior = registry["prior_value_review"]
 
+    assert prior["status"] == "reviewed"
+    assert prior["reviewed_count"] == 26
+    assert prior["record_path"] == (
+        "data/catalog/sapporo_outcome_indicator_2024_report_values.json"
+    )
+    assert prior["evidence_path"] == (
+        "data/evidence/sapporo_outcome_indicator_2024_report_values_evidence.json"
+    )
     assert registry["summary"]["current_value_reviewed_count"] == 0
     assert all(record["current_value_review_status"] == "pending" for record in records)
     assert all("current_value" not in record for record in records)
@@ -94,10 +113,11 @@ def test_sapporo_current_values_are_not_invented_before_row_alignment_review():
     assert "not Jichi Insight achievement judgments" in registry["quality_boundary"]
 
 
-def test_sapporo_manifest_records_identity_completion_without_city_completion():
+def test_sapporo_manifest_records_prior_values_without_city_completion():
     manifest = load(MANIFEST_PATH)
     facts = {fact["id"]: fact for fact in manifest["reviewed_facts"]}
     identity = facts["outcome-indicator-identity-registry"]
+    prior_values = facts["outcome-indicator-prior-values-2024-report"]
 
     assert manifest["status"] == "review_in_progress"
     assert identity["value"] == 26
@@ -106,6 +126,9 @@ def test_sapporo_manifest_records_identity_completion_without_city_completion():
     assert identity["registry_path"] == (
         "data/catalog/sapporo_outcome_indicator_registry.json"
     )
-    assert "個別2024年度実績値" in identity["interpretation_boundary"]
-    assert any("26項目の正式名称ID台帳は完了" in item for item in manifest["remaining_work"])
+    assert prior_values["value"] == 26
+    assert prior_values["reporting_year"] == 2024
+    assert prior_values["review_status"] == "reviewed"
+    assert "最新値" in prior_values["interpretation_boundary"]
+    assert any("前年値26件は完了" in item for item in manifest["remaining_work"])
     assert any("403" in item for item in manifest["remaining_work"])
