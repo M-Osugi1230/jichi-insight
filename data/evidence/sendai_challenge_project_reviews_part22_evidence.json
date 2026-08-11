@@ -1,0 +1,47 @@
+[
+  {
+    "id": "evidence-sendai-challenge-p77-sendai-art-node-project",
+    "subject_type": "project",
+    "subject_id": "sendai-art-node-project",
+    "claims": [{
+      "field": "project_identity_and_evaluation",
+      "statement": "せんだい・アート・ノード・プロジェクト事業は教育局・生涯学習課所管で、令和6年度の仙台市自己評価は○。",
+      "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+      "location_note": "公式PDF page index 77。事業名・担当・主担当課・進捗状況欄。",
+      "decision": "accepted",
+      "review_note": "○は仙台市の自己評価区分として保持する。住民協働制作、市民参画、交流イベント等がまちの魅力や活気につながったという自治体記述をJichi Insight独自の因果評価へ昇格させない。"
+    }],
+    "open_questions": ["各イベント・展示・ワークショップの参加者数や実施回数は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-challenge-p78-diversity-promotion",
+    "subject_type": "project",
+    "subject_id": "diversity-promotion",
+    "claims": [{
+      "field": "project_identity_and_evaluation",
+      "statement": "ダイバーシティ推進事業はまちづくり政策局・ダイバーシティ推進課所管で、令和6年度の仙台市自己評価は○。",
+      "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+      "location_note": "公式PDF page index 78。事業名・担当・主担当課・進捗状況欄。",
+      "decision": "accepted",
+      "review_note": "○は仙台市の自己評価区分として保持する。推進指針、フェスタ、ジェンダード・イノベーション、外国人窓口実証等がダイバーシティ推進につながったという資料記述を独自の因果評価へ変換しない。"
+    }],
+    "open_questions": ["会議回数、フェスタ来場者、ワークショップ回数、実証窓口利用者数等は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-challenge-p79-women-advancement-promotion",
+    "subject_type": "project",
+    "subject_id": "women-advancement-promotion",
+    "claims": [{
+      "field": "project_identity_and_evaluation",
+      "statement": "女性の活躍推進事業は市民局・男女共同参画課所管で、令和6年度の仙台市自己評価は○。",
+      "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+      "location_note": "公式PDF page index 79。事業名・担当・主担当課・進捗状況欄。",
+      "decision": "accepted",
+      "review_note": "○は仙台市の自己評価区分として保持する。女性リーダー育成、企業向けセミナー、防災分野の人材育成等が女性活躍・管理職登用・ネットワーク形成につながったという資料記述を独自の因果評価へ昇格させない。"
+    }],
+    "open_questions": ["プログラム参加・修了者数、セミナー参加者数、防災人材育成実績等は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  }
+]
