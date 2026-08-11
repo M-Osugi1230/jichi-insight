@@ -1,0 +1,77 @@
+[
+  {
+    "id": "evidence-sendai-challenge-01-measure-01",
+    "subject_type": "project",
+    "subject_id": "sendai-challenge-01-measure-01",
+    "claims": [
+      {
+        "field": "title_and_kpis",
+        "statement": "『勾当台・定禅寺通エリア活性化』には2つの数値目標があり、令和5年度基準値として個別アクティビティは平日9種類・休日8種類、人の活動量は平日10.25人時・休日17.58人時で、いずれも目標は基準値以上。",
+        "source_ids": ["sendai-city-implementation-plan-2024-2026-pdf"],
+        "location_note": "PDF page index 9 / printed page 7, 『1 勾当台・定禅寺通エリア活性化』数値目標表。",
+        "decision": "accepted",
+        "review_note": "平日・休日の複数系列を一つの値へ平均化せず保存。"
+      },
+      {
+        "field": "priority_projects",
+        "statement": "重点事業は『新本庁舎整備事業』『勾当台公園及び周辺再整備事業』『西公園再整備事業』の3件。",
+        "source_ids": ["sendai-city-implementation-plan-2024-2026-pdf"],
+        "location_note": "PDF page index 9 / printed page 7, 『重点事業』表。",
+        "decision": "accepted",
+        "review_note": "関連事業とは区別し、重点事業欄だけを個票対象にした。"
+      }
+    ],
+    "open_questions": ["2024年度以降の実績値は進行管理資料と照合して別レイヤーで追加する。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-challenge-01-measure-02",
+    "subject_type": "project",
+    "subject_id": "sendai-challenge-01-measure-02",
+    "claims": [
+      {
+        "field": "title_and_kpis",
+        "statement": "『海浜エリア活性化』の数値目標は、主要公共施設年間利用者数が令和4年度735,212人から令和8年度800,000人、跡地利活用事業着手面積割合が令和4年度末64.7%から令和8年度末100.0%。",
+        "source_ids": ["sendai-city-implementation-plan-2024-2026-pdf"],
+        "location_note": "PDF page index 10 / printed page 8, 『2 海浜エリア活性化』数値目標表。",
+        "decision": "accepted",
+        "review_note": "年度値と年度末値を区別して保存。"
+      },
+      {
+        "field": "priority_projects",
+        "statement": "重点事業は『海浜エリア活性化事業』『東部地域移転跡地利活用推進事業』『海岸公園整備事業』の3件。",
+        "source_ids": ["sendai-city-implementation-plan-2024-2026-pdf"],
+        "location_note": "PDF page index 10 / printed page 8, 『重点事業』表。",
+        "decision": "accepted",
+        "review_note": "掲載頁68・68・70を併記し、第4章との後続照合に使う。"
+      }
+    ],
+    "open_questions": ["各重点事業の第4章詳細と年度別予算・決算の対応は未レビュー。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-challenge-01-measure-03",
+    "subject_type": "project",
+    "subject_id": "sendai-challenge-01-measure-03",
+    "claims": [
+      {
+        "field": "title_and_kpis",
+        "statement": "『みどりでつながるまちづくり』には、緑化フェアレガシー事業参加者数延べ1,000人（令和8年度末）、育樹イベント等13回以上（各年度）、都心部主要道路の緑視率31.0%（令和5年度）以上という3つの数値目標がある。",
+        "source_ids": ["sendai-city-implementation-plan-2024-2026-pdf"],
+        "location_note": "PDF page index 11 / printed page 9, 『3 みどりでつながるまちづくり』数値目標表。",
+        "decision": "accepted",
+        "review_note": "基準値なし、累計目標、各年度目標、基準値以上という異なる目標型を分離して保存。"
+      },
+      {
+        "field": "priority_projects",
+        "statement": "重点事業は『市民協働によるみどりのまちづくり事業』『市街地のグリーンインフラ推進事業』『杜の都の風土を育む景観形成推進事業』『広瀬川創生・清流保全事業』『青葉山公園整備事業』の5件。",
+        "source_ids": ["sendai-city-implementation-plan-2024-2026-pdf"],
+        "location_note": "PDF page index 11 / printed page 9, 『重点事業』表。",
+        "decision": "accepted",
+        "review_note": "5件の重点事業だけをReviewed化し、同ページの主な関連事業は別扱い。"
+      }
+    ],
+    "open_questions": ["緑化フェアレガシー事業の年度実績は進行管理資料側で確認する。"],
+    "review_status": "reviewed"
+  }
+]
