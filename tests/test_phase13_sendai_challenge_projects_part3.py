@@ -73,7 +73,7 @@ def test_sendai_challenge_part3_evidence_is_one_to_one_and_valid():
     assert all(packet["review_status"] == "reviewed" for packet in packets)
 
 
-def test_sendai_manifest_advances_to_nine_without_claiming_completion():
+def test_sendai_manifest_keeps_part3_history_without_freezing_later_progress():
     manifest = load(MANIFEST_PATH)
     facts = {fact["id"]: fact for fact in manifest["reviewed_facts"]}
     part3 = facts["sendai-challenge-project-records-part3"]
@@ -84,7 +84,8 @@ def test_sendai_manifest_advances_to_nine_without_claiming_completion():
         "double_circle": 1,
         "circle": 2,
     }
-    assert "残り99事業" in manifest["remaining_work"][0]
+    assert "累計9/108" in part3["interpretation_boundary"]
+    assert "残り99事業" in part3["interpretation_boundary"]
     assert "independent Jichi Insight achievement scores" in manifest[
         "quality_boundary"
     ]
