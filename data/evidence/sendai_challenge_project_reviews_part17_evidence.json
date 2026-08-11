@@ -1,0 +1,53 @@
+[
+  {
+    "id": "evidence-sendai-challenge-p58-youth-active-community-development",
+    "subject_type": "project",
+    "subject_id": "youth-active-community-development",
+    "claims": [
+      {
+        "field": "project_identity_and_evaluation",
+        "statement": "若者が活躍するまちづくり事業は市民局・市民協働推進課所管で、令和6年度の仙台市自己評価は○。",
+        "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+        "location_note": "公式PDF page index 58。事業名・担当・主担当課・進捗状況欄。",
+        "decision": "accepted",
+        "review_note": "○は仙台市の自己評価区分として保持する。若者の提案・参画、各プログラムの目標値超過等の資料記述をJichi Insight独自の達成判定や因果評価へ変換しない。"
+      }
+    ],
+    "open_questions": ["若者ラボ参加人数、ユースチャレンジ実施団体数、SDGsアワード参加団体数、情報発信回数等は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-challenge-p59-miyagino-young-community-leader-development",
+    "subject_type": "project",
+    "subject_id": "miyagino-young-community-leader-development",
+    "claims": [
+      {
+        "field": "project_identity_and_evaluation",
+        "statement": "みやぎの・まちづくり若手人材育成支援事業は宮城野区・まちづくり推進課所管で、令和6年度の仙台市自己評価は○。",
+        "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+        "location_note": "公式PDF page index 59。事業名・担当・主担当課・進捗状況欄。",
+        "decision": "accepted",
+        "review_note": "○は仙台市の自己評価区分として保持し、知識・ノウハウ蓄積、若手ネットワーク形成、地域貢献等に関する自治体記述を独自の因果評価へ昇格させない。"
+      }
+    ],
+    "open_questions": ["セミナー・ワークショップ回数、参加者数、企画・実践支援回数、発表回数等は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-challenge-p59-wakabayashi-university-community-collaboration",
+    "subject_type": "project",
+    "subject_id": "wakabayashi-university-community-collaboration",
+    "claims": [
+      {
+        "field": "project_identity_and_evaluation",
+        "statement": "わかばやし地学連携推進事業は若林区・まちづくり推進課所管で、令和6年度の仙台市自己評価は○。",
+        "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+        "location_note": "公式PDF page index 59-60。事業名はpage index 59末尾、主担当課・進捗状況はpage index 60にまたがるため、連続する個票として確認。",
+        "decision": "accepted",
+        "review_note": "○は仙台市の自己評価区分として保持する。学生育成、地域魅力発信、地域活性化への寄与という資料記述をJichi Insight独自の達成スコアや因果評価へ変換しない。"
+      }
+    ],
+    "open_questions": ["助成交付数、動画制作本数、協議会等への学生参画者数、講義・研修実績等は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  }
+]
