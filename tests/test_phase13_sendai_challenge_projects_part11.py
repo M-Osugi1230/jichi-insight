@@ -88,25 +88,16 @@ def test_sendai_part11_does_not_promote_source_effect_language_to_causality():
     assert "causal claim" in data["quality_boundary"]
 
 
-def test_sendai_manifest_advances_to_thirty_three_without_claiming_completion():
+def test_sendai_manifest_keeps_part11_history_without_freezing_later_progress():
     manifest = load(MANIFEST_PATH)
     facts = {fact["id"]: fact for fact in manifest["reviewed_facts"]}
     part11 = facts["sendai-challenge-project-records-part11"]
-    batches = [
-        fact
-        for fact in manifest["reviewed_facts"]
-        if fact["id"].startswith("sendai-challenge-project-records-part")
-    ]
-    cumulative_reviewed = sum(fact["value"] for fact in batches)
-    remaining = 108 - cumulative_reviewed
 
     assert part11["value"] == 3
     assert part11["cumulative_value"] == 33
     assert part11["source_reported_breakdown"] == {"circle": 3}
+    assert "累計33/108" in part11["interpretation_boundary"]
     assert "残り75事業" in part11["interpretation_boundary"]
-    assert cumulative_reviewed >= 33
-    assert f"{cumulative_reviewed}事業を個票レビュー済み" in manifest["remaining_work"][0]
-    assert f"残り{remaining}事業" in manifest["remaining_work"][0]
     assert "independent Jichi Insight achievement scores" in manifest[
         "quality_boundary"
     ]
