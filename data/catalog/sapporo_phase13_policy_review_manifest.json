@@ -4,7 +4,7 @@
   "official_code": "011002",
   "name_ja": "札幌市",
   "status": "review_in_progress",
-  "reviewed_at": "2026-08-08",
+  "reviewed_at": "2026-08-11",
   "source_ids": [
     "sapporo-action-plan-2023-page",
     "sapporo-action-plan-2023-progress-page"
@@ -54,6 +54,19 @@
       "interpretation_boundary": "札幌市が『計画現状値より上昇』と分類した事実のみを保持し、Jichi Insight独自の達成判定には変換しない。"
     },
     {
+      "id": "outcome-indicator-identity-registry",
+      "layer": "annual_progress",
+      "field": "unique_outcome_indicator_identity_count",
+      "value": 26,
+      "displayed_field_occurrences": 33,
+      "reposted_occurrences": 7,
+      "source_id": "sapporo-action-plan-2023-progress-page",
+      "registry_path": "data/catalog/sapporo_outcome_indicator_registry.json",
+      "location_note": "公式成果指標PDFの『全成果指標の進捗状況一覧』2ページをレビューし、再掲7件を除いた26指標の正式名称を固定。",
+      "review_status": "reviewed",
+      "interpretation_boundary": "このレビューで確定したのは指標ID・正式名称・掲載ページであり、2025年度報告の個別2024年度実績値と個別傾向は未確定のまま保持する。"
+    },
+    {
       "id": "progress-project-targets",
       "layer": "annual_progress",
       "field": "project_targets_expected_achieved",
@@ -82,11 +95,11 @@
       "interpretation_boundary": "決算額と予算額が混在する公式累計であるため、全額を決算実績とは扱わない。"
     }
   ],
-  "quality_boundary": "実施計画の期間・事業数・計画事業費と、2025年度進捗報告に掲載された集計値を公式HTMLの記載どおりReviewed化した。市の自己評価表現はsource-reported factとして保存し、独自の政策達成判定、因果推論、他都市比較には使用しない。",
+  "quality_boundary": "実施計画の期間・事業数・計画事業費、2025年度進捗報告の集計値に加え、成果指標33表示行から再掲7件を除いた26ユニーク指標の正式名称と掲載ページをReviewed化した。2025年度報告の個別2024年度実績値・個別傾向は行対応を独立検証するまで未確定とし、市の自己評価表現を独自の政策達成判定、因果推論、他都市比較には使用しない。",
   "remaining_work": [
     "第2次戦略ビジョン本体の政策目標・成果指標をページ単位でレビューする。",
     "アクションプラン2023の個別599事業を公式順序とページ位置付きで索引化する。",
-    "2025年度進捗報告の個別成果指標26項目と主な事業403項目をレコード単位でレビューする。",
+    "成果指標26項目の正式名称ID台帳は完了。次に2025年度報告の個別2024年度実績値・傾向を各IDへ行単位で接続し、主な事業403項目もレコード単位でレビューする。",
     "財政レコードとの事業単位リンクは名称・年度・会計状態を照合した後に別工程で行う。"
   ]
 }
