@@ -108,9 +108,51 @@ Status: `complete`
 - `schemas/phase11_completion.schema.json`
 - `tests/test_phase11_completion.py`
 
-## After Phase 11
+## Phase 12 — Designated-city source inventory
 
-1. 政令指定都市
+Status: `in_progress`
+
+政令指定都市20市を対象に、都道府県フェーズで確立したEvidence・期間・財政状態・非評価境界を市レベルへ展開します。北九州市・福岡市の2市をReviewed referenceとして保持し、残る18市を公式コード順に処理します。
+
+2026-08-11時点の正本では、18市のsource inventoryを全市で作成済みです。そのうち13市が`source_inventory_complete`、5市が`source_inventory_partial`です。Partialの5市は静岡市、堺市、神戸市、岡山市、広島市で、未解決の現行資料層を推測で補完しません。
+
+Phase 12の完了条件は、対象市の単なるURL収集ではなく、現行総合計画、実施層、年度進捗、予算、決算等の役割分離と、公式URL・資料名・証拠位置・版・期間・未解決境界が保持されたsource inventoryであることです。
+
+正本:
+
+- `data/catalog/phase12_designated_city_execution_queue.json`
+- `data/indexed/*-city/source_inventory.json`
+- `tests/test_phase12_designated_city_execution_queue.py`
+
+## Phase 13 — Designated-city record review
+
+Status: `in_progress`
+
+Phase 12で`source_inventory_complete`となった市だけを、個票レベルのReviewed昇格対象にします。北九州市・福岡市の2市をReviewed referenceとし、13市がreview queueに入り、5市はPhase 12のPartial解消までblockします。
+
+2026-08-11時点では札幌市と仙台市が`review_in_progress`、残る11市が`pending_record_review`です。個々の市のレビュー進捗は各市のreview manifestを正本とし、このRoadmapには変動しやすい個票件数を固定しません。
+
+Phase 13では、以下を品質ゲートとして維持します。
+
+- すべてのReviewed個票が公式URLとページ・表・節等のrecord-level evidence locationを持つ
+- 総合計画、実施計画、年度進捗、予算、決算を別のevidence roleとして保持する
+- 予算案、成立予算、補正、執行、決算、事業費、契約額、補助額を混同しない
+- 目標年、報告年、測定年、会計年度、公開年、計画版を区別する
+- 自治体の自己評価はsource-reported factとして保持し、Jichi Insight独自の達成判定へ変換しない
+- 比較可能性の別レビューなしに自治体間ランキングへ昇格しない
+- Schema、Evidence coverage、回帰テストを通過するまで市単位のPhase 13完了を宣言しない
+
+正本:
+
+- `data/catalog/phase13_designated_city_review_queue.json`
+- `data/catalog/*_phase13_review_manifest.json`
+- `data/catalog/*_challenge_project_reviews_part*.json`
+- `data/evidence/*_evidence.json`
+- `tests/test_phase13_*.py`
+
+## After Phase 13
+
+1. Phase 12のPartial 5市を解消し、全20政令指定都市をPhase 13へ通す
 2. 中核市・県庁所在地
 3. その他市区町村
 4. 選挙・候補者比較
