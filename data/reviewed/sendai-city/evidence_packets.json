@@ -1,0 +1,58 @@
+[
+  {
+    "id": "evidence-sendai-city-2026-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-041009-fiscal-2026-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算額は7,306億円。",
+        "source_ids": [
+          "sendai-city-budget-2026-announcement",
+          "sendai-city-budget-2026-enactment-page"
+        ],
+        "location_note": "市長記者会見本文『令和8年度当初予算額』と、令和8年第1回定例会提出議案ページの原案通り可決注記。",
+        "decision": "accepted",
+        "review_note": "7,306億円を円換算し、2026年3月12日に予算案が原案通り可決されたことを別Sourceで確認。補正後予算・執行額・決算額とは混同しない。"
+      }
+    ],
+    "open_questions": [
+      "今後の補正予算はinitial_budgetレコードを上書きせず、revised_budgetとして別記録で接続する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-city-2024-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-041009-fiscal-2024-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計の歳入合計における収入済額は627,113,991,995円。",
+        "source_ids": ["sendai-city-settlement-2024-general-account-pdf"],
+        "location_note": "令和6年度仙台市一般会計歳入歳出決算書、歳入一般会計の歳入合計行、収入済額欄（PDF内部ページ6付近／印刷ページ13）。",
+        "decision": "accepted",
+        "review_note": "予算現額683,223,649,422円、調定額635,078,779,941円、不納欠損額337,853,464円、収入未済額7,688,051,896円とは別の決算値として保存する。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-city-2024-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-041009-fiscal-2024-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計の歳出合計における支出済額は619,037,397,835円。",
+        "source_ids": ["sendai-city-settlement-2024-general-account-pdf"],
+        "location_note": "令和6年度仙台市一般会計歳入歳出決算書、歳出一般会計の歳出合計行、支出済額欄（PDF内部ページ10付近／印刷ページ17）。",
+        "decision": "accepted",
+        "review_note": "翌年度繰越額36,135,812,450円、不用額28,050,439,137円および予算現額とは別の決算値として保存する。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]
