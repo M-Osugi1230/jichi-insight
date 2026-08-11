@@ -89,11 +89,16 @@ def test_sapporo_remains_phase13_in_progress_until_individual_records_reviewed()
     sapporo = next(
         item for item in queue["execution_queue"] if item["official_code"] == "011002"
     )
+    statuses = [item["status"] for item in queue["execution_queue"]]
     manifest = load(MANIFEST_PATH)
 
     assert sapporo["status"] == "review_in_progress"
-    assert queue["summary"]["review_in_progress_count"] == 1
-    assert queue["summary"]["reviewed_complete_count"] == 0
+    assert queue["summary"]["review_in_progress_count"] == statuses.count(
+        "review_in_progress"
+    )
+    assert queue["summary"]["reviewed_complete_count"] == statuses.count(
+        "reviewed_complete"
+    )
     assert len(manifest["remaining_work"]) == 4
     assert any("599" in item for item in manifest["remaining_work"])
     assert any("26" in item and "403" in item for item in manifest["remaining_work"])

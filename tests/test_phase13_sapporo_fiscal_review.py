@@ -78,8 +78,16 @@ def test_sapporo_phase13_status_is_in_progress_not_complete():
     sapporo = next(
         item for item in queue["execution_queue"] if item["official_code"] == "011002"
     )
+    statuses = [item["status"] for item in queue["execution_queue"]]
+
     assert sapporo["status"] == "review_in_progress"
-    assert queue["summary"]["reviewed_complete_count"] == 0
-    assert queue["summary"]["review_in_progress_count"] == 1
-    assert queue["summary"]["pending_record_review_count"] == 12
+    assert queue["summary"]["reviewed_complete_count"] == statuses.count(
+        "reviewed_complete"
+    )
+    assert queue["summary"]["review_in_progress_count"] == statuses.count(
+        "review_in_progress"
+    )
+    assert queue["summary"]["pending_record_review_count"] == statuses.count(
+        "pending_record_review"
+    )
     assert queue["summary"]["next_official_code"] == "011002"

@@ -1,0 +1,87 @@
+{
+  "id": "phase13-sendai-plan-review",
+  "official_code": "041009",
+  "name_ja": "仙台市",
+  "review_status": "review_in_progress",
+  "reviewed_at": "2026-08-11",
+  "records": [
+    {
+      "id": "sendai-basic-plan-period",
+      "evidence_role": "current_plan_identity",
+      "title": "仙台市基本計画2021-2030",
+      "statement": "仙台市基本計画の計画期間は2021年度から2030年度まで。",
+      "value": "2021年度～2030年度",
+      "source_url": "https://www.city.sendai.jp/machizukuri-kakuka/shise/zaise/kekaku/sogo/index.html",
+      "evidence_location": "仙台市総合計画 > 本文冒頭および『仙台市基本計画2021-2030』概要",
+      "decision": "accepted",
+      "review_note": "現行の10年間の基本計画として保存し、3年間の実施計画とは分離する。"
+    },
+    {
+      "id": "sendai-implementation-plan-period",
+      "evidence_role": "implementation_layer",
+      "title": "仙台市実施計画2024-2026",
+      "statement": "現行実施計画は2024年度から2026年度までの3年間。",
+      "value": "2024年度～2026年度",
+      "source_url": "https://www.city.sendai.jp/machizukuri-kakuka/shise/koho/kisha/r5/03/sakutei.html",
+      "evidence_location": "本文『今後3年間に取り組む具体的な目標と事業』",
+      "decision": "accepted",
+      "review_note": "基本計画2021-2030の実効性確保のための実施層として保存する。"
+    },
+    {
+      "id": "sendai-2025-citizen-survey-sample",
+      "evidence_role": "annual_progress_methodology",
+      "title": "仙台市市民意識調査",
+      "statement": "調査対象は仙台市に居住する満18歳以上の男女6,000人を住民基本台帳から無作為抽出。",
+      "value": 6000,
+      "unit": "persons_sampled",
+      "source_url": "https://www.city.sendai.jp/machizukuri-kakuka/kishahappyou/kishahappyou_shintyokur7.html",
+      "evidence_location": "仙台市市民意識調査 > （1）調査対象",
+      "decision": "accepted",
+      "review_note": "回答者数や仙台市人口ではなく、抽出された調査対象数として保存する。"
+    },
+    {
+      "id": "sendai-2025-citizen-survey-period",
+      "evidence_role": "annual_progress_methodology",
+      "title": "仙台市市民意識調査",
+      "statement": "調査期間は2025年4月30日から5月29日。",
+      "value": "2025-04-30/2025-05-29",
+      "source_url": "https://www.city.sendai.jp/machizukuri-kakuka/kishahappyou/kishahappyou_shintyokur7.html",
+      "evidence_location": "仙台市市民意識調査 > （2）調査期間",
+      "decision": "accepted",
+      "review_note": "報告ページの更新日や実施計画年度とは分離する。"
+    },
+    {
+      "id": "sendai-2025-citizen-survey-valid-responses",
+      "evidence_role": "annual_progress_methodology",
+      "title": "仙台市市民意識調査",
+      "statement": "有効回収数は2,794票、有効回収率は46.8%。",
+      "value": 2794,
+      "unit": "valid_responses",
+      "reported_rate_percent": 46.8,
+      "source_url": "https://www.city.sendai.jp/machizukuri-kakuka/kishahappyou/kishahappyou_shintyokur7.html",
+      "evidence_location": "仙台市市民意識調査 > （3）有効回収数（率）",
+      "decision": "accepted",
+      "review_note": "仙台市注記では無効数30件を除いた件数を母数として有効回収率を算出。Jichi Insightで別分母から再計算しない。"
+    },
+    {
+      "id": "sendai-2024-challenge-project-self-evaluation",
+      "evidence_role": "annual_progress_source_reported_evaluation",
+      "title": "チャレンジプロジェクトの自己評価（令和6年度実施分）",
+      "statement": "実施計画のチャレンジプロジェクトに位置付けた108事業を4段階で自己評価し、◎12事業、○89事業、△7事業、×0事業と報告。",
+      "value": 108,
+      "unit": "projects",
+      "source_url": "https://www.city.sendai.jp/machizukuri-kakuka/kishahappyou/kishahappyou_shintyokur7.html",
+      "evidence_location": "チャレンジプロジェクトの自己評価（令和6年度実施分） > （1）評価方法・（2）評価結果",
+      "decision": "accepted",
+      "source_reported_breakdown": {
+        "double_circle": 12,
+        "circle": 89,
+        "triangle": 7,
+        "cross": 0
+      },
+      "review_note": "4区分は仙台市による自己評価をsource-reported factとして保存する。独立したJichi Insight政策達成率、因果効果、他都市比較指標には変換しない。"
+    }
+  ],
+  "quality_boundary": "This package reviews current plan identity, implementation-plan period, citizen-survey methodology, and the municipality's source-reported 2024 challenge-project self-evaluation aggregate. Survey responses are not administrative outcome actuals, and the 12/89/7/0 self-evaluation breakdown is not an independent Jichi Insight achievement judgment or a cross-city comparable score.",
+  "next_action": "Review the 108 challenge-project rows and the citizen-survey report at record level, preserving indicator definitions, denominators, measurement dates, and the municipality's own evaluation labels before linking any record to fiscal data."
+}

@@ -1,0 +1,80 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-08-11",
+  "scope": "phase13_sendai_initial_review",
+  "records": [
+    {
+      "id": "sendai-city-home",
+      "organization": "仙台市",
+      "category": "municipality",
+      "title": "仙台市公式ホームページ",
+      "url": "https://www.city.sendai.jp/",
+      "source_kind": "html",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "sendai-city-comprehensive-plan-page",
+      "organization": "仙台市",
+      "category": "comprehensive_plan",
+      "title": "仙台市総合計画",
+      "url": "https://www.city.sendai.jp/machizukuri-kakuka/shise/zaise/kekaku/sogo/index.html",
+      "source_kind": "html",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "sendai-city-implementation-plan-2024-2026-page",
+      "organization": "仙台市",
+      "category": "implementation_plan",
+      "title": "仙台市実施計画2024-2026（令和6年度～令和8年度）を策定しました",
+      "url": "https://www.city.sendai.jp/machizukuri-kakuka/shise/koho/kisha/r5/03/sakutei.html",
+      "source_kind": "html",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "sendai-city-progress-2025-page",
+      "organization": "仙台市",
+      "category": "annual_progress",
+      "title": "仙台市実施計画の達成状況に関する調査等の結果がまとまりました",
+      "url": "https://www.city.sendai.jp/machizukuri-kakuka/kishahappyou/kishahappyou_shintyokur7.html",
+      "source_kind": "html",
+      "review_status": "reviewed_aggregate_and_methodology",
+      "confidence": "high",
+      "boundary": "市民意識調査の方法とチャレンジプロジェクト108事業の自己評価集計を公式記載どおり保存する。自己評価区分を独立したJichi Insight政策達成判定には変換しない。"
+    },
+    {
+      "id": "sendai-city-budget-2026-announcement",
+      "organization": "仙台市",
+      "category": "budget",
+      "title": "令和8年第1回定例会に提出する議案について（発表内容）",
+      "url": "https://www.city.sendai.jp/sesakukoho/gaiyo/shichoshitsu/kaiken/2026/01/27gian1.html",
+      "source_kind": "html",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "sendai-city-budget-2026-enactment-page",
+      "organization": "仙台市",
+      "category": "budget",
+      "title": "令和8年第1回定例会提出議案",
+      "url": "https://www.city.sendai.jp/yosandaichi/shise/zaise/zaimu/zaise/sendaishi/yosan/r8terekai/r8-1/index.html",
+      "source_kind": "html",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "boundary": "一般会計予算案が2026年3月12日に原案通り可決された事実を確認するための正本。"
+    },
+    {
+      "id": "sendai-city-settlement-2024-general-account-pdf",
+      "organization": "仙台市",
+      "category": "settlement",
+      "title": "令和6年度仙台市一般会計歳入歳出決算書",
+      "url": "https://www.city.sendai.jp/yosandaichi/shise/zaise/zaimu/zaise/sendaishi/yosan/r7terekai/r7-3/r-6kaikei/documents/r6kessan02.pdf",
+      "source_kind": "pdf",
+      "review_status": "reviewed_totals",
+      "confidence": "high",
+      "boundary": "歳入合計の収入済額と歳出合計の支出済額を別レコードとして保存する。予算現額、調定額、翌年度繰越額、不用額とは混同しない。"
+    }
+  ]
+}
