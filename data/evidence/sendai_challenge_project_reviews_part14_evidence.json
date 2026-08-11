@@ -1,0 +1,53 @@
+[
+  {
+    "id": "evidence-sendai-challenge-p51-miyagi-general-branch-office-reconstruction",
+    "subject_type": "project",
+    "subject_id": "miyagi-general-branch-office-reconstruction",
+    "claims": [
+      {
+        "field": "project_identity_and_evaluation",
+        "statement": "宮城総合支所庁舎建替事業は青葉区 宮城総合支所所管、主担当課は総務課で、令和6年度の仙台市自己評価は○。",
+        "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+        "location_note": "公式PDF page index 51。事業名・担当・主担当課・進捗状況欄。",
+        "decision": "accepted",
+        "review_note": "○は仙台市の自己評価区分として保持する。基本構想策定や市民意見聴取が予定どおり進んだという資料記述を、独自の達成判定や因果評価へ変換しない。"
+      }
+    ],
+    "open_questions": ["アンケート回答者数、パブリックコメント件数、基本構想策定時点等の個別実績は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-challenge-p51-izumi-ward-office-reconstruction",
+    "subject_type": "project",
+    "subject_id": "izumi-ward-office-reconstruction",
+    "claims": [
+      {
+        "field": "project_identity_and_evaluation",
+        "statement": "泉区役所建替事業は財政局・都市整備局・泉区所管、主担当課は泉区 泉中央地区活性化推進室で、令和6年度の仙台市自己評価は○。",
+        "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+        "location_note": "公式PDF page index 51。事業名・担当・主担当課・進捗状況欄。",
+        "decision": "accepted",
+        "review_note": "○は仙台市の自己評価区分として保持し、設計・新築工事着手や周辺活性化に関する自治体記述を独自達成スコアへ変換しない。"
+      }
+    ],
+    "open_questions": ["設計、新築工事、民間施設用地売却、交流空間・交通環境改善の個別実績は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-challenge-p52-public-transport-use-promotion",
+    "subject_type": "project",
+    "subject_id": "public-transport-use-promotion",
+    "claims": [
+      {
+        "field": "project_identity_and_evaluation",
+        "statement": "公共交通利用促進事業は都市整備局・公共交通推進課所管で、令和6年度の仙台市自己評価は○。",
+        "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+        "location_note": "公式PDF page index 52。事業名・担当・主担当課・進捗状況欄。",
+        "decision": "accepted",
+        "review_note": "○は仙台市の自己評価区分として保持する。ダイヤ調整、待合環境整備、運賃制度、モビリティ・マネジメントが利便性向上・利用促進に寄与したという資料記述を独自の因果評価へ昇格させない。"
+      }
+    ],
+    "open_questions": ["八木山ライン、バス停上屋、せんだいバスFREE+、交通イベント等の個別実績は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  }
+]
