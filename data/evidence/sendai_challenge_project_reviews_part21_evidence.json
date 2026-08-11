@@ -1,0 +1,47 @@
+[
+  {
+    "id": "evidence-sendai-challenge-p73-school-refusal-student-support",
+    "subject_type": "project",
+    "subject_id": "school-refusal-student-support",
+    "claims": [{
+      "field": "project_identity_and_evaluation",
+      "statement": "不登校児童生徒等支援事業は教育局・教育相談課所管で、令和6年度の仙台市自己評価は○。",
+      "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+      "location_note": "公式PDF page index 73。事業名・担当・主担当課・進捗状況欄。",
+      "decision": "accepted",
+      "review_note": "○は仙台市の自己評価区分として保持する。ICT、メタバース、オンライン授業、民間施設連携等の実績を、Jichi Insight独自の不登校改善効果や因果評価へ変換しない。"
+    }],
+    "open_questions": ["出席扱い人数、メタバース・オンライン授業回数、児遊の杜・杜のひろば利用人数等は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-challenge-p74-special-needs-education-promotion",
+    "subject_type": "project",
+    "subject_id": "special-needs-education-promotion",
+    "claims": [{
+      "field": "project_identity_and_evaluation",
+      "statement": "特別支援教育推進事業は教育局・特別支援教育課所管で、令和6年度の仙台市自己評価は○。",
+      "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+      "location_note": "公式PDF page index 74。事業名・担当・主担当課・進捗状況欄。",
+      "decision": "accepted",
+      "review_note": "○は仙台市の自己評価区分として保持する。フェスティバル来場者増、専門家派遣、インクルーシブ推進教諭配置等から障害理解や指導力向上が図られたという自治体記述を独自の因果評価へ昇格させない。"
+    }],
+    "open_questions": ["実施校数、専門家派遣回数、看護師配置、連絡協議会等の個別実績は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-challenge-p76-culture-arts-city-attractiveness",
+    "subject_type": "project",
+    "subject_id": "culture-arts-city-attractiveness",
+    "claims": [{
+      "field": "project_identity_and_evaluation",
+      "statement": "文化芸術によるまちの魅力づくり事業は文化観光局・文化振興課所管で、令和6年度の仙台市自己評価は△。",
+      "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+      "location_note": "公式PDF page index 76。事業名・担当・主担当課・進捗状況欄。仙台市は多様な文化芸術機会等への取り組みを記載する一方、市民意識調査が基準値を下回ったことを評価理由に明記。",
+      "decision": "accepted",
+      "review_note": "△は仙台市の自己評価区分をそのまま保持する。Jichi Insight独自の低評価・失敗判定・因果評価には変換しない。"
+    }],
+    "open_questions": ["市民意識調査の設問・母数・回答区分、各文化芸術事業の参加者・助成件数等は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  }
+]
