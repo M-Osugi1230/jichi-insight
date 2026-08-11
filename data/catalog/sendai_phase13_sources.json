@@ -1,7 +1,7 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "updated_at": "2026-08-11",
-  "scope": "phase13_sendai_initial_review",
+  "scope": "phase13_sendai_record_review",
   "records": [
     {
       "id": "sendai-city-home",
@@ -32,6 +32,17 @@
       "source_kind": "html",
       "review_status": "reviewed",
       "confidence": "high"
+    },
+    {
+      "id": "sendai-city-implementation-plan-2024-2026-pdf",
+      "organization": "仙台市",
+      "category": "implementation_plan",
+      "title": "仙台市実施計画2024-2026（令和6年度～令和8年度）",
+      "url": "https://www.city.sendai.jp/machizukuri-kakuka/shise/zaise/kekaku/sogo/documents/jisshikeikaku_web_2024-2026.pdf",
+      "source_kind": "pdf",
+      "review_status": "reviewed_pages_5_11",
+      "confidence": "high",
+      "boundary": "全108重点事業・全220事業を一括Reviewedとは扱わない。初回個票バッチでは第2章の『杜と水の都プロジェクト』3施策、重点事業11件、数値目標7件だけをPDF掲載位置付きで確認する。"
     },
     {
       "id": "sendai-city-progress-2025-page",
