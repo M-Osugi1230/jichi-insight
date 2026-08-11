@@ -1,0 +1,65 @@
+{
+  "id": "phase13-sendai-challenge-project-reviews-part1",
+  "phase": 13,
+  "official_code": "041009",
+  "name_ja": "仙台市",
+  "reporting_fiscal_year": 2024,
+  "reviewed_at": "2026-08-11",
+  "status": "reviewed_core_evaluation_batch",
+  "source_id": "sendai-city-challenge-project-self-evaluation-2024-report",
+  "source_reported_rating_scale": {
+    "double_circle": "予定を上回る成果が出ている",
+    "circle": "予定どおり進んでいる",
+    "triangle": "一部にやや遅れが出ている",
+    "cross": "遅れている"
+  },
+  "summary": {
+    "total_source_project_count": 108,
+    "reviewed_record_count": 3,
+    "remaining_record_count": 105,
+    "complete": false
+  },
+  "records": [
+    {
+      "sequence_within_batch": 1,
+      "id": "new_city_hall_development",
+      "project_group_ja": "杜と水の都プロジェクト",
+      "subsection_ja": "勾当台・定禅寺通エリア活性化",
+      "project_name_ja": "新本庁舎整備事業",
+      "responsible_bureau_ja": "財政局",
+      "lead_section_ja": "本庁舎整備室",
+      "source_pdf_page_index_0_based": 6,
+      "source_reported_evaluation": "circle",
+      "review_status": "reviewed_core_evaluation",
+      "evidence_id": "sendai-challenge-p6-new-city-hall"
+    },
+    {
+      "sequence_within_batch": 2,
+      "id": "nishi_park_redevelopment",
+      "project_group_ja": "杜と水の都プロジェクト",
+      "subsection_ja": "勾当台・定禅寺通エリア活性化",
+      "project_name_ja": "西公園再整備事業",
+      "responsible_bureau_ja": "建設局",
+      "lead_section_ja": "公園整備課",
+      "source_pdf_page_index_0_based": 7,
+      "source_reported_evaluation": "circle",
+      "review_status": "reviewed_core_evaluation",
+      "evidence_id": "sendai-challenge-p7-nishi-park"
+    },
+    {
+      "sequence_within_batch": 3,
+      "id": "kotodai_park_surroundings_redevelopment",
+      "project_group_ja": "杜と水の都プロジェクト",
+      "subsection_ja": "勾当台・定禅寺通エリア活性化",
+      "project_name_ja": "勾当台公園及び周辺再整備事業",
+      "responsible_bureau_ja": "建設局",
+      "lead_section_ja": "公園整備課",
+      "source_pdf_page_index_0_based": 7,
+      "source_reported_evaluation": "circle",
+      "review_status": "reviewed_core_evaluation",
+      "evidence_id": "sendai-challenge-p7-kotodai-park"
+    }
+  ],
+  "quality_boundary": "Only the three clearly identified project sheets at the start of the official 126-page self-evaluation report are reviewed in this batch. The circle rating is preserved as Sendai City's source-reported self-evaluation meaning '予定どおり進んでいる' and is not converted into a Jichi Insight achievement score. No unreviewed project, project result, causal effect, budget linkage, or completion claim is inferred from these three records.",
+  "next_action": "Continue the official report in source order, review each remaining project identity and municipality self-evaluation with page-level evidence, and maintain the 3-of-108 coverage denominator until additional records are explicitly reviewed."
+}

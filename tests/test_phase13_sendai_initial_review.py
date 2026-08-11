@@ -48,7 +48,7 @@ def test_sendai_reviewed_sources_are_official_and_declared_by_municipality():
     source_records = load(SOURCE_PATH)["records"]
     source_map = {record["id"]: record for record in source_records}
 
-    assert len(source_map) == 7
+    assert len(source_map) == 8
     assert set(municipality["sources"]) == set(source_map)
     assert all(record["organization"] == "仙台市" for record in source_records)
     assert all(record["url"].startswith("https://www.city.sendai.jp/") for record in source_records)
@@ -56,6 +56,12 @@ def test_sendai_reviewed_sources_are_official_and_declared_by_municipality():
     assert source_map["sendai-city-progress-2025-page"]["review_status"] == (
         "reviewed_aggregate_and_methodology"
     )
+    assert source_map["sendai-city-challenge-project-self-evaluation-2024-report"][
+        "review_status"
+    ] == "partial_record_review_in_progress"
+    assert source_map["sendai-city-challenge-project-self-evaluation-2024-report"][
+        "page_count"
+    ] == 126
     assert source_map["sendai-city-settlement-2024-general-account-pdf"][
         "review_status"
     ] == "reviewed_totals"
@@ -169,4 +175,5 @@ def test_sendai_manifest_and_phase13_queue_record_review_in_progress():
     assert facts["sendai-2024-general-account-settlement-expenditure"]["value"] == (
         619_037_397_835
     )
-    assert "108事業" in manifest["remaining_work"][0]
+    assert facts["sendai-challenge-project-records-part1"]["value"] == 3
+    assert "3事業を個票レビュー済み" in manifest["remaining_work"][0]
