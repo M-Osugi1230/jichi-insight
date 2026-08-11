@@ -77,9 +77,22 @@ def test_sendai_part16_preserves_source_rating_and_causality_boundaries():
     evidence = load(EVIDENCE_PATH)
     records = {record["id"]: record for record in data["records"]}
 
-    assert records["akiu-district-revitalization"]["source_reported_evaluation"] == "double_circle"
-    assert records["izumi-central-district-revitalization"]["source_reported_evaluation"] == "circle"
-    assert records["regional-transport-operation-support"]["source_reported_evaluation"] == "double_circle"
+    assert (
+        records["akiu-district-revitalization"]["source_reported_evaluation"]
+        == "double_circle"
+    )
+    assert (
+        records["izumi-central-district-revitalization"][
+            "source_reported_evaluation"
+        ]
+        == "circle"
+    )
+    assert (
+        records["regional-transport-operation-support"][
+            "source_reported_evaluation"
+        ]
+        == "double_circle"
+    )
     assert all("独自" in packet["claims"][0]["review_note"] for packet in evidence)
     assert "causal claim" in data["quality_boundary"]
 
