@@ -21,7 +21,7 @@
   ],
   "execution_queue": [
     {"sequence":1,"official_code":"011002","name_ja":"札幌市","prefecture_name_ja":"北海道","status":"review_in_progress","source_inventory_path":"data/indexed/sapporo-city/source_inventory.json"},
-    {"sequence":2,"official_code":"041009","name_ja":"仙台市","prefecture_name_ja":"宮城県","status":"pending_record_review","source_inventory_path":"data/indexed/sendai-city/source_inventory.json"},
+    {"sequence":2,"official_code":"041009","name_ja":"仙台市","prefecture_name_ja":"宮城県","status":"review_in_progress","source_inventory_path":"data/indexed/sendai-city/source_inventory.json"},
     {"sequence":3,"official_code":"111007","name_ja":"さいたま市","prefecture_name_ja":"埼玉県","status":"pending_record_review","source_inventory_path":"data/indexed/saitama-city/source_inventory.json"},
     {"sequence":4,"official_code":"121002","name_ja":"千葉市","prefecture_name_ja":"千葉県","status":"pending_record_review","source_inventory_path":"data/indexed/chiba-city/source_inventory.json"},
     {"sequence":5,"official_code":"141003","name_ja":"横浜市","prefecture_name_ja":"神奈川県","status":"pending_record_review","source_inventory_path":"data/indexed/yokohama-city/source_inventory.json"},
@@ -47,9 +47,9 @@
     "eligible_review_queue_count": 13,
     "blocked_source_inventory_count": 5,
     "reviewed_complete_count": 0,
-    "review_in_progress_count": 1,
-    "pending_record_review_count": 12,
+    "review_in_progress_count": 2,
+    "pending_record_review_count": 11,
     "next_official_code": "011002"
   },
-  "updated_at": "2026-08-08"
+  "updated_at": "2026-08-11"
 }
