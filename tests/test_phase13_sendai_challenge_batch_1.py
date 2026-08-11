@@ -101,17 +101,21 @@ def test_sendai_challenge_batch_1_preserves_multi_series_and_target_types():
 def test_sendai_challenge_batch_1_priority_projects_are_exact():
     measures = {measure["id"]: measure for measure in load(DATA_PATH)["measures"]}
 
-    assert [item["title"] for item in measures["sendai-challenge-01-measure-01"]["priority_projects"]] == [
+    measure_1_projects = measures["sendai-challenge-01-measure-01"]["priority_projects"]
+    measure_2_projects = measures["sendai-challenge-01-measure-02"]["priority_projects"]
+    measure_3_projects = measures["sendai-challenge-01-measure-03"]["priority_projects"]
+
+    assert [item["title"] for item in measure_1_projects] == [
         "新本庁舎整備事業",
         "勾当台公園及び周辺再整備事業",
         "西公園再整備事業",
     ]
-    assert [item["title"] for item in measures["sendai-challenge-01-measure-02"]["priority_projects"]] == [
+    assert [item["title"] for item in measure_2_projects] == [
         "海浜エリア活性化事業",
         "東部地域移転跡地利活用推進事業",
         "海岸公園整備事業",
     ]
-    assert [item["title"] for item in measures["sendai-challenge-01-measure-03"]["priority_projects"]] == [
+    assert [item["title"] for item in measure_3_projects] == [
         "市民協働によるみどりのまちづくり事業",
         "市街地のグリーンインフラ推進事業",
         "杜の都の風土を育む景観形成推進事業",
