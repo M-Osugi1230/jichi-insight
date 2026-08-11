@@ -29,9 +29,9 @@ def test_sendai_challenge_part3_counts_and_coverage_are_exact():
 
 
 def test_sendai_challenge_part3_records_are_exact_and_source_reported():
-    records = data_records = load(DATA_PATH)["records"]
+    records = load(DATA_PATH)["records"]
     assert len(records) == 3
-    assert [record["project_name_ja"] for record in data_records] == [
+    assert [record["project_name_ja"] for record in records] == [
         "市民協働によるみどりのまちづくり事業",
         "市街地のグリーンインフラ推進事業",
         "杜の都の風土を育む景観形成推進事業",
