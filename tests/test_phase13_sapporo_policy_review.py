@@ -24,8 +24,21 @@ def test_sapporo_policy_review_uses_reviewed_official_sources():
     assert set(manifest["source_ids"]) == set(source_map)
     assert all(record["organization"] == "札幌市" for record in sources)
     assert all(record["url"].startswith("https://www.city.sapporo.jp/") for record in sources)
-    assert all(record["review_status"] == "reviewed" for record in sources)
-    assert all(record["confidence"] == "high" for record in sources)
+    assert source_map["sapporo-action-plan-2023-page"]["review_status"] == "reviewed"
+    assert source_map["sapporo-action-plan-2023-progress-page"]["review_status"] == (
+        "reviewed"
+    )
+    assert source_map["sapporo-action-plan-2023-outcomes-2024-report"][
+        "review_status"
+    ] == "reviewed_for_indicator_identity_and_prior_values"
+    current_report = source_map["sapporo-action-plan-2023-outcomes-2025-report"]
+    assert current_report["review_status"] == "aggregate_reviewed_record_values_pending"
+    assert current_report["confidence"] == "high_for_source_and_aggregate_pending_for_rows"
+    assert all(
+        record["confidence"] == "high"
+        for source_id, record in source_map.items()
+        if source_id != "sapporo-action-plan-2023-outcomes-2025-report"
+    )
 
 
 def test_sapporo_action_plan_reviewed_facts_are_exact_and_bounded():
