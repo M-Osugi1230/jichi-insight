@@ -1,0 +1,53 @@
+[
+  {
+    "id": "evidence-sendai-challenge-p70-ict-education-promotion",
+    "subject_type": "project",
+    "subject_id": "ict-education-promotion",
+    "claims": [
+      {
+        "field": "project_identity_and_evaluation",
+        "statement": "ICT教育推進事業は教育局・教育指導課所管で、令和6年度の仙台市自己評価は○。",
+        "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+        "location_note": "公式PDF page index 70。事業名・担当・主担当課・進捗状況欄。",
+        "decision": "accepted",
+        "review_note": "○は仙台市の自己評価区分として保持する。1人1台端末、年間指導計画、教員研修等が情報活用能力向上につながったという自治体認識を独自の因果評価へ昇格させない。"
+      }
+    ],
+    "open_questions": ["活動スキル・探究スキル・プログラミング・情報モラルの割合等は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-challenge-p71-sendai-self-development-education",
+    "subject_type": "project",
+    "subject_id": "sendai-self-development-education",
+    "claims": [
+      {
+        "field": "project_identity_and_evaluation",
+        "statement": "仙台自分づくり教育推進事業は教育局・学びの連携推進室所管で、令和6年度の仙台市自己評価は○。",
+        "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+        "location_note": "公式PDF page index 71。事業名・担当・主担当課・進捗状況欄。",
+        "decision": "accepted",
+        "review_note": "○は仙台市の自己評価区分として保持する。生活・学習状況調査の長期変化から自分づくり教育の効果がうかがえるという資料記述を、Jichi Insight独自の因果効果として扱わない。"
+      }
+    ],
+    "open_questions": ["職場体験実施校、職業講話、スチューデントシティ、ファイナンスパーク、研究会等の実績は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-challenge-p72-community-school-promotion",
+    "subject_type": "project",
+    "subject_id": "community-school-promotion",
+    "claims": [
+      {
+        "field": "project_identity_and_evaluation",
+        "statement": "コミュニティ・スクール推進事業は教育局・学びの連携推進室所管で、令和6年度の仙台市自己評価は○。",
+        "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+        "location_note": "公式PDF page index 72。事業名・担当・主担当課・進捗状況欄。",
+        "decision": "accepted",
+        "review_note": "○は仙台市の自己評価区分として保持する。学校訪問や研修により協議会の意識向上・熟議増加につながったという自治体記述を独自の達成判定や因果評価へ変換しない。"
+      }
+    ],
+    "open_questions": ["チラシ発行数、ミーティング回数、学校訪問校数、協議会参加・研修実績等は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "id": "evidence-sendai-challenge-p62-child-rearing-support-momentum",
+    "subject_type": "project",
+    "subject_id": "child-rearing-support-momentum",
+    "claims": [
+      {
+        "field": "project_identity_and_evaluation",
+        "statement": "子育て応援の機運醸成事業はこども若者局・子育て応援都市推進課所管で、令和6年度の仙台市自己評価は○。",
+        "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+        "location_note": "公式PDF page index 62。事業名・担当・主担当課・進捗状況欄。",
+        "decision": "accepted",
+        "review_note": "○は仙台市の自己評価区分として保持する。新生児祝福、サポーター登録、アプリ、イベント、団体ネットワーク等が機運醸成につながったという資料記述を独自の因果評価へ変換しない。"
+      }
+    ],
+    "open_questions": ["案内状送付件数、サポーター登録件数、アプリ登録件数、イベント参加者数等は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-challenge-p63-work-childcare-balance-support",
+    "subject_type": "project",
+    "subject_id": "work-childcare-balance-support",
+    "claims": [
+      {
+        "field": "project_identity_and_evaluation",
+        "statement": "仕事と子育ての両立支援事業はこども若者局所管、主担当課は総務課・子育て応援都市推進課で、令和6年度の仙台市自己評価は○。",
+        "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+        "location_note": "公式PDF page index 63。事業名・担当・主担当課・進捗状況欄。",
+        "decision": "accepted",
+        "review_note": "○は仙台市の自己評価区分として保持する。男性育休取得奨励金やセミナー等が制度導入・行動変容・気運醸成に寄与したという自治体記述をJichi Insight独自の因果評価へ昇格させない。"
+      }
+    ],
+    "open_questions": ["セミナー参加者、奨励金交付件数、モデル企業数等の実績は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-challenge-p63-child-play-environment-enhancement",
+    "subject_type": "project",
+    "subject_id": "child-play-environment-enhancement",
+    "claims": [
+      {
+        "field": "project_identity_and_evaluation",
+        "statement": "子どもの遊びの環境充実事業はこども若者局・子育て応援都市推進課所管で、令和6年度の仙台市自己評価は○。",
+        "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+        "location_note": "公式PDF page index 63-64。事業名はpage index 63末尾から始まり、主担当課・評価欄・実績はpage index 64に続く個票として確認。",
+        "decision": "accepted",
+        "review_note": "○は仙台市の自己評価区分として保持する。プレーパーク支援や遊び場提供が普及・担い手育成等に寄与したという資料記述を独自の達成判定や因果評価へ変換しない。"
+      }
+    ],
+    "open_questions": ["補助団体数、養成講座・講演会回数、遊び場開催日数・参加者数等は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  }
+]
