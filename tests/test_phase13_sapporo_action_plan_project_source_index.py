@@ -44,7 +44,10 @@ def test_sapporo_project_source_index_uses_unique_official_sapporo_urls():
 
     assert len(urls) == 10
     assert len(set(urls)) == 10
-    assert all(url.startswith("https://www.city.sapporo.jp/chosei/documents/") for url in urls)
+    assert all(
+        url.startswith("https://www.city.sapporo.jp/chosei/documents/")
+        for url in urls
+    )
     assert all(
         record["source_identification_status"] == "official_link_verified"
         for record in records
@@ -68,7 +71,7 @@ def test_sapporo_project_source_index_preserves_known_and_pending_page_counts():
     assert chapter3["fiscal_operations"]["page_count"] is None
 
 
-def test_sapporo_safety_source_records_first_reviewed_project_batch():
+def test_sapporo_safety_source_records_complete_field_project_inventory():
     index = load(INDEX_PATH)
     safety = next(
         record
@@ -76,20 +79,27 @@ def test_sapporo_safety_source_records_first_reviewed_project_batch():
         if record["field_id"] == "safety_security"
     )
 
-    assert safety["content_review_status"] == "record_review_in_progress"
-    assert safety["reviewed_project_record_count"] == 4
-    assert safety["reviewed_page_labels"] == [80]
-    assert safety["record_catalog_path"] == (
-        "data/catalog/sapporo_action_plan_safety_security_projects_part1.json"
-    )
-    assert safety["evidence_path"] == (
-        "data/evidence/sapporo_action_plan_safety_security_projects_part1_evidence.json"
-    )
+    assert safety["content_review_status"] == "record_review_complete_at_declared_fields"
+    assert safety["reviewed_project_record_count"] == 70
+    assert safety["field_total_project_count"] == 70
+    assert safety["field_total_project_count_reviewed"] is True
+    assert safety["intro_page_label"] == 79
+    assert safety["intro_page_contains_project_rows"] is False
+    assert safety["reviewed_page_labels"] == list(range(80, 89))
+    assert safety["record_catalog_paths"] == [
+        "data/catalog/sapporo_action_plan_safety_security_projects_part1.json",
+        "data/catalog/sapporo_action_plan_safety_security_projects_part2.json",
+    ]
+    assert safety["evidence_paths"] == [
+        "data/evidence/sapporo_action_plan_safety_security_projects_part1_evidence.json",
+        "data/evidence/sapporo_action_plan_safety_security_projects_part2_evidence.json",
+    ]
 
 
-def test_sapporo_project_source_index_does_not_invent_project_allocation():
+def test_sapporo_project_source_index_keeps_global_599_allocation_unresolved():
     index = load(INDEX_PATH)
-    records = index["machizukuri_field_sources"] + index["chapter3_sources"]
+    fields = index["machizukuri_field_sources"]
+    chapter3 = index["chapter3_sources"]
     summary = index["summary"]
     aggregate = index["plan_level_aggregate"]
 
@@ -98,14 +108,17 @@ def test_sapporo_project_source_index_does_not_invent_project_allocation():
     assert aggregate["allocation_status"] == "not_allocated_to_source_documents"
     assert summary["total_identified_document_count"] == 10
     assert summary["total_action_plan_project_count"] == 599
-    assert summary["per_document_project_counts_reviewed"] == 0
-    assert summary["individual_project_records_reviewed"] == 4
+    assert summary["per_document_project_counts_reviewed"] == 1
+    assert summary["individual_project_records_reviewed"] == 70
     assert summary["project_count_allocation_status"] == "not_allocated_to_documents"
     assert summary["chapter3_denominator_membership_review_status"] == "pending"
-    assert all("project_count" not in record for record in records)
+    assert sum("field_total_project_count" in record for record in fields) == 1
+    assert next(
+        record for record in fields if record["field_id"] == "safety_security"
+    )["field_total_project_count"] == 70
     assert all(
         record["project_denominator_membership_status"] == "pending_record_level_review"
-        for record in index["chapter3_sources"]
+        for record in chapter3
     )
 
 
@@ -113,14 +126,15 @@ def test_sapporo_project_source_index_keeps_review_boundary_explicit():
     index = load(INDEX_PATH)
     boundary = index["quality_boundary"]
 
-    assert "does not allocate the 599-project denominator" in boundary
-    assert "complete safety/security project count" in boundary
-    assert "infer project counts from page counts" in boundary
+    assert "70 projects" in boundary
+    assert "remaining 529 projects" in boundary
+    assert "does not allocate" in boundary
+    assert "infer counts from page counts" in boundary
     assert "assume Chapter 3 denominator membership" in boundary
-    assert "unseen project rows" in boundary
+    assert "annual-progress 403-item denominator" in boundary
 
 
-def test_sapporo_manifest_records_document_index_without_city_completion():
+def test_sapporo_manifest_records_safety_field_completion_without_city_completion():
     manifest = load(MANIFEST_PATH)
     facts = {fact["id"]: fact for fact in manifest["reviewed_facts"]}
 
@@ -131,8 +145,15 @@ def test_sapporo_manifest_records_document_index_without_city_completion():
         "data/catalog/sapporo_action_plan_project_source_index.json"
     )
     assert "599事業" in source_index["interpretation_boundary"]
-    project_batch = facts["action-plan-safety-security-project-records-part1"]
-    assert project_batch["value"] == 4
-    assert project_batch["source_page_label"] == 80
-    assert "4事業" in project_batch["interpretation_boundary"]
-    assert any("資料10本" in item and "4事業" in item for item in manifest["remaining_work"])
+    historical = facts["action-plan-safety-security-project-records-part1"]
+    assert historical["value"] == 4
+    complete = facts["action-plan-safety-security-project-records-complete"]
+    assert complete["value"] == 70
+    assert complete["main_project_record_count"] == 43
+    assert complete["other_project_record_count"] == 27
+    assert complete["source_page_labels"] == list(range(80, 89))
+    assert "599事業全体" in complete["interpretation_boundary"]
+    assert any(
+        "安全・安心" in item and "70事業" in item
+        for item in manifest["remaining_work"]
+    )
