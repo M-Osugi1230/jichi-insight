@@ -1,0 +1,53 @@
+{
+  "id": "sendai-survey-2025-priority-policy",
+  "phase": 13,
+  "official_code": "041009",
+  "name_ja": "仙台市",
+  "survey_year": 2025,
+  "reviewed_at": "2026-08-12",
+  "source_id": "sendai-city-survey-2025-report-pdf",
+  "question": {
+    "question_number": 10,
+    "prompt_ja": "今後特に力を入れていくべきと思う施策",
+    "response_mode": "multiple_response_up_to_10",
+    "maximum_selections": 10,
+    "percentage_denominator": "valid_respondents",
+    "normalization_rule": "Do not normalize percentages to 100%; multiple responses are preserved as officially reported."
+  },
+  "summary": {
+    "policy_item_count": 26,
+    "no_response_percent": 3.4,
+    "highest_response_percent": 54.9,
+    "lowest_response_percent": 10.6,
+    "source_pdf_page_index_0_based": 52
+  },
+  "items": [
+    {"source_order":1,"policy_code":"3-3","statement_ja":"子どもたちが安全に、安心して育つことができる環境づくり","response_percent":54.9,"evidence_id":"evidence-sendai-survey-priority-3-3"},
+    {"source_order":2,"policy_code":"5-2","statement_ja":"子育てがしやすい環境づくり","response_percent":53.8,"evidence_id":"evidence-sendai-survey-priority-5-2"},
+    {"source_order":3,"policy_code":"1-3","statement_ja":"みどりを守り、未来に受け継ぐ百年の杜づくり","response_percent":45.7,"evidence_id":"evidence-sendai-survey-priority-1-3"},
+    {"source_order":4,"policy_code":"6-3","statement_ja":"誰もがいきいきと健康に暮らすことができる環境づくり","response_percent":43.9,"evidence_id":"evidence-sendai-survey-priority-6-3"},
+    {"source_order":5,"policy_code":"2-1","statement_ja":"防災環境都市づくりの推進","response_percent":41.8,"evidence_id":"evidence-sendai-survey-priority-2-1"},
+    {"source_order":6,"policy_code":"9-2","statement_ja":"安定した行政経営基盤の維持","response_percent":37.4,"evidence_id":"evidence-sendai-survey-priority-9-2"},
+    {"source_order":7,"policy_code":"3-1","statement_ja":"一人ひとりに応じた暮らしやすい環境づくり","response_percent":35.0,"evidence_id":"evidence-sendai-survey-priority-3-1"},
+    {"source_order":8,"policy_code":"5-1","statement_ja":"子育てを楽しめる環境づくり","response_percent":33.2,"evidence_id":"evidence-sendai-survey-priority-5-1"},
+    {"source_order":9,"policy_code":"4-3","statement_ja":"学生・若い世代の社会参加やまちづくりの実践の機会づくり","response_percent":32.1,"evidence_id":"evidence-sendai-survey-priority-4-3"},
+    {"source_order":10,"policy_code":"3-2","statement_ja":"支えあいながら暮らすことができる環境づくり","response_percent":30.9,"evidence_id":"evidence-sendai-survey-priority-3-2"},
+    {"source_order":11,"policy_code":"2-3","statement_ja":"消防力強化や防災意識向上に向けた取り組み","response_percent":30.1,"evidence_id":"evidence-sendai-survey-priority-2-3"},
+    {"source_order":12,"policy_code":"7-3","statement_ja":"仙台・東北に訪れ、滞在する人を増やす取り組み","response_percent":30.1,"evidence_id":"evidence-sendai-survey-priority-7-3"},
+    {"source_order":13,"policy_code":"7-2","statement_ja":"地域産業の成長を支える環境づくり","response_percent":29.7,"evidence_id":"evidence-sendai-survey-priority-7-2"},
+    {"source_order":14,"policy_code":"5-3","statement_ja":"豊かな学びと個性に応じた教育の場づくり","response_percent":28.6,"evidence_id":"evidence-sendai-survey-priority-5-3"},
+    {"source_order":15,"policy_code":"2-2","statement_ja":"環境にやさしいまちづくり","response_percent":27.8,"evidence_id":"evidence-sendai-survey-priority-2-2"},
+    {"source_order":16,"policy_code":"8-3","statement_ja":"域内外から人を惹きつける魅力ある空間づくり","response_percent":27.1,"evidence_id":"evidence-sendai-survey-priority-8-3"},
+    {"source_order":17,"policy_code":"9-1","statement_ja":"社会の変化に対応し、挑戦を続ける市役所づくり","response_percent":24.9,"evidence_id":"evidence-sendai-survey-priority-9-1"},
+    {"source_order":18,"policy_code":"8-1","statement_ja":"賑わいと活力が行きわたる、回遊性の高い都心づくり","response_percent":24.3,"evidence_id":"evidence-sendai-survey-priority-8-1"},
+    {"source_order":19,"policy_code":"1-1","statement_ja":"勾当台・定禅寺通エリアの活性化","response_percent":23.3,"evidence_id":"evidence-sendai-survey-priority-1-1"},
+    {"source_order":20,"policy_code":"6-1","statement_ja":"多彩な体験・学びの機会がある環境づくり","response_percent":20.6,"evidence_id":"evidence-sendai-survey-priority-6-1"},
+    {"source_order":21,"policy_code":"6-2","statement_ja":"自分らしい暮らしの実現につながる環境づくり","response_percent":20.0,"evidence_id":"evidence-sendai-survey-priority-6-2"},
+    {"source_order":22,"policy_code":"7-1","statement_ja":"新たなビジネスに挑戦しやすい環境づくり","response_percent":20.0,"evidence_id":"evidence-sendai-survey-priority-7-1"},
+    {"source_order":23,"policy_code":"1-2","statement_ja":"海辺に人の流れと賑わいを生み出す取り組み","response_percent":19.4,"evidence_id":"evidence-sendai-survey-priority-1-2"},
+    {"source_order":24,"policy_code":"4-2","statement_ja":"地域主体の課題解決や地域の資源を活かした魅力づくり","response_percent":17.8,"evidence_id":"evidence-sendai-survey-priority-4-2"},
+    {"source_order":25,"policy_code":"8-2","statement_ja":"都心機能強化に向けた開発とビジネスの好循環を生み出す取り組み","response_percent":15.6,"evidence_id":"evidence-sendai-survey-priority-8-2"},
+    {"source_order":26,"policy_code":"4-1","statement_ja":"多様な主体の協働を促進するきっかけや仕組みづくり","response_percent":10.6,"evidence_id":"evidence-sendai-survey-priority-4-1"}
+  ],
+  "quality_boundary": "These percentages are Sendai City citizen-survey multiple-response results about where respondents think future effort should be focused. They are not a Jichi Insight priority ranking, policy-achievement score, administrative performance measure, budget allocation recommendation, or causal impact estimate. Source order is preserved, including ties, without recomputing ranks."
+}
