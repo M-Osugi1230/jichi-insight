@@ -1,13 +1,13 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Phase 12 Sakai official source inventory",
+  "title": "Phase 12 Sakai complete official source inventory",
   "type": "object",
   "additionalProperties": false,
   "required": ["id","phase","status","official_code","name_ja","prefecture_name_ja","review_status","plan_period","sources","unresolved_layers","quality_boundary","next_action","verified_at"],
   "properties": {
     "id": {"const": "phase12-sakai-source-inventory"},
     "phase": {"const": 12},
-    "status": {"const": "source_inventory_partial"},
+    "status": {"const": "source_inventory_complete"},
     "official_code": {"const": "271403"},
     "name_ja": {"const": "堺市"},
     "prefecture_name_ja": {"const": "大阪府"},
@@ -60,6 +60,6 @@
     },
     "quality_boundary": {"type": "string", "minLength": 180},
     "next_action": {"type": "string", "minLength": 140},
-    "verified_at": {"const": "2026-08-08", "format": "date"}
+    "verified_at": {"const": "2026-08-12", "format": "date"}
   }
 }
