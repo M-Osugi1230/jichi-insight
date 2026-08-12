@@ -1,7 +1,7 @@
 {
   "id": "phase12-sakai-source-inventory",
   "phase": 12,
-  "status": "source_inventory_partial",
+  "status": "source_inventory_complete",
   "official_code": "271403",
   "name_ja": "堺市",
   "prefecture_name_ja": "大阪府",
@@ -19,7 +19,7 @@
       "official_url": "https://www.city.sakai.lg.jp/shisei/gyosei/shishin/shisei/kihonkeikaku/kihonnkeikaku2030.html",
       "status": "official_landing_verified",
       "effective_period": "2026年度～2030年度",
-      "review_boundary": "The current highest-level municipal plan and its 2026–2030 period are verified. KPI definitions, targets, denominators, policy links, and page-level evidence remain unreviewed."
+      "review_boundary": "The current highest-level municipal plan and its 2026–2030 period are verified. It is a five-year city-management policy plan; KPI definitions, targets, denominators, policy links, and page-level evidence remain record-review work."
     },
     {
       "id": "sakai-basic-plan-2030-kpi",
@@ -28,7 +28,7 @@
       "official_url": "https://www.city.sakai.lg.jp/shisei/gyosei/shishin/shisei/kihonkeikaku/kihonnkeikaku2030.html",
       "status": "official_landing_verified",
       "effective_period": "2026年度～2030年度",
-      "review_boundary": "The official KPI reference is verified as supporting material for the current plan. It is not treated as a separate implementation plan, and indicator comparability or achievement is not inferred."
+      "review_boundary": "The official KPI reference is verified as supporting material for the current plan. The official plan route does not establish a separately named implementation plan here, so the KPI material is not relabeled as one and no implementation layer is invented."
     },
     {
       "id": "sakai-legacy-progress-2025-final",
@@ -61,16 +61,16 @@
   "unresolved_layers": [
     {
       "layer": "implementation_plan",
-      "status": "separate_current_implementation_plan_not_yet_resolved",
-      "boundary": "No separate canonical implementation-plan landing for the 2026–2030 basic plan has yet been resolved. The KPI reference and fiscal 2026 project materials must not be relabeled as an implementation plan without official structural evidence."
+      "status": "separate_current_implementation_plan_not_established_on_official_plan_route",
+      "boundary": "The official Basic Plan 2030 route verifies the five-year highest-level plan and its KPI material but does not establish a separately named implementation-plan document. Source-inventory coverage is complete without inventing a layer; Phase 13 must keep the implementation evidence role explicitly unavailable unless a separate official structure is later published or resolved."
     },
     {
       "layer": "annual_progress",
-      "status": "current_plan_progress_not_yet_available_or_resolved",
-      "boundary": "The current plan began in fiscal 2026. The January 2026 progress publication belongs to the expired 2021–2025 plan and must not be substituted for current-plan annual progress."
+      "status": "current_plan_progress_not_yet_available",
+      "boundary": "The current plan began in fiscal 2026. The January 2026 progress publication belongs to the expired 2021–2025 plan and must not be substituted for current-plan annual progress. Current-plan results are therefore an explicit not-yet-published Phase 13 boundary, not an incomplete Phase 12 source search."
     }
   ],
-  "quality_boundary": "This partial inventory confirms the current 2026–2030 basic plan, its official KPI reference, the expired 2021–2025 plan's final progress publication as version context only, fiscal 2026 budget, and fiscal 2024 settlement. It does not invent a separate implementation plan, transfer legacy progress into the current plan, or promote KPI, budget, settlement, project, or outcome records to Reviewed, linked, comparable, causal, or policy-achievement status.",
-  "next_action": "Resolve whether Sakai publishes a canonical implementation layer for Basic Plan 2030 and the first current-plan annual progress source when available, then map KPI definitions, fiscal 2026 project records, and fiscal 2024 settlement evidence at record level while preserving the 2025-to-2030 plan-version boundary.",
-  "verified_at": "2026-08-08"
+  "quality_boundary": "Source-inventory coverage is complete at the maximum current official publication depth: the 2026–2030 Basic Plan 2030, official KPI reference, expired-plan final progress as legacy context, fiscal 2026 budget, and fiscal 2024 settlement are identified. The official plan route does not establish a separate implementation-plan document, and current-plan annual progress is not yet available; both boundaries remain explicit for Phase 13. The inventory does not invent an implementation plan, transfer legacy progress into the current plan, or promote KPI, budget, settlement, project, or outcome records to Reviewed, linked, comparable, causal, or policy-achievement status.",
+  "next_action": "Enter Phase 13 record review using Basic Plan 2030 and its KPI material as the verified current planning structure, keep the separate implementation evidence role unavailable unless an official document is later established, wait for the first current-plan progress publication rather than reusing legacy results, and review fiscal 2026 project records and fiscal 2024 settlement evidence at record level.",
+  "verified_at": "2026-08-12"
 }
