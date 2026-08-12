@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 QUEUE_PATH = ROOT / "data/catalog/phase13_designated_city_review_queue.json"
 SCHEMA_PATH = ROOT / "schemas/phase13_designated_city_review_queue.schema.json"
 PHASE12_QUEUE_PATH = ROOT / "data/catalog/phase12_designated_city_execution_queue.json"
+SENDAI_COMPLETION_PATH = ROOT / "data/catalog/sendai_phase13_completion.json"
 
 NEWLY_ELIGIBLE_CODES = {"221007", "271403", "281000", "331007", "341002"}
 
@@ -63,7 +64,7 @@ def test_phase13_newly_eligible_five_cities_enter_as_pending_record_review():
     assert by_code["341002"]["sequence"] == 17
 
 
-def test_phase13_summary_is_derived_from_queue_contents():
+def test_phase13_summary_is_derived_from_queue_contents_after_sendai_completion():
     queue = load(QUEUE_PATH)
     statuses = [item["status"] for item in queue["execution_queue"]]
     summary = queue["summary"]
@@ -71,27 +72,32 @@ def test_phase13_summary_is_derived_from_queue_contents():
     assert summary["blocked_source_inventory_count"] == len(
         queue["blocked_source_inventories"]
     ) == 0
-    assert summary["reviewed_complete_count"] == statuses.count("reviewed_complete")
+    assert summary["reviewed_complete_count"] == statuses.count(
+        "reviewed_complete"
+    ) == 1
     assert summary["review_in_progress_count"] == statuses.count(
         "review_in_progress"
-    ) == 2
+    ) == 1
     assert summary["pending_record_review_count"] == statuses.count(
         "pending_record_review"
     ) == 16
 
 
-def test_phase13_first_review_target_remains_sapporo_while_sendai_has_started():
+def test_phase13_sendai_is_first_reviewed_complete_city_and_sapporo_remains_active():
     queue = load(QUEUE_PATH)
     first = queue["execution_queue"][0]
     sendai = next(
         item for item in queue["execution_queue"] if item["official_code"] == "041009"
     )
+    completion = load(SENDAI_COMPLETION_PATH)
 
     assert first["sequence"] == 1
     assert first["official_code"] == "011002"
     assert first["status"] == "review_in_progress"
     assert sendai["sequence"] == 2
-    assert sendai["status"] == "review_in_progress"
+    assert sendai["status"] == "reviewed_complete"
+    assert completion["official_code"] == sendai["official_code"]
+    assert completion["status"] == sendai["status"]
     assert queue["summary"]["next_official_code"] == "011002"
 
 
@@ -103,3 +109,4 @@ def test_phase13_quality_gate_keeps_missing_records_explicit_without_downgrading
     assert "record-level evidence" in gate
     assert "not-yet-published evidence" in gate
     assert "without downgrading already verified source inventory coverage" in gate
+    assert "declared review package" in gate
