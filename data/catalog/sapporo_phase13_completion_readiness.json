@@ -36,7 +36,8 @@
       "id": "action-plan-project-records",
       "required_scope": 599,
       "unit": "projects",
-      "state": "not_complete",
+      "state": "sharded_not_complete",
+      "execution_manifest_path": "data/catalog/sapporo_action_plan_2023_project_shards.json",
       "rule": "Individual project identity, target, evidence location, and fiscal linkage must not be inferred from aggregate plan counts."
     },
     {
@@ -60,6 +61,6 @@
     }
   ],
   "promotion_rule": "札幌市をreviewed_completeへ昇格させる前に、既存回帰テストが要求する個票レビュー深度を満たす。完了条件を狭く再定義して未レビュー個票を迂回しない。",
-  "next_execution_target": "アクションプラン2023の599事業を個票レビュー可能な単位へ分割し、公式ページ・PDFの安定した証拠位置を持つ最初のバッチからReviewedへ昇格する。26成果指標と403主要事業目標は集約値から推測せず別キューで処理する。",
+  "next_execution_target": "data/catalog/sapporo_action_plan_2023_project_shards.json のうちPDFインデックス取得済み分野から、安定した公式証拠位置を持つ小規模バッチで個票レビューを開始する。26成果指標と403主要事業目標は集約値から推測せず別キューで処理する。",
   "quality_boundary": "This readiness gate records what is already reviewed and what still blocks municipality-level completion. It intentionally keeps Sapporo review_in_progress and prevents aggregate facts from being used as substitutes for record-level evidence."
 }
