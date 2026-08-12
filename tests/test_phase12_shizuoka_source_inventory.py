@@ -28,7 +28,7 @@ def assert_summary_matches_queue(queue: dict) -> None:
     )
 
 
-def test_shizuoka_current_plan_partial_inventory_matches_schema():
+def test_shizuoka_current_plan_inventory_matches_complete_schema():
     validator = Draft202012Validator(
         load(SCHEMA_PATH), format_checker=FormatChecker()
     )
@@ -38,7 +38,7 @@ def test_shizuoka_current_plan_partial_inventory_matches_schema():
 def test_shizuoka_uses_fifth_plan_and_keeps_fourth_plan_legacy():
     inventory = load(INVENTORY_PATH)
     assert inventory["official_code"] == "221007"
-    assert inventory["status"] == "source_inventory_partial"
+    assert inventory["status"] == "source_inventory_complete"
     assert inventory["review_status"] == "indexed_not_reviewed"
     assert inventory["plan_period"] == {
         "start_fiscal_year": 2026,
@@ -60,7 +60,7 @@ def test_shizuoka_uses_fifth_plan_and_keeps_fourth_plan_legacy():
     assert "must not be attributed" in legacy["review_boundary"]
 
 
-def test_shizuoka_preserves_current_plan_unresolved_layers():
+def test_shizuoka_complete_inventory_keeps_unavailable_evidence_explicit():
     inventory = load(INVENTORY_PATH)
     unresolved = {item["layer"]: item for item in inventory["unresolved_layers"]}
     assert set(unresolved) == {"canonical_implementation_plan", "annual_progress"}
@@ -70,10 +70,12 @@ def test_shizuoka_preserves_current_plan_unresolved_layers():
     assert unresolved["annual_progress"]["status"] == (
         "current_plan_result_not_yet_available"
     )
-    assert "fiscal 2026" in unresolved["annual_progress"]["boundary"]
+    assert "Phase 13" in unresolved["canonical_implementation_plan"]["boundary"]
+    assert "not yet available" in unresolved["annual_progress"]["boundary"]
+    assert "Source-inventory coverage is complete" in inventory["quality_boundary"]
 
 
-def test_shizuoka_queue_entry_stays_partial_until_current_sources_resolve():
+def test_shizuoka_queue_entry_is_complete_without_inventing_missing_records():
     queue = load(QUEUE_PATH)
     city = next(
         item for item in queue["execution_queue"] if item["official_code"] == "221007"
@@ -83,8 +85,7 @@ def test_shizuoka_queue_entry_stays_partial_until_current_sources_resolve():
         "official_code": "221007",
         "name_ja": "静岡市",
         "prefecture_name_ja": "静岡県",
-        "status": "source_inventory_partial",
+        "status": "source_inventory_complete",
         "inventory_path": "data/indexed/shizuoka-city/source_inventory.json",
     }
-    assert queue["summary"]["next_official_code"] == "221007"
     assert_summary_matches_queue(queue)
