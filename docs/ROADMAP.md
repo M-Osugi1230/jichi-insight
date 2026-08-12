@@ -142,11 +142,33 @@ Phase 12完了により、北九州市・福岡市の2市をReviewed reference�
 
 - Reviewed reference: 2市
 - Review queue eligible: 18市
-- Review in progress: 2市（札幌市、仙台市）
+- Reviewed complete: 1市（仙台市）
+- Review in progress: 1市（札幌市）
 - Pending record review: 16市
 - Blocked source inventory: 0市
 
-仙台市では、チャレンジプロジェクト108/108事業のcore identity / municipality self-evaluationレビューを完了し、市民意識調査の現状・施策評価34項目と「今後特に力を入れるべき施策」26項目も別レイヤーとしてEvidence付きで接続しました。これら60件の市民調査レコードと108事業の行政自己評価は統合スコアへ変換せず、Phase 13全体は引き続き`review_in_progress`です。
+### Milestone M2 — First reviewed-complete designated city
+
+Status: `complete`（2026-08-12）
+
+仙台市をPhase 13最初の`reviewed_complete`都市として確定しました。完了深度は`declared_review_package_v1`であり、以下のパッケージをSchema・Evidence coverage・回帰テストで固定します。
+
+- 現行基本計画・実施計画・市民意識調査方法・自己評価集計のコア: 6レコード
+- チャレンジプロジェクト: 108 / 108事業の事業名、所管、担当、証拠頁、仙台市自己評価
+- 2025年市民意識調査: 現状・施策評価34項目
+- 2025年市民意識調査: 今後特に力を入れるべき施策26項目
+- 財政トップライン: 3レコード（2026年度一般会計当初予算歳入総額、2024年度一般会計決算歳入総額・歳出総額）
+
+仙台市の`reviewed_complete`は全公開データの網羅を意味しません。回答区分別分布、属性別クロス集計、住みやすさ・愛着・外国人住民・自由記述、108事業の個別KPI/成果、款項目別財政・補正・執行・事業費・契約・補助金接続は`deferred_depth`として明示的に未レビューのまま残します。これらを現行レビューから推測補完しません。
+
+また、108事業の自治体自己評価、市民意識調査の評価、市民が今後重視してほしい施策、財政値は相互に非等価です。統合スコア、Jichi Insight独自の政策達成度、因果効果、他都市比較可能性、ランキングへ自動変換しません。
+
+正本:
+
+- `data/catalog/sendai_phase13_completion.json`
+- `schemas/sendai_phase13_completion.schema.json`
+- `data/catalog/sendai_phase13_progress_linkage.json`
+- `tests/test_phase13_sendai_completion.py`
 
 未公開・未解決の年度実績等は、Phase 12のinventory coverageを再度partialへ戻すのではなく、Phase 13の該当レコードで明示的にblocked / not assessableとして扱います。これにより、公開時期を待つだけの資料のために全市のrecord reviewを停止せず、同時に推測補完もしません。
 
@@ -166,6 +188,7 @@ Phase 13では、以下を品質ゲートとして維持します。
 
 - `data/catalog/phase13_designated_city_review_queue.json`
 - `data/catalog/*_phase13_review_manifest.json`
+- `data/catalog/*_phase13_completion.json`
 - `data/catalog/sendai_phase13_progress_linkage.json`
 - `data/catalog/*_challenge_project_reviews_part*.json`
 - `data/evidence/*_evidence.json`
@@ -173,7 +196,7 @@ Phase 13では、以下を品質ゲートとして維持します。
 
 ## After Phase 13
 
-1. 18市のrecord reviewを順次Reviewed到達深度まで進め、全20政令指定都市の市レベル基盤を完成させる
+1. 残る17市のrecord reviewを順次Reviewed到達深度まで進め、全20政令指定都市の市レベル基盤を完成させる
 2. 中核市・県庁所在地
 3. その他市区町村
 4. 選挙・候補者比較
