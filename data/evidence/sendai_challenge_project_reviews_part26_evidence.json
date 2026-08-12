@@ -1,0 +1,47 @@
+[
+  {
+    "id": "evidence-sendai-challenge-p91-entrepreneur-startup-support",
+    "subject_type": "project",
+    "subject_id": "entrepreneur-startup-support",
+    "claims": [{
+      "field": "project_identity_and_evaluation",
+      "statement": "起業家・スタートアップ支援事業は経済局・スタートアップ支援課所管で、令和6年度の仙台市自己評価は◎。",
+      "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+      "location_note": "公式PDF page index 91。事業名・担当・主担当課・進捗状況欄。",
+      "decision": "accepted",
+      "review_note": "◎は仙台市の自己評価区分として保持する。資金調達、相談対応、イベント、開業支援、若者向け起業家教育等の実績からスタートアップ・エコシステム発展に寄与したという自治体記述を独自の因果評価へ昇格させない。"
+    }],
+    "open_questions": ["資金調達額、相談件数、イベント参加者数、開業支援件数等は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-challenge-p92-growth-industry-promotion",
+    "subject_type": "project",
+    "subject_id": "growth-industry-promotion",
+    "claims": [{
+      "field": "project_identity_and_evaluation",
+      "statement": "成長産業振興事業は経済局・イノベーション企画課・中小企業支援課所管で、令和6年度の仙台市自己評価は◎。",
+      "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+      "location_note": "公式PDF page index 92。事業名・担当・主担当課・進捗状況欄。",
+      "decision": "accepted",
+      "review_note": "◎は仙台市の自己評価区分として保持する。AI、ウェルビーイング、BOSAI-TECH、ICT人材等の取り組みによる新事業・製品・サービス創出や課題解決への寄与という自治体記述を独自の因果評価へ変換しない。"
+    }],
+    "open_questions": ["事業化支援件数、採択数、会員数、製品・サービス開発件数等は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-challenge-p93-national-strategic-special-zone-promotion",
+    "subject_type": "project",
+    "subject_id": "national-strategic-special-zone-promotion",
+    "claims": [{
+      "field": "project_identity_and_evaluation",
+      "statement": "国家戦略特区推進事業はまちづくり政策局・プロジェクト推進課所管で、令和6年度の仙台市自己評価は○。",
+      "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+      "location_note": "公式PDF page index 93。事業名・担当・主担当課・進捗状況欄。",
+      "decision": "accepted",
+      "review_note": "○は仙台市の自己評価区分として保持する。特区提案、実証実験、先端的サービス創出等が社会課題解決や産業振興につながるという自治体記述を独自の因果評価へ昇格させない。"
+    }],
+    "open_questions": ["特例認定、新規提案件数、実証実験件数、累計実証件数等は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  }
+]
