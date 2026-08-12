@@ -1,0 +1,44 @@
+{
+  "id": "sendai-survey-2025-source-index",
+  "phase": 13,
+  "official_code": "041009",
+  "name_ja": "仙台市",
+  "survey_year": 2025,
+  "reviewed_at": "2026-08-12",
+  "records": [
+    {
+      "id": "sendai-city-survey-2025-page",
+      "title_ja": "令和7年度「仙台市市民意識調査」の結果をお知らせします",
+      "source_kind": "html",
+      "role": "survey_publication_page",
+      "url": "https://www.city.sendai.jp/machizukuri-kakuka/shise/zaise/kekaku/sogo/shinkokanri/r7/shiminishiki.html",
+      "official_host": "www.city.sendai.jp"
+    },
+    {
+      "id": "sendai-city-survey-2025-report-pdf",
+      "title_ja": "令和7年度「仙台市市民意識調査」報告書",
+      "source_kind": "pdf",
+      "role": "survey_full_report",
+      "url": "https://www.city.sendai.jp/machizukuri-kakuka/shise/zaise/kekaku/sogo/shinkokanri/r7/documents/r7houkokusyo.pdf",
+      "official_host": "www.city.sendai.jp",
+      "page_count": 92
+    },
+    {
+      "id": "sendai-city-survey-2025-simple-csv",
+      "title_ja": "令和7年度「仙台市市民意識調査」単純集計",
+      "source_kind": "csv",
+      "role": "survey_simple_tabulation",
+      "url": "https://www.city.sendai.jp/machizukuri-kakuka/shise/zaise/kekaku/sogo/shinkokanri/r7/documents/r7tanjun.csv",
+      "official_host": "www.city.sendai.jp"
+    },
+    {
+      "id": "sendai-city-survey-2025-cross-csv",
+      "title_ja": "令和7年度「仙台市市民意識調査」クロス集計",
+      "source_kind": "csv",
+      "role": "survey_cross_tabulation",
+      "url": "https://www.city.sendai.jp/machizukuri-kakuka/shise/zaise/kekaku/sogo/shinkokanri/r7/documents/r7cross.csv",
+      "official_host": "www.city.sendai.jp"
+    }
+  ],
+  "quality_boundary": "The publication page, full report, simple tabulation, and cross-tabulation are kept as separate official source roles. This index does not treat survey responses as administrative performance or policy achievement."
+}
