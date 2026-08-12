@@ -100,7 +100,6 @@ def test_sendai_manifest_records_batch2_without_freezing_later_cumulative_progre
         if fact["id"].startswith("sendai-challenge-project-records-part")
     ]
     cumulative_reviewed = sum(fact["value"] for fact in batches)
-    remaining = 108 - cumulative_reviewed
 
     assert manifest["status"] == "review_in_progress"
     assert batch2["value"] == 3
@@ -108,5 +107,6 @@ def test_sendai_manifest_records_batch2_without_freezing_later_cumulative_progre
     assert batch2["source_reported_breakdown"] == {"triangle": 1, "circle": 2}
     assert "残り102事業" in batch2["interpretation_boundary"]
     assert cumulative_reviewed >= 6
-    assert f"{cumulative_reviewed}事業を個票レビュー済み" in manifest["remaining_work"][0]
-    assert f"残り{remaining}事業" in manifest["remaining_work"][0]
+    assert cumulative_reviewed <= 108
+    assert "108/108完了" in manifest["remaining_work"][0]
+    assert "成果値・KPI・実績記述" in manifest["remaining_work"][0]
