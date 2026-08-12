@@ -4,7 +4,9 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-CATALOG_PATH = ROOT / "data/catalog/sapporo_action_plan_safety_security_projects_part1.json"
+CATALOG_PATH = (
+    ROOT / "data/catalog/sapporo_action_plan_safety_security_projects_part1.json"
+)
 EVIDENCE_PATH = (
     ROOT / "data/evidence/sapporo_action_plan_safety_security_projects_part1_evidence.json"
 )
@@ -69,7 +71,9 @@ def test_sapporo_safety_project_batch_has_one_to_one_evidence_packets():
     assert evidence["source"]["source_page_label"] == 80
     assert evidence["source"]["review_method"] == "visual_page_review"
     assert len(packets) == len(records) == 4
-    assert {record["id"] for record in records} == {packet["project_id"] for packet in packets}
+    assert {record["id"] for record in records} == {
+        packet["project_id"] for packet in packets
+    }
     assert {record["evidence_id"] for record in records} == {
         packet["evidence_id"] for packet in packets
     }
@@ -80,23 +84,26 @@ def test_sapporo_safety_project_batch_has_one_to_one_evidence_packets():
     )
 
 
-def test_sapporo_safety_project_source_keeps_partial_review_depth():
+def test_sapporo_safety_project_source_now_records_complete_field_review():
     sources = {record["id"]: record for record in load(SOURCE_PATH)["records"]}
     source = sources["sapporo-action-plan-2023-projects-safety-security"]
 
     assert source["source_kind"] == "pdf"
     assert source["page_count"] == 10
-    assert source["review_status"] == "partial_record_review_in_progress"
+    assert source["review_status"] == "reviewed_for_complete_field_project_inventory"
     assert source["confidence"] == "high"
-    assert "最初の4事業" in source["notes"]
-    assert "残ページ" in source["notes"]
+    assert "70事業" in source["notes"]
+    assert "主な事業43件" in source["notes"]
+    assert "その他27件" in source["notes"]
+    assert "599事業全体" in source["notes"]
 
 
-def test_sapporo_safety_project_batch_does_not_claim_full_599_coverage():
+def test_sapporo_part1_remains_historical_without_claiming_full_599_coverage():
     catalog = load(CATALOG_PATH)
     manifest = load(MANIFEST_PATH)
     facts = {fact["id"]: fact for fact in manifest["reviewed_facts"]}
     fact = facts["action-plan-safety-security-project-records-part1"]
+    complete = facts["action-plan-safety-security-project-records-complete"]
 
     assert catalog["summary"]["description_text_reviewed_count"] == 0
     assert catalog["summary"]["field_total_project_count_reviewed"] is False
@@ -104,5 +111,8 @@ def test_sapporo_safety_project_batch_does_not_claim_full_599_coverage():
     assert "does not establish the total number of projects" in catalog["quality_boundary"]
     assert fact["value"] == 4
     assert fact["review_status"] == "reviewed_core_fields"
-    assert "599事業全体" in fact["interpretation_boundary"]
+    assert complete["value"] == 70
+    assert complete["main_project_record_count"] == 43
+    assert complete["other_project_record_count"] == 27
+    assert "599事業全体" in complete["interpretation_boundary"]
     assert manifest["status"] == "review_in_progress"
