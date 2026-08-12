@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
-      - name: Install PDF text tools
+      - name: Install PDF tools
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y poppler-utils
@@ -24,22 +24,21 @@ jobs:
           req = Request(url, headers={"User-Agent": "Mozilla/5.0"})
           with urlopen(req, timeout=60) as response:
               data = response.read()
-          path = Path("sapporo2025.pdf")
-          path.write_bytes(data)
+          Path("sapporo2025.pdf").write_bytes(data)
           print(f"downloaded={len(data)} bytes")
           if not data.startswith(b"%PDF"):
               raise SystemExit("downloaded payload is not a PDF")
           PY
-      - name: Extract layout text
+      - name: Render report pages
         run: |
-          pdftotext -layout sapporo2025.pdf sapporo2025.txt
           echo "pages=$(pdfinfo sapporo2025.pdf | awk '/Pages:/ {print $2}')"
-          echo "lines=$(wc -l < sapporo2025.txt)"
-          sed -n '1,300p' sapporo2025.txt
+          mkdir -p rendered
+          pdftoppm -png -r 200 sapporo2025.pdf rendered/page >/dev/null
+          ls -lh rendered
       - uses: actions/upload-artifact@v4
         with:
-          name: sapporo-outcome-2025-extraction
+          name: sapporo-outcome-2025-rendered
           path: |
-            sapporo2025.txt
+            rendered/*.png
             sapporo2025.pdf
           retention-days: 1
