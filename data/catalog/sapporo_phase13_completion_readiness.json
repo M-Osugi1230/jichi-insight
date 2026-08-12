@@ -1,0 +1,65 @@
+{
+  "id": "sapporo-phase13-completion-readiness",
+  "phase": 13,
+  "status": "completion_gate_defined",
+  "official_code": "011002",
+  "name_ja": "札幌市",
+  "audited_at": "2026-08-12",
+  "current_status": "review_in_progress",
+  "verified_reviewed_layers": [
+    {
+      "layer": "current_plan_identity",
+      "state": "reviewed_core",
+      "evidence_path": "data/reviewed/sapporo-city/plan_review.json"
+    },
+    {
+      "layer": "implementation_plan_aggregate",
+      "state": "reviewed_core",
+      "facts": ["599 planned projects", "2023-2027 period", "1.7854 trillion yen planned project cost"],
+      "evidence_path": "data/reviewed/sapporo-city/plan_review.json"
+    },
+    {
+      "layer": "annual_progress_aggregate",
+      "state": "reviewed_aggregate_only",
+      "facts": ["17 of 26 outcome indicators above planning baseline", "394 of 403 principal project targets expected to be achieved", "998.3 billion yen cumulative mixed settlement-plus-budget amount"],
+      "evidence_path": "data/indexed/sapporo-city/source_inventory.json"
+    },
+    {
+      "layer": "fiscal_top_line",
+      "state": "reviewed_core",
+      "record_count": 3,
+      "evidence_path": "data/reviewed/sapporo-city/evidence_packets.json"
+    }
+  ],
+  "blocking_gates": [
+    {
+      "id": "action-plan-project-records",
+      "required_scope": 599,
+      "unit": "projects",
+      "state": "not_complete",
+      "rule": "Individual project identity, target, evidence location, and fiscal linkage must not be inferred from aggregate plan counts."
+    },
+    {
+      "id": "outcome-indicator-records",
+      "required_scope": 26,
+      "unit": "indicators",
+      "state": "not_complete",
+      "rule": "The 17/26 aggregate must not be expanded into individual indicator judgments without record-level official evidence."
+    },
+    {
+      "id": "principal-project-target-records",
+      "required_scope": 403,
+      "unit": "targets",
+      "state": "not_complete",
+      "rule": "The 394/403 aggregate must not be expanded into individual target judgments without record-level official evidence."
+    },
+    {
+      "id": "citizen-survey-separation",
+      "state": "not_complete",
+      "rule": "Citizen perception evidence must remain separate from administrative outcome actuals and municipality self-evaluation."
+    }
+  ],
+  "promotion_rule": "札幌市をreviewed_completeへ昇格させる前に、既存回帰テストが要求する個票レビュー深度を満たす。完了条件を狭く再定義して未レビュー個票を迂回しない。",
+  "next_execution_target": "アクションプラン2023の599事業を個票レビュー可能な単位へ分割し、公式ページ・PDFの安定した証拠位置を持つ最初のバッチからReviewedへ昇格する。26成果指標と403主要事業目標は集約値から推測せず別キューで処理する。",
+  "quality_boundary": "This readiness gate records what is already reviewed and what still blocks municipality-level completion. It intentionally keeps Sapporo review_in_progress and prevents aggregate facts from being used as substitutes for record-level evidence."
+}
