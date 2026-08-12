@@ -1,0 +1,42 @@
+name: Sapporo Sports Culture Render
+
+on:
+  push:
+    branches:
+      - phase13-sapporo-sports-culture-complete
+
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install PDF tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y poppler-utils
+      - name: Download official sports/culture project PDF
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from urllib.request import Request, urlopen
+
+          url = "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_6.pdf"
+          req = Request(url, headers={"User-Agent": "Mozilla/5.0"})
+          with urlopen(req, timeout=60) as response:
+              data = response.read()
+          Path("sports-culture.pdf").write_bytes(data)
+          print(f"downloaded={len(data)} bytes")
+          if not data.startswith(b"%PDF"):
+              raise SystemExit("downloaded payload is not a PDF")
+          PY
+      - name: Render complete field document
+        run: |
+          echo "pages=$(pdfinfo sports-culture.pdf | awk '/Pages:/ {print $2}')"
+          mkdir -p rendered
+          pdftoppm -png -r 220 sports-culture.pdf rendered/page >/dev/null
+          ls -lh rendered
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sapporo-sports-culture-pages
+          path: rendered/*.png
+          retention-days: 1
