@@ -7,7 +7,9 @@ ROOT = Path(__file__).resolve().parents[1]
 REGISTRY_PATH = ROOT / "data/catalog/sapporo_outcome_indicator_registry.json"
 MANIFEST_PATH = ROOT / "data/catalog/sapporo_phase13_policy_review_manifest.json"
 CURRENT_VALUES_PATH = ROOT / "data/catalog/sapporo_outcome_indicator_2025_report_values.json"
-CURRENT_EVIDENCE_PATH = ROOT / "data/evidence/sapporo_outcome_indicator_2025_report_values_evidence.json"
+CURRENT_EVIDENCE_PATH = (
+    ROOT / "data/evidence/sapporo_outcome_indicator_2025_report_values_evidence.json"
+)
 
 
 def load(path: Path):
