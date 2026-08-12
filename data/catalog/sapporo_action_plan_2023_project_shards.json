@@ -11,7 +11,7 @@
   "review_rule": "Each shard is only a source partition. Project counts, names, targets, page locations, departments, costs, and progress states must be extracted from official evidence and must not be inferred from the 599-project aggregate.",
   "shards": [
     {"sequence":1,"id":"children-youth","name_ja":"子ども・若者","official_url":"https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_1.pdf","source_role":"chapter2_plan_system_projects","fetch_state":"pdf_identified_cache_issue","review_state":"pending_record_review"},
-    {"sequence":2,"id":"life-living","name_ja":"生活・暮らし","official_url":"https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_2.pdf","source_role":"chapter2_plan_system_projects","verified_pdf_pages":13,"document_page_range_observed":"59-71","fetch_state":"pdf_index_available","review_state":"pending_record_review"},
+    {"sequence":2,"id":"life-living","name_ja":"生活・暮らし","official_url":"https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_2.pdf","source_role":"chapter2_plan_system_projects","verified_pdf_pages":13,"document_page_range_observed":"59-71","fetch_state":"pdf_index_available","review_state":"record_review_in_progress","execution_manifest_path":"data/catalog/sapporo_action_plan_life_living_review_execution.json"},
     {"sequence":3,"id":"community","name_ja":"地域","official_url":"https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_3.pdf","source_role":"chapter2_plan_system_projects","fetch_state":"pdf_identified_fetch_timeout","review_state":"pending_record_review"},
     {"sequence":4,"id":"safety-security","name_ja":"安全・安心","official_url":"https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_4.pdf","source_role":"chapter2_plan_system_projects","verified_pdf_pages":10,"document_page_range_observed":"79-88","fetch_state":"pdf_index_available","review_state":"record_review_complete_at_declared_fields","reviewed_project_records":70,"field_total_project_count":70,"record_catalog_paths":["data/catalog/sapporo_action_plan_safety_security_projects_part1.json","data/catalog/sapporo_action_plan_safety_security_projects_part2.json"],"evidence_paths":["data/evidence/sapporo_action_plan_safety_security_projects_part1_evidence.json","data/evidence/sapporo_action_plan_safety_security_projects_part2_evidence.json"]},
     {"sequence":5,"id":"economy","name_ja":"経済","official_url":"https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_5.pdf","source_role":"chapter2_plan_system_projects","fetch_state":"pdf_identified_fetch_timeout","review_state":"pending_record_review"},
@@ -21,9 +21,10 @@
   ],
   "execution_policy": {
     "preferred_order": ["life-living","sports-culture","urban-space","children-youth","community","economy","environment"],
-    "reason": "Safety/security is already complete at declared project-row depth. Continue with remaining shards whose PDF index is available while retrying the other official PDFs separately.",
+    "active_shard": "life-living",
+    "reason": "Safety/security is already complete at declared project-row depth. Life/living is now the active shard because the final official 13-page PDF is verified and has a dedicated evidence-first execution manifest.",
     "batch_size": "small evidence-complete batches",
     "promotion_requirement": "A project may be promoted only after project identity plus stable official evidence location are captured; target, fiscal, and progress fields remain null or pending unless separately evidenced."
   },
-  "quality_boundary": "This manifest reconciles execution state with the already completed safety/security field review. Exactly 70 safety/security project rows are reviewed at declared source depth. The remaining 529 plan-level projects are not allocated or treated as reviewed until record-level evidence establishes their source membership. Sapporo remains review_in_progress."
+  "quality_boundary": "Exactly 70 safety/security project rows are reviewed at declared source depth. Life/living has entered record review but contributes zero additional reviewed rows until final-PDF evidence-complete records are committed. The remaining 529 plan-level projects are not allocated or treated as reviewed until record-level evidence establishes their source membership. Sapporo remains review_in_progress."
 }
