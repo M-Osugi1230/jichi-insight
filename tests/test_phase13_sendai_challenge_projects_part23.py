@@ -70,7 +70,7 @@ def test_sendai_part23_preserves_causality_boundaries():
     assert "causal claim" in data["quality_boundary"]
 
 
-def test_sendai_manifest_batch_advances_to_sixty_nine_without_completion():
+def test_sendai_manifest_keeps_part23_history_without_freezing_later_progress():
     manifest = load(MANIFEST_PATH)
     facts = {fact["id"]: fact for fact in manifest["reviewed_facts"]}
     assert facts["sendai-challenge-project-records-part21"]["cumulative_value"] == 63
@@ -81,6 +81,6 @@ def test_sendai_manifest_batch_advances_to_sixty_nine_without_completion():
         for fact in manifest["reviewed_facts"]
         if fact["id"].startswith("sendai-challenge-project-records-part")
     ]
-    assert sum(fact["value"] for fact in batches) == 69
-    assert "69事業を個票レビュー済み" in manifest["remaining_work"][0]
-    assert "残り39事業" in manifest["remaining_work"][0]
+    assert sum(fact["value"] for fact in batches) >= 69
+    assert max(fact.get("cumulative_value", fact["value"]) for fact in batches) >= 69
+    assert manifest["status"] == "review_in_progress"
