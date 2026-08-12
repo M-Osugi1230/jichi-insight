@@ -1,0 +1,99 @@
+{
+  "id": "sapporo-action-plan-2023-project-shards",
+  "phase": 13,
+  "official_code": "011002",
+  "name_ja": "札幌市",
+  "status": "sharded_for_record_review",
+  "total_declared_projects": 599,
+  "source_landing_url": "https://www.city.sapporo.jp/chosei/actionplan2023.html",
+  "review_rule": "Each shard is only a source partition. Project counts, names, targets, page locations, departments, costs, and progress states must be extracted from official evidence and must not be inferred from the 599-project aggregate.",
+  "shards": [
+    {
+      "sequence": 1,
+      "id": "children-youth",
+      "name_ja": "子ども・若者",
+      "official_url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_1.pdf",
+      "source_role": "chapter2_plan_system_projects",
+      "fetch_state": "pdf_identified_cache_issue",
+      "review_state": "pending_record_review"
+    },
+    {
+      "sequence": 2,
+      "id": "life-living",
+      "name_ja": "生活・暮らし",
+      "official_url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_2.pdf",
+      "source_role": "chapter2_plan_system_projects",
+      "verified_pdf_pages": 13,
+      "document_page_range_observed": "59-71",
+      "fetch_state": "pdf_index_available",
+      "review_state": "pending_record_review"
+    },
+    {
+      "sequence": 3,
+      "id": "community",
+      "name_ja": "地域",
+      "official_url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_3.pdf",
+      "source_role": "chapter2_plan_system_projects",
+      "fetch_state": "pdf_identified_fetch_timeout",
+      "review_state": "pending_record_review"
+    },
+    {
+      "sequence": 4,
+      "id": "safety-security",
+      "name_ja": "安全・安心",
+      "official_url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_4.pdf",
+      "source_role": "chapter2_plan_system_projects",
+      "verified_pdf_pages": 10,
+      "document_page_range_observed": "79-88",
+      "fetch_state": "pdf_index_available",
+      "review_state": "pending_record_review"
+    },
+    {
+      "sequence": 5,
+      "id": "economy",
+      "name_ja": "経済",
+      "official_url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_5.pdf",
+      "source_role": "chapter2_plan_system_projects",
+      "fetch_state": "pdf_identified_fetch_timeout",
+      "review_state": "pending_record_review"
+    },
+    {
+      "sequence": 6,
+      "id": "sports-culture",
+      "name_ja": "スポーツ・文化",
+      "official_url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_6.pdf",
+      "source_role": "chapter2_plan_system_projects",
+      "verified_pdf_pages": 9,
+      "document_page_range_observed": "102-110",
+      "fetch_state": "pdf_index_available",
+      "review_state": "pending_record_review"
+    },
+    {
+      "sequence": 7,
+      "id": "environment",
+      "name_ja": "環境",
+      "official_url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_7.pdf",
+      "source_role": "chapter2_plan_system_projects",
+      "fetch_state": "pdf_identified_fetch_timeout",
+      "review_state": "pending_record_review"
+    },
+    {
+      "sequence": 8,
+      "id": "urban-space",
+      "name_ja": "都市空間",
+      "official_url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_8.pdf",
+      "source_role": "chapter2_plan_system_projects",
+      "verified_pdf_pages": 12,
+      "document_page_range_observed": "121-132",
+      "fetch_state": "pdf_index_available",
+      "review_state": "pending_record_review"
+    }
+  ],
+  "execution_policy": {
+    "preferred_order": ["life-living", "safety-security", "sports-culture", "urban-space", "children-youth", "community", "economy", "environment"],
+    "reason": "Start with shards whose PDF index is currently available, while retrying the remaining official PDFs separately.",
+    "batch_size": "small evidence-complete batches",
+    "promotion_requirement": "A project may be promoted only after project identity plus stable official evidence location are captured; target, fiscal, and progress fields remain null or pending unless separately evidenced."
+  },
+  "quality_boundary": "This manifest advances the 599-project blocking gate by turning one aggregate scope into eight official-source execution shards. It does not claim any individual project has yet passed record-level review and does not alter Sapporo's review_in_progress municipality status."
+}
