@@ -1,0 +1,20 @@
+{
+  "id": "phase12-completion",
+  "phase": 12,
+  "status": "complete",
+  "scope": "designated_city_source_inventory",
+  "completed_at": "2026-08-12",
+  "execution_queue_path": "data/catalog/phase12_designated_city_execution_queue.json",
+  "phase13_queue_path": "data/catalog/phase13_designated_city_review_queue.json",
+  "summary": {
+    "designated_city_count": 20,
+    "reviewed_reference_count": 2,
+    "source_inventory_complete_count": 18,
+    "source_inventory_partial_count": 0,
+    "pending_source_inventory_count": 0,
+    "phase13_eligible_count": 18,
+    "phase13_blocked_source_inventory_count": 0
+  },
+  "completion_boundary": "Phase 12 completion means all 20 designated cities are represented by either a reviewed reference implementation or a source inventory that captures the maximum current official publication depth and preserves unavailable or not-separately-established evidence layers explicitly. It does not mean all municipality records are Reviewed, all annual results are published, all fiscal links are resolved, or any policy achievement, causal attribution, comparability, or ranking has been established.",
+  "promotion_rule": "Not-yet-published or officially non-separate source layers remain explicit Phase 13 record-level evidence boundaries and must never be filled by legacy substitution or inference."
+}
