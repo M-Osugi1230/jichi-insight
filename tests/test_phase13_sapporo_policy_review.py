@@ -25,20 +25,14 @@ def test_sapporo_policy_review_uses_reviewed_official_sources():
     assert all(record["organization"] == "札幌市" for record in sources)
     assert all(record["url"].startswith("https://www.city.sapporo.jp/") for record in sources)
     assert source_map["sapporo-action-plan-2023-page"]["review_status"] == "reviewed"
-    assert source_map["sapporo-action-plan-2023-progress-page"]["review_status"] == (
-        "reviewed"
-    )
+    assert source_map["sapporo-action-plan-2023-progress-page"]["review_status"] == "reviewed"
     assert source_map["sapporo-action-plan-2023-outcomes-2024-report"][
         "review_status"
     ] == "reviewed_for_indicator_identity_and_prior_values"
     current_report = source_map["sapporo-action-plan-2023-outcomes-2025-report"]
-    assert current_report["review_status"] == "aggregate_reviewed_record_values_pending"
-    assert current_report["confidence"] == "high_for_source_and_aggregate_pending_for_rows"
-    assert all(
-        record["confidence"] == "high"
-        for source_id, record in source_map.items()
-        if source_id != "sapporo-action-plan-2023-outcomes-2025-report"
-    )
+    assert current_report["review_status"] == "reviewed_for_indicator_current_values"
+    assert current_report["confidence"] == "high"
+    assert all(record["confidence"] == "high" for record in source_map.values())
 
 
 def test_sapporo_action_plan_reviewed_facts_are_exact_and_bounded():
@@ -55,6 +49,12 @@ def test_sapporo_action_plan_reviewed_facts_are_exact_and_bounded():
     assert outcomes["denominator"] == 26
     assert outcomes["reported_ratio_percent"] == 65.4
     assert "独自の達成判定" in outcomes["interpretation_boundary"]
+
+    current_values = facts["outcome-indicator-current-values-2025-report"]
+    assert current_values["value"] == 26
+    assert current_values["reporting_year"] == 2025
+    assert current_values["review_status"] == "reviewed"
+    assert "すべてを2024年度値とは扱わない" in current_values["interpretation_boundary"]
 
     targets = facts["progress-project-targets"]
     assert targets["numerator"] == 394
@@ -84,7 +84,7 @@ def test_sapporo_inventory_now_resolves_action_plan_canonical_route():
     assert progress["available_periods"] == ["2023年度実績", "2024年度実績"]
 
 
-def test_sapporo_remains_phase13_in_progress_until_individual_records_reviewed():
+def test_sapporo_remains_phase13_in_progress_until_project_records_are_reviewed():
     queue = load(QUEUE_PATH)
     sapporo = next(
         item for item in queue["execution_queue"] if item["official_code"] == "011002"
