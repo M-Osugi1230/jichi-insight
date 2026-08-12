@@ -29,7 +29,7 @@ def test_sapporo_prior_value_registry_covers_all_26_unique_indicators_in_officia
         record["name_ja"] for record in registry
     ]
     assert values["summary"]["reviewed_indicator_count"] == 26
-    assert values["summary"]["latest_2025_values_reviewed_count"] == 0
+    assert values["summary"]["latest_2025_values_reviewed_count"] == 26
 
 
 def test_sapporo_prior_value_source_trend_counts_match_official_2024_report():
@@ -150,10 +150,11 @@ def test_sapporo_prior_value_evidence_covers_exactly_the_26_unique_ids():
     assert set(evidence_ids) == {record["id"] for record in values}
 
 
-def test_sapporo_manifest_distinguishes_prior_values_from_latest_pending_values():
+def test_sapporo_manifest_preserves_prior_layer_after_current_layer_completion():
     manifest = load(MANIFEST_PATH)
     facts = {fact["id"]: fact for fact in manifest["reviewed_facts"]}
     prior = facts["outcome-indicator-prior-values-2024-report"]
+    current = facts["outcome-indicator-current-values-2025-report"]
 
     assert prior["value"] == 26
     assert prior["reporting_year"] == 2024
@@ -161,9 +162,14 @@ def test_sapporo_manifest_distinguishes_prior_values_from_latest_pending_values(
     assert prior["registry_path"] == (
         "data/catalog/sapporo_outcome_indicator_2024_report_values.json"
     )
-    assert prior["evidence_path"] == (
-        "data/evidence/sapporo_outcome_indicator_2024_report_values_evidence.json"
-    )
     assert "最新値として表示・比較しない" in prior["interpretation_boundary"]
-    assert "0/26" in manifest["quality_boundary"]
+    assert current["value"] == 26
+    assert current["reporting_year"] == 2025
+    assert current["registry_path"] == (
+        "data/catalog/sapporo_outcome_indicator_2025_report_values.json"
+    )
+    assert current["evidence_path"] == (
+        "data/evidence/sapporo_outcome_indicator_2025_report_values_evidence.json"
+    )
+    assert "最新報告の26件は17上昇・8下降・1未集計" in manifest["quality_boundary"]
     assert manifest["status"] == "review_in_progress"

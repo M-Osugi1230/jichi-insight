@@ -3,8 +3,8 @@
   "phase": 13,
   "official_code": "011002",
   "name_ja": "札幌市",
-  "status": "identity_and_prior_value_review_complete_current_value_review_pending",
-  "reviewed_at": "2026-08-11",
+  "status": "identity_prior_and_current_value_review_complete",
+  "reviewed_at": "2026-08-12",
   "identity_source": {
     "title": "【成果指標】2024年度AP2023進捗報告（2023年度実績）",
     "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_houkoku2024_seikashihyo.pdf",
@@ -26,7 +26,7 @@
     "reporting_year": 2025,
     "measurement_fiscal_year": 2024,
     "pages": 3,
-    "review_status": "pending_record_level_value_alignment"
+    "review_status": "reviewed_record_level_value_alignment"
   },
   "summary": {
     "field_occurrence_count": 33,
@@ -34,7 +34,7 @@
     "reposted_occurrence_count": 7,
     "identity_reviewed_count": 26,
     "prior_value_reviewed_count": 26,
-    "current_value_reviewed_count": 0,
+    "current_value_reviewed_count": 26,
     "reported_2024_up_count": 13,
     "reported_2024_down_count": 11,
     "reported_2024_flat_count": 0,
@@ -45,32 +45,273 @@
     "reported_2025_unaggregated_count": 1
   },
   "records": [
-    {"sequence": 1, "id": "total_fertility_rate", "field": "children_youth", "name_ja": "合計特殊出生率", "source_page": 1, "reposted_elsewhere": false, "identity_review_status": "reviewed", "current_value_review_status": "pending"},
-    {"sequence": 2, "id": "young_adult_outmigration_excess", "field": "children_youth", "name_ja": "20～29歳の道外への転出超過数（日本人のみ）", "source_page": 1, "reposted_elsewhere": true, "identity_review_status": "reviewed", "current_value_review_status": "pending"},
-    {"sequence": 3, "id": "parent_support_access", "field": "children_youth", "name_ja": "18歳以下の子がいて、妊娠・出産や子育てについて相談相手や情報収集手段がある親の割合", "source_page": 1, "reposted_elsewhere": false, "identity_review_status": "reviewed", "current_value_review_status": "pending"},
-    {"sequence": 4, "id": "childcare_service_access", "field": "children_youth", "name_ja": "希望に応じた保育サービスが利用できた保護者の割合", "source_page": 1, "reposted_elsewhere": false, "identity_review_status": "reviewed", "current_value_review_status": "pending"},
-    {"sequence": 5, "id": "children_with_personal_goals", "field": "children_youth", "name_ja": "自分の目標をもって生活している子どもの割合", "source_page": 1, "reposted_elsewhere": false, "identity_review_status": "reviewed", "current_value_review_status": "pending"},
-    {"sequence": 6, "id": "perceived_barrier_free_progress", "field": "daily_life", "name_ja": "まちのバリアフリー化が進んでいると感じる市民の割合", "source_page": 1, "reposted_elsewhere": true, "identity_review_status": "reviewed", "current_value_review_status": "pending"},
-    {"sequence": 7, "id": "understanding_elderly_disabled", "field": "daily_life", "name_ja": "高齢者・障がいのある方等の立場を理解して行動ができている人の割合", "source_page": 1, "reposted_elsewhere": true, "identity_review_status": "reviewed", "current_value_review_status": "pending"},
-    {"sequence": 8, "id": "healthy_life_expectancy", "field": "daily_life", "name_ja": "市民の健康寿命", "source_page": 1, "reposted_elsewhere": true, "identity_review_status": "reviewed", "current_value_review_status": "pending"},
-    {"sequence": 9, "id": "lifelong_learning_participation", "field": "daily_life", "name_ja": "生涯学習をしている市民の割合", "source_page": 1, "reposted_elsewhere": false, "identity_review_status": "reviewed", "current_value_review_status": "pending"},
-    {"sequence": 10, "id": "perceived_digitalization_progress", "field": "daily_life", "name_ja": "デジタル化が進んでいると実感している市民の割合", "source_page": 1, "reposted_elsewhere": true, "identity_review_status": "reviewed", "current_value_review_status": "pending"},
-    {"sequence": 11, "id": "single_operator_snow_removal_machines", "field": "daily_life", "name_ja": "１人乗りが可能な除雪機械台数", "source_page": 1, "reposted_elsewhere": false, "identity_review_status": "reviewed", "current_value_review_status": "pending"},
-    {"sequence": 12, "id": "citizens_feeling_social_role", "field": "community", "name_ja": "社会的役割を感じる市民の割合", "source_page": 1, "reposted_elsewhere": false, "identity_review_status": "reviewed", "current_value_review_status": "pending"},
-    {"sequence": 13, "id": "citizen_machizukuri_participation", "field": "community", "name_ja": "市民まちづくり活動に参加したことのある人の割合", "source_page": 1, "reposted_elsewhere": false, "identity_review_status": "reviewed", "current_value_review_status": "pending"},
-    {"sequence": 14, "id": "citizens_prepared_for_disasters", "field": "safety_security", "name_ja": "災害に対する備えを行っている市民の割合", "source_page": 2, "reposted_elsewhere": false, "identity_review_status": "reviewed", "current_value_review_status": "pending"},
-    {"sequence": 15, "id": "gdp_per_capita_nominal", "field": "economy", "name_ja": "人口一人当たりの市内総生産（名目）", "source_page": 2, "reposted_elsewhere": false, "identity_review_status": "reviewed", "current_value_review_status": "pending"},
-    {"sequence": 16, "id": "winter_tourist_count", "field": "economy", "name_ja": "冬期（12～３月）の観光客数", "source_page": 2, "reposted_elsewhere": true, "identity_review_status": "reviewed", "current_value_review_status": "pending"},
-    {"sequence": 17, "id": "total_tourism_consumption", "field": "economy", "name_ja": "札幌市内での総観光消費額", "source_page": 2, "reposted_elsewhere": false, "identity_review_status": "reviewed", "current_value_review_status": "pending"},
-    {"sequence": 18, "id": "employment_rate", "field": "economy", "name_ja": "就業率", "source_page": 2, "reposted_elsewhere": false, "identity_review_status": "reviewed", "current_value_review_status": "pending"},
-    {"sequence": 19, "id": "citizens_doing_sports", "field": "sports_culture", "name_ja": "スポーツ（運動）をする市民の割合", "source_page": 2, "reposted_elsewhere": false, "identity_review_status": "reviewed", "current_value_review_status": "pending"},
-    {"sequence": 20, "id": "culture_arts_participation", "field": "sports_culture", "name_ja": "文化芸術活動への参加割合", "source_page": 2, "reposted_elsewhere": false, "identity_review_status": "reviewed", "current_value_review_status": "pending"},
-    {"sequence": 21, "id": "daily_walking_minutes", "field": "environment", "name_ja": "日常生活における１日あたりの歩行時間", "source_page": 2, "reposted_elsewhere": true, "identity_review_status": "reviewed", "current_value_review_status": "pending"},
-    {"sequence": 22, "id": "citywide_ghg_emissions", "field": "environment", "name_ja": "温室効果ガス排出量", "source_page": 2, "reposted_elsewhere": false, "identity_review_status": "reviewed", "current_value_review_status": "pending"},
-    {"sequence": 23, "id": "municipal_facility_ghg_emissions", "field": "environment", "name_ja": "市有施設等における温室効果ガス排出量", "source_page": 2, "reposted_elsewhere": false, "identity_review_status": "reviewed", "current_value_review_status": "pending"},
-    {"sequence": 24, "id": "waste_resource_collection_satisfaction", "field": "environment", "name_ja": "ごみや資源回収に関することについて満足している市民の割合", "source_page": 2, "reposted_elsewhere": false, "identity_review_status": "reviewed", "current_value_review_status": "pending"},
-    {"sequence": 25, "id": "central_city_effective_far", "field": "urban_space", "name_ja": "都心の区域内実容積率", "source_page": 2, "reposted_elsewhere": false, "identity_review_status": "reviewed", "current_value_review_status": "pending"},
-    {"sequence": 26, "id": "regional_hub_effective_far", "field": "urban_space", "name_ja": "地域交流拠点の区域内実容積率", "source_page": 2, "reposted_elsewhere": false, "identity_review_status": "reviewed", "current_value_review_status": "pending"}
+    {
+      "sequence": 1,
+      "id": "total_fertility_rate",
+      "field": "children_youth",
+      "name_ja": "合計特殊出生率",
+      "source_page": 1,
+      "reposted_elsewhere": false,
+      "identity_review_status": "reviewed",
+      "current_value_review_status": "reviewed"
+    },
+    {
+      "sequence": 2,
+      "id": "young_adult_outmigration_excess",
+      "field": "children_youth",
+      "name_ja": "20～29歳の道外への転出超過数（日本人のみ）",
+      "source_page": 1,
+      "reposted_elsewhere": true,
+      "identity_review_status": "reviewed",
+      "current_value_review_status": "reviewed"
+    },
+    {
+      "sequence": 3,
+      "id": "parent_support_access",
+      "field": "children_youth",
+      "name_ja": "18歳以下の子がいて、妊娠・出産や子育てについて相談相手や情報収集手段がある親の割合",
+      "source_page": 1,
+      "reposted_elsewhere": false,
+      "identity_review_status": "reviewed",
+      "current_value_review_status": "reviewed"
+    },
+    {
+      "sequence": 4,
+      "id": "childcare_service_access",
+      "field": "children_youth",
+      "name_ja": "希望に応じた保育サービスが利用できた保護者の割合",
+      "source_page": 1,
+      "reposted_elsewhere": false,
+      "identity_review_status": "reviewed",
+      "current_value_review_status": "reviewed"
+    },
+    {
+      "sequence": 5,
+      "id": "children_with_personal_goals",
+      "field": "children_youth",
+      "name_ja": "自分の目標をもって生活している子どもの割合",
+      "source_page": 1,
+      "reposted_elsewhere": false,
+      "identity_review_status": "reviewed",
+      "current_value_review_status": "reviewed"
+    },
+    {
+      "sequence": 6,
+      "id": "perceived_barrier_free_progress",
+      "field": "daily_life",
+      "name_ja": "まちのバリアフリー化が進んでいると感じる市民の割合",
+      "source_page": 1,
+      "reposted_elsewhere": true,
+      "identity_review_status": "reviewed",
+      "current_value_review_status": "reviewed"
+    },
+    {
+      "sequence": 7,
+      "id": "understanding_elderly_disabled",
+      "field": "daily_life",
+      "name_ja": "高齢者・障がいのある方等の立場を理解して行動ができている人の割合",
+      "source_page": 1,
+      "reposted_elsewhere": true,
+      "identity_review_status": "reviewed",
+      "current_value_review_status": "reviewed"
+    },
+    {
+      "sequence": 8,
+      "id": "healthy_life_expectancy",
+      "field": "daily_life",
+      "name_ja": "市民の健康寿命",
+      "source_page": 1,
+      "reposted_elsewhere": true,
+      "identity_review_status": "reviewed",
+      "current_value_review_status": "reviewed"
+    },
+    {
+      "sequence": 9,
+      "id": "lifelong_learning_participation",
+      "field": "daily_life",
+      "name_ja": "生涯学習をしている市民の割合",
+      "source_page": 1,
+      "reposted_elsewhere": false,
+      "identity_review_status": "reviewed",
+      "current_value_review_status": "reviewed"
+    },
+    {
+      "sequence": 10,
+      "id": "perceived_digitalization_progress",
+      "field": "daily_life",
+      "name_ja": "デジタル化が進んでいると実感している市民の割合",
+      "source_page": 1,
+      "reposted_elsewhere": true,
+      "identity_review_status": "reviewed",
+      "current_value_review_status": "reviewed"
+    },
+    {
+      "sequence": 11,
+      "id": "single_operator_snow_removal_machines",
+      "field": "daily_life",
+      "name_ja": "１人乗りが可能な除雪機械台数",
+      "source_page": 1,
+      "reposted_elsewhere": false,
+      "identity_review_status": "reviewed",
+      "current_value_review_status": "reviewed"
+    },
+    {
+      "sequence": 12,
+      "id": "citizens_feeling_social_role",
+      "field": "community",
+      "name_ja": "社会的役割を感じる市民の割合",
+      "source_page": 1,
+      "reposted_elsewhere": false,
+      "identity_review_status": "reviewed",
+      "current_value_review_status": "reviewed"
+    },
+    {
+      "sequence": 13,
+      "id": "citizen_machizukuri_participation",
+      "field": "community",
+      "name_ja": "市民まちづくり活動に参加したことのある人の割合",
+      "source_page": 1,
+      "reposted_elsewhere": false,
+      "identity_review_status": "reviewed",
+      "current_value_review_status": "reviewed"
+    },
+    {
+      "sequence": 14,
+      "id": "citizens_prepared_for_disasters",
+      "field": "safety_security",
+      "name_ja": "災害に対する備えを行っている市民の割合",
+      "source_page": 2,
+      "reposted_elsewhere": false,
+      "identity_review_status": "reviewed",
+      "current_value_review_status": "reviewed"
+    },
+    {
+      "sequence": 15,
+      "id": "gdp_per_capita_nominal",
+      "field": "economy",
+      "name_ja": "人口一人当たりの市内総生産（名目）",
+      "source_page": 2,
+      "reposted_elsewhere": false,
+      "identity_review_status": "reviewed",
+      "current_value_review_status": "reviewed"
+    },
+    {
+      "sequence": 16,
+      "id": "winter_tourist_count",
+      "field": "economy",
+      "name_ja": "冬期（12～３月）の観光客数",
+      "source_page": 2,
+      "reposted_elsewhere": true,
+      "identity_review_status": "reviewed",
+      "current_value_review_status": "reviewed"
+    },
+    {
+      "sequence": 17,
+      "id": "total_tourism_consumption",
+      "field": "economy",
+      "name_ja": "札幌市内での総観光消費額",
+      "source_page": 2,
+      "reposted_elsewhere": false,
+      "identity_review_status": "reviewed",
+      "current_value_review_status": "reviewed"
+    },
+    {
+      "sequence": 18,
+      "id": "employment_rate",
+      "field": "economy",
+      "name_ja": "就業率",
+      "source_page": 2,
+      "reposted_elsewhere": false,
+      "identity_review_status": "reviewed",
+      "current_value_review_status": "reviewed"
+    },
+    {
+      "sequence": 19,
+      "id": "citizens_doing_sports",
+      "field": "sports_culture",
+      "name_ja": "スポーツ（運動）をする市民の割合",
+      "source_page": 2,
+      "reposted_elsewhere": false,
+      "identity_review_status": "reviewed",
+      "current_value_review_status": "reviewed"
+    },
+    {
+      "sequence": 20,
+      "id": "culture_arts_participation",
+      "field": "sports_culture",
+      "name_ja": "文化芸術活動への参加割合",
+      "source_page": 2,
+      "reposted_elsewhere": false,
+      "identity_review_status": "reviewed",
+      "current_value_review_status": "reviewed"
+    },
+    {
+      "sequence": 21,
+      "id": "daily_walking_minutes",
+      "field": "environment",
+      "name_ja": "日常生活における１日あたりの歩行時間",
+      "source_page": 2,
+      "reposted_elsewhere": true,
+      "identity_review_status": "reviewed",
+      "current_value_review_status": "reviewed"
+    },
+    {
+      "sequence": 22,
+      "id": "citywide_ghg_emissions",
+      "field": "environment",
+      "name_ja": "温室効果ガス排出量",
+      "source_page": 2,
+      "reposted_elsewhere": false,
+      "identity_review_status": "reviewed",
+      "current_value_review_status": "reviewed"
+    },
+    {
+      "sequence": 23,
+      "id": "municipal_facility_ghg_emissions",
+      "field": "environment",
+      "name_ja": "市有施設等における温室効果ガス排出量",
+      "source_page": 2,
+      "reposted_elsewhere": false,
+      "identity_review_status": "reviewed",
+      "current_value_review_status": "reviewed"
+    },
+    {
+      "sequence": 24,
+      "id": "waste_resource_collection_satisfaction",
+      "field": "environment",
+      "name_ja": "ごみや資源回収に関することについて満足している市民の割合",
+      "source_page": 2,
+      "reposted_elsewhere": false,
+      "identity_review_status": "reviewed",
+      "current_value_review_status": "reviewed"
+    },
+    {
+      "sequence": 25,
+      "id": "central_city_effective_far",
+      "field": "urban_space",
+      "name_ja": "都心の区域内実容積率",
+      "source_page": 2,
+      "reposted_elsewhere": false,
+      "identity_review_status": "reviewed",
+      "current_value_review_status": "reviewed"
+    },
+    {
+      "sequence": 26,
+      "id": "regional_hub_effective_far",
+      "field": "urban_space",
+      "name_ja": "地域交流拠点の区域内実容積率",
+      "source_page": 2,
+      "reposted_elsewhere": false,
+      "identity_review_status": "reviewed",
+      "current_value_review_status": "reviewed"
+    }
   ],
-  "quality_boundary": "The canonical identity layer is complete for the 26 unique outcome indicators after removing seven reposted occurrences from the 33 field-level rows. Visual review of the official two-page 2024 report corrected the unique-indicator row order within the daily-life and community fields and completed record-level review of all 26 prior-report baseline, actual, target, and source-trend fields in a separate value file. The 2025 PDF remains the authoritative current-value source, and individual 2024 actual values from that later report remain pending until row-level alignment is independently verified. Prior-report values must not be relabeled as current values, and source trend classifications are not Jichi Insight achievement judgments."
+  "quality_boundary": "The canonical identity layer covers 26 unique outcome indicators after removing seven reposted occurrences from 33 field-level rows. Both the 2024 prior-report values and the 2025 current-report row values are reviewed in separate value files. Each value retains the fiscal year printed in the official row, so reporting year and measurement fiscal year are not collapsed. Source trend arrows remain Sapporo City classifications and are not Jichi Insight achievement judgments.",
+  "current_value_review": {
+    "status": "reviewed",
+    "reviewed_count": 26,
+    "record_path": "data/catalog/sapporo_outcome_indicator_2025_report_values.json",
+    "evidence_path": "data/evidence/sapporo_outcome_indicator_2025_report_values_evidence.json",
+    "boundary": "The 2025 report is reviewed at row level. Each current value keeps the fiscal year printed in its row; not every current cell measures fiscal 2024."
+  }
 }

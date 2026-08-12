@@ -6,6 +6,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY_PATH = ROOT / "data/catalog/sapporo_outcome_indicator_registry.json"
 MANIFEST_PATH = ROOT / "data/catalog/sapporo_phase13_policy_review_manifest.json"
+CURRENT_VALUES_PATH = ROOT / "data/catalog/sapporo_outcome_indicator_2025_report_values.json"
+CURRENT_EVIDENCE_PATH = (
+    ROOT / "data/evidence/sapporo_outcome_indicator_2025_report_values_evidence.json"
+)
 
 
 def load(path: Path):
@@ -17,16 +21,15 @@ def test_sapporo_outcome_indicator_registry_covers_all_unique_indicators_once():
     records = registry["records"]
 
     assert registry["official_code"] == "011002"
-    assert registry["status"] == (
-        "identity_and_prior_value_review_complete_current_value_review_pending"
-    )
+    assert registry["status"] == "identity_prior_and_current_value_review_complete"
     assert len(records) == 26
     assert [record["sequence"] for record in records] == list(range(1, 27))
     assert len({record["id"] for record in records}) == 26
     assert len({record["name_ja"] for record in records}) == 26
     assert all(record["identity_review_status"] == "reviewed" for record in records)
     assert registry["summary"]["prior_value_reviewed_count"] == 26
-    assert registry["summary"]["current_value_reviewed_count"] == 0
+    assert registry["summary"]["current_value_reviewed_count"] == 26
+    assert all(record["current_value_review_status"] == "reviewed" for record in records)
 
 
 def test_sapporo_registry_preserves_33_to_26_repost_boundary():
@@ -77,7 +80,7 @@ def test_sapporo_registry_has_exact_reviewed_identity_anchors():
         "source_page": 1,
         "reposted_elsewhere": False,
         "identity_review_status": "reviewed",
-        "current_value_review_status": "pending",
+        "current_value_review_status": "reviewed",
     }
     assert records["young_adult_outmigration_excess"]["name_ja"] == (
         "20～29歳の道外への転出超過数（日本人のみ）"
@@ -93,42 +96,46 @@ def test_sapporo_registry_has_exact_reviewed_identity_anchors():
     assert records["regional_hub_effective_far"]["sequence"] == 26
 
 
-def test_sapporo_prior_values_are_complete_but_current_values_stay_pending():
+def test_sapporo_prior_and_current_value_layers_are_both_complete_but_separate():
     registry = load(REGISTRY_PATH)
-    records = registry["records"]
     prior = registry["prior_value_review"]
+    current = registry["current_value_review"]
 
     assert prior["status"] == "reviewed"
     assert prior["reviewed_count"] == 26
     assert prior["record_path"] == (
         "data/catalog/sapporo_outcome_indicator_2024_report_values.json"
     )
-    assert prior["evidence_path"] == (
-        "data/evidence/sapporo_outcome_indicator_2024_report_values_evidence.json"
+    assert current["status"] == "reviewed"
+    assert current["reviewed_count"] == 26
+    assert current["record_path"] == (
+        "data/catalog/sapporo_outcome_indicator_2025_report_values.json"
     )
-    assert registry["summary"]["current_value_reviewed_count"] == 0
-    assert all(record["current_value_review_status"] == "pending" for record in records)
-    assert all("current_value" not in record for record in records)
-    assert "individual 2024 actual values" in registry["quality_boundary"]
+    assert current["evidence_path"] == (
+        "data/evidence/sapporo_outcome_indicator_2025_report_values_evidence.json"
+    )
+    assert CURRENT_VALUES_PATH.is_file()
+    assert CURRENT_EVIDENCE_PATH.is_file()
+    assert "fiscal year printed" in current["boundary"]
     assert "not Jichi Insight achievement judgments" in registry["quality_boundary"]
 
 
-def test_sapporo_manifest_records_prior_values_without_city_completion():
+def test_sapporo_manifest_records_both_outcome_value_layers_without_city_completion():
     manifest = load(MANIFEST_PATH)
     facts = {fact["id"]: fact for fact in manifest["reviewed_facts"]}
     identity = facts["outcome-indicator-identity-registry"]
     prior_values = facts["outcome-indicator-prior-values-2024-report"]
+    current_values = facts["outcome-indicator-current-values-2025-report"]
 
     assert manifest["status"] == "review_in_progress"
     assert identity["value"] == 26
     assert identity["displayed_field_occurrences"] == 33
     assert identity["reposted_occurrences"] == 7
-    assert identity["registry_path"] == (
-        "data/catalog/sapporo_outcome_indicator_registry.json"
-    )
     assert prior_values["value"] == 26
     assert prior_values["reporting_year"] == 2024
-    assert prior_values["review_status"] == "reviewed"
-    assert "最新値" in prior_values["interpretation_boundary"]
-    assert any("前年値26件は完了" in item for item in manifest["remaining_work"])
-    assert any("403" in item for item in manifest["remaining_work"])
+    assert current_values["value"] == 26
+    assert current_values["reporting_year"] == 2025
+    assert current_values["review_status"] == "reviewed"
+    assert "すべてを2024年度値とは扱わない" in current_values["interpretation_boundary"]
+    assert any("599" in item for item in manifest["remaining_work"])
+    assert any("26" in item and "403" in item for item in manifest["remaining_work"])
