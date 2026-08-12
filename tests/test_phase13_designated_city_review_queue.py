@@ -54,7 +54,7 @@ def test_phase13_has_no_source_inventory_blocks_after_phase12_completion():
 def test_phase13_newly_eligible_five_cities_enter_as_pending_record_review():
     phase13 = load(QUEUE_PATH)
     by_code = {item["official_code"]: item for item in phase13["execution_queue"]}
-    assert NEWLY_ELIGIBLE_CODES <= set(by_code)
+    assert set(by_code) >= NEWLY_ELIGIBLE_CODES
     assert all(by_code[code]["status"] == "pending_record_review" for code in NEWLY_ELIGIBLE_CODES)
     assert by_code["221007"]["sequence"] == 9
     assert by_code["271403"]["sequence"] == 14
