@@ -1,7 +1,7 @@
 {
   "id": "phase12-kobe-source-inventory",
   "phase": 12,
-  "status": "source_inventory_partial",
+  "status": "source_inventory_complete",
   "official_code": "281000",
   "name_ja": "神戸市",
   "prefecture_name_ja": "兵庫県",
@@ -37,7 +37,7 @@
       "official_url": "https://www.city.kobe.lg.jp/a47946/shise/kekaku/masterplan/kobe2030vision.html",
       "status": "official_landing_verified",
       "effective_period": "2026年度以降毎年度",
-      "review_boundary": "The official plan states that external experts will conduct annual progress management. This verifies the governance route only; no current-plan annual result is inferred before a reporting cycle is published."
+      "review_boundary": "The official plan states that external experts will conduct annual progress management. This verifies the current progress-governance route; no current-plan annual result is inferred before the first reporting cycle is published."
     },
     {
       "id": "kobe-budget-2026",
@@ -61,11 +61,11 @@
   "unresolved_layers": [
     {
       "layer": "annual_progress",
-      "status": "current_plan_first_annual_result_not_yet_published_or_resolved",
-      "boundary": "The current basic plan and implementation plan began in fiscal 2026. Annual progress governance is established, but a completed current-plan annual progress result is not yet available or resolved and must not be inferred from the expired prior plan."
+      "status": "current_plan_first_annual_result_not_yet_published",
+      "boundary": "The sixth basic plan and Kobe 2030 Vision began in fiscal 2026, while the official plan explicitly establishes annual external-expert progress management. Source-inventory coverage is complete because the governance route and publication boundary are identified; the first completed current-plan annual result remains a not-yet-published Phase 13 record-level evidence boundary and prior-plan results must not be substituted."
     }
   ],
-  "quality_boundary": "This partial inventory confirms the current 2026–2035 basic plan, the 2026–2030 implementation plan, the official annual progress-governance route, fiscal 2026 budget, and fiscal 2024 settlement. It does not substitute prior-plan results for current-plan progress or promote KPI, project, budget, settlement, governance, or outcome records to Reviewed, linked, comparable, causal, or policy-achievement status.",
-  "next_action": "Capture the first published annual progress result for the current sixth basic plan and Kobe 2030 Vision when available, then review KGI and KPI definitions, implementation projects, fiscal 2026 budget records, and fiscal 2024 settlement records at record-level evidence depth while preserving prior-plan boundaries.",
-  "verified_at": "2026-08-08"
+  "quality_boundary": "Source-inventory coverage is complete at the maximum current official publication depth: the 2026–2035 basic plan, 2026–2030 implementation plan, annual progress-governance route, fiscal 2026 budget, and fiscal 2024 settlement are all identified. The first current-plan annual result is not yet published and remains an explicit Phase 13 evidence boundary. The inventory does not substitute prior-plan results for current-plan progress or promote KPI, project, budget, settlement, governance, or outcome records to Reviewed, linked, comparable, causal, or policy-achievement status.",
+  "next_action": "Enter Phase 13 record review using the verified basic-plan, implementation-plan, and progress-governance sources; keep the first annual result unavailable until officially published, then review KGI/KPI definitions, implementation projects, fiscal 2026 budget records, and fiscal 2024 settlement records at record-level evidence depth while preserving prior-plan boundaries.",
+  "verified_at": "2026-08-12"
 }

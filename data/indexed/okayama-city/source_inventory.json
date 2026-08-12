@@ -1,7 +1,7 @@
 {
   "id": "phase12-okayama-source-inventory",
   "phase": 12,
-  "status": "source_inventory_partial",
+  "status": "source_inventory_complete",
   "official_code": "331007",
   "name_ja": "岡山市",
   "prefecture_name_ja": "岡山県",
@@ -37,7 +37,7 @@
       "official_url": "https://www.city.okayama.jp/shisei/0000079070.html",
       "status": "official_landing_verified",
       "effective_period": "2026年度以降毎年度",
-      "review_boundary": "The official plan establishes annual PDCA evaluation for 30 policies and publication of results. This verifies the governance route only and does not infer a completed current-plan annual result."
+      "review_boundary": "The official plan establishes annual PDCA evaluation for 30 policies and publication of results. This verifies the current progress-governance route only and does not infer a completed current-plan annual result."
     },
     {
       "id": "okayama-budget-2026",
@@ -61,11 +61,11 @@
   "unresolved_layers": [
     {
       "layer": "annual_progress",
-      "status": "current_plan_first_annual_result_not_yet_published_or_resolved",
-      "boundary": "The seventh comprehensive plan began in fiscal 2026. Its annual PDCA method is specified, but a completed current-plan annual progress result has not yet been resolved and prior sixth-plan reports must not be substituted."
+      "status": "current_plan_first_annual_result_not_yet_published",
+      "boundary": "The seventh comprehensive plan began in fiscal 2026 and its official annual PDCA method is already identified. Source-inventory coverage is complete at the current publication depth; the first completed seventh-plan annual result is not yet published and remains a Phase 13 record-level evidence boundary. Prior sixth-plan reports must not be substituted."
     }
   ],
-  "quality_boundary": "This partial inventory confirms the current 2026–2035 comprehensive plan, its 2026–2030 first midterm implementation layer, the official annual PDCA governance model, fiscal 2026 budget, and fiscal 2024 settlement. It does not substitute sixth-plan reports for seventh-plan progress or promote indicators, projects, budget, settlement, governance, or outcomes to Reviewed, linked, comparable, causal, or policy-achievement status.",
-  "next_action": "Capture the first published seventh-plan annual PDCA report when available, then review the 30 policy indicators, measure and project mappings, fiscal 2026 budget records, and fiscal 2024 settlement evidence at record level while preserving the sixth-to-seventh plan version boundary.",
-  "verified_at": "2026-08-08"
+  "quality_boundary": "Source-inventory coverage is complete at the maximum current official publication depth: the 2026–2035 comprehensive plan, 2026–2030 first midterm implementation layer, official annual PDCA governance model, fiscal 2026 budget, and fiscal 2024 settlement are identified. The first seventh-plan annual result is not yet published and remains explicit for Phase 13. The inventory does not substitute sixth-plan reports for seventh-plan progress or promote indicators, projects, budget, settlement, governance, or outcomes to Reviewed, linked, comparable, causal, or policy-achievement status.",
+  "next_action": "Enter Phase 13 record review using the verified comprehensive-plan, midterm-plan, and PDCA-governance sources; keep the first annual result unavailable until officially published, then review the 30 policy indicators, measure and project mappings, fiscal 2026 budget records, and fiscal 2024 settlement evidence at record level while preserving the sixth-to-seventh plan version boundary.",
+  "verified_at": "2026-08-12"
 }

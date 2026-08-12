@@ -7,9 +7,9 @@
   "properties": {
     "id": {"const": "phase12-designated-city-execution-queue"},
     "phase": {"const": 12},
-    "status": {"const": "in_progress"},
+    "status": {"const": "complete"},
     "scope": {"const": "designated_cities"},
-    "quality_gate": {"type": "array", "minItems": 9, "uniqueItems": true, "items": {"type": "string", "minLength": 40}},
+    "quality_gate": {"type": "array", "minItems": 10, "uniqueItems": true, "items": {"type": "string", "minLength": 40}},
     "reference_implementations": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"$ref": "#/$defs/reference"}},
     "execution_queue": {"type": "array", "minItems": 18, "maxItems": 18, "items": {"$ref": "#/$defs/queuedCity"}},
     "summary": {
@@ -20,13 +20,13 @@
         "reference_implementation_count": {"const": 2},
         "queued_city_count": {"const": 18},
         "reviewed_city_count": {"const": 2},
-        "source_inventory_complete_count": {"const": 13},
-        "source_inventory_partial_count": {"const": 5},
+        "source_inventory_complete_count": {"const": 18},
+        "source_inventory_partial_count": {"const": 0},
         "pending_city_count": {"const": 0},
-        "next_official_code": {"const": "221007"}
+        "next_official_code": {"type": "null"}
       }
     },
-    "updated_at": {"const": "2026-08-08", "format": "date"}
+    "updated_at": {"const": "2026-08-12", "format": "date"}
   },
   "$defs": {
     "reference": {
@@ -44,13 +44,13 @@
     },
     "queuedCity": {
       "type": "object", "additionalProperties": false,
-      "required": ["sequence", "official_code", "name_ja", "prefecture_name_ja", "status"],
+      "required": ["sequence", "official_code", "name_ja", "prefecture_name_ja", "status", "inventory_path"],
       "properties": {
         "sequence": {"type": "integer", "minimum": 1, "maximum": 18},
         "official_code": {"type": "string", "pattern": "^[0-9]{6}$"},
         "name_ja": {"type": "string", "minLength": 2},
         "prefecture_name_ja": {"type": "string", "minLength": 3},
-        "status": {"enum": ["pending_source_inventory", "source_inventory_partial", "source_inventory_complete"]},
+        "status": {"const": "source_inventory_complete"},
         "inventory_path": {"type": "string", "pattern": "^data/indexed/.+/source_inventory\\.json$"}
       }
     }

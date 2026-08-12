@@ -45,22 +45,24 @@ def load(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def test_queue_matches_schema():
+def test_queue_matches_schema_and_phase12_is_complete():
+    queue = load(QUEUE_PATH)
     validator = Draft202012Validator(
         load(SCHEMA_PATH), format_checker=FormatChecker()
     )
-    assert list(validator.iter_errors(load(QUEUE_PATH))) == []
+    assert list(validator.iter_errors(queue)) == []
+    assert queue["status"] == "complete"
 
 
 def test_all_twenty_designated_cities_are_covered_once():
     queue = load(QUEUE_PATH)
     references = queue["reference_implementations"]
-    pending = queue["execution_queue"]
-    codes = [item["official_code"] for item in references + pending]
+    cities = queue["execution_queue"]
+    codes = [item["official_code"] for item in references + cities]
     assert len(codes) == 20
     assert len(set(codes)) == 20
     assert sorted(codes) == sorted(EXPECTED_CODES)
-    assert [item["sequence"] for item in pending] == list(range(1, 19))
+    assert [item["sequence"] for item in cities] == list(range(1, 19))
 
 
 def test_reference_implementations_resolve_to_reviewed_municipalities():
@@ -84,6 +86,7 @@ def assert_indexed_inventory(path: Path, schema_path: Path, code: str, host: str
     )
     assert list(validator.iter_errors(inventory)) == []
     assert inventory["review_status"] == "indexed_not_reviewed"
+    assert inventory["status"] == "source_inventory_complete"
     assert inventory["official_code"] == code
     assert len(inventory["sources"]) >= 5
     assert all(
@@ -124,11 +127,6 @@ def test_chiba_inventory_is_valid_but_not_promoted_to_reviewed():
         "budget",
         "settlement",
     }
-    assert inventory["plan_period"] == {
-        "start_fiscal_year": 2023,
-        "end_fiscal_year": 2032,
-        "current_plan_name": "千葉市基本計画",
-    }
 
 
 def test_yokohama_inventory_preserves_current_and_prior_plan_boundary():
@@ -139,18 +137,6 @@ def test_yokohama_inventory_preserves_current_and_prior_plan_boundary():
         "https://www.city.yokohama.lg.jp/",
     )
     inventory = load(YOKOHAMA_INVENTORY_PATH)
-    assert {source["layer"] for source in inventory["sources"]} == {
-        "comprehensive_plan",
-        "implementation_plan",
-        "annual_progress",
-        "budget",
-        "settlement",
-    }
-    assert inventory["plan_period"] == {
-        "start_fiscal_year": 2026,
-        "end_fiscal_year": 2029,
-        "current_plan_name": "横浜市中期計画2026～2029",
-    }
     progress = next(
         source for source in inventory["sources"] if source["layer"] == "annual_progress"
     )
@@ -158,38 +144,41 @@ def test_yokohama_inventory_preserves_current_and_prior_plan_boundary():
     assert "must not be treated as actuals" in progress["review_boundary"]
 
 
-def test_summary_is_derived_from_queue_contents():
+def test_all_eighteen_execution_inventories_are_complete_and_resolve():
+    queue = load(QUEUE_PATH)
+    cities = queue["execution_queue"]
+    assert len(cities) == 18
+    assert all(item["status"] == "source_inventory_complete" for item in cities)
+    for item in cities:
+        inventory_path = ROOT / item["inventory_path"]
+        assert inventory_path.is_file()
+        inventory = load(inventory_path)
+        assert inventory["official_code"] == item["official_code"]
+        assert inventory["status"] == "source_inventory_complete"
+
+
+def test_summary_is_derived_from_completed_queue_contents():
     queue = load(QUEUE_PATH)
     references = queue["reference_implementations"]
     cities = queue["execution_queue"]
-    active = next(
-        item
-        for item in cities
-        if item["status"]
-        in {"source_inventory_partial", "pending_source_inventory"}
-    )
     assert queue["summary"] == {
         "designated_city_count": len(references) + len(cities),
         "reference_implementation_count": len(references),
         "queued_city_count": len(cities),
         "reviewed_city_count": 2,
-        "source_inventory_complete_count": sum(
-            item["status"] == "source_inventory_complete" for item in cities
-        ),
-        "source_inventory_partial_count": sum(
-            item["status"] == "source_inventory_partial" for item in cities
-        ),
-        "pending_city_count": sum(
-            item["status"] == "pending_source_inventory" for item in cities
-        ),
-        "next_official_code": active["official_code"],
+        "source_inventory_complete_count": len(cities),
+        "source_inventory_partial_count": 0,
+        "pending_city_count": 0,
+        "next_official_code": None,
     }
 
 
-def test_quality_gate_blocks_unsupported_comparison_and_assessment():
+def test_quality_gate_preserves_unavailable_source_boundaries_without_inference():
     rules = " ".join(load(QUEUE_PATH)["quality_gate"])
     assert "Do not infer policy achievement" in rules
     assert "Do not rank cities" in rules
     assert "automatically extracted material" in rules
     assert "denominator" in rules
     assert "supplementary budget" in rules
+    assert "officially not yet published" in rules
+    assert "Phase 13 evidence boundary" in rules

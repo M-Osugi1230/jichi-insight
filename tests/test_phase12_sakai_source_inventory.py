@@ -17,7 +17,7 @@ def load(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def test_sakai_inventory_matches_schema():
+def test_sakai_inventory_matches_complete_schema():
     validator = Draft202012Validator(load(SCHEMA_PATH), format_checker=FormatChecker())
     assert list(validator.iter_errors(load(INVENTORY_PATH))) == []
 
@@ -25,7 +25,7 @@ def test_sakai_inventory_matches_schema():
 def test_sakai_preserves_current_and_legacy_plan_boundaries():
     inventory = load(INVENTORY_PATH)
     assert inventory["official_code"] == "271403"
-    assert inventory["status"] == "source_inventory_partial"
+    assert inventory["status"] == "source_inventory_complete"
     assert inventory["review_status"] == "indexed_not_reviewed"
     assert inventory["plan_period"] == {
         "start_fiscal_year": 2026,
@@ -50,7 +50,16 @@ def test_sakai_preserves_current_and_legacy_plan_boundaries():
     assert "must not be attributed" in legacy["review_boundary"]
 
 
-def test_sakai_queue_entry_is_partial_and_counts_are_consistent():
+def test_sakai_complete_inventory_does_not_invent_separate_implementation_layer():
+    inventory = load(INVENTORY_PATH)
+    unresolved = {item["layer"]: item for item in inventory["unresolved_layers"]}
+    assert "not_established" in unresolved["implementation_plan"]["status"]
+    assert "without inventing a layer" in unresolved["implementation_plan"]["boundary"]
+    assert "not-yet-published" in unresolved["annual_progress"]["boundary"]
+    assert "Source-inventory coverage is complete" in inventory["quality_boundary"]
+
+
+def test_sakai_queue_entry_is_complete_and_counts_are_consistent():
     queue = load(QUEUE_PATH)
     city = next(
         item for item in queue["execution_queue"] if item["official_code"] == "271403"
@@ -60,7 +69,7 @@ def test_sakai_queue_entry_is_partial_and_counts_are_consistent():
         "official_code": "271403",
         "name_ja": "堺市",
         "prefecture_name_ja": "大阪府",
-        "status": "source_inventory_partial",
+        "status": "source_inventory_complete",
         "inventory_path": "data/indexed/sakai-city/source_inventory.json",
     }
     statuses = [item["status"] for item in queue["execution_queue"]]

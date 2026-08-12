@@ -17,15 +17,15 @@ def load(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def test_hiroshima_inventory_matches_schema():
+def test_hiroshima_inventory_matches_complete_schema():
     validator = Draft202012Validator(load(SCHEMA_PATH), format_checker=FormatChecker())
     assert list(validator.iter_errors(load(INVENTORY_PATH))) == []
 
 
-def test_hiroshima_keeps_current_cycle_progress_unresolved():
+def test_hiroshima_keeps_current_cycle_progress_boundary_explicit():
     inventory = load(INVENTORY_PATH)
     assert inventory["official_code"] == "341002"
-    assert inventory["status"] == "source_inventory_partial"
+    assert inventory["status"] == "source_inventory_complete"
     assert inventory["unresolved_layers"][0]["layer"] == "annual_progress"
     implementation = next(
         source
@@ -33,6 +33,7 @@ def test_hiroshima_keeps_current_cycle_progress_unresolved():
         if source["layer"] == "implementation_plan"
     )
     assert implementation["effective_period"] == "2025年度～2030年度"
+    assert "2025年度改訂版" in implementation["review_boundary"]
     governance = next(
         source
         for source in inventory["sources"]
@@ -41,12 +42,21 @@ def test_hiroshima_keeps_current_cycle_progress_unresolved():
     assert "not inferred" in governance["review_boundary"]
 
 
-def test_hiroshima_queue_entry_is_partial_and_counts_are_consistent():
+def test_hiroshima_complete_inventory_does_not_invent_completed_annual_result():
+    inventory = load(INVENTORY_PATH)
+    unresolved = inventory["unresolved_layers"][0]
+    assert unresolved["status"] == "current_implementation_plan_annual_result_not_yet_resolved"
+    assert "Source-inventory coverage is complete" in unresolved["boundary"]
+    assert "Phase 13" in unresolved["boundary"]
+    assert "Source-inventory coverage is complete" in inventory["quality_boundary"]
+
+
+def test_hiroshima_queue_entry_is_complete_and_counts_are_consistent():
     queue = load(QUEUE_PATH)
     city = next(
         item for item in queue["execution_queue"] if item["official_code"] == "341002"
     )
-    assert city["status"] == "source_inventory_partial"
+    assert city["status"] == "source_inventory_complete"
     assert city["inventory_path"] == "data/indexed/hiroshima-city/source_inventory.json"
     statuses = [item["status"] for item in queue["execution_queue"]]
     assert queue["summary"]["source_inventory_complete_count"] == statuses.count(

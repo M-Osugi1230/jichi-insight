@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Phase 12 designated-city source inventory completion",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "phase", "status", "scope", "completed_at", "execution_queue_path", "phase13_queue_path", "summary", "completion_boundary", "promotion_rule"],
+  "properties": {
+    "id": {"const": "phase12-completion"},
+    "phase": {"const": 12},
+    "status": {"const": "complete"},
+    "scope": {"const": "designated_city_source_inventory"},
+    "completed_at": {"const": "2026-08-12", "format": "date"},
+    "execution_queue_path": {"const": "data/catalog/phase12_designated_city_execution_queue.json"},
+    "phase13_queue_path": {"const": "data/catalog/phase13_designated_city_review_queue.json"},
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["designated_city_count", "reviewed_reference_count", "source_inventory_complete_count", "source_inventory_partial_count", "pending_source_inventory_count", "phase13_eligible_count", "phase13_blocked_source_inventory_count"],
+      "properties": {
+        "designated_city_count": {"const": 20},
+        "reviewed_reference_count": {"const": 2},
+        "source_inventory_complete_count": {"const": 18},
+        "source_inventory_partial_count": {"const": 0},
+        "pending_source_inventory_count": {"const": 0},
+        "phase13_eligible_count": {"const": 18},
+        "phase13_blocked_source_inventory_count": {"const": 0}
+      }
+    },
+    "completion_boundary": {"type": "string", "minLength": 300},
+    "promotion_rule": {"type": "string", "minLength": 140}
+  }
+}
