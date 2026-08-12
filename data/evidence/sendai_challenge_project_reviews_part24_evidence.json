@@ -1,0 +1,47 @@
+[
+  {
+    "id": "evidence-sendai-challenge-p83-housing-policy-promotion",
+    "subject_type": "project",
+    "subject_id": "housing-policy-promotion",
+    "claims": [{
+      "field": "project_identity_and_evaluation",
+      "statement": "住宅政策推進事業は都市整備局・住宅政策課所管で、令和6年度の仙台市自己評価は○。",
+      "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+      "location_note": "公式PDF page index 83。事業名・担当・主担当課・進捗状況欄。",
+      "decision": "accepted",
+      "review_note": "○は仙台市の自己評価区分として保持する。既存住宅流通、若年・子育て世帯の定着、住環境形成等に関する自治体記述を独自の因果評価へ昇格させない。"
+    }],
+    "open_questions": ["相談件数、住宅登録戸数、住み替え支援件数等の実績値は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-challenge-p85-citizen-health-promotion",
+    "subject_type": "project",
+    "subject_id": "citizen-health-promotion",
+    "claims": [{
+      "field": "project_identity_and_evaluation",
+      "statement": "市民健康づくり推進事業は健康福祉局・各区が担当し、主担当課は健康福祉局健康政策課、令和6年度の仙台市自己評価は○。",
+      "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+      "location_note": "公式PDF page index 85。事業名・担当・主担当課・進捗状況欄。",
+      "decision": "accepted",
+      "review_note": "○は仙台市の自己評価区分として保持する。PHR、ウォーキング、健康啓発、重症化予防等が健康づくりに寄与したという自治体記述を独自の因果評価へ変換しない。"
+    }],
+    "open_questions": ["各アプリ参加者数、イベント参加者数、健診・啓発関連実績は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-challenge-p86-care-frailty-prevention",
+    "subject_type": "project",
+    "subject_id": "care-frailty-prevention",
+    "claims": [{
+      "field": "project_identity_and_evaluation",
+      "statement": "介護・フレイル予防推進事業は健康福祉局・各区が担当し、主担当課は健康福祉局地域包括ケア推進課、令和6年度の仙台市自己評価は◎。",
+      "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+      "location_note": "公式PDF page index 86。事業名・担当・主担当課・進捗状況欄。",
+      "decision": "accepted",
+      "review_note": "◎は仙台市の自己評価区分として保持する。アウトリーチ、ICT活用、担い手養成、運動習慣化等が介護・フレイル予防に寄与したという自治体記述を独自の因果評価へ昇格させない。"
+    }],
+    "open_questions": ["フレイルチェック回数・参加者数、サポーター養成数、教室参加者数等は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  }
+]
