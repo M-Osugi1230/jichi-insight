@@ -4,8 +4,9 @@
   "official_code": "041009",
   "name_ja": "仙台市",
   "updated_at": "2026-08-12",
-  "status": "review_in_progress",
+  "status": "reviewed_complete",
   "canonical_parent_manifest_path": "data/catalog/sendai_phase13_review_manifest.json",
+  "completion_manifest_path": "data/catalog/sendai_phase13_completion.json",
   "linked_layers": [
     {
       "id": "challenge-project-core-review",
@@ -43,15 +44,15 @@
     "citizen_survey_summary_items_reviewed": 34,
     "citizen_survey_priority_items_reviewed": 26,
     "survey_reviewed_item_total": 60,
-    "municipality_phase13_complete": false
+    "municipality_phase13_complete": true
   },
-  "remaining_gates": [
+  "remaining_gates": [],
+  "deferred_depth": [
     "citizen survey response-category distributions and valid denominators",
     "citizen survey attribute cross-tabs with small-base/comparability safeguards",
-    "livability, residential intention, attachment, and foreign-resident survey layers",
+    "livability, residential intention, attachment, foreign-resident, and free-text survey layers",
     "project-level outcome/KPI evidence beyond municipality self-evaluation",
-    "budget and settlement detail linkage preserving fiscal state and year",
-    "final schema, evidence, regression, and publication review for municipality completion"
+    "budget and settlement detail linkage preserving fiscal state and year"
   ],
-  "quality_boundary": "The linked layers are intentionally not collapsed. Municipality self-evaluation, citizen perception scores, citizen-stated future priorities, fiscal evidence, and outcome evidence remain distinct facts. Completion at one declared depth does not imply policy achievement, causal attribution, comparability, or full Sendai Phase 13 completion."
+  "quality_boundary": "The linked layers are intentionally not collapsed. Municipality self-evaluation, citizen perception scores, citizen-stated future priorities, fiscal evidence, and outcome evidence remain distinct facts. The declared Phase 13 v1 review package is complete, but deferred depth remains future review work and does not imply exhaustive Sendai coverage, policy achievement, causal attribution, or cross-city comparability."
 }
