@@ -1,0 +1,47 @@
+[
+  {
+    "id": "evidence-sendai-challenge-p98-local-production-local-consumption",
+    "subject_type": "project",
+    "subject_id": "local-production-local-consumption",
+    "claims": [{
+      "field": "project_identity_and_evaluation",
+      "statement": "地産地消推進事業は経済局・農業振興課所管で、令和6年度の仙台市自己評価は○。",
+      "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+      "location_note": "公式PDF page index 98。事業名・担当・主担当課・進捗状況欄。",
+      "decision": "accepted",
+      "review_note": "○は仙台市の自己評価区分として保持する。情報発信、ブランド化、イベント等が農業活性化や地域内経済循環に寄与したという自治体記述を独自の因果評価へ昇格させない。"
+    }],
+    "open_questions": ["SNS記事数、出荷量、提供食数、スタンプラリー参加者数等は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-challenge-p99-sustainable-agriculture-promotion",
+    "subject_type": "project",
+    "subject_id": "sustainable-agriculture-promotion",
+    "claims": [{
+      "field": "project_identity_and_evaluation",
+      "statement": "持続可能な農業推進事業は経済局・農業振興課所管で、令和6年度の仙台市自己評価は○。",
+      "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+      "location_note": "公式PDF page index 99。事業名・担当・主担当課・進捗状況欄。",
+      "decision": "accepted",
+      "review_note": "○は仙台市の自己評価区分として保持する。環境保全米、スマート農業、大学連携、新技術実証等が収益性向上や効率化に寄与するという自治体記述を独自の因果評価へ変換しない。"
+    }],
+    "open_questions": ["作付面積、環境保全米対象量・生産者数、導入支援件数等は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-challenge-p100-central-wholesale-market-redevelopment",
+    "subject_type": "project",
+    "subject_id": "central-wholesale-market-redevelopment",
+    "claims": [{
+      "field": "project_identity_and_evaluation",
+      "statement": "仙台市中央卸売市場再整備事業は経済局・中央卸売市場管理課所管で、令和6年度の仙台市自己評価は○。",
+      "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+      "location_note": "公式PDF page index 100。事業名・担当・主担当課・進捗状況欄。",
+      "decision": "accepted",
+      "review_note": "○は仙台市の自己評価区分として保持する。事業者ヒアリングや再整備検討が基本計画素案作成に寄与したという自治体記述を独自の因果評価へ昇格させない。"
+    }],
+    "open_questions": ["検討委員会・調整会議開催数、ヒアリング回数、花き市場検討状況等は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  }
+]
