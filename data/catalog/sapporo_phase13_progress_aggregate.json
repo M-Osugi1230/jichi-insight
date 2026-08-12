@@ -1,0 +1,98 @@
+{
+  "id": "sapporo-phase13-progress-aggregate",
+  "phase": 13,
+  "official_code": "011002",
+  "name_ja": "札幌市",
+  "status": "reviewed_aggregate_only",
+  "reviewed_at": "2026-08-12",
+  "source": {
+    "id": "sapporo-action-plan-2023-progress-html",
+    "title": "計画の進捗報告（第2次札幌市まちづくり戦略ビジョン・アクションプラン2023）",
+    "official_url": "https://www.city.sapporo.jp/chosei/actionplan2023-shinchoku.html",
+    "evidence_locations": {
+      "outcome_indicators": "成果指標の状況",
+      "principal_project_targets": "事業目標の状況",
+      "project_cost_progress": "事業費の状況"
+    }
+  },
+  "records": [
+    {
+      "id": "sapporo-2025-progress-outcome-indicator-count",
+      "layer": "annual_progress",
+      "metric": "outcome_indicator_count_excluding_reposts",
+      "value": 26,
+      "unit": "indicators",
+      "review_status": "reviewed_source_reported_aggregate",
+      "interpretation_boundary": "再掲を除いた成果指標の総数。個別26指標の名称・基準値・実績値・達成判定がレビュー済みであることを意味しない。"
+    },
+    {
+      "id": "sapporo-2025-progress-outcome-indicators-up",
+      "layer": "annual_progress",
+      "metric": "outcome_indicators_above_planning_baseline",
+      "value": 17,
+      "total": 26,
+      "reported_rate_percent": 65.4,
+      "unit": "indicators",
+      "review_status": "reviewed_source_reported_aggregate",
+      "interpretation_boundary": "札幌市が計画策定段階の現状値と比べて上昇傾向と整理した集約値。Jichi Insight独自の達成判定へ変換せず、個別17指標を推測しない。"
+    },
+    {
+      "id": "sapporo-2025-progress-outcome-indicators-down",
+      "layer": "annual_progress",
+      "metric": "outcome_indicators_below_planning_baseline",
+      "value": 8,
+      "total": 26,
+      "reported_rate_percent": 30.8,
+      "unit": "indicators",
+      "review_status": "reviewed_source_reported_aggregate",
+      "interpretation_boundary": "札幌市の集約区分として保持し、個別8指標を特定・評価したものとして扱わない。"
+    },
+    {
+      "id": "sapporo-2025-progress-outcome-indicators-uncompiled",
+      "layer": "annual_progress",
+      "metric": "outcome_indicators_uncompiled",
+      "value": 1,
+      "total": 26,
+      "reported_rate_percent": 3.8,
+      "unit": "indicators",
+      "review_status": "reviewed_source_reported_aggregate",
+      "interpretation_boundary": "未集計1項目を欠損・失敗・低評価へ変換しない。"
+    },
+    {
+      "id": "sapporo-2025-progress-principal-project-targets",
+      "layer": "annual_progress",
+      "metric": "principal_project_targets_expected_achieved",
+      "value": 394,
+      "total": 403,
+      "reported_rate_percent": 97.8,
+      "unit": "targets",
+      "review_status": "reviewed_source_reported_aggregate",
+      "interpretation_boundary": "札幌市が『達成見込み』とする403項目中394項目の集約値。個別394目標の達成認定、事業成果、因果効果へ変換しない。"
+    },
+    {
+      "id": "sapporo-2025-progress-cumulative-project-amount",
+      "layer": "annual_progress",
+      "metric": "cumulative_project_amount_2023_2025",
+      "amount_yen": 998300000000,
+      "unit": "yen",
+      "components": [
+        "2023年度決算額",
+        "2024年度決算額",
+        "2025年度予算額（令和7年度第3回定例市議会の補正予算分まで）"
+      ],
+      "review_status": "reviewed_mixed_fiscal_state_aggregate",
+      "interpretation_boundary": "決算2年度と予算1年度を合算した札幌市の進捗管理用集約値。単年度決算、執行額、確定事業費へ再分類・分解しない。"
+    },
+    {
+      "id": "sapporo-2025-progress-project-cost-rate",
+      "layer": "annual_progress",
+      "metric": "reported_project_cost_progress_rate",
+      "value": 55.9,
+      "unit": "percent",
+      "review_status": "reviewed_source_reported_aggregate",
+      "interpretation_boundary": "札幌市が計画事業費1兆7,854億円に対する進捗率として公表した値。Jichi Insight独自の財政進捗評価には変換しない。"
+    }
+  ],
+  "quality_boundary": "This package promotes only aggregate facts explicitly published on Sapporo's official HTML progress page. It does not satisfy the blocking gates for the 26 individual outcome indicators, 403 principal-project targets, or 599 Action Plan projects, and it does not promote independent policy achievement, causal attribution, or cross-city comparability.",
+  "next_action": "Use the official detail PDFs to review individual outcome indicators and project targets at record-level evidence depth. The 599 project catalog remains a separate blocking queue and must not be inferred from aggregate counts."
+}
