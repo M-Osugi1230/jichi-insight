@@ -3,11 +3,14 @@
   "phase": 13,
   "official_code": "041009",
   "name_ja": "仙台市",
-  "status": "summary_score_review_complete",
+  "status": "summary_and_priority_review_complete",
   "reviewed_at": "2026-08-12",
+  "parent_phase13_manifest_path": "data/catalog/sendai_phase13_review_manifest.json",
   "source_index_path": "data/catalog/sendai_survey_2025_source_index.json",
   "summary_score_registry_path": "data/catalog/sendai_survey_2025_summary_scores.json",
   "summary_score_evidence_path": "data/evidence/sendai_survey_2025_summary_scores_evidence.json",
+  "priority_policy_registry_path": "data/catalog/sendai_survey_2025_priority_policy.json",
+  "priority_policy_evidence_path": "data/evidence/sendai_survey_2025_priority_policy_evidence.json",
   "reviewed_scope": {
     "survey_methodology": true,
     "current_state_summary_scores": 8,
@@ -16,16 +19,17 @@
     "summary_score_item_total": 34,
     "response_category_distributions": false,
     "attribute_cross_tabs": false,
-    "priority_policy_multiple_response": false,
+    "priority_policy_multiple_response": 26,
+    "priority_policy_response_mode": "multiple_response_up_to_10",
     "livability_and_attachment_items": false,
     "foreign_resident_items": false,
     "free_text": false
   },
-  "quality_boundary": "The completed scope is limited to official survey methodology and summary evaluation scores. Survey-derived perceptions and evaluations remain separate from administrative performance, policy achievement, budget execution, settlement outcomes, and causal attribution.",
+  "quality_boundary": "The completed scope covers official survey methodology, 34 summary evaluation items, and 26 future-priority multiple-response items. Survey-derived perceptions and citizen-stated priorities remain separate from administrative performance, policy achievement, budget execution, settlement outcomes, causal attribution, and Jichi Insight ranking.",
   "next_actions": [
     "単純集計CSVを用いて、現状8項目と施策26項目の回答区分別件数・構成比・有効母数をレビューする。",
     "クロス集計CSVを用いて属性別差を整理するが、母数が小さい層や比較不能な区分を明示する。",
-    "今後特に力を入れるべき施策、住みやすさ・居住意向・愛着、外国人住民関連項目は別レイヤーとして追加する。",
-    "市民評価と108事業の行政自己評価は自動結合せず、対応関係を別レビューした後にリンクする。"
+    "住みやすさ・居住意向・愛着、外国人住民関連項目を別レイヤーとして追加する。",
+    "市民評価・市民の重点施策選択と108事業の行政自己評価は自動結合せず、対応関係を別レビューした後にリンクする。"
   ]
 }
