@@ -14,13 +14,31 @@ PLAN_PATH = ROOT / "data/reviewed/sendai-city/plan_review.json"
 FISCAL_PATH = ROOT / "data/reviewed/sendai-city/fiscal_records.json"
 FISCAL_EVIDENCE_PATH = ROOT / "data/reviewed/sendai-city/evidence_packets.json"
 SURVEY_SUMMARY_PATH = ROOT / "data/catalog/sendai_survey_2025_summary_scores.json"
-SURVEY_SUMMARY_EVIDENCE_PATH = ROOT / "data/evidence/sendai_survey_2025_summary_scores_evidence.json"
+SURVEY_SUMMARY_EVIDENCE_PATH = (
+    ROOT / "data/evidence/sendai_survey_2025_summary_scores_evidence.json"
+)
 SURVEY_PRIORITY_PATH = ROOT / "data/catalog/sendai_survey_2025_priority_policy.json"
-SURVEY_PRIORITY_EVIDENCE_PATH = ROOT / "data/evidence/sendai_survey_2025_priority_policy_evidence.json"
+SURVEY_PRIORITY_EVIDENCE_PATH = (
+    ROOT / "data/evidence/sendai_survey_2025_priority_policy_evidence.json"
+)
 
 
 def load(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def load_project_evidence_packets(path: Path):
+    payload = load(path)
+    if isinstance(payload, list):
+        return payload
+    return payload["evidence_packets"]
+
+
+def project_evidence_subject_id(packet: dict) -> str:
+    subject_id = packet.get("subject_id")
+    if subject_id is not None:
+        return subject_id
+    return packet["project_id"]
 
 
 def test_sendai_completion_contract_matches_schema_and_paths_exist():
@@ -86,9 +104,9 @@ def test_sendai_completion_evidence_covers_declared_record_packages():
         for record in load(path)["records"]
     }
     project_evidence_ids = {
-        packet["project_id"]
+        project_evidence_subject_id(packet)
         for path in project_evidence_files
-        for packet in load(path)["evidence_packets"]
+        for packet in load_project_evidence_packets(path)
     }
 
     summary = load(SURVEY_SUMMARY_PATH)
@@ -110,6 +128,7 @@ def test_sendai_completion_evidence_covers_declared_record_packages():
     }
 
     assert len(project_evidence_files) == 36
+    assert len(project_evidence_ids) == 108
     assert project_evidence_ids == project_ids
     assert summary_evidence_ids == summary_ids
     assert priority_evidence_ids == priority_ids
