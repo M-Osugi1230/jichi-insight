@@ -1,0 +1,41 @@
+name: Sapporo Outcome Extract
+
+on:
+  push:
+    branches:
+      - phase13-sapporo-outcomes-2025
+
+jobs:
+  extract:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download official Sapporo outcome report
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from urllib.request import Request, urlopen
+
+          url = "https://www.city.sapporo.jp/chosei/documents/ap2023_houkoku2025_seikashihyo.pdf"
+          req = Request(url, headers={"User-Agent": "Mozilla/5.0"})
+          with urlopen(req, timeout=60) as response:
+              data = response.read()
+          path = Path("sapporo2025.pdf")
+          path.write_bytes(data)
+          print(f"downloaded={len(data)} bytes")
+          if not data.startswith(b"%PDF"):
+              raise SystemExit("downloaded payload is not a PDF")
+          PY
+      - name: Extract layout text
+        run: |
+          pdftotext -layout sapporo2025.pdf sapporo2025.txt
+          echo "pages=$(pdfinfo sapporo2025.pdf | awk '/Pages:/ {print $2}')"
+          echo "lines=$(wc -l < sapporo2025.txt)"
+          sed -n '1,260p' sapporo2025.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sapporo-outcome-2025-extraction
+          path: |
+            sapporo2025.txt
+            sapporo2025.pdf
+          retention-days: 1
