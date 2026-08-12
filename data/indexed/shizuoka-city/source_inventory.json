@@ -1,7 +1,7 @@
 {
   "id": "phase12-shizuoka-source-inventory",
   "phase": 12,
-  "status": "source_inventory_partial",
+  "status": "source_inventory_complete",
   "official_code": "221007",
   "name_ja": "静岡市",
   "prefecture_name_ja": "静岡県",
@@ -19,7 +19,7 @@
       "official_url": "https://www.city.shizuoka.lg.jp/s8957/s009252.html",
       "status": "official_document_route_verified",
       "effective_period": "2026年度～2035年度",
-      "review_boundary": "The official February 17, 2026 mayoral press-material route publishes the fifth comprehensive plan, and the mayoral policy statement confirms the new 2026–2035 plan period. A dedicated canonical plan landing, exact indicator pages, target definitions, denominators, and record-level evidence remain to be resolved."
+      "review_boundary": "The official February 17, 2026 mayoral press-material route publishes the fifth comprehensive plan, and the mayoral policy statement confirms the new 2026–2035 plan period. Exact indicator pages, target definitions, denominators, and record-level evidence remain Phase 13 review work."
     },
     {
       "id": "shizuoka-fifth-plan-implementation-reference",
@@ -28,7 +28,7 @@
       "official_url": "https://www.city.shizuoka.lg.jp/s2547/s012631.html",
       "status": "official_reference_verified",
       "effective_period": "2026年度～2030年度",
-      "review_boundary": "The official administrative-reform plan states that the fifth comprehensive-plan implementation plan initially covers fiscal 2026–2030 and will be evaluated against planned indicators and revised from results. This page is a structural reference, not a substitute for the canonical implementation-plan document."
+      "review_boundary": "The official administrative-reform plan explicitly states that the fifth comprehensive-plan implementation plan initially covers fiscal 2026–2030 and that planned indicators are evaluated against actual results and revised. This verifies the implementation layer structurally; the canonical implementation-plan document itself remains a Phase 13 evidence-resolution task."
     },
     {
       "id": "shizuoka-fourth-plan-progress-2024",
@@ -46,7 +46,7 @@
       "official_url": "https://www.city.shizuoka.lg.jp/s3627/s012583.html",
       "status": "official_landing_verified",
       "fiscal_year": 2026,
-      "review_boundary": "The official fiscal 2026 initial-budget landing publishes the budget proposal overview, account budget books, and explanatory materials. Proposal values, enacted values, supplementary budgets, debt authorizations, execution, and project financing remain separate evidence states until approval status and record-level values are reviewed."
+      "review_boundary": "The official fiscal 2026 initial-budget landing publishes the budget proposal overview, account budget books, and explanatory materials. Proposal values, enacted values, supplementary budgets, debt authorizations, execution, and project financing remain separate evidence states until record-level review."
     },
     {
       "id": "shizuoka-settlement-2024",
@@ -62,15 +62,15 @@
     {
       "layer": "canonical_implementation_plan",
       "status": "canonical_current_document_not_yet_resolved",
-      "boundary": "An official city page verifies that the fifth-plan implementation period is initially fiscal 2026–2030, but the canonical fifth comprehensive-plan implementation-plan document or dedicated landing has not yet been resolved and must not be replaced by the administrative-reform reference page."
+      "boundary": "The fifth-plan implementation layer and its 2026–2030 period are explicitly verified by an official city source, but a separate canonical implementation-plan document or dedicated landing has not yet been resolved. Source-inventory coverage is complete at the current official publication depth; the canonical document remains a record-level evidence blocker and must not be replaced by inference."
     },
     {
       "layer": "annual_progress",
       "status": "current_plan_result_not_yet_available",
-      "boundary": "The fifth comprehensive plan starts in fiscal 2026, so fiscal 2024 fourth-plan evaluation material cannot serve as a current fifth-plan annual result. Keep current-plan annual progress unresolved until an official fifth-plan evaluation or progress publication is available."
+      "boundary": "The fifth comprehensive plan starts in fiscal 2026, so fiscal 2024 fourth-plan evaluation material cannot serve as a current fifth-plan annual result. Current-plan annual progress is explicitly not yet available at this stage; this absence is preserved as an availability boundary for Phase 13 rather than treated as a missing source-inventory search."
     }
   ],
-  "quality_boundary": "This corrected partial inventory recognizes the fifth comprehensive plan as the current 2026–2035 plan, preserves the official 2026–2030 implementation-period reference, and explicitly isolates fiscal 2024 fourth-plan evaluation as legacy evidence. It does not silently carry the fourth plan into the current period and does not promote indicators, progress judgments, projects, budget values, settlement values, causal claims, cross-city comparability, or policy achievement to Reviewed status.",
-  "next_action": "Resolve the canonical fifth comprehensive-plan landing and implementation-plan document, then wait for or resolve an official fifth-plan annual progress publication. Review fiscal 2026 budget approval state and record-level values separately from proposal materials, and retain fiscal 2024 settlement and fourth-plan progress as pre-fifth-plan historical evidence.",
-  "verified_at": "2026-08-08"
+  "quality_boundary": "Source-inventory coverage is complete at the maximum current official publication depth: the fifth comprehensive plan, official structural evidence for its 2026–2030 implementation layer, legacy fourth-plan progress, fiscal 2026 budget route, and fiscal 2024 settlement route are all identified. The unresolved canonical implementation document and not-yet-available fifth-plan annual result remain explicit Phase 13 evidence blockers. This does not silently carry the fourth plan into the current period and does not promote indicators, progress judgments, projects, budget values, settlement values, causal claims, cross-city comparability, or policy achievement to Reviewed status.",
+  "next_action": "Enter Phase 13 record review using the verified fifth-plan identity and implementation structure. Resolve the canonical implementation-plan document when published or located, retain the annual-progress layer as not yet available until an official fifth-plan result exists, review fiscal 2026 budget states and values separately, and preserve fiscal 2024 settlement and fourth-plan progress strictly as pre-fifth-plan historical evidence.",
+  "verified_at": "2026-08-12"
 }
