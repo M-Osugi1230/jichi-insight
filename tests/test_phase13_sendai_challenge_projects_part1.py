@@ -109,7 +109,7 @@ def test_sendai_challenge_project_batch_has_one_to_one_evidence():
     )
 
 
-def test_sendai_challenge_project_source_and_manifest_stay_partial():
+def test_sendai_challenge_project_source_and_manifest_track_later_progress():
     sources = {record["id"]: record for record in load(SOURCE_PATH)["records"]}
     source = sources["sendai-city-challenge-project-self-evaluation-2024-report"]
     manifest = load(MANIFEST_PATH)
@@ -121,7 +121,6 @@ def test_sendai_challenge_project_source_and_manifest_stay_partial():
         if fact["id"].startswith("sendai-challenge-project-records-part")
     ]
     cumulative_reviewed = sum(fact["value"] for fact in reviewed_batches)
-    remaining = 108 - cumulative_reviewed
 
     assert source["page_count"] == 126
     assert source["review_status"] == "partial_record_review_in_progress"
@@ -129,6 +128,6 @@ def test_sendai_challenge_project_source_and_manifest_stay_partial():
     assert batch["review_status"] == "reviewed_core_evaluation"
     assert "独自達成スコアへ変換しない" in batch["interpretation_boundary"]
     assert manifest["status"] == "review_in_progress"
-    assert 3 <= cumulative_reviewed < 108
-    assert f"{cumulative_reviewed}事業を個票レビュー済み" in manifest["remaining_work"][0]
-    assert f"残り{remaining}事業" in manifest["remaining_work"][0]
+    assert 3 <= cumulative_reviewed <= 108
+    assert "108/108完了" in manifest["remaining_work"][0]
+    assert "成果値・KPI・実績記述" in manifest["remaining_work"][0]
