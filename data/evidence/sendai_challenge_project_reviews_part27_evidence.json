@@ -1,0 +1,47 @@
+[
+  {
+    "id": "evidence-sendai-challenge-p95-regional-core-company-development",
+    "subject_type": "project",
+    "subject_id": "regional-core-company-development",
+    "claims": [{
+      "field": "project_identity_and_evaluation",
+      "statement": "地域中核企業輩出支援事業は経済局・中小企業支援課所管で、令和6年度の仙台市自己評価は○。",
+      "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+      "location_note": "公式PDF page index 95。事業名・担当・主担当課・進捗状況欄。",
+      "decision": "accepted",
+      "review_note": "○は仙台市の自己評価区分として保持する。集中支援、企業間ネットワーク、人材確保、企業成長等に関する自治体記述を独自の因果評価へ昇格させない。"
+    }],
+    "open_questions": ["支援企業数、各プログラム採択数、シンポジウム参加者数等は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-challenge-p96-diverse-workforce-attraction-retention",
+    "subject_type": "project",
+    "subject_id": "diverse-workforce-attraction-retention",
+    "claims": [{
+      "field": "project_identity_and_evaluation",
+      "statement": "多様な人材の確保・定着事業は経済局・商業・人材支援課所管で、令和6年度の仙台市自己評価は○。",
+      "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+      "location_note": "公式PDF page index 96。事業名・担当・主担当課・進捗状況欄。",
+      "decision": "accepted",
+      "review_note": "○は仙台市の自己評価区分として保持する。就業体験、マッチング、UIJターン、人材定着・組織開発等が人材確保・定着に資するという自治体記述を独自の因果評価へ変換しない。"
+    }],
+    "open_questions": ["イベント回数・参加者数、登録企業数、奨学金返還支援、各人材プログラム実績は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-challenge-p97-sme-market-development-support",
+    "subject_type": "project",
+    "subject_id": "sme-market-development-support",
+    "claims": [{
+      "field": "project_identity_and_evaluation",
+      "statement": "中小企業販路開拓支援事業は経済局・中小企業支援課所管で、令和6年度の仙台市自己評価は△。",
+      "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+      "location_note": "公式PDF page index 97。事業名・担当・主担当課・進捗状況欄。",
+      "decision": "accepted",
+      "review_note": "△は仙台市の自己評価区分として保持する。海外販路開拓に取り組む企業割合が令和8年度KPIの10％を下回ったとの自治体説明に紐づくsource-reported factであり、Jichi Insight独自の低評価へ変換しない。"
+    }],
+    "open_questions": ["DI調査値、助成活用事業者数、商談・売上・販路獲得等の実績は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  }
+]

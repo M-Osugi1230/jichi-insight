@@ -1,0 +1,67 @@
+{
+  "id": "phase13-sendai-challenge-project-reviews-part29",
+  "phase": 13,
+  "official_code": "041009",
+  "name_ja": "仙台市",
+  "reporting_fiscal_year": 2024,
+  "reviewed_at": "2026-08-12",
+  "status": "reviewed_core_evaluation_batch",
+  "source_id": "sendai-city-challenge-project-self-evaluation-2024-report",
+  "source_reported_rating_scale": {
+    "double_circle": "予定を上回る成果が出ている",
+    "circle": "予定どおり進んでいる",
+    "triangle": "一部にやや遅れが出ている",
+    "cross": "遅れている"
+  },
+  "summary": {
+    "prior_reviewed_record_count": 84,
+    "batch_reviewed_record_count": 3,
+    "cumulative_reviewed_record_count": 87,
+    "total_source_project_count": 108,
+    "remaining_record_count": 21,
+    "complete": false
+  },
+  "records": [
+    {
+      "sequence_within_batch": 1,
+      "id": "inbound-mice-promotion",
+      "project_group_ja": "TOHOKU未来プロジェクト",
+      "subsection_ja": "仙台・東北の交流人口拡大",
+      "project_name_ja": "インバウンド・MICE推進事業",
+      "responsible_bureau_ja": "文化観光局",
+      "lead_section_ja": "インバウンド・MICE推進課",
+      "source_pdf_page_index_0_based": 102,
+      "source_reported_evaluation": "circle",
+      "review_status": "reviewed_core_evaluation",
+      "evidence_id": "evidence-sendai-challenge-p102-inbound-mice-promotion"
+    },
+    {
+      "sequence_within_batch": 2,
+      "id": "tohoku-tourism-promotion",
+      "project_group_ja": "TOHOKU未来プロジェクト",
+      "subsection_ja": "仙台・東北の交流人口拡大",
+      "project_name_ja": "東北観光推進事業",
+      "responsible_bureau_ja": "文化観光局",
+      "lead_section_ja": "東北連携推進室",
+      "source_pdf_page_index_0_based": 103,
+      "source_reported_evaluation": "double_circle",
+      "review_status": "reviewed_core_evaluation",
+      "evidence_id": "evidence-sendai-challenge-p103-tohoku-tourism-promotion"
+    },
+    {
+      "sequence_within_batch": 3,
+      "id": "sports-tourism-promotion",
+      "project_group_ja": "TOHOKU未来プロジェクト",
+      "subsection_ja": "仙台・東北の交流人口拡大",
+      "project_name_ja": "スポーツツーリズム推進事業",
+      "responsible_bureau_ja": "文化観光局",
+      "lead_section_ja": "スポーツ振興課",
+      "source_pdf_page_index_0_based": 104,
+      "source_reported_evaluation": "circle",
+      "review_status": "reviewed_core_evaluation",
+      "evidence_id": "evidence-sendai-challenge-p104-sports-tourism-promotion"
+    }
+  ],
+  "quality_boundary": "This batch starts the Sendai and Tohoku visitor-economy subsection with circle, double-circle, and circle ratings preserved as Sendai City source-reported judgments. Source narratives about visitor growth, foreign stays, MICE, economic effects, regional tourism, event attendance, sports events, circulation, or spending are not promoted into a Jichi Insight causal claim, independent achievement score, or cross-city ranking. Cumulative coverage is exactly 87 of 108, leaving 21 records pending.",
+  "next_action": "Continue in official report order with tourism promotion and the remaining visitor-economy projects."
+}

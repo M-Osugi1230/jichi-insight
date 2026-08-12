@@ -1,0 +1,47 @@
+[
+  {
+    "id": "evidence-sendai-challenge-p102-inbound-mice-promotion",
+    "subject_type": "project",
+    "subject_id": "inbound-mice-promotion",
+    "claims": [{
+      "field": "project_identity_and_evaluation",
+      "statement": "インバウンド・MICE推進事業は文化観光局・インバウンド・MICE推進課所管で、令和6年度の仙台市自己評価は○。",
+      "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+      "location_note": "公式PDF page index 102。事業名・担当・主担当課・進捗状況欄。",
+      "decision": "accepted",
+      "review_note": "○は仙台市の自己評価区分として保持する。外国人宿泊者増加、MICE誘致・開催、受入環境整備、回遊促進等に関する自治体記述を独自の因果評価へ昇格させない。"
+    }],
+    "open_questions": ["外国人宿泊者数、コンベンション開催件数、助成・誘致・開催支援等の実績は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-challenge-p103-tohoku-tourism-promotion",
+    "subject_type": "project",
+    "subject_id": "tohoku-tourism-promotion",
+    "claims": [{
+      "field": "project_identity_and_evaluation",
+      "statement": "東北観光推進事業は文化観光局・東北連携推進室所管で、令和6年度の仙台市自己評価は◎。",
+      "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+      "location_note": "公式PDF page index 103。事業名・担当・主担当課・進捗状況欄。",
+      "decision": "accepted",
+      "review_note": "◎は仙台市の自己評価区分として保持する。東北絆まつりの来場者数や経済波及効果、広域連携、周遊促進等が交流人口拡大や地域経済活性化に寄与したという自治体記述を独自の因果評価へ変換しない。"
+    }],
+    "open_questions": ["来場者数、経済波及効果、モデルコース数、イベント・交流会実施回数等は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-challenge-p104-sports-tourism-promotion",
+    "subject_type": "project",
+    "subject_id": "sports-tourism-promotion",
+    "claims": [{
+      "field": "project_identity_and_evaluation",
+      "statement": "スポーツツーリズム推進事業は文化観光局・スポーツ振興課所管で、令和6年度の仙台市自己評価は○。",
+      "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+      "location_note": "公式PDF page index 104。事業名・担当・主担当課・進捗状況欄。",
+      "decision": "accepted",
+      "review_note": "○は仙台市の自己評価区分として保持する。大会誘致・開催支援、デジタルクーポン、スタンプラリー等による交流人口・周遊・消費への効果に関する自治体記述を独自の因果評価へ昇格させない。"
+    }],
+    "open_questions": ["大会数、参加者数、クーポン利用、スタンプラリー等の実績は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  }
+]
