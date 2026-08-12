@@ -5,40 +5,187 @@ on:
     branches:
       - phase13-sapporo-outcomes-2025
 
+permissions:
+  contents: write
+
 jobs:
-  extract:
+  apply-reviewed-data:
+    if: ${{ !contains(github.event.head_commit.message, '[sapporo-data]') }}
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
-      - name: Install PDF tools
-        run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y poppler-utils
-      - name: Download official Sapporo outcome report
+        with:
+          ref: phase13-sapporo-outcomes-2025
+      - name: Write reviewed 2025 outcome layer
         run: |
           python - <<'PY'
+          import json
           from pathlib import Path
-          from urllib.request import Request, urlopen
 
-          url = "https://www.city.sapporo.jp/chosei/documents/ap2023_houkoku2025_seikashihyo.pdf"
-          req = Request(url, headers={"User-Agent": "Mozilla/5.0"})
-          with urlopen(req, timeout=60) as response:
-              data = response.read()
-          Path("sapporo2025.pdf").write_bytes(data)
-          print(f"downloaded={len(data)} bytes")
-          if not data.startswith(b"%PDF"):
-              raise SystemExit("downloaded payload is not a PDF")
+          ROOT = Path('.')
+          source_url = 'https://www.city.sapporo.jp/chosei/documents/ap2023_houkoku2025_seikashihyo.pdf'
+          records = [
+            {"sequence":1,"id":"total_fertility_rate","field":"children_youth","name_ja":"合計特殊出生率","source_page":1,"value_type":"scalar","baseline":{"value":1.08,"unit":"ratio","fiscal_year":2021},"current_actual":{"value":0.96,"unit":"ratio","fiscal_year":2023},"target":{"value":1.3,"unit":"ratio","fiscal_year":2027},"source_trend_classification":"source_reported_down"},
+            {"sequence":2,"id":"young_adult_outmigration_excess","field":"children_youth","name_ja":"20～29歳の道外への転出超過数（日本人のみ）","source_page":1,"value_type":"scalar","baseline":{"value":2135,"unit":"people","fiscal_year":2022},"current_actual":{"value":2650,"unit":"people","fiscal_year":2024},"target":{"value":950,"unit":"people","fiscal_year":2027},"source_trend_classification":"source_reported_down"},
+            {"sequence":3,"id":"parent_support_access","field":"children_youth","name_ja":"18歳以下の子がいて、妊娠・出産や子育てについて相談相手や情報収集手段がある親の割合","source_page":1,"value_type":"scalar","baseline":{"value":86.4,"unit":"percent","fiscal_year":2022},"current_actual":{"value":68.9,"unit":"percent","fiscal_year":2024},"target":{"value":92,"unit":"percent","fiscal_year":2027},"source_trend_classification":"source_reported_down"},
+            {"sequence":4,"id":"childcare_service_access","field":"children_youth","name_ja":"希望に応じた保育サービスが利用できた保護者の割合","source_page":1,"value_type":"scalar","baseline":{"value":80.7,"unit":"percent","fiscal_year":2022},"current_actual":{"value":84.7,"unit":"percent","fiscal_year":2024},"target":{"value":86,"unit":"percent","fiscal_year":2027},"source_trend_classification":"source_reported_up"},
+            {"sequence":5,"id":"children_with_personal_goals","field":"children_youth","name_ja":"自分の目標をもって生活している子どもの割合","source_page":1,"value_type":"scalar","baseline":{"value":71.6,"unit":"percent","fiscal_year":2023},"current_actual":{"value":76.1,"unit":"percent","fiscal_year":2024},"target":{"value":80,"unit":"percent","fiscal_year":2027},"source_trend_classification":"source_reported_up","source_note":"札幌市注記では2023年度からの新規項目。2023年度数値を当初値とし、2024年度から評価。"},
+            {"sequence":6,"id":"perceived_barrier_free_progress","field":"daily_life","name_ja":"まちのバリアフリー化が進んでいると感じる市民の割合","source_page":1,"value_type":"scalar","baseline":{"value":54.9,"unit":"percent","fiscal_year":2022},"current_actual":{"value":55.6,"unit":"percent","fiscal_year":2024},"target":{"value":66,"unit":"percent","fiscal_year":2027},"source_trend_classification":"source_reported_up"},
+            {"sequence":7,"id":"understanding_elderly_disabled","field":"daily_life","name_ja":"高齢者・障がいのある方等の立場を理解して行動ができている人の割合","source_page":1,"value_type":"scalar","baseline":{"value":37.0,"unit":"percent","fiscal_year":2022},"current_actual":{"value":40.4,"unit":"percent","fiscal_year":2024},"target":{"value":55,"unit":"percent","fiscal_year":2027},"source_trend_classification":"source_reported_up"},
+            {"sequence":8,"id":"healthy_life_expectancy","field":"daily_life","name_ja":"市民の健康寿命","source_page":1,"value_type":"composite","dimensions":[{"dimension":"male","baseline":{"value":71.34,"unit":"years","fiscal_year":2016},"current_actual":{"value":72.28,"unit":"years","fiscal_year":2022},"target":{"value":72.72,"unit":"years","fiscal_year":2027}},{"dimension":"female","baseline":{"value":72.89,"unit":"years","fiscal_year":2016},"current_actual":{"value":74.03,"unit":"years","fiscal_year":2022},"target":{"value":74.27,"unit":"years","fiscal_year":2027}}],"source_trend_classification":"source_reported_up"},
+            {"sequence":9,"id":"lifelong_learning_participation","field":"daily_life","name_ja":"生涯学習をしている市民の割合","source_page":1,"value_type":"scalar","baseline":{"value":76.2,"unit":"percent","fiscal_year":2022},"current_actual":{"value":66.1,"unit":"percent","fiscal_year":2024},"target":{"value":78,"unit":"percent","fiscal_year":2027},"source_trend_classification":"source_reported_down"},
+            {"sequence":10,"id":"perceived_digitalization_progress","field":"daily_life","name_ja":"デジタル化が進んでいると実感している市民の割合","source_page":1,"value_type":"scalar","baseline":{"value":50.2,"unit":"percent","fiscal_year":2022},"current_actual":{"value":58.4,"unit":"percent","fiscal_year":2024},"target":{"value":61,"unit":"percent","fiscal_year":2027},"source_trend_classification":"source_reported_up"},
+            {"sequence":11,"id":"single_operator_snow_removal_machines","field":"daily_life","name_ja":"１人乗りが可能な除雪機械台数","source_page":1,"value_type":"scalar","baseline":{"value":175,"unit":"machines","fiscal_year":2022},"current_actual":{"value":210,"unit":"machines","fiscal_year":2024},"target":{"value":390,"unit":"machines","fiscal_year":2027},"source_trend_classification":"source_reported_up"},
+            {"sequence":12,"id":"citizens_feeling_social_role","field":"community","name_ja":"社会的役割を感じる市民の割合","source_page":2,"value_type":"composite","dimensions":[{"dimension":"age_18_64","baseline":{"value":44.4,"unit":"percent","fiscal_year":2022},"current_actual":{"value":47.1,"unit":"percent","fiscal_year":2024},"target":{"value":59,"unit":"percent","fiscal_year":2027}},{"dimension":"age_65_plus","baseline":{"value":40.9,"unit":"percent","fiscal_year":2022},"current_actual":{"value":44.4,"unit":"percent","fiscal_year":2024},"target":{"value":54,"unit":"percent","fiscal_year":2027}}],"source_trend_classification":"source_reported_up"},
+            {"sequence":13,"id":"citizen_machizukuri_participation","field":"community","name_ja":"市民まちづくり活動に参加したことのある人の割合","source_page":2,"value_type":"scalar","baseline":{"value":86.3,"unit":"percent","fiscal_year":2022},"current_actual":{"value":83.8,"unit":"percent","fiscal_year":2024},"target":{"value":90,"unit":"percent","fiscal_year":2027},"source_trend_classification":"source_reported_down"},
+            {"sequence":14,"id":"citizens_prepared_for_disasters","field":"safety_security","name_ja":"災害に対する備えを行っている市民の割合","source_page":2,"value_type":"scalar","baseline":{"value":89.9,"unit":"percent","fiscal_year":2022},"current_actual":{"value":87.5,"unit":"percent","fiscal_year":2024},"target":{"value":100,"unit":"percent","fiscal_year":2027},"source_trend_classification":"source_reported_down"},
+            {"sequence":15,"id":"gdp_per_capita_nominal","field":"economy","name_ja":"人口一人当たりの市内総生産（名目）","source_page":2,"value_type":"scalar","baseline":{"value":386,"unit":"10k_yen_per_person","fiscal_year":2019},"current_actual":{"value":390,"unit":"10k_yen_per_person","fiscal_year":2022},"target":{"value":399,"unit":"10k_yen_per_person","fiscal_year":2027},"source_trend_classification":"source_reported_up"},
+            {"sequence":16,"id":"winter_tourist_count","field":"economy","name_ja":"冬期（12～３月）の観光客数","source_page":2,"value_type":"scalar","baseline":{"value":421,"unit":"10k_people","fiscal_year":2018},"current_actual":{"value":374,"unit":"10k_people","fiscal_year":2024},"target":{"value":451,"unit":"10k_people","fiscal_year":2027},"source_trend_classification":"source_reported_down"},
+            {"sequence":17,"id":"total_tourism_consumption","field":"economy","name_ja":"札幌市内での総観光消費額","source_page":2,"value_type":"scalar","baseline":{"value":5780,"unit":"100m_yen","fiscal_year":2018},"current_actual":{"value":6941,"unit":"100m_yen","fiscal_year":2024},"target":{"value":7211,"unit":"100m_yen","fiscal_year":2027},"source_trend_classification":"source_reported_up"},
+            {"sequence":18,"id":"employment_rate","field":"economy","name_ja":"就業率","source_page":2,"value_type":"unaggregated","baseline":{"value":49,"unit":"percent","fiscal_year":2020},"current_actual":{"status":"unaggregated"},"target":{"value":52,"unit":"percent","fiscal_year":2027},"source_trend_classification":"source_reported_unaggregated"},
+            {"sequence":19,"id":"citizens_doing_sports","field":"sports_culture","name_ja":"スポーツ（運動）をする市民の割合","source_page":3,"value_type":"scalar","baseline":{"value":57.0,"unit":"percent","fiscal_year":2022},"current_actual":{"value":61.4,"unit":"percent","fiscal_year":2024},"target":{"value":70,"unit":"percent","fiscal_year":2027},"source_trend_classification":"source_reported_up"},
+            {"sequence":20,"id":"culture_arts_participation","field":"sports_culture","name_ja":"文化芸術活動への参加割合","source_page":3,"value_type":"scalar","baseline":{"value":81.8,"unit":"percent","fiscal_year":2022},"current_actual":{"value":75.7,"unit":"percent","fiscal_year":2024},"target":{"value":85,"unit":"percent","fiscal_year":2027},"source_trend_classification":"source_reported_down"},
+            {"sequence":21,"id":"daily_walking_minutes","field":"environment","name_ja":"日常生活における１日あたりの歩行時間","source_page":3,"value_type":"scalar","baseline":{"value":60,"unit":"minutes_per_day","fiscal_year":2022},"current_actual":{"value":67,"unit":"minutes_per_day","fiscal_year":2024},"target":{"value":65,"unit":"minutes_per_day","fiscal_year":2027},"source_trend_classification":"source_reported_up"},
+            {"sequence":22,"id":"citywide_ghg_emissions","field":"environment","name_ja":"温室効果ガス排出量","source_page":3,"value_type":"scalar","baseline":{"value":1150,"unit":"10k_t_co2","fiscal_year":2018},"current_actual":{"value":1022,"unit":"10k_t_co2","fiscal_year":2022},"target":{"value":690,"unit":"10k_t_co2","fiscal_year":2027},"source_trend_classification":"source_reported_up"},
+            {"sequence":23,"id":"municipal_facility_ghg_emissions","field":"environment","name_ja":"市有施設等における温室効果ガス排出量","source_page":3,"value_type":"scalar","baseline":{"value":66.0,"unit":"10k_t_co2","fiscal_year":2021},"current_actual":{"value":63.5,"unit":"10k_t_co2","fiscal_year":2023},"target":{"value":44.2,"unit":"10k_t_co2","fiscal_year":2027},"source_trend_classification":"source_reported_up"},
+            {"sequence":24,"id":"waste_resource_collection_satisfaction","field":"environment","name_ja":"ごみや資源回収に関することについて満足している市民の割合","source_page":3,"value_type":"scalar","baseline":{"value":75.4,"unit":"percent","fiscal_year":2022},"current_actual":{"value":77.1,"unit":"percent","fiscal_year":2024},"target":{"value":77,"unit":"percent","fiscal_year":2027},"source_trend_classification":"source_reported_up"},
+            {"sequence":25,"id":"central_city_effective_far","field":"urban_space","name_ja":"都心の区域内実容積率","source_page":3,"value_type":"scalar","baseline":{"value":237.8,"unit":"percent","fiscal_year":2021},"current_actual":{"value":243.2,"unit":"percent","fiscal_year":2023},"target":{"value":255,"unit":"percent","fiscal_year":2027},"source_trend_classification":"source_reported_up"},
+            {"sequence":26,"id":"regional_hub_effective_far","field":"urban_space","name_ja":"地域交流拠点の区域内実容積率","source_page":3,"value_type":"scalar","baseline":{"value":102.0,"unit":"percent","fiscal_year":2021},"current_actual":{"value":102.9,"unit":"percent","fiscal_year":2023},"target":{"value":110,"unit":"percent","fiscal_year":2027},"source_trend_classification":"source_reported_up"}
+          ]
+
+          payload = {
+            "id": "phase13-sapporo-outcome-indicator-2025-report-values",
+            "phase": 13,
+            "official_code": "011002",
+            "name_ja": "札幌市",
+            "reporting_year": 2025,
+            "report_title": "【成果指標】2025年度AP2023進捗報告（2024年度実績）",
+            "source_url": source_url,
+            "reviewed_at": "2026-08-12",
+            "status": "reviewed_current_values_complete",
+            "summary": {
+              "unique_indicator_count": 26,
+              "reviewed_indicator_count": 26,
+              "source_reported_up_count": 17,
+              "source_reported_down_count": 8,
+              "source_reported_unaggregated_count": 1,
+              "reposted_occurrence_count": 7
+            },
+            "records": records,
+            "quality_boundary": "Values and fiscal years are transcribed from the row-level current-value cells of the official three-page 2025 report after excluding seven grey repost occurrences. Source trend arrows are retained as Sapporo City source-reported classifications, not recomputed by Jichi Insight. A value exceeding a numeric target does not become an independent achievement judgment. Decrease-oriented indicators such as greenhouse-gas emissions retain the city's source-reported up classification without reversing or inventing a new score."
+          }
+          out = ROOT / "data/catalog/sapporo_outcome_indicator_2025_report_values.json"
+          out.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+          page_ids = {
+            1: [r["id"] for r in records if r["source_page"] == 1],
+            2: [r["id"] for r in records if r["source_page"] == 2],
+            3: [r["id"] for r in records if r["source_page"] == 3],
+          }
+          evidence = {
+            "id": "phase13-sapporo-outcome-indicator-2025-report-values-evidence",
+            "phase": 13,
+            "official_code": "011002",
+            "name_ja": "札幌市",
+            "reviewed_at": "2026-08-12",
+            "source": {
+              "source_id": "sapporo-action-plan-2023-outcomes-2025-report",
+              "title": "【成果指標】2025年度AP2023進捗報告（2024年度実績）",
+              "url": source_url,
+              "page_count": 3,
+              "review_method": "visual_page_review_of_200dpi_rendered_official_pdf"
+            },
+            "reviewed_indicator_count": 26,
+            "page_evidence": [
+              {"source_page": p, "evidence_status": "reviewed", "indicator_ids": ids}
+              for p, ids in page_ids.items()
+            ],
+            "repost_boundary": {
+              "displayed_occurrence_count": 33,
+              "unique_indicator_count": 26,
+              "reposted_occurrence_count": 7,
+              "reposted_indicator_ids": [
+                "understanding_elderly_disabled",
+                "perceived_digitalization_progress",
+                "young_adult_outmigration_excess",
+                "healthy_life_expectancy",
+                "winter_tourist_count",
+                "perceived_barrier_free_progress",
+                "daily_walking_minutes"
+              ]
+            },
+            "quality_boundary": "Each unique indicator is assigned to exactly one first-occurrence source page in the official 2025 PDF. Grey repost rows are evidence of repeated display only and are excluded from the 26-record denominator. Values, units, measurement fiscal years and arrows are preserved as printed; no policy achievement, causality or cross-city comparability is inferred."
+          }
+          (ROOT / "data/evidence/sapporo_outcome_indicator_2025_report_values_evidence.json").write_text(
+              json.dumps(evidence, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+          )
+
+          registry_path = ROOT / "data/catalog/sapporo_outcome_indicator_registry.json"
+          registry = json.loads(registry_path.read_text(encoding="utf-8"))
+          registry["status"] = "identity_prior_and_current_value_review_complete"
+          registry["reviewed_at"] = "2026-08-12"
+          registry["current_value_source"]["review_status"] = "reviewed_record_level_value_alignment"
+          registry["current_value_review"] = {
+            "status": "reviewed",
+            "reviewed_count": 26,
+            "record_path": "data/catalog/sapporo_outcome_indicator_2025_report_values.json",
+            "evidence_path": "data/evidence/sapporo_outcome_indicator_2025_report_values_evidence.json",
+            "boundary": "The 2025 report is reviewed at row level. Each current value keeps the fiscal year printed in its row; not every current cell measures fiscal 2024."
+          }
+          registry["summary"]["current_value_reviewed_count"] = 26
+          for record in registry["records"]:
+              record["current_value_review_status"] = "reviewed"
+          registry["quality_boundary"] = "The canonical identity layer covers 26 unique outcome indicators after removing seven reposted occurrences from 33 field-level rows. Both the 2024 prior-report values and the 2025 current-report row values are reviewed in separate value files. Each value retains the fiscal year printed in the official row, so reporting year and measurement fiscal year are not collapsed. Source trend arrows remain Sapporo City classifications and are not Jichi Insight achievement judgments."
+          registry_path.write_text(json.dumps(registry, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+          source_path = ROOT / "data/catalog/sapporo_policy_sources.json"
+          sources = json.loads(source_path.read_text(encoding="utf-8"))
+          sources["updated_at"] = "2026-08-12"
+          current = next(r for r in sources["records"] if r["id"] == "sapporo-action-plan-2023-outcomes-2025-report")
+          current["review_status"] = "reviewed_for_indicator_current_values"
+          current["confidence"] = "high"
+          current["notes"] = "公式3ページPDFを200dpi画像化して行単位レビュー。33表示行から灰色再掲7件を除く26ユニーク指標の現状値・実測年度・目標値・札幌市の傾向矢印をReviewed化し、17上昇・8下降・1未集計の公式集計と一致を確認。"
+          source_path.write_text(json.dumps(sources, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+          manifest_path = ROOT / "data/catalog/sapporo_phase13_policy_review_manifest.json"
+          manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+          manifest["reviewed_at"] = "2026-08-12"
+          manifest["reviewed_facts"] = [f for f in manifest["reviewed_facts"] if f["id"] != "outcome-indicator-current-values-2025-report"]
+          manifest["reviewed_facts"].append({
+            "id": "outcome-indicator-current-values-2025-report",
+            "layer": "annual_progress",
+            "field": "reviewed_current_outcome_indicator_count",
+            "value": 26,
+            "unit": "indicators",
+            "reporting_year": 2025,
+            "source_id": "sapporo-action-plan-2023-outcomes-2025-report",
+            "registry_path": "data/catalog/sapporo_outcome_indicator_2025_report_values.json",
+            "evidence_path": "data/evidence/sapporo_outcome_indicator_2025_report_values_evidence.json",
+            "review_status": "reviewed",
+            "location_note": "公式3ページPDFの33表示行を画像レビューし、灰色再掲7件を除く26ユニーク指標について現状値・実測年度・目標値・札幌市の傾向矢印を行単位で接続。",
+            "interpretation_boundary": "26件の現状値は各行に印刷された実測年度を保持するため、すべてを2024年度値とは扱わない。傾向矢印は札幌市のsource-reported classificationであり、Jichi Insight独自達成スコアや因果効果へ変換しない。"
+          })
+          manifest["quality_boundary"] = "実施計画の期間・事業数・計画事業費、599事業を確認する公式資料10本の資料単位索引、分野4「安全・安心」の4事業のコア項目、2025年度進捗報告の集計値、成果指標33表示行から再掲7件を除いた26ユニーク指標の正式名称・公式表順・掲載ページ、2024年度報告の前年値26件、さらに2025年度報告の現状値・実測年度・目標値・source-reported傾向26件をReviewed化した。最新報告の26件は17上昇・8下降・1未集計の公式集計と整合する。各行の実測年度を保持し、すべてを2024年度値へ平準化しない。4事業のレビューは残ページ・分野内総数・599事業全体での通し順・年度実績との接続を意味しない。資料別事業数や第3章資料の599事業分母への包含関係も未確定とし、市の自己評価・傾向表現を独自の政策達成判定、因果推論、他都市比較には使用しない。"
+          manifest["remaining_work"] = [
+            "第2次戦略ビジョン本体の政策目標・成果指標をページ単位でレビューする。",
+            "アクションプラン2023の公式資料10本の資料単位索引は完了し、分野4「安全・安心」の4事業をコア項目までReviewed化した。次に印刷ページ81以降を順にレビューし、その後ほか7分野へ展開して個別599事業のカバー率を上げ、第3章資料が599事業分母へ含まれる範囲もレコード単位で確定する。",
+            "成果指標26項目の正式名称、2024年度報告の前年値26件、2025年度報告の最新行26件はレビュー完了。次に主な事業403項目をレコード単位でレビューし、年度進捗と計画事業を安全に接続する。",
+            "財政レコードとの事業単位リンクは名称・年度・会計状態を照合した後に別工程で行う。"
+          ]
+          manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
           PY
-      - name: Render report pages
+      - name: Commit reviewed data
         run: |
-          echo "pages=$(pdfinfo sapporo2025.pdf | awk '/Pages:/ {print $2}')"
-          mkdir -p rendered
-          pdftoppm -png -r 200 sapporo2025.pdf rendered/page >/dev/null
-          ls -lh rendered
-      - uses: actions/upload-artifact@v4
-        with:
-          name: sapporo-outcome-2025-rendered
-          path: |
-            rendered/*.png
-            sapporo2025.pdf
-          retention-days: 1
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/catalog/sapporo_outcome_indicator_2025_report_values.json \
+                  data/evidence/sapporo_outcome_indicator_2025_report_values_evidence.json \
+                  data/catalog/sapporo_outcome_indicator_registry.json \
+                  data/catalog/sapporo_policy_sources.json \
+                  data/catalog/sapporo_phase13_policy_review_manifest.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "feat: review Sapporo 2025 outcome values [sapporo-data]"
+          git push origin HEAD:phase13-sapporo-outcomes-2025
