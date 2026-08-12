@@ -1,6 +1,6 @@
 {
   "version": "0.3.0",
-  "updated_at": "2026-08-11",
+  "updated_at": "2026-08-12",
   "scope": "phase13_sapporo_policy_review",
   "records": [
     {
@@ -60,9 +60,9 @@
       "reporting_year": 2025,
       "measurement_fiscal_year": 2024,
       "page_count": 3,
-      "review_status": "aggregate_reviewed_record_values_pending",
-      "confidence": "high_for_source_and_aggregate_pending_for_rows",
-      "notes": "公式進捗ページから最新成果指標PDFとして確認。公式HTMLでは26項目中17上昇・8下降・1未集計。PDFは現行取得経路で行テキストを安定抽出できないため、個別2024年度実績値と矢印は推測せずpendingとする。"
+      "review_status": "reviewed_for_indicator_current_values",
+      "confidence": "high",
+      "notes": "公式3ページPDFを200dpi画像化して行単位レビュー。33表示行から灰色再掲7件を除く26ユニーク指標の現状値・実測年度・目標値・札幌市の傾向矢印をReviewed化し、17上昇・8下降・1未集計の公式集計と一致を確認。"
     },
     {
       "id": "sapporo-action-plan-2023-projects-safety-security",
