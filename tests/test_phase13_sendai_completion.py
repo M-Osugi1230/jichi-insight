@@ -118,7 +118,11 @@ def test_sendai_completion_evidence_covers_declared_record_packages():
     summary_evidence_ids = {
         packet["subject_id"] for packet in load(SURVEY_SUMMARY_EVIDENCE_PATH)
     }
-    priority_ids = {item["id"] for item in load(SURVEY_PRIORITY_PATH)["items"]}
+    priority = load(SURVEY_PRIORITY_PATH)
+    priority_ids = {
+        f"sendai-survey-priority-{item['policy_code']}"
+        for item in priority["items"]
+    }
     priority_evidence_ids = {
         packet["subject_id"] for packet in load(SURVEY_PRIORITY_EVIDENCE_PATH)
     }
