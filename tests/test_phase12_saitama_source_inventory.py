@@ -70,7 +70,7 @@ def test_saitama_preserves_version_and_fiscal_boundaries():
     assert settlement["fiscal_year"] == 2024
 
 
-def test_queue_advances_after_saitama_completion():
+def test_saitama_remains_complete_after_phase12_queue_completion():
     queue_validator = Draft202012Validator(
         load(QUEUE_SCHEMA_PATH), format_checker=FormatChecker()
     )
@@ -84,9 +84,9 @@ def test_queue_advances_after_saitama_completion():
     )
     assert queue["summary"]["source_inventory_complete_count"] == sum(
         item["status"] == "source_inventory_complete" for item in cities
-    )
+    ) == 18
     assert queue["summary"]["source_inventory_partial_count"] == sum(
         item["status"] == "source_inventory_partial" for item in cities
-    )
+    ) == 0
     assert queue["summary"]["pending_city_count"] == 0
-    assert queue["summary"]["next_official_code"] == "221007"
+    assert queue["summary"]["next_official_code"] is None
