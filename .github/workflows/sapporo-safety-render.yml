@@ -29,14 +29,14 @@ jobs:
           if not data.startswith(b"%PDF"):
               raise SystemExit("downloaded payload is not a PDF")
           PY
-      - name: Render remaining printed pages 81-88
+      - name: Render complete field document
         run: |
           echo "pages=$(pdfinfo safety.pdf | awk '/Pages:/ {print $2}')"
           mkdir -p rendered
-          pdftoppm -png -r 220 -f 3 -l 10 safety.pdf rendered/page >/dev/null
+          pdftoppm -png -r 220 safety.pdf rendered/page >/dev/null
           ls -lh rendered
       - uses: actions/upload-artifact@v4
         with:
-          name: sapporo-safety-pages-81-88
+          name: sapporo-safety-pages-79-88
           path: rendered/*.png
           retention-days: 1
