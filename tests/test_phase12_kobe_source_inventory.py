@@ -17,15 +17,15 @@ def load(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def test_kobe_inventory_matches_schema():
+def test_kobe_inventory_matches_complete_schema():
     validator = Draft202012Validator(load(SCHEMA_PATH), format_checker=FormatChecker())
     assert list(validator.iter_errors(load(INVENTORY_PATH))) == []
 
 
-def test_kobe_current_plan_has_implementation_but_no_invented_result():
+def test_kobe_current_plan_has_implementation_and_progress_governance():
     inventory = load(INVENTORY_PATH)
     assert inventory["official_code"] == "281000"
-    assert inventory["status"] == "source_inventory_partial"
+    assert inventory["status"] == "source_inventory_complete"
     assert inventory["plan_period"] == {
         "start_fiscal_year": 2026,
         "end_fiscal_year": 2035,
@@ -48,7 +48,16 @@ def test_kobe_current_plan_has_implementation_but_no_invented_result():
     assert "no current-plan annual result is inferred" in governance["review_boundary"]
 
 
-def test_kobe_queue_entry_is_partial_and_counts_are_consistent():
+def test_kobe_complete_inventory_preserves_not_yet_published_result_boundary():
+    inventory = load(INVENTORY_PATH)
+    unresolved = inventory["unresolved_layers"][0]
+    assert unresolved["status"] == "current_plan_first_annual_result_not_yet_published"
+    assert "Source-inventory coverage is complete" in unresolved["boundary"]
+    assert "Phase 13" in unresolved["boundary"]
+    assert "Source-inventory coverage is complete" in inventory["quality_boundary"]
+
+
+def test_kobe_queue_entry_is_complete_and_counts_are_consistent():
     queue = load(QUEUE_PATH)
     city = next(
         item for item in queue["execution_queue"] if item["official_code"] == "281000"
@@ -58,7 +67,7 @@ def test_kobe_queue_entry_is_partial_and_counts_are_consistent():
         "official_code": "281000",
         "name_ja": "神戸市",
         "prefecture_name_ja": "兵庫県",
-        "status": "source_inventory_partial",
+        "status": "source_inventory_complete",
         "inventory_path": "data/indexed/kobe-city/source_inventory.json",
     }
     statuses = [item["status"] for item in queue["execution_queue"]]
