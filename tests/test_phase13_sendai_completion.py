@@ -86,9 +86,9 @@ def test_sendai_completion_evidence_covers_declared_record_packages():
         for record in load(path)["records"]
     }
     project_evidence_ids = {
-        packet["subject_id"]
+        packet["project_id"]
         for path in project_evidence_files
-        for packet in load(path)
+        for packet in load(path)["evidence_packets"]
     }
 
     summary = load(SURVEY_SUMMARY_PATH)
