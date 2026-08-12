@@ -1,0 +1,46 @@
+name: Sapporo Safety Manifest Fix
+
+on:
+  push:
+    branches:
+      - phase13-sapporo-safety-security-complete
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    if: ${{ !contains(github.event.head_commit.message, '[manifest-fix]') }}
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: phase13-sapporo-safety-security-complete
+      - name: Restore cumulative review boundaries
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path('data/catalog/sapporo_phase13_policy_review_manifest.json')
+          data = json.loads(path.read_text(encoding='utf-8'))
+          facts = {fact['id']: fact for fact in data['reviewed_facts']}
+
+          facts['action-plan-safety-security-project-records-part1']['interpretation_boundary'] = (
+              'このpart1は印刷80ページの最初の4事業を記録した履歴バッチである。後続レビューにより同PDF全体は70事業まで完了しており、現在の分野完了状態はaction-plan-safety-security-project-records-completeを正本とする。事業内容欄、599事業全体での通し順、年度進捗との接続はこのpart1から推論しない。'
+          )
+          facts['outcome-indicator-identity-registry']['interpretation_boundary'] = (
+              'このレビューで確定した26指標のID・正式名称・公式表順を正本とし、2024年度報告の前年値26件と2025年度報告の最新行26件はそれぞれ別レイヤーでレビュー済み。報告年と各行の実測年度を混同せず、札幌市の傾向区分をJichi Insight独自達成評価へ変換しない。'
+          )
+          data['quality_boundary'] = (
+              '実施計画の期間・計画事業数599・計画事業費、公式資料10本の索引、分野4「安全・安心」PDF全10ページと70事業、2024年度報告の成果指標前年値26件、2025年度報告の成果指標最新行26件をReviewed化した。最新報告の26件は17上昇・8下降・1未集計の公式集計と整合する。安全・安心70件は主な事業43件とその他27件で公開項目の粒度が異なり、後者に事業目標を推測補完しない。安全・安心分野が完了しても599事業全体、第3章資料の分母包含、年度進捗403項目との接続は未完了である。各行の実測年度を保持し、市の自己評価・傾向表現をJichi Insight独自の政策達成判定、因果推論、他都市比較には使用しない。'
+          )
+          path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          PY
+      - name: Commit manifest consistency fix
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/catalog/sapporo_phase13_policy_review_manifest.json
+          git commit -m "fix: preserve cumulative Sapporo review boundaries [manifest-fix]"
+          git push origin HEAD:phase13-sapporo-safety-security-complete
