@@ -12,8 +12,8 @@
     "promotion_target": {"const": "reviewed"},
     "quality_gate": {"type": "array", "minItems": 9, "uniqueItems": true, "items": {"type": "string", "minLength": 60}},
     "reference_implementations": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"$ref": "#/$defs/reference"}},
-    "execution_queue": {"type": "array", "minItems": 13, "maxItems": 13, "items": {"$ref": "#/$defs/queuedCity"}},
-    "blocked_source_inventories": {"type": "array", "minItems": 5, "maxItems": 5, "items": {"$ref": "#/$defs/blockedCity"}},
+    "execution_queue": {"type": "array", "minItems": 18, "maxItems": 18, "items": {"$ref": "#/$defs/queuedCity"}},
+    "blocked_source_inventories": {"type": "array", "maxItems": 0, "items": {"$ref": "#/$defs/blockedCity"}},
     "summary": {
       "type": "object",
       "additionalProperties": false,
@@ -21,11 +21,11 @@
       "properties": {
         "designated_city_count": {"const": 20},
         "reviewed_reference_count": {"const": 2},
-        "eligible_review_queue_count": {"const": 13},
-        "blocked_source_inventory_count": {"const": 5},
-        "reviewed_complete_count": {"type": "integer", "minimum": 0, "maximum": 13},
-        "review_in_progress_count": {"type": "integer", "minimum": 0, "maximum": 13},
-        "pending_record_review_count": {"type": "integer", "minimum": 0, "maximum": 13},
+        "eligible_review_queue_count": {"const": 18},
+        "blocked_source_inventory_count": {"const": 0},
+        "reviewed_complete_count": {"type": "integer", "minimum": 0, "maximum": 18},
+        "review_in_progress_count": {"type": "integer", "minimum": 0, "maximum": 18},
+        "pending_record_review_count": {"type": "integer", "minimum": 0, "maximum": 18},
         "next_official_code": {"type": "string", "pattern": "^[0-9]{6}$"}
       }
     },
@@ -48,7 +48,7 @@
       "additionalProperties": false,
       "required": ["sequence", "official_code", "name_ja", "prefecture_name_ja", "status", "source_inventory_path"],
       "properties": {
-        "sequence": {"type": "integer", "minimum": 1, "maximum": 13},
+        "sequence": {"type": "integer", "minimum": 1, "maximum": 18},
         "official_code": {"type": "string", "pattern": "^[0-9]{6}$"},
         "name_ja": {"type": "string", "minLength": 2},
         "prefecture_name_ja": {"type": "string", "minLength": 3},
