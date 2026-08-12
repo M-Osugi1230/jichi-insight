@@ -13,6 +13,7 @@ EVIDENCE_PATH = REVIEWED_DIR / "evidence_packets.json"
 PLAN_PATH = REVIEWED_DIR / "plan_review.json"
 SOURCE_PATH = ROOT / "data/catalog/sendai_phase13_sources.json"
 MANIFEST_PATH = ROOT / "data/catalog/sendai_phase13_review_manifest.json"
+COMPLETION_PATH = ROOT / "data/catalog/sendai_phase13_completion.json"
 QUEUE_PATH = ROOT / "data/catalog/phase13_designated_city_review_queue.json"
 MUNICIPALITY_SCHEMA_PATH = ROOT / "schemas/municipality.schema.json"
 FISCAL_SCHEMA_PATH = ROOT / "schemas/fiscal_record.schema.json"
@@ -115,7 +116,7 @@ def test_sendai_plan_review_preserves_plan_layers_and_survey_methodology():
     records = {record["id"]: record for record in plan["records"]}
 
     assert plan["official_code"] == "041009"
-    assert plan["review_status"] == "review_in_progress"
+    assert plan["review_status"] == "reviewed_at_declared_depth"
     assert records["sendai-basic-plan-period"]["value"] == "2021年度～2030年度"
     assert records["sendai-implementation-plan-period"]["value"] == (
         "2024年度～2026年度"
@@ -132,6 +133,7 @@ def test_sendai_plan_review_preserves_plan_layers_and_survey_methodology():
     assert responses["value"] == 2794
     assert responses["reported_rate_percent"] == 46.8
     assert "再計算しない" in responses["review_note"]
+    assert "complete at the declared Phase 13 v1 depth" in plan["quality_boundary"]
 
 
 def test_sendai_source_reported_self_evaluation_is_exact_and_bounded():
@@ -154,27 +156,35 @@ def test_sendai_source_reported_self_evaluation_is_exact_and_bounded():
     ]
 
 
-def test_sendai_manifest_and_phase13_queue_record_review_in_progress():
-    manifest = load(MANIFEST_PATH)
+def test_sendai_history_manifest_and_completion_contract_preserve_both_states():
+    history = load(MANIFEST_PATH)
+    completion = load(COMPLETION_PATH)
     queue = load(QUEUE_PATH)
     sendai = next(
         item for item in queue["execution_queue"] if item["official_code"] == "041009"
     )
     statuses = [item["status"] for item in queue["execution_queue"]]
-    facts = {fact["id"]: fact for fact in manifest["reviewed_facts"]}
+    facts = {fact["id"]: fact for fact in history["reviewed_facts"]}
     challenge_batches = [
         fact
-        for fact in manifest["reviewed_facts"]
+        for fact in history["reviewed_facts"]
         if fact["id"].startswith("sendai-challenge-project-records-part")
     ]
     cumulative_reviewed = sum(fact["value"] for fact in challenge_batches)
     remaining = 108 - cumulative_reviewed
 
-    assert manifest["status"] == "review_in_progress"
-    assert sendai["status"] == "review_in_progress"
+    assert history["status"] == "review_in_progress"
+    assert completion["review_package"]["review_history_manifest_path"] == (
+        "data/catalog/sendai_phase13_review_manifest.json"
+    )
+    assert completion["status"] == "reviewed_complete"
+    assert sendai["status"] == "reviewed_complete"
+    assert queue["summary"]["reviewed_complete_count"] == statuses.count(
+        "reviewed_complete"
+    ) == 1
     assert queue["summary"]["review_in_progress_count"] == statuses.count(
         "review_in_progress"
-    ) == 2
+    ) == 1
     assert queue["summary"]["pending_record_review_count"] == statuses.count(
         "pending_record_review"
     ) == 16
@@ -188,6 +198,7 @@ def test_sendai_manifest_and_phase13_queue_record_review_in_progress():
         619_037_397_835
     )
     assert facts["sendai-challenge-project-records-part1"]["value"] == 3
-    assert cumulative_reviewed >= 3
-    assert f"{cumulative_reviewed}事業を個票レビュー済み" in manifest["remaining_work"][0]
-    assert f"残り{remaining}事業" in manifest["remaining_work"][0]
+    assert cumulative_reviewed == 108
+    assert remaining == 0
+    assert f"{cumulative_reviewed}事業を個票レビュー済み" in history["remaining_work"][0]
+    assert f"残り{remaining}事業" in history["remaining_work"][0]
