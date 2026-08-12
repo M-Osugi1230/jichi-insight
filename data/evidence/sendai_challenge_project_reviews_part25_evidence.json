@@ -1,0 +1,47 @@
+[
+  {
+    "id": "evidence-sendai-challenge-p87-active-lifestyle-promotion",
+    "subject_type": "project",
+    "subject_id": "active-lifestyle-promotion",
+    "claims": [{
+      "field": "project_identity_and_evaluation",
+      "statement": "アクティブライフスタイル推進事業は文化観光局・スポーツ振興課所管で、令和6年度の仙台市自己評価は○。",
+      "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+      "location_note": "公式PDF page index 87。事業名・担当・主担当課・進捗状況欄。",
+      "decision": "accepted",
+      "review_note": "○は仙台市の自己評価区分として保持する。イベント参加、情報発信、スポーツ体験等が運動実施率や健康増進につながったという自治体記述を独自の因果評価へ昇格させない。"
+    }],
+    "open_questions": ["イベント参加者数、アプリ登録者数、親子スポーツ体験参加者数等は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-challenge-p88-emergency-demand-medical-system",
+    "subject_type": "project",
+    "subject_id": "emergency-demand-medical-system",
+    "claims": [{
+      "field": "project_identity_and_evaluation",
+      "statement": "救急需要対策・医療提供体制構築事業は健康福祉局・消防局が担当し、主担当課は健康福祉局医療政策課・消防局救急企画課、令和6年度の仙台市自己評価は○。",
+      "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+      "location_note": "公式PDF page index 88。事業名・担当・主担当課・進捗状況欄。",
+      "decision": "accepted",
+      "review_note": "○は仙台市の自己評価区分として保持する。救急隊運用、病院間連携、救急車利用啓発、在宅医療検討等による効果に関する自治体記述を独自の因果評価へ変換しない。"
+    }],
+    "open_questions": ["病院収容時間、参加病院数、転院患者数、救命講習受講者数等は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-challenge-p90-research-complex-promotion",
+    "subject_type": "project",
+    "subject_id": "research-complex-promotion",
+    "claims": [{
+      "field": "project_identity_and_evaluation",
+      "statement": "リサーチコンプレックス形成推進事業は経済局・イノベーション企画課・産業集積推進課所管で、令和6年度の仙台市自己評価は△。",
+      "source_ids": ["sendai-city-challenge-project-self-evaluation-2024-report"],
+      "location_note": "公式PDF page index 90。事業名・担当・主担当課・進捗状況欄。",
+      "decision": "accepted",
+      "review_note": "△は仙台市の自己評価区分として保持する。地場企業のナノテラス利用が測定に至りにくいとの自治体説明に紐づくsource-reported factであり、Jichi Insight独自の低評価へ変換しない。"
+    }],
+    "open_questions": ["賃料補助、助成金、相談団体数、測定時間、トライアルユース等の実績は別レコードでレビューする。"],
+    "review_status": "reviewed"
+  }
+]

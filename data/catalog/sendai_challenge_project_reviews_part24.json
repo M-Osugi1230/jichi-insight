@@ -1,0 +1,67 @@
+{
+  "id": "phase13-sendai-challenge-project-reviews-part24",
+  "phase": 13,
+  "official_code": "041009",
+  "name_ja": "仙台市",
+  "reporting_fiscal_year": 2024,
+  "reviewed_at": "2026-08-12",
+  "status": "reviewed_core_evaluation_batch",
+  "source_id": "sendai-city-challenge-project-self-evaluation-2024-report",
+  "source_reported_rating_scale": {
+    "double_circle": "予定を上回る成果が出ている",
+    "circle": "予定どおり進んでいる",
+    "triangle": "一部にやや遅れが出ている",
+    "cross": "遅れている"
+  },
+  "summary": {
+    "prior_reviewed_record_count": 69,
+    "batch_reviewed_record_count": 3,
+    "cumulative_reviewed_record_count": 72,
+    "total_source_project_count": 108,
+    "remaining_record_count": 36,
+    "complete": false
+  },
+  "records": [
+    {
+      "sequence_within_batch": 1,
+      "id": "housing-policy-promotion",
+      "project_group_ja": "ライフデザインプロジェクト",
+      "subsection_ja": "自分らしい暮らしの実現につながる環境づくり",
+      "project_name_ja": "住宅政策推進事業",
+      "responsible_bureau_ja": "都市整備局",
+      "lead_section_ja": "住宅政策課",
+      "source_pdf_page_index_0_based": 83,
+      "source_reported_evaluation": "circle",
+      "review_status": "reviewed_core_evaluation",
+      "evidence_id": "evidence-sendai-challenge-p83-housing-policy-promotion"
+    },
+    {
+      "sequence_within_batch": 2,
+      "id": "citizen-health-promotion",
+      "project_group_ja": "ライフデザインプロジェクト",
+      "subsection_ja": "誰もがいきいきと輝くための健康づくり",
+      "project_name_ja": "市民健康づくり推進事業",
+      "responsible_bureau_ja": "健康福祉局・各区",
+      "lead_section_ja": "健康福祉局　健康政策課",
+      "source_pdf_page_index_0_based": 85,
+      "source_reported_evaluation": "circle",
+      "review_status": "reviewed_core_evaluation",
+      "evidence_id": "evidence-sendai-challenge-p85-citizen-health-promotion"
+    },
+    {
+      "sequence_within_batch": 3,
+      "id": "care-frailty-prevention",
+      "project_group_ja": "ライフデザインプロジェクト",
+      "subsection_ja": "誰もがいきいきと輝くための健康づくり",
+      "project_name_ja": "介護・フレイル予防推進事業",
+      "responsible_bureau_ja": "健康福祉局・各区",
+      "lead_section_ja": "健康福祉局　地域包括ケア推進課",
+      "source_pdf_page_index_0_based": 86,
+      "source_reported_evaluation": "double_circle",
+      "review_status": "reviewed_core_evaluation",
+      "evidence_id": "evidence-sendai-challenge-p86-care-frailty-prevention"
+    }
+  ],
+  "quality_boundary": "This batch closes the remaining self-directed-living project and starts the health-promotion subsection. The circle, circle, and double-circle ratings remain Sendai City source-reported judgments. Source narratives about housing circulation, youth settlement, health behavior, prevention, frailty outreach, participation, or target attainment are not promoted into a Jichi Insight causal claim or achievement score. Cumulative coverage is exactly 72 of 108, leaving 36 records pending.",
+  "next_action": "Continue in official report order with the remaining health-promotion projects."
+}

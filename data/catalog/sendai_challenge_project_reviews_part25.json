@@ -1,0 +1,67 @@
+{
+  "id": "phase13-sendai-challenge-project-reviews-part25",
+  "phase": 13,
+  "official_code": "041009",
+  "name_ja": "仙台市",
+  "reporting_fiscal_year": 2024,
+  "reviewed_at": "2026-08-12",
+  "status": "reviewed_core_evaluation_batch",
+  "source_id": "sendai-city-challenge-project-self-evaluation-2024-report",
+  "source_reported_rating_scale": {
+    "double_circle": "予定を上回る成果が出ている",
+    "circle": "予定どおり進んでいる",
+    "triangle": "一部にやや遅れが出ている",
+    "cross": "遅れている"
+  },
+  "summary": {
+    "prior_reviewed_record_count": 72,
+    "batch_reviewed_record_count": 3,
+    "cumulative_reviewed_record_count": 75,
+    "total_source_project_count": 108,
+    "remaining_record_count": 33,
+    "complete": false
+  },
+  "records": [
+    {
+      "sequence_within_batch": 1,
+      "id": "active-lifestyle-promotion",
+      "project_group_ja": "ライフデザインプロジェクト",
+      "subsection_ja": "誰もがいきいきと輝くための健康づくり",
+      "project_name_ja": "アクティブライフスタイル推進事業",
+      "responsible_bureau_ja": "文化観光局",
+      "lead_section_ja": "スポーツ振興課",
+      "source_pdf_page_index_0_based": 87,
+      "source_reported_evaluation": "circle",
+      "review_status": "reviewed_core_evaluation",
+      "evidence_id": "evidence-sendai-challenge-p87-active-lifestyle-promotion"
+    },
+    {
+      "sequence_within_batch": 2,
+      "id": "emergency-demand-medical-system",
+      "project_group_ja": "ライフデザインプロジェクト",
+      "subsection_ja": "誰もがいきいきと輝くための健康づくり",
+      "project_name_ja": "救急需要対策・医療提供体制構築事業",
+      "responsible_bureau_ja": "健康福祉局・消防局",
+      "lead_section_ja": "健康福祉局　医療政策課／消防局　救急企画課",
+      "source_pdf_page_index_0_based": 88,
+      "source_reported_evaluation": "circle",
+      "review_status": "reviewed_core_evaluation",
+      "evidence_id": "evidence-sendai-challenge-p88-emergency-demand-medical-system"
+    },
+    {
+      "sequence_within_batch": 3,
+      "id": "research-complex-promotion",
+      "project_group_ja": "TOHOKU未来プロジェクト",
+      "subsection_ja": "イノベーション創出の促進",
+      "project_name_ja": "リサーチコンプレックス形成推進事業",
+      "responsible_bureau_ja": "経済局",
+      "lead_section_ja": "イノベーション企画課・産業集積推進課",
+      "source_pdf_page_index_0_based": 90,
+      "source_reported_evaluation": "triangle",
+      "review_status": "reviewed_core_evaluation",
+      "evidence_id": "evidence-sendai-challenge-p90-research-complex-promotion"
+    }
+  ],
+  "quality_boundary": "This batch finishes the reviewed health-promotion sequence and enters the TOHOKU Future innovation subsection. The two circle ratings and one triangle rating remain Sendai City source-reported judgments. The research-complex triangle is preserved as the municipality's own classification tied to limited Nanoterasu uptake among local firms; it is not converted into a Jichi Insight negative score. Source narratives about exercise, emergency response, medical coordination, innovation, industrial agglomeration, or effects are not promoted into a Jichi Insight causal claim. Cumulative coverage is exactly 75 of 108, leaving 33 records pending.",
+  "next_action": "Continue in official report order through the innovation-promotion projects."
+}
