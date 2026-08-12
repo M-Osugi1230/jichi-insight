@@ -28,28 +28,27 @@
     {"sequence":6,"official_code":"141305","name_ja":"川崎市","prefecture_name_ja":"神奈川県","status":"pending_record_review","source_inventory_path":"data/indexed/kawasaki-city/source_inventory.json"},
     {"sequence":7,"official_code":"141500","name_ja":"相模原市","prefecture_name_ja":"神奈川県","status":"pending_record_review","source_inventory_path":"data/indexed/sagamihara-city/source_inventory.json"},
     {"sequence":8,"official_code":"151009","name_ja":"新潟市","prefecture_name_ja":"新潟県","status":"pending_record_review","source_inventory_path":"data/indexed/niigata-city/source_inventory.json"},
-    {"sequence":9,"official_code":"221309","name_ja":"浜松市","prefecture_name_ja":"静岡県","status":"pending_record_review","source_inventory_path":"data/indexed/hamamatsu-city/source_inventory.json"},
-    {"sequence":10,"official_code":"231002","name_ja":"名古屋市","prefecture_name_ja":"愛知県","status":"pending_record_review","source_inventory_path":"data/indexed/nagoya-city/source_inventory.json"},
-    {"sequence":11,"official_code":"261009","name_ja":"京都市","prefecture_name_ja":"京都府","status":"pending_record_review","source_inventory_path":"data/indexed/kyoto-city/source_inventory.json"},
-    {"sequence":12,"official_code":"271004","name_ja":"大阪市","prefecture_name_ja":"大阪府","status":"pending_record_review","source_inventory_path":"data/indexed/osaka-city/source_inventory.json"},
-    {"sequence":13,"official_code":"431001","name_ja":"熊本市","prefecture_name_ja":"熊本県","status":"pending_record_review","source_inventory_path":"data/indexed/kumamoto-city/source_inventory.json"}
+    {"sequence":9,"official_code":"221007","name_ja":"静岡市","prefecture_name_ja":"静岡県","status":"pending_record_review","source_inventory_path":"data/indexed/shizuoka-city/source_inventory.json"},
+    {"sequence":10,"official_code":"221309","name_ja":"浜松市","prefecture_name_ja":"静岡県","status":"pending_record_review","source_inventory_path":"data/indexed/hamamatsu-city/source_inventory.json"},
+    {"sequence":11,"official_code":"231002","name_ja":"名古屋市","prefecture_name_ja":"愛知県","status":"pending_record_review","source_inventory_path":"data/indexed/nagoya-city/source_inventory.json"},
+    {"sequence":12,"official_code":"261009","name_ja":"京都市","prefecture_name_ja":"京都府","status":"pending_record_review","source_inventory_path":"data/indexed/kyoto-city/source_inventory.json"},
+    {"sequence":13,"official_code":"271004","name_ja":"大阪市","prefecture_name_ja":"大阪府","status":"pending_record_review","source_inventory_path":"data/indexed/osaka-city/source_inventory.json"},
+    {"sequence":14,"official_code":"271403","name_ja":"堺市","prefecture_name_ja":"大阪府","status":"pending_record_review","source_inventory_path":"data/indexed/sakai-city/source_inventory.json"},
+    {"sequence":15,"official_code":"281000","name_ja":"神戸市","prefecture_name_ja":"兵庫県","status":"pending_record_review","source_inventory_path":"data/indexed/kobe-city/source_inventory.json"},
+    {"sequence":16,"official_code":"331007","name_ja":"岡山市","prefecture_name_ja":"岡山県","status":"pending_record_review","source_inventory_path":"data/indexed/okayama-city/source_inventory.json"},
+    {"sequence":17,"official_code":"341002","name_ja":"広島市","prefecture_name_ja":"広島県","status":"pending_record_review","source_inventory_path":"data/indexed/hiroshima-city/source_inventory.json"},
+    {"sequence":18,"official_code":"431001","name_ja":"熊本市","prefecture_name_ja":"熊本県","status":"pending_record_review","source_inventory_path":"data/indexed/kumamoto-city/source_inventory.json"}
   ],
-  "blocked_source_inventories": [
-    {"official_code":"221007","name_ja":"静岡市","status":"source_inventory_partial"},
-    {"official_code":"271403","name_ja":"堺市","status":"source_inventory_partial"},
-    {"official_code":"281000","name_ja":"神戸市","status":"source_inventory_partial"},
-    {"official_code":"331007","name_ja":"岡山市","status":"source_inventory_partial"},
-    {"official_code":"341002","name_ja":"広島市","status":"source_inventory_partial"}
-  ],
+  "blocked_source_inventories": [],
   "summary": {
     "designated_city_count": 20,
     "reviewed_reference_count": 2,
-    "eligible_review_queue_count": 13,
-    "blocked_source_inventory_count": 5,
+    "eligible_review_queue_count": 18,
+    "blocked_source_inventory_count": 0,
     "reviewed_complete_count": 0,
     "review_in_progress_count": 2,
-    "pending_record_review_count": 11,
+    "pending_record_review_count": 16,
     "next_official_code": "011002"
   },
-  "updated_at": "2026-08-11"
+  "updated_at": "2026-08-12"
 }
