@@ -1,0 +1,67 @@
+{
+  "id": "sendai-phase13-completion",
+  "phase": 13,
+  "status": "reviewed_complete",
+  "official_code": "041009",
+  "name_ja": "仙台市",
+  "completed_at": "2026-08-12",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "review_history_manifest_path": "data/catalog/sendai_phase13_review_manifest.json",
+    "progress_linkage_path": "data/catalog/sendai_phase13_progress_linkage.json",
+    "plan_review_path": "data/reviewed/sendai-city/plan_review.json",
+    "source_catalog_path": "data/catalog/sendai_phase13_sources.json",
+    "survey_review_manifest_path": "data/catalog/sendai_survey_2025_review_manifest.json",
+    "fiscal_records_path": "data/reviewed/sendai-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/sendai-city/evidence_packets.json",
+    "challenge_project_registry_pattern": "data/catalog/sendai_challenge_project_reviews_part*.json",
+    "challenge_project_evidence_pattern": "data/evidence/sendai_challenge_project_reviews_part*_evidence.json",
+    "counts": {
+      "plan_core_records": 6,
+      "challenge_project_core_records": 108,
+      "citizen_survey_summary_items": 34,
+      "citizen_survey_priority_items": 26,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "record_level_evidence_coverage_validated": true,
+    "official_source_lineage_preserved": true,
+    "plan_progress_and_fiscal_roles_separate": true,
+    "fiscal_states_and_years_separate": true,
+    "municipality_self_evaluation_and_citizen_perception_separate": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "survey-response-distributions",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "回答区分別件数・構成比・有効母数は、単純集計CSVの別レビューで追加する。現行の34項目サマリースコアを回答分布へ推測分解しない。"
+    },
+    {
+      "id": "survey-attribute-cross-tabs",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "属性別クロス集計は小標本・区分差・比較可能性を別途確認してから追加する。現行の全体値から属性差を推測しない。"
+    },
+    {
+      "id": "survey-additional-layers",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "住みやすさ・居住意向・愛着、外国人住民関連項目、自由記述は別レイヤーとして将来レビューする。行政成果には変換しない。"
+    },
+    {
+      "id": "project-outcome-kpi-evidence",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "108事業は事業名・所管・担当・証拠頁・仙台市自己評価までを完了深度とする。個別KPI実績や因果効果は別の公式証拠レビューなしに補完しない。"
+    },
+    {
+      "id": "fiscal-detail-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "v1では2026年度一般会計当初予算歳入総額と2024年度一般会計決算歳入・歳出総額の3レコードをReviewedとする。款項目別、補正、執行、事業費、契約、補助金とのリンクは財政状態と年度を保持した別レビューとする。"
+    }
+  ],
+  "completion_boundary": "仙台市のPhase 13 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味する。具体的には現行計画・実施計画・調査方法のコア6レコード、チャレンジプロジェクト108事業の個票コア情報、2025年市民意識調査のサマリー34項目と今後重視してほしい施策26項目、財政トップライン3レコードが公式ソースと証拠位置を保持してレビュー済みであることを示す。これは仙台市の全公開データを網羅したという意味ではなく、政策達成度、因果効果、他都市比較可能性、ランキングをJichi Insightが認定したものでもない。deferred_depthは未レビューのまま明示して保持し、将来の追加レビューで拡張する。"
+}

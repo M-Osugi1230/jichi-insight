@@ -11,16 +11,23 @@ def load(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def test_sendai_phase13_progress_linkage_resolves_parent_and_child_manifests():
+def test_sendai_phase13_progress_linkage_resolves_history_completion_and_children():
     linkage = load(LINKAGE_PATH)
-    parent_path = ROOT / linkage["canonical_parent_manifest_path"]
+    history_path = ROOT / linkage["canonical_parent_manifest_path"]
+    completion_path = ROOT / linkage["completion_manifest_path"]
 
     assert linkage["phase"] == 13
     assert linkage["official_code"] == "041009"
-    assert linkage["status"] == "review_in_progress"
-    assert parent_path.is_file()
-    parent = load(parent_path)
-    assert parent["status"] == "review_in_progress"
+    assert linkage["status"] == "reviewed_complete"
+    assert history_path.is_file()
+    assert completion_path.is_file()
+    history = load(history_path)
+    completion = load(completion_path)
+    assert history["status"] == "review_in_progress"
+    assert completion["status"] == "reviewed_complete"
+    assert completion["review_package"]["review_history_manifest_path"] == (
+        linkage["canonical_parent_manifest_path"]
+    )
 
     survey_layers = [
         layer
@@ -76,7 +83,7 @@ def test_sendai_phase13_progress_linkage_derives_60_reviewed_survey_items():
     assert len(current_items) + len(policy_items) + len(priority_items) == 60
 
 
-def test_sendai_phase13_progress_linkage_keeps_layers_non_equivalent():
+def test_sendai_phase13_completion_keeps_layers_non_equivalent_and_depth_deferred():
     linkage = load(LINKAGE_PATH)
     roles = {layer["role"] for layer in linkage["linked_layers"]}
     boundary = linkage["quality_boundary"]
@@ -86,8 +93,12 @@ def test_sendai_phase13_progress_linkage_keeps_layers_non_equivalent():
         "citizen_perception_summary_scores",
         "citizen_stated_future_priority_multiple_response",
     }
-    assert linkage["summary"]["municipality_phase13_complete"] is False
-    assert len(linkage["remaining_gates"]) == 6
+    assert linkage["summary"]["municipality_phase13_complete"] is True
+    assert linkage["remaining_gates"] == []
+    assert len(linkage["deferred_depth"]) == 5
     assert "not collapsed" in boundary
-    assert "does not imply policy achievement" in boundary
-    assert "full Sendai Phase 13 completion" in boundary
+    assert "declared Phase 13 v1 review package is complete" in boundary
+    assert "deferred depth" in boundary
+    assert "policy achievement" in boundary
+    assert "causal attribution" in boundary
+    assert "cross-city comparability" in boundary

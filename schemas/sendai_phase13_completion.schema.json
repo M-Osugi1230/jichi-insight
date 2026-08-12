@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.local/schemas/sendai_phase13_completion.schema.json",
+  "title": "Sendai Phase 13 completion contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "phase",
+    "status",
+    "official_code",
+    "name_ja",
+    "completed_at",
+    "completion_depth",
+    "review_package",
+    "quality_gate",
+    "deferred_depth",
+    "completion_boundary"
+  ],
+  "properties": {
+    "id": {"const": "sendai-phase13-completion"},
+    "phase": {"const": 13},
+    "status": {"const": "reviewed_complete"},
+    "official_code": {"const": "041009"},
+    "name_ja": {"const": "仙台市"},
+    "completed_at": {"type": "string", "format": "date"},
+    "completion_depth": {"const": "declared_review_package_v1"},
+    "review_package": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "review_history_manifest_path",
+        "progress_linkage_path",
+        "plan_review_path",
+        "source_catalog_path",
+        "survey_review_manifest_path",
+        "fiscal_records_path",
+        "fiscal_evidence_path",
+        "challenge_project_registry_pattern",
+        "challenge_project_evidence_pattern",
+        "counts"
+      ],
+      "properties": {
+        "review_history_manifest_path": {"const": "data/catalog/sendai_phase13_review_manifest.json"},
+        "progress_linkage_path": {"const": "data/catalog/sendai_phase13_progress_linkage.json"},
+        "plan_review_path": {"const": "data/reviewed/sendai-city/plan_review.json"},
+        "source_catalog_path": {"const": "data/catalog/sendai_phase13_sources.json"},
+        "survey_review_manifest_path": {"const": "data/catalog/sendai_survey_2025_review_manifest.json"},
+        "fiscal_records_path": {"const": "data/reviewed/sendai-city/fiscal_records.json"},
+        "fiscal_evidence_path": {"const": "data/reviewed/sendai-city/evidence_packets.json"},
+        "challenge_project_registry_pattern": {"const": "data/catalog/sendai_challenge_project_reviews_part*.json"},
+        "challenge_project_evidence_pattern": {"const": "data/evidence/sendai_challenge_project_reviews_part*_evidence.json"},
+        "counts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "plan_core_records",
+            "challenge_project_core_records",
+            "citizen_survey_summary_items",
+            "citizen_survey_priority_items",
+            "fiscal_top_line_records"
+          ],
+          "properties": {
+            "plan_core_records": {"const": 6},
+            "challenge_project_core_records": {"const": 108},
+            "citizen_survey_summary_items": {"const": 34},
+            "citizen_survey_priority_items": {"const": 26},
+            "fiscal_top_line_records": {"const": 3}
+          }
+        }
+      }
+    },
+    "quality_gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "declared_package_schema_validated",
+        "record_level_evidence_coverage_validated",
+        "official_source_lineage_preserved",
+        "plan_progress_and_fiscal_roles_separate",
+        "fiscal_states_and_years_separate",
+        "municipality_self_evaluation_and_citizen_perception_separate",
+        "no_independent_policy_achievement_promoted",
+        "no_causal_attribution_promoted",
+        "no_cross_city_comparability_promoted",
+        "regression_suite_required_before_merge"
+      ],
+      "properties": {
+        "declared_package_schema_validated": {"const": true},
+        "record_level_evidence_coverage_validated": {"const": true},
+        "official_source_lineage_preserved": {"const": true},
+        "plan_progress_and_fiscal_roles_separate": {"const": true},
+        "fiscal_states_and_years_separate": {"const": true},
+        "municipality_self_evaluation_and_citizen_perception_separate": {"const": true},
+        "no_independent_policy_achievement_promoted": {"const": true},
+        "no_causal_attribution_promoted": {"const": true},
+        "no_cross_city_comparability_promoted": {"const": true},
+        "regression_suite_required_before_merge": {"const": true}
+      }
+    },
+    "deferred_depth": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "status", "boundary"],
+        "properties": {
+          "id": {
+            "enum": [
+              "survey-response-distributions",
+              "survey-attribute-cross-tabs",
+              "survey-additional-layers",
+              "project-outcome-kpi-evidence",
+              "fiscal-detail-project-linkage"
+            ]
+          },
+          "status": {"const": "deferred_not_required_for_v1_completion"},
+          "boundary": {"type": "string", "minLength": 20}
+        }
+      }
+    },
+    "completion_boundary": {"type": "string", "minLength": 100}
+  }
+}
