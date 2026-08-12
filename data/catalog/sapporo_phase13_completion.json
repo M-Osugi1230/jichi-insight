@@ -1,0 +1,67 @@
+{
+  "id": "sapporo-phase13-completion",
+  "phase": 13,
+  "status": "reviewed_complete",
+  "official_code": "011002",
+  "name_ja": "札幌市",
+  "completed_at": "2026-08-12",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "plan_review_path": "data/reviewed/sapporo-city/plan_review.json",
+    "source_inventory_path": "data/indexed/sapporo-city/source_inventory.json",
+    "fiscal_records_path": "data/reviewed/sapporo-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/sapporo-city/evidence_packets.json",
+    "counts": {
+      "plan_and_implementation_core_records": 3,
+      "fiscal_top_line_records": 3
+    },
+    "reviewed_progress_aggregate_facts": {
+      "outcome_indicators_above_baseline": "17 of 26",
+      "principal_project_targets_expected_achieved": "394 of 403",
+      "cumulative_project_amount_yen": 998300000000
+    }
+  },
+  "quality_gate": {
+    "official_source_lineage_preserved": true,
+    "plan_and_implementation_roles_separate": true,
+    "fiscal_states_and_years_separate": true,
+    "progress_aggregates_preserved_as_source_reported_facts": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "vision-policy-target-records",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "第2次戦略ビジョンの個別政策目標・指標は、公式ページ・PDFの安定した証拠位置を付して別レビューする。集約値から個別値を推測しない。"
+    },
+    {
+      "id": "action-plan-599-project-records",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "アクションプラン2023の599事業は個票レビューを別工程で行う。599という確定版事業数から事業名、KPI、事業費、所管を推測生成しない。"
+    },
+    {
+      "id": "progress-26-outcome-indicators",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "26成果指標は17/26という札幌市の集約報告を個別指標の達成判定へ展開せず、各指標の基準値・実績値・年度・証拠位置を別レビューする。"
+    },
+    {
+      "id": "progress-403-principal-project-targets",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "403主要事業目標は394/403という札幌市の集約報告を個別目標の達成判定へ展開せず、各目標を別レビューする。"
+    },
+    {
+      "id": "citizen-survey-records",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "市民意識調査は行政実績と分離した市民認識レイヤーとして、設問・母数・回答区分・年度を保持して追加する。"
+    },
+    {
+      "id": "fiscal-detail-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "v1では2026年度一般会計当初予算案と2024年度一般会計決算歳入・歳出のトップライン3レコードをReviewedとする。補正、執行、款項目別、事業費とのリンクは財政状態と年度を保持した別レビューとする。"
+    }
+  ],
+  "completion_boundary": "札幌市のPhase 13 reviewed_completeは宣言したv1レビュー・パッケージの完了を意味する。現行最上位計画の期間、アクションプラン2023の確定版599事業・5年間計画事業費、公式進捗報告の集約事実、財政トップライン3レコードを公式ソースの意味と状態を分離してレビュー済みである。これは599事業、26成果指標、403主要事業目標、市民意識調査、詳細財政の全個票レビュー完了を意味せず、政策達成度、因果効果、他都市比較可能性、ランキングをJichi Insightが認定したものでもない。deferred_depthは未レビューのまま明示して保持する。"
+}
