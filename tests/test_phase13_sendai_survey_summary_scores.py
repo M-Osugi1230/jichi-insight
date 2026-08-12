@@ -29,7 +29,10 @@ def test_sendai_survey_source_index_preserves_official_source_roles():
         "sendai-city-survey-2025-cross-csv",
     }
     assert records["sendai-city-survey-2025-report-pdf"]["page_count"] == 92
-    assert all(record["official_host"] == "www.city.sendai.jp" for record in records.values())
+    assert all(
+        record["official_host"] == "www.city.sendai.jp"
+        for record in records.values()
+    )
     assert "administrative performance" in index["quality_boundary"]
 
 
@@ -72,7 +75,10 @@ def test_sendai_current_state_scores_preserve_three_year_history():
     assert current[1]["scores"] == {"2025": 2.98, "2024": 3.05, "2023": 3.06}
     assert current[5]["scores"] == {"2025": 2.56, "2024": 2.57, "2023": 2.59}
     assert current[8]["scores"] == {"2025": 2.85, "2024": 2.98, "2023": 2.99}
-    assert all(item["source_pdf_page_index_0_based"] == 14 for item in current.values())
+    assert all(
+        item["source_pdf_page_index_0_based"] == 14
+        for item in current.values()
+    )
 
 
 def test_sendai_policy_scores_preserve_exact_official_codes_and_extremes():
@@ -86,9 +92,24 @@ def test_sendai_policy_scores_preserve_exact_official_codes_and_extremes():
     assert policy["1-1"]["score_2025"] == 3.19
     assert policy["1-3"]["score_2025"] == 3.17
     assert policy["7-1"]["score_2025"] == 3.04
+    assert policy["8-1"]["statement_ja"] == (
+        "賑わいと活力が行きわたる、回遊性の高い都心づくり"
+    )
+    assert policy["8-1"]["score_2025"] == 2.70
+    assert policy["8-2"]["statement_ja"] == (
+        "都心機能強化に向けた開発とビジネスの好循環を生み出す取り組み"
+    )
+    assert policy["8-2"]["score_2025"] == 2.71
+    assert policy["8-3"]["statement_ja"] == (
+        "域内外から人を惹きつける魅力ある空間づくり"
+    )
+    assert policy["8-3"]["score_2025"] == 2.80
     assert policy["9-2"]["statement_ja"] == "安定した行政経営基盤の維持"
     assert policy["9-2"]["score_2025"] == 2.57
-    assert all(item["source_pdf_page_index_0_based"] == 16 for item in policy.values())
+    assert all(
+        item["source_pdf_page_index_0_based"] == 16
+        for item in policy.values()
+    )
 
 
 def test_sendai_survey_summary_scores_have_one_to_one_valid_evidence():
@@ -100,8 +121,12 @@ def test_sendai_survey_summary_scores_have_one_to_one_valid_evidence():
     )
 
     assert len(packets) == len(items) == 34
-    assert {packet["subject_id"] for packet in packets} == {item["id"] for item in items}
-    assert {packet["id"] for packet in packets} == {item["evidence_id"] for item in items}
+    assert {packet["subject_id"] for packet in packets} == {
+        item["id"] for item in items
+    }
+    assert {packet["id"] for packet in packets} == {
+        item["evidence_id"] for item in items
+    }
     assert all(list(validator.iter_errors(packet)) == [] for packet in packets)
     assert all(packet["subject_type"] == "kpi" for packet in packets)
     assert all(
@@ -117,4 +142,7 @@ def test_sendai_survey_registry_does_not_claim_policy_achievement():
     assert "not administrative output" in boundary
     assert "not" in boundary
     assert "Jichi Insight policy scores" in boundary
-    assert registry["summary"]["policy_evaluation_history_depth"] == "2025_summary_only"
+    assert (
+        registry["summary"]["policy_evaluation_history_depth"]
+        == "2025_summary_only"
+    )
