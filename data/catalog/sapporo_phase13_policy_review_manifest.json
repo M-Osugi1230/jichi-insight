@@ -150,13 +150,45 @@
       "review_status": "reviewed",
       "location_note": "公式3ページPDFの33表示行を画像レビューし、灰色再掲7件を除く26ユニーク指標について現状値・実測年度・目標値・札幌市の傾向矢印を行単位で接続。",
       "interpretation_boundary": "26件の現状値は各行に印刷された実測年度を保持するため、すべてを2024年度値とは扱わない。傾向矢印は札幌市のsource-reported classificationであり、Jichi Insight独自達成スコアや因果効果へ変換しない。"
+    },
+    {
+      "id": "action-plan-safety-security-project-records-complete",
+      "layer": "implementation_plan",
+      "field": "reviewed_field_project_record_count",
+      "value": 70,
+      "unit": "projects",
+      "main_project_record_count": 43,
+      "other_project_record_count": 27,
+      "source_id": "sapporo-action-plan-2023-projects-safety-security",
+      "registry_paths": [
+        "data/catalog/sapporo_action_plan_safety_security_projects_part1.json",
+        "data/catalog/sapporo_action_plan_safety_security_projects_part2.json"
+      ],
+      "evidence_paths": [
+        "data/evidence/sapporo_action_plan_safety_security_projects_part1_evidence.json",
+        "data/evidence/sapporo_action_plan_safety_security_projects_part2_evidence.json"
+      ],
+      "source_page_labels": [
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88
+      ],
+      "review_status": "reviewed_field_complete_at_declared_fields",
+      "location_note": "分野4「安全・安心」PDF全10ページを画像レビュー。印刷79ページに事業行がないことを確認し、80～88ページの70事業を1対1 Evidence付きでレビュー。",
+      "interpretation_boundary": "分野4の70事業分母は確定したが、主な事業43件とその他27件はソース上の項目粒度が異なる。事業内容欄、599事業全体での通し順、第3章の分母包含、年度進捗403項目との接続、政策達成度・因果効果はここから推論しない。"
     }
   ],
-  "quality_boundary": "実施計画の期間・事業数・計画事業費、599事業を確認する公式資料10本の資料単位索引、分野4「安全・安心」の4事業のコア項目、2025年度進捗報告の集計値、成果指標33表示行から再掲7件を除いた26ユニーク指標の正式名称・公式表順・掲載ページ、2024年度報告の前年値26件、さらに2025年度報告の現状値・実測年度・目標値・source-reported傾向26件をReviewed化した。最新報告の26件は17上昇・8下降・1未集計の公式集計と整合する。各行の実測年度を保持し、すべてを2024年度値へ平準化しない。4事業のレビューは残ページ・分野内総数・599事業全体での通し順・年度実績との接続を意味しない。資料別事業数や第3章資料の599事業分母への包含関係も未確定とし、市の自己評価・傾向表現を独自の政策達成判定、因果推論、他都市比較には使用しない。",
+  "quality_boundary": "実施計画の期間・計画事業数599・計画事業費、公式資料10本の索引、分野4「安全・安心」PDF全10ページと70事業、2024年度報告の成果指標前年値26件、2025年度報告の成果指標最新行26件をReviewed化した。安全・安心70件は主な事業43件とその他27件で公開項目の粒度が異なり、後者に事業目標を推測補完しない。安全・安心分野が完了しても599事業全体、第3章資料の分母包含、年度進捗403項目との接続は未完了である。市の自己評価・傾向表現をJichi Insight独自の政策達成判定、因果推論、他都市比較には使用しない。",
   "remaining_work": [
     "第2次戦略ビジョン本体の政策目標・成果指標をページ単位でレビューする。",
-    "アクションプラン2023の公式資料10本の資料単位索引は完了し、分野4「安全・安心」の4事業をコア項目までReviewed化した。次に印刷ページ81以降を順にレビューし、その後ほか7分野へ展開して個別599事業のカバー率を上げ、第3章資料が599事業分母へ含まれる範囲もレコード単位で確定する。",
-    "成果指標26項目の正式名称、2024年度報告の前年値26件、2025年度報告の最新行26件はレビュー完了。次に主な事業403項目をレコード単位でレビューし、年度進捗と計画事業を安全に接続する。",
+    "アクションプラン2023は分野4「安全・安心」70事業の個票レビューを完了。次に残る7分野をレコード単位でレビューし、599事業全体のカバー率を上げ、第3章資料が599事業分母へ含まれる範囲も確定する。",
+    "成果指標26項目の正式名称、前年値26件、最新行26件はレビュー完了。次に年度進捗の主な事業403項目をレコード単位でレビューし、計画事業との接続候補を証拠単位で確認する。",
     "財政レコードとの事業単位リンクは名称・年度・会計状態を照合した後に別工程で行う。"
   ]
 }
