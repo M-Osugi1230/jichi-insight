@@ -10,6 +10,10 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
+      - name: Install PDF text tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y poppler-utils
       - name: Download official Sapporo outcome report
         run: |
           python - <<'PY'
@@ -31,7 +35,7 @@ jobs:
           pdftotext -layout sapporo2025.pdf sapporo2025.txt
           echo "pages=$(pdfinfo sapporo2025.pdf | awk '/Pages:/ {print $2}')"
           echo "lines=$(wc -l < sapporo2025.txt)"
-          sed -n '1,260p' sapporo2025.txt
+          sed -n '1,300p' sapporo2025.txt
       - uses: actions/upload-artifact@v4
         with:
           name: sapporo-outcome-2025-extraction
