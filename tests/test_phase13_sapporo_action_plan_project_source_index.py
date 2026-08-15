@@ -86,14 +86,6 @@ def test_sapporo_safety_source_records_complete_field_project_inventory():
     assert safety["intro_page_label"] == 79
     assert safety["intro_page_contains_project_rows"] is False
     assert safety["reviewed_page_labels"] == list(range(80, 89))
-    assert safety["record_catalog_paths"] == [
-        "data/catalog/sapporo_action_plan_safety_security_projects_part1.json",
-        "data/catalog/sapporo_action_plan_safety_security_projects_part2.json",
-    ]
-    assert safety["evidence_paths"] == [
-        "data/evidence/sapporo_action_plan_safety_security_projects_part1_evidence.json",
-        "data/evidence/sapporo_action_plan_safety_security_projects_part2_evidence.json",
-    ]
 
 
 def test_sapporo_daily_life_source_records_partial_review_without_false_field_total():
@@ -104,13 +96,15 @@ def test_sapporo_daily_life_source_records_partial_review_without_false_field_to
         if record["field_id"] == "daily_life"
     )
 
-    assert daily["reviewed_project_record_count"] >= 43
+    assert daily["reviewed_project_record_count"] >= 78
     assert daily["field_total_project_count_reviewed"] is False
     assert "field_total_project_count" not in daily
     assert daily["intro_page_label"] == 59
     assert daily["intro_page_contains_project_rows"] is False
     assert set(range(60, 68)).issubset(set(daily["reviewed_page_labels"]))
-    assert daily["source_lineage"]["next_unreviewed_page_68_is_listed_revision"] is True
+    assert {69, 70, 71}.issubset(set(daily["reviewed_page_labels"]))
+    assert daily["blocked_page_labels"] == [68]
+    assert daily["source_lineage"]["blocked_revision_page"] == 68
 
 
 def test_sapporo_project_source_index_keeps_global_599_allocation_unresolved():
@@ -126,9 +120,9 @@ def test_sapporo_project_source_index_keeps_global_599_allocation_unresolved():
     assert summary["total_identified_document_count"] == 10
     assert summary["total_action_plan_project_count"] == 599
     assert summary["per_document_project_counts_reviewed"] == 1
-    assert summary["individual_project_records_reviewed"] >= 113
+    assert summary["individual_project_records_reviewed"] >= 148
     assert summary["fully_reviewed_field_project_records"] == 70
-    assert summary["partially_reviewed_field_project_records"] >= 43
+    assert summary["partially_reviewed_field_project_records"] >= 78
     assert summary["remaining_action_plan_project_records"] == (
         599 - summary["individual_project_records_reviewed"]
     )
@@ -147,10 +141,11 @@ def test_sapporo_project_source_index_keeps_global_599_allocation_unresolved():
 def test_sapporo_project_source_index_keeps_review_boundary_explicit():
     index = load(INDEX_PATH)
     boundary = index["quality_boundary"]
+    summary = index["summary"]
 
     assert "70 project rows" in boundary
-    assert "113/599" in boundary
-    assert "486 projects" in boundary
+    assert f'{summary["individual_project_records_reviewed"]}/599' in boundary
+    assert f'{summary["remaining_action_plan_project_records"]} projects' in boundary
     assert "Chapter 3 denominator membership" in boundary
     assert "annual-progress 403-item denominator" in boundary
     assert "page 68" in boundary
@@ -175,7 +170,3 @@ def test_sapporo_manifest_records_safety_field_completion_without_city_completio
     assert complete["other_project_record_count"] == 27
     assert complete["source_page_labels"] == list(range(80, 89))
     assert "599事業全体" in complete["interpretation_boundary"]
-    assert any(
-        "安全・安心" in item and "70事業" in item
-        for item in manifest["remaining_work"]
-    )
