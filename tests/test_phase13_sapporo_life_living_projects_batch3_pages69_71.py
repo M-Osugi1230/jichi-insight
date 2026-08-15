@@ -55,18 +55,8 @@ def test_batch3_safe_pages_preserve_numeric_and_milestone_anchors():
     female = records["female_specific_cancer_exam_system"]
     assert female["planned_project_cost_yen"] == 176_000_000
     assert female["target_components"] == [
-        {
-            "component": "乳がん検診",
-            "baseline_value": 15.9,
-            "target_value": 18.0,
-            "unit": "percent",
-        },
-        {
-            "component": "子宮がん検診",
-            "baseline_value": 27.9,
-            "target_value": 30.3,
-            "unit": "percent",
-        },
+        {"component": "乳がん検診", "baseline_value": 15.9, "target_value": 18.0, "unit": "percent"},
+        {"component": "子宮がん検診", "baseline_value": 27.9, "target_value": 30.3, "unit": "percent"},
     ]
 
     home = records["community_integrated_medical_care"]
@@ -108,7 +98,7 @@ def test_batch3_safe_pages_evidence_is_one_to_one_and_excludes_page68():
     assert 68 not in {packet["page_label"] for packet in packets}
 
 
-def test_batch3_safe_pages_advance_life_living_to_78_without_field_completion():
+def test_life_living_final_denominator_is_85_with_exact_7_unresolved_on_page68():
     execution = load(EXECUTION_PATH)
     batch3 = execution["review_batches"][2]
     index = load(SOURCE_INDEX_PATH)
@@ -124,14 +114,17 @@ def test_batch3_safe_pages_advance_life_living_to_78_without_field_completion():
     assert batch3["reviewed_project_record_count"] == 35
     assert batch3["blocked_pages"] == [68]
 
+    assert daily["field_total_project_count"] == 85
+    assert daily["field_total_project_count_reviewed"] is True
     assert daily["reviewed_project_record_count"] == 78
+    assert daily["unresolved_project_record_count"] == 7
     assert daily["reviewed_main_project_record_count"] == 55
     assert daily["reviewed_other_project_record_count"] == 23
     assert daily["blocked_page_labels"] == [68]
-    assert daily["field_total_project_count_reviewed"] is False
+    assert daily["source_lineage"]["blocked_page_final_project_count_by_denominator"] == 7
 
 
-def test_batch3_safe_pages_never_regress_sapporo_below_148_of_599():
+def test_batch3_safe_pages_remain_reflected_in_global_progress():
     index = load(SOURCE_INDEX_PATH)
     readiness = load(READINESS_PATH)
     project_layer = next(
@@ -145,30 +138,30 @@ def test_batch3_safe_pages_never_regress_sapporo_below_148_of_599():
         if gate["id"] == "action-plan-project-records"
     )
 
-    assert index["summary"]["individual_project_records_reviewed"] >= 148
+    assert index["summary"]["individual_project_records_reviewed"] >= 276
     assert index["summary"]["remaining_action_plan_project_records"] == (
         599 - index["summary"]["individual_project_records_reviewed"]
     )
-    assert index["summary"]["fully_reviewed_field_project_records"] >= 70
     assert index["summary"]["partially_reviewed_field_project_records"] >= 78
 
-    assert project_layer["reviewed_record_count"] >= 148
+    assert project_layer["reviewed_record_count"] >= 276
+    assert project_layer["active_partial_field_final_denominator"] == 85
     assert project_layer["active_partial_field_reviewed_record_count"] == 78
+    assert project_layer["active_partial_field_unresolved_record_count"] == 7
     assert project_layer["active_partial_field_blocked_page"] == 68
-    assert project_gate["reviewed_scope"] >= 148
     assert project_gate["remaining_scope"] == 599 - project_gate["reviewed_scope"]
     assert readiness["current_status"] == "review_in_progress"
 
 
-def test_source_registry_records_78_reviewed_and_page68_block():
+def test_source_registry_records_final_85_and_page68_block():
     sources = {record["id"]: record for record in load(POLICY_SOURCES_PATH)["records"]}
     life = sources["sapporo-action-plan-2023-projects-life-living"]
     revisions = sources["sapporo-action-plan-2023-public-comment-results"]
 
-    assert life["review_status"] == "reviewed_78_records_page68_blocked"
+    assert life["review_status"] == "reviewed_78_of_final_85_page68_blocked"
+    assert life["field_total_project_count"] == 85
     assert life["reviewed_project_record_count"] == 78
-    assert life["reviewed_main_project_record_count"] == 55
-    assert life["reviewed_other_project_record_count"] == 23
+    assert life["unresolved_project_record_count"] == 7
     assert life["reviewed_printed_pages"] == "60-67,69-71"
     assert life["blocked_printed_pages"] == [68]
     assert revisions["listed_revision_locations"] == [
