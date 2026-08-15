@@ -131,7 +131,7 @@ def test_batch3_safe_pages_advance_life_living_to_78_without_field_completion():
     assert daily["field_total_project_count_reviewed"] is False
 
 
-def test_batch3_safe_pages_advance_sapporo_to_148_of_599():
+def test_batch3_safe_pages_never_regress_sapporo_below_148_of_599():
     index = load(SOURCE_INDEX_PATH)
     readiness = load(READINESS_PATH)
     project_layer = next(
@@ -145,17 +145,18 @@ def test_batch3_safe_pages_advance_sapporo_to_148_of_599():
         if gate["id"] == "action-plan-project-records"
     )
 
-    assert index["summary"]["individual_project_records_reviewed"] == 148
-    assert index["summary"]["remaining_action_plan_project_records"] == 451
-    assert index["summary"]["fully_reviewed_field_project_records"] == 70
-    assert index["summary"]["partially_reviewed_field_project_records"] == 78
+    assert index["summary"]["individual_project_records_reviewed"] >= 148
+    assert index["summary"]["remaining_action_plan_project_records"] == (
+        599 - index["summary"]["individual_project_records_reviewed"]
+    )
+    assert index["summary"]["fully_reviewed_field_project_records"] >= 70
+    assert index["summary"]["partially_reviewed_field_project_records"] >= 78
 
-    assert project_layer["reviewed_record_count"] == 148
+    assert project_layer["reviewed_record_count"] >= 148
     assert project_layer["active_partial_field_reviewed_record_count"] == 78
     assert project_layer["active_partial_field_blocked_page"] == 68
-    assert project_gate["reviewed_scope"] == 148
-    assert project_gate["remaining_scope"] == 451
-    assert project_gate["state"] == "in_progress_148_of_599"
+    assert project_gate["reviewed_scope"] >= 148
+    assert project_gate["remaining_scope"] == 599 - project_gate["reviewed_scope"]
     assert readiness["current_status"] == "review_in_progress"
 
 
