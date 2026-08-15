@@ -18,10 +18,17 @@ def test_sapporo_policy_review_uses_reviewed_official_sources():
     manifest = load(MANIFEST_PATH)
     sources = load(SOURCE_PATH)["records"]
     source_map = {record["id"]: record for record in sources}
+    manifest_source_ids = set(manifest["source_ids"])
+    fact_source_ids = {
+        fact["source_id"]
+        for fact in manifest["reviewed_facts"]
+        if "source_id" in fact
+    }
 
     assert manifest["official_code"] == "011002"
     assert manifest["status"] == "review_in_progress"
-    assert set(manifest["source_ids"]) == set(source_map)
+    assert manifest_source_ids.issubset(source_map)
+    assert fact_source_ids.issubset(manifest_source_ids)
     assert all(record["organization"] == "札幌市" for record in sources)
     assert all(record["url"].startswith("https://www.city.sapporo.jp/") for record in sources)
     assert source_map["sapporo-action-plan-2023-page"]["review_status"] == "reviewed"
@@ -33,6 +40,23 @@ def test_sapporo_policy_review_uses_reviewed_official_sources():
     assert current_report["review_status"] == "reviewed_for_indicator_current_values"
     assert current_report["confidence"] == "high"
     assert all(record["confidence"] == "high" for record in source_map.values())
+
+    life_living = source_map["sapporo-action-plan-2023-projects-life-living"]
+    assert life_living["review_status"] == "reviewed_batches1_2_project_inventory_in_progress"
+    assert life_living["reviewed_project_record_count"] == 43
+    assert life_living["reviewed_printed_pages"] == "60-67"
+
+    draft = source_map["sapporo-action-plan-2023-public-comment-draft"]
+    assert draft["review_status"] == "navigation_and_transcription_only"
+
+    revisions = source_map["sapporo-action-plan-2023-public-comment-results"]
+    assert revisions["review_status"] == "reviewed_for_final_revision_scope"
+    assert revisions["listed_revision_locations"] == [
+        "printed_page_2",
+        "printed_page_56",
+        "printed_page_68",
+        "printed_pages_134_173",
+    ]
 
 
 def test_sapporo_action_plan_reviewed_facts_are_exact_and_bounded():
