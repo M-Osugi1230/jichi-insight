@@ -4,23 +4,23 @@
   "status": "completion_gate_defined",
   "official_code": "011002",
   "name_ja": "札幌市",
-  "audited_at": "2026-08-13",
+  "audited_at": "2026-08-15",
   "current_status": "review_in_progress",
   "verified_reviewed_layers": [
     {"layer":"current_plan_identity","state":"reviewed_core","evidence_path":"data/reviewed/sapporo-city/plan_review.json"},
     {"layer":"implementation_plan_aggregate","state":"reviewed_core","facts":["599 planned projects","2023-2027 period","1.7854 trillion yen planned project cost"],"evidence_path":"data/reviewed/sapporo-city/plan_review.json"},
-    {"layer":"action_plan_project_records","state":"review_in_progress","reviewed_record_count":70,"declared_plan_project_count":599,"completed_field":"safety-security","evidence_path":"data/catalog/sapporo_action_plan_project_source_index.json"},
+    {"layer":"action_plan_project_records","state":"review_in_progress","reviewed_record_count":85,"declared_plan_project_count":599,"completed_field":"safety-security","active_partial_field":"life-living","active_partial_field_reviewed_record_count":15,"evidence_path":"data/catalog/sapporo_action_plan_project_source_index.json"},
     {"layer":"outcome_indicator_records","state":"reviewed_current_report","record_count":26,"facts":["17 up","8 down","1 unaggregated"],"evidence_path":"data/catalog/sapporo_outcome_indicator_registry.json"},
     {"layer":"annual_progress_aggregate","state":"reviewed_aggregate_only","facts":["394 of 403 principal project targets expected to be achieved","998.3 billion yen cumulative mixed settlement-plus-budget amount"],"evidence_path":"data/catalog/sapporo_phase13_progress_aggregate.json"},
     {"layer":"fiscal_top_line","state":"reviewed_core","record_count":3,"evidence_path":"data/reviewed/sapporo-city/evidence_packets.json"}
   ],
   "blocking_gates": [
-    {"id":"action-plan-project-records","required_scope":599,"reviewed_scope":70,"remaining_scope":529,"unit":"projects","state":"in_progress_70_of_599","execution_manifest_path":"data/catalog/sapporo_action_plan_2023_project_shards.json","rule":"Individual project identity, target, evidence location, and fiscal linkage must not be inferred from aggregate plan counts."},
+    {"id":"action-plan-project-records","required_scope":599,"reviewed_scope":85,"remaining_scope":514,"unit":"projects","state":"in_progress_85_of_599","execution_manifest_path":"data/catalog/sapporo_action_plan_2023_project_shards.json","active_review_execution_path":"data/catalog/sapporo_action_plan_life_living_review_execution.json","rule":"Individual project identity, target, evidence location, and fiscal linkage must not be inferred from aggregate plan counts."},
     {"id":"outcome-indicator-records","required_scope":26,"reviewed_scope":26,"unit":"indicators","state":"complete_current_report","evidence_path":"data/catalog/sapporo_outcome_indicator_registry.json","rule":"The 17/26 aggregate is backed by 26 reviewed unique current-report records; source-reported trend direction remains distinct from Jichi Insight policy-achievement judgment."},
     {"id":"principal-project-target-records","required_scope":403,"unit":"targets","state":"not_complete","rule":"The 394/403 aggregate must not be expanded into individual target judgments without record-level official evidence."},
     {"id":"citizen-survey-separation","state":"not_complete","rule":"Citizen perception evidence must remain separate from administrative outcome actuals and municipality self-evaluation."}
   ],
   "promotion_rule": "札幌市をreviewed_completeへ昇格させる前に、既存回帰テストが要求する個票レビュー深度を満たす。既に完了したレビュー層を未完了へ戻さず、未レビュー個票を集約値で代替しない。",
-  "next_execution_target": "安全・安心70事業と成果指標26件は完了済みとして固定する。次は生活・暮らし、スポーツ・文化、都市空間の順で、安定した公式証拠位置を持つ個票をReviewedへ昇格し、599事業の残529件を減らす。403主要事業目標と市民意識は別キューのまま維持する。",
-  "quality_boundary": "This readiness gate reconciles later execution manifests with review work already completed earlier in Phase 13. It does not promote Sapporo to municipality completion: 529 Action Plan project records, 403 annual principal-project targets, citizen-perception separation, and any other regression-required depth remain unresolved."
+  "next_execution_target": "安全・安心70事業と成果指標26件は完了済みとして固定し、生活・暮らしBatch 1の15事業をReviewed個票として追加した。次は生活・暮らしBatch 2（64～67頁）を進め、Batch 3の68頁は公式修正履歴対象のため最終版を直接再確認する。残514事業を減らしつつ、403主要事業目標と市民意識は別キューのまま維持する。",
+  "quality_boundary": "This readiness gate now records 85/599 reviewed Action Plan project records: 70 complete safety/security records plus 15 life/living Batch 1 records. The life/living field denominator is not yet complete. The official revision history is retained as source lineage, and printed page 68 remains an explicit final-version re-verification point. Sapporo remains review_in_progress: 514 Action Plan project records, 403 annual principal-project targets, citizen-perception separation, and any other regression-required depth remain unresolved."
 }
