@@ -157,8 +157,29 @@
       "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_8.pdf",
       "source_role": "chapter2_project_catalog_segment",
       "source_identification_status": "official_link_verified",
-      "content_review_status": "document_opened_record_index_pending",
-      "page_count": 12
+      "content_review_status": "record_review_complete_at_declared_fields",
+      "page_count": 12,
+      "reviewed_project_record_count": 77,
+      "reviewed_main_project_record_count": 56,
+      "reviewed_other_project_record_count": 21,
+      "reviewed_page_labels": [122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132],
+      "field_total_project_count": 77,
+      "field_total_project_count_reviewed": true,
+      "intro_page_label": 121,
+      "intro_page_contains_project_rows": false,
+      "record_catalog_paths": ["data/catalog/sapporo_action_plan_urban_space_projects.json"],
+      "evidence_paths": ["data/evidence/sapporo_action_plan_urban_space_projects_evidence.json"],
+      "source_lineage": {
+        "public_comment_draft_url": "https://www.city.sapporo.jp/chosei/documents/ap2023ann-honnsho-public.pdf",
+        "official_public_comment_results_url": "https://www.city.sapporo.jp/chosei/documents/ap2023-ikennshu.pdf",
+        "listed_revision_locations": ["printed_page_2", "printed_page_56", "printed_page_68", "printed_pages_134_173"],
+        "listed_revision_intersects_field": false,
+        "draft_field_project_count": 77,
+        "reviewed_record_count_matches_field_count": true,
+        "final_pdf_visual_checks": [121, 122],
+        "pagination_note": "最終版分野PDFは印刷121～132頁の12頁。121頁は導入、122頁から事業表。当初案では区章への改頁前に133のページ番号が現れるが都市空間の事業本文は122～132頁に収まる。",
+        "note": "公式修正履歴は都市空間121～132頁と交差せず、当初案の分野集計77事業とReviewed個票77件が一致する。最終版121・122頁は画像で直接確認済み。"
+      }
     }
   ],
   "chapter3_sources": [
@@ -190,14 +211,14 @@
     "chapter3_source_count": 2,
     "total_identified_document_count": 10,
     "total_action_plan_project_count": 599,
-    "per_document_project_counts_reviewed": 2,
-    "individual_project_records_reviewed": 200,
-    "fully_reviewed_field_project_records": 122,
+    "per_document_project_counts_reviewed": 3,
+    "individual_project_records_reviewed": 277,
+    "fully_reviewed_field_project_records": 199,
     "partially_reviewed_field_project_records": 78,
-    "remaining_action_plan_project_records": 399,
+    "remaining_action_plan_project_records": 322,
     "project_count_allocation_status": "not_allocated_to_documents",
     "chapter3_denominator_membership_review_status": "pending"
   },
-  "quality_boundary": "Safety/security is complete at 70 project rows and sports/culture is complete at 52 project rows. Life/living has 78 reviewed project rows from printed pages 60-67 and 69-71, with page 68 explicitly blocked because the official revision history lists it as revised. This raises reviewed project records to 200/599. The remaining 399 projects are not allocated or inferred. Chapter 3 denominator membership, the separate annual-progress 403-item denominator, project descriptions, policy achievement, causality, and cross-city comparability remain unresolved.",
-  "next_action": "Keep life/living printed page 68 blocked until direct final-version verification, and proceed to the next non-revised Chapter 2 field to reduce the remaining 399 Action Plan projects."
+  "quality_boundary": "Safety/security is complete at 70 project rows, sports/culture is complete at 52 project rows, and urban space is complete at 77 project rows. Life/living has 78 reviewed project rows from printed pages 60-67 and 69-71, with page 68 explicitly blocked because the official revision history lists it as revised. This raises reviewed project records to 277/599. The remaining 322 projects are not allocated or inferred. Chapter 3 denominator membership, the separate annual-progress 403-item denominator, project descriptions, policy achievement, causality, and cross-city comparability remain unresolved.",
+  "next_action": "Keep life/living printed page 68 blocked until direct final-version verification, and proceed to another non-revised Chapter 2 field to reduce the remaining 322 Action Plan projects."
 }
