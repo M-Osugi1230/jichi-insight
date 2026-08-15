@@ -59,15 +59,29 @@
       "reviewed_final_identity_increment": 0,
       "catalog_paths": ["data/catalog/sapporo_action_plan_economy_project_candidates.json"],
       "evidence_paths": ["data/evidence/sapporo_action_plan_economy_project_candidates_evidence.json"]
+    },
+    {
+      "field_id": "environment",
+      "field_ja": "環境",
+      "final_field_denominator": 74,
+      "candidate_record_count": 74,
+      "candidate_main_project_record_count": 47,
+      "candidate_other_project_record_count": 27,
+      "candidate_goal_counts": {"16": 48, "17": 26},
+      "candidate_inventory_status": "complete",
+      "final_identity_crosscheck_status": "pending_timeout",
+      "reviewed_final_identity_increment": 0,
+      "catalog_paths": ["data/catalog/sapporo_action_plan_environment_project_candidates.json"],
+      "evidence_paths": ["data/evidence/sapporo_action_plan_environment_project_candidates_evidence.json"]
     }
   ],
   "summary": {
-    "candidate_field_count": 3,
-    "candidate_record_count": 242,
-    "candidate_main_project_record_count": 162,
-    "candidate_other_project_record_count": 80,
+    "candidate_field_count": 4,
+    "candidate_record_count": 316,
+    "candidate_main_project_record_count": 209,
+    "candidate_other_project_record_count": 107,
     "candidate_reviewed_final_identity_increment": 0,
     "final_reviewed_identity_count_remains": 276
   },
-  "quality_boundary": "Candidate records are transcription and reconciliation work queues only. Count equality with an official final field denominator is not final row-identity proof. All 242 candidate rows are excluded from the 276/599 final Reviewed identity count until field-specific final-source reconciliation is completed."
+  "quality_boundary": "Candidate records are transcription and reconciliation work queues only. Count equality with an official final field denominator is not final row-identity proof. All 316 candidate rows across children/youth, community, economy, and environment are excluded from the 276/599 final Reviewed identity count until field-specific final-source reconciliation is completed."
 }
