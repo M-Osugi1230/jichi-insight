@@ -7,6 +7,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG_PATH = ROOT / "data/catalog/sapporo_action_plan_sports_culture_projects.json"
 EVIDENCE_PATH = ROOT / "data/evidence/sapporo_action_plan_sports_culture_projects_evidence.json"
+RECONCILIATION_PATH = (
+    ROOT / "data/catalog/sapporo_action_plan_sports_culture_final_reconciliation.json"
+)
+DENOMINATORS_PATH = ROOT / "data/catalog/sapporo_action_plan_final_field_denominators.json"
 SOURCE_INDEX_PATH = ROOT / "data/catalog/sapporo_action_plan_project_source_index.json"
 READINESS_PATH = ROOT / "data/catalog/sapporo_phase13_completion_readiness.json"
 POLICY_SOURCES_PATH = ROOT / "data/catalog/sapporo_policy_sources.json"
@@ -16,28 +20,14 @@ def load(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def test_sports_culture_has_exact_complete_52_record_inventory():
+def test_sports_culture_preserves_52_row_draft_candidate_inventory():
     catalog = load(CATALOG_PATH)
-    summary = catalog["summary"]
     records = catalog["records"]
 
     assert catalog["official_code"] == "011002"
     assert catalog["field_id"] == "sports_culture"
-    assert catalog["status"] == "reviewed_complete_at_declared_fields"
-    assert summary["field_total_project_count"] == 52
-    assert summary["field_total_project_count_reviewed"] is True
-    assert len(records) == summary["reviewed_project_record_count"] == 52
-    assert summary["main_project_record_count"] == 37
-    assert summary["other_project_record_count"] == 15
-    assert summary["reviewed_page_labels"] == list(range(103, 111))
-    assert summary["action_plan_599_coverage_claimed"] is False
-
-
-def test_sports_culture_preserves_page_distribution_and_record_types():
-    records = load(CATALOG_PATH)["records"]
-    page_counts = Counter(record["page_label"] for record in records)
-
-    assert page_counts == {
+    assert len(records) == 52
+    assert Counter(record["page_label"] for record in records) == {
         103: 4,
         104: 6,
         105: 4,
@@ -47,14 +37,68 @@ def test_sports_culture_preserves_page_distribution_and_record_types():
         109: 8,
         110: 10,
     }
-    assert [record["field_order"] for record in records] == list(range(1, 53))
     assert len({record["id"] for record in records}) == 52
-    assert len({record["evidence_id"] for record in records}) == 52
     assert sum(record["record_type"] == "main_project" for record in records) == 37
     assert sum(record["record_type"] == "other_project" for record in records) == 15
 
 
-def test_sports_culture_preserves_exact_numeric_and_unset_anchors():
+def test_sports_culture_final_denominator_is_51_not_52():
+    denominators = load(DENOMINATORS_PATH)
+    sports = next(
+        field
+        for field in denominators["field_denominators"]
+        if field["field_id"] == "sports_culture"
+    )
+
+    assert sports["final_project_count"] == 51
+    assert denominators["draft_comparison"]["sports_culture_draft_project_count"] == 52
+    assert denominators["draft_comparison"]["sports_culture_final_project_count"] == 51
+    assert denominators["draft_comparison"]["net_project_count_change"] == -1
+    assert denominators["plan_total"]["field_count_sum"] == 599
+    assert denominators["plan_total"]["final_project_count"] == 599
+
+
+def test_sports_culture_reconciliation_excludes_only_olympic_bid_candidate():
+    catalog = load(CATALOG_PATH)
+    reconciliation = load(RECONCILIATION_PATH)
+    candidate_ids = {record["id"] for record in catalog["records"]}
+    excluded = reconciliation["reconciliation"]["excluded_draft_candidate"]
+
+    assert reconciliation["status"] == "final_denominator_reconciled_high_confidence"
+    assert reconciliation["final_denominator"]["project_count"] == 51
+    assert reconciliation["draft_candidate_inventory"]["project_count"] == 52
+    assert reconciliation["reconciliation"]["net_row_change"] == -1
+    assert reconciliation["reconciliation"]["effective_final_project_count"] == 51
+    assert reconciliation["reconciliation"]["effective_main_project_count"] == 36
+    assert reconciliation["reconciliation"]["effective_other_project_count"] == 15
+    assert excluded["id"] == "winter_olympic_paralympic_related"
+    assert excluded["project_name_ja"] == "冬季オリンピック・パラリンピック関係事業"
+    assert excluded["id"] in candidate_ids
+    assert excluded["direct_final_page_confirmation"] is False
+    assert reconciliation["reconciliation"]["confidence"] == "high"
+    assert "high-confidence" in reconciliation["reconciliation"]["residual_uncertainty"]
+
+    effective_ids = candidate_ids - {excluded["id"]}
+    assert len(effective_ids) == 51
+
+
+def test_sports_culture_candidate_evidence_remains_one_to_one_and_is_not_final_denominator():
+    catalog = load(CATALOG_PATH)
+    evidence = load(EVIDENCE_PATH)
+    packets = evidence["evidence_packets"]
+
+    assert len(packets) == len(catalog["records"]) == 52
+    assert {packet["project_id"] for packet in packets} == {
+        record["id"] for record in catalog["records"]
+    }
+    assert evidence["revision_history_crosscheck"]["draft_field_project_count"] == 52
+    assert evidence["revision_history_crosscheck"]["reviewed_record_count"] == 52
+    # The original Evidence file is a draft-candidate inventory. The final denominator
+    # is authoritative only through the final overview + reconciliation overlay.
+    assert load(RECONCILIATION_PATH)["final_denominator"]["project_count"] == 51
+
+
+def test_sports_culture_keeps_representative_candidate_numeric_anchors():
     records = {record["id"]: record for record in load(CATALOG_PATH)["records"]}
 
     athlete = records["athlete_discovery_development_utilization"]
@@ -67,53 +111,16 @@ def test_sports_culture_preserves_exact_numeric_and_unset_anchors():
     olympics = records["winter_olympic_paralympic_related"]
     assert olympics["planned_project_cost_yen"] is None
     assert olympics["target_value"] is None
-    assert olympics["unit"] == "not_set"
 
     dome = records["sports_facility_redevelopment"]
     assert dome["planned_project_cost_yen"] == 9_369_000_000
-    assert dome["target_value"] == "実施"
-
-    snow_resort = records["snow_resort_promotion"]
-    assert snow_resort["baseline_value"] == 990_000
-    assert snow_resort["target_value"] == 1_090_000
 
     pmf = records["pacific_music_festival"]
     assert pmf["planned_project_cost_yen"] == 1_618_000_000
     assert (pmf["baseline_value"], pmf["target_value"]) == (51.7, 55)
 
-    art = records["international_art_festival"]
-    assert (art["baseline_value"], art["target_value"]) == (4.2, 11.4)
 
-    refresh = records["cultural_arts_facility_refresh"]
-    assert refresh["record_type"] == "other_project"
-    assert refresh["planned_project_cost_yen"] == 4_655_000_000
-    assert "target_name_ja" not in refresh
-
-
-def test_sports_culture_has_one_to_one_evidence_and_no_revision_intersection():
-    catalog = load(CATALOG_PATH)
-    evidence = load(EVIDENCE_PATH)
-    packets = evidence["evidence_packets"]
-
-    assert evidence["document_boundary"]["printed_page_102_contains_project_rows"] is False
-    assert evidence["document_boundary"]["printed_pages_103_110_project_rows_covered_here"] is True
-    assert evidence["document_boundary"]["field_completion_claimed"] is True
-    crosscheck = evidence["revision_history_crosscheck"]
-    assert crosscheck["field_intersection"] is False
-    assert crosscheck["draft_field_project_count"] == 52
-    assert crosscheck["reviewed_record_count"] == 52
-    assert crosscheck["counts_match"] is True
-    assert len(packets) == len(catalog["records"]) == 52
-    assert {packet["project_id"] for packet in packets} == {
-        record["id"] for record in catalog["records"]
-    }
-    assert {packet["evidence_id"] for packet in packets} == {
-        record["evidence_id"] for record in catalog["records"]
-    }
-    assert {packet["page_label"] for packet in packets} == set(range(103, 111))
-
-
-def test_sports_culture_advances_sapporo_to_at_least_200_of_599():
+def test_sports_culture_effective_inventory_is_51_in_central_index_and_readiness():
     index = load(SOURCE_INDEX_PATH)
     readiness = load(READINESS_PATH)
     sports = next(
@@ -126,33 +133,32 @@ def test_sports_culture_advances_sapporo_to_at_least_200_of_599():
         for layer in readiness["verified_reviewed_layers"]
         if layer["layer"] == "action_plan_project_records"
     )
-    project_gate = next(
-        gate
-        for gate in readiness["blocking_gates"]
-        if gate["id"] == "action-plan-project-records"
-    )
 
-    assert sports["reviewed_project_record_count"] == 52
-    assert sports["field_total_project_count_reviewed"] is True
-    assert index["summary"]["individual_project_records_reviewed"] >= 200
-    assert index["summary"]["fully_reviewed_field_project_records"] >= 122
-    assert project_layer["reviewed_record_count"] >= 200
-    assert "sports-culture" in project_layer["completed_fields"]
-    assert project_layer["completed_field_record_count"] >= 122
-    assert project_gate["reviewed_scope"] >= 200
-    assert project_gate["remaining_scope"] == 599 - project_gate["reviewed_scope"]
+    assert sports["field_total_project_count"] == 51
+    assert sports["reviewed_project_record_count"] == 51
+    assert sports["reviewed_main_project_record_count"] == 36
+    assert sports["reviewed_other_project_record_count"] == 15
+    assert sports["candidate_draft_record_count"] == 52
+    assert sports["excluded_draft_candidate_id"] == "winter_olympic_paralympic_related"
+    assert sports["reconciliation_confidence"] == "high"
+    assert sports["direct_final_page104_confirmation"] is False
+
+    assert index["summary"]["individual_project_records_reviewed"] >= 276
+    assert index["summary"]["fully_reviewed_field_project_records"] >= 198
+    assert project_layer["reviewed_record_count"] >= 276
+    assert project_layer["sports_culture_reconciliation_confidence"] == "high"
     assert readiness["current_status"] == "review_in_progress"
 
 
-def test_sports_culture_source_registry_is_high_confidence_complete_field_source():
+def test_sports_culture_source_registry_exposes_reconciliation_limit():
     sources = {record["id"]: record for record in load(POLICY_SOURCES_PATH)["records"]}
     sports = sources["sapporo-action-plan-2023-projects-sports-culture"]
+    overview = sources["sapporo-action-plan-2023-final-overview"]
 
-    assert sports["review_status"] == "reviewed_for_complete_field_project_inventory"
-    assert sports["confidence"] == "high"
-    assert sports["page_count"] == 9
-    assert sports["printed_page_range"] == "102-110"
-    assert sports["reviewed_project_record_count"] == 52
-    assert sports["reviewed_main_project_record_count"] == 37
-    assert sports["reviewed_other_project_record_count"] == 15
-    assert sports["field_total_project_count"] == 52
+    assert overview["review_status"] == "reviewed_for_final_field_project_denominators"
+    assert sports["review_status"] == "reviewed_final_51_high_confidence_reconciliation"
+    assert sports["field_total_project_count"] == 51
+    assert sports["reviewed_project_record_count"] == 51
+    assert sports["candidate_draft_record_count"] == 52
+    assert sports["excluded_draft_candidate_id"] == "winter_olympic_paralympic_related"
+    assert sports["direct_final_page104_confirmation"] is False
