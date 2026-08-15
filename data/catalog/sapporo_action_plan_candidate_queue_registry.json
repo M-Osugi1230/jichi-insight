@@ -1,0 +1,73 @@
+{
+  "id": "phase13-sapporo-action-plan-candidate-queue-registry",
+  "phase": 13,
+  "official_code": "011002",
+  "name_ja": "札幌市",
+  "updated_at": "2026-08-15",
+  "status": "candidate_reconciliation_queue_in_progress",
+  "final_reviewed_identity_count": 276,
+  "final_action_plan_project_count": 599,
+  "remaining_final_identity_count": 323,
+  "candidate_rows_do_not_increment_final_reviewed_count": true,
+  "candidate_fields": [
+    {
+      "field_id": "children_youth",
+      "field_ja": "子ども・若者",
+      "final_field_denominator": 121,
+      "candidate_record_count": 121,
+      "candidate_main_project_record_count": 74,
+      "candidate_other_project_record_count": 47,
+      "candidate_inventory_status": "complete",
+      "final_identity_crosscheck_status": "pending_cache_miss",
+      "reviewed_final_identity_increment": 0,
+      "catalog_paths": [
+        "data/catalog/sapporo_action_plan_children_youth_main_projects_goal1_candidates.json",
+        "data/catalog/sapporo_action_plan_children_youth_main_projects_goal2_candidates.json",
+        "data/catalog/sapporo_action_plan_children_youth_main_projects_goal3_candidates.json",
+        "data/catalog/sapporo_action_plan_children_youth_other_projects_candidates.json"
+      ],
+      "evidence_paths": [
+        "data/evidence/sapporo_action_plan_children_youth_main_projects_goal1_candidates_evidence.json",
+        "data/evidence/sapporo_action_plan_children_youth_main_projects_goal2_candidates_evidence.json",
+        "data/evidence/sapporo_action_plan_children_youth_main_projects_goal3_candidates_evidence.json",
+        "data/evidence/sapporo_action_plan_children_youth_other_projects_candidates_evidence.json"
+      ]
+    },
+    {
+      "field_id": "community",
+      "field_ja": "地域",
+      "final_field_denominator": 47,
+      "candidate_record_count": 47,
+      "candidate_main_project_record_count": 27,
+      "candidate_other_project_record_count": 20,
+      "candidate_inventory_status": "complete",
+      "final_identity_crosscheck_status": "pending_timeout",
+      "reviewed_final_identity_increment": 0,
+      "catalog_paths": ["data/catalog/sapporo_action_plan_community_project_candidates.json"],
+      "evidence_paths": ["data/evidence/sapporo_action_plan_community_project_candidates_evidence.json"]
+    },
+    {
+      "field_id": "economy",
+      "field_ja": "経済",
+      "final_field_denominator": 74,
+      "candidate_record_count": 74,
+      "candidate_main_project_record_count": 61,
+      "candidate_other_project_record_count": 13,
+      "candidate_goal_counts": {"10": 39, "11": 19, "12": 16},
+      "candidate_inventory_status": "complete",
+      "final_identity_crosscheck_status": "pending_timeout",
+      "reviewed_final_identity_increment": 0,
+      "catalog_paths": ["data/catalog/sapporo_action_plan_economy_project_candidates.json"],
+      "evidence_paths": ["data/evidence/sapporo_action_plan_economy_project_candidates_evidence.json"]
+    }
+  ],
+  "summary": {
+    "candidate_field_count": 3,
+    "candidate_record_count": 242,
+    "candidate_main_project_record_count": 162,
+    "candidate_other_project_record_count": 80,
+    "candidate_reviewed_final_identity_increment": 0,
+    "final_reviewed_identity_count_remains": 276
+  },
+  "quality_boundary": "Candidate records are transcription and reconciliation work queues only. Count equality with an official final field denominator is not final row-identity proof. All 242 candidate rows are excluded from the 276/599 final Reviewed identity count until field-specific final-source reconciliation is completed."
+}
