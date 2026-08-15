@@ -11,8 +11,7 @@ EVIDENCE = (
 )
 DENOMINATORS = ROOT / "data/catalog/sapporo_action_plan_final_field_denominators.json"
 SOURCE_INDEX = ROOT / "data/catalog/sapporo_action_plan_project_source_index.json"
-READINESS = ROOT / "data/catalog/sapporo_phase13_completion_readiness.json"
-POLICY_SOURCES = ROOT / "data/catalog/sapporo_policy_sources.json"
+QUEUE_REGISTRY = ROOT / "data/catalog/sapporo_action_plan_candidate_queue_registry.json"
 
 
 def load(path: Path):
@@ -112,29 +111,19 @@ def test_economy_final_denominator_matches_candidate_count_without_promotion():
     assert "does not prove final row identity equality" in catalog["quality_boundary"]
 
 
-def test_economy_candidate_queue_is_reflected_without_reviewed_increment():
-    index = load(SOURCE_INDEX)
+def test_economy_candidate_queue_is_registered_without_reviewed_increment():
+    queue = load(QUEUE_REGISTRY)
     economy = next(
-        field
-        for field in index["machizukuri_field_sources"]
-        if field["field_id"] == "economy"
+        field for field in queue["candidate_fields"] if field["field_id"] == "economy"
     )
-    readiness = load(READINESS)
-    layer = next(
-        item
-        for item in readiness["verified_reviewed_layers"]
-        if item["layer"] == "action_plan_project_records"
-    )
-    sources = {record["id"]: record for record in load(POLICY_SOURCES)["records"]}
+    index = load(SOURCE_INDEX)
 
-    assert economy["candidate_project_record_count"] == 74
+    assert economy["final_field_denominator"] == 74
+    assert economy["candidate_record_count"] == 74
     assert economy["candidate_main_project_record_count"] == 61
     assert economy["candidate_other_project_record_count"] == 13
-    assert economy["reviewed_final_identity_count"] == 0
-    assert index["summary"]["candidate_project_records_pending_final_identity_crosscheck_total"] == 242
+    assert economy["reviewed_final_identity_increment"] == 0
+    assert queue["summary"]["candidate_record_count"] == 242
+    assert queue["summary"]["candidate_reviewed_final_identity_increment"] == 0
+    assert queue["final_reviewed_identity_count"] == 276
     assert index["summary"]["individual_project_records_reviewed"] == 276
-    assert layer["candidate_queue_total_record_count"] == 242
-    assert layer["reviewed_record_count"] == 276
-    assert sources["sapporo-action-plan-2023-projects-economy"][
-        "candidate_project_record_count"
-    ] == 74
