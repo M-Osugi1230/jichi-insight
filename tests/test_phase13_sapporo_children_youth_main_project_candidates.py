@@ -107,7 +107,7 @@ def test_children_youth_candidate_inventory_is_exact_121_without_promotion():
     assert queued["candidate_main_project_record_count"] == 74
     assert queued["candidate_other_project_record_count"] == 47
     assert queued["reviewed_final_identity_increment"] == 0
-    assert queue["summary"]["candidate_record_count"] == 316
+    assert queue["summary"]["candidate_record_count"] == 323
 
     summary = index["summary"]
     assert summary["individual_project_records_reviewed"] == 276
