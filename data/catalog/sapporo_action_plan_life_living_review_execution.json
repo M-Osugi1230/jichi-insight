@@ -7,6 +7,7 @@
   "field_ja": "生活・暮らし",
   "status": "record_review_in_progress",
   "reviewed_at": "2026-08-15",
+  "reviewed_project_record_count": 43,
   "official_source": {
     "landing_url": "https://www.city.sapporo.jp/chosei/actionplan2023.html",
     "pdf_url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_2.pdf",
@@ -19,7 +20,9 @@
     "official_public_comment_results_url": "https://www.city.sapporo.jp/chosei/documents/ap2023-ikennshu.pdf",
     "listed_final_revision_locations": ["printed_page_2", "printed_page_56", "printed_page_68", "printed_pages_134_173"],
     "batch1_revision_intersection": false,
-    "rule": "当初案はナビゲーション・転記補助のみ。最終版PDFを正本とし、公式修正履歴を使ってReviewed範囲の改訂影響を明示する。"
+    "batch2_revision_intersection": false,
+    "batch3_page68_revision_intersection": true,
+    "rule": "当初案はナビゲーション・転記補助のみ。最終版PDFを正本とし、公式修正履歴を使ってReviewed範囲の改訂影響を明示する。68頁は実際の修正対象なのでBatch 3では最終版を直接再確認する。"
   },
   "review_batches": [
     {
@@ -36,14 +39,19 @@
     {
       "sequence": 2,
       "printed_pages": "64-67",
-      "status": "source_range_verified_record_review_pending",
-      "promotion_rule": "Preserve main-project target fields only when supported by the final-plan source boundary; do not infer targets for other-project rows."
+      "status": "reviewed_batch_complete_at_declared_fields",
+      "reviewed_project_record_count": 28,
+      "main_project_record_count": 28,
+      "other_project_record_count": 0,
+      "catalog_path": "data/catalog/sapporo_action_plan_life_living_projects_batch2.json",
+      "evidence_path": "data/evidence/sapporo_action_plan_life_living_projects_batch2_evidence.json",
+      "promotion_rule": "Promote rows only after preserving the final-plan source boundary and confirming that the official revision log does not list printed pages 64-67 as changed."
     },
     {
       "sequence": 3,
       "printed_pages": "68-71",
-      "status": "source_range_verified_record_review_pending",
-      "promotion_rule": "Printed page 68 is explicitly listed in the official public-comment revision log, so Batch 3 must review the final PDF content directly before promotion."
+      "status": "source_range_verified_record_review_pending_direct_final_reverification_required",
+      "promotion_rule": "Printed page 68 is explicitly listed in the official public-comment revision log, so Batch 3 must review the final PDF content directly before promotion. Draft-only transcription is insufficient."
     }
   ],
   "candidate_only_secondary_source": {
@@ -59,5 +67,5 @@
     "No linkage to the separate 403 annual principal-project targets is inferred during plan-row review.",
     "Sapporo remains review_in_progress until all municipality completion gates pass."
   ],
-  "next_action": "Continue with Batch 2 (printed pages 64-67), then directly re-verify the explicitly revised printed page 68 when entering Batch 3."
+  "next_action": "Batch 3（印刷68～71頁）へ進む。68頁は公式修正履歴対象のため最終版を直接再確認し、確認できない行はReviewedへ昇格しない。"
 }
