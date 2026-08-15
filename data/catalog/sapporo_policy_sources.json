@@ -1,5 +1,5 @@
 {
-  "version": "0.4.0",
+  "version": "0.5.0",
   "updated_at": "2026-08-15",
   "scope": "phase13_sapporo_policy_review",
   "records": [
@@ -91,9 +91,13 @@
       "indexed_at": "2026-08-15",
       "page_count": 13,
       "printed_page_range": "59-71",
-      "review_status": "reviewed_batch1_project_inventory_in_progress",
+      "review_status": "reviewed_batches1_2_project_inventory_in_progress",
       "confidence": "high",
-      "notes": "最終版公式PDFを正本として登録。Batch 1は印刷59～63頁を対象とし、59頁に事業行がない境界を保持した上で、60～63頁の15事業（主な事業12件、その他3件）を個票化。分野全体の事業数は未確定。"
+      "reviewed_project_record_count": 43,
+      "reviewed_main_project_record_count": 40,
+      "reviewed_other_project_record_count": 3,
+      "reviewed_printed_pages": "60-67",
+      "notes": "最終版公式PDFを正本として登録。印刷59頁は導入ページで事業行なし。Batch 1（59～63頁）15事業とBatch 2（64～67頁）28事業、計43事業を個票化。公式修正履歴の列挙箇所は2頁、56頁、68頁、134～173頁で、Reviewed範囲59～67頁とは交差しない。生活・暮らし分野全体の事業数は未確定。次の68頁は修正対象のため最終版の直接再確認が必要。"
     },
     {
       "id": "sapporo-action-plan-2023-public-comment-draft",
@@ -122,7 +126,8 @@
       "page_count": 108,
       "review_status": "reviewed_for_final_revision_scope",
       "confidence": "high",
-      "notes": "当初案から最終版への修正箇所として印刷2頁、56頁、68頁、134～173頁の4範囲を公式資料で確認。生活・暮らしBatch 1（59～63頁）とは交差しない。68頁はBatch 3で最終版を直接再確認する必須ポイントとして保持。"
+      "listed_revision_locations": ["printed_page_2", "printed_page_56", "printed_page_68", "printed_pages_134_173"],
+      "notes": "当初案から最終版への修正箇所として印刷2頁、56頁、68頁、134～173頁の4範囲を公式資料で確認。生活・暮らしBatch 1-2（59～67頁）とは交差しない。68頁はBatch 3で最終版を直接再確認する必須ポイントとして保持。"
     }
   ]
 }
