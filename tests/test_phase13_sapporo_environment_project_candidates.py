@@ -124,7 +124,7 @@ def test_environment_candidate_queue_is_registered_without_reviewed_increment():
     assert environment["candidate_main_project_record_count"] == 47
     assert environment["candidate_other_project_record_count"] == 27
     assert environment["reviewed_final_identity_increment"] == 0
-    assert queue["summary"]["candidate_record_count"] == 316
+    assert queue["summary"]["candidate_record_count"] == 323
     assert queue["summary"]["candidate_reviewed_final_identity_increment"] == 0
     assert queue["final_reviewed_identity_count"] == 276
     assert index["summary"]["individual_project_records_reviewed"] == 276
