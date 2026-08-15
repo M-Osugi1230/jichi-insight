@@ -134,7 +134,7 @@ def test_urban_space_has_one_to_one_evidence_and_revision_non_intersection():
     assert {packet["page_label"] for packet in packets} == set(range(122, 133))
 
 
-def test_urban_space_advances_sapporo_to_277_of_599_without_completing_city():
+def test_urban_space_remains_complete_after_sports_denominator_correction():
     index = load(SOURCE_INDEX_PATH)
     readiness = load(READINESS_PATH)
     urban = next(
@@ -162,17 +162,17 @@ def test_urban_space_advances_sapporo_to_277_of_599_without_completing_city():
     assert urban["source_lineage"]["final_pdf_visual_checks"] == [121, 122]
     assert urban["source_lineage"]["listed_revision_intersects_field"] is False
 
-    assert index["summary"]["individual_project_records_reviewed"] == 277
-    assert index["summary"]["fully_reviewed_field_project_records"] == 199
+    assert index["summary"]["individual_project_records_reviewed"] == 276
+    assert index["summary"]["fully_reviewed_field_project_records"] == 198
     assert index["summary"]["partially_reviewed_field_project_records"] == 78
-    assert index["summary"]["remaining_action_plan_project_records"] == 322
+    assert index["summary"]["remaining_action_plan_project_records"] == 323
 
-    assert project_layer["reviewed_record_count"] == 277
+    assert project_layer["reviewed_record_count"] == 276
     assert "urban-space" in project_layer["completed_fields"]
-    assert project_layer["completed_field_record_count"] == 199
-    assert project_gate["reviewed_scope"] == 277
-    assert project_gate["remaining_scope"] == 322
-    assert project_gate["state"] == "in_progress_277_of_599"
+    assert project_layer["completed_field_record_count"] == 198
+    assert project_gate["reviewed_scope"] == 276
+    assert project_gate["remaining_scope"] == 323
+    assert project_gate["state"] == "in_progress_276_of_599"
     assert readiness["current_status"] == "review_in_progress"
 
 
