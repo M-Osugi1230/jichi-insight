@@ -24,7 +24,7 @@ OTHER_CATALOG = (
     CATALOG_DIR / "sapporo_action_plan_children_youth_other_projects_candidates.json"
 )
 SOURCE_INDEX = CATALOG_DIR / "sapporo_action_plan_project_source_index.json"
-READINESS = CATALOG_DIR / "sapporo_phase13_completion_readiness.json"
+QUEUE_REGISTRY = CATALOG_DIR / "sapporo_action_plan_candidate_queue_registry.json"
 POLICY_SOURCES = CATALOG_DIR / "sapporo_policy_sources.json"
 
 
@@ -81,9 +81,15 @@ def test_children_youth_candidate_inventory_is_exact_121_without_promotion():
     main_records = load_main_records()
     other = load(OTHER_CATALOG)
     index = load(SOURCE_INDEX)
+    queue = load(QUEUE_REGISTRY)
     children = next(
         field
         for field in index["machizukuri_field_sources"]
+        if field["field_id"] == "children_youth"
+    )
+    queued = next(
+        field
+        for field in queue["candidate_fields"]
         if field["field_id"] == "children_youth"
     )
 
@@ -97,10 +103,15 @@ def test_children_youth_candidate_inventory_is_exact_121_without_promotion():
     assert children["reviewed_final_identity_count"] == 0
     assert children["action_plan_reviewed_progress_increment"] == 0
 
+    assert queued["candidate_record_count"] == 121
+    assert queued["candidate_main_project_record_count"] == 74
+    assert queued["candidate_other_project_record_count"] == 47
+    assert queued["reviewed_final_identity_increment"] == 0
+    assert queue["summary"]["candidate_record_count"] == 316
+
     summary = index["summary"]
     assert summary["individual_project_records_reviewed"] == 276
     assert summary["remaining_action_plan_project_records"] == 323
-    assert summary["candidate_project_records_pending_final_identity_crosscheck"] == 121
 
 
 def test_children_youth_page56_revision_is_description_only_boundary():
@@ -127,29 +138,22 @@ def test_children_youth_page56_revision_is_description_only_boundary():
     )
 
 
-def test_children_youth_candidate_queue_is_reflected_in_readiness_and_sources():
-    readiness = load(READINESS)
-    layer = next(
-        item
-        for item in readiness["verified_reviewed_layers"]
-        if item["layer"] == "action_plan_project_records"
-    )
-    gate = next(
-        item
-        for item in readiness["blocking_gates"]
-        if item["id"] == "action-plan-project-records"
+def test_children_youth_candidate_queue_is_reflected_without_final_promotion():
+    queue = load(QUEUE_REGISTRY)
+    queued = next(
+        field
+        for field in queue["candidate_fields"]
+        if field["field_id"] == "children_youth"
     )
     sources = {record["id"]: record for record in load(POLICY_SOURCES)["records"]}
     source = sources["sapporo-action-plan-2023-projects-children-youth"]
 
-    assert layer["reviewed_record_count"] == 276
-    assert layer["candidate_queue_record_count"] == 121
-    assert layer["candidate_queue_main_record_count"] == 74
-    assert layer["candidate_queue_other_record_count"] == 47
-    assert layer["candidate_queue_reviewed_final_identity_count"] == 0
-    assert gate["candidate_reconciliation_scope"] == 121
-    assert gate["reviewed_scope"] == 276
-    assert gate["remaining_scope"] == 323
+    assert queue["final_reviewed_identity_count"] == 276
+    assert queue["remaining_final_identity_count"] == 323
+    assert queued["candidate_record_count"] == 121
+    assert queued["candidate_main_project_record_count"] == 74
+    assert queued["candidate_other_project_record_count"] == 47
+    assert queued["reviewed_final_identity_increment"] == 0
 
     assert source["field_total_project_count"] == 121
     assert source["candidate_project_record_count"] == 121
