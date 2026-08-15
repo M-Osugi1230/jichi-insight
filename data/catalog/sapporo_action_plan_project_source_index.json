@@ -11,12 +11,13 @@
     "reviewed_sections": ["第2章 まちづくりの取組 3 計画体系別事業", "第3章 行政運営と財政運営の取組"],
     "review_status": "reviewed_for_source_document_identity"
   },
+  "final_field_denominator_registry_path": "data/catalog/sapporo_action_plan_final_field_denominators.json",
   "plan_level_aggregate": {
     "planned_project_count": 599,
     "planned_project_cost_yen": 1785400000000,
-    "source_scope": "Action Plan 2023 plan-level aggregate",
-    "allocation_status": "not_allocated_to_source_documents",
-    "review_boundary": "The official landing states 599 planned projects and total planned project cost of 1.7854 trillion yen. Neither value is distributed across the ten indexed source documents until record-level project review establishes the denominator and document membership."
+    "source_scope": "Action Plan 2023 final official aggregate",
+    "allocation_status": "final_field_denominators_reviewed_record_allocation_in_progress",
+    "review_boundary": "The final official overview states 599 planned projects and field-level denominators totaling 599. Individual project identities remain separate record-level review objects."
   },
   "machizukuri_field_sources": [
     {
@@ -27,7 +28,10 @@
       "source_role": "chapter2_project_catalog_segment",
       "source_identification_status": "official_link_verified",
       "content_review_status": "document_opened_record_index_pending",
-      "page_count": 16
+      "page_count": 16,
+      "field_total_project_count": 121,
+      "field_total_project_count_source": "final_official_overview",
+      "field_total_project_count_reviewed": true
     },
     {
       "sequence": 2,
@@ -38,14 +42,17 @@
       "source_identification_status": "official_link_verified",
       "content_review_status": "record_review_in_progress_page68_blocked",
       "page_count": 13,
+      "field_total_project_count": 85,
+      "field_total_project_count_source": "final_official_overview",
+      "field_total_project_count_reviewed": true,
       "reviewed_project_record_count": 78,
+      "unresolved_project_record_count": 7,
       "reviewed_main_project_record_count": 55,
       "reviewed_other_project_record_count": 23,
       "reviewed_page_labels": [60, 61, 62, 63, 64, 65, 66, 67, 69, 70, 71],
       "blocked_page_labels": [68],
       "intro_page_label": 59,
       "intro_page_contains_project_rows": false,
-      "field_total_project_count_reviewed": false,
       "record_catalog_paths": [
         "data/catalog/sapporo_action_plan_life_living_projects_batch1.json",
         "data/catalog/sapporo_action_plan_life_living_projects_batch2.json",
@@ -59,10 +66,12 @@
       "source_lineage": {
         "public_comment_draft_url": "https://www.city.sapporo.jp/chosei/documents/ap2023ann-honnsho-public.pdf",
         "official_public_comment_results_url": "https://www.city.sapporo.jp/chosei/documents/ap2023-ikennshu.pdf",
+        "final_field_denominator_url": "https://www.city.sapporo.jp/chosei/documents/ap2023-gaiyou.pdf",
         "listed_revision_locations": ["printed_page_2", "printed_page_56", "printed_page_68", "printed_pages_134_173"],
         "reviewed_pages_without_listed_revision": "59-67,69-71",
         "blocked_revision_page": 68,
-        "note": "59～67頁と69～71頁は公式修正履歴の列挙箇所と交差しない。68頁は修正対象なので最終版を直接再確認するまでblockedとする。当初案は転記補助のみ。"
+        "blocked_page_final_project_count_by_denominator": 7,
+        "note": "Final field denominator is 85. Reviewed non-blocked pages contain 78 records, leaving exactly seven final records unresolved on revised printed page 68. Their identities are not inferred."
       }
     },
     {
@@ -73,7 +82,10 @@
       "source_role": "chapter2_project_catalog_segment",
       "source_identification_status": "official_link_verified",
       "content_review_status": "official_link_verified_fetch_pending",
-      "page_count": null
+      "page_count": null,
+      "field_total_project_count": 47,
+      "field_total_project_count_source": "final_official_overview",
+      "field_total_project_count_reviewed": true
     },
     {
       "sequence": 4,
@@ -89,6 +101,7 @@
       "record_catalog_path": "data/catalog/sapporo_action_plan_safety_security_projects_part1.json",
       "evidence_path": "data/evidence/sapporo_action_plan_safety_security_projects_part1_evidence.json",
       "field_total_project_count": 70,
+      "field_total_project_count_source": "final_official_overview_and_final_field_inventory",
       "field_total_project_count_reviewed": true,
       "intro_page_label": 79,
       "intro_page_contains_project_rows": false,
@@ -109,7 +122,10 @@
       "source_role": "chapter2_project_catalog_segment",
       "source_identification_status": "official_link_verified",
       "content_review_status": "official_link_verified_fetch_pending",
-      "page_count": null
+      "page_count": null,
+      "field_total_project_count": 74,
+      "field_total_project_count_source": "final_official_overview",
+      "field_total_project_count_reviewed": true
     },
     {
       "sequence": 6,
@@ -118,26 +134,34 @@
       "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_6.pdf",
       "source_role": "chapter2_project_catalog_segment",
       "source_identification_status": "official_link_verified",
-      "content_review_status": "record_review_complete_at_declared_fields",
+      "content_review_status": "record_review_complete_high_confidence_final_reconciliation",
       "page_count": 9,
-      "reviewed_project_record_count": 52,
-      "reviewed_main_project_record_count": 37,
-      "reviewed_other_project_record_count": 15,
-      "reviewed_page_labels": [103, 104, 105, 106, 107, 108, 109, 110],
-      "field_total_project_count": 52,
+      "field_total_project_count": 51,
+      "field_total_project_count_source": "final_official_overview",
       "field_total_project_count_reviewed": true,
+      "reviewed_project_record_count": 51,
+      "reviewed_main_project_record_count": 36,
+      "reviewed_other_project_record_count": 15,
+      "candidate_draft_record_count": 52,
+      "candidate_reviewed_page_labels": [103, 104, 105, 106, 107, 108, 109, 110],
       "intro_page_label": 102,
       "intro_page_contains_project_rows": false,
-      "record_catalog_paths": ["data/catalog/sapporo_action_plan_sports_culture_projects.json"],
-      "evidence_paths": ["data/evidence/sapporo_action_plan_sports_culture_projects_evidence.json"],
+      "candidate_catalog_path": "data/catalog/sapporo_action_plan_sports_culture_projects.json",
+      "candidate_evidence_path": "data/evidence/sapporo_action_plan_sports_culture_projects_evidence.json",
+      "final_reconciliation_path": "data/catalog/sapporo_action_plan_sports_culture_final_reconciliation.json",
+      "effective_final_inventory_rule": "Use the 52 draft-candidate rows except winter_olympic_paralympic_related.",
+      "excluded_draft_candidate_id": "winter_olympic_paralympic_related",
+      "reconciliation_confidence": "high",
+      "direct_final_page104_confirmation": false,
       "source_lineage": {
         "public_comment_draft_url": "https://www.city.sapporo.jp/chosei/documents/ap2023ann-honnsho-public.pdf",
-        "official_public_comment_results_url": "https://www.city.sapporo.jp/chosei/documents/ap2023-ikennshu.pdf",
-        "listed_revision_locations": ["printed_page_2", "printed_page_56", "printed_page_68", "printed_pages_134_173"],
-        "listed_revision_intersects_field": false,
+        "final_field_denominator_url": "https://www.city.sapporo.jp/chosei/documents/ap2023-gaiyou.pdf",
         "draft_field_project_count": 52,
-        "reviewed_record_count_matches_field_count": true,
-        "note": "最終版の文書境界は印刷102～110頁・9頁。公式修正履歴はこの範囲と交差せず、当初案の分野集計52事業とReviewed個票52件が一致する。"
+        "final_field_project_count": 51,
+        "net_count_change": -1,
+        "bid_stop_date": "2023-12-19",
+        "finalization_press_conference_date": "2023-12-20",
+        "note": "Final denominator is directly official. The one-row identity reconciliation is high confidence, supported by the final 51 count, the draft's explicit Olympic/Paralympic-related project, the bid stop immediately before the mayor reported Action Plan completion, and the candidate row's unset cost/target. Final printed page 104 visual confirmation remains unavailable because the screenshot endpoint returns cache miss."
       }
     },
     {
@@ -148,7 +172,10 @@
       "source_role": "chapter2_project_catalog_segment",
       "source_identification_status": "official_link_verified",
       "content_review_status": "official_link_verified_fetch_pending",
-      "page_count": null
+      "page_count": null,
+      "field_total_project_count": 74,
+      "field_total_project_count_source": "final_official_overview",
+      "field_total_project_count_reviewed": true
     },
     {
       "sequence": 8,
@@ -164,6 +191,7 @@
       "reviewed_other_project_record_count": 21,
       "reviewed_page_labels": [122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132],
       "field_total_project_count": 77,
+      "field_total_project_count_source": "final_official_overview_and_reconciled_field_inventory",
       "field_total_project_count_reviewed": true,
       "intro_page_label": 121,
       "intro_page_contains_project_rows": false,
@@ -172,13 +200,15 @@
       "source_lineage": {
         "public_comment_draft_url": "https://www.city.sapporo.jp/chosei/documents/ap2023ann-honnsho-public.pdf",
         "official_public_comment_results_url": "https://www.city.sapporo.jp/chosei/documents/ap2023-ikennshu.pdf",
+        "final_field_denominator_url": "https://www.city.sapporo.jp/chosei/documents/ap2023-gaiyou.pdf",
         "listed_revision_locations": ["printed_page_2", "printed_page_56", "printed_page_68", "printed_pages_134_173"],
         "listed_revision_intersects_field": false,
         "draft_field_project_count": 77,
-        "reviewed_record_count_matches_field_count": true,
+        "final_field_project_count": 77,
+        "reviewed_record_count_matches_final_field_count": true,
         "final_pdf_visual_checks": [121, 122],
-        "pagination_note": "最終版分野PDFは印刷121～132頁の12頁。121頁は導入、122頁から事業表。当初案では区章への改頁前に133のページ番号が現れるが都市空間の事業本文は122～132頁に収まる。",
-        "note": "公式修正履歴は都市空間121～132頁と交差せず、当初案の分野集計77事業とReviewed個票77件が一致する。最終版121・122頁は画像で直接確認済み。"
+        "pagination_note": "Final field PDF is printed pages 121-132, 12 pages. Page 121 is introduction and page 122 starts project rows. The draft shows a page-number transition before the ward chapter, but urban-space project rows are contained within 122-132.",
+        "note": "Final denominator 77 independently matches the 77 reviewed identities; final pages 121 and 122 were visually checked."
       }
     }
   ],
@@ -211,14 +241,14 @@
     "chapter3_source_count": 2,
     "total_identified_document_count": 10,
     "total_action_plan_project_count": 599,
-    "per_document_project_counts_reviewed": 3,
-    "individual_project_records_reviewed": 277,
-    "fully_reviewed_field_project_records": 199,
+    "final_field_denominators_reviewed": 8,
+    "individual_project_records_reviewed": 276,
+    "fully_reviewed_field_project_records": 198,
     "partially_reviewed_field_project_records": 78,
-    "remaining_action_plan_project_records": 322,
-    "project_count_allocation_status": "not_allocated_to_documents",
+    "remaining_action_plan_project_records": 323,
+    "field_denominator_allocation_status": "complete_8_fields",
     "chapter3_denominator_membership_review_status": "pending"
   },
-  "quality_boundary": "Safety/security is complete at 70 project rows, sports/culture is complete at 52 project rows, and urban space is complete at 77 project rows. Life/living has 78 reviewed project rows from printed pages 60-67 and 69-71, with page 68 explicitly blocked because the official revision history lists it as revised. This raises reviewed project records to 277/599. The remaining 322 projects are not allocated or inferred. Chapter 3 denominator membership, the separate annual-progress 403-item denominator, project descriptions, policy achievement, causality, and cross-city comparability remain unresolved.",
-  "next_action": "Keep life/living printed page 68 blocked until direct final-version verification, and proceed to another non-revised Chapter 2 field to reduce the remaining 322 Action Plan projects."
+  "quality_boundary": "Final official field denominators are now first-class evidence: children/youth 121, life/living 85, community 47, safety/security 70, economy 74, sports/culture 51, environment 74, urban space 77, totaling 599. Record-level review currently covers 276/599: safety/security 70, sports/culture effective final inventory 51 by high-confidence reconciliation, urban space 77, and life/living 78 with seven final records still unresolved on revised page 68. The remaining 323 identities are not inferred. Chapter 3 denominator membership, the separate annual-progress 403-item denominator, project descriptions, policy achievement, causality, and cross-city comparability remain unresolved.",
+  "next_action": "Resolve final life/living page 68 identities when direct final-page evidence becomes available, and proceed with children/youth using its final official denominator of 121 while explicitly accounting for the printed-page-56 revision."
 }
