@@ -133,7 +133,7 @@ def test_sapporo_life_living_batch2_remains_reflected_after_later_progress():
     assert daily["source_lineage"]["blocked_revision_page"] == 68
 
     assert source_index["summary"]["individual_project_records_reviewed"] >= 113
-    assert source_index["summary"]["fully_reviewed_field_project_records"] == 70
+    assert source_index["summary"]["fully_reviewed_field_project_records"] >= 70
     assert source_index["summary"]["partially_reviewed_field_project_records"] >= 43
     assert source_index["summary"]["remaining_action_plan_project_records"] == (
         599 - source_index["summary"]["individual_project_records_reviewed"]
