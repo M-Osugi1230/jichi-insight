@@ -1,5 +1,5 @@
 {
-  "version": "0.7.0",
+  "version": "0.8.0",
   "updated_at": "2026-08-15",
   "scope": "phase13_sapporo_policy_review",
   "records": [
@@ -122,6 +122,28 @@
       "notes": "最終版公式PDFの文書境界は印刷102～110頁・9頁。102頁は導入・成果指標ページで事業行なし。公式修正履歴の列挙箇所（2頁、56頁、68頁、134～173頁）と交差しないため、公式当初案テキスト層を転記補助として103～110頁の52事業を個票化。分野集計52事業と個票52件が一致し、主な事業37件・その他15件をReviewed completeとした。"
     },
     {
+      "id": "sapporo-action-plan-2023-projects-urban-space",
+      "municipality_key": "sapporo-city",
+      "organization": "札幌市",
+      "category": "implementation_plan_projects",
+      "title": "アクションプラン2023 第2章 分野8 都市空間",
+      "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_8.pdf",
+      "source_kind": "pdf",
+      "availability": "published",
+      "indexed_at": "2026-08-15",
+      "page_count": 12,
+      "printed_page_range": "121-132",
+      "review_status": "reviewed_for_complete_field_project_inventory",
+      "confidence": "high",
+      "reviewed_project_record_count": 77,
+      "reviewed_main_project_record_count": 56,
+      "reviewed_other_project_record_count": 21,
+      "field_total_project_count": 77,
+      "reviewed_printed_pages": "122-132",
+      "direct_final_visual_checks": [121,122],
+      "notes": "最終版公式PDFは印刷121～132頁・12頁。121頁は導入・成果指標ページで事業行なし、122頁から事業表で、最終版121・122頁を画像で直接確認。公式修正履歴の列挙箇所（2頁、56頁、68頁、134～173頁）と交差しないため、公式当初案テキスト層を転記補助として122～132頁の77事業を個票化。分野集計77事業と個票77件が一致し、主な事業56件・その他21件をReviewed completeとした。"
+    },
+    {
       "id": "sapporo-action-plan-2023-public-comment-draft",
       "municipality_key": "sapporo-city",
       "organization": "札幌市",
@@ -149,7 +171,7 @@
       "review_status": "reviewed_for_final_revision_scope",
       "confidence": "high",
       "listed_revision_locations": ["printed_page_2", "printed_page_56", "printed_page_68", "printed_pages_134_173"],
-      "notes": "当初案から最終版への修正箇所として印刷2頁、56頁、68頁、134～173頁の4範囲を公式資料で確認。生活・暮らしの68頁は直接確認待ちとして隔離し、スポーツ・文化102～110頁は修正範囲外として転記補助利用可能。"
+      "notes": "当初案から最終版への修正箇所として印刷2頁、56頁、68頁、134～173頁の4範囲を公式資料で確認。生活・暮らしの68頁は直接確認待ちとして隔離。スポーツ・文化102～110頁および都市空間121～132頁は修正範囲外として転記補助利用可能。"
     }
   ]
 }
