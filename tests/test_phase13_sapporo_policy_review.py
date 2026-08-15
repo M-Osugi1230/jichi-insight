@@ -42,9 +42,12 @@ def test_sapporo_policy_review_uses_reviewed_official_sources():
     assert all(record["confidence"] == "high" for record in source_map.values())
 
     life_living = source_map["sapporo-action-plan-2023-projects-life-living"]
-    assert life_living["review_status"] == "reviewed_batches1_2_project_inventory_in_progress"
-    assert life_living["reviewed_project_record_count"] == 43
-    assert life_living["reviewed_printed_pages"] == "60-67"
+    assert life_living["review_status"] == "reviewed_78_records_page68_blocked"
+    assert life_living["reviewed_project_record_count"] == 78
+    assert life_living["reviewed_main_project_record_count"] == 55
+    assert life_living["reviewed_other_project_record_count"] == 23
+    assert life_living["reviewed_printed_pages"] == "60-67,69-71"
+    assert life_living["blocked_printed_pages"] == [68]
 
     draft = source_map["sapporo-action-plan-2023-public-comment-draft"]
     assert draft["review_status"] == "navigation_and_transcription_only"
