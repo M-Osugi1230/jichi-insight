@@ -123,7 +123,7 @@ def test_economy_candidate_queue_is_registered_without_reviewed_increment():
     assert economy["candidate_main_project_record_count"] == 61
     assert economy["candidate_other_project_record_count"] == 13
     assert economy["reviewed_final_identity_increment"] == 0
-    assert queue["summary"]["candidate_record_count"] == 242
+    assert queue["summary"]["candidate_record_count"] == 316
     assert queue["summary"]["candidate_reviewed_final_identity_increment"] == 0
     assert queue["final_reviewed_identity_count"] == 276
     assert index["summary"]["individual_project_records_reviewed"] == 276
