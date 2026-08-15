@@ -172,7 +172,9 @@ def test_urban_space_remains_complete_after_sports_denominator_correction():
     assert project_layer["completed_field_record_count"] == 198
     assert project_gate["reviewed_scope"] == 276
     assert project_gate["remaining_scope"] == 323
-    assert project_gate["state"] == "in_progress_276_of_599"
+    assert project_gate["state"] == (
+        "in_progress_276_of_599_all_323_remaining_candidates_prepared"
+    )
     assert readiness["current_status"] == "review_in_progress"
 
 
