@@ -118,8 +118,27 @@
       "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_6.pdf",
       "source_role": "chapter2_project_catalog_segment",
       "source_identification_status": "official_link_verified",
-      "content_review_status": "document_opened_record_index_pending",
-      "page_count": 9
+      "content_review_status": "record_review_complete_at_declared_fields",
+      "page_count": 9,
+      "reviewed_project_record_count": 52,
+      "reviewed_main_project_record_count": 37,
+      "reviewed_other_project_record_count": 15,
+      "reviewed_page_labels": [103, 104, 105, 106, 107, 108, 109, 110],
+      "field_total_project_count": 52,
+      "field_total_project_count_reviewed": true,
+      "intro_page_label": 102,
+      "intro_page_contains_project_rows": false,
+      "record_catalog_paths": ["data/catalog/sapporo_action_plan_sports_culture_projects.json"],
+      "evidence_paths": ["data/evidence/sapporo_action_plan_sports_culture_projects_evidence.json"],
+      "source_lineage": {
+        "public_comment_draft_url": "https://www.city.sapporo.jp/chosei/documents/ap2023ann-honnsho-public.pdf",
+        "official_public_comment_results_url": "https://www.city.sapporo.jp/chosei/documents/ap2023-ikennshu.pdf",
+        "listed_revision_locations": ["printed_page_2", "printed_page_56", "printed_page_68", "printed_pages_134_173"],
+        "listed_revision_intersects_field": false,
+        "draft_field_project_count": 52,
+        "reviewed_record_count_matches_field_count": true,
+        "note": "最終版の文書境界は印刷102～110頁・9頁。公式修正履歴はこの範囲と交差せず、当初案の分野集計52事業とReviewed個票52件が一致する。"
+      }
     },
     {
       "sequence": 7,
@@ -171,14 +190,14 @@
     "chapter3_source_count": 2,
     "total_identified_document_count": 10,
     "total_action_plan_project_count": 599,
-    "per_document_project_counts_reviewed": 1,
-    "individual_project_records_reviewed": 148,
-    "fully_reviewed_field_project_records": 70,
+    "per_document_project_counts_reviewed": 2,
+    "individual_project_records_reviewed": 200,
+    "fully_reviewed_field_project_records": 122,
     "partially_reviewed_field_project_records": 78,
-    "remaining_action_plan_project_records": 451,
+    "remaining_action_plan_project_records": 399,
     "project_count_allocation_status": "not_allocated_to_documents",
     "chapter3_denominator_membership_review_status": "pending"
   },
-  "quality_boundary": "Safety/security is complete at 70 project rows. Life/living now has 78 reviewed project rows from printed pages 60-67 and 69-71, with page 59 retained as an introduction without project rows and page 68 explicitly blocked because the official revision history lists it as revised. This raises reviewed project records to 148/599. The life/living field denominator is not yet complete, and the remaining 451 projects are not allocated or inferred. Chapter 3 denominator membership, the separate annual-progress 403-item denominator, project descriptions, policy achievement, causality, and cross-city comparability remain unresolved.",
-  "next_action": "Directly re-verify the final-plan printed page 68 and promote only the revised final rows that can be evidenced there."
+  "quality_boundary": "Safety/security is complete at 70 project rows and sports/culture is complete at 52 project rows. Life/living has 78 reviewed project rows from printed pages 60-67 and 69-71, with page 68 explicitly blocked because the official revision history lists it as revised. This raises reviewed project records to 200/599. The remaining 399 projects are not allocated or inferred. Chapter 3 denominator membership, the separate annual-progress 403-item denominator, project descriptions, policy achievement, causality, and cross-city comparability remain unresolved.",
+  "next_action": "Keep life/living printed page 68 blocked until direct final-version verification, and proceed to the next non-revised Chapter 2 field to reduce the remaining 399 Action Plan projects."
 }
