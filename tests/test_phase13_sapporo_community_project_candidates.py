@@ -144,7 +144,8 @@ def test_community_candidate_queue_will_be_reflected_in_central_metadata():
     assert community["candidate_main_project_record_count"] == 27
     assert community["candidate_other_project_record_count"] == 20
     assert community["reviewed_final_identity_count"] == 0
-    assert layer["candidate_queue_total_record_count"] == 168
+    assert layer["candidate_queue_total_record_count"] == 323
+    assert layer["all_remaining_final_identities_have_candidate_rows"] is True
     assert sources["sapporo-action-plan-2023-projects-community"][
         "candidate_project_record_count"
     ] == 47
