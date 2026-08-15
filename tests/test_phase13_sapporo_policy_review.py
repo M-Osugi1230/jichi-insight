@@ -49,6 +49,15 @@ def test_sapporo_policy_review_uses_reviewed_official_sources():
     assert life_living["reviewed_printed_pages"] == "60-67,69-71"
     assert life_living["blocked_printed_pages"] == [68]
 
+    sports = source_map["sapporo-action-plan-2023-projects-sports-culture"]
+    assert sports["review_status"] == "reviewed_for_complete_field_project_inventory"
+    assert sports["page_count"] == 9
+    assert sports["reviewed_project_record_count"] == 52
+    assert sports["reviewed_main_project_record_count"] == 37
+    assert sports["reviewed_other_project_record_count"] == 15
+    assert sports["field_total_project_count"] == 52
+    assert sports["reviewed_printed_pages"] == "103-110"
+
     draft = source_map["sapporo-action-plan-2023-public-comment-draft"]
     assert draft["review_status"] == "navigation_and_transcription_only"
 
