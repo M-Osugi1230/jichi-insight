@@ -19,6 +19,9 @@
     "public_comment_draft_url": "https://www.city.sapporo.jp/chosei/documents/ap2023ann-honnsho-public.pdf",
     "official_public_comment_results_url": "https://www.city.sapporo.jp/chosei/documents/ap2023-ikennshu.pdf",
     "listed_final_revision_locations": ["printed_page_2", "printed_page_56", "printed_page_68", "printed_pages_134_173"],
+    "batch1_revision_intersection": false,
+    "batch2_revision_intersection": false,
+    "batch3_page68_revision_intersection": true,
     "reviewed_pages_without_listed_revision": "59-67,69-71",
     "blocked_revision_page": 68,
     "rule": "当初案はナビゲーション・転記補助のみ。最終版PDFを正本とし、公式修正履歴を使ってReviewed範囲の改訂影響を明示する。68頁は実際の修正対象なので最終版の直接確認が取れるまでblockedとする。"
