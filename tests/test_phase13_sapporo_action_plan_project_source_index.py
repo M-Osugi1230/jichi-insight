@@ -172,7 +172,7 @@ def test_sapporo_project_source_index_keeps_review_boundary_explicit():
     assert "sports/culture 51" in boundary
     assert "276/599" in boundary
     assert "seven final records" in boundary
-    assert "323 identities" in boundary
+    assert "323 final identities" in boundary
     assert "403-item denominator" in boundary
 
 
