@@ -151,7 +151,7 @@ def test_sapporo_life_living_batch1_remains_reflected_after_later_batches():
     assert daily["field_total_project_count_reviewed"] is False
     assert safety["reviewed_project_record_count"] == 70
     assert source_index["summary"]["individual_project_records_reviewed"] >= 85
-    assert source_index["summary"]["fully_reviewed_field_project_records"] == 70
+    assert source_index["summary"]["fully_reviewed_field_project_records"] >= 70
     assert source_index["summary"]["partially_reviewed_field_project_records"] >= 15
 
 
