@@ -62,7 +62,7 @@
         "printed_page_56_changed_field": "project_description_text_only",
         "captured_candidate_fields_listed_as_revised": false,
         "direct_final_visual_check_status": "unavailable_cache_miss",
-        "note": "The final field denominator is 121 and the draft candidate inventory now also contains exactly 121 rows: 74 main and 47 other projects. This count match is not treated as final identity proof. Printed page 56 has an official description-text-only revision for 学校施設冷房設備整備事業; candidate identity/cost/target fields are kept separate from that description edit. No children/youth candidate is added to the 276 Reviewed final identities until final-source identity reconciliation is completed."
+        "note": "The final field denominator is 121 and the draft candidate inventory also contains exactly 121 rows: 74 main and 47 other projects. This count match is not treated as final identity proof. Printed page 56 has an official description-text-only revision for 学校施設冷房設備整備事業; candidate identity/cost/target fields are kept separate from that description edit. No children/youth candidate is added to the 276 Reviewed final identities until final-source identity reconciliation is completed."
       }
     },
     {
@@ -113,11 +113,30 @@
       "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_3.pdf",
       "source_role": "chapter2_project_catalog_segment",
       "source_identification_status": "official_link_verified",
-      "content_review_status": "official_link_verified_fetch_pending",
+      "content_review_status": "candidate_inventory_complete_47_final_identity_crosscheck_pending",
       "page_count": null,
       "field_total_project_count": 47,
       "field_total_project_count_source": "final_official_overview",
-      "field_total_project_count_reviewed": true
+      "field_total_project_count_reviewed": true,
+      "candidate_project_record_count": 47,
+      "candidate_main_project_record_count": 27,
+      "candidate_other_project_record_count": 20,
+      "candidate_goal6_record_count": 14,
+      "candidate_goal7_record_count": 33,
+      "reviewed_final_identity_count": 0,
+      "action_plan_reviewed_progress_increment": 0,
+      "candidate_catalog_path": "data/catalog/sapporo_action_plan_community_project_candidates.json",
+      "candidate_evidence_path": "data/evidence/sapporo_action_plan_community_project_candidates_evidence.json",
+      "source_lineage": {
+        "public_comment_draft_url": "https://www.city.sapporo.jp/chosei/documents/ap2023ann-honnsho-public.pdf",
+        "final_field_denominator_url": "https://www.city.sapporo.jp/chosei/documents/ap2023-gaiyou.pdf",
+        "final_field_project_count": 47,
+        "draft_candidate_project_count": 47,
+        "candidate_count_matches_final_denominator": true,
+        "final_source_fetch_status": "timeout",
+        "final_identity_crosscheck_status": "pending",
+        "note": "The draft candidate inventory contains 47 rows: 27 main and 20 other projects. The final official denominator is independently 47, but count equality is not treated as final identity proof. The final field PDF currently times out, so no community candidate is added to the 276 Reviewed final identities."
+      }
     },
     {
       "sequence": 4,
@@ -277,12 +296,13 @@
     "individual_project_records_reviewed": 276,
     "fully_reviewed_field_project_records": 198,
     "partially_reviewed_field_project_records": 78,
-    "candidate_project_records_pending_final_identity_crosscheck": 121,
-    "candidate_project_records_pending_field": "children_youth",
+    "candidate_project_records_pending_final_identity_crosscheck_total": 168,
+    "candidate_fields_pending_final_identity_crosscheck": ["children_youth", "community"],
+    "candidate_project_records_by_field": {"children_youth": 121, "community": 47},
     "remaining_action_plan_project_records": 323,
     "field_denominator_allocation_status": "complete_8_fields",
     "chapter3_denominator_membership_review_status": "pending"
   },
-  "quality_boundary": "Final official field denominators are first-class evidence: children/youth 121, life/living 85, community 47, safety/security 70, economy 74, sports/culture 51, environment 74, urban space 77, totaling 599. Record-level final review currently covers 276/599: safety/security 70, sports/culture effective final inventory 51 by high-confidence reconciliation, urban space 77, and life/living 78 with seven final records unresolved on revised page 68. Separately, children/youth now has a complete 121-row draft candidate inventory (74 main, 47 other) with one-to-one evidence locations, but none of those candidates is counted as a final Reviewed identity until final-source reconciliation is completed. The remaining 323 final identities are not inferred. Chapter 3 denominator membership, the separate annual-progress 403-item denominator, project descriptions, policy achievement, causality, and cross-city comparability remain unresolved.",
-  "next_action": "Use the complete children/youth 121-row candidate inventory as a reconciliation queue against the final field source without incrementing the 276 Reviewed count prematurely; keep life/living page 68's seven final identities blocked until direct final-page evidence is available."
+  "quality_boundary": "Final official field denominators are first-class evidence: children/youth 121, life/living 85, community 47, safety/security 70, economy 74, sports/culture 51, environment 74, urban space 77, totaling 599. Record-level final review currently covers 276/599: safety/security 70, sports/culture effective final inventory 51 by high-confidence reconciliation, urban space 77, and life/living 78 with seven final records unresolved on revised page 68. Separately, children/youth has a complete 121-row draft candidate inventory and community has a complete 47-row draft candidate inventory, for 168 candidate rows pending final-source reconciliation. None of those 168 candidate rows is counted as a final Reviewed identity. The remaining 323 final identities are not inferred. Chapter 3 denominator membership, the separate annual-progress 403-item denominator, project descriptions, policy achievement, causality, and cross-city comparability remain unresolved.",
+  "next_action": "Use the 168-row candidate queue across children/youth and community as final-source reconciliation work without incrementing the 276 Reviewed count prematurely; keep life/living page 68's seven final identities blocked until direct final-page evidence is available, and prepare economy/environment candidate inventories while their final field PDFs are timing out."
 }
