@@ -55,8 +55,18 @@ def test_batch3_safe_pages_preserve_numeric_and_milestone_anchors():
     female = records["female_specific_cancer_exam_system"]
     assert female["planned_project_cost_yen"] == 176_000_000
     assert female["target_components"] == [
-        {"component": "乳がん検診", "baseline_value": 15.9, "target_value": 18.0, "unit": "percent"},
-        {"component": "子宮がん検診", "baseline_value": 27.9, "target_value": 30.3, "unit": "percent"},
+        {
+            "component": "乳がん検診",
+            "baseline_value": 15.9,
+            "target_value": 18.0,
+            "unit": "percent",
+        },
+        {
+            "component": "子宮がん検診",
+            "baseline_value": 27.9,
+            "target_value": 30.3,
+            "unit": "percent",
+        },
     ]
 
     home = records["community_integrated_medical_care"]
