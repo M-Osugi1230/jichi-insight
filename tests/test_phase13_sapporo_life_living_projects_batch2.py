@@ -125,11 +125,13 @@ def test_sapporo_life_living_batch2_remains_reflected_after_later_progress():
     assert batch2["reviewed_project_record_count"] == 28
     assert batch2["main_project_record_count"] == 28
     assert execution["reviewed_project_record_count"] >= 43
+    assert daily["field_total_project_count"] == 85
+    assert daily["field_total_project_count_reviewed"] is True
     assert daily["reviewed_project_record_count"] >= 43
+    assert daily["unresolved_project_record_count"] == 7
     assert daily["reviewed_main_project_record_count"] >= 40
     assert daily["reviewed_other_project_record_count"] >= 3
     assert set(range(60, 68)).issubset(set(daily["reviewed_page_labels"]))
-    assert daily["field_total_project_count_reviewed"] is False
     assert daily["source_lineage"]["blocked_revision_page"] == 68
 
     assert source_index["summary"]["individual_project_records_reviewed"] >= 113
@@ -145,11 +147,14 @@ def test_sapporo_life_living_source_metadata_keeps_page68_gate_after_later_progr
     final_source = sources["sapporo-action-plan-2023-projects-life-living"]
     revision_source = sources["sapporo-action-plan-2023-public-comment-results"]
 
-    assert final_source["review_status"].startswith("reviewed_")
-    assert final_source["reviewed_project_record_count"] >= 43
-    assert final_source["reviewed_main_project_record_count"] >= 40
-    assert final_source["reviewed_other_project_record_count"] >= 3
+    assert final_source["review_status"] == "reviewed_78_of_final_85_page68_blocked"
+    assert final_source["field_total_project_count"] == 85
+    assert final_source["reviewed_project_record_count"] == 78
+    assert final_source["unresolved_project_record_count"] == 7
+    assert final_source["reviewed_main_project_record_count"] == 55
+    assert final_source["reviewed_other_project_record_count"] == 23
     assert 68 in final_source["blocked_printed_pages"]
+    assert revision_source["review_status"] == "reviewed_for_public_comment_revision_scope_only"
     assert revision_source["listed_revision_locations"] == [
         "printed_page_2",
         "printed_page_56",
@@ -173,7 +178,8 @@ def test_sapporo_readiness_never_regresses_below_batch2_milestone():
 
     assert readiness["current_status"] == "review_in_progress"
     assert project_layer["reviewed_record_count"] >= 113
-    assert project_layer["active_partial_field_reviewed_record_count"] >= 43
+    assert project_layer["active_partial_field_final_denominator"] == 85
+    assert project_layer["active_partial_field_unresolved_record_count"] == 7
     assert project_gate["required_scope"] == 599
     assert project_gate["reviewed_scope"] >= 113
     assert project_gate["remaining_scope"] == 599 - project_gate["reviewed_scope"]
