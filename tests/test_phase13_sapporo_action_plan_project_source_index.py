@@ -88,6 +88,28 @@ def test_sapporo_safety_source_records_complete_field_project_inventory():
     assert safety["reviewed_page_labels"] == list(range(80, 89))
 
 
+def test_sapporo_sports_culture_source_records_complete_field_project_inventory():
+    index = load(INDEX_PATH)
+    sports = next(
+        record
+        for record in index["machizukuri_field_sources"]
+        if record["field_id"] == "sports_culture"
+    )
+
+    assert sports["content_review_status"] == "record_review_complete_at_declared_fields"
+    assert sports["reviewed_project_record_count"] == 52
+    assert sports["reviewed_main_project_record_count"] == 37
+    assert sports["reviewed_other_project_record_count"] == 15
+    assert sports["field_total_project_count"] == 52
+    assert sports["field_total_project_count_reviewed"] is True
+    assert sports["intro_page_label"] == 102
+    assert sports["intro_page_contains_project_rows"] is False
+    assert sports["reviewed_page_labels"] == list(range(103, 111))
+    assert sports["source_lineage"]["listed_revision_intersects_field"] is False
+    assert sports["source_lineage"]["draft_field_project_count"] == 52
+    assert sports["source_lineage"]["reviewed_record_count_matches_field_count"] is True
+
+
 def test_sapporo_daily_life_source_records_partial_review_without_false_field_total():
     index = load(INDEX_PATH)
     daily = next(
@@ -119,19 +141,22 @@ def test_sapporo_project_source_index_keeps_global_599_allocation_unresolved():
     assert aggregate["allocation_status"] == "not_allocated_to_source_documents"
     assert summary["total_identified_document_count"] == 10
     assert summary["total_action_plan_project_count"] == 599
-    assert summary["per_document_project_counts_reviewed"] == 1
-    assert summary["individual_project_records_reviewed"] >= 148
-    assert summary["fully_reviewed_field_project_records"] == 70
+    assert summary["per_document_project_counts_reviewed"] >= 2
+    assert summary["individual_project_records_reviewed"] >= 200
+    assert summary["fully_reviewed_field_project_records"] >= 122
     assert summary["partially_reviewed_field_project_records"] >= 78
     assert summary["remaining_action_plan_project_records"] == (
         599 - summary["individual_project_records_reviewed"]
     )
     assert summary["project_count_allocation_status"] == "not_allocated_to_documents"
     assert summary["chapter3_denominator_membership_review_status"] == "pending"
-    assert sum("field_total_project_count" in record for record in fields) == 1
+    assert sum("field_total_project_count" in record for record in fields) >= 2
     assert next(
         record for record in fields if record["field_id"] == "safety_security"
     )["field_total_project_count"] == 70
+    assert next(
+        record for record in fields if record["field_id"] == "sports_culture"
+    )["field_total_project_count"] == 52
     assert all(
         record["project_denominator_membership_status"] == "pending_record_level_review"
         for record in chapter3
@@ -144,6 +169,7 @@ def test_sapporo_project_source_index_keeps_review_boundary_explicit():
     summary = index["summary"]
 
     assert "70 project rows" in boundary
+    assert "52 project rows" in boundary
     assert f'{summary["individual_project_records_reviewed"]}/599' in boundary
     assert f'{summary["remaining_action_plan_project_records"]} projects' in boundary
     assert "Chapter 3 denominator membership" in boundary
