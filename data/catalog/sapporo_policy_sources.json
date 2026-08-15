@@ -1,5 +1,5 @@
 {
-  "version": "0.9.0",
+  "version": "0.10.0",
   "updated_at": "2026-08-15",
   "scope": "phase13_sapporo_policy_review",
   "records": [
@@ -78,6 +78,34 @@
       "review_status": "reviewed_for_indicator_current_values",
       "confidence": "high",
       "notes": "公式3ページPDFを200dpi画像化して行単位レビュー。33表示行から灰色再掲7件を除く26ユニーク指標の現状値・実測年度・目標値・札幌市の傾向矢印をReviewed化し、17上昇・8下降・1未集計の公式集計と一致を確認。"
+    },
+    {
+      "id": "sapporo-action-plan-2023-projects-children-youth",
+      "municipality_key": "sapporo-city",
+      "organization": "札幌市",
+      "category": "implementation_plan_projects_candidate_inventory",
+      "title": "アクションプラン2023 第2章 分野1 子ども・若者",
+      "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_1.pdf",
+      "source_kind": "pdf",
+      "availability": "published",
+      "indexed_at": "2026-08-15",
+      "page_count": 16,
+      "printed_page_range": "43-58",
+      "review_status": "candidate_inventory_complete_121_final_identity_crosscheck_pending",
+      "confidence": "high_for_final_denominator_and_candidate_transcription_not_final_identity",
+      "field_total_project_count": 121,
+      "candidate_project_record_count": 121,
+      "candidate_main_project_record_count": 74,
+      "candidate_other_project_record_count": 47,
+      "reviewed_final_identity_count": 0,
+      "action_plan_reviewed_progress_increment": 0,
+      "candidate_catalog_paths": [
+        "data/catalog/sapporo_action_plan_children_youth_main_projects_goal1_candidates.json",
+        "data/catalog/sapporo_action_plan_children_youth_main_projects_goal2_candidates.json",
+        "data/catalog/sapporo_action_plan_children_youth_main_projects_goal3_candidates.json",
+        "data/catalog/sapporo_action_plan_children_youth_other_projects_candidates.json"
+      ],
+      "notes": "最終概要で分野分母121を確認し、公式当初案のテキスト層から主な事業74件・その他47件＝候補121件を抽出、Evidenceも121件1対1で保持する。候補件数と最終分母は一致するが、最終版PDFの個票直接照合がCache missで未完了のため、候補121件は最終Reviewed 276/599へ一切加算しない。印刷56頁の『学校施設冷房設備整備事業』は公式修正資料で事業内容本文のみ変更と確認し、候補の事業名・担当・費用・目標とは分離して管理する。"
     },
     {
       "id": "sapporo-action-plan-2023-projects-safety-security",
