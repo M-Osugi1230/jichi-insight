@@ -96,6 +96,23 @@ def test_sapporo_safety_source_records_complete_field_project_inventory():
     ]
 
 
+def test_sapporo_daily_life_source_records_partial_review_without_false_field_total():
+    index = load(INDEX_PATH)
+    daily = next(
+        record
+        for record in index["machizukuri_field_sources"]
+        if record["field_id"] == "daily_life"
+    )
+
+    assert daily["reviewed_project_record_count"] >= 43
+    assert daily["field_total_project_count_reviewed"] is False
+    assert "field_total_project_count" not in daily
+    assert daily["intro_page_label"] == 59
+    assert daily["intro_page_contains_project_rows"] is False
+    assert set(range(60, 68)).issubset(set(daily["reviewed_page_labels"]))
+    assert daily["source_lineage"]["next_unreviewed_page_68_is_listed_revision"] is True
+
+
 def test_sapporo_project_source_index_keeps_global_599_allocation_unresolved():
     index = load(INDEX_PATH)
     fields = index["machizukuri_field_sources"]
@@ -109,7 +126,12 @@ def test_sapporo_project_source_index_keeps_global_599_allocation_unresolved():
     assert summary["total_identified_document_count"] == 10
     assert summary["total_action_plan_project_count"] == 599
     assert summary["per_document_project_counts_reviewed"] == 1
-    assert summary["individual_project_records_reviewed"] == 70
+    assert summary["individual_project_records_reviewed"] >= 113
+    assert summary["fully_reviewed_field_project_records"] == 70
+    assert summary["partially_reviewed_field_project_records"] >= 43
+    assert summary["remaining_action_plan_project_records"] == (
+        599 - summary["individual_project_records_reviewed"]
+    )
     assert summary["project_count_allocation_status"] == "not_allocated_to_documents"
     assert summary["chapter3_denominator_membership_review_status"] == "pending"
     assert sum("field_total_project_count" in record for record in fields) == 1
@@ -126,12 +148,12 @@ def test_sapporo_project_source_index_keeps_review_boundary_explicit():
     index = load(INDEX_PATH)
     boundary = index["quality_boundary"]
 
-    assert "70 projects" in boundary
-    assert "remaining 529 projects" in boundary
-    assert "does not allocate" in boundary
-    assert "infer counts from page counts" in boundary
-    assert "assume Chapter 3 denominator membership" in boundary
+    assert "70 project rows" in boundary
+    assert "113/599" in boundary
+    assert "486 projects" in boundary
+    assert "Chapter 3 denominator membership" in boundary
     assert "annual-progress 403-item denominator" in boundary
+    assert "page 68" in boundary
 
 
 def test_sapporo_manifest_records_safety_field_completion_without_city_completion():
