@@ -147,8 +147,10 @@ def test_sapporo_life_living_batch1_remains_reflected_after_later_batches():
     assert batch1["reviewed_project_record_count"] == 15
     assert execution["source_history"]["batch1_revision_intersection"] is False
 
+    assert daily["field_total_project_count"] == 85
+    assert daily["field_total_project_count_reviewed"] is True
     assert daily["reviewed_project_record_count"] >= 15
-    assert daily["field_total_project_count_reviewed"] is False
+    assert daily["unresolved_project_record_count"] == 7
     assert safety["reviewed_project_record_count"] == 70
     assert source_index["summary"]["individual_project_records_reviewed"] >= 85
     assert source_index["summary"]["fully_reviewed_field_project_records"] >= 70
@@ -162,12 +164,14 @@ def test_sapporo_life_living_source_metadata_preserves_lineage_roles():
     draft_source = sources["sapporo-action-plan-2023-public-comment-draft"]
     revision_source = sources["sapporo-action-plan-2023-public-comment-results"]
 
-    assert final_source["review_status"].startswith("reviewed_")
+    assert final_source["review_status"] == "reviewed_78_of_final_85_page68_blocked"
     assert final_source["page_count"] == 13
-    assert final_source.get("reviewed_project_record_count", 15) >= 15
+    assert final_source["field_total_project_count"] == 85
+    assert final_source["reviewed_project_record_count"] == 78
+    assert final_source["unresolved_project_record_count"] == 7
     assert draft_source["review_status"] == "navigation_and_transcription_only"
-    assert revision_source["review_status"] == "reviewed_for_final_revision_scope"
-    assert "68頁" in revision_source["notes"]
+    assert revision_source["review_status"] == "reviewed_for_public_comment_revision_scope_only"
+    assert "全変更を網羅" in revision_source["notes"]
 
 
 def test_sapporo_readiness_never_regresses_below_batch1_milestone():
@@ -185,7 +189,8 @@ def test_sapporo_readiness_never_regresses_below_batch1_milestone():
 
     assert readiness["current_status"] == "review_in_progress"
     assert project_layer["reviewed_record_count"] >= 85
-    assert project_layer["active_partial_field_reviewed_record_count"] >= 15
+    assert project_layer["active_partial_field_final_denominator"] == 85
+    assert project_layer["active_partial_field_unresolved_record_count"] == 7
     assert project_gate["required_scope"] == 599
     assert project_gate["reviewed_scope"] >= 85
     assert project_gate["remaining_scope"] == 599 - project_gate["reviewed_scope"]
