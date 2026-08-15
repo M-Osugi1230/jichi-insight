@@ -3,15 +3,12 @@
   "phase": 13,
   "official_code": "011002",
   "name_ja": "札幌市",
-  "reviewed_at": "2026-08-12",
+  "reviewed_at": "2026-08-15",
   "status": "source_documents_indexed_project_review_in_progress",
   "source_landing": {
     "title": "第2次札幌市まちづくり戦略ビジョン・アクションプラン2023",
     "url": "https://www.city.sapporo.jp/chosei/actionplan2023.html",
-    "reviewed_sections": [
-      "第2章 まちづくりの取組 3 計画体系別事業",
-      "第3章 行政運営と財政運営の取組"
-    ],
+    "reviewed_sections": ["第2章 まちづくりの取組 3 計画体系別事業", "第3章 行政運営と財政運営の取組"],
     "review_status": "reviewed_for_source_document_identity"
   },
   "plan_level_aggregate": {
@@ -39,8 +36,21 @@
       "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_2.pdf",
       "source_role": "chapter2_project_catalog_segment",
       "source_identification_status": "official_link_verified",
-      "content_review_status": "document_opened_record_index_pending",
-      "page_count": 13
+      "content_review_status": "record_review_in_progress_batch1_complete",
+      "page_count": 13,
+      "reviewed_project_record_count": 15,
+      "reviewed_page_labels": [60, 61, 62, 63],
+      "intro_page_label": 59,
+      "intro_page_contains_project_rows": false,
+      "field_total_project_count_reviewed": false,
+      "record_catalog_paths": ["data/catalog/sapporo_action_plan_life_living_projects_batch1.json"],
+      "evidence_paths": ["data/evidence/sapporo_action_plan_life_living_projects_batch1_evidence.json"],
+      "source_lineage": {
+        "public_comment_draft_url": "https://www.city.sapporo.jp/chosei/documents/ap2023ann-honnsho-public.pdf",
+        "official_public_comment_results_url": "https://www.city.sapporo.jp/chosei/documents/ap2023-ikennshu.pdf",
+        "listed_revision_intersects_reviewed_pages": false,
+        "note": "公式修正履歴が列挙する修正は印刷2頁、56頁、68頁、134～173頁。Batch 1の59～63頁とは交差しない。当初案は転記補助のみ。"
+      }
     },
     {
       "sequence": 3,
@@ -62,31 +72,15 @@
       "content_review_status": "record_review_complete_at_declared_fields",
       "page_count": 10,
       "reviewed_project_record_count": 70,
-      "reviewed_page_labels": [
-        80,
-        81,
-        82,
-        83,
-        84,
-        85,
-        86,
-        87,
-        88
-      ],
+      "reviewed_page_labels": [80, 81, 82, 83, 84, 85, 86, 87, 88],
       "record_catalog_path": "data/catalog/sapporo_action_plan_safety_security_projects_part1.json",
       "evidence_path": "data/evidence/sapporo_action_plan_safety_security_projects_part1_evidence.json",
       "field_total_project_count": 70,
       "field_total_project_count_reviewed": true,
       "intro_page_label": 79,
       "intro_page_contains_project_rows": false,
-      "record_catalog_paths": [
-        "data/catalog/sapporo_action_plan_safety_security_projects_part1.json",
-        "data/catalog/sapporo_action_plan_safety_security_projects_part2.json"
-      ],
-      "evidence_paths": [
-        "data/evidence/sapporo_action_plan_safety_security_projects_part1_evidence.json",
-        "data/evidence/sapporo_action_plan_safety_security_projects_part2_evidence.json"
-      ]
+      "record_catalog_paths": ["data/catalog/sapporo_action_plan_safety_security_projects_part1.json", "data/catalog/sapporo_action_plan_safety_security_projects_part2.json"],
+      "evidence_paths": ["data/evidence/sapporo_action_plan_safety_security_projects_part1_evidence.json", "data/evidence/sapporo_action_plan_safety_security_projects_part2_evidence.json"]
     },
     {
       "sequence": 5,
@@ -159,10 +153,12 @@
     "total_identified_document_count": 10,
     "total_action_plan_project_count": 599,
     "per_document_project_counts_reviewed": 1,
-    "individual_project_records_reviewed": 70,
+    "individual_project_records_reviewed": 85,
+    "fully_reviewed_field_project_records": 70,
+    "partially_reviewed_field_project_records": 15,
     "project_count_allocation_status": "not_allocated_to_documents",
     "chapter3_denominator_membership_review_status": "pending"
   },
-  "quality_boundary": "The official Action Plan landing identifies eight Chapter 2 field documents plus two Chapter 3 administrative/fiscal documents and separately reports a plan-level total of 599 planned projects. The complete 10-page safety/security field document is now visually reviewed at declared row depth: printed page 79 has no project rows, and printed pages 80-88 contain 70 projects. Main-project rows retain their printed target fields while その他の事業 rows remain limited to identity, planned cost, and responsible department. This establishes the safety/security field count only; it does not allocate the remaining 529 projects among other documents, infer counts from page counts, assume Chapter 3 denominator membership, merge plan projects with the separate annual-progress 403-item denominator, or promote project descriptions or policy achievement.",
-  "next_action": "Safety/security is complete at declared project-row depth with 70 projects. Continue record-level review across the other seven Chapter 2 field PDFs, then independently determine Chapter 3 membership in the 599-project denominator before reconciling complete Action Plan coverage."
+  "quality_boundary": "The official Action Plan landing identifies eight Chapter 2 field documents plus two Chapter 3 administrative/fiscal documents and separately reports a plan-level total of 599 planned projects. Safety/security is complete at 70 project rows. Life/living Batch 1 adds 15 page-anchored project rows from printed pages 60-63, with printed page 59 confirmed as the section/indicator introduction and no project rows. The final field PDF remains authoritative; the public-comment draft is transcription support only, and the official revision log lists changes at printed pages 2, 56, 68, and 134-173, none intersecting Batch 1. This raises reviewed project records to 85/599 but does not establish the life/living field denominator, allocate the remaining 514 projects, infer Chapter 3 denominator membership, merge plan projects with the separate annual-progress 403-item denominator, or promote project descriptions or policy achievement.",
+  "next_action": "Continue life/living Batch 2 (printed pages 64-67); treat printed page 68 in Batch 3 as an explicit final-version re-verification point because it appears in the official revision log."
 }
