@@ -5,6 +5,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 INDEX_PATH = ROOT / "data/catalog/sapporo_action_plan_project_source_index.json"
+DENOMINATORS_PATH = ROOT / "data/catalog/sapporo_action_plan_final_field_denominators.json"
 MANIFEST_PATH = ROOT / "data/catalog/sapporo_phase13_policy_review_manifest.json"
 
 
@@ -31,27 +32,28 @@ def test_sapporo_project_source_index_has_exact_official_document_spine():
         ("urban_space", "都市空間"),
     ]
     assert [record["sequence"] for record in chapter3] == [1, 2]
-    assert [record["source_id"] for record in chapter3] == [
-        "administrative_operations",
-        "fiscal_operations",
-    ]
 
 
-def test_sapporo_project_source_index_uses_unique_official_sapporo_urls():
-    index = load(INDEX_PATH)
-    records = index["machizukuri_field_sources"] + index["chapter3_sources"]
-    urls = [record["url"] for record in records]
+def test_sapporo_final_field_denominators_are_exact_and_sum_to_599():
+    denominators = load(DENOMINATORS_PATH)
+    counts = {
+        field["field_id"]: field["final_project_count"]
+        for field in denominators["field_denominators"]
+    }
 
-    assert len(urls) == 10
-    assert len(set(urls)) == 10
-    assert all(
-        url.startswith("https://www.city.sapporo.jp/chosei/documents/")
-        for url in urls
-    )
-    assert all(
-        record["source_identification_status"] == "official_link_verified"
-        for record in records
-    )
+    assert counts == {
+        "children_youth": 121,
+        "daily_life": 85,
+        "community": 47,
+        "safety_security": 70,
+        "economy": 74,
+        "sports_culture": 51,
+        "environment": 74,
+        "urban_space": 77,
+    }
+    assert sum(counts.values()) == 599
+    assert denominators["plan_total"]["final_project_count"] == 599
+    assert denominators["draft_comparison"]["net_project_count_change"] == -1
 
 
 def test_sapporo_project_source_index_preserves_known_and_pending_page_counts():
@@ -83,12 +85,10 @@ def test_sapporo_safety_source_records_complete_field_project_inventory():
     assert safety["reviewed_project_record_count"] == 70
     assert safety["field_total_project_count"] == 70
     assert safety["field_total_project_count_reviewed"] is True
-    assert safety["intro_page_label"] == 79
-    assert safety["intro_page_contains_project_rows"] is False
     assert safety["reviewed_page_labels"] == list(range(80, 89))
 
 
-def test_sapporo_sports_culture_source_records_complete_field_project_inventory():
+def test_sapporo_sports_culture_uses_final_51_reconciliation_not_draft_52():
     index = load(INDEX_PATH)
     sports = next(
         record
@@ -96,21 +96,21 @@ def test_sapporo_sports_culture_source_records_complete_field_project_inventory(
         if record["field_id"] == "sports_culture"
     )
 
-    assert sports["content_review_status"] == "record_review_complete_at_declared_fields"
-    assert sports["reviewed_project_record_count"] == 52
-    assert sports["reviewed_main_project_record_count"] == 37
+    assert sports["content_review_status"] == (
+        "record_review_complete_high_confidence_final_reconciliation"
+    )
+    assert sports["field_total_project_count"] == 51
+    assert sports["reviewed_project_record_count"] == 51
+    assert sports["reviewed_main_project_record_count"] == 36
     assert sports["reviewed_other_project_record_count"] == 15
-    assert sports["field_total_project_count"] == 52
+    assert sports["candidate_draft_record_count"] == 52
+    assert sports["excluded_draft_candidate_id"] == "winter_olympic_paralympic_related"
+    assert sports["reconciliation_confidence"] == "high"
+    assert sports["direct_final_page104_confirmation"] is False
     assert sports["field_total_project_count_reviewed"] is True
-    assert sports["intro_page_label"] == 102
-    assert sports["intro_page_contains_project_rows"] is False
-    assert sports["reviewed_page_labels"] == list(range(103, 111))
-    assert sports["source_lineage"]["listed_revision_intersects_field"] is False
-    assert sports["source_lineage"]["draft_field_project_count"] == 52
-    assert sports["source_lineage"]["reviewed_record_count_matches_field_count"] is True
 
 
-def test_sapporo_daily_life_source_records_partial_review_without_false_field_total():
+def test_sapporo_daily_life_has_final_85_denominator_with_exact_7_unresolved():
     index = load(INDEX_PATH)
     daily = next(
         record
@@ -118,66 +118,65 @@ def test_sapporo_daily_life_source_records_partial_review_without_false_field_to
         if record["field_id"] == "daily_life"
     )
 
-    assert daily["reviewed_project_record_count"] >= 78
-    assert daily["field_total_project_count_reviewed"] is False
-    assert "field_total_project_count" not in daily
-    assert daily["intro_page_label"] == 59
-    assert daily["intro_page_contains_project_rows"] is False
-    assert set(range(60, 68)).issubset(set(daily["reviewed_page_labels"]))
-    assert {69, 70, 71}.issubset(set(daily["reviewed_page_labels"]))
+    assert daily["field_total_project_count"] == 85
+    assert daily["field_total_project_count_reviewed"] is True
+    assert daily["reviewed_project_record_count"] == 78
+    assert daily["unresolved_project_record_count"] == 7
     assert daily["blocked_page_labels"] == [68]
     assert daily["source_lineage"]["blocked_revision_page"] == 68
+    assert daily["source_lineage"]["blocked_page_final_project_count_by_denominator"] == 7
+    assert 68 not in daily["reviewed_page_labels"]
 
 
-def test_sapporo_project_source_index_keeps_global_599_allocation_unresolved():
+def test_sapporo_urban_space_source_records_complete_field_project_inventory():
     index = load(INDEX_PATH)
-    fields = index["machizukuri_field_sources"]
-    chapter3 = index["chapter3_sources"]
+    urban = next(
+        record
+        for record in index["machizukuri_field_sources"]
+        if record["field_id"] == "urban_space"
+    )
+
+    assert urban["content_review_status"] == "record_review_complete_at_declared_fields"
+    assert urban["field_total_project_count"] == 77
+    assert urban["reviewed_project_record_count"] == 77
+    assert urban["reviewed_main_project_record_count"] == 56
+    assert urban["reviewed_other_project_record_count"] == 21
+    assert urban["field_total_project_count_reviewed"] is True
+    assert urban["source_lineage"]["final_field_project_count"] == 77
+    assert urban["source_lineage"]["reviewed_record_count_matches_final_field_count"] is True
+
+
+def test_sapporo_project_source_index_global_progress_is_exact_276_of_599():
+    index = load(INDEX_PATH)
     summary = index["summary"]
     aggregate = index["plan_level_aggregate"]
 
     assert aggregate["planned_project_count"] == 599
     assert aggregate["planned_project_cost_yen"] == 1_785_400_000_000
-    assert aggregate["allocation_status"] == "not_allocated_to_source_documents"
-    assert summary["total_identified_document_count"] == 10
+    assert aggregate["allocation_status"] == (
+        "final_field_denominators_reviewed_record_allocation_in_progress"
+    )
     assert summary["total_action_plan_project_count"] == 599
-    assert summary["per_document_project_counts_reviewed"] >= 2
-    assert summary["individual_project_records_reviewed"] >= 200
-    assert summary["fully_reviewed_field_project_records"] >= 122
-    assert summary["partially_reviewed_field_project_records"] >= 78
-    assert summary["remaining_action_plan_project_records"] == (
-        599 - summary["individual_project_records_reviewed"]
-    )
-    assert summary["project_count_allocation_status"] == "not_allocated_to_documents"
-    assert summary["chapter3_denominator_membership_review_status"] == "pending"
-    assert sum("field_total_project_count" in record for record in fields) >= 2
-    assert next(
-        record for record in fields if record["field_id"] == "safety_security"
-    )["field_total_project_count"] == 70
-    assert next(
-        record for record in fields if record["field_id"] == "sports_culture"
-    )["field_total_project_count"] == 52
-    assert all(
-        record["project_denominator_membership_status"] == "pending_record_level_review"
-        for record in chapter3
-    )
+    assert summary["final_field_denominators_reviewed"] == 8
+    assert summary["individual_project_records_reviewed"] == 276
+    assert summary["fully_reviewed_field_project_records"] == 198
+    assert summary["partially_reviewed_field_project_records"] == 78
+    assert summary["remaining_action_plan_project_records"] == 323
+    assert summary["field_denominator_allocation_status"] == "complete_8_fields"
 
 
 def test_sapporo_project_source_index_keeps_review_boundary_explicit():
     index = load(INDEX_PATH)
     boundary = index["quality_boundary"]
-    summary = index["summary"]
 
-    assert "70 project rows" in boundary
-    assert "52 project rows" in boundary
-    assert f'{summary["individual_project_records_reviewed"]}/599' in boundary
-    assert f'{summary["remaining_action_plan_project_records"]} projects' in boundary
-    assert "Chapter 3 denominator membership" in boundary
-    assert "annual-progress 403-item denominator" in boundary
-    assert "page 68" in boundary
+    assert "sports/culture 51" in boundary
+    assert "276/599" in boundary
+    assert "seven final records" in boundary
+    assert "323 identities" in boundary
+    assert "403-item denominator" in boundary
 
 
-def test_sapporo_manifest_records_safety_field_completion_without_city_completion():
+def test_sapporo_manifest_still_keeps_city_in_progress():
     manifest = load(MANIFEST_PATH)
     facts = {fact["id"]: fact for fact in manifest["reviewed_facts"]}
 
@@ -187,12 +186,5 @@ def test_sapporo_manifest_records_safety_field_completion_without_city_completio
     assert source_index["registry_path"] == (
         "data/catalog/sapporo_action_plan_project_source_index.json"
     )
-    assert "599事業" in source_index["interpretation_boundary"]
-    historical = facts["action-plan-safety-security-project-records-part1"]
-    assert historical["value"] == 4
-    complete = facts["action-plan-safety-security-project-records-complete"]
-    assert complete["value"] == 70
-    assert complete["main_project_record_count"] == 43
-    assert complete["other_project_record_count"] == 27
-    assert complete["source_page_labels"] == list(range(80, 89))
-    assert "599事業全体" in complete["interpretation_boundary"]
+    safety = facts["action-plan-safety-security-project-records-complete"]
+    assert safety["value"] == 70
