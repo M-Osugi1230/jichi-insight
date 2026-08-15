@@ -1,5 +1,5 @@
 {
-  "version": "0.8.0",
+  "version": "0.9.0",
   "updated_at": "2026-08-15",
   "scope": "phase13_sapporo_policy_review",
   "records": [
@@ -16,6 +16,21 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "公式HTMLで計画期間2023～2027年度、計画事業数599事業、計画事業費1兆7,854億円を確認。"
+    },
+    {
+      "id": "sapporo-action-plan-2023-final-overview",
+      "municipality_key": "sapporo-city",
+      "organization": "札幌市",
+      "category": "implementation_plan_field_denominators",
+      "title": "第2次札幌市まちづくり戦略ビジョン・アクションプラン2023の概要",
+      "url": "https://www.city.sapporo.jp/chosei/documents/ap2023-gaiyou.pdf",
+      "source_kind": "pdf",
+      "availability": "published",
+      "indexed_at": "2026-08-15",
+      "page_count": 17,
+      "review_status": "reviewed_for_final_field_project_denominators",
+      "confidence": "high",
+      "notes": "2023年12月の最終版概要。4頁目（0-based index 3）で分野別事業数を直接確認：子ども・若者121、生活・暮らし85、地域47、安全・安心70、経済74、スポーツ・文化51、環境74、都市空間77、合計599。案段階600件との差1件はスポーツ・文化52→51に局在する。"
     },
     {
       "id": "sapporo-action-plan-2023-progress-page",
@@ -77,7 +92,9 @@
       "page_count": 10,
       "review_status": "reviewed_for_complete_field_project_inventory",
       "confidence": "high",
-      "notes": "公式10ページPDFを全ページ画像レビュー。印刷79ページは事業表なし、80～88ページの事業表に70事業を確認。主な事業43件は事業名・担当部・計画事業費・事業目標等、その他27件は事業名・担当部・計画事業費をReviewed化。599事業全体や年度進捗403項目との接続は未実施。"
+      "field_total_project_count": 70,
+      "reviewed_project_record_count": 70,
+      "notes": "公式10ページPDFを全ページ画像レビューし、最終概要の分野分母70とも一致。印刷79ページは事業表なし、80～88ページの事業表に70事業を確認。599事業全体や年度進捗403項目との接続は未実施。"
     },
     {
       "id": "sapporo-action-plan-2023-projects-life-living",
@@ -91,14 +108,16 @@
       "indexed_at": "2026-08-15",
       "page_count": 13,
       "printed_page_range": "59-71",
-      "review_status": "reviewed_78_records_page68_blocked",
+      "review_status": "reviewed_78_of_final_85_page68_blocked",
       "confidence": "high",
+      "field_total_project_count": 85,
       "reviewed_project_record_count": 78,
+      "unresolved_project_record_count": 7,
       "reviewed_main_project_record_count": 55,
       "reviewed_other_project_record_count": 23,
       "reviewed_printed_pages": "60-67,69-71",
       "blocked_printed_pages": [68],
-      "notes": "最終版公式PDFを正本として登録。印刷59頁は導入ページで事業行なし。60～67頁と69～71頁の78事業を個票化。公式修正履歴の列挙箇所は2頁、56頁、68頁、134～173頁で、Reviewed範囲とは交差しない。68頁だけは修正対象のため最終版の直接再確認が取れるまでblocked。生活・暮らし分野全体の事業数は未確定。"
+      "notes": "最終概要で分野分母85を直接確認。印刷59頁は導入ページで事業行なし。60～67頁と69～71頁の78事業を個票化し、改訂対象68頁に残る最終7事業のアイデンティティのみ未確定としてblocked。7件という件数は85-78で確定するが、個別事業名は推論しない。"
     },
     {
       "id": "sapporo-action-plan-2023-projects-sports-culture",
@@ -112,14 +131,17 @@
       "indexed_at": "2026-08-15",
       "page_count": 9,
       "printed_page_range": "102-110",
-      "review_status": "reviewed_for_complete_field_project_inventory",
+      "review_status": "reviewed_final_51_high_confidence_reconciliation",
       "confidence": "high",
-      "reviewed_project_record_count": 52,
-      "reviewed_main_project_record_count": 37,
+      "field_total_project_count": 51,
+      "reviewed_project_record_count": 51,
+      "reviewed_main_project_record_count": 36,
       "reviewed_other_project_record_count": 15,
-      "field_total_project_count": 52,
-      "reviewed_printed_pages": "103-110",
-      "notes": "最終版公式PDFの文書境界は印刷102～110頁・9頁。102頁は導入・成果指標ページで事業行なし。公式修正履歴の列挙箇所（2頁、56頁、68頁、134～173頁）と交差しないため、公式当初案テキスト層を転記補助として103～110頁の52事業を個票化。分野集計52事業と個票52件が一致し、主な事業37件・その他15件をReviewed completeとした。"
+      "candidate_draft_record_count": 52,
+      "reconciliation_path": "data/catalog/sapporo_action_plan_sports_culture_final_reconciliation.json",
+      "excluded_draft_candidate_id": "winter_olympic_paralympic_related",
+      "direct_final_page104_confirmation": false,
+      "notes": "最終概要ではスポーツ・文化51事業。案段階候補52件との差1件を別reconciliationで管理する。案段階で明示された『冬季オリンピック・パラリンピック関係事業』を、12月19日の招致活動停止と12月20日のAP2023策定報告、最終51件分母を組み合わせて高確度で最終有効台帳から除外。最終104頁画像はCache missのため直接確認できていない事実も保持する。"
     },
     {
       "id": "sapporo-action-plan-2023-projects-urban-space",
@@ -141,7 +163,7 @@
       "field_total_project_count": 77,
       "reviewed_printed_pages": "122-132",
       "direct_final_visual_checks": [121,122],
-      "notes": "最終版公式PDFは印刷121～132頁・12頁。121頁は導入・成果指標ページで事業行なし、122頁から事業表で、最終版121・122頁を画像で直接確認。公式修正履歴の列挙箇所（2頁、56頁、68頁、134～173頁）と交差しないため、公式当初案テキスト層を転記補助として122～132頁の77事業を個票化。分野集計77事業と個票77件が一致し、主な事業56件・その他21件をReviewed completeとした。"
+      "notes": "最終概要の分野分母77と個票77件が一致。最終版公式PDFは印刷121～132頁・12頁で、121頁は導入、122頁から事業表。最終版121・122頁を画像で直接確認し、残りは公式当初案テキスト層を転記補助として使用。"
     },
     {
       "id": "sapporo-action-plan-2023-public-comment-draft",
@@ -155,7 +177,7 @@
       "indexed_at": "2026-08-15",
       "review_status": "navigation_and_transcription_only",
       "confidence": "high",
-      "notes": "最終版の前段階資料。テキスト取得可能なため事業行の位置特定・転記補助には使用するが、修正対象ページの最終レコードを単独で昇格させる根拠にはしない。"
+      "notes": "最終版の前段階資料。テキスト取得可能なため事業行の位置特定・転記補助には使用するが、最終版分母や修正対象ページの個票を単独で確定する根拠にはしない。案段階分野合計は600事業。"
     },
     {
       "id": "sapporo-action-plan-2023-public-comment-results",
@@ -168,10 +190,10 @@
       "availability": "published",
       "indexed_at": "2026-08-15",
       "page_count": 108,
-      "review_status": "reviewed_for_final_revision_scope",
+      "review_status": "reviewed_for_public_comment_revision_scope_only",
       "confidence": "high",
       "listed_revision_locations": ["printed_page_2", "printed_page_56", "printed_page_68", "printed_pages_134_173"],
-      "notes": "当初案から最終版への修正箇所として印刷2頁、56頁、68頁、134～173頁の4範囲を公式資料で確認。生活・暮らしの68頁は直接確認待ちとして隔離。スポーツ・文化102～110頁および都市空間121～132頁は修正範囲外として転記補助利用可能。"
+      "notes": "パブリックコメント意見に基づく当初案からの変更箇所を記録する資料。最終版の全変更を網羅する差分資料とは扱わない。スポーツ・文化の52→51件差分がこの列挙外で発生していることから、最終分母は必ず最終概要で別確認する。"
     }
   ]
 }
