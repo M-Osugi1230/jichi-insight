@@ -92,9 +92,10 @@ def test_sapporo_safety_project_source_now_records_complete_field_review():
     assert source["page_count"] == 10
     assert source["review_status"] == "reviewed_for_complete_field_project_inventory"
     assert source["confidence"] == "high"
+    assert source["field_total_project_count"] == 70
+    assert source["reviewed_project_record_count"] == 70
     assert "70事業" in source["notes"]
-    assert "主な事業43件" in source["notes"]
-    assert "その他27件" in source["notes"]
+    assert "最終概要" in source["notes"]
     assert "599事業全体" in source["notes"]
 
 
