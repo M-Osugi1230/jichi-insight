@@ -36,20 +36,30 @@
       "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_2.pdf",
       "source_role": "chapter2_project_catalog_segment",
       "source_identification_status": "official_link_verified",
-      "content_review_status": "record_review_in_progress_batch1_complete",
+      "content_review_status": "record_review_in_progress_batches1_2_complete",
       "page_count": 13,
-      "reviewed_project_record_count": 15,
-      "reviewed_page_labels": [60, 61, 62, 63],
+      "reviewed_project_record_count": 43,
+      "reviewed_main_project_record_count": 40,
+      "reviewed_other_project_record_count": 3,
+      "reviewed_page_labels": [60, 61, 62, 63, 64, 65, 66, 67],
       "intro_page_label": 59,
       "intro_page_contains_project_rows": false,
       "field_total_project_count_reviewed": false,
-      "record_catalog_paths": ["data/catalog/sapporo_action_plan_life_living_projects_batch1.json"],
-      "evidence_paths": ["data/evidence/sapporo_action_plan_life_living_projects_batch1_evidence.json"],
+      "record_catalog_paths": [
+        "data/catalog/sapporo_action_plan_life_living_projects_batch1.json",
+        "data/catalog/sapporo_action_plan_life_living_projects_batch2.json"
+      ],
+      "evidence_paths": [
+        "data/evidence/sapporo_action_plan_life_living_projects_batch1_evidence.json",
+        "data/evidence/sapporo_action_plan_life_living_projects_batch2_evidence.json"
+      ],
       "source_lineage": {
         "public_comment_draft_url": "https://www.city.sapporo.jp/chosei/documents/ap2023ann-honnsho-public.pdf",
         "official_public_comment_results_url": "https://www.city.sapporo.jp/chosei/documents/ap2023-ikennshu.pdf",
-        "listed_revision_intersects_reviewed_pages": false,
-        "note": "公式修正履歴が列挙する修正は印刷2頁、56頁、68頁、134～173頁。Batch 1の59～63頁とは交差しない。当初案は転記補助のみ。"
+        "listed_revision_locations": ["printed_page_2", "printed_page_56", "printed_page_68", "printed_pages_134_173"],
+        "listed_revision_intersects_reviewed_pages_59_67": false,
+        "next_unreviewed_page_68_is_listed_revision": true,
+        "note": "Batch 1（59～63頁）とBatch 2（64～67頁）は公式修正履歴の列挙箇所と交差しない。当初案は転記補助のみ。次の68頁は修正対象なので最終版を直接再確認する。"
       }
     },
     {
@@ -79,8 +89,14 @@
       "field_total_project_count_reviewed": true,
       "intro_page_label": 79,
       "intro_page_contains_project_rows": false,
-      "record_catalog_paths": ["data/catalog/sapporo_action_plan_safety_security_projects_part1.json", "data/catalog/sapporo_action_plan_safety_security_projects_part2.json"],
-      "evidence_paths": ["data/evidence/sapporo_action_plan_safety_security_projects_part1_evidence.json", "data/evidence/sapporo_action_plan_safety_security_projects_part2_evidence.json"]
+      "record_catalog_paths": [
+        "data/catalog/sapporo_action_plan_safety_security_projects_part1.json",
+        "data/catalog/sapporo_action_plan_safety_security_projects_part2.json"
+      ],
+      "evidence_paths": [
+        "data/evidence/sapporo_action_plan_safety_security_projects_part1_evidence.json",
+        "data/evidence/sapporo_action_plan_safety_security_projects_part2_evidence.json"
+      ]
     },
     {
       "sequence": 5,
@@ -153,12 +169,13 @@
     "total_identified_document_count": 10,
     "total_action_plan_project_count": 599,
     "per_document_project_counts_reviewed": 1,
-    "individual_project_records_reviewed": 85,
+    "individual_project_records_reviewed": 113,
     "fully_reviewed_field_project_records": 70,
-    "partially_reviewed_field_project_records": 15,
+    "partially_reviewed_field_project_records": 43,
+    "remaining_action_plan_project_records": 486,
     "project_count_allocation_status": "not_allocated_to_documents",
     "chapter3_denominator_membership_review_status": "pending"
   },
-  "quality_boundary": "The official Action Plan landing identifies eight Chapter 2 field documents plus two Chapter 3 administrative/fiscal documents and separately reports a plan-level total of 599 planned projects. Safety/security is complete at 70 project rows. Life/living Batch 1 adds 15 page-anchored project rows from printed pages 60-63, with printed page 59 confirmed as the section/indicator introduction and no project rows. The final field PDF remains authoritative; the public-comment draft is transcription support only, and the official revision log lists changes at printed pages 2, 56, 68, and 134-173, none intersecting Batch 1. This raises reviewed project records to 85/599 but does not establish the life/living field denominator, allocate the remaining 514 projects, infer Chapter 3 denominator membership, merge plan projects with the separate annual-progress 403-item denominator, or promote project descriptions or policy achievement.",
-  "next_action": "Continue life/living Batch 2 (printed pages 64-67); treat printed page 68 in Batch 3 as an explicit final-version re-verification point because it appears in the official revision log."
+  "quality_boundary": "Safety/security is complete at 70 project rows. Life/living Batches 1-2 add 43 reviewed project rows from printed pages 60-67, with page 59 retained as an introduction without project rows. The final field PDF remains authoritative; the public-comment draft is transcription support only. The official revision log lists changes at printed pages 2, 56, 68, and 134-173, so none intersect reviewed pages 59-67 while the next page 68 requires direct final-version re-verification. This raises reviewed project records to 113/599 but does not establish the life/living field denominator, allocate the remaining 486 projects, infer Chapter 3 denominator membership, merge plan projects with the separate annual-progress 403-item denominator, or promote project descriptions or policy achievement.",
+  "next_action": "Enter life/living Batch 3 only after directly re-verifying printed page 68 against the final plan; pages 69-71 remain in the same Batch 3 execution shard."
 }
