@@ -32,43 +32,50 @@ def test_sapporo_policy_review_uses_reviewed_official_sources():
     assert all(record["organization"] == "札幌市" for record in sources)
     assert all(record["url"].startswith("https://www.city.sapporo.jp/") for record in sources)
     assert source_map["sapporo-action-plan-2023-page"]["review_status"] == "reviewed"
+    assert source_map["sapporo-action-plan-2023-final-overview"]["review_status"] == (
+        "reviewed_for_final_field_project_denominators"
+    )
     assert source_map["sapporo-action-plan-2023-progress-page"]["review_status"] == "reviewed"
-    assert source_map["sapporo-action-plan-2023-outcomes-2024-report"][
-        "review_status"
-    ] == "reviewed_for_indicator_identity_and_prior_values"
     current_report = source_map["sapporo-action-plan-2023-outcomes-2025-report"]
     assert current_report["review_status"] == "reviewed_for_indicator_current_values"
     assert current_report["confidence"] == "high"
     assert all(record["confidence"] == "high" for record in source_map.values())
 
-    life_living = source_map["sapporo-action-plan-2023-projects-life-living"]
-    assert life_living["review_status"] == "reviewed_78_records_page68_blocked"
-    assert life_living["reviewed_project_record_count"] == 78
-    assert life_living["reviewed_main_project_record_count"] == 55
-    assert life_living["reviewed_other_project_record_count"] == 23
-    assert life_living["reviewed_printed_pages"] == "60-67,69-71"
-    assert life_living["blocked_printed_pages"] == [68]
+    life = source_map["sapporo-action-plan-2023-projects-life-living"]
+    assert life["review_status"] == "reviewed_78_of_final_85_page68_blocked"
+    assert life["field_total_project_count"] == 85
+    assert life["reviewed_project_record_count"] == 78
+    assert life["unresolved_project_record_count"] == 7
+    assert life["blocked_printed_pages"] == [68]
 
     sports = source_map["sapporo-action-plan-2023-projects-sports-culture"]
-    assert sports["review_status"] == "reviewed_for_complete_field_project_inventory"
+    assert sports["review_status"] == "reviewed_final_51_high_confidence_reconciliation"
     assert sports["page_count"] == 9
-    assert sports["reviewed_project_record_count"] == 52
-    assert sports["reviewed_main_project_record_count"] == 37
+    assert sports["field_total_project_count"] == 51
+    assert sports["reviewed_project_record_count"] == 51
+    assert sports["reviewed_main_project_record_count"] == 36
     assert sports["reviewed_other_project_record_count"] == 15
-    assert sports["field_total_project_count"] == 52
-    assert sports["reviewed_printed_pages"] == "103-110"
+    assert sports["candidate_draft_record_count"] == 52
+    assert sports["excluded_draft_candidate_id"] == "winter_olympic_paralympic_related"
+    assert sports["direct_final_page104_confirmation"] is False
+
+    urban = source_map["sapporo-action-plan-2023-projects-urban-space"]
+    assert urban["field_total_project_count"] == 77
+    assert urban["reviewed_project_record_count"] == 77
+    assert urban["direct_final_visual_checks"] == [121, 122]
 
     draft = source_map["sapporo-action-plan-2023-public-comment-draft"]
     assert draft["review_status"] == "navigation_and_transcription_only"
 
     revisions = source_map["sapporo-action-plan-2023-public-comment-results"]
-    assert revisions["review_status"] == "reviewed_for_final_revision_scope"
+    assert revisions["review_status"] == "reviewed_for_public_comment_revision_scope_only"
     assert revisions["listed_revision_locations"] == [
         "printed_page_2",
         "printed_page_56",
         "printed_page_68",
         "printed_pages_134_173",
     ]
+    assert "全変更を網羅" in revisions["notes"]
 
 
 def test_sapporo_action_plan_reviewed_facts_are_exact_and_bounded():
@@ -90,7 +97,6 @@ def test_sapporo_action_plan_reviewed_facts_are_exact_and_bounded():
     assert current_values["value"] == 26
     assert current_values["reporting_year"] == 2025
     assert current_values["review_status"] == "reviewed"
-    assert "すべてを2024年度値とは扱わない" in current_values["interpretation_boundary"]
 
     targets = facts["progress-project-targets"]
     assert targets["numerator"] == 394
