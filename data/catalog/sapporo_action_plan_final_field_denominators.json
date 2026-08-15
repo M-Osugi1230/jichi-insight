@@ -1,0 +1,42 @@
+{
+  "id": "phase13-sapporo-action-plan-final-field-denominators",
+  "phase": 13,
+  "official_code": "011002",
+  "name_ja": "札幌市",
+  "reviewed_at": "2026-08-15",
+  "status": "reviewed_final_field_denominators",
+  "source": {
+    "source_id": "sapporo-action-plan-2023-final-overview",
+    "title": "第2次札幌市まちづくり戦略ビジョン・アクションプラン2023の概要",
+    "url": "https://www.city.sapporo.jp/chosei/documents/ap2023-gaiyou.pdf",
+    "published_month": "2023-12",
+    "page_count": 17,
+    "evidence_page_index_0_based": 3,
+    "authoritative_role": "final_action_plan_field_denominators_and_plan_total"
+  },
+  "field_denominators": [
+    {"field_id":"children_youth","field_ja":"子ども・若者","final_project_count":121,"final_planned_cost_oku_yen":1188},
+    {"field_id":"daily_life","field_ja":"生活・暮らし","final_project_count":85,"final_planned_cost_oku_yen":2034},
+    {"field_id":"community","field_ja":"地域","final_project_count":47,"final_planned_cost_oku_yen":115},
+    {"field_id":"safety_security","field_ja":"安全・安心","final_project_count":70,"final_planned_cost_oku_yen":1140},
+    {"field_id":"economy","field_ja":"経済","final_project_count":74,"final_planned_cost_oku_yen":5087},
+    {"field_id":"sports_culture","field_ja":"スポーツ・文化","final_project_count":51,"final_planned_cost_oku_yen":349},
+    {"field_id":"environment","field_ja":"環境","final_project_count":74,"final_planned_cost_oku_yen":1269},
+    {"field_id":"urban_space","field_ja":"都市空間","final_project_count":77,"final_planned_cost_oku_yen":6673}
+  ],
+  "plan_total": {
+    "final_project_count": 599,
+    "final_planned_cost_oku_yen": 17854,
+    "field_count_sum": 599
+  },
+  "draft_comparison": {
+    "draft_total_project_count": 600,
+    "final_total_project_count": 599,
+    "fields_with_same_count_as_draft": ["children_youth","daily_life","community","safety_security","economy","environment","urban_space"],
+    "fields_with_changed_count_from_draft": ["sports_culture"],
+    "sports_culture_draft_project_count": 52,
+    "sports_culture_final_project_count": 51,
+    "net_project_count_change": -1
+  },
+  "quality_boundary": "このファイルは最終版概要PDFに明記された分野別事業数と計画事業費を正本として保持する。個々の事業アイデンティティはこの集計だけから推論せず、各分野の個票Evidenceと別に管理する。"
+}
