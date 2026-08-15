@@ -1,5 +1,5 @@
 {
-  "version": "0.6.0",
+  "version": "0.7.0",
   "updated_at": "2026-08-15",
   "scope": "phase13_sapporo_policy_review",
   "records": [
@@ -101,6 +101,27 @@
       "notes": "最終版公式PDFを正本として登録。印刷59頁は導入ページで事業行なし。60～67頁と69～71頁の78事業を個票化。公式修正履歴の列挙箇所は2頁、56頁、68頁、134～173頁で、Reviewed範囲とは交差しない。68頁だけは修正対象のため最終版の直接再確認が取れるまでblocked。生活・暮らし分野全体の事業数は未確定。"
     },
     {
+      "id": "sapporo-action-plan-2023-projects-sports-culture",
+      "municipality_key": "sapporo-city",
+      "organization": "札幌市",
+      "category": "implementation_plan_projects",
+      "title": "アクションプラン2023 第2章 分野6 スポーツ・文化",
+      "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_6.pdf",
+      "source_kind": "pdf",
+      "availability": "published",
+      "indexed_at": "2026-08-15",
+      "page_count": 9,
+      "printed_page_range": "102-110",
+      "review_status": "reviewed_for_complete_field_project_inventory",
+      "confidence": "high",
+      "reviewed_project_record_count": 52,
+      "reviewed_main_project_record_count": 37,
+      "reviewed_other_project_record_count": 15,
+      "field_total_project_count": 52,
+      "reviewed_printed_pages": "103-110",
+      "notes": "最終版公式PDFの文書境界は印刷102～110頁・9頁。102頁は導入・成果指標ページで事業行なし。公式修正履歴の列挙箇所（2頁、56頁、68頁、134～173頁）と交差しないため、公式当初案テキスト層を転記補助として103～110頁の52事業を個票化。分野集計52事業と個票52件が一致し、主な事業37件・その他15件をReviewed completeとした。"
+    },
+    {
       "id": "sapporo-action-plan-2023-public-comment-draft",
       "municipality_key": "sapporo-city",
       "organization": "札幌市",
@@ -128,7 +149,7 @@
       "review_status": "reviewed_for_final_revision_scope",
       "confidence": "high",
       "listed_revision_locations": ["printed_page_2", "printed_page_56", "printed_page_68", "printed_pages_134_173"],
-      "notes": "当初案から最終版への修正箇所として印刷2頁、56頁、68頁、134～173頁の4範囲を公式資料で確認。生活・暮らしでReviewed化した59～67頁・69～71頁とは交差せず、68頁のみ最終版直接確認待ちとして隔離。"
+      "notes": "当初案から最終版への修正箇所として印刷2頁、56頁、68頁、134～173頁の4範囲を公式資料で確認。生活・暮らしの68頁は直接確認待ちとして隔離し、スポーツ・文化102～110頁は修正範囲外として転記補助利用可能。"
     }
   ]
 }
