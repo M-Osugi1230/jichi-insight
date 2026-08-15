@@ -1,0 +1,52 @@
+{
+  "id": "phase13-sapporo-action-plan-life-living-page68-candidates",
+  "phase": 13,
+  "official_code": "011002",
+  "name_ja": "札幌市",
+  "field_id": "daily_life",
+  "field_ja": "生活・暮らし",
+  "indexed_at": "2026-08-15",
+  "status": "draft_candidate_inventory_complete_7_revised_final_identity_crosscheck_pending",
+  "final_field_denominator": {
+    "project_count": 85,
+    "reviewed_project_record_count": 78,
+    "unresolved_project_record_count": 7,
+    "registry_path": "data/catalog/sapporo_action_plan_final_field_denominators.json"
+  },
+  "source": {
+    "source_id": "sapporo-action-plan-2023-public-comment-draft",
+    "url": "https://www.city.sapporo.jp/chosei/documents/ap2023ann-honnsho-public.pdf",
+    "draft_printed_page_label": 68,
+    "draft_pdf_page_index_0_based": 73,
+    "source_role": "draft_candidate_identity_cost_target_transcription"
+  },
+  "revision_source": {
+    "url": "https://www.city.sapporo.jp/chosei/documents/ap2023-ikennshu.pdf",
+    "review_status": "reviewed_for_page68_public_comment_change",
+    "known_changed_candidate_id": "cancer_social_activity_support",
+    "draft_project_name_ja": "がん対策推進事業",
+    "final_project_name_ja": "がん患者の社会活動支援事業",
+    "listed_changed_fields": ["project_name", "project_description_text"],
+    "target_change_listed": false,
+    "cost_change_listed": false,
+    "boundary": "The official public-comment result explicitly changes the cancer project name and description on printed page 68. It does not list target or planned-cost changes for that project. This result is not treated as a guarantee that no non-public-comment final edits occurred elsewhere."
+  },
+  "summary": {
+    "candidate_record_count": 7,
+    "main_project_candidate_count": 7,
+    "other_project_candidate_count": 0,
+    "known_final_name_change_count": 1,
+    "reviewed_final_identity_count": 0,
+    "action_plan_reviewed_progress_increment": 0
+  },
+  "quality_boundary": "These seven rows are the complete draft candidate set for the seven final life/living identities unresolved by the 85 minus 78 denominator difference. They do not increment the 276/599 final Reviewed count. The cancer candidate stores the official final name change explicitly; all seven still require final-source identity reconciliation before promotion.",
+  "records": [
+    {"candidate_order":1,"record_type":"main_project","draft_printed_page_label":68,"draft_pdf_page_index_0_based":73,"id":"inpatient_rights_advocacy_promotion","draft_project_name_ja":"入院者権利擁護推進事業","candidate_project_name_ja":"入院者権利擁護推進事業","responsible_department_ja":"保)障がい保健福祉部","planned_project_cost_yen":41000000,"target_raw_ja":"2022：1人 ⇒ 2027：9人","revision_status":"not_listed_in_public_comment_change_table","candidate_status":"draft_identity_cost_target_transcribed_final_crosscheck_pending"},
+    {"candidate_order":2,"record_type":"main_project","draft_printed_page_label":68,"draft_pdf_page_index_0_based":73,"id":"private_public_facility_barrier_free_subsidy","draft_project_name_ja":"民間公共的施設バリアフリー補助事業","candidate_project_name_ja":"民間公共的施設バリアフリー補助事業","responsible_department_ja":"保)障がい保健福祉部","planned_project_cost_yen":120000000,"target_raw_ja":"2022：8件 ⇒ 2027：100件","revision_status":"not_listed_in_public_comment_change_table","candidate_status":"draft_identity_cost_target_transcribed_final_crosscheck_pending"},
+    {"candidate_order":3,"record_type":"main_project","draft_printed_page_label":68,"draft_pdf_page_index_0_based":73,"id":"disability_consultation_support","draft_project_name_ja":"障がい者相談支援事業","candidate_project_name_ja":"障がい者相談支援事業","responsible_department_ja":"保)障がい保健福祉部","planned_project_cost_yen":2752000000,"target_raw_ja":"2022：－ ⇒ 2027：5,640件","revision_status":"not_listed_in_public_comment_change_table","candidate_status":"draft_identity_cost_target_transcribed_final_crosscheck_pending"},
+    {"candidate_order":4,"record_type":"main_project","draft_printed_page_label":68,"draft_pdf_page_index_0_based":73,"id":"disability_welfare_facility_development_subsidy","draft_project_name_ja":"障がい福祉施設等施設整備費補助事業","candidate_project_name_ja":"障がい福祉施設等施設整備費補助事業","responsible_department_ja":"保)障がい保健福祉部","planned_project_cost_yen":2668000000,"target_raw_ja":"2022：69件 ⇒ 2027：79件","revision_status":"not_listed_in_public_comment_change_table","candidate_status":"draft_identity_cost_target_transcribed_final_crosscheck_pending"},
+    {"candidate_order":5,"record_type":"main_project","draft_printed_page_label":68,"draft_pdf_page_index_0_based":73,"id":"severe_disability_medical_expense_subsidy","draft_project_name_ja":"重度心身障がい者医療費助成事業","candidate_project_name_ja":"重度心身障がい者医療費助成事業","responsible_department_ja":"保)保険医療部","planned_project_cost_yen":253000000,"target_raw_ja":"2022：精神通院のみ ⇒ 2024：精神入通院","revision_status":"not_listed_in_public_comment_change_table","candidate_status":"draft_identity_cost_target_transcribed_final_crosscheck_pending"},
+    {"candidate_order":6,"record_type":"main_project","draft_printed_page_label":68,"draft_pdf_page_index_0_based":73,"id":"late_elderly_insurance_convenience_payment","draft_project_name_ja":"後期高齢者医療保険料のコンビニ納付及びスマートフォン決済の導入事業","candidate_project_name_ja":"後期高齢者医療保険料のコンビニ納付及びスマートフォン決済の導入事業","responsible_department_ja":"保)保険医療部","planned_project_cost_yen":64000000,"target_raw_ja":"2022：513箇所 ⇒ 2027：1,743箇所","revision_status":"not_listed_in_public_comment_change_table","candidate_status":"draft_identity_cost_target_transcribed_final_crosscheck_pending"},
+    {"candidate_order":7,"record_type":"main_project","draft_printed_page_label":68,"draft_pdf_page_index_0_based":73,"id":"cancer_social_activity_support","draft_project_name_ja":"がん対策推進事業","candidate_project_name_ja":"がん患者の社会活動支援事業","responsible_department_ja":"保)保健所","planned_project_cost_yen":110000000,"target_raw_ja":"2022：－ ⇒ 2027：70.5％","revision_status":"official_public_comment_final_name_and_description_change_recorded","candidate_status":"draft_identity_cost_target_transcribed_with_official_final_name_final_crosscheck_pending"}
+  ]
+}
