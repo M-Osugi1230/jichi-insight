@@ -3,23 +3,21 @@
   "phase": 13,
   "official_code": "011002",
   "name_ja": "札幌市",
-  "reviewed_at": "2026-08-12",
-  "status": "source_documents_indexed_project_review_in_progress",
+  "reviewed_at": "2026-08-16",
+  "status": "action_plan_project_identity_review_complete_599_of_599",
   "source_landing": {
     "title": "第2次札幌市まちづくり戦略ビジョン・アクションプラン2023",
     "url": "https://www.city.sapporo.jp/chosei/actionplan2023.html",
-    "reviewed_sections": [
-      "第2章 まちづくりの取組 3 計画体系別事業",
-      "第3章 行政運営と財政運営の取組"
-    ],
+    "reviewed_sections": ["第2章 まちづくりの取組 3 計画体系別事業", "第3章 行政運営と財政運営の取組"],
     "review_status": "reviewed_for_source_document_identity"
   },
+  "final_field_denominator_registry_path": "data/catalog/sapporo_action_plan_final_field_denominators.json",
   "plan_level_aggregate": {
     "planned_project_count": 599,
     "planned_project_cost_yen": 1785400000000,
-    "source_scope": "Action Plan 2023 plan-level aggregate",
-    "allocation_status": "not_allocated_to_source_documents",
-    "review_boundary": "The official landing states 599 planned projects and total planned project cost of 1.7854 trillion yen. Neither value is distributed across the ten indexed source documents until record-level project review establishes the denominator and document membership."
+    "source_scope": "Action Plan 2023 final official aggregate",
+    "allocation_status": "all_599_final_project_identities_reconciled",
+    "review_boundary": "All eight final field denominators sum to 599 and all 599 project identities are now reconciled to final-source evidence. The separate 403 annual progress target items remain a different review layer."
   },
   "machizukuri_field_sources": [
     {
@@ -29,8 +27,35 @@
       "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_1.pdf",
       "source_role": "chapter2_project_catalog_segment",
       "source_identification_status": "official_link_verified",
-      "content_review_status": "document_opened_record_index_pending",
-      "page_count": 16
+      "content_review_status": "record_review_complete_direct_final_all_pages",
+      "page_count": 16,
+      "field_total_project_count": 121,
+      "field_total_project_count_source": "final_official_overview",
+      "field_total_project_count_reviewed": true,
+      "reviewed_project_record_count": 121,
+      "reviewed_final_identity_count": 121,
+      "reviewed_main_project_record_count": 74,
+      "reviewed_other_project_record_count": 47,
+      "unresolved_project_record_count": 0,
+      "intro_page_label": 43,
+      "intro_page_contains_project_rows": false,
+      "reviewed_page_labels": [44,45,46,47,48,49,50,51,52,53,54,55,56,57,58],
+      "final_reconciliation_path": "data/catalog/sapporo_action_plan_children_youth_final_reconciliation.json",
+      "final_evidence_path": "data/evidence/sapporo_action_plan_children_youth_final_evidence.json",
+      "candidate_catalog_paths": [
+        "data/catalog/sapporo_action_plan_children_youth_main_projects_goal1_candidates.json",
+        "data/catalog/sapporo_action_plan_children_youth_main_projects_goal2_candidates.json",
+        "data/catalog/sapporo_action_plan_children_youth_main_projects_goal3_candidates.json",
+        "data/catalog/sapporo_action_plan_children_youth_other_projects_candidates.json"
+      ],
+      "source_lineage": {
+        "public_comment_draft_url": "https://www.city.sapporo.jp/chosei/documents/ap2023ann-honnsho-public.pdf",
+        "official_public_comment_results_url": "https://www.city.sapporo.jp/chosei/documents/ap2023-ikennshu.pdf",
+        "printed_page_56_project": "学校施設冷房設備整備事業",
+        "printed_page_56_changed_field": "project_description_text_only",
+        "direct_final_visual_check_status": "reviewed_all_pages",
+        "note": "All 121 final rows were directly checked. The known printed-page-56 revision affects description text only; identity, department, cost, and captured target remain unchanged."
+      }
     },
     {
       "sequence": 2,
@@ -39,8 +64,37 @@
       "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_2.pdf",
       "source_role": "chapter2_project_catalog_segment",
       "source_identification_status": "official_link_verified",
-      "content_review_status": "document_opened_record_index_pending",
-      "page_count": 13
+      "content_review_status": "record_review_complete_at_declared_fields_direct_page68_final",
+      "page_count": 13,
+      "field_total_project_count": 85,
+      "field_total_project_count_source": "final_official_overview",
+      "field_total_project_count_reviewed": true,
+      "reviewed_project_record_count": 85,
+      "reviewed_final_identity_count": 85,
+      "unresolved_project_record_count": 0,
+      "reviewed_main_project_record_count": 62,
+      "reviewed_other_project_record_count": 23,
+      "reviewed_page_labels": [60,61,62,63,64,65,66,67,68,69,70,71],
+      "blocked_page_labels": [],
+      "intro_page_label": 59,
+      "intro_page_contains_project_rows": false,
+      "record_catalog_paths": [
+        "data/catalog/sapporo_action_plan_life_living_projects_batch1.json",
+        "data/catalog/sapporo_action_plan_life_living_projects_batch2.json",
+        "data/catalog/sapporo_action_plan_life_living_page68_final_reconciliation.json",
+        "data/catalog/sapporo_action_plan_life_living_projects_batch3_pages69_71.json"
+      ],
+      "evidence_paths": [
+        "data/evidence/sapporo_action_plan_life_living_projects_batch1_evidence.json",
+        "data/evidence/sapporo_action_plan_life_living_projects_batch2_evidence.json",
+        "data/evidence/sapporo_action_plan_life_living_page68_final_evidence.json",
+        "data/evidence/sapporo_action_plan_life_living_projects_batch3_pages69_71_evidence.json"
+      ],
+      "source_lineage": {
+        "direct_final_visual_checked_page": 68,
+        "direct_final_visual_check_status": "reviewed",
+        "final_page68_reconciliation_path": "data/catalog/sapporo_action_plan_life_living_page68_final_reconciliation.json"
+      }
     },
     {
       "sequence": 3,
@@ -49,8 +103,22 @@
       "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_3.pdf",
       "source_role": "chapter2_project_catalog_segment",
       "source_identification_status": "official_link_verified",
-      "content_review_status": "official_link_verified_fetch_pending",
-      "page_count": null
+      "content_review_status": "record_review_complete_direct_final_all_pages",
+      "page_count": 7,
+      "field_total_project_count": 47,
+      "field_total_project_count_source": "final_official_overview",
+      "field_total_project_count_reviewed": true,
+      "reviewed_project_record_count": 47,
+      "reviewed_final_identity_count": 47,
+      "reviewed_main_project_record_count": 27,
+      "reviewed_other_project_record_count": 20,
+      "unresolved_project_record_count": 0,
+      "intro_page_label": 72,
+      "intro_page_contains_project_rows": false,
+      "reviewed_page_labels": [73,74,75,76,77,78],
+      "candidate_catalog_path": "data/catalog/sapporo_action_plan_community_project_candidates.json",
+      "final_reconciliation_path": "data/catalog/sapporo_action_plan_community_final_reconciliation.json",
+      "final_evidence_path": "data/evidence/sapporo_action_plan_community_final_evidence.json"
     },
     {
       "sequence": 4,
@@ -62,31 +130,18 @@
       "content_review_status": "record_review_complete_at_declared_fields",
       "page_count": 10,
       "reviewed_project_record_count": 70,
-      "reviewed_page_labels": [
-        80,
-        81,
-        82,
-        83,
-        84,
-        85,
-        86,
-        87,
-        88
-      ],
-      "record_catalog_path": "data/catalog/sapporo_action_plan_safety_security_projects_part1.json",
-      "evidence_path": "data/evidence/sapporo_action_plan_safety_security_projects_part1_evidence.json",
+      "reviewed_final_identity_count": 70,
+      "reviewed_main_project_record_count": 43,
+      "reviewed_other_project_record_count": 27,
+      "reviewed_page_labels": [80,81,82,83,84,85,86,87,88],
       "field_total_project_count": 70,
+      "field_total_project_count_source": "final_official_overview_and_final_field_inventory",
       "field_total_project_count_reviewed": true,
+      "unresolved_project_record_count": 0,
       "intro_page_label": 79,
       "intro_page_contains_project_rows": false,
-      "record_catalog_paths": [
-        "data/catalog/sapporo_action_plan_safety_security_projects_part1.json",
-        "data/catalog/sapporo_action_plan_safety_security_projects_part2.json"
-      ],
-      "evidence_paths": [
-        "data/evidence/sapporo_action_plan_safety_security_projects_part1_evidence.json",
-        "data/evidence/sapporo_action_plan_safety_security_projects_part2_evidence.json"
-      ]
+      "record_catalog_paths": ["data/catalog/sapporo_action_plan_safety_security_projects_part1.json","data/catalog/sapporo_action_plan_safety_security_projects_part2.json"],
+      "evidence_paths": ["data/evidence/sapporo_action_plan_safety_security_projects_part1_evidence.json","data/evidence/sapporo_action_plan_safety_security_projects_part2_evidence.json"]
     },
     {
       "sequence": 5,
@@ -95,8 +150,22 @@
       "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_5.pdf",
       "source_role": "chapter2_project_catalog_segment",
       "source_identification_status": "official_link_verified",
-      "content_review_status": "official_link_verified_fetch_pending",
-      "page_count": null
+      "content_review_status": "record_review_complete_direct_final_all_pages",
+      "page_count": 13,
+      "field_total_project_count": 74,
+      "field_total_project_count_source": "final_official_overview",
+      "field_total_project_count_reviewed": true,
+      "reviewed_project_record_count": 74,
+      "reviewed_final_identity_count": 74,
+      "reviewed_main_project_record_count": 61,
+      "reviewed_other_project_record_count": 13,
+      "unresolved_project_record_count": 0,
+      "intro_page_label": 89,
+      "intro_page_contains_project_rows": false,
+      "reviewed_page_labels": [90,91,92,93,94,95,96,97,98,99,100,101],
+      "candidate_catalog_path": "data/catalog/sapporo_action_plan_economy_project_candidates.json",
+      "final_reconciliation_path": "data/catalog/sapporo_action_plan_economy_final_reconciliation.json",
+      "final_evidence_path": "data/evidence/sapporo_action_plan_economy_final_evidence.json"
     },
     {
       "sequence": 6,
@@ -105,8 +174,27 @@
       "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_6.pdf",
       "source_role": "chapter2_project_catalog_segment",
       "source_identification_status": "official_link_verified",
-      "content_review_status": "document_opened_record_index_pending",
-      "page_count": 9
+      "content_review_status": "record_review_complete_direct_final_reconciliation",
+      "page_count": 9,
+      "field_total_project_count": 51,
+      "field_total_project_count_source": "final_official_overview",
+      "field_total_project_count_reviewed": true,
+      "reviewed_project_record_count": 51,
+      "reviewed_final_identity_count": 51,
+      "reviewed_main_project_record_count": 36,
+      "reviewed_other_project_record_count": 15,
+      "candidate_draft_record_count": 52,
+      "candidate_reviewed_page_labels": [103,104,105,106,107,108,109,110],
+      "intro_page_label": 102,
+      "intro_page_contains_project_rows": false,
+      "candidate_catalog_path": "data/catalog/sapporo_action_plan_sports_culture_projects.json",
+      "candidate_evidence_path": "data/evidence/sapporo_action_plan_sports_culture_projects_evidence.json",
+      "final_reconciliation_path": "data/catalog/sapporo_action_plan_sports_culture_final_reconciliation.json",
+      "effective_final_inventory_rule": "Use the 52 draft-candidate rows except winter_olympic_paralympic_related.",
+      "excluded_draft_candidate_id": "winter_olympic_paralympic_related",
+      "reconciliation_confidence": "direct_final_visual",
+      "direct_final_page104_confirmation": true,
+      "unresolved_project_record_count": 0
     },
     {
       "sequence": 7,
@@ -115,8 +203,23 @@
       "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_7.pdf",
       "source_role": "chapter2_project_catalog_segment",
       "source_identification_status": "official_link_verified",
-      "content_review_status": "official_link_verified_fetch_pending",
-      "page_count": null
+      "content_review_status": "record_review_complete_direct_final_all_pages_with_department_corrections",
+      "page_count": 10,
+      "field_total_project_count": 74,
+      "field_total_project_count_source": "final_official_overview",
+      "field_total_project_count_reviewed": true,
+      "reviewed_project_record_count": 74,
+      "reviewed_final_identity_count": 74,
+      "reviewed_main_project_record_count": 47,
+      "reviewed_other_project_record_count": 27,
+      "unresolved_project_record_count": 0,
+      "intro_page_label": 111,
+      "intro_page_contains_project_rows": false,
+      "reviewed_page_labels": [112,113,114,115,116,117,118,119,120],
+      "final_department_correction_count": 5,
+      "candidate_catalog_path": "data/catalog/sapporo_action_plan_environment_project_candidates.json",
+      "final_reconciliation_path": "data/catalog/sapporo_action_plan_environment_final_reconciliation.json",
+      "final_evidence_path": "data/evidence/sapporo_action_plan_environment_final_evidence.json"
     },
     {
       "sequence": 8,
@@ -125,44 +228,49 @@
       "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_8.pdf",
       "source_role": "chapter2_project_catalog_segment",
       "source_identification_status": "official_link_verified",
-      "content_review_status": "document_opened_record_index_pending",
-      "page_count": 12
+      "content_review_status": "record_review_complete_at_declared_fields",
+      "page_count": 12,
+      "reviewed_project_record_count": 77,
+      "reviewed_final_identity_count": 77,
+      "reviewed_main_project_record_count": 56,
+      "reviewed_other_project_record_count": 21,
+      "reviewed_page_labels": [122,123,124,125,126,127,128,129,130,131,132],
+      "field_total_project_count": 77,
+      "field_total_project_count_source": "final_official_overview_and_reconciled_field_inventory",
+      "field_total_project_count_reviewed": true,
+      "unresolved_project_record_count": 0,
+      "intro_page_label": 121,
+      "intro_page_contains_project_rows": false,
+      "record_catalog_paths": ["data/catalog/sapporo_action_plan_urban_space_projects.json"],
+      "evidence_paths": ["data/evidence/sapporo_action_plan_urban_space_projects_evidence.json"],
+      "source_lineage": {
+        "final_field_project_count": 77,
+        "reviewed_record_count_matches_final_field_count": true,
+        "final_pdf_visual_checks": [121,122]
+      }
     }
   ],
   "chapter3_sources": [
-    {
-      "sequence": 1,
-      "source_id": "administrative_operations",
-      "title_ja": "行政運営の取組",
-      "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_3_1.pdf",
-      "source_role": "chapter3_administrative_operations",
-      "source_identification_status": "official_link_verified",
-      "content_review_status": "document_opened_record_index_pending",
-      "page_count": 29,
-      "project_denominator_membership_status": "pending_record_level_review"
-    },
-    {
-      "sequence": 2,
-      "source_id": "fiscal_operations",
-      "title_ja": "財政運営の取組",
-      "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_3_2.pdf",
-      "source_role": "chapter3_fiscal_operations",
-      "source_identification_status": "official_link_verified",
-      "content_review_status": "official_link_verified_fetch_pending",
-      "page_count": null,
-      "project_denominator_membership_status": "pending_record_level_review"
-    }
+    {"sequence":1,"source_id":"administrative_operations","title_ja":"行政運営の取組","url":"https://www.city.sapporo.jp/chosei/documents/ap2023_3_1.pdf","source_role":"chapter3_administrative_operations","source_identification_status":"official_link_verified","content_review_status":"document_opened_record_index_pending","page_count":29,"project_denominator_membership_status":"separate_from_chapter2_599_field_identity_registry"},
+    {"sequence":2,"source_id":"fiscal_operations","title_ja":"財政運営の取組","url":"https://www.city.sapporo.jp/chosei/documents/ap2023_3_2.pdf","source_role":"chapter3_fiscal_operations","source_identification_status":"official_link_verified","content_review_status":"official_link_verified_fetch_pending","page_count":null,"project_denominator_membership_status":"separate_from_chapter2_599_field_identity_registry"}
   ],
   "summary": {
     "official_field_source_count": 8,
     "chapter3_source_count": 2,
     "total_identified_document_count": 10,
     "total_action_plan_project_count": 599,
-    "per_document_project_counts_reviewed": 1,
-    "individual_project_records_reviewed": 70,
-    "project_count_allocation_status": "not_allocated_to_documents",
-    "chapter3_denominator_membership_review_status": "pending"
+    "final_field_denominators_reviewed": 8,
+    "individual_project_records_reviewed": 599,
+    "fully_reviewed_field_project_records": 599,
+    "partially_reviewed_field_project_records": 0,
+    "candidate_project_records_pending_final_identity_crosscheck_total": 0,
+    "candidate_fields_pending_final_identity_crosscheck": [],
+    "candidate_project_records_by_field": {},
+    "remaining_action_plan_project_records": 0,
+    "field_denominator_allocation_status": "complete_8_fields",
+    "action_plan_identity_review_status": "complete_599_of_599",
+    "chapter3_denominator_membership_review_status": "separate_from_chapter2_field_project_identity_denominator"
   },
-  "quality_boundary": "The official Action Plan landing identifies eight Chapter 2 field documents plus two Chapter 3 administrative/fiscal documents and separately reports a plan-level total of 599 planned projects. The complete 10-page safety/security field document is now visually reviewed at declared row depth: printed page 79 has no project rows, and printed pages 80-88 contain 70 projects. Main-project rows retain their printed target fields while その他の事業 rows remain limited to identity, planned cost, and responsible department. This establishes the safety/security field count only; it does not allocate the remaining 529 projects among other documents, infer counts from page counts, assume Chapter 3 denominator membership, merge plan projects with the separate annual-progress 403-item denominator, or promote project descriptions or policy achievement.",
-  "next_action": "Safety/security is complete at declared project-row depth with 70 projects. Continue record-level review across the other seven Chapter 2 field PDFs, then independently determine Chapter 3 membership in the 599-project denominator before reconciling complete Action Plan coverage."
+  "quality_boundary": "All 599 Action Plan 2023 project identities across the eight Chapter 2 fields are reconciled to final official evidence. Final field counts are children/youth 121, life/living 85, community 47, safety/security 70, economy 74, sports/culture 51, environment 74, and urban space 77. Direct final review found five environment department corrections, confirmed the life/living page-68 final rename, and directly confirmed the sports/culture draft-only Olympic/Paralympic row is absent from final page 104. The separate 403 annual-progress target items, policy achievement, causality, and citizen-perception layers remain unresolved and are not inferred from identity completion.",
+  "next_action": "Freeze the completed 599-project identity registry and proceed to the separate 403 principal-project annual target records and citizen-perception separation gate."
 }

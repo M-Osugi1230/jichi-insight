@@ -1,0 +1,84 @@
+{
+  "id": "phase13-sapporo-action-plan-children-youth-final-reconciliation",
+  "phase": 13,
+  "official_code": "011002",
+  "name_ja": "札幌市",
+  "field_id": "children_youth",
+  "field_ja": "子ども・若者",
+  "reviewed_at": "2026-08-16",
+  "status": "final_field_direct_visual_review_complete",
+  "final_source": {
+    "source_id": "sapporo-action-plan-2023-projects-children-youth",
+    "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_1.pdf",
+    "pdf_page_count": 16,
+    "printed_page_range": "43-58",
+    "intro_page_label": 43,
+    "intro_page_contains_project_rows": false,
+    "reviewed_project_page_labels": [44,45,46,47,48,49,50,51,52,53,54,55,56,57,58],
+    "verification_method": "official_final_pdf_downloaded_rendered_and_directly_visually_reviewed_all_pages",
+    "direct_visual_confirmation": true
+  },
+  "candidate_sources": {
+    "main_goal1_catalog_path": "data/catalog/sapporo_action_plan_children_youth_main_projects_goal1_candidates.json",
+    "main_goal2_catalog_path": "data/catalog/sapporo_action_plan_children_youth_main_projects_goal2_candidates.json",
+    "main_goal3_catalog_path": "data/catalog/sapporo_action_plan_children_youth_main_projects_goal3_candidates.json",
+    "other_projects_catalog_path": "data/catalog/sapporo_action_plan_children_youth_other_projects_candidates.json",
+    "candidate_record_count": 121,
+    "candidate_main_project_record_count": 74,
+    "candidate_other_project_record_count": 47
+  },
+  "reconciliation": {
+    "final_field_denominator": 121,
+    "effective_final_project_count": 121,
+    "effective_main_project_count": 74,
+    "effective_other_project_count": 47,
+    "excluded_candidate_count": 0,
+    "changed_identity_count": 0,
+    "changed_department_count": 0,
+    "changed_cost_count": 0,
+    "changed_target_count": 0,
+    "goal_counts": {
+      "1": {"main": 23, "other": 26, "total": 49},
+      "2": {"main": 30, "other": 10, "total": 40},
+      "3": {"main": 21, "other": 11, "total": 32}
+    },
+    "page_reconciliation": [
+      {"printed_page_label":44,"main_order_start":1,"main_order_end":5,"main_count":5,"other_count":0,"status":"direct_visual_exact_match"},
+      {"printed_page_label":45,"main_order_start":6,"main_order_end":11,"main_count":6,"other_count":0,"status":"direct_visual_exact_match"},
+      {"printed_page_label":46,"main_order_start":12,"main_order_end":17,"main_count":6,"other_count":0,"status":"direct_visual_exact_match"},
+      {"printed_page_label":47,"main_order_start":18,"main_order_end":23,"main_count":6,"other_order_start":1,"other_order_end":9,"other_count":9,"status":"direct_visual_exact_match"},
+      {"printed_page_label":48,"main_count":0,"other_order_start":10,"other_order_end":26,"other_count":17,"status":"direct_visual_exact_match"},
+      {"printed_page_label":49,"main_order_start":24,"main_order_end":26,"main_count":3,"other_count":0,"status":"direct_visual_exact_match"},
+      {"printed_page_label":50,"main_order_start":27,"main_order_end":34,"main_count":8,"other_count":0,"status":"direct_visual_exact_match"},
+      {"printed_page_label":51,"main_order_start":35,"main_order_end":40,"main_count":6,"other_count":0,"status":"direct_visual_exact_match"},
+      {"printed_page_label":52,"main_order_start":41,"main_order_end":46,"main_count":6,"other_count":0,"status":"direct_visual_exact_match"},
+      {"printed_page_label":53,"main_order_start":47,"main_order_end":52,"main_count":6,"other_count":0,"status":"direct_visual_exact_match"},
+      {"printed_page_label":54,"main_order_start":53,"main_order_end":53,"main_count":1,"other_order_start":27,"other_order_end":36,"other_count":10,"status":"direct_visual_exact_match"},
+      {"printed_page_label":55,"main_order_start":54,"main_order_end":57,"main_count":4,"other_count":0,"status":"direct_visual_exact_match"},
+      {"printed_page_label":56,"main_order_start":58,"main_order_end":65,"main_count":8,"other_count":0,"status":"direct_visual_exact_match_with_description_revision_confirmed"},
+      {"printed_page_label":57,"main_order_start":66,"main_order_end":71,"main_count":6,"other_count":0,"status":"direct_visual_exact_match"},
+      {"printed_page_label":58,"main_order_start":72,"main_order_end":74,"main_count":3,"other_order_start":37,"other_order_end":47,"other_count":11,"status":"direct_visual_exact_match"}
+    ],
+    "known_revision_confirmation": {
+      "candidate_order": 61,
+      "id": "school_facility_air_conditioning",
+      "project_name_ja": "学校施設冷房設備整備事業",
+      "printed_page_label": 56,
+      "official_revision_scope": "project_description_text_only",
+      "final_identity_department_cost_target_unchanged": true
+    },
+    "effective_final_project_ids_rule": "All 121 candidate identities are promoted because every final project page was directly visually reviewed and all project identities, responsible departments, planned costs, and captured main-project targets match the final official PDF. The known page-56 revision affects project-description text only.",
+    "confidence": "high_direct_final_visual"
+  },
+  "summary": {
+    "reviewed_project_record_count": 121,
+    "main_project_record_count": 74,
+    "other_project_record_count": 47,
+    "action_plan_reviewed_progress_increment": 121,
+    "action_plan_reviewed_count_before": 478,
+    "action_plan_reviewed_count_after": 599,
+    "remaining_action_plan_project_records_after": 0
+  },
+  "evidence_path": "data/evidence/sapporo_action_plan_children_youth_final_evidence.json",
+  "quality_boundary": "The final official children/youth PDF was directly rendered and visually reviewed on all 16 pages. Printed page 43 is an introduction and contains no project rows. All 121 final project rows on printed pages 44-58 were reconciled against the candidate inventories. Count equality was not used as a substitute for row-level review. The page-56 school air-conditioning revision is explicitly retained as a description-text-only final change. No linkage to the separate 403 annual progress target records or policy-achievement judgment is inferred."
+}

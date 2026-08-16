@@ -1,0 +1,105 @@
+{
+  "id": "phase13-sapporo-action-plan-environment-final-reconciliation",
+  "phase": 13,
+  "official_code": "011002",
+  "name_ja": "札幌市",
+  "field_id": "environment",
+  "field_ja": "環境",
+  "reviewed_at": "2026-08-16",
+  "status": "final_field_direct_visual_review_complete_with_department_corrections",
+  "final_source": {
+    "source_id": "sapporo-action-plan-2023-projects-environment",
+    "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_7.pdf",
+    "pdf_page_count": 10,
+    "printed_page_range": "111-120",
+    "intro_page_label": 111,
+    "intro_page_contains_project_rows": false,
+    "reviewed_project_page_labels": [112,113,114,115,116,117,118,119,120],
+    "verification_method": "official_final_pdf_downloaded_rendered_and_directly_visually_reviewed_all_pages",
+    "direct_visual_confirmation": true
+  },
+  "candidate_source": {
+    "catalog_path": "data/catalog/sapporo_action_plan_environment_project_candidates.json",
+    "evidence_path": "data/evidence/sapporo_action_plan_environment_project_candidates_evidence.json",
+    "candidate_record_count": 74,
+    "candidate_main_project_record_count": 47,
+    "candidate_other_project_record_count": 27
+  },
+  "reconciliation": {
+    "final_field_denominator": 74,
+    "candidate_record_count": 74,
+    "effective_final_project_count": 74,
+    "effective_main_project_count": 47,
+    "effective_other_project_count": 27,
+    "excluded_candidate_count": 0,
+    "changed_identity_count": 0,
+    "changed_cost_count": 0,
+    "changed_department_count": 5,
+    "department_corrections": [
+      {
+        "candidate_order": 1,
+        "id": "gx_investment_promotion",
+        "project_name_ja": "GX投資推進事業",
+        "draft_department_ja": "経)経済戦略推進部",
+        "final_department_ja": "政)政策企画部",
+        "printed_page_label": 112
+      },
+      {
+        "candidate_order": 4,
+        "id": "yard_vehicle_electrification_study",
+        "project_name_ja": "構内運搬車電動化に向けた調査検討事業",
+        "draft_department_ja": "環)環境都市推進部",
+        "final_department_ja": "経)中央卸売市場",
+        "printed_page_label": 113
+      },
+      {
+        "candidate_order": 8,
+        "id": "combined_treatment_septic_tank_subsidy",
+        "project_name_ja": "合併処理浄化槽設置費・維持管理費補助事業",
+        "draft_department_ja": "下)事業推進部",
+        "final_department_ja": "環)環境事業部",
+        "printed_page_label": 113
+      },
+      {
+        "candidate_order": 48,
+        "id": "water_facility_hydropower_installation",
+        "project_name_ja": "水道施設への水力発電設備導入事業",
+        "draft_department_ja": "水)給水部",
+        "final_department_ja": "水)総務部",
+        "printed_page_label": 117
+      },
+      {
+        "candidate_order": 74,
+        "id": "river_environment_improvement_for_life_and_nature",
+        "project_name_ja": "くらしと自然を豊かにする河川環境整備事業",
+        "draft_department_ja": "建)土木部",
+        "final_department_ja": "下)事業推進部",
+        "printed_page_label": 120
+      }
+    ],
+    "page_reconciliation": [
+      {"printed_page_label":112,"candidate_order_start":1,"candidate_order_end":2,"record_count":2,"status":"direct_visual_reviewed_one_department_correction"},
+      {"printed_page_label":113,"candidate_order_start":3,"candidate_order_end":10,"record_count":8,"status":"direct_visual_reviewed_two_department_corrections"},
+      {"printed_page_label":114,"candidate_order_start":11,"candidate_order_end":17,"record_count":7,"status":"direct_visual_exact_match"},
+      {"printed_page_label":115,"candidate_order_start":18,"candidate_order_end":24,"record_count":7,"status":"direct_visual_exact_match"},
+      {"printed_page_label":116,"candidate_order_start":25,"candidate_order_end":36,"record_count":12,"status":"direct_visual_exact_match"},
+      {"printed_page_label":117,"candidate_order_start":37,"candidate_order_end":48,"record_count":12,"status":"direct_visual_reviewed_one_department_correction"},
+      {"printed_page_label":118,"candidate_order_start":49,"candidate_order_end":51,"record_count":3,"status":"direct_visual_exact_match"},
+      {"printed_page_label":119,"candidate_order_start":52,"candidate_order_end":60,"record_count":9,"status":"direct_visual_exact_match"},
+      {"printed_page_label":120,"candidate_order_start":61,"candidate_order_end":74,"record_count":14,"status":"direct_visual_reviewed_one_department_correction"}
+    ],
+    "effective_final_project_ids_rule": "All 74 candidate IDs remain valid final identities. Final-source department values override five draft-candidate department values listed in department_corrections; project names and planned project costs are unchanged.",
+    "confidence": "high_direct_final_visual"
+  },
+  "summary": {
+    "reviewed_project_record_count": 74,
+    "main_project_record_count": 47,
+    "other_project_record_count": 27,
+    "action_plan_reviewed_progress_increment": 74,
+    "action_plan_reviewed_count_before": 404,
+    "action_plan_reviewed_count_after": 478,
+    "remaining_action_plan_project_records_after": 121
+  },
+  "evidence_path": "data/evidence/sapporo_action_plan_environment_final_evidence.json",
+  "quality_boundary": "The final official environment PDF was directly rendered and visually reviewed on every page. Printed page 111 contains no project rows. All 74 candidate identities remain present with unchanged planned costs, but five responsible-department values differ from the public-comment draft and are explicitly corrected to the final values. Candidate count equality alone was not used for promotion. No linkage to the separate 403 annual progress target records or policy-achievement judgment is inferred."
+}

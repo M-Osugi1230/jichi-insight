@@ -1,0 +1,46 @@
+{
+  "id": "phase13-sapporo-action-plan-candidate-queue-registry",
+  "phase": 13,
+  "official_code": "011002",
+  "name_ja": "札幌市",
+  "updated_at": "2026-08-16",
+  "status": "candidate_reconciliation_queue_complete_no_remaining_action_plan_identities",
+  "final_reviewed_identity_count": 599,
+  "final_action_plan_project_count": 599,
+  "remaining_final_identity_count": 0,
+  "candidate_rows_do_not_increment_final_reviewed_count": true,
+  "resolution_history": [
+    {"field_id":"daily_life_page68","resolved_record_count":7,"resolution":"direct_final_page_visual_review","reviewed_count_before":276,"reviewed_count_after":283,"reconciliation_path":"data/catalog/sapporo_action_plan_life_living_page68_final_reconciliation.json"},
+    {"field_id":"community","resolved_record_count":47,"resolution":"all_pages_direct_final_visual_review","reviewed_count_before":283,"reviewed_count_after":330,"reconciliation_path":"data/catalog/sapporo_action_plan_community_final_reconciliation.json"},
+    {"field_id":"economy","resolved_record_count":74,"resolution":"all_pages_direct_final_visual_review","reviewed_count_before":330,"reviewed_count_after":404,"reconciliation_path":"data/catalog/sapporo_action_plan_economy_final_reconciliation.json"},
+    {"field_id":"environment","resolved_record_count":74,"resolution":"all_pages_direct_final_visual_review_with_five_department_corrections","reviewed_count_before":404,"reviewed_count_after":478,"reconciliation_path":"data/catalog/sapporo_action_plan_environment_final_reconciliation.json"},
+    {"field_id":"children_youth","resolved_record_count":121,"resolution":"all_pages_direct_final_visual_review","reviewed_count_before":478,"reviewed_count_after":599,"reconciliation_path":"data/catalog/sapporo_action_plan_children_youth_final_reconciliation.json"}
+  ],
+  "candidate_fields": [],
+  "structural_reconciliation": {
+    "reviewed_identity_count": 599,
+    "candidate_identity_count": 0,
+    "reviewed_plus_candidate_count": 599,
+    "reviewed_main_project_count": 406,
+    "candidate_main_project_count": 0,
+    "final_main_project_count": 406,
+    "reviewed_other_project_count": 193,
+    "candidate_other_project_count": 0,
+    "final_other_project_count": 193,
+    "final_main_plus_other_count": 599,
+    "annual_progress_target_item_count": 403,
+    "main_projects_without_target_count": 3,
+    "main_projects_minus_no_target_count": 403,
+    "boundary": "All 599 Action Plan identities are now reconciled to final-source evidence. The separate 403 annual progress target denominator structurally equals 406 main projects minus three main projects without configured targets; this arithmetic does not itself complete the target-level review."
+  },
+  "summary": {
+    "candidate_field_queue_count": 0,
+    "candidate_record_count": 0,
+    "candidate_main_project_record_count": 0,
+    "candidate_other_project_record_count": 0,
+    "candidate_reviewed_final_identity_increment": 0,
+    "final_reviewed_identity_count_remains": 599,
+    "all_remaining_final_identities_have_candidate_rows": true
+  },
+  "quality_boundary": "The Action Plan identity candidate queue is exhausted: all 599 final project identities have been reconciled to final official evidence. Historical candidate files remain as lineage and are not deleted. Environment final review corrected five responsible-department values; life/living page 68 confirmed a final project rename; sports/culture final printed page 104 directly confirms the one draft-only Olympic/Paralympic row is absent. The separate 403 target-level progress review and citizen-perception layer remain outside this completed identity queue."
+}

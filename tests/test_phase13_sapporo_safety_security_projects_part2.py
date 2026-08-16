@@ -143,13 +143,18 @@ def test_sapporo_safety_field_completion_does_not_complete_municipality():
     )
     manifest = load(MANIFEST_PATH)
     facts = {fact["id"]: fact for fact in manifest["reviewed_facts"]}
-    complete = facts["action-plan-safety-security-project-records-complete"]
+    safety = facts["action-plan-safety-security-project-records-complete"]
+    all_projects = facts["action-plan-all-project-identities-complete"]
+    targets = facts["progress-project-targets"]
 
     assert sapporo["status"] == "review_in_progress"
     assert manifest["status"] == "review_in_progress"
-    assert complete["value"] == 70
-    assert complete["review_status"] == "reviewed_field_complete_at_declared_fields"
-    assert "599事業全体" in complete["interpretation_boundary"]
-    assert any("残る7分野" in item for item in manifest["remaining_work"])
+    assert safety["value"] == 70
+    assert safety["review_status"] == "reviewed_field_complete_at_declared_fields"
+    assert "599事業全体" in safety["interpretation_boundary"]
+    assert all_projects["value"] == 599
+    assert all_projects["review_status"] == "reviewed_complete"
+    assert targets["denominator"] == 403
+    assert targets["review_status"] == "reviewed_aggregate_only"
     assert any("403項目" in item for item in manifest["remaining_work"])
     assert "policy achievement" in load(PART2_PATH)["quality_boundary"]

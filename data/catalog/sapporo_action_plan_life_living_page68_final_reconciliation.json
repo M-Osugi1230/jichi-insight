@@ -1,0 +1,58 @@
+{
+  "id": "phase13-sapporo-action-plan-life-living-page68-final-reconciliation",
+  "phase": 13,
+  "official_code": "011002",
+  "name_ja": "札幌市",
+  "field_id": "daily_life",
+  "field_ja": "生活・暮らし",
+  "reviewed_at": "2026-08-16",
+  "status": "final_page68_direct_visual_review_complete",
+  "final_source": {
+    "source_id": "sapporo-action-plan-2023-projects-life-living",
+    "title": "第2次札幌市まちづくり戦略ビジョン・アクションプラン2023 第2章 分野2 生活・暮らし",
+    "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_2.pdf",
+    "pdf_page_count": 13,
+    "printed_page_label": 68,
+    "pdf_page_index_0_based": 9,
+    "authoritative_role": "final_action_plan_2023_chapter2_field_pdf",
+    "verification_method": "official_final_pdf_downloaded_and_rendered_for_direct_visual_review",
+    "direct_visual_confirmation": true
+  },
+  "candidate_snapshot": {
+    "catalog_path": "data/catalog/sapporo_action_plan_life_living_page68_candidates.json",
+    "evidence_path": "data/evidence/sapporo_action_plan_life_living_page68_candidates_evidence.json",
+    "role": "historical_draft_candidate_snapshot_before_final_page_reconciliation"
+  },
+  "revision_source": {
+    "url": "https://www.city.sapporo.jp/chosei/documents/ap2023-ikennshu.pdf",
+    "known_changed_project_id": "cancer_social_activity_support",
+    "draft_project_name_ja": "がん対策推進事業",
+    "final_project_name_ja": "がん患者の社会活動支援事業",
+    "listed_changed_fields": ["project_name", "project_description_text"],
+    "target_change_listed": false,
+    "cost_change_listed": false
+  },
+  "summary": {
+    "reviewed_project_record_count": 7,
+    "main_project_record_count": 7,
+    "other_project_record_count": 0,
+    "field_reviewed_record_count_before": 78,
+    "field_reviewed_record_count_after": 85,
+    "field_final_denominator": 85,
+    "action_plan_reviewed_progress_increment": 7,
+    "action_plan_reviewed_count_before": 276,
+    "action_plan_reviewed_count_after": 283,
+    "remaining_action_plan_project_records_after": 316
+  },
+  "records": [
+    {"page_label":68,"page_order":1,"record_type":"main_project","id":"inpatient_rights_advocacy_promotion","project_name_ja":"入院者権利擁護推進事業","responsible_department_ja":"保)障がい保健福祉部","planned_project_cost_yen":41000000,"planned_project_cost_raw_ja":"41百万円","target_name_ja":"訪問支援員の面会を経た退院者及びピアサポーターの支援による退院者数（年間）","baseline_year":2022,"baseline_value":1,"target_year":2027,"target_value":9,"unit":"people_per_year","review_status":"reviewed_direct_final_visual","evidence_id":"sapporo-life-living-page68-row1"},
+    {"page_label":68,"page_order":2,"record_type":"main_project","id":"private_public_facility_barrier_free_subsidy","project_name_ja":"民間公共的施設バリアフリー補助事業","responsible_department_ja":"保)障がい保健福祉部","planned_project_cost_yen":120000000,"planned_project_cost_raw_ja":"120百万円","target_name_ja":"整備件数（累計）","baseline_year":2022,"baseline_value":8,"target_year":2027,"target_value":100,"unit":"cases","review_status":"reviewed_direct_final_visual","evidence_id":"sapporo-life-living-page68-row2"},
+    {"page_label":68,"page_order":3,"record_type":"main_project","id":"disability_consultation_support","project_name_ja":"障がい者相談支援事業","responsible_department_ja":"保)障がい保健福祉部","planned_project_cost_yen":2752000000,"planned_project_cost_raw_ja":"2,752百万円","target_name_ja":"相談者の課題解決件数","baseline_year":2022,"baseline_value":null,"baseline_value_raw_ja":"－","target_year":2027,"target_value":5640,"unit":"cases","review_status":"reviewed_direct_final_visual","evidence_id":"sapporo-life-living-page68-row3"},
+    {"page_label":68,"page_order":4,"record_type":"main_project","id":"disability_welfare_facility_development_subsidy","project_name_ja":"障がい福祉施設等施設整備費補助事業","responsible_department_ja":"保)障がい保健福祉部","planned_project_cost_yen":2668000000,"planned_project_cost_raw_ja":"2,668百万円","target_name_ja":"施設整備を実施する事業所数（累計）","baseline_year":2022,"baseline_value":69,"target_year":2027,"target_value":79,"unit":"cases","review_status":"reviewed_direct_final_visual","evidence_id":"sapporo-life-living-page68-row4"},
+    {"page_label":68,"page_order":5,"record_type":"main_project","id":"severe_disability_medical_expense_subsidy","project_name_ja":"重度心身障がい者医療費助成事業","responsible_department_ja":"保)保険医療部","planned_project_cost_yen":253000000,"planned_project_cost_raw_ja":"253百万円","target_name_ja":"重度心身障がい者医療費助成制度の助成対象の拡充（精神入院）","baseline_year":2022,"baseline_value":"精神通院のみ","target_year":2024,"target_value":"精神入通院","unit":"milestone","review_status":"reviewed_direct_final_visual","evidence_id":"sapporo-life-living-page68-row5"},
+    {"page_label":68,"page_order":6,"record_type":"main_project","id":"late_elderly_insurance_convenience_payment","project_name_ja":"後期高齢者医療保険料のコンビニ納付及びスマートフォン決済の導入事業","responsible_department_ja":"保)保険医療部","planned_project_cost_yen":64000000,"planned_project_cost_raw_ja":"64百万円","target_name_ja":"保険料の納付場所の増加","baseline_year":2022,"baseline_value":513,"target_year":2027,"target_value":1743,"unit":"locations","review_status":"reviewed_direct_final_visual","evidence_id":"sapporo-life-living-page68-row6"},
+    {"page_label":68,"page_order":7,"record_type":"main_project","id":"cancer_social_activity_support","project_name_ja":"がん患者の社会活動支援事業","responsible_department_ja":"保)保健所","planned_project_cost_yen":110000000,"planned_project_cost_raw_ja":"110百万円","target_name_ja":"自分らしい日常生活を送れていると感じるがん患者の割合","baseline_year":2022,"baseline_value":null,"baseline_value_raw_ja":"－","target_year":2027,"target_value":70.5,"unit":"percent","review_status":"reviewed_direct_final_visual_and_revision_name_confirmed","evidence_id":"sapporo-life-living-page68-row7","revision_note":"Public-comment revision log changed the draft name がん対策推進事業 to the final name がん患者の社会活動支援事業; the final page directly confirms the final name, 110百万円 cost, and 70.5% target."}
+  ],
+  "ordering_boundary": "This reconciliation file records page-local order only. Existing life/living batch files preserve their pre-reconciliation reviewed-sequence field_order values; no duplicate or synthetic global field_order is introduced here.",
+  "quality_boundary": "Printed page 68 of the final official Action Plan PDF was directly rendered and visually reviewed. All seven final project identities, departments, planned costs, and printed targets are now Reviewed. The draft candidate snapshot is retained only as lineage; these seven rows are removed from the unresolved candidate queue. No linkage to the separate 403 annual target-status records or any achievement judgment is inferred."
+}

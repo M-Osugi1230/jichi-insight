@@ -1,0 +1,64 @@
+{
+  "id": "phase13-sapporo-action-plan-sports-culture-final-reconciliation",
+  "phase": 13,
+  "official_code": "011002",
+  "name_ja": "札幌市",
+  "field_id": "sports_culture",
+  "field_ja": "スポーツ・文化",
+  "reviewed_at": "2026-08-16",
+  "status": "final_denominator_and_excluded_row_directly_confirmed",
+  "final_denominator": {
+    "project_count": 51,
+    "source_id": "sapporo-action-plan-2023-final-overview",
+    "source_url": "https://www.city.sapporo.jp/chosei/documents/ap2023-gaiyou.pdf",
+    "evidence_page_index_0_based": 3,
+    "review_status": "direct_final_official_aggregate"
+  },
+  "final_field_source": {
+    "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_6.pdf",
+    "pdf_page_count": 9,
+    "printed_page_range": "102-110",
+    "directly_checked_page_label": 104,
+    "pdf_page_index_0_based": 2,
+    "direct_visual_confirmation": true,
+    "review_method": "official_final_pdf_downloaded_rendered_and_directly_visually_reviewed"
+  },
+  "draft_candidate_inventory": {
+    "project_count": 52,
+    "catalog_path": "data/catalog/sapporo_action_plan_sports_culture_projects.json",
+    "evidence_path": "data/evidence/sapporo_action_plan_sports_culture_projects_evidence.json",
+    "role": "draft_derived_candidate_inventory_with_final_document_reconciliation"
+  },
+  "reconciliation": {
+    "net_row_change": -1,
+    "effective_final_project_count": 51,
+    "effective_main_project_count": 36,
+    "effective_other_project_count": 15,
+    "excluded_draft_candidate": {
+      "id": "winter_olympic_paralympic_related",
+      "project_name_ja": "冬季オリンピック・パラリンピック関係事業",
+      "draft_page_label": 104,
+      "draft_record_type": "main_project",
+      "draft_planned_project_cost_yen": null,
+      "draft_target_value": null,
+      "final_inclusion_status": "directly_confirmed_absent_from_final_printed_page_104",
+      "direct_final_page_confirmation": true
+    },
+    "final_page104_observed_rows": {
+      "main_projects": [
+        "オリンピックミュージアム魅力アップ調査事業",
+        "藤野野外スポーツ交流施設リニューアル事業"
+      ],
+      "other_projects": [
+        "体育施設感染症対策事業",
+        "シティクロスカントリースキー大会実証実験事業",
+        "総合型ハイパフォーマンススポーツセンター誘致事業"
+      ],
+      "winter_olympic_paralympic_related_present": false
+    },
+    "effective_final_project_ids_rule": "Take the 52 draft-candidate IDs from the candidate catalog and exclude only winter_olympic_paralympic_related; final printed page 104 directly confirms that the excluded draft row is absent.",
+    "confidence": "direct_final_visual",
+    "residual_uncertainty": null
+  },
+  "quality_boundary": "The final official overview directly establishes the 51-project field denominator, and final printed page 104 was downloaded, rendered, and directly reviewed on 2026-08-16. The draft-only 冬季オリンピック・パラリンピック関係事業 is absent from the final page, converting the prior high-confidence inference into direct final-page evidence. The effective sports/culture final inventory is therefore 51 projects with no remaining identity-reconciliation caveat."
+}
