@@ -45,8 +45,14 @@ def test_page68_final_records_preserve_exact_cost_and_target_anchors():
     records = {record["id"]: record for record in load(FINAL)["records"]}
     assert records["inpatient_rights_advocacy_promotion"]["planned_project_cost_yen"] == 41_000_000
     assert records["disability_consultation_support"]["planned_project_cost_yen"] == 2_752_000_000
-    assert records["disability_welfare_facility_development_subsidy"]["planned_project_cost_yen"] == 2_668_000_000
-    assert records["severe_disability_medical_expense_subsidy"]["planned_project_cost_yen"] == 253_000_000
+    assert (
+        records["disability_welfare_facility_development_subsidy"]["planned_project_cost_yen"]
+        == 2_668_000_000
+    )
+    assert (
+        records["severe_disability_medical_expense_subsidy"]["planned_project_cost_yen"]
+        == 253_000_000
+    )
     assert records["cancer_social_activity_support"]["target_value"] == 70.5
 
 
@@ -64,7 +70,9 @@ def test_page68_final_evidence_is_one_to_one():
     evidence = load(FINAL_EVIDENCE)
     packets = evidence["evidence_packets"]
     assert len(packets) == len(final["records"]) == 7
-    assert {packet["project_id"] for packet in packets} == {record["id"] for record in final["records"]}
+    assert {packet["project_id"] for packet in packets} == {
+        record["id"] for record in final["records"]
+    }
     assert all(packet["page_label"] == 68 for packet in packets)
 
 
@@ -76,7 +84,9 @@ def test_historical_candidate_evidence_remains_lineage_only():
 
 def test_page68_remains_reviewed_inside_completed_599_identity_layer():
     index = load(SOURCE_INDEX)
-    life = next(field for field in index["machizukuri_field_sources"] if field["field_id"] == "daily_life")
+    life = next(
+        field for field in index["machizukuri_field_sources"] if field["field_id"] == "daily_life"
+    )
     queue = load(QUEUE_REGISTRY)
     assert life["field_total_project_count"] == 85
     assert life["reviewed_project_record_count"] == 85

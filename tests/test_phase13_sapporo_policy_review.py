@@ -20,7 +20,9 @@ def test_sapporo_policy_review_uses_reviewed_official_sources():
     sources = load(SOURCE_PATH)["records"]
     source_map = {record["id"]: record for record in sources}
     manifest_source_ids = set(manifest["source_ids"])
-    fact_source_ids = {fact["source_id"] for fact in manifest["reviewed_facts"] if "source_id" in fact}
+    fact_source_ids = {
+        fact["source_id"] for fact in manifest["reviewed_facts"] if "source_id" in fact
+    }
 
     assert manifest["official_code"] == "011002"
     assert manifest["status"] == "review_in_progress"
@@ -31,7 +33,10 @@ def test_sapporo_policy_review_uses_reviewed_official_sources():
     assert all(record["confidence"] == "high" for record in sources)
 
     assert source_map["sapporo-action-plan-2023-page"]["review_status"] == "reviewed"
-    assert source_map["sapporo-action-plan-2023-final-overview"]["review_status"] == "reviewed_for_final_field_project_denominators"
+    assert (
+        source_map["sapporo-action-plan-2023-final-overview"]["review_status"]
+        == "reviewed_for_final_field_project_denominators"
+    )
 
     children = source_map["sapporo-action-plan-2023-projects-children-youth"]
     assert children["field_total_project_count"] == 121
@@ -118,8 +123,14 @@ def test_sapporo_action_plan_identity_gate_is_complete_but_city_remains_in_progr
     sapporo = next(item for item in queue["execution_queue"] if item["official_code"] == "011002")
     manifest = load(MANIFEST_PATH)
     readiness = load(READINESS_PATH)
-    identity_gate = next(item for item in readiness["blocking_gates"] if item["id"] == "action-plan-project-records")
-    target_gate = next(item for item in readiness["blocking_gates"] if item["id"] == "principal-project-target-records")
+    identity_gate = next(
+        item for item in readiness["blocking_gates"] if item["id"] == "action-plan-project-records"
+    )
+    target_gate = next(
+        item
+        for item in readiness["blocking_gates"]
+        if item["id"] == "principal-project-target-records"
+    )
 
     assert sapporo["status"] == "review_in_progress"
     assert manifest["status"] == "review_in_progress"

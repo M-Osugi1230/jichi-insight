@@ -6,8 +6,12 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG_PATH = ROOT / "data/catalog/sapporo_action_plan_life_living_projects_batch3_pages69_71.json"
-EVIDENCE_PATH = ROOT / "data/evidence/sapporo_action_plan_life_living_projects_batch3_pages69_71_evidence.json"
-FINAL68_PATH = ROOT / "data/catalog/sapporo_action_plan_life_living_page68_final_reconciliation.json"
+EVIDENCE_PATH = (
+    ROOT / "data/evidence/sapporo_action_plan_life_living_projects_batch3_pages69_71_evidence.json"
+)
+FINAL68_PATH = (
+    ROOT / "data/catalog/sapporo_action_plan_life_living_page68_final_reconciliation.json"
+)
 EXECUTION_PATH = ROOT / "data/catalog/sapporo_action_plan_life_living_review_execution.json"
 SOURCE_INDEX_PATH = ROOT / "data/catalog/sapporo_action_plan_project_source_index.json"
 POLICY_SOURCES_PATH = ROOT / "data/catalog/sapporo_policy_sources.json"
@@ -60,11 +64,19 @@ def test_page68_is_now_directly_reconciled_and_batch3_execution_is_complete():
 
 def test_global_state_reflects_complete_life_living_inside_599_identity_layer():
     index = load(SOURCE_INDEX_PATH)
-    daily = next(field for field in index["machizukuri_field_sources"] if field["field_id"] == "daily_life")
+    daily = next(
+        field for field in index["machizukuri_field_sources"] if field["field_id"] == "daily_life"
+    )
     sources = {record["id"]: record for record in load(POLICY_SOURCES_PATH)["records"]}
     readiness = load(READINESS_PATH)
-    layer = next(item for item in readiness["verified_reviewed_layers"] if item["layer"] == "action_plan_project_records")
-    gate = next(item for item in readiness["blocking_gates"] if item["id"] == "action-plan-project-records")
+    layer = next(
+        item
+        for item in readiness["verified_reviewed_layers"]
+        if item["layer"] == "action_plan_project_records"
+    )
+    gate = next(
+        item for item in readiness["blocking_gates"] if item["id"] == "action-plan-project-records"
+    )
 
     assert daily["reviewed_project_record_count"] == 85
     assert daily["reviewed_main_project_record_count"] == 62

@@ -76,6 +76,8 @@ def test_source_index_and_candidate_registry_agree_on_zero_remaining_identities(
     assert registry["candidate_rows_do_not_increment_final_reviewed_count"] is True
     assert index["summary"]["individual_project_records_reviewed"] == 599
     assert index["summary"]["remaining_action_plan_project_records"] == 0
-    assert index["summary"]["candidate_project_records_pending_final_identity_crosscheck_total"] == 0
+    assert (
+        index["summary"]["candidate_project_records_pending_final_identity_crosscheck_total"] == 0
+    )
     assert index["summary"]["candidate_fields_pending_final_identity_crosscheck"] == []
     assert "all 599 final project identities" in registry["quality_boundary"]

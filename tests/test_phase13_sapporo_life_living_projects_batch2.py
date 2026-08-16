@@ -31,8 +31,16 @@ def test_batch2_historical_review_is_preserved_exactly():
 
 def test_batch2_anchor_values_remain_stable():
     records = {record["id"]: record for record in load(CATALOG_PATH)["records"]}
-    assert records["administrative_affairs_center_operation"]["planned_project_cost_yen"] == 1_876_000_000
-    assert records["digital_environment_for_advanced_administrative_services"]["planned_project_cost_yen"] == 14_647_000_000
+    assert (
+        records["administrative_affairs_center_operation"]["planned_project_cost_yen"]
+        == 1_876_000_000
+    )
+    assert (
+        records["digital_environment_for_advanced_administrative_services"][
+            "planned_project_cost_yen"
+        ]
+        == 14_647_000_000
+    )
     assert records["disabled_transportation_expense_subsidy"]["target_year"] == 2026
 
 
@@ -46,16 +54,23 @@ def test_batch2_evidence_remains_one_to_one():
 def test_current_life_living_state_is_complete_inside_599_identity_layer():
     execution = load(EXECUTION_PATH)
     index = load(SOURCE_INDEX_PATH)
-    daily = next(field for field in index["machizukuri_field_sources"] if field["field_id"] == "daily_life")
+    daily = next(
+        field for field in index["machizukuri_field_sources"] if field["field_id"] == "daily_life"
+    )
     sources = {record["id"]: record for record in load(POLICY_SOURCES_PATH)["records"]}
     readiness = load(READINESS_PATH)
-    project_gate = next(gate for gate in readiness["blocking_gates"] if gate["id"] == "action-plan-project-records")
+    project_gate = next(
+        gate for gate in readiness["blocking_gates"] if gate["id"] == "action-plan-project-records"
+    )
 
     assert execution["review_batches"][1]["reviewed_project_record_count"] == 28
     assert execution["reviewed_project_record_count"] == 85
     assert daily["reviewed_project_record_count"] == 85
     assert daily["blocked_page_labels"] == []
-    assert sources["sapporo-action-plan-2023-projects-life-living"]["reviewed_project_record_count"] == 85
+    assert (
+        sources["sapporo-action-plan-2023-projects-life-living"]["reviewed_project_record_count"]
+        == 85
+    )
     assert project_gate["state"] == "complete_599_of_599_final_identity_review"
     assert project_gate["reviewed_scope"] == 599
     assert project_gate["remaining_scope"] == 0

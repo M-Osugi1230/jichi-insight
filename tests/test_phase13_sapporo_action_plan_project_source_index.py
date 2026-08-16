@@ -40,7 +40,10 @@ def test_sapporo_project_source_index_has_exact_official_document_spine():
 
 def test_sapporo_final_field_denominators_are_exact_and_sum_to_599():
     denominators = load(DENOMINATORS_PATH)
-    counts = {field["field_id"]: field["final_project_count"] for field in denominators["field_denominators"]}
+    counts = {
+        field["field_id"]: field["final_project_count"]
+        for field in denominators["field_denominators"]
+    }
     assert counts == {
         "children_youth": 121,
         "daily_life": 85,
@@ -84,7 +87,10 @@ def test_direct_final_reconciliation_findings_are_preserved():
     children = fields["children_youth"]
     assert children["page_count"] == 16
     assert children["source_lineage"]["direct_final_visual_check_status"] == "reviewed_all_pages"
-    assert children["source_lineage"]["printed_page_56_changed_field"] == "project_description_text_only"
+    assert (
+        children["source_lineage"]["printed_page_56_changed_field"]
+        == "project_description_text_only"
+    )
 
     daily = fields["daily_life"]
     assert daily["blocked_page_labels"] == []

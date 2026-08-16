@@ -35,7 +35,19 @@ def test_urban_space_has_exact_complete_77_record_inventory():
 
 def test_urban_space_preserves_exact_page_distribution_and_goal_counts():
     records = load(CATALOG_PATH)["records"]
-    assert Counter(record["page_label"] for record in records) == {122:2,123:8,124:8,125:6,126:3,127:8,128:8,129:4,130:4,131:8,132:18}
+    assert Counter(record["page_label"] for record in records) == {
+        122: 2,
+        123: 8,
+        124: 8,
+        125: 6,
+        126: 3,
+        127: 8,
+        128: 8,
+        129: 4,
+        130: 4,
+        131: 8,
+        132: 18,
+    }
     assert Counter(record["goal"] for record in records) == {18: 24, 19: 23, 20: 30}
     assert [record["field_order"] for record in records] == list(range(1, 78))
     assert len({record["id"] for record in records}) == 77
@@ -43,12 +55,20 @@ def test_urban_space_preserves_exact_page_distribution_and_goal_counts():
 
 def test_urban_space_preserves_key_numeric_milestone_and_direction_anchors():
     records = {record["id"]: record for record in load(CATALOG_PATH)["records"]}
-    assert records["public_transport_network_security"]["planned_project_cost_yen"] == 10_132_000_000
+    assert (
+        records["public_transport_network_security"]["planned_project_cost_yen"] == 10_132_000_000
+    )
     assert records["streetcar_utilization_promotion"]["planned_project_cost_yen"] == 6_203_000_000
     assert records["vacant_house_measures"]["target_value"] == 219
-    assert records["kita5_nishi1_nishi2_redevelopment"]["planned_project_cost_yen"] == 39_009_000_000
-    assert records["subway_sapporo_station_improvement"]["planned_project_cost_yen"] == 12_957_000_000
-    assert records["school_facility_new_reconstruction"]["planned_project_cost_yen"] == 60_714_000_000
+    assert (
+        records["kita5_nishi1_nishi2_redevelopment"]["planned_project_cost_yen"] == 39_009_000_000
+    )
+    assert (
+        records["subway_sapporo_station_improvement"]["planned_project_cost_yen"] == 12_957_000_000
+    )
+    assert (
+        records["school_facility_new_reconstruction"]["planned_project_cost_yen"] == 60_714_000_000
+    )
     assert records["sewer_facility_reconstruction"]["planned_project_cost_yen"] == 134_528_000_000
 
 
@@ -62,15 +82,27 @@ def test_urban_space_has_one_to_one_evidence_and_revision_non_intersection():
     assert boundary["printed_pages_122_132_project_rows_covered_here"] is True
     assert boundary["direct_final_visual_checks"] == [121, 122]
     assert len(packets) == len(catalog["records"]) == 77
-    assert {packet["project_id"] for packet in packets} == {record["id"] for record in catalog["records"]}
+    assert {packet["project_id"] for packet in packets} == {
+        record["id"] for record in catalog["records"]
+    }
 
 
 def test_urban_space_remains_complete_inside_completed_599_identity_layer():
     index = load(SOURCE_INDEX_PATH)
     readiness = load(READINESS_PATH)
-    urban = next(record for record in index["machizukuri_field_sources"] if record["field_id"] == "urban_space")
-    project_layer = next(layer for layer in readiness["verified_reviewed_layers"] if layer["layer"] == "action_plan_project_records")
-    project_gate = next(gate for gate in readiness["blocking_gates"] if gate["id"] == "action-plan-project-records")
+    urban = next(
+        record
+        for record in index["machizukuri_field_sources"]
+        if record["field_id"] == "urban_space"
+    )
+    project_layer = next(
+        layer
+        for layer in readiness["verified_reviewed_layers"]
+        if layer["layer"] == "action_plan_project_records"
+    )
+    project_gate = next(
+        gate for gate in readiness["blocking_gates"] if gate["id"] == "action-plan-project-records"
+    )
 
     assert urban["content_review_status"] == "record_review_complete_at_declared_fields"
     assert urban["reviewed_project_record_count"] == 77

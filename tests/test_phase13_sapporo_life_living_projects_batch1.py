@@ -31,9 +31,22 @@ def test_batch1_historical_review_is_preserved_exactly():
 
 def test_batch1_anchor_values_remain_stable():
     records = {record["id"]: record for record in load(CATALOG_PATH)["records"]}
-    assert records["community_comprehensive_support_center_function_strengthening"]["planned_project_cost_yen"] == 8_867_000_000
-    assert records["national_health_insurance_lifestyle_disease_prevention"]["planned_project_cost_yen"] == 3_544_000_000
-    assert records["administrative_procedure_online_promotion"]["planned_project_cost_yen"] == 42_000_000
+    assert (
+        records["community_comprehensive_support_center_function_strengthening"][
+            "planned_project_cost_yen"
+        ]
+        == 8_867_000_000
+    )
+    assert (
+        records["national_health_insurance_lifestyle_disease_prevention"][
+            "planned_project_cost_yen"
+        ]
+        == 3_544_000_000
+    )
+    assert (
+        records["administrative_procedure_online_promotion"]["planned_project_cost_yen"]
+        == 42_000_000
+    )
 
 
 def test_batch1_evidence_remains_one_to_one():
@@ -46,15 +59,24 @@ def test_batch1_evidence_remains_one_to_one():
 def test_current_life_living_state_is_complete_inside_599_identity_layer():
     execution = load(EXECUTION_PATH)
     index = load(SOURCE_INDEX_PATH)
-    daily = next(field for field in index["machizukuri_field_sources"] if field["field_id"] == "daily_life")
+    daily = next(
+        field for field in index["machizukuri_field_sources"] if field["field_id"] == "daily_life"
+    )
     sources = {record["id"]: record for record in load(POLICY_SOURCES_PATH)["records"]}
     readiness = load(READINESS_PATH)
-    project_layer = next(layer for layer in readiness["verified_reviewed_layers"] if layer["layer"] == "action_plan_project_records")
+    project_layer = next(
+        layer
+        for layer in readiness["verified_reviewed_layers"]
+        if layer["layer"] == "action_plan_project_records"
+    )
 
     assert execution["review_batches"][0]["reviewed_project_record_count"] == 15
     assert execution["reviewed_project_record_count"] == 85
     assert daily["reviewed_project_record_count"] == 85
-    assert sources["sapporo-action-plan-2023-projects-life-living"]["reviewed_project_record_count"] == 85
+    assert (
+        sources["sapporo-action-plan-2023-projects-life-living"]["reviewed_project_record_count"]
+        == 85
+    )
     assert project_layer["state"] == "complete_final_identity_review"
     assert project_layer["reviewed_record_count"] == 599
     assert readiness["current_status"] == "review_in_progress"

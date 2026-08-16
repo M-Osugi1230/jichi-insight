@@ -12,9 +12,12 @@ GOAL_CATALOGS = [
     CATALOG_DIR / "sapporo_action_plan_children_youth_main_projects_goal3_candidates.json",
 ]
 GOAL_EVIDENCE = [
-    EVIDENCE_DIR / "sapporo_action_plan_children_youth_main_projects_goal1_candidates_evidence.json",
-    EVIDENCE_DIR / "sapporo_action_plan_children_youth_main_projects_goal2_candidates_evidence.json",
-    EVIDENCE_DIR / "sapporo_action_plan_children_youth_main_projects_goal3_candidates_evidence.json",
+    EVIDENCE_DIR
+    / "sapporo_action_plan_children_youth_main_projects_goal1_candidates_evidence.json",
+    EVIDENCE_DIR
+    / "sapporo_action_plan_children_youth_main_projects_goal2_candidates_evidence.json",
+    EVIDENCE_DIR
+    / "sapporo_action_plan_children_youth_main_projects_goal3_candidates_evidence.json",
 ]
 OTHER_CATALOG = CATALOG_DIR / "sapporo_action_plan_children_youth_other_projects_candidates.json"
 FINAL = CATALOG_DIR / "sapporo_action_plan_children_youth_final_reconciliation.json"
@@ -56,7 +59,11 @@ def test_children_youth_final_reconciliation_promotes_all_121_rows():
     other = load(OTHER_CATALOG)
     evidence = load(FINAL_EVIDENCE)
     index = load(SOURCE_INDEX)
-    children = next(field for field in index["machizukuri_field_sources"] if field["field_id"] == "children_youth")
+    children = next(
+        field
+        for field in index["machizukuri_field_sources"]
+        if field["field_id"] == "children_youth"
+    )
 
     assert len(load_main_records()) == 74
     assert other["summary"]["candidate_record_count"] == 47

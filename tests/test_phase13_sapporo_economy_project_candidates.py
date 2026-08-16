@@ -29,7 +29,10 @@ def test_economy_historical_candidate_inventory_has_exact_74_rows():
     assert summary["goal11_candidate_count"] == 19
     assert summary["goal12_candidate_count"] == 16
     assert [record["candidate_order"] for record in records] == list(range(1, 75))
-    assert Counter(record["record_type"] for record in records) == {"main_project": 61, "other_project": 13}
+    assert Counter(record["record_type"] for record in records) == {
+        "main_project": 61,
+        "other_project": 13,
+    }
 
 
 def test_economy_candidates_preserve_representative_cost_anchors():
@@ -37,7 +40,10 @@ def test_economy_candidates_preserve_representative_cost_anchors():
     assert records["hometown_tax_utilization"]["planned_project_cost_yen"] == 10_097_000_000
     assert records["new_mice_facility_development"]["planned_project_cost_yen"] is None
     assert records["sme_finance_fund_lending"]["planned_project_cost_yen"] == 440_547_000_000
-    assert records["distribution_function_sales_channel_support"]["planned_project_cost_yen"] == 26_952_000_000
+    assert (
+        records["distribution_function_sales_channel_support"]["planned_project_cost_yen"]
+        == 26_952_000_000
+    )
 
 
 def test_economy_historical_candidates_have_exact_one_to_one_evidence_order():
@@ -53,7 +59,9 @@ def test_economy_final_review_promotes_all_74_rows_after_direct_visual_check():
     final = load(FINAL)
     evidence = load(FINAL_EVIDENCE)
     denominators = load(DENOMINATORS)
-    economy_denominator = next(field for field in denominators["field_denominators"] if field["field_id"] == "economy")
+    economy_denominator = next(
+        field for field in denominators["field_denominators"] if field["field_id"] == "economy"
+    )
 
     assert economy_denominator["final_project_count"] == 74
     assert final["status"] == "final_field_direct_visual_review_complete"
@@ -70,7 +78,9 @@ def test_economy_final_review_promotes_all_74_rows_after_direct_visual_check():
 def test_economy_final_review_is_reflected_in_global_metadata():
     queue = load(QUEUE_REGISTRY)
     index = load(SOURCE_INDEX)
-    economy = next(field for field in index["machizukuri_field_sources"] if field["field_id"] == "economy")
+    economy = next(
+        field for field in index["machizukuri_field_sources"] if field["field_id"] == "economy"
+    )
 
     assert queue["candidate_fields"] == []
     assert queue["final_reviewed_identity_count"] == 599

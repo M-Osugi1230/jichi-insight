@@ -5,7 +5,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG_PATH = ROOT / "data/catalog/sapporo_action_plan_safety_security_projects_part1.json"
-EVIDENCE_PATH = ROOT / "data/evidence/sapporo_action_plan_safety_security_projects_part1_evidence.json"
+EVIDENCE_PATH = (
+    ROOT / "data/evidence/sapporo_action_plan_safety_security_projects_part1_evidence.json"
+)
 SOURCE_PATH = ROOT / "data/catalog/sapporo_policy_sources.json"
 MANIFEST_PATH = ROOT / "data/catalog/sapporo_phase13_policy_review_manifest.json"
 
@@ -21,17 +23,31 @@ def test_sapporo_safety_project_batch_has_exact_four_page80_records():
     assert catalog["summary"]["reviewed_project_record_count"] == 4
     assert [record["page_order"] for record in records] == [1, 2, 3, 4]
     assert [record["project_name_ja"] for record in records] == [
-        "災害対策本部機能強化事業", "防災普及啓発推進事業", "地域防災活動推進事業", "備蓄物資整備事業"
+        "災害対策本部機能強化事業",
+        "防災普及啓発推進事業",
+        "地域防災活動推進事業",
+        "備蓄物資整備事業",
     ]
     assert all(record["responsible_department_ja"] == "危機管理部" for record in records)
 
 
 def test_sapporo_safety_project_batch_preserves_exact_costs_and_targets():
     records = {record["id"]: record for record in load(CATALOG_PATH)["records"]}
-    assert records["disaster_response_headquarters_function_enhancement"]["planned_project_cost_yen"] == 57_000_000
-    assert records["disaster_prevention_awareness_promotion"]["planned_project_cost_yen"] == 25_000_000
-    assert records["community_disaster_prevention_activity_promotion"]["planned_project_cost_yen"] == 85_000_000
-    assert records["emergency_stockpile_materials_development"]["planned_project_cost_yen"] == 901_000_000
+    assert (
+        records["disaster_response_headquarters_function_enhancement"]["planned_project_cost_yen"]
+        == 57_000_000
+    )
+    assert (
+        records["disaster_prevention_awareness_promotion"]["planned_project_cost_yen"] == 25_000_000
+    )
+    assert (
+        records["community_disaster_prevention_activity_promotion"]["planned_project_cost_yen"]
+        == 85_000_000
+    )
+    assert (
+        records["emergency_stockpile_materials_development"]["planned_project_cost_yen"]
+        == 901_000_000
+    )
 
 
 def test_sapporo_safety_project_batch_has_one_to_one_evidence_packets():
