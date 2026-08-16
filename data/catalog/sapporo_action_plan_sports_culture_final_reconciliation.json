@@ -5,8 +5,8 @@
   "name_ja": "札幌市",
   "field_id": "sports_culture",
   "field_ja": "スポーツ・文化",
-  "reviewed_at": "2026-08-15",
-  "status": "final_denominator_reconciled_high_confidence",
+  "reviewed_at": "2026-08-16",
+  "status": "final_denominator_and_excluded_row_directly_confirmed",
   "final_denominator": {
     "project_count": 51,
     "source_id": "sapporo-action-plan-2023-final-overview",
@@ -14,12 +14,20 @@
     "evidence_page_index_0_based": 3,
     "review_status": "direct_final_official_aggregate"
   },
+  "final_field_source": {
+    "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_6.pdf",
+    "pdf_page_count": 9,
+    "printed_page_range": "102-110",
+    "directly_checked_page_label": 104,
+    "pdf_page_index_0_based": 2,
+    "direct_visual_confirmation": true,
+    "review_method": "official_final_pdf_downloaded_rendered_and_directly_visually_reviewed"
+  },
   "draft_candidate_inventory": {
     "project_count": 52,
     "catalog_path": "data/catalog/sapporo_action_plan_sports_culture_projects.json",
     "evidence_path": "data/evidence/sapporo_action_plan_sports_culture_projects_evidence.json",
-    "role": "draft_derived_candidate_inventory_with_final_document_boundary_crosscheck",
-    "warning": "The 52-row catalog predates discovery of the final official field denominator of 51 and must not be consumed as the final effective inventory without this reconciliation overlay."
+    "role": "draft_derived_candidate_inventory_with_final_document_reconciliation"
   },
   "reconciliation": {
     "net_row_change": -1,
@@ -33,36 +41,24 @@
       "draft_record_type": "main_project",
       "draft_planned_project_cost_yen": null,
       "draft_target_value": null,
-      "final_inclusion_status": "excluded_from_effective_final_inventory_high_confidence_inference",
-      "direct_final_page_confirmation": false
+      "final_inclusion_status": "directly_confirmed_absent_from_final_printed_page_104",
+      "direct_final_page_confirmation": true
     },
-    "effective_final_project_ids_rule": "Take the 52 draft-candidate IDs from the candidate catalog and exclude only winter_olympic_paralympic_related.",
-    "confidence": "high",
-    "confidence_basis": [
-      "The final official overview states 51 sports/culture projects, while the public-comment draft had 52.",
-      "All seven other field denominators are unchanged between draft and final; the plan-wide total changes from 600 to 599, localizing the one-row reduction to sports/culture.",
-      "The draft-era official mayor press conference explicitly identifies 冬季オリンピック・パラリンピック関係事業 as an Action Plan draft project.",
-      "On 2023-12-19 Sapporo decided to stop the Olympic/Paralympic bid, and the 2023-12-20 mayor press conference reported both that stop and completion of Action Plan 2023.",
-      "The candidate row had neither a planned project cost nor a project target in the draft inventory, consistent with removal without changing the field's quantified project-cost rows."
-    ],
-    "residual_uncertainty": "The final printed page 104 could not be rendered because the official PDF screenshot endpoint repeatedly returned a cache miss. Therefore the excluded row identity is a high-confidence official-timeline-supported reconciliation inference, not direct final-page visual evidence."
+    "final_page104_observed_rows": {
+      "main_projects": [
+        "オリンピックミュージアム魅力アップ調査事業",
+        "藤野野外スポーツ交流施設リニューアル事業"
+      ],
+      "other_projects": [
+        "体育施設感染症対策事業",
+        "シティクロスカントリースキー大会実証実験事業",
+        "総合型ハイパフォーマンススポーツセンター誘致事業"
+      ],
+      "winter_olympic_paralympic_related_present": false
+    },
+    "effective_final_project_ids_rule": "Take the 52 draft-candidate IDs from the candidate catalog and exclude only winter_olympic_paralympic_related; final printed page 104 directly confirms that the excluded draft row is absent.",
+    "confidence": "direct_final_visual",
+    "residual_uncertainty": null
   },
-  "source_lineage": [
-    {
-      "role": "final_field_denominator",
-      "title": "第2次札幌市まちづくり戦略ビジョン・アクションプラン2023の概要",
-      "url": "https://www.city.sapporo.jp/chosei/documents/ap2023-gaiyou.pdf"
-    },
-    {
-      "role": "draft_project_identity",
-      "title": "令和5年9月15日臨時市長記者会見記録",
-      "url": "https://www.city.sapporo.jp/city/mayor/interview/text/2023/0915.html"
-    },
-    {
-      "role": "finalization_timeline_and_bid_stop",
-      "title": "令和5年度第14回定例市長記者会見記録",
-      "url": "https://www.city.sapporo.jp/city/mayor/interview/text/2023/1220.html"
-    }
-  ],
-  "quality_boundary": "最終版51件という分母は公式最終概要から直接確認済み。除外候補の同定は高確度推論であり、最終104頁の直接画像確認ではないため、その区別を保持する。52件の旧候補台帳を最終51件として直接利用しない。"
+  "quality_boundary": "The final official overview directly establishes the 51-project field denominator, and final printed page 104 was downloaded, rendered, and directly reviewed on 2026-08-16. The draft-only 冬季オリンピック・パラリンピック関係事業 is absent from the final page, converting the prior high-confidence inference into direct final-page evidence. The effective sports/culture final inventory is therefore 51 projects with no remaining identity-reconciliation caveat."
 }
