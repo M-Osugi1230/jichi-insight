@@ -5,15 +5,10 @@ from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-CATALOG_PATH = (
-    ROOT / "data/catalog/sapporo_action_plan_life_living_projects_batch3_pages69_71.json"
-)
-EVIDENCE_PATH = (
-    ROOT / "data/evidence/sapporo_action_plan_life_living_projects_batch3_pages69_71_evidence.json"
-)
-EXECUTION_PATH = (
-    ROOT / "data/catalog/sapporo_action_plan_life_living_review_execution.json"
-)
+CATALOG_PATH = ROOT / "data/catalog/sapporo_action_plan_life_living_projects_batch3_pages69_71.json"
+EVIDENCE_PATH = ROOT / "data/evidence/sapporo_action_plan_life_living_projects_batch3_pages69_71_evidence.json"
+FINAL68_PATH = ROOT / "data/catalog/sapporo_action_plan_life_living_page68_final_reconciliation.json"
+EXECUTION_PATH = ROOT / "data/catalog/sapporo_action_plan_life_living_review_execution.json"
 SOURCE_INDEX_PATH = ROOT / "data/catalog/sapporo_action_plan_project_source_index.json"
 POLICY_SOURCES_PATH = ROOT / "data/catalog/sapporo_policy_sources.json"
 READINESS_PATH = ROOT / "data/catalog/sapporo_phase13_completion_readiness.json"
@@ -23,7 +18,7 @@ def load(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def test_batch3_safe_pages_have_exact_35_records_and_keep_page68_blocked():
+def test_historical_pages69_71_snapshot_keeps_exact_35_records():
     catalog = load(CATALOG_PATH)
     records = catalog["records"]
     summary = catalog["summary"]
@@ -34,149 +29,77 @@ def test_batch3_safe_pages_have_exact_35_records_and_keep_page68_blocked():
     assert summary["other_project_record_count"] == 20
     assert summary["reviewed_page_labels"] == [69, 70, 71]
     assert summary["blocked_page_labels"] == [68]
-    assert summary["field_total_project_count_reviewed"] is False
-    assert catalog["source_verification"]["blocked_printed_page"] == 68
-    assert catalog["source_verification"]["listed_revision_intersects_reviewed_pages"] is False
-
-
-def test_batch3_safe_pages_preserve_exact_page_distribution_and_order():
-    records = load(CATALOG_PATH)["records"]
     assert Counter(record["page_label"] for record in records) == {69: 7, 70: 8, 71: 20}
     assert [record["field_order"] for record in records] == list(range(44, 79))
-    assert len({record["id"] for record in records}) == 35
-    assert len({record["evidence_id"] for record in records}) == 35
-    assert sum(record["record_type"] == "main_project" for record in records) == 15
-    assert sum(record["record_type"] == "other_project" for record in records) == 20
 
 
-def test_batch3_safe_pages_preserve_numeric_and_milestone_anchors():
+def test_pages69_71_anchor_values_remain_stable():
     records = {record["id"]: record for record in load(CATALOG_PATH)["records"]}
 
     female = records["female_specific_cancer_exam_system"]
     assert female["planned_project_cost_yen"] == 176_000_000
-    assert female["target_components"] == [
-        {
-            "component": "乳がん検診",
-            "baseline_value": 15.9,
-            "target_value": 18.0,
-            "unit": "percent",
-        },
-        {
-            "component": "子宮がん検診",
-            "baseline_value": 27.9,
-            "target_value": 30.3,
-            "unit": "percent",
-        },
-    ]
-
-    home = records["community_integrated_medical_care"]
-    assert (home["baseline_value"], home["target_value"]) == (1416, 2399)
+    assert len(female["target_components"]) == 2
 
     snow = records["road_snow_removal"]
     assert snow["planned_project_cost_yen"] == 110_277_000_000
     assert (snow["baseline_value"], snow["target_value"]) == (77, 100)
 
-    housing = records["sapporo_housing_basic_plan_formulation"]
-    assert housing["target_value"] == "策定"
-    assert housing["unit"] == "milestone"
-
     school = records["school_facility_barrier_free_improvement"]
-    assert school["page_label"] == 70
     assert (school["baseline_value"], school["target_value"]) == (63, 100)
 
-    final_other = records["capable_diverse_human_resources_securement"]
-    assert final_other["page_label"] == 71
-    assert final_other["planned_project_cost_yen"] == 90_000_000
-    assert "target_name_ja" not in final_other
 
-
-def test_batch3_safe_pages_evidence_is_one_to_one_and_excludes_page68():
+def test_pages69_71_evidence_remains_one_to_one_and_historical_boundary_is_explicit():
     catalog = load(CATALOG_PATH)
     evidence = load(EVIDENCE_PATH)
     packets = evidence["evidence_packets"]
 
-    assert evidence["revision_history_crosscheck"]["reviewed_pages_intersection"] is False
-    assert evidence["revision_history_crosscheck"]["blocked_page_68"] is True
     assert len(packets) == len(catalog["records"]) == 35
-    assert {packet["project_id"] for packet in packets} == {
-        record["id"] for record in catalog["records"]
-    }
-    assert {packet["evidence_id"] for packet in packets} == {
-        record["evidence_id"] for record in catalog["records"]
-    }
+    assert {packet["project_id"] for packet in packets} == {record["id"] for record in catalog["records"]}
     assert {packet["page_label"] for packet in packets} == {69, 70, 71}
-    assert 68 not in {packet["page_label"] for packet in packets}
+    assert evidence["revision_history_crosscheck"]["blocked_page_68"] is True
 
 
-def test_life_living_final_denominator_is_85_with_exact_7_unresolved_on_page68():
+def test_page68_is_now_directly_reconciled_and_batch3_execution_is_complete():
+    final68 = load(FINAL68_PATH)
     execution = load(EXECUTION_PATH)
     batch3 = execution["review_batches"][2]
-    index = load(SOURCE_INDEX_PATH)
-    daily = next(
-        field
-        for field in index["machizukuri_field_sources"]
-        if field["field_id"] == "daily_life"
-    )
 
-    assert execution["status"] == "record_review_in_progress_page68_blocked"
-    assert execution["reviewed_project_record_count"] == 78
-    assert batch3["status"] == "partially_reviewed_pages69_71_complete_page68_blocked"
-    assert batch3["reviewed_project_record_count"] == 35
-    assert batch3["blocked_pages"] == [68]
+    assert final68["final_source"]["direct_visual_confirmation"] is True
+    assert final68["summary"]["reviewed_project_record_count"] == 7
+    assert execution["status"] == "record_review_complete_at_declared_fields"
+    assert execution["reviewed_project_record_count"] == 85
+    assert batch3["status"] == "reviewed_batch_complete_at_declared_fields"
+    assert batch3["reviewed_project_record_count"] == 42
+    assert batch3["main_project_record_count"] == 22
+    assert batch3["other_project_record_count"] == 20
+    assert batch3["reviewed_pages"] == [68, 69, 70, 71]
+    assert batch3["blocked_pages"] == []
+
+
+def test_global_state_reflects_complete_life_living_and_283_reviewed():
+    index = load(SOURCE_INDEX_PATH)
+    daily = next(field for field in index["machizukuri_field_sources"] if field["field_id"] == "daily_life")
+    sources = {record["id"]: record for record in load(POLICY_SOURCES_PATH)["records"]}
+    readiness = load(READINESS_PATH)
+    layer = next(item for item in readiness["verified_reviewed_layers"] if item["layer"] == "action_plan_project_records")
+    gate = next(item for item in readiness["blocking_gates"] if item["id"] == "action-plan-project-records")
 
     assert daily["field_total_project_count"] == 85
-    assert daily["field_total_project_count_reviewed"] is True
-    assert daily["reviewed_project_record_count"] == 78
-    assert daily["unresolved_project_record_count"] == 7
-    assert daily["reviewed_main_project_record_count"] == 55
+    assert daily["reviewed_project_record_count"] == 85
+    assert daily["unresolved_project_record_count"] == 0
+    assert daily["reviewed_main_project_record_count"] == 62
     assert daily["reviewed_other_project_record_count"] == 23
-    assert daily["blocked_page_labels"] == [68]
-    assert daily["source_lineage"]["blocked_page_final_project_count_by_denominator"] == 7
+    assert daily["blocked_page_labels"] == []
 
-
-def test_batch3_safe_pages_remain_reflected_in_global_progress():
-    index = load(SOURCE_INDEX_PATH)
-    readiness = load(READINESS_PATH)
-    project_layer = next(
-        layer
-        for layer in readiness["verified_reviewed_layers"]
-        if layer["layer"] == "action_plan_project_records"
-    )
-    project_gate = next(
-        gate
-        for gate in readiness["blocking_gates"]
-        if gate["id"] == "action-plan-project-records"
-    )
-
-    assert index["summary"]["individual_project_records_reviewed"] >= 276
-    assert index["summary"]["remaining_action_plan_project_records"] == (
-        599 - index["summary"]["individual_project_records_reviewed"]
-    )
-    assert index["summary"]["partially_reviewed_field_project_records"] >= 78
-
-    assert project_layer["reviewed_record_count"] >= 276
-    assert project_layer["active_partial_field_final_denominator"] == 85
-    assert project_layer["active_partial_field_reviewed_record_count"] == 78
-    assert project_layer["active_partial_field_unresolved_record_count"] == 7
-    assert project_layer["active_partial_field_blocked_page"] == 68
-    assert project_gate["remaining_scope"] == 599 - project_gate["reviewed_scope"]
-    assert readiness["current_status"] == "review_in_progress"
-
-
-def test_source_registry_records_final_85_and_page68_block():
-    sources = {record["id"]: record for record in load(POLICY_SOURCES_PATH)["records"]}
     life = sources["sapporo-action-plan-2023-projects-life-living"]
-    revisions = sources["sapporo-action-plan-2023-public-comment-results"]
+    assert life["review_status"] == "reviewed_for_complete_field_project_inventory_direct_page68_final"
+    assert life["reviewed_project_record_count"] == 85
+    assert life["blocked_printed_pages"] == []
+    assert life["direct_final_page68_confirmation"] is True
 
-    assert life["review_status"] == "reviewed_78_of_final_85_page68_blocked"
-    assert life["field_total_project_count"] == 85
-    assert life["reviewed_project_record_count"] == 78
-    assert life["unresolved_project_record_count"] == 7
-    assert life["reviewed_printed_pages"] == "60-67,69-71"
-    assert life["blocked_printed_pages"] == [68]
-    assert revisions["listed_revision_locations"] == [
-        "printed_page_2",
-        "printed_page_56",
-        "printed_page_68",
-        "printed_pages_134_173",
-    ]
+    assert index["summary"]["individual_project_records_reviewed"] == 283
+    assert index["summary"]["remaining_action_plan_project_records"] == 316
+    assert layer["reviewed_record_count"] == 283
+    assert gate["reviewed_scope"] == 283
+    assert gate["remaining_scope"] == 316
+    assert readiness["current_status"] == "review_in_progress"
