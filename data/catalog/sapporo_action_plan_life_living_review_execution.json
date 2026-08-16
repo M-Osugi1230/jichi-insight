@@ -5,9 +5,9 @@
   "name_ja": "札幌市",
   "field_id": "daily_life",
   "field_ja": "生活・暮らし",
-  "status": "record_review_in_progress_page68_blocked",
-  "reviewed_at": "2026-08-15",
-  "reviewed_project_record_count": 78,
+  "status": "record_review_complete_at_declared_fields",
+  "reviewed_at": "2026-08-16",
+  "reviewed_project_record_count": 85,
   "official_source": {
     "landing_url": "https://www.city.sapporo.jp/chosei/actionplan2023.html",
     "pdf_url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_2.pdf",
@@ -23,8 +23,9 @@
     "batch2_revision_intersection": false,
     "batch3_page68_revision_intersection": true,
     "reviewed_pages_without_listed_revision": "59-67,69-71",
-    "blocked_revision_page": 68,
-    "rule": "当初案はナビゲーション・転記補助のみ。最終版PDFを正本とし、公式修正履歴を使ってReviewed範囲の改訂影響を明示する。68頁は実際の修正対象なので最終版の直接確認が取れるまでblockedとする。"
+    "direct_final_revision_page_reviewed": 68,
+    "page68_direct_final_visual_review": true,
+    "rule": "当初案はナビゲーション・転記補助のみ。最終版PDFを正本とし、公式修正履歴を使って改訂影響を明示する。68頁は修正対象のため最終版PDFを直接画像確認し、7件を個票として確定した。"
   },
   "review_batches": [
     {
@@ -50,15 +51,21 @@
     {
       "sequence": 3,
       "printed_pages": "68-71",
-      "status": "partially_reviewed_pages69_71_complete_page68_blocked",
-      "reviewed_project_record_count": 35,
-      "main_project_record_count": 15,
+      "status": "reviewed_batch_complete_at_declared_fields",
+      "reviewed_project_record_count": 42,
+      "main_project_record_count": 22,
       "other_project_record_count": 20,
-      "reviewed_pages": [69, 70, 71],
-      "blocked_pages": [68],
-      "catalog_path": "data/catalog/sapporo_action_plan_life_living_projects_batch3_pages69_71.json",
-      "evidence_path": "data/evidence/sapporo_action_plan_life_living_projects_batch3_pages69_71_evidence.json",
-      "promotion_rule": "Pages 69-71 may be promoted because the official revision log does not list them. Printed page 68 is explicitly revised and remains blocked until the final PDF is directly re-verified."
+      "reviewed_pages": [68, 69, 70, 71],
+      "blocked_pages": [],
+      "catalog_paths": [
+        "data/catalog/sapporo_action_plan_life_living_page68_final_reconciliation.json",
+        "data/catalog/sapporo_action_plan_life_living_projects_batch3_pages69_71.json"
+      ],
+      "evidence_paths": [
+        "data/evidence/sapporo_action_plan_life_living_page68_final_evidence.json",
+        "data/evidence/sapporo_action_plan_life_living_projects_batch3_pages69_71_evidence.json"
+      ],
+      "promotion_rule": "Pages 69-71 were previously promoted after revision-history crosscheck. Printed page 68 was promoted only after direct visual review of the final official PDF."
     }
   ],
   "candidate_only_secondary_source": {
@@ -69,11 +76,11 @@
   "quality_gates": [
     "Final official Action Plan PDF is the authoritative promotion source.",
     "Official public-comment revision history is retained as source lineage and used to identify pages requiring direct final-version re-verification.",
-    "Printed page 68 remains blocked because it is explicitly revised in the official revision history.",
+    "Printed page 68 was directly reviewed against the final official PDF before promotion.",
     "No project name, cost, department, target, baseline, or page membership is promoted solely from the public-comment draft where a revision applies.",
     "No count is inferred from page count or the plan-level 599-project aggregate.",
     "No linkage to the separate 403 annual principal-project targets is inferred during plan-row review.",
     "Sapporo remains review_in_progress until all municipality completion gates pass."
   ],
-  "next_action": "印刷68頁の最終版を直接再確認する。確認できるまでは78件を生活・暮らしのReviewed個票として固定し、68頁の行数・内容を推測で補完しない。"
+  "next_action": "生活・暮らし85件の最終個票レビューは完了。残る子ども・若者121、地域47、経済74、環境74の計316候補を最終版公式PDFへ直接照合してReviewedへ昇格する。"
 }
