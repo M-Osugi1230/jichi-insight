@@ -1,0 +1,37 @@
+{
+  "id": "phase13-sapporo-action-plan-environment-final-evidence",
+  "phase": 13,
+  "official_code": "011002",
+  "name_ja": "札幌市",
+  "field_id": "environment",
+  "reviewed_at": "2026-08-16",
+  "source": {
+    "source_id": "sapporo-action-plan-2023-projects-environment",
+    "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_7.pdf",
+    "pdf_page_count": 10,
+    "printed_page_range": "111-120",
+    "review_method": "official_final_pdf_downloaded_rendered_and_directly_visually_reviewed_all_pages"
+  },
+  "document_boundary": {
+    "printed_page_111_contains_project_rows": false,
+    "reviewed_project_page_labels": [112,113,114,115,116,117,118,119,120],
+    "candidate_rows_crosschecked": 74,
+    "final_identity_matches": 74,
+    "department_corrections": 5,
+    "cost_changes": 0
+  },
+  "page_evidence_packets": [
+    {"page_label":112,"pdf_page_index_0_based":1,"candidate_order_start":1,"candidate_order_end":2,"record_count":2,"department_correction_orders":[1],"evidence_status":"reviewed_direct_final_visual"},
+    {"page_label":113,"pdf_page_index_0_based":2,"candidate_order_start":3,"candidate_order_end":10,"record_count":8,"department_correction_orders":[4,8],"evidence_status":"reviewed_direct_final_visual"},
+    {"page_label":114,"pdf_page_index_0_based":3,"candidate_order_start":11,"candidate_order_end":17,"record_count":7,"department_correction_orders":[],"evidence_status":"reviewed_direct_final_visual_exact_match"},
+    {"page_label":115,"pdf_page_index_0_based":4,"candidate_order_start":18,"candidate_order_end":24,"record_count":7,"department_correction_orders":[],"evidence_status":"reviewed_direct_final_visual_exact_match"},
+    {"page_label":116,"pdf_page_index_0_based":5,"candidate_order_start":25,"candidate_order_end":36,"record_count":12,"department_correction_orders":[],"evidence_status":"reviewed_direct_final_visual_exact_match"},
+    {"page_label":117,"pdf_page_index_0_based":6,"candidate_order_start":37,"candidate_order_end":48,"record_count":12,"department_correction_orders":[48],"evidence_status":"reviewed_direct_final_visual"},
+    {"page_label":118,"pdf_page_index_0_based":7,"candidate_order_start":49,"candidate_order_end":51,"record_count":3,"department_correction_orders":[],"evidence_status":"reviewed_direct_final_visual_exact_match"},
+    {"page_label":119,"pdf_page_index_0_based":8,"candidate_order_start":52,"candidate_order_end":60,"record_count":9,"department_correction_orders":[],"evidence_status":"reviewed_direct_final_visual_exact_match"},
+    {"page_label":120,"pdf_page_index_0_based":9,"candidate_order_start":61,"candidate_order_end":74,"record_count":14,"department_correction_orders":[74],"evidence_status":"reviewed_direct_final_visual"}
+  ],
+  "candidate_identity_evidence_path": "data/evidence/sapporo_action_plan_environment_project_candidates_evidence.json",
+  "final_correction_registry_path": "data/catalog/sapporo_action_plan_environment_final_reconciliation.json",
+  "quality_boundary": "The candidate inventory preserves record-level draft identity evidence. This file adds page-by-page direct final-source confirmation and identifies the exact five candidate orders whose responsible department must be overridden by the final PDF. The page packets partition candidate orders 1-74 without gaps or overlap."
+}
