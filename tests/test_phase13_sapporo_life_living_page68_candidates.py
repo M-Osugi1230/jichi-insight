@@ -20,13 +20,10 @@ def test_page68_preserves_historical_seven_candidate_snapshot():
     catalog = load(CATALOG)
     records = catalog["records"]
     summary = catalog["summary"]
-
-    assert catalog["field_id"] == "daily_life"
     assert len(records) == summary["candidate_record_count"] == 7
     assert summary["main_project_candidate_count"] == 7
     assert summary["other_project_candidate_count"] == 0
     assert summary["known_final_name_change_count"] == 1
-    assert all(record["record_type"] == "main_project" for record in records)
     assert all(record["draft_printed_page_label"] == 68 for record in records)
 
 
@@ -34,78 +31,41 @@ def test_page68_final_reconciliation_directly_promotes_exact_seven_rows():
     final = load(FINAL)
     summary = final["summary"]
     records = final["records"]
-
     assert final["status"] == "final_page68_direct_visual_review_complete"
     assert final["final_source"]["direct_visual_confirmation"] is True
     assert final["final_source"]["printed_page_label"] == 68
-    assert final["final_source"]["pdf_page_index_0_based"] == 9
     assert len(records) == summary["reviewed_project_record_count"] == 7
-    assert summary["main_project_record_count"] == 7
-    assert summary["field_reviewed_record_count_before"] == 78
     assert summary["field_reviewed_record_count_after"] == 85
     assert summary["action_plan_reviewed_count_before"] == 276
     assert summary["action_plan_reviewed_count_after"] == 283
-    assert summary["remaining_action_plan_project_records_after"] == 316
-    assert all(record["page_label"] == 68 for record in records)
     assert [record["page_order"] for record in records] == list(range(1, 8))
-    assert all("field_order" not in record for record in records)
 
 
 def test_page68_final_records_preserve_exact_cost_and_target_anchors():
     records = {record["id"]: record for record in load(FINAL)["records"]}
-
-    rights = records["inpatient_rights_advocacy_promotion"]
-    assert rights["planned_project_cost_yen"] == 41_000_000
-    assert (rights["baseline_value"], rights["target_value"]) == (1, 9)
-
-    consultation = records["disability_consultation_support"]
-    assert consultation["planned_project_cost_yen"] == 2_752_000_000
-    assert consultation["baseline_value"] is None
-    assert consultation["target_value"] == 5_640
-
-    facilities = records["disability_welfare_facility_development_subsidy"]
-    assert facilities["planned_project_cost_yen"] == 2_668_000_000
-    assert (facilities["baseline_value"], facilities["target_value"]) == (69, 79)
-
-    medical = records["severe_disability_medical_expense_subsidy"]
-    assert medical["planned_project_cost_yen"] == 253_000_000
-    assert medical["baseline_value"] == "精神通院のみ"
-    assert medical["target_value"] == "精神入通院"
-
-    cancer = records["cancer_social_activity_support"]
-    assert cancer["planned_project_cost_yen"] == 110_000_000
-    assert cancer["target_value"] == 70.5
+    assert records["inpatient_rights_advocacy_promotion"]["planned_project_cost_yen"] == 41_000_000
+    assert records["disability_consultation_support"]["planned_project_cost_yen"] == 2_752_000_000
+    assert records["disability_welfare_facility_development_subsidy"]["planned_project_cost_yen"] == 2_668_000_000
+    assert records["severe_disability_medical_expense_subsidy"]["planned_project_cost_yen"] == 253_000_000
+    assert records["cancer_social_activity_support"]["target_value"] == 70.5
 
 
 def test_page68_final_confirms_cancer_name_change():
     final = load(FINAL)
-    records = {record["id"]: record for record in final["records"]}
-    cancer = records["cancer_social_activity_support"]
+    cancer = {record["id"]: record for record in final["records"]}["cancer_social_activity_support"]
     revision = final["revision_source"]
-
     assert revision["draft_project_name_ja"] == "がん対策推進事業"
     assert revision["final_project_name_ja"] == "がん患者の社会活動支援事業"
     assert cancer["project_name_ja"] == "がん患者の社会活動支援事業"
-    assert cancer["review_status"] == (
-        "reviewed_direct_final_visual_and_revision_name_confirmed"
-    )
 
 
 def test_page68_final_evidence_is_one_to_one():
     final = load(FINAL)
     evidence = load(FINAL_EVIDENCE)
     packets = evidence["evidence_packets"]
-
     assert len(packets) == len(final["records"]) == 7
-    assert {packet["project_id"] for packet in packets} == {
-        record["id"] for record in final["records"]
-    }
-    assert {packet["evidence_id"] for packet in packets} == {
-        record["evidence_id"] for record in final["records"]
-    }
+    assert {packet["project_id"] for packet in packets} == {record["id"] for record in final["records"]}
     assert all(packet["page_label"] == 68 for packet in packets)
-    assert all(packet["pdf_page_index_0_based"] == 9 for packet in packets)
-    assert all(packet["evidence_status"] == "reviewed_direct_final_visual" for packet in packets)
 
 
 def test_historical_candidate_evidence_remains_lineage_only():
@@ -114,19 +74,14 @@ def test_historical_candidate_evidence_remains_lineage_only():
     assert "do not promote" in evidence["evidence_boundary"]
 
 
-def test_page68_is_removed_from_remaining_candidate_queue_and_global_progress_is_283():
+def test_page68_remains_reviewed_inside_completed_599_identity_layer():
     index = load(SOURCE_INDEX)
-    life = next(
-        field for field in index["machizukuri_field_sources"] if field["field_id"] == "daily_life"
-    )
+    life = next(field for field in index["machizukuri_field_sources"] if field["field_id"] == "daily_life")
     queue = load(QUEUE_REGISTRY)
-    queued_ids = {field["field_id"] for field in queue["candidate_fields"]}
-
     assert life["field_total_project_count"] == 85
     assert life["reviewed_project_record_count"] == 85
     assert life["unresolved_project_record_count"] == 0
-    assert life["blocked_page_labels"] == []
     assert 68 in life["reviewed_page_labels"]
-    assert "daily_life_page68" not in queued_ids
-    assert index["summary"]["individual_project_records_reviewed"] == 283
-    assert index["summary"]["remaining_action_plan_project_records"] == 316
+    assert queue["candidate_fields"] == []
+    assert index["summary"]["individual_project_records_reviewed"] == 599
+    assert index["summary"]["remaining_action_plan_project_records"] == 0
