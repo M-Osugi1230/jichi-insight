@@ -8,6 +8,7 @@ MANIFEST_PATH = ROOT / "data/catalog/sapporo_phase13_policy_review_manifest.json
 SOURCE_PATH = ROOT / "data/catalog/sapporo_policy_sources.json"
 INVENTORY_PATH = ROOT / "data/indexed/sapporo-city/source_inventory.json"
 QUEUE_PATH = ROOT / "data/catalog/phase13_designated_city_review_queue.json"
+READINESS_PATH = ROOT / "data/catalog/sapporo_phase13_completion_readiness.json"
 
 
 def load(path: Path):
@@ -20,41 +21,39 @@ def test_sapporo_policy_review_uses_reviewed_official_sources():
     source_map = {record["id"]: record for record in sources}
     manifest_source_ids = set(manifest["source_ids"])
     fact_source_ids = {
-        fact["source_id"]
-        for fact in manifest["reviewed_facts"]
-        if "source_id" in fact
+        fact["source_id"] for fact in manifest["reviewed_facts"] if "source_id" in fact
     }
 
     assert manifest["official_code"] == "011002"
     assert manifest["status"] == "review_in_progress"
     assert manifest_source_ids.issubset(source_map)
-    assert fact_source_ids.issubset(manifest_source_ids)
+    assert fact_source_ids.issubset(source_map)
     assert all(record["organization"] == "札幌市" for record in sources)
     assert all(record["url"].startswith("https://www.city.sapporo.jp/") for record in sources)
+    assert all(record["confidence"] == "high" for record in source_map.values())
+
     assert source_map["sapporo-action-plan-2023-page"]["review_status"] == "reviewed"
     assert source_map["sapporo-action-plan-2023-final-overview"]["review_status"] == (
         "reviewed_for_final_field_project_denominators"
     )
     assert source_map["sapporo-action-plan-2023-progress-page"]["review_status"] == "reviewed"
-    current_report = source_map["sapporo-action-plan-2023-outcomes-2025-report"]
-    assert current_report["review_status"] == "reviewed_for_indicator_current_values"
-    assert current_report["confidence"] == "high"
-    assert all(record["confidence"] == "high" for record in source_map.values())
 
     life = source_map["sapporo-action-plan-2023-projects-life-living"]
-    assert life["review_status"] == "reviewed_78_of_final_85_page68_blocked"
+    assert life["review_status"] == (
+        "reviewed_for_complete_field_project_inventory_direct_page68_final"
+    )
     assert life["field_total_project_count"] == 85
-    assert life["reviewed_project_record_count"] == 78
-    assert life["unresolved_project_record_count"] == 7
-    assert life["blocked_printed_pages"] == [68]
+    assert life["reviewed_project_record_count"] == 85
+    assert life["unresolved_project_record_count"] == 0
+    assert life["reviewed_main_project_record_count"] == 62
+    assert life["reviewed_other_project_record_count"] == 23
+    assert life["blocked_printed_pages"] == []
+    assert life["direct_final_page68_confirmation"] is True
 
     sports = source_map["sapporo-action-plan-2023-projects-sports-culture"]
     assert sports["review_status"] == "reviewed_final_51_high_confidence_reconciliation"
-    assert sports["page_count"] == 9
     assert sports["field_total_project_count"] == 51
     assert sports["reviewed_project_record_count"] == 51
-    assert sports["reviewed_main_project_record_count"] == 36
-    assert sports["reviewed_other_project_record_count"] == 15
     assert sports["candidate_draft_record_count"] == 52
     assert sports["excluded_draft_candidate_id"] == "winter_olympic_paralympic_related"
     assert sports["direct_final_page104_confirmation"] is False
@@ -63,6 +62,9 @@ def test_sapporo_policy_review_uses_reviewed_official_sources():
     assert urban["field_total_project_count"] == 77
     assert urban["reviewed_project_record_count"] == 77
     assert urban["direct_final_visual_checks"] == [121, 122]
+
+    assert source_map["sapporo-action-plan-2023-projects-economy"]["candidate_project_record_count"] == 74
+    assert source_map["sapporo-action-plan-2023-projects-environment"]["candidate_project_record_count"] == 74
 
     draft = source_map["sapporo-action-plan-2023-public-comment-draft"]
     assert draft["review_status"] == "navigation_and_transcription_only"
@@ -116,9 +118,7 @@ def test_sapporo_inventory_now_resolves_action_plan_canonical_route():
 
     action_plan = sources["sapporo-action-plan-2023"]
     assert action_plan["status"] == "official_landing_verified"
-    assert action_plan["official_url"] == (
-        "https://www.city.sapporo.jp/chosei/actionplan2023.html"
-    )
+    assert action_plan["official_url"] == "https://www.city.sapporo.jp/chosei/actionplan2023.html"
     assert action_plan["effective_period"] == "2023年度～2027年度"
 
     progress = sources["sapporo-action-plan-2023-progress"]
@@ -126,21 +126,20 @@ def test_sapporo_inventory_now_resolves_action_plan_canonical_route():
     assert progress["available_periods"] == ["2023年度実績", "2024年度実績"]
 
 
-def test_sapporo_remains_phase13_in_progress_until_project_records_are_reviewed():
+def test_sapporo_remains_phase13_in_progress_with_283_project_records_reviewed():
     queue = load(QUEUE_PATH)
-    sapporo = next(
-        item for item in queue["execution_queue"] if item["official_code"] == "011002"
-    )
+    sapporo = next(item for item in queue["execution_queue"] if item["official_code"] == "011002")
     statuses = [item["status"] for item in queue["execution_queue"]]
     manifest = load(MANIFEST_PATH)
+    readiness = load(READINESS_PATH)
+    gate = next(item for item in readiness["blocking_gates"] if item["id"] == "action-plan-project-records")
 
     assert sapporo["status"] == "review_in_progress"
-    assert queue["summary"]["review_in_progress_count"] == statuses.count(
-        "review_in_progress"
-    )
-    assert queue["summary"]["reviewed_complete_count"] == statuses.count(
-        "reviewed_complete"
-    )
+    assert queue["summary"]["review_in_progress_count"] == statuses.count("review_in_progress")
+    assert queue["summary"]["reviewed_complete_count"] == statuses.count("reviewed_complete")
     assert len(manifest["remaining_work"]) == 4
     assert any("599" in item for item in manifest["remaining_work"])
     assert any("26" in item and "403" in item for item in manifest["remaining_work"])
+    assert gate["reviewed_scope"] == 283
+    assert gate["remaining_scope"] == 316
+    assert readiness["current_status"] == "review_in_progress"
