@@ -76,8 +76,7 @@ def test_sapporo_project_source_index_preserves_known_and_pending_page_counts():
 def test_sapporo_safety_source_records_complete_field_project_inventory():
     index = load(INDEX_PATH)
     safety = next(
-        record
-        for record in index["machizukuri_field_sources"]
+        record for record in index["machizukuri_field_sources"]
         if record["field_id"] == "safety_security"
     )
 
@@ -91,8 +90,7 @@ def test_sapporo_safety_source_records_complete_field_project_inventory():
 def test_sapporo_sports_culture_uses_final_51_reconciliation_not_draft_52():
     index = load(INDEX_PATH)
     sports = next(
-        record
-        for record in index["machizukuri_field_sources"]
+        record for record in index["machizukuri_field_sources"]
         if record["field_id"] == "sports_culture"
     )
 
@@ -110,29 +108,44 @@ def test_sapporo_sports_culture_uses_final_51_reconciliation_not_draft_52():
     assert sports["field_total_project_count_reviewed"] is True
 
 
-def test_sapporo_daily_life_has_final_85_denominator_with_exact_7_unresolved():
+def test_sapporo_daily_life_is_complete_85_after_direct_page68_review():
     index = load(INDEX_PATH)
     daily = next(
-        record
-        for record in index["machizukuri_field_sources"]
+        record for record in index["machizukuri_field_sources"]
         if record["field_id"] == "daily_life"
     )
 
+    assert daily["content_review_status"] == (
+        "record_review_complete_at_declared_fields_direct_page68_final"
+    )
     assert daily["field_total_project_count"] == 85
     assert daily["field_total_project_count_reviewed"] is True
-    assert daily["reviewed_project_record_count"] == 78
-    assert daily["unresolved_project_record_count"] == 7
-    assert daily["blocked_page_labels"] == [68]
-    assert daily["source_lineage"]["blocked_revision_page"] == 68
-    assert daily["source_lineage"]["blocked_page_final_project_count_by_denominator"] == 7
-    assert 68 not in daily["reviewed_page_labels"]
+    assert daily["reviewed_project_record_count"] == 85
+    assert daily["unresolved_project_record_count"] == 0
+    assert daily["reviewed_main_project_record_count"] == 62
+    assert daily["reviewed_other_project_record_count"] == 23
+    assert daily["blocked_page_labels"] == []
+    assert daily["reviewed_page_labels"] == list(range(60, 72))
+    assert daily["source_lineage"]["direct_final_visual_checked_page"] == 68
+    assert daily["source_lineage"]["direct_final_visual_check_status"] == "reviewed"
+
+
+def test_sapporo_remaining_candidate_fields_are_all_registered():
+    index = load(INDEX_PATH)
+    fields = {record["field_id"]: record for record in index["machizukuri_field_sources"]}
+
+    assert fields["children_youth"]["candidate_project_record_count"] == 121
+    assert fields["community"]["candidate_project_record_count"] == 47
+    assert fields["economy"]["candidate_project_record_count"] == 74
+    assert fields["environment"]["candidate_project_record_count"] == 74
+    assert fields["economy"]["candidate_main_project_record_count"] == 61
+    assert fields["environment"]["candidate_main_project_record_count"] == 47
 
 
 def test_sapporo_urban_space_source_records_complete_field_project_inventory():
     index = load(INDEX_PATH)
     urban = next(
-        record
-        for record in index["machizukuri_field_sources"]
+        record for record in index["machizukuri_field_sources"]
         if record["field_id"] == "urban_space"
     )
 
@@ -146,34 +159,34 @@ def test_sapporo_urban_space_source_records_complete_field_project_inventory():
     assert urban["source_lineage"]["reviewed_record_count_matches_final_field_count"] is True
 
 
-def test_sapporo_project_source_index_global_progress_is_exact_276_of_599():
+def test_sapporo_project_source_index_global_progress_is_exact_283_of_599():
     index = load(INDEX_PATH)
     summary = index["summary"]
     aggregate = index["plan_level_aggregate"]
 
     assert aggregate["planned_project_count"] == 599
     assert aggregate["planned_project_cost_yen"] == 1_785_400_000_000
-    assert aggregate["allocation_status"] == (
-        "final_field_denominators_reviewed_record_allocation_in_progress"
-    )
     assert summary["total_action_plan_project_count"] == 599
     assert summary["final_field_denominators_reviewed"] == 8
-    assert summary["individual_project_records_reviewed"] == 276
-    assert summary["fully_reviewed_field_project_records"] == 198
-    assert summary["partially_reviewed_field_project_records"] == 78
-    assert summary["remaining_action_plan_project_records"] == 323
+    assert summary["individual_project_records_reviewed"] == 283
+    assert summary["fully_reviewed_field_project_records"] == 283
+    assert summary["partially_reviewed_field_project_records"] == 0
+    assert summary["candidate_project_records_pending_final_identity_crosscheck_total"] == 316
+    assert summary["candidate_fields_pending_final_identity_crosscheck"] == [
+        "children_youth", "community", "economy", "environment"
+    ]
+    assert summary["remaining_action_plan_project_records"] == 316
     assert summary["field_denominator_allocation_status"] == "complete_8_fields"
 
 
 def test_sapporo_project_source_index_keeps_review_boundary_explicit():
-    index = load(INDEX_PATH)
-    boundary = index["quality_boundary"]
+    boundary = load(INDEX_PATH)["quality_boundary"]
 
     assert "sports/culture 51" in boundary
-    assert "276/599" in boundary
-    assert "seven final records" in boundary
-    assert "323 final identities" in boundary
-    assert "403-item denominator" in boundary
+    assert "283/599" in boundary
+    assert "life/living 85" in boundary
+    assert "remaining 316 identities" in boundary
+    assert "403-item" in boundary
 
 
 def test_sapporo_manifest_still_keeps_city_in_progress():
