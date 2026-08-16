@@ -4,13 +4,15 @@
   "official_code": "011002",
   "name_ja": "札幌市",
   "status": "review_in_progress",
-  "reviewed_at": "2026-08-12",
+  "reviewed_at": "2026-08-16",
   "source_ids": [
     "sapporo-action-plan-2023-page",
+    "sapporo-action-plan-2023-final-overview",
     "sapporo-action-plan-2023-progress-page",
     "sapporo-action-plan-2023-outcomes-2024-report",
     "sapporo-action-plan-2023-outcomes-2025-report",
-    "sapporo-action-plan-2023-projects-safety-security"
+    "sapporo-action-plan-2023-projects-safety-security",
+    "sapporo-action-plan-2023-projects-life-living"
   ],
   "reviewed_facts": [
     {
@@ -42,7 +44,17 @@
       "registry_path": "data/catalog/sapporo_action_plan_project_source_index.json",
       "location_note": "公式HTMLの第2章「3 計画体系別事業」にある8分野PDFと、第3章の行政運営・財政運営PDFを資料単位で索引化。",
       "review_status": "reviewed",
-      "interpretation_boundary": "確認済みなのは599事業を確認するための公式資料10本の識別までであり、資料別事業数や行政運営・財政運営資料の599事業分母への包含関係は未レビューのまま保持する。"
+      "interpretation_boundary": "確認済みなのは599事業を確認するための公式資料10本の識別までであり、第3章資料の599事業分母への包含関係は未レビューのまま保持する。"
+    },
+    {
+      "id": "action-plan-project-cost",
+      "layer": "implementation_plan",
+      "field": "planned_project_cost_yen",
+      "value": 1785400000000,
+      "unit": "yen",
+      "source_id": "sapporo-action-plan-2023-page",
+      "location_note": "公式HTML「計画事業数及び計画事業費」。1兆7,854億円を円換算。",
+      "review_status": "reviewed"
     },
     {
       "id": "action-plan-safety-security-project-records-part1",
@@ -55,18 +67,56 @@
       "evidence_path": "data/evidence/sapporo_action_plan_safety_security_projects_part1_evidence.json",
       "source_page_label": 80,
       "review_status": "reviewed_core_fields",
-      "location_note": "分野4「安全・安心」PDFの印刷ページ80「主な事業」表に表示された最初の4事業を、事業名・担当部・計画事業費・事業目標・2022基準値・2027目標値まで1対1のEvidence Packet付きでレビュー。",
-      "interpretation_boundary": "このpart1は印刷80ページの最初の4事業を記録した履歴バッチである。後続レビューにより同PDF全体は70事業まで完了しており、現在の分野完了状態はaction-plan-safety-security-project-records-completeを正本とする。事業内容欄、599事業全体での通し順、年度進捗との接続はこのpart1から推論しない。"
+      "location_note": "分野4「安全・安心」PDFの印刷ページ80に表示された最初の4事業をEvidence Packet付きでレビューした履歴バッチ。",
+      "interpretation_boundary": "後続レビューにより同PDF全体は70事業まで完了しており、現在の分野完了状態はaction-plan-safety-security-project-records-completeを正本とする。"
     },
     {
-      "id": "action-plan-project-cost",
+      "id": "action-plan-safety-security-project-records-complete",
       "layer": "implementation_plan",
-      "field": "planned_project_cost_yen",
-      "value": 1785400000000,
-      "unit": "yen",
-      "source_id": "sapporo-action-plan-2023-page",
-      "location_note": "公式HTML「計画事業数及び計画事業費」。1兆7,854億円を円換算。",
-      "review_status": "reviewed"
+      "field": "reviewed_field_project_record_count",
+      "value": 70,
+      "unit": "projects",
+      "main_project_record_count": 43,
+      "other_project_record_count": 27,
+      "source_id": "sapporo-action-plan-2023-projects-safety-security",
+      "registry_paths": [
+        "data/catalog/sapporo_action_plan_safety_security_projects_part1.json",
+        "data/catalog/sapporo_action_plan_safety_security_projects_part2.json"
+      ],
+      "evidence_paths": [
+        "data/evidence/sapporo_action_plan_safety_security_projects_part1_evidence.json",
+        "data/evidence/sapporo_action_plan_safety_security_projects_part2_evidence.json"
+      ],
+      "source_page_labels": [80,81,82,83,84,85,86,87,88],
+      "review_status": "reviewed_field_complete_at_declared_fields",
+      "location_note": "分野4「安全・安心」PDF全10ページを画像レビューし、印刷80～88ページの70事業を1対1 Evidence付きでレビュー。",
+      "interpretation_boundary": "年度進捗403項目との接続、政策達成度・因果効果はここから推論しない。"
+    },
+    {
+      "id": "action-plan-life-living-project-records-complete",
+      "layer": "implementation_plan",
+      "field": "reviewed_field_project_record_count",
+      "value": 85,
+      "unit": "projects",
+      "main_project_record_count": 62,
+      "other_project_record_count": 23,
+      "source_id": "sapporo-action-plan-2023-projects-life-living",
+      "registry_paths": [
+        "data/catalog/sapporo_action_plan_life_living_projects_batch1.json",
+        "data/catalog/sapporo_action_plan_life_living_projects_batch2.json",
+        "data/catalog/sapporo_action_plan_life_living_page68_final_reconciliation.json",
+        "data/catalog/sapporo_action_plan_life_living_projects_batch3_pages69_71.json"
+      ],
+      "evidence_paths": [
+        "data/evidence/sapporo_action_plan_life_living_projects_batch1_evidence.json",
+        "data/evidence/sapporo_action_plan_life_living_projects_batch2_evidence.json",
+        "data/evidence/sapporo_action_plan_life_living_page68_final_evidence.json",
+        "data/evidence/sapporo_action_plan_life_living_projects_batch3_pages69_71_evidence.json"
+      ],
+      "source_page_labels": [60,61,62,63,64,65,66,67,68,69,70,71],
+      "review_status": "reviewed_field_complete_at_declared_fields",
+      "location_note": "最終概要の分野分母85を確認し、60～67頁・69～71頁の既存78件に加えて、公式修正対象の印刷68頁を最終版PDFから直接画像確認して7件を確定。",
+      "interpretation_boundary": "68頁の直接確認により事業名・担当・計画事業費・印刷事業目標を確定したが、年度進捗403項目との接続や政策達成評価は行わない。"
     },
     {
       "id": "progress-outcome-indicators",
@@ -93,7 +143,7 @@
       "registry_path": "data/catalog/sapporo_outcome_indicator_registry.json",
       "location_note": "公式成果指標PDFをレビューし、再掲7件を除いた26指標の正式名称・公式表順・掲載ページを固定。",
       "review_status": "reviewed",
-      "interpretation_boundary": "このレビューで確定した26指標のID・正式名称・公式表順を正本とし、2024年度報告の前年値26件と2025年度報告の最新行26件はそれぞれ別レイヤーでレビュー済み。報告年と各行の実測年度を混同せず、札幌市の傾向区分をJichi Insight独自達成評価へ変換しない。"
+      "interpretation_boundary": "報告年と各行の実測年度を混同せず、札幌市の傾向区分をJichi Insight独自達成評価へ変換しない。"
     },
     {
       "id": "outcome-indicator-prior-values-2024-report",
@@ -106,8 +156,22 @@
       "registry_path": "data/catalog/sapporo_outcome_indicator_2024_report_values.json",
       "evidence_path": "data/evidence/sapporo_outcome_indicator_2024_report_values_evidence.json",
       "review_status": "reviewed",
-      "location_note": "公式2ページPDFの26ユニーク指標について、当初値・現状値・各値の年度・目標値・札幌市の傾向区分を行単位でレビュー。再掲行は除外。",
-      "interpretation_boundary": "26件は2024年度報告に掲載された前年値であり、行ごとに印刷された実測年度を保持する。2025年度報告の個別2024年度実績値ではないため、最新値として表示・比較しない。傾向矢印は札幌市のsource-reported classificationとして保存し、数値増減から再計算したJichi Insight独自評価には置き換えない。"
+      "location_note": "公式2ページPDFの26ユニーク指標について前年値を行単位でレビュー。",
+      "interpretation_boundary": "2025年度報告の最新値とは分離して保持する。"
+    },
+    {
+      "id": "outcome-indicator-current-values-2025-report",
+      "layer": "annual_progress",
+      "field": "reviewed_current_outcome_indicator_count",
+      "value": 26,
+      "unit": "indicators",
+      "reporting_year": 2025,
+      "source_id": "sapporo-action-plan-2023-outcomes-2025-report",
+      "registry_path": "data/catalog/sapporo_outcome_indicator_2025_report_values.json",
+      "evidence_path": "data/evidence/sapporo_outcome_indicator_2025_report_values_evidence.json",
+      "review_status": "reviewed",
+      "location_note": "公式3ページPDFの33表示行を画像レビューし、再掲7件を除く26ユニーク指標を接続。",
+      "interpretation_boundary": "傾向矢印は札幌市のsource-reported classificationであり、Jichi Insight独自達成スコアや因果効果へ変換しない。"
     },
     {
       "id": "progress-project-targets",
@@ -136,58 +200,12 @@
       "location_note": "公式HTML「事業費の状況」。累計9,983億円、実績の進捗率55.9%。",
       "review_status": "reviewed",
       "interpretation_boundary": "決算額と予算額が混在する公式累計であるため、全額を決算実績とは扱わない。"
-    },
-    {
-      "id": "outcome-indicator-current-values-2025-report",
-      "layer": "annual_progress",
-      "field": "reviewed_current_outcome_indicator_count",
-      "value": 26,
-      "unit": "indicators",
-      "reporting_year": 2025,
-      "source_id": "sapporo-action-plan-2023-outcomes-2025-report",
-      "registry_path": "data/catalog/sapporo_outcome_indicator_2025_report_values.json",
-      "evidence_path": "data/evidence/sapporo_outcome_indicator_2025_report_values_evidence.json",
-      "review_status": "reviewed",
-      "location_note": "公式3ページPDFの33表示行を画像レビューし、灰色再掲7件を除く26ユニーク指標について現状値・実測年度・目標値・札幌市の傾向矢印を行単位で接続。",
-      "interpretation_boundary": "26件の現状値は各行に印刷された実測年度を保持するため、すべてを2024年度値とは扱わない。傾向矢印は札幌市のsource-reported classificationであり、Jichi Insight独自達成スコアや因果効果へ変換しない。"
-    },
-    {
-      "id": "action-plan-safety-security-project-records-complete",
-      "layer": "implementation_plan",
-      "field": "reviewed_field_project_record_count",
-      "value": 70,
-      "unit": "projects",
-      "main_project_record_count": 43,
-      "other_project_record_count": 27,
-      "source_id": "sapporo-action-plan-2023-projects-safety-security",
-      "registry_paths": [
-        "data/catalog/sapporo_action_plan_safety_security_projects_part1.json",
-        "data/catalog/sapporo_action_plan_safety_security_projects_part2.json"
-      ],
-      "evidence_paths": [
-        "data/evidence/sapporo_action_plan_safety_security_projects_part1_evidence.json",
-        "data/evidence/sapporo_action_plan_safety_security_projects_part2_evidence.json"
-      ],
-      "source_page_labels": [
-        80,
-        81,
-        82,
-        83,
-        84,
-        85,
-        86,
-        87,
-        88
-      ],
-      "review_status": "reviewed_field_complete_at_declared_fields",
-      "location_note": "分野4「安全・安心」PDF全10ページを画像レビュー。印刷79ページに事業行がないことを確認し、80～88ページの70事業を1対1 Evidence付きでレビュー。",
-      "interpretation_boundary": "分野4の70事業分母は確定したが、主な事業43件とその他27件はソース上の項目粒度が異なる。事業内容欄、599事業全体での通し順、第3章の分母包含、年度進捗403項目との接続、政策達成度・因果効果はここから推論しない。"
     }
   ],
-  "quality_boundary": "実施計画の期間・計画事業数599・計画事業費、公式資料10本の索引、分野4「安全・安心」PDF全10ページと70事業、2024年度報告の成果指標前年値26件、2025年度報告の成果指標最新行26件をReviewed化した。最新報告の26件は17上昇・8下降・1未集計の公式集計と整合する。安全・安心70件は主な事業43件とその他27件で公開項目の粒度が異なり、後者に事業目標を推測補完しない。安全・安心分野が完了しても599事業全体、第3章資料の分母包含、年度進捗403項目との接続は未完了である。各行の実測年度を保持し、市の自己評価・傾向表現をJichi Insight独自の政策達成判定、因果推論、他都市比較には使用しない。",
+  "quality_boundary": "アクションプラン2023の最終分野分母599を固定し、安全・安心70、スポーツ・文化51、都市空間77、生活・暮らし85の計283事業をReviewed化した。生活・暮らしの印刷68頁は公式修正対象だったため、最終版PDFの直接画像確認を経て7件を昇格した。残る316候補は子ども・若者121、地域47、経済74、環境74であり、最終版照合までReviewedへ加算しない。成果指標26件は最新・前年の行単位レビュー済み。年度進捗403項目との接続、政策達成度、因果推論、他都市比較は別工程として保持する。",
   "remaining_work": [
     "第2次戦略ビジョン本体の政策目標・成果指標をページ単位でレビューする。",
-    "アクションプラン2023は分野4「安全・安心」70事業の個票レビューを完了。次に残る7分野をレコード単位でレビューし、599事業全体のカバー率を上げ、第3章資料が599事業分母へ含まれる範囲も確定する。",
+    "アクションプラン2023は283/599事業をReviewed化。残る子ども・若者121、地域47、経済74、環境74の計316候補を最終版公式PDFへ直接照合し、第3章資料が599事業分母へ含まれる範囲も確定する。",
     "成果指標26項目の正式名称、前年値26件、最新行26件はレビュー完了。次に年度進捗の主な事業403項目をレコード単位でレビューし、計画事業との接続候補を証拠単位で確認する。",
     "財政レコードとの事業単位リンクは名称・年度・会計状態を照合した後に別工程で行う。"
   ]
