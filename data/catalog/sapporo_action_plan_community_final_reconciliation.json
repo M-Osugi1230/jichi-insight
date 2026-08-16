@@ -1,0 +1,60 @@
+{
+  "id": "phase13-sapporo-action-plan-community-final-reconciliation",
+  "phase": 13,
+  "official_code": "011002",
+  "name_ja": "札幌市",
+  "field_id": "community",
+  "field_ja": "地域",
+  "reviewed_at": "2026-08-16",
+  "status": "final_field_direct_visual_review_complete",
+  "final_source": {
+    "source_id": "sapporo-action-plan-2023-projects-community",
+    "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_3.pdf",
+    "pdf_page_count": 7,
+    "printed_page_range": "72-78",
+    "intro_page_label": 72,
+    "intro_page_contains_project_rows": false,
+    "reviewed_project_page_labels": [73,74,75,76,77,78],
+    "verification_method": "official_final_pdf_downloaded_rendered_and_directly_visually_reviewed_all_pages",
+    "direct_visual_confirmation": true
+  },
+  "candidate_source": {
+    "catalog_path": "data/catalog/sapporo_action_plan_community_project_candidates.json",
+    "evidence_path": "data/evidence/sapporo_action_plan_community_project_candidates_evidence.json",
+    "candidate_record_count": 47,
+    "candidate_main_project_record_count": 27,
+    "candidate_other_project_record_count": 20
+  },
+  "reconciliation": {
+    "final_field_denominator": 47,
+    "candidate_record_count": 47,
+    "effective_final_project_count": 47,
+    "effective_main_project_count": 27,
+    "effective_other_project_count": 20,
+    "excluded_candidate_count": 0,
+    "changed_identity_count": 0,
+    "changed_cost_count": 0,
+    "changed_target_count": 0,
+    "effective_final_project_ids_rule": "All 47 candidate IDs are promoted because every candidate row was directly crosschecked against the final official PDF page containing that row and no identity, department, cost, or printed target difference was found.",
+    "page_reconciliation": [
+      {"printed_page_label":73,"candidate_order_start":1,"candidate_order_end":4,"record_count":4,"status":"direct_visual_exact_match"},
+      {"printed_page_label":74,"candidate_order_start":5,"candidate_order_end":14,"record_count":10,"status":"direct_visual_exact_match"},
+      {"printed_page_label":75,"candidate_order_start":15,"candidate_order_end":17,"record_count":3,"status":"direct_visual_exact_match"},
+      {"printed_page_label":76,"candidate_order_start":18,"candidate_order_end":25,"record_count":8,"status":"direct_visual_exact_match"},
+      {"printed_page_label":77,"candidate_order_start":26,"candidate_order_end":32,"record_count":7,"status":"direct_visual_exact_match"},
+      {"printed_page_label":78,"candidate_order_start":33,"candidate_order_end":47,"record_count":15,"status":"direct_visual_exact_match"}
+    ],
+    "confidence": "high_direct_final_visual"
+  },
+  "summary": {
+    "reviewed_project_record_count": 47,
+    "main_project_record_count": 27,
+    "other_project_record_count": 20,
+    "action_plan_reviewed_progress_increment": 47,
+    "action_plan_reviewed_count_before": 283,
+    "action_plan_reviewed_count_after": 330,
+    "remaining_action_plan_project_records_after": 269
+  },
+  "evidence_path": "data/evidence/sapporo_action_plan_community_final_evidence.json",
+  "quality_boundary": "The final official community PDF was directly rendered and visually reviewed on every page. Printed page 72 contains no project rows. All 47 candidate rows on printed pages 73-78 were crosschecked against the final document and matched on project identity, responsible department, planned project cost, and printed project target where a target is published. Candidate count equality alone was not used for promotion. No linkage to the separate 403 annual progress target records or policy-achievement judgment is inferred."
+}
