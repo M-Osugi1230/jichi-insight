@@ -5,9 +5,9 @@
   "name_ja": "札幌市",
   "updated_at": "2026-08-16",
   "status": "candidate_reconciliation_queue_complete_for_all_remaining_identities",
-  "final_reviewed_identity_count": 283,
+  "final_reviewed_identity_count": 330,
   "final_action_plan_project_count": 599,
-  "remaining_final_identity_count": 316,
+  "remaining_final_identity_count": 269,
   "candidate_rows_do_not_increment_final_reviewed_count": true,
   "resolved_since_previous_snapshot": {
     "field_id": "daily_life_page68",
@@ -17,6 +17,15 @@
     "evidence_path": "data/evidence/sapporo_action_plan_life_living_page68_final_evidence.json",
     "reviewed_count_before": 276,
     "reviewed_count_after": 283
+  },
+  "resolved_since_page68_snapshot": {
+    "field_id": "community",
+    "resolved_record_count": 47,
+    "resolution": "all_pages_direct_final_visual_review",
+    "reconciliation_path": "data/catalog/sapporo_action_plan_community_final_reconciliation.json",
+    "evidence_path": "data/evidence/sapporo_action_plan_community_final_evidence.json",
+    "reviewed_count_before": 283,
+    "reviewed_count_after": 330
   },
   "candidate_fields": [
     {
@@ -43,26 +52,13 @@
       ]
     },
     {
-      "field_id": "community",
-      "field_ja": "地域",
-      "final_field_denominator": 47,
-      "candidate_record_count": 47,
-      "candidate_main_project_record_count": 27,
-      "candidate_other_project_record_count": 20,
-      "candidate_inventory_status": "complete",
-      "final_identity_crosscheck_status": "pending_timeout",
-      "reviewed_final_identity_increment": 0,
-      "catalog_paths": ["data/catalog/sapporo_action_plan_community_project_candidates.json"],
-      "evidence_paths": ["data/evidence/sapporo_action_plan_community_project_candidates_evidence.json"]
-    },
-    {
       "field_id": "economy",
       "field_ja": "経済",
       "final_field_denominator": 74,
       "candidate_record_count": 74,
       "candidate_main_project_record_count": 61,
       "candidate_other_project_record_count": 13,
-      "candidate_goal_counts": {"10": 39, "11": 19, "12": 16},
+      "candidate_goal_counts": {"10":39,"11":19,"12":16},
       "candidate_inventory_status": "complete",
       "final_identity_crosscheck_status": "pending_timeout",
       "reviewed_final_identity_increment": 0,
@@ -76,7 +72,7 @@
       "candidate_record_count": 74,
       "candidate_main_project_record_count": 47,
       "candidate_other_project_record_count": 27,
-      "candidate_goal_counts": {"16": 48, "17": 26},
+      "candidate_goal_counts": {"16":48,"17":26},
       "candidate_inventory_status": "complete",
       "final_identity_crosscheck_status": "pending_timeout",
       "reviewed_final_identity_increment": 0,
@@ -85,14 +81,14 @@
     }
   ],
   "structural_reconciliation": {
-    "reviewed_identity_count": 283,
-    "candidate_identity_count": 316,
+    "reviewed_identity_count": 330,
+    "candidate_identity_count": 269,
     "reviewed_plus_candidate_count": 599,
-    "reviewed_main_project_count": 197,
-    "candidate_main_project_count": 209,
+    "reviewed_main_project_count": 224,
+    "candidate_main_project_count": 182,
     "final_main_project_count": 406,
-    "reviewed_other_project_count": 86,
-    "candidate_other_project_count": 107,
+    "reviewed_other_project_count": 106,
+    "candidate_other_project_count": 87,
     "final_other_project_count": 193,
     "final_main_plus_other_count": 599,
     "annual_progress_target_item_count": 403,
@@ -101,13 +97,13 @@
     "boundary": "The 403 annual progress target denominator structurally reconciles to 406 main projects minus three main projects with no configured target. This arithmetic is a denominator consistency check, not final identity promotion."
   },
   "summary": {
-    "candidate_field_queue_count": 4,
-    "candidate_record_count": 316,
-    "candidate_main_project_record_count": 209,
-    "candidate_other_project_record_count": 107,
+    "candidate_field_queue_count": 3,
+    "candidate_record_count": 269,
+    "candidate_main_project_record_count": 182,
+    "candidate_other_project_record_count": 87,
     "candidate_reviewed_final_identity_increment": 0,
-    "final_reviewed_identity_count_remains": 283,
+    "final_reviewed_identity_count_remains": 330,
     "all_remaining_final_identities_have_candidate_rows": true
   },
-  "quality_boundary": "Printed page 68 of life/living was directly reviewed against the final official PDF and its seven rows were promoted from the historical candidate snapshot into the final Reviewed inventory, moving Sapporo from 276/599 to 283/599. The remaining 316 candidate records across children/youth, community, economy, and environment are still transcription/reconciliation work queues only and contribute zero additional Reviewed identities until field-specific final-source reconciliation is completed."
+  "quality_boundary": "Life/living page 68 and the complete community field have been removed from the unresolved queue only after direct final-PDF visual review. Sapporo now has 330/599 Reviewed Action Plan identities. The remaining 269 candidate records across children/youth, economy, and environment are transcription/reconciliation work queues only and contribute zero additional Reviewed identities until field-specific final-source reconciliation is completed."
 }
