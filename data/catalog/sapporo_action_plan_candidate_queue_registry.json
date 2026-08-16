@@ -3,12 +3,21 @@
   "phase": 13,
   "official_code": "011002",
   "name_ja": "札幌市",
-  "updated_at": "2026-08-15",
+  "updated_at": "2026-08-16",
   "status": "candidate_reconciliation_queue_complete_for_all_remaining_identities",
-  "final_reviewed_identity_count": 276,
+  "final_reviewed_identity_count": 283,
   "final_action_plan_project_count": 599,
-  "remaining_final_identity_count": 323,
+  "remaining_final_identity_count": 316,
   "candidate_rows_do_not_increment_final_reviewed_count": true,
+  "resolved_since_previous_snapshot": {
+    "field_id": "daily_life_page68",
+    "resolved_record_count": 7,
+    "resolution": "direct_final_page_visual_review",
+    "reconciliation_path": "data/catalog/sapporo_action_plan_life_living_page68_final_reconciliation.json",
+    "evidence_path": "data/evidence/sapporo_action_plan_life_living_page68_final_evidence.json",
+    "reviewed_count_before": 276,
+    "reviewed_count_after": 283
+  },
   "candidate_fields": [
     {
       "field_id": "children_youth",
@@ -32,22 +41,6 @@
         "data/evidence/sapporo_action_plan_children_youth_main_projects_goal3_candidates_evidence.json",
         "data/evidence/sapporo_action_plan_children_youth_other_projects_candidates_evidence.json"
       ]
-    },
-    {
-      "field_id": "daily_life_page68",
-      "field_ja": "生活・暮らし（68頁未照合分）",
-      "final_field_denominator": 85,
-      "already_reviewed_field_identity_count": 78,
-      "candidate_record_count": 7,
-      "candidate_main_project_record_count": 7,
-      "candidate_other_project_record_count": 0,
-      "candidate_inventory_status": "complete",
-      "final_identity_crosscheck_status": "pending_revised_final_page_cache_miss",
-      "known_public_comment_name_change_count": 1,
-      "known_public_comment_name_change": "がん対策推進事業 -> がん患者の社会活動支援事業",
-      "reviewed_final_identity_increment": 0,
-      "catalog_paths": ["data/catalog/sapporo_action_plan_life_living_page68_candidates.json"],
-      "evidence_paths": ["data/evidence/sapporo_action_plan_life_living_page68_candidates_evidence.json"]
     },
     {
       "field_id": "community",
@@ -92,11 +85,11 @@
     }
   ],
   "structural_reconciliation": {
-    "reviewed_identity_count": 276,
-    "candidate_identity_count": 323,
+    "reviewed_identity_count": 283,
+    "candidate_identity_count": 316,
     "reviewed_plus_candidate_count": 599,
-    "reviewed_main_project_count": 190,
-    "candidate_main_project_count": 216,
+    "reviewed_main_project_count": 197,
+    "candidate_main_project_count": 209,
     "final_main_project_count": 406,
     "reviewed_other_project_count": 86,
     "candidate_other_project_count": 107,
@@ -108,13 +101,13 @@
     "boundary": "The 403 annual progress target denominator structurally reconciles to 406 main projects minus three main projects with no configured target. This arithmetic is a denominator consistency check, not final identity promotion."
   },
   "summary": {
-    "candidate_field_queue_count": 5,
-    "candidate_record_count": 323,
-    "candidate_main_project_record_count": 216,
+    "candidate_field_queue_count": 4,
+    "candidate_record_count": 316,
+    "candidate_main_project_record_count": 209,
     "candidate_other_project_record_count": 107,
     "candidate_reviewed_final_identity_increment": 0,
-    "final_reviewed_identity_count_remains": 276,
+    "final_reviewed_identity_count_remains": 283,
     "all_remaining_final_identities_have_candidate_rows": true
   },
-  "quality_boundary": "Candidate records are transcription and reconciliation work queues only. Count equality with an official final field denominator is not final row-identity proof. All 323 remaining identities now have candidate rows, but all 323 remain excluded from the 276/599 final Reviewed identity count until field-specific final-source reconciliation is completed. The candidate queue therefore covers the entire unresolved remainder without pretending that candidate identity equals final Reviewed identity."
+  "quality_boundary": "Printed page 68 of life/living was directly reviewed against the final official PDF and its seven rows were promoted from the historical candidate snapshot into the final Reviewed inventory, moving Sapporo from 276/599 to 283/599. The remaining 316 candidate records across children/youth, community, economy, and environment are still transcription/reconciliation work queues only and contribute zero additional Reviewed identities until field-specific final-source reconciliation is completed."
 }
