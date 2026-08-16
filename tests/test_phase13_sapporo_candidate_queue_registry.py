@@ -12,75 +12,53 @@ def load(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def test_candidate_registry_covers_all_316_remaining_final_identities():
+def test_candidate_registry_is_exhausted_after_599_final_identities():
     registry = load(REGISTRY)
     summary = registry["summary"]
 
     assert registry["status"] == (
-        "candidate_reconciliation_queue_complete_for_all_remaining_identities"
+        "candidate_reconciliation_queue_complete_no_remaining_action_plan_identities"
     )
-    assert registry["final_reviewed_identity_count"] == 283
+    assert registry["final_reviewed_identity_count"] == 599
     assert registry["final_action_plan_project_count"] == 599
-    assert registry["remaining_final_identity_count"] == 316
-    assert summary["candidate_field_queue_count"] == 4
-    assert summary["candidate_record_count"] == 316
-    assert summary["candidate_main_project_record_count"] == 209
-    assert summary["candidate_other_project_record_count"] == 107
+    assert registry["remaining_final_identity_count"] == 0
+    assert registry["candidate_fields"] == []
+    assert summary["candidate_field_queue_count"] == 0
+    assert summary["candidate_record_count"] == 0
+    assert summary["candidate_main_project_record_count"] == 0
+    assert summary["candidate_other_project_record_count"] == 0
     assert summary["candidate_reviewed_final_identity_increment"] == 0
-    assert summary["final_reviewed_identity_count_remains"] == 283
-    assert summary["all_remaining_final_identities_have_candidate_rows"] is True
-    assert 283 + 316 == 599
+    assert summary["final_reviewed_identity_count_remains"] == 599
 
 
-def test_candidate_registry_has_exact_remaining_field_queue_partition():
-    registry = load(REGISTRY)
-    fields = {field["field_id"]: field for field in registry["candidate_fields"]}
-
-    assert set(fields) == {
-        "children_youth",
-        "community",
-        "economy",
-        "environment",
-    }
-    assert fields["children_youth"]["candidate_record_count"] == 121
-    assert fields["community"]["candidate_record_count"] == 47
-    assert fields["economy"]["candidate_record_count"] == 74
-    assert fields["environment"]["candidate_record_count"] == 74
-    assert sum(field["candidate_record_count"] for field in fields.values()) == 316
-    assert all(field["reviewed_final_identity_increment"] == 0 for field in fields.values())
-    assert "daily_life_page68" not in fields
+def test_resolution_history_preserves_all_final_promotions():
+    history = load(REGISTRY)["resolution_history"]
+    assert [(item["field_id"], item["resolved_record_count"]) for item in history] == [
+        ("daily_life_page68", 7),
+        ("community", 47),
+        ("economy", 74),
+        ("environment", 74),
+        ("children_youth", 121),
+    ]
+    assert history[0]["reviewed_count_before"] == 276
+    assert history[-1]["reviewed_count_after"] == 599
+    assert history[-1]["reviewed_count_before"] == 478
 
 
-def test_page68_resolution_is_recorded_as_reviewed_progress():
-    registry = load(REGISTRY)
-    resolved = registry["resolved_since_previous_snapshot"]
-
-    assert resolved["field_id"] == "daily_life_page68"
-    assert resolved["resolved_record_count"] == 7
-    assert resolved["resolution"] == "direct_final_page_visual_review"
-    assert resolved["reviewed_count_before"] == 276
-    assert resolved["reviewed_count_after"] == 283
-    assert resolved["reconciliation_path"].endswith(
-        "sapporo_action_plan_life_living_page68_final_reconciliation.json"
-    )
-
-
-def test_candidate_registry_reconciles_main_other_and_annual_target_denominators():
+def test_candidate_registry_reconciles_final_main_other_and_annual_target_denominators():
     structural = load(REGISTRY)["structural_reconciliation"]
 
-    assert structural["reviewed_identity_count"] == 283
-    assert structural["candidate_identity_count"] == 316
+    assert structural["reviewed_identity_count"] == 599
+    assert structural["candidate_identity_count"] == 0
     assert structural["reviewed_plus_candidate_count"] == 599
 
-    assert structural["reviewed_main_project_count"] == 197
-    assert structural["candidate_main_project_count"] == 209
+    assert structural["reviewed_main_project_count"] == 406
+    assert structural["candidate_main_project_count"] == 0
     assert structural["final_main_project_count"] == 406
-    assert 197 + 209 == 406
 
-    assert structural["reviewed_other_project_count"] == 86
-    assert structural["candidate_other_project_count"] == 107
+    assert structural["reviewed_other_project_count"] == 193
+    assert structural["candidate_other_project_count"] == 0
     assert structural["final_other_project_count"] == 193
-    assert 86 + 107 == 193
 
     assert structural["final_main_plus_other_count"] == 599
     assert 406 + 193 == 599
@@ -91,12 +69,13 @@ def test_candidate_registry_reconciles_main_other_and_annual_target_denominators
     assert 406 - 3 == 403
 
 
-def test_candidate_registry_never_promotes_remaining_candidates():
+def test_source_index_and_candidate_registry_agree_on_zero_remaining_identities():
     registry = load(REGISTRY)
     index = load(SOURCE_INDEX)
 
     assert registry["candidate_rows_do_not_increment_final_reviewed_count"] is True
-    assert registry["summary"]["candidate_reviewed_final_identity_increment"] == 0
-    assert index["summary"]["individual_project_records_reviewed"] == 283
-    assert index["summary"]["remaining_action_plan_project_records"] == 316
-    assert "remaining 316 candidate records" in registry["quality_boundary"]
+    assert index["summary"]["individual_project_records_reviewed"] == 599
+    assert index["summary"]["remaining_action_plan_project_records"] == 0
+    assert index["summary"]["candidate_project_records_pending_final_identity_crosscheck_total"] == 0
+    assert index["summary"]["candidate_fields_pending_final_identity_crosscheck"] == []
+    assert "all 599 final project identities" in registry["quality_boundary"]
