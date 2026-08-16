@@ -1,0 +1,37 @@
+{
+  "id": "phase13-sapporo-action-plan-economy-final-evidence",
+  "phase": 13,
+  "official_code": "011002",
+  "name_ja": "札幌市",
+  "field_id": "economy",
+  "reviewed_at": "2026-08-16",
+  "source": {
+    "source_id": "sapporo-action-plan-2023-projects-economy",
+    "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_5.pdf",
+    "pdf_page_count": 13,
+    "printed_page_range": "89-101",
+    "review_method": "official_final_pdf_downloaded_rendered_and_directly_visually_reviewed_all_pages"
+  },
+  "document_boundary": {
+    "printed_page_89_contains_project_rows": false,
+    "reviewed_project_page_labels": [90,91,92,93,94,95,96,97,98,99,100,101],
+    "candidate_rows_crosschecked": 74,
+    "exact_match_rows": 74
+  },
+  "page_evidence_packets": [
+    {"page_label":90,"pdf_page_index_0_based":1,"candidate_order_start":1,"candidate_order_end":3,"record_count":3,"evidence_status":"reviewed_direct_final_visual_exact_match"},
+    {"page_label":91,"pdf_page_index_0_based":2,"candidate_order_start":4,"candidate_order_end":11,"record_count":8,"evidence_status":"reviewed_direct_final_visual_exact_match"},
+    {"page_label":92,"pdf_page_index_0_based":3,"candidate_order_start":12,"candidate_order_end":17,"record_count":6,"evidence_status":"reviewed_direct_final_visual_exact_match"},
+    {"page_label":93,"pdf_page_index_0_based":4,"candidate_order_start":18,"candidate_order_end":24,"record_count":7,"evidence_status":"reviewed_direct_final_visual_exact_match"},
+    {"page_label":94,"pdf_page_index_0_based":5,"candidate_order_start":25,"candidate_order_end":32,"record_count":8,"evidence_status":"reviewed_direct_final_visual_exact_match"},
+    {"page_label":95,"pdf_page_index_0_based":6,"candidate_order_start":33,"candidate_order_end":39,"record_count":7,"evidence_status":"reviewed_direct_final_visual_exact_match"},
+    {"page_label":96,"pdf_page_index_0_based":7,"candidate_order_start":40,"candidate_order_end":43,"record_count":4,"evidence_status":"reviewed_direct_final_visual_exact_match"},
+    {"page_label":97,"pdf_page_index_0_based":8,"candidate_order_start":44,"candidate_order_end":50,"record_count":7,"evidence_status":"reviewed_direct_final_visual_exact_match"},
+    {"page_label":98,"pdf_page_index_0_based":9,"candidate_order_start":51,"candidate_order_end":58,"record_count":8,"evidence_status":"reviewed_direct_final_visual_exact_match"},
+    {"page_label":99,"pdf_page_index_0_based":10,"candidate_order_start":59,"candidate_order_end":61,"record_count":3,"evidence_status":"reviewed_direct_final_visual_exact_match"},
+    {"page_label":100,"pdf_page_index_0_based":11,"candidate_order_start":62,"candidate_order_end":68,"record_count":7,"evidence_status":"reviewed_direct_final_visual_exact_match"},
+    {"page_label":101,"pdf_page_index_0_based":12,"candidate_order_start":69,"candidate_order_end":74,"record_count":6,"evidence_status":"reviewed_direct_final_visual_exact_match"}
+  ],
+  "candidate_identity_evidence_path": "data/evidence/sapporo_action_plan_economy_project_candidates_evidence.json",
+  "quality_boundary": "The candidate inventory already preserves record-level identity evidence. This final-source evidence adds direct visual confirmation page by page against the final official economy PDF. The page packets partition candidate orders 1-74 without gaps or overlap and confirm 74 exact matches."
+}
