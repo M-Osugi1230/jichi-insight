@@ -1,0 +1,66 @@
+{
+  "id": "phase13-sapporo-action-plan-economy-final-reconciliation",
+  "phase": 13,
+  "official_code": "011002",
+  "name_ja": "札幌市",
+  "field_id": "economy",
+  "field_ja": "経済",
+  "reviewed_at": "2026-08-16",
+  "status": "final_field_direct_visual_review_complete",
+  "final_source": {
+    "source_id": "sapporo-action-plan-2023-projects-economy",
+    "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_5.pdf",
+    "pdf_page_count": 13,
+    "printed_page_range": "89-101",
+    "intro_page_label": 89,
+    "intro_page_contains_project_rows": false,
+    "reviewed_project_page_labels": [90,91,92,93,94,95,96,97,98,99,100,101],
+    "verification_method": "official_final_pdf_downloaded_rendered_and_directly_visually_reviewed_all_pages",
+    "direct_visual_confirmation": true
+  },
+  "candidate_source": {
+    "catalog_path": "data/catalog/sapporo_action_plan_economy_project_candidates.json",
+    "evidence_path": "data/evidence/sapporo_action_plan_economy_project_candidates_evidence.json",
+    "candidate_record_count": 74,
+    "candidate_main_project_record_count": 61,
+    "candidate_other_project_record_count": 13
+  },
+  "reconciliation": {
+    "final_field_denominator": 74,
+    "candidate_record_count": 74,
+    "effective_final_project_count": 74,
+    "effective_main_project_count": 61,
+    "effective_other_project_count": 13,
+    "excluded_candidate_count": 0,
+    "changed_identity_count": 0,
+    "changed_department_count": 0,
+    "changed_cost_count": 0,
+    "effective_final_project_ids_rule": "All 74 candidate IDs are promoted because every candidate row was directly crosschecked against the final official PDF page containing that row and no identity, responsible-department, or planned-cost difference was found.",
+    "page_reconciliation": [
+      {"printed_page_label":90,"candidate_order_start":1,"candidate_order_end":3,"record_count":3,"status":"direct_visual_exact_match"},
+      {"printed_page_label":91,"candidate_order_start":4,"candidate_order_end":11,"record_count":8,"status":"direct_visual_exact_match"},
+      {"printed_page_label":92,"candidate_order_start":12,"candidate_order_end":17,"record_count":6,"status":"direct_visual_exact_match"},
+      {"printed_page_label":93,"candidate_order_start":18,"candidate_order_end":24,"record_count":7,"status":"direct_visual_exact_match"},
+      {"printed_page_label":94,"candidate_order_start":25,"candidate_order_end":32,"record_count":8,"status":"direct_visual_exact_match"},
+      {"printed_page_label":95,"candidate_order_start":33,"candidate_order_end":39,"record_count":7,"status":"direct_visual_exact_match"},
+      {"printed_page_label":96,"candidate_order_start":40,"candidate_order_end":43,"record_count":4,"status":"direct_visual_exact_match"},
+      {"printed_page_label":97,"candidate_order_start":44,"candidate_order_end":50,"record_count":7,"status":"direct_visual_exact_match"},
+      {"printed_page_label":98,"candidate_order_start":51,"candidate_order_end":58,"record_count":8,"status":"direct_visual_exact_match"},
+      {"printed_page_label":99,"candidate_order_start":59,"candidate_order_end":61,"record_count":3,"status":"direct_visual_exact_match"},
+      {"printed_page_label":100,"candidate_order_start":62,"candidate_order_end":68,"record_count":7,"status":"direct_visual_exact_match"},
+      {"printed_page_label":101,"candidate_order_start":69,"candidate_order_end":74,"record_count":6,"status":"direct_visual_exact_match"}
+    ],
+    "confidence": "high_direct_final_visual"
+  },
+  "summary": {
+    "reviewed_project_record_count": 74,
+    "main_project_record_count": 61,
+    "other_project_record_count": 13,
+    "action_plan_reviewed_progress_increment": 74,
+    "action_plan_reviewed_count_before": 330,
+    "action_plan_reviewed_count_after": 404,
+    "remaining_action_plan_project_records_after": 195
+  },
+  "evidence_path": "data/evidence/sapporo_action_plan_economy_final_evidence.json",
+  "quality_boundary": "The final official economy PDF was directly rendered and visually reviewed on every page. Printed page 89 contains no project rows. All 74 candidate rows on printed pages 90-101 were crosschecked against the final document and matched on project identity, responsible department, and planned project cost. Candidate count equality alone was not used for promotion. The published target fields visible for main projects were inspected as part of the page review but are not duplicated into the candidate-derived identity catalog where they were not previously structured. No linkage to the separate 403 annual progress target records or policy-achievement judgment is inferred."
+}
