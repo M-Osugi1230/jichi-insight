@@ -1,0 +1,50 @@
+{
+  "id": "phase13-sapporo-action-plan-children-youth-final-evidence",
+  "phase": 13,
+  "official_code": "011002",
+  "name_ja": "札幌市",
+  "field_id": "children_youth",
+  "reviewed_at": "2026-08-16",
+  "source": {
+    "source_id": "sapporo-action-plan-2023-projects-children-youth",
+    "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_2_3_1.pdf",
+    "pdf_page_count": 16,
+    "printed_page_range": "43-58",
+    "review_method": "official_final_pdf_downloaded_rendered_and_directly_visually_reviewed_all_pages"
+  },
+  "document_boundary": {
+    "printed_page_43_contains_project_rows": false,
+    "reviewed_project_page_labels": [44,45,46,47,48,49,50,51,52,53,54,55,56,57,58],
+    "main_rows_crosschecked": 74,
+    "other_rows_crosschecked": 47,
+    "final_identity_matches": 121,
+    "department_corrections": 0,
+    "cost_changes": 0,
+    "target_changes": 0
+  },
+  "page_evidence_packets": [
+    {"page_label":44,"pdf_page_index_0_based":1,"main_orders":[1,5],"main_count":5,"other_count":0,"evidence_status":"reviewed_direct_final_visual_exact_match"},
+    {"page_label":45,"pdf_page_index_0_based":2,"main_orders":[6,11],"main_count":6,"other_count":0,"evidence_status":"reviewed_direct_final_visual_exact_match"},
+    {"page_label":46,"pdf_page_index_0_based":3,"main_orders":[12,17],"main_count":6,"other_count":0,"evidence_status":"reviewed_direct_final_visual_exact_match"},
+    {"page_label":47,"pdf_page_index_0_based":4,"main_orders":[18,23],"main_count":6,"other_orders":[1,9],"other_count":9,"evidence_status":"reviewed_direct_final_visual_exact_match"},
+    {"page_label":48,"pdf_page_index_0_based":5,"main_count":0,"other_orders":[10,26],"other_count":17,"evidence_status":"reviewed_direct_final_visual_exact_match"},
+    {"page_label":49,"pdf_page_index_0_based":6,"main_orders":[24,26],"main_count":3,"other_count":0,"evidence_status":"reviewed_direct_final_visual_exact_match"},
+    {"page_label":50,"pdf_page_index_0_based":7,"main_orders":[27,34],"main_count":8,"other_count":0,"evidence_status":"reviewed_direct_final_visual_exact_match"},
+    {"page_label":51,"pdf_page_index_0_based":8,"main_orders":[35,40],"main_count":6,"other_count":0,"evidence_status":"reviewed_direct_final_visual_exact_match"},
+    {"page_label":52,"pdf_page_index_0_based":9,"main_orders":[41,46],"main_count":6,"other_count":0,"evidence_status":"reviewed_direct_final_visual_exact_match"},
+    {"page_label":53,"pdf_page_index_0_based":10,"main_orders":[47,52],"main_count":6,"other_count":0,"evidence_status":"reviewed_direct_final_visual_exact_match"},
+    {"page_label":54,"pdf_page_index_0_based":11,"main_orders":[53,53],"main_count":1,"other_orders":[27,36],"other_count":10,"evidence_status":"reviewed_direct_final_visual_exact_match"},
+    {"page_label":55,"pdf_page_index_0_based":12,"main_orders":[54,57],"main_count":4,"other_count":0,"evidence_status":"reviewed_direct_final_visual_exact_match"},
+    {"page_label":56,"pdf_page_index_0_based":13,"main_orders":[58,65],"main_count":8,"other_count":0,"description_revision_order":61,"evidence_status":"reviewed_direct_final_visual_exact_identity_fields_description_revision_confirmed"},
+    {"page_label":57,"pdf_page_index_0_based":14,"main_orders":[66,71],"main_count":6,"other_count":0,"evidence_status":"reviewed_direct_final_visual_exact_match"},
+    {"page_label":58,"pdf_page_index_0_based":15,"main_orders":[72,74],"main_count":3,"other_orders":[37,47],"other_count":11,"evidence_status":"reviewed_direct_final_visual_exact_match"}
+  ],
+  "candidate_identity_evidence_paths": [
+    "data/evidence/sapporo_action_plan_children_youth_main_projects_goal1_candidates_evidence.json",
+    "data/evidence/sapporo_action_plan_children_youth_main_projects_goal2_candidates_evidence.json",
+    "data/evidence/sapporo_action_plan_children_youth_main_projects_goal3_candidates_evidence.json",
+    "data/evidence/sapporo_action_plan_children_youth_other_projects_candidates_evidence.json"
+  ],
+  "final_reconciliation_path": "data/catalog/sapporo_action_plan_children_youth_final_reconciliation.json",
+  "quality_boundary": "The page packets partition all 74 main-project candidate orders and all 47 other-project candidate orders without gaps or overlap. Each project page was directly inspected against the final official PDF. The known printed-page-56 edit changes description text only and does not change the captured identity, department, cost, or target fields."
+}
