@@ -1,0 +1,62 @@
+{
+  "id": "phase13-sapporo-principal-project-target-status-change-2024-2025",
+  "phase": 13,
+  "official_code": "011002",
+  "name_ja": "札幌市",
+  "reviewed_at": "2026-08-18",
+  "status": "two_cross_year_individual_status_histories_reviewed",
+  "source_paths": {
+    "prior_report": "data/catalog/sapporo_principal_project_target_2024_review.json",
+    "current_report": "data/catalog/sapporo_principal_project_target_2025_review_batch1.json"
+  },
+  "records": [
+    {
+      "project_id": "sapporo_ict_strategy_promotion",
+      "project_name_ja": "札幌市ICT活用戦略推進事業",
+      "field_id": "daily_life",
+      "target_2027": 25,
+      "unit": "cases",
+      "report_2024": {
+        "measurement_fiscal_year": 2023,
+        "official_status": "achievement_difficult_expected",
+        "forecast_2027": 21
+      },
+      "report_2025": {
+        "measurement_fiscal_year": 2024,
+        "official_status": "achievement_difficult_expected",
+        "actual_2024": 1,
+        "forecast_2027": 16
+      },
+      "status_transition": "achievement_difficult_expected_to_achievement_difficult_expected",
+      "forecast_change": -5,
+      "interpretation_boundary": "The forecast declined from 21 to 16 between official reports. This is a source-reported forecast change, not a causal attribution or independent achievement score."
+    },
+    {
+      "project_id": "school_facility_longevity_repair",
+      "project_name_ja": "学校施設長寿命化改修事業",
+      "field_id": "urban_space",
+      "target_2027": 22,
+      "unit": "schools",
+      "report_2024": {
+        "measurement_fiscal_year": 2023,
+        "official_status": "achievement_difficult_expected",
+        "forecast_2027": 20
+      },
+      "report_2025": {
+        "measurement_fiscal_year": 2024,
+        "official_status": "achievement_difficult_expected",
+        "actual_2024": 9,
+        "forecast_2027": 15
+      },
+      "status_transition": "achievement_difficult_expected_to_achievement_difficult_expected",
+      "forecast_change": -5,
+      "interpretation_boundary": "The forecast declined from 20 to 15 between official reports. This is a source-reported forecast change, not a causal attribution or independent achievement score."
+    }
+  ],
+  "summary": {
+    "cross_year_individual_records": 2,
+    "continued_difficult_status_count": 2,
+    "forecast_decline_count": 2
+  },
+  "quality_boundary": "Only projects individually named in both official reports are included. The comparison does not infer transitions for unnamed projects and does not alter the current 8/403 review coverage."
+}
