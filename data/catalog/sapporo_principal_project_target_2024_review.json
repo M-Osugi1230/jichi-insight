@@ -15,6 +15,11 @@
     "target_summary_page_index_0_based": 3,
     "source_role": "official_prior_year_progress_summary"
   },
+  "normalization_reference": {
+    "title": "第2次札幌市まちづくり戦略ビジョン",
+    "url": "https://www.city.sapporo.jp/kikaku/vision/vision2/",
+    "role": "current_official_basic_goal_id_and_label_registry"
+  },
   "official_target_universe": {
     "principal_project_target_count": 403,
     "already_achieved_count": 9,
@@ -62,7 +67,7 @@
     "source_goal_numbers_whose_labels_map_to_different_current_ids": [2,3,4,5,11,12,13,14,16,17],
     "normalized_pair_swaps": ["2<->3","4<->5","11<->12","13<->14","16<->17"],
     "normalized_current_target_counts": {"1":22,"2":30,"3":21,"4":11,"5":51,"6":8,"7":19,"8":21,"9":22,"10":31,"11":15,"12":14,"13":6,"14":15,"15":14,"16":31,"17":16,"18":20,"19":21,"20":15},
-    "boundary": "The source report's printed number and label are preserved. Cross-year comparison uses normalized_current_goal_id based on the goal label. No source text is silently rewritten."
+    "boundary": "The source report's printed number and label are preserved. Cross-year comparison uses normalized_current_goal_id based on the exact Japanese goal label in the current official Strategy Vision. No source text is silently rewritten."
   },
   "reviewed_individual_target_records": [
     {
@@ -96,5 +101,5 @@
     "individual_target_records_remaining_unpublished":401,
     "reviewed_achievement_difficult_examples":2
   },
-  "quality_boundary":"This is a historical 2024-report layer. It does not overwrite 2025 current statuses and does not increment the current 8/403 gate. The official source publishes the complete prior-year 403 aggregate and two difficult-to-achieve individual examples. The source-report basic-goal numbering anomaly is preserved and normalized by exact Japanese goal label for cross-year comparison."
+  "quality_boundary":"This is a historical 2024-report layer. It does not overwrite 2025 current statuses and does not increment the current 8/403 gate. The official source publishes the complete prior-year 403 aggregate and two difficult-to-achieve individual examples. The source-report basic-goal numbering anomaly is preserved and normalized by exact Japanese goal label against the current official Strategy Vision for cross-year comparison."
 }
