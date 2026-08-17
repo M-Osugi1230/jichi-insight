@@ -1,0 +1,109 @@
+{
+  "id": "phase13-sapporo-outcome-indicator-measurement-registry-evidence",
+  "phase": 13,
+  "official_code": "011002",
+  "name_ja": "札幌市",
+  "reviewed_at": "2026-08-18",
+  "sources": [
+    {
+      "source_id": "strategy_vision_progress_citizen_survey",
+      "title": "第2次戦略ビジョンの進捗状況",
+      "url": "https://www.city.sapporo.jp/kikaku/vision/vision2/progress.html",
+      "review_status": "reviewed",
+      "supports": "Sapporo City explicitly runs a citizen-awareness survey to measure how close the city is to the states described in the Second Strategy Vision. This supports a separate self-report/perception measurement lane."
+    },
+    {
+      "source_id": "indicator_achievement_citizen_survey",
+      "title": "各種調査／指標達成度調査（事業の効果に関する市民意識調査）",
+      "url": "https://www.city.sapporo.jp/somu/hyoka/chosa/",
+      "review_status": "reviewed",
+      "supports": "Sapporo City separately publishes indicator-achievement citizen surveys, confirming that policy-effect perception measures are survey instruments rather than administrative counts."
+    },
+    {
+      "source_id": "citizen_survey_2024_round4",
+      "title": "令和6年度第4回市民意識調査",
+      "url": "https://www.city.sapporo.jp/somu/shiminnokoe/sakusei/r0604anke.html",
+      "review_status": "reviewed_for_participation_instrument_family",
+      "supports": "The official survey includes regional-activity participation experience and uses a probability-sampled citywide citizen survey design."
+    },
+    {
+      "source_id": "citizen_survey_2024_round2",
+      "title": "令和6年度第2回市民意識調査",
+      "url": "https://www.city.sapporo.jp/somu/shiminnokoe/sakusei/r0602anke.html",
+      "review_status": "reviewed_for_disaster_preparedness_instrument_family",
+      "supports": "The official survey includes disaster preparedness behavior and uses a probability-sampled citywide citizen survey design."
+    },
+    {
+      "source_id": "internet_questionnaire_2024_health",
+      "title": "令和6年度インターネットアンケート調査結果・健康づくり",
+      "url": "https://www.city.sapporo.jp/somu/shiminnokoe/net_question/r6_result.html",
+      "review_status": "reviewed_for_walking_behavior_instrument_family",
+      "supports": "The health questionnaire covers physical activity, exercise habits, and step measurement among Sapporo citizens, supporting survey/self-report treatment of walking behavior."
+    },
+    {
+      "source_id": "tourism_economic_effect_survey",
+      "title": "計画・調査レポート／札幌市観光産業経済効果調査",
+      "url": "https://www.city.sapporo.jp/keizai/kanko/program/program.html",
+      "review_status": "reviewed_for_tourism_consumption_method",
+      "supports": "Sapporo City states that tourism consumption is estimated using tourist expenditure questionnaires and input-output analysis; it is neither a direct administrative revenue total nor a citizen-perception percentage."
+    },
+    {
+      "source_id": "historical_indicator_taxonomy",
+      "title": "成果指標の状況（過年度戦略ビジョン）",
+      "url": "https://www.city.sapporo.jp/chosei/new-plan/h23soukatu/shihyou.html",
+      "review_status": "reviewed_for_historical_methodological_precedent_only",
+      "supports": "Older official Sapporo reporting explicitly separated 市民意識・行動指標 from 社会成果指標. This is used only as methodological precedent and not as proof of the exact current instrument for every 2025 indicator."
+    }
+  ],
+  "evidence_groups": [
+    {
+      "group_id": "self_report_lane",
+      "record_count": 14,
+      "project_registry_ids": [
+        "parent_support_access",
+        "childcare_service_access",
+        "children_with_personal_goals",
+        "perceived_barrier_free_progress",
+        "understanding_elderly_disabled",
+        "lifelong_learning_participation",
+        "perceived_digitalization_progress",
+        "citizens_feeling_social_role",
+        "citizen_machizukuri_participation",
+        "citizens_prepared_for_disasters",
+        "citizens_doing_sports",
+        "culture_arts_participation",
+        "daily_walking_minutes",
+        "waste_resource_collection_satisfaction"
+      ],
+      "evidence_status": "measurement_family_reviewed",
+      "boundary": "The indicators are explicitly phrased as perceptions, experiences, attitudes, satisfaction, or behaviors reported by people. Exact instrument provenance is retained as pending where the current official question-level source has not been located."
+    },
+    {
+      "group_id": "objective_lane",
+      "record_count": 12,
+      "project_registry_ids": [
+        "total_fertility_rate",
+        "young_adult_outmigration_excess",
+        "healthy_life_expectancy",
+        "single_operator_snow_removal_machines",
+        "gdp_per_capita_nominal",
+        "winter_tourist_count",
+        "total_tourism_consumption",
+        "employment_rate",
+        "citywide_ghg_emissions",
+        "municipal_facility_ghg_emissions",
+        "central_city_effective_far",
+        "regional_hub_effective_far"
+      ],
+      "evidence_status": "measurement_family_reviewed",
+      "boundary": "These indicators are counts, official statistics, inventories, built-environment measures, or derived estimates rather than citizen perception/behavior percentages. Tourism consumption is explicitly retained as a survey-input estimate rather than mislabeled as a direct administrative count."
+    }
+  ],
+  "exact_instrument_anchors": [
+    {"indicator_id":"citizen_machizukuri_participation","source_id":"citizen_survey_2024_round4","status":"instrument_family_verified"},
+    {"indicator_id":"citizens_prepared_for_disasters","source_id":"citizen_survey_2024_round2","status":"instrument_family_verified"},
+    {"indicator_id":"daily_walking_minutes","source_id":"internet_questionnaire_2024_health","status":"instrument_family_verified"},
+    {"indicator_id":"total_tourism_consumption","source_id":"tourism_economic_effect_survey","status":"method_verified"}
+  ],
+  "quality_boundary": "This evidence file supports measurement-family separation, not a claim that every indicator's exact question wording or statistical production pipeline has been exhaustively traced. Where exact instrument provenance is not verified, the registry explicitly records that gap. Measurement separation changes no official values, source trend arrows, or target-status judgments."
+}
