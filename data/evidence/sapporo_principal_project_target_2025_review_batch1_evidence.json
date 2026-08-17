@@ -1,0 +1,64 @@
+{
+  "id": "phase13-sapporo-principal-project-target-2025-review-batch1-evidence",
+  "phase": 13,
+  "official_code": "011002",
+  "name_ja": "札幌市",
+  "reviewed_at": "2026-08-16",
+  "source": {
+    "title": "アクションプラン2023の進捗報告 2025年度（2024年度実績） 総括",
+    "landing_url": "https://www.city.sapporo.jp/chosei/actionplan2023-shinchoku.html",
+    "pdf_url": "https://www.city.sapporo.jp/chosei/documents/ap2023_houkoku2025_soukatsusyuusei.pdf",
+    "pdf_page_count": 5,
+    "review_method": "official_pdf_downloaded_rendered_and_directly_visually_reviewed_all_pages"
+  },
+  "aggregate_evidence": {
+    "pdf_page_index_0_based": 1,
+    "page_heading_ja": "（2）事業目標の状況＜1／2＞",
+    "review_status": "reviewed",
+    "facts": {
+      "principal_project_target_count": 403,
+      "main_projects_without_configured_target_count": 3,
+      "already_achieved_count": 38,
+      "achievement_expected_count": 356,
+      "achievement_difficult_expected_count": 9,
+      "expected_or_achieved_count": 394,
+      "expected_or_achieved_ratio_percent": 97.8,
+      "field_row_count": 8,
+      "basic_goal_row_count": 20
+    }
+  },
+  "individual_example_evidence": {
+    "pdf_page_index_0_based": 2,
+    "page_heading_ja": "（2）事業目標の状況＜2／2＞",
+    "review_status": "reviewed",
+    "already_achieved_example_count": 4,
+    "achievement_difficult_example_count": 4,
+    "project_ids": [
+      "single_parent_medical_expense_subsidy",
+      "atsubetsu_athletics_stadium_conservation",
+      "fire_response_capacity_strengthening",
+      "chuo_ward_complex_government_building",
+      "compulsory_education_school_related",
+      "sapporo_ict_strategy_promotion",
+      "former_sapporo_court_of_appeal_conservation_repair",
+      "school_facility_longevity_repair"
+    ],
+    "identity_crosscheck": {
+      "single_parent_medical_expense_subsidy": "data/catalog/sapporo_action_plan_children_youth_main_projects_goal1_candidates.json",
+      "atsubetsu_athletics_stadium_conservation": "data/catalog/sapporo_action_plan_sports_culture_projects.json",
+      "fire_response_capacity_strengthening": "data/catalog/sapporo_action_plan_safety_security_projects_part2.json",
+      "chuo_ward_complex_government_building": "data/catalog/sapporo_action_plan_urban_space_projects.json",
+      "compulsory_education_school_related": "data/catalog/sapporo_action_plan_children_youth_main_projects_goal3_candidates.json",
+      "sapporo_ict_strategy_promotion": "data/catalog/sapporo_action_plan_life_living_projects_batch2.json",
+      "former_sapporo_court_of_appeal_conservation_repair": "data/catalog/sapporo_action_plan_sports_culture_projects.json",
+      "school_facility_longevity_repair": "data/catalog/sapporo_action_plan_urban_space_projects.json"
+    }
+  },
+  "publication_boundary": {
+    "all_403_identity_level_statuses_published_in_this_pdf": false,
+    "complete_aggregate_partition_published": true,
+    "identity_level_examples_published": 8,
+    "unresolved_identity_level_statuses_after_this_batch": 395,
+    "rule": "Do not assign the 38 already-achieved, 356 achievement-expected, and 9 difficult-to-achieve aggregate counts to unnamed projects. Only project-status pairs explicitly shown on the official individual-example page can be treated as reviewed current individual statuses."
+  }
+}

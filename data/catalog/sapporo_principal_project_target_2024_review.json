@@ -1,0 +1,105 @@
+{
+  "id": "phase13-sapporo-principal-project-target-2024-review",
+  "phase": 13,
+  "official_code": "011002",
+  "name_ja": "札幌市",
+  "reporting_year": 2024,
+  "measurement_fiscal_year": 2023,
+  "reviewed_at": "2026-08-18",
+  "status": "historical_aggregate_complete_two_difficult_examples_reviewed",
+  "source": {
+    "title": "第2次札幌市まちづくり戦略ビジョン・アクションプラン2023 2024年度進捗報告（2023年度実績）",
+    "landing_url": "https://www.city.sapporo.jp/chosei/actionplan2023-shinchoku.html",
+    "pdf_url": "https://www.city.sapporo.jp/chosei/documents/ap2023_houkoku2024_soukatsu.pdf",
+    "pdf_page_count": 4,
+    "target_summary_page_index_0_based": 3,
+    "source_role": "official_prior_year_progress_summary"
+  },
+  "normalization_reference": {
+    "title": "第2次札幌市まちづくり戦略ビジョン",
+    "url": "https://www.city.sapporo.jp/kikaku/vision/vision2/",
+    "role": "current_official_basic_goal_id_and_label_registry"
+  },
+  "official_target_universe": {
+    "principal_project_target_count": 403,
+    "already_achieved_count": 9,
+    "achievement_expected_count": 392,
+    "achievement_difficult_expected_count": 2,
+    "official_expected_or_achieved_count": 401,
+    "official_expected_or_achieved_ratio_percent": 99.5,
+    "partition_check": "9 + 392 + 2 = 403",
+    "expected_or_achieved_check": "9 + 392 = 401"
+  },
+  "field_aggregates": [
+    {"field_id":"children_youth","field_ja":"子ども・若者","target_count":73,"already_achieved_count":0,"achievement_expected_count":73,"achievement_difficult_expected_count":0},
+    {"field_id":"daily_life","field_ja":"生活・暮らし","target_count":62,"already_achieved_count":1,"achievement_expected_count":60,"achievement_difficult_expected_count":1},
+    {"field_id":"community","field_ja":"地域","target_count":27,"already_achieved_count":0,"achievement_expected_count":27,"achievement_difficult_expected_count":0},
+    {"field_id":"safety_security","field_ja":"安全・安心","target_count":43,"already_achieved_count":1,"achievement_expected_count":42,"achievement_difficult_expected_count":0},
+    {"field_id":"economy","field_ja":"経済","target_count":60,"already_achieved_count":3,"achievement_expected_count":57,"achievement_difficult_expected_count":0},
+    {"field_id":"sports_culture","field_ja":"スポーツ・文化","target_count":35,"already_achieved_count":1,"achievement_expected_count":34,"achievement_difficult_expected_count":0},
+    {"field_id":"environment","field_ja":"環境","target_count":47,"already_achieved_count":2,"achievement_expected_count":45,"achievement_difficult_expected_count":0},
+    {"field_id":"urban_space","field_ja":"都市空間","target_count":56,"already_achieved_count":1,"achievement_expected_count":54,"achievement_difficult_expected_count":1}
+  ],
+  "source_report_basic_goal_rows": [
+    {"source_goal_number":1,"source_goal_label_ja":"安心して子どもを生み育てることができる、子育てに優しいまち","normalized_current_goal_id":1,"target_count":22,"already_achieved_count":0,"achievement_expected_count":22,"achievement_difficult_expected_count":0},
+    {"source_goal_number":2,"source_goal_label_ja":"一人一人の良さや可能性を大切にする教育を通して、子どもが健やかに育つまち","normalized_current_goal_id":3,"target_count":21,"already_achieved_count":0,"achievement_expected_count":21,"achievement_difficult_expected_count":0},
+    {"source_goal_number":3,"source_goal_label_ja":"誰一人取り残されずに、子どもが伸び伸びと成長し、若者が希望を持って暮らすまち","normalized_current_goal_id":2,"target_count":30,"already_achieved_count":0,"achievement_expected_count":30,"achievement_difficult_expected_count":0},
+    {"source_goal_number":4,"source_goal_label_ja":"生活しやすく住みよいまち","normalized_current_goal_id":5,"target_count":51,"already_achieved_count":1,"achievement_expected_count":49,"achievement_difficult_expected_count":1},
+    {"source_goal_number":5,"source_goal_label_ja":"誰もが健康的に暮らし、生涯活躍できるまち","normalized_current_goal_id":4,"target_count":11,"already_achieved_count":0,"achievement_expected_count":11,"achievement_difficult_expected_count":0},
+    {"source_goal_number":6,"source_goal_label_ja":"互いに認め合い、支え合うまち","normalized_current_goal_id":6,"target_count":8,"already_achieved_count":0,"achievement_expected_count":8,"achievement_difficult_expected_count":0},
+    {"source_goal_number":7,"source_goal_label_ja":"誰もがまちづくり活動に参加でき、コミュニティを育むまち","normalized_current_goal_id":7,"target_count":19,"already_achieved_count":0,"achievement_expected_count":19,"achievement_difficult_expected_count":0},
+    {"source_goal_number":8,"source_goal_label_ja":"誰もが災害に備え、迅速に回復し、復興できるまち","normalized_current_goal_id":8,"target_count":21,"already_achieved_count":1,"achievement_expected_count":20,"achievement_difficult_expected_count":0},
+    {"source_goal_number":9,"source_goal_label_ja":"日常の安全が保たれたまち","normalized_current_goal_id":9,"target_count":22,"already_achieved_count":0,"achievement_expected_count":22,"achievement_difficult_expected_count":0},
+    {"source_goal_number":10,"source_goal_label_ja":"強みを生かした産業が北海道の経済をけん引しているまち","normalized_current_goal_id":10,"target_count":31,"already_achieved_count":0,"achievement_expected_count":31,"achievement_difficult_expected_count":0},
+    {"source_goal_number":11,"source_goal_label_ja":"雇用が安定的に確保され、多様な働き方ができるまち","normalized_current_goal_id":12,"target_count":14,"already_achieved_count":1,"achievement_expected_count":13,"achievement_difficult_expected_count":0},
+    {"source_goal_number":12,"source_goal_label_ja":"多様な主体と高い生産性、チャレンジできる文化が経済成長を支えるまち","normalized_current_goal_id":11,"target_count":15,"already_achieved_count":2,"achievement_expected_count":13,"achievement_difficult_expected_count":0},
+    {"source_goal_number":13,"source_goal_label_ja":"四季を通じて誰もがスポーツを楽しむことができるまち","normalized_current_goal_id":14,"target_count":15,"already_achieved_count":0,"achievement_expected_count":15,"achievement_difficult_expected_count":0},
+    {"source_goal_number":14,"source_goal_label_ja":"世界屈指のウインタースポーツシティ","normalized_current_goal_id":13,"target_count":6,"already_achieved_count":1,"achievement_expected_count":5,"achievement_difficult_expected_count":0},
+    {"source_goal_number":15,"source_goal_label_ja":"文化芸術が心の豊かさや創造性を育み、世界とつながるまち","normalized_current_goal_id":15,"target_count":14,"already_achieved_count":0,"achievement_expected_count":14,"achievement_difficult_expected_count":0},
+    {"source_goal_number":16,"source_goal_label_ja":"身近なみどりを守り、育て、自然と共に暮らすまち","normalized_current_goal_id":17,"target_count":16,"already_achieved_count":2,"achievement_expected_count":14,"achievement_difficult_expected_count":0},
+    {"source_goal_number":17,"source_goal_label_ja":"世界に冠たる環境都市","normalized_current_goal_id":16,"target_count":31,"already_achieved_count":0,"achievement_expected_count":31,"achievement_difficult_expected_count":0},
+    {"source_goal_number":18,"source_goal_label_ja":"コンパクトで人にやさしい快適なまち","normalized_current_goal_id":18,"target_count":20,"already_achieved_count":0,"achievement_expected_count":20,"achievement_difficult_expected_count":0},
+    {"source_goal_number":19,"source_goal_label_ja":"世界を引きつける魅力と活力あふれるまち","normalized_current_goal_id":19,"target_count":21,"already_achieved_count":1,"achievement_expected_count":20,"achievement_difficult_expected_count":0},
+    {"source_goal_number":20,"source_goal_label_ja":"都市基盤を適切に維持・更新し、最大限利活用するまち","normalized_current_goal_id":20,"target_count":15,"already_achieved_count":0,"achievement_expected_count":14,"achievement_difficult_expected_count":1}
+  ],
+  "goal_numbering_reconciliation": {
+    "normalization_method": "match the source-reported Japanese goal label to the current official Strategy Vision goal label instead of trusting the 2024 report's printed goal number",
+    "source_goal_numbers_whose_labels_map_to_different_current_ids": [2,3,4,5,11,12,13,14,16,17],
+    "normalized_pair_swaps": ["2<->3","4<->5","11<->12","13<->14","16<->17"],
+    "normalized_current_target_counts": {"1":22,"2":30,"3":21,"4":11,"5":51,"6":8,"7":19,"8":21,"9":22,"10":31,"11":15,"12":14,"13":6,"14":15,"15":14,"16":31,"17":16,"18":20,"19":21,"20":15},
+    "boundary": "The source report's printed number and label are preserved. Cross-year comparison uses normalized_current_goal_id based on the exact Japanese goal label in the current official Strategy Vision. No source text is silently rewritten."
+  },
+  "reviewed_individual_target_records": [
+    {
+      "project_id":"sapporo_ict_strategy_promotion",
+      "field_id":"daily_life",
+      "project_name_ja":"札幌市ICT活用戦略推進事業",
+      "indicator_name_ja":"「官民データ流通促進基盤（さっぽろ圏データ取引市場）」を活用した先端的サービスの実装数",
+      "forecast_2027":21,
+      "target_2027":25,
+      "unit":"cases",
+      "official_status":"achievement_difficult_expected",
+      "official_reason_summary_ja":"当初想定よりデータ取引市場で扱うデータ数が伸びなかったため。",
+      "source_page_index_0_based":3
+    },
+    {
+      "project_id":"school_facility_longevity_repair",
+      "field_id":"urban_space",
+      "project_name_ja":"学校施設長寿命化改修事業",
+      "indicator_name_ja":"計画期間内の工事着手校数（累計）",
+      "forecast_2027":20,
+      "target_2027":22,
+      "unit":"schools",
+      "official_status":"achievement_difficult_expected",
+      "official_reason_summary_ja":"建設業界の人材不足深刻化と民間工事活況の影響を受け、入札不調となったため。",
+      "source_page_index_0_based":3
+    }
+  ],
+  "summary": {
+    "official_target_universe_count":403,
+    "individual_target_records_reviewed":2,
+    "individual_target_records_remaining_unpublished":401,
+    "reviewed_achievement_difficult_examples":2
+  },
+  "quality_boundary":"This is a historical 2024-report layer. It does not overwrite 2025 current statuses and does not increment the current 8/403 gate. The official source publishes the complete prior-year 403 aggregate and two difficult-to-achieve individual examples. The source-report basic-goal numbering anomaly is preserved and normalized by exact Japanese goal label against the current official Strategy Vision for cross-year comparison."
+}

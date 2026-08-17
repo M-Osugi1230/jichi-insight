@@ -33,9 +33,8 @@ def test_sapporo_policy_review_uses_reviewed_official_sources():
     assert all(record["confidence"] == "high" for record in sources)
 
     assert source_map["sapporo-action-plan-2023-page"]["review_status"] == "reviewed"
-    assert (
-        source_map["sapporo-action-plan-2023-final-overview"]["review_status"]
-        == "reviewed_for_final_field_project_denominators"
+    assert source_map["sapporo-action-plan-2023-final-overview"]["review_status"] == (
+        "reviewed_for_final_field_project_denominators"
     )
 
     children = source_map["sapporo-action-plan-2023-projects-children-youth"]
@@ -120,11 +119,15 @@ def test_sapporo_inventory_now_resolves_action_plan_canonical_route():
 
 def test_sapporo_action_plan_identity_gate_is_complete_but_city_remains_in_progress():
     queue = load(QUEUE_PATH)
-    sapporo = next(item for item in queue["execution_queue"] if item["official_code"] == "011002")
+    sapporo = next(
+        item for item in queue["execution_queue"] if item["official_code"] == "011002"
+    )
     manifest = load(MANIFEST_PATH)
     readiness = load(READINESS_PATH)
     identity_gate = next(
-        item for item in readiness["blocking_gates"] if item["id"] == "action-plan-project-records"
+        item
+        for item in readiness["blocking_gates"]
+        if item["id"] == "action-plan-project-records"
     )
     target_gate = next(
         item
@@ -137,6 +140,8 @@ def test_sapporo_action_plan_identity_gate_is_complete_but_city_remains_in_progr
     assert identity_gate["state"] == "complete_599_of_599_final_identity_review"
     assert identity_gate["reviewed_scope"] == 599
     assert identity_gate["remaining_scope"] == 0
-    assert target_gate["state"] == "not_complete"
+    assert target_gate["state"] == "in_progress_8_of_403_current_individual_statuses"
     assert target_gate["required_scope"] == 403
+    assert target_gate["reviewed_scope"] == 8
+    assert target_gate["remaining_scope"] == 395
     assert readiness["current_status"] == "review_in_progress"

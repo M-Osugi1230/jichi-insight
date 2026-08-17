@@ -1,0 +1,58 @@
+{
+  "id": "phase13-sapporo-principal-project-target-2024-review-evidence",
+  "phase": 13,
+  "official_code": "011002",
+  "name_ja": "札幌市",
+  "reviewed_at": "2026-08-18",
+  "source": {
+    "title": "第2次札幌市まちづくり戦略ビジョン・アクションプラン2023 2024年度進捗報告（2023年度実績）",
+    "landing_url": "https://www.city.sapporo.jp/chosei/actionplan2023-shinchoku.html",
+    "pdf_url": "https://www.city.sapporo.jp/chosei/documents/ap2023_houkoku2024_soukatsu.pdf",
+    "pdf_page_count": 4,
+    "target_summary_page_index_0_based": 3,
+    "review_method": "official_pdf_text_layer_review; screenshot fetch was attempted but the remote PDF cache returned a cache miss"
+  },
+  "target_summary_evidence": {
+    "page_index_0_based": 3,
+    "review_status": "reviewed",
+    "facts": {
+      "principal_project_target_count": 403,
+      "already_achieved_count": 9,
+      "achievement_expected_count": 392,
+      "achievement_difficult_expected_count": 2,
+      "expected_or_achieved_count": 401,
+      "expected_or_achieved_ratio_percent": 99.5,
+      "field_row_count": 8,
+      "source_basic_goal_row_count": 20
+    },
+    "explicit_difficult_project_ids": [
+      "sapporo_ict_strategy_promotion",
+      "school_facility_longevity_repair"
+    ]
+  },
+  "goal_numbering_evidence": {
+    "current_official_strategy_url": "https://www.city.sapporo.jp/kikaku/vision/vision2/",
+    "normalization_key": "exact Japanese basic-goal label",
+    "source_number_to_current_id_mismatches": {
+      "2": 3,
+      "3": 2,
+      "4": 5,
+      "5": 4,
+      "11": 12,
+      "12": 11,
+      "13": 14,
+      "14": 13,
+      "16": 17,
+      "17": 16
+    },
+    "review_status": "reviewed_source_numbering_anomaly_preserved"
+  },
+  "publication_boundary": {
+    "all_403_identity_level_statuses_published": false,
+    "complete_aggregate_partition_published": true,
+    "explicit_difficult_individual_examples_published": 2,
+    "historical_layer_only": true,
+    "current_2025_gate_increment": 0,
+    "rule": "Historical source-reported statuses and forecasts remain tied to reporting year 2024. They must not be copied forward as current 2025 statuses."
+  }
+}

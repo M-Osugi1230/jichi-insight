@@ -1,0 +1,71 @@
+{
+  "id": "phase13-sapporo-principal-project-target-universe-registry",
+  "phase": 13,
+  "official_code": "011002",
+  "name_ja": "札幌市",
+  "reviewed_at": "2026-08-18",
+  "status": "target_universe_boundary_complete_403",
+  "source": {
+    "progress_landing_url": "https://www.city.sapporo.jp/chosei/actionplan2023-shinchoku.html",
+    "progress_summary_pdf_url": "https://www.city.sapporo.jp/chosei/documents/ap2023_houkoku2025_soukatsusyuusei.pdf",
+    "action_plan_project_index_path": "data/catalog/sapporo_action_plan_project_source_index.json",
+    "role": "derive the exact annual-target universe from the completed final 599-project identity layer and the official 2025 field target denominators"
+  },
+  "structural_reconciliation": {
+    "final_project_identity_count": 599,
+    "final_main_project_count": 406,
+    "final_other_project_count": 193,
+    "main_projects_without_configured_target_count": 3,
+    "principal_project_target_count": 403,
+    "formula": "406 final main projects - 3 main projects without configured targets = 403 principal-project targets"
+  },
+  "field_target_universe": [
+    {"field_id":"children_youth","field_ja":"子ども・若者","final_main_project_count":74,"official_target_count":73,"without_target_count":1},
+    {"field_id":"daily_life","field_ja":"生活・暮らし","final_main_project_count":62,"official_target_count":62,"without_target_count":0},
+    {"field_id":"community","field_ja":"地域","final_main_project_count":27,"official_target_count":27,"without_target_count":0},
+    {"field_id":"safety_security","field_ja":"安全・安心","final_main_project_count":43,"official_target_count":43,"without_target_count":0},
+    {"field_id":"economy","field_ja":"経済","final_main_project_count":61,"official_target_count":60,"without_target_count":1},
+    {"field_id":"sports_culture","field_ja":"スポーツ・文化","final_main_project_count":36,"official_target_count":35,"without_target_count":1},
+    {"field_id":"environment","field_ja":"環境","final_main_project_count":47,"official_target_count":47,"without_target_count":0},
+    {"field_id":"urban_space","field_ja":"都市空間","final_main_project_count":56,"official_target_count":56,"without_target_count":0}
+  ],
+  "main_projects_without_configured_target": [
+    {
+      "field_id": "children_youth",
+      "project_id": "school_lunch_fee_burden_reduction",
+      "project_name_ja": "学校給食費負担軽減事業",
+      "final_main_project_count_field": 74,
+      "official_target_count_field": 73,
+      "target_name_ja": "－",
+      "target_raw_ja": "2022：－ ⇒ 2027：－",
+      "identity_source_path": "data/catalog/sapporo_action_plan_children_youth_main_projects_goal1_candidates.json",
+      "final_identity_reconciliation_path": "data/catalog/sapporo_action_plan_children_youth_final_reconciliation.json",
+      "review_status": "reviewed_no_configured_target"
+    },
+    {
+      "field_id": "economy",
+      "project_id": "new_mice_facility_development",
+      "project_name_ja": "（仮称）新MICE施設整備事業",
+      "final_main_project_count_field": 61,
+      "official_target_count_field": 60,
+      "identity_source_path": "data/catalog/sapporo_action_plan_economy_project_candidates.json",
+      "final_identity_reconciliation_path": "data/catalog/sapporo_action_plan_economy_final_reconciliation.json",
+      "review_status": "reviewed_no_configured_target_by_final_field_reconciliation_and_single_field_deficit"
+    },
+    {
+      "field_id": "sports_culture",
+      "project_id": "sapporo_dome_surrounding_area_utilization",
+      "project_name_ja": "札幌ドーム周辺活用推進事業",
+      "final_main_project_count_field": 36,
+      "official_target_count_field": 35,
+      "target_name_ja": "－",
+      "target_raw_ja": "2022：－ ⇒ 2027：－",
+      "identity_source_path": "data/catalog/sapporo_action_plan_sports_culture_projects.json",
+      "final_identity_reconciliation_path": "data/catalog/sapporo_action_plan_sports_culture_final_reconciliation.json",
+      "review_status": "reviewed_no_configured_target"
+    }
+  ],
+  "target_identity_rule": "The 403 target-bearing identities are exactly the 406 final main-project identities minus the three project IDs listed in main_projects_without_configured_target. Other-project identities are outside the target universe by definition.",
+  "status_boundary": "Target-universe membership is distinct from current 2025 target status. This registry determines which 403 project identities require annual target review; it does not assign already-achieved, expected, or difficult status except where a separate official current-status evidence record exists.",
+  "quality_boundary": "The official 2025 field target counts sum to 403 and differ from final main-project counts only in children/youth, economy, and sports/culture, one project each. The three excluded IDs reconcile those exact deficits. This closes the 403-target membership boundary while leaving current-status coverage at 8/403."
+}
