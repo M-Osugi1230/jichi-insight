@@ -8,17 +8,8 @@
   "source_registry_path": "data/catalog/sapporo_outcome_indicator_registry.json",
   "current_value_path": "data/catalog/sapporo_outcome_indicator_2025_report_values.json",
   "classification_model": {
-    "objective_lane": [
-      "official_statistic",
-      "administrative_count_or_inventory",
-      "derived_official_statistic",
-      "tourism_activity_statistic",
-      "visitor_survey_derived_estimate"
-    ],
-    "self_report_lane": [
-      "citizen_self_report_survey",
-      "target_group_self_report_survey"
-    ],
+    "objective_lane": ["official_statistic","administrative_count_or_inventory","derived_official_statistic","tourism_activity_statistic","visitor_survey_derived_estimate"],
+    "self_report_lane": ["citizen_self_report_survey","target_group_self_report_survey"],
     "rule": "Indicators in the objective and self-report lanes remain comparable to their own baseline and target, but Jichi Insight must not collapse both lanes into a single undifferentiated achievement score without an explicit methodology that preserves measurement-type differences."
   },
   "summary": {
@@ -26,17 +17,9 @@
     "classified_indicator_count": 26,
     "objective_lane_count": 12,
     "self_report_lane_count": 14,
-    "measurement_family_counts": {
-      "official_statistic": 4,
-      "administrative_count_or_inventory": 2,
-      "derived_official_statistic": 4,
-      "tourism_activity_statistic": 1,
-      "visitor_survey_derived_estimate": 1,
-      "citizen_self_report_survey": 11,
-      "target_group_self_report_survey": 3
-    },
+    "measurement_family_counts": {"official_statistic":4,"administrative_count_or_inventory":2,"derived_official_statistic":4,"tourism_activity_statistic":1,"visitor_survey_derived_estimate":1,"citizen_self_report_survey":11,"target_group_self_report_survey":3},
     "exact_instrument_verified_count": 4,
-    "family_verified_exact_instrument_pending_count": 10,
+    "family_verified_exact_instrument_pending_count": 11,
     "objective_source_family_reviewed_count": 12
   },
   "records": [
