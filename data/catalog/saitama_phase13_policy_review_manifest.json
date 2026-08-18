@@ -1,0 +1,131 @@
+{
+  "id": "phase13-saitama-policy-review-manifest",
+  "phase": 13,
+  "official_code": "111007",
+  "name_ja": "さいたま市",
+  "status": "review_in_progress",
+  "reviewed_at": "2026-08-18",
+  "source_catalog_path": "data/catalog/saitama_phase13_sources.json",
+  "plan_review_path": "data/reviewed/saitama-city/plan_review.json",
+  "fiscal_records_path": "data/reviewed/saitama-city/fiscal_records.json",
+  "fiscal_evidence_path": "data/reviewed/saitama-city/evidence_packets.json",
+  "reviewed_facts": [
+    {
+      "id": "saitama-current-basic-plan",
+      "layer": "current_plan_identity",
+      "field": "plan_period",
+      "value": "2021年度～2030年度",
+      "current_version": "令和7年度改定版",
+      "source_id": "saitama-basic-plan-2021-2030",
+      "review_status": "reviewed"
+    },
+    {
+      "id": "saitama-current-implementation-plan",
+      "layer": "current_implementation_plan",
+      "field": "implementation_period",
+      "value": "2026年度～2030年度",
+      "annual_revision_principle": true,
+      "source_id": "saitama-implementation-plan-2026-2030",
+      "review_status": "reviewed_core"
+    },
+    {
+      "id": "saitama-current-outcome-measurement-boundary",
+      "layer": "current_progress_methodology",
+      "field": "outcome_measurement_families",
+      "value": ["subjective", "objective"],
+      "source_id": "saitama-implementation-plan-2026-2030",
+      "review_status": "reviewed_methodology",
+      "interpretation_boundary": "主観指標と客観指標を別測定レーンとして保持し、成果指標の増減を市事業の因果効果へ変換しない。"
+    },
+    {
+      "id": "saitama-prior-implementation-plan",
+      "layer": "historical_implementation_plan",
+      "field": "implementation_period",
+      "value": "2021年度～2025年度",
+      "source_id": "saitama-implementation-plan-2021-2025",
+      "review_status": "reviewed_historical_cycle"
+    },
+    {
+      "id": "saitama-2024-progress-universe",
+      "layer": "historical_annual_progress",
+      "field": "review_universe",
+      "reporting_fiscal_year": 2024,
+      "displayed_project_occurrence_count": 370,
+      "unique_project_count": 299,
+      "measure_count": 63,
+      "source_id": "saitama-progress-2024",
+      "review_status": "reviewed_aggregate",
+      "interpretation_boundary": "370は複数施策への再掲を含む延べ事業数。重複排除後の実事業数299と区別する。2024実績は旧2021～2025実施計画サイクル。"
+    },
+    {
+      "id": "saitama-2024-project-evaluation",
+      "layer": "historical_annual_progress",
+      "field": "source_reported_project_evaluation",
+      "reporting_fiscal_year": 2024,
+      "policy_fields": {"total": 316, "a": 82, "b": 185, "c": 49, "a_or_b": 267, "a_or_b_percent": 84.5},
+      "quality_city_management": {"total": 54, "a": 17, "b": 27, "c": 10, "a_or_b": 44, "a_or_b_percent": 81.5},
+      "source_id": "saitama-progress-2024",
+      "review_status": "reviewed_aggregate",
+      "interpretation_boundary": "A/B/Cはさいたま市の内部評価。独立したJichi Insight達成率へ変換しない。"
+    },
+    {
+      "id": "saitama-2024-measure-evaluation",
+      "layer": "historical_annual_progress",
+      "field": "source_reported_measure_evaluation",
+      "reporting_fiscal_year": 2024,
+      "policy_fields": {"total": 50, "on_track": 22, "mostly_on_track": 13, "somewhat_delayed": 14, "delayed": 1},
+      "quality_city_management": {"total": 13, "on_track": 7, "mostly_on_track": 2, "somewhat_delayed": 4, "delayed": 0},
+      "source_id": "saitama-progress-2024",
+      "review_status": "reviewed_aggregate"
+    },
+    {
+      "id": "saitama-2024-priority-kpi-direction",
+      "layer": "historical_annual_progress",
+      "field": "source_reported_priority_kpi_direction",
+      "reporting_fiscal_year": 2024,
+      "total": 40,
+      "above_baseline": 26,
+      "below_baseline": 11,
+      "not_characterized_in_html_aggregate": 3,
+      "source_id": "saitama-progress-2024",
+      "review_status": "reviewed_aggregate_with_unresolved_remainder",
+      "interpretation_boundary": "残り3KPIの具体区分は公式個票確認前に推測しない。"
+    },
+    {
+      "id": "saitama-2026-general-account-initial-budget",
+      "layer": "fiscal",
+      "field": "general_account_initial_budget_yen",
+      "fiscal_year": 2026,
+      "value": 716000000000,
+      "source_id": "saitama-policy-statement-2026",
+      "review_status": "reviewed",
+      "interpretation_boundary": "2026年3月12日に原案どおり可決。補正後予算・執行・決算とは分離。"
+    },
+    {
+      "id": "saitama-2024-general-account-settlement-revenue",
+      "layer": "fiscal",
+      "field": "general_account_settlement_revenue_yen",
+      "fiscal_year": 2024,
+      "value": 725870000000,
+      "source_id": "saitama-settlement-2024-overview",
+      "review_status": "reviewed"
+    },
+    {
+      "id": "saitama-2024-general-account-settlement-expenditure",
+      "layer": "fiscal",
+      "field": "general_account_settlement_expenditure_yen",
+      "fiscal_year": 2024,
+      "value": 716754000000,
+      "source_id": "saitama-settlement-2024-overview",
+      "review_status": "reviewed"
+    }
+  ],
+  "remaining_work": [
+    "現行2026～2030実施計画の第4編に掲載された事業IDを公式PDFから全件列挙し、再掲・重複の有無を確認する。",
+    "現行基本計画・実施計画の成果指標を全件列挙し、主観指標と客観指標を公式定義に従って分離する。",
+    "現行事業の目標指標、担当課、基準値、年度目標、最終目標、5年間の財政効果を証拠位置付きでレビューする。",
+    "令和6年度の370延べ事業・299実事業と現行2026～2030事業との同一性は、名称だけで推測せずversioned linkageとして別レビューする。",
+    "重点戦略40KPIのうちHTML集計で区分が明示されない3KPIを報告書個票から確認する。"
+  ],
+  "quality_boundary": "Initial Phase 13 review only. It fixes the current/historical implementation-cycle boundary, the 370 displayed-occurrence versus 299 unique-project distinction, source-reported 2024 aggregate evaluations, current subjective/objective measurement methodology, and fiscal top lines. It does not claim complete current project identity coverage, complete outcome-indicator coverage, policy achievement, causality, or cross-city comparability."
+}
