@@ -63,14 +63,26 @@ def test_saitama_outcomes_reconcile_policy_and_quality_partitions():
     registry = load(REGISTRY)
     records = outcome_records()
     policy = [row for row in records if int(row["measure_code"][:2]) <= 11]
-    quality = [row for row in records if row["measure_code"].startswith(("51-", "52-"))]
+    quality = [
+        row
+        for row in records
+        if row["measure_code"].startswith(("51-", "52-"))
+    ]
     policy_measures = {row["measure_code"] for row in policy}
     quality_measures = {row["measure_code"] for row in quality}
 
     assert len(policy) == 78
     assert len(quality) == 19
-    assert len(policy_measures) == registry["measure_universe"]["policy_fields_measure_count"] == 50
-    assert len(quality_measures) == registry["measure_universe"]["quality_city_management_measure_count"] == 14
+    assert (
+        len(policy_measures)
+        == registry["measure_universe"]["policy_fields_measure_count"]
+        == 50
+    )
+    assert (
+        len(quality_measures)
+        == registry["measure_universe"]["quality_city_management_measure_count"]
+        == 14
+    )
     assert len(policy) + len(quality) == 97
 
 
@@ -84,7 +96,12 @@ def test_saitama_semantic_measurement_lanes_partition_all_97_without_combining_s
         "objective_or_administrative_statistical": 35,
     }
     assert registry["indicator_universe"]["self_report_or_perception_count"] == 62
-    assert registry["indicator_universe"]["objective_or_administrative_statistical_count"] == 35
+    assert (
+        registry["indicator_universe"][
+            "objective_or_administrative_statistical_count"
+        ]
+        == 35
+    )
     assert registry["measurement_boundary"]["no_combined_score"] is True
     assert registry["measurement_boundary"]["no_causal_attribution"] is True
     assert all(
