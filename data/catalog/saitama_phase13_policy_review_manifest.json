@@ -11,10 +11,13 @@
   "fiscal_evidence_path":"data/reviewed/saitama-city/evidence_packets.json",
   "current_project_universe_path":"data/catalog/saitama_current_project_universe_registry.json",
   "current_project_evidence_path":"data/evidence/saitama_current_project_universe_evidence.json",
+  "current_outcome_registry_path":"data/catalog/saitama_current_outcome_indicator_registry.json",
+  "current_outcome_evidence_path":"data/evidence/saitama_current_outcome_indicator_evidence.json",
   "reviewed_facts":[
     {"id":"saitama-current-basic-plan","layer":"current_plan_identity","field":"plan_period","value":"2021年度～2030年度","current_version":"令和7年度改定版","source_id":"saitama-basic-plan-2021-2030","review_status":"reviewed"},
     {"id":"saitama-current-implementation-plan","layer":"current_implementation_plan","field":"implementation_period","value":"2026年度～2030年度","annual_revision_principle":true,"source_id":"saitama-implementation-plan-2026-2030","review_status":"reviewed_core"},
     {"id":"saitama-current-project-identity-universe","layer":"current_implementation_plan","field":"current_project_identities","value":258,"policy_fields_project_count":210,"quality_city_management_project_count":48,"identity_records_reviewed":258,"identity_records_remaining":0,"source_id":"saitama-implementation-plan-2026-2030","review_status":"reviewed_complete_258_of_258","interpretation_boundary":"258は現行第4編の一意な事業コード・事業名のidentity母集団。政策達成数、予算事業数、旧計画実績母集団へ変換しない。"},
+    {"id":"saitama-current-outcome-identity-universe","layer":"current_outcomes","field":"current_outcome_indicators","measure_count":64,"value":97,"policy_fields_indicator_count":78,"quality_city_management_indicator_count":19,"self_report_or_perception_count":62,"objective_or_administrative_statistical_count":35,"identity_records_reviewed":97,"identity_records_remaining":0,"source_id":"saitama-implementation-plan-2026-2030","review_status":"reviewed_complete_97_of_97_semantic_lanes","interpretation_boundary":"97件の成果指標identityは全件レビュー済み。62/35は測定特性を混在させないsemantic separationで、全97件の公式調査票・統計出典を個別検証済みとするものではない。"},
     {"id":"saitama-current-outcome-measurement-boundary","layer":"current_progress_methodology","field":"outcome_measurement_families","value":["subjective","objective"],"source_id":"saitama-implementation-plan-2026-2030","review_status":"reviewed_methodology","interpretation_boundary":"主観指標と客観指標を別測定レーンとして保持し、成果指標の増減を市事業の因果効果へ変換しない。"},
     {"id":"saitama-prior-implementation-plan","layer":"historical_implementation_plan","field":"implementation_period","value":"2021年度～2025年度","source_id":"saitama-implementation-plan-2021-2025","review_status":"reviewed_historical_cycle"},
     {"id":"saitama-2024-progress-universe","layer":"historical_annual_progress","field":"review_universe","reporting_fiscal_year":2024,"displayed_project_occurrence_count":370,"unique_project_count":299,"measure_count":63,"source_id":"saitama-progress-2024","review_status":"reviewed_aggregate","interpretation_boundary":"370は複数施策への再掲を含む延べ事業数。重複排除後の実事業数299と区別する。2024実績は旧2021～2025実施計画サイクル。"},
@@ -26,10 +29,10 @@
     {"id":"saitama-2024-general-account-settlement-expenditure","layer":"fiscal","field":"general_account_settlement_expenditure_yen","fiscal_year":2024,"value":716754000000,"source_id":"saitama-settlement-2024-overview","review_status":"reviewed"}
   ],
   "remaining_work":[
-    "現行基本計画・実施計画の成果指標を全件列挙し、主観指標と客観指標を公式定義に従って分離する。",
+    "現行97成果指標について、公式の調査票・統計出典・基準値・最終目標・測定年度を個別確認し、62/35のsemantic laneをsource-method verifiedへ段階的に昇格する。",
     "現行258事業の目標指標、担当課、基準値、年度目標、最終目標、5年間の財政効果を証拠位置付きでレビューする。",
     "令和6年度の370延べ事業・299実事業と現行258事業との同一性は、名称だけで推測せずversioned linkageとして別レビューする。",
     "重点戦略40KPIのうちHTML集計で区分が明示されない3KPIを報告書個票から確認する。"
   ],
-  "quality_boundary":"Phase 13 review in progress. Current 2026～2030 project identity coverage is complete at 258/258 unique project codes, while current outcome-indicator coverage and project target/KPI evidence remain separate incomplete layers. The old-cycle 370 displayed occurrences and 299 unique projects remain version-separated. Source-reported evaluations are not independent Jichi Insight achievement judgments, and no causal or cross-city comparable score is inferred."
+  "quality_boundary":"Phase 13 review in progress. Current 2026～2030 project identity coverage is complete at 258/258 and current outcome-indicator identity coverage is complete at 97/97 across 64 measures. The 62 self-report/perception vs 35 objective/administrative/statistical split is a semantic measurement separation; exact source-method provenance remains a distinct deeper layer. The old-cycle 370 displayed occurrences and 299 unique projects remain version-separated. No independent achievement score, causal attribution, or automatic cross-city comparability is inferred."
 }

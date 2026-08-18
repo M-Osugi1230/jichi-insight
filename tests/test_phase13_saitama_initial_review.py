@@ -188,7 +188,7 @@ def test_saitama_manifest_and_queue_show_real_review_in_progress():
     facts = {row["id"]: row for row in manifest["reviewed_facts"]}
 
     assert manifest["status"] == "review_in_progress"
-    assert len(manifest["reviewed_facts"]) == 12
+    assert len(manifest["reviewed_facts"]) == 13
     assert len(manifest["remaining_work"]) == 4
     assert by_code["111007"]["status"] == "review_in_progress"
     assert queue["summary"]["reviewed_complete_count"] == 2
@@ -198,6 +198,17 @@ def test_saitama_manifest_and_queue_show_real_review_in_progress():
     assert facts["saitama-current-project-identity-universe"][
         "identity_records_remaining"
     ] == 0
+    assert facts["saitama-current-outcome-identity-universe"]["value"] == 97
+    assert facts["saitama-current-outcome-identity-universe"]["measure_count"] == 64
+    assert facts["saitama-current-outcome-identity-universe"][
+        "identity_records_remaining"
+    ] == 0
+    assert facts["saitama-current-outcome-identity-universe"][
+        "self_report_or_perception_count"
+    ] == 62
+    assert facts["saitama-current-outcome-identity-universe"][
+        "objective_or_administrative_statistical_count"
+    ] == 35
     assert facts["saitama-2024-progress-universe"][
         "displayed_project_occurrence_count"
     ] == 370
@@ -205,4 +216,5 @@ def test_saitama_manifest_and_queue_show_real_review_in_progress():
     assert facts["saitama-2026-general-account-initial-budget"]["value"] == (
         716_000_000_000
     )
-    assert "258/258 unique project codes" in manifest["quality_boundary"]
+    assert "258/258" in manifest["quality_boundary"]
+    assert "97/97" in manifest["quality_boundary"]
