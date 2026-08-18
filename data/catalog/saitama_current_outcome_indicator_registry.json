@@ -1,0 +1,40 @@
+{
+  "id": "saitama-current-outcome-indicator-registry",
+  "official_code": "111007",
+  "name_ja": "さいたま市",
+  "plan_name": "総合振興計画実施計画（令和8年度～令和12年度）",
+  "plan_period": {"start_fiscal_year": 2026, "end_fiscal_year": 2030},
+  "status": "outcome_identity_review_complete_97_of_97_semantic_lane_separation_complete_exact_method_partial",
+  "source_ids": [
+    "saitama-implementation-plan-2026-2030-policy-projects",
+    "saitama-implementation-plan-2026-2030-quality-management-projects"
+  ],
+  "record_paths": [
+    "data/catalog/saitama_current_outcomes_policy_chapters01_04.json",
+    "data/catalog/saitama_current_outcomes_policy_chapters05_08.json",
+    "data/catalog/saitama_current_outcomes_policy_chapters09_11.json",
+    "data/catalog/saitama_current_outcomes_quality_city_management.json"
+  ],
+  "measure_universe": {
+    "measure_count": 64,
+    "policy_fields_measure_count": 50,
+    "quality_city_management_measure_count": 14,
+    "measures_with_outcomes_reviewed": 64,
+    "measures_remaining": 0
+  },
+  "indicator_universe": {
+    "indicator_count": 97,
+    "identity_records_reviewed": 97,
+    "identity_records_remaining": 0,
+    "self_report_or_perception_count": 62,
+    "objective_or_administrative_statistical_count": 35
+  },
+  "measurement_boundary": {
+    "official_methodology": "現行実施計画は成果指標を主観指標と客観指標に区分して進捗を把握する。",
+    "semantic_lane_scope": "本レジストリの62/35分離は指標名・定義の意味に基づく測定レーン分離。個々の指標について公式資料上の色・凡例・調査票・統計出典との1対1照合は次レイヤー。",
+    "no_combined_score": true,
+    "no_causal_attribution": true
+  },
+  "quality_boundary": "97/97の成果指標名と64施策への所属を公式第4編の成果指標欄からレビューした。62件/35件の測定レーンは、認識・満足・意向・自己申告行動等と、件数・率・統計・行政記録等を混在させないためのJichi Insightのsemantic separationであり、全97件の公式調査票・統計出典を個別検証したことを意味しない。主観/客観を合算した政策達成スコア、因果効果、他都市比較可能性は主張しない。",
+  "next_action": "全97件について公式の調査・統計出典、基準値・最終目標、測定年度を確認し、semantic laneをsource-method verifiedへ段階的に昇格する。並行して258事業の目標指標レビューを開始する。"
+}
