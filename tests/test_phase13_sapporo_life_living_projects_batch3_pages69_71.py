@@ -62,7 +62,7 @@ def test_page68_is_now_directly_reconciled_and_batch3_execution_is_complete():
     assert batch3["blocked_pages"] == []
 
 
-def test_global_state_reflects_complete_life_living_inside_599_identity_layer():
+def test_global_state_reflects_complete_life_living_inside_completed_v1():
     index = load(SOURCE_INDEX_PATH)
     daily = next(
         field for field in index["machizukuri_field_sources"] if field["field_id"] == "daily_life"
@@ -93,4 +93,4 @@ def test_global_state_reflects_complete_life_living_inside_599_identity_layer():
     assert layer["reviewed_record_count"] == 599
     assert gate["reviewed_scope"] == 599
     assert gate["remaining_scope"] == 0
-    assert readiness["current_status"] == "review_in_progress"
+    assert readiness["current_status"] == "reviewed_complete"
