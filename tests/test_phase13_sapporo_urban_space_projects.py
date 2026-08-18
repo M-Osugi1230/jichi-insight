@@ -87,7 +87,7 @@ def test_urban_space_has_one_to_one_evidence_and_revision_non_intersection():
     }
 
 
-def test_urban_space_remains_complete_inside_completed_599_identity_layer():
+def test_urban_space_remains_complete_inside_declared_v1_completion():
     index = load(SOURCE_INDEX_PATH)
     readiness = load(READINESS_PATH)
     urban = next(
@@ -121,7 +121,7 @@ def test_urban_space_remains_complete_inside_completed_599_identity_layer():
     assert project_gate["reviewed_scope"] == 599
     assert project_gate["remaining_scope"] == 0
     assert project_gate["state"] == "complete_599_of_599_final_identity_review"
-    assert readiness["current_status"] == "review_in_progress"
+    assert readiness["current_status"] == "reviewed_complete"
 
 
 def test_urban_space_source_registry_is_high_confidence_complete_field_source():
