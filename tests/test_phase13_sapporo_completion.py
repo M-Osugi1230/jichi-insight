@@ -14,7 +14,9 @@ OUTCOMES = ROOT / "data/catalog/sapporo_outcome_indicator_registry.json"
 MEASUREMENTS = ROOT / "data/catalog/sapporo_outcome_indicator_measurement_registry.json"
 TARGET_UNIVERSE = ROOT / "data/catalog/sapporo_principal_project_target_universe_registry.json"
 TARGET_REVIEW = ROOT / "data/catalog/sapporo_principal_project_target_2025_review_batch1.json"
-PUBLICATION_AUDIT = ROOT / "data/catalog/sapporo_principal_project_target_publication_boundary_audit.json"
+PUBLICATION_AUDIT = ROOT / (
+    "data/catalog/sapporo_principal_project_target_publication_boundary_audit.json"
+)
 FISCAL = ROOT / "data/reviewed/sapporo-city/fiscal_records.json"
 
 
@@ -44,15 +46,49 @@ def test_sapporo_completion_counts_are_derived_from_reviewed_layers():
     fiscal = load(FISCAL)
 
     fields = project_index["machizukuri_field_sources"]
-    assert counts["action_plan_project_identities"] == project_index["plan_level_aggregate"]["planned_project_count"] == 599
-    assert counts["action_plan_main_projects"] == sum(row["reviewed_main_project_record_count"] for row in fields) == 406
-    assert counts["action_plan_other_projects"] == sum(row["reviewed_other_project_record_count"] for row in fields) == 193
+    assert (
+        counts["action_plan_project_identities"]
+        == project_index["plan_level_aggregate"]["planned_project_count"]
+        == 599
+    )
+    assert (
+        counts["action_plan_main_projects"]
+        == sum(row["reviewed_main_project_record_count"] for row in fields)
+        == 406
+    )
+    assert (
+        counts["action_plan_other_projects"]
+        == sum(row["reviewed_other_project_record_count"] for row in fields)
+        == 193
+    )
     assert counts["outcome_indicators"] == len(outcomes["records"]) == 26
-    assert counts["outcome_objective_or_administrative_lane"] == measurements["summary"]["objective_lane_count"] == 12
-    assert counts["outcome_self_report_lane"] == measurements["summary"]["self_report_lane_count"] == 14
-    assert counts["principal_project_target_universe"] == universe["structural_reconciliation"]["principal_project_target_count"] == 403
-    assert counts["current_individual_target_statuses_reviewed"] == target_review["summary"]["individual_target_records_reviewed"] == 8
-    assert counts["current_individual_target_statuses_deferred_at_central_publication_boundary"] == target_review["summary"]["individual_target_records_remaining"] == 395
+    assert (
+        counts["outcome_objective_or_administrative_lane"]
+        == measurements["summary"]["objective_lane_count"]
+        == 12
+    )
+    assert (
+        counts["outcome_self_report_lane"]
+        == measurements["summary"]["self_report_lane_count"]
+        == 14
+    )
+    assert (
+        counts["principal_project_target_universe"]
+        == universe["structural_reconciliation"]["principal_project_target_count"]
+        == 403
+    )
+    assert (
+        counts["current_individual_target_statuses_reviewed"]
+        == target_review["summary"]["individual_target_records_reviewed"]
+        == 8
+    )
+    assert (
+        counts[
+            "current_individual_target_statuses_deferred_at_central_publication_boundary"
+        ]
+        == target_review["summary"]["individual_target_records_remaining"]
+        == 395
+    )
     assert counts["fiscal_top_line_records"] == len(fiscal) == 3
 
 
@@ -61,6 +97,7 @@ def test_publication_boundary_preserves_exact_403_partition_without_distributing
     audit = load(PUBLICATION_AUDIT)
     review = load(TARGET_REVIEW)
     official = review["official_target_universe"]
+    publication_depth = audit["current_2025_publication_depth"]
 
     assert official["principal_project_target_count"] == 403
     assert official["already_achieved_count"] == 38
@@ -68,22 +105,39 @@ def test_publication_boundary_preserves_exact_403_partition_without_distributing
     assert official["achievement_difficult_expected_count"] == 9
     assert 38 + 356 + 9 == 403
     assert len(review["reviewed_individual_target_records"]) == 8
-    assert audit["current_2025_publication_depth"]["named_individual_status_count"] == 8
-    assert audit["current_2025_publication_depth"]["unnamed_current_status_count"] == 395
-    assert audit["current_2025_publication_depth"]["complete_identity_level_status_table_in_central_progress_publication"] is False
+    assert publication_depth["named_individual_status_count"] == 8
+    assert publication_depth["unnamed_current_status_count"] == 395
+    assert (
+        publication_depth[
+            "complete_identity_level_status_table_in_central_progress_publication"
+        ]
+        is False
+    )
     assert audit["completion_decision"]["remaining_required_for_v1_completion_count"] == 0
     assert audit["completion_decision"]["deferred_identity_status_count"] == 395
-    assert completion["publication_boundary"]["aggregate_partition_must_not_be_distributed_to_unnamed_projects"] is True
+    assert (
+        completion["publication_boundary"][
+            "aggregate_partition_must_not_be_distributed_to_unnamed_projects"
+        ]
+        is True
+    )
 
 
 def test_sapporo_completion_deferred_depth_is_not_misrepresented_as_reviewed_403_statuses():
     completion = load(COMPLETION)
     deferred = {item["id"]: item for item in completion["deferred_depth"]}
-    target_deferred = deferred["principal-project-target-current-statuses-beyond-central-publication"]
+    target_deferred = deferred[
+        "principal-project-target-current-statuses-beyond-central-publication"
+    ]
 
     assert target_deferred["status"] == "deferred_not_required_for_v1_completion"
     assert target_deferred["count"] == 395
-    assert completion["review_package"]["counts"]["current_individual_target_statuses_reviewed"] == 8
+    assert (
+        completion["review_package"]["counts"][
+            "current_individual_target_statuses_reviewed"
+        ]
+        == 8
+    )
     assert "395件" in completion["completion_boundary"]
     assert "38/356/9" in completion["completion_boundary"]
     assert "全公開データ" in completion["completion_boundary"]
@@ -102,8 +156,12 @@ def test_sapporo_completion_and_queue_are_consistent_and_advance_to_saitama():
     assert by_code["011002"]["status"] == "reviewed_complete"
     assert by_code["041009"]["status"] == "reviewed_complete"
     assert by_code["111007"]["status"] == "pending_record_review"
-    assert queue["summary"]["reviewed_complete_count"] == statuses.count("reviewed_complete") == 2
-    assert queue["summary"]["review_in_progress_count"] == statuses.count("review_in_progress") == 0
+    assert queue["summary"]["reviewed_complete_count"] == statuses.count(
+        "reviewed_complete"
+    ) == 2
+    assert queue["summary"]["review_in_progress_count"] == statuses.count(
+        "review_in_progress"
+    ) == 0
     assert queue["summary"]["next_official_code"] == "111007"
 
 
