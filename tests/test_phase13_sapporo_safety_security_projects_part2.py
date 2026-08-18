@@ -136,7 +136,7 @@ def test_sapporo_safety_part2_has_one_to_one_page_evidence():
     assert all(packet["evidence_status"] == "reviewed" for packet in packets)
 
 
-def test_sapporo_safety_field_completion_does_not_complete_municipality():
+def test_sapporo_safety_field_is_a_reviewed_layer_inside_declared_v1_completion():
     queue = load(QUEUE_PATH)
     sapporo = next(
         item for item in queue["execution_queue"] if item["official_code"] == "011002"
@@ -147,14 +147,14 @@ def test_sapporo_safety_field_completion_does_not_complete_municipality():
     all_projects = facts["action-plan-all-project-identities-complete"]
     targets = facts["progress-project-targets"]
 
-    assert sapporo["status"] == "review_in_progress"
-    assert manifest["status"] == "review_in_progress"
+    assert sapporo["status"] == "reviewed_complete"
+    assert manifest["status"] == "reviewed_at_declared_depth"
     assert safety["value"] == 70
     assert safety["review_status"] == "reviewed_field_complete_at_declared_fields"
     assert "599事業全体" in safety["interpretation_boundary"]
     assert all_projects["value"] == 599
     assert all_projects["review_status"] == "reviewed_complete"
     assert targets["denominator"] == 403
-    assert targets["review_status"] == "reviewed_aggregate_only"
-    assert any("403項目" in item for item in manifest["remaining_work"])
+    assert targets["review_status"] == "reviewed_complete_aggregate"
+    assert any("395件" in item for item in manifest["deferred_extension_work"])
     assert "policy achievement" in load(PART2_PATH)["quality_boundary"]
