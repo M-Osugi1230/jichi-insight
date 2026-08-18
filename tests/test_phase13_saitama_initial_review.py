@@ -50,14 +50,23 @@ def test_saitama_reviewed_sources_are_official_and_cycle_bounded():
     records = load(SOURCES)["records"]
     sources = {row["id"]: row for row in records}
 
-    assert len(sources) == 8
+    assert len(sources) == 10
     assert set(municipality["sources"]) == set(sources)
     assert all(row["organization"] == "さいたま市" for row in records)
-    assert all(row["url"].startswith("https://www.city.saitama.lg.jp/") for row in records)
+    assert all(
+        row["url"].startswith("https://www.city.saitama.lg.jp/")
+        for row in records
+    )
     assert all(row["confidence"] == "high" for row in records)
     assert sources["saitama-implementation-plan-2026-2030"]["review_status"] == (
-        "reviewed_core_identity_methodology"
+        "reviewed_core_methodology_and_258_project_identities"
     )
+    assert sources["saitama-implementation-plan-2026-2030-policy-projects"][
+        "review_status"
+    ] == "reviewed_210_of_210_project_identities"
+    assert sources[
+        "saitama-implementation-plan-2026-2030-quality-management-projects"
+    ]["review_status"] == "reviewed_48_of_48_project_identities"
     assert sources["saitama-implementation-plan-2021-2025"]["review_status"] == (
         "reviewed_historical_cycle_identity"
     )
@@ -179,15 +188,21 @@ def test_saitama_manifest_and_queue_show_real_review_in_progress():
     facts = {row["id"]: row for row in manifest["reviewed_facts"]}
 
     assert manifest["status"] == "review_in_progress"
-    assert len(manifest["reviewed_facts"]) == 11
-    assert len(manifest["remaining_work"]) == 5
+    assert len(manifest["reviewed_facts"]) == 12
+    assert len(manifest["remaining_work"]) == 4
     assert by_code["111007"]["status"] == "review_in_progress"
     assert queue["summary"]["reviewed_complete_count"] == 2
     assert queue["summary"]["review_in_progress_count"] == 1
     assert queue["summary"]["pending_record_review_count"] == 15
-    assert facts["saitama-2024-progress-universe"]["displayed_project_occurrence_count"] == 370
+    assert facts["saitama-current-project-identity-universe"]["value"] == 258
+    assert facts["saitama-current-project-identity-universe"][
+        "identity_records_remaining"
+    ] == 0
+    assert facts["saitama-2024-progress-universe"][
+        "displayed_project_occurrence_count"
+    ] == 370
     assert facts["saitama-2024-progress-universe"]["unique_project_count"] == 299
     assert facts["saitama-2026-general-account-initial-budget"]["value"] == (
         716_000_000_000
     )
-    assert "complete current project identity coverage" in manifest["quality_boundary"]
+    assert "258/258 unique project codes" in manifest["quality_boundary"]

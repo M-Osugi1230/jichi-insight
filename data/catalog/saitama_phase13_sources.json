@@ -1,7 +1,7 @@
 {
-  "version": "0.1.0",
-  "updated_at": "2026-08-18",
-  "scope": "phase13_saitama_initial_review",
+  "version": "0.3.0",
+  "updated_at": "2026-08-19",
+  "scope": "phase13_saitama_current_project_identity_review",
   "records": [
     {
       "id": "saitama-city-home",
@@ -31,9 +31,33 @@
       "title": "総合振興計画実施計画（令和8年度～令和12年度）",
       "url": "https://www.city.saitama.lg.jp/006/007/004/011/004/p126453.html",
       "source_kind": "html_and_pdf",
-      "review_status": "reviewed_core_identity_methodology",
+      "review_status": "reviewed_core_methodology_and_258_project_identities",
       "confidence": "high",
-      "boundary": "現行実施計画は2026～2030年度。主観/客観成果指標、目標指標、毎年度のPDCA評価を公式方法論として保存するが、個別事業・指標の全件レビューは別レイヤーとする。"
+      "boundary": "現行実施計画は2026～2030年度。第4編の258事業コード・事業名を全件レビュー済み。主観/客観成果指標、個別目標指標、毎年度のPDCA評価は別レイヤーで証拠化する。"
+    },
+    {
+      "id": "saitama-implementation-plan-2026-2030-policy-projects",
+      "organization": "さいたま市",
+      "category": "implementation_plan_project_index",
+      "title": "総合振興計画実施計画 第4編 I 各分野の施策と事業",
+      "url": "https://www.city.saitama.lg.jp/006/007/004/011/004/p126453_d/fil/jisshir8_03.pdf",
+      "source_kind": "pdf",
+      "page_count": 250,
+      "review_status": "reviewed_210_of_210_project_identities",
+      "confidence": "high",
+      "boundary": "事業一覧（PDF pages 5-11）に掲載された第1章～第11章の210件について事業コード・事業名・掲載頁を全件転記。達成状況・目標指標・財政値はidentityから推定しない。"
+    },
+    {
+      "id": "saitama-implementation-plan-2026-2030-quality-management-projects",
+      "organization": "さいたま市",
+      "category": "implementation_plan_project_index",
+      "title": "総合振興計画実施計画 第4編 II 質の高い都市経営の実現",
+      "url": "https://www.city.saitama.lg.jp/006/007/004/011/004/p126453_d/fil/jisshir8_04.pdf",
+      "source_kind": "pdf",
+      "page_count": 58,
+      "review_status": "reviewed_48_of_48_project_identities",
+      "confidence": "high",
+      "boundary": "事業一覧（PDF pages 1-2）に掲載された48件の事業コード・事業名・掲載頁を全件転記。達成状況・目標指標・財政値はidentityから推定しない。"
     },
     {
       "id": "saitama-implementation-plan-2021-2025",
