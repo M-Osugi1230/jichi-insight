@@ -108,7 +108,7 @@ def test_sports_culture_keeps_representative_candidate_numeric_anchors():
     assert records["pacific_music_festival"]["planned_project_cost_yen"] == 1_618_000_000
 
 
-def test_sports_culture_effective_inventory_is_51_in_completed_599_layer():
+def test_sports_culture_effective_inventory_is_51_in_completed_v1():
     index = load(SOURCE_INDEX_PATH)
     readiness = load(READINESS_PATH)
     sports = next(
@@ -133,7 +133,7 @@ def test_sports_culture_effective_inventory_is_51_in_completed_599_layer():
     assert index["summary"]["individual_project_records_reviewed"] == 599
     assert project_layer["reviewed_record_count"] == 599
     assert project_layer["sports_culture_direct_final_page104_confirmation"] is True
-    assert readiness["current_status"] == "review_in_progress"
+    assert readiness["current_status"] == "reviewed_complete"
 
 
 def test_sports_culture_source_registry_exposes_direct_final_reconciliation():
