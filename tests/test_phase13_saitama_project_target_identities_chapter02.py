@@ -48,11 +48,18 @@ def test_saitama_chapter02_has_exactly_31_named_target_identities():
 
 
 def test_saitama_chapter02_remains_identity_depth_until_values_are_reviewed():
+    value_fields = {
+        "baseline",
+        "annual_targets",
+        "final_target_raw",
+        "final_target_type",
+        "targets",
+    }
     for payload in (load(PART1), load(PART2)):
         assert payload["value_review_status"] == "pending_record_level_value_review"
         assert "full value review" in payload["quality_boundary"]
         assert all(
-            row["review_status"] == "reviewed_target_identity_values_pending"
+            value_fields.isdisjoint(row)
             for row in payload["records"]
         )
 
