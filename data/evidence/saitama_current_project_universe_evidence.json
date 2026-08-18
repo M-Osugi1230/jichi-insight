@@ -1,23 +1,23 @@
 {
   "id": "saitama-current-project-universe-evidence",
   "official_code": "111007",
-  "review_status": "reviewed_structural_universe_and_quality_management_identities",
+  "review_status": "reviewed_258_of_258_current_project_identities",
   "evidence": [
     {
       "subject_id": "saitama-current-implementation-project-universe",
       "source_id": "saitama-implementation-plan-2026-2030-policy-projects",
       "location": "第4編 Ⅰ 各分野の施策と事業 事業一覧（PDF pages 5-11 / 冊子頁 -63-～-70-）",
-      "claim": "第1章～第11章の事業一覧を章別に計数すると210事業コード。",
+      "claim": "第1章～第11章の事業一覧は210事業コードで、210件すべての事業コード・事業名・掲載頁を転記した。",
       "decision": "accepted",
-      "review_note": "章別 12+19+12+25+9+22+17+7+44+18+25=210。"
+      "review_note": "章別 12+19+12+25+9+22+17+7+44+18+25=210。3つのidentity batchに分割し、テストでコード一意性を検証する。"
     },
     {
       "subject_id": "saitama-current-implementation-project-universe",
       "source_id": "saitama-implementation-plan-2026-2030-quality-management-projects",
       "location": "第4編 Ⅱ 質の高い都市経営の実現 事業一覧（PDF pages 1-2 / 冊子頁 -310-～-311-）",
-      "claim": "第51章12件、第52章36件で48事業コード。",
+      "claim": "第51章12件、第52章36件で48事業コードで、48件すべての事業コード・事業名・掲載頁を転記した。",
       "decision": "accepted",
-      "review_note": "48件すべての事業コード・事業名・掲載頁をidentity fileへ転記。"
+      "review_note": "210件側とはコード名前空間が分離し、合計258件。"
     },
     {
       "subject_id": "saitama-current-implementation-project-universe",
