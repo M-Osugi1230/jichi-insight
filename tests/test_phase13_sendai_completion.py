@@ -163,28 +163,27 @@ def test_sendai_completion_preserves_deferred_depth_without_inference():
     assert "deferred_depth" in boundary
 
 
-def test_sendai_completion_and_phase13_queue_are_consistent_after_later_city_promotions():
+def test_sendai_completion_remains_stable_while_saitama_review_starts():
     completion = load(COMPLETION_PATH)
     linkage = load(LINKAGE_PATH)
     queue = load(QUEUE_PATH)
-    sendai = next(
-        item for item in queue["execution_queue"] if item["official_code"] == "041009"
-    )
+    by_code = {item["official_code"]: item for item in queue["execution_queue"]}
     statuses = [item["status"] for item in queue["execution_queue"]]
 
     assert completion["status"] == "reviewed_complete"
     assert linkage["status"] == "reviewed_complete"
     assert linkage["summary"]["municipality_phase13_complete"] is True
-    assert sendai["status"] == "reviewed_complete"
+    assert by_code["041009"]["status"] == "reviewed_complete"
+    assert by_code["111007"]["status"] == "review_in_progress"
     assert queue["summary"]["reviewed_complete_count"] == statuses.count(
         "reviewed_complete"
     ) == 2
     assert queue["summary"]["review_in_progress_count"] == statuses.count(
         "review_in_progress"
-    ) == 0
+    ) == 1
     assert queue["summary"]["pending_record_review_count"] == statuses.count(
         "pending_record_review"
-    ) == 16
+    ) == 15
 
 
 def test_sendai_completion_quality_gates_are_all_explicitly_true():

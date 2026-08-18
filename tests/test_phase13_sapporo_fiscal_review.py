@@ -38,7 +38,10 @@ def test_sapporo_reviewed_identity_and_fiscal_records_match_shared_contracts():
 
 
 def test_sapporo_first_fiscal_values_and_states_are_exact():
-    records = {record["id"]: record for record in load(REVIEWED_ROOT / "fiscal_records.json")}
+    records = {
+        record["id"]: record
+        for record in load(REVIEWED_ROOT / "fiscal_records.json")
+    }
 
     budget = records["jp-local-011002-fiscal-2026-total-revenue"]
     assert budget["stage"] == "initial_budget"
@@ -63,7 +66,9 @@ def test_sapporo_review_sources_are_official_and_record_level_locations_exist():
         "sapporo-city-budget-2026-page",
         "sapporo-city-settlement-2024-page",
     }
-    assert all(source["url"].startswith("https://www.city.sapporo.jp/") for source in sources)
+    assert all(
+        source["url"].startswith("https://www.city.sapporo.jp/") for source in sources
+    )
 
     packets = load(REVIEWED_ROOT / "evidence_packets.json")
     assert all(packet["review_status"] == "reviewed" for packet in packets)
@@ -74,24 +79,28 @@ def test_sapporo_review_sources_are_official_and_record_level_locations_exist():
     )
 
 
-def test_sapporo_phase13_v1_is_complete_and_queue_advances_to_saitama():
+def test_sapporo_phase13_v1_remains_complete_while_saitama_review_starts():
     queue = load(QUEUE_PATH)
     completion = load(COMPLETION_PATH)
     sapporo = next(
         item for item in queue["execution_queue"] if item["official_code"] == "011002"
+    )
+    saitama = next(
+        item for item in queue["execution_queue"] if item["official_code"] == "111007"
     )
     statuses = [item["status"] for item in queue["execution_queue"]]
 
     assert sapporo["status"] == "reviewed_complete"
     assert completion["status"] == "reviewed_complete"
     assert completion["completion_depth"] == "declared_review_package_v1"
+    assert saitama["status"] == "review_in_progress"
     assert queue["summary"]["reviewed_complete_count"] == statuses.count(
         "reviewed_complete"
     ) == 2
     assert queue["summary"]["review_in_progress_count"] == statuses.count(
         "review_in_progress"
-    ) == 0
+    ) == 1
     assert queue["summary"]["pending_record_review_count"] == statuses.count(
         "pending_record_review"
-    ) == 16
+    ) == 15
     assert queue["summary"]["next_official_code"] == "111007"

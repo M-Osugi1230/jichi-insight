@@ -1,0 +1,94 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-08-18",
+  "scope": "phase13_saitama_initial_review",
+  "records": [
+    {
+      "id": "saitama-city-home",
+      "organization": "さいたま市",
+      "category": "municipality",
+      "title": "さいたま市公式ホームページ",
+      "url": "https://www.city.saitama.lg.jp/",
+      "source_kind": "html",
+      "review_status": "reviewed",
+      "confidence": "high"
+    },
+    {
+      "id": "saitama-basic-plan-2021-2030",
+      "organization": "さいたま市",
+      "category": "comprehensive_plan",
+      "title": "総合振興計画基本計画（令和3年度～令和12年度）",
+      "url": "https://www.city.saitama.lg.jp/006/007/004/011/004/p080066.html",
+      "source_kind": "html",
+      "review_status": "reviewed_current_identity_and_version",
+      "confidence": "high",
+      "boundary": "現行基本計画は2021～2030年度、現行版は令和7年度改定版。個別成果指標の全件レビューは別レイヤーとする。"
+    },
+    {
+      "id": "saitama-implementation-plan-2026-2030",
+      "organization": "さいたま市",
+      "category": "implementation_plan",
+      "title": "総合振興計画実施計画（令和8年度～令和12年度）",
+      "url": "https://www.city.saitama.lg.jp/006/007/004/011/004/p126453.html",
+      "source_kind": "html_and_pdf",
+      "review_status": "reviewed_core_identity_methodology",
+      "confidence": "high",
+      "boundary": "現行実施計画は2026～2030年度。主観/客観成果指標、目標指標、毎年度のPDCA評価を公式方法論として保存するが、個別事業・指標の全件レビューは別レイヤーとする。"
+    },
+    {
+      "id": "saitama-implementation-plan-2021-2025",
+      "organization": "さいたま市",
+      "category": "historical_implementation_plan",
+      "title": "総合振興計画基本計画実施計画（令和3年度～令和7年度）",
+      "url": "https://www.city.saitama.lg.jp/006/007/004/011/008/003/p080107.html",
+      "source_kind": "html",
+      "review_status": "reviewed_historical_cycle_identity",
+      "confidence": "high",
+      "boundary": "2021～2025年度の旧実施計画。令和6年度実績評価の実施計画サイクルはこちらであり、2026～2030年度新実施計画の実績へ付け替えない。"
+    },
+    {
+      "id": "saitama-progress-2024",
+      "organization": "さいたま市",
+      "category": "annual_progress",
+      "title": "総合振興計画基本計画の令和6年度の実施状況について",
+      "url": "https://www.city.saitama.lg.jp/006/007/004/011/006/001/001/p123882.html",
+      "source_kind": "html_and_pdf",
+      "review_status": "reviewed_aggregate_methodology_and_cycle_boundary",
+      "confidence": "high",
+      "boundary": "令和6年度実績は全63施策・延べ370事業を対象とする旧2021～2025実施計画サイクルの内部評価。370は再掲を含む延べ数で、報告書は重複排除後299実事業と明記する。市の自己評価を独立したJichi Insight政策達成判定へ変換しない。"
+    },
+    {
+      "id": "saitama-budget-2026",
+      "organization": "さいたま市",
+      "category": "budget",
+      "title": "令和8年度当初予算",
+      "url": "https://www.city.saitama.lg.jp/006/007/011/001/021/p129189.html",
+      "source_kind": "html",
+      "review_status": "reviewed_enactment_state",
+      "confidence": "high",
+      "boundary": "2026年3月12日に原案どおり可決。一般会計当初予算は補正後予算、執行、決算とは別状態として保持する。"
+    },
+    {
+      "id": "saitama-policy-statement-2026",
+      "organization": "さいたま市",
+      "category": "budget_announcement",
+      "title": "令和8年度施政方針",
+      "url": "https://www.city.saitama.lg.jp/006/003/003/002/p127942.html",
+      "source_kind": "html",
+      "review_status": "reviewed_general_account_initial_budget_total",
+      "confidence": "high",
+      "boundary": "一般会計当初予算額7,160億円の公式トップライン確認に使用する。個別事業費や補正後予算には流用しない。"
+    },
+    {
+      "id": "saitama-settlement-2024-overview",
+      "organization": "さいたま市",
+      "category": "settlement",
+      "title": "令和6年度決算概況について",
+      "url": "https://www.city.saitama.lg.jp/006/014/008/003/014/005/p123457.html",
+      "source_kind": "html",
+      "review_status": "reviewed_general_account_totals",
+      "confidence": "high",
+      "boundary": "一般会計歳入・歳出の決算概況トップラインを保存する。特別会計、企業会計、予算、執行、個別政策成果とは分離する。"
+    }
+  ]
+}
