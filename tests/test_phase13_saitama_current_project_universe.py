@@ -7,10 +7,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 UNIVERSE = ROOT / "data/catalog/saitama_current_project_universe_registry.json"
 IDENTITY_PATHS = [
-    ROOT / "data/catalog/saitama_current_project_identities_policy_chapters01_04.json",
-    ROOT / "data/catalog/saitama_current_project_identities_policy_chapters05_08.json",
-    ROOT / "data/catalog/saitama_current_project_identities_policy_chapters09_11.json",
-    ROOT / "data/catalog/saitama_current_project_identities_quality_city_management.json",
+    ROOT
+    / "data/catalog/saitama_current_project_identities_policy_chapters01_04.json",
+    ROOT
+    / "data/catalog/saitama_current_project_identities_policy_chapters05_08.json",
+    ROOT
+    / "data/catalog/saitama_current_project_identities_policy_chapters09_11.json",
+    ROOT
+    / "data/catalog/saitama_current_project_identities_quality_city_management.json",
 ]
 EVIDENCE = ROOT / "data/evidence/saitama_current_project_universe_evidence.json"
 SOURCES = ROOT / "data/catalog/saitama_phase13_sources.json"
@@ -39,11 +43,27 @@ def test_saitama_current_project_universe_is_exactly_258_unique_codes():
 
 def test_saitama_current_project_identity_files_reconcile_210_plus_48():
     universe = load(UNIVERSE)
-    policy = [record for record in all_records() if record["project_code"][:2].isdigit() and int(record["project_code"][:2]) <= 11]
-    management = [record for record in all_records() if record["project_code"].startswith(("51-", "52-"))]
+    policy = [
+        record
+        for record in all_records()
+        if int(record["project_code"][:2]) <= 11
+    ]
+    management = [
+        record
+        for record in all_records()
+        if record["project_code"].startswith(("51-", "52-"))
+    ]
 
-    assert len(policy) == universe["project_universe"]["policy_fields_project_count"] == 210
-    assert len(management) == universe["project_universe"]["quality_city_management_project_count"] == 48
+    assert (
+        len(policy)
+        == universe["project_universe"]["policy_fields_project_count"]
+        == 210
+    )
+    assert (
+        len(management)
+        == universe["project_universe"]["quality_city_management_project_count"]
+        == 48
+    )
     assert len(policy) + len(management) == 258
 
 
@@ -81,9 +101,16 @@ def test_saitama_quality_management_chapter_counts_match_official_index_partitio
 def test_saitama_current_project_codes_have_expected_shape_and_nonempty_names():
     records = all_records()
     assert all(len(record["project_code"].split("-")) == 4 for record in records)
-    assert all(part.isdigit() for record in records for part in record["project_code"].split("-"))
+    assert all(
+        part.isdigit()
+        for record in records
+        for part in record["project_code"].split("-")
+    )
     assert all(record["project_name"].strip() for record in records)
-    assert all(isinstance(record["plan_page"], int) and record["plan_page"] > 0 for record in records)
+    assert all(
+        isinstance(record["plan_page"], int) and record["plan_page"] > 0
+        for record in records
+    )
 
 
 def test_saitama_current_project_universe_stays_separate_from_old_progress_universe():
@@ -103,13 +130,13 @@ def test_saitama_project_universe_evidence_and_sources_are_official_and_bounded(
     source_map = {row["id"]: row for row in load(SOURCES)["records"]}
 
     assert len(evidence["evidence"]) == 3
-    assert evidence["review_status"] == (
-        "reviewed_structural_universe_and_quality_management_identities"
-    )
+    assert evidence["review_status"] == "reviewed_258_of_258_current_project_identities"
     for source_id in (
         "saitama-implementation-plan-2026-2030-policy-projects",
         "saitama-implementation-plan-2026-2030-quality-management-projects",
     ):
         assert source_id in source_map
-        assert source_map[source_id]["url"].startswith("https://www.city.saitama.lg.jp/")
+        assert source_map[source_id]["url"].startswith(
+            "https://www.city.saitama.lg.jp/"
+        )
         assert source_map[source_id]["confidence"] == "high"
