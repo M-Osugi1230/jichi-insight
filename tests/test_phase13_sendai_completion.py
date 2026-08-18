@@ -163,7 +163,7 @@ def test_sendai_completion_preserves_deferred_depth_without_inference():
     assert "deferred_depth" in boundary
 
 
-def test_sendai_completion_and_phase13_queue_are_consistent():
+def test_sendai_completion_and_phase13_queue_are_consistent_after_later_city_promotions():
     completion = load(COMPLETION_PATH)
     linkage = load(LINKAGE_PATH)
     queue = load(QUEUE_PATH)
@@ -178,10 +178,10 @@ def test_sendai_completion_and_phase13_queue_are_consistent():
     assert sendai["status"] == "reviewed_complete"
     assert queue["summary"]["reviewed_complete_count"] == statuses.count(
         "reviewed_complete"
-    ) == 1
+    ) == 2
     assert queue["summary"]["review_in_progress_count"] == statuses.count(
         "review_in_progress"
-    ) == 1
+    ) == 0
     assert queue["summary"]["pending_record_review_count"] == statuses.count(
         "pending_record_review"
     ) == 16

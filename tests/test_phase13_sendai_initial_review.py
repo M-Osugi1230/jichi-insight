@@ -156,7 +156,7 @@ def test_sendai_source_reported_self_evaluation_is_exact_and_bounded():
     ]
 
 
-def test_sendai_history_manifest_and_completion_contract_preserve_both_states():
+def test_sendai_history_manifest_and_completion_contract_preserve_both_states_after_sapporo():
     history = load(MANIFEST_PATH)
     completion = load(COMPLETION_PATH)
     queue = load(QUEUE_PATH)
@@ -181,10 +181,10 @@ def test_sendai_history_manifest_and_completion_contract_preserve_both_states():
     assert sendai["status"] == "reviewed_complete"
     assert queue["summary"]["reviewed_complete_count"] == statuses.count(
         "reviewed_complete"
-    ) == 1
+    ) == 2
     assert queue["summary"]["review_in_progress_count"] == statuses.count(
         "review_in_progress"
-    ) == 1
+    ) == 0
     assert queue["summary"]["pending_record_review_count"] == statuses.count(
         "pending_record_review"
     ) == 16

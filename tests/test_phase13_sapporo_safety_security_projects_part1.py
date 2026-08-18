@@ -73,7 +73,7 @@ def test_sapporo_safety_project_source_records_complete_field_review():
     assert source["unresolved_project_record_count"] == 0
 
 
-def test_sapporo_part1_remains_historical_inside_completed_599_identity_layer():
+def test_sapporo_part1_remains_historical_inside_declared_v1_completion():
     catalog = load(CATALOG_PATH)
     manifest = load(MANIFEST_PATH)
     facts = {fact["id"]: fact for fact in manifest["reviewed_facts"]}
@@ -89,4 +89,4 @@ def test_sapporo_part1_remains_historical_inside_completed_599_identity_layer():
     assert complete["main_project_record_count"] == 43
     assert complete["other_project_record_count"] == 27
     assert all_projects["value"] == 599
-    assert manifest["status"] == "review_in_progress"
+    assert manifest["status"] == "reviewed_at_declared_depth"

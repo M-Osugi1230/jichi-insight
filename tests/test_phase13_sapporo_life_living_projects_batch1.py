@@ -56,7 +56,7 @@ def test_batch1_evidence_remains_one_to_one():
     assert evidence["revision_history_crosscheck"]["batch1_intersection"] is False
 
 
-def test_current_life_living_state_is_complete_inside_599_identity_layer():
+def test_current_life_living_state_is_complete_inside_599_identity_layer_and_v1():
     execution = load(EXECUTION_PATH)
     index = load(SOURCE_INDEX_PATH)
     daily = next(
@@ -79,4 +79,4 @@ def test_current_life_living_state_is_complete_inside_599_identity_layer():
     )
     assert project_layer["state"] == "complete_final_identity_review"
     assert project_layer["reviewed_record_count"] == 599
-    assert readiness["current_status"] == "review_in_progress"
+    assert readiness["current_status"] == "reviewed_complete"

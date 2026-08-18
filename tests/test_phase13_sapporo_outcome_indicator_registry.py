@@ -120,14 +120,14 @@ def test_sapporo_prior_and_current_value_layers_are_both_complete_but_separate()
     assert "not Jichi Insight achievement judgments" in registry["quality_boundary"]
 
 
-def test_sapporo_manifest_records_both_outcome_value_layers_without_city_completion():
+def test_sapporo_manifest_records_both_outcome_value_layers_inside_declared_v1():
     manifest = load(MANIFEST_PATH)
     facts = {fact["id"]: fact for fact in manifest["reviewed_facts"]}
     identity = facts["outcome-indicator-identity-registry"]
     prior_values = facts["outcome-indicator-prior-values-2024-report"]
     current_values = facts["outcome-indicator-current-values-2025-report"]
 
-    assert manifest["status"] == "review_in_progress"
+    assert manifest["status"] == "reviewed_at_declared_depth"
     assert identity["value"] == 26
     assert identity["displayed_field_occurrences"] == 33
     assert identity["reposted_occurrences"] == 7
@@ -137,5 +137,4 @@ def test_sapporo_manifest_records_both_outcome_value_layers_without_city_complet
     assert current_values["reporting_year"] == 2025
     assert current_values["review_status"] == "reviewed"
     assert "すべてを2024年度値とは扱わない" in current_values["interpretation_boundary"]
-    assert any("599" in item for item in manifest["remaining_work"])
-    assert any("26" in item and "403" in item for item in manifest["remaining_work"])
+    assert any("成果指標" in item for item in manifest["deferred_extension_work"])

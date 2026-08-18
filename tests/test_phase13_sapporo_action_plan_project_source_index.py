@@ -141,11 +141,12 @@ def test_sapporo_project_source_index_keeps_separate_403_target_boundary_explici
     assert "403 annual-progress target items" in boundary
 
 
-def test_sapporo_manifest_keeps_city_in_progress_after_identity_completion():
+def test_sapporo_manifest_preserves_identity_layer_inside_declared_v1_completion():
     manifest = load(MANIFEST_PATH)
     facts = {fact["id"]: fact for fact in manifest["reviewed_facts"]}
 
-    assert manifest["status"] == "review_in_progress"
+    assert manifest["status"] == "reviewed_at_declared_depth"
+    assert manifest["completion_manifest_path"] == "data/catalog/sapporo_phase13_completion.json"
     assert facts["action-plan-project-source-index"]["value"] == 10
     assert facts["action-plan-safety-security-project-records-complete"]["value"] == 70
     complete = facts["action-plan-all-project-identities-complete"]

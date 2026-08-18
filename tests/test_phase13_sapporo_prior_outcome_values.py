@@ -150,7 +150,7 @@ def test_sapporo_prior_value_evidence_covers_exactly_the_26_unique_ids():
     assert set(evidence_ids) == {record["id"] for record in values}
 
 
-def test_sapporo_manifest_preserves_prior_layer_after_current_layer_completion():
+def test_sapporo_manifest_preserves_prior_layer_after_declared_v1_completion():
     manifest = load(MANIFEST_PATH)
     facts = {fact["id"]: fact for fact in manifest["reviewed_facts"]}
     prior = facts["outcome-indicator-prior-values-2024-report"]
@@ -171,5 +171,6 @@ def test_sapporo_manifest_preserves_prior_layer_after_current_layer_completion()
     assert current["evidence_path"] == (
         "data/evidence/sapporo_outcome_indicator_2025_report_values_evidence.json"
     )
-    assert "最新報告の26件は17上昇・8下降・1未集計" in manifest["quality_boundary"]
-    assert manifest["status"] == "review_in_progress"
+    assert "成果指標26件" in manifest["quality_boundary"]
+    assert "測定レイヤー12客観系/14自己申告系" in manifest["quality_boundary"]
+    assert manifest["status"] == "reviewed_at_declared_depth"

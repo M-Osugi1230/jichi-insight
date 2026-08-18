@@ -1,0 +1,87 @@
+{
+  "id": "sapporo-phase13-completion",
+  "phase": 13,
+  "status": "reviewed_complete",
+  "official_code": "011002",
+  "name_ja": "札幌市",
+  "completed_at": "2026-08-18",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "policy_review_manifest_path": "data/catalog/sapporo_phase13_policy_review_manifest.json",
+    "completion_readiness_path": "data/catalog/sapporo_phase13_completion_readiness.json",
+    "plan_review_path": "data/reviewed/sapporo-city/plan_review.json",
+    "source_catalog_path": "data/catalog/sapporo_policy_sources.json",
+    "action_plan_project_source_index_path": "data/catalog/sapporo_action_plan_project_source_index.json",
+    "outcome_indicator_registry_path": "data/catalog/sapporo_outcome_indicator_registry.json",
+    "outcome_measurement_registry_path": "data/catalog/sapporo_outcome_indicator_measurement_registry.json",
+    "target_universe_registry_path": "data/catalog/sapporo_principal_project_target_universe_registry.json",
+    "current_target_review_path": "data/catalog/sapporo_principal_project_target_2025_review_batch1.json",
+    "target_publication_boundary_audit_path": "data/catalog/sapporo_principal_project_target_publication_boundary_audit.json",
+    "historical_target_review_path": "data/catalog/sapporo_principal_project_target_2024_review.json",
+    "fiscal_records_path": "data/reviewed/sapporo-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/sapporo-city/evidence_packets.json",
+    "counts": {
+      "action_plan_project_identities": 599,
+      "action_plan_main_projects": 406,
+      "action_plan_other_projects": 193,
+      "outcome_indicators": 26,
+      "outcome_objective_or_administrative_lane": 12,
+      "outcome_self_report_lane": 14,
+      "principal_project_target_universe": 403,
+      "current_individual_target_statuses_reviewed": 8,
+      "current_individual_target_statuses_deferred_at_central_publication_boundary": 395,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "publication_boundary": {
+    "audit_path": "data/catalog/sapporo_principal_project_target_publication_boundary_audit.json",
+    "central_progress_publication_complete_aggregate_reviewed": true,
+    "central_progress_publication_complete_identity_status_table_published": false,
+    "all_named_current_statuses_in_central_progress_publication_reviewed": true,
+    "reviewed_named_current_status_count": 8,
+    "unresolved_identity_status_count": 395,
+    "unresolved_identity_statuses_required_for_v1_completion": false,
+    "aggregate_partition_must_not_be_distributed_to_unnamed_projects": true
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "action_plan_599_identity_review_complete": true,
+    "principal_target_403_membership_boundary_complete": true,
+    "principal_target_2025_complete_aggregate_reviewed": true,
+    "all_centrally_published_named_2025_target_statuses_reviewed": true,
+    "unpublished_target_labels_preserved_as_unresolved": true,
+    "outcome_26_measurement_lanes_separated": true,
+    "subjective_and_objective_outcomes_not_collapsed": true,
+    "fiscal_states_and_years_separate": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "principal-project-target-current-statuses-beyond-central-publication",
+      "status": "deferred_not_required_for_v1_completion",
+      "count": 395,
+      "boundary": "中央の2025年度進捗公表で個別名称と現況ラベルが示されない395件は未解決のまま保持する。担当局資料や行政評価からアクションプランの現況区分を推測しない。将来、個別ラベルを明示する公式資料が確認できた場合のみ追加レビューする。"
+    },
+    {
+      "id": "outcome-indicator-exact-instrument-provenance",
+      "status": "deferred_not_required_for_v1_completion",
+      "count": 14,
+      "boundary": "自己申告・認識・行動系14指標は測定レイヤー分離を完了済み。質問票や算出過程との値単位の完全な1対1出典追跡は追加品質深度として継続し、現行値の出典を推測しない。"
+    },
+    {
+      "id": "fiscal-detail-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "v1では計画事業費と進捗累計、一般会計予算・決算トップラインを役割・年度を分離して保持する。款項目別、補正、執行、個別事業費、契約、補助金との接続は別レビューとする。"
+    },
+    {
+      "id": "project-outcome-causal-assessment",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "599事業ID、403目標対象、26成果指標のレビューは政策効果の因果認定を意味しない。因果評価や他都市との比較可能性は別方法論レビューなしに追加しない。"
+    }
+  ],
+  "completion_boundary": "札幌市のPhase 13 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味する。Action Plan 2023の599事業ID（主要406・その他193）、成果指標26件とその測定レイヤー分離（客観・行政・統計系12、自己申告・認識・行動系14）、主要事業目標403件の対象境界、2025年度の公式集計38達成済み・356達成見込み・9達成困難見込み、中央進捗公表で個別名称と現況が示された8件、財政トップラインを公式ソースと証拠位置を保持してレビュー済みである。中央進捗公表に個別ラベルがない395件は未解決のままdeferred_depthへ保持し、38/356/9を個別事業へ配分しない。この完了は札幌市の全公開データの網羅、Jichi Insight独自の政策達成度、因果効果、他都市比較可能性またはランキングの認定を意味しない。"
+}

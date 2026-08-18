@@ -10,6 +10,7 @@ QUEUE_PATH = ROOT / "data/catalog/phase13_designated_city_review_queue.json"
 SCHEMA_PATH = ROOT / "schemas/phase13_designated_city_review_queue.schema.json"
 PHASE12_QUEUE_PATH = ROOT / "data/catalog/phase12_designated_city_execution_queue.json"
 SENDAI_COMPLETION_PATH = ROOT / "data/catalog/sendai_phase13_completion.json"
+SAPPORO_COMPLETION_PATH = ROOT / "data/catalog/sapporo_phase13_completion.json"
 
 NEWLY_ELIGIBLE_CODES = {"221007", "271403", "281000", "331007", "341002"}
 
@@ -64,7 +65,7 @@ def test_phase13_newly_eligible_five_cities_enter_as_pending_record_review():
     assert by_code["341002"]["sequence"] == 17
 
 
-def test_phase13_summary_is_derived_from_queue_contents_after_sendai_completion():
+def test_phase13_summary_is_derived_from_queue_contents_after_sapporo_completion():
     queue = load(QUEUE_PATH)
     statuses = [item["status"] for item in queue["execution_queue"]]
     summary = queue["summary"]
@@ -74,31 +75,29 @@ def test_phase13_summary_is_derived_from_queue_contents_after_sendai_completion(
     ) == 0
     assert summary["reviewed_complete_count"] == statuses.count(
         "reviewed_complete"
-    ) == 1
+    ) == 2
     assert summary["review_in_progress_count"] == statuses.count(
         "review_in_progress"
-    ) == 1
+    ) == 0
     assert summary["pending_record_review_count"] == statuses.count(
         "pending_record_review"
     ) == 16
 
 
-def test_phase13_sendai_is_first_reviewed_complete_city_and_sapporo_remains_active():
+def test_phase13_sapporo_and_sendai_are_reviewed_complete_and_queue_advances():
     queue = load(QUEUE_PATH)
-    first = queue["execution_queue"][0]
-    sendai = next(
-        item for item in queue["execution_queue"] if item["official_code"] == "041009"
-    )
-    completion = load(SENDAI_COMPLETION_PATH)
+    by_code = {item["official_code"]: item for item in queue["execution_queue"]}
+    sendai_completion = load(SENDAI_COMPLETION_PATH)
+    sapporo_completion = load(SAPPORO_COMPLETION_PATH)
 
-    assert first["sequence"] == 1
-    assert first["official_code"] == "011002"
-    assert first["status"] == "review_in_progress"
-    assert sendai["sequence"] == 2
-    assert sendai["status"] == "reviewed_complete"
-    assert completion["official_code"] == sendai["official_code"]
-    assert completion["status"] == sendai["status"]
-    assert queue["summary"]["next_official_code"] == "011002"
+    assert by_code["011002"]["sequence"] == 1
+    assert by_code["011002"]["status"] == "reviewed_complete"
+    assert by_code["041009"]["sequence"] == 2
+    assert by_code["041009"]["status"] == "reviewed_complete"
+    assert sapporo_completion["status"] == by_code["011002"]["status"]
+    assert sendai_completion["status"] == by_code["041009"]["status"]
+    assert by_code["111007"]["status"] == "pending_record_review"
+    assert queue["summary"]["next_official_code"] == "111007"
 
 
 def test_phase13_quality_gate_keeps_missing_records_explicit_without_downgrading_inventory():

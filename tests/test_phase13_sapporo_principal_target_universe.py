@@ -85,7 +85,7 @@ def test_target_membership_boundary_does_not_infer_current_status():
     assert "current-status coverage at 8/403" in registry["quality_boundary"]
 
 
-def test_readiness_keeps_status_review_separate_from_target_universe_completion():
+def test_readiness_completes_v1_without_inventing_395_current_statuses():
     readiness = load(READINESS)
     gate = next(
         item
@@ -96,4 +96,6 @@ def test_readiness_keeps_status_review_separate_from_target_universe_completion(
     assert gate["required_scope"] == 403
     assert gate["reviewed_scope"] == 8
     assert gate["remaining_scope"] == 395
-    assert readiness["current_status"] == "review_in_progress"
+    assert gate["remaining_scope_for_v1_completion"] == 0
+    assert gate["state"] == "complete_to_central_publication_boundary_8_named_395_deferred"
+    assert readiness["current_status"] == "reviewed_complete"

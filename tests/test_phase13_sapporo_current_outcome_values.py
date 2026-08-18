@@ -10,6 +10,7 @@ EVIDENCE_PATH = ROOT / "data/evidence/sapporo_outcome_indicator_2025_report_valu
 REGISTRY_PATH = ROOT / "data/catalog/sapporo_outcome_indicator_registry.json"
 MANIFEST_PATH = ROOT / "data/catalog/sapporo_phase13_policy_review_manifest.json"
 QUEUE_PATH = ROOT / "data/catalog/phase13_designated_city_review_queue.json"
+COMPLETION_PATH = ROOT / "data/catalog/sapporo_phase13_completion.json"
 
 
 def load(path: Path):
@@ -190,11 +191,12 @@ def test_sapporo_current_value_page_evidence_covers_exactly_26_non_repost_ids():
     assert len(repost["reposted_indicator_ids"]) == 7
 
 
-def test_sapporo_current_outcome_completion_does_not_promote_city_completion():
+def test_sapporo_current_outcome_layer_remains_distinct_inside_declared_v1_completion():
     manifest = load(MANIFEST_PATH)
     facts = {fact["id"]: fact for fact in manifest["reviewed_facts"]}
     current = facts["outcome-indicator-current-values-2025-report"]
     queue = load(QUEUE_PATH)
+    completion = load(COMPLETION_PATH)
     sapporo = next(
         item for item in queue["execution_queue"] if item["official_code"] == "011002"
     )
@@ -206,7 +208,8 @@ def test_sapporo_current_outcome_completion_does_not_promote_city_completion():
     assert current["evidence_path"] == (
         "data/evidence/sapporo_outcome_indicator_2025_report_values_evidence.json"
     )
-    assert manifest["status"] == "review_in_progress"
-    assert sapporo["status"] == "review_in_progress"
-    assert any("599" in item for item in manifest["remaining_work"])
-    assert any("403" in item for item in manifest["remaining_work"])
+    assert manifest["status"] == "reviewed_at_declared_depth"
+    assert sapporo["status"] == "reviewed_complete"
+    assert completion["status"] == "reviewed_complete"
+    assert completion["completion_depth"] == "declared_review_package_v1"
+    assert any("395件" in item for item in manifest["deferred_extension_work"])

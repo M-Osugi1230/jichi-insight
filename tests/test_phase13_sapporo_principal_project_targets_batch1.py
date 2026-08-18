@@ -123,7 +123,7 @@ def test_evidence_explicitly_blocks_aggregate_to_individual_inference():
     assert "Do not assign" in boundary["rule"]
 
 
-def test_readiness_advances_only_to_8_of_403_and_keeps_city_in_progress():
+def test_readiness_completes_v1_at_publication_boundary_without_inventing_395_labels():
     readiness = load(READINESS)
     gate = next(
         item
@@ -139,7 +139,10 @@ def test_readiness_advances_only_to_8_of_403_and_keeps_city_in_progress():
     assert gate["required_scope"] == 403
     assert gate["reviewed_scope"] == 8
     assert gate["remaining_scope"] == 395
-    assert gate["state"] == "in_progress_8_of_403_current_individual_statuses"
+    assert gate["remaining_scope_for_v1_completion"] == 0
+    assert gate["state"] == "complete_to_central_publication_boundary_8_named_395_deferred"
+    assert layer["state"] == "complete_to_central_publication_boundary"
     assert layer["reviewed_current_status_record_count"] == 8
-    assert layer["remaining_current_status_record_count"] == 395
-    assert readiness["current_status"] == "review_in_progress"
+    assert layer["unresolved_current_status_record_count"] == 395
+    assert layer["remaining_required_for_v1_completion_count"] == 0
+    assert readiness["current_status"] == "reviewed_complete"

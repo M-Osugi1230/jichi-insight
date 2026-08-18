@@ -1,0 +1,67 @@
+{
+  "id": "phase13-sapporo-principal-project-target-publication-boundary-audit",
+  "phase": 13,
+  "official_code": "011002",
+  "name_ja": "札幌市",
+  "audited_at": "2026-08-18",
+  "status": "central_publication_boundary_review_complete",
+  "scope": "2025年度アクションプラン2023進捗報告における主な事業403項目の現況ラベル公開深度",
+  "central_sources": [
+    {
+      "role": "official_progress_landing_page",
+      "title": "計画の進捗報告（第2次札幌市まちづくり戦略ビジョン・アクションプラン2023）",
+      "url": "https://www.city.sapporo.jp/chosei/actionplan2023-shinchoku.html",
+      "reviewed_fact": "主な事業403項目のうち394項目（97.8%）が事業目標を達成見込みと公表"
+    },
+    {
+      "role": "official_2025_progress_summary",
+      "title": "【総括資料】2025年度AP2023進捗報告（2024年度実績）",
+      "url": "https://www.city.sapporo.jp/chosei/documents/ap2023_houkoku2025_soukatsusyuusei.pdf",
+      "pdf_page_count": 5,
+      "aggregate_page_index_0_based": 1,
+      "named_example_page_index_0_based": 2,
+      "reviewed_fact": "403項目の38達成済み・356達成見込み・9達成困難見込みの集計と、8件の個別例を公表"
+    }
+  ],
+  "target_universe": {
+    "final_main_project_count": 406,
+    "without_configured_target_count": 3,
+    "target_record_count": 403,
+    "target_universe_registry_path": "data/catalog/sapporo_principal_project_target_universe_registry.json"
+  },
+  "current_2025_publication_depth": {
+    "aggregate_partition": {
+      "already_achieved_count": 38,
+      "achievement_expected_count": 356,
+      "achievement_difficult_expected_count": 9,
+      "expected_or_achieved_count": 394,
+      "expected_or_achieved_ratio_percent": 97.8
+    },
+    "named_individual_status_count": 8,
+    "named_already_achieved_count": 4,
+    "named_achievement_difficult_count": 4,
+    "named_achievement_expected_count": 0,
+    "unnamed_current_status_count": 395,
+    "complete_identity_level_status_table_in_central_progress_publication": false,
+    "review_registry_path": "data/catalog/sapporo_principal_project_target_2025_review_batch1.json",
+    "evidence_path": "data/evidence/sapporo_principal_project_target_2025_review_batch1_evidence.json"
+  },
+  "supplementary_official_source_boundary": {
+    "status": "separate_evidence_roles_not_interchangeable",
+    "rule": "担当局の行政評価、個別計画、議会資料等には事業ごとの関連実績が存在し得るが、アクションプラン2023の2025年度進捗報告が付与する403項目の公式現況ラベルと同一の証拠役割とはみなさない。別資料の実績や自己評価から、未公表395件の達成済み・達成見込み・達成困難見込みを逆算しない。"
+  },
+  "completion_decision": {
+    "declared_v1_target_review_depth": "target_universe_plus_complete_aggregate_plus_all_named_current_statuses_in_central_publication",
+    "required_for_v1_completion": {
+      "target_universe_membership_reviewed": true,
+      "complete_official_aggregate_reviewed": true,
+      "all_named_current_statuses_in_central_publication_reviewed": true,
+      "nonpublished_identity_labels_preserved_as_unresolved": true,
+      "aggregate_counts_not_distributed_to_unnamed_projects": true
+    },
+    "remaining_required_for_v1_completion_count": 0,
+    "deferred_identity_status_count": 395,
+    "deferred_status": "deferred_not_required_for_v1_completion_until_identity_level_official_status_is_published_or_separately_evidenced"
+  },
+  "quality_boundary": "This audit completes only the central 2025 publication-boundary review. It does not claim that no Sapporo City document anywhere contains relevant project-level facts, and it does not convert supplementary administrative evaluations into Action Plan target-status labels. Exactly eight identity-level 2025 target statuses are Reviewed; 395 remain unresolved at that evidence role. The 38/356/9 aggregate partition must never be distributed across unnamed projects."
+}
