@@ -3,21 +3,24 @@
   "official_code": "111007",
   "name_ja": "さいたま市",
   "plan_name": "総合振興計画実施計画（令和8年度～令和12年度）",
-  "plan_period": {
-    "start_fiscal_year": 2026,
-    "end_fiscal_year": 2030
-  },
-  "status": "project_universe_reviewed_identity_transcription_in_progress",
+  "plan_period": {"start_fiscal_year": 2026, "end_fiscal_year": 2030},
+  "status": "project_identity_review_complete_258_of_258",
   "source_ids": [
     "saitama-implementation-plan-2026-2030-policy-projects",
     "saitama-implementation-plan-2026-2030-quality-management-projects"
+  ],
+  "identity_record_paths": [
+    "data/catalog/saitama_current_project_identities_policy_chapters01_04.json",
+    "data/catalog/saitama_current_project_identities_policy_chapters05_08.json",
+    "data/catalog/saitama_current_project_identities_policy_chapters09_11.json",
+    "data/catalog/saitama_current_project_identities_quality_city_management.json"
   ],
   "project_universe": {
     "current_project_code_count": 258,
     "policy_fields_project_count": 210,
     "quality_city_management_project_count": 48,
-    "identity_records_reviewed": 48,
-    "identity_records_remaining": 210
+    "identity_records_reviewed": 258,
+    "identity_records_remaining": 0
   },
   "policy_fields_chapter_counts": [
     {"chapter_code":"01","chapter_name":"コミュニティ・人権・多文化共生","project_count":12},
@@ -40,9 +43,11 @@
     "policy_fields_sum": 210,
     "quality_city_management_sum": 48,
     "total_sum": 258,
+    "all_identity_record_count": 258,
+    "all_project_codes_unique": true,
     "code_namespaces_disjoint": true,
     "quality_city_management_identity_coverage_complete": true,
-    "policy_fields_identity_coverage_complete": false
+    "policy_fields_identity_coverage_complete": true
   },
   "historical_boundary": {
     "reporting_fiscal_year": 2024,
@@ -52,6 +57,6 @@
     "linkage_status": "not_reviewed",
     "rule": "370延べ事業・299実事業は旧2021～2025実施計画サイクルの実績母集団であり、現行2026～2030実施計画の258事業コードと同一視しない。名称一致だけで旧新事業を接続しない。"
   },
-  "quality_boundary": "258は現行実施計画第4編の事業一覧に掲載された事業コードの母集団。現時点で名前付きID転記を完了したのは『Ⅱ 質の高い都市経営の実現』48件であり、『Ⅰ 各分野の施策と事業』210件は母集団・章別件数のみレビュー済み。258を政策達成数、実績件数、予算事業数、旧計画の299実事業または370延べ事業へ変換しない。",
-  "next_action": "『Ⅰ 各分野の施策と事業』210件を公式事業一覧から名前付き事業IDとして全件転記し、258/258 identity coverageを完成させる。"
+  "quality_boundary": "258は現行実施計画第4編の事業一覧に掲載された258個の一意な事業コードと事業名のidentity母集団。258/258の名前付きIDレビューは完了したが、これは政策達成数、実績件数、予算事業数、旧計画の299実事業または370延べ事業を意味しない。個別目標指標・担当課・年度目標・財政効果は別レイヤー。",
+  "next_action": "現行計画の成果指標を全件列挙し、公式定義に従って主観指標・客観指標を分離する。並行して258事業の目標指標レビューをバッチ化する。"
 }
