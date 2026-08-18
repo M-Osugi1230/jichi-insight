@@ -52,7 +52,11 @@ def test_saitama_chapter06_has_exactly_49_named_target_identities():
 
     assert len(identities) == len(set(identities)) == 49
     assert all(name.strip() for _, name in identities)
-    assert [load(path)["target_indicator_identity_count"] for path in (CH6A, CH6B, CH6C)] == [16, 17, 16]
+    shard_counts = [
+        load(path)["target_indicator_identity_count"]
+        for path in (CH6A, CH6B, CH6C)
+    ]
+    assert shard_counts == [16, 17, 16]
 
 
 def test_saitama_chapter06_measure_partition_reconciles_to_49():
