@@ -96,7 +96,7 @@ def test_saitama_chapter10_departments_locators_and_evidence_are_explicit():
     assert sum(row["target_identity_count"] for row in evidence["evidence"]) == 41
 
 
-def test_saitama_manifest_progress_reaches_185_projects_and_405_targets():
+def test_saitama_manifest_retains_chapter10_completion_as_review_advances():
     manifest = load(MANIFEST)
     fact = next(
         row
@@ -104,9 +104,9 @@ def test_saitama_manifest_progress_reaches_185_projects_and_405_targets():
         if row["id"] == "saitama-current-project-identity-universe"
     )
 
-    assert fact["target_identity_projects_reviewed"] == 185
-    assert fact["target_identity_projects_remaining"] == 73
-    assert fact["observed_target_indicator_identity_count"] == 405
+    assert fact["target_identity_projects_reviewed"] >= 185
+    assert fact["target_identity_projects_remaining"] <= 73
+    assert fact["observed_target_indicator_identity_count"] >= 405
     assert fact["chapter10_target_identities_values_pending"] == 41
     assert fact["target_value_projects_reviewed"] == 12
     assert fact["reviewed_target_value_record_count"] == 22
