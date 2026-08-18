@@ -200,7 +200,7 @@ def test_evidence_groups_partition_same_26_ids():
     assert set(grouped_ids) == registry_ids
 
 
-def test_citizen_separation_gate_complete_while_target_gate_remains_open():
+def test_citizen_separation_and_publication_boundary_gates_complete_v1():
     readiness = load(READINESS)
     citizen_gate = next(
         gate
@@ -223,4 +223,6 @@ def test_citizen_separation_gate_complete_while_target_gate_remains_open():
 
     assert target_gate["reviewed_scope"] == 8
     assert target_gate["remaining_scope"] == 395
-    assert readiness["current_status"] == "review_in_progress"
+    assert target_gate["remaining_scope_for_v1_completion"] == 0
+    assert target_gate["state"] == "complete_to_central_publication_boundary_8_named_395_deferred"
+    assert readiness["current_status"] == "reviewed_complete"
