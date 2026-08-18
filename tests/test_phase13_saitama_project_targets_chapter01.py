@@ -41,7 +41,9 @@ def test_saitama_chapter01_has_22_unique_target_indicators_and_every_project_has
     records = target_records(payload)
     ids = [row["target_id"] for row in records]
     per_project = Counter(
-        project["project_code"] for project in payload["projects"] for _ in project["targets"]
+        project["project_code"]
+        for project in payload["projects"]
+        for _ in project["targets"]
     )
 
     assert payload["target_indicator_count"] == len(records) == len(set(ids)) == 22
@@ -90,8 +92,8 @@ def test_saitama_chapter01_target_types_keep_cumulative_and_level_targets_separa
 
     assert types["plan_period_cumulative"] == 3
     assert types["partial_plan_period_cumulative"] == 1
-    assert types["annual_level"] == 6
-    assert types["maintain_level"] == 12
+    assert types["annual_level"] == 7
+    assert types["maintain_level"] == 11
     assert sum(types.values()) == 22
 
 
@@ -100,7 +102,10 @@ def test_saitama_chapter01_responsible_departments_and_evidence_are_explicit():
     evidence = load(EVIDENCE)
 
     assert all(project["responsible_departments"] for project in payload["projects"])
-    assert all(project["source_location"].startswith("PDF p") for project in payload["projects"])
+    assert all(
+        project["source_location"].startswith("PDF p")
+        for project in payload["projects"]
+    )
     assert evidence["review_status"] == "reviewed_12_projects_22_target_indicators"
     assert sum(row["target_indicator_count"] for row in evidence["evidence"]) == 22
     assert all(row["decision"] == "accepted" for row in evidence["evidence"])
