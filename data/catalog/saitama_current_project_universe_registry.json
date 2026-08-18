@@ -1,0 +1,57 @@
+{
+  "id": "saitama-current-implementation-project-universe",
+  "official_code": "111007",
+  "name_ja": "さいたま市",
+  "plan_name": "総合振興計画実施計画（令和8年度～令和12年度）",
+  "plan_period": {
+    "start_fiscal_year": 2026,
+    "end_fiscal_year": 2030
+  },
+  "status": "project_universe_reviewed_identity_transcription_in_progress",
+  "source_ids": [
+    "saitama-implementation-plan-2026-2030-policy-projects",
+    "saitama-implementation-plan-2026-2030-quality-management-projects"
+  ],
+  "project_universe": {
+    "current_project_code_count": 258,
+    "policy_fields_project_count": 210,
+    "quality_city_management_project_count": 48,
+    "identity_records_reviewed": 48,
+    "identity_records_remaining": 210
+  },
+  "policy_fields_chapter_counts": [
+    {"chapter_code":"01","chapter_name":"コミュニティ・人権・多文化共生","project_count":12},
+    {"chapter_code":"02","chapter_name":"環境","project_count":19},
+    {"chapter_code":"03","chapter_name":"健康・スポーツ","project_count":12},
+    {"chapter_code":"04","chapter_name":"教育","project_count":25},
+    {"chapter_code":"05","chapter_name":"生活安全","project_count":9},
+    {"chapter_code":"06","chapter_name":"福祉","project_count":22},
+    {"chapter_code":"07","chapter_name":"子ども・子育て","project_count":17},
+    {"chapter_code":"08","chapter_name":"文化","project_count":7},
+    {"chapter_code":"09","chapter_name":"都市インフラ","project_count":44},
+    {"chapter_code":"10","chapter_name":"防災・消防","project_count":18},
+    {"chapter_code":"11","chapter_name":"経済・産業","project_count":25}
+  ],
+  "quality_city_management_counts": [
+    {"chapter_code":"51","chapter_name":"市民協働・公民連携","project_count":12},
+    {"chapter_code":"52","chapter_name":"高品質経営市役所","project_count":36}
+  ],
+  "structural_reconciliation": {
+    "policy_fields_sum": 210,
+    "quality_city_management_sum": 48,
+    "total_sum": 258,
+    "code_namespaces_disjoint": true,
+    "quality_city_management_identity_coverage_complete": true,
+    "policy_fields_identity_coverage_complete": false
+  },
+  "historical_boundary": {
+    "reporting_fiscal_year": 2024,
+    "old_cycle_displayed_project_occurrences": 370,
+    "old_cycle_unique_projects": 299,
+    "current_plan_project_codes": 258,
+    "linkage_status": "not_reviewed",
+    "rule": "370延べ事業・299実事業は旧2021～2025実施計画サイクルの実績母集団であり、現行2026～2030実施計画の258事業コードと同一視しない。名称一致だけで旧新事業を接続しない。"
+  },
+  "quality_boundary": "258は現行実施計画第4編の事業一覧に掲載された事業コードの母集団。現時点で名前付きID転記を完了したのは『Ⅱ 質の高い都市経営の実現』48件であり、『Ⅰ 各分野の施策と事業』210件は母集団・章別件数のみレビュー済み。258を政策達成数、実績件数、予算事業数、旧計画の299実事業または370延べ事業へ変換しない。",
+  "next_action": "『Ⅰ 各分野の施策と事業』210件を公式事業一覧から名前付き事業IDとして全件転記し、258/258 identity coverageを完成させる。"
+}
