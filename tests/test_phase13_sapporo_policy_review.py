@@ -9,6 +9,7 @@ SOURCE_PATH = ROOT / "data/catalog/sapporo_policy_sources.json"
 INVENTORY_PATH = ROOT / "data/indexed/sapporo-city/source_inventory.json"
 QUEUE_PATH = ROOT / "data/catalog/phase13_designated_city_review_queue.json"
 READINESS_PATH = ROOT / "data/catalog/sapporo_phase13_completion_readiness.json"
+COMPLETION_PATH = ROOT / "data/catalog/sapporo_phase13_completion.json"
 
 
 def load(path: Path):
@@ -25,7 +26,8 @@ def test_sapporo_policy_review_uses_reviewed_official_sources():
     }
 
     assert manifest["official_code"] == "011002"
-    assert manifest["status"] == "review_in_progress"
+    assert manifest["status"] == "reviewed_at_declared_depth"
+    assert manifest["completion_manifest_path"] == "data/catalog/sapporo_phase13_completion.json"
     assert manifest_source_ids.issubset(source_map)
     assert fact_source_ids.issubset(source_map)
     assert all(record["organization"] == "札幌市" for record in sources)
@@ -90,15 +92,33 @@ def test_sapporo_action_plan_reviewed_facts_are_exact_and_bounded():
     assert outcomes["denominator"] == 26
     assert outcomes["reported_ratio_percent"] == 65.4
 
+    measurement = facts["outcome-indicator-measurement-separation"]
+    assert measurement["value"] == 26
+    assert measurement["objective_lane_count"] == 12
+    assert measurement["self_report_lane_count"] == 14
+
     current_values = facts["outcome-indicator-current-values-2025-report"]
     assert current_values["value"] == 26
     assert current_values["reporting_year"] == 2025
+
+    universe = facts["principal-project-target-universe"]
+    assert universe["value"] == 403
+    assert universe["final_main_project_count"] == 406
+    assert universe["without_configured_target_count"] == 3
 
     targets = facts["progress-project-targets"]
     assert targets["numerator"] == 394
     assert targets["denominator"] == 403
     assert targets["reported_ratio_percent"] == 97.8
-    assert targets["review_status"] == "reviewed_aggregate_only"
+    assert targets["aggregate_already_achieved_count"] == 38
+    assert targets["aggregate_achievement_expected_count"] == 356
+    assert targets["aggregate_achievement_difficult_expected_count"] == 9
+    assert targets["review_status"] == "reviewed_complete_aggregate"
+
+    named = facts["progress-project-target-named-current-statuses"]
+    assert named["value"] == 8
+    assert named["unresolved_current_status_count"] == 395
+    assert named["review_status"] == "reviewed_all_named_examples_in_central_publication"
 
     costs = facts["progress-project-cost"]
     assert costs["value"] == 998_300_000_000
@@ -117,13 +137,14 @@ def test_sapporo_inventory_now_resolves_action_plan_canonical_route():
     assert progress["status"] == "official_landing_verified"
 
 
-def test_sapporo_action_plan_identity_gate_is_complete_but_city_remains_in_progress():
+def test_sapporo_v1_completion_keeps_395_target_statuses_unresolved():
     queue = load(QUEUE_PATH)
     sapporo = next(
         item for item in queue["execution_queue"] if item["official_code"] == "011002"
     )
     manifest = load(MANIFEST_PATH)
     readiness = load(READINESS_PATH)
+    completion = load(COMPLETION_PATH)
     identity_gate = next(
         item
         for item in readiness["blocking_gates"]
@@ -135,13 +156,15 @@ def test_sapporo_action_plan_identity_gate_is_complete_but_city_remains_in_progr
         if item["id"] == "principal-project-target-records"
     )
 
-    assert sapporo["status"] == "review_in_progress"
-    assert manifest["status"] == "review_in_progress"
+    assert sapporo["status"] == "reviewed_complete"
+    assert manifest["status"] == "reviewed_at_declared_depth"
+    assert completion["status"] == "reviewed_complete"
     assert identity_gate["state"] == "complete_599_of_599_final_identity_review"
     assert identity_gate["reviewed_scope"] == 599
     assert identity_gate["remaining_scope"] == 0
-    assert target_gate["state"] == "in_progress_8_of_403_current_individual_statuses"
+    assert target_gate["state"] == "complete_to_central_publication_boundary_8_named_395_deferred"
     assert target_gate["required_scope"] == 403
     assert target_gate["reviewed_scope"] == 8
     assert target_gate["remaining_scope"] == 395
-    assert readiness["current_status"] == "review_in_progress"
+    assert target_gate["remaining_scope_for_v1_completion"] == 0
+    assert readiness["current_status"] == "reviewed_complete"
