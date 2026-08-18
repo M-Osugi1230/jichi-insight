@@ -96,7 +96,8 @@ def test_saitama_current_and_historical_implementation_cycles_are_separate():
     assert current["evidence_role"] == "current_implementation_layer"
     assert prior["evidence_role"] == "historical_implementation_layer"
     assert progress["evidence_role"] == "historical_annual_progress_scope"
-    assert "2024実績" in current["review_note"]
+    assert "2024年度実績" in current["review_note"]
+    assert "新計画の実績として扱わない" in current["review_note"]
     assert "現行2026～2030" in prior["review_note"]
 
 
@@ -157,7 +158,7 @@ def test_saitama_2024_measure_and_kpi_aggregates_preserve_source_boundaries():
         "not_characterized_in_landing_aggregate": 3,
     }
     assert sum(kpi.values()) == 40
-    assert "推測しない" in kpis["review_note"]
+    assert "公式個票確認なしに割り当てない" in kpis["review_note"]
 
 
 def test_saitama_current_measurement_methodology_separates_subjective_and_objective():
