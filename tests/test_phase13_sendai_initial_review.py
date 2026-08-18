@@ -52,7 +52,10 @@ def test_sendai_reviewed_sources_are_official_and_declared_by_municipality():
     assert len(source_map) == 8
     assert set(municipality["sources"]) == set(source_map)
     assert all(record["organization"] == "仙台市" for record in source_records)
-    assert all(record["url"].startswith("https://www.city.sendai.jp/") for record in source_records)
+    assert all(
+        record["url"].startswith("https://www.city.sendai.jp/")
+        for record in source_records
+    )
     assert all(record["confidence"] == "high" for record in source_records)
     assert source_map["sendai-city-progress-2025-page"]["review_status"] == (
         "reviewed_aggregate_and_methodology"
@@ -156,13 +159,11 @@ def test_sendai_source_reported_self_evaluation_is_exact_and_bounded():
     ]
 
 
-def test_sendai_history_manifest_and_completion_contract_preserve_both_states_after_sapporo():
+def test_sendai_history_and_completion_stay_stable_while_saitama_review_starts():
     history = load(MANIFEST_PATH)
     completion = load(COMPLETION_PATH)
     queue = load(QUEUE_PATH)
-    sendai = next(
-        item for item in queue["execution_queue"] if item["official_code"] == "041009"
-    )
+    by_code = {item["official_code"]: item for item in queue["execution_queue"]}
     statuses = [item["status"] for item in queue["execution_queue"]]
     facts = {fact["id"]: fact for fact in history["reviewed_facts"]}
     challenge_batches = [
@@ -178,16 +179,17 @@ def test_sendai_history_manifest_and_completion_contract_preserve_both_states_af
         "data/catalog/sendai_phase13_review_manifest.json"
     )
     assert completion["status"] == "reviewed_complete"
-    assert sendai["status"] == "reviewed_complete"
+    assert by_code["041009"]["status"] == "reviewed_complete"
+    assert by_code["111007"]["status"] == "review_in_progress"
     assert queue["summary"]["reviewed_complete_count"] == statuses.count(
         "reviewed_complete"
     ) == 2
     assert queue["summary"]["review_in_progress_count"] == statuses.count(
         "review_in_progress"
-    ) == 0
+    ) == 1
     assert queue["summary"]["pending_record_review_count"] == statuses.count(
         "pending_record_review"
-    ) == 16
+    ) == 15
     assert facts["sendai-2026-general-account-initial-budget"]["value"] == (
         730_600_000_000
     )
