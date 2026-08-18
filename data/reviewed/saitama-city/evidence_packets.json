@@ -1,0 +1,53 @@
+[
+  {
+    "id": "evidence-saitama-city-2026-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-111007-fiscal-2026-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算額は7,160億円。",
+        "source_ids": ["saitama-policy-statement-2026", "saitama-budget-2026"],
+        "location_note": "令和8年度施政方針本文の当初予算総額記載と、令和8年度当初予算ページの2026年3月12日原案どおり可決注記。",
+        "decision": "accepted",
+        "review_note": "7,160億円を円換算。補正後予算、執行額、決算額とは別状態として保存する。"
+      }
+    ],
+    "open_questions": ["今後の補正予算はinitial_budgetを上書きせずrevised_budgetとして別記録で接続する。"],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-saitama-city-2024-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-111007-fiscal-2024-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計歳入決算額は7,258億70百万円。",
+        "source_ids": ["saitama-settlement-2024-overview"],
+        "location_note": "令和6年度決算概況について > 総括。",
+        "decision": "accepted",
+        "review_note": "7,258億70百万円を725,870,000,000円として保存。特別会計歳入決算総額3,309億67百万円とは別。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-saitama-city-2024-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-111007-fiscal-2024-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計歳出決算額は7,167億54百万円。",
+        "source_ids": ["saitama-settlement-2024-overview"],
+        "location_note": "令和6年度決算概況について > 総括。",
+        "decision": "accepted",
+        "review_note": "7,167億54百万円を716,754,000,000円として保存。特別会計歳出決算総額3,277億72百万円とは別。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]
