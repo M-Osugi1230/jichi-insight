@@ -53,11 +53,14 @@ def test_phase13_has_no_source_inventory_blocks_after_phase12_completion():
     assert phase13["summary"]["blocked_source_inventory_count"] == 0
 
 
-def test_phase13_newly_eligible_five_cities_enter_as_pending_record_review():
+def test_phase13_newly_eligible_five_cities_remain_queued():
     phase13 = load(QUEUE_PATH)
     by_code = {item["official_code"]: item for item in phase13["execution_queue"]}
     assert set(by_code) >= NEWLY_ELIGIBLE_CODES
-    assert all(by_code[code]["status"] == "pending_record_review" for code in NEWLY_ELIGIBLE_CODES)
+    assert all(
+        by_code[code]["status"] == "pending_record_review"
+        for code in NEWLY_ELIGIBLE_CODES
+    )
     assert by_code["221007"]["sequence"] == 9
     assert by_code["271403"]["sequence"] == 14
     assert by_code["281000"]["sequence"] == 15
@@ -65,7 +68,7 @@ def test_phase13_newly_eligible_five_cities_enter_as_pending_record_review():
     assert by_code["341002"]["sequence"] == 17
 
 
-def test_phase13_summary_is_derived_from_queue_contents_after_sapporo_completion():
+def test_phase13_summary_is_derived_from_queue_contents():
     queue = load(QUEUE_PATH)
     statuses = [item["status"] for item in queue["execution_queue"]]
     summary = queue["summary"]
@@ -73,18 +76,20 @@ def test_phase13_summary_is_derived_from_queue_contents_after_sapporo_completion
     assert summary["blocked_source_inventory_count"] == len(
         queue["blocked_source_inventories"]
     ) == 0
-    assert summary["reviewed_complete_count"] == statuses.count(
-        "reviewed_complete"
-    ) == 2
-    assert summary["review_in_progress_count"] == statuses.count(
-        "review_in_progress"
-    ) == 0
+    assert summary["reviewed_complete_count"] == statuses.count("reviewed_complete")
+    assert summary["review_in_progress_count"] == statuses.count("review_in_progress")
     assert summary["pending_record_review_count"] == statuses.count(
         "pending_record_review"
-    ) == 16
+    )
+    assert (
+        summary["reviewed_complete_count"]
+        + summary["review_in_progress_count"]
+        + summary["pending_record_review_count"]
+        == 18
+    )
 
 
-def test_phase13_sapporo_and_sendai_are_reviewed_complete_and_queue_advances():
+def test_phase13_sapporo_sendai_complete_and_saitama_in_progress():
     queue = load(QUEUE_PATH)
     by_code = {item["official_code"]: item for item in queue["execution_queue"]}
     sendai_completion = load(SENDAI_COMPLETION_PATH)
@@ -96,7 +101,11 @@ def test_phase13_sapporo_and_sendai_are_reviewed_complete_and_queue_advances():
     assert by_code["041009"]["status"] == "reviewed_complete"
     assert sapporo_completion["status"] == by_code["011002"]["status"]
     assert sendai_completion["status"] == by_code["041009"]["status"]
-    assert by_code["111007"]["status"] == "pending_record_review"
+    assert by_code["111007"]["sequence"] == 3
+    assert by_code["111007"]["status"] == "review_in_progress"
+    assert queue["summary"]["reviewed_complete_count"] == 2
+    assert queue["summary"]["review_in_progress_count"] == 1
+    assert queue["summary"]["pending_record_review_count"] == 15
     assert queue["summary"]["next_official_code"] == "111007"
 
 
