@@ -1,0 +1,47 @@
+[
+  {
+    "id":"evidence-chiba-city-2026-total-revenue",
+    "subject_type":"fiscal_record",
+    "subject_id":"jp-local-121002-fiscal-2026-total-revenue",
+    "claims":[{
+      "field":"amount_yen",
+      "statement":"令和8年度一般会計当初予算は5,417億円で、議案15号は原案可決。",
+      "source_ids":["chiba-budget-2026","chiba-budget-2026-enactment"],
+      "location_note":"令和8年第1回定例会提案理由の当初予算規模、および市長提出議案議決結果の議案15号（R8.3.17、原案可決）。",
+      "decision":"accepted",
+      "review_note":"5,417億円を541,700,000,000円として保存。補正後予算・執行・決算とは別状態。"
+    }],
+    "open_questions":["今後の補正予算はinitial_budgetを上書きせず別ステージで接続する。"],
+    "review_status":"reviewed"
+  },
+  {
+    "id":"evidence-chiba-city-2024-total-revenue",
+    "subject_type":"fiscal_record",
+    "subject_id":"jp-local-121002-fiscal-2024-total-revenue",
+    "claims":[{
+      "field":"amount_yen",
+      "statement":"令和6年度一般会計歳入総額は5,294億7,000万円。",
+      "source_ids":["chiba-settlement-2024-overview"],
+      "location_note":"令和6年度決算概要について PDF p.1『歳入総額 5,294億7,000万円』。",
+      "decision":"accepted",
+      "review_note":"529,470,000,000円として保存。実質収支29億8,200万円とは別指標。"
+    }],
+    "open_questions":[],
+    "review_status":"reviewed"
+  },
+  {
+    "id":"evidence-chiba-city-2024-total-expenditure",
+    "subject_type":"fiscal_record",
+    "subject_id":"jp-local-121002-fiscal-2024-total-expenditure",
+    "claims":[{
+      "field":"amount_yen",
+      "statement":"令和6年度一般会計歳出総額は5,256億7,700万円。",
+      "source_ids":["chiba-settlement-2024-overview"],
+      "location_note":"令和6年度決算概要について PDF p.1『歳出総額 5,256億7,700万円』。",
+      "decision":"accepted",
+      "review_note":"525,677,000,000円として保存。予算・特別会計・企業会計とは分離。"
+    }],
+    "open_questions":[],
+    "review_status":"reviewed"
+  }
+]
