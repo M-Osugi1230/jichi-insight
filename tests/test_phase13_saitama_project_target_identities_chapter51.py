@@ -94,7 +94,7 @@ def test_saitama_chapter51_departments_locators_and_evidence_are_explicit():
     }
 
 
-def test_saitama_manifest_advances_quality_management_target_identity_review():
+def test_saitama_manifest_retains_chapter51_completion_as_review_advances():
     manifest = load(MANIFEST)
     fact = next(
         row
@@ -102,11 +102,11 @@ def test_saitama_manifest_advances_quality_management_target_identity_review():
         if row["id"] == "saitama-current-project-identity-universe"
     )
 
-    assert fact["target_identity_projects_reviewed"] == 222
-    assert fact["target_identity_projects_remaining"] == 36
-    assert fact["observed_target_indicator_identity_count"] == 470
-    assert fact["quality_city_management_target_identity_projects_reviewed"] == 12
-    assert fact["quality_city_management_target_identity_projects_remaining"] == 36
+    assert fact["target_identity_projects_reviewed"] >= 222
+    assert fact["target_identity_projects_remaining"] <= 36
+    assert fact["observed_target_indicator_identity_count"] >= 470
+    assert fact["quality_city_management_target_identity_projects_reviewed"] >= 12
+    assert fact["quality_city_management_target_identity_projects_remaining"] <= 36
     assert fact["chapter51_target_identities_values_pending"] == 19
     assert fact["target_value_projects_reviewed"] == 12
     assert fact["reviewed_target_value_record_count"] == 22
