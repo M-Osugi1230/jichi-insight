@@ -3,7 +3,7 @@
   "official_code": "111007",
   "name_ja": "さいたま市",
   "review_status": "review_in_progress_at_declared_core_depth",
-  "reviewed_at": "2026-08-18",
+  "reviewed_at": "2026-08-19",
   "records": [
     {
       "id": "saitama-basic-plan-period",
@@ -110,16 +110,16 @@
       "id": "saitama-2024-priority-strategy-kpi-aggregate",
       "evidence_role": "historical_source_reported_kpi_direction",
       "title": "重点戦略の令和6年度進捗",
-      "statement": "重点戦略40KPIのうち、26KPIは基準値に対して向上、11KPIは基準値に対して低下と公式ページが公表。残る3KPIの区分はこのHTML集計だけから推測しない。",
+      "statement": "重点戦略40KPIの令和6年度実績は、基準値に対して向上26、横ばい2、低下11、実績値を把握できず1と実施状況報告書の表9・表10で確認。",
       "value": 40,
       "unit": "kpis",
-      "source_reported_breakdown": {"above_baseline": 26, "below_baseline": 11, "not_characterized_in_landing_aggregate": 3},
-      "source_url": "https://www.city.saitama.lg.jp/006/007/004/011/006/001/001/p123882.html",
-      "evidence_location": "重点戦略（まち・ひと・しごと創生総合戦略）の進捗状況",
+      "source_reported_breakdown": {"above_baseline": 26, "flat_to_baseline": 2, "below_baseline": 11, "actual_unavailable": 1},
+      "source_url": "https://www.city.saitama.lg.jp/006/007/004/011/006/001/001/p123882_d/fil/R6_houkokusyo.pdf",
+      "evidence_location": "実施状況報告書 表9・表10／PDF内部ページ775-776付近／印刷ページ772-773",
       "decision": "accepted",
-      "review_note": "40-26-11=3という算術残数は保持するが、横ばい・未集計など具体的状態を公式個票確認なしに割り当てない。"
+      "review_note": "公式HTML集計が明示した向上26・低下11に加え、報告書表9・10で残る3件を横ばい2・実績把握できず1と確認。方向区分は市のsource-reported factであり、政策達成度や因果効果へ変換しない。"
     }
   ],
-  "quality_boundary": "This initial Saitama Phase 13 package separates the current 2021-2030 basic plan, current 2026-2030 implementation plan, historical 2021-2025 implementation cycle, fiscal-2024 progress evaluation, and fiscal states. The 370 project evaluation universe is an occurrence count including reposted projects; the official report states 299 unique projects after deduplication. Municipality A/B/C and measure progress labels are source-reported internal evaluations, not Jichi Insight achievement judgments. Current-plan subjective and objective outcome indicators remain separate measurement families, and no outcome change is promoted to causal effect or cross-city comparability.",
-  "next_action": "Enumerate the current 2026-2030 implementation-plan project identities and outcome indicators from official PDFs, preserving duplicate/repost semantics and subjective/objective measurement lanes. Then review the historical 2024 individual project/measure evidence only where it can be linked without crossing the implementation-cycle boundary."
+  "quality_boundary": "Saitama Phase 13 separates the current 2021-2030 basic plan, current 2026-2030 implementation plan, historical 2021-2025 implementation cycle, fiscal-2024 progress evaluation, and fiscal states. The 370 project evaluation universe is an occurrence count including reposted projects; the official report states 299 unique projects after deduplication. Municipality A/B/C and measure/KPI progress labels are source-reported internal evaluations, not Jichi Insight achievement judgments. The full 40-KPI direction aggregate is source-verified as 26 above baseline, 2 flat, 11 below, and 1 unavailable. Current-plan subjective and objective outcome indicators remain separate measurement families, and no outcome change is promoted to causal effect or cross-city comparability.",
+  "next_action": "Preserve the completed current project and target-identity universes, keep current outcome source-method verification and target-value depth as deferred layers, and evaluate whether the declared Saitama v1 review package satisfies the Phase 13 completion contract without crossing implementation-cycle or comparability boundaries."
 }
