@@ -159,7 +159,7 @@ def test_sendai_source_reported_self_evaluation_is_exact_and_bounded():
     ]
 
 
-def test_sendai_history_and_completion_stay_stable_while_saitama_review_starts():
+def test_sendai_history_and_completion_stay_stable_as_queue_advances_to_chiba():
     history = load(MANIFEST_PATH)
     completion = load(COMPLETION_PATH)
     queue = load(QUEUE_PATH)
@@ -180,16 +180,18 @@ def test_sendai_history_and_completion_stay_stable_while_saitama_review_starts()
     )
     assert completion["status"] == "reviewed_complete"
     assert by_code["041009"]["status"] == "reviewed_complete"
-    assert by_code["111007"]["status"] == "review_in_progress"
+    assert by_code["111007"]["status"] == "reviewed_complete"
+    assert by_code["121002"]["status"] == "review_in_progress"
     assert queue["summary"]["reviewed_complete_count"] == statuses.count(
         "reviewed_complete"
-    ) == 2
+    ) == 3
     assert queue["summary"]["review_in_progress_count"] == statuses.count(
         "review_in_progress"
     ) == 1
     assert queue["summary"]["pending_record_review_count"] == statuses.count(
         "pending_record_review"
-    ) == 15
+    ) == 14
+    assert queue["summary"]["next_official_code"] == "121002"
     assert facts["sendai-2026-general-account-initial-budget"]["value"] == (
         730_600_000_000
     )

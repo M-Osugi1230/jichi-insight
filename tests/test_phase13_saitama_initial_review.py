@@ -14,6 +14,7 @@ PLAN = REVIEWED_ROOT / "plan_review.json"
 SOURCES = ROOT / "data/catalog/saitama_phase13_sources.json"
 MANIFEST = ROOT / "data/catalog/saitama_phase13_policy_review_manifest.json"
 QUEUE = ROOT / "data/catalog/phase13_designated_city_review_queue.json"
+COMPLETION = ROOT / "data/catalog/saitama_phase13_completion.json"
 
 
 def load(path: Path):
@@ -183,23 +184,35 @@ def test_saitama_current_measurement_methodology_separates_subjective_and_object
     assert "因果効果" in method["review_note"]
 
 
-def test_saitama_manifest_and_queue_show_real_review_in_progress():
+def test_saitama_detailed_manifest_can_remain_active_after_v1_queue_completion():
     manifest = load(MANIFEST)
+    completion = load(COMPLETION)
     queue = load(QUEUE)
     by_code = {row["official_code"]: row for row in queue["execution_queue"]}
     facts = {row["id"]: row for row in manifest["reviewed_facts"]}
 
     assert manifest["status"] == "review_in_progress"
+    assert completion["status"] == "reviewed_complete"
     assert len(manifest["reviewed_facts"]) == 13
     assert len(manifest["remaining_work"]) >= 3
-    assert by_code["111007"]["status"] == "review_in_progress"
-    assert queue["summary"]["reviewed_complete_count"] == 2
+    assert by_code["111007"]["status"] == "reviewed_complete"
+    assert by_code["121002"]["status"] == "review_in_progress"
+    assert queue["summary"]["reviewed_complete_count"] == 3
     assert queue["summary"]["review_in_progress_count"] == 1
-    assert queue["summary"]["pending_record_review_count"] == 15
+    assert queue["summary"]["pending_record_review_count"] == 14
     assert facts["saitama-current-project-identity-universe"]["value"] == 258
     assert facts["saitama-current-project-identity-universe"][
         "identity_records_remaining"
     ] == 0
+    assert facts["saitama-current-project-identity-universe"][
+        "target_identity_projects_remaining"
+    ] == 0
+    assert facts["saitama-current-project-identity-universe"][
+        "total_target_indicator_count"
+    ] == 531
+    assert facts["saitama-current-project-identity-universe"][
+        "target_value_projects_remaining"
+    ] == 246
     assert facts["saitama-current-outcome-identity-universe"]["value"] == 97
     assert facts["saitama-current-outcome-identity-universe"]["measure_count"] == 64
     assert facts["saitama-current-outcome-identity-universe"][
@@ -222,3 +235,4 @@ def test_saitama_manifest_and_queue_show_real_review_in_progress():
     )
     assert "258/258" in manifest["quality_boundary"]
     assert "97/97" in manifest["quality_boundary"]
+    assert "509" in completion["completion_boundary"]

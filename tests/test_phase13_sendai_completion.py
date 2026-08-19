@@ -163,7 +163,7 @@ def test_sendai_completion_preserves_deferred_depth_without_inference():
     assert "deferred_depth" in boundary
 
 
-def test_sendai_completion_remains_stable_while_saitama_review_starts():
+def test_sendai_completion_remains_stable_as_later_city_reviews_advance():
     completion = load(COMPLETION_PATH)
     linkage = load(LINKAGE_PATH)
     queue = load(QUEUE_PATH)
@@ -174,16 +174,18 @@ def test_sendai_completion_remains_stable_while_saitama_review_starts():
     assert linkage["status"] == "reviewed_complete"
     assert linkage["summary"]["municipality_phase13_complete"] is True
     assert by_code["041009"]["status"] == "reviewed_complete"
-    assert by_code["111007"]["status"] == "review_in_progress"
+    assert by_code["111007"]["status"] == "reviewed_complete"
+    assert by_code["121002"]["status"] == "review_in_progress"
     assert queue["summary"]["reviewed_complete_count"] == statuses.count(
         "reviewed_complete"
-    ) == 2
+    ) == 3
     assert queue["summary"]["review_in_progress_count"] == statuses.count(
         "review_in_progress"
     ) == 1
     assert queue["summary"]["pending_record_review_count"] == statuses.count(
         "pending_record_review"
-    ) == 15
+    ) == 14
+    assert queue["summary"]["next_official_code"] == "121002"
 
 
 def test_sendai_completion_quality_gates_are_all_explicitly_true():
