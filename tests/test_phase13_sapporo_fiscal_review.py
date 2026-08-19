@@ -79,28 +79,24 @@ def test_sapporo_review_sources_are_official_and_record_level_locations_exist():
     )
 
 
-def test_sapporo_phase13_v1_remains_complete_while_saitama_review_starts():
+def test_sapporo_phase13_v1_remains_complete_as_queue_advances_to_chiba():
     queue = load(QUEUE_PATH)
     completion = load(COMPLETION_PATH)
-    sapporo = next(
-        item for item in queue["execution_queue"] if item["official_code"] == "011002"
-    )
-    saitama = next(
-        item for item in queue["execution_queue"] if item["official_code"] == "111007"
-    )
+    by_code = {item["official_code"]: item for item in queue["execution_queue"]}
     statuses = [item["status"] for item in queue["execution_queue"]]
 
-    assert sapporo["status"] == "reviewed_complete"
+    assert by_code["011002"]["status"] == "reviewed_complete"
     assert completion["status"] == "reviewed_complete"
     assert completion["completion_depth"] == "declared_review_package_v1"
-    assert saitama["status"] == "review_in_progress"
+    assert by_code["111007"]["status"] == "reviewed_complete"
+    assert by_code["121002"]["status"] == "review_in_progress"
     assert queue["summary"]["reviewed_complete_count"] == statuses.count(
         "reviewed_complete"
-    ) == 2
+    ) == 3
     assert queue["summary"]["review_in_progress_count"] == statuses.count(
         "review_in_progress"
     ) == 1
     assert queue["summary"]["pending_record_review_count"] == statuses.count(
         "pending_record_review"
-    ) == 15
-    assert queue["summary"]["next_official_code"] == "111007"
+    ) == 14
+    assert queue["summary"]["next_official_code"] == "121002"
