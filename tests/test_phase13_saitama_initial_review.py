@@ -163,11 +163,13 @@ def test_saitama_2024_measure_and_kpi_aggregates_preserve_source_boundaries():
     kpi = kpis["source_reported_breakdown"]
     assert kpi == {
         "above_baseline": 26,
+        "flat_to_baseline": 2,
         "below_baseline": 11,
-        "not_characterized_in_landing_aggregate": 3,
+        "actual_unavailable": 1,
     }
     assert sum(kpi.values()) == 40
-    assert "公式個票確認なしに割り当てない" in kpis["review_note"]
+    assert "表9・表10" in kpis["evidence_location"]
+    assert "因果効果" in kpis["review_note"]
 
 
 def test_saitama_current_measurement_methodology_separates_subjective_and_objective():
@@ -189,7 +191,7 @@ def test_saitama_manifest_and_queue_show_real_review_in_progress():
 
     assert manifest["status"] == "review_in_progress"
     assert len(manifest["reviewed_facts"]) == 13
-    assert len(manifest["remaining_work"]) >= 4
+    assert len(manifest["remaining_work"]) >= 3
     assert by_code["111007"]["status"] == "review_in_progress"
     assert queue["summary"]["reviewed_complete_count"] == 2
     assert queue["summary"]["review_in_progress_count"] == 1
@@ -213,6 +215,8 @@ def test_saitama_manifest_and_queue_show_real_review_in_progress():
         "displayed_project_occurrence_count"
     ] == 370
     assert facts["saitama-2024-progress-universe"]["unique_project_count"] == 299
+    assert facts["saitama-2024-priority-kpi-direction"]["flat_to_baseline"] == 2
+    assert facts["saitama-2024-priority-kpi-direction"]["actual_unavailable"] == 1
     assert facts["saitama-2026-general-account-initial-budget"]["value"] == (
         716_000_000_000
     )
