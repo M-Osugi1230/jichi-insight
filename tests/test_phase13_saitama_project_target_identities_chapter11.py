@@ -106,7 +106,7 @@ def test_saitama_chapter11_departments_locators_and_evidence_are_explicit():
     }
 
 
-def test_saitama_manifest_reaches_policy_fields_target_identity_completion():
+def test_saitama_manifest_retains_policy_fields_completion_as_review_advances():
     manifest = load(MANIFEST)
     fact = next(
         row
@@ -114,9 +114,9 @@ def test_saitama_manifest_reaches_policy_fields_target_identity_completion():
         if row["id"] == "saitama-current-project-identity-universe"
     )
 
-    assert fact["target_identity_projects_reviewed"] == 210
-    assert fact["target_identity_projects_remaining"] == 48
-    assert fact["observed_target_indicator_identity_count"] == 451
+    assert fact["target_identity_projects_reviewed"] >= 210
+    assert fact["target_identity_projects_remaining"] <= 48
+    assert fact["observed_target_indicator_identity_count"] >= 451
     assert fact["policy_fields_target_identity_projects_reviewed"] == 210
     assert fact["policy_fields_target_identity_projects_remaining"] == 0
     assert fact["chapter11_target_identities_values_pending"] == 46
