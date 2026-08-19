@@ -11,7 +11,9 @@ SCHEMA = ROOT / "schemas/saitama_phase13_completion.schema.json"
 QUEUE = ROOT / "data/catalog/phase13_designated_city_review_queue.json"
 MANIFEST = ROOT / "data/catalog/saitama_phase13_policy_review_manifest.json"
 PROJECTS = ROOT / "data/catalog/saitama_current_project_universe_registry.json"
-TARGET_EVIDENCE = ROOT / "data/evidence/saitama_current_project_target_identities_chapter52_evidence.json"
+TARGET_EVIDENCE = ROOT / (
+    "data/evidence/saitama_current_project_target_identities_chapter52_evidence.json"
+)
 PLAN = ROOT / "data/reviewed/saitama-city/plan_review.json"
 FISCAL = ROOT / "data/reviewed/saitama-city/fiscal_records.json"
 
@@ -22,7 +24,9 @@ def load(path: Path):
 
 def test_saitama_completion_contract_matches_schema_and_declared_paths_exist():
     completion = load(COMPLETION)
-    validator = Draft202012Validator(load(SCHEMA), format_checker=FormatChecker())
+    validator = Draft202012Validator(
+        load(SCHEMA), format_checker=FormatChecker()
+    )
     assert list(validator.iter_errors(completion)) == []
 
     package = completion["review_package"]
@@ -36,11 +40,13 @@ def test_saitama_completion_counts_are_derived_from_reviewed_layers():
     counts = completion["review_package"]["counts"]
     manifest = load(MANIFEST)
     project_fact = next(
-        row for row in manifest["reviewed_facts"]
+        row
+        for row in manifest["reviewed_facts"]
         if row["id"] == "saitama-current-project-identity-universe"
     )
     outcome_fact = next(
-        row for row in manifest["reviewed_facts"]
+        row
+        for row in manifest["reviewed_facts"]
         if row["id"] == "saitama-current-outcome-identity-universe"
     )
     projects = load(PROJECTS)
@@ -94,7 +100,7 @@ def test_saitama_completion_counts_are_derived_from_reviewed_layers():
     assert counts["fiscal_top_line_records"] == len(fiscal) == 3
 
 
-def test_saitama_completion_preserves_historical_cycle_and_priority_kpi_boundaries():
+def test_saitama_completion_preserves_historical_cycle_and_kpi_boundaries():
     completion = load(COMPLETION)
     counts = completion["review_package"]["counts"]
     projects = load(PROJECTS)
@@ -102,8 +108,16 @@ def test_saitama_completion_preserves_historical_cycle_and_priority_kpi_boundari
     historical = plan["saitama-2024-progress-review-universe"]
     kpis = plan["saitama-2024-priority-strategy-kpi-aggregate"]
 
-    assert counts["historical_displayed_project_occurrences"] == historical["value"] == 370
-    assert counts["historical_unique_projects"] == historical["unique_project_count"] == 299
+    assert (
+        counts["historical_displayed_project_occurrences"]
+        == historical["value"]
+        == 370
+    )
+    assert (
+        counts["historical_unique_projects"]
+        == historical["unique_project_count"]
+        == 299
+    )
     assert counts["historical_measures"] == historical["measure_count"] == 63
     assert counts["priority_strategy_kpis"] == kpis["value"] == 40
     assert (
@@ -135,9 +149,15 @@ def test_saitama_completion_deferred_depth_is_explicit_and_not_promoted():
     deferred = {item["id"]: item for item in completion["deferred_depth"]}
 
     assert deferred["current-target-values-beyond-chapter01"]["count"] == 509
-    assert deferred["current-target-values-beyond-chapter01"]["project_count"] == 246
+    assert (
+        deferred["current-target-values-beyond-chapter01"]["project_count"]
+        == 246
+    )
     assert deferred["outcome-exact-source-method-provenance"]["count"] == 97
-    assert deferred["historical-current-versioned-project-linkage"]["count"] == 299
+    assert (
+        deferred["historical-current-versioned-project-linkage"]["count"]
+        == 299
+    )
     assert all(
         item["status"] == "deferred_not_required_for_v1_completion"
         for item in deferred.values()
