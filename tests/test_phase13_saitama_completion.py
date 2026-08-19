@@ -11,7 +11,6 @@ SCHEMA = ROOT / "schemas/saitama_phase13_completion.schema.json"
 QUEUE = ROOT / "data/catalog/phase13_designated_city_review_queue.json"
 MANIFEST = ROOT / "data/catalog/saitama_phase13_policy_review_manifest.json"
 PROJECTS = ROOT / "data/catalog/saitama_current_project_universe_registry.json"
-OUTCOMES = ROOT / "data/catalog/saitama_current_outcome_indicator_registry.json"
 TARGET_EVIDENCE = ROOT / "data/evidence/saitama_current_project_target_identities_chapter52_evidence.json"
 PLAN = ROOT / "data/reviewed/saitama-city/plan_review.json"
 FISCAL = ROOT / "data/reviewed/saitama-city/fiscal_records.json"
@@ -48,8 +47,16 @@ def test_saitama_completion_counts_are_derived_from_reviewed_layers():
     target_evidence = load(TARGET_EVIDENCE)
     fiscal = load(FISCAL)
 
-    assert counts["current_project_identities"] == projects["total_project_count"] == 258
-    assert counts["current_target_identities"] == project_fact["total_target_indicator_count"] == 531
+    assert (
+        counts["current_project_identities"]
+        == projects["project_universe"]["current_project_code_count"]
+        == 258
+    )
+    assert (
+        counts["current_target_identities"]
+        == project_fact["total_target_indicator_count"]
+        == 531
+    )
     assert counts["policy_field_target_identities"] == 451
     assert counts["quality_city_management_target_identities"] == 80
     assert target_evidence["all_current_projects_completion"] == {
@@ -57,19 +64,40 @@ def test_saitama_completion_counts_are_derived_from_reviewed_layers():
         "target_indicator_identity_count": 531,
         "target_identity_status": "complete",
     }
-    assert counts["target_value_projects_reviewed"] == project_fact["target_value_projects_reviewed"] == 12
-    assert counts["target_value_records_reviewed"] == project_fact["reviewed_target_value_record_count"] == 22
-    assert counts["target_value_projects_deferred"] == project_fact["target_value_projects_remaining"] == 246
+    assert (
+        counts["target_value_projects_reviewed"]
+        == project_fact["target_value_projects_reviewed"]
+        == 12
+    )
+    assert (
+        counts["target_value_records_reviewed"]
+        == project_fact["reviewed_target_value_record_count"]
+        == 22
+    )
+    assert (
+        counts["target_value_projects_deferred"]
+        == project_fact["target_value_projects_remaining"]
+        == 246
+    )
     assert counts["target_value_identities_deferred"] == 531 - 22 == 509
     assert counts["current_outcome_indicators"] == outcome_fact["value"] == 97
-    assert counts["outcome_self_report_or_perception_lane"] == outcome_fact["self_report_or_perception_count"] == 62
-    assert counts["outcome_objective_or_administrative_lane"] == outcome_fact["objective_or_administrative_statistical_count"] == 35
+    assert (
+        counts["outcome_self_report_or_perception_lane"]
+        == outcome_fact["self_report_or_perception_count"]
+        == 62
+    )
+    assert (
+        counts["outcome_objective_or_administrative_lane"]
+        == outcome_fact["objective_or_administrative_statistical_count"]
+        == 35
+    )
     assert counts["fiscal_top_line_records"] == len(fiscal) == 3
 
 
 def test_saitama_completion_preserves_historical_cycle_and_priority_kpi_boundaries():
     completion = load(COMPLETION)
     counts = completion["review_package"]["counts"]
+    projects = load(PROJECTS)
     plan = {row["id"]: row for row in load(PLAN)["records"]}
     historical = plan["saitama-2024-progress-review-universe"]
     kpis = plan["saitama-2024-priority-strategy-kpi-aggregate"]
@@ -78,11 +106,28 @@ def test_saitama_completion_preserves_historical_cycle_and_priority_kpi_boundari
     assert counts["historical_unique_projects"] == historical["unique_project_count"] == 299
     assert counts["historical_measures"] == historical["measure_count"] == 63
     assert counts["priority_strategy_kpis"] == kpis["value"] == 40
-    assert counts["priority_strategy_above_baseline"] == kpis["source_reported_breakdown"]["above_baseline"] == 26
-    assert counts["priority_strategy_flat"] == kpis["source_reported_breakdown"]["flat_to_baseline"] == 2
-    assert counts["priority_strategy_below_baseline"] == kpis["source_reported_breakdown"]["below_baseline"] == 11
-    assert counts["priority_strategy_actual_unavailable"] == kpis["source_reported_breakdown"]["actual_unavailable"] == 1
-    assert "旧2021～2025" in historical["review_note"] or "旧2021～2025" in load(MANIFEST)["reviewed_facts"][5]["interpretation_boundary"]
+    assert (
+        counts["priority_strategy_above_baseline"]
+        == kpis["source_reported_breakdown"]["above_baseline"]
+        == 26
+    )
+    assert (
+        counts["priority_strategy_flat"]
+        == kpis["source_reported_breakdown"]["flat_to_baseline"]
+        == 2
+    )
+    assert (
+        counts["priority_strategy_below_baseline"]
+        == kpis["source_reported_breakdown"]["below_baseline"]
+        == 11
+    )
+    assert (
+        counts["priority_strategy_actual_unavailable"]
+        == kpis["source_reported_breakdown"]["actual_unavailable"]
+        == 1
+    )
+    assert projects["historical_boundary"]["linkage_status"] == "not_reviewed"
+    assert "同一視しない" in projects["historical_boundary"]["rule"]
 
 
 def test_saitama_completion_deferred_depth_is_explicit_and_not_promoted():
@@ -117,9 +162,21 @@ def test_saitama_completion_advances_queue_to_chiba():
     assert by_code["041009"]["status"] == "reviewed_complete"
     assert by_code["111007"]["status"] == "reviewed_complete"
     assert by_code["121002"]["status"] == "review_in_progress"
-    assert queue["summary"]["reviewed_complete_count"] == statuses.count("reviewed_complete") == 3
-    assert queue["summary"]["review_in_progress_count"] == statuses.count("review_in_progress") == 1
-    assert queue["summary"]["pending_record_review_count"] == statuses.count("pending_record_review") == 14
+    assert (
+        queue["summary"]["reviewed_complete_count"]
+        == statuses.count("reviewed_complete")
+        == 3
+    )
+    assert (
+        queue["summary"]["review_in_progress_count"]
+        == statuses.count("review_in_progress")
+        == 1
+    )
+    assert (
+        queue["summary"]["pending_record_review_count"]
+        == statuses.count("pending_record_review")
+        == 14
+    )
     assert queue["summary"]["next_official_code"] == "121002"
 
 
