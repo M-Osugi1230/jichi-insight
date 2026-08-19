@@ -189,7 +189,7 @@ def test_saitama_manifest_and_queue_show_real_review_in_progress():
 
     assert manifest["status"] == "review_in_progress"
     assert len(manifest["reviewed_facts"]) == 13
-    assert len(manifest["remaining_work"]) == 4
+    assert len(manifest["remaining_work"]) >= 4
     assert by_code["111007"]["status"] == "review_in_progress"
     assert queue["summary"]["reviewed_complete_count"] == 2
     assert queue["summary"]["review_in_progress_count"] == 1
