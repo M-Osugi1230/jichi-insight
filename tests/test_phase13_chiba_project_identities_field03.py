@@ -74,7 +74,8 @@ def test_chiba_field03_reposts_reconcile_without_identity_inflation():
         "chiba-f03-p004",
         "chiba-f03-p013",
     }
-    assert sum(row["project_name"] == "あんしんケアセンターの機能強化と介護人材の育成" for row in same) == 2
+    care_center_name = "あんしんケアセンターの機能強化と介護人材の育成"
+    assert sum(row["project_name"] == care_center_name for row in same) == 2
 
 
 def test_chiba_field03_departments_and_pdf_locations_are_explicit():
