@@ -156,20 +156,26 @@ def test_chiba_fiscal_top_lines_are_exact_and_state_separated():
     assert expenditure["amount_yen"] == 525_677_000_000
 
 
-def test_chiba_manifest_and_queue_show_initial_record_review_in_progress():
+def test_chiba_initial_review_contract_remains_valid_as_identity_depth_advances():
     manifest = load(MANIFEST)
     queue = load(QUEUE)
     facts = {row["id"]: row for row in manifest["reviewed_facts"]}
     by_code = {row["official_code"]: row for row in queue["execution_queue"]}
+    project_fact = facts["chiba-current-project-universe"]
 
     assert manifest["status"] == "review_in_progress"
     assert by_code["121002"]["status"] == "review_in_progress"
     assert queue["summary"]["reviewed_complete_count"] == 3
     assert queue["summary"]["review_in_progress_count"] == 1
     assert queue["summary"]["pending_record_review_count"] == 14
-    assert facts["chiba-current-project-universe"]["value"] == 189
-    assert facts["chiba-current-project-universe"]["identity_records_reviewed"] == 0
-    assert facts["chiba-current-project-universe"]["identity_records_remaining"] == 189
+    assert project_fact["value"] == 189
+    assert project_fact["identity_records_reviewed"] >= 30
+    assert project_fact["identity_records_remaining"] <= 159
+    assert (
+        project_fact["identity_records_reviewed"]
+        + project_fact["identity_records_remaining"]
+        == 189
+    )
     assert facts["chiba-2024-progress-universe"]["value"] == 360
     assert facts["chiba-2026-general-account-initial-budget"]["value"] == (
         541_700_000_000

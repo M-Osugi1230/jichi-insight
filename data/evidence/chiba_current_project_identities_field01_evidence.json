@@ -1,0 +1,20 @@
+{
+  "id":"chiba-current-project-identities-field01-evidence",
+  "official_code":"121002",
+  "review_status":"reviewed_complete_30_unique_project_identities",
+  "source_id":"chiba-implementation-plan-2026-2028-full-pdf",
+  "evidence":[
+    {"measure_code":"1-1-1","location":"PDF pp.20-22","primary_identity_count":7,"decision":"accepted"},
+    {"measure_code":"1-1-2","location":"PDF p.23","primary_identity_count":2,"decision":"accepted"},
+    {"measure_code":"1-1-3","location":"PDF pp.24-26","primary_identity_count":8,"decision":"accepted"},
+    {"measure_code":"1-2-1","location":"PDF pp.27-29","primary_identity_count":9,"displayed_cross_field_repost_count":1,"decision":"accepted_with_repost_exclusion"},
+    {"measure_code":"1-2-2","location":"PDF p.30","primary_identity_count":2,"displayed_same_field_repost_count":1,"decision":"accepted_with_repost_deduplication"},
+    {"measure_code":"1-2-3","location":"PDF p.31","primary_identity_count":2,"decision":"accepted"}
+  ],
+  "field_total":{"official_unique_project_count":30,"reviewed_primary_identity_count":30,"displayed_repost_occurrence_count":2},
+  "repost_findings":[
+    {"project_name":"谷津田の森林整備","finding":"Primary listing at PDF p.22 under 1-1-1; explicit same-field repost at PDF p.30 under 1-2-2. Count once in the 30-identity field universe."},
+    {"project_name":"アルティーリ千葉新アリーナの整備支援","finding":"Displayed as 新規・再掲 at PDF p.29 under 1-2-1 and as 新規 at PDF p.95 in field 6 sports. Exclude the field-1 display from the duplicate-excluded 30 and defer the primary identity to field 6 review."}
+  ],
+  "quality_boundary":"The field total is reconciled to the official duplicate-excluded count of 30. Repost occurrences are retained as lineage but do not create duplicate identities. No project-quantity values, target values, KGI/KPI values, progress labels, causal judgments, or comparability claims are added at this layer."
+}
