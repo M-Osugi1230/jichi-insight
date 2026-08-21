@@ -4,17 +4,17 @@
   "official_code":"121002",
   "name_ja":"千葉市",
   "status":"review_in_progress",
-  "reviewed_at":"2026-08-19",
+  "reviewed_at":"2026-08-21",
   "source_catalog_path":"data/catalog/chiba_phase13_sources.json",
   "plan_review_path":"data/reviewed/chiba-city/plan_review.json",
   "fiscal_records_path":"data/reviewed/chiba-city/fiscal_records.json",
   "fiscal_evidence_path":"data/reviewed/chiba-city/evidence_packets.json",
-  "current_project_identity_batch_paths":["data/catalog/chiba_current_project_identities_field01.json"],
+  "current_project_identity_batch_paths":["data/catalog/chiba_current_project_identities_field01.json","data/catalog/chiba_current_project_identities_field02.json"],
   "reviewed_facts":[
     {"id":"chiba-current-basic-plan","layer":"current_plan_identity","field":"plan_period","value":"2023年度～2032年度","source_id":"chiba-basic-plan-2023-2032","review_status":"reviewed"},
     {"id":"chiba-current-implementation-plan","layer":"current_implementation_plan","field":"implementation_period","value":"2026年度～2028年度","source_id":"chiba-implementation-plan-2026-2028","review_status":"reviewed_core"},
     {"id":"chiba-current-policy-structure","layer":"current_implementation_plan","field":"policy_structure","field_count":8,"policy_count":23,"measure_count":67,"source_id":"chiba-implementation-plan-2026-2028-full-pdf","review_status":"reviewed_aggregate"},
-    {"id":"chiba-current-project-universe","layer":"current_implementation_plan","field":"current_unique_projects","value":189,"duplicate_exclusion_explicit":true,"field_breakdown":{"environment_nature":30,"safety_security":31,"health_welfare":18,"children_education":34,"community":7,"culture_sports":15,"urban_transport":32,"regional_economy":22},"identity_records_reviewed":30,"identity_records_remaining":159,"reviewed_field_counts":{"environment_nature":30},"displayed_repost_occurrences_reviewed":2,"source_id":"chiba-implementation-plan-2026-2028-full-pdf","review_status":"reviewed_30_of_189_project_identities","interpretation_boundary":"189は公式表が重複除外と明記する現行事業母集団。分野1環境・自然は30/30 identityをレビュー済み。谷津田の森林整備の同一分野再掲と、アルティーリ千葉新アリーナの整備支援の分野横断再掲をidentity重複から除外し、再掲位置のみ保持した。残る159事業の個別identity・再掲関係は未レビュー。"},
+    {"id":"chiba-current-project-universe","layer":"current_implementation_plan","field":"current_unique_projects","value":189,"duplicate_exclusion_explicit":true,"field_breakdown":{"environment_nature":30,"safety_security":31,"health_welfare":18,"children_education":34,"community":7,"culture_sports":15,"urban_transport":32,"regional_economy":22},"identity_records_reviewed":61,"identity_records_remaining":128,"reviewed_field_counts":{"environment_nature":30,"safety_security":31},"displayed_repost_occurrences_reviewed":5,"source_id":"chiba-implementation-plan-2026-2028-full-pdf","review_status":"reviewed_61_of_189_project_identities","interpretation_boundary":"189は公式表が重複除外と明記する現行事業母集団。分野1環境・自然30/30、分野2安全・安心31/31のidentityをレビュー済み。分野1では谷津田の森林整備の同一分野再掲とアルティーリ千葉新アリーナの整備支援の分野横断再掲、分野2では市立学校の体育館冷暖房設備の整備、交差点の改良、フェアトレードの推進の分野横断再掲をidentity重複から除外し、再掲位置のみ保持した。残る128事業の個別identity・再掲関係は未レビュー。"},
     {"id":"chiba-current-progress-methodology","layer":"current_progress_methodology","field":"management_method","value":"project_quantity_and_kgi_kpi_review","source_id":"chiba-implementation-plan-2026-2028-full-pdf","review_status":"reviewed_methodology","interpretation_boundary":"予算・決算時の事業量進捗、KGI/KPI検証、期間終了後の政策評価と市民実感を同一評価へ統合しない。"},
     {"id":"chiba-prior-implementation-plan","layer":"historical_implementation_plan","field":"implementation_period","value":"2023年度～2025年度","source_id":"chiba-implementation-plan-2023-2025","review_status":"reviewed_historical_cycle"},
     {"id":"chiba-2024-progress-universe","layer":"historical_annual_progress","field":"project_universe","reporting_fiscal_year":2024,"value":360,"unit":"projects","source_id":"chiba-implementation-progress-2024-settlement","review_status":"reviewed_aggregate","interpretation_boundary":"旧第1次実施計画の360事業。現行第2次計画189事業と自動接続しない。"},
@@ -24,10 +24,10 @@
     {"id":"chiba-2024-general-account-settlement-expenditure","layer":"fiscal","field":"general_account_settlement_expenditure_yen","fiscal_year":2024,"value":525677000000,"source_id":"chiba-settlement-2024-overview","review_status":"reviewed"}
   ],
   "remaining_work":[
-    "現行第2次実施計画189事業のうち、分野1環境・自然30事業はidentityレビュー完了。残る159事業の事業identity・掲載位置・再掲関係を全件レビューする。",
+    "現行第2次実施計画189事業のうち、分野1環境・自然30事業と分野2安全・安心31事業はidentityレビュー完了。残る128事業の事業identity・掲載位置・再掲関係を全件レビューする。",
     "現行計画の事業量、KGI/KPI identity、現況値・2028年度目標・出典を階層別にレビューする。",
     "旧第1次実施計画360事業と現行189事業の継続・改称・統合・分割は名称だけで推測せずversioned linkageとして別レビューする。",
     "予算・決算の個別事業費と計画事業の接続は公式識別子・名称・所管・年度を確認できたものだけ昇格する。"
   ],
-  "quality_boundary":"Phase 13 Chiba review is in progress. Current plan identity and structure are reviewed at aggregate depth: 2023-2032 basic plan, 2026-2028 second implementation plan, eight fields, 23 policies, 67 measures, and a duplicate-excluded universe of 189 current projects. Field 1 environment/nature is now reviewed at 30/30 unique project identities, bringing cumulative project-identity coverage to 30/189; two displayed repost occurrences are preserved without identity inflation. The other 159 current project identities remain pending. Historical FY2024 progress remains tied to the 2023-2025 first implementation plan and covers 360 projects, including a municipality-reported 252 projects at 80% or more of planned quantity. Budget and settlement states remain separate. No project-quantity value, KGI/KPI value, independent policy-achievement judgment, causal attribution, version linkage, or automatic cross-city comparability is inferred from the identity layer."
+  "quality_boundary":"Phase 13 Chiba review is in progress. Current plan identity and structure are reviewed at aggregate depth: 2023-2032 basic plan, 2026-2028 second implementation plan, eight fields, 23 policies, 67 measures, and a duplicate-excluded universe of 189 current projects. Field 1 environment/nature is reviewed at 30/30 unique project identities and field 2 safety/security at 31/31, bringing cumulative project-identity coverage to 61/189. Five displayed repost occurrences reviewed across these fields are preserved without identity inflation. The other 128 current project identities remain pending. Historical FY2024 progress remains tied to the 2023-2025 first implementation plan and covers 360 projects, including a municipality-reported 252 projects at 80% or more of planned quantity. Budget and settlement states remain separate. No project-quantity value, KGI/KPI value, independent policy-achievement judgment, causal attribution, version linkage, or automatic cross-city comparability is inferred from the identity layer."
 }
