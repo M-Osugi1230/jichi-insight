@@ -101,7 +101,7 @@ def test_chiba_field01_evidence_reconciles_reposts_and_official_total():
     assert len(evidence["repost_findings"]) == 2
 
 
-def test_chiba_manifest_advances_project_identity_review_to_30_of_189():
+def test_chiba_manifest_retains_field01_completion_as_review_advances():
     manifest = load(MANIFEST)
     fact = next(
         row
@@ -109,12 +109,12 @@ def test_chiba_manifest_advances_project_identity_review_to_30_of_189():
         if row["id"] == "chiba-current-project-universe"
     )
 
-    assert manifest["current_project_identity_batch_paths"] == [
+    assert (
         "data/catalog/chiba_current_project_identities_field01.json"
-    ]
+        in manifest["current_project_identity_batch_paths"]
+    )
     assert fact["value"] == 189
-    assert fact["identity_records_reviewed"] == 30
-    assert fact["identity_records_remaining"] == 159
-    assert fact["reviewed_field_counts"] == {"environment_nature": 30}
-    assert fact["displayed_repost_occurrences_reviewed"] == 2
-    assert fact["review_status"] == "reviewed_30_of_189_project_identities"
+    assert fact["identity_records_reviewed"] >= 30
+    assert fact["identity_records_remaining"] <= 159
+    assert fact["reviewed_field_counts"]["environment_nature"] == 30
+    assert fact["displayed_repost_occurrences_reviewed"] >= 2
