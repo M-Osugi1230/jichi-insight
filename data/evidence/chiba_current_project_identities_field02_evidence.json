@@ -1,0 +1,28 @@
+{
+  "id":"chiba-current-project-identities-field02-evidence",
+  "official_code":"121002",
+  "review_status":"reviewed_complete_31_unique_projects_with_3_cross_field_reposts",
+  "source_id":"chiba-implementation-plan-2026-2028-full-pdf",
+  "field_code":"2",
+  "field_name":"安全・安心",
+  "official_unique_project_count":31,
+  "evidence":[
+    {"measure_code":"2-1-1","source_location":"PDF pp.33-34","unique_project_count":7,"decision":"accepted"},
+    {"measure_code":"2-1-2","source_location":"PDF pp.35-36","unique_project_count":5,"decision":"accepted"},
+    {"measure_code":"2-2-1","source_location":"PDF pp.37-38","unique_project_count":2,"displayed_cross_field_repost_count":1,"decision":"accepted_with_repost_excluded"},
+    {"measure_code":"2-2-2","source_location":"PDF p.39","unique_project_count":1,"decision":"accepted"},
+    {"measure_code":"2-3-1","source_location":"PDF pp.40-41","unique_project_count":5,"decision":"accepted"},
+    {"measure_code":"2-3-2","source_location":"PDF p.42","unique_project_count":1,"decision":"accepted"},
+    {"measure_code":"2-3-3","source_location":"PDF p.43","unique_project_count":2,"decision":"accepted"},
+    {"measure_code":"2-4-1","source_location":"PDF p.44","unique_project_count":3,"decision":"accepted"},
+    {"measure_code":"2-4-2","source_location":"PDF pp.45-46","unique_project_count":4,"displayed_cross_field_repost_count":1,"decision":"accepted_with_repost_excluded"},
+    {"measure_code":"2-4-3","source_location":"PDF p.47","unique_project_count":1,"displayed_cross_field_repost_count":1,"decision":"accepted_with_repost_excluded"}
+  ],
+  "repost_reconciliation":[
+    {"project_name":"市立学校の体育館冷暖房設備の整備","field02_location":"PDF p.38 / 再掲","primary_location":"PDF p.76 / 4-2-2","decision":"exclude_from_field02_unique_count"},
+    {"project_name":"交差点の改良","field02_location":"PDF p.46 / 再掲","primary_location":"PDF p.112 / 7-2-2","decision":"exclude_from_field02_unique_count"},
+    {"project_name":"フェアトレードの推進","field02_location":"PDF p.47 / 新規・再掲","primary_location":"PDF p.84 / 5-1-1 / 新規","decision":"exclude_from_field02_unique_count"}
+  ],
+  "reconciliation":{"field02_unique_project_count":31,"displayed_cross_field_repost_count":3,"cumulative_current_project_identities_reviewed":61,"cumulative_current_project_identities_remaining":128},
+  "quality_boundary":"分野2の31件は公式の重複除外事業母集団に合わせたidentityレビュー。3件の分野横断再掲は一次掲載分野でのみidentity化する。計画事業量、現況、令和10年度末目標、KGI/KPI、進捗・成果の値は未レビューであり、この証拠から推測しない。"
+}
