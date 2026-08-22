@@ -116,7 +116,7 @@ def test_chiba_fields01_to03_primary_identity_sets_are_distinct():
     assert identity_sets[1].isdisjoint(identity_sets[2])
 
 
-def test_chiba_manifest_advances_project_identity_coverage_to_79_of_189():
+def test_chiba_manifest_retains_field03_completion_as_review_advances():
     manifest = load(MANIFEST)
     fact = next(
         row
@@ -124,13 +124,12 @@ def test_chiba_manifest_advances_project_identity_coverage_to_79_of_189():
         if row["id"] == "chiba-current-project-universe"
     )
 
+    assert (
+        "data/catalog/chiba_current_project_identities_field03.json"
+        in manifest["current_project_identity_batch_paths"]
+    )
     assert fact["value"] == 189
-    assert fact["identity_records_reviewed"] == 79
-    assert fact["identity_records_remaining"] == 110
-    assert fact["reviewed_field_counts"] == {
-        "environment_nature": 30,
-        "safety_security": 31,
-        "health_welfare": 18,
-    }
-    assert fact["displayed_repost_occurrences_reviewed"] == 17
-    assert fact["review_status"] == "reviewed_79_of_189_project_identities"
+    assert fact["identity_records_reviewed"] >= 79
+    assert fact["identity_records_remaining"] <= 110
+    assert fact["reviewed_field_counts"]["health_welfare"] == 18
+    assert fact["displayed_repost_occurrences_reviewed"] >= 17
