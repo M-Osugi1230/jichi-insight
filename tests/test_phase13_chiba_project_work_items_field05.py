@@ -135,29 +135,29 @@ def test_field05_evidence_reconciles_local_and_cumulative_progress():
     }
 
 
-def test_work_item_manifest_advances_through_field05_without_inflation():
+def test_field05_manifest_retains_progress_as_later_fields_advance():
     manifest = load(MANIFEST)
+    capture = manifest["work_item_source_capture"]
+    structuring = manifest["work_item_structuring"]
+    field05_pending = {
+        "chiba-f05-p001",
+        "chiba-f05-p003",
+        "chiba-f05-p006",
+        "chiba-f05-p007",
+    }
 
     assert manifest["project_universe"] == 189
     assert manifest["project_identity_coverage"] == {"reviewed": 189, "remaining": 0}
-    assert manifest["work_item_source_capture"] == {
-        "projects_reviewed": 120,
-        "projects_remaining": 69,
-        "field_counts_reviewed": {
-            "environment_nature": 30,
-            "safety_security": 31,
-            "health_welfare": 18,
-            "children_education": 34,
-            "community": 7,
-        },
-    }
-    assert manifest["work_item_structuring"]["projects_structured"] == 91
-    assert manifest["work_item_structuring"]["projects_pending_visual_column_confirmation"] == 29
-    assert manifest["work_item_structuring"]["projects_not_yet_source_captured"] == 69
-    assert manifest["work_item_structuring"]["structured_work_items"] == 200
-    assert len(manifest["work_item_structuring"]["pending_review_ids"]) == 29
-    assert manifest["next_field"] == {
-        "field_code": "6",
-        "field_name": "文化芸術・スポーツ",
-        "official_project_count": 15,
-    }
+    assert capture["projects_reviewed"] >= 120
+    assert capture["projects_remaining"] == 189 - capture["projects_reviewed"]
+    assert capture["field_counts_reviewed"]["environment_nature"] == 30
+    assert capture["field_counts_reviewed"]["safety_security"] == 31
+    assert capture["field_counts_reviewed"]["health_welfare"] == 18
+    assert capture["field_counts_reviewed"]["children_education"] == 34
+    assert capture["field_counts_reviewed"]["community"] == 7
+    assert sum(capture["field_counts_reviewed"].values()) == capture["projects_reviewed"]
+    assert structuring["projects_structured"] >= 91
+    assert structuring["projects_pending_visual_column_confirmation"] >= 29
+    assert structuring["projects_not_yet_source_captured"] == capture["projects_remaining"]
+    assert structuring["structured_work_items"] >= 200
+    assert field05_pending <= set(structuring["pending_review_ids"])
