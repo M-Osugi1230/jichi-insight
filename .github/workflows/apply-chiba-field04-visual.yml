@@ -1,17 +1,19 @@
 name: Apply Chiba Field 4 Visual Review
 
 on:
-  push:
+  pull_request:
     branches:
-      - phase13-chiba-field04-complete-visual
-    paths:
-      - .github/workflows/apply-chiba-field04-visual.yml
+      - main
+    types:
+      - opened
 
 permissions:
   contents: write
+  pull-requests: read
 
 jobs:
   apply:
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'phase13-chiba-field04-complete-visual'
     runs-on: ubuntu-latest
     steps:
       - name: Check out branch
