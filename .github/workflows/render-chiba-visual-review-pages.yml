@@ -1,0 +1,51 @@
+name: Render Chiba Visual Review Pages
+
+on:
+  push:
+    branches:
+      - phase13-chiba-visual-render-artifacts
+    paths:
+      - .github/workflows/render-chiba-visual-review-pages.yml
+      - scripts/render_chiba_visual_review_pages.py
+      - data/catalog/chiba_current_project_work_item_visual_review_queue.json
+      - data/reviewed/chiba-city/current_project_work_items_*.json
+  pull_request:
+    branches:
+      - main
+    paths:
+      - .github/workflows/render-chiba-visual-review-pages.yml
+      - scripts/render_chiba_visual_review_pages.py
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install renderer dependencies
+        run: python -m pip install --disable-pip-version-check pypdfium2 Pillow
+      - name: Download official Chiba second implementation plan
+        run: |
+          curl --fail --location --retry 3 --retry-all-errors \
+            --user-agent "Mozilla/5.0 Jichi-Insight/1.0" \
+            --output /tmp/chiba-second-implementation-plan.pdf \
+            https://www.city.chiba.jp/sogoseisaku/shichokoshitsu/hisho/hodo/documents/20260410-2-2.pdf
+          test -s /tmp/chiba-second-implementation-plan.pdf
+      - name: Render pending visual-review pages
+        run: |
+          python scripts/render_chiba_visual_review_pages.py \
+            --pdf /tmp/chiba-second-implementation-plan.pdf \
+            --output-dir chiba-visual-review-pages \
+            --dpi 180
+      - uses: actions/upload-artifact@v4
+        with:
+          name: chiba-visual-review-pages
+          path: chiba-visual-review-pages
+          if-no-files-found: error
+          retention-days: 7
