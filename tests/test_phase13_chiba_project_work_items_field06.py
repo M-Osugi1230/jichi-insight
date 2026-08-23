@@ -143,7 +143,10 @@ def test_work_item_manifest_advances_through_field06_without_inflation():
     assert capture["field_counts_reviewed"]["culture_sports"] == 15
     assert sum(capture["field_counts_reviewed"].values()) == capture["projects_reviewed"]
     assert structuring["projects_structured"] >= 97
-    assert structuring["projects_pending_visual_column_confirmation"] >= 38
+    assert (
+        structuring["projects_pending_visual_column_confirmation"]
+        == len(structuring["pending_review_ids"])
+    )
     assert (
         structuring["projects_not_yet_source_captured"]
         == capture["projects_remaining"]
