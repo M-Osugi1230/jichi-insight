@@ -23,7 +23,11 @@ permissions:
 
 jobs:
   apply-field02:
-    if: github.ref == 'refs/heads/phase13-chiba-field02-complete-visual'
+    if: >-
+      (github.event_name == 'push' &&
+       github.ref == 'refs/heads/phase13-chiba-field02-complete-visual') ||
+      (github.event_name == 'pull_request' &&
+       github.head_ref == 'phase13-chiba-field02-complete-visual')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
