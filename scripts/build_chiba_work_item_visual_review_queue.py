@@ -123,10 +123,16 @@ def build_queue(manifest: dict) -> dict:
         ),
         "promotion_requirements": [
             "project identity、source_location、公式PDF該当ページが一致すること",
-            "各work itemのitem_name、current_text、plan_text、target_textを視覚的に列対応できること",
+            (
+                "各work itemのitem_name、current_text、plan_text、target_textを"
+                "視覚的に列対応できること"
+            ),
             "ダッシュや空欄を数値0へ変換しないこと",
             "増分・年間値・累積値・状態値を原文の意味のまま保持すること",
-            "昇格後に当該reviewファイル、evidence、work-item manifest、Phase 13 control layers、testsの件数を同期すること",
+            (
+                "昇格後に当該reviewファイル、evidence、work-item manifest、"
+                "Phase 13 control layers、testsの件数を同期すること"
+            ),
         ],
         "batches": batches,
         "execution_order": "official_field_and_project_order",
