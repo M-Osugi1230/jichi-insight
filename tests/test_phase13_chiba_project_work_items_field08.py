@@ -20,12 +20,8 @@ def load(path: Path):
 def test_field08_source_capture_covers_all_22_identity_projects_exactly():
     identities = load(IDENTITIES)["records"]
     projects = load(REVIEW)["projects"]
-    identity_pairs = {
-        (row["review_id"], row["project_name"]) for row in identities
-    }
-    project_pairs = {
-        (row["review_id"], row["project_name"]) for row in projects
-    }
+    identity_pairs = {(row["review_id"], row["project_name"]) for row in identities}
+    project_pairs = {(row["review_id"], row["project_name"]) for row in projects}
 
     assert len(identities) == 22
     assert len(projects) == 22
@@ -34,9 +30,7 @@ def test_field08_source_capture_covers_all_22_identity_projects_exactly():
 
 
 def test_field08_measure_codes_and_source_locations_match_identity_layer():
-    identities = {
-        row["review_id"]: row for row in load(IDENTITIES)["records"]
-    }
+    identities = {row["review_id"]: row for row in load(IDENTITIES)["records"]}
     for project in load(REVIEW)["projects"]:
         identity = identities[project["review_id"]]
         assert project["measure_code"] == identity["measure_code"]
@@ -91,9 +85,7 @@ def test_field08_structured_work_items_are_unique_and_complete():
 
 
 def test_field08_preserves_counts_increments_area_and_missing_semantics():
-    projects = {
-        row["review_id"]: row for row in load(REVIEW)["projects"]
-    }
+    projects = {row["review_id"]: row for row in load(REVIEW)["projects"]}
     startup = projects["chiba-f08-p001"]["work_items"]
     location = projects["chiba-f08-p002"]["work_items"][0]
     employment = projects["chiba-f08-p007"]["work_items"][0]
@@ -153,10 +145,7 @@ def test_work_item_manifest_closes_all_eight_fields_without_overclaiming():
     structuring = manifest["work_item_structuring"]
 
     assert manifest["project_universe"] == 189
-    assert manifest["project_identity_coverage"] == {
-        "reviewed": 189,
-        "remaining": 0,
-    }
+    assert manifest["project_identity_coverage"] == {"reviewed": 189, "remaining": 0}
     assert capture["projects_reviewed"] == 189
     assert capture["projects_remaining"] == 0
     assert capture["field_counts_reviewed"] == {
@@ -170,11 +159,11 @@ def test_work_item_manifest_closes_all_eight_fields_without_overclaiming():
         "local_economy": 22,
     }
     assert sum(capture["field_counts_reviewed"].values()) == 189
-    assert structuring["projects_structured"] == 132
-    assert structuring["projects_pending_visual_column_confirmation"] == 57
+    assert structuring["projects_structured"] == 135
+    assert structuring["projects_pending_visual_column_confirmation"] == 54
     assert structuring["projects_not_yet_source_captured"] == 0
-    assert structuring["structured_work_items"] == 284
-    assert len(structuring["pending_review_ids"]) == 57
+    assert structuring["structured_work_items"] == 296
+    assert len(structuring["pending_review_ids"]) == 54
     assert manifest["next_field"] is None
 
 
