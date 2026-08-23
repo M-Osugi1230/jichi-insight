@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - phase13-chiba-visual-render-artifacts
-      - phase13-chiba-field02-complete-visual
     paths:
       - .github/workflows/render-chiba-visual-review-pages.yml
       - scripts/render_chiba_visual_review_pages.py
@@ -19,40 +18,9 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  apply-field02:
-    if: >-
-      (github.event_name == 'push' &&
-       github.ref == 'refs/heads/phase13-chiba-field02-complete-visual') ||
-      (github.event_name == 'pull_request' &&
-       github.head_ref == 'phase13-chiba-field02-complete-visual')
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: phase13-chiba-field02-complete-visual
-          fetch-depth: 0
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-      - name: Apply visually confirmed field 2 promotions
-        run: |
-          python scripts/apply_chiba_field02_visual_promotions.py
-          python scripts/build_chiba_work_item_visual_review_queue.py
-      - name: Restore workflow and commit production changes
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git fetch origin main
-          git checkout origin/main -- .github/workflows/render-chiba-visual-review-pages.yml
-          git rm scripts/apply_chiba_field02_visual_promotions.py
-          git rm .github/workflows/phase13-field02-visual-promotions.yml
-          git add data tests .github/workflows/render-chiba-visual-review-pages.yml
-          git commit -m 'Complete Chiba field 2 visual work-item review'
-          git push origin HEAD:phase13-chiba-field02-complete-visual
-
   render:
     runs-on: ubuntu-latest
     steps:
