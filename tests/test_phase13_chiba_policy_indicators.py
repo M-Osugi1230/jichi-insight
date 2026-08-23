@@ -195,9 +195,9 @@ def test_chiba_plan_review_advances_after_project_source_capture():
     assert indicator["quantitative_indicator_count"] == 40
     assert indicator["qualitative_constituent_factor_primary_count"] == 6
     assert work_items["source_captured_project_count"] == 189
-    assert work_items["structured_project_count"] == 131
-    assert work_items["pending_visual_column_confirmation_project_count"] == 58
-    assert work_items["structured_work_item_count"] == 280
-    assert "58" in review["next_action"]
+    assert work_items["structured_project_count"] == 132
+    assert work_items["pending_visual_column_confirmation_project_count"] == 57
+    assert work_items["structured_work_item_count"] == 284
+    assert "57" in review["next_action"]
     assert "visual column confirmation" in review["next_action"]
     assert "189/189" in review["quality_boundary"]
