@@ -93,6 +93,7 @@ def build_queue(manifest: dict) -> dict:
 
     source_capture = manifest["work_item_source_capture"]
     structuring = manifest["work_item_structuring"]
+    pending_count = structuring["projects_pending_visual_column_confirmation"]
     first_nonempty = next(batch for batch in batches if batch["pending_count"] > 0)
 
     return {
@@ -108,9 +109,7 @@ def build_queue(manifest: dict) -> dict:
             "projects_source_captured": source_capture["projects_reviewed"],
             "projects_structured": structuring["projects_structured"],
             "structured_work_items": structuring["structured_work_items"],
-            "projects_pending_visual_column_confirmation": structuring[
-                "projects_pending_visual_column_confirmation"
-            ],
+            "projects_pending_visual_column_confirmation": pending_count,
             "projects_not_yet_source_captured": structuring[
                 "projects_not_yet_source_captured"
             ],
@@ -143,7 +142,7 @@ def build_queue(manifest: dict) -> dict:
         },
         "quality_boundary": (
             "このキューは未確認値を埋めるための推測リストではなく、189/189 source capture"
-            "完了後に残る58事業の視覚確認作業を漏れなく追跡する制御ファイル。"
+            f"完了後に残る{pending_count}事業の視覚確認作業を漏れなく追跡する制御ファイル。"
             "キュー登録自体はstructured昇格を意味しない。"
         ),
     }
