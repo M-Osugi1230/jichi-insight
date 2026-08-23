@@ -43,7 +43,7 @@ def test_field01_measure_codes_and_source_locations_match_identity_layer():
         assert project["source_location"].startswith("PDF p")
 
 
-def test_field01_has_26_structured_projects_and_four_explicit_pending_projects():
+def test_field01_has_27_structured_projects_and_three_explicit_pending_projects():
     projects = combined_projects()
     pending = [
         row
@@ -52,13 +52,12 @@ def test_field01_has_26_structured_projects_and_four_explicit_pending_projects()
     ]
     structured = [row for row in projects if row not in pending]
 
-    assert len(structured) == 26
-    assert len(pending) == 4
+    assert len(structured) == 27
+    assert len(pending) == 3
     assert {row["review_id"] for row in pending} == {
         "chiba-f01-p018",
         "chiba-f01-p020",
         "chiba-f01-p026",
-        "chiba-f01-p029",
     }
     assert all(row["raw_table_text"].strip() for row in pending)
     assert all(row["work_items"] == [] for row in pending)
@@ -72,8 +71,8 @@ def test_field01_structured_work_items_have_complete_raw_source_columns():
     ]
     ids = [item["work_item_id"] for item in work_items]
 
-    assert len(work_items) == 65
-    assert len(ids) == len(set(ids)) == 65
+    assert len(work_items) == 69
+    assert len(ids) == len(set(ids)) == 69
     assert all(item["item_name"].strip() for item in work_items)
     assert all(item["current_text"].strip() for item in work_items)
     assert all(item["plan_text"].strip() for item in work_items)
@@ -115,21 +114,57 @@ def test_field01_dash_current_values_are_preserved_not_converted_to_zero():
     assert all(item["current_text"] != "0" for item in dash_items)
 
 
+def test_field01_river_project_visual_confirmation_preserves_four_rows():
+    projects = {row["review_id"]: row for row in combined_projects()}
+    river = projects["chiba-f01-p029"]
+
+    assert river["parse_status"] == "reviewed_structured"
+    assert len(river["work_items"]) == 4
+    assert river["work_items"][0] == {
+        "work_item_id": "chiba-f01-p029-w001",
+        "item_name": "花見川の利活用 / 花見川千本桜緑地の活性化",
+        "current_text": "利活用社会実験実施 / トライアルサウンディング",
+        "plan_text": (
+            "利活用社会実験実施 / トライアルサウンディング / 民間活力導入可能性調査"
+        ),
+        "target_text": "利活用社会実験実施 / 利活用方針の策定",
+        "parse_status": "reviewed_structured",
+    }
+    assert river["work_items"][2]["target_text"] == (
+        "利活用社会実験実施 / かわまちづくり計画策定・登録"
+    )
+    assert river["work_items"][3]["current_text"] == "利活用社会実験実施"
+    assert river["work_items"][3]["plan_text"] == "利活用社会実験実施"
+    assert river["work_items"][3]["target_text"] == "利活用社会実験実施"
+
+
 def test_field01_evidence_reconciles_source_capture_and_structuring():
     evidence = load(EVIDENCE)
 
     assert evidence["identity_project_count"] == 30
     assert evidence["source_captured_project_count"] == 30
-    assert evidence["structured_project_count"] == 26
-    assert evidence["pending_visual_column_confirmation_project_count"] == 4
-    assert evidence["structured_work_item_count"] == 65
+    assert evidence["structured_project_count"] == 27
+    assert evidence["pending_visual_column_confirmation_project_count"] == 3
+    assert evidence["structured_work_item_count"] == 69
     assert evidence["reconciliation"] == {
         "official_field01_project_count": 30,
         "source_capture_coverage": "30/30",
-        "structured_project_coverage": "26/30",
-        "structured_work_item_count": 65,
-        "pending_project_count": 4,
+        "structured_project_coverage": "27/30",
+        "structured_work_item_count": 69,
+        "pending_project_count": 3,
     }
+    assert evidence["visual_confirmed_promotions"] == [
+        {
+            "review_id": "chiba-f01-p029",
+            "project_name": "河川を活用したまちづくり",
+            "source_location": "PDF p.31",
+            "structured_work_item_count": 4,
+            "review_basis": (
+                "公式第2次実施計画の分野1 PDF掲載ページ画像で、取組項目・"
+                "令和7年度末現況・計画内容・令和10年度末目標の4列対応を直接確認"
+            ),
+        }
+    ]
 
 
 def test_field01_work_item_manifest_retains_progress_as_later_fields_advance():
@@ -140,7 +175,6 @@ def test_field01_work_item_manifest_retains_progress_as_later_fields_advance():
         "chiba-f01-p018",
         "chiba-f01-p020",
         "chiba-f01-p026",
-        "chiba-f01-p029",
     }
 
     assert manifest["project_universe"] == 189
@@ -149,8 +183,9 @@ def test_field01_work_item_manifest_retains_progress_as_later_fields_advance():
     assert capture["projects_remaining"] == 189 - capture["projects_reviewed"]
     assert capture["field_counts_reviewed"]["environment_nature"] == 30
     assert sum(capture["field_counts_reviewed"].values()) == capture["projects_reviewed"]
-    assert structuring["projects_structured"] >= 26
-    assert structuring["projects_pending_visual_column_confirmation"] >= 4
+    assert structuring["projects_structured"] >= 27
+    assert structuring["projects_pending_visual_column_confirmation"] >= 3
     assert structuring["projects_not_yet_source_captured"] == capture["projects_remaining"]
-    assert structuring["structured_work_items"] >= 65
+    assert structuring["structured_work_items"] >= 69
     assert field01_pending <= set(structuring["pending_review_ids"])
+    assert "chiba-f01-p029" not in structuring["pending_review_ids"]
