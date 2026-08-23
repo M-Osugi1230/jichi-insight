@@ -1,0 +1,36 @@
+name: Apply Chiba Field 2 Visual Promotions
+
+on:
+  push:
+    branches:
+      - phase13-chiba-field02-complete-visual
+    paths:
+      - .github/workflows/phase13-field02-visual-promotions.yml
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: phase13-chiba-field02-complete-visual
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Apply visually confirmed promotions
+        run: |
+          python scripts/apply_chiba_field02_visual_promotions.py
+          python scripts/build_chiba_visual_review_queue.py
+      - name: Commit generated data updates
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git rm scripts/apply_chiba_field02_visual_promotions.py
+          git rm .github/workflows/phase13-field02-visual-promotions.yml
+          git add data tests
+          git commit -m 'Complete Chiba field 2 visual work-item review'
+          git push origin HEAD:phase13-chiba-field02-complete-visual
