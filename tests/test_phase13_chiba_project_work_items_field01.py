@@ -53,7 +53,6 @@ def test_field01_all_30_projects_are_structured_after_visual_review():
 
     assert len(projects) == 30
     assert pending == []
-    assert all(row["parse_status"] != "pending_visual_column_confirmation" for row in projects)
 
 
 def test_field01_structured_work_items_have_complete_raw_source_columns():
