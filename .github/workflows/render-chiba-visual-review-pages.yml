@@ -40,7 +40,7 @@ jobs:
       - name: Apply visually confirmed field 2 promotions
         run: |
           python scripts/apply_chiba_field02_visual_promotions.py
-          python scripts/build_chiba_visual_review_queue.py
+          python scripts/build_chiba_work_item_visual_review_queue.py
       - name: Restore workflow and commit production changes
         run: |
           git config user.name 'github-actions[bot]'
