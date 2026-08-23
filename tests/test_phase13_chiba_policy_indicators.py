@@ -176,18 +176,28 @@ def test_chiba_manifest_links_completed_policy_indicator_layer():
     assert all("KGI/KPI identity" not in item for item in manifest["remaining_work"])
 
 
-def test_chiba_plan_review_advances_next_action_to_project_quantities():
+def test_chiba_plan_review_advances_after_project_source_capture():
     review = load(PLAN_REVIEW)
     indicator = next(
         row
         for row in review["records"]
         if row["id"] == "chiba-current-policy-indicators"
     )
+    work_items = next(
+        row
+        for row in review["records"]
+        if row["id"] == "chiba-current-project-work-items"
+    )
 
     assert review["review_status"] == (
-        "review_in_progress_identity_and_policy_indicators_complete"
+        "review_in_progress_project_work_item_source_capture_complete"
     )
     assert indicator["quantitative_indicator_count"] == 40
     assert indicator["qualitative_constituent_factor_primary_count"] == 6
-    assert "project-scoped work_items" in review["next_action"]
+    assert work_items["source_captured_project_count"] == 189
+    assert work_items["structured_project_count"] == 131
+    assert work_items["pending_visual_column_confirmation_project_count"] == 58
+    assert work_items["structured_work_item_count"] == 280
+    assert "58" in review["next_action"]
+    assert "visual column confirmation" in review["next_action"]
     assert "189/189" in review["quality_boundary"]
