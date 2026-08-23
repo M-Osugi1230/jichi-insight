@@ -67,13 +67,17 @@ def test_field01_key_source_semantics_and_visual_rows_remain_exact():
     assert len(zoo) == 7
     assert zoo[6]["plan_text"] == zoo[6]["target_text"]
     assert any(
-        item["current_text"] == "―" for project in projects.values() for item in project["work_items"]
+        item["current_text"] == "―"
+        for project in projects.values()
+        for item in project["work_items"]
     )
 
 
 def test_field01_evidence_records_complete_visual_resolution():
     evidence = load(EVIDENCE)
-    promotions = {row["review_id"]: row for row in evidence["visual_confirmed_promotions"]}
+    promotions = {
+        row["review_id"]: row for row in evidence["visual_confirmed_promotions"]
+    }
 
     assert evidence["review_status"] == "reviewed_source_capture_and_structuring_complete"
     assert evidence["structured_project_count"] == 30
