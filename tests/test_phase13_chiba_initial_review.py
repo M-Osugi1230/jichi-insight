@@ -181,4 +181,5 @@ def test_chiba_initial_review_contract_remains_valid_as_identity_depth_advances(
         541_700_000_000
     )
     assert project_fact["source_id"] == "chiba-implementation-plan-2026-2028-full-pdf"
-    assert "project identity layer" in manifest["quality_boundary"]
+    assert "project identity" in manifest["quality_boundary"]
+    assert "source-capture" in manifest["quality_boundary"]
