@@ -187,7 +187,9 @@ def test_field07_manifest_advances_to_final_field_without_inflation():
     assert capture["field_counts_reviewed"]["urban_transport"] == 32
     assert sum(capture["field_counts_reviewed"].values()) == capture["projects_reviewed"]
     assert structuring["projects_structured"] >= 119
-    assert structuring["projects_pending_visual_column_confirmation"] >= 48
+    assert structuring["projects_pending_visual_column_confirmation"] >= len(
+        field07_pending
+    )
     assert (
         structuring["projects_not_yet_source_captured"]
         == capture["projects_remaining"]

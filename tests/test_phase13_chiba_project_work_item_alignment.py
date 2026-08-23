@@ -50,9 +50,9 @@ def test_chiba_project_work_item_progress_reconciles_across_control_layers():
 
     expected = {
         "source_captured_project_count": 189,
-        "structured_project_count": 135,
-        "pending_visual_column_confirmation_project_count": 54,
-        "structured_work_item_count": 296,
+        "structured_project_count": 144,
+        "pending_visual_column_confirmation_project_count": 45,
+        "structured_work_item_count": 318,
     }
     for key, value in expected.items():
         assert policy_fact[key] == value
@@ -77,7 +77,7 @@ def test_chiba_source_capture_completion_does_not_claim_full_structuring():
     assert fact["source_captured_project_count"] == 189
     assert fact["structured_project_count"] < fact["project_universe"]
     assert work_manifest["next_field"] is None
-    assert len(work_manifest["work_item_structuring"]["pending_review_ids"]) == 54
+    assert len(work_manifest["work_item_structuring"]["pending_review_ids"]) == 45
 
 
 def test_chiba_field01_completion_advances_visual_review_to_field02():
@@ -85,9 +85,9 @@ def test_chiba_field01_completion_advances_visual_review_to_field02():
     plan = load(PLAN_REVIEW)
     work_manifest = load(WORK_ITEM_MANIFEST)
 
-    assert "54" in policy["remaining_work"][0]
+    assert "45" in policy["remaining_work"][0]
     assert "視覚確認" in policy["remaining_work"][0]
-    assert "54" in plan["next_action"]
+    assert "45" in plan["next_action"]
     assert "visual column confirmation" in plan["next_action"]
     assert "versioned linkage" in plan["next_action"]
     assert "budget/settlement linkage" in plan["next_action"]

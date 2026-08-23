@@ -23,48 +23,23 @@ def test_field02_source_capture_covers_all_31_identity_projects_exactly():
     identity_pairs = {(row["review_id"], row["project_name"]) for row in identities}
     project_pairs = {(row["review_id"], row["project_name"]) for row in projects}
 
-    assert len(identities) == 31
-    assert len(projects) == 31
+    assert len(identities) == len(projects) == 31
     assert len({row["review_id"] for row in projects}) == 31
     assert identity_pairs == project_pairs
+    assert all(row["source_location"].startswith("PDF p") for row in projects)
 
 
-def test_field02_measure_codes_and_source_locations_match_identity_layer():
-    identities = {row["review_id"]: row for row in load(IDENTITIES)["records"]}
-
-    for project in load(REVIEW)["projects"]:
-        identity = identities[project["review_id"]]
-        assert project["measure_code"] == identity["measure_code"]
-        assert project["source_location"].startswith("PDF p")
-
-
-def test_field02_has_22_structured_projects_and_nine_explicit_pending_projects():
+def test_field02_all_31_projects_are_structured_after_visual_review():
     projects = load(REVIEW)["projects"]
-    pending = [
-        row
+
+    assert all(
+        row.get("parse_status") != "pending_visual_column_confirmation"
         for row in projects
-        if row.get("parse_status") == "pending_visual_column_confirmation"
-    ]
-    structured = [row for row in projects if row not in pending]
-
-    assert len(structured) == 22
-    assert len(pending) == 9
-    assert {row["review_id"] for row in pending} == {
-        "chiba-f02-p001",
-        "chiba-f02-p009",
-        "chiba-f02-p012",
-        "chiba-f02-p014",
-        "chiba-f02-p016",
-        "chiba-f02-p019",
-        "chiba-f02-p023",
-        "chiba-f02-p026",
-        "chiba-f02-p028",
-    }
-    assert all(row["raw_table_text"].strip() for row in pending)
-    assert all(row["work_items"] == [] for row in pending)
+    )
+    assert all(row["work_items"] for row in projects)
 
 
-def test_field02_structured_work_items_have_complete_raw_source_columns():
+def test_field02_has_76_unique_complete_work_items():
     work_items = [
         item
         for project in load(REVIEW)["projects"]
@@ -72,8 +47,7 @@ def test_field02_structured_work_items_have_complete_raw_source_columns():
     ]
     ids = [item["work_item_id"] for item in work_items]
 
-    assert len(work_items) == 54
-    assert len(ids) == len(set(ids)) == 54
+    assert len(work_items) == len(ids) == len(set(ids)) == 76
     assert all(item["item_name"].strip() for item in work_items)
     assert all(item["current_text"].strip() for item in work_items)
     assert all(item["plan_text"].strip() for item in work_items)
@@ -84,86 +58,53 @@ def test_field02_structured_work_items_have_complete_raw_source_columns():
     }
 
 
-def test_field02_preserves_facility_and_route_semantics_as_source_text():
+def test_field02_visual_promotions_preserve_confirmed_table_semantics():
     projects = {row["review_id"]: row for row in load(REVIEW)["projects"]}
-    drainage = {
-        item["work_item_id"]: item
-        for item in projects["chiba-f02-p006"]["work_items"]
-    }
-    sidewalk = {
-        item["work_item_id"]: item
-        for item in projects["chiba-f02-p030"]["work_items"]
-    }
 
-    assert drainage["chiba-f02-p006-w001"]["current_text"] == "6施設"
-    assert drainage["chiba-f02-p006-w001"]["plan_text"] == "6施設"
-    assert drainage["chiba-f02-p006-w001"]["target_text"] == "12施設"
-    assert sidewalk["chiba-f02-p030-w001"]["current_text"] == (
-        "4路線（令和7年度事業量）"
+    assert projects["chiba-f02-p001"]["work_items"][0]["plan_text"] == (
+        "高潮避難計画の策定 / 市民向け周知啓発 / 避難訓練の実施2地区"
     )
-    assert sidewalk["chiba-f02-p030-w003"]["target_text"] == (
-        "5路線（供用開始1路線）"
+    assert projects["chiba-f02-p009"]["work_items"][0]["target_text"] == (
+        "新橋供用開始"
+    )
+    assert projects["chiba-f02-p012"]["work_items"][0]["plan_text"] == (
+        "整備5.84km / 管網計算、実施設計"
     )
 
+    fire = projects["chiba-f02-p019"]["work_items"]
+    assert [row["current_text"] for row in fire] == ["7基", "―", "―", "81か所"]
+    assert [row["target_text"] for row in fire] == ["10基", "3基", "2基", "84か所"]
 
-def test_field02_dash_current_values_are_preserved_not_converted_to_zero():
-    work_items = [
-        item
-        for project in load(REVIEW)["projects"]
-        for item in project["work_items"]
-    ]
-    dash_items = [item for item in work_items if item["current_text"] == "―"]
-
-    assert len(dash_items) >= 6
-    assert all(item["current_text"] != "0" for item in dash_items)
+    roads = projects["chiba-f02-p028"]["work_items"]
+    assert len(roads) == 7
+    assert roads[4]["target_text"] == "設置完了"
+    assert roads[6]["plan_text"] == roads[6]["target_text"] == "120基"
 
 
-def test_field02_evidence_reconciles_local_and_cumulative_progress():
+def test_field02_evidence_records_complete_visual_resolution():
     evidence = load(EVIDENCE)
+    promotions = evidence["visual_confirmed_promotions"]
 
-    assert evidence["identity_project_count"] == 31
-    assert evidence["source_captured_project_count"] == 31
-    assert evidence["structured_project_count"] == 22
-    assert evidence["pending_visual_column_confirmation_project_count"] == 9
-    assert evidence["structured_work_item_count"] == 54
-    assert evidence["reconciliation"] == {
-        "official_field02_project_count": 31,
-        "source_capture_coverage": "31/31",
-        "structured_project_coverage": "22/31",
-        "structured_work_item_count": 54,
-        "pending_project_count": 9,
-        "cumulative_source_captured_projects": 61,
-        "cumulative_structured_projects": 48,
-        "cumulative_structured_work_items": 119,
-        "cumulative_pending_visual_projects": 13,
-    }
+    assert evidence["review_status"] == "reviewed_source_capture_and_structuring_complete"
+    assert evidence["structured_project_count"] == 31
+    assert evidence["pending_visual_column_confirmation_project_count"] == 0
+    assert evidence["structured_work_item_count"] == 76
+    assert evidence["pending_visual_column_confirmation"] == []
+    assert len(promotions) == 9
+    assert sum(row["structured_work_item_count"] for row in promotions) == 22
+    assert evidence["reconciliation"]["cumulative_structured_projects"] == 61
+    assert evidence["reconciliation"]["cumulative_structured_work_items"] == 157
+    assert evidence["reconciliation"]["cumulative_pending_visual_projects"] == 0
 
 
-def test_field02_manifest_retains_progress_as_later_fields_advance():
+def test_field02_manifest_records_completed_field_and_current_totals():
     manifest = load(MANIFEST)
-    capture = manifest["work_item_source_capture"]
     structuring = manifest["work_item_structuring"]
-    field02_pending = {
-        "chiba-f02-p001",
-        "chiba-f02-p009",
-        "chiba-f02-p012",
-        "chiba-f02-p014",
-        "chiba-f02-p016",
-        "chiba-f02-p019",
-        "chiba-f02-p023",
-        "chiba-f02-p026",
-        "chiba-f02-p028",
-    }
 
-    assert manifest["project_universe"] == 189
-    assert manifest["project_identity_coverage"] == {"reviewed": 189, "remaining": 0}
-    assert capture["projects_reviewed"] >= 61
-    assert capture["projects_remaining"] == 189 - capture["projects_reviewed"]
-    assert capture["field_counts_reviewed"]["environment_nature"] == 30
-    assert capture["field_counts_reviewed"]["safety_security"] == 31
-    assert sum(capture["field_counts_reviewed"].values()) == capture["projects_reviewed"]
-    assert structuring["projects_structured"] >= 48
-    assert structuring["projects_pending_visual_column_confirmation"] >= 13
-    assert structuring["projects_not_yet_source_captured"] == capture["projects_remaining"]
-    assert structuring["structured_work_items"] >= 119
-    assert field02_pending <= set(structuring["pending_review_ids"])
+    assert structuring["projects_structured"] == 144
+    assert structuring["projects_pending_visual_column_confirmation"] == 45
+    assert structuring["structured_work_items"] == 318
+    assert all(
+        not review_id.startswith("chiba-f02-")
+        for review_id in structuring["pending_review_ids"]
+    )

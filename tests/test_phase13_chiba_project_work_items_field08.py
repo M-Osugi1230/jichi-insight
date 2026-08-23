@@ -159,11 +159,11 @@ def test_work_item_manifest_closes_all_eight_fields_without_overclaiming():
         "local_economy": 22,
     }
     assert sum(capture["field_counts_reviewed"].values()) == 189
-    assert structuring["projects_structured"] == 135
-    assert structuring["projects_pending_visual_column_confirmation"] == 54
+    assert structuring["projects_structured"] == 144
+    assert structuring["projects_pending_visual_column_confirmation"] == 45
     assert structuring["projects_not_yet_source_captured"] == 0
-    assert structuring["structured_work_items"] == 296
-    assert len(structuring["pending_review_ids"]) == 54
+    assert structuring["structured_work_items"] == 318
+    assert len(structuring["pending_review_ids"]) == 45
     assert manifest["next_field"] is None
 
 
