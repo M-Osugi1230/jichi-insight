@@ -198,4 +198,7 @@ def test_field01_work_item_manifest_records_completed_field():
     assert structuring["projects_pending_visual_column_confirmation"] == 54
     assert structuring["projects_not_yet_source_captured"] == 0
     assert structuring["structured_work_items"] == 296
-    assert all(not review_id.startswith("chiba-f01-") for review_id in structuring["pending_review_ids"])
+    assert all(
+        not review_id.startswith("chiba-f01-")
+        for review_id in structuring["pending_review_ids"]
+    )
