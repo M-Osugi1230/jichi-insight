@@ -119,8 +119,9 @@ def main() -> None:
         "rendered_pages": pages,
         "projects": records,
         "quality_boundary": (
-            "Rendered pages are review evidence only. A queued project remains pending until a human or "
-            "visual model confirms the table-column relationships on the rendered official PDF page."
+            "Rendered pages are review evidence only. A queued project remains pending "
+            "until a human or visual model confirms the table-column relationships on "
+            "the rendered official PDF page."
         ),
     }
     (args.output_dir / "index.json").write_text(
