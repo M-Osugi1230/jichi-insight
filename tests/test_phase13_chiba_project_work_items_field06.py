@@ -36,20 +36,37 @@ def test_field06_measure_codes_and_source_locations_match_identity_layer():
 
 def test_field06_has_six_structured_projects_and_nine_explicit_pending_projects():
     projects = load(REVIEW)["projects"]
-    pending = [row for row in projects if row["parse_status"] == "pending_visual_column_confirmation"]
+    pending = [
+        row
+        for row in projects
+        if row["parse_status"] == "pending_visual_column_confirmation"
+    ]
     structured = [row for row in projects if row not in pending]
     assert len(structured) == 6
     assert len(pending) == 9
     assert {row["review_id"] for row in pending} == {
-        "chiba-f06-p001", "chiba-f06-p002", "chiba-f06-p004",
-        "chiba-f06-p006", "chiba-f06-p007", "chiba-f06-p009",
-        "chiba-f06-p011", "chiba-f06-p013", "chiba-f06-p014",
+        "chiba-f06-p001",
+        "chiba-f06-p002",
+        "chiba-f06-p004",
+        "chiba-f06-p006",
+        "chiba-f06-p007",
+        "chiba-f06-p009",
+        "chiba-f06-p011",
+        "chiba-f06-p013",
+        "chiba-f06-p014",
     }
-    assert all(row["raw_table_text"].strip() and row["work_items"] == [] for row in pending)
+    assert all(
+        row["raw_table_text"].strip() and row["work_items"] == []
+        for row in pending
+    )
 
 
 def test_field06_structured_work_items_are_unique_and_complete():
-    work_items = [item for project in load(REVIEW)["projects"] for item in project["work_items"]]
+    work_items = [
+        item
+        for project in load(REVIEW)["projects"]
+        for item in project["work_items"]
+    ]
     ids = [item["work_item_id"] for item in work_items]
     assert len(work_items) == len(ids) == len(set(ids)) == 9
     assert all(item["item_name"].strip() for item in work_items)
@@ -115,7 +132,12 @@ def test_work_item_manifest_advances_through_field06_without_inflation():
         },
     }
     assert manifest["work_item_structuring"]["projects_structured"] == 97
-    assert manifest["work_item_structuring"]["projects_pending_visual_column_confirmation"] == 38
+    assert (
+        manifest["work_item_structuring"][
+            "projects_pending_visual_column_confirmation"
+        ]
+        == 38
+    )
     assert manifest["work_item_structuring"]["projects_not_yet_source_captured"] == 54
     assert manifest["work_item_structuring"]["structured_work_items"] == 209
     assert len(manifest["work_item_structuring"]["pending_review_ids"]) == 38
