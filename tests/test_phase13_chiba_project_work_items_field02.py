@@ -139,26 +139,31 @@ def test_field02_evidence_reconciles_local_and_cumulative_progress():
     }
 
 
-def test_work_item_manifest_advances_through_field02_without_inflation():
+def test_field02_manifest_retains_progress_as_later_fields_advance():
     manifest = load(MANIFEST)
+    capture = manifest["work_item_source_capture"]
+    structuring = manifest["work_item_structuring"]
+    field02_pending = {
+        "chiba-f02-p001",
+        "chiba-f02-p009",
+        "chiba-f02-p012",
+        "chiba-f02-p014",
+        "chiba-f02-p016",
+        "chiba-f02-p019",
+        "chiba-f02-p023",
+        "chiba-f02-p026",
+        "chiba-f02-p028",
+    }
 
     assert manifest["project_universe"] == 189
     assert manifest["project_identity_coverage"] == {"reviewed": 189, "remaining": 0}
-    assert manifest["work_item_source_capture"] == {
-        "projects_reviewed": 61,
-        "projects_remaining": 128,
-        "field_counts_reviewed": {
-            "environment_nature": 30,
-            "safety_security": 31,
-        },
-    }
-    assert manifest["work_item_structuring"]["projects_structured"] == 48
-    assert manifest["work_item_structuring"]["projects_pending_visual_column_confirmation"] == 13
-    assert manifest["work_item_structuring"]["projects_not_yet_source_captured"] == 128
-    assert manifest["work_item_structuring"]["structured_work_items"] == 119
-    assert len(manifest["work_item_structuring"]["pending_review_ids"]) == 13
-    assert manifest["next_field"] == {
-        "field_code": "3",
-        "field_name": "健康・福祉",
-        "official_project_count": 18,
-    }
+    assert capture["projects_reviewed"] >= 61
+    assert capture["projects_remaining"] == 189 - capture["projects_reviewed"]
+    assert capture["field_counts_reviewed"]["environment_nature"] == 30
+    assert capture["field_counts_reviewed"]["safety_security"] == 31
+    assert sum(capture["field_counts_reviewed"].values()) == capture["projects_reviewed"]
+    assert structuring["projects_structured"] >= 48
+    assert structuring["projects_pending_visual_column_confirmation"] >= 13
+    assert structuring["projects_not_yet_source_captured"] == capture["projects_remaining"]
+    assert structuring["structured_work_items"] >= 119
+    assert field02_pending <= set(structuring["pending_review_ids"])
