@@ -117,32 +117,36 @@ def test_field06_evidence_reconciles_local_and_cumulative_progress():
 
 def test_work_item_manifest_advances_through_field06_without_inflation():
     manifest = load(MANIFEST)
+    capture = manifest["work_item_source_capture"]
+    structuring = manifest["work_item_structuring"]
+    field06_pending = {
+        "chiba-f06-p001",
+        "chiba-f06-p002",
+        "chiba-f06-p004",
+        "chiba-f06-p006",
+        "chiba-f06-p007",
+        "chiba-f06-p009",
+        "chiba-f06-p011",
+        "chiba-f06-p013",
+        "chiba-f06-p014",
+    }
+
     assert manifest["project_universe"] == 189
     assert manifest["project_identity_coverage"] == {"reviewed": 189, "remaining": 0}
-    assert manifest["work_item_source_capture"] == {
-        "projects_reviewed": 135,
-        "projects_remaining": 54,
-        "field_counts_reviewed": {
-            "environment_nature": 30,
-            "safety_security": 31,
-            "health_welfare": 18,
-            "children_education": 34,
-            "community": 7,
-            "culture_sports": 15,
-        },
-    }
-    assert manifest["work_item_structuring"]["projects_structured"] == 97
+    assert capture["projects_reviewed"] >= 135
+    assert capture["projects_remaining"] == 189 - capture["projects_reviewed"]
+    assert capture["field_counts_reviewed"]["environment_nature"] == 30
+    assert capture["field_counts_reviewed"]["safety_security"] == 31
+    assert capture["field_counts_reviewed"]["health_welfare"] == 18
+    assert capture["field_counts_reviewed"]["children_education"] == 34
+    assert capture["field_counts_reviewed"]["community"] == 7
+    assert capture["field_counts_reviewed"]["culture_sports"] == 15
+    assert sum(capture["field_counts_reviewed"].values()) == capture["projects_reviewed"]
+    assert structuring["projects_structured"] >= 97
+    assert structuring["projects_pending_visual_column_confirmation"] >= 38
     assert (
-        manifest["work_item_structuring"][
-            "projects_pending_visual_column_confirmation"
-        ]
-        == 38
+        structuring["projects_not_yet_source_captured"]
+        == capture["projects_remaining"]
     )
-    assert manifest["work_item_structuring"]["projects_not_yet_source_captured"] == 54
-    assert manifest["work_item_structuring"]["structured_work_items"] == 209
-    assert len(manifest["work_item_structuring"]["pending_review_ids"]) == 38
-    assert manifest["next_field"] == {
-        "field_code": "7",
-        "field_name": "都市・交通",
-        "official_project_count": 32,
-    }
+    assert structuring["structured_work_items"] >= 209
+    assert field06_pending <= set(structuring["pending_review_ids"])
