@@ -26,7 +26,7 @@ def projects_by_id(paths: list[str]):
     return projects
 
 
-def test_visual_review_queue_reconciles_all_58_pending_projects():
+def test_visual_review_queue_reconciles_all_57_pending_projects():
     queue = load(QUEUE)
     manifest = load(MANIFEST)
     queued_ids = [
@@ -37,10 +37,10 @@ def test_visual_review_queue_reconciles_all_58_pending_projects():
     manifest_ids = manifest["work_item_structuring"]["pending_review_ids"]
 
     assert queue["status"] == "ready_for_visual_confirmation"
-    assert len(queued_ids) == len(set(queued_ids)) == 58
+    assert len(queued_ids) == len(set(queued_ids)) == 57
     assert set(queued_ids) == set(manifest_ids)
     assert [batch["pending_count"] for batch in queue["batches"]] == [
-        4,
+        3,
         9,
         4,
         8,
@@ -49,7 +49,7 @@ def test_visual_review_queue_reconciles_all_58_pending_projects():
         10,
         10,
     ]
-    assert sum(batch["pending_count"] for batch in queue["batches"]) == 58
+    assert sum(batch["pending_count"] for batch in queue["batches"]) == 57
 
 
 def test_every_queued_id_resolves_to_pending_raw_evidence():
@@ -80,7 +80,7 @@ def test_visual_queue_contains_no_structured_project():
 
     assert queued_ids.isdisjoint(structured_ids)
     assert len(all_projects) == 189
-    assert len(structured_ids) == 131
+    assert len(structured_ids) == 132
 
 
 def test_visual_queue_preserves_completed_source_capture_totals():
@@ -90,9 +90,9 @@ def test_visual_queue_preserves_completed_source_capture_totals():
     assert source_capture == {
         "project_universe": 189,
         "projects_source_captured": 189,
-        "projects_structured": 131,
-        "structured_work_items": 280,
-        "projects_pending_visual_column_confirmation": 58,
+        "projects_structured": 132,
+        "structured_work_items": 284,
+        "projects_pending_visual_column_confirmation": 57,
         "projects_not_yet_source_captured": 0,
     }
 
@@ -130,7 +130,7 @@ def test_next_visual_batch_starts_with_field01_official_order():
             "chiba-f01-p018",
             "chiba-f01-p020",
             "chiba-f01-p026",
-            "chiba-f01-p029",
         ],
     }
     assert "推定しない" in queue["resolution_rule"]
+    assert "57事業" in queue["quality_boundary"]
