@@ -180,4 +180,5 @@ def test_chiba_initial_review_contract_remains_valid_as_identity_depth_advances(
     assert facts["chiba-2026-general-account-initial-budget"]["value"] == (
         541_700_000_000
     )
-    assert "189 current projects" in manifest["quality_boundary"]
+    assert project_fact["source_id"] == "chiba-implementation-plan-2026-2028-full-pdf"
+    assert "project identity layer" in manifest["quality_boundary"]
