@@ -23,43 +23,30 @@ def test_field03_source_capture_covers_all_18_identity_projects_exactly():
     identity_pairs = {(row["review_id"], row["project_name"]) for row in identities}
     project_pairs = {(row["review_id"], row["project_name"]) for row in projects}
 
-    assert len(identities) == 18
-    assert len(projects) == 18
+    assert len(identities) == len(projects) == 18
     assert len({row["review_id"] for row in projects}) == 18
     assert identity_pairs == project_pairs
 
 
 def test_field03_measure_codes_and_source_locations_match_identity_layer():
     identities = {row["review_id"]: row for row in load(IDENTITIES)["records"]}
-
     for project in load(REVIEW)["projects"]:
         identity = identities[project["review_id"]]
         assert project["measure_code"] == identity["measure_code"]
         assert project["source_location"] == identity["source_location"]
 
 
-def test_field03_has_14_structured_projects_and_four_explicit_pending_projects():
+def test_field03_all_18_projects_are_structured_after_visual_review():
     projects = load(REVIEW)["projects"]
-    pending = [
-        row
+
+    assert all(
+        row.get("parse_status") != "pending_visual_column_confirmation"
         for row in projects
-        if row.get("parse_status") == "pending_visual_column_confirmation"
-    ]
-    structured = [row for row in projects if row not in pending]
-
-    assert len(structured) == 14
-    assert len(pending) == 4
-    assert {row["review_id"] for row in pending} == {
-        "chiba-f03-p004",
-        "chiba-f03-p005",
-        "chiba-f03-p006",
-        "chiba-f03-p007",
-    }
-    assert all(row["raw_table_text"].strip() for row in pending)
-    assert all(row["work_items"] == [] for row in pending)
+    )
+    assert all(row["work_items"] for row in projects)
 
 
-def test_field03_structured_work_items_are_unique_and_complete():
+def test_field03_has_33_unique_complete_work_items():
     work_items = [
         item
         for project in load(REVIEW)["projects"]
@@ -67,8 +54,7 @@ def test_field03_structured_work_items_are_unique_and_complete():
     ]
     ids = [item["work_item_id"] for item in work_items]
 
-    assert len(work_items) == 23
-    assert len(ids) == len(set(ids)) == 23
+    assert len(work_items) == len(ids) == len(set(ids)) == 33
     assert all(item["item_name"].strip() for item in work_items)
     assert all(item["current_text"].strip() for item in work_items)
     assert all(item["plan_text"].strip() for item in work_items)
@@ -79,79 +65,79 @@ def test_field03_structured_work_items_are_unique_and_complete():
     }
 
 
-def test_field03_preserves_increment_annual_and_state_semantics_as_source_text():
+def test_field03_visual_promotions_preserve_confirmed_table_semantics():
     projects = {row["review_id"]: row for row in load(REVIEW)["projects"]}
-    dental = projects["chiba-f03-p001"]["work_items"]
-    facilities = projects["chiba-f03-p012"]["work_items"]
-    farming = projects["chiba-f03-p014"]["work_items"]
-    support = projects["chiba-f03-p015"]["work_items"]
 
-    assert dental[1]["current_text"] == "7校"
-    assert dental[1]["plan_text"] == "30校増"
-    assert dental[1]["target_text"] == "37校"
-    assert facilities[0]["plan_text"] == "3か所増 / 補助単価増額"
-    assert farming[0]["plan_text"] == "奨励金5件/年"
-    assert farming[0]["target_text"] == "奨励金5件/年"
-    assert support[0]["plan_text"] == (
-        "利用日ごとの加算 / 入浴実施への加算 / 送迎実施への加算"
+    animal = projects["chiba-f03-p004"]["work_items"]
+    assert animal[0]["current_text"] == "基本設計 / 測量・境界確定 / 土質調査"
+    assert animal[0]["plan_text"] == "実施設計 / 工事 / センター移転"
+    assert animal[0]["target_text"] == "移転完了"
+    assert animal[1]["current_text"] == "―"
+
+    roads = projects["chiba-f03-p005"]["work_items"]
+    assert roads[0]["current_text"] == roads[0]["plan_text"] == "道路整備4路線"
+    assert roads[0]["target_text"] == (
+        "2路線供用開始 / 1路線冠水対策工事完了 / 1路線用地取得完了 / 道路整備"
     )
-    assert support[0]["target_text"] == "各加算の実施"
+    assert roads[1]["target_text"] == "供用開始"
+
+    cemetery = projects["chiba-f03-p006"]["work_items"]
+    assert cemetery[0]["plan_text"] == "工事・一部供用開始 / トイレ新築工事"
+    assert cemetery[0]["target_text"] == "工事・一部供用開始 / トイレ設置"
+    assert cemetery[2]["target_text"] == "認可"
+
+    crematorium = projects["chiba-f03-p007"]["work_items"]
+    assert crematorium[0]["plan_text"] == (
+        "基本計画策定 / 環境アセスメント実施 / 都市計画決定"
+    )
+    assert crematorium[1]["plan_text"] == "解体実施設計 / 解体工事"
+    assert crematorium[1]["target_text"] == "解体実施設計"
 
 
-def test_field03_dash_values_remain_missing_state_not_numeric_zero():
-    work_items = [
-        item
-        for project in load(REVIEW)["projects"]
+def test_field03_existing_increment_annual_and_dash_semantics_remain_intact():
+    projects = {row["review_id"]: row for row in load(REVIEW)["projects"]}
+    dental = projects["chiba-f03-p001"]["work_items"][1]
+    facilities = projects["chiba-f03-p012"]["work_items"][0]
+    farming = projects["chiba-f03-p014"]["work_items"][0]
+
+    assert (dental["current_text"], dental["plan_text"], dental["target_text"]) == (
+        "7校",
+        "30校増",
+        "37校",
+    )
+    assert facilities["plan_text"] == "3か所増 / 補助単価増額"
+    assert farming["plan_text"] == farming["target_text"] == "奨励金5件/年"
+    assert any(
+        item["current_text"] == "―"
+        for project in projects.values()
         for item in project["work_items"]
-    ]
-    dash_items = [item for item in work_items if item["current_text"] == "―"]
-
-    assert len(dash_items) >= 10
-    assert all(item["current_text"] != "0" for item in dash_items)
+    )
 
 
-def test_field03_evidence_reconciles_local_and_cumulative_progress():
+def test_field03_evidence_records_complete_visual_resolution():
     evidence = load(EVIDENCE)
+    promotions = evidence["visual_confirmed_promotions"]
 
-    assert evidence["identity_project_count"] == 18
-    assert evidence["source_captured_project_count"] == 18
-    assert evidence["structured_project_count"] == 14
-    assert evidence["pending_visual_column_confirmation_project_count"] == 4
-    assert evidence["structured_work_item_count"] == 23
-    assert evidence["reconciliation"] == {
-        "official_field03_project_count": 18,
-        "source_capture_coverage": "18/18",
-        "structured_project_coverage": "14/18",
-        "structured_work_item_count": 23,
-        "pending_project_count": 4,
-        "cumulative_source_captured_projects": 79,
-        "cumulative_structured_projects": 62,
-        "cumulative_structured_work_items": 142,
-        "cumulative_pending_visual_projects": 17,
-    }
+    assert evidence["review_status"] == "reviewed_source_capture_and_structuring_complete"
+    assert evidence["structured_project_count"] == 18
+    assert evidence["pending_visual_column_confirmation_project_count"] == 0
+    assert evidence["structured_work_item_count"] == 33
+    assert evidence["pending_visual_column_confirmation"] == []
+    assert len(promotions) == 4
+    assert sum(row["structured_work_item_count"] for row in promotions) == 10
+    assert evidence["reconciliation"]["cumulative_structured_projects"] == 79
+    assert evidence["reconciliation"]["cumulative_structured_work_items"] == 190
+    assert evidence["reconciliation"]["cumulative_pending_visual_projects"] == 0
 
 
-def test_field03_manifest_retains_progress_as_later_fields_advance():
+def test_field03_manifest_records_completed_field_and_current_progress():
     manifest = load(MANIFEST)
-    capture = manifest["work_item_source_capture"]
     structuring = manifest["work_item_structuring"]
-    field03_pending = {
-        "chiba-f03-p004",
-        "chiba-f03-p005",
-        "chiba-f03-p006",
-        "chiba-f03-p007",
-    }
 
-    assert manifest["project_universe"] == 189
-    assert manifest["project_identity_coverage"] == {"reviewed": 189, "remaining": 0}
-    assert capture["projects_reviewed"] >= 79
-    assert capture["projects_remaining"] == 189 - capture["projects_reviewed"]
-    assert capture["field_counts_reviewed"]["environment_nature"] == 30
-    assert capture["field_counts_reviewed"]["safety_security"] == 31
-    assert capture["field_counts_reviewed"]["health_welfare"] == 18
-    assert sum(capture["field_counts_reviewed"].values()) == capture["projects_reviewed"]
-    assert structuring["projects_structured"] >= 62
-    assert structuring["projects_pending_visual_column_confirmation"] >= 17
-    assert structuring["projects_not_yet_source_captured"] == capture["projects_remaining"]
-    assert structuring["structured_work_items"] >= 142
-    assert field03_pending <= set(structuring["pending_review_ids"])
+    assert structuring["projects_structured"] >= 148
+    assert structuring["projects_pending_visual_column_confirmation"] <= 41
+    assert structuring["structured_work_items"] >= 328
+    assert all(
+        not review_id.startswith("chiba-f03-")
+        for review_id in structuring["pending_review_ids"]
+    )
