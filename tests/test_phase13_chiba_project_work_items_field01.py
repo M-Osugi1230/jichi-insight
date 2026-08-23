@@ -132,22 +132,25 @@ def test_field01_evidence_reconciles_source_capture_and_structuring():
     }
 
 
-def test_field01_work_item_manifest_tracks_progress_without_inflation():
+def test_field01_work_item_manifest_retains_progress_as_later_fields_advance():
     manifest = load(MANIFEST)
+    capture = manifest["work_item_source_capture"]
+    structuring = manifest["work_item_structuring"]
+    field01_pending = {
+        "chiba-f01-p018",
+        "chiba-f01-p020",
+        "chiba-f01-p026",
+        "chiba-f01-p029",
+    }
 
     assert manifest["project_universe"] == 189
     assert manifest["project_identity_coverage"] == {"reviewed": 189, "remaining": 0}
-    assert manifest["work_item_source_capture"] == {
-        "projects_reviewed": 30,
-        "projects_remaining": 159,
-        "field_counts_reviewed": {"environment_nature": 30},
-    }
-    assert manifest["work_item_structuring"]["projects_structured"] == 26
-    assert manifest["work_item_structuring"]["projects_pending_visual_column_confirmation"] == 4
-    assert manifest["work_item_structuring"]["projects_not_yet_source_captured"] == 159
-    assert manifest["work_item_structuring"]["structured_work_items"] == 65
-    assert manifest["next_field"] == {
-        "field_code": "2",
-        "field_name": "安全・安心",
-        "official_project_count": 31,
-    }
+    assert capture["projects_reviewed"] >= 30
+    assert capture["projects_remaining"] == 189 - capture["projects_reviewed"]
+    assert capture["field_counts_reviewed"]["environment_nature"] == 30
+    assert sum(capture["field_counts_reviewed"].values()) == capture["projects_reviewed"]
+    assert structuring["projects_structured"] >= 26
+    assert structuring["projects_pending_visual_column_confirmation"] >= 4
+    assert structuring["projects_not_yet_source_captured"] == capture["projects_remaining"]
+    assert structuring["structured_work_items"] >= 65
+    assert field01_pending <= set(structuring["pending_review_ids"])
