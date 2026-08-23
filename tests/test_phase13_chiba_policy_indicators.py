@@ -37,10 +37,7 @@ def qualitative_rows(payload):
 def test_chiba_policy_indicator_field_counts_reconcile_to_40():
     payload = load(CATALOG)
     fields = fields_by_code(payload)
-    counts = [
-        len(fields[str(code)]["quantitative_indicators"])
-        for code in range(1, 9)
-    ]
+    counts = [len(fields[str(code)]["quantitative_indicators"]) for code in range(1, 9)]
 
     assert counts == [7, 3, 2, 14, 2, 3, 5, 4]
     assert sum(counts) == 40
@@ -62,11 +59,7 @@ def test_chiba_overall_goal_preserves_operator_and_period():
     goal = load(CATALOG)["overall_goal_indicator"]
 
     assert goal["current"] == {"period": "2025年", "value": 74.3}
-    assert goal["target"] == {
-        "period": "2032年度末",
-        "operator": "at_least",
-        "value": 80.0,
-    }
+    assert goal["target"] == {"period": "2032年度末", "operator": "at_least", "value": 80.0}
     assert goal["source_location"] == "PDF p.137"
 
 
@@ -86,18 +79,10 @@ def test_chiba_health_life_expectancy_stays_composite_and_text_target():
     health = rows["chiba-pi-f03-001"]
 
     assert health["current"]["value_status"] == "composite"
-    assert health["current"]["components"]["健康寿命"] == {
-        "男性": 80.04,
-        "女性": 84.78,
-    }
-    assert health["current"]["components"]["平均寿命"] == {
-        "男性": 81.45,
-        "女性": 88.1,
-    }
+    assert health["current"]["components"]["健康寿命"] == {"男性": 80.04, "女性": 84.78}
+    assert health["current"]["components"]["平均寿命"] == {"男性": 81.45, "女性": 88.1}
     assert health["target"]["value_status"] == "text"
-    assert health["target"]["value_text"] == (
-        "平均寿命の増加分を上回る健康寿命の増加"
-    )
+    assert health["target"]["value_text"] == "平均寿命の増加分を上回る健康寿命の増加"
 
 
 def test_chiba_education_multi_series_do_not_inflate_indicator_rows():
@@ -157,9 +142,7 @@ def test_chiba_policy_indicator_evidence_reconciles_catalog():
 def test_chiba_manifest_links_completed_policy_indicator_layer():
     manifest = load(MANIFEST)
     fact = next(
-        row
-        for row in manifest["reviewed_facts"]
-        if row["id"] == "chiba-current-policy-indicators"
+        row for row in manifest["reviewed_facts"] if row["id"] == "chiba-current-policy-indicators"
     )
 
     assert manifest["policy_indicator_review_path"] == (
@@ -170,34 +153,26 @@ def test_chiba_manifest_links_completed_policy_indicator_layer():
     )
     assert fact["quantitative_indicator_count"] == 40
     assert fact["qualitative_constituent_factor_primary_count"] == 6
-    assert fact["review_status"] == (
-        "reviewed_complete_policy_indicator_identity_and_values"
-    )
+    assert fact["review_status"] == "reviewed_complete_policy_indicator_identity_and_values"
     assert all("KGI/KPI identity" not in item for item in manifest["remaining_work"])
 
 
-def test_chiba_plan_review_advances_after_project_source_capture():
+def test_chiba_plan_review_advances_after_field01_visual_completion():
     review = load(PLAN_REVIEW)
     indicator = next(
-        row
-        for row in review["records"]
-        if row["id"] == "chiba-current-policy-indicators"
+        row for row in review["records"] if row["id"] == "chiba-current-policy-indicators"
     )
     work_items = next(
-        row
-        for row in review["records"]
-        if row["id"] == "chiba-current-project-work-items"
+        row for row in review["records"] if row["id"] == "chiba-current-project-work-items"
     )
 
-    assert review["review_status"] == (
-        "review_in_progress_project_work_item_source_capture_complete"
-    )
+    assert review["review_status"] == "review_in_progress_project_work_item_source_capture_complete"
     assert indicator["quantitative_indicator_count"] == 40
     assert indicator["qualitative_constituent_factor_primary_count"] == 6
     assert work_items["source_captured_project_count"] == 189
-    assert work_items["structured_project_count"] == 132
-    assert work_items["pending_visual_column_confirmation_project_count"] == 57
-    assert work_items["structured_work_item_count"] == 284
-    assert "57" in review["next_action"]
+    assert work_items["structured_project_count"] == 135
+    assert work_items["pending_visual_column_confirmation_project_count"] == 54
+    assert work_items["structured_work_item_count"] == 296
+    assert "54" in review["next_action"]
     assert "visual column confirmation" in review["next_action"]
     assert "189/189" in review["quality_boundary"]
