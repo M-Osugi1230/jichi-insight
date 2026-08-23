@@ -26,7 +26,7 @@ def projects_by_id(paths: list[str]):
     return projects
 
 
-def test_visual_review_queue_reconciles_all_41_pending_projects():
+def test_visual_review_queue_reconciles_all_33_pending_projects():
     queue = load(QUEUE)
     manifest = load(MANIFEST)
     queued_ids = [
@@ -37,19 +37,19 @@ def test_visual_review_queue_reconciles_all_41_pending_projects():
     manifest_ids = manifest["work_item_structuring"]["pending_review_ids"]
 
     assert queue["status"] == "ready_for_visual_confirmation"
-    assert len(queued_ids) == len(set(queued_ids)) == 41
+    assert len(queued_ids) == len(set(queued_ids)) == 33
     assert set(queued_ids) == set(manifest_ids)
     assert [batch["pending_count"] for batch in queue["batches"]] == [
         0,
         0,
         0,
-        8,
+        0,
         4,
         9,
         10,
         10,
     ]
-    assert sum(batch["pending_count"] for batch in queue["batches"]) == 41
+    assert sum(batch["pending_count"] for batch in queue["batches"]) == 33
 
 
 def test_every_queued_id_resolves_to_pending_raw_evidence():
@@ -80,7 +80,7 @@ def test_visual_queue_contains_no_structured_project():
 
     assert queued_ids.isdisjoint(structured_ids)
     assert len(all_projects) == 189
-    assert len(structured_ids) == 148
+    assert len(structured_ids) == 156
 
 
 def test_visual_queue_preserves_completed_source_capture_totals():
@@ -88,9 +88,9 @@ def test_visual_queue_preserves_completed_source_capture_totals():
     assert queue["source_capture"] == {
         "project_universe": 189,
         "projects_source_captured": 189,
-        "projects_structured": 148,
-        "structured_work_items": 328,
-        "projects_pending_visual_column_confirmation": 41,
+        "projects_structured": 156,
+        "structured_work_items": 339,
+        "projects_pending_visual_column_confirmation": 33,
         "projects_not_yet_source_captured": 0,
     }
 
@@ -116,24 +116,20 @@ def test_visual_queue_builder_is_deterministic_and_generated_file_is_current():
     assert result.returncode == 0, result.stdout + result.stderr
 
 
-def test_next_visual_batch_starts_with_field04_official_order():
+def test_next_visual_batch_starts_with_field05_official_order():
     queue = load(QUEUE)
 
     assert queue["execution_order"] == "official_field_and_project_order"
-    assert all(batch["pending_count"] == 0 for batch in queue["batches"][:3])
+    assert all(batch["pending_count"] == 0 for batch in queue["batches"][:4])
     assert queue["next_batch"] == {
-        "field_code": "4",
-        "field_name": "子ども・教育",
+        "field_code": "5",
+        "field_name": "地域社会",
         "pending_review_ids": [
-            "chiba-f04-p001",
-            "chiba-f04-p016",
-            "chiba-f04-p017",
-            "chiba-f04-p019",
-            "chiba-f04-p021",
-            "chiba-f04-p022",
-            "chiba-f04-p025",
-            "chiba-f04-p026",
+            "chiba-f05-p001",
+            "chiba-f05-p003",
+            "chiba-f05-p006",
+            "chiba-f05-p007",
         ],
     }
     assert "推定しない" in queue["resolution_rule"]
-    assert "41事業" in queue["quality_boundary"]
+    assert "33事業" in queue["quality_boundary"]
