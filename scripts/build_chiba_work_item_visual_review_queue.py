@@ -158,8 +158,8 @@ def main() -> None:
         output_path = ROOT / output_path
 
     if args.check:
-        existing = output_path.read_text(encoding="utf-8")
-        if existing != serialized:
+        existing = load_json(output_path)
+        if existing != queue:
             raise SystemExit(
                 "Visual review queue is stale. Run "
                 "python scripts/build_chiba_work_item_visual_review_queue.py"
