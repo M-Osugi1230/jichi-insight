@@ -97,13 +97,13 @@ def test_field02_evidence_records_complete_visual_resolution():
     assert evidence["reconciliation"]["cumulative_pending_visual_projects"] == 0
 
 
-def test_field02_manifest_records_completed_field_and_current_totals():
+def test_field02_manifest_records_completed_field_and_later_progress():
     manifest = load(MANIFEST)
     structuring = manifest["work_item_structuring"]
 
-    assert structuring["projects_structured"] == 144
-    assert structuring["projects_pending_visual_column_confirmation"] == 45
-    assert structuring["structured_work_items"] == 318
+    assert structuring["projects_structured"] >= 144
+    assert structuring["projects_pending_visual_column_confirmation"] <= 45
+    assert structuring["structured_work_items"] >= 318
     assert all(
         not review_id.startswith("chiba-f02-")
         for review_id in structuring["pending_review_ids"]
