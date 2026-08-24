@@ -146,7 +146,7 @@ def test_chiba_manifest_links_completed_policy_indicator_layer():
     assert fact["review_status"] == "reviewed_complete_policy_indicator_identity_and_values"
 
 
-def test_chiba_plan_review_reflects_field06_visual_completion():
+def test_chiba_plan_review_reflects_field07_visual_completion():
     review = load(PLAN_REVIEW)
     work_items = next(
         row for row in review["records"] if row["id"] == "chiba-current-project-work-items"
@@ -154,9 +154,9 @@ def test_chiba_plan_review_reflects_field06_visual_completion():
 
     assert review["review_status"] == "review_in_progress_project_work_item_source_capture_complete"
     assert work_items["source_captured_project_count"] == 189
-    assert work_items["structured_project_count"] == 169
-    assert work_items["pending_visual_column_confirmation_project_count"] == 20
-    assert work_items["structured_work_item_count"] == 361
-    assert "20" in review["next_action"]
+    assert work_items["structured_project_count"] == 179
+    assert work_items["pending_visual_column_confirmation_project_count"] == 10
+    assert work_items["structured_work_item_count"] == 385
+    assert "10" in review["next_action"]
     assert "visual column confirmation" in review["next_action"]
     assert "189/189" in review["quality_boundary"]
