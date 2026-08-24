@@ -94,7 +94,38 @@ def build_queue(manifest: dict) -> dict:
     source_capture = manifest["work_item_source_capture"]
     structuring = manifest["work_item_structuring"]
     pending_count = structuring["projects_pending_visual_column_confirmation"]
-    first_nonempty = next(batch for batch in batches if batch["pending_count"] > 0)
+    first_nonempty = next(
+        (batch for batch in batches if batch["pending_count"] > 0),
+        None,
+    )
+    is_complete = pending_count == 0
+
+    if is_complete and manifest_pending_ids:
+        raise ValueError("Completed visual-review queue still has pending review IDs")
+    if not is_complete and first_nonempty is None:
+        raise ValueError("Pending visual-review count is nonzero but no batch is available")
+
+    next_batch = None
+    if first_nonempty is not None:
+        next_batch = {
+            "field_code": first_nonempty["field_code"],
+            "field_name": first_nonempty["field_name"],
+            "pending_review_ids": first_nonempty["pending_review_ids"],
+        }
+
+    if is_complete:
+        quality_boundary = (
+            "189/189 source capture完了後の視覚確認キューは全件解消済み。"
+            "全189事業のcurrent/plan/target列対応がstructuredへ昇格され、"
+            "pending visual confirmationは0。キュー完了は政策成果・達成度・因果効果の"
+            "判定を意味しない。"
+        )
+    else:
+        quality_boundary = (
+            "このキューは未確認値を埋めるための推測リストではなく、189/189 source capture"
+            f"完了後に残る{pending_count}事業の視覚確認作業を漏れなく追跡する制御ファイル。"
+            "キュー登録自体はstructured昇格を意味しない。"
+        )
 
     return {
         "id": "chiba-current-project-work-item-visual-review-queue",
@@ -102,7 +133,7 @@ def build_queue(manifest: dict) -> dict:
         "official_code": manifest["official_code"],
         "name_ja": manifest["name_ja"],
         "plan_period": manifest["plan_period"],
-        "status": "ready_for_visual_confirmation",
+        "status": "complete" if is_complete else "ready_for_visual_confirmation",
         "source_id": manifest["source_id"],
         "source_capture": {
             "project_universe": manifest["project_universe"],
@@ -135,16 +166,8 @@ def build_queue(manifest: dict) -> dict:
         ],
         "batches": batches,
         "execution_order": "official_field_and_project_order",
-        "next_batch": {
-            "field_code": first_nonempty["field_code"],
-            "field_name": first_nonempty["field_name"],
-            "pending_review_ids": first_nonempty["pending_review_ids"],
-        },
-        "quality_boundary": (
-            "このキューは未確認値を埋めるための推測リストではなく、189/189 source capture"
-            f"完了後に残る{pending_count}事業の視覚確認作業を漏れなく追跡する制御ファイル。"
-            "キュー登録自体はstructured昇格を意味しない。"
-        ),
+        "next_batch": next_batch,
+        "quality_boundary": quality_boundary,
     }
 
 
