@@ -1,0 +1,68 @@
+name: Render Chiba Field 8 Review Pages
+
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - opened
+
+permissions:
+  contents: read
+
+jobs:
+  render:
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'phase13-chiba-field08-complete-visual'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v4
+        with:
+          ref: phase13-chiba-field08-complete-visual
+
+      - name: Install renderer
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils
+
+      - name: Download and verify official plan PDF
+        run: |
+          curl -fL --retry 5 --retry-delay 2 \
+            'https://www.city.chiba.jp/sogoseisaku/shichokoshitsu/hisho/hodo/documents/20260410-2-2.pdf' \
+            -o /tmp/chiba-plan.pdf
+          echo '347d636cee8cbdf1f96f2084844744e86875e26b4abaf3307d6dc703ce591fe6  /tmp/chiba-plan.pdf' | sha256sum -c -
+
+      - name: Render exact PDF pages for field 8 pending projects
+        run: |
+          mkdir -p /tmp/chiba-field08-pages
+          render_page() {
+            printed_page="$1"
+            physical_page="$2"
+            pdftoppm -f "$physical_page" -l "$physical_page" -r 180 -png -singlefile \
+              /tmp/chiba-plan.pdf \
+              "/tmp/chiba-field08-pages/printed-${printed_page}_physical-${physical_page}"
+          }
+          render_page 123 127
+          render_page 124 128
+          render_page 126 130
+          render_page 127 131
+          render_page 128 132
+          render_page 129 133
+          render_page 133 137
+          cat > /tmp/chiba-field08-pages/index.txt <<'EOF'
+          Official source SHA-256: 347d636cee8cbdf1f96f2084844744e86875e26b4abaf3307d6dc703ce591fe6
+          Repository source_location convention: zero-based PDF page index = printed page + 3
+          pdftoppm physical page convention: one-based PDF page = printed page + 4
+          Printed p.123 -> source index 126 -> physical page 127 -> chiba-f08-p004,p006
+          Printed p.124 -> source index 127 -> physical page 128 -> chiba-f08-p008,p009
+          Printed p.126 -> source index 129 -> physical page 130 -> chiba-f08-p010
+          Printed p.127 -> source index 130 -> physical page 131 -> chiba-f08-p011
+          Printed p.128 -> source index 131 -> physical page 132 -> chiba-f08-p013
+          Printed p.129 -> source index 132 -> physical page 133 -> chiba-f08-p014
+          Printed p.133 -> source index 136 -> physical page 137 -> chiba-f08-p021,p022
+          EOF
+
+      - name: Upload rendered review pages
+        uses: actions/upload-artifact@v4
+        with:
+          name: chiba-field08-review-pages
+          path: /tmp/chiba-field08-pages
+          retention-days: 7
