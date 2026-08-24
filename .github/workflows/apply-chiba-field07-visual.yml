@@ -1,0 +1,69 @@
+name: Apply Chiba Field 7 Visual Review
+
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - reopened
+
+permissions:
+  contents: write
+  pull-requests: read
+
+jobs:
+  apply:
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'phase13-chiba-field07-complete-visual'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v4
+        with:
+          ref: phase13-chiba-field07-complete-visual
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Apply visually verified field 7 mappings
+        run: python scripts/apply_phase13_chiba_field07_visual_review.py
+
+      - name: Run targeted Phase 13 regression tests
+        run: |
+          python -m pip install --disable-pip-version-check pytest ruff
+          python -m pytest -q \
+            tests/test_phase13_chiba_project_work_items_field07.py \
+            tests/test_phase13_chiba_project_work_items_field08.py \
+            tests/test_phase13_chiba_project_work_item_alignment.py \
+            tests/test_phase13_chiba_project_work_item_visual_review_queue.py \
+            tests/test_phase13_chiba_policy_indicators.py
+          ruff check \
+            tests/test_phase13_chiba_project_work_items_field07.py \
+            tests/test_phase13_chiba_project_work_items_field08.py \
+            tests/test_phase13_chiba_project_work_item_alignment.py \
+            tests/test_phase13_chiba_project_work_item_visual_review_queue.py \
+            tests/test_phase13_chiba_policy_indicators.py
+
+      - name: Commit reviewed data and tests
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f \
+            data/catalog/chiba_current_project_identities_field07.json \
+            data/reviewed/chiba-city/current_project_work_items_field07.json \
+            data/evidence/chiba_current_project_work_items_field07_evidence.json \
+            data/catalog/chiba_current_project_work_item_review_manifest.json \
+            data/catalog/chiba_current_project_work_item_visual_review_queue.json \
+            data/catalog/chiba_phase13_policy_review_manifest.json \
+            data/reviewed/chiba-city/plan_review.json \
+            tests/test_phase13_chiba_project_work_items_field07.py \
+            tests/test_phase13_chiba_project_work_item_alignment.py \
+            tests/test_phase13_chiba_project_work_item_visual_review_queue.py \
+            tests/test_phase13_chiba_policy_indicators.py
+          if git diff --cached --quiet; then
+            echo "No reviewed changes to commit"
+            exit 0
+          fi
+          git commit -m "Complete Chiba field 7 visual work-item review"
+          git push origin HEAD:phase13-chiba-field07-complete-visual
