@@ -5,7 +5,7 @@ on:
     branches:
       - main
     types:
-      - opened
+      - synchronize
 
 permissions:
   contents: read
@@ -40,26 +40,26 @@ jobs:
               /tmp/chiba-plan.pdf \
               "/tmp/chiba-field07-pages/printed-${printed_page}_pdf-${pdf_page}"
           }
-          render_page 101 098
-          render_page 103 100
-          render_page 104 101
-          render_page 110 107
-          render_page 113 110
-          render_page 115 112
-          render_page 119 116
-          render_page 121 118
-          render_page 122 119
+          render_page 102 098
+          render_page 104 100
+          render_page 105 101
+          render_page 111 107
+          render_page 114 110
+          render_page 116 112
+          render_page 120 116
+          render_page 122 118
+          render_page 123 119
           cat > /tmp/chiba-field07-pages/index.txt <<'EOF'
           Official source SHA-256: 347d636cee8cbdf1f96f2084844744e86875e26b4abaf3307d6dc703ce591fe6
-          Printed p.98  -> PDF physical page 101 -> chiba-f07-p006,p007
-          Printed p.100 -> PDF physical page 103 -> chiba-f07-p011
-          Printed p.101 -> PDF physical page 104 -> chiba-f07-p013
-          Printed p.107 -> PDF physical page 110 -> chiba-f07-p017
-          Printed p.110 -> PDF physical page 113 -> chiba-f07-p022
-          Printed p.112 -> PDF physical page 115 -> chiba-f07-p023
-          Printed p.116 -> PDF physical page 119 -> chiba-f07-p025
-          Printed p.118 -> PDF physical page 121 -> chiba-f07-p029
-          Printed p.119 -> PDF physical page 122 -> chiba-f07-p032
+          Printed p.98  -> PDF physical page 102 -> chiba-f07-p006,p007
+          Printed p.100 -> PDF physical page 104 -> chiba-f07-p011
+          Printed p.101 -> PDF physical page 105 -> chiba-f07-p013
+          Printed p.107 -> PDF physical page 111 -> chiba-f07-p017
+          Printed p.110 -> PDF physical page 114 -> chiba-f07-p022
+          Printed p.112 -> PDF physical page 116 -> chiba-f07-p023
+          Printed p.116 -> PDF physical page 120 -> chiba-f07-p025
+          Printed p.118 -> PDF physical page 122 -> chiba-f07-p029
+          Printed p.119 -> PDF physical page 123 -> chiba-f07-p032
           EOF
 
       - name: Upload rendered review pages
