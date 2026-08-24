@@ -91,7 +91,14 @@ def test_chiba_field05_completion_advances_visual_review_to_field06():
     assert "visual column confirmation" in plan["next_action"]
     assert "versioned linkage" in plan["next_action"]
     assert "budget/settlement linkage" in plan["next_action"]
+    completed_prefixes = (
+        "chiba-f01-",
+        "chiba-f02-",
+        "chiba-f03-",
+        "chiba-f04-",
+        "chiba-f05-",
+    )
     assert all(
-        not review_id.startswith(("chiba-f01-", "chiba-f02-", "chiba-f03-", "chiba-f04-", "chiba-f05-"))
+        not review_id.startswith(completed_prefixes)
         for review_id in work_manifest["work_item_structuring"]["pending_review_ids"]
     )
