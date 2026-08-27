@@ -22,9 +22,7 @@ def load(path: Path):
 
 def validate(schema_name: str, instance):
     schema = load(ROOT / "schemas" / schema_name)
-    validator = Draft202012Validator(
-        schema, format_checker=FormatChecker()
-    )
+    validator = Draft202012Validator(schema, format_checker=FormatChecker())
     return list(validator.iter_errors(instance))
 
 
@@ -42,9 +40,7 @@ def test_chiba_reviewed_identity_and_fiscal_records_match_shared_contracts():
     assert municipality["data_status"] == "reviewed"
     assert municipality["fiscal_years"] == [2024, 2026]
     assert len(fiscal) == len(evidence) == 3
-    assert {packet["subject_id"] for packet in evidence} == {
-        row["id"] for row in fiscal
-    }
+    assert {packet["subject_id"] for packet in evidence} == {row["id"] for row in fiscal}
 
 
 def test_chiba_reviewed_sources_are_official_and_cycle_bounded():
@@ -55,10 +51,7 @@ def test_chiba_reviewed_sources_are_official_and_cycle_bounded():
     assert len(sources) == 9
     assert set(municipality["sources"]) == set(sources)
     assert all(row["organization"] == "千葉市" for row in source_records)
-    assert all(
-        row["url"].startswith("https://www.city.chiba.jp/")
-        for row in source_records
-    )
+    assert all(row["url"].startswith("https://www.city.chiba.jp/") for row in source_records)
     assert all(row["confidence"] == "high" for row in source_records)
     assert sources["chiba-implementation-plan-2026-2028"]["review_status"] == (
         "reviewed_core_structure_and_project_universe_aggregate"
@@ -66,9 +59,7 @@ def test_chiba_reviewed_sources_are_official_and_cycle_bounded():
     assert sources["chiba-implementation-plan-2023-2025"]["review_status"] == (
         "reviewed_historical_cycle_identity"
     )
-    assert "360事業" in sources[
-        "chiba-implementation-progress-2024-settlement"
-    ]["boundary"]
+    assert "360事業" in sources["chiba-implementation-progress-2024-settlement"]["boundary"]
 
 
 def test_chiba_current_plan_structure_and_unique_project_universe_are_exact():
@@ -177,9 +168,7 @@ def test_chiba_initial_review_contract_remains_valid_as_identity_depth_advances(
         == 189
     )
     assert facts["chiba-2024-progress-universe"]["value"] == 360
-    assert facts["chiba-2026-general-account-initial-budget"]["value"] == (
-        541_700_000_000
-    )
+    assert facts["chiba-2026-general-account-initial-budget"]["value"] == 541_700_000_000
     assert project_fact["source_id"] == "chiba-implementation-plan-2026-2028-full-pdf"
     assert "project identity" in manifest["quality_boundary"]
-    assert "source-capture" in manifest["quality_boundary"]
+    assert "source capture" in manifest["quality_boundary"].replace("-", " ")
