@@ -31,6 +31,14 @@ jobs:
       - name: Install validation tools
         run: python -m pip install --disable-pip-version-check pytest ruff
 
+      - name: Format generated permanent tests
+        run: |
+          ruff format \
+            tests/test_phase13_chiba_project_work_items_field08.py \
+            tests/test_phase13_chiba_project_work_item_alignment.py \
+            tests/test_phase13_chiba_project_work_item_visual_review_queue.py \
+            tests/test_phase13_chiba_policy_indicators.py
+
       - name: Run targeted Phase 13 tests
         run: |
           python -m pytest -q \
