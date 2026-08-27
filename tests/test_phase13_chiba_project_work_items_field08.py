@@ -34,42 +34,24 @@ def test_field08_measure_codes_and_source_locations_match_identity_layer():
         assert project["source_location"] == identity["source_location"]
 
 
-def test_field08_retains_12_structured_and_10_pending_until_its_visual_review():
+def test_field08_is_fully_structured_after_visual_review():
     projects = load(REVIEW)["projects"]
     pending = [
-        row
-        for row in projects
-        if row["parse_status"] == "pending_visual_column_confirmation"
+        row for row in projects if row["parse_status"] == "pending_visual_column_confirmation"
     ]
-    structured = [row for row in projects if row not in pending]
-
-    assert len(structured) == 12
-    assert len(pending) == 10
-    assert {row["review_id"] for row in pending} == {
-        "chiba-f08-p004",
-        "chiba-f08-p006",
-        "chiba-f08-p008",
-        "chiba-f08-p009",
-        "chiba-f08-p010",
-        "chiba-f08-p011",
-        "chiba-f08-p013",
-        "chiba-f08-p014",
-        "chiba-f08-p021",
-        "chiba-f08-p022",
-    }
-    assert all(row["raw_table_text"].strip() for row in pending)
-    assert all(row["work_items"] == [] for row in pending)
+    assert len(projects) == 22
+    assert pending == []
+    assert all(row["work_items"] for row in projects)
+    assert all(
+        row["source_location"] == f"PDF p.{row['source_printed_page'] + 3}" for row in projects
+    )
 
 
 def test_field08_structured_work_items_are_unique_and_complete():
-    work_items = [
-        item
-        for project in load(REVIEW)["projects"]
-        for item in project["work_items"]
-    ]
+    work_items = [item for project in load(REVIEW)["projects"] for item in project["work_items"]]
     ids = [item["work_item_id"] for item in work_items]
 
-    assert len(work_items) == len(ids) == len(set(ids)) == 27
+    assert len(work_items) == len(ids) == len(set(ids)) == 48
     assert all(item["item_name"].strip() for item in work_items)
     assert all(item["current_text"].strip() for item in work_items)
     assert all(item["plan_text"].strip() for item in work_items)
@@ -78,28 +60,21 @@ def test_field08_structured_work_items_are_unique_and_complete():
 
 def test_field08_preserves_representative_source_semantics():
     projects = {row["review_id"]: row for row in load(REVIEW)["projects"]}
-    startup = projects["chiba-f08-p001"]["work_items"]
-    location = projects["chiba-f08-p002"]["work_items"][0]
-    employment = projects["chiba-f08-p007"]["work_items"][0]
-    farming = projects["chiba-f08-p015"]["work_items"][0]
+    sales = projects["chiba-f08-p004"]["work_items"][0]
+    market = projects["chiba-f08-p006"]["work_items"][0]
+    tourism = projects["chiba-f08-p010"]["work_items"][2]
+    inbound = projects["chiba-f08-p011"]["work_items"][0]
+    forest = projects["chiba-f08-p022"]["work_items"][1]
 
-    assert startup[0]["current_text"] == "―"
-    assert (startup[1]["current_text"], startup[1]["plan_text"], startup[1]["target_text"]) == (
-        "１コース/年",
-        "１コース/年増",
-        "２コース/年",
+    assert sales["plan_text"] == "制度拡充 / 助成６件"
+    assert market["plan_text"] == "事業者公募・選定 / 調査・設計"
+    assert (
+        tourism["target_text"] == "千葉市里山サイクリングマップの改訂 / イベント開催・出展３回/年"
     )
-    assert (location["current_text"], location["plan_text"], location["target_text"]) == (
-        "465件",
-        "66件増",
-        "531件",
-    )
-    assert employment["target_text"] == "実施場所２か所 / 実施回数３期/年"
-    assert (farming["current_text"], farming["plan_text"], farming["target_text"]) == (
-        "７ha",
-        "13ha/年増",
-        "20ha/年",
-    )
+    assert inbound["current_text"] == "インバウンド団体バスツアー造成支援金交付数30件/年"
+    assert inbound["plan_text"] == "ＯＴＡサイトでの市内ツアー販売支援事業15件"
+    assert inbound["target_text"] == "ＯＴＡサイトでの市内ツアー販売支援事業５件/年"
+    assert forest["target_text"].endswith("活動組織支援４組織")
 
 
 def test_field08_evidence_closes_source_capture_to_189_of_189():
@@ -107,13 +82,16 @@ def test_field08_evidence_closes_source_capture_to_189_of_189():
 
     assert evidence["identity_project_count"] == 22
     assert evidence["source_captured_project_count"] == 22
-    assert evidence["structured_project_count"] == 12
-    assert evidence["pending_visual_column_confirmation_project_count"] == 10
-    assert evidence["structured_work_item_count"] == 27
+    assert evidence["structured_project_count"] == 22
+    assert evidence["pending_visual_column_confirmation_project_count"] == 0
+    assert evidence["structured_work_item_count"] == 48
     assert evidence["reconciliation"]["cumulative_source_captured_projects"] == 189
+    assert evidence["reconciliation"]["cumulative_structured_projects"] == 189
+    assert evidence["reconciliation"]["cumulative_structured_work_items"] == 406
+    assert len(evidence["visual_confirmed_promotions"]) == 10
 
 
-def test_work_item_manifest_keeps_source_capture_complete_as_visual_review_advances():
+def test_work_item_manifest_records_full_structuring_completion():
     manifest = load(MANIFEST)
     capture = manifest["work_item_source_capture"]
     structuring = manifest["work_item_structuring"]
@@ -123,13 +101,13 @@ def test_work_item_manifest_keeps_source_capture_complete_as_visual_review_advan
     assert capture["projects_reviewed"] == 189
     assert capture["projects_remaining"] == 0
     assert sum(capture["field_counts_reviewed"].values()) == 189
-    assert structuring["projects_structured"] >= 131
-    assert structuring["projects_pending_visual_column_confirmation"] <= 58
-    assert structuring["projects_not_yet_source_captured"] == 0
-    assert structuring["structured_work_items"] >= 280
-    assert len(structuring["pending_review_ids"]) == (
-        structuring["projects_pending_visual_column_confirmation"]
-    )
+    assert structuring == {
+        "projects_structured": 189,
+        "projects_pending_visual_column_confirmation": 0,
+        "projects_not_yet_source_captured": 0,
+        "structured_work_items": 406,
+        "pending_review_ids": [],
+    }
     assert manifest["next_field"] is None
 
 

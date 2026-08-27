@@ -50,57 +50,44 @@ def test_chiba_project_work_item_progress_reconciles_across_control_layers():
 
     expected = {
         "source_captured_project_count": 189,
-        "structured_project_count": 179,
-        "pending_visual_column_confirmation_project_count": 10,
-        "structured_work_item_count": 385,
+        "structured_project_count": 189,
+        "pending_visual_column_confirmation_project_count": 0,
+        "structured_work_item_count": 406,
     }
     for key, value in expected.items():
         assert policy_fact[key] == value
         assert plan_fact[key] == value
 
-    assert structuring["projects_structured"] == expected["structured_project_count"]
-    assert structuring["projects_pending_visual_column_confirmation"] == (
-        expected["pending_visual_column_confirmation_project_count"]
-    )
-    assert structuring["structured_work_items"] == expected["structured_work_item_count"]
+    assert structuring["projects_structured"] == 189
+    assert structuring["projects_pending_visual_column_confirmation"] == 0
+    assert structuring["structured_work_items"] == 406
     assert structuring["projects_not_yet_source_captured"] == 0
+    assert structuring["pending_review_ids"] == []
 
 
-def test_chiba_source_capture_completion_does_not_claim_full_structuring():
+def test_chiba_source_capture_and_structuring_are_both_complete():
     policy = load(POLICY_MANIFEST)
     work_manifest = load(WORK_ITEM_MANIFEST)
     fact = next(
         row for row in policy["reviewed_facts"] if row["id"] == "chiba-current-project-work-items"
     )
 
-    assert fact["review_status"] == "reviewed_source_capture_complete_structuring_partial"
+    assert fact["review_status"] == "reviewed_source_capture_and_structuring_complete"
     assert fact["source_captured_project_count"] == 189
-    assert fact["structured_project_count"] < fact["project_universe"]
+    assert fact["structured_project_count"] == fact["project_universe"] == 189
+    assert fact["pending_visual_column_confirmation_project_count"] == 0
     assert work_manifest["next_field"] is None
-    assert len(work_manifest["work_item_structuring"]["pending_review_ids"]) == 10
+    assert work_manifest["work_item_structuring"]["pending_review_ids"] == []
 
 
-def test_chiba_field07_completion_advances_visual_review_to_field08():
+def test_chiba_field08_completion_advances_to_versioned_and_fiscal_linkage():
     policy = load(POLICY_MANIFEST)
     plan = load(PLAN_REVIEW)
     work_manifest = load(WORK_ITEM_MANIFEST)
 
-    assert "10" in policy["remaining_work"][0]
-    assert "視覚確認" in policy["remaining_work"][0]
-    assert "10" in plan["next_action"]
-    assert "visual column confirmation" in plan["next_action"]
+    assert len(policy["remaining_work"]) == 2
+    assert "versioned linkage" in policy["remaining_work"][0]
+    assert "予算・決算" in policy["remaining_work"][1]
     assert "versioned linkage" in plan["next_action"]
     assert "budget/settlement linkage" in plan["next_action"]
-    completed_prefixes = (
-        "chiba-f01-",
-        "chiba-f02-",
-        "chiba-f03-",
-        "chiba-f04-",
-        "chiba-f05-",
-        "chiba-f06-",
-        "chiba-f07-",
-    )
-    assert all(
-        not review_id.startswith(completed_prefixes)
-        for review_id in work_manifest["work_item_structuring"]["pending_review_ids"]
-    )
+    assert work_manifest["work_item_structuring"]["pending_review_ids"] == []
