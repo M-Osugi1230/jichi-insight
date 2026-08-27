@@ -24,12 +24,13 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: pip
 
       - name: Apply visually verified Field 8 mappings
         run: python scripts/apply_phase13_chiba_field08_visual_review.py
 
-      - name: Install validation tools
-        run: python -m pip install --disable-pip-version-check pytest ruff
+      - name: Install full repository validation tools
+        run: python -m pip install -e ".[dev]"
 
       - name: Format generated permanent tests
         run: |
@@ -58,7 +59,7 @@ jobs:
             tests/test_phase13_chiba_policy_indicators.py
 
       - name: Run full repository tests
-        run: python -m pytest -q
+        run: pytest -q
 
       - name: Commit reviewed data and tests
         run: |
