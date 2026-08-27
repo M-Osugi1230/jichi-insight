@@ -6,6 +6,7 @@ on:
       - phase13-chiba-field08-complete-visual
     paths:
       - .github/workflows/apply-chiba-field08-visual.yml
+      - scripts/apply_phase13_chiba_field08_visual_review.py
 
 permissions:
   contents: write
@@ -39,11 +40,10 @@ jobs:
             tests/test_phase13_chiba_policy_indicators.py
           python scripts/build_chiba_work_item_visual_review_queue.py --check
 
-      - name: Lint changed Python
+      - name: Lint permanent changed Python
         run: |
           ruff check \
             scripts/build_chiba_work_item_visual_review_queue.py \
-            scripts/apply_phase13_chiba_field08_visual_review.py \
             tests/test_phase13_chiba_project_work_items_field08.py \
             tests/test_phase13_chiba_project_work_item_alignment.py \
             tests/test_phase13_chiba_project_work_item_visual_review_queue.py \
