@@ -1,0 +1,50 @@
+name: Extract Chiba Historical Plan Review Text
+
+on:
+  push:
+    branches:
+      - phase13-chiba-historical-identity-foundation
+    paths:
+      - .github/workflows/extract-chiba-historical-plan-review-text.yml
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v4
+
+      - name: Install PDF tools
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils
+
+      - name: Download official first implementation plan
+        run: |
+          curl --fail --location --retry 3 \
+            'https://www.city.chiba.jp/sogoseisaku/sogoseisaku/kikaku/sougoukeikaku/documents/dai1jijissikeikaku.pdf' \
+            --output /tmp/chiba-plan1.pdf
+          pdfinfo /tmp/chiba-plan1.pdf | tee /tmp/pdfinfo.txt
+          test "$(pdfinfo /tmp/chiba-plan1.pdf | awk '/^Pages:/ {print $2}')" = "221"
+          sha256sum /tmp/chiba-plan1.pdf | tee /tmp/sha256.txt
+
+      - name: Extract field review text with layout preserved
+        run: |
+          mkdir -p /tmp/chiba-historical-review
+          cp /tmp/pdfinfo.txt /tmp/chiba-historical-review/pdfinfo.txt
+          cp /tmp/sha256.txt /tmp/chiba-historical-review/sha256.txt
+          pdftotext -layout -f 20 -l 40 /tmp/chiba-plan1.pdf /tmp/chiba-historical-review/field01.txt
+          pdftotext -layout -f 41 -l 61 /tmp/chiba-plan1.pdf /tmp/chiba-historical-review/field02.txt
+          pdftotext -layout -f 62 -l 84 /tmp/chiba-plan1.pdf /tmp/chiba-historical-review/field03.txt
+          pdftotext -layout -f 85 -l 106 /tmp/chiba-plan1.pdf /tmp/chiba-historical-review/field04.txt
+          pdftotext -layout -f 107 -l 117 /tmp/chiba-plan1.pdf /tmp/chiba-historical-review/field05.txt
+          pdftotext -layout -f 118 -l 128 /tmp/chiba-plan1.pdf /tmp/chiba-historical-review/field06.txt
+          pdftotext -layout -f 129 -l 165 /tmp/chiba-plan1.pdf /tmp/chiba-historical-review/field07.txt
+          pdftotext -layout -f 166 -l 184 /tmp/chiba-plan1.pdf /tmp/chiba-historical-review/field08.txt
+          wc -l /tmp/chiba-historical-review/field*.txt | tee /tmp/chiba-historical-review/line-counts.txt
+
+      - name: Upload review artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: chiba-historical-plan-review-text
+          path: /tmp/chiba-historical-review
+          if-no-files-found: error
+          retention-days: 7
