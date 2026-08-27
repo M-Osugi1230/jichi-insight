@@ -1,0 +1,34 @@
+{
+  "id":"chiba-historical-project-identity-review-manifest",
+  "phase":13,
+  "official_code":"121002",
+  "name_ja":"千葉市",
+  "historical_plan_period":"2023年度～2025年度",
+  "current_plan_period":"2026年度～2028年度",
+  "status":"historical_identity_review_started",
+  "historical_source_id":"chiba-implementation-plan-2023-2025-full-pdf",
+  "current_project_manifest_path":"data/catalog/chiba_current_project_work_item_review_manifest.json",
+  "historical_project_universe":360,
+  "historical_universe_semantics":"第1次実施計画総論の事業数360。再掲等の重複を除く旧計画固有の母集団であり、現行第2次実施計画189事業とは別versionとして保持する。",
+  "historical_identity_coverage":{"reviewed":0,"remaining":360},
+  "source_location_semantics":"第1次実施計画全体版PDFでは、冊子印刷ページNはrepositoryのzero-based PDF page index N+3、pdftoppm等の1-based physical page N+4に対応する。identityではsource_printed_pageとsource_locationを併記する。",
+  "field_review_order":[
+    {"field_code":"1","field_name":"環境・自然","printed_page_start":16,"printed_page_end":36,"pdf_index_start":19,"pdf_index_end":39,"physical_page_start":20,"physical_page_end":40,"reviewed_unique_projects":0,"identity_path":null,"status":"pending_identity_review"},
+    {"field_code":"2","field_name":"安全・安心","printed_page_start":37,"printed_page_end":57,"pdf_index_start":40,"pdf_index_end":60,"physical_page_start":41,"physical_page_end":61,"reviewed_unique_projects":0,"identity_path":null,"status":"pending_identity_review"},
+    {"field_code":"3","field_name":"健康・福祉","printed_page_start":58,"printed_page_end":80,"pdf_index_start":61,"pdf_index_end":83,"physical_page_start":62,"physical_page_end":84,"reviewed_unique_projects":0,"identity_path":null,"status":"pending_identity_review"},
+    {"field_code":"4","field_name":"子ども・教育","printed_page_start":81,"printed_page_end":102,"pdf_index_start":84,"pdf_index_end":105,"physical_page_start":85,"physical_page_end":106,"reviewed_unique_projects":0,"identity_path":null,"status":"pending_identity_review"},
+    {"field_code":"5","field_name":"地域社会","printed_page_start":103,"printed_page_end":113,"pdf_index_start":106,"pdf_index_end":116,"physical_page_start":107,"physical_page_end":117,"reviewed_unique_projects":0,"identity_path":null,"status":"pending_identity_review"},
+    {"field_code":"6","field_name":"文化芸術・スポーツ","printed_page_start":114,"printed_page_end":124,"pdf_index_start":117,"pdf_index_end":127,"physical_page_start":118,"physical_page_end":128,"reviewed_unique_projects":0,"identity_path":null,"status":"pending_identity_review"},
+    {"field_code":"7","field_name":"都市・交通","printed_page_start":125,"printed_page_end":161,"pdf_index_start":128,"pdf_index_end":164,"physical_page_start":129,"physical_page_end":165,"reviewed_unique_projects":0,"identity_path":null,"status":"pending_identity_review"},
+    {"field_code":"8","field_name":"地域経済","printed_page_start":162,"printed_page_end":180,"pdf_index_start":165,"pdf_index_end":183,"physical_page_start":166,"physical_page_end":184,"reviewed_unique_projects":0,"identity_path":null,"status":"pending_identity_review"}
+  ],
+  "versioned_linkage_gate":{
+    "status":"blocked_until_historical_identity_complete",
+    "required_historical_identity_count":360,
+    "current_identity_count":189,
+    "allowed_relation_types":["continued","renamed_continuation","merged_into_current","split_into_current","retired_after_first_plan","new_in_second_plan","unresolved"],
+    "rule":"名称一致・類似だけではrelationを確定しない。旧・現双方の掲載位置、施策、担当課、取組内容、事業量等の公式情報を確認し、根拠が十分な関係だけをreviewedへ昇格する。many-to-many関係を許容する。"
+  },
+  "next_action":"公式第1次実施計画PDFから分野1の計画事業候補を抽出し、再掲表示を一次identityと分離して、公式掲載順にhistorical review_idを付与する。候補抽出はreviewed identityを意味しない。",
+  "quality_boundary":"360→189という母集団減少を廃止・統合と自動解釈しない。旧計画identityの全件レビューを先に完了し、versioned linkageはその後の独立レイヤーとする。旧計画の令和6年度末進捗、現行計画の事業量、予算・決算、政策成果は相互に自動転記しない。"
+}
