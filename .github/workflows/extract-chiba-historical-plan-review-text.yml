@@ -6,6 +6,11 @@ on:
       - phase13-chiba-historical-identity-foundation
     paths:
       - .github/workflows/extract-chiba-historical-plan-review-text.yml
+      - scripts/build_chiba_historical_project_identities.py
+      - tests/test_phase13_chiba_historical_project_identities.py
+
+permissions:
+  contents: write
 
 jobs:
   extract:
@@ -13,6 +18,14 @@ jobs:
     steps:
       - name: Check out branch
         uses: actions/checkout@v4
+        with:
+          ref: phase13-chiba-historical-identity-foundation
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
 
       - name: Install PDF tools
         run: sudo apt-get update && sudo apt-get install -y poppler-utils
@@ -41,6 +54,25 @@ jobs:
           pdftotext -layout -f 166 -l 184 /tmp/chiba-plan1.pdf /tmp/chiba-historical-review/field08.txt
           wc -l /tmp/chiba-historical-review/field*.txt | tee /tmp/chiba-historical-review/line-counts.txt
 
+      - name: Build reviewed Field 1 and Field 2 identities
+        run: |
+          python scripts/build_chiba_historical_project_identities.py \
+            --input-dir /tmp/chiba-historical-review \
+            --fields 1 2
+
+      - name: Install repository validation tools
+        run: python -m pip install -e ".[dev]"
+
+      - name: Validate historical identity foundation
+        run: |
+          pytest -q \
+            tests/test_phase13_chiba_historical_identity_foundation.py \
+            tests/test_phase13_chiba_historical_project_identities.py
+          ruff check \
+            scripts/build_chiba_historical_project_identities.py \
+            tests/test_phase13_chiba_historical_identity_foundation.py \
+            tests/test_phase13_chiba_historical_project_identities.py
+
       - name: Upload review artifact
         uses: actions/upload-artifact@v4
         with:
@@ -48,3 +80,20 @@ jobs:
           path: /tmp/chiba-historical-review
           if-no-files-found: error
           retention-days: 7
+
+      - name: Commit reviewed historical identities
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f \
+            data/catalog/chiba_historical_project_identity_review_manifest.json \
+            data/catalog/chiba_historical_project_identities_field01.json \
+            data/catalog/chiba_historical_project_identities_field02.json \
+            data/evidence/chiba_historical_project_identities_field01_evidence.json \
+            data/evidence/chiba_historical_project_identities_field02_evidence.json
+          if git diff --cached --quiet; then
+            echo "No historical identity changes to commit"
+            exit 0
+          fi
+          git commit -m "Review Chiba historical project identities fields 1 and 2"
+          git push origin HEAD:phase13-chiba-historical-identity-foundation
