@@ -7,6 +7,8 @@ on:
     paths:
       - .github/workflows/apply-chiba-field08-visual.yml
       - scripts/apply_phase13_chiba_field08_visual_review.py
+      - tests/test_phase13_chiba_initial_review.py
+      - tests/test_phase13_chiba_project_work_items_field07.py
 
 permissions:
   contents: write
@@ -43,20 +45,24 @@ jobs:
       - name: Run targeted Phase 13 tests
         run: |
           python -m pytest -q \
+            tests/test_phase13_chiba_project_work_items_field07.py \
             tests/test_phase13_chiba_project_work_items_field08.py \
             tests/test_phase13_chiba_project_work_item_alignment.py \
             tests/test_phase13_chiba_project_work_item_visual_review_queue.py \
-            tests/test_phase13_chiba_policy_indicators.py
+            tests/test_phase13_chiba_policy_indicators.py \
+            tests/test_phase13_chiba_initial_review.py
           python scripts/build_chiba_work_item_visual_review_queue.py --check
 
       - name: Lint permanent changed Python
         run: |
           ruff check \
             scripts/build_chiba_work_item_visual_review_queue.py \
+            tests/test_phase13_chiba_project_work_items_field07.py \
             tests/test_phase13_chiba_project_work_items_field08.py \
             tests/test_phase13_chiba_project_work_item_alignment.py \
             tests/test_phase13_chiba_project_work_item_visual_review_queue.py \
-            tests/test_phase13_chiba_policy_indicators.py
+            tests/test_phase13_chiba_policy_indicators.py \
+            tests/test_phase13_chiba_initial_review.py
 
       - name: Run full repository tests
         run: pytest -q
