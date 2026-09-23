@@ -33,7 +33,7 @@ def test_chiba_versioned_linkage_matches_schema_and_reproducible_builder():
     assert build() == payload
 
 
-def test_initial_review_promotes_only_sixty_strong_continuations():
+def test_initial_review_promotes_sixty_strong_and_six_manual_continuations():
     payload = load(LINKAGE)
     summary = payload["summary"]
 
@@ -41,7 +41,9 @@ def test_initial_review_promotes_only_sixty_strong_continuations():
     assert summary == {
         "historical_universe": 360,
         "current_universe": 189,
-        "strong_rule_relation_count": 60,\n        "manual_reviewed_relation_count": 6,\n        "reviewed_relation_count": 66,
+        "strong_rule_relation_count": 60,
+        "manual_reviewed_relation_count": 6,
+        "reviewed_relation_count": 66,
         "reviewed_historical_identity_count": 66,
         "reviewed_current_identity_count": 66,
         "historical_without_reviewed_relation": 294,
@@ -52,16 +54,16 @@ def test_initial_review_promotes_only_sixty_strong_continuations():
     assert {row["relation_type"] for row in payload["records"]} == {"continued"}
 
 
-def test_reviewed_continuations_have_multiple_official_identity_signals():
+def test_strong_structural_continuations_require_all_three_signals():
     payload = load(LINKAGE)
-    historical_ids = []
-    current_ids = []
+    strong = [
+        row for row in payload["records"]
+        if row["review_basis"] == "strong_structural_rule"
+    ]
 
-    for row in payload["records"]:
+    assert len(strong) == 60
+    for row in strong:
         evidence = row["evidence"]
-        historical_ids.extend(row["historical_review_ids"])
-        current_ids.extend(row["current_review_ids"])
-
         assert len(row["historical_review_ids"]) == 1
         assert len(row["current_review_ids"]) == 1
         assert evidence["historical_measure_code"] == evidence["current_measure_code"]
@@ -72,6 +74,22 @@ def test_reviewed_continuations_have_multiple_official_identity_signals():
         assert evidence["normalized_project_name"] == normalize(
             evidence["historical_project_name"]
         )
+        assert evidence["promotion_rule"] == (
+            "normalized_name_equal_and_measure_equal_and_department_overlap"
+        )
+        assert "manual_review_note" not in evidence
+
+
+def test_all_reviewed_continuations_keep_official_source_coordinates():
+    payload = load(LINKAGE)
+    historical_ids = []
+    current_ids = []
+
+    for row in payload["records"]:
+        evidence = row["evidence"]
+        historical_ids.extend(row["historical_review_ids"])
+        current_ids.extend(row["current_review_ids"])
+
         assert evidence["historical_source_id"] == (
             "chiba-implementation-plan-2023-2025-full-pdf"
         )
@@ -80,9 +98,6 @@ def test_reviewed_continuations_have_multiple_official_identity_signals():
         )
         assert evidence["historical_source_location"].startswith("PDF p.")
         assert evidence["current_source_location"].startswith("PDF p.")
-        assert evidence["promotion_rule"] == (
-            "normalized_name_equal_and_measure_equal_and_department_overlap"
-        )
 
     assert len(historical_ids) == len(set(historical_ids)) == 66
     assert len(current_ids) == len(set(current_ids)) == 66
@@ -90,17 +105,16 @@ def test_reviewed_continuations_have_multiple_official_identity_signals():
 
 def test_manual_official_review_promotes_the_six_exact_name_exceptions():
     payload = load(LINKAGE)
-    candidates = payload["not_promoted_candidates"]
+    manual = [
+        row
+        for row in payload["records"]
+        if row["review_basis"] == "manual_official_context_review"
+    ]
 
-    assert len(candidates) == 6
-    assert all(row["normalized_name_equal"] is True for row in candidates)
-    assert all(row["decision"] == "not_promoted" for row in candidates)
-    assert all(
-        (not row["measure_equal"]) or (not row["overlapping_departments"])
-        for row in candidates
-    )
+    assert len(manual) == 6
+    assert payload["not_promoted_candidates"] == []
     assert {
-        row["historical_project_name"] for row in candidates
+        row["evidence"]["historical_project_name"] for row in manual
     } == {
         "オオガハスの魅力発信",
         "だれもが遊べる広場づくり",
@@ -109,6 +123,24 @@ def test_manual_official_review_promotes_the_six_exact_name_exceptions():
         "市内ネットワークを構築する道路整備",
         "有害鳥獣対策の推進",
     }
+    assert all(row["evidence"]["manual_review_note"] for row in manual)
+    assert all(
+        row["evidence"]["promotion_rule"] == "manual_official_context_review"
+        for row in manual
+    )
+    assert all(
+        normalize(row["evidence"]["historical_project_name"])
+        == normalize(row["evidence"]["current_project_name"])
+        for row in manual
+    )
+    assert all(
+        (
+            row["evidence"]["historical_measure_code"]
+            != row["evidence"]["current_measure_code"]
+        )
+        or (not row["evidence"]["overlapping_departments"])
+        for row in manual
+    )
 
 
 def test_initial_pass_does_not_auto_classify_missing_links_as_retired_or_new():
@@ -135,11 +167,13 @@ def test_phase13_policy_manifest_exposes_versioned_linkage_progress():
     assert policy["versioned_project_linkage_review_path"] == (
         "data/catalog/chiba_versioned_project_linkage_review.json"
     )
+    assert fact["strong_rule_relation_count"] == 60
+    assert fact["manual_reviewed_relation_count"] == 6
     assert fact["reviewed_relation_count"] == 66
     assert fact["historical_identity_covered"] == 66
     assert fact["current_identity_covered"] == 66
     assert fact["historical_without_reviewed_relation"] == 294
     assert fact["current_without_reviewed_relation"] == 123
     assert fact["exact_name_candidates_not_promoted"] == 0
-    assert "名称一致だけ" in fact["interpretation_boundary"]
-    assert "Versioned Linkage" in policy["quality_boundary"]
+    assert "名称類似だけ" in fact["interpretation_boundary"]
+    assert "66 continued relations" in policy["quality_boundary"]
