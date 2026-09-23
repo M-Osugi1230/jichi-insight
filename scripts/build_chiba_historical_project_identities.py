@@ -16,7 +16,12 @@ FIELD_META = {
     3: {"name": "健康・福祉", "official_count": 46, "printed_start": 58, "printed_end": 80},
     4: {"name": "子ども・教育", "official_count": 46, "printed_start": 81, "printed_end": 102},
     5: {"name": "地域社会", "official_count": 23, "printed_start": 103, "printed_end": 113},
-    6: {"name": "文化芸術・スポーツ", "official_count": 25, "printed_start": 114, "printed_end": 124},
+    6: {
+        "name": "文化芸術・スポーツ",
+        "official_count": 25,
+        "printed_start": 114,
+        "printed_end": 124,
+    },
     7: {"name": "都市・交通", "official_count": 78, "printed_start": 125, "printed_end": 161},
     8: {"name": "地域経済", "official_count": 32, "printed_start": 162, "printed_end": 180},
 }
@@ -136,13 +141,18 @@ def build_reviewed_identity_payload(
         same_field_primary = primary_by_name.get(row["project_name"])
         repost = {key: value for key, value in row.items() if key != "is_repost"}
         repost["repost_type"] = (
-            "same_field_repost" if same_field_primary else "cross_field_repost_pending_primary_review"
+            "same_field_repost"
+            if same_field_primary
+            else "cross_field_repost_pending_primary_review"
         )
         repost["primary_review_id"] = same_field_primary
         repost["decision"] = (
             "do_not_duplicate_identity"
             if same_field_primary
-            else f"exclude_from_field{field_number:02d}_unique_{meta['official_count']}_and_resolve_primary_in_later_field_review"
+            else (
+                f"exclude_from_field{field_number:02d}_unique_"
+                f"{meta['official_count']}_and_resolve_primary_in_later_field_review"
+            )
         )
         displayed_reposts.append(repost)
 
