@@ -440,6 +440,7 @@ def update_manifest(
     )
 
     if next_pending is not None:
+        manifest["status"] = "historical_identity_review_started"
         manifest["next_action"] = (
             f"Field {next_pending['field_code']}（{next_pending['field_name']}）の抽出候補を"
             "公式PDFレイアウトと照合し、公式分野別事業数に不足する見出しを"
@@ -494,6 +495,7 @@ def update_manifest(
                 f"{unresolved_reposts} unresolved"
             )
 
+        manifest["status"] = "historical_identity_review_complete"
         manifest["historical_repost_reconciliation"] = {
             "displayed_reposts": total_reposts,
             "resolved_to_primary_identity": resolved_reposts,
