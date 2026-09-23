@@ -7,6 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CAT = ROOT / "data/catalog"
 EVD = ROOT / "data/evidence"
 MANIFEST = CAT / "chiba_historical_project_identity_review_manifest.json"
+POLICY_MANIFEST = CAT / "chiba_phase13_policy_review_manifest.json"
 
 
 def load(path: Path):
@@ -231,3 +232,23 @@ def test_candidate_diagnostics_reconcile_all_official_field_counts():
         is True
         for i in range(1, 9)
     )
+
+
+def test_phase13_policy_manifest_exposes_historical_identity_completion():
+    policy = load(POLICY_MANIFEST)
+    facts = {row["id"]: row for row in policy["reviewed_facts"]}
+    historical = facts["chiba-historical-project-universe"]
+
+    assert policy["historical_project_identity_review_manifest_path"] == (
+        "data/catalog/chiba_historical_project_identity_review_manifest.json"
+    )
+    assert historical["value"] == 360
+    assert historical["identity_records_reviewed"] == 360
+    assert historical["identity_records_remaining"] == 0
+    assert historical["displayed_repost_occurrences_reviewed"] == 68
+    assert historical["displayed_repost_occurrences_resolved"] == 68
+    assert historical["review_status"] == (
+        "reviewed_complete_360_of_360_project_identities"
+    )
+    assert "versioned linkage" in historical["interpretation_boundary"]
+    assert "360/360" in policy["quality_boundary"]
