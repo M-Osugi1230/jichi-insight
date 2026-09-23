@@ -20,14 +20,29 @@
     "quality_boundary"
   ],
   "properties": {
-    "id": {"const": "chiba-versioned-project-linkage-review"},
-    "phase": {"const": 13},
-    "official_code": {"const": "121002"},
-    "name_ja": {"const": "千葉市"},
-    "historical_plan_period": {"const": "2023年度～2025年度"},
-    "current_plan_period": {"const": "2026年度～2028年度"},
+    "id": {
+      "const": "chiba-versioned-project-linkage-review"
+    },
+    "phase": {
+      "const": 13
+    },
+    "official_code": {
+      "const": "121002"
+    },
+    "name_ja": {
+      "const": "千葉市"
+    },
+    "historical_plan_period": {
+      "const": "2023年度～2025年度"
+    },
+    "current_plan_period": {
+      "const": "2026年度～2028年度"
+    },
     "status": {
-      "enum": ["versioned_linkage_review_started", "versioned_linkage_review_complete"]
+      "enum": [
+        "versioned_linkage_review_started",
+        "versioned_linkage_review_complete"
+      ]
     },
     "promotion_rule": {
       "type": "object",
@@ -38,9 +53,18 @@
         "non_promotion_rule"
       ],
       "properties": {
-        "reviewed_continued_rule": {"type": "string", "minLength": 1},
-        "normalization": {"type": "string", "minLength": 1},
-        "non_promotion_rule": {"type": "string", "minLength": 1}
+        "reviewed_continued_rule": {
+          "type": "string",
+          "minLength": 1
+        },
+        "normalization": {
+          "type": "string",
+          "minLength": 1
+        },
+        "non_promotion_rule": {
+          "type": "string",
+          "minLength": 1
+        }
       }
     },
     "allowed_relation_types": {
@@ -61,6 +85,8 @@
       "required": [
         "historical_universe",
         "current_universe",
+        "strong_rule_relation_count",
+        "manual_reviewed_relation_count",
         "reviewed_relation_count",
         "reviewed_historical_identity_count",
         "reviewed_current_identity_count",
@@ -69,25 +95,66 @@
         "exact_name_candidates_not_promoted"
       ],
       "properties": {
-        "historical_universe": {"const": 360},
-        "current_universe": {"const": 189},
-        "reviewed_relation_count": {"type": "integer", "minimum": 0},
-        "reviewed_historical_identity_count": {"type": "integer", "minimum": 0, "maximum": 360},
-        "reviewed_current_identity_count": {"type": "integer", "minimum": 0, "maximum": 189},
-        "historical_without_reviewed_relation": {"type": "integer", "minimum": 0, "maximum": 360},
-        "current_without_reviewed_relation": {"type": "integer", "minimum": 0, "maximum": 189},
-        "exact_name_candidates_not_promoted": {"type": "integer", "minimum": 0}
+        "historical_universe": {
+          "const": 360
+        },
+        "current_universe": {
+          "const": 189
+        },
+        "reviewed_relation_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "reviewed_historical_identity_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 360
+        },
+        "reviewed_current_identity_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 189
+        },
+        "historical_without_reviewed_relation": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 360
+        },
+        "current_without_reviewed_relation": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 189
+        },
+        "exact_name_candidates_not_promoted": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "strong_rule_relation_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "manual_reviewed_relation_count": {
+          "type": "integer",
+          "minimum": 0
+        }
       }
     },
     "records": {
       "type": "array",
-      "items": {"$ref": "#/$defs/relation"}
+      "items": {
+        "$ref": "#/$defs/relation"
+      }
     },
     "not_promoted_candidates": {
       "type": "array",
-      "items": {"$ref": "#/$defs/candidate"}
+      "items": {
+        "$ref": "#/$defs/candidate"
+      }
     },
-    "quality_boundary": {"type": "string", "minLength": 1}
+    "quality_boundary": {
+      "type": "string",
+      "minLength": 1
+    }
   },
   "$defs": {
     "relation": {
@@ -98,11 +165,15 @@
         "relation_type",
         "historical_review_ids",
         "current_review_ids",
+        "review_basis",
         "review_status",
         "evidence"
       ],
       "properties": {
-        "relation_id": {"type": "string", "pattern": "^chiba-vl-[0-9]{3}$"},
+        "relation_id": {
+          "type": "string",
+          "pattern": "^chiba-vl-[0-9]{3}$"
+        },
         "relation_type": {
           "enum": [
             "continued",
@@ -118,16 +189,32 @@
           "type": "array",
           "minItems": 1,
           "uniqueItems": true,
-          "items": {"type": "string", "pattern": "^chiba-hf[0-9]{2}-p[0-9]{3}$"}
+          "items": {
+            "type": "string",
+            "pattern": "^chiba-hf[0-9]{2}-p[0-9]{3}$"
+          }
         },
         "current_review_ids": {
           "type": "array",
           "minItems": 1,
           "uniqueItems": true,
-          "items": {"type": "string", "pattern": "^chiba-f[0-9]{2}-p[0-9]{3}$"}
+          "items": {
+            "type": "string",
+            "pattern": "^chiba-f[0-9]{2}-p[0-9]{3}$"
+          }
         },
-        "review_status": {"const": "reviewed"},
-        "evidence": {"$ref": "#/$defs/evidence"}
+        "review_status": {
+          "const": "reviewed"
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence"
+        },
+        "review_basis": {
+          "enum": [
+            "strong_structural_rule",
+            "manual_official_context_review"
+          ]
+        }
       }
     },
     "evidence": {
@@ -149,32 +236,75 @@
         "promotion_rule"
       ],
       "properties": {
-        "historical_project_name": {"type": "string", "minLength": 1},
-        "current_project_name": {"type": "string", "minLength": 1},
-        "normalized_project_name": {"type": "string", "minLength": 1},
-        "historical_measure_code": {"type": "string", "minLength": 1},
-        "current_measure_code": {"type": "string", "minLength": 1},
+        "historical_project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "current_project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "normalized_project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "historical_measure_code": {
+          "type": "string",
+          "minLength": 1
+        },
+        "current_measure_code": {
+          "type": "string",
+          "minLength": 1
+        },
         "historical_responsible_departments": {
           "type": "array",
           "minItems": 1,
-          "items": {"type": "string", "minLength": 1}
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
         },
         "current_responsible_departments": {
           "type": "array",
           "minItems": 1,
-          "items": {"type": "string", "minLength": 1}
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
         },
         "overlapping_departments": {
           "type": "array",
           "minItems": 1,
           "uniqueItems": true,
-          "items": {"type": "string", "minLength": 1}
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
         },
-        "historical_source_id": {"const": "chiba-implementation-plan-2023-2025-full-pdf"},
-        "current_source_id": {"const": "chiba-implementation-plan-2026-2028-full-pdf"},
-        "historical_source_location": {"type": "string", "minLength": 1},
-        "current_source_location": {"type": "string", "minLength": 1},
-        "promotion_rule": {"const": "normalized_name_equal_and_measure_equal_and_department_overlap"}
+        "historical_source_id": {
+          "const": "chiba-implementation-plan-2023-2025-full-pdf"
+        },
+        "current_source_id": {
+          "const": "chiba-implementation-plan-2026-2028-full-pdf"
+        },
+        "historical_source_location": {
+          "type": "string",
+          "minLength": 1
+        },
+        "current_source_location": {
+          "type": "string",
+          "minLength": 1
+        },
+        "promotion_rule": {
+          "enum": [
+            "normalized_name_equal_and_measure_equal_and_department_overlap",
+            "manual_official_context_review"
+          ]
+        },
+        "manual_review_note": {
+          "type": "string",
+          "minLength": 1
+        }
       }
     },
     "candidate": {
@@ -192,18 +322,37 @@
         "reason"
       ],
       "properties": {
-        "historical_review_id": {"type": "string"},
-        "current_review_id": {"type": "string"},
-        "historical_project_name": {"type": "string"},
-        "current_project_name": {"type": "string"},
-        "normalized_name_equal": {"const": true},
-        "measure_equal": {"type": "boolean"},
+        "historical_review_id": {
+          "type": "string"
+        },
+        "current_review_id": {
+          "type": "string"
+        },
+        "historical_project_name": {
+          "type": "string"
+        },
+        "current_project_name": {
+          "type": "string"
+        },
+        "normalized_name_equal": {
+          "const": true
+        },
+        "measure_equal": {
+          "type": "boolean"
+        },
         "overlapping_departments": {
           "type": "array",
-          "items": {"type": "string"}
+          "items": {
+            "type": "string"
+          }
         },
-        "decision": {"const": "not_promoted"},
-        "reason": {"type": "string", "minLength": 1}
+        "decision": {
+          "const": "not_promoted"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
       }
     }
   }
