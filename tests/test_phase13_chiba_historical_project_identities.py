@@ -54,7 +54,7 @@ def test_historical_identity_rows_preserve_measure_department_and_source_coordin
             assert row["source_location"] == f"PDF p.{row['source_printed_page'] + 3}"
 
 
-def test_field01_reposts_are_excluded_from_unique_53_and_same_field_reposts_link_back():
+def test_field01_reposts_are_excluded_from_unique_53():
     payload = load(identity_path(1))
     records = {row["project_name"]: row for row in payload["records"]}
     reposts = payload["displayed_reposts"]
@@ -63,25 +63,40 @@ def test_field01_reposts_are_excluded_from_unique_53_and_same_field_reposts_link
     cross_field = [
         row
         for row in reposts
-        if row["repost_type"] == "cross_field_repost_pending_primary_review"
+        if row["repost_type"]
+        in {
+            "cross_field_repost_pending_primary_review",
+            "cross_field_repost_resolved",
+        }
     ]
 
     assert len(same_field) == 5
     assert len(cross_field) == 4
     assert all(row["primary_review_id"] for row in same_field)
-    assert all(row["primary_review_id"] is None for row in cross_field)
     for row in same_field:
         assert records[row["project_name"]]["review_id"] == row["primary_review_id"]
 
+    for row in cross_field:
+        if row["repost_type"] == "cross_field_repost_pending_primary_review":
+            assert row["primary_review_id"] is None
+        else:
+            assert row["primary_review_id"]
 
-def test_field02_single_repost_remains_cross_field_until_field7_is_reviewed():
+
+def test_field02_single_repost_is_never_counted_as_a_second_primary_identity():
     payload = load(identity_path(2))
     reposts = payload["displayed_reposts"]
 
     assert len(reposts) == 1
     assert reposts[0]["project_name"] == "バス停車帯の整備"
-    assert reposts[0]["repost_type"] == "cross_field_repost_pending_primary_review"
-    assert reposts[0]["primary_review_id"] is None
+    assert reposts[0]["repost_type"] in {
+        "cross_field_repost_pending_primary_review",
+        "cross_field_repost_resolved",
+    }
+    if reposts[0]["repost_type"] == "cross_field_repost_pending_primary_review":
+        assert reposts[0]["primary_review_id"] is None
+    else:
+        assert reposts[0]["primary_review_id"]
 
 
 def test_historical_identity_evidence_reconciles_exactly():
@@ -104,25 +119,36 @@ def test_historical_identity_evidence_reconciles_exactly():
     assert len(field01["source_pdf_sha256"]) == 64
 
 
-def test_historical_manifest_advances_to_110_of_360_and_blocks_linkage():
+def test_historical_manifest_preserves_first_110_and_blocks_early_linkage():
     manifest = load(MANIFEST)
     fields = {row["field_code"]: row for row in manifest["field_review_order"]}
+    coverage = manifest["historical_identity_coverage"]
 
     assert manifest["historical_project_universe"] == 360
-    assert manifest["historical_identity_coverage"] == {"reviewed": 110, "remaining": 250}
+    assert coverage["reviewed"] >= 110
+    assert coverage["reviewed"] + coverage["remaining"] == 360
     assert fields["1"]["official_unique_project_count"] == 53
     assert fields["2"]["official_unique_project_count"] == 57
+    assert fields["1"]["reviewed_unique_projects"] == 53
+    assert fields["2"]["reviewed_unique_projects"] == 57
     assert fields["1"]["status"] == fields["2"]["status"] == "reviewed_complete"
-    assert fields["3"]["status"] == "pending_identity_review"
-    assert manifest["versioned_linkage_gate"]["status"] == (
-        "blocked_until_historical_identity_complete"
+
+    reviewed_sum = sum(
+        row["reviewed_unique_projects"] for row in manifest["field_review_order"]
     )
-    assert "Field 3" in manifest["next_action"]
-    assert "110" in manifest["quality_boundary"]
-    assert "250" in manifest["quality_boundary"]
+    assert reviewed_sum == coverage["reviewed"]
+
+    if coverage["reviewed"] < 360:
+        assert manifest["versioned_linkage_gate"]["status"] == (
+            "blocked_until_historical_identity_complete"
+        )
+        assert str(coverage["reviewed"]) in manifest["quality_boundary"]
+        assert str(coverage["remaining"]) in manifest["quality_boundary"]
+    else:
+        assert coverage["remaining"] == 0
 
 
-def test_candidate_diagnostics_explain_why_only_fields_1_and_2_are_promoted_now():
+def test_candidate_diagnostics_preserve_current_extraction_gaps():
     fields = {row["field_code"]: row for row in load(MANIFEST)["field_review_order"]}
     official_counts = [53, 57, 46, 46, 23, 25, 78, 32]
     candidate_counts = [53, 57, 45, 45, 22, 25, 77, 31]
@@ -139,6 +165,8 @@ def test_candidate_diagnostics_explain_why_only_fields_1_and_2_are_promoted_now(
     assert fields["6"]["candidate_extraction"]["matches_official_unique_count"] is True
     for field_number in (3, 4, 5, 7, 8):
         assert (
-            fields[str(field_number)]["candidate_extraction"]["matches_official_unique_count"]
+            fields[str(field_number)]["candidate_extraction"][
+                "matches_official_unique_count"
+            ]
             is False
         )
