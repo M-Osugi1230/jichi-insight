@@ -32,10 +32,10 @@ MEASURE_RE = re.compile(
     r"[１２３４５６７８９０0-9]+\s+(.+)$"
 )
 DEPARTMENT_SUFFIX_RE = re.compile(
-    r"(課|室|事務所|センター|動物公園|博物館|図書館|学校|保健所|消防署|"
-    r"区役所|市民会館|市場|農政センター)"
-    r"(?:、.*(?:課|室|事務所|センター|動物公園|博物館|図書館|学校|保健所|"
-    r"消防署|区役所|市民会館|市場|農政センター))*$"
+    r"(課|室|事務所|事務局|センター|動物公園|博物館|図書館|学校|保健所|"
+    r"消防署|区役所|市民会館|市場|農政センター)"
+    r"(?:、.*(?:課|室|事務所|事務局|センター|動物公園|博物館|図書館|学校|"
+    r"保健所|消防署|区役所|市民会館|市場|農政センター))*$"
 )
 FULLWIDTH_TRANSLATION = str.maketrans("１２３４５６７８９０－", "1234567890-")
 FOOTNOTE_RE = re.compile(r"\s*P\d+\s*")
@@ -83,26 +83,50 @@ def parse_field(path: Path, field_number: int) -> tuple[list[dict], list[dict]]:
             left, right = (part.strip() for part in match.groups())
             if not left or re.search(r"[0-9０-９]", right):
                 continue
-            if not DEPARTMENT_SUFFIX_RE.search(right):
-                continue
             if current_measure is None:
                 raise ValueError(
                     f"Field {field_number}: project heading before measure: {left!r}"
                 )
 
-            candidates.append(
-                {
-                    "measure_code": current_measure,
-                    "project_name": normalize_project_name(left),
-                    "source_heading_text": left,
-                    "responsible_departments": right.split("、"),
-                    "source_printed_page": printed_page,
-                    "source_location": f"PDF p.{printed_page + 3}",
-                    "source_physical_page": printed_page + 4,
-                    "new_in_first_plan": "新規" in left,
-                    "is_repost": "【再掲" in left,
-                }
-            )
+            layout_review_note = None
+            responsible_departments = None
+            source_heading_text = left
+
+            if (
+                field_number == 3
+                and left == "障害者ケアラー"
+                and right.startswith("等への支援")
+            ):
+                source_heading_text = "障害者ケアラー P195 等への支援"
+                left = "障害者ケアラー等への支援"
+                responsible_departments = [
+                    "障害者自立支援課",
+                    "精神保健福祉課",
+                    "こころの健康センター",
+                ]
+                layout_review_note = (
+                    "公式PDF p.73の複数行・複数列レイアウトを目視照合し、"
+                    "分割された事業名と3担当組織を復元した。"
+                )
+            elif DEPARTMENT_SUFFIX_RE.search(right):
+                responsible_departments = right.split("、")
+            else:
+                continue
+
+            record = {
+                "measure_code": current_measure,
+                "project_name": normalize_project_name(left),
+                "source_heading_text": source_heading_text,
+                "responsible_departments": responsible_departments,
+                "source_printed_page": printed_page,
+                "source_location": f"PDF p.{printed_page + 3}",
+                "source_physical_page": printed_page + 4,
+                "new_in_first_plan": "新規" in source_heading_text,
+                "is_repost": "【再掲" in source_heading_text,
+            }
+            if layout_review_note:
+                record["layout_review_note"] = layout_review_note
+            candidates.append(record)
 
     primary_candidates = [row for row in candidates if not row["is_repost"]]
     repost_candidates = [row for row in candidates if row["is_repost"]]
