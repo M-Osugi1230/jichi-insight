@@ -134,6 +134,8 @@ def build() -> dict:
                         "responsible_departments"
                     ],
                     "overlapping_departments": overlap,
+                    "historical_source_id": "chiba-implementation-plan-2023-2025-full-pdf",
+                    "current_source_id": "chiba-implementation-plan-2026-2028-full-pdf",
                     "historical_source_location": historical_row["source_location"],
                     "current_source_location": current_row["source_location"],
                     "promotion_rule": (
