@@ -16,6 +16,8 @@ Jichi Insight（自治体インサイト）は、自治体が公開する政策�
 - Phase 13 Review in progress: 1市（千葉市）
 - Phase 13 Pending record review: 14市
 - 千葉市現行計画: 189 / 189事業identity、406 work itemsをstructured化済み
+- 千葉市旧計画: 360 / 360事業identity、再掲68 / 68を一次identityへ解決済み
+- 千葉市Versioned Linkage: 強い構造的一致60関係をReviewed continuedとして初回昇格
 - 独自の政策達成評価: 0件
 - 比較可能性未確認の全国・都市ランキング: 0件
 
@@ -156,7 +158,7 @@ Status: `in_progress`
 - Pending record review: 14市
 - Blocked source inventory: 0市
 
-千葉市では現行2026〜2028年度実施計画の189事業identityと406 work itemsの構造化・視覚確認を完了済みです。現在は旧2023〜2025年度360事業を別versionとして確認し、現行189事業との継続・改称・統合・分割等を名称類似だけで推測しないversioned linkageへ進む段階です。
+千葉市では現行2026〜2028年度実施計画の189事業identityと406 work items、旧2023〜2025年度360事業identityの全件レビューを完了しました。旧計画の再掲68件も一次identityへ解決済みです。Versioned Linkageでは、正規化事業名・施策コード・担当組織が同時に整合する60関係だけを初回Reviewed continuedへ昇格し、残りは名称類似から推測せずEvidenceレビューを継続しています。
 
 正本:
 
