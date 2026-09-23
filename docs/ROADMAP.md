@@ -138,14 +138,16 @@ Status: `in_progress`
 
 Phase 12完了により、北九州市・福岡市の2市をReviewed referenceとして保持しつつ、残る18市すべてが個票レベルのreview queueへ入りました。Phase 12由来のblocked source inventoryは0です。
 
-2026-08-12時点:
+Canonical queue（2026-09-24同期）:
 
-- Reviewed reference: 2市
+- Reviewed reference: 2市（北九州市、福岡市）
 - Review queue eligible: 18市
-- Reviewed complete: 1市（仙台市）
-- Review in progress: 1市（札幌市）
-- Pending record review: 16市
+- Reviewed complete: 3市（札幌市、仙台市、さいたま市）
+- Review in progress: 1市（千葉市）
+- Pending record review: 14市
 - Blocked source inventory: 0市
+
+状態の正本は `data/catalog/phase13_designated_city_review_queue.json` です。文書上の集計とmachine-readable queueが競合する場合はqueueを優先します。
 
 ### Milestone M2 — First reviewed-complete designated city
 
@@ -169,6 +171,61 @@ Status: `complete`（2026-08-12）
 - `schemas/sendai_phase13_completion.schema.json`
 - `data/catalog/sendai_phase13_progress_linkage.json`
 - `tests/test_phase13_sendai_completion.py`
+
+
+### Milestone M3 — Sapporo reviewed complete
+
+Status: `complete`（2026-08-18）
+
+札幌市は`declared_review_package_v1`としてReviewed completeです。
+
+- Action Plan project identities: 599件（主要406、その他193）
+- Outcome indicators: 26件
+- Principal project target universe: 403件
+- 中央公表で個別名称と現況を確認できたcurrent status: 8件
+- 個別ラベル未公表のまま保持: 395件
+- Fiscal top-line records: 3件
+
+38/356/9の集計値を名称未公表の395事業へ配分せず、未解決状態を保持しています。
+
+正本:
+
+- `data/catalog/sapporo_phase13_completion.json`
+- `schemas/sapporo_phase13_completion.schema.json`
+
+### Milestone M4 — Saitama reviewed complete
+
+Status: `complete`（2026-08-19）
+
+さいたま市は`declared_review_package_v1`としてReviewed completeです。
+
+- Current project identities: 258件
+- Current target identities: 531件
+- Current outcome indicators: 97件
+- Historical unique projects: 299件
+- Priority strategy KPIs: 40件
+- Fiscal top-line records: 3件
+
+現行531目標のうち値レビュー未完了の509件、成果指標の完全な測定出典、旧299事業と現行258事業の版間接続はdeferred depthとして明示しています。
+
+正本:
+
+- `data/catalog/saitama_phase13_completion.json`
+- `schemas/saitama_phase13_completion.schema.json`
+
+### Current work — Chiba record review
+
+Status: `in_progress`
+
+千葉市の現行2026〜2028年度実施計画では、189 / 189事業identity、406 work items、政策指標、財政トップラインまでReviewed層を構築し、visual confirmation pendingは0です。
+
+次の深度は旧2023〜2025年度第1次実施計画360事業のhistorical identity reviewです。旧360事業と現行189事業は別versionとして保持し、全旧identityを確認する前に継続・改称・統合・分割・終了・新規を名称類似だけで確定しません。
+
+正本:
+
+- `data/catalog/chiba_phase13_policy_review_manifest.json`
+- `data/catalog/chiba_current_project_work_item_review_manifest.json`
+- `data/catalog/chiba_current_project_work_item_visual_review_queue.json`
 
 未公開・未解決の年度実績等は、Phase 12のinventory coverageを再度partialへ戻すのではなく、Phase 13の該当レコードで明示的にblocked / not assessableとして扱います。これにより、公開時期を待つだけの資料のために全市のrecord reviewを停止せず、同時に推測補完もしません。
 
@@ -196,7 +253,7 @@ Phase 13では、以下を品質ゲートとして維持します。
 
 ## After Phase 13
 
-1. 残る17市のrecord reviewを順次Reviewed到達深度まで進め、全20政令指定都市の市レベル基盤を完成させる
+1. 千葉市をReviewed completeへ進め、その後の14市を順次Reviewed到達深度まで処理し、全20政令指定都市の市レベル基盤を完成させる
 2. 中核市・県庁所在地
 3. その他市区町村
 4. 選挙・候補者比較
