@@ -8,6 +8,7 @@ on:
       - .github/workflows/extract-chiba-historical-plan-review-text.yml
       - scripts/build_chiba_historical_project_identities.py
       - tests/test_phase13_chiba_historical_project_identities.py
+      - tests/test_phase13_chiba_historical_identity_foundation.py
 
 permissions:
   contents: write
