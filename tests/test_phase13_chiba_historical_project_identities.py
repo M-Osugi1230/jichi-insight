@@ -148,10 +148,9 @@ def test_historical_manifest_preserves_first_110_and_blocks_early_linkage():
         assert coverage["remaining"] == 0
 
 
-def test_candidate_diagnostics_preserve_current_extraction_gaps():
+def test_candidate_diagnostics_reconcile_all_official_field_counts():
     fields = {row["field_code"]: row for row in load(MANIFEST)["field_review_order"]}
     official_counts = [53, 57, 46, 46, 23, 25, 78, 32]
-    candidate_counts = [53, 57, 46, 45, 22, 25, 77, 31]
 
     assert [fields[str(i)]["official_unique_project_count"] for i in range(1, 9)] == (
         official_counts
@@ -159,15 +158,9 @@ def test_candidate_diagnostics_preserve_current_extraction_gaps():
     assert [
         fields[str(i)]["candidate_extraction"]["primary_heading_candidates"]
         for i in range(1, 9)
-    ] == candidate_counts
-    assert fields["1"]["candidate_extraction"]["matches_official_unique_count"] is True
-    assert fields["2"]["candidate_extraction"]["matches_official_unique_count"] is True
-    assert fields["3"]["candidate_extraction"]["matches_official_unique_count"] is True
-    assert fields["6"]["candidate_extraction"]["matches_official_unique_count"] is True
-    for field_number in (4, 5, 7, 8):
-        assert (
-            fields[str(field_number)]["candidate_extraction"][
-                "matches_official_unique_count"
-            ]
-            is False
-        )
+    ] == official_counts
+    assert all(
+        fields[str(i)]["candidate_extraction"]["matches_official_unique_count"]
+        is True
+        for i in range(1, 9)
+    )
