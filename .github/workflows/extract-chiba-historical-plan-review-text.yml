@@ -66,15 +66,19 @@ jobs:
 
       - name: Validate historical identity foundation
         run: |
+          set -o pipefail
           pytest -q \
             tests/test_phase13_chiba_historical_identity_foundation.py \
-            tests/test_phase13_chiba_historical_project_identities.py
+            tests/test_phase13_chiba_historical_project_identities.py \
+            | tee /tmp/chiba-historical-review/pytest.log
           ruff check \
             scripts/build_chiba_historical_project_identities.py \
             tests/test_phase13_chiba_historical_identity_foundation.py \
-            tests/test_phase13_chiba_historical_project_identities.py
+            tests/test_phase13_chiba_historical_project_identities.py \
+            | tee /tmp/chiba-historical-review/ruff.log
 
       - name: Upload review artifact
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: chiba-historical-plan-review-text
