@@ -41,14 +41,14 @@ def test_initial_review_promotes_only_sixty_strong_continuations():
     assert summary == {
         "historical_universe": 360,
         "current_universe": 189,
-        "reviewed_relation_count": 60,
-        "reviewed_historical_identity_count": 60,
-        "reviewed_current_identity_count": 60,
-        "historical_without_reviewed_relation": 300,
-        "current_without_reviewed_relation": 129,
-        "exact_name_candidates_not_promoted": 6,
+        "strong_rule_relation_count": 60,\n        "manual_reviewed_relation_count": 6,\n        "reviewed_relation_count": 66,
+        "reviewed_historical_identity_count": 66,
+        "reviewed_current_identity_count": 66,
+        "historical_without_reviewed_relation": 294,
+        "current_without_reviewed_relation": 123,
+        "exact_name_candidates_not_promoted": 0,
     }
-    assert len(payload["records"]) == 60
+    assert len(payload["records"]) == 66
     assert {row["relation_type"] for row in payload["records"]} == {"continued"}
 
 
@@ -84,11 +84,11 @@ def test_reviewed_continuations_have_multiple_official_identity_signals():
             "normalized_name_equal_and_measure_equal_and_department_overlap"
         )
 
-    assert len(historical_ids) == len(set(historical_ids)) == 60
-    assert len(current_ids) == len(set(current_ids)) == 60
+    assert len(historical_ids) == len(set(historical_ids)) == 66
+    assert len(current_ids) == len(set(current_ids)) == 66
 
 
-def test_exact_name_candidates_without_full_rule_are_not_promoted():
+def test_manual_official_review_promotes_the_six_exact_name_exceptions():
     payload = load(LINKAGE)
     candidates = payload["not_promoted_candidates"]
 
@@ -114,8 +114,8 @@ def test_exact_name_candidates_without_full_rule_are_not_promoted():
 def test_initial_pass_does_not_auto_classify_missing_links_as_retired_or_new():
     payload = load(LINKAGE)
 
-    assert payload["summary"]["historical_without_reviewed_relation"] == 300
-    assert payload["summary"]["current_without_reviewed_relation"] == 129
+    assert payload["summary"]["historical_without_reviewed_relation"] == 294
+    assert payload["summary"]["current_without_reviewed_relation"] == 123
     assert all(
         row["relation_type"]
         not in {"retired_after_first_plan", "new_in_second_plan"}
@@ -135,11 +135,11 @@ def test_phase13_policy_manifest_exposes_versioned_linkage_progress():
     assert policy["versioned_project_linkage_review_path"] == (
         "data/catalog/chiba_versioned_project_linkage_review.json"
     )
-    assert fact["reviewed_relation_count"] == 60
-    assert fact["historical_identity_covered"] == 60
-    assert fact["current_identity_covered"] == 60
-    assert fact["historical_without_reviewed_relation"] == 300
-    assert fact["current_without_reviewed_relation"] == 129
-    assert fact["exact_name_candidates_not_promoted"] == 6
+    assert fact["reviewed_relation_count"] == 66
+    assert fact["historical_identity_covered"] == 66
+    assert fact["current_identity_covered"] == 66
+    assert fact["historical_without_reviewed_relation"] == 294
+    assert fact["current_without_reviewed_relation"] == 123
+    assert fact["exact_name_candidates_not_promoted"] == 0
     assert "名称一致だけ" in fact["interpretation_boundary"]
     assert "Versioned Linkage" in policy["quality_boundary"]
