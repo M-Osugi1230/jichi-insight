@@ -41,6 +41,111 @@ FULLWIDTH_TRANSLATION = str.maketrans("１２３４５６７８９０－", "1234
 FOOTNOTE_RE = re.compile(r"\s*P\d+\s*")
 MARKER_RE = re.compile(r"【[^】]+】")
 
+LAYOUT_OVERRIDE_SPECS = (
+    {
+        "field_number": 3,
+        "printed_page": 73,
+        "fragments": ("障害者ケアラー", "等への支援", "精神保健福祉課"),
+        "source_heading_text": "障害者ケアラー P195 等への支援",
+        "responsible_departments": (
+            "障害者自立支援課",
+            "精神保健福祉課",
+            "こころの健康センター",
+        ),
+        "review_note": (
+            "公式PDFの複数行・複数列レイアウトを目視照合し、"
+            "分割された事業名と3担当組織を復元した。"
+        ),
+    },
+    {
+        "field_number": 4,
+        "printed_page": 88,
+        "fragments": ("新児童相談所の整備【新規】",),
+        "source_heading_text": "新児童相談所の整備【新規】",
+        "responsible_departments": ("こども家庭支援課", "東部児童相談所"),
+        "review_note": (
+            "公式PDFで事業名の上下に分割表示された2担当組織を目視照合した。"
+        ),
+    },
+    {
+        "field_number": 4,
+        "printed_page": 92,
+        "fragments": ("ＩＣＴ教育の推進", "教育改革推進課"),
+        "source_heading_text": "ＩＣＴ教育の推進",
+        "responsible_departments": ("教育指導課", "教育改革推進課", "教育センター"),
+        "review_note": (
+            "公式PDFで事業名の前後行に分割表示された3担当組織を目視照合した。"
+        ),
+    },
+    {
+        "field_number": 5,
+        "printed_page": 108,
+        "fragments": ("区役所を中心とした地域支援プラットフォームの構築【新規】",),
+        "source_heading_text": (
+            "区役所を中心とした地域支援プラットフォームの構築【新規】"
+        ),
+        "responsible_departments": ("市民自治推進課", "区政推進課"),
+        "review_note": (
+            "公式PDFで事業名の上下に分割表示された2担当組織を目視照合した。"
+        ),
+    },
+    {
+        "field_number": 6,
+        "printed_page": 118,
+        "fragments": ("千葉氏に関する企画展の実施及び調査研究の推進【再掲】",),
+        "source_heading_text": "千葉氏に関する企画展の実施及び調査研究の推進【再掲】",
+        "responsible_departments": (
+            "文化財課",
+            "郷土博物館",
+            "埋蔵文化財調査センター",
+        ),
+        "review_note": (
+            "公式PDFで再掲事業名の上下に分割表示された3担当組織を目視照合した。"
+        ),
+    },
+    {
+        "field_number": 7,
+        "printed_page": 136,
+        "fragments": ("千葉氏に関する企画展の実施及び調査研究の推進",),
+        "source_heading_text": "千葉氏に関する企画展の実施及び調査研究の推進",
+        "responsible_departments": (
+            "文化財課",
+            "郷土博物館",
+            "埋蔵文化財調査センター",
+        ),
+        "review_note": (
+            "公式PDFで事業名の上下に分割表示された3担当組織を目視照合した。"
+        ),
+    },
+    {
+        "field_number": 7,
+        "printed_page": 160,
+        "fragments": ("下水道ストックマネジメントの推進", "下水道施設建設課"),
+        "source_heading_text": "下水道ストックマネジメントの推進",
+        "responsible_departments": (
+            "下水道整備課",
+            "下水道施設建設課",
+            "下水道維持課",
+        ),
+        "review_note": (
+            "公式PDFで事業名の前後行に分割表示された3担当組織を目視照合した。"
+        ),
+    },
+    {
+        "field_number": 8,
+        "printed_page": 178,
+        "fragments": ("農政センターのリニューアル",),
+        "source_heading_text": (
+            "農政センターのリニューアル"
+            "（コミュニケーションエリアの活用検討及び改修等）【新規】"
+        ),
+        "responsible_departments": ("農業経営支援課",),
+        "review_note": (
+            "公式PDFで2行に分割された事業名と中間行の担当組織を目視照合した。"
+        ),
+    },
+)
+
 
 def load_json(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
@@ -60,6 +165,22 @@ def normalize_project_name(raw: str) -> str:
     return " ".join(text.split()).strip()
 
 
+def layout_override(
+    field_number: int,
+    printed_page: int,
+    line: str,
+) -> dict | None:
+    stripped = line.strip()
+    for spec in LAYOUT_OVERRIDE_SPECS:
+        if spec["field_number"] != field_number:
+            continue
+        if spec["printed_page"] != printed_page:
+            continue
+        if all(fragment in stripped for fragment in spec["fragments"]):
+            return spec
+    return None
+
+
 def parse_field(path: Path, field_number: int) -> tuple[list[dict], list[dict]]:
     meta = FIELD_META[field_number]
     pages = path.read_text(encoding="utf-8").split("\f")
@@ -77,56 +198,58 @@ def parse_field(path: Path, field_number: int) -> tuple[list[dict], list[dict]]:
             if MEASURE_RE.match(line):
                 current_measure = line.strip().split()[0].translate(FULLWIDTH_TRANSLATION)
 
+            override = layout_override(field_number, printed_page, line)
+            if override is not None:
+                if current_measure is None:
+                    raise ValueError(
+                        "Layout override encountered before a measure heading: "
+                        f"field={field_number} page={printed_page}"
+                    )
+                source_heading_text = override["source_heading_text"]
+                candidates.append(
+                    {
+                        "measure_code": current_measure,
+                        "project_name": normalize_project_name(source_heading_text),
+                        "source_heading_text": source_heading_text,
+                        "responsible_departments": list(
+                            override["responsible_departments"]
+                        ),
+                        "source_printed_page": printed_page,
+                        "source_location": f"PDF p.{printed_page + 3}",
+                        "source_physical_page": printed_page + 4,
+                        "new_in_first_plan": "新規" in source_heading_text,
+                        "is_repost": "【再掲" in source_heading_text,
+                        "layout_review_note": override["review_note"],
+                    }
+                )
+                continue
+
             match = HEADING_RE.match(line.rstrip())
             if not match:
                 continue
             left, right = (part.strip() for part in match.groups())
             if not left or re.search(r"[0-9０-９]", right):
                 continue
+            if not DEPARTMENT_SUFFIX_RE.search(right):
+                continue
             if current_measure is None:
                 raise ValueError(
                     f"Field {field_number}: project heading before measure: {left!r}"
                 )
 
-            layout_review_note = None
-            responsible_departments = None
-            source_heading_text = left
-
-            if (
-                field_number == 3
-                and left == "障害者ケアラー"
-                and right.startswith("等への支援")
-            ):
-                source_heading_text = "障害者ケアラー P195 等への支援"
-                left = "障害者ケアラー等への支援"
-                responsible_departments = [
-                    "障害者自立支援課",
-                    "精神保健福祉課",
-                    "こころの健康センター",
-                ]
-                layout_review_note = (
-                    "公式PDF p.73の複数行・複数列レイアウトを目視照合し、"
-                    "分割された事業名と3担当組織を復元した。"
-                )
-            elif DEPARTMENT_SUFFIX_RE.search(right):
-                responsible_departments = right.split("、")
-            else:
-                continue
-
-            record = {
-                "measure_code": current_measure,
-                "project_name": normalize_project_name(left),
-                "source_heading_text": source_heading_text,
-                "responsible_departments": responsible_departments,
-                "source_printed_page": printed_page,
-                "source_location": f"PDF p.{printed_page + 3}",
-                "source_physical_page": printed_page + 4,
-                "new_in_first_plan": "新規" in source_heading_text,
-                "is_repost": "【再掲" in source_heading_text,
-            }
-            if layout_review_note:
-                record["layout_review_note"] = layout_review_note
-            candidates.append(record)
+            candidates.append(
+                {
+                    "measure_code": current_measure,
+                    "project_name": normalize_project_name(left),
+                    "source_heading_text": left,
+                    "responsible_departments": right.split("、"),
+                    "source_printed_page": printed_page,
+                    "source_location": f"PDF p.{printed_page + 3}",
+                    "source_physical_page": printed_page + 4,
+                    "new_in_first_plan": "新規" in left,
+                    "is_repost": "【再掲" in left,
+                }
+            )
 
     primary_candidates = [row for row in candidates if not row["is_repost"]]
     repost_candidates = [row for row in candidates if row["is_repost"]]
@@ -212,6 +335,32 @@ def build_reviewed_identity_payload(
     }
 
 
+def resolve_cross_field_reposts(payloads: dict[int, dict]) -> None:
+    primary_by_name: dict[str, str] = {}
+    for payload in payloads.values():
+        for record in payload["records"]:
+            name = record["project_name"]
+            if name in primary_by_name:
+                raise ValueError(
+                    "Duplicate historical primary project name across fields: "
+                    f"{name!r}"
+                )
+            primary_by_name[name] = record["review_id"]
+
+    for payload in payloads.values():
+        for repost in payload["displayed_reposts"]:
+            if repost["repost_type"] != "cross_field_repost_pending_primary_review":
+                continue
+            primary_review_id = primary_by_name.get(repost["project_name"])
+            if primary_review_id is None:
+                continue
+            repost["repost_type"] = "cross_field_repost_resolved"
+            repost["primary_review_id"] = primary_review_id
+            repost["decision"] = "do_not_duplicate_identity"
+
+
+
+
 def build_evidence(payload: dict) -> dict:
     records = payload["records"]
     reposts = payload["displayed_reposts"]
@@ -265,34 +414,109 @@ def update_manifest(
         if field_number in reviewed_fields:
             field_row["reviewed_unique_projects"] = meta["official_count"]
             field_row["identity_path"] = (
-                f"data/catalog/chiba_historical_project_identities_field{field_number:02d}.json"
+                "data/catalog/"
+                f"chiba_historical_project_identities_field{field_number:02d}.json"
             )
             field_row["status"] = "reviewed_complete"
-            reviewed_paths.append(field_row["identity_path"])
-            reviewed_total += meta["official_count"]
-        elif field_row.get("status") == "reviewed_complete":
+        if field_row.get("status") == "reviewed_complete":
             reviewed_total += field_row["reviewed_unique_projects"]
             reviewed_paths.append(field_row["identity_path"])
 
+    universe = manifest["historical_project_universe"]
+    remaining = universe - reviewed_total
     manifest["historical_identity_coverage"] = {
         "reviewed": reviewed_total,
-        "remaining": manifest["historical_project_universe"] - reviewed_total,
+        "remaining": remaining,
     }
     manifest["historical_identity_paths"] = reviewed_paths
+
     next_pending = next(
-        row for row in manifest["field_review_order"] if row["status"] != "reviewed_complete"
+        (
+            row
+            for row in manifest["field_review_order"]
+            if row["status"] != "reviewed_complete"
+        ),
+        None,
     )
-    manifest["next_action"] = (
-        f"Field {next_pending['field_code']}（{next_pending['field_name']}）の抽出候補を公式PDF"
-        "レイアウトと照合し、公式分野別事業数に不足する見出しを特定したうえで、"
-        "再掲を除いた一次identityだけをreviewedへ昇格する。"
-    )
-    manifest["quality_boundary"] = (
-        f"旧第1次計画360事業のうち{reviewed_total}件をidentity review済み。"
-        f"残り{360 - reviewed_total}件を完了するまで360→189のversioned linkageはblocked。"
-        "候補抽出件数が公式分野別事業数と一致しない分野は不足見出しを解消するまで昇格しない。"
-        "名称一致・類似だけで継続・改称・統合・分割・廃止を確定しない。"
-    )
+
+    if next_pending is not None:
+        manifest["next_action"] = (
+            f"Field {next_pending['field_code']}（{next_pending['field_name']}）の抽出候補を"
+            "公式PDFレイアウトと照合し、公式分野別事業数に不足する見出しを"
+            "特定したうえで、再掲を除いた一次identityだけをreviewedへ昇格する。"
+        )
+        manifest["quality_boundary"] = (
+            f"旧第1次計画360事業のうち{reviewed_total}件をidentity review済み。"
+            f"残り{remaining}件を完了するまで360→189のversioned linkageはblocked。"
+            "候補抽出件数が公式分野別事業数と一致しない分野は不足見出しを"
+            "解消するまで昇格しない。名称一致・類似だけで継続・改称・統合・"
+            "分割・廃止を確定しない。"
+        )
+    else:
+        total_reposts = 0
+        resolved_reposts = 0
+        unresolved_reposts = 0
+        all_primary_ids: set[str] = set()
+        all_primary_names: set[str] = set()
+
+        for field_number in FIELD_META:
+            payload = load_json(
+                CATALOG
+                / f"chiba_historical_project_identities_field{field_number:02d}.json"
+            )
+            for record in payload["records"]:
+                review_id = record["review_id"]
+                project_name = record["project_name"]
+                if review_id in all_primary_ids:
+                    raise ValueError(f"Duplicate historical review_id: {review_id}")
+                if project_name in all_primary_names:
+                    raise ValueError(
+                        "Duplicate historical primary project name after full review: "
+                        f"{project_name!r}"
+                    )
+                all_primary_ids.add(review_id)
+                all_primary_names.add(project_name)
+
+            for repost in payload["displayed_reposts"]:
+                total_reposts += 1
+                if repost.get("primary_review_id"):
+                    resolved_reposts += 1
+                else:
+                    unresolved_reposts += 1
+
+        if len(all_primary_ids) != universe:
+            raise ValueError(
+                f"Historical identity total {len(all_primary_ids)} != universe {universe}"
+            )
+        if unresolved_reposts:
+            raise ValueError(
+                "Historical repost reconciliation incomplete: "
+                f"{unresolved_reposts} unresolved"
+            )
+
+        manifest["historical_repost_reconciliation"] = {
+            "displayed_reposts": total_reposts,
+            "resolved_to_primary_identity": resolved_reposts,
+            "unresolved": unresolved_reposts,
+        }
+        manifest["versioned_linkage_gate"]["status"] = (
+            "ready_for_versioned_linkage_review"
+        )
+        manifest["next_action"] = (
+            "旧2023～2025年度360事業identityと現行2026～2028年度189事業identityを"
+            "公式掲載位置、施策、担当課、取組内容、事業量等で照合し、continued、"
+            "renamed_continuation、merged_into_current、split_into_current、"
+            "retired_after_first_plan、new_in_second_plan、unresolvedのversioned "
+            "linkageをEvidence付きでレビューする。名称一致・類似だけでは確定しない。"
+        )
+        manifest["quality_boundary"] = (
+            "旧第1次計画360/360事業のhistorical identity reviewを完了し、"
+            f"再掲{total_reposts}件はすべて一次identityへ解決済み。"
+            "これは現行189事業との継続・改称・統合・分割・終了・新規関係が"
+            "確定したことを意味しない。360→189のversioned linkageは次の独立レビュー"
+            "でEvidenceを確認し、名称一致・類似だけでは確定しない。"
+        )
+
     write_json(MANIFEST, manifest)
 
 
@@ -320,11 +544,17 @@ def main() -> None:
         parsed[field_number] = (primary, reposts)
         parsed_counts[field_number] = (len(primary), len(reposts))
 
-    for field_number in args.fields:
+    reviewed_fields = sorted(set(args.fields))
+    payloads: dict[int, dict] = {}
+    for field_number in reviewed_fields:
         primary, reposts = parsed[field_number]
-        payload = build_reviewed_identity_payload(
+        payloads[field_number] = build_reviewed_identity_payload(
             field_number, primary, reposts, pdf_sha256
         )
+
+    resolve_cross_field_reposts(payloads)
+
+    for field_number, payload in payloads.items():
         write_json(
             CATALOG / f"chiba_historical_project_identities_field{field_number:02d}.json",
             payload,
@@ -334,7 +564,7 @@ def main() -> None:
             build_evidence(payload),
         )
 
-    update_manifest(parsed_counts, sorted(set(args.fields)))
+    update_manifest(parsed_counts, reviewed_fields)
 
 
 if __name__ == "__main__":
