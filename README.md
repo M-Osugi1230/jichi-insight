@@ -6,20 +6,22 @@ Jichi Insight（自治体インサイト）は、自治体が公開する政策�
 
 ## Product status
 
-`Phase 10 complete / Phase 11 Wave 2 complete / Wave 3 active / 47 prefectures published / pre-alpha`
+`Phase 12 complete / Phase 13 active / 47 prefectures complete / 20 designated cities inventoried / pre-alpha`
 
-- 全国登録・公式入口・現行政策計画: 47 / 47
-- Evidence-backed Reviewed数値目標: 47 / 47
-- Phase 10文書スコープ同一粒度: 47 / 47
-- Phase 11 Wave 1: 4都道府県・861個票を全件正規化
-- Phase 11 Wave 2: 5地域拠点・711件・725系列を全件正規化
-- Wave 2 current値あり / 欠損・未接続: 340 / 385系列
-- Wave 3: 残る38県を都道府県コード順に処理中
-- 次の対象: 青森県（02）、岩手県（03）
+- 全国47都道府県: Phase 11まで完了
+- Phase 11個票基盤: 47都道府県・15,327レコード
+- 政令指定都市 Source Inventory: 20 / 20
+- Phase 13 Reviewed reference: 2市（北九州市、福岡市）
+- Phase 13 Reviewed complete: 3市（札幌市、仙台市、さいたま市）
+- Phase 13 Review in progress: 1市（千葉市）
+- Phase 13 Pending record review: 14市
+- 千葉市現行計画: 189 / 189事業identity、406 work itemsをstructured化済み
 - 独自の政策達成評価: 0件
-- 比較可能性未確認の全国ランキング: 0件
+- 比較可能性未確認の全国・都市ランキング: 0件
 
-Phase 10は全国の文書スコープを完成させました。Phase 11では個票接続またはReviewed最大到達深度へ進めています。公式資料が不足する場合も推測で埋めず、何が未接続かを明示します。
+Phase 10で全国47都道府県の共通文書スコープ、Phase 11で個票レベルのReviewed接続またはReviewed最大到達深度、Phase 12で20政令指定都市の公式Source Inventoryを完成させました。現在はPhase 13として、政令指定都市を個票レベルへ深掘りしています。公式資料が不足する場合も推測で埋めず、何が未接続かを明示します。
+
+進捗の正本は `data/catalog/phase13_designated_city_review_queue.json` と各Phase completion manifestです。READMEは人向けの要約であり、状態が競合する場合はmachine-readable catalogを優先します。
 
 ## Evidence chain
 
@@ -116,9 +118,50 @@ Wave 2統合ゲート:
 - [`schemas/phase11_record_linkage.schema.json`](schemas/phase11_record_linkage.schema.json)
 - [Phase 11 methodology](docs/PHASE11_RECORD_LINKAGE.md)
 
-### Wave 3 active
+### Wave 3 complete
 
-残る38県を都道府県コード順に処理します。各県はReviewed個票接続またはReviewed最大到達深度へ必ず到達させます。最初は青森県（02）、次に岩手県（03）です。
+残る38県・13,755レコードを都道府県コード順に処理し、全件を共通SchemaとEvidence・欠損状態・非評価境界へ通しました。
+
+- 完了県: 38 / 38
+- Reviewed最大到達深度: 13,755レコード
+- Linkedへ推測昇格したレコード: 0
+- Partial: 13,755
+- 政策達成・因果関係・全国比較の独自判定: 0
+
+Phase 11全体では47都道府県・15,327レコードです。
+
+## Phase 12 — Designated-city source inventory
+
+2026年8月12日、20政令指定都市すべての公式Source Inventoryを完了しました。
+
+- Reviewed reference: 2市（北九州市、福岡市）
+- Source inventory complete: 18 / 18
+- Source inventory partial: 0
+- Pending source inventory: 0
+
+正本:
+
+- [`data/catalog/phase12_designated_city_execution_queue.json`](data/catalog/phase12_designated_city_execution_queue.json)
+- [Phase 12 designated cities](docs/PHASE12_DESIGNATED_CITIES.md)
+
+## Phase 13 — Designated-city record review
+
+Status: `in_progress`
+
+現在のCanonical queue:
+
+- Reviewed reference: 2市（北九州市、福岡市）
+- Reviewed complete: 3市（札幌市、仙台市、さいたま市）
+- Review in progress: 1市（千葉市）
+- Pending record review: 14市
+- Blocked source inventory: 0市
+
+千葉市では現行2026〜2028年度実施計画の189事業identityと406 work itemsの構造化・視覚確認を完了済みです。現在は旧2023〜2025年度360事業を別versionとして確認し、現行189事業との継続・改称・統合・分割等を名称類似だけで推測しないversioned linkageへ進む段階です。
+
+正本:
+
+- [`data/catalog/phase13_designated_city_review_queue.json`](data/catalog/phase13_designated_city_review_queue.json)
+- [Roadmap](docs/ROADMAP.md)
 
 ## Repository map
 
