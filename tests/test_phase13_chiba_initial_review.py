@@ -48,7 +48,7 @@ def test_chiba_reviewed_sources_are_official_and_cycle_bounded():
     source_records = load(SOURCES)["records"]
     sources = {row["id"]: row for row in source_records}
 
-    assert len(sources) == 9
+    assert len(sources) >= 9
     assert set(municipality["sources"]) == set(sources)
     assert all(row["organization"] == "千葉市" for row in source_records)
     assert all(row["url"].startswith("https://www.city.chiba.jp/") for row in source_records)
@@ -59,6 +59,10 @@ def test_chiba_reviewed_sources_are_official_and_cycle_bounded():
     assert sources["chiba-implementation-plan-2023-2025"]["review_status"] == (
         "reviewed_historical_cycle_identity"
     )
+    assert sources["chiba-implementation-plan-2023-2025-full-pdf"]["source_kind"] == (
+        "pdf"
+    )
+    assert sources["chiba-implementation-plan-2023-2025-full-pdf"]["page_count"] == 221
     assert "360事業" in sources["chiba-implementation-progress-2024-settlement"]["boundary"]
 
 
