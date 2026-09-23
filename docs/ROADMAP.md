@@ -219,13 +219,18 @@ Status: `in_progress`
 
 千葉市の現行2026〜2028年度実施計画では、189 / 189事業identity、406 work items、政策指標、財政トップラインまでReviewed層を構築し、visual confirmation pendingは0です。
 
-次の深度は旧2023〜2025年度第1次実施計画360事業のhistorical identity reviewです。旧360事業と現行189事業は別versionとして保持し、全旧identityを確認する前に継続・改称・統合・分割・終了・新規を名称類似だけで確定しません。
+旧2023〜2025年度第1次実施計画も360 / 360事業identityを全件レビューし、再掲68件を一次identityへ解決しました。旧360事業と現行189事業は別versionとして保持しています。
+
+Versioned Linkageの初回レビューでは、Unicode NFKC＋空白除去で正規化した事業名が一致し、施策コードも一致し、担当組織が1件以上重なる60関係だけを`continued`へReviewed昇格しました。名称一致はあるもののこの複合条件を満たさない6関係はnot promotedのままです。未接続の旧300事業を終了、現行129事業を新規と自動判定せず、改称・統合・分割も別Evidenceレビューまで未確定とします。
 
 正本:
 
 - `data/catalog/chiba_phase13_policy_review_manifest.json`
 - `data/catalog/chiba_current_project_work_item_review_manifest.json`
-- `data/catalog/chiba_current_project_work_item_visual_review_queue.json`
+- `data/catalog/chiba_historical_project_identity_review_manifest.json`
+- `data/catalog/chiba_versioned_project_linkage_review.json`
+- `schemas/chiba_versioned_project_linkage.schema.json`
+- `tests/test_phase13_chiba_versioned_project_linkage.py`
 
 未公開・未解決の年度実績等は、Phase 12のinventory coverageを再度partialへ戻すのではなく、Phase 13の該当レコードで明示的にblocked / not assessableとして扱います。これにより、公開時期を待つだけの資料のために全市のrecord reviewを停止せず、同時に推測補完もしません。
 
