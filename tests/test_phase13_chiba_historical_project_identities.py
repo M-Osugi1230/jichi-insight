@@ -151,7 +151,7 @@ def test_historical_manifest_preserves_first_110_and_blocks_early_linkage():
 def test_candidate_diagnostics_preserve_current_extraction_gaps():
     fields = {row["field_code"]: row for row in load(MANIFEST)["field_review_order"]}
     official_counts = [53, 57, 46, 46, 23, 25, 78, 32]
-    candidate_counts = [53, 57, 45, 45, 22, 25, 77, 31]
+    candidate_counts = [53, 57, 46, 45, 22, 25, 77, 31]
 
     assert [fields[str(i)]["official_unique_project_count"] for i in range(1, 9)] == (
         official_counts
@@ -162,8 +162,9 @@ def test_candidate_diagnostics_preserve_current_extraction_gaps():
     ] == candidate_counts
     assert fields["1"]["candidate_extraction"]["matches_official_unique_count"] is True
     assert fields["2"]["candidate_extraction"]["matches_official_unique_count"] is True
+    assert fields["3"]["candidate_extraction"]["matches_official_unique_count"] is True
     assert fields["6"]["candidate_extraction"]["matches_official_unique_count"] is True
-    for field_number in (3, 4, 5, 7, 8):
+    for field_number in (4, 5, 7, 8):
         assert (
             fields[str(field_number)]["candidate_extraction"][
                 "matches_official_unique_count"
