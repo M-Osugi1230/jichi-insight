@@ -119,33 +119,100 @@ def test_historical_identity_evidence_reconciles_exactly():
     assert len(field01["source_pdf_sha256"]) == 64
 
 
-def test_historical_manifest_preserves_first_110_and_blocks_early_linkage():
+def test_historical_manifest_completes_all_360_before_versioned_linkage():
     manifest = load(MANIFEST)
     fields = {row["field_code"]: row for row in manifest["field_review_order"]}
     coverage = manifest["historical_identity_coverage"]
 
     assert manifest["historical_project_universe"] == 360
-    assert coverage["reviewed"] >= 110
-    assert coverage["reviewed"] + coverage["remaining"] == 360
-    assert fields["1"]["official_unique_project_count"] == 53
-    assert fields["2"]["official_unique_project_count"] == 57
-    assert fields["1"]["reviewed_unique_projects"] == 53
-    assert fields["2"]["reviewed_unique_projects"] == 57
-    assert fields["1"]["status"] == fields["2"]["status"] == "reviewed_complete"
-
-    reviewed_sum = sum(
-        row["reviewed_unique_projects"] for row in manifest["field_review_order"]
+    assert manifest["status"] == "historical_identity_review_complete"
+    assert coverage == {"reviewed": 360, "remaining": 0}
+    assert [fields[str(i)]["reviewed_unique_projects"] for i in range(1, 9)] == [
+        53,
+        57,
+        46,
+        46,
+        23,
+        25,
+        78,
+        32,
+    ]
+    assert all(fields[str(i)]["status"] == "reviewed_complete" for i in range(1, 9))
+    assert manifest["versioned_linkage_gate"]["status"] == (
+        "ready_for_versioned_linkage_review"
     )
-    assert reviewed_sum == coverage["reviewed"]
+    assert manifest["historical_repost_reconciliation"] == {
+        "displayed_reposts": 68,
+        "resolved_to_primary_identity": 68,
+        "unresolved": 0,
+    }
+    assert "360/360" in manifest["quality_boundary"]
+    assert "68件" in manifest["quality_boundary"]
+    assert "名称一致・類似だけでは確定しない" in manifest["next_action"]
 
-    if coverage["reviewed"] < 360:
-        assert manifest["versioned_linkage_gate"]["status"] == (
-            "blocked_until_historical_identity_complete"
-        )
-        assert str(coverage["reviewed"]) in manifest["quality_boundary"]
-        assert str(coverage["remaining"]) in manifest["quality_boundary"]
-    else:
-        assert coverage["remaining"] == 0
+
+def test_all_historical_primary_ids_and_names_are_globally_unique():
+    records = []
+    reposts = []
+    for field_number in range(1, 9):
+        payload = load(identity_path(field_number))
+        records.extend(payload["records"])
+        reposts.extend(payload["displayed_reposts"])
+
+    ids = [row["review_id"] for row in records]
+    names = [row["project_name"] for row in records]
+
+    assert len(records) == len(set(ids)) == len(set(names)) == 360
+    assert len(reposts) == 68
+    assert all(row["primary_review_id"] for row in reposts)
+    assert all(
+        row["repost_type"] in {"same_field_repost", "cross_field_repost_resolved"}
+        for row in reposts
+    )
+
+
+def test_layout_review_overrides_preserve_multiline_titles_and_departments():
+    expected = {
+        (3, "障害者ケアラー等への支援"): [
+            "障害者自立支援課",
+            "精神保健福祉課",
+            "こころの健康センター",
+        ],
+        (4, "新児童相談所の整備"): ["こども家庭支援課", "東部児童相談所"],
+        (4, "ＩＣＴ教育の推進"): [
+            "教育指導課",
+            "教育改革推進課",
+            "教育センター",
+        ],
+        (5, "区役所を中心とした地域支援プラットフォームの構築"): [
+            "市民自治推進課",
+            "区政推進課",
+        ],
+        (7, "千葉氏に関する企画展の実施及び調査研究の推進"): [
+            "文化財課",
+            "郷土博物館",
+            "埋蔵文化財調査センター",
+        ],
+        (7, "下水道ストックマネジメントの推進"): [
+            "下水道整備課",
+            "下水道施設建設課",
+            "下水道維持課",
+        ],
+        (
+            8,
+            "農政センターのリニューアル"
+            "（コミュニケーションエリアの活用検討及び改修等）",
+        ): ["農業経営支援課"],
+    }
+
+    for (field_number, project_name), departments in expected.items():
+        records = {
+            row["project_name"]: row
+            for row in load(identity_path(field_number))["records"]
+        }
+        record = records[project_name]
+        assert record["responsible_departments"] == departments
+        assert "layout_review_note" in record
 
 
 def test_candidate_diagnostics_reconcile_all_official_field_counts():
