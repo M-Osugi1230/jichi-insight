@@ -1,17 +1,21 @@
 # Phase 12 — Designated city expansion
 
-Status: `in_progress`（2026-08-06開始）
+Status: `complete`（2026-08-12）
 
 Phase 12では、全国20政令指定都市を都道府県と同じ状態分離、Evidence、期間、単位、母集団、比較不能境界を持つ共通基盤へ展開します。
 
-## Current scope
+## Completion scope
 
-- 対象都市: 20
-- Reviewed reference実装: 北九州市、福岡市
-- 実行キュー: 残り18都市
-- 次の対象: 札幌市（自治体コード011002）
+- 対象都市: 20 / 20
+- Reviewed reference実装: 2市（北九州市、福岡市）
+- Source inventory complete: 18 / 18
+- Source inventory partial: 0
+- Pending source inventory: 0
+- Phase 12由来のblocked source inventory: 0
 - 独自の政策達成評価: 0
 - 比較可能性未確認データのランキング昇格: 0
+
+Phase 12の完了は、20市について現時点の公式公開体系を棚卸しし、現行総合計画、実施層・進行管理、予算、決算、過年度資料との版境界、および未公開・未解決Evidenceを明示できたことを意味します。すべての個票がReviewed済みという意味ではありません。個票レビューはPhase 13で行います。
 
 ## Quality gates
 
@@ -30,6 +34,8 @@ Phase 12では、全国20政令指定都市を都道府県と同じ状態分離�
 - `schemas/phase12_designated_city_execution_queue.schema.json`
 - `tests/test_phase12_designated_city_execution_queue.py`
 
-## Execution order
+## Phase 13 handoff order
 
-札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市、浜松市、名古屋市、京都市、大阪市、堺市、神戸市、岡山市、広島市、熊本市の順で、公式資料インベントリからReviewed個票へ進めます。
+Phase 12でSource Inventoryを完了した18市は、札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市、浜松市、名古屋市、京都市、大阪市、堺市、神戸市、岡山市、広島市、熊本市の順でPhase 13のrecord reviewへ引き渡します。
+
+現在の個票レビュー状態は `data/catalog/phase13_designated_city_review_queue.json` を正本とします。
