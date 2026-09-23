@@ -1,0 +1,254 @@
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+CAT = ROOT / "data/catalog"
+EVD = ROOT / "data/evidence"
+MANIFEST = CAT / "chiba_historical_project_identity_review_manifest.json"
+POLICY_MANIFEST = CAT / "chiba_phase13_policy_review_manifest.json"
+
+
+def load(path: Path):
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def identity_path(field_number: int) -> Path:
+    return CAT / f"chiba_historical_project_identities_field{field_number:02d}.json"
+
+
+def evidence_path(field_number: int) -> Path:
+    return EVD / f"chiba_historical_project_identities_field{field_number:02d}_evidence.json"
+
+
+def test_historical_fields_1_and_2_match_official_unique_project_counts():
+    field01 = load(identity_path(1))
+    field02 = load(identity_path(2))
+
+    assert field01["official_unique_project_count"] == len(field01["records"]) == 53
+    assert field02["official_unique_project_count"] == len(field02["records"]) == 57
+    assert len(field01["displayed_reposts"]) == 9
+    assert len(field02["displayed_reposts"]) == 1
+
+
+def test_historical_review_ids_are_unique_and_separate_from_current_ids():
+    records = load(identity_path(1))["records"] + load(identity_path(2))["records"]
+    ids = [row["review_id"] for row in records]
+
+    assert len(ids) == len(set(ids)) == 110
+    assert all(review_id.startswith("chiba-hf") for review_id in ids)
+    assert not any(review_id.startswith("chiba-f0") for review_id in ids)
+
+
+def test_historical_identity_rows_preserve_measure_department_and_source_coordinates():
+    for field_number in (1, 2):
+        payload = load(identity_path(field_number))
+        for row in payload["records"]:
+            assert row["measure_code"].startswith(f"{field_number}-")
+            assert row["project_name"].strip()
+            assert row["source_heading_text"].strip()
+            assert row["responsible_departments"]
+            assert all(department.strip() for department in row["responsible_departments"])
+            assert row["primary_identity"] is True
+            assert row["source_physical_page"] == row["source_printed_page"] + 4
+            assert row["source_location"] == f"PDF p.{row['source_printed_page'] + 3}"
+
+
+def test_field01_reposts_are_excluded_from_unique_53():
+    payload = load(identity_path(1))
+    records = {row["project_name"]: row for row in payload["records"]}
+    reposts = payload["displayed_reposts"]
+
+    same_field = [row for row in reposts if row["repost_type"] == "same_field_repost"]
+    cross_field = [
+        row
+        for row in reposts
+        if row["repost_type"]
+        in {
+            "cross_field_repost_pending_primary_review",
+            "cross_field_repost_resolved",
+        }
+    ]
+
+    assert len(same_field) == 5
+    assert len(cross_field) == 4
+    assert all(row["primary_review_id"] for row in same_field)
+    for row in same_field:
+        assert records[row["project_name"]]["review_id"] == row["primary_review_id"]
+
+    for row in cross_field:
+        if row["repost_type"] == "cross_field_repost_pending_primary_review":
+            assert row["primary_review_id"] is None
+        else:
+            assert row["primary_review_id"]
+
+
+def test_field02_single_repost_is_never_counted_as_a_second_primary_identity():
+    payload = load(identity_path(2))
+    reposts = payload["displayed_reposts"]
+
+    assert len(reposts) == 1
+    assert reposts[0]["project_name"] == "バス停車帯の整備"
+    assert reposts[0]["repost_type"] in {
+        "cross_field_repost_pending_primary_review",
+        "cross_field_repost_resolved",
+    }
+    if reposts[0]["repost_type"] == "cross_field_repost_pending_primary_review":
+        assert reposts[0]["primary_review_id"] is None
+    else:
+        assert reposts[0]["primary_review_id"]
+
+
+def test_historical_identity_evidence_reconciles_exactly():
+    field01 = load(evidence_path(1))
+    field02 = load(evidence_path(2))
+
+    assert field01["reconciliation"] == {
+        "official_unique_project_count": 53,
+        "reviewed_unique_project_count": 53,
+        "displayed_repost_count": 9,
+        "count_matches_official": True,
+    }
+    assert field02["reconciliation"] == {
+        "official_unique_project_count": 57,
+        "reviewed_unique_project_count": 57,
+        "displayed_repost_count": 1,
+        "count_matches_official": True,
+    }
+    assert field01["source_pdf_sha256"] == field02["source_pdf_sha256"]
+    assert len(field01["source_pdf_sha256"]) == 64
+
+
+def test_historical_manifest_completes_all_360_before_versioned_linkage():
+    manifest = load(MANIFEST)
+    fields = {row["field_code"]: row for row in manifest["field_review_order"]}
+    coverage = manifest["historical_identity_coverage"]
+
+    assert manifest["historical_project_universe"] == 360
+    assert manifest["status"] == "historical_identity_review_complete"
+    assert coverage == {"reviewed": 360, "remaining": 0}
+    assert [fields[str(i)]["reviewed_unique_projects"] for i in range(1, 9)] == [
+        53,
+        57,
+        46,
+        46,
+        23,
+        25,
+        78,
+        32,
+    ]
+    assert all(fields[str(i)]["status"] == "reviewed_complete" for i in range(1, 9))
+    assert manifest["versioned_linkage_gate"]["status"] == (
+        "ready_for_versioned_linkage_review"
+    )
+    assert manifest["historical_repost_reconciliation"] == {
+        "displayed_reposts": 68,
+        "resolved_to_primary_identity": 68,
+        "unresolved": 0,
+    }
+    assert "360/360" in manifest["quality_boundary"]
+    assert "68件" in manifest["quality_boundary"]
+    assert "名称一致・類似だけでは確定しない" in manifest["next_action"]
+
+
+def test_all_historical_primary_ids_and_names_are_globally_unique():
+    records = []
+    reposts = []
+    for field_number in range(1, 9):
+        payload = load(identity_path(field_number))
+        records.extend(payload["records"])
+        reposts.extend(payload["displayed_reposts"])
+
+    ids = [row["review_id"] for row in records]
+    names = [row["project_name"] for row in records]
+
+    assert len(records) == len(set(ids)) == len(set(names)) == 360
+    assert len(reposts) == 68
+    assert all(row["primary_review_id"] for row in reposts)
+    assert all(
+        row["repost_type"] in {"same_field_repost", "cross_field_repost_resolved"}
+        for row in reposts
+    )
+
+
+def test_layout_review_overrides_preserve_multiline_titles_and_departments():
+    expected = {
+        (3, "障害者ケアラー等への支援"): [
+            "障害者自立支援課",
+            "精神保健福祉課",
+            "こころの健康センター",
+        ],
+        (4, "新児童相談所の整備"): ["こども家庭支援課", "東部児童相談所"],
+        (4, "ＩＣＴ教育の推進"): [
+            "教育指導課",
+            "教育改革推進課",
+            "教育センター",
+        ],
+        (5, "区役所を中心とした地域支援プラットフォームの構築"): [
+            "市民自治推進課",
+            "区政推進課",
+        ],
+        (7, "千葉氏に関する企画展の実施及び調査研究の推進"): [
+            "文化財課",
+            "郷土博物館",
+            "埋蔵文化財調査センター",
+        ],
+        (7, "下水道ストックマネジメントの推進"): [
+            "下水道整備課",
+            "下水道施設建設課",
+            "下水道維持課",
+        ],
+        (
+            8,
+            "農政センターのリニューアル"
+            "（コミュニケーションエリアの活用検討及び改修等）",
+        ): ["農業経営支援課"],
+    }
+
+    for (field_number, project_name), departments in expected.items():
+        records = {
+            row["project_name"]: row
+            for row in load(identity_path(field_number))["records"]
+        }
+        record = records[project_name]
+        assert record["responsible_departments"] == departments
+        assert "layout_review_note" in record
+
+
+def test_candidate_diagnostics_reconcile_all_official_field_counts():
+    fields = {row["field_code"]: row for row in load(MANIFEST)["field_review_order"]}
+    official_counts = [53, 57, 46, 46, 23, 25, 78, 32]
+
+    assert [fields[str(i)]["official_unique_project_count"] for i in range(1, 9)] == (
+        official_counts
+    )
+    assert [
+        fields[str(i)]["candidate_extraction"]["primary_heading_candidates"]
+        for i in range(1, 9)
+    ] == official_counts
+    assert all(
+        fields[str(i)]["candidate_extraction"]["matches_official_unique_count"]
+        is True
+        for i in range(1, 9)
+    )
+
+
+def test_phase13_policy_manifest_exposes_historical_identity_completion():
+    policy = load(POLICY_MANIFEST)
+    facts = {row["id"]: row for row in policy["reviewed_facts"]}
+    historical = facts["chiba-historical-project-universe"]
+
+    assert policy["historical_project_identity_review_manifest_path"] == (
+        "data/catalog/chiba_historical_project_identity_review_manifest.json"
+    )
+    assert historical["value"] == 360
+    assert historical["identity_records_reviewed"] == 360
+    assert historical["identity_records_remaining"] == 0
+    assert historical["displayed_repost_occurrences_reviewed"] == 68
+    assert historical["displayed_repost_occurrences_resolved"] == 68
+    assert historical["review_status"] == (
+        "reviewed_complete_360_of_360_project_identities"
+    )
+    assert "versioned linkage" in historical["interpretation_boundary"]
+    assert "360/360" in policy["quality_boundary"]
