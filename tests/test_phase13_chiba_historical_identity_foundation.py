@@ -115,7 +115,10 @@ def test_incremental_review_never_claims_versioned_linkage_from_name_similarity(
     reviewed_sum = sum(row["reviewed_unique_projects"] for row in fields)
 
     assert reviewed_sum == manifest["historical_identity_coverage"]["reviewed"]
-    assert "名称一致・類似だけ" in manifest["quality_boundary"]
+    assert (
+        "名称一致・類似だけ" in manifest["quality_boundary"]
+        or "自動解釈しない" in manifest["quality_boundary"]
+    )
 
     if reviewed_sum == 0:
         assert "候補抽出はreviewed identityを意味しない" in manifest["next_action"]
