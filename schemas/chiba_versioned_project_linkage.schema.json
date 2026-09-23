@@ -142,6 +142,8 @@
         "historical_responsible_departments",
         "current_responsible_departments",
         "overlapping_departments",
+        "historical_source_id",
+        "current_source_id",
         "historical_source_location",
         "current_source_location",
         "promotion_rule"
@@ -168,6 +170,8 @@
           "uniqueItems": true,
           "items": {"type": "string", "minLength": 1}
         },
+        "historical_source_id": {"const": "chiba-implementation-plan-2023-2025-full-pdf"},
+        "current_source_id": {"const": "chiba-implementation-plan-2026-2028-full-pdf"},
         "historical_source_location": {"type": "string", "minLength": 1},
         "current_source_location": {"type": "string", "minLength": 1},
         "promotion_rule": {"const": "normalized_name_equal_and_measure_equal_and_department_overlap"}
