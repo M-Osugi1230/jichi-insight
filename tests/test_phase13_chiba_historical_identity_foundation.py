@@ -29,15 +29,15 @@ def test_first_implementation_plan_full_pdf_is_registered_as_official_source():
 def test_historical_and_current_project_universes_are_version_separated():
     historical = load(HISTORICAL)
     current = load(CURRENT)
+    coverage = historical["historical_identity_coverage"]
 
     assert historical["historical_plan_period"] == "2023年度～2025年度"
     assert historical["current_plan_period"] == "2026年度～2028年度"
     assert historical["historical_project_universe"] == 360
     assert current["project_universe"] == 189
-    assert historical["historical_identity_coverage"] == {
-        "reviewed": 0,
-        "remaining": 360,
-    }
+    assert coverage["reviewed"] + coverage["remaining"] == 360
+    assert 0 <= coverage["reviewed"] <= 360
+    assert 0 <= coverage["remaining"] <= 360
     assert "別version" in historical["historical_universe_semantics"]
 
 
@@ -58,8 +58,19 @@ def test_historical_field_review_ranges_cover_all_eight_fields_in_official_order
     ]
     assert fields[0]["printed_page_start"] == 16
     assert fields[-1]["printed_page_end"] == 180
-    assert all(row["reviewed_unique_projects"] == 0 for row in fields)
-    assert all(row["identity_path"] is None for row in fields)
+
+    for row in fields:
+        assert row["reviewed_unique_projects"] >= 0
+        if row["status"] == "reviewed_complete":
+            assert row["identity_path"]
+            assert (
+                row["reviewed_unique_projects"]
+                == row["official_unique_project_count"]
+            )
+        else:
+            assert row["status"] == "pending_identity_review"
+            assert row["reviewed_unique_projects"] == 0
+            assert row["identity_path"] is None
 
 
 def test_historical_page_coordinate_system_is_explicit_and_consistent():
@@ -73,10 +84,11 @@ def test_historical_page_coordinate_system_is_explicit_and_consistent():
         assert row["physical_page_end"] == row["printed_page_end"] + 4
 
 
-def test_versioned_linkage_is_blocked_until_all_360_historical_identities_are_reviewed():
-    gate = load(HISTORICAL)["versioned_linkage_gate"]
+def test_versioned_linkage_gate_remains_safe_during_incremental_identity_review():
+    manifest = load(HISTORICAL)
+    coverage = manifest["historical_identity_coverage"]
+    gate = manifest["versioned_linkage_gate"]
 
-    assert gate["status"] == "blocked_until_historical_identity_complete"
     assert gate["required_historical_identity_count"] == 360
     assert gate["current_identity_count"] == 189
     assert gate["allowed_relation_types"] == [
@@ -91,13 +103,22 @@ def test_versioned_linkage_is_blocked_until_all_360_historical_identities_are_re
     assert "名称一致" in gate["rule"]
     assert "many-to-many" in gate["rule"]
 
+    if coverage["reviewed"] < 360:
+        assert gate["status"] == "blocked_until_historical_identity_complete"
+    else:
+        assert coverage["remaining"] == 0
 
-def test_foundation_does_not_claim_any_historical_identity_or_linkage_yet():
+
+def test_incremental_review_never_claims_versioned_linkage_from_name_similarity():
     manifest = load(HISTORICAL)
+    fields = manifest["field_review_order"]
+    reviewed_sum = sum(row["reviewed_unique_projects"] for row in fields)
 
-    assert manifest["status"] == "historical_identity_review_started"
-    assert sum(
-        row["reviewed_unique_projects"] for row in manifest["field_review_order"]
-    ) == 0
-    assert "候補抽出はreviewed identityを意味しない" in manifest["next_action"]
-    assert "自動解釈しない" in manifest["quality_boundary"]
+    assert reviewed_sum == manifest["historical_identity_coverage"]["reviewed"]
+    assert "名称一致・類似だけ" in manifest["quality_boundary"]
+
+    if reviewed_sum == 0:
+        assert "候補抽出はreviewed identityを意味しない" in manifest["next_action"]
+    elif reviewed_sum < 360:
+        assert "versioned linkageはblocked" in manifest["quality_boundary"]
+        assert "公式PDF" in manifest["next_action"]
