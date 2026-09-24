@@ -159,10 +159,11 @@ def test_chiba_initial_review_contract_remains_valid_as_identity_depth_advances(
     project_fact = facts["chiba-current-project-universe"]
 
     assert manifest["status"] == "review_in_progress"
-    assert by_code["121002"]["status"] == "review_in_progress"
-    assert queue["summary"]["reviewed_complete_count"] == 3
+    assert by_code["121002"]["status"] == "reviewed_complete"
+    assert by_code["141003"]["status"] == "review_in_progress"
+    assert queue["summary"]["reviewed_complete_count"] == 4
     assert queue["summary"]["review_in_progress_count"] == 1
-    assert queue["summary"]["pending_record_review_count"] == 14
+    assert queue["summary"]["pending_record_review_count"] == 13
     assert project_fact["value"] == 189
     assert project_fact["identity_records_reviewed"] >= 30
     assert project_fact["identity_records_remaining"] <= 159

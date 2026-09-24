@@ -156,17 +156,21 @@ def test_sapporo_completion_remains_stable_as_later_city_reviews_advance():
     assert by_code["011002"]["status"] == "reviewed_complete"
     assert by_code["041009"]["status"] == "reviewed_complete"
     assert by_code["111007"]["status"] == "reviewed_complete"
-    assert by_code["121002"]["status"] == "review_in_progress"
     assert queue["summary"]["reviewed_complete_count"] == statuses.count(
         "reviewed_complete"
-    ) == 3
+    )
     assert queue["summary"]["review_in_progress_count"] == statuses.count(
         "review_in_progress"
-    ) == 1
+    )
     assert queue["summary"]["pending_record_review_count"] == statuses.count(
         "pending_record_review"
-    ) == 14
-    assert queue["summary"]["next_official_code"] == "121002"
+    )
+    in_progress = [
+        row for row in queue["execution_queue"]
+        if row["status"] == "review_in_progress"
+    ]
+    if in_progress:
+        assert queue["summary"]["next_official_code"] == in_progress[0]["official_code"]
 
 
 def test_sapporo_completion_quality_gates_are_all_explicitly_true():
