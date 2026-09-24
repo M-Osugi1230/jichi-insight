@@ -12,6 +12,7 @@ PHASE12_QUEUE_PATH = ROOT / "data/catalog/phase12_designated_city_execution_queu
 SENDAI_COMPLETION_PATH = ROOT / "data/catalog/sendai_phase13_completion.json"
 SAPPORO_COMPLETION_PATH = ROOT / "data/catalog/sapporo_phase13_completion.json"
 SAITAMA_COMPLETION_PATH = ROOT / "data/catalog/saitama_phase13_completion.json"
+CHIBA_COMPLETION_PATH = ROOT / "data/catalog/chiba_phase13_completion.json"
 
 NEWLY_ELIGIBLE_CODES = {"221007", "271403", "281000", "331007", "341002"}
 
@@ -90,26 +91,29 @@ def test_phase13_summary_is_derived_from_queue_contents():
     )
 
 
-def test_phase13_three_cities_complete_and_chiba_in_progress():
+def test_phase13_four_cities_complete_and_yokohama_in_progress():
     queue = load(QUEUE_PATH)
     by_code = {item["official_code"]: item for item in queue["execution_queue"]}
     completions = {
         "011002": load(SAPPORO_COMPLETION_PATH),
         "041009": load(SENDAI_COMPLETION_PATH),
         "111007": load(SAITAMA_COMPLETION_PATH),
+        "121002": load(CHIBA_COMPLETION_PATH),
     }
 
-    for sequence, code in enumerate(("011002", "041009", "111007"), start=1):
+    for sequence, code in enumerate(
+        ("011002", "041009", "111007", "121002"), start=1
+    ):
         assert by_code[code]["sequence"] == sequence
         assert by_code[code]["status"] == "reviewed_complete"
         assert completions[code]["status"] == "reviewed_complete"
 
-    assert by_code["121002"]["sequence"] == 4
-    assert by_code["121002"]["status"] == "review_in_progress"
-    assert queue["summary"]["reviewed_complete_count"] == 3
+    assert by_code["141003"]["sequence"] == 5
+    assert by_code["141003"]["status"] == "review_in_progress"
+    assert queue["summary"]["reviewed_complete_count"] == 4
     assert queue["summary"]["review_in_progress_count"] == 1
-    assert queue["summary"]["pending_record_review_count"] == 14
-    assert queue["summary"]["next_official_code"] == "121002"
+    assert queue["summary"]["pending_record_review_count"] == 13
+    assert queue["summary"]["next_official_code"] == "141003"
 
 
 def test_phase13_quality_gate_keeps_missing_records_explicit_without_downgrading_inventory():
