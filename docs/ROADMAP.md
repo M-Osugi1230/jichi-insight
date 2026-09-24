@@ -142,9 +142,9 @@ Canonical queue（2026-09-24同期）:
 
 - Reviewed reference: 2市（北九州市、福岡市）
 - Review queue eligible: 18市
-- Reviewed complete: 3市（札幌市、仙台市、さいたま市）
-- Review in progress: 1市（千葉市）
-- Pending record review: 14市
+- Reviewed complete: 4市（札幌市、仙台市、さいたま市、千葉市）
+- Review in progress: 1市（横浜市）
+- Pending record review: 13市
 - Blocked source inventory: 0市
 
 状態の正本は `data/catalog/phase13_designated_city_review_queue.json` です。文書上の集計とmachine-readable queueが競合する場合はqueueを優先します。
@@ -213,24 +213,40 @@ Status: `complete`（2026-08-19）
 - `data/catalog/saitama_phase13_completion.json`
 - `schemas/saitama_phase13_completion.schema.json`
 
-### Current work — Chiba record review
+### Milestone M5 — Chiba reviewed complete
 
-Status: `in_progress`
+Status: `complete`（2026-09-24）
 
-千葉市の現行2026〜2028年度実施計画では、189 / 189事業identity、406 work items、政策指標、財政トップラインまでReviewed層を構築し、visual confirmation pendingは0です。
+千葉市は`declared_review_package_v1`としてReviewed completeです。
 
-旧2023〜2025年度第1次実施計画も360 / 360事業identityを全件レビューし、再掲68件を一次identityへ解決しました。旧360事業と現行189事業は別versionとして保持しています。
+- Current project identities: 189 / 189
+- Current work items: 406
+- Current quantitative policy indicators: 40
+- Overall goal indicators: 1
+- Qualitative constituent factors (primary): 6
+- Historical project identities: 360 / 360
+- Historical repost occurrences resolved: 68 / 68
+- Versioned Linkage reviewed: 66（構造的一致60、公式PDF手動確認6）
+- Versioned Linkage deferred: 旧294事業・現行123事業
+- Fiscal top-line records: 3
 
-Versioned Linkageの初回自動レビューでは、Unicode NFKC＋空白除去で正規化した事業名が一致し、施策コードも一致し、担当組織が1件以上重なる60関係を`continued`へReviewed昇格しました。さらに、自動基準から外れた完全同名6関係について旧・現の公式PDFで事業目的・取組項目・施策移動・所管変更を個別確認し、手動Evidenceレビューとして`continued`へ追加昇格しました。合計66関係がReviewedです。未接続の旧294事業を終了、現行123事業を新規と自動判定せず、改称・統合・分割も別Evidenceレビューまで未確定とします。
+未接続の旧事業を終了、現行事業を新規と自動判定せず、改称・統合・分割も名称類似だけでは確定しません。現行計画の将来年度進捗、個別事業費・契約・補助金接続も`deferred_depth`として明示します。
 
 正本:
 
+- `data/catalog/chiba_phase13_completion.json`
+- `schemas/chiba_phase13_completion.schema.json`
 - `data/catalog/chiba_phase13_policy_review_manifest.json`
 - `data/catalog/chiba_current_project_work_item_review_manifest.json`
 - `data/catalog/chiba_historical_project_identity_review_manifest.json`
 - `data/catalog/chiba_versioned_project_linkage_review.json`
-- `schemas/chiba_versioned_project_linkage.schema.json`
-- `tests/test_phase13_chiba_versioned_project_linkage.py`
+- `tests/test_phase13_chiba_completion.py`
+
+### Current work — Yokohama record review
+
+Status: `in_progress`
+
+千葉市のReviewed completionにより、Canonical queueの次対象は横浜市（141003）です。Phase 12で確定した公式Source Inventoryを起点に、現行計画identity、実施層、進捗、財政状態、Evidence locationを個票レベルでレビューします。旧計画・現行計画・予算・決算・年度進捗を混同せず、未公開Evidenceは明示的に保持します。
 
 未公開・未解決の年度実績等は、Phase 12のinventory coverageを再度partialへ戻すのではなく、Phase 13の該当レコードで明示的にblocked / not assessableとして扱います。これにより、公開時期を待つだけの資料のために全市のrecord reviewを停止せず、同時に推測補完もしません。
 
@@ -258,7 +274,7 @@ Phase 13では、以下を品質ゲートとして維持します。
 
 ## After Phase 13
 
-1. 千葉市をReviewed completeへ進め、その後の14市を順次Reviewed到達深度まで処理し、全20政令指定都市の市レベル基盤を完成させる
+1. 横浜市をReviewed completeへ進め、その後の13市を順次Reviewed到達深度まで処理し、全20政令指定都市の市レベル基盤を完成させる
 2. 中核市・県庁所在地
 3. その他市区町村
 4. 選挙・候補者比較
