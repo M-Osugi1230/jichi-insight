@@ -12,9 +12,9 @@ Jichi Insight（自治体インサイト）は、自治体が公開する政策�
 - Phase 11個票基盤: 47都道府県・15,327レコード
 - 政令指定都市 Source Inventory: 20 / 20
 - Phase 13 Reviewed reference: 2市（北九州市、福岡市）
-- Phase 13 Reviewed complete: 3市（札幌市、仙台市、さいたま市）
-- Phase 13 Review in progress: 1市（千葉市）
-- Phase 13 Pending record review: 14市
+- Phase 13 Reviewed complete: 4市（札幌市、仙台市、さいたま市、千葉市）
+- Phase 13 Review in progress: 1市（横浜市）
+- Phase 13 Pending record review: 13市
 - 千葉市現行計画: 189 / 189事業identity、406 work itemsをstructured化済み
 - 千葉市旧計画: 360 / 360事業identity、再掲68 / 68を一次identityへ解決済み
 - 千葉市Versioned Linkage: 構造的一致60関係＋公式PDF手動確認6関係、計66関係をReviewed continuedとして昇格
@@ -158,7 +158,7 @@ Status: `in_progress`
 - Pending record review: 14市
 - Blocked source inventory: 0市
 
-千葉市では現行2026〜2028年度実施計画の189事業identityと406 work items、旧2023〜2025年度360事業identityの全件レビューを完了しました。旧計画の再掲68件も一次identityへ解決済みです。Versioned Linkageでは、正規化事業名・施策コード・担当組織が同時に整合する60関係を自動初回Reviewed continuedへ昇格し、自動基準から外れた完全同名6関係も旧・現の公式PDFで事業目的・取組項目・施策移動・所管変更を個別確認して手動Reviewedへ追加しました。現在は計66関係をReviewedとし、残りは名称類似から推測せずEvidenceレビューを継続しています。
+千葉市は`declared_review_package_v1`としてReviewed completeです。現行2026〜2028年度実施計画の189事業identity・406 work items・政策指標、旧2023〜2025年度360事業identity・再掲68件、旧現のversioned linkage 66関係（構造的一致60・公式PDF手動確認6）、財政トップライン3件をレビュー済みです。未接続の旧294事業・現行123事業は終了・新規・改称・統合・分割を推測せず`deferred_depth`として保持します。現在のPhase 13作業対象は横浜市です。
 
 正本:
 
