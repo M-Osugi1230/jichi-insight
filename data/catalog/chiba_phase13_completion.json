@@ -1,0 +1,80 @@
+{
+  "id": "chiba-phase13-completion",
+  "phase": 13,
+  "status": "reviewed_complete",
+  "official_code": "121002",
+  "name_ja": "千葉市",
+  "completed_at": "2026-09-24",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "policy_review_manifest_path": "data/catalog/chiba_phase13_policy_review_manifest.json",
+    "plan_review_path": "data/reviewed/chiba-city/plan_review.json",
+    "source_catalog_path": "data/catalog/chiba_phase13_sources.json",
+    "current_project_work_item_review_manifest_path": "data/catalog/chiba_current_project_work_item_review_manifest.json",
+    "historical_project_identity_review_manifest_path": "data/catalog/chiba_historical_project_identity_review_manifest.json",
+    "versioned_project_linkage_review_path": "data/catalog/chiba_versioned_project_linkage_review.json",
+    "policy_indicator_review_path": "data/reviewed/chiba-city/current_policy_indicators.json",
+    "policy_indicator_evidence_path": "data/evidence/chiba_current_policy_indicators_evidence.json",
+    "fiscal_records_path": "data/reviewed/chiba-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/chiba-city/evidence_packets.json",
+    "counts": {
+      "current_project_identities": 189,
+      "current_work_items": 406,
+      "current_quantitative_policy_indicators": 40,
+      "current_overall_goal_indicators": 1,
+      "current_qualitative_constituent_factors_primary": 6,
+      "historical_project_identities": 360,
+      "historical_repost_occurrences": 68,
+      "versioned_reviewed_relations": 66,
+      "versioned_strong_rule_relations": 60,
+      "versioned_manual_relations": 6,
+      "historical_identities_without_reviewed_relation": 294,
+      "current_identities_without_reviewed_relation": 123,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "current_189_project_identity_review_complete": true,
+    "current_189_project_source_capture_complete": true,
+    "current_406_work_item_structuring_complete": true,
+    "current_policy_indicator_identity_and_values_review_complete": true,
+    "historical_360_project_identity_review_complete": true,
+    "historical_68_reposts_resolved_to_primary_identities": true,
+    "historical_and_current_implementation_cycles_separate": true,
+    "versioned_66_reviewed_relations_have_official_evidence": true,
+    "unmatched_versioned_identities_not_auto_classified": true,
+    "fiscal_states_and_years_separate": true,
+    "historical_progress_not_reused_as_current_progress": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "versioned-linkage-beyond-reviewed-continuations",
+      "status": "deferred_not_required_for_v1_completion",
+      "historical_count": 294,
+      "current_count": 123,
+      "boundary": "初回Versioned Linkageではcontinued 66関係だけをReviewed化した。残る旧294事業・現行123事業について、renamed_continuation、merged_into_current、split_into_current、retired_after_first_plan、new_in_second_plan、unresolvedを追加確認するが、名称類似や未接続だけでは関係種別を確定しない。"
+    },
+    {
+      "id": "current-cycle-annual-progress-publication",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "現行2026～2028年度第2次実施計画の年度進捗は、公式に公表された同一計画版の資料だけを接続する。旧2023～2025年度計画に属する2024年度進捗360事業を現行189事業の実績へ流用しない。"
+    },
+    {
+      "id": "fiscal-detail-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "v1では2026年度当初予算と2024年度決算の一般会計トップラインを年度・財政状態を分離して保持する。款項目別、補正、執行、個別事業費、契約、補助金との計画事業接続は公式識別子・名称・所管・年度を確認できたものだけ追加レビューする。"
+    },
+    {
+      "id": "project-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "189事業、406 work items、政策指標、旧360事業、版間66関係をレビューしたことは政策効果の因果認定や他都市との比較可能性を意味しない。定義・母集団・測定方法・時点の専用レビューなしに統合スコアやランキングへ昇格しない。"
+    }
+  ],
+  "completion_boundary": "千葉市のPhase 13 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味する。現行2026～2028年度第2次実施計画の189事業identity、全189事業の公式表source capture、406 work items、定量政策指標40件・全体目標1件・定性的構成因子primary 6件、旧2023～2025年度第1次実施計画の360事業identityと再掲68件、旧現双方の公式資料で継続性を確認したversioned linkage 66関係（構造的一致60・手動Evidence確認6）、一般会計の2026年度当初予算および2024年度決算トップライン3件をレビュー済みである。一方、版間未接続の旧294事業・現行123事業の改称・統合・分割・終了・新規判定、現行計画の将来年度進捗、個別事業費・契約・補助金接続はdeferred_depthとして明示的に残す。この完了は千葉市の全公開データの網羅、Jichi Insight独自の政策達成度、因果効果、他都市比較可能性またはランキングの認定を意味しない。"
+}
