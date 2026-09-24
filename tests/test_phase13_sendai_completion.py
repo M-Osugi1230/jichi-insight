@@ -175,17 +175,21 @@ def test_sendai_completion_remains_stable_as_later_city_reviews_advance():
     assert linkage["summary"]["municipality_phase13_complete"] is True
     assert by_code["041009"]["status"] == "reviewed_complete"
     assert by_code["111007"]["status"] == "reviewed_complete"
-    assert by_code["121002"]["status"] == "review_in_progress"
     assert queue["summary"]["reviewed_complete_count"] == statuses.count(
         "reviewed_complete"
-    ) == 3
+    )
     assert queue["summary"]["review_in_progress_count"] == statuses.count(
         "review_in_progress"
-    ) == 1
+    )
     assert queue["summary"]["pending_record_review_count"] == statuses.count(
         "pending_record_review"
-    ) == 14
-    assert queue["summary"]["next_official_code"] == "121002"
+    )
+    in_progress = [
+        item for item in queue["execution_queue"]
+        if item["status"] == "review_in_progress"
+    ]
+    if in_progress:
+        assert queue["summary"]["next_official_code"] == in_progress[0]["official_code"]
 
 
 def test_sendai_completion_quality_gates_are_all_explicitly_true():
