@@ -12,9 +12,9 @@ Jichi Insight（自治体インサイト）は、自治体が公開する政策�
 - Phase 11個票基盤: 47都道府県・15,327レコード
 - 政令指定都市 Source Inventory: 20 / 20
 - Phase 13 Reviewed reference: 2市（北九州市、福岡市）
-- Phase 13 Reviewed complete: 4市（札幌市、仙台市、さいたま市、千葉市）
-- Phase 13 Review in progress: 1市（横浜市）
-- Phase 13 Pending record review: 13市
+- Phase 13 Reviewed complete: 5市（札幌市、仙台市、さいたま市、千葉市、横浜市）
+- Phase 13 Review in progress: 1市（川崎市）
+- Phase 13 Pending record review: 12市
 - 千葉市現行計画: 189 / 189事業identity、406 work itemsをstructured化済み
 - 千葉市旧計画: 360 / 360事業identity、再掲68 / 68を一次identityへ解決済み
 - 千葉市Versioned Linkage: 構造的一致60関係＋公式PDF手動確認6関係、計66関係をReviewed continuedとして昇格
@@ -153,12 +153,12 @@ Status: `in_progress`
 現在のCanonical queue:
 
 - Reviewed reference: 2市（北九州市、福岡市）
-- Reviewed complete: 3市（札幌市、仙台市、さいたま市）
-- Review in progress: 1市（千葉市）
-- Pending record review: 14市
+- Reviewed complete: 5市（札幌市、仙台市、さいたま市、千葉市、横浜市）
+- Review in progress: 1市（川崎市）
+- Pending record review: 12市
 - Blocked source inventory: 0市
 
-千葉市は`declared_review_package_v1`としてReviewed completeです。現行2026〜2028年度実施計画の189事業identity・406 work items・政策指標、旧2023〜2025年度360事業identity・再掲68件、旧現のversioned linkage 66関係（構造的一致60・公式PDF手動確認6）、財政トップライン3件をレビュー済みです。未接続の旧294事業・現行123事業は終了・新規・改称・統合・分割を推測せず`deferred_depth`として保持します。現在のPhase 13作業対象は横浜市です。
+横浜市は`declared_review_package_v1`としてReviewed completeです。市会議決済みの2026〜2029中期計画について、14政策群・33施策群・横断3テーマ、政策指標/施策指標の役割分離、公式原案における政策指標15件のversioned snapshot、旧2022〜2025計画の最終振り返り境界、財政トップライン3件をレビュー済みです。最終冊子の詳細施策指標、現行計画の年度進捗、旧38政策との版間接続、個別財政接続は推測せず`deferred_depth`として保持します。現在のPhase 13作業対象は川崎市です。
 
 正本:
 
