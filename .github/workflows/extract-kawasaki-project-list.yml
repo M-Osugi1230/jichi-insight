@@ -1,0 +1,65 @@
+name: Extract Kawasaki project list
+
+on:
+  push:
+    branches:
+      - phase13-kawasaki-review
+    paths:
+      - ".github/workflows/extract-kawasaki-project-list.yml"
+      - "scripts/build_kawasaki_project_identities.py"
+      - "tests/test_phase13_kawasaki_project_identities.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install PDF tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils
+
+      - name: Download official Kawasaki source PDF
+        run: |
+          mkdir -p /tmp/kawasaki-project-review
+          curl --fail --location --retry 3 \
+            --output /tmp/kawasaki-project-review/source.pdf \
+            "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000185/185344/9_siryouhen.pdf"
+          pdfinfo /tmp/kawasaki-project-review/source.pdf \
+            > /tmp/kawasaki-project-review/pdfinfo.txt
+          sha256sum /tmp/kawasaki-project-review/source.pdf \
+            > /tmp/kawasaki-project-review/source.sha256
+
+      - name: Extract official project-list pages with layout
+        run: |
+          pdftotext -f 6 -l 9 -layout \
+            /tmp/kawasaki-project-review/source.pdf \
+            /tmp/kawasaki-project-review/project-list-pages-162-165.txt
+
+      - name: Build reviewed project identities when parser exists
+        if: ${{ hashFiles('scripts/build_kawasaki_project_identities.py') != '' }}
+        run: |
+          python scripts/build_kawasaki_project_identities.py \
+            --text /tmp/kawasaki-project-review/project-list-pages-162-165.txt \
+            --pdf /tmp/kawasaki-project-review/source.pdf
+
+      - name: Validate project identities when tests exist
+        if: ${{ hashFiles('tests/test_phase13_kawasaki_project_identities.py') != '' }}
+        run: |
+          pytest -q tests/test_phase13_kawasaki_project_identities.py
+          ruff check \
+            scripts/build_kawasaki_project_identities.py \
+            tests/test_phase13_kawasaki_project_identities.py
+
+      - name: Upload extraction diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kawasaki-project-list-extraction
+          path: /tmp/kawasaki-project-review
+          retention-days: 7
