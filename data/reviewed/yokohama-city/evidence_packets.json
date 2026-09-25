@@ -1,0 +1,61 @@
+[
+  {
+    "id": "evidence-yokohama-city-2026-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-141003-fiscal-2026-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算は2兆933億円。",
+        "source_ids": [
+          "yokohama-budget-2026-onestop"
+        ],
+        "location_note": "横浜市ワンストップ財政情報『2 予算』→『予算の概要』。",
+        "decision": "accepted",
+        "review_note": "2,093,300,000,000円として保存。補正後予算・執行・決算とは別state。"
+      }
+    ],
+    "open_questions": [
+      "令和8年度補正予算はinitial_budgetを上書きせず、必要に応じてrevised_budgetとして別記録を追加する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-yokohama-city-2024-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-141003-fiscal-2024-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計歳入決算額は2兆331億4,500万円。",
+        "source_ids": [
+          "yokohama-settlement-2024-overview"
+        ],
+        "location_note": "令和6年度一般会計決算の概要 冒頭『歳入決算額 2兆331億4,500万円』／表『歳入決算額 A 2,033,145百万円』。",
+        "decision": "accepted",
+        "review_note": "2,033,145,000,000円として保存。形式収支・実質収支とは別指標。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-yokohama-city-2024-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-141003-fiscal-2024-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計歳出決算額は2兆92億8,700万円。",
+        "source_ids": [
+          "yokohama-settlement-2024-overview"
+        ],
+        "location_note": "令和6年度一般会計決算の概要 冒頭『歳出決算額 2兆92億8,700万円』／表『歳出決算額 B 2,009,287百万円』。",
+        "decision": "accepted",
+        "review_note": "2,009,287,000,000円として保存。予算・執行残額とは分離。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]
