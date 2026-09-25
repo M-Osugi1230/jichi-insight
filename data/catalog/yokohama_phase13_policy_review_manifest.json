@@ -1,0 +1,110 @@
+{
+  "id": "yokohama-phase13-policy-review-manifest",
+  "phase": 13,
+  "official_code": "141003",
+  "name_ja": "横浜市",
+  "status": "review_in_progress",
+  "reviewed_at": "2026-09-25",
+  "source_catalog_path": "data/catalog/yokohama_phase13_sources.json",
+  "plan_review_path": "data/reviewed/yokohama-city/plan_review.json",
+  "policy_structure_path": "data/catalog/yokohama_current_policy_structure.json",
+  "policy_indicator_proposal_snapshot_path": "data/catalog/yokohama_policy_monitoring_indicator_proposal_snapshot.json",
+  "historical_final_review_summary_path": "data/catalog/yokohama_prior_plan_final_review_summary.json",
+  "fiscal_records_path": "data/reviewed/yokohama-city/fiscal_records.json",
+  "fiscal_evidence_path": "data/reviewed/yokohama-city/evidence_packets.json",
+  "reviewed_facts": [
+    {
+      "id": "yokohama-current-plan-adopted",
+      "layer": "current_plan",
+      "field": "adoption",
+      "value": "2026-06-05",
+      "source_id": "yokohama-medium-term-plan-2026-2029-final-publication-release",
+      "review_status": "reviewed",
+      "interpretation_boundary": "市会議決を経て確定した日。原案公表日や最終冊子公表日と混同しない。"
+    },
+    {
+      "id": "yokohama-current-policy-structure",
+      "layer": "current_plan",
+      "field": "policy_measure_structure",
+      "policy_group_count": 14,
+      "measure_group_count": 33,
+      "cross_cutting_project_theme_count": 3,
+      "source_id": "yokohama-medium-term-plan-2026-2029-council-proposal",
+      "review_status": "reviewed_complete_identity_layer",
+      "interpretation_boundary": "政策群、施策群、横断テーマを別identityとして保持し、事業数へ読み替えない。"
+    },
+    {
+      "id": "yokohama-current-indicator-semantics",
+      "layer": "current_plan",
+      "field": "outcome_indicator_roles",
+      "policy_indicator_role": "citizen_experience_monitoring_indicator",
+      "measure_indicator_role": "plan_progress_outcome_indicator",
+      "source_id": "yokohama-medium-term-plan-2026-2029-council-proposal",
+      "review_status": "reviewed",
+      "interpretation_boundary": "市民実感を測る政策指標と施策成果を追う施策指標を統合スコアへ潰さない。"
+    },
+    {
+      "id": "yokohama-policy-indicator-proposal-snapshot",
+      "layer": "pre_adoption_detail_snapshot",
+      "field": "policy_monitoring_indicators",
+      "identity_count": 15,
+      "policy_group_coverage_count": 14,
+      "proposal_value_count": 15,
+      "final_value_confirmation_count": 0,
+      "source_id": "yokohama-medium-term-plan-2026-2029-proposal-detail",
+      "review_status": "reviewed_proposal_snapshot_final_value_confirmation_deferred",
+      "interpretation_boundary": "15件のidentityと原案時点値は公式原案snapshot。最終冊子の確定値と自動同一視しない。"
+    },
+    {
+      "id": "yokohama-prior-plan-source-reported-review",
+      "layer": "historical_plan_final_review",
+      "field": "source_reported_aggregate",
+      "historical_plan_period": "2022年度～2025年度",
+      "indicators_above_starting_value_percent": 90,
+      "target_achievement_excluding_external_environment_effects_percent": 79,
+      "source_id": "yokohama-prior-plan-2022-2025-final-review",
+      "review_status": "reviewed_historical_source_reported_summary",
+      "interpretation_boundary": "90%・79%は横浜市自身による旧計画の集計。現行計画実績、独自政策達成率、因果効果、他都市比較へ変換しない。"
+    },
+    {
+      "id": "yokohama-2026-general-account-initial-budget",
+      "layer": "fiscal",
+      "field": "general_account_initial_budget",
+      "fiscal_year": 2026,
+      "value": 2093300000000,
+      "unit": "yen",
+      "source_id": "yokohama-budget-2026-onestop",
+      "review_status": "reviewed",
+      "interpretation_boundary": "当初予算。補正後予算・執行・決算とは別state。"
+    },
+    {
+      "id": "yokohama-2024-general-account-settlement-revenue",
+      "layer": "fiscal",
+      "field": "general_account_settlement_revenue",
+      "fiscal_year": 2024,
+      "value": 2033145000000,
+      "unit": "yen",
+      "source_id": "yokohama-settlement-2024-overview",
+      "review_status": "reviewed",
+      "interpretation_boundary": "決算歳入。予算、形式収支、実質収支とは別state。"
+    },
+    {
+      "id": "yokohama-2024-general-account-settlement-expenditure",
+      "layer": "fiscal",
+      "field": "general_account_settlement_expenditure",
+      "fiscal_year": 2024,
+      "value": 2009287000000,
+      "unit": "yen",
+      "source_id": "yokohama-settlement-2024-overview",
+      "review_status": "reviewed",
+      "interpretation_boundary": "決算歳出。予算、執行残額とは別state。"
+    }
+  ],
+  "remaining_work": [
+    "最終冊子の政策指標15件の値と、33施策群に紐づく施策指標のidentity・現状値・2029年度目標値を追加depthとしてレビューする。原案値から最終値を推測しない。",
+    "現行2026～2029計画の年度進捗は、同一計画版に属する公式進行管理資料が公表された時点で追加する。旧2022～2025計画の実績を現行actualへ流用しない。",
+    "旧2022～2025計画の38政策と現行14政策群・33施策群の版間接続は、名称類似だけで継続・統合・分割を確定しない。",
+    "個別施策・事業と予算、補正、執行、決算、契約、補助金の接続は公式識別子・名称・所管・年度を確認できたものだけ昇格する。"
+  ],
+  "quality_boundary": "Yokohama Phase 13 v1 reviews the adopted 2026-2029 plan identity and 14-policy/33-measure structure, three cross-cutting themes, outcome-indicator role semantics, an explicitly versioned 15-policy-indicator official proposal snapshot, the historical 2022-2025 final-review boundary, and three general-account fiscal top lines. Proposal detail is not silently promoted to final-booklet fact. Historical source-reported evaluation is not reused as current progress. Budget and settlement remain separate. No independent policy-achievement judgment, causal attribution, or cross-city comparability is inferred."
+}
