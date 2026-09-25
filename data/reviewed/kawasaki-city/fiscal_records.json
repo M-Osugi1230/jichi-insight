@@ -1,0 +1,65 @@
+[
+  {
+    "id": "jp-local-141305-fiscal-2026-total-revenue",
+    "municipality_id": "jp-local-141305",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_revenue",
+    "metric_label": "一般会計当初予算",
+    "amount_yen": 937800000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "令和8年度川崎市予算についてが公表する一般会計当初予算9,378億円を円換算。補正後予算、執行、決算、特別会計、企業会計とは別stateとして保持する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "kawasaki-budget-2026-booklet"
+    ]
+  },
+  {
+    "id": "jp-local-141305-fiscal-2024-total-revenue",
+    "municipality_id": "jp-local-141305",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入決算見込額",
+    "amount_yen": 871327000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "令和6年度一般会計決算見込の概要が公表する歳入871,327百万円を円換算。形式収支・実質収支・特別会計とは分離する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "kawasaki-settlement-2024-overview-pdf"
+    ]
+  },
+  {
+    "id": "jp-local-141305-fiscal-2024-total-expenditure",
+    "municipality_id": "jp-local-141305",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出決算見込額",
+    "amount_yen": 862154000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "令和6年度一般会計決算見込の概要が公表する歳出862,154百万円を円換算。予算・形式収支・実質収支・特別会計とは分離する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "kawasaki-settlement-2024-overview-pdf"
+    ]
+  }
+]
