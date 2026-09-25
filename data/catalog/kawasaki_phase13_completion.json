@@ -1,0 +1,88 @@
+{
+  "id": "kawasaki-phase13-completion",
+  "phase": 13,
+  "status": "reviewed_complete",
+  "official_code": "141305",
+  "name_ja": "川崎市",
+  "completed_at": "2026-09-25",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "policy_review_manifest_path": "data/catalog/kawasaki_phase13_policy_review_manifest.json",
+    "plan_review_path": "data/reviewed/kawasaki-city/plan_review.json",
+    "source_catalog_path": "data/catalog/kawasaki_phase13_sources.json",
+    "policy_structure_path": "data/catalog/kawasaki_current_policy_structure.json",
+    "historical_evaluation_summary_path": "data/catalog/kawasaki_prior_plan_2024_evaluation_summary.json",
+    "fiscal_records_path": "data/reviewed/kawasaki-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/kawasaki-city/evidence_packets.json",
+    "counts": {
+      "current_basic_policies": 5,
+      "current_policies": 18,
+      "current_measures": 48,
+      "current_administrative_projects_aggregate": 350,
+      "current_priority_themes": 1,
+      "current_priority_initiative_lanes": 5,
+      "historical_policy_measures": 74,
+      "historical_administrative_projects": 572,
+      "historical_above_target": 17,
+      "historical_almost_achieved": 462,
+      "historical_below_target": 93,
+      "historical_above_or_almost_achieved_percent": 83.8,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "current_plan_period_review_complete": true,
+    "current_5_basic_policy_identity_review_complete": true,
+    "current_18_policy_identity_review_complete": true,
+    "current_48_measure_and_350_project_aggregate_structure_review_complete": true,
+    "priority_theme_and_five_lanes_review_complete": true,
+    "historical_and_current_implementation_cycles_separate": true,
+    "historical_572_project_evaluation_not_promoted_to_current": true,
+    "budget_and_settlement_states_separate": true,
+    "aggregate_project_counts_not_promoted_to_individual_identities": true,
+    "deferred_current_project_detail_not_promoted": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "current-project-identity-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "count": 350,
+      "boundary": "第4期実施計画の事務事業総数350は公式構造として確認済み。個別350事務事業の名称、担当課、年度別目標、事業量、成果指標は追加depthでレビューし、aggregate countから個票を生成・推測しない。"
+    },
+    {
+      "id": "current-measure-outcome-indicators",
+      "status": "deferred_not_required_for_v1_completion",
+      "measure_count": 48,
+      "boundary": "現行48施策の成果指標identity・現状値・2029年度目標値は公式資料から追加レビューする。未確認値を推測しない。"
+    },
+    {
+      "id": "current-plan-annual-progress",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "現行2026～2029第4期実施計画の年度進捗は、同一versionの公式進行管理資料が公表された時点で追加する。旧2022～2025第3期実施計画の令和6年度評価572事業を現行actualへ流用しない。"
+    },
+    {
+      "id": "historical-current-versioned-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "historical_project_count": 572,
+      "current_project_aggregate_count": 350,
+      "boundary": "旧第3期572事業と現行第4期350事務事業の継続・改称・統合・分割・終了・新規は別version。名称類似や総数差だけで関係を確定しない。"
+    },
+    {
+      "id": "fiscal-detail-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "v1では2026年度一般会計当初予算と2024年度一般会計決算見込トップラインをstate分離して保持する。款項目別、補正、執行、個別事業費、契約、補助金との事業接続は別Evidenceレビューとする。"
+    },
+    {
+      "id": "project-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "5基本政策・18政策・48施策・350事務事業aggregate、旧572事業評価、財政値のレビューは政策効果の因果認定や他都市との比較可能性を意味しない。専用方法論なしに統合スコアやランキングへ昇格しない。"
+    }
+  ],
+  "completion_boundary": "川崎市のPhase 13 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味する。現行2026～2029第4期実施計画の5基本政策・18政策・48施策・350事務事業という公式構造、重点テーマ『少子高齢化・人口減少対策』と5つの主な取組レーン、旧2022～2025第3期実施計画の令和6年度評価における74施策・572事務事業、17件上回る・462件ほぼ達成・93件下回る・上回る又はほぼ達成83.8%というsource-reported aggregate、2026年度一般会計当初予算9,378億円、2024年度一般会計決算見込の歳入871,327百万円・歳出862,154百万円をレビュー済みである。一方、現行350事務事業の個票identity、48施策の成果指標、現行計画の年度進捗、旧現事業の版間接続、個別事業と予算・契約・補助金の接続はdeferred_depthとして明示する。この完了は川崎市の全公開データの網羅、Jichi Insight独自の政策達成度、因果効果、他都市比較可能性またはランキングの認定を意味しない。"
+}
