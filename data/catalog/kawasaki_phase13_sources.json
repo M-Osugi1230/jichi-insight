@@ -1,0 +1,124 @@
+{
+  "id": "kawasaki-phase13-sources",
+  "phase": 13,
+  "official_code": "141305",
+  "name_ja": "川崎市",
+  "reviewed_at": "2026-09-25",
+  "records": [
+    {
+      "id": "kawasaki-city-home",
+      "layer": "municipality_identity",
+      "title": "川崎市公式ウェブサイト",
+      "organization": "川崎市",
+      "url": "https://www.city.kawasaki.jp/",
+      "source_kind": "html",
+      "review_status": "reviewed_official_identity",
+      "confidence": "high",
+      "boundary": "自治体identityと公式ドメインの確認に使用。政策・財政の個別値は専用公式資料から取得する。"
+    },
+    {
+      "id": "kawasaki-comprehensive-plan-2026",
+      "layer": "current_plan",
+      "title": "川崎市総合計画 2026",
+      "organization": "川崎市",
+      "url": "https://www.city.kawasaki.jp/170/page/0000185344.html",
+      "source_kind": "html",
+      "review_status": "reviewed_final_publication",
+      "confidence": "high",
+      "boundary": "2026年3月30日公表の現行総合計画・第4期実施計画の公式入口。基本計画2026～2037、第4期実施計画2026～2029をversion-separatedで保持する。"
+    },
+    {
+      "id": "kawasaki-fourth-implementation-plan-structure-pdf",
+      "layer": "current_plan_structure",
+      "title": "川崎市総合計画 第4期実施計画 序章・基本構想・基本計画",
+      "organization": "川崎市",
+      "url": "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000185/185344/1_josyou-kihonkousou-kihonkeikaku.pdf",
+      "source_kind": "pdf",
+      "review_status": "reviewed_plan_hierarchy_and_policy_structure",
+      "confidence": "high",
+      "boundary": "総合計画3層、計画期間、5基本政策、18政策、48施策、350事務事業の公式構造を確認する。個別350事業identity全件は追加depth。"
+    },
+    {
+      "id": "kawasaki-fourth-implementation-plan-priority-theme-pdf",
+      "layer": "current_plan_priority_theme",
+      "title": "川崎市総合計画 第4期実施計画 重点的に取り組む課題",
+      "organization": "川崎市",
+      "url": "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000185/185344/2_juuten.pdf",
+      "source_kind": "pdf",
+      "review_status": "reviewed_priority_theme",
+      "confidence": "high",
+      "boundary": "重点テーマ『少子高齢化・人口減少対策』と5つの主な取組レーンを確認する。個別取組を独立した成果判定へ昇格しない。"
+    },
+    {
+      "id": "kawasaki-third-plan-evaluation-2024",
+      "layer": "historical_annual_progress",
+      "title": "川崎市総合計画 第3期実施計画 令和6年度事務事業評価結果",
+      "organization": "川崎市",
+      "url": "https://www.city.kawasaki.jp/170/page/0000178614.html",
+      "source_kind": "html",
+      "review_status": "reviewed_historical_cycle_boundary",
+      "confidence": "high",
+      "boundary": "2022～2025の第3期実施計画に属する令和6年度評価。現行2026～2029計画のactualへ流用しない。"
+    },
+    {
+      "id": "kawasaki-third-plan-evaluation-2024-overview-pdf",
+      "layer": "historical_annual_progress",
+      "title": "第3期実施計画・令和6年度事務事業評価結果 全体概要",
+      "organization": "川崎市",
+      "url": "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/gaiyou.pdf",
+      "source_kind": "pdf",
+      "review_status": "reviewed_historical_source_reported_aggregate",
+      "confidence": "high",
+      "boundary": "旧計画74施策・572事務事業のsource-reported評価区分を確認。Jichi Insight独自の政策達成率へ変換しない。"
+    },
+    {
+      "id": "kawasaki-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算について",
+      "organization": "川崎市",
+      "url": "https://www.city.kawasaki.jp/230/page/0000186101.html",
+      "source_kind": "html",
+      "fiscal_year": 2026,
+      "review_status": "reviewed_general_account_initial_budget_landing",
+      "confidence": "high",
+      "boundary": "一般会計、特別会計、企業会計、補正予算を別stateとして保持する。"
+    },
+    {
+      "id": "kawasaki-budget-2026-booklet",
+      "layer": "budget",
+      "title": "令和8年度 川崎市予算について",
+      "organization": "川崎市",
+      "url": "https://www.city.kawasaki.jp/230/cmsfiles/contents/0000186/186101/26zentaiban1-antore.pdf",
+      "source_kind": "pdf",
+      "fiscal_year": 2026,
+      "review_status": "reviewed_general_account_initial_budget_topline",
+      "confidence": "high",
+      "boundary": "一般会計当初予算9,378億円を確認。重点施策の個別事業費は計画事業と自動接続しない。"
+    },
+    {
+      "id": "kawasaki-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度決算及び財政状況",
+      "organization": "川崎市",
+      "url": "https://www.city.kawasaki.jp/shisei/category/47-3-4-22-0-0-0-0-0-0.html",
+      "source_kind": "html",
+      "fiscal_year": 2024,
+      "review_status": "reviewed_settlement_landing",
+      "confidence": "high",
+      "boundary": "決算見込、確定決算、財政状況資料集、健全化判断比率を別Evidence roleとして保持する。"
+    },
+    {
+      "id": "kawasaki-settlement-2024-overview-pdf",
+      "layer": "settlement",
+      "title": "令和6年度川崎市一般会計・特別会計決算見込の概要",
+      "organization": "川崎市",
+      "url": "https://www.city.kawasaki.jp/230/cmsfiles/contents/0000178/178672/R6kessangaiyousyusei.pdf",
+      "source_kind": "pdf",
+      "fiscal_year": 2024,
+      "review_status": "reviewed_general_account_settlement_topline",
+      "confidence": "high",
+      "boundary": "一般会計歳入871,327百万円、歳出862,154百万円を確認。形式収支・実質収支・特別会計とは分離する。"
+    }
+  ],
+  "quality_boundary": "現行2026～2029計画、旧2022～2025評価、2026当初予算、2024決算をversion・evidence role・fiscal stageごとに分離する。旧計画評価を現行actualへ流用せず、予算と決算を同一値として扱わない。"
+}
