@@ -1,0 +1,103 @@
+{
+  "id": "kawasaki-phase13-policy-review-manifest",
+  "phase": 13,
+  "official_code": "141305",
+  "name_ja": "川崎市",
+  "status": "review_in_progress",
+  "reviewed_at": "2026-09-25",
+  "source_catalog_path": "data/catalog/kawasaki_phase13_sources.json",
+  "plan_review_path": "data/reviewed/kawasaki-city/plan_review.json",
+  "policy_structure_path": "data/catalog/kawasaki_current_policy_structure.json",
+  "historical_evaluation_summary_path": "data/catalog/kawasaki_prior_plan_2024_evaluation_summary.json",
+  "fiscal_records_path": "data/reviewed/kawasaki-city/fiscal_records.json",
+  "fiscal_evidence_path": "data/reviewed/kawasaki-city/evidence_packets.json",
+  "reviewed_facts": [
+    {
+      "id": "kawasaki-current-plan-period",
+      "layer": "current_plan",
+      "field": "plan_period",
+      "value": "2026年度～2029年度",
+      "source_id": "kawasaki-fourth-implementation-plan-structure-pdf",
+      "review_status": "reviewed",
+      "interpretation_boundary": "旧第3期2022～2025評価とversion-separated。"
+    },
+    {
+      "id": "kawasaki-current-plan-structure",
+      "layer": "current_plan",
+      "field": "policy_structure",
+      "basic_policy_count": 5,
+      "policy_count": 18,
+      "measure_count": 48,
+      "administrative_project_count": 350,
+      "source_id": "kawasaki-fourth-implementation-plan-structure-pdf",
+      "review_status": "reviewed_complete_structure_identity",
+      "interpretation_boundary": "aggregate structure。350事務事業個票は追加depth。"
+    },
+    {
+      "id": "kawasaki-current-priority-theme",
+      "layer": "current_plan",
+      "field": "priority_theme",
+      "value": "少子高齢化・人口減少対策",
+      "initiative_lane_count": 5,
+      "source_id": "kawasaki-fourth-implementation-plan-priority-theme-pdf",
+      "review_status": "reviewed",
+      "interpretation_boundary": "重点テーマを成果達成や個別事業評価へ変換しない。"
+    },
+    {
+      "id": "kawasaki-prior-plan-2024-evaluation",
+      "layer": "historical_annual_progress",
+      "field": "source_reported_project_evaluation",
+      "historical_plan_period": "2022年度～2025年度",
+      "policy_measure_count": 74,
+      "administrative_project_count": 572,
+      "above_target": 17,
+      "almost_achieved": 462,
+      "below_target": 93,
+      "above_or_almost_achieved_percent": 83.8,
+      "source_id": "kawasaki-third-plan-evaluation-2024-overview-pdf",
+      "review_status": "reviewed_historical_source_reported_summary",
+      "interpretation_boundary": "旧計画の内部評価。現行実績、独自達成率、因果効果、他都市比較へ変換しない。"
+    },
+    {
+      "id": "kawasaki-2026-general-account-initial-budget",
+      "layer": "fiscal",
+      "field": "general_account_initial_budget",
+      "fiscal_year": 2026,
+      "value": 937800000000,
+      "unit": "yen",
+      "source_id": "kawasaki-budget-2026-booklet",
+      "review_status": "reviewed",
+      "interpretation_boundary": "当初予算。補正・執行・決算とは別state。"
+    },
+    {
+      "id": "kawasaki-2024-general-account-settlement-revenue",
+      "layer": "fiscal",
+      "field": "general_account_settlement_revenue",
+      "fiscal_year": 2024,
+      "value": 871327000000,
+      "unit": "yen",
+      "source_id": "kawasaki-settlement-2024-overview-pdf",
+      "review_status": "reviewed",
+      "interpretation_boundary": "決算見込歳入。予算・形式収支・実質収支とは別state。"
+    },
+    {
+      "id": "kawasaki-2024-general-account-settlement-expenditure",
+      "layer": "fiscal",
+      "field": "general_account_settlement_expenditure",
+      "fiscal_year": 2024,
+      "value": 862154000000,
+      "unit": "yen",
+      "source_id": "kawasaki-settlement-2024-overview-pdf",
+      "review_status": "reviewed",
+      "interpretation_boundary": "決算見込歳出。予算・執行残額とは別state。"
+    }
+  ],
+  "remaining_work": [
+    "現行350事務事業の個票identity、担当課、年度別目標、事業量、成果指標は追加depthとしてレビューする。aggregate countから個票内容を推測しない。",
+    "現行48施策の成果指標identity・現状値・2029年度目標値は公式資料から追加レビューする。",
+    "現行2026～2029計画の年度進捗は同一versionの公式進行管理資料公表後に追加する。旧第3期評価を流用しない。",
+    "旧第3期と現行第4期の事業・施策versioned linkageは名称類似だけで確定しない。",
+    "個別事業と予算、補正、執行、決算、契約、補助金の接続はEvidence確認後のみ昇格する。"
+  ],
+  "quality_boundary": "Kawasaki Phase 13 v1 reviews the official 2026-2029 plan hierarchy and structure (5 basic policies, 18 policies, 48 measures, 350 administrative projects), the single priority theme and five initiative lanes, the historical 2022-2025 FY2024 source-reported evaluation boundary, and three general-account fiscal top lines. Aggregate project counts are not promoted to individual project identities. Historical evaluation is not reused as current progress. Budget and settlement remain separate. No independent policy-achievement judgment, causal attribution, or cross-city comparability is inferred."
+}
