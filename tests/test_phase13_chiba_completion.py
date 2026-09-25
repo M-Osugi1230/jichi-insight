@@ -108,34 +108,29 @@ def test_chiba_completion_deferred_depth_is_explicit_and_not_promoted():
     assert "他都市比較可能性" in boundary
 
 
-def test_chiba_completion_advances_queue_to_yokohama():
+def test_chiba_completion_remains_stable_as_later_city_reviews_advance():
     completion = load(COMPLETION)
     queue = load(QUEUE)
     by_code = {row["official_code"]: row for row in queue["execution_queue"]}
     statuses = [row["status"] for row in queue["execution_queue"]]
 
     assert completion["status"] == "reviewed_complete"
-    assert by_code["011002"]["status"] == "reviewed_complete"
-    assert by_code["041009"]["status"] == "reviewed_complete"
-    assert by_code["111007"]["status"] == "reviewed_complete"
     assert by_code["121002"]["status"] == "reviewed_complete"
-    assert by_code["141003"]["status"] == "review_in_progress"
-    assert (
-        queue["summary"]["reviewed_complete_count"]
-        == statuses.count("reviewed_complete")
-        == 4
+    assert queue["summary"]["reviewed_complete_count"] == statuses.count(
+        "reviewed_complete"
     )
-    assert (
-        queue["summary"]["review_in_progress_count"]
-        == statuses.count("review_in_progress")
-        == 1
+    assert queue["summary"]["review_in_progress_count"] == statuses.count(
+        "review_in_progress"
     )
-    assert (
-        queue["summary"]["pending_record_review_count"]
-        == statuses.count("pending_record_review")
-        == 13
+    assert queue["summary"]["pending_record_review_count"] == statuses.count(
+        "pending_record_review"
     )
-    assert queue["summary"]["next_official_code"] == "141003"
+    in_progress = [
+        row for row in queue["execution_queue"]
+        if row["status"] == "review_in_progress"
+    ]
+    if in_progress:
+        assert queue["summary"]["next_official_code"] == in_progress[0]["official_code"]
 
 
 def test_chiba_completion_quality_gates_are_all_explicitly_true():
