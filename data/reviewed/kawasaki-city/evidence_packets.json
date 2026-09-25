@@ -1,0 +1,65 @@
+[
+  {
+    "id": "evidence-kawasaki-city-2026-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-141305-fiscal-2026-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算は9,378億円。",
+        "source_ids": [
+          "kawasaki-budget-2026-booklet"
+        ],
+        "location_note": "令和8年度 川崎市予算について PDF index p.3（冊子印字p.4）『一般会計当初予算の規模 9,378億円』。",
+        "decision": "accepted",
+        "review_note": "937,800,000,000円として保存。補正後予算・執行・決算とは別state。"
+      }
+    ],
+    "open_questions": [
+      "令和8年度補正予算はinitial_budgetを上書きせず、必要に応じてrevised_budgetとして別記録を追加する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kawasaki-city-2024-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-141305-fiscal-2024-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計歳入決算見込額は871,327百万円。",
+        "source_ids": [
+          "kawasaki-settlement-2024-overview-pdf"
+        ],
+        "location_note": "令和6年度川崎市一般会計・特別会計決算見込の概要 PDF index p.2-3『決算総括【一般会計】』。",
+        "decision": "accepted",
+        "review_note": "871,327,000,000円として保存。形式収支・実質収支とは別指標。"
+      }
+    ],
+    "open_questions": [
+      "確定決算値を別資料で追加確認する場合、決算見込値を上書きせずversion/stageを明示して更新する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kawasaki-city-2024-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-141305-fiscal-2024-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計歳出決算見込額は862,154百万円。",
+        "source_ids": [
+          "kawasaki-settlement-2024-overview-pdf"
+        ],
+        "location_note": "令和6年度川崎市一般会計・特別会計決算見込の概要 PDF index p.2-3『決算総括【一般会計】』。",
+        "decision": "accepted",
+        "review_note": "862,154,000,000円として保存。予算・形式収支・実質収支とは分離。"
+      }
+    ],
+    "open_questions": [
+      "確定決算値を別資料で追加確認する場合、決算見込値を上書きせずversion/stageを明示して更新する。"
+    ],
+    "review_status": "reviewed"
+  }
+]
