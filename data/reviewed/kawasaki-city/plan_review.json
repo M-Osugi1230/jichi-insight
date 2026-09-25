@@ -1,0 +1,96 @@
+{
+  "id": "phase13-kawasaki-plan-review",
+  "official_code": "141305",
+  "name_ja": "川崎市",
+  "review_status": "review_in_progress_policy_structure_complete_project_identity_extraction_active",
+  "reviewed_at": "2026-09-25",
+  "records": [
+    {
+      "id": "kawasaki-current-plan-architecture",
+      "evidence_role": "current_plan_identity",
+      "title": "川崎市総合計画 3層構造",
+      "statement": "現行総合計画は基本構想・基本計画・実施計画の3層で構成する。",
+      "value": "basic_concept_basic_plan_implementation_plan",
+      "source_id": "kawasaki-fourth-implementation-plan-official-pdf",
+      "evidence_location": "分割版『目次-序章-基本構想-基本計画』PDF index p.5 / 冊子p.6『総合計画の構成』",
+      "decision": "accepted",
+      "review_note": "3層を同一計画階層として潰さない。"
+    },
+    {
+      "id": "kawasaki-current-plan-periods",
+      "evidence_role": "current_plan_identity",
+      "title": "基本計画・第4期実施計画の期間",
+      "statement": "基本計画は2026～2037年度の12年間、第4期実施計画は2026～2029年度の4年間。",
+      "basic_plan_period": "2026年度～2037年度",
+      "implementation_plan_period": "2026年度～2029年度",
+      "source_id": "kawasaki-fourth-implementation-plan-official-pdf",
+      "evidence_location": "同PDF index p.5 / 冊子p.6『計画期間』",
+      "decision": "accepted",
+      "review_note": "旧第3期2022～2025年度の評価を現行第4期のactualへ流用しない。"
+    },
+    {
+      "id": "kawasaki-current-policy-project-universe",
+      "evidence_role": "current_policy_structure",
+      "title": "第4期実施計画 政策体系",
+      "statement": "5基本政策・18政策・48施策の下に350事務事業が連なる。",
+      "basic_policy_count": 5,
+      "policy_count": 18,
+      "measure_count": 48,
+      "project_universe_count": 350,
+      "source_id": "kawasaki-fourth-implementation-plan-official-pdf",
+      "evidence_location": "基本計画PDF index p.6 / 冊子p.7『政策の体系』、実施計画基本政策1 PDF index p.0 / 冊子p.34",
+      "reviewed_data_path": "data/catalog/kawasaki_current_policy_structure.json",
+      "decision": "accepted_structure_project_universe_pending_identity_completion",
+      "review_note": "5/18/48はidentity review完了。350事務事業は資料編全件抽出・照合後に個別Reviewed identityへ昇格する。"
+    },
+    {
+      "id": "kawasaki-current-measure-record-semantics",
+      "evidence_role": "current_measure_review_methodology",
+      "title": "施策ページの成果指標・主な取組",
+      "statement": "各施策は4年後にめざす状態、定量的な成果指標、取組の方向性、主要な事務事業と主なアウトプットを分離して示す。",
+      "value": "measure_goal_outcome_indicators_main_projects_outputs",
+      "source_id": "kawasaki-fourth-implementation-plan-official-pdf",
+      "evidence_location": "実施計画基本政策1 PDF index p.1 / 冊子p.35『ページの見方』",
+      "decision": "accepted",
+      "review_note": "成果指標と事務事業アウトプットを同じKPIとして統合しない。"
+    },
+    {
+      "id": "kawasaki-current-progress-evaluation-methodology",
+      "evidence_role": "current_progress_methodology",
+      "title": "第4期実施計画の進行管理・評価",
+      "statement": "目標・成果を可視化し、施策・事務事業の進捗をPDCAで管理する。内部評価は毎年度、外部評価は2年に一度実施する。",
+      "value": "annual_internal_and_biennial_external_evaluation",
+      "source_id": "kawasaki-fourth-implementation-plan-official-pdf",
+      "evidence_location": "分割版『進行管理・評価』PDF index p.0 / 冊子p.132",
+      "decision": "accepted",
+      "review_note": "将来公表される第4期のactual/evaluationだけを現行サイクルへ接続する。"
+    },
+    {
+      "id": "kawasaki-current-plan-cost-envelope",
+      "evidence_role": "current_plan_cost_envelope",
+      "title": "第4期実施計画 計画事業費",
+      "statement": "政策体系に位置づける施策・事務事業の4年間総計は総事業費3兆9,864億円、うち一般会計2兆3,452億円。その他経費を含む総計は総事業費6兆1,525億円、うち一般会計3兆7,880億円。",
+      "policy_system_total_cost_oku_yen": 39864,
+      "policy_system_general_account_cost_oku_yen": 23452,
+      "all_total_cost_oku_yen": 61525,
+      "all_general_account_cost_oku_yen": 37880,
+      "source_id": "kawasaki-fourth-implementation-plan-official-pdf",
+      "evidence_location": "資料編PDF index p.3 / 冊子p.160『政策体系別計画事業費』",
+      "decision": "accepted",
+      "review_note": "4年間の計画事業費であり、年度当初予算・執行額・決算額とは別stateとして保持する。"
+    },
+    {
+      "id": "kawasaki-prior-plan-evaluation-boundary",
+      "evidence_role": "historical_annual_progress",
+      "title": "第3期実施計画 令和6年度事務事業評価",
+      "statement": "2024年度の事務事業評価は旧2022～2025年度第3期実施計画に属する。",
+      "value": "historical_cycle_only",
+      "source_id": "kawasaki-third-plan-evaluation-2024",
+      "evidence_location": "公式評価公表ページ",
+      "decision": "accepted",
+      "review_note": "第4期2026～2029計画の実績に付け替えない。"
+    }
+  ],
+  "quality_boundary": "5基本政策・18政策・48施策、350事務事業母集団、施策成果指標と事務事業アウトプットの役割、毎年度内部評価・2年に一度の外部評価、4年間計画事業費、旧第3期評価とのversion boundaryをReviewed化した。350個別事務事業identity、48施策の全成果指標値、現行第4期の年度actual、年度予算・決算・契約との個別接続は別レビュー単位とする。",
+  "next_action": "Extract and reconcile all 350 current project identities from the official materials appendix, then review measure-level outcome-indicator identities and finalize the declared v1 completion package."
+}
