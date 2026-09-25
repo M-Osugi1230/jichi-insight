@@ -55,11 +55,11 @@ jobs:
         if: ${{ hashFiles('tests/test_phase13_kawasaki_project_identities.py') != '' }}
         run: |
           set -o pipefail
-          pytest -q tests/test_phase13_kawasaki_project_identities.py \
+          pytest -q tests/test_phase13_kawasaki_project_identities.py 2>&1 \
             | tee /tmp/kawasaki-project-review/pytest.log
           ruff check \
             scripts/build_kawasaki_project_identities.py \
-            tests/test_phase13_kawasaki_project_identities.py \
+            tests/test_phase13_kawasaki_project_identities.py 2>&1 \
             | tee /tmp/kawasaki-project-review/ruff.log
 
       - name: Commit reviewed identity outputs
