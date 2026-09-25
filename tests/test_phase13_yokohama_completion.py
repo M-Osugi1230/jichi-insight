@@ -133,7 +133,8 @@ def test_yokohama_historical_final_review_remains_source_reported_and_versioned(
         "target_achievement_excluding_external_environment_effects_percent": 79,
         "evidence_location": "最終振り返り PDF p.3（PDF index p.3）",
     }
-    assert "横浜市自身" in historical["quality_boundary"]
+    assert "横浜市" in historical["quality_boundary"]
+    assert "報告した集計値" in historical["quality_boundary"]
     assert "現行2026～2029計画の実績" in historical["quality_boundary"]
     assert "因果効果" in historical["quality_boundary"]
 
