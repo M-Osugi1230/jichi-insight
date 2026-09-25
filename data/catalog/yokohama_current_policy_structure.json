@@ -285,7 +285,23 @@
   },
   "evidence_location": {
     "structure": "市第1号議案PDF index p.8-10（冊子印字p.41-43）『政策群・施策群一覧』",
-    "indicator_semantics": "市第1号議案PDF index p.11（冊子印字p.44）『データ駆動型経営への本格移行』"
+    "indicator_semantics": "市第1号議案PDF index p.11（冊子印字p.44）『データ駆動型経営への本格移行』",
+    "cross_cutting_projects": "市第1号議案PDF index p.8『横断的な取組／明日をひらく都市プロジェクト』および公式計画公表資料"
   },
-  "quality_boundary": "14政策群と33施策群は採択済み議案本文からReviewed identityとして保持する。政策指標と施策指標を同一指標レーンに潰さず、市民実感モニタリングと施策成果指標を分離する。個別指標の原案詳細値は最終冊子で未確認のものを最終確定値として扱わない。"
+  "quality_boundary": "14政策群と33施策群は採択済み議案本文からReviewed identityとして保持する。政策指標と施策指標を同一指標レーンに潰さず、市民実感モニタリングと施策成果指標を分離する。個別指標の原案詳細値は最終冊子で未確認のものを最終確定値として扱わない。",
+  "cross_cutting_project_theme_count": 3,
+  "cross_cutting_project_themes": [
+    {
+      "id": "yokohama-xp-01",
+      "name": "循環型都市への移行"
+    },
+    {
+      "id": "yokohama-xp-02",
+      "name": "観光・経済活性化"
+    },
+    {
+      "id": "yokohama-xp-03",
+      "name": "未来を創るまちづくり"
+    }
+  ]
 }
