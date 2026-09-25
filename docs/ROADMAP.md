@@ -138,13 +138,13 @@ Status: `in_progress`
 
 Phase 12完了により、北九州市・福岡市の2市をReviewed referenceとして保持しつつ、残る18市すべてが個票レベルのreview queueへ入りました。Phase 12由来のblocked source inventoryは0です。
 
-Canonical queue（2026-09-24同期）:
+Canonical queue（2026-09-25同期）:
 
 - Reviewed reference: 2市（北九州市、福岡市）
 - Review queue eligible: 18市
-- Reviewed complete: 4市（札幌市、仙台市、さいたま市、千葉市）
-- Review in progress: 1市（横浜市）
-- Pending record review: 13市
+- Reviewed complete: 5市（札幌市、仙台市、さいたま市、千葉市、横浜市）
+- Review in progress: 1市（川崎市）
+- Pending record review: 12市
 - Blocked source inventory: 0市
 
 状態の正本は `data/catalog/phase13_designated_city_review_queue.json` です。文書上の集計とmachine-readable queueが競合する場合はqueueを優先します。
@@ -242,11 +242,39 @@ Status: `complete`（2026-09-24）
 - `data/catalog/chiba_versioned_project_linkage_review.json`
 - `tests/test_phase13_chiba_completion.py`
 
-### Current work — Yokohama record review
+### Milestone M6 — Yokohama reviewed complete
+
+Status: `complete`（2026-09-25）
+
+横浜市は`declared_review_package_v1`としてReviewed completeです。
+
+- Current plan adoption: 2026-06-05
+- Current policy groups: 14
+- Current measure groups: 33
+- Cross-cutting project themes: 3
+- Policy monitoring indicator identities: 15
+- Official proposal snapshot values: 15
+- Final-booklet value confirmation deferred: 15
+- Historical 2022–2025 source-reported aggregate: 指標改善・向上 約90%、外部環境影響を除いた目標達成率 約79%
+- Fiscal top-line records: 3
+
+政策群と施策群、政策指標と施策指標、原案snapshotと最終冊子、旧2022〜2025計画と現行2026〜2029計画、当初予算と決算をそれぞれ別version / evidence roleとして保持します。原案詳細値を最終確定値へ自動昇格せず、旧計画の90%・79%を現行計画実績やJichi Insight独自の達成率へ変換しません。
+
+正本:
+
+- `data/catalog/yokohama_phase13_completion.json`
+- `schemas/yokohama_phase13_completion.schema.json`
+- `data/catalog/yokohama_phase13_policy_review_manifest.json`
+- `data/catalog/yokohama_current_policy_structure.json`
+- `data/catalog/yokohama_policy_monitoring_indicator_proposal_snapshot.json`
+- `data/catalog/yokohama_prior_plan_final_review_summary.json`
+- `tests/test_phase13_yokohama_completion.py`
+
+### Current work — Kawasaki record review
 
 Status: `in_progress`
 
-千葉市のReviewed completionにより、Canonical queueの次対象は横浜市（141003）です。Phase 12で確定した公式Source Inventoryを起点に、現行計画identity、実施層、進捗、財政状態、Evidence locationを個票レベルでレビューします。旧計画・現行計画・予算・決算・年度進捗を混同せず、未公開Evidenceは明示的に保持します。
+横浜市のReviewed completionにより、Canonical queueの次対象は川崎市（141305）です。Phase 12で確定した公式Source Inventoryから、現行計画identity、実施・進行管理層、指標、財政、旧現version boundaryを個票Evidenceへ展開します。
 
 未公開・未解決の年度実績等は、Phase 12のinventory coverageを再度partialへ戻すのではなく、Phase 13の該当レコードで明示的にblocked / not assessableとして扱います。これにより、公開時期を待つだけの資料のために全市のrecord reviewを停止せず、同時に推測補完もしません。
 
@@ -274,7 +302,7 @@ Phase 13では、以下を品質ゲートとして維持します。
 
 ## After Phase 13
 
-1. 横浜市をReviewed completeへ進め、その後の13市を順次Reviewed到達深度まで処理し、全20政令指定都市の市レベル基盤を完成させる
+1. 川崎市をReviewed completeへ進め、その後の12市を順次Reviewed到達深度まで処理し、全20政令指定都市の市レベル基盤を完成させる
 2. 中核市・県庁所在地
 3. その他市区町村
 4. 選挙・候補者比較

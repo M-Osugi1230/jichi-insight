@@ -1,0 +1,65 @@
+[
+  {
+    "id": "jp-local-141003-fiscal-2026-total-revenue",
+    "municipality_id": "jp-local-141003",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_revenue",
+    "metric_label": "一般会計当初予算",
+    "amount_yen": 2093300000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "横浜市ワンストップ財政情報が公表する令和8年度一般会計当初予算2兆933億円を円換算。補正後予算、執行、決算、特別会計、公営企業会計とは別stateとして保持する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yokohama-budget-2026-onestop"
+    ]
+  },
+  {
+    "id": "jp-local-141003-fiscal-2024-total-revenue",
+    "municipality_id": "jp-local-141003",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入決算額",
+    "amount_yen": 2033145000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "令和6年度一般会計決算の概要が公表する歳入決算額2兆331億4,500万円を円換算。予算額、形式収支、実質収支、特別会計、公営企業会計とは分離する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yokohama-settlement-2024-overview"
+    ]
+  },
+  {
+    "id": "jp-local-141003-fiscal-2024-total-expenditure",
+    "municipality_id": "jp-local-141003",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出決算額",
+    "amount_yen": 2009287000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "令和6年度一般会計決算の概要が公表する歳出決算額2兆92億8,700万円を円換算。予算額、執行残額、特別会計、公営企業会計とは分離する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yokohama-settlement-2024-overview"
+    ]
+  }
+]

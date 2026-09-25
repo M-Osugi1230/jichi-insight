@@ -1,0 +1,81 @@
+{
+  "id": "yokohama-phase13-completion",
+  "phase": 13,
+  "status": "reviewed_complete",
+  "official_code": "141003",
+  "name_ja": "横浜市",
+  "completed_at": "2026-09-25",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "policy_review_manifest_path": "data/catalog/yokohama_phase13_policy_review_manifest.json",
+    "plan_review_path": "data/reviewed/yokohama-city/plan_review.json",
+    "source_catalog_path": "data/catalog/yokohama_phase13_sources.json",
+    "policy_structure_path": "data/catalog/yokohama_current_policy_structure.json",
+    "policy_indicator_proposal_snapshot_path": "data/catalog/yokohama_policy_monitoring_indicator_proposal_snapshot.json",
+    "historical_final_review_summary_path": "data/catalog/yokohama_prior_plan_final_review_summary.json",
+    "fiscal_records_path": "data/reviewed/yokohama-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/yokohama-city/evidence_packets.json",
+    "counts": {
+      "current_policy_groups": 14,
+      "current_measure_groups": 33,
+      "cross_cutting_project_themes": 3,
+      "policy_monitoring_indicator_identities": 15,
+      "policy_monitoring_proposal_values": 15,
+      "policy_monitoring_final_values_deferred": 15,
+      "historical_source_reported_improvement_percent": 90,
+      "historical_source_reported_adjusted_target_achievement_percent": 79,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "final_plan_adoption_verified": true,
+    "adopted_14_policy_group_identity_review_complete": true,
+    "adopted_33_measure_group_identity_review_complete": true,
+    "cross_cutting_three_theme_identity_review_complete": true,
+    "policy_and_measure_indicator_roles_separated": true,
+    "proposal_detail_snapshot_version_separated_from_final": true,
+    "historical_and_current_plan_cycles_separate": true,
+    "historical_source_reported_evaluation_not_promoted_to_current": true,
+    "budget_and_settlement_states_separate": true,
+    "deferred_final_indicator_values_not_promoted": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "final-booklet-detailed-indicator-review",
+      "status": "deferred_not_required_for_v1_completion",
+      "policy_indicator_count": 15,
+      "measure_group_count": 33,
+      "boundary": "公式原案で政策指標15件のidentityとsnapshot値を確認済み。最終冊子における政策指標15件の確定値、および33施策群の施策指標identity・現状値・2029年度目標値は追加depthとしてレビューし、原案から最終値を推測しない。"
+    },
+    {
+      "id": "current-plan-annual-progress",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "現行2026～2029計画の年度進捗は同一versionの公式進行管理資料が確認できた時点で追加する。旧2022～2025計画の令和4～7年度実績や最終振り返りを現行計画actualへ流用しない。"
+    },
+    {
+      "id": "historical-current-policy-versioned-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "historical_policy_count": 38,
+      "current_policy_group_count": 14,
+      "current_measure_group_count": 33,
+      "boundary": "旧2022～2025計画の38政策と現行14政策群・33施策群は別version。名称類似だけで継続、改称、統合、分割、終了、新規を確定しない。"
+    },
+    {
+      "id": "fiscal-detail-policy-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "v1では2026年度一般会計当初予算と2024年度一般会計決算トップラインをstate分離して保持する。局別・款項目別、補正、執行、個別事業費、契約、補助金の政策・施策接続は別Evidenceレビューとする。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "政策群・施策群・政策指標・旧計画最終振り返り・財政値のレビューは、政策効果の因果認定や他都市との比較可能性を意味しない。定義・母集団・測定方法・時点の専用レビューなしに統合スコアやランキングへ昇格しない。"
+    }
+  ],
+  "completion_boundary": "横浜市のPhase 13 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味する。市会議決を経て確定した2026～2029中期計画のidentity、採択済み14政策群・33施策群、横断3テーマ、政策指標と施策指標のアウトカム上の役割分離、公式原案における政策指標15件のidentityとsnapshot値、旧2022～2025計画の最終振り返りが報告する全指標約90%の改善・向上と外部環境影響を除いた目標達成率約79%というsource-reported aggregate、2026年度一般会計当初予算および2024年度一般会計決算トップライン3件をレビュー済みである。一方、最終冊子の政策指標確定値、33施策群の詳細施策指標、現行計画の年度進捗、旧38政策と現行体系の版間接続、個別施策・事業と財政・契約・補助金の接続はdeferred_depthとして明示的に残す。この完了は横浜市の全公開データの網羅、Jichi Insight独自の政策達成度、因果効果、他都市比較可能性またはランキングの認定を意味しない。"
+}

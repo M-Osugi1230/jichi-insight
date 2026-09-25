@@ -67,7 +67,7 @@
       "official_code": "141003",
       "name_ja": "横浜市",
       "prefecture_name_ja": "神奈川県",
-      "status": "review_in_progress",
+      "status": "reviewed_complete",
       "source_inventory_path": "data/indexed/yokohama-city/source_inventory.json"
     },
     {
@@ -75,7 +75,7 @@
       "official_code": "141305",
       "name_ja": "川崎市",
       "prefecture_name_ja": "神奈川県",
-      "status": "pending_record_review",
+      "status": "review_in_progress",
       "source_inventory_path": "data/indexed/kawasaki-city/source_inventory.json"
     },
     {
@@ -181,10 +181,10 @@
     "reviewed_reference_count": 2,
     "eligible_review_queue_count": 18,
     "blocked_source_inventory_count": 0,
-    "reviewed_complete_count": 4,
+    "reviewed_complete_count": 5,
     "review_in_progress_count": 1,
-    "pending_record_review_count": 13,
-    "next_official_code": "141003"
+    "pending_record_review_count": 12,
+    "next_official_code": "141305"
   },
-  "updated_at": "2026-09-24"
+  "updated_at": "2026-09-25"
 }
