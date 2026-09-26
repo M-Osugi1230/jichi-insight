@@ -1,0 +1,65 @@
+[
+  {
+    "id": "jp-local-221007-fiscal-2026-total-revenue",
+    "municipality_id": "jp-local-221007",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_revenue",
+    "metric_label": "一般会計当初予算",
+    "amount_yen": 403500000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "令和8年度静岡市一般会計当初予算4,035億円。補正・執行・決算とは別stateとして保持する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "shizuoka-budget-2026"
+    ]
+  },
+  {
+    "id": "jp-local-221007-fiscal-2024-total-revenue",
+    "municipality_id": "jp-local-221007",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入決算額",
+    "amount_yen": 387089852000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "令和6年度一般会計歳入総額387,089,852千円を円換算。予算・特別会計・収支とは分離する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "shizuoka-settlement-2024-audit-summary-pdf"
+    ]
+  },
+  {
+    "id": "jp-local-221007-fiscal-2024-total-expenditure",
+    "municipality_id": "jp-local-221007",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出決算額",
+    "amount_yen": 376221432000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "令和6年度一般会計歳出総額376,221,432千円を円換算。予算・特別会計・実質収支とは分離する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "shizuoka-settlement-2024-audit-summary-pdf"
+    ]
+  }
+]
