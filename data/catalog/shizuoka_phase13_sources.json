@@ -1,0 +1,113 @@
+{
+  "id": "shizuoka-phase13-sources",
+  "phase": 13,
+  "official_code": "221007",
+  "name_ja": "静岡市",
+  "reviewed_at": "2026-09-27",
+  "records": [
+    {
+      "id": "shizuoka-city-home",
+      "layer": "municipality_identity",
+      "title": "静岡市公式ホームページ",
+      "organization": "静岡市",
+      "url": "https://www.city.shizuoka.lg.jp/",
+      "source_kind": "html",
+      "review_status": "reviewed_official_identity",
+      "confidence": "high",
+      "boundary": "自治体identityと公式ドメイン確認用。政策・財政値は専用公式資料から取得する。"
+    },
+    {
+      "id": "shizuoka-fifth-comprehensive-plan",
+      "layer": "current_plan",
+      "title": "第5次静岡市総合計画",
+      "organization": "静岡市",
+      "url": "https://www.city.shizuoka.lg.jp/s2934/s013122.html",
+      "source_kind": "html",
+      "review_status": "reviewed_adopted_current_plan",
+      "confidence": "high",
+      "boundary": "2026～2035の現行最上位計画。基本構想・基本計画・実施計画の3層を確認する。"
+    },
+    {
+      "id": "shizuoka-fifth-basic-plan-pdf",
+      "layer": "current_plan_structure",
+      "title": "第5次静岡市総合計画 基本計画",
+      "organization": "静岡市",
+      "url": "https://www.city.shizuoka.lg.jp/documents/58348/kihonkeikaku.pdf",
+      "source_kind": "pdf",
+      "review_status": "reviewed_current_policy_structure",
+      "confidence": "high",
+      "boundary": "9分野・45政策という現行基本計画の政策構造を確認。政策個票の成果指標値は追加depth。"
+    },
+    {
+      "id": "shizuoka-fifth-implementation-plan-pdf",
+      "layer": "implementation_plan",
+      "title": "第5次静岡市総合計画 実施計画",
+      "organization": "静岡市",
+      "url": "https://www.city.shizuoka.lg.jp/documents/58348/20260331-5jisoujikkei.pdf",
+      "source_kind": "pdf",
+      "review_status": "reviewed_current_implementation_plan",
+      "confidence": "high",
+      "boundary": "2026～2030の5年間。毎年度改定。施策ごとに成果指標を設定し、取組名・内容・事業費・担当課を掲載する。個別取組全件の構造化は追加depth。"
+    },
+    {
+      "id": "shizuoka-administrative-reform-plan",
+      "layer": "implementation_evaluation_reference",
+      "title": "静岡市行財政改革推進プラン",
+      "organization": "静岡市",
+      "url": "https://www.city.shizuoka.lg.jp/s2547/s012631.html",
+      "source_kind": "html",
+      "review_status": "reviewed_evaluation_mechanism_reference",
+      "confidence": "high",
+      "boundary": "5次総実施計画と同じ2026～2030の期間・毎年度改定に連動する行政経営上の実績評価運用を確認する補助Evidence。5次総全施策の年度実績そのものとは扱わない。"
+    },
+    {
+      "id": "shizuoka-fourth-plan-progress-2024",
+      "layer": "historical_progress",
+      "title": "令和6年度 取組評価シート②（第4次総合計画実施計画登載取組）",
+      "organization": "静岡市",
+      "url": "https://www.city.shizuoka.lg.jp/s2547/s012626.html",
+      "source_kind": "html",
+      "fiscal_year": 2024,
+      "review_status": "reviewed_historical_cycle_boundary",
+      "confidence": "high",
+      "boundary": "第4次総合計画の2024年度評価。2026年度開始の第5次総合計画のannual actualへ流用しない。"
+    },
+    {
+      "id": "shizuoka-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度当初予算",
+      "organization": "静岡市",
+      "url": "https://www.city.shizuoka.lg.jp/s3627/s012583.html",
+      "source_kind": "html",
+      "fiscal_year": 2026,
+      "review_status": "reviewed_general_account_initial_budget_topline",
+      "confidence": "high",
+      "boundary": "一般会計当初予算4,035億円を確認。補正・執行・決算とは別state。"
+    },
+    {
+      "id": "shizuoka-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度決算",
+      "organization": "静岡市",
+      "url": "https://www.city.shizuoka.lg.jp/s3627/s008127.html",
+      "source_kind": "html",
+      "fiscal_year": 2024,
+      "review_status": "reviewed_settlement_landing",
+      "confidence": "high",
+      "boundary": "2024年度決算の公式入口。一般・特別・企業会計を分離する。"
+    },
+    {
+      "id": "shizuoka-settlement-2024-audit-summary-pdf",
+      "layer": "settlement",
+      "title": "令和6年度決算の概要",
+      "organization": "静岡市",
+      "url": "https://www.city.shizuoka.lg.jp/documents/56693/9gatsumaru5.pdf",
+      "source_kind": "pdf",
+      "fiscal_year": 2024,
+      "review_status": "reviewed_general_account_settlement_topline",
+      "confidence": "high",
+      "boundary": "一般会計歳入387,089,852千円・歳出376,221,432千円を確認。予算・収支・特別会計とは分離する。"
+    }
+  ],
+  "quality_boundary": "現行第5次総合計画、2026～2030実施計画、評価運用参照、旧第4次総2024評価、2026当初予算、2024決算をversion/evidence role/fiscal stageごとに分離する。第5次総の年度実績は未公表のため、旧計画実績や評価を現行actualへ流用しない。"
+}
