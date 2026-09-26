@@ -1,0 +1,112 @@
+{
+  "id": "hamamatsu-phase13-sources",
+  "phase": 13,
+  "official_code": "221309",
+  "name_ja": "浜松市",
+  "reviewed_at": "2026-09-27",
+  "records": [
+    {
+      "id": "hamamatsu-city-home",
+      "layer": "municipality_identity",
+      "title": "浜松市公式ホームページ",
+      "organization": "浜松市",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/",
+      "source_kind": "html",
+      "review_status": "reviewed_official_identity",
+      "confidence": "high",
+      "boundary": "自治体identityと公式ドメイン確認用。政策・財政値は専用公式資料から取得する。"
+    },
+    {
+      "id": "hamamatsu-comprehensive-plan",
+      "layer": "current_plan",
+      "title": "浜松市総合計画",
+      "organization": "浜松市",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/kikaku/sougoukeikaku/index.html",
+      "source_kind": "html",
+      "review_status": "reviewed_plan_layers_and_periods",
+      "confidence": "high",
+      "boundary": "基本構想2015～2044、第2期基本計画2025～2034、毎年度実施計画の3層を確認する。"
+    },
+    {
+      "id": "hamamatsu-basic-plan-2025-2034",
+      "layer": "current_plan_structure",
+      "title": "浜松市総合計画 第2期基本計画（2025～2034年度）",
+      "organization": "浜松市",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/kikaku/totalplan2025/plan/index.html",
+      "source_kind": "html",
+      "review_status": "reviewed_current_basic_plan",
+      "confidence": "high",
+      "boundary": "7分野の政策体系と10年後の理想像を確認する。政策個票全件は追加depth。"
+    },
+    {
+      "id": "hamamatsu-basic-plan-overview",
+      "layer": "current_plan_structure",
+      "title": "浜松市総合計画 第2期基本計画 総論",
+      "organization": "浜松市",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/kikaku/totalplan2025/plan/page1.html",
+      "source_kind": "html",
+      "review_status": "reviewed_current_structure_summary",
+      "confidence": "high",
+      "boundary": "2025～2034の10年期間、7分野、実施計画を毎年度作成して進捗管理する構造を確認する。"
+    },
+    {
+      "id": "hamamatsu-basic-plan-indicators",
+      "layer": "current_plan_indicators",
+      "title": "浜松市総合計画 第2期基本計画 指標",
+      "organization": "浜松市",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/kikaku/totalplan2025/reference/page1.html",
+      "source_kind": "html",
+      "review_status": "reviewed_outcome_indicator_universe",
+      "confidence": "high",
+      "boundary": "7分野の成果指標38件について指標名・現状値・目標値を公式掲載。v1ではuniverse countと分野別件数をReviewed化し、38件個票の完全構造化は追加depth。"
+    },
+    {
+      "id": "hamamatsu-implementation-review-2026",
+      "layer": "implementation_and_review",
+      "title": "実施計画・レビュー",
+      "organization": "浜松市",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/kikaku/spr_rv/seisakukeiseikatei.html",
+      "source_kind": "html",
+      "review_status": "reviewed_current_implementation_and_pdca_route",
+      "confidence": "high",
+      "boundary": "2026年度実施計画、毎年度の指標設定・評価、サマーレビュー・副市長レビューを確認する。2026年度通年実績は未確定。"
+    },
+    {
+      "id": "hamamatsu-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度当初予算の概要",
+      "organization": "浜松市",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/zaisek/budget/budget08/index.html",
+      "source_kind": "html",
+      "fiscal_year": 2026,
+      "review_status": "reviewed_initial_budget_adoption",
+      "confidence": "high",
+      "boundary": "2026年3月23日議決。予算案資料と議決後の当初予算を区別する。"
+    },
+    {
+      "id": "hamamatsu-budget-2026-account-totals",
+      "layer": "budget",
+      "title": "令和8年度 会計別予算額調",
+      "organization": "浜松市",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/zaisek/budget/budget08/reference/r_01.html",
+      "source_kind": "html",
+      "fiscal_year": 2026,
+      "review_status": "reviewed_general_account_initial_budget_topline",
+      "confidence": "high",
+      "boundary": "一般会計当初予算440,100,000千円を確認。補正・執行・決算とは別state。"
+    },
+    {
+      "id": "hamamatsu-settlement-2024-audit",
+      "layer": "settlement",
+      "title": "令和6年度浜松市一般会計及び特別会計歳入歳出決算の審査意見",
+      "organization": "浜松市",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/kansa/kansa/ketusan/20251027ippan.html",
+      "source_kind": "html",
+      "fiscal_year": 2024,
+      "review_status": "reviewed_general_account_settlement_topline",
+      "confidence": "high",
+      "boundary": "一般会計歳入416,537,079千円・歳出403,849,303千円を確認。予算・特別会計・収支とは分離する。"
+    }
+  ],
+  "quality_boundary": "現行総合計画3層、第2期基本計画2025～2034、7分野・成果指標38件、2026年度実施計画とPDCAレビュー、2026当初予算、2024決算をevidence role/fiscal stageごとに分離する。2026年度通年実績はまだ確定していないため推測せず、市の評価とJichi Insight独自評価を混同しない。"
+}
