@@ -1,0 +1,70 @@
+{
+  "id": "phase13-shizuoka-plan-review",
+  "official_code": "221007",
+  "name_ja": "静岡市",
+  "review_status": "review_in_progress_structure_and_availability_boundaries_reviewed",
+  "reviewed_at": "2026-09-27",
+  "records": [
+    {
+      "id": "shizuoka-current-plan-period",
+      "evidence_role": "current_plan_identity",
+      "title": "第5次静岡市総合計画",
+      "statement": "第5次静岡市総合計画は2026年度から2035年度までの10年間を計画期間とし、2026年4月から開始した。",
+      "value": "2026年度～2035年度",
+      "source_id": "shizuoka-fifth-comprehensive-plan",
+      "evidence_location": "公式ページ『第5次静岡市総合計画を策定しました！』",
+      "decision": "accepted",
+      "review_note": "旧第4次総2023～2030とは別version。"
+    },
+    {
+      "id": "shizuoka-current-plan-layers",
+      "evidence_role": "current_policy_structure",
+      "title": "基本構想・基本計画・実施計画の3層構成",
+      "statement": "第5次総は基本構想・基本計画・実施計画の3層で構成される。",
+      "value": 3,
+      "unit": "plan_layers",
+      "source_id": "shizuoka-fifth-comprehensive-plan",
+      "evidence_location": "公式ページ『第5次静岡市総合計画を策定しました！』",
+      "decision": "accepted"
+    },
+    {
+      "id": "shizuoka-current-policy-structure",
+      "evidence_role": "current_policy_structure",
+      "title": "9分野・45政策",
+      "statement": "基本計画は9分野で構成され、各分野の政策数の合計は45政策。",
+      "value": 45,
+      "unit": "policies",
+      "field_count": 9,
+      "source_id": "shizuoka-fifth-basic-plan-pdf",
+      "evidence_location": "基本計画 PDF 第4章『分野別の政策』",
+      "reviewed_data_path": "data/catalog/shizuoka_current_policy_structure.json",
+      "decision": "accepted_aggregate_structure",
+      "review_note": "45政策個別identity・成果指標値は追加depth。"
+    },
+    {
+      "id": "shizuoka-current-implementation-plan",
+      "evidence_role": "current_implementation_plan",
+      "title": "第5次静岡市総合計画 実施計画",
+      "statement": "実施計画は2026年度から2030年度までの5年間で、社会経済状況の変化等を踏まえて毎年度改定する。",
+      "value": "2026年度～2030年度",
+      "source_id": "shizuoka-fifth-implementation-plan-pdf",
+      "evidence_location": "実施計画 PDF p.1-2（PDF index p.0, p.5）",
+      "decision": "accepted_current_implementation_plan",
+      "review_note": "施策ごとに成果指標を設定し、取組名・内容・事業費・担当課を掲載。個票全件は追加depth。"
+    },
+    {
+      "id": "shizuoka-current-result-availability",
+      "evidence_role": "current_plan_progress_availability",
+      "title": "第5次総合計画の年度実績availability",
+      "statement": "第5次総合計画は2026年度開始のため、現時点で同計画の年度実績として使用できる年次評価は未公表。",
+      "value": "not_yet_available",
+      "source_id": "shizuoka-fifth-comprehensive-plan",
+      "evidence_location": "公式ページの計画開始時期と現行公開資料を照合",
+      "reviewed_data_path": "data/catalog/shizuoka_current_progress_availability.json",
+      "decision": "accepted_explicit_availability_boundary",
+      "review_note": "旧第4次総の2024年度評価を第5次総のcurrent actualへ流用しない。"
+    }
+  ],
+  "quality_boundary": "現行2026～2035第5次総のidentity、3層構成、9分野45政策aggregate、2026～2030実施計画、current annual resultの未公表境界をReviewed化した。旧第4次総の実績を現行第5次総へ流用せず、45政策個票、成果指標値、実施計画取組全件、財政・契約接続、因果効果、独自政策達成度、他都市比較可能性は別レビュー単位。",
+  "next_action": "Add FY2026 initial-budget and FY2024 settlement top lines, then define Shizuoka's declared v1 completion package and deferred depth."
+}
