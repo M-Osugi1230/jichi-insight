@@ -1,0 +1,79 @@
+{
+  "id": "sagamihara-phase13-completion",
+  "phase": 13,
+  "status": "reviewed_complete",
+  "official_code": "141500",
+  "name_ja": "相模原市",
+  "completed_at": "2026-09-27",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "policy_review_manifest_path": "data/catalog/sagamihara_phase13_policy_review_manifest.json",
+    "plan_review_path": "data/reviewed/sagamihara-city/plan_review.json",
+    "source_catalog_path": "data/catalog/sagamihara_phase13_sources.json",
+    "policy_structure_path": "data/catalog/sagamihara_current_policy_structure.json",
+    "current_progress_review_path": "data/catalog/sagamihara_current_progress_review_summary.json",
+    "fiscal_records_path": "data/reviewed/sagamihara-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/sagamihara-city/evidence_packets.json",
+    "counts": {
+      "current_vision_groups": 6,
+      "current_measures_aggregate": 47,
+      "current_priority_themes": 3,
+      "current_progress_measures_covered": 47,
+      "evaluation_role_count": 3,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "current_basic_plan_period_review_complete": true,
+    "latest_rolling_program_version_review_complete": true,
+    "current_six_vision_47_measure_aggregate_structure_review_complete": true,
+    "current_three_priority_theme_identity_review_complete": true,
+    "current_47_measure_progress_scope_review_complete": true,
+    "municipal_and_third_party_evaluation_roles_separate": true,
+    "citizen_survey_role_separate": true,
+    "basic_plan_and_rolling_program_version_boundary_explicit": true,
+    "budget_and_settlement_states_separate": true,
+    "aggregate_measure_counts_not_promoted_to_individual_identities": true,
+    "deferred_project_detail_not_promoted": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "current-measure-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "measure_count": 47,
+      "boundary": "47施策の個別identity、成果指標、基準値、2020～2024実績、1次評価内容、審議会2次評価コメントは追加depthでレビューする。aggregate countや評価対象範囲から個別結果を推測しない。"
+    },
+    {
+      "id": "rolling-program-project-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "令和8～10年度推進プログラムの個別事業identity、担当課、令和7年度実績、令和8～10年度の年度別事業量は追加depth。PDF掲載行から未確認の事業関係を推測しない。"
+    },
+    {
+      "id": "citizen-survey-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "総合計画進行管理に係る市民アンケートの設問別・属性別結果は別Evidence laneとして追加レビューする。行政自己評価や審議会評価と統合スコア化しない。"
+    },
+    {
+      "id": "basic-plan-program-next-plan-version-transition",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "現基本計画は2020～2027年度、最新推進プログラムは2026～2028年度。2028年度を含むローリング実施計画と次期2028年度以降の総合計画とのversion transitionは別レビューとし、現基本計画の期間を自動延長しない。"
+    },
+    {
+      "id": "fiscal-detail-policy-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "v1では2026年度一般会計当初予算と2024年度一般会計決算トップラインをstate分離して保持する。款項目別、補正、執行、個別事業費、契約、補助金の施策・事業接続は別Evidenceレビューとする。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "47施策の進行管理対象、行政1次評価、審議会2次評価、市民アンケート、財政値のレビューは政策効果の因果認定や他都市との比較可能性を意味しない。専用方法論なしに統合スコアやランキングへ昇格しない。"
+    }
+  ],
+  "completion_boundary": "相模原市のPhase 13 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味する。現行『未来へつなぐ さがみはらプラン』の基本計画2020～2027年度、基本構想・基本計画・実施計画の3層構成、6つの『目指すまちの姿』に属する全47施策という進行管理対象、最新2026～2028年度ローリング推進プログラム、少子化対策・雇用促進対策・中山間地域対策の3重点テーマ、2020～2024年度の実施状況を対象とする令和7年度進行管理における市の47施策等1次評価・総合計画審議会の2次評価・市民アンケートの役割分離、2026年度一般会計当初予算405,500,000,000円、2024年度一般会計決算歳入359,794,590,156円・歳出349,624,530,765円をレビュー済みである。一方、47施策の個別評価・成果指標、推進プログラム個別事業、市民アンケート詳細、2028年度をまたぐversion transition、個別財政接続はdeferred_depthとして明示する。この完了は相模原市の全公開データの網羅、Jichi Insight独自の政策達成度、因果効果、他都市比較可能性またはランキングの認定を意味しない。"
+}

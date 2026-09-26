@@ -1,0 +1,36 @@
+{
+  "id": "sagamihara-current-progress-review-summary",
+  "phase": 13,
+  "official_code": "141500",
+  "name_ja": "相模原市",
+  "review_status": "reviewed_current_midterm_progress_methodology",
+  "source_id": "sagamihara-progress-2025",
+  "review_year": 2025,
+  "implementation_period_reviewed": "2020年度～2024年度",
+  "scope": {
+    "measure_count": 47,
+    "includes_cross_cutting_priority_themes": true
+  },
+  "evaluation_layers": [
+    {
+      "id": "municipal_first_stage",
+      "actor": "相模原市（施策所管局）",
+      "role": "first_stage_self_evaluation",
+      "coverage": "全47施策及び分野横断的に取り組む重点テーマ"
+    },
+    {
+      "id": "planning_council_second_stage",
+      "actor": "相模原市総合計画審議会",
+      "role": "second_stage_third_party_evaluation",
+      "coverage": "1次評価の妥当性及び今後の施策の方向性"
+    },
+    {
+      "id": "citizen_survey",
+      "actor": "市民アンケート回答者",
+      "role": "citizen_opinion_input",
+      "coverage": "総合計画の進行管理に係る市民アンケート"
+    }
+  ],
+  "evidence_location": "令和7年度 総合計画進行管理 HTML『計画の中間評価』『進行管理の実施手法』『総合計画審議会による評価』『市民アンケート調査』",
+  "quality_boundary": "市の1次評価、総合計画審議会による2次評価、市民アンケートを別Evidence roleとして保持する。個別47施策の評価結果・指標値・自由記述は本v1では全件抽出せず、評価層の存在と対象範囲をReviewed化する。市の自己評価や審議会評価をJichi Insight独自評価へ変換しない。"
+}

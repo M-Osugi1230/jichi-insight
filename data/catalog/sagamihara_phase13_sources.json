@@ -1,0 +1,102 @@
+{
+  "id": "sagamihara-phase13-sources",
+  "phase": 13,
+  "official_code": "141500",
+  "name_ja": "相模原市",
+  "reviewed_at": "2026-09-27",
+  "records": [
+    {
+      "id": "sagamihara-city-home",
+      "layer": "municipality_identity",
+      "title": "相模原市公式ホームページ",
+      "organization": "相模原市",
+      "url": "https://www.city.sagamihara.kanagawa.jp/",
+      "source_kind": "html",
+      "review_status": "reviewed_official_identity",
+      "confidence": "high",
+      "boundary": "自治体identityと公式ドメインの確認に使用。政策・財政の個別値は専用公式資料から取得する。"
+    },
+    {
+      "id": "sagamihara-comprehensive-plan-current",
+      "layer": "current_plan",
+      "title": "未来へつなぐ さがみはらプラン～相模原市総合計画～",
+      "organization": "相模原市",
+      "url": "https://www.city.sagamihara.kanagawa.jp/shisei/1026766/seisaku/1015646/index.html",
+      "source_kind": "html",
+      "review_status": "reviewed_current_plan_identity_and_structure",
+      "confidence": "high",
+      "boundary": "基本構想・基本計画・実施計画の3層構成、基本計画2020～2027、推進プログラムの毎年度更新方式を確認する。"
+    },
+    {
+      "id": "sagamihara-promotion-program-2026-2028",
+      "layer": "implementation_plan",
+      "title": "相模原市総合計画推進プログラム（令和8年度～令和10年度）",
+      "organization": "相模原市",
+      "url": "https://www.city.sagamihara.kanagawa.jp/_res/projects/default_project/_page_/001/015/646/r08_r10.pdf",
+      "source_kind": "pdf",
+      "review_status": "reviewed_current_rolling_program",
+      "confidence": "high",
+      "boundary": "2026～2028の3年間を対象とする最新ローリング実施計画。基本計画は2027年度までのため、2028年度分は次期基本計画への移行期をまたぐ。個別事業identity全件は追加depth。"
+    },
+    {
+      "id": "sagamihara-progress-2025",
+      "layer": "current_plan_progress",
+      "title": "令和7年度 総合計画進行管理",
+      "organization": "相模原市",
+      "url": "https://www.city.sagamihara.kanagawa.jp/shisei/1026766/seisaku/1015646/1035159.html",
+      "source_kind": "html",
+      "review_status": "reviewed_current_midterm_progress_methodology",
+      "confidence": "high",
+      "boundary": "2020～2024の施策実施状況について全47施策と重点テーマを市が1次評価し、総合計画審議会が2次評価する。市民アンケートは別Evidence roleとして扱う。"
+    },
+    {
+      "id": "sagamihara-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算",
+      "organization": "相模原市",
+      "url": "https://www.city.sagamihara.kanagawa.jp/shisei/1026803/1003966/1003978.html",
+      "source_kind": "html",
+      "fiscal_year": 2026,
+      "review_status": "reviewed_budget_landing",
+      "confidence": "high",
+      "boundary": "当初予算と6月・9月等の補正予算を別stateとして保持する。"
+    },
+    {
+      "id": "sagamihara-budget-2026-general-account-pdf",
+      "layer": "budget",
+      "title": "令和8年度相模原市一般会計予算書及び予算に関する説明書",
+      "organization": "相模原市",
+      "url": "https://www.city.sagamihara.kanagawa.jp/_res/projects/default_project/_page_/001/003/978/r08nend/20260216_ippan_setumei.pdf",
+      "source_kind": "pdf",
+      "fiscal_year": 2026,
+      "review_status": "reviewed_general_account_initial_budget_topline",
+      "confidence": "high",
+      "boundary": "一般会計当初予算405,500,000千円を確認。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "sagamihara-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度決算",
+      "organization": "相模原市",
+      "url": "https://www.city.sagamihara.kanagawa.jp/shisei/1026803/1003966/1003979/index.html",
+      "source_kind": "html",
+      "fiscal_year": 2024,
+      "review_status": "reviewed_settlement_landing",
+      "confidence": "high",
+      "boundary": "一般会計・特別会計・公営企業会計を分離し、政策成果との接続は別レビューとする。"
+    },
+    {
+      "id": "sagamihara-settlement-2024-general-account-pdf",
+      "layer": "settlement",
+      "title": "令和6年度相模原市一般会計歳入歳出決算",
+      "organization": "相模原市",
+      "url": "https://www.city.sagamihara.kanagawa.jp/_res/projects/default_project/_page_/001/003/979/r06/ippan_kaikei.pdf",
+      "source_kind": "pdf",
+      "fiscal_year": 2024,
+      "review_status": "reviewed_general_account_settlement_topline",
+      "confidence": "high",
+      "boundary": "一般会計決算歳入359,794,590,156円・歳出349,624,530,765円を確認。予算現額・収支・特別会計とは分離する。"
+    }
+  ],
+  "quality_boundary": "現行基本計画、最新ローリング推進プログラム、2025年度進行管理、2026当初予算、2024決算をversion・evidence role・fiscal stageごとに分離する。47施策の市1次評価、審議会2次評価、市民アンケートを相互に同一評価へ統合せず、未抽出の個別結果を推測しない。"
+}
