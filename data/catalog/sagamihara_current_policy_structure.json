@@ -1,0 +1,47 @@
+{
+  "id": "sagamihara-current-policy-structure",
+  "phase": 13,
+  "official_code": "141500",
+  "name_ja": "相模原市",
+  "basic_plan_period": "2020年度～2027年度",
+  "rolling_program_period": "2026年度～2028年度",
+  "current_plan_source_id": "sagamihara-comprehensive-plan-current",
+  "current_program_source_id": "sagamihara-promotion-program-2026-2028",
+  "review_status": "reviewed_structure_aggregate_and_priority_theme_identity",
+  "hierarchy": {
+    "plan_layer_count": 3,
+    "vision_group_count": 6,
+    "measure_count": 47
+  },
+  "plan_layers": [
+    "基本構想",
+    "基本計画",
+    "実施計画"
+  ],
+  "priority_themes": [
+    {
+      "id": "sagamihara-priority-theme-01",
+      "name": "少子化対策"
+    },
+    {
+      "id": "sagamihara-priority-theme-02",
+      "name": "雇用促進対策"
+    },
+    {
+      "id": "sagamihara-priority-theme-03",
+      "name": "中山間地域対策"
+    }
+  ],
+  "city_strength_fields": [
+    "子育て",
+    "教育",
+    "まちづくり"
+  ],
+  "rolling_program_semantics": "推進プログラムは実施計画の機能を担い、今後3年間で取り組む主な事業等を定め、社会経済情勢の変化に対応するため毎年度見直して再策定する。",
+  "version_boundary": "基本計画は2020～2027年度。最新推進プログラムは2026～2028年度のローリング計画であり、2028年度は現基本計画期間終了後にまたがる。次期基本計画との関係は別version transitionとして保持し、現基本計画の期間を2028年度まで自動延長しない。",
+  "evidence_locations": [
+    "公式総合計画ページ『構成・計画期間』『相模原市総合計画推進プログラム（実施計画）』",
+    "令和8～10年度推進プログラム PDF p.6『特に重点的に力を入れる取組』"
+  ],
+  "quality_boundary": "6つの『目指すまちの姿』と47施策は公式進行管理の対象数としてaggregate reviewし、3重点テーマは名称identityをReviewed化する。47施策個別identity、推進プログラムの個別事業identity・担当課・事業量・年度別値は追加depthとし、aggregate countから個票を生成しない。"
+}
