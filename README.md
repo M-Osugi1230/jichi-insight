@@ -12,9 +12,9 @@ Jichi Insight（自治体インサイト）は、自治体が公開する政策�
 - Phase 11個票基盤: 47都道府県・15,327レコード
 - 政令指定都市 Source Inventory: 20 / 20
 - Phase 13 Reviewed reference: 2市（北九州市、福岡市）
-- Phase 13 Reviewed complete: 5市（札幌市、仙台市、さいたま市、千葉市、横浜市）
-- Phase 13 Review in progress: 1市（川崎市）
-- Phase 13 Pending record review: 12市
+- Phase 13 Reviewed complete: 6市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市）
+- Phase 13 Review in progress: 1市（相模原市）
+- Phase 13 Pending record review: 11市
 - 千葉市現行計画: 189 / 189事業identity、406 work itemsをstructured化済み
 - 千葉市旧計画: 360 / 360事業identity、再掲68 / 68を一次identityへ解決済み
 - 千葉市Versioned Linkage: 構造的一致60関係＋公式PDF手動確認6関係、計66関係をReviewed continuedとして昇格
@@ -153,12 +153,12 @@ Status: `in_progress`
 現在のCanonical queue:
 
 - Reviewed reference: 2市（北九州市、福岡市）
-- Reviewed complete: 5市（札幌市、仙台市、さいたま市、千葉市、横浜市）
-- Review in progress: 1市（川崎市）
-- Pending record review: 12市
+- Reviewed complete: 6市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市）
+- Review in progress: 1市（相模原市）
+- Pending record review: 11市
 - Blocked source inventory: 0市
 
-横浜市は`declared_review_package_v1`としてReviewed completeです。市会議決済みの2026〜2029中期計画について、14政策群・33施策群・横断3テーマ、政策指標/施策指標の役割分離、公式原案における政策指標15件のversioned snapshot、旧2022〜2025計画の最終振り返り境界、財政トップライン3件をレビュー済みです。最終冊子の詳細施策指標、現行計画の年度進捗、旧38政策との版間接続、個別財政接続は推測せず`deferred_depth`として保持します。現在のPhase 13作業対象は川崎市です。
+川崎市は`declared_review_package_v1`としてReviewed completeです。現行2026〜2029第4期実施計画の5基本政策・18政策・48施策・350事務事業という公式構造、重点テーマ1件と5つの取組レーン、旧2022〜2025第3期実施計画の2024年度評価（74施策・572事務事業、17件上回る・462件ほぼ達成・93件下回る）、2026年度一般会計当初予算937,753,480,000円、2024年度一般会計決算見込の歳入871,327,000,000円・歳出862,154,000,000円をレビュー済みです。350事務事業個票、48施策の成果指標、現行年度進捗、旧現versioned linkage、個別財政接続は推測せず`deferred_depth`として保持します。現在のPhase 13作業対象は相模原市です。
 
 正本:
 
