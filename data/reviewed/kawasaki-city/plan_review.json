@@ -1,0 +1,64 @@
+{
+  "id": "phase13-kawasaki-plan-review",
+  "official_code": "141305",
+  "name_ja": "川崎市",
+  "review_status": "review_in_progress_structure_and_cycle_boundaries_reviewed",
+  "reviewed_at": "2026-09-25",
+  "records": [
+    {
+      "id": "kawasaki-current-plan-period",
+      "evidence_role": "current_plan_identity",
+      "title": "川崎市総合計画 第4期実施計画 計画期間",
+      "statement": "第4期実施計画の期間は2026年度から2029年度までの4年間。",
+      "value": "2026年度～2029年度",
+      "source_id": "kawasaki-fourth-implementation-plan-structure-pdf",
+      "evidence_location": "PDF index p.5（冊子印字p.6）『計画期間』",
+      "decision": "accepted",
+      "review_note": "第3期実施計画2022～2025の評価を現行actualへ流用しない。"
+    },
+    {
+      "id": "kawasaki-current-plan-hierarchy",
+      "evidence_role": "current_policy_structure",
+      "title": "5基本政策・18政策・48施策・350事務事業",
+      "statement": "現行総合計画は5基本政策、その下に18政策、実施計画で48施策と350事務事業を位置付ける。",
+      "value": 5,
+      "unit": "basic_policies",
+      "policy_count": 18,
+      "measure_count": 48,
+      "administrative_project_count": 350,
+      "source_id": "kawasaki-fourth-implementation-plan-structure-pdf",
+      "evidence_location": "PDF index p.6（冊子印字p.7）政策体系図・注記",
+      "reviewed_data_path": "data/catalog/kawasaki_current_policy_structure.json",
+      "decision": "accepted_complete_structure_identity",
+      "review_note": "aggregate structureのみ。350事務事業の個票内容を推測しない。"
+    },
+    {
+      "id": "kawasaki-current-priority-theme",
+      "evidence_role": "current_priority_theme",
+      "title": "重点的に取り組む課題",
+      "statement": "第4期実施計画では『少子高齢化・人口減少対策』を重点テーマとし、5つの主な取組レーンを示す。",
+      "value": "少子高齢化・人口減少対策",
+      "initiative_lane_count": 5,
+      "source_id": "kawasaki-fourth-implementation-plan-priority-theme-pdf",
+      "evidence_location": "重点テーマPDF index p.1-4（冊子印字p.30-33）",
+      "decision": "accepted",
+      "review_note": "重点取組の列挙を成果達成や個別事業評価へ変換しない。"
+    },
+    {
+      "id": "kawasaki-prior-plan-2024-evaluation-boundary",
+      "evidence_role": "historical_annual_progress",
+      "title": "第3期実施計画 令和6年度事務事業評価",
+      "statement": "旧2022～2025第3期実施計画の74施策配下572事務事業について2024年度内部評価が公表された。",
+      "value": 572,
+      "unit": "administrative_projects",
+      "historical_policy_measure_count": 74,
+      "source_id": "kawasaki-third-plan-evaluation-2024-overview-pdf",
+      "evidence_location": "全体概要PDF index p.2",
+      "reviewed_data_path": "data/catalog/kawasaki_prior_plan_2024_evaluation_summary.json",
+      "decision": "accepted_historical_cycle_only",
+      "review_note": "現行2026～2029計画の実績とは別version。"
+    }
+  ],
+  "quality_boundary": "現行2026～2029の5基本政策・18政策・48施策・350事務事業という構造identity、重点テーマ、旧2022～2025計画の2024年度評価とのversion boundaryをReviewed化した。現行350事務事業の個票、成果指標値、年度actual、財政・契約接続、因果効果、政策達成度、他都市比較可能性は別レビュー単位。",
+  "next_action": "Add FY2026 initial-budget and FY2024 settlement top lines, then define Kawasaki's declared v1 completion package and deferred depth."
+}

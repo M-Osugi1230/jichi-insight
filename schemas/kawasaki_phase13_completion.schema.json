@@ -1,0 +1,204 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.local/schemas/kawasaki_phase13_completion.schema.json",
+  "title": "Kawasaki Phase 13 completion contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "phase",
+    "status",
+    "official_code",
+    "name_ja",
+    "completed_at",
+    "completion_depth",
+    "review_package",
+    "quality_gate",
+    "deferred_depth",
+    "completion_boundary"
+  ],
+  "properties": {
+    "id": {
+      "const": "kawasaki-phase13-completion"
+    },
+    "phase": {
+      "const": 13
+    },
+    "status": {
+      "const": "reviewed_complete"
+    },
+    "official_code": {
+      "const": "141305"
+    },
+    "name_ja": {
+      "const": "川崎市"
+    },
+    "completed_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "completion_depth": {
+      "const": "declared_review_package_v1"
+    },
+    "review_package": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "policy_review_manifest_path",
+        "plan_review_path",
+        "source_catalog_path",
+        "policy_structure_path",
+        "historical_evaluation_summary_path",
+        "fiscal_records_path",
+        "fiscal_evidence_path",
+        "counts"
+      ],
+      "properties": {
+        "policy_review_manifest_path": {
+          "const": "data/catalog/kawasaki_phase13_policy_review_manifest.json"
+        },
+        "plan_review_path": {
+          "const": "data/reviewed/kawasaki-city/plan_review.json"
+        },
+        "source_catalog_path": {
+          "const": "data/catalog/kawasaki_phase13_sources.json"
+        },
+        "policy_structure_path": {
+          "const": "data/catalog/kawasaki_current_policy_structure.json"
+        },
+        "historical_evaluation_summary_path": {
+          "const": "data/catalog/kawasaki_prior_plan_2024_evaluation_summary.json"
+        },
+        "fiscal_records_path": {
+          "const": "data/reviewed/kawasaki-city/fiscal_records.json"
+        },
+        "fiscal_evidence_path": {
+          "const": "data/reviewed/kawasaki-city/evidence_packets.json"
+        },
+        "counts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "current_basic_policies",
+            "current_policies",
+            "current_measures",
+            "current_administrative_projects_aggregate",
+            "current_priority_themes",
+            "current_priority_initiative_lanes",
+            "historical_policy_measures",
+            "historical_administrative_projects",
+            "historical_above_target",
+            "historical_almost_achieved",
+            "historical_below_target",
+            "historical_above_or_almost_achieved_percent",
+            "fiscal_top_line_records"
+          ],
+          "properties": {
+            "current_basic_policies": {
+              "const": 5
+            },
+            "current_policies": {
+              "const": 18
+            },
+            "current_measures": {
+              "const": 48
+            },
+            "current_administrative_projects_aggregate": {
+              "const": 350
+            },
+            "current_priority_themes": {
+              "const": 1
+            },
+            "current_priority_initiative_lanes": {
+              "const": 5
+            },
+            "historical_policy_measures": {
+              "const": 74
+            },
+            "historical_administrative_projects": {
+              "const": 572
+            },
+            "historical_above_target": {
+              "const": 17
+            },
+            "historical_almost_achieved": {
+              "const": 462
+            },
+            "historical_below_target": {
+              "const": 93
+            },
+            "historical_above_or_almost_achieved_percent": {
+              "const": 83.8
+            },
+            "fiscal_top_line_records": {
+              "const": 3
+            }
+          }
+        }
+      }
+    },
+    "quality_gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 12,
+      "patternProperties": {
+        "^[a-z0-9_]+$": {
+          "const": true
+        }
+      }
+    },
+    "deferred_depth": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "status",
+          "boundary"
+        ],
+        "properties": {
+          "id": {
+            "enum": [
+              "current-project-identity-detail",
+              "current-measure-outcome-indicators",
+              "current-plan-annual-progress",
+              "historical-current-versioned-linkage",
+              "fiscal-detail-project-linkage",
+              "project-outcome-causal-and-cross-city-comparability"
+            ]
+          },
+          "status": {
+            "const": "deferred_not_required_for_v1_completion"
+          },
+          "count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "measure_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "historical_project_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "current_project_aggregate_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "boundary": {
+            "type": "string",
+            "minLength": 20
+          }
+        }
+      }
+    },
+    "completion_boundary": {
+      "type": "string",
+      "minLength": 250
+    }
+  }
+}

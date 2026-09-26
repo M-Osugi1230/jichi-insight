@@ -1,0 +1,133 @@
+{
+  "id": "kawasaki-current-policy-structure-2026-2029",
+  "phase": 13,
+  "official_code": "141305",
+  "name_ja": "川崎市",
+  "plan_period": "2026年度～2029年度",
+  "source_id": "kawasaki-fourth-implementation-plan-structure-pdf",
+  "review_status": "reviewed_complete_structure_identity",
+  "hierarchy": {
+    "basic_policy_count": 5,
+    "policy_count": 18,
+    "measure_count": 48,
+    "administrative_project_count": 350
+  },
+  "basic_policies": [
+    {
+      "basic_policy_code": "1",
+      "basic_policy_name": "生命を守り生き生きと暮らすことができるまちづくり",
+      "policies": [
+        {
+          "policy_code": "1-1",
+          "policy_name": "災害に強いまちをつくる"
+        },
+        {
+          "policy_code": "1-2",
+          "policy_name": "安全に暮らせるまちをつくる"
+        },
+        {
+          "policy_code": "1-3",
+          "policy_name": "水の安定した供給・循環を支える"
+        },
+        {
+          "policy_code": "1-4",
+          "policy_name": "安心して暮らせる地域のしくみをつくる"
+        },
+        {
+          "policy_code": "1-5",
+          "policy_name": "生命と健康を守る"
+        }
+      ]
+    },
+    {
+      "basic_policy_code": "2",
+      "basic_policy_name": "子どもを安心して育てることのできるふるさとづくり",
+      "policies": [
+        {
+          "policy_code": "2-1",
+          "policy_name": "安心して子育てできる環境をつくる"
+        },
+        {
+          "policy_code": "2-2",
+          "policy_name": "未来を担う人材を育成する"
+        }
+      ]
+    },
+    {
+      "basic_policy_code": "3",
+      "basic_policy_name": "市民生活を豊かにする環境づくり",
+      "policies": [
+        {
+          "policy_code": "3-1",
+          "policy_name": "環境に配慮したしくみをつくる"
+        },
+        {
+          "policy_code": "3-2",
+          "policy_name": "豊かな自然環境をつくる"
+        }
+      ]
+    },
+    {
+      "basic_policy_code": "4",
+      "basic_policy_name": "活力と魅力あふれる力強い都市づくり",
+      "policies": [
+        {
+          "policy_code": "4-1",
+          "policy_name": "地域経済を活性化する"
+        },
+        {
+          "policy_code": "4-2",
+          "policy_name": "臨海部を活性化する"
+        },
+        {
+          "policy_code": "4-3",
+          "policy_name": "魅力ある都市拠点を整備する"
+        },
+        {
+          "policy_code": "4-4",
+          "policy_name": "総合的な交通体系を構築する"
+        },
+        {
+          "policy_code": "4-5",
+          "policy_name": "スポーツ・文化芸術を振興する"
+        },
+        {
+          "policy_code": "4-6",
+          "policy_name": "デジタル技術を活用する"
+        },
+        {
+          "policy_code": "4-7",
+          "policy_name": "都市の魅力を発信する"
+        }
+      ]
+    },
+    {
+      "basic_policy_code": "5",
+      "basic_policy_name": "誰もが生きがいを持てる市民自治の地域づくり",
+      "policies": [
+        {
+          "policy_code": "5-1",
+          "policy_name": "参加と協働により市民自治を推進する"
+        },
+        {
+          "policy_code": "5-2",
+          "policy_name": "人権を尊重し共に生きる社会をつくる"
+        }
+      ]
+    }
+  ],
+  "priority_theme": {
+    "theme_count": 1,
+    "theme_name": "少子高齢化・人口減少対策",
+    "source_id": "kawasaki-fourth-implementation-plan-priority-theme-pdf",
+    "initiative_lanes": [
+      "子ども・教育",
+      "健康・福祉",
+      "地域の魅力・価値",
+      "社会基盤・生活基盤",
+      "経済成長・社会課題解決"
+    ]
+  },
+  "evidence_location": "序章・基本構想・基本計画PDF index p.5-6（冊子印字p.6-7）",
+  "quality_boundary": "5基本政策・18政策・48施策・350事務事業という公式体系を構造identityとしてReviewed化する。350事務事業の個票名称・担当課・年度目標・成果指標は追加depthであり、aggregate countから個票内容を推測しない。"
+}
