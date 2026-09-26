@@ -1,0 +1,86 @@
+{
+  "id": "shizuoka-current-policy-structure",
+  "phase": 13,
+  "official_code": "221007",
+  "name_ja": "静岡市",
+  "plan_period": "2026年度～2035年度",
+  "implementation_plan_period": "2026年度～2030年度",
+  "current_plan_source_id": "shizuoka-fifth-comprehensive-plan",
+  "basic_plan_source_id": "shizuoka-fifth-basic-plan-pdf",
+  "implementation_plan_source_id": "shizuoka-fifth-implementation-plan-pdf",
+  "review_status": "reviewed_aggregate_policy_structure",
+  "hierarchy": {
+    "plan_layer_count": 3,
+    "field_count": 9,
+    "policy_count": 45,
+    "implementation_plan_year_count": 5
+  },
+  "plan_layers": [
+    "基本構想",
+    "基本計画",
+    "実施計画"
+  ],
+  "fields": [
+    {
+      "field_code": "1",
+      "field_name": "共生・福祉・健康",
+      "policy_count": 5
+    },
+    {
+      "field_code": "2",
+      "field_name": "防災・消防・防犯",
+      "policy_count": 5
+    },
+    {
+      "field_code": "3",
+      "field_name": "こども・子育て",
+      "policy_count": 3
+    },
+    {
+      "field_code": "4",
+      "field_name": "教育・人づくり",
+      "policy_count": 4
+    },
+    {
+      "field_code": "5",
+      "field_name": "経済・産業",
+      "policy_count": 9
+    },
+    {
+      "field_code": "6",
+      "field_name": "観光・スポーツ・文化",
+      "policy_count": 4
+    },
+    {
+      "field_code": "7",
+      "field_name": "都市・社会基盤",
+      "policy_count": 7
+    },
+    {
+      "field_code": "8",
+      "field_name": "環境・森林",
+      "policy_count": 4
+    },
+    {
+      "field_code": "9",
+      "field_name": "行政経営",
+      "policy_count": 4
+    }
+  ],
+  "implementation_semantics": {
+    "revision_cycle": "annual",
+    "horizon_years": 5,
+    "policy_to_outcome_indicator_rule": "施策ごとに成果指標を設定し、数値目標の達成状況を把握して評価・検証する",
+    "listed_action_fields": [
+      "取組名",
+      "取組の内容",
+      "事業費",
+      "担当課"
+    ]
+  },
+  "evidence_locations": [
+    "基本計画 PDF 第4章『分野別の政策』",
+    "実施計画 PDF p.1-5（PDF index p.0, p.5, p.8）"
+  ],
+  "quality_boundary": "9分野と45政策をaggregate structureとしてReviewed化する。実施計画は施策ごとの成果指標・取組・事業費・担当課を持つが、45政策個票、成果指標値、取組全件をv1で自動生成しない。"
+}
