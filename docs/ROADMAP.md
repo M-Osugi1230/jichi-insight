@@ -138,13 +138,13 @@ Status: `in_progress`
 
 Phase 12完了により、北九州市・福岡市の2市をReviewed referenceとして保持しつつ、残る18市すべてが個票レベルのreview queueへ入りました。Phase 12由来のblocked source inventoryは0です。
 
-Canonical queue（2026-09-25同期）:
+Canonical queue（2026-09-27同期）:
 
 - Reviewed reference: 2市（北九州市、福岡市）
 - Review queue eligible: 18市
-- Reviewed complete: 6市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市）
-- Review in progress: 1市（相模原市）
-- Pending record review: 11市
+- Reviewed complete: 7市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市）
+- Review in progress: 1市（新潟市）
+- Pending record review: 10市
 - Blocked source inventory: 0市
 
 状態の正本は `data/catalog/phase13_designated_city_review_queue.json` です。文書上の集計とmachine-readable queueが競合する場合はqueueを優先します。
@@ -301,22 +301,43 @@ Status: `complete`（2026-09-25）
 - `data/reviewed/kawasaki-city/fiscal_records.json`
 - `tests/test_phase13_kawasaki_completion.py`
 
-### Current work — Sagamihara record review
+### Milestone M8 — Sagamihara reviewed complete
+
+Status: `complete`（2026-09-27）
+
+相模原市は`declared_review_package_v1`としてReviewed completeです。
+
+- Current basic-plan period: 2020〜2027年度
+- Current vision groups: 6（aggregate）
+- Current measures: 47（aggregate）
+- Latest rolling implementation program: 2026〜2028年度
+- Current priority themes: 3（少子化対策、雇用促進対策、中山間地域対策）
+- Midterm progress coverage: 2020〜2024年度、全47施策＋重点テーマ
+- Evaluation lanes: 市の1次評価、総合計画審議会の2次評価、市民アンケート
+- FY2026 general-account initial budget: 405,500,000,000円
+- FY2024 general-account settlement: 歳入359,794,590,156円 / 歳出349,624,530,765円
+- Fiscal top-line records: 3
+
+47施策の個別identity・評価結果・成果指標、最新推進プログラムの個別事業、設問別・属性別市民アンケート、現基本計画2020〜2027と2028年度を含むローリング推進プログラム／次期総合計画のversion transition、個別財政接続は`deferred_depth`として明示します。行政1次評価、審議会2次評価、市民アンケートを統合スコアへ変換しません。
+
+正本:
+
+- `data/catalog/sagamihara_phase13_completion.json`
+- `schemas/sagamihara_phase13_completion.schema.json`
+- `data/catalog/sagamihara_phase13_policy_review_manifest.json`
+- `data/catalog/sagamihara_current_policy_structure.json`
+- `data/catalog/sagamihara_current_progress_review_summary.json`
+- `data/reviewed/sagamihara-city/plan_review.json`
+- `data/reviewed/sagamihara-city/fiscal_records.json`
+- `tests/test_phase13_sagamihara_completion.py`
+
+### Current work — Niigata record review
 
 Status: `in_progress`
 
-川崎市のReviewed completionにより、Canonical queueの次対象は相模原市（141500）です。Phase 12で確定した公式Source Inventoryを起点に、現行計画identity、実施・進行管理層、成果指標、財政、旧現version boundaryをEvidence付きでレビューします。
+相模原市のReviewed completionにより、Canonical queueの次対象は新潟市（151009）です。Phase 12で確定した公式Source Inventoryを起点に、現行計画identity、実施・進行管理層、成果指標、財政、旧現version boundaryをEvidence付きでレビューします。
 
-Phase 13では、以下を品質ゲートとして維持します。
-
-- すべてのReviewed個票が公式URLとページ・表・節等のrecord-level evidence locationを持つ
-- 総合計画、実施計画、年度進捗、予算、決算を別のevidence roleとして保持する
-- 予算案、成立予算、補正、執行、決算、事業費、契約額、補助額を混同しない
-- 目標年、報告年、測定年、会計年度、公開年、計画版を区別する
-- 自治体の自己評価はsource-reported factとして保持し、Jichi Insight独自の達成判定へ変換しない
-- 比較可能性の別レビューなしに自治体間ランキングへ昇格しない
-- 未公開Evidenceは明示し、確認済みのsource inventory coverageを不必要に巻き戻さない
-- Schema、Evidence coverage、回帰テストを通過するまで市単位のPhase 13完了を宣言しない
+Phase 13では、公式一次資料・version・期間・財政state・評価主体を分離し、未公開Evidenceを推測補完しません。Schema、Evidence coverage、回帰テストを通過するまで市単位のPhase 13完了を宣言しません。
 
 正本:
 
@@ -328,7 +349,7 @@ Phase 13では、以下を品質ゲートとして維持します。
 
 ## After Phase 13
 
-1. 相模原市をReviewed completeへ進め、その後の11市を順次Reviewed到達深度まで処理し、全20政令指定都市の市レベル基盤を完成させる
+1. 新潟市をReviewed completeへ進め、その後の10市を順次Reviewed到達深度まで処理し、全20政令指定都市の市レベル基盤を完成させる
 2. 中核市・県庁所在地
 3. その他市区町村
 4. 選挙・候補者比較
