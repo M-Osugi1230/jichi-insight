@@ -1,0 +1,78 @@
+{
+  "id": "shizuoka-phase13-completion",
+  "phase": 13,
+  "status": "reviewed_complete",
+  "official_code": "221007",
+  "name_ja": "静岡市",
+  "completed_at": "2026-09-27",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "policy_review_manifest_path": "data/catalog/shizuoka_phase13_policy_review_manifest.json",
+    "plan_review_path": "data/reviewed/shizuoka-city/plan_review.json",
+    "source_catalog_path": "data/catalog/shizuoka_phase13_sources.json",
+    "policy_structure_path": "data/catalog/shizuoka_current_policy_structure.json",
+    "current_progress_availability_path": "data/catalog/shizuoka_current_progress_availability.json",
+    "fiscal_records_path": "data/reviewed/shizuoka-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/shizuoka-city/evidence_packets.json",
+    "counts": {
+      "current_plan_layers": 3,
+      "current_fields": 9,
+      "current_policies_aggregate": 45,
+      "current_implementation_plan_years": 5,
+      "current_annual_progress_records": 0,
+      "historical_progress_routes_preserved": 1,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "adopted_current_plan_period_review_complete": true,
+    "current_three_layer_structure_review_complete": true,
+    "current_9_field_45_policy_aggregate_structure_review_complete": true,
+    "current_implementation_plan_period_and_revision_cycle_review_complete": true,
+    "outcome_indicator_semantics_review_complete": true,
+    "current_annual_progress_not_yet_available_explicit": true,
+    "fourth_plan_progress_not_reused_as_fifth_plan_actual": true,
+    "budget_and_settlement_states_separate": true,
+    "aggregate_counts_not_promoted_to_individual_records": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "current-policy-and-indicator-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "policy_count": 45,
+      "boundary": "45政策の個別identity、施策、成果指標、現状値、2030年目標値は追加depth。45というaggregate countから個票や値を推測しない。"
+    },
+    {
+      "id": "implementation-plan-action-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "実施計画の取組名・内容・事業費・担当課の全件構造化、再掲・複数分野所属の解決は追加depth。未確認の対応関係を推測しない。"
+    },
+    {
+      "id": "current-plan-annual-progress",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "第5次総合計画は2026年度開始であり、現行計画の年次実績はnot_yet_available。公式の同一version進捗資料が公表された場合にのみcurrent actualへ昇格する。"
+    },
+    {
+      "id": "fourth-to-fifth-plan-versioned-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "旧第4次総と現行第5次総の政策・施策・取組の継続・改称・統合・分割・終了・新規は別version。名称類似だけで確定しない。"
+    },
+    {
+      "id": "fiscal-detail-policy-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "v1では2026年度一般会計当初予算と2024年度一般会計決算トップラインをstate分離して保持する。款項目別、補正、執行、取組事業費、契約、補助金の政策・施策接続は別Evidenceレビューとする。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "成果指標設計・将来の行政評価・財政値のレビューは政策効果の因果認定や他都市との比較可能性を意味しない。専用方法論なしに統合スコアやランキングへ昇格しない。"
+    }
+  ],
+  "completion_boundary": "静岡市のPhase 13 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味する。第5次静岡市総合計画の2026～2035年度という計画期間、基本構想・基本計画・実施計画の3層構成、基本計画の9分野・45政策というaggregate structure、2026～2030年度の5年間を対象に毎年度改定する実施計画、施策ごとに成果指標を設定し数値目標の達成状況を評価・検証する設計、現行第5次総の年度実績がまだ公表されていないavailability境界、旧第4次総2024評価をhistorical onlyとして隔離するversion境界、2026年度一般会計当初予算403,500,000,000円、2024年度一般会計決算歳入387,089,852,000円・歳出376,221,432,000円をレビュー済みである。一方、45政策・成果指標・実施計画取組の個票完全構造化、第5次総の将来年度実績、旧第4次総とのversioned linkage、個別財政接続はdeferred_depthとして明示する。この完了は静岡市の全公開データの網羅、Jichi Insight独自の政策達成度、因果効果、他都市比較可能性またはランキングの認定を意味しない。"
+}
