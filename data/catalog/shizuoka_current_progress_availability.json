@@ -1,0 +1,26 @@
+{
+  "id": "shizuoka-current-progress-availability",
+  "phase": 13,
+  "official_code": "221007",
+  "name_ja": "静岡市",
+  "review_status": "reviewed_current_result_not_yet_available",
+  "current_plan_start_fiscal_year": 2026,
+  "current_plan_annual_progress": {
+    "status": "not_yet_available",
+    "reason": "第5次静岡市総合計画は2026年度開始であり、2026-09-27時点で同計画の年度実績として使用できる公式年次評価は確認されていない。",
+    "promotion_rule": "第5次総合計画と同一versionの公式年次実績・評価が公表された場合にのみcurrent annual progressへ昇格する。"
+  },
+  "historical_progress": {
+    "source_id": "shizuoka-fourth-plan-progress-2024",
+    "plan_version": "第4次静岡市総合計画",
+    "reporting_fiscal_year": 2024,
+    "decision": "historical_only_do_not_reuse_as_current_actual"
+  },
+  "evaluation_mechanism_reference": {
+    "source_id": "shizuoka-administrative-reform-plan",
+    "role": "implementation_evaluation_reference",
+    "statement": "5次総実施計画と同じ5年間の期間・改定運用に沿い、登載取組の計画値に対する実績を評価して見直しにつなげる行財政改革運用が公式に示されている。",
+    "boundary": "これは5次総全45政策の年度実績ではなく、評価運用の参考Evidenceである。"
+  },
+  "quality_boundary": "current resultがまだ公表されていない状態を欠損として保持する。第4次総の2024年度実績を第5次総の2026年度以降のactualへ流用せず、評価運用の存在と実績値を混同しない。"
+}
