@@ -99,7 +99,7 @@
       "official_code": "221007",
       "name_ja": "静岡市",
       "prefecture_name_ja": "静岡県",
-      "status": "review_in_progress",
+      "status": "reviewed_complete",
       "source_inventory_path": "data/indexed/shizuoka-city/source_inventory.json"
     },
     {
@@ -107,7 +107,7 @@
       "official_code": "221309",
       "name_ja": "浜松市",
       "prefecture_name_ja": "静岡県",
-      "status": "pending_record_review",
+      "status": "review_in_progress",
       "source_inventory_path": "data/indexed/hamamatsu-city/source_inventory.json"
     },
     {
@@ -181,10 +181,10 @@
     "reviewed_reference_count": 2,
     "eligible_review_queue_count": 18,
     "blocked_source_inventory_count": 0,
-    "reviewed_complete_count": 8,
+    "reviewed_complete_count": 9,
     "review_in_progress_count": 1,
-    "pending_record_review_count": 9,
-    "next_official_code": "221007"
+    "pending_record_review_count": 8,
+    "next_official_code": "221309"
   },
   "updated_at": "2026-09-27"
 }

@@ -1,0 +1,95 @@
+{
+  "id": "shizuoka-phase13-policy-review-manifest",
+  "phase": 13,
+  "official_code": "221007",
+  "name_ja": "静岡市",
+  "status": "review_in_progress",
+  "reviewed_at": "2026-09-27",
+  "source_catalog_path": "data/catalog/shizuoka_phase13_sources.json",
+  "plan_review_path": "data/reviewed/shizuoka-city/plan_review.json",
+  "policy_structure_path": "data/catalog/shizuoka_current_policy_structure.json",
+  "current_progress_availability_path": "data/catalog/shizuoka_current_progress_availability.json",
+  "fiscal_records_path": "data/reviewed/shizuoka-city/fiscal_records.json",
+  "fiscal_evidence_path": "data/reviewed/shizuoka-city/evidence_packets.json",
+  "reviewed_facts": [
+    {
+      "id": "shizuoka-current-plan-period",
+      "layer": "current_plan",
+      "field": "plan_period",
+      "value": "2026年度～2035年度",
+      "source_id": "shizuoka-fifth-comprehensive-plan",
+      "review_status": "reviewed",
+      "interpretation_boundary": "旧第4次総2023～2030とは別version。"
+    },
+    {
+      "id": "shizuoka-current-policy-structure",
+      "layer": "current_plan",
+      "field": "policy_structure",
+      "field_count": 9,
+      "policy_count": 45,
+      "source_id": "shizuoka-fifth-basic-plan-pdf",
+      "review_status": "reviewed_aggregate_structure",
+      "interpretation_boundary": "45政策個票・成果指標値は追加depth。aggregate countから推測しない。"
+    },
+    {
+      "id": "shizuoka-current-implementation-plan",
+      "layer": "implementation_plan",
+      "field": "implementation_plan_period",
+      "value": "2026年度～2030年度",
+      "revision_cycle": "annual",
+      "source_id": "shizuoka-fifth-implementation-plan-pdf",
+      "review_status": "reviewed_current_implementation_plan",
+      "interpretation_boundary": "施策ごとに成果指標、取組名・内容・事業費・担当課を掲載。個票全件は追加depth。"
+    },
+    {
+      "id": "shizuoka-current-progress-availability",
+      "layer": "current_plan_progress",
+      "field": "annual_progress_availability",
+      "value": "not_yet_available",
+      "source_id": "shizuoka-fifth-comprehensive-plan",
+      "review_status": "reviewed_explicit_availability_boundary",
+      "interpretation_boundary": "第5次総は2026年度開始。旧第4次総2024評価を現行actualへ流用しない。"
+    },
+    {
+      "id": "shizuoka-2026-general-account-initial-budget",
+      "layer": "fiscal",
+      "field": "general_account_initial_budget",
+      "fiscal_year": 2026,
+      "value": 403500000000,
+      "unit": "yen",
+      "source_id": "shizuoka-budget-2026",
+      "review_status": "reviewed",
+      "interpretation_boundary": "当初予算。補正・執行・決算とは別state。"
+    },
+    {
+      "id": "shizuoka-2024-general-account-settlement-revenue",
+      "layer": "fiscal",
+      "field": "general_account_settlement_revenue",
+      "fiscal_year": 2024,
+      "value": 387089852000,
+      "unit": "yen",
+      "source_id": "shizuoka-settlement-2024-audit-summary-pdf",
+      "review_status": "reviewed",
+      "interpretation_boundary": "決算歳入。予算・特別会計・収支とは別state。"
+    },
+    {
+      "id": "shizuoka-2024-general-account-settlement-expenditure",
+      "layer": "fiscal",
+      "field": "general_account_settlement_expenditure",
+      "fiscal_year": 2024,
+      "value": 376221432000,
+      "unit": "yen",
+      "source_id": "shizuoka-settlement-2024-audit-summary-pdf",
+      "review_status": "reviewed",
+      "interpretation_boundary": "決算歳出。予算・特別会計・実質収支とは別state。"
+    }
+  ],
+  "remaining_work": [
+    "45政策の個別identity、施策、成果指標、現状値、2030年目標値を追加depthとしてレビューする。",
+    "実施計画の取組名・内容・事業費・担当課を個票化し、再掲・複数政策所属を保持する。",
+    "第5次総の年度実績は同一versionの公式進捗資料公表後に追加する。第4次総2024評価を流用しない。",
+    "第4次総と第5次総の政策・施策・取組versioned linkageは名称類似だけで確定しない。",
+    "個別政策・施策・取組と予算、補正、執行、決算、契約、補助金の接続はEvidence確認後のみ昇格する。"
+  ],
+  "quality_boundary": "Shizuoka Phase 13 v1 reviews the adopted 2026-2035 fifth comprehensive-plan identity, three-layer plan structure, aggregate 9-field / 45-policy structure, current 2026-2030 five-year implementation plan with annual revision and policy-level outcome-indicator semantics, explicit not-yet-available current annual-progress boundary, and three general-account fiscal top lines. Fourth-plan FY2024 evaluation is historical only and is not reused as fifth-plan progress. Individual policy, indicator, action, and project records are not inferred from aggregate coverage. No independent policy-achievement judgment, causal attribution, or cross-city comparability is inferred."
+}

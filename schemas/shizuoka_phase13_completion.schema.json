@@ -1,0 +1,168 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.local/schemas/shizuoka_phase13_completion.schema.json",
+  "title": "Shizuoka Phase 13 completion contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "phase",
+    "status",
+    "official_code",
+    "name_ja",
+    "completed_at",
+    "completion_depth",
+    "review_package",
+    "quality_gate",
+    "deferred_depth",
+    "completion_boundary"
+  ],
+  "properties": {
+    "id": {
+      "const": "shizuoka-phase13-completion"
+    },
+    "phase": {
+      "const": 13
+    },
+    "status": {
+      "const": "reviewed_complete"
+    },
+    "official_code": {
+      "const": "221007"
+    },
+    "name_ja": {
+      "const": "静岡市"
+    },
+    "completed_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "completion_depth": {
+      "const": "declared_review_package_v1"
+    },
+    "review_package": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "policy_review_manifest_path",
+        "plan_review_path",
+        "source_catalog_path",
+        "policy_structure_path",
+        "current_progress_availability_path",
+        "fiscal_records_path",
+        "fiscal_evidence_path",
+        "counts"
+      ],
+      "properties": {
+        "policy_review_manifest_path": {
+          "const": "data/catalog/shizuoka_phase13_policy_review_manifest.json"
+        },
+        "plan_review_path": {
+          "const": "data/reviewed/shizuoka-city/plan_review.json"
+        },
+        "source_catalog_path": {
+          "const": "data/catalog/shizuoka_phase13_sources.json"
+        },
+        "policy_structure_path": {
+          "const": "data/catalog/shizuoka_current_policy_structure.json"
+        },
+        "current_progress_availability_path": {
+          "const": "data/catalog/shizuoka_current_progress_availability.json"
+        },
+        "fiscal_records_path": {
+          "const": "data/reviewed/shizuoka-city/fiscal_records.json"
+        },
+        "fiscal_evidence_path": {
+          "const": "data/reviewed/shizuoka-city/evidence_packets.json"
+        },
+        "counts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "current_plan_layers",
+            "current_fields",
+            "current_policies_aggregate",
+            "current_implementation_plan_years",
+            "current_annual_progress_records",
+            "historical_progress_routes_preserved",
+            "fiscal_top_line_records"
+          ],
+          "properties": {
+            "current_plan_layers": {
+              "const": 3
+            },
+            "current_fields": {
+              "const": 9
+            },
+            "current_policies_aggregate": {
+              "const": 45
+            },
+            "current_implementation_plan_years": {
+              "const": 5
+            },
+            "current_annual_progress_records": {
+              "const": 0
+            },
+            "historical_progress_routes_preserved": {
+              "const": 1
+            },
+            "fiscal_top_line_records": {
+              "const": 3
+            }
+          }
+        }
+      }
+    },
+    "quality_gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 12,
+      "patternProperties": {
+        "^[a-z0-9_]+$": {
+          "const": true
+        }
+      }
+    },
+    "deferred_depth": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "status",
+          "boundary"
+        ],
+        "properties": {
+          "id": {
+            "enum": [
+              "current-policy-and-indicator-detail",
+              "implementation-plan-action-detail",
+              "current-plan-annual-progress",
+              "fourth-to-fifth-plan-versioned-linkage",
+              "fiscal-detail-policy-project-linkage",
+              "policy-outcome-causal-and-cross-city-comparability"
+            ]
+          },
+          "status": {
+            "const": "deferred_not_required_for_v1_completion"
+          },
+          "policy_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "boundary": {
+            "type": "string",
+            "minLength": 20
+          }
+        }
+      }
+    },
+    "completion_boundary": {
+      "type": "string",
+      "minLength": 300
+    }
+  }
+}

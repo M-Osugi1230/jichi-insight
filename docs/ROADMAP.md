@@ -142,9 +142,9 @@ Canonical queue（2026-09-27同期）:
 
 - Reviewed reference: 2市（北九州市、福岡市）
 - Review queue eligible: 18市
-- Reviewed complete: 8市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市）
-- Review in progress: 1市（静岡市）
-- Pending record review: 9市
+- Reviewed complete: 9市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市）
+- Review in progress: 1市（浜松市）
+- Pending record review: 8市
 - Blocked source inventory: 0市
 
 状態の正本は `data/catalog/phase13_designated_city_review_queue.json` です。文書上の集計とmachine-readable queueが競合する場合はqueueを優先します。
@@ -364,13 +364,44 @@ Status: `complete`（2026-09-27）
 - `data/reviewed/niigata-city/fiscal_records.json`
 - `tests/test_phase13_niigata_completion.py`
 
-### Current work — Shizuoka record review
+### Milestone M10 — Shizuoka reviewed complete
+
+Status: `complete`（2026-09-27）
+
+静岡市は`declared_review_package_v1`としてReviewed completeです。
+
+- Current plan period: 2026〜2035年度
+- Plan layers: 3
+- Current policy fields: 9
+- Current policies: 45（aggregate）
+- Current implementation plan: 2026〜2030年度、毎年度改定
+- Implementation semantics: 施策ごとに成果指標、取組名・内容・事業費・担当課
+- Current fifth-plan annual progress: 0（not_yet_available）
+- Historical progress route preserved: 第4次総2024年度評価
+- FY2026 general-account initial budget: 403,500,000,000円
+- FY2024 general-account settlement: 歳入387,089,852,000円 / 歳出376,221,432,000円
+- Fiscal top-line records: 3
+
+第5次総の年度実績がまだ公表されていないため、存在しないResultを推測で作らず、旧第4次総2024評価をcurrent actualへ流用しません。45政策・成果指標・実施計画取組の個票完全構造化、第5次総の将来年度実績、第4次総→第5次総のversioned linkage、個別財政接続は`deferred_depth`として明示します。
+
+正本:
+
+- `data/catalog/shizuoka_phase13_completion.json`
+- `schemas/shizuoka_phase13_completion.schema.json`
+- `data/catalog/shizuoka_phase13_policy_review_manifest.json`
+- `data/catalog/shizuoka_current_policy_structure.json`
+- `data/catalog/shizuoka_current_progress_availability.json`
+- `data/reviewed/shizuoka-city/plan_review.json`
+- `data/reviewed/shizuoka-city/fiscal_records.json`
+- `tests/test_phase13_shizuoka_completion.py`
+
+### Current work — Hamamatsu record review
 
 Status: `in_progress`
 
-新潟市のReviewed completionにより、Canonical queueの次対象は静岡市（221007）です。Phase 12で確定した公式Source Inventoryを起点に、現行計画identity、実施・進行管理層、成果指標、財政、version boundaryをEvidence付きでレビューします。
+静岡市のReviewed completionにより、Canonical queueの次対象は浜松市（221309）です。Phase 12で確定した公式Source Inventoryを起点に、現行計画identity、実施・進行管理層、成果指標、財政、version boundaryをEvidence付きでレビューします。
 
-Phase 13では、公式一次資料・version・期間・財政state・評価主体を分離し、未公開Evidenceを推測補完しません。Schema、Evidence coverage、回帰テストを通過するまで市単位のPhase 13完了を宣言しません。
+公式一次資料・version・期間・財政state・評価主体を分離し、未公開Evidenceを推測補完しません。Schema、Evidence coverage、回帰テストを通過するまで市単位のPhase 13完了を宣言しません。
 
 正本:
 
@@ -382,7 +413,7 @@ Phase 13では、公式一次資料・version・期間・財政state・評価主
 
 ## After Phase 13
 
-1. 静岡市をReviewed completeへ進め、その後の9市を順次Reviewed到達深度まで処理し、全20政令指定都市の市レベル基盤を完成させる
+1. 浜松市をReviewed completeへ進め、その後の8市を順次Reviewed到達深度まで処理し、全20政令指定都市の市レベル基盤を完成させる
 2. 中核市・県庁所在地
 3. その他市区町村
 4. 選挙・候補者比較
