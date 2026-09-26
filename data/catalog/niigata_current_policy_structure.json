@@ -1,0 +1,214 @@
+{
+  "id": "niigata-current-policy-structure-2030",
+  "phase": 13,
+  "official_code": "151009",
+  "name_ja": "新潟市",
+  "plan_period": "2023年度～2030年度",
+  "implementation_plan_period": "2023年度～2026年度",
+  "current_plan_source_id": "niigata-comprehensive-plan-2030",
+  "current_implementation_source_id": "niigata-first-implementation-plan-2026-revision",
+  "review_status": "reviewed_complete_declared_structure_identity",
+  "hierarchy": {
+    "plan_layer_count": 3,
+    "field_count": 8,
+    "policy_count": 16,
+    "measure_count": 45,
+    "priority_strategy_count": 10,
+    "sustainable_governance_pillar_count": 3,
+    "overall_indicator_count": 4
+  },
+  "plan_layers": [
+    "基本構想",
+    "基本計画",
+    "実施計画"
+  ],
+  "fields": [
+    {
+      "field_code": "1",
+      "field_name": "市民活躍",
+      "policies": [
+        {
+          "policy_code": "1",
+          "policy_name": "誰もが個性と能力を発揮し活躍できるまちづくりの推進"
+        }
+      ]
+    },
+    {
+      "field_code": "2",
+      "field_name": "文化・スポーツ",
+      "policies": [
+        {
+          "policy_code": "2",
+          "policy_name": "文化芸術の発展・継承による心豊かな暮らしの充実"
+        },
+        {
+          "policy_code": "3",
+          "policy_name": "スポーツによる活力の創出"
+        }
+      ]
+    },
+    {
+      "field_code": "3",
+      "field_name": "子育て・教育",
+      "policies": [
+        {
+          "policy_code": "4",
+          "policy_name": "結婚・出産・子育ての希望がかない、子どもが笑顔で健やかに育つ社会の実現"
+        },
+        {
+          "policy_code": "5",
+          "policy_name": "学・社・民の融合による人づくり、地域づくり、学校づくりの推進"
+        }
+      ]
+    },
+    {
+      "field_code": "4",
+      "field_name": "健康・福祉",
+      "policies": [
+        {
+          "policy_code": "6",
+          "policy_name": "生涯にわたる健康で安心な暮らしの実現"
+        },
+        {
+          "policy_code": "7",
+          "policy_name": "自分らしくいきいきと安心して心豊かに暮らせる地域共生社会の実現"
+        }
+      ]
+    },
+    {
+      "field_code": "5",
+      "field_name": "産業・交流",
+      "policies": [
+        {
+          "policy_code": "8",
+          "policy_name": "地域経済に活力を生み出す産業の振興と雇用の創出"
+        },
+        {
+          "policy_code": "9",
+          "policy_name": "都市と田園の調和を活かした持続可能な農林水産業の実現"
+        },
+        {
+          "policy_code": "10",
+          "policy_name": "魅力と拠点性を活かした交流の促進"
+        },
+        {
+          "policy_code": "11",
+          "policy_name": "新潟暮らしの魅力発信と移住・定住の促進"
+        }
+      ]
+    },
+    {
+      "field_code": "6",
+      "field_name": "安心・安全",
+      "policies": [
+        {
+          "policy_code": "12",
+          "policy_name": "市民生活の安心・安全の確保"
+        },
+        {
+          "policy_code": "13",
+          "policy_name": "災害に強い地域づくりと消防・救急体制の充実"
+        }
+      ]
+    },
+    {
+      "field_code": "7",
+      "field_name": "まちづくり・インフラ",
+      "policies": [
+        {
+          "policy_code": "14",
+          "policy_name": "誰もが暮らしやすく、持続的に発展するまちづくりの推進"
+        },
+        {
+          "policy_code": "15",
+          "policy_name": "安心・安全で持続可能なインフラの整備"
+        }
+      ]
+    },
+    {
+      "field_code": "8",
+      "field_name": "環境",
+      "policies": [
+        {
+          "policy_code": "16",
+          "policy_name": "将来世代に向けた豊かな自然と生活環境の保全"
+        }
+      ]
+    }
+  ],
+  "priority_strategies": [
+    {
+      "strategy_code": "1",
+      "strategy_name": "都市機能の充実と拠点性の向上"
+    },
+    {
+      "strategy_code": "2",
+      "strategy_name": "地域企業の経営力強化、新たなビジネスや成長産業の創出・育成"
+    },
+    {
+      "strategy_code": "3",
+      "strategy_name": "豊富な田園資源を活かした儲かる農業の実現"
+    },
+    {
+      "strategy_code": "4",
+      "strategy_name": "魅力と拠点性を活かした交流人口の拡大"
+    },
+    {
+      "strategy_code": "5",
+      "strategy_name": "新潟暮らしの魅力発信と多様な支援による移住・定住の促進"
+    },
+    {
+      "strategy_code": "6",
+      "strategy_name": "誰もが個性と能力を発揮しながら、心豊かに暮らせる社会の実現"
+    },
+    {
+      "strategy_code": "7",
+      "strategy_name": "子どもと子育てにやさしいまちづくりと新潟の将来を担う人材の育成"
+    },
+    {
+      "strategy_code": "8",
+      "strategy_name": "仕事と生活の調和（ワーク・ライフ・バランス）の実現"
+    },
+    {
+      "strategy_code": "9",
+      "strategy_name": "脱炭素・循環型社会の実現"
+    },
+    {
+      "strategy_code": "10",
+      "strategy_name": "安心・安全で災害に強いまちづくり"
+    }
+  ],
+  "sustainable_governance_pillars": [
+    "市民から信頼される持続可能な行政運営",
+    "市政の基礎となる持続可能な財政運営",
+    "多様な主体との連携・協働による新しい価値の創造"
+  ],
+  "overall_indicators": [
+    {
+      "indicator_code": "overall-1",
+      "indicator_name": "社会動態"
+    },
+    {
+      "indicator_code": "overall-2",
+      "indicator_name": "合計特殊出生率"
+    },
+    {
+      "indicator_code": "overall-3",
+      "indicator_name": "新潟市に住み続けたい市民の割合"
+    },
+    {
+      "indicator_code": "overall-4",
+      "indicator_name": "将来世代のことも大切にした持続可能なまちづくりが進んでいると思う市民の割合"
+    }
+  ],
+  "indicator_semantics": {
+    "overall_indicator": "目指す都市像の実現における進捗を測る総合計画の最上位指標",
+    "policy_indicator": "目指す都市像の実現や総合指標の目標達成を図るうえで各分野において特に重視する指標",
+    "action_indicator": "政策・施策を実現するための具体的な取組において特に重視する指標"
+  },
+  "evidence_locations": [
+    "前期実施計画（令和8年3月改定）PDF p.2-4",
+    "政策・施策の全体像 PDF p.2-4"
+  ],
+  "quality_boundary": "8分野・16政策・45施策・10重点戦略・3持続可能な行財政運営柱・4総合指標を公式構造identityとしてReviewed化する。45施策個別identity、前期実施計画の主な事業identity、取組指標個票は追加depthとし、aggregate countから個票を推測しない。"
+}

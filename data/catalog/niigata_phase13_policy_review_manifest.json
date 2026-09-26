@@ -1,0 +1,139 @@
+{
+  "id": "niigata-phase13-policy-review-manifest",
+  "phase": 13,
+  "official_code": "151009",
+  "name_ja": "新潟市",
+  "status": "review_in_progress",
+  "reviewed_at": "2026-09-27",
+  "source_catalog_path": "data/catalog/niigata_phase13_sources.json",
+  "plan_review_path": "data/reviewed/niigata-city/plan_review.json",
+  "policy_structure_path": "data/catalog/niigata_current_policy_structure.json",
+  "current_progress_review_path": "data/catalog/niigata_current_progress_review_summary.json",
+  "fiscal_records_path": "data/reviewed/niigata-city/fiscal_records.json",
+  "fiscal_evidence_path": "data/reviewed/niigata-city/evidence_packets.json",
+  "reviewed_facts": [
+    {
+      "id": "niigata-current-plan-period",
+      "layer": "current_plan",
+      "field": "plan_period",
+      "value": "2023年度～2030年度",
+      "source_id": "niigata-comprehensive-plan-2030",
+      "review_status": "reviewed",
+      "interpretation_boundary": "2026年度中間見直し素案は現行採択済み計画と別draft version。"
+    },
+    {
+      "id": "niigata-current-policy-structure",
+      "layer": "current_plan",
+      "field": "policy_structure",
+      "field_count": 8,
+      "policy_count": 16,
+      "measure_count": 45,
+      "priority_strategy_count": 10,
+      "sustainable_governance_pillar_count": 3,
+      "source_id": "niigata-first-implementation-plan-2026-revision",
+      "review_status": "reviewed_declared_structure_identity",
+      "interpretation_boundary": "45施策個別identity・主な事業個票は追加depth。aggregate countから推測しない。"
+    },
+    {
+      "id": "niigata-current-implementation-plan",
+      "layer": "implementation_plan",
+      "field": "implementation_plan_period",
+      "value": "2023年度～2026年度",
+      "source_id": "niigata-first-implementation-plan-2026-revision",
+      "review_status": "reviewed_current_revision",
+      "interpretation_boundary": "2026年3月改定版。後期実施計画2027～2030は別version。"
+    },
+    {
+      "id": "niigata-current-overall-indicators",
+      "layer": "current_plan_progress",
+      "field": "overall_indicator_results",
+      "indicator_count": 4,
+      "reviewed_result_count": 4,
+      "source_reported_evaluation_counts": {
+        "A": 2,
+        "B": 1,
+        "C": 1,
+        "hold": 0
+      },
+      "source_id": "niigata-progress-2025-summary-pdf",
+      "review_status": "reviewed_source_reported_top_level_results",
+      "interpretation_boundary": "A/B/Cは新潟市自身の進捗評価。Jichi Insight独自の政策達成判定へ変換しない。"
+    },
+    {
+      "id": "niigata-current-policy-indicator-universe",
+      "layer": "current_plan_progress",
+      "field": "policy_indicator_universe",
+      "value": 87,
+      "unit": "policy_indicators",
+      "source_id": "niigata-progress-2025-policy-indicators-pdf",
+      "review_status": "reviewed_universe_count",
+      "interpretation_boundary": "政策指標1～87の公式universeを確認。87件個票の完全構造化は追加depth。"
+    },
+    {
+      "id": "niigata-current-accountability-roles",
+      "layer": "accountability",
+      "field": "evaluation_and_opinion_roles",
+      "value": 3,
+      "unit": "roles",
+      "roles": [
+        "municipal_progress_reporting",
+        "external_expert_review",
+        "citizen_indicator_survey"
+      ],
+      "source_id": "niigata-progress-2025-summary-pdf",
+      "review_status": "reviewed_role_separation",
+      "interpretation_boundary": "行政A/B/C評価・有識者意見・市民アンケートを別Evidence roleとして保持し統合しない。"
+    },
+    {
+      "id": "niigata-midterm-review-draft",
+      "layer": "plan_revision_draft",
+      "field": "adoption_state",
+      "value": "draft_not_adopted",
+      "source_id": "niigata-midterm-review-draft-2026",
+      "review_status": "reviewed_draft_boundary",
+      "interpretation_boundary": "中間見直し素案の内容を現行計画の確定値へ自動昇格しない。"
+    },
+    {
+      "id": "niigata-2026-general-account-initial-budget",
+      "layer": "fiscal",
+      "field": "general_account_initial_budget",
+      "fiscal_year": 2026,
+      "value": 442500000000,
+      "unit": "yen",
+      "source_id": "niigata-budget-2026-general-account-bill",
+      "review_status": "reviewed",
+      "interpretation_boundary": "当初予算。補正・執行・決算とは別state。"
+    },
+    {
+      "id": "niigata-2024-general-account-settlement-revenue",
+      "layer": "fiscal",
+      "field": "general_account_settlement_revenue",
+      "fiscal_year": 2024,
+      "value": 463544553000,
+      "unit": "yen",
+      "source_id": "niigata-settlement-2024-council-record",
+      "review_status": "reviewed",
+      "interpretation_boundary": "決算歳入。予算・特別会計・収支とは別state。"
+    },
+    {
+      "id": "niigata-2024-general-account-settlement-expenditure",
+      "layer": "fiscal",
+      "field": "general_account_settlement_expenditure",
+      "fiscal_year": 2024,
+      "value": 452133373000,
+      "unit": "yen",
+      "source_id": "niigata-settlement-2024-council-record",
+      "review_status": "reviewed",
+      "interpretation_boundary": "決算歳出。予算・特別会計・実質収支とは別state。"
+    }
+  ],
+  "remaining_work": [
+    "45施策の個別identity、成果指標、現状値、目標値、年度実績、課題・今後の展開を追加depthとしてレビューする。",
+    "政策指標87件と取組指標全件を、指標定義・単位・測定年・目標年・担当部まで個票化する。",
+    "前期実施計画の主な事業identity、担当課、事業量、年度別進捗を追加depthとして構造化する。",
+    "2026年度中間見直し素案は正式決定版が公表されるまでdraftのまま保持し、現行計画を上書きしない。",
+    "2027～2030年度後期実施計画は正式公表後に別versionとして接続する。",
+    "個別政策・施策・事業と予算、補正、執行、決算、契約、補助金の接続は公式識別子・名称・所管・年度を確認できたものだけ昇格する。"
+  ],
+  "quality_boundary": "Niigata Phase 13 v1 reviews the adopted 2023-2030 comprehensive-plan identity, current March-2026 revision of the 2023-2026 first implementation plan, declared 8-field / 16-policy / 45-measure / 10-priority-strategy structure, three sustainable-governance pillars, four overall indicators with FY2025 source-reported results, the official 87-policy-indicator universe, separate municipal / external-expert / citizen-survey accountability roles, the 2026 midterm-review draft boundary, and three general-account fiscal top lines. The draft is not promoted to the adopted plan. Individual measure, policy-indicator, action-indicator, and project records are not inferred from aggregate coverage. No independent policy-achievement judgment, causal attribution, or cross-city comparability is inferred."
+}

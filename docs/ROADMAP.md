@@ -142,9 +142,9 @@ Canonical queue（2026-09-27同期）:
 
 - Reviewed reference: 2市（北九州市、福岡市）
 - Review queue eligible: 18市
-- Reviewed complete: 7市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市）
-- Review in progress: 1市（新潟市）
-- Pending record review: 10市
+- Reviewed complete: 8市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市）
+- Review in progress: 1市（静岡市）
+- Pending record review: 9市
 - Blocked source inventory: 0市
 
 状態の正本は `data/catalog/phase13_designated_city_review_queue.json` です。文書上の集計とmachine-readable queueが競合する場合はqueueを優先します。
@@ -331,11 +331,44 @@ Status: `complete`（2026-09-27）
 - `data/reviewed/sagamihara-city/fiscal_records.json`
 - `tests/test_phase13_sagamihara_completion.py`
 
-### Current work — Niigata record review
+### Milestone M9 — Niigata reviewed complete
+
+Status: `complete`（2026-09-27）
+
+新潟市は`declared_review_package_v1`としてReviewed completeです。
+
+- Current plan period: 2023〜2030年度
+- Current fields: 8
+- Current policies: 16
+- Current measures: 45（aggregate）
+- Priority strategies: 10
+- Sustainable-governance pillars: 3
+- Overall indicators: 4
+- FY2025 overall-indicator results reviewed: 4
+- Policy-indicator universe: 87
+- Accountability lanes: 行政進捗評価・外部有識者・市民アンケート
+- FY2026 general-account initial budget: 442,500,000,000円
+- FY2024 general-account settlement: 歳入463,544,553,000円 / 歳出452,133,373,000円
+- Fiscal top-line records: 3
+
+4総合指標のA/B/Cは新潟市によるsource-reported evaluationとして保持し、Jichi Insight独自評価へ変換しません。2026年度中間見直し素案はdraft versionのまま隔離します。45施策、87政策指標、取組指標、主な事業の個票完全構造化、正式な中間見直し、2027〜2030年度後期実施計画、個別財政接続は`deferred_depth`として明示します。
+
+正本:
+
+- `data/catalog/niigata_phase13_completion.json`
+- `schemas/niigata_phase13_completion.schema.json`
+- `data/catalog/niigata_phase13_policy_review_manifest.json`
+- `data/catalog/niigata_current_policy_structure.json`
+- `data/catalog/niigata_current_progress_review_summary.json`
+- `data/reviewed/niigata-city/plan_review.json`
+- `data/reviewed/niigata-city/fiscal_records.json`
+- `tests/test_phase13_niigata_completion.py`
+
+### Current work — Shizuoka record review
 
 Status: `in_progress`
 
-相模原市のReviewed completionにより、Canonical queueの次対象は新潟市（151009）です。Phase 12で確定した公式Source Inventoryを起点に、現行計画identity、実施・進行管理層、成果指標、財政、旧現version boundaryをEvidence付きでレビューします。
+新潟市のReviewed completionにより、Canonical queueの次対象は静岡市（221007）です。Phase 12で確定した公式Source Inventoryを起点に、現行計画identity、実施・進行管理層、成果指標、財政、version boundaryをEvidence付きでレビューします。
 
 Phase 13では、公式一次資料・version・期間・財政state・評価主体を分離し、未公開Evidenceを推測補完しません。Schema、Evidence coverage、回帰テストを通過するまで市単位のPhase 13完了を宣言しません。
 
@@ -349,7 +382,7 @@ Phase 13では、公式一次資料・version・期間・財政state・評価主
 
 ## After Phase 13
 
-1. 新潟市をReviewed completeへ進め、その後の10市を順次Reviewed到達深度まで処理し、全20政令指定都市の市レベル基盤を完成させる
+1. 静岡市をReviewed completeへ進め、その後の9市を順次Reviewed到達深度まで処理し、全20政令指定都市の市レベル基盤を完成させる
 2. 中核市・県庁所在地
 3. その他市区町村
 4. 選挙・候補者比較

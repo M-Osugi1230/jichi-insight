@@ -1,0 +1,92 @@
+{
+  "id": "niigata-current-progress-review-summary",
+  "phase": 13,
+  "official_code": "151009",
+  "name_ja": "新潟市",
+  "review_status": "reviewed_current_progress_method_and_top_level_results",
+  "source_ids": [
+    "niigata-progress-2025-summary-pdf",
+    "niigata-progress-2025-policy-indicators-pdf",
+    "niigata-progress-2025-action-indicators-pdf",
+    "niigata-expert-review-2026"
+  ],
+  "reporting_year": 2025,
+  "plan_year_number": 3,
+  "indicator_universe": {
+    "overall_indicator_count": 4,
+    "policy_indicator_count": 87,
+    "action_indicator_publication_status": "published_complete_table_not_structured_at_v1"
+  },
+  "evaluation_scale": {
+    "A": "順調：策定時点の値を維持または改善し、目標（目安ライン）に達した",
+    "B": "概ね順調：策定時点の値を維持または改善したが、目標（目安ライン）に達しなかった",
+    "C": "低調：策定時点の値に及ばなかった",
+    "-": "評価保留：隔年調査などで値が更新されていない等"
+  },
+  "overall_indicator_results": [
+    {
+      "indicator_code": "overall-1",
+      "indicator_name": "社会動態",
+      "guide_value": "143人転出超過",
+      "guide_reference_period": "令和7年",
+      "actual_value": "416人転入超過",
+      "actual_reference_period": "令和7年",
+      "source_reported_evaluation": "A"
+    },
+    {
+      "indicator_code": "overall-2",
+      "indicator_name": "合計特殊出生率",
+      "guide_value": 1.35,
+      "guide_reference_period": "令和6年",
+      "actual_value": 1.13,
+      "actual_reference_period": "令和6年",
+      "source_reported_evaluation": "C"
+    },
+    {
+      "indicator_code": "overall-3",
+      "indicator_name": "新潟市に住み続けたい市民の割合",
+      "guide_value": 89.6,
+      "unit": "percent",
+      "guide_reference_period": "令和7年度",
+      "actual_value": 90.9,
+      "actual_reference_period": "令和7年度",
+      "source_reported_evaluation": "A"
+    },
+    {
+      "indicator_code": "overall-4",
+      "indicator_name": "将来世代のことも大切にした持続可能なまちづくりが進んでいると思う市民の割合",
+      "guide_value": 32.5,
+      "unit": "percent",
+      "guide_reference_period": "令和7年度",
+      "actual_value": 25.5,
+      "actual_reference_period": "令和7年度",
+      "source_reported_evaluation": "B"
+    }
+  ],
+  "accountability_roles": [
+    {
+      "id": "municipal_progress_reporting",
+      "actor": "新潟市",
+      "role": "source_reported_progress_evaluation",
+      "boundary": "総合指標・政策指標・取組指標をA/B/C/評価保留で進捗評価し、主な取組と実績、課題と今後の展開を公表する。Jichi Insight独自評価ではない。"
+    },
+    {
+      "id": "external_expert_review",
+      "actor": "新潟市総合計画2030有識者会議",
+      "role": "external_opinion_and_effect_review",
+      "boundary": "主に10重点戦略について、産業界・行政機関・教育機関・金融機関・労働団体・メディア・士業・デジタル等の有識者から意見を聴取する。市のA/B/C評価と同一視しない。"
+    },
+    {
+      "id": "citizen_indicator_survey",
+      "actor": "市民アンケート回答者",
+      "role": "citizen_perception_measurement",
+      "boundary": "一部成果指標の測定元。行政自己評価・有識者意見とは別Evidence roleとして保持する。"
+    }
+  ],
+  "evidence_locations": [
+    "令和7年度進捗状況 資料1 PDF p.6-12",
+    "令和7年度政策指標進捗状況 PDF 政策指標1～87",
+    "令和7年度取組指標一覧表 PDF 全29頁"
+  ],
+  "quality_boundary": "4総合指標の実績とA/B/Cは新潟市によるsource-reported evaluationとして保持する。政策指標87件は公式universe countをReviewed化するが、87件個票と取組指標全件の完全構造化は追加depth。行政評価、有識者意見、市民アンケートを統合スコアへ変換せず、因果効果や他都市比較を推測しない。"
+}

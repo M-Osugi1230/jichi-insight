@@ -1,0 +1,88 @@
+{
+  "id": "phase13-niigata-plan-review",
+  "official_code": "151009",
+  "name_ja": "新潟市",
+  "review_status": "review_in_progress_structure_progress_and_revision_boundaries_reviewed",
+  "reviewed_at": "2026-09-27",
+  "records": [
+    {
+      "id": "niigata-current-plan-period",
+      "evidence_role": "current_plan_identity",
+      "title": "新潟市総合計画2030 計画期間",
+      "statement": "現行基本構想・基本計画の計画期間は2023年度から2030年度までの8年間。",
+      "value": "2023年度～2030年度",
+      "source_id": "niigata-comprehensive-plan-2030",
+      "evidence_location": "公式総合計画ページ『計画の期間』",
+      "decision": "accepted",
+      "review_note": "2026年度に中間見直しを行う予定とされ、素案は別draft versionとして保持する。"
+    },
+    {
+      "id": "niigata-current-plan-structure",
+      "evidence_role": "current_policy_structure",
+      "title": "8分野・16政策・45施策・10重点戦略",
+      "statement": "現行計画は8分野16政策で構成され、前期実施計画は基本計画で示した45施策ごとに具体的取組を定め、10重点戦略を一つの政策パッケージとして位置付ける。",
+      "value": 16,
+      "unit": "policies",
+      "field_count": 8,
+      "measure_count": 45,
+      "priority_strategy_count": 10,
+      "overall_indicator_count": 4,
+      "sustainable_governance_pillar_count": 3,
+      "source_id": "niigata-first-implementation-plan-2026-revision",
+      "evidence_location": "前期実施計画（令和8年3月改定）PDF p.2-4、p.8",
+      "reviewed_data_path": "data/catalog/niigata_current_policy_structure.json",
+      "decision": "accepted_complete_declared_structure_identity",
+      "review_note": "45施策個別identityと主な事業identity全件は追加depth。aggregate countから個票を推測しない。"
+    },
+    {
+      "id": "niigata-current-implementation-plan-version",
+      "evidence_role": "current_implementation_plan",
+      "title": "前期実施計画（令和8年3月改定）",
+      "statement": "前期実施計画は2023年度から2026年度までの4年間で、2026年3月改定版が現行の前期実施計画。",
+      "value": "2023年度～2026年度",
+      "source_id": "niigata-first-implementation-plan-2026-revision",
+      "evidence_location": "前期実施計画 PDF表紙・p.3『計画期間』",
+      "decision": "accepted_current_revision",
+      "review_note": "後期実施計画は2027～2030年度の別versionとして扱う。"
+    },
+    {
+      "id": "niigata-current-progress-method",
+      "evidence_role": "current_plan_progress_methodology",
+      "title": "令和7年度 総合計画2030進捗状況",
+      "statement": "総合計画は3層構造の成果指標で毎年度進捗管理し、A/B/C/評価保留の市評価を付して公表する。",
+      "value": 87,
+      "unit": "policy_indicators",
+      "overall_indicator_count": 4,
+      "source_id": "niigata-progress-2025-summary-pdf",
+      "evidence_location": "令和7年度進捗状況 資料1 PDF p.6-12、政策指標資料 政策指標1～87",
+      "reviewed_data_path": "data/catalog/niigata_current_progress_review_summary.json",
+      "decision": "accepted_method_scope_and_top_level_results",
+      "review_note": "4総合指標はsource-reported A/B/Cを保持。政策指標87件・取組指標全件の個票構造化は追加depth。"
+    },
+    {
+      "id": "niigata-current-external-review-route",
+      "evidence_role": "accountability",
+      "title": "新潟市総合計画2030有識者会議",
+      "statement": "外部有識者会議は主に10重点戦略について意見を聴取し、施策の効果検証に用いられる。",
+      "value": 10,
+      "unit": "priority_strategies",
+      "source_id": "niigata-progress-2025-summary-pdf",
+      "evidence_location": "令和7年度進捗状況 資料1 PDF p.8-10『有識者会議について』",
+      "decision": "accepted_external_accountability_route",
+      "review_note": "行政のA/B/C自己評価、市民アンケート、有識者意見を別Evidence roleとして保持する。"
+    },
+    {
+      "id": "niigata-midterm-review-draft-boundary",
+      "evidence_role": "plan_revision_draft",
+      "title": "新潟市総合計画2030 中間見直し素案",
+      "statement": "2026年度の中間見直し素案は公表されているが、現行採択済み計画とは別draft versionとして扱う。",
+      "value": "draft_not_adopted",
+      "source_id": "niigata-midterm-review-draft-2026",
+      "evidence_location": "中間見直し素案パブリックコメント公式ページ",
+      "decision": "accepted_as_draft_boundary_only",
+      "review_note": "素案の政策・指標変更を現行計画の確定値へ自動昇格しない。"
+    }
+  ],
+  "quality_boundary": "現行2023～2030計画、2023～2026前期実施計画の2026年3月改定、2025年度進捗、外部有識者会議、2026中間見直し素案をversion/evidence roleごとに分離してReviewed化した。45施策・87政策指標・取組指標・主な事業の個票全件、後期実施計画、中間見直し確定版、財政・契約接続、因果効果、独自政策達成度、他都市比較可能性は別レビュー単位。",
+  "next_action": "Add FY2026 initial-budget and FY2024 settlement top lines, then define Niigata's declared v1 completion package and deferred depth."
+}

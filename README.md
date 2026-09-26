@@ -12,9 +12,9 @@ Jichi Insight（自治体インサイト）は、自治体が公開する政策�
 - Phase 11個票基盤: 47都道府県・15,327レコード
 - 政令指定都市 Source Inventory: 20 / 20
 - Phase 13 Reviewed reference: 2市（北九州市、福岡市）
-- Phase 13 Reviewed complete: 6市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市）
-- Phase 13 Review in progress: 1市（相模原市）
-- Phase 13 Pending record review: 11市
+- Phase 13 Reviewed complete: 8市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市）
+- Phase 13 Review in progress: 1市（静岡市）
+- Phase 13 Pending record review: 9市
 - 千葉市現行計画: 189 / 189事業identity、406 work itemsをstructured化済み
 - 千葉市旧計画: 360 / 360事業identity、再掲68 / 68を一次identityへ解決済み
 - 千葉市Versioned Linkage: 構造的一致60関係＋公式PDF手動確認6関係、計66関係をReviewed continuedとして昇格
@@ -153,12 +153,12 @@ Status: `in_progress`
 現在のCanonical queue:
 
 - Reviewed reference: 2市（北九州市、福岡市）
-- Reviewed complete: 7市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市）
-- Review in progress: 1市（新潟市）
-- Pending record review: 10市
+- Reviewed complete: 8市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市）
+- Review in progress: 1市（静岡市）
+- Pending record review: 9市
 - Blocked source inventory: 0市
 
-相模原市は`declared_review_package_v1`としてReviewed completeです。現行基本計画2020〜2027年度、6つの「目指すまちの姿」・47施策という進行管理対象、最新2026〜2028年度ローリング推進プログラム、少子化対策・雇用促進対策・中山間地域対策の3重点テーマ、2020〜2024年度を対象とする市の1次評価・総合計画審議会の2次評価・市民アンケートの役割分離、2026年度一般会計当初予算405,500,000,000円、2024年度一般会計決算の歳入359,794,590,156円・歳出349,624,530,765円をレビュー済みです。47施策個別結果、推進プログラム個別事業、市民アンケート詳細、2028年度をまたぐversion transition、個別財政接続は推測せず`deferred_depth`として保持します。現在のPhase 13作業対象は新潟市です。
+新潟市は`declared_review_package_v1`としてReviewed completeです。現行2023〜2030年度の総合計画、8分野・16政策・45施策・10重点戦略・持続可能な行財政運営3本柱、4総合指標、2023〜2026年度前期実施計画の2026年3月改定、2025年度進捗における4総合指標の実績と新潟市によるA/B/C評価、政策指標1〜87の公式universe、行政評価・外部有識者・市民アンケートの役割分離、2026年度一般会計当初予算442,500,000,000円、2024年度一般会計決算の歳入463,544,553,000円・歳出452,133,373,000円をレビュー済みです。中間見直し素案はdraftのまま隔離し、45施策・87政策指標・取組指標・主な事業の個票完全構造化、後期実施計画、個別財政接続は`deferred_depth`として保持します。現在のPhase 13作業対象は静岡市です。
 
 正本:
 

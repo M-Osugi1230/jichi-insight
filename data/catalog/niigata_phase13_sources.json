@@ -1,0 +1,156 @@
+{
+  "id": "niigata-phase13-sources",
+  "phase": 13,
+  "official_code": "151009",
+  "name_ja": "新潟市",
+  "reviewed_at": "2026-09-27",
+  "records": [
+    {
+      "id": "niigata-city-home",
+      "layer": "municipality_identity",
+      "title": "新潟市公式ウェブサイト",
+      "organization": "新潟市",
+      "url": "https://www.city.niigata.lg.jp/",
+      "source_kind": "html",
+      "review_status": "reviewed_official_identity",
+      "confidence": "high",
+      "boundary": "自治体identityと公式ドメイン確認用。政策・財政値は専用公式資料から取得する。"
+    },
+    {
+      "id": "niigata-comprehensive-plan-2030",
+      "layer": "current_plan",
+      "title": "新潟市総合計画2030",
+      "organization": "新潟市",
+      "url": "https://www.city.niigata.lg.jp/shisei/seisaku/seisaku/sogo/sogokeikaku2030/index.html",
+      "source_kind": "html",
+      "review_status": "reviewed_current_plan_identity",
+      "confidence": "high",
+      "boundary": "2023～2030の現行最上位計画、3層構成、前期・後期実施計画、毎年度進捗管理の公式入口。"
+    },
+    {
+      "id": "niigata-current-policy-structure-pdf",
+      "layer": "current_plan_structure",
+      "title": "新潟市総合計画2030 政策・施策の全体像",
+      "organization": "新潟市",
+      "url": "https://www.city.niigata.lg.jp/shisei/seisaku/seisaku/sogo/sogokeikaku2030/index.files/bun_zentaizou.pdf",
+      "source_kind": "pdf",
+      "review_status": "reviewed_current_structure_and_overall_indicators",
+      "confidence": "high",
+      "boundary": "3層成果指標、4総合指標、基本計画の政策・施策構造を確認。"
+    },
+    {
+      "id": "niigata-first-implementation-plan-2026-revision",
+      "layer": "implementation_plan",
+      "title": "新潟市総合計画2030 前期実施計画（令和8年3月改定）",
+      "organization": "新潟市",
+      "url": "https://www.city.niigata.lg.jp/shisei/seisaku/seisaku/sogo/sogokeikaku2030/index.files/R8.3zenkijikkei.pdf",
+      "source_kind": "pdf",
+      "review_status": "reviewed_current_implementation_plan_revision",
+      "confidence": "high",
+      "boundary": "2023～2026の前期実施計画。8分野・16政策・45施策・10重点戦略と具体的取組/取組指標の構造を確認する。個別主な事業identity全件は追加depth。"
+    },
+    {
+      "id": "niigata-progress-2025",
+      "layer": "current_plan_progress",
+      "title": "令和7年度の進捗状況について",
+      "organization": "新潟市",
+      "url": "https://www.city.niigata.lg.jp/shisei/seisaku/seisaku/sogo/sogokeikaku2030/shinchoku/R7_shinchoku.html",
+      "source_kind": "html",
+      "review_status": "reviewed_current_progress_landing",
+      "confidence": "high",
+      "boundary": "2025年度の最新公表進捗。総合指標・政策指標・取組指標・主な取組と実績・課題/今後の展開を別Evidence roleで扱う。"
+    },
+    {
+      "id": "niigata-progress-2025-summary-pdf",
+      "layer": "current_plan_progress",
+      "title": "新潟市総合計画2030 令和7年度 進捗状況について",
+      "organization": "新潟市",
+      "url": "https://www.city.niigata.lg.jp/shisei/seisaku/seisaku/sogo/sogokeikaku2030/shinchoku/R7_shinchoku.files/R7_shiryo1.pdf",
+      "source_kind": "pdf",
+      "review_status": "reviewed_current_progress_summary",
+      "confidence": "high",
+      "boundary": "4総合指標の実績・市によるA/B/C評価、有識者会議の位置付けを確認。source-reported evaluationとして保持する。"
+    },
+    {
+      "id": "niigata-progress-2025-policy-indicators-pdf",
+      "layer": "current_plan_progress",
+      "title": "新潟市総合計画2030 令和7年度 政策指標の進捗状況",
+      "organization": "新潟市",
+      "url": "https://www.city.niigata.lg.jp/shisei/seisaku/seisaku/sogo/sogokeikaku2030/shinchoku/R7_shinchoku.files/R7_shiryo2.pdf",
+      "source_kind": "pdf",
+      "review_status": "reviewed_policy_indicator_universe",
+      "confidence": "high",
+      "boundary": "政策指標1～87の公式進捗資料。v1ではuniverse countと評価方法をReviewed化し、87件個票の完全構造化は追加depth。"
+    },
+    {
+      "id": "niigata-progress-2025-action-indicators-pdf",
+      "layer": "current_plan_progress",
+      "title": "新潟市総合計画2030 令和7年度 取組指標一覧表",
+      "organization": "新潟市",
+      "url": "https://www.city.niigata.lg.jp/shisei/seisaku/seisaku/sogo/sogokeikaku2030/shinchoku/R7_shinchoku.files/R7_shiryo3.pdf",
+      "source_kind": "pdf",
+      "review_status": "reviewed_action_indicator_publication",
+      "confidence": "high",
+      "boundary": "取組指標の年度実績・目標・市評価・担当部を確認可能。v1では公開層と意味をReviewed化し、個票全件抽出は追加depth。"
+    },
+    {
+      "id": "niigata-expert-review-2026",
+      "layer": "accountability",
+      "title": "令和8年度 新潟市総合計画2030有識者会議",
+      "organization": "新潟市",
+      "url": "https://www.city.niigata.lg.jp/shisei/seisaku/seisaku/sogo/sogokeikaku2030/2030yushikishakaigi/2026-1kaigi_kaisai.html",
+      "source_kind": "html",
+      "review_status": "reviewed_external_review_route",
+      "confidence": "high",
+      "boundary": "外部有識者が計画進捗・中間見直し等について意見交換するAccountability routeとして保持。行政自己評価と同一視しない。"
+    },
+    {
+      "id": "niigata-midterm-review-draft-2026",
+      "layer": "plan_revision_draft",
+      "title": "「新潟市総合計画2030」中間見直し素案",
+      "organization": "新潟市",
+      "url": "https://www.city.niigata.lg.jp/shisei/kocho/public/publiccomment/seisakukikakubu/sisakucyosei/sougou_minaoshi.html",
+      "source_kind": "html",
+      "review_status": "reviewed_draft_not_adopted",
+      "confidence": "high",
+      "boundary": "2026年の中間見直し素案。正式採択された現行計画へ自動昇格せず、draft versionとして隔離する。"
+    },
+    {
+      "id": "niigata-budget-2026-general-account-bill",
+      "layer": "budget",
+      "title": "令和8年度新潟市一般会計予算 議案第1号",
+      "organization": "新潟市",
+      "url": "https://www.city.niigata.lg.jp/shisei/zaimu/shigikai/2026.files/r8-2gian_shinnen.pdf",
+      "source_kind": "pdf",
+      "fiscal_year": 2026,
+      "review_status": "reviewed_general_account_initial_budget_exact_amount",
+      "confidence": "high",
+      "boundary": "歳入歳出予算総額442,500,000千円を確認。補正・執行・決算とは別state。"
+    },
+    {
+      "id": "niigata-budget-2026-council-summary",
+      "layer": "budget",
+      "title": "にいがた市議会だより 第113号 令和8年度予算",
+      "organization": "新潟市議会",
+      "url": "https://www.city.niigata.lg.jp/shigikai/index_gikaidayori/gikaidayori_R8/113go/pdf/113_1.pdf",
+      "source_kind": "pdf",
+      "fiscal_year": 2026,
+      "review_status": "reviewed_initial_budget_adoption_crosscheck",
+      "confidence": "high",
+      "boundary": "令和8年度一般会計当初予算4,425億円の議会側公表を確認。正確な千円単位額は議案第1号で保持する。"
+    },
+    {
+      "id": "niigata-settlement-2024-council-record",
+      "layer": "settlement",
+      "title": "令和6年度一般会計・8特別会計決算の認定",
+      "organization": "新潟市議会",
+      "url": "https://www.city.niigata.lg.jp/shigikai/index_gikaidayori/gikaidayori_R7/112go/shigikai_112_1.html",
+      "source_kind": "html",
+      "fiscal_year": 2024,
+      "review_status": "reviewed_general_account_settlement_exact_amounts",
+      "confidence": "high",
+      "boundary": "一般会計歳入4,635億4,455万3千円・歳出4,521億3,337万3千円を確認。予算、特別会計、形式収支等とは分離する。"
+    }
+  ],
+  "quality_boundary": "現行2023～2030計画、2023～2026前期実施計画、2025年度進捗、2026年度中間見直し素案、予算、決算をversion/evidence role/fiscal stageごとに分離する。市のA/B/C進捗評価・外部有識者意見・市民アンケート由来指標を相互に統合せず、Jichi Insight独自の政策達成評価へ変換しない。"
+}
