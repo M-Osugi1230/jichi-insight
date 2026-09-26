@@ -142,9 +142,9 @@ Canonical queue（2026-09-25同期）:
 
 - Reviewed reference: 2市（北九州市、福岡市）
 - Review queue eligible: 18市
-- Reviewed complete: 5市（札幌市、仙台市、さいたま市、千葉市、横浜市）
-- Review in progress: 1市（川崎市）
-- Pending record review: 12市
+- Reviewed complete: 6市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市）
+- Review in progress: 1市（相模原市）
+- Pending record review: 11市
 - Blocked source inventory: 0市
 
 状態の正本は `data/catalog/phase13_designated_city_review_queue.json` です。文書上の集計とmachine-readable queueが競合する場合はqueueを優先します。
@@ -270,13 +270,42 @@ Status: `complete`（2026-09-25）
 - `data/catalog/yokohama_prior_plan_final_review_summary.json`
 - `tests/test_phase13_yokohama_completion.py`
 
-### Current work — Kawasaki record review
+### Milestone M7 — Kawasaki reviewed complete
+
+Status: `complete`（2026-09-25）
+
+川崎市は`declared_review_package_v1`としてReviewed completeです。
+
+- Current basic policies: 5
+- Current policies: 18
+- Current measures: 48
+- Current administrative projects: 350（公式aggregate structure）
+- Priority theme: 1（少子高齢化・人口減少対策）
+- Priority initiative lanes: 5
+- Historical FY2024 evaluation: 74施策・572事務事業
+- Historical source-reported breakdown: 17件上回る、462件ほぼ達成、93件下回る、上回る又はほぼ達成83.8%
+- FY2026 general-account initial budget: 937,753,480,000円
+- FY2024 general-account settlement estimate: 歳入871,327,000,000円 / 歳出862,154,000,000円
+- Fiscal top-line records: 3
+
+350事務事業の個票identity、48施策の成果指標、現行2026〜2029計画の年度進捗、旧第3期572事業と現行第4期350事業のversioned linkage、個別事業と予算・契約・補助金の接続は`deferred_depth`として明示します。旧計画の17/462/93および83.8%は川崎市によるsource-reported evaluationであり、現行計画実績やJichi Insight独自の政策達成率へ変換しません。
+
+正本:
+
+- `data/catalog/kawasaki_phase13_completion.json`
+- `schemas/kawasaki_phase13_completion.schema.json`
+- `data/catalog/kawasaki_phase13_policy_review_manifest.json`
+- `data/catalog/kawasaki_current_policy_structure.json`
+- `data/catalog/kawasaki_prior_plan_2024_evaluation_summary.json`
+- `data/reviewed/kawasaki-city/plan_review.json`
+- `data/reviewed/kawasaki-city/fiscal_records.json`
+- `tests/test_phase13_kawasaki_completion.py`
+
+### Current work — Sagamihara record review
 
 Status: `in_progress`
 
-横浜市のReviewed completionにより、Canonical queueの次対象は川崎市（141305）です。Phase 12で確定した公式Source Inventoryから、現行計画identity、実施・進行管理層、指標、財政、旧現version boundaryを個票Evidenceへ展開します。
-
-未公開・未解決の年度実績等は、Phase 12のinventory coverageを再度partialへ戻すのではなく、Phase 13の該当レコードで明示的にblocked / not assessableとして扱います。これにより、公開時期を待つだけの資料のために全市のrecord reviewを停止せず、同時に推測補完もしません。
+川崎市のReviewed completionにより、Canonical queueの次対象は相模原市（141500）です。Phase 12で確定した公式Source Inventoryを起点に、現行計画identity、実施・進行管理層、成果指標、財政、旧現version boundaryをEvidence付きでレビューします。
 
 Phase 13では、以下を品質ゲートとして維持します。
 
@@ -285,7 +314,6 @@ Phase 13では、以下を品質ゲートとして維持します。
 - 予算案、成立予算、補正、執行、決算、事業費、契約額、補助額を混同しない
 - 目標年、報告年、測定年、会計年度、公開年、計画版を区別する
 - 自治体の自己評価はsource-reported factとして保持し、Jichi Insight独自の達成判定へ変換しない
-- 市民意識調査の評価・要望は行政実績や政策成果と自動結合しない
 - 比較可能性の別レビューなしに自治体間ランキングへ昇格しない
 - 未公開Evidenceは明示し、確認済みのsource inventory coverageを不必要に巻き戻さない
 - Schema、Evidence coverage、回帰テストを通過するまで市単位のPhase 13完了を宣言しない
@@ -293,16 +321,14 @@ Phase 13では、以下を品質ゲートとして維持します。
 正本:
 
 - `data/catalog/phase13_designated_city_review_queue.json`
-- `data/catalog/*_phase13_review_manifest.json`
+- `data/catalog/*_phase13_policy_review_manifest.json`
 - `data/catalog/*_phase13_completion.json`
-- `data/catalog/sendai_phase13_progress_linkage.json`
-- `data/catalog/*_challenge_project_reviews_part*.json`
 - `data/evidence/*_evidence.json`
 - `tests/test_phase13_*.py`
 
 ## After Phase 13
 
-1. 川崎市をReviewed completeへ進め、その後の12市を順次Reviewed到達深度まで処理し、全20政令指定都市の市レベル基盤を完成させる
+1. 相模原市をReviewed completeへ進め、その後の11市を順次Reviewed到達深度まで処理し、全20政令指定都市の市レベル基盤を完成させる
 2. 中核市・県庁所在地
 3. その他市区町村
 4. 選挙・候補者比較
