@@ -1,0 +1,112 @@
+{
+  "id": "sagamihara-phase13-policy-review-manifest",
+  "phase": 13,
+  "official_code": "141500",
+  "name_ja": "相模原市",
+  "status": "review_in_progress",
+  "reviewed_at": "2026-09-27",
+  "source_catalog_path": "data/catalog/sagamihara_phase13_sources.json",
+  "plan_review_path": "data/reviewed/sagamihara-city/plan_review.json",
+  "policy_structure_path": "data/catalog/sagamihara_current_policy_structure.json",
+  "current_progress_review_path": "data/catalog/sagamihara_current_progress_review_summary.json",
+  "fiscal_records_path": "data/reviewed/sagamihara-city/fiscal_records.json",
+  "fiscal_evidence_path": "data/reviewed/sagamihara-city/evidence_packets.json",
+  "reviewed_facts": [
+    {
+      "id": "sagamihara-current-basic-plan",
+      "layer": "current_plan",
+      "field": "basic_plan_period",
+      "value": "2020年度～2027年度",
+      "source_id": "sagamihara-comprehensive-plan-current",
+      "review_status": "reviewed",
+      "interpretation_boundary": "最新推進プログラムは2028年度までを含むが、基本計画期間を2028年度へ自動延長しない。"
+    },
+    {
+      "id": "sagamihara-current-measure-scope",
+      "layer": "current_plan",
+      "field": "measure_structure",
+      "vision_group_count": 6,
+      "measure_count": 47,
+      "source_id": "sagamihara-progress-2025",
+      "review_status": "reviewed_aggregate_structure",
+      "interpretation_boundary": "47施策個別identityは追加depth。"
+    },
+    {
+      "id": "sagamihara-current-rolling-program",
+      "layer": "implementation_plan",
+      "field": "rolling_program_period",
+      "value": "2026年度～2028年度",
+      "source_id": "sagamihara-promotion-program-2026-2028",
+      "review_status": "reviewed_latest_rolling_program",
+      "interpretation_boundary": "実施計画機能を担う毎年度更新の3年ローリング。基本計画のversion transitionをまたぐ。"
+    },
+    {
+      "id": "sagamihara-current-priority-themes",
+      "layer": "implementation_plan",
+      "field": "priority_themes",
+      "value": 3,
+      "themes": [
+        "少子化対策",
+        "雇用促進対策",
+        "中山間地域対策"
+      ],
+      "source_id": "sagamihara-promotion-program-2026-2028",
+      "review_status": "reviewed_complete_theme_identity",
+      "interpretation_boundary": "重点設定を政策達成や成果評価へ読み替えない。"
+    },
+    {
+      "id": "sagamihara-current-midterm-progress",
+      "layer": "current_plan_progress",
+      "field": "evaluation_scope_and_roles",
+      "implementation_period_reviewed": "2020年度～2024年度",
+      "measure_count": 47,
+      "first_stage_actor": "相模原市（施策所管局）",
+      "second_stage_actor": "相模原市総合計画審議会",
+      "citizen_survey_role": "separate_citizen_opinion_input",
+      "source_id": "sagamihara-progress-2025",
+      "review_status": "reviewed_method_and_scope",
+      "interpretation_boundary": "市1次評価・審議会2次評価・市民アンケートを別Evidence roleとして保持。個別47施策の評価内容は追加depth。"
+    },
+    {
+      "id": "sagamihara-2026-general-account-initial-budget",
+      "layer": "fiscal",
+      "field": "general_account_initial_budget",
+      "fiscal_year": 2026,
+      "value": 405500000000,
+      "unit": "yen",
+      "source_id": "sagamihara-budget-2026-general-account-pdf",
+      "review_status": "reviewed",
+      "interpretation_boundary": "当初予算。補正・執行・決算とは別state。"
+    },
+    {
+      "id": "sagamihara-2024-general-account-settlement-revenue",
+      "layer": "fiscal",
+      "field": "general_account_settlement_revenue",
+      "fiscal_year": 2024,
+      "value": 359794590156,
+      "unit": "yen",
+      "source_id": "sagamihara-settlement-2024-general-account-pdf",
+      "review_status": "reviewed",
+      "interpretation_boundary": "決算歳入。予算現額・歳出・収支とは別state。"
+    },
+    {
+      "id": "sagamihara-2024-general-account-settlement-expenditure",
+      "layer": "fiscal",
+      "field": "general_account_settlement_expenditure",
+      "fiscal_year": 2024,
+      "value": 349624530765,
+      "unit": "yen",
+      "source_id": "sagamihara-settlement-2024-general-account-pdf",
+      "review_status": "reviewed",
+      "interpretation_boundary": "決算歳出。予算現額・歳入・収支とは別state。"
+    }
+  ],
+  "remaining_work": [
+    "47施策の個別identity、成果指標、基準値、実績値、評価結果、審議会コメントを追加depthとしてレビューする。",
+    "令和8～10年度推進プログラムの個別事業identity、担当課、令和7年度実績、令和8～10年度事業量を追加depthとして構造化する。",
+    "市民アンケートの設問別・属性別結果は行政自己評価・審議会評価と分離して追加レビューする。",
+    "現基本計画2020～2027と、2028年度を含む最新推進プログラム・次期総合計画のversion transitionを別Evidenceレビューする。",
+    "個別施策・事業と予算、補正、執行、決算、契約、補助金の接続は公式識別子・名称・所管・年度を確認できたものだけ昇格する。"
+  ],
+  "quality_boundary": "Sagamihara Phase 13 v1 reviews the current 2020-2027 basic-plan identity, aggregate six-vision/47-measure structure, latest 2026-2028 rolling implementation program, three named priority themes, current midterm progress-review methodology covering all 47 measures plus priority themes, separate municipal first-stage / planning-council second-stage / citizen-survey roles, and three general-account fiscal top lines. Individual measure results and implementation-program project identities are not inferred from aggregate coverage. No independent policy-achievement judgment, causal attribution, or cross-city comparability is inferred."
+}
