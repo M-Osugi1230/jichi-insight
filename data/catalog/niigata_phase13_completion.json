@@ -1,0 +1,89 @@
+{
+  "id": "niigata-phase13-completion",
+  "phase": 13,
+  "status": "reviewed_complete",
+  "official_code": "151009",
+  "name_ja": "新潟市",
+  "completed_at": "2026-09-27",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "policy_review_manifest_path": "data/catalog/niigata_phase13_policy_review_manifest.json",
+    "plan_review_path": "data/reviewed/niigata-city/plan_review.json",
+    "source_catalog_path": "data/catalog/niigata_phase13_sources.json",
+    "policy_structure_path": "data/catalog/niigata_current_policy_structure.json",
+    "current_progress_review_path": "data/catalog/niigata_current_progress_review_summary.json",
+    "fiscal_records_path": "data/reviewed/niigata-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/niigata-city/evidence_packets.json",
+    "counts": {
+      "current_fields": 8,
+      "current_policies": 16,
+      "current_measures_aggregate": 45,
+      "current_priority_strategies": 10,
+      "current_sustainable_governance_pillars": 3,
+      "current_overall_indicators": 4,
+      "current_overall_indicator_results_reviewed": 4,
+      "current_policy_indicators_aggregate": 87,
+      "accountability_role_count": 3,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "adopted_current_plan_period_review_complete": true,
+    "current_implementation_plan_revision_review_complete": true,
+    "current_8_field_16_policy_structure_review_complete": true,
+    "current_45_measure_aggregate_structure_review_complete": true,
+    "current_10_priority_strategy_identity_review_complete": true,
+    "current_4_overall_indicator_identity_and_result_review_complete": true,
+    "current_87_policy_indicator_universe_review_complete": true,
+    "municipal_external_and_citizen_roles_separate": true,
+    "midterm_review_draft_not_promoted": true,
+    "budget_and_settlement_states_separate": true,
+    "aggregate_counts_not_promoted_to_individual_records": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "current-measure-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "count": 45,
+      "boundary": "45施策の個別identity、成果指標、現状値、目標値、年度実績、主な取組と実績、課題・今後の展開は追加depth。45というaggregate countから個票を生成・推測しない。"
+    },
+    {
+      "id": "policy-indicator-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "count": 87,
+      "boundary": "政策指標1～87の公式universeは確認済みだが、87件すべての定義・単位・基準値・実績・目標・測定年・担当部の構造化は追加depth。未抽出値を推測しない。"
+    },
+    {
+      "id": "action-indicator-and-project-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "取組指標全件と前期実施計画の主な事業identity・担当課・事業量・年度別進捗は追加depth。公開表から未確認の関係を推測しない。"
+    },
+    {
+      "id": "midterm-review-final-adoption",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "2026年度の総合計画2030中間見直しは現時点で素案をdraft versionとして保持する。正式決定版が公表されるまで現行採択済み計画の政策・指標・目標を上書きしない。"
+    },
+    {
+      "id": "second-implementation-plan-version",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "前期実施計画は2023～2026年度。2027～2030年度後期実施計画は正式公表後に別versionとして接続し、前期実施計画を自動延長しない。"
+    },
+    {
+      "id": "fiscal-detail-policy-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "v1では2026年度一般会計当初予算と2024年度一般会計決算トップラインをstate分離して保持する。款項目別、補正、執行、個別事業費、契約、補助金の政策・施策・事業接続は別Evidenceレビューとする。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "新潟市によるA/B/C進捗評価、外部有識者意見、市民アンケート、財政値のレビューは政策効果の因果認定や他都市との比較可能性を意味しない。専用方法論なしに統合スコアやランキングへ昇格しない。"
+    }
+  ],
+  "completion_boundary": "新潟市のPhase 13 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味する。現行新潟市総合計画2030の2023～2030年度という計画期間、基本構想・基本計画・実施計画の3層構成、8分野・16政策・45施策・10重点戦略・持続可能な行財政運営3本柱、4総合指標、2023～2026年度前期実施計画の令和8年3月改定、令和7年度進捗における4総合指標の実績と新潟市によるA/B/C評価、政策指標1～87の公式universe、行政進捗評価・外部有識者・市民アンケートの役割分離、2026年度中間見直し素案のdraft境界、2026年度一般会計当初予算442,500,000,000円、2024年度一般会計決算歳入463,544,553,000円・歳出452,133,373,000円をレビュー済みである。一方、45施策・87政策指標・取組指標・主な事業の個票完全構造化、中間見直し確定版、後期実施計画、個別財政接続はdeferred_depthとして明示する。A/B/Cは新潟市によるsource-reported evaluationであり、この完了は新潟市の全公開データの網羅、Jichi Insight独自の政策達成度、因果効果、他都市比較可能性またはランキングの認定を意味しない。"
+}
