@@ -1,0 +1,61 @@
+[
+  {
+    "id": "evidence-shizuoka-city-2026-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-221007-fiscal-2026-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算は4,035億円。",
+        "source_ids": [
+          "shizuoka-budget-2026"
+        ],
+        "location_note": "令和8年度当初予算 公式ページ『一般会計 4,035億円』。",
+        "decision": "accepted",
+        "review_note": "403,500,000,000円として保存。補正・執行・決算とは別state。"
+      }
+    ],
+    "open_questions": [
+      "補正予算はinitial_budgetを上書きせずrevised_budgetとして追加する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-shizuoka-city-2024-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-221007-fiscal-2024-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計歳入総額は387,089,852千円。",
+        "source_ids": [
+          "shizuoka-settlement-2024-audit-summary-pdf"
+        ],
+        "location_note": "令和6年度決算概要 PDF p.19『歳入総額 387,089,852千円』。",
+        "decision": "accepted",
+        "review_note": "387,089,852,000円として保存。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-shizuoka-city-2024-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-221007-fiscal-2024-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計歳出総額は376,221,432千円。",
+        "source_ids": [
+          "shizuoka-settlement-2024-audit-summary-pdf"
+        ],
+        "location_note": "令和6年度決算概要 PDF p.19『歳出総額 376,221,432千円』。",
+        "decision": "accepted",
+        "review_note": "376,221,432,000円として保存。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]
