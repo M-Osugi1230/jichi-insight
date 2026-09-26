@@ -1,0 +1,61 @@
+[
+  {
+    "id": "evidence-sagamihara-city-2026-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-141500-fiscal-2026-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算は405,500,000千円。",
+        "source_ids": [
+          "sagamihara-budget-2026-general-account-pdf"
+        ],
+        "location_note": "令和8年度相模原市一般会計予算書及び予算に関する説明書 PDF index p.12『歳入合計 405,500,000千円』。",
+        "decision": "accepted",
+        "review_note": "405,500,000,000円として保存。補正後予算・執行・決算とは別state。"
+      }
+    ],
+    "open_questions": [
+      "令和8年度補正予算はinitial_budgetを上書きせず、revised_budgetとして別記録を追加する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sagamihara-city-2024-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-141500-fiscal-2024-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計歳入決算額は359,794,590,156円。",
+        "source_ids": [
+          "sagamihara-settlement-2024-general-account-pdf"
+        ],
+        "location_note": "令和6年度相模原市一般会計歳入歳出決算 PDF index p.3『歳入 決算額 359,794,590,156円』。",
+        "decision": "accepted",
+        "review_note": "予算現額372,153,376,667円とは別stateとして保存。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sagamihara-city-2024-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-141500-fiscal-2024-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計歳出決算額は349,624,530,765円。",
+        "source_ids": [
+          "sagamihara-settlement-2024-general-account-pdf"
+        ],
+        "location_note": "令和6年度相模原市一般会計歳入歳出決算 PDF index p.3『歳出 決算額 349,624,530,765円』。",
+        "decision": "accepted",
+        "review_note": "予算現額372,153,376,667円、歳入歳出差引残額10,170,059,391円とは別指標として保存。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]
