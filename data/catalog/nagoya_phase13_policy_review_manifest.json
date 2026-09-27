@@ -1,0 +1,127 @@
+{
+  "id": "nagoya-phase13-policy-review-manifest",
+  "phase": 13,
+  "official_code": "231002",
+  "name_ja": "名古屋市",
+  "status": "review_in_progress",
+  "reviewed_at": "2026-09-28",
+  "source_catalog_path": "data/catalog/nagoya_phase13_sources.json",
+  "plan_review_path": "data/reviewed/nagoya-city/plan_review.json",
+  "policy_structure_path": "data/catalog/nagoya_current_policy_structure.json",
+  "current_progress_review_path": "data/catalog/nagoya_current_progress_review_summary.json",
+  "fiscal_records_path": "data/reviewed/nagoya-city/fiscal_records.json",
+  "fiscal_evidence_path": "data/reviewed/nagoya-city/evidence_packets.json",
+  "reviewed_facts": [
+    {
+      "id": "nagoya-current-plan-period",
+      "layer": "current_plan",
+      "field": "plan_period",
+      "value": "2024年度～2028年度",
+      "source_id": "nagoya-comprehensive-plan-2028",
+      "review_status": "reviewed"
+    },
+    {
+      "id": "nagoya-current-structure",
+      "layer": "current_plan",
+      "field": "plan_structure",
+      "city_vision_count": 5,
+      "measure_count": 42,
+      "outcome_indicator_count": 135,
+      "listed_project_count": 506,
+      "source_id": "nagoya-progress-2024",
+      "review_status": "reviewed_declared_structure_identity",
+      "interpretation_boundary": "42施策・135指標・506事業の個票完全構造化は追加depth。"
+    },
+    {
+      "id": "nagoya-2024-indicator-evaluation",
+      "layer": "current_plan_progress",
+      "field": "source_reported_indicator_classification",
+      "A": 54,
+      "B": 18,
+      "C": 23,
+      "D": 40,
+      "total": 135,
+      "A_B_C_count": 95,
+      "source_id": "nagoya-progress-2024-pdf",
+      "review_status": "reviewed_source_reported_aggregate",
+      "interpretation_boundary": "A/B/C/Dは名古屋市の進捗分類。95件をJichi Insight独自達成数へ読み替えない。"
+    },
+    {
+      "id": "nagoya-2024-project-progress",
+      "layer": "current_plan_progress",
+      "field": "source_reported_project_classification",
+      "four_stars": 384,
+      "three_stars": 96,
+      "two_stars": 20,
+      "one_star": 6,
+      "revised": 0,
+      "total": 506,
+      "four_or_three_stars": 480,
+      "source_id": "nagoya-progress-2024-pdf",
+      "review_status": "reviewed_source_reported_aggregate",
+      "interpretation_boundary": "480件を個別未確認事業へ配分せず、市の集計として保持する。"
+    },
+    {
+      "id": "nagoya-2024-project-cost-estimate",
+      "layer": "current_plan_progress",
+      "field": "project_cost_estimate",
+      "plan_total_approx_yen": 2698700000000,
+      "fy2024_actual_estimate_approx_yen": 514500000000,
+      "source_id": "nagoya-progress-2024-pdf",
+      "review_status": "reviewed_approximate_source_reported_amount",
+      "interpretation_boundary": "概算・実績見込み。一般会計決算や個別事業決算とは別Evidence role。"
+    },
+    {
+      "id": "nagoya-indicator-citizen-survey",
+      "layer": "citizen_survey",
+      "field": "survey_scope",
+      "target_population": 4000,
+      "valid_response_rate_percent": 44.2,
+      "source_id": "nagoya-indicator-survey-2025",
+      "review_status": "reviewed_methodology",
+      "interpretation_boundary": "一部成果指標の市民満足度・意識測定。行政評価・事業進捗と別Evidence role。"
+    },
+    {
+      "id": "nagoya-2026-general-account-initial-budget",
+      "layer": "fiscal",
+      "field": "general_account_initial_budget",
+      "fiscal_year": 2026,
+      "value": 1696086000000,
+      "unit": "yen",
+      "source_id": "nagoya-budget-2026-amended-pdf",
+      "review_status": "reviewed",
+      "interpretation_boundary": "議会修正後の成立当初予算。原案・補正・執行・決算とは別state。"
+    },
+    {
+      "id": "nagoya-2024-general-account-settlement-revenue",
+      "layer": "fiscal",
+      "field": "general_account_settlement_revenue",
+      "fiscal_year": 2024,
+      "value": 1505378206754,
+      "unit": "yen",
+      "source_id": "nagoya-settlement-2024-general-account-pdf",
+      "review_status": "reviewed",
+      "interpretation_boundary": "一般会計決算歳入。形式収支・特別会計とは別state。"
+    },
+    {
+      "id": "nagoya-2024-general-account-settlement-expenditure",
+      "layer": "fiscal",
+      "field": "general_account_settlement_expenditure",
+      "fiscal_year": 2024,
+      "value": 1486264707319,
+      "unit": "yen",
+      "source_id": "nagoya-settlement-2024-general-account-pdf",
+      "review_status": "reviewed",
+      "interpretation_boundary": "一般会計決算歳出。実質収支・特別会計とは別state。"
+    }
+  ],
+  "remaining_work": [
+    "42施策の個別identity・所管・政策文脈を追加depthとしてレビューする。",
+    "135成果指標を指標名・定義・計画策定時値・年度基準値・実績値・2028目標値・A/B/C/Dまで個票化する。",
+    "506掲載事業を事業名・所管・計画目標・2024実績・星分類・事業費まで個票化する。",
+    "成果指標アンケートの設問別・属性別結果を行政評価と分離して追加レビューする。",
+    "計画事業費約2兆6,987億円・2024実績事業費見込み約5,145億円と一般会計予算・決算の関係を個別事業単位で検証する。",
+    "個別施策・事業と予算、補正、執行、決算、契約、補助金の接続はEvidence確認後のみ昇格する。"
+  ],
+  "quality_boundary": "Nagoya Phase 13 v1 reviews the adopted 2024-2028 comprehensive-plan identity, five city visions, aggregate 42-measure / 135-outcome-indicator / 506-listed-project structure, FY2024 source-reported indicator and project progress classifications, citizen-survey methodology, the enacted amended FY2026 general-account budget, and FY2024 general-account settlement top lines. The city-reported 95/135 and 480/506 aggregates are not allocated to unreviewed individual records or converted into independent Jichi Insight policy-achievement judgments. Survey evidence, administrative classifications, approximate project costs, budget, and settlement remain separate evidence roles. No causal attribution, cross-city comparability, or ranking is inferred."
+}
