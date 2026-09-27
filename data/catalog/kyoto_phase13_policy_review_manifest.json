@@ -1,0 +1,119 @@
+{
+  "id": "kyoto-phase13-policy-review-manifest",
+  "phase": 13,
+  "official_code": "261009",
+  "name_ja": "京都市",
+  "status": "review_in_progress",
+  "reviewed_at": "2026-09-28",
+  "source_catalog_path": "data/catalog/kyoto_phase13_sources.json",
+  "plan_review_path": "data/reviewed/kyoto-city/plan_review.json",
+  "strategy_structure_path": "data/catalog/kyoto_current_strategy_structure.json",
+  "progress_review_path": "data/catalog/kyoto_current_progress_review_summary.json",
+  "fiscal_records_path": "data/reviewed/kyoto-city/fiscal_records.json",
+  "fiscal_evidence_path": "data/reviewed/kyoto-city/evidence_packets.json",
+  "reviewed_facts": [
+    {
+      "id": "kyoto-current-basic-concept",
+      "layer": "current_plan",
+      "field": "basic_concept_period",
+      "value": "2026年～2050年",
+      "source_id": "kyoto-basic-concept-2026-2050",
+      "review_status": "reviewed",
+      "interpretation_boundary": "長期構想であり、個別実施事業や年度actualそのものではない。"
+    },
+    {
+      "id": "kyoto-current-strategy-period",
+      "layer": "implementation_strategy",
+      "field": "strategy_period",
+      "value": "2024年度～2027年度",
+      "source_id": "kyoto-new-strategy-current",
+      "review_status": "reviewed_current_revision",
+      "interpretation_boundary": "令和8年3月改定版。旧令和7年3月版とversion-separated。"
+    },
+    {
+      "id": "kyoto-current-strategy-policies",
+      "layer": "implementation_strategy",
+      "field": "policy_structure",
+      "value": 6,
+      "unit": "policies",
+      "source_id": "kyoto-budget-2026-overview-pdf",
+      "review_status": "reviewed_complete_policy_identity",
+      "interpretation_boundary": "6政策の個別施策・KPI・事業は追加depth。"
+    },
+    {
+      "id": "kyoto-current-strategy-progress-route",
+      "layer": "current_strategy_progress",
+      "field": "progress_publication",
+      "value": "published",
+      "source_id": "kyoto-progress-2024",
+      "review_status": "reviewed_current_strategy_lane",
+      "interpretation_boundary": "2024年度の新京都戦略実施状況をcurrent strategy laneとして保持し、市独自の達成判定へ変換しない。"
+    },
+    {
+      "id": "kyoto-historical-basic-plan-policy-fields",
+      "layer": "historical_progress",
+      "field": "historical_policy_fields",
+      "value": 27,
+      "unit": "policy_fields",
+      "source_id": "kyoto-progress-2024",
+      "review_status": "reviewed_historical_only",
+      "interpretation_boundary": "旧京プラン2025の27政策分野。京都基本構想2026～2050の政策構造やactualへ流用しない。"
+    },
+    {
+      "id": "kyoto-accountability-routes",
+      "layer": "accountability",
+      "field": "review_routes",
+      "value": 3,
+      "unit": "roles",
+      "roles": [
+        "municipal_progress_reporting",
+        "city_assembly_reporting",
+        "settlement_audit"
+      ],
+      "source_id": "kyoto-audit-settlement-2024",
+      "review_status": "reviewed_role_separation",
+      "interpretation_boundary": "行政実施報告・市会報告・監査を別Evidence roleとして保持する。"
+    },
+    {
+      "id": "kyoto-2026-general-account-initial-budget",
+      "layer": "fiscal",
+      "field": "general_account_initial_budget",
+      "fiscal_year": 2026,
+      "value": 1007967000000,
+      "unit": "yen",
+      "source_id": "kyoto-budget-2026-overview-pdf",
+      "review_status": "reviewed",
+      "interpretation_boundary": "当初予算。補正・執行・決算とは別state。"
+    },
+    {
+      "id": "kyoto-2024-general-account-settlement-revenue",
+      "layer": "fiscal",
+      "field": "general_account_settlement_revenue_rounded",
+      "fiscal_year": 2024,
+      "value": 980100000000,
+      "unit": "yen",
+      "source_id": "kyoto-settlement-2024-reference-data-pdf",
+      "review_status": "reviewed_rounded_source_value",
+      "interpretation_boundary": "元資料は億円表示のためrounded source valueとして保持。"
+    },
+    {
+      "id": "kyoto-2024-general-account-settlement-expenditure",
+      "layer": "fiscal",
+      "field": "general_account_settlement_expenditure_rounded",
+      "fiscal_year": 2024,
+      "value": 971800000000,
+      "unit": "yen",
+      "source_id": "kyoto-settlement-2024-reference-data-pdf",
+      "review_status": "reviewed_rounded_source_value",
+      "interpretation_boundary": "元資料は億円表示のためrounded source valueとして保持。"
+    }
+  ],
+  "remaining_work": [
+    "6政策配下の個別施策・KPI・現状値・目標値・年度実績を追加depthとしてレビューする。",
+    "リーディング・プロジェクトと政策集の個別施策・事業identityを改定版正本から全件構造化する。",
+    "2024年度新京都戦略実施状況の政策別・事業別実績を個票化し、旧京プラン2025の27政策分野とversion-separated linkageを保持する。",
+    "京都基本構想2026～2050と新京都戦略2024～2027の細粒度linkageはEvidence確認後のみ昇格する。",
+    "個別政策・事業と予算、補正、執行、決算、契約、補助金の接続は公式識別子・名称・所管・年度を確認できたものだけ昇格する。"
+  ],
+  "quality_boundary": "Kyoto Phase 13 v1 reviews the adopted 2026-2050 Kyoto Basic Concept, the March-2026 revision of the 2024-2027 New Kyoto Strategy, its six-policy identity, separate current-strategy and historical Miyako Plan 2025 progress lanes, municipal / assembly / audit accountability roles, and three general-account fiscal top lines. The old 27-policy-field basic plan is not reused as the current concept's policy structure. FY2024 settlement top lines are retained as rounded source values because the reviewed source is published in 100-million-yen units. No independent policy-achievement judgment, causal attribution, or cross-city comparability is inferred."
+}
