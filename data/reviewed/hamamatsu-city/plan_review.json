@@ -1,0 +1,85 @@
+{
+  "id": "phase13-hamamatsu-plan-review",
+  "official_code": "221309",
+  "name_ja": "浜松市",
+  "review_status": "review_in_progress_structure_current_result_and_pdca_reviewed",
+  "reviewed_at": "2026-09-28",
+  "records": [
+    {
+      "id": "hamamatsu-current-plan-layers",
+      "evidence_role": "current_plan_identity",
+      "title": "浜松市総合計画 3層構成",
+      "statement": "総合計画は基本構想・基本計画・実施計画の3層で構成される。",
+      "value": 3,
+      "unit": "plan_layers",
+      "source_id": "hamamatsu-comprehensive-plan",
+      "evidence_location": "浜松市総合計画 公式ページ『総合計画は、基本構想、基本計画、実施計画の3層で構成』",
+      "decision": "accepted"
+    },
+    {
+      "id": "hamamatsu-current-basic-plan-period",
+      "evidence_role": "current_plan_identity",
+      "title": "第2期基本計画",
+      "statement": "現行第2期基本計画の計画期間は2025年度から2034年度までの10年間。",
+      "value": "2025年度～2034年度",
+      "source_id": "hamamatsu-basic-plan-overview",
+      "evidence_location": "基本計画 総論『計画の期間』",
+      "decision": "accepted"
+    },
+    {
+      "id": "hamamatsu-current-policy-structure",
+      "evidence_role": "current_policy_structure",
+      "title": "7分野・25基本政策・125政策",
+      "statement": "現行計画は7分野で構成され、2026年度実施計画は25基本政策・125政策の構造を明示する。",
+      "value": 125,
+      "unit": "policies",
+      "field_count": 7,
+      "basic_policy_count": 25,
+      "source_id": "hamamatsu-implementation-plan-2026-pdf",
+      "evidence_location": "2026年度実施計画 PDF p.8『25の基本政策』『125の政策』",
+      "reviewed_data_path": "data/catalog/hamamatsu_current_policy_structure.json",
+      "decision": "accepted_declared_structure_identity",
+      "review_note": "125政策個票・事業個票全件は追加depth。"
+    },
+    {
+      "id": "hamamatsu-current-indicator-universe",
+      "evidence_role": "current_plan_indicator_structure",
+      "title": "成果指標38件・生活満足度指標50件",
+      "statement": "基本計画の成果指標は7分野計38件。生活満足度指標は総合8・分野7・個別35の計50件。",
+      "value": 38,
+      "unit": "outcome_indicators",
+      "life_satisfaction_total": 50,
+      "source_id": "hamamatsu-basic-plan-indicators",
+      "evidence_location": "基本計画参考資料『指標』及び2025年度評価レポート",
+      "decision": "accepted_indicator_universes",
+      "review_note": "成果指標38件・個別35実感指標の完全個票化は追加depth。"
+    },
+    {
+      "id": "hamamatsu-current-2025-result",
+      "evidence_role": "current_plan_progress",
+      "title": "2025年度実施計画評価レポート",
+      "statement": "現行第2期基本計画初年度の評価として、生活満足度の2024基準値と2025年度値が公表されている。",
+      "value": 15,
+      "unit": "reviewed_life_satisfaction_results",
+      "source_id": "hamamatsu-implementation-evaluation-2025",
+      "evidence_location": "2025年度実施計画評価レポート PDF p.8-11",
+      "reviewed_data_path": "data/catalog/hamamatsu_current_implementation_review_summary.json",
+      "decision": "accepted_current_first_year_result",
+      "review_note": "総合8・分野7を個票レビュー。主観的実感を政策効果や達成率へ変換しない。"
+    },
+    {
+      "id": "hamamatsu-current-2026-action",
+      "evidence_role": "current_implementation_plan",
+      "title": "2026年度実施計画",
+      "statement": "2026年度は25基本政策・125政策ごとに事業・指標等を示し、PDCA/OODA/EBPMにより進行管理する。",
+      "value": 2026,
+      "unit": "fiscal_year",
+      "source_id": "hamamatsu-implementation-plan-2026-pdf",
+      "evidence_location": "2026年度実施計画 PDF p.5-8",
+      "decision": "accepted_current_action",
+      "review_note": "2026年度通年Resultはまだ確定していない。"
+    }
+  ],
+  "quality_boundary": "現行2025～2034第2期基本計画、7分野・25基本政策・125政策、成果指標38件、生活満足度50指標、2025年度現行Result、2026年度Action/PDCAをReviewed化した。市民実感Resultと行政政策成果を同一視せず、125政策・38成果指標・35個別実感指標・事業の完全個票化、2026年度通年評価、財政・契約接続、因果効果、独自達成度、他都市比較可能性は別レビュー単位。",
+  "next_action": "Add FY2026 initial-budget and FY2024 audited settlement top lines, then define Hamamatsu's declared v1 completion package and deferred depth."
+}
