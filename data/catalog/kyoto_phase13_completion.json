@@ -1,0 +1,78 @@
+{
+  "id": "kyoto-phase13-completion",
+  "phase": 13,
+  "status": "reviewed_complete",
+  "official_code": "261009",
+  "name_ja": "京都市",
+  "completed_at": "2026-09-28",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "policy_review_manifest_path": "data/catalog/kyoto_phase13_policy_review_manifest.json",
+    "plan_review_path": "data/reviewed/kyoto-city/plan_review.json",
+    "source_catalog_path": "data/catalog/kyoto_phase13_sources.json",
+    "strategy_structure_path": "data/catalog/kyoto_current_strategy_structure.json",
+    "progress_review_path": "data/catalog/kyoto_current_progress_review_summary.json",
+    "fiscal_records_path": "data/reviewed/kyoto-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/kyoto-city/evidence_packets.json",
+    "counts": {
+      "current_strategy_policies": 6,
+      "current_strategy_components": 3,
+      "strategic_perspectives": 3,
+      "historical_basic_plan_policy_fields": 27,
+      "accountability_roles": 3,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "current_basic_concept_period_review_complete": true,
+    "current_strategy_revision_review_complete": true,
+    "current_six_policy_identity_review_complete": true,
+    "strategy_components_and_perspectives_review_complete": true,
+    "current_and_historical_progress_lanes_separate": true,
+    "municipal_assembly_and_audit_roles_separate": true,
+    "old_27_policy_fields_not_reused_as_current_structure": true,
+    "initial_budget_and_settlement_states_separate": true,
+    "rounded_settlement_precision_explicit": true,
+    "aggregate_policy_count_not_promoted_to_individual_records": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "current-policy-kpi-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "policy_count": 6,
+      "boundary": "6政策配下の個別施策、KPI、基準値、目標値、年度実績は追加depth。政策数から個票や成果値を推測しない。"
+    },
+    {
+      "id": "leading-project-and-policy-catalog-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "改定新京都戦略のリーディング・プロジェクトと政策集の個別施策・事業identityは追加depth。旧版や予算事業一覧から未確認の全件構造を補完しない。"
+    },
+    {
+      "id": "current-progress-record-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "2024年度新京都戦略実施状況の政策別・事業別実績は追加depth。旧京プラン2025の27政策分野評価と統合しない。"
+    },
+    {
+      "id": "basic-concept-strategy-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "京都基本構想2026～2050と新京都戦略2024～2027の細粒度linkageは別Evidenceレビューとし、文言類似だけで政策対応を確定しない。"
+    },
+    {
+      "id": "fiscal-detail-policy-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "v1では2026年度一般会計当初予算と2024年度一般会計決算トップラインをstate分離して保持する。補正、執行、個別事業費、契約、補助金の政策接続は別Evidenceレビューとする。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "京都市の実施報告・市会報告・監査・市民実感・財政値のレビューは政策効果の因果認定や他都市との比較可能性を意味しない。専用方法論なしに統合スコアやランキングへ昇格しない。"
+    }
+  ],
+  "completion_boundary": "京都市のPhase 13 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味する。京都基本構想2026～2050、新京都戦略2024～2027の令和8年3月改定版、現行戦略の6政策、政策・しごとの仕方改革・持続可能な行財政運営の3構成、ひらく・きわめる・つなぐの3視点、2024年度報告における新京都戦略実施状況と旧京プラン2025の27政策分野のversion分離、行政実施報告・市会報告・監査のAccountability role分離、2026年度一般会計当初予算1,007,967,000,000円、2024年度一般会計決算の億円表示による歳入980,100,000,000円・歳出971,800,000,000円をレビュー済みである。一方、6政策配下の個別施策・KPI・実績、リーディング・プロジェクト・政策集の全件個票、構想と戦略の細粒度linkage、個別財政接続はdeferred_depthとして明示する。この完了は京都市の全公開データの網羅、Jichi Insight独自の政策達成度、因果効果、他都市比較可能性またはランキングの認定を意味しない。"
+}
