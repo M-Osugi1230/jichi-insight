@@ -138,13 +138,13 @@ Status: `in_progress`
 
 Phase 12完了により、北九州市・福岡市の2市をReviewed referenceとして保持しつつ、残る18市すべてが個票レベルのreview queueへ入りました。Phase 12由来のblocked source inventoryは0です。
 
-Canonical queue（2026-09-27同期）:
+Canonical queue（2026-09-28同期）:
 
 - Reviewed reference: 2市（北九州市、福岡市）
 - Review queue eligible: 18市
-- Reviewed complete: 9市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市）
-- Review in progress: 1市（浜松市）
-- Pending record review: 8市
+- Reviewed complete: 10市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市、浜松市）
+- Review in progress: 1市（名古屋市）
+- Pending record review: 7市
 - Blocked source inventory: 0市
 
 状態の正本は `data/catalog/phase13_designated_city_review_queue.json` です。文書上の集計とmachine-readable queueが競合する場合はqueueを優先します。
@@ -395,11 +395,42 @@ Status: `complete`（2026-09-27）
 - `data/reviewed/shizuoka-city/fiscal_records.json`
 - `tests/test_phase13_shizuoka_completion.py`
 
-### Current work — Hamamatsu record review
+### Milestone M11 — Hamamatsu reviewed complete
+
+Status: `complete`（2026-09-28）
+
+浜松市は`declared_review_package_v1`としてReviewed completeです。
+
+- Current basic-plan period: 2025〜2034年度
+- Current fields: 7
+- Current basic policies: 25
+- Current policies: 125（aggregate）
+- Outcome-indicator universe: 38
+- Life-satisfaction indicators: 50（総合8・分野7・個別35）
+- FY2025 reviewed life-satisfaction results: 15（総合8・分野7）
+- FY2026 implementation plan: Action / PDCA・OODA・EBPM
+- FY2026 general-account initial budget: 440,100,000,000円
+- FY2024 general-account settlement: 歳入416,537,079,000円 / 歳出403,849,303,000円
+- Fiscal top-line records: 3
+
+2025年度にレビューした15件は市民の主観的実感を測る指標であり、政策効果や因果関係を直接示すものではありません。成果指標38件、125政策、個別実感35指標、実施計画事業の完全個票化、2026年度通年Result、個別財政接続は`deferred_depth`として明示します。
+
+正本:
+
+- `data/catalog/hamamatsu_phase13_completion.json`
+- `schemas/hamamatsu_phase13_completion.schema.json`
+- `data/catalog/hamamatsu_phase13_policy_review_manifest.json`
+- `data/catalog/hamamatsu_current_policy_structure.json`
+- `data/catalog/hamamatsu_current_implementation_review_summary.json`
+- `data/reviewed/hamamatsu-city/plan_review.json`
+- `data/reviewed/hamamatsu-city/fiscal_records.json`
+- `tests/test_phase13_hamamatsu_completion.py`
+
+### Current work — Nagoya record review
 
 Status: `in_progress`
 
-静岡市のReviewed completionにより、Canonical queueの次対象は浜松市（221309）です。Phase 12で確定した公式Source Inventoryを起点に、現行計画identity、実施・進行管理層、成果指標、財政、version boundaryをEvidence付きでレビューします。
+浜松市のReviewed completionにより、Canonical queueの次対象は名古屋市（231002）です。Phase 12で確定した公式Source Inventoryを起点に、現行計画identity、実施・進行管理層、成果指標、財政、version boundaryをEvidence付きでレビューします。
 
 公式一次資料・version・期間・財政state・評価主体を分離し、未公開Evidenceを推測補完しません。Schema、Evidence coverage、回帰テストを通過するまで市単位のPhase 13完了を宣言しません。
 
@@ -413,7 +444,7 @@ Status: `in_progress`
 
 ## After Phase 13
 
-1. 浜松市をReviewed completeへ進め、その後の8市を順次Reviewed到達深度まで処理し、全20政令指定都市の市レベル基盤を完成させる
+1. 名古屋市をReviewed completeへ進め、その後の7市を順次Reviewed到達深度まで処理し、全20政令指定都市の市レベル基盤を完成させる
 2. 中核市・県庁所在地
 3. その他市区町村
 4. 選挙・候補者比較
