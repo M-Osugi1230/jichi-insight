@@ -1,0 +1,75 @@
+{
+  "id": "hamamatsu-current-policy-structure",
+  "phase": 13,
+  "official_code": "221309",
+  "name_ja": "浜松市",
+  "basic_concept_period": "2015年度～2044年度",
+  "basic_plan_period": "2025年度～2034年度",
+  "current_plan_source_id": "hamamatsu-comprehensive-plan",
+  "review_status": "reviewed_current_declared_structure_identity",
+  "hierarchy": {
+    "plan_layer_count": 3,
+    "field_count": 7,
+    "basic_policy_count": 25,
+    "policy_count": 125,
+    "outcome_indicator_count": 38,
+    "life_satisfaction_overall_indicator_count": 8,
+    "life_satisfaction_field_indicator_count": 7,
+    "life_satisfaction_individual_indicator_count": 35,
+    "life_satisfaction_total_indicator_count": 50
+  },
+  "plan_layers": [
+    "基本構想",
+    "基本計画",
+    "実施計画"
+  ],
+  "fields": [
+    {
+      "field_code": "1",
+      "field_name": "産業経済",
+      "outcome_indicator_count": 5
+    },
+    {
+      "field_code": "2",
+      "field_name": "こども・教育",
+      "outcome_indicator_count": 5
+    },
+    {
+      "field_code": "3",
+      "field_name": "安全・安心・快適",
+      "outcome_indicator_count": 6
+    },
+    {
+      "field_code": "4",
+      "field_name": "環境・くらし",
+      "outcome_indicator_count": 5
+    },
+    {
+      "field_code": "5",
+      "field_name": "健康・福祉",
+      "outcome_indicator_count": 5
+    },
+    {
+      "field_code": "6",
+      "field_name": "文化・スポーツ",
+      "outcome_indicator_count": 5
+    },
+    {
+      "field_code": "7",
+      "field_name": "地方自治",
+      "outcome_indicator_count": 7
+    }
+  ],
+  "indicator_semantics": {
+    "outcome_indicator": "基本計画の基本政策に紐づく成果指標。公式ページが現状値と2034年度等の目標値を掲載する。",
+    "life_satisfaction_indicator": "生活満足度指標は総合8・分野7・個別35の計50指標。目標値を設定せず、2024年度調査の実感平均値を基準に中長期の経年変化を把握する。"
+  },
+  "evidence_locations": [
+    "総合計画 総論『計画の期間』『計画の構成』",
+    "基本計画 参考資料『指標』",
+    "2026年度実施計画 PDF p.8『25の基本政策』『125の政策』",
+    "2025年度実施計画評価レポート PDF p.5-10"
+  ],
+  "quality_boundary": "7分野・25基本政策・125政策、成果指標38件、生活満足度指標50件の公式universeをReviewed化する。成果指標38件・政策125件・事業の個別完全構造化、生活満足度の個別35指標値は追加depthとし、aggregate countから個票を推測しない。",
+  "current_implementation_source_id": "hamamatsu-implementation-plan-2026-pdf"
+}

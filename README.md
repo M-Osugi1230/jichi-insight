@@ -12,9 +12,9 @@ Jichi Insight（自治体インサイト）は、自治体が公開する政策�
 - Phase 11個票基盤: 47都道府県・15,327レコード
 - 政令指定都市 Source Inventory: 20 / 20
 - Phase 13 Reviewed reference: 2市（北九州市、福岡市）
-- Phase 13 Reviewed complete: 9市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市）
-- Phase 13 Review in progress: 1市（浜松市）
-- Phase 13 Pending record review: 8市
+- Phase 13 Reviewed complete: 10市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市、浜松市）
+- Phase 13 Review in progress: 1市（名古屋市）
+- Phase 13 Pending record review: 7市
 - 千葉市現行計画: 189 / 189事業identity、406 work itemsをstructured化済み
 - 千葉市旧計画: 360 / 360事業identity、再掲68 / 68を一次identityへ解決済み
 - 千葉市Versioned Linkage: 構造的一致60関係＋公式PDF手動確認6関係、計66関係をReviewed continuedとして昇格
@@ -153,12 +153,12 @@ Status: `in_progress`
 現在のCanonical queue:
 
 - Reviewed reference: 2市（北九州市、福岡市）
-- Reviewed complete: 9市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市）
-- Review in progress: 1市（浜松市）
-- Pending record review: 8市
+- Reviewed complete: 10市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市、浜松市）
+- Review in progress: 1市（名古屋市）
+- Pending record review: 7市
 - Blocked source inventory: 0市
 
-静岡市は`declared_review_package_v1`としてReviewed completeです。第5次静岡市総合計画の2026〜2035年度という期間、基本構想・基本計画・実施計画の3層構成、9分野・45政策というaggregate structure、2026〜2030年度の5年間を対象に毎年度改定する実施計画、施策ごとの成果指標・取組・事業費・担当課という実施層、現行第5次総の年度実績がまだ公表されていないavailability境界、旧第4次総2024評価のhistorical-only境界、2026年度一般会計当初予算403,500,000,000円、2024年度一般会計決算の歳入387,089,852,000円・歳出376,221,432,000円をレビュー済みです。45政策・成果指標・実施計画取組の個票完全構造化、第5次総の将来年度実績、旧第4次総とのversioned linkage、個別財政接続は`deferred_depth`として保持します。現在のPhase 13作業対象は浜松市です。
+浜松市は`declared_review_package_v1`としてReviewed completeです。現行第2期基本計画2025〜2034年度、7分野・25基本政策・125政策、成果指標38件、生活満足度指標50件（総合8・分野7・個別35）、現行計画初年度の2025年度評価から総合8・分野7の15指標について2024基準値と2025実績、2026年度実施計画とPDCA/OODA/EBPM経路、2026年度一般会計当初予算440,100,000,000円、2024年度一般会計決算の歳入416,537,079,000円・歳出403,849,303,000円をレビュー済みです。市民実感指標を政策効果や独自達成率へ変換せず、成果指標38件・125政策・個別実感35指標・事業の完全個票化、2026年度通年Result、個別財政接続は`deferred_depth`として保持します。現在のPhase 13作業対象は名古屋市です。
 
 正本:
 

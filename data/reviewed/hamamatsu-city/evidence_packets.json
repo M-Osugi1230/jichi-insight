@@ -1,0 +1,61 @@
+[
+  {
+    "id": "evidence-hamamatsu-city-2026-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-221309-fiscal-2026-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算は440,100,000千円。",
+        "source_ids": [
+          "hamamatsu-budget-2026-account-totals"
+        ],
+        "location_note": "令和8年度 会計別予算額調『一般会計 440,100,000千円』。",
+        "decision": "accepted",
+        "review_note": "440,100,000,000円として保存。補正後予算・執行・決算とは別state。"
+      }
+    ],
+    "open_questions": [
+      "2026年度補正予算はinitial_budgetを上書きせずrevised_budgetとして別記録を追加する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hamamatsu-city-2024-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-221309-fiscal-2024-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計歳入決算額は416,537,079千円。",
+        "source_ids": [
+          "hamamatsu-settlement-2024-audit"
+        ],
+        "location_note": "令和6年度決算審査意見『一般会計 歳入決算額 416,537,079千円』。",
+        "decision": "accepted",
+        "review_note": "416,537,079,000円として保存。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hamamatsu-city-2024-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-221309-fiscal-2024-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計歳出決算額は403,849,303千円。",
+        "source_ids": [
+          "hamamatsu-settlement-2024-audit"
+        ],
+        "location_note": "令和6年度決算審査意見『一般会計 歳出決算額 403,849,303千円』。",
+        "decision": "accepted",
+        "review_note": "403,849,303,000円として保存。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]
