@@ -1,0 +1,115 @@
+{
+  "id": "kyoto-phase13-sources",
+  "phase": 13,
+  "official_code": "261009",
+  "name_ja": "京都市",
+  "reviewed_at": "2026-09-28",
+  "records": [
+    {
+      "id": "kyoto-city-home",
+      "layer": "municipality_identity",
+      "title": "京都市公式ウェブサイト",
+      "organization": "京都市",
+      "url": "https://www.city.kyoto.lg.jp/",
+      "source_kind": "html",
+      "review_status": "reviewed_official_identity",
+      "confidence": "high",
+      "boundary": "自治体identityと公式ドメイン確認用。政策・財政値は専用公式資料から取得する。"
+    },
+    {
+      "id": "kyoto-basic-concept-2026-2050",
+      "layer": "current_plan",
+      "title": "京都基本構想",
+      "organization": "京都市",
+      "url": "https://www.city.kyoto.lg.jp/sogo/page/0000347968.html",
+      "source_kind": "html",
+      "review_status": "reviewed_adopted_current_basic_concept",
+      "confidence": "high",
+      "boundary": "2026～2050の現行最上位構想。実施事業・年度実績そのものではない。"
+    },
+    {
+      "id": "kyoto-new-strategy-current",
+      "layer": "implementation_strategy",
+      "title": "新京都戦略（令和8年3月改定）",
+      "organization": "京都市",
+      "url": "https://www.city.kyoto.lg.jp/sogo/page/0000339369.html",
+      "source_kind": "html",
+      "review_status": "reviewed_current_revised_strategy",
+      "confidence": "high",
+      "boundary": "京都基本構想を具体化する2024～2027の分野横断アクションプラン。旧令和7年3月版とversion-separated。"
+    },
+    {
+      "id": "kyoto-budget-2026-overview-pdf",
+      "layer": "budget",
+      "title": "令和8年度予算資料",
+      "organization": "京都市",
+      "url": "https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000347/347934/01_2_yosangaiyou0209.pdf",
+      "source_kind": "pdf",
+      "fiscal_year": 2026,
+      "review_status": "reviewed_initial_budget_exact_amount_and_policy_structure",
+      "confidence": "high",
+      "boundary": "一般会計当初予算1,007,967,000千円と、改定新京都戦略6政策に沿う新規・充実事業を確認。補正後予算とは分離する。"
+    },
+    {
+      "id": "kyoto-progress-2024",
+      "layer": "annual_progress",
+      "title": "令和6年度京都市基本計画実施状況（報告）",
+      "organization": "京都市",
+      "url": "https://www.city.kyoto.lg.jp/sogo/page/0000345437.html",
+      "source_kind": "html",
+      "fiscal_year": 2024,
+      "review_status": "reviewed_mixed_version_progress_landing",
+      "confidence": "high",
+      "boundary": "旧京プラン2025の27政策分野と、新京都戦略実施状況を同じ報告内で別laneとして扱う。"
+    },
+    {
+      "id": "kyoto-progress-2024-new-strategy-report",
+      "layer": "current_strategy_progress",
+      "title": "新京都戦略実施状況（令和6年度報告）",
+      "organization": "京都市",
+      "url": "https://www.city.kyoto.lg.jp/sogo/page/0000345437.html",
+      "source_kind": "pdf_linked_from_landing",
+      "fiscal_year": 2024,
+      "review_status": "reviewed_current_strategy_progress_route",
+      "confidence": "high",
+      "boundary": "新京都戦略の2024年度実施状況をcurrent strategy laneとして保持。旧基本計画27分野の政策評価とは統合しない。"
+    },
+    {
+      "id": "kyoto-settlement-2024-reference-data-pdf",
+      "layer": "settlement",
+      "title": "令和6年度決算参考データ集",
+      "organization": "京都市",
+      "url": "https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000344/344356/06kessannsannkoudetasyuu.pdf",
+      "source_kind": "pdf",
+      "fiscal_year": 2024,
+      "review_status": "reviewed_general_account_settlement_rounded_topline",
+      "confidence": "high",
+      "boundary": "一般会計歳入9,801億円・歳出9,718億円を億円表示で確認。元資料の表示単位が億円のため、v1ではrounded source valueとして保持する。"
+    },
+    {
+      "id": "kyoto-settlement-2024-landing",
+      "layer": "settlement",
+      "title": "令和6年度決算について",
+      "organization": "京都市",
+      "url": "https://www.city.kyoto.lg.jp/gyozai/page/0000344356.html",
+      "source_kind": "html",
+      "fiscal_year": 2024,
+      "review_status": "reviewed_settlement_landing",
+      "confidence": "high",
+      "boundary": "決算概況・実績報告・参考データ集・監査審査への公式入口。"
+    },
+    {
+      "id": "kyoto-audit-settlement-2024",
+      "layer": "accountability",
+      "title": "令和6年度京都市一般会計等決算審査及び基金運用状況審査",
+      "organization": "京都市監査事務局",
+      "url": "https://www.city.kyoto.lg.jp/kansa/page/0000225108.html",
+      "source_kind": "html",
+      "fiscal_year": 2024,
+      "review_status": "reviewed_externalized_audit_route",
+      "confidence": "high",
+      "boundary": "監査委員による決算審査の公式route。政策実績評価や市の自己評価と別Evidence role。"
+    }
+  ],
+  "quality_boundary": "京都基本構想2026～2050、新京都戦略2024～2027改定版、2024年度の旧基本計画＋新京都戦略実施報告、2026当初予算、2024決算、監査ルートをversion/evidence role/fiscal stageごとに分離する。旧京プラン2025の27政策分野を現行京都基本構想の政策構造へ流用せず、市の進捗評価・市民実感・監査を統合スコアへ変換しない。"
+}
