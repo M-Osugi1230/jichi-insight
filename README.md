@@ -12,9 +12,9 @@ Jichi Insight（自治体インサイト）は、自治体が公開する政策�
 - Phase 11個票基盤: 47都道府県・15,327レコード
 - 政令指定都市 Source Inventory: 20 / 20
 - Phase 13 Reviewed reference: 2市（北九州市、福岡市）
-- Phase 13 Reviewed complete: 11市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市、浜松市、名古屋市）
-- Phase 13 Review in progress: 1市（京都市）
-- Phase 13 Pending record review: 6市
+- Phase 13 Reviewed complete: 12市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市、浜松市、名古屋市、京都市）
+- Phase 13 Review in progress: 1市（大阪市）
+- Phase 13 Pending record review: 5市
 - 千葉市現行計画: 189 / 189事業identity、406 work itemsをstructured化済み
 - 千葉市旧計画: 360 / 360事業identity、再掲68 / 68を一次identityへ解決済み
 - 千葉市Versioned Linkage: 構造的一致60関係＋公式PDF手動確認6関係、計66関係をReviewed continuedとして昇格
@@ -153,12 +153,12 @@ Status: `in_progress`
 現在のCanonical queue:
 
 - Reviewed reference: 2市（北九州市、福岡市）
-- Reviewed complete: 11市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市、浜松市、名古屋市）
-- Review in progress: 1市（京都市）
-- Pending record review: 6市
+- Reviewed complete: 12市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市、浜松市、名古屋市、京都市）
+- Review in progress: 1市（大阪市）
+- Pending record review: 5市
 - Blocked source inventory: 0市
 
-名古屋市は`declared_review_package_v1`としてReviewed completeです。現行名古屋市総合計画2028の2024〜2028年度、5都市像・42施策・135成果指標・506掲載事業、2024年度進行管理における市公表の成果指標A54・B18・C23・D40（A/B/C計95）と事業進捗☆☆☆☆384・☆☆☆96・☆☆20・☆6・全面的見直し0（上位2分類計480）、市民4,000人対象の成果指標アンケート、有効回収率44.2%、議会修正後に成立した2026年度一般会計当初予算1,696,086,000,000円、2024年度一般会計決算の歳入1,505,378,206,754円・歳出1,486,264,707,319円をレビュー済みです。95/135・480/506は名古屋市のsource-reported aggregateとして保持し、42施策・135指標・506事業の個票完全構造化、アンケート詳細、事業費と財政の個別接続は`deferred_depth`として保持します。現在のPhase 13作業対象は京都市です。
+京都市は`declared_review_package_v1`としてReviewed completeです。京都基本構想2026〜2050、新京都戦略2024〜2027の令和8年3月改定版、現行戦略6政策、政策・しごとの仕方改革・持続可能な行財政運営の3構成、ひらく・きわめる・つなぐの3視点、2024年度報告における新京都戦略実施状況と旧京プラン2025の27政策分野のversion分離、行政実施報告・市会報告・監査のAccountability role分離、2026年度一般会計当初予算1,007,967,000,000円、2024年度一般会計決算の億円表示による歳入980,100,000,000円・歳出971,800,000,000円をレビュー済みです。旧27政策分野を現行政策構造へ流用せず、6政策配下の施策・KPI・事業、構想と戦略の細粒度linkage、個別財政接続は`deferred_depth`として保持します。現在のPhase 13作業対象は大阪市です。
 
 正本:
 
