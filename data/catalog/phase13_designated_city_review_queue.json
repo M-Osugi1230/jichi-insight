@@ -123,7 +123,7 @@
       "official_code": "261009",
       "name_ja": "京都市",
       "prefecture_name_ja": "京都府",
-      "status": "review_in_progress",
+      "status": "reviewed_complete",
       "source_inventory_path": "data/indexed/kyoto-city/source_inventory.json"
     },
     {
@@ -131,7 +131,7 @@
       "official_code": "271004",
       "name_ja": "大阪市",
       "prefecture_name_ja": "大阪府",
-      "status": "pending_record_review",
+      "status": "review_in_progress",
       "source_inventory_path": "data/indexed/osaka-city/source_inventory.json"
     },
     {
@@ -181,10 +181,10 @@
     "reviewed_reference_count": 2,
     "eligible_review_queue_count": 18,
     "blocked_source_inventory_count": 0,
-    "reviewed_complete_count": 11,
+    "reviewed_complete_count": 12,
     "review_in_progress_count": 1,
-    "pending_record_review_count": 6,
-    "next_official_code": "261009"
+    "pending_record_review_count": 5,
+    "next_official_code": "271004"
   },
   "updated_at": "2026-09-28"
 }
