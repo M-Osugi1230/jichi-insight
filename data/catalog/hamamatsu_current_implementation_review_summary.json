@@ -3,25 +3,152 @@
   "phase": 13,
   "official_code": "221309",
   "name_ja": "浜松市",
-  "review_status": "reviewed_current_implementation_and_pdca_method",
-  "source_id": "hamamatsu-implementation-review-2026",
-  "implementation_year": 2026,
-  "implementation_plan": {
-    "status": "published",
-    "role": "annual_execution_plan",
-    "semantics": "第2期基本計画で定めた基本政策・政策ごとに具体的取組内容と進捗を測る指標を示し、実績に基づく評価・改善を次の事業実施へ反映する。"
+  "review_status": "reviewed_current_first_year_result_and_next_year_action",
+  "source_ids": [
+    "hamamatsu-implementation-evaluation-2025",
+    "hamamatsu-implementation-review-2026",
+    "hamamatsu-implementation-plan-2026-pdf"
+  ],
+  "current_plan_period": "2025年度～2034年度",
+  "reviewed_result_year": 2025,
+  "implementation_plan_year": 2026,
+  "declared_structure": {
+    "basic_policy_count": 25,
+    "policy_count": 125
   },
+  "life_satisfaction_indicator_universe": {
+    "overall_indicator_count": 8,
+    "field_indicator_count": 7,
+    "individual_indicator_count": 35,
+    "total_indicator_count": 50,
+    "individual_detail_status": "deferred"
+  },
+  "reviewed_2025_overall_results": [
+    {
+      "id": "wellbeing-overall-1",
+      "name": "幸福実感",
+      "baseline_2024": 6.42,
+      "actual_2025": 6.4,
+      "scale": "0-10_mean"
+    },
+    {
+      "id": "wellbeing-overall-2",
+      "name": "暮らしの満足",
+      "baseline_2024": 6.28,
+      "actual_2025": 6.24,
+      "scale": "0-10_mean"
+    },
+    {
+      "id": "wellbeing-overall-3",
+      "name": "協調的幸福",
+      "baseline_2024": 6.21,
+      "actual_2025": 6.17,
+      "scale": "0-10_mean"
+    },
+    {
+      "id": "wellbeing-overall-4",
+      "name": "住みやすさ",
+      "baseline_2024": 4.05,
+      "actual_2025": 4.12,
+      "scale": "1-5_mean"
+    },
+    {
+      "id": "wellbeing-overall-5",
+      "name": "運動の実施",
+      "baseline_2024": 2.93,
+      "actual_2025": 2.98,
+      "scale": "1-5_mean"
+    },
+    {
+      "id": "wellbeing-overall-6",
+      "name": "身体的健康",
+      "baseline_2024": 3.3,
+      "actual_2025": 3.3,
+      "scale": "1-5_mean"
+    },
+    {
+      "id": "wellbeing-overall-7",
+      "name": "精神的健康",
+      "baseline_2024": 3.39,
+      "actual_2025": 3.4,
+      "scale": "1-5_mean"
+    },
+    {
+      "id": "wellbeing-overall-8",
+      "name": "時間的ゆとり",
+      "baseline_2024": 3.53,
+      "actual_2025": 3.53,
+      "scale": "1-5_mean"
+    }
+  ],
+  "reviewed_2025_field_results": [
+    {
+      "id": "wellbeing-field-1",
+      "field": "産業経済",
+      "name": "経済活動",
+      "baseline_2024": 2.75,
+      "actual_2025": 2.72
+    },
+    {
+      "id": "wellbeing-field-2",
+      "field": "こども・教育",
+      "name": "こどもを生み育てる環境",
+      "baseline_2024": 2.91,
+      "actual_2025": 2.94
+    },
+    {
+      "id": "wellbeing-field-3",
+      "field": "安全・安心・快適",
+      "name": "安全・安心・快適の実感",
+      "baseline_2024": 3.46,
+      "actual_2025": 3.44
+    },
+    {
+      "id": "wellbeing-field-4",
+      "field": "環境・くらし",
+      "name": "生活環境の良好度",
+      "baseline_2024": 3.31,
+      "actual_2025": 3.3
+    },
+    {
+      "id": "wellbeing-field-5",
+      "field": "健康・福祉",
+      "name": "福祉・医療の充実",
+      "baseline_2024": 3.31,
+      "actual_2025": 3.28
+    },
+    {
+      "id": "wellbeing-field-6",
+      "field": "文化・スポーツ",
+      "name": "興味・関心事への取組",
+      "baseline_2024": 2.91,
+      "actual_2025": 2.97
+    },
+    {
+      "id": "wellbeing-field-7",
+      "field": "地方自治",
+      "name": "地域への愛着",
+      "baseline_2024": 3.36,
+      "actual_2025": 3.35
+    }
+  ],
   "pdca": {
     "annual_plan_created": true,
     "indicators_set_and_evaluated": true,
     "summer_review": true,
     "deputy_mayor_review": true,
-    "budget_process_linked": true
+    "budget_process_linked": true,
+    "evidence_based_policy_improvement_declared": true
   },
-  "current_full_year_result": {
+  "current_2026_full_year_result": {
     "status": "not_yet_complete",
-    "reason": "2026年度は進行中であり、2026年度通年の実績評価として確定した年度結果は本v1のcurrent resultとして扱わない。",
-    "promotion_rule": "同年度の公式実績評価が公表された場合にのみcurrent annual resultへ昇格する。"
+    "reason": "2026年度実施計画は進行中であり、2026年度通年の確定評価はまだcurrent resultへ昇格しない。",
+    "promotion_rule": "同年度の公式実施計画評価レポートが公表された場合にのみ追加する。"
   },
-  "quality_boundary": "2026年度実施計画とPDCA経路をReviewed化するが、計画・レビュー会議・通年実績を同一視しない。未確定の2026年度実績を推測せず、行政の評価をJichi Insight独自達成評価へ変換しない。"
+  "evidence_locations": [
+    "2025年度実施計画評価レポート PDF p.5『25の基本政策・125の政策』",
+    "同 PDF p.8『総合指標8・分野指標7、2024基準値・2025実績』",
+    "2026年度実施計画 PDF p.5『PDCA/OODA/EBPM』"
+  ],
+  "quality_boundary": "2025年度は現行第2期基本計画の初年度Resultとして、生活満足度の総合8・分野7の2025実績をReviewed化する。これらは市民の主観的実感であり、政策達成度や因果効果を示すものではない。個別35指標、125政策の評価結果、事業個票は追加depth。2026年度はAction/Planとして保持し、通年実績を推測しない。"
 }
