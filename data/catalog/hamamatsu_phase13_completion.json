@@ -1,0 +1,88 @@
+{
+  "id": "hamamatsu-phase13-completion",
+  "phase": 13,
+  "status": "reviewed_complete",
+  "official_code": "221309",
+  "name_ja": "浜松市",
+  "completed_at": "2026-09-28",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "policy_review_manifest_path": "data/catalog/hamamatsu_phase13_policy_review_manifest.json",
+    "plan_review_path": "data/reviewed/hamamatsu-city/plan_review.json",
+    "source_catalog_path": "data/catalog/hamamatsu_phase13_sources.json",
+    "policy_structure_path": "data/catalog/hamamatsu_current_policy_structure.json",
+    "current_implementation_review_path": "data/catalog/hamamatsu_current_implementation_review_summary.json",
+    "fiscal_records_path": "data/reviewed/hamamatsu-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/hamamatsu-city/evidence_packets.json",
+    "counts": {
+      "current_plan_layers": 3,
+      "current_fields": 7,
+      "current_basic_policies": 25,
+      "current_policies_aggregate": 125,
+      "current_outcome_indicators_aggregate": 38,
+      "life_satisfaction_indicators_total": 50,
+      "life_satisfaction_results_reviewed": 15,
+      "current_implementation_year": 2026,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "current_plan_period_review_complete": true,
+    "current_7_field_25_basic_policy_125_policy_structure_review_complete": true,
+    "current_38_outcome_indicator_universe_review_complete": true,
+    "life_satisfaction_50_indicator_universe_review_complete": true,
+    "fy2025_life_satisfaction_15_result_review_complete": true,
+    "citizen_perception_not_promoted_to_policy_achievement": true,
+    "fy2026_action_and_full_year_result_separate": true,
+    "pdca_ooda_ebpm_route_review_complete": true,
+    "budget_and_settlement_states_separate": true,
+    "aggregate_counts_not_promoted_to_individual_records": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "outcome-indicator-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "count": 38,
+      "boundary": "成果指標38件の指標名・定義・現状値・目標値・測定年・目標年の完全個票化は追加depth。aggregate countから未確認値を推測しない。"
+    },
+    {
+      "id": "policy-detail-and-evaluation",
+      "status": "deferred_not_required_for_v1_completion",
+      "count": 125,
+      "boundary": "125政策の個別identity、担当課、関連事業、指標、2025年度評価結果は追加depth。評価未抽出政策を一律評価しない。"
+    },
+    {
+      "id": "individual-life-satisfaction-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "count": 35,
+      "boundary": "生活満足度の個別35指標の2024基準値・2025実績・属性別結果は追加depth。総合8・分野7の傾向を個別35へ配分しない。"
+    },
+    {
+      "id": "fy2026-full-year-result",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "2026年度は実施計画Actionが進行中。公式の2026年度評価レポートが公表された場合にのみ通年Resultへ昇格し、途中レビューを通年成果とみなさない。"
+    },
+    {
+      "id": "implementation-project-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "2026年度実施計画の事業identity・事業費・担当課・指標との関係の全件構造化は追加depth。未確認の事業接続を推測しない。"
+    },
+    {
+      "id": "fiscal-detail-policy-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "v1では2026年度一般会計当初予算と2024年度一般会計決算トップラインをstate分離して保持する。補正、執行、個別事業費、契約、補助金の政策・事業接続は別Evidenceレビューとする。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "市民実感指標、行政評価、実施計画、財政値のレビューは政策効果の因果認定や他都市との比較可能性を意味しない。専用方法論なしに統合スコアやランキングへ昇格しない。"
+    }
+  ],
+  "completion_boundary": "浜松市のPhase 13 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味する。浜松市総合計画の基本構想・基本計画・実施計画という3層、第2期基本計画2025～2034年度、7分野・25基本政策・125政策、成果指標38件、生活満足度の総合8・分野7・個別35の計50指標、現行計画初年度である2025年度評価レポートのうち総合8・分野7の15指標について2024基準値と2025実績、2026年度実施計画とPDCA/OODA/EBPM経路、2026年度一般会計当初予算440,100,000,000円、2024年度一般会計決算歳入416,537,079,000円・歳出403,849,303,000円をレビュー済みである。一方、成果指標38件・125政策・個別実感35指標・実施計画事業の完全個票化、2026年度通年Result、個別財政接続はdeferred_depthとして明示する。市民実感の変化は政策効果や因果関係を直接示すものではなく、この完了はJichi Insight独自の政策達成度、因果効果、他都市比較可能性またはランキングの認定を意味しない。"
+}
