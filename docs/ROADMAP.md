@@ -142,9 +142,9 @@ Canonical queue（2026-09-28同期）:
 
 - Reviewed reference: 2市（北九州市、福岡市）
 - Review queue eligible: 18市
-- Reviewed complete: 11市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市、浜松市、名古屋市）
-- Review in progress: 1市（京都市）
-- Pending record review: 6市
+- Reviewed complete: 12市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市、浜松市、名古屋市、京都市）
+- Review in progress: 1市（大阪市）
+- Pending record review: 5市
 - Blocked source inventory: 0市
 
 状態の正本は `data/catalog/phase13_designated_city_review_queue.json` です。文書上の集計とmachine-readable queueが競合する場合はqueueを優先します。
@@ -459,11 +459,42 @@ Status: `complete`（2026-09-28）
 - `data/reviewed/nagoya-city/fiscal_records.json`
 - `tests/test_phase13_nagoya_completion.py`
 
-### Current work — Kyoto record review
+### Milestone M13 — Kyoto reviewed complete
+
+Status: `complete`（2026-09-28）
+
+京都市は`declared_review_package_v1`としてReviewed completeです。
+
+- Current basic concept: 2026〜2050年
+- Current strategy: 2024〜2027年度（令和8年3月改定）
+- Current strategy policies: 6
+- Strategy components: 3（政策、しごとの仕方改革、持続可能な行財政運営の確立）
+- Strategic perspectives: 3（ひらく、きわめる、つなぐ）
+- Current FY2024 strategy progress route: published
+- Historical basic-plan policy fields preserved: 27（京プラン2025）
+- Accountability lanes: 行政実施報告・市会報告・監査
+- FY2026 general-account initial budget: 1,007,967,000,000円
+- FY2024 general-account settlement: 歳入980,100,000,000円 / 歳出971,800,000,000円（公式資料の億円表示に基づくrounded source value）
+- Fiscal top-line records: 3
+
+同じ2024年度報告内でも、現行新京都戦略と旧京プラン2025の27政策分野を別versionとして保持します。6政策配下の施策・KPI・実績、リーディング・プロジェクト・政策集の全件個票、京都基本構想と新京都戦略の細粒度linkage、個別財政接続は`deferred_depth`として明示します。行政実施報告・市会報告・監査を統合スコアへ変換しません。
+
+正本:
+
+- `data/catalog/kyoto_phase13_completion.json`
+- `schemas/kyoto_phase13_completion.schema.json`
+- `data/catalog/kyoto_phase13_policy_review_manifest.json`
+- `data/catalog/kyoto_current_strategy_structure.json`
+- `data/catalog/kyoto_current_progress_review_summary.json`
+- `data/reviewed/kyoto-city/plan_review.json`
+- `data/reviewed/kyoto-city/fiscal_records.json`
+- `tests/test_phase13_kyoto_completion.py`
+
+### Current work — Osaka record review
 
 Status: `in_progress`
 
-名古屋市のReviewed completionにより、Canonical queueの次対象は京都市（261009）です。Phase 12で確定した公式Source Inventoryを起点に、現行計画identity、実施・進行管理層、成果指標、財政、version boundaryをEvidence付きでレビューします。
+京都市のReviewed completionにより、Canonical queueの次対象は大阪市（271004）です。Phase 12で確定した公式Source Inventoryを起点に、現行計画identity、実施・進行管理層、成果指標、財政、version boundaryをEvidence付きでレビューします。
 
 公式一次資料・version・期間・財政state・評価主体を分離し、未公開Evidenceを推測補完しません。Schema、Evidence coverage、回帰テストを通過するまで市単位のPhase 13完了を宣言しません。
 
@@ -477,7 +508,7 @@ Status: `in_progress`
 
 ## After Phase 13
 
-1. 京都市をReviewed completeへ進め、その後の6市を順次Reviewed到達深度まで処理し、全20政令指定都市の市レベル基盤を完成させる
+1. 大阪市をReviewed completeへ進め、その後の5市を順次Reviewed到達深度まで処理し、全20政令指定都市の市レベル基盤を完成させる
 2. 中核市・県庁所在地
 3. その他市区町村
 4. 選挙・候補者比較
