@@ -1,0 +1,65 @@
+[
+  {
+    "id": "jp-local-261009-fiscal-2026-total-revenue",
+    "municipality_id": "jp-local-261009",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_revenue",
+    "metric_label": "一般会計当初予算",
+    "amount_yen": 1007967000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "令和8年度予算資料の一般会計当初予算1,007,967,000千円を円換算。5月補正前規模とも整合。補正・執行・決算とは別state。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "kyoto-budget-2026-overview-pdf"
+    ]
+  },
+  {
+    "id": "jp-local-261009-fiscal-2024-total-revenue",
+    "municipality_id": "jp-local-261009",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入決算額（億円表示）",
+    "amount_yen": 980100000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "令和6年度決算参考データ集の一般会計歳入総額9,801億円を円換算。元資料の表示単位が億円のためrounded source valueとして保持。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "kyoto-settlement-2024-reference-data-pdf"
+    ]
+  },
+  {
+    "id": "jp-local-261009-fiscal-2024-total-expenditure",
+    "municipality_id": "jp-local-261009",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出決算額（億円表示）",
+    "amount_yen": 971800000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "令和6年度決算参考データ集の一般会計歳出総額9,718億円を円換算。元資料の表示単位が億円のためrounded source valueとして保持。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "kyoto-settlement-2024-reference-data-pdf"
+    ]
+  }
+]
