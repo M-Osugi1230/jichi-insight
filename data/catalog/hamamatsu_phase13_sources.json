@@ -72,6 +72,29 @@
       "boundary": "2026年度実施計画、毎年度の指標設定・評価、サマーレビュー・副市長レビューを確認する。2026年度通年実績は未確定。"
     },
     {
+      "id": "hamamatsu-implementation-plan-2026-pdf",
+      "layer": "implementation_plan",
+      "title": "浜松市総合計画 2026年度実施計画",
+      "organization": "浜松市",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/documents/166644/260000000000.pdf",
+      "source_kind": "pdf",
+      "review_status": "reviewed_current_implementation_structure",
+      "confidence": "high",
+      "boundary": "25基本政策・125政策、毎年度実施計画、PDCA/OODA/EBPM、生活満足度指標体系を確認する。政策・事業個票全件は追加depth。"
+    },
+    {
+      "id": "hamamatsu-implementation-evaluation-2025",
+      "layer": "current_plan_progress",
+      "title": "2025年度実施計画評価レポート",
+      "organization": "浜松市",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/documents/173577/2507hyouka.pdf",
+      "source_kind": "pdf",
+      "fiscal_year": 2025,
+      "review_status": "reviewed_current_first_year_result",
+      "confidence": "high",
+      "boundary": "現行第2期基本計画初年度の評価レポート。25基本政策・125政策の評価構造、生活満足度の総合8・分野7・個別35指標の2024基準値と2025値を確認する。市民実感指標を政策効果や独自達成率へ変換しない。"
+    },
+    {
       "id": "hamamatsu-budget-2026",
       "layer": "budget",
       "title": "令和8年度当初予算の概要",
@@ -108,5 +131,5 @@
       "boundary": "一般会計歳入416,537,079千円・歳出403,849,303千円を確認。予算・特別会計・収支とは分離する。"
     }
   ],
-  "quality_boundary": "現行総合計画3層、第2期基本計画2025～2034、7分野・成果指標38件、2026年度実施計画とPDCAレビュー、2026当初予算、2024決算をevidence role/fiscal stageごとに分離する。2026年度通年実績はまだ確定していないため推測せず、市の評価とJichi Insight独自評価を混同しない。"
+  "quality_boundary": "現行総合計画3層、第2期基本計画2025～2034、7分野・25基本政策・125政策・成果指標38件、2025年度評価、2026年度実施計画とPDCAレビュー、2026当初予算、2024決算をevidence role/fiscal stageごとに分離する。2025年度の生活満足度指標は市民実感の測定であり政策成果と自動同一視せず、2026年度通年実績は未確定のまま保持する。"
 }
