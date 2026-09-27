@@ -1,0 +1,62 @@
+[
+  {
+    "id": "evidence-nagoya-city-2026-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2026-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計歳入歳出予算総額は1,696,086,000千円。",
+        "source_ids": [
+          "nagoya-budget-2026-amended-pdf",
+          "nagoya-budget-2026-amended-landing"
+        ],
+        "location_note": "令和8年度名古屋市各会計予算（修正後） PDF p.1（PDF index p.6）第1条。公式ページに2026年3月19日の議会修正後成立を明記。",
+        "decision": "accepted",
+        "review_note": "1,696,086,000,000円として保存。原案ではなく修正後成立版。"
+      }
+    ],
+    "open_questions": [
+      "補正予算はinitial_budgetを上書きせずrevised_budgetとして別記録を追加する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2024-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計歳入決算額は1,505,378,206,754円。",
+        "source_ids": [
+          "nagoya-settlement-2024-general-account-pdf"
+        ],
+        "location_note": "令和6年度一般会計決算について PDF p.1 / 参考表 p.5。",
+        "decision": "accepted",
+        "review_note": "形式収支19,113,499,435円とは別指標。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2024-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計歳出決算額は1,486,264,707,319円。",
+        "source_ids": [
+          "nagoya-settlement-2024-general-account-pdf"
+        ],
+        "location_note": "令和6年度一般会計決算について PDF p.2 / 参考表 p.5。",
+        "decision": "accepted",
+        "review_note": "予算・形式収支・実質収支とは別指標。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]

@@ -1,0 +1,126 @@
+{
+  "id": "nagoya-phase13-sources",
+  "phase": 13,
+  "official_code": "231002",
+  "name_ja": "名古屋市",
+  "reviewed_at": "2026-09-28",
+  "records": [
+    {
+      "id": "nagoya-city-home",
+      "layer": "municipality_identity",
+      "title": "名古屋市公式ウェブサイト",
+      "organization": "名古屋市",
+      "url": "https://www.city.nagoya.jp/",
+      "source_kind": "html",
+      "review_status": "reviewed_official_identity",
+      "confidence": "high",
+      "boundary": "自治体identityと公式ドメインの確認に使用。政策・財政値は専用一次資料から取得する。"
+    },
+    {
+      "id": "nagoya-comprehensive-plan-2028",
+      "layer": "current_plan",
+      "title": "名古屋市総合計画2028",
+      "organization": "名古屋市",
+      "url": "https://www.city.nagoya.jp/shisei/keikaku/1010854/1010856/1010858.html",
+      "source_kind": "html",
+      "review_status": "reviewed_current_plan_identity",
+      "confidence": "high",
+      "boundary": "2024～2028年度の現行総合計画。2040年頃を見据えた長期的展望と5つのめざす都市像を含む。"
+    },
+    {
+      "id": "nagoya-comprehensive-plan-pamphlet",
+      "layer": "current_plan_structure",
+      "title": "名古屋市総合計画2028パンフレット",
+      "organization": "名古屋市",
+      "url": "https://www.city.nagoya.jp/somu/cmsfiles/contents/0000178/178326/leaflet2028_compressed.pdf",
+      "source_kind": "pdf",
+      "review_status": "reviewed_current_42_measure_506_project_structure",
+      "confidence": "high",
+      "boundary": "42施策・506掲載事業の公式構造を確認する。個別506事業identity全件は追加depth。"
+    },
+    {
+      "id": "nagoya-progress-2024",
+      "layer": "current_plan_progress",
+      "title": "名古屋市総合計画2028進行管理（令和6年度）",
+      "organization": "名古屋市",
+      "url": "https://www.city.nagoya.jp/shisei/keikaku/1010854/1010856/1040445/1040446.html",
+      "source_kind": "html",
+      "fiscal_year": 2024,
+      "review_status": "reviewed_current_progress_landing",
+      "confidence": "high",
+      "boundary": "42施策・135指標・506掲載事業の2024年度進行管理。市公表の達成/進捗分類をJichi Insight独自評価へ変換しない。"
+    },
+    {
+      "id": "nagoya-progress-2024-pdf",
+      "layer": "current_plan_progress",
+      "title": "名古屋市総合計画2028 令和6年度の実施状況",
+      "organization": "名古屋市",
+      "url": "https://www.city.nagoya.jp/_res/projects/default_project/_page_/001/040/446/jissijoukyour6.pdf",
+      "source_kind": "pdf",
+      "fiscal_year": 2024,
+      "review_status": "reviewed_source_reported_indicator_and_project_aggregates",
+      "confidence": "high",
+      "boundary": "135指標のA/B/C/D集計、506事業の進捗集計、事業費見込みを確認。集計結果を未確認個票へ配分しない。"
+    },
+    {
+      "id": "nagoya-indicator-survey-2025",
+      "layer": "citizen_survey",
+      "title": "名古屋市総合計画2028成果指標に関するアンケート調査結果（令和7年4月実施）",
+      "organization": "名古屋市",
+      "url": "https://www.city.nagoya.jp/shisei/keikaku/1010854/1010856/1040445/1040446.html",
+      "source_kind": "html",
+      "review_status": "reviewed_citizen_survey_route",
+      "confidence": "high",
+      "boundary": "市民満足度・意識等の一部成果指標の測定元。行政評価と別Evidence roleとして保持し、4,000人対象・有効回収率44.2%の調査結果を全市民の直接評価とみなさない。"
+    },
+    {
+      "id": "nagoya-budget-2026-amended-landing",
+      "layer": "budget",
+      "title": "令和8年度名古屋市各会計予算（修正後）",
+      "organization": "名古屋市",
+      "url": "https://www.city.nagoya.jp/shisei/zaisei/1002655/1042582/1042583/1046227/1046325/1046326.html",
+      "source_kind": "html",
+      "fiscal_year": 2026,
+      "review_status": "reviewed_enacted_amended_budget_landing",
+      "confidence": "high",
+      "boundary": "2026年3月19日成立。一般会計は議員提案修正後の成立版を用い、原案と区別する。"
+    },
+    {
+      "id": "nagoya-budget-2026-amended-pdf",
+      "layer": "budget",
+      "title": "令和8年度名古屋市各会計予算（修正後）",
+      "organization": "名古屋市",
+      "url": "https://www.city.nagoya.jp/_res/projects/default_project/_page_/001/046/326/kakukaikeisyuuseimiekesi.pdf",
+      "source_kind": "pdf",
+      "fiscal_year": 2026,
+      "review_status": "reviewed_general_account_initial_budget_exact_amount",
+      "confidence": "high",
+      "boundary": "一般会計歳入歳出予算総額1,696,086,000千円を確認。補正・執行・決算とは別state。"
+    },
+    {
+      "id": "nagoya-settlement-2024-landing",
+      "layer": "settlement",
+      "title": "一般会計決算",
+      "organization": "名古屋市",
+      "url": "https://www.city.nagoya.jp/shisei/zaisei/1003557/1003558.html",
+      "source_kind": "html",
+      "fiscal_year": 2024,
+      "review_status": "reviewed_general_account_settlement_landing",
+      "confidence": "high",
+      "boundary": "2024年度一般会計決算の公式入口。特別会計・公営企業・監査意見は別Evidence role。"
+    },
+    {
+      "id": "nagoya-settlement-2024-general-account-pdf",
+      "layer": "settlement",
+      "title": "令和6年度一般会計決算について",
+      "organization": "名古屋市",
+      "url": "https://www.city.nagoya.jp/_res/projects/default_project/_page_/001/003/558/r6ippannkaikeikessann2.pdf",
+      "source_kind": "pdf",
+      "fiscal_year": 2024,
+      "review_status": "reviewed_general_account_settlement_exact_amounts",
+      "confidence": "high",
+      "boundary": "一般会計歳入1,505,378,206,754円・歳出1,486,264,707,319円を確認。形式収支・実質収支とは分離する。"
+    }
+  ],
+  "quality_boundary": "現行2024～2028総合計画、42施策・135成果指標・506掲載事業、2024年度進行管理、市民アンケート、議会修正後の2026当初予算、2024決算をversion/evidence role/fiscal stageごとに分離する。市のA/B/C/D評価・事業進捗分類・市民意識調査を相互に統合せず、Jichi Insight独自の政策達成度・因果効果・他都市比較へ変換しない。"
+}

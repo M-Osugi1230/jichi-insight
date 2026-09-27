@@ -142,9 +142,9 @@ Canonical queue（2026-09-28同期）:
 
 - Reviewed reference: 2市（北九州市、福岡市）
 - Review queue eligible: 18市
-- Reviewed complete: 10市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市、浜松市）
-- Review in progress: 1市（名古屋市）
-- Pending record review: 7市
+- Reviewed complete: 11市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市、浜松市、名古屋市）
+- Review in progress: 1市（京都市）
+- Pending record review: 6市
 - Blocked source inventory: 0市
 
 状態の正本は `data/catalog/phase13_designated_city_review_queue.json` です。文書上の集計とmachine-readable queueが競合する場合はqueueを優先します。
@@ -426,11 +426,44 @@ Status: `complete`（2026-09-28）
 - `data/reviewed/hamamatsu-city/fiscal_records.json`
 - `tests/test_phase13_hamamatsu_completion.py`
 
-### Current work — Nagoya record review
+### Milestone M12 — Nagoya reviewed complete
+
+Status: `complete`（2026-09-28）
+
+名古屋市は`declared_review_package_v1`としてReviewed completeです。
+
+- Current plan period: 2024〜2028年度
+- City visions: 5
+- Current measures: 42（aggregate）
+- Outcome indicators: 135（aggregate）
+- Listed projects: 506（aggregate）
+- FY2024 indicator classification: A54 / B18 / C23 / D40
+- FY2024 source-reported A+B+C: 95 / 135
+- FY2024 project classification: ☆☆☆☆384 / ☆☆☆96 / ☆☆20 / ☆6 / 全面的見直し0
+- FY2024 source-reported upper two project classes: 480 / 506
+- Citizen survey: 4,000人対象、有効回収率44.2%
+- FY2026 general-account initial budget (amended enacted version): 1,696,086,000,000円
+- FY2024 general-account settlement: 歳入1,505,378,206,754円 / 歳出1,486,264,707,319円
+- Fiscal top-line records: 3
+
+95/135および480/506は名古屋市によるsource-reported aggregateです。未確認個票へ機械配分せず、Jichi Insight独自の政策達成度へ変換しません。42施策・135指標・506事業の完全個票化、市民アンケート詳細、概算事業費と一般会計財政の個別接続は`deferred_depth`として明示します。
+
+正本:
+
+- `data/catalog/nagoya_phase13_completion.json`
+- `schemas/nagoya_phase13_completion.schema.json`
+- `data/catalog/nagoya_phase13_policy_review_manifest.json`
+- `data/catalog/nagoya_current_policy_structure.json`
+- `data/catalog/nagoya_current_progress_review_summary.json`
+- `data/reviewed/nagoya-city/plan_review.json`
+- `data/reviewed/nagoya-city/fiscal_records.json`
+- `tests/test_phase13_nagoya_completion.py`
+
+### Current work — Kyoto record review
 
 Status: `in_progress`
 
-浜松市のReviewed completionにより、Canonical queueの次対象は名古屋市（231002）です。Phase 12で確定した公式Source Inventoryを起点に、現行計画identity、実施・進行管理層、成果指標、財政、version boundaryをEvidence付きでレビューします。
+名古屋市のReviewed completionにより、Canonical queueの次対象は京都市（261009）です。Phase 12で確定した公式Source Inventoryを起点に、現行計画identity、実施・進行管理層、成果指標、財政、version boundaryをEvidence付きでレビューします。
 
 公式一次資料・version・期間・財政state・評価主体を分離し、未公開Evidenceを推測補完しません。Schema、Evidence coverage、回帰テストを通過するまで市単位のPhase 13完了を宣言しません。
 
@@ -444,7 +477,7 @@ Status: `in_progress`
 
 ## After Phase 13
 
-1. 名古屋市をReviewed completeへ進め、その後の7市を順次Reviewed到達深度まで処理し、全20政令指定都市の市レベル基盤を完成させる
+1. 京都市をReviewed completeへ進め、その後の6市を順次Reviewed到達深度まで処理し、全20政令指定都市の市レベル基盤を完成させる
 2. 中核市・県庁所在地
 3. その他市区町村
 4. 選挙・候補者比較

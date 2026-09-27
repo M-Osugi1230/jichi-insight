@@ -1,0 +1,83 @@
+{
+  "id": "nagoya-current-progress-review-summary",
+  "phase": 13,
+  "official_code": "231002",
+  "name_ja": "名古屋市",
+  "review_status": "reviewed_source_reported_2024_progress_aggregates",
+  "source_id": "nagoya-progress-2024-pdf",
+  "reporting_fiscal_year": 2024,
+  "scope": {
+    "measure_count": 42,
+    "outcome_indicator_count": 135,
+    "listed_project_count": 506
+  },
+  "indicator_evaluation": {
+    "categories": {
+      "A": {
+        "count": 54,
+        "meaning": "当該年度の基準値を達成した"
+      },
+      "B": {
+        "count": 18,
+        "meaning": "計画策定時の値に対して向上した"
+      },
+      "C": {
+        "count": 23,
+        "meaning": "計画策定時の値に対してやや向上または維持した"
+      },
+      "D": {
+        "count": 40,
+        "meaning": "計画策定時の値を下回った"
+      }
+    },
+    "A_B_C_count": 95,
+    "city_summary": "135指標のうち95指標（およそ7割）が達成、向上または維持",
+    "boundary": "名古屋市によるsource-reported分類。A/B/C/DをJichi Insight独自達成度へ変換しない。"
+  },
+  "project_progress": {
+    "categories": {
+      "four_stars": {
+        "count": 384,
+        "meaning": "特に順調に進ちょくした"
+      },
+      "three_stars": {
+        "count": 96,
+        "meaning": "順調に進ちょくした"
+      },
+      "two_stars": {
+        "count": 20,
+        "meaning": "やや遅れが見受けられた"
+      },
+      "one_star": {
+        "count": 6,
+        "meaning": "遅れが見受けられた"
+      },
+      "revised": {
+        "count": 0,
+        "meaning": "事業の全面的見直しがあった"
+      }
+    },
+    "four_or_three_stars_count": 480,
+    "city_summary": "506事業のうち480事業（およそ9割）が順調に進ちょく",
+    "boundary": "複数目標事業は市が総合して記号を付与。集計を個別未確認事業へ配分しない。"
+  },
+  "project_cost": {
+    "plan_total_approx_yen": 2698700000000,
+    "fy2024_actual_estimate_approx_yen": 514500000000,
+    "source_wording": "計画事業費 約2兆6,987億円、令和6年度実績事業費（見込み）約5,145億円",
+    "boundary": "概算・見込み値。一般会計決算や個別事業決算とは別Evidence role。"
+  },
+  "citizen_survey": {
+    "target_population": "名古屋市に居住する4,000人",
+    "survey_period": "2025年4月",
+    "valid_response_rate_percent": 44.2,
+    "role": "一部成果指標の市民満足度・意識測定",
+    "boundary": "行政による施策評価や506事業進捗とは別Evidence role。"
+  },
+  "evidence_locations": [
+    "令和6年度実施状況 PDF p.2『成果指標の達成状況』",
+    "同 PDF p.3『事業の進ちょく状況』『事業費』",
+    "進行管理公式ページ『成果指標アンケート』"
+  ],
+  "quality_boundary": "A/B/C/Dおよび星分類は名古屋市のsource-reported progress classificationとして保持する。95/135、480/506、事業費見込み、市民アンケートを統合スコアへ変換せず、因果効果・他都市比較可能性・Jichi Insight独自達成度を推測しない。"
+}

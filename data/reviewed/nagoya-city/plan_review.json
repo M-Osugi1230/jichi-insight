@@ -1,0 +1,75 @@
+{
+  "id": "phase13-nagoya-plan-review",
+  "official_code": "231002",
+  "name_ja": "名古屋市",
+  "review_status": "review_in_progress_structure_progress_and_fiscal_boundaries_reviewed",
+  "reviewed_at": "2026-09-28",
+  "records": [
+    {
+      "id": "nagoya-current-plan-period",
+      "evidence_role": "current_plan_identity",
+      "title": "名古屋市総合計画2028",
+      "statement": "現行総合計画の計画期間は2024年度から2028年度まで。",
+      "value": "2024年度～2028年度",
+      "source_id": "nagoya-comprehensive-plan-2028",
+      "evidence_location": "名古屋市総合計画2028 公式ページ",
+      "decision": "accepted"
+    },
+    {
+      "id": "nagoya-current-plan-structure",
+      "evidence_role": "current_policy_structure",
+      "title": "5都市像・42施策・135成果指標・506掲載事業",
+      "statement": "現行計画は5つのめざす都市像の下に42施策を置き、135成果指標と506掲載事業を進行管理する。",
+      "value": 42,
+      "unit": "measures",
+      "city_vision_count": 5,
+      "outcome_indicator_count": 135,
+      "listed_project_count": 506,
+      "source_id": "nagoya-progress-2024",
+      "evidence_location": "進行管理公式ページ『実施状況』、計画パンフレット",
+      "reviewed_data_path": "data/catalog/nagoya_current_policy_structure.json",
+      "decision": "accepted_declared_structure_identity",
+      "review_note": "42施策・135指標・506事業の個票完全構造化は追加depth。"
+    },
+    {
+      "id": "nagoya-current-2024-indicator-result",
+      "evidence_role": "current_plan_progress",
+      "title": "令和6年度 成果指標の達成状況",
+      "statement": "135指標の市分類はA54・B18・C23・D40で、A/B/C計95指標を市は『達成、向上または維持』と公表した。",
+      "value": 135,
+      "unit": "outcome_indicators",
+      "source_id": "nagoya-progress-2024-pdf",
+      "evidence_location": "令和6年度実施状況 PDF p.2",
+      "reviewed_data_path": "data/catalog/nagoya_current_progress_review_summary.json",
+      "decision": "accepted_source_reported_aggregate",
+      "review_note": "A/B/C/Dは名古屋市の進捗分類。Jichi Insight独自達成度へ変換しない。"
+    },
+    {
+      "id": "nagoya-current-2024-project-result",
+      "evidence_role": "current_plan_progress",
+      "title": "令和6年度 掲載事業の進ちょく状況",
+      "statement": "506事業の市分類は☆☆☆☆384・☆☆☆96・☆☆20・☆6・全面的見直し0で、480事業を市は『順調に進ちょく』と公表した。",
+      "value": 506,
+      "unit": "listed_projects",
+      "source_id": "nagoya-progress-2024-pdf",
+      "evidence_location": "令和6年度実施状況 PDF p.3",
+      "reviewed_data_path": "data/catalog/nagoya_current_progress_review_summary.json",
+      "decision": "accepted_source_reported_aggregate",
+      "review_note": "集計値を506事業の個別未確認レコードへ機械配分しない。"
+    },
+    {
+      "id": "nagoya-current-citizen-survey-route",
+      "evidence_role": "citizen_survey",
+      "title": "成果指標アンケート",
+      "statement": "市民満足度や意識等に関する成果指標の測定のため、市内居住4,000人を対象に2025年4月調査を実施し、有効回収率は44.2%。",
+      "value": 44.2,
+      "unit": "percent_valid_response_rate",
+      "source_id": "nagoya-indicator-survey-2025",
+      "evidence_location": "進行管理公式ページ『成果指標アンケート』",
+      "decision": "accepted_separate_citizen_evidence_role",
+      "review_note": "行政による成果指標評価や事業進捗と別Evidence role。"
+    }
+  ],
+  "quality_boundary": "現行2024～2028総合計画、5都市像・42施策・135指標・506事業、2024年度成果指標・事業進捗の市集計、市民アンケートをReviewed化した。A/B/C/D、星分類、市民意識調査を相互に統合せず、個別施策・指標・事業の完全構造化、財政・契約接続、因果効果、独自政策達成度、他都市比較可能性は別レビュー単位。",
+  "next_action": "Add amended FY2026 initial-budget and FY2024 general-account settlement top lines, then define Nagoya's declared v1 completion package and deferred depth."
+}
