@@ -1,0 +1,119 @@
+{
+  "id": "hamamatsu-phase13-policy-review-manifest",
+  "phase": 13,
+  "official_code": "221309",
+  "name_ja": "浜松市",
+  "status": "review_in_progress",
+  "reviewed_at": "2026-09-28",
+  "source_catalog_path": "data/catalog/hamamatsu_phase13_sources.json",
+  "plan_review_path": "data/reviewed/hamamatsu-city/plan_review.json",
+  "policy_structure_path": "data/catalog/hamamatsu_current_policy_structure.json",
+  "current_implementation_review_path": "data/catalog/hamamatsu_current_implementation_review_summary.json",
+  "fiscal_records_path": "data/reviewed/hamamatsu-city/fiscal_records.json",
+  "fiscal_evidence_path": "data/reviewed/hamamatsu-city/evidence_packets.json",
+  "reviewed_facts": [
+    {
+      "id": "hamamatsu-current-plan-period",
+      "layer": "current_plan",
+      "field": "basic_plan_period",
+      "value": "2025年度～2034年度",
+      "source_id": "hamamatsu-basic-plan-overview",
+      "review_status": "reviewed",
+      "interpretation_boundary": "第1期基本計画等の過年度計画とversion-separated。"
+    },
+    {
+      "id": "hamamatsu-current-policy-structure",
+      "layer": "current_plan",
+      "field": "policy_structure",
+      "field_count": 7,
+      "basic_policy_count": 25,
+      "policy_count": 125,
+      "source_id": "hamamatsu-implementation-plan-2026-pdf",
+      "review_status": "reviewed_declared_structure_identity",
+      "interpretation_boundary": "125政策個票・事業個票全件は追加depth。"
+    },
+    {
+      "id": "hamamatsu-current-outcome-indicator-universe",
+      "layer": "current_plan",
+      "field": "outcome_indicator_universe",
+      "value": 38,
+      "unit": "outcome_indicators",
+      "source_id": "hamamatsu-basic-plan-indicators",
+      "review_status": "reviewed_universe_count",
+      "interpretation_boundary": "成果指標38件の完全個票化は追加depth。"
+    },
+    {
+      "id": "hamamatsu-life-satisfaction-indicator-universe",
+      "layer": "current_plan_progress",
+      "field": "life_satisfaction_indicator_universe",
+      "overall_count": 8,
+      "field_count": 7,
+      "individual_count": 35,
+      "total_count": 50,
+      "source_id": "hamamatsu-implementation-evaluation-2025",
+      "review_status": "reviewed_universe_and_partial_results",
+      "interpretation_boundary": "総合8・分野7の2025実績を個票レビュー。個別35は追加depth。市民実感を政策達成度へ変換しない。"
+    },
+    {
+      "id": "hamamatsu-current-2025-result",
+      "layer": "current_plan_progress",
+      "field": "reviewed_life_satisfaction_results",
+      "value": 15,
+      "unit": "indicator_results",
+      "source_id": "hamamatsu-implementation-evaluation-2025",
+      "review_status": "reviewed_current_first_year_results",
+      "interpretation_boundary": "2024基準値と2025値を保持する主観的実感指標。政策効果の因果認定ではない。"
+    },
+    {
+      "id": "hamamatsu-current-2026-action",
+      "layer": "implementation_plan",
+      "field": "implementation_year",
+      "value": 2026,
+      "source_id": "hamamatsu-implementation-plan-2026-pdf",
+      "review_status": "reviewed_current_action",
+      "interpretation_boundary": "2026年度通年Resultは未確定。PDCA/OODA/EBPMの実施計画として保持する。"
+    },
+    {
+      "id": "hamamatsu-2026-general-account-initial-budget",
+      "layer": "fiscal",
+      "field": "general_account_initial_budget",
+      "fiscal_year": 2026,
+      "value": 440100000000,
+      "unit": "yen",
+      "source_id": "hamamatsu-budget-2026-account-totals",
+      "review_status": "reviewed",
+      "interpretation_boundary": "当初予算。補正・執行・決算とは別state。"
+    },
+    {
+      "id": "hamamatsu-2024-general-account-settlement-revenue",
+      "layer": "fiscal",
+      "field": "general_account_settlement_revenue",
+      "fiscal_year": 2024,
+      "value": 416537079000,
+      "unit": "yen",
+      "source_id": "hamamatsu-settlement-2024-audit",
+      "review_status": "reviewed",
+      "interpretation_boundary": "監査委員審査意見に基づく決算歳入。予算・収支とは別state。"
+    },
+    {
+      "id": "hamamatsu-2024-general-account-settlement-expenditure",
+      "layer": "fiscal",
+      "field": "general_account_settlement_expenditure",
+      "fiscal_year": 2024,
+      "value": 403849303000,
+      "unit": "yen",
+      "source_id": "hamamatsu-settlement-2024-audit",
+      "review_status": "reviewed",
+      "interpretation_boundary": "監査委員審査意見に基づく決算歳出。予算・実質収支とは別state。"
+    }
+  ],
+  "remaining_work": [
+    "成果指標38件を指標名・定義・現状値・目標値・測定年・目標年まで個票化する。",
+    "125政策の個別identity、担当課、関連事業、政策指標、2025年度評価結果を追加depthとしてレビューする。",
+    "生活満足度の個別35指標について2024基準値・2025実績を個票化し、属性別集計等は別Evidence laneで扱う。",
+    "2026年度通年実績は公式評価レポート公表後にcurrent resultとして追加する。",
+    "実施計画の事業identity・事業費・担当課・指標との関係を追加depthとして構造化する。",
+    "個別政策・事業と予算、補正、執行、決算、契約、補助金の接続はEvidence確認後のみ昇格する。"
+  ],
+  "quality_boundary": "Hamamatsu Phase 13 v1 reviews the current 2025-2034 second basic-plan identity, 7-field / 25-basic-policy / 125-policy declared structure, 38-outcome-indicator universe, 50-life-satisfaction-indicator universe, 15 reviewed FY2025 life-satisfaction results, FY2026 annual implementation-plan and PDCA/OODA/EBPM route, and three general-account fiscal top lines. The reviewed FY2025 values are citizen-perception measurements, not independent policy-achievement judgments or causal effects. Remaining outcome, policy, individual-perception, project, and fiscal-linkage detail is not inferred from aggregate coverage. No cross-city comparability or ranking is inferred."
+}
