@@ -12,9 +12,9 @@ Jichi Insight（自治体インサイト）は、自治体が公開する政策�
 - Phase 11個票基盤: 47都道府県・15,327レコード
 - 政令指定都市 Source Inventory: 20 / 20
 - Phase 13 Reviewed reference: 2市（北九州市、福岡市）
-- Phase 13 Reviewed complete: 10市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市、浜松市）
-- Phase 13 Review in progress: 1市（名古屋市）
-- Phase 13 Pending record review: 7市
+- Phase 13 Reviewed complete: 11市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市、浜松市、名古屋市）
+- Phase 13 Review in progress: 1市（京都市）
+- Phase 13 Pending record review: 6市
 - 千葉市現行計画: 189 / 189事業identity、406 work itemsをstructured化済み
 - 千葉市旧計画: 360 / 360事業identity、再掲68 / 68を一次identityへ解決済み
 - 千葉市Versioned Linkage: 構造的一致60関係＋公式PDF手動確認6関係、計66関係をReviewed continuedとして昇格
@@ -153,12 +153,12 @@ Status: `in_progress`
 現在のCanonical queue:
 
 - Reviewed reference: 2市（北九州市、福岡市）
-- Reviewed complete: 10市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市、浜松市）
-- Review in progress: 1市（名古屋市）
-- Pending record review: 7市
+- Reviewed complete: 11市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市、浜松市、名古屋市）
+- Review in progress: 1市（京都市）
+- Pending record review: 6市
 - Blocked source inventory: 0市
 
-浜松市は`declared_review_package_v1`としてReviewed completeです。現行第2期基本計画2025〜2034年度、7分野・25基本政策・125政策、成果指標38件、生活満足度指標50件（総合8・分野7・個別35）、現行計画初年度の2025年度評価から総合8・分野7の15指標について2024基準値と2025実績、2026年度実施計画とPDCA/OODA/EBPM経路、2026年度一般会計当初予算440,100,000,000円、2024年度一般会計決算の歳入416,537,079,000円・歳出403,849,303,000円をレビュー済みです。市民実感指標を政策効果や独自達成率へ変換せず、成果指標38件・125政策・個別実感35指標・事業の完全個票化、2026年度通年Result、個別財政接続は`deferred_depth`として保持します。現在のPhase 13作業対象は名古屋市です。
+名古屋市は`declared_review_package_v1`としてReviewed completeです。現行名古屋市総合計画2028の2024〜2028年度、5都市像・42施策・135成果指標・506掲載事業、2024年度進行管理における市公表の成果指標A54・B18・C23・D40（A/B/C計95）と事業進捗☆☆☆☆384・☆☆☆96・☆☆20・☆6・全面的見直し0（上位2分類計480）、市民4,000人対象の成果指標アンケート、有効回収率44.2%、議会修正後に成立した2026年度一般会計当初予算1,696,086,000,000円、2024年度一般会計決算の歳入1,505,378,206,754円・歳出1,486,264,707,319円をレビュー済みです。95/135・480/506は名古屋市のsource-reported aggregateとして保持し、42施策・135指標・506事業の個票完全構造化、アンケート詳細、事業費と財政の個別接続は`deferred_depth`として保持します。現在のPhase 13作業対象は京都市です。
 
 正本:
 
