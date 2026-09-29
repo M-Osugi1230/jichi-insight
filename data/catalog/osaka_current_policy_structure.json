@@ -1,0 +1,64 @@
+{
+  "id": "osaka-current-policy-structure",
+  "phase": 13,
+  "official_code": "271004",
+  "name_ja": "大阪市",
+  "review_status": "reviewed_current_basic_concept_and_fy2026_annual_policy_structure",
+  "basic_concept_period_status": "no_fixed_end_verified",
+  "basic_concept_source_id": "osaka-basic-concept",
+  "annual_policy_fiscal_year": 2026,
+  "annual_policy_source_id": "osaka-city-management-policy-2026",
+  "hierarchy": {
+    "basic_concept_urban_vision_count": 3,
+    "annual_policy_domain_count": 4,
+    "annual_policy_initiative_heading_count": 15
+  },
+  "urban_visions": [
+    "アジア交流圏の拠点として都市の活気にあふれる大阪",
+    "人が集まり、育ち、新しいものを生み出す大阪",
+    "暮らしたい、訪れたい、魅力あふれる大阪"
+  ],
+  "annual_policy_domains": [
+    {
+      "domain": "市民サービスの充実",
+      "initiative_headings": [
+        "子育て・教育環境の充実",
+        "暮らしを守る福祉等の向上",
+        "各区の特色ある施策の展開",
+        "行政サービスにおけるDXの推進"
+      ]
+    },
+    {
+      "domain": "府市一体による大阪の成長の実現",
+      "initiative_headings": [
+        "経済成長に向けた戦略の実行",
+        "都市インフラの充実",
+        "防災力の強化"
+      ]
+    },
+    {
+      "domain": "新たな自治の仕組みの構築",
+      "initiative_headings": [
+        "副首都・大阪の実現に向けた取組の推進",
+        "地方分権改革の推進"
+      ]
+    },
+    {
+      "domain": "未来へつなぐ市政改革",
+      "initiative_headings": [
+        "DXの推進",
+        "官民連携の推進",
+        "業務改革の推進",
+        "働き方改革",
+        "ニア・イズ・ベターの徹底",
+        "持続可能な行財政基盤の構築"
+      ]
+    }
+  ],
+  "implementation_model": {
+    "model": "annual_city_policy_plus_ward_and_bureau_operating_policies",
+    "multi_year_implementation_plan_asserted": false,
+    "boundary": "全市的FY2026市政方針と、区・局が毎年度策定する運営方針を別レイヤーとして保持する。単一の多年度実施計画を発明しない。"
+  },
+  "quality_boundary": "基本構想の3都市像とFY2026市政方針の4領域・15取組見出しを宣言depthでReviewed化する。個別事業、指標、区・局別戦略、予算事業との細粒度接続は追加depth。"
+}
