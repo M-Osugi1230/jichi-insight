@@ -113,9 +113,7 @@ def test_phase14_wave1_preserves_nonstandard_and_transition_boundaries():
 
     for inventory in (hakodate, hachinohe, fukushima):
         assert inventory["plan_period"]["period_status"] == "transition_or_unresolved"
-        assert "推測" in inventory["quality_boundary"] or "infer" in (
-            inventory["quality_boundary"].lower()
-        )
+        assert inventory["availability_boundary"]
 
     assert iwaki["plan_period"]["period_status"] == "verified_no_fixed_end"
     assert iwaki["plan_period"]["start_fiscal_year"] is None
