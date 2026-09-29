@@ -1,0 +1,61 @@
+{
+  "id": "phase14-tsu-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "242012",
+  "standard_area_code": "24201",
+  "name_ja": "津市",
+  "prefecture_name_ja": "三重県",
+  "municipality_type": "city",
+  "roles": [
+    "prefectural_capital"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "津市総合計画 第2次基本計画",
+    "start_fiscal_year": 2018,
+    "end_fiscal_year": 2027,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "tsu-second-basic-plan",
+      "layer": "comprehensive_plan",
+      "title": "津市総合計画基本構想・第2次基本計画（平成30年度～）",
+      "official_url": "https://www.info.city.tsu.mie.jp/shisei/keikaku_matizukuri_torikumi/1005597/1005623/index.html",
+      "status": "official_landing_verified",
+      "effective_period": "基本構想は期間を定めず・第2次基本計画は2018年度～2027年度",
+      "review_boundary": "期間を定めない基本構想と10年間の第2次基本計画を別period semanticsとして保持し、一律の固定期間modelへ潰さない。"
+    },
+    {
+      "id": "tsu-project-evaluation",
+      "layer": "progress_governance",
+      "title": "事務事業評価",
+      "official_url": "https://www.info.city.tsu.mie.jp/shisei/gyouzaiseikaikaku/1009903/1005697/1005745.html",
+      "status": "official_landing_verified",
+      "review_boundary": "第2次基本計画の進行管理として事務事業評価・施策評価を行う公式制度入口。自治体自己評価を独自達成判定へ変換しない。"
+    },
+    {
+      "id": "tsu-budget-2026",
+      "layer": "budget",
+      "title": "当初予算の概要",
+      "official_url": "https://www.info.city.tsu.mie.jp/shisei/zaisei/1005573/1005574.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算概要・各部局予算概要の公式入口。補正・執行・決算とstageを分離する。"
+    },
+    {
+      "id": "tsu-settlement-2024",
+      "layer": "settlement",
+      "title": "決算書",
+      "official_url": "https://www.info.city.tsu.mie.jp/shisei/zaisei/1005577/1005578.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024歳入歳出決算書・附属書の公式入口。事務事業評価・施策評価と財政決算を別Evidence roleで保持する。"
+    }
+  ],
+  "availability_boundary": "津市は期間を定めない基本構想の下に2018～2027年度の第2次基本計画を置く。県庁所在地だが中核市ではないためrolesはprefectural_capitalのみとし、自治体classを推測変更しない。",
+  "quality_boundary": "This Phase 14 inventory preserves Tsu's no-fixed-end basic concept plus fixed 2018-2027 second basic plan, official project/policy evaluation route, FY2026 budget, and FY2024 settlement. It also preserves prefectural-capital-only classification and does not infer core-city status, policy achievement, causal effects, or cross-city comparability.",
+  "next_action": "Phase 15で第2次基本計画の施策・指標、事務事業評価・施策評価、FY2026予算、FY2024決算を主体・期間・source位置付きEvidenceへ展開する。",
+  "verified_at": "2026-09-30"
+}
