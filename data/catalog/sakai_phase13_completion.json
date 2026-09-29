@@ -1,0 +1,73 @@
+{
+  "id": "sakai-phase13-completion",
+  "phase": 13,
+  "status": "reviewed_complete",
+  "official_code": "271403",
+  "name_ja": "堺市",
+  "completed_at": "2026-09-29",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "policy_review_manifest_path": "data/catalog/sakai_phase13_policy_review_manifest.json",
+    "plan_review_path": "data/reviewed/sakai-city/plan_review.json",
+    "source_catalog_path": "data/catalog/sakai_phase13_sources.json",
+    "policy_structure_path": "data/catalog/sakai_current_policy_structure.json",
+    "progress_review_path": "data/catalog/sakai_current_progress_availability.json",
+    "fiscal_records_path": "data/reviewed/sakai-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/sakai-city/evidence_packets.json",
+    "counts": {
+      "kgi": 3,
+      "priority_strategies": 5,
+      "measures": 27,
+      "current_completed_annual_results": 0,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "current_plan_period_review_complete": true,
+    "current_structure_review_complete": true,
+    "current_progress_availability_explicit": true,
+    "legacy_progress_not_reused": true,
+    "separate_implementation_plan_not_invented": true,
+    "initial_budget_and_settlement_states_separate": true,
+    "exact_settlement_precision_preserved": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "kpi-record-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "個別KPIの定義・基準値・目標値・年度実績の全件レビューは追加depth。"
+    },
+    {
+      "id": "measure-project-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "27施策配下の個別事業identity・担当・成果の完全構造化は追加depth。"
+    },
+    {
+      "id": "current-annual-result",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "2026年度開始の現行計画の完了年度Resultは未公表。旧2025計画実績で補完しない。"
+    },
+    {
+      "id": "versioned-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "旧基本計画2025から基本計画2030への施策・KPI対応は名称類似だけで確定しない。"
+    },
+    {
+      "id": "fiscal-detail-policy-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "補正、執行、個別事業費、契約、補助金と政策の接続は別Evidenceレビューとする。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "KGI/KPI、財政、将来Resultのレビューは政策効果の因果認定や他都市比較可能性を意味しない。"
+    }
+  ],
+  "completion_boundary": "堺市のPhase 13 reviewed_completeは宣言したv1レビュー・パッケージの完了を意味する。2026～2030年度の最上位計画『堺市基本計画2030』、2035年度を見据えた3 KGI、5重点戦略、27施策、毎年度KPI等を把握・評価するPDCA、現行計画の完了年度Resultがまだ利用可能でないavailability boundary、旧基本計画2025のhistorical-only境界、2026年度一般会計当初予算521,700,000,000円、2024年度一般会計決算歳入477,935,503,067円・歳出470,108,227,969円をレビュー済みである。現行計画に別立ての実施計画を推測で発明せず、旧計画の進捗を現行actualへ流用しない。個別KPI、施策配下の事業、最初の現行年度Result、versioned linkage、個別財政接続はdeferred_depthとして保持し、Jichi Insight独自の政策達成度、因果効果、他都市比較可能性へ変換しない。"
+}
