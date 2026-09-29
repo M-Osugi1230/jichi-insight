@@ -1,0 +1,62 @@
+{
+  "id": "phase14-neyagawa-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "272159",
+  "standard_area_code": "27215",
+  "name_ja": "寝屋川市",
+  "prefecture_name_ja": "大阪府",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第六次寝屋川市総合計画",
+    "start_fiscal_year": 2021,
+    "end_fiscal_year": 2027,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "neyagawa-sixth-plan",
+      "layer": "comprehensive_and_implementation_plan",
+      "title": "第六次寝屋川市総合計画",
+      "official_url": "https://www.city.neyagawa.osaka.jp/organization_list/keieikikaku/kikakuikka/soukei_jinkouvision_senryaku/sougoukeikaku_6_sougousenryaku_2/1616582538632.html",
+      "status": "official_landing_verified",
+      "effective_period": "総合計画 2021年度～2027年度・実施計画 前期3年/後期4年",
+      "review_boundary": "7年間の基本構想・基本戦略と前期3年/後期4年の実施計画を別period semanticsとして保持する。"
+    },
+    {
+      "id": "neyagawa-budget-policy-2026",
+      "layer": "implementation_and_budget_policy",
+      "title": "令和8年度予算編成方針",
+      "official_url": "https://www.city.neyagawa.osaka.jp/organization_list/zaimu/zaiseika/yosan/yosanhenseihoushin/25799.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "現行計画最終期の年度方針・予算編成入口として保持し、予算方針を通年Resultや政策効果へ読み替えない。"
+    },
+    {
+      "id": "neyagawa-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度当初予算",
+      "official_url": "https://www.city.neyagawa.osaka.jp/organization_list/zaimu/zaiseika/yosan/yosan/R8tousyoyosan/26514.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算の公式入口。補正・執行・決算とは別stateで扱う。"
+    },
+    {
+      "id": "neyagawa-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度決算",
+      "official_url": "https://www.city.neyagawa.osaka.jp/organization_list/zaimu/zaiseika/kessann/kessan/reiwa5nenndokessann_2/index.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算・基金・地方債等の公式入口。計画の政策成果と財政決算を別Evidence roleとして保持する。"
+    }
+  ],
+  "availability_boundary": "第六次総合計画は2021～2027年度の7年間で、実施計画は前期3年と後期4年。FY2026は後期・計画終盤に当たり、年度方針・予算・決算の時点を分離する。",
+  "quality_boundary": "This Phase 14 inventory verifies Neyagawa's 2021-2027 sixth comprehensive plan and split implementation periods, FY2026 budget-policy and initial-budget routes, and FY2024 settlement. It does not treat annual budget policy or fiscal results as plan achievement and makes no independent causal or cross-city judgment.",
+  "next_action": "Phase 15で基本戦略・実施計画事業、進行管理の実績資料、FY2026予算方針・当初予算、FY2024決算をperiod/source位置付きEvidenceとしてレビューする。",
+  "verified_at": "2026-09-30"
+}
