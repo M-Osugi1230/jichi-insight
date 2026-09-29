@@ -1,0 +1,61 @@
+{
+  "id": "phase14-iwaki-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "072044",
+  "standard_area_code": "07204",
+  "name_ja": "いわき市",
+  "prefecture_name_ja": "福島県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "いわき市まちづくりの基本方針",
+    "start_fiscal_year": null,
+    "end_fiscal_year": null,
+    "period_status": "verified_no_fixed_end"
+  },
+  "sources": [
+    {
+      "id": "iwaki-basic-policy",
+      "layer": "comprehensive_policy_framework",
+      "title": "いわき市 まちづくりの基本方針（理念・経営指針・いわき版骨太の方針）",
+      "official_url": "https://www.city.iwaki.lg.jp/www/contents/1728362409876/index.html",
+      "status": "official_landing_verified",
+      "review_boundary": "旧総合計画に代わる固定終期を持たない方針体系として、普遍的理念・更新型経営指針・年度骨太方針を別layerで保持する。"
+    },
+    {
+      "id": "iwaki-management-guideline-2026",
+      "layer": "annual_implementation",
+      "title": "令和8年度 まちづくりの経営指針 位置付け事業",
+      "official_url": "https://www.city.iwaki.lg.jp/www/contents/1728362409876/index.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "毎年検証・更新される経営指針のFY2026事業群を確認する入口。年度版を恒久計画へ固定化しない。"
+    },
+    {
+      "id": "iwaki-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度当初予算",
+      "official_url": "https://www.city.iwaki.lg.jp/www/contents/1761108064077/index.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算書・説明書の公式入口。補正・執行・決算とstate分離する。"
+    },
+    {
+      "id": "iwaki-settlement-2024",
+      "layer": "settlement_and_major_measures",
+      "title": "令和6年度決算",
+      "official_url": "https://www.city.iwaki.lg.jp/www/contents/1763711744055/index.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算書・事項別明細・主要施策成果説明書の公式入口。財政と施策成果を別Evidence roleで保持する。"
+    }
+  ],
+  "availability_boundary": "いわき市は旧型の固定期間総合計画を2020年度で終了し、固定終期を置かない基本方針＋更新型経営指針＋年度骨太方針へ移行している。期間のない構造を欠損とみなさず、そのまま保存する。",
+  "quality_boundary": "This Phase 14 inventory preserves Iwaki's nonstandard no-fixed-end policy framework, annual management-guideline layer, FY2026 budget route, and FY2024 settlement/major-measures route. It does not force the framework into a conventional fixed-period comprehensive-plan model or infer achievement, causal effects, or comparability.",
+  "next_action": "Phase 15で理念・経営指針・FY2026骨太方針・位置付け事業、主要施策成果、FY2026予算とFY2024決算を非標準plan modelのままEvidence化する。",
+  "verified_at": "2026-09-29"
+}

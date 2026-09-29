@@ -1,0 +1,255 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.local/schemas/phase14_core_capital_target_registry.schema.json",
+  "title": "Phase 14 core-city and prefectural-capital target registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "phase",
+    "status",
+    "scope",
+    "verified_at",
+    "identity_sources",
+    "derivation",
+    "exclusion_boundary",
+    "waves",
+    "targets"
+  ],
+  "properties": {
+    "id": {
+      "const": "phase14-core-capital-target-registry"
+    },
+    "phase": {
+      "const": 14
+    },
+    "status": {
+      "const": "target_universe_complete"
+    },
+    "scope": {
+      "const": "core_cities_and_prefectural_capitals_excluding_designated_cities"
+    },
+    "verified_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "identity_sources": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "title",
+          "organization",
+          "url",
+          "role",
+          "snapshot_note"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 5
+          },
+          "title": {
+            "type": "string",
+            "minLength": 3
+          },
+          "organization": {
+            "type": "string",
+            "minLength": 2
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "role": {
+            "type": "string",
+            "minLength": 8
+          },
+          "snapshot_note": {
+            "type": "string",
+            "minLength": 30
+          }
+        }
+      }
+    },
+    "derivation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "current_core_city_count",
+        "total_prefectural_capital_count",
+        "designated_city_prefectural_capitals_already_covered_in_phase13",
+        "remaining_prefectural_capitals_after_phase13",
+        "core_city_and_prefectural_capital_overlap",
+        "prefectural_capital_only_count",
+        "unique_phase14_target_count",
+        "prefectural_capital_only_names"
+      ],
+      "properties": {
+        "current_core_city_count": {
+          "const": 62
+        },
+        "total_prefectural_capital_count": {
+          "const": 47
+        },
+        "designated_city_prefectural_capitals_already_covered_in_phase13": {
+          "const": 15
+        },
+        "remaining_prefectural_capitals_after_phase13": {
+          "const": 32
+        },
+        "core_city_and_prefectural_capital_overlap": {
+          "const": 27
+        },
+        "prefectural_capital_only_count": {
+          "const": 5
+        },
+        "unique_phase14_target_count": {
+          "const": 67
+        },
+        "prefectural_capital_only_names": {
+          "type": "array",
+          "minItems": 5,
+          "maxItems": 5,
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "exclusion_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "designated_cities",
+        "core_city_candidates",
+        "other_municipalities"
+      ],
+      "properties": {
+        "designated_cities": {
+          "type": "string",
+          "minLength": 30
+        },
+        "core_city_candidates": {
+          "type": "string",
+          "minLength": 30
+        },
+        "other_municipalities": {
+          "type": "string",
+          "minLength": 30
+        }
+      }
+    },
+    "waves": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "wave",
+          "region",
+          "target_count"
+        ],
+        "properties": {
+          "wave": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 8
+          },
+          "region": {
+            "type": "string",
+            "minLength": 2
+          },
+          "target_count": {
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      }
+    },
+    "targets": {
+      "type": "array",
+      "minItems": 67,
+      "maxItems": 67,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "sequence",
+          "wave",
+          "official_code",
+          "standard_area_code",
+          "name_ja",
+          "prefecture_name_ja",
+          "municipality_type",
+          "core_city",
+          "prefectural_capital",
+          "phase14_role",
+          "status"
+        ],
+        "properties": {
+          "sequence": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 67
+          },
+          "wave": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 8
+          },
+          "official_code": {
+            "type": "string",
+            "pattern": "^[0-9]{6}$"
+          },
+          "standard_area_code": {
+            "type": "string",
+            "pattern": "^[0-9]{5}$"
+          },
+          "name_ja": {
+            "type": "string",
+            "minLength": 2
+          },
+          "prefecture_name_ja": {
+            "type": "string",
+            "minLength": 3
+          },
+          "municipality_type": {
+            "enum": [
+              "city",
+              "special_ward"
+            ]
+          },
+          "core_city": {
+            "type": "boolean"
+          },
+          "prefectural_capital": {
+            "type": "boolean"
+          },
+          "phase14_role": {
+            "enum": [
+              "core_city",
+              "core_city_and_prefectural_capital",
+              "prefectural_capital_only"
+            ]
+          },
+          "status": {
+            "enum": [
+              "pending_source_inventory",
+              "source_inventory_in_progress",
+              "source_inventory_complete"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

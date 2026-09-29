@@ -6,7 +6,7 @@ Jichi Insight（自治体インサイト）は、自治体が公開する政策�
 
 ## Product status
 
-`Phase 13 complete / 47 prefectures complete / 20 designated cities reviewed / pre-alpha`
+`Phase 14 active / Phase 13 complete / 47 prefectures complete / 20 designated cities reviewed / pre-alpha`
 
 - 全国47都道府県: Phase 11まで完了
 - Phase 11個票基盤: 47都道府県・15,327レコード
@@ -15,6 +15,9 @@ Jichi Insight（自治体インサイト）は、自治体が公開する政策�
 - Phase 13 Reviewed complete: 18市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市、浜松市、名古屋市、京都市、大阪市、堺市、神戸市、岡山市、広島市、熊本市）
 - Phase 13 Review in progress: 0市
 - Phase 13 Pending record review: 0市
+- Phase 14 target universe: 67自治体（中核市62＋県庁所在地only 5）
+- Phase 14 Source Inventory complete: 10 / 67（Wave 1 北海道・東北 complete）
+- Phase 14 Source Inventory in progress: 1（Wave 2 水戸市）
 - 千葉市現行計画: 189 / 189事業identity、406 work itemsをstructured化済み
 - 千葉市旧計画: 360 / 360事業identity、再掲68 / 68を一次identityへ解決済み
 - 千葉市Versioned Linkage: 構造的一致60関係＋公式PDF手動確認6関係、計66関係をReviewed continuedとして昇格
@@ -23,7 +26,7 @@ Jichi Insight（自治体インサイト）は、自治体が公開する政策�
 
 Phase 10で全国47都道府県の共通文書スコープ、Phase 11で個票レベルのReviewed接続またはReviewed最大到達深度、Phase 12で20政令指定都市の公式Source Inventory、Phase 13で全20政令指定都市のv1 record-review foundationを完成させました。北九州市・福岡市をReviewed referenceとして保持し、残る18市は自治体別completion contractまで到達しています。公式資料が不足・未公表・未解決の場合も推測で埋めず、何が未接続かを明示します。
 
-進捗の正本は `data/catalog/phase13_designated_city_review_queue.json` と各Phase completion manifestです。READMEは人向けの要約であり、状態が競合する場合はmachine-readable catalogを優先します。
+進捗の正本は `data/catalog/phase14_core_capital_execution_queue.json`、`data/catalog/phase14_core_capital_target_registry.json`、各Phase completion manifestです。READMEは人向けの要約であり、状態が競合する場合はmachine-readable catalogを優先します。
 
 ## Evidence chain
 
@@ -171,6 +174,32 @@ Phase 13の完了は、全政策・KPI・事業・契約・補助金・予算科
 - [`data/catalog/phase13_designated_city_review_queue.json`](data/catalog/phase13_designated_city_review_queue.json)
 - [`schemas/phase13_completion.schema.json`](schemas/phase13_completion.schema.json)
 - [Roadmap](docs/ROADMAP.md)
+
+
+## Phase 14 — Core cities and prefectural capitals source inventory
+
+Status: `in_progress`（2026-09-29）
+
+Phase 13で完了した20政令指定都市を除き、中核市と県庁所在地の公式Source Inventoryを拡張します。
+
+- Current core cities: 62
+- Prefectural capitals remaining after Phase 13: 32
+- Core-city / capital overlap: 27
+- Prefectural-capital-only: 5（新宿区、津市、山口市、徳島市、佐賀市）
+- Unique Phase 14 targets: 67
+- Wave 1 北海道・東北: 10 / 10 source_inventory_complete
+- Wave 2 関東: 水戸市から source inventory開始
+- Reviewed promotion: 0（Phase 15で実施）
+
+Wave 1では、函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市について、現行計画、実施・進行管理、FY2026予算、直近決算の公式入口を確認しました。函館・八戸・福島の計画移行境界、いわき市の固定終期を持たない非標準plan modelもそのまま保持しています。
+
+正本:
+
+- [`data/catalog/phase14_core_capital_target_registry.json`](data/catalog/phase14_core_capital_target_registry.json)
+- [`data/catalog/phase14_core_capital_execution_queue.json`](data/catalog/phase14_core_capital_execution_queue.json)
+- [`schemas/phase14_municipality_source_inventory.schema.json`](schemas/phase14_municipality_source_inventory.schema.json)
+- [`tests/test_phase14_core_capital_registry.py`](tests/test_phase14_core_capital_registry.py)
+- [`tests/test_phase14_wave1_source_inventory.py`](tests/test_phase14_wave1_source_inventory.py)
 
 ## Repository map
 

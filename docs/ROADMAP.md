@@ -625,9 +625,89 @@ Status: `complete`（2026-09-29）
 - `tests/test_phase13_completion.py`
 - `tests/test_phase13_designated_city_review_queue.py`
 
-## After Phase 13
+## Phase 14 — Core cities and prefectural capitals source inventory
 
-1. 中核市・県庁所在地
+Status: `in_progress`（2026-09-29）
+
+Phase 13のdesignated-city contractを再利用し、中核市・県庁所在地へSource Inventoryを拡張します。政令指定都市20市はPhase 13で完了済みのため重複対象にしません。
+
+### Target universe
+
+- Current core cities: 62
+- Total prefectural capitals: 47
+- Prefectural capitals already covered as designated cities: 15
+- Remaining prefectural capitals: 32
+- Core-city / remaining-capital overlap: 27
+- Prefectural-capital-only: 5（新宿区、津市、山口市、徳島市、佐賀市）
+- Unique Phase 14 targets: 67
+
+対象identityは5桁標準地域コードと6桁全国地方公共団体コードを併記し、中核市status・県庁所在地statusを名称から推測しません。中核市移行候補は正式移行までは対象に自動昇格しません。
+
+### Wave plan
+
+- Wave 1 北海道・東北: 10
+- Wave 2 関東: 12
+- Wave 3 北陸・甲信: 6
+- Wave 4 東海: 6
+- Wave 5 近畿: 14
+- Wave 6 中国: 7
+- Wave 7 四国: 4
+- Wave 8 九州・沖縄: 8
+
+### Milestone P14-M1 — Hokkaido / Tohoku source inventory
+
+Status: `complete`（2026-09-29）
+
+10市を`source_inventory_complete`へ昇格しました。
+
+- 函館市
+- 旭川市
+- 青森市
+- 八戸市
+- 盛岡市
+- 秋田市
+- 山形市
+- 福島市
+- 郡山市
+- いわき市
+
+各自治体で、現行計画、実施・進行管理またはそのavailability境界、FY2026予算、直近決算を公式入口で確認しています。
+
+特に以下の境界を保持します。
+
+- 函館市: 現行基本構想は2026年度終期、実施計画は2029年度まで、次期基本構想は策定過程
+- 八戸市: 第7次総合計画は2026年度終期、FY2026年度戦略・市民委員会と次期計画策定を分離
+- 福島市: 第6次総合計画を2026年度まで1年延長、次期計画とversion分離
+- いわき市: 固定期間総合計画ではなく、理念・更新型経営指針・年度骨太方針の非標準modelを保持
+
+Phase 14は`indexed_not_reviewed`のSource Inventoryです。個別政策・KPI・事業・評価値・予算額・決算額のReviewed昇格はPhase 15で行います。
+
+### Current work — Kanto source inventory
+
+Status: `in_progress`
+
+Wave 2は水戸市（082015）から開始します。
+
+Canonical status:
+
+- Source inventory complete: 10 / 67
+- Source inventory in progress: 1
+- Pending source inventory: 56
+- Next official code: 082015
+
+正本:
+
+- `data/catalog/phase14_core_capital_target_registry.json`
+- `data/catalog/phase14_core_capital_execution_queue.json`
+- `schemas/phase14_core_capital_target_registry.schema.json`
+- `schemas/phase14_core_capital_execution_queue.schema.json`
+- `schemas/phase14_municipality_source_inventory.schema.json`
+- `tests/test_phase14_core_capital_registry.py`
+- `tests/test_phase14_wave1_source_inventory.py`
+
+## After Phase 14
+
+1. Phase 15 — 中核市・県庁所在地のrecord-level Reviewed化
 2. その他市区町村
 3. 選挙・候補者比較
 4. API、データダウンロード、研究・報道向け機能

@@ -1,0 +1,61 @@
+{
+  "id": "phase14-koriyama-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "072036",
+  "standard_area_code": "07203",
+  "name_ja": "郡山市",
+  "prefecture_name_ja": "福島県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "郡山市第7次総合計画",
+    "start_fiscal_year": 2026,
+    "end_fiscal_year": 2033,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "koriyama-seventh-plan",
+      "layer": "comprehensive_plan",
+      "title": "郡山市第7次総合計画",
+      "official_url": "https://www.city.koriyama.lg.jp/soshiki/21/172073.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2033年度",
+      "review_boundary": "人口ビジョン・総合戦略を一体化した現行最上位計画のidentityと8年間の期間を確認する。"
+    },
+    {
+      "id": "koriyama-first-implementation-plan",
+      "layer": "implementation_plan",
+      "title": "郡山市第7次総合計画 第1期実施計画",
+      "official_url": "https://www.city.koriyama.lg.jp/soshiki/21/172073.html",
+      "status": "official_landing_verified",
+      "review_boundary": "現行総合計画に付属する第1期実施計画への公式入口。個別事業・指標はPhase 15でレビューする。"
+    },
+    {
+      "id": "koriyama-budget-2026",
+      "layer": "budget",
+      "title": "予算・財政状況（市のプロフィール）",
+      "official_url": "https://www.city.koriyama.lg.jp/soshiki/23/66617.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算概要への公式入口。成立state・補正・執行・決算を分離する。"
+    },
+    {
+      "id": "koriyama-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度決算について",
+      "official_url": "https://www.city.koriyama.lg.jp/soshiki/25/161930.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024一般会計・特別会計決算、決算審査、財務諸表への公式入口。政策実績との接続はEvidence確認後のみ行う。"
+    }
+  ],
+  "availability_boundary": "第7次総合計画は2026年度開始の新計画であり、現行計画の完了年度Resultはまだ限定的。旧計画の評価を第7次計画actualへ流用しない。",
+  "quality_boundary": "This Phase 14 inventory verifies the new 2026-2033 seventh comprehensive plan, its first implementation-plan route, FY2026 budget route, and FY2024 settlement route. It does not yet review individual projects, indicators, evaluation values, fiscal values, or legacy-to-current linkages and makes no achievement or causal judgment.",
+  "next_action": "Phase 15で第7次計画の政策・第1期実施計画・指標、current-result availability、FY2026予算、FY2024決算・監査をEvidence Packet化する。",
+  "verified_at": "2026-09-29"
+}

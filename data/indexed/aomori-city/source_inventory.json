@@ -1,0 +1,63 @@
+{
+  "id": "phase14-aomori-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "022012",
+  "standard_area_code": "02201",
+  "name_ja": "青森市",
+  "prefecture_name_ja": "青森県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city",
+    "prefectural_capital"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "青森市総合計画前期基本計画",
+    "start_fiscal_year": 2024,
+    "end_fiscal_year": 2028,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "aomori-front-basic-plan",
+      "layer": "comprehensive_plan",
+      "title": "青森市総合計画前期基本計画を策定しました",
+      "official_url": "https://www.city.aomori.aomori.jp/shisei/machizukuri/1005734/1005735/1007606.html",
+      "status": "official_landing_verified",
+      "effective_period": "2024年度～2028年度",
+      "review_boundary": "基本構想に基づく5年間の前期基本計画をcurrent implementation layerとして確認する。"
+    },
+    {
+      "id": "aomori-plan-indicator-governance",
+      "layer": "progress_governance",
+      "title": "青森市総合計画前期基本計画",
+      "official_url": "https://www.city.aomori.aomori.jp/kikakuchousei/sougoukeikaku/documents/03_keikaku_hontai.pdf",
+      "status": "official_document_verified",
+      "effective_period": "2024年度～2028年度",
+      "review_boundary": "全施策に目標指標を設定し、達成度等で評価・検証する設計を確認する。個別指標値はPhase 15でレビューする。"
+    },
+    {
+      "id": "aomori-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算の概要及び執行状況等",
+      "official_url": "https://www.city.aomori.aomori.jp/shisei/gyouzaiseiunei/1006058/1009674/1010042.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "当初予算、6月補正、9月補正等の公式入口。補正を当初予算へ上書きしない。"
+    },
+    {
+      "id": "aomori-settlement-2024",
+      "layer": "settlement_and_annual_results",
+      "title": "決算",
+      "official_url": "https://www.city.aomori.aomori.jp/shisei/gyouzaiseiunei/1007411/index.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "令和6年度決算書と主要な施策の成果・予算執行実績報告書を確認する入口。財政と施策成果を別Evidence roleで扱う。"
+    }
+  ],
+  "availability_boundary": "前期基本計画は2024年度開始で、令和6年度決算に係る主要施策成果報告書には現行計画の指標実績が含まれる。Phase 15では計画目標と年度実績の定義・期間・単位一致を個別確認する。",
+  "quality_boundary": "This Phase 14 inventory verifies the 2024-2028 front basic plan, indicator-based evaluation governance, FY2026 budget route, and FY2024 settlement/major-measures result route. It does not yet promote indicator values, municipal evaluations, project results, or fiscal values to Reviewed and does not infer policy achievement or cross-city comparability.",
+  "next_action": "Phase 15で17政策配下の施策・目標指標、令和6年度主要施策成果報告とのlinkage、FY2026予算・補正、FY2024決算をrecord-level Evidenceへ展開する。",
+  "verified_at": "2026-09-29"
+}

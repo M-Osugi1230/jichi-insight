@@ -1,0 +1,73 @@
+{
+  "id": "phase14-hakodate-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "012025",
+  "standard_area_code": "01202",
+  "name_ja": "函館市",
+  "prefecture_name_ja": "北海道",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "函館市総合計画",
+    "start_fiscal_year": 2017,
+    "end_fiscal_year": 2026,
+    "period_status": "transition_or_unresolved"
+  },
+  "sources": [
+    {
+      "id": "hakodate-comprehensive-plan",
+      "layer": "comprehensive_plan",
+      "title": "函館市総合計画（2017～2026）について",
+      "official_url": "https://www.city.hakodate.hokkaido.jp/docs/2016122100014/",
+      "status": "official_landing_verified",
+      "effective_period": "2017年度～2026年度",
+      "review_boundary": "現行基本構想の終期と、次期基本構想策定中であることを確認する。次期計画の確定内容はPhase 14では先取りしない。"
+    },
+    {
+      "id": "hakodate-third-revitalization-strategy",
+      "layer": "implementation_plan",
+      "title": "第3期函館市活性化総合戦略",
+      "official_url": "https://www.city.hakodate.hokkaido.jp/docs/2025022700309/",
+      "status": "official_landing_verified",
+      "effective_period": "2025年度～2029年度",
+      "review_boundary": "現行基本構想の実施計画として位置付けられるが、基本構想終期2026年度と実施計画終期2029年度の差を保持する。"
+    },
+    {
+      "id": "hakodate-basic-concept-review-2026",
+      "layer": "progress_and_transition",
+      "title": "令和8年度函館市基本構想審議会",
+      "official_url": "https://www.city.hakodate.hokkaido.jp/docs/2026042300043/",
+      "status": "official_landing_verified",
+      "available_periods": [
+        "2026年度"
+      ],
+      "review_boundary": "現行総合計画の主な取組状況と次期基本構想の策定過程を確認する入口。審議資料を現行計画の独立達成評価へ変換しない。"
+    },
+    {
+      "id": "hakodate-budget-2026",
+      "layer": "budget",
+      "title": "函館市の予算",
+      "official_url": "https://www.city.hakodate.hokkaido.jp/docs/2014022600122/",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "2026年度当初予算と補正予算の公式入口。initial budgetとsupplementary budgetを別stateで扱う。"
+    },
+    {
+      "id": "hakodate-settlement",
+      "layer": "settlement",
+      "title": "函館市の決算",
+      "official_url": "https://www.city.hakodate.hokkaido.jp/docs/2014022800386/",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "2024年度を含む一般・特別会計決算の公式入口。決算値と予算値を同一stateへ統合しない。"
+    }
+  ],
+  "availability_boundary": "函館市は現行基本構想が2026年度で終期を迎える一方、実施計画に位置付く第3期活性化総合戦略は2029年度まで続く。次期基本構想は策定過程にあるため、現行・実施・次期のversion境界を維持する。",
+  "quality_boundary": "This Phase 14 inventory verifies the current comprehensive-plan landing, the 2025-2029 implementation strategy, the 2026 transition/progress-review route, and official budget and settlement entry points. It does not promote individual KPIs, evaluation results, budget amounts, settlement amounts, or next-plan draft content to Reviewed, and it does not infer achievement, causality, or comparability.",
+  "next_action": "Phase 15で現行基本構想の施策、実施計画のKPI・内部/外部評価、次期基本構想とのversion transition、FY2026予算と直近決算をrecord-level Evidenceへ展開する。",
+  "verified_at": "2026-09-29"
+}
