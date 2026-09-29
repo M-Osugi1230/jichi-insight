@@ -758,18 +758,51 @@ Status: `complete`（2026-09-30）
 - 豊田市: 第9次総合計画FY2025～2034。毎年度ローリング結果と翌年度施策別事業集を時点分離
 - 津市: 期間を定めない基本構想＋FY2018～2027第2次基本計画。県庁所在地only分類を保持
 
-### Current work — Kinki source inventory
+### Milestone P14-M5 — Kinki source inventory
+
+Status: `complete`（2026-09-30）
+
+近畿14自治体を`source_inventory_complete`へ昇格しました。
+
+- 大津市
+- 豊中市
+- 吹田市
+- 高槻市
+- 枚方市
+- 八尾市
+- 寝屋川市
+- 東大阪市
+- 姫路市
+- 尼崎市
+- 明石市
+- 西宮市
+- 奈良市
+- 和歌山市
+
+現行計画、実施・進行管理、FY2026予算、直近決算の公式入口を確認しました。
+
+特に以下の境界を保持します。
+
+- 吹田市: 第4次総合計画はFY2019～2028だが、最新5年ローリング実施計画はFY2026～2030。期間差をそのまま保持
+- 枚方市: 第5次総合計画基本構想はFY2016開始で固定終期を設定せず、第3期実行計画のみFY2024～2027
+- 八尾市・尼崎市・明石市: FY2024実績・決算をcurrent後期計画・戦略のactualへ流用しない
+- 東大阪市: 第2次実施計画Ver.1.0/2.0/3.0と年度PDCAをversioned Evidenceとして分離
+- 姫路市: 施策評価3年周期と事業PDCA年次周期を統合しない
+- 奈良市: 第5次総合計画FY2022～2031の前期推進方針がFY2026最終年度で、後期推進方針はtransition lane
+- 和歌山市: 第5次長期総合計画FY2017～2026の最終年度と次期計画transitionを分離
+
+### Current work — Chugoku source inventory
 
 Status: `in_progress`
 
-Wave 5は大津市（252018）から開始します。
+Wave 6は鳥取市（312010）から開始します。
 
 Canonical status:
 
-- Source inventory complete: 34 / 67
+- Source inventory complete: 48 / 67
 - Source inventory in progress: 1
-- Pending source inventory: 32
-- Next official code: 252018
+- Pending source inventory: 18
+- Next official code: 312010
 
 正本:
 
@@ -783,6 +816,7 @@ Canonical status:
 - `tests/test_phase14_wave2_source_inventory.py`
 - `tests/test_phase14_wave3_source_inventory.py`
 - `tests/test_phase14_wave4_source_inventory.py`
+- `tests/test_phase14_wave5_source_inventory.py`
 
 ## After Phase 14
 
