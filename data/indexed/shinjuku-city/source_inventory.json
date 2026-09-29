@@ -1,0 +1,62 @@
+{
+  "id": "phase14-shinjuku-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "131040",
+  "standard_area_code": "13104",
+  "name_ja": "新宿区",
+  "prefecture_name_ja": "東京都",
+  "municipality_type": "special_ward",
+  "roles": [
+    "prefectural_capital"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "新宿区第三次実行計画",
+    "start_fiscal_year": 2024,
+    "end_fiscal_year": 2027,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "shinjuku-concept-plan",
+      "layer": "comprehensive_plan_framework",
+      "title": "新宿区基本構想・総合計画",
+      "official_url": "https://www.city.shinjuku.lg.jp/kusei/file07_01_00014.html",
+      "status": "official_landing_verified",
+      "effective_period": "現行基本構想・総合計画framework",
+      "review_boundary": "特別区の基本構想・総合計画frameworkを確認し、市型の単一総合計画modelへ無理に変換しない。"
+    },
+    {
+      "id": "shinjuku-third-action-plan",
+      "layer": "implementation_plan",
+      "title": "新宿区第三次実行計画",
+      "official_url": "https://www.city.shinjuku.lg.jp/kusei/kikaku01_002020_00002.html",
+      "status": "official_landing_verified",
+      "effective_period": "2024年度～2027年度",
+      "review_boundary": "現行4年間の実行計画をcurrent actionable layerとして保持し、2026年ローリング改定は別versionとして扱う。"
+    },
+    {
+      "id": "shinjuku-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算",
+      "official_url": "https://www.city.shinjuku.lg.jp/kusei/zaisei01_000001_00017.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026予算書の公式入口。実行計画との事業接続、補正、執行、決算はPhase 15でstate分離する。"
+    },
+    {
+      "id": "shinjuku-settlement-2024",
+      "layer": "settlement_and_results",
+      "title": "決算書・実績報告（令和6年度）",
+      "official_url": "https://www.city.shinjuku.lg.jp/kusei/kaikei01_001000_00006.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024各会計決算と予算執行実績・主要施策成果の公式入口。財政と施策成果を別Evidence roleで保持する。"
+    }
+  ],
+  "availability_boundary": "新宿区は特別区であり、基本構想・総合計画frameworkと複数年の実行計画を分けて運用する。自治体typeをcityへ変換せず、東京都本体とも別identityとして保持する。",
+  "quality_boundary": "This Phase 14 inventory preserves Shinjuku's special-ward governance model, current basic-concept/comprehensive-plan framework, 2024-2027 third action plan, FY2026 budget, and FY2024 settlement/results route. It does not conflate the ward with Tokyo Metropolitan Government or infer achievement, causality, or cross-city comparability.",
+  "next_action": "Phase 15で第三次実行計画の計画事業・指標、ローリング改定、FY2024実績報告、FY2026予算をspecial-ward identityとEvidence roleを維持したままレビューする。",
+  "verified_at": "2026-09-30"
+}
