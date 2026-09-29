@@ -1,0 +1,62 @@
+{
+  "id": "phase14-otsu-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "252018",
+  "standard_area_code": "25201",
+  "name_ja": "大津市",
+  "prefecture_name_ja": "滋賀県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city",
+    "prefectural_capital"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "大津市総合計画・第3期実行計画",
+    "start_fiscal_year": 2017,
+    "end_fiscal_year": 2028,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "otsu-general-plan-third-action",
+      "layer": "comprehensive_and_implementation_plan",
+      "title": "大津市総合計画 第3期実行計画",
+      "official_url": "https://www.city.otsu.lg.jp/soshiki/001/1001/g/sokei/68189.html",
+      "status": "official_landing_verified",
+      "effective_period": "総合計画 2017年度～2028年度・第3期実行計画 2025年度～2028年度",
+      "review_boundary": "12年間の総合計画と最終4年間の第3期実行計画を別periodとして保持し、過去の実行計画versionをcurrentへ上書きしない。"
+    },
+    {
+      "id": "otsu-administrative-evaluation",
+      "layer": "progress_governance",
+      "title": "行政評価について",
+      "official_url": "https://www.city.otsu.lg.jp/soshiki/005/1227/g/hyoka/1393141044295.html",
+      "status": "official_landing_verified",
+      "review_boundary": "総合計画・行政評価・予算編成を関連付ける公式制度入口。自治体の評価結果をJichi Insight独自の政策達成判定へ変換しない。"
+    },
+    {
+      "id": "otsu-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算",
+      "official_url": "https://www.city.otsu.lg.jp/shisei/zai/ty/73718.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算の公式入口。補正・執行・決算とbudget stageを分離する。"
+    },
+    {
+      "id": "otsu-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度決算について",
+      "official_url": "https://www.city.otsu.lg.jp/shisei/zai/k/71025.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024各会計決算の公式入口。財政値と行政評価・実行計画進捗を別Evidence roleとして保持する。"
+    }
+  ],
+  "availability_boundary": "大津市総合計画は2017～2028年度で、第3期実行計画は2025～2028年度。行政評価・予算編成との連携は制度として保持し、各年度評価・財政値の意味を統合しない。",
+  "quality_boundary": "This Phase 14 inventory verifies Otsu's 2017-2028 comprehensive plan, 2025-2028 third action plan, administrative-evaluation governance, FY2026 budget, and FY2024 settlement. Municipal evaluation and fiscal evidence remain source-reported and are not converted into independent achievement, causal, or cross-city judgments.",
+  "next_action": "Phase 15で総合計画の施策・指標、第3期実行計画事業、行政評価、FY2026予算、FY2024決算を年度・主体・source位置付きrecord-level Evidenceへ展開する。",
+  "verified_at": "2026-09-30"
+}
