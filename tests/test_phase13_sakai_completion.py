@@ -24,8 +24,10 @@ def test_sakai_fiscal_and_availability():
     assert p["current_plan_lane"]["annual_progress_status"]=="not_yet_available"
     assert "流用しない" in p["historical_lane"]["boundary"]
 
-def test_sakai_queue_advances_to_kobe():
+def test_sakai_is_complete_in_final_phase13_queue():
     q=load("data/catalog/phase13_designated_city_review_queue.json")
     by={r["official_code"]:r["status"] for r in q["execution_queue"]}
     assert by["271403"]=="reviewed_complete"
-    assert by["281000"]=="review_in_progress"
+    assert q["status"]=="complete"
+    assert q["summary"]["reviewed_complete_count"]==18
+    assert q["summary"]["next_official_code"] is None
