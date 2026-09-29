@@ -1,0 +1,93 @@
+{
+  "id": "kobe-phase13-policy-review-manifest",
+  "phase": 13,
+  "official_code": "281000",
+  "name_ja": "神戸市",
+  "status": "review_in_progress",
+  "reviewed_at": "2026-09-29",
+  "source_catalog_path": "data/catalog/kobe_phase13_sources.json",
+  "plan_review_path": "data/reviewed/kobe-city/plan_review.json",
+  "policy_structure_path": "data/catalog/kobe_current_policy_structure.json",
+  "progress_review_path": "data/catalog/kobe_current_progress_availability.json",
+  "fiscal_records_path": "data/reviewed/kobe-city/fiscal_records.json",
+  "fiscal_evidence_path": "data/reviewed/kobe-city/evidence_packets.json",
+  "reviewed_facts": [
+    {
+      "id": "kobe-basic-plan-period",
+      "layer": "current_plan",
+      "field": "period",
+      "value": "2026年度～2035年度",
+      "source_id": "kobe-sixth-basic-plan",
+      "review_status": "reviewed",
+      "interpretation_boundary": "実施計画とは別layer。"
+    },
+    {
+      "id": "kobe-directions",
+      "layer": "current_plan",
+      "field": "direction_count",
+      "value": 3,
+      "unit": "directions",
+      "source_id": "kobe-sixth-basic-plan",
+      "review_status": "reviewed",
+      "interpretation_boundary": "3方向性をcurrent identityとして保持。"
+    },
+    {
+      "id": "kobe-vision-period",
+      "layer": "implementation_plan",
+      "field": "period",
+      "value": "2026年度～2030年度",
+      "source_id": "kobe-2030-vision",
+      "review_status": "reviewed",
+      "interpretation_boundary": "5年実施計画。"
+    },
+    {
+      "id": "kobe-current-result",
+      "layer": "annual_progress",
+      "field": "status",
+      "value": "not_yet_available",
+      "source_id": "kobe-2030-progress-governance",
+      "review_status": "reviewed_availability",
+      "interpretation_boundary": "2026初年度Resultを推測しない。"
+    },
+    {
+      "id": "kobe-budget",
+      "layer": "fiscal",
+      "field": "general_account_initial_budget",
+      "fiscal_year": 2026,
+      "value": 977781231000,
+      "unit": "yen",
+      "source_id": "kobe-budget-2026-enacted",
+      "review_status": "reviewed",
+      "interpretation_boundary": "市会可決initial budget。"
+    },
+    {
+      "id": "kobe-revenue",
+      "layer": "fiscal",
+      "field": "general_account_settlement_revenue",
+      "fiscal_year": 2024,
+      "value": 945588848718,
+      "unit": "yen",
+      "source_id": "kobe-settlement-2024",
+      "review_status": "reviewed",
+      "interpretation_boundary": "settlement exact。"
+    },
+    {
+      "id": "kobe-expenditure",
+      "layer": "fiscal",
+      "field": "general_account_settlement_expenditure",
+      "fiscal_year": 2024,
+      "value": 930659433328,
+      "unit": "yen",
+      "source_id": "kobe-settlement-2024",
+      "review_status": "reviewed",
+      "interpretation_boundary": "settlement exact。"
+    }
+  ],
+  "remaining_work": [
+    "基本政策・主な施策・KPIを全件個票化する。",
+    "KGIとKPIの細粒度linkageをレビューする。",
+    "外部有識者による最初の年度進行管理結果が公表後にResultを追加する。",
+    "個別事業は年度予算と公式identityを確認して接続する。"
+  ],
+  "quality_boundary": "Kobe Phase 13 v1 reviews the 2026-2035 basic plan, the 2026-2030 Kobe 2030 Vision with three directions, annual external-expert progress governance, explicit first-cycle result unavailability, and three general-account fiscal top lines. No current result is inferred from budget or prior plans; no independent achievement, causal, or cross-city judgment is inferred."
+}
