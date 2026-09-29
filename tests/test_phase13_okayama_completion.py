@@ -15,6 +15,10 @@ def test_okayama_source_precision_and_availability():
     assert "source" in notes or "余" in notes
     assert {r["amount_yen"] for r in f}=={429_863_380_000,406_500_000_000,387_700_000_000}
     assert load("data/catalog/okayama_current_progress_availability.json")["current_plan_lane"]["annual_result_status"]=="not_yet_available"
-def test_okayama_queue_advances_to_hiroshima():
-    q=load("data/catalog/phase13_designated_city_review_queue.json"); by={r["official_code"]:r["status"] for r in q["execution_queue"]}
-    assert by["331007"]=="reviewed_complete"; assert by["341002"]=="review_in_progress"
+def test_okayama_is_complete_in_final_phase13_queue():
+    q=load("data/catalog/phase13_designated_city_review_queue.json")
+    by={r["official_code"]:r["status"] for r in q["execution_queue"]}
+    assert by["331007"]=="reviewed_complete"
+    assert q["status"]=="complete"
+    assert q["summary"]["reviewed_complete_count"]==18
+    assert q["summary"]["next_official_code"] is None
