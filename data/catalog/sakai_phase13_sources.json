@@ -1,0 +1,67 @@
+{
+  "id": "sakai-phase13-sources",
+  "phase": 13,
+  "official_code": "271403",
+  "name_ja": "堺市",
+  "reviewed_at": "2026-09-29",
+  "records": [
+    {
+      "id": "sakai-basic-plan-2030",
+      "layer": "current_plan",
+      "title": "堺市基本計画2030",
+      "organization": "堺市",
+      "url": "https://www.city.sakai.lg.jp/shisei/gyosei/shishin/shisei/kihonkeikaku/kihonnkeikaku2030.html",
+      "source_kind": "html",
+      "review_status": "reviewed_current_plan",
+      "confidence": "high",
+      "boundary": "2026～2030年度の最上位計画。2035年度を見据える5年間の市政運営方針。"
+    },
+    {
+      "id": "sakai-basic-plan-2030-kpi",
+      "layer": "kpi_reference",
+      "title": "堺市基本計画2030のKPI",
+      "organization": "堺市",
+      "url": "https://www.city.sakai.lg.jp/shisei/gyosei/shishin/shisei/kihonkeikaku/kihonnkeikaku2030.html",
+      "source_kind": "official_supporting_material",
+      "review_status": "reviewed_kpi_governance_and_structure",
+      "confidence": "high",
+      "boundary": "3 KGI、5重点戦略、27施策とKPI管理構造を確認。個別KPI値の全件レビューは追加depth。"
+    },
+    {
+      "id": "sakai-legacy-progress-2025-final",
+      "layer": "historical_progress",
+      "title": "堺市基本計画2025の進捗状況",
+      "organization": "堺市",
+      "url": "https://www.city.sakai.lg.jp/shisei/gyosei/shishin/shisei/kihonkeikaku/kakokeikaku/kihonkeikaku2025.html",
+      "source_kind": "html",
+      "review_status": "reviewed_historical_boundary",
+      "confidence": "high",
+      "boundary": "旧2021～2025計画の最終進捗route。現行2030計画の年度actualへ流用しない。"
+    },
+    {
+      "id": "sakai-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算",
+      "organization": "堺市",
+      "url": "https://www.city.sakai.lg.jp/shisei/zaisei/yosan_kessan_shushj/yosan/R8yosan.html",
+      "source_kind": "html",
+      "fiscal_year": 2026,
+      "review_status": "reviewed_initial_budget_exact",
+      "confidence": "high",
+      "boundary": "一般会計当初予算521,700,000千円。後続補正とは別state。"
+    },
+    {
+      "id": "sakai-settlement-2024-audit",
+      "layer": "settlement_audit",
+      "title": "令和6年度決算審査意見書",
+      "organization": "堺市監査委員",
+      "url": "https://www.city.sakai.lg.jp/shisei/sonota/kansa/kansakajokyo/uneishinsa.files/R7ippan.pdf",
+      "source_kind": "pdf",
+      "fiscal_year": 2024,
+      "review_status": "reviewed_exact_settlement_and_audit",
+      "confidence": "high",
+      "boundary": "決算額総括表の円単位値を使用。財政監査Evidenceであり政策成果評価とは別。"
+    }
+  ],
+  "quality_boundary": "現行堺市基本計画2030と旧基本計画2025をversion-separatedで保持し、現行計画初年度の年度実績が未公表である状態を明示する。旧計画実績を現行actualへ流用せず、KGI/KPI、財政、監査を統合スコアへ変換しない。"
+}
