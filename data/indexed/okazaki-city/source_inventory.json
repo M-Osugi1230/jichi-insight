@@ -1,0 +1,62 @@
+{
+  "id": "phase14-okazaki-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "232025",
+  "standard_area_code": "23202",
+  "name_ja": "岡崎市",
+  "prefecture_name_ja": "愛知県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第7次岡崎市総合計画 後期計画",
+    "start_fiscal_year": 2026,
+    "end_fiscal_year": 2030,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "okazaki-seventh-latter-plan",
+      "layer": "comprehensive_plan",
+      "title": "第7次岡崎市総合計画（後期計画）を策定しました。",
+      "official_url": "https://www.city.okazaki.lg.jp/shisei/koho/1006195/1006358/1006359/1014373/1014734.html",
+      "status": "official_landing_verified",
+      "effective_period": "後期計画 2026年度～2030年度",
+      "review_boundary": "10年間の第7次総合計画を中間見直しした後期5年間のcurrent versionとして保持し、前期計画と分離する。"
+    },
+    {
+      "id": "okazaki-future-investment-progress",
+      "layer": "progress_governance",
+      "title": "第7次岡崎市総合計画（後期計画）",
+      "official_url": "https://www.city.okazaki.lg.jp/shisei/koho/1006195/1006358/1006359/1014373/1014734.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2030年度",
+      "review_boundary": "未来投資計画が分野別取組と推進事業パッケージを用いて目標設定・進捗管理する構造を保持し、個別指標評価を独自達成度へ変換しない。"
+    },
+    {
+      "id": "okazaki-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算",
+      "official_url": "https://www.city.okazaki.lg.jp/shisei/yosan/1006068/1011272.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算・補正予算説明書の公式入口。後期計画初年度の予算を年度成果や政策効果と同一視しない。"
+    },
+    {
+      "id": "okazaki-settlement-2024",
+      "layer": "settlement_and_major_measures",
+      "title": "令和6年度決算",
+      "official_url": "https://www.city.okazaki.lg.jp/shisei/yosan/1006101/1010956.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算概要・主要施策成果説明書の公式入口。前期計画期間のEvidenceとして後期計画current actualへ流用しない。"
+    }
+  ],
+  "availability_boundary": "第7次岡崎市総合計画は2021～2030年度の10年間で、current後期計画は2026～2030年度。FY2024決算・成果は前期期間であり、後期計画の現行Resultとはversionを分ける。",
+  "quality_boundary": "This Phase 14 inventory verifies Okazaki's 2026-2030 latter plan, Future Investment Plan progress-management structure, FY2026 budget route, and historical FY2024 settlement/major-measures route. It preserves the midterm revision boundary and does not infer current achievement, causal policy effects, or cross-city comparability.",
+  "next_action": "Phase 15で10分野の指針・参考指標・未来投資パッケージ、進捗管理、FY2026予算、前期計画下FY2024決算・主要施策成果をversioned Evidenceへ展開する。",
+  "verified_at": "2026-09-30"
+}
