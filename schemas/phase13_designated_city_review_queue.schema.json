@@ -3,67 +3,219 @@
   "title": "Phase 13 designated city record review queue",
   "type": "object",
   "additionalProperties": false,
-  "required": ["id", "phase", "status", "scope", "promotion_target", "quality_gate", "reference_implementations", "execution_queue", "blocked_source_inventories", "summary", "updated_at"],
+  "required": [
+    "id",
+    "phase",
+    "status",
+    "scope",
+    "promotion_target",
+    "quality_gate",
+    "reference_implementations",
+    "execution_queue",
+    "blocked_source_inventories",
+    "summary",
+    "updated_at"
+  ],
   "properties": {
-    "id": {"const": "phase13-designated-city-review-queue"},
-    "phase": {"const": 13},
-    "status": {"const": "in_progress"},
-    "scope": {"const": "designated_city_record_review"},
-    "promotion_target": {"const": "reviewed"},
-    "quality_gate": {"type": "array", "minItems": 9, "uniqueItems": true, "items": {"type": "string", "minLength": 60}},
-    "reference_implementations": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"$ref": "#/$defs/reference"}},
-    "execution_queue": {"type": "array", "minItems": 18, "maxItems": 18, "items": {"$ref": "#/$defs/queuedCity"}},
-    "blocked_source_inventories": {"type": "array", "maxItems": 0, "items": {"$ref": "#/$defs/blockedCity"}},
+    "id": {
+      "const": "phase13-designated-city-review-queue"
+    },
+    "phase": {
+      "const": 13
+    },
+    "status": {
+      "enum": [
+        "in_progress",
+        "complete"
+      ]
+    },
+    "scope": {
+      "const": "designated_city_record_review"
+    },
+    "promotion_target": {
+      "const": "reviewed"
+    },
+    "quality_gate": {
+      "type": "array",
+      "minItems": 9,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 60
+      }
+    },
+    "reference_implementations": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "$ref": "#/$defs/reference"
+      }
+    },
+    "execution_queue": {
+      "type": "array",
+      "minItems": 18,
+      "maxItems": 18,
+      "items": {
+        "$ref": "#/$defs/queuedCity"
+      }
+    },
+    "blocked_source_inventories": {
+      "type": "array",
+      "maxItems": 0,
+      "items": {
+        "$ref": "#/$defs/blockedCity"
+      }
+    },
     "summary": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["designated_city_count", "reviewed_reference_count", "eligible_review_queue_count", "blocked_source_inventory_count", "reviewed_complete_count", "review_in_progress_count", "pending_record_review_count", "next_official_code"],
+      "required": [
+        "designated_city_count",
+        "reviewed_reference_count",
+        "eligible_review_queue_count",
+        "blocked_source_inventory_count",
+        "reviewed_complete_count",
+        "review_in_progress_count",
+        "pending_record_review_count",
+        "next_official_code"
+      ],
       "properties": {
-        "designated_city_count": {"const": 20},
-        "reviewed_reference_count": {"const": 2},
-        "eligible_review_queue_count": {"const": 18},
-        "blocked_source_inventory_count": {"const": 0},
-        "reviewed_complete_count": {"type": "integer", "minimum": 0, "maximum": 18},
-        "review_in_progress_count": {"type": "integer", "minimum": 0, "maximum": 18},
-        "pending_record_review_count": {"type": "integer", "minimum": 0, "maximum": 18},
-        "next_official_code": {"type": "string", "pattern": "^[0-9]{6}$"}
+        "designated_city_count": {
+          "const": 20
+        },
+        "reviewed_reference_count": {
+          "const": 2
+        },
+        "eligible_review_queue_count": {
+          "const": 18
+        },
+        "blocked_source_inventory_count": {
+          "const": 0
+        },
+        "reviewed_complete_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 18
+        },
+        "review_in_progress_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 18
+        },
+        "pending_record_review_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 18
+        },
+        "next_official_code": {
+          "oneOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9]{6}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
       }
     },
-    "updated_at": {"type": "string", "format": "date"}
+    "updated_at": {
+      "type": "string",
+      "format": "date"
+    }
   },
   "$defs": {
     "reference": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["official_code", "name_ja", "status", "reviewed_data_path"],
+      "required": [
+        "official_code",
+        "name_ja",
+        "status",
+        "reviewed_data_path"
+      ],
       "properties": {
-        "official_code": {"type": "string", "pattern": "^[0-9]{6}$"},
-        "name_ja": {"type": "string", "minLength": 2},
-        "status": {"const": "reviewed_reference"},
-        "reviewed_data_path": {"type": "string", "pattern": "^data/reviewed/.+$"}
+        "official_code": {
+          "type": "string",
+          "pattern": "^[0-9]{6}$"
+        },
+        "name_ja": {
+          "type": "string",
+          "minLength": 2
+        },
+        "status": {
+          "const": "reviewed_reference"
+        },
+        "reviewed_data_path": {
+          "type": "string",
+          "pattern": "^data/reviewed/.+$"
+        }
       }
     },
     "queuedCity": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["sequence", "official_code", "name_ja", "prefecture_name_ja", "status", "source_inventory_path"],
+      "required": [
+        "sequence",
+        "official_code",
+        "name_ja",
+        "prefecture_name_ja",
+        "status",
+        "source_inventory_path"
+      ],
       "properties": {
-        "sequence": {"type": "integer", "minimum": 1, "maximum": 18},
-        "official_code": {"type": "string", "pattern": "^[0-9]{6}$"},
-        "name_ja": {"type": "string", "minLength": 2},
-        "prefecture_name_ja": {"type": "string", "minLength": 3},
-        "status": {"enum": ["pending_record_review", "review_in_progress", "reviewed_complete"]},
-        "source_inventory_path": {"type": "string", "pattern": "^data/indexed/.+/source_inventory\\.json$"}
+        "sequence": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 18
+        },
+        "official_code": {
+          "type": "string",
+          "pattern": "^[0-9]{6}$"
+        },
+        "name_ja": {
+          "type": "string",
+          "minLength": 2
+        },
+        "prefecture_name_ja": {
+          "type": "string",
+          "minLength": 3
+        },
+        "status": {
+          "enum": [
+            "pending_record_review",
+            "review_in_progress",
+            "reviewed_complete"
+          ]
+        },
+        "source_inventory_path": {
+          "type": "string",
+          "pattern": "^data/indexed/.+/source_inventory\\.json$"
+        }
       }
     },
     "blockedCity": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["official_code", "name_ja", "status"],
+      "required": [
+        "official_code",
+        "name_ja",
+        "status"
+      ],
       "properties": {
-        "official_code": {"type": "string", "pattern": "^[0-9]{6}$"},
-        "name_ja": {"type": "string", "minLength": 2},
-        "status": {"const": "source_inventory_partial"}
+        "official_code": {
+          "type": "string",
+          "pattern": "^[0-9]{6}$"
+        },
+        "name_ja": {
+          "type": "string",
+          "minLength": 2
+        },
+        "status": {
+          "const": "source_inventory_partial"
+        }
       }
     }
   }
