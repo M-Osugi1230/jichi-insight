@@ -1,0 +1,63 @@
+{
+  "id": "phase14-mito-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "082015",
+  "standard_area_code": "08201",
+  "name_ja": "水戸市",
+  "prefecture_name_ja": "茨城県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city",
+    "prefectural_capital"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "水戸市第7次総合計画－みと魁・Nextプラン－",
+    "start_fiscal_year": 2024,
+    "end_fiscal_year": 2033,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "mito-seventh-plan",
+      "layer": "comprehensive_plan",
+      "title": "水戸市第7次総合計画－みと魁・Nextプラン－",
+      "official_url": "https://www.city.mito.lg.jp/page/69724.html",
+      "status": "official_landing_verified",
+      "effective_period": "2024年度～2033年度",
+      "review_boundary": "最上位計画の10年間と前後期基本計画を確認し、基本構想・基本計画・年度実施計画を別layerで保持する。"
+    },
+    {
+      "id": "mito-implementation-2026-2028",
+      "layer": "implementation_plan",
+      "title": "3か年実施計画（2026年度～2028年度）",
+      "official_url": "https://www.city.mito.lg.jp/page/116349.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2028年度",
+      "review_boundary": "3年間の主要事業を毎年度ローリングし、実績評価を反映する運用を確認する。年度版を長期基本計画と同一versionへ統合しない。"
+    },
+    {
+      "id": "mito-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算の概要",
+      "official_url": "https://www.city.mito.lg.jp/page/110290.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算の公式入口として保持し、補正・執行・決算を別stateで扱う。"
+    },
+    {
+      "id": "mito-settlement-2024",
+      "layer": "settlement_and_annual_results",
+      "title": "令和6年度決算の概要",
+      "official_url": "https://www.city.mito.lg.jp/page/107758.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算と主要施策成果の公式入口。財政決算と政策成果を別Evidence roleとしてPhase 15で個票確認する。"
+    }
+  ],
+  "availability_boundary": "現行計画は2024～2033年度で、実施計画は3年ローリング方式。計画目標、年度事業、実績評価、財政決算の期間とEvidence roleを混同せずに保持する。",
+  "quality_boundary": "This Phase 14 inventory verifies Mito's 2024-2033 seventh comprehensive plan, rolling 2026-2028 implementation plan, FY2026 budget, and FY2024 settlement/major-results routes. It remains indexed_not_reviewed and does not promote individual targets, project results, fiscal amounts, achievement judgments, causal claims, or cross-city comparability.",
+  "next_action": "Phase 15で基本計画の政策・目標指標、3か年実施計画の主要事業、年度実績評価、FY2026予算およびFY2024決算をrecord-level Evidenceへ展開する。",
+  "verified_at": "2026-09-30"
+}
