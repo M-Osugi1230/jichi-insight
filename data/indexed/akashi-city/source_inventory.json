@@ -1,0 +1,62 @@
+{
+  "id": "phase14-akashi-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "282030",
+  "standard_area_code": "28203",
+  "name_ja": "明石市",
+  "prefecture_name_ja": "兵庫県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "あかしSDGs推進計画（明石市第6次長期総合計画）",
+    "start_fiscal_year": 2022,
+    "end_fiscal_year": 2030,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "akashi-sdgs-plan",
+      "layer": "comprehensive_plan",
+      "title": "あかしSDGs推進計画（明石市第6次長期総合計画）",
+      "official_url": "https://www.city.akashi.lg.jp/seisaku/seisaku_shitsu/shise/gyose/kekaku/sogokekaku/index-6sdgs.html",
+      "status": "official_landing_verified",
+      "effective_period": "2022年度～2030年度",
+      "review_boundary": "9年間の推進計画と前期・後期戦略計画を別version/periodで保持し、前期実績を後期current actualへ流用しない。"
+    },
+    {
+      "id": "akashi-latter-strategy-action",
+      "layer": "implementation_plan_and_progress",
+      "title": "あかしSDGs後期戦略計画・2026年度実行計画",
+      "official_url": "https://www.city.akashi.lg.jp/seisaku/seisaku_shitsu/shise/gyose/kekaku/sogokekaku/index-6sdgs.html",
+      "status": "official_landing_verified",
+      "effective_period": "後期戦略 2026年度～2030年度・実行計画 年度単位",
+      "review_boundary": "2026～2030後期戦略、年度実行計画、SDGs推進審議会の進行管理を別Evidence roleで保持し、統合スコアへ変換しない。"
+    },
+    {
+      "id": "akashi-budget-2026",
+      "layer": "budget",
+      "title": "当初予算の内容",
+      "official_url": "https://www.city.akashi.lg.jp/zaimu/zaisei_ka/shise/zaise/aramashi/yosannaiyo/index.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026一般会計予算の修正後資料を含む公式入口。proposal、修正議決後、補正、執行を別stateとして保持する。"
+    },
+    {
+      "id": "akashi-settlement-2024",
+      "layer": "settlement_and_major_measures",
+      "title": "財政のあらまし（決算内容）",
+      "official_url": "https://www.city.akashi.lg.jp/zaimu/zaisei_ka/shise/zaise/aramashi/zaise/index.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算資料・主要施策成果報告書・決算書の公式入口。前期戦略期間の結果を後期戦略のactualへ流用しない。"
+    }
+  ],
+  "availability_boundary": "推進計画は2022～2030年度、前期戦略は2022～2025年度、current後期戦略は2026～2030年度、実行計画は毎年度。FY2024決算・成果は前期戦略期間としてversion分離する。",
+  "quality_boundary": "This Phase 14 inventory verifies Akashi's 2022-2030 SDGs comprehensive plan, current 2026-2030 latter strategy, annual action-plan/SDGs-council governance, FY2026 modified initial-budget route, and FY2024 prior-strategy settlement/major-results route. It preserves version and accountability roles and makes no independent achievement or causal judgment.",
+  "next_action": "Phase 15で後期戦略の施策・KPI、2026年度実行計画、審議会進捗、FY2026予算lineage、前期期間FY2024決算・主要施策成果をversioned Evidenceへ展開する。",
+  "verified_at": "2026-09-30"
+}
