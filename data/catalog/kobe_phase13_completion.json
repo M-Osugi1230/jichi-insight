@@ -1,0 +1,73 @@
+{
+  "id": "kobe-phase13-completion",
+  "phase": 13,
+  "status": "reviewed_complete",
+  "official_code": "281000",
+  "name_ja": "神戸市",
+  "completed_at": "2026-09-29",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "policy_review_manifest_path": "data/catalog/kobe_phase13_policy_review_manifest.json",
+    "plan_review_path": "data/reviewed/kobe-city/plan_review.json",
+    "source_catalog_path": "data/catalog/kobe_phase13_sources.json",
+    "policy_structure_path": "data/catalog/kobe_current_policy_structure.json",
+    "progress_review_path": "data/catalog/kobe_current_progress_availability.json",
+    "fiscal_records_path": "data/reviewed/kobe-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/kobe-city/evidence_packets.json",
+    "counts": {
+      "basic_plan_directions": 3,
+      "implementation_plan_directions": 3,
+      "current_completed_annual_results": 0,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "basic_and_implementation_plan_versions_separate": true,
+    "three_direction_structure_review_complete": true,
+    "current_progress_availability_explicit": true,
+    "annual_external_expert_governance_preserved": true,
+    "prior_result_not_reused": true,
+    "initial_budget_enactment_verified": true,
+    "initial_budget_and_settlement_states_separate": true,
+    "exact_settlement_precision_preserved": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "policy-kpi-record-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "基本政策・主な施策・KPIの完全個票化は追加depth。"
+    },
+    {
+      "id": "kgi-kpi-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "基本計画KGIと実施計画KPIの細粒度接続はEvidence確認後のみ昇格する。"
+    },
+    {
+      "id": "first-current-annual-result",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "2026年度初年度の完了Resultは未公表。予算や旧計画から補完しない。"
+    },
+    {
+      "id": "annual-project-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "個別事業は毎年度予算編成で具体化されるため、年度と公式identityを確認して追加する。"
+    },
+    {
+      "id": "fiscal-detail-policy-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "補正・執行・個別事業費・契約・補助金の政策接続は別Evidenceレビュー。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "KGI/KPI・外部有識者レビュー・財政値を因果効果や他都市比較スコアへ変換しない。"
+    }
+  ],
+  "completion_boundary": "神戸市のPhase 13 reviewed_completeは宣言したv1レビュー・パッケージの完了を意味する。2026～2035年度の第6次神戸市基本計画、2026～2030年度の実施計画『神戸2030ビジョン』、両計画に共通する3つの方向性、KGIに直結するKPIと個別事業を毎年度予算で具体化する運用、外部有識者による毎年度進行管理、2026年度初年度の完了Resultがまだ利用可能でないavailability boundary、2026年度一般会計予算977,781,231,000円の市会可決、2024年度一般会計決算歳入945,588,848,718円・歳出930,659,433,328円をレビュー済みである。初年度Resultを予算・旧計画から推測せず、個別政策・KPI・事業、KGI↔KPI linkage、最初の年度Result、個別財政接続はdeferred_depthとして保持し、独自政策達成度、因果効果、他都市比較可能性へ変換しない。"
+}
