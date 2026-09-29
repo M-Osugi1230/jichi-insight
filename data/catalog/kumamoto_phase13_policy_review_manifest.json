@@ -1,0 +1,114 @@
+{
+  "id": "kumamoto-phase13-policy-review-manifest",
+  "phase": 13,
+  "official_code": "431001",
+  "name_ja": "熊本市",
+  "status": "review_in_progress",
+  "reviewed_at": "2026-09-29",
+  "source_catalog_path": "data/catalog/kumamoto_phase13_sources.json",
+  "plan_review_path": "data/reviewed/kumamoto-city/plan_review.json",
+  "policy_structure_path": "data/catalog/kumamoto_current_policy_structure.json",
+  "progress_review_path": "data/catalog/kumamoto_current_progress_review_summary.json",
+  "fiscal_records_path": "data/reviewed/kumamoto-city/fiscal_records.json",
+  "fiscal_evidence_path": "data/reviewed/kumamoto-city/evidence_packets.json",
+  "reviewed_facts": [
+    {
+      "id": "kumamoto-plan-period",
+      "layer": "current_plan",
+      "field": "period",
+      "value": "2024年度～2031年度",
+      "source_id": "kumamoto-eighth-plan",
+      "review_status": "reviewed",
+      "interpretation_boundary": "現行第8次。"
+    },
+    {
+      "id": "kumamoto-plan-layers",
+      "layer": "current_plan",
+      "field": "plan_layers",
+      "value": 3,
+      "unit": "layers",
+      "source_id": "kumamoto-eighth-plan",
+      "review_status": "reviewed_structure",
+      "interpretation_boundary": "基本構想・基本計画・Action Plan。"
+    },
+    {
+      "id": "kumamoto-visions",
+      "layer": "current_plan",
+      "field": "vision_count",
+      "value": 8,
+      "unit": "visions",
+      "source_id": "kumamoto-eighth-plan",
+      "review_status": "reviewed_structure",
+      "interpretation_boundary": "個別施策・指標は追加depth。"
+    },
+    {
+      "id": "kumamoto-fy2026-priorities",
+      "layer": "implementation_plan",
+      "field": "priority_item_count",
+      "value": 4,
+      "unit": "priority_items",
+      "source_id": "kumamoto-action-plan-2026",
+      "review_status": "reviewed",
+      "interpretation_boundary": "annual Action。通年Resultではない。"
+    },
+    {
+      "id": "kumamoto-fy2024-current-evaluation",
+      "layer": "annual_progress",
+      "field": "status",
+      "value": "published",
+      "source_id": "kumamoto-fy2024-administrative-evaluation",
+      "review_status": "reviewed_current_plan_result_route",
+      "interpretation_boundary": "行政評価はsource-reported。"
+    },
+    {
+      "id": "kumamoto-deliberation",
+      "layer": "accountability",
+      "field": "role",
+      "value": "comprehensive_plan_council_deliberation",
+      "source_id": "kumamoto-fy2024-administrative-evaluation",
+      "review_status": "reviewed_role_separation",
+      "interpretation_boundary": "行政評価と審議会審議を統合しない。"
+    },
+    {
+      "id": "kumamoto-budget",
+      "layer": "fiscal",
+      "field": "general_account_initial_budget",
+      "fiscal_year": 2026,
+      "value": 437840000000,
+      "unit": "yen",
+      "source_id": "kumamoto-budget-2026-proposal",
+      "review_status": "reviewed_enacted_lineage",
+      "interpretation_boundary": "proposal amount + enacted confirmation。"
+    },
+    {
+      "id": "kumamoto-revenue",
+      "layer": "fiscal",
+      "field": "general_account_settlement_revenue",
+      "fiscal_year": 2024,
+      "value": 428730240000,
+      "unit": "yen_10k_source_precision",
+      "source_id": "kumamoto-settlement-2024",
+      "review_status": "reviewed",
+      "interpretation_boundary": "万円単位公表。"
+    },
+    {
+      "id": "kumamoto-expenditure",
+      "layer": "fiscal",
+      "field": "general_account_settlement_expenditure",
+      "fiscal_year": 2024,
+      "value": 419712090000,
+      "unit": "yen_10k_source_precision",
+      "source_id": "kumamoto-settlement-2024",
+      "review_status": "reviewed",
+      "interpretation_boundary": "万円単位公表。"
+    }
+  ],
+  "remaining_work": [
+    "8ビジョン配下の施策・基本方針・検証指標を完全個票化する。",
+    "FY2024指標一覧・行政評価シートの全件をrecord-level Evidenceへ展開する。",
+    "FY2026 Action Planの個別事業・検証指標・予算接続を全件レビューする。",
+    "FY2026通年Resultが公表後にFY2024/FY2025/FY2026系列をversion-safeに接続する。",
+    "個別事業と補正・執行・決算・契約・補助金を公式identityで接続する。"
+  ],
+  "quality_boundary": "Kumamoto Phase 13 v1 reviews the 2024-2031 eighth comprehensive plan, three planning layers, eight visions, four FY2026 action-plan priorities, current-plan FY2024 administrative evaluation and separate council deliberation, proposal-to-enacted budget lineage, and three general-account fiscal top lines. Source-reported evaluation and deliberation are not converted into an independent achievement score, causal judgment, or cross-city comparability."
+}
