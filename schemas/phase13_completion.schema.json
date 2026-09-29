@@ -1,0 +1,192 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.local/schemas/phase13_completion.schema.json",
+  "title": "Phase 13 designated-city record review completion",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "phase",
+    "status",
+    "completed_at",
+    "scope",
+    "coverage",
+    "reference_implementations",
+    "reviewed_completion_contracts",
+    "canonical_sources",
+    "quality_summary",
+    "completion_gates",
+    "completion_boundary",
+    "next_scope"
+  ],
+  "properties": {
+    "id": {
+      "const": "phase13-designated-city-record-review-completion"
+    },
+    "phase": {
+      "const": 13
+    },
+    "status": {
+      "const": "complete"
+    },
+    "completed_at": {
+      "const": "2026-09-29",
+      "format": "date"
+    },
+    "scope": {
+      "const": "designated_city_record_review"
+    },
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "designated_city_count",
+        "reviewed_reference_count",
+        "execution_reviewed_complete_count",
+        "review_in_progress_count",
+        "pending_record_review_count",
+        "blocked_source_inventory_count"
+      ],
+      "properties": {
+        "designated_city_count": {
+          "const": 20
+        },
+        "reviewed_reference_count": {
+          "const": 2
+        },
+        "execution_reviewed_complete_count": {
+          "const": 18
+        },
+        "review_in_progress_count": {
+          "const": 0
+        },
+        "pending_record_review_count": {
+          "const": 0
+        },
+        "blocked_source_inventory_count": {
+          "const": 0
+        }
+      }
+    },
+    "reference_implementations": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "official_code",
+          "name_ja",
+          "status",
+          "reviewed_data_path"
+        ],
+        "properties": {
+          "official_code": {
+            "type": "string",
+            "pattern": "^[0-9]{6}$"
+          },
+          "name_ja": {
+            "type": "string",
+            "minLength": 2
+          },
+          "status": {
+            "const": "reviewed_reference"
+          },
+          "reviewed_data_path": {
+            "type": "string",
+            "pattern": "^data/reviewed/.+$"
+          }
+        }
+      }
+    },
+    "reviewed_completion_contracts": {
+      "type": "array",
+      "minItems": 18,
+      "maxItems": 18,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "official_code",
+          "name_ja",
+          "completion_path",
+          "status"
+        ],
+        "properties": {
+          "official_code": {
+            "type": "string",
+            "pattern": "^[0-9]{6}$"
+          },
+          "name_ja": {
+            "type": "string",
+            "minLength": 2
+          },
+          "completion_path": {
+            "type": "string",
+            "pattern": "^data/catalog/.+_phase13_completion\\.json$"
+          },
+          "status": {
+            "const": "reviewed_complete"
+          }
+        }
+      }
+    },
+    "canonical_sources": {
+      "type": "array",
+      "minItems": 7,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^(data|schemas|tests)/"
+      }
+    },
+    "quality_summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "policy_achievement_assessment_count",
+        "causal_attribution_count",
+        "cross_city_ranking_count",
+        "inferred_missing_evidence_count"
+      ],
+      "properties": {
+        "policy_achievement_assessment_count": {
+          "const": 0
+        },
+        "causal_attribution_count": {
+          "const": 0
+        },
+        "cross_city_ranking_count": {
+          "const": 0
+        },
+        "inferred_missing_evidence_count": {
+          "const": 0
+        }
+      }
+    },
+    "completion_gates": {
+      "type": "array",
+      "minItems": 7,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 70
+      }
+    },
+    "completion_boundary": {
+      "type": "string",
+      "minLength": 400
+    },
+    "next_scope": {
+      "type": "array",
+      "minItems": 5,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 10
+      }
+    }
+  }
+}
