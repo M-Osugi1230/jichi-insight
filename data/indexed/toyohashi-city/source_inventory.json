@@ -1,0 +1,62 @@
+{
+  "id": "phase14-toyohashi-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "232017",
+  "standard_area_code": "23201",
+  "name_ja": "豊橋市",
+  "prefecture_name_ja": "愛知県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第6次豊橋市総合計画 後期基本計画",
+    "start_fiscal_year": 2026,
+    "end_fiscal_year": 2030,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "toyohashi-sixth-latter-plan",
+      "layer": "comprehensive_plan",
+      "title": "第6次豊橋市総合計画",
+      "official_url": "https://www.city.toyohashi.lg.jp/40536.htm",
+      "status": "official_landing_verified",
+      "effective_period": "後期基本計画 2026年度～2030年度",
+      "review_boundary": "基本構想2021～2030年度の後半5年間を現行後期基本計画として保持し、前期基本計画の実績とversion分離する。"
+    },
+    {
+      "id": "toyohashi-latter-implementation",
+      "layer": "implementation_plan",
+      "title": "第6次豊橋市総合計画 後期基本計画 実施計画",
+      "official_url": "https://www.city.toyohashi.lg.jp/40536.htm",
+      "status": "official_landing_verified",
+      "effective_period": "3年間・毎年度見直し",
+      "review_boundary": "後期基本計画に付属する3年ローリング実施計画を確認し、各年度改訂版を上書きせず別versionとして扱う。"
+    },
+    {
+      "id": "toyohashi-budget-2026",
+      "layer": "budget",
+      "title": "予算",
+      "official_url": "https://www.city.toyohashi.lg.jp/8815.htm",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026予算大綱・当初予算説明書・補正予算の公式入口。initialとsupplementaryを別stateで保持する。"
+    },
+    {
+      "id": "toyohashi-settlement-2024",
+      "layer": "settlement",
+      "title": "会計課決算書・決算付属書令和6年度",
+      "official_url": "https://www.city.toyohashi.lg.jp/63332.htm",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024一般会計・特別会計決算書と附属書の公式入口。前期計画期間の財政Evidenceを後期計画actualへ流用しない。"
+    }
+  ],
+  "availability_boundary": "第6次総合計画の基本構想は2021～2030年度、現行後期基本計画は2026～2030年度、実施計画は3年間のローリング方式。FY2024決算は前期計画期間でありcurrent後期計画Resultへ流用しない。",
+  "quality_boundary": "This Phase 14 inventory verifies Toyohashi's 2026-2030 latter basic plan, rolling three-year implementation layer, FY2026 budget route, and historical FY2024 settlement route. It preserves front/latter plan versions and does not infer current achievement, fiscal causality, municipal-performance scores, or cross-city comparability.",
+  "next_action": "Phase 15で後期基本計画の分野別政策・指標、ローリング実施計画事業、進行管理資料、FY2026予算、前期計画下FY2024決算をversioned Evidenceへ展開する。",
+  "verified_at": "2026-09-30"
+}

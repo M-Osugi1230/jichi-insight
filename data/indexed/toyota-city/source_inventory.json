@@ -1,0 +1,65 @@
+{
+  "id": "phase14-toyota-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "232114",
+  "standard_area_code": "23211",
+  "name_ja": "豊田市",
+  "prefecture_name_ja": "愛知県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第9次豊田市総合計画",
+    "start_fiscal_year": 2025,
+    "end_fiscal_year": 2034,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "toyota-ninth-plan",
+      "layer": "comprehensive_plan",
+      "title": "第9次豊田市総合計画（ミライ構想・ミライ実現戦略2030）",
+      "official_url": "https://www.city.toyota.aichi.jp/shisei/1073254/1073594/1055819/index.html",
+      "status": "official_landing_verified",
+      "effective_period": "2025年度～2034年度",
+      "review_boundary": "10年間の総合計画とミライ実現戦略2030をcurrent planとして保持し、施策別年度事業集とlayerを分離する。"
+    },
+    {
+      "id": "toyota-rolling-2026",
+      "layer": "progress_and_implementation",
+      "title": "第9次豊田市総合計画 ローリング結果公表資料・施策別事業集",
+      "official_url": "https://www.city.toyota.aichi.jp/shisei/1073254/1073594/1055819/index.html",
+      "status": "official_landing_verified",
+      "available_periods": [
+        "2025年度ローリング結果",
+        "令和8年度施策別事業集"
+      ],
+      "review_boundary": "毎年度のローリング結果と翌年度予算の施策別事業集を確認する。ローリング結果をJichi Insight独自達成評価へ変換しない。"
+    },
+    {
+      "id": "toyota-budget-2026",
+      "layer": "budget",
+      "title": "一般会計・特別会計予算書・予算説明書",
+      "official_url": "https://www.city.toyota.aichi.jp/shisei/yosan/1073321/1019490.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算書・説明書の公式入口。施策別事業集との接続はPhase 15でofficial identity確認後のみ昇格する。"
+    },
+    {
+      "id": "toyota-settlement-2024",
+      "layer": "settlement_and_execution_results",
+      "title": "決算報告・健全化判断比率",
+      "official_url": "https://www.city.toyota.aichi.jp/shisei/yosan/1073321/1004779.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算報告・予算執行実績報告書の公式入口。事業実績と財政値を別Evidence fieldとして保持する。"
+    }
+  ],
+  "availability_boundary": "第9次総合計画は2025～2034年度で、毎年度ローリング結果と翌年度施策別事業集が公表される。ローリング評価時点、予算年度、決算年度を同一時点として扱わない。",
+  "quality_boundary": "This Phase 14 inventory verifies Toyota's 2025-2034 ninth comprehensive plan, annual rolling/implementation route, FY2026 budget documents, and FY2024 settlement/execution-results route. Municipal rolling assessments and fiscal evidence remain source-reported and are not converted into independent achievement, causal, or cross-city judgments.",
+  "next_action": "Phase 15でミライ実現戦略の取組目標・施策、ローリング結果、FY2026施策別事業集・予算、FY2024執行実績・決算を年度とEvidence role別にレビューする。",
+  "verified_at": "2026-09-30"
+}

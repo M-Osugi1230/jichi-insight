@@ -1,0 +1,73 @@
+{
+  "id": "phase14-ichinomiya-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "232033",
+  "standard_area_code": "23203",
+  "name_ja": "一宮市",
+  "prefecture_name_ja": "愛知県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第7次一宮市総合計画 後期基本計画",
+    "start_fiscal_year": 2023,
+    "end_fiscal_year": 2027,
+    "period_status": "transition_or_unresolved"
+  },
+  "sources": [
+    {
+      "id": "ichinomiya-seventh-plan",
+      "layer": "comprehensive_plan",
+      "title": "第7次一宮市総合計画（2018年度開始）",
+      "official_url": "https://www.city.ichinomiya.aichi.jp/sougouseisaku/seisaku/1044355/1000458/1022818/index.html",
+      "status": "official_landing_verified",
+      "effective_period": "総合計画 2018年度～2027年度・後期基本計画 2023年度～2027年度",
+      "review_boundary": "10年間の第7次計画と後期5年基本計画をcurrent versionとして保持し、策定中の第8次計画と混在させない。"
+    },
+    {
+      "id": "ichinomiya-implementation-2026-2027",
+      "layer": "implementation_plan",
+      "title": "第7次一宮市総合計画 2026～2027年度 実施計画",
+      "official_url": "https://www.city.ichinomiya.aichi.jp/shisei/houdouhappyo/1068631/1069098/1074917.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2027年度",
+      "review_boundary": "通常3年ローリングだが総合計画終期のため2か年度分となった最終実施計画。次期計画事業へ自動接続しない。"
+    },
+    {
+      "id": "ichinomiya-administrative-evaluation",
+      "layer": "annual_progress",
+      "title": "行政評価",
+      "official_url": "https://www.city.ichinomiya.aichi.jp/sougouseisaku/seisaku/1044355/1000248/",
+      "status": "official_landing_verified",
+      "available_periods": [
+        "2025年度評価"
+      ],
+      "review_boundary": "35施策の成果指標・市民体感指標と事業評価による自治体評価route。source-reported評価を独自達成率へ変換しない。"
+    },
+    {
+      "id": "ichinomiya-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算状況",
+      "official_url": "https://www.city.ichinomiya.aichi.jp/zaimu/zaisei/1044383/1000242/1074585/1074589.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初・6月・9月等補正予算の公式入口。各budget stageを分離する。"
+    },
+    {
+      "id": "ichinomiya-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度決算資料",
+      "official_url": "https://www.city.ichinomiya.aichi.jp/kaikei/kaikei/1044384/1000243/1012315/1022247/1068163.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024歳入歳出決算書・事項別明細・財産調書の公式入口。行政評価と財政決算を別Evidence roleで保持する。"
+    }
+  ],
+  "availability_boundary": "第7次計画は2027年度が最終年度で、2026～2027実施計画は通常の3年計画ではなく終期に合わせた2年版。第8次総合計画は策定過程のため、現行評価・事業とのversion境界を維持する。",
+  "quality_boundary": "This Phase 14 inventory verifies Ichinomiya's final-stage seventh comprehensive plan, 2026-2027 implementation plan, administrative-evaluation route, FY2026 budget, and FY2024 settlement. It preserves the next-plan transition and keeps municipal indicator/evaluation results separate from independent achievement, causal, or comparison judgments.",
+  "next_action": "Phase 15で35施策・成果指標・市民体感指標、2026～2027実施事業、行政評価、FY2026予算、FY2024決算、第8次計画transitionをrecord-level Evidenceへ展開する。",
+  "verified_at": "2026-09-30"
+}

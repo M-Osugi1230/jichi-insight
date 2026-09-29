@@ -1,0 +1,65 @@
+{
+  "id": "phase14-gifu-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "212016",
+  "standard_area_code": "21201",
+  "name_ja": "岐阜市",
+  "prefecture_name_ja": "岐阜県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city",
+    "prefectural_capital"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "岐阜市未来のまちづくり構想",
+    "start_fiscal_year": 2022,
+    "end_fiscal_year": null,
+    "period_status": "transition_or_unresolved"
+  },
+  "sources": [
+    {
+      "id": "gifu-future-city-concept",
+      "layer": "comprehensive_policy_framework",
+      "title": "岐阜市未来のまちづくり構想",
+      "official_url": "https://www.city.gifu.lg.jp/info/seisaku/1004125/index.html",
+      "status": "official_landing_verified",
+      "effective_period": "2022年度開始・公式HTML上で固定終期を未確認",
+      "review_boundary": "2040年頃の未来像を示す現行構想として確認するが、Source Inventoryでは固定終期を推測で補完しない。"
+    },
+    {
+      "id": "gifu-progress-dialogue",
+      "layer": "progress_governance",
+      "title": "令和7年度 岐阜市未来のまちづくり懇談会",
+      "official_url": "https://www.city.gifu.lg.jp/info/seisaku/1006500/1006501/1006504/1035894.html",
+      "status": "official_landing_verified",
+      "available_periods": [
+        "2025年度"
+      ],
+      "review_boundary": "未来のまちづくり構想と未来創生総合戦略の進捗資料・有識者意見の公式入口。懇談会の見解を独自評価へ変換しない。"
+    },
+    {
+      "id": "gifu-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度当初予算",
+      "official_url": "https://www.city.gifu.lg.jp/info/zaisei/1007720/1035840/1035841.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算・関連資料の公式入口。補正予算・執行・決算とは別stateで保持する。"
+    },
+    {
+      "id": "gifu-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度決算",
+      "official_url": "https://www.city.gifu.lg.jp/info/zaisei/1007720/1023279/1035375.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024会計別・一般会計決算の公式入口。政策進捗資料と財政決算を別Evidence roleとして保持する。"
+    }
+  ],
+  "availability_boundary": "岐阜市未来のまちづくり構想は2022年度開始と2040年頃の未来像を公式資料で確認できる一方、固定した計画終期はSource Inventoryで確定しない。有識者懇談会の進捗資料、予算、決算も別layerで保持する。",
+  "quality_boundary": "This Phase 14 inventory verifies Gifu's current future-city policy framework, official progress-dialogue route, FY2026 initial-budget route, and FY2024 settlement route while refusing to invent an unverified fixed plan end year. It remains indexed_not_reviewed and makes no independent policy-achievement, causal, fiscal-effect, or cross-city judgment.",
+  "next_action": "Phase 15で構想の政策軸・指標、未来創生総合戦略との関係、懇談会進捗資料、FY2026予算、FY2024決算を定義・期間・source位置付きEvidenceへ展開する。",
+  "verified_at": "2026-09-30"
+}

@@ -734,18 +734,42 @@ Status: `complete`（2026-09-30）
 - 長野市: 第五次後期基本計画がFY2026最終年度、FY2027開始予定の第六次計画はdraft/transition lane
 - 松本市: 第12次基本計画がFY2026開始、FY2024決算は旧第11次計画期間として分離
 
-### Current work — Tokai source inventory
+### Milestone P14-M4 — Tokai source inventory
+
+Status: `complete`（2026-09-30）
+
+東海6自治体を`source_inventory_complete`へ昇格しました。
+
+- 岐阜市
+- 豊橋市
+- 岡崎市
+- 一宮市
+- 豊田市
+- 津市
+
+現行計画、実施・進行管理、FY2026予算、直近決算の公式入口を確認しました。
+
+特に以下の境界を保持します。
+
+- 岐阜市: 2022年度開始の未来のまちづくり構想について、固定終期を公式HTMLで確認できないため推測補完しない
+- 豊橋市: 第6次総合計画後期基本計画はFY2026～2030、実施計画は3年ローリング、FY2024決算は前期期間
+- 岡崎市: 第7次総合計画後期計画FY2026～2030。未来投資計画の進捗管理とFY2024前期期間Evidenceを分離
+- 一宮市: 第7次計画最終期。FY2026～2027実施計画は終期に合わせた2年版で、第8次計画はtransition lane
+- 豊田市: 第9次総合計画FY2025～2034。毎年度ローリング結果と翌年度施策別事業集を時点分離
+- 津市: 期間を定めない基本構想＋FY2018～2027第2次基本計画。県庁所在地only分類を保持
+
+### Current work — Kinki source inventory
 
 Status: `in_progress`
 
-Wave 4は岐阜市（212016）から開始します。
+Wave 5は大津市（252018）から開始します。
 
 Canonical status:
 
-- Source inventory complete: 28 / 67
+- Source inventory complete: 34 / 67
 - Source inventory in progress: 1
-- Pending source inventory: 38
-- Next official code: 212016
+- Pending source inventory: 32
+- Next official code: 252018
 
 正本:
 
@@ -758,6 +782,7 @@ Canonical status:
 - `tests/test_phase14_wave1_source_inventory.py`
 - `tests/test_phase14_wave2_source_inventory.py`
 - `tests/test_phase14_wave3_source_inventory.py`
+- `tests/test_phase14_wave4_source_inventory.py`
 
 ## After Phase 14
 
