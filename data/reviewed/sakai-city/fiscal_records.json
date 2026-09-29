@@ -1,0 +1,65 @@
+[
+  {
+    "id": "jp-local-271403-fiscal-2026-total-revenue",
+    "municipality_id": "jp-local-271403",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_revenue",
+    "metric_label": "一般会計当初予算",
+    "amount_yen": 521700000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "令和8年度予算の一般会計521,700,000千円を円換算。後続補正とは別state。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "sakai-budget-2026"
+    ]
+  },
+  {
+    "id": "jp-local-271403-fiscal-2024-total-revenue",
+    "municipality_id": "jp-local-271403",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入決算額",
+    "amount_yen": 477935503067,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "令和6年度決算審査意見書の決算額総括表（円単位）収入済額。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "sakai-settlement-2024-audit"
+    ]
+  },
+  {
+    "id": "jp-local-271403-fiscal-2024-total-expenditure",
+    "municipality_id": "jp-local-271403",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出決算額",
+    "amount_yen": 470108227969,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "令和6年度決算審査意見書の決算額総括表（円単位）支出済額。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "sakai-settlement-2024-audit"
+    ]
+  }
+]
