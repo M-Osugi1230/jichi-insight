@@ -142,9 +142,9 @@ Canonical queue（2026-09-28同期）:
 
 - Reviewed reference: 2市（北九州市、福岡市）
 - Review queue eligible: 18市
-- Reviewed complete: 12市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市、浜松市、名古屋市、京都市）
-- Review in progress: 1市（大阪市）
-- Pending record review: 5市
+- Reviewed complete: 13市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市、浜松市、名古屋市、京都市、大阪市）
+- Review in progress: 1市（堺市）
+- Pending record review: 4市
 - Blocked source inventory: 0市
 
 状態の正本は `data/catalog/phase13_designated_city_review_queue.json` です。文書上の集計とmachine-readable queueが競合する場合はqueueを優先します。
@@ -490,13 +490,42 @@ Status: `complete`（2026-09-28）
 - `data/reviewed/kyoto-city/fiscal_records.json`
 - `tests/test_phase13_kyoto_completion.py`
 
-### Current work — Osaka record review
+### Milestone M14 — Osaka reviewed complete
+
+Status: `complete`（2026-09-29）
+
+大阪市は`declared_review_package_v1`としてReviewed completeです。
+
+- Basic concept urban visions: 3
+- FY2026 annual city-policy domains: 4
+- FY2026 initiative headings: 15
+- Ward operating-policy lanes: 24
+- Listed bureau/office lanes: 28（うち府市共同設置2局）
+- Latest completed operating-policy self-evaluation: FY2025
+- FY2026 general-account initial budget: 2,188,221,000,000円
+- FY2024 general-account settlement: 歳入2,090,062,147,558円 / 歳出2,065,562,115,148円
+- Fiscal top-line records: 3
+
+大阪市は単一の多年度実施計画ではなく、基本構想、年度市政運営方針、区・局の年度運営方針・自己評価という分散型構造を持つため、その構造をそのまま保持します。FY2025自己評価をFY2026 actualへ流用せず、24区・各局のsource-reported evaluationを全市統合スコアへ変換しません。個別区・局の指標・実績・自己評価、FY2026方針との細粒度linkage、FY2026通年Result、個別財政接続は`deferred_depth`として明示します。
+
+正本:
+
+- `data/catalog/osaka_phase13_completion.json`
+- `schemas/osaka_phase13_completion.schema.json`
+- `data/catalog/osaka_phase13_policy_review_manifest.json`
+- `data/catalog/osaka_current_policy_structure.json`
+- `data/catalog/osaka_current_progress_review_summary.json`
+- `data/reviewed/osaka-city/plan_review.json`
+- `data/reviewed/osaka-city/fiscal_records.json`
+- `tests/test_phase13_osaka_completion.py`
+
+### Current work — Sakai record review
 
 Status: `in_progress`
 
-京都市のReviewed completionにより、Canonical queueの次対象は大阪市（271004）です。Phase 12で確定した公式Source Inventoryを起点に、現行計画identity、実施・進行管理層、成果指標、財政、version boundaryをEvidence付きでレビューします。
+大阪市のReviewed completionにより、Canonical queueの次対象は堺市（271403）です。Phase 12で確定した公式Source Inventoryを起点に、2026〜2030年度の現行基本計画、KPI、現行年度実績のavailability boundary、財政、旧計画とのversion boundaryをEvidence付きでレビューします。
 
-公式一次資料・version・期間・財政state・評価主体を分離し、未公開Evidenceを推測補完しません。Schema、Evidence coverage、回帰テストを通過するまで市単位のPhase 13完了を宣言しません。
+現行計画の年度実績がまだ公表されていない場合は、旧計画の最終進捗をcurrent actualへ流用しません。Schema、Evidence coverage、回帰テストを通過するまで市単位のPhase 13完了を宣言しません。
 
 正本:
 
@@ -508,7 +537,7 @@ Status: `in_progress`
 
 ## After Phase 13
 
-1. 大阪市をReviewed completeへ進め、その後の5市を順次Reviewed到達深度まで処理し、全20政令指定都市の市レベル基盤を完成させる
+1. 堺市をReviewed completeへ進め、その後の4市を順次Reviewed到達深度まで処理し、全20政令指定都市の市レベル基盤を完成させる
 2. 中核市・県庁所在地
 3. その他市区町村
 4. 選挙・候補者比較
