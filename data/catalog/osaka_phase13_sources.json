@@ -1,0 +1,91 @@
+{
+  "id": "osaka-phase13-sources",
+  "phase": 13,
+  "official_code": "271004",
+  "name_ja": "大阪市",
+  "reviewed_at": "2026-09-29",
+  "records": [
+    {
+      "id": "osaka-city-home",
+      "layer": "municipality_identity",
+      "title": "大阪市公式ウェブサイト",
+      "organization": "大阪市",
+      "url": "https://www.city.osaka.lg.jp/",
+      "source_kind": "html",
+      "review_status": "reviewed_official_identity",
+      "confidence": "high",
+      "boundary": "自治体identityと公式ドメイン確認用。政策・財政値は専用公式資料から取得する。"
+    },
+    {
+      "id": "osaka-basic-concept",
+      "layer": "current_plan",
+      "title": "大阪市基本構想",
+      "organization": "大阪市",
+      "url": "https://www.city.osaka.lg.jp/seisakukikakushitsu/page/0000005082.html",
+      "source_kind": "html",
+      "review_status": "reviewed_current_basic_concept",
+      "confidence": "high",
+      "boundary": "市政の最上位方向と3つの都市像を確認。固定終期や個別年度成果を基本構想から推測しない。"
+    },
+    {
+      "id": "osaka-city-management-policy-2026",
+      "layer": "annual_city_policy",
+      "title": "令和8年度 市政運営の基本方針",
+      "organization": "大阪市",
+      "url": "https://www.city.osaka.lg.jp/seisakukikakushitsu/page/0000673697.html",
+      "source_kind": "html",
+      "fiscal_year": 2026,
+      "review_status": "reviewed_current_annual_city_policy",
+      "confidence": "high",
+      "boundary": "2026年度の全市的実施方向。多年度実施計画へ読み替えず、区・局運営方針とも別Evidence roleで保持する。"
+    },
+    {
+      "id": "osaka-ward-bureau-policy-evaluation-2025",
+      "layer": "annual_progress",
+      "title": "令和7年度各区・局運営方針について",
+      "organization": "大阪市",
+      "url": "https://www.city.osaka.lg.jp/shiseikaikakushitsu/page/0000647508.html",
+      "source_kind": "html",
+      "fiscal_year": 2025,
+      "review_status": "reviewed_latest_completed_operating_policy_evaluation_route",
+      "confidence": "high",
+      "boundary": "2025年度各区・局運営方針の自己評価公表route。2026年度市政方針の通年actualへ流用しない。"
+    },
+    {
+      "id": "osaka-operating-policy-evaluation-overview",
+      "layer": "evaluation_governance",
+      "title": "運営方針に係る評価の概要",
+      "organization": "大阪市",
+      "url": "https://www.city.osaka.lg.jp/shiseikaikakushitsu/page/0000134411.html",
+      "source_kind": "html",
+      "review_status": "reviewed_evaluation_governance",
+      "confidence": "high",
+      "boundary": "指標実績・達成状況を踏まえ各区・局が総合評価し次年度方針・予算等へ反映するPDCA route。Jichi Insight独自評価ではない。"
+    },
+    {
+      "id": "osaka-budget-2026-enacted",
+      "layer": "budget",
+      "title": "令和8年度（2026年度）当初予算（令和8年3月27日議決）",
+      "organization": "大阪市",
+      "url": "https://www.city.osaka.lg.jp/zaisei/page/0000671888.html",
+      "source_kind": "html",
+      "fiscal_year": 2026,
+      "review_status": "reviewed_enacted_initial_budget",
+      "confidence": "high",
+      "boundary": "市会で原案どおり可決された当初予算。補正・執行・決算・個別事業費とは別state。"
+    },
+    {
+      "id": "osaka-settlement-2024-exact",
+      "layer": "settlement",
+      "title": "令和6年度大阪市決算（一般会計・政令等特別会計）について",
+      "organization": "大阪市",
+      "url": "https://www.city.osaka.lg.jp/hodoshiryo/zaisei/0000661837.html",
+      "source_kind": "html",
+      "fiscal_year": 2024,
+      "review_status": "reviewed_general_account_settlement_exact_topline",
+      "confidence": "high",
+      "boundary": "一般会計の歳入・歳出を円単位で確認。特別会計・企業会計・財務書類・政策成果とは分離する。"
+    }
+  ],
+  "quality_boundary": "大阪市の基本構想、FY2026市政運営の基本方針、FY2025各区・局運営方針の自己評価、評価PDCA、FY2026当初予算、FY2024決算をEvidence roleと年度ごとに分離する。分散型の区・局自己評価を全市統合スコアへ変換せず、2025年度評価を2026年度actualへ流用しない。"
+}
