@@ -1,0 +1,70 @@
+{
+  "id": "phase14-asahikawa-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "012041",
+  "standard_area_code": "01204",
+  "name_ja": "旭川市",
+  "prefecture_name_ja": "北海道",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第8次旭川市総合計画",
+    "start_fiscal_year": 2016,
+    "end_fiscal_year": 2027,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "asahikawa-eighth-plan",
+      "layer": "comprehensive_plan",
+      "title": "第8次旭川市総合計画（平成28年度～平成39年度）",
+      "official_url": "https://www.city.asahikawa.hokkaido.jp/700/735/736/738/p006642.html",
+      "status": "official_landing_verified",
+      "effective_period": "2016年度～2027年度",
+      "review_boundary": "基本構想・基本計画の12年間と改定版を確認し、改定前後のversionを混同しない。"
+    },
+    {
+      "id": "asahikawa-third-promotion-plan",
+      "layer": "implementation_plan",
+      "title": "第8次旭川市総合計画推進計画（令和6～9年度）",
+      "official_url": "https://www.city.asahikawa.hokkaido.jp/700/735/736/738/d079836.html",
+      "status": "official_landing_verified",
+      "effective_period": "2024年度～2027年度",
+      "review_boundary": "第3期推進計画は毎年度事業群を見直す。2024～2027の期間と各年度改訂版を別versionとして保持する。"
+    },
+    {
+      "id": "asahikawa-pdca",
+      "layer": "progress_governance",
+      "title": "推進計画",
+      "official_url": "https://www.city.asahikawa.hokkaido.jp/700/735/736/738/d056565.html",
+      "status": "official_landing_verified",
+      "review_boundary": "PDCAによる評価・検証と事業再構築の公式運用を確認する。評価制度の存在を個別政策の達成判定へ変換しない。"
+    },
+    {
+      "id": "asahikawa-budget-2026",
+      "layer": "budget",
+      "title": "予算の概要（令和8年度）",
+      "official_url": "https://www.city.asahikawa.hokkaido.jp/700/731/732/d083385.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "当初予算・補正予算を同一stateに潰さず、Phase 15で会計・年度・改訂段階を分離する。"
+    },
+    {
+      "id": "asahikawa-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度決算",
+      "official_url": "https://www.city.asahikawa.hokkaido.jp/700/731/733/d082012.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "決算書・事項別明細・主要施策成果報告書の公式入口。政策成果と財政決算を別Evidence roleで保持する。"
+    }
+  ],
+  "availability_boundary": "現行総合計画は2027年度までで、第3期推進計画も同年度まで。点検報告書や毎年度改訂版が存在するため、基準計画・改訂版・点検時点をversion-safeに分離する必要がある。",
+  "quality_boundary": "This Phase 14 inventory verifies the 2016-2027 comprehensive plan, the 2024-2027 third promotion plan, PDCA governance, FY2026 budget, and FY2024 settlement routes. It does not yet review individual indicators, projects, evaluation values, fiscal amounts, or plan-to-project linkages and makes no independent achievement, causal, or cross-city judgment.",
+  "next_action": "Phase 15で成果指標、推進計画事業、点検報告、毎年度改訂差分、FY2026予算およびFY2024決算をEvidence Packet単位へ正規化する。",
+  "verified_at": "2026-09-29"
+}
