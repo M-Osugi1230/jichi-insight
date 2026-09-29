@@ -15,6 +15,10 @@ def test_kobe_fiscal_and_availability():
     p=load("data/catalog/kobe_current_progress_availability.json")
     assert p["current_plan_lane"]["annual_result_status"]=="not_yet_available"
     assert p["governance"]["model"]=="annual_external_expert_progress_management"
-def test_kobe_queue_advances_to_okayama():
-    q=load("data/catalog/phase13_designated_city_review_queue.json"); by={r["official_code"]:r["status"] for r in q["execution_queue"]}
-    assert by["281000"]=="reviewed_complete"; assert by["331007"]=="review_in_progress"
+def test_kobe_is_complete_in_final_phase13_queue():
+    q=load("data/catalog/phase13_designated_city_review_queue.json")
+    by={r["official_code"]:r["status"] for r in q["execution_queue"]}
+    assert by["281000"]=="reviewed_complete"
+    assert q["status"]=="complete"
+    assert q["summary"]["reviewed_complete_count"]==18
+    assert q["summary"]["next_official_code"] is None
