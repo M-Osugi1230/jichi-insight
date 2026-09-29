@@ -1,0 +1,62 @@
+{
+  "id": "phase14-kashiwa-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "122173",
+  "standard_area_code": "12217",
+  "name_ja": "柏市",
+  "prefecture_name_ja": "千葉県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "柏市第六次総合計画",
+    "start_fiscal_year": 2025,
+    "end_fiscal_year": 2034,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "kashiwa-sixth-plan",
+      "layer": "comprehensive_plan",
+      "title": "柏市第六次総合計画 基本構想・基本計画",
+      "official_url": "https://www.city.kashiwa.lg.jp/seisaku-innovation/shiseijoho/keikaku/6jisougoukeikaku/6jisougoukeikaku_mastervision_masterplan.html",
+      "status": "official_landing_verified",
+      "effective_period": "2025年度～2034年度",
+      "review_boundary": "10年間の基本構想と前期5年基本計画を確認し、旧第五次計画からのversion transitionを保持する。"
+    },
+    {
+      "id": "kashiwa-implementation-2026-2028",
+      "layer": "implementation_plan",
+      "title": "第1期実行計画",
+      "official_url": "https://www.city.kashiwa.lg.jp/seisaku-innovation/shiseijoho/keikaku/6jisougoukeikaku/jikkoukeikaku1.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2028年度",
+      "review_boundary": "3年間の実行計画を毎年度見直す構造として保持し、各年度版を同一versionに上書きしない。"
+    },
+    {
+      "id": "kashiwa-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度当初予算",
+      "official_url": "https://www.city.kashiwa.lg.jp/zaisei/policy_pr/budget/budget2/r8-yosan.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算の公式入口。実行計画事業との財政接続はPhase 15でEvidence確認後のみ昇格する。"
+    },
+    {
+      "id": "kashiwa-settlement-2024",
+      "layer": "settlement",
+      "title": "歳入歳出決算書",
+      "official_url": "https://www.city.kashiwa.lg.jp/kaikei/policy_pr/accounts/kessansho.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024を含む決算書の公式入口。旧計画期間の決算を現行第六次計画の実績へ自動接続しない。"
+    }
+  ],
+  "availability_boundary": "第六次総合計画は2025年度開始で、第1期実行計画は2026～2028年度。FY2024決算は旧計画期間に属するため、現行計画とのversion境界を保持する。",
+  "quality_boundary": "This Phase 14 inventory verifies Kashiwa's new sixth comprehensive plan, rolling 2026-2028 first action plan, FY2026 budget, and historical FY2024 settlement route. It does not reuse prior-plan fiscal or result evidence as current-plan achievement and does not infer causal or cross-city comparability.",
+  "next_action": "Phase 15で前期基本計画の政策・指標、第1期実行計画事業、current progress availability、FY2026予算、旧計画下FY2024決算をversioned Evidenceへ展開する。",
+  "verified_at": "2026-09-30"
+}

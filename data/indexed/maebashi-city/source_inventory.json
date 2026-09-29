@@ -1,0 +1,65 @@
+{
+  "id": "phase14-maebashi-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "102016",
+  "standard_area_code": "10201",
+  "name_ja": "前橋市",
+  "prefecture_name_ja": "群馬県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city",
+    "prefectural_capital"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第七次前橋市総合計画",
+    "start_fiscal_year": 2018,
+    "end_fiscal_year": 2027,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "maebashi-seventh-plan",
+      "layer": "comprehensive_plan",
+      "title": "第七次前橋市総合計画",
+      "official_url": "https://www.city.maebashi.gunma.jp/soshiki/seisaku/seisakusuishin/gyomu/5/1/1/44926.html",
+      "status": "official_landing_verified",
+      "effective_period": "2018年度～2027年度",
+      "review_boundary": "基本構想と推進計画からなる現行総合計画のidentityと期間を確認し、将来の次期計画と混在させない。"
+    },
+    {
+      "id": "maebashi-administrative-evaluation-2025",
+      "layer": "annual_progress",
+      "title": "令和7年度行政評価",
+      "official_url": "https://www.city.maebashi.gunma.jp/soshiki/seisaku/seisakusuishin/gyomu/5/1/1/47340.html",
+      "status": "official_landing_verified",
+      "available_periods": [
+        "2024年度実績"
+      ],
+      "review_boundary": "現行計画の重点事業を対象とする自治体行政評価の入口。source-reported評価を独自達成率や因果効果へ変換しない。"
+    },
+    {
+      "id": "maebashi-budget",
+      "layer": "budget",
+      "title": "予算",
+      "official_url": "https://www.city.maebashi.gunma.jp/gyosei/2/5/3/24149.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026を含む当初予算・予算編成の公式入口。補正や執行、決算とはstateを分離する。"
+    },
+    {
+      "id": "maebashi-settlement-2024",
+      "layer": "settlement_and_major_measures",
+      "title": "令和6年度決算",
+      "official_url": "https://www.city.maebashi.gunma.jp/soshiki/zaimu/zaisei/gyomu/3/2/2/46699.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算書と主要施策成果資料の公式入口。財政値と行政評価結果は別Evidenceとして扱う。"
+    }
+  ],
+  "availability_boundary": "第七次総合計画は2027年度が終期で、FY2024重点事業の行政評価が利用可能。計画最終期の評価と次期計画策定資料をversion-safeに分離する。",
+  "quality_boundary": "This Phase 14 inventory verifies Maebashi's 2018-2027 seventh comprehensive plan, current administrative-evaluation route, FY2026 budget route, and FY2024 settlement/major-measures route. It does not promote individual evaluation classes, project outcomes, fiscal values, policy achievement, causal attribution, or cross-city comparability.",
+  "next_action": "Phase 15で政策体系、重点事業、行政評価の個票、FY2026予算、FY2024決算・主要施策成果をEvidence付きで構造化し、次期計画とのversion境界も固定する。",
+  "verified_at": "2026-09-30"
+}

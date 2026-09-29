@@ -1,0 +1,62 @@
+{
+  "id": "phase14-kawagoe-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "112011",
+  "standard_area_code": "11201",
+  "name_ja": "川越市",
+  "prefecture_name_ja": "埼玉県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第五次川越市総合計画",
+    "start_fiscal_year": 2026,
+    "end_fiscal_year": 2035,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "kawagoe-fifth-plan",
+      "layer": "comprehensive_plan",
+      "title": "第五次川越市総合計画",
+      "official_url": "https://www.city.kawagoe.saitama.jp/shisei/seisaku/1008089/1008090/index.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2035年度",
+      "review_boundary": "2026年度開始の新しい最上位計画として確認し、旧第四次計画の実績をcurrent actualへ流用しない。"
+    },
+    {
+      "id": "kawagoe-implementation-2026-2028",
+      "layer": "implementation_plan",
+      "title": "第五次川越市総合計画（実施計画）（令和8年度～令和10年度）",
+      "official_url": "https://www.city.kawagoe.saitama.jp/shisei/seisaku/1008089/1008090/1021199.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2028年度",
+      "review_boundary": "3か年の主要事業を毎年度見直すローリング計画。各年度versionと長期基本計画を分離する。"
+    },
+    {
+      "id": "kawagoe-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度当初予算",
+      "official_url": "https://www.city.kawagoe.saitama.jp/shisei/zaisei/1010980/1010990/1019982/1016409.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算の公式入口。新計画初年度の予算を年度Resultや政策効果と同一視しない。"
+    },
+    {
+      "id": "kawagoe-settlement-2024",
+      "layer": "settlement",
+      "title": "年度別決算関係資料",
+      "official_url": "https://www.city.kawagoe.saitama.jp/shisei/zaisei/1010980/1011052/1018809/1018810.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024一般会計・特別会計決算の公式入口。旧計画期間の決算として現行第五次計画の実績へ流用しない。"
+    }
+  ],
+  "availability_boundary": "第五次総合計画は2026年度開始で、FY2024決算は旧計画期間に属する。新計画の初年度事業・予算と過年度決算をversionとfiscal yearで厳格に分離する。",
+  "quality_boundary": "This Phase 14 inventory verifies Kawagoe's new fifth comprehensive plan, rolling 2026-2028 implementation plan, FY2026 initial-budget route, and FY2024 historical settlement route. It explicitly preserves the old-plan/current-plan boundary and does not infer current achievement, fiscal causality, or cross-city comparability.",
+  "next_action": "Phase 15で第五次計画の政策・指標、FY2026～2028実施事業、current-result availability、FY2026予算と旧計画下FY2024決算をversioned Evidenceへ展開する。",
+  "verified_at": "2026-09-30"
+}

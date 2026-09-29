@@ -1,0 +1,62 @@
+{
+  "id": "phase14-utsunomiya-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "092010",
+  "standard_area_code": "09201",
+  "name_ja": "宇都宮市",
+  "prefecture_name_ja": "栃木県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city",
+    "prefectural_capital"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第6次宇都宮市総合計画改定基本計画（後期基本計画）",
+    "start_fiscal_year": 2023,
+    "end_fiscal_year": 2027,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "utsunomiya-sixth-latter-plan",
+      "layer": "comprehensive_plan",
+      "title": "第6次宇都宮市総合計画改定基本計画（後期基本計画）",
+      "official_url": "https://www.city.utsunomiya.lg.jp/shisei/machi/1034530/sougoukeikaku/1028177.html",
+      "status": "official_landing_verified",
+      "effective_period": "2023年度～2027年度",
+      "review_boundary": "第6次総合計画の後期基本計画をcurrent versionとして保持し、前期計画の実績を現行actualへ自動接続しない。"
+    },
+    {
+      "id": "utsunomiya-administrative-evaluation",
+      "layer": "progress_governance",
+      "title": "行政評価",
+      "official_url": "https://www.city.utsunomiya.lg.jp/shisei/johokokai/gyoseihyouka/1010678.html",
+      "status": "official_landing_verified",
+      "review_boundary": "総合計画の施策・事業を評価する公式制度入口。自治体の評価結果をJichi Insight独自の政策達成判定へ変換しない。"
+    },
+    {
+      "id": "utsunomiya-policy-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度施政方針",
+      "official_url": "https://www.city.utsunomiya.lg.jp/shichoshitsu/shiseihoushin/1045705.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026施政方針と当初予算の政策的入口。提案・議決・補正・執行を別stateで確認する。"
+    },
+    {
+      "id": "utsunomiya-settlement-audit-2024",
+      "layer": "settlement_and_audit",
+      "title": "令和6年度一般会計・特別会計歳入歳出決算審査意見",
+      "official_url": "https://www.city.utsunomiya.lg.jp/shisei/johokokai/kansa/1010647.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算審査の公式入口。決算値・監査意見・政策評価を別Accountability/Evidence roleとして保持する。"
+    }
+  ],
+  "availability_boundary": "後期基本計画は2023～2027年度で、行政評価が別制度として存在する。計画上の指標、行政評価、施政方針・予算、監査済み決算を異なる主体と年度で保持する。",
+  "quality_boundary": "This Phase 14 inventory verifies Utsunomiya's current latter basic plan, administrative-evaluation route, FY2026 policy/budget route, and FY2024 settlement-audit route. It does not promote municipal evaluations, individual indicators, audit findings, fiscal values, achievement assessments, causal attribution, or cross-city comparison to Reviewed.",
+  "next_action": "Phase 15で後期基本計画の政策・指標、行政評価結果、FY2026成立予算、FY2024決算と監査意見を主体・年度・source位置付き個票としてレビューする。",
+  "verified_at": "2026-09-30"
+}

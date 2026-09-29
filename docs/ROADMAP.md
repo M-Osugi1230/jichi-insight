@@ -682,18 +682,46 @@ Status: `complete`（2026-09-29）
 
 Phase 14は`indexed_not_reviewed`のSource Inventoryです。個別政策・KPI・事業・評価値・予算額・決算額のReviewed昇格はPhase 15で行います。
 
-### Current work — Kanto source inventory
+### Milestone P14-M2 — Kanto source inventory
+
+Status: `complete`（2026-09-30）
+
+関東12自治体を`source_inventory_complete`へ昇格しました。
+
+- 水戸市
+- 宇都宮市
+- 前橋市
+- 高崎市
+- 川越市
+- 川口市
+- 越谷市
+- 船橋市
+- 柏市
+- 新宿区
+- 八王子市
+- 横須賀市
+
+現行計画、実施・進行管理またはその制度根拠、FY2026予算、直近決算を公式入口で確認しました。
+
+特に以下の境界を保持します。
+
+- 高崎市: 公式HTMLで確認できる第6次総合計画の開始年度は保持し、終期はSource Inventoryで推測補完しない
+- 川越市・川口市・越谷市・柏市: 2025～2026前後に現行計画が切り替わるため、FY2024決算をcurrent-plan actualへ流用しない
+- 新宿区: special wardとして基本構想・総合計画frameworkと第三次実行計画を保持し、東京都本体やcity型modelへ変換しない
+- 横須賀市: 2層型のYOKOSUKAビジョン＋実施計画を保持し、FY2026予算proposalとenacted stateを分離する
+
+### Current work — Hokuriku / Koshin source inventory
 
 Status: `in_progress`
 
-Wave 2は水戸市（082015）から開始します。
+Wave 3は富山市（162019）から開始します。
 
 Canonical status:
 
-- Source inventory complete: 10 / 67
+- Source inventory complete: 22 / 67
 - Source inventory in progress: 1
-- Pending source inventory: 56
-- Next official code: 082015
+- Pending source inventory: 44
+- Next official code: 162019
 
 正本:
 
@@ -704,6 +732,7 @@ Canonical status:
 - `schemas/phase14_municipality_source_inventory.schema.json`
 - `tests/test_phase14_core_capital_registry.py`
 - `tests/test_phase14_wave1_source_inventory.py`
+- `tests/test_phase14_wave2_source_inventory.py`
 
 ## After Phase 14
 

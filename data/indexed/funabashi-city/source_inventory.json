@@ -1,0 +1,62 @@
+{
+  "id": "phase14-funabashi-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "122041",
+  "standard_area_code": "12204",
+  "name_ja": "船橋市",
+  "prefecture_name_ja": "千葉県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第3次船橋市総合計画",
+    "start_fiscal_year": 2022,
+    "end_fiscal_year": 2031,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "funabashi-third-plan",
+      "layer": "comprehensive_plan",
+      "title": "第3次船橋市総合計画",
+      "official_url": "https://www.city.funabashi.lg.jp/shisei/keikaku/002/p102743.html",
+      "status": "official_landing_verified",
+      "effective_period": "2022年度～2031年度",
+      "review_boundary": "基本構想・基本計画の10年間と3年ローリング実施計画を確認し、それぞれのperiod/versionを分離する。"
+    },
+    {
+      "id": "funabashi-current-implementation",
+      "layer": "implementation_plan_and_progress",
+      "title": "第3次船橋市総合計画 実施計画・進捗状況報告書",
+      "official_url": "https://www.city.funabashi.lg.jp/shisei/keikaku/002/p102743.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2028年度",
+      "review_boundary": "実施計画は3年間で毎年度見直し、施策指標の分析・評価を3年に一度公表する運用。評価結果を独自達成度へ変換しない。"
+    },
+    {
+      "id": "funabashi-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算",
+      "official_url": "https://www.city.funabashi.lg.jp/shisei/zaisei/001/p144524.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026予算の公式入口。補正・執行・決算とは別stateで保持する。"
+    },
+    {
+      "id": "funabashi-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度決算概要",
+      "official_url": "https://www.city.funabashi.lg.jp/shisei/zaisei/002/p141123.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算の公式入口。総合計画の進捗指標と財政決算を同一の成果指標へ統合しない。"
+    }
+  ],
+  "availability_boundary": "第3次総合計画は2022～2031年度で、実施計画は3年ローリング、施策指標の分析・評価は3年に一度公表する。評価周期と会計年度を別々に保持する。",
+  "quality_boundary": "This Phase 14 inventory verifies Funabashi's 2022-2031 comprehensive plan, rolling implementation/progress-management route, FY2026 budget, and FY2024 settlement. It remains source inventory only and does not promote indicator analyses, project outcomes, fiscal values, policy achievement, causal attribution, or cross-city comparability.",
+  "next_action": "Phase 15で施策・指標、2026～2028実施計画事業、進捗状況報告、FY2026予算、FY2024決算を定義・周期・年度付きrecord-level Evidenceへ展開する。",
+  "verified_at": "2026-09-30"
+}
