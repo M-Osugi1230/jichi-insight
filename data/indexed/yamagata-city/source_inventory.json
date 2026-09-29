@@ -1,0 +1,63 @@
+{
+  "id": "phase14-yamagata-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "062014",
+  "standard_area_code": "06201",
+  "name_ja": "山形市",
+  "prefecture_name_ja": "山形県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city",
+    "prefectural_capital"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "山形市発展計画2030",
+    "start_fiscal_year": 2025,
+    "end_fiscal_year": 2029,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "yamagata-development-plan-2030",
+      "layer": "comprehensive_plan",
+      "title": "山形市発展計画2030",
+      "official_url": "https://www.city.yamagata-yamagata.lg.jp/shiseijoho/keikaku/1006981/1002627.html",
+      "status": "official_landing_verified",
+      "effective_period": "2025年度～2029年度",
+      "review_boundary": "地方版総合戦略を兼ねる現行5年計画のidentityと期間を確認する。成果指標の値はPhase 15でreviewする。"
+    },
+    {
+      "id": "yamagata-progress-indicators",
+      "layer": "progress_governance",
+      "title": "山形市発展計画2030 成果指標",
+      "official_url": "https://www.city.yamagata-yamagata.lg.jp/shiseijoho/keikaku/1006981/1002627.html",
+      "status": "official_landing_verified",
+      "effective_period": "2025年度～2029年度",
+      "review_boundary": "19政策分野と成果指標の公式入口を確認する。更新された指標値の時点・定義を個別に検証するまでReviewedへ昇格しない。"
+    },
+    {
+      "id": "yamagata-budget-2026",
+      "layer": "budget",
+      "title": "予算の概要（令和8年度）",
+      "official_url": "https://www.city.yamagata-yamagata.lg.jp/shiseijoho/zaisei/1013833/index.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算の公式入口。議案、可決、補正の各stateを分離する。"
+    },
+    {
+      "id": "yamagata-settlement-2024",
+      "layer": "settlement_and_major_measures",
+      "title": "決算の概要（令和6年度）",
+      "official_url": "https://www.city.yamagata-yamagata.lg.jp/shiseijoho/zaisei/1013834/1016930.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算書・事項別明細・主要施策成果報告書の公式入口。政策成果と財政決算を別roleで保持する。"
+    }
+  ],
+  "availability_boundary": "山形市発展計画2030は2025年度開始で、成果指標は更新される。基準値・目標値・年度実績・更新日を別項目で保持し、旧発展計画2025の値を現行系列へ無検証で接続しない。",
+  "quality_boundary": "This Phase 14 inventory verifies the current 2025-2029 development plan/local strategy, indicator route, FY2026 budget route, and FY2024 settlement/major-measures route. It does not promote indicator values, reported outcomes, or fiscal values to Reviewed and does not infer achievement, causality, or cross-city comparability.",
+  "next_action": "Phase 15で19政策分野、成果指標、主要事業、FY2024成果報告、FY2026予算・議決・補正をversion-safeなEvidence recordへ展開する。",
+  "verified_at": "2026-09-29"
+}
