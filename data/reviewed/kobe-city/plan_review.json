@@ -1,0 +1,47 @@
+{
+  "id": "phase13-kobe-plan-review",
+  "official_code": "281000",
+  "name_ja": "神戸市",
+  "review_status": "review_in_progress_current_plan_and_progress_boundary_reviewed",
+  "reviewed_at": "2026-09-29",
+  "records": [
+    {
+      "id": "kobe-basic-plan",
+      "evidence_role": "current_plan_identity",
+      "title": "第6次神戸市基本計画－2035年の神戸－",
+      "statement": "現行基本計画は2026～2035年度を対象とし、都市像実現に向け3つの方向性を掲げる。",
+      "value": 3,
+      "unit": "directions",
+      "source_id": "kobe-sixth-basic-plan",
+      "evidence_location": "第6次基本計画・市会可決資料",
+      "reviewed_data_path": "data/catalog/kobe_current_policy_structure.json",
+      "decision": "accepted",
+      "review_note": "実施計画と別version role。"
+    },
+    {
+      "id": "kobe-2030-vision",
+      "evidence_role": "current_implementation_plan",
+      "title": "神戸2030ビジョン",
+      "statement": "実施計画は2026～2030年度の5年間で、3方向性に沿う基本政策・主な施策・KPIを整理する。",
+      "value": "2026年度～2030年度",
+      "source_id": "kobe-2030-vision",
+      "evidence_location": "公式神戸2030ビジョンページ",
+      "decision": "accepted",
+      "review_note": "個別事業は毎年度予算で具体化。"
+    },
+    {
+      "id": "kobe-current-progress",
+      "evidence_role": "current_annual_progress",
+      "title": "現行計画初年度Result",
+      "statement": "2026年度が初年度のため、完了年度のcurrent annual resultはまだ公表されていない。",
+      "value": "not_yet_available",
+      "source_id": "kobe-2030-progress-governance",
+      "evidence_location": "神戸2030ビジョン『進行管理』",
+      "reviewed_data_path": "data/catalog/kobe_current_progress_availability.json",
+      "decision": "accepted_availability_boundary",
+      "review_note": "外部有識者進行管理は毎年度実施予定。"
+    }
+  ],
+  "quality_boundary": "basic plan、implementation plan、progress governance、Result availabilityを分離する。KPI・施策・個別事業、予算事業接続、因果評価、独自達成度、他都市比較は別レビュー。",
+  "next_action": "Add enacted FY2026 budget and exact FY2024 settlement, then define Kobe v1 completion package."
+}
