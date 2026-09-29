@@ -1,0 +1,63 @@
+{
+  "id": "phase14-morioka-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "032018",
+  "standard_area_code": "03201",
+  "name_ja": "盛岡市",
+  "prefecture_name_ja": "岩手県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city",
+    "prefectural_capital"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "盛岡市総合計画",
+    "start_fiscal_year": 2025,
+    "end_fiscal_year": 2034,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "morioka-current-plan",
+      "layer": "comprehensive_plan",
+      "title": "盛岡市総合計画",
+      "official_url": "https://www.city.morioka.iwate.jp/shisei/keikaku/sogotekiplan/1009760/index.html",
+      "status": "official_landing_verified",
+      "effective_period": "2025年度～2034年度",
+      "review_boundary": "基本構想と実施計画で構成される現行総合計画のidentityを確認する。"
+    },
+    {
+      "id": "morioka-implementation-2026-2028",
+      "layer": "implementation_plan",
+      "title": "実施計画（令和7年度から16年度）",
+      "official_url": "https://www.city.morioka.iwate.jp/shisei/keikaku/sogotekiplan/1009760/1045034/1051241.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2028年度",
+      "review_boundary": "3年間の実施計画を毎年度ローリングする構造を確認し、各改訂版を別versionとして保持する。"
+    },
+    {
+      "id": "morioka-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算の概要",
+      "official_url": "https://www.city.morioka.iwate.jp/shisei/zaisei/suii/1054620/1056173.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "成立済みFY2026当初予算の公式入口。補正予算とは別stateで扱う。"
+    },
+    {
+      "id": "morioka-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度決算",
+      "official_url": "https://www.city.morioka.iwate.jp/shisei/zaisei/1010723/1054397/index.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算の公式入口。決算値と実施計画事業の接続はPhase 15でEvidence確認後のみ昇格する。"
+    }
+  ],
+  "availability_boundary": "総合計画は2025～2034年度、実施計画は3年ローリングでFY2026版が2026～2028年度。長期基本構想と毎年度更新される実施計画のversion差を保持する。",
+  "quality_boundary": "This Phase 14 inventory verifies the 2025-2034 comprehensive plan, the rolling 2026-2028 implementation plan, enacted FY2026 budget, and FY2024 settlement entry points. It does not yet review individual measures, projects, outcomes, fiscal amounts, or implementation-to-settlement linkages and makes no achievement or comparability judgment.",
+  "next_action": "Phase 15で基本構想の施策、FY2026～2028実施計画の事業・指標、ローリング差分、FY2026予算・FY2024決算をrecord-level Evidenceへ展開する。",
+  "verified_at": "2026-09-29"
+}
