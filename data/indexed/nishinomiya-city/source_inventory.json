@@ -1,0 +1,62 @@
+{
+  "id": "phase14-nishinomiya-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "282049",
+  "standard_area_code": "28204",
+  "name_ja": "西宮市",
+  "prefecture_name_ja": "兵庫県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第5次西宮市総合計画 後期基本計画",
+    "start_fiscal_year": 2024,
+    "end_fiscal_year": 2028,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "nishinomiya-fifth-latter-plan",
+      "layer": "comprehensive_plan",
+      "title": "第5次西宮市総合計画 後期基本計画",
+      "official_url": "https://www.nishi.or.jp/shisei/sogokeikaku/sogokeikaku/dai5jisogokeikaku/2023122011190.html",
+      "status": "official_landing_verified",
+      "effective_period": "2024年度～2028年度",
+      "review_boundary": "第5次総合計画の後期5年間をcurrent basic planとして保持し、前期計画の施策実績とversion分離する。"
+    },
+    {
+      "id": "nishinomiya-implementation-plan",
+      "layer": "implementation_plan",
+      "title": "第5次西宮市総合計画 実施計画",
+      "official_url": "https://www.nishi.or.jp/shisei/sogokeikaku/sogokeikaku/dai5jisogokeikaku/5jisshikeikaku.html",
+      "status": "official_landing_verified",
+      "effective_period": "公式landingで最新掲載版を年度別保持",
+      "review_boundary": "実施計画の年度版をcurrent landingから追跡し、未掲載年度の内容を推測して作成せず、各versionを上書きしない。"
+    },
+    {
+      "id": "nishinomiya-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算",
+      "official_url": "https://www.nishi.or.jp/shisei/zaiseijoho/yosan/R8yosan.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026予算の公式入口。実施計画事業との財政接続はPhase 15でofficial identity確認後のみ昇格する。"
+    },
+    {
+      "id": "nishinomiya-settlement-2024",
+      "layer": "settlement_and_major_measures",
+      "title": "令和6年度決算の概要",
+      "official_url": "https://www.nishi.or.jp/shisei/zaiseijoho/kessan/R6_kessan_gaiyou.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算概要・主要施策成果説明書の公式入口。政策実績・財政値・事務事業評価を別Evidence roleとして保持する。"
+    }
+  ],
+  "availability_boundary": "後期基本計画は2024～2028年度。実施計画は年度版で更新されるため、Source Inventoryでは公式landingに掲載されたversionだけを保持し、未確認の次年度版を推測生成しない。",
+  "quality_boundary": "This Phase 14 inventory verifies Nishinomiya's 2024-2028 latter basic plan, official implementation-plan version route, FY2026 budget, and FY2024 settlement/major-measures route. Unpublished implementation versions are not inferred and municipal/fiscal evidence is not converted into independent achievement, causal, or comparison judgments.",
+  "next_action": "Phase 15で後期基本計画の施策・指標、掲載済み実施計画version、FY2026予算、FY2024決算・主要施策成果をversioned record-level Evidenceへ展開する。",
+  "verified_at": "2026-09-30"
+}
