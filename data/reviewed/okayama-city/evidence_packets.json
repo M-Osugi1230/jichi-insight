@@ -1,0 +1,61 @@
+[
+  {
+    "id": "evidence-okayama-2026-budget",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-331007-fiscal-2026-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算は4,298億6,338万円余として可決された。",
+        "source_ids": [
+          "okayama-budget-2026-enacted"
+        ],
+        "location_note": "岡山市議会『議決のあらまし』。",
+        "decision": "accepted_source_precision",
+        "review_note": "429,863,380,000円相当のsource precision。『余』を保持。"
+      }
+    ],
+    "open_questions": [
+      "より細かい確定額は予算書本体の個別reviewで追加可能。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-okayama-2024-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-331007-fiscal-2024-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計歳入総額は4,065億円余。",
+        "source_ids": [
+          "okayama-settlement-2024"
+        ],
+        "location_note": "令和7年9月提案理由2。",
+        "decision": "accepted_source_precision",
+        "review_note": "406,500,000,000円をrounded source valueとして保存。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-okayama-2024-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-331007-fiscal-2024-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計歳出総額は3,877億円余。",
+        "source_ids": [
+          "okayama-settlement-2024"
+        ],
+        "location_note": "令和7年9月提案理由2。",
+        "decision": "accepted_source_precision",
+        "review_note": "387,700,000,000円をrounded source valueとして保存。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]
