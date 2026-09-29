@@ -1,0 +1,75 @@
+{
+  "id": "phase14-fukui-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "182010",
+  "standard_area_code": "18201",
+  "name_ja": "福井市",
+  "prefecture_name_ja": "福井県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city",
+    "prefectural_capital"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第八次福井市総合計画",
+    "start_fiscal_year": 2022,
+    "end_fiscal_year": 2026,
+    "period_status": "transition_or_unresolved"
+  },
+  "sources": [
+    {
+      "id": "fukui-eighth-plan",
+      "layer": "comprehensive_plan",
+      "title": "福井市総合計画",
+      "official_url": "https://www.city.fukui.lg.jp/sisei/plan/plan/p015748.html",
+      "status": "official_landing_verified",
+      "effective_period": "2022年度～2026年度",
+      "review_boundary": "第八次総合計画と毎年度の成果報告・KPI達成状況を同じ公式入口で確認し、計画値と年度実績を区別する。"
+    },
+    {
+      "id": "fukui-eighth-implementation",
+      "layer": "implementation_plan",
+      "title": "第八次福井市総合計画実施計画",
+      "official_url": "https://www.city.fukui.lg.jp/sisei/zaisei/plan/hatisou.html",
+      "status": "official_landing_verified",
+      "effective_period": "2022年度～2026年度",
+      "review_boundary": "総合計画と同じ5年間の具体的事業計画として保持し、各年度の成果報告と事業identityをPhase 15で接続する。"
+    },
+    {
+      "id": "fukui-annual-results",
+      "layer": "annual_progress",
+      "title": "総合計画レポート",
+      "official_url": "https://www.city.fukui.lg.jp/sisei/plan/plan/p015748.html",
+      "status": "official_landing_verified",
+      "available_periods": [
+        "2024年度",
+        "2025年度"
+      ],
+      "review_boundary": "成果報告書とKPI達成状況の公式公開route。自治体の達成区分をJichi Insight独自評価や因果効果へ変換しない。"
+    },
+    {
+      "id": "fukui-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度当初予算",
+      "official_url": "https://www.city.fukui.lg.jp/sisei/zaisei/yosan/p071963.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算の公式入口。補正・執行・決算を別stateで保持する。"
+    },
+    {
+      "id": "fukui-settlement-2024",
+      "layer": "settlement",
+      "title": "決算",
+      "official_url": "https://www.city.fukui.lg.jp/sisei/zaisei/kessan/p001063.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算と健全化判断比率の公式入口。政策KPI・成果報告と財政決算を別Evidenceとして扱う。"
+    }
+  ],
+  "availability_boundary": "第八次福井市総合計画・実施計画は2026年度が最終年度で、毎年度成果報告とKPI実績が公表される。次期計画への移行と現行計画最終年度Resultを混同しない。",
+  "quality_boundary": "This Phase 14 inventory verifies Fukui's final-year 2022-2026 eighth comprehensive and implementation plans, annual outcome/KPI reporting route, FY2026 initial budget, and FY2024 settlement. Source-reported KPI classifications remain municipal evidence and are not converted into independent achievement, causal, or comparison conclusions.",
+  "next_action": "Phase 15で政策・施策・実施計画事業、2024/2025年度成果報告・KPI、FY2026予算、FY2024決算を個票化し、次期計画とのtransitionをversion-safeに接続する。",
+  "verified_at": "2026-09-30"
+}
