@@ -1,0 +1,65 @@
+[
+  {
+    "id": "evidence-kyoto-city-2026-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-261009-fiscal-2026-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算は1,007,967,000千円。",
+        "source_ids": [
+          "kyoto-budget-2026-overview-pdf"
+        ],
+        "location_note": "令和8年度予算資料 PDF p.18相当『会計別予算額』一般会計1,007,967,000千円。",
+        "decision": "accepted",
+        "review_note": "1,007,967,000,000円として保存。補正予算は別state。"
+      }
+    ],
+    "open_questions": [
+      "5月・7月・9月補正はinitial_budgetを上書きせずrevised_budgetとして追加する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kyoto-city-2024-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-261009-fiscal-2024-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計歳入総額は9,801億円。",
+        "source_ids": [
+          "kyoto-settlement-2024-reference-data-pdf"
+        ],
+        "location_note": "令和6年度決算参考データ集 p.1相当『令和6年度一般会計決算』歳入総額9,801億円。",
+        "decision": "accepted",
+        "review_note": "980,100,000,000円として保存。元資料が億円表示のためrounded source value。"
+      }
+    ],
+    "open_questions": [
+      "より細かい単位の確定決算額を追加する場合は、この億円表示値を上書きせず精度・source roleを明示する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kyoto-city-2024-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-261009-fiscal-2024-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計歳出総額は9,718億円。",
+        "source_ids": [
+          "kyoto-settlement-2024-reference-data-pdf"
+        ],
+        "location_note": "令和6年度決算参考データ集 p.1相当『令和6年度一般会計決算』歳出総額9,718億円。",
+        "decision": "accepted",
+        "review_note": "971,800,000,000円として保存。元資料が億円表示のためrounded source value。"
+      }
+    ],
+    "open_questions": [
+      "より細かい単位の確定決算額を追加する場合は、この億円表示値を上書きせず精度・source roleを明示する。"
+    ],
+    "review_status": "reviewed"
+  }
+]

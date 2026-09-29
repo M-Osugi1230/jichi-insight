@@ -1,0 +1,65 @@
+{
+  "id": "kyoto-current-strategy-structure",
+  "phase": 13,
+  "official_code": "261009",
+  "name_ja": "京都市",
+  "basic_concept_period": "2026年～2050年",
+  "strategy_period": "2024年度～2027年度",
+  "review_status": "reviewed_current_strategy_policy_identity",
+  "basic_concept_source_id": "kyoto-basic-concept-2026-2050",
+  "strategy_source_id": "kyoto-new-strategy-current",
+  "budget_crosscheck_source_id": "kyoto-budget-2026-overview-pdf",
+  "hierarchy": {
+    "current_strategy_policy_count": 6,
+    "strategy_component_count": 3,
+    "strategic_perspective_count": 3
+  },
+  "strategy_components": [
+    "政策",
+    "しごとの仕方改革",
+    "持続可能な行財政運営の確立"
+  ],
+  "strategic_perspectives": [
+    "ひらく",
+    "きわめる",
+    "つなぐ"
+  ],
+  "policies": [
+    {
+      "policy_code": "1",
+      "policy_name": "京都のまちが紡ぐ文化の力を活かし「新たな魅力・価値を創造し続けるまち」"
+    },
+    {
+      "policy_code": "2",
+      "policy_name": "居場所と出番により、つながり・支え合う「包摂性が高く誰もが生き生きと活躍できるまち」"
+    },
+    {
+      "policy_code": "3",
+      "policy_name": "京都の伝統・知恵・イノベーションの力により「都市の活力と成長を支える産業が育つまち」"
+    },
+    {
+      "policy_code": "4",
+      "policy_name": "京都ならではの学びと子育て環境を通して「未来を担う子ども・若者を社会全体で共にはぐくむまち」"
+    },
+    {
+      "policy_code": "5",
+      "policy_name": "豊かな自然・歴史的景観と地域の魅力を活かした「自然環境と調和する持続可能なまち」"
+    },
+    {
+      "policy_code": "6",
+      "policy_name": "市民のいのち・暮らしを守る「安心安全で災害に強いレジリエントなまち」"
+    }
+  ],
+  "progress_management_semantics": {
+    "data_inputs": [
+      "客観的な統計データ",
+      "市民の実感",
+      "定性的な実施状況",
+      "市民・事業者への影響や満足度",
+      "課題"
+    ],
+    "review_route": "進捗状況等を市会へ報告し、情報発信・見える化で市民と共有して取組の深掘り・見直しにつなげる",
+    "evaluation_boundary": "京都市の政策進捗管理設計であり、Jichi Insight独自の政策達成評価ではない。"
+  },
+  "quality_boundary": "現行改定版の6政策identityと戦略構成・進捗管理の意味をReviewed化する。リーディング・プロジェクト、政策集の個別施策・KPI・予算事業は追加depthとし、旧京プラン2025の27政策分野から補完しない。"
+}

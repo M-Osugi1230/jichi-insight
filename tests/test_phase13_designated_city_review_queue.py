@@ -20,6 +20,7 @@ NIIGATA_COMPLETION_PATH = ROOT / "data/catalog/niigata_phase13_completion.json"
 SHIZUOKA_COMPLETION_PATH = ROOT / "data/catalog/shizuoka_phase13_completion.json"
 HAMAMATSU_COMPLETION_PATH = ROOT / "data/catalog/hamamatsu_phase13_completion.json"
 NAGOYA_COMPLETION_PATH = ROOT / "data/catalog/nagoya_phase13_completion.json"
+KYOTO_COMPLETION_PATH = ROOT / "data/catalog/kyoto_phase13_completion.json"
 
 NEWLY_ELIGIBLE_CODES = {"221007", "271403", "281000", "331007", "341002"}
 
@@ -100,7 +101,7 @@ def test_phase13_summary_is_derived_from_queue_contents():
     )
 
 
-def test_phase13_eleven_cities_complete_and_kyoto_in_progress():
+def test_phase13_twelve_cities_complete_and_osaka_in_progress():
     queue = load(QUEUE_PATH)
     by_code = {item["official_code"]: item for item in queue["execution_queue"]}
     completions = {
@@ -115,6 +116,7 @@ def test_phase13_eleven_cities_complete_and_kyoto_in_progress():
         "221007": load(SHIZUOKA_COMPLETION_PATH),
         "221309": load(HAMAMATSU_COMPLETION_PATH),
         "231002": load(NAGOYA_COMPLETION_PATH),
+        "261009": load(KYOTO_COMPLETION_PATH),
     }
 
     for sequence, code in enumerate(
@@ -130,6 +132,7 @@ def test_phase13_eleven_cities_complete_and_kyoto_in_progress():
             "221007",
             "221309",
             "231002",
+            "261009",
         ),
         start=1,
     ):
@@ -137,12 +140,12 @@ def test_phase13_eleven_cities_complete_and_kyoto_in_progress():
         assert by_code[code]["status"] == "reviewed_complete"
         assert completions[code]["status"] == "reviewed_complete"
 
-    assert by_code["261009"]["sequence"] == 12
-    assert by_code["261009"]["status"] == "review_in_progress"
-    assert queue["summary"]["reviewed_complete_count"] == 11
+    assert by_code["271004"]["sequence"] == 13
+    assert by_code["271004"]["status"] == "review_in_progress"
+    assert queue["summary"]["reviewed_complete_count"] == 12
     assert queue["summary"]["review_in_progress_count"] == 1
-    assert queue["summary"]["pending_record_review_count"] == 6
-    assert queue["summary"]["next_official_code"] == "261009"
+    assert queue["summary"]["pending_record_review_count"] == 5
+    assert queue["summary"]["next_official_code"] == "271004"
 
 
 def test_phase13_quality_gate_keeps_missing_records_explicit_without_downgrading_inventory():

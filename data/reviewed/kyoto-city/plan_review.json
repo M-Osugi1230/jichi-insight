@@ -1,0 +1,70 @@
+{
+  "id": "phase13-kyoto-plan-review",
+  "official_code": "261009",
+  "name_ja": "京都市",
+  "review_status": "review_in_progress_current_strategy_and_version_boundaries_reviewed",
+  "reviewed_at": "2026-09-28",
+  "records": [
+    {
+      "id": "kyoto-current-basic-concept-period",
+      "evidence_role": "current_plan_identity",
+      "title": "京都基本構想",
+      "statement": "京都基本構想は2026年から2050年までの25年間のまちの羅針盤。",
+      "value": "2026年～2050年",
+      "source_id": "kyoto-basic-concept-2026-2050",
+      "evidence_location": "京都基本構想公式ページ",
+      "decision": "accepted",
+      "review_note": "長期構想であり、個別実施事業や年度actualを直接表すものではない。"
+    },
+    {
+      "id": "kyoto-current-strategy-period",
+      "evidence_role": "current_implementation_strategy",
+      "title": "新京都戦略（令和8年3月改定）",
+      "statement": "京都基本構想を具体化する分野横断アクションプランで、計画期間は2024年度から2027年度。",
+      "value": "2024年度～2027年度",
+      "source_id": "kyoto-new-strategy-current",
+      "evidence_location": "新京都戦略公式ページ『新京都戦略』",
+      "decision": "accepted_current_revision",
+      "review_note": "旧令和7年3月策定版とは別version。"
+    },
+    {
+      "id": "kyoto-current-strategy-policy-structure",
+      "evidence_role": "current_policy_structure",
+      "title": "新京都戦略6政策",
+      "statement": "改定新京都戦略の政策編は6政策で構成され、政策・しごとの仕方改革・持続可能な行財政運営を一体的に進める。",
+      "value": 6,
+      "unit": "policies",
+      "source_id": "kyoto-budget-2026-overview-pdf",
+      "evidence_location": "令和8年度予算資料 PDF 新規・充実事業一覧の政策1～6",
+      "reviewed_data_path": "data/catalog/kyoto_current_strategy_structure.json",
+      "decision": "accepted_complete_policy_identity",
+      "review_note": "個別政策内の施策・KPI・事業は追加depth。"
+    },
+    {
+      "id": "kyoto-current-strategy-progress-route",
+      "evidence_role": "current_strategy_progress",
+      "title": "令和6年度 新京都戦略実施状況",
+      "statement": "令和6年度京都市基本計画実施状況報告では、新京都戦略の実施状況も別途報告されている。",
+      "value": "published",
+      "source_id": "kyoto-progress-2024",
+      "evidence_location": "令和6年度京都市基本計画実施状況公式ページ『新京都戦略実施状況（報告）』",
+      "reviewed_data_path": "data/catalog/kyoto_current_progress_review_summary.json",
+      "decision": "accepted_current_strategy_lane",
+      "review_note": "旧京プラン2025の27政策分野とは別lane。"
+    },
+    {
+      "id": "kyoto-historical-basic-plan-boundary",
+      "evidence_role": "historical_policy_progress",
+      "title": "旧京（みやこ）プラン2025の27政策分野",
+      "statement": "同じ令和6年度報告には旧基本計画『京プラン2025』の27政策分野の進捗・政策評価も含まれる。",
+      "value": 27,
+      "unit": "policy_fields",
+      "source_id": "kyoto-progress-2024",
+      "evidence_location": "令和6年度京都市基本計画実施状況公式ページ",
+      "decision": "accepted_historical_only",
+      "review_note": "2025年末で終了した旧基本計画の評価を京都基本構想2026～2050のactualへ流用しない。"
+    }
+  ],
+  "quality_boundary": "京都基本構想2026～2050、新京都戦略2024～2027改定版、2024年度新京都戦略実施報告、旧京プラン2025の27政策分野をversion別にReviewed化した。6政策の個別施策・KPI・事業、長期構想との細粒度linkage、財政・契約接続、因果効果、独自政策達成度、他都市比較可能性は別レビュー単位。",
+  "next_action": "Add FY2026 initial-budget and FY2024 settlement top lines, then define Kyoto's declared v1 completion package and deferred depth."
+}

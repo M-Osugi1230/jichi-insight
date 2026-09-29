@@ -1,0 +1,44 @@
+{
+  "id": "kyoto-current-progress-review-summary",
+  "phase": 13,
+  "official_code": "261009",
+  "name_ja": "京都市",
+  "reporting_fiscal_year": 2024,
+  "review_status": "reviewed_version_separated_progress_routes",
+  "source_id": "kyoto-progress-2024",
+  "current_strategy_lane": {
+    "plan_version": "新京都戦略（2024年度～2027年度）",
+    "status": "published",
+    "policy_count": 6,
+    "evidence_role": "current_strategy_implementation_progress",
+    "boundary": "新京都戦略実施状況をcurrent strategyのAction/Result報告routeとして保持する。政策ごとの記述をJichi Insight独自の達成判定へ変換しない。"
+  },
+  "historical_basic_plan_lane": {
+    "plan_version": "はばたけ未来へ！京（みやこ）プラン2025",
+    "status": "historical_expired_plan",
+    "policy_field_count": 27,
+    "evidence_role": "historical_policy_progress_and_evaluation",
+    "boundary": "27政策分野の進捗・政策評価は2025年末までの旧基本計画に属する。2026～2050京都基本構想の政策構造やactualへ流用しない。"
+  },
+  "accountability_lanes": [
+    {
+      "id": "municipal_progress_reporting",
+      "actor": "京都市",
+      "role": "source_reported_progress",
+      "boundary": "新京都戦略・旧基本計画の実施状況を市が報告する。"
+    },
+    {
+      "id": "city_assembly_reporting",
+      "actor": "京都市会",
+      "role": "legislative_accountability_route",
+      "boundary": "基本条例等に基づく実施状況報告を受ける議会ルート。政策成果の独立評価とは別。"
+    },
+    {
+      "id": "settlement_audit",
+      "actor": "京都市監査委員",
+      "role": "financial_accountability_route",
+      "boundary": "決算審査を財政Evidenceとして保持。政策効果・因果評価とは別。"
+    }
+  ],
+  "quality_boundary": "同一2024年度報告内でもcurrent新京都戦略laneとhistorical京プラン2025 laneを分離する。市の実施報告、市会報告、監査を別Accountability roleとして保持し、政策評価スコアへ統合しない。"
+}
