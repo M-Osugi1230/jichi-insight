@@ -1,0 +1,79 @@
+{
+  "id": "hiroshima-phase13-sources",
+  "phase": 13,
+  "official_code": "341002",
+  "name_ja": "広島市",
+  "reviewed_at": "2026-09-29",
+  "records": [
+    {
+      "id": "hiroshima-sixth-basic-plan",
+      "layer": "current_plan",
+      "title": "第6次広島市基本計画",
+      "organization": "広島市",
+      "url": "https://www.city.hiroshima.lg.jp/shisei/keikaku-shingikai/1021764/1017052.html",
+      "source_kind": "html",
+      "review_status": "reviewed_current_basic_plan",
+      "confidence": "high",
+      "boundary": "2020～2030年度の最上位基本計画。基本構想・基本計画・実施計画の3層を分離。"
+    },
+    {
+      "id": "hiroshima-implementation-plan-2025-2030",
+      "layer": "implementation_plan",
+      "title": "広島市実施計画(2025－2030)・第3期『世界に誇れる「まち」広島』創生総合戦略",
+      "organization": "広島市",
+      "url": "https://www.city.hiroshima.lg.jp/shisei/toukei/1006109/1027849/1048203/1048213.html",
+      "source_kind": "html",
+      "review_status": "reviewed_current_implementation_plan",
+      "confidence": "high",
+      "boundary": "2025～2030年度。事務事業・財政計画・創生総合戦略を含む。"
+    },
+    {
+      "id": "hiroshima-pdca-current",
+      "layer": "progress_governance",
+      "title": "広島市実施計画 PDCAサイクル",
+      "organization": "広島市",
+      "url": "https://www.city.hiroshima.lg.jp/shisei/toukei/1006109/1027849/1048203/1048213.html",
+      "source_kind": "html",
+      "review_status": "reviewed_pdca_governance_separate_result_unresolved",
+      "confidence": "high",
+      "boundary": "KPI等と外部関係者の意見を踏まえ検証・必要に応じ計画改訂。独立した現行年度Result packageはv1では未接続。"
+    },
+    {
+      "id": "hiroshima-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度当初予算",
+      "organization": "広島市",
+      "url": "https://www.city.hiroshima.lg.jp/shisei/zaisei/1003079/1043845/1047851.html",
+      "source_kind": "html",
+      "fiscal_year": 2026,
+      "review_status": "reviewed_initial_budget",
+      "confidence": "high",
+      "boundary": "一般会計7,940億1,135万9千円。補正とは別state。"
+    },
+    {
+      "id": "hiroshima-budget-2026-enacted",
+      "layer": "budget_adoption",
+      "title": "令和8年度当初予算案を可決",
+      "organization": "広島市議会",
+      "url": "https://www.city.hiroshima.lg.jp/_res/projects/default_project/_page_/001/049/797/328-01.html",
+      "source_kind": "html",
+      "fiscal_year": 2026,
+      "review_status": "reviewed_budget_adoption",
+      "confidence": "high",
+      "boundary": "当初予算案の可決を議会資料で確認。"
+    },
+    {
+      "id": "hiroshima-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度の決算を報告します",
+      "organization": "広島市",
+      "url": "https://www.city.hiroshima.lg.jp/www/koho/shimintoshiseir071115/shimintoshisei/special/index.html",
+      "source_kind": "html",
+      "fiscal_year": 2024,
+      "review_status": "reviewed_settlement_source_precision",
+      "confidence": "high",
+      "boundary": "一般会計収入7,201億1,824万円・支出7,166億7,672万円。万円単位公表値を保持。"
+    }
+  ],
+  "quality_boundary": "基本構想・基本計画・実施計画、KPI-PDCA、予算議決、決算をEvidence roleごとに分離する。現行実施計画の独立したannual-result packageを発明せず、PDCA governanceを結果そのものへ読み替えない。"
+}
