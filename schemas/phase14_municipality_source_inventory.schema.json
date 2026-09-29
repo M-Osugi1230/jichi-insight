@@ -1,0 +1,189 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.local/schemas/phase14_municipality_source_inventory.schema.json",
+  "title": "Phase 14 municipality official source inventory",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "phase",
+    "status",
+    "official_code",
+    "standard_area_code",
+    "name_ja",
+    "prefecture_name_ja",
+    "municipality_type",
+    "roles",
+    "review_status",
+    "plan_period",
+    "sources",
+    "availability_boundary",
+    "quality_boundary",
+    "next_action",
+    "verified_at"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^phase14-[a-z0-9-]+-source-inventory$"
+    },
+    "phase": {
+      "const": 14
+    },
+    "status": {
+      "enum": [
+        "source_inventory_complete",
+        "source_inventory_partial"
+      ]
+    },
+    "official_code": {
+      "type": "string",
+      "pattern": "^[0-9]{6}$"
+    },
+    "standard_area_code": {
+      "type": "string",
+      "pattern": "^[0-9]{5}$"
+    },
+    "name_ja": {
+      "type": "string",
+      "minLength": 2
+    },
+    "prefecture_name_ja": {
+      "type": "string",
+      "minLength": 3
+    },
+    "municipality_type": {
+      "enum": [
+        "city",
+        "special_ward"
+      ]
+    },
+    "roles": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 2,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "core_city",
+          "prefectural_capital"
+        ]
+      }
+    },
+    "review_status": {
+      "const": "indexed_not_reviewed"
+    },
+    "plan_period": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "current_plan_name",
+        "start_fiscal_year",
+        "end_fiscal_year",
+        "period_status"
+      ],
+      "properties": {
+        "current_plan_name": {
+          "type": "string",
+          "minLength": 3
+        },
+        "start_fiscal_year": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1900
+        },
+        "end_fiscal_year": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1900
+        },
+        "period_status": {
+          "enum": [
+            "verified_fixed_period",
+            "verified_no_fixed_end",
+            "transition_or_unresolved"
+          ]
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 4,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "layer",
+          "title",
+          "official_url",
+          "status",
+          "review_boundary"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "layer": {
+            "type": "string",
+            "minLength": 5
+          },
+          "title": {
+            "type": "string",
+            "minLength": 3
+          },
+          "official_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "status": {
+            "enum": [
+              "official_landing_verified",
+              "official_document_verified",
+              "official_unavailability_verified",
+              "source_to_verify"
+            ]
+          },
+          "effective_period": {
+            "type": "string"
+          },
+          "fiscal_year": {
+            "type": "integer"
+          },
+          "available_periods": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "review_boundary": {
+            "type": "string",
+            "minLength": 50
+          }
+        }
+      }
+    },
+    "availability_boundary": {
+      "type": "string",
+      "minLength": 80
+    },
+    "quality_boundary": {
+      "type": "string",
+      "minLength": 150
+    },
+    "next_action": {
+      "type": "string",
+      "minLength": 80
+    },
+    "verified_at": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}
