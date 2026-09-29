@@ -710,18 +710,42 @@ Status: `complete`（2026-09-30）
 - 新宿区: special wardとして基本構想・総合計画frameworkと第三次実行計画を保持し、東京都本体やcity型modelへ変換しない
 - 横須賀市: 2層型のYOKOSUKAビジョン＋実施計画を保持し、FY2026予算proposalとenacted stateを分離する
 
-### Current work — Hokuriku / Koshin source inventory
+### Milestone P14-M3 — Hokuriku / Koshin source inventory
+
+Status: `complete`（2026-09-30）
+
+北陸・甲信6市を`source_inventory_complete`へ昇格しました。
+
+- 富山市
+- 金沢市
+- 福井市
+- 甲府市
+- 長野市
+- 松本市
+
+現行計画、実施・進行管理、FY2026予算、直近決算の公式入口を確認しました。
+
+特に以下の境界を保持します。
+
+- 富山市: 第2次総合計画後期基本計画がFY2026最終年度、第3次総合計画は策定中
+- 金沢市: 2024～2033未来共創計画をKPI前進期評価に基づき2026年6月改訂。原版・改訂版をversion分離
+- 福井市: 第八次総合計画・実施計画がFY2026最終年度。毎年度成果報告/KPIはsource-reported evaluationとして保持
+- 甲府市: 第七次総合計画がFY2026開始、2035年度まで。第1次実施計画はローリング
+- 長野市: 第五次後期基本計画がFY2026最終年度、FY2027開始予定の第六次計画はdraft/transition lane
+- 松本市: 第12次基本計画がFY2026開始、FY2024決算は旧第11次計画期間として分離
+
+### Current work — Tokai source inventory
 
 Status: `in_progress`
 
-Wave 3は富山市（162019）から開始します。
+Wave 4は岐阜市（212016）から開始します。
 
 Canonical status:
 
-- Source inventory complete: 22 / 67
+- Source inventory complete: 28 / 67
 - Source inventory in progress: 1
-- Pending source inventory: 44
-- Next official code: 162019
+- Pending source inventory: 38
+- Next official code: 212016
 
 正本:
 
@@ -733,6 +757,7 @@ Canonical status:
 - `tests/test_phase14_core_capital_registry.py`
 - `tests/test_phase14_wave1_source_inventory.py`
 - `tests/test_phase14_wave2_source_inventory.py`
+- `tests/test_phase14_wave3_source_inventory.py`
 
 ## After Phase 14
 

@@ -189,10 +189,11 @@ Phase 13で完了した20政令指定都市を除き、中核市と県庁所在�
 - Unique Phase 14 targets: 67
 - Wave 1 北海道・東北: 10 / 10 source_inventory_complete
 - Wave 2 関東: 12 / 12 source_inventory_complete
-- Wave 3 北陸・甲信: 富山市から source inventory開始
+- Wave 3 北陸・甲信: 6 / 6 source_inventory_complete
+- Wave 4 東海: 岐阜市から source inventory開始
 - Reviewed promotion: 0（Phase 15で実施）
 
-Wave 1では北海道・東北10市を完了し、Wave 2では水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市の12自治体を完了しました。現行計画、実施・進行管理、FY2026予算、直近決算の公式入口を確認し、計画移行年・特別区・固定終期未確認・proposal/enacted等の境界を推測で埋めず保持しています。
+Wave 1北海道・東北10市、Wave 2関東12自治体、Wave 3北陸・甲信6市まで完了しました。Wave 3では富山市、金沢市、福井市、甲府市、長野市、松本市について公式Source Inventoryを固定し、富山・福井・長野の現行計画最終年度と次期計画transition、甲府・松本のFY2026新計画開始、金沢のKPI評価を踏まえた計画改訂を推測なしで保持しています。
 
 正本:
 
@@ -202,6 +203,7 @@ Wave 1では北海道・東北10市を完了し、Wave 2では水戸市、宇都
 - [`tests/test_phase14_core_capital_registry.py`](tests/test_phase14_core_capital_registry.py)
 - [`tests/test_phase14_wave1_source_inventory.py`](tests/test_phase14_wave1_source_inventory.py)
 - [`tests/test_phase14_wave2_source_inventory.py`](tests/test_phase14_wave2_source_inventory.py)
+- [`tests/test_phase14_wave3_source_inventory.py`](tests/test_phase14_wave3_source_inventory.py)
 
 ## Repository map
 

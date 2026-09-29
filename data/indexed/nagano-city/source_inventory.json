@@ -1,0 +1,74 @@
+{
+  "id": "phase14-nagano-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "202010",
+  "standard_area_code": "20201",
+  "name_ja": "長野市",
+  "prefecture_name_ja": "長野県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city",
+    "prefectural_capital"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第五次長野市総合計画 後期基本計画",
+    "start_fiscal_year": 2022,
+    "end_fiscal_year": 2026,
+    "period_status": "transition_or_unresolved"
+  },
+  "sources": [
+    {
+      "id": "nagano-fifth-latter-plan",
+      "layer": "comprehensive_plan",
+      "title": "第五次長野市総合計画後期基本計画",
+      "official_url": "https://www.city.nagano.nagano.jp/n041000/contents/p004191.html",
+      "status": "official_landing_verified",
+      "effective_period": "2022年度～2026年度",
+      "review_boundary": "現行後期基本計画の最終年度を確認し、FY2027開始予定の第六次計画draftをcurrent planへ昇格しない。"
+    },
+    {
+      "id": "nagano-progress",
+      "layer": "annual_progress",
+      "title": "長野市総合計画進捗状況",
+      "official_url": "https://www.city.nagano.nagano.jp/n041000/contents/p004182.html",
+      "status": "official_landing_verified",
+      "available_periods": [
+        "2024年度"
+      ],
+      "review_boundary": "後期基本計画のアンケート指標・統計指標・個票を用いる進捗公表route。source-reported進捗を独自評価へ変換しない。"
+    },
+    {
+      "id": "nagano-next-plan",
+      "layer": "plan_transition",
+      "title": "次期長野市総合計画について（令和9年度〜）",
+      "official_url": "https://www.city.nagano.nagano.jp/n041000/jikisougoukeikaku.html",
+      "status": "official_landing_verified",
+      "effective_period": "2027年度開始予定",
+      "review_boundary": "FY2027開始の次期計画策定過程を別versionとして保持し、2026年度現行計画のResultと混在させない。"
+    },
+    {
+      "id": "nagano-budget-2026",
+      "layer": "budget",
+      "title": "長野市の予算",
+      "official_url": "https://www.city.nagano.nagano.jp/n060500/contents/p004384.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初・補正予算の公式入口。現行計画最終年度の予算を次期計画事業へ自動接続しない。"
+    },
+    {
+      "id": "nagano-settlement-2024",
+      "layer": "settlement",
+      "title": "長野市の決算",
+      "official_url": "https://www.city.nagano.nagano.jp/n060500/contents/p004386.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算の公式入口。計画進捗指標と財政決算を別Evidence roleで保持する。"
+    }
+  ],
+  "availability_boundary": "第五次総合計画後期基本計画は2026年度が最終年度で、FY2027開始の第六次総合計画が策定中。現行進捗、FY2026予算、次期計画案をversion/time boundaryで分離する。",
+  "quality_boundary": "This Phase 14 inventory verifies Nagano's final-year latter basic plan, FY2024 progress-reporting route, FY2027 next-plan transition, FY2026 budget, and FY2024 settlement. Draft next-plan content and municipal indicator progress are not promoted into current achievement, causal attribution, or cross-city comparison judgments.",
+  "next_action": "Phase 15で現行施策・指標・個票進捗、FY2026予算、FY2024決算と、第六次計画へのtransitionをEvidence付きでレビューし、現行/次期versionを明示する。",
+  "verified_at": "2026-09-30"
+}

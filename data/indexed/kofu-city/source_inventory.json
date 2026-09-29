@@ -1,0 +1,63 @@
+{
+  "id": "phase14-kofu-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "192015",
+  "standard_area_code": "19201",
+  "name_ja": "甲府市",
+  "prefecture_name_ja": "山梨県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city",
+    "prefectural_capital"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第七次甲府市総合計画",
+    "start_fiscal_year": 2026,
+    "end_fiscal_year": 2035,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "kofu-seventh-plan",
+      "layer": "comprehensive_plan",
+      "title": "第七次甲府市総合計画",
+      "official_url": "https://www.city.kofu.yamanashi.jp/sogokeikaku/7jisgkeikaku.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2035年度",
+      "review_boundary": "2026年度開始の10年間基本構想とローリング方式の実施計画からなる2層構造をcurrent planとして保持する。"
+    },
+    {
+      "id": "kofu-first-implementation-design",
+      "layer": "implementation_plan",
+      "title": "第七次甲府市総合計画 第1次実施計画 施策・事業体系",
+      "official_url": "https://www.city.kofu.yamanashi.jp/shise/gaiyo/shicho/kaiken/r7/r80217.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "新計画初年度の第1次実施計画の施策・事業体系を確認する入口。案・確定版と将来ローリング改訂をversion分離する。"
+    },
+    {
+      "id": "kofu-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算",
+      "official_url": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r8yosan.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "第七次総合計画初年度のFY2026予算の公式入口。予算編成を年度成果や政策効果と同一視しない。"
+    },
+    {
+      "id": "kofu-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度決算状況",
+      "official_url": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r6kessan/r6kessan.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算は旧第六次計画期間の財政Evidenceとして保持し、第七次計画current actualへ流用しない。"
+    }
+  ],
+  "availability_boundary": "第七次甲府市総合計画は2026年度開始の新計画で、基本構想は2035年度まで、実施計画はローリング方式。FY2024決算は旧第六次計画期間なのでversionを分離する。",
+  "quality_boundary": "This Phase 14 inventory verifies Kofu's new 2026-2035 seventh comprehensive plan and rolling implementation design, FY2026 budget, and historical FY2024 settlement. It preserves proposal/final implementation-plan and old/current plan boundaries and does not infer current achievement, causal effects, or cross-city comparability.",
+  "next_action": "Phase 15で基本目標・施策・第1次実施計画事業、current-result availability、FY2026予算、旧第六次計画下FY2024決算をversioned record-level Evidenceへ展開する。",
+  "verified_at": "2026-09-30"
+}

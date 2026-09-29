@@ -1,0 +1,66 @@
+{
+  "id": "phase14-kanazawa-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "172014",
+  "standard_area_code": "17201",
+  "name_ja": "金沢市",
+  "prefecture_name_ja": "石川県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city",
+    "prefectural_capital"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "未来共創計画",
+    "start_fiscal_year": 2024,
+    "end_fiscal_year": 2033,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "kanazawa-future-co-creation-plan",
+      "layer": "comprehensive_plan",
+      "title": "未来共創計画",
+      "official_url": "https://www4.city.kanazawa.lg.jp/shiseijoho/seisaku_keikaku/kihon-toshikousou/26161.html",
+      "status": "official_landing_verified",
+      "effective_period": "2024年度～2033年度",
+      "review_boundary": "市政運営の最上位計画として10年間の計画と5基本方針を確認し、前進期・充実期・発展期のphaseを別時点で保持する。"
+    },
+    {
+      "id": "kanazawa-progress-2026-revision",
+      "layer": "progress_governance",
+      "title": "未来共創計画 前進期の評価・令和8年6月改訂",
+      "official_url": "https://www4.city.kanazawa.lg.jp/shiseijoho/seisaku_keikaku/kihon-toshikousou/26161.html",
+      "status": "official_landing_verified",
+      "available_periods": [
+        "前進期評価",
+        "2026年6月改訂"
+      ],
+      "review_boundary": "KPI達成状況を用いた前進期評価と計画改訂を確認する。source-reported評価を独自政策達成スコアへ変換しない。"
+    },
+    {
+      "id": "kanazawa-budget-2026",
+      "layer": "budget",
+      "title": "金沢市予算概要",
+      "official_url": "https://www4.city.kanazawa.lg.jp/shiseijoho/gyozaisei/zaisei_yosan_kessan/2/13057.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算と補正予算の公式入口。計画改訂との連動を保持しつつ、予算stateを年度成果へ読み替えない。"
+    },
+    {
+      "id": "kanazawa-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度決算",
+      "official_url": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/kaikeika/gyomuannai/1_1/30264.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024一般・特別会計決算の公式入口。KPI評価・計画改訂・財政決算を別Evidence roleとして保持する。"
+    }
+  ],
+  "availability_boundary": "未来共創計画は2024～2033年度で、2026年に前進期評価を踏まえて改訂されている。原版・2025年改訂・2026年改訂とKPI評価時点をversioned recordとして分離する必要がある。",
+  "quality_boundary": "This Phase 14 inventory verifies Kanazawa's 2024-2033 Future Co-Creation Plan, KPI-based progress/revision route, FY2026 budget, and FY2024 settlement. It preserves plan-revision chronology and does not convert municipal KPI evaluation, budget alignment, or fiscal values into independent achievement, causal, or cross-city judgments.",
+  "next_action": "Phase 15で5基本方針・施策方針・KPI、前進期評価、2026年改訂差分、FY2026当初・補正予算、FY2024決算をversion/source位置付きrecord-level Evidenceへ展開する。",
+  "verified_at": "2026-09-30"
+}
