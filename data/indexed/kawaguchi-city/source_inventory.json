@@ -1,0 +1,62 @@
+{
+  "id": "phase14-kawaguchi-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "112038",
+  "standard_area_code": "11203",
+  "name_ja": "川口市",
+  "prefecture_name_ja": "埼玉県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第6次川口市総合計画",
+    "start_fiscal_year": 2026,
+    "end_fiscal_year": 2035,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "kawaguchi-sixth-plan",
+      "layer": "comprehensive_plan",
+      "title": "第6次川口市総合計画",
+      "official_url": "https://www.city.kawaguchi.lg.jp/soshiki/01020/010/4/50297.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2035年度",
+      "review_boundary": "2026年度開始の基本構想と前期基本計画を確認し、旧第5次計画の指標・評価をcurrent Resultとして流用しない。"
+    },
+    {
+      "id": "kawaguchi-implementation-2026-2028",
+      "layer": "implementation_plan",
+      "title": "第6次川口市総合計画 実施計画",
+      "official_url": "https://www.city.kawaguchi.lg.jp/soshiki/01020/010/4/50297.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2028年度",
+      "review_boundary": "前期基本計画に基づく3年間の実施層と毎年度の市民意識調査を確認し、調査結果を政策因果効果へ変換しない。"
+    },
+    {
+      "id": "kawaguchi-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度当初予算書",
+      "official_url": "https://www.city.kawaguchi.lg.jp/soshiki/01020/030/3/4_11/50455.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算書の公式入口。補正・執行・決算と別stateで保持する。"
+    },
+    {
+      "id": "kawaguchi-settlement-index",
+      "layer": "settlement_and_major_measures",
+      "title": "市の財政",
+      "official_url": "https://www.city.kawaguchi.lg.jp/shiseijoho/shinozaisei/20900.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算書・主要施策成果等への公式入口。旧計画下の年度実績とFY2026新計画を自動接続しない。"
+    }
+  ],
+  "availability_boundary": "第6次総合計画は2026年度開始のため、FY2024決算・成果は旧計画期間。市民意識調査も自治体が設定した進行管理資料として保持し、独自達成評価へ再計算しない。",
+  "quality_boundary": "This Phase 14 inventory verifies Kawaguchi's new 2026-2035 sixth comprehensive plan, 2026-2028 implementation layer, FY2026 initial-budget route, and historical FY2024 settlement route. It preserves plan-version and survey-evidence boundaries and makes no independent achievement, causal, or comparability judgment.",
+  "next_action": "Phase 15で前期基本計画の政策・指標、実施計画事業、市民意識調査、FY2026予算、旧計画下FY2024決算を主体・年度・version付きEvidenceとしてレビューする。",
+  "verified_at": "2026-09-30"
+}
