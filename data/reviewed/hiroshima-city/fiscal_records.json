@@ -1,0 +1,66 @@
+[
+  {
+    "id": "jp-local-341002-fiscal-2026-total-revenue",
+    "municipality_id": "jp-local-341002",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_revenue",
+    "metric_label": "一般会計当初予算（議会可決）",
+    "amount_yen": 794011359000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "公式予算ページの7,940億1,135万9千円。市議会資料で当初予算案可決を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hiroshima-budget-2026",
+      "hiroshima-budget-2026-enacted"
+    ]
+  },
+  {
+    "id": "jp-local-341002-fiscal-2024-total-revenue",
+    "municipality_id": "jp-local-341002",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "一般会計収入決算額（万円単位公表）",
+    "amount_yen": 720118240000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "市広報の収入7,201億1,824万円を換算。万円未満の精度を推測しない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hiroshima-settlement-2024"
+    ]
+  },
+  {
+    "id": "jp-local-341002-fiscal-2024-total-expenditure",
+    "municipality_id": "jp-local-341002",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計支出決算額（万円単位公表）",
+    "amount_yen": 716676720000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "市広報の支出7,166億7,672万円を換算。万円未満の精度を推測しない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hiroshima-settlement-2024"
+    ]
+  }
+]

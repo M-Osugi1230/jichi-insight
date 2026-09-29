@@ -1,0 +1,47 @@
+{
+  "id": "phase13-sakai-plan-review",
+  "official_code": "271403",
+  "name_ja": "堺市",
+  "review_status": "review_in_progress_current_structure_and_availability_reviewed",
+  "reviewed_at": "2026-09-29",
+  "records": [
+    {
+      "id": "sakai-current-plan-period",
+      "evidence_role": "current_plan_identity",
+      "title": "堺市基本計画2030",
+      "statement": "現行最上位計画は2035年度を見据え、2026年度から2030年度までの5年間を対象とする。",
+      "value": "2026年度～2030年度",
+      "source_id": "sakai-basic-plan-2030",
+      "evidence_location": "公式ページ『計画の目的・位置づけ』『計画期間』",
+      "decision": "accepted",
+      "review_note": "別立ての実施計画を推測で作らない。"
+    },
+    {
+      "id": "sakai-current-strategy-structure",
+      "evidence_role": "current_policy_structure",
+      "title": "重点戦略とKGI",
+      "statement": "現行計画は3 KGI、5重点戦略、27施策を核とする。",
+      "value": 5,
+      "unit": "priority_strategies",
+      "source_id": "sakai-basic-plan-2030-kpi",
+      "evidence_location": "計画概要・KPI資料",
+      "reviewed_data_path": "data/catalog/sakai_current_policy_structure.json",
+      "decision": "accepted_declared_structure",
+      "review_note": "個別KPI値は追加depth。"
+    },
+    {
+      "id": "sakai-current-progress-availability",
+      "evidence_role": "current_annual_progress",
+      "title": "現行計画の年度実績availability",
+      "statement": "2026年度開始の現行計画について完了年度のannual resultはまだ利用可能ではない。",
+      "value": "not_yet_available",
+      "source_id": "sakai-basic-plan-2030",
+      "evidence_location": "計画期間と進行管理",
+      "reviewed_data_path": "data/catalog/sakai_current_progress_availability.json",
+      "decision": "accepted_availability_boundary",
+      "review_note": "旧計画進捗を代替利用しない。"
+    }
+  ],
+  "quality_boundary": "現行計画のidentity・構造・進行管理と、旧計画のhistorical progressを分離した。未公表の現行Result、個別KPI・事業、財政・契約接続、因果効果、独自達成度、比較可能性は別レビュー単位。",
+  "next_action": "Add fiscal top lines and define Sakai declared v1 completion package."
+}

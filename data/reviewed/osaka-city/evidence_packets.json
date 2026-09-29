@@ -1,0 +1,65 @@
+[
+  {
+    "id": "evidence-osaka-city-2026-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-271004-fiscal-2026-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算は2,188,221百万円。",
+        "source_ids": [
+          "osaka-budget-2026-enacted"
+        ],
+        "location_note": "令和8年度当初予算公式ページ『3.予算規模』一般会計 2,188,221百万円。",
+        "decision": "accepted",
+        "review_note": "2,188,221,000,000円として保存。市会議決済みinitial budget。"
+      }
+    ],
+    "open_questions": [
+      "補正予算はinitial_budgetを上書きせずrevised_budgetとして追加する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-osaka-city-2024-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-271004-fiscal-2024-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計歳入は2,090,062,147,558円。",
+        "source_ids": [
+          "osaka-settlement-2024-exact"
+        ],
+        "location_note": "令和6年度大阪市決算『一般会計』歳入欄。",
+        "decision": "accepted",
+        "review_note": "円単位の公式確定値として保存。"
+      }
+    ],
+    "open_questions": [
+      "款項目別・事業別決算は別Evidence reviewで追加する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-osaka-city-2024-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-271004-fiscal-2024-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計歳出は2,065,562,115,148円。",
+        "source_ids": [
+          "osaka-settlement-2024-exact"
+        ],
+        "location_note": "令和6年度大阪市決算『一般会計』歳出欄。",
+        "decision": "accepted",
+        "review_note": "円単位の公式確定値として保存。"
+      }
+    ],
+    "open_questions": [
+      "款項目別・事業別決算は別Evidence reviewで追加する。"
+    ],
+    "review_status": "reviewed"
+  }
+]

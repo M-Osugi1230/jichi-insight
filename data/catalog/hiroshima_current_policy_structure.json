@@ -1,0 +1,34 @@
+{
+  "id": "hiroshima-current-policy-structure",
+  "phase": 13,
+  "official_code": "341002",
+  "name_ja": "広島市",
+  "review_status": "reviewed_current_plan_layers_and_implementation_period",
+  "plan_layers": [
+    {
+      "layer": "basic_concept",
+      "role": "都市像と施策構想"
+    },
+    {
+      "layer": "basic_plan",
+      "role": "施策大綱の長期計画",
+      "period": "2020年度～2030年度"
+    },
+    {
+      "layer": "implementation_plan",
+      "role": "基本計画実施に必要な事務事業・財政計画",
+      "period": "2025年度～2030年度"
+    }
+  ],
+  "current_implementation": {
+    "source_id": "hiroshima-implementation-plan-2025-2030",
+    "includes_local_revitalization_strategy": true,
+    "local_revitalization_strategy_generation": 3
+  },
+  "progress_management": {
+    "model": "kpi_external_input_pdca",
+    "source_id": "hiroshima-pdca-current",
+    "semantics": "数値目標・KPI・参考数値を基に施策・事業効果を整理分析し、経済団体・教育機関等の意見を踏まえ検証し、必要に応じ計画を改訂。"
+  },
+  "quality_boundary": "3層計画体系と2025～2030実施計画をReviewed化する。個別KPI・事務事業・概算事業費の全件個票化は追加depth。"
+}

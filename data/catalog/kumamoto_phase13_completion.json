@@ -1,0 +1,76 @@
+{
+  "id": "kumamoto-phase13-completion",
+  "phase": 13,
+  "status": "reviewed_complete",
+  "official_code": "431001",
+  "name_ja": "熊本市",
+  "completed_at": "2026-09-29",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "policy_review_manifest_path": "data/catalog/kumamoto_phase13_policy_review_manifest.json",
+    "plan_review_path": "data/reviewed/kumamoto-city/plan_review.json",
+    "source_catalog_path": "data/catalog/kumamoto_phase13_sources.json",
+    "policy_structure_path": "data/catalog/kumamoto_current_policy_structure.json",
+    "progress_review_path": "data/catalog/kumamoto_current_progress_review_summary.json",
+    "fiscal_records_path": "data/reviewed/kumamoto-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/kumamoto-city/evidence_packets.json",
+    "counts": {
+      "plan_layers": 3,
+      "visions": 8,
+      "fy2026_priority_items": 4,
+      "reviewed_current_evaluation_fiscal_years": 1,
+      "accountability_roles": 2,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "current_plan_period_review_complete": true,
+    "three_plan_layers_review_complete": true,
+    "eight_vision_structure_review_complete": true,
+    "fy2026_four_priority_action_plan_review_complete": true,
+    "fy2024_current_plan_evaluation_route_review_complete": true,
+    "municipal_evaluation_and_council_deliberation_roles_separate": true,
+    "proposal_and_enacted_budget_lineage_preserved": true,
+    "initial_budget_and_settlement_states_separate": true,
+    "fiscal_source_precision_preserved": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "vision-policy-indicator-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "8ビジョン配下の施策・基本方針・検証指標の完全個票化は追加depth。"
+    },
+    {
+      "id": "fy2024-evaluation-record-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "FY2024指標一覧と行政評価シートの全件record-level Evidence化は追加depth。"
+    },
+    {
+      "id": "fy2026-action-project-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "FY2026アクションプランの具体事業・検証指標・予算の全件接続は追加depth。"
+    },
+    {
+      "id": "multi-year-result-series",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "FY2025・FY2026評価公表後の複数年度系列は定義・単位・改定を確認して接続する。"
+    },
+    {
+      "id": "fiscal-detail-policy-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "補正・執行・個別事業費・契約・補助金の政策接続は別Evidenceレビュー。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "行政評価・審議会審議・検証指標・財政値を因果効果や他都市比較スコアへ変換しない。"
+    }
+  ],
+  "completion_boundary": "熊本市のPhase 13 reviewed_completeは宣言したv1レビュー・パッケージの完了を意味する。2024～2031年度の熊本市第8次総合計画、基本構想・基本計画・アクションプランの3層、8ビジョン、FY2026アクションプランの4重点事項、現行第8次計画に対するFY2024行政評価・指標一覧・行政評価シートの公表routeと熊本市総合計画審議会による別roleの審議、2026年度一般会計当初予算437,840,000,000円のproposal→原案どおり可決lineage、2024年度一般会計決算歳入428,730,240,000円・歳出419,712,090,000円（万円単位公表）をレビュー済みである。行政評価と審議会審議を統合せず、個別施策・指標・行政評価シート、FY2026事業、複数年度Result系列、個別財政接続はdeferred_depthとして保持し、独自政策達成度、因果効果、他都市比較可能性へ変換しない。"
+}

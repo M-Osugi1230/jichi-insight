@@ -1,0 +1,56 @@
+{
+  "id": "okayama-phase13-sources",
+  "phase": 13,
+  "official_code": "331007",
+  "name_ja": "岡山市",
+  "reviewed_at": "2026-09-29",
+  "records": [
+    {
+      "id": "okayama-seventh-plan",
+      "layer": "current_plan",
+      "title": "岡山市第七次総合計画",
+      "organization": "岡山市",
+      "url": "https://www.city.okayama.jp/shisei/0000079070.html",
+      "source_kind": "html",
+      "review_status": "reviewed_current_plan_structure",
+      "confidence": "high",
+      "boundary": "長期構想2026～2035年度、前期中期計画2026～2030年度。4視点、8基本方向、30政策、99施策。"
+    },
+    {
+      "id": "okayama-current-progress-governance",
+      "layer": "progress_governance",
+      "title": "第七次総合計画 前期中期計画の進行管理",
+      "organization": "岡山市",
+      "url": "https://www.city.okayama.jp/shisei/0000079070.html",
+      "source_kind": "html",
+      "review_status": "reviewed_governance_current_result_not_yet_available",
+      "confidence": "high",
+      "boundary": "30政策ごとに成果指標、取組達成状況を毎年度評価・公表するPDCA。初年度完了Resultは未公表。"
+    },
+    {
+      "id": "okayama-budget-2026-enacted",
+      "layer": "budget",
+      "title": "令和8年度当初予算を可決",
+      "organization": "岡山市議会",
+      "url": "https://www.city.okayama.jp/gikai/cmsfiles/contents/0000078/78091/131_P2.pdf",
+      "source_kind": "pdf",
+      "fiscal_year": 2026,
+      "review_status": "reviewed_enacted_initial_budget_source_precision",
+      "confidence": "high",
+      "boundary": "一般会計4,298億6,338万円余として市議会広報が可決を確認。source precisionを保持。"
+    },
+    {
+      "id": "okayama-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度岡山市各種会計決算 市長提案理由",
+      "organization": "岡山市",
+      "url": "https://www.city.okayama.jp/0000075081.html",
+      "source_kind": "html",
+      "fiscal_year": 2024,
+      "review_status": "reviewed_settlement_source_precision",
+      "confidence": "high",
+      "boundary": "一般会計歳入4,065億円余、歳出3,877億円余。source-reported rounded/余 valuesを保持。"
+    }
+  ],
+  "quality_boundary": "第七次総合計画の階層、毎年度PDCA、初年度Result未公表、予算・決算のsource precisionを分離保持する。『余』の財政値を擬似的な円単位精密値へ昇格せず、旧計画の評価をcurrent actualへ流用しない。"
+}

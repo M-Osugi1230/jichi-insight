@@ -1,0 +1,61 @@
+[
+  {
+    "id": "evidence-sakai-2026-budget",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-271403-fiscal-2026-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算は521,700,000千円。",
+        "source_ids": [
+          "sakai-budget-2026"
+        ],
+        "location_note": "令和8年度予算『1.予算規模』一般会計。",
+        "decision": "accepted",
+        "review_note": "521,700,000,000円として保存。"
+      }
+    ],
+    "open_questions": [
+      "補正後予算は別stateで追加する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sakai-2024-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-271403-fiscal-2024-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計収入済額は477,935,503,067円。",
+        "source_ids": [
+          "sakai-settlement-2024-audit"
+        ],
+        "location_note": "決算審査意見書 決算額総括表（単位：円）。",
+        "decision": "accepted",
+        "review_note": "円単位の監査資料値。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sakai-2024-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-271403-fiscal-2024-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計支出済額は470,108,227,969円。",
+        "source_ids": [
+          "sakai-settlement-2024-audit"
+        ],
+        "location_note": "決算審査意見書 決算額総括表（単位：円）。",
+        "decision": "accepted",
+        "review_note": "円単位の監査資料値。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]

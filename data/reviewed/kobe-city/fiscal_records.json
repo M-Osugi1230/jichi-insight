@@ -1,0 +1,65 @@
+[
+  {
+    "id": "jp-local-281000-fiscal-2026-total-revenue",
+    "municipality_id": "jp-local-281000",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_revenue",
+    "metric_label": "一般会計当初予算（市会可決）",
+    "amount_yen": 977781231000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "令和8年第1回定例市会で予算第1号議案977,781,231千円が可決。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "kobe-budget-2026-enacted"
+    ]
+  },
+  {
+    "id": "jp-local-281000-fiscal-2024-total-revenue",
+    "municipality_id": "jp-local-281000",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入決算額",
+    "amount_yen": 945588848718,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "令和6年度一般会計歳入歳出決算書の歳入合計・収入済額。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "kobe-settlement-2024"
+    ]
+  },
+  {
+    "id": "jp-local-281000-fiscal-2024-total-expenditure",
+    "municipality_id": "jp-local-281000",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出決算額",
+    "amount_yen": 930659433328,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "令和6年度一般会計歳入歳出決算書の歳出合計・支出済額。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "kobe-settlement-2024"
+    ]
+  }
+]

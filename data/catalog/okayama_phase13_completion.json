@@ -1,0 +1,74 @@
+{
+  "id": "okayama-phase13-completion",
+  "phase": 13,
+  "status": "reviewed_complete",
+  "official_code": "331007",
+  "name_ja": "岡山市",
+  "completed_at": "2026-09-29",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "policy_review_manifest_path": "data/catalog/okayama_phase13_policy_review_manifest.json",
+    "plan_review_path": "data/reviewed/okayama-city/plan_review.json",
+    "source_catalog_path": "data/catalog/okayama_phase13_sources.json",
+    "policy_structure_path": "data/catalog/okayama_current_policy_structure.json",
+    "progress_review_path": "data/catalog/okayama_current_progress_availability.json",
+    "fiscal_records_path": "data/reviewed/okayama-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/okayama-city/evidence_packets.json",
+    "counts": {
+      "perspectives": 4,
+      "basic_directions": 8,
+      "policies": 30,
+      "measures": 99,
+      "current_completed_annual_results": 0,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "long_term_and_midterm_periods_separate": true,
+    "current_hierarchy_review_complete": true,
+    "annual_pdca_governance_preserved": true,
+    "current_progress_availability_explicit": true,
+    "prior_result_not_reused": true,
+    "fiscal_source_precision_preserved": true,
+    "initial_budget_and_settlement_states_separate": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "policy-indicator-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "30政策の成果指標について定義・基準・目標・年度実績の全件レビューは追加depth。"
+    },
+    {
+      "id": "measure-action-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "99施策配下の具体取組と担当・事業identityの完全構造化は追加depth。"
+    },
+    {
+      "id": "first-current-annual-result",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "現行第七次計画初年度の完了評価は未公表であり、旧計画から補完しない。"
+    },
+    {
+      "id": "ward-plan-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "区別計画の重点施策・市民協働取組の完全個票化は追加depth。"
+    },
+    {
+      "id": "fiscal-detail-policy-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "補正・執行・個別事業費・契約・補助金の政策接続は別Evidenceレビュー。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "成果指標・年度評価・財政値を政策効果の因果認定や他都市比較スコアへ変換しない。"
+    }
+  ],
+  "completion_boundary": "岡山市のPhase 13 reviewed_completeは宣言したv1レビュー・パッケージの完了を意味する。2026～2035年度の第七次総合計画長期構想、2026～2030年度の前期中期計画、4つのまちづくりの基本的視点、8基本方向、30政策、99施策、30政策ごとの成果指標と毎年度評価・公表を行うPDCA、2026年度初年度の完了Resultが未公表であるavailability boundary、2026年度一般会計当初予算4,298億6,338万円余、2024年度一般会計決算歳入4,065億円余・歳出3,877億円余をsource precisionのままレビュー済みである。『余』を円単位の偽精度へ昇格せず、旧計画Resultを現行actualへ流用しない。個別成果指標・取組、区別計画、最初の年度評価、個別財政接続はdeferred_depthとして保持し、独自政策達成度、因果効果、他都市比較可能性へ変換しない。"
+}

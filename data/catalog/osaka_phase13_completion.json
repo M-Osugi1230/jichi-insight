@@ -1,0 +1,77 @@
+{
+  "id": "osaka-phase13-completion",
+  "phase": 13,
+  "status": "reviewed_complete",
+  "official_code": "271004",
+  "name_ja": "大阪市",
+  "completed_at": "2026-09-29",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "policy_review_manifest_path": "data/catalog/osaka_phase13_policy_review_manifest.json",
+    "plan_review_path": "data/reviewed/osaka-city/plan_review.json",
+    "source_catalog_path": "data/catalog/osaka_phase13_sources.json",
+    "policy_structure_path": "data/catalog/osaka_current_policy_structure.json",
+    "progress_review_path": "data/catalog/osaka_current_progress_review_summary.json",
+    "fiscal_records_path": "data/reviewed/osaka-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/osaka-city/evidence_packets.json",
+    "counts": {
+      "basic_concept_urban_visions": 3,
+      "annual_policy_domains": 4,
+      "annual_policy_initiative_headings": 15,
+      "ward_operating_policy_lanes": 24,
+      "bureau_office_lanes_listed": 28,
+      "joint_prefecture_city_bureaus": 2,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "basic_concept_three_urban_visions_review_complete": true,
+    "fy2026_annual_city_policy_structure_review_complete": true,
+    "annual_policy_not_mislabeled_as_multiyear_plan": true,
+    "decentralized_ward_bureau_model_preserved": true,
+    "fy2025_and_fy2026_lanes_version_separate": true,
+    "joint_prefecture_city_bureaus_actor_boundary_preserved": true,
+    "initial_budget_and_settlement_states_separate": true,
+    "exact_settlement_precision_preserved": true,
+    "no_citywide_self_evaluation_score_invented": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "ward-bureau-record-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "24区・各局の経営課題、施策戦略、指標、実績、自己評価の完全個票化は追加depth。一覧数から結果を推測しない。"
+    },
+    {
+      "id": "fy2026-policy-to-operating-policy-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "FY2026市政方針4領域・15取組見出しと各区・局運営方針の細粒度対応は別Evidenceレビューとし、文言類似だけで接続しない。"
+    },
+    {
+      "id": "fy2026-current-result",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "FY2026通年結果は進行中であり、FY2025自己評価をFY2026 actualとして流用しない。"
+    },
+    {
+      "id": "budget-project-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "FY2026当初予算事業一覧・補助金・貸付金・歳入内訳の個別政策接続は追加depth。"
+    },
+    {
+      "id": "fiscal-detail-policy-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "v1ではFY2026一般会計当初予算とFY2024一般会計決算トップラインをstate分離して保持する。補正、執行、契約、補助金の政策接続は別Evidenceレビューとする。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "区・局自己評価、年度方針、予算・決算のレビューは政策効果の因果認定や他都市との比較可能性を意味しない。専用方法論なしに統合スコアやランキングへ昇格しない。"
+    }
+  ],
+  "completion_boundary": "大阪市のPhase 13 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味する。大阪市基本構想の3都市像、令和8年度市政運営の基本方針の4領域・15取組見出し、令和7年度各区・局運営方針の自己評価公表route、24区と28の各局・室等の一覧（うちIR推進局・大阪都市計画局の2局は府市共同設置で運営方針を大阪府が策定）、区・局評価のPDCA semantics、2026年度一般会計当初予算2,188,221,000,000円、2024年度一般会計決算歳入2,090,062,147,558円・歳出2,065,562,115,148円をレビュー済みである。一方、各区・局の経営課題・指標・実績・自己評価の完全個票化、FY2026方針と区・局運営方針の細粒度linkage、FY2026通年Result、個別予算事業・契約・補助金接続はdeferred_depthとして明示する。FY2025自己評価をFY2026 actualへ流用せず、区・局のsource-reported evaluationをJichi Insight独自の政策達成度、因果効果、他都市比較可能性またはランキングへ統合しない。"
+}

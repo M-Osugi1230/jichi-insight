@@ -1,0 +1,61 @@
+[
+  {
+    "id": "evidence-kobe-2026-budget",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-281000-fiscal-2026-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計予算977,781,231千円が市会で可決された。",
+        "source_ids": [
+          "kobe-budget-2026-enacted"
+        ],
+        "location_note": "令和8年第1回定例市会『議案（令和8年度関連）』予算第1号議案。",
+        "decision": "accepted",
+        "review_note": "977,781,231,000円として保存。"
+      }
+    ],
+    "open_questions": [
+      "後続補正は別revised stateで保持する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kobe-2024-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-281000-fiscal-2024-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計歳入合計の収入済額は945,588,848,718円。",
+        "source_ids": [
+          "kobe-settlement-2024"
+        ],
+        "location_note": "一般会計歳入歳出決算書 歳入合計。",
+        "decision": "accepted",
+        "review_note": "円単位確定値。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kobe-2024-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-281000-fiscal-2024-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計歳出合計の支出済額は930,659,433,328円。",
+        "source_ids": [
+          "kobe-settlement-2024"
+        ],
+        "location_note": "一般会計歳入歳出決算書 歳出合計。",
+        "decision": "accepted",
+        "review_note": "円単位確定値。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]

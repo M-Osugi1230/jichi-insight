@@ -1,0 +1,74 @@
+{
+  "id": "hiroshima-phase13-completion",
+  "phase": 13,
+  "status": "reviewed_complete",
+  "official_code": "341002",
+  "name_ja": "広島市",
+  "completed_at": "2026-09-29",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "policy_review_manifest_path": "data/catalog/hiroshima_phase13_policy_review_manifest.json",
+    "plan_review_path": "data/reviewed/hiroshima-city/plan_review.json",
+    "source_catalog_path": "data/catalog/hiroshima_phase13_sources.json",
+    "policy_structure_path": "data/catalog/hiroshima_current_policy_structure.json",
+    "progress_review_path": "data/catalog/hiroshima_current_progress_availability.json",
+    "fiscal_records_path": "data/reviewed/hiroshima-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/hiroshima-city/evidence_packets.json",
+    "counts": {
+      "plan_layers": 3,
+      "current_implementation_plan_period_years": 6,
+      "separately_identified_current_annual_result_packages": 0,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "three_plan_layers_separate": true,
+    "basic_and_implementation_periods_separate": true,
+    "current_implementation_version_reviewed": true,
+    "kpi_external_input_pdca_preserved": true,
+    "separate_annual_result_boundary_explicit": true,
+    "governance_not_reused_as_result": true,
+    "budget_adoption_verified": true,
+    "initial_budget_and_settlement_states_separate": true,
+    "fiscal_source_precision_preserved": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "kpi-record-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "第3期総合戦略の数値目標・KPI・参考数値の完全個票化は追加depth。"
+    },
+    {
+      "id": "implementation-project-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "実施計画の事務事業・概算事業費・財源の完全個票化は追加depth。"
+    },
+    {
+      "id": "separate-current-annual-result",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "v1 source setで独立識別できない現行年度Resultを推測で作成しない。"
+    },
+    {
+      "id": "plan-revision-history",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "PDCAに伴う個別改訂履歴・KPI変更履歴の完全version trackingは追加depth。"
+    },
+    {
+      "id": "fiscal-detail-policy-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "補正・執行・個別事業費・契約・補助金の政策接続は別Evidenceレビュー。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "KPI・外部意見・財政値を独自政策効果や他都市比較スコアへ変換しない。"
+    }
+  ],
+  "completion_boundary": "広島市のPhase 13 reviewed_completeは宣言したv1レビュー・パッケージの完了を意味する。基本構想・基本計画・実施計画の3層、第6次広島市基本計画2020～2030年度、現行広島市実施計画2025～2030年度と第3期地方創生総合戦略、数値目標・KPI・参考数値と経済団体・教育機関等の意見を用いるPDCA、v1 source setで独立したcurrent annual-result packageを識別できていない境界、2026年度一般会計当初予算794,011,359,000円とその議会可決、2024年度一般会計決算収入720,118,240,000円相当・支出716,676,720,000円相当（万円単位公表）をレビュー済みである。PDCA governanceを年度Resultへ読み替えず、KPI・事務事業・概算事業費、独立年度Result、改訂履歴、個別財政接続はdeferred_depthとして保持し、独自政策達成度、因果効果、他都市比較可能性へ変換しない。"
+}

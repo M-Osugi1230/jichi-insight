@@ -1,0 +1,26 @@
+{
+  "id": "sakai-current-progress-availability",
+  "phase": 13,
+  "official_code": "271403",
+  "name_ja": "堺市",
+  "review_status": "reviewed_current_result_not_yet_available_and_historical_lane_preserved",
+  "current_plan_lane": {
+    "plan_version": "堺市基本計画2030",
+    "period": "2026年度～2030年度",
+    "annual_progress_status": "not_yet_available",
+    "boundary": "2026年度開始のため、完了年度の現行計画Resultはまだ存在しない。"
+  },
+  "historical_lane": {
+    "plan_version": "堺市基本計画2025",
+    "period": "2021年度～2025年度",
+    "status": "historical_only",
+    "source_id": "sakai-legacy-progress-2025-final",
+    "boundary": "旧計画の最終進捗・KGI・KPI評価を現行2030計画のactualへ流用しない。"
+  },
+  "governance": {
+    "model": "annual_kpi_pdca",
+    "source_id": "sakai-basic-plan-2030-kpi",
+    "boundary": "KPI進捗把握と事業見直しの仕組みは確認済みだが、現行計画の完了年度Resultとは別。"
+  },
+  "quality_boundary": "availabilityを事実として保持し、not_yet_availableを欠損補完しない。"
+}

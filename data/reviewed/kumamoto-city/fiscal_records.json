@@ -1,0 +1,66 @@
+[
+  {
+    "id": "jp-local-431001-fiscal-2026-total-revenue",
+    "municipality_id": "jp-local-431001",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_revenue",
+    "metric_label": "一般会計当初予算（原案どおり可決）",
+    "amount_yen": 437840000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "市長提案理由の一般会計4,378億4千万円。第1回定例会後会見で当初予算案が原案どおり可決されたことを確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "kumamoto-budget-2026-proposal",
+      "kumamoto-budget-2026-enacted"
+    ]
+  },
+  {
+    "id": "jp-local-431001-fiscal-2024-total-revenue",
+    "municipality_id": "jp-local-431001",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入決算額（万円単位公表）",
+    "amount_yen": 428730240000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "令和6年度決算概要の一般会計歳入総額4,287億3,024万円を円換算。万円未満の精度を推測しない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "kumamoto-settlement-2024"
+    ]
+  },
+  {
+    "id": "jp-local-431001-fiscal-2024-total-expenditure",
+    "municipality_id": "jp-local-431001",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出決算額（万円単位公表）",
+    "amount_yen": 419712090000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "令和6年度決算概要の一般会計歳出総額4,197億1,209万円を円換算。万円未満の精度を推測しない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "kumamoto-settlement-2024"
+    ]
+  }
+]

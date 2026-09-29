@@ -1,0 +1,164 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.local/schemas/osaka_phase13_completion.schema.json",
+  "title": "Osaka Phase 13 completion contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "phase",
+    "status",
+    "official_code",
+    "name_ja",
+    "completed_at",
+    "completion_depth",
+    "review_package",
+    "quality_gate",
+    "deferred_depth",
+    "completion_boundary"
+  ],
+  "properties": {
+    "id": {
+      "const": "osaka-phase13-completion"
+    },
+    "phase": {
+      "const": 13
+    },
+    "status": {
+      "const": "reviewed_complete"
+    },
+    "official_code": {
+      "const": "271004"
+    },
+    "name_ja": {
+      "const": "大阪市"
+    },
+    "completed_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "completion_depth": {
+      "const": "declared_review_package_v1"
+    },
+    "review_package": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "policy_review_manifest_path",
+        "plan_review_path",
+        "source_catalog_path",
+        "policy_structure_path",
+        "progress_review_path",
+        "fiscal_records_path",
+        "fiscal_evidence_path",
+        "counts"
+      ],
+      "properties": {
+        "policy_review_manifest_path": {
+          "const": "data/catalog/osaka_phase13_policy_review_manifest.json"
+        },
+        "plan_review_path": {
+          "const": "data/reviewed/osaka-city/plan_review.json"
+        },
+        "source_catalog_path": {
+          "const": "data/catalog/osaka_phase13_sources.json"
+        },
+        "policy_structure_path": {
+          "const": "data/catalog/osaka_current_policy_structure.json"
+        },
+        "progress_review_path": {
+          "const": "data/catalog/osaka_current_progress_review_summary.json"
+        },
+        "fiscal_records_path": {
+          "const": "data/reviewed/osaka-city/fiscal_records.json"
+        },
+        "fiscal_evidence_path": {
+          "const": "data/reviewed/osaka-city/evidence_packets.json"
+        },
+        "counts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "basic_concept_urban_visions",
+            "annual_policy_domains",
+            "annual_policy_initiative_headings",
+            "ward_operating_policy_lanes",
+            "bureau_office_lanes_listed",
+            "joint_prefecture_city_bureaus",
+            "fiscal_top_line_records"
+          ],
+          "properties": {
+            "basic_concept_urban_visions": {
+              "const": 3
+            },
+            "annual_policy_domains": {
+              "const": 4
+            },
+            "annual_policy_initiative_headings": {
+              "const": 15
+            },
+            "ward_operating_policy_lanes": {
+              "const": 24
+            },
+            "bureau_office_lanes_listed": {
+              "const": 28
+            },
+            "joint_prefecture_city_bureaus": {
+              "const": 2
+            },
+            "fiscal_top_line_records": {
+              "const": 3
+            }
+          }
+        }
+      }
+    },
+    "quality_gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 12,
+      "patternProperties": {
+        "^[a-z0-9_]+$": {
+          "const": true
+        }
+      }
+    },
+    "deferred_depth": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "status",
+          "boundary"
+        ],
+        "properties": {
+          "id": {
+            "enum": [
+              "ward-bureau-record-detail",
+              "fy2026-policy-to-operating-policy-linkage",
+              "fy2026-current-result",
+              "budget-project-detail",
+              "fiscal-detail-policy-project-linkage",
+              "policy-outcome-causal-and-cross-city-comparability"
+            ]
+          },
+          "status": {
+            "const": "deferred_not_required_for_v1_completion"
+          },
+          "boundary": {
+            "type": "string",
+            "minLength": 20
+          }
+        }
+      }
+    },
+    "completion_boundary": {
+      "type": "string",
+      "minLength": 300
+    }
+  }
+}

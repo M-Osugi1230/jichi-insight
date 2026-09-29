@@ -1,0 +1,34 @@
+{
+  "id": "kumamoto-current-progress-review-summary",
+  "phase": 13,
+  "official_code": "431001",
+  "name_ja": "熊本市",
+  "reporting_fiscal_year": 2024,
+  "review_status": "reviewed_current_plan_administrative_evaluation_and_deliberation_roles",
+  "source_id": "kumamoto-fy2024-administrative-evaluation",
+  "administrative_evaluation": {
+    "plan_version": "熊本市第8次総合計画",
+    "fiscal_year": 2024,
+    "status": "published",
+    "evidence_role": "municipal_administrative_evaluation",
+    "materials": [
+      "令和6年度行政評価について",
+      "指標一覧",
+      "行政評価シート"
+    ],
+    "boundary": "熊本市によるsource-reported evaluation。進捗記号・評価結果をJichi Insight独自評価へ変換しない。"
+  },
+  "deliberative_review": {
+    "actor": "熊本市総合計画審議会",
+    "meeting_date": "2025-08-18",
+    "evidence_role": "external_deliberative_review",
+    "subject": "第8次総合計画の令和6年度評価・検証（行政評価）",
+    "boundary": "審議会による審議を行政自己評価と別Accountability roleとして保持する。"
+  },
+  "indicator_evidence": {
+    "status": "published",
+    "includes": "基準値・年度実績・検証値・進捗",
+    "boundary": "個別指標一覧は追加depth。source-reported進捗分類を独自達成率へ集約しない。"
+  },
+  "quality_boundary": "現行計画FY2024の行政評価・指標Evidence・審議会審議を別roleで保持する。評価主体の違いを消さず、統合スコア、因果効果、都市間ランキングへ変換しない。"
+}

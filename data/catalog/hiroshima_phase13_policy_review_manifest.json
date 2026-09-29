@@ -1,0 +1,102 @@
+{
+  "id": "hiroshima-phase13-policy-review-manifest",
+  "phase": 13,
+  "official_code": "341002",
+  "name_ja": "広島市",
+  "status": "review_in_progress",
+  "reviewed_at": "2026-09-29",
+  "source_catalog_path": "data/catalog/hiroshima_phase13_sources.json",
+  "plan_review_path": "data/reviewed/hiroshima-city/plan_review.json",
+  "policy_structure_path": "data/catalog/hiroshima_current_policy_structure.json",
+  "progress_review_path": "data/catalog/hiroshima_current_progress_availability.json",
+  "fiscal_records_path": "data/reviewed/hiroshima-city/fiscal_records.json",
+  "fiscal_evidence_path": "data/reviewed/hiroshima-city/evidence_packets.json",
+  "reviewed_facts": [
+    {
+      "id": "hiroshima-plan-layers",
+      "layer": "current_plan",
+      "field": "plan_layer_count",
+      "value": 3,
+      "unit": "layers",
+      "source_id": "hiroshima-sixth-basic-plan",
+      "review_status": "reviewed",
+      "interpretation_boundary": "基本構想・基本計画・実施計画を分離。"
+    },
+    {
+      "id": "hiroshima-basic-plan-period",
+      "layer": "current_plan",
+      "field": "basic_plan_period",
+      "value": "2020年度～2030年度",
+      "source_id": "hiroshima-sixth-basic-plan",
+      "review_status": "reviewed",
+      "interpretation_boundary": "長期計画。"
+    },
+    {
+      "id": "hiroshima-implementation-period",
+      "layer": "implementation_plan",
+      "field": "period",
+      "value": "2025年度～2030年度",
+      "source_id": "hiroshima-implementation-plan-2025-2030",
+      "review_status": "reviewed",
+      "interpretation_boundary": "current midterm implementation layer。"
+    },
+    {
+      "id": "hiroshima-pdca",
+      "layer": "progress_governance",
+      "field": "model",
+      "value": "kpi_external_input_pdca",
+      "source_id": "hiroshima-pdca-current",
+      "review_status": "reviewed",
+      "interpretation_boundary": "governanceをannual resultへ読み替えない。"
+    },
+    {
+      "id": "hiroshima-separate-result",
+      "layer": "annual_progress",
+      "field": "status",
+      "value": "not_separately_identified_in_declared_v1_sources",
+      "source_id": "hiroshima-pdca-current",
+      "review_status": "reviewed_boundary",
+      "interpretation_boundary": "未接続を明示。"
+    },
+    {
+      "id": "hiroshima-budget",
+      "layer": "fiscal",
+      "field": "general_account_initial_budget",
+      "fiscal_year": 2026,
+      "value": 794011359000,
+      "unit": "yen",
+      "source_id": "hiroshima-budget-2026",
+      "review_status": "reviewed",
+      "interpretation_boundary": "議会可決initial budget。"
+    },
+    {
+      "id": "hiroshima-revenue",
+      "layer": "fiscal",
+      "field": "general_account_settlement_revenue",
+      "fiscal_year": 2024,
+      "value": 720118240000,
+      "unit": "yen_10k_source_precision",
+      "source_id": "hiroshima-settlement-2024",
+      "review_status": "reviewed",
+      "interpretation_boundary": "万円単位公表。"
+    },
+    {
+      "id": "hiroshima-expenditure",
+      "layer": "fiscal",
+      "field": "general_account_settlement_expenditure",
+      "fiscal_year": 2024,
+      "value": 716676720000,
+      "unit": "yen_10k_source_precision",
+      "source_id": "hiroshima-settlement-2024",
+      "review_status": "reviewed",
+      "interpretation_boundary": "万円単位公表。"
+    }
+  ],
+  "remaining_work": [
+    "実施計画のKPI・参考数値を完全個票化する。",
+    "実施計画の事務事業・概算事業費・財源を完全個票化する。",
+    "独立した現行annual result packageを公式に識別できた場合にResult laneへ追加する。",
+    "政策・事業と補正・執行・決算・契約・補助金を個票接続する。"
+  ],
+  "quality_boundary": "Hiroshima Phase 13 v1 reviews the three-layer planning system, 2020-2030 basic-plan period, 2025-2030 current implementation plan/local-revitalization strategy, KPI/external-input PDCA governance, explicit boundary for a separately identified current annual-result package, and three fiscal top lines. Governance is not converted to result; no achievement, causal, or cross-city judgment is inferred."
+}

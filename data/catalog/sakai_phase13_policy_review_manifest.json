@@ -1,0 +1,104 @@
+{
+  "id": "sakai-phase13-policy-review-manifest",
+  "phase": 13,
+  "official_code": "271403",
+  "name_ja": "堺市",
+  "status": "review_in_progress",
+  "reviewed_at": "2026-09-29",
+  "source_catalog_path": "data/catalog/sakai_phase13_sources.json",
+  "plan_review_path": "data/reviewed/sakai-city/plan_review.json",
+  "policy_structure_path": "data/catalog/sakai_current_policy_structure.json",
+  "progress_review_path": "data/catalog/sakai_current_progress_availability.json",
+  "fiscal_records_path": "data/reviewed/sakai-city/fiscal_records.json",
+  "fiscal_evidence_path": "data/reviewed/sakai-city/evidence_packets.json",
+  "reviewed_facts": [
+    {
+      "id": "sakai-plan-period",
+      "layer": "current_plan",
+      "field": "period",
+      "value": "2026年度～2030年度",
+      "source_id": "sakai-basic-plan-2030",
+      "review_status": "reviewed",
+      "interpretation_boundary": "2035 horizonと計画期間を分離。"
+    },
+    {
+      "id": "sakai-kgi",
+      "layer": "current_plan",
+      "field": "kgi_count",
+      "value": 3,
+      "unit": "KGI",
+      "source_id": "sakai-basic-plan-2030-kpi",
+      "review_status": "reviewed_structure",
+      "interpretation_boundary": "個別値全件レビューは追加depth。"
+    },
+    {
+      "id": "sakai-strategies",
+      "layer": "current_plan",
+      "field": "priority_strategy_count",
+      "value": 5,
+      "unit": "strategies",
+      "source_id": "sakai-basic-plan-2030-kpi",
+      "review_status": "reviewed_structure",
+      "interpretation_boundary": "27施策の上位構造。"
+    },
+    {
+      "id": "sakai-measures",
+      "layer": "current_plan",
+      "field": "measure_count",
+      "value": 27,
+      "unit": "measures",
+      "source_id": "sakai-basic-plan-2030-kpi",
+      "review_status": "reviewed_structure",
+      "interpretation_boundary": "KPI候補数とは同一視しない。"
+    },
+    {
+      "id": "sakai-current-result",
+      "layer": "annual_progress",
+      "field": "status",
+      "value": "not_yet_available",
+      "source_id": "sakai-basic-plan-2030",
+      "review_status": "reviewed_availability",
+      "interpretation_boundary": "旧計画Resultを代替しない。"
+    },
+    {
+      "id": "sakai-budget",
+      "layer": "fiscal",
+      "field": "general_account_initial_budget",
+      "fiscal_year": 2026,
+      "value": 521700000000,
+      "unit": "yen",
+      "source_id": "sakai-budget-2026",
+      "review_status": "reviewed",
+      "interpretation_boundary": "initial budget。"
+    },
+    {
+      "id": "sakai-settlement-revenue",
+      "layer": "fiscal",
+      "field": "general_account_settlement_revenue",
+      "fiscal_year": 2024,
+      "value": 477935503067,
+      "unit": "yen",
+      "source_id": "sakai-settlement-2024-audit",
+      "review_status": "reviewed",
+      "interpretation_boundary": "settlement exact。"
+    },
+    {
+      "id": "sakai-settlement-expenditure",
+      "layer": "fiscal",
+      "field": "general_account_settlement_expenditure",
+      "fiscal_year": 2024,
+      "value": 470108227969,
+      "unit": "yen",
+      "source_id": "sakai-settlement-2024-audit",
+      "review_status": "reviewed",
+      "interpretation_boundary": "settlement exact。"
+    }
+  ],
+  "remaining_work": [
+    "個別KPI・目標値・実績値を全件レビューする。",
+    "27施策配下の事業identityと予算を細粒度接続する。",
+    "現行計画の最初の年度実績公表後にResult laneを追加する。",
+    "旧2025計画と2030計画のversioned linkageはEvidence確認後のみ昇格する。"
+  ],
+  "quality_boundary": "Sakai Phase 13 v1 reviews the 2026-2030 top-level plan, 3 KGI / 5 priority strategies / 27 measures, annual KPI-PDCA governance, explicit unavailability of completed current-plan annual results, and three general-account fiscal top lines. Legacy 2025-plan progress is not reused as current actual. No independent achievement, causal, or cross-city judgment is inferred."
+}

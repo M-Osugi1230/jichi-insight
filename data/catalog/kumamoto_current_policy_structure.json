@@ -1,0 +1,41 @@
+{
+  "id": "kumamoto-current-policy-structure",
+  "phase": 13,
+  "official_code": "431001",
+  "name_ja": "熊本市",
+  "review_status": "reviewed_current_plan_and_fy2026_action_plan_structure",
+  "plan_period": "2024年度～2031年度",
+  "source_id": "kumamoto-eighth-plan",
+  "hierarchy": {
+    "plan_layers": 3,
+    "vision_count": 8
+  },
+  "plan_layers": [
+    "基本構想",
+    "基本計画",
+    "アクションプラン"
+  ],
+  "action_plan_semantics": {
+    "frequency": "annual",
+    "source_id": "kumamoto-action-plan-2026",
+    "contains": [
+      "当該年度の重点事項",
+      "基本計画に掲げた施策の具体的な事業",
+      "検証指標"
+    ],
+    "inputs": [
+      "国の動き",
+      "社会経済情勢",
+      "市民ニーズ",
+      "行政評価の結果"
+    ],
+    "budget_alignment": true
+  },
+  "fy2026_priority_items": [
+    "災害への備えと対応力の強化",
+    "総合的なこども施策の推進",
+    "交通渋滞の解消及び公共交通施策の加速化",
+    "半導体関連企業の熊本進出に伴う諸課題への対応"
+  ],
+  "quality_boundary": "3層・8ビジョン・FY2026の4重点事項とannual action-plan semanticsをReviewed化する。各ビジョン配下の施策・具体事業・検証指標の完全個票化は追加depth。"
+}

@@ -1,0 +1,113 @@
+{
+  "id": "okayama-phase13-policy-review-manifest",
+  "phase": 13,
+  "official_code": "331007",
+  "name_ja": "岡山市",
+  "status": "review_in_progress",
+  "reviewed_at": "2026-09-29",
+  "source_catalog_path": "data/catalog/okayama_phase13_sources.json",
+  "plan_review_path": "data/reviewed/okayama-city/plan_review.json",
+  "policy_structure_path": "data/catalog/okayama_current_policy_structure.json",
+  "progress_review_path": "data/catalog/okayama_current_progress_availability.json",
+  "fiscal_records_path": "data/reviewed/okayama-city/fiscal_records.json",
+  "fiscal_evidence_path": "data/reviewed/okayama-city/evidence_packets.json",
+  "reviewed_facts": [
+    {
+      "id": "okayama-long-term",
+      "layer": "current_plan",
+      "field": "long_term_period",
+      "value": "2026年度～2035年度",
+      "source_id": "okayama-seventh-plan",
+      "review_status": "reviewed",
+      "interpretation_boundary": "前期中期計画と期間分離。"
+    },
+    {
+      "id": "okayama-midterm",
+      "layer": "current_plan",
+      "field": "first_midterm_period",
+      "value": "2026年度～2030年度",
+      "source_id": "okayama-seventh-plan",
+      "review_status": "reviewed",
+      "interpretation_boundary": "現行5年実行方向。"
+    },
+    {
+      "id": "okayama-directions",
+      "layer": "current_plan",
+      "field": "basic_directions",
+      "value": 8,
+      "unit": "directions",
+      "source_id": "okayama-seventh-plan",
+      "review_status": "reviewed_structure",
+      "interpretation_boundary": "7政策分野＋都市経営。"
+    },
+    {
+      "id": "okayama-policies",
+      "layer": "current_plan",
+      "field": "policies",
+      "value": 30,
+      "unit": "policies",
+      "source_id": "okayama-seventh-plan",
+      "review_status": "reviewed_structure",
+      "interpretation_boundary": "各政策に成果指標。"
+    },
+    {
+      "id": "okayama-measures",
+      "layer": "current_plan",
+      "field": "measures",
+      "value": 99,
+      "unit": "measures",
+      "source_id": "okayama-seventh-plan",
+      "review_status": "reviewed_structure",
+      "interpretation_boundary": "個別取組は追加depth。"
+    },
+    {
+      "id": "okayama-current-result",
+      "layer": "annual_progress",
+      "field": "status",
+      "value": "not_yet_available",
+      "source_id": "okayama-current-progress-governance",
+      "review_status": "reviewed_availability",
+      "interpretation_boundary": "初年度Resultを推測しない。"
+    },
+    {
+      "id": "okayama-budget",
+      "layer": "fiscal",
+      "field": "general_account_initial_budget",
+      "fiscal_year": 2026,
+      "value": 429863380000,
+      "unit": "yen_source_precision",
+      "source_id": "okayama-budget-2026-enacted",
+      "review_status": "reviewed",
+      "interpretation_boundary": "4,298億6,338万円余。"
+    },
+    {
+      "id": "okayama-revenue",
+      "layer": "fiscal",
+      "field": "general_account_settlement_revenue",
+      "fiscal_year": 2024,
+      "value": 406500000000,
+      "unit": "yen_rounded_source",
+      "source_id": "okayama-settlement-2024",
+      "review_status": "reviewed",
+      "interpretation_boundary": "4,065億円余。"
+    },
+    {
+      "id": "okayama-expenditure",
+      "layer": "fiscal",
+      "field": "general_account_settlement_expenditure",
+      "fiscal_year": 2024,
+      "value": 387700000000,
+      "unit": "yen_rounded_source",
+      "source_id": "okayama-settlement-2024",
+      "review_status": "reviewed",
+      "interpretation_boundary": "3,877億円余。"
+    }
+  ],
+  "remaining_work": [
+    "30政策の成果指標と99施策の取組を完全個票化する。",
+    "2026年度完了後の最初の年度評価を追加する。",
+    "区別計画の重点施策を完全構造化する。",
+    "個別政策・施策と予算・決算・契約を公式Evidenceで接続する。"
+  ],
+  "quality_boundary": "Okayama Phase 13 v1 reviews the 2026-2035 long-term plan and 2026-2030 first midterm plan, 4 perspectives / 8 basic directions / 30 policies / 99 measures, annual PDCA governance, explicit first-cycle result unavailability, and three fiscal top lines at the precision published by official sources. No prior-plan result, false precision, independent achievement, causal, or cross-city judgment is inferred."
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "evidence-kumamoto-2026-budget",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-431001-fiscal-2026-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算は4,378億4千万円で、定例会において原案どおり可決された。",
+        "source_ids": [
+          "kumamoto-budget-2026-proposal",
+          "kumamoto-budget-2026-enacted"
+        ],
+        "location_note": "市長提案理由の予算規模および3月24日定例会後会見。",
+        "decision": "accepted",
+        "review_note": "437,840,000,000円として保存。proposalとenacted stateを分離してlineageを保持。"
+      }
+    ],
+    "open_questions": [
+      "後続補正はinitial_budgetを上書きせずrevised stateで追加する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-2024-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-431001-fiscal-2024-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計歳入総額は4,287億3,024万円。",
+        "source_ids": [
+          "kumamoto-settlement-2024"
+        ],
+        "location_note": "令和6年度の決算概要 1ページ『一般会計の決算』。",
+        "decision": "accepted",
+        "review_note": "428,730,240,000円として保存。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-2024-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-431001-fiscal-2024-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計歳出総額は4,197億1,209万円。",
+        "source_ids": [
+          "kumamoto-settlement-2024"
+        ],
+        "location_note": "令和6年度の決算概要 1ページ『一般会計の決算』。",
+        "decision": "accepted",
+        "review_note": "419,712,090,000円として保存。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]

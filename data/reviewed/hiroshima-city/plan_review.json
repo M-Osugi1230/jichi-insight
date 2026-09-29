@@ -1,0 +1,47 @@
+{
+  "id": "phase13-hiroshima-plan-review",
+  "official_code": "341002",
+  "name_ja": "広島市",
+  "review_status": "review_in_progress_current_layers_and_pdca_boundary_reviewed",
+  "reviewed_at": "2026-09-29",
+  "records": [
+    {
+      "id": "hiroshima-plan-layers",
+      "evidence_role": "current_plan_identity",
+      "title": "広島市総合計画体系",
+      "statement": "基本構想・基本計画・実施計画の3層で構成され、第6次基本計画は2020～2030年度。",
+      "value": 3,
+      "unit": "plan_layers",
+      "source_id": "hiroshima-sixth-basic-plan",
+      "evidence_location": "公式『広島市総合計画の体系』",
+      "reviewed_data_path": "data/catalog/hiroshima_current_policy_structure.json",
+      "decision": "accepted",
+      "review_note": "各layerのEvidence roleを分離。"
+    },
+    {
+      "id": "hiroshima-current-implementation",
+      "evidence_role": "current_implementation_plan",
+      "title": "広島市実施計画(2025－2030)",
+      "statement": "現行実施計画は2025～2030年度で、第3期地方創生総合戦略を兼ねる。",
+      "value": "2025年度～2030年度",
+      "source_id": "hiroshima-implementation-plan-2025-2030",
+      "evidence_location": "公式実施計画ページ",
+      "decision": "accepted",
+      "review_note": "旧2020～2024実施計画とversion分離。"
+    },
+    {
+      "id": "hiroshima-progress-governance",
+      "evidence_role": "current_progress_governance",
+      "title": "PDCAサイクル",
+      "statement": "KPI等を基に効果を整理分析し外部関係者の意見を踏まえて検証し必要に応じ計画改訂する。",
+      "value": "kpi_external_input_pdca",
+      "source_id": "hiroshima-pdca-current",
+      "evidence_location": "『PDCAサイクルの実施』",
+      "reviewed_data_path": "data/catalog/hiroshima_current_progress_availability.json",
+      "decision": "accepted_governance_boundary",
+      "review_note": "独立annual result packageとは同一視しない。"
+    }
+  ],
+  "quality_boundary": "plan layer、実施計画version、PDCA governanceを分離。v1で独立識別できないannual Result、個別KPI・事業・財政接続、独自達成度・因果評価・比較可能性は別レビュー。",
+  "next_action": "Add FY2026 enacted initial-budget and FY2024 settlement top lines, then define Hiroshima v1 completion package."
+}

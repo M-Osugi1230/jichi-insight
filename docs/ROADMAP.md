@@ -134,7 +134,7 @@ Phase 12の`source_inventory_complete`は、すべての期待資料がすでに
 
 ## Phase 13 — Designated-city record review
 
-Status: `in_progress`
+Status: `complete`（2026-09-29）
 
 Phase 12完了により、北九州市・福岡市の2市をReviewed referenceとして保持しつつ、残る18市すべてが個票レベルのreview queueへ入りました。Phase 12由来のblocked source inventoryは0です。
 
@@ -142,9 +142,9 @@ Canonical queue（2026-09-28同期）:
 
 - Reviewed reference: 2市（北九州市、福岡市）
 - Review queue eligible: 18市
-- Reviewed complete: 12市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市、浜松市、名古屋市、京都市）
-- Review in progress: 1市（大阪市）
-- Pending record review: 5市
+- Reviewed complete: 18市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市、浜松市、名古屋市、京都市、大阪市、堺市、神戸市、岡山市、広島市、熊本市）
+- Review in progress: 0市
+- Pending record review: 0市
 - Blocked source inventory: 0市
 
 状態の正本は `data/catalog/phase13_designated_city_review_queue.json` です。文書上の集計とmachine-readable queueが競合する場合はqueueを優先します。
@@ -490,27 +490,145 @@ Status: `complete`（2026-09-28）
 - `data/reviewed/kyoto-city/fiscal_records.json`
 - `tests/test_phase13_kyoto_completion.py`
 
-### Current work — Osaka record review
+### Milestone M14 — Osaka reviewed complete
 
-Status: `in_progress`
+Status: `complete`（2026-09-29）
 
-京都市のReviewed completionにより、Canonical queueの次対象は大阪市（271004）です。Phase 12で確定した公式Source Inventoryを起点に、現行計画identity、実施・進行管理層、成果指標、財政、version boundaryをEvidence付きでレビューします。
+大阪市は`declared_review_package_v1`としてReviewed completeです。
 
-公式一次資料・version・期間・財政state・評価主体を分離し、未公開Evidenceを推測補完しません。Schema、Evidence coverage、回帰テストを通過するまで市単位のPhase 13完了を宣言しません。
+- Basic concept urban visions: 3
+- FY2026 annual city-policy domains: 4
+- FY2026 initiative headings: 15
+- Ward operating-policy lanes: 24
+- Listed bureau/office lanes: 28（うち府市共同設置2局）
+- Latest completed operating-policy self-evaluation: FY2025
+- FY2026 general-account initial budget: 2,188,221,000,000円
+- FY2024 general-account settlement: 歳入2,090,062,147,558円 / 歳出2,065,562,115,148円
+- Fiscal top-line records: 3
+
+大阪市は単一の多年度実施計画ではなく、基本構想、年度市政運営方針、区・局の年度運営方針・自己評価という分散型構造を持つため、その構造をそのまま保持します。FY2025自己評価をFY2026 actualへ流用せず、24区・各局のsource-reported evaluationを全市統合スコアへ変換しません。個別区・局の指標・実績・自己評価、FY2026方針との細粒度linkage、FY2026通年Result、個別財政接続は`deferred_depth`として明示します。
 
 正本:
 
+- `data/catalog/osaka_phase13_completion.json`
+- `schemas/osaka_phase13_completion.schema.json`
+- `data/catalog/osaka_phase13_policy_review_manifest.json`
+- `data/catalog/osaka_current_policy_structure.json`
+- `data/catalog/osaka_current_progress_review_summary.json`
+- `data/reviewed/osaka-city/plan_review.json`
+- `data/reviewed/osaka-city/fiscal_records.json`
+- `tests/test_phase13_osaka_completion.py`
+
+### Milestone M15 — Sakai reviewed complete
+
+Status: `complete`（2026-09-29）
+
+堺市は`declared_review_package_v1`としてReviewed completeです。
+
+- Current top-level plan: 堺市基本計画2030（2026〜2030年度）
+- KGI: 3
+- Priority strategies: 5
+- Measures: 27
+- Current completed annual results: 0（not_yet_available）
+- FY2026 general-account initial budget: 521,700,000,000円
+- FY2024 general-account settlement: 歳入477,935,503,067円 / 歳出470,108,227,969円
+
+旧基本計画2025の進捗を現行2030計画のactualへ流用しません。個別KPI・事業・versioned linkage・個別財政接続は`deferred_depth`として保持します。
+
+### Milestone M16 — Kobe reviewed complete
+
+Status: `complete`（2026-09-29）
+
+神戸市は`declared_review_package_v1`としてReviewed completeです。
+
+- Sixth Basic Plan: 2026〜2035年度
+- Kobe 2030 Vision: 2026〜2030年度
+- Current directions: 3
+- Progress governance: annual external-expert review
+- Current completed annual results: 0（not_yet_available）
+- FY2026 general-account initial budget: 977,781,231,000円
+- FY2024 general-account settlement: 歳入945,588,848,718円 / 歳出930,659,433,328円
+
+初年度Resultを予算や旧計画から推測せず、KGI/KPI linkage、個別事業、年度Result、個別財政接続は`deferred_depth`として保持します。
+
+### Milestone M17 — Okayama reviewed complete
+
+Status: `complete`（2026-09-29）
+
+岡山市は`declared_review_package_v1`としてReviewed completeです。
+
+- Seventh Comprehensive Plan long-term: 2026〜2035年度
+- First midterm plan: 2026〜2030年度
+- Perspectives: 4
+- Basic directions: 8
+- Policies: 30
+- Measures: 99
+- Current completed annual results: 0（not_yet_available）
+- FY2026 general-account initial budget: 4,298億6,338万円余
+- FY2024 general-account settlement: 歳入4,065億円余 / 歳出3,877億円余
+
+公式資料の「余」を偽の円単位精度へ昇格せず、個別成果指標・取組・区別計画・最初の年度評価・個別財政接続は`deferred_depth`として保持します。
+
+### Milestone M18 — Hiroshima reviewed complete
+
+Status: `complete`（2026-09-29）
+
+広島市は`declared_review_package_v1`としてReviewed completeです。
+
+- Planning layers: 3（基本構想・基本計画・実施計画）
+- Sixth Basic Plan: 2020〜2030年度
+- Current implementation plan: 2025〜2030年度
+- Progress governance: KPI + external-input PDCA
+- Separately identified current annual-result package: 0（v1 source set）
+- FY2026 general-account initial budget: 794,011,359,000円
+- FY2024 general-account settlement: 歳入720,118,240,000円 / 歳出716,676,720,000円（万円単位公表）
+
+PDCA governanceをannual Resultそのものへ読み替えず、KPI・事務事業・改訂履歴・個別財政接続は`deferred_depth`として保持します。
+
+### Milestone M19 — Kumamoto reviewed complete
+
+Status: `complete`（2026-09-29）
+
+熊本市は`declared_review_package_v1`としてReviewed completeです。
+
+- Eighth Comprehensive Plan: 2024〜2031年度
+- Planning layers: 3
+- Visions: 8
+- FY2026 Action Plan priority items: 4
+- Current-plan FY2024 administrative evaluation: published
+- Accountability roles: municipal administrative evaluation / Comprehensive Plan Council deliberation
+- FY2026 general-account initial budget: 437,840,000,000円（原案どおり可決）
+- FY2024 general-account settlement: 歳入428,730,240,000円 / 歳出419,712,090,000円
+
+行政評価と審議会審議を別Evidence roleとして保持し、source-reported進捗をJichi Insight独自の政策達成度へ変換しません。個別施策・指標・評価シート、FY2026事業、複数年度Result系列、個別財政接続は`deferred_depth`として保持します。
+
+### Phase 13 completion gate
+
+Status: `complete`（2026-09-29）
+
+- Designated cities: 20 / 20
+- Reviewed reference: 2
+- Execution queue reviewed complete: 18 / 18
+- Review in progress: 0
+- Pending record review: 0
+- Blocked source inventory: 0
+- Independent policy-achievement assessments: 0
+- Causal-attribution promotions: 0
+- Unverified cross-city rankings: 0
+
+正本:
+
+- `data/catalog/phase13_completion.json`
+- `schemas/phase13_completion.schema.json`
 - `data/catalog/phase13_designated_city_review_queue.json`
-- `data/catalog/*_phase13_policy_review_manifest.json`
-- `data/catalog/*_phase13_completion.json`
-- `data/evidence/*_evidence.json`
-- `tests/test_phase13_*.py`
+- `schemas/phase13_designated_city_review_queue.schema.json`
+- `tests/test_phase13_completion.py`
+- `tests/test_phase13_designated_city_review_queue.py`
 
 ## After Phase 13
 
-1. 大阪市をReviewed completeへ進め、その後の5市を順次Reviewed到達深度まで処理し、全20政令指定都市の市レベル基盤を完成させる
-2. 中核市・県庁所在地
-3. その他市区町村
-4. 選挙・候補者比較
-5. API、データダウンロード、研究・報道向け機能
-6. 比較可能性が確認された指標だけを用いた比較機能
+1. 中核市・県庁所在地
+2. その他市区町村
+3. 選挙・候補者比較
+4. API、データダウンロード、研究・報道向け機能
+5. 比較可能性が確認された指標だけを用いた比較機能

@@ -1,0 +1,48 @@
+{
+  "id": "phase13-kumamoto-plan-review",
+  "official_code": "431001",
+  "name_ja": "熊本市",
+  "review_status": "review_in_progress_current_plan_action_and_progress_reviewed",
+  "reviewed_at": "2026-09-29",
+  "records": [
+    {
+      "id": "kumamoto-current-plan",
+      "evidence_role": "current_plan_identity",
+      "title": "熊本市第8次総合計画",
+      "statement": "現行計画は2024年度から2031年度までの8年間で、基本構想・基本計画・アクションプランの3層、8ビジョンで構成される。",
+      "value": 8,
+      "unit": "visions",
+      "source_id": "kumamoto-eighth-plan",
+      "evidence_location": "公式ページ『第8次総合計画とは』『計画の構成』『8つのビジョン』",
+      "reviewed_data_path": "data/catalog/kumamoto_current_policy_structure.json",
+      "decision": "accepted",
+      "review_note": "毎年度Action Planとはlayerを分離。"
+    },
+    {
+      "id": "kumamoto-fy2026-action-plan",
+      "evidence_role": "current_annual_implementation_plan",
+      "title": "令和8年度アクションプラン",
+      "statement": "FY2026は4重点事項を掲げ、具体事業・検証指標を予算編成と整合させる。",
+      "value": 4,
+      "unit": "priority_items",
+      "source_id": "kumamoto-action-plan-2026",
+      "evidence_location": "公式ページ『令和8年度アクションプラン』",
+      "decision": "accepted",
+      "review_note": "FY2026通年Resultそのものではない。"
+    },
+    {
+      "id": "kumamoto-fy2024-evaluation",
+      "evidence_role": "current_annual_progress",
+      "title": "令和6年度行政評価",
+      "statement": "現行第8次総合計画のFY2024評価・検証が公表され、総合計画審議会で審議された。",
+      "value": "published",
+      "source_id": "kumamoto-fy2024-administrative-evaluation",
+      "evidence_location": "総合計画審議会公式ページ・会議資料",
+      "reviewed_data_path": "data/catalog/kumamoto_current_progress_review_summary.json",
+      "decision": "accepted_current_plan_progress",
+      "review_note": "行政評価と審議会審議を別roleで保持。"
+    }
+  ],
+  "quality_boundary": "現行第8次総合計画、FY2026 Action、FY2024 Result/administrative evaluationを年度・evidence role別にReviewed化した。個別施策・指標・評価シート・事業、FY2026通年Result、個別財政接続、因果評価、独自達成度、他都市比較可能性は別レビュー単位。",
+  "next_action": "Add enacted FY2026 budget and FY2024 settlement top lines, then define Kumamoto v1 completion package."
+}

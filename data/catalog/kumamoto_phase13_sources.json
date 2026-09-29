@@ -1,0 +1,81 @@
+{
+  "id": "kumamoto-phase13-sources",
+  "phase": 13,
+  "official_code": "431001",
+  "name_ja": "熊本市",
+  "reviewed_at": "2026-09-29",
+  "records": [
+    {
+      "id": "kumamoto-eighth-plan",
+      "layer": "current_plan",
+      "title": "熊本市第8次総合計画",
+      "organization": "熊本市",
+      "url": "https://www.city.kumamoto.jp/kiji00361129/",
+      "source_kind": "html",
+      "review_status": "reviewed_current_plan_and_action_plan_structure",
+      "confidence": "high",
+      "boundary": "2024～2031年度の現行最上位計画。基本構想・基本計画・毎年度アクションプランの3層、8ビジョンを確認。"
+    },
+    {
+      "id": "kumamoto-action-plan-2026",
+      "layer": "implementation_plan",
+      "title": "令和8年度アクションプラン",
+      "organization": "熊本市",
+      "url": "https://www.city.kumamoto.jp/kiji00361129/",
+      "source_kind": "html_and_linked_pdf",
+      "fiscal_year": 2026,
+      "review_status": "reviewed_current_annual_action_plan",
+      "confidence": "high",
+      "boundary": "4重点事項、具体事業・検証指標を含み、行政評価結果と予算編成との整合を図り毎年度策定。"
+    },
+    {
+      "id": "kumamoto-fy2024-administrative-evaluation",
+      "layer": "annual_progress",
+      "title": "令和6年度行政評価・第8次総合計画の評価検証",
+      "organization": "熊本市",
+      "url": "https://www.city.kumamoto.jp/kiji00365832/index.html",
+      "source_kind": "html_and_linked_documents",
+      "fiscal_year": 2024,
+      "review_status": "reviewed_current_plan_progress_route",
+      "confidence": "high",
+      "boundary": "現行第8次総合計画のFY2024評価・検証。指標一覧・行政評価シート・審議会審議を別Evidence roleで保持する。"
+    },
+    {
+      "id": "kumamoto-budget-2026-proposal",
+      "layer": "budget_proposal",
+      "title": "令和8年度当初予算案",
+      "organization": "熊本市",
+      "url": "https://www.city.kumamoto.jp/sicho/kiji00369308/index.html",
+      "source_kind": "html",
+      "fiscal_year": 2026,
+      "review_status": "reviewed_proposal_exact_amount",
+      "confidence": "high",
+      "boundary": "一般会計4,378億4千万円のproposal-stage value。"
+    },
+    {
+      "id": "kumamoto-budget-2026-enacted",
+      "layer": "budget",
+      "title": "令和8年度当初予算案 原案どおり可決",
+      "organization": "熊本市",
+      "url": "https://www.city.kumamoto.jp/sicho/kiji00370052/index.html",
+      "source_kind": "html",
+      "fiscal_year": 2026,
+      "review_status": "reviewed_enacted_state",
+      "confidence": "high",
+      "boundary": "第1回定例会で令和8年度当初予算案を原案どおり可決。proposal amountのenacted-state lineageを確認。"
+    },
+    {
+      "id": "kumamoto-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度の決算概要",
+      "organization": "熊本市",
+      "url": "https://www.city.kumamoto.jp/kiji0032422/3_2422_483364_up_slomr3c4.pdf",
+      "source_kind": "pdf",
+      "fiscal_year": 2024,
+      "review_status": "reviewed_general_account_settlement_source_precision",
+      "confidence": "high",
+      "boundary": "一般会計総額：歳入4,287億3,024万円、歳出4,197億1,209万円。万円単位の公表精度を保持。"
+    }
+  ],
+  "quality_boundary": "第8次総合計画、毎年度アクションプラン、FY2024行政評価、審議会、proposal→enacted予算lineage、FY2024決算をEvidence role別に保持する。市の行政評価・指標進捗をJichi Insight独自の政策達成度へ変換せず、審議会審議と行政自己評価も統合しない。"
+}

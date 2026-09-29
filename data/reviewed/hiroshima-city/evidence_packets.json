@@ -1,0 +1,62 @@
+[
+  {
+    "id": "evidence-hiroshima-2026-budget",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2026-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算は7,940億1,135万9千円で、市議会が可決した。",
+        "source_ids": [
+          "hiroshima-budget-2026",
+          "hiroshima-budget-2026-enacted"
+        ],
+        "location_note": "令和8年度当初予算『予算規模』および市議会だより。",
+        "decision": "accepted",
+        "review_note": "794,011,359,000円として保存。"
+      }
+    ],
+    "open_questions": [
+      "後続補正は別state。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-2024-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2024-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計収入は7,201億1,824万円。",
+        "source_ids": [
+          "hiroshima-settlement-2024"
+        ],
+        "location_note": "市広報『令和6年度の決算を報告します』一般会計。",
+        "decision": "accepted",
+        "review_note": "720,118,240,000円相当、万円単位公表。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-2024-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2024-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計支出は7,166億7,672万円。",
+        "source_ids": [
+          "hiroshima-settlement-2024"
+        ],
+        "location_note": "市広報『令和6年度の決算を報告します』一般会計。",
+        "decision": "accepted",
+        "review_note": "716,676,720,000円相当、万円単位公表。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]
