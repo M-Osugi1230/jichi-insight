@@ -1,0 +1,63 @@
+{
+  "id": "phase14-fukushima-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "072010",
+  "standard_area_code": "07201",
+  "name_ja": "福島市",
+  "prefecture_name_ja": "福島県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city",
+    "prefectural_capital"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第6次福島市総合計画まちづくり基本ビジョン",
+    "start_fiscal_year": 2021,
+    "end_fiscal_year": 2026,
+    "period_status": "transition_or_unresolved"
+  },
+  "sources": [
+    {
+      "id": "fukushima-sixth-plan",
+      "layer": "comprehensive_plan",
+      "title": "第6次福島市総合計画まちづくり基本ビジョン",
+      "official_url": "https://www.city.fukushima.fukushima.jp/soshiki/2/1002/2/2/4195.html",
+      "status": "official_landing_verified",
+      "effective_period": "2021年度～2026年度",
+      "review_boundary": "現行計画が1年間延長されFY2026までとなったversion境界を保持し、次期計画へ先取り接続しない。"
+    },
+    {
+      "id": "fukushima-budget-plan-link",
+      "layer": "annual_implementation",
+      "title": "令和8年度予算",
+      "official_url": "https://www.city.fukushima.fukushima.jp/soshiki/4/1012/1/17263.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "延長された第6次総合計画を踏まえたFY2026年度方針と予算の公式入口。年度方針を通年実績とみなさない。"
+    },
+    {
+      "id": "fukushima-budget-overview",
+      "layer": "budget",
+      "title": "当初予算の概要",
+      "official_url": "https://www.city.fukushima.fukushima.jp/shisei/gyozaisei/1/11082.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算概要の公式入口。補正・執行・決算とstate分離する。"
+    },
+    {
+      "id": "fukushima-settlement-2024",
+      "layer": "settlement",
+      "title": "市政だよりに掲載された財政公表（決算）",
+      "official_url": "https://www.city.fukushima.fukushima.jp/soshiki/4/1012/1/1902.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算公表の公式入口。より詳細な決算書・監査資料はPhase 15で別Evidenceとして接続する。"
+    }
+  ],
+  "availability_boundary": "第6次総合計画は当初終期から1年延長され2026年度が最終年度。次期計画策定と現行計画延長版を同一versionにせず、FY2026方針・予算もcurrent Resultへ読み替えない。",
+  "quality_boundary": "This Phase 14 inventory verifies the extended 2021-2026 sixth comprehensive plan, FY2026 annual policy/budget routes, and FY2024 settlement publication. It preserves the transition-year boundary and does not infer current achievement, next-plan content, causal effects, or comparability from budget or planning material.",
+  "next_action": "Phase 15で延長版の施策・指標、FY2026重点方針、直近行政評価availability、予算・補正、FY2024決算・監査をversioned Evidenceとしてレビューする。",
+  "verified_at": "2026-09-29"
+}
