@@ -1,0 +1,72 @@
+{
+  "id": "phase14-akita-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "052019",
+  "standard_area_code": "05201",
+  "name_ja": "秋田市",
+  "prefecture_name_ja": "秋田県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city",
+    "prefectural_capital"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第15次秋田市総合計画（秋田市『プラスの循環』プラン）",
+    "start_fiscal_year": 2026,
+    "end_fiscal_year": 2030,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "akita-fifteenth-plan",
+      "layer": "comprehensive_plan",
+      "title": "第15次秋田市総合計画",
+      "official_url": "https://www.city.akita.lg.jp/shisei/hoshin-keikaku/1010701/1047065.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2030年度",
+      "review_boundary": "2026年度開始の現行総合計画のidentityと5年間の期間を確認する。個別施策・指標はPhase 15でレビューする。"
+    },
+    {
+      "id": "akita-plan-implementation-boundary",
+      "layer": "implementation_and_progress_design",
+      "title": "秋田市『プラスの循環』プラン",
+      "official_url": "https://www.city.akita.lg.jp/shisei/hoshin-keikaku/1010701/1047065.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2030年度",
+      "review_boundary": "現行計画ページを実施・進行管理の基準入口として保持する。独立した年度評価レコードの有無と内容はPhase 15で個別確認する。"
+    },
+    {
+      "id": "akita-budget-2026",
+      "layer": "budget",
+      "title": "当初予算案の概要",
+      "official_url": "https://www.city.akita.lg.jp/shisei/yosan-zaisei/1009189/1009191.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算案の公式入口。議決後state、補正、執行を別に扱う。"
+    },
+    {
+      "id": "akita-budget-book-2026",
+      "layer": "budget_document",
+      "title": "予算書・事項別明細書",
+      "official_url": "https://www.city.akita.lg.jp/shisei/yosan-zaisei/1009189/1019558.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026予算書・事項別明細書の公式入口。proposal-stage概要と予算書本体をEvidence role分離する。"
+    },
+    {
+      "id": "akita-settlement",
+      "layer": "settlement",
+      "title": "会計別決算状況",
+      "official_url": "https://www.city.akita.lg.jp/shisei/yosan-zaisei/1009189/1009200.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024を含む会計別決算の公式入口。Phase 15で会計・年度・source precisionを確認して構造化する。"
+    }
+  ],
+  "availability_boundary": "第15次総合計画は2026年度に開始したばかりで、現行計画の完了年度annual resultはまだ十分に蓄積されていない。計画構造と年度成果を混同せず、独立した評価資料はPhase 15でavailabilityを確認する。",
+  "quality_boundary": "This Phase 14 inventory verifies the 2026-2030 fifteenth comprehensive plan and official FY2026 budget and settlement entry points while explicitly keeping current-year result availability unresolved for record-level review. It does not infer annual achievement from plan text or budget documents and does not promote fiscal values or cross-city comparisons.",
+  "next_action": "Phase 15で第15次計画の施策・指標、現行年度の進行管理/評価availability、FY2026成立予算、FY2024決算をEvidence付き個票へ展開する。",
+  "verified_at": "2026-09-29"
+}
