@@ -1,0 +1,160 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.local/schemas/phase14_core_capital_execution_queue.schema.json",
+  "title": "Phase 14 core-city and prefectural-capital execution queue",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "phase",
+    "status",
+    "scope",
+    "target_registry_path",
+    "source_inventory_schema_path",
+    "quality_gate",
+    "waves",
+    "summary",
+    "updated_at"
+  ],
+  "properties": {
+    "id": {
+      "const": "phase14-core-capital-execution-queue"
+    },
+    "phase": {
+      "const": 14
+    },
+    "status": {
+      "enum": [
+        "in_progress",
+        "complete"
+      ]
+    },
+    "scope": {
+      "const": "core_cities_and_prefectural_capitals_excluding_designated_cities"
+    },
+    "target_registry_path": {
+      "const": "data/catalog/phase14_core_capital_target_registry.json"
+    },
+    "source_inventory_schema_path": {
+      "const": "schemas/phase14_municipality_source_inventory.schema.json"
+    },
+    "quality_gate": {
+      "type": "array",
+      "minItems": 10,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 50
+      }
+    },
+    "waves": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "wave",
+          "region",
+          "status",
+          "target_count",
+          "source_inventory_complete_count",
+          "pending_count"
+        ],
+        "properties": {
+          "wave": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 8
+          },
+          "region": {
+            "type": "string",
+            "minLength": 2
+          },
+          "status": {
+            "enum": [
+              "pending",
+              "in_progress",
+              "complete"
+            ]
+          },
+          "target_count": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "source_inventory_complete_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "pending_count": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "target_count",
+        "core_city_count",
+        "prefectural_capital_count",
+        "core_city_and_prefectural_capital_overlap",
+        "prefectural_capital_only_count",
+        "source_inventory_complete_count",
+        "source_inventory_in_progress_count",
+        "pending_source_inventory_count",
+        "next_official_code"
+      ],
+      "properties": {
+        "target_count": {
+          "const": 67
+        },
+        "core_city_count": {
+          "const": 62
+        },
+        "prefectural_capital_count": {
+          "const": 32
+        },
+        "core_city_and_prefectural_capital_overlap": {
+          "const": 27
+        },
+        "prefectural_capital_only_count": {
+          "const": 5
+        },
+        "source_inventory_complete_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 67
+        },
+        "source_inventory_in_progress_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "pending_source_inventory_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 67
+        },
+        "next_official_code": {
+          "oneOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9]{6}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}
