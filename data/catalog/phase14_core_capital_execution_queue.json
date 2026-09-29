@@ -21,18 +21,20 @@
     {
       "wave": 1,
       "region": "北海道・東北",
-      "status": "in_progress",
+      "status": "complete",
       "target_count": 10,
-      "source_inventory_complete_count": 0,
-      "pending_count": 10
+      "source_inventory_complete_count": 10,
+      "pending_count": 0,
+      "source_inventory_in_progress_count": 0
     },
     {
       "wave": 2,
       "region": "関東",
-      "status": "pending",
+      "status": "in_progress",
       "target_count": 12,
       "source_inventory_complete_count": 0,
-      "pending_count": 12
+      "pending_count": 11,
+      "source_inventory_in_progress_count": 1
     },
     {
       "wave": 3,
@@ -40,7 +42,8 @@
       "status": "pending",
       "target_count": 6,
       "source_inventory_complete_count": 0,
-      "pending_count": 6
+      "pending_count": 6,
+      "source_inventory_in_progress_count": 0
     },
     {
       "wave": 4,
@@ -48,7 +51,8 @@
       "status": "pending",
       "target_count": 6,
       "source_inventory_complete_count": 0,
-      "pending_count": 6
+      "pending_count": 6,
+      "source_inventory_in_progress_count": 0
     },
     {
       "wave": 5,
@@ -56,7 +60,8 @@
       "status": "pending",
       "target_count": 14,
       "source_inventory_complete_count": 0,
-      "pending_count": 14
+      "pending_count": 14,
+      "source_inventory_in_progress_count": 0
     },
     {
       "wave": 6,
@@ -64,7 +69,8 @@
       "status": "pending",
       "target_count": 7,
       "source_inventory_complete_count": 0,
-      "pending_count": 7
+      "pending_count": 7,
+      "source_inventory_in_progress_count": 0
     },
     {
       "wave": 7,
@@ -72,7 +78,8 @@
       "status": "pending",
       "target_count": 4,
       "source_inventory_complete_count": 0,
-      "pending_count": 4
+      "pending_count": 4,
+      "source_inventory_in_progress_count": 0
     },
     {
       "wave": 8,
@@ -80,7 +87,8 @@
       "status": "pending",
       "target_count": 8,
       "source_inventory_complete_count": 0,
-      "pending_count": 8
+      "pending_count": 8,
+      "source_inventory_in_progress_count": 0
     }
   ],
   "summary": {
@@ -89,10 +97,10 @@
     "prefectural_capital_count": 32,
     "core_city_and_prefectural_capital_overlap": 27,
     "prefectural_capital_only_count": 5,
-    "source_inventory_complete_count": 0,
+    "source_inventory_complete_count": 10,
     "source_inventory_in_progress_count": 1,
-    "pending_source_inventory_count": 67,
-    "next_official_code": "012025"
+    "pending_source_inventory_count": 56,
+    "next_official_code": "082015"
   },
   "updated_at": "2026-09-29"
 }
