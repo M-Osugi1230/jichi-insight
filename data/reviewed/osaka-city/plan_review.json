@@ -1,0 +1,60 @@
+{
+  "id": "phase13-osaka-plan-review",
+  "official_code": "271004",
+  "name_ja": "大阪市",
+  "review_status": "review_in_progress_declared_structure_and_evaluation_boundaries_reviewed",
+  "reviewed_at": "2026-09-29",
+  "records": [
+    {
+      "id": "osaka-basic-concept-urban-visions",
+      "evidence_role": "current_plan_identity",
+      "title": "大阪市基本構想",
+      "statement": "大阪市基本構想は市政の方向を定める基本的考え方として3つの都市像を掲げる。",
+      "value": 3,
+      "unit": "urban_visions",
+      "source_id": "osaka-basic-concept",
+      "evidence_location": "大阪市基本構想『めざすべき将来像』",
+      "reviewed_data_path": "data/catalog/osaka_current_policy_structure.json",
+      "decision": "accepted",
+      "review_note": "固定終期や年度actualは基本構想から推測しない。"
+    },
+    {
+      "id": "osaka-fy2026-annual-policy-structure",
+      "evidence_role": "current_annual_implementation_direction",
+      "title": "令和8年度 市政運営の基本方針",
+      "statement": "FY2026市政運営の基本方針の具体的な取組は4領域・15取組見出しで整理される。",
+      "value": 15,
+      "unit": "initiative_headings",
+      "source_id": "osaka-city-management-policy-2026",
+      "evidence_location": "令和8年度 市政運営の基本方針『3 具体的な取組』",
+      "reviewed_data_path": "data/catalog/osaka_current_policy_structure.json",
+      "decision": "accepted",
+      "review_note": "単年度全市方針であり、多年度実施計画とは扱わない。"
+    },
+    {
+      "id": "osaka-fy2025-operating-policy-evaluation",
+      "evidence_role": "latest_completed_annual_progress_route",
+      "title": "令和7年度各区・局運営方針について",
+      "statement": "FY2025各区・局運営方針について自己評価結果が公表されている。",
+      "value": "published",
+      "source_id": "osaka-ward-bureau-policy-evaluation-2025",
+      "evidence_location": "公式ページ『令和7年度各区・局運営方針について』",
+      "reviewed_data_path": "data/catalog/osaka_current_progress_review_summary.json",
+      "decision": "accepted_latest_completed_cycle",
+      "review_note": "FY2026通年Resultへ流用しない。"
+    },
+    {
+      "id": "osaka-decentralized-operating-model",
+      "evidence_role": "organization_progress_structure",
+      "title": "各区・局運営方針",
+      "statement": "区・局運営方針は毎年度、全市方針を踏まえて各区・局の目標像・使命、経営課題、事業戦略を示す。",
+      "value": "annual_decentralized_operating_policies",
+      "source_id": "osaka-ward-bureau-policy-evaluation-2025",
+      "evidence_location": "公式ページ『各区・局運営方針について』",
+      "decision": "accepted",
+      "review_note": "区・局評価を単一の全市政策達成度へ集約しない。"
+    }
+  ],
+  "quality_boundary": "大阪市の基本構想、FY2026全市方針、FY2025最新完了の区・局評価をversion/年度別にReviewed化した。個別区・局の経営課題・指標・実績、個別事業、財政・契約接続、因果効果、独自政策達成度、他都市比較可能性は別レビュー単位。",
+  "next_action": "Add FY2026 enacted initial-budget and FY2024 exact settlement top lines, then define Osaka's declared v1 completion package and deferred depth."
+}
