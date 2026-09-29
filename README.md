@@ -12,9 +12,9 @@ Jichi Insight（自治体インサイト）は、自治体が公開する政策�
 - Phase 11個票基盤: 47都道府県・15,327レコード
 - 政令指定都市 Source Inventory: 20 / 20
 - Phase 13 Reviewed reference: 2市（北九州市、福岡市）
-- Phase 13 Reviewed complete: 12市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市、浜松市、名古屋市、京都市）
-- Phase 13 Review in progress: 1市（大阪市）
-- Phase 13 Pending record review: 5市
+- Phase 13 Reviewed complete: 13市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市、浜松市、名古屋市、京都市、大阪市）
+- Phase 13 Review in progress: 1市（堺市）
+- Phase 13 Pending record review: 4市
 - 千葉市現行計画: 189 / 189事業identity、406 work itemsをstructured化済み
 - 千葉市旧計画: 360 / 360事業identity、再掲68 / 68を一次identityへ解決済み
 - 千葉市Versioned Linkage: 構造的一致60関係＋公式PDF手動確認6関係、計66関係をReviewed continuedとして昇格
@@ -153,12 +153,12 @@ Status: `in_progress`
 現在のCanonical queue:
 
 - Reviewed reference: 2市（北九州市、福岡市）
-- Reviewed complete: 12市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市、浜松市、名古屋市、京都市）
-- Review in progress: 1市（大阪市）
-- Pending record review: 5市
+- Reviewed complete: 13市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市、浜松市、名古屋市、京都市、大阪市）
+- Review in progress: 1市（堺市）
+- Pending record review: 4市
 - Blocked source inventory: 0市
 
-京都市は`declared_review_package_v1`としてReviewed completeです。京都基本構想2026〜2050、新京都戦略2024〜2027の令和8年3月改定版、現行戦略6政策、政策・しごとの仕方改革・持続可能な行財政運営の3構成、ひらく・きわめる・つなぐの3視点、2024年度報告における新京都戦略実施状況と旧京プラン2025の27政策分野のversion分離、行政実施報告・市会報告・監査のAccountability role分離、2026年度一般会計当初予算1,007,967,000,000円、2024年度一般会計決算の億円表示による歳入980,100,000,000円・歳出971,800,000,000円をレビュー済みです。旧27政策分野を現行政策構造へ流用せず、6政策配下の施策・KPI・事業、構想と戦略の細粒度linkage、個別財政接続は`deferred_depth`として保持します。現在のPhase 13作業対象は大阪市です。
+大阪市は`declared_review_package_v1`としてReviewed completeです。大阪市基本構想の3都市像、令和8年度市政運営の基本方針の4領域・15取組見出し、令和7年度各区・局運営方針の自己評価route、24区・28の各局等の分散型運営方針（うち府市共同設置2局は大阪府策定）、2026年度一般会計当初予算2,188,221,000,000円、2024年度一般会計決算歳入2,090,062,147,558円・歳出2,065,562,115,148円をレビュー済みです。FY2025自己評価をFY2026 actualへ流用せず、区・局評価を全市統合スコアへ変換しません。各区・局の指標・実績・自己評価個票、FY2026方針との細粒度linkage、FY2026通年Result、個別財政接続は`deferred_depth`として保持します。現在のPhase 13作業対象は堺市です。
 
 正本:
 
