@@ -1,0 +1,65 @@
+[
+  {
+    "id": "jp-local-331007-fiscal-2026-total-revenue",
+    "municipality_id": "jp-local-331007",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_revenue",
+    "metric_label": "一般会計当初予算（市議会可決・source precision）",
+    "amount_yen": 429863380000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "市議会広報の『4,298億6,338万円余』をsource precisionのまま換算。末尾未満を精密値とみなさない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "okayama-budget-2026-enacted"
+    ]
+  },
+  {
+    "id": "jp-local-331007-fiscal-2024-total-revenue",
+    "municipality_id": "jp-local-331007",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入決算額（source-reported rounded）",
+    "amount_yen": 406500000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "公式提案理由は『4,065億円余』。100-million-yen単位のsource valueとして保持し、円単位精密値へ昇格しない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "okayama-settlement-2024"
+    ]
+  },
+  {
+    "id": "jp-local-331007-fiscal-2024-total-expenditure",
+    "municipality_id": "jp-local-331007",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出決算額（source-reported rounded）",
+    "amount_yen": 387700000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "公式提案理由は『3,877億円余』。100-million-yen単位のsource valueとして保持し、円単位精密値へ昇格しない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "okayama-settlement-2024"
+    ]
+  }
+]
