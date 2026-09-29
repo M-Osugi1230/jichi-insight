@@ -1,0 +1,29 @@
+{
+  "id": "sakai-current-policy-structure",
+  "phase": 13,
+  "official_code": "271403",
+  "name_ja": "堺市",
+  "plan_period": "2026年度～2030年度",
+  "horizon_fiscal_year": 2035,
+  "review_status": "reviewed_current_plan_declared_structure",
+  "source_id": "sakai-basic-plan-2030",
+  "kpi_source_id": "sakai-basic-plan-2030-kpi",
+  "hierarchy": {
+    "kgi_count": 3,
+    "priority_strategy_count": 5,
+    "measure_count": 27
+  },
+  "priority_strategies": [
+    "堺の特色ある歴史文化",
+    "人生100年時代の健康・福祉",
+    "将来に希望が持てる子育て・教育",
+    "人や企業を惹きつける都市魅力",
+    "強くしなやかな都市基盤"
+  ],
+  "progress_management": {
+    "model": "annual_kpi_pdca",
+    "semantics": "重点戦略の施策について毎年度KPI等の進捗を把握・評価し、事業見直しにつなげる。",
+    "current_completed_result_status": "not_yet_available_for_2026_started_plan"
+  },
+  "quality_boundary": "3 KGI・5重点戦略・27施策のcurrent identityとPDCA意味をReviewed化する。個別KPI値、目標値、実績値、事業identityの全件構造化は追加depth。"
+}
