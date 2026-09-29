@@ -206,25 +206,18 @@ def test_kyoto_policy_manifest_keeps_non_inference_boundaries():
     assert "cross-city comparability" in manifest["quality_boundary"]
 
 
-def test_kyoto_completion_advances_queue_to_osaka():
+def test_kyoto_remains_complete_in_final_phase13_queue():
     queue = load(QUEUE)
     completion = load(COMPLETION)
     by_code = {row["official_code"]: row for row in queue["execution_queue"]}
-    statuses = [row["status"] for row in queue["execution_queue"]]
 
     assert completion["status"] == "reviewed_complete"
     assert by_code["261009"]["status"] == "reviewed_complete"
-    assert by_code["271004"]["status"] == "review_in_progress"
-    assert queue["summary"]["reviewed_complete_count"] == statuses.count(
-        "reviewed_complete"
-    ) == 12
-    assert queue["summary"]["review_in_progress_count"] == statuses.count(
-        "review_in_progress"
-    ) == 1
-    assert queue["summary"]["pending_record_review_count"] == statuses.count(
-        "pending_record_review"
-    ) == 5
-    assert queue["summary"]["next_official_code"] == "271004"
+    assert queue["status"] == "complete"
+    assert queue["summary"]["reviewed_complete_count"] == 18
+    assert queue["summary"]["review_in_progress_count"] == 0
+    assert queue["summary"]["pending_record_review_count"] == 0
+    assert queue["summary"]["next_official_code"] is None
 
 
 def test_kyoto_completion_quality_gates_are_all_true():
