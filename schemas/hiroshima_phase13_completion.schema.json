@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.local/schemas/hiroshima_phase13_completion.schema.json",
+  "title": "Hiroshima Phase 13 completion contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "phase",
+    "status",
+    "official_code",
+    "name_ja",
+    "completed_at",
+    "completion_depth",
+    "review_package",
+    "quality_gate",
+    "deferred_depth",
+    "completion_boundary"
+  ],
+  "properties": {
+    "id": {
+      "const": "hiroshima-phase13-completion"
+    },
+    "phase": {
+      "const": 13
+    },
+    "status": {
+      "const": "reviewed_complete"
+    },
+    "official_code": {
+      "const": "341002"
+    },
+    "name_ja": {
+      "const": "広島市"
+    },
+    "completed_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "completion_depth": {
+      "const": "declared_review_package_v1"
+    },
+    "review_package": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "policy_review_manifest_path",
+        "plan_review_path",
+        "source_catalog_path",
+        "policy_structure_path",
+        "progress_review_path",
+        "fiscal_records_path",
+        "fiscal_evidence_path",
+        "counts"
+      ],
+      "properties": {
+        "policy_review_manifest_path": {
+          "const": "data/catalog/hiroshima_phase13_policy_review_manifest.json"
+        },
+        "plan_review_path": {
+          "const": "data/reviewed/hiroshima-city/plan_review.json"
+        },
+        "source_catalog_path": {
+          "const": "data/catalog/hiroshima_phase13_sources.json"
+        },
+        "policy_structure_path": {
+          "const": "data/catalog/hiroshima_current_policy_structure.json"
+        },
+        "progress_review_path": {
+          "const": "data/catalog/hiroshima_current_progress_availability.json"
+        },
+        "fiscal_records_path": {
+          "const": "data/reviewed/hiroshima-city/fiscal_records.json"
+        },
+        "fiscal_evidence_path": {
+          "const": "data/reviewed/hiroshima-city/evidence_packets.json"
+        },
+        "counts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "plan_layers",
+            "current_implementation_plan_period_years",
+            "separately_identified_current_annual_result_packages",
+            "fiscal_top_line_records"
+          ],
+          "properties": {
+            "plan_layers": {
+              "const": 3
+            },
+            "current_implementation_plan_period_years": {
+              "const": 6
+            },
+            "separately_identified_current_annual_result_packages": {
+              "const": 0
+            },
+            "fiscal_top_line_records": {
+              "const": 3
+            }
+          }
+        }
+      }
+    },
+    "quality_gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 10,
+      "patternProperties": {
+        "^[a-z0-9_]+$": {
+          "const": true
+        }
+      }
+    },
+    "deferred_depth": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "status",
+          "boundary"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "status": {
+            "const": "deferred_not_required_for_v1_completion"
+          },
+          "boundary": {
+            "type": "string",
+            "minLength": 20
+          }
+        }
+      }
+    },
+    "completion_boundary": {
+      "type": "string",
+      "minLength": 300
+    }
+  }
+}
