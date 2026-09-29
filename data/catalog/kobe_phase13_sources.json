@@ -1,0 +1,67 @@
+{
+  "id": "kobe-phase13-sources",
+  "phase": 13,
+  "official_code": "281000",
+  "name_ja": "神戸市",
+  "reviewed_at": "2026-09-29",
+  "records": [
+    {
+      "id": "kobe-sixth-basic-plan",
+      "layer": "current_plan",
+      "title": "第6次神戸市基本計画－2035年の神戸－",
+      "organization": "神戸市",
+      "url": "https://www.city.kobe.lg.jp/a47946/shise/kekaku/masterplan/index.html",
+      "source_kind": "official_plan",
+      "review_status": "reviewed_current_basic_plan",
+      "confidence": "high",
+      "boundary": "2026～2035年度の基本計画。3つの方向性を保持する。"
+    },
+    {
+      "id": "kobe-2030-vision",
+      "layer": "implementation_plan",
+      "title": "神戸2030ビジョン",
+      "organization": "神戸市",
+      "url": "https://www.city.kobe.lg.jp/a47946/shise/kekaku/masterplan/kobe2030vision.html",
+      "source_kind": "html",
+      "review_status": "reviewed_current_implementation_plan",
+      "confidence": "high",
+      "boundary": "2026～2030年度の実施計画。3方向性、基本政策・主な施策・KPI、毎年度外部有識者による進行管理。"
+    },
+    {
+      "id": "kobe-2030-progress-governance",
+      "layer": "progress_governance",
+      "title": "神戸2030ビジョン推進会議",
+      "organization": "神戸市",
+      "url": "https://www.city.kobe.lg.jp/a47946/shise/kekaku/masterplan/kobe2030vision.html",
+      "source_kind": "html",
+      "review_status": "reviewed_governance_current_result_not_yet_available",
+      "confidence": "high",
+      "boundary": "現行ビジョン初年度の完了年度Resultは未公表。外部有識者による毎年度進行管理の仕組みを確認。"
+    },
+    {
+      "id": "kobe-budget-2026-enacted",
+      "layer": "budget",
+      "title": "令和8年度神戸市一般会計予算",
+      "organization": "神戸市・神戸市会",
+      "url": "https://www.city.kobe.lg.jp/z/shikaijimukyoku/giann_etc/r8/2gatsukekka.html",
+      "source_kind": "html",
+      "fiscal_year": 2026,
+      "review_status": "reviewed_enacted_initial_budget",
+      "confidence": "high",
+      "boundary": "予算第1号議案、977,781,231千円、可決。後続補正とは別state。"
+    },
+    {
+      "id": "kobe-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度 神戸市一般会計歳入歳出決算書",
+      "organization": "神戸市",
+      "url": "https://www.city.kobe.lg.jp/documents/80886/20250902_kessan01.pdf",
+      "source_kind": "pdf",
+      "fiscal_year": 2024,
+      "review_status": "reviewed_exact_settlement",
+      "confidence": "high",
+      "boundary": "歳入・歳出合計を円単位で確認。"
+    }
+  ],
+  "quality_boundary": "2026～2035基本計画、2026～2030実施計画、毎年度外部有識者進行管理、初年度Result未公表、予算・決算をEvidence role別に保持する。初年度未公表Resultを旧計画や予算から推測しない。"
+}
