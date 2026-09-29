@@ -1,7 +1,7 @@
 {
   "id": "phase13-designated-city-review-queue",
   "phase": 13,
-  "status": "in_progress",
+  "status": "complete",
   "scope": "designated_city_record_review",
   "promotion_target": "reviewed",
   "quality_gate": [
@@ -171,7 +171,7 @@
       "official_code": "431001",
       "name_ja": "熊本市",
       "prefecture_name_ja": "熊本県",
-      "status": "review_in_progress",
+      "status": "reviewed_complete",
       "source_inventory_path": "data/indexed/kumamoto-city/source_inventory.json"
     }
   ],
@@ -181,10 +181,10 @@
     "reviewed_reference_count": 2,
     "eligible_review_queue_count": 18,
     "blocked_source_inventory_count": 0,
-    "reviewed_complete_count": 17,
-    "review_in_progress_count": 1,
+    "reviewed_complete_count": 18,
+    "review_in_progress_count": 0,
     "pending_record_review_count": 0,
-    "next_official_code": "431001"
+    "next_official_code": null
   },
   "updated_at": "2026-09-29"
 }
