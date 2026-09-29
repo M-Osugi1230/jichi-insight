@@ -1,0 +1,35 @@
+{
+  "id": "osaka-current-progress-review-summary",
+  "phase": 13,
+  "official_code": "271004",
+  "name_ja": "大阪市",
+  "review_status": "reviewed_decentralized_annual_evaluation_model_and_latest_completed_cycle",
+  "latest_completed_operating_policy_fiscal_year": 2025,
+  "source_id": "osaka-ward-bureau-policy-evaluation-2025",
+  "organization_lanes": {
+    "ward_count": 24,
+    "bureau_office_lanes_listed": 28,
+    "joint_prefecture_city_bureaus_count": 2,
+    "joint_prefecture_city_bureaus": [
+      "IR推進局",
+      "大阪都市計画局"
+    ]
+  },
+  "evaluation_semantics": {
+    "source_id": "osaka-operating-policy-evaluation-overview",
+    "model": "ward_and_bureau_self_evaluation_pdca",
+    "inputs": [
+      "経営課題の進捗度合を示す指標の実績",
+      "達成状況",
+      "各区・局による総合評価",
+      "改善・見直しと次年度方針・予算等への反映"
+    ],
+    "boundary": "自己評価は各区・局のsource-reported evaluation。Jichi Insight独自の全市達成度や横断ランキングへ集約しない。"
+  },
+  "current_fy2026_lane": {
+    "status": "in_progress_not_complete_annual_result",
+    "source_id": "osaka-city-management-policy-2026",
+    "boundary": "FY2026市政運営の基本方針はcurrent Action方向。FY2025区・局評価をFY2026 Resultとして流用しない。"
+  },
+  "quality_boundary": "大阪市の進捗管理は区・局単位に分散している。24区と各局の自己評価をEvidence laneとして保持し、共同設置2局の作成主体差も残す。市全体の単一達成スコア、因果効果、他都市比較可能性は推論しない。"
+}
