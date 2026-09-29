@@ -102,30 +102,35 @@ def test_phase14_wave_distribution_and_statuses_are_canonical():
 
     statuses = Counter(row["status"] for row in targets)
     assert statuses == {
-        "source_inventory_complete": 10,
+        "source_inventory_complete": 22,
         "source_inventory_in_progress": 1,
-        "pending_source_inventory": 56,
+        "pending_source_inventory": 44,
     }
 
     summary = queue["summary"]
-    assert summary["source_inventory_complete_count"] == 10
+    assert summary["source_inventory_complete_count"] == 22
     assert summary["source_inventory_in_progress_count"] == 1
-    assert summary["pending_source_inventory_count"] == 56
-    assert summary["next_official_code"] == "082015"
+    assert summary["pending_source_inventory_count"] == 44
+    assert summary["next_official_code"] == "162019"
 
     wave1 = next(row for row in queue["waves"] if row["wave"] == 1)
     wave2 = next(row for row in queue["waves"] if row["wave"] == 2)
+    wave3 = next(row for row in queue["waves"] if row["wave"] == 3)
     assert wave1["status"] == "complete"
     assert wave1["source_inventory_complete_count"] == 10
     assert wave1["source_inventory_in_progress_count"] == 0
     assert wave1["pending_count"] == 0
-    assert wave2["status"] == "in_progress"
-    assert wave2["source_inventory_complete_count"] == 0
-    assert wave2["source_inventory_in_progress_count"] == 1
-    assert wave2["pending_count"] == 11
+    assert wave2["status"] == "complete"
+    assert wave2["source_inventory_complete_count"] == 12
+    assert wave2["source_inventory_in_progress_count"] == 0
+    assert wave2["pending_count"] == 0
+    assert wave3["status"] == "in_progress"
+    assert wave3["source_inventory_complete_count"] == 0
+    assert wave3["source_inventory_in_progress_count"] == 1
+    assert wave3["pending_count"] == 5
 
 
-def test_phase14_current_target_is_mito():
+def test_phase14_current_target_is_toyama():
     registry = load(REGISTRY)
     current = [
         row
@@ -134,5 +139,5 @@ def test_phase14_current_target_is_mito():
     ]
 
     assert len(current) == 1
-    assert current[0]["name_ja"] == "水戸市"
-    assert current[0]["official_code"] == "082015"
+    assert current[0]["name_ja"] == "富山市"
+    assert current[0]["official_code"] == "162019"
