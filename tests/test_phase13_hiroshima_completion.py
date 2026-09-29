@@ -15,6 +15,10 @@ def test_hiroshima_fiscal_and_result_boundary():
     p=load("data/catalog/hiroshima_current_progress_availability.json")
     assert p["current_separate_annual_result"]["status"]=="not_separately_identified_in_declared_v1_sources"
     assert "同一視しない" in p["current_separate_annual_result"]["boundary"]
-def test_hiroshima_queue_advances_to_kumamoto():
-    q=load("data/catalog/phase13_designated_city_review_queue.json"); by={r["official_code"]:r["status"] for r in q["execution_queue"]}
-    assert by["341002"]=="reviewed_complete"; assert by["431001"]=="review_in_progress"
+def test_hiroshima_is_complete_in_final_phase13_queue():
+    q=load("data/catalog/phase13_designated_city_review_queue.json")
+    by={r["official_code"]:r["status"] for r in q["execution_queue"]}
+    assert by["341002"]=="reviewed_complete"
+    assert q["status"]=="complete"
+    assert q["summary"]["reviewed_complete_count"]==18
+    assert q["summary"]["next_official_code"] is None
