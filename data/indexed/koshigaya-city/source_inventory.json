@@ -1,0 +1,62 @@
+{
+  "id": "phase14-koshigaya-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "112224",
+  "standard_area_code": "11222",
+  "name_ja": "越谷市",
+  "prefecture_name_ja": "埼玉県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第5次越谷市総合振興計画 後期基本計画",
+    "start_fiscal_year": 2026,
+    "end_fiscal_year": 2030,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "koshigaya-fifth-latter-plan",
+      "layer": "comprehensive_plan",
+      "title": "第5次越谷市総合振興計画 後期基本計画",
+      "official_url": "https://www.city.koshigaya.saitama.jp/kurashi_shisei/shisei/keikaku/daiyozisougousinkoukeikaku/5jisoshin/gozisokoki.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2030年度",
+      "review_boundary": "現行後期基本計画をcurrent versionとして保持し、前期計画の実績とversionを混在させない。"
+    },
+    {
+      "id": "koshigaya-implementation-budget-2026",
+      "layer": "implementation_plan",
+      "title": "令和8年度当初予算編成方針",
+      "official_url": "https://www.city.koshigaya.saitama.jp/kurashi_shisei/shisei/yosankessan/yosan/r08/r8yosanhensei.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "後期基本計画初年度と第1期実施計画を踏まえた予算編成入口。予算方針を年度Resultへ読み替えない。"
+    },
+    {
+      "id": "koshigaya-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算",
+      "official_url": "https://www.city.koshigaya.saitama.jp/kurashi_shisei/shisei/yosankessan/yosan/r08/index.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算・補正予算の公式入口。proposal/enacted/supplementaryをPhase 15でstage分離する。"
+    },
+    {
+      "id": "koshigaya-settlement-2024",
+      "layer": "settlement_and_major_measures",
+      "title": "令和6年度決算のあらましと健全化判断比率",
+      "official_url": "https://www.city.koshigaya.saitama.jp/kurashi_shisei/shisei/yosankessan/kessan/aramashi/R06kessan.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算認定と主な事業の公式入口。前期基本計画期間の結果として後期計画current actualへ流用しない。"
+    }
+  ],
+  "availability_boundary": "後期基本計画は2026年度開始で、FY2024決算は前期計画期間に属する。第1期実施計画・予算と過年度決算の計画version/年度境界を保持する。",
+  "quality_boundary": "This Phase 14 inventory verifies Koshigaya's 2026-2030 latter basic plan, first implementation/budget-policy route, FY2026 budget route, and historical FY2024 settlement route. It preserves prior/current plan boundaries and does not promote reported fiscal or project facts into independent policy achievement or causal conclusions.",
+  "next_action": "Phase 15で後期基本計画の政策・成果指標、第1期実施計画、FY2026予算、前期計画下FY2024決算・主要事業をversioned record-level Evidenceへ展開する。",
+  "verified_at": "2026-09-30"
+}
