@@ -6,22 +6,22 @@ Jichi Insight（自治体インサイト）は、自治体が公開する政策�
 
 ## Product status
 
-`Phase 12 complete / Phase 13 active / 47 prefectures complete / 20 designated cities inventoried / pre-alpha`
+`Phase 13 complete / 47 prefectures complete / 20 designated cities reviewed / pre-alpha`
 
 - 全国47都道府県: Phase 11まで完了
 - Phase 11個票基盤: 47都道府県・15,327レコード
 - 政令指定都市 Source Inventory: 20 / 20
 - Phase 13 Reviewed reference: 2市（北九州市、福岡市）
-- Phase 13 Reviewed complete: 13市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市、浜松市、名古屋市、京都市、大阪市）
-- Phase 13 Review in progress: 1市（堺市）
-- Phase 13 Pending record review: 4市
+- Phase 13 Reviewed complete: 18市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市、浜松市、名古屋市、京都市、大阪市、堺市、神戸市、岡山市、広島市、熊本市）
+- Phase 13 Review in progress: 0市
+- Phase 13 Pending record review: 0市
 - 千葉市現行計画: 189 / 189事業identity、406 work itemsをstructured化済み
 - 千葉市旧計画: 360 / 360事業identity、再掲68 / 68を一次identityへ解決済み
 - 千葉市Versioned Linkage: 構造的一致60関係＋公式PDF手動確認6関係、計66関係をReviewed continuedとして昇格
 - 独自の政策達成評価: 0件
 - 比較可能性未確認の全国・都市ランキング: 0件
 
-Phase 10で全国47都道府県の共通文書スコープ、Phase 11で個票レベルのReviewed接続またはReviewed最大到達深度、Phase 12で20政令指定都市の公式Source Inventoryを完成させました。現在はPhase 13として、政令指定都市を個票レベルへ深掘りしています。公式資料が不足する場合も推測で埋めず、何が未接続かを明示します。
+Phase 10で全国47都道府県の共通文書スコープ、Phase 11で個票レベルのReviewed接続またはReviewed最大到達深度、Phase 12で20政令指定都市の公式Source Inventory、Phase 13で全20政令指定都市のv1 record-review foundationを完成させました。北九州市・福岡市をReviewed referenceとして保持し、残る18市は自治体別completion contractまで到達しています。公式資料が不足・未公表・未解決の場合も推測で埋めず、何が未接続かを明示します。
 
 進捗の正本は `data/catalog/phase13_designated_city_review_queue.json` と各Phase completion manifestです。READMEは人向けの要約であり、状態が競合する場合はmachine-readable catalogを優先します。
 
@@ -148,21 +148,28 @@ Phase 11全体では47都道府県・15,327レコードです。
 
 ## Phase 13 — Designated-city record review
 
-Status: `in_progress`
+Status: `complete`（2026-09-29）
 
-現在のCanonical queue:
+全20政令指定都市のv1 record-review foundationを完了しました。
 
 - Reviewed reference: 2市（北九州市、福岡市）
-- Reviewed complete: 13市（札幌市、仙台市、さいたま市、千葉市、横浜市、川崎市、相模原市、新潟市、静岡市、浜松市、名古屋市、京都市、大阪市）
-- Review in progress: 1市（堺市）
-- Pending record review: 4市
+- Reviewed complete: 18 / 18市
+- Review in progress: 0市
+- Pending record review: 0市
 - Blocked source inventory: 0市
+- 独自の政策達成評価: 0件
+- 因果効果の独自判定: 0件
+- 比較可能性未確認の都市ランキング: 0件
 
-大阪市は`declared_review_package_v1`としてReviewed completeです。大阪市基本構想の3都市像、令和8年度市政運営の基本方針の4領域・15取組見出し、令和7年度各区・局運営方針の自己評価route、24区・28の各局等の分散型運営方針（うち府市共同設置2局は大阪府策定）、2026年度一般会計当初予算2,188,221,000,000円、2024年度一般会計決算歳入2,090,062,147,558円・歳出2,065,562,115,148円をレビュー済みです。FY2025自己評価をFY2026 actualへ流用せず、区・局評価を全市統合スコアへ変換しません。各区・局の指標・実績・自己評価個票、FY2026方針との細粒度linkage、FY2026通年Result、個別財政接続は`deferred_depth`として保持します。現在のPhase 13作業対象は堺市です。
+18市それぞれについて、現行計画identity、自治体が公式に設けている実施・進行管理層、利用可能な年度実績、一般会計財政トップライン、version / availability / evidence boundaryを宣言した`declared_review_package_v1`までレビューし、Schema・Evidence coverage・回帰テストで固定しました。未公表の年度実績、旧計画の結果、source-reported evaluation、丸められた財政値を推測で補完・再解釈していません。
+
+Phase 13の完了は、全政策・KPI・事業・契約・補助金・予算科目・決算科目を完全接続したことを意味しません。都市ごとの`deferred_depth`に追加レビュー対象を明示し、比較可能性が別途確認されるまでは都市間ランキングへ昇格しません。
 
 正本:
 
+- [`data/catalog/phase13_completion.json`](data/catalog/phase13_completion.json)
 - [`data/catalog/phase13_designated_city_review_queue.json`](data/catalog/phase13_designated_city_review_queue.json)
+- [`schemas/phase13_completion.schema.json`](schemas/phase13_completion.schema.json)
 - [Roadmap](docs/ROADMAP.md)
 
 ## Repository map
