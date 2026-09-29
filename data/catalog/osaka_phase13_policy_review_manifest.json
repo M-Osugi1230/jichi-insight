@@ -1,0 +1,115 @@
+{
+  "id": "osaka-phase13-policy-review-manifest",
+  "phase": 13,
+  "official_code": "271004",
+  "name_ja": "大阪市",
+  "status": "review_in_progress",
+  "reviewed_at": "2026-09-29",
+  "source_catalog_path": "data/catalog/osaka_phase13_sources.json",
+  "plan_review_path": "data/reviewed/osaka-city/plan_review.json",
+  "policy_structure_path": "data/catalog/osaka_current_policy_structure.json",
+  "progress_review_path": "data/catalog/osaka_current_progress_review_summary.json",
+  "fiscal_records_path": "data/reviewed/osaka-city/fiscal_records.json",
+  "fiscal_evidence_path": "data/reviewed/osaka-city/evidence_packets.json",
+  "reviewed_facts": [
+    {
+      "id": "osaka-urban-visions",
+      "layer": "current_plan",
+      "field": "urban_vision_count",
+      "value": 3,
+      "unit": "visions",
+      "source_id": "osaka-basic-concept",
+      "review_status": "reviewed",
+      "interpretation_boundary": "最上位方向。年度成果ではない。"
+    },
+    {
+      "id": "osaka-fy2026-policy-domains",
+      "layer": "annual_city_policy",
+      "field": "domain_count",
+      "value": 4,
+      "unit": "domains",
+      "source_id": "osaka-city-management-policy-2026",
+      "review_status": "reviewed",
+      "interpretation_boundary": "単年度全市方針。"
+    },
+    {
+      "id": "osaka-fy2026-initiative-headings",
+      "layer": "annual_city_policy",
+      "field": "initiative_heading_count",
+      "value": 15,
+      "unit": "headings",
+      "source_id": "osaka-city-management-policy-2026",
+      "review_status": "reviewed",
+      "interpretation_boundary": "個別事業数ではない。"
+    },
+    {
+      "id": "osaka-ward-lanes",
+      "layer": "annual_progress",
+      "field": "ward_count",
+      "value": 24,
+      "unit": "wards",
+      "source_id": "osaka-ward-bureau-policy-evaluation-2025",
+      "review_status": "reviewed_structure",
+      "interpretation_boundary": "区ごとの自己評価lane。"
+    },
+    {
+      "id": "osaka-bureau-lanes",
+      "layer": "annual_progress",
+      "field": "bureau_office_lanes_listed",
+      "value": 28,
+      "unit": "lanes",
+      "source_id": "osaka-ward-bureau-policy-evaluation-2025",
+      "review_status": "reviewed_structure",
+      "interpretation_boundary": "一覧には府市共同設置2局を含み、その運営方針は大阪府が策定。"
+    },
+    {
+      "id": "osaka-evaluation-governance",
+      "layer": "evaluation_governance",
+      "field": "evaluation_model",
+      "value": "ward_and_bureau_self_evaluation_pdca",
+      "source_id": "osaka-operating-policy-evaluation-overview",
+      "review_status": "reviewed",
+      "interpretation_boundary": "source-reported self evaluation。"
+    },
+    {
+      "id": "osaka-2026-general-account-initial-budget",
+      "layer": "fiscal",
+      "field": "general_account_initial_budget",
+      "fiscal_year": 2026,
+      "value": 2188221000000,
+      "unit": "yen",
+      "source_id": "osaka-budget-2026-enacted",
+      "review_status": "reviewed",
+      "interpretation_boundary": "市会議決済み当初予算。"
+    },
+    {
+      "id": "osaka-2024-general-account-settlement-revenue",
+      "layer": "fiscal",
+      "field": "general_account_settlement_revenue",
+      "fiscal_year": 2024,
+      "value": 2090062147558,
+      "unit": "yen",
+      "source_id": "osaka-settlement-2024-exact",
+      "review_status": "reviewed",
+      "interpretation_boundary": "円単位確定値。"
+    },
+    {
+      "id": "osaka-2024-general-account-settlement-expenditure",
+      "layer": "fiscal",
+      "field": "general_account_settlement_expenditure",
+      "fiscal_year": 2024,
+      "value": 2065562115148,
+      "unit": "yen",
+      "source_id": "osaka-settlement-2024-exact",
+      "review_status": "reviewed",
+      "interpretation_boundary": "円単位確定値。"
+    }
+  ],
+  "remaining_work": [
+    "24区・各局の経営課題、戦略、指標、実績、自己評価を個票単位で追加レビューする。",
+    "FY2026市政運営の基本方針の個別取組と区・局運営方針の細粒度linkageはEvidence確認後のみ昇格する。",
+    "FY2026通年結果が公表されるまではFY2025自己評価をcurrent FY2026 actualへ流用しない。",
+    "個別政策・事業と予算、補正、執行、決算、契約、補助金の接続は公式識別子・名称・所管・年度を確認できたものだけ昇格する。"
+  ],
+  "quality_boundary": "Osaka Phase 13 v1 reviews the three basic-concept urban visions, FY2026 annual city-policy structure (four domains and fifteen initiative headings), the decentralized FY2025 ward/bureau self-evaluation route (24 wards and 28 listed bureau/office lanes, including two joint prefecture-city bureaus), and three general-account fiscal top lines. FY2025 self-evaluations are not reused as FY2026 actuals. No citywide aggregate achievement score, independent policy-achievement judgment, causal attribution, or cross-city comparability is inferred."
+}
