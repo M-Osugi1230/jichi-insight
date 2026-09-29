@@ -1,0 +1,62 @@
+{
+  "id": "phase14-matsumoto-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "202029",
+  "standard_area_code": "20202",
+  "name_ja": "松本市",
+  "prefecture_name_ja": "長野県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "松本市基本構想2030・第12次基本計画",
+    "start_fiscal_year": 2026,
+    "end_fiscal_year": 2030,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "matsumoto-twelfth-plan",
+      "layer": "comprehensive_plan",
+      "title": "総合計画（基本構想2030・第12次基本計画）",
+      "official_url": "https://www.city.matsumoto.nagano.jp/soshiki/214/195785.html",
+      "status": "official_landing_verified",
+      "effective_period": "第12次基本計画 2026年度～2030年度",
+      "review_boundary": "基本構想2030の後期5年間として第12次基本計画をcurrent versionに固定し、第11次計画の実績と分離する。"
+    },
+    {
+      "id": "matsumoto-implementation-design",
+      "layer": "implementation_plan",
+      "title": "第12次基本計画 実施計画",
+      "official_url": "https://www.city.matsumoto.nagano.jp/soshiki/214/195785.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2030年度",
+      "review_boundary": "基本施策に基づく具体的事務事業の実行計画というlayerを確認する。個別事業identityと年度実績はPhase 15でレビューする。"
+    },
+    {
+      "id": "matsumoto-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度当初予算の概要",
+      "official_url": "https://www.city.matsumoto.nagano.jp/site/matsumoto-zaisei/194629.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "第12次基本計画初年度のFY2026当初予算公式入口。予算事業を政策達成や成果と同一視しない。"
+    },
+    {
+      "id": "matsumoto-settlement",
+      "layer": "settlement",
+      "title": "決算",
+      "official_url": "https://www.city.matsumoto.nagano.jp/site/matsumoto-zaisei/list267.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算の公式入口。第11次基本計画期間の財政Evidenceとして新しい第12次計画actualへ流用しない。"
+    }
+  ],
+  "availability_boundary": "第12次基本計画は2026年度開始の後期5年計画で、FY2024決算は第11次基本計画期間に属する。基本構想2030は継続する一方、基本計画versionと年度実績を分離する。",
+  "quality_boundary": "This Phase 14 inventory verifies Matsumoto's 2026-2030 twelfth basic plan under Basic Concept 2030, implementation-plan layer, FY2026 initial budget, and historical FY2024 settlement route. It preserves the eleventh/twelfth plan transition and does not infer current achievement, fiscal causality, or cross-city comparability.",
+  "next_action": "Phase 15で7分野47施策、実施計画事業、current-result availability、FY2026予算、旧第11次計画下FY2024決算をversion/source位置付きrecord-level Evidenceへ展開する。",
+  "verified_at": "2026-09-30"
+}
