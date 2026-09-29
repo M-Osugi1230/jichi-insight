@@ -60,6 +60,7 @@
           "status",
           "target_count",
           "source_inventory_complete_count",
+          "source_inventory_in_progress_count",
           "pending_count"
         ],
         "properties": {
@@ -90,6 +91,11 @@
           "pending_count": {
             "type": "integer",
             "minimum": 0
+          },
+          "source_inventory_in_progress_count": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1
           }
         }
       }
