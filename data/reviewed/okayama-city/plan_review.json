@@ -1,0 +1,47 @@
+{
+  "id": "phase13-okayama-plan-review",
+  "official_code": "331007",
+  "name_ja": "岡山市",
+  "review_status": "review_in_progress_current_structure_and_availability_reviewed",
+  "reviewed_at": "2026-09-29",
+  "records": [
+    {
+      "id": "okayama-current-plan-periods",
+      "evidence_role": "current_plan_identity",
+      "title": "岡山市第七次総合計画",
+      "statement": "長期構想は2026～2035年度、前期中期計画は2026～2030年度。",
+      "value": "2026年度～2035年度",
+      "source_id": "okayama-seventh-plan",
+      "evidence_location": "公式概要『前期中期計画の期間』",
+      "decision": "accepted",
+      "review_note": "長期構想と前期中期計画を別期間として保持。"
+    },
+    {
+      "id": "okayama-current-hierarchy",
+      "evidence_role": "current_policy_structure",
+      "title": "前期中期計画の構成",
+      "statement": "4つの基本的視点、8つの基本方向、30政策、99施策で構成される。",
+      "value": 30,
+      "unit": "policies",
+      "source_id": "okayama-seventh-plan",
+      "evidence_location": "公式概要『前期中期計画の構成』",
+      "reviewed_data_path": "data/catalog/okayama_current_policy_structure.json",
+      "decision": "accepted",
+      "review_note": "個別成果指標は追加depth。"
+    },
+    {
+      "id": "okayama-current-result",
+      "evidence_role": "current_annual_progress",
+      "title": "現行計画初年度Result",
+      "statement": "30政策を毎年度評価・公表する設計だが、2026年度初年度の完了Resultはまだ公表されていない。",
+      "value": "not_yet_available",
+      "source_id": "okayama-current-progress-governance",
+      "evidence_location": "公式概要『前期中期計画の進行管理』",
+      "reviewed_data_path": "data/catalog/okayama_current_progress_availability.json",
+      "decision": "accepted_availability_boundary",
+      "review_note": "旧計画結果を流用しない。"
+    }
+  ],
+  "quality_boundary": "現行計画階層、PDCA設計、Result availabilityを分離する。個別成果指標・取組・年度評価、財政接続、因果評価、独自達成度、比較可能性は別レビュー。",
+  "next_action": "Add enacted budget and settlement source-precision top lines, then define Okayama v1 completion package."
+}
