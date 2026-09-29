@@ -171,7 +171,7 @@
     },
     "availability_boundary": {
       "type": "string",
-      "minLength": 80
+      "minLength": 60
     },
     "quality_boundary": {
       "type": "string",
@@ -179,7 +179,7 @@
     },
     "next_action": {
       "type": "string",
-      "minLength": 80
+      "minLength": 60
     },
     "verified_at": {
       "type": "string",
