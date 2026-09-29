@@ -1,0 +1,73 @@
+{
+  "id": "phase14-hachinohe-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "022039",
+  "standard_area_code": "02203",
+  "name_ja": "八戸市",
+  "prefecture_name_ja": "青森県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第7次八戸市総合計画",
+    "start_fiscal_year": 2022,
+    "end_fiscal_year": 2026,
+    "period_status": "transition_or_unresolved"
+  },
+  "sources": [
+    {
+      "id": "hachinohe-seventh-plan",
+      "layer": "comprehensive_plan",
+      "title": "第7次八戸市総合計画の内容",
+      "official_url": "https://www.city.hachinohe.aomori.jp/gyoseijoho/keikaku_plan/gyoseijoho/2/7thmasterplan/18104.html",
+      "status": "official_landing_verified",
+      "effective_period": "2022年度～2026年度",
+      "review_boundary": "現行第7次計画の政策体系と最終年度を確認し、策定中の次期計画へ自動接続しない。"
+    },
+    {
+      "id": "hachinohe-strategy-2026",
+      "layer": "annual_implementation",
+      "title": "未来共創推進戦略2026",
+      "official_url": "https://www.city.hachinohe.aomori.jp/gyoseijoho/keikaku_plan/gyoseijoho/2/7thmasterplan/18104.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "総合計画に基づく毎年度のまちづくり戦略。年度戦略を多年度基本計画と同一versionへ統合しない。"
+    },
+    {
+      "id": "hachinohe-progress-2026",
+      "layer": "progress_governance",
+      "title": "八戸市総合計画等推進市民委員会（令和8年度）",
+      "official_url": "https://www.city.hachinohe.aomori.jp/gyoseijoho/keikaku_plan/gyoseijoho/2/masterplan_management/25992.html",
+      "status": "official_landing_verified",
+      "available_periods": [
+        "2026年度"
+      ],
+      "review_boundary": "市民委員会による総合計画進行管理・総合戦略効果検証の公式入口。外部意見を独自評価へ変換しない。"
+    },
+    {
+      "id": "hachinohe-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度 予算と決算",
+      "official_url": "https://www.city.hachinohe.aomori.jp/soshikikarasagasu/zaiseika/tokeijoho/1/25273.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算と補正予算の公式入口。各stateを分離する。"
+    },
+    {
+      "id": "hachinohe-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度 予算と決算",
+      "official_url": "https://www.city.hachinohe.aomori.jp/gyoseijoho/tokeijoho/zaisei/21691.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算概要・決算カードの公式入口。予算と決算、財政値と政策評価を分離する。"
+    }
+  ],
+  "availability_boundary": "第7次総合計画は2026年度が最終年度で、次期総合計画の策定過程が別途進行中。FY2026戦略・市民委員会・次期計画draftを現行計画の同一成果データとして混ぜない。",
+  "quality_boundary": "This Phase 14 inventory verifies the final-year seventh comprehensive plan, FY2026 annual strategy, citizen-committee progress governance, FY2026 budget, and FY2024 settlement routes. It preserves the next-plan transition boundary and does not promote source-reported progress, survey results, fiscal values, or draft next-plan content to Reviewed.",
+  "next_action": "Phase 15で6政策、年度戦略、政策推進事業、委員会評価・市民アンケート、FY2026予算とFY2024決算をversioned recordとしてレビューする。",
+  "verified_at": "2026-09-29"
+}
