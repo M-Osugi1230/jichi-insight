@@ -1,0 +1,171 @@
+{
+  "id": "phase13-designated-city-record-review-completion",
+  "phase": 13,
+  "status": "complete",
+  "completed_at": "2026-09-29",
+  "scope": "designated_city_record_review",
+  "coverage": {
+    "designated_city_count": 20,
+    "reviewed_reference_count": 2,
+    "execution_reviewed_complete_count": 18,
+    "review_in_progress_count": 0,
+    "pending_record_review_count": 0,
+    "blocked_source_inventory_count": 0
+  },
+  "reference_implementations": [
+    {
+      "official_code": "401005",
+      "name_ja": "北九州市",
+      "status": "reviewed_reference",
+      "reviewed_data_path": "data/reviewed/kitakyushu-city"
+    },
+    {
+      "official_code": "401307",
+      "name_ja": "福岡市",
+      "status": "reviewed_reference",
+      "reviewed_data_path": "data/reviewed/fukuoka-city"
+    }
+  ],
+  "reviewed_completion_contracts": [
+    {
+      "official_code": "011002",
+      "name_ja": "札幌市",
+      "completion_path": "data/catalog/sapporo_phase13_completion.json",
+      "status": "reviewed_complete"
+    },
+    {
+      "official_code": "041009",
+      "name_ja": "仙台市",
+      "completion_path": "data/catalog/sendai_phase13_completion.json",
+      "status": "reviewed_complete"
+    },
+    {
+      "official_code": "111007",
+      "name_ja": "さいたま市",
+      "completion_path": "data/catalog/saitama_phase13_completion.json",
+      "status": "reviewed_complete"
+    },
+    {
+      "official_code": "121002",
+      "name_ja": "千葉市",
+      "completion_path": "data/catalog/chiba_phase13_completion.json",
+      "status": "reviewed_complete"
+    },
+    {
+      "official_code": "141003",
+      "name_ja": "横浜市",
+      "completion_path": "data/catalog/yokohama_phase13_completion.json",
+      "status": "reviewed_complete"
+    },
+    {
+      "official_code": "141305",
+      "name_ja": "川崎市",
+      "completion_path": "data/catalog/kawasaki_phase13_completion.json",
+      "status": "reviewed_complete"
+    },
+    {
+      "official_code": "141500",
+      "name_ja": "相模原市",
+      "completion_path": "data/catalog/sagamihara_phase13_completion.json",
+      "status": "reviewed_complete"
+    },
+    {
+      "official_code": "151009",
+      "name_ja": "新潟市",
+      "completion_path": "data/catalog/niigata_phase13_completion.json",
+      "status": "reviewed_complete"
+    },
+    {
+      "official_code": "221007",
+      "name_ja": "静岡市",
+      "completion_path": "data/catalog/shizuoka_phase13_completion.json",
+      "status": "reviewed_complete"
+    },
+    {
+      "official_code": "221309",
+      "name_ja": "浜松市",
+      "completion_path": "data/catalog/hamamatsu_phase13_completion.json",
+      "status": "reviewed_complete"
+    },
+    {
+      "official_code": "231002",
+      "name_ja": "名古屋市",
+      "completion_path": "data/catalog/nagoya_phase13_completion.json",
+      "status": "reviewed_complete"
+    },
+    {
+      "official_code": "261009",
+      "name_ja": "京都市",
+      "completion_path": "data/catalog/kyoto_phase13_completion.json",
+      "status": "reviewed_complete"
+    },
+    {
+      "official_code": "271004",
+      "name_ja": "大阪市",
+      "completion_path": "data/catalog/osaka_phase13_completion.json",
+      "status": "reviewed_complete"
+    },
+    {
+      "official_code": "271403",
+      "name_ja": "堺市",
+      "completion_path": "data/catalog/sakai_phase13_completion.json",
+      "status": "reviewed_complete"
+    },
+    {
+      "official_code": "281000",
+      "name_ja": "神戸市",
+      "completion_path": "data/catalog/kobe_phase13_completion.json",
+      "status": "reviewed_complete"
+    },
+    {
+      "official_code": "331007",
+      "name_ja": "岡山市",
+      "completion_path": "data/catalog/okayama_phase13_completion.json",
+      "status": "reviewed_complete"
+    },
+    {
+      "official_code": "341002",
+      "name_ja": "広島市",
+      "completion_path": "data/catalog/hiroshima_phase13_completion.json",
+      "status": "reviewed_complete"
+    },
+    {
+      "official_code": "431001",
+      "name_ja": "熊本市",
+      "completion_path": "data/catalog/kumamoto_phase13_completion.json",
+      "status": "reviewed_complete"
+    }
+  ],
+  "canonical_sources": [
+    "data/catalog/phase12_designated_city_execution_queue.json",
+    "data/catalog/phase13_designated_city_review_queue.json",
+    "schemas/phase13_designated_city_review_queue.schema.json",
+    "data/catalog/phase13_completion.json",
+    "schemas/phase13_completion.schema.json",
+    "tests/test_phase13_designated_city_review_queue.py",
+    "tests/test_phase13_completion.py"
+  ],
+  "quality_summary": {
+    "policy_achievement_assessment_count": 0,
+    "causal_attribution_count": 0,
+    "cross_city_ranking_count": 0,
+    "inferred_missing_evidence_count": 0
+  },
+  "completion_gates": [
+    "All 20 designated cities are represented by two reviewed reference implementations or one of eighteen municipality-specific declared Phase 13 v1 completion contracts.",
+    "All 18 municipalities in the canonical execution queue are reviewed_complete, with zero review_in_progress, zero pending_record_review, and zero blocked source inventories.",
+    "Each promoted completion contract preserves official-source lineage, evidence roles, plan versions, reporting periods, fiscal states, and explicit deferred-depth boundaries.",
+    "Not-yet-published, unresolved, historical-only, rounded-source, and source-reported evaluation states remain explicit instead of being replaced by inferred values or false precision.",
+    "Municipal self-evaluations, external deliberation, fiscal values, KPIs, and outcome indicators are not converted into independent Jichi Insight policy-achievement judgments or causal claims.",
+    "Cross-city comparison eligibility and rankings remain outside Phase 13 unless a separate comparability methodology verifies that the underlying definitions, populations, periods, and units are comparable.",
+    "The final canonical queue, all municipality completion contracts, JSON Schemas, repository validation, regression tests, web checks, and production smoke must pass on the final merged head."
+  ],
+  "completion_boundary": "Phase 13 completes the designated-city v1 record-review foundation for all 20 designated cities: Kitakyushu and Fukuoka remain reviewed reference implementations, while all 18 municipalities in the execution queue have municipality-specific reviewed_complete contracts at their declared maximum v1 depth. Completion does not mean that every policy, KPI, project, contract, subsidy, budget line, settlement line, assembly statement, audit finding, or multi-year result has been fully linked. Each city explicitly records deferred depth, not-yet-published or unresolved evidence, version boundaries, fiscal states, and source precision. No independent Jichi Insight policy-achievement judgment, causal attribution, unverified cross-city comparison, or ranking is introduced by Phase 13 completion.",
+  "next_scope": [
+    "Core cities and prefectural capitals",
+    "Other municipalities",
+    "Election and candidate comparison",
+    "API, data downloads, and research or reporting features",
+    "Comparison features limited to indicators with separately verified comparability"
+  ]
+}
