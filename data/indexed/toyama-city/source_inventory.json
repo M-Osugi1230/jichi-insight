@@ -1,0 +1,72 @@
+{
+  "id": "phase14-toyama-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "162019",
+  "standard_area_code": "16201",
+  "name_ja": "富山市",
+  "prefecture_name_ja": "富山県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city",
+    "prefectural_capital"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第2次富山市総合計画 後期基本計画",
+    "start_fiscal_year": 2022,
+    "end_fiscal_year": 2026,
+    "period_status": "transition_or_unresolved"
+  },
+  "sources": [
+    {
+      "id": "toyama-second-latter-plan",
+      "layer": "comprehensive_plan",
+      "title": "第2次富山市総合計画 後期基本計画",
+      "official_url": "https://www.city.toyama.lg.jp/shisei/seisaku/1010738/1011468/1002415/1010742/1002462.html",
+      "status": "official_landing_verified",
+      "effective_period": "2022年度～2026年度",
+      "review_boundary": "現行後期基本計画の5年間とFY2026実施計画を確認し、策定中の第3次総合計画へcurrent actualを先取り接続しない。"
+    },
+    {
+      "id": "toyama-implementation-2026",
+      "layer": "implementation_plan",
+      "title": "令和8年度実施計画",
+      "official_url": "https://www.city.toyama.lg.jp/shisei/seisaku/1010738/1011468/1002415/1010742/1002462.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "現行第2次計画最終年度の実施計画として保持する。計画事業を次期第3次計画の事業identityへ自動移行しない。"
+    },
+    {
+      "id": "toyama-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度当初予算案の概要",
+      "official_url": "https://www.city.toyama.lg.jp/shisei/mayor/1010725/1016816/1018580.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算案の公式入口。proposalと議決後予算、補正、執行、決算を別stateで保持する。"
+    },
+    {
+      "id": "toyama-settlement-2024",
+      "layer": "settlement",
+      "title": "決算",
+      "official_url": "https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003078.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024を含む決算状況の公式入口。年度財政値と総合計画の施策進捗を同一の成果指標へ統合しない。"
+    },
+    {
+      "id": "toyama-next-plan",
+      "layer": "plan_transition",
+      "title": "富山市総合計画",
+      "official_url": "https://www.city.toyama.lg.jp/shisei/seisaku/1010738/1011468/1002415/index.html",
+      "status": "official_landing_verified",
+      "effective_period": "第3次総合計画策定作業中",
+      "review_boundary": "第2次計画がFY2026末で終了し第3次計画策定中であることを確認するtransition evidence。draftをcurrent planへ昇格しない。"
+    }
+  ],
+  "availability_boundary": "第2次富山市総合計画後期基本計画は2026年度が最終年度で、同時に第3次総合計画が策定中。FY2026実施計画・予算・現行実績と次期計画draftを別versionとして保持する。",
+  "quality_boundary": "This Phase 14 inventory verifies Toyama's final-year 2022-2026 latter basic plan, FY2026 implementation plan, FY2026 budget-proposal route, FY2024 settlement route, and active next-plan transition. It does not promote draft next-plan content, project results, fiscal values, achievement judgments, causal attribution, or cross-city comparability.",
+  "next_action": "Phase 15で後期基本計画の施策・指標、FY2026実施計画事業、現行年度進捗、FY2026予算lineage、FY2024決算、第3次計画とのversion transitionをEvidence化する。",
+  "verified_at": "2026-09-30"
+}
