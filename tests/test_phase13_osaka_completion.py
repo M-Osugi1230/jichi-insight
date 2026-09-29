@@ -153,7 +153,7 @@ def test_osaka_manifest_keeps_non_inference_boundaries():
     assert manifest["status"] == "review_in_progress"
     assert len(manifest["reviewed_facts"]) == 9
     assert len(manifest["remaining_work"]) == 4
-    assert "FY2025 self-evaluations are not reused as FY2026 actuals" in manifest["quality_boundary"]
+    assert (\n        "FY2025 self-evaluations are not reused as FY2026 actuals"\n        in manifest["quality_boundary"]\n    )
     assert "No citywide aggregate achievement score" in manifest["quality_boundary"]
     assert "causal attribution" in manifest["quality_boundary"]
 
