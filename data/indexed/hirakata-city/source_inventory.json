@@ -1,0 +1,73 @@
+{
+  "id": "phase14-hirakata-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "272108",
+  "standard_area_code": "27210",
+  "name_ja": "枚方市",
+  "prefecture_name_ja": "大阪府",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第5次枚方市総合計画",
+    "start_fiscal_year": 2016,
+    "end_fiscal_year": null,
+    "period_status": "verified_no_fixed_end"
+  },
+  "sources": [
+    {
+      "id": "hirakata-fifth-plan",
+      "layer": "comprehensive_plan",
+      "title": "第5次枚方市総合計画について",
+      "official_url": "https://www.city.hirakata.osaka.jp/0000007699.html",
+      "status": "official_landing_verified",
+      "effective_period": "基本構想 2016年度開始・計画期間を設定せず",
+      "review_boundary": "長期的な基本構想が固定終期を設定しない構造をそのまま保持し、便宜的な終了年度を推測で付与しない。"
+    },
+    {
+      "id": "hirakata-third-action-plan",
+      "layer": "implementation_plan",
+      "title": "第3期実行計画＜令和6年度～令和9年度＞",
+      "official_url": "https://www.city.hirakata.osaka.jp/0000049873.html",
+      "status": "official_landing_verified",
+      "effective_period": "2024年度～2027年度",
+      "review_boundary": "28施策目標と4計画推進を4年間で具体化する実行計画。基本構想の無期限性と実行計画の固定期間を分離する。"
+    },
+    {
+      "id": "hirakata-action-plan-update",
+      "layer": "progress_governance",
+      "title": "第3期実行計画＜令和6年度～令和9年度＞の更新内容",
+      "official_url": "https://www.city.hirakata.osaka.jp/0000051624.html",
+      "status": "official_landing_verified",
+      "available_periods": [
+        "2026年更新"
+      ],
+      "review_boundary": "実行計画の更新・見直しを確認する公式入口。更新内容を政策達成や政策効果の独自判定へ変換しない。"
+    },
+    {
+      "id": "hirakata-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算",
+      "official_url": "https://www.city.hirakata.osaka.jp/0000053350.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算の公式入口。実行計画施策との財政接続はofficial identity確認後のみ昇格する。"
+    },
+    {
+      "id": "hirakata-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度決算",
+      "official_url": "https://www.city.hirakata.osaka.jp/0000052610.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算の公式入口。実行計画更新・施策評価と財政決算を別Evidence roleとして保持する。"
+    }
+  ],
+  "availability_boundary": "第5次総合計画の基本構想は2016年度開始で固定終期を設けず、第3期実行計画は2024～2027年度の4年間。この異なるperiod semanticsを同一期間に正規化しない。",
+  "quality_boundary": "This Phase 14 inventory preserves Hirakata's no-fixed-end fifth comprehensive-plan basic concept alongside the fixed 2024-2027 third action plan, its update route, FY2026 budget, and FY2024 settlement. It does not infer a comprehensive-plan end year or convert municipal updates and fiscal evidence into achievement or causal judgments.",
+  "next_action": "Phase 15で基本構想・基本計画の施策体系、28施策目標・4計画推進、実行計画更新、FY2026予算、FY2024決算をperiod semanticsを維持してEvidence化する。",
+  "verified_at": "2026-09-30"
+}
