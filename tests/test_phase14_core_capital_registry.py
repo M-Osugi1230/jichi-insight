@@ -26,7 +26,7 @@ def validate(schema_path: Path, instance):
 
 def check_digit(code5: str) -> str:
     weights = (6, 5, 4, 3, 2)
-    total = sum(int(digit) * weight for digit, weight in zip(code5, weights))
+    total = sum(int(digit) * weight for digit, weight in zip(code5, weights, strict=True))
     remainder = 11 - (total % 11)
     if remainder >= 10:
         remainder = 0
