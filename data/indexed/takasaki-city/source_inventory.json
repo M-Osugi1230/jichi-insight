@@ -1,0 +1,61 @@
+{
+  "id": "phase14-takasaki-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "102024",
+  "standard_area_code": "10202",
+  "name_ja": "高崎市",
+  "prefecture_name_ja": "群馬県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "高崎市第6次総合計画",
+    "start_fiscal_year": 2018,
+    "end_fiscal_year": null,
+    "period_status": "transition_or_unresolved"
+  },
+  "sources": [
+    {
+      "id": "takasaki-sixth-plan",
+      "layer": "comprehensive_plan",
+      "title": "高崎市第6次総合計画",
+      "official_url": "https://www.city.takasaki.gunma.jp/page/3404.html",
+      "status": "official_landing_verified",
+      "effective_period": "2018年度～（公式landingで終期を別途確認要）",
+      "review_boundary": "2018年度からの基本方針であることを確認する一方、公式landing本文で終期を明示確認できないため、終期を推測で補完しない。"
+    },
+    {
+      "id": "takasaki-project-progress-rule",
+      "layer": "progress_governance",
+      "title": "高崎市総合計画指定事業進行管理要綱",
+      "official_url": "https://www.city.takasaki.gunma.jp/reiki/reiki_honbun/e203RG00000083.html",
+      "status": "official_document_verified",
+      "review_boundary": "総合計画実施計画の指定事業を進行管理する制度根拠を確認する。制度の存在だけから個別事業の達成状態を推測しない。"
+    },
+    {
+      "id": "takasaki-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算が決定",
+      "official_url": "https://www.city.takasaki.gunma.jp/site/digital/87837.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026予算が決定した公式入口。予算額、補正、執行、決算はPhase 15でstageを分離してレビューする。"
+    },
+    {
+      "id": "takasaki-settlement-2024",
+      "layer": "settlement_and_major_measures",
+      "title": "令和6年度決算概要",
+      "official_url": "https://www.city.takasaki.gunma.jp/site/digital/75480.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算認定と主な事業の公式入口。財政値・事業説明・健全化指標を同一の政策成果指標へ統合しない。"
+    }
+  ],
+  "availability_boundary": "第6次総合計画は2018年度開始を公式landingで確認したが、このSource Inventoryでは終期を確定できる公式HTML根拠を別途固定していないためnullを維持する。進行管理制度は個別成果の代替ではない。",
+  "quality_boundary": "This Phase 14 inventory preserves Takasaki's official plan-start fact without inventing an unverified end year, verifies the designated-project progress-governance rule, FY2026 enacted-budget route, and FY2024 settlement route. It remains indexed_not_reviewed and makes no independent achievement, causal, fiscal-effect, or cross-city judgment.",
+  "next_action": "Phase 15で第6次総合計画本文から期間・政策体系・実施計画をpage-level Evidenceで確定し、指定事業進行管理、FY2026予算、FY2024決算を個票接続する。",
+  "verified_at": "2026-09-30"
+}
