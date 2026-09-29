@@ -155,7 +155,7 @@
       "official_code": "331007",
       "name_ja": "岡山市",
       "prefecture_name_ja": "岡山県",
-      "status": "review_in_progress",
+      "status": "reviewed_complete",
       "source_inventory_path": "data/indexed/okayama-city/source_inventory.json"
     },
     {
@@ -163,7 +163,7 @@
       "official_code": "341002",
       "name_ja": "広島市",
       "prefecture_name_ja": "広島県",
-      "status": "pending_record_review",
+      "status": "review_in_progress",
       "source_inventory_path": "data/indexed/hiroshima-city/source_inventory.json"
     },
     {
@@ -181,10 +181,10 @@
     "reviewed_reference_count": 2,
     "eligible_review_queue_count": 18,
     "blocked_source_inventory_count": 0,
-    "reviewed_complete_count": 15,
+    "reviewed_complete_count": 16,
     "review_in_progress_count": 1,
-    "pending_record_review_count": 2,
-    "next_official_code": "331007"
+    "pending_record_review_count": 1,
+    "next_official_code": "341002"
   },
   "updated_at": "2026-09-29"
 }
