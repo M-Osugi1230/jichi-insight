@@ -1,0 +1,74 @@
+{
+  "id": "phase14-yokosuka-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "142018",
+  "standard_area_code": "14201",
+  "name_ja": "横須賀市",
+  "prefecture_name_ja": "神奈川県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "YOKOSUKAビジョン2030",
+    "start_fiscal_year": 2022,
+    "end_fiscal_year": 2029,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "yokosuka-vision-2030",
+      "layer": "comprehensive_plan",
+      "title": "YOKOSUKAビジョン2030（基本構想・基本計画）",
+      "official_url": "https://www.city.yokosuka.kanagawa.jp/shisei/unei/vision/index.html",
+      "status": "official_landing_verified",
+      "effective_period": "2022年度～2029年度",
+      "review_boundary": "基本構想・基本計画を一体化した現行最上位計画として保持し、旧3層型総合計画と構造を混在させない。"
+    },
+    {
+      "id": "yokosuka-rebirth-plan-2026-2029",
+      "layer": "implementation_plan",
+      "title": "横須賀再興プラン2026～2029",
+      "official_url": "https://www.city.yokosuka.kanagawa.jp/shisei/unei/plan/index.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2029年度",
+      "review_boundary": "YOKOSUKAビジョンを具体化する現行実施計画。策定案と確定版、旧実施計画をversion分離する。"
+    },
+    {
+      "id": "yokosuka-administrative-evaluation",
+      "layer": "annual_progress",
+      "title": "行政評価",
+      "official_url": "https://www.city.yokosuka.kanagawa.jp/shisei/unei/hyoka/index.html",
+      "status": "official_landing_verified",
+      "available_periods": [
+        "2025年度",
+        "2026年度"
+      ],
+      "review_boundary": "実施計画の進行管理と事務事業等総点検の公式入口。source-reported進捗・外部助言を独自評価へ変換しない。"
+    },
+    {
+      "id": "yokosuka-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度当初予算案の概要",
+      "official_url": "https://www.city.yokosuka.kanagawa.jp/1610/nagekomi/20260212_saikoplan_r8yosan.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026予算案と実施計画案の公式入口。proposalとenacted stateを混同せず、Phase 15で議決結果を別Evidenceとして確認する。"
+    },
+    {
+      "id": "yokosuka-settlement-audit-2024",
+      "layer": "settlement_and_audit",
+      "title": "令和6年度決算審査",
+      "official_url": "https://www.city.yokosuka.kanagawa.jp/8810/kansa/documents/r6kextusannippann_ikensyo.pdf",
+      "status": "official_document_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024一般・特別会計決算審査の公式資料。決算値、監査意見、政策進行管理を別Evidence roleで保持する。"
+    }
+  ],
+  "availability_boundary": "YOKOSUKAビジョン2030は基本構想・基本計画を一体化した2層型構造で、2026～2029実施計画と行政評価が別に存在する。FY2026予算はproposal/enacted境界を維持する。",
+  "quality_boundary": "This Phase 14 inventory preserves Yokosuka's two-layer comprehensive-planning model, current 2026-2029 implementation plan, administrative-evaluation route, FY2026 budget-proposal route, and FY2024 settlement-audit route. It does not collapse proposal/enactment, municipal evaluation, audit, or fiscal evidence into independent achievement or causal judgments.",
+  "next_action": "Phase 15でビジョンの政策・指標、横須賀再興プラン事業、行政評価、FY2026予算の議決lineage、FY2024決算・監査意見をEvidence role別にレビューする。",
+  "verified_at": "2026-09-30"
+}
