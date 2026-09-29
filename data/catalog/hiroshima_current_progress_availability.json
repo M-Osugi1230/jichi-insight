@@ -1,0 +1,19 @@
+{
+  "id": "hiroshima-current-progress-availability",
+  "phase": 13,
+  "official_code": "341002",
+  "name_ja": "広島市",
+  "review_status": "reviewed_pdca_governance_and_separate_result_boundary",
+  "implementation_period": "2025年度～2030年度",
+  "governance": {
+    "model": "kpi_external_input_pdca",
+    "source_id": "hiroshima-pdca-current",
+    "external_input": "広島の拠点性強化に向けた懇話会ワーキンググループ会議等",
+    "plan_revision_possible": true
+  },
+  "current_separate_annual_result": {
+    "status": "not_separately_identified_in_declared_v1_sources",
+    "boundary": "PDCA実施方針・KPI資料・計画改訂を、独立した年度実績packageの存在と同一視しない。"
+  },
+  "quality_boundary": "現行実施計画のPDCA governanceは確認済み。v1で公式に独立識別できないannual-result recordは未接続のまま保持し、推測補完しない。"
+}
