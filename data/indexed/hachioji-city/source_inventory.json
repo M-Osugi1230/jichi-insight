@@ -1,0 +1,70 @@
+{
+  "id": "phase14-hachioji-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "132012",
+  "standard_area_code": "13201",
+  "name_ja": "八王子市",
+  "prefecture_name_ja": "東京都",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "八王子未来デザイン2040",
+    "start_fiscal_year": 2023,
+    "end_fiscal_year": 2030,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "hachioji-future-design",
+      "layer": "comprehensive_plan",
+      "title": "八王子未来デザイン2040",
+      "official_url": "https://www.city.hachioji.tokyo.jp/shisei/001/001/005/001/p031827.html",
+      "status": "official_landing_verified",
+      "effective_period": "2023年度～2030年度",
+      "review_boundary": "現行基本構想・基本計画を確認し、計画名の2040という将来像年と基本計画期間を混同しない。"
+    },
+    {
+      "id": "hachioji-management-plan",
+      "layer": "implementation_plan",
+      "title": "経営計画・アクションプラン",
+      "official_url": "https://www.city.hachioji.tokyo.jp/shisei/001/001/005/001/p031841.html",
+      "status": "official_landing_verified",
+      "effective_period": "2023年度～2026年度",
+      "review_boundary": "実施事業をまとめる経営計画・Action Planを別layerとして保持し、総合計画本体とversionを分離する。"
+    },
+    {
+      "id": "hachioji-administrative-evaluation",
+      "layer": "progress_governance",
+      "title": "行政評価",
+      "official_url": "https://www.city.hachioji.tokyo.jp/shisei/001/004/004/001/p007406.html",
+      "status": "official_landing_verified",
+      "review_boundary": "現行計画に対応する行政評価の公式入口。自治体自己評価をJichi Insight独自の達成判定へ変換しない。"
+    },
+    {
+      "id": "hachioji-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算の概要",
+      "official_url": "https://www.city.hachioji.tokyo.jp/shisei/001/010/001/001/p037011.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算の公式入口。補正・執行・決算とstate分離する。"
+    },
+    {
+      "id": "hachioji-financial-disclosure",
+      "layer": "settlement",
+      "title": "財政状況の公表",
+      "official_url": "https://www.city.hachioji.tokyo.jp/shisei/001/010/001/007/p007409.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算を含む財政状況の公式入口。政策評価と財政指標を統合スコアへ変換しない。"
+    }
+  ],
+  "availability_boundary": "八王子未来デザイン2040という名称の将来像年と、現行基本計画の2023～2030年度、経営計画2023～2026年度は異なる期間。行政評価も別Evidence roleとして保持する。",
+  "quality_boundary": "This Phase 14 inventory verifies Hachioji's current comprehensive plan, shorter management/action plan, administrative-evaluation route, FY2026 budget, and FY2024 financial/settlement route. It preserves period differences and does not convert municipal evaluation or fiscal evidence into independent achievement, causal, or comparison judgments.",
+  "next_action": "Phase 15で基本計画の政策・指標、経営計画事業、行政評価、FY2026予算、FY2024決算をperiod/version/source位置付きrecord-level Evidenceへ展開する。",
+  "verified_at": "2026-09-30"
+}
