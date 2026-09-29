@@ -1,0 +1,65 @@
+[
+  {
+    "id": "jp-local-271004-fiscal-2026-total-revenue",
+    "municipality_id": "jp-local-271004",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_revenue",
+    "metric_label": "一般会計当初予算（市会議決済）",
+    "amount_yen": 2188221000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "令和8年度当初予算の一般会計2,188,221百万円を円換算。市会で原案どおり可決。補正・執行・決算とは別state。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "osaka-budget-2026-enacted"
+    ]
+  },
+  {
+    "id": "jp-local-271004-fiscal-2024-total-revenue",
+    "municipality_id": "jp-local-271004",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入決算額",
+    "amount_yen": 2090062147558,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "令和6年度大阪市決算の一般会計歳入を円単位で保存。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "osaka-settlement-2024-exact"
+    ]
+  },
+  {
+    "id": "jp-local-271004-fiscal-2024-total-expenditure",
+    "municipality_id": "jp-local-271004",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出決算額",
+    "amount_yen": 2065562115148,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "令和6年度大阪市決算の一般会計歳出を円単位で保存。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "osaka-settlement-2024-exact"
+    ]
+  }
+]
