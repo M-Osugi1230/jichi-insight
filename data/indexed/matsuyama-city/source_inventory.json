@@ -1,0 +1,65 @@
+{
+  "id": "phase14-matsuyama-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "382019",
+  "standard_area_code": "38201",
+  "name_ja": "松山市",
+  "prefecture_name_ja": "愛媛県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city",
+    "prefectural_capital"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第7次松山市総合計画",
+    "start_fiscal_year": 2025,
+    "end_fiscal_year": 2034,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "matsuyama-seventh-plan",
+      "layer": "comprehensive_and_implementation_plan",
+      "title": "第7次松山市総合計画",
+      "official_url": "https://www.city.matsuyama.ehime.jp/shisei/keikaku/sogokeikaku/7jisogokeikaku.html",
+      "status": "official_landing_verified",
+      "effective_period": "総合計画 2025年度～2034年度・実施計画 2025年度～2027年度",
+      "review_boundary": "10年間の基本構想・基本計画と3年間の実施計画を別periodとして保持し、第6次計画の振り返りをcurrent actualへ流用しない。"
+    },
+    {
+      "id": "matsuyama-citizen-survey",
+      "layer": "progress_governance",
+      "title": "第7次松山市総合計画 市民意識調査",
+      "official_url": "https://www.city.matsuyama.ehime.jp/shisei/keikaku/sogokeikaku/7jisogokeikaku.html",
+      "status": "official_landing_verified",
+      "available_periods": [
+        "基準値設定・進捗把握"
+      ],
+      "review_boundary": "市民の実感・現状を把握する調査を進行管理Evidenceとして保持し、主観指標を客観成果や独自政策達成度へ変換しない。"
+    },
+    {
+      "id": "matsuyama-budget-2026",
+      "layer": "budget",
+      "title": "予算（事業概要、予算額等）",
+      "official_url": "https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/yosan.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初・3月・6月・9月補正等の公式入口。initialとsupplementary budgetを別stateで保持する。"
+    },
+    {
+      "id": "matsuyama-settlement-audit-2024",
+      "layer": "settlement_and_audit",
+      "title": "各会計決算審査意見",
+      "official_url": "https://www.city.matsuyama.ehime.jp/shisei/kansa/kakukaikeikessan.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024一般・特別会計決算審査意見の公式入口。旧第6次計画期間の決算・監査を第7次計画current actualへ流用しない。"
+    }
+  ],
+  "availability_boundary": "第7次総合計画は2025～2034年度、実施計画は2025～2027年度。市民意識調査は進行管理用の主観指標で、FY2024決算・監査は旧第6次計画期間に属するためversion/Evidence roleを分離する。",
+  "quality_boundary": "This Phase 14 inventory verifies Matsuyama's 2025-2034 seventh comprehensive plan, 2025-2027 implementation layer, citizen-survey progress route, FY2026 budget states, and FY2024 prior-plan settlement/audit route. Subjective survey measures and audit evidence are not converted into independent policy achievement, causal, or comparison judgments.",
+  "next_action": "Phase 15で政策・施策・指標、2025～2027実施計画事業、市民意識調査、FY2026予算・補正、旧第6次計画下FY2024決算・監査をEvidence role別にレビューする。",
+  "verified_at": "2026-09-30"
+}
