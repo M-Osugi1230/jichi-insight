@@ -76,17 +76,17 @@ def test_phase15_initial_statuses_are_canonical():
     statuses = Counter(row["status"] for row in queue["execution_queue"])
 
     assert statuses == {
-        "reviewed_complete": 1,
+        "reviewed_complete": 2,
         "review_in_progress": 1,
-        "pending_record_review": 65,
+        "pending_record_review": 64,
     }
     assert queue["summary"] == {
         "target_count": 67,
-        "reviewed_complete_count": 1,
+        "reviewed_complete_count": 2,
         "review_in_progress_count": 1,
-        "pending_record_review_count": 65,
+        "pending_record_review_count": 64,
         "blocked_source_inventory_count": 0,
-        "next_official_code": "012041",
+        "next_official_code": "022012",
     }
 
     completed = [
@@ -94,9 +94,9 @@ def test_phase15_initial_statuses_are_canonical():
         for row in queue["execution_queue"]
         if row["status"] == "reviewed_complete"
     ]
-    assert len(completed) == 1
-    assert completed[0]["name_ja"] == "函館市"
+    assert [row["name_ja"] for row in completed] == ["函館市", "旭川市"]
     assert completed[0]["completion_path"] == "data/catalog/hakodate_phase15_completion.json"
+    assert completed[1]["completion_path"] == "data/catalog/asahikawa_phase15_completion.json"
 
     current = [
         row
@@ -104,9 +104,9 @@ def test_phase15_initial_statuses_are_canonical():
         if row["status"] == "review_in_progress"
     ]
     assert len(current) == 1
-    assert current[0]["name_ja"] == "旭川市"
-    assert current[0]["official_code"] == "012041"
-    assert current[0]["sequence"] == 2
+    assert current[0]["name_ja"] == "青森市"
+    assert current[0]["official_code"] == "022012"
+    assert current[0]["sequence"] == 3
     assert current[0]["wave"] == 1
     assert current[0]["completion_path"] is None
 
