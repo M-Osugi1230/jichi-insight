@@ -1,0 +1,81 @@
+{
+  "id": "hakodate-phase15-sources",
+  "phase": 15,
+  "official_code": "012025",
+  "name_ja": "函館市",
+  "reviewed_at": "2026-10-01",
+  "sources": [
+    {
+      "id": "hakodate-current-plan-page",
+      "evidence_role": "current_plan_identity",
+      "title": "函館市総合計画（2017～2026）について",
+      "official_url": "https://www.city.hakodate.hokkaido.jp/docs/2016122100014/",
+      "format": "html",
+      "evidence_location": "本文『函館市基本構想（2017-2026）』『第5章 将来像実現に向けた取組の方向性』『2 基本目標と施策の体系』",
+      "use_boundary": "現行基本構想の期間、2重点プロジェクト、5基本目標、20施策の構造をレビューする。次期基本構想の内容はcurrent planとして扱わない。"
+    },
+    {
+      "id": "hakodate-third-strategy-pdf",
+      "evidence_role": "implementation_and_evaluation_design",
+      "title": "第3期函館市活性化総合戦略 2025-2029",
+      "official_url": "https://www.city.hakodate.hokkaido.jp/docs/2025012400035/file_contents/3kisenryaku.pdf",
+      "format": "pdf",
+      "evidence_location": "PDF page 3『2 本戦略の位置づけ』、PDF page 5 / printed p.3『4 計画期間』『5 評価と検証』、PDF page 6 / printed p.4『第2期総合戦略の評価について』",
+      "use_boundary": "第3期戦略が基本構想実施計画を兼ねること、2025～2029の期間、内部・外部評価設計をレビューする。第2期の評価値はhistorical evidenceとしてのみ保持する。"
+    },
+    {
+      "id": "hakodate-strategy-governance-page",
+      "evidence_role": "progress_accountability",
+      "title": "函館市まち・ひと・しごと創生推進会議",
+      "official_url": "https://www.city.hakodate.hokkaido.jp/docs/2016072600039/",
+      "format": "html",
+      "evidence_location": "令和7年度第1回 会議資料・評価結果",
+      "use_boundary": "第2期実績評価と第3期KPI・事業一覧を同じ会議routeで確認するが、第2期評価を第3期current actualへ流用しない。"
+    },
+    {
+      "id": "hakodate-next-plan-public-comment",
+      "evidence_role": "plan_transition",
+      "title": "函館市基本構想（2027～2036）（素案）パブリックコメント",
+      "official_url": "https://www.city.hakodate.hokkaido.jp/docs/2026081400025/",
+      "format": "html",
+      "evidence_location": "『募集期間』『概要・趣旨・背景』『政策の案等』",
+      "use_boundary": "2027～2036次期基本構想は2026-09-07～2026-10-21意見募集中の素案。採択済みcurrent planへ昇格しない。"
+    },
+    {
+      "id": "hakodate-budget-2026-page",
+      "evidence_role": "budget_index",
+      "title": "函館市の予算",
+      "official_url": "https://www.city.hakodate.hokkaido.jp/docs/2014022600122/",
+      "format": "html",
+      "evidence_location": "令和8(2026)年度",
+      "use_boundary": "FY2026当初予算資料と各補正予算の公式入口。initialとsupplementaryを別stateで扱う。"
+    },
+    {
+      "id": "hakodate-budget-2026-pdf",
+      "evidence_role": "initial_budget",
+      "title": "令和8（2026）年度 函館市各会計予算（案）資料",
+      "official_url": "https://www.city.hakodate.hokkaido.jp/docs/2014022600122/file_contents/R8_kisyakaikennshiryou.pdf",
+      "format": "pdf",
+      "evidence_location": "PDF page 8 / printed p.7『各会計予算（案）総括表』一般会計",
+      "use_boundary": "一般会計154,100,000千円を当初予算案として円換算する。補正後予算、執行額、決算額とは結合しない。"
+    },
+    {
+      "id": "hakodate-settlement-2024-audit-page",
+      "evidence_role": "settlement_audit_index",
+      "title": "決算審査",
+      "official_url": "https://www.city.hakodate.hokkaido.jp/docs/2014012900195/",
+      "format": "html",
+      "evidence_location": "令和6（2024）年度決算 > 各会計歳入歳出決算審査意見",
+      "use_boundary": "FY2024決算の監査委員審査意見書への公式入口として保持する。"
+    },
+    {
+      "id": "hakodate-settlement-2024-audit-pdf",
+      "evidence_role": "settlement",
+      "title": "令和6（2024）年度函館市各会計歳入歳出決算審査意見",
+      "official_url": "https://www.city.hakodate.hokkaido.jp/docs/2014012900195/file_contents/R6kessannshinnsa.pdf",
+      "format": "pdf",
+      "evidence_location": "PDF page 12 / printed p.6『(2) 決算収支の状況』一般会計",
+      "use_boundary": "一般会計の収入済額144,921,264,078円、支出済額142,388,719,238円をexact source valueとして保持する。"
+    }
+  ]
+}
