@@ -171,16 +171,13 @@ def test_hakodate_completion_quality_gate_and_deferred_depth_are_explicit():
     assert "ランキング" in boundary
 
 
-def test_hakodate_is_complete_and_asahikawa_is_next():
+def test_hakodate_remains_reviewed_complete_as_queue_advances():
     queue = load(QUEUE)
     by_code = {row["official_code"]: row for row in queue["execution_queue"]}
 
-    assert by_code["012025"]["status"] == "reviewed_complete"
-    assert by_code["012025"]["completion_path"] == (
+    hakodate = by_code["012025"]
+    assert hakodate["status"] == "reviewed_complete"
+    assert hakodate["completion_path"] == (
         "data/catalog/hakodate_phase15_completion.json"
     )
-    assert by_code["012041"]["status"] == "review_in_progress"
-    assert queue["summary"]["reviewed_complete_count"] == 1
-    assert queue["summary"]["review_in_progress_count"] == 1
-    assert queue["summary"]["pending_record_review_count"] == 65
-    assert queue["summary"]["next_official_code"] == "012041"
+    assert (ROOT / hakodate["completion_path"]).is_file()
