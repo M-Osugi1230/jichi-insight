@@ -6,7 +6,7 @@ Jichi Insight（自治体インサイト）は、自治体が公開する政策�
 
 ## Product status
 
-`Phase 14 complete / Phase 13 complete / 47 prefectures complete / 20 designated cities reviewed / pre-alpha`
+`Phase 15 active / Phase 14 complete / 20 designated cities reviewed / 47 prefectures complete / pre-alpha`
 
 - 全国47都道府県: Phase 11まで完了
 - Phase 11個票基盤: 47都道府県・15,327レコード
@@ -20,6 +20,9 @@ Jichi Insight（自治体インサイト）は、自治体が公開する政策�
 - Phase 14 Source Inventory in progress: 0
 - Phase 14 Pending Source Inventory: 0
 - Phase 14 Reviewed promotion: 0（record-level reviewはPhase 15）
+- Phase 15 Reviewed complete: 1 / 67（函館市）
+- Phase 15 Review in progress: 1（旭川市）
+- Phase 15 Pending record review: 65
 - 千葉市現行計画: 189 / 189事業identity、406 work itemsをstructured化済み
 - 千葉市旧計画: 360 / 360事業identity、再掲68 / 68を一次identityへ解決済み
 - 千葉市Versioned Linkage: 構造的一致60関係＋公式PDF手動確認6関係、計66関係をReviewed continuedとして昇格
@@ -28,7 +31,7 @@ Jichi Insight（自治体インサイト）は、自治体が公開する政策�
 
 Phase 10で全国47都道府県の共通文書スコープ、Phase 11で個票レベルのReviewed接続またはReviewed最大到達深度、Phase 12で20政令指定都市の公式Source Inventory、Phase 13で全20政令指定都市のv1 record-review foundationを完成させました。北九州市・福岡市をReviewed referenceとして保持し、残る18市は自治体別completion contractまで到達しています。公式資料が不足・未公表・未解決の場合も推測で埋めず、何が未接続かを明示します。
 
-進捗の正本は `data/catalog/phase14_core_capital_execution_queue.json`、`data/catalog/phase14_core_capital_target_registry.json`、各Phase completion manifestです。READMEは人向けの要約であり、状態が競合する場合はmachine-readable catalogを優先します。
+進捗の正本は `data/catalog/phase15_core_capital_review_queue.json`、Phase 14 registry/completion、各自治体completion contractです。READMEは人向けの要約であり、状態が競合する場合はmachine-readable catalogを優先します。
 
 ## Evidence chain
 
@@ -218,6 +221,31 @@ Wave 1～8の全67自治体を完了しました。最終Wave 8では久留米�
 - [`data/catalog/phase14_completion.json`](data/catalog/phase14_completion.json)
 - [`schemas/phase14_completion.schema.json`](schemas/phase14_completion.schema.json)
 - [`tests/test_phase14_completion.py`](tests/test_phase14_completion.py)
+
+
+## Phase 15 — Core cities and prefectural capitals record review
+
+Status: `in_progress`（2026-10-01）
+
+Phase 14でSource Inventoryを完了した67自治体を、record-level Evidenceとdeclared review packageに基づいてReviewed化します。
+
+- Reviewed complete: 1 / 67（函館市）
+- Review in progress: 1（旭川市）
+- Pending record review: 65
+- Blocked source inventory: 0
+- 独自の政策達成評価: 0件
+- 因果効果の独自判定: 0件
+- 比較可能性未確認の都市ランキング: 0件
+
+函館市では、現行基本構想2017～2026の2重点プロジェクト・5基本目標・20施策、第3期函館市活性化総合戦略2025～2029の実施計画/評価設計、次期基本構想2027～2036のdraft transition、FY2026一般会計当初予算案、FY2024一般会計決算トップラインをEvidence locator付きでレビューしました。第3期戦略の個別KPI/current actual、次期構想の採択後内容、財政detail等はdeferred depthとして残しています。
+
+正本:
+
+- [`data/catalog/phase15_core_capital_review_queue.json`](data/catalog/phase15_core_capital_review_queue.json)
+- [`schemas/phase15_core_capital_review_queue.schema.json`](schemas/phase15_core_capital_review_queue.schema.json)
+- [`schemas/phase15_municipality_completion.schema.json`](schemas/phase15_municipality_completion.schema.json)
+- [`data/catalog/hakodate_phase15_completion.json`](data/catalog/hakodate_phase15_completion.json)
+- [Phase 15 methodology](docs/PHASE15_CORE_CAPITAL_REVIEW.md)
 
 ## Repository map
 
