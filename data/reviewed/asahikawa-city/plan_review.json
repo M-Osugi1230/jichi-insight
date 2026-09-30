@@ -1,0 +1,72 @@
+{
+  "id": "phase15-asahikawa-plan-review",
+  "official_code": "012041",
+  "name_ja": "旭川市",
+  "review_status": "reviewed",
+  "reviewed_at": "2026-10-01",
+  "records": [
+    {
+      "id": "asahikawa-current-plan-period",
+      "evidence_role": "current_plan_identity",
+      "title": "第8次旭川市総合計画",
+      "statement": "基本構想および基本計画の期間は2016年度から2027年度までの12年間。",
+      "source_url": "https://www.city.asahikawa.hokkaido.jp/700/735/736/738/p006642.html",
+      "evidence_location": "本文『総合計画の構成及び期間』",
+      "decision": "accepted",
+      "review_note": "基本計画は原則4年ごとに見直す。策定当初版と令和5年12月改定版をversion分離する。"
+    },
+    {
+      "id": "asahikawa-current-plan-structure",
+      "evidence_role": "policy_structure",
+      "title": "第8次旭川市総合計画基本計画 令和5年12月改定版",
+      "statement": "現行改定版は5基本目標、13基本政策、34施策、3重点テーマで構成される。",
+      "value": 34,
+      "unit": "measures",
+      "source_url": "https://www.city.asahikawa.hokkaido.jp/700/735/736/738/p006642_d/fil/kaiteiban-5-2.pdf",
+      "evidence_location": "PDF p.4『基本計画の趣旨・構成』、p.7『都市像の実現に向けての重点テーマ』",
+      "decision": "accepted",
+      "review_note": "13基本政策と3重点テーマは個別identityで保持。34施策の全名称は追加depth。"
+    },
+    {
+      "id": "asahikawa-third-promotion-plan-period",
+      "evidence_role": "implementation_layer",
+      "title": "第8次旭川市総合計画推進計画（令和6～9年度）令和8年6月改訂",
+      "statement": "第3期推進計画の期間は2024年度から2027年度で、構成する事業群は毎年度見直す。",
+      "source_url": "https://www.city.asahikawa.hokkaido.jp/700/735/736/738/d079836_d/fil/R8plan.pdf",
+      "evidence_location": "PDF p.1『推進計画の趣旨』、p.2『推進計画の期間』",
+      "decision": "accepted",
+      "review_note": "2024年5月策定、2025年6月改訂、2026年6月改訂を別versionとして保持する。"
+    },
+    {
+      "id": "asahikawa-pdca-evaluation-design",
+      "evidence_role": "progress_governance",
+      "title": "第8次旭川市総合計画推進計画（令和6～9年度）令和8年6月改訂",
+      "statement": "PDCAに基づき、行政評価等による個別事業評価、基本計画見直し時の施策評価、外部意見を取り入れた基本計画見直しを行う。",
+      "source_url": "https://www.city.asahikawa.hokkaido.jp/700/735/736/738/d079836_d/fil/R8plan.pdf",
+      "evidence_location": "PDF p.3『3 総合計画の進行管理』",
+      "decision": "accepted",
+      "review_note": "自治体の評価制度およびsource-reported達成率をJichi Insight独自評価へ変換しない。"
+    },
+    {
+      "id": "asahikawa-current-evaluation-indicator-publication",
+      "evidence_role": "annual_progress",
+      "title": "第8次旭川市総合計画推進計画（令和6～9年度）令和8年6月改訂",
+      "statement": "評価指標一覧には基準値、現状値、達成率、2027年度目標等が掲載されている。",
+      "source_url": "https://www.city.asahikawa.hokkaido.jp/700/735/736/738/d079836_d/fil/R8plan.pdf",
+      "evidence_location": "PDF p.66以降『評価指標』",
+      "decision": "accepted",
+      "review_note": "v1ではindicator appendixのsemanticsとavailabilityをreviewし、全行の個別value promotionはdeferred depthとする。"
+    },
+    {
+      "id": "asahikawa-successor-plan-preparation",
+      "evidence_role": "plan_transition",
+      "title": "第8次旭川市総合計画点検報告書",
+      "statement": "現行計画最終年度に向け、2025年度末の状況を基に成果指標の達成状況・成果・課題を把握し、新しい総合的な計画の策定に資する点検報告書が公表されている。",
+      "source_url": "https://www.city.asahikawa.hokkaido.jp/700/735/736/738/p006642.html",
+      "evidence_location": "本文『第8次旭川市総合計画点検報告書』",
+      "decision": "accepted",
+      "review_note": "次期計画の名称・期間・採択済み内容はこのEvidenceだけから推測しない。"
+    }
+  ],
+  "quality_boundary": "Current revised plan, implementation version, evaluation governance, published indicator appendix, and successor-plan preparation evidence are separated. Source-reported progress is not an independent policy-achievement judgment."
+}
