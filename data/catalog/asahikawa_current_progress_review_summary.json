@@ -1,0 +1,36 @@
+{
+  "id": "asahikawa-current-progress-review-summary",
+  "phase": 15,
+  "official_code": "012041",
+  "name_ja": "旭川市",
+  "reviewed_at": "2026-10-01",
+  "review_status": "reviewed_with_explicit_deferred_depth",
+  "current_promotion_plan": {
+    "title": "第8次旭川市総合計画推進計画（令和6～9年度）",
+    "period": "2024年度～2027年度",
+    "current_revision": "2026年6月改訂",
+    "design": {
+      "annual_project_group_revision": true,
+      "expansion_measure_project_groups": true,
+      "evaluation_indicators": true,
+      "pdca_cycle": true,
+      "individual_project_evaluation": "行政評価等",
+      "policy_evaluation_cycle": "基本計画見直しに合わせ原則4年ごと",
+      "external_input_for_basic_plan_review": true
+    },
+    "source_reported_indicator_appendix": {
+      "status": "official_current_values_and_achievement_rates_published",
+      "boundary": "2026年6月改訂版の評価指標一覧には基準値・現状値・達成率・2027年度目標等が掲載される。Phase 15 v1では一覧の存在・semanticsをreviewし、全指標の個別identity/value promotionは追加depthとする。"
+    }
+  },
+  "current_plan_inspection": {
+    "status": "official_report_published",
+    "reference_period": "2025年度末状況（一部統計を除く）",
+    "purpose": "現行計画の成果指標達成状況・成果・課題の把握と、新しい総合的な計画策定への活用",
+    "boundary": "点検報告書の自治体評価を独自政策達成判定へ変換せず、次期計画は採択済みcurrent planとして扱わない。"
+  },
+  "successor_plan_transition": {
+    "status": "preparation_evidence_only",
+    "boundary": "公式現行計画ページは点検報告書を『新しい総合的な計画の策定に資する』ものとして公表している。次期計画の名称・期間・採択済み内容を推測で補完しない。"
+  }
+}

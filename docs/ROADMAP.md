@@ -903,11 +903,11 @@ Phase 14で`source_inventory_complete`となった67自治体を、record-level 
 
 Canonical status:
 
-- Reviewed complete: 1 / 67（函館市）
-- Review in progress: 1（旭川市）
-- Pending record review: 65
+- Reviewed complete: 2 / 67（函館市、旭川市）
+- Review in progress: 1（青森市）
+- Pending record review: 64
 - Blocked source inventory: 0
-- Next official code: 012041
+- Next official code: 022012
 
 ### Milestone P15-M1 — First reviewed-complete core city
 
@@ -929,11 +929,34 @@ v1 declared package:
 
 第3期戦略の個別KPI/current actual、現行20施策との細粒度linkage、次期構想の採択後内容、補正・執行・契約・補助金等はdeferred depthです。
 
-### Current work — Asahikawa record review
+### Milestone P15-M2 — Asahikawa reviewed package
+
+Status: `complete`（2026-10-01）
+
+旭川市をPhase 15の2市目の`reviewed_complete`自治体として確定しました。
+
+v1 declared package:
+
+- 第8次旭川市総合計画 2016～2027
+- 基本計画 令和5年12月改定版
+- 5基本目標
+- 13基本政策
+- 34施策
+- 3重点テーマ
+- 第3期推進計画 2024～2027・2026年6月改訂版
+- 毎年度事業群見直し、PDCA、行政評価、4年ごとの施策評価
+- 現行推進計画の評価指標appendix availabilityをreview
+- FY2026一般会計当初予算 181,800,000,000円
+- FY2024一般会計収入済額 182,479,594,406円
+- FY2024一般会計支出済額 180,794,635,444円
+
+評価指標全件の個別identity/value、展開施策・事業群の全件年度差分、34施策の全成果指標、次期計画確定内容、補正・執行・契約・補助金等はdeferred depthです。
+
+### Current work — Aomori record review
 
 Status: `in_progress`
 
-旭川市（012041）を次の対象としてレビューします。
+青森市（022012）を次の対象としてレビューします。
 
 正本:
 
@@ -943,6 +966,8 @@ Status: `in_progress`
 - `tests/test_phase15_core_capital_review_queue.py`
 - `data/catalog/hakodate_phase15_completion.json`
 - `tests/test_hakodate_phase15_review.py`
+- `data/catalog/asahikawa_phase15_completion.json`
+- `tests/test_asahikawa_phase15_review.py`
 - `docs/PHASE15_CORE_CAPITAL_REVIEW.md`
 
 ## After Phase 15

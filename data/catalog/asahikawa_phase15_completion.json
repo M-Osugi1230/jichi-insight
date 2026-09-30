@@ -1,0 +1,77 @@
+{
+  "id": "asahikawa-phase15-completion",
+  "phase": 15,
+  "status": "reviewed_complete",
+  "official_code": "012041",
+  "name_ja": "旭川市",
+  "completed_at": "2026-10-01",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "source_catalog_path": "data/catalog/asahikawa_phase15_sources.json",
+    "plan_review_path": "data/reviewed/asahikawa-city/plan_review.json",
+    "policy_structure_path": "data/catalog/asahikawa_current_policy_structure.json",
+    "progress_review_path": "data/catalog/asahikawa_current_progress_review_summary.json",
+    "fiscal_records_path": "data/reviewed/asahikawa-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/asahikawa-city/evidence_packets.json",
+    "counts": {
+      "current_plan_basic_goals": 5,
+      "current_plan_basic_policies": 13,
+      "current_plan_measures": 34,
+      "current_plan_priority_themes": 3,
+      "current_promotion_plan_basic_policies": 13,
+      "current_indicator_values_promoted": 0,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "current_plan_period_reviewed": true,
+    "current_revised_policy_structure_reviewed": true,
+    "promotion_plan_current_revision_preserved": true,
+    "annual_project_group_revision_boundary_preserved": true,
+    "source_reported_evaluation_semantics_preserved": true,
+    "current_indicator_appendix_not_overpromoted": true,
+    "successor_plan_preparation_not_promoted": true,
+    "fiscal_states_and_years_separate": true,
+    "exact_settlement_precision_preserved": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "current-promotion-plan-indicator-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "2026年6月改訂版推進計画の評価指標一覧は基準値・現状値・達成率・2027年度目標を公開しているが、全指標の個別identity/value promotionはstable row-level Evidenceを付ける追加depthとする。"
+    },
+    {
+      "id": "current-promotion-plan-project-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "13基本政策配下の展開施策・事業群・個別事業の全件identityと年度差分は追加depth。毎年度改訂されるため、2024/2025/2026 versionを上書きせず個別に確認する。"
+    },
+    {
+      "id": "current-plan-34-measure-full-identities",
+      "status": "deferred_not_required_for_v1_completion",
+      "count": 34,
+      "boundary": "現行改定基本計画の34施策という公式総数はreview済みだが、全34施策の名称・成果指標・目標値・現状値を一括個票化する作業は追加depthとする。"
+    },
+    {
+      "id": "successor-comprehensive-plan-adoption",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "公式点検報告は新しい総合的な計画の策定に資する資料だが、次期計画の名称・期間・確定内容はv1で推測せず、正式な策定・採択Evidenceを待つ。"
+    },
+    {
+      "id": "fiscal-detail-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "v1ではFY2026一般会計当初予算トップラインとFY2024一般会計決算歳入・歳出をstate分離して保持する。補正、執行、個別事業、契約、補助金接続は追加Evidenceレビューとする。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "計画構造、評価指標公開、PDCA制度、財政トップラインのreviewは政策効果の因果認定や他都市比較可能性を意味しない。専用方法論なしにscoreやrankingへ昇格しない。"
+    }
+  ],
+  "completion_boundary": "旭川市のPhase 15 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味する。第8次旭川市総合計画の基本構想・基本計画2016～2027、令和5年12月改定版の5基本目標・13基本政策・34施策・3重点テーマ、第3期推進計画2024～2027の2026年6月改訂版、毎年度の事業群見直しとPDCA・行政評価・4年ごとの施策評価の制度、2025年度末状況を基にした点検報告と新しい総合的な計画策定へのtransition evidence、FY2026一般会計当初予算181,800,000,000円、FY2024一般会計収入済額182,479,594,406円・支出済額180,794,635,444円を公式sourceとEvidence位置付きでレビュー済みである。一方、推進計画評価指標の全件identity/value、展開施策・事業群の全件年度差分、34施策の全成果指標、次期計画の確定内容、補正・執行・契約・補助金等はdeferred_depthとして明示する。自治体が公表する達成率や評価をJichi Insight独自の政策達成度、因果効果、他都市比較可能性またはランキングへ変換しない。"
+}
