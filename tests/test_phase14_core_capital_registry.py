@@ -101,17 +101,14 @@ def test_phase14_wave_distribution_and_statuses_are_canonical():
     }
 
     statuses = Counter(row["status"] for row in targets)
-    assert statuses == {
-        "source_inventory_complete": 59,
-        "source_inventory_in_progress": 1,
-        "pending_source_inventory": 7,
-    }
+    assert statuses == {"source_inventory_complete": 67}
 
     summary = queue["summary"]
-    assert summary["source_inventory_complete_count"] == 59
-    assert summary["source_inventory_in_progress_count"] == 1
-    assert summary["pending_source_inventory_count"] == 7
-    assert summary["next_official_code"] == "402036"
+    assert queue["status"] == "complete"
+    assert summary["source_inventory_complete_count"] == 67
+    assert summary["source_inventory_in_progress_count"] == 0
+    assert summary["pending_source_inventory_count"] == 0
+    assert summary["next_official_code"] is None
 
     wave1 = next(row for row in queue["waves"] if row["wave"] == 1)
     wave2 = next(row for row in queue["waves"] if row["wave"] == 2)
@@ -149,20 +146,24 @@ def test_phase14_wave_distribution_and_statuses_are_canonical():
     assert wave7["source_inventory_complete_count"] == 4
     assert wave7["source_inventory_in_progress_count"] == 0
     assert wave7["pending_count"] == 0
-    assert wave8["status"] == "in_progress"
-    assert wave8["source_inventory_complete_count"] == 0
-    assert wave8["source_inventory_in_progress_count"] == 1
-    assert wave8["pending_count"] == 7
+    assert wave8["status"] == "complete"
+    assert wave8["source_inventory_complete_count"] == 8
+    assert wave8["source_inventory_in_progress_count"] == 0
+    assert wave8["pending_count"] == 0
 
 
-def test_phase14_current_target_is_kurume():
+def test_phase14_has_no_remaining_execution_target():
     registry = load(REGISTRY)
     current = [
         row
         for row in registry["targets"]
         if row["status"] == "source_inventory_in_progress"
     ]
+    pending = [
+        row
+        for row in registry["targets"]
+        if row["status"] == "pending_source_inventory"
+    ]
 
-    assert len(current) == 1
-    assert current[0]["name_ja"] == "久留米市"
-    assert current[0]["official_code"] == "402036"
+    assert current == []
+    assert pending == []
