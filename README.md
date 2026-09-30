@@ -6,7 +6,7 @@ Jichi Insight（自治体インサイト）は、自治体が公開する政策�
 
 ## Product status
 
-`Phase 14 active / Phase 13 complete / 47 prefectures complete / 20 designated cities reviewed / pre-alpha`
+`Phase 14 complete / Phase 13 complete / 47 prefectures complete / 20 designated cities reviewed / pre-alpha`
 
 - 全国47都道府県: Phase 11まで完了
 - Phase 11個票基盤: 47都道府県・15,327レコード
@@ -16,8 +16,10 @@ Jichi Insight（自治体インサイト）は、自治体が公開する政策�
 - Phase 13 Review in progress: 0市
 - Phase 13 Pending record review: 0市
 - Phase 14 target universe: 67自治体（中核市62＋県庁所在地only 5）
-- Phase 14 Source Inventory complete: 10 / 67（Wave 1 北海道・東北 complete）
-- Phase 14 Source Inventory in progress: 1（Wave 2 水戸市）
+- Phase 14 Source Inventory complete: 67 / 67
+- Phase 14 Source Inventory in progress: 0
+- Phase 14 Pending Source Inventory: 0
+- Phase 14 Reviewed promotion: 0（record-level reviewはPhase 15）
 - 千葉市現行計画: 189 / 189事業identity、406 work itemsをstructured化済み
 - 千葉市旧計画: 360 / 360事業identity、再掲68 / 68を一次identityへ解決済み
 - 千葉市Versioned Linkage: 構造的一致60関係＋公式PDF手動確認6関係、計66関係をReviewed continuedとして昇格
@@ -178,7 +180,7 @@ Phase 13の完了は、全政策・KPI・事業・契約・補助金・予算科
 
 ## Phase 14 — Core cities and prefectural capitals source inventory
 
-Status: `in_progress`（2026-09-29）
+Status: `complete`（2026-09-30）
 
 Phase 13で完了した20政令指定都市を除き、中核市と県庁所在地の公式Source Inventoryを拡張します。
 
@@ -194,10 +196,10 @@ Phase 13で完了した20政令指定都市を除き、中核市と県庁所在�
 - Wave 5 近畿: 14 / 14 source_inventory_complete
 - Wave 6 中国: 7 / 7 source_inventory_complete
 - Wave 7 四国: 4 / 4 source_inventory_complete
-- Wave 8 九州・沖縄: 久留米市から source inventory開始
+- Wave 8 九州・沖縄: 8 / 8 source_inventory_complete
 - Reviewed promotion: 0（Phase 15で実施）
 
-Wave 1北海道・東北10市、Wave 2関東12自治体、Wave 3北陸・甲信6市、Wave 4東海6自治体、Wave 5近畿14自治体、Wave 6中国7自治体、Wave 7四国4自治体まで完了しました。Wave 7では徳島市、高松市、松山市、高知市をSource Inventory化し、徳島市の県庁所在地only分類、高松市のFY2026実施計画重複、松山市の新旧計画境界、高知市の名目終期2030年度とFY2026末での現行計画廃止方針を明示的に保持しています。
+Wave 1～8の全67自治体を完了しました。最終Wave 8では久留米市、佐賀市、長崎市、佐世保市、大分市、宮崎市、鹿児島市、那覇市をSource Inventory化し、新計画初年度、前期→後期移行、未公表の現行評価、実施計画のrolling horizon、draft次期計画、旧計画下のFY2024決算などを推測なしで保持しています。Phase 14では67自治体すべてを`indexed_not_reviewed`に留め、個別政策・KPI・事業・評価値・予算額・決算額のReviewed昇格はPhase 15へ明示的に分離します。
 
 正本:
 
@@ -212,6 +214,10 @@ Wave 1北海道・東北10市、Wave 2関東12自治体、Wave 3北陸・甲信6
 - [`tests/test_phase14_wave5_source_inventory.py`](tests/test_phase14_wave5_source_inventory.py)
 - [`tests/test_phase14_wave6_source_inventory.py`](tests/test_phase14_wave6_source_inventory.py)
 - [`tests/test_phase14_wave7_source_inventory.py`](tests/test_phase14_wave7_source_inventory.py)
+- [`tests/test_phase14_wave8_source_inventory.py`](tests/test_phase14_wave8_source_inventory.py)
+- [`data/catalog/phase14_completion.json`](data/catalog/phase14_completion.json)
+- [`schemas/phase14_completion.schema.json`](schemas/phase14_completion.schema.json)
+- [`tests/test_phase14_completion.py`](tests/test_phase14_completion.py)
 
 ## Repository map
 
