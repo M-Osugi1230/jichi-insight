@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-10-01",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "hakodate-city-home",
+      "municipality_key": "hakodate-city",
+      "organization": "函館市",
+      "category": "municipality_profile",
+      "title": "函館市公式サイト",
+      "url": "https://www.city.hakodate.hokkaido.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-10-01",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "函館市の公式自治体サイト。"
+    },
+    {
+      "id": "hakodate-budget-2026-pdf",
+      "municipality_key": "hakodate-city",
+      "organization": "函館市",
+      "category": "budget",
+      "title": "令和8（2026）年度 函館市各会計予算（案）資料",
+      "url": "https://www.city.hakodate.hokkaido.jp/docs/2014022600122/file_contents/R8_kisyakaikennshiryou.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-10-01",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算案154,100,000千円のEvidence。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "hakodate-settlement-2024-audit-pdf",
+      "municipality_key": "hakodate-city",
+      "organization": "函館市",
+      "category": "settlement",
+      "title": "令和6（2024）年度函館市各会計歳入歳出決算審査意見",
+      "url": "https://www.city.hakodate.hokkaido.jp/docs/2014012900195/file_contents/R6kessannshinnsa.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-10-01",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計収入済額144,921,264,078円・支出済額142,388,719,238円の監査委員審査意見書Evidence。"
+    }
+  ]
+}
