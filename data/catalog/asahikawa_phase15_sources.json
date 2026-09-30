@@ -1,0 +1,73 @@
+{
+  "id": "asahikawa-phase15-sources",
+  "phase": 15,
+  "official_code": "012041",
+  "name_ja": "旭川市",
+  "reviewed_at": "2026-10-01",
+  "sources": [
+    {
+      "id": "asahikawa-current-plan-page",
+      "evidence_role": "current_plan_identity",
+      "title": "第8次旭川市総合計画（平成28年度～平成39年度）",
+      "official_url": "https://www.city.asahikawa.hokkaido.jp/700/735/736/738/p006642.html",
+      "format": "html",
+      "evidence_location": "『総合計画の構成及び期間』『第8次旭川市総合計画点検報告書』",
+      "use_boundary": "基本構想・基本計画2016～2027、4年ごとの基本計画見直し、推進計画4年/毎年度見直し、新しい総合的な計画策定に向けた点検報告の公式入口。"
+    },
+    {
+      "id": "asahikawa-basic-plan-2023-revised",
+      "evidence_role": "policy_structure",
+      "title": "第8次旭川市総合計画基本計画 令和5年12月改定版",
+      "official_url": "https://www.city.asahikawa.hokkaido.jp/700/735/736/738/p006642_d/fil/kaiteiban-5-2.pdf",
+      "format": "pdf",
+      "evidence_location": "PDF p.4『基本計画の趣旨・構成・期間』、p.7-9『重点テーマ』、p.10以降『基本政策』",
+      "use_boundary": "現行改定版の5基本目標・13基本政策・34施策・3重点テーマをreviewする。策定当初版と改定版を混同しない。"
+    },
+    {
+      "id": "asahikawa-promotion-2026-revised",
+      "evidence_role": "implementation_and_progress",
+      "title": "第8次旭川市総合計画推進計画（令和6～9年度）令和8年6月改訂",
+      "official_url": "https://www.city.asahikawa.hokkaido.jp/700/735/736/738/d079836_d/fil/R8plan.pdf",
+      "format": "pdf",
+      "evidence_location": "PDF p.1『推進計画の趣旨・構成』、p.2『期間』、p.3『総合計画の進行管理』、p.66以降『評価指標』",
+      "use_boundary": "2024～2027第3期推進計画の2026年6月改訂版。事業群は毎年度見直し、評価指標のsource-reported達成率を独自評価へ変換しない。"
+    },
+    {
+      "id": "asahikawa-budget-2026-page",
+      "evidence_role": "budget_index",
+      "title": "予算の概要（令和8年度）",
+      "official_url": "https://www.city.asahikawa.hokkaido.jp/700/731/732/d083385.html",
+      "format": "html",
+      "evidence_location": "『当初予算』『補正予算』『全会計』",
+      "use_boundary": "FY2026当初予算と各補正予算の公式入口。initial/revised statesを分離する。"
+    },
+    {
+      "id": "asahikawa-budget-2026-pdf",
+      "evidence_role": "initial_budget",
+      "title": "令和8年度 旭川市一般会計予算",
+      "official_url": "https://www.city.asahikawa.hokkaido.jp/700/731/732/d083385_d/fil/R8yosansyo.pdf",
+      "format": "pdf",
+      "evidence_location": "PDF p.6 / printed p.1 第1条『歳入歳出予算の総額』",
+      "use_boundary": "一般会計当初予算181,800,000千円を円換算。補正後予算・執行・決算と分離する。"
+    },
+    {
+      "id": "asahikawa-settlement-2024-page",
+      "evidence_role": "settlement_index",
+      "title": "令和6年度決算",
+      "official_url": "https://www.city.asahikawa.hokkaido.jp/700/731/733/d082012.html",
+      "format": "html",
+      "evidence_location": "『令和6年度決算 決算書等』『令和6年度決算の概要』",
+      "use_boundary": "FY2024決算書・事項別明細・主要施策成果報告書の公式入口。HTML千円集計と監査資料の円単位exact valuesを区別する。"
+    },
+    {
+      "id": "asahikawa-settlement-2024-audit-pdf",
+      "evidence_role": "settlement_and_audit",
+      "title": "令和6年度旭川市一般会計・特別会計決算審査意見書",
+      "official_url": "https://www.city.asahikawa.hokkaido.jp/700/766/110/d082557_d/fil/R6kessan_ippann_tokubethu.pdf",
+      "format": "pdf",
+      "evidence_location": "PDF p.11-12『一般会計 決算収支状況』『歳入決算状況』、p.76『歳入歳出決算総括表』",
+      "use_boundary": "一般会計収入済額182,479,594,406円・支出済額180,794,635,444円のexact source valuesを保持する。"
+    }
+  ],
+  "quality_boundary": "Official source roles, current revised-plan version, annual promotion-plan revision, fiscal stages, and exact-vs-rounded source precision remain distinct. No source-reported evaluation is promoted into an independent Jichi Insight achievement or causal judgment."
+}
