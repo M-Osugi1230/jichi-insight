@@ -1,0 +1,65 @@
+[
+  {
+    "id": "jp-local-012025-fiscal-2026-total-expenditure",
+    "municipality_id": "jp-local-012025",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算案総額",
+    "amount_yen": 154100000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "函館市公式の令和8年度各会計予算（案）総括表に記載された一般会計154,100,000千円を円換算。補正後予算、執行額、決算額とは別stateとして保持する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hakodate-budget-2026-pdf"
+    ]
+  },
+  {
+    "id": "jp-local-012025-fiscal-2024-total-revenue",
+    "municipality_id": "jp-local-012025",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "一般会計収入済額",
+    "amount_yen": 144921264078,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "函館市監査委員の令和6年度各会計歳入歳出決算審査意見『決算収支の状況』に記載されたexact source value。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hakodate-settlement-2024-audit-pdf"
+    ]
+  },
+  {
+    "id": "jp-local-012025-fiscal-2024-total-expenditure",
+    "municipality_id": "jp-local-012025",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計支出済額",
+    "amount_yen": 142388719238,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "函館市監査委員の令和6年度各会計歳入歳出決算審査意見『決算収支の状況』に記載されたexact source value。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hakodate-settlement-2024-audit-pdf"
+    ]
+  }
+]
