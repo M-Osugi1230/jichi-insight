@@ -1,0 +1,70 @@
+{
+  "id": "phase14-saga-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "412015",
+  "standard_area_code": "41201",
+  "name_ja": "佐賀市",
+  "prefecture_name_ja": "佐賀県",
+  "municipality_type": "city",
+  "roles": [
+    "prefectural_capital"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第3次佐賀市総合計画",
+    "start_fiscal_year": 2025,
+    "end_fiscal_year": 2040,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "saga-third-plan",
+      "layer": "comprehensive_plan",
+      "title": "第3次佐賀市総合計画を策定しました。",
+      "official_url": "https://www.city.saga.lg.jp/shisei/sagashioshiru/2/2/585.html",
+      "status": "official_landing_verified",
+      "effective_period": "基本構想 2025年度～2040年度",
+      "review_boundary": "2040年将来像を示す基本構想をcurrent plan identityとして保持し、実施層の4年計画と期間を混同しない。"
+    },
+    {
+      "id": "saga-future-co-creation",
+      "layer": "implementation_plan_and_progress",
+      "title": "佐賀市未来共創プラン（地方版総合戦略）",
+      "official_url": "https://www.city.saga.lg.jp/shisei/sagashioshiru/2/3/586.html",
+      "status": "official_landing_verified",
+      "effective_period": "4年間の実施計画・地方版総合戦略",
+      "review_boundary": "第3次総合計画を実現する短中期の方向性・重点事業と行政評価を結ぶ公式実施層。基本構想の長期periodと別に保持する。"
+    },
+    {
+      "id": "saga-administrative-evaluation",
+      "layer": "annual_progress",
+      "title": "行政評価について",
+      "official_url": "https://www.city.saga.lg.jp/shisei/gyoseiunei/3/1841.html",
+      "status": "official_landing_verified",
+      "review_boundary": "未来共創プランに沿う施策・重点事業評価と市民意向調査の公式入口。自治体評価を独自達成scoreへ変換しない。"
+    },
+    {
+      "id": "saga-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度当初予算の概要",
+      "official_url": "https://www.city.saga.lg.jp/shisei/gyoseiunei/5/1/6/6810.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算の公式入口。補正・執行・決算とstageを分離する。"
+    },
+    {
+      "id": "saga-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度の財政状況（決算）",
+      "official_url": "https://www.city.saga.lg.jp/shisei/gyoseiunei/5/2/1484.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算カード・財政状況資料集の公式入口。現行第3次計画開始前の財政Evidenceをcurrent actualへ流用しない。"
+    }
+  ],
+  "availability_boundary": "第3次佐賀市総合計画の基本構想は2025～2040年度、未来共創プランは4年間の実施層で、行政評価・市民意向調査が別route。FY2024決算は現行計画開始前でありversion分離する。",
+  "quality_boundary": "This Phase 14 inventory preserves Saga's prefectural-capital-only classification, long 2025-2040 comprehensive-plan horizon, shorter Future Co-Creation implementation/strategy layer, administrative evaluation, FY2026 budget, and pre-plan FY2024 settlement. It makes no independent achievement, causal, efficiency, or cross-city judgment.",
+  "next_action": "Phase 15で基本構想・基本計画の政策/指標、未来共創プラン重点事業、行政評価・市民意向調査、FY2026予算、現行計画開始前FY2024決算をEvidence化する。",
+  "verified_at": "2026-09-30"
+}
