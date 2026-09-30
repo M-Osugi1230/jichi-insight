@@ -895,10 +895,59 @@ Phase 14完了はrecord-level Reviewed完了を意味しません。67自治体�
 - `schemas/phase14_completion.schema.json`
 - `tests/test_phase14_completion.py`
 
-## After Phase 14
+## Phase 15 — Core cities and prefectural capitals record review
 
-1. **Phase 15 — 中核市・県庁所在地67自治体のrecord-level Reviewed化**
-2. その他市区町村
-3. 選挙・候補者比較
-4. API、データダウンロード、研究・報道向け機能
-5. 比較可能性が確認された指標だけを用いた比較機能
+Status: `in_progress`（2026-10-01）
+
+Phase 14で`source_inventory_complete`となった67自治体を、record-level Evidence付きの`reviewed_complete`へ昇格します。
+
+Canonical status:
+
+- Reviewed complete: 1 / 67（函館市）
+- Review in progress: 1（旭川市）
+- Pending record review: 65
+- Blocked source inventory: 0
+- Next official code: 012041
+
+### Milestone P15-M1 — First reviewed-complete core city
+
+Status: `complete`（2026-10-01）
+
+函館市をPhase 15最初の`reviewed_complete`自治体として確定しました。
+
+v1 declared package:
+
+- 現行基本構想 2017～2026
+- 2重点プロジェクト
+- 5基本目標
+- 20施策
+- 第3期函館市活性化総合戦略 2025～2029
+- 内部評価＋函館市まち・ひと・しごと創生推進会議による外部評価の制度
+- 次期基本構想2027～2036は2026-10-01時点でパブリックコメント中の素案としてtransition laneに保持
+- FY2026一般会計当初予算案トップライン
+- FY2024一般会計決算の歳入・歳出exact values
+
+第3期戦略の個別KPI/current actual、現行20施策との細粒度linkage、次期構想の採択後内容、補正・執行・契約・補助金等はdeferred depthです。
+
+### Current work — Asahikawa record review
+
+Status: `in_progress`
+
+旭川市（012041）を次の対象としてレビューします。
+
+正本:
+
+- `data/catalog/phase15_core_capital_review_queue.json`
+- `schemas/phase15_core_capital_review_queue.schema.json`
+- `schemas/phase15_municipality_completion.schema.json`
+- `tests/test_phase15_core_capital_review_queue.py`
+- `data/catalog/hakodate_phase15_completion.json`
+- `tests/test_hakodate_phase15_review.py`
+- `docs/PHASE15_CORE_CAPITAL_REVIEW.md`
+
+## After Phase 15
+
+1. その他市区町村
+2. 選挙・候補者比較
+3. API、データダウンロード、研究・報道向け機能
+4. 比較可能性が確認された指標だけを用いた比較機能
