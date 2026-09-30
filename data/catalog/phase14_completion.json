@@ -1,0 +1,112 @@
+{
+  "id": "phase14-core-capital-source-inventory-completion",
+  "phase": 14,
+  "status": "complete",
+  "completed_at": "2026-09-30",
+  "scope": "core_cities_and_prefectural_capitals_source_inventory",
+  "coverage": {
+    "unique_target_count": 67,
+    "core_city_count": 62,
+    "remaining_prefectural_capital_count": 32,
+    "core_city_and_prefectural_capital_overlap": 27,
+    "prefectural_capital_only_count": 5,
+    "source_inventory_complete_count": 67,
+    "source_inventory_in_progress_count": 0,
+    "pending_source_inventory_count": 0,
+    "reviewed_promotion_count": 0,
+    "phase13_overlap_count": 0
+  },
+  "wave_completions": [
+    {
+      "wave": 1,
+      "region": "北海道・東北",
+      "target_count": 10,
+      "status": "complete",
+      "test_path": "tests/test_phase14_wave1_source_inventory.py"
+    },
+    {
+      "wave": 2,
+      "region": "関東",
+      "target_count": 12,
+      "status": "complete",
+      "test_path": "tests/test_phase14_wave2_source_inventory.py"
+    },
+    {
+      "wave": 3,
+      "region": "北陸・甲信",
+      "target_count": 6,
+      "status": "complete",
+      "test_path": "tests/test_phase14_wave3_source_inventory.py"
+    },
+    {
+      "wave": 4,
+      "region": "東海",
+      "target_count": 6,
+      "status": "complete",
+      "test_path": "tests/test_phase14_wave4_source_inventory.py"
+    },
+    {
+      "wave": 5,
+      "region": "近畿",
+      "target_count": 14,
+      "status": "complete",
+      "test_path": "tests/test_phase14_wave5_source_inventory.py"
+    },
+    {
+      "wave": 6,
+      "region": "中国",
+      "target_count": 7,
+      "status": "complete",
+      "test_path": "tests/test_phase14_wave6_source_inventory.py"
+    },
+    {
+      "wave": 7,
+      "region": "四国",
+      "target_count": 4,
+      "status": "complete",
+      "test_path": "tests/test_phase14_wave7_source_inventory.py"
+    },
+    {
+      "wave": 8,
+      "region": "九州・沖縄",
+      "target_count": 8,
+      "status": "complete",
+      "test_path": "tests/test_phase14_wave8_source_inventory.py"
+    }
+  ],
+  "canonical_sources": [
+    "data/catalog/phase14_core_capital_target_registry.json",
+    "data/catalog/phase14_core_capital_execution_queue.json",
+    "schemas/phase14_core_capital_target_registry.schema.json",
+    "schemas/phase14_core_capital_execution_queue.schema.json",
+    "schemas/phase14_municipality_source_inventory.schema.json",
+    "data/catalog/phase14_completion.json",
+    "schemas/phase14_completion.schema.json",
+    "tests/test_phase14_core_capital_registry.py",
+    "tests/test_phase14_completion.py"
+  ],
+  "quality_summary": {
+    "policy_achievement_assessment_count": 0,
+    "causal_attribution_count": 0,
+    "cross_city_ranking_count": 0,
+    "inferred_missing_evidence_count": 0,
+    "reviewed_promotion_count": 0
+  },
+  "completion_gates": [
+    "All 67 Phase 14 municipalities are represented exactly once in the canonical target registry with verified six-digit local-government identity and source_inventory_complete status.",
+    "The target universe contains all 62 current core cities plus five additional prefectural-capital-only municipalities, excludes all 20 Phase 13 designated cities, and preserves the 27-municipality overlap between core-city and remaining-capital groups.",
+    "Every Wave 1 through Wave 8 source inventory validates against the generic Phase 14 municipality source-inventory schema and retains official municipal planning, implementation or progress, budget, and settlement entry points.",
+    "Plan versions, nonstandard planning structures, overlapping implementation horizons, transition years, not-yet-published results, proposal versus enacted budget states, source precision, and historical-only evidence remain explicit rather than being normalized into false equivalence.",
+    "Municipal self-evaluations, committee findings, citizen surveys, progress indicators, budget allocations, settlement results, and audit material remain attributed source evidence and are not converted into independent Jichi Insight policy-achievement or causal judgments.",
+    "Phase 14 is source inventory only: no indexed source, policy item, KPI, project, evaluation result, budget value, settlement value, audit finding, or accountability record is promoted to Reviewed solely because its official source was discovered.",
+    "Cross-city ranking and comparison eligibility remain outside Phase 14 unless a later methodology independently verifies definitions, units, populations, periods, denominators, aggregation scope, and evidence quality.",
+    "The final target registry, execution queue, completion manifest, all JSON Schemas, Wave regression tests, repository validation, web checks, and production smoke must pass on the final merged head."
+  ],
+  "completion_boundary": "Phase 14 completes the official-source inventory foundation for 67 municipalities outside the 20 Phase 13 designated cities: all 62 current core cities plus five additional prefectural-capital-only municipalities. Completion means that each target has an indexed_not_reviewed inventory covering official current planning, implementation or progress management, FY2026 budget routing, and recent settlement evidence at the declared source-discovery depth. It does not mean that individual policies, KPIs, projects, administrative evaluations, budget values, settlement values, contracts, subsidies, audit findings, assembly records, or causal links have been reviewed at record level. Transition years, overlapping or nonstandard plan periods, draft successor plans, historical-only evidence, municipal self-evaluation, budget states, missing or not-yet-published results, and source precision remain explicit. No independent Jichi Insight policy-achievement judgment, causal attribution, unverified cross-city comparison, or ranking is introduced by Phase 14 completion.",
+  "next_scope": [
+    "Phase 15 record-level Reviewed promotion for the 67 Phase 14 municipalities",
+    "Other municipalities after the core-city and prefectural-capital review foundation",
+    "Election and candidate comparison only under the project editorial and evidence policies",
+    "API, data downloads, research and reporting features, and comparison features limited to separately verified comparable indicators"
+  ]
+}
