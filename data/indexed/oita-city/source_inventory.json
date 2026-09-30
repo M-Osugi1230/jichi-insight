@@ -1,0 +1,65 @@
+{
+  "id": "phase14-oita-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "442011",
+  "standard_area_code": "44201",
+  "name_ja": "大分市",
+  "prefecture_name_ja": "大分県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city",
+    "prefectural_capital"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "未来へつなぐ おおいたビジョン2034",
+    "start_fiscal_year": 2025,
+    "end_fiscal_year": 2034,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "oita-vision-2034",
+      "layer": "comprehensive_plan",
+      "title": "未来へつなぐ おおいたビジョン2034",
+      "official_url": "https://www.city.oita.oita.jp/o010/sogokeikaku2025.html",
+      "status": "official_landing_verified",
+      "effective_period": "基本構想 2025年度～2034年度・第1次基本計画 2025年度～2029年度",
+      "review_boundary": "10年基本構想と前後期各5年基本計画を別periodとして保持し、旧総合計画の実績とcurrent planを分離する。"
+    },
+    {
+      "id": "oita-progress-2025",
+      "layer": "annual_progress",
+      "title": "令和7年度末進ちょく状況",
+      "official_url": "https://www.city.oita.oita.jp/o010/sougoukeikaku2034r7.html",
+      "status": "official_landing_verified",
+      "available_periods": [
+        "2025年度末・114指標"
+      ],
+      "review_boundary": "第1次基本計画の114指標に関する自治体公表進捗を保持し、進捗率を独自achievement scoreや都市比較へ変換しない。"
+    },
+    {
+      "id": "oita-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度当初予算(案)および令和7年度3月補正予算(案)について",
+      "official_url": "https://www.city.oita.oita.jp/o032/r8tousyo-r7_3hosei.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算とFY2025年3月補正の一体的政策説明を保持しつつ、会計上のbudget stateとfiscal yearは別レコードで扱う。"
+    },
+    {
+      "id": "oita-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度 大分市決算の概要について",
+      "official_url": "https://www.city.oita.oita.jp/o032/r6kessangaiyou.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算は現行ビジョン開始前の財政Evidenceとして保持し、FY2025開始計画のcurrent actualへ流用しない。"
+    }
+  ],
+  "availability_boundary": "おおいたビジョン2034は2025～2034年度、第1次基本計画は2025～2029年度で、FY2025末114指標の進捗が公開済み。FY2024決算は旧計画期間でありversion分離する。",
+  "quality_boundary": "This Phase 14 inventory verifies Oita's 2025-2034 comprehensive plan, first-year 114-indicator progress route, FY2026/FY2025 budget-lineage context, and pre-plan FY2024 settlement. Municipal progress measures and budget packaging are preserved as source evidence and not converted into independent achievement, causal, or comparison judgments.",
+  "next_action": "Phase 15で19政策・114指標、FY2025末進捗、FY2026当初予算/FY2025補正lineage、旧計画下FY2024決算をversioned Evidenceへ展開する。",
+  "verified_at": "2026-09-30"
+}
