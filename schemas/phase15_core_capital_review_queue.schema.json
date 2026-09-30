@@ -1,0 +1,187 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.local/schemas/phase15_core_capital_review_queue.schema.json",
+  "title": "Phase 15 core-city and prefectural-capital record review queue",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "phase",
+    "status",
+    "scope",
+    "promotion_target",
+    "source_phase",
+    "source_completion_path",
+    "execution_order",
+    "quality_gate",
+    "execution_queue",
+    "summary",
+    "updated_at"
+  ],
+  "properties": {
+    "id": {
+      "const": "phase15-core-capital-record-review-queue"
+    },
+    "phase": {
+      "const": 15
+    },
+    "status": {
+      "enum": [
+        "in_progress",
+        "complete"
+      ]
+    },
+    "scope": {
+      "const": "core_cities_and_prefectural_capitals_record_review"
+    },
+    "promotion_target": {
+      "const": "reviewed"
+    },
+    "source_phase": {
+      "const": 14
+    },
+    "source_completion_path": {
+      "const": "data/catalog/phase14_completion.json"
+    },
+    "execution_order": {
+      "const": "phase14_registry_sequence"
+    },
+    "quality_gate": {
+      "type": "array",
+      "minItems": 10,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 70
+      }
+    },
+    "execution_queue": {
+      "type": "array",
+      "minItems": 67,
+      "maxItems": 67,
+      "items": {
+        "$ref": "#/$defs/queuedMunicipality"
+      }
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "target_count",
+        "reviewed_complete_count",
+        "review_in_progress_count",
+        "pending_record_review_count",
+        "blocked_source_inventory_count",
+        "next_official_code"
+      ],
+      "properties": {
+        "target_count": {
+          "const": 67
+        },
+        "reviewed_complete_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 67
+        },
+        "review_in_progress_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 67
+        },
+        "pending_record_review_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 67
+        },
+        "blocked_source_inventory_count": {
+          "const": 0
+        },
+        "next_official_code": {
+          "oneOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9]{6}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "$defs": {
+    "queuedMunicipality": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sequence",
+        "wave",
+        "official_code",
+        "standard_area_code",
+        "name_ja",
+        "prefecture_name_ja",
+        "municipality_type",
+        "phase14_role",
+        "status",
+        "source_inventory_path"
+      ],
+      "properties": {
+        "sequence": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 67
+        },
+        "wave": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8
+        },
+        "official_code": {
+          "type": "string",
+          "pattern": "^[0-9]{6}$"
+        },
+        "standard_area_code": {
+          "type": "string",
+          "pattern": "^[0-9]{5}$"
+        },
+        "name_ja": {
+          "type": "string",
+          "minLength": 2
+        },
+        "prefecture_name_ja": {
+          "type": "string",
+          "minLength": 3
+        },
+        "municipality_type": {
+          "enum": [
+            "city",
+            "special_ward"
+          ]
+        },
+        "phase14_role": {
+          "enum": [
+            "core_city",
+            "core_city_and_prefectural_capital",
+            "prefectural_capital_only"
+          ]
+        },
+        "status": {
+          "enum": [
+            "pending_record_review",
+            "review_in_progress",
+            "reviewed_complete"
+          ]
+        },
+        "source_inventory_path": {
+          "type": "string",
+          "pattern": "^data/indexed/.+/source_inventory\\.json$"
+        }
+      }
+    }
+  }
+}
