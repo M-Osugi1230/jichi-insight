@@ -1,0 +1,63 @@
+{
+  "id": "phase14-takamatsu-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "372013",
+  "standard_area_code": "37201",
+  "name_ja": "高松市",
+  "prefecture_name_ja": "香川県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city",
+    "prefectural_capital"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第7次高松市総合計画",
+    "start_fiscal_year": 2024,
+    "end_fiscal_year": 2031,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "takamatsu-seventh-plan",
+      "layer": "comprehensive_plan",
+      "title": "第7次高松市総合計画",
+      "official_url": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/keikaku/sogo/kikaku/sogo/7thsogo.html",
+      "status": "official_landing_verified",
+      "effective_period": "2024年度～2031年度",
+      "review_boundary": "基本構想と短期まちづくりプランで構成される8年間のcurrent planとして保持し、旧第6次計画と分離する。"
+    },
+    {
+      "id": "takamatsu-machizukuri-plans",
+      "layer": "implementation_plan",
+      "title": "高松まちづくりプラン",
+      "official_url": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/keikaku/sogo/kikaku/sogo/machidukuri7.html",
+      "status": "official_landing_verified",
+      "effective_period": "第1期 2024年度～2026年度・第2期 2026年度～2028年度",
+      "review_boundary": "FY2026に第1期と第2期の期間が重なる実施計画構造をそのまま保持し、第2期で第1期versionを上書きしない。"
+    },
+    {
+      "id": "takamatsu-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算編成",
+      "official_url": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/zaisei/katei/r8/2026yosanhensei.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算編成・成立過程の公式入口。第2期まちづくりプラン重点事業との関係は保持するが、予算配分を政策効果へ変換しない。"
+    },
+    {
+      "id": "takamatsu-settlement-2024",
+      "layer": "settlement",
+      "title": "決算状況",
+      "official_url": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/zaisei/jijo/kohyo.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算状況を含む公式入口。実施計画の進行管理と財政決算を別Evidence roleとして保持する。"
+    }
+  ],
+  "availability_boundary": "第7次総合計画は2024～2031年度。第1期まちづくりプラン2024～2026と第2期2026～2028がFY2026で重複するため、同年度に複数implementation versionが存在する構造を保持する。",
+  "quality_boundary": "This Phase 14 inventory verifies Takamatsu's 2024-2031 seventh comprehensive plan, overlapping first/second implementation-plan periods at FY2026, FY2026 budget route, and FY2024 settlement route. It does not collapse overlapping plan versions or convert municipal planning and fiscal evidence into independent achievement, causal, or comparison judgments.",
+  "next_action": "Phase 15で43施策、重点取組・主要事業、第1期/第2期まちづくりプランのFY2026重複、FY2026予算、FY2024決算をversioned Evidenceとしてレビューする。",
+  "verified_at": "2026-09-30"
+}
