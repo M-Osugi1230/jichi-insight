@@ -1,0 +1,72 @@
+{
+  "id": "phase14-naha-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "472018",
+  "standard_area_code": "47201",
+  "name_ja": "那覇市",
+  "prefecture_name_ja": "沖縄県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city",
+    "prefectural_capital"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第5次那覇市総合計画",
+    "start_fiscal_year": 2018,
+    "end_fiscal_year": 2027,
+    "period_status": "transition_or_unresolved"
+  },
+  "sources": [
+    {
+      "id": "naha-fifth-plan",
+      "layer": "comprehensive_plan",
+      "title": "第5次那覇市総合計画とは",
+      "official_url": "https://www.city.naha.okinawa.jp/admin/plans/1004118/1004121.html",
+      "status": "official_landing_verified",
+      "effective_period": "2018年度～2027年度・2024年1月一部改訂",
+      "review_boundary": "10年総合計画と中間検証後の一部改訂版をversion分離し、第6次計画策定作業をcurrent planへ先取りしない。"
+    },
+    {
+      "id": "naha-implementation-2026-2028",
+      "layer": "implementation_plan",
+      "title": "令和8年度実施計画策定",
+      "official_url": "https://www.city.naha.okinawa.jp/admin/plans/1004118/1004119.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2028年度・毎年度3年ローリング",
+      "review_boundary": "第5次総合計画終期2027年度を越えて2028年度まで含む3年ローリング実施計画を保持し、期間差を欠損扱いしない。"
+    },
+    {
+      "id": "naha-sixth-plan-transition",
+      "layer": "plan_transition",
+      "title": "第6次那覇市総合計画の策定に向けた取組み",
+      "official_url": "https://www.city.naha.okinawa.jp/admin/plans/1012256/1012202.html",
+      "status": "official_landing_verified",
+      "effective_period": "FY2026～FY2027に策定作業",
+      "review_boundary": "第6次総合計画は策定開始段階のtransition evidenceとして保持し、市民案・庁内議論等を採択済み政策へ昇格しない。"
+    },
+    {
+      "id": "naha-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度（2026年度）予算",
+      "official_url": "https://www.city.naha.okinawa.jp/admin/nahashizaisei/1004386/1011083.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026予算書・主要事業・補正予算の公式入口。第6次計画策定事業費を次期計画の成立や内容確定と同一視しない。"
+    },
+    {
+      "id": "naha-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度（2024年度）決算",
+      "official_url": "https://www.city.naha.okinawa.jp/admin/nahashizaisei/1004409/1008734.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024一般・特別会計決算の公式入口。第5次計画期間の財政Evidenceとして、政策成果・第6次計画actualへ読み替えない。"
+    }
+  ],
+  "availability_boundary": "第5次総合計画は2018～2027年度で、FY2026実施計画は2026～2028年度と現行計画終期を1年越える。一方、第6次総合計画の策定はFY2026～2027に開始されており、current・rolling・transitionを分離する。",
+  "quality_boundary": "This Phase 14 inventory verifies Naha's 2018-2027 fifth comprehensive plan and revised version, rolling 2026-2028 implementation plan, active sixth-plan drafting transition, FY2026 budget, and FY2024 settlement. It preserves overlapping horizons and does not promote draft next-plan work, budgeted planning activity, or municipal/fiscal evidence into independent judgments.",
+  "next_action": "Phase 15で23政策・59施策、FY2026～2028実施事業、中間改訂version、第6次計画transition、FY2026予算・主要事業、FY2024決算をEvidence化する。",
+  "verified_at": "2026-09-30"
+}

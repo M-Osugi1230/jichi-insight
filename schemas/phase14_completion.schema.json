@@ -1,0 +1,184 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.local/schemas/phase14_completion.schema.json",
+  "title": "Phase 14 core-city and prefectural-capital source inventory completion",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "phase",
+    "status",
+    "completed_at",
+    "scope",
+    "coverage",
+    "wave_completions",
+    "canonical_sources",
+    "quality_summary",
+    "completion_gates",
+    "completion_boundary",
+    "next_scope"
+  ],
+  "properties": {
+    "id": {
+      "const": "phase14-core-capital-source-inventory-completion"
+    },
+    "phase": {
+      "const": 14
+    },
+    "status": {
+      "const": "complete"
+    },
+    "completed_at": {
+      "const": "2026-09-30",
+      "format": "date"
+    },
+    "scope": {
+      "const": "core_cities_and_prefectural_capitals_source_inventory"
+    },
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "unique_target_count",
+        "core_city_count",
+        "remaining_prefectural_capital_count",
+        "core_city_and_prefectural_capital_overlap",
+        "prefectural_capital_only_count",
+        "source_inventory_complete_count",
+        "source_inventory_in_progress_count",
+        "pending_source_inventory_count",
+        "reviewed_promotion_count",
+        "phase13_overlap_count"
+      ],
+      "properties": {
+        "unique_target_count": {
+          "const": 67
+        },
+        "core_city_count": {
+          "const": 62
+        },
+        "remaining_prefectural_capital_count": {
+          "const": 32
+        },
+        "core_city_and_prefectural_capital_overlap": {
+          "const": 27
+        },
+        "prefectural_capital_only_count": {
+          "const": 5
+        },
+        "source_inventory_complete_count": {
+          "const": 67
+        },
+        "source_inventory_in_progress_count": {
+          "const": 0
+        },
+        "pending_source_inventory_count": {
+          "const": 0
+        },
+        "reviewed_promotion_count": {
+          "const": 0
+        },
+        "phase13_overlap_count": {
+          "const": 0
+        }
+      }
+    },
+    "wave_completions": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "wave",
+          "region",
+          "target_count",
+          "status",
+          "test_path"
+        ],
+        "properties": {
+          "wave": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 8
+          },
+          "region": {
+            "type": "string",
+            "minLength": 2
+          },
+          "target_count": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "status": {
+            "const": "complete"
+          },
+          "test_path": {
+            "type": "string",
+            "pattern": "^tests/test_phase14_wave[1-8]_source_inventory\\.py$"
+          }
+        }
+      }
+    },
+    "canonical_sources": {
+      "type": "array",
+      "minItems": 9,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^(data|schemas|tests)/"
+      }
+    },
+    "quality_summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "policy_achievement_assessment_count",
+        "causal_attribution_count",
+        "cross_city_ranking_count",
+        "inferred_missing_evidence_count",
+        "reviewed_promotion_count"
+      ],
+      "properties": {
+        "policy_achievement_assessment_count": {
+          "const": 0
+        },
+        "causal_attribution_count": {
+          "const": 0
+        },
+        "cross_city_ranking_count": {
+          "const": 0
+        },
+        "inferred_missing_evidence_count": {
+          "const": 0
+        },
+        "reviewed_promotion_count": {
+          "const": 0
+        }
+      }
+    },
+    "completion_gates": {
+      "type": "array",
+      "minItems": 8,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 70
+      }
+    },
+    "completion_boundary": {
+      "type": "string",
+      "minLength": 600
+    },
+    "next_scope": {
+      "type": "array",
+      "minItems": 4,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 20
+      }
+    }
+  }
+}

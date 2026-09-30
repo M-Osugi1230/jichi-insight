@@ -1,0 +1,64 @@
+{
+  "id": "phase14-kurume-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "402036",
+  "standard_area_code": "40203",
+  "name_ja": "久留米市",
+  "prefecture_name_ja": "福岡県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "久留米未来デザイン計画2035",
+    "start_fiscal_year": 2026,
+    "end_fiscal_year": 2035,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "kurume-future-design-2035",
+      "layer": "comprehensive_and_implementation_plan",
+      "title": "総合計画・政策評価制度",
+      "official_url": "https://www.city.kurume.fukuoka.jp/1100keikaku/2045keikaku/3010sougou/",
+      "status": "official_landing_verified",
+      "effective_period": "基本構想 2026年度～2035年度・前期基本計画 2026年度～2030年度・事業計画3年/毎年度見直し",
+      "review_boundary": "10年基本構想、前後期5年基本計画、3年事業計画を別period/versionで保持し、旧新総合計画の実績をcurrent actualへ流用しない。"
+    },
+    {
+      "id": "kurume-policy-evaluation",
+      "layer": "annual_progress",
+      "title": "総合計画・政策評価制度",
+      "official_url": "https://www.city.kurume.fukuoka.jp/1100keikaku/2045keikaku/3010sougou/",
+      "status": "official_landing_verified",
+      "available_periods": [
+        "久留米市政策評価制度"
+      ],
+      "review_boundary": "総合計画に連動する政策評価制度の公式入口。自治体の指標・評価結果をJichi Insight独自の達成度やランキングへ変換しない。"
+    },
+    {
+      "id": "kurume-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算",
+      "official_url": "https://www.city.kurume.fukuoka.jp/1100keikaku/2070zaisei/3010yosan/4230yosanr08/",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "新計画初年度のFY2026予算書・説明書・補正予算の公式入口。budget stageを分離し、配分額を政策効果へ読み替えない。"
+    },
+    {
+      "id": "kurume-settlement-2024",
+      "layer": "settlement",
+      "title": "令和６年度一般会計決算",
+      "official_url": "https://www.city.kurume.fukuoka.jp/1100keikaku/2070zaisei/3020kessan/4210kessanr06/2025-0909-1424-6.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024一般会計決算の公式入口。旧総合計画期間の財政Evidenceを久留米未来デザイン計画2035のcurrent actualへ流用しない。"
+    }
+  ],
+  "availability_boundary": "久留米未来デザイン計画2035はFY2026開始の10年計画で、前期基本計画はFY2026～2030、事業計画は3年で毎年度見直す。FY2024決算は旧計画期間のためversionを分離する。",
+  "quality_boundary": "This Phase 14 inventory verifies Kurume's new 2026-2035 comprehensive plan, policy-evaluation route, FY2026 budget, and FY2024 prior-plan settlement. It preserves plan-layer periods and prior/current boundaries and does not convert municipal indicators, budget allocation, or fiscal results into independent achievement, causal, or comparison judgments.",
+  "next_action": "Phase 15で10基本目標・施策・指標、3年事業計画、政策評価、FY2026予算・補正、旧計画下FY2024決算をversioned record-level Evidenceへ展開する。",
+  "verified_at": "2026-09-30"
+}

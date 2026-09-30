@@ -1,0 +1,72 @@
+{
+  "id": "phase14-kagoshima-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "462012",
+  "standard_area_code": "46201",
+  "name_ja": "鹿児島市",
+  "prefecture_name_ja": "鹿児島県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city",
+    "prefectural_capital"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第六次鹿児島市総合計画 前期基本計画",
+    "start_fiscal_year": 2022,
+    "end_fiscal_year": 2026,
+    "period_status": "transition_or_unresolved"
+  },
+  "sources": [
+    {
+      "id": "kagoshima-sixth-front-plan",
+      "layer": "comprehensive_plan",
+      "title": "第六次鹿児島市総合計画基本構想・前期基本計画",
+      "official_url": "https://www.city.kagoshima.lg.jp/kikakuzaisei/kikaku/seisaku-k/rokujisougoukeikaku-kihonkousou.html",
+      "status": "official_landing_verified",
+      "effective_period": "基本構想 2022年度～2031年度・前期基本計画 2022年度～2026年度",
+      "review_boundary": "10年基本構想とcurrent前期5年基本計画を保持し、策定中の後期計画素案をcurrentへ先取り昇格しない。"
+    },
+    {
+      "id": "kagoshima-second-implementation",
+      "layer": "implementation_plan",
+      "title": "第六次鹿児島市総合計画第2期実施計画",
+      "official_url": "https://www.city.kagoshima.lg.jp/kikakuzaisei/kikaku/seisaku-s/shise/shisaku/sogo/r6-r8.html",
+      "status": "official_landing_verified",
+      "effective_period": "2024年度～2026年度",
+      "review_boundary": "前期基本計画に基づく第2期3年実施計画を保持し、FY2027以降の後期事業へ自動接続しない。"
+    },
+    {
+      "id": "kagoshima-latter-transition",
+      "layer": "plan_transition",
+      "title": "第六次鹿児島市総合計画後期基本計画（令和9年度～13年度）の策定",
+      "official_url": "https://www.city.kagoshima.lg.jp/kikakuzaisei/kikaku/seisaku-k/dairokujisougoukeikakukoukikihonnkeikaku.html",
+      "status": "official_landing_verified",
+      "effective_period": "後期基本計画 2027年度～2031年度・2026年9月時点素案",
+      "review_boundary": "FY2027～2031後期基本計画は素案・市民参画段階のtransition evidenceとして保持し、採択前の内容をcurrent recordへ昇格しない。"
+    },
+    {
+      "id": "kagoshima-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度当初予算",
+      "official_url": "https://www.city.kagoshima.lg.jp/kikakuzaisei/zaisei/zaisei/shise/yosan/jokyo/r7/r08yosantosyo1.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "前期基本計画最終年度のFY2026当初予算公式入口。後期計画予算とみなさず、補正・執行・決算をstate分離する。"
+    },
+    {
+      "id": "kagoshima-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度一般会計決算等の概要",
+      "official_url": "https://www.city.kagoshima.lg.jp/kikakuzaisei/zaisei/zaisei/shise/yosan/jokyo/r6/r6kessangaiyo.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024前期基本計画期間の決算公式入口。施策指標・実施計画進捗と財政決算を別Evidence roleで保持する。"
+    }
+  ],
+  "availability_boundary": "第六次総合計画基本構想は2022～2031年度、current前期基本計画と第2期実施計画はFY2026が最終年度。FY2027～2031後期基本計画は2026年9月時点で素案段階のためtransition laneに限定する。",
+  "quality_boundary": "This Phase 14 inventory verifies Kagoshima's 2022-2031 sixth-plan basic concept, final-year 2022-2026 front basic plan, 2024-2026 second implementation plan, draft 2027-2031 latter-plan transition, FY2026 budget, and FY2024 settlement. Draft content is not promoted and no independent achievement, causal, or comparison judgment is made.",
+  "next_action": "Phase 15で前期政策・指標、第2期実施計画事業、FY2026進捗・予算、FY2024決算、後期基本計画transitionをadopted/draft versionを分けてEvidence化する。",
+  "verified_at": "2026-09-30"
+}

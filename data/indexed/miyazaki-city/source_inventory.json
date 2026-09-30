@@ -1,0 +1,65 @@
+{
+  "id": "phase14-miyazaki-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "452017",
+  "standard_area_code": "45201",
+  "name_ja": "宮崎市",
+  "prefecture_name_ja": "宮崎県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city",
+    "prefectural_capital"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第六次宮崎市総合計画",
+    "start_fiscal_year": 2025,
+    "end_fiscal_year": 2034,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "miyazaki-sixth-plan",
+      "layer": "comprehensive_plan",
+      "title": "第六次宮崎市総合計画について",
+      "official_url": "https://www.city.miyazaki.miyazaki.jp/city/plan/6th_generalplan/6th_citymasterplan/",
+      "status": "official_landing_verified",
+      "effective_period": "2025年度～2034年度",
+      "review_boundary": "10年間の新しい最上位計画として保持し、第五次総合計画の実績・評価をcurrent actualへ流用しない。"
+    },
+    {
+      "id": "miyazaki-policy-evaluation-2026",
+      "layer": "annual_progress",
+      "title": "施策評価",
+      "official_url": "https://www.city.miyazaki.miyazaki.jp/city/plan/6th_generalplan/policy_evaluation/416357.html",
+      "status": "official_landing_verified",
+      "available_periods": [
+        "2026年度評価・2025年度実績"
+      ],
+      "review_boundary": "前年度実績を基に重点項目を内部・外部評価する公式route。自治体の評価結果を独自達成度やランキングへ変換しない。"
+    },
+    {
+      "id": "miyazaki-budget-2026",
+      "layer": "budget",
+      "title": "令和８年度当初予算",
+      "official_url": "https://www.city.miyazaki.miyazaki.jp/city/finance/budget/408626.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算案・主要事業の公式入口。proposal/enacted/supplementary stateはPhase 15でofficial lineageを確認する。"
+    },
+    {
+      "id": "miyazaki-settlement-audit-2024",
+      "layer": "settlement_and_audit",
+      "title": "決算審査意見書等",
+      "official_url": "https://www.city.miyazaki.miyazaki.jp/city/audit/2052.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024一般・特別会計決算および監査意見の公式入口。旧第五次計画期間の決算・監査を第六次計画current actualへ流用しない。"
+    }
+  ],
+  "availability_boundary": "第六次総合計画は2025～2034年度。2026年度施策評価は2025年度実績を対象にする一方、FY2024決算・監査は旧第五次計画期間であり、measurement/reporting/plan versionを分離する。",
+  "quality_boundary": "This Phase 14 inventory verifies Miyazaki's 2025-2034 sixth comprehensive plan, current internal/external policy-evaluation route, FY2026 initial-budget proposal, and FY2024 prior-plan settlement/audit route. Municipal evaluation and audit evidence remain attributed and are not converted into independent achievement, causal, or cross-city judgments.",
+  "next_action": "Phase 15で政策・重点項目・指標、FY2025実績の内部/外部施策評価、FY2026予算lineage、旧第五次計画下FY2024決算・監査をEvidence role別にレビューする。",
+  "verified_at": "2026-09-30"
+}
