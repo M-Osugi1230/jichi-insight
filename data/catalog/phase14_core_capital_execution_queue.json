@@ -1,7 +1,7 @@
 {
   "id": "phase14-core-capital-execution-queue",
   "phase": 14,
-  "status": "in_progress",
+  "status": "complete",
   "scope": "core_cities_and_prefectural_capitals_excluding_designated_cities",
   "target_registry_path": "data/catalog/phase14_core_capital_target_registry.json",
   "source_inventory_schema_path": "schemas/phase14_municipality_source_inventory.schema.json",
@@ -84,11 +84,11 @@
     {
       "wave": 8,
       "region": "九州・沖縄",
-      "status": "in_progress",
+      "status": "complete",
       "target_count": 8,
-      "source_inventory_complete_count": 0,
-      "pending_count": 7,
-      "source_inventory_in_progress_count": 1
+      "source_inventory_complete_count": 8,
+      "pending_count": 0,
+      "source_inventory_in_progress_count": 0
     }
   ],
   "summary": {
@@ -97,10 +97,10 @@
     "prefectural_capital_count": 32,
     "core_city_and_prefectural_capital_overlap": 27,
     "prefectural_capital_only_count": 5,
-    "source_inventory_complete_count": 59,
-    "source_inventory_in_progress_count": 1,
-    "pending_source_inventory_count": 7,
-    "next_official_code": "402036"
+    "source_inventory_complete_count": 67,
+    "source_inventory_in_progress_count": 0,
+    "pending_source_inventory_count": 0,
+    "next_official_code": null
   },
   "updated_at": "2026-09-30"
 }
