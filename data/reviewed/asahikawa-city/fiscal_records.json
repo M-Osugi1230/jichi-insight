@@ -1,0 +1,65 @@
+[
+  {
+    "id": "jp-local-012041-fiscal-2026-total-expenditure",
+    "municipality_id": "jp-local-012041",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算総額",
+    "amount_yen": 181800000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "令和8年度旭川市一般会計予算第1条の181,800,000千円を円換算。補正後予算・執行・決算とは別state。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "asahikawa-budget-2026-pdf"
+    ]
+  },
+  {
+    "id": "jp-local-012041-fiscal-2024-total-revenue",
+    "municipality_id": "jp-local-012041",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "一般会計収入済額",
+    "amount_yen": 182479594406,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "令和6年度決算審査意見書の円単位exact source value。HTML概要の千円単位丸め値より精密な監査資料値を採用。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "asahikawa-settlement-2024-audit-pdf"
+    ]
+  },
+  {
+    "id": "jp-local-012041-fiscal-2024-total-expenditure",
+    "municipality_id": "jp-local-012041",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計支出済額",
+    "amount_yen": 180794635444,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "令和6年度決算審査意見書の円単位exact source value。予算額・予算現額とは分離する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "asahikawa-settlement-2024-audit-pdf"
+    ]
+  }
+]
