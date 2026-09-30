@@ -1,0 +1,75 @@
+{
+  "id": "hakodate-phase15-completion",
+  "phase": 15,
+  "status": "reviewed_complete",
+  "official_code": "012025",
+  "name_ja": "函館市",
+  "completed_at": "2026-10-01",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "source_catalog_path": "data/catalog/hakodate_phase15_sources.json",
+    "plan_review_path": "data/reviewed/hakodate-city/plan_review.json",
+    "policy_structure_path": "data/catalog/hakodate_current_policy_structure.json",
+    "progress_review_path": "data/catalog/hakodate_current_progress_review_summary.json",
+    "fiscal_records_path": "data/reviewed/hakodate-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/hakodate-city/evidence_packets.json",
+    "counts": {
+      "priority_projects": 2,
+      "current_plan_basic_goals": 5,
+      "current_plan_measures": 20,
+      "implementation_strategy_basic_goals": 4,
+      "historical_strategy_kpi_evaluation_records": 41,
+      "current_strategy_kpi_actuals_promoted": 0,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "current_plan_period_reviewed": true,
+    "current_plan_policy_structure_reviewed": true,
+    "implementation_strategy_role_and_period_reviewed": true,
+    "source_reported_evaluation_governance_preserved": true,
+    "historical_strategy_evaluation_not_reused_as_current_actual": true,
+    "successor_plan_draft_not_promoted": true,
+    "fiscal_states_and_years_separate": true,
+    "exact_settlement_precision_preserved": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "current-third-strategy-kpi-project-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "第3期戦略の個別KPI・事業identityの全件レビューは追加depth。令和7年度第1回推進会議のKPI・事業一覧を、stable evidence locator確認なしに個別Reviewedへ一括昇格しない。"
+    },
+    {
+      "id": "current-third-strategy-annual-actuals",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "第3期戦略の個別KPI current actualはv1で昇格しない。第2期の41件評価結果を第3期actualへ流用せず、今後の公式年次評価資料で個別にレビューする。"
+    },
+    {
+      "id": "current-plan-measure-to-strategy-kpi-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "現行基本構想20施策と第3期戦略の各KPI・事業の細粒度linkageは、公式対応関係をEvidenceで確認できた組合せだけを追加昇格する。名称類似だけで接続しない。"
+    },
+    {
+      "id": "successor-basic-concept-adoption",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "函館市基本構想2027～2036は2026-10-01時点でパブリックコメント中の素案。採択・確定まではdraft transitionとして保持し、current planへ昇格しない。"
+    },
+    {
+      "id": "fiscal-detail-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "v1ではFY2026一般会計当初予算案トップラインとFY2024一般会計決算歳入・歳出をstate分離して保持する。補正、執行、個別事業費、契約、補助金への接続は追加Evidenceレビューとする。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "現行20施策、戦略評価設計、財政トップラインのレビューは政策効果の因果認定や他都市比較可能性を意味しない。専用方法論なしに統合scoreやrankingへ昇格しない。"
+    }
+  ],
+  "completion_boundary": "函館市のPhase 15 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味する。現行函館市基本構想2017～2026の期間、2重点プロジェクト・5基本目標・20施策、第3期函館市活性化総合戦略が基本構想実施計画を兼ねることと2025～2029の期間、内部評価および函館市まち・ひと・しごと創生推進会議による外部評価の制度、次期基本構想2027～2036が2026-10-01時点でパブリックコメント中の素案であるtransition、FY2026一般会計当初予算案154,100,000,000円、FY2024一般会計収入済額144,921,264,078円・支出済額142,388,719,238円を公式sourceとEvidence位置付きでレビュー済みである。一方、第3期戦略の個別KPI・事業の全件identity/current actual、現行20施策との細粒度linkage、次期構想の採択後内容、補正・執行・契約・補助金等の財政detailはdeferred_depthとして明示する。第2期戦略のsource-reported評価41件を第3期current actualへ流用せず、自治体評価をJichi Insight独自の政策達成度、因果効果、他都市比較可能性またはランキングへ変換しない。"
+}

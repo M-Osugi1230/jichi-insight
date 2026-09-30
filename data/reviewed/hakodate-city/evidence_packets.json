@@ -1,0 +1,61 @@
+[
+  {
+    "id": "evidence-hakodate-city-2026-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-012025-fiscal-2026-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算案総額は154,100,000,000円。",
+        "source_ids": [
+          "hakodate-budget-2026-pdf"
+        ],
+        "location_note": "PDF page 8 / printed p.7『各会計予算（案）総括表』一般会計 154,100,000千円。",
+        "decision": "accepted",
+        "review_note": "千円単位の公式値を円換算。補正後予算や決算額とは別state。"
+      }
+    ],
+    "open_questions": [
+      "議決後当初予算の正本で総額またはbudget stateが更新される場合はproposalとの差分を別レコードで確認する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hakodate-city-2024-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-012025-fiscal-2024-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計の収入済額は144,921,264,078円。",
+        "source_ids": [
+          "hakodate-settlement-2024-audit-pdf"
+        ],
+        "location_note": "PDF page 12 / printed p.6『(2) 決算収支の状況』一般会計・収入済額。",
+        "decision": "accepted",
+        "review_note": "監査委員審査意見のexact source valueを保持する。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hakodate-city-2024-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-012025-fiscal-2024-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計の支出済額は142,388,719,238円。",
+        "source_ids": [
+          "hakodate-settlement-2024-audit-pdf"
+        ],
+        "location_note": "PDF page 12 / printed p.6『(2) 決算収支の状況』一般会計・支出済額。",
+        "decision": "accepted",
+        "review_note": "監査委員審査意見のexact source valueを保持し、予算額と混同しない。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]

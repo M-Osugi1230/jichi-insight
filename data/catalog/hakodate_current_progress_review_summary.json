@@ -1,0 +1,42 @@
+{
+  "id": "hakodate-current-progress-review-summary",
+  "phase": 15,
+  "official_code": "012025",
+  "name_ja": "函館市",
+  "reviewed_at": "2026-10-01",
+  "current_implementation_strategy": {
+    "title": "第3期函館市活性化総合戦略",
+    "period": "2025年度～2029年度",
+    "evaluation_design": {
+      "internal_evaluation": true,
+      "external_evaluation_body": "函館市まち・ひと・しごと創生推進会議",
+      "source_reported_kpi_evaluation": true
+    },
+    "current_period_kpi_actuals": {
+      "status": "not_promoted_in_v1",
+      "boundary": "令和7年度第1回推進会議の公式公開routeでは第2期総合戦略の実績評価と第3期KPI・事業一覧が確認できる。第2期評価を第3期current actualへ流用せず、第3期の個別KPI actualは追加review depthとする。"
+    }
+  },
+  "historical_evaluation_context": {
+    "strategy": "第2期函館市活性化総合戦略",
+    "kpi_evaluation_count": 41,
+    "source_reported_classes": {
+      "S": 11,
+      "A": 6,
+      "B": 8,
+      "C": 11,
+      "unavailable_or_not_evaluable": 5
+    },
+    "boundary": "第3期戦略PDFが引用する第2期のsource-reported評価。第3期のcurrent achievementを示すものではなく、Jichi Insight独自評価にも変換しない。"
+  },
+  "successor_plan_transition": {
+    "title": "函館市基本構想（2027～2036）（素案）",
+    "proposed_start_fiscal_year": 2027,
+    "proposed_end_fiscal_year": 2036,
+    "status": "draft_public_comment_open",
+    "public_comment_start": "2026-09-07",
+    "public_comment_end": "2026-10-21",
+    "boundary": "2026-10-01時点で素案・意見募集中。adopted current planではない。"
+  },
+  "review_status": "reviewed_with_explicit_deferred_depth"
+}

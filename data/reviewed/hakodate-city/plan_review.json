@@ -1,0 +1,73 @@
+{
+  "id": "phase15-hakodate-plan-review",
+  "official_code": "012025",
+  "name_ja": "函館市",
+  "review_status": "reviewed",
+  "reviewed_at": "2026-10-01",
+  "records": [
+    {
+      "id": "hakodate-current-plan-period",
+      "evidence_role": "current_plan_identity",
+      "title": "函館市基本構想（2017～2026）",
+      "statement": "現行基本構想の計画期間は2017年度から2026年度まで。",
+      "source_url": "https://www.city.hakodate.hokkaido.jp/docs/2016122100014/",
+      "evidence_location": "本文『函館市基本構想（2017-2026）』および『第1章 策定の趣旨 > 2 目標年次と対象区域』",
+      "decision": "accepted",
+      "review_note": "2026年度が現行基本構想の最終年度。次期素案をcurrent planへ先取りしない。"
+    },
+    {
+      "id": "hakodate-current-plan-policy-structure",
+      "evidence_role": "policy_structure",
+      "title": "函館市基本構想（2017～2026）",
+      "statement": "将来像実現に向け、2つの重点プロジェクト、5つの基本目標、20の施策を掲げる。",
+      "value": 20,
+      "unit": "measures",
+      "source_url": "https://www.city.hakodate.hokkaido.jp/docs/2016122100014/",
+      "evidence_location": "本文『第5章 将来像実現に向けた取組の方向性』",
+      "decision": "accepted",
+      "review_note": "20施策の名称はhakodate_current_policy_structure.jsonで個別保持する。"
+    },
+    {
+      "id": "hakodate-third-strategy-role",
+      "evidence_role": "implementation_layer",
+      "title": "第3期函館市活性化総合戦略",
+      "statement": "第3期函館市活性化総合戦略は函館市総合計画基本構想実施計画を兼ねる。",
+      "source_url": "https://www.city.hakodate.hokkaido.jp/docs/2025012400035/file_contents/3kisenryaku.pdf",
+      "evidence_location": "PDF page 3『2 本戦略の位置づけ』",
+      "decision": "accepted",
+      "review_note": "総合戦略を基本構想そのものと同一視せず、implementation layerとして保持する。"
+    },
+    {
+      "id": "hakodate-third-strategy-period",
+      "evidence_role": "implementation_layer",
+      "title": "第3期函館市活性化総合戦略",
+      "statement": "第3期戦略の計画期間は2025年度から2029年度までの5年間。",
+      "source_url": "https://www.city.hakodate.hokkaido.jp/docs/2025012400035/file_contents/3kisenryaku.pdf",
+      "evidence_location": "PDF page 5 / printed p.3『4 計画期間』",
+      "decision": "accepted",
+      "review_note": "現行基本構想の終期2026年度を越える。基本構想改定時に必要に応じて戦略も改定する境界を保持する。"
+    },
+    {
+      "id": "hakodate-third-strategy-evaluation-design",
+      "evidence_role": "progress_governance",
+      "title": "第3期函館市活性化総合戦略",
+      "statement": "数値目標・KPIの達成度について内部評価を行い、函館市まち・ひと・しごと創生推進会議で外部評価を行う。",
+      "source_url": "https://www.city.hakodate.hokkaido.jp/docs/2025012400035/file_contents/3kisenryaku.pdf",
+      "evidence_location": "PDF page 5 / printed p.3『5 評価と検証』",
+      "decision": "accepted",
+      "review_note": "自治体および会議によるsource-reported evaluationであり、Jichi Insight独自評価へ変換しない。"
+    },
+    {
+      "id": "hakodate-next-plan-draft-status",
+      "evidence_role": "plan_transition",
+      "title": "函館市基本構想（2027～2036）（素案）",
+      "statement": "2026-10-01時点で次期基本構想2027～2036は素案であり、2026-09-07から2026-10-21までパブリックコメント実施中。",
+      "source_url": "https://www.city.hakodate.hokkaido.jp/docs/2026081400025/",
+      "evidence_location": "『募集期間』『概要・趣旨・背景』『政策の案等』",
+      "decision": "accepted",
+      "review_note": "draft_public_comment_openとして保持し、採択済みcurrent planには昇格しない。"
+    }
+  ],
+  "quality_boundary": "This package reviews current plan identity and structure, implementation-layer role and period, official evaluation governance, and the successor-plan draft state. It does not infer current KPI achievement, adopt draft successor content, establish causal effects, or assert cross-city comparability.",
+  "next_action": "Keep the current third-strategy KPI/project universe and annual actuals as explicit deferred depth until stable official item-level evidence locations are reviewed."
+}

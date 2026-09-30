@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.local/schemas/phase15_municipality_completion.schema.json",
+  "title": "Phase 15 municipality reviewed-complete contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "phase",
+    "status",
+    "official_code",
+    "name_ja",
+    "completed_at",
+    "completion_depth",
+    "review_package",
+    "quality_gate",
+    "deferred_depth",
+    "completion_boundary"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+-phase15-completion$"
+    },
+    "phase": {
+      "const": 15
+    },
+    "status": {
+      "const": "reviewed_complete"
+    },
+    "official_code": {
+      "type": "string",
+      "pattern": "^[0-9]{6}$"
+    },
+    "name_ja": {
+      "type": "string",
+      "minLength": 2
+    },
+    "completed_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "completion_depth": {
+      "const": "declared_review_package_v1"
+    },
+    "review_package": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_catalog_path",
+        "plan_review_path",
+        "policy_structure_path",
+        "progress_review_path",
+        "fiscal_records_path",
+        "fiscal_evidence_path",
+        "counts"
+      ],
+      "properties": {
+        "source_catalog_path": {
+          "type": "string",
+          "pattern": "^data/catalog/.+\\.json$"
+        },
+        "plan_review_path": {
+          "type": "string",
+          "pattern": "^data/reviewed/.+/plan_review\\.json$"
+        },
+        "policy_structure_path": {
+          "type": "string",
+          "pattern": "^data/catalog/.+\\.json$"
+        },
+        "progress_review_path": {
+          "type": "string",
+          "pattern": "^data/catalog/.+\\.json$"
+        },
+        "fiscal_records_path": {
+          "type": "string",
+          "pattern": "^data/reviewed/.+/fiscal_records\\.json$"
+        },
+        "fiscal_evidence_path": {
+          "type": "string",
+          "pattern": "^data/reviewed/.+/evidence_packets\\.json$"
+        },
+        "counts": {
+          "type": "object",
+          "minProperties": 3,
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "quality_gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 10,
+      "patternProperties": {
+        "^[a-z0-9_]+$": {
+          "const": true
+        }
+      }
+    },
+    "deferred_depth": {
+      "type": "array",
+      "minItems": 3,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "status",
+          "boundary"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "status": {
+            "const": "deferred_not_required_for_v1_completion"
+          },
+          "count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "boundary": {
+            "type": "string",
+            "minLength": 20
+          }
+        }
+      }
+    },
+    "completion_boundary": {
+      "type": "string",
+      "minLength": 300
+    }
+  }
+}

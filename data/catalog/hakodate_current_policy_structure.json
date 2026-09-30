@@ -1,0 +1,91 @@
+{
+  "id": "hakodate-current-policy-structure",
+  "phase": 15,
+  "official_code": "012025",
+  "name_ja": "函館市",
+  "current_plan": {
+    "title": "函館市基本構想（2017～2026）",
+    "start_fiscal_year": 2017,
+    "end_fiscal_year": 2026,
+    "status": "current_final_year",
+    "priority_projects": [
+      {
+        "id": "economic-revitalization",
+        "name_ja": "経済再生プロジェクト"
+      },
+      {
+        "id": "appeal-enhancement",
+        "name_ja": "魅力向上プロジェクト"
+      }
+    ],
+    "basic_goals": [
+      {
+        "id": "goal-1",
+        "name_ja": "まちの賑わいを再生し未来へ引き継ぎます",
+        "measures": [
+          "観光・コンベンションの振興",
+          "農林水産業の振興",
+          "商工業の振興",
+          "新産業の創出と企業立地の促進",
+          "学術研究機能の充実"
+        ]
+      },
+      {
+        "id": "goal-2",
+        "name_ja": "子ども・若者を育み希望を将来へつなぎます",
+        "measures": [
+          "子ども・子育て支援の充実",
+          "学校教育・高等教育の充実",
+          "若者への支援の充実"
+        ]
+      },
+      {
+        "id": "goal-3",
+        "name_ja": "いつまでも生き生きと暮らせるまちをめざします",
+        "measures": [
+          "暮らしを支える福祉の充実",
+          "生きがいづくり・健康づくりの推進",
+          "安全に暮らせる市民生活の確保",
+          "安定した雇用の維持・創出"
+        ]
+      },
+      {
+        "id": "goal-4",
+        "name_ja": "日本一魅力的なまち函館を次世代へ継承します",
+        "measures": [
+          "魅力ある景観・町並み・市街地の形成",
+          "文化芸術の振興と歴史の継承",
+          "国際化と地域間交流の推進",
+          "陸・海・空の交通網の充実"
+        ]
+      },
+      {
+        "id": "goal-5",
+        "name_ja": "持続可能な都市の基盤を構築します",
+        "measures": [
+          "社会基盤施設の機能維持",
+          "公共交通の再編",
+          "防災対策の充実",
+          "環境保全の推進"
+        ]
+      }
+    ]
+  },
+  "implementation_layer": {
+    "title": "第3期函館市活性化総合戦略",
+    "start_fiscal_year": 2025,
+    "end_fiscal_year": 2029,
+    "basic_goal_count": 4,
+    "role": "函館市総合計画基本構想実施計画を兼ねる",
+    "revision_boundary": "現基本構想の改定時には必要に応じて戦略も改定する。"
+  },
+  "counts": {
+    "priority_projects": 2,
+    "basic_goals": 5,
+    "current_plan_measures": 20,
+    "implementation_strategy_basic_goals": 4
+  },
+  "source_id": "hakodate-current-plan-page",
+  "implementation_source_id": "hakodate-third-strategy-pdf",
+  "review_status": "reviewed"
+}
