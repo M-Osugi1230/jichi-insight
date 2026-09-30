@@ -1,0 +1,65 @@
+{
+  "id": "phase14-matsue-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "322016",
+  "standard_area_code": "32201",
+  "name_ja": "松江市",
+  "prefecture_name_ja": "島根県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city",
+    "prefectural_capital"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "松江市総合計画 MATSUE DREAMS 2030",
+    "start_fiscal_year": 2022,
+    "end_fiscal_year": 2029,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "matsue-dreams-2030",
+      "layer": "comprehensive_and_implementation_plan",
+      "title": "松江市総合計画(MATSUE DREAMS 2030)",
+      "official_url": "https://www.city.matsue.lg.jp/gyoseijoho/kakushukeikaku/10/4/8737.html",
+      "status": "official_landing_verified",
+      "effective_period": "総合計画 2022年度～2029年度・実施計画 毎年度PDCA見直し",
+      "review_boundary": "8年間の総合計画と毎年度更新される実施計画を別versionとして保持し、年度版を上書きしない。"
+    },
+    {
+      "id": "matsue-kpi-progress",
+      "layer": "annual_progress",
+      "title": "松江市総合計画実施状況・KPI進捗",
+      "official_url": "https://www.city.matsue.lg.jp/gyoseijoho/kakushukeikaku/10/4/8737.html",
+      "status": "official_landing_verified",
+      "available_periods": [
+        "2024年度実施状況"
+      ],
+      "review_boundary": "KPI達成率等を含む自治体の進捗公表route。source-reported評価をJichi Insight独自の達成度やランキングへ変換しない。"
+    },
+    {
+      "id": "matsue-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算の概要",
+      "official_url": "https://www.city.matsue.lg.jp/gyoseijoho/gyozaisei/3/3/24272.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算・6月・9月補正等の公式入口。initialとsupplementaryを別budget stateとして保持する。"
+    },
+    {
+      "id": "matsue-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度決算の概要",
+      "official_url": "https://www.city.matsue.lg.jp/soshikikarasagasu/zaiseibu_zaiseika/gyozaisei/1/1/23753.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算概要の公式入口。KPI進捗・実施計画と財政決算を別Evidence roleとして保持する。"
+    }
+  ],
+  "availability_boundary": "MATSUE DREAMS 2030は2022～2029年度、実施計画は毎年度PDCAで更新される。KPIの測定年・評価年、予算年度、決算年度を分離し、自治体自己評価を独自評価へ再計算しない。",
+  "quality_boundary": "This Phase 14 inventory verifies Matsue's 2022-2029 comprehensive plan, annually revised implementation/KPI route, FY2026 budget, and FY2024 settlement. Municipal KPI attainment remains source-reported and is not converted into independent policy achievement, causal effects, fiscal effectiveness, or cross-city comparison judgments.",
+  "next_action": "Phase 15で5基本目標・18基本施策・KPI、FY2026実施計画、FY2024実施状況、FY2026予算・補正、FY2024決算を時点・定義付きEvidenceへ展開する。",
+  "verified_at": "2026-09-30"
+}
