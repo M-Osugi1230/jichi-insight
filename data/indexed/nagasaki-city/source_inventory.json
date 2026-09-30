@@ -1,0 +1,74 @@
+{
+  "id": "phase14-nagasaki-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "422010",
+  "standard_area_code": "42201",
+  "name_ja": "長崎市",
+  "prefecture_name_ja": "長崎県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city",
+    "prefectural_capital"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "長崎市第五次総合計画 後期基本計画",
+    "start_fiscal_year": 2026,
+    "end_fiscal_year": 2030,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "nagasaki-fifth-latter-plan",
+      "layer": "comprehensive_plan",
+      "title": "長崎市第五次総合計画後期基本計画／第3期まち・ひと・しごと創生総合戦略",
+      "official_url": "https://www.city.nagasaki.lg.jp/page/50955.html",
+      "status": "official_landing_verified",
+      "effective_period": "第五次総合計画 2022年度～2030年度・後期基本計画 2026年度～2030年度",
+      "review_boundary": "9年間の第五次総合計画とcurrent後期5年基本計画を保持し、前期2022～2025の実績をcurrent actualへ流用しない。"
+    },
+    {
+      "id": "nagasaki-implementation-2026-2028",
+      "layer": "implementation_plan",
+      "title": "長崎市第五次総合計画の実施計画",
+      "official_url": "https://www.city.nagasaki.lg.jp/page/5169.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2028年度・3年計画/毎年度見直し",
+      "review_boundary": "主要事業の3年実施計画をcurrent implementation layerとして保持し、今後の変更可能性を確定事実として先取りしない。"
+    },
+    {
+      "id": "nagasaki-progress",
+      "layer": "annual_progress",
+      "title": "長崎市第五次総合計画後期基本計画 進捗管理",
+      "official_url": "https://www.city.nagasaki.lg.jp/page/50955.html",
+      "status": "official_landing_verified",
+      "available_periods": [
+        "令和8年度施策評価結果から掲載予定"
+      ],
+      "review_boundary": "後期基本計画は毎年度評価予定だが、未公表の評価結果を推測で作成せず、availability自体を明示的に保持する。"
+    },
+    {
+      "id": "nagasaki-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算",
+      "official_url": "https://www.city.nagasaki.lg.jp/life/7/52/315/",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算案と補正予算案の公式入口。proposal/enacted/supplementaryのstateをPhase 15で個別確認する。"
+    },
+    {
+      "id": "nagasaki-settlement-2024",
+      "layer": "settlement",
+      "title": "財政（予算・決算）",
+      "official_url": "https://www.city.nagasaki.lg.jp/life/7/52/",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算・財政状況資料集の公式入口。前期基本計画期間の財政Evidenceとして後期current actualへ流用しない。"
+    }
+  ],
+  "availability_boundary": "第五次総合計画は2022～2030年度で、後期基本計画は2026～2030年度、実施計画は2026～2028年度。後期の毎年度評価はFY2026評価結果から掲載予定であり、未公表値を補完しない。",
+  "quality_boundary": "This Phase 14 inventory verifies Nagasaki's current 2026-2030 latter basic plan, rolling 2026-2028 implementation route, explicit not-yet-published current evaluation boundary, FY2026 budget route, and FY2024 front-plan settlement route. Missing evaluation results are not inferred and no independent achievement or causal judgment is introduced.",
+  "next_action": "Phase 15で後期基本計画の施策・KPI、2026～2028実施事業、FY2026施策評価availability、FY2026予算lineage、前期期間FY2024決算をEvidence化する。",
+  "verified_at": "2026-09-30"
+}
