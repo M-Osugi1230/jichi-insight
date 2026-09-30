@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-10-01",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "asahikawa-city-home",
+      "municipality_key": "asahikawa-city",
+      "organization": "旭川市",
+      "category": "municipality_profile",
+      "title": "旭川市公式ホームページ",
+      "url": "https://www.city.asahikawa.hokkaido.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-10-01",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "旭川市公式自治体サイト。"
+    },
+    {
+      "id": "asahikawa-budget-2026-pdf",
+      "municipality_key": "asahikawa-city",
+      "organization": "旭川市",
+      "category": "budget",
+      "title": "令和8年度旭川市一般会計予算",
+      "url": "https://www.city.asahikawa.hokkaido.jp/700/731/732/d083385_d/fil/R8yosansyo.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-10-01",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算181,800,000千円の公式予算書。"
+    },
+    {
+      "id": "asahikawa-settlement-2024-audit-pdf",
+      "municipality_key": "asahikawa-city",
+      "organization": "旭川市",
+      "category": "settlement",
+      "title": "令和6年度旭川市一般会計・特別会計決算審査意見書",
+      "url": "https://www.city.asahikawa.hokkaido.jp/700/766/110/d082557_d/fil/R6kessan_ippann_tokubethu.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-10-01",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計収入済額・支出済額の円単位exact valuesを含む監査委員資料。"
+    }
+  ]
+}
