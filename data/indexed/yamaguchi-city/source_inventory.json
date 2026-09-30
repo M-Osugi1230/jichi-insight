@@ -1,0 +1,73 @@
+{
+  "id": "phase14-yamaguchi-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "352039",
+  "standard_area_code": "35203",
+  "name_ja": "山口市",
+  "prefecture_name_ja": "山口県",
+  "municipality_type": "city",
+  "roles": [
+    "prefectural_capital"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第二次山口市総合計画 後期基本計画",
+    "start_fiscal_year": 2023,
+    "end_fiscal_year": 2027,
+    "period_status": "transition_or_unresolved"
+  },
+  "sources": [
+    {
+      "id": "yamaguchi-second-latter-plan",
+      "layer": "comprehensive_plan",
+      "title": "第二次山口市総合計画後期基本計画",
+      "official_url": "https://www.city.yamaguchi.lg.jp/site/shiseijoho/137038.html",
+      "status": "official_landing_verified",
+      "effective_period": "総合計画 2018年度～2027年度・後期基本計画 2023年度～2027年度",
+      "review_boundary": "10年間の第二次総合計画と後期5年基本計画をcurrent versionとして保持し、FY2028開始予定の次期計画策定と分離する。"
+    },
+    {
+      "id": "yamaguchi-ninth-action-plan",
+      "layer": "implementation_plan",
+      "title": "第二次山口市総合計画 実行計画",
+      "official_url": "https://www.city.yamaguchi.lg.jp/site/shiseijoho/111486.html",
+      "status": "official_landing_verified",
+      "effective_period": "第9次実行計画 2026年度～2028年度・毎年度3年ローリング",
+      "review_boundary": "基本計画終期2027年度を越えて2028年度まで含む3年ローリング実行計画を保持し、期間差を欠損扱いしない。"
+    },
+    {
+      "id": "yamaguchi-achievement-report-2024",
+      "layer": "annual_progress",
+      "title": "まちづくり達成状況報告書",
+      "official_url": "https://www.city.yamaguchi.lg.jp/site/shiseijoho/109762.html",
+      "status": "official_landing_verified",
+      "available_periods": [
+        "2024年度"
+      ],
+      "review_boundary": "毎年度のまちづくり達成状況と主要施策成果を一体公表する公式route。自治体の達成表現をJichi Insight独自評価へ変換しない。"
+    },
+    {
+      "id": "yamaguchi-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算とまちづくりの概要",
+      "official_url": "https://www.city.yamaguchi.lg.jp/soshiki/16/191175.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算と前年度補正を16カ月予算として一体執行する説明を保持し、会計上の各budget state自体は別レコードで扱う。"
+    },
+    {
+      "id": "yamaguchi-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度決算を公表します",
+      "official_url": "https://www.city.yamaguchi.lg.jp/site/shiseijoho/184906.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算報告・財政指標・財務書類の公式入口。達成状況報告の政策成果と財政決算を別Evidence roleとして保持する。"
+    }
+  ],
+  "availability_boundary": "第二次総合計画は2018～2027年度、後期基本計画は2023～2027年度、第9次実行計画は2026～2028年度で基本計画終期を1年越える。FY2028開始の次期計画策定中であり、current/transition/rolling periodsを分離する。",
+  "quality_boundary": "This Phase 14 inventory preserves Yamaguchi's prefectural-capital-only classification, 2023-2027 latter basic plan, rolling 2026-2028 ninth action plan, annual achievement-report route, FY2026 budget presentation, and FY2024 settlement. Municipal achievement wording and 16-month budget framing are preserved without converting them into independent policy or causal judgments.",
+  "next_action": "Phase 15で後期基本計画の施策・指標、第9次実行計画事業、FY2024達成状況・主要施策成果、FY2026予算lineage、FY2024決算、次期計画transitionをEvidence化する。",
+  "verified_at": "2026-09-30"
+}
