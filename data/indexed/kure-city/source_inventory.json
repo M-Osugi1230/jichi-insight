@@ -1,0 +1,64 @@
+{
+  "id": "phase14-kure-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "342025",
+  "standard_area_code": "34202",
+  "name_ja": "呉市",
+  "prefecture_name_ja": "広島県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第5次呉市長期総合計画 後期基本計画",
+    "start_fiscal_year": 2026,
+    "end_fiscal_year": 2030,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "kure-fifth-latter-plan",
+      "layer": "comprehensive_and_implementation_plan",
+      "title": "第5次呉市長期総合計画",
+      "official_url": "https://www.city.kure.lg.jp/soshiki/7/dai5ji-tyoukisougoukeikaku.html",
+      "status": "official_landing_verified",
+      "effective_period": "基本構想 2021年度～2030年度・後期基本計画 2026年度～2030年度・構成事業集 年度更新",
+      "review_boundary": "10年基本構想、後期5年基本計画、年度構成事業集の3層を保持し、前期実績を後期current actualへ流用しない。"
+    },
+    {
+      "id": "kure-kpi-progress-2026",
+      "layer": "annual_progress",
+      "title": "重要業績評価指標（KPI）の進捗状況",
+      "official_url": "https://www.city.kure.lg.jp/soshiki/7/dai5ji-tyoukisougoukeikaku.html",
+      "status": "official_landing_verified",
+      "available_periods": [
+        "2026年8月末時点"
+      ],
+      "review_boundary": "後期基本計画・年度構成事業集に紐づくKPI進捗の公式入口。source-reported進捗を独自達成scoreへ変換しない。"
+    },
+    {
+      "id": "kure-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度当初予算",
+      "official_url": "https://www.city.kure.lg.jp/soshiki/89/soshiki89tousho08.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算の公式入口。議会可決、補正予算、専決処分、執行、決算を別stateとして保持する。"
+    },
+    {
+      "id": "kure-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度決算",
+      "official_url": "https://www.city.kure.lg.jp/soshiki/89/shisei-yosan-kessan06.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算概要の公式入口。前期基本計画期間の財政Evidenceを後期計画current actualへ流用しない。"
+    }
+  ],
+  "availability_boundary": "第5次長期総合計画は2021～2030年度で、2026年度に後期基本計画へ移行し構成事業集は毎年度更新。FY2024決算は前期期間、2026年KPIは後期期間としてversionを分離する。",
+  "quality_boundary": "This Phase 14 inventory verifies Kure's 2026-2030 latter basic plan under the 2021-2030 fifth long-term plan, annual component-project/KPI route, FY2026 initial budget, and FY2024 prior-period settlement. It preserves plan-version and budget-state boundaries and makes no independent achievement, causal, or comparison judgment.",
+  "next_action": "Phase 15で8政策分野・施策・KPI、FY2026構成事業集、KPI進捗、FY2026予算lineage、前期期間FY2024決算をversioned Evidenceへ展開する。",
+  "verified_at": "2026-09-30"
+}
