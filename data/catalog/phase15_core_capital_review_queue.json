@@ -1,0 +1,932 @@
+{
+  "id": "phase15-core-capital-review-queue",
+  "phase": 15,
+  "status": "in_progress",
+  "scope": "core_cities_and_prefectural_capitals_record_review",
+  "promotion_target": "reviewed",
+  "predecessor_phase": 14,
+  "predecessor_completion_path": "data/catalog/phase14_completion.json",
+  "review_depth": "declared_review_package_v1",
+  "quality_gate": [
+    "Only municipalities whose Phase 14 source inventory is source_inventory_complete may enter the Phase 15 record-review queue.",
+    "Every accepted Reviewed fact must retain an official source URL through the Phase 15 source catalog and a record-level evidence locator such as page, table, heading, section, or stable HTML text anchor.",
+    "Current plan identity, implementation layer, current annual result or explicit unavailability, budget state, settlement state, evaluation governance, and accountability roles must remain distinct evidence roles.",
+    "Proposal, enacted initial budget, supplementary budget, revised budget, execution, settlement, project cost, contract amount, subsidy amount, and audit finding must never be collapsed into one fiscal or performance value.",
+    "Plan version, target year, measurement year, reporting year, fiscal year, publication date, source precision, unit, denominator, and aggregation scope must remain separate when the official source distinguishes them.",
+    "Source-reported evaluations, committee findings, citizen surveys, KPI progress, and administrative evaluations may be preserved as attributed source facts but must not become independent Jichi Insight policy-achievement judgments.",
+    "No causal attribution, policy effectiveness score, cross-city ranking, or comparison eligibility may be promoted without a separate methodology review verifying comparability and causal assumptions.",
+    "Missing, unresolved, historical-only, draft, or not-yet-published evidence remains explicit and may be recorded as not_assessable or deferred without inventing values or downgrading verified Phase 14 source coverage.",
+    "A municipality reaches reviewed_complete only when its declared v1 review package, official-source lineage, evidence locators, fiscal-state separation, deferred-depth boundary, schemas, and municipality regression tests all pass.",
+    "Phase 15 completion for the 67-municipality universe requires every queue entry to be reviewed_complete, zero pending/in-progress/blocked entries, and a final completion manifest passing repository, web, publication, and production-smoke gates."
+  ],
+  "execution_queue": [
+    {
+      "review_sequence": 1,
+      "phase14_sequence": 60,
+      "phase14_wave": 8,
+      "official_code": "402036",
+      "name_ja": "久留米市",
+      "prefecture_name_ja": "福岡県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "review_in_progress"
+    },
+    {
+      "review_sequence": 2,
+      "phase14_sequence": 1,
+      "phase14_wave": 1,
+      "official_code": "012025",
+      "name_ja": "函館市",
+      "prefecture_name_ja": "北海道",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 3,
+      "phase14_sequence": 2,
+      "phase14_wave": 1,
+      "official_code": "012041",
+      "name_ja": "旭川市",
+      "prefecture_name_ja": "北海道",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 4,
+      "phase14_sequence": 3,
+      "phase14_wave": 1,
+      "official_code": "022012",
+      "name_ja": "青森市",
+      "prefecture_name_ja": "青森県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city",
+        "prefectural_capital"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 5,
+      "phase14_sequence": 4,
+      "phase14_wave": 1,
+      "official_code": "022039",
+      "name_ja": "八戸市",
+      "prefecture_name_ja": "青森県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 6,
+      "phase14_sequence": 5,
+      "phase14_wave": 1,
+      "official_code": "032018",
+      "name_ja": "盛岡市",
+      "prefecture_name_ja": "岩手県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city",
+        "prefectural_capital"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 7,
+      "phase14_sequence": 6,
+      "phase14_wave": 1,
+      "official_code": "052019",
+      "name_ja": "秋田市",
+      "prefecture_name_ja": "秋田県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city",
+        "prefectural_capital"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 8,
+      "phase14_sequence": 7,
+      "phase14_wave": 1,
+      "official_code": "062014",
+      "name_ja": "山形市",
+      "prefecture_name_ja": "山形県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city",
+        "prefectural_capital"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 9,
+      "phase14_sequence": 8,
+      "phase14_wave": 1,
+      "official_code": "072010",
+      "name_ja": "福島市",
+      "prefecture_name_ja": "福島県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city",
+        "prefectural_capital"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 10,
+      "phase14_sequence": 9,
+      "phase14_wave": 1,
+      "official_code": "072036",
+      "name_ja": "郡山市",
+      "prefecture_name_ja": "福島県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 11,
+      "phase14_sequence": 10,
+      "phase14_wave": 1,
+      "official_code": "072044",
+      "name_ja": "いわき市",
+      "prefecture_name_ja": "福島県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 12,
+      "phase14_sequence": 11,
+      "phase14_wave": 2,
+      "official_code": "082015",
+      "name_ja": "水戸市",
+      "prefecture_name_ja": "茨城県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city",
+        "prefectural_capital"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 13,
+      "phase14_sequence": 12,
+      "phase14_wave": 2,
+      "official_code": "092010",
+      "name_ja": "宇都宮市",
+      "prefecture_name_ja": "栃木県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city",
+        "prefectural_capital"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 14,
+      "phase14_sequence": 13,
+      "phase14_wave": 2,
+      "official_code": "102016",
+      "name_ja": "前橋市",
+      "prefecture_name_ja": "群馬県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city",
+        "prefectural_capital"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 15,
+      "phase14_sequence": 14,
+      "phase14_wave": 2,
+      "official_code": "102024",
+      "name_ja": "高崎市",
+      "prefecture_name_ja": "群馬県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 16,
+      "phase14_sequence": 15,
+      "phase14_wave": 2,
+      "official_code": "112011",
+      "name_ja": "川越市",
+      "prefecture_name_ja": "埼玉県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 17,
+      "phase14_sequence": 16,
+      "phase14_wave": 2,
+      "official_code": "112038",
+      "name_ja": "川口市",
+      "prefecture_name_ja": "埼玉県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 18,
+      "phase14_sequence": 17,
+      "phase14_wave": 2,
+      "official_code": "112224",
+      "name_ja": "越谷市",
+      "prefecture_name_ja": "埼玉県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 19,
+      "phase14_sequence": 18,
+      "phase14_wave": 2,
+      "official_code": "122041",
+      "name_ja": "船橋市",
+      "prefecture_name_ja": "千葉県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 20,
+      "phase14_sequence": 19,
+      "phase14_wave": 2,
+      "official_code": "122173",
+      "name_ja": "柏市",
+      "prefecture_name_ja": "千葉県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 21,
+      "phase14_sequence": 20,
+      "phase14_wave": 2,
+      "official_code": "131040",
+      "name_ja": "新宿区",
+      "prefecture_name_ja": "東京都",
+      "municipality_type": "special_ward",
+      "roles": [
+        "prefectural_capital"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 22,
+      "phase14_sequence": 21,
+      "phase14_wave": 2,
+      "official_code": "132012",
+      "name_ja": "八王子市",
+      "prefecture_name_ja": "東京都",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 23,
+      "phase14_sequence": 22,
+      "phase14_wave": 2,
+      "official_code": "142018",
+      "name_ja": "横須賀市",
+      "prefecture_name_ja": "神奈川県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 24,
+      "phase14_sequence": 23,
+      "phase14_wave": 3,
+      "official_code": "162019",
+      "name_ja": "富山市",
+      "prefecture_name_ja": "富山県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city",
+        "prefectural_capital"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 25,
+      "phase14_sequence": 24,
+      "phase14_wave": 3,
+      "official_code": "172014",
+      "name_ja": "金沢市",
+      "prefecture_name_ja": "石川県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city",
+        "prefectural_capital"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 26,
+      "phase14_sequence": 25,
+      "phase14_wave": 3,
+      "official_code": "182010",
+      "name_ja": "福井市",
+      "prefecture_name_ja": "福井県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city",
+        "prefectural_capital"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 27,
+      "phase14_sequence": 26,
+      "phase14_wave": 3,
+      "official_code": "192015",
+      "name_ja": "甲府市",
+      "prefecture_name_ja": "山梨県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city",
+        "prefectural_capital"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 28,
+      "phase14_sequence": 27,
+      "phase14_wave": 3,
+      "official_code": "202010",
+      "name_ja": "長野市",
+      "prefecture_name_ja": "長野県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city",
+        "prefectural_capital"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 29,
+      "phase14_sequence": 28,
+      "phase14_wave": 3,
+      "official_code": "202029",
+      "name_ja": "松本市",
+      "prefecture_name_ja": "長野県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 30,
+      "phase14_sequence": 29,
+      "phase14_wave": 4,
+      "official_code": "212016",
+      "name_ja": "岐阜市",
+      "prefecture_name_ja": "岐阜県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city",
+        "prefectural_capital"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 31,
+      "phase14_sequence": 30,
+      "phase14_wave": 4,
+      "official_code": "232017",
+      "name_ja": "豊橋市",
+      "prefecture_name_ja": "愛知県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 32,
+      "phase14_sequence": 31,
+      "phase14_wave": 4,
+      "official_code": "232025",
+      "name_ja": "岡崎市",
+      "prefecture_name_ja": "愛知県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 33,
+      "phase14_sequence": 32,
+      "phase14_wave": 4,
+      "official_code": "232033",
+      "name_ja": "一宮市",
+      "prefecture_name_ja": "愛知県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 34,
+      "phase14_sequence": 33,
+      "phase14_wave": 4,
+      "official_code": "232114",
+      "name_ja": "豊田市",
+      "prefecture_name_ja": "愛知県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 35,
+      "phase14_sequence": 34,
+      "phase14_wave": 4,
+      "official_code": "242012",
+      "name_ja": "津市",
+      "prefecture_name_ja": "三重県",
+      "municipality_type": "city",
+      "roles": [
+        "prefectural_capital"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 36,
+      "phase14_sequence": 35,
+      "phase14_wave": 5,
+      "official_code": "252018",
+      "name_ja": "大津市",
+      "prefecture_name_ja": "滋賀県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city",
+        "prefectural_capital"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 37,
+      "phase14_sequence": 36,
+      "phase14_wave": 5,
+      "official_code": "272035",
+      "name_ja": "豊中市",
+      "prefecture_name_ja": "大阪府",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 38,
+      "phase14_sequence": 37,
+      "phase14_wave": 5,
+      "official_code": "272051",
+      "name_ja": "吹田市",
+      "prefecture_name_ja": "大阪府",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 39,
+      "phase14_sequence": 38,
+      "phase14_wave": 5,
+      "official_code": "272078",
+      "name_ja": "高槻市",
+      "prefecture_name_ja": "大阪府",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 40,
+      "phase14_sequence": 39,
+      "phase14_wave": 5,
+      "official_code": "272108",
+      "name_ja": "枚方市",
+      "prefecture_name_ja": "大阪府",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 41,
+      "phase14_sequence": 40,
+      "phase14_wave": 5,
+      "official_code": "272124",
+      "name_ja": "八尾市",
+      "prefecture_name_ja": "大阪府",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 42,
+      "phase14_sequence": 41,
+      "phase14_wave": 5,
+      "official_code": "272159",
+      "name_ja": "寝屋川市",
+      "prefecture_name_ja": "大阪府",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 43,
+      "phase14_sequence": 42,
+      "phase14_wave": 5,
+      "official_code": "272272",
+      "name_ja": "東大阪市",
+      "prefecture_name_ja": "大阪府",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 44,
+      "phase14_sequence": 43,
+      "phase14_wave": 5,
+      "official_code": "282014",
+      "name_ja": "姫路市",
+      "prefecture_name_ja": "兵庫県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 45,
+      "phase14_sequence": 44,
+      "phase14_wave": 5,
+      "official_code": "282022",
+      "name_ja": "尼崎市",
+      "prefecture_name_ja": "兵庫県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 46,
+      "phase14_sequence": 45,
+      "phase14_wave": 5,
+      "official_code": "282030",
+      "name_ja": "明石市",
+      "prefecture_name_ja": "兵庫県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 47,
+      "phase14_sequence": 46,
+      "phase14_wave": 5,
+      "official_code": "282049",
+      "name_ja": "西宮市",
+      "prefecture_name_ja": "兵庫県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 48,
+      "phase14_sequence": 47,
+      "phase14_wave": 5,
+      "official_code": "292010",
+      "name_ja": "奈良市",
+      "prefecture_name_ja": "奈良県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city",
+        "prefectural_capital"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 49,
+      "phase14_sequence": 48,
+      "phase14_wave": 5,
+      "official_code": "302015",
+      "name_ja": "和歌山市",
+      "prefecture_name_ja": "和歌山県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city",
+        "prefectural_capital"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 50,
+      "phase14_sequence": 49,
+      "phase14_wave": 6,
+      "official_code": "312010",
+      "name_ja": "鳥取市",
+      "prefecture_name_ja": "鳥取県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city",
+        "prefectural_capital"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 51,
+      "phase14_sequence": 50,
+      "phase14_wave": 6,
+      "official_code": "322016",
+      "name_ja": "松江市",
+      "prefecture_name_ja": "島根県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city",
+        "prefectural_capital"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 52,
+      "phase14_sequence": 51,
+      "phase14_wave": 6,
+      "official_code": "332020",
+      "name_ja": "倉敷市",
+      "prefecture_name_ja": "岡山県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 53,
+      "phase14_sequence": 52,
+      "phase14_wave": 6,
+      "official_code": "342025",
+      "name_ja": "呉市",
+      "prefecture_name_ja": "広島県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 54,
+      "phase14_sequence": 53,
+      "phase14_wave": 6,
+      "official_code": "342076",
+      "name_ja": "福山市",
+      "prefecture_name_ja": "広島県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 55,
+      "phase14_sequence": 54,
+      "phase14_wave": 6,
+      "official_code": "352012",
+      "name_ja": "下関市",
+      "prefecture_name_ja": "山口県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 56,
+      "phase14_sequence": 55,
+      "phase14_wave": 6,
+      "official_code": "352039",
+      "name_ja": "山口市",
+      "prefecture_name_ja": "山口県",
+      "municipality_type": "city",
+      "roles": [
+        "prefectural_capital"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 57,
+      "phase14_sequence": 56,
+      "phase14_wave": 7,
+      "official_code": "362018",
+      "name_ja": "徳島市",
+      "prefecture_name_ja": "徳島県",
+      "municipality_type": "city",
+      "roles": [
+        "prefectural_capital"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 58,
+      "phase14_sequence": 57,
+      "phase14_wave": 7,
+      "official_code": "372013",
+      "name_ja": "高松市",
+      "prefecture_name_ja": "香川県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city",
+        "prefectural_capital"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 59,
+      "phase14_sequence": 58,
+      "phase14_wave": 7,
+      "official_code": "382019",
+      "name_ja": "松山市",
+      "prefecture_name_ja": "愛媛県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city",
+        "prefectural_capital"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 60,
+      "phase14_sequence": 59,
+      "phase14_wave": 7,
+      "official_code": "392014",
+      "name_ja": "高知市",
+      "prefecture_name_ja": "高知県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city",
+        "prefectural_capital"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 61,
+      "phase14_sequence": 61,
+      "phase14_wave": 8,
+      "official_code": "412015",
+      "name_ja": "佐賀市",
+      "prefecture_name_ja": "佐賀県",
+      "municipality_type": "city",
+      "roles": [
+        "prefectural_capital"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 62,
+      "phase14_sequence": 62,
+      "phase14_wave": 8,
+      "official_code": "422010",
+      "name_ja": "長崎市",
+      "prefecture_name_ja": "長崎県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city",
+        "prefectural_capital"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 63,
+      "phase14_sequence": 63,
+      "phase14_wave": 8,
+      "official_code": "422029",
+      "name_ja": "佐世保市",
+      "prefecture_name_ja": "長崎県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 64,
+      "phase14_sequence": 64,
+      "phase14_wave": 8,
+      "official_code": "442011",
+      "name_ja": "大分市",
+      "prefecture_name_ja": "大分県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city",
+        "prefectural_capital"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 65,
+      "phase14_sequence": 65,
+      "phase14_wave": 8,
+      "official_code": "452017",
+      "name_ja": "宮崎市",
+      "prefecture_name_ja": "宮崎県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city",
+        "prefectural_capital"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 66,
+      "phase14_sequence": 66,
+      "phase14_wave": 8,
+      "official_code": "462012",
+      "name_ja": "鹿児島市",
+      "prefecture_name_ja": "鹿児島県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city",
+        "prefectural_capital"
+      ],
+      "status": "pending_record_review"
+    },
+    {
+      "review_sequence": 67,
+      "phase14_sequence": 67,
+      "phase14_wave": 8,
+      "official_code": "472018",
+      "name_ja": "那覇市",
+      "prefecture_name_ja": "沖縄県",
+      "municipality_type": "city",
+      "roles": [
+        "core_city",
+        "prefectural_capital"
+      ],
+      "status": "pending_record_review"
+    }
+  ],
+  "blocked_source_inventories": [],
+  "summary": {
+    "eligible_review_queue_count": 67,
+    "reviewed_complete_count": 0,
+    "review_in_progress_count": 1,
+    "pending_record_review_count": 66,
+    "blocked_source_inventory_count": 0,
+    "next_official_code": "402036"
+  },
+  "updated_at": "2026-09-30"
+}
