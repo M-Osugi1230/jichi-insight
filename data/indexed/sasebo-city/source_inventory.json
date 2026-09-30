@@ -1,0 +1,62 @@
+{
+  "id": "phase14-sasebo-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "422029",
+  "standard_area_code": "42202",
+  "name_ja": "佐世保市",
+  "prefecture_name_ja": "長崎県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第7次佐世保市総合計画 後期基本計画",
+    "start_fiscal_year": 2024,
+    "end_fiscal_year": 2027,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "sasebo-seventh-latter-plan",
+      "layer": "comprehensive_plan",
+      "title": "第7次佐世保市総合計画",
+      "official_url": "https://www.city.sasebo.lg.jp/kikaku/seisak/dai7zisougoukeikaku.html",
+      "status": "official_landing_verified",
+      "effective_period": "後期基本計画 2024年度～2027年度",
+      "review_boundary": "第7次基本構想の目標年次2027年度と後期基本計画2024～2027年度をcurrentとして保持し、前期計画と分離する。"
+    },
+    {
+      "id": "sasebo-budget-policy-2026",
+      "layer": "implementation_and_budget_governance",
+      "title": "予算編成方針及び予算編成過程の公表",
+      "official_url": "https://www.city.sasebo.lg.jp/zaimu/zaisei/hensei_housin.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "政策推進枠を含むFY2026予算編成過程を実施・財政運営Evidenceとして保持し、配分過程を政策成果へ読み替えない。"
+    },
+    {
+      "id": "sasebo-budget-2026",
+      "layer": "budget",
+      "title": "予算説明資料",
+      "official_url": "https://www.city.sasebo.lg.jp/zaimu/zaisei/yosansetsumei.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算・5月/6月/9月補正等の公式入口。initialとsupplementaryを別stateで保持する。"
+    },
+    {
+      "id": "sasebo-settlement-2024",
+      "layer": "settlement",
+      "title": "わかりやすい決算書",
+      "official_url": "https://www.city.sasebo.lg.jp/zaimu/zaisei/wakariyasuikessansyo.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024普通会計決算の公式入口。後期基本計画初年度の財政Evidenceだが、政策達成を直接表すものとして扱わない。"
+    }
+  ],
+  "availability_boundary": "第7次佐世保市総合計画後期基本計画は2024～2027年度。FY2026予算編成過程には政策推進枠があるが、資源配分と政策成果を分離し、FY2024決算も財政Evidenceとしてのみ扱う。",
+  "quality_boundary": "This Phase 14 inventory verifies Sasebo's 2024-2027 latter basic plan, FY2026 implementation/budget-governance process, FY2026 budget updates, and FY2024 settlement. Budget prioritization and fiscal evidence are not treated as policy achievement, causal effectiveness, or a basis for unverified cross-city comparison.",
+  "next_action": "Phase 15で後期基本計画の政策・KPI、実施事業、予算編成/政策推進枠、FY2026予算・補正、FY2024決算をEvidence role別にレビューする。",
+  "verified_at": "2026-09-30"
+}
