@@ -791,18 +791,42 @@ Status: `complete`（2026-09-30）
 - 奈良市: 第5次総合計画FY2022～2031の前期推進方針がFY2026最終年度で、後期推進方針はtransition lane
 - 和歌山市: 第5次長期総合計画FY2017～2026の最終年度と次期計画transitionを分離
 
-### Current work — Chugoku source inventory
+### Milestone P14-M6 — Chugoku source inventory
+
+Status: `complete`（2026-09-30）
+
+中国7自治体を`source_inventory_complete`へ昇格しました。
+
+- 鳥取市
+- 松江市
+- 倉敷市
+- 呉市
+- 福山市
+- 下関市
+- 山口市
+
+特に以下の境界を保持します。
+
+- 鳥取市: 第12次総合計画がFY2026開始。基本構想10年、基本計画/実施計画5年、FY2026予算はproposal/enacted等を分離
+- 松江市: MATSUE DREAMS 2030はFY2022～2029、実施計画は毎年度PDCA更新、KPI進捗はsource-reported
+- 倉敷市: 第七次総合計画FY2021～2030、年度実施計画・行政評価・市民アンケートを別Evidence roleで保持
+- 呉市: FY2026に後期基本計画へ移行。年度構成事業集/KPI進捗と前期期間FY2024決算をversion分離
+- 福山市: 第3期福山みらい創造ビジョンがFY2026開始。第2期効果検証を第3期actualへ流用しない
+- 下関市: 第3次総合計画FY2025～2034、FY2026～2030実施計画は2026年9月までに第2次改定。改定履歴を保持
+- 山口市: 県庁所在地only。後期基本計画FY2023～2027、第9次実行計画FY2026～2028、FY2028次期計画transitionを分離
+
+### Current work — Shikoku source inventory
 
 Status: `in_progress`
 
-Wave 6は鳥取市（312010）から開始します。
+Wave 7は徳島市（362018）から開始します。
 
 Canonical status:
 
-- Source inventory complete: 48 / 67
+- Source inventory complete: 55 / 67
 - Source inventory in progress: 1
-- Pending source inventory: 18
-- Next official code: 312010
+- Pending source inventory: 11
+- Next official code: 362018
 
 正本:
 
@@ -817,6 +841,7 @@ Canonical status:
 - `tests/test_phase14_wave3_source_inventory.py`
 - `tests/test_phase14_wave4_source_inventory.py`
 - `tests/test_phase14_wave5_source_inventory.py`
+- `tests/test_phase14_wave6_source_inventory.py`
 
 ## After Phase 14
 

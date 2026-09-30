@@ -1,0 +1,63 @@
+{
+  "id": "phase14-tottori-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "312010",
+  "standard_area_code": "31201",
+  "name_ja": "鳥取市",
+  "prefecture_name_ja": "鳥取県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city",
+    "prefectural_capital"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第12次鳥取市総合計画",
+    "start_fiscal_year": 2026,
+    "end_fiscal_year": 2035,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "tottori-twelfth-plan",
+      "layer": "comprehensive_and_implementation_plan",
+      "title": "第12次鳥取市総合計画",
+      "official_url": "https://www.city.tottori.lg.jp/site/keikakusenryaku/34054.html",
+      "status": "official_landing_verified",
+      "effective_period": "基本構想 2026年度～2035年度・基本計画/実施計画 2026年度～2030年度",
+      "review_boundary": "新計画の基本構想10年・基本計画5年・毎年度見直す実施計画を別period semanticsで保持し、第11次計画実績をcurrent actualへ流用しない。"
+    },
+    {
+      "id": "tottori-action-plan-progress",
+      "layer": "progress_governance",
+      "title": "第12次総合計画・地方創生アクションプラン",
+      "official_url": "https://www.city.tottori.lg.jp/site/keikakusenryaku/list161-570.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度開始",
+      "review_boundary": "第12次総合計画と地方創生アクションプランの公式運用入口。計画掲載を達成実績や政策効果と同一視しない。"
+    },
+    {
+      "id": "tottori-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度当初予算(案)",
+      "official_url": "https://www.city.tottori.lg.jp/page/30417.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "市長選前の骨格予算として公開されたFY2026当初予算案の公式入口。proposalと議決後・肉付け・補正budgetを別stateで保持する。"
+    },
+    {
+      "id": "tottori-settlement-2024",
+      "layer": "settlement",
+      "title": "鳥取市の決算推移(平成27年度～令和6年度)",
+      "official_url": "https://www.city.tottori.lg.jp/page/20004.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算を含む公式決算推移入口。旧第11次計画期間の財政Evidenceを第12次計画current actualへ流用しない。"
+    }
+  ],
+  "availability_boundary": "第12次総合計画はFY2026開始。基本構想は2035年度まで、基本計画・実施計画は2030年度までで実施計画は毎年度見直す。FY2024決算は旧第11次計画期間、FY2026予算はproposal/enacted等のstate分離が必要。",
+  "quality_boundary": "This Phase 14 inventory verifies Tottori's new twelfth comprehensive plan, its implementation/action route, FY2026 initial-budget proposal, and FY2024 historical settlement route. It preserves plan-layer periods, election-year budget-state boundaries, and prior/current plan separation, with no independent achievement, causal, or cross-city judgment.",
+  "next_action": "Phase 15で第12次計画の政策・指標・実施計画事業、地方創生アクションプラン、FY2026予算lineage、旧第11次計画下FY2024決算をversioned Evidenceへ展開する。",
+  "verified_at": "2026-09-30"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "phase14-kurashiki-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "332020",
+  "standard_area_code": "33202",
+  "name_ja": "倉敷市",
+  "prefecture_name_ja": "岡山県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "倉敷市第七次総合計画",
+    "start_fiscal_year": 2021,
+    "end_fiscal_year": 2030,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "kurashiki-seventh-plan",
+      "layer": "comprehensive_and_implementation_plan",
+      "title": "総合計画",
+      "official_url": "https://www.city.kurashiki.okayama.jp/cityinfo/plan/1011783/1002083.html",
+      "status": "official_landing_verified",
+      "effective_period": "第七次総合計画 2021年度～2030年度・実施計画2026掲載",
+      "review_boundary": "10年間の第七次総合計画と年度実施計画を別layer/versionで保持し、44のめざすまちの姿を個別評価前にスコア化しない。"
+    },
+    {
+      "id": "kurashiki-administrative-evaluation-2025",
+      "layer": "annual_progress",
+      "title": "令和7年度行政評価結果",
+      "official_url": "https://www.city.kurashiki.okayama.jp/cityinfo/plan/1002154/1002161/1021963.html",
+      "status": "official_landing_verified",
+      "available_periods": [
+        "2025年度行政評価"
+      ],
+      "review_boundary": "施策評価と総合計画まちづくり指標アンケートの公式入口。自治体評価・満足度等を独自達成度や比較scoreへ変換しない。"
+    },
+    {
+      "id": "kurashiki-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度当初予算",
+      "official_url": "https://www.city.kurashiki.okayama.jp/cityinfo/publicity/1001929/1001937/1022190/1024527/1024866.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算の公式公表入口。重点配分と政策効果を同一視せず、補正・執行・決算とstate分離する。"
+    },
+    {
+      "id": "kurashiki-settlement-2024",
+      "layer": "settlement_and_audit",
+      "title": "財政資料",
+      "official_url": "https://www.city.kurashiki.okayama.jp/cityinfo/finance/1011779/1010784.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算・監査審査意見書等の公式入口。行政評価、決算、監査を別Evidence/Accountability roleとして保持する。"
+    }
+  ],
+  "availability_boundary": "第七次総合計画は2021～2030年度で、年度実施計画・行政評価・まちづくり指標アンケートが別routeで更新される。測定年・評価年・予算/決算年度を別々に保持する。",
+  "quality_boundary": "This Phase 14 inventory verifies Kurashiki's 2021-2030 seventh comprehensive plan, 2026 implementation route, 2025 administrative evaluation, FY2026 budget, and FY2024 settlement/audit route. Municipal evaluations and survey measures remain source-reported and are not converted into independent achievement, causal, or comparison judgments.",
+  "next_action": "Phase 15で44のめざすまちの姿・施策・指標、実施計画2026、行政評価・市民アンケート、FY2026予算、FY2024決算・監査をEvidence role別にレビューする。",
+  "verified_at": "2026-09-30"
+}

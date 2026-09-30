@@ -192,10 +192,11 @@ Phase 13で完了した20政令指定都市を除き、中核市と県庁所在�
 - Wave 3 北陸・甲信: 6 / 6 source_inventory_complete
 - Wave 4 東海: 6 / 6 source_inventory_complete
 - Wave 5 近畿: 14 / 14 source_inventory_complete
-- Wave 6 中国: 鳥取市から source inventory開始
+- Wave 6 中国: 7 / 7 source_inventory_complete
+- Wave 7 四国: 徳島市から source inventory開始
 - Reviewed promotion: 0（Phase 15で実施）
 
-Wave 1北海道・東北10市、Wave 2関東12自治体、Wave 3北陸・甲信6市、Wave 4東海6自治体、Wave 5近畿14自治体まで完了しました。Wave 5では大津市から和歌山市までをSource Inventory化し、吹田市の総合計画終期と実施計画 horizon の差、枚方市の固定終期を持たない基本構想、奈良市の前期→後期推進方針transition、和歌山市の現行計画最終年度などを推測なしで保持しています。
+Wave 1北海道・東北10市、Wave 2関東12自治体、Wave 3北陸・甲信6市、Wave 4東海6自治体、Wave 5近畿14自治体、Wave 6中国7自治体まで完了しました。Wave 6では鳥取市、松江市、倉敷市、呉市、福山市、下関市、山口市をSource Inventory化し、新計画初年度、後期計画移行、実施計画改定履歴、自治体KPI/行政評価、予算proposal/enacted/supplementary、旧計画下のFY2024決算などの境界を保持しています。
 
 正本:
 
@@ -208,6 +209,7 @@ Wave 1北海道・東北10市、Wave 2関東12自治体、Wave 3北陸・甲信6
 - [`tests/test_phase14_wave3_source_inventory.py`](tests/test_phase14_wave3_source_inventory.py)
 - [`tests/test_phase14_wave4_source_inventory.py`](tests/test_phase14_wave4_source_inventory.py)
 - [`tests/test_phase14_wave5_source_inventory.py`](tests/test_phase14_wave5_source_inventory.py)
+- [`tests/test_phase14_wave6_source_inventory.py`](tests/test_phase14_wave6_source_inventory.py)
 
 ## Repository map
 
