@@ -128,7 +128,8 @@
         "municipality_type",
         "phase14_role",
         "status",
-        "source_inventory_path"
+        "source_inventory_path",
+        "completion_path"
       ],
       "properties": {
         "sequence": {
@@ -180,6 +181,17 @@
         "source_inventory_path": {
           "type": "string",
           "pattern": "^data/indexed/.+/source_inventory\\.json$"
+        },
+        "completion_path": {
+          "oneOf": [
+            {
+              "type": "string",
+              "pattern": "^data/catalog/.+_phase15_completion\\.json$"
+            },
+            {
+              "type": "null"
+            }
+          ]
         }
       }
     }
