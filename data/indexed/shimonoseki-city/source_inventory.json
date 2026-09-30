@@ -1,0 +1,62 @@
+{
+  "id": "phase14-shimonoseki-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "352012",
+  "standard_area_code": "35201",
+  "name_ja": "下関市",
+  "prefecture_name_ja": "山口県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第3次下関市総合計画",
+    "start_fiscal_year": 2025,
+    "end_fiscal_year": 2034,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "shimonoseki-third-plan",
+      "layer": "comprehensive_plan",
+      "title": "第3次下関市総合計画",
+      "official_url": "https://www.city.shimonoseki.lg.jp/soshiki/1/127695.html",
+      "status": "official_landing_verified",
+      "effective_period": "2025年度～2034年度",
+      "review_boundary": "基本構想・基本計画の2層からなる10年間のcurrent planとして保持し、第2次計画の後期資料と分離する。"
+    },
+    {
+      "id": "shimonoseki-implementation-2026-2030",
+      "layer": "implementation_plan",
+      "title": "第3次下関市総合計画 実施計画",
+      "official_url": "https://www.city.shimonoseki.lg.jp/soshiki/1/133270.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2030年度・2026年9月第2次改定",
+      "review_boundary": "37事業の5年実施計画と策定・第1次・第2次改定履歴をversion別に保持し、最新改定で旧versionを消さない。"
+    },
+    {
+      "id": "shimonoseki-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算の状況",
+      "official_url": "https://www.city.shimonoseki.lg.jp/soshiki/14/137804.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算案・予算書・政策予算説明資料・補正予算の公式入口。proposal/enacted/supplementaryを別stateで扱う。"
+    },
+    {
+      "id": "shimonoseki-settlement-2024",
+      "layer": "settlement_and_major_measures",
+      "title": "令和6年度決算の状況",
+      "official_url": "https://www.city.shimonoseki.lg.jp/soshiki/14/119898.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算概要・主要施策成果・決算書の公式入口。旧第2次計画期間の成果を第3次計画current actualへ流用しない。"
+    }
+  ],
+  "availability_boundary": "第3次総合計画は2025～2034年度で、実施計画は2026～2030年度、2026年9月までに2回改定済み。FY2024決算は旧第2次計画期間であり、current plan actualとはversion分離する。",
+  "quality_boundary": "This Phase 14 inventory verifies Shimonoseki's 2025-2034 third comprehensive plan, versioned 2026-2030 implementation plan, FY2026 budget/proposal routes, and FY2024 prior-plan settlement/major-measures route. It preserves implementation revisions and budget states and makes no independent achievement, causal, or comparison judgment.",
+  "next_action": "Phase 15で基本計画の施策・目標、37実施事業と改定差分、FY2026予算lineage、旧第2次計画下FY2024主要施策成果・決算をversioned Evidenceへ展開する。",
+  "verified_at": "2026-09-30"
+}
