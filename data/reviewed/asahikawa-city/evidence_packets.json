@@ -1,0 +1,59 @@
+[
+  {
+    "id": "evidence-asahikawa-city-2026-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-012041-fiscal-2026-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算総額は181,800,000,000円。",
+        "source_ids": [
+          "asahikawa-budget-2026-pdf"
+        ],
+        "location_note": "PDF p.6 / printed p.1 第1条『歳入歳出予算の総額』181,800,000千円。",
+        "decision": "accepted",
+        "review_note": "千円単位を円換算。補正後予算・決算と分離。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-asahikawa-city-2024-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-012041-fiscal-2024-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計の収入済額は182,479,594,406円。",
+        "source_ids": [
+          "asahikawa-settlement-2024-audit-pdf"
+        ],
+        "location_note": "決算審査意見書 PDF p.11『歳入決算状況』収入済額C、およびp.76『歳入歳出決算総括表』。",
+        "decision": "accepted",
+        "review_note": "監査資料の円単位exact value。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-asahikawa-city-2024-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-012041-fiscal-2024-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計の支出済額は180,794,635,444円。",
+        "source_ids": [
+          "asahikawa-settlement-2024-audit-pdf"
+        ],
+        "location_note": "決算審査意見書 PDF p.11『決算収支状況』およびp.76『歳入歳出決算総括表』。",
+        "decision": "accepted",
+        "review_note": "監査資料の円単位exact value。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]
