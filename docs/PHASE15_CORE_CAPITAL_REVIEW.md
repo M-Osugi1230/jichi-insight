@@ -79,13 +79,33 @@ Declared v1 package:
 
 Deferred depth includes current third-strategy KPI/project item review, current-period annual KPI actuals, fine-grained current-plan-to-strategy linkage, successor-plan adoption, fiscal project detail, causality and cross-city comparability.
 
+## Second completion — Asahikawa
+
+旭川市を2市目の`reviewed_complete`へ昇格しました。
+
+Declared v1 package:
+
+- current comprehensive plan: 2016–2027
+- current basic-plan version: 2023-12 revised edition
+- basic goals: 5
+- basic policies: 13
+- current-plan measures: 34
+- priority themes: 3
+- third promotion plan: 2024–2027, 2026-06 revision
+- annual project-group revision + PDCA / administrative evaluation governance
+- current evaluation-indicator appendix availability reviewed without bulk-promoting source-reported achievement rates
+- FY2026 general-account initial budget: 181,800,000,000 yen
+- FY2024 general-account settlement: exact revenue and expenditure values from audit evidence
+
+Deferred depth includes all current promotion-plan indicator identities/values, all expansion-measure/project identities and annual version diffs, all 34 measure indicator detail, successor-plan adoption, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 1 / 67 — 函館市
-- Review in progress: 1 — 旭川市
-- Pending record review: 65
+- Reviewed complete: 2 / 67 — 函館市、旭川市
+- Review in progress: 1 — 青森市
+- Pending record review: 64
 - Blocked source inventory: 0
-- Next official code: 012041
+- Next official code: 022012
 
 ## Definition of Phase 15 completion
 
