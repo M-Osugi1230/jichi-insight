@@ -102,16 +102,16 @@ def test_phase14_wave_distribution_and_statuses_are_canonical():
 
     statuses = Counter(row["status"] for row in targets)
     assert statuses == {
-        "source_inventory_complete": 55,
+        "source_inventory_complete": 59,
         "source_inventory_in_progress": 1,
-        "pending_source_inventory": 11,
+        "pending_source_inventory": 7,
     }
 
     summary = queue["summary"]
-    assert summary["source_inventory_complete_count"] == 55
+    assert summary["source_inventory_complete_count"] == 59
     assert summary["source_inventory_in_progress_count"] == 1
-    assert summary["pending_source_inventory_count"] == 11
-    assert summary["next_official_code"] == "362018"
+    assert summary["pending_source_inventory_count"] == 7
+    assert summary["next_official_code"] == "402036"
 
     wave1 = next(row for row in queue["waves"] if row["wave"] == 1)
     wave2 = next(row for row in queue["waves"] if row["wave"] == 2)
@@ -120,6 +120,7 @@ def test_phase14_wave_distribution_and_statuses_are_canonical():
     wave5 = next(row for row in queue["waves"] if row["wave"] == 5)
     wave6 = next(row for row in queue["waves"] if row["wave"] == 6)
     wave7 = next(row for row in queue["waves"] if row["wave"] == 7)
+    wave8 = next(row for row in queue["waves"] if row["wave"] == 8)
     assert wave1["status"] == "complete"
     assert wave1["source_inventory_complete_count"] == 10
     assert wave1["source_inventory_in_progress_count"] == 0
@@ -144,13 +145,17 @@ def test_phase14_wave_distribution_and_statuses_are_canonical():
     assert wave6["source_inventory_complete_count"] == 7
     assert wave6["source_inventory_in_progress_count"] == 0
     assert wave6["pending_count"] == 0
-    assert wave7["status"] == "in_progress"
-    assert wave7["source_inventory_complete_count"] == 0
-    assert wave7["source_inventory_in_progress_count"] == 1
-    assert wave7["pending_count"] == 3
+    assert wave7["status"] == "complete"
+    assert wave7["source_inventory_complete_count"] == 4
+    assert wave7["source_inventory_in_progress_count"] == 0
+    assert wave7["pending_count"] == 0
+    assert wave8["status"] == "in_progress"
+    assert wave8["source_inventory_complete_count"] == 0
+    assert wave8["source_inventory_in_progress_count"] == 1
+    assert wave8["pending_count"] == 7
 
 
-def test_phase14_current_target_is_tokushima():
+def test_phase14_current_target_is_kurume():
     registry = load(REGISTRY)
     current = [
         row
@@ -159,5 +164,5 @@ def test_phase14_current_target_is_tokushima():
     ]
 
     assert len(current) == 1
-    assert current[0]["name_ja"] == "徳島市"
-    assert current[0]["official_code"] == "362018"
+    assert current[0]["name_ja"] == "久留米市"
+    assert current[0]["official_code"] == "402036"

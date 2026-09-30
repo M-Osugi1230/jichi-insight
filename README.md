@@ -193,10 +193,11 @@ Phase 13で完了した20政令指定都市を除き、中核市と県庁所在�
 - Wave 4 東海: 6 / 6 source_inventory_complete
 - Wave 5 近畿: 14 / 14 source_inventory_complete
 - Wave 6 中国: 7 / 7 source_inventory_complete
-- Wave 7 四国: 徳島市から source inventory開始
+- Wave 7 四国: 4 / 4 source_inventory_complete
+- Wave 8 九州・沖縄: 久留米市から source inventory開始
 - Reviewed promotion: 0（Phase 15で実施）
 
-Wave 1北海道・東北10市、Wave 2関東12自治体、Wave 3北陸・甲信6市、Wave 4東海6自治体、Wave 5近畿14自治体、Wave 6中国7自治体まで完了しました。Wave 6では鳥取市、松江市、倉敷市、呉市、福山市、下関市、山口市をSource Inventory化し、新計画初年度、後期計画移行、実施計画改定履歴、自治体KPI/行政評価、予算proposal/enacted/supplementary、旧計画下のFY2024決算などの境界を保持しています。
+Wave 1北海道・東北10市、Wave 2関東12自治体、Wave 3北陸・甲信6市、Wave 4東海6自治体、Wave 5近畿14自治体、Wave 6中国7自治体、Wave 7四国4自治体まで完了しました。Wave 7では徳島市、高松市、松山市、高知市をSource Inventory化し、徳島市の県庁所在地only分類、高松市のFY2026実施計画重複、松山市の新旧計画境界、高知市の名目終期2030年度とFY2026末での現行計画廃止方針を明示的に保持しています。
 
 正本:
 
@@ -210,6 +211,7 @@ Wave 1北海道・東北10市、Wave 2関東12自治体、Wave 3北陸・甲信6
 - [`tests/test_phase14_wave4_source_inventory.py`](tests/test_phase14_wave4_source_inventory.py)
 - [`tests/test_phase14_wave5_source_inventory.py`](tests/test_phase14_wave5_source_inventory.py)
 - [`tests/test_phase14_wave6_source_inventory.py`](tests/test_phase14_wave6_source_inventory.py)
+- [`tests/test_phase14_wave7_source_inventory.py`](tests/test_phase14_wave7_source_inventory.py)
 
 ## Repository map
 

@@ -1,0 +1,64 @@
+{
+  "id": "phase14-tokushima-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "362018",
+  "standard_area_code": "36201",
+  "name_ja": "徳島市",
+  "prefecture_name_ja": "徳島県",
+  "municipality_type": "city",
+  "roles": [
+    "prefectural_capital"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "徳島市総合計画2025",
+    "start_fiscal_year": 2025,
+    "end_fiscal_year": 2034,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "tokushima-plan-2025",
+      "layer": "comprehensive_and_implementation_plan",
+      "title": "徳島市総合計画2025",
+      "official_url": "https://www.city.tokushima.tokushima.jp/shisei/machi_keikaku/sougo-plan/sougoukeikaku2025.html",
+      "status": "official_landing_verified",
+      "effective_period": "基本構想 概ね2025年度～2034年度・前期基本計画/アクションプラン 2025年度～2029年度・後期 2030年度～2034年度",
+      "review_boundary": "基本構想、前後期基本計画、毎年度見直すアクションプランを別layer/versionで保持し、年度版を上書きしない。"
+    },
+    {
+      "id": "tokushima-evaluation-2026",
+      "layer": "annual_progress",
+      "title": "令和8年度 徳島市総合計画2025評価委員会",
+      "official_url": "https://www.city.tokushima.tokushima.jp/shisei/machi_keikaku/sougo-plan/R8_sougoukeikaku2025.html",
+      "status": "official_landing_verified",
+      "available_periods": [
+        "2026年度"
+      ],
+      "review_boundary": "総合的な成果指標と施策評価を扱う外部有識者委員会の公式入口。委員会評価をJichi Insight独自の達成判定へ変換しない。"
+    },
+    {
+      "id": "tokushima-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算",
+      "official_url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/r8/index.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算議案・概要、6月・9月補正等の公式入口。initial proposal/enacted/supplementaryを別stateで保持する。"
+    },
+    {
+      "id": "tokushima-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度決算",
+      "official_url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/kessan/nendo/kessannsokuhou.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024一般会計・各会計決算の公式入口。総合計画2025開始前の財政Evidenceをcurrent-plan actualへ流用しない。"
+    }
+  ],
+  "availability_boundary": "徳島市総合計画2025は2025年度開始で、前期基本計画・アクションプランは2025～2029年度、後期は2030～2034年度。FY2024決算は現行計画開始前で、2026年度評価委員会のsource-reported評価とも別Evidence roleで保持する。",
+  "quality_boundary": "This Phase 14 inventory preserves Tokushima's prefectural-capital-only classification, 2025-2034 comprehensive-plan horizon, front/latter basic-plan and annual action-plan layers, 2026 external evaluation route, FY2026 budget states, and pre-plan FY2024 settlement. It makes no independent achievement, causal, fiscal-effect, or cross-city judgment.",
+  "next_action": "Phase 15で政策・施策・成果指標、FY2026アクションプラン、評価委員会Evidence、FY2026予算lineage、現行計画開始前FY2024決算をversioned record-level Evidenceへ展開する。",
+  "verified_at": "2026-09-30"
+}

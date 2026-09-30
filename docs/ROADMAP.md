@@ -815,18 +815,36 @@ Status: `complete`（2026-09-30）
 - 下関市: 第3次総合計画FY2025～2034、FY2026～2030実施計画は2026年9月までに第2次改定。改定履歴を保持
 - 山口市: 県庁所在地only。後期基本計画FY2023～2027、第9次実行計画FY2026～2028、FY2028次期計画transitionを分離
 
-### Current work — Shikoku source inventory
+### Milestone P14-M7 — Shikoku source inventory
+
+Status: `complete`（2026-09-30）
+
+四国4自治体を`source_inventory_complete`へ昇格しました。
+
+- 徳島市
+- 高松市
+- 松山市
+- 高知市
+
+特に以下の境界を保持します。
+
+- 徳島市: 県庁所在地only。総合計画2025、前期/後期基本計画、毎年度アクションプラン、外部評価委員会を別layerで保持
+- 高松市: 第7次総合計画FY2024～2031。第1期まちづくりプランFY2024～2026と第2期FY2026～2028がFY2026で重複
+- 松山市: 第7次総合計画FY2025～2034、実施計画FY2025～2027。FY2024決算・監査は旧第6次計画期間
+- 高知市: 後期基本計画の名目終期はFY2030だが、公式方針ではFY2026末で現行計画を廃止しFY2027～2034新計画へ移行予定。nominal/effective periodを分離
+
+### Current work — Kyushu / Okinawa source inventory
 
 Status: `in_progress`
 
-Wave 7は徳島市（362018）から開始します。
+Wave 8は久留米市（402036）から開始します。
 
 Canonical status:
 
-- Source inventory complete: 55 / 67
+- Source inventory complete: 59 / 67
 - Source inventory in progress: 1
-- Pending source inventory: 11
-- Next official code: 362018
+- Pending source inventory: 7
+- Next official code: 402036
 
 正本:
 
@@ -842,6 +860,7 @@ Canonical status:
 - `tests/test_phase14_wave4_source_inventory.py`
 - `tests/test_phase14_wave5_source_inventory.py`
 - `tests/test_phase14_wave6_source_inventory.py`
+- `tests/test_phase14_wave7_source_inventory.py`
 
 ## After Phase 14
 

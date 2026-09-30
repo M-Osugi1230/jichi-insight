@@ -1,0 +1,72 @@
+{
+  "id": "phase14-kochi-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "392014",
+  "standard_area_code": "39201",
+  "name_ja": "高知市",
+  "prefecture_name_ja": "高知県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city",
+    "prefectural_capital"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "2011高知市総合計画 後期基本計画",
+    "start_fiscal_year": 2021,
+    "end_fiscal_year": 2030,
+    "period_status": "transition_or_unresolved"
+  },
+  "sources": [
+    {
+      "id": "kochi-latter-plan",
+      "layer": "comprehensive_plan",
+      "title": "2011高知市総合計画 後期基本計画について",
+      "official_url": "https://www.city.kochi.kochi.jp/soshiki/2/sougoukeikakukouki.html",
+      "status": "official_landing_verified",
+      "effective_period": "後期基本計画 2021年度～2030年度（現行計画はFY2026末廃止方針）",
+      "review_boundary": "名目上2030年度までの後期基本計画と、FY2026末で現行計画を廃止する公式移行方針を併記し、nominal endとactual transitionを混同しない。"
+    },
+    {
+      "id": "kochi-second-implementation",
+      "layer": "implementation_plan_and_progress",
+      "title": "2011高知市総合計画後期基本計画 実施計画（第1次～第2次）",
+      "official_url": "https://www.city.kochi.kochi.jp/soshiki/2/koukijissikeikaku.html",
+      "status": "official_landing_verified",
+      "effective_period": "第2次実施計画 2024年度～2026年度",
+      "review_boundary": "第2次実施計画の事業を事務事業評価と連動して進捗管理する構造を保持し、自治体評価を独自達成判定へ変換しない。"
+    },
+    {
+      "id": "kochi-next-plan-transition",
+      "layer": "plan_transition",
+      "title": "高知市未来ビジョン（仮称）策定方針",
+      "official_url": "https://www.city.kochi.kochi.jp/soshiki/3/yosan08.html",
+      "status": "official_landing_verified",
+      "effective_period": "新計画 2027年度～2034年度をFY2026末までに策定予定",
+      "review_boundary": "FY2027開始予定の新8年計画は策定中のtransition evidenceとして保持し、採択前の内容をcurrent planへ昇格しない。"
+    },
+    {
+      "id": "kochi-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算",
+      "official_url": "https://www.city.kochi.kochi.jp/soshiki/3/yosan08.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算は2026年3月26日に原案どおり可決され、その後6月・9月補正がある。enacted initialとsupplementaryを別stateで保持する。"
+    },
+    {
+      "id": "kochi-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度普通会計決算状況（決算カード）",
+      "official_url": "https://www.city.kochi.kochi.jp/soshiki/3/06card.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024普通会計決算の公式入口。現行後期基本計画期間の財政Evidenceだが、政策成果や次期計画の実績へ読み替えない。"
+    }
+  ],
+  "availability_boundary": "現行後期基本計画の名目期間は2021～2030年度だが、市は現行計画をFY2026末で廃止し、FY2027～2034の新計画へ移行する方針を公式公表している。第2次実施計画もFY2026末までで、現行・移行・新計画draftを厳密に分離する。",
+  "quality_boundary": "This Phase 14 inventory preserves Kochi's nominal 2021-2030 latter-plan period while explicitly recording the official FY2026-end termination and planned FY2027-2034 successor transition. It also verifies the 2024-2026 implementation/evaluation route, FY2026 enacted/supplementary budgets, and FY2024 settlement without promoting draft successor content or municipal evaluation into independent judgments.",
+  "next_action": "Phase 15で現行施策・成果指標、第2次実施計画・事務事業評価、FY2026予算lineage、FY2024決算、新計画transitionをnominal/effective periodを分けてEvidence化する。",
+  "verified_at": "2026-09-30"
+}
