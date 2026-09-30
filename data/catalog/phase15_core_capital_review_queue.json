@@ -42,9 +42,9 @@
       "prefecture_name_ja": "北海道",
       "municipality_type": "city",
       "phase14_role": "core_city",
-      "status": "review_in_progress",
+      "status": "reviewed_complete",
       "source_inventory_path": "data/indexed/asahikawa-city/source_inventory.json",
-      "completion_path": null
+      "completion_path": "data/catalog/asahikawa_phase15_completion.json"
     },
     {
       "sequence": 3,
@@ -55,7 +55,7 @@
       "prefecture_name_ja": "青森県",
       "municipality_type": "city",
       "phase14_role": "core_city_and_prefectural_capital",
-      "status": "pending_record_review",
+      "status": "review_in_progress",
       "source_inventory_path": "data/indexed/aomori-city/source_inventory.json",
       "completion_path": null
     },
@@ -894,11 +894,11 @@
   ],
   "summary": {
     "target_count": 67,
-    "reviewed_complete_count": 1,
+    "reviewed_complete_count": 2,
     "review_in_progress_count": 1,
-    "pending_record_review_count": 65,
+    "pending_record_review_count": 64,
     "blocked_source_inventory_count": 0,
-    "next_official_code": "012041"
+    "next_official_code": "022012"
   },
   "updated_at": "2026-10-01"
 }
