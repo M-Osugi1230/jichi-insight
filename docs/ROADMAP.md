@@ -627,7 +627,7 @@ Status: `complete`（2026-09-29）
 
 ## Phase 14 — Core cities and prefectural capitals source inventory
 
-Status: `in_progress`（2026-09-29）
+Status: `complete`（2026-09-30）
 
 Phase 13のdesignated-city contractを再利用し、中核市・県庁所在地へSource Inventoryを拡張します。政令指定都市20市はPhase 13で完了済みのため重複対象にしません。
 
@@ -833,18 +833,47 @@ Status: `complete`（2026-09-30）
 - 松山市: 第7次総合計画FY2025～2034、実施計画FY2025～2027。FY2024決算・監査は旧第6次計画期間
 - 高知市: 後期基本計画の名目終期はFY2030だが、公式方針ではFY2026末で現行計画を廃止しFY2027～2034新計画へ移行予定。nominal/effective periodを分離
 
-### Current work — Kyushu / Okinawa source inventory
+### Milestone P14-M8 — Kyushu / Okinawa source inventory
 
-Status: `in_progress`
+Status: `complete`（2026-09-30）
 
-Wave 8は久留米市（402036）から開始します。
+九州・沖縄8自治体を`source_inventory_complete`へ昇格しました。
+
+- 久留米市
+- 佐賀市
+- 長崎市
+- 佐世保市
+- 大分市
+- 宮崎市
+- 鹿児島市
+- 那覇市
+
+特に以下の境界を保持します。
+
+- 久留米市: 久留米未来デザイン計画2035がFY2026開始。FY2024決算は旧計画期間
+- 佐賀市: 県庁所在地only。基本構想FY2025～2040と4年の未来共創プランを別periodとして保持
+- 長崎市: 後期基本計画FY2026～2030、実施計画FY2026～2028。current施策評価は未公表状態を明示
+- 佐世保市: 後期基本計画FY2024～2027。政策推進枠を含む予算編成過程と政策成果を分離
+- 大分市: おおいたビジョン2034がFY2025開始。FY2025末114指標の自治体進捗をsource-reportedとして保持
+- 宮崎市: 第六次総合計画FY2025～2034。FY2026評価はFY2025実績を対象、FY2024決算・監査は旧計画期間
+- 鹿児島市: 前期基本計画・第2期実施計画がFY2026最終年度。FY2027～2031後期基本計画は素案transition lane
+- 那覇市: 第5次総合計画FY2018～2027、実施計画FY2026～2028、第6次計画策定開始。overlapping horizonを保持
+
+### Phase 14 completion
+
+Status: `complete`（2026-09-30）
 
 Canonical status:
 
-- Source inventory complete: 59 / 67
-- Source inventory in progress: 1
-- Pending source inventory: 7
-- Next official code: 402036
+- Source inventory complete: 67 / 67
+- Source inventory in progress: 0
+- Pending source inventory: 0
+- Reviewed promotion: 0
+- Phase 13 designated-city overlap: 0
+- Next official code: null
+- Waves complete: 8 / 8
+
+Phase 14完了はrecord-level Reviewed完了を意味しません。67自治体すべてについて現行計画、実施・進行管理、FY2026予算、直近決算の公式Source Inventoryを確立し、非標準plan model、version transition、未公表、旧計画Evidence、budget state等の境界を保持した状態です。個別政策・KPI・事業・評価・財政値のReviewed化はPhase 15で行います。
 
 正本:
 
@@ -861,10 +890,14 @@ Canonical status:
 - `tests/test_phase14_wave5_source_inventory.py`
 - `tests/test_phase14_wave6_source_inventory.py`
 - `tests/test_phase14_wave7_source_inventory.py`
+- `tests/test_phase14_wave8_source_inventory.py`
+- `data/catalog/phase14_completion.json`
+- `schemas/phase14_completion.schema.json`
+- `tests/test_phase14_completion.py`
 
 ## After Phase 14
 
-1. Phase 15 — 中核市・県庁所在地のrecord-level Reviewed化
+1. **Phase 15 — 中核市・県庁所在地67自治体のrecord-level Reviewed化**
 2. その他市区町村
 3. 選挙・候補者比較
 4. API、データダウンロード、研究・報道向け機能
