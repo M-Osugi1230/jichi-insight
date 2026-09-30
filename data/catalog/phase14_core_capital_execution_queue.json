@@ -66,20 +66,20 @@
     {
       "wave": 6,
       "region": "中国",
-      "status": "in_progress",
+      "status": "complete",
       "target_count": 7,
-      "source_inventory_complete_count": 0,
-      "pending_count": 6,
-      "source_inventory_in_progress_count": 1
+      "source_inventory_complete_count": 7,
+      "pending_count": 0,
+      "source_inventory_in_progress_count": 0
     },
     {
       "wave": 7,
       "region": "四国",
-      "status": "pending",
+      "status": "in_progress",
       "target_count": 4,
       "source_inventory_complete_count": 0,
-      "pending_count": 4,
-      "source_inventory_in_progress_count": 0
+      "pending_count": 3,
+      "source_inventory_in_progress_count": 1
     },
     {
       "wave": 8,
@@ -97,10 +97,10 @@
     "prefectural_capital_count": 32,
     "core_city_and_prefectural_capital_overlap": 27,
     "prefectural_capital_only_count": 5,
-    "source_inventory_complete_count": 48,
+    "source_inventory_complete_count": 55,
     "source_inventory_in_progress_count": 1,
-    "pending_source_inventory_count": 18,
-    "next_official_code": "312010"
+    "pending_source_inventory_count": 11,
+    "next_official_code": "362018"
   },
   "updated_at": "2026-09-30"
 }
