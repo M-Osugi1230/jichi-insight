@@ -1,0 +1,62 @@
+{
+  "id": "phase14-himeji-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "282014",
+  "standard_area_code": "28201",
+  "name_ja": "姫路市",
+  "prefecture_name_ja": "兵庫県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "姫路市総合計画「ふるさと・ひめじプラン2030」",
+    "start_fiscal_year": 2021,
+    "end_fiscal_year": 2030,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "himeji-basic-concept",
+      "layer": "comprehensive_plan",
+      "title": "姫路市総合計画 基本構想",
+      "official_url": "https://www.city.himeji.lg.jp/shisei/0000015166.html",
+      "status": "official_landing_verified",
+      "effective_period": "2021年度～2030年度",
+      "review_boundary": "基本構想と実施計画の2層構造をcurrent planning modelとして保持し、旧3層型計画のlayer semanticsと混同しない。"
+    },
+    {
+      "id": "himeji-implementation-2026-2028",
+      "layer": "implementation_plan_and_progress",
+      "title": "実施計画",
+      "official_url": "https://www.city.himeji.lg.jp/shisei/0000015569.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2028年度・毎年度改定",
+      "review_boundary": "3年実施計画を毎年度ローリングし、施策評価は3年ごと・事業PDCAは毎年度という異なる評価周期を保持する。"
+    },
+    {
+      "id": "himeji-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算の概要",
+      "official_url": "https://www.city.himeji.lg.jp/shisei/0000032701.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算の公式入口。議会可決・補正・執行・決算を別budget stateとして扱う。"
+    },
+    {
+      "id": "himeji-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度決算の概要",
+      "official_url": "https://www.city.himeji.lg.jp/shisei/0000031944.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024一般・特別会計等決算の公式入口。施策評価・事業PDCAと財政決算を別Evidence roleで保持する。"
+    }
+  ],
+  "availability_boundary": "姫路市総合計画は2021～2030年度の2層型で、実施計画は3年ローリング。施策評価は3年周期、事業レベルPDCAは毎年度であり、reporting cycleを一つに潰さない。",
+  "quality_boundary": "This Phase 14 inventory verifies Himeji's 2021-2030 two-layer comprehensive plan, rolling 2026-2028 implementation plan, mixed policy/project evaluation cycles, FY2026 budget, and FY2024 settlement. Source-reported evaluations and fiscal data remain distinct and are not converted into independent achievement, causal, or comparison judgments.",
+  "next_action": "Phase 15で政策・指標、2026～2028実施計画事業、3年周期施策評価・年次PDCA、FY2026予算、FY2024決算を周期・主体別Evidenceへ展開する。",
+  "verified_at": "2026-09-30"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "phase14-takatsuki-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "272078",
+  "standard_area_code": "27207",
+  "name_ja": "高槻市",
+  "prefecture_name_ja": "大阪府",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第6次高槻市総合計画",
+    "start_fiscal_year": 2021,
+    "end_fiscal_year": 2030,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "takatsuki-sixth-plan",
+      "layer": "comprehensive_plan",
+      "title": "第6次高槻市総合計画",
+      "official_url": "https://www.city.takatsuki.osaka.jp/site/keikaku/1228.html",
+      "status": "official_landing_verified",
+      "effective_period": "2021年度～2030年度",
+      "review_boundary": "10年間の第6次総合計画をcurrent planとして保持し、8つの将来都市像と施策方向を個票レビュー前に独自評価しない。"
+    },
+    {
+      "id": "takatsuki-implementation-2026-2028",
+      "layer": "implementation_plan_and_progress",
+      "title": "第6次高槻市総合計画実施計画",
+      "official_url": "https://www.city.takatsuki.osaka.jp/site/keikaku/1229.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2028年度",
+      "review_boundary": "3年ローリング実施計画と主要事業の毎年度評価を確認する。自治体の評価結果をJichi Insight独自の達成度へ変換しない。"
+    },
+    {
+      "id": "takatsuki-budget-2026",
+      "layer": "budget",
+      "title": "予算",
+      "official_url": "https://www.city.takatsuki.osaka.jp/soshiki/7/67908.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算を含む公式入口。補正・執行・決算とは別budget stateで扱う。"
+    },
+    {
+      "id": "takatsuki-settlement-2024",
+      "layer": "settlement",
+      "title": "決算の概況",
+      "official_url": "https://www.city.takatsuki.osaka.jp/soshiki/7/67945.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024一般会計・普通会計等の決算概要入口。主要事業評価と財政決算を別Evidenceとして保持する。"
+    }
+  ],
+  "availability_boundary": "第6次総合計画は2021～2030年度、最新実施計画は2026～2028年度の3年ローリング。主要事業の年度評価、予算、決算のreporting periodを別々に保持する。",
+  "quality_boundary": "This Phase 14 inventory verifies Takatsuki's 2021-2030 sixth comprehensive plan, rolling 2026-2028 implementation/evaluation route, FY2026 budget, and FY2024 settlement. Source-reported project evaluations and fiscal results are not converted into independent achievement, causal, effectiveness, or cross-city judgments.",
+  "next_action": "Phase 15で将来都市像・施策、実施計画主要事業、年度評価、FY2026予算、FY2024決算を定義・評価主体・年度・source位置付きEvidenceへ展開する。",
+  "verified_at": "2026-09-30"
+}

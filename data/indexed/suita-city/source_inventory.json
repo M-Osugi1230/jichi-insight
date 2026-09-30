@@ -1,0 +1,73 @@
+{
+  "id": "phase14-suita-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "272051",
+  "standard_area_code": "27205",
+  "name_ja": "吹田市",
+  "prefecture_name_ja": "大阪府",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "吹田市第4次総合計画 基本計画改訂版",
+    "start_fiscal_year": 2019,
+    "end_fiscal_year": 2028,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "suita-fourth-plan",
+      "layer": "comprehensive_plan",
+      "title": "吹田市第4次総合計画",
+      "official_url": "https://www.city.suita.osaka.jp/shisei/1018811/1018812/1018813/index.html",
+      "status": "official_landing_verified",
+      "effective_period": "2019年度～2028年度",
+      "review_boundary": "基本構想・基本計画10年間と2024年基本計画改訂版をcurrent planとして保持し、改訂前後のversionを混同しない。"
+    },
+    {
+      "id": "suita-implementation-2026-2030",
+      "layer": "implementation_plan",
+      "title": "実施計画 令和8年度（2026年度）～令和12年度（2030年度）",
+      "official_url": "https://www.city.suita.osaka.jp/shisei/1018811/1018821/1018822/1041855.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2030年度",
+      "review_boundary": "5年ローリング実施計画が総合計画終期2028年度を越えて2030年度まで示す構造をそのまま保持し、期間差を欠損扱いしない。"
+    },
+    {
+      "id": "suita-progress",
+      "layer": "annual_progress",
+      "title": "吹田市第4次総合計画の進捗状況",
+      "official_url": "https://www.city.suita.osaka.jp/shisei/1018811/1018812/1018813/1008520.html",
+      "status": "official_landing_verified",
+      "available_periods": [
+        "2024年度進捗"
+      ],
+      "review_boundary": "年度ごとの総合計画進捗を公表する公式入口。市の進捗評価を独自達成度や他都市比較スコアへ変換しない。"
+    },
+    {
+      "id": "suita-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度当初予算",
+      "official_url": "https://www.city.suita.osaka.jp/shisei/1018870/1018873/1018875/1041852.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算の公式入口。実施計画との接続は事業identity確認後に行い、補正・執行・決算をstage分離する。"
+    },
+    {
+      "id": "suita-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度決算",
+      "official_url": "https://www.city.suita.osaka.jp/shisei/1018870/1018876/1040442.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算の公式入口。進捗資料と財政値を別Evidence roleとして保持する。"
+    }
+  ],
+  "availability_boundary": "第4次総合計画は2019～2028年度だが、最新5年ローリング実施計画は2026～2030年度までを対象とする。この期間差を明示し、2029～2030年度を現行総合計画期間と誤認しない。",
+  "quality_boundary": "This Phase 14 inventory verifies Suita's 2019-2028 fourth comprehensive plan, revised basic plan, rolling 2026-2030 implementation plan, annual progress route, FY2026 budget, and FY2024 settlement. It preserves the implementation-horizon mismatch and makes no independent achievement, causal, or cross-city comparison judgment.",
+  "next_action": "Phase 15で基本計画の施策・指標、2026～2030実施事業、年度進捗、FY2026予算、FY2024決算をperiod/version/source位置付きEvidenceとしてレビューする。",
+  "verified_at": "2026-09-30"
+}

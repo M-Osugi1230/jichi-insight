@@ -1,0 +1,62 @@
+{
+  "id": "phase14-higashiosaka-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "272272",
+  "standard_area_code": "27227",
+  "name_ja": "東大阪市",
+  "prefecture_name_ja": "大阪府",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "東大阪市第3次総合計画",
+    "start_fiscal_year": 2021,
+    "end_fiscal_year": 2030,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "higashiosaka-third-plan",
+      "layer": "comprehensive_plan",
+      "title": "東大阪市第3次総合計画",
+      "official_url": "https://www.city.higashiosaka.lg.jp/0000028226.html",
+      "status": "official_landing_verified",
+      "effective_period": "2021年度～2030年度",
+      "review_boundary": "2030年度を目標年次とする第3次総合計画をcurrent planとして保持し、第1次・第2次実施計画をversion分離する。"
+    },
+    {
+      "id": "higashiosaka-second-implementation",
+      "layer": "implementation_plan_and_progress",
+      "title": "第2次実施計画",
+      "official_url": "https://www.city.higashiosaka.lg.jp/0000028226.html",
+      "status": "official_landing_verified",
+      "effective_period": "2024年度～2027年度・Ver.1.0/2.0/3.0",
+      "review_boundary": "第2次実施計画の複数versionと年度終了後のPDCA評価routeを確認する。過去versionや評価を上書きせず保存する。"
+    },
+    {
+      "id": "higashiosaka-budget-2026",
+      "layer": "budget",
+      "title": "予算状況",
+      "official_url": "https://www.city.higashiosaka.lg.jp/0000000529.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算・補正予算の公式入口。adopted initialとsupplementaryを別stateで保持する。"
+    },
+    {
+      "id": "higashiosaka-settlement-2024",
+      "layer": "settlement",
+      "title": "決算状況",
+      "official_url": "https://www.city.higashiosaka.lg.jp/0000000531.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算状況の公式入口。実施計画PDCAと財政決算を別Evidence roleで保持する。"
+    }
+  ],
+  "availability_boundary": "第3次総合計画は2021～2030年度、第2次実施計画は2024～2027年度で複数versionが存在し、年度終了後にPDCA評価を行う。version・evaluation year・fiscal yearを別々に保持する。",
+  "quality_boundary": "This Phase 14 inventory verifies Higashiosaka's 2021-2030 third comprehensive plan, versioned 2024-2027 second implementation plan and PDCA route, FY2026 budget, and FY2024 settlement. Municipal PDCA outcomes and fiscal evidence are not converted into independent achievement, causal, or cross-city comparison judgments.",
+  "next_action": "Phase 15で政策・指標、第2次実施計画Ver.1.0～3.0の事業差分・年度評価、FY2026予算、FY2024決算をversioned record-level Evidenceへ展開する。",
+  "verified_at": "2026-09-30"
+}

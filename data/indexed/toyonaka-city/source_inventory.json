@@ -1,0 +1,73 @@
+{
+  "id": "phase14-toyonaka-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "272035",
+  "standard_area_code": "27203",
+  "name_ja": "豊中市",
+  "prefecture_name_ja": "大阪府",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第4次豊中市総合計画 後期基本計画",
+    "start_fiscal_year": 2023,
+    "end_fiscal_year": 2027,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "toyonaka-fourth-latter-plan",
+      "layer": "comprehensive_plan",
+      "title": "後期基本計画（2023年度から2027年度）",
+      "official_url": "https://www.city.toyonaka.osaka.jp/joho/keikaku/soukei4/koukikihonkeikaku.html",
+      "status": "official_landing_verified",
+      "effective_period": "2023年度～2027年度",
+      "review_boundary": "16施策とリーディングプロジェクトからなる後期基本計画をcurrent versionとして保持し、前期基本計画と分離する。"
+    },
+    {
+      "id": "toyonaka-implementation-plan",
+      "layer": "implementation_plan",
+      "title": "実施計画",
+      "official_url": "https://www.city.toyonaka.osaka.jp/joho/keikaku/soukei4/jijjikeikaku.html",
+      "status": "official_landing_verified",
+      "effective_period": "後期基本計画期間・デジタル予算書連携",
+      "review_boundary": "実施計画情報がデジタル予算書へ統合された運用を保持し、計画事業と予算項目をEvidence確認なしに同一identityへ統合しない。"
+    },
+    {
+      "id": "toyonaka-policy-evaluation",
+      "layer": "annual_progress",
+      "title": "政策評価",
+      "official_url": "https://www.city.toyonaka.osaka.jp/joho/keikaku/gyousei_hyouka/20190524135532126.html",
+      "status": "official_landing_verified",
+      "available_periods": [
+        "2025年度実施分を2026年度評価"
+      ],
+      "review_boundary": "16施策とリーディングプロジェクトを毎年度2軸で評価する自治体制度。source-reported評価を独自達成率へ変換しない。"
+    },
+    {
+      "id": "toyonaka-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算",
+      "official_url": "https://www.city.toyonaka.osaka.jp/joho/zaisei/yosan/r8yosan.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026予算の公式入口。政策評価や実施計画とのlinkageはPhase 15で公式identity確認後のみ昇格する。"
+    },
+    {
+      "id": "toyonaka-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度決算",
+      "official_url": "https://www.city.toyonaka.osaka.jp/joho/zaisei/kessan/r6kessan/index.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算の公式入口。政策評価・デジタル予算書と財政決算を別Evidence roleとして保持する。"
+    }
+  ],
+  "availability_boundary": "後期基本計画は2023～2027年度で、政策評価は毎年度、実施計画情報はデジタル予算書と連携する。評価年度・実施年度・予算年度・決算年度を分離する。",
+  "quality_boundary": "This Phase 14 inventory verifies Toyonaka's 2023-2027 latter basic plan, implementation-plan/digital-budget route, annual policy evaluation, FY2026 budget, and FY2024 settlement. It preserves municipal evaluation semantics and does not infer independent policy achievement, causal effects, fiscal effectiveness, or cross-city comparability.",
+  "next_action": "Phase 15で16施策・リーディングプロジェクト、政策評価、デジタル予算書の事業identity、FY2026予算、FY2024決算をrecord-level Evidenceへ展開する。",
+  "verified_at": "2026-09-30"
+}

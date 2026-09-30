@@ -1,0 +1,74 @@
+{
+  "id": "phase14-nara-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "292010",
+  "standard_area_code": "29201",
+  "name_ja": "奈良市",
+  "prefecture_name_ja": "奈良県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city",
+    "prefectural_capital"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "奈良市第5次総合計画",
+    "start_fiscal_year": 2022,
+    "end_fiscal_year": 2031,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "nara-fifth-plan",
+      "layer": "comprehensive_plan",
+      "title": "奈良市第5次総合計画",
+      "official_url": "https://www.city.nara.lg.jp/site/soukei5/",
+      "status": "official_landing_verified",
+      "effective_period": "2022年度～2031年度・前期推進方針 2022年度～2026年度",
+      "review_boundary": "10年間の未来ビジョンと前後期各5年の推進方針を別periodとして保持し、策定中の後期推進方針をcurrentへ先取りしない。"
+    },
+    {
+      "id": "nara-project-progress",
+      "layer": "annual_progress",
+      "title": "各事業の取組状況",
+      "official_url": "https://www.city.nara.lg.jp/site/soukei5/list968.html",
+      "status": "official_landing_verified",
+      "available_periods": [
+        "第5次総合計画の事業進捗"
+      ],
+      "review_boundary": "現行計画の事業進捗を公表する公式入口。自治体の進捗結果を独自達成評価や因果効果へ変換しない。"
+    },
+    {
+      "id": "nara-latter-policy-transition",
+      "layer": "plan_transition",
+      "title": "奈良市第5次総合計画後期推進方針策定",
+      "official_url": "https://www.city.nara.lg.jp/soshiki/4/259676.html",
+      "status": "official_landing_verified",
+      "effective_period": "後期推進方針 2027年度～2031年度・策定過程",
+      "review_boundary": "2026年度時点の後期推進方針策定過程をdraft/transition laneとして保持し、前期実績やアンケート結果を後期確定内容へ読み替えない。"
+    },
+    {
+      "id": "nara-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度当初予算の概要",
+      "official_url": "https://www.city.nara.lg.jp/site/zaisei/259233.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算の公式入口。前期推進方針最終年度の予算として保持し、後期計画の実績へ先取り接続しない。"
+    },
+    {
+      "id": "nara-settlement-2024",
+      "layer": "settlement_and_major_measures",
+      "title": "令和6年度決算の概要",
+      "official_url": "https://www.city.nara.lg.jp/site/zaisei/246327.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算・主要施策成果説明書の公式入口。事業進捗と財政決算を別Evidence roleとして保持する。"
+    }
+  ],
+  "availability_boundary": "第5次総合計画は2022～2031年度で、前期推進方針は2022～2026年度、後期推進方針は2027～2031年度として2026年度に策定過程。current前期・draft後期・FY2024結果をversion/time分離する。",
+  "quality_boundary": "This Phase 14 inventory verifies Nara's 2022-2031 fifth comprehensive plan, front-policy period, official project-progress route, active latter-policy transition, FY2026 budget, and FY2024 settlement/major-measures route. Draft and survey input are not treated as enacted policy or independent achievement/causal evidence.",
+  "next_action": "Phase 15で未来ビジョン・前期施策・事業進捗、後期推進方針transition、FY2026予算、FY2024決算・主要施策成果をversion/period/source位置付きEvidenceへ展開する。",
+  "verified_at": "2026-09-30"
+}

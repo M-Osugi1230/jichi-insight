@@ -1,0 +1,61 @@
+{
+  "id": "phase14-yao-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "272124",
+  "standard_area_code": "27212",
+  "name_ja": "八尾市",
+  "prefecture_name_ja": "大阪府",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第6次八尾市総合計画 後期基本計画",
+    "start_fiscal_year": 2025,
+    "end_fiscal_year": 2028,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "yao-sixth-latter-plan",
+      "layer": "comprehensive_plan",
+      "title": "第6次八尾市総合計画 後期基本計画",
+      "official_url": "https://www.city.yao.osaka.jp/shisei/seisaku_keikaku_zaisei/1009538/1009540/1017781.html",
+      "status": "official_landing_verified",
+      "effective_period": "後期基本計画 2025年度～2028年度",
+      "review_boundary": "第6次総合計画の後期4年間をcurrent versionとして保持し、2021～2024年度の前期基本計画実績と分離する。"
+    },
+    {
+      "id": "yao-administrative-evaluation",
+      "layer": "annual_progress",
+      "title": "行政評価（第6次総合計画）",
+      "official_url": "https://www.city.yao.osaka.jp/shisei/seisaku_keikaku_zaisei/1009538/1009592/1009580.html",
+      "status": "official_landing_verified",
+      "review_boundary": "施策・事務事業について成果と達成度を公表する自治体評価制度の入口。source-reported評価をJichi Insight独自達成判定へ変換しない。"
+    },
+    {
+      "id": "yao-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度予算",
+      "official_url": "https://www.city.yao.osaka.jp/shisei/seisaku_keikaku_zaisei/1009738/1009740/1017102.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026予算の公式入口。補正・執行・決算とstageを分離する。"
+    },
+    {
+      "id": "yao-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度決算",
+      "official_url": "https://www.city.yao.osaka.jp/shisei/seisaku_keikaku_zaisei/1009738/1009743/1009747.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算の公式入口。前期基本計画期間の財政Evidenceを後期計画current actualへ流用しない。"
+    }
+  ],
+  "availability_boundary": "第6次総合計画全体は2021～2028年度、current後期基本計画は2025～2028年度。FY2024行政評価・決算は前期計画期間に属するためversionとreporting yearを分離する。",
+  "quality_boundary": "This Phase 14 inventory verifies Yao's 2025-2028 latter basic plan, official administrative-evaluation route, FY2026 budget, and FY2024 prior-period settlement. Municipal achievement terminology remains source-reported and is not converted into independent policy achievement, causal effects, or cross-city comparability.",
+  "next_action": "Phase 15で後期基本計画の施策・指標、施策評価・事務事業評価、FY2026予算、前期期間FY2024決算をversioned record-level Evidenceへ展開する。",
+  "verified_at": "2026-09-30"
+}

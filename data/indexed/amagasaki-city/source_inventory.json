@@ -1,0 +1,61 @@
+{
+  "id": "phase14-amagasaki-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "282022",
+  "standard_area_code": "28202",
+  "name_ja": "尼崎市",
+  "prefecture_name_ja": "兵庫県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第6次尼崎市総合計画",
+    "start_fiscal_year": 2023,
+    "end_fiscal_year": 2032,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "amagasaki-sixth-plan",
+      "layer": "comprehensive_plan",
+      "title": "第6次尼崎市総合計画",
+      "official_url": "https://www.city.amagasaki.hyogo.jp/shisei/si_mirai/sprocess/sp_ikou/1043038.html",
+      "status": "official_landing_verified",
+      "effective_period": "2023年度～2032年度・前期まちづくり基本計画 2023年度～2027年度",
+      "review_boundary": "10年間の第6次計画と前期5年基本計画をcurrentとして保持し、策定中の後期基本計画をcurrentへ先取り昇格しない。"
+    },
+    {
+      "id": "amagasaki-policy-evaluation",
+      "layer": "annual_progress",
+      "title": "施策評価",
+      "official_url": "https://www.city.amagasaki.hyogo.jp/shisei/si_torikumi/1002117/1002176.html",
+      "status": "official_landing_verified",
+      "review_boundary": "施策の進捗・成果を自治体が評価する公式入口。source-reported評価と外部意見を独自政策達成度へ変換しない。"
+    },
+    {
+      "id": "amagasaki-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度当初予算の概要",
+      "official_url": "https://www.city.amagasaki.hyogo.jp/shisei/si_zaisei/yosan/gaiyou/1042785.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算の公式入口。前期基本計画終盤の予算であることを保持し、後期計画budgetへ読み替えない。"
+    },
+    {
+      "id": "amagasaki-settlement-2024",
+      "layer": "settlement",
+      "title": "令和6年度決算の概要",
+      "official_url": "https://www.city.amagasaki.hyogo.jp/shisei/si_zaisei/kessan/gaiyou/1041621.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算の公式入口。施策評価、監査、財政決算を別Accountability/Evidence roleとして扱う。"
+    }
+  ],
+  "availability_boundary": "第6次総合計画は2023～2032年度で、前期基本計画は2023～2027年度。2026年度時点で後期基本計画の策定が進むため、前期current dataと後期draftをversion分離する。",
+  "quality_boundary": "This Phase 14 inventory verifies Amagasaki's 2023-2032 sixth comprehensive plan, current 2023-2027 front basic plan, policy-evaluation route, FY2026 budget, and FY2024 settlement while preserving the transition toward the latter plan. No municipal evaluation or fiscal evidence is converted into independent achievement, causal, or comparison judgments.",
+  "next_action": "Phase 15で前期基本計画の施策・指標、施策評価、後期計画transition、FY2026予算、FY2024決算をversion・評価主体・source位置付きEvidenceへ展開する。",
+  "verified_at": "2026-09-30"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "phase14-wakayama-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "302015",
+  "standard_area_code": "30201",
+  "name_ja": "和歌山市",
+  "prefecture_name_ja": "和歌山県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city",
+    "prefectural_capital"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第5次和歌山市長期総合計画",
+    "start_fiscal_year": 2017,
+    "end_fiscal_year": 2026,
+    "period_status": "transition_or_unresolved"
+  },
+  "sources": [
+    {
+      "id": "wakayama-fifth-long-term-plan",
+      "layer": "comprehensive_plan",
+      "title": "和歌山市長期総合計画",
+      "official_url": "https://www.city.wakayama.wakayama.jp/shisei/1009206/1009403/index.html",
+      "status": "official_landing_verified",
+      "effective_period": "第5次長期総合計画 2017年度～2026年度",
+      "review_boundary": "基本構想・基本計画10年間の最終年度をcurrent planとして保持し、次期計画内容を確定前に先取りしない。"
+    },
+    {
+      "id": "wakayama-implementation-2024-2026",
+      "layer": "implementation_plan_and_progress",
+      "title": "第5次和歌山市長期総合計画 実施計画",
+      "official_url": "https://www.city.wakayama.wakayama.jp/shisei/1009206/1009403/index.html",
+      "status": "official_landing_verified",
+      "effective_period": "2024年度～2026年度・毎年度点検見直し",
+      "review_boundary": "基本計画を具体化する3年間実施計画と毎年度点検・見直しの仕組みを保持し、点検結果を独自達成評価へ変換しない。"
+    },
+    {
+      "id": "wakayama-budget-2026",
+      "layer": "budget",
+      "title": "令和8年度一般会計予算",
+      "official_url": "https://www.city.wakayama.wakayama.jp/shisei/zaisei/1033880/1066991/1066992.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "現行第5次計画最終年度のFY2026一般会計予算公式入口。次期計画budgetへ読み替えず、補正・執行とstage分離する。"
+    },
+    {
+      "id": "wakayama-settlement-2024",
+      "layer": "settlement",
+      "title": "決算",
+      "official_url": "https://www.city.wakayama.wakayama.jp/shisei/zaisei/1001161/index.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算の公式入口。実施計画進捗と財政決算を別Evidence roleで保持する。"
+    }
+  ],
+  "availability_boundary": "第5次長期総合計画は2017～2026年度でFY2026が最終年度、実施計画は2024～2026年度の3年間。次期計画transitionを想定しても未確認内容は推測せず、現行最終年度Evidenceと分離する。",
+  "quality_boundary": "This Phase 14 inventory verifies Wakayama's final-year 2017-2026 fifth long-term comprehensive plan, 2024-2026 implementation/review cycle, FY2026 general-account budget, and FY2024 settlement route. It preserves the end-of-plan transition boundary and makes no independent achievement, causal, fiscal-effect, or cross-city judgment.",
+  "next_action": "Phase 15で4分野の政策・施策、2024～2026実施事業と年次点検、FY2026予算、FY2024決算、次期計画transitionをversioned Evidenceとしてレビューする。",
+  "verified_at": "2026-09-30"
+}
