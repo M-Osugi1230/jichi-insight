@@ -1,0 +1,64 @@
+{
+  "id": "phase14-fukuyama-source-inventory",
+  "phase": 14,
+  "status": "source_inventory_complete",
+  "official_code": "342076",
+  "standard_area_code": "34207",
+  "name_ja": "福山市",
+  "prefecture_name_ja": "広島県",
+  "municipality_type": "city",
+  "roles": [
+    "core_city"
+  ],
+  "review_status": "indexed_not_reviewed",
+  "plan_period": {
+    "current_plan_name": "第五次福山市総合計画 福山みらい創造ビジョン 第3期基本計画",
+    "start_fiscal_year": 2026,
+    "end_fiscal_year": 2030,
+    "period_status": "verified_fixed_period"
+  },
+  "sources": [
+    {
+      "id": "fukuyama-third-vision",
+      "layer": "comprehensive_plan",
+      "title": "福山みらい創造ビジョン（第3期基本計画）",
+      "official_url": "https://www.city.fukuyama.hiroshima.jp/site/sougoukeikaku/394084.html",
+      "status": "official_landing_verified",
+      "effective_period": "2026年度～2030年度",
+      "review_boundary": "総合計画の第3期基本計画と総合戦略を一本化したcurrent planとして保持し、第2期効果検証を第3期actualへ流用しない。"
+    },
+    {
+      "id": "fukuyama-progress-governance",
+      "layer": "progress_governance",
+      "title": "福山みらいづくり懇話会",
+      "official_url": "https://www.city.fukuyama.hiroshima.jp/site/sougoukeikaku/",
+      "status": "official_landing_verified",
+      "available_periods": [
+        "2026年度会議"
+      ],
+      "review_boundary": "計画・地方創生関連施策の効果検証と外部意見を扱う公式会議route。第2期の効果検証と第3期のcurrent progressを時点分離し、外部意見を独自評価へ変換しない。"
+    },
+    {
+      "id": "fukuyama-budget-2026",
+      "layer": "budget",
+      "title": "2026年度（令和8年度）予算（補正予算を含む）",
+      "official_url": "https://www.city.fukuyama.hiroshima.jp/soshiki/zaisei/391108.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2026,
+      "review_boundary": "FY2026当初予算・6月/9月補正等の公式入口。initialとsupplementaryを別stateとして保持する。"
+    },
+    {
+      "id": "fukuyama-settlement-2024",
+      "layer": "settlement_and_major_measures",
+      "title": "財政状況資料集（2024年度決算）",
+      "official_url": "https://www.city.fukuyama.hiroshima.jp/soshiki/zaisei/394209.html",
+      "status": "official_landing_verified",
+      "fiscal_year": 2024,
+      "review_boundary": "FY2024決算の公式財政資料入口。第2期計画期間の成果・主要施策資料と第3期current planをversion分離する。"
+    }
+  ],
+  "availability_boundary": "第3期福山みらい創造ビジョンは2026年度開始。2026年度懇話会では主に2021～2025第2期の効果検証も扱うため、第2期resultと第3期current progressを同一系列として扱わない。",
+  "quality_boundary": "This Phase 14 inventory verifies Fukuyama's new 2026-2030 third basic-plan/strategy vision, official deliberative progress-governance route, FY2026 budget, and FY2024 prior-plan settlement route. Prior-plan effect verification and external views are not treated as current-plan achievement or independent causal/comparison judgments.",
+  "next_action": "Phase 15で第3期ビジョンの政策・KPI、current progress availability、懇話会のEvidence role、FY2026予算・補正、旧第2期期間FY2024決算・成果資料をversioned Evidenceへ展開する。",
+  "verified_at": "2026-09-30"
+}
