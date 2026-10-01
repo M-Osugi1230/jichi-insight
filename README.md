@@ -20,9 +20,9 @@ Jichi Insight（自治体インサイト）は、自治体が公開する政策�
 - Phase 14 Source Inventory in progress: 0
 - Phase 14 Pending Source Inventory: 0
 - Phase 14 Reviewed promotion: 0（record-level reviewはPhase 15）
-- Phase 15 Reviewed complete: 2 / 67（函館市、旭川市）
-- Phase 15 Review in progress: 1（青森市）
-- Phase 15 Pending record review: 64
+- Phase 15 Reviewed complete: 3 / 67（函館市、旭川市、青森市）
+- Phase 15 Review in progress: 1（八戸市）
+- Phase 15 Pending record review: 63
 - 千葉市現行計画: 189 / 189事業identity、406 work itemsをstructured化済み
 - 千葉市旧計画: 360 / 360事業identity、再掲68 / 68を一次identityへ解決済み
 - 千葉市Versioned Linkage: 構造的一致60関係＋公式PDF手動確認6関係、計66関係をReviewed continuedとして昇格
