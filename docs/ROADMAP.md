@@ -903,11 +903,11 @@ Phase 14で`source_inventory_complete`となった67自治体を、record-level 
 
 Canonical status:
 
-- Reviewed complete: 2 / 67（函館市、旭川市）
-- Review in progress: 1（青森市）
-- Pending record review: 64
+- Reviewed complete: 3 / 67（函館市、旭川市、青森市）
+- Review in progress: 1（八戸市）
+- Pending record review: 63
 - Blocked source inventory: 0
-- Next official code: 022012
+- Next official code: 022039
 
 ### Milestone P15-M1 — First reviewed-complete core city
 
@@ -952,23 +952,31 @@ v1 declared package:
 
 評価指標全件の個別identity/value、展開施策・事業群の全件年度差分、34施策の全成果指標、次期計画確定内容、補正・執行・契約・補助金等はdeferred depthです。
 
-### Current work — Aomori record review
+### Milestone P15-M3 — Aomori reviewed package
+
+Status: `complete`（2026-10-01）
+
+青森市をPhase 15の3市目の`reviewed_complete`自治体として確定しました。
+
+v1 declared package:
+
+- 青森市総合計画前期基本計画 2024～2028
+- 3政策柱
+- 17政策
+- 政策を実現するための5方向性
+- 全施策に「目標とする指標」を設定する進行管理設計
+- FY2024主要施策成果報告の年度目標値・実績値・自治体A/B/C/D評価availability
+- FY2026一般会計当初予算 133,510,000,000円（原案可決）
+- FY2024一般会計歳入 142,517,400,928円
+- FY2024一般会計歳出 138,679,303,495円
+
+個別指標値の全件promotion、主要事業全件、政策・指標・事業の細粒度linkage、補正・執行・契約・補助金はdeferred depthです。青森市のA/B/C/D評価をJichi Insight独自の政策達成度、因果効果、他都市比較score、rankingへ変換しません。
+
+### Current work — Hachinohe record review
 
 Status: `in_progress`
 
-青森市（022012）を次の対象としてレビューします。
-
-正本:
-
-- `data/catalog/phase15_core_capital_review_queue.json`
-- `schemas/phase15_core_capital_review_queue.schema.json`
-- `schemas/phase15_municipality_completion.schema.json`
-- `tests/test_phase15_core_capital_review_queue.py`
-- `data/catalog/hakodate_phase15_completion.json`
-- `tests/test_hakodate_phase15_review.py`
-- `data/catalog/asahikawa_phase15_completion.json`
-- `tests/test_asahikawa_phase15_review.py`
-- `docs/PHASE15_CORE_CAPITAL_REVIEW.md`
+八戸市（022039）のReviewed v1 packageを作成します。
 
 ## After Phase 15
 
