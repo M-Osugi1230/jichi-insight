@@ -1,0 +1,36 @@
+{
+  "id": "morioka-current-progress-review-summary",
+  "phase": 15,
+  "official_code": "032018",
+  "name_ja": "盛岡市",
+  "reviewed_at": "2026-10-01",
+  "review_status": "reviewed_with_explicit_deferred_depth",
+  "current_evaluation": {
+    "fiscal_year": 2025,
+    "future_creation_project_evaluation": {
+      "status": "official_evaluation_published",
+      "design": [
+        "前年度構成事業の事後評価",
+        "各小施策の指標設定",
+        "小施策指標達成度平均によるプロジェクト達成度",
+        "次年度構成事業の事中評価・見直し・優先順位付け"
+      ],
+      "boundary": "自治体が算定するプロジェクト達成度はsource-reported evaluation。Jichi Insight独自評価へ変換しない。"
+    },
+    "citizen_survey": {
+      "status": "official_result_published",
+      "target_population": "満18歳以上の盛岡市民",
+      "sample_size": 3000,
+      "responses": 1332,
+      "response_rate_percent": 44.4,
+      "boundary": "市民の生活実感・満足度等を施策等の成果指標に用いる調査。主観指標を客観的政策成果や因果効果へ読み替えない。"
+    }
+  },
+  "current_implementation": {
+    "period": "2026年度～2028年度",
+    "revision_cycle": "毎年度ローリング方式",
+    "boundary": "2025～2027実施計画と2026～2028実施計画をversion分離し、後者をcurrent implementation versionとして保持する。"
+  },
+  "historical_fiscal_boundary": "FY2024決算は旧2015～2024総合計画の最終年度であり、現行2025～2034計画のannual actualとして流用しない。",
+  "quality_boundary": "Current administrative evaluation, citizen survey and rolling implementation information are reviewed as municipal source facts. Individual small-measure indicator rows and project-level evaluation values remain deferred, and no independent achievement, causality, effectiveness or cross-city score is created."
+}
