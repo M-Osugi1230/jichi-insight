@@ -1,0 +1,73 @@
+{
+  "id": "morioka-phase15-sources",
+  "phase": 15,
+  "official_code": "032018",
+  "name_ja": "盛岡市",
+  "reviewed_at": "2026-10-01",
+  "sources": [
+    {
+      "id": "morioka-current-plan-page",
+      "evidence_role": "current_plan_identity_and_structure",
+      "title": "基本構想（令和7年度から16年度）",
+      "official_url": "https://www.city.morioka.iwate.jp/shisei/keikaku/sogotekiplan/1009760/1045034/1051240.html",
+      "format": "html",
+      "evidence_location": "『基本構想の計画期間』『4つの基本目標と目標を達成するための施策』『自治体経営の理念』",
+      "use_boundary": "現行総合計画の基本構想2025～2034、4基本目標・25施策・5自治体経営理念をreviewする。旧2015～2024計画と分離する。"
+    },
+    {
+      "id": "morioka-implementation-2026-2028",
+      "evidence_role": "implementation_layer",
+      "title": "実施計画（令和7年度から16年度）",
+      "official_url": "https://www.city.morioka.iwate.jp/shisei/keikaku/sogotekiplan/1009760/1045034/1051241.html",
+      "format": "html",
+      "evidence_location": "『実施計画（令和8年度から令和10年度）』『実施計画（令和7年度から令和9年度）』",
+      "use_boundary": "3年実施計画を毎年度ローリング方式で見直す構造を保持し、2025～2027版と2026～2028版を同一versionへ上書きしない。"
+    },
+    {
+      "id": "morioka-evaluation-2025",
+      "evidence_role": "current_evaluation_governance",
+      "title": "令和7年度行政評価結果（未来創造プロジェクト評価）",
+      "official_url": "https://www.city.morioka.iwate.jp/shisei/jichitaikeiei/gyoka/1054534/1054538.html",
+      "format": "html",
+      "evidence_location": "本文『未来創造プロジェクト評価では』",
+      "use_boundary": "未来創造プロジェクトで事後評価・事中評価を行い、小施策指標達成度を用いる自治体評価制度を確認する。自治体評価を独自達成判定へ変換しない。"
+    },
+    {
+      "id": "morioka-survey-2025",
+      "evidence_role": "current_progress_survey",
+      "title": "令和7年度まちづくり評価アンケート結果",
+      "official_url": "https://www.city.morioka.iwate.jp/shisei/jichitaikeiei/gyoka/1054534/1054536.html",
+      "format": "html",
+      "evidence_location": "『調査の目的』『調査の設計』『調査票の回収結果』",
+      "use_boundary": "総合計画の成果指標に用いる市民アンケート。18歳以上3,000人抽出、1,332回答、回収率44.40%。主観指標を客観成果や独自scoreへ変換しない。"
+    },
+    {
+      "id": "morioka-budget-2026-page",
+      "evidence_role": "initial_budget",
+      "title": "令和8年度予算の概要",
+      "official_url": "https://www.city.morioka.iwate.jp/shisei/zaisei/suii/1054620/1056173.html",
+      "format": "html",
+      "evidence_location": "本文『令和8年度当初予算が成立』『予算総額 一般会計 1,265億1,000万円』",
+      "use_boundary": "FY2026一般会計当初予算126,510,000,000円の成立済み公式値。補正・執行・決算と別stateで保持する。"
+    },
+    {
+      "id": "morioka-budget-2026-council",
+      "evidence_role": "budget_enactment",
+      "title": "令和8年3月定例会 提出議案・議決結果",
+      "official_url": "https://www.city.morioka.iwate.jp/shisei/shigikai/giketsukekka/1055507/1055511.html",
+      "format": "html",
+      "evidence_location": "議案第3号『令和8年度盛岡市一般会計予算』・議決結果『可決(多数)』",
+      "use_boundary": "FY2026一般会計予算の議会可決を確認する。可決後の補正予算は当初予算を上書きせず別budget stateとする。"
+    },
+    {
+      "id": "morioka-settlement-2024-page",
+      "evidence_role": "settlement",
+      "title": "令和6年度決算（一般会計）",
+      "official_url": "https://www.city.morioka.iwate.jp/shisei/zaisei/1010723/1054397/1054398.html",
+      "format": "html",
+      "evidence_location": "本文『令和6年度決算（一般会計）』歳入・歳出各表の合計",
+      "use_boundary": "FY2024一般会計歳入135,207,433,943円・歳出132,975,741,966円の円単位公式値。FY2024は旧2015～2024総合計画期間でありcurrent-plan actualへ流用しない。"
+    }
+  ],
+  "quality_boundary": "The current 2025-2034 plan, rolling implementation versions, current administrative-evaluation design, citizen-survey evidence, enacted FY2026 budget, and FY2024 prior-plan settlement remain distinct. Municipal evaluation and survey measures are attributed source evidence and are not converted into independent Jichi Insight policy-achievement, causal, or cross-city judgments."
+}
