@@ -1,0 +1,63 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-10-01",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "hachinohe-city-home",
+      "municipality_key": "hachinohe-city",
+      "organization": "八戸市",
+      "category": "municipality_profile",
+      "title": "八戸市公式ホームページ",
+      "url": "https://www.city.hachinohe.aomori.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-10-01",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "八戸市公式自治体サイト。"
+    },
+    {
+      "id": "hachinohe-budget-2026-pdf",
+      "municipality_key": "hachinohe-city",
+      "organization": "八戸市",
+      "category": "budget",
+      "title": "令和8年度当初予算の概要",
+      "url": "https://www.city.hachinohe.aomori.jp/material/files/group/19/R8_tousho.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-10-01",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算104,200,000千円の公式予算資料。"
+    },
+    {
+      "id": "hachinohe-budget-2026-vote-pdf",
+      "municipality_key": "hachinohe-city",
+      "organization": "八戸市議会",
+      "category": "assembly",
+      "title": "令和8年3月定例会 議員別議案等賛否一覧表",
+      "url": "https://www.city.hachinohe.aomori.jp/material/files/group/80/R0803_ggiinnbetusannpiitirann.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-10-01",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "議案第2号令和8年度八戸市一般会計予算が原案可決されたことを確認する。"
+    },
+    {
+      "id": "hachinohe-settlement-2024-audit-pdf",
+      "municipality_key": "hachinohe-city",
+      "organization": "八戸市監査委員",
+      "category": "settlement",
+      "title": "令和6年度八戸市一般会計・歳入歳出決算審査意見書",
+      "url": "https://www.city.hachinohe.aomori.jp/material/files/group/81/R6shiiken.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-10-01",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入108,585,206千円・歳出105,245,944千円を掲載。source precisionは千円単位。"
+    }
+  ]
+}

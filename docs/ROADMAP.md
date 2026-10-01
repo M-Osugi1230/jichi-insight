@@ -903,11 +903,11 @@ Phase 14で`source_inventory_complete`となった67自治体を、record-level 
 
 Canonical status:
 
-- Reviewed complete: 3 / 67（函館市、旭川市、青森市）
-- Review in progress: 1（八戸市）
-- Pending record review: 63
+- Reviewed complete: 4 / 67（函館市、旭川市、青森市、八戸市）
+- Review in progress: 1（盛岡市）
+- Pending record review: 62
 - Blocked source inventory: 0
-- Next official code: 022039
+- Next official code: 032018
 
 ### Milestone P15-M1 — First reviewed-complete core city
 
@@ -972,11 +972,33 @@ v1 declared package:
 
 個別指標値の全件promotion、主要事業全件、政策・指標・事業の細粒度linkage、補正・執行・契約・補助金はdeferred depthです。青森市のA/B/C/D評価をJichi Insight独自の政策達成度、因果効果、他都市比較score、rankingへ変換しません。
 
-### Current work — Hachinohe record review
+### Milestone P15-M4 — Hachinohe reviewed package
+
+Status: `complete`（2026-10-01）
+
+八戸市をPhase 15の4市目の`reviewed_complete`自治体として確定しました。
+
+v1 declared package:
+
+- 第7次八戸市総合計画 FY2022～FY2026
+- 3行動指針
+- 6政策
+- 55施策
+- 未来共創推進戦略2026: 9戦略
+- FY2026事業一覧: 再掲込み780件 / 再掲除外691実事業
+- latest completed progress review: FY2025市民委員会意見書（全616事業を基礎に6政策55施策を審議）
+- FY2027開始予定「はちのへビジョン8.0」はdraft transitionとして保持
+- FY2026一般会計当初予算 104,200,000,000円（原案可決）
+- FY2024一般会計歳入 108,585,206千円
+- FY2024一般会計歳出 105,245,944千円
+
+FY2024決算は公式資料が千円単位のため、円換算後も1,000円未満のprecisionを主張しません。55施策の全指標、691実事業、9戦略配下の全プロジェクト、次期計画採択後version、補正・執行・契約・補助金はdeferred depthです。
+
+### Current work — Morioka record review
 
 Status: `in_progress`
 
-八戸市（022039）のReviewed v1 packageを作成します。
+盛岡市（032018）のReviewed v1 packageを作成します。
 
 ## After Phase 15
 

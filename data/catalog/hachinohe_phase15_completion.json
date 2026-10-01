@@ -1,0 +1,81 @@
+{
+  "id": "hachinohe-phase15-completion",
+  "phase": 15,
+  "status": "reviewed_complete",
+  "official_code": "022039",
+  "name_ja": "八戸市",
+  "completed_at": "2026-10-01",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "source_catalog_path": "data/catalog/hachinohe_phase15_sources.json",
+    "plan_review_path": "data/reviewed/hachinohe-city/plan_review.json",
+    "policy_structure_path": "data/catalog/hachinohe_current_policy_structure.json",
+    "progress_review_path": "data/catalog/hachinohe_current_progress_review_summary.json",
+    "fiscal_records_path": "data/reviewed/hachinohe-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/hachinohe-city/evidence_packets.json",
+    "counts": {
+      "current_policies": 6,
+      "current_measures": 55,
+      "action_guidelines": 3,
+      "fy2026_strategies": 9,
+      "fy2026_listed_projects": 780,
+      "fy2026_unique_projects": 691,
+      "latest_completed_review_project_records": 616,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "current_plan_period_reviewed": true,
+    "current_policy_structure_reviewed": true,
+    "annual_strategy_layer_reviewed": true,
+    "latest_completed_progress_reviewed": true,
+    "source_reported_evaluation_preserved": true,
+    "current_fy2026_review_in_progress_preserved": true,
+    "next_plan_draft_transition_preserved": true,
+    "fiscal_states_and_years_separate": true,
+    "budget_enactment_state_preserved": true,
+    "settlement_source_precision_preserved": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "all-55-measure-identities-and-indicators",
+      "status": "deferred_not_required_for_v1_completion",
+      "count": 55,
+      "boundary": "55施策すべての個別identity、進行管理指標、年度値、市自己評価、市民委員会評価のrow-level promotionはstable locator付き追加depthとする。"
+    },
+    {
+      "id": "fy2026-project-list-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "count": 691,
+      "boundary": "FY2026事業一覧は再掲込み780件・再掲除外691実事業を区別してreview済みだが、691事業の全identity・予算・成果の個票化は追加depthとする。"
+    },
+    {
+      "id": "nine-strategy-project-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "count": 9,
+      "boundary": "未来共創推進戦略2026の9戦略はreview済み。配下の全プロジェクト・重点事業と6政策/55施策の細粒度linkageは追加Evidence reviewとする。"
+    },
+    {
+      "id": "successor-plan-adoption",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "FY2027開始予定のはちのへビジョン8.0基本構想案はpublic comment済みdraftであり、正式策定後にadopted current planとして別versionをreviewする。"
+    },
+    {
+      "id": "fiscal-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "v1ではFY2026一般会計当初予算とFY2024一般会計決算トップラインを保持する。補正・執行・個別事業費・契約・補助金への接続は追加depth。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "市自己評価、市民委員会意見、市民アンケート、進行管理指標、財政データのreviewは政策効果の因果認定や他都市比較可能性を意味しない。専用方法論なしにscore/rankingへ昇格しない。"
+    }
+  ],
+  "completion_boundary": "八戸市のPhase 15 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味する。第7次八戸市総合計画がFY2022～FY2026のcurrent planであり、3つの行動指針の下に6政策・55施策を持つこと、FY2026には6政策を横断する未来共創推進戦略2026の9戦略を『戦略』『プロジェクト』『重点事業』の3階層で展開すること、令和7年度市民委員会意見書が全616事業・進行管理指標・市民アンケート・市自己評価を基に6政策55施策の進捗を審議したlatest completed reviewであること、FY2027開始予定の次期計画基本構想案は2026年9月18日にpublic commentを終えたdraft transitionであること、FY2026一般会計当初予算104,200,000,000円が3月定例会で原案可決されたこと、FY2024一般会計歳入108,585,206千円・歳出105,245,944千円を監査資料のsource precision千円でreview済みである。一方、55施策全件の指標値、FY2026の691実事業、9戦略配下の全プロジェクト、次期計画採択後version、補正・執行・契約・補助金はdeferred_depthとして明示し、市・市民委員会の評価をJichi Insight独自の政策達成度、因果効果、比較scoreまたはrankingへ変換しない。"
+}

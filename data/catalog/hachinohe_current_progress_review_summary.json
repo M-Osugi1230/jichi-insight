@@ -1,0 +1,38 @@
+{
+  "id": "hachinohe-current-progress-review-summary",
+  "phase": 15,
+  "official_code": "022039",
+  "name_ja": "八戸市",
+  "reviewed_at": "2026-10-01",
+  "review_status": "reviewed_with_explicit_deferred_depth",
+  "latest_completed_review": {
+    "review_fiscal_year": 2025,
+    "review_date": "2025-09-30",
+    "actor": "八戸市総合計画等推進市民委員会",
+    "scope": {
+      "policies": 6,
+      "measures": 55,
+      "project_implementation_records": 616
+    },
+    "evidence_inputs": [
+      "全616事業の実施状況",
+      "施策ごとの進行管理指標",
+      "市民アンケート調査",
+      "市が実施した自己評価"
+    ],
+    "status": "completed_opinion_published",
+    "boundary": "委員会の政策・施策評価と、市の自己評価はsource-reported accountability evidence。独自の達成判定・因果判定・都市間scoreへ変換しない。"
+  },
+  "current_fy2026_governance": {
+    "status": "committee_in_progress",
+    "actor": "八戸市総合計画等推進市民委員会",
+    "boundary": "2026年度市民委員会は開催中。完了済みの総合計画年度意見書が確認できるまではFY2025意見書をlatest completed reviewとして保持する。"
+  },
+  "successor_plan": {
+    "status": "draft_transition_not_adopted",
+    "planned_start_fiscal_year": 2027,
+    "public_comment_closed_on": "2026-09-18",
+    "boundary": "はちのへビジョン8.0基本構想（案）はpublic comment済みのdraft。採択済みcurrent planとして扱わない。"
+  },
+  "quality_boundary": "The latest completed annual review is the FY2025 citizen-committee opinion covering six policies and 55 measures using 616 project records, management indicators, survey results and city self-evaluation. FY2026 committee work and the successor-plan draft remain separate in-progress/transition states; no source-reported evaluation is converted into an independent Jichi Insight judgment."
+}

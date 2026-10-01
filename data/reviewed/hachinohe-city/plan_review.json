@@ -1,0 +1,74 @@
+{
+  "id": "phase15-hachinohe-plan-review",
+  "official_code": "022039",
+  "name_ja": "八戸市",
+  "review_status": "reviewed",
+  "reviewed_at": "2026-10-01",
+  "records": [
+    {
+      "id": "hachinohe-current-plan-period",
+      "evidence_role": "current_plan_identity",
+      "title": "第7次八戸市総合計画",
+      "statement": "第7次八戸市総合計画は2022年度を初年度とし、2026年度が最終年度である。",
+      "value": "2022年度～2026年度",
+      "source_url": "https://www.city.hachinohe.aomori.jp/gyoseijoho/keikaku_plan/gyoseijoho/2/7thmasterplan/18104.html",
+      "evidence_location": "本文『策定の趣旨』・総合計画一覧『令和4年度から令和8年度』",
+      "decision": "accepted",
+      "review_note": "現行第7次計画の期間を固定し、FY2027開始予定の次期計画draftと分離する。"
+    },
+    {
+      "id": "hachinohe-current-policy-structure",
+      "evidence_role": "policy_structure",
+      "title": "第7次八戸市総合計画 6つの政策",
+      "statement": "現行計画は3つの行動指針の下、地域が一体となって推進する6政策を置き、令和7年度意見書では6政策に位置付く55施策を進捗評価対象としている。",
+      "value": 55,
+      "unit": "measures",
+      "source_url": "https://www.city.hachinohe.aomori.jp/material/files/group/3/R7ikennsho.pdf",
+      "evidence_location": "PDF p.3 / printed p.1『I はじめに』",
+      "reviewed_data_path": "data/catalog/hachinohe_current_policy_structure.json",
+      "decision": "accepted",
+      "review_note": "6政策・55施策をv1構造として保持する。55施策の全個別identityと指標値は追加depth。"
+    },
+    {
+      "id": "hachinohe-fy2026-strategy-layer",
+      "evidence_role": "implementation_layer",
+      "title": "未来共創推進戦略2026",
+      "statement": "FY2026は総合計画の6政策を横断して9つの戦略を推進し、各戦略を『戦略』『プロジェクト』『重点事業』の3階層で展開する。",
+      "value": 9,
+      "unit": "annual_strategies",
+      "fiscal_year": 2026,
+      "source_url": "https://www.city.hachinohe.aomori.jp/material/files/group/3/20260331_01.pdf",
+      "evidence_location": "PDF p.12 / printed p.9『第4章 9つの戦略の推進』",
+      "reviewed_data_path": "data/catalog/hachinohe_current_policy_structure.json",
+      "decision": "accepted",
+      "review_note": "年度戦略は現行総合計画を置換する別planではなく、政策横断のannual implementation layerとして保持する。"
+    },
+    {
+      "id": "hachinohe-latest-completed-progress-review",
+      "evidence_role": "latest_completed_annual_progress",
+      "title": "第7次八戸市総合計画 令和7年度 意見書",
+      "statement": "令和7年度市民委員会は全616事業の実施状況、施策別進行管理指標、市民アンケート、市の自己評価を基に6政策55施策の進捗状況を評価した。",
+      "value": 55,
+      "unit": "reviewed_measures",
+      "fiscal_year": 2025,
+      "source_url": "https://www.city.hachinohe.aomori.jp/material/files/group/3/R7ikennsho.pdf",
+      "evidence_location": "PDF p.3 / printed p.1『I はじめに』",
+      "reviewed_data_path": "data/catalog/hachinohe_current_progress_review_summary.json",
+      "decision": "accepted",
+      "review_note": "市民委員会の評価はsource-reported external reviewであり、Jichi Insight独自の政策達成判定へ変換しない。"
+    },
+    {
+      "id": "hachinohe-next-plan-transition",
+      "evidence_role": "plan_transition",
+      "title": "はちのへビジョン8.0 基本構想（案）",
+      "statement": "現行第7次計画がFY2026で最終年度を迎えるため、FY2027開始の次期八戸市総合計画を策定中で、基本構想案のパブリックコメントは2026年9月18日に締め切られた。",
+      "value": "FY2027開始予定・draft",
+      "source_url": "https://www.city.hachinohe.aomori.jp/soshikikarasagasu/seisakusuishinka/chihososei_keikakusuisin/1_1/masterplan/26443.html",
+      "evidence_location": "本文『次期八戸市総合計画基本構想（案）について』『募集期間』",
+      "decision": "accepted",
+      "review_note": "次期計画は2026-10-01時点でadopted current planではないためtransition laneに限定する。"
+    }
+  ],
+  "quality_boundary": "The v1 review confirms the current plan period, six-policy/55-measure structure, FY2026 nine-strategy implementation layer, latest completed FY2025 citizen-committee review, and next-plan transition. Individual 55 measure identities, management-indicator values, city self-evaluation results, all FY2026 strategy projects, and project-level results remain deferred and are not converted into independent achievement, causal, or cross-city judgments.",
+  "next_action": "Promote individual measures, progress indicators, survey series and FY2026 strategy projects only with stable evidence locators and definition/year checks; keep successor-plan adoption and fiscal/project linkage as separate depth."
+}

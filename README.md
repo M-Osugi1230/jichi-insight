@@ -20,9 +20,9 @@ Jichi Insight（自治体インサイト）は、自治体が公開する政策�
 - Phase 14 Source Inventory in progress: 0
 - Phase 14 Pending Source Inventory: 0
 - Phase 14 Reviewed promotion: 0（record-level reviewはPhase 15）
-- Phase 15 Reviewed complete: 3 / 67（函館市、旭川市、青森市）
-- Phase 15 Review in progress: 1（八戸市）
-- Phase 15 Pending record review: 63
+- Phase 15 Reviewed complete: 4 / 67（函館市、旭川市、青森市、八戸市）
+- Phase 15 Review in progress: 1（盛岡市）
+- Phase 15 Pending record review: 62
 - 千葉市現行計画: 189 / 189事業identity、406 work itemsをstructured化済み
 - 千葉市旧計画: 360 / 360事業identity、再掲68 / 68を一次identityへ解決済み
 - 千葉市Versioned Linkage: 構造的一致60関係＋公式PDF手動確認6関係、計66関係をReviewed continuedとして昇格
@@ -229,15 +229,15 @@ Status: `in_progress`（2026-10-01）
 
 Phase 14でSource Inventoryを完了した67自治体を、record-level Evidenceとdeclared review packageに基づいてReviewed化します。
 
-- Reviewed complete: 2 / 67（函館市、旭川市）
-- Review in progress: 1（青森市）
-- Pending record review: 64
+- Reviewed complete: 4 / 67（函館市、旭川市、青森市、八戸市）
+- Review in progress: 1（盛岡市）
+- Pending record review: 62
 - Blocked source inventory: 0
 - 独自の政策達成評価: 0件
 - 因果効果の独自判定: 0件
 - 比較可能性未確認の都市ランキング: 0件
 
-函館市に続き旭川市を`reviewed_complete`へ昇格しました。旭川市では、第8次総合計画2016～2027の令和5年12月改定版を基準に、5基本目標・13基本政策・34施策・3重点テーマ、第3期推進計画2024～2027の2026年6月改訂版、PDCA・行政評価・評価指標公開、次期計画策定に向けた点検Evidence、FY2026一般会計当初予算、FY2024一般会計決算の円単位exact valuesをレビューしました。評価指標全件の個別value promotion、展開施策・事業群の全件年度差分、次期計画確定内容、財政detailはdeferred depthです。
+函館市、旭川市、青森市に続き、八戸市を4市目の`reviewed_complete`へ昇格しました。八戸市では、第7次総合計画FY2022～2026の6政策・55施策、FY2026未来共創推進戦略の9戦略、FY2025市民委員会による全55施策のlatest completed review、FY2027開始予定の次期計画draft transition、FY2026一般会計当初予算、FY2024一般会計決算のsource precisionをレビューしました。55施策の全指標、FY2026の691実事業、9戦略配下の全プロジェクト、次期計画採択後version、個別財政接続はdeferred depthです。
 
 正本:
 
@@ -246,6 +246,8 @@ Phase 14でSource Inventoryを完了した67自治体を、record-level Evidence
 - [`schemas/phase15_municipality_completion.schema.json`](schemas/phase15_municipality_completion.schema.json)
 - [`data/catalog/hakodate_phase15_completion.json`](data/catalog/hakodate_phase15_completion.json)
 - [`data/catalog/asahikawa_phase15_completion.json`](data/catalog/asahikawa_phase15_completion.json)
+- [`data/catalog/aomori_phase15_completion.json`](data/catalog/aomori_phase15_completion.json)
+- [`data/catalog/hachinohe_phase15_completion.json`](data/catalog/hachinohe_phase15_completion.json)
 - [Phase 15 methodology](docs/PHASE15_CORE_CAPITAL_REVIEW.md)
 
 ## Repository map
