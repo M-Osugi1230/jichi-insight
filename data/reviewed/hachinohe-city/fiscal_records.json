@@ -1,0 +1,66 @@
+[
+  {
+    "id": "jp-local-022039-fiscal-2026-total-expenditure",
+    "municipality_id": "jp-local-022039",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算（原案可決）",
+    "amount_yen": 104200000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "令和8年度当初予算の概要の一般会計104,200,000千円を円換算。令和8年3月定例会議案第2号は原案可決。6月・9月補正とは別state。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hachinohe-budget-2026-pdf",
+      "hachinohe-budget-2026-vote-pdf"
+    ]
+  },
+  {
+    "id": "jp-local-022039-fiscal-2024-total-revenue",
+    "municipality_id": "jp-local-022039",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入決算額（source precision: 千円）",
+    "amount_yen": 108585206000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "令和6年度決算審査意見書の一般会計歳入108,585,206千円を円換算。原資料が千円単位のため1,000円precisionとして保持する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hachinohe-settlement-2024-audit-pdf"
+    ]
+  },
+  {
+    "id": "jp-local-022039-fiscal-2024-total-expenditure",
+    "municipality_id": "jp-local-022039",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出決算額（source precision: 千円）",
+    "amount_yen": 105245944000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "令和6年度決算審査意見書の一般会計歳出105,245,944千円を円換算。原資料が千円単位のため1,000円precisionとして保持する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hachinohe-settlement-2024-audit-pdf"
+    ]
+  }
+]
