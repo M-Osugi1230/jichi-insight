@@ -1,0 +1,69 @@
+[
+  {
+    "id": "evidence-morioka-city-2026-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-032018-fiscal-2026-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算は126,510,000,000円。",
+        "source_ids": [
+          "morioka-budget-2026-page"
+        ],
+        "location_note": "『令和8年度予算の概要』本文『予算総額 一般会計 1,265億1,000万円』。",
+        "decision": "accepted",
+        "review_note": "公式HTMLの成立済み当初予算値。"
+      },
+      {
+        "field": "stage",
+        "statement": "令和8年度盛岡市一般会計予算は3月定例会で可決(多数)された。",
+        "source_ids": [
+          "morioka-budget-2026-council"
+        ],
+        "location_note": "議案第3号『令和8年度盛岡市一般会計予算』・議決結果『可決(多数)』。",
+        "decision": "accepted",
+        "review_note": "当初予算のenacted statusを確認。補正は別state。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-morioka-city-2024-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-032018-fiscal-2024-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計歳入は135,207,433,943円。",
+        "source_ids": [
+          "morioka-settlement-2024-page"
+        ],
+        "location_note": "『令和6年度決算（一般会計）』歳入表『合計 1352億743万3943円』。",
+        "decision": "accepted",
+        "review_note": "公式HTMLの円単位値。現行計画開始前年度の財政Evidence。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-morioka-city-2024-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-032018-fiscal-2024-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計歳出は132,975,741,966円。",
+        "source_ids": [
+          "morioka-settlement-2024-page"
+        ],
+        "location_note": "『令和6年度決算（一般会計）』歳出表『合計 1329億7574万1966円』。",
+        "decision": "accepted",
+        "review_note": "公式HTMLの円単位値。旧計画期間の決算としてcurrent-plan actualへ流用しない。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]
