@@ -1,0 +1,82 @@
+{
+  "id": "hachinohe-phase15-sources",
+  "phase": 15,
+  "official_code": "022039",
+  "name_ja": "八戸市",
+  "reviewed_at": "2026-10-01",
+  "sources": [
+    {
+      "id": "hachinohe-current-plan-page",
+      "evidence_role": "current_plan_identity",
+      "title": "第7次八戸市総合計画の内容",
+      "official_url": "https://www.city.hachinohe.aomori.jp/gyoseijoho/keikaku_plan/gyoseijoho/2/7thmasterplan/18104.html",
+      "format": "html",
+      "evidence_location": "本文『策定の趣旨』『まちづくりの戦略』『政策を推進するための事業一覧』『計画の進行管理』",
+      "use_boundary": "第7次総合計画が2022年度開始・2026年度最終年度であること、毎年度戦略と事業一覧、市民委員会による進行管理の公式入口を確認する。"
+    },
+    {
+      "id": "hachinohe-current-plan-pdf",
+      "evidence_role": "policy_structure",
+      "title": "第7次八戸市総合計画",
+      "official_url": "https://www.city.hachinohe.aomori.jp/material/files/group/3/00_07plan_all_2.pdf",
+      "format": "pdf",
+      "evidence_location": "第4章『まちづくりの基本方針』・第5章『地域が一体となって推進する6つの政策』",
+      "use_boundary": "6政策と3つの行動指針をcurrent policy frameworkとしてreviewする。個別55施策の全record promotionは別depth。"
+    },
+    {
+      "id": "hachinohe-strategy-2026-pdf",
+      "evidence_role": "annual_implementation",
+      "title": "未来共創推進戦略2026",
+      "official_url": "https://www.city.hachinohe.aomori.jp/material/files/group/3/20260331_01.pdf",
+      "format": "pdf",
+      "evidence_location": "PDF p.12 / printed p.9『第4章 9つの戦略の推進』、PDF p.14 / printed p.11『総合計画と推進戦略の関係性』",
+      "use_boundary": "FY2026に重点的に推進する9戦略を、総合計画6政策を横断する年度戦略として保持する。"
+    },
+    {
+      "id": "hachinohe-opinion-2025-pdf",
+      "evidence_role": "latest_completed_annual_progress",
+      "title": "第7次八戸市総合計画 令和7年度 意見書",
+      "official_url": "https://www.city.hachinohe.aomori.jp/material/files/group/3/R7ikennsho.pdf",
+      "format": "pdf",
+      "evidence_location": "PDF p.3 / printed p.1『I はじめに』",
+      "use_boundary": "市民委員会が全616事業、進行管理指標、市民アンケート、市の自己評価を基に6政策55施策の進捗を審議したlatest completed reviewとして保持する。委員会評価を独自評価へ変換しない。"
+    },
+    {
+      "id": "hachinohe-next-plan-public-comment",
+      "evidence_role": "plan_transition",
+      "title": "はちのへビジョン8.0（次期八戸市総合計画）の基本構想（案）に対するパブリックコメント",
+      "official_url": "https://www.city.hachinohe.aomori.jp/soshikikarasagasu/seisakusuishinka/chihososei_keikakusuisin/1_1/masterplan/26443.html",
+      "format": "html",
+      "evidence_location": "本文『次期八戸市総合計画基本構想（案）について』『募集期間』",
+      "use_boundary": "現行第7次計画がFY2026で終了し、FY2027開始の次期計画基本構想案がパブリックコメント済みであることをtransition evidenceとして保持し、draftをadopted planへ昇格しない。"
+    },
+    {
+      "id": "hachinohe-budget-2026-pdf",
+      "evidence_role": "initial_budget",
+      "title": "令和8年度当初予算の概要",
+      "official_url": "https://www.city.hachinohe.aomori.jp/material/files/group/19/R8_tousho.pdf",
+      "format": "pdf",
+      "evidence_location": "PDF p.3 / printed p.3『3 八戸市の予算』、PDF p.4『予算の規模』",
+      "use_boundary": "FY2026一般会計当初予算104,200,000千円を円換算する。補正後予算・執行・決算とは別state。"
+    },
+    {
+      "id": "hachinohe-budget-2026-vote-pdf",
+      "evidence_role": "budget_enactment",
+      "title": "令和8年3月定例会 議員別議案等賛否一覧表",
+      "official_url": "https://www.city.hachinohe.aomori.jp/material/files/group/80/R0803_ggiinnbetusannpiitirann.pdf",
+      "format": "pdf",
+      "evidence_location": "議案第2号『令和8年度八戸市一般会計予算』・議決結果『原案可決（起立採決）』",
+      "use_boundary": "FY2026一般会計当初予算の原案可決を確認する。6月・9月補正は当初予算を上書きせず別stateとする。"
+    },
+    {
+      "id": "hachinohe-settlement-2024-audit-pdf",
+      "evidence_role": "settlement_and_audit",
+      "title": "令和6年度八戸市一般会計・歳入歳出決算審査意見書",
+      "official_url": "https://www.city.hachinohe.aomori.jp/material/files/group/81/R6shiiken.pdf",
+      "format": "pdf",
+      "evidence_location": "PDF p.8『決算の総括』、PDF p.15『一般会計 歳入』、PDF p.28『一般会計 歳出』",
+      "use_boundary": "一般会計歳入108,585,206千円・歳出105,245,944千円をsource precision千円で保持し、円単位exact valueと誤表示しない。"
+    }
+  ],
+  "quality_boundary": "The current sixth-policy structure, FY2026 nine-strategy layer, completed FY2025 citizen-committee progress review, next-plan draft transition, enacted FY2026 initial budget, and audited FY2024 settlement remain separate evidence roles. Committee opinions, city self-evaluation, survey results, budget allocation, and settlement values are not converted into independent Jichi Insight achievement, causal, or cross-city judgments."
+}
