@@ -136,7 +136,7 @@ def test_hachinohe_latest_completed_progress_and_transition_are_explicit():
     assert successor["status"] == "draft_transition_not_adopted"
     assert successor["planned_start_fiscal_year"] == 2027
     assert successor["public_comment_closed_on"] == "2026-09-18"
-    assert "adopted current plan" in successor["boundary"]
+    assert "採択済みcurrent plan" in successor["boundary"]
 
 
 def test_hachinohe_fiscal_records_validate_and_preserve_source_precision():
