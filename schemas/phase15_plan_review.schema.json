@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.local/schemas/phase15_plan_review.schema.json",
+  "title": "Phase 15 municipality plan review",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "official_code",
+    "name_ja",
+    "review_status",
+    "reviewed_at",
+    "records",
+    "quality_boundary"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^phase15-[a-z0-9-]+-plan-review$"
+    },
+    "official_code": {
+      "type": "string",
+      "pattern": "^[0-9]{6}$"
+    },
+    "name_ja": {
+      "type": "string",
+      "minLength": 2
+    },
+    "review_status": {
+      "type": "string",
+      "enum": [
+        "reviewed",
+        "reviewed_declared_v1",
+        "review_in_progress"
+      ]
+    },
+    "reviewed_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "records": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "evidence_role",
+          "title",
+          "statement",
+          "source_url",
+          "evidence_location",
+          "decision",
+          "review_note"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "evidence_role": {
+            "type": "string",
+            "enum": [
+              "current_plan_identity",
+              "policy_structure",
+              "current_plan_structure",
+              "implementation_layer",
+              "progress_governance",
+              "annual_progress",
+              "latest_completed_annual_progress",
+              "current_result_availability",
+              "evaluation_governance",
+              "accountability_structure",
+              "plan_transition",
+              "other"
+            ]
+          },
+          "title": {
+            "type": "string",
+            "minLength": 2
+          },
+          "statement": {
+            "type": "string",
+            "minLength": 10
+          },
+          "value": {
+            "type": [
+              "string",
+              "number",
+              "integer",
+              "boolean",
+              "null"
+            ]
+          },
+          "unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "fiscal_year": {
+            "type": "integer",
+            "minimum": 1900,
+            "maximum": 2200
+          },
+          "source_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "evidence_location": {
+            "type": "string",
+            "minLength": 8
+          },
+          "reviewed_data_path": {
+            "type": "string",
+            "pattern": "^(data|schemas|tests)/"
+          },
+          "decision": {
+            "type": "string",
+            "enum": [
+              "accepted",
+              "not_assessable",
+              "needs_review"
+            ]
+          },
+          "review_note": {
+            "type": "string",
+            "minLength": 10
+          }
+        }
+      }
+    },
+    "quality_boundary": {
+      "type": "string",
+      "minLength": 100
+    },
+    "next_action": {
+      "type": "string",
+      "minLength": 20
+    }
+  }
+}
