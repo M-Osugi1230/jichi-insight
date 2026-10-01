@@ -1,0 +1,63 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-10-01",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "aomori-city-home",
+      "municipality_key": "aomori-city",
+      "organization": "青森市",
+      "category": "municipality_profile",
+      "title": "青森市公式ホームページ",
+      "url": "https://www.city.aomori.aomori.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-10-01",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "青森市公式自治体サイト。"
+    },
+    {
+      "id": "aomori-budget-2026-pdf",
+      "municipality_key": "aomori-city",
+      "organization": "青森市",
+      "category": "budget",
+      "title": "令和8年度 当初予算(案)の概要",
+      "url": "https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/010/040/r8toushoyosannnnogaiyou.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-10-01",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算133,510百万円の公式予算資料。"
+    },
+    {
+      "id": "aomori-budget-2026-council",
+      "municipality_key": "aomori-city",
+      "organization": "青森市議会",
+      "category": "assembly",
+      "title": "令和8年第1回定例会 市長提出議案",
+      "url": "https://www.city.aomori.aomori.jp/gikai/kakonogikaijoukyou/1007129/1010093/1010095.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-10-01",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "議案第2号『令和8年度青森市一般会計予算』の議決結果が原案可決であることを確認する。"
+    },
+    {
+      "id": "aomori-settlement-2024-audit-pdf",
+      "municipality_key": "aomori-city",
+      "organization": "青森市監査委員",
+      "category": "settlement",
+      "title": "令和6年度青森市一般会計・各特別会計歳入歳出決算審査意見書",
+      "url": "https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/006/769/r6kigyoukessan.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-10-01",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入142,517,400,928円・歳出138,679,303,495円の円単位exact source valueを含む監査資料。"
+    }
+  ]
+}
