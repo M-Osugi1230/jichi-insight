@@ -1,0 +1,70 @@
+{
+  "id": "phase15-morioka-plan-review",
+  "official_code": "032018",
+  "name_ja": "盛岡市",
+  "review_status": "reviewed",
+  "reviewed_at": "2026-10-01",
+  "records": [
+    {
+      "id": "morioka-current-plan-period",
+      "evidence_role": "current_plan_identity",
+      "title": "盛岡市総合計画",
+      "statement": "現行盛岡市総合計画の基本構想期間は2025年度から2034年度までの10年間である。",
+      "value": "2025年度～2034年度",
+      "source_url": "https://www.city.morioka.iwate.jp/shisei/keikaku/sogotekiplan/1009760/1045034/1051240.html",
+      "evidence_location": "『基本構想の計画期間』",
+      "decision": "accepted",
+      "review_note": "旧2015～2024計画の実績と現行計画をversion分離する。"
+    },
+    {
+      "id": "morioka-current-plan-structure",
+      "evidence_role": "policy_structure",
+      "title": "盛岡市総合計画 基本構想",
+      "statement": "現行基本構想は4つの基本目標と25施策を設定し、自治体経営について5つの理念を置く。",
+      "value": 25,
+      "unit": "measures",
+      "source_url": "https://www.city.morioka.iwate.jp/shisei/keikaku/sogotekiplan/1009760/1045034/1051240.html",
+      "evidence_location": "『4つの基本目標と目標を達成するための施策』『自治体経営の理念』",
+      "reviewed_data_path": "data/catalog/morioka_current_policy_structure.json",
+      "decision": "accepted",
+      "review_note": "4基本目標・25施策を個別identityで保持。小施策・全指標は追加depth。"
+    },
+    {
+      "id": "morioka-implementation-2026-2028-review",
+      "evidence_role": "implementation_layer",
+      "title": "実施計画（令和8年度から令和10年度）",
+      "statement": "現行実施計画は2026年度から2028年度までの3年間で、実施計画は毎年度ローリング方式で見直す。",
+      "value": "2026年度～2028年度",
+      "source_url": "https://www.city.morioka.iwate.jp/shisei/keikaku/sogotekiplan/1009760/1045034/1051241.html",
+      "evidence_location": "『実施計画（令和8年度から令和10年度）』およびFAQ『毎年度、ローリング方式による見直し』",
+      "decision": "accepted",
+      "review_note": "2025～2027版と2026～2028版を別versionとして保持する。"
+    },
+    {
+      "id": "morioka-current-evaluation-governance",
+      "evidence_role": "evaluation_governance",
+      "title": "令和7年度行政評価結果（未来創造プロジェクト評価）",
+      "statement": "未来創造プロジェクト評価では構成事業の前年度取組を事後評価し、小施策指標の達成度平均をプロジェクト達成度として用い、次年度事業の見直し・優先順位付けを行う。",
+      "source_url": "https://www.city.morioka.iwate.jp/shisei/jichitaikeiei/gyoka/1054534/1054538.html",
+      "evidence_location": "本文『未来創造プロジェクト評価では』",
+      "decision": "accepted",
+      "review_note": "自治体算定の達成度はsource-reported evaluation。Jichi Insight独自の達成度へ変換しない。"
+    },
+    {
+      "id": "morioka-current-survey-progress",
+      "evidence_role": "annual_progress",
+      "title": "令和7年度まちづくり評価アンケート結果",
+      "statement": "総合計画施策等の成果指標に利用する市民アンケートは18歳以上3,000人を対象とし、1,332人が回答、回収率44.40%である。",
+      "value": 44.4,
+      "unit": "percent",
+      "fiscal_year": 2025,
+      "source_url": "https://www.city.morioka.iwate.jp/shisei/jichitaikeiei/gyoka/1054534/1054536.html",
+      "evidence_location": "『調査の目的』『調査の設計』『調査票の回収結果』",
+      "reviewed_data_path": "data/catalog/morioka_current_progress_review_summary.json",
+      "decision": "accepted",
+      "review_note": "市民生活実感・満足度等の主観指標。客観成果や政策因果効果へ読み替えない。"
+    }
+  ],
+  "quality_boundary": "The review confirms current-plan identity and structure, the current rolling implementation version, municipal project-evaluation design, and a current-plan citizen survey. Municipal project achievement calculations and survey results remain source-reported and are not promoted into independent Jichi Insight policy-achievement, causal, effectiveness, or cross-city comparison judgments.",
+  "next_action": "Promote small-measure indicators, individual implementation projects and current-year actual rows only with stable evidence locators and definition/year checks; keep FY2024 prior-plan fiscal evidence distinct."
+}
