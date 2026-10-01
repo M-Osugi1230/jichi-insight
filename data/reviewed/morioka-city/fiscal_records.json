@@ -1,0 +1,66 @@
+[
+  {
+    "id": "jp-local-032018-fiscal-2026-total-expenditure",
+    "municipality_id": "jp-local-032018",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算（議会可決）",
+    "amount_yen": 126510000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "盛岡市公式『令和8年度予算の概要』の一般会計1,265億1,000万円。3月定例会議案第3号は可決(多数)。補正後予算・執行・決算と分離する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "morioka-budget-2026-page",
+      "morioka-budget-2026-council"
+    ]
+  },
+  {
+    "id": "jp-local-032018-fiscal-2024-total-revenue",
+    "municipality_id": "jp-local-032018",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入決算額",
+    "amount_yen": 135207433943,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "盛岡市公式『令和6年度決算（一般会計）』歳入表の合計1352億743万3943円。旧2015～2024総合計画期間の財政Evidence。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "morioka-settlement-2024-page"
+    ]
+  },
+  {
+    "id": "jp-local-032018-fiscal-2024-total-expenditure",
+    "municipality_id": "jp-local-032018",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出決算額",
+    "amount_yen": 132975741966,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "盛岡市公式『令和6年度決算（一般会計）』歳出表の合計1329億7574万1966円。旧2015～2024総合計画期間の財政Evidence。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "morioka-settlement-2024-page"
+    ]
+  }
+]
