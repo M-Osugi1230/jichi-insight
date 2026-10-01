@@ -55,9 +55,9 @@
       "prefecture_name_ja": "青森県",
       "municipality_type": "city",
       "phase14_role": "core_city_and_prefectural_capital",
-      "status": "review_in_progress",
+      "status": "reviewed_complete",
       "source_inventory_path": "data/indexed/aomori-city/source_inventory.json",
-      "completion_path": null
+      "completion_path": "data/catalog/aomori_phase15_completion.json"
     },
     {
       "sequence": 4,
@@ -68,7 +68,7 @@
       "prefecture_name_ja": "青森県",
       "municipality_type": "city",
       "phase14_role": "core_city",
-      "status": "pending_record_review",
+      "status": "review_in_progress",
       "source_inventory_path": "data/indexed/hachinohe-city/source_inventory.json",
       "completion_path": null
     },
@@ -894,11 +894,11 @@
   ],
   "summary": {
     "target_count": 67,
-    "reviewed_complete_count": 2,
+    "reviewed_complete_count": 3,
     "review_in_progress_count": 1,
-    "pending_record_review_count": 64,
+    "pending_record_review_count": 63,
     "blocked_source_inventory_count": 0,
-    "next_official_code": "022012"
+    "next_official_code": "022039"
   },
   "updated_at": "2026-10-01"
 }
