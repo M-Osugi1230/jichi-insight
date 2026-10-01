@@ -1,0 +1,63 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-10-01",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "morioka-city-home",
+      "municipality_key": "morioka-city",
+      "organization": "盛岡市",
+      "category": "municipality_profile",
+      "title": "盛岡市公式ホームページ",
+      "url": "https://www.city.morioka.iwate.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-10-01",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "盛岡市公式自治体サイト。"
+    },
+    {
+      "id": "morioka-budget-2026-page",
+      "municipality_key": "morioka-city",
+      "organization": "盛岡市",
+      "category": "budget",
+      "title": "令和8年度予算の概要",
+      "url": "https://www.city.morioka.iwate.jp/shisei/zaisei/suii/1054620/1056173.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-10-01",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算126,510,000,000円の成立済み公式値。"
+    },
+    {
+      "id": "morioka-budget-2026-council",
+      "municipality_key": "morioka-city",
+      "organization": "盛岡市議会",
+      "category": "assembly",
+      "title": "令和8年3月定例会 提出議案・議決結果",
+      "url": "https://www.city.morioka.iwate.jp/shisei/shigikai/giketsukekka/1055507/1055511.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-10-01",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "議案第3号令和8年度盛岡市一般会計予算が可決(多数)されたことを確認する。"
+    },
+    {
+      "id": "morioka-settlement-2024-page",
+      "municipality_key": "morioka-city",
+      "organization": "盛岡市",
+      "category": "settlement",
+      "title": "令和6年度決算（一般会計）",
+      "url": "https://www.city.morioka.iwate.jp/shisei/zaisei/1010723/1054397/1054398.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-10-01",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入135,207,433,943円・歳出132,975,741,966円の公式HTML円単位値。"
+    }
+  ]
+}
