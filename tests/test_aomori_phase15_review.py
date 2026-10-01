@@ -174,18 +174,12 @@ def test_aomori_completion_quality_gate_and_deferred_depth_are_explicit():
     assert "ランキング" in boundary
 
 
-def test_aomori_is_complete_and_hachinohe_is_next():
+def test_aomori_remains_reviewed_complete_as_queue_advances():
     queue = load(QUEUE)
     by_code = {row["official_code"]: row for row in queue["execution_queue"]}
 
-    assert by_code["012025"]["status"] == "reviewed_complete"
-    assert by_code["012041"]["status"] == "reviewed_complete"
     assert by_code["022012"]["status"] == "reviewed_complete"
     assert by_code["022012"]["completion_path"] == (
         "data/catalog/aomori_phase15_completion.json"
     )
-    assert by_code["022039"]["status"] == "review_in_progress"
-    assert queue["summary"]["reviewed_complete_count"] == 3
-    assert queue["summary"]["review_in_progress_count"] == 1
-    assert queue["summary"]["pending_record_review_count"] == 63
-    assert queue["summary"]["next_official_code"] == "022039"
+    assert (ROOT / by_code["022012"]["completion_path"]).is_file()
