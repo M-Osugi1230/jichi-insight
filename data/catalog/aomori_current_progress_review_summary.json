@@ -1,0 +1,31 @@
+{
+  "id": "aomori-current-progress-review-summary",
+  "phase": 15,
+  "official_code": "022012",
+  "name_ja": "青森市",
+  "reviewed_at": "2026-10-01",
+  "review_status": "reviewed_with_explicit_deferred_depth",
+  "current_plan_results": {
+    "fiscal_year": 2024,
+    "status": "official_result_package_published",
+    "source_title": "令和6年度 主要な施策の成果及び予算の執行実績に関する報告書",
+    "reporting_structure": {
+      "target_indicator_rows": true,
+      "annual_target_values": true,
+      "annual_actual_values": true,
+      "source_reported_evaluation_classes": true,
+      "major_project_results": true,
+      "project_settlement_amounts": true
+    },
+    "source_reported_evaluation_semantics": {
+      "A": "実績値がその年度の目標値を100％以上達成",
+      "B": "実績値がその年度の目標値を概ね75％以上100％未満達成",
+      "C": "実績値がその年度の目標値の50％以上75％未満",
+      "D": "実績値がその年度の目標値の50％未満"
+    },
+    "promoted_indicator_actual_records": 0,
+    "boundary": "FY2024の個別指標値・A/B/C/D評価は公式に公表済みだが、v1では全件を一括promotionしない。各行の定義・単位・目標年・測定年・stable locatorを確認したものだけ追加Reviewedへ昇格する。"
+  },
+  "fiscal_reporting_boundary": "主要施策成果報告に事業別決算額が掲載されるが、政策・指標・事業・一般会計トップラインを単一の成果数値へ統合しない。",
+  "quality_boundary": "A/B/C/Dは青森市のsource-reported evaluation semanticsであり、Jichi Insight独自の政策達成度、因果効果、他都市比較可能性またはランキングへ変換しない。"
+}
