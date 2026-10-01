@@ -16,8 +16,10 @@ STRUCTURE = ROOT / "data/catalog/aomori_current_policy_structure.json"
 PROGRESS = ROOT / "data/catalog/aomori_current_progress_review_summary.json"
 FISCAL = ROOT / "data/reviewed/aomori-city/fiscal_records.json"
 EVIDENCE = ROOT / "data/reviewed/aomori-city/evidence_packets.json"
+MUNICIPALITY = ROOT / "data/reviewed/aomori-city/municipality.json"
 FISCAL_SCHEMA = ROOT / "schemas/fiscal_record.schema.json"
 EVIDENCE_SCHEMA = ROOT / "schemas/evidence_packet.schema.json"
+MUNICIPALITY_SCHEMA = ROOT / "schemas/municipality.schema.json"
 QUEUE = ROOT / "data/catalog/phase15_core_capital_review_queue.json"
 
 
@@ -40,6 +42,16 @@ def test_aomori_completion_contract_validates():
     assert completion["status"] == "reviewed_complete"
     assert completion["official_code"] == "022012"
     assert completion["name_ja"] == "青森市"
+
+
+def test_aomori_reviewed_municipality_validates():
+    municipality = load(MUNICIPALITY)
+
+    assert validate(MUNICIPALITY_SCHEMA, municipality) == []
+    assert municipality["id"] == "jp-local-022012"
+    assert municipality["municipality_type"] == "core_city"
+    assert municipality["data_status"] == "reviewed"
+    assert municipality["fiscal_years"] == [2024, 2026]
 
 
 def test_aomori_common_source_and_plan_review_schemas_validate():
