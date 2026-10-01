@@ -1,0 +1,57 @@
+{
+  "id": "phase15-aomori-plan-review",
+  "official_code": "022012",
+  "name_ja": "青森市",
+  "review_status": "reviewed",
+  "reviewed_at": "2026-10-01",
+  "records": [
+    {
+      "id": "aomori-current-plan-period",
+      "evidence_role": "current_plan_identity",
+      "title": "青森市総合計画前期基本計画",
+      "statement": "現行前期基本計画は2024年度から2028年度までの5年間で、2024年9月27日に市として策定された。",
+      "value": "2024年度～2028年度",
+      "source_url": "https://www.city.aomori.aomori.jp/shisei/machizukuri/1005734/1005735/1007606.html",
+      "evidence_location": "本文『青森市総合計画前期基本計画とは』『9月27日 青森市総合計画前期基本計画を策定』",
+      "decision": "accepted",
+      "review_note": "基本構想と前期基本計画を分離し、2024～2028をcurrent actionable planning layerとして保持する。"
+    },
+    {
+      "id": "aomori-current-policy-structure",
+      "evidence_role": "policy_structure",
+      "title": "青森市総合計画前期基本計画",
+      "statement": "前期基本計画は3つの政策柱の下に17政策を置き、政策を実現するための5つの方向性を別に定める。",
+      "value": 17,
+      "unit": "policies",
+      "source_url": "https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/007/606/01r6zenki-keikaku.pdf",
+      "evidence_location": "PDF p.1『目次』、PDF p.2 / printed p.1『計画の構成』",
+      "reviewed_data_path": "data/catalog/aomori_current_policy_structure.json",
+      "decision": "accepted",
+      "review_note": "17政策の名称をcurrent policy structureに個別保持する。施策・指標の全件identityは追加depthとする。"
+    },
+    {
+      "id": "aomori-indicator-evaluation-design",
+      "evidence_role": "progress_governance",
+      "title": "青森市総合計画前期基本計画",
+      "statement": "前期基本計画は掲げる施策すべてに『目標とする指標』を設定し、指標の達成度などを通じて施策を評価・検証する。",
+      "source_url": "https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/007/606/01r6zenki-keikaku.pdf",
+      "evidence_location": "PDF p.2 / printed p.1『計画の推進』",
+      "decision": "accepted",
+      "review_note": "評価制度の存在を政策効果の因果認定や独自達成度へ変換しない。"
+    },
+    {
+      "id": "aomori-fy2024-current-plan-results",
+      "evidence_role": "annual_progress",
+      "title": "令和6年度 主要な施策の成果及び予算の執行実績に関する報告書",
+      "statement": "FY2024成果報告は前期基本計画の目標指標について年度目標値・実績値とA/B/C/Dの達成度評価を掲載し、主要事業の成果と決算額も併記する。",
+      "fiscal_year": 2024,
+      "source_url": "https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/007/411/r6houkokusyo.pdf",
+      "evidence_location": "PDF p.45 / printed p.39『表の見方』、PDF p.46 / printed p.40以降",
+      "reviewed_data_path": "data/catalog/aomori_current_progress_review_summary.json",
+      "decision": "accepted",
+      "review_note": "FY2024は現行計画期間のofficial annual result package。個別指標値・A/B/C/D分類の全件promotionはstable row-level locator付き追加depthとする。"
+    }
+  ],
+  "quality_boundary": "The package reviews current-plan identity, the 17-policy structure, indicator-based evaluation design, and FY2024 current-plan annual-result availability. Individual indicator rows and municipal A/B/C/D evaluations remain attributed source facts and are not promoted into an independent policy-achievement assessment, causal attribution, or cross-city comparison.",
+  "next_action": "Promote individual FY2024 indicator rows only when each row has a stable evidence locator and definition/unit/measurement-year checks; keep project and fiscal linkage as separate review depth."
+}
