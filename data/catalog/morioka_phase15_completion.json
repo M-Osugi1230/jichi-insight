@@ -1,0 +1,71 @@
+{
+  "id": "morioka-phase15-completion",
+  "phase": 15,
+  "status": "reviewed_complete",
+  "official_code": "032018",
+  "name_ja": "盛岡市",
+  "completed_at": "2026-10-01",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "source_catalog_path": "data/catalog/morioka_phase15_sources.json",
+    "plan_review_path": "data/reviewed/morioka-city/plan_review.json",
+    "policy_structure_path": "data/catalog/morioka_current_policy_structure.json",
+    "progress_review_path": "data/catalog/morioka_current_progress_review_summary.json",
+    "fiscal_records_path": "data/reviewed/morioka-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/morioka-city/evidence_packets.json",
+    "counts": {
+      "basic_goals": 4,
+      "current_plan_measures": 25,
+      "municipality_management_principles": 5,
+      "promoted_small_measure_indicator_rows": 0,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "current_plan_period_reviewed": true,
+    "current_policy_structure_reviewed": true,
+    "rolling_implementation_version_reviewed": true,
+    "current_evaluation_governance_reviewed": true,
+    "current_citizen_survey_reviewed": true,
+    "source_reported_evaluation_preserved": true,
+    "individual_indicator_rows_not_overpromoted": true,
+    "historical_fiscal_plan_boundary_preserved": true,
+    "fiscal_states_and_years_separate": true,
+    "budget_enactment_state_preserved": true,
+    "exact_settlement_precision_preserved": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "all-small-measure-indicators",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "25施策配下の小施策・成果指標の全identity、定義、単位、基準値、目標値、current actual、自治体評価のrow-level promotionはstable locator付き追加depthとする。"
+    },
+    {
+      "id": "future-creation-project-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "未来創造プロジェクトの全構成事業・小施策指標・自治体算定達成度の個票化は追加depth。source-reported達成度を独自評価へ変換しない。"
+    },
+    {
+      "id": "implementation-project-version-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "2025～2027版と2026～2028版の全実施事業identity・年度差分・予算接続は追加Evidence reviewとする。"
+    },
+    {
+      "id": "fiscal-detail-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "v1ではFY2026一般会計当初予算とFY2024一般会計決算トップラインを保持する。補正・執行・個別事業費・契約・補助金への接続は追加depth。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "行政評価、市民アンケート、財政データのreviewは政策効果の因果認定や他都市比較可能性を意味しない。専用方法論なしにscore/rankingへ昇格しない。"
+    }
+  ],
+  "completion_boundary": "盛岡市のPhase 15 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味する。現行盛岡市総合計画の基本構想がFY2025～FY2034の10年間であり、『輝きが増し 活力に満ち 夢をかなえるまち盛岡』の将来像の下に4基本目標・25施策・5自治体経営理念を置くこと、current実施計画はFY2026～FY2028の3年間で毎年度ローリング方式により見直すこと、FY2025行政評価で未来創造プロジェクトの事後/事中評価と小施策指標による自治体算定達成度が公開され、FY2025まちづくり評価アンケートは3,000人抽出・1,332回答・44.40%回収であること、FY2026一般会計当初予算126,510,000,000円が議会で可決されたこと、FY2024一般会計歳入135,207,433,943円・歳出132,975,741,966円を公式HTMLの円単位値でreview済みである。一方、FY2024決算は旧2015～2024総合計画期間でありcurrent-plan actualへ流用しない。全小施策・全指標、未来創造プロジェクト全構成事業、実施計画全事業version差分、補正・執行・契約・補助金はdeferred_depthとして明示し、自治体評価や市民アンケートをJichi Insight独自の政策達成度、因果効果、比較scoreまたはrankingへ変換しない。"
+}
