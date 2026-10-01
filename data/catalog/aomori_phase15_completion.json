@@ -1,0 +1,69 @@
+{
+  "id": "aomori-phase15-completion",
+  "phase": 15,
+  "status": "reviewed_complete",
+  "official_code": "022012",
+  "name_ja": "青森市",
+  "completed_at": "2026-10-01",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "source_catalog_path": "data/catalog/aomori_phase15_sources.json",
+    "plan_review_path": "data/reviewed/aomori-city/plan_review.json",
+    "policy_structure_path": "data/catalog/aomori_current_policy_structure.json",
+    "progress_review_path": "data/catalog/aomori_current_progress_review_summary.json",
+    "fiscal_records_path": "data/reviewed/aomori-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/aomori-city/evidence_packets.json",
+    "counts": {
+      "policy_pillars": 3,
+      "current_plan_policies": 17,
+      "policy_realization_directions": 5,
+      "promoted_indicator_actual_records": 0,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "current_plan_period_reviewed": true,
+    "current_policy_structure_reviewed": true,
+    "indicator_evaluation_design_reviewed": true,
+    "current_fy2024_result_package_reviewed": true,
+    "source_reported_evaluation_semantics_preserved": true,
+    "individual_indicator_rows_not_overpromoted": true,
+    "fiscal_states_and_years_separate": true,
+    "budget_enactment_state_preserved": true,
+    "exact_settlement_precision_preserved": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "current-plan-measure-indicator-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "17政策配下の全施策identityと『目標とする指標』の定義・単位・基準値・年度目標・FY2024実績・A/B/C/D評価の全件promotionはstable row-level Evidenceを付ける追加depthとする。"
+    },
+    {
+      "id": "fy2024-major-project-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "FY2024主要施策成果報告書に掲載される全主要事業のidentity、成果記述、事業別決算額、担当部局の完全構造化は追加depthとする。"
+    },
+    {
+      "id": "policy-indicator-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "政策・施策・指標・主要事業の細粒度linkageは公式資料で対応を確認した組合せだけを追加昇格し、名称類似だけで接続しない。"
+    },
+    {
+      "id": "fiscal-detail-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "v1ではFY2026一般会計当初予算とFY2024一般会計決算歳入・歳出をstate分離して保持する。補正、執行、個別事業費、契約、補助金への接続は追加Evidenceレビューとする。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "自治体のA/B/C/D達成度評価、財政、事業成果のreviewは政策効果の因果認定や他都市比較可能性を意味しない。専用方法論なしにscoreやrankingへ昇格しない。"
+    }
+  ],
+  "completion_boundary": "青森市のPhase 15 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味する。青森市総合計画前期基本計画2024～2028が2024年9月27日に策定されたcurrent planであること、3政策柱・17政策・政策を実現するための5方向性、全施策に『目標とする指標』を設定し達成度等で評価・検証する設計、FY2024の主要施策成果報告書が現行計画の年度目標値・実績値・A/B/C/Dのsource-reported評価と主要事業成果を公表していること、FY2026一般会計当初予算133,510,000,000円が市議会で原案可決されたこと、FY2024一般会計歳入142,517,400,928円・歳出138,679,303,495円を監査資料の円単位exact source valueでレビュー済みである。一方、全施策・全指標の個別identity/value、全主要事業、政策・指標・事業の細粒度linkage、補正・執行・契約・補助金等はdeferred_depthとして明示する。青森市のA/B/C/D評価や事業成果をJichi Insight独自の政策達成度、因果効果、他都市比較可能性またはランキングへ変換しない。"
+}

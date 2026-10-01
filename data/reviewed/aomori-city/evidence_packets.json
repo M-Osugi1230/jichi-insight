@@ -1,0 +1,71 @@
+[
+  {
+    "id": "evidence-aomori-city-2026-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-022012-fiscal-2026-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算は133,510,000,000円。",
+        "source_ids": [
+          "aomori-budget-2026-pdf"
+        ],
+        "location_note": "PDF p.4 / printed p.3『Ⅱ 予算規模』一般会計 133,510百万円。",
+        "decision": "accepted",
+        "review_note": "百万円単位の公式値を円換算。"
+      },
+      {
+        "field": "stage",
+        "statement": "令和8年度青森市一般会計予算は令和8年第1回定例会で原案可決された。",
+        "source_ids": [
+          "aomori-budget-2026-council"
+        ],
+        "location_note": "『市長提出議案』議案第2号『令和8年度青森市一般会計予算』議決結果『原案可決』。",
+        "decision": "accepted",
+        "review_note": "当初予算のenacted statusを確認。後続補正は別state。"
+      }
+    ],
+    "open_questions": [
+      "6月・9月等の補正予算はinitial budgetを上書きせず、必要に応じてrevised_budgetの別レコードとして追加する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-city-2024-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-022012-fiscal-2024-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計の歳入決算額は142,517,400,928円。",
+        "source_ids": [
+          "aomori-settlement-2024-audit-pdf"
+        ],
+        "location_note": "決算審査意見書 PDF p.11 / printed p.3『1 決算の総括 (1) 決算収支の状況』一般会計・歳入決算額。",
+        "decision": "accepted",
+        "review_note": "監査資料の円単位exact source valueを保持する。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-city-2024-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-022012-fiscal-2024-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計の歳出決算額は138,679,303,495円。",
+        "source_ids": [
+          "aomori-settlement-2024-audit-pdf"
+        ],
+        "location_note": "決算審査意見書 PDF p.11 / printed p.3『1 決算の総括 (1) 決算収支の状況』一般会計・歳出決算額。",
+        "decision": "accepted",
+        "review_note": "監査資料の円単位exact source valueを保持し、予算額と混同しない。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]

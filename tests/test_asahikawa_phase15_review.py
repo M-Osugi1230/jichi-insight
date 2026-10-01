@@ -174,7 +174,7 @@ def test_asahikawa_completion_keeps_indicator_detail_deferred():
     assert "ランキング" in boundary
 
 
-def test_asahikawa_is_complete_and_aomori_is_next():
+def test_asahikawa_remains_reviewed_complete_as_queue_advances():
     queue = load(QUEUE)
     by_code = {row["official_code"]: row for row in queue["execution_queue"]}
 
@@ -183,8 +183,4 @@ def test_asahikawa_is_complete_and_aomori_is_next():
     assert by_code["012041"]["completion_path"] == (
         "data/catalog/asahikawa_phase15_completion.json"
     )
-    assert by_code["022012"]["status"] == "review_in_progress"
-    assert queue["summary"]["reviewed_complete_count"] == 2
-    assert queue["summary"]["review_in_progress_count"] == 1
-    assert queue["summary"]["pending_record_review_count"] == 64
-    assert queue["summary"]["next_official_code"] == "022012"
+    assert (ROOT / by_code["012041"]["completion_path"]).is_file()

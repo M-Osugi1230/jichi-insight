@@ -1,0 +1,66 @@
+[
+  {
+    "id": "jp-local-022012-fiscal-2026-total-expenditure",
+    "municipality_id": "jp-local-022012",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算（原案可決）",
+    "amount_yen": 133510000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "令和8年度当初予算(案)の概要の一般会計133,510百万円を円換算。令和8年第1回定例会で議案第2号は原案可決。後続補正とは別state。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-budget-2026-pdf",
+      "aomori-budget-2026-council"
+    ]
+  },
+  {
+    "id": "jp-local-022012-fiscal-2024-total-revenue",
+    "municipality_id": "jp-local-022012",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入決算額",
+    "amount_yen": 142517400928,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "令和6年度一般会計・各特別会計歳入歳出決算審査意見書『決算収支の状況』の円単位exact source value。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-settlement-2024-audit-pdf"
+    ]
+  },
+  {
+    "id": "jp-local-022012-fiscal-2024-total-expenditure",
+    "municipality_id": "jp-local-022012",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出決算額",
+    "amount_yen": 138679303495,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "令和6年度一般会計・各特別会計歳入歳出決算審査意見書『決算収支の状況』の円単位exact source value。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-settlement-2024-audit-pdf"
+    ]
+  }
+]

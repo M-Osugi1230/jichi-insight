@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.local/schemas/phase15_source_catalog.schema.json",
+  "title": "Phase 15 municipality reviewed source catalog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "phase",
+    "official_code",
+    "name_ja",
+    "reviewed_at",
+    "sources"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+-phase15-sources$"
+    },
+    "phase": {
+      "const": 15
+    },
+    "official_code": {
+      "type": "string",
+      "pattern": "^[0-9]{6}$"
+    },
+    "name_ja": {
+      "type": "string",
+      "minLength": 2
+    },
+    "reviewed_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "evidence_role",
+          "title",
+          "official_url",
+          "format",
+          "evidence_location",
+          "use_boundary"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "evidence_role": {
+            "type": "string",
+            "minLength": 4
+          },
+          "title": {
+            "type": "string",
+            "minLength": 2
+          },
+          "official_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "format": {
+            "enum": [
+              "html",
+              "pdf"
+            ]
+          },
+          "evidence_location": {
+            "type": "string",
+            "minLength": 6
+          },
+          "use_boundary": {
+            "type": "string",
+            "minLength": 20
+          }
+        }
+      }
+    },
+    "quality_boundary": {
+      "type": "string",
+      "minLength": 80
+    }
+  }
+}
