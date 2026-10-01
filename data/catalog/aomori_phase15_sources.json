@@ -1,0 +1,82 @@
+{
+  "id": "aomori-phase15-sources",
+  "phase": 15,
+  "official_code": "022012",
+  "name_ja": "青森市",
+  "reviewed_at": "2026-10-01",
+  "sources": [
+    {
+      "id": "aomori-current-plan-page",
+      "evidence_role": "current_plan_identity",
+      "title": "青森市総合計画前期基本計画を策定しました",
+      "official_url": "https://www.city.aomori.aomori.jp/shisei/machizukuri/1005734/1005735/1007606.html",
+      "format": "html",
+      "evidence_location": "本文『青森市総合計画前期基本計画とは』『策定までの主な経緯』",
+      "use_boundary": "2024年度～2028年度の前期基本計画が2024年9月27日に市として策定されたcurrent planであることを確認する。"
+    },
+    {
+      "id": "aomori-current-plan-pdf",
+      "evidence_role": "policy_structure_and_evaluation_design",
+      "title": "青森市総合計画 前期基本計画 2024年度～2028年度",
+      "official_url": "https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/007/606/01r6zenki-keikaku.pdf",
+      "format": "pdf",
+      "evidence_location": "PDF p.2 / printed p.1『前期基本計画のあらまし』、PDF p.1『目次』",
+      "use_boundary": "3政策柱・17政策・政策実現のための5方向性、全施策に目標指標を設定する進行管理設計をreviewする。個別指標値は別depth。"
+    },
+    {
+      "id": "aomori-results-2024-page",
+      "evidence_role": "annual_result_index",
+      "title": "決算",
+      "official_url": "https://www.city.aomori.aomori.jp/shisei/gyouzaiseiunei/1007411/index.html",
+      "format": "html",
+      "evidence_location": "『令和6年度』『主要な施策の成果及び予算の執行実績に関する報告書』",
+      "use_boundary": "FY2024の現行前期基本計画に対応する主要施策成果報告書の公式入口として保持する。"
+    },
+    {
+      "id": "aomori-results-2024-pdf",
+      "evidence_role": "annual_progress_and_source_reported_evaluation",
+      "title": "令和6年度 主要な施策の成果及び予算の執行実績に関する報告書",
+      "official_url": "https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/007/411/r6houkokusyo.pdf",
+      "format": "pdf",
+      "evidence_location": "PDF p.45 / printed p.39『第3 主要な施策の成果の説明・表の見方』、PDF p.46 / printed p.40以降",
+      "use_boundary": "前期基本計画の目標指標、年度目標値・実績値、A/B/C/D達成度評価、主要事業成果を確認する。自治体評価をJichi Insight独自評価へ変換しない。"
+    },
+    {
+      "id": "aomori-budget-2026-page",
+      "evidence_role": "budget_index",
+      "title": "令和8年度予算の概要及び執行状況等",
+      "official_url": "https://www.city.aomori.aomori.jp/shisei/gyouzaiseiunei/1006058/1009674/1010042.html",
+      "format": "html",
+      "evidence_location": "『予算の概要 > 当初予算』『6月補正予算』『9月補正予算』",
+      "use_boundary": "FY2026当初予算と各補正予算の公式入口。initialとsupplementaryを別stateとして保持する。"
+    },
+    {
+      "id": "aomori-budget-2026-pdf",
+      "evidence_role": "initial_budget",
+      "title": "令和8年度 当初予算(案)の概要",
+      "official_url": "https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/010/040/r8toushoyosannnnogaiyou.pdf",
+      "format": "pdf",
+      "evidence_location": "PDF p.4 / printed p.3『Ⅱ 予算規模』一般会計 133,510百万円",
+      "use_boundary": "一般会計当初予算133,510百万円を円換算する。補正後予算、執行額、決算額とは結合しない。"
+    },
+    {
+      "id": "aomori-budget-2026-council",
+      "evidence_role": "budget_enactment",
+      "title": "令和8年第1回定例会",
+      "official_url": "https://www.city.aomori.aomori.jp/gikai/kakonogikaijoukyou/1007129/1010093/1010095.html",
+      "format": "html",
+      "evidence_location": "『市長提出議案』『議案第2号 令和8年度青森市一般会計予算』『原案可決』",
+      "use_boundary": "FY2026一般会計予算の原案可決を確認する。後続補正は当初予算を上書きせず別budget stateとする。"
+    },
+    {
+      "id": "aomori-settlement-2024-audit-pdf",
+      "evidence_role": "settlement_and_audit",
+      "title": "令和6年度 青森市一般会計・各特別会計 歳入歳出決算審査意見書",
+      "official_url": "https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/006/769/r6kigyoukessan.pdf",
+      "format": "pdf",
+      "evidence_location": "PDF p.11 / printed p.3『1 決算の総括 (1) 決算収支の状況』一般会計",
+      "use_boundary": "一般会計歳入142,517,400,928円・歳出138,679,303,495円の監査資料exact source valuesを保持する。"
+    }
+  ],
+  "quality_boundary": "Current plan identity, policy structure, source-reported annual evaluation, budget enactment and amendment lanes, and audited settlement values remain distinct. FY2024 indicator classes and values are municipal source facts; Phase 15 v1 does not transform them into an independent Jichi Insight achievement judgment, causal effect, or cross-city comparison."
+}
