@@ -1,0 +1,71 @@
+[
+  {
+    "id": "evidence-hachinohe-city-2026-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-022039-fiscal-2026-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算は104,200,000,000円。",
+        "source_ids": [
+          "hachinohe-budget-2026-pdf"
+        ],
+        "location_note": "当初予算の概要 PDF p.3 / printed p.3『3 八戸市の予算』で1,042億円、次頁総括表で104,200,000千円。",
+        "decision": "accepted",
+        "review_note": "千円単位の公式予算値を円換算。"
+      },
+      {
+        "field": "stage",
+        "statement": "令和8年度八戸市一般会計予算は3月定例会で原案可決された。",
+        "source_ids": [
+          "hachinohe-budget-2026-vote-pdf"
+        ],
+        "location_note": "議員別議案等賛否一覧表・議案第2号・議決結果『原案可決（起立採決）』。",
+        "decision": "accepted",
+        "review_note": "当初予算のenacted statusを確認。後続補正は別state。"
+      }
+    ],
+    "open_questions": [
+      "6月・9月等の補正予算は必要に応じてrevised_budgetの別recordとして追加する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hachinohe-city-2024-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-022039-fiscal-2024-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計歳入決算額は108,585,206千円（円換算108,585,206,000円）。",
+        "source_ids": [
+          "hachinohe-settlement-2024-audit-pdf"
+        ],
+        "location_note": "決算審査意見書 PDF p.8『決算の総括』およびp.15『一般会計 歳入』。",
+        "decision": "accepted",
+        "review_note": "source precisionは千円。円換算後も1,000円未満の精度を主張しない。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hachinohe-city-2024-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-022039-fiscal-2024-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計歳出決算額は105,245,944千円（円換算105,245,944,000円）。",
+        "source_ids": [
+          "hachinohe-settlement-2024-audit-pdf"
+        ],
+        "location_note": "決算審査意見書 PDF p.8『決算の総括』およびp.28『一般会計 歳出』。",
+        "decision": "accepted",
+        "review_note": "source precisionは千円。予算現額・翌年度繰越額と混同しない。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]
