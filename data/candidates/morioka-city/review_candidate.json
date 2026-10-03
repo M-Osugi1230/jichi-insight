@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "candidate_id": "morioka-phase15-review-candidate",
+  "phase": 15,
+  "status": "review_candidate",
+  "official_code": "032018",
+  "name_ja": "盛岡市",
+  "source_inventory_path": "data/indexed/morioka-city/source_inventory.json",
+  "package_state": "scaffold",
+  "candidate_package": {
+    "source_catalog": {},
+    "plan_review": {},
+    "policy_structure": {},
+    "progress_review": {},
+    "fiscal_records": [],
+    "evidence_packets": []
+  },
+  "quality_boundaries": [
+    "Promoted facts must come from official primary sources with stable evidence locators.",
+    "Unpublished, unavailable, historical-only, draft, and unresolved facts must remain explicit.",
+    "No Jichi Insight policy-achievement score, causal attribution, or unverified cross-city ranking may be created.",
+    "This candidate is machine-prepared evidence only and is not Reviewed until a person checks the primary sources."
+  ],
+  "deferred_depth": [],
+  "human_review": {
+    "required": true,
+    "status": "pending",
+    "boundary": "A person must check the candidate against the cited primary sources before any promotion to reviewed_complete.",
+    "reviewed_at": null,
+    "reviewer_note": null
+  },
+  "publication": {
+    "eligible": false,
+    "boundary": "Candidate data is staging-only and must not be loaded by the public site or treated as reviewed data."
+  }
+}
