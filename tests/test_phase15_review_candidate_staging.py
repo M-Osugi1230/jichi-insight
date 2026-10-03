@@ -104,8 +104,9 @@ def test_prepared_candidate_retains_human_boundary_and_evidence_shape():
     assert progress_review["official_code"] == "032018"
     assert progress_review["name_ja"] == "盛岡市"
     assert progress_review["review_status"] == "review_candidate_staging"
-    assert progress_review["implementation_plan_framework"]["title"] == "盛岡市総合計画実施計画（令和7年度から16年度）"
-    assert progress_review["implementation_plan_framework"]["period"] == "2026年度～2028年度（毎年度ローリング）"
+    framework = progress_review["implementation_plan_framework"]
+    assert framework["title"] == "盛岡市総合計画実施計画（令和7年度から16年度）"
+    assert framework["period"] == "2026年度～2028年度（毎年度ローリング）"
 
     assert len(fiscal_records) == 3
     assert all(record["municipality_id"] == "jp-local-032018" for record in fiscal_records)
