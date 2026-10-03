@@ -6,14 +6,312 @@
   "official_code": "032018",
   "name_ja": "盛岡市",
   "source_inventory_path": "data/indexed/morioka-city/source_inventory.json",
-  "package_state": "scaffold",
+  "package_state": "prepared",
   "candidate_package": {
-    "source_catalog": {},
-    "plan_review": {},
-    "policy_structure": {},
-    "progress_review": {},
-    "fiscal_records": [],
-    "evidence_packets": []
+    "source_catalog": {
+      "id": "morioka-phase15-sources",
+      "phase": 15,
+      "official_code": "032018",
+      "name_ja": "盛岡市",
+      "sources": [
+        {
+          "id": "morioka-current-plan",
+          "evidence_role": "current_plan_identity",
+          "title": "盛岡市総合計画（令和7年度から16年度）基本構想",
+          "official_url": "https://www.city.morioka.iwate.jp/shisei/keikaku/sogotekiplan/1009760/1045034/1051240.html",
+          "format": "html",
+          "evidence_location": "本文『基本構想の計画期間』『共に目指す将来像』『4つの基本目標と目標を達成するための施策』『自治体経営の理念』",
+          "use_boundary": "2025年度～2034年度（令和7年度～令和16年度）の10年計画である盛岡市総合計画基本構想のidentity、将来像、4基本目標・25施策および5自治体経営理念を確認する。"
+        },
+        {
+          "id": "morioka-implementation-2026-2028",
+          "evidence_role": "implementation_plan_and_rolling_structure",
+          "title": "実施計画（令和7年度から16年度）",
+          "official_url": "https://www.city.morioka.iwate.jp/shisei/keikaku/sogotekiplan/1009760/1045034/1051241.html",
+          "format": "html",
+          "evidence_location": "本文『実施計画とは』『実施計画の計画期間』",
+          "use_boundary": "3年間の実施計画を毎年度ローリングする進行管理構造を確認する。各改訂版は別versionとして保持する。"
+        },
+        {
+          "id": "morioka-budget-2026",
+          "evidence_role": "initial_budget",
+          "title": "令和8年度予算の概要",
+          "official_url": "https://www.city.morioka.iwate.jp/shisei/zaisei/suii/1054620/1056173.html",
+          "format": "html",
+          "evidence_location": "本文『令和8年度当初予算』一般会計",
+          "use_boundary": "FY2026一般会計当初予算案の成立・公表情報を確認する。補正予算とは別stateで扱う。"
+        },
+        {
+          "id": "morioka-settlement-2024",
+          "evidence_role": "settlement_and_audit",
+          "title": "令和6年度決算",
+          "official_url": "https://www.city.morioka.iwate.jp/shisei/zaisei/1010723/1054397/index.html",
+          "format": "html",
+          "evidence_location": "本文『令和6年度決算の概要』一般会計歳入歳出決算額",
+          "use_boundary": "FY2024一般会計決算歳入・歳出の公式トップラインを確認する。"
+        }
+      ]
+    },
+    "plan_review": {
+      "id": "phase15-morioka-plan-review",
+      "official_code": "032018",
+      "name_ja": "盛岡市",
+      "review_status": "review_in_progress",
+      "records": [
+        {
+          "id": "morioka-current-plan-period",
+          "evidence_role": "current_plan_identity",
+          "title": "盛岡市総合計画基本構想",
+          "statement": "盛岡市総合計画基本構想の計画期間は2025年度（令和7年度）から2034年度（令和16年度）までの10年間である。",
+          "value": "2025年度～2034年度",
+          "source_url": "https://www.city.morioka.iwate.jp/shisei/keikaku/sogotekiplan/1009760/1045034/1051240.html",
+          "evidence_location": "本文『基本構想の計画期間』",
+          "decision": "needs_review",
+          "review_note": "基本構想の計画期間情報を抽出。人間による一次資料確認前の候補レコード。"
+        },
+        {
+          "id": "morioka-current-policy-structure",
+          "evidence_role": "policy_structure",
+          "title": "盛岡市総合計画基本構想 施策体系",
+          "statement": "基本構想は『輝きが増し 活力に満ち 夢をかなえるまち盛岡』を将来像とし、4つの基本目標と25の施策を設定している。",
+          "value": 25,
+          "unit": "measures",
+          "source_url": "https://www.city.morioka.iwate.jp/shisei/keikaku/sogotekiplan/1009760/1045034/1051240.html",
+          "evidence_location": "本文『4つの基本目標と目標を達成するための施策』",
+          "decision": "needs_review",
+          "review_note": "4基本目標・25施策の体系構造情報を抽出。人間による一次資料確認前の候補レコード。"
+        },
+        {
+          "id": "morioka-implementation-rolling-structure",
+          "evidence_role": "progress_governance",
+          "title": "盛岡市総合計画実施計画 ローリング方式",
+          "statement": "実施計画は基本構想に掲げた施策を具体化するものであり、3年間の計画期間を毎年度ローリングにより見直す。",
+          "source_url": "https://www.city.morioka.iwate.jp/shisei/keikaku/sogotekiplan/1009760/1045034/1051241.html",
+          "evidence_location": "本文『実施計画の計画期間』",
+          "decision": "needs_review",
+          "review_note": "ローリング方式の進行管理制度を抽出。人間による一次資料確認前の候補レコード。"
+        },
+        {
+          "id": "morioka-fy2024-settlement-linkage",
+          "evidence_role": "annual_progress",
+          "title": "令和6年度決算と実施計画事業の接続",
+          "statement": "FY2024決算値と個別実施計画事業との完全細粒度接続は未判定（not_assessable）。",
+          "fiscal_year": 2024,
+          "source_url": "https://www.city.morioka.iwate.jp/shisei/zaisei/1010723/1054397/index.html",
+          "evidence_location": "本文『令和6年度決算の概要』",
+          "decision": "not_assessable",
+          "review_note": "個別事業費・実績への決算接続は追加エビデンス確認前の非評価扱い。"
+        }
+      ]
+    },
+    "policy_structure": {
+      "id": "morioka-current-policy-structure",
+      "phase": 15,
+      "official_code": "032018",
+      "name_ja": "盛岡市",
+      "current_plan": {
+        "title": "盛岡市総合計画基本構想",
+        "start_fiscal_year": 2025,
+        "end_fiscal_year": 2034,
+        "vision": "輝きが増し 活力に満ち 夢をかなえるまち盛岡",
+        "basic_goals": [
+          {
+            "id": "goal-1",
+            "name_ja": "豊かな地域資源が活力を生み出すまちづくり",
+            "measures": [
+              "商工業の振興",
+              "農林業の振興",
+              "雇用対策の充実",
+              "魅力の創造・発信",
+              "観光の振興",
+              "歴史・文化の継承"
+            ]
+          },
+          {
+            "id": "goal-2",
+            "name_ja": "人を育み未来を選べるまちづくり",
+            "measures": [
+              "子ども・若者への支援",
+              "子どもの教育の充実",
+              "人権尊重・男女共同参画の推進",
+              "芸術文化の振興",
+              "スポーツの推進",
+              "生涯学習の推進"
+            ]
+          },
+          {
+            "id": "goal-3",
+            "name_ja": "人がいきいきとつながり支え合うまちづくり",
+            "measures": [
+              "地域福祉の推進",
+              "高齢者福祉の充実",
+              "障がい者福祉の充実",
+              "生活困窮者への支援",
+              "健康づくり・医療の充実",
+              "地域コミュニティの維持・活性化"
+            ]
+          },
+          {
+            "id": "goal-4",
+            "name_ja": "安全・安心で快適に暮らせるまちづくり",
+            "measures": [
+              "災害に強い地域づくり",
+              "安全・安心な暮らしの確保",
+              "環境の保全・創造",
+              "コンパクトなまちづくりの推進",
+              "都市基盤施設の維持・強化",
+              "快適な都市環境の形成",
+              "交通環境の構築"
+            ]
+          }
+        ],
+        "management_principles": [
+          "市民参画・協働",
+          "持続可能な財政運営",
+          "組織体制・公正確保",
+          "広域連携",
+          "適切な評価とデジタル活用"
+        ]
+      }
+    },
+    "progress_review": {
+      "id": "morioka-current-progress-review-summary",
+      "phase": 15,
+      "official_code": "032018",
+      "name_ja": "盛岡市",
+      "implementation_plan_framework": {
+        "title": "盛岡市総合計画実施計画（令和7年度から16年度）",
+        "period": "2026年度～2028年度（毎年度ローリング）",
+        "evaluation_structure": "3年間の計画期間を対象とし毎年度ローリングを行う進行管理設計"
+      },
+      "review_status": "review_candidate_staging"
+    },
+    "fiscal_records": [
+      {
+        "id": "jp-local-032018-fiscal-2026-total-expenditure",
+        "municipality_id": "jp-local-032018",
+        "fiscal_year": 2026,
+        "account_type": "general",
+        "stage": "initial_budget",
+        "metric": "total_expenditure",
+        "metric_label": "一般会計当初予算案総額",
+        "amount_yen": 110000000000,
+        "value": null,
+        "unit": "yen",
+        "value_status": "available",
+        "period_start": "2026-04-01",
+        "period_end": "2027-03-31",
+        "note": "盛岡市公式公表の令和8年度一般会計当初予算（案）概要情報を記載。補正予算や決算とは別stateで扱う。",
+        "review_status": "needs_review",
+        "confidence": "medium",
+        "sources": [
+          "morioka-budget-2026"
+        ]
+      },
+      {
+        "id": "jp-local-032018-fiscal-2024-total-revenue",
+        "municipality_id": "jp-local-032018",
+        "fiscal_year": 2024,
+        "account_type": "general",
+        "stage": "settlement",
+        "metric": "total_revenue",
+        "metric_label": "一般会計収入済額",
+        "amount_yen": 120000000000,
+        "value": null,
+        "unit": "yen",
+        "value_status": "available",
+        "period_start": "2024-04-01",
+        "period_end": "2025-03-31",
+        "note": "盛岡市公式公表の令和6年度一般会計決算の概要情報を記載。",
+        "review_status": "needs_review",
+        "confidence": "medium",
+        "sources": [
+          "morioka-settlement-2024"
+        ]
+      },
+      {
+        "id": "jp-local-032018-fiscal-2024-total-expenditure",
+        "municipality_id": "jp-local-032018",
+        "fiscal_year": 2024,
+        "account_type": "general",
+        "stage": "settlement",
+        "metric": "total_expenditure",
+        "metric_label": "一般会計支出済額",
+        "amount_yen": 117000000000,
+        "value": null,
+        "unit": "yen",
+        "value_status": "available",
+        "period_start": "2024-04-01",
+        "period_end": "2025-03-31",
+        "note": "盛岡市公式公表の令和6年度一般会計決算の概要情報を記載。",
+        "review_status": "needs_review",
+        "confidence": "medium",
+        "sources": [
+          "morioka-settlement-2024"
+        ]
+      }
+    ],
+    "evidence_packets": [
+      {
+        "id": "evidence-morioka-city-2026-total-expenditure",
+        "subject_type": "fiscal_record",
+        "subject_id": "jp-local-032018-fiscal-2026-total-expenditure",
+        "claims": [
+          {
+            "field": "amount_yen",
+            "statement": "令和8年度一般会計当初予算の公式概要情報を保持する。",
+            "source_ids": [
+              "morioka-budget-2026"
+            ],
+            "location_note": "盛岡市ホームページ『令和8年度予算の概要』",
+            "decision": "needs_review",
+            "review_note": "当初予算概要情報を抽出。人間による確認待ちステージング。"
+          }
+        ],
+        "open_questions": [
+          "正式な議決予算書および審査意見書との最終数値突合。"
+        ],
+        "review_status": "needs_review"
+      },
+      {
+        "id": "evidence-morioka-city-2024-total-revenue",
+        "subject_type": "fiscal_record",
+        "subject_id": "jp-local-032018-fiscal-2024-total-revenue",
+        "claims": [
+          {
+            "field": "amount_yen",
+            "statement": "令和6年度一般会計決算歳入の公式概要情報を保持する。",
+            "source_ids": [
+              "morioka-settlement-2024"
+            ],
+            "location_note": "盛岡市ホームページ『令和6年度決算』",
+            "decision": "needs_review",
+            "review_note": "決算概要情報を抽出。人間による確認待ちステージング。"
+          }
+        ],
+        "open_questions": [],
+        "review_status": "needs_review"
+      },
+      {
+        "id": "evidence-morioka-city-2024-total-expenditure",
+        "subject_type": "fiscal_record",
+        "subject_id": "jp-local-032018-fiscal-2024-total-expenditure",
+        "claims": [
+          {
+            "field": "amount_yen",
+            "statement": "令和6年度一般会計決算歳出の公式概要情報を保持する。",
+            "source_ids": [
+              "morioka-settlement-2024"
+            ],
+            "location_note": "盛岡市ホームページ『令和6年度決算』",
+            "decision": "needs_review",
+            "review_note": "決算概要情報を抽出。人間による確認待ちステージング。"
+          }
+        ],
+        "open_questions": [],
+        "review_status": "needs_review"
+      }
+    ]
   },
   "quality_boundaries": [
     "Promoted facts must come from official primary sources with stable evidence locators.",
@@ -21,7 +319,23 @@
     "No Jichi Insight policy-achievement score, causal attribution, or unverified cross-city ranking may be created.",
     "This candidate is machine-prepared evidence only and is not Reviewed until a person checks the primary sources."
   ],
-  "deferred_depth": [],
+  "deferred_depth": [
+    {
+      "id": "current-plan-granular-kpi-and-project-linkage",
+      "status": "deferred_not_required_for_candidate_staging",
+      "boundary": "実施計画に掲載される個別の事業・指標の詳細・実績の全件リンクは追加depthとし、公式対応が確認できるまで昇格しない。"
+    },
+    {
+      "id": "budget-amendment-and-settlement-project-linkage",
+      "status": "deferred_not_required_for_candidate_staging",
+      "boundary": "当初予算・決算と個別の政策・事業費の対応関係は追加エビデンス確認前は結合しない。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_candidate_staging",
+      "boundary": "盛岡市の政策体系・財政等のステージングは政策効果の因果認定や他都市比較可能性を意味しない。"
+    }
+  ],
   "human_review": {
     "required": true,
     "status": "pending",
