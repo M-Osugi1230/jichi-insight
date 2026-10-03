@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jichi-insight.local/schemas/phase15_review_candidate.schema.json",
+  "title": "Phase 15 non-public municipality review candidate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "candidate_id",
+    "phase",
+    "status",
+    "official_code",
+    "name_ja",
+    "source_inventory_path",
+    "package_state",
+    "candidate_package",
+    "quality_boundaries",
+    "deferred_depth",
+    "human_review",
+    "publication"
+  ],
+  "properties": {
+    "schema_version": {"const": 1},
+    "candidate_id": {"type": "string", "pattern": "^[a-z0-9-]+-phase15-review-candidate$"},
+    "phase": {"const": 15},
+    "status": {"const": "review_candidate"},
+    "official_code": {"type": "string", "pattern": "^[0-9]{6}$"},
+    "name_ja": {"type": "string", "minLength": 2},
+    "source_inventory_path": {"type": "string", "pattern": "^data/indexed/"},
+    "package_state": {"type": "string", "enum": ["scaffold", "prepared"]},
+    "candidate_package": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_catalog",
+        "plan_review",
+        "policy_structure",
+        "progress_review",
+        "fiscal_records",
+        "evidence_packets"
+      ],
+      "properties": {
+        "source_catalog": {"type": "object"},
+        "plan_review": {"type": "object"},
+        "policy_structure": {"type": "object"},
+        "progress_review": {"type": "object"},
+        "fiscal_records": {"type": "array"},
+        "evidence_packets": {"type": "array"}
+      }
+    },
+    "quality_boundaries": {
+      "type": "array",
+      "minItems": 4,
+      "items": {"type": "string", "minLength": 12},
+      "uniqueItems": true
+    },
+    "deferred_depth": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "status", "boundary"],
+        "properties": {
+          "id": {"type": "string", "minLength": 3},
+          "status": {"type": "string", "minLength": 3},
+          "boundary": {"type": "string", "minLength": 20}
+        },
+        "additionalProperties": true
+      }
+    },
+    "human_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required", "status", "boundary"],
+      "properties": {
+        "required": {"const": true},
+        "status": {"type": "string", "enum": ["pending", "approved", "rejected"]},
+        "boundary": {"type": "string", "minLength": 40},
+        "reviewed_at": {"type": ["string", "null"], "format": "date"},
+        "reviewer_note": {"type": ["string", "null"]}
+      }
+    },
+    "publication": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["eligible", "boundary"],
+      "properties": {
+        "eligible": {"const": false},
+        "boundary": {"type": "string", "minLength": 40}
+      }
+    }
+  }
+}

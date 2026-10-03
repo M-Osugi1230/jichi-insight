@@ -114,3 +114,8 @@ Pilot success requires:
 - durable evidence that ADE can resume with the next municipality after completion or HUMAN_WAIT.
 
 Only after this pilot proves the loop should ADE broaden to multiple municipalities per campaign.
+
+
+## Candidate staging contract
+
+ADE-generated Phase 15 evidence must enter a non-public staging boundary before human review. The initial pilot uses `data/candidates/morioka-city/review_candidate.json`, validated by `schemas/phase15_review_candidate.schema.json`. Candidate state must remain `review_candidate`, `human_review.status=pending`, and `publication.eligible=false`. The Phase 15 queue remains `review_in_progress` until a person checks the cited primary sources and a separate promotion change creates the normal Reviewed package.
