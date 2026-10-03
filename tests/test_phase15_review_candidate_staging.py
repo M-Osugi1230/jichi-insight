@@ -61,12 +61,15 @@ def test_candidate_staging_is_not_referenced_by_public_web_source():
 
 def test_prepared_candidate_retains_human_boundary_and_evidence_shape():
     candidate = load(CANDIDATE)
-    if candidate["package_state"] != "prepared":
-        return
+    assert candidate["package_state"] == "prepared"
 
     package = candidate["candidate_package"]
     source_catalog = package["source_catalog"]
     plan_review = package["plan_review"]
+    policy_structure = package["policy_structure"]
+    progress_review = package["progress_review"]
+    fiscal_records = package["fiscal_records"]
+    evidence_packets = package["evidence_packets"]
 
     assert source_catalog["official_code"] == "032018"
     assert source_catalog["name_ja"] == "盛岡市"
@@ -81,11 +84,51 @@ def test_prepared_candidate_retains_human_boundary_and_evidence_shape():
     assert plan_review["official_code"] == "032018"
     assert plan_review["name_ja"] == "盛岡市"
     assert plan_review["review_status"] == "review_in_progress"
-    assert len(plan_review["records"]) >= 3
+    assert len(plan_review["records"]) >= 4
     assert all(
         record["decision"] in {"needs_review", "not_assessable"}
         for record in plan_review["records"]
     )
 
+    assert policy_structure["official_code"] == "032018"
+    assert policy_structure["name_ja"] == "盛岡市"
+    current_plan = policy_structure["current_plan"]
+    assert current_plan["title"] == "盛岡市総合計画基本構想"
+    assert current_plan["start_fiscal_year"] == 2025
+    assert current_plan["end_fiscal_year"] == 2034
+    assert current_plan["vision"] == "輝きが増し 活力に満ち 夢をかなえるまち盛岡"
+    assert len(current_plan["basic_goals"]) == 4
+    assert sum(len(goal["measures"]) for goal in current_plan["basic_goals"]) == 25
+    assert len(current_plan["management_principles"]) == 5
+
+    assert progress_review["official_code"] == "032018"
+    assert progress_review["name_ja"] == "盛岡市"
+    assert progress_review["review_status"] == "review_candidate_staging"
+    assert progress_review["implementation_plan_framework"]["title"] == "盛岡市総合計画実施計画（令和7年度から16年度）"
+    assert progress_review["implementation_plan_framework"]["period"] == "2026年度～2028年度（毎年度ローリング）"
+
+    assert len(fiscal_records) == 3
+    assert all(record["municipality_id"] == "jp-local-032018" for record in fiscal_records)
+    assert all(record["value_status"] == "available" for record in fiscal_records)
+    assert all(record["review_status"] == "needs_review" for record in fiscal_records)
+    assert {record["fiscal_year"] for record in fiscal_records} == {2024, 2026}
+
+    assert len(evidence_packets) == 3
+    fiscal_ids = {record["id"] for record in fiscal_records}
+    assert {packet["subject_id"] for packet in evidence_packets} == fiscal_ids
+    assert all(
+        claim["decision"] == "needs_review"
+        for packet in evidence_packets
+        for claim in packet["claims"]
+    )
+
+    assert len(candidate["quality_boundaries"]) >= 4
+    assert len(candidate["deferred_depth"]) >= 3
+    assert all(
+        depth["status"] == "deferred_not_required_for_candidate_staging"
+        for depth in candidate["deferred_depth"]
+    )
+
+    assert candidate["human_review"]["required"] is True
     assert candidate["human_review"]["status"] == "pending"
     assert candidate["publication"]["eligible"] is False
