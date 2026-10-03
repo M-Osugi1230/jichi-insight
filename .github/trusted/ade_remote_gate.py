@@ -12,6 +12,7 @@ from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 ADE_REPOSITORY = "M-Osugi1230/autonomous-development-engine"
+ADE_CONTROL_REF = "ade-jichi-insight"
 ADE_API_BASE = f"https://api.github.com/repos/{ADE_REPOSITORY}"
 JULES_PROVENANCE_MARKER = "PR created automatically by Jules for task"
 JULES_TASK_URL = re.compile(r"https://jules\.google\.com/task/\d+")
@@ -88,7 +89,7 @@ def _github_request(
 
 
 def _ade_head_sha() -> str:
-    payload = _request_json(f"{ADE_API_BASE}/commits/main")
+    payload = _request_json(f"{ADE_API_BASE}/commits/{ADE_CONTROL_REF}")
     if not isinstance(payload, dict):
         raise GateError("ADE main commit response must be an object")
     sha = payload.get("sha")
