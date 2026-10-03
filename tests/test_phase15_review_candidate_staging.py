@@ -71,7 +71,10 @@ def test_prepared_candidate_retains_human_boundary_and_evidence_shape():
     assert source_catalog["official_code"] == "032018"
     assert source_catalog["name_ja"] == "盛岡市"
     assert len(source_catalog["sources"]) >= 4
-    assert all(source["official_url"].startswith("https://") for source in source_catalog["sources"])
+    assert all(
+        source["official_url"].startswith("https://")
+        for source in source_catalog["sources"]
+    )
     assert all(source["evidence_location"] for source in source_catalog["sources"])
     assert all(source["use_boundary"] for source in source_catalog["sources"])
 
