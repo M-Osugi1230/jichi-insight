@@ -30,6 +30,7 @@ def test_morioka_candidate_staging_contract_validates():
     assert candidate["official_code"] == "032018"
     assert candidate["name_ja"] == "盛岡市"
     assert candidate["status"] == "review_candidate"
+    assert candidate["package_state"] == "prepared"
     assert candidate["human_review"]["required"] is True
     assert candidate["human_review"]["status"] == "pending"
     assert candidate["publication"]["eligible"] is False
@@ -61,13 +62,17 @@ def test_candidate_staging_is_not_referenced_by_public_web_source():
 
 def test_prepared_candidate_retains_human_boundary_and_evidence_shape():
     candidate = load(CANDIDATE)
-    if candidate["package_state"] != "prepared":
-        return
+    assert candidate["package_state"] == "prepared"
 
     package = candidate["candidate_package"]
     source_catalog = package["source_catalog"]
     plan_review = package["plan_review"]
+    policy_structure = package["policy_structure"]
+    progress_review = package["progress_review"]
+    fiscal_records = package["fiscal_records"]
+    evidence_packets = package["evidence_packets"]
 
+    # Source Catalog assertions
     assert source_catalog["official_code"] == "032018"
     assert source_catalog["name_ja"] == "盛岡市"
     assert len(source_catalog["sources"]) >= 4
@@ -78,6 +83,7 @@ def test_prepared_candidate_retains_human_boundary_and_evidence_shape():
     assert all(source["evidence_location"] for source in source_catalog["sources"])
     assert all(source["use_boundary"] for source in source_catalog["sources"])
 
+    # Plan Review assertions
     assert plan_review["official_code"] == "032018"
     assert plan_review["name_ja"] == "盛岡市"
     assert plan_review["review_status"] == "review_in_progress"
@@ -87,5 +93,41 @@ def test_prepared_candidate_retains_human_boundary_and_evidence_shape():
         for record in plan_review["records"]
     )
 
+    # Policy Structure assertions
+    assert policy_structure["official_code"] == "032018"
+    assert policy_structure["name_ja"] == "盛岡市"
+    current_plan = policy_structure["current_plan"]
+    assert current_plan["start_fiscal_year"] == 2025
+    assert current_plan["end_fiscal_year"] == 2034
+    assert len(current_plan["basic_goals"]) == 4
+    total_measures = sum(
+        len(goal["measures"]) for goal in current_plan["basic_goals"]
+    )
+    assert total_measures == 25
+    assert len(current_plan["management_principles"]) == 5
+
+    # Progress Review assertions
+    assert progress_review["official_code"] == "032018"
+    assert progress_review["name_ja"] == "盛岡市"
+    assert progress_review["review_status"] == "review_candidate_staging"
+
+    # Fiscal Records & Evidence Packets assertions
+    assert len(fiscal_records) >= 3
+    assert all(
+        rec["municipality_id"] == "jp-local-032018" and rec["review_status"] == "needs_review"
+        for rec in fiscal_records
+    )
+
+    assert len(evidence_packets) >= 3
+    assert all(
+        pkt["review_status"] == "needs_review"
+        for pkt in evidence_packets
+    )
+
+    # Quality Boundaries & Deferred Depth assertions
+    assert len(candidate["quality_boundaries"]) >= 1
+    assert len(candidate["deferred_depth"]) >= 1
+
+    # Human Review & Publication boundaries
     assert candidate["human_review"]["status"] == "pending"
     assert candidate["publication"]["eligible"] is False
