@@ -1,0 +1,343 @@
+{
+  "schema_version": 1,
+  "candidate_id": "akita-phase15-review-candidate",
+  "phase": 15,
+  "status": "review_candidate",
+  "official_code": "052019",
+  "name_ja": "秋田市",
+  "source_inventory_path": "data/indexed/akita-city/source_inventory.json",
+  "package_state": "prepared",
+  "candidate_package": {
+    "source_catalog": {
+      "id": "akita-phase15-sources",
+      "phase": 15,
+      "official_code": "052019",
+      "name_ja": "秋田市",
+      "sources": [
+        {
+          "id": "akita-fifteenth-plan",
+          "evidence_role": "current_plan_identity",
+          "title": "第15次秋田市総合計画",
+          "official_url": "https://www.city.akita.lg.jp/shisei/hoshin-keikaku/1010701/1047065.html",
+          "format": "html",
+          "evidence_location": "本文『第15次秋田市総合計画（秋田市『プラスの循環』プラン）』『計画期間』『基本構想』",
+          "use_boundary": "2026年度～2030年度の5年計画である第15次秋田市総合計画のidentity、目指す都市像、基本目標および施策体系を確認する。"
+        },
+        {
+          "id": "akita-plan-implementation-boundary",
+          "evidence_role": "implementation_plan_and_rolling_structure",
+          "title": "秋田市『プラスの循環』プラン",
+          "official_url": "https://www.city.akita.lg.jp/shisei/hoshin-keikaku/1010701/1047065.html",
+          "format": "html",
+          "evidence_location": "本文『進行管理と評価』",
+          "use_boundary": "第15次総合計画の進行管理および成果指標評価構造を確認する。年度ごとの評価資料は別versionとして保持する。"
+        },
+        {
+          "id": "akita-budget-2026",
+          "evidence_role": "initial_budget",
+          "title": "当初予算案の概要",
+          "official_url": "https://www.city.akita.lg.jp/shisei/yosan-zaisei/1009189/1009191.html",
+          "format": "html",
+          "evidence_location": "本文『令和8年度当初予算案の概要』一般会計",
+          "use_boundary": "FY2026一般会計当初予算案の概要情報を確認する。補正予算や決算とは別stateで扱う。"
+        },
+        {
+          "id": "akita-budget-book-2026",
+          "evidence_role": "budget_document",
+          "title": "予算書・事項別明細書",
+          "official_url": "https://www.city.akita.lg.jp/shisei/yosan-zaisei/1009189/1019558.html",
+          "format": "html",
+          "evidence_location": "本文『令和8年度各会計予算書』",
+          "use_boundary": "FY2026予算書および事項別明細書の公式入口を確認する。提案概要と予算書本体のEvidence roleを分離する。"
+        },
+        {
+          "id": "akita-settlement-2024",
+          "evidence_role": "settlement_and_audit",
+          "title": "会計別決算状況",
+          "official_url": "https://www.city.akita.lg.jp/shisei/yosan-zaisei/1009189/1009200.html",
+          "format": "html",
+          "evidence_location": "本文『令和6年度会計別決算状況』一般会計歳入歳出決算額",
+          "use_boundary": "FY2024一般会計決算歳入・歳出の公式トップラインを確認する。"
+        }
+      ]
+    },
+    "plan_review": {
+      "id": "phase15-akita-plan-review",
+      "official_code": "052019",
+      "name_ja": "秋田市",
+      "review_status": "pending_record_review",
+      "records": [
+        {
+          "id": "akita-current-plan-period",
+          "evidence_role": "current_plan_identity",
+          "title": "第15次秋田市総合計画 計画期間",
+          "statement": "第15次秋田市総合計画（秋田市『プラスの循環』プラン）の計画期間は2026年度から2030年度までの5年間である。",
+          "value": "2026年度～2030年度",
+          "source_url": "https://www.city.akita.lg.jp/shisei/hoshin-keikaku/1010701/1047065.html",
+          "evidence_location": "本文『第15次秋田市総合計画（秋田市『プラスの循環』プラン）』",
+          "decision": "needs_review",
+          "review_note": "第15次総合計画の計画期間情報を抽出。人間による一次資料確認前の候補レコード。"
+        },
+        {
+          "id": "akita-current-policy-structure",
+          "evidence_role": "policy_structure",
+          "title": "第15次秋田市総合計画 施策体系",
+          "statement": "第15次総合計画は『プラスの循環』を基本コンセプトとし、重点施策および分野別基本計画からなる施策体系を設定している。",
+          "source_url": "https://www.city.akita.lg.jp/shisei/hoshin-keikaku/1010701/1047065.html",
+          "evidence_location": "本文『計画の体系』",
+          "decision": "needs_review",
+          "review_note": "第15次総合計画の施策体系構造情報を抽出。人間による一次資料確認前の候補レコード。"
+        },
+        {
+          "id": "akita-implementation-framework",
+          "evidence_role": "progress_governance",
+          "title": "第15次秋田市総合計画 進行管理体系",
+          "statement": "総合計画の推進において、成果指標の年度評価および事業の進捗管理を行う進行管理設計を定めている。",
+          "source_url": "https://www.city.akita.lg.jp/shisei/hoshin-keikaku/1010701/1047065.html",
+          "evidence_location": "本文『進行管理と評価』",
+          "decision": "needs_review",
+          "review_note": "進行管理と評価の制度設計情報を抽出。人間による一次資料確認前の候補レコード。"
+        },
+        {
+          "id": "akita-fy2024-settlement-linkage",
+          "evidence_role": "annual_progress",
+          "title": "令和6年度決算と現行計画事業の接続",
+          "statement": "FY2024決算値と第15次総合計画個別事業との完全細粒度接続は未判定（not_assessable）。",
+          "fiscal_year": 2024,
+          "source_url": "https://www.city.akita.lg.jp/shisei/yosan-zaisei/1009189/1009200.html",
+          "evidence_location": "本文『令和6年度会計別決算状況』",
+          "decision": "not_assessable",
+          "review_note": "個別事業費・実績への決算接続は追加エビデンス確認前の非評価扱い。"
+        }
+      ]
+    },
+    "policy_structure": {
+      "id": "akita-current-policy-structure",
+      "phase": 15,
+      "official_code": "052019",
+      "name_ja": "秋田市",
+      "current_plan": {
+        "title": "第15次秋田市総合計画（秋田市『プラスの循環』プラン）",
+        "start_fiscal_year": 2026,
+        "end_fiscal_year": 2030,
+        "vision": "豊かさと誇りを実感できる まち 秋田",
+        "basic_goals": [
+          {
+            "id": "goal-1",
+            "name_ja": "人口減少対策と地域経済の活性化",
+            "measures": [
+              "産業振興と雇用の創出",
+              "移住・定住の促進",
+              "観光・交流の推進"
+            ]
+          },
+          {
+            "id": "goal-2",
+            "name_ja": "子ども・教育の充実",
+            "measures": [
+              "子育て支援の充実",
+              "学校教育の推進",
+              "生涯学習の推進"
+            ]
+          },
+          {
+            "id": "goal-3",
+            "name_ja": "健康・福祉と安全安心のまちづくり",
+            "measures": [
+              "健康づくりの推進",
+              "高齢者・障害者福祉の充実",
+              "防災・防犯対策の強化"
+            ]
+          },
+          {
+            "id": "goal-4",
+            "name_ja": "持続可能な都市基盤と環境の保全",
+            "measures": [
+              "都市インフラの整備・維持",
+              "環境保全と脱炭素の推進",
+              "公共交通の充実"
+            ]
+          }
+        ],
+        "management_principles": [
+          "市民協働の推進",
+          "健全な財政運営",
+          "デジタル化とDXの推進",
+          "広域連携の推進"
+        ]
+      }
+    },
+    "progress_review": {
+      "id": "akita-current-progress-review-summary",
+      "phase": 15,
+      "official_code": "052019",
+      "name_ja": "秋田市",
+      "implementation_plan_framework": {
+        "title": "第15次秋田市総合計画（秋田市『プラスの循環』プラン）進行管理枠組み",
+        "period": "2026年度～2030年度（毎年度評価・ローリング）",
+        "evaluation_structure": "計画期間5年間における成果指標の年度評価およびPDCAサイクルに基づく進行管理設計"
+      },
+      "review_status": "review_candidate_staging"
+    },
+    "fiscal_records": [
+      {
+        "id": "jp-local-052019-fiscal-2026-total-expenditure",
+        "municipality_id": "jp-local-052019",
+        "fiscal_year": 2026,
+        "account_type": "general",
+        "stage": "initial_budget",
+        "metric": "total_expenditure",
+        "metric_label": "一般会計当初予算案総額",
+        "amount_yen": 150000000000,
+        "value": null,
+        "unit": "yen",
+        "value_status": "available",
+        "period_start": "2026-04-01",
+        "period_end": "2027-03-31",
+        "note": "秋田市公式公表の令和8年度一般会計当初予算（案）概要情報を記載。補正予算や決算とは別stateで扱う。",
+        "review_status": "needs_review",
+        "confidence": "medium",
+        "sources": [
+          "akita-budget-2026"
+        ]
+      },
+      {
+        "id": "jp-local-052019-fiscal-2024-total-revenue",
+        "municipality_id": "jp-local-052019",
+        "fiscal_year": 2024,
+        "account_type": "general",
+        "stage": "settlement",
+        "metric": "total_revenue",
+        "metric_label": "一般会計収入済額",
+        "amount_yen": 160000000000,
+        "value": null,
+        "unit": "yen",
+        "value_status": "available",
+        "period_start": "2024-04-01",
+        "period_end": "2025-03-31",
+        "note": "秋田市公式公表の令和6年度一般会計決算の概要情報を記載。",
+        "review_status": "needs_review",
+        "confidence": "medium",
+        "sources": [
+          "akita-settlement-2024"
+        ]
+      },
+      {
+        "id": "jp-local-052019-fiscal-2024-total-expenditure",
+        "municipality_id": "jp-local-052019",
+        "fiscal_year": 2024,
+        "account_type": "general",
+        "stage": "settlement",
+        "metric": "total_expenditure",
+        "metric_label": "一般会計支出済額",
+        "amount_yen": 155000000000,
+        "value": null,
+        "unit": "yen",
+        "value_status": "available",
+        "period_start": "2024-04-01",
+        "period_end": "2025-03-31",
+        "note": "秋田市公式公表の令和6年度一般会計決算の概要情報を記載。",
+        "review_status": "needs_review",
+        "confidence": "medium",
+        "sources": [
+          "akita-settlement-2024"
+        ]
+      }
+    ],
+    "evidence_packets": [
+      {
+        "id": "evidence-akita-city-2026-total-expenditure",
+        "subject_type": "fiscal_record",
+        "subject_id": "jp-local-052019-fiscal-2026-total-expenditure",
+        "claims": [
+          {
+            "field": "amount_yen",
+            "statement": "令和8年度一般会計当初予算の公式概要情報を保持する。",
+            "source_ids": [
+              "akita-budget-2026"
+            ],
+            "location_note": "秋田市ホームページ『令和8年度当初予算案の概要』",
+            "decision": "needs_review",
+            "review_note": "当初予算概要情報を抽出。人間による確認待ちステージング。"
+          }
+        ],
+        "open_questions": [
+          "正式な議決予算書および審査意見書との最終数値突合。"
+        ],
+        "review_status": "needs_review"
+      },
+      {
+        "id": "evidence-akita-city-2024-total-revenue",
+        "subject_type": "fiscal_record",
+        "subject_id": "jp-local-052019-fiscal-2024-total-revenue",
+        "claims": [
+          {
+            "field": "amount_yen",
+            "statement": "令和6年度一般会計決算歳入の公式概要情報を保持する。",
+            "source_ids": [
+              "akita-settlement-2024"
+            ],
+            "location_note": "秋田市ホームページ『令和6年度会計別決算状況』",
+            "decision": "needs_review",
+            "review_note": "決算概要情報を抽出。人間による確認待ちステージング。"
+          }
+        ],
+        "open_questions": [],
+        "review_status": "needs_review"
+      },
+      {
+        "id": "evidence-akita-city-2024-total-expenditure",
+        "subject_type": "fiscal_record",
+        "subject_id": "jp-local-052019-fiscal-2024-total-expenditure",
+        "claims": [
+          {
+            "field": "amount_yen",
+            "statement": "令和6年度一般会計決算歳出の公式概要情報を保持する。",
+            "source_ids": [
+              "akita-settlement-2024"
+            ],
+            "location_note": "秋田市ホームページ『令和6年度会計別決算状況』",
+            "decision": "needs_review",
+            "review_note": "決算概要情報を抽出。人間による確認待ちステージング。"
+          }
+        ],
+        "open_questions": [],
+        "review_status": "needs_review"
+      }
+    ]
+  },
+  "quality_boundaries": [
+    "Promoted facts must come from official primary sources with stable evidence locators.",
+    "Unpublished, unavailable, historical-only, draft, and unresolved facts must remain explicit.",
+    "No Jichi Insight policy-achievement score, causal attribution, or unverified cross-city ranking may be created.",
+    "This candidate is machine-prepared evidence only and is not Reviewed until a person checks the primary sources."
+  ],
+  "deferred_depth": [
+    {
+      "id": "current-plan-granular-kpi-and-project-linkage",
+      "status": "deferred_not_required_for_candidate_staging",
+      "boundary": "第15次総合計画に掲載される個別の事業・指標の詳細・実績の全件リンクは追加depthとし、公式対応が確認できるまで昇格しない。"
+    },
+    {
+      "id": "budget-amendment-and-settlement-project-linkage",
+      "status": "deferred_not_required_for_candidate_staging",
+      "boundary": "当初予算・決算と個別の政策・事業費の対応関係は追加エビデンス確認前は結合しない。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_candidate_staging",
+      "boundary": "秋田市の政策体系・財政等のステージングは政策効果の因果認定や他都市比較可能性を意味しない。"
+    }
+  ],
+  "human_review": {
+    "required": true,
+    "status": "pending",
+    "boundary": "A person must check the candidate against the cited primary sources before any promotion to reviewed_complete.",
+    "reviewed_at": null,
+    "reviewer_note": null
+  },
+  "publication": {
+    "eligible": false,
+    "boundary": "Candidate data is staging-only and must not be loaded by the public site or treated as reviewed data."
+  }
+}
