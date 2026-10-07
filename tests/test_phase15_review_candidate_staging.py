@@ -117,6 +117,7 @@ def test_prepared_candidate_retains_human_boundary_and_evidence_shape():
     assert len(evidence_packets) == 3
     fiscal_ids = {record["id"] for record in fiscal_records}
     assert {packet["subject_id"] for packet in evidence_packets} == fiscal_ids
+    assert all(packet["claims"] for packet in evidence_packets)
     assert all(
         claim["decision"] == "needs_review"
         for packet in evidence_packets
