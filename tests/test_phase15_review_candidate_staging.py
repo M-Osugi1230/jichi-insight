@@ -87,7 +87,7 @@ def test_prepared_candidate_retains_human_boundary_and_evidence_shape():
     assert plan_review["official_code"] == "032018"
     assert plan_review["name_ja"] == "盛岡市"
     assert plan_review["review_status"] == "review_in_progress"
-    assert len(plan_review["records"]) >= 3
+    assert len(plan_review["records"]) >= 4
     assert all(
         record["decision"] in {"needs_review", "not_assessable"}
         for record in plan_review["records"]
@@ -97,8 +97,10 @@ def test_prepared_candidate_retains_human_boundary_and_evidence_shape():
     assert policy_structure["official_code"] == "032018"
     assert policy_structure["name_ja"] == "盛岡市"
     current_plan = policy_structure["current_plan"]
+    assert current_plan["title"] == "盛岡市総合計画基本構想"
     assert current_plan["start_fiscal_year"] == 2025
     assert current_plan["end_fiscal_year"] == 2034
+    assert current_plan["vision"] == "輝きが増し 活力に満ち 夢をかなえるまち盛岡"
     assert len(current_plan["basic_goals"]) == 4
     total_measures = sum(
         len(goal["measures"]) for goal in current_plan["basic_goals"]
@@ -110,24 +112,36 @@ def test_prepared_candidate_retains_human_boundary_and_evidence_shape():
     assert progress_review["official_code"] == "032018"
     assert progress_review["name_ja"] == "盛岡市"
     assert progress_review["review_status"] == "review_candidate_staging"
+    framework = progress_review["implementation_plan_framework"]
+    assert framework["title"] == "盛岡市総合計画実施計画（令和7年度から16年度）"
+    assert framework["period"] == "2026年度～2028年度（毎年度ローリング）"
 
     # Fiscal Records & Evidence Packets assertions
-    assert len(fiscal_records) >= 3
-    assert all(
-        rec["municipality_id"] == "jp-local-032018" and rec["review_status"] == "needs_review"
-        for rec in fiscal_records
-    )
+    assert len(fiscal_records) == 3
+    assert all(record["municipality_id"] == "jp-local-032018" for record in fiscal_records)
+    assert all(record["value_status"] == "available" for record in fiscal_records)
+    assert all(record["review_status"] == "needs_review" for record in fiscal_records)
+    assert {record["fiscal_year"] for record in fiscal_records} == {2024, 2026}
 
-    assert len(evidence_packets) >= 3
+    assert len(evidence_packets) == 3
+    fiscal_ids = {record["id"] for record in fiscal_records}
+    assert {packet["subject_id"] for packet in evidence_packets} == fiscal_ids
+    assert all(packet["claims"] for packet in evidence_packets)
     assert all(
-        pkt["review_status"] == "needs_review"
-        for pkt in evidence_packets
+        claim["decision"] == "needs_review"
+        for packet in evidence_packets
+        for claim in packet["claims"]
     )
 
     # Quality Boundaries & Deferred Depth assertions
-    assert len(candidate["quality_boundaries"]) >= 1
-    assert len(candidate["deferred_depth"]) >= 1
+    assert len(candidate["quality_boundaries"]) >= 4
+    assert len(candidate["deferred_depth"]) >= 3
+    assert all(
+        depth["status"] == "deferred_not_required_for_candidate_staging"
+        for depth in candidate["deferred_depth"]
+    )
 
     # Human Review & Publication boundaries
+    assert candidate["human_review"]["required"] is True
     assert candidate["human_review"]["status"] == "pending"
     assert candidate["publication"]["eligible"] is False
