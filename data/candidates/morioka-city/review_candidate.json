@@ -42,6 +42,15 @@
           "use_boundary": "FY2026一般会計当初予算案の成立・公表情報を確認する。補正予算とは別stateで扱う。"
         },
         {
+          "id": "morioka-budget-book-2026",
+          "evidence_role": "budget_document",
+          "title": "予算書・予算説明書",
+          "official_url": "https://www.city.morioka.iwate.jp/shisei/zaisei/suii/1054620/index.html",
+          "format": "html",
+          "evidence_location": "本文『令和8年度各会計予算書および予算説明書』",
+          "use_boundary": "FY2026予算書および予算説明書の公式入口を確認する。提案概要と予算書本体のEvidence roleを分離する。"
+        },
+        {
           "id": "morioka-settlement-2024",
           "evidence_role": "settlement_and_audit",
           "title": "令和6年度決算",
