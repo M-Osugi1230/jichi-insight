@@ -95,12 +95,12 @@ def test_prepared_candidate_retains_human_boundary_and_evidence_shape():
         "morioka-settlement-2024",
     }
     assert all(
-        source["official_url"].startswith("https://")
+        source["official_url"].startswith("https://www.city.morioka.iwate.jp/")
         for source in source_catalog["sources"]
     )
     assert all(source["format"] == "html" for source in source_catalog["sources"])
-    assert all(source["evidence_location"] for source in source_catalog["sources"])
-    assert all(source["use_boundary"] for source in source_catalog["sources"])
+    assert all(bool(source["evidence_location"]) for source in source_catalog["sources"])
+    assert all(bool(source["use_boundary"]) for source in source_catalog["sources"])
 
     # Plan Review assertions
     assert plan_review["id"] == "phase15-morioka-plan-review"
@@ -118,6 +118,11 @@ def test_prepared_candidate_retains_human_boundary_and_evidence_shape():
     assert all(
         record["decision"] in {"needs_review", "not_assessable"}
         for record in plan_review["records"]
+    )
+    assert all(
+        bool(record["evidence_location"])
+        for record in plan_review["records"]
+        if "evidence_location" in record
     )
 
     # Policy Structure assertions
@@ -179,15 +184,19 @@ def test_prepared_candidate_retains_human_boundary_and_evidence_shape():
     assert all(packet["review_status"] == "needs_review" for packet in evidence_packets)
     assert all(packet["claims"] for packet in evidence_packets)
     assert all(
-        claim["decision"] == "needs_review"
+        claim["decision"] == "needs_review" and bool(claim["location_note"])
         for packet in evidence_packets
         for claim in packet["claims"]
     )
 
     # Quality Boundaries & Deferred Depth assertions
     assert len(candidate["quality_boundaries"]) >= 4
+    quality_text = " ".join(candidate["quality_boundaries"]).lower()
+    assert "score" in quality_text
+    assert "causal" in quality_text
+    assert "ranking" in quality_text
     assert any(
-        "human-review" in boundary.lower() or "person checks" in boundary.lower()
+        "human" in boundary.lower() or "person checks" in boundary.lower()
         for boundary in candidate["quality_boundaries"]
     )
     assert len(candidate["deferred_depth"]) == 3
