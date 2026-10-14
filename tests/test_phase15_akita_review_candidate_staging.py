@@ -35,6 +35,7 @@ def test_akita_candidate_staging_contract_validates():
         candidate["source_inventory_path"]
         == "data/indexed/akita-city/source_inventory.json"
     )
+    assert (ROOT / candidate["source_inventory_path"]).is_file()
     assert candidate["status"] == "review_candidate"
     assert candidate["package_state"] == "prepared"
     assert candidate["human_review"]["required"] is True
@@ -103,12 +104,12 @@ def test_prepared_akita_candidate_retains_human_boundary_and_evidence_shape():
         "akita-settlement-2024",
     }
     assert all(
-        source["official_url"].startswith("https://")
+        source["official_url"].startswith("https://www.city.akita.lg.jp/")
         for source in source_catalog["sources"]
     )
     assert all(source["format"] == "html" for source in source_catalog["sources"])
-    assert all(source["evidence_location"] for source in source_catalog["sources"])
-    assert all(source["use_boundary"] for source in source_catalog["sources"])
+    assert all(bool(source["evidence_location"]) for source in source_catalog["sources"])
+    assert all(bool(source["use_boundary"]) for source in source_catalog["sources"])
 
     # Plan Review assertions
     assert plan_review["id"] == "phase15-akita-plan-review"
@@ -125,6 +126,15 @@ def test_prepared_akita_candidate_retains_human_boundary_and_evidence_shape():
     }
     assert all(
         record["decision"] in {"needs_review", "not_assessable"}
+        for record in plan_review["records"]
+    )
+    assert all(
+        bool(record["evidence_location"])
+        for record in plan_review["records"]
+        if "evidence_location" in record
+    )
+    assert all(
+        record["source_url"].startswith("https://www.city.akita.lg.jp/")
         for record in plan_review["records"]
     )
 
@@ -198,17 +208,19 @@ def test_prepared_akita_candidate_retains_human_boundary_and_evidence_shape():
     assert all(pkt["review_status"] == "needs_review" for pkt in evidence_packets)
     assert all(pkt["claims"] for pkt in evidence_packets)
     assert all(
-        claim["decision"] == "needs_review"
+        claim["decision"] == "needs_review" and bool(claim["location_note"])
         for pkt in evidence_packets
         for claim in pkt["claims"]
     )
 
     # Quality Boundaries & Deferred Depth assertions
     assert len(candidate["quality_boundaries"]) >= 4
+    quality_text = " ".join(candidate["quality_boundaries"]).lower()
+    assert "score" in quality_text
+    assert "causal" in quality_text
+    assert "ranking" in quality_text
     assert any(
-        "human" in boundary.lower()
-        or "person checks" in boundary.lower()
-        or "reviewed" in boundary.lower()
+        "human" in boundary.lower() or "person checks" in boundary.lower()
         for boundary in candidate["quality_boundaries"]
     )
     assert len(candidate["deferred_depth"]) == 3
