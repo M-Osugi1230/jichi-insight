@@ -1,0 +1,64 @@
+{
+  "id": "morioka-phase15-sources",
+  "phase": 15,
+  "official_code": "032018",
+  "name_ja": "盛岡市",
+  "reviewed_at": "2026-10-01",
+  "sources": [
+    {
+      "id": "morioka-current-plan-page",
+      "evidence_role": "current_plan_identity",
+      "title": "盛岡市総合計画",
+      "official_url": "https://www.city.morioka.iwate.jp/shisei/keikaku/sogotekiplan/1009760/index.html",
+      "format": "html",
+      "evidence_location": "本文『盛岡市総合計画の概要』『基本構想（令和7年度～16年度）』",
+      "use_boundary": "2025年度～2034年度を計画期間とする盛岡市総合計画基本構想がcurrent plan identityであることを確認する。"
+    },
+    {
+      "id": "morioka-implementation-2026-2028-page",
+      "evidence_role": "implementation_plan",
+      "title": "実施計画（令和7年度から16年度）",
+      "official_url": "https://www.city.morioka.iwate.jp/shisei/keikaku/sogotekiplan/1009760/1045034/1051241.html",
+      "format": "html",
+      "evidence_location": "本文『実施計画（令和8年度～令和10年度）』",
+      "use_boundary": "3年ローリング方式によるFY2026～2028実施計画をcurrent implementation layerとして保持する。"
+    },
+    {
+      "id": "morioka-budget-2026-page",
+      "evidence_role": "budget_index",
+      "title": "令和8年度予算の概要",
+      "official_url": "https://www.city.morioka.iwate.jp/shisei/zaisei/suii/1054620/1056173.html",
+      "format": "html",
+      "evidence_location": "『当初予算の概要』『補正予算の概要』",
+      "use_boundary": "FY2026当初予算および各補正予算の公式入口。initialとsupplementaryを別stateで扱う。"
+    },
+    {
+      "id": "morioka-budget-2026-pdf",
+      "evidence_role": "initial_budget",
+      "title": "令和8年度 当初予算案の概要",
+      "official_url": "https://www.city.morioka.iwate.jp/_res/projects/default_project/_page_/001/056/173/r8_tousho_gaiyou.pdf",
+      "format": "pdf",
+      "evidence_location": "PDF p.3 / printed p.1『1 予算規模』一般会計 118,500,000千円",
+      "use_boundary": "一般会計当初予算118,500,000千円を千円単位のsource precisionで保持する。補正予算・執行・決算とは結合しない。"
+    },
+    {
+      "id": "morioka-budget-2026-enactment",
+      "evidence_role": "budget_enactment",
+      "title": "令和8年第1回盛岡市議会定例会 議決結果",
+      "official_url": "https://www.city.morioka.iwate.jp/gikai/giko/1008123/1056301.html",
+      "format": "html",
+      "evidence_location": "議案第1号『令和8年度盛岡市一般会計予算』『原案可決』",
+      "use_boundary": "FY2026一般会計当初予算の原案可決を確認する。後続の補正予算は当初予算を上書きせず別stateとする。"
+    },
+    {
+      "id": "morioka-settlement-2024-audit-pdf",
+      "evidence_role": "settlement_and_audit",
+      "title": "令和6年度 盛岡市歳入歳出決算審査意見書",
+      "official_url": "https://www.city.morioka.iwate.jp/_res/projects/default_project/_page_/001/054/397/r6_kessan_shinsa.pdf",
+      "format": "pdf",
+      "evidence_location": "PDF p.10 / printed p.4『第2 決算の概要 1 一般会計歳入歳出決算』",
+      "use_boundary": "一般会計歳入124,850,210千円・歳出121,320,150千円を監査資料のexact source precisionで保持する。"
+    }
+  ],
+  "quality_boundary": "Current comprehensive plan (2025-2034), rolling implementation plan (2026-2028), initial budget enactment, and audited settlement entry points remain separate evidence roles. Fiscal values retain exact source precision without collapsing proposed, enacted, supplementary, or settlement states."
+}
