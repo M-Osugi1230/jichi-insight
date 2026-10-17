@@ -348,7 +348,7 @@
   "human_review": {
     "required": true,
     "status": "pending",
-    "boundary": "A person must check the candidate against the cited primary sources before any promotion to reviewed_complete.",
+    "boundary": "A person must check the candidate against the cited primary sources before any promotion to reviewed_complete. Official primary source locators and pending boundaries are strictly preserved.",
     "reviewed_at": null,
     "reviewer_note": null
   },
