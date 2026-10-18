@@ -2,6 +2,19 @@ import coverageRegistry from "../../../data/catalog/prefecture_coverage.json";
 import sourceInventoryRegistry from "../../../data/catalog/nationwide_source_inventory.json";
 import publishedPageRegistry from "../../../data/catalog/published_prefecture_pages.json";
 import regionalAnchorSourceRegistry from "../../../data/catalog/regional_anchor_source_registry.json";
+import phase15CoreCapitalReviewQueue from "../../../data/catalog/phase15_core_capital_review_queue.json";
+
+export type Phase15CandidateStagingState =
+  | "review_in_progress"
+  | "pending_record_review"
+  | "reviewed_complete";
+
+export type Phase15CandidateSummary = {
+  targetCount: number;
+  reviewedCompleteCount: number;
+  reviewInProgressCount: number;
+  pendingRecordReviewCount: number;
+};
 
 export type PrefectureRegion =
   | "北海道"
@@ -347,3 +360,22 @@ export function sourceInventoryCategoryLabel(category: SourceInventoryCategory) 
   };
   return labels[category];
 }
+
+export const phase15CandidateStagingSummary: Phase15CandidateSummary = {
+  targetCount: phase15CoreCapitalReviewQueue.summary.target_count,
+  reviewedCompleteCount:
+    phase15CoreCapitalReviewQueue.summary.reviewed_complete_count,
+  reviewInProgressCount:
+    phase15CoreCapitalReviewQueue.summary.review_in_progress_count,
+  pendingRecordReviewCount:
+    phase15CoreCapitalReviewQueue.summary.pending_record_review_count,
+};
+
+export const phase15ReviewQueueStats = {
+  id: phase15CoreCapitalReviewQueue.id,
+  phase: phase15CoreCapitalReviewQueue.phase,
+  status: phase15CoreCapitalReviewQueue.status,
+  summary: phase15CandidateStagingSummary,
+  executionQueueCount: phase15CoreCapitalReviewQueue.execution_queue.length,
+  updatedAt: phase15CoreCapitalReviewQueue.updated_at,
+};
