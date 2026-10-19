@@ -36,6 +36,7 @@ def test_morioka_candidate_staging_contract_validates():
         candidate["source_inventory_path"]
         == "data/indexed/morioka-city/source_inventory.json"
     )
+    assert (ROOT / candidate["source_inventory_path"]).is_file()
     assert candidate["package_state"] == "prepared"
     assert candidate["human_review"]["required"] is True
     assert candidate["human_review"]["status"] == "pending"
@@ -124,6 +125,10 @@ def test_prepared_candidate_retains_human_boundary_and_evidence_shape():
         for record in plan_review["records"]
         if "evidence_location" in record
     )
+    assert all(
+        record["source_url"].startswith("https://www.city.morioka.iwate.jp/")
+        for record in plan_review["records"]
+    )
 
     # Policy Structure assertions
     assert policy_structure["id"] == "morioka-current-policy-structure"
@@ -148,6 +153,13 @@ def test_prepared_candidate_retains_human_boundary_and_evidence_shape():
     )
     assert total_measures == 25
     assert len(current_plan["management_principles"]) == 5
+    assert current_plan["management_principles"] == [
+        "市民参画・協働",
+        "持続可能な財政運営",
+        "組織体制・公正確保",
+        "広域連携",
+        "適切な評価とデジタル活用",
+    ]
 
     # Progress Review assertions
     assert progress_review["id"] == "morioka-current-progress-review-summary"
