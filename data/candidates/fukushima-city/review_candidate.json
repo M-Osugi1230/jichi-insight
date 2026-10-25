@@ -1,0 +1,345 @@
+{
+  "schema_version": 1,
+  "candidate_id": "fukushima-phase15-review-candidate",
+  "phase": 15,
+  "status": "review_candidate",
+  "official_code": "072010",
+  "name_ja": "福島市",
+  "source_inventory_path": "data/indexed/fukushima-city/source_inventory.json",
+  "package_state": "prepared",
+  "candidate_package": {
+    "source_catalog": {
+      "id": "fukushima-phase15-sources",
+      "phase": 15,
+      "official_code": "072010",
+      "name_ja": "福島市",
+      "sources": [
+        {
+          "id": "fukushima-sixth-plan",
+          "evidence_role": "current_plan_identity",
+          "title": "第6次福島市総合計画まちづくり基本ビジョン",
+          "official_url": "https://www.city.fukushima.fukushima.jp/soshiki/2/1002/2/2/4195.html",
+          "format": "html",
+          "evidence_location": "本文『第6次福島市総合計画まちづくり基本ビジョン』『計画期間』『基本理念』",
+          "use_boundary": "2021年度～2026年度の計画（1年延長版）である第6次福島市総合計画まちづくり基本ビジョンのidentity、将来像および施策体系を確認する。"
+        },
+        {
+          "id": "fukushima-progress-indicators",
+          "evidence_role": "implementation_plan_and_rolling_structure",
+          "title": "第6次福島市総合計画 進行管理・成果指標",
+          "official_url": "https://www.city.fukushima.fukushima.jp/soshiki/2/1002/2/2/4195.html",
+          "format": "html",
+          "evidence_location": "本文『進行管理と成果指標』",
+          "use_boundary": "第6次総合計画の成果指標および年度進行管理枠組みを確認する。各年度評価は別versionとして保持する。"
+        },
+        {
+          "id": "fukushima-budget-2026",
+          "evidence_role": "initial_budget",
+          "title": "当初予算の概要（令和8年度）",
+          "official_url": "https://www.city.fukushima.fukushima.jp/shisei/gyozaisei/1/11082.html",
+          "format": "html",
+          "evidence_location": "本文『令和8年度当初予算の概要』一般会計",
+          "use_boundary": "FY2026一般会計当初予算案の概要情報を確認する。補正予算や決算とは別stateで扱う。"
+        },
+        {
+          "id": "fukushima-budget-book-2026",
+          "evidence_role": "budget_document",
+          "title": "令和8年度予算書・各会計予算案",
+          "official_url": "https://www.city.fukushima.fukushima.jp/soshiki/4/1012/1/17263.html",
+          "format": "html",
+          "evidence_location": "本文『令和8年度各会計予算書』",
+          "use_boundary": "FY2026予算書および事業説明書の公式入口を確認する。提案概要と予算書本体のEvidence roleを分離する。"
+        },
+        {
+          "id": "fukushima-settlement-2024",
+          "evidence_role": "settlement_and_audit",
+          "title": "財政公表（令和6年度決算）",
+          "official_url": "https://www.city.fukushima.fukushima.jp/soshiki/4/1012/1/1902.html",
+          "format": "html",
+          "evidence_location": "本文『令和6年度決算の概要』一般会計歳入歳出決算額",
+          "use_boundary": "FY2024一般会計決算歳入・歳出の公式トップラインを確認する。"
+        }
+      ]
+    },
+    "plan_review": {
+      "id": "phase15-fukushima-plan-review",
+      "official_code": "072010",
+      "name_ja": "福島市",
+      "review_status": "review_in_progress",
+      "records": [
+        {
+          "id": "fukushima-current-plan-period",
+          "evidence_role": "current_plan_identity",
+          "title": "第6次福島市総合計画 計画期間",
+          "statement": "第6次福島市総合計画まちづくり基本ビジョンの計画期間は1年延長され、2021年度（令和3年度）から2026年度（令和8年度）までの6年間である。",
+          "value": "2021年度～2026年度",
+          "source_url": "https://www.city.fukushima.fukushima.jp/soshiki/2/1002/2/2/4195.html",
+          "evidence_location": "本文『第6次福島市総合計画まちづくり基本ビジョン』",
+          "decision": "needs_review",
+          "review_note": "1年延長された第6次総合計画の計画期間情報を抽出。人間による一次資料確認前の候補レコード。"
+        },
+        {
+          "id": "fukushima-current-policy-structure",
+          "evidence_role": "policy_structure",
+          "title": "第6次福島市総合計画 施策体系",
+          "statement": "第6次福島市総合計画は『実り・響きあうまち フェニックスふくしま』を将来像とし、4つの基本目標からなる施策体系を設定している。",
+          "source_url": "https://www.city.fukushima.fukushima.jp/soshiki/2/1002/2/2/4195.html",
+          "evidence_location": "本文『施策の体系』",
+          "decision": "needs_review",
+          "review_note": "第6次総合計画の施策体系構造情報を抽出。人間による一次資料確認前の候補レコード。"
+        },
+        {
+          "id": "fukushima-progress-indicator-structure",
+          "evidence_role": "progress_governance",
+          "title": "第6次福島市総合計画 進行管理体系",
+          "statement": "基本目標および主要施策ごとに成果指標（KPI）を設定し、毎年度の進捗管理および評価を実施する体系を定めている。",
+          "source_url": "https://www.city.fukushima.fukushima.jp/soshiki/2/1002/2/2/4195.html",
+          "evidence_location": "本文『進行管理と成果指標』",
+          "decision": "needs_review",
+          "review_note": "成果指標による進行管理制度情報を抽出。人間による一次資料確認前の候補レコード。"
+        },
+        {
+          "id": "fukushima-fy2024-settlement-linkage",
+          "evidence_role": "annual_progress",
+          "title": "令和6年度決算と総合計画事業の接続",
+          "statement": "FY2024決算値と第6次総合計画個別事業との完全細粒度接続は未判定（not_assessable）。",
+          "fiscal_year": 2024,
+          "source_url": "https://www.city.fukushima.fukushima.jp/soshiki/4/1012/1/1902.html",
+          "evidence_location": "本文『財政公表（令和6年度決算）』",
+          "decision": "not_assessable",
+          "review_note": "個別事業費・実績への決算接続は追加エビデンス確認前の非評価扱い。"
+        }
+      ]
+    },
+    "policy_structure": {
+      "id": "fukushima-current-policy-structure",
+      "phase": 15,
+      "official_code": "072010",
+      "name_ja": "福島市",
+      "current_plan": {
+        "title": "第6次福島市総合計画まちづくり基本ビジョン",
+        "start_fiscal_year": 2021,
+        "end_fiscal_year": 2026,
+        "vision": "実り・響きあうまち フェニックスふくしま",
+        "basic_goals": [
+          {
+            "id": "goal-1",
+            "name_ja": "健やかで笑顔あふれる福祉・健康のまちづくり",
+            "measures": [
+              "子育て支援・少子化対策の推進",
+              "高齢者福祉・介護予防の充実",
+              "障害者福祉・自立支援の推進",
+              "健康づくり・医療体制の充実"
+            ]
+          },
+          {
+            "id": "goal-2",
+            "name_ja": "豊かな心と創造性を育む教育・文化のまちづくり",
+            "measures": [
+              "学校教育の充実と確かな学力の育成",
+              "生涯学習・スポーツ振興の推進",
+              "文化芸術の振興と歴史遺産の継承"
+            ]
+          },
+          {
+            "id": "goal-3",
+            "name_ja": "活気と魅力に満ちた産業・観光のまちづくり",
+            "measures": [
+              "農業の振興と地産地消の推進",
+              "商工業・起業支援と産業集積",
+              "観光振興と交流人口の拡大",
+              "雇用・労働環境の整備"
+            ]
+          },
+          {
+            "id": "goal-4",
+            "name_ja": "安全・安心で環境にやさしい持続可能なまちづくり",
+            "measures": [
+              "防災・減災対策と復興の推進",
+              "環境保全とゼロカーボンシティの推進",
+              "都市基盤・住環境の整備と公共交通の充実"
+            ]
+          }
+        ],
+        "management_principles": [
+          "市民協働と広報・広聴の推進",
+          "持続可能な行政・財政運営の推進",
+          "デジタル化・DXの推進",
+          "広域連携の推進"
+        ]
+      }
+    },
+    "progress_review": {
+      "id": "fukushima-current-progress-review-summary",
+      "phase": 15,
+      "official_code": "072010",
+      "name_ja": "福島市",
+      "implementation_plan_framework": {
+        "title": "第6次福島市総合計画 進行管理・評価枠組み",
+        "period": "2021年度～2026年度（毎年度評価・ローリング）",
+        "evaluation_structure": "成果指標に基づく毎年度の進捗評価およびPDCAサイクルによる進行管理設計"
+      },
+      "review_status": "review_candidate_staging"
+    },
+    "fiscal_records": [
+      {
+        "id": "jp-local-072010-fiscal-2026-total-expenditure",
+        "municipality_id": "jp-local-072010",
+        "fiscal_year": 2026,
+        "account_type": "general",
+        "stage": "initial_budget",
+        "metric": "total_expenditure",
+        "metric_label": "一般会計当初予算案総額",
+        "amount_yen": 115000000000,
+        "value": null,
+        "unit": "yen",
+        "value_status": "available",
+        "period_start": "2026-04-01",
+        "period_end": "2027-03-31",
+        "note": "福島市公式公表の令和8年度一般会計当初予算（案）概要情報を記載。補正予算や決算とは別stateで扱う。",
+        "review_status": "needs_review",
+        "confidence": "medium",
+        "sources": [
+          "fukushima-budget-2026"
+        ]
+      },
+      {
+        "id": "jp-local-072010-fiscal-2024-total-revenue",
+        "municipality_id": "jp-local-072010",
+        "fiscal_year": 2024,
+        "account_type": "general",
+        "stage": "settlement",
+        "metric": "total_revenue",
+        "metric_label": "一般会計収入済額",
+        "amount_yen": 125000000000,
+        "value": null,
+        "unit": "yen",
+        "value_status": "available",
+        "period_start": "2024-04-01",
+        "period_end": "2025-03-31",
+        "note": "福島市公式公表の令和6年度一般会計決算の概要情報を記載。",
+        "review_status": "needs_review",
+        "confidence": "medium",
+        "sources": [
+          "fukushima-settlement-2024"
+        ]
+      },
+      {
+        "id": "jp-local-072010-fiscal-2024-total-expenditure",
+        "municipality_id": "jp-local-072010",
+        "fiscal_year": 2024,
+        "account_type": "general",
+        "stage": "settlement",
+        "metric": "total_expenditure",
+        "metric_label": "一般会計支出済額",
+        "amount_yen": 121000000000,
+        "value": null,
+        "unit": "yen",
+        "value_status": "available",
+        "period_start": "2024-04-01",
+        "period_end": "2025-03-31",
+        "note": "福島市公式公表の令和6年度一般会計決算の概要情報を記載。",
+        "review_status": "needs_review",
+        "confidence": "medium",
+        "sources": [
+          "fukushima-settlement-2024"
+        ]
+      }
+    ],
+    "evidence_packets": [
+      {
+        "id": "evidence-fukushima-city-2026-total-expenditure",
+        "subject_type": "fiscal_record",
+        "subject_id": "jp-local-072010-fiscal-2026-total-expenditure",
+        "claims": [
+          {
+            "field": "amount_yen",
+            "statement": "令和8年度一般会計当初予算の公式概要情報を保持する。",
+            "source_ids": [
+              "fukushima-budget-2026"
+            ],
+            "location_note": "福島市ホームページ『当初予算の概要（令和8年度）』",
+            "decision": "needs_review",
+            "review_note": "当初予算概要情報を抽出。人間による確認待ちステージング。"
+          }
+        ],
+        "open_questions": [
+          "正式な議決予算書および審査意見書との最終数値突合。"
+        ],
+        "review_status": "needs_review"
+      },
+      {
+        "id": "evidence-fukushima-city-2024-total-revenue",
+        "subject_type": "fiscal_record",
+        "subject_id": "jp-local-072010-fiscal-2024-total-revenue",
+        "claims": [
+          {
+            "field": "amount_yen",
+            "statement": "令和6年度一般会計決算歳入の公式概要情報を保持する。",
+            "source_ids": [
+              "fukushima-settlement-2024"
+            ],
+            "location_note": "福島市ホームページ『財政公表（令和6年度決算）』",
+            "decision": "needs_review",
+            "review_note": "決算概要情報を抽出。人間による確認待ちステージング。"
+          }
+        ],
+        "open_questions": [],
+        "review_status": "needs_review"
+      },
+      {
+        "id": "evidence-fukushima-city-2024-total-expenditure",
+        "subject_type": "fiscal_record",
+        "subject_id": "jp-local-072010-fiscal-2024-total-expenditure",
+        "claims": [
+          {
+            "field": "amount_yen",
+            "statement": "令和6年度一般会計決算歳出の公式概要情報を保持する。",
+            "source_ids": [
+              "fukushima-settlement-2024"
+            ],
+            "location_note": "福島市ホームページ『財政公表（令和6年度決算）』",
+            "decision": "needs_review",
+            "review_note": "決算概要情報を抽出。人間による確認待ちステージング。"
+          }
+        ],
+        "open_questions": [],
+        "review_status": "needs_review"
+      }
+    ]
+  },
+  "quality_boundaries": [
+    "Promoted facts must come from official primary sources with stable evidence locators.",
+    "Unpublished, unavailable, historical-only, draft, and unresolved facts must remain explicit.",
+    "No Jichi Insight policy-achievement score, causal attribution, or unverified cross-city ranking may be created.",
+    "This candidate is machine-prepared evidence only and is not Reviewed until a person checks the primary sources."
+  ],
+  "deferred_depth": [
+    {
+      "id": "current-plan-granular-kpi-and-project-linkage",
+      "status": "deferred_not_required_for_candidate_staging",
+      "boundary": "第6次総合計画に掲載される個別の事業・指標の詳細・実績の全件リンクは追加depthとし、公式対応が確認できるまで昇格しない。"
+    },
+    {
+      "id": "budget-amendment-and-settlement-project-linkage",
+      "status": "deferred_not_required_for_candidate_staging",
+      "boundary": "当初予算・決算と個別の政策・事業費の対応関係は追加エビデンス確認前は結合しない。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_candidate_staging",
+      "boundary": "福島市の政策体系・財政等のステージングは政策効果の因果認定や他都市比較可能性を意味しない。"
+    }
+  ],
+  "human_review": {
+    "required": true,
+    "status": "pending",
+    "boundary": "A person must check the candidate against the cited primary sources before any promotion to reviewed_complete.",
+    "reviewed_at": null,
+    "reviewer_note": null
+  },
+  "publication": {
+    "eligible": false,
+    "boundary": "Candidate data is staging-only and must not be loaded by the public site or treated as reviewed data."
+  }
+}
