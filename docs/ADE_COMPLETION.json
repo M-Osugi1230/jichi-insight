@@ -1,12 +1,32 @@
 {
   "schema_version": 1,
-  "status": "COMPLETE",
-  "summary": "Jichi Insight nationwide municipality insight platform autonomous expansion complete with full canonical coverage, public-product alignment, and final runtime verification.",
-  "evidence": {
-    "canonical_coverage": "All targeted municipalities are covered, validly evidenced or explicitly unresolved.",
-    "evidence_boundaries": "Official primary sources retained with stable locators, fiscal/plan boundaries, and non-inference rules.",
-    "pipeline_determinism": "Candidate generation, validation, review staging, and public-data pipelines are deterministic and green.",
-    "public_product": "Public browse, search, and detail interfaces aligned with current canonical nationwide data.",
-    "verification": "Repository CI, data-quality checks, and runtime test suite (1977 passed tests) are green."
-  }
+  "status": "IN_PROGRESS",
+  "summary": "Jichi Insight is not yet graduated. Phase 15 remains active until every municipality in the canonical Phase 15 queue is reviewed_complete and final repository/runtime verification is green.",
+  "canonical_gate": {
+    "queue_path": "data/catalog/phase15_core_capital_review_queue.json",
+    "required_total": 67,
+    "required_reviewed_complete": 67,
+    "required_review_in_progress": 0,
+    "required_pending_record_review": 0,
+    "required_blocked_source_inventory": 0,
+    "current_reviewed_complete_at_reset": 4,
+    "current_review_in_progress_at_reset": 1,
+    "current_pending_record_review_at_reset": 62
+  },
+  "completion_policy": {
+    "queue_exhaustion_is_not_completion": true,
+    "candidate_staging_is_not_completion": true,
+    "explicitly_unresolved_does_not_satisfy_phase15_reviewed_complete": true,
+    "human_review_pending_does_not_satisfy_phase15_reviewed_complete": true,
+    "completion_requires_schema_validation": true,
+    "completion_requires_evidence_validation": true,
+    "completion_requires_regression_tests": true,
+    "completion_requires_public_data_alignment": true,
+    "completion_requires_production_verification": true
+  },
+  "next_target": {
+    "official_code": "032018",
+    "name_ja": "盛岡市"
+  },
+  "reason": "Previous COMPLETE marker used a weaker coverage condition that allowed explicitly unresolved municipalities. The canonical Phase 15 queue is authoritative and has not reached 67/67 reviewed_complete."
 }
