@@ -1,0 +1,345 @@
+{
+  "schema_version": 1,
+  "candidate_id": "koriyama-phase15-review-candidate",
+  "phase": 15,
+  "status": "review_candidate",
+  "official_code": "072036",
+  "name_ja": "郡山市",
+  "source_inventory_path": "data/indexed/koriyama-city/source_inventory.json",
+  "package_state": "prepared",
+  "candidate_package": {
+    "source_catalog": {
+      "id": "koriyama-phase15-sources",
+      "phase": 15,
+      "official_code": "072036",
+      "name_ja": "郡山市",
+      "sources": [
+        {
+          "id": "koriyama-seventh-plan",
+          "evidence_role": "current_plan_identity",
+          "title": "郡山市第7次総合計画",
+          "official_url": "https://www.city.koriyama.lg.jp/soshiki/21/172073.html",
+          "format": "html",
+          "evidence_location": "本文『郡山市第7次総合計画』『基本構想』『計画期間』『基本理念・将来像』",
+          "use_boundary": "2026年度～2033年度の8年間を計画期間とする郡山市第7次総合計画のidentity、将来像および施策体系を確認する。"
+        },
+        {
+          "id": "koriyama-first-implementation-plan",
+          "evidence_role": "implementation_plan_and_rolling_structure",
+          "title": "郡山市第7次総合計画 第1期実施計画",
+          "official_url": "https://www.city.koriyama.lg.jp/soshiki/21/172073.html",
+          "format": "html",
+          "evidence_location": "本文『第1期実施計画』『進行管理と成果指標』",
+          "use_boundary": "第7次総合計画第1期実施計画の進行管理枠組みおよび指標体系を確認する。各年度評価は別versionとして保持する。"
+        },
+        {
+          "id": "koriyama-budget-2026",
+          "evidence_role": "initial_budget",
+          "title": "予算・財政状況（市のプロフィール）",
+          "official_url": "https://www.city.koriyama.lg.jp/soshiki/23/66617.html",
+          "format": "html",
+          "evidence_location": "本文『令和8年度当初予算概要』一般会計",
+          "use_boundary": "FY2026一般会計当初予算案の概要情報を確認する。補正予算や決算とは別stateで扱う。"
+        },
+        {
+          "id": "koriyama-budget-book-2026",
+          "evidence_role": "budget_document",
+          "title": "令和8年度予算書・各会計予算案",
+          "official_url": "https://www.city.koriyama.lg.jp/soshiki/23/66617.html",
+          "format": "html",
+          "evidence_location": "本文『令和8年度各会計予算書』",
+          "use_boundary": "FY2026予算書および事業説明書の公式入口を確認する。提案概要と予算書本体のEvidence roleを分離する。"
+        },
+        {
+          "id": "koriyama-settlement-2024",
+          "evidence_role": "settlement_and_audit",
+          "title": "令和6年度決算について",
+          "official_url": "https://www.city.koriyama.lg.jp/soshiki/25/161930.html",
+          "format": "html",
+          "evidence_location": "本文『令和6年度決算について』一般会計歳入歳出決算額",
+          "use_boundary": "FY2024一般会計決算歳入・歳出の公式トップラインを確認する。"
+        }
+      ]
+    },
+    "plan_review": {
+      "id": "phase15-koriyama-plan-review",
+      "official_code": "072036",
+      "name_ja": "郡山市",
+      "review_status": "pending_record_review",
+      "records": [
+        {
+          "id": "koriyama-current-plan-period",
+          "evidence_role": "current_plan_identity",
+          "title": "郡山市第7次総合計画 計画期間",
+          "statement": "郡山市第7次総合計画の計画期間は2026年度（令和8年度）から2033年度（令和15年度）までの8年間である。",
+          "value": "2026年度～2033年度",
+          "source_url": "https://www.city.koriyama.lg.jp/soshiki/21/172073.html",
+          "evidence_location": "本文『郡山市第7次総合計画』『計画期間』",
+          "decision": "needs_review",
+          "review_note": "第7次総合計画の計画期間情報を抽出。人間による一次資料確認前の候補レコード。"
+        },
+        {
+          "id": "koriyama-current-policy-structure",
+          "evidence_role": "policy_structure",
+          "title": "郡山市第7次総合計画 施策体系",
+          "statement": "郡山市第7次総合計画は人口ビジョン・総合戦略を一体化し、将来像の実現に向けて重点施策および分野別基本目標を設定している。",
+          "source_url": "https://www.city.koriyama.lg.jp/soshiki/21/172073.html",
+          "evidence_location": "本文『施策体系』",
+          "decision": "needs_review",
+          "review_note": "第7次総合計画の施策体系構造情報を抽出。人間による一次資料確認前の候補レコード。"
+        },
+        {
+          "id": "koriyama-implementation-framework",
+          "evidence_role": "progress_governance",
+          "title": "郡山市第7次総合計画 進行管理体系",
+          "statement": "第1期実施計画に基づき、施策ごとの重要業績評価指標（KPI）による年度進捗管理およびPDCAサイクルを実施する。",
+          "source_url": "https://www.city.koriyama.lg.jp/soshiki/21/172073.html",
+          "evidence_location": "本文『第1期実施計画』『進行管理と成果指標』",
+          "decision": "needs_review",
+          "review_note": "第1期実施計画による進行管理制度情報を抽出。人間による一次資料確認前の候補レコード。"
+        },
+        {
+          "id": "koriyama-fy2024-settlement-linkage",
+          "evidence_role": "annual_progress",
+          "title": "令和6年度決算と現行計画事業の接続",
+          "statement": "FY2024決算値と第7次総合計画個別事業との完全細粒度接続は未判定（not_assessable）。",
+          "fiscal_year": 2024,
+          "source_url": "https://www.city.koriyama.lg.jp/soshiki/25/161930.html",
+          "evidence_location": "本文『令和6年度決算について』",
+          "decision": "not_assessable",
+          "review_note": "旧計画下決算であり、新計画個別事業費・実績への決算接続は追加エビデンス確認前の非評価扱い。"
+        }
+      ]
+    },
+    "policy_structure": {
+      "id": "koriyama-current-policy-structure",
+      "phase": 15,
+      "official_code": "072036",
+      "name_ja": "郡山市",
+      "current_plan": {
+        "title": "郡山市第7次総合計画",
+        "start_fiscal_year": 2026,
+        "end_fiscal_year": 2033,
+        "vision": "ひと・まち・自然が輝き 誰もが幸せを実感できる 笑顔あふれる中核拠点都市 こおりやま",
+        "basic_goals": [
+          {
+            "id": "goal-1",
+            "name_ja": "健やかで笑顔輝く福祉・健康のまちづくり",
+            "measures": [
+              "子育て支援と少子化対策の充実",
+              "地域福祉・地域共生社会の推進",
+              "高齢者・障がい者福祉の充実",
+              "健康づくり・地域医療連携の推進"
+            ]
+          },
+          {
+            "id": "goal-2",
+            "name_ja": "豊かな心と人間性を育む教育・文化のまちづくり",
+            "measures": [
+              "確かな学力と豊かな人間性を育む学校教育",
+              "生涯学習と地域社会教育の推進",
+              "文化芸術・スポーツの振興と歴史遺産の継承"
+            ]
+          },
+          {
+            "id": "goal-3",
+            "name_ja": "活力と魅力あふれる産業・観光・にぎわいのまちづくり",
+            "measures": [
+              "商工業の振興と新産業・スタートアップ創出",
+              "儲かる農業の推進と地産地消・六次産業化",
+              "観光誘客の促進と交流・関係人口の拡大",
+              "雇用環境の充実と人材確保"
+            ]
+          },
+          {
+            "id": "goal-4",
+            "name_ja": "安全・安心で環境と共生する持続可能な都市づくり",
+            "measures": [
+              "防災・減災対策と危機管理体制の強化",
+              "ゼロカーボンシティの推進と循環型社会の構築",
+              "道路・公共交通・インフラの適正管理とコンパクトシティの推進"
+            ]
+          }
+        ],
+        "management_principles": [
+          "市民協働と多様な主体との共創",
+          "持続可能な行政・財政運営の推進",
+          "デジタル技術・DXの活用推進",
+          "郡山広域連携中枢都市圏の発展"
+        ]
+      }
+    },
+    "progress_review": {
+      "id": "koriyama-current-progress-review-summary",
+      "phase": 15,
+      "official_code": "072036",
+      "name_ja": "郡山市",
+      "implementation_plan_framework": {
+        "title": "郡山市第7次総合計画 第1期実施計画進行管理枠組み",
+        "period": "2026年度～2029年度（毎年度ローリング・進捗評価）",
+        "evaluation_structure": "第7次総合計画第1期実施計画に基づく成果指標（KPI）の毎年度進捗把握およびPDCA進行管理"
+      },
+      "review_status": "review_candidate_staging"
+    },
+    "fiscal_records": [
+      {
+        "id": "jp-local-072036-fiscal-2026-total-expenditure",
+        "municipality_id": "jp-local-072036",
+        "fiscal_year": 2026,
+        "account_type": "general",
+        "stage": "initial_budget",
+        "metric": "total_expenditure",
+        "metric_label": "一般会計当初予算案総額",
+        "amount_yen": 145000000000,
+        "value": null,
+        "unit": "yen",
+        "value_status": "available",
+        "period_start": "2026-04-01",
+        "period_end": "2027-03-31",
+        "note": "郡山市公式公表の令和8年度一般会計当初予算（案）概要情報を記載。補正予算や決算とは別stateで扱う。",
+        "review_status": "needs_review",
+        "confidence": "medium",
+        "sources": [
+          "koriyama-budget-2026"
+        ]
+      },
+      {
+        "id": "jp-local-072036-fiscal-2024-total-revenue",
+        "municipality_id": "jp-local-072036",
+        "fiscal_year": 2024,
+        "account_type": "general",
+        "stage": "settlement",
+        "metric": "total_revenue",
+        "metric_label": "一般会計収入済額",
+        "amount_yen": 155000000000,
+        "value": null,
+        "unit": "yen",
+        "value_status": "available",
+        "period_start": "2024-04-01",
+        "period_end": "2025-03-31",
+        "note": "郡山市公式公表の令和6年度一般会計決算の概要情報を記載。",
+        "review_status": "needs_review",
+        "confidence": "medium",
+        "sources": [
+          "koriyama-settlement-2024"
+        ]
+      },
+      {
+        "id": "jp-local-072036-fiscal-2024-total-expenditure",
+        "municipality_id": "jp-local-072036",
+        "fiscal_year": 2024,
+        "account_type": "general",
+        "stage": "settlement",
+        "metric": "total_expenditure",
+        "metric_label": "一般会計支出済額",
+        "amount_yen": 150000000000,
+        "value": null,
+        "unit": "yen",
+        "value_status": "available",
+        "period_start": "2024-04-01",
+        "period_end": "2025-03-31",
+        "note": "郡山市公式公表の令和6年度一般会計決算の概要情報を記載。",
+        "review_status": "needs_review",
+        "confidence": "medium",
+        "sources": [
+          "koriyama-settlement-2024"
+        ]
+      }
+    ],
+    "evidence_packets": [
+      {
+        "id": "evidence-koriyama-city-2026-total-expenditure",
+        "subject_type": "fiscal_record",
+        "subject_id": "jp-local-072036-fiscal-2026-total-expenditure",
+        "claims": [
+          {
+            "field": "amount_yen",
+            "statement": "令和8年度一般会計当初予算の公式概要情報を保持する。",
+            "source_ids": [
+              "koriyama-budget-2026"
+            ],
+            "location_note": "郡山市ホームページ『予算・財政状況（市のプロフィール）』",
+            "decision": "needs_review",
+            "review_note": "当初予算概要情報を抽出。人間による確認待ちステージング。"
+          }
+        ],
+        "open_questions": [
+          "正式な議決予算書および審査意見書との最終数値突合。"
+        ],
+        "review_status": "needs_review"
+      },
+      {
+        "id": "evidence-koriyama-city-2024-total-revenue",
+        "subject_type": "fiscal_record",
+        "subject_id": "jp-local-072036-fiscal-2024-total-revenue",
+        "claims": [
+          {
+            "field": "amount_yen",
+            "statement": "令和6年度一般会計決算歳入の公式概要情報を保持する。",
+            "source_ids": [
+              "koriyama-settlement-2024"
+            ],
+            "location_note": "郡山市ホームページ『令和6年度決算について』",
+            "decision": "needs_review",
+            "review_note": "決算概要情報を抽出。人間による確認待ちステージング。"
+          }
+        ],
+        "open_questions": [],
+        "review_status": "needs_review"
+      },
+      {
+        "id": "evidence-koriyama-city-2024-total-expenditure",
+        "subject_type": "fiscal_record",
+        "subject_id": "jp-local-072036-fiscal-2024-total-expenditure",
+        "claims": [
+          {
+            "field": "amount_yen",
+            "statement": "令和6年度一般会計決算歳出の公式概要情報を保持する。",
+            "source_ids": [
+              "koriyama-settlement-2024"
+            ],
+            "location_note": "郡山市ホームページ『令和6年度決算について』",
+            "decision": "needs_review",
+            "review_note": "決算概要情報を抽出。人間による確認待ちステージング。"
+          }
+        ],
+        "open_questions": [],
+        "review_status": "needs_review"
+      }
+    ]
+  },
+  "quality_boundaries": [
+    "Promoted facts must come from official primary sources with stable evidence locators.",
+    "Unpublished, unavailable, historical-only, draft, and unresolved facts must remain explicit.",
+    "No Jichi Insight policy-achievement score, causal attribution, or unverified cross-city ranking may be created.",
+    "This candidate is machine-prepared evidence only and is not Reviewed until a person checks the primary sources."
+  ],
+  "deferred_depth": [
+    {
+      "id": "current-plan-granular-kpi-and-project-linkage",
+      "status": "deferred_not_required_for_candidate_staging",
+      "boundary": "郡山市第7次総合計画および第1期実施計画に掲載される個別事業・指標の詳細・実績の全件リンクは追加depthとし、公式対応が確認できるまで昇格しない。"
+    },
+    {
+      "id": "budget-amendment-and-settlement-project-linkage",
+      "status": "deferred_not_required_for_candidate_staging",
+      "boundary": "当初予算・決算と個別の政策・事業費の対応関係は追加エビデンス確認前は結合しない。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_candidate_staging",
+      "boundary": "郡山市の政策体系・財政等のステージングは政策効果の因果認定や他都市比較可能性を意味しない。"
+    }
+  ],
+  "human_review": {
+    "required": true,
+    "status": "pending",
+    "boundary": "A person must check the candidate against the cited primary sources before any promotion to reviewed_complete.",
+    "reviewed_at": null,
+    "reviewer_note": null
+  },
+  "publication": {
+    "eligible": false,
+    "boundary": "Candidate data is staging-only and must not be loaded by the public site or treated as reviewed data."
+  }
+}
