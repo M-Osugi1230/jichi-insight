@@ -43,6 +43,7 @@ const staticRoutes = [
   "/municipalities/kitakyushu-city",
   "/policies",
   "/policy-sources",
+  "/review-progress",
   "/sources",
 ];
 const policyTargetRoutes = policyTargetPages.map(
