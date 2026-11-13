@@ -202,7 +202,7 @@ export default function MunicipalitiesPage() {
               <h2>47の目標から、実績とお金へ。</h2>
             </div>
             <p>
-              Phase 10は進行中です。索引済みは「資料入口を固定した状態」、接続済みは「定義を照合して目標と結んだ状態」です。
+              Phase 10の文書スコープ接続は47都道府県で完了しています。索引済みは「資料入口を固定した状態」、接続済みは「定義を照合して目標と結んだ状態」です。
             </p>
           </div>
           <div className={styles.stageGrid}>
