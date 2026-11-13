@@ -104,6 +104,7 @@ routes=(
   "/municipalities/okinawa/"
   "/municipalities/fukuoka-prefecture/"
   "/sources/"
+  "/review-progress/"
   "/robots.txt"
   "/sitemap.xml"
   "/manifest.webmanifest"
@@ -201,6 +202,15 @@ check_content "/municipalities/phase9/" \
   "Evidence coverage" \
   "比較不能を保持" \
   "政策評価は未判定"
+
+check_content "/review-progress/" \
+  "どこまで確認できたかも、公開する。" \
+  "Phase 15の現在地" \
+  "レビュー完了率" \
+  "自治体別のレビュー状況" \
+  "作業中の候補データ" \
+  "レビュー完了記録" \
+  "盛岡市"
 
 if [[ -f data/catalog/phase9_review_summary.json ]]; then
   while IFS=$'\t' read -r route name plan_title; do
