@@ -116,6 +116,9 @@ export default function Home() {
             <Link className="secondaryAction" href="/about">
               このサイトの目的
             </Link>
+            <Link className="secondaryAction" href="/review-progress">
+              67自治体のレビュー進捗
+            </Link>
           </div>
           <div className={styles.heroPrinciples} aria-label="表示原則">
             <span>一次資料を表示</span>
