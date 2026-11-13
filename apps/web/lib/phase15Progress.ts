@@ -38,7 +38,7 @@ type Phase15Queue = {
   execution_queue: Phase15QueueItem[];
 };
 
-const queue = phase15QueueJson as Phase15Queue;
+const queue = phase15QueueJson as unknown as Phase15Queue;
 
 export const phase15StatusLabels: Record<Phase15ReviewStatus, string> = {
   reviewed_complete: "一次資料のレビュー完了",
