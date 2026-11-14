@@ -39,7 +39,7 @@ def test_mito_source_catalog_matches_existing_inventory():
     assert {(s["id"], s["official_url"]) for s in sources} == {
         (s["id"], s["official_url"]) for s in inventory["sources"]
     }
-    assert all(s["official_url"].startswith("https://www.city.mito.lg.jp/") for s in sources)
+    assert all(\n        s["official_url"].startswith("https://www.city.mito.lg.jp/")\n        for s in sources\n    )
     assert all(
         s["verification_status"] == "inventory_only_pending_primary_source_review"
         for s in sources
@@ -51,14 +51,14 @@ def test_mito_source_catalog_matches_existing_inventory():
     assert plan["start_fiscal_year"] == 2024
     assert plan["end_fiscal_year"] == 2033
     layers = {s["id"]: s for s in sources}
-    assert layers["mito-implementation-2026-2028"]["effective_period"] == "2026年度～2028年度"
+    assert (\n        layers["mito-implementation-2026-2028"]["effective_period"]\n        == "2026年度～2028年度"\n    )
     assert layers["mito-budget-2026"]["fiscal_year"] == 2026
     assert layers["mito-settlement-2024"]["fiscal_year"] == 2024
 
 
 def test_mito_stays_pending_in_canonical_queue():
     queue = read(QUEUE)
-    item = next(x for x in queue["execution_queue"] if x["official_code"] == "082015")
+    item = next(\n        x for x in queue["execution_queue"] if x["official_code"] == "082015"\n    )
     assert item["status"] == "pending_record_review"
     assert not item.get("completion_path")
     assert queue["summary"]["reviewed_complete_count"] < 67
@@ -67,7 +67,5 @@ def test_mito_stays_pending_in_canonical_queue():
 def test_candidate_directory_not_imported_by_public_web():
     violations = []
     for path in WEB_ROOT.rglob("*"):
-        if path.is_file() and path.suffix in {".ts", ".tsx", ".js", ".mjs"}:
-            if "data/candidates" in path.read_text(encoding="utf-8"):
-                violations.append(str(path.relative_to(ROOT)))
+        if (\n            path.is_file()\n            and path.suffix in {".ts", ".tsx", ".js", ".mjs"}\n            and "data/candidates" in path.read_text(encoding="utf-8")\n        ):\n            violations.append(str(path.relative_to(ROOT)))
     assert violations == []
