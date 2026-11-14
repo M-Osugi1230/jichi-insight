@@ -1,1 +1,28 @@
-{"entries":[],"schema_version":"1.0.0","updated_at":"2026-11-15"}
+{
+  "entries": [
+    {
+      "id": "correction-2026-001",
+      "corrected_at": "2026-11-15",
+      "target_label": "Phase 10 段階サマリ（事業・契約の注記）",
+      "target_path": "/data-quality",
+      "before": "事業・契約の注記が「2都道府県で入口を索引」と表示されていた（件数表示 47/47 と矛盾）",
+      "after": "事業は「47接続・0索引」、契約は「47照合・0索引」と、正本データから算出する表示に改めた",
+      "reason": "注記が古い固定文字列のまま残り、正本データ（対象47都道府県）と食い違っていたため。固定文言を廃し、他の段階と同じ算出方式に統一した",
+      "evidence": [
+        {
+          "title": "data/catalog/phase10_completion.json（project_evaluation_indexed_or_better=47、contracts_indexed_or_better=47、status=complete）",
+          "url": "https://github.com/M-Osugi1230/jichi-insight/blob/main/data/catalog/phase10_completion.json"
+        },
+        {
+          "title": "data/catalog/phase10_execution_queue.json（default_depth: project_evaluation=linked / contracts=reviewed、全47都道府県に適用）",
+          "url": "https://github.com/M-Osugi1230/jichi-insight/blob/main/data/catalog/phase10_execution_queue.json"
+        }
+      ],
+      "reviewer": "Jichi Insight 運用（Muse による正本照合、所有者承認のうえ実施）",
+      "affected": "データ品質ページ（/data-quality）と自治体ページ（/municipalities）の段階サマリ表示。データ自体に変更はない",
+      "request_url": "https://github.com/M-Osugi1230/jichi-insight/issues/466"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "updated_at": "2026-11-15"
+}
