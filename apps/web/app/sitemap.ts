@@ -11,6 +11,7 @@ const staticRoutes = [
   "/assemblies/fukuoka-prefecture/overseas-activities",
   "/compare",
   "/corrections",
+  "/corrections/history",
   "/data-quality",
   "/executives",
   "/executives/source-requests",
