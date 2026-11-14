@@ -2,7 +2,7 @@
 .introLinks a { color: #286f9f; font-size: .74rem; font-weight: 850; text-underline-offset: 4px; }
 .summaryGrid { display: grid; gap: 12px; grid-template-columns: repeat(4, 1fr); margin-bottom: 80px; }
 .summaryGrid article { background: #fffefa; border: 1px solid #d7d3c8; border-top: 5px solid #236958; padding: 22px; }
-.summaryGrid span { color: #68737b; font-size: .68rem; font-weight: 800; }
+.summaryGrid span { color: #5a656d; font-size: .68rem; font-weight: 800; }
 .summaryGrid strong { display: block; font-size: clamp(2.2rem, 4vw, 3.7rem); letter-spacing: -.07em; margin: 22px 0 12px; }
 .summaryGrid p { color: #42505b; font-size: .7rem; margin: 0; }
 .boundarySection { background: #ece8dd; display: grid; gap: 45px; grid-template-columns: .7fr 1.3fr; padding: 50px 45px; }
@@ -19,7 +19,7 @@
 .sourceList { display: grid; gap: 9px; }
 .sourceList article { background: #fffefa; color: #17232c; padding: 19px; }
 .sourceList article > div { align-items: center; display: flex; justify-content: space-between; }
-.sourceList article > div > span { color: #68737b; font-size: .61rem; font-weight: 900; }
+.sourceList article > div > span { color: #5a656d; font-size: .61rem; font-weight: 900; }
 .sourceList h3 { font-size: .95rem; margin: 19px 0 7px; }
 .sourceList p { color: #42505b; font-size: .66rem; margin: 0 0 14px; }
 .sourceList a { color: #286f9f; font-size: .65rem; font-weight: 850; text-underline-offset: 3px; }

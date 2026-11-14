@@ -4,7 +4,7 @@
 .summaryGrid article { background: #fffefa; border: 1px solid #d7d3c8; border-top: 5px solid #236958; padding: 22px; }
 .summaryGrid article[data-status="partial"] { border-top-color: #b67919; }
 .summaryGrid article[data-status="not_linked"] { border-top-color: #8a8171; }
-.summaryGrid span { color: #68737b; font-size: .67rem; font-weight: 850; }
+.summaryGrid span { color: #5a656d; font-size: .67rem; font-weight: 850; }
 .summaryGrid strong { display: block; font-size: clamp(2.1rem, 4vw, 3.6rem); letter-spacing: -.07em; margin: 18px 0 10px; }
 .summaryGrid p { color: #42505b; font-size: .68rem; margin: 0; }
 .boundary { background: #ece8dd; display: grid; gap: 42px; grid-template-columns: .75fr 1.25fr; margin-bottom: 72px; padding: 46px; }
@@ -19,12 +19,12 @@
 .actualTable thead th { background: #ece8dd; color: #42505b; font-size: .61rem; font-weight: 900; position: sticky; top: 0; z-index: 2; }
 .actualTable tbody td { color: #42505b; font-size: .66rem; }
 .actualTable tbody th { min-width: 280px; }
-.actualTable tbody th small { color: #68737b; display: block; font-size: .56rem; margin-bottom: 5px; }
+.actualTable tbody th small { color: #5a656d; display: block; font-size: .56rem; margin-bottom: 5px; }
 .actualTable tbody th strong { display: block; font-size: .7rem; line-height: 1.55; }
 .actualTable a { color: #286f9f; font-weight: 800; text-underline-offset: 3px; }
-.actualTable td:last-child small { color: #68737b; display: block; font-size: .56rem; margin-top: 6px; max-width: 220px; }
+.actualTable td:last-child small { color: #5a656d; display: block; font-size: .56rem; margin-top: 6px; max-width: 220px; }
 .status { border: 1px solid #b9d7cb; border-radius: 999px; color: #145745; display: inline-flex; font-size: .58rem; font-weight: 850; padding: 5px 8px; white-space: nowrap; }
 .status[data-status="partial"] { background: #f4ead0; border-color: #ddc991; color: #78540d; }
-.status[data-status="not_linked"] { background: #ece8dd; border-color: #d7d3c8; color: #68737b; }
+.status[data-status="not_linked"] { background: #ece8dd; border-color: #d7d3c8; color: #5a656d; }
 @media (max-width: 960px) { .summaryGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .boundary, .sectionHeading { grid-template-columns: 1fr; } }
 @media (max-width: 540px) { .summaryGrid { grid-template-columns: 1fr; } .boundary { padding: 34px 22px; } }
