@@ -20,7 +20,8 @@ def read(path: Path):
 def test_iwaki_scaffold_validates_and_is_not_published():
     candidate = read(CANDIDATE)
     schema = read(SCHEMA)
-    errors = list(Draft202012Validator(schema, format_checker=FormatChecker()).iter_errors(candidate))
+    validator = Draft202012Validator(schema, format_checker=FormatChecker())
+    errors = list(validator.iter_errors(candidate))
     assert errors == []
     assert candidate["candidate_id"] == "iwaki-phase15-review-candidate"
     assert candidate["official_code"] == "072044"
@@ -40,17 +41,27 @@ def test_iwaki_sources_match_existing_official_inventory_without_invented_values
     expected = inventory["sources"]
     assert len(sources) == len(expected) == 4
     assert {source["id"] for source in sources} == {source["id"] for source in expected}
-    assert {(source["id"], source["official_url"]) for source in sources} == {
+    actual_urls = {(source["id"], source["official_url"]) for source in sources}
+    assert actual_urls == {
         (source["id"], source["official_url"]) for source in expected
     }
-    assert all(source["official_url"].startswith("https://www.city.iwaki.lg.jp/") for source in sources)
-    assert all(source["verification_status"] == "inventory_only_pending_primary_source_review" for source in sources)
+    assert all(
+        source["official_url"].startswith("https://www.city.iwaki.lg.jp/")
+        for source in sources
+    )
+    assert all(
+        source["verification_status"] == "inventory_only_pending_primary_source_review"
+        for source in sources
+    )
     package = candidate["candidate_package"]
     assert package["fiscal_records"] == []
     assert package["evidence_packets"] == []
     assert package["policy_structure"]["current_framework"]["start_fiscal_year"] is None
     assert package["policy_structure"]["current_framework"]["end_fiscal_year"] is None
-    assert package["policy_structure"]["current_framework"]["period_status"] == "verified_no_fixed_end"
+    assert (
+        package["policy_structure"]["current_framework"]["period_status"]
+        == "verified_no_fixed_end"
+    )
     layers = {source["id"]: source.get("fiscal_year") for source in sources}
     assert layers["iwaki-management-guideline-2026"] == 2026
     assert layers["iwaki-budget-2026"] == 2026
