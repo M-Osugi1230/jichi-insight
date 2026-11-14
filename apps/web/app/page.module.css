@@ -139,3 +139,154 @@
   .depthCard { padding: 23px; }
   .trustSection li { grid-template-columns: 92px 1fr; }
 }
+
+/* Public release information: a calm, readable hierarchy across desktop and mobile. */
+.heroTrustNote {
+  align-items: baseline;
+  color: #42505b;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.78rem;
+  gap: 10px;
+  line-height: 1.8;
+  margin: 20px 0 0;
+  max-width: 600px;
+}
+.heroTrustNote span {
+  border: 1px solid #b8b4aa;
+  border-radius: 999px;
+  color: #102e46;
+  flex: 0 0 auto;
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 2px 11px;
+}
+
+.reviewSection {
+  margin-top: 104px;
+}
+.reviewGrid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 48px;
+}
+.reviewCard {
+  background: #fffefa;
+  border: 1px solid #d7d3c8;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: clamp(20px, 2.5vw, 30px);
+}
+.reviewCardActive {
+  background: #edf3f1;
+  border-color: #b9d7cb;
+}
+.reviewCardTop {
+  border-bottom: 1px solid #d7d3c8;
+  color: #42505b;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.7rem;
+  gap: 6px 16px;
+  justify-content: space-between;
+  padding-bottom: 16px;
+}
+.reviewCardTop span:first-child {
+  color: #236958;
+  font-weight: 850;
+}
+.reviewCount {
+  color: #102e46;
+  font-size: clamp(3rem, 5vw, 5rem);
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+  letter-spacing: -0.065em;
+  line-height: 1.15;
+  margin: 34px 0 20px;
+}
+.reviewCount small {
+  color: #68737b;
+  font-size: 0.3em;
+  font-weight: 700;
+  margin-left: 5px;
+}
+.reviewCard h3 {
+  font-size: clamp(1.2rem, 2vw, 1.55rem);
+  letter-spacing: -0.035em;
+  margin-bottom: 10px;
+}
+.reviewCard > p:not(.reviewCount) {
+  color: #42505b;
+  font-size: 0.82rem;
+  line-height: 1.9;
+  margin-bottom: 28px;
+}
+.reviewCard > a {
+  align-items: center;
+  border-top: 1px solid #d7d3c8;
+  color: #102e46;
+  display: flex;
+  font-size: 0.84rem;
+  font-weight: 800;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 17px;
+  text-decoration: none;
+}
+.reviewCard > a:hover {
+  color: #236958;
+}
+.reviewCard > a span {
+  color: #236958;
+  font-size: 1.2rem;
+}
+.reviewStatusNote {
+  align-items: center;
+  background: #102e46;
+  border-radius: 18px;
+  color: #fff;
+  display: grid;
+  gap: 28px;
+  grid-template-columns: minmax(0, 1.4fr) minmax(210px, 0.6fr);
+  margin-top: 16px;
+  padding: 26px clamp(22px, 3vw, 38px);
+}
+.reviewStatusNote strong {
+  font-size: 1.08rem;
+}
+.reviewStatusNote p {
+  color: #dce8ee;
+  font-size: 0.79rem;
+  line-height: 1.8;
+  margin: 6px 0 0;
+}
+.reviewProgressValue {
+  display: grid;
+  gap: 10px;
+}
+.reviewProgressValue span {
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+}
+.reviewProgressValue progress {
+  accent-color: #78ceac;
+  height: 12px;
+  width: 100%;
+}
+@media (max-width: 1000px) {
+  .reviewGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .reviewCardActive { grid-column: 1 / -1; }
+}
+@media (max-width: 760px) {
+  .reviewSection { margin-top: 78px; }
+  .reviewGrid { grid-template-columns: 1fr; margin-top: 32px; }
+  .reviewCardActive { grid-column: auto; }
+  .reviewCard { padding: 24px; }
+  .reviewCount { margin-top: 22px; }
+  .reviewStatusNote { grid-template-columns: 1fr; gap: 20px; }
+  .heroTrustNote { font-size: 0.75rem; }
+}

@@ -45,6 +45,7 @@ REQUIRED_FILES = [
     "municipalities/fukuoka-city/index.html",
     "municipalities/kitakyushu-city/index.html",
     "sources/index.html",
+    "review-progress/index.html",
     "robots.txt",
     "sitemap.xml",
     "manifest.webmanifest",
@@ -172,6 +173,14 @@ BASE_PAGE_REQUIREMENTS: dict[str, list[str]] = {
         "1,925億円",
         "市税決算額",
         "まだ評価していないこと",
+    ],
+    "review-progress/index.html": [
+        "どこまで確認できたかも、公開する。",
+        "Phase 15の現在地",
+        "レビュー完了率",
+        "自治体別のレビュー状況",
+        "作業中の候補データ",
+        "レビュー完了記録",
     ],
     "compare/index.html": [
         "同じ条件の数字だけで見る。",
