@@ -23,6 +23,7 @@ REQUIRED_ROUTES = {
     "/methodology/",
     "/municipalities/",
     "/privacy/",
+    "/review-progress/",
     "/sources/",
     "/terms/",
 }

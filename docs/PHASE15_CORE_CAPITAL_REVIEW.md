@@ -99,13 +99,47 @@ Declared v1 package:
 
 Deferred depth includes all current promotion-plan indicator identities/values, all expansion-measure/project identities and annual version diffs, all 34 measure indicator detail, successor-plan adoption, fiscal project detail, causality and cross-city comparability.
 
+## Third completion — Aomori
+
+青森市を3市目の`reviewed_complete`へ昇格しました。
+
+Declared v1 package:
+
+- current comprehensive plan: 青森市総合計画前期基本計画 2024–2028
+- policy pillars: 3
+- current-plan policies: 17
+- policy realization directions: 5
+- evaluation governance: annual indicator setting/tracking + major policy outcome reporting
+- FY2026 general-account initial budget: 133,510,000,000 yen (enacted)
+- FY2024 general-account settlement: exact revenue (142,517,400,928 yen) and expenditure (138,679,303,495 yen) values from audit evidence
+
+Deferred depth includes row-level promotion for all measure indicators/targets/actuals/grades, major project detail from performance report, fine-grained policy-indicator-project linkage, fiscal project linkage, causality and cross-city comparability.
+
+## Fourth completion — Hachinohe
+
+八戸市を4市目の`reviewed_complete`へ昇格しました。
+
+Declared v1 package:
+
+- current comprehensive plan: 第7次八戸市総合計画 FY2022–FY2026
+- action guidelines: 3
+- current policies: 6
+- current measures: 55
+- annual strategy layer: 未来共創推進戦略2026 (9 strategies, 780 listed projects, 691 unique projects)
+- evaluation governance: municipal committee review covering 616 projects, management indicators, survey data, and self-evaluations
+- successor plan transition: はちのへビジョン8.0 draft (public comment completed)
+- FY2026 general-account initial budget: 104,200,000,000 yen (enacted)
+- FY2024 general-account settlement: exact revenue (108,585,206 thousand yen) and expenditure (105,245,944 thousand yen) values from audit evidence
+
+Deferred depth includes row-level indicator values for all 55 measures, 691 project detail records, strategy-to-measure fine-grained linkage, successor plan adoption version, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 2 / 67 — 函館市、旭川市
-- Review in progress: 1 — 青森市
-- Pending record review: 64
+- Reviewed complete: 4 / 67 — 函館市、旭川市、青森市、八戸市
+- Review in progress: 1 — 盛岡市
+- Pending record review: 62
 - Blocked source inventory: 0
-- Next official code: 022012
+- Next official code: 032018
 
 ## Definition of Phase 15 completion
 

@@ -11,6 +11,7 @@ const primaryNavigation = [
 ];
 
 const evidenceNavigation = [
+  { href: "/review-progress", label: "自治体レビュー進捗" },
   { href: "/about", label: "このサイトの目的" },
   { href: "/data-quality", label: "データ品質" },
   { href: "/methodology", label: "読み方・評価方法" },
@@ -22,7 +23,10 @@ const evidenceNavigation = [
 export function SiteHeader() {
   return (
     <>
-      <div className="dataPulse" role="status">
+      <a className="skipLink" href="#page-content">
+        本文へスキップ
+      </a>
+      <div className="dataPulse" aria-label="データ収録状況">
         <div>
           <span className="dataPulseDot" aria-hidden="true" />
           <span className="dataPulseLabel">DATA UPDATE</span>
@@ -69,6 +73,7 @@ export function SiteHeader() {
           </nav>
         </details>
       </header>
+      <span id="page-content" className="skipTarget" tabIndex={-1} />
     </>
   );
 }
