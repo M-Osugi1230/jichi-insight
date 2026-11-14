@@ -8,7 +8,7 @@
 .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 9px; }
 .chips button { align-items: center; background: rgb(255 255 255 / 9%); border: 1px solid rgb(255 255 255 / 22%); border-radius: 999px; color: #d9e5eb; cursor: pointer; display: inline-flex; font: inherit; font-size: 0.71rem; font-weight: 750; gap: 8px; min-height: 40px; padding: 7px 11px; }
 .chips button strong { align-items: center; background: rgb(255 255 255 / 13%); border-radius: 999px; color: #fff; display: inline-flex; font-size: 0.65rem; justify-content: center; min-height: 23px; min-width: 23px; padding: 2px 6px; }
-.chips .activeChip { background: #de5a3d; border-color: #a83a24; }
+.chips .activeChip { background: #a83a24; border-color: #a83a24; }
 .chips .activeChip strong { background: #fff; color: #b6422c; }
 .resultBar { align-items: center; border-bottom: 1px solid #b8b4aa; display: flex; justify-content: space-between; padding: 22px 2px 14px; }
 .resultBar p { color: #5a656d; font-size: 0.76rem; margin: 0; }
