@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import { PageIntro } from "@/components/PageIntro";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -74,6 +75,9 @@ export default function CorrectionsPage() {
             <li><strong>修正</strong><span>Pull Requestと自動検証を通して反映</span></li>
             <li><strong>履歴</strong><span>修正前後、理由、根拠、日時、影響範囲を公開</span></li>
           </ol>
+          <p>
+            適用済みの訂正は <Link href="/corrections/history">変更履歴</Link> で公開します。
+          </p>
         </section>
 
         <section className="callout callout--dark">
