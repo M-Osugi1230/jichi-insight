@@ -304,4 +304,4 @@ pnpm check
 
 ## License
 
-コード、方法論、データの権利関係は分離して扱います。ライセンス確定前の内容は、権利者の明示的な許可なく再利用できません。詳細は [DATA_POLICY.md](DATA_POLICY.md) を参照してください。
+コード、方法論、データの権利関係は分離して扱います。コードは MIT License、方法論・ドキュメントと構造化データ（本プロジェクトの編集成果の範囲）は CC BY 4.0 です。原資料そのものの権利は各権利者に属し、本プロジェクトは再許諾しません。詳細は [docs/LICENSING.md](docs/LICENSING.md) と [DATA_POLICY.md](DATA_POLICY.md) を参照してください。
