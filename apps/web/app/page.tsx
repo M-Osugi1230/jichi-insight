@@ -3,10 +3,8 @@ import Link from "next/link";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { StatusBadge } from "@/components/StatusBadge";
-import {
-  phase10StageSummary,
-  reviewedCoverageStats,
-} from "@/lib/reviewedCoverage";
+import { reviewedCoverageStats } from "@/lib/reviewedCoverage";
+import { phase15Progress } from "@/lib/phase15Progress";
 
 import styles from "./page.module.css";
 
@@ -108,6 +106,10 @@ export default function Home() {
           <p className={styles.heroLead}>
             計画、予算、事業、成果、議会。ばらばらに公開された一次資料を、
             住民が自分で判断できる順序へつなぎ直します。
+          </p>
+          <p className={styles.heroTrustNote}>
+            <span>公開中・pre-alpha</span>
+            確認済みの内容と、まだ接続できていない情報を区別して掲載しています。
           </p>
           <div className={styles.heroActions}>
             <Link className="primaryAction" href="/municipalities">
@@ -249,47 +251,81 @@ export default function Home() {
         </ol>
       </section>
 
-      <section className={styles.section}>
-        <div className={styles.readinessLayout}>
+      <section className={`${styles.section} ${styles.reviewSection}`} aria-labelledby="review-readiness-title">
+        <div className={styles.sectionHeading}>
           <div>
-            <p className="eyebrow">Post-Phase 10 / record-level deepening</p>
-            <h2>
-              全国の文書基盤は完了。
+            <p className="eyebrow">Coverage / verified depth</p>
+            <h2 id="review-readiness-title">
+              全国に入口を。
               <br />
-              次は、個票の一対一接続。
+              確認の深さは、正直に。
             </h2>
-            <p className={styles.readinessLead}>
-              年度実績、予算・決算、重点事業、監査は47都道府県で文書スコープまで接続済みです。
-              次は、個別の目標、予算科目、事業、契約、議会発言、監査指摘を、定義・期間・主体を照合しながら一対一で深めます。
-            </p>
-            <Link className="secondaryAction" href="/municipalities/phase10">
-              Phase 10の完了境界を見る
-            </Link>
           </div>
-          <div className={styles.readinessBars}>
-            {phase10StageSummary.map((stage) => (
-              <div key={stage.key}>
-                <div>
-                  <span>
-                    {stage.label}
-                    <small>
-                      {stage.key === "project_evaluation"
-                        ? "47都道府県で文書スコープ接続"
-                        : stage.key === "contracts"
-                          ? "47都道府県でReviewed coverage"
-                          : stage.note}
-                    </small>
-                  </span>
-                  <strong>{stage.count}<small>/47</small></strong>
-                </div>
-                <div
-                  className={styles.bar}
-                  aria-label={`${stage.label} ${stage.count}/47`}
-                >
-                  <span style={{ width: `${(stage.count / 47) * 100}%` }} />
-                </div>
-              </div>
-            ))}
+          <p>
+            資料を収録したことと、政策・実績・予算を個票単位で照合したことは異なります。
+            いま閲覧できる情報の範囲を、段階ごとに公開します。
+          </p>
+        </div>
+        <div className={styles.reviewGrid}>
+          <article className={styles.reviewCard}>
+            <div className={styles.reviewCardTop}>
+              <span>01 / Prefectures</span>
+              <span>全国の目標・指標</span>
+            </div>
+            <p className={styles.reviewCount}>47<small>/47</small></p>
+            <h3>都道府県の原文を確認</h3>
+            <p>
+              全国47都道府県の政策目標と出典を探せます。
+              一つひとつの予算・事業・成果がすべて接続済みという意味ではありません。
+            </p>
+            <Link href="/municipalities">都道府県から探す <span aria-hidden="true">→</span></Link>
+          </article>
+          <article className={styles.reviewCard}>
+            <div className={styles.reviewCardTop}>
+              <span>02 / Designated cities</span>
+              <span>政令指定都市のv1基盤</span>
+            </div>
+            <p className={styles.reviewCount}>20<small>/20</small></p>
+            <h3>政令指定都市をレビュー</h3>
+            <p>
+              20市の一次資料・計画・進行管理・財政トップラインをv1の対象範囲で確認。
+              未公表や追加レビュー対象も区別しています。
+            </p>
+            <Link href="/data-quality">確認の基準を読む <span aria-hidden="true">→</span></Link>
+          </article>
+          <article className={`${styles.reviewCard} ${styles.reviewCardActive}`}>
+            <div className={styles.reviewCardTop}>
+              <span>03 / Core cities & capitals</span>
+              <span>詳細レビュー進行中</span>
+            </div>
+            <p className={styles.reviewCount}>
+              {phase15Progress.reviewed}<small>/{phase15Progress.total}</small>
+            </p>
+            <h3>中核市・県庁所在地を深掘り</h3>
+            <p>
+              全{phase15Progress.total}自治体の公式資料を索引済み。
+              詳細レビューは{phase15Progress.reviewed}自治体が完了し、{phase15Progress.inProgress}自治体が進行中です。
+            </p>
+            <Link href="/review-progress">自治体別の進捗を見る <span aria-hidden="true">→</span></Link>
+          </article>
+        </div>
+        <div className={styles.reviewStatusNote}>
+          <div>
+            <strong>詳細レビューの公開進捗</strong>
+            <p>
+              未確認候補は審査済みデータとして表示しません。次のレビュー対象：
+              {phase15Progress.nextMunicipality ?? "確定待ち"}
+            </p>
+          </div>
+          <div className={styles.reviewProgressValue}>
+            <span>{phase15Progress.reviewed} / {phase15Progress.total} 完了</span>
+            <progress
+              value={phase15Progress.reviewed}
+              max={phase15Progress.total}
+              aria-label="Phase 15 詳細レビューの完了状況"
+            >
+              {phase15Progress.reviewed} / {phase15Progress.total}
+            </progress>
           </div>
         </div>
       </section>
