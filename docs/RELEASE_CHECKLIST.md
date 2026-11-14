@@ -121,10 +121,10 @@
 
 - [x] リリース、訂正、障害、ロールバック、バックアップ手順
 - [x] Production Smokeと公開検証の自動化
-- [ ] 更新責任者とレビュー責任者を明記
-- [ ] 定期更新頻度、計画改定検知、訂正回答期限を確定
-- [ ] P0 / P1障害連絡経路を確定
-- [ ] 公開後4週間の安定運用計測方法を確定
+- [x] 更新責任者とレビュー責任者を明記（2026-11-15確定: 全ロールを大杉邑大が兼務する単独運用体制。docs/OPERATIONS_RUNBOOK.md §2）
+- [x] 定期更新頻度、計画改定検知、訂正回答期限を確定（頻度と検知方法はOPERATIONS_RUNBOOK §4、訂正の確認開始目標はdocs/CORRECTIONS.mdとOPERATIONS_RUNBOOK §5）
+- [x] P0 / P1障害連絡経路を確定（GitHub Issuesを正規の受付経路とし、非公開事項の扱いを含めOPERATIONS_RUNBOOK §6に明記）
+- [x] 公開後4週間の安定運用計測方法を確定（OPERATIONS_RUNBOOK §11に週次計測の項目と安定の目安を定義。計測の実施は正式公開後）
 
 ## Repository hygiene
 

@@ -1,6 +1,6 @@
 # Jichi Insight publication operations runbook
 
-最終更新: 2026-07-29
+最終更新: 2026-11-15
 
 ## 1. Purpose
 
@@ -8,16 +8,18 @@
 
 ## 2. Roles
 
-正式公開前にGitHubユーザー名または組織ロールを記入します。
+2026-11-15に次のとおり確定しました。本プロジェクトは当面、公開責任者である大杉邑大が全ロールを兼務する単独運用体制とします。体制を変更した場合は、本表と変更日を更新します。
 
 | Role | Responsibility | Owner |
 | --- | --- | --- |
-| Publication owner | 公開境界、Go / No-Go、重大表現の最終承認 | 未設定 |
-| Data reviewer | 一次資料、Evidence Packet、年度・単位・定義の照合 | 未設定 |
-| Engineering owner | CI、build、deployment、monitoring、rollback | 未設定 |
-| Correction owner | 訂正受付、一次回答、調査、履歴公開 | 未設定 |
+| Publication owner | 公開境界、Go / No-Go、重大表現の最終承認 | 大杉邑大（GitHub: M-Osugi1230） |
+| Data reviewer | 一次資料、Evidence Packet、年度・単位・定義の照合 | 大杉邑大（GitHub: M-Osugi1230） |
+| Engineering owner | CI、build、deployment、monitoring、rollback | 大杉邑大（GitHub: M-Osugi1230） |
+| Correction owner | 訂正受付、一次回答、調査、履歴公開 | 大杉邑大（GitHub: M-Osugi1230） |
 
 一人が複数ロールを兼務する場合でも、各判断をPull RequestまたはIssueへ記録します。
+
+AI支援（Muse等）による照合、下書き、候補作成を行う場合でも、公開、レビュー、訂正判定の決定と承認は公開責任者が行い、Pull RequestまたはIssueへ記録します。候補（prepared）とReviewedの区別は、運用作業でも維持します。
 
 ## 3. Normal release procedure
 
@@ -40,18 +42,23 @@
 
 更新がない場合も、最終確認日を更新するためだけに根拠なくコミットしません。確認した資料と結果を記録します。
 
+計画改定の検知方法: 月次の公式計画入口・リンク確認の際に、収録自治体の公式計画ページで改定、後継計画、廃止の有無を確認します。Phase 15のレビュー作業や予算・決算確認の過程で改定を検知した場合も、同じ記録方法で残します。読者からの改定情報はGitHub Issueで受け付けます。自動スクレイピングによる常時監視は行わず、検知は上記の定期確認と外部からの報告に基づきます。
+
 ## 5. Correction service level
 
 公開Issueで受け付けられる内容に限り、次を運用目標とします。
 
-- 受付確認: 7日以内
-- 重大性の一次判定: 7日以内
+重大度ごとの確認開始目標は docs/CORRECTIONS.md を正とします（P0: 24時間以内、P1: 3営業日以内、P2: 10営業日以内に確認開始）。そのうえで、次を運用目標とします。
+
+- 受付と重大性の一次判定は、申請内容と判定結果をIssueへ記録する
 - 明白な事実誤認・リンク切れ: 原則14日以内に修正または状況回答
 - 複雑な定義差・評価変更: 調査計画と次回更新予定をIssueへ記録
 
 個人情報、認証情報、脆弱性、非公開資料が投稿された場合は、内容を引用せず、可能な範囲で非表示化・削除を優先します。
 
 ## 6. Incident levels
+
+連絡経路: 障害と訂正の正規の受付経路はGitHub Issues（公開）とし、P0 / P1はIssueの起票をもって受付とします。個人情報、認証情報、脆弱性など公開できない内容は、Issueへ詳細を記載せず、非公開の連絡を希望する旨のみを投稿してください。公開責任者が個別に対応します。
 
 ### P0 — Critical
 
@@ -131,3 +138,14 @@
 - 外部レビューと重大表現確認の結果
 - 未解決P0/P1件数
 - Publication ownerのGo / No-Go判断と日時
+
+## 11. 公開後4週間の安定運用計測
+
+正式公開後の4週間は、週1回、次の項目を確認し、結果を公開判断の記録（Issue #12）へ残します。
+
+- Production Smokeと公開検証（`.github/publication-status.json`）の結果
+- 未解決のP0 / P1 Issueの件数と経過
+- 訂正申請への確認開始が docs/CORRECTIONS.md の目標内であったか
+- ロールバックの実施有無と、その理由
+
+安定の目安は、未解決のP0が継続しないこと、公開検証がverifiedを維持すること、訂正の確認開始が目標を大きく逸脱しないことです。計測は公開責任者による週次の手作業確認とし、自動監視を導入する場合は、通知先、確認担当、再通知条件を本書へ追記します。
