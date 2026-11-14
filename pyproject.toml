@@ -6,6 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "jichi-insight-pipelines"
 version = "0.0.0"
 description = "Evidence-first data pipelines for Jichi Insight"
+license = { text = "MIT" }
 requires-python = ">=3.12"
 dependencies = [
   "beautifulsoup4>=4.13,<5",
