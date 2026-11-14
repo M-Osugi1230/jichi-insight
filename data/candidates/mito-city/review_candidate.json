@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "candidate_id": "mito-phase15-review-candidate",
+  "phase": 15,
+  "status": "review_candidate",
+  "official_code": "082015",
+  "name_ja": "水戸市",
+  "source_inventory_path": "data/indexed/mito-city/source_inventory.json",
+  "package_state": "scaffold",
+  "candidate_package": {
+    "source_catalog": {
+      "id": "mito-phase15-sources",
+      "phase": 15,
+      "official_code": "082015",
+      "name_ja": "水戸市",
+      "sources": [
+        {
+          "id": "mito-seventh-plan",
+          "evidence_role": "comprehensive_plan",
+          "title": "水戸市第7次総合計画－みと魁・Nextプラン－",
+          "official_url": "https://www.city.mito.lg.jp/page/69724.html",
+          "format": "html",
+          "evidence_location": "Phase 14 inventory official landing page; exact primary-source passage and document version pending independent verification",
+          "use_boundary": "最上位計画の10年間と前後期基本計画を確認し、基本構想・基本計画・年度実施計画を別layerで保持する。",
+          "verification_status": "inventory_only_pending_primary_source_review",
+          "effective_period": "2024年度～2033年度"
+        },
+        {
+          "id": "mito-implementation-2026-2028",
+          "evidence_role": "implementation_plan",
+          "title": "3か年実施計画（2026年度～2028年度）",
+          "official_url": "https://www.city.mito.lg.jp/page/116349.html",
+          "format": "html",
+          "evidence_location": "Phase 14 inventory official landing page; exact primary-source passage and document version pending independent verification",
+          "use_boundary": "3年間の主要事業を毎年度ローリングし、実績評価を反映する運用を確認する。年度版を長期基本計画と同一versionへ統合しない。",
+          "verification_status": "inventory_only_pending_primary_source_review",
+          "effective_period": "2026年度～2028年度"
+        },
+        {
+          "id": "mito-budget-2026",
+          "evidence_role": "budget",
+          "title": "令和8年度予算の概要",
+          "official_url": "https://www.city.mito.lg.jp/page/110290.html",
+          "format": "html",
+          "evidence_location": "Phase 14 inventory official landing page; exact primary-source passage and document version pending independent verification",
+          "use_boundary": "FY2026当初予算の公式入口として保持し、補正・執行・決算を別stateで扱う。",
+          "verification_status": "inventory_only_pending_primary_source_review",
+          "fiscal_year": 2026
+        },
+        {
+          "id": "mito-settlement-2024",
+          "evidence_role": "settlement_and_annual_results",
+          "title": "令和6年度決算の概要",
+          "official_url": "https://www.city.mito.lg.jp/page/107758.html",
+          "format": "html",
+          "evidence_location": "Phase 14 inventory official landing page; exact primary-source passage and document version pending independent verification",
+          "use_boundary": "FY2024決算と主要施策成果の公式入口。財政決算と政策成果を別Evidence roleとしてPhase 15で個票確認する。",
+          "verification_status": "inventory_only_pending_primary_source_review",
+          "fiscal_year": 2024
+        }
+      ]
+    },
+    "plan_review": {
+      "id": "phase15-mito-plan-review",
+      "official_code": "082015",
+      "name_ja": "水戸市",
+      "review_status": "pending_record_review",
+      "records": [
+        {
+          "id": "mito-current-plan-period",
+          "evidence_role": "current_plan_identity",
+          "title": "水戸市第7次総合計画－みと魁・Nextプラン－",
+          "statement": "Phase 14 source inventory records a 2024–2033 comprehensive-plan period; independent primary-source verification is still pending.",
+          "start_fiscal_year": 2024,
+          "end_fiscal_year": 2033,
+          "source_url": "https://www.city.mito.lg.jp/page/69724.html",
+          "evidence_location": "Phase 14 source inventory: plan_period; primary source passage not independently checked",
+          "decision": "needs_review",
+          "review_note": "Inventory-derived only; not a human-reviewed Phase 15 fact."
+        }
+      ]
+    },
+    "policy_structure": {
+      "id": "mito-policy-structure-scaffold",
+      "official_code": "082015",
+      "name_ja": "水戸市",
+      "current_plan": {
+        "title": "水戸市第7次総合計画－みと魁・Nextプラン－",
+        "start_fiscal_year": 2024,
+        "end_fiscal_year": 2033,
+        "review_status": "needs_review"
+      },
+      "layers": [
+        {
+          "source_id": "mito-seventh-plan",
+          "layer": "comprehensive_plan",
+          "period": "2024年度～2033年度",
+          "fiscal_year": null,
+          "review_status": "needs_review"
+        },
+        {
+          "source_id": "mito-implementation-2026-2028",
+          "layer": "implementation_plan",
+          "period": "2026年度～2028年度",
+          "fiscal_year": null,
+          "review_status": "needs_review"
+        },
+        {
+          "source_id": "mito-budget-2026",
+          "layer": "budget",
+          "period": null,
+          "fiscal_year": 2026,
+          "review_status": "needs_review"
+        },
+        {
+          "source_id": "mito-settlement-2024",
+          "layer": "settlement_and_annual_results",
+          "period": null,
+          "fiscal_year": 2024,
+          "review_status": "needs_review"
+        }
+      ]
+    },
+    "progress_review": {
+      "id": "mito-progress-review-scaffold",
+      "official_code": "082015",
+      "name_ja": "水戸市",
+      "review_status": "not_assessable",
+      "reason": "No individual KPI baseline, achieved outcome, annual evaluation or causal effect has been independently verified."
+    },
+    "fiscal_records": [],
+    "evidence_packets": []
+  },
+  "quality_boundaries": [
+    "This is a non-public scaffold copied from the existing Phase 14 official-source inventory; it is not independent primary-source verification.",
+    "The 2024–2033 comprehensive plan and 2026–2028 rolling implementation plan are distinct versions and must not be merged.",
+    "FY2026 initial budget and FY2024 settlement are distinct fiscal stages; no amounts or policy-to-fiscal links have been verified.",
+    "No invented KPI achievements, policy outcome scores, causal attribution or cross-city rankings are permitted.",
+    "Human review of the actual primary-source passages and exact evidence locators is mandatory before Reviewed promotion."
+  ],
+  "deferred_depth": [
+    {
+      "id": "official-page-pdf-verification",
+      "status": "deferred_pending_primary_source_verification",
+      "boundary": "Verify all four official landing pages, document versions, publication dates and exact passages or PDF pages."
+    },
+    {
+      "id": "plan-indicators-and-rolling-projects",
+      "status": "deferred_pending_primary_source_verification",
+      "boundary": "Extract policy indicators and rolling implementation projects only when supported by independently checked primary-source passages."
+    },
+    {
+      "id": "fiscal-record-and-evidence-extraction",
+      "status": "deferred_pending_primary_source_verification",
+      "boundary": "Independently verify FY2026 initial budget and FY2024 settlement values before adding fiscal records or evidence packets."
+    }
+  ],
+  "human_review": {
+    "required": true,
+    "status": "pending",
+    "boundary": "A person must independently review the official primary-source documents, exact locators and proposed records before any reviewed_complete promotion.",
+    "reviewed_at": null,
+    "reviewer_note": null
+  },
+  "publication": {
+    "eligible": false,
+    "boundary": "This candidate is staging-only and must not be imported into the public website or treated as reviewed content."
+  }
+}
