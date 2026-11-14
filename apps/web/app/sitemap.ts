@@ -57,7 +57,7 @@ export const dynamic = "force-static";
 export default function sitemap(): MetadataRoute.Sitemap {
   return routes.map((route) => ({
     url: `${siteUrl}${route}`,
-    lastModified: new Date("2026-08-01"),
+    // Omit lastModified until a verifiable per-route content update date is available.
     changeFrequency: route === "" ? "weekly" : "monthly",
     priority:
       route === ""
