@@ -326,8 +326,13 @@ export const reviewedCoverageStats = {
     "reviewed",
     "linked",
   ]),
+  projectLinkedPrefectures: countDepth("project_evaluation", ["linked"]),
   projectIndexedOrBetterPrefectures: countDepth("project_evaluation", [
     "indexed",
+    "reviewed",
+    "linked",
+  ]),
+  contractReviewedPrefectures: countDepth("contracts", [
     "reviewed",
     "linked",
   ]),
@@ -362,12 +367,12 @@ export const phase10StageSummary = [
     key: "project_evaluation" as const,
     label: "事業",
     count: reviewedCoverageStats.projectIndexedOrBetterPrefectures,
-    note: "2都道府県で入口を索引",
+    note: `${reviewedCoverageStats.projectLinkedPrefectures}接続・${reviewedCoverageStats.projectIndexedOrBetterPrefectures - reviewedCoverageStats.projectLinkedPrefectures}索引`,
   },
   {
     key: "contracts" as const,
     label: "契約",
     count: reviewedCoverageStats.contractIndexedOrBetterPrefectures,
-    note: "2都道府県で入口を索引",
+    note: `${reviewedCoverageStats.contractReviewedPrefectures}照合・${reviewedCoverageStats.contractIndexedOrBetterPrefectures - reviewedCoverageStats.contractReviewedPrefectures}索引`,
   },
 ];
