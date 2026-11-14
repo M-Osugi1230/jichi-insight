@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "candidate_id": "iwaki-phase15-review-candidate",
+  "phase": 15,
+  "status": "review_candidate",
+  "official_code": "072044",
+  "name_ja": "いわき市",
+  "source_inventory_path": "data/indexed/iwaki-city/source_inventory.json",
+  "package_state": "scaffold",
+  "candidate_package": {
+    "source_catalog": {
+      "id": "iwaki-phase15-sources",
+      "phase": 15,
+      "official_code": "072044",
+      "name_ja": "いわき市",
+      "sources": [
+        {
+          "id": "iwaki-basic-policy",
+          "evidence_role": "comprehensive_policy_framework",
+          "title": "いわき市 まちづくりの基本方針（理念・経営指針・いわき版骨太の方針）",
+          "official_url": "https://www.city.iwaki.lg.jp/www/contents/1728362409876/index.html",
+          "format": "html",
+          "evidence_location": "Phase 14 official landing page; exact section, document version and page locator require verification",
+          "use_boundary": "旧総合計画に代わる固定終期を持たない方針体系として、普遍的理念・更新型経営指針・年度骨太方針を別layerで保持する。",
+          "verification_status": "inventory_only_pending_primary_source_review",
+          "fiscal_year": null
+        },
+        {
+          "id": "iwaki-management-guideline-2026",
+          "evidence_role": "annual_implementation",
+          "title": "令和8年度 まちづくりの経営指針 位置付け事業",
+          "official_url": "https://www.city.iwaki.lg.jp/www/contents/1728362409876/index.html",
+          "format": "html",
+          "evidence_location": "Phase 14 official landing page; exact section, document version and page locator require verification",
+          "use_boundary": "毎年検証・更新される経営指針のFY2026事業群を確認する入口。年度版を恒久計画へ固定化しない。",
+          "verification_status": "inventory_only_pending_primary_source_review",
+          "fiscal_year": 2026
+        },
+        {
+          "id": "iwaki-budget-2026",
+          "evidence_role": "budget",
+          "title": "令和8年度当初予算",
+          "official_url": "https://www.city.iwaki.lg.jp/www/contents/1761108064077/index.html",
+          "format": "html",
+          "evidence_location": "Phase 14 official landing page; exact section, document version and page locator require verification",
+          "use_boundary": "FY2026当初予算書・説明書の公式入口。補正・執行・決算とstate分離する。",
+          "verification_status": "inventory_only_pending_primary_source_review",
+          "fiscal_year": 2026
+        },
+        {
+          "id": "iwaki-settlement-2024",
+          "evidence_role": "settlement_and_major_measures",
+          "title": "令和6年度決算",
+          "official_url": "https://www.city.iwaki.lg.jp/www/contents/1763711744055/index.html",
+          "format": "html",
+          "evidence_location": "Phase 14 official landing page; exact section, document version and page locator require verification",
+          "use_boundary": "FY2024決算書・事項別明細・主要施策成果説明書の公式入口。財政と施策成果を別Evidence roleで保持する。",
+          "verification_status": "inventory_only_pending_primary_source_review",
+          "fiscal_year": 2024
+        }
+      ]
+    },
+    "plan_review": {
+      "id": "phase15-iwaki-plan-review",
+      "official_code": "072044",
+      "name_ja": "いわき市",
+      "review_status": "pending_record_review",
+      "records": [
+        {
+          "id": "iwaki-policy-framework-period",
+          "evidence_role": "policy_framework_identity",
+          "title": "いわき市まちづくりの基本方針",
+          "statement": "Phase 14 inventory classifies the policy framework as having no fixed end date; verify against official primary source before promotion.",
+          "start_fiscal_year": null,
+          "end_fiscal_year": null,
+          "source_url": "https://www.city.iwaki.lg.jp/www/contents/1728362409876/index.html",
+          "evidence_location": "Phase 14 inventory: plan_period.period_status; primary-source page locator not yet independently verified",
+          "decision": "needs_review",
+          "review_note": "Do not convert a no-fixed-end policy framework into a conventional fixed-period comprehensive plan."
+        }
+      ]
+    },
+    "policy_structure": {
+      "id": "iwaki-policy-structure-scaffold",
+      "official_code": "072044",
+      "name_ja": "いわき市",
+      "current_framework": {
+        "title": "いわき市まちづくりの基本方針",
+        "start_fiscal_year": null,
+        "end_fiscal_year": null,
+        "period_status": "verified_no_fixed_end",
+        "review_status": "needs_review"
+      },
+      "layers": [
+        {
+          "source_id": "iwaki-basic-policy",
+          "layer": "comprehensive_policy_framework",
+          "fiscal_year": null,
+          "review_status": "needs_review"
+        },
+        {
+          "source_id": "iwaki-management-guideline-2026",
+          "layer": "annual_implementation",
+          "fiscal_year": 2026,
+          "review_status": "needs_review"
+        },
+        {
+          "source_id": "iwaki-budget-2026",
+          "layer": "budget",
+          "fiscal_year": 2026,
+          "review_status": "needs_review"
+        },
+        {
+          "source_id": "iwaki-settlement-2024",
+          "layer": "settlement_and_major_measures",
+          "fiscal_year": 2024,
+          "review_status": "needs_review"
+        }
+      ]
+    },
+    "progress_review": {
+      "id": "iwaki-progress-review-scaffold",
+      "official_code": "072044",
+      "name_ja": "いわき市",
+      "review_status": "not_assessable",
+      "reason": "Annual implementation measures, KPI baselines, progress and outcome cannot be inferred from official landing-page inventory alone."
+    },
+    "fiscal_records": [],
+    "evidence_packets": []
+  },
+  "quality_boundaries": [
+    "This is a scaffold derived from the existing Phase 14 official-source inventory, not an independently verified Phase 15 evidence package.",
+    "No amounts, project-level measures, KPI achievements, fiscal outcomes or page-level evidence locators have been verified; fiscal_records and evidence_packets remain empty.",
+    "FY2026 initial budget and FY2024 settlement must be kept as different fiscal years and accounting stages; neither implies a project-level linkage.",
+    "No Jichi Insight score, causal attribution, cross-city ranking, or inferred policy achievement may be created.",
+    "Human review of the cited primary sources and exact evidence locations is required before any Reviewed promotion."
+  ],
+  "deferred_depth": [
+    {
+      "id": "official-page-and-pdf-locators",
+      "status": "deferred_pending_primary_source_verification",
+      "boundary": "Verify official page content, downloadable PDF versions and exact page or section locators for all four inventory source entries."
+    },
+    {
+      "id": "annual-guideline-measures-and-kpis",
+      "status": "deferred_pending_primary_source_verification",
+      "boundary": "Extract FY2026 management-guideline projects and outcome indicators only with exact official citations and source versions."
+    },
+    {
+      "id": "budget-and-settlement-evidence",
+      "status": "deferred_pending_primary_source_verification",
+      "boundary": "Independently verify FY2026 initial budget and FY2024 settlement records; do not invent fiscal amounts or merge different fiscal stages."
+    }
+  ],
+  "human_review": {
+    "required": true,
+    "status": "pending",
+    "boundary": "A human reviewer must independently inspect the cited official primary sources, document exact evidence locators, and approve before any Reviewed promotion.",
+    "reviewed_at": null,
+    "reviewer_note": null
+  },
+  "publication": {
+    "eligible": false,
+    "boundary": "Scaffold is non-public staging material; the website must not ingest it or present any unverified claims as Reviewed."
+  }
+}
