@@ -79,7 +79,10 @@ def test_iwaki_is_still_pending_in_canonical_queue():
 def test_public_web_does_not_import_candidate_staging():
     violations = []
     for path in WEB_ROOT.rglob("*"):
-        if path.is_file() and path.suffix in {".ts", ".tsx", ".js", ".mjs"}:
-            if "data/candidates" in path.read_text(encoding="utf-8"):
-                violations.append(str(path.relative_to(ROOT)))
+        if (
+            path.is_file()
+            and path.suffix in {".ts", ".tsx", ".js", ".mjs"}
+            and "data/candidates" in path.read_text(encoding="utf-8")
+        ):
+            violations.append(str(path.relative_to(ROOT)))
     assert violations == []
