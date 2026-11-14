@@ -1,6 +1,6 @@
 # Public release checklist
 
-最終更新: 2026-08-02
+最終更新: 2026-11-14
 
 このチェックリストは、実装の有無ではなく、公開判断に必要な証跡がリポジトリ上で確認できるかを基準に管理します。
 
@@ -9,15 +9,17 @@
 
 ## Current release position
 
-- Phase 0〜10は完了
-- 47都道府県でEvidence-backed Reviewed基盤と文書スコープ接続を公開
-- GitHub Pages、Publication Audit、Production Smokeは成功
-- 現在の成熟度は正式なPublic betaではなく、公開済みpre-alpha
-- Phase 11 Wave 1は861個票を全件正規化・統合検証済み
-- Phase 11 Wave 2は5/5拠点、711件・725系列を全件正規化・統合検証済み
-- Wave 3を開始し、残る38県を都道府県コード順に処理
-- 次の対象は青森県（02）、次に岩手県（03）
-- Public betaには法務、アクセシビリティ、訂正運用、障害対応、外部レビューが残る
+- 公開状態: **pre-alpha**（正式なPublic betaの承認前）。GitHub Pagesで公開済み
+- 直近の公開検証: 2026-11-13 success（`.github/publication-status.json`）
+- Phase 11: 全国47都道府県・15,327個票を共通Schemaで正規化／公式一次資料上の最大到達深度まで完了
+- Phase 13: 政令指定都市20/20のv1 record-review foundation完了（うち2市はReviewed reference）
+- Phase 14: 中核市・県庁所在地67/67の公式Source Inventory完了
+- Phase 15: 4/67自治体 reviewed_complete、1自治体 review_in_progress、62自治体 pending_record_review（正本キューの更新日は2026-10-09）
+- 各Phaseの`complete`は全政策・予算・事業・契約・実績の完全な接続や全国比較可能性を保証しない
+- Public betaの未完了事項は、訂正・反論の通し試験、外部法務・中立性レビュー、実機アクセシビリティ監査、障害復旧・運用確認、最終公開承認
+- 正式な公開判断の親Issue: [#12 Public beta trust and launch gate](https://github.com/M-Osugi1230/jichi-insight/issues/12)
+- **Phase 15の全67自治体レビュー完了はPublic betaの必須条件ではない**。未完了範囲を明示し、審査済みデータのみ公開する
+
 
 ## Data
 
@@ -38,7 +40,10 @@
 - [x] 沖縄県の計画基準値を年度実績へ昇格しない
 - [x] 沖縄県の全国値を沖縄県実績として扱わない
 - [x] Wave 2の5拠点・711件を一つの統合ゲートで検証
-- [ ] Wave 3の残る38県を個票接続または最大到達深度へ引き上げ
+- [x] Wave 3の38県・13,755個票をReviewed最大到達深度へ引き上げ（`data/catalog/phase11_completion.json`）
+- [x] Phase 13の20政令指定都市のv1レビュー基盤を完了（`data/catalog/phase13_completion.json`）
+- [x] Phase 14の67自治体の公式資料インベントリを完了（`data/catalog/phase14_completion.json`）
+- [ ] Phase 15の残り63自治体の個票レビュー（うち盛岡市は進行中。Public betaの必須条件ではない）
 - [ ] 議会発言、採決、監査指摘、首長公約を個票単位で接続
 - [ ] 比較可能性確認済み指標だけを横断比較へ昇格
 
@@ -87,7 +92,7 @@
 - [x] 愛知県・大阪府・広島県・香川県・沖縄県の決定的Normalizer
 - [x] Wave 2全711件の統合Schema・参照整合性テスト
 - [x] GitHub Pages、Publication Audit、本番HTTP verification、Production Smoke
-- [ ] Wave 3の地域バッチNormalizerと統合ゲート
+- [x] Wave 3の地域バッチNormalizerと統合ゲート（Phase 11完了）
 - [ ] mainブランチ保護設定の最終確認
 - [ ] dependency audit、secrets scan、Actions least-privilege監査
 - [ ] preview / staging / production境界の確定
@@ -126,7 +131,7 @@
 - [x] 後続作業で置換済みの旧PRを閉じる
 - [x] Wave 1のNormalizerと統合ゲート
 - [x] Wave 2の5拠点Normalizerと統合ゲート
-- [x] Phase 11実行キューをWave 3へ更新
+- [x] Phase 11実行キューと完了記録を全国47都道府県・15,327件へ更新
 - [ ] 初期ロードマップIssueを現在の完了状態へ再分類
 - [ ] README、Roadmap、Release Checklist、公開ページの状態同期を回帰テスト化
 
@@ -143,6 +148,14 @@
 7. 外部レビューと重大表現の法務確認を完了
 8. 公開責任者が公開境界と未収録範囲を承認
 
-## Current recommendation
+## Current recommendation（2026-11-14）
 
-Phase 11 Wave 2は5/5拠点・711件の正規化と統合検証まで完了しました。Wave 3では残る38県をコード順に処理し、青森県（02）からReviewed個票接続または最大到達深度へ引き上げます。
+**正式Public betaを最優先の並走トラックとする。** Phase 15データの個票レビューは別トラックとして継続する。
+
+1. Issue #12のTrust / Legal / Accessibility / Operationsについて、確認日・証跡URL・レビュアーを記録する。
+2. 自動化可能なCI、定期Production Smoke、公開範囲の同期テスト、更新日表示を整備する。
+3. 人による承認が必要な法務、重大表現・中立性、訂正フローの本番相当試験、読み上げ・実機テストを実施する。
+4. P0/P1既知問題0件とGo / No-Go承認を確認して初めて「Public beta」と表記する。
+5. Phase 15は正本キューとhuman reviewを維持し、未検証候補をReviewedとして公開しない。
+
+進捗の正本は`data/catalog/phase15_core_capital_review_queue.json`および`data/catalog/phase11_completion.json`。このチェックリストは公開判断の証跡であり、実装やレビューの完了を推定してチェックしない。
