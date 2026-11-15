@@ -1,9 +1,19 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 import { PageIntro } from "@/components/PageIntro";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { reviewedCoverageStats } from "@/lib/reviewedCoverage";
+
+export const metadata: Metadata = {
+  title: "このサイトの目的",
+  description:
+    "なぜJichi Insightが必要か。分断された自治体の公開資料を、目標・支出・実行・成果のつながりとして住民が自分で判断できる根拠へ変える目的と、「しないこと」を説明します。",
+  alternates: {
+    canonical: "https://m-osugi1230.github.io/jichi-insight/about/",
+  },
+};
 
 const problems = [
   ["資料が分断されている", "同じ事業でも、予算、契約、決算、KPI、監査、議会質疑が別々の場所にあります。"],

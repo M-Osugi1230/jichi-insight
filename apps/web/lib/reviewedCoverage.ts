@@ -1,5 +1,6 @@
 import phase10CompletionJson from "../../../data/catalog/phase10_completion.json";
 import phase10QueueJson from "../../../data/catalog/phase10_execution_queue.json";
+import phase15QueueJson from "../../../data/catalog/phase15_core_capital_review_queue.json";
 import phase9SummaryJson from "../../../data/catalog/phase9_review_summary.json";
 import miyagiReviewManifestJson from "../../../data/catalog/miyagi_policy_review_manifest.json";
 
@@ -272,11 +273,16 @@ const phase9ExtractionErrors = phase9Summary.records.reduce(
   0,
 );
 
+// The header/footer freshness stamp is the newest update across every
+// public dataset the site serves, including the Phase 15 review queue —
+// not just the prefecture coverage datasets — so it never lags months
+// behind the site's actual latest data update.
 const latestDataDate = [
   phase9Summary.updated_at,
   phase10Queue.updated_at,
   phase10Completion.updated_at,
   miyagiReviewManifestJson.updated_at,
+  phase15QueueJson.updated_at,
 ].sort().at(-1) as string;
 
 function countDepth(

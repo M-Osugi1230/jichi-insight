@@ -15,6 +15,9 @@ export const metadata: Metadata = {
   title: "データ品質と公開範囲",
   description:
     "全国47都道府県、15,124件のReviewed目標・指標のEvidence coverage、接続状況、欠損、評価可能性を公開します。",
+  alternates: {
+    canonical: "https://m-osugi1230.github.io/jichi-insight/data-quality/",
+  },
 };
 
 const qualityLevels = [
