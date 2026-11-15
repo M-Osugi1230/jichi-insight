@@ -1,0 +1,61 @@
+[
+  {
+    "id": "evidence-funabashi-city-2026-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-122041-fiscal-2026-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算は270,640,000千円（270,640,000,000円）であり、議案第1号『令和8年度船橋市一般会計予算』として令和8年第1回定例会で可決された成立予算である。",
+        "source_ids": [
+          "funabashi-budget-2026"
+        ],
+        "location_note": "船橋市公式『令和8年度予算』ページからリンクされる『令和8年度船橋市予算書』PDF（議案第1号『令和8年度船橋市一般会計予算』）第1条に『歳入歳出予算の総額は、歳入歳出それぞれ270,640,000千円と定める』と記載。船橋市議会公式『議決結果（令和8年第1回定例会）』ページでは『令和8年3月25日議決』として議案第1号の可決を記録",
+        "decision": "accepted",
+        "review_note": "成立当初予算の額を公式予算書（議案第1号）第1条の千円単位の条文から抽出し、市議会の公式議決結果で議案第1号の可決（令和8年3月25日）を一次資料で直接確認したレビュー済みレコード。"
+      }
+    ],
+    "review_status": "reviewed",
+    "open_questions": []
+  },
+  {
+    "id": "evidence-funabashi-city-2024-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-122041-fiscal-2024-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計決算の歳入決算額は249,314,444千円（千円単位で公表）である。当該決算の認定は、認定第1号『決算の認定について（一般会計）』として令和7年第3回定例会へ提出され、令和7年10月3日に認定された。",
+        "source_ids": [
+          "funabashi-settlement-2024"
+        ],
+        "location_note": "船橋市公式『令和6年度決算の概要』ページの会計別決算の状況表（単位 千円）の一般会計歳入決算額欄・差引額欄。認定の経過は、船橋市議会公式の令和7年第3回定例会議事日程（第10号、令和7年10月3日）における認定第1号『決算の認定について（一般会計）』の『認定』の記録と、船橋市教育委員会会議録（令和7年10月定例会）の『認定第1号「決算の認定について」につきましては、予算決算委員会、本会議とも賛成多数で認定』の報告で確認",
+        "decision": "accepted",
+        "review_note": "決算の概要の一般会計歳入決算額を千円単位の公表精度のまま抽出し、歳出決算額との差引額6,085,018千円（公表の形式収支）で検算した。円単位の総額はオンラインで公表された公式資料では確認できないため合成していない。認定の議案番号（認定第1号）と認定日（令和7年10月3日）は議会の公式資料で直接確認したレビュー済みレコード。監査委員の決算審査意見の内容確認は未実施の残件として保持する。"
+      }
+    ],
+    "review_status": "reviewed",
+    "open_questions": [
+      "監査委員の決算審査意見の内容確認は未実施であり、残件として保持する。"
+    ]
+  },
+  {
+    "id": "evidence-funabashi-city-2024-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-122041-fiscal-2024-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計決算の歳出決算額は243,229,426千円（千円単位で公表）であり、歳入歳出差引額（形式収支）は6,085,018千円である。",
+        "source_ids": [
+          "funabashi-settlement-2024"
+        ],
+        "location_note": "同決算の概要ページの会計別決算の状況表（単位 千円）の歳出決算額欄・差引額欄",
+        "decision": "accepted",
+        "review_note": "決算の概要の一般会計歳出決算額を千円単位の公表精度のまま抽出し、歳入決算額との差引額で検算したレビュー済みレコード。"
+      }
+    ],
+    "review_status": "reviewed",
+    "open_questions": []
+  }
+]

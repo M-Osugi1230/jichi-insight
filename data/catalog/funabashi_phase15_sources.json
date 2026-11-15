@@ -1,0 +1,46 @@
+{
+  "id": "funabashi-phase15-sources",
+  "phase": 15,
+  "official_code": "122041",
+  "name_ja": "船橋市",
+  "reviewed_at": "2026-11-16",
+  "quality_boundary": "Third comprehensive plan (basic concept and basic plan 2022-2031 as a single ten-year plan with no first/second-half split, three-year implementation plans on a rolling basis), budget enactment confirmed on the official council vote-result page (bill No. 1 passed on 2026-03-25), and settlement totals kept at the published thousand-yen precision without synthesising yen-level figures and without collapsing proposed, enacted, supplementary, or settlement states.",
+  "sources": [
+    {
+      "id": "funabashi-third-plan",
+      "title": "第3次船橋市総合計画",
+      "official_url": "https://www.city.funabashi.lg.jp/shisei/keikaku/002/p102743.html",
+      "format": "html",
+      "evidence_role": "comprehensive_plan",
+      "evidence_location": "船橋市公式Webサイト『第3次船橋市総合計画』ページに、計画本編PDF（全体版、基本構想・基本計画の分割版、概要版等）へのリンクを掲載。ページ本文に3層構成と計画期間（令和4（2022）年度～令和13（2031）年度）、将来都市像、5つのめざすまちの姿、2つの基本姿勢を記載し、基本計画本編PDFの体系図に基本施策1～24と各施策を列挙",
+      "use_boundary": "現行の第3次総合計画をcurrent versionとして保持し、旧計画の実績とversionを混在させない。"
+    },
+    {
+      "id": "funabashi-current-implementation",
+      "title": "第3次船橋市総合計画 実施計画・進捗状況報告書",
+      "official_url": "https://www.city.funabashi.lg.jp/shisei/keikaku/002/p102743.html",
+      "format": "html",
+      "evidence_role": "implementation_plan",
+      "evidence_location": "船橋市公式Webサイト『第3次船橋市総合計画』ページの『実施計画』『進捗状況報告書』の各節に、実施計画（3年ローリング）の考え方と進捗状況報告書（令和4年度～令和6年度）PDFへのリンクを掲載。実施計画の現行版（令和8年度～令和10年度版）は、同ページからリンクされる『第3次船橋市総合計画実施計画』ページで確認",
+      "use_boundary": "実施計画は3年ローリングで毎年度見直されるため期版を分離して保持する。施策指標の分析・評価は3年に一度公表される運用であり、評価結果を独自達成度へ変換しない。"
+    },
+    {
+      "id": "funabashi-budget-2026",
+      "title": "令和8年度予算",
+      "official_url": "https://www.city.funabashi.lg.jp/shisei/zaisei/001/p144524.html",
+      "format": "html",
+      "evidence_role": "budget",
+      "evidence_location": "船橋市公式Webサイト『令和8年度予算』ページはFY2026当初予算・補正予算の公式入口。同ページからリンクされる『令和8年度船橋市予算書』PDF（議案第1号）第1条に一般会計270,640,000千円を記載し、『令和8年度当初予算案の概要』PDFの予算規模表にも一般会計270,640,000千円を記載。船橋市議会公式『議決結果（令和8年第1回定例会）』に議案第1号の可決（令和8年3月25日議決）を記載",
+      "use_boundary": "FY2026当初予算は議決・成立済みの額として扱い、proposal/enacted/supplementaryをPhase 15でstage分離する。"
+    },
+    {
+      "id": "funabashi-settlement-2024",
+      "title": "令和6年度決算の概要",
+      "official_url": "https://www.city.funabashi.lg.jp/shisei/zaisei/002/p141123.html",
+      "format": "html",
+      "evidence_role": "settlement_and_annual_results",
+      "evidence_location": "船橋市公式Webサイト『令和6年度決算の概要』ページの会計別決算の状況表（単位 千円）に、一般会計の歳入決算額249,314,444千円・歳出決算額243,229,426千円・差引額6,085,018千円・実質収支4,315,264千円を記載し、主要な施策の成果に関する説明書PDFへのリンクを掲載。認定は船橋市議会公式の令和7年第3回定例会議事日程（第10号）における認定第1号の『認定』の記録で確認",
+      "use_boundary": "FY2024決算認定と主な事業の公式入口。公表精度は千円単位であり、円単位の総額を合成しない。決算総額を個別事業の成果へ流用しない。"
+    }
+  ]
+}
