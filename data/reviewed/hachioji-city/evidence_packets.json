@@ -1,0 +1,63 @@
+[
+  {
+    "id": "evidence-hachioji-city-2026-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-132012-fiscal-2026-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算は245,100,000千円（245,100,000,000円）であり、第5号議案『令和8年度八王子市一般会計予算について』として令和8年第1回市議会定例会で可決された成立予算である（議決日は令和8年3月26日）。",
+        "source_ids": [
+          "hachioji-budget-2026"
+        ],
+        "location_note": "八王子市公式『令和8年度（2026年度）予算の概要』ページからリンクされる『予算規模』PDF（単位 千円）の一般会計245,100,000千円と、同ページの『一般会計歳入歳出』PDFの歳入・歳出合計245,100,000千円。議決は八王子市議会公式『令和8年第1回定例会』ページの議案一覧（第5号議案・議決日3月26日・結果『可決』、第5号議案から第14号議案ならびに第32号議案から第67号議案の46議案は記名投票により一括採決の注記）で確認",
+        "decision": "accepted",
+        "review_note": "成立当初予算の額を公式予算概要PDFの千円単位の表から抽出し、市議会の議案一覧で第5号議案の可決（議決日2026年3月26日）を一次資料で直接確認したレビュー済みレコード。本会議録による議決経過の最終確認は残件として保持する。"
+      }
+    ],
+    "review_status": "reviewed",
+    "open_questions": [
+      "本会議録による議決経過の最終確認は未実施であり、残件として保持する。"
+    ]
+  },
+  {
+    "id": "evidence-hachioji-city-2024-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-132012-fiscal-2024-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計決算の歳入決算額は241,406,662,517円である。当該決算の認定は、第133号議案『令和6年度八王子市一般会計歳入歳出決算認定について』として令和7年第3回市議会定例会へ提出され、令和7年10月8日に認定された。",
+        "source_ids": [
+          "hachioji-financial-disclosure"
+        ],
+        "location_note": "八王子市監査委員の公式『令和6年度（2024年度）八王子市一般会計・各特別会計歳入歳出決算審査意見書』（令和7年8月）の『各会計決算総括表』（単位 円）の一般会計歳入決算額・歳入歳出差引額。市公式『令和6年度（2024年度）決算について』ページの決算概要（歳入決算額2,414億666万円、万円表示・四捨五入）とも整合。認定の経過は、八王子市議会公式『令和7年第3回定例会』ページの議案一覧における第133号議案の記録（議決日10月8日・結果『認定』、第133号議案から第142号議案の10議案は記名投票により一括採決の注記）で確認",
+        "decision": "accepted",
+        "review_note": "決算審査意見書の総括表から円単位で抽出し、歳出決算額との差引額5,117,752,218円で検算した。認定の議案番号（第133号議案）と認定日（令和7年10月8日）は市議会の公式資料で直接確認したレビュー済みレコード。決算事項別明細書の款別合計との突合は残件として保持する。"
+      }
+    ],
+    "review_status": "reviewed",
+    "open_questions": [
+      "決算書（歳入歳出決算事項別明細書）の款別合計との突合は未実施であり、残件として保持する。"
+    ]
+  },
+  {
+    "id": "evidence-hachioji-city-2024-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-132012-fiscal-2024-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計決算の歳出決算額は236,288,910,299円であり、歳入歳出差引額は5,117,752,218円である。",
+        "source_ids": [
+          "hachioji-financial-disclosure"
+        ],
+        "location_note": "同決算審査意見書の同表（単位 円）の一般会計歳出決算額・歳入歳出差引額",
+        "decision": "accepted",
+        "review_note": "決算審査意見書の総括表から円単位で抽出し、歳入決算額との差引額で検算したレビュー済みレコード。"
+      }
+    ],
+    "review_status": "reviewed",
+    "open_questions": []
+  }
+]

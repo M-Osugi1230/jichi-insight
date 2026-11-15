@@ -344,13 +344,25 @@ Declared v1 package:
 
 Deferred depth includes the individual projects and achievement indicators under the 33 individual measures and the 65 action-plan projects, full-text confirmation of the plan book, the audit commission's settlement review opinion (not inspected), cross-checks against the settlement detail book, final confirmation of the FY2026 budget vote date against the plenary session minutes, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Twenty-first completion — Hachioji
+
+八王子市を21番目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 八王子未来デザイン2040 — basic concept adopted unanimously by the city council in December 2012 (based on the draft submitted by a 184-member citizens' conference) and inherited by the current plan, with the basic concept's principle 『人とひと、人と自然が響き合い、みんなで幸せを紡ぐまち八王子』; basic plan FY2023–FY2030 looking ahead to 2040 (the '2040' in the plan name is the outlook year, not the plan period), organising 37 measures （施策） under the concept's six city images （都市像）; implementation and progress governance through the management plan (first period FY2023–FY2026) and annual action plans, with three-tier administrative evaluation （施策評価・事務事業評価・細事業評価） feeding each year's budget compilation
+- FY2026 general-account initial budget: 245,100,000,000 yen (enacted; 第5号議案 passed on 2026-03-26 at the 1st regular council session of 2026; amount from the official budget overview's scale table in thousands of yen, cross-checked against the revenue/expenditure tables)
+- FY2024 general-account settlement at exact yen precision: revenue 241,406,662,517 yen / expenditure 236,288,910,299 yen (balance 5,117,752,218 yen matches the published 歳入歳出差引額 in the audit commission's settlement review opinion); certification 第133号議案 certified on 2025-10-08. FY2024 falls inside the current basic plan period, but its totals are section-level aggregates and are not linked to individual measures or priority projects, so the linkage stays not_assessable
+
+Deferred depth includes the individual sub-measures, KPIs and priority projects under the 37 measures and the management plan, full-text confirmation of the plan book, the substantive content of the audit commission's settlement review opinion, individual administrative-evaluation results, cross-checks against the settlement detail book, final confirmation of the vote proceedings against the plenary session minutes, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 20 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区
+- Reviewed complete: 21 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市
 - Review in progress: 0
-- Pending record review: 47
+- Pending record review: 46
 - Blocked source inventory: 0
-- Next official code: 132012
+- Next official code: 142018
 
 ## Definition of Phase 15 completion
 
