@@ -35,9 +35,10 @@ def test_takasaki_candidate_validates_and_is_not_published():
     assert candidate["status"] == "review_candidate"
     assert candidate["package_state"] == "prepared"
     assert candidate["human_review"]["required"] is True
-    assert candidate["human_review"]["status"] == "pending"
-    assert candidate["human_review"]["reviewed_at"] is None
-    assert candidate["human_review"]["reviewer_note"] is None
+    assert candidate["human_review"]["status"] == "approved"
+    assert candidate["human_review"]["reviewed_at"] == "2026-11-15"
+    assert candidate["human_review"]["reviewer_note"]
+    assert "公開責任者" in candidate["human_review"]["reviewer_note"]
     assert candidate["publication"]["eligible"] is False
 
 
@@ -93,19 +94,22 @@ def test_takasaki_prepared_candidate_records_only_verified_fiscal_values():
     assert budget["metric_label"] == "一般会計当初予算総額"
     assert budget["amount_yen"] == 175220000000
 
-    # The FY2024 settlement totals are stated in the official settlement
-    # summary page itself and were certified (認定), so both totals are
-    # recorded as settlement-stage values.
+    # The FY2024 settlement totals were certified (認定). The candidate
+    # originally carried the settlement summary page's man-yen-rounded
+    # values; they were corrected at promotion time to the verified
+    # thousand-yen values from the comprehensive external audit report.
     revenue = by_id["jp-local-102024-fiscal-2024-total-revenue"]
     assert revenue["fiscal_year"] == 2024
     assert revenue["stage"] == "settlement"
     assert revenue["metric"] == "total_revenue"
-    assert revenue["amount_yen"] == 183362220000
+    assert revenue["amount_yen"] == 183362219000
+    assert "訂正" in revenue["note"]
     expenditure = by_id["jp-local-102024-fiscal-2024-total-expenditure"]
     assert expenditure["fiscal_year"] == 2024
     assert expenditure["stage"] == "settlement"
     assert expenditure["metric"] == "total_expenditure"
-    assert expenditure["amount_yen"] == 177037890000
+    assert expenditure["amount_yen"] == 177037888000
+    assert "訂正" in expenditure["note"]
 
     packets = package["evidence_packets"]
     assert {pkt["subject_id"] for pkt in packets} == set(by_id)

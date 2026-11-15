@@ -224,19 +224,30 @@ def test_takasaki_completion_quality_gate_and_deferred_depth_are_explicit():
     assert "ランキング" in boundary
 
 
-def test_takasaki_candidate_approval_record_remains_pending_until_merge():
+def test_takasaki_candidate_keeps_correction_and_records_owner_approval():
     candidate = load(CANDIDATE)
+    package = candidate["candidate_package"]
 
-    # The owner's approval is given on the promotion PR; the approval
-    # record is added to the candidate's human_review at merge time.
+    # The man-yen-rounded settlement values are corrected in the
+    # candidate itself to the verified thousand-yen values.
+    by_id = {rec["id"]: rec for rec in package["fiscal_records"]}
+    revenue = by_id["jp-local-102024-fiscal-2024-total-revenue"]
+    expenditure = by_id["jp-local-102024-fiscal-2024-total-expenditure"]
+    assert revenue["amount_yen"] == 183_362_219_000
+    assert expenditure["amount_yen"] == 177_037_888_000
+    assert "訂正" in revenue["note"]
+    assert "訂正" in expenditure["note"]
+
+    # The owner's approval (2026-11-15, five-city blanket approval) is
+    # recorded in the candidate's human_review.
     assert candidate["human_review"]["required"] is True
-    assert candidate["human_review"]["status"] == "pending"
-    assert candidate["human_review"]["reviewed_at"] is None
-    assert candidate["human_review"]["reviewer_note"] is None
+    assert candidate["human_review"]["status"] == "approved"
+    assert candidate["human_review"]["reviewed_at"] == "2026-11-15"
+    assert "公開責任者" in candidate["human_review"]["reviewer_note"]
     assert candidate["publication"]["eligible"] is False
 
 
-def test_takasaki_and_previous_nine_are_reviewed_complete_and_iwaki_is_next():
+def test_takasaki_and_previous_eleven_are_reviewed_complete_and_iwaki_is_next():
     queue = load(QUEUE)
     by_code = {row["official_code"]: row for row in queue["execution_queue"]}
 
@@ -247,12 +258,13 @@ def test_takasaki_and_previous_nine_are_reviewed_complete_and_iwaki_is_next():
 
     for code in (
         "012025", "012041", "022012", "022039", "032018",
-        "052019", "062014", "072010", "072036",
+        "052019", "062014", "072010", "072036", "092010",
+        "102016",
     ):
         assert by_code[code]["status"] == "reviewed_complete"
 
-    assert queue["summary"]["reviewed_complete_count"] == 10
+    assert queue["summary"]["reviewed_complete_count"] == 12
     assert queue["summary"]["review_in_progress_count"] == 0
-    assert queue["summary"]["pending_record_review_count"] == 57
+    assert queue["summary"]["pending_record_review_count"] == 55
     assert queue["summary"]["next_official_code"] == "072044"
     assert by_code["072044"]["status"] == "pending_record_review"
