@@ -59,7 +59,6 @@ def test_city_profile_shows_provenance_and_separates_budget_from_settlement():
 
 def test_city_profile_jump_links_have_matching_anchors():
     page = source("app/municipalities/[slug]/page.tsx")
-    overview = source("components/CityOverview.tsx")
 
     for anchor in (
         "city-summary-title",
@@ -69,8 +68,8 @@ def test_city_profile_jump_links_have_matching_anchors():
         "sources-title",
         "boundary-title",
     ):
-        assert f'href="#{anchor}"' in overview
-        assert f'id="{anchor}"' in overview + page
+        assert f'href="#{anchor}"' in page
+        assert f'id="{anchor}"' in source("components/CityOverview.tsx") + page
 
 
 def test_verified_values_are_still_displayed_exactly_in_detail():
