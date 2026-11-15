@@ -1,0 +1,65 @@
+[
+  {
+    "id": "jp-local-112224-fiscal-2026-total-expenditure",
+    "municipality_id": "jp-local-112224",
+    "fiscal_year": 2026,
+    "stage": "initial_budget",
+    "account_type": "general",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算（可決）",
+    "amount_yen": 132700000000,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "sources": [
+      "koshigaya-budget-2026"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "越谷市議会公式の市長提出議案ページからリンクされる『令和8年度越谷市一般会計・特別会計予算書』（総則）第1条に一般会計の歳入歳出予算総額132,700,000千円と記載された令和8年度当初予算額。令和8年3月定例会に第25号議案『令和8年度越谷市一般会計予算について』として提出され、同定例会最終日の令和8年3月18日に原案可決された成立当初予算であり、予算案段階の額ではない。市長の令和8年度施政方針（公式）の『一般会計予算は、対前年度比0.2％増の1,327億円』とも一致する。補正予算や決算とは別stateで扱う。"
+  },
+  {
+    "id": "jp-local-112224-fiscal-2024-total-revenue",
+    "municipality_id": "jp-local-112224",
+    "fiscal_year": 2024,
+    "stage": "settlement",
+    "account_type": "general",
+    "metric": "total_revenue",
+    "metric_label": "一般会計決算歳入",
+    "amount_yen": 140215912093,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "koshigaya-settlement-2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "越谷市公式『令和6年度決算のあらましと健全化判断比率』ページからリンクされる『令和6年度決算の概要』PDFの決算総括表（単位 円）の一般会計歳入総額140,215,912,093円。歳出総額131,705,070,771円との差引額8,510,841,322円で検算が一致する（実質収支額は8,401,886,322円）。市議会の市長提出議案概要（公式）の決算額『歳入 1,402億1,591万2,093円』とも一致する。令和6年度決算は第101号議案『令和6年度越谷市一般会計歳入歳出決算認定について』として令和7年9月25日に認定可決された。FY2024は第5次総合振興計画の前期基本計画（2021年度～2025年度）の期間に属する決算である。"
+  },
+  {
+    "id": "jp-local-112224-fiscal-2024-total-expenditure",
+    "municipality_id": "jp-local-112224",
+    "fiscal_year": 2024,
+    "stage": "settlement",
+    "account_type": "general",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計決算歳出",
+    "amount_yen": 131705070771,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "koshigaya-settlement-2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "同決算の概要PDFの一般会計歳出総額131,705,070,771円。歳入総額140,215,912,093円との差引額8,510,841,322円で検算が一致する。令和6年度決算は第101号議案として令和7年9月25日に認定可決された。"
+  }
+]

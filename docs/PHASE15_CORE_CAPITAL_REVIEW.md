@@ -296,13 +296,25 @@ Declared v1 package:
 
 Deferred depth includes the measures and KPIs under the four pillars (including the 43 sub-items), full-text confirmation of the plan book, the audit commission's settlement review opinion (not inspected), annual evaluation evidence under the implementation plans, fiscal project detail, causality and cross-city comparability.
 
+## Seventeenth completion — Koshigaya
+
+越谷市を17市目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 第5次越谷市総合振興計画 — basic concept 2021–2030 (vision 『水と緑と太陽に恵まれた みんなが活躍する安全・安心・共生都市』), basic plan in two halves (first 2021–2025, second 2026–2030), three-year implementation plans prepared on a rolling basis (latter-plan first edition 2026–2028). Basic principles from the municipal autonomy basic ordinance （人間尊重／市民主権； principles 参加・協働・情報共有）; the current latter basic plan has four chapters, whose chapter 3 （分野別計画） is organised under six goals （大綱） with 24 top-level measures （大項目）, four promotion viewpoints （危機管理、地域脱炭素、デジタル化、インクルージョン（包摂性）), and the まち・ひと・しごと創生越谷市総合戦略 positioned in chapter 4
+- FY2026 general-account initial budget: 132,700,000,000 yen (enacted; 第25号議案 原案可決 on 2026-03-18, the final day of the March 2026 regular session; amount from Article 1 of the official budget book （総則）, stated in thousands of yen, consistent with the mayor's FY2026 policy speech figure of 1,327億円）
+- FY2024 general-account settlement at exact yen precision: revenue 140,215,912,093 yen / expenditure 131,705,070,771 yen (balance 8,510,841,322 yen matches); certification 第101号議案 certified （認定可決） 2025-09-25. FY2024 belongs to the first basic plan period of the same fifth plan, so its totals must not be reused as results of the current latter basic plan; its item-level linkage to individual plan projects was not performed, so the linkage stays not_assessable
+
+Deferred depth includes the individual projects and achievement indicators under the six goals and 24 measures, full-text confirmation of the plan book, the audit commission's settlement review opinion (not inspected), cross-checks against the settlement detail book, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 16 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市
+- Reviewed complete: 17 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市
 - Review in progress: 0
-- Pending record review: 51
+- Pending record review: 50
 - Blocked source inventory: 0
-- Next official code: 112224
+- Next official code: 122041
 
 ## Definition of Phase 15 completion
 
