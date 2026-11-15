@@ -1,7 +1,18 @@
+import type { Metadata } from "next";
+
 import { PageIntro } from "@/components/PageIntro";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { StatusBadge } from "@/components/StatusBadge";
+
+export const metadata: Metadata = {
+  title: "読み方・評価方法",
+  description:
+    "事実・比較・解釈・評価の4層を混ぜない読み方、自治体・首長・議会の役割別の見方、データの深さ7段階、そして人物の単一総合点を出さない方針を説明します。",
+  alternates: {
+    canonical: "https://m-osugi1230.github.io/jichi-insight/methodology/",
+  },
+};
 
 const layers = [
   ["Fact", "事実", "公式資料に記載された数値、日付、発言、採決、契約。"],

@@ -38,6 +38,24 @@ export function SiteFooter() {
       </div>
       <div className="footerBottom">
         <span>Facts before scores.</span>
+        <span>
+          © 2026 Jichi Insight — コード:{" "}
+          <a
+            href="https://github.com/M-Osugi1230/jichi-insight/blob/main/LICENSE"
+            rel="noreferrer"
+            target="_blank"
+          >
+            MIT
+          </a>{" "}
+          / 方法論・データ:{" "}
+          <a
+            href="https://github.com/M-Osugi1230/jichi-insight/blob/main/docs/LICENSING.md"
+            rel="noreferrer"
+            target="_blank"
+          >
+            CC BY 4.0
+          </a>
+        </span>
         <span>一次資料・更新日・未確認範囲を表示します。</span>
       </div>
     </footer>
