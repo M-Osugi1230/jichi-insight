@@ -116,7 +116,7 @@ export default function MunicipalitiesPage() {
         <p className={styles.searchBoundary}>
           掲載対象は、47都道府県の政策計画と、詳細レビュー完了済みの市です。すべての市区町村が同じ深さで閲覧できるわけではありません。
         </p>
-        <section className="contentSection" id="prefectures">
+        <section className={styles.searchSection} id="prefectures">
           <div className={styles.sectionHeading}>
             <div>
               <p className="eyebrow">All 47 prefectures</p>
