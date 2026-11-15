@@ -240,7 +240,7 @@ def test_akita_candidate_records_owner_approval():
     assert candidate["publication"]["eligible"] is False
 
 
-def test_akita_and_yamagata_are_reviewed_complete_and_fukushima_is_next():
+def test_akita_yamagata_and_fukushima_are_reviewed_complete_and_koriyama_is_next():
     queue = load(QUEUE)
     by_code = {row["official_code"]: row for row in queue["execution_queue"]}
 
@@ -254,8 +254,9 @@ def test_akita_and_yamagata_are_reviewed_complete_and_fukushima_is_next():
     assert yamagata["completion_path"] == "data/catalog/yamagata_phase15_completion.json"
     assert (ROOT / yamagata["completion_path"]).is_file()
 
-    assert queue["summary"]["reviewed_complete_count"] == 7
+    assert queue["summary"]["reviewed_complete_count"] == 8
     assert queue["summary"]["review_in_progress_count"] == 0
-    assert queue["summary"]["pending_record_review_count"] == 60
-    assert queue["summary"]["next_official_code"] == "072010"
-    assert by_code["072010"]["status"] == "pending_record_review"
+    assert queue["summary"]["pending_record_review_count"] == 59
+    assert queue["summary"]["next_official_code"] == "072036"
+    assert by_code["072010"]["status"] == "reviewed_complete"
+    assert by_code["072036"]["status"] == "pending_record_review"

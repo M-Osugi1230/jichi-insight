@@ -331,10 +331,10 @@
   ],
   "human_review": {
     "required": true,
-    "status": "pending",
+    "status": "approved",
     "boundary": "A person must check the candidate against the cited primary sources before any promotion to reviewed_complete.",
-    "reviewed_at": null,
-    "reviewer_note": null
+    "reviewed_at": "2026-11-15",
+    "reviewer_note": "公開責任者（大杉邑大、単独運用体制）が2026-11-15にレビューを承認し、reviewed_completeへの昇格を決定した。財政数値は一次資料で検証済み（候補修正 PR #477、千円単位精度の確定 PR #481）。議案第5号（令和8年度一般会計予算）の原案可決（2026年3月27日）は福島市議会公式の審議結果で確認済み。現行計画は第6次福島市総合計画（当初2021年度～2025年度、令和8年3月に1年延長され2021年度～2026年度）であり、基本方針・重点施策・個別施策の全件列挙と指標値、FY2024実行プラン評価の内容取り込み、議案第5号の賛否内訳・議事録、決算の施策別内訳は未確認であり、reviewed パッケージの completion の deferred_depth と completion_boundary に残存事項として明記した。"
   },
   "publication": {
     "eligible": false,
