@@ -1,16 +1,16 @@
 .hero {
   display: grid;
-  gap: 68px;
+  gap: 48px;
   grid-template-columns: minmax(0, 1.25fr) minmax(350px, 0.75fr);
   margin: 0 auto;
   max-width: 1240px;
-  min-height: 720px;
-  padding: 105px 30px 90px;
+  min-height: 0;
+  padding: 72px 30px 68px;
 }
 
 .heroCopy { align-self: center; }
-.heroKicker { color: #a83a24; font-size: 0.66rem; font-weight: 900; letter-spacing: 0.17em; margin-bottom: 28px; }
-.hero h1 { font-size: clamp(3.9rem, 8.7vw, 7.7rem); line-height: 1.02; margin-bottom: 34px; }
+.heroKicker { color: #a83a24; font-size: 0.66rem; font-weight: 900; letter-spacing: 0.17em; margin-bottom: 18px; }
+.hero h1 { font-size: clamp(3.9rem, 8.7vw, 7.7rem); line-height: 1.02; margin-bottom: 24px; }
 .hero h1 em { color: #a83a24; font-style: normal; }
 .heroLead { color: #42505b; font-size: clamp(1.02rem, 1.8vw, 1.25rem); line-height: 1.9; max-width: 690px; }
 .heroActions { display: flex; flex-wrap: wrap; gap: 11px; margin-top: 34px; }
@@ -113,8 +113,8 @@
 }
 
 @media (max-width: 760px) {
-  .hero { gap: 50px; padding: 78px 20px 65px; }
-  .hero h1 { font-size: clamp(3.25rem, 16vw, 5.3rem); }
+  .hero { gap: 30px; padding: 44px 20px 52px; }
+  .hero h1 { font-size: clamp(2.75rem, 13.6vw, 4.7rem); }
   .currentFocus { border-radius: 6px 30px 6px 6px; padding: 25px; }
   .snapshot { margin-inline: 20px; }
   .snapshot dl { grid-template-columns: repeat(2, 1fr); }
