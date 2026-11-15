@@ -1,0 +1,63 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-15",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "utsunomiya-city-home",
+      "municipality_key": "utsunomiya-city",
+      "organization": "宇都宮市",
+      "category": "municipality_profile",
+      "title": "宇都宮市公式サイト",
+      "url": "https://www.city.utsunomiya.lg.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "宇都宮市の公式自治体サイト。"
+    },
+    {
+      "id": "utsunomiya-budget-2026",
+      "municipality_key": "utsunomiya-city",
+      "organization": "宇都宮市",
+      "category": "budget",
+      "title": "令和8年度当初予算案の大綱（概要版）",
+      "url": "https://www.city.utsunomiya.lg.jp/_res/projects/default_project/_page_/001/010/664/r8yosantaikou_gaiyou.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算246,550,000千円のEvidence。議案第18号が原案可決されたため、成立額は同額である。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "utsunomiya-budget-2026-enactment",
+      "municipality_key": "utsunomiya-city",
+      "organization": "宇都宮市議会",
+      "category": "assembly",
+      "title": "令和8年3月（第1回）定例会 会議結果",
+      "url": "https://www.city.utsunomiya.lg.jp/gikai/kekka/kekka/1044487/1044488.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "議案第18号『令和8年度宇都宮市一般会計予算』が2026年3月24日に原案可決であることを公式会議結果ページで直接確認する。"
+    },
+    {
+      "id": "utsunomiya-settlement-2024",
+      "municipality_key": "utsunomiya-city",
+      "organization": "宇都宮市",
+      "category": "settlement",
+      "title": "令和6年度決算 計数資料",
+      "url": "https://www.city.utsunomiya.lg.jp/_res/projects/default_project/_page_/001/010/665/r6keisusiryo.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入総額242,716,210千円・歳出総額236,437,643千円を千円単位のsource precisionで含む公式決算資料。円換算後も1,000円未満のprecisionを主張しない。決算の認定は議案第102号（2025年9月30日・原案認定）。"
+    }
+  ]
+}

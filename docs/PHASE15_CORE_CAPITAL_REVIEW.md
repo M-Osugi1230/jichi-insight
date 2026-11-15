@@ -211,11 +211,24 @@ Declared v1 package:
 
 Deferred depth includes the exhaustive enumeration of all basic goals, policy packages, individual measures and KPIs, full-text confirmation of the main-volume (public plan) PDF, the old/new framework policy and indicator mapping, current-plan annual evaluation evidence, the per-member vote breakdown for bill No. 39, the final cross-check against the enacted budget book, the current budget amount including supplementary budgets, the FY2024 settlement-to-item linkage (kept not_assessable), settlement breakdown by policy, fiscal project detail, causality and cross-city comparability.
 
+## Tenth completion — Utsunomiya
+
+宇都宮市を10市目の`reviewed_complete`へ昇格するPRを準備しました（2026-11-15。公開責任者のレビュー承認は本PRのマージ時に候補のhuman_reviewへ記録する）。
+
+Declared v1 package:
+
+- current comprehensive plan: 第6次宇都宮市総合計画 — basic concept (target year 2050), basic plan 2018–2027 (first phase 2018–2022, latter phase 2023–2027), implementation plan (roughly three years, revised annually)
+- latter basic plan structure: six future-city policy pillars （子育て・教育／健康・福祉／安全・安心／魅力創造・交流／産業・環境／交通） plus the administrative management base; target city image is the "Super Smart City" formulation
+- FY2026 general-account initial budget: 246,550,000,000 yen (enacted; 議案第18号 原案可決 on 2026-03-24, confirmed directly on the official council meeting-result page)
+- FY2024 general-account settlement: revenue (242,716,210 thousand yen) and expenditure (236,437,643 thousand yen) values at thousand-yen source precision from the official settlement figures document; certification 議案第102号 原案認定 on 2025-09-30 confirmed on the official council meeting-result page
+
+Deferred depth includes the exhaustive enumeration of strategic projects, measures and KPIs under each pillar, full-text confirmation of the latter basic plan book, the yen-precision settlement totals (not printed in the checked official summary documents; the audit opinion PDF could not be text-extracted for figure matching), administrative evaluation results, the FY2024 settlement-to-item linkage (kept not_assessable), fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 9 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市
+- Reviewed complete: 10 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、宇都宮市
 - Review in progress: 0
-- Pending record review: 58
+- Pending record review: 57
 - Blocked source inventory: 0
 - Next official code: 072044
 

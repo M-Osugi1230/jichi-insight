@@ -1,0 +1,60 @@
+[
+  {
+    "id": "evidence-utsunomiya-city-2026-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-092010-fiscal-2026-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算246,550,000千円（246,550,000,000円）を公式概要で保持する。",
+        "source_ids": [
+          "utsunomiya-budget-2026",
+          "utsunomiya-budget-2026-enactment"
+        ],
+        "location_note": "宇都宮市公式『令和8年度当初予算案の大綱（概要版）』予算規模表の一般会計。宇都宮市議会公式『会議結果』（令和8年3月・第1回定例会）議案第18号 原案可決（2026年3月24日）。",
+        "decision": "accepted",
+        "review_note": "候補は予算案段階（施政方針）の記録であったが、議案第18号の原案可決を市議会公式の会議結果ページで直接確認し、成立予算として保持する。候補が引用した旧議会URLは市のサイトリニューアルで404となっており、現行の会議結果ページをlocatorとする。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-utsunomiya-city-2024-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-092010-fiscal-2024-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計決算歳入（収入済額）242,716,210千円（242,716,210,000円）を決算計数資料の千円単位source値で保持する。",
+        "source_ids": [
+          "utsunomiya-settlement-2024"
+        ],
+        "location_note": "宇都宮市公式『令和6年度決算 計数資料』第1表『令和6年度一般会計歳入歳出決算総括表』一般会計 歳入総額（単位：千円）。『令和6年度決算の概要について』の歳入決算額2,427億1,621万円とも整合する。",
+        "decision": "accepted",
+        "review_note": "候補では決算額は未抽出（not_assessable）であった。公式計数資料で千円単位の総額を確認し、その精度のまま保持する。円単位の総額は公式要約文書に印字されておらず主張しない。認定は議案第102号・2025年9月30日・原案認定（市議会公式の会議結果ページで確認）。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-utsunomiya-city-2024-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-092010-fiscal-2024-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計決算歳出（支出済額）236,437,643千円（236,437,643,000円）を決算計数資料の千円単位source値で保持する。",
+        "source_ids": [
+          "utsunomiya-settlement-2024"
+        ],
+        "location_note": "宇都宮市公式『令和6年度決算 計数資料』第1表『令和6年度一般会計歳入歳出決算総括表』一般会計 歳出総額（単位：千円）。『令和6年度決算の概要について』の歳出決算額2,364億3,764万円とも整合する。",
+        "decision": "accepted",
+        "review_note": "候補では決算額は未抽出（not_assessable）であった。公式計数資料で千円単位の総額を確認し、その精度のまま保持する。円単位の総額は公式要約文書に印字されておらず主張しない。認定は議案第102号・2025年9月30日・原案認定（市議会公式の会議結果ページで確認）。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]
