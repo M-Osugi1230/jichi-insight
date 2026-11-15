@@ -1,0 +1,60 @@
+[
+  {
+    "id": "evidence-takasaki-city-2026-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-102024-fiscal-2026-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算の歳入歳出予算は175,220,000千円であり、議案第28号として原案可決（賛成多数）され成立した。",
+        "source_ids": [
+          "takasaki-budget-2026",
+          "takasaki-budget-2026-enactment"
+        ],
+        "location_note": "財政課公式ページの予算総括表（一般会計175,220,000千円）。議決は令和8年第2回定例会の議決結果PDFの議案第28号欄（同PDFに個別議案の議決日の印字はない）",
+        "decision": "accepted",
+        "review_note": "予算総括表の成立額と議決結果PDFを一次資料で直接確認したレビュー済みレコード。"
+      }
+    ],
+    "review_status": "reviewed",
+    "open_questions": []
+  },
+  {
+    "id": "evidence-takasaki-city-2024-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-102024-fiscal-2024-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計決算の歳入総額は183,362,219千円（千円単位、千円未満四捨五入）であり、決算は議案第78号として認定された。",
+        "source_ids": [
+          "takasaki-settlement-2024"
+        ],
+        "location_note": "包括外部監査報告書の一般会計決算額（千円単位）。認定は令和7年第4回定例会の議決結果PDFの議案第78号欄（個別の議決日の印字はない）",
+        "decision": "accepted",
+        "review_note": "包括外部監査報告書の千円単位額を一次資料で直接確認したレビュー済みレコード。候補の183,362,220,000円（万円丸め由来）とは異なる検証値を採用し、候補も本ブランチで検証値へ訂正した。決算カードの普通会計値は使用していない。"
+      }
+    ],
+    "review_status": "reviewed",
+    "open_questions": []
+  },
+  {
+    "id": "evidence-takasaki-city-2024-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-102024-fiscal-2024-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計決算の歳出総額は177,037,888千円（千円単位、千円未満四捨五入）である。",
+        "source_ids": [
+          "takasaki-settlement-2024"
+        ],
+        "location_note": "包括外部監査報告書の一般会計決算額（千円単位）",
+        "decision": "accepted",
+        "review_note": "包括外部監査報告書の千円単位額を一次資料で直接確認したレビュー済みレコード。候補の177,037,890,000円（万円丸め由来）とは異なる検証値を採用し、候補も本ブランチで検証値へ訂正した。"
+      }
+    ],
+    "review_status": "reviewed",
+    "open_questions": []
+  }
+]

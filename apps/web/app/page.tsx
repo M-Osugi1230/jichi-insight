@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 import { SiteFooter } from "@/components/SiteFooter";
@@ -7,6 +8,18 @@ import { reviewedCoverageStats } from "@/lib/reviewedCoverage";
 import { phase15Progress } from "@/lib/phase15Progress";
 
 import styles from "./page.module.css";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://m-osugi1230.github.io/jichi-insight/",
+  },
+  openGraph: {
+    title: "Jichi Insight | 自治体インサイト",
+    description:
+      "自治体を、自分で確かめる。政策目標・予算・実行・成果を一次資料からつなぎます。",
+    url: "https://m-osugi1230.github.io/jichi-insight/",
+  },
+};
 
 const evidenceChain = [
   {

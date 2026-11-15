@@ -1,9 +1,20 @@
+import type { Metadata } from "next";
+
 import { PageIntro } from "@/components/PageIntro";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SourceCard } from "@/components/SourceCard";
 import { StatusBadge } from "@/components/StatusBadge";
 import { catalogStats, municipalityMeta, sourcesForMunicipality, type MunicipalityKey } from "@/lib/catalog";
+
+export const metadata: Metadata = {
+  title: "公式資料",
+  description:
+    "調査に使用する自治体・議会の公式ページ入口の一覧です。確認済みの公式入口と、索引段階にとどまる公開範囲をそのまま示します。",
+  alternates: {
+    canonical: "https://m-osugi1230.github.io/jichi-insight/sources/",
+  },
+};
 
 const municipalityKeys = Object.keys(municipalityMeta) as MunicipalityKey[];
 

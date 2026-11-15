@@ -1,0 +1,63 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-15",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "maebashi-city-home",
+      "municipality_key": "maebashi-city",
+      "organization": "前橋市",
+      "category": "municipality_profile",
+      "title": "前橋市公式ウェブサイト",
+      "url": "https://www.city.maebashi.gunma.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "前橋市の公式自治体サイト。"
+    },
+    {
+      "id": "maebashi-budget-2026",
+      "municipality_key": "maebashi-city",
+      "organization": "前橋市",
+      "category": "budget",
+      "title": "令和8年度当初予算資料",
+      "url": "https://www.city.maebashi.gunma.jp/material/files/group/12/R8tousyoyosannsiryou2.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算161,841,682千円（第1表・第2表、単位：千円）のEvidence。当初予算市長説明の万円精度記載からの候補の転記誤り（161,841,680,000円）は本資料の千円単位額で訂正した。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "maebashi-budget-2026-enactment",
+      "municipality_key": "maebashi-city",
+      "organization": "前橋市議会",
+      "category": "assembly",
+      "title": "令和8年2月臨時会及び第1回定例会 議案の議決結果",
+      "url": "https://www.city.maebashi.gunma.jp/material/files/group/85/r823.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "議案第15号『令和8年度前橋市一般会計予算』が可決（多数）であることを公式の議決結果PDFで確認する。議決日2026年3月26日は同一PDFの賛否公表区分に基づく（結果表自体に日付の印字はない）。"
+    },
+    {
+      "id": "maebashi-settlement-2024",
+      "municipality_key": "maebashi-city",
+      "organization": "前橋市監査委員",
+      "category": "settlement",
+      "title": "令和6年度決算審査意見書",
+      "url": "https://www.city.maebashi.gunma.jp/material/files/group/107/shi-ikenshoR6.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入159,237,541,694円・歳出154,807,075,147円を円単位で含む監査委員の決算審査意見書。決算の認定は議案第94号・可決（全員）（令和7年第3回定例会の議決結果表r73。結果表に議決日の印字はない）。"
+    }
+  ]
+}

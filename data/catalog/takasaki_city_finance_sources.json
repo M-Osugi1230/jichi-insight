@@ -1,0 +1,63 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-15",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "takasaki-city-home",
+      "municipality_key": "takasaki-city",
+      "organization": "高崎市",
+      "category": "municipality_profile",
+      "title": "高崎市公式サイト",
+      "url": "https://www.city.takasaki.gunma.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "高崎市の公式自治体サイト。"
+    },
+    {
+      "id": "takasaki-budget-2026",
+      "municipality_key": "takasaki-city",
+      "organization": "高崎市",
+      "category": "budget",
+      "title": "令和8年度予算（予算総括表）",
+      "url": "https://www.city.takasaki.gunma.jp/site/digital/87837.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算175,220,000千円のEvidence。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "takasaki-budget-2026-enactment",
+      "municipality_key": "takasaki-city",
+      "organization": "高崎市議会",
+      "category": "assembly",
+      "title": "令和8年第2回定例会 議決結果",
+      "url": "https://www.city.takasaki.gunma.jp/uploaded/attachment/39050.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "議案第28号『令和8年度高崎市一般会計予算』が原案可決（賛成多数）であることを公式の議決結果PDFで確認する。個別議案の議決日は印字されていない。"
+    },
+    {
+      "id": "takasaki-settlement-2024",
+      "municipality_key": "takasaki-city",
+      "organization": "高崎市",
+      "category": "settlement",
+      "title": "令和6年度決算（包括外部監査報告書）",
+      "url": "https://www.city.takasaki.gunma.jp/site/digital/75480.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入183,362,219千円・歳出177,037,888千円を千円単位（千円未満四捨五入）で含む公式決算資料。円単位額はオンライン未公表。決算の認定は議案第78号・認定（令和7年第4回定例会の議決結果PDF。個別の議決日は印字なし）。候補の万円丸め値（183,362,220,000円等）は検証値と異なっていたため、本ブランチで候補ごと訂正した。"
+    }
+  ]
+}

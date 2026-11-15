@@ -1,0 +1,65 @@
+{
+  "id": "phase15-takasaki-plan-review",
+  "official_code": "102024",
+  "name_ja": "高崎市",
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-15",
+  "next_action": "Promote the full enumeration of the fourteen basic strategies and the major-policy measures, and the yen-precision settlement totals, only when official sources with stable record-level locators have been reviewed; keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "quality_boundary": "This package reviews current plan identity and period (sixth comprehensive plan, 2018-2027, organised in three sections rather than a generic three-layer model), the enacted FY2026 initial budget, and the FY2024 settlement at published thousand-yen precision, without collapsing proposed, enacted, supplementary, or settlement states, and without substituting ordinary-account settlement-card values.",
+  "records": [
+    {
+      "id": "takasaki-current-plan-period",
+      "title": "高崎市第6次総合計画 計画期間",
+      "statement": "高崎市第6次総合計画は高崎市のまちづくりにおける施策の基本方針を定める計画であり、計画期間は2018年度から2027年度までの10年間である。FY2026は計画の9年目、FY2024は7年目にあたる。",
+      "value": "2018年度～2027年度",
+      "decision": "accepted",
+      "evidence_role": "current_plan_identity",
+      "source_url": "https://www.city.takasaki.gunma.jp/uploaded/attachment/7137.pdf",
+      "evidence_location": "計画書の計画期間の記載（2018年度～2027年度）",
+      "review_note": "公式の第6次総合計画書PDFで計画期間を直接確認したレビュー済みレコード。"
+    },
+    {
+      "id": "takasaki-current-policy-structure",
+      "title": "高崎市第6次総合計画の構成（3節構成）",
+      "statement": "第6次総合計画は3つの節で構成される。第1節『都市づくりの基本戦略』は14の戦略、第2節『地域の特性を生かした振興策による都市づくり』は7つの地域、第3節『主要施策』は4分野（総務教育・保健福祉・市民経済・建設水道）からなる。本計画は一般的な基本構想・基本計画・実施計画の3層モデルには当てはめない。",
+      "value": 3,
+      "unit": "plan_sections",
+      "decision": "accepted",
+      "evidence_role": "policy_structure",
+      "source_url": "https://www.city.takasaki.gunma.jp/uploaded/attachment/7137.pdf",
+      "evidence_location": "計画書の目次・構成（第1節 都市づくりの基本戦略、第2節 地域の特性を生かした振興策による都市づくり、第3節 主要施策）",
+      "review_note": "公式計画書の節構成・戦略数・地域数・分野数を直接確認したレビュー済みレコード。14戦略・各分野の施策名の全件列挙は行わない。"
+    },
+    {
+      "id": "takasaki-implementation-plan-layer",
+      "title": "実施計画と指定事業の枠組み",
+      "statement": "第6次総合計画の実施は、実施計画に定められた事務事業および市長が特に必要と認めた事務事業を『指定事業』として進行管理する枠組みで行われる。個別の指定事業の内容・実績は本パッケージでは昇格しない。",
+      "decision": "accepted",
+      "evidence_role": "implementation_layer",
+      "source_url": "https://www.city.takasaki.gunma.jp/reiki/reiki_honbun/e203RG00000083.html",
+      "evidence_location": "高崎市総合計画指定事業進行管理要綱の本文（指定事業の定義と進行管理の枠組み）",
+      "review_note": "公式例規で実施計画と指定事業の枠組みを確認したレビュー済みレコード。"
+    },
+    {
+      "id": "takasaki-progress-management-framework",
+      "title": "指定事業進行管理の枠組み",
+      "statement": "高崎市は高崎市総合計画指定事業進行管理要綱（昭和58年訓令第2号）に基づき指定事業の進行管理を行っている。進行管理の個別結果（進行管理表の内容）は本パッケージでは昇格しない。",
+      "decision": "accepted",
+      "evidence_role": "progress_governance",
+      "source_url": "https://www.city.takasaki.gunma.jp/reiki/reiki_honbun/e203RG00000083.html",
+      "evidence_location": "高崎市総合計画指定事業進行管理要綱（昭和58年訓令第2号）の本文",
+      "review_note": "進行管理の制度枠組みを確認したレビュー済みレコード。自治体の進行管理結果をJichi Insight独自の政策達成判定へ変換しない。"
+    },
+    {
+      "id": "takasaki-fy2024-settlement-linkage",
+      "title": "令和6年度決算と第6次総合計画事業の接続",
+      "statement": "FY2024決算値と第6次総合計画の個別事業との接続は未判定（not_assessable）。FY2024は計画期間の7年目であり期間内であることは確認したが、決算と個別事業の対応関係は一次資料で確認できていない。",
+      "fiscal_year": 2024,
+      "decision": "not_assessable",
+      "evidence_role": "annual_progress",
+      "source_url": "https://www.city.takasaki.gunma.jp/site/digital/75480.html",
+      "evidence_location": "令和6年度決算の公式ページおよび包括外部監査報告書の一般会計決算額（千円単位）",
+      "review_note": "期間帰属は確認したが個別事業レベルの接続は推測で記録しないための明示的な未判定レコード。"
+    }
+  ]
+}

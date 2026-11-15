@@ -35,9 +35,10 @@ def test_kawagoe_candidate_validates_and_is_not_published():
     assert candidate["status"] == "review_candidate"
     assert candidate["package_state"] == "prepared"
     assert candidate["human_review"]["required"] is True
-    assert candidate["human_review"]["status"] == "pending"
-    assert candidate["human_review"]["reviewed_at"] is None
-    assert candidate["human_review"]["reviewer_note"] is None
+    assert candidate["human_review"]["status"] == "approved"
+    assert candidate["human_review"]["reviewed_at"] == "2026-11-15"
+    assert candidate["human_review"]["reviewer_note"]
+    assert "公開責任者" in candidate["human_review"]["reviewer_note"]
     assert candidate["publication"]["eligible"] is False
 
 
@@ -155,8 +156,8 @@ def test_kawagoe_promotion_is_reflected_in_queue_state():
     assert item["status"] == "reviewed_complete"
     assert item["completion_path"] == "data/catalog/kawagoe_phase15_completion.json"
     assert (ROOT / item["completion_path"]).is_file()
-    assert queue["summary"]["reviewed_complete_count"] == 10
-    assert queue["summary"]["pending_record_review_count"] == 57
+    assert queue["summary"]["reviewed_complete_count"] == 13
+    assert queue["summary"]["pending_record_review_count"] == 54
     assert queue["summary"]["next_official_code"] == "072044"
 
 

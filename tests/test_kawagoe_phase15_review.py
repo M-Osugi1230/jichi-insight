@@ -232,19 +232,19 @@ def test_kawagoe_completion_quality_gate_and_deferred_depth_are_explicit():
     assert "ランキング" in boundary
 
 
-def test_kawagoe_candidate_approval_record_remains_pending_until_merge():
+def test_kawagoe_candidate_records_owner_approval():
     candidate = load(CANDIDATE)
 
-    # The owner's approval is given on the promotion PR; the approval
-    # record is added to the candidate's human_review at merge time.
+    # The owner's approval (2026-11-15, five-city blanket approval) is
+    # recorded in the candidate's human_review.
     assert candidate["human_review"]["required"] is True
-    assert candidate["human_review"]["status"] == "pending"
-    assert candidate["human_review"]["reviewed_at"] is None
-    assert candidate["human_review"]["reviewer_note"] is None
+    assert candidate["human_review"]["status"] == "approved"
+    assert candidate["human_review"]["reviewed_at"] == "2026-11-15"
+    assert "公開責任者" in candidate["human_review"]["reviewer_note"]
     assert candidate["publication"]["eligible"] is False
 
 
-def test_kawagoe_and_previous_nine_are_reviewed_complete_and_iwaki_is_next():
+def test_kawagoe_and_previous_twelve_are_reviewed_complete_and_iwaki_is_next():
     queue = load(QUEUE)
     by_code = {row["official_code"]: row for row in queue["execution_queue"]}
 
@@ -256,11 +256,12 @@ def test_kawagoe_and_previous_nine_are_reviewed_complete_and_iwaki_is_next():
     for code in (
         "012025", "012041", "022012", "022039", "032018",
         "052019", "062014", "072010", "072036",
+        "092010", "102016", "102024",
     ):
         assert by_code[code]["status"] == "reviewed_complete"
 
-    assert queue["summary"]["reviewed_complete_count"] == 10
+    assert queue["summary"]["reviewed_complete_count"] == 13
     assert queue["summary"]["review_in_progress_count"] == 0
-    assert queue["summary"]["pending_record_review_count"] == 57
+    assert queue["summary"]["pending_record_review_count"] == 54
     assert queue["summary"]["next_official_code"] == "072044"
     assert by_code["072044"]["status"] == "pending_record_review"
