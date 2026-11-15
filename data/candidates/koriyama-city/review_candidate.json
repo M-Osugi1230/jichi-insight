@@ -333,10 +333,10 @@
   ],
   "human_review": {
     "required": true,
-    "status": "pending",
+    "status": "approved",
     "boundary": "A person must check the candidate against the cited primary sources before any promotion to reviewed_complete.",
-    "reviewed_at": null,
-    "reviewer_note": null
+    "reviewed_at": "2026-11-15",
+    "reviewer_note": "公開責任者（大杉邑大、単独運用体制）が2026-11-15にレビューを承認し、reviewed_completeへの昇格を決定した。財政数値は一次資料で検証済み（候補修正 PR #478）。議案第39号（令和8年度一般会計予算）の原案可決（賛成多数、2026年3月19日）は郡山市議会公式の議決結果で確認済み。現行計画は郡山市第7次総合計画（2026年度～2033年度、公共計画（本編）と行政計画（第1次実施計画）で構成し、人口ビジョン・総合戦略と一体策定）であり、FY2024決算は旧枠組み（郡山市まちづくり基本指針）の第七次実施計画の初年度に帰属する。基本目標・政策パッケージ・個別施策の全件列挙とKPI、公共計画本編の全文確認、新旧計画の施策・KPI対応、議案第39号の議員別賛否、成立後の当初予算書本体との最終数値突合、補正予算を含む予算現額は未確認であり、reviewed パッケージの completion の deferred_depth と completion_boundary に残存事項として明記した。"
   },
   "publication": {
     "eligible": false,

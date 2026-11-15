@@ -903,11 +903,11 @@ Phase 14で`source_inventory_complete`となった67自治体を、record-level 
 
 Canonical status:
 
-- Reviewed complete: 8 / 67（函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市）
+- Reviewed complete: 9 / 67（函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市）
 - Review in progress: 0
-- Pending record review: 59
+- Pending record review: 58
 - Blocked source inventory: 0
-- Next official code: 072036
+- Next official code: 072044
 
 ### Milestone P15-M1 — First reviewed-complete core city
 
@@ -1069,6 +1069,23 @@ v1 declared package:
 - FY2024一般会計歳出 130,714,101,758円
 
 基本方針・重点施策・個別施策の個別名称の全件列挙と指標値、まちづくり基本ビジョン・実行プランの全文確認、FY2024実行プラン評価の内容取り込み、議案第5号の賛否内訳・議事録、FY2024決算と個別事業の接続（not_assessableとして保持）、決算の施策別内訳、第7次福島市総合計画との新旧対応、補正・執行・契約・補助金はdeferred depthです。
+
+### Milestone P15-M9 — Koriyama reviewed package
+
+Status: `complete`（2026-11-15）
+
+郡山市をPhase 15の9市目の`reviewed_complete`自治体として確定しました（公開責任者・大杉邑大のレビュー承認に基づく）。
+
+v1 declared package:
+
+- 郡山市第7次総合計画 2026～2033（2026年4月開始）
+- 構成は公共計画（本編）と行政計画（第1次実施計画）の2層で、人口ビジョン・総合戦略を一体的に策定
+- FY2024決算は旧枠組み「郡山市まちづくり基本指針（あすまちこおりやま）」の第七次実施計画（2024～2027）の初年度に帰属し、現行計画の期間外のため現行計画の事業へ接続しない
+- FY2026一般会計当初予算 144,720,000,000円（議案第39号 原案可決・賛成多数・成立予算、議決は市議会公式の議決結果で確認）
+- FY2024一般会計歳入 160,788,173,369円
+- FY2024一般会計歳出 154,354,939,781円
+
+基本目標・政策パッケージ・個別施策の個別名称の全件列挙とKPI、公共計画本編PDFの全文確認、新旧計画の施策・KPI対応、現行計画の年次評価証拠、議案第39号の議員別賛否、成立後の当初予算書本体との最終数値突合、補正予算を含む予算現額、FY2024決算と個別事業の接続（not_assessableとして保持）、決算の施策別内訳、補正・執行・契約・補助金はdeferred depthです。
 
 ## After Phase 15
 
