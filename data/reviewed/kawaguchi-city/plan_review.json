@@ -1,0 +1,66 @@
+{
+  "id": "phase15-kawaguchi-plan-review",
+  "official_code": "112038",
+  "name_ja": "川口市",
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-15",
+  "next_action": "Promote the measures and KPIs under the eight goals and the citizen-survey results only when official sources with stable record-level locators have been reviewed; confirm the December-session vote-table number for certification bill No. 183 when the official table is located; keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "quality_boundary": "This package reviews current plan identity and period (sixth comprehensive plan: basic concept 2026-2035, first basic plan 2026-2030, second basic plan 2031-2035, implementation plan on a three-year rolling basis), the three basic principles and the eight official goal formulations, the enacted FY2026 initial budget, and the FY2024 settlement at exact yen precision, without collapsing proposed, enacted, supplementary, or settlement states. FY2024 belongs to the fifth plan's period and is not attributed to the current plan.",
+  "records": [
+    {
+      "id": "kawaguchi-current-plan-period",
+      "title": "第6次川口市総合計画 計画期間と将来都市像",
+      "statement": "第6次川口市総合計画は、基本構想（2026年度～2035年度）、前期基本計画（2026年度～2030年度）、後期基本計画（2031年度～2035年度）、実施計画の3層で構成され、将来都市像は『産業と文化と自然が調和した 輝きあふれるまち 川口』である。FY2026は現行計画の初年度にあたる。",
+      "value": "基本構想 2026年度～2035年度",
+      "decision": "accepted",
+      "evidence_role": "current_plan_identity",
+      "source_url": "https://www.city.kawaguchi.lg.jp/soshiki/01020/010/4/50297.html",
+      "evidence_location": "第6次川口市総合計画の公式ページ（基本構想・基本計画の期間と将来都市像）",
+      "review_note": "公式の第6次総合計画ページで計画期間と将来都市像を直接確認したレビュー済みレコード。"
+    },
+    {
+      "id": "kawaguchi-current-policy-structure",
+      "title": "第6次川口市総合計画の政策体系（基本理念3つ・8つのめざす姿）",
+      "statement": "基本構想は3つの基本理念（市民とともに輝くまちづくり／みんなの笑顔輝くまちづくり／いつまでも輝き続けるまちづくり）のもとに、施策の方向性として8つの『めざす姿』（健康で、自分らしく生き生きと暮らせるまち／誰もがお互いを認め合い、安心して暮らせるまち／こどもをみんなで育み、こどもが輝き活躍するまち／学びとスポーツ・文化に親しみ、自己実現ができるまち／にぎわいと魅力があり、伝統と未来が響き合うまち／都市と自然が調和した、うるおいとやすらぎのあるまち／誰もが安全で快適に暮らせるまち／持続可能で自立したまち）を定める。めざす姿配下の施策・事業の全件列挙は本パッケージでは行わない。",
+      "value": 8,
+      "unit": "basic_goals",
+      "decision": "accepted",
+      "evidence_role": "policy_structure",
+      "source_url": "https://www.city.kawaguchi.lg.jp/soshiki/01020/010/4/50297.html",
+      "evidence_location": "第6次川口市総合計画の公式ページ（基本理念と8つのめざす姿の正式名称）",
+      "review_note": "公式計画ページで基本理念と8つのめざす姿の正式名称を直接確認したレビュー済みレコード。二次資料由来の言い換え一覧は採用していない。"
+    },
+    {
+      "id": "kawaguchi-implementation-plan-layer",
+      "title": "実施計画（令和8年度版・3か年ローリング）",
+      "statement": "実施計画は基本計画における施策を実現するために実施する具体的な事業を定めたもので、当該年度を初年度とした3か年で策定し毎年見直しを図る。令和8年度版の対象期間は2026年度～2028年度である。個別事業の実績値は本パッケージでは昇格しない。",
+      "value": "実施計画（令和8年度版）2026年度～2028年度",
+      "decision": "accepted",
+      "evidence_role": "implementation_layer",
+      "source_url": "https://www.city.kawaguchi.lg.jp/soshiki/01020/010/4/50297.html",
+      "evidence_location": "第6次川口市総合計画の公式ページ『令和8年度版実施計画（令和8年度〜令和10年度）』の項",
+      "review_note": "公式計画ページで実施計画の期間と見直し方式を直接確認したレビュー済みレコード。"
+    },
+    {
+      "id": "kawaguchi-progress-governance",
+      "title": "市民意識調査による進行管理の枠組み",
+      "statement": "川口市は総合計画の進行管理のため市民意識調査を毎年実施する。調査結果そのものは本パッケージでは昇格しない。",
+      "decision": "accepted",
+      "evidence_role": "progress_governance",
+      "source_url": "https://www.city.kawaguchi.lg.jp/soshiki/01020/010/4/50297.html",
+      "evidence_location": "第6次川口市総合計画の公式ページ『総合計画のための市民意識調査』の項",
+      "review_note": "進行管理の枠組みを確認したレビュー済みレコード。調査結果をJichi Insight独自の政策達成判定へ変換しない。"
+    },
+    {
+      "id": "kawaguchi-fy2024-settlement-linkage",
+      "title": "令和6年度決算と第6次川口市総合計画事業の接続",
+      "statement": "FY2024決算値と第6次川口市総合計画の個別事業との接続は未判定（not_assessable）。FY2024は第5次川口市総合計画の後期基本計画（2021年度～2025年度）の計画期間に属する過年度決算であり、旧計画期間の決算を新計画の実績へ流用しない。",
+      "fiscal_year": 2024,
+      "decision": "not_assessable",
+      "evidence_role": "annual_progress",
+      "source_url": "https://www.city.kawaguchi.lg.jp/shiseijoho/shinozaisei/20900.html",
+      "evidence_location": "予算（市の財政）ページの決算の詳細（令和6年度決算書へのリンク）",
+      "review_note": "計画の版をまたいだ個別事業の接続を推測で記録しないための明示的な未判定レコード。"
+    }
+  ]
+}

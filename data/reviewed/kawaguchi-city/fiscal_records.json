@@ -1,0 +1,66 @@
+[
+  {
+    "id": "jp-local-112038-fiscal-2026-total-expenditure",
+    "municipality_id": "jp-local-112038",
+    "fiscal_year": 2026,
+    "stage": "initial_budget",
+    "account_type": "general",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算（可決）",
+    "amount_yen": 256970000000,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "sources": [
+      "kawaguchi-budget-2026",
+      "kawaguchi-budget-2026-enactment"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "令和8年度当初予算書（議案第18号）第1条の歳入歳出予算総額256,970,000千円。成立は議案第18号・原案可決（2026年3月23日、公式の議決結果表で確認。提出は2026年2月24日）。補正予算や決算とは別stateで扱う。"
+  },
+  {
+    "id": "jp-local-112038-fiscal-2024-total-revenue",
+    "municipality_id": "jp-local-112038",
+    "fiscal_year": 2024,
+    "stage": "settlement",
+    "account_type": "general",
+    "metric": "total_revenue",
+    "metric_label": "一般会計決算歳入",
+    "amount_yen": 259800531831,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "kawaguchi-settlement-2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "令和6年度歳入歳出決算書原本の一般会計歳入総額（収入済額、円単位の確定値）。決算の認定は議案第183号（2025年11月28日認定。候補に記録済み）。令和7年12月定例会の議決結果表における議決番号は未確認であり、残件として保持する。FY2024は第5次計画の期間に帰属する決算であり、現行計画の実績とは扱わない。"
+  },
+  {
+    "id": "jp-local-112038-fiscal-2024-total-expenditure",
+    "municipality_id": "jp-local-112038",
+    "fiscal_year": 2024,
+    "stage": "settlement",
+    "account_type": "general",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計決算歳出",
+    "amount_yen": 247943564747,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "kawaguchi-settlement-2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "令和6年度歳入歳出決算書原本の一般会計歳出総額（支出済額、円単位の確定値）。歳入歳出差引額は11,856,967,084円で整合する。認定は議案第183号（2025年11月28日認定）。"
+  }
+]
