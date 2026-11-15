@@ -67,6 +67,21 @@ if (
   throw new Error("Phase 15 publication state does not match the canonical review queue.");
 }
 
+/**
+ * Derive the reviewed package slug from a completion path, e.g.
+ * data/catalog/morioka_phase15_completion.json -> morioka-city.
+ * Returns null for municipalities without a completion record. The matching
+ * loader in lib/phase15Cities.ts verifies the derived package actually exists.
+ */
+function slugFromCompletionPath(completionPath: string | null): string | null {
+  if (!completionPath) {
+    return null;
+  }
+  const fileName = completionPath.split("/").pop() ?? "";
+  const suffix = "_phase15_completion.json";
+  return fileName.endsWith(suffix) ? `${fileName.slice(0, -suffix.length)}-city` : null;
+}
+
 export const phase15Progress = {
   updatedAt: queue.updated_at,
   total: queue.summary.target_count,
@@ -87,5 +102,6 @@ export const phase15Progress = {
     status: item.status,
     sourceInventoryPath: item.source_inventory_path,
     completionPath: item.completion_path,
+    slug: slugFromCompletionPath(item.completion_path),
   })),
 };

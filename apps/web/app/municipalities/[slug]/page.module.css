@@ -1,0 +1,62 @@
+.introLinks { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 22px; }
+.introLinks a { color: #286f9f; font-size: .72rem; font-weight: 850; text-underline-offset: 4px; }
+.introMeta { align-items: start; display: flex; flex-wrap: wrap; gap: 22px; margin-top: 24px; }
+.introMeta dl { display: flex; flex-wrap: wrap; gap: 26px; margin: 0; }
+.introMeta dt { color: #5a656d; font-size: .6rem; font-weight: 850; }
+.introMeta dd { font-size: .78rem; font-weight: 800; margin: 5px 0 0; }
+.introMeta dd a { color: #286f9f; text-underline-offset: 3px; }
+.sectionHeading { align-items: end; display: grid; gap: 52px; grid-template-columns: minmax(0, 1.1fr) minmax(280px, .9fr); margin-bottom: 24px; }
+.sectionHeading h2 { margin-bottom: 0; }
+.sectionHeading > p { color: #42505b; margin-bottom: 8px; }
+.recordList { display: grid; gap: 12px; }
+.recordCard { background: #fffefa; border: 1px solid #d7d3c8; padding: 22px; }
+.recordCard h3 { font-size: 1rem; margin: 12px 0 10px; }
+.recordHead { align-items: center; display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between; }
+.recordHead > span:first-child { color: #5a656d; font-size: .63rem; font-weight: 850; }
+.statement { font-size: .78rem; line-height: 1.8; margin: 0; }
+.recordValue { font-size: 1.05rem; font-weight: 900; margin: 12px 0 0; }
+.amount { font-size: clamp(1.7rem, 3.4vw, 2.5rem); font-weight: 900; letter-spacing: -.03em; margin: 14px 0 6px; }
+.amountUnavailable { background: #f5f2e9; border-left: 5px solid #b07b33; font-size: .74rem; margin: 14px 0 6px; padding: 14px; }
+.recordFacts { display: grid; gap: 8px; margin: 16px 0 0; }
+.recordFacts > div { border-top: 1px solid #ded9cd; padding-top: 8px; }
+.recordFacts dt { color: #5a656d; font-size: .58rem; font-weight: 850; }
+.recordFacts dd { font-size: .7rem; font-weight: 700; margin: 4px 0 0; overflow-wrap: anywhere; }
+.recordFacts a { color: #286f9f; text-underline-offset: 3px; }
+.sourceList { list-style: none; margin: 0; padding: 0; }
+.sourceList li + li { margin-top: 4px; }
+.note { background: #f2efe7; font-size: .72rem; line-height: 1.85; margin: 18px 0 0; padding: 16px; white-space: pre-wrap; }
+.detailBox { border-top: 1px solid #ded9cd; margin-top: 16px; padding-top: 12px; }
+.detailBox summary { color: #286f9f; cursor: pointer; font-size: .7rem; font-weight: 850; }
+.detailBox p { color: #42505b; font-size: .7rem; line-height: 1.8; }
+.claim { border-top: 1px dashed #ded9cd; margin-top: 14px; padding-top: 14px; }
+.claim .statement { color: #17232c; }
+.openQuestions { background: #f5f2e9; border-left: 5px solid #b07b33; margin-top: 16px; padding: 14px 16px; }
+.openQuestions strong { font-size: .7rem; }
+.openQuestions ul { font-size: .7rem; line-height: 1.8; margin: 8px 0 0; padding-left: 18px; }
+.transitionBlock { margin-top: 34px; }
+.transitionBlock > h3 { font-size: .95rem; }
+.linkageCard { border-top: 5px solid #b07b33; }
+.notice { background: #f5f2e9; border-left: 5px solid #b07b33; color: #42505b; font-size: .74rem; line-height: 1.85; padding: 18px; }
+.notice p { margin: 0; }
+.notice p + p { margin-top: 10px; }
+.subHeading { font-size: .95rem; margin: 36px 0 14px; }
+.deferredList { display: grid; gap: 10px; list-style: none; margin: 0; padding: 0; }
+.deferredList li { background: #fffefa; border: 1px solid #d7d3c8; padding: 16px 18px; }
+.deferredList strong { font-size: .68rem; overflow-wrap: anywhere; }
+.deferredList p { color: #42505b; font-size: .7rem; line-height: 1.8; margin: 8px 0 0; }
+.sourceCatalog { display: grid; gap: 10px; list-style: none; margin: 0; padding: 0; }
+.sourceCatalog li { background: #fffefa; border: 1px solid #d7d3c8; padding: 16px 18px; }
+.sourceCatalog li > div { align-items: baseline; display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; }
+.sourceCatalog strong a { color: #286f9f; font-size: .78rem; text-underline-offset: 3px; }
+.sourceCatalog span { color: #5a656d; font-size: .62rem; font-weight: 850; }
+.sourceCatalog p { color: #42505b; font-size: .7rem; line-height: 1.8; margin: 8px 0 0; }
+.boundary { background: #ece8dd; margin-bottom: 72px; padding: 44px; }
+.boundary h2 { font-size: clamp(1.6rem, 3.4vw, 2.4rem); }
+.boundary h3 { font-size: .85rem; margin: 26px 0 8px; }
+.boundary p { color: #42505b; font-size: .74rem; line-height: 1.9; margin: 0; overflow-wrap: anywhere; }
+.boundaryNote { font-weight: 800; margin-top: 26px !important; }
+@media (max-width: 720px) {
+  .sectionHeading { align-items: start; gap: 18px; grid-template-columns: 1fr; }
+  .boundary { padding: 32px 20px; }
+  .recordCard { padding: 18px; }
+}

@@ -52,3 +52,18 @@ def test_public_review_page_discloses_boundaries_and_excludes_staging_data():
     assert "data/candidates/" not in model
     assert "/review-progress" in header
     assert '"/review-progress"' in sitemap
+
+
+def test_reviewed_rows_link_to_the_generated_city_pages():
+    page = (WEB_ROOT / "app/review-progress/page.tsx").read_text(encoding="utf-8")
+    model = (WEB_ROOT / "lib/phase15Progress.ts").read_text(encoding="utf-8")
+
+    # Reviewed rows link to the city page generated from the reviewed package;
+    # the GitHub completion record stays available as a secondary link.
+    assert "市のページを見る" in page
+    assert 'record.status === "reviewed_complete" && record.slug' in page
+    assert "/municipalities/${record.slug}" in page
+    assert "レビュー完了記録" in page
+    # The slug is derived from the completion path in the public model.
+    assert "slugFromCompletionPath" in model
+    assert "_phase15_completion.json" in model
