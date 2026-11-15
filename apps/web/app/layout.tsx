@@ -37,6 +37,12 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  // Google Search Console ownership verification (URL-prefix property for
+  // https://m-osugi1230.github.io/jichi-insight/). Rendered as the
+  // google-site-verification meta tag in every page's <head>.
+  verification: {
+    google: "y5HZtY4bPWD9Jj8-sXA48x0v61gP1xpOAqWxfQuvY48",
+  },
 };
 
 export const viewport: Viewport = {
