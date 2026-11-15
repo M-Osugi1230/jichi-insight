@@ -36,10 +36,10 @@
           "id": "morioka-budget-2026",
           "evidence_role": "initial_budget",
           "title": "令和8年度当初予算の概要",
-          "official_url": "https://www.city.morioka.iwate.jp/shisei/zaisei/suii/1054620/1056173.html",
-          "format": "html",
-          "evidence_location": "本文『令和8年度当初予算（案）の概要』『1 一般会計』",
-          "use_boundary": "FY2026一般会計当初予算案の成立・公表情報を確認する。補正予算とは別stateで扱う。"
+          "official_url": "https://www.city.morioka.iwate.jp/_res/projects/default_project/_page_/001/056/173/R8gaiyou.pdf",
+          "format": "pdf",
+          "evidence_location": "『2 予算の規模』一般会計 126,510,000千円（令和8年4月公表）",
+          "use_boundary": "FY2026一般会計当初予算126,510,000千円を千円単位のsource precisionで保持する。旧URL（当初予算の概要ページ）は404のため現行PDFへ差し替えた。補正予算とは別stateで扱う。"
         },
         {
           "id": "morioka-budget-book-2026",
@@ -53,11 +53,11 @@
         {
           "id": "morioka-settlement-2024",
           "evidence_role": "settlement_and_audit",
-          "title": "令和6年度決算",
-          "official_url": "https://www.city.morioka.iwate.jp/shisei/zaisei/1010723/1054397/index.html",
-          "format": "html",
-          "evidence_location": "本文『令和6年度決算の概要』一般会計歳入歳出決算額",
-          "use_boundary": "FY2024一般会計決算歳入・歳出の公式トップラインを確認する。"
+          "title": "令和6年度 一般会計・各特別会計歳入歳出決算総括表",
+          "official_url": "https://www.city.morioka.iwate.jp/_res/projects/default_project/_page_/001/053/056/R7.nintei1-10.pdf",
+          "format": "pdf",
+          "evidence_location": "歳入表 一般会計 収入済額135,207,433,943円／歳出表 一般会計 支出済額132,975,741,966円（単位:円）",
+          "use_boundary": "FY2024一般会計決算歳入・歳出の円単位exact値を保持する。旧URL（令和6年度決算ページ）は404のため現行PDFへ差し替えた。決算審査意見書PDFの現行URLは未特定であり、決算認定資料の決算総括表を一次資料とする。"
         }
       ]
     },
@@ -203,14 +203,14 @@
         "account_type": "general",
         "stage": "initial_budget",
         "metric": "total_expenditure",
-        "metric_label": "一般会計当初予算案総額",
-        "amount_yen": 110000000000,
+        "metric_label": "一般会計当初予算総額",
+        "amount_yen": 126510000000,
         "value": null,
         "unit": "yen",
         "value_status": "available",
         "period_start": "2026-04-01",
         "period_end": "2027-03-31",
-        "note": "盛岡市公式公表の令和8年度一般会計当初予算（案）概要情報を記載。補正予算や決算とは別stateで扱う。",
+        "note": "盛岡市公式『令和8年度 当初予算の概要』（令和8年4月公表）『2 予算の規模』の一般会計126,510,000千円を円換算。令和8年度一般会計予算議案書（議案第3号）第1条の歳入歳出総額126,510,000千円とも一致する。補正予算や決算とは別stateで扱う。",
         "review_status": "needs_review",
         "confidence": "medium",
         "sources": [
@@ -225,13 +225,13 @@
         "stage": "settlement",
         "metric": "total_revenue",
         "metric_label": "一般会計収入済額",
-        "amount_yen": 120000000000,
+        "amount_yen": 135207433943,
         "value": null,
         "unit": "yen",
         "value_status": "available",
         "period_start": "2024-04-01",
         "period_end": "2025-03-31",
-        "note": "盛岡市公式公表の令和6年度一般会計決算の概要情報を記載。",
+        "note": "盛岡市公式『令和6年度 一般会計・各特別会計歳入歳出決算総括表』（単位:円）の一般会計収入済額のexact source value。決算審査意見書PDFの現行URLは未特定のため、決算認定資料である決算総括表を一次資料として保持する。",
         "review_status": "needs_review",
         "confidence": "medium",
         "sources": [
@@ -246,13 +246,13 @@
         "stage": "settlement",
         "metric": "total_expenditure",
         "metric_label": "一般会計支出済額",
-        "amount_yen": 117000000000,
+        "amount_yen": 132975741966,
         "value": null,
         "unit": "yen",
         "value_status": "available",
         "period_start": "2024-04-01",
         "period_end": "2025-03-31",
-        "note": "盛岡市公式公表の令和6年度一般会計決算の概要情報を記載。",
+        "note": "盛岡市公式『令和6年度 一般会計・各特別会計歳入歳出決算総括表』（単位:円）の一般会計支出済額のexact source value。決算審査意見書PDFの現行URLは未特定のため、決算認定資料である決算総括表を一次資料として保持する。",
         "review_status": "needs_review",
         "confidence": "medium",
         "sources": [
@@ -268,17 +268,17 @@
         "claims": [
           {
             "field": "amount_yen",
-            "statement": "令和8年度一般会計当初予算の公式概要情報を保持する。",
+            "statement": "令和8年度一般会計当初予算126,510,000千円（126,510,000,000円）を公式概要で保持する。",
             "source_ids": [
               "morioka-budget-2026"
             ],
-            "location_note": "盛岡市ホームページ『令和8年度当初予算の概要』本文『令和8年度当初予算（案）の概要』『1 一般会計』",
+            "location_note": "盛岡市公式『令和8年度 当初予算の概要』（令和8年4月公表）『2 予算の規模』一般会計。令和8年度一般会計予算議案書（議案第3号）第1条の歳入歳出総額とも一致",
             "decision": "needs_review",
-            "review_note": "当初予算概要情報を抽出。人間による確認待ちステージング。"
+            "review_note": "候補の概数110,000,000,000円と正本目録の記録118,500,000千円はいずれも一次資料と一致せず、公式概要および議案書で確認した126,510,000千円に修正。人間による確認待ちステージング。"
           }
         ],
         "open_questions": [
-          "正式な議決予算書および審査意見書との最終数値突合。"
+          "公式議決結果ページの現行URLを再特定し、議案第3号（令和8年度一般会計予算）の議決結果をrecord-level locatorで直接確認する。"
         ],
         "review_status": "needs_review"
       },
@@ -289,13 +289,13 @@
         "claims": [
           {
             "field": "amount_yen",
-            "statement": "令和6年度一般会計決算歳入の公式概要情報を保持する。",
+            "statement": "令和6年度一般会計決算歳入（収入済額）135,207,433,943円を決算総括表の円単位exact値で保持する。",
             "source_ids": [
               "morioka-settlement-2024"
             ],
-            "location_note": "盛岡市ホームページ『令和6年度決算』",
+            "location_note": "盛岡市公式『令和6年度 一般会計・各特別会計歳入歳出決算総括表』歳入表 一般会計 収入済額（単位:円）",
             "decision": "needs_review",
-            "review_note": "決算概要情報を抽出。人間による確認待ちステージング。"
+            "review_note": "候補の概数120,000,000,000円と正本目録の記録124,850,210千円はいずれも決算総括表と一致せず、一次資料で確認したexact値に修正。人間による確認待ちステージング。"
           }
         ],
         "open_questions": [],
@@ -308,13 +308,13 @@
         "claims": [
           {
             "field": "amount_yen",
-            "statement": "令和6年度一般会計決算歳出の公式概要情報を保持する。",
+            "statement": "令和6年度一般会計決算歳出（支出済額）132,975,741,966円を決算総括表の円単位exact値で保持する。",
             "source_ids": [
               "morioka-settlement-2024"
             ],
-            "location_note": "盛岡市ホームページ『令和6年度決算』",
+            "location_note": "盛岡市公式『令和6年度 一般会計・各特別会計歳入歳出決算総括表』歳出表 一般会計 支出済額（単位:円）",
             "decision": "needs_review",
-            "review_note": "決算概要情報を抽出。人間による確認待ちステージング。"
+            "review_note": "候補の概数117,000,000,000円と正本目録の記録121,320,150千円はいずれも決算総括表と一致せず、一次資料で確認したexact値に修正。人間による確認待ちステージング。"
           }
         ],
         "open_questions": [],
