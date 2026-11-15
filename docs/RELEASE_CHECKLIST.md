@@ -10,13 +10,13 @@
 ## Current release position
 
 - 公開状態: **Public beta**（2026-11-15、公開責任者・大杉邑大が正式Public betaへの移行を承認。本変更のマージとデプロイをもって表記を切り替える）。GitHub Pagesで公開済み
-- 直近の公開検証: 2026-11-15 success（`.github/publication-status.json`、deployed_commit_sha `539a7e0a`）
+- 直近の公開検証: 2026-11-15 success（`.github/publication-status.json`、deployed_commit_sha `95f972fa`）
 - Phase 11: 全国47都道府県・15,327個票を共通Schemaで正規化／公式一次資料上の最大到達深度まで完了
 - Phase 13: 政令指定都市20/20のv1 record-review foundation完了（うち2市はReviewed reference）
 - Phase 14: 中核市・県庁所在地67/67の公式Source Inventory完了
-- Phase 15: 4/67自治体 reviewed_complete、1自治体 review_in_progress、62自治体 pending_record_review（正本キューの更新日は2026-10-09）
+- Phase 15: 9/67自治体 reviewed_complete、58自治体 pending_record_review（正本キューの更新日は2026-11-15）
 - 各Phaseの`complete`は全政策・予算・事業・契約・実績の完全な接続や全国比較可能性を保証しない
-- Public beta移行時点で未実施の事項は、外部法務確認、外部の中立性・方法論レビュー、実機・キーボード・スクリーンリーダー監査、初見ユーザーの3分理解テスト、障害対応の実地試験、訂正申請フォームの本番送信テスト。公開責任者は、これらが未実施であることを本チェックリストに明記したうえでPublic betaへ移行する判断をした（2026-11-15）。訂正・反論の通し試験、ロールバック訓練、ライセンス確定、Lighthouse計測と是正、運用責任体制の確定は完了済み
+- Public beta移行時点で未実施の事項は、外部法務確認、外部の中立性・方法論レビュー、実機・キーボード・スクリーンリーダー監査、初見ユーザーの3分理解テスト、障害対応の実地試験。訂正申請フォームの本番送信テストは2026-11-15に実施済み（Issue #492）。障害対応は机上訓練を2026-11-15に実施済み（Issue #12に記録）だが、実地試験は未実施のままである。公開責任者は、これらが未実施であることを本チェックリストに明記したうえでPublic betaへ移行する判断をした（2026-11-15）。訂正・反論の通し試験、ロールバック訓練、ライセンス確定、Lighthouse計測と是正、運用責任体制の確定は完了済み
 - 正式な公開判断の親Issue: [#12 Public beta trust and launch gate](https://github.com/M-Osugi1230/jichi-insight/issues/12)
 - **Phase 15の全67自治体レビュー完了はPublic betaの必須条件ではない**。未完了範囲を明示し、審査済みデータのみ公開する
 
@@ -43,7 +43,7 @@
 - [x] Wave 3の38県・13,755個票をReviewed最大到達深度へ引き上げ（`data/catalog/phase11_completion.json`）
 - [x] Phase 13の20政令指定都市のv1レビュー基盤を完了（`data/catalog/phase13_completion.json`）
 - [x] Phase 14の67自治体の公式資料インベントリを完了（`data/catalog/phase14_completion.json`）
-- [ ] Phase 15の残り63自治体の個票レビュー（うち盛岡市は進行中。Public betaの必須条件ではない）
+- [ ] Phase 15の残り58自治体の個票レビュー（Public betaの必須条件ではない）
 - [ ] 議会発言、採決、監査指摘、首長公約を個票単位で接続
 - [ ] 比較可能性確認済み指標だけを横断比較へ昇格
 
@@ -60,9 +60,9 @@
 - [ ] 首長・公約ページ
 - [ ] 議会・議案・採決ページ
 - [ ] 比較可能性確認済み指標の比較画面
-- [ ] 訂正申請フォームの本番送信テスト
+- [x] 訂正申請フォームの本番送信テスト（2026-11-15: 公開フォームから実際に送信し、Issue #492として起票とラベル自動付与を確認、テストとして判定・クローズまで完了）
 - [x] 変更履歴の公開画面（2026-11-15: PR #458で`/corrections/history`を公開し、PR #468で実在の訂正correction-2026-001を登録、本番表示を確認）
-- [ ] 404、空状態、エラー状態の本番確認
+- [x] 404、空状態、エラー状態の本番確認（2026-11-15: 存在しないURLで専用404ページの表示を本番確認。変更履歴ページの表示も確認。エラー状態はPR #456で実装）
 
 ## Trust
 
@@ -93,10 +93,10 @@
 - [x] Wave 2全711件の統合Schema・参照整合性テスト
 - [x] GitHub Pages、Publication Audit、本番HTTP verification、Production Smoke
 - [x] Wave 3の地域バッチNormalizerと統合ゲート（Phase 11完了）
-- [ ] mainブランチ保護設定の最終確認
-- [ ] dependency audit、secrets scan、Actions least-privilege監査
+- [ ] mainブランチ保護設定の最終確認（2026-11-15に確認: ブランチ保護・ルールセットはいずれも未設定。強制プッシュや削除を防ぐ技術的統制はなく、PR運用はプロジェクトの規律による。設定の要否は公開責任者の判断事項）
+- [x] dependency audit、secrets scan、Actions least-privilege監査（2026-11-15: secrets scanは追跡ファイル1,988件で検出なし（対象はmainツリー、履歴全体は対象外）。Python依存は既知の脆弱性0件。Web依存はロック済み275パッケージをOSVで照合し本番依存は0件、開発専用（eslint経由のminimatch）に低深刻度1件（GHSA-g3hv-75wg-m249、可用性のみで本番未混入、修正版11.0.1で解消可能）。Actions least-privilege化は2026-11-15に適用済み）
 - [ ] preview / staging / production境界の確定
-- [ ] rollback、backup、monitoring、incident訓練
+- [ ] rollback、backup、monitoring、incident訓練（2026-11-15: ロールバック実地訓練（PR #471・#472）と障害対応の机上訓練（Issue #12に記録）は実施済み。monitoringの自動アラートは未導入で、検知は週次確認・マージ時の公開検証・利用者報告に依存する）
 
 ## UX and accessibility
 
@@ -104,7 +104,7 @@
 - [x] 見出し構造と色だけに依存しない状態ラベル
 - [x] 出典・品質・未確認範囲を主要ページに表示
 - [ ] 実機スマートフォン、キーボード、スクリーンリーダー監査（未実施。2026-11-15に公開責任者から確認OKの表明があったが、実機・キーボード・VoiceOverによる実測は行っていないため未完了として記録する）
-- [ ] 画像・図表の代替テキスト、コントラスト監査
+- [x] 画像・図表の代替テキスト、コントラスト監査（2026-11-15: コンテンツ画像が存在しないことを確認（`<img>`・next/image ともに使用なし、唯一の画像資産はファビコン用SVG）。コントラストはPR #461・#464・#483で是正し、Lighthouse Accessibility 100で確認）
 - [x] Lighthouse accessibility測定（2026-11-15、本番7ページをLighthouse 13.6・モバイルで計測。是正（PR #483）後の再計測でAccessibility 100、Best Practices 100、SEO 100を全ページで確認。Performanceはサンドボックス経由の参考値）
 - [ ] 初見ユーザーによる3分理解テスト（未実施。公開責任者の確認表明はあったが、初見ユーザーによる実測は行っていないため未完了として記録する）
 
