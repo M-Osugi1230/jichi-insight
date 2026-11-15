@@ -22,7 +22,7 @@ def test_public_home_cites_the_canonical_phase15_progress():
     assert "phase15_core_capital_review_queue.json" in progress
     assert "未確認候補は審査済みデータとして表示しません" in homepage
     assert "次は、個票の一対一接続" not in homepage
-    assert "公開中・Public beta" in homepage
+    assert "正式公開中" in homepage
 
 
 def test_public_home_keeps_the_critical_journey_and_smoke_copy():

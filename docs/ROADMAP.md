@@ -6,7 +6,7 @@ Jichi Insightは日付ではなく、品質ゲートの通過で進行を管理�
 
 Status: `complete_for_initial_publication`
 
-プロジェクト憲章、PRD、編集・データ方針、モノレポ、Web、JSON Schema、CI、公式資料マップ、訂正・反論、利用規約、プライバシー、免責、運用手順、公開前監査、Production Smokeを整備しました。正式なPublic betaには外部法務・アクセシビリティ・運用の実地ゲートが残ります。
+プロジェクト憲章、PRD、編集・データ方針、モノレポ、Web、JSON Schema、CI、公式資料マップ、訂正・反論、利用規約、プライバシー、免責、運用手順、公開前監査、Production Smokeを整備しました。正式なPublic betaを経て、2026-11-15に正式公開へ移行しました（外部法務確認等の未実施事項は RELEASE_CHECKLIST に明記したうえで、公開責任者が移行を判断しました）。
 
 ## Phase 7 — Nationwide prefecture registry
 
