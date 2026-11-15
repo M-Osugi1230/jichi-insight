@@ -277,6 +277,14 @@ export default async function Phase15CityPage({
           </div>
         </PageIntro>
 
+        <nav className={styles.cityJumpNav} aria-label="この自治体ページの目次">
+          <a href="#city-summary-title">概要</a>
+          <a href="#promise-title">政策計画</a>
+          <a href="#money-title">予算・決算</a>
+          <a href="#linkage-title">実績との接続</a>
+          <a href="#sources-title">公式資料</a>
+          <a href="#boundary-title">確認の範囲</a>
+        </nav>
         <CityOverview city={city} />
 
         <section className="contentSection" aria-labelledby="promise-title">
