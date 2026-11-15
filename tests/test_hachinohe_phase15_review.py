@@ -216,7 +216,7 @@ def test_hachinohe_completion_quality_and_deferred_depth_are_explicit():
     assert "ranking" in boundary
 
 
-def test_hachinohe_morioka_akita_and_yamagata_are_complete_and_fukushima_is_next():
+def test_hachinohe_morioka_akita_yamagata_and_fukushima_are_complete_and_koriyama_is_next():
     queue = load(QUEUE)
     by_code = {row["official_code"]: row for row in queue["execution_queue"]}
 
@@ -236,7 +236,11 @@ def test_hachinohe_morioka_akita_and_yamagata_are_complete_and_fukushima_is_next
     assert by_code["062014"]["completion_path"] == (
         "data/catalog/yamagata_phase15_completion.json"
     )
-    assert queue["summary"]["reviewed_complete_count"] == 7
+    assert by_code["072010"]["status"] == "reviewed_complete"
+    assert by_code["072010"]["completion_path"] == (
+        "data/catalog/fukushima_phase15_completion.json"
+    )
+    assert queue["summary"]["reviewed_complete_count"] == 8
     assert queue["summary"]["review_in_progress_count"] == 0
-    assert queue["summary"]["pending_record_review_count"] == 60
-    assert queue["summary"]["next_official_code"] == "072010"
+    assert queue["summary"]["pending_record_review_count"] == 59
+    assert queue["summary"]["next_official_code"] == "072036"

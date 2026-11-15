@@ -183,13 +183,27 @@ Declared v1 package:
 
 Deferred depth includes the exhaustive enumeration of all policy fields and outcome indicators and their KPI detail, full-text confirmation of the plan book PDF, the old/new plan policy and indicator mapping, current-plan annual evaluation evidence, the FY2024 settlement certification date and result, the FY2024 settlement-to-item linkage (kept not_assessable), the presence or absence of FY2026 supplementary budgets, settlement breakdown by policy, fiscal project detail, causality and cross-city comparability.
 
+## Eighth completion — Fukushima
+
+福島市を8市目の`reviewed_complete`へ昇格しました（2026-11-15、公開責任者・大杉邑大のレビュー承認に基づく）。
+
+Declared v1 package:
+
+- current comprehensive plan: 第6次福島市総合計画 2021–2026 (period originally 2021–2025, extended by one year in March 2026)
+- structure: two layers — まちづくり基本ビジョン (basic vision) and 実行プラン (execution plan)
+- plan period extension: decided and voted in the March 2026 council session so the next (7th) plan can be prepared with fuller verification; FY2024 settlement and FY2026 budget both fall inside the current plan period, FY2026 being its final year
+- FY2026 general-account initial budget: 124,500,000,000 yen (enacted; 議案第5号 原案可決 on 2026-03-27, confirmed on the official council deliberation results; thousand-yen precision confirmed in the budget overview annex table)
+- FY2024 general-account settlement: exact revenue (136,983,126,064 yen) and expenditure (130,714,101,758 yen) values from the settlement book
+
+Deferred depth includes the exhaustive enumeration of all basic policies, priority measures, individual measures and indicator values, full-text confirmation of the basic vision and execution plan PDFs, ingestion of the FY2024 execution-plan evaluation content, the vote breakdown and minutes for bill No. 5, the FY2024 settlement-to-item linkage (kept not_assessable), settlement breakdown by policy, the mapping to the forthcoming 7th comprehensive plan, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 7 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市
+- Reviewed complete: 8 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市
 - Review in progress: 0
-- Pending record review: 60
+- Pending record review: 59
 - Blocked source inventory: 0
-- Next official code: 072010
+- Next official code: 072036
 
 ## Definition of Phase 15 completion
 

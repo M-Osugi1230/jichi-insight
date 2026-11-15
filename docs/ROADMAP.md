@@ -903,11 +903,11 @@ Phase 14で`source_inventory_complete`となった67自治体を、record-level 
 
 Canonical status:
 
-- Reviewed complete: 7 / 67（函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市）
+- Reviewed complete: 8 / 67（函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市）
 - Review in progress: 0
-- Pending record review: 60
+- Pending record review: 59
 - Blocked source inventory: 0
-- Next official code: 072010
+- Next official code: 072036
 
 ### Milestone P15-M1 — First reviewed-complete core city
 
@@ -1052,6 +1052,23 @@ v1 declared package:
 - FY2024一般会計歳出 111,230,120,306円
 
 19政策分野・45成果指標の個別名称の全件列挙とKPI詳細、計画本編PDFの全文確認、発展計画2025と発展計画2030の新旧対応、現行計画の年次評価証拠、FY2024決算の認定日・認定結果、FY2024決算と個別事業の接続（not_assessableとして保持）、FY2026補正予算の有無、決算の施策別内訳、補正・執行・契約・補助金はdeferred depthです。
+
+### Milestone P15-M8 — Fukushima reviewed package
+
+Status: `complete`（2026-11-15）
+
+福島市をPhase 15の8市目の`reviewed_complete`自治体として確定しました（公開責任者・大杉邑大のレビュー承認に基づく）。
+
+v1 declared package:
+
+- 第6次福島市総合計画 2021～2026（当初2021～2025、令和8年3月に1年延長）
+- 構成は「まちづくり基本ビジョン」と「実行プラン」の2階層
+- 計画期間の延長は令和8年3月市議会定例会議で議決され、FY2024決算・FY2026当初予算はいずれも現行計画の期間内（FY2026は最終年度）
+- FY2026一般会計当初予算 124,500,000,000円（議案第5号 原案可決・成立予算、議決は市議会公式の審議結果で確認、千円単位の精度は予算概要資料編の表で確定）
+- FY2024一般会計歳入 136,983,126,064円
+- FY2024一般会計歳出 130,714,101,758円
+
+基本方針・重点施策・個別施策の個別名称の全件列挙と指標値、まちづくり基本ビジョン・実行プランの全文確認、FY2024実行プラン評価の内容取り込み、議案第5号の賛否内訳・議事録、FY2024決算と個別事業の接続（not_assessableとして保持）、決算の施策別内訳、第7次福島市総合計画との新旧対応、補正・執行・契約・補助金はdeferred depthです。
 
 ## After Phase 15
 
