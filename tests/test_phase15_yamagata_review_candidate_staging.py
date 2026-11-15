@@ -241,3 +241,38 @@ def test_prepared_yamagata_candidate_retains_human_boundary_and_evidence_shape()
     assert candidate["human_review"]["reviewed_at"] is None
     assert candidate["human_review"]["reviewer_note"] is None
     assert candidate["publication"]["eligible"] is False
+
+
+def test_yamagata_fy2026_budget_is_recorded_as_enacted():
+    candidate = load(CANDIDATE)
+    package = candidate["candidate_package"]
+
+    budget_record = next(
+        rec
+        for rec in package["fiscal_records"]
+        if rec["fiscal_year"] == 2026 and rec["stage"] == "initial_budget"
+    )
+    # Amount is unchanged; only the stage wording moved from bill to enacted.
+    assert budget_record["amount_yen"] == 117146000000
+    assert budget_record["metric_label"] == "一般会計当初予算総額"
+    assert "議第8号" in budget_record["note"]
+    assert "令和8年3月24日" in budget_record["note"]
+    assert "原案のとおり可決" in budget_record["note"]
+    assert "1018030.html" in budget_record["note"]
+
+    budget_packet = next(
+        pkt
+        for pkt in package["evidence_packets"]
+        if pkt["subject_id"] == budget_record["id"]
+    )
+    claim = budget_packet["claims"][0]
+    assert "当初予算案総額" not in claim["statement"]
+    assert "当初予算総額" in claim["statement"]
+    # The enactment-confirmation open question is resolved; the remaining
+    # open question must not ask for the vote result again.
+    assert all("議決" not in q for q in budget_packet["open_questions"])
+
+    budget_source = next(
+        s for s in package["source_catalog"]["sources"] if s["id"] == "yamagata-budget-2026"
+    )
+    assert "可決・成立済み" in budget_source["use_boundary"]
