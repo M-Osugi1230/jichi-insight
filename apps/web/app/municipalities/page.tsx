@@ -17,7 +17,7 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
   title: "47都道府県の政策目標を根拠から探す",
   description:
-    "全国47都道府県、15,124件のReviewed目標・指標とEvidence Packetを検索し、実績・予算・事業・契約の接続状況を確認できます。",
+    `全国47都道府県、${reviewedCoverageStats.reviewedRecords.toLocaleString("ja-JP")}件のReviewed目標・指標とEvidence Packetを検索し、実績・予算・事業・契約の接続状況を確認できます。`,
   alternates: {
     canonical: "https://m-osugi1230.github.io/jichi-insight/municipalities/",
   },
@@ -258,7 +258,7 @@ export default function MunicipalitiesPage() {
             <p className="eyebrow">Phase 10 in progress</p>
             <h2>評価を急がず、Evidence Chainを縦につなぐ。</h2>
             <p>
-              15,124件は政策達成評価ではありません。次は年度実績、予算、事業、契約を同じ政策IDへ照合し、住民が自分で判断できる根拠の連鎖を広げます。
+              {formatNumber(reviewedCoverageStats.reviewedRecords)}件は政策達成評価ではありません.次は年度実績、予算、事業、契約を同じ政策IDへ照合し、住民が自分で判断できる根拠の連鎖を広げます。
             </p>
           </div>
           <div className={styles.calloutActions}>
