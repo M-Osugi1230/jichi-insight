@@ -73,7 +73,10 @@ export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return routes.map((route) => ({
-    url: `${siteUrl}${route}`,
+    // The homepage entry needs the trailing slash: the Search Console
+    // URL-prefix property is "https://m-osugi1230.github.io/jichi-insight/"
+    // and the bare ".../jichi-insight" URL falls outside that prefix.
+    url: route === "" ? `${siteUrl}/` : `${siteUrl}${route}`,
     ...(lastModifiedByRoute.has(route)
       ? { lastModified: lastModifiedByRoute.get(route) }
       : {}),
