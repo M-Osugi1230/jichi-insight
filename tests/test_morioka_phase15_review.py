@@ -183,11 +183,14 @@ def test_morioka_evidence_packets_validate_and_match_fiscal_records():
         for packet in packets
         if packet["subject_id"] == "jp-local-032018-fiscal-2026-total-expenditure"
     )
-    # The official vote-result page has not been directly confirmed; the
-    # residual item must stay explicit instead of being silently dropped.
-    assert budget_packet["open_questions"]
-    assert "議決結果ページ" in budget_packet["open_questions"][0]
-    assert "未達" in budget_packet["claims"][0]["review_note"]
+    # Morioka publishes vote results only in the council newsletter PDF
+    # (no HTML vote-result page exists); bill No. 3 was confirmed directly
+    # in newsletter No.241 p.8, so the former residual open question is
+    # resolved and the confirmation is recorded in the review note.
+    assert budget_packet["open_questions"] == []
+    assert "直接確認" in budget_packet["claims"][0]["review_note"]
+    assert "No.241" in budget_packet["claims"][0]["review_note"]
+    assert "HTML" in budget_packet["claims"][0]["review_note"]
 
 
 def test_morioka_completion_quality_gate_and_deferred_depth_are_explicit():
@@ -218,7 +221,9 @@ def test_morioka_completion_quality_gate_and_deferred_depth_are_explicit():
     boundary = completion["completion_boundary"]
     assert "公開責任者" in boundary
     assert "2026-11-15" in boundary
-    assert "未達" in boundary
+    assert "No.241" in boundary
+    assert "直接確認済み" in boundary
+    assert "暫定locator" not in boundary
     assert "not_assessable" in boundary
     assert "Jichi Insight独自の政策達成度" in boundary
     assert "ランキング" in boundary
