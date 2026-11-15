@@ -35,11 +35,11 @@
         {
           "id": "koriyama-budget-2026",
           "evidence_role": "initial_budget",
-          "title": "予算・財政状況（市のプロフィール）",
-          "official_url": "https://www.city.koriyama.lg.jp/soshiki/23/66617.html",
-          "format": "html",
-          "evidence_location": "本文『令和8年度当初予算概要』一般会計",
-          "use_boundary": "FY2026一般会計当初予算案の概要情報を確認する。補正予算や決算とは別stateで扱う。"
+          "title": "令和8年度郡山市一般会計予算（議案第39号）",
+          "official_url": "https://www.city.koriyama.lg.jp/uploaded/attachment/118507.pdf",
+          "format": "pdf",
+          "evidence_location": "第1条『歳入歳出予算の総額は、歳入歳出それぞれ144,720,000千円と定める』および第1表歳入歳出予算（歳入合計・歳出合計いずれも144,720,000千円）",
+          "use_boundary": "FY2026一般会計当初予算144,720,000千円を千円単位のsource precisionで保持する。令和8年3月定例会議決結果で議案第39号は原案可決され成立済み。旧参照資料の当初予算概要PDFは404となり、金額の一次資料である議案書へ差し替えた。補正予算とは別stateで扱う。"
         },
         {
           "id": "koriyama-budget-book-2026",
@@ -56,8 +56,8 @@
           "title": "令和6年度決算について",
           "official_url": "https://www.city.koriyama.lg.jp/soshiki/25/161930.html",
           "format": "html",
-          "evidence_location": "本文『令和6年度決算について』一般会計歳入歳出決算額",
-          "use_boundary": "FY2024一般会計決算歳入・歳出の公式トップラインを確認する。"
+          "evidence_location": "本文『1.一般会計歳入歳出決算概要』および同ページからリンクされる『令和6年度歳入歳出決算書』歳入総括表・歳出総括表 一般会計（単位:円）",
+          "use_boundary": "FY2024一般会計決算歳入・歳出の円単位exact値を決算書総括表で保持する。概要ページの万円単位表記（歳入1,607億8,817万円／歳出1,543億5,494万円）とも整合する。"
         }
       ]
     },
@@ -189,14 +189,14 @@
         "account_type": "general",
         "stage": "initial_budget",
         "metric": "total_expenditure",
-        "metric_label": "一般会計当初予算案総額",
-        "amount_yen": 145000000000,
+        "metric_label": "一般会計当初予算総額",
+        "amount_yen": 144720000000,
         "value": null,
         "unit": "yen",
         "value_status": "available",
         "period_start": "2026-04-01",
         "period_end": "2027-03-31",
-        "note": "郡山市公式公表の令和8年度一般会計当初予算（案）概要情報を記載。補正予算や決算とは別stateで扱う。",
+        "note": "郡山市公式『令和8年度郡山市一般会計予算』（議案第39号）第1条の歳入歳出総額144,720,000千円を円換算。市長提案理由（令和8年2月19日）の一般会計予算案規模1,447億2,000万円とも一致し、令和8年3月定例会で原案可決・成立済み。補正予算や決算とは別stateで扱う。",
         "review_status": "needs_review",
         "confidence": "medium",
         "sources": [
@@ -211,13 +211,13 @@
         "stage": "settlement",
         "metric": "total_revenue",
         "metric_label": "一般会計収入済額",
-        "amount_yen": 155000000000,
+        "amount_yen": 160788173369,
         "value": null,
         "unit": "yen",
         "value_status": "available",
         "period_start": "2024-04-01",
         "period_end": "2025-03-31",
-        "note": "郡山市公式公表の令和6年度一般会計決算の概要情報を記載。",
+        "note": "郡山市公式『令和6年度歳入歳出決算書』歳入総括表（単位:円）の一般会計収入済額のexact source value。『令和6年度決算について』の概要表記（歳入1,607億8,817万円）とも整合する。",
         "review_status": "needs_review",
         "confidence": "medium",
         "sources": [
@@ -232,13 +232,13 @@
         "stage": "settlement",
         "metric": "total_expenditure",
         "metric_label": "一般会計支出済額",
-        "amount_yen": 150000000000,
+        "amount_yen": 154354939781,
         "value": null,
         "unit": "yen",
         "value_status": "available",
         "period_start": "2024-04-01",
         "period_end": "2025-03-31",
-        "note": "郡山市公式公表の令和6年度一般会計決算の概要情報を記載。",
+        "note": "郡山市公式『令和6年度歳入歳出決算書』歳出総括表（単位:円）の一般会計支出済額のexact source value。『令和6年度決算について』の概要表記（歳出1,543億5,494万円、万円単位への丸め）とも整合する。",
         "review_status": "needs_review",
         "confidence": "medium",
         "sources": [
@@ -254,17 +254,17 @@
         "claims": [
           {
             "field": "amount_yen",
-            "statement": "令和8年度一般会計当初予算の公式概要情報を保持する。",
+            "statement": "令和8年度一般会計当初予算144,720,000千円（144,720,000,000円）を議案書で保持する。",
             "source_ids": [
               "koriyama-budget-2026"
             ],
-            "location_note": "郡山市ホームページ『予算・財政状況（市のプロフィール）』",
+            "location_note": "郡山市公式『令和8年度郡山市一般会計予算』（議案第39号）第1条および第1表。市長提案理由（令和8年2月19日）の予算案規模、令和8年3月定例会議決結果（議案第39号・原案可決）とも整合",
             "decision": "needs_review",
-            "review_note": "当初予算概要情報を抽出。人間による確認待ちステージング。"
+            "review_note": "候補の概数145,000,000,000円は一次資料と一致せず、議案書および議決結果で確認した144,720,000千円に修正。人間による確認待ちステージング。"
           }
         ],
         "open_questions": [
-          "正式な議決予算書および審査意見書との最終数値突合。"
+          "成立後の令和8年度当初予算書（予算書本体）との最終数値突合。"
         ],
         "review_status": "needs_review"
       },
@@ -275,13 +275,13 @@
         "claims": [
           {
             "field": "amount_yen",
-            "statement": "令和6年度一般会計決算歳入の公式概要情報を保持する。",
+            "statement": "令和6年度一般会計決算歳入（収入済額）160,788,173,369円を決算書の円単位exact値で保持する。",
             "source_ids": [
               "koriyama-settlement-2024"
             ],
-            "location_note": "郡山市ホームページ『令和6年度決算について』",
+            "location_note": "郡山市公式『令和6年度歳入歳出決算書』歳入総括表 一般会計 収入済額（単位:円）。郡山市ホームページ『令和6年度決算について』からリンク",
             "decision": "needs_review",
-            "review_note": "決算概要情報を抽出。人間による確認待ちステージング。"
+            "review_note": "候補の概数155,000,000,000円は一次資料と一致せず、決算書で確認したexact値に修正。人間による確認待ちステージング。"
           }
         ],
         "open_questions": [],
@@ -294,13 +294,13 @@
         "claims": [
           {
             "field": "amount_yen",
-            "statement": "令和6年度一般会計決算歳出の公式概要情報を保持する。",
+            "statement": "令和6年度一般会計決算歳出（支出済額）154,354,939,781円を決算書の円単位exact値で保持する。",
             "source_ids": [
               "koriyama-settlement-2024"
             ],
-            "location_note": "郡山市ホームページ『令和6年度決算について』",
+            "location_note": "郡山市公式『令和6年度歳入歳出決算書』歳出総括表 一般会計 支出済額（単位:円）。郡山市ホームページ『令和6年度決算について』からリンク",
             "decision": "needs_review",
-            "review_note": "決算概要情報を抽出。人間による確認待ちステージング。"
+            "review_note": "候補の概数150,000,000,000円は一次資料と一致せず、決算書で確認したexact値に修正。人間による確認待ちステージング。"
           }
         ],
         "open_questions": [],
