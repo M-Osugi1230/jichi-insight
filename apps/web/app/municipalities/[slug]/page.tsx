@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { PageIntro } from "@/components/PageIntro";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
+import { SourceLocation } from "@/components/SourceLocation";
 import { StatusBadge } from "@/components/StatusBadge";
 import {
   loadPhase15Cities,
@@ -406,7 +407,9 @@ export default async function Phase15CityPage({
                     {source.format} / {source.evidenceRole}
                   </span>
                 </div>
-                {source.evidenceLocation && <p>資料位置: {source.evidenceLocation}</p>}
+                {source.evidenceLocation && (
+                  <SourceLocation note={source.evidenceLocation} />
+                )}
                 {source.useBoundary && <p>{source.useBoundary}</p>}
               </li>
             ))}
