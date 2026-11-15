@@ -1,0 +1,63 @@
+[
+  {
+    "id": "evidence-yokosuka-city-2026-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-142018-fiscal-2026-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算は180,120,000千円（180,120,000,000円）であり、議案第18号『令和8年度横須賀市一般会計予算』として令和8年3月定例議会で令和8年3月25日に原案どおり可決された成立予算である。",
+        "source_ids": [
+          "yokosuka-budget-2026"
+        ],
+        "location_note": "横須賀市公式『令和8年度横須賀市予算書』に収録された議案第18号『令和8年度横須賀市一般会計予算』第1条（歳入歳出予算の総額は歳入歳出それぞれ180,120,000千円）と第1表歳入歳出予算の歳入合計・歳出合計180,120,000千円。議決は横須賀市議会公式『令和8年横須賀市議会3月定例議会 本会議の概要（第6日）』（令和8年3月25日、議案第18号は賛成多数・反対10人で原案どおり可決）で確認",
+        "decision": "accepted",
+        "review_note": "成立当初予算の額を公式予算書の議案条文と第1表から抽出し、市議会の本会議の概要で議案第18号の原案可決（2026年3月25日）を一次資料で直接確認したレビュー済みレコード。本会議録による議決経過の最終確認は残件として保持する。"
+      }
+    ],
+    "review_status": "reviewed",
+    "open_questions": [
+      "本会議録による議決経過の最終確認は未実施であり、残件として保持する。"
+    ]
+  },
+  {
+    "id": "evidence-yokosuka-city-2024-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-142018-fiscal-2024-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計決算の歳入決算額は177,898,477,901円である。当該決算の認定は、議案第100号『令和6年度横須賀市一般会計歳入歳出決算』として令和7年9月定例議会へ提出され、令和7年10月7日に認定された。",
+        "source_ids": [
+          "yokosuka-settlement-audit-2024"
+        ],
+        "location_note": "横須賀市監査委員の公式『令和6年度横須賀市一般会計・特別会計歳入歳出決算審査意見書』（横監第28号、令和7年8月29日）の第1表『決算総括表』（単位 円）の一般会計収入済額・収支差引額。市公式『令和6年度決算収支状況（会計別）』の円単位総額とも一致。認定の経過は、横須賀市議会公式『令和7年9月定例議会 提出議案等議決結果（2）』における議案第100号の記録（令和7年9月18日提出、令和7年10月7日に認定・賛成多数）で確認",
+        "decision": "accepted",
+        "review_note": "決算審査意見書の決算総括表から円単位で抽出し、支出済額との差引額5,898,493,304円で検算した。認定の議案番号（議案第100号）と認定日（令和7年10月7日）は市議会の公式資料で直接確認したレビュー済みレコード。決算事項別明細書の款別合計との突合は残件として保持する。"
+      }
+    ],
+    "review_status": "reviewed",
+    "open_questions": [
+      "決算書（歳入歳出決算事項別明細書）の款別合計との突合は未実施であり、残件として保持する。"
+    ]
+  },
+  {
+    "id": "evidence-yokosuka-city-2024-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-142018-fiscal-2024-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計決算の歳出決算額は171,999,984,597円であり、歳入歳出差引額は5,898,493,304円である。",
+        "source_ids": [
+          "yokosuka-settlement-audit-2024"
+        ],
+        "location_note": "同決算審査意見書の同表（単位 円）の一般会計支出済額・収支差引額",
+        "decision": "accepted",
+        "review_note": "決算審査意見書の決算総括表から円単位で抽出し、収入済額との差引額で検算したレビュー済みレコード。"
+      }
+    ],
+    "review_status": "reviewed",
+    "open_questions": []
+  }
+]

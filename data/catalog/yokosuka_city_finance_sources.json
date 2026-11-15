@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-16",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "yokosuka-city-home",
+      "municipality_key": "yokosuka-city",
+      "organization": "横須賀市",
+      "category": "municipality_profile",
+      "title": "横須賀市公式サイト",
+      "url": "https://www.city.yokosuka.kanagawa.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "横須賀市の公式自治体サイト。"
+    },
+    {
+      "id": "yokosuka-budget-2026",
+      "municipality_key": "yokosuka-city",
+      "organization": "横須賀市",
+      "category": "budget",
+      "title": "令和8年度当初予算案の概要",
+      "url": "https://www.city.yokosuka.kanagawa.jp/1610/nagekomi/20260212_saikoplan_r8yosan.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算180,120,000千円（議案第18号）のEvidence。市議会の公式『本会議の概要（第6日）』で2026年3月25日に原案どおり可決された成立予算。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "yokosuka-settlement-audit-2024",
+      "municipality_key": "yokosuka-city",
+      "organization": "横須賀市",
+      "category": "settlement",
+      "title": "令和6年度横須賀市一般会計・特別会計歳入歳出決算審査意見書",
+      "url": "https://www.city.yokosuka.kanagawa.jp/8810/kansa/documents/r6kextusannippann_ikensyo.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入177,898,477,901円・歳出171,999,984,597円を円単位で含む公式決算資料（監査委員の決算審査意見書の決算総括表）。決算の認定は議案第100号（2025年10月7日に認定）。決算審査意見書の意見内容の精査は未実施。"
+    }
+  ]
+}

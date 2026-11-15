@@ -1,0 +1,55 @@
+{
+  "id": "yokosuka-phase15-sources",
+  "phase": 15,
+  "official_code": "142018",
+  "name_ja": "横須賀市",
+  "reviewed_at": "2026-11-16",
+  "quality_boundary": "Current plan identity kept as published (YOKOSUKA Vision 2030: basic concept and basic plan integrated into a two-layer plan, FY2022-FY2029, city-wide future image 『変化を力に進むまち』, adopted as bill No. 57 on 2022-03-24; ten field-level future images, with the per-field policy directions not enumerated in v1), implementation layer (Yokosuka Rebirth Plan 2026-2029, doubling as the machi-hito-shigoto comprehensive strategy, progress governed by administrative evaluation), budget enactment confirmed in the council's official plenary-session summary (bill No. 18 passed as proposed on 2026-03-25), and settlement totals kept at exact yen precision from the audit committee's settlement review opinion without collapsing proposed, enacted, supplementary, or settlement states.",
+  "sources": [
+    {
+      "id": "yokosuka-vision-2030",
+      "title": "YOKOSUKAビジョン2030（基本構想・基本計画）",
+      "official_url": "https://www.city.yokosuka.kanagawa.jp/shisei/unei/vision/index.html",
+      "format": "html",
+      "evidence_role": "comprehensive_plan",
+      "evidence_location": "横須賀市公式Webサイト『YOKOSUKAビジョン2030（基本構想・基本計画）』ページは現行最上位計画の公式入口。計画の枠組み（基本構想・基本計画の一体化による2層構成、市全体の未来像『変化を力に進むまち』、10の分野別未来像、分野ごとの政策の方針、市政運営の基本姿勢、令和4年3月24日に議案第57号として議決）は、市公式の分野別計画『文化振興基本計画』（令和5年3月）に転載されたビジョンの枠組み、市議会公式の基本構想・基本計画策定特別委員長最終審査報告（令和4年3月24日）および実施計画『横須賀再興プラン2026-2029』第1章の位置付け図で直接確認",
+      "use_boundary": "基本構想・基本計画を一体化した現行最上位計画として保持し、旧3層型総合計画（基本構想・基本計画・実施計画）と構造を混在させない。分野ごとの政策の方針の全件は本候補では列挙しない。"
+    },
+    {
+      "id": "yokosuka-rebirth-plan-2026-2029",
+      "title": "横須賀再興プラン2026～2029",
+      "official_url": "https://www.city.yokosuka.kanagawa.jp/shisei/unei/plan/index.html",
+      "format": "html",
+      "evidence_role": "implementation_plan",
+      "evidence_location": "横須賀市公式Webサイト『横須賀再興プラン』ページは現行実施計画の公式入口。同ページの計画本編『横須賀再興プラン2026-2029』（令和8年3月策定）の第1章で、位置付け（YOKOSUKAビジョン2030の未来像を実現する具体的な取り組みを示す計画であり、横須賀市まち・ひと・しごと創生総合戦略を兼ねる）、計画期間（2026年度～2029年度）、構成（3つのグランドデザイン／最重点施策の5つの柱と基盤／市政運営の基本姿勢／別冊の柱ごとの取り組み）と進行管理の方法を確認",
+      "use_boundary": "再興プランをcurrent actionable layerとしてビジョンと別versionで保持し、再興プランの柱・事業をビジョンの分野別未来像・政策の方針そのものへ読み替えない。策定案（『案』表記の資料）と確定版を混同しない。"
+    },
+    {
+      "id": "yokosuka-administrative-evaluation",
+      "title": "行政評価",
+      "official_url": "https://www.city.yokosuka.kanagawa.jp/shisei/unei/hyoka/index.html",
+      "format": "html",
+      "evidence_role": "progress_governance",
+      "evidence_location": "横須賀市公式Webサイト『行政評価』ページに、横須賀市の行政評価が『実施計画の進行管理』（実施計画で掲げた事業の実施状況および計画期間中の目標達成状況の把握）と『事務事業等の総点検』（市全体の活動を点検し効率化を図る取り組み）で構成されること、政策推進・行政評価委員会が基本構想・基本計画の実現に向けた取り組みの推進・評価と行財政改革について必要な助言等を行うことを記載",
+      "use_boundary": "自治体自己評価をJichi Insight独自の達成判定へ変換しない。評価の枠組みのみを保持し、個別事業の達成度そのものは本候補では記録しない。"
+    },
+    {
+      "id": "yokosuka-budget-2026",
+      "title": "令和8年度当初予算案の概要",
+      "official_url": "https://www.city.yokosuka.kanagawa.jp/1610/nagekomi/20260212_saikoplan_r8yosan.html",
+      "format": "html",
+      "evidence_role": "budget",
+      "evidence_location": "横須賀市公式Webサイトの令和8年度当初予算案の概要ページはFY2026予算の公式入口（Phase 14インベントリで確認）。金額の確定値は市公式『令和8年度横須賀市予算書』の議案第18号『令和8年度横須賀市一般会計予算』第1条（歳入歳出それぞれ180,120,000千円）と第1表歳入歳出予算の歳入・歳出合計で確認し、議決は市議会公式『令和8年横須賀市議会3月定例議会 本会議の概要（第6日）』（令和8年3月25日、議案第18号は賛成多数・反対10人で原案どおり可決）で確認",
+      "use_boundary": "FY2026当初予算は議決・成立済みの額として扱い、proposal/enacted/supplementaryをPhase 15でstage分離する。予算案段階の発表資料と成立後の予算書を混同しない。"
+    },
+    {
+      "id": "yokosuka-settlement-audit-2024",
+      "title": "令和6年度横須賀市一般会計・特別会計歳入歳出決算審査意見書",
+      "official_url": "https://www.city.yokosuka.kanagawa.jp/8810/kansa/documents/r6kextusannippann_ikensyo.pdf",
+      "format": "pdf",
+      "evidence_role": "settlement_and_audit",
+      "evidence_location": "横須賀市監査委員の公式『令和6年度横須賀市一般会計・特別会計歳入歳出決算審査意見書』（横監第28号、令和7年8月29日）の第1表『決算総括表』（単位 円）で一般会計の収入済額・支出済額・収支差引額を確認し、市公式『令和6年度決算収支状況（会計別）』の円単位総額および財政事情の公表（令和7年12月1日）の千円単位表とも整合。認定は市議会公式『令和7年9月定例議会 提出議案等議決結果（2）』の議案第100号の記録（令和7年9月18日提出、令和7年10月7日に認定）で確認",
+      "use_boundary": "FY2024決算認定と監査意見の公式資料。決算総額をYOKOSUKAビジョン2030の分野別未来像・政策の方針や再興プランの事業の実績へ直接流用しない。千円単位表は四捨五入表示であり、円単位総額の代替として合成しない。"
+    }
+  ]
+}
