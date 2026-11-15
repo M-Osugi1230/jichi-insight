@@ -1,0 +1,62 @@
+[
+  {
+    "id": "evidence-kawaguchi-city-2026-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-112038-fiscal-2026-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算の歳入歳出予算は256,970,000千円であり、議案第18号として2026年3月23日に原案可決され成立した。",
+        "source_ids": [
+          "kawaguchi-budget-2026",
+          "kawaguchi-budget-2026-enactment"
+        ],
+        "location_note": "令和8年度当初予算書（議案第18号）第1条。議決は公式の議決結果表PDF（202603giketsukekka）の議案第18号欄（提出 令和8年2月24日・議決月日 令和8年3月23日・原案可決）",
+        "decision": "accepted",
+        "review_note": "予算書の総額と公式の議決結果表を一次資料で直接確認したレビュー済みレコード。議決日は議決結果表の印字どおり2026年3月23日であり、二次資料にあった3月24日は採用していない。"
+      }
+    ],
+    "review_status": "reviewed",
+    "open_questions": []
+  },
+  {
+    "id": "evidence-kawaguchi-city-2024-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-112038-fiscal-2024-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計決算の歳入総額（収入済額）は259,800,531,831円であり、決算は議案第183号として2025年11月28日に認定された。",
+        "source_ids": [
+          "kawaguchi-settlement-2024"
+        ],
+        "location_note": "令和6年度歳入歳出決算書原本の一般会計歳入総額。認定は候補に記録済みの議案第183号（2025年11月28日認定）",
+        "decision": "accepted",
+        "review_note": "決算書原本の円単位額を一次資料で直接確認したレビュー済みレコード。認定の議決番号のみ未確認の残件として残す。"
+      }
+    ],
+    "review_status": "reviewed",
+    "open_questions": [
+      "令和7年12月定例会の議決結果表における議案第183号の議決番号は未確認（同表のPDFを特定できていない）。"
+    ]
+  },
+  {
+    "id": "evidence-kawaguchi-city-2024-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-112038-fiscal-2024-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計決算の歳出総額（支出済額）は247,943,564,747円であり、歳入歳出差引額11,856,967,084円と整合する。",
+        "source_ids": [
+          "kawaguchi-settlement-2024"
+        ],
+        "location_note": "令和6年度歳入歳出決算書原本の一般会計歳出総額",
+        "decision": "accepted",
+        "review_note": "決算書原本の円単位額を一次資料で直接確認し、差引額で検算したレビュー済みレコード。"
+      }
+    ],
+    "review_status": "reviewed",
+    "open_questions": []
+  }
+]

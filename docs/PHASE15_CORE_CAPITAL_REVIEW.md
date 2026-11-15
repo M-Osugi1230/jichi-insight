@@ -211,11 +211,23 @@ Declared v1 package:
 
 Deferred depth includes the exhaustive enumeration of all basic goals, policy packages, individual measures and KPIs, full-text confirmation of the main-volume (public plan) PDF, the old/new framework policy and indicator mapping, current-plan annual evaluation evidence, the per-member vote breakdown for bill No. 39, the final cross-check against the enacted budget book, the current budget amount including supplementary budgets, the FY2024 settlement-to-item linkage (kept not_assessable), settlement breakdown by policy, fiscal project detail, causality and cross-city comparability.
 
+## Tenth completion — Kawaguchi
+
+川口市を10市目の`reviewed_complete`へ昇格するPRを準備しました（2026-11-15。公開責任者のレビュー承認は本PRのマージ時に候補のhuman_reviewへ記録する）。
+
+Declared v1 package:
+
+- current comprehensive plan: 第6次川口市総合計画 — three layers (basic concept 2026–2035, first basic plan 2026–2030, second basic plan 2031–2035, implementation plan on a three-year rolling basis, FY2026 edition 2026–2028), three basic principles, and the eight official めざす姿 formulations taken verbatim from the city plan page (secondary paraphrase lists are not used); future city image 「産業と文化と自然が調和した 輝きあふれるまち 川口」
+- FY2026 general-account initial budget: 256,970,000,000 yen (enacted; 議案第18号 原案可決 on **2026-03-23** as printed on the official vote-result table — a secondary research note giving 2026-03-24 was wrong and is not used)
+- FY2024 general-account settlement at exact yen precision: revenue 259,800,531,831 yen / expenditure 247,943,564,747 yen (balance 11,856,967,084 yen matches); certification 議案第183号 certified 2025-11-28 (recorded in the candidate via PR #497); the bill's vote-table number in the December session table remains unconfirmed and is carried as the explicit open residual. FY2024 belongs to the fifth plan's second basic plan (2021–2025), so its linkage to the current plan stays not_assessable
+
+Deferred depth includes the measures and KPIs under the eight goals, full-text confirmation of the plan book, the certification vote-table number, citizen-survey results, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 9 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市
+- Reviewed complete: 10 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、川口市
 - Review in progress: 0
-- Pending record review: 58
+- Pending record review: 57
 - Blocked source inventory: 0
 - Next official code: 072044
 

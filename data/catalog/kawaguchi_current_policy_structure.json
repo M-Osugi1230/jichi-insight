@@ -1,0 +1,72 @@
+{
+  "id": "kawaguchi-current-policy-structure",
+  "phase": 15,
+  "official_code": "112038",
+  "name_ja": "川口市",
+  "current_plan": {
+    "title": "第6次川口市総合計画",
+    "period_label": "基本構想 2026年度～2035年度",
+    "start_fiscal_year": 2026,
+    "end_fiscal_year": 2035,
+    "structure": "基本構想（2026年度～2035年度）、基本計画（前期2026年度～2030年度・後期2031年度～2035年度）、実施計画（当該年度を初年度とした3か年・毎年見直し）の3層構成。基本構想は3つの基本理念のもとに8つの『めざす姿』を定める。将来都市像は『産業と文化と自然が調和した 輝きあふれるまち 川口』。",
+    "components": [
+      {
+        "layer": "basic_concept",
+        "label_ja": "基本構想",
+        "period": "2026年度～2035年度"
+      },
+      {
+        "layer": "basic_plan_first",
+        "label_ja": "前期基本計画",
+        "period": "2026年度～2030年度"
+      },
+      {
+        "layer": "basic_plan_second",
+        "label_ja": "後期基本計画",
+        "period": "2031年度～2035年度"
+      },
+      {
+        "layer": "implementation_plan",
+        "label_ja": "実施計画",
+        "period": "3か年ローリング（令和8年度版は2026年度～2028年度）"
+      }
+    ],
+    "basic_principles": {
+      "count": 3,
+      "names": [
+        "市民とともに輝くまちづくり",
+        "みんなの笑顔輝くまちづくり",
+        "いつまでも輝き続けるまちづくり"
+      ],
+      "names_enumerated_in_v1": true
+    },
+    "basic_goals": {
+      "count": 8,
+      "names": [
+        "健康で、自分らしく生き生きと暮らせるまち",
+        "誰もがお互いを認め合い、安心して暮らせるまち",
+        "こどもをみんなで育み、こどもが輝き活躍するまち",
+        "学びとスポーツ・文化に親しみ、自己実現ができるまち",
+        "にぎわいと魅力があり、伝統と未来が響き合うまち",
+        "都市と自然が調和した、うるおいとやすらぎのあるまち",
+        "誰もが安全で快適に暮らせるまち",
+        "持続可能で自立したまち"
+      ],
+      "names_enumerated_in_v1": true,
+      "enumeration_boundary": "8つのめざす姿の名称は公式計画ページの正式名称をそのまま使う。めざす姿配下の施策・事業・KPIの全件列挙はdeferred depthであり、推測で補完しない。"
+    },
+    "vision": "産業と文化と自然が調和した 輝きあふれるまち 川口",
+    "enumeration_boundary": "基本理念・めざす姿の名称は公式計画ページで確認できるため列挙する。施策・KPIの個別名称の全件列挙はdeferred depthである。"
+  },
+  "previous_plan": {
+    "title": "第5次川口市総合計画",
+    "basic_plan_second_phase": "後期基本計画 2021年度～2025年度",
+    "note": "FY2024決算は第5次計画の後期基本計画期間に帰属する。現行計画の実績として扱わない。"
+  },
+  "counts": {
+    "basic_goals": 8
+  },
+  "source_id": "kawaguchi-sixth-plan",
+  "review_status": "reviewed",
+  "review_boundary": "第6次川口市総合計画の枠組み（3層構成・基本理念3つ・8つのめざす姿・実施計画のローリング方式）を確認した。施策・事業・KPIの全件列挙は本パッケージの範囲外。"
+}

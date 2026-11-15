@@ -1,0 +1,63 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-15",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "kawaguchi-city-home",
+      "municipality_key": "kawaguchi-city",
+      "organization": "川口市",
+      "category": "municipality_profile",
+      "title": "川口市公式サイト",
+      "url": "https://www.city.kawaguchi.lg.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "川口市の公式自治体サイト。"
+    },
+    {
+      "id": "kawaguchi-budget-2026",
+      "municipality_key": "kawaguchi-city",
+      "organization": "川口市",
+      "category": "budget",
+      "title": "令和8年度当初予算書",
+      "url": "https://www.city.kawaguchi.lg.jp/soshiki/01020/030/3/4_11/50455.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算256,970,000千円（議案第18号・第1条）のEvidence。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "kawaguchi-budget-2026-enactment",
+      "municipality_key": "kawaguchi-city",
+      "organization": "川口市議会",
+      "category": "assembly",
+      "title": "令和8年3月定例会 議決結果表",
+      "url": "https://kawaguchi.gsl-service.net/doc/2014072400529/file_contents/202603giketsukekka.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "議案第18号が2026年3月23日に原案可決であることを公式の議決結果表で直接確認する（提出2026年2月24日・議決番号18）。"
+    },
+    {
+      "id": "kawaguchi-settlement-2024",
+      "municipality_key": "kawaguchi-city",
+      "organization": "川口市",
+      "category": "settlement",
+      "title": "令和6年度歳入歳出決算書",
+      "url": "https://www.city.kawaguchi.lg.jp/shiseijoho/shinozaisei/20900.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入259,800,531,831円・歳出247,943,564,747円を円単位で含む公式決算資料。決算の認定は議案第183号（2025年11月28日認定）。12月定例会の議決結果表における議決番号は未確認。"
+    }
+  ]
+}

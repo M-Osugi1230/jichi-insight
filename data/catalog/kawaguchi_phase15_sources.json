@@ -1,0 +1,55 @@
+{
+  "id": "kawaguchi-phase15-sources",
+  "phase": 15,
+  "official_code": "112038",
+  "name_ja": "川口市",
+  "reviewed_at": "2026-11-15",
+  "quality_boundary": "Sixth comprehensive plan (basic concept 2026-2035, basic plans 2026-2030 and 2031-2035, implementation plan on a three-year rolling basis), budget enactment confirmed on the official council vote-result table (2026-03-23 as printed), and settlement totals kept at exact yen precision without collapsing proposed, enacted, supplementary, or settlement states.",
+  "sources": [
+    {
+      "id": "kawaguchi-sixth-plan",
+      "title": "第6次川口市総合計画",
+      "official_url": "https://www.city.kawaguchi.lg.jp/soshiki/01020/010/4/50297.html",
+      "format": "html",
+      "evidence_role": "current_plan_identity",
+      "evidence_location": "基本構想（2026年度～2035年度）・前期基本計画（2026年度～2030年度）・後期基本計画（2031年度～2035年度）の期間、将来都市像『産業と文化と自然が調和した 輝きあふれるまち 川口』、基本理念3つと8つのめざす姿の正式名称、実施計画（令和8年度版）の項",
+      "use_boundary": "第6次総合計画（2026年度開始）をcurrent versionとして保持し、第5次計画（後期基本計画2021年度～2025年度）と混在させない。めざす姿の名称は公式ページの正式名称のみを使う。"
+    },
+    {
+      "id": "kawaguchi-implementation-2026-2028",
+      "title": "第6次川口市総合計画 実施計画（令和8年度版）",
+      "official_url": "https://www.city.kawaguchi.lg.jp/soshiki/01020/010/4/50297.html",
+      "format": "html",
+      "evidence_role": "implementation_layer",
+      "evidence_location": "『令和8年度版実施計画（令和8年度〜令和10年度）』の項（当該年度を初年度とした3ヵ年、毎年見直し）",
+      "use_boundary": "実施計画の期間と見直し方式を確認する。個別事業の実績値を政策達成判定へ変換しない。"
+    },
+    {
+      "id": "kawaguchi-budget-2026",
+      "title": "令和8年度当初予算書",
+      "official_url": "https://www.city.kawaguchi.lg.jp/soshiki/01020/030/3/4_11/50455.html",
+      "format": "html",
+      "evidence_role": "initial_budget",
+      "evidence_location": "令和8年度当初予算書ページからリンクされる一般会計予算書（議案第18号）第1条『歳入歳出予算の総額は、歳入歳出それぞれ256,970,000千円と定める』",
+      "use_boundary": "FY2026当初予算の総額を確認する。補正予算・決算とは別stateで扱う。"
+    },
+    {
+      "id": "kawaguchi-budget-2026-enactment",
+      "title": "令和8年3月定例会 議決結果表",
+      "official_url": "https://kawaguchi.gsl-service.net/doc/2014072400529/file_contents/202603giketsukekka.pdf",
+      "format": "pdf",
+      "evidence_role": "budget_enactment",
+      "evidence_location": "議案第18号欄（提出 令和8年2月24日・議決月日 令和8年3月23日・議決番号18・原案可決）",
+      "use_boundary": "FY2026当初予算の議決（成立）状態・議案番号・議決日を議決結果表の印字どおり確認する。"
+    },
+    {
+      "id": "kawaguchi-settlement-2024",
+      "title": "令和6年度歳入歳出決算書",
+      "official_url": "https://www.city.kawaguchi.lg.jp/shiseijoho/shinozaisei/20900.html",
+      "format": "html",
+      "evidence_role": "settlement_and_major_measures",
+      "evidence_location": "予算（市の財政）ページからリンクされる令和6年度決算書原本の一般会計歳入総額259,800,531,831円・歳出総額247,943,564,747円（円単位）。認定は議案第183号（2025年11月28日認定、候補に記録済み）",
+      "use_boundary": "FY2024決算の円単位の確定値を確認する。FY2024は第5次計画期間の決算であり、現行計画の実績として扱わない。"
+    }
+  ]
+}
