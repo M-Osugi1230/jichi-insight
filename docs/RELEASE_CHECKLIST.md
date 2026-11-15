@@ -95,7 +95,7 @@
 - [x] Wave 3の地域バッチNormalizerと統合ゲート（Phase 11完了）
 - [ ] mainブランチ保護設定の最終確認（2026-11-15に確認: ブランチ保護・ルールセットはいずれも未設定。強制プッシュや削除を防ぐ技術的統制はなく、PR運用はプロジェクトの規律による。設定の要否は公開責任者の判断事項）
 - [x] dependency audit、secrets scan、Actions least-privilege監査（2026-11-15: secrets scanは追跡ファイル1,988件で検出なし（対象はmainツリー、履歴全体は対象外）。Python依存は既知の脆弱性0件。Web依存はロック済み275パッケージをOSVで照合し本番依存は0件、開発専用（eslint経由のminimatch）に低深刻度1件（GHSA-g3hv-75wg-m249、可用性のみで本番未混入、修正版11.0.1で解消可能）。Actions least-privilege化は2026-11-15に適用済み）
-- [ ] preview / staging / production境界の確定
+- [x] preview / staging / production境界の確定（2026-11-15に確定: 専用のpreview / staging環境は持たず、productionはGitHub Pages（mainのみ）、マージ前確認はブランチ／PR＋ローカルproduction build＋全テスト＋契約テスト、previewはローカルビルドのみ、という境界を docs/DEPLOYMENT.md の「Environment boundary (adopted 2026-11-15)」に明文化。ホスト型PRプレビューは将来の選択肢として明示的に繰り延べ）
 - [ ] rollback、backup、monitoring、incident訓練（2026-11-15: ロールバック実地訓練（PR #471・#472）と障害対応の机上訓練（Issue #12に記録）は実施済み。バックアップは正式公開前にリポジトリのmirror cloneを別保管先へ作成し、復元cloneで手順を確認済み。monitoringの自動アラートは未導入で、検知は週次確認・マージ時の公開検証・利用者報告に依存する）
 
 ## UX and accessibility
