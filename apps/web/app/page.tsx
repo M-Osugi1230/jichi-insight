@@ -3,8 +3,13 @@ import Link from "next/link";
 
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
+import {
+  MunicipalityQuickSearch,
+  type MunicipalitySearchEntry,
+} from "@/components/MunicipalityQuickSearch";
 import { StatusBadge } from "@/components/StatusBadge";
-import { reviewedCoverageStats } from "@/lib/reviewedCoverage";
+import { reviewedCoverageStats, reviewedPrefectureCoverage } from "@/lib/reviewedCoverage";
+import { loadPhase15CitySummaries } from "@/lib/phase15Cities";
 import { phase15Progress } from "@/lib/phase15Progress";
 
 import styles from "./page.module.css";
@@ -97,6 +102,52 @@ const depthCards = [
   },
 ];
 
+const searchEntries: MunicipalitySearchEntry[] = [
+  ...reviewedPrefectureCoverage.map((item) => ({
+    id: `prefecture-${item.code}`,
+    name: item.name,
+    prefectureOrRegion: item.region,
+    kind: "prefecture" as const,
+    href: item.route,
+    keywords: [item.planTitle],
+  })),
+  ...loadPhase15CitySummaries().map((item) => ({
+    id: `city-${item.officialCode}`,
+    name: item.name,
+    prefectureOrRegion: item.prefecture,
+    kind: "city" as const,
+    href: `/municipalities/${item.slug}`,
+    keywords: [item.prefecture],
+  })),
+];
+
+const startPaths = [
+  {
+    number: "01",
+    label: "政策と成果",
+    heading: "地域は何を目指している？",
+    description: "自治体が公表した計画・目標と、確認できる年度実績をたどります。",
+    href: "/policies",
+    action: "政策を見る",
+  },
+  {
+    number: "02",
+    label: "予算と財政",
+    heading: "お金はどう使われている？",
+    description: "予算と決算を区別して、条件の揃う数字だけを確認します。",
+    href: "/compare",
+    action: "財政を見る",
+  },
+  {
+    number: "03",
+    label: "公約と議会",
+    heading: "誰が、何を説明している？",
+    description: "首長の公約や議会の公開資料を、一次情報から読み解きます。",
+    href: "/executives",
+    action: "首長の情報を見る",
+  },
+];
+
 function formatNumber(value: number) {
   return new Intl.NumberFormat("ja-JP").format(value);
 }
@@ -109,31 +160,27 @@ export default function Home() {
 
       <section className={styles.hero}>
         <div className={styles.heroCopy}>
-          <p className={styles.heroKicker}>
-            PUBLIC EVIDENCE FOR LOCAL GOVERNMENT
-          </p>
+          <p className={styles.heroKicker}>全国の自治体・政策データを、一次資料から</p>
           <h1>
-            自治体を、
+            あなたのまちを、
             <br />
-            <em>根拠から読む。</em>
+            <em>数字と根拠で知る。</em>
           </h1>
           <p className={styles.heroLead}>
-            計画、予算、事業、成果、議会。ばらばらに公開された一次資料を、
-            住民が自分で判断できる順序へつなぎ直します。
+            自治体の計画・予算・取り組み・成果を、ひとつの場所で。
+            公開資料をもとに、気になる地域の情報を自分で確かめられます。
           </p>
+          <MunicipalityQuickSearch entries={searchEntries} />
           <p className={styles.heroTrustNote}>
             <span>正式公開中</span>
             確認済みの内容と、まだ接続できていない情報を区別して掲載しています。
           </p>
           <div className={styles.heroActions}>
-            <Link className="primaryAction" href="/municipalities">
-              47都道府県から探す
+            <Link className="primaryAction" href="/municipalities#prefectures">
+              都道府県一覧から探す
             </Link>
             <Link className="secondaryAction" href="/about">
               このサイトの目的
-            </Link>
-            <Link className="secondaryAction" href="/review-progress">
-              67自治体のレビュー進捗
             </Link>
           </div>
           <div className={styles.heroPrinciples} aria-label="表示原則">
@@ -178,6 +225,31 @@ export default function Home() {
             47都道府県の統合索引へ <span aria-hidden="true">→</span>
           </Link>
         </aside>
+      </section>
+
+      <section className={styles.serviceRoutes} aria-labelledby="service-routes-title">
+        <div className={styles.serviceRoutesHeading}>
+          <div>
+            <p className="eyebrow">EXPLORE BY QUESTION</p>
+            <h2 id="service-routes-title">知りたいことから、調べる。</h2>
+          </div>
+          <p>自治体ごとに確認できる範囲は異なります。掲載のない情報は推測で補いません。</p>
+        </div>
+        <div className={styles.serviceRoutesGrid}>
+          {startPaths.map((item) => (
+            <article className={styles.serviceRouteCard} key={item.number}>
+              <div className={styles.serviceRouteTop}>
+                <span>{item.number}</span>
+                <span>{item.label}</span>
+              </div>
+              <h3>{item.heading}</h3>
+              <p>{item.description}</p>
+              <Link href={item.href}>
+                {item.action} <span aria-hidden="true">→</span>
+              </Link>
+            </article>
+          ))}
+        </div>
       </section>
 
       <section className={styles.snapshot} aria-label="現在のデータ公開状況">
