@@ -121,6 +121,31 @@ def test_kawaguchi_prepared_candidate_records_only_verified_fiscal_values():
         for claim in pkt["claims"]
     )
 
+    # The FY2024 settlement was certified (認定) as bill No. 183
+    # (議案第183号) on 2025-11-28 after continued review in the September
+    # session, confirmed from the official bill book, the September
+    # vote-result table, the mayor's address and public notice No. 848.
+    # The former open question about the certification bill number and
+    # date is therefore closed; only the December vote-result table's
+    # 議決番号 remains unconfirmed.
+    revenue_packet = next(
+        pkt
+        for pkt in packets
+        if pkt["subject_id"] == "jp-local-112038-fiscal-2024-total-revenue"
+    )
+    assert "議案第183号" in revenue_packet["claims"][0]["statement"]
+    assert "令和7年11月28日" in revenue_packet["claims"][0]["statement"]
+    assert "認定" in revenue_packet["claims"][0]["statement"]
+    assert "決算の認定に係る議案番号・議決日の確認。" not in (
+        revenue_packet["open_questions"]
+    )
+    assert any(
+        "議決番号は未確認" in question
+        for question in revenue_packet["open_questions"]
+    )
+    assert "議案第183号" in revenue["note"]
+    assert "議案第183号" in expenditure["note"]
+
     plan_review = package["plan_review"]
     assert plan_review["review_status"] == "pending_record_review"
     decisions = {rec["id"]: rec["decision"] for rec in plan_review["records"]}
