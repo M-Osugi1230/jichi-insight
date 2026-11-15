@@ -3,8 +3,16 @@ import Link from "next/link";
 
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
+import {
+  MunicipalityQuickSearch,
+  type MunicipalitySearchEntry,
+} from "@/components/MunicipalityQuickSearch";
 import { StatusBadge } from "@/components/StatusBadge";
-import { reviewedCoverageStats } from "@/lib/reviewedCoverage";
+import {
+  reviewedCoverageStats,
+  reviewedPrefectureCoverage,
+} from "@/lib/reviewedCoverage";
+import { loadPhase15CitySummaries } from "@/lib/phase15Cities";
 import { phase15Progress } from "@/lib/phase15Progress";
 
 import styles from "./page.module.css";
@@ -97,6 +105,25 @@ const depthCards = [
   },
 ];
 
+const searchEntries: MunicipalitySearchEntry[] = [
+  ...reviewedPrefectureCoverage.map((prefecture) => ({
+    id: `prefecture-${prefecture.code}`,
+    name: prefecture.name,
+    prefectureOrRegion: prefecture.region,
+    kind: "prefecture" as const,
+    href: prefecture.route,
+    keywords: [prefecture.planTitle],
+  })),
+  ...loadPhase15CitySummaries().map((city) => ({
+    id: `city-${city.officialCode}`,
+    name: city.name,
+    prefectureOrRegion: city.prefecture,
+    kind: "city" as const,
+    href: `/municipalities/${city.slug}`,
+    keywords: [city.prefecture],
+  })),
+];
+
 function formatNumber(value: number) {
   return new Intl.NumberFormat("ja-JP").format(value);
 }
@@ -120,6 +147,7 @@ export default function Home() {
             計画、予算、事業、成果、議会。ばらばらに公開された一次資料を、
             住民が自分で判断できる順序へつなぎ直します。
           </p>
+          <MunicipalityQuickSearch entries={searchEntries} />
           <p className={styles.heroTrustNote}>
             <span>正式公開中</span>
             確認済みの内容と、まだ接続できていない情報を区別して掲載しています。
@@ -130,9 +158,6 @@ export default function Home() {
             </Link>
             <Link className="secondaryAction" href="/about">
               このサイトの目的
-            </Link>
-            <Link className="secondaryAction" href="/review-progress">
-              67自治体のレビュー進捗
             </Link>
           </div>
           <div className={styles.heroPrinciples} aria-label="表示原則">
