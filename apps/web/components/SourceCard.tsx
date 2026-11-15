@@ -1,4 +1,11 @@
 import type { SourceRecord } from "@/lib/catalog";
+import {
+  sourceAvailabilityPresentation,
+  sourceConfidenceLabel,
+  sourceReviewStatusPresentation,
+} from "@/lib/statusLabels";
+
+import { StatusBadge } from "./StatusBadge";
 
 const categoryLabels: Record<string, string> = {
   official_profile: "公式サイト",
@@ -23,6 +30,8 @@ const categoryLabels: Record<string, string> = {
 };
 
 export function SourceCard({ source }: { source: SourceRecord }) {
+  const reviewStatus = sourceReviewStatusPresentation(source.review_status);
+  const availability = sourceAvailabilityPresentation(source.availability);
   return (
     <article className="sourceCard">
       <div className="sourceCardMeta">
@@ -31,6 +40,13 @@ export function SourceCard({ source }: { source: SourceRecord }) {
       </div>
       <h3>{source.title}</h3>
       <p>{source.notes}</p>
+      <div className="sourceCardStatus">
+        <StatusBadge label={reviewStatus.label} tone={reviewStatus.tone} />
+        <StatusBadge label={availability.label} tone={availability.tone} />
+        <span className="sourceCardConfidence">
+          {sourceConfidenceLabel(source.confidence)}
+        </span>
+      </div>
       <div className="sourceCardFooter">
         <span>{source.organization}</span>
         <a href={source.url} target="_blank" rel="noreferrer">

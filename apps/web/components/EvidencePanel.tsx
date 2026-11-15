@@ -1,7 +1,9 @@
 import type { EvidencePacket, FiscalRecord } from "@/lib/finance";
 import { formatExactYen, sourcesForRecord } from "@/lib/finance";
+import { fiscalStageLabel } from "@/lib/statusLabels";
 
 import styles from "./EvidencePanel.module.css";
+import { SourceLocation } from "./SourceLocation";
 import { StatusBadge } from "./StatusBadge";
 
 type EvidencePanelProps = {
@@ -28,7 +30,7 @@ export function EvidencePanel({ record, packet }: EvidencePanelProps) {
         </div>
         <div>
           <dt>予算段階</dt>
-          <dd>当初予算</dd>
+          <dd>{fiscalStageLabel(record.stage)}</dd>
         </div>
         <div>
           <dt>対象年度</dt>
@@ -38,7 +40,9 @@ export function EvidencePanel({ record, packet }: EvidencePanelProps) {
       {packet?.claims.map((claim) => (
         <div className={styles.claim} key={`${packet.id}-${claim.field}`}>
           <p>{claim.statement}</p>
-          <span>{claim.location_note}</span>
+          {claim.location_note ? (
+            <SourceLocation note={claim.location_note} />
+          ) : null}
           {claim.review_note ? <small>{claim.review_note}</small> : null}
         </div>
       ))}
