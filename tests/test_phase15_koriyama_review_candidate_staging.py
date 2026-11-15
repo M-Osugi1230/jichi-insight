@@ -60,8 +60,10 @@ def test_koriyama_candidate_does_not_promote_queue_state():
         if item["official_code"] == "032018"
     )
 
-    assert morioka_row["status"] == "review_in_progress"
-    assert not morioka_row.get("completion_path")
+    assert morioka_row["status"] == "reviewed_complete"
+    assert morioka_row.get("completion_path") == (
+        "data/catalog/morioka_phase15_completion.json"
+    )
 
 
 def test_candidate_staging_is_not_referenced_by_public_web_source():

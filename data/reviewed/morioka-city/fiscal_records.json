@@ -1,0 +1,66 @@
+[
+  {
+    "id": "jp-local-032018-fiscal-2026-total-expenditure",
+    "municipality_id": "jp-local-032018",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算（可決）",
+    "amount_yen": 126510000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "盛岡市公式『令和8年度 当初予算の概要』（令和8年4月公表）『2 予算の規模』の一般会計126,510,000千円を円換算。令和8年度一般会計予算議案書（議案第3号）第1条の歳入歳出総額126,510,000千円とも一致する。令和8年第1回市議会定例会で議案第3号が可決（多数）された成立予算として保持し、補正予算や決算とは別stateで扱う。議決の確認は市議会だより令和8年5月1日号の議決結果表による（公式議決結果ページでの直接確認は未達）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "morioka-budget-2026-pdf",
+      "morioka-budget-2026-enactment"
+    ]
+  },
+  {
+    "id": "jp-local-032018-fiscal-2024-total-revenue",
+    "municipality_id": "jp-local-032018",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "一般会計収入済額",
+    "amount_yen": 135207433943,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "盛岡市公式『令和6年度 一般会計・各特別会計歳入歳出決算総括表』（単位:円）の一般会計収入済額のexact source value。決算審査意見書PDFの現行URLは未特定のため、決算認定資料である決算総括表を一次資料として保持する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "morioka-settlement-2024-audit-pdf"
+    ]
+  },
+  {
+    "id": "jp-local-032018-fiscal-2024-total-expenditure",
+    "municipality_id": "jp-local-032018",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計支出済額",
+    "amount_yen": 132975741966,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "盛岡市公式『令和6年度 一般会計・各特別会計歳入歳出決算総括表』（単位:円）の一般会計支出済額のexact source value。決算審査意見書PDFの現行URLは未特定のため、決算認定資料である決算総括表を一次資料として保持する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "morioka-settlement-2024-audit-pdf"
+    ]
+  }
+]

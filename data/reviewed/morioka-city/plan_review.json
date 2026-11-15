@@ -1,0 +1,67 @@
+{
+  "id": "phase15-morioka-plan-review",
+  "official_code": "032018",
+  "name_ja": "盛岡市",
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-15",
+  "records": [
+    {
+      "id": "morioka-current-plan-period",
+      "evidence_role": "current_plan_identity",
+      "title": "盛岡市総合計画基本構想",
+      "statement": "盛岡市総合計画基本構想の計画期間は2025年度（令和7年度）から2034年度（令和16年度）までの10年間である。",
+      "value": "2025年度～2034年度",
+      "source_url": "https://www.city.morioka.iwate.jp/shisei/keikaku/sogotekiplan/1009760/1045034/1051240.html",
+      "evidence_location": "本文『基本構想の計画期間』",
+      "decision": "accepted",
+      "review_note": "現行計画は2025年度開始の10年計画。FY2024は現行計画開始前年度であり、前計画期間の実績を現行計画の実績として扱わない。"
+    },
+    {
+      "id": "morioka-current-policy-structure",
+      "evidence_role": "policy_structure",
+      "title": "盛岡市総合計画基本構想 施策体系",
+      "statement": "基本構想は『輝きが増し 活力に満ち 夢をかなえるまち盛岡』を将来像とし、4つの基本目標と25の施策を設定し、自治体経営の理念を5つ掲げる。",
+      "value": 25,
+      "unit": "measures",
+      "source_url": "https://www.city.morioka.iwate.jp/shisei/keikaku/sogotekiplan/1009760/1045034/1051240.html",
+      "evidence_location": "本文『共に目指す将来像』『4つの基本目標と目標を達成するための施策』『自治体経営の理念』",
+      "reviewed_data_path": "data/catalog/morioka_current_policy_structure.json",
+      "decision": "accepted",
+      "review_note": "4基本目標・25施策の名称と5つの自治体経営理念はmorioka_current_policy_structure.jsonで個別保持する。"
+    },
+    {
+      "id": "morioka-implementation-plan-current-version",
+      "evidence_role": "implementation_layer",
+      "title": "盛岡市総合計画実施計画（令和7年度から16年度）",
+      "statement": "現行の実施計画は令和8年度から令和10年度までの版である。",
+      "source_url": "https://www.city.morioka.iwate.jp/shisei/keikaku/sogotekiplan/1009760/1045034/1051241.html",
+      "evidence_location": "本文『実施計画（令和8年度～令和10年度）』",
+      "reviewed_data_path": "data/catalog/morioka_current_progress_review_summary.json",
+      "decision": "accepted",
+      "review_note": "実施計画の各改訂版は別versionとして保持し、旧版の内容を現行版へ上書きしない。"
+    },
+    {
+      "id": "morioka-implementation-rolling-structure",
+      "evidence_role": "progress_governance",
+      "title": "盛岡市総合計画実施計画 ローリング方式",
+      "statement": "実施計画は基本構想に掲げた施策を具体化するものであり、3年間の計画期間を毎年度ローリングにより見直す。",
+      "source_url": "https://www.city.morioka.iwate.jp/shisei/keikaku/sogotekiplan/1009760/1045034/1051241.html",
+      "evidence_location": "本文『実施計画とは』『実施計画の計画期間』",
+      "decision": "accepted",
+      "review_note": "ローリング方式は進行管理の設計であり、個別事業・指標の実績を示すものではない。現行計画の年次評価・実績資料はv1では未昇格とし、deferred depthとして明示する。"
+    },
+    {
+      "id": "morioka-fy2024-settlement-linkage",
+      "evidence_role": "annual_progress",
+      "title": "令和6年度決算と実施計画事業の接続",
+      "statement": "FY2024決算値と個別実施計画事業との完全細粒度接続は未判定（not_assessable）。",
+      "fiscal_year": 2024,
+      "source_url": "https://www.city.morioka.iwate.jp/_res/projects/default_project/_page_/001/053/056/R7.nintei1-10.pdf",
+      "evidence_location": "『令和6年度 一般会計・各特別会計歳入歳出決算総括表』は会計別トップラインを示す資料であり、個別実施計画事業への接続を示すものではない。",
+      "decision": "not_assessable",
+      "review_note": "FY2024は現行計画開始前年度でもある。決算トップラインは財政レコードとして保持するが、個別事業費・実績への接続は追加エビデンス確認まで非評価扱いを維持する。"
+    }
+  ],
+  "quality_boundary": "This package reviews current plan identity and period, the four-goal and 25-measure policy structure with five management principles, the current implementation-plan version and its rolling structure, and keeps the FY2024 settlement-to-implementation-item linkage explicitly not assessable. It does not promote individual implementation-plan items or KPI actuals, infer policy achievement, establish causal effects, or assert cross-city comparability.",
+  "next_action": "Promote annual evaluation and item-level implementation evidence only when official sources with stable record-level locators have been reviewed; keep supplementary budgets, execution, and fiscal detail as separate states."
+}

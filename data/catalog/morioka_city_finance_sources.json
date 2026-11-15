@@ -1,0 +1,63 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-15",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "morioka-city-home",
+      "municipality_key": "morioka-city",
+      "organization": "盛岡市",
+      "category": "municipality_profile",
+      "title": "盛岡市公式サイト",
+      "url": "https://www.city.morioka.iwate.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "盛岡市の公式自治体サイト。"
+    },
+    {
+      "id": "morioka-budget-2026-pdf",
+      "municipality_key": "morioka-city",
+      "organization": "盛岡市",
+      "category": "budget",
+      "title": "令和8年度 当初予算の概要",
+      "url": "https://www.city.morioka.iwate.jp/_res/projects/default_project/_page_/001/056/173/R8gaiyou.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算126,510,000千円のEvidence。令和8年度一般会計予算議案書（議案第3号）第1条の歳入歳出総額とも一致する。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "morioka-budget-2026-enactment",
+      "municipality_key": "morioka-city",
+      "organization": "盛岡市議会",
+      "category": "assembly",
+      "title": "令和8年第1回盛岡市議会定例会 議決結果（もりおか市議会だより令和8年5月1日号）",
+      "url": "https://www.city.morioka.iwate.jp/_res/projects/default_project/_page_/001/056/302/241.8.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "議案第3号『令和8年度盛岡市一般会計予算』が可決（多数）であることを確認する。公式議決結果ページの現行URLは未特定のため、市議会だより掲載の議決結果表を暫定locatorとする。"
+    },
+    {
+      "id": "morioka-settlement-2024-audit-pdf",
+      "municipality_key": "morioka-city",
+      "organization": "盛岡市",
+      "category": "settlement",
+      "title": "令和6年度 盛岡市一般会計・各特別会計歳入歳出決算総括表",
+      "url": "https://www.city.morioka.iwate.jp/_res/projects/default_project/_page_/001/053/056/R7.nintei1-10.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計収入済額135,207,433,943円・支出済額132,975,741,966円の円単位exact source valueを含む決算認定資料。"
+    }
+  ]
+}

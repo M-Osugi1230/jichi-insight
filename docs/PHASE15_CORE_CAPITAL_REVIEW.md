@@ -133,13 +133,30 @@ Declared v1 package:
 
 Deferred depth includes row-level indicator values for all 55 measures, 691 project detail records, strategy-to-measure fine-grained linkage, successor plan adoption version, fiscal project detail, causality and cross-city comparability.
 
+## Fifth completion — Morioka
+
+盛岡市を5市目の`reviewed_complete`へ昇格しました（2026-11-15、公開責任者・大杉邑大のレビュー承認に基づく）。
+
+Declared v1 package:
+
+- current comprehensive plan: 盛岡市総合計画基本構想 2025–2034
+- vision: 輝きが増し 活力に満ち 夢をかなえるまち盛岡
+- basic goals: 4
+- current-plan measures: 25
+- management principles: 5
+- implementation layer: 実施計画（令和7年度から16年度）、現行版 2026–2028、3年ローリング方式
+- FY2026 general-account initial budget: 126,510,000,000 yen (enacted; 議案第3号 可決)
+- FY2024 general-account settlement: exact revenue (135,207,433,943 yen) and expenditure (132,975,741,966 yen) values from the settlement summary table
+
+Deferred depth includes all implementation-plan item/KPI identities and actuals, current-plan annual evaluation evidence, the FY2024 settlement-to-item linkage (kept not_assessable), direct confirmation of bill No. 3 on the official council vote-result page (provisional locator: council newsletter results table, corroborated by the bill text and press reporting), fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 4 / 67 — 函館市、旭川市、青森市、八戸市
-- Review in progress: 1 — 盛岡市
+- Reviewed complete: 5 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市
+- Review in progress: 0
 - Pending record review: 62
 - Blocked source inventory: 0
-- Next official code: 032018
+- Next official code: 052019
 
 ## Definition of Phase 15 completion
 

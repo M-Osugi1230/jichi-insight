@@ -6,10 +6,22 @@ from pathlib import Path
 from jsonschema import Draft202012Validator, FormatChecker
 
 ROOT = Path(__file__).resolve().parents[1]
+COMPLETION = ROOT / "data/catalog/morioka_phase15_completion.json"
+COMPLETION_SCHEMA = ROOT / "schemas/phase15_municipality_completion.schema.json"
+SOURCE_CATALOG = ROOT / "data/catalog/morioka_phase15_sources.json"
+SOURCE_CATALOG_SCHEMA = ROOT / "schemas/phase15_source_catalog.schema.json"
+PLAN_REVIEW = ROOT / "data/reviewed/morioka-city/plan_review.json"
+PLAN_REVIEW_SCHEMA = ROOT / "schemas/phase15_plan_review.schema.json"
+STRUCTURE = ROOT / "data/catalog/morioka_current_policy_structure.json"
+PROGRESS = ROOT / "data/catalog/morioka_current_progress_review_summary.json"
+FISCAL = ROOT / "data/reviewed/morioka-city/fiscal_records.json"
+EVIDENCE = ROOT / "data/reviewed/morioka-city/evidence_packets.json"
+MUNICIPALITY = ROOT / "data/reviewed/morioka-city/municipality.json"
 CANDIDATE = ROOT / "data/candidates/morioka-city/review_candidate.json"
-CANDIDATE_SCHEMA = ROOT / "schemas/phase15_review_candidate.schema.json"
+FISCAL_SCHEMA = ROOT / "schemas/fiscal_record.schema.json"
+EVIDENCE_SCHEMA = ROOT / "schemas/evidence_packet.schema.json"
+MUNICIPALITY_SCHEMA = ROOT / "schemas/municipality.schema.json"
 QUEUE = ROOT / "data/catalog/phase15_core_capital_review_queue.json"
-WEB_ROOT = ROOT / "apps/web"
 
 
 def load(path: Path):
@@ -23,230 +35,213 @@ def validate(schema_path: Path, instance):
     return list(validator.iter_errors(instance))
 
 
-def test_morioka_candidate_staging_contract_validates():
-    candidate = load(CANDIDATE)
+def test_morioka_completion_contract_validates():
+    completion = load(COMPLETION)
 
-    assert validate(CANDIDATE_SCHEMA, candidate) == []
-    assert candidate["candidate_id"] == "morioka-phase15-review-candidate"
-    assert candidate["phase"] == 15
-    assert candidate["official_code"] == "032018"
-    assert candidate["name_ja"] == "盛岡市"
-    assert candidate["status"] == "review_candidate"
-    assert (
-        candidate["source_inventory_path"]
-        == "data/indexed/morioka-city/source_inventory.json"
-    )
-    assert (ROOT / candidate["source_inventory_path"]).is_file()
-    assert candidate["package_state"] == "prepared"
-    assert candidate["human_review"]["required"] is True
-    assert candidate["human_review"]["status"] == "pending"
-    assert candidate["human_review"]["reviewed_at"] is None
-    assert candidate["human_review"]["reviewer_note"] is None
-    assert candidate["publication"]["eligible"] is False
+    assert validate(COMPLETION_SCHEMA, completion) == []
+    assert completion["phase"] == 15
+    assert completion["status"] == "reviewed_complete"
+    assert completion["official_code"] == "032018"
+    assert completion["name_ja"] == "盛岡市"
+    assert completion["completed_at"] == "2026-11-15"
 
 
-def test_morioka_candidate_does_not_promote_queue_state():
-    queue = load(QUEUE)
-    row = next(
-        item for item in queue["execution_queue"]
-        if item["official_code"] == "032018"
-    )
-
-    assert row["status"] == "review_in_progress"
-    assert not row.get("completion_path")
-
-
-def test_candidate_staging_is_not_referenced_by_public_web_source():
-    forbidden = "data/candidates"
-    hits: list[str] = []
-
-    for path in WEB_ROOT.rglob("*"):
-        if not path.is_file() or path.suffix not in {".ts", ".tsx", ".js", ".mjs"}:
+def test_morioka_completion_paths_exist():
+    completion = load(COMPLETION)
+    for key, value in completion["review_package"].items():
+        if key == "counts":
             continue
-        if forbidden in path.read_text(encoding="utf-8"):
-            hits.append(str(path.relative_to(ROOT)))
-
-    assert hits == []
+        assert (ROOT / value).is_file(), (key, value)
 
 
-def test_prepared_morioka_candidate_retains_human_boundary_and_evidence_shape():
-    candidate = load(CANDIDATE)
-    assert candidate["package_state"] == "prepared"
+def test_morioka_reviewed_municipality_validates():
+    municipality = load(MUNICIPALITY)
 
-    package = candidate["candidate_package"]
-    source_catalog = package["source_catalog"]
-    plan_review = package["plan_review"]
-    policy_structure = package["policy_structure"]
-    progress_review = package["progress_review"]
-    fiscal_records = package["fiscal_records"]
-    evidence_packets = package["evidence_packets"]
+    assert validate(MUNICIPALITY_SCHEMA, municipality) == []
+    assert municipality["id"] == "jp-local-032018"
+    assert municipality["municipality_type"] == "core_city"
+    assert municipality["data_status"] == "reviewed"
+    assert municipality["fiscal_years"] == [2024, 2026]
+    assert municipality["last_verified_at"] == "2026-11-15"
 
-    # Source Catalog assertions
-    assert source_catalog["id"] == "morioka-phase15-sources"
-    assert source_catalog["phase"] == 15
-    assert source_catalog["official_code"] == "032018"
-    assert source_catalog["name_ja"] == "盛岡市"
-    assert len(source_catalog["sources"]) == 5
-    source_ids = {s["id"] for s in source_catalog["sources"]}
-    assert source_ids == {
-        "morioka-current-plan",
-        "morioka-implementation-2026-2028",
-        "morioka-budget-2026",
-        "morioka-budget-book-2026",
-        "morioka-settlement-2024",
-    }
+
+def test_morioka_common_source_and_plan_review_schemas_validate():
+    source_catalog = load(SOURCE_CATALOG)
+    plan_review = load(PLAN_REVIEW)
+
+    assert validate(SOURCE_CATALOG_SCHEMA, source_catalog) == []
+    assert validate(PLAN_REVIEW_SCHEMA, plan_review) == []
+    assert source_catalog["official_code"] == plan_review["official_code"] == "032018"
+    assert source_catalog["name_ja"] == plan_review["name_ja"] == "盛岡市"
+    assert len(source_catalog["sources"]) == 6
+    assert len(plan_review["records"]) == 5
+    assert plan_review["review_status"] == "reviewed"
+    assert plan_review["reviewed_at"] == "2026-11-15"
+
     assert all(
         source["official_url"].startswith("https://www.city.morioka.iwate.jp/")
         for source in source_catalog["sources"]
     )
-    assert {
-        source["id"]: source["format"] for source in source_catalog["sources"]
-    } == {
-        "morioka-current-plan": "html",
-        "morioka-implementation-2026-2028": "html",
-        "morioka-budget-2026": "pdf",
-        "morioka-budget-book-2026": "pdf",
-        "morioka-settlement-2024": "pdf",
-    }
-    assert all(
-        bool(source["evidence_location"]) for source in source_catalog["sources"]
-    )
-    assert all(
-        bool(source["use_boundary"]) for source in source_catalog["sources"]
-    )
+    assert all(source["evidence_location"] for source in source_catalog["sources"])
+    assert all(source["use_boundary"] for source in source_catalog["sources"])
 
-    # Plan Review assertions
-    assert plan_review["id"] == "phase15-morioka-plan-review"
-    assert plan_review["official_code"] == "032018"
-    assert plan_review["name_ja"] == "盛岡市"
-    assert plan_review["review_status"] == "review_in_progress"
-    assert len(plan_review["records"]) == 4
-    record_ids = {r["id"] for r in plan_review["records"]}
-    assert record_ids == {
-        "morioka-current-plan-period",
-        "morioka-current-policy-structure",
-        "morioka-implementation-rolling-structure",
-        "morioka-fy2024-settlement-linkage",
+    decisions = {record["id"]: record["decision"] for record in plan_review["records"]}
+    assert decisions == {
+        "morioka-current-plan-period": "accepted",
+        "morioka-current-policy-structure": "accepted",
+        "morioka-implementation-plan-current-version": "accepted",
+        "morioka-implementation-rolling-structure": "accepted",
+        "morioka-fy2024-settlement-linkage": "not_assessable",
     }
+    assert all(record["evidence_location"] for record in plan_review["records"])
     assert all(
-        record["decision"] in {"needs_review", "not_assessable"}
-        for record in plan_review["records"]
-    )
-    assert all(
-        bool(record["evidence_location"])
-        for record in plan_review["records"]
-        if "evidence_location" in record
-    )
-    assert all(
-        record.get("source_url", "").startswith(
-            "https://www.city.morioka.iwate.jp/"
-        )
+        record["source_url"].startswith("https://www.city.morioka.iwate.jp/")
         for record in plan_review["records"]
     )
 
-    # Policy Structure assertions
-    assert policy_structure["id"] == "morioka-current-policy-structure"
-    assert policy_structure["phase"] == 15
-    assert policy_structure["official_code"] == "032018"
-    assert policy_structure["name_ja"] == "盛岡市"
-    current_plan = policy_structure["current_plan"]
-    assert current_plan["title"] == "盛岡市総合計画基本構想"
-    assert current_plan["start_fiscal_year"] == 2025
-    assert current_plan["end_fiscal_year"] == 2034
-    assert current_plan["vision"] == "輝きが増し 活力に満ち 夢をかなえるまち盛岡"
-    assert len(current_plan["basic_goals"]) == 4
-    goal_names = [goal["name_ja"] for goal in current_plan["basic_goals"]]
-    assert goal_names == [
-        "豊かな地域資源が活力を生み出すまちづくり",
-        "人を育み未来を選べるまちづくり",
-        "人がいきいきとつながり支え合うまちづくり",
-        "安全・安心で快適に暮らせるまちづくり",
+
+def test_morioka_current_policy_structure_matches_declared_depth():
+    structure = load(STRUCTURE)
+    plan = structure["current_plan"]
+    counts = structure["counts"]
+
+    assert plan["title"] == "盛岡市総合計画基本構想"
+    assert plan["start_fiscal_year"] == 2025
+    assert plan["end_fiscal_year"] == 2034
+    assert plan["vision"] == "輝きが増し 活力に満ち 夢をかなえるまち盛岡"
+    assert counts == {
+        "basic_goals": 4,
+        "current_plan_measures": 25,
+        "management_principles": 5,
+    }
+    assert len(plan["basic_goals"]) == 4
+    assert [len(goal["measures"]) for goal in plan["basic_goals"]] == [6, 6, 6, 7]
+    assert sum(len(goal["measures"]) for goal in plan["basic_goals"]) == 25
+    assert len(plan["management_principles"]) == 5
+    assert structure["review_status"] == "reviewed"
+
+
+def test_morioka_progress_keeps_evaluation_and_linkage_explicit():
+    progress = load(PROGRESS)
+
+    current = progress["current_implementation_plan"]
+    assert current["period"] == "2026年度～2028年度（毎年度ローリング）"
+    assert current["current_period_item_actuals"]["status"] == "not_promoted_in_v1"
+
+    evaluation = progress["evaluation_evidence"]
+    assert evaluation["status"] == "not_promoted_in_v1"
+    assert "流用しない" in evaluation["boundary"]
+
+    linkage = progress["fiscal_linkage"]
+    assert linkage["fiscal_year"] == 2024
+    assert linkage["status"] == "not_assessable"
+
+    assert progress["review_status"] == "reviewed_with_explicit_deferred_depth"
+
+
+def test_morioka_fiscal_records_validate_and_keep_exact_states():
+    records = load(FISCAL)
+    assert len(records) == 3
+
+    for record in records:
+        assert validate(FISCAL_SCHEMA, record) == []
+        assert record["review_status"] == "reviewed"
+        assert record["confidence"] == "high"
+
+    by_id = {record["id"]: record for record in records}
+
+    budget = by_id["jp-local-032018-fiscal-2026-total-expenditure"]
+    assert budget["stage"] == "initial_budget"
+    assert budget["amount_yen"] == 126_510_000_000
+    assert "可決" in budget["metric_label"]
+    assert budget["sources"] == [
+        "morioka-budget-2026-pdf",
+        "morioka-budget-2026-enactment",
     ]
-    total_measures = sum(
-        len(goal["measures"]) for goal in current_plan["basic_goals"]
-    )
-    assert total_measures == 25
-    assert len(current_plan["management_principles"]) == 5
-    assert current_plan["management_principles"] == [
-        "市民参画・協働",
-        "持続可能な財政運営",
-        "組織体制・公正確保",
-        "広域連携",
-        "適切な評価とデジタル活用",
-    ]
 
-    # Progress Review assertions
-    assert progress_review["id"] == "morioka-current-progress-review-summary"
-    assert progress_review["phase"] == 15
-    assert progress_review["official_code"] == "032018"
-    assert progress_review["name_ja"] == "盛岡市"
-    assert progress_review["review_status"] == "review_candidate_staging"
-    framework = progress_review["implementation_plan_framework"]
-    assert framework["title"] == "盛岡市総合計画実施計画（令和7年度から16年度）"
-    assert framework["period"] == "2026年度～2028年度（毎年度ローリング）"
-    assert framework["evaluation_structure"]
+    revenue = by_id["jp-local-032018-fiscal-2024-total-revenue"]
+    expenditure = by_id["jp-local-032018-fiscal-2024-total-expenditure"]
+    assert revenue["stage"] == expenditure["stage"] == "settlement"
+    assert revenue["amount_yen"] == 135_207_433_943
+    assert expenditure["amount_yen"] == 132_975_741_966
 
-    # Fiscal Records & Evidence Packets assertions
-    assert len(fiscal_records) == 3
-    assert all(
-        record["municipality_id"] == "jp-local-032018"
-        for record in fiscal_records
+
+def test_morioka_evidence_packets_validate_and_match_fiscal_records():
+    packets = load(EVIDENCE)
+    fiscal_ids = {record["id"] for record in load(FISCAL)}
+
+    assert len(packets) == 3
+    for packet in packets:
+        assert validate(EVIDENCE_SCHEMA, packet) == []
+        assert packet["subject_id"] in fiscal_ids
+        assert packet["review_status"] == "reviewed"
+        assert all(claim["decision"] == "accepted" for claim in packet["claims"])
+        assert all(claim["location_note"] for claim in packet["claims"])
+
+    budget_packet = next(
+        packet
+        for packet in packets
+        if packet["subject_id"] == "jp-local-032018-fiscal-2026-total-expenditure"
     )
-    assert all(record["account_type"] == "general" for record in fiscal_records)
-    assert all(record["value_status"] == "available" for record in fiscal_records)
-    assert all(record["review_status"] == "needs_review" for record in fiscal_records)
-    assert all(record["confidence"] == "medium" for record in fiscal_records)
-    assert {record["fiscal_year"] for record in fiscal_records} == {2024, 2026}
-    assert {record["stage"] for record in fiscal_records} == {
-        "initial_budget",
-        "settlement",
+    # The official vote-result page has not been directly confirmed; the
+    # residual item must stay explicit instead of being silently dropped.
+    assert budget_packet["open_questions"]
+    assert "議決結果ページ" in budget_packet["open_questions"][0]
+    assert "未達" in budget_packet["claims"][0]["review_note"]
+
+
+def test_morioka_completion_quality_gate_and_deferred_depth_are_explicit():
+    completion = load(COMPLETION)
+
+    assert all(completion["quality_gate"].values())
+    assert completion["quality_gate"]["budget_enactment_state_preserved"] is True
+    assert completion["quality_gate"]["exact_settlement_precision_preserved"] is True
+    assert completion["review_package"]["counts"] == {
+        "current_plan_basic_goals": 4,
+        "current_plan_measures": 25,
+        "management_principles": 5,
+        "promoted_implementation_item_actual_records": 0,
+        "fiscal_top_line_records": 3,
     }
-    assert {record["metric"] for record in fiscal_records} == {
-        "total_expenditure",
-        "total_revenue",
-    }
 
-    assert len(evidence_packets) == 3
-    fiscal_ids = {record["id"] for record in fiscal_records}
-    assert {packet["subject_id"] for packet in evidence_packets} == fiscal_ids
+    deferred_ids = {row["id"] for row in completion["deferred_depth"]}
+    assert "current-plan-granular-kpi-and-project-linkage" in deferred_ids
+    assert "current-plan-annual-evaluation-evidence" in deferred_ids
+    assert "fiscal-detail-and-amendment-linkage" in deferred_ids
+    assert "budget-enactment-official-vote-page-confirmation" in deferred_ids
+    assert "policy-outcome-causal-and-cross-city-comparability" in deferred_ids
     assert all(
-        packet["subject_type"] == "fiscal_record" for packet in evidence_packets
-    )
-    assert all(
-        packet["review_status"] == "needs_review" for packet in evidence_packets
-    )
-    assert all(packet["claims"] for packet in evidence_packets)
-    assert all(
-        claim["decision"] == "needs_review" and bool(claim["location_note"])
-        for packet in evidence_packets
-        for claim in packet["claims"]
+        row["status"] == "deferred_not_required_for_v1_completion"
+        for row in completion["deferred_depth"]
     )
 
-    # Quality Boundaries & Deferred Depth assertions
-    assert len(candidate["quality_boundaries"]) >= 4
-    quality_text = " ".join(candidate["quality_boundaries"]).lower()
-    assert "score" in quality_text
-    assert "causal" in quality_text
-    assert "ranking" in quality_text
-    assert any(
-        "human" in boundary.lower() or "person checks" in boundary.lower()
-        for boundary in candidate["quality_boundaries"]
-    )
-    assert len(candidate["deferred_depth"]) == 3
-    deferred_ids = {depth["id"] for depth in candidate["deferred_depth"]}
-    assert deferred_ids == {
-        "current-plan-granular-kpi-and-project-linkage",
-        "budget-amendment-and-settlement-project-linkage",
-        "policy-outcome-causal-and-cross-city-comparability",
-    }
-    assert all(
-        depth["status"] == "deferred_not_required_for_candidate_staging"
-        for depth in candidate["deferred_depth"]
-    )
+    boundary = completion["completion_boundary"]
+    assert "公開責任者" in boundary
+    assert "2026-11-15" in boundary
+    assert "未達" in boundary
+    assert "not_assessable" in boundary
+    assert "Jichi Insight独自の政策達成度" in boundary
+    assert "ランキング" in boundary
 
-    # Human Review & Publication boundaries
+
+def test_morioka_candidate_records_owner_approval():
+    candidate = load(CANDIDATE)
+
     assert candidate["human_review"]["required"] is True
-    assert candidate["human_review"]["status"] == "pending"
-    assert candidate["human_review"]["reviewed_at"] is None
-    assert candidate["human_review"]["reviewer_note"] is None
+    assert candidate["human_review"]["status"] == "approved"
+    assert candidate["human_review"]["reviewed_at"] == "2026-11-15"
+    assert "公開責任者" in candidate["human_review"]["reviewer_note"]
+    # The candidate file itself remains non-public staging material.
     assert candidate["publication"]["eligible"] is False
+
+
+def test_morioka_remains_reviewed_complete_as_queue_advances():
+    queue = load(QUEUE)
+    by_code = {row["official_code"]: row for row in queue["execution_queue"]}
+
+    morioka = by_code["032018"]
+    assert morioka["status"] == "reviewed_complete"
+    assert morioka["completion_path"] == (
+        "data/catalog/morioka_phase15_completion.json"
+    )
+    assert (ROOT / morioka["completion_path"]).is_file()
