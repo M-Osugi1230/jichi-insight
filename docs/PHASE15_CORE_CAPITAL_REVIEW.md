@@ -368,13 +368,25 @@ Declared v1 package:
 
 Deferred depth includes the full enumeration of the per-field policy directions under the ten field-level future images, the Rebirth Plan's individual projects, numerical targets and KPIs, individual administrative-evaluation results, full-text confirmation of the plan books, the substantive content of the audit committee's settlement review opinion, cross-checks against the settlement detail book, final confirmation of the vote proceedings against the plenary session minutes, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Twenty-third completion — Toyama
+
+富山市を23番目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 第2次富山市総合計画 — the city's top plan with a three-layer structure (basic concept / basic plan / implementation plan); basic concept period FY2017–FY2026 with the city vision 『人・まち・自然が調和する活力都市とやま』 and the basic philosophy of compact town development; the basic plan runs in a first half (FY2017–FY2021) and a latter half (FY2022–FY2026), and the current basic plan is the latter basic plan (adopted March 2022), which sets four town-development goals with 14 policies and 51 measures beneath them (the 51 measures are not enumerated in v1) plus the Next Stage priority projects (seven priority themes from three viewpoints); implementation and progress governance through annual implementation plans (the FY2026 implementation plan is the final-year plan of the current plan, covering 177 comprehensive-plan projects) and outcome-oriented town development (outcome indicators per measure, effect measurement through citizen surveys, and the PDCA administrative management cycle). The third Toyama City comprehensive plan is being drafted (FY2024–FY2026) and is recorded only as a plan transition, with its content not recorded and not connected to the current plan's structure
+- FY2026 general-account initial budget: 199,776,107,000 yen (enacted; 議案第1号 passed as proposed on 2026-03-24 at the March 2026 regular council session; amount from the official budget overview's account table at thousand-yen precision, 199,776,107千円, cross-checked against the post-vote budget scale table; the amount carried forward to the March supplementary budget, shown as an external figure in the overview, is not included)
+- FY2024 general-account settlement at thousand-yen precision as published: revenue 189,996,111千円 / expenditure 185,876,806千円 (balance 形式収支 4,119,305千円 matches the published figure in the official settlement document); certification 認定第1号 certified on 2025-11-28 after continued review from the September 2025 session into the December 2025 session. The published precision is thousand yen, so no yen-precision totals are synthesized. FY2024 falls inside the latter basic plan period (FY2022–FY2026), but its totals are section-level aggregates and are not linked to individual goals, policies, measures or projects, so the linkage stays not_assessable
+
+Deferred depth includes the full enumeration of the latter basic plan's 51 measures, the implementation plan's comprehensive-plan projects and their outcome indicators and results, full-text confirmation of the plan books, the content of the third comprehensive plan now being drafted, inspection of the audit committee's settlement review opinion (including whether yen-precision totals are published there), cross-checks against the settlement detail book and the budget book's bill text and first table, final confirmation of the vote proceedings against the plenary session minutes, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 22 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市
+- Reviewed complete: 23 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市
 - Review in progress: 0
-- Pending record review: 45
+- Pending record review: 44
 - Blocked source inventory: 0
-- Next official code: 162019
+- Next official code: 172014
 
 ## Definition of Phase 15 completion
 
