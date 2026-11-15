@@ -1,4 +1,4 @@
-"""Regression checks for honest Public beta release metadata and daily monitoring."""
+"""Regression checks for honest public release metadata and daily monitoring."""
 
 import json
 from pathlib import Path
@@ -20,7 +20,7 @@ def test_release_checklist_reflects_completed_record_and_inventory_phases():
     assert phase14["status"] == "complete"
     assert phase14["coverage"]["source_inventory_complete_count"] == 67
 
-    assert "公開状態: **Public beta**" in checklist
+    assert "公開状態: **正式公開（Public release）**" in checklist
     assert "15,327個票" in checklist
     assert "67/67の公式Source Inventory完了" in checklist
     assert "Phase 15の全67自治体レビュー完了はPublic betaの必須条件ではない" in checklist
@@ -53,7 +53,7 @@ def test_beta_announcement_is_backed_by_the_recorded_human_release_gate():
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
     checklist = (ROOT / "docs/RELEASE_CHECKLIST.md").read_text(encoding="utf-8")
 
-    assert "Public beta" in readme
+    assert "Public release" in readme
     assert "pre-alpha" not in readme
     assert "Go / No-Go" in checklist
     assert "外部法務" in checklist

@@ -76,9 +76,9 @@ Jichi Insightの評価は、政治家や自治体を断定的に順位付けす�
 
 公約の思想内容には点数を付けません。
 
-## No aggregate score in Public beta
+## No aggregate score
 
-Public betaでは単一総合点を公開しません。領域別指標、進捗状態、データ充足率、根拠を表示します。
+Jichi Insightでは単一総合点を公開しません。領域別指標、進捗状態、データ充足率、根拠を表示します。
 
 総合評価を検討できる条件:
 
