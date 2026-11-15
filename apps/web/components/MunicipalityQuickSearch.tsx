@@ -77,10 +77,10 @@ export function MunicipalityQuickSearch({ entries }: Props) {
       <p id="home-municipality-search-scope" className={styles.scope}>
         検索対象：47都道府県と詳細レビュー済み{cityCount}市。全国すべての市区町村ではありません。
       </p>
-      <div id="home-municipality-results" aria-live="polite" aria-atomic="false">
+      <div id="home-municipality-results">
         {normalizedQuery ? (
           <div className={styles.results}>
-            <p className={styles.resultsHeading}>
+            <p className={styles.resultsHeading} role="status" aria-live="polite">
               {matches.length
                 ? `${matches.length}件の候補が見つかりました`
                 : "一致する自治体は見つかりませんでした"}
