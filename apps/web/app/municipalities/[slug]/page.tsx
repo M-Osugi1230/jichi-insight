@@ -238,7 +238,7 @@ export default async function Phase15CityPage({
     <>
       <SiteHeader />
       <main id="main-content">
-      <div className="pageShell">
+      <div className={`pageShell ${styles.cityShell}`}>
         <PageIntro
           eyebrow={`${city.prefecture} / ${city.officialCode} / 公式資料レビュー`}
           title={`${city.name}の政策・予算・決算`}
