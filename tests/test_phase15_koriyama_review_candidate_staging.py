@@ -107,7 +107,15 @@ def test_prepared_koriyama_candidate_retains_human_boundary_and_evidence_shape()
         source["official_url"].startswith("https://www.city.koriyama.lg.jp/")
         for source in source_catalog["sources"]
     )
-    assert all(source["format"] == "html" for source in source_catalog["sources"])
+    assert {
+        source["id"]: source["format"] for source in source_catalog["sources"]
+    } == {
+        "koriyama-seventh-plan": "html",
+        "koriyama-first-implementation-plan": "html",
+        "koriyama-budget-2026": "pdf",
+        "koriyama-budget-book-2026": "html",
+        "koriyama-settlement-2024": "html",
+    }
     assert all(bool(source["evidence_location"]) for source in source_catalog["sources"])
     assert all(bool(source["use_boundary"]) for source in source_catalog["sources"])
 
