@@ -167,13 +167,29 @@ Declared v1 package:
 
 Deferred depth includes the exhaustive enumeration of all measures and KPIs, full-text confirmation of the basic-concept complete edition PDF, the old/new plan measure and KPI mapping, current-plan annual evaluation evidence, the FY2024 settlement-to-item linkage (kept not_assessable), fiscal project detail, causality and cross-city comparability.
 
+## Seventh completion — Yamagata
+
+山形市を7市目の`reviewed_complete`へ昇格しました（2026-11-15、公開責任者・大杉邑大のレビュー承認に基づく）。
+
+Declared v1 package:
+
+- current comprehensive plan: 山形市発展計画2030 2025–2029 (adopted March 2025; doubles as the local comprehensive strategy)
+- structure: plan book in five chapters; chapter 4 sets out 19 policy fields
+- policy fields: 19
+- outcome indicators: 45 (baseline and target values set per policy field)
+- previous plan: 山形市発展計画2025 2020–2024 — a separate plan, not directly comparable
+- FY2026 general-account initial budget: 117,146,000,000 yen (enacted; 議第8号 原案のとおり可決 on 2026-03-24, confirmed on the official council vote-result list)
+- FY2024 general-account settlement: exact revenue (114,253,058,301 yen) and expenditure (111,230,120,306 yen) values from the settlement book
+
+Deferred depth includes the exhaustive enumeration of all policy fields and outcome indicators and their KPI detail, full-text confirmation of the plan book PDF, the old/new plan policy and indicator mapping, current-plan annual evaluation evidence, the FY2024 settlement certification date and result, the FY2024 settlement-to-item linkage (kept not_assessable), the presence or absence of FY2026 supplementary budgets, settlement breakdown by policy, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 6 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市
+- Reviewed complete: 7 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市
 - Review in progress: 0
-- Pending record review: 61
+- Pending record review: 60
 - Blocked source inventory: 0
-- Next official code: 062014
+- Next official code: 072010
 
 ## Definition of Phase 15 completion
 
