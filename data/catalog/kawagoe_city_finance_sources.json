@@ -1,0 +1,63 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-15",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "kawagoe-city-home",
+      "municipality_key": "kawagoe-city",
+      "organization": "川越市",
+      "category": "municipality_profile",
+      "title": "川越市公式サイト",
+      "url": "https://www.city.kawagoe.saitama.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "川越市の公式自治体サイト。"
+    },
+    {
+      "id": "kawagoe-budget-2026",
+      "municipality_key": "kawagoe-city",
+      "organization": "川越市",
+      "category": "budget",
+      "title": "令和8年度当初予算",
+      "url": "https://www.city.kawagoe.saitama.jp/shisei/zaisei/1010980/1010990/1019982/1016409.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算143,850,000千円のEvidence。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "kawagoe-budget-2026-enactment",
+      "municipality_key": "kawagoe-city",
+      "organization": "川越市議会",
+      "category": "assembly",
+      "title": "市議会だより令和8年5月1日号（議決結果）",
+      "url": "https://www.city.kawagoe.saitama.jp/shisei/zaisei/1010980/1010990/1019982/1016409.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "議案第29号『令和8年度川越市一般会計予算』が2026年3月25日に原案可決であることを市議会だより令和8年5月1日号の議決結果で確認する（予算ページを入口として保持）。"
+    },
+    {
+      "id": "kawagoe-settlement-2024",
+      "municipality_key": "kawagoe-city",
+      "organization": "川越市",
+      "category": "settlement",
+      "title": "令和6年度決算",
+      "url": "https://www.city.kawagoe.saitama.jp/shisei/zaisei/1010980/1011052/1018809/1018810.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入136,944,893,371円・歳出130,469,349,651円を円単位で含む公式決算資料。決算の認定は議案第66号（2025年9月29日認定、市議会だより令和7年11月1日号）。"
+    }
+  ]
+}

@@ -76,14 +76,14 @@ def test_phase15_current_statuses_are_canonical():
     statuses = Counter(row["status"] for row in queue["execution_queue"])
 
     assert statuses == {
-        "reviewed_complete": 9,
-        "pending_record_review": 58,
+        "reviewed_complete": 10,
+        "pending_record_review": 57,
     }
     assert queue["summary"] == {
         "target_count": 67,
-        "reviewed_complete_count": 9,
+        "reviewed_complete_count": 10,
         "review_in_progress_count": 0,
-        "pending_record_review_count": 58,
+        "pending_record_review_count": 57,
         "blocked_source_inventory_count": 0,
         "next_official_code": "072044",
     }
@@ -103,6 +103,7 @@ def test_phase15_current_statuses_are_canonical():
         "山形市",
         "福島市",
         "郡山市",
+        "川越市",
     ]
     assert completed[0]["completion_path"] == "data/catalog/hakodate_phase15_completion.json"
     assert completed[1]["completion_path"] == "data/catalog/asahikawa_phase15_completion.json"
@@ -113,6 +114,7 @@ def test_phase15_current_statuses_are_canonical():
     assert completed[6]["completion_path"] == "data/catalog/yamagata_phase15_completion.json"
     assert completed[7]["completion_path"] == "data/catalog/fukushima_phase15_completion.json"
     assert completed[8]["completion_path"] == "data/catalog/koriyama_phase15_completion.json"
+    assert completed[9]["completion_path"] == "data/catalog/kawagoe_phase15_completion.json"
 
     current = [
         row

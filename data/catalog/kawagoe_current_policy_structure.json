@@ -1,0 +1,75 @@
+{
+  "id": "kawagoe-current-policy-structure",
+  "phase": 15,
+  "official_code": "112011",
+  "name_ja": "川越市",
+  "current_plan": {
+    "title": "第五次川越市総合計画",
+    "period_label": "基本構想 2026年度～2035年度",
+    "start_fiscal_year": 2026,
+    "end_fiscal_year": 2035,
+    "structure": "基本構想（2026年度～2035年度）、基本計画（前期2026年度～2030年度・後期2031年度～2035年度）、実施計画（3年間ローリング）の構成。将来都市像は『ずっと安心、もっと幸せ、魅力あふれるまち 川越』。前期基本計画は8分野・38施策で構成される。",
+    "components": [
+      {
+        "layer": "basic_concept",
+        "label_ja": "基本構想",
+        "period": "2026年度～2035年度"
+      },
+      {
+        "layer": "basic_plan_first",
+        "label_ja": "前期基本計画",
+        "period": "2026年度～2030年度"
+      },
+      {
+        "layer": "basic_plan_second",
+        "label_ja": "後期基本計画",
+        "period": "2031年度～2035年度"
+      },
+      {
+        "layer": "implementation_plan",
+        "label_ja": "実施計画",
+        "period": "2026年度～2028年度（ローリング）"
+      }
+    ],
+    "basic_goals": {
+      "count": 8,
+      "names": [
+        "こども・子育て",
+        "福祉・保健・医療",
+        "教育・文化・スポーツ",
+        "都市基盤・生活基盤",
+        "産業・観光",
+        "環境",
+        "地域社会・安全安心",
+        "協働・行財政運営"
+      ],
+      "measures_count": 38,
+      "measures_per_field": [
+        4,
+        5,
+        5,
+        5,
+        4,
+        5,
+        5,
+        5
+      ],
+      "names_enumerated_in_v1": true,
+      "enumeration_boundary": "分野名と施策数は公式計画ページの一次資料記録で確認できるためv1で列挙する。38施策の個別名称・KPIの全件列挙はdeferred depthであり、推測で補完しない。"
+    },
+    "vision": "ずっと安心、もっと幸せ、魅力あふれるまち 川越",
+    "enumeration_boundary": "分野名・施策数は公式計画ページで確認できるため列挙する。施策・KPIの個別名称の全件列挙はdeferred depthである。"
+  },
+  "previous_plan": {
+    "title": "第四次川越市総合計画",
+    "basic_plan_second_phase": "後期基本計画 2021年度～2025年度",
+    "note": "FY2024決算は第四次計画の後期基本計画の4年目に帰属する。現行計画の実績として扱わない。"
+  },
+  "counts": {
+    "basic_goals": 8,
+    "basic_plan_measures": 38
+  },
+  "source_id": "kawagoe-fifth-plan",
+  "review_status": "reviewed",
+  "review_boundary": "第五次川越市総合計画の枠組み（基本構想・前期/後期基本計画・実施計画、8分野・38施策）を確認した。38施策の個別名称・KPIの全件列挙は本パッケージの範囲外。"
+}

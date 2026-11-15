@@ -1,0 +1,60 @@
+[
+  {
+    "id": "evidence-kawagoe-city-2026-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-112011-fiscal-2026-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算の歳入歳出予算は143,850,000千円であり、議案第29号として2026年3月25日に原案可決され成立した。",
+        "source_ids": [
+          "kawagoe-budget-2026",
+          "kawagoe-budget-2026-enactment"
+        ],
+        "location_note": "令和8年度当初予算の公式ページ（一般会計143,850,000千円）。議決は市議会だより令和8年5月1日号の議決結果（議案第29号・原案可決・2026年3月25日）",
+        "decision": "accepted",
+        "review_note": "予算額と市議会だよりの議決結果を一次資料で直接確認したレビュー済みレコード。"
+      }
+    ],
+    "review_status": "reviewed",
+    "open_questions": []
+  },
+  {
+    "id": "evidence-kawagoe-city-2024-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-112011-fiscal-2024-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計決算の歳入総額は136,944,893,371円であり、決算は議案第66号として2025年9月29日に認定された。",
+        "source_ids": [
+          "kawagoe-settlement-2024"
+        ],
+        "location_note": "令和6年度決算の公式ページ（一般会計歳入歳出決算額）。認定は市議会だより令和7年11月1日号の議決結果（議案第66号・2025年9月29日認定）",
+        "decision": "accepted",
+        "review_note": "決算の円単位額と市議会だよりの認定結果を一次資料で直接確認したレビュー済みレコード。"
+      }
+    ],
+    "review_status": "reviewed",
+    "open_questions": []
+  },
+  {
+    "id": "evidence-kawagoe-city-2024-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-112011-fiscal-2024-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計決算の歳出総額は130,469,349,651円であり、歳入歳出差引額6,475,543,720円と整合する。",
+        "source_ids": [
+          "kawagoe-settlement-2024"
+        ],
+        "location_note": "令和6年度決算の公式ページ（一般会計歳入歳出決算額）",
+        "decision": "accepted",
+        "review_note": "決算の円単位額を一次資料で直接確認し、差引額で検算したレビュー済みレコード。"
+      }
+    ],
+    "review_status": "reviewed",
+    "open_questions": []
+  }
+]

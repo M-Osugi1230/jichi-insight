@@ -1,0 +1,46 @@
+{
+  "id": "kawagoe-phase15-sources",
+  "phase": 15,
+  "official_code": "112011",
+  "name_ja": "川越市",
+  "reviewed_at": "2026-11-15",
+  "quality_boundary": "Fifth comprehensive plan (basic concept 2026-2035, basic plans 2026-2030 and 2031-2035, implementation plan 2026-2028), budget enactment and settlement certification confirmed in the official council newsletters, and settlement totals kept at exact yen precision without collapsing proposed, enacted, supplementary, or settlement states.",
+  "sources": [
+    {
+      "id": "kawagoe-fifth-plan",
+      "title": "第五次川越市総合計画",
+      "official_url": "https://www.city.kawagoe.saitama.jp/shisei/seisaku/1008089/1008090/index.html",
+      "format": "html",
+      "evidence_role": "current_plan_identity",
+      "evidence_location": "基本構想（2026年度～2035年度）・前期基本計画（2026年度～2030年度）・後期基本計画（2031年度～2035年度）の期間、将来都市像『ずっと安心、もっと幸せ、魅力あふれるまち 川越』、前期基本計画の8分野・38施策の構成",
+      "use_boundary": "第五次総合計画（2026年度開始）をcurrent versionとして保持し、第四次計画（後期基本計画2021年度～2025年度）と混在させない。"
+    },
+    {
+      "id": "kawagoe-implementation-2026-2028",
+      "title": "第五次川越市総合計画 実施計画（2026年度～2028年度）",
+      "official_url": "https://www.city.kawagoe.saitama.jp/shisei/seisaku/1008089/1008090/1021199.html",
+      "format": "html",
+      "evidence_role": "implementation_layer",
+      "evidence_location": "実施計画の対象期間（2026年度～2028年度）とローリング方式の位置づけ",
+      "use_boundary": "実施計画の期間と枠組みを確認する。個別事業の実績値を政策達成判定へ変換しない。"
+    },
+    {
+      "id": "kawagoe-budget-2026",
+      "title": "令和8年度当初予算",
+      "official_url": "https://www.city.kawagoe.saitama.jp/shisei/zaisei/1010980/1010990/1019982/1016409.html",
+      "format": "html",
+      "evidence_role": "initial_budget",
+      "evidence_location": "一般会計当初予算額143,850,000千円。議決は市議会だより令和8年5月1日号の議決結果（議案第29号・原案可決・2026年3月25日）で確認",
+      "use_boundary": "FY2026当初予算の成立額を確認する。補正予算・決算とは別stateで扱う。"
+    },
+    {
+      "id": "kawagoe-settlement-2024",
+      "title": "令和6年度決算",
+      "official_url": "https://www.city.kawagoe.saitama.jp/shisei/zaisei/1010980/1011052/1018809/1018810.html",
+      "format": "html",
+      "evidence_role": "settlement_and_major_measures",
+      "evidence_location": "一般会計歳入136,944,893,371円・歳出130,469,349,651円（円単位）。認定は市議会だより令和7年11月1日号の議決結果（議案第66号・2025年9月29日認定）で確認",
+      "use_boundary": "FY2024決算の円単位の確定値を確認する。FY2024は第四次計画期間の決算であり、現行計画の実績として扱わない。"
+    }
+  ]
+}
