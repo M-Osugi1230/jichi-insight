@@ -14,7 +14,7 @@
 - Phase 11: 全国47都道府県・15,327個票を共通Schemaで正規化／公式一次資料上の最大到達深度まで完了
 - Phase 13: 政令指定都市20/20のv1 record-review foundation完了（うち2市はReviewed reference）
 - Phase 14: 中核市・県庁所在地67/67の公式Source Inventory完了
-- Phase 15: 19/67自治体 reviewed_complete、48自治体 pending_record_review（正本キューの更新日は2026-11-16）
+- Phase 15: 20/67自治体 reviewed_complete、47自治体 pending_record_review（正本キューの更新日は2026-11-16）
 - 各Phaseの`complete`は全政策・予算・事業・契約・実績の完全な接続や全国比較可能性を保証しない
 - Public beta移行時点で未実施の事項は、外部法務確認、外部の中立性・方法論レビュー、実機・キーボード・スクリーンリーダー監査、初見ユーザーの3分理解テスト、障害対応の実地試験。訂正申請フォームの本番送信テストは2026-11-15に実施済み（Issue #492）。障害対応は机上訓練を2026-11-15に実施済み（Issue #12に記録）だが、実地試験は未実施のままである。公開責任者は、これらが未実施であることを本チェックリストに明記したうえでPublic betaへ移行する判断をし（2026-11-15）、同日、外部法務確認と外部の中立性・方法論レビューを含む未実施事項が残ることを明記したうえで、正式公開へ移行する判断をした（2026-11-15）。訂正・反論の通し試験、ロールバック訓練、ライセンス確定、Lighthouse計測と是正、運用責任体制の確定は完了済み
 - 正式な公開判断の親Issue: [#12 Public beta trust and launch gate](https://github.com/M-Osugi1230/jichi-insight/issues/12)
@@ -43,7 +43,7 @@
 - [x] Wave 3の38県・13,755個票をReviewed最大到達深度へ引き上げ（`data/catalog/phase11_completion.json`）
 - [x] Phase 13の20政令指定都市のv1レビュー基盤を完了（`data/catalog/phase13_completion.json`）
 - [x] Phase 14の67自治体の公式資料インベントリを完了（`data/catalog/phase14_completion.json`）
-- [ ] Phase 15の残り48自治体の個票レビュー（Public betaの必須条件ではない）
+- [ ] Phase 15の残り47自治体の個票レビュー（Public betaの必須条件ではない）
 - [ ] 議会発言、採決、監査指摘、首長公約を個票単位で接続
 - [ ] 比較可能性確認済み指標だけを横断比較へ昇格
 

@@ -1,0 +1,26 @@
+{
+  "id": "shinjuku-current-progress-review-summary",
+  "phase": 15,
+  "official_code": "131040",
+  "name_ja": "新宿区",
+  "reviewed_at": "2026-11-16",
+  "current_implementation_plan": {
+    "title": "新宿区第三次実行計画",
+    "period": "2024年度～2027年度（4か年。事業を取り巻く状況変化への対応等を反映するためローリング（見直し）を行い、改定は別versionとして保持する）",
+    "rolling_structure": "第三次実行計画は、総合計画の5つの基本政策のもとに計画事業（65事業）及び計画事業・区が経常的に実施する事業や取組のうち個別施策を支える主な事業や取組を体系化し、計画事業の評価に活用する指標を掲載する。各年度の決算や執行状況の分析はローリング（見直し）に反映される運用であり、個別事業の実績値は本パッケージでは昇格しない。",
+    "current_period_item_actuals": {
+      "status": "not_promoted_in_v1",
+      "boundary": "実行計画の計画事業・個別施策の指標の実績値は、公式対応が確認できるまで昇格しない。"
+    }
+  },
+  "evaluation_evidence": {
+    "status": "not_promoted_in_v1",
+    "boundary": "実行計画による進行管理の枠組みは確認したが、個別事業の評価エビデンスは昇格しない。監査委員の決算審査意見の内容確認も未実施である。"
+  },
+  "fiscal_linkage": {
+    "fiscal_year": 2024,
+    "status": "not_assessable",
+    "boundary": "FY2024は現行の総合計画期間（2018年度～2027年度）内かつ第三次実行計画の初年度に属する決算であるが、決算総額は款別の集計値であり、総合計画の個別施策・実行計画の計画事業との対応付けは総額レベルでは行われていない。決算とあわせて公表される『主要施策の成果の概要』についても、決算総額との突合・対応付けは未実施のため、接続はnot_assessableのまま保持する。"
+  },
+  "review_status": "reviewed_with_explicit_deferred_depth"
+}
