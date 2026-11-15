@@ -249,3 +249,26 @@ def test_prepared_fukushima_candidate_retains_human_boundary_and_evidence_shape(
     assert candidate["human_review"]["reviewed_at"] is None
     assert candidate["human_review"]["reviewer_note"] is None
     assert candidate["publication"]["eligible"] is False
+
+
+def test_fukushima_budget_thousand_yen_precision_is_resolved():
+    candidate = load(CANDIDATE)
+    package = candidate["candidate_package"]
+
+    budget_record = next(
+        rec
+        for rec in package["fiscal_records"]
+        if rec["stage"] == "initial_budget" and rec["fiscal_year"] == 2026
+    )
+    # 千円単位の精密値は『令和8年度当初予算の概要～特集～』資料編
+    # 「会計別予算」表（54頁、単位：千円）の一般会計124,500,000千円で確定済み。
+    assert budget_record["amount_yen"] == 124_500_000_000
+    assert "124,500,000千円" in budget_record["note"]
+
+    budget_packet = next(
+        pkt
+        for pkt in package["evidence_packets"]
+        if pkt["subject_id"] == budget_record["id"]
+    )
+    # 千円単位総額の突合が完了したため、未解決の open question は残らない。
+    assert budget_packet["open_questions"] == []
