@@ -308,13 +308,25 @@ Declared v1 package:
 
 Deferred depth includes the individual projects and achievement indicators under the six goals and 24 measures, full-text confirmation of the plan book, the audit commission's settlement review opinion (not inspected), cross-checks against the settlement detail book, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Eighteenth completion — Funabashi
+
+船橋市を18市目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 第3次船橋市総合計画 — basic concept and basic plan 2022–2031 as a single ten-year plan with no first/second-half split (vision 『人も まちも 輝く 笑顔あふれる 船橋』), three-year implementation plans prepared on a rolling basis (current edition 2026–2028). The basic concept sets five cross-field aimed city images （めざすまちの姿） and two basic stances （多様な主体との協働／持続可能な行財政運営）; the basic plan is organised under 24 basic measures （基本施策） with 71 measures （施策）, related to the aimed city images through a matrix rather than a hierarchy
+- FY2026 general-account initial budget: 270,640,000,000 yen (enacted; 議案第1号 passed on 2026-03-25 at the 1st regular council session of 2026; amount from Article 1 of the official budget book, stated in thousands of yen, consistent with the official budget overview and the supplementary-budget reference material)
+- FY2024 general-account settlement at the published thousand-yen precision: revenue 249,314,444千円 / expenditure 243,229,426千円 (balance 6,085,018千円 matches the published formal balance); certification 認定第1号 certified on 2025-10-03. Yen-level totals are not published in the official online sources, so they are not synthesised and the thousand-yen precision is kept explicit. FY2024 belongs to the same third plan period, but its totals were not linked to individual basic measures or projects, so the linkage stays not_assessable
+
+Deferred depth includes the individual projects and achievement indicators under the 24 basic measures and 71 measures, full-text confirmation of the plan book, the audit commission's settlement review opinion (not inspected), confirmation of yen-level settlement totals, cross-checks against the settlement detail book, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 17 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市
+- Reviewed complete: 18 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市
 - Review in progress: 0
-- Pending record review: 50
+- Pending record review: 49
 - Blocked source inventory: 0
-- Next official code: 122041
+- Next official code: 122173
 
 ## Definition of Phase 15 completion
 

@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-16",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "funabashi-city-home",
+      "municipality_key": "funabashi-city",
+      "organization": "船橋市",
+      "category": "municipality_profile",
+      "title": "船橋市公式サイト",
+      "url": "https://www.city.funabashi.lg.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "船橋市の公式自治体サイト。"
+    },
+    {
+      "id": "funabashi-budget-2026",
+      "municipality_key": "funabashi-city",
+      "organization": "船橋市",
+      "category": "budget",
+      "title": "令和8年度予算",
+      "url": "https://www.city.funabashi.lg.jp/shisei/zaisei/001/p144524.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算270,640,000千円（議案第1号）のEvidence。市議会の公式議決結果で令和8年3月25日に可決された成立予算。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "funabashi-settlement-2024",
+      "municipality_key": "funabashi-city",
+      "organization": "船橋市",
+      "category": "settlement",
+      "title": "令和6年度決算の概要",
+      "url": "https://www.city.funabashi.lg.jp/shisei/zaisei/002/p141123.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入249,314,444千円・歳出243,229,426千円を千円単位で含む公式決算資料。円単位の総額はオンラインで公表された公式資料では確認できていないため合成しない。決算の認定は認定第1号（2025年10月3日に認定）。監査委員の決算審査意見の内容確認は未実施。"
+    }
+  ]
+}
