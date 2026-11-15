@@ -188,8 +188,10 @@ def test_akita_evidence_packets_validate_and_match_fiscal_records():
         for packet in packets
         if packet["subject_id"] == "jp-local-052019-fiscal-2026-total-expenditure"
     )
-    # Unlike Morioka, the Akita vote was confirmed directly on the official
-    # council vote-result page, so no residual open question remains here.
+    # The Akita vote was confirmed directly on the official council
+    # vote-result page, so no residual open question remains here.
+    # (Morioka's confirmation is likewise resolved, via the council
+    # newsletter PDF, since Morioka publishes no HTML vote-result page.)
     assert budget_packet["open_questions"] == []
     assert "直接確認" in budget_packet["claims"][0]["review_note"]
 
