@@ -17,7 +17,7 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
   title: "47都道府県の政策目標を根拠から探す",
   description:
-    "全国47都道府県、15,124件のReviewed目標・指標とEvidence Packetを検索し、実績・予算・事業・契約の接続状況を確認できます。",
+    `全国47都道府県、${reviewedCoverageStats.reviewedRecords.toLocaleString("ja-JP")}件の確認済み目標・指標を検索し、実績・予算・事業の接続状況を確認できます。`,
   alternates: {
     canonical: "https://m-osugi1230.github.io/jichi-insight/municipalities/",
   },
@@ -99,14 +99,36 @@ export default function MunicipalitiesPage() {
       <main id="main-content">
       <div className="pageShell">
         <PageIntro
-          eyebrow="47 prefectures / reviewed evidence"
-          title="47都道府県の目標原文を、Evidenceから探す。"
+          eyebrow="FIND YOUR MUNICIPALITY"
+          title="あなたのまちの情報を探す。"
         >
           <p>
             現行政策計画の入口だけでなく、全47都道府県の目標・指標を人が照合して公開しました。
             件数の大小を順位にせず、各レコードの公式根拠と、その先の実績・予算・事業・契約の接続状況を示します。
           </p>
         </PageIntro>
+
+        <nav className={styles.topShortcuts} aria-label="自治体一覧のページ内案内">
+          <a href="#prefectures">47都道府県を検索</a>
+          <a href="#reviewed-cities">詳細レビュー済みの市</a>
+          <Link href="/review-progress">その他の市の収録進捗</Link>
+        </nav>
+        <p className={styles.searchBoundary}>
+          掲載対象は、47都道府県の政策計画と、詳細レビュー完了済みの市です。すべての市区町村が同じ深さで閲覧できるわけではありません。
+        </p>
+        <section className="contentSection" id="prefectures">
+          <div className={styles.sectionHeading}>
+            <div>
+              <p className="eyebrow">All 47 prefectures</p>
+              <h2>都道府県名・地域から探す。</h2>
+            </div>
+            <p>
+              都道府県名、地方、計画名で絞り込めます。検索結果から公式計画と確認済みの情報へ進めます。
+            </p>
+          </div>
+          <CoverageExplorer />
+        </section>
+
 
         <section className={styles.overview} aria-label="全国Reviewedデータ概要">
           <div className={styles.overviewLead}>
@@ -216,19 +238,6 @@ export default function MunicipalitiesPage() {
           </ol>
         </section>
 
-        <section className="contentSection" id="prefectures">
-          <div className={styles.sectionHeading}>
-            <div>
-              <p className="eyebrow">All 47 prefectures</p>
-              <h2>47都道府県の統合索引。</h2>
-            </div>
-            <p>
-              都道府県名・地域・計画名で検索できます。各カードの5段階表示で、目標から契約までの接続状況を確認できます。
-            </p>
-          </div>
-          <CoverageExplorer />
-        </section>
-
         <section className="contentSection">
           <div className={styles.sectionHeading}>
             <div>
@@ -259,7 +268,7 @@ export default function MunicipalitiesPage() {
             <p className="eyebrow">Phase 10 in progress</p>
             <h2>評価を急がず、Evidence Chainを縦につなぐ。</h2>
             <p>
-              15,124件は政策達成評価ではありません。次は年度実績、予算、事業、契約を同じ政策IDへ照合し、住民が自分で判断できる根拠の連鎖を広げます。
+              {formatNumber(reviewedCoverageStats.reviewedRecords)}件は政策達成評価ではありません。次は年度実績、予算、事業、契約を同じ政策IDへ照合し、住民が自分で判断できる根拠の連鎖を広げます。
             </p>
           </div>
           <div className={styles.calloutActions}>
