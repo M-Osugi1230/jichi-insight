@@ -20,8 +20,9 @@ const municipalityKeys = Object.keys(municipalityMeta) as MunicipalityKey[];
 
 export default function SourcesPage() {
   return (
-    <main>
+    <>
       <SiteHeader />
+      <main>
       <div className="pageShell">
         <PageIntro eyebrow="Official source catalog" title="公式資料の所在から、透明にする。"><p>ここでは、評価結果ではなく、調査に使用する自治体・議会の公式ページを公開しています。一つの数字を確定するには、各入口から年度別資料と該当ページまで確認します。</p></PageIntro>
         <section className="catalogSummary" aria-label="資料カタログ概要">
@@ -36,7 +37,8 @@ export default function SourcesPage() {
           return <section className="sourceGroup" id={key} key={key}><div className="sourceGroupHeader"><div><p className="eyebrow">{municipality.type}</p><h2>{municipality.name}</h2></div><p>{sources.length}件の公式入口を確認済み</p></div><div className="sourceGrid">{sources.map((source) => <SourceCard source={source} key={source.id} />)}</div></section>;
         })}
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

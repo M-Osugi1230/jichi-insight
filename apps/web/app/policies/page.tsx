@@ -45,8 +45,9 @@ const targetDetails = Object.fromEntries(
 
 export default function PoliciesPage() {
   return (
-    <main>
+    <>
       <SiteHeader />
+      <main>
       <div className="pageShell">
         <PageIntro eyebrow="Policies and results" title="目標を読み、実績の有無を確かめる。">
           <p>
@@ -187,7 +188,8 @@ export default function PoliciesPage() {
           </div>
         </section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

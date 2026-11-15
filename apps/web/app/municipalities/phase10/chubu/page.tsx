@@ -24,8 +24,9 @@ export default function Phase10ChubuPage() {
   const reviews = loadPhase10ChubuDepth();
 
   return (
-    <main id="main-content">
+    <>
       <SiteHeader />
+      <main id="main-content">
       <div className="pageShell">
         <PageIntro
           eyebrow="Phase 10 regional depth / Chubu"
@@ -137,7 +138,8 @@ export default function Phase10ChubuPage() {
           </Link>
         </section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

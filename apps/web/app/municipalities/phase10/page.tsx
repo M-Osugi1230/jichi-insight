@@ -116,8 +116,9 @@ export default function Phase10MunicipalitiesPage() {
     anchorReviews.summary.reviewed_source_count;
 
   return (
-    <main id="main-content">
+    <>
       <SiteHeader />
+      <main id="main-content">
       <div className="pageShell">
         <PageIntro
           eyebrow="Phase 10 nationwide uniform depth"
@@ -434,7 +435,8 @@ export default function Phase10MunicipalitiesPage() {
           <Link href="/municipalities/miyagi">宮城県の年度実績を見る →</Link>
         </section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

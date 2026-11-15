@@ -103,8 +103,9 @@ function formatNumber(value: number) {
 
 export default function Home() {
   return (
-    <main id="main-content">
+    <>
       <SiteHeader />
+      <main id="main-content">
 
       <section className={styles.hero}>
         <div className={styles.heroCopy}>
@@ -375,7 +376,8 @@ export default function Home() {
         </div>
       </section>
 
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

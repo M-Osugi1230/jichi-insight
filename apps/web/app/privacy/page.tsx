@@ -13,8 +13,9 @@ const updatedAt = "2026年7月29日";
 
 export default function PrivacyPage() {
   return (
-    <main>
+    <>
       <SiteHeader />
+      <main>
       <div className="pageShell">
         <PageIntro eyebrow="Privacy policy" title="プライバシーポリシー">
           <p>Jichi Insightは、必要最小限の情報だけを取り扱い、公開Issueへの個人情報の投稿を求めません。</p>
@@ -65,7 +66,8 @@ export default function PrivacyPage() {
           <p>本方針を変更した場合は最終更新日を更新します。個人情報の取扱いを実質的に拡大する変更は、可能な範囲でサイト上またはリポジトリ上に理由を記録します。</p>
         </section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

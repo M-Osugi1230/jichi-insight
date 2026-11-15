@@ -13,8 +13,9 @@ const updatedAt = "2026年7月29日";
 
 export default function TermsPage() {
   return (
-    <main>
+    <>
       <SiteHeader />
+      <main>
       <div className="pageShell">
         <PageIntro eyebrow="Terms of use" title="利用規約">
           <p>本規約は、Jichi Insight（以下「本サイト」）の利用条件を定めるものです。本サイトを利用した時点で、本規約に同意したものとみなします。</p>
@@ -67,7 +68,8 @@ export default function TermsPage() {
           <p>本規約を変更した場合は、本ページの最終更新日を更新します。重大な変更は、可能な範囲でサイト上またはリポジトリ上に変更理由を記録します。</p>
         </section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

@@ -56,8 +56,9 @@ export default async function Phase9PrefecturePage({
       notFound();
     }
     return (
-      <main id="main-content">
+      <>
         <SiteHeader />
+        <main id="main-content">
         <div className="pageShell">
           <PageIntro
             eyebrow="Phase 9 data generation"
@@ -81,14 +82,16 @@ export default async function Phase9PrefecturePage({
             </div>
           </section>
         </div>
+        </main>
         <SiteFooter />
-      </main>
+      </>
     );
   }
 
   return (
-    <main id="main-content">
+    <>
       <SiteHeader />
+      <main id="main-content">
       <div className="pageShell">
         <PageIntro
           eyebrow={`Phase 9 / ${catalog.prefecture_code}`}
@@ -229,7 +232,8 @@ export default async function Phase9PrefecturePage({
           </p>
         </section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

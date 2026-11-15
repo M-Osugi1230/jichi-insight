@@ -20,8 +20,9 @@ export const metadata: Metadata = {
 
 export default function OkinawaPage() {
   return (
-    <main id="main-content">
+    <>
       <SiteHeader />
+      <main id="main-content">
       <div className="pageShell">
         <PageIntro
           eyebrow="Okinawa mid-term implementation indicators"
@@ -122,7 +123,8 @@ export default function OkinawaPage() {
           </a>
         </section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

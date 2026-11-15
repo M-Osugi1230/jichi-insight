@@ -33,8 +33,9 @@ export function Phase10RegionalDepthPage({
   nextDescription,
 }: Props) {
   return (
-    <main id="main-content">
+    <>
       <SiteHeader />
+      <main id="main-content">
       <div className="pageShell">
         <PageIntro
           eyebrow={`Phase 10 regional depth / ${reviews.batch_id}`}
@@ -139,7 +140,8 @@ export function Phase10RegionalDepthPage({
           </Link>
         </section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

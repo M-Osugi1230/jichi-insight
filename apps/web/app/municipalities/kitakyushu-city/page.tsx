@@ -36,8 +36,9 @@ export default function KitakyushuCityPage() {
       : null;
 
   return (
-    <main>
+    <>
       <SiteHeader />
+      <main>
       <div className="pageShell">
         <section className={styles.hero}>
           <div>
@@ -173,7 +174,8 @@ export default function KitakyushuCityPage() {
           <Link href="/municipalities">自治体一覧</Link>
         </nav>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

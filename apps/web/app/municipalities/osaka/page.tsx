@@ -18,8 +18,9 @@ export const metadata: Metadata = {
 
 export default function OsakaPage() {
   return (
-    <main id="main-content">
+    <>
       <SiteHeader />
+      <main id="main-content">
       <div className="pageShell">
         <PageIntro eyebrow="Osaka Beyond EXPO indicators" title="大阪府の戦略目標とWell-Beingを、同じ点数にしない。">
           <p>
@@ -124,7 +125,8 @@ export default function OsakaPage() {
           </div>
         </section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

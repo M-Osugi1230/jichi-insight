@@ -24,8 +24,9 @@ const problems = [
 
 export default function AboutPage() {
   return (
-    <main>
+    <>
       <SiteHeader />
+      <main>
       <div className="pageShell">
         <PageIntro eyebrow="Why Jichi Insight" title="公開資料を、住民が判断できる根拠へ。"><p>日本の自治体は多くの資料を公開しています。それでも住民が短時間で全体像を理解するのは簡単ではありません。問題は情報がないことだけではなく、情報が資料単位で分断され、目標・支出・実行・成果の関係を追いにくいことです。</p></PageIntro>
         <section className="contentSection"><p className="eyebrow">Problem</p><h2>私たちが解決する4つの分断</h2><div className="problemGrid">{problems.map(([title, text]) => <article key={title}><h3>{title}</h3><p>{text}</p></article>)}</div></section>
@@ -33,7 +34,8 @@ export default function AboutPage() {
         <section className="contentSection"><p className="eyebrow">What we will not do</p><h2>信頼を損なう近道は選びません。</h2><ul className="plainList"><li>投票先や候補者を推奨しない</li><li>政党や政治思想を採点しない</li><li>根拠のない疑惑を掲載しない</li><li>AI抽出結果を未確認のまま評価に使わない</li><li>全国を浅く並べるために品質を下げない</li></ul></section>
         <section className="callout"><div><p className="eyebrow">Current phase</p><h2>全国の目標原文から、実績とお金の接続へ。</h2><p>全{reviewedCoverageStats.reviewedPrefectures}都道府県で、{reviewedCoverageStats.reviewedRecords.toLocaleString("ja-JP")}件の目標・指標と同数のEvidence Packetを公開しました。宮城県では{reviewedCoverageStats.annualResultRows}行の年度実績まで接続済みです。次は予算、事業、契約、議会へ根拠の鎖を伸ばします。</p></div><Link className="primaryAction" href="/municipalities">47都道府県の根拠を見る</Link></section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

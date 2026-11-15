@@ -24,8 +24,9 @@ export default function Phase10TohokuPage() {
   const reviews = loadPhase10TohokuDepth();
 
   return (
-    <main id="main-content">
+    <>
       <SiteHeader />
+      <main id="main-content">
       <div className="pageShell">
         <PageIntro
           eyebrow="Phase 10 regional depth / Tohoku"
@@ -137,7 +138,8 @@ export default function Phase10TohokuPage() {
           </Link>
         </section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

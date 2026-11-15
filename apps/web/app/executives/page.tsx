@@ -52,8 +52,9 @@ export default function ExecutivesPage() {
   ).length;
 
   return (
-    <main>
+    <>
       <SiteHeader />
+      <main>
       <div className="pageShell">
         <PageIntro eyebrow="Executive registry" title="首長評価の前に、任期と公約の根拠を固定する。">
           <p>
@@ -239,7 +240,8 @@ export default function ExecutivesPage() {
           </div>
         </section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

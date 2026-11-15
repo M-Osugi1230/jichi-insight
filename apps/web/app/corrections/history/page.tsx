@@ -17,8 +17,9 @@ export default function CorrectionsHistoryPage() {
   const { entries, total, updatedAt } = correctionsHistory;
 
   return (
-    <main>
+    <>
       <SiteHeader />
+      <main>
       <div className="pageShell">
         <PageIntro eyebrow="Change history" title="修正の前後を、そのまま残します。">
           <p>
@@ -72,7 +73,8 @@ export default function CorrectionsHistoryPage() {
           )}
         </section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

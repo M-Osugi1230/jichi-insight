@@ -34,8 +34,9 @@ const collectionFlow = [
 
 export default function PolicySourcesPage() {
   return (
-    <main>
+    <>
       <SiteHeader />
+      <main>
       <div className="pageShell">
         <PageIntro eyebrow="Policy source map" title="集められる政策資料から、先に形にする。">
           <p>
@@ -210,7 +211,8 @@ export default function PolicySourcesPage() {
           </div>
         </section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

@@ -32,8 +32,9 @@ export default function FukuokaProjectLinkagePage() {
   const summary = fukuokaProjectLinkage.summary;
 
   return (
-    <main id="main-content">
+    <>
       <SiteHeader />
+      <main id="main-content">
       <div className="pageShell">
         <PageIntro
           eyebrow="Phase 10 / Fukuoka project linkage candidates"
@@ -190,7 +191,8 @@ export default function FukuokaProjectLinkagePage() {
           </Link>
         </section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

@@ -36,8 +36,9 @@ export default function MiyagiProjectMoneyPage() {
   const summary = miyagiProjectMoneyLinkage.summary;
 
   return (
-    <main id="main-content">
+    <>
       <SiteHeader />
+      <main id="main-content">
       <div className="pageShell">
         <PageIntro
           eyebrow="Phase 10 / Miyagi money-to-action linkage"
@@ -185,7 +186,8 @@ export default function MiyagiProjectMoneyPage() {
           </Link>
         </section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

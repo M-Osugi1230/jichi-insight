@@ -19,8 +19,9 @@ const correctionUrl =
 
 export default function CorrectionsPage() {
   return (
-    <main>
+    <>
       <SiteHeader />
+      <main>
       <div className="pageShell">
         <PageIntro
           eyebrow="Corrections and right of reply"
@@ -99,7 +100,8 @@ export default function CorrectionsPage() {
           </a>
         </section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

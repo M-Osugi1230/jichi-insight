@@ -11,8 +11,9 @@ export const metadata: Metadata = {
 
 export default function DisclaimerPage() {
   return (
-    <main>
+    <>
       <SiteHeader />
+      <main>
       <div className="pageShell">
         <PageIntro eyebrow="Disclaimer" title="免責事項">
           <p>Jichi Insightは、自治体の公開資料を読み解くための調査・整理基盤です。公式な行政機関、報道機関、選挙運動、法律・会計・投資等の専門助言サービスではありません。</p>
@@ -49,7 +50,8 @@ export default function DisclaimerPage() {
           <p>具体的な誤り、より強い一次資料、公式な反論を確認した場合は、訂正・反論ページから申請してください。検証結果と変更内容は、可能な範囲で追跡できる形で記録します。</p>
         </section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

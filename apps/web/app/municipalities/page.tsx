@@ -94,8 +94,9 @@ const phase15Cities = loadPhase15CitySummaries();
 
 export default function MunicipalitiesPage() {
   return (
-    <main id="main-content">
+    <>
       <SiteHeader />
+      <main id="main-content">
       <div className="pageShell">
         <PageIntro
           eyebrow="47 prefectures / reviewed evidence"
@@ -269,7 +270,8 @@ export default function MunicipalitiesPage() {
           </div>
         </section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

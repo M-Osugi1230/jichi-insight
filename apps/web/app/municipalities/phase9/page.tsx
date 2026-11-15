@@ -22,8 +22,9 @@ export default function Phase9MunicipalitiesPage() {
   const isComplete = summary.status === "reviewed_complete";
 
   return (
-    <main id="main-content">
+    <>
       <SiteHeader />
+      <main id="main-content">
       <div className="pageShell">
         <PageIntro
           eyebrow="Phase 9 nationwide review"
@@ -136,7 +137,8 @@ export default function Phase9MunicipalitiesPage() {
           )}
         </section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

@@ -23,8 +23,9 @@ export default function ReviewProgressPage() {
   const progressPercent = (phase15Progress.reviewed / phase15Progress.total) * 100;
 
   return (
-    <main id="main-content">
+    <>
       <SiteHeader />
+      <main id="main-content">
       <div className="pageShell">
         <PageIntro
           eyebrow="Coverage / Phase 15"
@@ -134,12 +135,18 @@ export default function ReviewProgressPage() {
                   </span>
                   <div className={styles.evidenceLinks}>
                     {record.status === "reviewed_complete" && record.slug && (
-                      <Link href={`/municipalities/${record.slug}`}>市のページを見る</Link>
+                      <Link
+                        href={`/municipalities/${record.slug}`}
+                        aria-label={`${record.name}のページを見る`}
+                      >
+                        市のページを見る
+                      </Link>
                     )}
                     <a
                       href={sourcePrefix + record.sourceInventoryPath}
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label={`${record.name}の公式資料の索引`}
                     >
                       公式資料の索引
                     </a>
@@ -148,6 +155,7 @@ export default function ReviewProgressPage() {
                         href={sourcePrefix + record.completionPath}
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label={`${record.name}のレビュー完了記録`}
                       >
                         レビュー完了記録
                       </a>
@@ -165,7 +173,8 @@ export default function ReviewProgressPage() {
           <Link href="/corrections">誤りを報告する →</Link>
         </div>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

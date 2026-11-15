@@ -24,8 +24,9 @@ export const metadata: Metadata = {
 
 export default function TokyoPage() {
   return (
-    <main id="main-content">
+    <>
       <SiteHeader />
+      <main id="main-content">
       <div className="pageShell">
         <PageIntro eyebrow="Tokyo policy targets" title="東京都の政策目標を、値と条件を変えずに読む。">
           <p>
@@ -191,7 +192,8 @@ export default function TokyoPage() {
           </div>
         </section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

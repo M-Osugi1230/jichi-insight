@@ -24,8 +24,9 @@ export default function Phase10KantoPage() {
   const reviews = loadPhase10KantoDepth();
 
   return (
-    <main id="main-content">
+    <>
       <SiteHeader />
+      <main id="main-content">
       <div className="pageShell">
         <PageIntro
           eyebrow="Phase 10 regional depth / Kanto"
@@ -137,7 +138,8 @@ export default function Phase10KantoPage() {
           </Link>
         </section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

@@ -38,8 +38,9 @@ export default function FukuokaCityPage() {
       : null;
 
   return (
-    <main>
+    <>
       <SiteHeader />
+      <main>
       <div className="pageShell">
         <section className={styles.hero}>
           <div>
@@ -174,7 +175,8 @@ export default function FukuokaCityPage() {
           <Link href="/municipalities">自治体一覧</Link>
         </nav>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

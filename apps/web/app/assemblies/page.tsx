@@ -18,8 +18,9 @@ export const metadata: Metadata = {
 
 export default function AssembliesPage() {
   return (
-    <main>
+    <>
       <SiteHeader />
+      <main>
       <div className="pageShell">
         <PageIntro
           eyebrow="Assembly accountability"
@@ -94,7 +95,8 @@ export default function AssembliesPage() {
           </div>
         </section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

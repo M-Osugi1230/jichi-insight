@@ -32,8 +32,9 @@ export default function TokyoChildrenAnnualActualsPage() {
   );
 
   return (
-    <main id="main-content">
+    <>
       <SiteHeader />
+      <main id="main-content">
       <div className="pageShell">
         <PageIntro
           eyebrow="Phase 10 / Tokyo children annual actuals"
@@ -179,7 +180,8 @@ export default function TokyoChildrenAnnualActualsPage() {
           </Link>
         </section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

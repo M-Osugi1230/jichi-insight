@@ -20,8 +20,9 @@ export const metadata: Metadata = {
 
 export default function HiroshimaPage() {
   return (
-    <main id="main-content">
+    <>
       <SiteHeader />
+      <main id="main-content">
       <div className="pageShell">
         <PageIntro
           eyebrow="Hiroshima revised vision indicators"
@@ -102,7 +103,8 @@ export default function HiroshimaPage() {
           >広島県のビジョン公式ページを開く ↗</a>
         </section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

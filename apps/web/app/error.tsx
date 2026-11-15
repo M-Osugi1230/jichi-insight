@@ -20,8 +20,9 @@ export default function Error({
   }, [error]);
 
   return (
-    <main>
+    <>
       <SiteHeader />
+      <main>
       <section className={styles.errorPage}>
         <p className="eyebrow">Error / 表示エラー</p>
         <h1>ページを表示できませんでした。</h1>
@@ -38,7 +39,8 @@ export default function Error({
           </Link>
         </div>
       </section>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

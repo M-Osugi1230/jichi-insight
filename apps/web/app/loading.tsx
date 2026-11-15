@@ -5,14 +5,16 @@ import styles from "./not-found.module.css";
 
 export default function Loading() {
   return (
-    <main>
+    <>
       <SiteHeader />
+      <main>
       <section className={styles.errorPage}>
         <p aria-live="polite" role="status">
           ページを読み込んでいます。しばらくお待ちください。
         </p>
       </section>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

@@ -35,8 +35,9 @@ const reviewedFieldIds = new Set(
 
 export default function HokkaidoPage() {
   return (
-    <main>
+    <>
       <SiteHeader />
+      <main>
       <div className="pageShell">
         <PageIntro eyebrow="Hokkaido policy indicators" title="北海道の政策指標を、原文と期間から読む。">
           <p>
@@ -176,7 +177,8 @@ export default function HokkaidoPage() {
           <Link href="/municipalities">全国自治体一覧</Link>
         </nav>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }
