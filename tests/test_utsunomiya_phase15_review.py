@@ -230,16 +230,13 @@ def test_utsunomiya_completion_quality_gate_and_deferred_depth_are_explicit():
     assert "ランキング" in boundary
 
 
-def test_utsunomiya_candidate_approval_record_remains_pending_until_merge():
+def test_utsunomiya_candidate_records_owner_approval():
     candidate = load(CANDIDATE)
 
-    # The owner's approval is given on the promotion PR; the approval
-    # record is added to the candidate's human_review at merge time.
-    # This branch must not fabricate it in advance.
     assert candidate["human_review"]["required"] is True
-    assert candidate["human_review"]["status"] == "pending"
-    assert candidate["human_review"]["reviewed_at"] is None
-    assert candidate["human_review"]["reviewer_note"] is None
+    assert candidate["human_review"]["status"] == "approved"
+    assert candidate["human_review"]["reviewed_at"] == "2026-11-15"
+    assert "公開責任者" in candidate["human_review"]["reviewer_note"]
     # The candidate file itself remains non-public staging material.
     assert candidate["publication"]["eligible"] is False
 

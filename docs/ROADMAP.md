@@ -1089,9 +1089,9 @@ v1 declared package:
 
 ### Milestone P15-M10 — Utsunomiya reviewed package
 
-Status: `promotion prepared`（2026-11-15、公開責任者のレビュー承認はマージ時に候補のhuman_reviewへ記録）
+Status: `complete`（2026-11-15）
 
-宇都宮市をPhase 15の10市目の`reviewed_complete`自治体として確定する昇格PRを準備しました。
+宇都宮市をPhase 15の10市目の`reviewed_complete`自治体として確定しました（公開責任者・大杉邑大のレビュー承認に基づく）。
 
 v1 declared package:
 

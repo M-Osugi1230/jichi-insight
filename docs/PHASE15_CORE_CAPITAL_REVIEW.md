@@ -213,7 +213,7 @@ Deferred depth includes the exhaustive enumeration of all basic goals, policy pa
 
 ## Tenth completion — Utsunomiya
 
-宇都宮市を10市目の`reviewed_complete`へ昇格するPRを準備しました（2026-11-15。公開責任者のレビュー承認は本PRのマージ時に候補のhuman_reviewへ記録する）。
+宇都宮市を10市目の`reviewed_complete`へ昇格しました（2026-11-15、公開責任者・大杉邑大のレビュー承認に基づく）。
 
 Declared v1 package:
 
