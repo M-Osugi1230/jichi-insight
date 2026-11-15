@@ -263,9 +263,9 @@
       "prefecture_name_ja": "千葉県",
       "municipality_type": "city",
       "phase14_role": "core_city",
-      "status": "pending_record_review",
+      "status": "reviewed_complete",
       "source_inventory_path": "data/indexed/kashiwa-city/source_inventory.json",
-      "completion_path": null
+      "completion_path": "data/catalog/kashiwa_phase15_completion.json"
     },
     {
       "sequence": 20,
@@ -894,11 +894,11 @@
   ],
   "summary": {
     "target_count": 67,
-    "reviewed_complete_count": 18,
+    "reviewed_complete_count": 19,
     "review_in_progress_count": 0,
-    "pending_record_review_count": 49,
+    "pending_record_review_count": 48,
     "blocked_source_inventory_count": 0,
-    "next_official_code": "122173"
+    "next_official_code": "131040"
   },
   "updated_at": "2026-11-16"
 }

@@ -1,0 +1,46 @@
+{
+  "id": "kashiwa-phase15-sources",
+  "phase": 15,
+  "official_code": "122173",
+  "name_ja": "柏市",
+  "reviewed_at": "2026-11-16",
+  "quality_boundary": "Sixth comprehensive plan (basic concept 2025-2034, basic plans 2025-2029 and 2030-2034, three-year implementation plans revised annually), budget enactment confirmed on the official council vote-result list (bill No. 34 passed as proposed on 2026-03-24), and settlement totals kept at exact yen precision without collapsing proposed, enacted, supplementary, or settlement states.",
+  "sources": [
+    {
+      "id": "kashiwa-sixth-plan",
+      "title": "第六次総合計画（基本構想・前期基本計画）",
+      "official_url": "https://www.city.kashiwa.lg.jp/seisaku-innovation/shiseijoho/keikaku/6jisougoukeikaku/6jisougoukeikaku_mastervision_masterplan.html",
+      "format": "html",
+      "evidence_role": "comprehensive_plan",
+      "evidence_location": "柏市公式Webサイト『第六次総合計画（基本構想・前期基本計画）』ページに、計画本編PDF（全体版、章ごとの分割版、ダイジェスト版等）へのリンクを掲載。ページ本文に令和7年度を開始年度とすること、将来の姿、3つの基本的な目標、構成（基本構想・基本計画）と計画期間（基本構想は10年、基本計画は前期・後期の各5年）を記載し、基本計画本編PDFの施策体系（30～33ページ）に22分野と各施策を列挙",
+      "use_boundary": "現行の第六次総合計画をcurrent versionとして保持し、旧・第五次計画の実績とversionを混在させない。"
+    },
+    {
+      "id": "kashiwa-implementation-2026-2028",
+      "title": "柏市第六次総合計画実行計画",
+      "official_url": "https://www.city.kashiwa.lg.jp/seisaku-innovation/shiseijoho/keikaku/6jisougoukeikaku/jikkoukeikaku1.html",
+      "format": "html",
+      "evidence_role": "implementation_plan",
+      "evidence_location": "柏市公式Webサイト『柏市第六次総合計画実行計画』ページに、実行計画の概要（計画期間は3年間・毎年度見直し、対象事業は基本計画の3つの重点テーマ（全7項目）を達成するために特に効果的な事業）を記載し、現行版『柏市第六次総合計画実行計画（令和8年度～令和10年度）』PDFへのリンクを掲載",
+      "use_boundary": "実行計画は毎年度見直されるため期版を分離して保持する。実行計画の方針を年度Resultへ読み替えない。"
+    },
+    {
+      "id": "kashiwa-budget-2026",
+      "title": "令和8年度の予算",
+      "official_url": "https://www.city.kashiwa.lg.jp/zaisei/policy_pr/budget/budget2/r8-yosan.html",
+      "format": "html",
+      "evidence_role": "budget",
+      "evidence_location": "柏市公式Webサイト『令和8年度の予算』ページはFY2026当初予算・補正予算の公式入口。同ページからリンクされる『令和8年度当初予算案の概要～わかりやすい予算～』PDFの予算総括表に一般会計191,224百万円、歳入・歳出表（単位 千円）の合計に191,224,000千円を記載し、柏市議会公式『柏市議会令和8年第1回定例会議決結果一覧』に議案第34号の原案可決（令和8年3月24日議決）を記載",
+      "use_boundary": "FY2026当初予算は議決・成立済みの額として扱い、proposal/enacted/supplementaryをPhase 15でstage分離する。"
+    },
+    {
+      "id": "kashiwa-settlement-2024",
+      "title": "決算書",
+      "official_url": "https://www.city.kashiwa.lg.jp/kaikei/policy_pr/accounts/kessansho.html",
+      "format": "html",
+      "evidence_role": "settlement_and_annual_results",
+      "evidence_location": "柏市公式Webサイト『決算書』ページからリンクされる『令和6年度柏市歳入歳出決算書』PDFの一般会計・特別会計決算総覧（単位 円）に、一般会計の収入済額175,594,266,737円・支出済額168,389,488,303円・歳入歳出差引残高7,204,778,434円を記載。認定は柏市議会公式『柏市議会令和7年第3回定例会議決結果一覧』の議案第16号『原案認定』で確認",
+      "use_boundary": "FY2024決算認定の公式入口。FY2024は旧・第五次総合計画期間の決算として保持し、第六次計画のcurrent actualへ流用しない。"
+    }
+  ]
+}
