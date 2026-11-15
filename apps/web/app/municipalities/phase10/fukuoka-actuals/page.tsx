@@ -40,8 +40,9 @@ export default function FukuokaAnnualActualsPage() {
     });
 
   return (
-    <main id="main-content">
+    <>
       <SiteHeader />
+      <main id="main-content">
       <div className="pageShell">
         <PageIntro
           eyebrow="Phase 10 / Fukuoka annual actual linkage"
@@ -179,7 +180,8 @@ export default function FukuokaAnnualActualsPage() {
           </Link>
         </section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

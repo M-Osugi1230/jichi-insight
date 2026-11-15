@@ -7,8 +7,9 @@ import styles from "./not-found.module.css";
 
 export default function NotFound() {
   return (
-    <main>
+    <>
       <SiteHeader />
+      <main>
       <section className={styles.errorPage}>
         <p className="eyebrow">404 / Not found</p>
         <h1>お探しのページは見つかりませんでした。</h1>
@@ -25,7 +26,8 @@ export default function NotFound() {
           </Link>
         </div>
       </section>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

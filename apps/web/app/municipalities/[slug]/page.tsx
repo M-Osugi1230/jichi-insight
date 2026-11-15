@@ -233,8 +233,9 @@ export default async function Phase15CityPage({
   );
 
   return (
-    <main id="main-content">
+    <>
       <SiteHeader />
+      <main id="main-content">
       <div className="pageShell">
         <PageIntro
           eyebrow={`Phase 15 / ${city.prefecture} / ${city.officialCode}`}
@@ -442,7 +443,8 @@ export default async function Phase15CityPage({
           </div>
         </section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

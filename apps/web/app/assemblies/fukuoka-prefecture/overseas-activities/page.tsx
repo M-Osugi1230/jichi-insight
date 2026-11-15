@@ -46,8 +46,9 @@ export default function OverseasActivitiesPage() {
   );
 
   return (
-    <main>
+    <>
       <SiteHeader />
+      <main>
       <div className="pageShell">
         <section className={styles.hero}>
           <div>
@@ -264,7 +265,8 @@ export default function OverseasActivitiesPage() {
           <Link href="/corrections">訂正・資料追加</Link>
         </nav>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

@@ -46,8 +46,9 @@ function valueLabel(value: MiyagiKpiValue, unit: string) {
 
 export default function MiyagiPage() {
   return (
-    <main id="main-content">
+    <>
       <SiteHeader />
+      <main id="main-content">
       <div className="pageShell">
         <PageIntro eyebrow="Miyagi / Plans and results" title="目標と実績を、同じものにしない。">
           <p>
@@ -225,7 +226,8 @@ export default function MiyagiPage() {
           <Link href="/methodology">読み方・評価方法</Link>
         </nav>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

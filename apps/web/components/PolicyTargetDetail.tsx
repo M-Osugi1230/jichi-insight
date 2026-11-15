@@ -18,8 +18,9 @@ export function PolicyTargetDetail({ definition }: { definition: PolicyTargetPag
   const stats = policyTargetStats(catalog);
 
   return (
-    <main>
+    <>
       <SiteHeader />
+      <main>
       <div className="pageShell">
         <PageIntro eyebrow={`Policy initiative ${slug}`} title={title}>
           <p>
@@ -162,7 +163,8 @@ export function PolicyTargetDetail({ definition }: { definition: PolicyTargetPag
           </div>
         </section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

@@ -32,8 +32,9 @@ export default function HokkaidoAnnualActualsPage() {
   );
 
   return (
-    <main id="main-content">
+    <>
       <SiteHeader />
+      <main id="main-content">
       <div className="pageShell">
         <PageIntro
           eyebrow="Phase 10 / Hokkaido annual actuals"
@@ -162,7 +163,8 @@ export default function HokkaidoAnnualActualsPage() {
           </Link>
         </section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

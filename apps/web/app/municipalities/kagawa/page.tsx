@@ -20,8 +20,9 @@ export const metadata: Metadata = {
 
 export default function KagawaPage() {
   return (
-    <main id="main-content">
+    <>
       <SiteHeader />
+      <main id="main-content">
       <div className="pageShell">
         <PageIntro
           eyebrow="Kagawa extended-plan indicators"
@@ -95,7 +96,8 @@ export default function KagawaPage() {
           </a>
         </section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

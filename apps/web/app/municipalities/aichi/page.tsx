@@ -21,8 +21,9 @@ export const metadata: Metadata = {
 
 export default function AichiPage() {
   return (
-    <main id="main-content">
+    <>
       <SiteHeader />
+      <main id="main-content">
       <div className="pageShell">
         <PageIntro eyebrow="Aichi progress indicators" title="愛知県の目標と年次現状値を、定義を変えずに読む。">
           <p>
@@ -132,7 +133,8 @@ export default function AichiPage() {
           </div>
         </section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

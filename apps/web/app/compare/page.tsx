@@ -24,8 +24,9 @@ const stageLabels = {
 
 export default function ComparePage() {
   return (
-    <main>
+    <>
       <SiteHeader />
+      <main>
       <div className="pageShell">
         <section className="pageIntro">
           <p className="eyebrow">Comparable facts only</p>
@@ -142,7 +143,8 @@ export default function ComparePage() {
           <Link href="/data-quality">データ品質を見る</Link>
         </nav>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

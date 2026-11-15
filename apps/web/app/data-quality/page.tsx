@@ -67,8 +67,9 @@ function formatNumber(value: number) {
 
 export default function DataQualityPage() {
   return (
-    <main id="main-content">
+    <>
       <SiteHeader />
+      <main id="main-content">
       <div className="pageShell">
         <PageIntro
           eyebrow="Data quality / current scope"
@@ -235,7 +236,8 @@ export default function DataQualityPage() {
           </Link>
         </section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

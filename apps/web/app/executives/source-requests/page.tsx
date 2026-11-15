@@ -27,8 +27,9 @@ export default function SourceRequestsPage() {
   const answered = sourceRequestRecords.filter((request) => request.response_received_at).length;
 
   return (
-    <main>
+    <>
       <SiteHeader />
+      <main>
       <div className="pageShell">
         <PageIntro eyebrow="Source request drafts" title="照会案を作ったことと、送信したことを分ける。">
           <p>
@@ -121,7 +122,8 @@ export default function SourceRequestsPage() {
           </div>
         </section>
       </div>
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { DetailsNavMenu } from "@/components/DetailsNavMenu";
 import { reviewedCoverageStats } from "@/lib/reviewedCoverage";
 
 const primaryNavigation = [
@@ -50,16 +51,16 @@ export function SiteHeader() {
           {primaryNavigation.map((item) => (
             <Link href={item.href} key={item.href}>{item.label}</Link>
           ))}
-          <details className="navMore">
+          <DetailsNavMenu className="navMore">
             <summary>根拠・運営</summary>
             <div className="navMorePanel">
               {evidenceNavigation.map((item) => (
                 <Link href={item.href} key={item.href}>{item.label}</Link>
               ))}
             </div>
-          </details>
+          </DetailsNavMenu>
         </nav>
-        <details className="mobileNav">
+        <DetailsNavMenu className="mobileNav">
           <summary><span>メニュー</span></summary>
           <nav aria-label="モバイルナビゲーション">
             <p>調べる</p>
@@ -71,7 +72,7 @@ export function SiteHeader() {
               <Link href={item.href} key={item.href}>{item.label}</Link>
             ))}
           </nav>
-        </details>
+        </DetailsNavMenu>
       </header>
       <span id="page-content" className="skipTarget" tabIndex={-1} />
     </>
