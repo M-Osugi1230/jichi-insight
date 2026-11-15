@@ -305,3 +305,188 @@
   .reviewStatusNote { grid-template-columns: 1fr; gap: 20px; }
   .heroTrustNote { font-size: 0.75rem; }
 }
+
+
+/* UI 2.0: task-first, calm civic data design. */
+.hero {
+  align-items: center;
+  gap: clamp(28px, 4vw, 64px);
+  grid-template-columns: minmax(0, 1.15fr) minmax(310px, .85fr);
+  min-height: 0;
+  padding-block: clamp(48px, 6.5vw, 86px) clamp(52px, 7vw, 92px);
+}
+
+.heroCopy { min-width: 0; }
+
+.heroKicker {
+  color: #9c3a27;
+  font-size: .8rem;
+  font-weight: 800;
+  letter-spacing: .035em;
+  margin-bottom: 19px;
+}
+
+.hero h1 {
+  font-size: clamp(2.65rem, 5.4vw, 5.25rem);
+  letter-spacing: -.055em;
+  line-height: 1.19;
+  margin-bottom: 22px;
+}
+
+.hero h1 em { color: #a83a24; }
+
+.heroLead {
+  color: #42505b;
+  font-size: clamp(1rem, 1.45vw, 1.17rem);
+  line-height: 1.85;
+  max-width: 590px;
+}
+
+.heroTrustNote { font-size: .82rem; margin-top: 19px; }
+.heroActions { margin-top: 22px; }
+.heroPrinciples { font-size: .78rem; margin-top: 21px; }
+
+.currentFocus {
+  align-self: stretch;
+  border-radius: 22px;
+  box-shadow: 0 22px 62px rgb(10 34 54 / 13%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(24px, 3vw, 44px);
+}
+.currentFocus::before { left: 34px; right: 34px; }
+.focusArea { margin-top: 42px; }
+.currentFocus h2 { font-size: clamp(2rem, 3vw, 3rem); }
+.focusMetrics { gap: 0; }
+.focusMetrics div { padding-inline: 10px; }
+.focusMetrics dt, .focusMetrics dd small { font-size: .7rem; }
+.focusMetrics dd { font-size: clamp(1.4rem, 2.2vw, 1.8rem); }
+.focusNote { font-size: .8rem; }
+.currentFocus > a { font-size: .9rem; margin-top: 4px; }
+
+.serviceRoutes {
+  margin: 0 auto;
+  max-width: 1240px;
+  padding: 14px 30px 85px;
+}
+.serviceRoutesHeading {
+  align-items: end;
+  display: grid;
+  gap: 22px;
+  grid-template-columns: 1.15fr .85fr;
+  margin-bottom: 28px;
+}
+.serviceRoutesHeading h2 {
+  font-size: clamp(1.7rem, 3vw, 2.9rem);
+  margin-bottom: 0;
+}
+.serviceRoutesHeading > p {
+  color: #42505b;
+  font-size: .9rem;
+  line-height: 1.8;
+  margin: 0;
+}
+.serviceRoutesGrid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.serviceRouteCard {
+  background: #fffefa;
+  border: 1px solid #d7d3c8;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  min-height: 285px;
+  padding: 25px;
+  transition: border-color .18s ease, box-shadow .18s ease, transform .18s ease;
+}
+.serviceRouteCard:hover,
+.serviceRouteCard:focus-within {
+  border-color: #90a79d;
+  box-shadow: 0 12px 30px rgb(16 32 46 / 8%);
+  transform: translateY(-2px);
+}
+.serviceRouteTop {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+}
+.serviceRouteTop span:first-child {
+  align-items: center;
+  background: #e9f0ed;
+  border-radius: 9px;
+  color: #236958;
+  display: inline-flex;
+  font-size: .8rem;
+  font-weight: 850;
+  height: 33px;
+  justify-content: center;
+  width: 42px;
+}
+.serviceRouteTop span:last-child {
+  color: #52616c;
+  font-size: .81rem;
+  font-weight: 800;
+}
+.serviceRouteCard h3 {
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: clamp(1.26rem, 1.75vw, 1.57rem);
+  margin: 27px 0 9px;
+}
+.serviceRouteCard > p {
+  color: #42505b;
+  font-size: .89rem;
+  line-height: 1.78;
+  margin-bottom: 20px;
+}
+.serviceRouteCard > a {
+  align-items: center;
+  border-top: 1px solid #d7d3c8;
+  color: #1d5578;
+  display: flex;
+  font-size: .9rem;
+  font-weight: 800;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 14px;
+  text-decoration: none;
+}
+.serviceRouteCard > a:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+@media (max-width: 1040px) {
+  .hero { grid-template-columns: 1fr; }
+  .currentFocus { max-width: none; }
+  .serviceRoutesGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .serviceRouteCard:last-child { grid-column: 1 / -1; min-height: 220px; }
+}
+@media (max-width: 760px) {
+  .hero { gap: 26px; padding: 48px 20px 55px; }
+  .hero h1 { font-size: clamp(2.65rem, 11.3vw, 4.35rem); }
+  .heroKicker { font-size: .76rem; }
+  .heroLead { font-size: 1rem; }
+  .currentFocus { padding: 28px; }
+  .focusArea { margin-top: 26px; }
+  .serviceRoutes { padding: 18px 20px 68px; }
+  .serviceRoutesHeading, .serviceRoutesGrid { grid-template-columns: 1fr; }
+  .serviceRouteCard, .serviceRouteCard:last-child {
+    grid-column: auto;
+    min-height: 0;
+    padding: 22px;
+  }
+  .serviceRouteCard h3 { margin-top: 19px; }
+  .serviceRoutesHeading { gap: 12px; }
+}
+@media (max-width: 430px) {
+  .hero { padding-top: 32px; }
+  .hero h1 { font-size: clamp(2.4rem, 10vw, 3rem); }
+  .currentFocus { border-radius: 16px; padding: 22px; }
+  .focusMetrics div { padding-inline: 6px; }
+  .focusMetrics dd { font-size: 1.34rem; }
+  .heroPrinciples { display: flex; gap: 9px 15px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .serviceRouteCard { transition: none; }
+  .serviceRouteCard:hover, .serviceRouteCard:focus-within { transform: none; }
+}
