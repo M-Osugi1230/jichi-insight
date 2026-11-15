@@ -53,18 +53,18 @@ REQUIRED_FILES = [
 
 BASE_PAGE_REQUIREMENTS: dict[str, list[str]] = {
     "index.html": [
-        "47都道府県から探す",
+        "自治体を検索",
         "508件の実績推移を公開",
         "資料ではなく、判断の順番でつなぐ。",
         "政策達成評価",
     ],
     "municipalities/index.html": [
-        "47都道府県の目標原文を、Evidenceから探す。",
+        "あなたのまちの情報を探す。",
         "PHASE 9 COMPLETE",
         "目標・指標レコード",
         "Evidence Packet",
         "読みたいデータの深さ",
-        "47都道府県の統合索引。",
+        "都道府県名・地域から探す。",
         "目標",
         "実績",
         "予算",

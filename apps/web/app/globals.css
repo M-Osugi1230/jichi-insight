@@ -257,3 +257,23 @@ h3 { letter-spacing: -0.025em; line-height: 1.45; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
 }
+
+
+/* UI 2.0: cohesive reading scale and accessible navigation. */
+.desktopNav > a, .navMore summary {
+  font-size: .86rem;
+}
+.navMorePanel a { font-size: .88rem; min-height: 40px; }
+.mobileNav > summary { font-size: .87rem; min-height: 44px; }
+.mobileNav nav a { min-height: 44px; }
+.primaryAction, .secondaryAction, .invertedAction {
+  font-size: .91rem;
+  min-height: 48px;
+}
+.pageIntro { padding-top: clamp(58px, 7vw, 94px); }
+.pageIntroText { font-size: clamp(.98rem, 1.45vw, 1.13rem); }
+.statusBadge { font-size: .75rem; }
+@media (max-width: 700px) {
+  .pageIntro { padding-top: 54px; padding-bottom: 60px; }
+  .pageIntro h1 { line-height: 1.22; }
+}

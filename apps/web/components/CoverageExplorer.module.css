@@ -78,3 +78,62 @@
   .prefectureTop { align-items: flex-start; flex-direction: column; }
   .regionHeader { align-items: flex-start; flex-direction: column; gap: 3px; }
 }
+
+
+/* UI 2.0: readable status grid and distinguishable full-card links. */
+.prefectureCard {
+  border-radius: 16px;
+  padding: 23px;
+  transition: border-color .18s ease, box-shadow .18s ease;
+}
+.prefectureCard:hover,
+.prefectureCard:focus-within {
+  border-color: #a2c1b5;
+  box-shadow: 0 11px 28px rgb(16 32 46 / 8%);
+}
+.prefectureTop h4 { font-size: 1.56rem; }
+.code { font-size: .74rem; }
+.profileBadge { font-size: .77rem; line-height: 1.4; padding: 6px 9px; }
+.reviewCounts span { font-size: .78rem; line-height: 1.5; }
+.reviewCounts strong { font-size: 1.4rem; }
+.depthRail {
+  gap: 7px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.depthRail > div {
+  border-radius: 0 8px 8px 0;
+  border-top: 0;
+  border-left: 3px solid currentColor;
+  display: grid;
+  min-height: 48px;
+  padding: 8px 10px;
+}
+.depthRail dt {
+  color: #42505b;
+  font-size: .76rem;
+  overflow: visible;
+  text-overflow: clip;
+  white-space: normal;
+}
+.depthRail dd {
+  font-size: .77rem;
+  line-height: 1.5;
+  white-space: normal;
+}
+.plan > span, .plan small { font-size: .78rem; }
+.plan p { font-size: .86rem; }
+.actions { gap: 11px 20px; }
+.actions a { font-size: .89rem; min-height: 35px; }
+.regionHeader h3 { font-size: 1.94rem; }
+.legend > span { font-size: .75rem; }
+.filterChips button { font-size: .79rem; min-height: 44px; }
+.filterChips button strong { font-size: .74rem; }
+@media (max-width: 720px) {
+  .prefectureCard { padding: 20px; }
+}
+@media (max-width: 380px) {
+  .depthRail { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .prefectureCard { transition: none; }
+}

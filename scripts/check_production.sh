@@ -72,7 +72,7 @@ for attempt in $(seq 1 18); do
   fi
   if [[ "$status" == "200" ]] \
     && grep --quiet --fixed-strings 'Jichi Insight' "$INDEX_FILE" \
-    && grep --quiet --fixed-strings '47都道府県から探す' "$INDEX_FILE" \
+    && grep --quiet --fixed-strings '自治体を検索' "$INDEX_FILE" \
     && grep --quiet --fixed-strings "${REVIEWED_TOTAL}件" "$INDEX_FILE" \
     && grep --quiet --fixed-strings '/jichi-insight/_next/' "$INDEX_FILE"; then
     ready=true
@@ -162,11 +162,11 @@ check_content() {
 }
 
 check_content "/municipalities/" \
-  "47都道府県の目標原文を、Evidenceから探す。" \
+  "あなたのまちの情報を探す。" \
   "PHASE 9 COMPLETE" \
   "${REVIEWED_TOTAL}件" \
   "読みたいデータの深さ" \
-  "47都道府県の統合索引。" \
+  "都道府県名・地域から探す。" \
   "Reviewed" \
   "Evidence Packet" \
   "目標" \

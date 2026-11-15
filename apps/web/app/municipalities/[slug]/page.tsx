@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { PageIntro } from "@/components/PageIntro";
+import { CityOverview } from "@/components/CityOverview";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SourceLocation } from "@/components/SourceLocation";
@@ -38,7 +39,7 @@ export async function generateMetadata({
     return { title: "自治体ページ" };
   }
   const title = `${city.name}｜計画・予算・決算の一次資料レビュー`;
-  const description = `${city.prefecture}${city.name}の現行計画の枠組み、FY2026当初予算（成立）とFY2024決算を、一次資料と照合したReviewedパッケージから公開します。接続できない範囲は判定不能のまま明示します。`;
+  const description = `${city.prefecture}${city.name}の現行計画・予算・決算を一次資料から確認。レビュー済みの情報と未接続の範囲を区別して公開します。`;
   return {
     title,
     description,
@@ -69,7 +70,7 @@ function formatYen(amount: number) {
 
 function fiscalStageLabel(record: Phase15FiscalRecord) {
   if (record.stage === "initial_budget") {
-    return `${record.fiscalYear}年度 当初予算（成立）`;
+    return `${record.fiscalYear}年度 ${record.metricLabel}`;
   }
   if (record.stage === "settlement" && record.metric === "total_revenue") {
     return `${record.fiscalYear}年度 決算（歳入）`;
@@ -237,17 +238,15 @@ export default async function Phase15CityPage({
     <>
       <SiteHeader />
       <main id="main-content">
-      <div className="pageShell">
+      <div className={`pageShell ${styles.cityShell}`}>
         <PageIntro
-          eyebrow={`Phase 15 / ${city.prefecture} / ${city.officialCode}`}
-          title={`${city.name}を、計画とお金から読む。`}
+          eyebrow={`${city.prefecture} / ${city.officialCode} / 公式資料レビュー`}
+          title={`${city.name}の政策・予算・決算`}
         >
           <p>
             {city.prefecture}
-            {city.name}の現行計画の枠組み、FY2026当初予算（成立）とFY2024決算トップラインを、
-            一次資料と照合したReviewedパッケージから公開します。
-            このページは、宣言したv1レビューの範囲だけを表示します。
-            レビューの主張範囲（完了境界）はページ末尾に全文を掲載しています。
+            {city.name}の政策計画と一般会計の予算・決算を、公式資料に基づいて整理しています。
+            確認できた内容と、実績・事業との接続がまだできない内容を区別して掲載します。
           </p>
           <div className={styles.introMeta}>
             <StatusBadge label="一次資料レビュー完了" tone="verified" />
@@ -277,6 +276,16 @@ export default async function Phase15CityPage({
             </a>
           </div>
         </PageIntro>
+
+        <nav className={styles.cityJumpNav} aria-label="この自治体ページの目次">
+          <a href="#city-summary-title">概要</a>
+          <a href="#promise-title">政策計画</a>
+          <a href="#money-title">予算・決算</a>
+          <a href="#linkage-title">実績との接続</a>
+          <a href="#sources-title">公式資料</a>
+          <a href="#boundary-title">確認の範囲</a>
+        </nav>
+        <CityOverview city={city} />
 
         <section className="contentSection" aria-labelledby="promise-title">
           <div className={styles.sectionHeading}>
@@ -314,9 +323,8 @@ export default async function Phase15CityPage({
               <h2 id="money-title">予算と決算</h2>
             </div>
             <p>
-              金額は出典の値をそのまま円表示しています。精度（千円単位で公表されている等）は
-              各レコードの注記に書かれているため、金額と注記を必ず併せて確認してください。
-              億円換算などの加工値は掲載していません。
+              この一覧は原資料の数値を円換算で表示します。資料の公表単位や端数処理は各注記を確認してください。
+              概要に表示した億円単位の値は読みやすさのための概数で、正式な金額は各レコードで確認できます。
             </p>
           </div>
           <div className={styles.recordList}>

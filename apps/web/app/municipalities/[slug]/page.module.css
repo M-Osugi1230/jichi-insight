@@ -60,3 +60,119 @@
   .boundary { padding: 32px 20px; }
   .recordCard { padding: 18px; }
 }
+
+
+/* UI 2.0: approachable profile with an auditable evidence layer. */
+.cityShell :global(.pageIntro) {
+  padding: 54px 0 61px;
+}
+.cityShell :global(.pageIntro h1) {
+  font-size: clamp(2.45rem, 5vw, 4.65rem);
+  line-height: 1.24;
+  margin-bottom: 19px;
+}
+.cityShell :global(.contentSection) {
+  padding: clamp(57px, 6vw, 82px) 0;
+}
+.cityShell [id="promise-title"],
+.cityShell [id="money-title"],
+.cityShell [id="linkage-title"],
+.cityShell [id="sources-title"],
+.cityShell [id="boundary-title"],
+.cityShell [id="city-summary-title"] {
+  scroll-margin-top: 150px;
+}
+
+.introMeta { gap: 16px 24px; margin-top: 21px; }
+.introMeta dl { gap: 15px 24px; }
+.introMeta dt { font-size: .8rem; }
+.introMeta dd { font-size: .88rem; }
+.introLinks a { font-size: .85rem; }
+.sectionHeading { gap: clamp(20px, 4vw, 55px); }
+.sectionHeading h2 { font-size: clamp(1.8rem, 3.4vw, 3rem); }
+.sectionHeading > p { font-size: .92rem; line-height: 1.85; }
+
+.recordList { gap: 14px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.recordCard {
+  border: 1px solid #d7d3c8;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: clamp(21px, 2.4vw, 29px);
+}
+.recordCard h3 { font-size: clamp(1.06rem, 1.4vw, 1.23rem); margin: 16px 0 11px; }
+.recordHead > span:first-child { font-size: .79rem; }
+.statement { font-size: .88rem; line-height: 1.84; }
+.recordValue { font-size: 1.19rem; }
+.amount { font-size: clamp(1.55rem, 2.6vw, 2.1rem); overflow-wrap: anywhere; }
+.amountUnavailable { border-radius: 0 9px 9px 0; font-size: .84rem; }
+.recordFacts { margin-top: auto; padding-top: 13px; }
+.recordFacts dt { font-size: .77rem; }
+.recordFacts dd { font-size: .83rem; font-weight: 650; }
+.note { border-radius: 10px; font-size: .82rem; }
+.detailBox { margin-top: 21px; }
+.detailBox summary { font-size: .86rem; padding-block: 8px; }
+.detailBox p { font-size: .83rem; }
+.openQuestions { border-radius: 0 9px 9px 0; }
+.openQuestions strong, .openQuestions ul { font-size: .82rem; }
+.notice { border-radius: 0 12px 12px 0; font-size: .88rem; }
+.subHeading { font-size: 1.15rem; }
+.deferredList li, .sourceCatalog li { border-radius: 12px; padding: 19px 21px; }
+.deferredList strong { font-size: .82rem; }
+.deferredList p, .sourceCatalog p { font-size: .84rem; }
+.sourceCatalog strong a { font-size: .9rem; }
+.sourceCatalog span { font-size: .77rem; }
+.boundary { border-radius: 18px; margin-bottom: 78px; padding: clamp(24px, 4vw, 50px); }
+.boundary h3 { font-size: .98rem; }
+.boundary p { font-size: .85rem; line-height: 1.9; }
+@media (max-width: 900px) {
+  .recordList { grid-template-columns: 1fr; }
+}
+@media (max-width: 720px) {
+  .cityShell :global(.pageIntro) { padding: 38px 0 44px; }
+  .cityShell :global(.contentSection) { padding: 56px 0; }
+  .cityShell :global(.pageIntro h1) { font-size: clamp(2.3rem, 10.7vw, 3.3rem); }
+  .recordCard { padding: 20px; }
+  .introMeta dl { gap: 13px; }
+  .cityShell [id="promise-title"],
+  .cityShell [id="money-title"],
+  .cityShell [id="linkage-title"],
+  .cityShell [id="sources-title"],
+  .cityShell [id="boundary-title"],
+  .cityShell [id="city-summary-title"] { scroll-margin-top: 125px; }
+}
+
+/* Full-page sticky, horizontally scrollable section navigation. */
+.cityJumpNav {
+  align-items: center;
+  background: rgb(245 243 237 / 97%);
+  border: 1px solid #d7d3c8;
+  border-radius: 13px;
+  display: flex;
+  gap: 7px;
+  overflow-x: auto;
+  padding: 10px;
+  position: sticky;
+  scrollbar-width: thin;
+  top: 76px;
+  white-space: nowrap;
+  z-index: 12;
+}
+.cityJumpNav a {
+  border-radius: 8px;
+  color: #274356;
+  flex: 0 0 auto;
+  font-size: .85rem;
+  font-weight: 790;
+  padding: 10px 14px;
+  text-decoration: none;
+}
+.cityJumpNav a:hover, .cityJumpNav a:focus-visible {
+  background: #dfeae4;
+  color: #145745;
+}
+@media (max-width: 650px) {
+  .cityJumpNav { border-radius: 8px; top: 64px; }
+  .cityJumpNav a { font-size: .82rem; padding: 9px 11px; }
+}

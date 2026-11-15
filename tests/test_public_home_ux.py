@@ -27,12 +27,12 @@ def test_public_home_cites_the_canonical_phase15_progress():
 
 def test_public_home_keeps_the_critical_journey_and_smoke_copy():
     homepage = (WEB / "app/page.tsx").read_text(encoding="utf-8")
-    assert "47都道府県から探す" in homepage
-    assert 'href="/municipalities"' in homepage
+    assert "MunicipalityQuickSearch entries={searchEntries}" in homepage
+    assert 'href="/municipalities#prefectures"' in homepage
     assert 'href="/review-progress"' in homepage
     assert 'href="/data-quality"' in homepage
     assert 'href="/methodology"' in homepage
-    assert "自治体を、" in homepage
+    assert "あなたのまちを、" in homepage
     assert "政策達成評価" in homepage
     assert 'aria-label="Phase 15 詳細レビューの完了状況"' in homepage
 
