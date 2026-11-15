@@ -99,7 +99,15 @@ def test_prepared_yamagata_candidate_retains_human_boundary_and_evidence_shape()
         source["official_url"].startswith("https://www.city.yamagata-yamagata.lg.jp/")
         for source in source_catalog["sources"]
     )
-    assert all(source["format"] == "html" for source in source_catalog["sources"])
+    assert {
+        source["id"]: source["format"] for source in source_catalog["sources"]
+    } == {
+        "yamagata-development-plan-2030": "html",
+        "yamagata-progress-indicators": "html",
+        "yamagata-budget-2026": "pdf",
+        "yamagata-budget-book-2026": "html",
+        "yamagata-settlement-2024": "pdf",
+    }
     assert all(bool(source["evidence_location"]) for source in source_catalog["sources"])
     assert all(bool(source["use_boundary"]) for source in source_catalog["sources"])
 
