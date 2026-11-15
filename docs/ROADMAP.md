@@ -903,9 +903,9 @@ Phase 14で`source_inventory_complete`となった67自治体を、record-level 
 
 Canonical status:
 
-- Reviewed complete: 9 / 67（函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市）
+- Reviewed complete: 10 / 67（函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、宇都宮市）
 - Review in progress: 0
-- Pending record review: 58
+- Pending record review: 57
 - Blocked source inventory: 0
 - Next official code: 072044
 
@@ -1086,6 +1086,23 @@ v1 declared package:
 - FY2024一般会計歳出 154,354,939,781円
 
 基本目標・政策パッケージ・個別施策の個別名称の全件列挙とKPI、公共計画本編PDFの全文確認、新旧計画の施策・KPI対応、現行計画の年次評価証拠、議案第39号の議員別賛否、成立後の当初予算書本体との最終数値突合、補正予算を含む予算現額、FY2024決算と個別事業の接続（not_assessableとして保持）、決算の施策別内訳、補正・執行・契約・補助金はdeferred depthです。
+
+### Milestone P15-M10 — Utsunomiya reviewed package
+
+Status: `complete`（2026-11-15）
+
+宇都宮市をPhase 15の10市目の`reviewed_complete`自治体として確定しました（公開責任者・大杉邑大のレビュー承認に基づく）。
+
+v1 declared package:
+
+- 第6次宇都宮市総合計画（基本構想は目標年次2050年、基本計画2018年度～2027年度の前期・後期各5年、実施計画は3年間程度・毎年改定）
+- 後期基本計画の政策の柱は6つの未来都市（子育て・教育、健康・福祉、安全・安心、魅力創造・交流、産業・環境、交通）と行政経営基盤
+- FY2026一般会計当初予算 246,550,000,000円（議案第18号 原案可決・成立予算、議決は市議会公式の会議結果ページで直接確認）
+- FY2024一般会計歳入 242,716,210千円
+- FY2024一般会計歳出 236,437,643千円
+- FY2024決算の認定は議案第102号（2025年9月30日・原案認定）
+
+後期基本計画の戦略事業・施策・KPIの全件列挙、計画書本編の全文確認、FY2024決算の円単位総額、行政評価の個別結果、FY2024決算と個別事業の接続（not_assessableとして保持）、補正・執行・契約・補助金はdeferred depthです。
 
 ## After Phase 15
 
