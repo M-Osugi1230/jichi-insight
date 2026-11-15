@@ -1,0 +1,55 @@
+{
+  "id": "akita-current-policy-structure",
+  "phase": 15,
+  "official_code": "052019",
+  "name_ja": "秋田市",
+  "current_plan": {
+    "title": "第15次秋田市総合計画（秋田市『プラスの循環』プラン）",
+    "brand_name": "秋田市『プラスの循環』プラン",
+    "theme": "共感と共創によるまちづくり",
+    "start_fiscal_year": 2026,
+    "end_fiscal_year": 2030,
+    "period_label": "令和8年度～令和12年度",
+    "structure": "基本構想＋推進計画の2部構成。推進計画は第3期秋田市まち・ひと・しごと創生総合戦略と統合し一体的に策定されている。",
+    "components": [
+      {
+        "id": "basic-concept",
+        "name_ja": "基本構想",
+        "role": "将来都市像やプラスの循環戦略などの詳細を定める。基本理念、将来都市像、総合計画推進のために、プラスの循環戦略を含む。"
+      },
+      {
+        "id": "promotion-plan",
+        "name_ja": "推進計画（第3期秋田市まち・ひと・しごと創生総合戦略）",
+        "role": "基本構想を踏まえ、計画期間を通した政策ごとの基本方針と、その実現に向けた主な取組・事業を示す。"
+      }
+    ],
+    "future_city_images": {
+      "count": 5,
+      "names_enumerated_in_v1": false
+    },
+    "policy_headings": {
+      "count": 12,
+      "names_enumerated_in_v1": false
+    },
+    "plus_cycle_strategies": {
+      "count": 5,
+      "names_enumerated_in_v1": false
+    },
+    "enumeration_boundary": "将来都市像5・政策見出し12・プラスの循環戦略5の件数と枠組みは公式計画ページおよび計画資料で確認済みだが、個別名称の全件列挙はv1では行わない（deferred depth）。候補ステージングにあった基本目標等の名称は一次資料で裏付けられていないため正本化しない。"
+  },
+  "previous_plan": {
+    "title": "第14次秋田市総合計画（県都『あきた』創生プラン）",
+    "brand_name": "県都『あきた』創生プラン",
+    "start_fiscal_year": 2021,
+    "end_fiscal_year": 2025,
+    "structure": "基本構想＋推進計画",
+    "comparability_boundary": "第14次計画と第15次計画は別の計画であり、施策・KPIの新旧対応は未確認である。名称の類似だけで同一項目として結合せず、FY2024決算（第14次計画期間）とFY2026予算（第15次計画期間）を直接比較しない。"
+  },
+  "counts": {
+    "future_city_images": 5,
+    "policy_headings": 12,
+    "plus_cycle_strategies": 5
+  },
+  "source_id": "akita-fifteenth-plan",
+  "review_status": "reviewed"
+}

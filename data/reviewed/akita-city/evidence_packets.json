@@ -1,0 +1,60 @@
+[
+  {
+    "id": "evidence-akita-city-2026-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-052019-fiscal-2026-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算144,180,000千円（144,180,000,000円）を公式概要で保持する。",
+        "source_ids": [
+          "akita-budget-2026",
+          "akita-budget-2026-enactment"
+        ],
+        "location_note": "秋田市公式『令和8年度当初予算案の概要』『令和8年度当初予算案の要点』『1 予算規模』一般会計。令和8年度秋田市一般会計予算書（議案第2号）第1条の歳入歳出総額とも一致。秋田市議会公式『提出議案・議決結果』議案第2号 可決（賛成多数）。",
+        "decision": "accepted",
+        "review_note": "候補の概数150,000,000,000円は一次資料と一致せず、公式概要および成立予算書で確認した144,180,000千円に修正済み（PR #475）。議案第2号の可決（賛成多数）は秋田市議会公式の議決結果ページで直接確認した。本レビューは公開責任者（大杉邑大）が2026-11-15に承認した。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-akita-city-2024-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-052019-fiscal-2024-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計決算歳入（収入済額）154,582,839千円（154,582,839,000円）を会計別決算状況の千円単位source値で保持する。",
+        "source_ids": [
+          "akita-settlement-2024"
+        ],
+        "location_note": "秋田市公式『令和6年度会計別決算状況』一般会計 歳入総額（単位：千円）",
+        "decision": "accepted",
+        "review_note": "候補の概数160,000,000,000円は一次資料と一致せず、会計別決算状況で確認した154,582,839千円に修正済み（PR #475）。公式資料は千円単位のため、円換算後も1,000円未満のprecisionを主張しない。本レビューは公開責任者（大杉邑大）が2026-11-15に承認した。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-akita-city-2024-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-052019-fiscal-2024-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計決算歳出（支出済額）152,675,103千円（152,675,103,000円）を会計別決算状況の千円単位source値で保持する。",
+        "source_ids": [
+          "akita-settlement-2024"
+        ],
+        "location_note": "秋田市公式『令和6年度会計別決算状況』一般会計 歳出総額（単位：千円）",
+        "decision": "accepted",
+        "review_note": "候補の概数155,000,000,000円は一次資料と一致せず、会計別決算状況で確認した152,675,103千円に修正済み（PR #475）。公式資料は千円単位のため、円換算後も1,000円未満のprecisionを主張しない。本レビューは公開責任者（大杉邑大）が2026-11-15に承認した。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]

@@ -150,13 +150,30 @@ Declared v1 package:
 
 Deferred depth includes all implementation-plan item/KPI identities and actuals, current-plan annual evaluation evidence, the FY2024 settlement-to-item linkage (kept not_assessable), direct confirmation of bill No. 3 on the official council vote-result page (provisional locator: council newsletter results table, corroborated by the bill text and press reporting), fiscal project detail, causality and cross-city comparability.
 
+## Sixth completion — Akita
+
+秋田市を6市目の`reviewed_complete`へ昇格しました（2026-11-15、公開責任者・大杉邑大のレビュー承認に基づく）。
+
+Declared v1 package:
+
+- current comprehensive plan: 第15次秋田市総合計画（秋田市『プラスの循環』プラン） 2026–2030
+- structure: 基本構想＋推進計画（第3期秋田市まち・ひと・しごと創生総合戦略と統合）
+- future city images: 5
+- policy headings: 12
+- plus-cycle strategies: 5
+- previous plan: 第14次秋田市総合計画（県都『あきた』創生プラン） 2021–2025 — a separate plan, not directly comparable
+- FY2026 general-account initial budget: 144,180,000,000 yen (enacted; 議案第2号 可決（賛成多数）, confirmed directly on the official council vote-result page)
+- FY2024 general-account settlement: revenue (154,582,839 thousand yen) and expenditure (152,675,103 thousand yen) values at thousand-yen source precision
+
+Deferred depth includes the exhaustive enumeration of all measures and KPIs, full-text confirmation of the basic-concept complete edition PDF, the old/new plan measure and KPI mapping, current-plan annual evaluation evidence, the FY2024 settlement-to-item linkage (kept not_assessable), fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 5 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市
+- Reviewed complete: 6 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市
 - Review in progress: 0
-- Pending record review: 62
+- Pending record review: 61
 - Blocked source inventory: 0
-- Next official code: 052019
+- Next official code: 062014
 
 ## Definition of Phase 15 completion
 

@@ -1,0 +1,64 @@
+{
+  "id": "akita-phase15-sources",
+  "phase": 15,
+  "official_code": "052019",
+  "name_ja": "秋田市",
+  "reviewed_at": "2026-11-15",
+  "sources": [
+    {
+      "id": "akita-fifteenth-plan",
+      "evidence_role": "current_plan_identity",
+      "title": "第15次秋田市総合計画",
+      "official_url": "https://www.city.akita.lg.jp/shisei/hoshin-keikaku/1010701/1047065.html",
+      "format": "html",
+      "evidence_location": "本文『第15次秋田市総合計画（秋田市『プラスの循環』プラン）』『計画期間』『基本構想』",
+      "use_boundary": "2026年度～2030年度の5年計画である第15次秋田市総合計画のidentity、目指す都市像、基本目標および施策体系を確認する。"
+    },
+    {
+      "id": "akita-plan-implementation-boundary",
+      "evidence_role": "implementation_plan_and_rolling_structure",
+      "title": "秋田市『プラスの循環』プラン",
+      "official_url": "https://www.city.akita.lg.jp/shisei/hoshin-keikaku/1010701/1047065.html",
+      "format": "html",
+      "evidence_location": "本文『進行管理と評価』",
+      "use_boundary": "第15次総合計画の進行管理および成果指標評価構造を確認する。年度ごとの評価資料は別versionとして保持する。"
+    },
+    {
+      "id": "akita-budget-2026",
+      "evidence_role": "initial_budget",
+      "title": "令和8年度当初予算案の概要",
+      "official_url": "https://www.city.akita.lg.jp/_res/projects/default_project/_page_/001/009/191/toushoyosannann08.pdf",
+      "format": "pdf",
+      "evidence_location": "『令和8年度当初予算案の要点』『1 予算規模』一般会計 144,180,000千円",
+      "use_boundary": "FY2026一般会計当初予算144,180,000千円を千円単位のsource precisionで保持する。ランディングページ（当初予算案の概要）からリンクされる公式PDFを一次資料とする。補正予算や決算とは別stateで扱う。"
+    },
+    {
+      "id": "akita-budget-book-2026",
+      "evidence_role": "budget_document",
+      "title": "令和8年度当初予算書・事項別明細書",
+      "official_url": "https://www.city.akita.lg.jp/_res/projects/default_project/_page_/001/019/558/8tousyoyosansyo.pdf",
+      "format": "pdf",
+      "evidence_location": "議案第2号『令和8年度 秋田市一般会計予算』第1条 歳入歳出それぞれ144,180,000千円",
+      "use_boundary": "FY2026成立予算書本体を確認する。提案概要（当初予算案の概要）と予算書本体のEvidence roleを分離する。ランディングページ（予算書・事項別明細書）からリンクされる公式PDFを一次資料とする。"
+    },
+    {
+      "id": "akita-budget-2026-enactment",
+      "evidence_role": "budget_enactment",
+      "title": "令和8年2月秋田市議会定例会 提出議案・議決結果",
+      "official_url": "https://www.city.akita.lg.jp/shigikai/nittei/1049305/1049801/1049804.html",
+      "format": "html",
+      "evidence_location": "議案第2号『令和8年度秋田市一般会計予算の件』可決（賛成多数）、議案第1号『秋田市行政の基本構想を策定する件』可決（賛成多数）",
+      "use_boundary": "FY2026一般会計当初予算（議案第2号）の可決を秋田市議会公式ページで直接確認する。第15次総合計画の基本構想（議案第1号）の可決も同ページで確認する。後続の補正予算は当初予算を上書きせず別stateとする。"
+    },
+    {
+      "id": "akita-settlement-2024",
+      "evidence_role": "settlement_and_audit",
+      "title": "令和6年度会計別決算状況",
+      "official_url": "https://www.city.akita.lg.jp/_res/projects/default_project/_page_/001/009/200/fy06settlement.pdf",
+      "format": "pdf",
+      "evidence_location": "一般会計 歳入総額154,582,839千円／歳出総額152,675,103千円（単位：千円）",
+      "use_boundary": "FY2024一般会計決算歳入・歳出を千円単位のsource precisionで保持する。ランディングページ（会計別決算状況）からリンクされる公式PDFを一次資料とする。"
+    }
+  ],
+  "quality_boundary": "Current comprehensive plan (2026-2030, basic concept plus promotion plan integrated with the third comprehensive strategy), previous plan (2021-2025), initial budget enactment confirmed on the official council vote-result page, and settlement entry points remain separate evidence roles. Fiscal values retain source precision (thousand yen) without collapsing proposed, enacted, supplementary, or settlement states."
+}

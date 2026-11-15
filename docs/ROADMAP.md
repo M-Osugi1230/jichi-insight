@@ -903,11 +903,11 @@ Phase 14で`source_inventory_complete`となった67自治体を、record-level 
 
 Canonical status:
 
-- Reviewed complete: 5 / 67（函館市、旭川市、青森市、八戸市、盛岡市）
+- Reviewed complete: 6 / 67（函館市、旭川市、青森市、八戸市、盛岡市、秋田市）
 - Review in progress: 0
-- Pending record review: 62
+- Pending record review: 61
 - Blocked source inventory: 0
-- Next official code: 052019
+- Next official code: 062014
 
 ### Milestone P15-M1 — First reviewed-complete core city
 
@@ -1013,6 +1013,26 @@ v1 declared package:
 - FY2024一般会計支出済額 132,975,741,966円
 
 実施計画の個別事業・指標の全件identityと実績、現行計画の年次評価証拠、FY2024決算と個別事業の接続（not_assessableとして保持）、補正・執行・契約・補助金はdeferred depthです。議案第3号の議決確認は市議会だよりの議決結果表を暫定locatorとし、公式議決結果ページでの直接確認は未達のまま残存事項として明記します。
+
+### Milestone P15-M6 — Akita reviewed package
+
+Status: `complete`（2026-11-15）
+
+秋田市をPhase 15の6市目の`reviewed_complete`自治体として確定しました（公開責任者・大杉邑大のレビュー承認に基づく）。
+
+v1 declared package:
+
+- 第15次秋田市総合計画（秋田市『プラスの循環』プラン） 2026～2030
+- 基本構想＋推進計画（第3期秋田市まち・ひと・しごと創生総合戦略と統合）の2部構成
+- 将来都市像 5
+- 政策見出し 12
+- プラスの循環戦略 5
+- 前計画：第14次秋田市総合計画（県都『あきた』創生プラン） 2021～2025（別計画であり直接比較しない）
+- FY2026一般会計当初予算 144,180,000,000円（議案第2号 可決（賛成多数）・成立予算、議決は市議会公式の議決結果ページで直接確認）
+- FY2024一般会計歳入 154,582,839千円
+- FY2024一般会計歳出 152,675,103千円
+
+第15次計画の全施策・全KPIの網羅的集計、基本構想全体版PDFの全文確認、第14次・第15次計画の施策新旧対応、現行計画の年次評価証拠、FY2024決算と個別事業の接続（not_assessableとして保持）、補正・執行・契約・補助金はdeferred depthです。
 
 ## After Phase 15
 

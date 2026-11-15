@@ -329,10 +329,10 @@
   ],
   "human_review": {
     "required": true,
-    "status": "pending",
+    "status": "approved",
     "boundary": "A person must check the candidate against the cited primary sources before any promotion to reviewed_complete.",
-    "reviewed_at": null,
-    "reviewer_note": null
+    "reviewed_at": "2026-11-15",
+    "reviewer_note": "公開責任者（大杉邑大、単独運用体制）が2026-11-15にレビューを承認し、reviewed_completeへの昇格を決定した。財政数値は一次資料で検証済み（候補修正 PR #475）。議案第2号（令和8年度一般会計予算）および議案第1号（基本構想）の可決（賛成多数）は秋田市議会公式の議決結果ページで直接確認済み。第15次計画の全施策・全KPIの網羅的集計、基本構想全体版PDFの全文確認、第14次・第15次計画の施策新旧対応は未確認であり、reviewed パッケージの completion の deferred_depth と completion_boundary に残存事項として明記した。"
   },
   "publication": {
     "eligible": false,
