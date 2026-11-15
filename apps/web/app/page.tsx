@@ -329,6 +329,9 @@ export default function Home() {
               未確認候補は審査済みデータとして表示しません。次のレビュー対象：
               {phase15Progress.nextMunicipality ?? "確定待ち"}
             </p>
+            <Link className={styles.reviewStatusLink} href="/municipalities#reviewed-cities">
+              レビュー済みの市のページを読む <span aria-hidden="true">→</span>
+            </Link>
           </div>
           <div className={styles.reviewProgressValue}>
             <span>{phase15Progress.reviewed} / {phase15Progress.total} 完了</span>

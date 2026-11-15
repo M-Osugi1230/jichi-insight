@@ -1,6 +1,7 @@
 """Regression checks for honest public release metadata and daily monitoring."""
 
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -29,12 +30,17 @@ def test_release_checklist_reflects_completed_record_and_inventory_phases():
     assert "issues/12" in checklist
 
 
-def test_sitemap_avoids_unverified_unchanging_last_modified_dates():
+def test_sitemap_last_modified_dates_come_from_canonical_records():
     sitemap = (ROOT / "apps/web/app/sitemap.ts").read_text(encoding="utf-8")
 
     assert '"/review-progress"' in sitemap
-    assert "lastModified:" not in sitemap
-    assert 'new Date("2026-08-01")' not in sitemap
+    # lastModified may only be derived from verifiable repository data:
+    # Phase 15 completion dates and the canonical queue's updated_at stamp.
+    # Hardcoded or unchanging date literals remain forbidden.
+    assert "completedAt" in sitemap
+    assert "phase15Progress.updatedAt" in sitemap
+    assert 'new Date("' not in sitemap
+    assert not re.search(r"\d{4}-\d{2}-\d{2}", sitemap)
 
 
 def test_existing_production_smoke_is_scheduled_daily():

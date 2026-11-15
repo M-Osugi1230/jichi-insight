@@ -168,7 +168,7 @@ export default function MunicipalitiesPage() {
           </div>
         </section>
 
-        <section className="contentSection">
+        <section className="contentSection" id="reviewed-cities">
           <div className={styles.sectionHeading}>
             <div>
               <p className="eyebrow">Phase 15 / core cities &amp; capitals</p>

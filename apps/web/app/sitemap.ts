@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 
 import { loadPhase15CitySummaries } from "@/lib/phase15Cities";
+import { phase15Progress } from "@/lib/phase15Progress";
 import { loadPhase9Summary } from "@/lib/phase9Targets";
 import { policyTargetPages } from "@/lib/policyTargets";
 
@@ -52,17 +53,30 @@ const policyTargetRoutes = policyTargetPages.map(
   (page) => `/policies/fukuoka-prefecture/initiatives/${page.slug}`,
 );
 const phase9Routes = loadPhase9Summary().records.map((record) => record.route);
-const phase15CityRoutes = loadPhase15CitySummaries().map(
-  (city) => `/municipalities/${city.slug}`,
-);
+const phase15Cities = loadPhase15CitySummaries();
+const phase15CityRoutes = phase15Cities.map((city) => `/municipalities/${city.slug}`);
 const routes = [...staticRoutes, ...policyTargetRoutes, ...phase9Routes, ...phase15CityRoutes];
+
+// lastModified is emitted only where a canonical, verifiable content date
+// exists in the repository data: each Phase 15 city page carries its review
+// completion date (completed_at in its completion record), and the two pages
+// whose content is driven by the Phase 15 queue carry the queue's own
+// updated_at stamp. Routes without such a date omit lastModified rather
+// than displaying an unverified or unchanging date.
+const lastModifiedByRoute = new Map<string, string>(
+  phase15Cities.map((city) => [`/municipalities/${city.slug}`, city.completedAt]),
+);
+lastModifiedByRoute.set("/municipalities", phase15Progress.updatedAt);
+lastModifiedByRoute.set("/review-progress", phase15Progress.updatedAt);
 
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return routes.map((route) => ({
     url: `${siteUrl}${route}`,
-    // Omit lastModified until a verifiable per-route content update date is available.
+    ...(lastModifiedByRoute.has(route)
+      ? { lastModified: lastModifiedByRoute.get(route) }
+      : {}),
     changeFrequency: route === "" ? "weekly" : "monthly",
     priority:
       route === ""
