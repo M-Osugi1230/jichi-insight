@@ -104,6 +104,7 @@ export default function ReviewProgressPage() {
               <h2 id="review-directory-title">自治体別のレビュー状況</h2>
             </div>
             <p>
+              レビュー完了の自治体には、Reviewedパッケージから生成した市のページへのリンクがあります。
               資料索引と完了記録はGitHub上の公開原本です。
               審査中・未着手の行には「完了記録」を表示しません。
             </p>
@@ -132,6 +133,9 @@ export default function ReviewProgressPage() {
                     {phase15StatusLabels[record.status]}
                   </span>
                   <div className={styles.evidenceLinks}>
+                    {record.status === "reviewed_complete" && record.slug && (
+                      <Link href={`/municipalities/${record.slug}`}>市のページを見る</Link>
+                    )}
                     <a
                       href={sourcePrefix + record.sourceInventoryPath}
                       target="_blank"

@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 
+import { loadPhase15CitySummaries } from "@/lib/phase15Cities";
 import { loadPhase9Summary } from "@/lib/phase9Targets";
 import { policyTargetPages } from "@/lib/policyTargets";
 
@@ -51,7 +52,10 @@ const policyTargetRoutes = policyTargetPages.map(
   (page) => `/policies/fukuoka-prefecture/initiatives/${page.slug}`,
 );
 const phase9Routes = loadPhase9Summary().records.map((record) => record.route);
-const routes = [...staticRoutes, ...policyTargetRoutes, ...phase9Routes];
+const phase15CityRoutes = loadPhase15CitySummaries().map(
+  (city) => `/municipalities/${city.slug}`,
+);
+const routes = [...staticRoutes, ...policyTargetRoutes, ...phase9Routes, ...phase15CityRoutes];
 
 export const dynamic = "force-static";
 

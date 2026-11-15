@@ -6,6 +6,7 @@ import { PageIntro } from "@/components/PageIntro";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { StatusBadge } from "@/components/StatusBadge";
+import { loadPhase15CitySummaries } from "@/lib/phase15Cities";
 import {
   phase10StageSummary,
   reviewedCoverageStats,
@@ -89,6 +90,8 @@ function formatNumber(value: number) {
   return new Intl.NumberFormat("ja-JP").format(value);
 }
 
+const phase15Cities = loadPhase15CitySummaries();
+
 export default function MunicipalitiesPage() {
   return (
     <main id="main-content">
@@ -163,6 +166,33 @@ export default function MunicipalitiesPage() {
               </article>
             ))}
           </div>
+        </section>
+
+        <section className="contentSection">
+          <div className={styles.sectionHeading}>
+            <div>
+              <p className="eyebrow">Phase 15 / core cities &amp; capitals</p>
+              <h2>詳細レビュー済みの市を読む。</h2>
+            </div>
+            <p>
+              中核市・県庁所在地のうち、一次資料レビューが完了した{phase15Cities.length}市について、
+              計画の枠組みと予算・決算を市ページで公開しています。接続できない範囲は判定不能のまま明示します。
+            </p>
+          </div>
+          <ul className={styles.cityGrid}>
+            {phase15Cities.map((city) => (
+              <li key={city.slug} className={styles.cityCard}>
+                <small>{city.prefecture} / {city.officialCode}</small>
+                <strong>{city.name}</strong>
+                <span>レビュー完了日 {city.completedAt}</span>
+                <Link href={`/municipalities/${city.slug}`}>{city.name}のページを見る →</Link>
+              </li>
+            ))}
+          </ul>
+          <p className={styles.countNote}>
+            ※ 市の一覧はレビューの進捗を示すもので、自治体の政策成果や優劣のランキングではありません。
+            残りの自治体の状況は<Link href="/review-progress">レビュー進捗</Link>で公開しています。
+          </p>
         </section>
 
         <section className={styles.levelSection}>
