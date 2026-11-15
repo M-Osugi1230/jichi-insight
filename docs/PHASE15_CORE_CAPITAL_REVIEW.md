@@ -211,11 +211,23 @@ Declared v1 package:
 
 Deferred depth includes the exhaustive enumeration of all basic goals, policy packages, individual measures and KPIs, full-text confirmation of the main-volume (public plan) PDF, the old/new framework policy and indicator mapping, current-plan annual evaluation evidence, the per-member vote breakdown for bill No. 39, the final cross-check against the enacted budget book, the current budget amount including supplementary budgets, the FY2024 settlement-to-item linkage (kept not_assessable), settlement breakdown by policy, fiscal project detail, causality and cross-city comparability.
 
+## Tenth completion — Takasaki
+
+高崎市を10市目の`reviewed_complete`へ昇格するPRを準備しました（2026-11-15。公開責任者のレビュー承認は本PRのマージ時に候補のhuman_reviewへ記録する）。
+
+Declared v1 package:
+
+- current comprehensive plan: 高崎市第6次総合計画， period 2018–2027, organised in three sections — 第1節 都市づくりの基本戦略 (14 strategies), 第2節 地域の特性を生かした振興策による都市づくり (7 regions), 第3節 主要施策 (4 fields: 総務教育・保健福祉・市民経済・建設水道） — and deliberately not mapped onto a generic three-layer model
+- FY2026 general-account initial budget: 175,220,000,000 yen (enacted; 議案第28号 原案可決（賛成多数） in the 令和8年第2回定例会 vote-result PDF; the PDF does not print individual vote dates, so no vote date is recorded)
+- FY2024 general-account settlement at published thousand-yen precision from the comprehensive audit report: revenue 183,362,219 thousand yen / expenditure 177,037,888 thousand yen (sub-thousand rounded; yen-precision totals are not published online — the settlement book is inspection-only). The candidate's man-yen-rounded values (183,362,220,000 / 177,037,890,000 yen) differ and are not used; the candidate itself is not edited in this branch. Certification 議案第78号・認定 in the 令和7年第4回定例会 vote-result PDF (again no individual vote date printed)
+
+Deferred depth includes the names of the 14 strategies and the measures under each field, full-text confirmation of the plan book, the yen-precision settlement totals, designated-project progress-management results, the FY2024 settlement-to-item linkage (kept not_assessable), fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 9 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市
+- Reviewed complete: 10 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、高崎市
 - Review in progress: 0
-- Pending record review: 58
+- Pending record review: 57
 - Blocked source inventory: 0
 - Next official code: 072044
 
