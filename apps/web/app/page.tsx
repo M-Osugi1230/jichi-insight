@@ -108,7 +108,7 @@ export default function Home() {
             住民が自分で判断できる順序へつなぎ直します。
           </p>
           <p className={styles.heroTrustNote}>
-            <span>公開中・pre-alpha</span>
+            <span>公開中・Public beta</span>
             確認済みの内容と、まだ接続できていない情報を区別して掲載しています。
           </p>
           <div className={styles.heroActions}>
