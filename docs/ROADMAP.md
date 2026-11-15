@@ -903,9 +903,9 @@ Phase 14で`source_inventory_complete`となった67自治体を、record-level 
 
 Canonical status:
 
-- Reviewed complete: 9 / 67（函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市）
+- Reviewed complete: 10 / 67（函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、前橋市）
 - Review in progress: 0
-- Pending record review: 58
+- Pending record review: 57
 - Blocked source inventory: 0
 - Next official code: 072044
 
@@ -1086,6 +1086,23 @@ v1 declared package:
 - FY2024一般会計歳出 154,354,939,781円
 
 基本目標・政策パッケージ・個別施策の個別名称の全件列挙とKPI、公共計画本編PDFの全文確認、新旧計画の施策・KPI対応、現行計画の年次評価証拠、議案第39号の議員別賛否、成立後の当初予算書本体との最終数値突合、補正予算を含む予算現額、FY2024決算と個別事業の接続（not_assessableとして保持）、決算の施策別内訳、補正・執行・契約・補助金はdeferred depthです。
+
+### Milestone P15-M10 — Maebashi reviewed package
+
+Status: `promotion prepared`（2026-11-15、公開責任者のレビュー承認はマージ時に候補のhuman_reviewへ記録）
+
+前橋市をPhase 15の10市目の`reviewed_complete`自治体として確定する昇格PRを準備しました。
+
+v1 declared package:
+
+- 第七次前橋市総合計画（2018年3月策定、2018年度～2027年度、基本構想＋推進計画の2層構成、推進計画は3～4年ごと見直し、現行は第3期推進計画2025年度～2027年度）
+- 推進計画は基本構想の6つの柱に対応する6章構成
+- FY2026一般会計当初予算 161,841,682,000円（議案第15号・可決（多数）・成立予算。候補の161,841,680,000円は市長説明の万円精度記載からの転記誤りであり、本ブランチで候補ごと訂正）
+- FY2024一般会計歳入 159,237,541,694円（監査委員の決算審査意見書の円単位額）
+- FY2024一般会計歳出 154,807,075,147円
+- FY2024決算の認定は議案第94号（可決（全員）。結果表に議決日の印字がないため日付は記録しない）
+
+推進計画の重点施策・個別事業・KPIの全件列挙、計画書本編の全文確認、行政評価の個別結果、FY2024決算と個別事業の接続（not_assessableとして保持）、補正・執行・契約・補助金はdeferred depthです。
 
 ## After Phase 15
 

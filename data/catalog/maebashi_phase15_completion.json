@@ -1,0 +1,66 @@
+{
+  "id": "maebashi-phase15-completion",
+  "phase": 15,
+  "official_code": "102016",
+  "name_ja": "前橋市",
+  "status": "reviewed_complete",
+  "completed_at": "2026-11-15",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "source_catalog_path": "data/catalog/maebashi_phase15_sources.json",
+    "plan_review_path": "data/reviewed/maebashi-city/plan_review.json",
+    "policy_structure_path": "data/catalog/maebashi_current_policy_structure.json",
+    "progress_review_path": "data/catalog/maebashi_current_progress_review_summary.json",
+    "fiscal_records_path": "data/reviewed/maebashi-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/maebashi-city/evidence_packets.json",
+    "counts": {
+      "plan_layers": 2,
+      "promotion_plan_chapters": 6,
+      "promoted_implementation_item_actual_records": 0,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "current_plan_period_reviewed": true,
+    "current_plan_policy_structure_reviewed": true,
+    "promotion_plan_layer_reviewed": true,
+    "fiscal_states_and_years_separate": true,
+    "budget_enactment_state_preserved": true,
+    "settlement_linkage_not_assessable_preserved": true,
+    "individual_implementation_items_not_overpromoted": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "current-plan-granular-kpi-and-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "推進計画6章配下の重点施策・個別事業・KPIの全件列挙と公式対応リンクは追加depthとし、確認できるまで昇格しない。"
+    },
+    {
+      "id": "current-plan-full-text-confirmation",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "第七次前橋市総合計画（基本構想・推進計画）の本編全文の通読確認は未実施であり、枠組みレベルの確認に留める。"
+    },
+    {
+      "id": "current-plan-annual-evaluation-evidence",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "行政評価の個別事業の評価結果・指標実績は昇格しない。制度の枠組みと評価対象範囲のみを確認した。"
+    },
+    {
+      "id": "fiscal-detail-and-vote-date-precision",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "予算・決算の項目別内訳、補正予算、執行・契約・補助金の接続は記録しない。予算の議決日は賛否公表区分に基づく推定位置づけであり、決算認定の議決日は結果表に印字がないため記録していない。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "政策効果の因果認定、Jichi Insight独自の政策達成度スコア、他都市との未検証の比較・ランキングは作成しない。"
+    }
+  ],
+  "completion_boundary": "前橋市Phase 15 v1は、第七次前橋市総合計画の枠組み（基本構想＋推進計画の2層構成、6つのまちづくりの柱と推進計画6章、第3期推進計画2025年度～2027年度）、成立したFY2026一般会計当初予算（161,841,682千円、議案第15号・可決（多数））、FY2024一般会計決算の円単位総額（監査委員の決算審査意見書）とその認定（議案第94号・可決（全員））を一次資料で確認し、2026-11-15に公開責任者のレビュー承認手続き（本PRのマージ時に候補のhuman_reviewへ記録される）を経てreviewed_completeとする。候補にあった予算額の転記誤り（161,841,680,000円）は161,841,682,000円へ訂正した。推進計画の個別事業・KPI、行政評価の個別結果、FY2024決算と個別事業の接続（not_assessableとして保持）、財政の項目別詳細はdeferred depthである。Jichi Insight独自の政策達成度スコアや他都市とのランキングは作成しない。"
+}
