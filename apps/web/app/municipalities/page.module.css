@@ -1,6 +1,9 @@
 .overview { background: #fffefa; border: 1px solid #d7d3c8; display: grid; grid-template-columns: minmax(210px, .68fr) minmax(0, 2.32fr); }
 .overviewLead { background: #102e46; color: #fff; display: grid; padding: 26px; }
 .overviewLead > span { color: #ff9a80; font-size: .61rem; font-weight: 900; letter-spacing: .12em; }
+/* StatusBadge は overviewLead の直接の子 span でもあるため、上のルールで色が上書きされ
+   バッジ地（--green-soft）とのコントラストが不足する。バッジ本来の文字色を取り戻す。 */
+.overviewLead :global(.statusBadge--verified) { color: #145745; }
 .overviewLead > strong { align-self: end; font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; font-size: 1.4rem; margin: 32px 0 12px; }
 .overviewLead > span:last-child { justify-self: start; }
 .overview dl { display: grid; grid-template-columns: repeat(5, 1fr); margin: 0; }
@@ -29,14 +32,14 @@
 .levelSection > div > p:last-child { color: #42505b; }
 .levelSection ol { display: grid; grid-template-columns: repeat(2, 1fr); list-style: none; margin: 0; padding: 0; }
 .levelSection li { border-left: 1px solid #b8b4aa; border-top: 1px solid #b8b4aa; display: grid; min-height: 205px; padding: 18px; }
-.levelSection li > span { color: #9b978d; font-size: .62rem; }
+.levelSection li > span { color: #67635a; font-size: .62rem; }
 .levelSection li small { align-self: end; color: #a83a24; font-size: .62rem; font-weight: 900; margin-top: 28px; }
 .levelSection li strong { font-size: 1rem; margin-top: 4px; }
 .levelSection li p { color: #42505b; font-size: .7rem; margin: 8px 0 0; }
 .stageGrid { display: grid; grid-template-columns: repeat(5, 1fr); margin-top: 48px; }
 .stageGrid article { border-left: 1px solid #b8b4aa; min-height: 250px; padding: 17px; }
 .stageGrid article:last-child { border-right: 1px solid #b8b4aa; }
-.stageGrid article > span { color: #9b978d; display: block; font-size: .58rem; }
+.stageGrid article > span { color: #67635a; display: block; font-size: .58rem; }
 .stageGrid small { color: #a83a24; display: block; font-size: .65rem; font-weight: 900; margin-top: 35px; }
 .stageGrid strong { display: block; font-size: 2.3rem; letter-spacing: -.06em; margin: 5px 0 12px; }
 .stageGrid strong em { color: #5a656d; font-size: .58rem; font-style: normal; margin-left: 3px; }

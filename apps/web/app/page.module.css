@@ -55,7 +55,7 @@
 .miyagiCard::before { background: #de5a3d; }
 .hokkaidoCard::before { background: #286f9f; }
 .fukuokaCard::before { background: #236958; }
-.nationwideCard::before { background: #986b16; }
+.nationwideCard::before { background: #7f5a0e; }
 .qualityCard::before { background: #7a557d; }
 .depthTop { align-items: center; display: flex; justify-content: space-between; }
 .depthTop span { font-size: 0.78rem; font-weight: 900; }
@@ -71,7 +71,7 @@
 .chain { display: grid; grid-template-columns: repeat(5, 1fr); list-style: none; margin: 58px 0 0; padding: 0; }
 .chain li { border-left: 1px solid #b8b4aa; min-height: 300px; padding: 16px 19px; position: relative; }
 .chain li:last-child { border-right: 1px solid #b8b4aa; }
-.chain li > span { color: #b1aca0; font-size: 0.65rem; }
+.chain li > span { color: #67635a; font-size: 0.65rem; }
 .chain li > small { color: #a83a24; display: block; font-size: 0.63rem; font-weight: 900; letter-spacing: 0.1em; margin-top: 68px; text-transform: uppercase; }
 .chain h3 { font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; font-size: 1.35rem; margin: 9px 0 13px; }
 .chain p { color: #42505b; font-size: 0.76rem; line-height: 1.75; }
@@ -90,6 +90,7 @@
 
 .trustSection { background: #0a2236; border-radius: 8px 55px 8px 8px; color: #fff; display: grid; gap: 80px; grid-template-columns: 0.9fr 1.1fr; margin: 120px auto 100px; max-width: 1180px; padding: 72px 58px; }
 .trustSection h2 { margin-bottom: 0; }
+.trustSection :global(.eyebrow) { color: #ff9a80; }
 .trustSection > div:nth-child(2) > p { color: #cedbe3; font-size: 0.95rem; max-width: 620px; }
 .trustSection ul { list-style: none; margin: 38px 0 0; padding: 0; }
 .trustSection li { align-items: baseline; border-top: 1px solid rgb(255 255 255 / 20%); display: grid; gap: 20px; grid-template-columns: 120px 1fr; padding: 14px 0; }
