@@ -1,36 +1,5 @@
 .wrapper {
-  margin-top: -18px;
-}
-
-.jumpNav {
-  align-items: center;
-  background: rgb(245 243 237 / 96%);
-  border: 1px solid #d7d3c8;
-  border-radius: 13px;
-  display: flex;
-  gap: 7px;
-  overflow-x: auto;
-  padding: 10px;
-  position: sticky;
-  scrollbar-width: thin;
-  top: 78px;
-  white-space: nowrap;
-  z-index: 12;
-}
-
-.jumpNav a {
-  border-radius: 8px;
-  color: #274356;
-  flex: 0 0 auto;
-  font-size: .86rem;
-  font-weight: 790;
-  padding: 10px 14px;
-  text-decoration: none;
-}
-
-.jumpNav a:hover, .jumpNav a:focus-visible {
-  background: #dfeae4;
-  color: #145745;
+  margin-top: 0;
 }
 
 .summary {
@@ -240,8 +209,6 @@
 }
 @media (max-width: 650px) {
   .wrapper { margin-top: 0; }
-  .jumpNav { border-radius: 8px; top: 66px; }
-  .jumpNav a { font-size: .83rem; padding: 9px 11px; }
   .summary { border-radius: 18px; margin-top: 14px; padding: 20px; }
   .fiscalGrid { grid-template-columns: 1fr; margin-top: 24px; }
   .metric, .metric:last-child { grid-column: auto; }
