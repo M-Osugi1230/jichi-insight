@@ -107,7 +107,15 @@ def test_prepared_akita_candidate_retains_human_boundary_and_evidence_shape():
         source["official_url"].startswith("https://www.city.akita.lg.jp/")
         for source in source_catalog["sources"]
     )
-    assert all(source["format"] == "html" for source in source_catalog["sources"])
+    assert {
+        source["id"]: source["format"] for source in source_catalog["sources"]
+    } == {
+        "akita-fifteenth-plan": "html",
+        "akita-plan-implementation-boundary": "html",
+        "akita-budget-2026": "pdf",
+        "akita-budget-book-2026": "pdf",
+        "akita-settlement-2024": "pdf",
+    }
     assert all(bool(source["evidence_location"]) for source in source_catalog["sources"])
     assert all(bool(source["use_boundary"]) for source in source_catalog["sources"])
 
