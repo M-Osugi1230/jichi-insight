@@ -142,3 +142,37 @@
   .cityShell [id="boundary-title"],
   .cityShell [id="city-summary-title"] { scroll-margin-top: 125px; }
 }
+
+/* Full-page sticky, horizontally scrollable section navigation. */
+.cityJumpNav {
+  align-items: center;
+  background: rgb(245 243 237 / 97%);
+  border: 1px solid #d7d3c8;
+  border-radius: 13px;
+  display: flex;
+  gap: 7px;
+  overflow-x: auto;
+  padding: 10px;
+  position: sticky;
+  scrollbar-width: thin;
+  top: 76px;
+  white-space: nowrap;
+  z-index: 12;
+}
+.cityJumpNav a {
+  border-radius: 8px;
+  color: #274356;
+  flex: 0 0 auto;
+  font-size: .85rem;
+  font-weight: 790;
+  padding: 10px 14px;
+  text-decoration: none;
+}
+.cityJumpNav a:hover, .cityJumpNav a:focus-visible {
+  background: #dfeae4;
+  color: #145745;
+}
+@media (max-width: 650px) {
+  .cityJumpNav { border-radius: 8px; top: 64px; }
+  .cityJumpNav a { font-size: .82rem; padding: 9px 11px; }
+}
