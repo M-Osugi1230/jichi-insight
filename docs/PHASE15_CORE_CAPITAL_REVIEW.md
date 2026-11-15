@@ -272,13 +272,25 @@ Declared v1 package:
 
 Deferred depth includes the measures and KPIs under the eight goals, full-text confirmation of the plan book, the certification vote-table number, citizen-survey results, fiscal project detail, causality and cross-city comparability.
 
+## Fifteenth completion — Iwaki
+
+いわき市を15市目の`reviewed_complete`へ昇格しました（2026-11-15、公開責任者・大杉邑大のレビュー承認に基づく）。
+
+Declared v1 package:
+
+- current policy framework: いわき市まちづくりの基本方針 — **no fixed-period comprehensive plan exists**: Iwaki abolished the fixed-term plan model when the old plan ended in FY2020 and now runs on a framework with no fixed end date — a universal philosophy （まちづくりの理念， vision 『誰もが「住んで良かった、住み続けたい」と思える魅力にあふれた「いわき」』) plus the management guideline （経営指針）, which positions priority projects for roughly the next five years and is verified and updated every year, plus the annual いわき版骨太の方針 issued mid-year. The FY2026 guideline (updated April 2026) organises its positioned projects under five pillars （次世代を育てる／命・暮らしを守る／まちの魅力を高める／豊かさを創る／構造改革・DX推進事業）. No plan period is recorded, because none exists
+- FY2026 general-account initial budget: 159,490,126,000 yen (enacted; 議案第35号 原案可決 on 2026-03-12 per the council vote-result list; amount from Article 1 of the budget book)
+- FY2024 general-account settlement at exact yen precision: revenue 162,539,391,275 yen / expenditure 155,415,603,914 yen (balance 7,123,787,361 yen matches); certification 議案第18号 certified 2025-12-19 after continued review from the October session. FY2024 was executed under the current basic-policy framework (no cross-plan attribution problem), but its item-level linkage to the guideline's positioned projects was not performed, so the linkage stays not_assessable
+
+Deferred depth includes the individual projects and KPIs under the five pillars, the audit commission's settlement review opinion (not inspected), itemised cross-checks against the budget/settlement detail books, supplementary-budget history, fiscal project detail, causality and cross-city comparability (the no-fixed-end framework must not be measured with the same yardstick as fixed-period plans).
+
 ## Current queue
 
-- Reviewed complete: 14 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、宇都宮市、前橋市、高崎市、川越市、川口市
+- Reviewed complete: 15 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、宇都宮市、前橋市、高崎市、川越市、川口市
 - Review in progress: 0
-- Pending record review: 53
+- Pending record review: 52
 - Blocked source inventory: 0
-- Next official code: 072044
+- Next official code: 082015
 
 ## Definition of Phase 15 completion
 

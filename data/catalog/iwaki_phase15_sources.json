@@ -1,0 +1,46 @@
+{
+  "id": "iwaki-phase15-sources",
+  "phase": 15,
+  "official_code": "072044",
+  "name_ja": "いわき市",
+  "reviewed_at": "2026-11-15",
+  "quality_boundary": "Basic policy framework with no fixed end date (universal philosophy plus the annually verified and updated management guideline and the annual Iwaki Honebuto framework), budget enactment confirmed on the official council vote-result list (2026-03-12), and settlement totals kept at exact yen precision without collapsing proposed, enacted, supplementary, or settlement states.",
+  "sources": [
+    {
+      "id": "iwaki-basic-policy",
+      "title": "いわき市 まちづくりの基本方針（理念・経営指針・いわき版骨太の方針）",
+      "official_url": "https://www.city.iwaki.lg.jp/www/contents/1728362409876/index.html",
+      "format": "html",
+      "evidence_role": "comprehensive_policy_framework",
+      "evidence_location": "いわき市公式Webサイト『いわき市 まちづくりの基本方針（理念・経営指針・いわき版骨太の方針）』ページ本文に『平成12（2000）年度に策定した現行の総合計画の計画期間が令和2（2020）年度で終期を迎えるにあたり…これまでの総合計画に代わる新たな時代にふさわしいまちづくりの進め方として、「いわき市まちづくりの基本方針」を策定しました』『普遍的な「まちづくりの理念」と、環境変化に柔軟に対応する「まちづくりの経営指針」の2つを柱としています』『「いわき版骨太の方針」を年度途中で策定』と記載し、基本方針の概要・本編PDFへリンク。同ページ『まちづくりの理念』の項に『めざすべきまちの姿を『誰もが「住んで良かった、住み続けたい」と思える魅力にあふれた「いわき」』とします』と記載",
+      "use_boundary": "固定終期を持たない方針体系として保持し、従来型の固定期間総合計画へ変換しない。理念・経営指針・骨太方針を別layerとして扱い、年度版の経営指針を恒久計画として固定化しない。"
+    },
+    {
+      "id": "iwaki-management-guideline-2026",
+      "title": "令和8年度 まちづくりの経営指針 位置付け事業",
+      "official_url": "https://www.city.iwaki.lg.jp/www/contents/1728362409876/index.html",
+      "format": "html",
+      "evidence_role": "annual_implementation",
+      "evidence_location": "同ページ『まちづくりの経営指針（令和8年4月更新）』の項に『「まちづくりの経営指針」に位置づける取組み・事業群は毎年、その内容や位置づけ等を検証し、更新します』『「いわき版骨太の方針」を踏まえ、その後の予算編成を経て更新した令和8年度「まちづくりの経営指針」の位置付け事業は、次のとおりです』と記載し、『令和8年度 まちづくりの経営指針 位置付け事業一覧』PDFへリンク。同PDFは柱（1.次世代を育てる、2.命・暮らしを守る、3.まちの魅力を高める、4.豊かさを創る、5.構造改革・DX推進事業）・分野・施策・事業名・担当部課の一覧",
+      "use_boundary": "経営指針は毎年度検証・更新される年度版として保持し、令和8年度版の位置付け事業の存在だけから個別事業の達成状態や評価結果を推測しない。"
+    },
+    {
+      "id": "iwaki-budget-2026",
+      "title": "令和8年度当初予算",
+      "official_url": "https://www.city.iwaki.lg.jp/www/contents/1761108064077/index.html",
+      "format": "html",
+      "evidence_role": "budget",
+      "evidence_location": "いわき市公式Webサイト『令和8年度当初予算』ページ（登録日：2026年3月12日）からリンクされる『令和8年度当初予算書』PDF冒頭『議案第35号 令和8年度いわき市一般会計予算』第1条『歳入歳出予算の総額は、歳入歳出それぞれ159,490,126千円と定める』。同ページの『令和8年度当初予算の概要』PDFにも一般会計1,594億9,012万6千円と記載。議案は令和8年2月19日に令和8年いわき市議会2月定例会へ提出され、市議会の議決結果一覧（同定例会提出分）に議案第35号が議決年月日8.3.12・原案可決と記載",
+      "use_boundary": "FY2026当初予算は議決・成立済みの額として扱い、予算案段階の数値、補正予算、決算とは別stateで扱う。"
+    },
+    {
+      "id": "iwaki-settlement-2024",
+      "title": "令和6年度決算",
+      "official_url": "https://www.city.iwaki.lg.jp/www/contents/1763711744055/index.html",
+      "format": "html",
+      "evidence_role": "settlement_and_major_measures",
+      "evidence_location": "いわき市公式Webサイト『令和6年度決算』ページからリンクされる『令和6年度歳入歳出決算書』PDF（議案第18号～議案第32号、2025.10）に、議案第18号『令和6年度いわき市一般会計歳入歳出決算』として一般会計の歳入合計（収入済額）162,539,391,275円・歳出合計（支出済額）155,415,603,914円・歳入歳出差引残額7,123,787,361円を記載し、末尾に『令和7年10月23日提出 福島県いわき市長 内田広之』と記載。市議会の議決結果一覧では、議案第18号『令和6年度いわき市一般会計歳入歳出決算の認定について』が令和7年10月定例会からの継続審査中の案件として議決年月日7.12.19・認定と記載",
+      "use_boundary": "FY2024決算は認定済みの総額（歳入・歳出）を決算書原本の範囲で確認する。個別事業の決算額を経営指針の事業への接続や政策成果の判定へ変換しない。"
+    }
+  ]
+}
