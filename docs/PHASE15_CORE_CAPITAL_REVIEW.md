@@ -197,13 +197,27 @@ Declared v1 package:
 
 Deferred depth includes the exhaustive enumeration of all basic policies, priority measures, individual measures and indicator values, full-text confirmation of the basic vision and execution plan PDFs, ingestion of the FY2024 execution-plan evaluation content, the vote breakdown and minutes for bill No. 5, the FY2024 settlement-to-item linkage (kept not_assessable), settlement breakdown by policy, the mapping to the forthcoming 7th comprehensive plan, fiscal project detail, causality and cross-city comparability.
 
+## Ninth completion — Koriyama
+
+郡山市を9市目の`reviewed_complete`へ昇格しました（2026-11-15、公開責任者・大杉邑大のレビュー承認に基づく）。
+
+Declared v1 package:
+
+- current comprehensive plan: 郡山市第7次総合計画 2026–2033 (started April 2026)
+- structure: two layers — 公共計画 (public plan, main volume) and 行政計画 (administrative plan, first implementation plan); the population vision and comprehensive strategy are integrated into the plan
+- plan transition: the previous framework 郡山市まちづくり基本指針（あすまちこおりやま） was the top plan through FY2025; the FY2024 settlement belongs to its seventh implementation plan (2024–2027, first year) and falls outside the current plan period, so the FY2024 settlement is not linked to current-plan items
+- FY2026 general-account initial budget: 144,720,000,000 yen (enacted; 議案第39号 原案可決 with a majority on 2026-03-19, confirmed on the official council vote results; thousand-yen precision in the enacted bill text)
+- FY2024 general-account settlement: exact revenue (160,788,173,369 yen) and expenditure (154,354,939,781 yen) values from the settlement book
+
+Deferred depth includes the exhaustive enumeration of all basic goals, policy packages, individual measures and KPIs, full-text confirmation of the main-volume (public plan) PDF, the old/new framework policy and indicator mapping, current-plan annual evaluation evidence, the per-member vote breakdown for bill No. 39, the final cross-check against the enacted budget book, the current budget amount including supplementary budgets, the FY2024 settlement-to-item linkage (kept not_assessable), settlement breakdown by policy, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 8 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市
+- Reviewed complete: 9 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市
 - Review in progress: 0
-- Pending record review: 59
+- Pending record review: 58
 - Blocked source inventory: 0
-- Next official code: 072036
+- Next official code: 072044
 
 ## Definition of Phase 15 completion
 

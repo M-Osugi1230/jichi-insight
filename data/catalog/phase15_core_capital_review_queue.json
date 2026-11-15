@@ -133,9 +133,9 @@
       "prefecture_name_ja": "福島県",
       "municipality_type": "city",
       "phase14_role": "core_city",
-      "status": "pending_record_review",
+      "status": "reviewed_complete",
       "source_inventory_path": "data/indexed/koriyama-city/source_inventory.json",
-      "completion_path": null
+      "completion_path": "data/catalog/koriyama_phase15_completion.json"
     },
     {
       "sequence": 10,
@@ -894,11 +894,11 @@
   ],
   "summary": {
     "target_count": 67,
-    "reviewed_complete_count": 8,
+    "reviewed_complete_count": 9,
     "review_in_progress_count": 0,
-    "pending_record_review_count": 59,
+    "pending_record_review_count": 58,
     "blocked_source_inventory_count": 0,
-    "next_official_code": "072036"
+    "next_official_code": "072044"
   },
   "updated_at": "2026-11-15"
 }
