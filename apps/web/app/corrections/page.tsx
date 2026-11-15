@@ -90,6 +90,9 @@ export default function CorrectionsPage() {
             <p>
               自宅住所、電話番号、非公開メール、家族情報、認証情報、脆弱性は公開Issueに投稿しないでください。
             </p>
+            <p>
+              申請はGitHubのIssueフォームで受け付けます。送信にはGitHubアカウントが必要です（お持ちでない場合は、GitHubでアカウントを作成してからお進みください）。内容は公開Issueとして誰でも閲覧できる形で受け付けます。
+            </p>
           </div>
           <a className="invertedAction" href={correctionUrl} target="_blank" rel="noreferrer">
             訂正申請を開く ↗

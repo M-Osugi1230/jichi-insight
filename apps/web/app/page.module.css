@@ -264,6 +264,20 @@
   line-height: 1.8;
   margin: 6px 0 0;
 }
+.reviewStatusLink {
+  align-items: center;
+  color: #a8e6c9;
+  display: inline-flex;
+  font-size: 0.84rem;
+  font-weight: 800;
+  gap: 8px;
+  margin-top: 14px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.reviewStatusLink:hover {
+  color: #ffffff;
+}
 .reviewProgressValue {
   display: grid;
   gap: 10px;
