@@ -1,0 +1,65 @@
+[
+  {
+    "id": "jp-local-131040-fiscal-2026-total-expenditure",
+    "municipality_id": "jp-local-131040",
+    "fiscal_year": 2026,
+    "stage": "initial_budget",
+    "account_type": "general",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算（可決）",
+    "amount_yen": 187835560000,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "sources": [
+      "shinjuku-budget-2026"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "新宿区公式『令和8年度予算書』ページからリンクされる『令和8年度各会計予算』PDFに収録された第1号議案『令和8年度新宿区一般会計予算』第1条に、歳入歳出予算の総額は歳入歳出それぞれ187,835,560千円と定める旨を記載した令和8年度当初予算額（令和8年2月17日提出）。新宿区議会公式『令和8年第1回定例会』ページの議案一覧に第1号議案を掲げ、同定例会の『議案の概要と審議結果』では予算額1,878億3,556万円で『可決』と記録され、同定例会の日程では最終日の令和8年3月24日の本会議が『議案の採決等』とされている。議決を受けて成立した当初予算であり、予算案段階の額ではない。区公式『令和8年度予算の概要』の歳入表の歳入合計187,836百万円（百万円単位・四捨五入表示）とも整合する。補正予算や決算とは別stateで扱う。"
+  },
+  {
+    "id": "jp-local-131040-fiscal-2024-total-revenue",
+    "municipality_id": "jp-local-131040",
+    "fiscal_year": 2024,
+    "stage": "settlement",
+    "account_type": "general",
+    "metric": "total_revenue",
+    "metric_label": "一般会計決算歳入",
+    "amount_yen": 190137549271,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "shinjuku-settlement-2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "新宿区公式『決算書・実績報告（令和6年度）』ページからリンクされる『令和6年度新宿区各会計歳入歳出決算総括』PDF（単位 円）の一般会計歳入決算額190,137,549,271円。歳出決算額184,195,725,502円との差引額5,941,823,769円で検算が一致する（同総括の公表差引額と一致）。令和6年度決算は認定第1号『令和6年度新宿区一般会計歳入歳出決算』として令和7年第3回定例会で認定された（同定例会の『議案の概要と審議結果』に『認定』と記録され、日程では最終日の令和7年10月20日の本会議が『議案の討論・採決等』とされている）。"
+  },
+  {
+    "id": "jp-local-131040-fiscal-2024-total-expenditure",
+    "municipality_id": "jp-local-131040",
+    "fiscal_year": 2024,
+    "stage": "settlement",
+    "account_type": "general",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計決算歳出",
+    "amount_yen": 184195725502,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "shinjuku-settlement-2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "同決算総括PDFの一般会計歳出決算額184,195,725,502円。歳入決算額190,137,549,271円との差引額5,941,823,769円で検算が一致する。令和6年度決算は認定第1号として令和7年10月20日に認定された。"
+  }
+]

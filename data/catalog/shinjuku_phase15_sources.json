@@ -1,0 +1,46 @@
+{
+  "id": "shinjuku-phase15-sources",
+  "phase": 15,
+  "official_code": "131040",
+  "name_ja": "新宿区",
+  "reviewed_at": "2026-11-16",
+  "quality_boundary": "Special-ward plan framework kept as it is (basic concept adopted in FY2007 and held through FY2027; comprehensive plan 2018-2027 integrating the basic plan and the urban master plan; third action plan 2024-2027), budget enactment confirmed on the ward assembly's official session pages (bill No. 1 passed; the vote date 2026-03-24 is identified from the session schedule, with final confirmation against the plenary minutes outstanding), and settlement totals kept at exact yen precision without collapsing proposed, enacted, supplementary, or settlement states.",
+  "sources": [
+    {
+      "id": "shinjuku-concept-plan",
+      "title": "新宿区基本構想・総合計画",
+      "official_url": "https://www.city.shinjuku.lg.jp/kusei/file07_01_00014.html",
+      "format": "html",
+      "evidence_role": "comprehensive_plan",
+      "evidence_location": "新宿区公式Webサイト『新宿区基本構想・新宿区総合計画』ページに、基本構想（平成19年度策定）の基本理念、めざすまちの姿『『新宿力』で創造する、やすらぎとにぎわいのまち』、まちづくりの基本目標6つ、区政運営の基本姿勢6つと、計画の期間（現在の基本構想は総合計画の最終年度である令和9年度まで）を記載。現行総合計画の枠組み（平成30年度～令和9年度、基本計画と都市マスタープランを総合化、5つの基本政策のもとに33の個別施策）は公式『新宿区総合計画を策定しました』ページと『新宿区総合計画』で確認",
+      "use_boundary": "特別区の基本構想・総合計画frameworkをそのまま保持し、市型の単一総合計画モデルへ変換しない。基本構想の当初想定期間（2025年）と現行の扱い（令和9年度まで）を混在させない。"
+    },
+    {
+      "id": "shinjuku-third-action-plan",
+      "title": "新宿区第三次実行計画",
+      "official_url": "https://www.city.shinjuku.lg.jp/kusei/kikaku01_002020_00002.html",
+      "format": "html",
+      "evidence_role": "implementation_plan",
+      "evidence_location": "新宿区公式Webサイト『新宿区第三次実行計画を策定しました』ページに、計画の目的・性格（総合計画に示した施策を具体の事業として計画的に実施するために策定する行財政計画）、計画期間（令和6年度～令和9年度の4か年）、総合計画の5つの基本政策に基づく構成、計画事業65事業・4年間の計画事業費約490億円、ローリング（見直し）の実施を記載し、計画本編PDFへのリンクを掲載",
+      "use_boundary": "現行の実行計画をcurrent actionable layerとして保持し、ローリング改定は別versionとして扱う。実行計画の方針を年度Resultへ読み替えない。"
+    },
+    {
+      "id": "shinjuku-budget-2026",
+      "title": "令和8年度予算",
+      "official_url": "https://www.city.shinjuku.lg.jp/kusei/zaisei01_000001_00017.html",
+      "format": "html",
+      "evidence_role": "budget",
+      "evidence_location": "新宿区公式Webサイト『令和8年度予算書』ページはFY2026当初予算・補正予算の公式入口。同ページからリンクされる『令和8年度各会計予算』PDFの第1号議案『令和8年度新宿区一般会計予算』第1条に一般会計187,835,560千円を記載し、新宿区議会公式『令和8年第1回定例会』ページの議案一覧と『議案の概要と審議結果』に第1号議案の可決を記載",
+      "use_boundary": "FY2026当初予算は議決・成立済みの額として扱い、proposal/enacted/supplementaryをPhase 15でstage分離する。"
+    },
+    {
+      "id": "shinjuku-settlement-2024",
+      "title": "決算書・実績報告（令和6年度）",
+      "official_url": "https://www.city.shinjuku.lg.jp/kusei/kaikei01_001000_00006.html",
+      "format": "html",
+      "evidence_role": "settlement_and_annual_results",
+      "evidence_location": "新宿区公式Webサイト『決算書・実績報告（令和6年度）』ページからリンクされる『令和6年度新宿区各会計歳入歳出決算総括』PDF（単位 円）に、一般会計の歳入決算額190,137,549,271円・歳出決算額184,195,725,502円・差引額5,941,823,769円を記載。認定は新宿区議会公式『令和7年第3回定例会』ページの決算（4件）一覧の認定第1号と、同定例会の『議案の概要と審議結果』の『認定』で確認",
+      "use_boundary": "FY2024決算認定と主要施策の成果の公式入口。決算総額を総合計画の個別施策・実行計画事業の実績へ直接流用しない。"
+    }
+  ]
+}

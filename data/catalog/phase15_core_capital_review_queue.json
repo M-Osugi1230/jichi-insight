@@ -276,9 +276,9 @@
       "prefecture_name_ja": "東京都",
       "municipality_type": "special_ward",
       "phase14_role": "prefectural_capital_only",
-      "status": "pending_record_review",
+      "status": "reviewed_complete",
       "source_inventory_path": "data/indexed/shinjuku-city/source_inventory.json",
-      "completion_path": null
+      "completion_path": "data/catalog/shinjuku_phase15_completion.json"
     },
     {
       "sequence": 21,
@@ -894,11 +894,11 @@
   ],
   "summary": {
     "target_count": 67,
-    "reviewed_complete_count": 19,
+    "reviewed_complete_count": 20,
     "review_in_progress_count": 0,
-    "pending_record_review_count": 48,
+    "pending_record_review_count": 47,
     "blocked_source_inventory_count": 0,
-    "next_official_code": "131040"
+    "next_official_code": "132012"
   },
   "updated_at": "2026-11-16"
 }

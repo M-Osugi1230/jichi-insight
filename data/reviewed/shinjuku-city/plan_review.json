@@ -1,0 +1,53 @@
+{
+  "id": "phase15-shinjuku-plan-review",
+  "official_code": "131040",
+  "name_ja": "新宿区",
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-16",
+  "next_action": "Promote the individual projects and achievement indicators under the 33 individual measures of the basic plan and the 65 projects of the third action plan only when official sources with stable record-level locators have been reviewed; confirm the FY2026 budget vote date against the plenary session minutes; inspect the audit commission's settlement review opinion; cross-check the settlement detail book （事項別明細書）; keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "quality_boundary": "This package reviews current plan identity and period (basic concept adopted in FY2007 and held through FY2027, the final year of the comprehensive plan; the comprehensive plan 2018-2027 integrating the basic plan and the urban master plan; the third action plan 2024-2027), the basic plan's framework of five basic policies with 33 individual measures, the enacted FY2026 initial budget, and the FY2024 settlement at exact yen precision, without collapsing proposed, enacted, supplementary, or settlement states. Shinjuku is a special ward: its basic-concept / comprehensive-plan framework and multi-year action plans are recorded as they are, not converted into a single city-style comprehensive plan model. FY2024 falls inside the current comprehensive plan period, but its totals are section-level aggregates and are not linked to individual measures or action-plan projects.",
+  "records": [
+    {
+      "id": "shinjuku-current-plan-period",
+      "title": "新宿区総合計画 計画期間とめざすまちの姿",
+      "statement": "新宿区総合計画は新宿区の最上位計画であり、平成29年第4回区議会定例会の議決を経て平成29年度に策定され、計画期間は平成30（2018）年度から平成39（2027）年度までの10年間で、基本構想の掲げるめざすまちの姿は『『新宿力』で創造する、やすらぎとにぎわいのまち』である。基本構想（平成19年度策定）の想定期間は当初平成37（2025）年までとされたが、現在の基本構想は総合計画の最終年度である令和9（2027）年度までとされている。",
+      "value": "2018年度～2027年度",
+      "decision": "accepted",
+      "evidence_role": "current_plan_identity",
+      "source_url": "https://www.city.shinjuku.lg.jp/kusei/file07_01_00014.html",
+      "evidence_location": "区公式『新宿区総合計画を策定しました』ページに『平成29年第4回区議会定例会の議決を経て、平成30年度から始まる新たな新宿区総合計画を策定しました』『平成30（2018）年度を初年度とし、平成39（2027）年度までの10年間を、新宿区総合計画の期間とします』と記載。公式『新宿区基本構想・新宿区総合計画』ページに基本構想のめざすまちの姿『『新宿力』で創造する、やすらぎとにぎわいのまち』と『※現在の基本構想は、総合計画の最終年度である令和9年度（2027）までとします』と記載",
+      "review_note": "計画期間とめざすまちの姿を公式ページで直接確認したレビュー済みレコード。計画書本編（基本構想）の全文通読による最終突合はdeferred depthとして保持する。"
+    },
+    {
+      "id": "shinjuku-current-policy-structure",
+      "title": "新宿区総合計画の構造と基本計画の施策体系",
+      "statement": "新宿区の計画体系は、基本構想（平成19年度策定）、総合計画（平成30年度～令和9年度）、実行計画の層から構成される。総合計画は基本計画と都市マスタープランを総合化した計画であり、まちづくり長期計画（都市マスタープラン・まちづくり戦略プラン）を内包する。基本計画は、基本構想のめざすまちの姿の実現に向けて5つの基本政策（暮らしやすさ1番の新宿／新宿の高度防災都市化と安全安心の強化／賑わい都市・新宿の創造／健全な区財政の確立／好感度1番の区役所）のもとに計33の個別施策を掲げる。基本構想は基本理念3つ、まちづくりの基本目標6つ、区政運営の基本姿勢6つを示す。新宿区は特別区であり、この基本構想・総合計画frameworkと複数年の実行計画を分けて運用する体系を、市型の単一総合計画モデルへ変換せずそのまま記録する。",
+      "decision": "accepted",
+      "evidence_role": "policy_structure",
+      "source_url": "https://www.city.shinjuku.lg.jp/kusei/file07_01_00014.html",
+      "evidence_location": "公式『新宿区総合計画を策定しました』ページに『総合計画は…「基本計画」と「都市マスタープラン」を総合化しています』『「基本計画」は…5つの基本政策のもとに33の個別施策を掲げ』と記載。個別施策の全件は公式『新宿区総合計画』の『計画内容のあらまし』（新宿区基本計画）で基本政策ごとに直接確認（基本政策Ⅰに9件、Ⅱに3件、Ⅲに16件、Ⅳに2件、Ⅴに3件、計33件）。基本構想の基本理念・まちづくりの基本目標・区政運営の基本姿勢は公式『新宿区基本構想・新宿区総合計画』ページで確認",
+      "review_note": "公式ページと総合計画概要版が明示した層構造と基本計画の施策体系（5つの基本政策のもとに33の個別施策）を一次資料で直接確認したレビュー済みレコード。個別事業の全件列挙は行わない。特別区の計画体系を市型の単一総合計画モデルへ読み替えない。"
+    },
+    {
+      "id": "shinjuku-implementation-plan-framework",
+      "title": "第三次実行計画（4年・ローリング）に基づく進行管理の枠組み",
+      "statement": "新宿区は、新宿区総合計画に示した施策を具体の事業として計画的に実施するための行財政計画として実行計画を策定する。現行の第三次実行計画は令和6（2024）年度から令和9（2027）年度の4か年を計画期間とし、総合計画の5つの基本政策のもとに計画事業65事業（4年間の計画事業費は約490億円）を体系化し、計画事業の評価に活用する指標を掲載する。計画は事業を取り巻く状況変化への対応等を反映するためローリング（見直し）を行い、改定は別versionとして扱う。",
+      "decision": "accepted",
+      "evidence_role": "progress_governance",
+      "source_url": "https://www.city.shinjuku.lg.jp/kusei/kikaku01_002020_00002.html",
+      "evidence_location": "公式『新宿区第三次実行計画を策定しました』ページに『計画期間は、令和6(2024)年度から令和9(2027)年度の4か年です』『計画事業は65事業で、それにかかる4年間の計画事業費は約490億円を予定しています』『計画は、事業を取り巻く状況変化への対応等を反映するため、ローリング（見直し）を行います』と記載し、計画本編PDFへのリンクを掲載。第三次実行計画本編（公式PDF）でも『計画事業（65事業）』と5つの基本政策に基づく体系化、計画事業の指標の掲載を確認",
+      "review_note": "実行計画の期間・事業数とローリングの方式、指標の位置付けを公式資料で直接確認したレビュー済みレコード。個別事業の進捗・実績値そのものは本パッケージでは扱わない。"
+    },
+    {
+      "id": "shinjuku-fy2024-settlement-linkage",
+      "title": "令和6年度決算と新宿区総合計画事業の接続",
+      "statement": "FY2024決算値と新宿区総合計画の個別施策・第三次実行計画の計画事業との接続は未判定（not_assessable）。FY2024は現行の総合計画期間（2018年度～2027年度）内かつ第三次実行計画の初年度に属する決算であるが、決算総額は款別の集計値であり、個別施策・計画事業との対応付けは総額レベルでは行われていない。決算とあわせて公表される『主要施策の成果の概要』についても、決算総額との突合・対応付けは未実施である。決算と事業の対応付けは人間レビュー工程の作業とする。",
+      "fiscal_year": 2024,
+      "decision": "not_assessable",
+      "evidence_role": "annual_progress",
+      "source_url": "https://www.city.shinjuku.lg.jp/kusei/kaikei01_001000_00006.html",
+      "evidence_location": "『決算書・実績報告（令和6年度）』ページ（決算総額の確認先。同ページから各会計歳入歳出決算総括・主要施策の成果の概要PDFへリンク）",
+      "review_note": "決算総額を確認できたことと、個別事業の接続を推測で記録しないことは別の判断であることを示す明示的な未判定レコード。決算と事業の対応付けは人間レビュー工程の作業。"
+    }
+  ]
+}

@@ -332,13 +332,25 @@ Declared v1 package:
 
 Deferred depth includes the individual projects and achievement indicators under the 22 fields and 66 measures and the priority themes, full-text confirmation of the plan book, the audit commission's settlement review opinion (not inspected), cross-checks against the settlement detail book, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Twentieth completion — Shinjuku
+
+新宿区を20番目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 新宿区総合計画 — basic concept adopted in FY2007 and held through FY2027, the final year of the comprehensive plan (vision 『『新宿力』で創造する、やすらぎとにぎわいのまち』); comprehensive plan 2018–2027 integrating the basic plan and the urban master plan, with the basic plan setting five basic policies （基本政策） and 33 individual measures （個別施策）; third action plan 2024–2027 with 65 projects, revised by rolling review. Shinjuku is a special ward: this framework is recorded as it is and is not converted into a single city-style comprehensive plan model
+- FY2026 general-account initial budget: 187,835,560,000 yen (enacted; 第1号議案 passed; amount from Article 1 of the official budget book, stated in thousands of yen. The vote date 2026-03-24 is identified from the regular session schedule — the final day's plenary session was for votes on bills — and final confirmation against the plenary session minutes remains outstanding)
+- FY2024 general-account settlement at exact yen precision: revenue 190,137,549,271 yen / expenditure 184,195,725,502 yen (balance 5,941,823,769 yen matches the published 歳入歳出差引額）; certification 認定第1号 certified on 2025-10-20. FY2024 falls inside the current comprehensive plan period, but its totals are section-level aggregates and are not linked to individual measures or action-plan projects, so the linkage stays not_assessable
+
+Deferred depth includes the individual projects and achievement indicators under the 33 individual measures and the 65 action-plan projects, full-text confirmation of the plan book, the audit commission's settlement review opinion (not inspected), cross-checks against the settlement detail book, final confirmation of the FY2026 budget vote date against the plenary session minutes, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 19 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市
+- Reviewed complete: 20 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区
 - Review in progress: 0
-- Pending record review: 48
+- Pending record review: 47
 - Blocked source inventory: 0
-- Next official code: 131040
+- Next official code: 132012
 
 ## Definition of Phase 15 completion
 
