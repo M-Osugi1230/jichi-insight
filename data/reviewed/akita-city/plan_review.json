@@ -1,0 +1,68 @@
+{
+  "id": "phase15-akita-plan-review",
+  "official_code": "052019",
+  "name_ja": "秋田市",
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-15",
+  "records": [
+    {
+      "id": "akita-current-plan-period",
+      "evidence_role": "current_plan_identity",
+      "title": "第15次秋田市総合計画 計画期間",
+      "statement": "第15次秋田市総合計画（秋田市『プラスの循環』プラン）の計画期間は2026年度（令和8年度）から2030年度（令和12年度）までの5年間である。",
+      "value": "2026年度～2030年度",
+      "source_url": "https://www.city.akita.lg.jp/shisei/hoshin-keikaku/1010701/1047065.html",
+      "evidence_location": "本文『「共感と共創によるまちづくり」秋田市『プラスの循環』プラン（令和8〜12年度）』『推進計画は、基本構想を踏まえ、令和8年度から令和12年度までの5年間の計画期間』",
+      "decision": "accepted",
+      "review_note": "現行計画は2026年度開始の5年計画。FY2026当初予算は本計画の初年度に位置づく。"
+    },
+    {
+      "id": "akita-current-policy-structure",
+      "evidence_role": "policy_structure",
+      "title": "第15次秋田市総合計画 構成と体系",
+      "statement": "第15次総合計画は基本構想と推進計画の2部構成であり、推進計画は第3期秋田市まち・ひと・しごと創生総合戦略と統合されている。基本構想は将来都市像とプラスの循環戦略を軸とし、将来都市像5・政策見出し12・プラスの循環戦略5の枠組みを持つ。",
+      "value": 12,
+      "unit": "policy_headings",
+      "source_url": "https://www.city.akita.lg.jp/shisei/hoshin-keikaku/1010701/1047065.html",
+      "evidence_location": "本文『基本構想』『推進計画（第3期秋田市まち・ひと・しごと創生総合戦略）』および基本構想・推進計画の公式PDF",
+      "reviewed_data_path": "data/catalog/akita_current_policy_structure.json",
+      "decision": "accepted",
+      "review_note": "件数と枠組みは公式資料で確認済み。将来都市像・政策・戦略の個別名称の全件列挙と全施策・全KPIの網羅的集計はv1では行わず deferred depth とする。候補ステージングにあった基本目標等の名称は一次資料の裏付けがないため採用しない。"
+    },
+    {
+      "id": "akita-previous-plan-and-transition",
+      "evidence_role": "plan_transition",
+      "title": "第14次秋田市総合計画と計画移行",
+      "statement": "前計画は第14次秋田市総合計画（県都『あきた』創生プラン）であり、計画期間は2021年度（令和3年度）から2025年度（令和7年度）まで、構成は基本構想＋推進計画である。FY2024決算は第14次計画の4年目に帰属する。",
+      "value": "2021年度～2025年度",
+      "source_url": "https://www.city.akita.lg.jp/shisei/hoshin-keikaku/1010701/1047065.html",
+      "evidence_location": "秋田市公式の第14次秋田市総合計画ページおよび推進計画資料（第15次計画ページの関連資料を含む）",
+      "decision": "accepted",
+      "review_note": "第14次計画と第15次計画は別の計画であり直接比較できない。両計画の施策・KPIの新旧対応は未確認であり、名称の類似だけで結合しない。基本構想（議案第1号）は令和8年2月定例会で可決（賛成多数）されている。"
+    },
+    {
+      "id": "akita-implementation-plan-layer",
+      "evidence_role": "implementation_layer",
+      "title": "秋田市『プラスの循環』プラン推進計画",
+      "statement": "推進計画は基本構想を踏まえ、令和8年度から令和12年度までの5年間の計画期間を通した政策ごとの基本方針と、その実現に向けた主な取組・事業を示す層である。",
+      "source_url": "https://www.city.akita.lg.jp/shisei/hoshin-keikaku/1010701/1047065.html",
+      "evidence_location": "本文『推進計画（第3期秋田市まち・ひと・しごと創生総合戦略）』",
+      "reviewed_data_path": "data/catalog/akita_current_progress_review_summary.json",
+      "decision": "accepted",
+      "review_note": "推進計画の枠組み確認は個別取組・事業・指標の実績確認を意味しない。現行計画の年次評価・実績資料はv1では未昇格とし、deferred depthとして明示する。"
+    },
+    {
+      "id": "akita-fy2024-settlement-linkage",
+      "evidence_role": "annual_progress",
+      "title": "令和6年度決算と計画事業の接続",
+      "statement": "FY2024決算値と個別事業との完全細粒度接続は未判定（not_assessable）。FY2024は第14次計画期間の決算であり、第15次計画の事業へ直接接続しない。",
+      "fiscal_year": 2024,
+      "source_url": "https://www.city.akita.lg.jp/_res/projects/default_project/_page_/001/009/200/fy06settlement.pdf",
+      "evidence_location": "『令和6年度会計別決算状況』は会計別トップラインを示す資料であり、個別事業への接続を示すものではない。",
+      "decision": "not_assessable",
+      "review_note": "決算トップラインは財政レコードとして保持するが、個別事業費・実績への接続は追加エビデンス確認まで非評価扱いを維持する。"
+    }
+  ],
+  "quality_boundary": "This package reviews current plan identity and period, the two-part basic-concept plus promotion-plan structure integrated with the third comprehensive strategy (five future city images, twelve policy headings, five plus-cycle strategies at framework level), the previous plan and the plan transition, and keeps the FY2024 settlement-to-item linkage explicitly not assessable. It does not enumerate every measure or KPI, promote individual implementation items or KPI actuals, infer policy achievement, establish causal effects, or assert cross-city comparability.",
+  "next_action": "Promote the full measure/KPI enumeration, the basic-concept full-text confirmation, and the old/new plan mapping only when official sources with stable record-level locators have been reviewed; keep supplementary budgets, execution, and fiscal detail as separate states."
+}

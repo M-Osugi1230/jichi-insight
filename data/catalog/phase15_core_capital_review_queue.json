@@ -94,9 +94,9 @@
       "prefecture_name_ja": "秋田県",
       "municipality_type": "city",
       "phase14_role": "core_city_and_prefectural_capital",
-      "status": "pending_record_review",
+      "status": "reviewed_complete",
       "source_inventory_path": "data/indexed/akita-city/source_inventory.json",
-      "completion_path": null
+      "completion_path": "data/catalog/akita_phase15_completion.json"
     },
     {
       "sequence": 7,
@@ -894,11 +894,11 @@
   ],
   "summary": {
     "target_count": 67,
-    "reviewed_complete_count": 5,
+    "reviewed_complete_count": 6,
     "review_in_progress_count": 0,
-    "pending_record_review_count": 62,
+    "pending_record_review_count": 61,
     "blocked_source_inventory_count": 0,
-    "next_official_code": "052019"
+    "next_official_code": "062014"
   },
   "updated_at": "2026-11-15"
 }

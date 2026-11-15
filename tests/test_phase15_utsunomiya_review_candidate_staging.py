@@ -109,8 +109,8 @@ def test_utsunomiya_is_still_pending_in_canonical_queue():
     )
     assert item["status"] == "pending_record_review"
     assert item["completion_path"] is None
-    assert queue["summary"]["reviewed_complete_count"] == 5
-    assert queue["summary"]["pending_record_review_count"] == 62
+    assert queue["summary"]["reviewed_complete_count"] == 6
+    assert queue["summary"]["pending_record_review_count"] == 61
 
 
 def test_public_web_does_not_import_candidate_staging():

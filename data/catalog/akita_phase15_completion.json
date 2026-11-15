@@ -1,0 +1,74 @@
+{
+  "id": "akita-phase15-completion",
+  "phase": 15,
+  "status": "reviewed_complete",
+  "official_code": "052019",
+  "name_ja": "秋田市",
+  "completed_at": "2026-11-15",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "source_catalog_path": "data/catalog/akita_phase15_sources.json",
+    "plan_review_path": "data/reviewed/akita-city/plan_review.json",
+    "policy_structure_path": "data/catalog/akita_current_policy_structure.json",
+    "progress_review_path": "data/catalog/akita_current_progress_review_summary.json",
+    "fiscal_records_path": "data/reviewed/akita-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/akita-city/evidence_packets.json",
+    "counts": {
+      "future_city_images": 5,
+      "policy_headings": 12,
+      "plus_cycle_strategies": 5,
+      "promoted_implementation_item_actual_records": 0,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "current_plan_period_reviewed": true,
+    "current_plan_policy_structure_reviewed": true,
+    "previous_plan_transition_reviewed": true,
+    "implementation_plan_layer_reviewed": true,
+    "fiscal_states_and_years_separate": true,
+    "budget_enactment_state_preserved": true,
+    "settlement_source_precision_preserved": true,
+    "settlement_linkage_not_assessable_preserved": true,
+    "individual_implementation_items_not_overpromoted": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "current-plan-granular-kpi-and-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "第15次総合計画の全施策・全KPIの網羅的集計と、個別の事業・指標の詳細・実績の全件identityおよび細粒度linkageは追加depthとし、公式対応とstable evidence locatorを確認できたものだけを追加昇格する。名称類似だけで接続しない。"
+    },
+    {
+      "id": "basic-concept-full-text-confirmation",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "基本構想全体版PDFの全文確認は未実施である。計画期間・構成・枠組みは公式計画ページと推進計画資料で確認済みだが、全体版PDFの全頁を通した確認は追加depthとする。"
+    },
+    {
+      "id": "plan-transition-old-new-mapping",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "第14次計画と第15次計画の施策・KPIの新旧対応は未確認である。両計画は別計画として保持し、対応表を公式資料で確認できるまで年度横断の同一項目結合はしない。"
+    },
+    {
+      "id": "current-plan-annual-evaluation-evidence",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "現行計画（2026年度開始）の年次評価・進捗実績を示す公式資料はv1では未昇格とする。FY2024決算は前計画期間の決算であり、現行計画の実績として流用しない。"
+    },
+    {
+      "id": "fiscal-detail-and-amendment-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "v1ではFY2026一般会計当初予算（成立）とFY2024一般会計決算歳入・歳出をstate分離して保持する。補正、執行、個別事業費、契約、補助金への接続は追加Evidenceレビューとする。FY2024決算と個別事業の接続はnot_assessableのまま保持する。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "政策体系、推進計画の枠組み、財政トップラインのレビューは政策効果の因果認定や他都市比較可能性を意味しない。専用方法論なしに統合scoreやrankingへ昇格しない。"
+    }
+  ],
+  "completion_boundary": "秋田市のPhase 15 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味し、公開責任者（大杉邑大、単独運用体制）が2026-11-15に行ったレビュー承認に基づく。第15次秋田市総合計画（秋田市『プラスの循環』プラン）の計画期間が2026年度～2030年度であり、基本構想＋推進計画（第3期まち・ひと・しごと創生総合戦略と統合）の2部構成で、将来都市像5・政策見出し12・プラスの循環戦略5の枠組みを持つこと、前計画である第14次秋田市総合計画（県都『あきた』創生プラン、2021年度～2025年度）とは別の計画であり直接比較できないこと、FY2026一般会計当初予算144,180,000,000円が令和8年2月秋田市議会定例会で議案第2号として可決（賛成多数）された成立予算であることを市議会公式の議決結果ページで直接確認したこと、FY2024一般会計歳入154,582,839千円・歳出152,675,103千円を公式決算資料の千円単位source precisionでレビュー済みである。一方、第15次計画の全施策・全KPIの網羅的集計、基本構想全体版PDFの全文確認、第14次・第15次計画の施策新旧対応、現行計画の年次評価証拠、FY2024決算と個別事業の接続（not_assessableとして保持）、補正・執行・契約・補助金等の財政detailはdeferred_depthとして明示する。政策体系や財政のレビューをJichi Insight独自の政策達成度、因果効果、他都市比較可能性またはランキングへ変換しない。"
+}
