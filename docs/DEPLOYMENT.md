@@ -14,15 +14,74 @@ GitHub Pages was enabled on 2026-07-15 with **GitHub Actions** selected as the b
 
 This change records the repository-level activation and intentionally triggers the first production deployment after Pages enablement.
 
-## Environments
+## Environment boundary (adopted 2026-11-15)
 
-| Environment | Source | Data policy |
-|---|---|---|
-| Local | Working tree | Fictional fixtures and explicitly selected reviewed data |
-| Pull request | GitHub Actions build | Validation only; no public deployment |
-| Production | `main` | Published data only |
+This project is operated by a single publication owner and deployed as a
+static export. It deliberately does **not** run hosted preview or staging
+environments. The boundaries below are the adopted definition (Issue #11);
+they describe what actually exists, not an aspirational topology.
 
-A separate staging environment will be introduced before real evaluations are published. Until then, production pages may expose source coverage and methodology, but not unreviewed evaluation data.
+### Production
+
+- GitHub Pages, built by the `Deploy Pages` workflow from `main` only.
+- Published data only: production pages are generated from reviewed,
+  canonical records on `main`. Candidate (prepared) data is never part of
+  the production build — candidates carry `publication.eligible=false`,
+  the web data loaders are fail-closed, and contract tests assert that the
+  public web source does not import candidate staging data.
+- Every deployment is verified from outside the build artifact by the
+  Production Smoke workflow, and the result is recorded in
+  `.github/publication-status.json` (`verified` / `deployed_commit_sha`).
+
+### Pre-merge (the staging function)
+
+There is no hosted staging environment. Its function — checking changes
+against reviewed-but-not-yet-public data before anything ships — is
+fulfilled inside the repository:
+
+- All work happens on feature branches and reaches `main` only through a
+  pull request. Nothing merges without a local production build, the full
+  Python test suite, and the web contract tests passing; the `Quality`
+  workflow re-runs repository validation, tests, lint, type checking, the
+  production build, and static-export validation on the pull request.
+- Data changes follow the in-repository state transition instead of an
+  environment promotion: candidate (prepared, `publication.eligible=false`)
+  → human review by the publication owner → reviewed canonical records.
+  Reviewed-but-not-yet-public data exists only on branches and in pull
+  requests; it is never served publicly before merge.
+- Honest limitation: GitHub branch protection is not configured (Issue #2),
+  so the merge gate is enforced by this documented process and the PR-only
+  workflow, not by a technical merge block.
+
+### Preview
+
+- Preview is the local build output only. No hosted per-PR preview URL is
+  issued, and no PR preview deployment exists.
+- The pre-merge substitute is building the exact production artifact
+  locally (including the production base path) and running the
+  static-export smoke test, which is what CI does for every pull request.
+- Hosted per-PR previews remain a future option to revisit if local
+  verification becomes insufficient; they are not a current capability
+  and must not be described as one.
+
+### Rollback
+
+- Rollback is a revert of the faulty merge through a pull request,
+  followed by redeployment from `main` (see "Rollback" below and
+  `docs/OPERATIONS_RUNBOOK.md` §7). Force-pushing `main` is prohibited.
+- The procedure was executed end to end before the formal release
+  (revert → redeploy drill, PRs #471 and #472).
+
+### Issue #11 acceptance criteria — disposition
+
+| Criterion | Disposition |
+|---|---|
+| Every UI PR receives a preview URL | **Deferred by this definition.** No hosted preview exists; the local production build plus CI static-export smoke is the adopted substitute. Hosted previews are a future option, not a current capability. |
+| Staging uses reviewed but not-yet-public data | **Satisfied by this definition.** The staging function is the in-repository state transition on branches/PRs described above; reviewed-but-not-yet-public data is never publicly served. |
+| Production uses published data only | **Satisfied by existing practice.** Production builds only from `main`; candidate data is excluded by `publication.eligible=false`, fail-closed loaders, and contract tests. |
+| A failed quality gate cannot deploy to production | **Satisfied by existing practice.** Deployment is only from `main`; pull requests must pass the local gate and the `Quality` workflow before merge. Caveat: enforcement is procedural until branch protection is configured (Issue #2). |
+| Rollback is documented and tested | **Satisfied by existing practice.** Documented below and in `docs/OPERATIONS_RUNBOOK.md` §7; tested in the pre-release drill (PRs #471, #472). |
+| Monitoring and incident ownership are documented | **Satisfied by existing practice.** `docs/OPERATIONS_RUNBOOK.md` §2 (roles), §6 (incident levels), §9 (monitoring), §11 (weekly post-release stability checks). Recorded limitation: no automated alerting; detection relies on the weekly checks, merge-time publication verification, and user reports. |
 
 ## Deployment flow
 

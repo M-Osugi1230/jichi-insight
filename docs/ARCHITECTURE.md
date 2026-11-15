@@ -75,8 +75,8 @@ Static pages / search index
 | Environment | Purpose |
 |---|---|
 | local | 開発とデータ確認 |
-| preview | PR単位の表示確認 |
-| staging | 公開前データ・回帰確認 |
+| preview | 専用環境は持たない。PR単位の表示確認はローカルproduction buildで代替（境界の定義は docs/DEPLOYMENT.md） |
+| staging | 専用環境は持たない。公開前データ・回帰確認はブランチ／PRとリポジトリ内の状態遷移で代替（同上） |
 | production | 公開条件を満たした内容のみ |
 
 ## Source of truth
