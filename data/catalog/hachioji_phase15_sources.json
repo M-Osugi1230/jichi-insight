@@ -1,0 +1,55 @@
+{
+  "id": "hachioji-phase15-sources",
+  "phase": 15,
+  "official_code": "132012",
+  "name_ja": "八王子市",
+  "reviewed_at": "2026-11-16",
+  "quality_boundary": "Current plan identity kept as published (Hachioji Future Design 2040: basic concept adopted unanimously by the city council in December 2012 and inherited; basic plan FY2023-FY2030 under six city images with 37 measures; the '2040' in the plan name is the outlook year, not the plan period), implementation layer (management plan first period FY2023-FY2026 plus annual action plans, progress governed by three-tier administrative evaluation), budget enactment confirmed on the council's official session pages (bill No. 5 passed on 2026-03-26), and settlement totals kept at exact yen precision from the audit commission's settlement review opinion without collapsing proposed, enacted, supplementary, or settlement states.",
+  "sources": [
+    {
+      "id": "hachioji-future-design",
+      "title": "八王子未来デザイン2040",
+      "official_url": "https://www.city.hachioji.tokyo.jp/shisei/001/001/005/001/p031827.html",
+      "format": "html",
+      "evidence_role": "comprehensive_plan",
+      "evidence_location": "八王子市公式Webサイト『八王子未来デザイン2040』ページに、最上位計画が基本構想と基本計画で構成されること、基本構想は市民184名の市民会議の素案を踏まえ平成24年（2012年）12月に市議会で全会一致で可決されたものを継承すること、基本計画の期間（令和5年度～令和12年度）を記載し、本冊・別冊・概要版の各PDFへリンク。基本理念と施策体系は同概要版で確認",
+      "use_boundary": "計画名の『2040』という将来像の展望年と基本計画期間（2023年度～2030年度）を混同しない。基本構想（2012年議決）と基本計画のversionを分離して保持する。"
+    },
+    {
+      "id": "hachioji-management-plan",
+      "title": "経営計画・アクションプラン",
+      "official_url": "https://www.city.hachioji.tokyo.jp/shisei/001/001/005/001/p031841.html",
+      "format": "html",
+      "evidence_role": "implementation_plan",
+      "evidence_location": "八王子市公式Webサイト『八王子市経営計画（2023年度から2026年度まで）』ページに、未来デザイン2040の実現に向けた行動計画としての位置付け、前期の計画期間（令和5年度～令和8年度）、5章構成（計画の概要・行財政運営の基本取組・中期財政フレーム編・経営改革編・重点事業編）を記載し、各章PDFへリンク",
+      "use_boundary": "経営計画をcurrent actionable layerとして基本計画と別versionで保持し、重点事業編の事業を基本計画の施策そのものへ読み替えない。後期計画や年次アクションプランの改定は別versionとして扱う。"
+    },
+    {
+      "id": "hachioji-administrative-evaluation",
+      "title": "八王子市の行政評価",
+      "official_url": "https://www.city.hachioji.tokyo.jp/shisei/001/004/004/001/p007406.html",
+      "format": "html",
+      "evidence_role": "progress_governance",
+      "evidence_location": "八王子市公式Webサイト『八王子市の行政評価』ページに、八王子未来デザイン2040の着実な進行と市政の透明性の向上を目的として、重点テーマ・取組方針に関連付けた施策へ指標と目標値を設定し、施策評価・事務事業評価・細事業評価の3層で評価し、結果を毎年度の予算編成へ反映する運用と行政評価実施要綱を記載",
+      "use_boundary": "自治体自己評価をJichi Insight独自の達成判定へ変換しない。評価の枠組みのみを保持し、個別施策の達成度そのものは本候補では記録しない。"
+    },
+    {
+      "id": "hachioji-budget-2026",
+      "title": "令和8年度（2026年度）予算の概要",
+      "official_url": "https://www.city.hachioji.tokyo.jp/shisei/001/010/001/001/p037011.html",
+      "format": "html",
+      "evidence_role": "budget",
+      "evidence_location": "八王子市公式Webサイト『令和8年度（2026年度）予算の概要』ページはFY2026当初予算の公式入口。同ページからリンクされる『予算規模』PDFに一般会計245,100,000千円を記載し、『一般会計歳入歳出』PDFの歳入・歳出表でも合計245,100,000千円を確認。議決は八王子市議会公式『令和8年第1回定例会』ページの議案一覧に第5号議案の可決を記載",
+      "use_boundary": "FY2026当初予算は議決・成立済みの額として扱い、proposal/enacted/supplementaryをPhase 15でstage分離する。"
+    },
+    {
+      "id": "hachioji-financial-disclosure",
+      "title": "八王子市財政事情の公表",
+      "official_url": "https://www.city.hachioji.tokyo.jp/shisei/001/010/001/007/p007409.html",
+      "format": "html",
+      "evidence_role": "settlement_and_annual_results",
+      "evidence_location": "八王子市公式Webサイト『八王子市財政事情の公表』ページは財政公表の公式入口（財政白書等の関連資料へリンク）。FY2024決算の円単位総額は監査委員の公式『令和6年度八王子市一般会計・各特別会計歳入歳出決算審査意見書』の各会計決算総括表（単位 円）で確認し、市公式『令和6年度（2024年度）決算について』ページの決算概要（万円表示）・『八王子市財政白書』（令和7年度版）の千円単位表とも整合。認定は八王子市議会公式『令和7年第3回定例会』ページの議案一覧に第133号議案の認定を記載",
+      "use_boundary": "FY2024決算認定と財政公表の公式入口。決算総額を基本計画の個別施策・経営計画の重点事業の実績へ直接流用しない。千円単位表は四捨五入・合計調整済みの表示であり、円単位総額の代替として合成しない。"
+    }
+  ]
+}

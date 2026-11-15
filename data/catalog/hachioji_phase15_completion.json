@@ -1,0 +1,71 @@
+{
+  "id": "hachioji-phase15-completion",
+  "phase": 15,
+  "status": "reviewed_complete",
+  "official_code": "132012",
+  "name_ja": "八王子市",
+  "completed_at": "2026-11-16",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "source_catalog_path": "data/catalog/hachioji_phase15_sources.json",
+    "plan_review_path": "data/reviewed/hachioji-city/plan_review.json",
+    "policy_structure_path": "data/catalog/hachioji_current_policy_structure.json",
+    "progress_review_path": "data/catalog/hachioji_current_progress_review_summary.json",
+    "fiscal_records_path": "data/reviewed/hachioji-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/hachioji-city/evidence_packets.json",
+    "counts": {
+      "basic_goals": 6,
+      "basic_plan_measures": 37,
+      "promoted_implementation_item_actual_records": 0,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "current_plan_period_reviewed": true,
+    "current_plan_policy_structure_reviewed": true,
+    "implementation_plan_layer_reviewed": true,
+    "fiscal_states_and_years_separate": true,
+    "budget_enactment_state_preserved": true,
+    "settlement_linkage_not_assessable_preserved": true,
+    "individual_implementation_items_not_overpromoted": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "current-plan-granular-kpi-and-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "基本計画の細施策・KPI（数値目標・重要業績評価指標）、経営計画の重点事業・年次アクションプランの詳細および行政評価の個別評価結果は追加depthとし、公式対応が確認できるまで昇格しない。経営計画は前期・後期と年次改定でversionが分かれるため、期版を分離して保持する。"
+    },
+    {
+      "id": "current-plan-full-text-confirmation",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "八王子未来デザイン2040（基本構想・基本計画）および八王子市経営計画の本編全文の通読確認は未実施であり、枠組みレベルの確認（公式ページと概要版による都市像・施策名の確認を含む）に留める。"
+    },
+    {
+      "id": "settlement-audit-opinion-inspection",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "監査委員の決算審査意見書は各会計決算総括表の円単位総額の確認に用いたが、意見書の意見内容そのものの精査は未実施であり、総額と認定経過の確認に留める。"
+    },
+    {
+      "id": "current-plan-annual-evaluation-evidence",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "行政評価の個別評価結果（施策評価・事務事業評価・細事業評価）など進行管理の個別エビデンスは昇格しない。制度の枠組みのみを確認した。"
+    },
+    {
+      "id": "fiscal-detail-and-amendment-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "予算・決算の項目別内訳（決算事項別明細書の款別合計との突合を含む）、補正予算による変更経過、執行・契約・補助金の接続は記録しない。あわせて、本会議録による議決経過の最終確認は未実施である。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "政策効果の因果認定、Jichi Insight独自の政策達成度スコア、他都市との未検証の比較・ランキングは作成しない。行政評価（自治体自己評価）をJichi Insight独自の達成判定へ変換しない。"
+    }
+  ],
+  "completion_boundary": "八王子市のPhase 15 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味し、所有者（大杉邑大、単独運用体制）が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが八王子市公式サイトの一次資料で検証した結果に基づく（所有者本人が一次資料を直接レビューしたものではない）。八王子市の計画体系（八王子未来デザイン2040は基本構想と基本計画で構成され、基本構想は平成24年（2012年）12月に市議会で全会一致で可決されたものを継承し、基本計画は2040年を展望して令和5年度～令和12年度（2023年度～2030年度）の8か年で、基本構想の6つの都市像のもとに37の施策を体系化する。基本理念は『人とひと、人と自然が響き合い、みんなで幸せを紡ぐまち八王子』。計画名の『2040』は将来像の展望年であり基本計画期間ではない。実施・進行管理は経営計画（前期 2023年度～2026年度）と年次アクションプラン、行政評価（施策評価・事務事業評価・細事業評価の3層）が担う）、成立したFY2026一般会計当初予算（245,100,000千円、第5号議案・2026年3月26日に可決）、FY2024一般会計決算の円単位総額（歳入241,406,662,517円・歳出236,288,910,299円）とその認定（第133号議案・2025年10月8日に認定）を一次資料で確認した。FY2024決算は現行基本計画期間内の決算であるが、決算総額は款別の集計値であり、基本計画の個別施策・経営計画の重点事業との接続はnot_assessableとして保持する。基本計画の細施策・KPI、経営計画の重点事業・アクションプランの詳細、行政評価の個別評価結果、計画書本編の全文確認、決算審査意見書の意見内容の精査、財政の項目別詳細はdeferred depthである。Jichi Insight独自の政策達成度スコアや他都市とのランキングは作成しない。行政評価（自治体自己評価）をJichi Insight独自の達成判定へ変換しない。"
+}

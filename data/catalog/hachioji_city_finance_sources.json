@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-16",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "hachioji-city-home",
+      "municipality_key": "hachioji-city",
+      "organization": "八王子市",
+      "category": "municipality_profile",
+      "title": "八王子市公式サイト",
+      "url": "https://www.city.hachioji.tokyo.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "八王子市の公式自治体サイト。"
+    },
+    {
+      "id": "hachioji-budget-2026",
+      "municipality_key": "hachioji-city",
+      "organization": "八王子市",
+      "category": "budget",
+      "title": "令和8年度（2026年度）予算の概要",
+      "url": "https://www.city.hachioji.tokyo.jp/shisei/001/010/001/001/p037011.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算245,100,000千円（第5号議案）のEvidence。市議会の公式議案一覧で令和8年3月26日に可決された成立予算。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "hachioji-financial-disclosure",
+      "municipality_key": "hachioji-city",
+      "organization": "八王子市",
+      "category": "settlement",
+      "title": "八王子市財政事情の公表",
+      "url": "https://www.city.hachioji.tokyo.jp/shisei/001/010/001/007/p007409.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入241,406,662,517円・歳出236,288,910,299円を円単位で含む公式決算資料（監査委員の決算審査意見書の各会計決算総括表）。決算の認定は第133号議案（2025年10月8日に認定）。決算審査意見書の意見内容の精査は未実施。"
+    }
+  ]
+}
