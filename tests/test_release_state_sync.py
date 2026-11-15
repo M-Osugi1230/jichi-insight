@@ -83,7 +83,11 @@ def test_readme_and_checklist_agree_on_release_stage():
     stage_ja, stage_en = stage_match.group(1), stage_match.group(2)
 
     readme = README_PATH.read_text(encoding="utf-8")
-    status_match = re.search(r"^## Product status\s*$(.*?)(?=^## |\Z)", readme, flags=re.MULTILINE | re.DOTALL)
+    status_match = re.search(
+        r"^## Product status\s*$(.*?)(?=^## |\Z)",
+        readme,
+        flags=re.MULTILINE | re.DOTALL,
+    )
     assert status_match, "README is missing the '## Product status' section"
     status_section = status_match.group(1)
     assert stage_en in status_section
