@@ -111,8 +111,8 @@ def test_maebashi_promotion_is_reflected_in_queue_state():
     assert item["status"] == "reviewed_complete"
     assert item["completion_path"] == "data/catalog/maebashi_phase15_completion.json"
     assert (ROOT / item["completion_path"]).is_file()
-    assert queue["summary"]["reviewed_complete_count"] == 11
-    assert queue["summary"]["pending_record_review_count"] == 56
+    assert queue["summary"]["reviewed_complete_count"] == 12
+    assert queue["summary"]["pending_record_review_count"] == 55
     assert queue["summary"]["next_official_code"] == "072044"
 
 

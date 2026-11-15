@@ -76,14 +76,14 @@ def test_phase15_current_statuses_are_canonical():
     statuses = Counter(row["status"] for row in queue["execution_queue"])
 
     assert statuses == {
-        "reviewed_complete": 11,
-        "pending_record_review": 56,
+        "reviewed_complete": 12,
+        "pending_record_review": 55,
     }
     assert queue["summary"] == {
         "target_count": 67,
-        "reviewed_complete_count": 11,
+        "reviewed_complete_count": 12,
         "review_in_progress_count": 0,
-        "pending_record_review_count": 56,
+        "pending_record_review_count": 55,
         "blocked_source_inventory_count": 0,
         "next_official_code": "072044",
     }
@@ -105,6 +105,7 @@ def test_phase15_current_statuses_are_canonical():
         "郡山市",
         "宇都宮市",
         "前橋市",
+        "高崎市",
     ]
     assert completed[0]["completion_path"] == "data/catalog/hakodate_phase15_completion.json"
     assert completed[1]["completion_path"] == "data/catalog/asahikawa_phase15_completion.json"
@@ -117,6 +118,7 @@ def test_phase15_current_statuses_are_canonical():
     assert completed[8]["completion_path"] == "data/catalog/koriyama_phase15_completion.json"
     assert completed[9]["completion_path"] == "data/catalog/utsunomiya_phase15_completion.json"
     assert completed[10]["completion_path"] == "data/catalog/maebashi_phase15_completion.json"
+    assert completed[11]["completion_path"] == "data/catalog/takasaki_phase15_completion.json"
 
     current = [
         row
