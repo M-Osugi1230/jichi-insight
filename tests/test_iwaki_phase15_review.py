@@ -261,7 +261,7 @@ def test_iwaki_candidate_records_owner_approval():
     assert candidate["publication"]["eligible"] is False
 
 
-def test_iwaki_and_previous_fourteen_are_reviewed_complete_and_mito_is_next():
+def test_iwaki_and_previous_fourteen_are_reviewed_complete_and_koshigaya_is_next():
     queue = load(QUEUE)
     by_code = {row["official_code"]: row for row in queue["execution_queue"]}
 
@@ -277,8 +277,8 @@ def test_iwaki_and_previous_fourteen_are_reviewed_complete_and_mito_is_next():
     ):
         assert by_code[code]["status"] == "reviewed_complete"
 
-    assert queue["summary"]["reviewed_complete_count"] == 15
+    assert queue["summary"]["reviewed_complete_count"] == 16
     assert queue["summary"]["review_in_progress_count"] == 0
-    assert queue["summary"]["pending_record_review_count"] == 52
-    assert queue["summary"]["next_official_code"] == "082015"
-    assert by_code["082015"]["status"] == "pending_record_review"
+    assert queue["summary"]["pending_record_review_count"] == 51
+    assert queue["summary"]["next_official_code"] == "112224"
+    assert by_code["112224"]["status"] == "pending_record_review"

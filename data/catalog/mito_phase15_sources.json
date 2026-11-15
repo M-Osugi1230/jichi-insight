@@ -1,0 +1,46 @@
+{
+  "id": "mito-phase15-sources",
+  "phase": 15,
+  "official_code": "082015",
+  "name_ja": "水戸市",
+  "reviewed_at": "2026-11-15",
+  "quality_boundary": "Seventh comprehensive plan (basic concept 2024-2033, basic plans 2024-2028 and 2029-2033, three-year implementation plans prepared annually), budget enactment confirmed on the official council bill list (passed as proposed on 2026-03-18), and settlement totals kept at exact yen precision without collapsing proposed, enacted, supplementary, or settlement states.",
+  "sources": [
+    {
+      "id": "mito-seventh-plan",
+      "title": "水戸市第7次総合計画－みと魁・Nextプラン－",
+      "official_url": "https://www.city.mito.lg.jp/page/69724.html",
+      "format": "html",
+      "evidence_role": "comprehensive_plan",
+      "evidence_location": "水戸市公式Webサイト『水戸市第7次総合計画－みと魁・Nextプラン－を策定しました』ページ本文に『都市づくりの基本方針であり、水戸市における最上位計画となる「水戸市第7次総合計画－みと魁・Nextプラン－」を策定しました』『基本構想は…2024（令和6）年度から2033（令和15）年度までの10年間を計画期間としています』『基本計画は…前期基本計画が2024（令和6）年度から2028（令和10）年度まで、後期基本計画が2029（令和11）年度から2033（令和15）年度までの各5年間を計画期間としています』『基本計画・各論では、四つの柱（大項目）、11の中項目及び43の小項目を定める』と記載し、計画本編PDFへリンク",
+      "use_boundary": "最上位計画の10年間と前後期基本計画を確認し、基本構想・基本計画・年度実施計画を別layerで保持する。"
+    },
+    {
+      "id": "mito-implementation-2026-2028",
+      "title": "3か年実施計画（2026年度～2028年度）",
+      "official_url": "https://www.city.mito.lg.jp/page/116349.html",
+      "format": "html",
+      "evidence_role": "implementation_plan",
+      "evidence_location": "水戸市公式Webサイト『3か年実施計画（2026年度～2028年度）を策定しました』ページ本文に『2026（令和8）年度から2028（令和10）年度までの3年間で取り組む主な事業を位置付けました』と記載し、同実施計画PDF（第1部総論・第2部各論）へリンク。同ページに構成（総論：基本方針、期間とシステム、基本的指標、財政計画、重点プロジェクト等／各論：主要事業年度別計画、財政計画、施設整備計画）を掲載",
+      "use_boundary": "3年間の主要事業を毎年度ローリングし、実績評価を反映する運用を確認する。年度版を長期基本計画と同一versionへ統合しない。"
+    },
+    {
+      "id": "mito-budget-2026",
+      "title": "令和8年度予算の概要",
+      "official_url": "https://www.city.mito.lg.jp/page/110290.html",
+      "format": "html",
+      "evidence_role": "budget",
+      "evidence_location": "水戸市公式Webサイト『令和8年度予算の概要』ページからリンクされる『令和8年度当初予算の概要・主な事業』PDF『2 予算の規模等 (1) 予算の規模』表（単位 千円）に一般会計の令和8年度当初予算額130,814,000千円を記載。水戸市議会の『令和8年第1回定例会議案等一覧』に議案第26号『令和8年度水戸市一般会計予算』の議決結果『原案可決』を記載し、同定例会の日程表に最終日（令和8年3月18日）の本会議（委員長報告・議了）を記載",
+      "use_boundary": "FY2026当初予算は議決・成立済みの額として扱い、予算案段階の数値、補正予算、決算とは別stateで扱う。"
+    },
+    {
+      "id": "mito-settlement-2024",
+      "title": "令和6年度決算の概要",
+      "official_url": "https://www.city.mito.lg.jp/page/107758.html",
+      "format": "html",
+      "evidence_role": "settlement_and_annual_results",
+      "evidence_location": "水戸市公式Webサイト『令和6年度決算の概要』ページからリンクされる『令和6年度 各会計決算報告書・基金運用状況調書』PDFに、一般会計の歳入額128,541,227,654円・歳出額126,380,047,662円・差引額2,161,179,992円・実質収支額1,739,674,406円を記載（決算概要および第3表『一般会計決算総括』、単位 円）。水戸市議会の『令和7年第3回定例会議案等一覧』に認定第1号『令和6年度水戸市一般会計及び特別会計決算認定について』の議決結果『認定』を記載し、同定例会の日程表に会期（令和7年9月1日～9月22日）と最終日の本会議（委員長報告・議了）を記載",
+      "use_boundary": "FY2024決算は認定済みの総額（歳入・歳出）を決算報告書の範囲で確認する。個別事業の決算額を第7次総合計画の事業への接続や政策成果の判定へ変換しない。"
+    }
+  ]
+}

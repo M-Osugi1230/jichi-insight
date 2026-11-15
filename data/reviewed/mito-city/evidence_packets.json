@@ -1,0 +1,61 @@
+[
+  {
+    "id": "evidence-mito-city-2026-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-082015-fiscal-2026-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算は130,814,000千円（130,814,000,000円）であり、議案第26号として令和8年第1回水戸市議会定例会で原案可決された成立予算である。",
+        "source_ids": [
+          "mito-budget-2026"
+        ],
+        "location_note": "水戸市公式Webサイト『令和8年度予算の概要』ページからリンクされる『令和8年度当初予算の概要・主な事業』PDF『2 予算の規模等 (1) 予算の規模』表（単位 千円）に一般会計の令和8年度当初予算額130,814,000千円を記載。水戸市議会の『令和8年第1回定例会議案等一覧』では議案第26号『令和8年度水戸市一般会計予算』が原案可決と記録され、同定例会の日程表では最終日の令和8年3月18日に本会議（委員長報告・議了）を実施",
+        "decision": "accepted",
+        "review_note": "成立当初予算の額を公式の当初予算概要（千円単位明記）から抽出し、市議会の議案等一覧で議案第26号の原案可決（令和8年3月18日）を一次資料で直接確認したレビュー済みレコード。"
+      }
+    ],
+    "review_status": "reviewed",
+    "open_questions": []
+  },
+  {
+    "id": "evidence-mito-city-2024-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-082015-fiscal-2024-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計決算の歳入総額（歳入額）は128,541,227,654円である。当該決算を含む『令和6年度水戸市一般会計及び特別会計決算認定について』は、認定第1号として令和7年9月1日に令和7年第3回水戸市議会定例会へ提出され、令和7年9月22日に認定された。",
+        "source_ids": [
+          "mito-settlement-2024"
+        ],
+        "location_note": "水戸市公式Webサイト『令和6年度決算の概要』ページからリンクされる『令和6年度 各会計決算報告書・基金運用状況調書』PDFの一般会計決算概要および第3表『一般会計決算総括』（単位 円）の歳入額欄・差引額欄。決算認定の経過は、水戸市議会の『令和7年第3回定例会議案等一覧』における認定第1号の議決結果『認定』の記録と、同定例会の日程表（会期は令和7年9月1日から9月22日まで、最終日に本会議で委員長報告・議了）で確認",
+        "decision": "accepted",
+        "review_note": "決算報告書の一般会計歳入総額を円単位で抽出し、歳出総額との差引額2,161,179,992円で検算した。決算認定の番号（認定第1号）と認定日（令和7年9月22日）は議会の公式資料で直接確認したレビュー済みレコード。監査委員の決算審査意見の内容確認は未実施の残件として保持する。"
+      }
+    ],
+    "review_status": "reviewed",
+    "open_questions": [
+      "監査委員の決算審査意見の内容確認は未実施であり、残件として保持する。"
+    ]
+  },
+  {
+    "id": "evidence-mito-city-2024-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-082015-fiscal-2024-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計決算の歳出総額（歳出額）は126,380,047,662円であり、歳入歳出差引額は2,161,179,992円である。",
+        "source_ids": [
+          "mito-settlement-2024"
+        ],
+        "location_note": "同決算報告書PDFの一般会計決算概要および第3表『一般会計決算総括』（単位 円）の歳出額欄・差引額欄",
+        "decision": "accepted",
+        "review_note": "決算報告書の一般会計歳出総額を円単位で抽出し、歳入総額との差引額で検算したレビュー済みレコード。"
+      }
+    ],
+    "review_status": "reviewed",
+    "open_questions": []
+  }
+]

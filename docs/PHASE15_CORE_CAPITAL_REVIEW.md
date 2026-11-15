@@ -284,13 +284,25 @@ Declared v1 package:
 
 Deferred depth includes the individual projects and KPIs under the five pillars, the audit commission's settlement review opinion (not inspected), itemised cross-checks against the budget/settlement detail books, supplementary-budget history, fiscal project detail, causality and cross-city comparability (the no-fixed-end framework must not be measured with the same yardstick as fixed-period plans).
 
+## Sixteenth completion — Mito
+
+水戸市を16市目の`reviewed_complete`へ昇格しました（2026-11-15、所有者・大杉邑大がチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 水戸市第7次総合計画－みと魁・Nextプラン－ — basic concept 2024–2033 (vision 『こども育む くらし楽しむ みらいに躍動する 魁のまち・水戸』), basic plan in two halves (first 2024–2028, second 2029–2033; 総論＋各論）, three-year implementation plans prepared annually on a rolling basis (current edition 2026–2028). Three basic principles; the basic plan's 各論 is organised under four pillars （まち全体で「こどもたちを育むみと」／多くの人が集い、産業が集積する「活力あるみと」／命と健康、暮らしを守る「安全・安心なみと」／市民と行政で「共に創るみと」) with 11 mid-level items and 43 sub-items, plus two priority projects in the 総論 (Mission1 みとっこ未来プロジェクト／Mission2 若い世代の移住・定住加速プロジェクト）
+- FY2026 general-account initial budget: 130,814,000,000 yen (enacted; 議案第26号 原案可決 on 2026-03-18, the final day of the 1st regular session of Reiwa 8; amount from the official budget overview's 千円-denominated scale table, consistent with the mayor's press-conference summary)
+- FY2024 general-account settlement at exact yen precision: revenue 128,541,227,654 yen / expenditure 126,380,047,662 yen (balance 2,161,179,992 yen matches); certification 認定第1号 (covering the general and special accounts together) certified 2025-09-22. FY2024 is the first fiscal year of the seventh plan's period (no cross-plan attribution problem), but its item-level linkage to individual plan projects was not performed, so the linkage stays not_assessable
+
+Deferred depth includes the measures and KPIs under the four pillars (including the 43 sub-items), full-text confirmation of the plan book, the audit commission's settlement review opinion (not inspected), annual evaluation evidence under the implementation plans, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 15 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、宇都宮市、前橋市、高崎市、川越市、川口市
+- Reviewed complete: 16 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市
 - Review in progress: 0
-- Pending record review: 52
+- Pending record review: 51
 - Blocked source inventory: 0
-- Next official code: 082015
+- Next official code: 112224
 
 ## Definition of Phase 15 completion
 

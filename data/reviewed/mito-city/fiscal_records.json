@@ -1,0 +1,65 @@
+[
+  {
+    "id": "jp-local-082015-fiscal-2026-total-expenditure",
+    "municipality_id": "jp-local-082015",
+    "fiscal_year": 2026,
+    "stage": "initial_budget",
+    "account_type": "general",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算（可決）",
+    "amount_yen": 130814000000,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "sources": [
+      "mito-budget-2026"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "水戸市公式『令和8年度予算の概要』ページからリンクされる『令和8年度当初予算の概要・主な事業』PDFの予算規模表（単位 千円）に一般会計130,814,000千円と記載された令和8年度当初予算額。令和8年第1回水戸市議会定例会（会期 令和8年3月2日～3月18日）に議案第26号『令和8年度水戸市一般会計予算』として提出され、同定例会最終日の令和8年3月18日に原案可決された成立当初予算であり、予算案段階の額ではない。市長記者会見要旨（公式）の『一般会計の予算総額は1,308億1,400万円』とも一致する。補正予算や決算とは別stateで扱う。"
+  },
+  {
+    "id": "jp-local-082015-fiscal-2024-total-revenue",
+    "municipality_id": "jp-local-082015",
+    "fiscal_year": 2024,
+    "stage": "settlement",
+    "account_type": "general",
+    "metric": "total_revenue",
+    "metric_label": "一般会計決算歳入",
+    "amount_yen": 128541227654,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "mito-settlement-2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "水戸市公式『令和6年度決算の概要』ページからリンクされる『令和6年度 各会計決算報告書・基金運用状況調書』PDFの一般会計歳入額128,541,227,654円（第3表『一般会計決算総括』、単位 円）。歳出総額126,380,047,662円との差引額2,161,179,992円で検算が一致する（実質収支額は1,739,674,406円）。令和6年度決算は、一般会計及び特別会計を一括する認定第1号『令和6年度水戸市一般会計及び特別会計決算認定について』として令和7年9月1日に令和7年第3回定例会へ提出され、令和7年9月22日に認定された。FY2024は第7次総合計画の計画期間（2024年度～2033年度）の初年度にあたる。"
+  },
+  {
+    "id": "jp-local-082015-fiscal-2024-total-expenditure",
+    "municipality_id": "jp-local-082015",
+    "fiscal_year": 2024,
+    "stage": "settlement",
+    "account_type": "general",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計決算歳出",
+    "amount_yen": 126380047662,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "mito-settlement-2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "同決算報告書PDFの一般会計歳出額126,380,047,662円（予算現額134,855,417,954円）。歳入総額128,541,227,654円との差引額2,161,179,992円で検算が一致する。令和6年度決算は認定第1号として令和7年9月22日に認定された。"
+  }
+]
