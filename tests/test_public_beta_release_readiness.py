@@ -20,7 +20,7 @@ def test_release_checklist_reflects_completed_record_and_inventory_phases():
     assert phase14["status"] == "complete"
     assert phase14["coverage"]["source_inventory_complete_count"] == 67
 
-    assert "公開状態: **pre-alpha**" in checklist
+    assert "公開状態: **Public beta**" in checklist
     assert "15,327個票" in checklist
     assert "67/67の公式Source Inventory完了" in checklist
     assert "Phase 15の全67自治体レビュー完了はPublic betaの必須条件ではない" in checklist
@@ -49,11 +49,17 @@ def test_existing_production_smoke_is_scheduled_daily():
     assert "Upload smoke report" in workflow
 
 
-def test_beta_is_not_announced_before_human_release_gate():
+def test_beta_announcement_is_backed_by_the_recorded_human_release_gate():
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
     checklist = (ROOT / "docs/RELEASE_CHECKLIST.md").read_text(encoding="utf-8")
 
-    assert "pre-alpha" in readme
+    assert "Public beta" in readme
+    assert "pre-alpha" not in readme
     assert "Go / No-Go" in checklist
     assert "外部法務" in checklist
     assert "訂正・反論" in checklist
+    # The human release gate passed on 2026-11-15: the publication owner's
+    # approval is recorded in the checklist, and items that remain
+    # unimplemented at launch stay visibly marked as such.
+    assert "公開責任者・大杉邑大が正式Public betaへの移行を承認" in checklist
+    assert "未実施であることを本記録に明記したうえでPublic betaへ移行する" in checklist

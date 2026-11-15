@@ -6,7 +6,7 @@ Jichi Insight（自治体インサイト）は、自治体が公開する政策�
 
 ## Product status
 
-`Phase 15 active / Phase 14 complete / 20 designated cities reviewed / 47 prefectures complete / pre-alpha`
+`Phase 15 active / Phase 14 complete / 20 designated cities reviewed / 47 prefectures complete / Public beta`
 
 - 全国47都道府県: Phase 11まで完了
 - Phase 11個票基盤: 47都道府県・15,327レコード
