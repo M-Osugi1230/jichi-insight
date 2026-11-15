@@ -1,0 +1,47 @@
+{
+  "id": "maebashi-current-policy-structure",
+  "phase": 15,
+  "official_code": "102016",
+  "name_ja": "前橋市",
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-15",
+  "current_plan": {
+    "title": "第七次前橋市総合計画",
+    "period_label": "2018年度～2027年度（2018年3月策定）",
+    "start_fiscal_year": 2018,
+    "end_fiscal_year": 2027,
+    "structure": "基本構想と推進計画の2層構成。推進計画は3～4年ごとに見直す。基本構想は6つの『まちづくりの柱』（教育・人づくり／結婚・出産・子育て／健康・福祉／産業振興／シティプロモーション／都市基盤）を掲げ、推進計画は6柱に対応する6章で構成される。",
+    "components": [
+      {
+        "layer": "basic_concept",
+        "label_ja": "基本構想",
+        "period": "2018年度～2027年度"
+      },
+      {
+        "layer": "promotion_plan",
+        "label_ja": "推進計画",
+        "period": "3～4年ごとに見直し（現行は第3期 2025年度～2027年度）"
+      }
+    ],
+    "promotion_plan_chapters": {
+      "count": 6,
+      "names": [
+        "人をはぐくむまちづくり",
+        "希望をかなえるまちづくり",
+        "生涯活躍のまちづくり",
+        "活気あふれるまちづくり",
+        "魅力あふれるまちづくり",
+        "持続可能なまちづくり"
+      ],
+      "names_enumerated_in_v1": true,
+      "enumeration_boundary": "推進計画の章名は公式計画ページで確認できるためv1で列挙する。各章配下の重点施策・個別事業・KPIの全件列挙はdeferred depthであり、推測で補完しない。"
+    }
+  },
+  "enumeration_boundary": "推進計画の章名は公式計画ページで確認できるため列挙する。各章配下の重点施策・個別事業・KPIの全件列挙はdeferred depthである。",
+  "counts": {
+    "plan_layers": 2,
+    "promotion_plan_chapters": 6
+  },
+  "source_id": "maebashi-seventh-plan",
+  "review_boundary": "第七次前橋市総合計画の枠組み（2層構成・6つの柱・推進計画6章・第3期推進計画の期間）を確認した。個別事業・KPI・評価結果の全件列挙は本パッケージの範囲外。"
+}

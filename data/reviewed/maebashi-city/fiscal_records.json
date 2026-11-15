@@ -1,0 +1,66 @@
+[
+  {
+    "id": "jp-local-102016-fiscal-2026-total-expenditure",
+    "municipality_id": "jp-local-102016",
+    "fiscal_year": 2026,
+    "stage": "initial_budget",
+    "account_type": "general",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算（可決）",
+    "amount_yen": 161841682000,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "sources": [
+      "maebashi-budget-2026",
+      "maebashi-budget-2026-enactment"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "令和8年度当初予算資料（第1表 令和8年度会計別予算額調・第2表 一般会計歳出予算）の千円単位の成立額。当初予算市長説明の万円精度の記載（1,618億4,168万円）から候補で転記されていた161,841,680,000円は転記誤りであり、本パッケージで161,841,682,000円に訂正した（候補側も同ブランチで訂正）。成立は令和8年2月臨時会及び第1回定例会の議案第15号・可決（多数）。議決日2026年3月26日は議決結果PDF（r823）の賛否公表区分（3月26日議決分）に基づくもので、結果表自体には日付の印字がない。補正予算や決算とは別stateで扱う。"
+  },
+  {
+    "id": "jp-local-102016-fiscal-2024-total-revenue",
+    "municipality_id": "jp-local-102016",
+    "fiscal_year": 2024,
+    "stage": "settlement",
+    "account_type": "general",
+    "metric": "total_revenue",
+    "metric_label": "一般会計決算歳入",
+    "amount_yen": 159237541694,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "maebashi-settlement-2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "監査委員の令和6年度決算審査意見書の決算規模表（単位：円）に掲載された一般会計歳入の円単位の確定値。市の決算概要・決算額詳細PDFの万円表記（歳入1,592億3,754万円）とも整合する。決算の認定は令和7年第3回定例会の議案第94号『令和6年度前橋市一般会計決算認定について』可決（全員）（議決結果表r73。結果表に議決日の印字はない）。"
+  },
+  {
+    "id": "jp-local-102016-fiscal-2024-total-expenditure",
+    "municipality_id": "jp-local-102016",
+    "fiscal_year": 2024,
+    "stage": "settlement",
+    "account_type": "general",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計決算歳出",
+    "amount_yen": 154807075147,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "maebashi-settlement-2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "監査委員の令和6年度決算審査意見書の決算規模表（単位：円）に掲載された一般会計歳出の円単位の確定値。歳入歳出差引額は4,430,466,547円で意見書の記載と一致する。市の万円表記（歳出1,548億707万円）とも整合する。認定は議案第94号・可決（全員）。"
+  }
+]

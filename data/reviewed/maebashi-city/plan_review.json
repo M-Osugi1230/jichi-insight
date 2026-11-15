@@ -1,0 +1,66 @@
+{
+  "id": "phase15-maebashi-plan-review",
+  "official_code": "102016",
+  "name_ja": "前橋市",
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-15",
+  "next_action": "Promote the full measure/KPI enumeration under the six promotion-plan chapters and the individual administrative-evaluation results only when official sources with stable record-level locators have been reviewed; keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "quality_boundary": "This package reviews current plan identity and period (seventh comprehensive plan, 2018-2027, two layers: basic concept and promotion plan revised every three to four years, current third-term promotion plan 2025-2027), the six basic-concept pillars and the six promotion-plan chapters, the enacted FY2026 initial budget, and the FY2024 settlement at exact yen precision, without collapsing proposed, enacted, supplementary, or settlement states.",
+  "records": [
+    {
+      "id": "maebashi-current-plan-period",
+      "title": "第七次前橋市総合計画 計画期間と構成",
+      "statement": "第七次前橋市総合計画は2018年3月に策定され、計画期間は2018年度から2027年度までの10年間である。構成は基本構想と推進計画の2層であり、推進計画は3～4年ごとに見直される。FY2026は計画の9年目、FY2024は7年目にあたる。",
+      "value": "2018年度～2027年度",
+      "decision": "accepted",
+      "evidence_role": "current_plan_identity",
+      "source_url": "https://www.city.maebashi.gunma.jp/gyosei/6/1/2/14578.html",
+      "evidence_location": "本文『計画期間は2018年度から2027年度までの10年間としますが、推進計画は…3～4年ごとに見直しを行います』（基本構想と推進計画の2層構成）",
+      "review_note": "公式の第七次前橋市総合計画ページで計画期間・策定時期・2層構成を直接確認したレビュー済みレコード。"
+    },
+    {
+      "id": "maebashi-current-policy-structure",
+      "title": "第七次前橋市総合計画の政策体系（6つのまちづくりの柱と推進計画6章）",
+      "statement": "基本構想は6つの『まちづくりの柱』（教育・人づくり／結婚・出産・子育て／健康・福祉／産業振興／シティプロモーション／都市基盤）に基づくまちづくりを進める構成であり、推進計画はこの6柱に対応する6章（第1章 人をはぐくむまちづくり／第2章 希望をかなえるまちづくり／第3章 生涯活躍のまちづくり／第4章 活気あふれるまちづくり／第5章 魅力あふれるまちづくり／第6章 持続可能なまちづくり）で構成される。",
+      "value": 6,
+      "unit": "promotion_plan_chapters",
+      "decision": "accepted",
+      "evidence_role": "policy_structure",
+      "source_url": "https://www.city.maebashi.gunma.jp/gyosei/6/1/2/14578.html",
+      "evidence_location": "本文『2－3 まちづくりの柱』および推進計画の章立て（第1章～第6章）",
+      "review_note": "公式計画ページが明示した6柱と推進計画6章の対応を抽出したレビュー済みレコード。章配下の重点施策・個別事業の全件列挙は行わない。"
+    },
+    {
+      "id": "maebashi-promotion-plan-layer",
+      "title": "第3期推進計画（2025年度～2027年度）",
+      "statement": "現行の推進計画は第3期推進計画（2025年度～2027年度）であり、2025年度改訂版として公表されている。FY2026は第3期推進計画の2年目にあたる。推進計画は3～4年ごとに見直されるため、第3期の期間は基本構想の最終期間（2025年度～2027年度）と一致する。",
+      "value": "第3期推進計画 2025年度～2027年度",
+      "decision": "accepted",
+      "evidence_role": "implementation_layer",
+      "source_url": "https://www.city.maebashi.gunma.jp/gyosei/6/1/2/14578.html",
+      "evidence_location": "本文『第3期推進計画（2025年度から2027年度まで）』および2025年度改訂版の表記",
+      "review_note": "公式計画ページで現行推進計画の期と期間を直接確認したレビュー済みレコード。"
+    },
+    {
+      "id": "maebashi-evaluation-framework",
+      "title": "行政評価制度（総合計画の進行管理とPDCA）",
+      "statement": "前橋市は第七次前橋市総合計画の進行管理を目的として行政評価を実施し、PDCAサイクルにより重点施策のもとで実施する重点事業の取組状況等を評価・検証している。令和7年度行政評価の対象は2024年度（令和6年度）の重点事業51事業である。個別事業の評価結果は本パッケージでは昇格しない。",
+      "decision": "accepted",
+      "evidence_role": "progress_governance",
+      "source_url": "https://www.city.maebashi.gunma.jp/soshiki/seisaku/seisakusuishin/gyomu/5/1/1/47340.html",
+      "evidence_location": "本文『本市では、第七次前橋市総合計画の進行管理を目的として行政評価を実施しています』『評価対象・・・2024年度（令和6年度）の重点事業（51事業）』",
+      "review_note": "行政評価制度の枠組みと評価対象範囲を確認したレビュー済みレコード。自治体の評価結果をJichi Insight独自の政策達成判定へ変換しない。"
+    },
+    {
+      "id": "maebashi-fy2024-settlement-linkage",
+      "title": "令和6年度決算と第七次前橋市総合計画事業の接続",
+      "statement": "FY2024決算値と第七次前橋市総合計画の個別事業との接続は未判定（not_assessable）。FY2024は計画期間の7年目であり期間内であることは確認したが、決算と個別事業の対応関係は一次資料で確認できていない。",
+      "fiscal_year": 2024,
+      "decision": "not_assessable",
+      "evidence_role": "annual_progress",
+      "source_url": "https://www.city.maebashi.gunma.jp/material/files/group/107/shi-ikenshoR6.pdf",
+      "evidence_location": "令和6年度決算審査意見書の決算規模表（一般会計歳入・歳出の円単位額）",
+      "review_note": "期間帰属は確認したが個別事業レベルの接続は推測で記録しないための明示的な未判定レコード。"
+    }
+  ]
+}

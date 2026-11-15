@@ -1,0 +1,60 @@
+[
+  {
+    "id": "evidence-maebashi-city-2026-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-102016-fiscal-2026-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算の歳入歳出予算は161,841,682千円であり、議案第15号として可決（多数）され成立した。",
+        "source_ids": [
+          "maebashi-budget-2026",
+          "maebashi-budget-2026-enactment"
+        ],
+        "location_note": "令和8年度当初予算資料PDF 第1表・第2表（単位：千円）。議決は令和8年2月臨時会及び第1回定例会議案の議決結果PDF（r823）の第15号欄。議決日は同PDFの賛否公表区分『3月26日議決分』に基づく（結果表自体に日付の印字はない）",
+        "decision": "accepted",
+        "review_note": "当初予算資料の千円単位額と議決結果を一次資料で直接確認したレビュー済みレコード。候補の161,841,680,000円は市長説明の万円精度記載からの転記誤りであり訂正した。"
+      }
+    ],
+    "review_status": "reviewed",
+    "open_questions": []
+  },
+  {
+    "id": "evidence-maebashi-city-2024-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-102016-fiscal-2024-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計決算の歳入総額は159,237,541,694円であり、決算は議案第94号として認定された（可決（全員））。",
+        "source_ids": [
+          "maebashi-settlement-2024"
+        ],
+        "location_note": "令和6年度決算審査意見書 決算規模表（単位：円）。認定は令和7年第3回定例会議案の議決結果PDF（r73）の第94号欄（結果表に議決日の印字はない）",
+        "decision": "accepted",
+        "review_note": "監査委員の決算審査意見書の円単位額と議決結果表を一次資料で直接確認したレビュー済みレコード。"
+      }
+    ],
+    "review_status": "reviewed",
+    "open_questions": []
+  },
+  {
+    "id": "evidence-maebashi-city-2024-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-102016-fiscal-2024-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和6年度一般会計決算の歳出総額は154,807,075,147円であり、歳入歳出差引額4,430,466,547円と整合する。",
+        "source_ids": [
+          "maebashi-settlement-2024"
+        ],
+        "location_note": "令和6年度決算審査意見書 決算規模表（単位：円）",
+        "decision": "accepted",
+        "review_note": "監査委員の決算審査意見書の円単位額を一次資料で直接確認し、差引額で検算したレビュー済みレコード。"
+      }
+    ],
+    "review_status": "reviewed",
+    "open_questions": []
+  }
+]

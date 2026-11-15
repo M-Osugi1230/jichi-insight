@@ -224,11 +224,23 @@ Declared v1 package:
 
 Deferred depth includes the exhaustive enumeration of strategic projects, measures and KPIs under each pillar, full-text confirmation of the latter basic plan book, the yen-precision settlement totals (not printed in the checked official summary documents; the audit opinion PDF could not be text-extracted for figure matching), administrative evaluation results, the FY2024 settlement-to-item linkage (kept not_assessable), fiscal project detail, causality and cross-city comparability.
 
+## Eleventh completion — Maebashi
+
+前橋市を11市目の`reviewed_complete`へ昇格しました（2026-11-15、公開責任者・大杉邑大のレビュー承認に基づく）。
+
+Declared v1 package:
+
+- current comprehensive plan: 第七次前橋市総合計画 (formulated March 2018), period 2018–2027, two layers only — basic concept plus promotion plan (revised every 3–4 years); current promotion plan is the third-term plan 2025–2027 (2025 revised edition) with six chapters mirroring the six pillars of the basic concept
+- FY2026 general-account initial budget: 161,841,682,000 yen (enacted; 議案第15号 可決（多数）; vote date 2026-03-26 taken from the vote-disclosure section of the official result PDF, which does not print the date on the result table itself). The candidate's 161,841,680,000 yen was a transcription error from the mayor's 万円-precision explanation and is corrected in the candidate in this branch
+- FY2024 general-account settlement at exact yen precision from the Audit Commission's settlement review opinion: revenue 159,237,541,694 yen / expenditure 154,807,075,147 yen (balance 4,430,466,547 yen matches); certification 議案第94号 可決（全員） per the official result table (no vote date printed, so none is recorded)
+
+Deferred depth includes the exhaustive enumeration of priority measures, projects and KPIs under the six chapters, full-text confirmation of the plan book, individual administrative-evaluation results, the FY2024 settlement-to-item linkage (kept not_assessable), fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 10 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、宇都宮市
+- Reviewed complete: 11 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、宇都宮市、前橋市
 - Review in progress: 0
-- Pending record review: 57
+- Pending record review: 56
 - Blocked source inventory: 0
 - Next official code: 072044
 
