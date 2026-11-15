@@ -105,7 +105,7 @@ def test_prepared_morioka_candidate_retains_human_boundary_and_evidence_shape():
         "morioka-current-plan": "html",
         "morioka-implementation-2026-2028": "html",
         "morioka-budget-2026": "pdf",
-        "morioka-budget-book-2026": "html",
+        "morioka-budget-book-2026": "pdf",
         "morioka-settlement-2024": "pdf",
     }
     assert all(

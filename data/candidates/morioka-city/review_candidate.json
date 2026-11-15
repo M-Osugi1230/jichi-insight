@@ -44,11 +44,11 @@
         {
           "id": "morioka-budget-book-2026",
           "evidence_role": "budget_document",
-          "title": "令和8年度当初予算書および予算説明書",
-          "official_url": "https://www.city.morioka.iwate.jp/shisei/zaisei/suii/1054620/1056173.html",
-          "format": "html",
-          "evidence_location": "本文『令和8年度各会計当初予算書および予算説明書』",
-          "use_boundary": "FY2026予算書および予算説明書の公式子文書ページ入口を確認する。提案概要と予算書本体のEvidence roleを分離する。"
+          "title": "令和8年度盛岡市予算の概要について",
+          "official_url": "https://www.city.morioka.iwate.jp/_res/projects/default_project/_page_/001/055/667/R8.3-15.pdf",
+          "format": "pdf",
+          "evidence_location": "『1 総括表』一般会計 126,510,000千円",
+          "use_boundary": "FY2026当初予算の公式概要資料（財政課）。旧URL（令和8年度予算の概要ページ）は404のため、正本目録の差し替えに合わせて現行の公式PDFに差し替えた。予算書本体そのものではなく概要資料であり、金額の精密値は当初予算の概要PDF（morioka-budget-2026）で保持する。initialとsupplementaryを別stateで扱う。"
         },
         {
           "id": "morioka-settlement-2024",
