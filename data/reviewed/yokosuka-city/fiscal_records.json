@@ -1,0 +1,65 @@
+[
+  {
+    "id": "jp-local-142018-fiscal-2026-total-expenditure",
+    "municipality_id": "jp-local-142018",
+    "fiscal_year": 2026,
+    "stage": "initial_budget",
+    "account_type": "general",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算（可決）",
+    "amount_yen": 180120000000,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "sources": [
+      "yokosuka-budget-2026"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "横須賀市公式『令和8年度横須賀市予算書』に収録された議案第18号『令和8年度横須賀市一般会計予算』第1条に、歳入歳出予算の総額は歳入歳出それぞれ180,120,000千円と定められ、第1表歳入歳出予算の歳入合計・歳出合計も180,120,000千円で一致する（令和8年2月13日提出）。横須賀市議会公式『令和8年横須賀市議会3月定例議会 本会議の概要（第6日）』に、議案第18号は令和8年3月25日の本会議で賛成多数（反対10人）により原案どおり可決したと記録されている。議決を受けて成立した当初予算であり、予算案段階の額ではない。補正予算や決算とは別stateで扱う。"
+  },
+  {
+    "id": "jp-local-142018-fiscal-2024-total-revenue",
+    "municipality_id": "jp-local-142018",
+    "fiscal_year": 2024,
+    "stage": "settlement",
+    "account_type": "general",
+    "metric": "total_revenue",
+    "metric_label": "一般会計決算歳入",
+    "amount_yen": 177898477901,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "yokosuka-settlement-audit-2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "横須賀市監査委員の公式『令和6年度横須賀市一般会計・特別会計歳入歳出決算審査意見書』（横監第28号、令和7年8月29日）の第1表決算総括表（単位 円）の一般会計収入済額177,898,477,901円。支出済額171,999,984,597円との差引額5,898,493,304円で検算が一致する（同表の公表収支差引額と一致し、実質収支額は5,603,933,021円）。市公式『令和6年度決算収支状況（会計別）』の円単位総額とも一致する。令和6年度決算は議案第100号『令和6年度横須賀市一般会計歳入歳出決算』として令和7年9月定例議会で認定された（市議会公式の提出議案等議決結果（2）に令和7年10月7日『認定』（賛成多数）と記録）。"
+  },
+  {
+    "id": "jp-local-142018-fiscal-2024-total-expenditure",
+    "municipality_id": "jp-local-142018",
+    "fiscal_year": 2024,
+    "stage": "settlement",
+    "account_type": "general",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計決算歳出",
+    "amount_yen": 171999984597,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "yokosuka-settlement-audit-2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "同決算審査意見書の同表の一般会計支出済額171,999,984,597円。収入済額177,898,477,901円との差引額5,898,493,304円で検算が一致する。令和6年度決算は議案第100号として令和7年10月7日に認定された。"
+  }
+]

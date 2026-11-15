@@ -356,13 +356,25 @@ Declared v1 package:
 
 Deferred depth includes the individual sub-measures, KPIs and priority projects under the 37 measures and the management plan, full-text confirmation of the plan book, the substantive content of the audit commission's settlement review opinion, individual administrative-evaluation results, cross-checks against the settlement detail book, final confirmation of the vote proceedings against the plenary session minutes, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Twenty-second completion — Yokosuka
+
+横須賀市を22番目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: YOKOSUKAビジョン2030 — the city's top plan (横須賀市基本構想・基本計画), replacing the former three-layer structure (basic concept / basic plan / implementation plan) with a two-layer structure that integrates the basic concept and the basic plan; plan period FY2022–FY2029; city-wide future image 『変化を力に進むまち』, developed by backcasting from the desired future state and adopted as 議案第57号 on 2022-03-24; ten field-level future images （分野別未来像）, with the per-field policy directions beneath them not enumerated in v1; implementation and progress governance through the Yokosuka Rebirth Plan （横須賀再興プラン, current version 2026-2029, also serving as the machi-hito-shigoto comprehensive strategy) and administrative evaluation (implementation-plan progress management plus the general review of administrative work, advised by the Policy Promotion and Administrative Evaluation Committee)
+- FY2026 general-account initial budget: 180,120,000,000 yen (enacted; 議案第18号 passed as proposed on 2026-03-25 at the March 2026 regular council session; amount from Article 1 of the bill as published in the official budget book, 180,120,000千円, cross-checked against the first table's revenue/expenditure totals)
+- FY2024 general-account settlement at exact yen precision: revenue 177,898,477,901 yen / expenditure 171,999,984,597 yen (balance 5,898,493,304 yen matches the published 収支差引額 in the audit committee's settlement review opinion); certification 議案第100号 certified on 2025-10-07. FY2024 falls inside the current vision period and inside the previous implementation plan period (FY2022–FY2025), but its totals are section-level aggregates and are not linked to individual fields or projects, so the linkage stays not_assessable
+
+Deferred depth includes the full enumeration of the per-field policy directions under the ten field-level future images, the Rebirth Plan's individual projects, numerical targets and KPIs, individual administrative-evaluation results, full-text confirmation of the plan books, the substantive content of the audit committee's settlement review opinion, cross-checks against the settlement detail book, final confirmation of the vote proceedings against the plenary session minutes, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 21 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市
+- Reviewed complete: 22 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市
 - Review in progress: 0
-- Pending record review: 46
+- Pending record review: 45
 - Blocked source inventory: 0
-- Next official code: 142018
+- Next official code: 162019
 
 ## Definition of Phase 15 completion
 
