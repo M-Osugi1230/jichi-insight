@@ -39,21 +39,25 @@ def test_yamagata_candidate_staging_contract_validates():
     assert candidate["status"] == "review_candidate"
     assert candidate["package_state"] == "prepared"
     assert candidate["human_review"]["required"] is True
-    assert candidate["human_review"]["status"] == "pending"
-    assert candidate["human_review"]["reviewed_at"] is None
-    assert candidate["human_review"]["reviewer_note"] is None
+    assert candidate["human_review"]["status"] == "approved"
+    assert candidate["human_review"]["reviewed_at"] == "2026-11-15"
+    assert candidate["human_review"]["reviewer_note"]
+    assert "公開責任者" in candidate["human_review"]["reviewer_note"]
     assert candidate["publication"]["eligible"] is False
 
 
-def test_yamagata_candidate_does_not_promote_queue_state():
+def test_yamagata_candidate_promotion_is_reflected_in_queue_state():
     queue = load(QUEUE)
     yamagata_row = next(
         item for item in queue["execution_queue"]
         if item["official_code"] == "062014"
     )
 
-    assert yamagata_row["status"] == "pending_record_review"
-    assert not yamagata_row.get("completion_path")
+    assert yamagata_row["status"] == "reviewed_complete"
+    assert yamagata_row.get("completion_path") == (
+        "data/catalog/yamagata_phase15_completion.json"
+    )
+    assert (ROOT / yamagata_row["completion_path"]).is_file()
 
 
 def test_candidate_staging_is_not_referenced_by_public_web_source():
@@ -237,9 +241,9 @@ def test_prepared_yamagata_candidate_retains_human_boundary_and_evidence_shape()
 
     # Human Review & Publication boundaries
     assert candidate["human_review"]["required"] is True
-    assert candidate["human_review"]["status"] == "pending"
-    assert candidate["human_review"]["reviewed_at"] is None
-    assert candidate["human_review"]["reviewer_note"] is None
+    assert candidate["human_review"]["status"] == "approved"
+    assert candidate["human_review"]["reviewed_at"] == "2026-11-15"
+    assert candidate["human_review"]["reviewer_note"]
     assert candidate["publication"]["eligible"] is False
 
 

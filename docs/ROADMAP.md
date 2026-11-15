@@ -903,11 +903,11 @@ Phase 14で`source_inventory_complete`となった67自治体を、record-level 
 
 Canonical status:
 
-- Reviewed complete: 6 / 67（函館市、旭川市、青森市、八戸市、盛岡市、秋田市）
+- Reviewed complete: 7 / 67（函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市）
 - Review in progress: 0
-- Pending record review: 61
+- Pending record review: 60
 - Blocked source inventory: 0
-- Next official code: 062014
+- Next official code: 072010
 
 ### Milestone P15-M1 — First reviewed-complete core city
 
@@ -1033,6 +1033,25 @@ v1 declared package:
 - FY2024一般会計歳出 152,675,103千円
 
 第15次計画の全施策・全KPIの網羅的集計、基本構想全体版PDFの全文確認、第14次・第15次計画の施策新旧対応、現行計画の年次評価証拠、FY2024決算と個別事業の接続（not_assessableとして保持）、補正・執行・契約・補助金はdeferred depthです。
+
+### Milestone P15-M7 — Yamagata reviewed package
+
+Status: `complete`（2026-11-15）
+
+山形市をPhase 15の7市目の`reviewed_complete`自治体として確定しました（公開責任者・大杉邑大のレビュー承認に基づく）。
+
+v1 declared package:
+
+- 山形市発展計画2030 2025～2029（令和7年3月策定、「地方版総合戦略」を兼ねる）
+- 計画本編は第1章～第5章で構成され、第4章に19の政策分野を掲げる
+- 政策分野 19
+- 成果指標 45（政策分野ごとに基準値・目標値を設定）
+- 前計画：山形市発展計画2025 2020～2024（別計画であり直接比較しない）
+- FY2026一般会計当初予算 117,146,000,000円（議第8号 原案のとおり可決・成立予算、議決は市議会公式の議決議案一覧で確認）
+- FY2024一般会計歳入 114,253,058,301円
+- FY2024一般会計歳出 111,230,120,306円
+
+19政策分野・45成果指標の個別名称の全件列挙とKPI詳細、計画本編PDFの全文確認、発展計画2025と発展計画2030の新旧対応、現行計画の年次評価証拠、FY2024決算の認定日・認定結果、FY2024決算と個別事業の接続（not_assessableとして保持）、FY2026補正予算の有無、決算の施策別内訳、補正・執行・契約・補助金はdeferred depthです。
 
 ## After Phase 15
 
