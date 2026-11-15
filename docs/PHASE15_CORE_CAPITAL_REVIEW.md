@@ -248,11 +248,23 @@ Declared v1 package:
 
 Deferred depth includes the names of the 14 strategies and the measures under each field, full-text confirmation of the plan book, the yen-precision settlement totals, designated-project progress-management results, the FY2024 settlement-to-item linkage (kept not_assessable), fiscal project detail, causality and cross-city comparability.
 
+## Thirteenth completion — Kawagoe
+
+川越市を13市目の`reviewed_complete`へ昇格しました（2026-11-15、公開責任者・大杉邑大のレビュー承認に基づく）。
+
+Declared v1 package:
+
+- current comprehensive plan: 第五次川越市総合計画 — basic concept 2026–2035, first basic plan 2026–2030, second basic plan 2031–2035, implementation plan 2026–2028 (rolling); eight fields and 38 measures in the first basic plan (4/5/5/5/4/5/5/5 per field, field names enumerated from the official plan page; individual measure names are not enumerated); future city image 「ずっと安心、もっと幸せ、魅力あふれるまち 川越」
+- FY2026 general-account initial budget: 143,850,000,000 yen (enacted; 議案第29号 原案可決 on 2026-03-25, confirmed in the council newsletter 市議会だより 令和8年5月1日号）
+- FY2024 general-account settlement at exact yen precision: revenue 136,944,893,371 yen / expenditure 130,469,349,651 yen (balance 6,475,543,720 yen matches); certification 議案第66号 certified 2025-09-29 （市議会だより 令和7年11月1日号）. FY2024 belongs to the fourth plan's second basic plan (2021–2025, year 4), so its linkage to the current plan stays not_assessable
+
+Deferred depth includes the names and KPIs of the 38 measures, full-text confirmation of the plan book, evaluation evidence for the new plan (none exists yet), fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 12 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、宇都宮市、前橋市、高崎市
+- Reviewed complete: 13 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、宇都宮市、前橋市、高崎市、川越市
 - Review in progress: 0
-- Pending record review: 55
+- Pending record review: 54
 - Blocked source inventory: 0
 - Next official code: 072044
 

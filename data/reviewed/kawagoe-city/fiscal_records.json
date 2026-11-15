@@ -1,0 +1,66 @@
+[
+  {
+    "id": "jp-local-112011-fiscal-2026-total-expenditure",
+    "municipality_id": "jp-local-112011",
+    "fiscal_year": 2026,
+    "stage": "initial_budget",
+    "account_type": "general",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算（可決）",
+    "amount_yen": 143850000000,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "sources": [
+      "kawagoe-budget-2026",
+      "kawagoe-budget-2026-enactment"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "令和8年度一般会計当初予算の成立額（千円単位）。成立は議案第29号・原案可決（2026年3月25日、市議会だより令和8年5月1日号の議決結果で確認）。補正予算や決算とは別stateで扱う。"
+  },
+  {
+    "id": "jp-local-112011-fiscal-2024-total-revenue",
+    "municipality_id": "jp-local-112011",
+    "fiscal_year": 2024,
+    "stage": "settlement",
+    "account_type": "general",
+    "metric": "total_revenue",
+    "metric_label": "一般会計決算歳入",
+    "amount_yen": 136944893371,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "kawagoe-settlement-2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "令和6年度一般会計決算の歳入総額（円単位の確定値）。決算の認定は議案第66号（2025年9月29日認定、市議会だより令和7年11月1日号で確認）。FY2024は第四次総合計画の期間に帰属する決算であり、現行計画の実績とは扱わない。"
+  },
+  {
+    "id": "jp-local-112011-fiscal-2024-total-expenditure",
+    "municipality_id": "jp-local-112011",
+    "fiscal_year": 2024,
+    "stage": "settlement",
+    "account_type": "general",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計決算歳出",
+    "amount_yen": 130469349651,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "kawagoe-settlement-2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "令和6年度一般会計決算の歳出総額（円単位の確定値）。歳入歳出差引額は6,475,543,720円で整合する。認定は議案第66号（2025年9月29日認定）。"
+  }
+]

@@ -903,9 +903,9 @@ Phase 14で`source_inventory_complete`となった67自治体を、record-level 
 
 Canonical status:
 
-- Reviewed complete: 12 / 67（函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、宇都宮市、前橋市、高崎市）
+- Reviewed complete: 13 / 67（函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、宇都宮市、前橋市、高崎市、川越市）
 - Review in progress: 0
-- Pending record review: 55
+- Pending record review: 54
 - Blocked source inventory: 0
 - Next official code: 072044
 
@@ -1136,6 +1136,22 @@ v1 declared package:
 - FY2024決算の認定は議案第78号（令和7年第4回定例会）
 
 14戦略・施策の全件列挙、計画書本編の全文確認、FY2024決算の円単位総額、指定事業の進行管理結果、FY2024決算と個別事業の接続（not_assessableとして保持）、補正・執行・契約・補助金はdeferred depthです。
+
+### Milestone P15-M13 — Kawagoe reviewed package
+
+Status: `complete`（2026-11-15）
+
+川越市をPhase 15の13市目の`reviewed_complete`自治体として確定しました（公開責任者・大杉邑大のレビュー承認に基づく）。
+
+v1 declared package:
+
+- 第五次川越市総合計画（基本構想2026年度～2035年度、前期基本計画2026年度～2030年度、後期基本計画2031年度～2035年度、実施計画2026年度～2028年度ローリング、8分野・38施策、将来都市像『ずっと安心、もっと幸せ、魅力あふれるまち 川越』）
+- FY2026一般会計当初予算 143,850,000,000円（議案第29号・原案可決・成立予算）
+- FY2024一般会計歳入 136,944,893,371円
+- FY2024一般会計歳出 130,469,349,651円
+- FY2024決算の認定は議案第66号（2025年9月29日認定）。FY2024は第四次計画の後期基本計画（2021年度～2025年度）に帰属
+
+38施策の個別名称・KPIの全件列挙、計画書本編の全文確認、FY2024決算と現行計画事業の接続（not_assessableとして保持）、補正・執行・契約・補助金はdeferred depthです。
 
 ## After Phase 15
 
