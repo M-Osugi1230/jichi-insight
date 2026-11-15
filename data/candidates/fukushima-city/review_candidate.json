@@ -38,8 +38,8 @@
           "title": "当初予算の概要（令和8年度）",
           "official_url": "https://www.city.fukushima.fukushima.jp/shisei/gyozaisei/1/11082.html",
           "format": "html",
-          "evidence_location": "本文『令和8年度当初予算の概要』一般会計",
-          "use_boundary": "FY2026一般会計当初予算案の概要情報を確認する。補正予算や決算とは別stateで扱う。"
+          "evidence_location": "本文『令和8年度当初予算の概要』一般会計。総額は財政課『令和8年度予算』ページ（fukushima-budget-book-2026）の本文『令和8年度一般会計当初予算は、総額1,245億円（対前年マイナス8億円、マイナス0.6％）』で確認",
+          "use_boundary": "FY2026一般会計当初予算の概要情報を確認する。令和8年3月市議会定例会で議案第5号として可決・成立済みであり、予算案段階の数値ではない。補正予算や決算とは別stateで扱う。"
         },
         {
           "id": "fukushima-budget-book-2026",
@@ -53,11 +53,11 @@
         {
           "id": "fukushima-settlement-2024",
           "evidence_role": "settlement_and_audit",
-          "title": "財政公表（令和6年度決算）",
-          "official_url": "https://www.city.fukushima.fukushima.jp/soshiki/4/1012/1/1902.html",
-          "format": "html",
-          "evidence_location": "本文『令和6年度決算の概要』一般会計歳入歳出決算額",
-          "use_boundary": "FY2024一般会計決算歳入・歳出の公式トップラインを確認する。"
+          "title": "令和6年度福島市各会計歳入歳出決算書",
+          "official_url": "https://www.city.fukushima.fukushima.jp/material/files/group/70/R6kessansyo.pdf",
+          "format": "pdf",
+          "evidence_location": "『令和6年度福島市各会計歳入歳出決算一覧』（5頁）一般会計 収入済額136,983,126,064円（還付未済額14,429,710円を含む）／支出済額130,714,101,758円（単位:円）",
+          "use_boundary": "FY2024一般会計決算歳入・歳出の円単位exact値を保持する。財政公表ページ（https://www.city.fukushima.fukushima.jp/soshiki/4/1012/1/1902.html ）の『市政だより掲載 財政公表（令和6年度決算）』でも歳入総額1,369億8,313万円／歳出総額1,307億1,410万円と万円単位で整合する。"
         }
       ]
     },
@@ -189,14 +189,14 @@
         "account_type": "general",
         "stage": "initial_budget",
         "metric": "total_expenditure",
-        "metric_label": "一般会計当初予算案総額",
-        "amount_yen": 115000000000,
+        "metric_label": "一般会計当初予算総額",
+        "amount_yen": 124500000000,
         "value": null,
         "unit": "yen",
         "value_status": "available",
         "period_start": "2026-04-01",
         "period_end": "2027-03-31",
-        "note": "福島市公式公表の令和8年度一般会計当初予算（案）概要情報を記載。補正予算や決算とは別stateで扱う。",
+        "note": "福島市公式『令和8年度予算』ページ（財政課）の本文『令和8年度一般会計当初予算は、総額1,245億円（対前年マイナス8億円、マイナス0.6％）』に基づく。令和8年3月市議会定例会で議案第5号として可決・成立済みの当初予算であり、『予算案』表記は外した。市の公式表記は億円単位のため、千円単位の総額は『令和8年度当初予算の概要～特集～』の予算規模表との最終突合が残る。福島県市町村財政課の集計124,508,187千円は普通会計ベースで集計範囲が異なるため転記しない。補正予算や決算とは別stateで扱う。",
         "review_status": "needs_review",
         "confidence": "medium",
         "sources": [
@@ -211,13 +211,13 @@
         "stage": "settlement",
         "metric": "total_revenue",
         "metric_label": "一般会計収入済額",
-        "amount_yen": 125000000000,
+        "amount_yen": 136983126064,
         "value": null,
         "unit": "yen",
         "value_status": "available",
         "period_start": "2024-04-01",
         "period_end": "2025-03-31",
-        "note": "福島市公式公表の令和6年度一般会計決算の概要情報を記載。",
+        "note": "福島市公式『令和6年度福島市各会計歳入歳出決算書』の決算一覧（5頁、単位:円）の一般会計収入済額のexact source value（還付未済額14,429,710円を含む。調定額140,887,530,146円−不納欠損額103,941,104円−収入未済額3,814,892,688円＋還付未済額で検算一致）。公式『市政だより掲載 財政公表（令和6年度決算）』の一般会計歳入総額1,369億8,313万円とも万円単位で整合する。",
         "review_status": "needs_review",
         "confidence": "medium",
         "sources": [
@@ -232,13 +232,13 @@
         "stage": "settlement",
         "metric": "total_expenditure",
         "metric_label": "一般会計支出済額",
-        "amount_yen": 121000000000,
+        "amount_yen": 130714101758,
         "value": null,
         "unit": "yen",
         "value_status": "available",
         "period_start": "2024-04-01",
         "period_end": "2025-03-31",
-        "note": "福島市公式公表の令和6年度一般会計決算の概要情報を記載。",
+        "note": "福島市公式『令和6年度福島市各会計歳入歳出決算書』の決算一覧（5頁、単位:円）の一般会計支出済額のexact source value。公式『市政だより掲載 財政公表（令和6年度決算）』の一般会計歳出総額1,307億1,410万円とも万円単位で整合する。",
         "review_status": "needs_review",
         "confidence": "medium",
         "sources": [
@@ -254,17 +254,17 @@
         "claims": [
           {
             "field": "amount_yen",
-            "statement": "令和8年度一般会計当初予算の公式概要情報を保持する。",
+            "statement": "令和8年度一般会計当初予算総額1,245億円（124,500,000,000円）を市公式ページの表記で保持する。",
             "source_ids": [
               "fukushima-budget-2026"
             ],
-            "location_note": "福島市ホームページ『当初予算の概要（令和8年度）』",
+            "location_note": "福島市公式『令和8年度予算』ページ（財政課）本文『令和8年度一般会計当初予算は、総額1,245億円（対前年マイナス8億円、マイナス0.6％）』。令和8年3月市議会定例会で議案第5号として可決・成立済み",
             "decision": "needs_review",
-            "review_note": "当初予算概要情報を抽出。人間による確認待ちステージング。"
+            "review_note": "候補の概数115,000,000,000円は一次資料と一致せず、市公式ページで確認した1,245億円に修正し、成立済み予算のためmetric_labelから『案』を外した。千円単位の総額は未突合（open_questions参照）。人間による確認待ちステージング。"
           }
         ],
         "open_questions": [
-          "正式な議決予算書および審査意見書との最終数値突合。"
+          "『令和8年度当初予算の概要～特集～』掲載の千円単位の一般会計総額との最終突合（現記録は市公式ページの億円単位表記に基づく）。福島県集計の普通会計額124,508,187千円は集計範囲が異なるため一般会計額として転記しない。"
         ],
         "review_status": "needs_review"
       },
@@ -275,13 +275,13 @@
         "claims": [
           {
             "field": "amount_yen",
-            "statement": "令和6年度一般会計決算歳入の公式概要情報を保持する。",
+            "statement": "令和6年度一般会計決算歳入（収入済額）136,983,126,064円を決算書の円単位exact値で保持する。",
             "source_ids": [
               "fukushima-settlement-2024"
             ],
-            "location_note": "福島市ホームページ『財政公表（令和6年度決算）』",
+            "location_note": "福島市公式『令和6年度福島市各会計歳入歳出決算書』決算一覧（5頁）一般会計 収入済額（単位:円、還付未済額14,429,710円を含む）",
             "decision": "needs_review",
-            "review_note": "決算概要情報を抽出。人間による確認待ちステージング。"
+            "review_note": "候補の概数125,000,000,000円は決算書と一致せず、一次資料で確認したexact値に修正。人間による確認待ちステージング。"
           }
         ],
         "open_questions": [],
@@ -294,13 +294,13 @@
         "claims": [
           {
             "field": "amount_yen",
-            "statement": "令和6年度一般会計決算歳出の公式概要情報を保持する。",
+            "statement": "令和6年度一般会計決算歳出（支出済額）130,714,101,758円を決算書の円単位exact値で保持する。",
             "source_ids": [
               "fukushima-settlement-2024"
             ],
-            "location_note": "福島市ホームページ『財政公表（令和6年度決算）』",
+            "location_note": "福島市公式『令和6年度福島市各会計歳入歳出決算書』決算一覧（5頁）一般会計 支出済額（単位:円）",
             "decision": "needs_review",
-            "review_note": "決算概要情報を抽出。人間による確認待ちステージング。"
+            "review_note": "候補の概数121,000,000,000円は決算書と一致せず、一次資料で確認したexact値に修正。人間による確認待ちステージング。"
           }
         ],
         "open_questions": [],
