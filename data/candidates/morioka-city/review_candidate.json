@@ -347,10 +347,10 @@
   ],
   "human_review": {
     "required": true,
-    "status": "pending",
+    "status": "approved",
     "boundary": "A person must check the candidate against the cited primary sources before any promotion to reviewed_complete. Official primary source locators and pending boundaries are strictly preserved.",
-    "reviewed_at": null,
-    "reviewer_note": null
+    "reviewed_at": "2026-11-15",
+    "reviewer_note": "公開責任者（大杉邑大、単独運用体制）が2026-11-15にレビューを承認し、reviewed_completeへの昇格を決定した。財政数値は一次資料で検証済み（候補修正 PR #474、正本目録修正 PR #480、候補側リンク修正 PR #482）。公式議決結果ページ（HTML）での議案第3号の直接確認は未達であり、reviewed パッケージの evidence packet、completion の deferred_depth と completion_boundary に残存事項として明記した。"
   },
   "publication": {
     "eligible": false,

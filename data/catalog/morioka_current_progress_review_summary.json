@@ -1,0 +1,26 @@
+{
+  "id": "morioka-current-progress-review-summary",
+  "phase": 15,
+  "official_code": "032018",
+  "name_ja": "盛岡市",
+  "reviewed_at": "2026-11-15",
+  "current_implementation_plan": {
+    "title": "盛岡市総合計画実施計画（令和7年度から16年度）",
+    "period": "2026年度～2028年度（毎年度ローリング）",
+    "rolling_structure": "実施計画は基本構想に掲げた施策を具体化するものであり、3年間の計画期間を対象とし毎年度ローリングにより見直す進行管理設計。",
+    "current_period_item_actuals": {
+      "status": "not_promoted_in_v1",
+      "boundary": "実施計画の個別事業・指標のidentityと実績はv1では昇格しない。ローリング構造の確認は個別実績の確認を意味しない。"
+    }
+  },
+  "evaluation_evidence": {
+    "status": "not_promoted_in_v1",
+    "boundary": "現行計画（2025年度開始）の年次評価・進捗実績を示す公式資料は、正本目録に評価roleのsourceが無く、v1では未昇格とする。FY2024決算は現行計画開始前年度の決算であり、現行計画のannual progressとして流用しない。"
+  },
+  "fiscal_linkage": {
+    "fiscal_year": 2024,
+    "status": "not_assessable",
+    "boundary": "FY2024決算と個別実施計画事業との完全細粒度接続は未判定（not_assessable）として保持する。"
+  },
+  "review_status": "reviewed_with_explicit_deferred_depth"
+}

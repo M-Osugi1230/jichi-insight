@@ -1,0 +1,84 @@
+{
+  "id": "morioka-current-policy-structure",
+  "phase": 15,
+  "official_code": "032018",
+  "name_ja": "盛岡市",
+  "current_plan": {
+    "title": "盛岡市総合計画基本構想",
+    "start_fiscal_year": 2025,
+    "end_fiscal_year": 2034,
+    "vision": "輝きが増し 活力に満ち 夢をかなえるまち盛岡",
+    "basic_goals": [
+      {
+        "id": "goal-1",
+        "name_ja": "豊かな地域資源が活力を生み出すまちづくり",
+        "measures": [
+          "商工業の振興",
+          "農林業の振興",
+          "雇用対策の充実",
+          "魅力の創造・発信",
+          "観光の振興",
+          "歴史・文化の継承"
+        ]
+      },
+      {
+        "id": "goal-2",
+        "name_ja": "人を育み未来を選べるまちづくり",
+        "measures": [
+          "子ども・若者への支援",
+          "子どもの教育の充実",
+          "人権尊重・男女共同参画の推進",
+          "芸術文化の振興",
+          "スポーツの推進",
+          "生涯学習の推進"
+        ]
+      },
+      {
+        "id": "goal-3",
+        "name_ja": "人がいきいきとつながり支え合うまちづくり",
+        "measures": [
+          "地域福祉の推進",
+          "高齢者福祉の充実",
+          "障がい者福祉の充実",
+          "生活困窮者への支援",
+          "健康づくり・医療の充実",
+          "地域コミュニティの維持・活性化"
+        ]
+      },
+      {
+        "id": "goal-4",
+        "name_ja": "安全・安心で快適に暮らせるまちづくり",
+        "measures": [
+          "災害に強い地域づくり",
+          "安全・安心な暮らしの確保",
+          "環境の保全・創造",
+          "コンパクトなまちづくりの推進",
+          "都市基盤施設の維持・強化",
+          "快適な都市環境の形成",
+          "交通環境の構築"
+        ]
+      }
+    ],
+    "management_principles": [
+      "市民参画・協働",
+      "持続可能な財政運営",
+      "組織体制・公正確保",
+      "広域連携",
+      "適切な評価とデジタル活用"
+    ]
+  },
+  "implementation_layer": {
+    "title": "盛岡市総合計画実施計画（令和7年度から16年度）",
+    "current_version_period": "2026年度～2028年度",
+    "role": "基本構想に掲げた施策を具体化する実施計画。3年間の計画期間を毎年度ローリングにより見直す。",
+    "revision_boundary": "各改訂版は別versionとして保持し、旧版を現行版へ上書きしない。"
+  },
+  "counts": {
+    "basic_goals": 4,
+    "current_plan_measures": 25,
+    "management_principles": 5
+  },
+  "source_id": "morioka-current-plan-page",
+  "implementation_source_id": "morioka-implementation-2026-2028-page",
+  "review_status": "reviewed"
+}

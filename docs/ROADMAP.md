@@ -903,11 +903,11 @@ Phase 14で`source_inventory_complete`となった67自治体を、record-level 
 
 Canonical status:
 
-- Reviewed complete: 4 / 67（函館市、旭川市、青森市、八戸市）
-- Review in progress: 1（盛岡市）
+- Reviewed complete: 5 / 67（函館市、旭川市、青森市、八戸市、盛岡市）
+- Review in progress: 0
 - Pending record review: 62
 - Blocked source inventory: 0
-- Next official code: 032018
+- Next official code: 052019
 
 ### Milestone P15-M1 — First reviewed-complete core city
 
@@ -994,11 +994,25 @@ v1 declared package:
 
 FY2024決算は公式資料が千円単位のため、円換算後も1,000円未満のprecisionを主張しません。55施策の全指標、691実事業、9戦略配下の全プロジェクト、次期計画採択後version、補正・執行・契約・補助金はdeferred depthです。
 
-### Current work — Morioka record review
+### Milestone P15-M5 — Morioka reviewed package
 
-Status: `in_progress`
+Status: `complete`（2026-11-15）
 
-盛岡市（032018）のReviewed v1 packageを作成します。
+盛岡市をPhase 15の5市目の`reviewed_complete`自治体として確定しました（公開責任者・大杉邑大のレビュー承認に基づく）。
+
+v1 declared package:
+
+- 盛岡市総合計画基本構想 2025～2034
+- 将来像「輝きが増し 活力に満ち 夢をかなえるまち盛岡」
+- 4基本目標
+- 25施策
+- 5自治体経営理念
+- 実施計画（令和7年度から16年度）現行版 2026～2028・3年ローリング方式
+- FY2026一般会計当初予算 126,510,000,000円（議案第3号 可決・成立予算）
+- FY2024一般会計収入済額 135,207,433,943円
+- FY2024一般会計支出済額 132,975,741,966円
+
+実施計画の個別事業・指標の全件identityと実績、現行計画の年次評価証拠、FY2024決算と個別事業の接続（not_assessableとして保持）、補正・執行・契約・補助金はdeferred depthです。議案第3号の議決確認は市議会だよりの議決結果表を暫定locatorとし、公式議決結果ページでの直接確認は未達のまま残存事項として明記します。
 
 ## After Phase 15
 

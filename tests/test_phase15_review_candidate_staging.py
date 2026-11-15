@@ -39,21 +39,25 @@ def test_morioka_candidate_staging_contract_validates():
     assert (ROOT / candidate["source_inventory_path"]).is_file()
     assert candidate["package_state"] == "prepared"
     assert candidate["human_review"]["required"] is True
-    assert candidate["human_review"]["status"] == "pending"
-    assert candidate["human_review"]["reviewed_at"] is None
-    assert candidate["human_review"]["reviewer_note"] is None
+    assert candidate["human_review"]["status"] == "approved"
+    assert candidate["human_review"]["reviewed_at"] == "2026-11-15"
+    assert candidate["human_review"]["reviewer_note"]
+    assert "公開責任者" in candidate["human_review"]["reviewer_note"]
     assert candidate["publication"]["eligible"] is False
 
 
-def test_morioka_candidate_does_not_promote_queue_state():
+def test_morioka_candidate_promotion_is_reflected_in_queue_state():
     queue = load(QUEUE)
     row = next(
         item for item in queue["execution_queue"]
         if item["official_code"] == "032018"
     )
 
-    assert row["status"] == "review_in_progress"
-    assert not row.get("completion_path")
+    assert row["status"] == "reviewed_complete"
+    assert row.get("completion_path") == (
+        "data/catalog/morioka_phase15_completion.json"
+    )
+    assert (ROOT / row["completion_path"]).is_file()
 
 
 def test_candidate_staging_is_not_referenced_by_public_web_source():
@@ -233,7 +237,7 @@ def test_prepared_candidate_retains_human_boundary_and_evidence_shape():
 
     # Human Review & Publication boundaries
     assert candidate["human_review"]["required"] is True
-    assert candidate["human_review"]["status"] == "pending"
-    assert candidate["human_review"]["reviewed_at"] is None
-    assert candidate["human_review"]["reviewer_note"] is None
+    assert candidate["human_review"]["status"] == "approved"
+    assert candidate["human_review"]["reviewed_at"] == "2026-11-15"
+    assert candidate["human_review"]["reviewer_note"]
     assert candidate["publication"]["eligible"] is False
