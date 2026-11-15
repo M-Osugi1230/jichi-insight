@@ -211,23 +211,48 @@ Declared v1 package:
 
 Deferred depth includes the exhaustive enumeration of all basic goals, policy packages, individual measures and KPIs, full-text confirmation of the main-volume (public plan) PDF, the old/new framework policy and indicator mapping, current-plan annual evaluation evidence, the per-member vote breakdown for bill No. 39, the final cross-check against the enacted budget book, the current budget amount including supplementary budgets, the FY2024 settlement-to-item linkage (kept not_assessable), settlement breakdown by policy, fiscal project detail, causality and cross-city comparability.
 
-## Tenth completion — Takasaki
+## Tenth completion — Utsunomiya
 
-高崎市を10市目の`reviewed_complete`へ昇格するPRを準備しました（2026-11-15。公開責任者のレビュー承認は本PRのマージ時に候補のhuman_reviewへ記録する）。
+宇都宮市を10市目の`reviewed_complete`へ昇格しました（2026-11-15、公開責任者・大杉邑大のレビュー承認に基づく）。
 
 Declared v1 package:
 
-- current comprehensive plan: 高崎市第6次総合計画， period 2018–2027, organised in three sections — 第1節 都市づくりの基本戦略 (14 strategies), 第2節 地域の特性を生かした振興策による都市づくり (7 regions), 第3節 主要施策 (4 fields: 総務教育・保健福祉・市民経済・建設水道） — and deliberately not mapped onto a generic three-layer model
+- current comprehensive plan: 第6次宇都宮市総合計画 — basic concept (target year 2050), basic plan 2018–2027 (first phase 2018–2022, latter phase 2023–2027), implementation plan (roughly three years, revised annually)
+- latter basic plan structure: six future-city policy pillars （子育て・教育／健康・福祉／安全・安心／魅力創造・交流／産業・環境／交通） plus the administrative management base; target city image is the "Super Smart City" formulation
+- FY2026 general-account initial budget: 246,550,000,000 yen (enacted; 議案第18号 原案可決 on 2026-03-24, confirmed directly on the official council meeting-result page)
+- FY2024 general-account settlement: revenue (242,716,210 thousand yen) and expenditure (236,437,643 thousand yen) values at thousand-yen source precision from the official settlement figures document; certification 議案第102号 原案認定 on 2025-09-30 confirmed on the official council meeting-result page
+
+Deferred depth includes the exhaustive enumeration of strategic projects, measures and KPIs under each pillar, full-text confirmation of the latter basic plan book, the yen-precision settlement totals (not printed in the checked official summary documents; the audit opinion PDF could not be text-extracted for figure matching), administrative evaluation results, the FY2024 settlement-to-item linkage (kept not_assessable), fiscal project detail, causality and cross-city comparability.
+
+## Eleventh completion — Maebashi
+
+前橋市を11市目の`reviewed_complete`へ昇格しました（2026-11-15、公開責任者・大杉邑大のレビュー承認に基づく）。
+
+Declared v1 package:
+
+- current comprehensive plan: 第七次前橋市総合計画 (formulated March 2018), period 2018–2027, two layers only — basic concept plus promotion plan (revised every 3–4 years); current promotion plan is the third-term plan 2025–2027 (2025 revised edition) with six chapters mirroring the six pillars of the basic concept
+- FY2026 general-account initial budget: 161,841,682,000 yen (enacted; 議案第15号 可決（多数）; vote date 2026-03-26 taken from the vote-disclosure section of the official result PDF, which does not print the date on the result table itself). The candidate's 161,841,680,000 yen was a transcription error from the mayor's 万円-precision explanation and is corrected in the candidate in this branch
+- FY2024 general-account settlement at exact yen precision from the Audit Commission's settlement review opinion: revenue 159,237,541,694 yen / expenditure 154,807,075,147 yen (balance 4,430,466,547 yen matches); certification 議案第94号 可決（全員） per the official result table (no vote date printed, so none is recorded)
+
+Deferred depth includes the exhaustive enumeration of priority measures, projects and KPIs under the six chapters, full-text confirmation of the plan book, individual administrative-evaluation results, the FY2024 settlement-to-item linkage (kept not_assessable), fiscal project detail, causality and cross-city comparability.
+
+## Twelfth completion — Takasaki
+
+高崎市を12市目の`reviewed_complete`へ昇格しました（2026-11-15、公開責任者・大杉邑大のレビュー承認に基づく）。
+
+Declared v1 package:
+
+- current comprehensive plan: 高崎市第6次総合計画, period 2018–2027, organised in three sections — 第1節 都市づくりの基本戦略 (14 strategies), 第2節 地域の特性を生かした振興策による都市づくり (7 regions), 第3節 主要施策 (4 fields: 総務教育・保健福祉・市民経済・建設水道) — and deliberately not mapped onto a generic three-layer model
 - FY2026 general-account initial budget: 175,220,000,000 yen (enacted; 議案第28号 原案可決（賛成多数） in the 令和8年第2回定例会 vote-result PDF; the PDF does not print individual vote dates, so no vote date is recorded)
-- FY2024 general-account settlement at published thousand-yen precision from the comprehensive audit report: revenue 183,362,219 thousand yen / expenditure 177,037,888 thousand yen (sub-thousand rounded; yen-precision totals are not published online — the settlement book is inspection-only). The candidate's man-yen-rounded values (183,362,220,000 / 177,037,890,000 yen) differ and are not used; the candidate itself is not edited in this branch. Certification 議案第78号・認定 in the 令和7年第4回定例会 vote-result PDF (again no individual vote date printed)
+- FY2024 general-account settlement at published thousand-yen precision from the comprehensive audit report: revenue 183,362,219 thousand yen / expenditure 177,037,888 thousand yen (sub-thousand rounded; yen-precision totals are not published online — the settlement book is inspection-only). The candidate's man-yen-rounded values (183,362,220,000 / 177,037,890,000 yen) differ from the verified values and are corrected in the candidate in this branch. Certification 議案第78号・認定 in the 令和7年第4回定例会 vote-result PDF (again no individual vote date printed)
 
 Deferred depth includes the names of the 14 strategies and the measures under each field, full-text confirmation of the plan book, the yen-precision settlement totals, designated-project progress-management results, the FY2024 settlement-to-item linkage (kept not_assessable), fiscal project detail, causality and cross-city comparability.
 
 ## Current queue
 
-- Reviewed complete: 10 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、高崎市
+- Reviewed complete: 12 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、宇都宮市、前橋市、高崎市
 - Review in progress: 0
-- Pending record review: 57
+- Pending record review: 55
 - Blocked source inventory: 0
 - Next official code: 072044
 

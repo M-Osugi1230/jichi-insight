@@ -1,1 +1,285 @@
-{"candidate_id":"maebashi-phase15-review-candidate","candidate_package":{"evidence_packets":[{"claims":[{"decision":"needs_review","field":"amount_yen","location_note":"前橋市公式Webサイト『予算の編成方針・概要』ページからリンクされる『令和8年度当初予算市長説明』PDF冒頭","review_note":"当初予算案の額を市長説明PDF本文から抽出。人間による確認待ちステージング。","source_ids":["maebashi-budget"],"statement":"令和8年度一般会計当初予算案の歳入歳出予算は1,618億4,168万円である（当初予算市長説明『当初予算案の概要』記載、対前年度2.5％増）。"}],"id":"evidence-maebashi-city-2026-total-expenditure","open_questions":["議決後の成立当初予算額との突合（予算書・議決結果の確認）。","令和8年度当初予算資料PDFによる歳入・歳出内訳の確認。"],"review_status":"needs_review","subject_id":"jp-local-102016-fiscal-2026-total-expenditure","subject_type":"fiscal_record"},{"claims":[{"decision":"needs_review","field":"document_existence","location_note":"前橋市公式Webサイト『決算(令和6年度)目次』ページ","review_note":"決算資料の存在と構成のみを確認。決算額は未抽出であり、本候補では金額を主張しない。","source_ids":["maebashi-settlement-2024"],"statement":"令和6年度決算の公式目次ページ（2025年9月26日更新）に、概要、一般会計歳入歳出決算額の詳細、各種財政指標、健全化判断比率等、主な施策・事業等のPDFが掲載されている。"}],"id":"evidence-maebashi-city-2024-settlement-route","open_questions":["決算PDF（一般会計歳入歳出決算額の詳細等）からのFY2024一般会計決算歳入・歳出額の抽出と、決算書本体との突合。"],"review_status":"needs_review","subject_id":"maebashi-settlement-2024","subject_type":"settlement_document"}],"fiscal_records":[{"account_type":"general","amount_yen":161841680000,"confidence":"medium","fiscal_year":2026,"id":"jp-local-102016-fiscal-2026-total-expenditure","metric":"total_expenditure","metric_label":"一般会計当初予算案総額","municipality_id":"jp-local-102016","note":"令和8年度当初予算市長説明で市長が示した一般会計当初予算案の歳入歳出予算額（1,618億4,168万円、対前年度2.5％増）。市長説明は当初予算案の大要の説明であり、議決後の成立額は本候補では未確認。補正予算や決算とは別stateで扱う。","period_end":"2027-03-31","period_start":"2026-04-01","review_status":"needs_review","sources":["maebashi-budget"],"stage":"initial_budget","unit":"yen","value":null,"value_status":"available"}],"plan_review":{"id":"phase15-maebashi-plan-review","name_ja":"前橋市","official_code":"102016","records":[{"decision":"needs_review","evidence_location":"本文『計画期間は2018年度から2027年度までの10年間としますが、推進計画は…3～4年ごとに見直しを行います』およびPhase 14 Source Inventory plan_period（verified_fixed_period）","evidence_role":"current_plan_identity","id":"maebashi-current-plan-period","review_note":"計画期間と構成は公式計画ページ本文とPhase 14 inventoryのverified plan_periodで一致。人間による計画書本編での最終突合前の候補レコード。","source_url":"https://www.city.maebashi.gunma.jp/soshiki/seisaku/seisakusuishin/gyomu/5/1/1/44926.html","statement":"第七次前橋市総合計画は前橋市のまちづくりの最上位計画であり、基本構想と推進計画の2層構成で、計画期間は2018年度（平成30年度）から2027年度（令和9年度）までの10年間である（推進計画は3～4年ごとに見直し）。","title":"第七次前橋市総合計画 計画期間と構成","value":"2018年度～2027年度"},{"decision":"needs_review","evidence_location":"本文『2－1 将来都市像』『2－3 まちづくりの柱』および推進計画PDFの章立て（第1章～第6章）。令和8年度当初予算市長説明も歳出説明を6つの柱に沿って構成している","evidence_role":"policy_structure","id":"maebashi-current-policy-structure","review_note":"公式計画ページが明示した体系を抽出。人間による一次資料確認前の候補レコード。","source_url":"https://www.city.maebashi.gunma.jp/soshiki/seisaku/seisakusuishin/gyomu/5/1/1/44926.html","statement":"基本構想は将来都市像『新しい価値の創造都市・前橋』のもと、6つの『まちづくりの柱』（教育・人づくり／結婚・出産・子育て／健康・福祉／産業振興／シティプロモーション／都市基盤）に基づくまちづくりを進める構成であり、推進計画の重点施策はこの6柱に対応する6章で構成される。","title":"第七次前橋市総合計画の政策体系（6つのまちづくりの柱）"},{"decision":"needs_review","evidence_location":"本文『本市では、第七次前橋市総合計画の進行管理を目的として行政評価を実施しています』『評価対象・・・2024年度（令和6年度）の重点事業（51事業）』","evidence_role":"progress_governance","id":"maebashi-evaluation-framework","review_note":"行政評価制度の枠組みと評価対象範囲を抽出。個別事業の評価結果・指標値は本候補では扱わない。","source_url":"https://www.city.maebashi.gunma.jp/soshiki/seisaku/seisakusuishin/gyomu/5/1/1/47340.html","statement":"前橋市は第七次前橋市総合計画の進行管理を目的として行政評価を実施し、PDCAサイクルにより重点施策のもとで実施する重点事業の取組状況等を評価・検証している。令和7年度行政評価の対象は2024年度（令和6年度）の重点事業51事業である。","title":"行政評価制度（総合計画の進行管理とPDCA）"},{"decision":"not_assessable","evidence_location":"『決算(令和6年度)目次』（概要、一般会計歳入歳出決算額の詳細、主な施策・事業等のPDFへのリンク、更新日：2025年09月26日）","evidence_role":"annual_progress","fiscal_year":2024,"id":"maebashi-fy2024-settlement-linkage","review_note":"決算額を推測で記録しないための明示的な未判定レコード。決算PDFからの金額抽出は人間レビュー工程の作業。","source_url":"https://www.city.maebashi.gunma.jp/soshiki/zaimu/zaisei/gyomu/3/2/2/46699.html","statement":"FY2024決算値と第七次前橋市総合計画個別事業との接続は未判定（not_assessable）。決算資料の公式入口と構成は確認したが、決算額の抽出・突合は未実施である。","title":"令和6年度決算と第七次前橋市総合計画事業の接続"}],"review_status":"pending_record_review"},"policy_structure":{"current_plan":{"basic_goals":[{"id":"goal-1","measures":["人をはぐくむまちづくり（推進計画 第1章）"],"name_ja":"教育・人づくり"},{"id":"goal-2","measures":["希望をかなえるまちづくり（推進計画 第2章）"],"name_ja":"結婚・出産・子育て"},{"id":"goal-3","measures":["生涯活躍のまちづくり（推進計画 第3章）"],"name_ja":"健康・福祉"},{"id":"goal-4","measures":["活気あふれるまちづくり（推進計画 第4章）"],"name_ja":"産業振興"},{"id":"goal-5","measures":["魅力あふれるまちづくり（推進計画 第5章）"],"name_ja":"シティプロモーション"},{"id":"goal-6","measures":["持続可能なまちづくり（推進計画 第6章）"],"name_ja":"都市基盤"}],"end_fiscal_year":2027,"management_principles":["将来都市像『新しい価値の創造都市・前橋』の実現","行動指針（認め合い、支え合う／つながり、創造する／未来への責任を持つ）","基本構想と推進計画の2層構成（推進計画は3～4年ごとに見直し）","行政評価（PDCAサイクル）による総合計画の進行管理"],"start_fiscal_year":2018,"title":"第七次前橋市総合計画","vision":"めぶく。～良いものが育つまち～"},"id":"maebashi-current-policy-structure","name_ja":"前橋市","official_code":"102016","phase":15},"progress_review":{"id":"maebashi-current-progress-review-summary","implementation_plan_framework":{"evaluation_structure":"将来都市像の実現に向けてPDCAサイクルによる進行管理を行い、重点施策のもとで実施する重点事業の取組状況等を評価・検証し、より高い成果を上げるための改善策を講じる","period":"毎年度実施（令和7年度行政評価は2024年度の重点事業51事業を対象）","title":"前橋市行政評価（第七次前橋市総合計画の進行管理）"},"name_ja":"前橋市","official_code":"102016","phase":15,"review_status":"review_candidate_staging"},"source_catalog":{"id":"maebashi-phase15-sources","name_ja":"前橋市","official_code":"102016","phase":15,"sources":[{"evidence_location":"本文『前橋らしさを発揮し、「新しい価値の創造」をめざして』（基本構想と推進計画の2層構成、計画期間2018年度～2027年度）、『1 ビジョン』『2－1 将来都市像』『2－3 まちづくりの柱』、および計画書PDF（基本構想・推進計画）へのリンク","evidence_role":"current_plan_identity","format":"html","id":"maebashi-seventh-plan","official_url":"https://www.city.maebashi.gunma.jp/soshiki/seisaku/seisakusuishin/gyomu/5/1/1/44926.html","title":"第七次前橋市総合計画","use_boundary":"第七次総合計画（2018年度～2027年度）をcurrent versionとして保持し、2021年度改訂版・2025年度改訂版等の版や将来の次期計画と混在させない。","verification_status":"primary_source_live_verified_2026-11-15"},{"evidence_location":"本文（第七次前橋市総合計画の進行管理を目的とする行政評価、PDCAサイクルによる進行管理、『評価対象・・・2024年度（令和6年度）の重点事業（51事業）』）","evidence_role":"progress_governance","format":"html","id":"maebashi-administrative-evaluation-2025","official_url":"https://www.city.maebashi.gunma.jp/soshiki/seisaku/seisakusuishin/gyomu/5/1/1/47340.html","title":"令和7年度行政評価","use_boundary":"総合計画の進行管理制度と評価対象の範囲を確認する。自治体の評価結果をJichi Insight独自の政策達成判定へ変換しない。","verification_status":"primary_source_live_verified_2026-11-15"},{"evidence_location":"『令和8年度予算』（令和8年度当初予算編成方針・当初予算市長説明・当初予算資料の各PDF、令和8年度6月・9月補正予算の概要）へのリンク。当初予算市長説明PDF冒頭『令和8年度一般会計の歳入歳出予算は、1，618億4，168万円で、対前年度2．5％の増』","evidence_role":"initial_budget","format":"html","id":"maebashi-budget","official_url":"https://www.city.maebashi.gunma.jp/gyosei/2/5/3/24149.html","title":"予算","use_boundary":"FY2026当初予算案の額と予算資料の公式入口を確認する。議決後の成立額・補正予算・決算とは別stateで扱う。","verification_status":"primary_source_live_verified_2026-11-15"},{"evidence_location":"『決算(令和6年度)目次』（更新日：2025年09月26日）。概要、一般会計歳入歳出決算額の詳細、各種財政指標、健全化判断比率等、主な施策・事業等のPDFへのリンク","evidence_role":"settlement_and_major_measures","format":"html","id":"maebashi-settlement-2024","official_url":"https://www.city.maebashi.gunma.jp/soshiki/zaimu/zaisei/gyomu/3/2/2/46699.html","title":"令和6年度決算","use_boundary":"FY2024決算資料の公式入口と構成を確認する。本候補では決算額そのものは抽出しておらず、金額を記録しない。","verification_status":"primary_source_live_verified_2026-11-15"}]}},"deferred_depth":[{"boundary":"第七次前橋市総合計画の推進計画および行政評価に掲載される個別重点事業（令和7年度行政評価では51事業）・指標の詳細・実績の全件リンクは追加depthとし、公式対応が確認できるまで昇格しない。","id":"current-plan-granular-kpi-and-project-linkage","status":"deferred_not_required_for_candidate_staging"},{"boundary":"FY2024決算額の抽出、議決後の成立予算額との突合、補正予算・決算と個別事業費の対応関係は追加エビデンス確認前は記録・結合しない。","id":"settlement-values-and-budget-amendment-linkage","status":"deferred_not_required_for_candidate_staging"},{"boundary":"前橋市の政策体系・財政等のステージングは政策効果の因果認定や他都市比較可能性を意味しない。","id":"policy-outcome-causal-and-cross-city-comparability","status":"deferred_not_required_for_candidate_staging"}],"human_review":{"boundary":"A person must check the candidate against the cited primary sources before any promotion to reviewed_complete.","required":true,"reviewed_at":null,"reviewer_note":null,"status":"pending"},"name_ja":"前橋市","official_code":"102016","package_state":"prepared","phase":15,"publication":{"boundary":"Candidate data is staging-only and must not be loaded by the public site or treated as reviewed data.","eligible":false},"quality_boundaries":["Promoted facts must come from official primary sources with stable evidence locators.","Unpublished, unavailable, historical-only, draft, and unresolved facts must remain explicit.","No Jichi Insight policy-achievement score, causal attribution, or unverified cross-city ranking may be created.","This candidate is machine-prepared evidence only and is not Reviewed until a person checks the primary sources."],"schema_version":1,"source_inventory_path":"data/indexed/maebashi-city/source_inventory.json","status":"review_candidate"}
+{
+  "candidate_id": "maebashi-phase15-review-candidate",
+  "candidate_package": {
+    "evidence_packets": [
+      {
+        "claims": [
+          {
+            "decision": "needs_review",
+            "field": "amount_yen",
+            "location_note": "前橋市公式Webサイト『予算の編成方針・概要』ページからリンクされる『令和8年度当初予算市長説明』PDF冒頭",
+            "review_note": "当初は市長説明PDFの万円精度の記載から161,841,680,000円と転記していたが、当初予算資料の千円単位額で161,841,682千円と確認し、2026-11-15に訂正した。人間による確認待ちステージング。",
+            "source_ids": [
+              "maebashi-budget"
+            ],
+            "statement": "令和8年度一般会計当初予算の歳入歳出予算は161,841,682千円（1,618億4,168万2千円）である（公式の令和8年度当初予算資料 第1表・第2表。当初予算市長説明は万円精度で1,618億4,168万円と記載し、対前年度2.5％増）。"
+          }
+        ],
+        "id": "evidence-maebashi-city-2026-total-expenditure",
+        "open_questions": [
+          "令和8年度当初予算資料による歳入・歳出内訳の項目レベル確認は、昇格パッケージのdeferred depthとして残る。"
+        ],
+        "review_status": "needs_review",
+        "subject_id": "jp-local-102016-fiscal-2026-total-expenditure",
+        "subject_type": "fiscal_record"
+      },
+      {
+        "claims": [
+          {
+            "decision": "needs_review",
+            "field": "document_existence",
+            "location_note": "前橋市公式Webサイト『決算(令和6年度)目次』ページ",
+            "review_note": "決算資料の存在と構成のみを確認。決算額は未抽出であり、本候補では金額を主張しない。",
+            "source_ids": [
+              "maebashi-settlement-2024"
+            ],
+            "statement": "令和6年度決算の公式目次ページ（2025年9月26日更新）に、概要、一般会計歳入歳出決算額の詳細、各種財政指標、健全化判断比率等、主な施策・事業等のPDFが掲載されている。"
+          }
+        ],
+        "id": "evidence-maebashi-city-2024-settlement-route",
+        "open_questions": [
+          "決算PDF（一般会計歳入歳出決算額の詳細等）からのFY2024一般会計決算歳入・歳出額の抽出と、決算書本体との突合。"
+        ],
+        "review_status": "needs_review",
+        "subject_id": "maebashi-settlement-2024",
+        "subject_type": "settlement_document"
+      }
+    ],
+    "fiscal_records": [
+      {
+        "account_type": "general",
+        "amount_yen": 161841682000,
+        "confidence": "medium",
+        "fiscal_year": 2026,
+        "id": "jp-local-102016-fiscal-2026-total-expenditure",
+        "metric": "total_expenditure",
+        "metric_label": "一般会計当初予算総額",
+        "municipality_id": "jp-local-102016",
+        "note": "当初予算市長説明は万円精度で1,618億4,168万円と記載していたため、本候補では当初161,841,680,000円と転記していたが、公式の令和8年度当初予算資料（第1表・第2表）の千円単位の成立額は161,841,682千円であるため、2026-11-15の昇格作業で161,841,682,000円へ訂正した。成立は議案第15号・可決（多数）。議決日は議決結果PDF（r823）の賛否公表区分に基づく2026年3月26日（結果表自体に日付の印字はない）。補正予算や決算とは別stateで扱う。",
+        "period_end": "2027-03-31",
+        "period_start": "2026-04-01",
+        "review_status": "needs_review",
+        "sources": [
+          "maebashi-budget"
+        ],
+        "stage": "initial_budget",
+        "unit": "yen",
+        "value": null,
+        "value_status": "available"
+      }
+    ],
+    "plan_review": {
+      "id": "phase15-maebashi-plan-review",
+      "name_ja": "前橋市",
+      "official_code": "102016",
+      "records": [
+        {
+          "decision": "needs_review",
+          "evidence_location": "本文『計画期間は2018年度から2027年度までの10年間としますが、推進計画は…3～4年ごとに見直しを行います』およびPhase 14 Source Inventory plan_period（verified_fixed_period）",
+          "evidence_role": "current_plan_identity",
+          "id": "maebashi-current-plan-period",
+          "review_note": "計画期間と構成は公式計画ページ本文とPhase 14 inventoryのverified plan_periodで一致。人間による計画書本編での最終突合前の候補レコード。",
+          "source_url": "https://www.city.maebashi.gunma.jp/soshiki/seisaku/seisakusuishin/gyomu/5/1/1/44926.html",
+          "statement": "第七次前橋市総合計画は前橋市のまちづくりの最上位計画であり、基本構想と推進計画の2層構成で、計画期間は2018年度（平成30年度）から2027年度（令和9年度）までの10年間である（推進計画は3～4年ごとに見直し）。",
+          "title": "第七次前橋市総合計画 計画期間と構成",
+          "value": "2018年度～2027年度"
+        },
+        {
+          "decision": "needs_review",
+          "evidence_location": "本文『2－1 将来都市像』『2－3 まちづくりの柱』および推進計画PDFの章立て（第1章～第6章）。令和8年度当初予算市長説明も歳出説明を6つの柱に沿って構成している",
+          "evidence_role": "policy_structure",
+          "id": "maebashi-current-policy-structure",
+          "review_note": "公式計画ページが明示した体系を抽出。人間による一次資料確認前の候補レコード。",
+          "source_url": "https://www.city.maebashi.gunma.jp/soshiki/seisaku/seisakusuishin/gyomu/5/1/1/44926.html",
+          "statement": "基本構想は将来都市像『新しい価値の創造都市・前橋』のもと、6つの『まちづくりの柱』（教育・人づくり／結婚・出産・子育て／健康・福祉／産業振興／シティプロモーション／都市基盤）に基づくまちづくりを進める構成であり、推進計画の重点施策はこの6柱に対応する6章で構成される。",
+          "title": "第七次前橋市総合計画の政策体系（6つのまちづくりの柱）"
+        },
+        {
+          "decision": "needs_review",
+          "evidence_location": "本文『本市では、第七次前橋市総合計画の進行管理を目的として行政評価を実施しています』『評価対象・・・2024年度（令和6年度）の重点事業（51事業）』",
+          "evidence_role": "progress_governance",
+          "id": "maebashi-evaluation-framework",
+          "review_note": "行政評価制度の枠組みと評価対象範囲を抽出。個別事業の評価結果・指標値は本候補では扱わない。",
+          "source_url": "https://www.city.maebashi.gunma.jp/soshiki/seisaku/seisakusuishin/gyomu/5/1/1/47340.html",
+          "statement": "前橋市は第七次前橋市総合計画の進行管理を目的として行政評価を実施し、PDCAサイクルにより重点施策のもとで実施する重点事業の取組状況等を評価・検証している。令和7年度行政評価の対象は2024年度（令和6年度）の重点事業51事業である。",
+          "title": "行政評価制度（総合計画の進行管理とPDCA）"
+        },
+        {
+          "decision": "not_assessable",
+          "evidence_location": "『決算(令和6年度)目次』（概要、一般会計歳入歳出決算額の詳細、主な施策・事業等のPDFへのリンク、更新日：2025年09月26日）",
+          "evidence_role": "annual_progress",
+          "fiscal_year": 2024,
+          "id": "maebashi-fy2024-settlement-linkage",
+          "review_note": "決算額を推測で記録しないための明示的な未判定レコード。決算PDFからの金額抽出は人間レビュー工程の作業。",
+          "source_url": "https://www.city.maebashi.gunma.jp/soshiki/zaimu/zaisei/gyomu/3/2/2/46699.html",
+          "statement": "FY2024決算値と第七次前橋市総合計画個別事業との接続は未判定（not_assessable）。決算資料の公式入口と構成は確認したが、決算額の抽出・突合は未実施である。",
+          "title": "令和6年度決算と第七次前橋市総合計画事業の接続"
+        }
+      ],
+      "review_status": "pending_record_review"
+    },
+    "policy_structure": {
+      "current_plan": {
+        "basic_goals": [
+          {
+            "id": "goal-1",
+            "measures": [
+              "人をはぐくむまちづくり（推進計画 第1章）"
+            ],
+            "name_ja": "教育・人づくり"
+          },
+          {
+            "id": "goal-2",
+            "measures": [
+              "希望をかなえるまちづくり（推進計画 第2章）"
+            ],
+            "name_ja": "結婚・出産・子育て"
+          },
+          {
+            "id": "goal-3",
+            "measures": [
+              "生涯活躍のまちづくり（推進計画 第3章）"
+            ],
+            "name_ja": "健康・福祉"
+          },
+          {
+            "id": "goal-4",
+            "measures": [
+              "活気あふれるまちづくり（推進計画 第4章）"
+            ],
+            "name_ja": "産業振興"
+          },
+          {
+            "id": "goal-5",
+            "measures": [
+              "魅力あふれるまちづくり（推進計画 第5章）"
+            ],
+            "name_ja": "シティプロモーション"
+          },
+          {
+            "id": "goal-6",
+            "measures": [
+              "持続可能なまちづくり（推進計画 第6章）"
+            ],
+            "name_ja": "都市基盤"
+          }
+        ],
+        "end_fiscal_year": 2027,
+        "management_principles": [
+          "将来都市像『新しい価値の創造都市・前橋』の実現",
+          "行動指針（認め合い、支え合う／つながり、創造する／未来への責任を持つ）",
+          "基本構想と推進計画の2層構成（推進計画は3～4年ごとに見直し）",
+          "行政評価（PDCAサイクル）による総合計画の進行管理"
+        ],
+        "start_fiscal_year": 2018,
+        "title": "第七次前橋市総合計画",
+        "vision": "めぶく。～良いものが育つまち～"
+      },
+      "id": "maebashi-current-policy-structure",
+      "name_ja": "前橋市",
+      "official_code": "102016",
+      "phase": 15
+    },
+    "progress_review": {
+      "id": "maebashi-current-progress-review-summary",
+      "implementation_plan_framework": {
+        "evaluation_structure": "将来都市像の実現に向けてPDCAサイクルによる進行管理を行い、重点施策のもとで実施する重点事業の取組状況等を評価・検証し、より高い成果を上げるための改善策を講じる",
+        "period": "毎年度実施（令和7年度行政評価は2024年度の重点事業51事業を対象）",
+        "title": "前橋市行政評価（第七次前橋市総合計画の進行管理）"
+      },
+      "name_ja": "前橋市",
+      "official_code": "102016",
+      "phase": 15,
+      "review_status": "review_candidate_staging"
+    },
+    "source_catalog": {
+      "id": "maebashi-phase15-sources",
+      "name_ja": "前橋市",
+      "official_code": "102016",
+      "phase": 15,
+      "sources": [
+        {
+          "evidence_location": "本文『前橋らしさを発揮し、「新しい価値の創造」をめざして』（基本構想と推進計画の2層構成、計画期間2018年度～2027年度）、『1 ビジョン』『2－1 将来都市像』『2－3 まちづくりの柱』、および計画書PDF（基本構想・推進計画）へのリンク",
+          "evidence_role": "current_plan_identity",
+          "format": "html",
+          "id": "maebashi-seventh-plan",
+          "official_url": "https://www.city.maebashi.gunma.jp/soshiki/seisaku/seisakusuishin/gyomu/5/1/1/44926.html",
+          "title": "第七次前橋市総合計画",
+          "use_boundary": "第七次総合計画（2018年度～2027年度）をcurrent versionとして保持し、2021年度改訂版・2025年度改訂版等の版や将来の次期計画と混在させない。",
+          "verification_status": "primary_source_live_verified_2026-11-15"
+        },
+        {
+          "evidence_location": "本文（第七次前橋市総合計画の進行管理を目的とする行政評価、PDCAサイクルによる進行管理、『評価対象・・・2024年度（令和6年度）の重点事業（51事業）』）",
+          "evidence_role": "progress_governance",
+          "format": "html",
+          "id": "maebashi-administrative-evaluation-2025",
+          "official_url": "https://www.city.maebashi.gunma.jp/soshiki/seisaku/seisakusuishin/gyomu/5/1/1/47340.html",
+          "title": "令和7年度行政評価",
+          "use_boundary": "総合計画の進行管理制度と評価対象の範囲を確認する。自治体の評価結果をJichi Insight独自の政策達成判定へ変換しない。",
+          "verification_status": "primary_source_live_verified_2026-11-15"
+        },
+        {
+          "evidence_location": "『令和8年度予算』（令和8年度当初予算編成方針・当初予算市長説明・当初予算資料の各PDF、令和8年度6月・9月補正予算の概要）へのリンク。当初予算市長説明PDF冒頭『令和8年度一般会計の歳入歳出予算は、1，618億4，168万円で、対前年度2．5％の増』",
+          "evidence_role": "initial_budget",
+          "format": "html",
+          "id": "maebashi-budget",
+          "official_url": "https://www.city.maebashi.gunma.jp/gyosei/2/5/3/24149.html",
+          "title": "予算",
+          "use_boundary": "FY2026当初予算案の額と予算資料の公式入口を確認する。議決後の成立額・補正予算・決算とは別stateで扱う。",
+          "verification_status": "primary_source_live_verified_2026-11-15"
+        },
+        {
+          "evidence_location": "『決算(令和6年度)目次』（更新日：2025年09月26日）。概要、一般会計歳入歳出決算額の詳細、各種財政指標、健全化判断比率等、主な施策・事業等のPDFへのリンク",
+          "evidence_role": "settlement_and_major_measures",
+          "format": "html",
+          "id": "maebashi-settlement-2024",
+          "official_url": "https://www.city.maebashi.gunma.jp/soshiki/zaimu/zaisei/gyomu/3/2/2/46699.html",
+          "title": "令和6年度決算",
+          "use_boundary": "FY2024決算資料の公式入口と構成を確認する。本候補では決算額そのものは抽出しておらず、金額を記録しない。",
+          "verification_status": "primary_source_live_verified_2026-11-15"
+        }
+      ]
+    }
+  },
+  "deferred_depth": [
+    {
+      "boundary": "第七次前橋市総合計画の推進計画および行政評価に掲載される個別重点事業（令和7年度行政評価では51事業）・指標の詳細・実績の全件リンクは追加depthとし、公式対応が確認できるまで昇格しない。",
+      "id": "current-plan-granular-kpi-and-project-linkage",
+      "status": "deferred_not_required_for_candidate_staging"
+    },
+    {
+      "boundary": "FY2024決算額の抽出、議決後の成立予算額との突合、補正予算・決算と個別事業費の対応関係は追加エビデンス確認前は記録・結合しない。",
+      "id": "settlement-values-and-budget-amendment-linkage",
+      "status": "deferred_not_required_for_candidate_staging"
+    },
+    {
+      "boundary": "前橋市の政策体系・財政等のステージングは政策効果の因果認定や他都市比較可能性を意味しない。",
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_candidate_staging"
+    }
+  ],
+  "human_review": {
+    "boundary": "A person must check the candidate against the cited primary sources before any promotion to reviewed_complete.",
+    "required": true,
+    "reviewed_at": "2026-11-15",
+    "reviewer_note": "公開責任者（大杉邑大、単独運用体制）が2026-11-15にレビューを承認し、reviewed_completeへの昇格を決定した（prepared候補5市の一括承認）。財政数値は一次資料で検証済み。議案第15号（令和8年度一般会計予算）が2026年3月26日に可決（多数）され、FY2026一般会計当初予算161,841,682千円が成立予算であることを公式の当初予算資料で確認済み（議決日は議決結果PDFの賛否公表区分に基づくもので、結果表自体には日付の印字がない）。候補にあった予算額161,841,680千円は転記誤りであり、本昇格で161,841,682千円へ訂正した。FY2024決算は監査委員の決算審査意見書の円単位で歳入159,237,541,694円・歳出154,807,075,147円を確認し、決算の認定（議案第94号・可決（全員））も議決結果表で確認済み（結果表に議決日の印字がないため日付は記録しない）。現行計画は第七次前橋市総合計画（基本構想＋推進計画の2層構成、計画期間2018年度～2027年度、現行の推進計画は第3期推進計画2025年度～2027年度）であり、FY2024決算は計画の7年目、FY2026予算は9年目に帰属する。推進計画の個別事業・KPIの全件列挙、計画書本編の全文確認、行政評価の個別結果は未確認であり、reviewed パッケージの completion の deferred_depth と completion_boundary に残存事項として明記した。",
+    "status": "approved"
+  },
+  "name_ja": "前橋市",
+  "official_code": "102016",
+  "package_state": "prepared",
+  "phase": 15,
+  "publication": {
+    "boundary": "Candidate data is staging-only and must not be loaded by the public site or treated as reviewed data.",
+    "eligible": false
+  },
+  "quality_boundaries": [
+    "Promoted facts must come from official primary sources with stable evidence locators.",
+    "Unpublished, unavailable, historical-only, draft, and unresolved facts must remain explicit.",
+    "No Jichi Insight policy-achievement score, causal attribution, or unverified cross-city ranking may be created.",
+    "This candidate is machine-prepared evidence only and is not Reviewed until a person checks the primary sources."
+  ],
+  "schema_version": 1,
+  "source_inventory_path": "data/indexed/maebashi-city/source_inventory.json",
+  "status": "review_candidate"
+}

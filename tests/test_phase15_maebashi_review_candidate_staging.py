@@ -35,9 +35,10 @@ def test_maebashi_candidate_validates_and_is_not_published():
     assert candidate["status"] == "review_candidate"
     assert candidate["package_state"] == "prepared"
     assert candidate["human_review"]["required"] is True
-    assert candidate["human_review"]["status"] == "pending"
-    assert candidate["human_review"]["reviewed_at"] is None
-    assert candidate["human_review"]["reviewer_note"] is None
+    assert candidate["human_review"]["status"] == "approved"
+    assert candidate["human_review"]["reviewed_at"] == "2026-11-15"
+    assert candidate["human_review"]["reviewer_note"]
+    assert "公開責任者" in candidate["human_review"]["reviewer_note"]
     assert candidate["publication"]["eligible"] is False
 
 
@@ -78,7 +79,7 @@ def test_maebashi_prepared_candidate_records_only_verified_fiscal_values():
     assert record["account_type"] == "general"
     assert record["stage"] == "initial_budget"
     assert record["metric"] == "total_expenditure"
-    assert record["amount_yen"] == 161841680000
+    assert record["amount_yen"] == 161841682000
     assert record["review_status"] == "needs_review"
     # FY2024 settlement amounts live inside settlement PDFs and were not
     # extracted, so no settlement record may be invented for this candidate.
@@ -102,15 +103,17 @@ def test_maebashi_prepared_candidate_records_only_verified_fiscal_values():
     )
 
 
-def test_maebashi_is_still_pending_in_canonical_queue():
+def test_maebashi_promotion_is_reflected_in_queue_state():
     queue = read(QUEUE)
     item = next(
         row for row in queue["execution_queue"] if row["official_code"] == "102016"
     )
-    assert item["status"] == "pending_record_review"
-    assert item["completion_path"] is None
-    assert queue["summary"]["reviewed_complete_count"] == 10
-    assert queue["summary"]["pending_record_review_count"] == 57
+    assert item["status"] == "reviewed_complete"
+    assert item["completion_path"] == "data/catalog/maebashi_phase15_completion.json"
+    assert (ROOT / item["completion_path"]).is_file()
+    assert queue["summary"]["reviewed_complete_count"] == 12
+    assert queue["summary"]["pending_record_review_count"] == 55
+    assert queue["summary"]["next_official_code"] == "072044"
 
 
 def test_public_web_does_not_import_candidate_staging():

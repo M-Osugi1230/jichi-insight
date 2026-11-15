@@ -154,8 +154,8 @@ def test_kawagoe_is_still_pending_in_canonical_queue():
     )
     assert item["status"] == "pending_record_review"
     assert item["completion_path"] is None
-    assert queue["summary"]["reviewed_complete_count"] == 10
-    assert queue["summary"]["pending_record_review_count"] == 57
+    assert queue["summary"]["reviewed_complete_count"] == 12
+    assert queue["summary"]["pending_record_review_count"] == 55
 
 
 def test_public_web_does_not_import_candidate_staging():
