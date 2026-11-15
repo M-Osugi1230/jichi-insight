@@ -1,0 +1,26 @@
+{
+  "id": "utsunomiya-current-progress-review-summary",
+  "phase": 15,
+  "official_code": "092010",
+  "name_ja": "宇都宮市",
+  "reviewed_at": "2026-11-15",
+  "current_implementation_plan": {
+    "title": "第6次宇都宮市総合計画 実施計画・行政評価による進行管理枠組み",
+    "period": "実施計画は3年間程度（毎年改定）",
+    "rolling_structure": "実施計画は基本計画の施策を年度別に具体化し、行政評価（政策評価・施策評価・事業評価の三層評価）で前年度の取組を評価して実施計画・予算編成へ反映するPDCAサイクルで進行管理する枠組みである。個別の事業・指標の実績確認を意味しない。",
+    "current_period_item_actuals": {
+      "status": "not_promoted_in_v1",
+      "boundary": "実施計画の個別事業・指標のidentityと実績はv1では昇格しない。枠組みの確認は個別実績の確認を意味しない。"
+    }
+  },
+  "evaluation_evidence": {
+    "status": "not_promoted_in_v1",
+    "boundary": "行政評価の個別評価結果・指標値はv1では未昇格とする。FY2024決算は後期基本計画期間内の決算であるが、評価証拠として流用しない。"
+  },
+  "fiscal_linkage": {
+    "fiscal_year": 2024,
+    "status": "not_assessable",
+    "boundary": "FY2024決算は第6次総合計画の後期基本計画（2023年度～2027年度）の2年目に帰属する。ただしFY2024決算と個別事業との完全細粒度接続は未判定（not_assessable）として保持する。"
+  },
+  "review_status": "reviewed_with_explicit_deferred_depth"
+}

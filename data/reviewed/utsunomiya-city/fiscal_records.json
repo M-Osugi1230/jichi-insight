@@ -1,0 +1,66 @@
+[
+  {
+    "id": "jp-local-092010-fiscal-2026-total-expenditure",
+    "municipality_id": "jp-local-092010",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算（可決）",
+    "amount_yen": 246550000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "宇都宮市公式『令和8年度当初予算案の大綱（概要版）』の予算規模表の一般会計246,550,000千円を円換算。令和8年3月（第1回）定例会で議案第18号『令和8年度宇都宮市一般会計予算』が2026年3月24日に原案可決された成立予算として保持し、補正予算や決算とは別stateで扱う。議決は宇都宮市議会公式の会議結果ページで直接確認済み。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "utsunomiya-budget-2026",
+      "utsunomiya-budget-2026-enactment"
+    ]
+  },
+  {
+    "id": "jp-local-092010-fiscal-2024-total-revenue",
+    "municipality_id": "jp-local-092010",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "一般会計収入済額",
+    "amount_yen": 242716210000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "宇都宮市公式『令和6年度決算 計数資料』第1表（単位：千円）の一般会計歳入総額242,716,210千円を円換算したsource precision値。決算は議案第102号『決算の認定について（一般会計及び11件の特別会計）』として2025年9月30日に原案認定された。円単位の総額は確認した公式要約文書に印字されていないため、1,000円未満のprecisionを主張しない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "utsunomiya-settlement-2024"
+    ]
+  },
+  {
+    "id": "jp-local-092010-fiscal-2024-total-expenditure",
+    "municipality_id": "jp-local-092010",
+    "fiscal_year": 2024,
+    "account_type": "general",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計支出済額",
+    "amount_yen": 236437643000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "宇都宮市公式『令和6年度決算 計数資料』第1表（単位：千円）の一般会計歳出総額236,437,643千円を円換算したsource precision値。決算は議案第102号『決算の認定について（一般会計及び11件の特別会計）』として2025年9月30日に原案認定された。円単位の総額は確認した公式要約文書に印字されていないため、1,000円未満のprecisionを主張しない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "utsunomiya-settlement-2024"
+    ]
+  }
+]

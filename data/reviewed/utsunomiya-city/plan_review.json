@@ -1,0 +1,68 @@
+{
+  "id": "phase15-utsunomiya-plan-review",
+  "official_code": "092010",
+  "name_ja": "宇都宮市",
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-15",
+  "records": [
+    {
+      "id": "utsunomiya-current-plan-period",
+      "evidence_role": "current_plan_identity",
+      "title": "第6次宇都宮市総合計画 基本計画 計画期間",
+      "statement": "第6次宇都宮市総合計画の基本計画の計画期間は2018年度（平成30年度）から2027年度（令和9年度）までの10年間であり、前期基本計画（2018年度～2022年度）と後期基本計画（2023年度～2027年度）から構成される。基本構想の目標年次は2050年である。",
+      "value": "2018年度～2027年度（基本計画）",
+      "source_url": "https://www.city.utsunomiya.lg.jp/shisei/machi/1034530/sougoukeikaku/1007655.html",
+      "evidence_location": "本文『総合計画の構成と役割』基本構想（目標年次：2050年）、基本計画（計画期間：10年間（前期5年、後期5年））、実施計画（計画期間：3年間程度（毎年改定））",
+      "decision": "accepted",
+      "review_note": "FY2026当初予算は基本計画の9年目・後期基本計画の4年目に位置づく。基本計画の最終年度は2027年度であり、FY2026は最終年度ではない。"
+    },
+    {
+      "id": "utsunomiya-current-policy-structure",
+      "evidence_role": "policy_structure",
+      "title": "第6次宇都宮市総合計画 構成と後期基本計画の政策の柱",
+      "statement": "第6次総合計画は基本構想・基本計画・実施計画の3層構造である。後期基本計画は、基本構想の「まちづくりの基本方向（6つの未来都市）」を第2部第4章の政策の柱I～VI（子育て・教育の未来都市、健康・福祉の未来都市、安全・安心の未来都市、魅力創造・交流の未来都市、産業・環境の未来都市、交通の未来都市）として構成し、これに「各政策の柱を支える行政経営基盤」を加える。後期基本計画の目指すまちの姿は「子どもから高齢者まで，誰もが豊かで便利に安心して暮らすことができ，夢や希望がかなうまち『スーパースマートシティ』」である。",
+      "value": 6,
+      "unit": "policy_pillars",
+      "source_url": "https://www.city.utsunomiya.lg.jp/shisei/machi/1034530/sougoukeikaku/1028177.html",
+      "evidence_location": "後期基本計画（概要版）第2部第4章『分野別計画』の章題および公式策定ページ。基本構想の将来のうつのみや像（都市像）は『輝く人の和 つながるまちの環 魅力と夢の輪 うつのみや』",
+      "reviewed_data_path": "data/catalog/utsunomiya_current_policy_structure.json",
+      "decision": "accepted",
+      "review_note": "政策の柱の名称は後期基本計画（概要版）で直接確認した枠組みであり、v1では柱の名称までを列挙する。各柱の戦略事業・施策の方向性の全件列挙とKPIの網羅的集計は行わず deferred depth とする。計画は「基本目標」という区分を用いていないため、その名称での体系化はしない。"
+    },
+    {
+      "id": "utsunomiya-basic-plan-phase-transition",
+      "evidence_role": "plan_transition",
+      "title": "前期基本計画から後期基本計画への移行",
+      "statement": "基本計画は前期（2018年度～2022年度）から後期（2023年度～2027年度）へ移行し、後期基本計画は改定基本計画として策定された。FY2024決算は後期基本計画の2年目に帰属する。",
+      "value": "前期2018年度～2022年度／後期2023年度～2027年度",
+      "source_url": "https://www.city.utsunomiya.lg.jp/_res/projects/default_project/_page_/001/028/167/21112501.pdf",
+      "evidence_location": "『第6次宇都宮市総合計画改定基本計画策定方針』（令和3年11月25日）『基本計画 計画期間：2018年度～2027年度（前期5年、後期5年）』および改定基本計画の期間（2023年度～2027年度）の明記",
+      "decision": "accepted",
+      "review_note": "前期・後期は同一の第6次総合計画内の基本計画フェーズであり、別計画ではない。前期と後期の施策・KPIの対応は未確認であり、名称の類似だけで結合しない。"
+    },
+    {
+      "id": "utsunomiya-implementation-plan-layer",
+      "evidence_role": "implementation_layer",
+      "title": "実施計画と行政評価による進行管理",
+      "statement": "実施計画は基本計画に掲げた施策を年度別に具体化する3年間程度の計画であり、毎年改定される。進行管理は行政評価（政策評価・施策評価・事業評価の三層評価）により前年度の取組を評価し、総合計画実施計画や予算編成等へ反映するPDCAサイクルで行われる。",
+      "source_url": "https://www.city.utsunomiya.lg.jp/shisei/johokokai/gyoseihyouka/1010678.html",
+      "evidence_location": "本文『本市の行政評価』（政策評価・施策評価・事業評価の三層構成、PDCA）および『総合計画とは』の実施計画の定義",
+      "reviewed_data_path": "data/catalog/utsunomiya_current_progress_review_summary.json",
+      "decision": "accepted",
+      "review_note": "実施計画・行政評価の枠組み確認は個別事業・指標の実績確認を意味しない。行政評価の個別結果・指標値はv1では未昇格とし、deferred depthとして明示する。"
+    },
+    {
+      "id": "utsunomiya-fy2024-settlement-linkage",
+      "evidence_role": "annual_progress",
+      "title": "令和6年度決算と計画事業の接続",
+      "statement": "FY2024決算値と後期基本計画の個別事業との完全細粒度接続は未判定（not_assessable）。FY2024は後期基本計画期間内（2年目）の決算であるが、決算総額を個別事業の実績へ直接接続しない。",
+      "fiscal_year": 2024,
+      "source_url": "https://www.city.utsunomiya.lg.jp/_res/projects/default_project/_page_/001/010/665/r6keisusiryo.pdf",
+      "evidence_location": "『令和6年度決算 計数資料』は会計別トップラインを示す資料であり、個別事業への接続を示すものではない。",
+      "decision": "not_assessable",
+      "review_note": "決算トップラインは財政レコードとして保持するが、個別事業費・実績への接続は追加エビデンス確認まで非評価扱いを維持する。"
+    }
+  ],
+  "quality_boundary": "This package reviews current plan identity and period (sixth comprehensive plan: basic concept with a 2050 target year, basic plan 2018-2027 in two five-year phases, implementation plan on a roughly three-year rolling basis), the latter basic plan's six future-city policy pillars at framework level including their names, the phase transition within the same plan, and keeps the FY2024 settlement-to-item linkage explicitly not assessable. It does not enumerate every measure or KPI, promote individual implementation items or KPI actuals, infer policy achievement, establish causal effects, or assert cross-city comparability.",
+  "next_action": "Promote the full measure/KPI enumeration, the latter basic plan full-text confirmation, and the yen-precision settlement totals only when official sources with stable record-level locators have been reviewed; keep supplementary budgets, execution, and fiscal detail as separate states."
+}

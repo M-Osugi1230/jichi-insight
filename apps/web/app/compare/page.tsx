@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "福岡市・北九州市の財政比較",
   description:
     "福岡市と北九州市の同年度・同会計・同段階の財政値だけを、比較条件と限界を明示して並べます。",
+  alternates: {
+    canonical: "https://m-osugi1230.github.io/jichi-insight/compare/",
+  },
 };
 
 const stageLabels = {

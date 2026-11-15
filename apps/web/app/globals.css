@@ -79,7 +79,7 @@ h2 {
 }
 h3 { letter-spacing: -0.025em; line-height: 1.45; }
 
-.dataPulse { background: var(--navy-deep); color: #dceaf2; font-size: 0.68rem; letter-spacing: 0.035em; }
+.dataPulse { background: var(--navy-deep); color: #dceaf2; font-size: 0.75rem; letter-spacing: 0.035em; }
 .dataPulse > div { align-items: center; display: flex; gap: 9px; margin: 0 auto; max-width: var(--max-width); min-height: 30px; padding: 5px 30px; }
 .dataPulseDot { background: #63c4a6; border-radius: 999px; box-shadow: 0 0 0 4px rgb(99 196 166 / 13%); height: 6px; width: 6px; }
 .dataPulseLabel { color: #fff; font-weight: 850; letter-spacing: 0.12em; }
@@ -102,7 +102,7 @@ h3 { letter-spacing: -0.025em; line-height: 1.45; }
 .brandMark { align-items: center; background: var(--coral); border-radius: 5px 14px 5px 5px; color: #fff; display: inline-flex; font-size: 0.76rem; font-weight: 900; height: 37px; justify-content: center; letter-spacing: -0.03em; width: 37px; }
 .brandText { display: grid; line-height: 1.15; }
 .brandText strong { font-size: 0.97rem; letter-spacing: -0.03em; }
-.brandText small { color: var(--muted); font-size: 0.59rem; font-weight: 650; margin-top: 4px; }
+.brandText small { color: var(--muted); font-size: 0.66rem; font-weight: 650; margin-top: 4px; }
 .desktopNav { align-items: center; display: flex; gap: clamp(14px, 2vw, 26px); }
 .desktopNav > a, .navMore summary { color: var(--ink-soft); font-size: 0.76rem; font-weight: 740; text-decoration: none; }
 .desktopNav > a:hover, .navMore summary:hover, .navMorePanel a:hover { color: var(--coral); }
@@ -119,7 +119,7 @@ h3 { letter-spacing: -0.025em; line-height: 1.45; }
 .mobileNav[open] > summary::after { content: "−"; }
 .mobileNav nav { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; box-shadow: var(--shadow); display: grid; max-height: calc(100vh - 110px); overflow-y: auto; padding: 12px; position: absolute; right: 0; top: calc(100% + 13px); width: min(350px, calc(100vw - 32px)); }
 .mobileNav nav p { color: var(--muted); font-size: 0.62rem; font-weight: 850; letter-spacing: 0.12em; margin: 10px 9px 4px; text-transform: uppercase; }
-.mobileNav nav a { border-radius: 10px; font-size: 0.88rem; font-weight: 750; padding: 10px; text-decoration: none; }
+.mobileNav nav a { border-radius: 10px; font-size: 0.88rem; font-weight: 750; padding: 12px 10px; text-decoration: none; }
 .mobileNav nav a:hover { background: var(--paper); }
 
 .eyebrow { align-items: center; color: var(--coral); display: flex; font-size: 0.67rem; font-weight: 850; gap: 9px; letter-spacing: 0.14em; margin: 0 0 17px; text-transform: uppercase; }
@@ -208,6 +208,7 @@ h3 { letter-spacing: -0.025em; line-height: 1.45; }
 .footerNavGroup a { color: var(--ink-soft); font-size: 0.78rem; font-weight: 700; text-decoration: none; }
 .footerNavGroup a:hover { color: var(--coral); }
 .footerBottom { border-top: 1px solid var(--line); color: var(--muted); display: flex; font-size: 0.65rem; gap: 20px; grid-column: 1 / -1; justify-content: space-between; padding-top: 22px; }
+.footerBottom a { color: inherit; }
 
 @media (max-width: 980px) {
   .desktopNav { display: none; }

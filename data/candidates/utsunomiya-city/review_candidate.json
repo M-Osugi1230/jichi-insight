@@ -281,10 +281,10 @@
   ],
   "human_review": {
     "required": true,
-    "status": "pending",
+    "status": "approved",
     "boundary": "A person must check the candidate against the cited primary sources before any promotion to reviewed_complete.",
-    "reviewed_at": null,
-    "reviewer_note": null
+    "reviewed_at": "2026-11-15",
+    "reviewer_note": "公開責任者（大杉邑大、単独運用体制）が2026-11-15にレビューを承認し、reviewed_completeへの昇格を決定した（prepared候補5市の一括承認）。財政数値は一次資料で検証済み。議案第18号（令和8年度一般会計予算）が2026年3月24日に原案可決され、FY2026一般会計当初予算246,550,000千円が成立予算であることを市議会公式の会議結果ページで直接確認済み。FY2024決算は公式決算計数資料の千円単位で歳入242,716,210千円・歳出236,437,643千円を確認し、決算の認定（議案第102号、2025年9月30日・原案認定）も同ページで確認済み。現行計画は第6次宇都宮市総合計画（基本構想・基本計画・実施計画の3層構造、基本計画は2018年度～2027年度で後期は2023年度～2027年度）であり、FY2024決算は後期基本計画の2年目に帰属する。後期基本計画の戦略事業・施策・KPIの全件列挙、計画書本編の全文確認、FY2024決算の円単位総額、行政評価の個別結果は未確認であり、reviewed パッケージの completion の deferred_depth と completion_boundary に残存事項として明記した。"
   },
   "publication": {
     "eligible": false,
