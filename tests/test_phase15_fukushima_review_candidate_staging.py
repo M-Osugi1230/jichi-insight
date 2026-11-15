@@ -107,7 +107,15 @@ def test_prepared_fukushima_candidate_retains_human_boundary_and_evidence_shape(
         source["official_url"].startswith("https://www.city.fukushima.fukushima.jp/")
         for source in source_catalog["sources"]
     )
-    assert all(source["format"] == "html" for source in source_catalog["sources"])
+    assert {
+        source["id"]: source["format"] for source in source_catalog["sources"]
+    } == {
+        "fukushima-sixth-plan": "html",
+        "fukushima-progress-indicators": "html",
+        "fukushima-budget-2026": "html",
+        "fukushima-budget-book-2026": "html",
+        "fukushima-settlement-2024": "pdf",
+    }
     assert all(bool(source["evidence_location"]) for source in source_catalog["sources"])
     assert all(bool(source["use_boundary"]) for source in source_catalog["sources"])
 
