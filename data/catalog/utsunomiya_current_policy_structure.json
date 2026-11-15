@@ -1,0 +1,54 @@
+{
+  "id": "utsunomiya-current-policy-structure",
+  "phase": 15,
+  "official_code": "092010",
+  "name_ja": "宇都宮市",
+  "current_plan": {
+    "title": "第6次宇都宮市総合計画",
+    "start_fiscal_year": 2018,
+    "end_fiscal_year": 2027,
+    "period_label": "平成30年度～令和9年度（基本計画）",
+    "structure": "基本構想（目標年次2050年）・基本計画（2018年度～2027年度の10年間、前期5年・後期5年）・実施計画（3年間程度・毎年改定）の3層構造。",
+    "components": [
+      {
+        "id": "basic-concept",
+        "name_ja": "基本構想",
+        "role": "目標年次2050年の将来のうつのみや像（都市像）『輝く人の和 つながるまちの環 魅力と夢の輪 うつのみや』と、まちづくりの基本方向（6つの未来都市）を定める。"
+      },
+      {
+        "id": "basic-plan",
+        "name_ja": "基本計画",
+        "role": "前期基本計画（2018年度～2022年度）と後期基本計画（2023年度～2027年度）から構成される。後期基本計画の目指すまちの姿は『スーパースマートシティ』（NCCを土台に地域共生社会・地域経済循環社会・脱炭素社会を、人づくりとデジタルで発展させる姿）。"
+      },
+      {
+        "id": "implementation-plan",
+        "name_ja": "実施計画",
+        "role": "基本計画の施策を年度別に具体化する3年間程度の計画で、毎年改定される。行政評価（政策・施策・事業の三層評価とPDCA）により進行管理する。"
+      }
+    ],
+    "policy_pillars": {
+      "count": 6,
+      "names": [
+        "子育て・教育の未来都市",
+        "健康・福祉の未来都市",
+        "安全・安心の未来都市",
+        "魅力創造・交流の未来都市",
+        "産業・環境の未来都市",
+        "交通の未来都市"
+      ],
+      "names_enumerated_in_v1": true,
+      "supporting_base": "各政策の柱を支える行政経営基盤"
+    },
+    "enumeration_boundary": "政策の柱6件の名称は後期基本計画（概要版）で確認済みのため列挙する。各柱の戦略事業・施策の方向性・KPIの全件列挙はv1では行わない（deferred depth）。計画は「基本目標」という区分を用いていない。"
+  },
+  "basic_plan_phases": {
+    "first_phase": "前期基本計画（2018年度～2022年度）",
+    "second_phase": "後期基本計画（2023年度～2027年度）",
+    "comparability_boundary": "前期・後期は同一の第6次総合計画内のフェーズであり別計画ではないが、施策・KPIの前後対応は未確認である。名称の類似だけで同一項目として結合しない。"
+  },
+  "counts": {
+    "policy_pillars": 6
+  },
+  "source_id": "utsunomiya-sixth-latter-plan",
+  "review_status": "reviewed"
+}

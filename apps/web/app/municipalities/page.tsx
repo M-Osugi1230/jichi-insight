@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: "47都道府県の政策目標を根拠から探す",
   description:
     "全国47都道府県、15,124件のReviewed目標・指標とEvidence Packetを検索し、実績・予算・事業・契約の接続状況を確認できます。",
+  alternates: {
+    canonical: "https://m-osugi1230.github.io/jichi-insight/municipalities/",
+  },
 };
 
 const readingLevels = [

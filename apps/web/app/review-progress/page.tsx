@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "自治体レビューの進捗・収録範囲",
   description:
     "Jichi InsightのPhase 15対象67自治体について、一次資料レビューの完了・進行中・未着手を、正本データから透明に公開します。",
+  alternates: {
+    canonical: "https://m-osugi1230.github.io/jichi-insight/review-progress/",
+  },
 };
 
 const sourcePrefix = "https://github.com/M-Osugi1230/jichi-insight/blob/main/";

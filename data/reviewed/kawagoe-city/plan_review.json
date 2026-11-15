@@ -1,0 +1,66 @@
+{
+  "id": "phase15-kawagoe-plan-review",
+  "official_code": "112011",
+  "name_ja": "川越市",
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-15",
+  "next_action": "Promote the full enumeration of the 38 basic-plan measures and their KPIs only when official sources with stable record-level locators have been reviewed; keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "quality_boundary": "This package reviews current plan identity and period (fifth comprehensive plan: basic concept 2026-2035, first basic plan 2026-2030, second basic plan 2031-2035, implementation plan 2026-2028 rolling), the eight fields and 38 measures of the first basic plan, the enacted FY2026 initial budget, and the FY2024 settlement at exact yen precision, without collapsing proposed, enacted, supplementary, or settlement states. FY2024 belongs to the fourth plan's period and is not attributed to the current plan.",
+  "records": [
+    {
+      "id": "kawagoe-current-plan-period",
+      "title": "第五次川越市総合計画 計画期間と将来都市像",
+      "statement": "第五次川越市総合計画は、基本構想（2026年度～2035年度）、前期基本計画（2026年度～2030年度）、後期基本計画（2031年度～2035年度）、実施計画で構成され、将来都市像は『ずっと安心、もっと幸せ、魅力あふれるまち 川越』である。FY2026は現行計画の初年度にあたる。",
+      "value": "基本構想 2026年度～2035年度",
+      "decision": "accepted",
+      "evidence_role": "current_plan_identity",
+      "source_url": "https://www.city.kawagoe.saitama.jp/shisei/seisaku/1008089/1008090/index.html",
+      "evidence_location": "第五次川越市総合計画の公式ページ（基本構想・基本計画の期間と将来都市像）",
+      "review_note": "公式の第五次総合計画ページで計画期間と将来都市像を直接確認したレビュー済みレコード。"
+    },
+    {
+      "id": "kawagoe-current-policy-structure",
+      "title": "前期基本計画の政策体系（8分野・38施策）",
+      "statement": "前期基本計画は8つの分野（こども・子育て／福祉・保健・医療／教育・文化・スポーツ／都市基盤・生活基盤／産業・観光／環境／地域社会・安全安心／協働・行財政運営）と、分野別に4・5・5・5・4・5・5・5の合計38施策で構成される。個別施策名の全件列挙は本パッケージでは行わない。",
+      "value": 38,
+      "unit": "basic_plan_measures",
+      "decision": "accepted",
+      "evidence_role": "policy_structure",
+      "source_url": "https://www.city.kawagoe.saitama.jp/shisei/seisaku/1008089/1008090/index.html",
+      "evidence_location": "第五次川越市総合計画の公式ページ（前期基本計画の分野・施策の構成）",
+      "review_note": "公式計画ページの一次資料記録で分野名と施策数を確認したレビュー済みレコード。施策名の列挙はdeferred depth。"
+    },
+    {
+      "id": "kawagoe-implementation-plan-layer",
+      "title": "実施計画（2026年度～2028年度）",
+      "statement": "実施計画は2026年度～2028年度を対象とする3年間のローリング方式の計画であり、前期基本計画の施策を具体化する層である。個別事業の実績値は本パッケージでは昇格しない。",
+      "value": "実施計画 2026年度～2028年度",
+      "decision": "accepted",
+      "evidence_role": "implementation_layer",
+      "source_url": "https://www.city.kawagoe.saitama.jp/shisei/seisaku/1008089/1008090/1021199.html",
+      "evidence_location": "実施計画（2026年度～2028年度）の公式ページ",
+      "review_note": "公式の実施計画ページで対象期間と位置づけを直接確認したレビュー済みレコード。"
+    },
+    {
+      "id": "kawagoe-plan-transition",
+      "title": "第四次計画から第五次計画への移行とFY2024の帰属",
+      "statement": "FY2024は第四次川越市総合計画の後期基本計画（2021年度～2025年度）の4年目に帰属する。現行の第五次計画は2026年度開始であり、FY2024決算を現行計画の実績として扱わない。",
+      "decision": "accepted",
+      "evidence_role": "plan_transition",
+      "source_url": "https://www.city.kawagoe.saitama.jp/shisei/seisaku/1008089/1008090/index.html",
+      "evidence_location": "第五次川越市総合計画の公式ページ（計画の開始年度）と第四次計画の後期基本計画期間（2021年度～2025年度）",
+      "review_note": "計画移行と年度帰属を公式情報で確認したレビュー済みレコード。年度の混同を防ぐための明示レコード。"
+    },
+    {
+      "id": "kawagoe-fy2024-settlement-linkage",
+      "title": "令和6年度決算と第五次川越市総合計画事業の接続",
+      "statement": "FY2024決算値と第五次川越市総合計画の個別事業との接続は未判定（not_assessable）。FY2024は第四次計画の期間に帰属するため、現行計画の事業実績としては接続できない。",
+      "fiscal_year": 2024,
+      "decision": "not_assessable",
+      "evidence_role": "annual_progress",
+      "source_url": "https://www.city.kawagoe.saitama.jp/shisei/zaisei/1010980/1011052/1018809/1018810.html",
+      "evidence_location": "令和6年度決算の公式ページ（一般会計歳入・歳出の円単位額）",
+      "review_note": "計画期間の帰属が異なるため現行計画への接続を推測で記録しないための明示的な未判定レコード。"
+    }
+  ]
+}

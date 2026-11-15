@@ -1,0 +1,49 @@
+{
+  "id": "takasaki-current-policy-structure",
+  "phase": 15,
+  "official_code": "102024",
+  "name_ja": "高崎市",
+  "current_plan": {
+    "title": "高崎市第6次総合計画",
+    "period_label": "2018年度～2027年度",
+    "start_fiscal_year": 2018,
+    "end_fiscal_year": 2027,
+    "structure": "3つの節で構成される。第1節『都市づくりの基本戦略』（14の戦略）、第2節『地域の特性を生かした振興策による都市づくり』（7つの地域）、第3節『主要施策』（4分野: 総務教育・保健福祉・市民経済・建設水道）。一般的な基本構想・基本計画・実施計画の3層モデルには当てはめない。",
+    "components": [
+      {
+        "layer": "section_1",
+        "label_ja": "第1節 都市づくりの基本戦略",
+        "period": "14の戦略"
+      },
+      {
+        "layer": "section_2",
+        "label_ja": "第2節 地域の特性を生かした振興策による都市づくり",
+        "period": "7つの地域"
+      },
+      {
+        "layer": "section_3",
+        "label_ja": "第3節 主要施策",
+        "period": "4分野（総務教育・保健福祉・市民経済・建設水道）"
+      }
+    ],
+    "major_policy_fields": {
+      "count": 4,
+      "names": [
+        "総務教育",
+        "保健福祉",
+        "市民経済",
+        "建設水道"
+      ],
+      "names_enumerated_in_v1": true,
+      "enumeration_boundary": "第3節の分野名は公式計画書で確認できるためv1で列挙する。第1節の14戦略の名称、各分野の施策の全件列挙はdeferred depthであり、推測で補完しない。"
+    },
+    "enumeration_boundary": "節構成・戦略数・地域数・分野名は公式計画書で確認できるため列挙する。戦略・施策の個別名称の全件列挙はdeferred depthである。"
+  },
+  "counts": {
+    "plan_sections": 3,
+    "major_policy_fields": 4
+  },
+  "source_id": "takasaki-sixth-plan",
+  "review_status": "reviewed",
+  "review_boundary": "第6次総合計画の枠組み（3節構成・14戦略・7地域・主要施策4分野）を確認した。戦略・施策の個別名称の全件列挙は本パッケージの範囲外。"
+}

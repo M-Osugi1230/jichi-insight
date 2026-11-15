@@ -172,9 +172,9 @@
       "prefecture_name_ja": "栃木県",
       "municipality_type": "city",
       "phase14_role": "core_city_and_prefectural_capital",
-      "status": "pending_record_review",
+      "status": "reviewed_complete",
       "source_inventory_path": "data/indexed/utsunomiya-city/source_inventory.json",
-      "completion_path": null
+      "completion_path": "data/catalog/utsunomiya_phase15_completion.json"
     },
     {
       "sequence": 13,
@@ -185,9 +185,9 @@
       "prefecture_name_ja": "群馬県",
       "municipality_type": "city",
       "phase14_role": "core_city_and_prefectural_capital",
-      "status": "pending_record_review",
+      "status": "reviewed_complete",
       "source_inventory_path": "data/indexed/maebashi-city/source_inventory.json",
-      "completion_path": null
+      "completion_path": "data/catalog/maebashi_phase15_completion.json"
     },
     {
       "sequence": 14,
@@ -198,9 +198,9 @@
       "prefecture_name_ja": "群馬県",
       "municipality_type": "city",
       "phase14_role": "core_city",
-      "status": "pending_record_review",
+      "status": "reviewed_complete",
       "source_inventory_path": "data/indexed/takasaki-city/source_inventory.json",
-      "completion_path": null
+      "completion_path": "data/catalog/takasaki_phase15_completion.json"
     },
     {
       "sequence": 15,
@@ -211,9 +211,9 @@
       "prefecture_name_ja": "埼玉県",
       "municipality_type": "city",
       "phase14_role": "core_city",
-      "status": "pending_record_review",
+      "status": "reviewed_complete",
       "source_inventory_path": "data/indexed/kawagoe-city/source_inventory.json",
-      "completion_path": null
+      "completion_path": "data/catalog/kawagoe_phase15_completion.json"
     },
     {
       "sequence": 16,
@@ -894,9 +894,9 @@
   ],
   "summary": {
     "target_count": 67,
-    "reviewed_complete_count": 10,
+    "reviewed_complete_count": 14,
     "review_in_progress_count": 0,
-    "pending_record_review_count": 57,
+    "pending_record_review_count": 53,
     "blocked_source_inventory_count": 0,
     "next_official_code": "072044"
   },
