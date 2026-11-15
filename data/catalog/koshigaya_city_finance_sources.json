@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-16",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "koshigaya-city-home",
+      "municipality_key": "koshigaya-city",
+      "organization": "越谷市",
+      "category": "municipality_profile",
+      "title": "越谷市公式サイト",
+      "url": "https://www.city.koshigaya.saitama.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "越谷市の公式自治体サイト。"
+    },
+    {
+      "id": "koshigaya-budget-2026",
+      "municipality_key": "koshigaya-city",
+      "organization": "越谷市",
+      "category": "budget",
+      "title": "令和8年度予算",
+      "url": "https://www.city.koshigaya.saitama.jp/kurashi_shisei/shisei/yosankessan/yosan/r08/index.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算132,700,000千円（第25号議案）のEvidence。市議会の公式審議結果で令和8年3月18日に原案可決された成立予算。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "koshigaya-settlement-2024",
+      "municipality_key": "koshigaya-city",
+      "organization": "越谷市",
+      "category": "settlement",
+      "title": "令和6年度決算のあらましと健全化判断比率",
+      "url": "https://www.city.koshigaya.saitama.jp/kurashi_shisei/shisei/yosankessan/kessan/aramashi/R06kessan.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入140,215,912,093円・歳出131,705,070,771円を円単位で含む公式決算資料。決算の認定は第101号議案（2025年9月25日に認定可決）。監査委員の決算審査意見の内容確認は未実施。"
+    }
+  ]
+}

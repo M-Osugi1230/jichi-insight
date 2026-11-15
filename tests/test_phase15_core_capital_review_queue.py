@@ -76,16 +76,16 @@ def test_phase15_current_statuses_are_canonical():
     statuses = Counter(row["status"] for row in queue["execution_queue"])
 
     assert statuses == {
-        "reviewed_complete": 16,
-        "pending_record_review": 51,
+        "reviewed_complete": 17,
+        "pending_record_review": 50,
     }
     assert queue["summary"] == {
         "target_count": 67,
-        "reviewed_complete_count": 16,
+        "reviewed_complete_count": 17,
         "review_in_progress_count": 0,
-        "pending_record_review_count": 51,
+        "pending_record_review_count": 50,
         "blocked_source_inventory_count": 0,
-        "next_official_code": "112224",
+        "next_official_code": "122041",
     }
 
     completed = [
@@ -110,6 +110,7 @@ def test_phase15_current_statuses_are_canonical():
         "高崎市",
         "川越市",
         "川口市",
+        "越谷市",
     ]
     assert completed[0]["completion_path"] == "data/catalog/hakodate_phase15_completion.json"
     assert completed[1]["completion_path"] == "data/catalog/asahikawa_phase15_completion.json"
@@ -127,6 +128,7 @@ def test_phase15_current_statuses_are_canonical():
     assert completed[13]["completion_path"] == "data/catalog/takasaki_phase15_completion.json"
     assert completed[14]["completion_path"] == "data/catalog/kawagoe_phase15_completion.json"
     assert completed[15]["completion_path"] == "data/catalog/kawaguchi_phase15_completion.json"
+    assert completed[16]["completion_path"] == "data/catalog/koshigaya_phase15_completion.json"
 
     current = [
         row
@@ -140,9 +142,9 @@ def test_phase15_current_statuses_are_canonical():
         for row in queue["execution_queue"]
         if row["status"] == "pending_record_review"
     ]
-    assert pending[0]["name_ja"] == "越谷市"
-    assert pending[0]["official_code"] == "112224"
-    assert pending[0]["sequence"] == 17
+    assert pending[0]["name_ja"] == "船橋市"
+    assert pending[0]["official_code"] == "122041"
+    assert pending[0]["sequence"] == 18
     assert pending[0]["wave"] == 2
     assert pending[0]["completion_path"] is None
 

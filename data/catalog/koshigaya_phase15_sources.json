@@ -1,0 +1,46 @@
+{
+  "id": "koshigaya-phase15-sources",
+  "phase": 15,
+  "official_code": "112224",
+  "name_ja": "越谷市",
+  "reviewed_at": "2026-11-16",
+  "quality_boundary": "Fifth comprehensive promotion plan (basic concept 2021-2030, basic plans 2021-2025 and 2026-2030, three-year implementation plans on a rolling basis), budget enactment confirmed on the official council vote-result document (bill No. 25 passed as proposed on 2026-03-18), and settlement totals kept at exact yen precision without collapsing proposed, enacted, supplementary, or settlement states.",
+  "sources": [
+    {
+      "id": "koshigaya-fifth-latter-plan",
+      "title": "第5次越谷市総合振興計画 後期基本計画",
+      "official_url": "https://www.city.koshigaya.saitama.jp/kurashi_shisei/shisei/keikaku/daiyozisougousinkoukeikaku/5jisoshin/gozisokoki.html",
+      "format": "html",
+      "evidence_role": "comprehensive_plan",
+      "evidence_location": "越谷市公式Webサイト『第5次越谷市総合振興計画 後期基本計画』ページに、計画本編PDF（基本構想・後期基本計画の一括版、大綱別分冊、概要版等）へのリンクを掲載。概要版に計画の3層構成と期間（令和3年度～令和12年度）、将来像、まちづくりの基本理念、後期基本計画の4章構成と大綱1～6・大項目（施策）全24件を記載し、大項目名は大綱別分冊PDFでも直接確認",
+      "use_boundary": "現行後期基本計画をcurrent versionとして保持し、前期計画の実績とversionを混在させない。"
+    },
+    {
+      "id": "koshigaya-implementation-budget-2026",
+      "title": "令和8年度当初予算編成方針",
+      "official_url": "https://www.city.koshigaya.saitama.jp/kurashi_shisei/shisei/yosankessan/yosan/r08/r8yosanhensei.html",
+      "format": "html",
+      "evidence_role": "implementation_plan",
+      "evidence_location": "越谷市公式Webサイト『令和8年度当初予算編成方針』ページに編成方針本文（PDF）へのリンクを掲載。後期基本計画の初年度である令和8年度の予算編成の考え方を示す入口であり、最終的な予算額そのものは記載しない",
+      "use_boundary": "後期基本計画初年度と第1期実施計画を踏まえた予算編成入口。予算方針を年度Resultへ読み替えない。"
+    },
+    {
+      "id": "koshigaya-budget-2026",
+      "title": "令和8年度予算",
+      "official_url": "https://www.city.koshigaya.saitama.jp/kurashi_shisei/shisei/yosankessan/yosan/r08/index.html",
+      "format": "html",
+      "evidence_role": "budget",
+      "evidence_location": "越谷市公式Webサイト『令和8年度予算』ページはFY2026当初予算・補正予算の公式入口。金額は越谷市議会公式『令和8年3月定例会 市長提出議案』ページからリンクされる『令和8年度越谷市一般会計・特別会計予算書』PDF（総則）第1条に一般会計132,700,000千円を記載し、越谷市議会公式『令和8年3月定例会 審議結果』PDFに第25号議案の原案可決を記載",
+      "use_boundary": "FY2026当初予算は議決・成立済みの額として扱い、proposal/enacted/supplementaryをPhase 15でstage分離する。"
+    },
+    {
+      "id": "koshigaya-settlement-2024",
+      "title": "令和6年度決算のあらましと健全化判断比率",
+      "official_url": "https://www.city.koshigaya.saitama.jp/kurashi_shisei/shisei/yosankessan/kessan/aramashi/R06kessan.html",
+      "format": "html",
+      "evidence_role": "settlement_and_annual_results",
+      "evidence_location": "越谷市公式Webサイト『令和6年度決算のあらましと健全化判断比率』ページからリンクされる『令和6年度決算の概要』PDFの決算総括表（単位 円）に、一般会計の歳入総額140,215,912,093円・歳出総額131,705,070,771円・歳入歳出差引額8,510,841,322円・実質収支額8,401,886,322円を記載。認定は越谷市議会公式『令和7年9月定例会 審議結果』PDFの第101号議案『認定可決』で確認",
+      "use_boundary": "FY2024決算認定と主な事業の公式入口。前期基本計画期間の結果として後期計画current actualへ流用しない。"
+    }
+  ]
+}

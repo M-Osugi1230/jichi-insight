@@ -237,9 +237,9 @@
       "prefecture_name_ja": "埼玉県",
       "municipality_type": "city",
       "phase14_role": "core_city",
-      "status": "pending_record_review",
+      "status": "reviewed_complete",
       "source_inventory_path": "data/indexed/koshigaya-city/source_inventory.json",
-      "completion_path": null
+      "completion_path": "data/catalog/koshigaya_phase15_completion.json"
     },
     {
       "sequence": 18,
@@ -894,11 +894,11 @@
   ],
   "summary": {
     "target_count": 67,
-    "reviewed_complete_count": 16,
+    "reviewed_complete_count": 17,
     "review_in_progress_count": 0,
-    "pending_record_review_count": 51,
+    "pending_record_review_count": 50,
     "blocked_source_inventory_count": 0,
-    "next_official_code": "112224"
+    "next_official_code": "122041"
   },
-  "updated_at": "2026-11-15"
+  "updated_at": "2026-11-16"
 }
