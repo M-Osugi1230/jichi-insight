@@ -1,0 +1,53 @@
+{
+  "id": "phase15-mito-plan-review",
+  "official_code": "082015",
+  "name_ja": "水戸市",
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-15",
+  "next_action": "Promote the measures and KPIs under the four pillars (including the 43 sub-items) and the individual projects of the three-year implementation plans only when official sources with stable record-level locators have been reviewed; inspect the audit commission's settlement review opinion; keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "quality_boundary": "This package reviews current plan identity and period (seventh comprehensive plan: basic concept 2024-2033, first basic plan 2024-2028, second basic plan 2029-2033, three-year implementation plans prepared annually on a rolling basis), the three basic principles, the four pillars and their eleven mid-level items, the enacted FY2026 initial budget, and the FY2024 settlement at exact yen precision, without collapsing proposed, enacted, supplementary, or settlement states. FY2024 is the first fiscal year of the current plan period, but its totals are not linked to individual plan projects.",
+  "records": [
+    {
+      "id": "mito-current-plan-period",
+      "title": "水戸市第7次総合計画－みと魁・Nextプラン－ 計画期間と将来都市像",
+      "statement": "水戸市第7次総合計画－みと魁・Nextプラン－は水戸市の最上位計画であり、基本構想の計画期間は2024年度（令和6年度）から2033年度（令和15年度）までの10年間で、将来都市像は『こども育む くらし楽しむ みらいに躍動する 魁のまち・水戸』である。",
+      "value": "2024年度～2033年度",
+      "decision": "accepted",
+      "evidence_role": "current_plan_identity",
+      "source_url": "https://www.city.mito.lg.jp/page/69724.html",
+      "evidence_location": "公式『水戸市第7次総合計画－みと魁・Nextプラン－』ページ本文『基本構想は、本市の都市づくりの総合的かつ長期的な指針として…2024（令和6）年度から2033（令和15）年度までの10年間を計画期間としています』および『本プランは、水戸市の目指す将来都市像を「こども育む くらし楽しむ みらいに躍動する 魁のまち・水戸」と定めています』",
+      "review_note": "計画期間と将来都市像を公式計画ページ本文で直接確認したレビュー済みレコード。基本構想本編の全文通読確認は deferred depth として保持する。"
+    },
+    {
+      "id": "mito-current-policy-structure",
+      "title": "水戸市第7次総合計画－みと魁・Nextプラン－ 3層構造と施策の大綱",
+      "statement": "水戸市第7次総合計画－みと魁・Nextプラン－は、基本構想（2024年度～2033年度）、基本計画（前期基本計画2024年度～2028年度、後期基本計画2029年度～2033年度。総論と各論で構成）、3か年実施計画の3層構造で構成される。基本構想は都市づくりの基本理念として『水戸の未来をリードする「こどもたち」を育むまちをつくる』『市民の豊かな暮らしを実現できる「経済発展」するまちをつくる』『誰もが生き生きと暮らせる「安心」できるまちをつくる』の3つを掲げる。基本計画・各論は四つの柱（まち全体で「こどもたちを育むみと」、多くの人が集い、産業が集積する「活力あるみと」、命と健康、暮らしを守る「安全・安心なみと」、市民と行政で「共に創るみと」）、11の中項目及び43の小項目の施策の大綱で構成され、総論では重点プロジェクトとしてMission1『みとっこ未来プロジェクト』とMission2『若い世代の移住・定住加速プロジェクト』を定める。",
+      "decision": "accepted",
+      "evidence_role": "policy_structure",
+      "source_url": "https://www.city.mito.lg.jp/page/69724.html",
+      "evidence_location": "公式計画ページ本文『基本計画は…総論と各論で構成し、前期基本計画が2024（令和6）年度から2028（令和10）年度まで、後期基本計画が2029（令和11）年度から2033（令和15）年度までの各5年間を計画期間としています』『基本計画・各論では、四つの柱（大項目）、11の中項目及び43の小項目を定める施策の大綱に基づき、様々な具体的施策を位置付けています』および重点プロジェクトの項",
+      "review_note": "公式計画ページが明示した3層構造、基本理念、基本計画各論の柱立てと重点プロジェクトを直接確認したレビュー済みレコード。個別施策の全件列挙は行わない。"
+    },
+    {
+      "id": "mito-implementation-plan-framework",
+      "title": "3か年実施計画（毎年度策定）による進行管理の枠組み",
+      "statement": "水戸市は、水戸市第7次総合計画－みと魁・Nextプラン－の実現に向け、3年間で取り組む主な事業を位置付ける3か年実施計画を毎年度策定し、進行管理を行う。現行版は2026年度～2028年度の実施計画であり、第1部総論（策定の基本方針、期間とシステム、基本的指標、財政計画、重点プロジェクト、施策の大綱図）と第2部各論（主要事業年度別計画、財政計画、施設整備計画）で構成される。",
+      "decision": "accepted",
+      "evidence_role": "progress_governance",
+      "source_url": "https://www.city.mito.lg.jp/page/116349.html",
+      "evidence_location": "公式『3か年実施計画（2026年度～2028年度）』ページ本文『この将来都市像の実現に向け、2026（令和8）年度から2028（令和10）年度までの3年間で取り組む主な事業を位置付けました』および同ページの構成一覧（第1部総論・第2部各論）。実施計画を毎年度策定する運用は、教育委員会定例会会議録（公式）に『水戸市第7次総合計画は、令和6年3月に策定し、その実現に向け、毎年度、実施計画を策定するとともに、適切な進行管理を行』う旨の説明記録がある",
+      "review_note": "3か年実施計画の現行版（2026年度～2028年度）の存在と構成、毎年度策定の運用を公式資料で直接確認したレビュー済みレコード。個別事業の進捗・実績値そのものは本パッケージでは扱わない。"
+    },
+    {
+      "id": "mito-fy2024-settlement-linkage",
+      "title": "令和6年度決算と水戸市第7次総合計画事業の接続",
+      "statement": "FY2024決算値と水戸市第7次総合計画－みと魁・Nextプラン－の個別事業との接続は未判定（not_assessable）。FY2024は第7次総合計画の計画期間（2024年度～2033年度）の初年度であり前期基本計画の期間に属する決算で、計画の版をまたぐ問題はないが、決算総額（歳入・歳出）は公式決算報告書で確認したにとどまり、個別事業との対応付け・突合は未実施である。決算とあわせて公表される主要施策の成果についても、個別事業単位での計画との接続確認は人間レビュー工程の作業とする。",
+      "fiscal_year": 2024,
+      "decision": "not_assessable",
+      "evidence_role": "annual_progress",
+      "source_url": "https://www.city.mito.lg.jp/page/107758.html",
+      "evidence_location": "『令和6年度決算の概要』ページ（決算報告書・基金運用状況調書へのリンク。同ページ本文に『主要施策の成果の概要について掲載しています』と記載）",
+      "review_note": "決算総額を確認できたことと、個別事業の接続を推測で記録しないことは別の判断であることを示す明示的な未判定レコード。決算と事業の対応付けは追加エビデンス確認まで行わない。"
+    }
+  ]
+}

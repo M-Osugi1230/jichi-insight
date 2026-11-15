@@ -1,0 +1,63 @@
+{
+  "id": "mito-current-policy-structure",
+  "phase": 15,
+  "official_code": "082015",
+  "name_ja": "水戸市",
+  "current_plan": {
+    "title": "水戸市第7次総合計画－みと魁・Nextプラン－",
+    "period_label": "基本構想 2024年度～2033年度",
+    "start_fiscal_year": 2024,
+    "end_fiscal_year": 2033,
+    "structure": "基本構想（2024年度～2033年度）、基本計画（前期2024年度～2028年度・後期2029年度～2033年度。総論と各論で構成）、3か年実施計画（毎年度ローリングで策定）の3層構成。基本構想は3つの基本理念を掲げ、基本計画・各論は四つの柱（大項目）、11の中項目及び43の小項目の施策の大綱で構成され、総論では重点プロジェクトとしてMission1『みとっこ未来プロジェクト』とMission2『若い世代の移住・定住加速プロジェクト』を定める。将来都市像は『こども育む くらし楽しむ みらいに躍動する 魁のまち・水戸』。",
+    "components": [
+      {
+        "layer": "basic_concept",
+        "label_ja": "基本構想",
+        "period": "2024年度～2033年度"
+      },
+      {
+        "layer": "basic_plan_first",
+        "label_ja": "前期基本計画",
+        "period": "2024年度～2028年度"
+      },
+      {
+        "layer": "basic_plan_second",
+        "label_ja": "後期基本計画",
+        "period": "2029年度～2033年度"
+      },
+      {
+        "layer": "implementation_plan",
+        "label_ja": "3か年実施計画",
+        "period": "3か年ローリング（現行版は2026年度～2028年度）"
+      }
+    ],
+    "basic_principles": {
+      "count": 3,
+      "names": [
+        "水戸の未来をリードする「こどもたち」を育むまちをつくる",
+        "市民の豊かな暮らしを実現できる「経済発展」するまちをつくる",
+        "誰もが生き生きと暮らせる「安心」できるまちをつくる"
+      ],
+      "names_enumerated_in_v1": true
+    },
+    "basic_goals": {
+      "count": 4,
+      "names": [
+        "まち全体で「こどもたちを育むみと」",
+        "多くの人が集い、産業が集積する「活力あるみと」",
+        "命と健康、暮らしを守る「安全・安心なみと」",
+        "市民と行政で「共に創るみと」"
+      ],
+      "names_enumerated_in_v1": true,
+      "enumeration_boundary": "四つの柱と11の中項目の名称は公式計画ページの正式名称をそのまま使う。43の小項目と個別事業・KPIの全件列挙はdeferred depthであり、推測で補完しない。"
+    },
+    "vision": "こども育む くらし楽しむ みらいに躍動する 魁のまち・水戸",
+    "enumeration_boundary": "基本理念・四つの柱・11の中項目の名称は公式計画ページで確認できるため列挙する。43の小項目と個別事業・KPIの全件列挙はdeferred depthである。"
+  },
+  "counts": {
+    "basic_goals": 4
+  },
+  "source_id": "mito-seventh-plan",
+  "review_status": "reviewed",
+  "review_boundary": "水戸市第7次総合計画－みと魁・Nextプラン－の枠組み（3層構成・基本理念3つ・四つの柱と11の中項目・3か年実施計画の毎年度ローリング方式）を確認した。43の小項目と個別事業・KPIの全件列挙は本パッケージの範囲外。"
+}

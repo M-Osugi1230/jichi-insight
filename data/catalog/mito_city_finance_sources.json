@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-15",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "mito-city-home",
+      "municipality_key": "mito-city",
+      "organization": "水戸市",
+      "category": "municipality_profile",
+      "title": "水戸市公式サイト",
+      "url": "https://www.city.mito.lg.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "水戸市の公式自治体サイト。"
+    },
+    {
+      "id": "mito-budget-2026",
+      "municipality_key": "mito-city",
+      "organization": "水戸市",
+      "category": "budget",
+      "title": "令和8年度予算の概要",
+      "url": "https://www.city.mito.lg.jp/page/110290.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算130,814,000千円（議案第26号）のEvidence。市議会の議案等一覧で令和8年3月18日に原案可決された成立予算。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "mito-settlement-2024",
+      "municipality_key": "mito-city",
+      "organization": "水戸市",
+      "category": "settlement",
+      "title": "令和6年度決算の概要",
+      "url": "https://www.city.mito.lg.jp/page/107758.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入128,541,227,654円・歳出126,380,047,662円を円単位で含む公式決算資料。決算の認定は認定第1号（2025年9月22日認定）。監査委員の決算審査意見の内容確認は未実施。"
+    }
+  ]
+}
