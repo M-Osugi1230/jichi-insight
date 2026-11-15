@@ -175,8 +175,10 @@ export default function MiyagiPage() {
                               {series.values.map((value) => (
                                 <div key={value.role}>
                                   <dt>{roleLabels[value.role]}</dt>
-                                  <dd>{valueLabel(value, series.unit_original)}</dd>
-                                  <small>{value.period_original}（{value.period_year}年）</small>
+                                  <dd>
+                                    {valueLabel(value, series.unit_original)}
+                                    <small>{value.period_original}（{value.period_year}年）</small>
+                                  </dd>
                                 </div>
                               ))}
                             </dl>

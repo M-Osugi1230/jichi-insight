@@ -10,6 +10,7 @@
 .summaryGrid p { border-top: 1px solid rgb(184 180 170 / 70%); color: #42505b; font-size: 0.69rem; margin: auto 0 0; padding-top: 12px; }
 .distinction { background: #102e46; border-radius: 7px 38px 7px 7px; color: #fff; display: grid; gap: 60px; grid-template-columns: 0.7fr 1.3fr; margin: 0 0 20px; padding: 52px 46px; }
 .distinction h2 { font-size: clamp(2.1rem, 4.2vw, 3.5rem); margin-bottom: 0; }
+.distinction :global(.eyebrow) { color: #ff9a80; }
 .distinctionCards { display: grid; gap: 1px; grid-template-columns: repeat(2, 1fr); }
 .distinctionCards article { background: rgb(255 255 255 / 8%); border: 1px solid rgb(255 255 255 / 17%); padding: 22px; }
 .distinctionCards span { color: #ff9a80; font-size: 0.62rem; font-weight: 900; }
@@ -48,7 +49,7 @@
 .valueGrid div:first-child { border-left: 0; padding-left: 0; }
 .valueGrid dt { color: #5a656d; font-size: 0.55rem; }
 .valueGrid dd { font-size: 0.75rem; font-weight: 850; line-height: 1.4; margin: 6px 0 2px; overflow-wrap: anywhere; }
-.valueGrid small { color: #5a656d; font-size: 0.53rem; }
+.valueGrid small { color: #5a656d; display: block; font-size: 0.53rem; font-weight: 400; }
 .dataNote, .comparabilityNote { font-size: 0.62rem; line-height: 1.65; margin: 13px 0 0; padding: 8px 10px; }
 .dataNote { background: #f4ead0; color: #78540d; }
 .comparabilityNote { background: #dbeaf2; color: #15577e; }
@@ -60,7 +61,7 @@
 .boundary h2 { font-size: clamp(2rem, 4vw, 3.3rem); }
 .boundary ul { list-style: none; margin: 0; padding: 0; }
 .boundary li { border-top: 1px solid #b8b4aa; display: grid; gap: 8px; grid-template-columns: 170px 1fr; padding: 14px 0; }
-.boundary li strong { color: #986b16; font-size: 0.72rem; }
+.boundary li strong { color: #7f5a0e; font-size: 0.72rem; }
 .boundary li span { color: #42505b; font-size: 0.72rem; }
 .bottomNav { display: flex; flex-wrap: wrap; gap: 18px; padding: 34px 0 10px; }
 

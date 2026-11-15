@@ -211,7 +211,7 @@ export default function MunicipalitiesPage() {
                 <span>0{index + 1}</span>
                 <small>{stage.label}</small>
                 <strong>{stage.count}<em>/47</em></strong>
-                <div aria-label={`${stage.label} ${stage.count}/47`}>
+                <div role="img" aria-label={`${stage.label} ${stage.count}/47`}>
                   <span style={{ width: `${(stage.count / 47) * 100}%` }} />
                 </div>
                 <p>{stage.note}</p>

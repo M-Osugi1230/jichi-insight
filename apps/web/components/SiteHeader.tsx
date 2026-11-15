@@ -39,7 +39,7 @@ export function SiteHeader() {
         </div>
       </div>
       <header className="siteHeader">
-        <Link className="brand" href="/" aria-label="Jichi Insight ホーム">
+        <Link className="brand" href="/">
           <span className="brandMark" aria-hidden="true">JI</span>
           <span className="brandText">
             <strong>Jichi Insight</strong>
@@ -60,7 +60,7 @@ export function SiteHeader() {
           </details>
         </nav>
         <details className="mobileNav">
-          <summary aria-label="ナビゲーションを開く"><span>メニュー</span></summary>
+          <summary><span>メニュー</span></summary>
           <nav aria-label="モバイルナビゲーション">
             <p>調べる</p>
             {primaryNavigation.map((item) => (
