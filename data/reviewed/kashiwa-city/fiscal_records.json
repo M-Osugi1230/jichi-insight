@@ -1,0 +1,65 @@
+[
+  {
+    "id": "jp-local-122173-fiscal-2026-total-expenditure",
+    "municipality_id": "jp-local-122173",
+    "fiscal_year": 2026,
+    "stage": "initial_budget",
+    "account_type": "general",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算（可決）",
+    "amount_yen": 191224000000,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "sources": [
+      "kashiwa-budget-2026"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "柏市公式『令和8年度の予算』ページからリンクされる『令和8年度当初予算案の概要～わかりやすい予算～』PDFの予算総括表に一般会計191,224百万円と記載され、歳入・歳出表（単位 千円）の合計191,224,000千円と一致する令和8年度当初予算額。柏市議会公式『柏市議会令和8年第1回定例会議決結果一覧』で議案第34号『令和8年度柏市一般会計予算について』が令和8年3月24日に原案可決された成立当初予算であり、予算案段階の額ではない。補正予算や決算とは別stateで扱う。"
+  },
+  {
+    "id": "jp-local-122173-fiscal-2024-total-revenue",
+    "municipality_id": "jp-local-122173",
+    "fiscal_year": 2024,
+    "stage": "settlement",
+    "account_type": "general",
+    "metric": "total_revenue",
+    "metric_label": "一般会計決算歳入",
+    "amount_yen": 175594266737,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "kashiwa-settlement-2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "柏市公式『決算書』ページからリンクされる『令和6年度柏市歳入歳出決算書』PDFの一般会計・特別会計決算総覧（単位 円）の一般会計収入済額175,594,266,737円。支出済額168,389,488,303円との差引額7,204,778,434円は同総覧に掲載された歳入歳出差引残高と一致する。令和6年度決算は議案第16号『令和6年度柏市一般会計歳入歳出決算の認定について』として令和7年10月2日に原案認定された。FY2024は柏市第六次総合計画（2025年度～2034年度）の計画期間開始前に属する決算である。"
+  },
+  {
+    "id": "jp-local-122173-fiscal-2024-total-expenditure",
+    "municipality_id": "jp-local-122173",
+    "fiscal_year": 2024,
+    "stage": "settlement",
+    "account_type": "general",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計決算歳出",
+    "amount_yen": 168389488303,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "kashiwa-settlement-2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "同決算書の決算総覧（単位 円）の一般会計支出済額168,389,488,303円。収入済額175,594,266,737円との差引額7,204,778,434円で検算が一致する。令和6年度決算は議案第16号として令和7年10月2日に原案認定された。"
+  }
+]

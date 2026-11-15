@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-16",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "kashiwa-city-home",
+      "municipality_key": "kashiwa-city",
+      "organization": "柏市",
+      "category": "municipality_profile",
+      "title": "柏市公式サイト",
+      "url": "https://www.city.kashiwa.lg.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "柏市の公式自治体サイト。"
+    },
+    {
+      "id": "kashiwa-budget-2026",
+      "municipality_key": "kashiwa-city",
+      "organization": "柏市",
+      "category": "budget",
+      "title": "令和8年度の予算",
+      "url": "https://www.city.kashiwa.lg.jp/zaisei/policy_pr/budget/budget2/r8-yosan.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算191,224,000千円（議案第34号）のEvidence。市議会の公式議決結果一覧で令和8年3月24日に原案可決された成立予算。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "kashiwa-settlement-2024",
+      "municipality_key": "kashiwa-city",
+      "organization": "柏市",
+      "category": "settlement",
+      "title": "決算書",
+      "url": "https://www.city.kashiwa.lg.jp/kaikei/policy_pr/accounts/kessansho.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入175,594,266,737円・歳出168,389,488,303円を円単位で含む公式決算資料。決算の認定は議案第16号（2025年10月2日に原案認定）。監査委員の決算審査意見の内容確認は未実施。"
+    }
+  ]
+}

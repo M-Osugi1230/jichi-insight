@@ -320,13 +320,25 @@ Declared v1 package:
 
 Deferred depth includes the individual projects and achievement indicators under the 24 basic measures and 71 measures, full-text confirmation of the plan book, the audit commission's settlement review opinion (not inspected), confirmation of yen-level settlement totals, cross-checks against the settlement detail book, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Nineteenth completion — Kashiwa
+
+柏市を19市目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 柏市第六次総合計画 — basic concept 2025–2034 (vision 『柏に関わる一人ひとりが想いを実現できるまち～多様な価値や人々がつながり、新たな価値の創造に挑戦～』), basic plan in two halves (first 2025–2029, second 2030–2034), three-year implementation plans revised every year (current edition 2026–2028). The basic concept sets three basic goals （基本的な目標） that cut across fields; the first-half basic plan combines three cross-field priority themes （重点テーマ, seven items) with a policy framework （施策体系） of 22 fields （分野） and 66 measures （施策）
+- FY2026 general-account initial budget: 191,224,000,000 yen (enacted; 議案第34号 原案可決 on 2026-03-24 at the 1st regular council session of 2026; amount from the official budget overview's revenue/expenditure tables, stated in thousands of yen)
+- FY2024 general-account settlement at exact yen precision: revenue 175,594,266,737 yen / expenditure 168,389,488,303 yen (balance 7,204,778,434 yen matches the published 歳入歳出差引残高）; certification 議案第16号 certified （原案認定） 2025-10-02. FY2024 predates the sixth plan period and belongs to the former fifth plan, so its totals must not be reused as results of the current plan; its item-level linkage to individual plan projects was not performed, so the linkage stays not_assessable
+
+Deferred depth includes the individual projects and achievement indicators under the 22 fields and 66 measures and the priority themes, full-text confirmation of the plan book, the audit commission's settlement review opinion (not inspected), cross-checks against the settlement detail book, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 18 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市
+- Reviewed complete: 19 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市
 - Review in progress: 0
-- Pending record review: 49
+- Pending record review: 48
 - Blocked source inventory: 0
-- Next official code: 122173
+- Next official code: 131040
 
 ## Definition of Phase 15 completion
 
