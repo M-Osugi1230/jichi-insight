@@ -1,0 +1,65 @@
+[
+  {
+    "id": "jp-local-162019-fiscal-2026-total-expenditure",
+    "municipality_id": "jp-local-162019",
+    "fiscal_year": 2026,
+    "stage": "initial_budget",
+    "account_type": "general",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算（可決）",
+    "amount_yen": 199776107000,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "sources": [
+      "toyama-budget-2026"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "富山市公式『令和8年度当初予算（案）概要』（令和8年2月20日記者会見資料）の会計別予算表（単位 千円）に、令和8年度一般会計当初予算額199,776,107千円（令和7年度195,572,923千円、増減4,203,184千円で検算一致）と示された当初予算額。富山市議会公式『とやま市議会だより』の令和8年3月定例会の概要に、議案第1号『令和8年度富山市一般会計予算』を含む合わせて135議案が原案のとおり決まったことと、令和8年3月24日の本会議で当初分の委員長報告・討論・採決が行われたことが記録され、議決後の予算規模表でも一般会計1,997億7,610万7千円（199,776,107千円）で一致する。議決を受けて成立した当初予算であり、予算案段階の額ではない。概要の会計別予算表で一般会計に外数として示された3月補正予算への前倒し分4,109,631千円は当初予算額に含まれていない。補正予算や決算とは別stateで扱う。"
+  },
+  {
+    "id": "jp-local-162019-fiscal-2024-total-revenue",
+    "municipality_id": "jp-local-162019",
+    "fiscal_year": 2024,
+    "stage": "settlement",
+    "account_type": "general",
+    "metric": "total_revenue",
+    "metric_label": "一般会計決算歳入",
+    "amount_yen": 189996111000,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "toyama-settlement-2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "富山市公式『令和6年度決算について』（令和7年9月）の一般会計決算収支の状況表および各会計別歳入歳出決算総括表（単位 千円）の一般会計歳入総額189,996,111千円。歳出総額185,876,806千円との差引額4,119,305千円が同表の公表する差引（形式収支）と一致し、実質収支は3,450,102千円である。公表精度は千円単位であり、円単位の総額は公式資料で確認できないため合成していない（amount_yenは千円値の換算値であり、精度は千円単位のままである）。令和6年度決算は認定第1号『令和6年度富山市一般会計歳入歳出決算』として令和7年9月定例会に提出され、予算決算委員会への付託・閉会中の継続審査を経て、令和7年12月定例会の令和7年11月28日の本会議で認定された（市議会公式『とやま市議会だより』で確認）。"
+  },
+  {
+    "id": "jp-local-162019-fiscal-2024-total-expenditure",
+    "municipality_id": "jp-local-162019",
+    "fiscal_year": 2024,
+    "stage": "settlement",
+    "account_type": "general",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計決算歳出",
+    "amount_yen": 185876806000,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "toyama-settlement-2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "同『令和6年度決算について』の同表（単位 千円）の一般会計歳出総額185,876,806千円。歳入総額189,996,111千円との差引額4,119,305千円で検算が一致する。公表精度は千円単位であり、円単位の総額は合成していない。令和6年度決算は認定第1号として令和7年11月28日に認定された。"
+  }
+]

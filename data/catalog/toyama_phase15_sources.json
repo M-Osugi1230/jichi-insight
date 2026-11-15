@@ -1,0 +1,55 @@
+{
+  "id": "toyama-phase15-sources",
+  "phase": 15,
+  "official_code": "162019",
+  "name_ja": "富山市",
+  "reviewed_at": "2026-11-16",
+  "quality_boundary": "Current plan identity kept as published (the 2nd Toyama City Comprehensive Plan: three-layer structure, basic concept FY2017-FY2026, latter basic plan FY2022-FY2026, city vision 『人・まち・自然が調和する活力都市とやま』; four town-development goals, 14 policies and 51 measures, with the 51 measures not enumerated in v1), implementation layer (annual implementation plans under outcome-oriented town development and the PDCA administrative management cycle), budget enactment confirmed in the council's official newsletter (bill No. 1 passed as proposed on 2026-03-24), and settlement totals kept at the published thousand-yen precision without synthesizing yen-precision totals and without collapsing proposed, enacted, supplementary, or settlement states. The third comprehensive plan now being drafted is kept as transition evidence only.",
+  "sources": [
+    {
+      "id": "toyama-second-latter-plan",
+      "title": "第2次富山市総合計画 後期基本計画",
+      "official_url": "https://www.city.toyama.lg.jp/shisei/seisaku/1010738/1011468/1002415/1010742/1002462.html",
+      "format": "html",
+      "evidence_role": "comprehensive_plan",
+      "evidence_location": "富山市公式Webサイト『第2次富山市総合計画 後期基本計画』ページは現行基本計画の公式入口。同ページからリンクされる計画本編・概要版（令和4年3月）で、総合計画の3層構成（基本構想は期間10年・2017年～2026年、基本計画は前期2017年～2021年・後期2022年～2026年の各5年、実施計画は毎年度）、目指す都市像『人・まち・自然が調和する活力都市とやま』、後期基本計画の4つのまちづくりの目標・14政策・51施策の体系とネクストステージ重点プロジェクト（3つの視点・7つの重点テーマ）を直接確認",
+      "use_boundary": "現行計画は第2次総合計画（基本構想2017年度～2026年度）とその後期基本計画（2022年度～2026年度）として保持し、策定中の第3次総合計画の内容を現行計画へ先取り接続しない。51施策・総合計画事業の全件は本候補では列挙しない。"
+    },
+    {
+      "id": "toyama-implementation-2026",
+      "title": "令和8年度実施計画",
+      "official_url": "https://www.city.toyama.lg.jp/shisei/seisaku/1010738/1011468/1002415/1010742/1002462.html",
+      "format": "html",
+      "evidence_role": "implementation_plan",
+      "evidence_location": "富山市公式Webサイトの後期基本計画ページに掲載された『令和8年度実施計画』（第2次富山市総合計画 後期基本計画 令和4年度～令和8年度）の第1部で、位置付け（総合計画は基本構想・基本計画・実施計画で構成し、実施計画は後期基本計画の期間内において年度毎に策定し、事業の内容やスケジュールを毎年見直す）、対象事業（総合計画事業）、成果重視のまちづくり（施策ごとの成果指標の設定と市民意識調査等による効果把握、PDCAによる行政マネジメントサイクル）を確認し、第3部の施策体系で都市像・4つのまちづくりの目標・14政策・51施策・総合計画事業177事業の階層構造を確認",
+      "use_boundary": "令和8年度実施計画は現行第2次計画の最終年度の実施計画として保持し、実施計画の事業を第3次総合計画の事業identityへ自動移行しない。個別事業・指標の実績値そのものは本候補では記録しない。"
+    },
+    {
+      "id": "toyama-budget-2026",
+      "title": "令和8年度当初予算案の概要",
+      "official_url": "https://www.city.toyama.lg.jp/shisei/mayor/1010725/1016816/1018580.html",
+      "format": "html",
+      "evidence_role": "budget",
+      "evidence_location": "富山市公式Webサイト『記者会見 令和8年2月20日』ページはFY2026当初予算案の公式入口（Phase 14インベントリで確認）。金額の確定値は同ページの発表資料『令和8年度当初予算（案）概要』の会計別予算表（単位 千円）で一般会計199,776,107千円を確認し、議決は富山市議会公式『とやま市議会だより』令和8年3月定例会の概要（会期は令和8年2月27日～3月24日、議案第1号『令和8年度富山市一般会計予算』を含む135議案が原案のとおり決定、3月24日の本会議で当初分の採決。議決後の予算規模表でも一般会計1,997億7,610万7千円で一致）で確認",
+      "use_boundary": "FY2026当初予算は議決・成立済みの額として扱い、proposal/enacted/supplementaryをPhase 15でstage分離する。予算案の概要に外数として示された3月補正予算への前倒し分（4,109,631千円）は当初予算額に含めない。予算案段階の発表資料と成立後の予算書を混同しない。"
+    },
+    {
+      "id": "toyama-settlement-2024",
+      "title": "決算",
+      "official_url": "https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003078.html",
+      "format": "html",
+      "evidence_role": "settlement",
+      "evidence_location": "富山市公式Webサイト『決算』ページはFY2024を含む決算状況の公式入口。同ページの公式『令和6年度決算について』（令和7年9月）の一般会計決算収支の状況表と各会計別歳入歳出決算総括表（いずれも単位 千円）で一般会計の歳入総額189,996,111千円・歳出総額185,876,806千円・差引（形式収支）4,119,305千円を確認。認定の経過は、富山市議会公式『とやま市議会だより』令和7年9月定例会の概要（決算関連議案は予算決算委員会へ付託し12月定例会までの閉会中継続審査）と令和7年12月定例会の概要・決算関連議案分（認定第1号『令和6年度富山市一般会計歳入歳出決算』を含む決算関連議案24件が認定され、令和7年11月28日の本会議で決算分の委員長報告・討論・採決が行われた）で確認",
+      "use_boundary": "FY2024決算の公表精度は千円単位であり、円単位の総額は合成しない。決算総額を第2次総合計画後期基本計画の目標・政策・施策や実施計画事業の実績へ直接流用しない。"
+    },
+    {
+      "id": "toyama-next-plan",
+      "title": "富山市総合計画",
+      "official_url": "https://www.city.toyama.lg.jp/shisei/seisaku/1010738/1011468/1002415/index.html",
+      "format": "html",
+      "evidence_role": "plan_transition",
+      "evidence_location": "富山市公式Webサイト『富山市総合計画』ページに、現行の第2次富山市総合計画後期基本計画が令和8年度末をもって終了することから、令和6年度から令和8年度にかけて第3次富山市総合計画を策定している（策定作業中）旨が明記され、第2次富山市総合計画（平成29年から令和8年）へのリンクとあわせて確認",
+      "use_boundary": "第3次総合計画は策定中のtransition evidenceとして保持し、draftの内容をcurrent planへ昇格しない。現行計画の実績・事業を次期計画の体系へ先取り接続しない。"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "phase15-toyama-plan-review",
+  "official_code": "162019",
+  "name_ja": "富山市",
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-16",
+  "next_action": "Promote the full enumeration of the latter basic plan's 51 measures, the implementation plan's comprehensive-plan projects (177 projects in the FY2026 implementation plan) and their outcome indicators and results only when official sources with stable record-level locators have been reviewed; cross-check the settlement detail book (事項別明細書); confirm the budget vote proceedings against the plenary session minutes; inspect the audit committee's settlement review opinion, including whether yen-precision totals are published there; record the third comprehensive plan only as a version transition once it has been officially adopted and published; keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "quality_boundary": "This package reviews the current plan identity and period (the 2nd Toyama City Comprehensive Plan: a three-layer structure of basic concept FY2017-FY2026, basic plan in a first half FY2017-FY2021 and a latter half FY2022-FY2026, and annual implementation plans; the current basic plan is the latter basic plan, under the city vision 『人・まち・自然が調和する活力都市とやま』), the latter basic plan's structure of four town-development goals, 14 policies and 51 measures (the 51 measures are not enumerated in v1), the implementation layer (annual implementation plans; the FY2026 implementation plan is the final-year plan of the current plan, with progress governed by outcome-oriented town development and the PDCA administrative management cycle), the enacted FY2026 initial budget, and the FY2024 settlement at the published thousand-yen precision, without synthesizing yen-precision totals and without collapsing proposed, enacted, supplementary, or settlement states. The third comprehensive plan, now being drafted, is recorded only as a plan transition and is not connected to the current plan's structure. FY2024 falls inside the latter basic plan period, but its totals are section-level aggregates and are not linked to individual goals, policies, measures or projects.",
+  "records": [
+    {
+      "id": "toyama-current-plan-period",
+      "title": "第2次富山市総合計画の計画期間と位置付け",
+      "statement": "第2次富山市総合計画は富山市の最上位計画であり、基本構想・基本計画・実施計画の3層構成である。基本構想の期間は2017年から2026年までの10年間、基本計画は前期（2017年～2021年）と後期（2022年～2026年）の各5年間であり、現行の基本計画は令和4年3月に策定された後期基本計画である。基本構想が掲げる目指す都市像は『人・まち・自然が調和する活力都市とやま』、基本理念はコンパクトなまちづくり（安らぎ・誇り・希望・躍動）である。Phase 14インベントリの記録（後期基本計画2022年度～2026年度）とも一致する。",
+      "value": "2022年度～2026年度",
+      "decision": "accepted",
+      "evidence_role": "current_plan_identity",
+      "source_url": "https://www.city.toyama.lg.jp/shisei/seisaku/1010738/1011468/1002415/1010742/1002462.html",
+      "evidence_location": "市公式の後期基本計画ページ（令和4年度から令和8年度を計画期間とする後期基本計画を策定した旨と、目指す都市像を明記）と、公式『第2次富山市総合計画後期基本計画（概要版）』（令和4年3月）の『計画の構成と期間』（総合計画は3層構成、基本構想は期間10年（2017年～2026年）、基本計画は期間5年（前期：2017年～2021年 後期：2022年～2026年）、実施計画は事業の内容やスケジュールを毎年見直す）および基本構想のページ（基本理念と目指す都市像）で直接確認",
+      "review_note": "計画期間・3層構成・都市像を公式資料で直接確認したレビュー済みレコード。計画書本編（冊子全文）の通読による最終突合はdeferred depthとして保持する。"
+    },
+    {
+      "id": "toyama-current-policy-structure",
+      "title": "後期基本計画の4つのまちづくりの目標・14政策・51施策の体系",
+      "statement": "後期基本計画は、目指す都市像を実現するため、4つのまちづくりの目標（I すべての人が輝き安心して暮らせるまち【人材・暮らし】／II 安心・安全で持続性のある魅力的なまち【都市・環境】／III 人が集い活気にあふれ希望に満ちたまち【活力・交流】／IV 共生社会を実現し誇りを大切にする協働のまち【協働・連携】）を設定し、その下に14の政策（目標Iに3、目標IIに4、目標IIIに4、目標IVに3）と51の施策を体系的に位置付ける。あわせて、3つの視点（『市民生活の質の向上』×『ひとづくり』×『SDGs』）に立ったネクストステージ重点プロジェクトとして7つの重点テーマ（コンパクトシティ政策の深化／スマートシティの構築／健康寿命の延伸／安全安心なまちづくりの推進／地域を担うひとづくり／循環型社会づくりの推進／産業基盤の強化）を設け、12の主要課題に対応する。51施策の全件は本候補では列挙しない。",
+      "decision": "accepted",
+      "evidence_role": "policy_structure",
+      "source_url": "https://www.city.toyama.lg.jp/shisei/seisaku/1010738/1011468/1002415/1010742/1002462.html",
+      "evidence_location": "公式『第2次富山市総合計画後期基本計画（概要版）』の後期基本計画のページ（『目指す都市像を実現するため、4つのまちづくりの目標を設定し、その下に体系的に政策、施策を位置付けます』、まちづくりの目標I～IVと分野ラベル、14政策（3・4・4・3）・51施策（10・18・14・9）の内訳、ネクストステージ重点プロジェクトの3つの視点・7つの重点テーマ・12の主要課題）と各目標の政策一覧、および公式『令和8年度実施計画』第3部『施策の体系』（階層構造の図と体系）で直接確認",
+      "review_note": "公式資料が明示した層構造と4つのまちづくりの目標・14政策を一次資料で直接確認したレビュー済みレコード。51施策の全件列挙は行わない（deferred depthとして保持）。"
+    },
+    {
+      "id": "toyama-implementation-plan-framework",
+      "title": "年度別実施計画と成果重視のまちづくり（PDCA）に基づく進行管理の枠組み",
+      "statement": "富山市は、基本計画に基づき具体的な事業の年次計画等を示す実施計画を、後期基本計画の期間内において年度毎に策定する。現行計画の最終年度分は令和8年度実施計画であり、対象事業はまちづくりの目標を実現するために計画的・積極的に推進する総合計画事業（令和8年度実施計画の施策体系では177事業）である。第2次総合計画では各施策に成果を表す指標（数値）を示して目標を明確にし、計画実施過程では市民意識調査などにより施策の効果の把握に努め、PDCA（行政マネジメントサイクル）を繰り返して改善につなげる成果重視のまちづくりを推進する。",
+      "decision": "accepted",
+      "evidence_role": "progress_governance",
+      "source_url": "https://www.city.toyama.lg.jp/shisei/seisaku/1010738/1011468/1002415/1010742/1002462.html",
+      "evidence_location": "実施計画本編『令和8年度実施計画』（第2次富山市総合計画 後期基本計画）の第1部『実施計画の考え方』（策定目的・位置付け・計画期間・対象事業・成果重視のまちづくり・行政マネジメントサイクルのイメージ図）と第3部『施策の体系』（総合計画事業177事業）で直接確認",
+      "review_note": "実施計画の期間・構成と成果重視の進行管理の枠組みを公式資料で直接確認したレビュー済みレコード。個別事業・個別指標の実績そのものは本パッケージでは扱わない。"
+    },
+    {
+      "id": "toyama-next-plan-transition",
+      "title": "第3次富山市総合計画の策定状況（計画移行）",
+      "statement": "現行の第2次富山市総合計画後期基本計画は令和8年度末（2026年度末）をもって終了し、富山市は令和6年度から令和8年度にかけて、中長期的なまちづくりの指針となる第3次富山市総合計画を策定している（策定作業中）。第3次計画は未策定の移行先であり、その内容は現行計画の体系へ接続しない。",
+      "decision": "accepted",
+      "evidence_role": "plan_transition",
+      "source_url": "https://www.city.toyama.lg.jp/shisei/seisaku/1010738/1011468/1002415/index.html",
+      "evidence_location": "市公式『富山市総合計画』ページ（『現行の第2次富山市総合計画 後期基本計画が令和8年度末をもって終了することから、令和6年度から令和8年度にかけて、本市の中長期的なまちづくりの指針となる第3次富山市総合計画を策定しています』）で確認。Phase 14インベントリのtransition記録とも一致",
+      "review_note": "計画移行の事実のみを公式資料で確認したレビュー済みレコード。策定中の第3次計画の内容は記録せず、現行計画の体系へ接続しない。"
+    },
+    {
+      "id": "toyama-fy2024-settlement-linkage",
+      "title": "令和6年度決算と第2次富山市総合計画後期基本計画の施策・事業の接続",
+      "statement": "FY2024決算値と第2次富山市総合計画後期基本計画のまちづくりの目標・政策・施策、実施計画の総合計画事業との接続は未判定（not_assessable）。FY2024は後期基本計画期間（2022年度～2026年度）の3年目に属する決算であるが、決算総額は款別の集計値であり、個別事業との対応付けは総額レベルでは行われていない。主要施策の成果に関する報告や実施計画の目標とする指標の実績についても、決算総額との突合・対応付けは未実施である。決算と事業の対応付けは人間レビュー工程の作業とする。",
+      "fiscal_year": 2024,
+      "decision": "not_assessable",
+      "evidence_role": "annual_progress",
+      "source_url": "https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003078.html",
+      "evidence_location": "市公式『令和6年度決算について』（決算総額の確認先の公式資料。施策成果の公式入口は市公式『決算』ページの主要施策成果報告書）",
+      "review_note": "決算総額を確認できたことと、個別事業の接続を推測で記録しないことは別の判断であることを示す明示的な未判定レコード。決算と事業の対応付けは人間レビュー工程の作業。"
+    }
+  ]
+}
