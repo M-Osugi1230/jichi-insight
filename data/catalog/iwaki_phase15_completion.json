@@ -1,0 +1,61 @@
+{
+  "id": "iwaki-phase15-completion",
+  "phase": 15,
+  "status": "reviewed_complete",
+  "official_code": "072044",
+  "name_ja": "いわき市",
+  "completed_at": "2026-11-15",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "source_catalog_path": "data/catalog/iwaki_phase15_sources.json",
+    "plan_review_path": "data/reviewed/iwaki-city/plan_review.json",
+    "policy_structure_path": "data/catalog/iwaki_current_policy_structure.json",
+    "progress_review_path": "data/catalog/iwaki_current_progress_review_summary.json",
+    "fiscal_records_path": "data/reviewed/iwaki-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/iwaki-city/evidence_packets.json",
+    "counts": {
+      "management_guideline_pillars": 5,
+      "promoted_implementation_item_actual_records": 0,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "current_framework_identity_reviewed": true,
+    "no_fixed_plan_period_preserved": true,
+    "current_framework_policy_structure_reviewed": true,
+    "annual_management_guideline_layer_reviewed": true,
+    "fiscal_states_and_years_separate": true,
+    "budget_enactment_state_preserved": true,
+    "settlement_linkage_not_assessable_preserved": true,
+    "individual_implementation_items_not_overpromoted": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "current-plan-granular-kpi-and-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "まちづくりの経営指針の位置付け事業の個別事業の詳細・実績および指標の全件リンクは追加depthとし、公式対応が確認できるまで昇格しない。経営指針は毎年度更新されるため、年度版を分離して保持する。"
+    },
+    {
+      "id": "settlement-audit-opinion-inspection",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "監査委員の決算審査意見の内容確認は未実施であり、決算書原本と議決結果一覧による総額・認定の確認に留める。意見書を確認できた時点で追加する。"
+    },
+    {
+      "id": "settlement-values-and-budget-amendment-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "補正予算による変更経過、補正予算・決算と個別事業費の対応関係は追加エビデンス確認前は記録・結合しない。予算説明書・決算附属書類の事項別明細との款別突合も未実施である。FY2024決算は現行の基本方針の枠組みのもとで執行された決算として保持し、経営指針の個別事業の実績へは流用しない。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "いわき市の方針体系・財政等のレビューは政策効果の因果認定や他都市比較可能性を意味しない。固定終期を持たない方針体系を、他都市の固定期間総合計画と同一の物差しで比較しない。"
+    }
+  ],
+  "completion_boundary": "いわき市のPhase 15 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味し、公開責任者（大杉邑大、単独運用体制）が2026-11-15に行ったレビュー承認に基づく。いわき市まちづくりの基本方針の枠組み（固定の計画期間を定めない方針体系であり、普遍的な『まちづくりの理念』と毎年度検証・更新する『まちづくりの経営指針』を2つの柱とし、『いわき版骨太の方針』を年度途中に策定する。令和8年度経営指針の5つの柱は次世代を育てる／命・暮らしを守る／まちの魅力を高める／豊かさを創る／構造改革・DX推進事業）、成立したFY2026一般会計当初予算（159,490,126千円、議案第35号・原案可決・2026年3月12日）、FY2024一般会計決算の円単位総額（歳入162,539,391,275円・歳出155,415,603,914円）とその認定（議案第18号・2025年12月19日認定）を一次資料で確認した。FY2024決算は現行の基本方針の枠組みのもとで執行された決算であり計画の版をまたがないが、経営指針の個別事業との接続はnot_assessableとして保持する。固定終期を持たない方針体系に計画期間を創作しない。経営指針の位置付け事業の個別詳細・実績、監査委員の決算審査意見の内容確認、事項別明細との突合、財政の項目別詳細はdeferred depthである。Jichi Insight独自の政策達成度スコアや他都市とのランキングは作成しない。"
+}

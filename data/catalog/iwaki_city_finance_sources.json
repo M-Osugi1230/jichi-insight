@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-15",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "iwaki-city-home",
+      "municipality_key": "iwaki-city",
+      "organization": "いわき市",
+      "category": "municipality_profile",
+      "title": "いわき市公式サイト",
+      "url": "https://www.city.iwaki.lg.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "いわき市の公式自治体サイト。"
+    },
+    {
+      "id": "iwaki-budget-2026",
+      "municipality_key": "iwaki-city",
+      "organization": "いわき市",
+      "category": "budget",
+      "title": "令和8年度当初予算",
+      "url": "https://www.city.iwaki.lg.jp/www/contents/1761108064077/index.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算159,490,126千円（議案第35号・第1条）のEvidence。市議会の議決結果一覧で令和8年3月12日に原案可決された成立予算。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "iwaki-settlement-2024",
+      "municipality_key": "iwaki-city",
+      "organization": "いわき市",
+      "category": "settlement",
+      "title": "令和6年度決算",
+      "url": "https://www.city.iwaki.lg.jp/www/contents/1763711744055/index.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-15",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入162,539,391,275円・歳出155,415,603,914円を円単位で含む公式決算資料。決算の認定は議案第18号（2025年12月19日認定、令和7年10月定例会からの継続審査）。監査委員の決算審査意見の内容確認は未実施。"
+    }
+  ]
+}

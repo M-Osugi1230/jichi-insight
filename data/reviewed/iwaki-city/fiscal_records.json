@@ -1,0 +1,65 @@
+[
+  {
+    "id": "jp-local-072044-fiscal-2026-total-expenditure",
+    "municipality_id": "jp-local-072044",
+    "fiscal_year": 2026,
+    "stage": "initial_budget",
+    "account_type": "general",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算（可決）",
+    "amount_yen": 159490126000,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "sources": [
+      "iwaki-budget-2026"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "いわき市公式『令和8年度当初予算』ページからリンクされる令和8年度当初予算書（議案第35号）第1条『歳入歳出予算の総額は、歳入歳出それぞれ159,490,126千円と定める』。令和8年2月19日に令和8年いわき市議会2月定例会へ提出され、同定例会の議決結果一覧で議案第35号として令和8年3月12日に原案可決された成立当初予算であり、予算案段階の額ではない。当初予算の概要（一般会計1,594億9,012万6千円）とも一致する。補正予算や決算とは別stateで扱う。"
+  },
+  {
+    "id": "jp-local-072044-fiscal-2024-total-revenue",
+    "municipality_id": "jp-local-072044",
+    "fiscal_year": 2024,
+    "stage": "settlement",
+    "account_type": "general",
+    "metric": "total_revenue",
+    "metric_label": "一般会計収入済額",
+    "amount_yen": 162539391275,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "iwaki-settlement-2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "いわき市公式『令和6年度決算』ページからリンクされる令和6年度歳入歳出決算書原本（議案第18号）の一般会計歳入合計（収入済額）162,539,391,275円。歳出総額155,415,603,914円との差引残額7,123,787,361円で検算が一致する。令和6年度いわき市一般会計歳入歳出決算は、議案第18号として令和7年10月23日に提出され、10月定例会で継続審査となった後、令和7年12月19日に認定された。FY2024は現行の基本方針の枠組みのもとで執行された決算であり、旧総合計画期間の決算ではない。"
+  },
+  {
+    "id": "jp-local-072044-fiscal-2024-total-expenditure",
+    "municipality_id": "jp-local-072044",
+    "fiscal_year": 2024,
+    "stage": "settlement",
+    "account_type": "general",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計支出済額",
+    "amount_yen": 155415603914,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "iwaki-settlement-2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "同決算書原本の一般会計歳出合計（支出済額）155,415,603,914円（予算現額168,365,006,962円）。収入済額162,539,391,275円との差引残額7,123,787,361円で検算が一致する。令和6年度いわき市一般会計歳入歳出決算は、議案第18号として令和7年12月19日に認定された。"
+  }
+]
