@@ -716,13 +716,25 @@ Declared v1 package:
 
 Deferred depth includes the municipal measures, basic policies and machizukuri indicators under the 44 intended city images, cross-checks against the budget book and the settlement book （事項別明細書） at section level, the content of the audit commissioners' settlement review opinion (individual findings), the preparation status of the next (eighth) comprehensive plan, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Fifty-second completion — Kure
+
+呉市を52番目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 第5次呉市長期総合計画 — composed of the basic concept （基本構想）, which runs FY2021-FY2030 over ten years, the basic plan （基本計画）, which runs in two five-year halves (first half FY2021-FY2025, second half FY2026-FY2030), and the constituent project collections （構成事業集）, which are compiled every fiscal year; the layers are kept as separate period semantics. The future city image is 『誰もが住み続けたい，行ってみたい，人を惹きつけるまち「くれ」〜イキイキと働き，豊かに安心して暮らし，ワクワク生きる〜』, with five images of the city's desired future. The basic plan organises its measures under eight policy fields, which are kept at the basic-concept level; the measures and KPIs of the second-half basic plan are not enumerated and stay deferred depth, so the measures lists stay empty. The first-half basic plan incorporates the second-phase regional-revitalization strategy and the national-resilience regional plan, and the second-half basic plan incorporates their third-phase and second-phase successors. Progress is managed through the municipality's own framework of compiling the constituent project collections every fiscal year, together with the publication of KPI progress. The period status stays verified_fixed_period as recorded in the Phase 14 inventory, and the preparation status of the next (sixth) long-term comprehensive plan could not be confirmed in official sources and stays unconfirmed
+- FY2026 general-account initial budget: 115,430,000 thousand yen (enacted). Bill 議第1号 was recorded simply as 『可決』 in the council's official result page for the March 2026 regular session （令和8年3月定例会議案及び審議結果）, in the council's own wording. The amount was confirmed in article 1 of the FY2026 budget book （令和8年度呉市予算書）. The vote date of 2026-03-24 was identified from that page's publication date (updated 2026-03-24), and final confirmation against the plenary minutes is still outstanding. The amount is kept at the published sen-yen (thousand-yen) precision and finer amounts are not synthesized
+- FY2024 general-account settlement at the yen precision published in the settlement book attached to bill 議第99号 （令和6年度呉市一般会計歳入歳出決算書）: revenue 115,037,162,518 yen / expenditure 110,880,880,516 yen (their difference of 4,156,282,002 yen matches the balance printed in the settlement book; the real balance is 2,901,588 thousand yen — the difference of 4,156,282,002 yen minus 1,254,694,000 yen of funding to be carried over to the next fiscal year — recorded at the thousand-yen precision of the balance statement （実質収支に関する調書） and not expanded into a synthetic yen figure; ordinary-account aggregate figures, such as the fiscal-status compendium totals, are not used). The settlement certification, bill 議第99号, was certified at the September 2025 regular session, confirmed directly in the council's official result page （令和7年9月定例会議案及び審議結果）; it was not rejected. The certification date of 2025-09-24 was identified from that page's publication date (updated 2025-09-24), and final confirmation against the plenary minutes is still outstanding. FY2024 is a settlement of the first-half basic plan period (FY2021-FY2025), so its plan version differs from the current second-half basic plan, and no official total-level mapping from settlement totals to the plan's policy structure exists, so the totals are not linked to the plan's structure and the linkage stays not_assessable
+
+Deferred depth includes the measures and KPIs of the second-half basic plan under the eight policy fields, final confirmation of both vote dates against the plenary minutes, cross-checks against the budget explanation book and the settlement book （事項別明細書） at section level, the content of the audit commissioners' settlement review opinion (individual findings), the preparation status of the next (sixth) long-term comprehensive plan, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 51 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市、姫路市、尼崎市、明石市、西宮市、奈良市、和歌山市、鳥取市、松江市、倉敷市
+- Reviewed complete: 52 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市、姫路市、尼崎市、明石市、西宮市、奈良市、和歌山市、鳥取市、松江市、倉敷市、呉市
 - Review in progress: 0
-- Pending record review: 16
+- Pending record review: 15
 - Blocked source inventory: 0
-- Next official code: 342025
+- Next official code: 342076
 
 ## Definition of Phase 15 completion
 

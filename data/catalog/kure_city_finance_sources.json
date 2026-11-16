@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-16",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "kure-city-home",
+      "municipality_key": "kure-city",
+      "organization": "呉市",
+      "category": "municipality_profile",
+      "title": "呉市公式サイト",
+      "url": "https://www.city.kure.lg.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "呉市の公式自治体サイト。"
+    },
+    {
+      "id": "kure-budget-2026",
+      "municipality_key": "kure-city",
+      "organization": "呉市",
+      "category": "budget",
+      "title": "令和8年度当初予算",
+      "url": "https://www.city.kure.lg.jp/soshiki/89/soshiki89tousho08.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算115,430,000千円（千円精度）のEvidence。『令和8年度呉市予算書』第1条で一般会計の当初予算額を確認し、議第1号は市議会公式『令和8年3月定例会議案及び審議結果』で審議結果『可決』と記載され成立した。議決日は同ページの掲載日（2026年3月24日更新）から2026年3月24日と特定したが、本会議録による最終確認は未実施である。千円単位の公表値のまま記録し、円単位を合成しない。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "kure-settlement-2024",
+      "municipality_key": "kure-city",
+      "organization": "呉市",
+      "category": "settlement",
+      "title": "令和6年度決算",
+      "url": "https://www.city.kure.lg.jp/soshiki/89/shisei-yosan-kessan06.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入115,037,162,518円・歳出110,880,880,516円を含む公式決算資料（議第99号に添付された『令和6年度呉市一般会計歳入歳出決算書』（単位：円）で確認し、差引4,156,282,002円が決算書記載の歳入歳出差引残額と検算一致）。実質収支は2,901,588千円（差引4,156,282,002円－翌年度へ繰り越すべき財源1,254,694,000円。『実質収支に関する調書』の千円単位の公表値のまま記録）。決算の認定は議第99号『令和6年度呉市一般会計決算認定について』として令和7年9月定例会で認定された（市議会公式『令和7年9月定例会議案及び審議結果』の審議結果欄の文言『認定』で確認）。認定日は同ページの掲載日（2025年9月24日更新）から2025年9月24日と特定したが、本会議録による最終確認は未実施である。普通会計ベースの集計値（財政状況資料集の総括表等）は一般会計値とは別のため使用していない。予算に関する説明書・決算書の事項別明細書の款別合計との突合と監査委員の決算審査意見書の内容（個別の指摘事項等）の精査は未実施。"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "account_type": "general",
+    "amount_yen": 115430000000,
+    "confidence": "high",
+    "fiscal_year": 2026,
+    "id": "jp-local-342025-fiscal-2026-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算総額",
+    "municipality_id": "jp-local-342025",
+    "note": "呉市の令和8年度一般会計当初予算総額115,430,000千円。『令和8年度呉市予算書』第1条に歳入歳出予算の総額は歳入歳出それぞれ115,430,000千円と印字されており、市長の予算総体説明（一般会計1,154億3,000万円・前年度比3.3％増）とも一致する。市議会公式『令和8年3月定例会議案及び審議結果』は議第1号『令和8年度呉市一般会計予算』の審議結果を『可決』と記載しており、成立した当初予算額として確認した。議決結果の文言は一次資料の表記どおり『可決』である。議決日は同ページの掲載日（2026年3月24日更新）から2026年3月24日と特定したが、本会議録による最終確認は未実施である。公表精度は千円単位であり、その精度のまま記録し円単位を合成していない。補正予算や決算とは別stateで扱う。",
+    "period_end": "2027-03-31",
+    "period_start": "2026-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "kure-budget-2026"
+    ],
+    "stage": "initial_budget",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 115037162518,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-342025-fiscal-2024-total-revenue",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入額",
+    "municipality_id": "jp-local-342025",
+    "note": "市議会公式『令和7年9月定例会議案及び審議結果』の議第99号に添付された『令和6年度呉市一般会計歳入歳出決算書』（単位：円）に示された一般会計の歳入合計の収入済額115,037,162,518円（円単位の公表値のまま記録）。財務部『令和6年度一般会計決算の概要』の歳入115,037,163千円（千円精度）とも整合する。当該決算は議第99号『令和6年度呉市一般会計決算認定について』として市議会に提出され、令和7年9月定例会で認定の議決が行われた（同ページの審議結果欄の文言は『認定』）。認定日は同ページの掲載日（2025年9月24日更新）から2025年9月24日と特定したが、本会議録による最終確認は未実施である。普通会計ベースの集計値（財政状況資料集の総括表等）は一般会計値とは別のため使用していない。FY2024は第5次呉市長期総合計画の前期基本計画（2021年度～2025年度）期間の決算である。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "kure-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 110880880516,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-342025-fiscal-2024-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出額",
+    "municipality_id": "jp-local-342025",
+    "note": "同じく決算書に示された一般会計の歳出合計の支出済額110,880,880,516円（円単位の公表値のまま記録）。歳入総額115,037,162,518円との差引（形式収支）は4,156,282,002円で、決算書に印字された歳入歳出差引残額4,156,282,002円と検算一致する。実質収支は2,901,588千円である（形式収支4,156,282,002円－翌年度に繰り越すべき財源1,254,694,000円。議第99号に添付された『実質収支に関する調書』（単位：千円）の実質収支額2,901,588千円による）。実質収支は調書の公表精度である千円単位のまま記録し、円単位を合成しない。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "kure-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  }
+]
