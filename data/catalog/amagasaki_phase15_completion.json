@@ -1,0 +1,61 @@
+{
+  "id": "amagasaki-phase15-completion",
+  "phase": 15,
+  "status": "reviewed_complete",
+  "official_code": "282022",
+  "name_ja": "尼崎市",
+  "completed_at": "2026-11-16",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "source_catalog_path": "data/catalog/amagasaki_phase15_sources.json",
+    "plan_review_path": "data/reviewed/amagasaki-city/plan_review.json",
+    "policy_structure_path": "data/catalog/amagasaki_current_policy_structure.json",
+    "progress_review_path": "data/catalog/amagasaki_current_progress_review_summary.json",
+    "fiscal_records_path": "data/reviewed/amagasaki-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/amagasaki-city/evidence_packets.json",
+    "counts": {
+      "basic_goals": 13,
+      "basic_plan_measures": 0,
+      "promoted_implementation_item_actual_records": 0,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "current_plan_period_reviewed": true,
+    "current_plan_policy_structure_reviewed": true,
+    "implementation_plan_layer_reviewed": true,
+    "fiscal_states_and_years_separate": true,
+    "budget_enactment_state_preserved": true,
+    "settlement_linkage_not_assessable_preserved": true,
+    "individual_implementation_items_not_overpromoted": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "current-plan-granular-kpi-and-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "13施策の展開方向（全41件）の全件列挙と、施策評価の指標（目標指標・まちづくりの総合指標）の個別値は追加depthとし、公式対応が確認できるまで昇格しない。計画本編の各論は2カラム構成であり、テキスト抽出では展開方向の文言が混在して誤りなく転記できないため、候補には施策単位の体系（13施策）を保持するが、個別の展開方向・事業単位の対応付けは行わない。"
+    },
+    {
+      "id": "fiscal-vote-and-certification-verification",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "FY2026当初予算の議案番号・議決結果の文言（議案第1号・第4回定例会・原案可決）と、FY2024決算の認定結果（認定第1号・第2回定例会・認定）は、市議会公式の採決結果一覧表による確認を完了し、候補の財政記録・証拠パケット側に反映している。両議決日（2026年3月19日・2025年10月7日）は各定例会の最終日の議事日程から特定したものであり、会議録による最終確認は未実施のまま保持する。決算書・予算書の事項別明細書との最終突合、監査委員の決算審査意見書の内容の精査、補正予算による変更経過は追加エビデンス確認前は記録・結合しない。FY2024決算の歳入・歳出・実質収支（千円精度）とFY2026当初予算総額（千円精度）は一次資料で確認済みであり、候補の財政記録・証拠パケット側に反映している。"
+    },
+    {
+      "id": "plan-transition-version-depth",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "前総合計画（第5次尼崎市総合計画、2013年度～2022年度）の事業・評価の全件列挙は本候補では行わない。前計画から現行計画への移行は版の履歴として別途記録し、前計画期間の実績を現行計画の期間へ前倒し接続しない。後期まちづくり基本計画（2028年度～2032年度）は策定中であり、策定完了までは現行計画として扱わない。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "尼崎市総合計画・進捗管理・財政等のステージングは政策効果の因果認定や他都市比較可能性を意味しない。進捗管理（自治体の進行管理の枠組み）をJichi Insight独自の達成判定へ変換しない。"
+    }
+  ],
+  "completion_boundary": "尼崎市のPhase 15 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味し、所有者（大杉邑大、単独運用体制）が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが尼崎市公式サイトの一次資料で検証した結論に基づく（所有者本人が一次資料を直接レビューしたものではない）。尼崎市の計画体系（第6次尼崎市総合計画はまちづくり構想（2023年度～2032年度の10年間、ありたいまち『ひと咲き まち咲き あまがさき』）とまちづくり基本計画（構想の10年間を前期・後期の5年ごとに分割し、現行は前期2023年度～2027年度）の2層で構成する。施策体系は13施策で構成し、各施策に施策の展開方向（全41件）を置く。各施策の展開方向の全件列挙は計画本編各論が2カラム構成でありテキスト抽出では文言の帰属が混在して誤りなく転記できないため行わず、追加depthとして保持する。進行管理は、施策評価を起点とした単年度PDCAサイクルと、基本計画期間（5年間）ごとの点検を行う計画期間PDCAを組み合わせる自治体の進行管理の枠組みである）、成立したFY2026一般会計当初予算（247,210,000千円。議案第1号『令和8年度尼崎市一般会計予算』として第4回定例会で原案可決された。市議会公式『議案等採決結果』の結果欄の文言は「原案可決」であり、その文言のまま記録する。議決日2026年3月19日は、同定例会の第5日（最終日）の議事日程から特定したものであり、会議録による最終確認は未実施である。公表精度は千円単位のため、その精度（千円単位）のまま記録し、円単位を合成していない）、FY2024一般会計決算の千円精度総額（歳入240,079,769千円・歳出236,639,777千円、差引額3,439,992千円が市公式『令和6年度決算の概要（数値編）』の形式収支と一致することを検算した）を一次資料で確認した。決算の認定議案である認定第1号は第2回定例会で認定されたことを市議会公式の採決結果一覧表で確認し、認定の事実をそのまま記録した（認定の議決日2025年10月7日は同定例会の第6日（最終日）の議事日程から特定したものであり、会議録による最終確認は未実施である）。実質収支額は同資料により2,808,992千円であり、千円精度のまま記録する。前総合計画（第5次尼崎市総合計画、2013年度～2022年度）からの移行は版の履歴として分離して保持し、前計画期間の実績を現行計画の期間へ前倒し接続しない。後期まちづくり基本計画（2028年度～2032年度）は策定中であり、現行計画として扱わない。FY2024は前期まちづくり基本計画期間内の決算であり計画の版は現行と同一であるが、決算総額と13施策・展開方向との総額レベルの対応付けは公式資料にないため、接続はnot_assessableとして保持する。13施策の展開方向の全件、施策評価の指標の個別値、両議決日の会議録による最終確認、予算・決算の事項別明細書の款別合計との最終突合、監査委員の決算審査意見書の内容（個別の指摘事項等）の精査はdeferred depthである。Jichi Insight独自の政策達成度スコアや他都市とのランキングは作成しない。進捗管理（自治体の進行管理の枠組み）をJichi Insight独自の達成判定へ変換しない。"
+}

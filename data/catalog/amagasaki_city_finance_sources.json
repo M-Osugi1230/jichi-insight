@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-16",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "amagasaki-city-home",
+      "municipality_key": "amagasaki-city",
+      "organization": "尼崎市",
+      "category": "municipality_profile",
+      "title": "尼崎市公式サイト",
+      "url": "https://www.city.amagasaki.hyogo.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "尼崎市の公式自治体サイト。"
+    },
+    {
+      "id": "amagasaki-budget-2026",
+      "municipality_key": "amagasaki-city",
+      "organization": "尼崎市",
+      "category": "budget",
+      "title": "令和8年度当初予算の概要",
+      "url": "https://www.city.amagasaki.hyogo.jp/shisei/si_zaisei/yosan/gaiyou/1042785.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算247,210,000千円（千円精度）のEvidence。議案第1号『令和8年度尼崎市一般会計予算』として第4回定例会で原案可決された成立予算（市議会公式『議案等採決結果』の第4回定例会採決結果一覧表で確認）。金額は市公式『令和8年度当初予算の概要（数値編）』の会計別予算規模で確認し、一般会計歳入予算額・一般会計歳出款別予算額の各合計とも一致した千円単位の公表値のまま記録し、円単位を合成しない。議決日2026年3月19日は同定例会の第5日（最終日）の議事日程から特定したものであり、会議録による最終確認は未実施。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "amagasaki-settlement-2024",
+      "municipality_key": "amagasaki-city",
+      "organization": "尼崎市",
+      "category": "settlement",
+      "title": "令和6年度決算の概要",
+      "url": "https://www.city.amagasaki.hyogo.jp/shisei/si_zaisei/kessan/gaiyou/1041621.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入240,079,769千円・歳出236,639,777千円を含む公式決算資料（市公式『令和6年度決算の概要（数値編）』の令和6年度決算表で確認し、一般会計款別歳入・款別歳出の各合計とも一致）。実質収支は同資料により2,808,992千円（千円精度のまま記録し、円単位を合成しない）。決算の認定議案である認定第1号は第2回定例会で認定された（認定の議決日2025年10月7日は同定例会の第6日（最終日）の議事日程から特定したものであり、会議録による最終確認は未実施）。決算書（歳入歳出決算事項別明細書）の款別合計との突合と監査委員の決算審査意見書の内容（個別の指摘事項等）の精査は未実施。"
+    }
+  ]
+}

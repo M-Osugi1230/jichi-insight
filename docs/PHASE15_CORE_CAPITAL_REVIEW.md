@@ -620,13 +620,25 @@ Declared v1 package:
 
 Deferred depth includes the per-field policies under the nine fields, the individual indicator values (citizen-awareness survey items and KPIs), the final confirmation of both voting dates against the council minutes, cross-checks against the budget book and the settlement book （事項別明細書） at section level, the content of the audit commissioners' settlement review opinion (individual findings), the status of the next comprehensive plan, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Forty-fourth completion — Amagasaki
+
+尼崎市を44番目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 第6次尼崎市総合計画 — composed of two layers: the city-building concept まちづくり構想 (FY2023-FY2032, ten years, presenting the desired city image 『ひと咲き まち咲き あまがさき』) and the city-building basic plan まちづくり基本計画 (the concept's ten years split into a first half (FY2023-FY2027) and a second half (FY2028-FY2032) of five years each; the current edition is the first-half plan); the concept period and the basic plan period are kept as separate period semantics. The policy structure is thirteen policies （地域コミュニティ・学び / 人権尊重・多文化共生 / 学校教育 / 子ども・子育て支援 / 地域福祉 / 障害者支援 / 高齢者支援 / 健康支援 / 生活安全 / 消防・防災 / 地域経済・雇用就労 / 環境保全・創造 / 都市機能・住環境）, each carrying policy directions (41 in total); the full enumeration of the policy directions is not included because the main volume's section-by-section commentary is laid out in two columns and the attribution of individual direction texts mixes on text extraction, so they cannot be transcribed without error and stay deferred depth. Progress is managed by an annual PDCA cycle driven by policy evaluation （施策評価）, combined with a plan-period PDCA that reviews the plan at each five-year basic-plan boundary — the municipality's own progress-management framework, with the two different evaluation cycles kept separate. The transition from the previous plan (the Fifth Amagasaki Comprehensive Plan, FY2013-FY2022) is kept only as a version chronology record, and results from the previous plan period are never connected forward into the current plan; the latter basic plan (FY2028-FY2032) is under preparation and is not treated as current
+- FY2026 general-account initial budget: 247,210,000 thousand yen (enacted; bill 議案第1号 『令和8年度尼崎市一般会計予算』 at the fourth regular session — the result column of the council's official 『議案等採決結果』 reads 「原案可決」 and is recorded exactly as published). The amount was confirmed in the city's 『令和8年度当初予算の概要（数値編）』 account-level budget table and matches both the general-account revenue budget total and the section-level expenditure budget total; it is kept at the published sen-yen (thousand-yen) precision and finer amounts are not synthesized. The voting date 2026-03-19 was identified from the agenda of the session's fifth day (the final day), and the final confirmation against the council minutes has not been performed
+- FY2024 general-account settlement at sen-yen (thousand-yen) precision as published: revenue 240,079,769 thousand yen / expenditure 236,639,777 thousand yen (their difference of 3,439,992 thousand yen matches the formal balance （形式収支） printed in the city's official 『令和6年度決算の概要（数値編）』; the real balance is 2,808,992 thousand yen, after deducting 631,000 thousand yen of funding to be carried over to the next fiscal year, kept at sen-yen precision as printed in that summary). The settlement certification bill, 認定第1号 『令和6年度尼崎市歳入歳出決算について』, was certified at the 2025 second regular session per the council's official 『議案等採決結果』; its voting date 2025-10-07 was identified from the agenda of the session's sixth day (the final day), and the final confirmation against the council minutes has not been performed. FY2024 falls inside the first-half basic plan period (FY2023-FY2027), so its plan version is the same as the current one, but no official total-level mapping from settlement totals to the plan's thirteen policies or 41 policy directions exists, so the totals are not linked to the plan's structure and the linkage stays not_assessable
+
+Deferred depth includes the 41 policy directions under the thirteen policies, the individual indicator values (policy-evaluation target indicators and the three citywide comprehensive indicators), the final confirmation of both voting dates against the council minutes, cross-checks against the budget book and the settlement book （事項別明細書） at section level, the content of the audit commissioners' settlement review opinion (individual findings), supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 43 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市、姫路市
+- Reviewed complete: 44 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市、姫路市、尼崎市
 - Review in progress: 0
-- Pending record review: 24
+- Pending record review: 23
 - Blocked source inventory: 0
-- Next official code: 282022
+- Next official code: 282030
 
 ## Definition of Phase 15 completion
 
