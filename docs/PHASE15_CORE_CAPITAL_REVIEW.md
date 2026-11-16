@@ -656,13 +656,25 @@ Declared v1 package:
 
 Deferred depth includes the per-field initiatives, departmental plans and indicators of the 35 policy fields, cross-checks against the budget book and the settlement book （事項別明細書） at section level, the content of the audit commissioners' settlement review opinion (individual findings), supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Forty-seventh completion — Nara
+
+奈良市を47番目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 奈良市第5次総合計画 — composed of the Future Vision （未来ビジョン, FY2022-FY2031, the 2031 city image 『「わたし」からはじめる「わたしたち」のまち 奈良』, four directions for the city, a basic stance, and four priority fields （未来を育てる／活気を生み出す／生活をつなぐ／安全を守る）) and the Promotion Policy （推進方針）, which splits into a first half (FY2022-FY2026, the current edition) and a second half (FY2027-FY2031, now in preparation); the vision period and the promotion-policy halves are kept as separate period semantics. The first-half promotion policy's structure — five chapters and 29 measures — is enumerated in full from the plan volume's structure chart; the per-measure directions and indicators are not enumerated and stay deferred depth, so the measures lists stay empty. Progress is managed through the municipality's own framework of compiling and publishing the implementation status every fiscal year and reporting it to the city council (the FY2024 status was reported as 報告第52号 on 2025-09-05). The transition from the previous plan (the Fourth Nara City Comprehensive Plan, whose target year was extended by one year to FY2021 when the start of the Fifth Plan was postponed by one year) is kept only as a version chronology record, results from the previous plan period are never connected forward into the current plan, and the content of the second-half promotion policy now in preparation is not pre-empted into the current first-half policy
+- FY2026 general-account initial budget: 193,425,597 thousand yen (enacted). Bill 議案第16号 was passed with amendments （修正可決） at the March 2026 regular session on 2026-03-26, as printed in the council's official voting-results table （議決結果一覧表）: the amendment, submitted by a committee member to the Budget and Settlement Committee and adopted there, reduced the total by 1,574,403 thousand yen from the original proposal of 195,000,000 thousand yen — deleting in full the 1,000,000 thousand yen loan to the hospital enterprise account, and reducing tourism expenses by 402,500 thousand yen, sanitation expenses by 168,000 thousand yen and education expenses by 3,903 thousand yen, among others — so the enacted amount is the post-amendment 193,425,597 thousand yen, confirmed in the finance division's official 『令和8年度当初予算の概要』 and consistent with the pre-supplement amount of the FY2026 general-account supplementary budget No. 1. The original proposal amount is never recorded as the enacted amount. The amount is kept at the published sen-yen (thousand-yen) precision and finer amounts are not synthesized
+- FY2024 general-account settlement at the yen precision printed in the city's official settlement summary table （令和6年度決算総括表）: revenue 161,996,348,913 yen / expenditure 157,827,488,682 yen (their difference of 4,168,860,231 yen matches the formal balance （形式収支） printed in the same table; the real balance is 3,348,707,231 yen, after deducting 820,153,000 yen of funding to be carried over to the next fiscal year, kept at the printed yen precision). The settlement certification, 報告第41号, was certified at the September 2025 regular session on 2025-09-29 per the city council's official voting-results table; it was not rejected. FY2024 falls within the first-half promotion policy period (FY2022-FY2026), so its plan version is the same as the current plan, but no official total-level mapping from settlement totals to the five chapters and 29 measures exists, so the totals are not linked to the plan's structure and the linkage stays not_assessable
+
+Deferred depth includes the per-measure directions and indicators of the 29 measures, cross-checks against the budget book and the settlement book （事項別明細書） at section level, the content of the audit commissioners' settlement review opinion (individual findings), supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 46 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市、姫路市、尼崎市、明石市、西宮市
+- Reviewed complete: 47 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市、姫路市、尼崎市、明石市、西宮市、奈良市
 - Review in progress: 0
-- Pending record review: 21
+- Pending record review: 20
 - Blocked source inventory: 0
-- Next official code: 292010
+- Next official code: 302015
 
 ## Definition of Phase 15 completion
 

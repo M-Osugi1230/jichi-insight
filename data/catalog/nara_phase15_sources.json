@@ -1,0 +1,55 @@
+{
+  "id": "nara-phase15-sources",
+  "name_ja": "奈良市",
+  "official_code": "292010",
+  "phase": 15,
+  "quality_boundary": "Current plan identity kept as published (the Fifth Nara City Comprehensive Plan: Future Vision FY2022-FY2031 and Promotion Policy first half FY2022-FY2026 (current) / second half FY2027-FY2031 (in preparation); the layer semantics are kept separate; the first-half promotion policy's five chapters and 29 measures are enumerated, while the per-measure directions and indicators are not enumerated and stay deferred depth), progress governance (implementation status compiled and published every fiscal year and reported to the city council — kept as the municipality's own progress-management framework), budget enactment confirmed from the city's official budget outline and the council's official voting-results table (bill 議案第16号; passed with amendments on 2026-03-26; the enacted amount of 193,425,597 thousand yen is the post-amendment amount and the original proposal of 195,000,000 thousand yen is never recorded as enacted; the amount is kept at the published sen-yen precision and is never expanded into synthetic finer amounts), and settlement totals kept at the yen precision printed in the official settlement summary table (the settlement certification 報告第41号 was certified on 2025-09-29; the real balance is 3,348,707,231 yen) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "reviewed_at": "2026-11-16",
+  "sources": [
+    {
+      "evidence_location": "計画の構成・期間・将来像・施策体系は市公式『奈良市第5次総合計画』本編（公式PDF）で直接確認した。未来ビジョンは2022年度～2031年度、推進方針は前期2022年度～2026年度・後期2027年度～2031年度であり、2031年のまちの姿『「わたし」からはじめる「わたしたち」のまち 奈良』、4つのまちの方向性、基本姿勢、重点分野4件、推進方針の施策体系（5章・29施策）を本編の体系図で確認した",
+      "evidence_role": "comprehensive_plan",
+      "format": "html",
+      "id": "nara-fifth-plan",
+      "official_url": "https://www.city.nara.lg.jp/site/soukei5/",
+      "title": "奈良市第5次総合計画",
+      "use_boundary": "現行計画は奈良市第5次総合計画として保持し、未来ビジョンと推進方針（前期／後期）のlayer semanticsを分離する。策定中の後期推進方針の内容を現行の前期推進方針へ先取りしない"
+    },
+    {
+      "evidence_location": "第5次総合計画の事業進捗を公表する公式入口（Phase 14インベントリで確認）。あわせて令和6年度の実施状況が報告第52号『奈良市第5次総合計画の実施状況（令和6年度）の報告について』として2025年9月5日に市議会へ報告されたことを、市議会公式『議決結果一覧表（令和7年9月定例会）』で確認した",
+      "evidence_role": "annual_progress",
+      "format": "html",
+      "id": "nara-project-progress",
+      "official_url": "https://www.city.nara.lg.jp/site/soukei5/list968.html",
+      "title": "各事業の取組状況",
+      "use_boundary": "自治体の進捗公表をJichi Insight独自の達成評価や因果効果へ変換しない。事業進捗と財政決算は別Evidence roleとして保持する"
+    },
+    {
+      "evidence_location": "後期推進方針（2027年度～2031年度）の策定過程を公表する公式ページ（Phase 14インベントリで確認）。2026年度時点では策定過程であり、確定した後期推進方針の内容は公表されていない",
+      "evidence_role": "plan_transition",
+      "format": "html",
+      "id": "nara-latter-policy-transition",
+      "official_url": "https://www.city.nara.lg.jp/soshiki/4/259676.html",
+      "title": "奈良市第5次総合計画後期推進方針策定",
+      "use_boundary": "策定過程をdraft/transition laneとして保持し、前期実績やアンケート結果を後期確定内容へ読み替えない"
+    },
+    {
+      "evidence_location": "FY2026当初予算の成立額は、市財政課公式『令和8年度当初予算の概要』の予算規模で一般会計193,425,597千円を確認した。同額は修正可決後の額であり、市議会公式『議決結果一覧表（令和8年3月定例会）』で議案第16号『令和8年度奈良市一般会計予算』が2026年3月26日に修正可決されたこと、予算決算委員会に提出された修正案（宮池委員提出・公式PDF）が第1条第1項の総額を原案195,000,000千円から193,425,597千円へ1,574,403千円減額するものであることを確認した。令和8年度一般会計補正予算（第1号）が193,425,597千円を補正前の額とすることも整合する",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "nara-budget-2026",
+      "official_url": "https://www.city.nara.lg.jp/site/zaisei/259233.html",
+      "title": "令和8年度当初予算の概要",
+      "use_boundary": "FY2026当初予算は補正予算・決算と別stateで保持する。金額は千円単位の公表値であり、円単位を合成しない。議決結果は議決結果一覧表の文言どおり『修正可決』として記録し、原案の額（195,000,000千円）を成立額として記録しない"
+    },
+    {
+      "evidence_location": "FY2024決算額は、同ページから公表される『令和6年度決算総括表（一般会計及び特別会計）』（単位：円）で、一般会計の収入済額161,996,348,913円・支出済額157,827,488,682円・差引形式収支4,168,860,231円・繰り越すべき財源820,153,000円・実質収支3,348,707,231円を確認し、差引と実質収支が検算一致した。同ページの一般会計決算の千円表示（歳入161,996,349千円・歳出157,827,489千円・形式収支4,168,860千円・実質収支3,348,707千円）とも整合する。決算の認定は市議会公式『議決結果一覧表（令和7年9月定例会）』で、報告第41号『令和6年度奈良市一般会計歳入歳出決算の認定について』が2025年9月29日に認定されたことを確認した",
+      "evidence_role": "settlement_and_major_measures",
+      "format": "html",
+      "id": "nara-settlement-2024",
+      "official_url": "https://www.city.nara.lg.jp/site/zaisei/246327.html",
+      "title": "令和6年度決算の概要",
+      "use_boundary": "FY2024決算は予算・補正と別stateで保持する。円単位の値は決算総括表に印字された精密値であり、千円表示からの合成ではない。認定結果は議決結果一覧表の文言どおり『認定』として記録する"
+    }
+  ]
+}

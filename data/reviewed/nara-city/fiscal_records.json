@@ -1,0 +1,65 @@
+[
+  {
+    "account_type": "general",
+    "amount_yen": 193425597000,
+    "confidence": "high",
+    "fiscal_year": 2026,
+    "id": "jp-local-292010-fiscal-2026-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算総額",
+    "municipality_id": "jp-local-292010",
+    "note": "奈良市公式『令和8年度当初予算の概要』で確認した令和8年度一般会計当初予算総額193,425,597千円。公表精度は千円単位であり、その精度のまま記録し円単位を合成していない。当初予算は議案第16号『令和8年度奈良市一般会計予算』として令和8年3月定例会に原案195,000,000千円で提出され、予算決算委員会で宮池委員提出の修正案が可決されたため、本会議で2026年3月26日に修正可決され成立した（市議会公式『議決結果一覧表（令和8年3月定例会）』の議決結果の文言は『修正可決』）。修正は歳入歳出総額を1,574,403千円減額するもので、成立額は修正後の193,425,597千円である（財政課ページの予算規模も同額であり、令和8年度一般会計補正予算（第1号）の補正前の額とも一致する）。原案の額を成立額として記録していない。補正予算や決算とは別stateで扱う。",
+    "period_end": "2027-03-31",
+    "period_start": "2026-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "nara-budget-2026"
+    ],
+    "stage": "initial_budget",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 161996348913,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-292010-fiscal-2024-total-revenue",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入額",
+    "municipality_id": "jp-local-292010",
+    "note": "奈良市公式『令和6年度決算総括表（一般会計及び特別会計）』（単位：円）に示された一般会計の収入済額161,996,348,913円。円単位の精密値が公式資料に印字されているため円単位のまま記録する（市財政課『令和6年度決算の概要』ページの千円表示161,996,349千円はこの値の千円表示と整合する）。当該決算は報告第41号『令和6年度奈良市一般会計歳入歳出決算の認定について』として令和7年9月定例会で2025年9月29日に認定された（市議会公式『議決結果一覧表（令和7年9月定例会）』で確認）。FY2024は奈良市第5次総合計画前期推進方針（2022年度～2026年度）の期間内の決算である。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "nara-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 157827488682,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-292010-fiscal-2024-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出額",
+    "municipality_id": "jp-local-292010",
+    "note": "同じく決算総括表に示された一般会計の支出済額157,827,488,682円（円単位のまま記録）。歳入総額161,996,348,913円との差引（形式収支）は4,168,860,231円で、同表の記載と検算一致する。実質収支は3,348,707,231円である（翌年度へ繰り越すべき財源820,153,000円。4,168,860,231円－820,153,000円＝3,348,707,231円で検算一致し、いずれも同表で確認した）。当該決算は報告第41号として令和7年9月定例会で2025年9月29日に認定された。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "nara-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  }
+]

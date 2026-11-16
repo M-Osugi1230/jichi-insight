@@ -1,0 +1,63 @@
+{
+  "id": "phase15-nara-plan-review",
+  "name_ja": "奈良市",
+  "next_action": "Promote the per-measure directions and indicators of the 29 measures of the first-half promotion policy only when official sources with stable record-level locators have been reviewed; complete the final cross-check against the budget book and the settlement book （事項別明細書） at section level; examine the content of the audit commissioners' settlement review opinion (individual findings); keep the previous plan (the Fourth Nara City Comprehensive Plan) only as a separate version, and never connect results from the previous plan period forward into the current plan; do not pre-empt the content of the second-half promotion policy (FY2027-FY2031), now in preparation, into the current first-half promotion policy. Keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "official_code": "292010",
+  "quality_boundary": "This package reviews the current plan identity and period (the Fifth Nara City Comprehensive Plan: the Future Vision （未来ビジョン） runs FY2022-FY2031 with the 2031 city image 『「わたし」からはじめる「わたしたち」のまち 奈良』, four directions for the city, a basic stance and four priority fields; the Promotion Policy （推進方針） splits into a first half (FY2022-FY2026, current) and a second half (FY2027-FY2031, in preparation); the vision period and the promotion-policy halves are kept as separate period semantics), the policy structure (the first-half promotion policy's five chapters and 29 measures, enumerated in full from the plan volume's structure chart; the per-measure directions and indicators are not enumerated and stay deferred depth, so the measures lists stay empty), the progress-governance layer (the implementation status compiled and published every fiscal year and reported to the city council — the FY2024 status was reported as 報告第52号 on 2025-09-05 — the municipality's own progress-management framework), the enacted FY2026 initial budget at the published sen-yen (thousand-yen) precision (bill 議案第16号; passed with amendments （修正可決） on 2026-03-26 per the council's official voting-results table; the original proposal of 195,000,000 thousand yen was reduced by 1,574,403 thousand yen through the amendment adopted in the Budget and Settlement Committee, so the enacted amount is 193,425,597 thousand yen and the original amount is never recorded as enacted), and the FY2024 settlement at the yen precision printed in the city's official settlement summary table. The FY2024 settlement certification （報告第41号） was certified at the September 2025 regular session on 2025-09-29: that outcome is recorded exactly as published; it was not rejected. The real balance of 3,348,707,231 yen is kept at the printed yen precision. FY2024 falls within the first-half promotion policy period, so its plan version is the same as the current plan, but no official total-level mapping from settlement totals to the five chapters and 29 measures exists, so the linkage stays not_assessable. The transition from the previous plan (the Fourth Nara City Comprehensive Plan, whose target year was extended by one year to FY2021) is kept only as a version chronology record, and the second-half promotion policy now in preparation is not pre-empted into the current plan.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "奈良市公式『奈良市第5次総合計画』本編（公式PDF）で、計画の構成（未来ビジョンと推進方針）、計画期間（未来ビジョン2022年度～2031年度、推進方針は前期2022年度～2026年度・後期2027年度～2031年度）、2031年のまちの姿、4つのまちの方向性、基本姿勢、重点分野を直接確認した",
+      "evidence_role": "current_plan_identity",
+      "id": "nara-current-plan-period",
+      "review_note": "総合計画の構成（未来ビジョン・推進方針）と、未来ビジョンの10年、推進方針の前期・後期を別period semanticsとして保持した。レビュー済みレコード。",
+      "source_url": "https://www.city.nara.lg.jp/site/soukei5/",
+      "statement": "奈良市の総合計画は奈良市第5次総合計画であり、未来ビジョンと推進方針で構成される。未来ビジョンは2031年度を目標年度とし、市民とともに描いた「2031年のまちの姿」として『「わたし」からはじめる「わたしたち」のまち 奈良』を掲げ、4つの「まちの方向性」（Ⅰ 誰もが子育てに関わり多様な生き方を認めあうまち／Ⅱ 地域の特性をいかした様々な働き方にチャレンジできるまち／Ⅲ 誰かのやりたいことが他の誰かのやってほしいことになる機会をみんなでつくっていけるまち／Ⅳ 命と生活を守るために自分たちで考え行動できるまち）と、「互いのつながりを大切にし今と未来をともにつくり出せるまち」という基本姿勢、4つの重点分野（未来を育てる（子育て支援）／活気を生み出す（経済活性化）／生活をつなぐ（健康長寿）／安全を守る（防災・減災））を設定する。推進方針は未来ビジョンの実現に向けた施策の方向性を体系的に示すもので、計画期間は前期2022年度～2026年度・後期2027年度～2031年度に分けられ、現行は前期推進方針である。未来ビジョンの10年と推進方針の前期・後期を別period semanticsとして保持し、一律の固定期間へ潰さない。Phase 14インベントリの記録（奈良市第5次総合計画 2022年度～2031年度・前期推進方針2022年度～2026年度・verified_fixed_period）とも一致する。",
+      "title": "奈良市第5次総合計画の構成（未来ビジョン2022年度～2031年度と前期・後期推進方針）",
+      "value": "奈良市第5次総合計画は未来ビジョン2022年度～2031年度（10年）／推進方針は前期2022年度～2026年度・後期2027年度～2031年度で現行は前期推進方針／後期推進方針は2026年度に策定過程"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "奈良市公式『奈良市第5次総合計画』本編の推進方針の施策体系図（本編pp.136-137）で、5章の構成と各章の施策を直接確認した",
+      "evidence_role": "policy_structure",
+      "id": "nara-current-policy-structure",
+      "review_note": "前期推進方針の施策体系（5章・29施策）を章単位で保持した。施策の下の方向性・事業単位の対応付けは行わない。レビュー済みレコード。",
+      "source_url": "https://www.city.nara.lg.jp/site/soukei5/",
+      "statement": "前期推進方針の施策体系は、まちの方向性と基本姿勢に対応する5章・29施策で構成される。第1章「ひとづくり」（子育て、教育、人権、男女共同）は6施策（母子保健の推進と子育て家庭への支援の充実、子育て環境の充実、学校教育の充実、教育支援体制の充実、人権と平和の尊重、男女共同参画社会の実現）、第2章「しごとづくり」（観光、産業・労働）は4施策（観光・交流の促進、商工・サービス業の活性化、農林業の振興、雇用・労働環境の充実）、第3章「くらしづくり」（福祉、健康、地域活動、いきがい、文化）は8施策（地域福祉と総合的な生活保障の推進、障害者福祉の充実、高齢者福祉の充実、医療体制の充実と健康の増進、地域コミュニティと市民活動の活性化、文化・スポーツの振興、社会教育の推進、文化遺産の保存と活用）、第4章「まちづくり」（安全・安心、環境・衛生、都市基盤）は9施策（防災対策の充実、消防・救急救助体制の充実、防犯対策と消費者保護の推進、環境の保全、生活衛生・環境衛生の向上、土地・景観の整備、交通基盤の整備と交通安全の確保、住環境の向上、利水・治水対策の推進）、第5章「しくみづくり」（協働、行財政運営）は2施策（市民参画と開かれた市政の推進、行財政改革の推進）である。各施策の下の施策の方向性（細目）の全件列挙は本候補では行わず、追加depthとして保持する。",
+      "title": "前期推進方針の施策体系（5章・29施策）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "市議会公式『議決結果一覧表（令和7年9月定例会）』で報告第52号の報告（2025年9月5日）を確認し、各事業の取組状況の公式入口（Phase 14インベントリで確認）とあわせて保持した",
+      "evidence_role": "progress_governance",
+      "id": "nara-progress-governance-framework",
+      "review_note": "進行管理の枠組み（毎年度の実施状況公表・議会報告）を年度実績へ読み替えず保持した。レビュー済みレコード。",
+      "source_url": "https://www.city.nara.lg.jp/site/soukei5/list968.html",
+      "statement": "第5次総合計画の進行管理は、計画の実施状況を毎年度とりまとめて公表し市議会へ報告する自治体の枠組みによる。令和6年度の実施状況は報告第52号『奈良市第5次総合計画の実施状況（令和6年度）の報告について』として2025年9月5日に市議会へ報告され、各事業の取組状況は市公式ページで公表される。自治体の進捗管理をJichi Insight独自の達成判定へ変換しない。",
+      "title": "計画の進行管理（実施状況の毎年度公表と議会への報告）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "第4次総合計画の目標年度変更と第5次総合計画の開始延期は市公式『奈良市第5次総合計画』本編の策定経緯で確認した。後期推進方針の策定過程は公式の策定ページ（Phase 14インベントリで確認）による",
+      "evidence_role": "plan_transition",
+      "id": "nara-plan-transition",
+      "review_note": "前計画からの移行と後期推進方針の策定過程を版の履歴として分離記録した。レビュー済みレコード。",
+      "source_url": "https://www.city.nara.lg.jp/soshiki/4/259676.html",
+      "statement": "第5次総合計画は、新型コロナウイルス感染症の影響を踏まえて計画開始年度を1年延期して策定されたもので、これに伴い前計画である第4次総合計画の目標年度は2020年度から2021年度へ変更され、第5次総合計画は2022年度に開始した。また、推進方針の後期（2027年度～2031年度）は2026年度に策定過程にあり、確定した後期推進方針の内容は現行の前期推進方針へ先取りしない。移行は版の履歴として分離して記録する。",
+      "title": "第4次総合計画からの移行と後期推進方針の策定過程"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "決算総額は『令和6年度決算総括表』、認定結果は市議会公式『議決結果一覧表（令和7年9月定例会）』で確認した。総額レベルの対応付けの不存在は、決算の概要・主要な施策の成果説明書の公表範囲で確認した",
+      "evidence_role": "annual_progress",
+      "fiscal_year": 2024,
+      "id": "nara-fy2024-settlement-linkage",
+      "review_note": "版は同一でも総額レベルの対応付けがないため接続しないことを明記した。レビュー済みレコード。",
+      "source_url": "https://www.city.nara.lg.jp/site/zaisei/246327.html",
+      "statement": "FY2024決算は前期推進方針（2022年度～2026年度）の期間内の決算であり、計画の版は現行と同一である。決算総額（円単位）と認定結果（報告第41号・2025年9月29日認定）は一次資料で確認済みであるが、決算総額と5章・29施策との総額レベルの対応付けは公式資料にないため、接続はnot_assessableとし、決算値を計画のcurrent actualへ流用しない。",
+      "title": "令和6年度決算と奈良市第5次総合計画前期推進方針の施策体系の接続"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-16"
+}
