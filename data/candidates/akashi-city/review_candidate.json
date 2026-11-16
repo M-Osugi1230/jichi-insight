@@ -1,0 +1,340 @@
+{
+ "candidate_id": "akashi-phase15-review-candidate",
+ "candidate_package": {
+  "evidence_packets": [
+   {
+    "claims": [
+     {
+      "decision": "needs_review",
+      "field": "amount_yen",
+      "location_note": "明石市公式の修正後の令和8年度一般会計予算書（議案第29号）第1条で総額151,508,494千円を確認し、歳入・歳出の各合計とも一致した。修正議決の事実と日付は市公式『令和8年度当初予算案』ページの『予算議案に対する修正議決後の内容は次のとおりです（3月25日）』の明記で確認した",
+      "review_note": "成立した当初予算の額を修正後の予算書そのもので確認したステージング。修正議決の事実は市の公式予算案ページの明記による。市議会公式の審議結果文書そのものの結果欄の文言と修正の具体的内容、会議録による最終確認は未実施のまま保持する。人間による確認待ちステージング。",
+      "source_ids": [
+       "akashi-budget-2026"
+      ],
+      "statement": "令和8年度一般会計当初予算総額は151,508,494千円である。金額は明石市公式の修正後の一般会計予算書（議案第29号『令和8年度明石市一般会計予算』、令和8年2月19日提出）の第1条で確認し、歳入・歳出の各合計とも一致した。公表精度は千円単位である。当初予算案は令和8年第1回定例会3月議会で修正議決により成立した（市公式『令和8年度当初予算案』ページが修正議決後の内容を3月25日付けで公表している）。市議会公式の審議結果文書そのものの結果欄の文言と修正の具体的内容は未確認であり、会議録による最終確認は未実施である。"
+     }
+    ],
+    "id": "evidence-akashi-city-2026-total-expenditure",
+    "open_questions": [
+     "市議会公式の第1回定例会3月議会の審議結果文書・賛否一覧における議案第29号の結果欄の文言の直接確認と、修正の具体的内容。",
+     "第1回定例会の会議録による議決日（2026年3月25日）の最終確認。",
+     "予算書（歳入歳出予算事項別明細書）の款別合計との最終突合。"
+    ],
+    "review_status": "needs_review",
+    "subject_id": "jp-local-282030-fiscal-2026-total-expenditure",
+    "subject_type": "fiscal_record"
+   },
+   {
+    "claims": [
+     {
+      "decision": "needs_review",
+      "field": "amount_yen",
+      "location_note": "明石市公式『令和6年度決算資料』（決算議案関係資料、令和7年9月、財務室）の会計別決算収支総括表で、一般会計の歳入131,291,999,787円を円単位で直接確認した。認定の経過と結果は市議会公式『第2回定例会9月議会審議結果』で確認し、議案第58号から第69号までの決算議案（令和6年度明石市一般会計歳入歳出決算ほか11件）は『原案どおり認定することに決定した議案』に分類され、決定日は10月16日であった",
+      "review_note": "市の公式決算資料の円単位の表記で歳入総額を確認したステージング。認定の成否については市議会公式の審議結果文書で直接確認し、議案第58号が原案どおり認定されたことを記録する。人間による確認待ちステージング。",
+      "source_ids": [
+       "akashi-settlement-2024"
+      ],
+      "statement": "令和6年度一般会計決算の歳入総額は131,291,999,787円である（明石市公式『令和6年度決算資料』の会計別決算収支総括表による。円単位で印字された精密値であり、予算現額は138,266,314,000円）。当該決算は議案第58号『令和6年度明石市一般会計歳入歳出決算』として、令和7年第2回定例会9月議会で原案どおり認定することに決定し、認定された（市議会公式の審議結果文書で確認。決定日は2025年10月16日）。"
+     }
+    ],
+    "id": "evidence-akashi-city-2024-total-revenue",
+    "open_questions": [
+     "決算書（歳入歳出決算事項別明細書）の款別合計との最終突合。",
+     "監査委員の決算審査意見書の内容（個別の指摘事項等）の精査。"
+    ],
+    "review_status": "needs_review",
+    "subject_id": "jp-local-282030-fiscal-2024-total-revenue",
+    "subject_type": "fiscal_record"
+   },
+   {
+    "claims": [
+     {
+      "decision": "needs_review",
+      "field": "amount_yen",
+      "location_note": "歳入総額と同じく、明石市公式『令和6年度決算資料』の会計別決算収支総括表で歳出130,356,924,686円を円単位で確認した。形式収支935,075,101円、翌年度へ繰り越すべき財源48,308,000円、実質収支886,767,101円、単年度収支151,241,824円も同表の表記で確認した",
+      "review_note": "市の公式決算資料の円単位の表記で歳出総額を確認し、歳入総額との差引が同表の形式収支と一致することを検算したステージング。認定については議案第58号が第2回定例会9月議会で原案どおり認定されたことを市議会公式の審議結果文書で確認済みである。人間による確認待ちステージング。",
+      "source_ids": [
+       "akashi-settlement-2024"
+      ],
+      "statement": "令和6年度一般会計決算の歳出総額は130,356,924,686円である（明石市公式『令和6年度決算資料』による。円単位で印字）。歳入総額131,291,999,787円との差引は935,075,101円で、同表の形式収支と検算一致する。実質収支は886,767,101円（同表。翌年度へ繰り越すべき財源は48,308,000円）であり、円単位のまま記録する。当該決算は議案第58号として第2回定例会9月議会で原案どおり認定された。"
+     }
+    ],
+    "id": "evidence-akashi-city-2024-total-expenditure",
+    "open_questions": [
+     "決算書（歳入歳出決算事項別明細書）の款別合計との最終突合。"
+    ],
+    "review_status": "needs_review",
+    "subject_id": "jp-local-282030-fiscal-2024-total-expenditure",
+    "subject_type": "fiscal_record"
+   }
+  ],
+  "fiscal_records": [
+   {
+    "account_type": "general",
+    "amount_yen": 151508494000,
+    "confidence": "medium",
+    "fiscal_year": 2026,
+    "id": "jp-local-282030-fiscal-2026-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算総額",
+    "municipality_id": "jp-local-282030",
+    "note": "明石市公式の修正後の令和8年度一般会計予算書（議案第29号『令和8年度明石市一般会計予算』、令和8年2月19日に市長丸谷聡子が提出）第1条で確認した令和8年度一般会計当初予算総額151,508,494千円。歳入・歳出の各合計とも一致した。公表精度は千円単位であり、その精度のまま記録し円単位を合成していない。当初予算案は修正議決により成立した（市公式『令和8年度当初予算案』ページが『※予算議案に対する修正議決後の内容は次のとおりです（3月25日）』と明記し、修正後の予算書を公表している）。議決日2026年3月25日は同ページの公表日付による。市議会公式の審議結果文書そのものの結果欄の文言と修正の具体的内容は未確認であり、会議録による最終確認は未実施である。補正予算や決算とは別stateで扱う。",
+    "period_end": "2027-03-31",
+    "period_start": "2026-04-01",
+    "review_status": "needs_review",
+    "sources": [
+     "akashi-budget-2026"
+    ],
+    "stage": "initial_budget",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+   },
+   {
+    "account_type": "general",
+    "amount_yen": 131291999787,
+    "confidence": "medium",
+    "fiscal_year": 2024,
+    "id": "jp-local-282030-fiscal-2024-total-revenue",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入額",
+    "municipality_id": "jp-local-282030",
+    "note": "明石市公式『令和6年度決算資料』（決算議案関係資料、令和7年9月、財務室）の会計別決算収支総括表に示された一般会計の歳入総額131,291,999,787円（円単位で印字）。予算現額は138,266,314,000円。当該決算は議案第58号（議案第58号から第69号までの『令和6年度明石市一般会計歳入歳出決算ほか11件』）として、令和7年第2回定例会9月議会で原案どおり認定することに決定した（市議会公式『第2回定例会9月議会審議結果』で直接確認。決定日は2025年10月16日）。FY2024はあかしSDGs前期戦略計画（2022年度～2025年度）期間内の決算である。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "needs_review",
+    "sources": [
+     "akashi-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+   },
+   {
+    "account_type": "general",
+    "amount_yen": 130356924686,
+    "confidence": "medium",
+    "fiscal_year": 2024,
+    "id": "jp-local-282030-fiscal-2024-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出額",
+    "municipality_id": "jp-local-282030",
+    "note": "明石市公式『令和6年度決算資料』の会計別決算収支総括表に示された一般会計の歳出総額130,356,924,686円（円単位で印字）。歳入総額131,291,999,787円との差引額935,075,101円は、同表の形式収支と検算一致する。実質収支は同表により886,767,101円（翌年度へ繰り越すべき財源48,308,000円を差し引いた額、円単位）であり、単年度収支は151,241,824円である。当該決算は議案第58号として第2回定例会9月議会で原案どおり認定することに決定した。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "needs_review",
+    "sources": [
+     "akashi-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+   }
+  ],
+  "plan_review": {
+   "id": "phase15-akashi-plan-review",
+   "name_ja": "明石市",
+   "official_code": "282030",
+   "records": [
+    {
+     "decision": "needs_review",
+     "evidence_location": "明石市公式『あかしSDGs推進計画（明石市第6次長期総合計画）』ページと計画本編（公式PDF）の『1 計画の枠組み』（計画の構成・計画の期間）で、推進計画の期間（2022年度～2030年度）と戦略計画の前期（2022年度～2025年度）・後期（2026年度～2030年度）、実行計画が年度単位であることを直接確認した",
+     "evidence_role": "current_plan_identity",
+     "id": "akashi-current-plan-period",
+     "review_note": "総合計画の構成（推進計画・戦略計画・個別計画・実行計画）と、推進計画の9年間と戦略計画の前期・後期を別period semanticsとして保持した。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.akashi.lg.jp/seisaku/seisaku_shitsu/shise/gyose/kekaku/sogokekaku/index-6sdgs.html",
+     "statement": "明石市の総合計画は、あかしSDGs推進計画（明石市第6次長期総合計画）であり、自治基本条例に基づく市の最上位計画として2022年3月に市議会の議決を経て策定された。計画の構成は、目指すまちの姿やまちづくりの方向性といった基本構想を定める推進計画、その方向性に基づき優先的に取り組む施策や各分野の主な施策を定める前期・後期戦略計画（明石市まち・ひと・しごと創生総合戦略に位置付け）、各分野の展開を定める個別計画、具体的な事務事業を明らかにする年度ごとの実行計画からなる。推進計画の計画期間は2022年度～2030年度の9年間であり、戦略計画は前期（2022年度～2025年度、あかしSDGs前期戦略計画＝まち・ひと・しごと創生総合戦略（第2期））と後期（2026年度～2030年度、あかしSDGs後期戦略計画＝同総合戦略（第3期））に分けられ、現行は後期戦略計画である。推進計画の9年間と戦略計画の前期・後期を別period semanticsとして保持し、一律の固定期間へ潰さない。Phase 14インベントリの記録（あかしSDGs推進計画（明石市第6次長期総合計画）2022年度～2030年度・verified_fixed_period）とも一致する。",
+     "title": "あかしSDGs推進計画（明石市第6次長期総合計画）の構成（推進計画2022年度～2030年度と前期・後期戦略計画）",
+     "value": "あかしSDGs推進計画は2022年度～2030年度（9年間）／戦略計画は前期2022年度～2025年度・後期2026年度～2030年度で現行は後期／実行計画は年度単位"
+    },
+    {
+     "decision": "needs_review",
+     "evidence_location": "計画本編（公式PDF）の『3 基本構想』で、2030年のあるべき姿、まちづくりの方向性（経済・社会・環境の三側面）、行政運営の基本姿勢を直接確認した。各分野の主な施策は戦略計画側に置かれており、本編基本構想には分野別の施策一覧は置かれていない",
+     "evidence_role": "policy_structure",
+     "id": "akashi-current-policy-structure",
+     "review_note": "基本構想の三側面の方向性と行政運営の基本姿勢、2030年度の数値目標を計画本編で直接確認した。戦略計画の分野別の主な施策の全件列挙は本候補では行わず、追加depthとして保持する。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.akashi.lg.jp/seisaku/seisaku_shitsu/shise/gyose/kekaku/sogokekaku/index-6sdgs.html",
+     "statement": "あかしSDGs推進計画の基本構想は、2030年のあるべき姿を『SDGs未来安心都市・明石 ～いつまでも すべての人に やさしいまちを みんなで～』と定め、まちづくりの方向性として経済・社会・環境の三側面を置く。経済面は『にぎわいと活力が持続するまち』、社会面は『すべての人が助け合い安心して暮らせるまち』、環境面は『人にも自然にも地球にもやさしいまち』を目指すものとし、三側面は総合的にバランスよく取り組み、相乗効果を生み出すよう統合的に進める。あわせて2030年度の数値目標として、まちづくり全体の推進状況を計る『明石のまちが住みやすいと思う人の割合100%』と、目標人口30万人（合計特殊出生率を2030年までに1.8へ上昇、社会動態は2021～2030年の平均で約1,000人/年の転入超過）を定める。行政運営の基本姿勢は、市民主体のまちづくり、更なる権限と責任に基づく持続可能で自立した行政経営、ICT（情報通信技術）の活用等による市民サービスの向上の3つである。各分野の主な施策は戦略計画側に置かれており、その全件列挙は本候補では行わず、計画本編・戦略計画本編での直接確認を追加depthとして保持する（deferred depth）。",
+     "title": "あかしSDGs推進計画 基本構想の方向性（経済・社会・環境の三側面と行政運営の基本姿勢）"
+    },
+    {
+     "decision": "needs_review",
+     "evidence_location": "計画本編（公式PDF）の『1 計画の枠組み』と市公式の計画ページの『実行計画』『あかしSDGs推進審議会』の各節で、実行計画を通じたPDCAサイクルによる進行管理と、審議会の構成・役割を直接確認した",
+     "evidence_role": "progress_governance",
+     "id": "akashi-progress-governance-framework",
+     "review_note": "進行管理の枠組み（年度ごとの実行計画と検証の反映、あかしSDGs推進審議会による審議）を公式資料から抽出した。評価・進捗の個別結果そのものは本候補では扱わない。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.akashi.lg.jp/seisaku/seisaku_shitsu/shise/gyose/kekaku/sogokekaku/index-6sdgs.html",
+     "statement": "あかしSDGs推進計画の進行管理は、実行計画の策定を通じたPDCAサイクルによる枠組みである。毎年度、戦略計画に掲げる主な施策の取組状況と、推進計画や戦略計画に掲げる数値目標の状況を検証し、次年度の実行計画に反映して計画の着実な推進を図る。PDCAサイクルにおいては、市民や有識者などで構成する『あかしSDGs推進審議会』（学識経験者、公募市民、各種団体代表など）を開催するなど市民の参画を確保し、計画の策定や推進状況について審議する。また、社会経済情勢の変化や国及び県の制度改正なども踏まえ、必要に応じて戦略計画や個別計画の見直しにつなげる。この進捗管理は自治体による進行管理の枠組みであり、Jichi Insight独自の達成判定へ変換しない。",
+     "title": "計画の進行管理（実行計画を通じたPDCAサイクルとあかしSDGs推進審議会）"
+    },
+    {
+     "decision": "needs_review",
+     "evidence_location": "計画本編（公式PDF）の『1 計画の枠組み』で前計画である第5次長期総合計画の策定経緯（2011年に2020年度までを目標年次として策定、目指すまちの姿『ひと まち ゆたかに育つ 未来安心都市・明石』、目標人口29万人の維持）を直接確認し、市議会だより第254号で第6次計画の策定延期と第5次計画の延長（基本構想に変更がないため議決事項に該当しない旨の市答弁）を確認した",
+     "evidence_role": "plan_transition",
+     "id": "akashi-plan-transition",
+     "review_note": "前総合計画から現行計画への移行と、戦略計画の前期から後期への版の進行を版の履歴として記録した。前計画の事業・評価の全件列挙は本候補では行わない。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.akashi.lg.jp/seisaku/seisaku_shitsu/shise/gyose/kekaku/sogokekaku/index-6sdgs.html",
+     "statement": "現行のあかしSDGs推進計画（明石市第6次長期総合計画、2022年度～2030年度）に先立つ前総合計画は第5次長期総合計画であり、2011年に2020年度までを目標年次として策定され、目指すまちの姿として『ひと まち ゆたかに育つ 未来安心都市・明石』を掲げ、目標人口を29万人の維持とした。第6次長期総合計画の策定は新型コロナウイルス感染症の影響により1年延期されたため、第5次長期総合計画は基本構想を変更せず2021年度まで延長して運用された。また、第6次計画の内部では戦略計画が前期（2022年度～2025年度）から後期（2026年度～2030年度）へ版を進めており、後期戦略計画は推進計画及び前期戦略計画の推進状況を総括した上で策定された現行の版である。FY2024決算は前期戦略計画期間の決算であり、後期戦略計画のactualへ流用しない。",
+     "title": "前総合計画（第5次長期総合計画、目標年次2020年度・2021年度まで延長運用）からの移行と戦略計画の前期から後期への版の進行"
+    },
+    {
+     "decision": "not_assessable",
+     "evidence_location": "FY2024決算の公式入口はPhase 14インベントリの決算資料（財政のあらまし（決算内容）ページ）。決算総額と計画の方向性・施策体系との対応付けは公式資料の総額レベルでは示されていない",
+     "evidence_role": "annual_progress",
+     "fiscal_year": 2024,
+     "id": "akashi-fy2024-settlement-linkage",
+     "review_note": "決算値と認定結果は一次資料で確認済みであるが、総額レベルの対応付けが公式資料にないため接続は未判定のまま保持する。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.akashi.lg.jp/zaimu/zaisei_ka/shise/zaise/aramashi/zaise/index.html",
+     "statement": "FY2024決算値とあかしSDGs推進計画の施策体系との接続は未判定（not_assessable）。FY2024は前期戦略計画（2022年度～2025年度）期間内の決算であり、現行の後期戦略計画（2026年度～2030年度）とは戦略計画の版が異なる。決算総額（歳入131,291,999,787円・歳出130,356,924,686円、円単位）と認定結果（議案第58号・原案どおり認定）は一次資料で確認済みであるが、決算総額は会計別の集計値であり、基本構想の三側面の方向性や戦略計画の施策との総額レベルの対応付けは公式資料に示されていない。接続は人間レビュー工程の作業とする。",
+     "title": "令和6年度決算とあかしSDGs推進計画（前期戦略計画期間）の施策体系の接続"
+    }
+   ],
+   "review_status": "pending_record_review"
+  },
+  "policy_structure": {
+   "current_plan": {
+    "end_fiscal_year": 2030,
+    "management_principles": [
+     "総合計画はあかしSDGs推進計画（明石市第6次長期総合計画）であり、基本構想を定める推進計画（2022年度～2030年度の9年間）、優先的に取り組む施策や各分野の主な施策を定める前期・後期戦略計画（まち・ひと・しごと創生総合戦略。前期2022年度～2025年度・後期2026年度～2030年度で現行は後期）、各分野の個別計画、年度ごとの実行計画で構成する。推進計画の期間と戦略計画の期間を別period semanticsとして保持し、一律の固定期間modelへ潰さない",
+     "基本構想のまちづくりの方向性は経済・社会・環境の三側面で構成し、三側面は総合的にバランスよく、相乗効果を生み出すよう統合的に取り組む。各分野の主な施策は戦略計画側に置かれており、その全件列挙は本候補では行わず、追加depthとして保持する",
+     "進行管理は、実行計画の策定を通じたPDCAサイクル（毎年度、戦略計画の主な施策の取組状況と数値目標の状況を検証し、次年度の実行計画に反映）と、あかしSDGs推進審議会による計画の策定・推進状況の審議による枠組みである。自治体の進捗管理をJichi Insight独自の達成判定へ変換しない",
+     "FY2024決算は前期戦略計画（2022年度～2025年度）期間内の決算であり、現行の後期戦略計画とは版が異なる。決算総額（円単位）と認定結果（議案第58号・原案どおり認定）は一次資料で確認済みであるが、決算総額と三側面の方向性・戦略計画の施策との総額レベルの対応付けは公式資料にないため、決算値を計画のcurrent actualへ流用しない"
+    ],
+    "period_status": "verified_fixed_period",
+    "policy_fields": [
+     {
+      "id": "field-1",
+      "measures": [],
+      "name_ja": "経済：にぎわいと活力が持続するまち"
+     },
+     {
+      "id": "field-2",
+      "measures": [],
+      "name_ja": "社会：すべての人が助け合い安心して暮らせるまち"
+     },
+     {
+      "id": "field-3",
+      "measures": [],
+      "name_ja": "環境：人にも自然にも地球にもやさしいまち"
+     }
+    ],
+    "start_fiscal_year": 2022,
+    "title": "あかしSDGs推進計画（明石市第6次長期総合計画）（2022年度～2030年度）",
+    "vision": "SDGs未来安心都市・明石 ～いつまでも すべての人に やさしいまちを みんなで～"
+   },
+   "id": "akashi-current-policy-structure",
+   "name_ja": "明石市",
+   "official_code": "282030",
+   "phase": 15
+  },
+  "progress_review": {
+   "id": "akashi-current-progress-review-summary",
+   "implementation_plan_framework": {
+    "evaluation_structure": "進行管理は、実行計画の策定を通じたPDCAサイクルによる枠組みである。毎年度、戦略計画に掲げる主な施策の取組状況と、推進計画や戦略計画に掲げる数値目標の状況を検証し、次年度の実行計画に反映する。PDCAサイクルにおいては、市民や有識者などで構成するあかしSDGs推進審議会を開催するなど市民の参画を確保し、計画の策定や推進状況について審議する。自治体の進捗管理をJichi Insight独自の達成判定へ変換せず、枠組みそのものを年度実績へ読み替えない",
+    "period": "あかしSDGs推進計画の計画期間（2022年度～2030年度）を通じて、後期戦略計画（2026年度～2030年度）のもとで進捗管理を行う。FY2024決算は前期戦略計画期間内の決算で戦略計画の版が現行と異なり、決算総額（円単位）と認定結果（議案第58号・原案どおり認定）は一次資料で確認済みであるが、決算総額と三側面の方向性・戦略計画の施策との総額レベルの対応付けは公式資料にないため、進行管理の対象値として接続しない",
+    "title": "あかしSDGs後期戦略計画（2026年度～2030年度）と年度実行計画による進行管理"
+   },
+   "name_ja": "明石市",
+   "official_code": "282030",
+   "phase": 15,
+   "review_status": "review_candidate_staging"
+  },
+  "source_catalog": {
+   "id": "akashi-phase15-sources",
+   "name_ja": "明石市",
+   "official_code": "282030",
+   "phase": 15,
+   "sources": [
+    {
+     "evidence_location": "明石市公式Webサイト『あかしSDGs推進計画（明石市第6次長期総合計画）』ページ（Phase 14インベントリで確認）と計画本編（公式PDF）で、計画の構成（推進計画・前期／後期戦略計画・個別計画・実行計画）、期間（推進計画2022年度～2030年度、戦略計画は前期2022年度～2025年度・後期2026年度～2030年度）、基本構想（2030年のあるべき姿、三側面の方向性、行政運営の基本姿勢）を直接確認した",
+     "evidence_role": "comprehensive_plan",
+     "format": "html",
+     "id": "akashi-sdgs-plan",
+     "official_url": "https://www.city.akashi.lg.jp/seisaku/seisaku_shitsu/shise/gyose/kekaku/sogokekaku/index-6sdgs.html",
+     "title": "あかしSDGs推進計画（明石市第6次長期総合計画）",
+     "use_boundary": "現行計画はあかしSDGs推進計画（明石市第6次長期総合計画、2022年度～2030年度）として保持し、推進計画と戦略計画（前期・後期）のlayer semanticsを分離する。前期戦略計画期間の実績を後期戦略計画へ先取りしない",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    },
+    {
+     "evidence_location": "市公式の計画ページの『あかしSDGs後期戦略計画』『実行計画』『あかしSDGs推進審議会』の各節で、後期戦略計画（2026年度～2030年度）が策定済みであること、実行計画が年度ごとに公表されていること、推進状況が審議会で審議されていることを直接確認した",
+     "evidence_role": "implementation_plan_and_progress",
+     "format": "html",
+     "id": "akashi-latter-strategy-action",
+     "official_url": "https://www.city.akashi.lg.jp/seisaku/seisaku_shitsu/shise/gyose/kekaku/sogokekaku/index-6sdgs.html",
+     "title": "あかしSDGs後期戦略計画・2026年度実行計画",
+     "use_boundary": "後期戦略計画（2026年度～2030年度）、年度実行計画、SDGs推進審議会の進行管理を別Evidence roleで保持し、統合スコアへ変換しない。前期戦略期間（2022年度～2025年度）の結果を後期戦略のactualへ流用しない",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    },
+    {
+     "evidence_location": "FY2026当初予算の金額は、明石市公式の修正後の令和8年度一般会計予算書（議案第29号『令和8年度明石市一般会計予算』）第1条の総額151,508,494千円で確認し、歳入・歳出の各合計とも一致した。修正議決の事実と日付は市公式『令和8年度当初予算案』ページの『予算議案に対する修正議決後の内容は次のとおりです（3月25日）』の明記により確認した",
+     "evidence_role": "budget",
+     "format": "html",
+     "id": "akashi-budget-2026",
+     "official_url": "https://www.city.akashi.lg.jp/zaimu/zaisei_ka/shise/zaise/aramashi/yosannaiyo/index.html",
+     "title": "当初予算の内容",
+     "use_boundary": "FY2026当初予算は補正予算・決算と別stateで保持する。金額は千円単位の公表値であり、円単位を合成しない。議案番号（議案第29号）と修正議決による成立は確認済みであり、議決後の成立額を保持する。修正の具体的内容は未確認のまま保持する",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    },
+    {
+     "evidence_location": "FY2024決算の公式入口（Phase 14インベントリで確認）。明石市公式『令和6年度決算資料』（決算議案関係資料、令和7年9月、財務室）の会計別決算収支総括表で、一般会計の歳入131,291,999,787円・歳出130,356,924,686円・形式収支935,075,101円・翌年度へ繰り越すべき財源48,308,000円・実質収支886,767,101円を円単位で直接確認した。決算の認定結果は市議会公式『第2回定例会9月議会審議結果』により確認し、議案第58号から第69号までの決算議案は『原案どおり認定することに決定した議案』であり、決定日は2025年10月16日であった",
+     "evidence_role": "settlement",
+     "format": "html",
+     "id": "akashi-settlement-2024",
+     "official_url": "https://www.city.akashi.lg.jp/zaimu/zaisei_ka/shise/zaise/aramashi/zaise/index.html",
+     "title": "財政のあらまし（決算内容）",
+     "use_boundary": "FY2024決算は前期戦略計画（2022年度～2025年度）期間内の決算として保持する。歳入・歳出・実質収支は決算資料の円単位の精密値のまま記録し、認定結果（議案第58号・原案どおり認定）も市議会公式の審議結果文書で確認済みである",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    }
+   ]
+  }
+ },
+ "deferred_depth": [
+  {
+   "boundary": "戦略計画（前期・後期）の各分野の主な施策と数値目標（KPI）の全件列挙は追加depthとし、公式対応が確認できるまで昇格しない。基本構想の三側面の方向性は候補に保持するが、戦略計画の施策・事業単位の対応付けは行わない。",
+   "id": "current-plan-granular-kpi-and-project-linkage",
+   "status": "deferred_not_required_for_candidate_staging"
+  },
+  {
+   "boundary": "FY2026当初予算の議決結果（議案第29号・修正議決・2026年3月25日）と、FY2024決算の認定結果（議案第58号・原案どおり認定・2025年10月16日決定）は、市の公式資料と市議会公式の審議結果文書による確認を完了し、候補の財政記録・証拠パケット側に反映している。ただし、修正の具体的内容、第1回定例会3月議会の審議結果文書そのものの結果欄の文言、両議決の会議録による最終確認は未実施のまま保持する。決算書・予算書の事項別明細書との最終突合、監査委員の決算審査意見書の内容の精査、補正予算による変更経過は追加エビデンス確認前は記録・結合しない。FY2024決算の歳入・歳出・実質収支（円単位）とFY2026当初予算総額（千円精度）は一次資料で確認済みであり、候補の財政記録・証拠パケット側に反映している。",
+   "id": "fiscal-vote-and-certification-verification",
+   "status": "deferred_not_required_for_candidate_staging"
+  },
+  {
+   "boundary": "前総合計画（第5次長期総合計画、目標年次2020年度・2021年度まで延長運用）の事業・評価の全件列挙は本候補では行わない。前計画から現行計画への移行は版の履歴として別途記録し、前計画期間の実績を現行計画の期間へ前倒し接続しない。前期戦略計画期間（2022年度～2025年度）の実績も、後期戦略計画のactualへ流用しない。",
+   "id": "plan-transition-version-depth",
+   "status": "deferred_not_required_for_candidate_staging"
+  },
+  {
+   "boundary": "明石市総合計画・進捗管理・財政等のステージングは政策効果の因果認定や他都市比較可能性を意味しない。進捗管理（自治体の進行管理の枠組み）をJichi Insight独自の達成判定へ変換しない。",
+   "id": "policy-outcome-causal-and-cross-city-comparability",
+   "status": "deferred_not_required_for_candidate_staging"
+  }
+ ],
+ "human_review": {
+  "boundary": "A person must check the candidate against the cited primary sources before any promotion to reviewed_complete.",
+  "required": true,
+  "reviewed_at": null,
+  "reviewer_note": null,
+  "status": "pending"
+ },
+ "name_ja": "明石市",
+ "official_code": "282030",
+ "package_state": "prepared",
+ "phase": 15,
+ "publication": {
+  "boundary": "Candidate data is staging-only and must not be loaded by the public site or treated as reviewed data.",
+  "eligible": false
+ },
+ "quality_boundaries": [
+  "Promoted facts must come from official primary sources with stable evidence locators.",
+  "Unpublished, unavailable, historical-only, draft, and unresolved facts must remain explicit.",
+  "No Jichi Insight policy-achievement score, causal attribution, or unverified cross-city ranking may be created.",
+  "This candidate is machine-prepared evidence only and is not Reviewed until a person checks the primary sources."
+ ],
+ "schema_version": 1,
+ "source_inventory_path": "data/indexed/akashi-city/source_inventory.json",
+ "status": "review_candidate"
+}
