@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-16",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "tsu-city-home",
+      "municipality_key": "tsu-city",
+      "organization": "津市",
+      "category": "municipality_profile",
+      "title": "津市公式サイト",
+      "url": "https://www.info.city.tsu.mie.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "津市の公式自治体サイト。"
+    },
+    {
+      "id": "tsu-budget-2026",
+      "municipality_key": "tsu-city",
+      "organization": "津市",
+      "category": "budget",
+      "title": "当初予算の概要",
+      "url": "https://www.info.city.tsu.mie.jp/shisei/zaisei/1005573/1005574.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算124,187,000千円のEvidence。議案第39号『令和8年度津市一般会計予算』として令和8年2月27日に提出され、所管別に各常任委員会への付託を経て令和8年3月26日に原案可決された成立予算（市議会公式の会議録および『議決結果一覧表（令和8年第1回津市議会定例会）』で確認）。金額は千円単位の公表値のまま記録し、円単位を合成しない。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "tsu-settlement-2024",
+      "municipality_key": "tsu-city",
+      "organization": "津市",
+      "category": "settlement",
+      "title": "決算書",
+      "url": "https://www.info.city.tsu.mie.jp/shisei/zaisei/1005577/1005578.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入123,307,646,176円・歳出122,840,878,576円を円単位で含む公式決算資料（令和6年度津市歳入歳出決算書）。実質収支額は同年度決算附属書『実質収支に関する調書』により175,738,909円（円単位）。決算の認定議案である認定第1号は令和7年第3回定例会で令和7年9月25日に認定された。決算書（歳入歳出決算事項別明細書）の款別合計との突合と、監査委員の決算審査意見書の内容確認は未実施。"
+    }
+  ]
+}

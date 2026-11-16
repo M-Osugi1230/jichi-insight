@@ -1,0 +1,61 @@
+{
+  "id": "tsu-phase15-completion",
+  "phase": 15,
+  "status": "reviewed_complete",
+  "official_code": "242012",
+  "name_ja": "津市",
+  "completed_at": "2026-11-16",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "source_catalog_path": "data/catalog/tsu_phase15_sources.json",
+    "plan_review_path": "data/reviewed/tsu-city/plan_review.json",
+    "policy_structure_path": "data/catalog/tsu_current_policy_structure.json",
+    "progress_review_path": "data/catalog/tsu_current_progress_review_summary.json",
+    "fiscal_records_path": "data/reviewed/tsu-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/tsu-city/evidence_packets.json",
+    "counts": {
+      "basic_goals": 19,
+      "basic_plan_measures": 53,
+      "promoted_implementation_item_actual_records": 0,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "current_plan_period_reviewed": true,
+    "current_plan_policy_structure_reviewed": true,
+    "implementation_plan_layer_reviewed": true,
+    "fiscal_states_and_years_separate": true,
+    "budget_enactment_state_preserved": true,
+    "settlement_linkage_not_assessable_preserved": true,
+    "individual_implementation_items_not_overpromoted": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "current-plan-granular-kpi-and-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "53施策に基づく事務事業評価の対象事業の全件と、施策ごとの指標の個別値（基準値・現状値・目標値）は追加depthとし、公式対応が確認できるまで昇格しない。事務事業評価・施策評価報告書は年度版を分離して保持する。"
+    },
+    {
+      "id": "settlement-values-and-budget-amendment-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "補正予算による変更経過、補正予算・決算と個別事業費の対応関係は追加エビデンス確認前は記録・結合しない。FY2024決算は第2次基本計画の計画期間の決算として保持するが、決算総額を計画の目標・基本政策・施策の実績へ流用しない。認定第1号の議決結果（令和7年9月25日・認定）と実質収支額（175,738,909円・円単位）は一次資料で確認済みであり、候補の財政記録・証拠パケット側に反映している。"
+    },
+    {
+      "id": "plan-transition-version-depth",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "先行計画（基本構想・前期基本計画／後期基本計画）および策定中の次期津市総合計画の枠組みそのものは本候補では記録しない。移行の経過は版の履歴として別途記録し、前計画の体系を現行計画期間の実績へ遡及接続しない。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "津市総合計画・財政等のステージングは政策効果の因果認定や他都市比較可能性を意味しない。事務事業評価・施策評価（自治体の進行管理の枠組み）をJichi Insight独自の達成判定へ変換しない。"
+    }
+  ],
+  "completion_boundary": "津市のPhase 15 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味し、所有者（大杉邑大、単独運用体制）が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが津市公式サイトの一次資料で検証した結果に基づく（所有者本人が一次資料を直接レビューしたものではない）。津市の計画体系（津市総合計画は、計画期間を特に定めない基本構想（将来像『笑顔があふれ幸せに暮らせる県都 津市 ～夢や希望、明るい未来が広がるまちへ～』、まちづくりの大綱6件を示す）と、第2次基本計画（2018年度〜2027年度。基本構想の大綱に対応する6つの目標と目標を横断する『将来像の実現に向けて』のもと、基本政策19件・全53施策で構成し、53施策の全件を列挙する）の2層で構成する。基本構想に固定期間がない点はそのまま保持する。進行管理は事務事業評価・施策評価であり、実施結果は『津市総合計画第2次基本計画事務事業評価・施策評価報告書』として年度ごとに公表される方式である）、成立したFY2026一般会計当初予算（124,187,000千円。議案第39号『令和8年度津市一般会計予算』として令和8年2月27日に提出され、所管別に各常任委員会への付託を経て、令和8年3月26日の本会議で原案可決され成立した。議決結果は市議会公式『議決結果一覧表（令和8年第1回津市議会定例会）』で確認し、本会議録でも原案のとおり可決が直接記録されている。公表精度が千円単位のため千円精度のまま記録し、円単位を合成していない）、FY2024一般会計決算の円単位総額（歳入123,307,646,176円・歳出122,840,878,576円、差引額466,767,600円が決算附属書『実質収支に関する調書』の歳入歳出差引額と一致することを確認）とその認定（認定第1号『令和6年度津市一般会計歳入歳出決算』が令和7年第3回定例会で令和7年9月25日に認定されたことを市議会公式『議決結果一覧表（令和7年第3回津市議会定例会）』で確認。実質収支額は同調書により175,738,909円であり、同調書が円単位で公表されているため円単位のまま記録する）を一次資料で確認した。先行計画（基本構想・前期基本計画／後期基本計画）から現行計画への移行と、策定中の次期津市総合計画は移行記録として分離して保持し、現行計画の内容を先行計画期間の実績へ遡及接続しない。FY2024は第2次基本計画の計画期間内の決算であり計画versionは同一であるが、決算総額と第2次基本計画の目標・基本政策・施策との総額レベルの対応付けは公式資料にないため、接続はnot_assessableとして保持する。53施策に基づく事務事業評価の対象事業の全件、施策ごとの指標の個別値、予算書・決算書の事項別明細書の款別合計との最終突合、監査委員の決算審査意見書の内容確認はdeferred depthである。Jichi Insight独自の政策達成度スコアや他都市とのランキングは作成しない。事務事業評価・施策評価（自治体の進行管理の枠組み）をJichi Insight独自の達成判定へ変換しない。"
+}

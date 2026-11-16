@@ -500,13 +500,25 @@ Declared v1 package:
 
 Deferred depth includes the individual projects in the annual policy project collections under the 30 policies, the per-target-state indicator values, cross-checks against the budget book and the settlement book (事項別明細書) at section level, direct confirmation of the vote from the March 2026 session's minutes (including the reading of the ditto-mark cells), direct confirmation of the real-balance statement itself, the Eighth Plan's framework itself, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Thirty-fourth completion — Tsu
+
+津市を34番目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 津市総合計画 — a two-layer structure of the Basic Concept (基本構想; the basic philosophy of town-building, showing the desired city image and the future image 『笑顔があふれ幸せに暮らせる県都 津市 ～夢や希望、明るい未来が広がるまちへ～』 with six town-building outlines, for which no fixed plan period is set — that absence of a fixed period is kept as published and is not collapsed into a fixed-period model) and the Second Basic Plan (第2次基本計画; FY2018–FY2027), which sets six goals corresponding to the Basic Concept's outlines plus the cross-cutting block 『将来像の実現に向けて』, holding 19 basic policies and 53 policies (all 53 are enumerated); progress is managed through project evaluation and policy evaluation (事務事業評価・施策評価), with results published annually as the 『津市総合計画第2次基本計画事務事業評価・施策評価報告書』 — the municipality's own progress-management framework. The transition from the preceding plans (基本構想・前期基本計画／後期基本計画) and the formulation of the next Tsu City Comprehensive Plan are kept only as version chronology records
+- FY2026 general-account initial budget: 124,187,000 thousand yen (enacted; bill No. 39 『令和8年度津市一般会計予算』, submitted by Mayor 前葉泰幸 on 2026-02-27, referred by jurisdiction to the standing committees and passed as proposed (原案可決) on 2026-03-26 per the council's official voting-result table for the first regular session of 2026, with the plenary minutes of 2026-03-26 also directly recording that it was passed as proposed by majority vote). The amount is published at sen-yen (thousand-yen) precision, so it is kept at that precision and yen-precision amounts are not synthesized
+- FY2024 general-account settlement at yen precision as published: revenue 123,307,646,176 yen / expenditure 122,840,878,576 yen (the balance of 466,767,600 yen matches the balance recorded in the settlement appendix's real-balance statement (実質収支に関する調書); the real balance is 175,738,909 yen per that same statement, kept at yen precision exactly as published because the statement itself is published in yen). The settlement certification bill, certification bill No. 1 (認定第1号) 『令和6年度津市一般会計歳入歳出決算』, was certified on 2025-09-25 at the third regular session of 2025 per the council's official voting-result table (it was not rejected). FY2024 is a settlement inside the Second Basic Plan period, so the plan version is the same as the current plan, but no official total-level mapping from settlement totals to the plan's goals, basic policies or policies exists, so the totals are not linked to the plan's policies and the linkage stays not_assessable
+
+Deferred depth includes the individual projects under the 53 policies in the project evaluation, the per-policy indicator values, cross-checks against the budget book and the settlement book (事項別明細書) at section level, the contents of the audit commissioners' settlement review opinion, the preceding plans' frameworks themselves and the next plan's framework, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 33 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市
+- Reviewed complete: 34 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市
 - Review in progress: 0
-- Pending record review: 34
+- Pending record review: 33
 - Blocked source inventory: 0
-- Next official code: 242012
+- Next official code: 252018
 
 ## Definition of Phase 15 completion
 
