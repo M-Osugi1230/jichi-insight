@@ -260,9 +260,9 @@ def test_himeji_candidate_progress_review_stays_staging() -> None:
 def test_himeji_promotion_is_reflected_in_review_queue() -> None:
     queue = load_json(QUEUE_PATH)
     assert queue["summary"]["target_count"] == 67
-    assert queue["summary"]["reviewed_complete_count"] == 59
-    assert queue["summary"]["pending_record_review_count"] == 8
-    assert queue["summary"]["next_official_code"] == "402036"
+    assert queue["summary"]["reviewed_complete_count"] == 60
+    assert queue["summary"]["pending_record_review_count"] == 7
+    assert queue["summary"]["next_official_code"] == "412015"
     items = {item["official_code"]: item for item in queue["execution_queue"]}
     assert items["282014"]["name_ja"] == "姫路市"
     assert items["282014"]["status"] == "reviewed_complete"

@@ -1,0 +1,61 @@
+{
+  "completed_at": "2026-11-17",
+  "completion_boundary": "久留米市のPhase 15 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味し、所有者（大杉邑大、単独運用体制）が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが久留米市公式サイトの一次資料で検証した結論に基づく（所有者本人が一次資料を直接レビューしたものではない）。久留米市の計画体系（久留米未来デザイン計画2035は、基本構想（2026年度〜2035年度・10年間）、基本計画（前期2026年度〜2030年度・後期2031年度〜2035年度）、事業計画（3年間、毎年度見直し）の3層で構成される。基本構想は将来都市像『優しさ 豊かさ 輝き あふれるまち』と3つのまちづくりの視点を掲げ、10の基本目標を設定し、前期基本計画はその下に施策分野と33の施策を体系化する。基本目標と施策分野レベルの体系は保持したが、前期基本計画の施策33件の全件列挙（施策ごとのめざす成果・施策指標を含む）は行わず、追加depthとして保持する。進行管理は、政策評価制度（基本計画全体と基本目標ごとの実現状況を点検するまちづくり評価と、具体的な事務事業の取組状況や成果を評価する事業評価）により行う。各層の期間を別period semanticsとして保持し、period_statusはPhase 14インベントリどおりverified_fixed_periodを保持する。現行計画に先立つ久留米市新総合計画（基本構想 平成13年度〜令和7年度、第4次基本計画 令和2年度〜令和7年度）からの移行は移行記録として分離して保持する）、成立したFY2026一般会計当初予算（通常予算）（167,760,000千円。第45号議案『令和8年度久留米市一般会計予算』の議決結果は、市議会公式『令和8年第2回市議会定例会（6月）における議案に対する賛否の状況』で「原案可決」と直接確認し、その文言のまま記録した。議決日は2026年6月26日。金額は『令和8年度久留米市一般会計予算書』（第45号議案、令和8年6月1日提出）の第1条と『令和8年度一般会計予算の概要』の予算規模表で確認した。令和8年度は市長選挙（2026年1月25日）が予定されていたため、当初は4月から6月までの暫定予算（第6号議案、70,670,000千円、2026年3月25日に原案可決）が編成されており、通常予算は暫定予算とは別に提出・成立したものであり、両者を混同しない。公表精度は千円単位のため、その精度（千円単位）のまま記録し、円単位を合成していない）、FY2024一般会計決算の円単位総額（歳入151,712,648,320円・歳出150,433,124,636円、歳入歳出差引額（形式収支）1,279,523,684円が『令和6年度一般会計決算書』の歳入決算書・歳出決算書の印字値と検算一致することを確認した）を一次資料で確認した。決算の認定である認定第1号は、令和7年第3回定例会で認定されたことを市議会公式『令和7年第3回市議会定例会（9月）における議案に対する賛否の状況』で確認し、認定の事実をそのまま記録した（議決日は2025年10月15日）。実質収支額は1,011,356千円（『令和6年度決算の概要』等の会計別決算表に千円単位で印字された公表値であり、千円単位のまま記録する）である。財政状況資料集・決算カード等の普通会計ベースの集計値は一般会計とは集計範囲が異なるため使用していない。FY2024は旧計画（久留米市新総合計画）の第4次基本計画期間内（令和2年度〜令和7年度）の決算で計画の版は現行計画と異なるため、決算総額と旧計画の施策体系との総額レベルの対応付けは公式資料に示されておらず、接続はnot_assessableのまま保持する。予算・決算の事項別明細書の款別合計との最終突合、決算書の実質収支に関する調書そのものの値との突合は未実施であり、残存事項として保持する。",
+  "completion_depth": "declared_review_package_v1",
+  "deferred_depth": [
+    {
+      "boundary": "前期基本計画の施策33件の全件列挙と、施策ごとのめざす成果・施策指標の個別進捗、事業計画登載事業との対応付けは追加depthとし、公式対応が確認できるまで昇格しない。基本目標・施策分野レベルの体系自体は候補に保持するが、施策・事業単位の対応付けは行わない。",
+      "id": "current-plan-granular-kpi-and-project-linkage",
+      "status": "deferred_not_required_for_v1_completion"
+    },
+    {
+      "boundary": "FY2026当初予算（通常予算）の金額（167,760,000千円）と議決結果の文言（原案可決・議決日2026年6月26日）は一次資料で確認し候補に反映している。FY2024決算の歳入・歳出・形式収支は決算書で確認し、実質収支は決算の概要等の千円単位表で確認し、認定議案の認定も議決結果資料で確認して候補に反映している。一方、予算・決算の事項別明細書の款別合計との最終突合、決算書の実質収支に関する調書そのものの値との突合は未実施のまま保持する。",
+      "id": "fiscal-detail-reconciliation",
+      "status": "deferred_not_required_for_v1_completion"
+    },
+    {
+      "boundary": "旧計画（久留米市新総合計画）の施策体系の全件列挙と旧計画期間の評価結果は本候補では保持しない。旧計画と現行計画（久留米未来デザイン計画2035）の期間と版の分離のみを保持し、一方を他方で上書きしない。",
+      "id": "plan-transition-version-depth",
+      "status": "deferred_not_required_for_v1_completion"
+    },
+    {
+      "boundary": "久留米市の総合計画・進行管理・財政等のステージングは政策効果の因果認定や他都市比較可能性を意味しない。進行管理（自治体の政策評価制度の仕組み）をJichi Insight独自の達成判定へ変換しない。",
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion"
+    }
+  ],
+  "id": "kurume-phase15-completion",
+  "name_ja": "久留米市",
+  "official_code": "402036",
+  "phase": 15,
+  "quality_gate": {
+    "budget_enactment_state_preserved": true,
+    "current_plan_period_reviewed": true,
+    "current_plan_policy_structure_reviewed": true,
+    "declared_package_schema_validated": true,
+    "fiscal_states_and_years_separate": true,
+    "implementation_plan_layer_reviewed": true,
+    "individual_implementation_items_not_overpromoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "no_independent_policy_achievement_promoted": true,
+    "official_source_lineage_preserved": true,
+    "regression_suite_required_before_merge": true,
+    "settlement_linkage_not_assessable_preserved": true
+  },
+  "review_package": {
+    "counts": {
+      "basic_goals": 10,
+      "basic_plan_measures": 33,
+      "fiscal_top_line_records": 3,
+      "promoted_implementation_item_actual_records": 0
+    },
+    "fiscal_evidence_path": "data/reviewed/kurume-city/evidence_packets.json",
+    "fiscal_records_path": "data/reviewed/kurume-city/fiscal_records.json",
+    "plan_review_path": "data/reviewed/kurume-city/plan_review.json",
+    "policy_structure_path": "data/catalog/kurume_current_policy_structure.json",
+    "progress_review_path": "data/catalog/kurume_current_progress_review_summary.json",
+    "source_catalog_path": "data/catalog/kurume_phase15_sources.json"
+  },
+  "status": "reviewed_complete"
+}

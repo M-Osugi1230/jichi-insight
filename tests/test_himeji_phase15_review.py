@@ -399,7 +399,7 @@ def test_himeji_and_previous_fortytwo_are_reviewed_complete_and_amagasaki_is_nex
     ):
         assert by_code[code]["status"] == "reviewed_complete"
 
-    assert queue["summary"]["reviewed_complete_count"] == 59
+    assert queue["summary"]["reviewed_complete_count"] == 60
     assert queue["summary"]["review_in_progress_count"] == 0
-    assert queue["summary"]["pending_record_review_count"] == 8
-    assert queue["summary"]["next_official_code"] == "402036"
+    assert queue["summary"]["pending_record_review_count"] == 7
+    assert queue["summary"]["next_official_code"] == "412015"

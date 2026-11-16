@@ -1,0 +1,49 @@
+{
+  "records": [
+    {
+      "availability": "published",
+      "category": "municipality_profile",
+      "confidence": "high",
+      "id": "kurume-city-home",
+      "indexed_at": "2026-11-17",
+      "municipality_key": "kurume-city",
+      "notes": "久留米市の公式自治体サイト。",
+      "organization": "久留米市",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "久留米市公式サイト",
+      "url": "https://www.city.kurume.fukuoka.jp/"
+    },
+    {
+      "availability": "published",
+      "category": "budget",
+      "confidence": "high",
+      "id": "kurume-budget-2026",
+      "indexed_at": "2026-11-17",
+      "municipality_key": "kurume-city",
+      "notes": "一般会計当初予算（通常予算）167,760,000千円（千円精度）のEvidence。市公式『令和8年度久留米市一般会計予算書』（第45号議案、令和8年6月1日提出）の第1条で一般会計の当初予算総額167,760,000千円を確認し、『令和8年度一般会計予算の概要』の予算規模表とも一致した。議決結果は市議会公式『令和8年第2回市議会定例会（6月）における議案に対する賛否の状況』で第45号議案の議決結果が「原案可決」であることを直接確認し、その文言のまま記録した（議決日は2026年6月26日）。令和8年度は市長選挙（2026年1月25日）が予定されていたため、当初は4月から6月までの暫定予算（第6号議案『令和8年度久留米市一般会計暫定予算』、70,670,000千円、2026年2月25日提出、2026年3月25日に原案可決）が編成されており、通常予算は暫定予算とは別に第45号議案として提出・成立したものである。千円単位の公表値のまま記録し、円単位を合成しない。補正後予算・執行・決算とは分離する。",
+      "organization": "久留米市",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "令和8年度予算",
+      "url": "https://www.city.kurume.fukuoka.jp/1100keikaku/2070zaisei/3010yosan/4230yosanr08/"
+    },
+    {
+      "availability": "published",
+      "category": "settlement",
+      "confidence": "high",
+      "id": "kurume-settlement-2024",
+      "indexed_at": "2026-11-17",
+      "municipality_key": "kurume-city",
+      "notes": "一般会計歳入151,712,648,320円・歳出150,433,124,636円（いずれも円単位）を含む公式決算資料の入口。一般会計の決算額は『令和6年度一般会計決算書』の歳入決算書・歳出決算書で確認し、歳入歳出差引額（形式収支）1,279,523,684円が検算一致した。実質収支は1,011,356千円（『令和6年度決算の概要』および『令和6年度決算のポイント』の会計別決算表に千円単位で印字された公表値のまま記録し、円単位を合成しない）。決算の認定は認定第1号『令和6年度久留米市一般会計決算の認定について』として令和7年第3回定例会で認定された（市議会公式『令和7年第3回市議会定例会（9月）における議案に対する賛否の状況』で確認、議決日は2025年10月15日）。財政状況資料集・決算カード等の普通会計ベースの集計値は一般会計の値とは集計範囲が別のため使用していない。決算事項別明細書の款別合計との最終突合と、決算書の実質収支に関する調書そのものの値との突合は未実施である。",
+      "organization": "久留米市",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "令和６年度一般会計決算",
+      "url": "https://www.city.kurume.fukuoka.jp/1100keikaku/2070zaisei/3020kessan/4210kessanr06/2025-0909-1424-6.html"
+    }
+  ],
+  "scope": "phase15-core-capital-review",
+  "updated_at": "2026-11-17",
+  "version": "0.1.0"
+}

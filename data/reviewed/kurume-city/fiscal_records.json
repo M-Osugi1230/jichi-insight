@@ -1,0 +1,65 @@
+[
+  {
+    "account_type": "general",
+    "amount_yen": 167760000000,
+    "confidence": "high",
+    "fiscal_year": 2026,
+    "id": "jp-local-402036-fiscal-2026-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算総額",
+    "municipality_id": "jp-local-402036",
+    "note": "久留米市の令和8年度一般会計当初予算（通常予算）総額167,760,000千円。『令和8年度久留米市一般会計予算書』（第45号議案、令和8年6月1日提出）の第1条で歳入歳出予算の総額167,760,000千円を直接確認し、『令和8年度一般会計予算の概要』の予算規模表（一般会計 令和8年度当初予算額167,760,000千円、令和7年度当初予算額159,300,000千円、5.3%増）とも一致する。議決結果は市議会公式『令和8年第2回市議会定例会（6月）における議案に対する賛否の状況』で第45号議案「原案可決」と直接確認し、その文言のまま記録する（議決日は2026年6月26日）。令和8年度は市長選挙（2026年1月25日）が予定されていたため、当初は4月から6月までの暫定予算（第6号議案『令和8年度久留米市一般会計暫定予算』、70,670,000千円、2026年2月25日提出、2026年3月25日に原案可決）が編成されており、通常予算は暫定予算とは別に第45号議案として提出・成立したものである。公表精度は千円単位であり、その精度のまま記録し円単位を合成していない。補正予算や決算とは別stateで扱う。",
+    "period_end": "2027-03-31",
+    "period_start": "2026-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "kurume-budget-2026"
+    ],
+    "stage": "initial_budget",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 151712648320,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-402036-fiscal-2024-total-revenue",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入額",
+    "municipality_id": "jp-local-402036",
+    "note": "久留米市『令和6年度一般会計決算書（歳入決算書）』の歳入合計に円単位で印字された収入済額151,712,648,320円。当該決算の認定議案は認定第1号『令和6年度久留米市一般会計決算の認定について』として令和7年第3回定例会に提出され、市議会公式『令和7年第3回市議会定例会（9月）における議案に対する賛否の状況』で「認定」と直接確認した（議決日は2025年10月15日）。金額は決算書に円単位で印字された値をそのまま記録する。普通会計ベースの集計値（財政状況資料集・決算カード等）は一般会計とは集計範囲が異なるため使用していない。FY2024は久留米市新総合計画の第4次基本計画期間内（令和2年度〜令和7年度）の決算であり、久留米未来デザイン計画2035の期間開始前の決算である。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "kurume-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 150433124636,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-402036-fiscal-2024-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出額",
+    "municipality_id": "jp-local-402036",
+    "note": "同じく決算書（歳出決算書）の歳出合計に円単位で印字された支出済額150,433,124,636円。歳入決算額151,712,648,320円との差引額（形式収支）は1,279,523,684円で検算一致する。実質収支は1,011,356千円であり、『令和6年度決算の概要』および『令和6年度決算のポイント』の会計別決算表に千円単位で印字された実質収支の値を千円単位の公表値のまま記録する（形式収支1,279,523千円から翌年度へ繰り越すべき財源268,167千円を差し引いた再差引であり、円単位の形式収支とは単位精度が異なる）。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "kurume-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  }
+]
