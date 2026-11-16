@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-16",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "hirakata-city-home",
+      "municipality_key": "hirakata-city",
+      "organization": "枚方市",
+      "category": "municipality_profile",
+      "title": "枚方市公式サイト",
+      "url": "https://www.city.hirakata.osaka.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "枚方市の公式自治体サイト。"
+    },
+    {
+      "id": "hirakata-budget-2026",
+      "municipality_key": "hirakata-city",
+      "organization": "枚方市",
+      "category": "budget",
+      "title": "令和8年度予算",
+      "url": "https://www.city.hirakata.osaka.jp/0000053350.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算176,300,000千円のEvidence。議案第84号『令和8年度大阪府枚方市一般会計予算』として令和8年3月定例月議会の第1日（令和8年2月24日）に予算特別委員会へ設置・付託され、令和8年3月27日に原案可決された成立予算（枚方市議会公式『付議事件議決結果一覧』で確認）。金額は千円単位の公表値のまま記録し、円単位を合成しない。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "hirakata-settlement-2024",
+      "municipality_key": "hirakata-city",
+      "organization": "枚方市",
+      "category": "settlement",
+      "title": "令和6年度決算",
+      "url": "https://www.city.hirakata.osaka.jp/0000052610.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入167,040,111,596円・歳出164,593,615,013円を円単位で含む公式決算資料（令和6年度歳入歳出決算書）。実質収支額は公式『令和6年度決算概要説明書』の会計別収支表により1,938,746,472円（円単位の公表のため円単位のまま記録。決算書本体の実質収支に関する調書そのものの直接確認は未実施）。決算の認定議案である認定第1号は令和7年10月17日に認定された。決算書（歳入歳出決算事項別明細書）の款別合計との突合と監査委員の決算審査意見書の内容確認は未実施。"
+    }
+  ]
+}

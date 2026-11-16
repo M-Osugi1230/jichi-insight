@@ -266,9 +266,9 @@ def test_kanazawa_promotion_is_reflected_in_canonical_queue():
     )
     assert item["status"] == "reviewed_complete"
     assert item["completion_path"] == "data/catalog/kanazawa_phase15_completion.json"
-    assert queue["summary"]["reviewed_complete_count"] == 38
-    assert queue["summary"]["pending_record_review_count"] == 29
-    assert queue["summary"]["next_official_code"] == "272108"
+    assert queue["summary"]["reviewed_complete_count"] == 39
+    assert queue["summary"]["pending_record_review_count"] == 28
+    assert queue["summary"]["next_official_code"] == "272124"
 
 
 def test_public_web_does_not_import_candidate_staging():

@@ -1,0 +1,61 @@
+{
+  "id": "hirakata-phase15-completion",
+  "phase": 15,
+  "status": "reviewed_complete",
+  "official_code": "272108",
+  "name_ja": "枚方市",
+  "completed_at": "2026-11-16",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "source_catalog_path": "data/catalog/hirakata_phase15_sources.json",
+    "plan_review_path": "data/reviewed/hirakata-city/plan_review.json",
+    "policy_structure_path": "data/catalog/hirakata_current_policy_structure.json",
+    "progress_review_path": "data/catalog/hirakata_current_progress_review_summary.json",
+    "fiscal_records_path": "data/reviewed/hirakata-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/hirakata-city/evidence_packets.json",
+    "counts": {
+      "basic_goals": 32,
+      "basic_plan_measures": 79,
+      "promoted_implementation_item_actual_records": 0,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "current_plan_period_reviewed": true,
+    "current_plan_policy_structure_reviewed": true,
+    "implementation_plan_layer_reviewed": true,
+    "fiscal_states_and_years_separate": true,
+    "budget_enactment_state_preserved": true,
+    "settlement_linkage_not_assessable_preserved": true,
+    "individual_implementation_items_not_overpromoted": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "current-plan-granular-kpi-and-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "32の施策目標等・79施策に基づく具体的な取組の全件と、施策ごとの指標（主観的指標・客観的指標）の個別値は追加depthとし、公式対応が確認できるまで昇格しない。実行計画は予算編成の時期に改訂される各版を分離して保持する。"
+    },
+    {
+      "id": "settlement-values-and-budget-amendment-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "補正予算による変更経過、補正予算・決算と個別事業費の対応関係は追加エビデンス確認前は記録・結合しない。認定第1号の議決結果（令和7年10月17日・認定）と決算総額（円単位）は一次資料で確認済みであり、財政記録・証拠パケット側に反映している。実質収支は決算概要説明書の円単位の記載（1,938,746,472円）で確認し、その精度のまま保持する。議決結果はいずれも市議会公式の議決結果資料（付議事件議決結果一覧）で直接確認した。"
+    },
+    {
+      "id": "plan-transition-version-depth",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "次期総合計画（2028年度始期）の施策体系そのものは策定中のため本候補では記録しない。第5次総合計画から次期総合計画への移行の経過は版の履歴として別途記録し、現行計画の体系を次期計画期間の実績へ前倒し接続しない。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "枚方市総合計画・財政等のステージングは政策効果の因果認定や他都市比較可能性を意味しない。実行計画の検証・評価（自治体の進行管理の枠組み）をJichi Insight独自の達成判定へ変換しない。"
+    }
+  ],
+  "completion_boundary": "枚方市のPhase 15 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味し、所有者（大杉邑大、単独運用体制）が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが枚方市公式サイトの一次資料で検証した結論に基づく（所有者本人が一次資料を直接レビューしたものではない）。枚方市の計画体系（第5次枚方市総合計画は、基本構想・基本計画・実行計画の3層で構成する。基本構想は平成28（2016）年度を計画始期として計画期間を設定せず、めざすまちの姿は『持続的に発展し、一人ひとりが輝くまち 枚方』であり、5つの基本目標を定める。基本計画は平成28（2016）年度から令和9（2027）年度までの12年間において重点的に進める施策を示す。基本計画・第3期実行計画の施策体系は、5つの基本目標のもと、28の施策目標と4つの計画推進（施策目標等全32件）のもとに全79施策を位置づけ、全件を列挙する。進行管理は実行計画を軸とし、具体的な取り組みの実績や指標、市民満足度を活用して毎年度検証・評価（内部評価と施策評価員による外部評価）を行い、第3期実行計画は予算編成の時期に合わせて改訂するという自治体の進行管理の枠組みである）、成立したFY2026一般会計当初予算（176,300,000千円。議案第84号『令和8年度大阪府枚方市一般会計予算』として令和8年3月定例月議会の第1日（令和8年2月24日）に予算特別委員会へ設置・付託され、第5日（令和8年3月27日）に原案可決され成立した。議決結果は枚方市議会公式『付議事件議決結果一覧』で文言・議決日とも直接確認した。公表精度が千円単位のため千円精度のまま記録し、円単位を合成していない）、FY2024一般会計決算の円単位総額（歳入167,040,111,596円・歳出164,593,615,013円、差引額2,446,496,583円が決算書に記載された歳入歳出差引残額と一致することを確認）を一次資料で確認した。決算の認定議案である認定第1号『令和6年度大阪府枚方市一般会計歳入歳出決算の認定について』は令和7年9月定例月議会の第1日（令和7年9月5日）に決算特別委員会へ設置・付託され、第7日（令和7年10月17日）に認定されたことを枚方市議会公式『付議事件議決結果一覧』で確認し、認定の事実をそのまま記録した。実質収支額は公式『令和6年度決算概要説明書』の会計別収支表により1,938,746,472円であり、同表が円単位で公表しているため円単位のまま記録する（決算書本体の実質収支に関する調書のページはフォント未埋め込みのため判読できず、調書そのものの直接確認は未実施のまま保持する）。第5次総合計画から次期総合計画（令和10（2028）年度始期・策定中）への移行は移行記録として分離して保持し、現行計画の内容を次期計画期間の実績へ前倒し接続しない。FY2024は基本計画の計画期間内であり第3期実行計画の初年度の決算で計画versionは同一であるが、決算総額と28の施策目標・79施策との総額レベルの対応付けは公式資料にないため、接続はnot_assessableとして保持する。32の施策目標等・79施策に基づく具体的な取組の全件、施策ごとの指標の個別値、予算・決算の事項別明細書の款別合計との最終突合、監査委員の決算審査意見書の内容確認、実質収支に関する調書そのものの直接確認はdeferred depthである。Jichi Insight独自の政策達成度スコアや他都市とのランキングは作成しない。実行計画の検証・評価（自治体の進行管理の枠組み）をJichi Insight独自の達成判定へ変換しない。"
+}

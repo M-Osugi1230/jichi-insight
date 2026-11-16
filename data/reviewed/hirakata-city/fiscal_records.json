@@ -1,0 +1,65 @@
+[
+  {
+    "account_type": "general",
+    "amount_yen": 176300000000,
+    "confidence": "high",
+    "fiscal_year": 2026,
+    "id": "jp-local-272108-fiscal-2026-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算（可決）",
+    "municipality_id": "jp-local-272108",
+    "note": "枚方市公式『令和8年度当初予算』ページの会計別予算額表に示された一般会計当初予算額176,300,000千円（歳入歳出それぞれ同額）。公表精度は千円単位であり、円単位の内訳は公表されていないため千円精度のまま記録する。議案第84号『令和8年度大阪府枚方市一般会計予算』として令和8年3月定例月議会の第1日（令和8年2月24日）に予算特別委員会へ設置・付託され、第5日（令和8年3月27日）に原案可決され成立した当初予算であることを枚方市議会公式『付議事件議決結果一覧』で確認した（議決結果の文言・議決日とも同議決結果資料で直接確認したものであり、日程資料からの推定ではない）。補正予算や決算とは別stateで扱う。",
+    "period_end": "2027-03-31",
+    "period_start": "2026-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "hirakata-budget-2026"
+    ],
+    "stage": "initial_budget",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 167040111596,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-272108-fiscal-2024-total-revenue",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入額",
+    "municipality_id": "jp-local-272108",
+    "note": "枚方市公式『令和6年度決算』ページ掲載の公式『令和6年度歳入歳出決算書』（一般会計・各特別会計。枚方市発行）に記載された歳入決算額167,040,111,596円。同ページ掲載の公式『令和6年度決算概要説明書』の会計別収支表の集計（歳入決算額167,040,111,596円）とも一致する。歳出決算額164,593,615,013円との差引額2,446,496,583円は、同決算書に記載された歳入歳出差引残額2,446,496,583円と一致する（予算現額は歳入・歳出とも180,011,391,267円）。実質収支額は決算概要説明書の会計別収支表により1,938,746,472円と確認した（差引額2,446,496,583円から翌年度へ繰越すべき財源507,750,111円を控除した額。同表は円単位で公表しているため円単位のまま記録する。なお決算書本体の実質収支に関する調書のページはフォント未埋め込みのため判読できず、調書そのものの直接確認は未実施であり、open questionに残す）。令和6年度決算の認定議案は認定第1号『令和6年度大阪府枚方市一般会計歳入歳出決算の認定について』であり、令和7年9月定例月議会の第1日（令和7年9月5日）に決算特別委員会へ設置・付託され、第7日（令和7年10月17日）に認定された（枚方市議会公式『付議事件議決結果一覧』で直接確認）。FY2024は第5次枚方市総合計画の基本計画（2016年度～2027年度）の計画期間内であり、第3期実行計画（2024年度～2027年度）の初年度の決算である。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "hirakata-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 164593615013,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-272108-fiscal-2024-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出額",
+    "municipality_id": "jp-local-272108",
+    "note": "枚方市公式『令和6年度決算』ページ掲載の公式『令和6年度歳入歳出決算書』に記載された歳出決算額164,593,615,013円。決算概要説明書の会計別収支表の集計とも一致する。歳入決算額167,040,111,596円との差引額2,446,496,583円は、同決算書に記載された歳入歳出差引残額と一致する。令和6年度決算の認定議案である認定第1号は令和7年10月17日に認定された（枚方市議会公式『付議事件議決結果一覧』で確認）。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "hirakata-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  }
+]
