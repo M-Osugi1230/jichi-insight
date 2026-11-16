@@ -1,0 +1,63 @@
+{
+  "id": "phase15-matsumoto-plan-review",
+  "official_code": "202029",
+  "name_ja": "松本市",
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-16",
+  "next_action": "Promote the outcome-indicator (KPI) actuals of the 47 basic measures and the implementation plan's individual projects only when official sources with stable record-level locators have been reviewed; cross-check the budget explanatory materials and the settlement detail book (事項別明細書) at section level; record the eleventh basic plan's framework only as a separate version if it is ever reviewed, and never retroactively connect the twelfth basic plan's measures to the eleventh plan period; keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "quality_boundary": "This package reviews the current plan identity and period (Matsumoto City Basic Concept 2030, FY2021-FY2030, with the twelfth basic plan as its latter plan for FY2026-FY2030 incorporating the third Matsumoto regional-revitalization comprehensive strategy, in a three-layer basic-concept / basic-plan / implementation-plan structure; the catchphrase is 『豊かさと幸せに 挑み続ける 三ガク都』 and the concept sets five action goals), the plan's structure of four purposes, three policy directions, two priority strategies and four emphasized viewpoints over seven fields holding 47 basic measures (all 47 measures are enumerated), the progress-governance layer (outcome indicators (KPI) set for each basic measure for target and progress management, with administrative-operation measures defined separately in the administrative action guidelines), the enacted FY2026 initial budget at the published sen-yen (thousand-yen) precision (bill No. 43, voted on at the 2026-03-16 plenary; the minutes-body wording 原案可決 was not directly confirmed and is not asserted; yen-precision amounts are not synthesized), and the FY2024 settlement at yen precision as published, without collapsing proposed, enacted, supplementary, or settlement states. FY2024 is a settlement of the eleventh basic plan period (FY2021-FY2025) under the same Basic Concept 2030, a different plan version from the twelfth basic plan, so its totals are not linked to the twelfth plan's measures or indicators. The eleventh-to-twelfth transition is kept only as a version chronology record.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "市公式の総合計画ページ（現行計画の公式入口。Phase 14インベントリで確認）と、公式『松本市基本構想2030』本編および公式『第12次基本計画』本編の『計画の位置付け』『計画の期間』（第12次基本計画は基本構想2030の後期計画であり、期間は令和8（2026）年度を初年度とし令和12（2030）年度までの5年間であること、第3期松本版地方創生総合戦略を包含することを明記）で直接確認",
+      "evidence_role": "current_plan_identity",
+      "id": "matsumoto-current-plan-period",
+      "review_note": "計画期間・構成・キャッチフレーズ・行動目標を公式資料で確認したレビュー済みレコード。",
+      "source_url": "https://www.city.matsumoto.nagano.jp/soshiki/214/195785.html",
+      "statement": "松本市の総合計画は基本構想・基本計画・実施計画の3層で構成する。松本市基本構想2030は取組期間を2021年度から2030年度までとし、基本理念として三ガク都（岳・楽・学）に象徴される松本らしさを「シンカ」（進化・深化）させることを掲げ、キャッチフレーズは『豊かさと幸せに 挑み続ける 三ガク都』であり、市民と行政が共に取り組む5つの行動目標（みとめる／まなぶ／いかす／つなぐ／いどむ）を定める。第12次基本計画は基本構想2030の後期計画で、期間は令和8（2026）年度から令和12（2030）年度までの5年間であり、第3期松本版地方創生総合戦略を包含する。前期計画は第11次基本計画（2021年度〜2025年度）である。Phase 14インベントリの記録（松本市基本構想2030・第12次基本計画 2026年度〜2030年度）とも一致する。",
+      "title": "松本市基本構想2030・第12次基本計画の計画期間と構成",
+      "value": "2026年度～2030年度"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "公式『第12次基本計画』本編の『第12次基本計画の目的』『政策の方向性』『重点戦略』『重視する視点』および分野別編の基本施策（7分野47施策を本編で直接確認し、分野ごとの件数7・7・7・4・12・5・5の合計47が本編の『7分野47施策』の記載と一致）",
+      "evidence_role": "policy_structure",
+      "id": "matsumoto-current-policy-structure",
+      "review_note": "公式資料が明示した目的・方向性・戦略・視点の層構造と47施策を一次資料で確認したレビュー済みレコード。47施策の全件はpolicy_structureに列挙する（各施策の成果指標（KPI）の実績値はdeferred depthとして保持）。",
+      "source_url": "https://www.city.matsumoto.nagano.jp/soshiki/214/195785.html",
+      "statement": "第12次基本計画は、4つの目的（『一人ひとりが豊かさと幸せを実感できるまちをつくる』『松本の地域特性を活かした循環型社会を実現する』『三ガク都に象徴される松本らしさを「シンカ」させる』『市民の具体的な行動（アクション）を支える』）のもと、3つの政策の方向性（まちの土台になる「安全・安心」のシンカ／まちの主役になる「ひと・地域」のシンカ／まちの豊かさになる「価値・魅力」のシンカ）、2つの重点戦略（ゼロカーボン／DX・デジタル化）、4つの重視する視点（若者と女性の挑戦と定着を支える社会基盤の構築／学都松本にふさわしい学び環境の充実／暮らしの質を高める都市機能の強化／新たな価値を創出する多様な産業の振興）を掲げ、基本施策は7分野47施策で構成する。47施策の全件はpolicy_structureに列挙する。",
+      "title": "第12次基本計画の目的・政策の方向性・重点戦略・重視する視点と7分野47施策の体系"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "公式『第12次基本計画』本編の『計画の推進に当たって』（基本施策には成果指標（KPI）を設定し、計画の目標管理、進行管理を適切に行うこと、行政運営に関する施策は別途『行政行動指針』で定め、計画を推進、下支えすることを明記）で直接確認",
+      "evidence_role": "progress_governance",
+      "id": "matsumoto-progress-governance-framework",
+      "review_note": "進行管理の枠組み（成果指標（KPI）による目標管理・進行管理と行政行動指針）を公式資料で直接確認したレビュー済みレコード。個別指標の実績そのものは本パッケージでは扱わない。",
+      "source_url": "https://www.city.matsumoto.nagano.jp/soshiki/214/195785.html",
+      "statement": "第12次基本計画の推進に当たっては、基本施策に成果指標（KPI）を設定し、計画の目標管理、進行管理を適切に行う。基本構想2030に掲げる5つの行動目標をエンジンとして基本施策を推進し、行政運営に関する施策は別途『行政行動指針』で定めて計画を推進、下支えする。この進行管理は自治体による自己管理の枠組みであり、Jichi Insight独自の達成判定へ変換しない。",
+      "title": "基本施策の成果指標（KPI）による目標管理・進行管理と行政行動指針"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "公式『第12次基本計画』本編の『計画の位置付け』（基本構想2030の後期計画であること、前期計画から切れ目なく政策を推進する旨を明記）および市公式の総合計画ページで確認",
+      "evidence_role": "plan_transition",
+      "id": "matsumoto-plan-transition",
+      "review_note": "計画移行の経過と版の分離のみを公式資料で確認したレビュー済みレコード。第11次基本計画の枠組みそのものは本パッケージでは記録しない。",
+      "source_url": "https://www.city.matsumoto.nagano.jp/soshiki/214/195785.html",
+      "statement": "松本市基本構想2030（2021年度〜2030年度）は継続し、その前期計画である第11次基本計画（2021年度〜2025年度）から、後期計画である第12次基本計画（2026年度〜2030年度）へ移行した。第12次基本計画は7分野を継承しつつ基本施策を47施策に再編した。各計画はversionを分けて保持し、第12次基本計画の施策体系を第11次基本計画の期間の実績へ遡及接続しない。FY2024決算は第11次基本計画期間の決算として保持する。",
+      "title": "第11次基本計画から第12次基本計画への移行（計画移行）"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "市公式『決算』ページ（決算総額の確認先の公式入口。Phase 14インベントリで確認）。計画の公式入口は市公式の総合計画ページ",
+      "evidence_role": "annual_progress",
+      "fiscal_year": 2024,
+      "id": "matsumoto-fy2024-settlement-linkage",
+      "review_note": "決算が前期計画期間内のものであることと、個別事業の接続を推測で記録しないことは別の判断であることを示す明示的な未判定レコード。決算と事業の対応付けは人間レビュー工程の作業。",
+      "source_url": "https://www.city.matsumoto.nagano.jp/site/matsumoto-zaisei/list267.html",
+      "statement": "FY2024決算値と第12次基本計画の基本施策・成果指標との接続は未判定（not_assessable）。FY2024は松本市基本構想2030の前期計画である第11次基本計画（2021年度〜2025年度）の4年目の決算であり、第12次基本計画（2026年度開始）とは計画versionが異なる。決算総額は款別の集計値であり、個別施策・事業との対応付けは総額レベルでは行われていない。第11次基本計画の枠組みそのものは本候補では記録しない。FY2024決算の精密値そのものは決算審査意見書で確認済みであるが、決算と事業の対応付けは人間レビュー工程の作業とする。",
+      "title": "令和6年度決算と第12次基本計画の基本施策・成果指標の接続"
+    }
+  ]
+}

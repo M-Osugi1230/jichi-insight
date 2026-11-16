@@ -1,0 +1,46 @@
+{
+  "id": "matsumoto-phase15-sources",
+  "phase": 15,
+  "official_code": "202029",
+  "name_ja": "松本市",
+  "reviewed_at": "2026-11-16",
+  "quality_boundary": "Current plan identity kept as published (Matsumoto City Basic Concept 2030, FY2021-FY2030, with the twelfth basic plan as its latter plan for FY2026-FY2030 incorporating the third Matsumoto regional-revitalization comprehensive strategy, in a three-layer basic-concept / basic-plan / implementation-plan structure; the catchphrase is 『豊かさと幸せに 挑み続ける 三ガク都』 and seven fields hold 47 basic measures, all enumerated; the eleventh basic plan is kept only as a separate version), progress governance (outcome indicators (KPI) set for each basic measure for target and progress management, with administrative-operation measures defined separately in the administrative action guidelines), budget enactment evidenced by the February 2026 regular session minutes' agenda (bill No. 43 voted on 2026-03-16) and the enacted base amount in the official June 2026 supplementary-budget overview, with the amount kept at the published sen-yen precision and never expanded into synthetic yen (the minutes-body wording 原案可決 was not directly confirmed and is not asserted), and settlement totals kept at the published yen precision from the audit commission's settlement-review opinion (certified as bill No. 18 on 2025-11-04 after continued review during the recess) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "sources": [
+    {
+      "id": "matsumoto-twelfth-plan",
+      "title": "総合計画（基本構想2030・第12次基本計画）",
+      "official_url": "https://www.city.matsumoto.nagano.jp/soshiki/214/195785.html",
+      "format": "html",
+      "evidence_role": "comprehensive_plan",
+      "evidence_location": "松本市公式Webサイト『総合計画（基本構想2030・第12次基本計画）』ページは現行計画の公式入口（Phase 14インベントリで確認）。計画の構成・期間は同ページからリンクされる公式『松本市基本構想2030』本編と公式『第12次基本計画』本編の『計画の位置付け』『計画の期間』で、分野・基本施策の体系は同本編の分野別編（7分野47施策）で直接確認",
+      "use_boundary": "現行計画は松本市基本構想2030・第12次基本計画（第12次基本計画2026年度〜2030年度）として保持し、第11次基本計画（2021年度〜2025年度）の内容を混在させない"
+    },
+    {
+      "id": "matsumoto-implementation-design",
+      "title": "第12次基本計画 実施計画",
+      "official_url": "https://www.city.matsumoto.nagano.jp/soshiki/214/195785.html",
+      "format": "html",
+      "evidence_role": "implementation_plan",
+      "evidence_location": "松本市公式Webサイト『総合計画（基本構想2030・第12次基本計画）』ページは実施計画の公式入口（Phase 14インベントリで確認）。総合計画が基本構想・基本計画・実施計画の3層で構成すること、実施計画が基本施策に基づく具体的な事務事業の実行計画であることを同ページおよび計画本編で確認",
+      "use_boundary": "実施計画の個別事業identityと年度実績は本候補では記録せず、追加depthとして保持する。実施計画の版を分離して保持する"
+    },
+    {
+      "id": "matsumoto-budget-2026",
+      "title": "令和8年度当初予算の概要",
+      "official_url": "https://www.city.matsumoto.nagano.jp/site/matsumoto-zaisei/194629.html",
+      "format": "html",
+      "evidence_role": "budget",
+      "evidence_location": "松本市公式Webサイト『令和8年度予算』ページはFY2026当初予算の公式入口（Phase 14インベントリで確認）。同ページ掲載の公式『令和8年度当初予算の概要』で一般会計114,980,000千円を確認し、議案番号は庁議資料『令和8年2月定例会提出議案総括表』の議案第43号、議決日は令和8年2月定例会会議録第5号（令和8年3月16日）の議事日程、成立は公式『令和8年度6月補正予算の概要』の既定額で確認",
+      "use_boundary": "FY2026当初予算は議決・成立済みの額として扱い、proposal/enacted/supplementaryをPhase 15でstage分離する。金額は千円単位の公表値であり、円単位を合成しない"
+    },
+    {
+      "id": "matsumoto-settlement",
+      "title": "決算",
+      "official_url": "https://www.city.matsumoto.nagano.jp/site/matsumoto-zaisei/list267.html",
+      "format": "html",
+      "evidence_role": "settlement",
+      "evidence_location": "松本市公式Webサイト『決算』ページはFY2024決算の公式入口（Phase 14インベントリで確認）。松本市監査委員『令和6年度松本市一般会計・特別会計歳入歳出決算及び基金運用状況審査意見書』（松監事第24号・令和7年8月20日）の附表に、一般会計の歳入決算額116,331,387,915円・歳出決算額113,406,566,809円・歳入歳出差引額2,924,821,106円を記載。認定は市議会公式会議録で議案第18号が令和7年11月4日の令和7年第3回臨時会で認定と確認",
+      "use_boundary": "FY2024決算認定の公式入口。FY2024決算は第11次基本計画期間内の財政Evidenceとして保持し、決算総額を第12次基本計画の基本施策・指標の実績へ直接流用しない"
+    }
+  ]
+}
