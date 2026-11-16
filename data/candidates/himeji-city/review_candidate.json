@@ -1,0 +1,370 @@
+{
+ "candidate_id": "himeji-phase15-review-candidate",
+ "candidate_package": {
+  "evidence_packets": [
+   {
+    "claims": [
+     {
+      "decision": "needs_review",
+      "field": "amount_yen",
+      "location_note": "姫路市公式『令和8年度 予算の概要』ページで一般会計2,618億円を確認し、同ページから公開される一般会計予算総括表（歳出）PDFの合計261,800,000千円で千円精度の金額を確認した。議案番号・議決結果は市公式『令和8年第1回定例会 議案及び審議結果』で確認し、議案第1号『令和8年度姫路市一般会計予算』の結果欄の文言は「可決」であった。議決日は議会報ひめじNo.252が示す会期（2026年2月17日から3月25日まで）と最終日の表決から特定した",
+      "review_note": "成立した当初予算の額を市の公式予算資料2件で相互確認したステージング。議案番号・議決結果の文言は市公式の議案及び審議結果で直接確認した。議決日は会期と最終日の表決から特定したもので、会議録による最終確認は未実施のまま保持する。人間による確認待ちステージング。",
+      "source_ids": [
+       "himeji-budget-2026"
+      ],
+      "statement": "令和8年度一般会計当初予算総額は261,800,000千円である。金額は姫路市公式『令和8年度 予算の概要』ページの一般会計2,618億円と、一般会計予算総括表（歳出）の合計261,800,000千円で確認した。公表精度は千円単位である。当初予算は議案第1号『令和8年度姫路市一般会計予算』として令和8年第1回定例会で可決された（市公式の議案及び審議結果の結果欄の文言は「可決」）。議決日2026年3月25日は会期（2026年2月17日から3月25日まで）と最終日の表決から特定したもので、会議録による最終確認は未実施である。"
+     }
+    ],
+    "id": "evidence-himeji-city-2026-total-expenditure",
+    "open_questions": [
+     "令和8年第1回定例会の会議録による議決日（2026年3月25日）の最終確認。",
+     "予算書（歳入歳出予算事項別明細書）の款別合計との最終突合。"
+    ],
+    "review_status": "needs_review",
+    "subject_id": "jp-local-282014-fiscal-2026-total-expenditure",
+    "subject_type": "fiscal_record"
+   },
+   {
+    "claims": [
+     {
+      "decision": "needs_review",
+      "field": "amount_yen",
+      "location_note": "姫路市公式『令和6年度決算の概要』ページの一般会計の節で、歳入2,544億3,837万1千円（254,438,371千円）を直接確認した。認定の経過と結果は市公式『令和7年第3回定例会 議案及び審議結果』で確認し、議案第90号『令和6年度姫路市一般会計決算認定について』の結果欄は「認定」であった。議決日は同定例会の議員別賛否一覧PDFの発行日付（20251003）と会期最終日の表決から特定した",
+      "review_note": "市の公式決算概要の千円精度の表記で歳入総額を確認したステージング。認定の成否については市公式の議案及び審議結果で直接確認し、議案第90号が認定されたことを記録する。議決日は賛否一覧PDFの日付等から特定したもので、会議録による最終確認は未実施のまま保持する。人間による確認待ちステージング。",
+      "source_ids": [
+       "himeji-settlement-2024"
+      ],
+      "statement": "令和6年度一般会計決算の歳入総額は254,438,371千円である（姫路市公式『令和6年度決算の概要』の一般会計の歳入2,544億3,837万1千円による。公表精度は千円単位であり、円単位の総額は同資料に印字されていないため合成しない）。当該決算の認定議案は議案第90号『令和6年度姫路市一般会計決算認定について』であり、令和7年第3回定例会で認定された（市公式の議案及び審議結果で確認）。議決日2025年10月3日は議員別賛否一覧PDFの発行日付と会期最終日の表決から特定したもので、会議録による最終確認は未実施である。"
+     }
+    ],
+    "id": "evidence-himeji-city-2024-total-revenue",
+    "open_questions": [
+     "令和7年第3回定例会の会議録による認定の議決日（2025年10月3日）の最終確認。",
+     "決算書（歳入歳出決算事項別明細書）の款別合計との最終突合（あわせて円単位の決算総額が決算書そのものに印字されているかを確認する）。",
+     "監査委員の決算審査意見書の内容（個別の指摘事項等）の精査。"
+    ],
+    "review_status": "needs_review",
+    "subject_id": "jp-local-282014-fiscal-2024-total-revenue",
+    "subject_type": "fiscal_record"
+   },
+   {
+    "claims": [
+     {
+      "decision": "needs_review",
+      "field": "amount_yen",
+      "location_note": "歳入総額と同じく、姫路市公式『令和6年度決算の概要』の一般会計の節で歳出2,454億7,636万3千円（245,476,363千円）を確認した。形式収支89億6,200万8千円、翌年度への繰越財源31億6,432万2千円、実質収支57億9,768万6千円も同節の表記で確認した",
+      "review_note": "市の公式決算概要の千円精度の表記で歳出総額を確認し、歳入総額との差引が同資料の形式収支と一致することを検算したステージング。認定については議案第90号が令和7年第3回定例会で認定されたことを市公式の議案及び審議結果で確認済みである。人間による確認待ちステージング。",
+      "source_ids": [
+       "himeji-settlement-2024"
+      ],
+      "statement": "令和6年度一般会計決算の歳出総額は245,476,363千円である（姫路市公式『令和6年度決算の概要』の一般会計の歳出2,454億7,636万3千円による。公表精度は千円単位）。歳入総額254,438,371千円との差引は8,962,008千円で、同資料の形式収支89億6,200万8千円（8,962,008千円）と検算一致する。実質収支は5,797,686千円（同資料の57億9,768万6千円。翌年度への繰越財源は3,164,322千円）であり、千円精度のまま記録する。当該決算は議案第90号として令和7年第3回定例会で認定された。"
+     }
+    ],
+    "id": "evidence-himeji-city-2024-total-expenditure",
+    "open_questions": [
+     "決算書（歳入歳出決算事項別明細書）の款別合計との最終突合。"
+    ],
+    "review_status": "needs_review",
+    "subject_id": "jp-local-282014-fiscal-2024-total-expenditure",
+    "subject_type": "fiscal_record"
+   }
+  ],
+  "fiscal_records": [
+   {
+    "account_type": "general",
+    "amount_yen": 261800000000,
+    "confidence": "medium",
+    "fiscal_year": 2026,
+    "id": "jp-local-282014-fiscal-2026-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算総額",
+    "municipality_id": "jp-local-282014",
+    "note": "姫路市公式『令和8年度 予算の概要』ページ（一般会計2,618億円）および同ページから公開される一般会計予算総括表（歳出）の合計261,800,000千円で確認した令和8年度一般会計当初予算総額。公表精度は千円単位であり、その精度のまま記録し円単位を合成していない。当初予算は議案第1号『令和8年度姫路市一般会計予算』として令和8年第1回定例会で可決された（市公式『令和8年第1回定例会 議案及び審議結果』の結果欄の文言は「可決」であり、その文言のまま記録する）。議決日2026年3月25日は、会期（2026年2月17日から3月25日まで。議会報ひめじNo.252）と最終日の本会議が委員長報告・表決・閉会であることから特定したものであり、会議録による最終確認は未実施である。補正予算や決算とは別stateで扱う。",
+    "period_end": "2027-03-31",
+    "period_start": "2026-04-01",
+    "review_status": "needs_review",
+    "sources": [
+     "himeji-budget-2026"
+    ],
+    "stage": "initial_budget",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+   },
+   {
+    "account_type": "general",
+    "amount_yen": 254438371000,
+    "confidence": "medium",
+    "fiscal_year": 2024,
+    "id": "jp-local-282014-fiscal-2024-total-revenue",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入額",
+    "municipality_id": "jp-local-282014",
+    "note": "姫路市公式『令和6年度決算の概要』に示された一般会計の歳入2,544億3,837万1千円、すなわち254,438,371千円。公表精度は千円単位であり、円単位の総額は同資料に印字されていないため合成しない。当該決算の認定議案は議案第90号『令和6年度姫路市一般会計決算認定について』であり、令和7年第3回定例会で認定された（市公式『令和7年第3回定例会 議案及び審議結果』の結果欄で直接確認）。議決日2025年10月3日は、同定例会の議員別賛否一覧PDFの発行日付と会期最終日の表決から特定したものであり、会議録による最終確認は未実施である。FY2024は姫路市総合計画「ふるさと・ひめじプラン2030」基本構想（2021年度～2030年度）期間内の決算である。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "needs_review",
+    "sources": [
+     "himeji-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+   },
+   {
+    "account_type": "general",
+    "amount_yen": 245476363000,
+    "confidence": "medium",
+    "fiscal_year": 2024,
+    "id": "jp-local-282014-fiscal-2024-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出額",
+    "municipality_id": "jp-local-282014",
+    "note": "姫路市公式『令和6年度決算の概要』に示された一般会計の歳出2,454億7,636万3千円、すなわち245,476,363千円。歳入総額254,438,371千円との差引額8,962,008千円は、同資料の形式収支89億6,200万8千円（8,962,008千円）と検算一致する。実質収支は同資料の57億9,768万6千円、すなわち5,797,686千円（翌年度への繰越財源31億6,432万2千円、すなわち3,164,322千円を差し引いた額）であり、千円精度のまま記録する。決算の認定議案は議案第90号であり、令和7年第3回定例会で認定された（市公式の議案及び審議結果で確認）。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "needs_review",
+    "sources": [
+     "himeji-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+   }
+  ],
+  "plan_review": {
+   "id": "phase15-himeji-plan-review",
+   "name_ja": "姫路市",
+   "official_code": "282014",
+   "records": [
+    {
+     "decision": "needs_review",
+     "evidence_location": "姫路市公式Webサイト『姫路市総合計画「ふるさと・ひめじプラン2030」基本構想』ページ（Phase 14インベントリで確認）で、計画の構成と期間（基本構想と実施計画の2つで構成、基本構想は令和3年度から令和12年度の10年間、実施計画は3年間で毎年度掲載事業を更新）を直接確認し、実施計画ページで現行の実施計画（令和8年度から令和10年度）を確認した",
+     "evidence_role": "current_plan_identity",
+     "id": "himeji-current-plan-period",
+     "review_note": "総合計画の2層構造（基本構想・実施計画）と、基本構想の10年間と実施計画の3年ローリングを別period semanticsとして保持した。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.himeji.lg.jp/shisei/0000015166.html",
+     "statement": "姫路市の総合計画は姫路市総合計画「ふるさと・ひめじプラン2030」であり、基本構想と実施計画の2つで構成される2層構造である。総合計画は姫路市まちづくりと自治の条例で定める市の最上位計画である。基本構想は令和3（2021）年度から令和12（2030）年度の10年間を計画期間とし、目指す都市像は『ともに生き ともに輝く にぎわい交流拠点都市 姫路』である。実施計画は計画期間を3年間とし、毎年度、掲載事業を更新するローリング方式であり、現行は令和8年度から令和10年度（2026年度～2028年度）である。基本構想の10年間と実施計画の3年ローリングを別period semanticsとして保持し、一律の固定期間へ潰さない。Phase 14インベントリの記録（ふるさと・ひめじプラン2030 2021～2030年度・verified_fixed_period）とも一致する。",
+     "title": "姫路市総合計画「ふるさと・ひめじプラン2030」の構成（基本構想2021年度～2030年度と実施計画の3年ローリング）",
+     "value": "基本構想は2021年度～2030年度（10年間）／実施計画は3年間（毎年度、掲載事業を更新）で現行は令和8年度～令和10年度（2026年度～2028年度）"
+    },
+    {
+     "decision": "needs_review",
+     "evidence_location": "公式の基本構想ページの『分野目標・政策』の節で、生活に関わりが深い九つの分野（市民活動、健康福祉、教育、環境、産業、観光・スポーツ、都市基盤、防災・安全安心、行財政運営）ごとに分野目標を掲げ、それぞれの分野に政策を整理していることを直接確認した。分野目標の文言は基本構想冊子（公式PDF）の第3章冒頭の体系一覧で確認した。分野別の政策は同冊子の2カラム構成の体系一覧ではテキスト抽出時に分野別の帰属が混在し、誤りなく転記できない",
+     "evidence_role": "policy_structure",
+     "id": "himeji-current-policy-structure",
+     "review_note": "9分野の名称と分野目標は公式ページと基本構想冊子で直接確認した。分野別の政策の全件列挙は転記の正確性を担保できないため候補には含めず、計画本編での直接確認を追加depthとして保持する。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.himeji.lg.jp/shisei/0000015166.html",
+     "statement": "「ふるさと・ひめじプラン2030」基本構想は、生活に関わりが深い九つの分野ごとに、都市ビジョンを具体化した「分野目標」を掲げ、それぞれの分野に「目指す姿」「目指す姿を実現するための市の取組の方向性」「市民、地域コミュニティ、企業・団体の役割」などで構成する「政策」を整理している。9分野と分野目標は次のとおりである。市民活動（多様な主体が輝くまち）、健康福祉（命・くらしの支え合い）、教育（生き抜く力の育成と歴史文化の継承）、環境（環境にやさしいまち）、産業（世界に誇れる価値を生む地域産業の確立）、観光・スポーツ（にぎわいと感動の創出）、都市基盤（交流と魅力を支える都市基盤の構築）、防災・安全安心（災害等に強く安全で安心な都市）、行財政運営（市民ニーズに応じた行政サービスの提供）。あわせて、まちづくりに取り組む姿勢として4つの行動指針（多様な個性が輝く「人」づくり、つながり、信頼し合う「地域」づくり、世界に飛躍する「活力」づくり、命とくらしを支える「土台」づくり）を掲げ、人口ビジョンとして2030年の定住人口目標「51.8万人」を置く。各分野の政策の全件列挙は本候補では行わず、計画本編での直接確認を人間レビュー工程に残す（deferred depth）。",
+     "title": "「ふるさと・ひめじプラン2030」の分野体系（9分野と分野目標）"
+    },
+    {
+     "decision": "needs_review",
+     "evidence_location": "姫路市公式『姫路市総合計画「ふるさと・ひめじプラン2030」実施計画』ページの『総合計画の進行管理』『政策評価の実施』の各節で、3年ごとに実施する政策評価を軸としたPDCAサイクルと毎年度の事業形成過程における単年度のPDCAサイクルの組合せ、市民意識調査項目とKPIによる政策評価を直接確認した",
+     "evidence_role": "progress_governance",
+     "id": "himeji-progress-governance-framework",
+     "review_note": "進行管理の枠組み（3年周期の政策評価と毎年度の事業PDCAという異なる評価周期）を公式資料から抽出し、周期を一つに潰さず保持した。評価・進捗の個別結果そのものは本候補では扱わない。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.himeji.lg.jp/shisei/0000015569.html",
+     "statement": "「ふるさと・ひめじプラン2030」の進行管理は、3年ごとに実施する政策評価を軸としたPlan（計画）-Do（実施）-Check（評価）-Action（改善）のPDCAサイクルとし、毎年度の事業形成過程における単年度のPDCAサイクルと組み合わせて行う。政策評価では、政策の進捗を測る指標として、市民意識調査項目（市内在住の満15歳以上の市民3,000人を対象に3年ごとに実施）とKPI（重要業績評価指標）を政策ごとに複数設定し、総合的な視点に基づく政策評価を行い、今後の「対応方針」を決定する。対応方針は、市民意識調査の結果やKPIの目標値の達成状況とともに公表される。評価周期の異なる2つのPDCAを一つに潰さず保持する。この進捗管理は自治体による進行管理の枠組みであり、Jichi Insight独自の達成判定へ変換しない。",
+     "title": "総合計画の進行管理（3年ごとの政策評価と毎年度の事業PDCA）"
+    },
+    {
+     "decision": "needs_review",
+     "evidence_location": "公式の基本構想ページの『計画策定の趣旨』の節で、前総合計画「ふるさと・ひめじプラン2020」が平成21年度（2009年度）を初年度とし、目標年度である令和2年度（2020年度）までの12年間、行政運営の指針であったことを直接確認した。次期計画の策定状況は公式の計画ページ等で確認できなかった",
+     "evidence_role": "plan_transition",
+     "id": "himeji-plan-transition",
+     "review_note": "前総合計画から現行計画への移行を版の履歴として記録した。前計画の事業・評価の全件列挙は本候補では行わない。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.himeji.lg.jp/shisei/0000015166.html",
+     "statement": "現行の姫路市総合計画「ふるさと・ひめじプラン2030」（基本構想2021年度～2030年度）に先立つ前総合計画は「ふるさと・ひめじプラン2020」であり、平成21（2009）年度を初年度とし、目標年度である令和2（2020）年度までの12年間、本市の行政運営の指針であった。なお、平成23年（2011年）の地方自治法の改正により基本構想の策定義務がなくなった後も、本市では平成25年（2013年）に制定した姫路市まちづくりと自治の条例において引き続き総合計画を策定することを定めている。「ふるさと・ひめじプラン2030」の後継となる次期総合計画の策定状況は、本候補作成時点では市の公式資料で確認できていない。FY2024決算は現行計画の基本構想期間内の決算であり、前計画期間の実績を現行計画へ接続しない。",
+     "title": "前総合計画「ふるさと・ひめじプラン2020」（2009年度～2020年度）からの移行"
+    },
+    {
+     "decision": "not_assessable",
+     "evidence_location": "FY2024決算の公式入口はPhase 14インベントリの決算資料（令和6年度決算の概要ページ）。決算総額と計画の分野・政策との対応付けは公式資料の総額レベルでは示されていない",
+     "evidence_role": "annual_progress",
+     "fiscal_year": 2024,
+     "id": "himeji-fy2024-settlement-linkage",
+     "review_note": "決算値と認定結果は一次資料で確認済みであるが、総額レベルの対応付けが公式資料にないため接続は未判定のまま保持する。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.himeji.lg.jp/shisei/0000031944.html",
+     "statement": "FY2024決算値と姫路市総合計画「ふるさと・ひめじプラン2030」の分野体系との接続は未判定（not_assessable）。FY2024は基本構想（2021年度～2030年度）期間内の決算であり計画の版は現行と同一であり、決算総額（歳入254,438,371千円・歳出245,476,363千円、千円精度）と認定結果（議案第90号・認定）は一次資料で確認済みであるが、決算総額は会計別の集計値であり、9分野の分野目標・政策との総額レベルの対応付けは公式資料に示されていない。接続は人間レビュー工程の作業とする。",
+     "title": "令和6年度決算と姫路市総合計画「ふるさと・ひめじプラン2030」の分野体系の接続"
+    }
+   ],
+   "review_status": "pending_record_review"
+  },
+  "policy_structure": {
+   "current_plan": {
+    "end_fiscal_year": 2028,
+    "management_principles": [
+     "総合計画は姫路市総合計画「ふるさと・ひめじプラン2030」であり、基本構想（2021年度～2030年度の10年間）と実施計画（3年間・毎年度掲載事業を更新するローリング方式、現行は令和8年度～令和10年度）の2層で構成する。基本構想の期間と実施計画の期間を別period semanticsとして保持し、一律の固定期間modelへ潰さない",
+     "分野体系は9分野（市民活動／健康福祉／教育／環境／産業／観光・スポーツ／都市基盤／防災・安全安心／行財政運営）で構成し、各分野に分野目標と政策を置く。各分野の政策の全件列挙は本候補では行わず、追加depthとして保持する",
+     "進行管理は、3年ごとに実施する政策評価（市民意識調査項目とKPIによる評価）を軸としたPDCAサイクルと、毎年度の事業形成過程における単年度のPDCAサイクルを組み合わせる枠組みである。評価周期の異なる2つのPDCAを一つに潰さず、自治体の進捗管理をJichi Insight独自の達成判定へ変換しない",
+     "FY2024決算は基本構想（2021年度～2030年度）期間内の決算であり計画の版は同一であり、決算総額（千円精度）と認定結果（議案第90号・認定）は一次資料で確認済みであるが、決算総額と9分野・政策との総額レベルの対応付けは公式資料にないため、決算値を計画のcurrent actualへ流用しない"
+    ],
+    "period_status": "verified_fixed_period",
+    "policy_fields": [
+     {
+      "id": "field-1",
+      "measures": [],
+      "name_ja": "市民活動"
+     },
+     {
+      "id": "field-2",
+      "measures": [],
+      "name_ja": "健康福祉"
+     },
+     {
+      "id": "field-3",
+      "measures": [],
+      "name_ja": "教育"
+     },
+     {
+      "id": "field-4",
+      "measures": [],
+      "name_ja": "環境"
+     },
+     {
+      "id": "field-5",
+      "measures": [],
+      "name_ja": "産業"
+     },
+     {
+      "id": "field-6",
+      "measures": [],
+      "name_ja": "観光・スポーツ"
+     },
+     {
+      "id": "field-7",
+      "measures": [],
+      "name_ja": "都市基盤"
+     },
+     {
+      "id": "field-8",
+      "measures": [],
+      "name_ja": "防災・安全安心"
+     },
+     {
+      "id": "field-9",
+      "measures": [],
+      "name_ja": "行財政運営"
+     }
+    ],
+    "start_fiscal_year": 2026,
+    "title": "姫路市総合計画「ふるさと・ひめじプラン2030」実施計画（令和8年度～令和10年度）",
+    "vision": "ともに生き ともに輝く にぎわい交流拠点都市 姫路"
+   },
+   "id": "himeji-current-policy-structure",
+   "name_ja": "姫路市",
+   "official_code": "282014",
+   "phase": 15
+  },
+  "progress_review": {
+   "id": "himeji-current-progress-review-summary",
+   "implementation_plan_framework": {
+    "evaluation_structure": "進行管理は、3年ごとに実施する政策評価を軸としたPDCAサイクルとし、毎年度の事業形成過程における単年度のPDCAサイクルと組み合わせて行う枠組みである。政策評価では市民意識調査項目とKPIを政策ごとに複数設定し、対応方針を市民意識調査の結果やKPIの目標値の達成状況とともに公表する。評価周期の異なる2つのPDCAを一つに潰さず、自治体の進捗管理をJichi Insight独自の達成判定へ変換せず、枠組みそのものを年度実績へ読み替えない",
+    "period": "基本構想の計画期間（2021年度～2030年度）を通じて、実施計画（3年間・毎年度掲載事業を更新、現行は令和8年度～令和10年度）のもとで進捗管理を行う。FY2024決算は基本構想期間内の決算で計画の版は同一であり、決算総額（千円精度）と認定結果（議案第90号・認定）は一次資料で確認済みであるが、決算総額と9分野の分野目標・政策との総額レベルの対応付けは公式資料にないため、進行管理の対象値として接続しない",
+    "title": "実施計画（2026年度～2028年度・3年ローリング）と政策評価・事業PDCAによる進行管理"
+   },
+   "name_ja": "姫路市",
+   "official_code": "282014",
+   "phase": 15,
+   "review_status": "review_candidate_staging"
+  },
+  "source_catalog": {
+   "id": "himeji-phase15-sources",
+   "name_ja": "姫路市",
+   "official_code": "282014",
+   "phase": 15,
+   "sources": [
+    {
+     "evidence_location": "姫路市公式Webサイト『姫路市総合計画「ふるさと・ひめじプラン2030」基本構想』ページ（Phase 14インベントリで確認）。総合計画の全体像（基本構想と実施計画の2つで構成）、基本構想の計画期間（令和3年度から令和12年度の10年間）、目指す都市像、4つの行動指針、9分野の分野目標・政策の構成と、基本構想冊子（公式PDF）の公開を直接確認した",
+     "evidence_role": "comprehensive_plan",
+     "format": "html",
+     "id": "himeji-basic-concept",
+     "official_url": "https://www.city.himeji.lg.jp/shisei/0000015166.html",
+     "title": "姫路市総合計画 基本構想",
+     "use_boundary": "現行計画は姫路市総合計画「ふるさと・ひめじプラン2030」（基本構想2021年度～2030年度）として保持し、実施計画（3年ローリング）とlayer semanticsを分離する",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    },
+    {
+     "evidence_location": "姫路市公式『姫路市総合計画「ふるさと・ひめじプラン2030」実施計画』ページで、現行の実施計画（令和8年度から令和10年度）の構成と期間（計画期間を3年間とし、毎年度、掲載事業を更新）と、総合計画の進行管理（3年ごとの政策評価を軸としたPDCAサイクルと毎年度の事業PDCAの組合せ）を直接確認した",
+     "evidence_role": "implementation_plan_and_progress",
+     "format": "html",
+     "id": "himeji-implementation-2026-2028",
+     "official_url": "https://www.city.himeji.lg.jp/shisei/0000015569.html",
+     "title": "実施計画",
+     "use_boundary": "実施計画の3年ローリングと、施策評価は3年ごと・事業PDCAは毎年度という異なる評価周期を保持し、過去の実施計画期間や評価を上書きしない",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    },
+    {
+     "evidence_location": "FY2026当初予算の金額は、姫路市公式『令和8年度 予算の概要』ページ（一般会計2,618億円）と同ページから公開される一般会計予算総括表（歳出）PDFの合計261,800,000千円で確認した。議案番号・議決結果は市公式『令和8年第1回定例会 議案及び審議結果』により確認し、議案第1号『令和8年度姫路市一般会計予算』の結果欄の文言は「可決」であった。議決日2026年3月25日は会期（2026年2月17日から3月25日まで）と最終日の表決から特定したもので、会議録による最終確認は未実施である",
+     "evidence_role": "budget",
+     "format": "html",
+     "id": "himeji-budget-2026",
+     "official_url": "https://www.city.himeji.lg.jp/shisei/0000032701.html",
+     "title": "令和8年度予算の概要",
+     "use_boundary": "FY2026当初予算は補正予算・決算と別stateで保持する。金額は千円単位の公表値であり、円単位を合成しない。議案番号・議決結果（議案第1号・可決）は確認済みであり、議決後の成立額を保持する",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    },
+    {
+     "evidence_location": "FY2024決算の公式入口（Phase 14インベントリで確認）。姫路市公式『令和6年度決算の概要』ページの一般会計の節で、歳入2,544億3,837万1千円・歳出2,454億7,636万3千円・形式収支89億6,200万8千円・翌年度への繰越財源31億6,432万2千円・実質収支57億9,768万6千円を直接確認した。決算の認定結果は市公式『令和7年第3回定例会 議案及び審議結果』により確認し、議案第90号『令和6年度姫路市一般会計決算認定について』の結果欄は「認定」であった",
+     "evidence_role": "settlement",
+     "format": "html",
+     "id": "himeji-settlement-2024",
+     "official_url": "https://www.city.himeji.lg.jp/shisei/0000031944.html",
+     "title": "令和6年度決算の概要",
+     "use_boundary": "FY2024決算は基本構想（2021年度～2030年度）期間内の決算として保持する。歳入・歳出・実質収支は決算の概要の千円精度の公表値のまま記録し、認定結果（議案第90号・認定）も市公式の議案及び審議結果で確認済みである",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    }
+   ]
+  }
+ },
+ "deferred_depth": [
+  {
+   "boundary": "9分野の分野別政策の全件列挙と、政策評価の指標（市民意識調査項目・KPI）の個別値は追加depthとし、公式対応が確認できるまで昇格しない。基本構想冊子の体系一覧は2カラム構成であり、テキスト抽出では政策の分野別の帰属が混在して誤りなく転記できないため、候補には分野単位の体系（9分野と分野目標）を保持するが、個別政策・事業単位の対応付けは行わない。",
+   "id": "current-plan-granular-kpi-and-project-linkage",
+   "status": "deferred_not_required_for_candidate_staging"
+  },
+  {
+   "boundary": "FY2026当初予算の議案番号・議決結果の文言（議案第1号・令和8年第1回定例会・「可決」）と、FY2024決算の認定結果（議案第90号・令和7年第3回定例会・認定）は、市公式の議案及び審議結果による確認を完了し、候補の財政記録・証拠パケット側に反映している。両議決日（2026年3月25日・2025年10月3日）は会期・賛否一覧PDF等から特定したものであり、会議録による最終確認は未実施のまま保持する。決算書の款別合計との最終突合、監査委員の決算審査意見書の内容の精査、補正予算による変更経過は追加エビデンス確認前は記録・結合しない。FY2024決算の歳入・歳出・実質収支（千円精度）とFY2026当初予算総額（千円精度）は一次資料で確認済みであり、候補の財政記録・証拠パケット側に反映している。",
+   "id": "fiscal-vote-and-certification-verification",
+   "status": "deferred_not_required_for_candidate_staging"
+  },
+  {
+   "boundary": "前総合計画「ふるさと・ひめじプラン2020」（2009年度～2020年度）の事業・評価の全件列挙は本候補では行わない。前計画から現行計画への移行は版の履歴として別途記録し、前計画期間の実績を現行計画の期間へ前倒し接続しない。次期総合計画の策定状況は未確認である。",
+   "id": "plan-transition-version-depth",
+   "status": "deferred_not_required_for_candidate_staging"
+  },
+  {
+   "boundary": "姫路市総合計画・進捗管理・財政等のステージングは政策効果の因果認定や他都市比較可能性を意味しない。進捗管理（自治体の進行管理の枠組み）をJichi Insight独自の達成判定へ変換しない。",
+   "id": "policy-outcome-causal-and-cross-city-comparability",
+   "status": "deferred_not_required_for_candidate_staging"
+  }
+ ],
+ "human_review": {
+  "boundary": "A person must check the candidate against the cited primary sources before any promotion to reviewed_complete.",
+  "required": true,
+  "reviewed_at": null,
+  "reviewer_note": null,
+  "status": "pending"
+ },
+ "name_ja": "姫路市",
+ "official_code": "282014",
+ "package_state": "prepared",
+ "phase": 15,
+ "publication": {
+  "boundary": "Candidate data is staging-only and must not be loaded by the public site or treated as reviewed data.",
+  "eligible": false
+ },
+ "quality_boundaries": [
+  "Promoted facts must come from official primary sources with stable evidence locators.",
+  "Unpublished, unavailable, historical-only, draft, and unresolved facts must remain explicit.",
+  "No Jichi Insight policy-achievement score, causal attribution, or unverified cross-city ranking may be created.",
+  "This candidate is machine-prepared evidence only and is not Reviewed until a person checks the primary sources."
+ ],
+ "schema_version": 1,
+ "source_inventory_path": "data/indexed/himeji-city/source_inventory.json",
+ "status": "review_candidate"
+}
