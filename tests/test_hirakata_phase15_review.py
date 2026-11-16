@@ -408,7 +408,7 @@ def test_hirakata_and_previous_thirty_eight_are_reviewed_complete_and_yao_is_nex
     ):
         assert by_code[code]["status"] == "reviewed_complete"
 
-    assert queue["summary"]["reviewed_complete_count"] == 43
+    assert queue["summary"]["reviewed_complete_count"] == 44
     assert queue["summary"]["review_in_progress_count"] == 0
-    assert queue["summary"]["pending_record_review_count"] == 24
-    assert queue["summary"]["next_official_code"] == "282022"
+    assert queue["summary"]["pending_record_review_count"] == 23
+    assert queue["summary"]["next_official_code"] == "282030"

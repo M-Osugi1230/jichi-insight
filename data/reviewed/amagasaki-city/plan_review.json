@@ -1,0 +1,63 @@
+{
+  "id": "phase15-amagasaki-plan-review",
+  "name_ja": "尼崎市",
+  "next_action": "Promote the 41 policy directions under the thirteen policies and the individual indicator values (policy-evaluation target indicators and the three citywide comprehensive indicators) only when official sources with stable record-level locators have been reviewed; complete the final confirmation of both voting dates (2026-03-19 for the FY2026 budget and 2025-10-07 for the FY2024 settlement certification) against the council minutes; complete the final cross-check against the budget book and the settlement book （事項別明細書） at section level; examine the content of the audit commissioners' settlement review opinion (individual findings); keep the previous plan (the Fifth Amagasaki Comprehensive Plan, FY2013-FY2022) only as a separate version, never connect results from the previous plan period forward into the current plan, and do not treat the latter basic plan (FY2028-FY2032, under preparation) as current until it is adopted. Keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "official_code": "282022",
+  "quality_boundary": "This package reviews the current plan identity and period (the Sixth Amagasaki Comprehensive Plan, composed of two layers — the city-building concept まちづくり構想 (FY2023-FY2032, ten years, with the desired city image 『ひと咲き まち咲き あまがさき』) and the city-building basic plan まちづくり基本計画 (the concept's ten years split into a first half FY2023-FY2027 and a second half FY2028-FY2032; the current edition is the first-half plan); the concept period and the basic plan period are kept as separate period semantics), the policy structure (thirteen policies; each policy carries policy directions — 41 in total — whose full enumeration is not included because the main volume's two-column layout mixes attribution on text extraction and cannot be transcribed without error, so they stay deferred depth and the measures lists stay empty), the progress-governance layer (an annual PDCA cycle driven by policy evaluation, combined with a plan-period PDCA that reviews the plan at each five-year basic-plan boundary — the municipality's own progress-management framework, with the two different evaluation cycles kept separate), the enacted FY2026 initial budget at the published sen-yen (thousand-yen) precision (bill 議案第1号; the result column of the council's official 『議案等採決結果』 reads 「原案可決」 and is recorded exactly as published; the voting date 2026-03-19 was identified from the final-day agenda of the regular session and has not yet been finally confirmed against the council minutes), and the FY2024 settlement at the published sen-yen precision, without collapsing proposed, enacted, supplementary, or settlement states. The FY2024 settlement certification bill (認定第1号) was certified at the 2025 second regular session: that outcome is recorded exactly as published; its voting date 2025-10-07 was identified from the final-day agenda and has not yet been finally confirmed against the council minutes. The real balance of 2,808,992 thousand yen is kept at sen-yen precision as printed in the city's official settlement summary. FY2024 falls inside the first-half basic plan period, so its plan version is the same as the current one, but no official total-level mapping from settlement totals to the plan's thirteen policies or 41 policy directions exists, so the linkage stays not_assessable. The transition from the previous plan (the Fifth Amagasaki Comprehensive Plan, FY2013-FY2022) is kept only as a version chronology record, and the latter basic plan (FY2028-FY2032) is under preparation and is not treated as current.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "尼崎市公式Webサイト『第6次尼崎市総合計画・後期まちづくり基本計画の策定について』ページ（Phase 14インベントリで確認）で、計画の構成（まちづくり構想と、その10年間を前期と後期の5年ごとに分けたまちづくり基本計画）と、前期まちづくり基本計画が令和9年度末をもって計画期間の終了を迎えることを直接確認し、計画本編（公式PDF）の「総合計画の構成と期間」の節でも2層構造を確認した",
+      "evidence_role": "current_plan_identity",
+      "id": "amagasaki-current-plan-period",
+      "review_note": "総合計画の2層構造（まちづくり構想2023年度～2032年度の10年間と、構想の10年間を前期・後期の5年ごとに分けたまちづくり基本計画。現行は前期2023年度～2027年度）と、構想の期間と基本計画の期間を別period semanticsとして保持した。レビュー済みレコード。",
+      "source_url": "https://www.city.amagasaki.hyogo.jp/shisei/si_mirai/sprocess/sp_ikou/1043038.html",
+      "statement": "尼崎市の総合計画は第6次尼崎市総合計画であり、まちづくり構想とまちづくり基本計画で構成される2層構造である。まちづくり構想は令和5（2023）年度から令和14（2032）年度の10年間を計画期間とし、目指すまちの姿（ありたいまち）は『ひと咲き まち咲き あまがさき』である。まちづくり基本計画は構想の10年間を前期と後期の5年ごとに分けたもので、現行は前期まちづくり基本計画（令和5（2023）年度から令和9（2027）年度）である。後期まちづくり基本計画（令和10（2028）年度から令和14（2032）年度）は策定中であり、現行計画へ先取りしない。構想の10年間と基本計画の5年間を別period semanticsとして保持し、一律の固定期間へ潰さない。Phase 14インベントリの記録（第6次尼崎市総合計画2023～2032年度・前期まちづくり基本計画2023～2027年度・verified_fixed_period）とも一致する。",
+      "title": "第6次尼崎市総合計画の構成（まちづくり構想2023年度～2032年度とまちづくり基本計画・前期2023年度～2027年度）",
+      "value": "まちづくり構想は2023年度～2032年度（10年間）／まちづくり基本計画は前期2023年度～2027年度・後期2028年度～2032年度（各5年間）で現行は前期"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "計画本編（公式PDF）の各論で13施策の章立て（施策1から施策13）を全件直接確認した。市公式『施策評価の概要』ページでも、前期計画に掲げる13施策を構成する41展開方向ごとに評価を行うことが明記されている。各施策の展開方向の個別文言は本編各論の2カラム構成ではテキスト抽出時に帰属が混在し、誤りなく転記できない",
+      "evidence_role": "policy_structure",
+      "id": "amagasaki-current-policy-structure",
+      "review_note": "13施策の名称は計画本編の各論で全件直接確認した。各施策の展開方向（全41件）の全件列挙は、計画本編各論の2カラム構成ではテキスト抽出時に文言の帰属が混在し転記の正確性を担保できないため本パッケージには含めず、計画本編での直接確認を追加depthとして保持する。レビュー済みレコード。",
+      "source_url": "https://www.city.amagasaki.hyogo.jp/shisei/si_mirai/sprocess/sp_ikou/1043038.html",
+      "statement": "前期まちづくり基本計画の施策体系は13施策で構成される。施策1 地域コミュニティ・学び、施策2 人権尊重・多文化共生、施策3 学校教育、施策4 子ども・子育て支援、施策5 地域福祉、施策6 障害者支援、施策7 高齢者支援、施策8 健康支援、施策9 生活安全、施策10 消防・防災、施策11 地域経済・雇用就労、施策12 環境保全・創造、施策13 都市機能・住環境。各施策には「施策の展開方向」が置かれ、全13施策で41の展開方向がある（市公式『施策評価の概要』ページで確認）。あわせて、社会潮流や本市の状況を踏まえて優先的かつ集中的に取り組む4つの主要取組項目（子ども・教育、生きがい・ささえあい、脱炭素・経済活性、魅力向上・発信）と、前期計画全体の進捗を総合的に測る3つのまちづくりの総合指標（ファミリー世帯の転出超過数、市民参画指数、『尼崎市に住んで良かった』と感じている市民の割合）を置く。各施策の展開方向の全件列挙は本候補では行わず、計画本編での直接確認を人間レビュー工程に残す（deferred depth）。",
+      "title": "第6次尼崎市総合計画 前期まちづくり基本計画の施策体系（13施策と41の展開方向）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "尼崎市公式『施策評価の概要』ページの『施策評価の目的』『評価手法』の各節で、PDCAサイクルを通じた総合計画の推進、施策別の評価（担当局評価・市長評価）、行政運営の評価、主要取組項目の評価、総合指標による評価、総合評価の枠組みを直接確認し、総務委員協議会資料（令和8年2月）で単年度PDCAと計画期間PDCAの位置づけを確認した",
+      "evidence_role": "progress_governance",
+      "id": "amagasaki-progress-governance-framework",
+      "review_note": "進行管理の枠組み（施策評価を起点とした単年度PDCAサイクルと、基本計画期間（5年間）ごとの点検を行う計画期間PDCAの組合せ）を公式資料から抽出し、評価周期の異なる2つのPDCAを一つに潰さず保持した。評価・進捗の個別結果そのものは本パッケージでは扱わない。レビュー済みレコード。",
+      "source_url": "https://www.city.amagasaki.hyogo.jp/shisei/si_torikumi/1002117/1002176.html",
+      "statement": "第6次尼崎市総合計画の進行管理は、施策評価を起点とした単年度PDCAサイクルと、まちづくり基本計画の期間（5年間）ごとの点検を行う計画期間PDCAを組み合わせる枠組みである。施策評価は毎年度実施され、前期まちづくり基本計画の13施策を構成する41展開方向ごとに、市民意識調査結果や目標指標の進捗状況等を踏まえて評価する（施策別の評価（担当局評価・市長評価）、行政運営の評価、主要取組項目の評価、総合指標による評価、総合評価）。施策評価の結果は市議会の決算審議において意見（提言）をいただく場に付され、次年度の予算編成につなげる。評価周期の異なる2つのPDCAを一つに潰さず保持する。この進捗管理は自治体による進行管理の枠組みであり、Jichi Insight独自の達成判定へ変換しない。",
+      "title": "総合計画の進行管理（施策評価を起点とした単年度PDCAと計画期間PDCA）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "第6次計画策定時の市公式資料（パブリックコメント案件概要）で、前総合計画である第5次尼崎市総合計画の計画期間（平成25年度〜令和4年度）を直接確認した。後期まちづくり基本計画については、市公式『第6次尼崎市総合計画・後期まちづくり基本計画の策定について』ページと総務委員協議会資料（令和8年2月）で、令和7年度に現計画の点検が行われ、令和8年度に後期計画（令和10～14年度）の策定作業へ着手する予定であることを確認した",
+      "evidence_role": "plan_transition",
+      "id": "amagasaki-plan-transition",
+      "review_note": "前総合計画（第5次尼崎市総合計画、2013年度～2022年度）から現行計画への移行を版の履歴として記録した。前計画の事業・評価の全件列挙は本パッケージでは行わない。後期まちづくり基本計画（2028年度～2032年度）は策定中であり、策定完了までは現行計画として扱わない。レビュー済みレコード。",
+      "source_url": "https://www.city.amagasaki.hyogo.jp/shisei/si_mirai/sprocess/sp_ikou/1043038.html",
+      "statement": "現行の第6次尼崎市総合計画（まちづくり構想2023年度～2032年度、前期まちづくり基本計画2023年度～2027年度）に先立つ前総合計画は第5次尼崎市総合計画であり、平成25（2013）年度から令和4（2022）年度を計画期間とした。第6次計画の後期まちづくり基本計画（令和10（2028）年度から令和14（2032）年度）については、令和7年度に現計画の点検（計画期間PDCA）が行われ、令和8年度に策定作業へ着手する予定とされているが、本候補作成時点では未策定であり、現行の前期まちづくり基本計画を後期計画へ先取り昇格しない。FY2024決算は前期まちづくり基本計画期間内の決算であり、前計画期間の実績を現行計画へ接続しない。",
+      "title": "前総合計画（第5次尼崎市総合計画、2013年度～2022年度）からの移行と後期まちづくり基本計画（2028年度～2032年度・策定中）"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "FY2024決算の公式入口はPhase 14インベントリの決算資料（令和6年度決算の概要ページ）。決算総額と計画の施策体系との対応付けは公式資料の総額レベルでは示されていない",
+      "evidence_role": "annual_progress",
+      "fiscal_year": 2024,
+      "id": "amagasaki-fy2024-settlement-linkage",
+      "review_note": "決算値と認定結果は一次資料で確認済みであるが、総額レベルの対応付けが公式資料にないため接続は未判定のまま保持する。レビュー済みレコード。",
+      "source_url": "https://www.city.amagasaki.hyogo.jp/shisei/si_zaisei/kessan/gaiyou/1041621.html",
+      "statement": "FY2024決算値と第6次尼崎市総合計画 前期まちづくり基本計画の施策体系との接続は未判定（not_assessable）。FY2024は前期まちづくり基本計画（2023年度～2027年度）期間内の決算であり計画の版は現行と同一であり、決算総額（歳入240,079,769千円・歳出236,639,777千円、千円精度）と認定結果（認定第1号・認定）は一次資料で確認済みであるが、決算総額は会計別の集計値であり、13施策・41の展開方向との総額レベルの対応付けは公式資料に示されていない。接続は人間レビュー工程の作業とする。",
+      "title": "令和6年度決算と第6次尼崎市総合計画 前期まちづくり基本計画の施策体系の接続"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-16"
+}
