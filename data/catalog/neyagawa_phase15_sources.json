@@ -1,0 +1,46 @@
+{
+  "id": "neyagawa-phase15-sources",
+  "name_ja": "寝屋川市",
+  "official_code": "272159",
+  "phase": 15,
+  "quality_boundary": "Current plan identity kept as published (the Sixth Neyagawa City Comprehensive Plan, integrated with the Second Comprehensive Strategy; the basic strategy （基本構想 plus 戦略プラン） covers FY2021-FY2027 with the future image 『新たな価値を創り、選ばれるまち 寝屋川 ～イノベーションの創出～』; the implementation plan is split into an earlier period (FY2021-FY2023) and a latter period (FY2024-FY2027), the current version being the latter implementation plan; the strategic plan has 19 measures in five groups, all enumerated, with 74 developments in the latter implementation plan), progress governance (progress management integrated with administrative evaluation based on the PDCI cycle, kept as the municipality's own progress-management framework), budget enactment confirmed in the council's official list of submitted items (bill 議案第28号, passed as proposed on 2026-03-25, with the wording and the date confirmed directly in that document) with the amount kept at the published man-yen precision and never expanded into synthetic finer amounts, and settlement totals kept at the published sen-yen precision from the official settlement book (the settlement certification bill 認定第1号 was certified on 2025-12-03 at the December 2025 regular session after continued review; the real balance of 1,248,678 thousand yen is kept at sen-yen precision as confirmed in the real-balance statement itself) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "reviewed_at": "2026-11-16",
+  "sources": [
+    {
+      "evidence_location": "寝屋川市公式Webサイトの第六次寝屋川市総合計画の公式入口（Phase 14インベントリで確認）。公式入口からリンクされる公式『第六次寝屋川市総合計画』本編（最終答申）で計画の構成（基本戦略＝基本構想＋戦略プラン、実施計画は前期3年／後期4年）・将来像・戦略プランの19施策を、公式『後期実施計画（令和6年度～令和9年度）＜令和8年度版＞』で現行の実施計画の構成と進捗管理の枠組みを直接確認した。公式入口ページそのものの取得は本候補作成時に成功しておらず、確認は市の公式ドメインで公開される計画本編・後期実施計画のPDFで行った",
+      "evidence_role": "comprehensive_plan",
+      "format": "html",
+      "id": "neyagawa-sixth-plan",
+      "official_url": "https://www.city.neyagawa.osaka.jp/organization_list/keieikikaku/kikakuikka/soukei_jinkouvision_senryaku/sougoukeikaku_6_sougousenryaku_2/1616582538632.html",
+      "title": "第六次寝屋川市総合計画",
+      "use_boundary": "現行計画は第六次寝屋川市総合計画（2021年度～2027年度）として保持し、実施計画の前期（2021年度～2023年度）と後期（2024年度～2027年度）を版として分離する。第2期総合戦略と統合された計画であることを保持し、総合戦略の基本目標としての施策の扱いを分離しない"
+    },
+    {
+      "evidence_location": "寝屋川市公式Webサイト『令和8年度予算編成方針』ページ（ページID 25799。Phase 14インベントリで確認）。基本方針（第六次総合計画の将来像の実現に向けた『2つの危機（市民サービスの危機、公共施設・都市インフラの危機）』への対応の継続と未来への必要な『投資』の戦略的推進）と、予算編成に当たって重視する5つの視点（『選ばれるまち』の実現に向けた施策の推進、市民サービス改革の推進、働き方改革の推進、AI技術を用いたデジタルサービスの推進、公共施設等の在り方の整理と総合的かつ計画的な管理の推進）を直接確認",
+      "evidence_role": "budget_policy",
+      "format": "html",
+      "id": "neyagawa-budget-policy-2026",
+      "official_url": "https://www.city.neyagawa.osaka.jp/organization_list/zaimu/zaiseika/yosan/yosanhenseihoushin/25799.html",
+      "title": "令和8年度予算編成方針",
+      "use_boundary": "FY2026の予算編成方針は現行計画の最終期に向けた年度方針として保持し、予算方針を通年のResultや政策効果へ読み替えない"
+    },
+    {
+      "evidence_location": "寝屋川市公式Webサイト『令和8年度予算』ページ（ページID 26514。Phase 14インベントリで確認）。会計別当初予算額表（一般会計1,097億3,000万円・全会計合計1,833億3,200万円）で金額を確認し、議案番号・議決結果は寝屋川市議会公式『令和8年3月市議会定例会 付議事件一覧表』（議案第28号・2026年3月25日原案可決）で確認",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "neyagawa-budget-2026",
+      "official_url": "https://www.city.neyagawa.osaka.jp/organization_list/zaimu/zaiseika/yosan/yosan/R8tousyoyosan/26514.html",
+      "title": "令和8年度当初予算",
+      "use_boundary": "FY2026当初予算は成立予算（議案第28号・2026年3月25日原案可決）として保持し、補正予算・決算と別stateで扱う。金額は万円単位の公表値であり、千円未満の端数を合成しない"
+    },
+    {
+      "evidence_location": "FY2024決算の公式入口（Phase 14インベントリで確認。財政課『決算』索引から当該ページへのリンクも確認）。補完調査で、別冊『令和6年度歳入歳出決算書』の実質収支に関する調書（一般会計）と令和7年9月参考資料『令和6年度 寝屋川市会計別決算状況』（市議会 議案書等に掲載）で一般会計の歳入・歳出総額（千円精度）と実質収支を確認し、市議会公式『令和7年9月市議会定例会 付議事件一覧表』『令和7年12月市議会定例会 付議事件一覧表』で認定第1号の提出・閉会中の継続審査・2025年12月3日の認定を確認した。市公式『寝屋川市の財政（令和6年度版）』は普通会計ベース・百万円単位の集計であり一般会計の総額の裏付けには用いていない",
+      "evidence_role": "settlement",
+      "format": "html",
+      "id": "neyagawa-settlement-2024",
+      "official_url": "https://www.city.neyagawa.osaka.jp/organization_list/zaimu/zaiseika/kessann/kessan/reiwa5nenndokessann_2/index.html",
+      "title": "令和6年度決算",
+      "use_boundary": "FY2024決算は後期実施計画（2024年度～2027年度）の初年度の決算として保持する。歳入・歳出総額と実質収支は決算書の調書等の一次資料で確認済みであり千円精度のまま記録し、円単位を合成しない。認定結果（認定第1号・2025年12月3日認定）も市議会公式資料で確認済みである。普通会計の集計値で補完しない"
+    }
+  ]
+}
