@@ -632,13 +632,25 @@ Declared v1 package:
 
 Deferred depth includes the 41 policy directions under the thirteen policies, the individual indicator values (policy-evaluation target indicators and the three citywide comprehensive indicators), the final confirmation of both voting dates against the council minutes, cross-checks against the budget book and the settlement book （事項別明細書） at section level, the content of the audit commissioners' settlement review opinion (individual findings), supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Forty-fifth completion — Akashi
+
+明石市を45番目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: あかしSDGs推進計画（明石市第6次長期総合計画）— the city's top-level plan under the Basic Autonomy Ordinance, adopted in March 2022 after a council vote. It is composed of the promotion plan （推進計画）, which sets the basic concept (the 2030 vision 『SDGs未来安心都市・明石 ～いつまでも すべての人に やさしいまちを みんなで～』 and the three aspects of city building — economy, society, and environment), the strategy plans （戦略計画）, which split into a first half (FY2022-FY2025) and a second half (FY2026-FY2030, the current edition), the individual plans of each field, and the annual action plans （実行計画）; the promotion-plan period and the strategy-plan periods are kept as separate period semantics. The per-field main measures and the numerical targets (KPIs) of the strategy plans are not enumerated in full and stay deferred depth, so the measures lists stay empty. Progress is managed through a PDCA cycle driven by the annual action plans, with the Akashi SDGs Promotion Council deliberating on the plan's formulation and progress — the municipality's own progress-management framework. The transition from the previous plan (the Fifth Akashi Long-term Comprehensive Plan, target year FY2020, operated by extension through FY2021) is kept only as a version chronology record, and results from the previous plan period are never connected forward into the current plan
+- FY2026 general-account initial budget: 151,508,494 thousand yen (enacted). Bill 議案第29号 was enacted by an amended vote （修正議決） — it was NOT adopted as proposed: the city's official 『令和8年度当初予算案』 page states that the published content is the content after the amendment vote on the budget bills (March 25), and the enacted amount was confirmed in Article 1 of the amended budget book published by the city, where the revenue and expenditure totals agree. The amount is kept at the published sen-yen (thousand-yen) precision and finer amounts are not synthesized. The voting date is 2026-03-25. The wording of the result column in the council's deliberation-result document itself, and the specific content of the amendment, have not been confirmed and are kept as open questions
+- FY2024 general-account settlement at yen precision as published: revenue 131,291,999,787 yen / expenditure 130,356,924,686 yen (their difference of 935,075,101 yen matches the formal balance （形式収支） printed in the city's official settlement materials; the real balance is 886,767,101 yen, after deducting 48,308,000 yen of funding to be carried over to the next fiscal year, kept at yen precision). The settlement certification bill, 議案第58号 (covering bills 議案第58号 to 第69号）, was certified as proposed （原案どおり認定） at the September session of the 2025 second regular session per the city council's official deliberation results, decided on 2025-10-16; it was not rejected. FY2024 falls inside the first-half strategy plan period (FY2022-FY2025), so its strategy-plan version differs from the current second-half plan, and no official total-level mapping from settlement totals to the plan's three aspects or the strategy plans' measures exists, so the totals are not linked to the plan's structure and the linkage stays not_assessable
+
+Deferred depth includes the per-field main measures and numerical targets (KPIs) of the strategy plans (first-half and second-half), the wording of the result column in the council's deliberation-result document for the FY2026 budget bill and the specific content of the budget amendment, the final confirmation of both votes against the council minutes, cross-checks against the budget book and the settlement book （事項別明細書） at section level, the content of the audit commissioners' settlement review opinion (individual findings), supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 44 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市、姫路市、尼崎市
+- Reviewed complete: 45 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市、姫路市、尼崎市、明石市
 - Review in progress: 0
-- Pending record review: 23
+- Pending record review: 22
 - Blocked source inventory: 0
-- Next official code: 282030
+- Next official code: 282049
 
 ## Definition of Phase 15 completion
 

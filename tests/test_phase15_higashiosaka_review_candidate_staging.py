@@ -280,9 +280,9 @@ def test_higashiosaka_candidate_progress_review_stays_staging() -> None:
 def test_higashiosaka_promotion_is_reflected_in_review_queue() -> None:
     queue = load_json(QUEUE_PATH)
     assert queue["summary"]["target_count"] == 67
-    assert queue["summary"]["reviewed_complete_count"] == 44
-    assert queue["summary"]["pending_record_review_count"] == 23
-    assert queue["summary"]["next_official_code"] == "282030"
+    assert queue["summary"]["reviewed_complete_count"] == 45
+    assert queue["summary"]["pending_record_review_count"] == 22
+    assert queue["summary"]["next_official_code"] == "282049"
     items = {item["official_code"]: item for item in queue["execution_queue"]}
     assert items["272272"]["name_ja"] == "東大阪市"
     assert items["272272"]["status"] == "reviewed_complete"
