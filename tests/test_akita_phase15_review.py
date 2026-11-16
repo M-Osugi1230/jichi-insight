@@ -256,10 +256,10 @@ def test_akita_yamagata_fukushima_and_koriyama_are_reviewed_complete_and_iwaki_i
     assert yamagata["completion_path"] == "data/catalog/yamagata_phase15_completion.json"
     assert (ROOT / yamagata["completion_path"]).is_file()
 
-    assert queue["summary"]["reviewed_complete_count"] == 39
+    assert queue["summary"]["reviewed_complete_count"] == 40
     assert queue["summary"]["review_in_progress_count"] == 0
-    assert queue["summary"]["pending_record_review_count"] == 28
-    assert queue["summary"]["next_official_code"] == "272124"
+    assert queue["summary"]["pending_record_review_count"] == 27
+    assert queue["summary"]["next_official_code"] == "272159"
     assert by_code["072010"]["status"] == "reviewed_complete"
     assert by_code["072036"]["status"] == "reviewed_complete"
     assert by_code["122041"]["status"] == "reviewed_complete"

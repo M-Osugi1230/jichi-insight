@@ -1,0 +1,46 @@
+{
+  "id": "yao-phase15-sources",
+  "name_ja": "八尾市",
+  "official_code": "272124",
+  "phase": 15,
+  "quality_boundary": "Current plan identity kept as published (the Sixth Yao City Comprehensive Plan 『八尾新時代しあわせ成長プラン』 in a three-layer basic-concept / basic-plan / implementation-plan structure; the basic concept covers FY2021-FY2028, presenting the future city image 『つながり、かがやき、しあわせつづく、成長都市 八尾』 and six town-development goals; the basic plan is split into an earlier period (FY2021-FY2024) and a latter period (FY2025-FY2028), the current version being the latter basic plan; the implementation plan is reviewed every fiscal year; the latter basic plan's measure structure is a matrix of 33 measures related to the six goals in 83 goal-measure links in total, all enumerated, with measure 16 left vacant), progress governance (administrative evaluation — measure evaluation and project evaluation — under Article 13 of the Citizen Participation and Collaboration Town-Development Basic Ordinance, kept as the municipality's own progress-management framework), budget enactment confirmed in the council's official voting results (bill 議案第18号, passed as proposed on 2026-03-27, with the wording and the date confirmed directly in that document) with the amount kept at the published sen-yen precision and never expanded into synthetic yen, and settlement totals kept at the published yen precision from the official settlement book (the settlement certification bill 認定第1号 was certified on 2025-10-22 at the September 2025 regular session; the real balance of 1,797,799,491 yen is kept at yen precision as directly confirmed in the real-balance statement itself) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "reviewed_at": "2026-11-16",
+  "sources": [
+    {
+      "evidence_location": "八尾市公式Webサイト『第6次八尾市総合計画 後期基本計画』ページは現行計画の公式入口（Phase 14インベントリで確認）。公式『八尾市第6次総合計画 後期基本計画』本編（八尾新時代しあわせ成長プラン。第5章まちづくりの実践・第6章施策について、付属資料に基本構想第1章～第4章を収録）へのリンクを含み、計画の構成（基本構想2021年度～2028年度・基本計画は前期／後期各4年間・実施計画）・将来都市像・6つのまちづくりの目標と取り組み方向（政策）・33施策の施策体系図（マトリクス型）を本編で直接確認",
+      "evidence_role": "comprehensive_plan",
+      "format": "html",
+      "id": "yao-sixth-latter-plan",
+      "official_url": "https://www.city.yao.osaka.jp/shisei/seisaku_keikaku_zaisei/1009538/1009540/1017781.html",
+      "title": "第6次八尾市総合計画 後期基本計画",
+      "use_boundary": "現行計画は第6次八尾市総合計画の後期基本計画（2025年度～2028年度）として保持し、前期基本計画（2021年度～2024年度）の実績と分離する。施策体系はマトリクス型であり、施策と目標の対応を1対1の階層へ変換しない"
+    },
+    {
+      "evidence_location": "八尾市公式Webサイト『行政評価』ページは行政評価の公式入口（Phase 14インベントリで確認）。市民参画と協働のまちづくり基本条例第13条に基づく行政評価の説明と、施策評価（実施計画書・実施計画実績書）・事務事業評価の公表資料へのリンクを含む",
+      "evidence_role": "progress_governance",
+      "format": "html",
+      "id": "yao-administrative-evaluation",
+      "official_url": "https://www.city.yao.osaka.jp/shisei/seisaku_keikaku_zaisei/1009538/1009592/1009580.html",
+      "title": "行政評価（第6次総合計画）",
+      "use_boundary": "行政評価は自治体の評価制度の入口として保持し、source-reportedな評価をJichi Insight独自の達成判定へ変換しない。FY2024の行政評価は前期基本計画期間のものとして版を分離する"
+    },
+    {
+      "evidence_location": "八尾市公式Webサイト『令和8年度当初予算』ページはFY2026当初予算の公式入口（Phase 14インベントリで確認）。会計別当初予算額表（一般会計132,613,637千円・全会計合計239,878,565千円）と、同ページ掲載の公式『令和8年度予算参考資料（当初予算の概要）』で一般会計額を確認し、議案番号・議決結果は八尾市議会公式『2026年2月市議会定例会 議決結果』（議案第18号・2026年3月27日原案可決）で確認",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "yao-budget-2026",
+      "official_url": "https://www.city.yao.osaka.jp/shisei/seisaku_keikaku_zaisei/1009738/1009740/1017102.html",
+      "title": "令和8年度予算",
+      "use_boundary": "FY2026当初予算は成立予算（議案第18号・2026年3月27日原案可決）として保持し、補正予算・決算と別stateで扱う。金額は千円単位の公表値であり、円単位を合成しない"
+    },
+    {
+      "evidence_location": "八尾市公式Webサイト『令和6年度決算』ページはFY2024決算の公式入口（Phase 14インベントリで確認）。同ページ掲載の公式『令和6年度八尾市一般会計・特別会計歳入歳出決算書』（2025年9月8日に八尾市長が提出）の一般会計の会計別決算総括表と実質収支に関する調書で円単位の総額・実質収支を確認し、認定は八尾市議会公式『令和7年9月市議会定例会 議決結果』（認定第1号・2025年10月22日認定）で確認",
+      "evidence_role": "settlement",
+      "format": "html",
+      "id": "yao-settlement-2024",
+      "official_url": "https://www.city.yao.osaka.jp/shisei/seisaku_keikaku_zaisei/1009738/1009743/1009747.html",
+      "title": "令和6年度決算",
+      "use_boundary": "FY2024決算は第6次八尾市総合計画の前期基本計画期間内（2021年度～2024年度）の決算として保持し、決算総額を後期基本計画の施策の実績へ流用しない。認定議案（認定第1号）は2025年10月22日に認定されたものとして保持する"
+    }
+  ]
+}

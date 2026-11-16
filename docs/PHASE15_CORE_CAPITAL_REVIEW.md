@@ -572,13 +572,25 @@ Declared v1 package:
 
 Deferred depth includes the individual projects under the 32 policy-goal units and 79 policies, the per-policy indicator values (subjective and objective indicators), cross-checks against the budget book and the settlement book （事項別明細書） at section level, the content of the audit commissioners' settlement review opinion, direct confirmation of the real-balance statement itself in the settlement book, the next comprehensive plan's framework itself, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Fortieth completion — Yao
+
+八尾市を40番目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 第6次八尾市総合計画『八尾新時代しあわせ成長プラン』 — in a three-layer structure of basic concept （基本構想）, basic plan （基本計画） and implementation plan （実施計画） established under the Yao City Comprehensive Plan Establishment Ordinance, with the basic concept and the basic plan enacted by council vote. The basic concept covers FY2021-FY2028 (eight years), presenting the future city image 『つながり、かがやき、しあわせつづく、成長都市 八尾』, six town-development goals with their policy directions, and the town-development promotion measures; the basic plan splits the eight years into an earlier period (FY2021-FY2024) and a latter period (FY2025-FY2028) of four years each, the current version being the latter basic plan; the implementation plan is reviewed every fiscal year. The latter basic plan's measure structure is a matrix: its 33 measures relate to the six goals in 83 goal-measure links in total (all 33 measures and all 83 links are enumerated); the earlier basic plan's measure 16 『上水道の安定供給』 was removed from the latter plan's structure and the number left vacant when the waterworks was integrated into the Osaka Wide-Area Waterworks Enterprise Group in April 2025. Progress is managed through administrative evaluation under Article 13 of the Citizen Participation and Collaboration Town-Development Basic Ordinance (measure evaluation via implementation plan documents and implementation plan result documents; project evaluation from the viewpoints of appropriateness, effectiveness and efficiency) — the municipality's own progress-management framework. The transition from the earlier basic plan to the latter basic plan within the Sixth Plan is kept only as a version chronology record, and results from the earlier period are never connected forward into the latter period
+- FY2026 general-account initial budget: 132,613,637 thousand yen (enacted; bill 議案第18号 『令和8年度八尾市一般会計予算の件』, passed as proposed （原案可決） on 2026-03-27 at the February 2026 regular session per the council's official voting results (『2026年2月市議会定例会 議決結果』), with both the published wording and the voting date confirmed directly in that document rather than inferred from the session schedule). The amount is published at sen-yen (thousand-yen) precision, so it is kept at that precision and yen-precision amounts are not synthesized
+- FY2024 general-account settlement at yen precision as published: revenue 126,116,660,528 yen / expenditure 123,882,040,366 yen (their difference of 2,234,620,162 yen matches the balance printed in the real-balance statement of the official settlement book; the real balance is 1,797,799,491 yen, kept at yen precision as directly confirmed in that statement itself). The settlement certification bill, bill 認定第1号, was certified on 2025-10-22 at the September 2025 regular session per the council's official voting results; discussion-count tallies in public-relations materials are not voting results and were not used to confirm the general-account certification. FY2024 is a settlement of the earlier basic plan period (FY2021-FY2024), so its plan version differs from the current latter basic plan, and no official total-level mapping from settlement totals to the plan's measures exists, so the totals are not linked to the plan's measures and the linkage stays not_assessable
+
+Deferred depth includes the individual projects under the 33 measures, the per-measure indicator values, cross-checks against the budget book and the settlement book （事項別明細書） at section level, the content of the audit commissioners' settlement review opinion, the earlier basic plan's full measure structure, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 39 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市
+- Reviewed complete: 40 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市
 - Review in progress: 0
-- Pending record review: 28
+- Pending record review: 27
 - Blocked source inventory: 0
-- Next official code: 272124
+- Next official code: 272159
 
 ## Definition of Phase 15 completion
 
