@@ -1,0 +1,479 @@
+{
+ "candidate_id": "nara-phase15-review-candidate",
+ "candidate_package": {
+  "evidence_packets": [
+   {
+    "claims": [
+     {
+      "decision": "needs_review",
+      "field": "amount_yen",
+      "location_note": "奈良市財政課公式『令和8年度当初予算の概要』の予算規模で一般会計193,425,597千円を確認した。議決の経過は市議会公式『議決結果一覧表（令和8年3月定例会）』で議案第16号『令和8年度奈良市一般会計予算』が2026年3月26日に修正可決されたことを確認し、予算決算委員会の公式資料として公表された修正案（宮池委員提出）で、第1条第1項の総額が原案195,000,000千円から193,425,597千円へ修正されることを確認した",
+      "review_note": "成立した当初予算の額を、修正可決後の額を公表する市の公式予算資料の千円単位の表から抽出し、市議会の公式議決結果一覧表で議案第16号が修正可決されたことを確認したステージング。原案の額（195,000,000千円）は成立額ではないため記録していない。人間による確認待ちステージング。",
+      "source_ids": [
+       "nara-budget-2026"
+      ],
+      "statement": "令和8年度一般会計当初予算は193,425,597千円（193,425,597,000円）であり、議案第16号『令和8年度奈良市一般会計予算』として令和8年3月定例会で修正可決され成立した予算である（市議会公式『議決結果一覧表（令和8年3月定例会）』の議決結果の文言は『修正可決』、議決日は2026年3月26日）。修正は歳入歳出総額を原案195,000,000千円から1,574,403千円減額するものである。公表精度は千円単位のため千円精度のまま記録する。"
+     }
+    ],
+    "id": "evidence-nara-city-2026-total-expenditure",
+    "open_questions": [
+     "予算書・予算に関する説明書（事項別明細書）の款別合計との最終突合。",
+     "補正予算による変更経過は本候補では追わない。"
+    ],
+    "review_status": "needs_review",
+    "subject_id": "jp-local-292010-fiscal-2026-total-expenditure",
+    "subject_type": "fiscal_record"
+   },
+   {
+    "claims": [
+     {
+      "decision": "needs_review",
+      "field": "amount_yen",
+      "location_note": "奈良市公式『令和6年度決算総括表（一般会計及び特別会計）』（『令和6年度決算の概要』ページから公表される公式PDF、単位：円）における一般会計の収入済額161,996,348,913円の記載（円単位）。認定の経過は市議会公式『議決結果一覧表（令和7年9月定例会）』で報告第41号『令和6年度奈良市一般会計歳入歳出決算の認定について』が2025年9月29日に認定されたことを確認した",
+      "review_note": "決算総括表から一般会計歳入総額を円単位で抽出したステージング。財政課ページの千円表示（161,996,349千円）はこの円単位の値の千円表示と整合する。認定の事件番号（報告第41号）と認定日（2025年9月29日）は議会の公式資料で確認済み。人間による確認待ちステージング。",
+      "source_ids": [
+       "nara-settlement-2024"
+      ],
+      "statement": "令和6年度一般会計決算の歳入総額は161,996,348,913円である（奈良市公式『令和6年度決算総括表（一般会計及び特別会計）』による。円単位）。当該決算の認定は、報告第41号『令和6年度奈良市一般会計歳入歳出決算の認定について』として令和7年9月定例会へ提出され、2025年9月29日に認定された（市議会公式『議決結果一覧表（令和7年9月定例会）』で確認）。"
+     }
+    ],
+    "id": "evidence-nara-city-2024-total-revenue",
+    "open_questions": [
+     "決算書（歳入歳出決算事項別明細書）の款別合計との最終突合。",
+     "監査委員の決算審査意見書の内容（個別の指摘事項等）の精査。"
+    ],
+    "review_status": "needs_review",
+    "subject_id": "jp-local-292010-fiscal-2024-total-revenue",
+    "subject_type": "fiscal_record"
+   },
+   {
+    "claims": [
+     {
+      "decision": "needs_review",
+      "field": "amount_yen",
+      "location_note": "同じく決算総括表における一般会計の支出済額157,827,488,682円の記載（円単位）。歳入総額との差引（形式収支）4,168,860,231円、実質収支3,348,707,231円（繰り越すべき財源820,153,000円）も同表による",
+      "review_note": "決算総括表から一般会計歳出総額を円単位で抽出し、歳入総額との差引（形式収支4,168,860,231円）と実質収支（3,348,707,231円）が検算一致することを確認したステージング。人間による確認待ちステージング。",
+      "source_ids": [
+       "nara-settlement-2024"
+      ],
+      "statement": "令和6年度一般会計決算の歳出総額は157,827,488,682円である（奈良市公式『令和6年度決算総括表（一般会計及び特別会計）』による。円単位）。歳入総額161,996,348,913円との差引は4,168,860,231円で、同表の形式収支と検算一致する。実質収支は3,348,707,231円（繰り越すべき財源820,153,000円）であり、円単位のまま記録する。当該決算は報告第41号として令和7年9月定例会で2025年9月29日に認定された。"
+     }
+    ],
+    "id": "evidence-nara-city-2024-total-expenditure",
+    "open_questions": [
+     "決算書（歳入歳出決算事項別明細書）の款別合計との最終突合。"
+    ],
+    "review_status": "needs_review",
+    "subject_id": "jp-local-292010-fiscal-2024-total-expenditure",
+    "subject_type": "fiscal_record"
+   }
+  ],
+  "fiscal_records": [
+   {
+    "account_type": "general",
+    "amount_yen": 193425597000,
+    "confidence": "medium",
+    "fiscal_year": 2026,
+    "id": "jp-local-292010-fiscal-2026-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算総額",
+    "municipality_id": "jp-local-292010",
+    "note": "奈良市公式『令和8年度当初予算の概要』で確認した令和8年度一般会計当初予算総額193,425,597千円。公表精度は千円単位であり、その精度のまま記録し円単位を合成していない。当初予算は議案第16号『令和8年度奈良市一般会計予算』として令和8年3月定例会に原案195,000,000千円で提出され、予算決算委員会で宮池委員提出の修正案が可決されたため、本会議で2026年3月26日に修正可決され成立した（市議会公式『議決結果一覧表（令和8年3月定例会）』の議決結果の文言は『修正可決』）。修正は歳入歳出総額を1,574,403千円減額するもので、成立額は修正後の193,425,597千円である（財政課ページの予算規模も同額であり、令和8年度一般会計補正予算（第1号）の補正前の額とも一致する）。原案の額を成立額として記録していない。補正予算や決算とは別stateで扱う。",
+    "period_end": "2027-03-31",
+    "period_start": "2026-04-01",
+    "review_status": "needs_review",
+    "sources": [
+     "nara-budget-2026"
+    ],
+    "stage": "initial_budget",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+   },
+   {
+    "account_type": "general",
+    "amount_yen": 161996348913,
+    "confidence": "medium",
+    "fiscal_year": 2024,
+    "id": "jp-local-292010-fiscal-2024-total-revenue",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入額",
+    "municipality_id": "jp-local-292010",
+    "note": "奈良市公式『令和6年度決算総括表（一般会計及び特別会計）』（単位：円）に示された一般会計の収入済額161,996,348,913円。円単位の精密値が公式資料に印字されているため円単位のまま記録する（市財政課『令和6年度決算の概要』ページの千円表示161,996,349千円はこの値の千円表示と整合する）。当該決算は報告第41号『令和6年度奈良市一般会計歳入歳出決算の認定について』として令和7年9月定例会で2025年9月29日に認定された（市議会公式『議決結果一覧表（令和7年9月定例会）』で確認）。FY2024は奈良市第5次総合計画前期推進方針（2022年度～2026年度）の期間内の決算である。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "needs_review",
+    "sources": [
+     "nara-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+   },
+   {
+    "account_type": "general",
+    "amount_yen": 157827488682,
+    "confidence": "medium",
+    "fiscal_year": 2024,
+    "id": "jp-local-292010-fiscal-2024-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出額",
+    "municipality_id": "jp-local-292010",
+    "note": "同じく決算総括表に示された一般会計の支出済額157,827,488,682円（円単位のまま記録）。歳入総額161,996,348,913円との差引（形式収支）は4,168,860,231円で、同表の記載と検算一致する。実質収支は3,348,707,231円である（翌年度へ繰り越すべき財源820,153,000円。4,168,860,231円－820,153,000円＝3,348,707,231円で検算一致し、いずれも同表で確認した）。当該決算は報告第41号として令和7年9月定例会で2025年9月29日に認定された。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "needs_review",
+    "sources": [
+     "nara-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+   }
+  ],
+  "plan_review": {
+   "id": "phase15-nara-plan-review",
+   "name_ja": "奈良市",
+   "official_code": "292010",
+   "records": [
+    {
+     "decision": "needs_review",
+     "evidence_location": "奈良市公式『奈良市第5次総合計画』本編（公式PDF）で、計画の構成（未来ビジョンと推進方針）、計画期間（未来ビジョン2022年度～2031年度、推進方針は前期2022年度～2026年度・後期2027年度～2031年度）、2031年のまちの姿、4つのまちの方向性、基本姿勢、重点分野を直接確認した",
+     "evidence_role": "current_plan_identity",
+     "id": "nara-current-plan-period",
+     "review_note": "総合計画の構成（未来ビジョン・推進方針）と、未来ビジョンの10年、推進方針の前期・後期を別period semanticsとして保持した。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.nara.lg.jp/site/soukei5/",
+     "statement": "奈良市の総合計画は奈良市第5次総合計画であり、未来ビジョンと推進方針で構成される。未来ビジョンは2031年度を目標年度とし、市民とともに描いた「2031年のまちの姿」として『「わたし」からはじめる「わたしたち」のまち 奈良』を掲げ、4つの「まちの方向性」（Ⅰ 誰もが子育てに関わり多様な生き方を認めあうまち／Ⅱ 地域の特性をいかした様々な働き方にチャレンジできるまち／Ⅲ 誰かのやりたいことが他の誰かのやってほしいことになる機会をみんなでつくっていけるまち／Ⅳ 命と生活を守るために自分たちで考え行動できるまち）と、「互いのつながりを大切にし今と未来をともにつくり出せるまち」という基本姿勢、4つの重点分野（未来を育てる（子育て支援）／活気を生み出す（経済活性化）／生活をつなぐ（健康長寿）／安全を守る（防災・減災））を設定する。推進方針は未来ビジョンの実現に向けた施策の方向性を体系的に示すもので、計画期間は前期2022年度～2026年度・後期2027年度～2031年度に分けられ、現行は前期推進方針である。未来ビジョンの10年と推進方針の前期・後期を別period semanticsとして保持し、一律の固定期間へ潰さない。Phase 14インベントリの記録（奈良市第5次総合計画 2022年度～2031年度・前期推進方針2022年度～2026年度・verified_fixed_period）とも一致する。",
+     "title": "奈良市第5次総合計画の構成（未来ビジョン2022年度～2031年度と前期・後期推進方針）",
+     "value": "奈良市第5次総合計画は未来ビジョン2022年度～2031年度（10年）／推進方針は前期2022年度～2026年度・後期2027年度～2031年度で現行は前期推進方針／後期推進方針は2026年度に策定過程"
+    },
+    {
+     "decision": "needs_review",
+     "evidence_location": "奈良市公式『奈良市第5次総合計画』本編の推進方針の施策体系図（本編pp.136-137）で、5章の構成と各章の施策を直接確認した",
+     "evidence_role": "policy_structure",
+     "id": "nara-current-policy-structure",
+     "review_note": "前期推進方針の施策体系（5章・29施策）を章単位で保持した。施策の下の方向性・事業単位の対応付けは行わない。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.nara.lg.jp/site/soukei5/",
+     "statement": "前期推進方針の施策体系は、まちの方向性と基本姿勢に対応する5章・29施策で構成される。第1章「ひとづくり」（子育て、教育、人権、男女共同）は6施策（母子保健の推進と子育て家庭への支援の充実、子育て環境の充実、学校教育の充実、教育支援体制の充実、人権と平和の尊重、男女共同参画社会の実現）、第2章「しごとづくり」（観光、産業・労働）は4施策（観光・交流の促進、商工・サービス業の活性化、農林業の振興、雇用・労働環境の充実）、第3章「くらしづくり」（福祉、健康、地域活動、いきがい、文化）は8施策（地域福祉と総合的な生活保障の推進、障害者福祉の充実、高齢者福祉の充実、医療体制の充実と健康の増進、地域コミュニティと市民活動の活性化、文化・スポーツの振興、社会教育の推進、文化遺産の保存と活用）、第4章「まちづくり」（安全・安心、環境・衛生、都市基盤）は9施策（防災対策の充実、消防・救急救助体制の充実、防犯対策と消費者保護の推進、環境の保全、生活衛生・環境衛生の向上、土地・景観の整備、交通基盤の整備と交通安全の確保、住環境の向上、利水・治水対策の推進）、第5章「しくみづくり」（協働、行財政運営）は2施策（市民参画と開かれた市政の推進、行財政改革の推進）である。各施策の下の施策の方向性（細目）の全件列挙は本候補では行わず、追加depthとして保持する。",
+     "title": "前期推進方針の施策体系（5章・29施策）"
+    },
+    {
+     "decision": "needs_review",
+     "evidence_location": "市議会公式『議決結果一覧表（令和7年9月定例会）』で報告第52号の報告（2025年9月5日）を確認し、各事業の取組状況の公式入口（Phase 14インベントリで確認）とあわせて保持した",
+     "evidence_role": "progress_governance",
+     "id": "nara-progress-governance-framework",
+     "review_note": "進行管理の枠組み（毎年度の実施状況公表・議会報告）を年度実績へ読み替えず保持した。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.nara.lg.jp/site/soukei5/list968.html",
+     "statement": "第5次総合計画の進行管理は、計画の実施状況を毎年度とりまとめて公表し市議会へ報告する自治体の枠組みによる。令和6年度の実施状況は報告第52号『奈良市第5次総合計画の実施状況（令和6年度）の報告について』として2025年9月5日に市議会へ報告され、各事業の取組状況は市公式ページで公表される。自治体の進捗管理をJichi Insight独自の達成判定へ変換しない。",
+     "title": "計画の進行管理（実施状況の毎年度公表と議会への報告）"
+    },
+    {
+     "decision": "needs_review",
+     "evidence_location": "第4次総合計画の目標年度変更と第5次総合計画の開始延期は市公式『奈良市第5次総合計画』本編の策定経緯で確認した。後期推進方針の策定過程は公式の策定ページ（Phase 14インベントリで確認）による",
+     "evidence_role": "plan_transition",
+     "id": "nara-plan-transition",
+     "review_note": "前計画からの移行と後期推進方針の策定過程を版の履歴として分離記録した。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.nara.lg.jp/soshiki/4/259676.html",
+     "statement": "第5次総合計画は、新型コロナウイルス感染症の影響を踏まえて計画開始年度を1年延期して策定されたもので、これに伴い前計画である第4次総合計画の目標年度は2020年度から2021年度へ変更され、第5次総合計画は2022年度に開始した。また、推進方針の後期（2027年度～2031年度）は2026年度に策定過程にあり、確定した後期推進方針の内容は現行の前期推進方針へ先取りしない。移行は版の履歴として分離して記録する。",
+     "title": "第4次総合計画からの移行と後期推進方針の策定過程"
+    },
+    {
+     "decision": "not_assessable",
+     "evidence_location": "決算総額は『令和6年度決算総括表』、認定結果は市議会公式『議決結果一覧表（令和7年9月定例会）』で確認した。総額レベルの対応付けの不存在は、決算の概要・主要な施策の成果説明書の公表範囲で確認した",
+     "evidence_role": "annual_progress",
+     "fiscal_year": 2024,
+     "id": "nara-fy2024-settlement-linkage",
+     "review_note": "版は同一でも総額レベルの対応付けがないため接続しないことを明記した。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.nara.lg.jp/site/zaisei/246327.html",
+     "statement": "FY2024決算は前期推進方針（2022年度～2026年度）の期間内の決算であり、計画の版は現行と同一である。決算総額（円単位）と認定結果（報告第41号・2025年9月29日認定）は一次資料で確認済みであるが、決算総額と5章・29施策との総額レベルの対応付けは公式資料にないため、接続はnot_assessableとし、決算値を計画のcurrent actualへ流用しない。",
+     "title": "令和6年度決算と奈良市第5次総合計画前期推進方針の施策体系の接続"
+    }
+   ],
+   "review_status": "pending_record_review"
+  },
+  "policy_structure": {
+   "current_plan": {
+    "end_fiscal_year": 2026,
+    "management_principles": [
+     "総合計画は奈良市第5次総合計画であり、未来ビジョン（2022年度～2031年度の10年）と推進方針（前期2022年度～2026年度・後期2027年度～2031年度で現行は前期推進方針）で構成する。未来ビジョンの期間と推進方針の前期・後期を別period semanticsとして保持し、一律の固定期間modelへ潰さない",
+     "前期推進方針の施策体系は5章・29施策で構成し、未来ビジョンは4つのまちの方向性と基本姿勢、4つの重点分野（未来を育てる／活気を生み出す／生活をつなぐ／安全を守る）を置く。各施策の下の施策の方向性・指標の全件列挙は本候補では行わず、追加depthとして保持する",
+     "進行管理は、計画の実施状況を毎年度とりまとめて公表し市議会へ報告する自治体の枠組み（令和6年度分は報告第52号として2025年9月5日に報告）と、各事業の取組状況の公表による。自治体の進捗管理をJichi Insight独自の達成判定へ変換しない",
+     "FY2024決算は前期推進方針（2022年度～2026年度）の期間内の決算であり、計画の版は現行と同一である。決算総額（円単位）と認定結果（報告第41号・2025年9月29日認定）は一次資料で確認済みであるが、決算総額と5章・29施策との総額レベルの対応付けは公式資料にないため、決算値を計画のcurrent actualへ流用しない"
+    ],
+    "period_status": "verified_fixed_period",
+    "policy_fields": [
+     {
+      "id": "field-1",
+      "measures": [],
+      "name_ja": "第1章 ひとづくり：母子保健の推進と子育て家庭への支援の充実"
+     },
+     {
+      "id": "field-2",
+      "measures": [],
+      "name_ja": "第1章 ひとづくり：子育て環境の充実"
+     },
+     {
+      "id": "field-3",
+      "measures": [],
+      "name_ja": "第1章 ひとづくり：学校教育の充実"
+     },
+     {
+      "id": "field-4",
+      "measures": [],
+      "name_ja": "第1章 ひとづくり：教育支援体制の充実"
+     },
+     {
+      "id": "field-5",
+      "measures": [],
+      "name_ja": "第1章 ひとづくり：人権と平和の尊重"
+     },
+     {
+      "id": "field-6",
+      "measures": [],
+      "name_ja": "第1章 ひとづくり：男女共同参画社会の実現"
+     },
+     {
+      "id": "field-7",
+      "measures": [],
+      "name_ja": "第2章 しごとづくり：観光・交流の促進"
+     },
+     {
+      "id": "field-8",
+      "measures": [],
+      "name_ja": "第2章 しごとづくり：商工・サービス業の活性化"
+     },
+     {
+      "id": "field-9",
+      "measures": [],
+      "name_ja": "第2章 しごとづくり：農林業の振興"
+     },
+     {
+      "id": "field-10",
+      "measures": [],
+      "name_ja": "第2章 しごとづくり：雇用・労働環境の充実"
+     },
+     {
+      "id": "field-11",
+      "measures": [],
+      "name_ja": "第3章 くらしづくり：地域福祉と総合的な生活保障の推進"
+     },
+     {
+      "id": "field-12",
+      "measures": [],
+      "name_ja": "第3章 くらしづくり：障害者福祉の充実"
+     },
+     {
+      "id": "field-13",
+      "measures": [],
+      "name_ja": "第3章 くらしづくり：高齢者福祉の充実"
+     },
+     {
+      "id": "field-14",
+      "measures": [],
+      "name_ja": "第3章 くらしづくり：医療体制の充実と健康の増進"
+     },
+     {
+      "id": "field-15",
+      "measures": [],
+      "name_ja": "第3章 くらしづくり：地域コミュニティと市民活動の活性化"
+     },
+     {
+      "id": "field-16",
+      "measures": [],
+      "name_ja": "第3章 くらしづくり：文化・スポーツの振興"
+     },
+     {
+      "id": "field-17",
+      "measures": [],
+      "name_ja": "第3章 くらしづくり：社会教育の推進"
+     },
+     {
+      "id": "field-18",
+      "measures": [],
+      "name_ja": "第3章 くらしづくり：文化遺産の保存と活用"
+     },
+     {
+      "id": "field-19",
+      "measures": [],
+      "name_ja": "第4章 まちづくり：防災対策の充実"
+     },
+     {
+      "id": "field-20",
+      "measures": [],
+      "name_ja": "第4章 まちづくり：消防・救急救助体制の充実"
+     },
+     {
+      "id": "field-21",
+      "measures": [],
+      "name_ja": "第4章 まちづくり：防犯対策と消費者保護の推進"
+     },
+     {
+      "id": "field-22",
+      "measures": [],
+      "name_ja": "第4章 まちづくり：環境の保全"
+     },
+     {
+      "id": "field-23",
+      "measures": [],
+      "name_ja": "第4章 まちづくり：生活衛生・環境衛生の向上"
+     },
+     {
+      "id": "field-24",
+      "measures": [],
+      "name_ja": "第4章 まちづくり：土地・景観の整備"
+     },
+     {
+      "id": "field-25",
+      "measures": [],
+      "name_ja": "第4章 まちづくり：交通基盤の整備と交通安全の確保"
+     },
+     {
+      "id": "field-26",
+      "measures": [],
+      "name_ja": "第4章 まちづくり：住環境の向上"
+     },
+     {
+      "id": "field-27",
+      "measures": [],
+      "name_ja": "第4章 まちづくり：利水・治水対策の推進"
+     },
+     {
+      "id": "field-28",
+      "measures": [],
+      "name_ja": "第5章 しくみづくり：市民参画と開かれた市政の推進"
+     },
+     {
+      "id": "field-29",
+      "measures": [],
+      "name_ja": "第5章 しくみづくり：行財政改革の推進"
+     }
+    ],
+    "start_fiscal_year": 2022,
+    "title": "奈良市第5次総合計画 前期推進方針（2022年度～2026年度）",
+    "vision": "「わたし」からはじめる「わたしたち」のまち 奈良"
+   },
+   "id": "nara-current-policy-structure",
+   "name_ja": "奈良市",
+   "official_code": "292010",
+   "phase": 15
+  },
+  "progress_review": {
+   "id": "nara-current-progress-review-summary",
+   "implementation_plan_framework": {
+    "evaluation_structure": "進行管理は、計画の実施状況を毎年度とりまとめて公表し市議会へ報告する自治体の枠組みである。令和6年度の実施状況は報告第52号として2025年9月5日に市議会へ報告され、各事業の取組状況は市公式ページで公表される。自治体の進捗管理をJichi Insight独自の達成判定へ変換せず、枠組みそのものを年度実績へ読み替えない",
+    "period": "前期推進方針（2022年度～2026年度）の期間を通じて、実施状況の毎年度公表・議会報告のもとで進捗管理を行う。FY2024決算は前期推進方針の期間内の決算で計画の版は現行と同一であり、決算総額（円単位）と認定結果（報告第41号・2025年9月29日認定）は一次資料で確認済みであるが、決算総額と5章・29施策との総額レベルの対応付けは公式資料にないため、進行管理の対象値として接続しない",
+    "title": "奈良市第5次総合計画の実施状況の毎年度公表と議会への報告による進行管理"
+   },
+   "name_ja": "奈良市",
+   "official_code": "292010",
+   "phase": 15,
+   "review_status": "review_candidate_staging"
+  },
+  "source_catalog": {
+   "id": "nara-phase15-sources",
+   "name_ja": "奈良市",
+   "official_code": "292010",
+   "phase": 15,
+   "sources": [
+    {
+     "evidence_location": "計画の構成・期間・将来像・施策体系は市公式『奈良市第5次総合計画』本編（公式PDF）で直接確認した。未来ビジョンは2022年度～2031年度、推進方針は前期2022年度～2026年度・後期2027年度～2031年度であり、2031年のまちの姿『「わたし」からはじめる「わたしたち」のまち 奈良』、4つのまちの方向性、基本姿勢、重点分野4件、推進方針の施策体系（5章・29施策）を本編の体系図で確認した",
+     "evidence_role": "comprehensive_plan",
+     "format": "html",
+     "id": "nara-fifth-plan",
+     "official_url": "https://www.city.nara.lg.jp/site/soukei5/",
+     "title": "奈良市第5次総合計画",
+     "use_boundary": "現行計画は奈良市第5次総合計画として保持し、未来ビジョンと推進方針（前期／後期）のlayer semanticsを分離する。策定中の後期推進方針の内容を現行の前期推進方針へ先取りしない",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    },
+    {
+     "evidence_location": "第5次総合計画の事業進捗を公表する公式入口（Phase 14インベントリで確認）。あわせて令和6年度の実施状況が報告第52号『奈良市第5次総合計画の実施状況（令和6年度）の報告について』として2025年9月5日に市議会へ報告されたことを、市議会公式『議決結果一覧表（令和7年9月定例会）』で確認した",
+     "evidence_role": "annual_progress",
+     "format": "html",
+     "id": "nara-project-progress",
+     "official_url": "https://www.city.nara.lg.jp/site/soukei5/list968.html",
+     "title": "各事業の取組状況",
+     "use_boundary": "自治体の進捗公表をJichi Insight独自の達成評価や因果効果へ変換しない。事業進捗と財政決算は別Evidence roleとして保持する",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    },
+    {
+     "evidence_location": "後期推進方針（2027年度～2031年度）の策定過程を公表する公式ページ（Phase 14インベントリで確認）。2026年度時点では策定過程であり、確定した後期推進方針の内容は公表されていない",
+     "evidence_role": "plan_transition",
+     "format": "html",
+     "id": "nara-latter-policy-transition",
+     "official_url": "https://www.city.nara.lg.jp/soshiki/4/259676.html",
+     "title": "奈良市第5次総合計画後期推進方針策定",
+     "use_boundary": "策定過程をdraft/transition laneとして保持し、前期実績やアンケート結果を後期確定内容へ読み替えない",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    },
+    {
+     "evidence_location": "FY2026当初予算の成立額は、市財政課公式『令和8年度当初予算の概要』の予算規模で一般会計193,425,597千円を確認した。同額は修正可決後の額であり、市議会公式『議決結果一覧表（令和8年3月定例会）』で議案第16号『令和8年度奈良市一般会計予算』が2026年3月26日に修正可決されたこと、予算決算委員会に提出された修正案（宮池委員提出・公式PDF）が第1条第1項の総額を原案195,000,000千円から193,425,597千円へ1,574,403千円減額するものであることを確認した。令和8年度一般会計補正予算（第1号）が193,425,597千円を補正前の額とすることも整合する",
+     "evidence_role": "budget",
+     "format": "html",
+     "id": "nara-budget-2026",
+     "official_url": "https://www.city.nara.lg.jp/site/zaisei/259233.html",
+     "title": "令和8年度当初予算の概要",
+     "use_boundary": "FY2026当初予算は補正予算・決算と別stateで保持する。金額は千円単位の公表値であり、円単位を合成しない。議決結果は議決結果一覧表の文言どおり『修正可決』として記録し、原案の額（195,000,000千円）を成立額として記録しない",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    },
+    {
+     "evidence_location": "FY2024決算額は、同ページから公表される『令和6年度決算総括表（一般会計及び特別会計）』（単位：円）で、一般会計の収入済額161,996,348,913円・支出済額157,827,488,682円・差引形式収支4,168,860,231円・繰り越すべき財源820,153,000円・実質収支3,348,707,231円を確認し、差引と実質収支が検算一致した。同ページの一般会計決算の千円表示（歳入161,996,349千円・歳出157,827,489千円・形式収支4,168,860千円・実質収支3,348,707千円）とも整合する。決算の認定は市議会公式『議決結果一覧表（令和7年9月定例会）』で、報告第41号『令和6年度奈良市一般会計歳入歳出決算の認定について』が2025年9月29日に認定されたことを確認した",
+     "evidence_role": "settlement_and_major_measures",
+     "format": "html",
+     "id": "nara-settlement-2024",
+     "official_url": "https://www.city.nara.lg.jp/site/zaisei/246327.html",
+     "title": "令和6年度決算の概要",
+     "use_boundary": "FY2024決算は予算・補正と別stateで保持する。円単位の値は決算総括表に印字された精密値であり、千円表示からの合成ではない。認定結果は議決結果一覧表の文言どおり『認定』として記録する",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    }
+   ]
+  }
+ },
+ "deferred_depth": [
+  {
+   "boundary": "前期推進方針の29施策ごとの施策の方向性・指標の全件列挙は追加depthとし、公式対応が確認できるまで昇格しない。5章・29施策の体系自体は候補に保持するが、施策の下の方向性・事業単位の対応付けは行わない。",
+   "id": "current-plan-granular-kpi-and-project-linkage",
+   "status": "deferred_not_required_for_candidate_staging"
+  },
+  {
+   "boundary": "FY2026当初予算の議決結果（議案第16号・修正可決・議決日2026年3月26日）と、FY2024決算の認定結果（報告第41号・認定・認定日2025年9月29日）は、市議会公式の議決結果一覧表と修正案の公式文書による確認を完了し、候補の財政記録・証拠パケット側に反映している。成立額は修正後の予算額（193,425,597千円）で確認済みであり、議決日はいずれも議決結果一覧表に印字された日付で特定したため、会議録による最終確認は必須としない。予算書・決算書の事項別明細書の款別合計との最終突合と、監査委員の決算審査意見書の内容精査は未実施のまま保持する。",
+   "id": "fiscal-vote-and-certification-verification",
+   "status": "deferred_not_required_for_candidate_staging"
+  },
+  {
+   "boundary": "前総合計画（第4次総合計画）の事業・評価の全件列挙は本候補では行わない。前計画から現行計画への移行は版の履歴として別途記録し、前計画期間の実績を現行計画の期間へ前倒し接続しない。策定中の後期推進方針（2027年度～2031年度）の内容も、確定するまで前期推進方針へ先取りしない。",
+   "id": "plan-transition-version-depth",
+   "status": "deferred_not_required_for_candidate_staging"
+  },
+  {
+   "boundary": "奈良市総合計画・進捗管理・財政等のステージングは政策効果の因果認定や他都市比較可能性を意味しない。進捗管理（自治体の進行管理の枠組み）をJichi Insight独自の達成判定へ変換しない。",
+   "id": "policy-outcome-causal-and-cross-city-comparability",
+   "status": "deferred_not_required_for_candidate_staging"
+  }
+ ],
+ "human_review": {
+  "boundary": "A person must check the candidate against the cited primary sources before any promotion to reviewed_complete.",
+  "required": true,
+  "reviewed_at": null,
+  "reviewer_note": null,
+  "status": "pending"
+ },
+ "name_ja": "奈良市",
+ "official_code": "292010",
+ "package_state": "prepared",
+ "phase": 15,
+ "publication": {
+  "boundary": "Candidate data is staging-only and must not be loaded by the public site or treated as reviewed data.",
+  "eligible": false
+ },
+ "quality_boundaries": [
+  "Promoted facts must come from official primary sources with stable evidence locators.",
+  "Unpublished, unavailable, historical-only, draft, and unresolved facts must remain explicit.",
+  "No Jichi Insight policy-achievement score, causal attribution, or unverified cross-city ranking may be created.",
+  "This candidate is machine-prepared evidence only and is not Reviewed until a person checks the primary sources."
+ ],
+ "schema_version": 1,
+ "source_inventory_path": "data/indexed/nara-city/source_inventory.json",
+ "status": "review_candidate"
+}
