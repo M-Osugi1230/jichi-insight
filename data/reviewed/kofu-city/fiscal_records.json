@@ -1,0 +1,65 @@
+[
+  {
+    "account_type": "general",
+    "amount_yen": 91787060000,
+    "confidence": "high",
+    "fiscal_year": 2026,
+    "id": "jp-local-192015-fiscal-2026-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算（可決）",
+    "municipality_id": "jp-local-192015",
+    "note": "甲府市公式『令和8年度予算』ページからリンクされる『令和8年度甲府市当初予算案資料』（甲府市）の会計別当初予算一覧（単位 千円）に一般会計91,787,060千円と記載され、同資料の一般会計歳入予算款別一覧の歳入合計・歳出予算款別一覧の歳出合計とも91,787,060千円で一致する令和8年度当初予算額。公表精度は千円単位であり、円単位の内訳は公表されていないため千円精度のまま記録する。甲府市議会公式『令和8年3月定例会審議結果』で議案第5号『令和8年度甲府市一般会計予算』が令和8年3月25日に可決された成立当初予算であり、予算案段階の額ではない。補正予算や決算とは別stateで扱う。",
+    "period_end": "2027-03-31",
+    "period_start": "2026-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "kofu-budget-2026"
+    ],
+    "stage": "initial_budget",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 91644865806,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-192015-fiscal-2024-total-revenue",
+    "metric": "total_revenue",
+    "metric_label": "一般会計決算歳入",
+    "municipality_id": "jp-local-192015",
+    "note": "甲府市監査委員『令和6年度甲府市一般会計・特別会計歳入歳出決算及び基金運用状況審査意見書』（甲監発第24号・令和7年8月1日）の一般会計総括に記載された歳入総額91,644,865,806円（円単位）。歳出総額90,039,308,506円との差引額1,605,557,300円は同審査意見書に掲載された歳入歳出差引額と一致する（実質収支は、翌年度へ繰り越すべき財源414,323,972円を差し引いた1,191,233,328円）。審査意見書は、各会計の決算の計数が関係帳簿及び証ひょう書類と符合し正確であり、決算の内容及び予算執行状況も適正妥当であると認めている。令和6年度決算は議案第95号『令和6年度甲府市各会計別決算の認定について』として令和7年9月定例会で認定された（甲府市議会公式『令和7年9月定例会審議結果』で議決日は令和7年10月2日。一般会計と特別会計を合わせた各会計別決算の認定であり、企業会計の決算認定は第96号から第102号議案である）。FY2024は第六次甲府市総合計画の計画期間の決算である。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "kofu-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 90039308506,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-192015-fiscal-2024-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計決算歳出",
+    "municipality_id": "jp-local-192015",
+    "note": "同審査意見書の一般会計総括に記載された歳出総額90,039,308,506円（円単位）。歳入総額91,644,865,806円との差引額1,605,557,300円で検算が一致し、実質収支は1,191,233,328円である。令和6年度決算は議案第95号として令和7年10月2日に認定された。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "kofu-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  }
+]

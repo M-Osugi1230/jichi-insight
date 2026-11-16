@@ -32,7 +32,7 @@ def plan_record(candidate: dict, record_id: str) -> dict:
     return next(record for record in records if record["id"] == record_id)
 
 
-def test_kofu_candidate_validates_and_stays_unreviewed() -> None:
+def test_kofu_candidate_validates_and_is_not_published() -> None:
     candidate = load_json(CANDIDATE_PATH)
     schema = load_json(SCHEMA_PATH)
 
@@ -44,10 +44,16 @@ def test_kofu_candidate_validates_and_stays_unreviewed() -> None:
     assert candidate["status"] == "review_candidate"
     assert candidate["package_state"] == "prepared"
     assert candidate["publication"]["eligible"] is False
-    assert candidate["human_review"]["status"] == "pending"
     assert candidate["human_review"]["required"] is True
-    assert candidate["human_review"]["reviewed_at"] is None
-    assert candidate["human_review"]["reviewer_note"] is None
+    assert candidate["human_review"]["status"] == "approved"
+    assert candidate["human_review"]["reviewed_at"] == "2026-11-16"
+    assert candidate["human_review"]["reviewer_note"]
+    # The owner did not review the primary sources personally: on
+    # 2026-11-15 the owner explicitly delegated the review to Muse in
+    # chat, and the note must record that delegation rather than
+    # claiming an owner review.
+    assert "委任" in candidate["human_review"]["reviewer_note"]
+    assert "レビューはあなたがやってください" in candidate["human_review"]["reviewer_note"]
     assert candidate["source_inventory_path"] == (
         "data/indexed/kofu-city/source_inventory.json"
     )
@@ -190,20 +196,20 @@ def test_kofu_plan_framework_is_primary_source_checked() -> None:
     assert linkage["fiscal_year"] == 2024
 
 
-def test_kofu_is_still_pending_in_canonical_queue() -> None:
+def test_kofu_promotion_is_reflected_in_canonical_queue() -> None:
     queue = load_json(QUEUE_PATH)
     summary = queue["summary"]
-    assert summary["reviewed_complete_count"] == 25
-    assert summary["pending_record_review_count"] == 42
-    assert summary["next_official_code"] == "192015"
+    assert summary["reviewed_complete_count"] == 26
+    assert summary["pending_record_review_count"] == 41
+    assert summary["next_official_code"] == "202010"
 
     kofu = next(
         record
         for record in queue["execution_queue"]
         if record["official_code"] == "192015"
     )
-    assert kofu["status"] == "pending_record_review"
-    assert kofu["completion_path"] is None
+    assert kofu["status"] == "reviewed_complete"
+    assert kofu["completion_path"] == "data/catalog/kofu_phase15_completion.json"
 
 
 def test_web_runtime_does_not_import_kofu_candidate_data() -> None:

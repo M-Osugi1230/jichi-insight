@@ -404,13 +404,25 @@ Declared v1 package:
 
 Deferred depth includes the full enumeration of the 53 measures and 64 KPIs and their results, the implementation plan's major projects, confirmation of the plan framework against the plan book itself when it becomes retrievable, cross-checks against the settlement detail book and the budget book's bill text (第1号議案第1条) and first table, inspection of the audit committee's settlement review opinion, the ninth plan's framework, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Twenty-sixth completion — Kofu
+
+甲府市を26番目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 第七次甲府市総合計画 — the city's top-level plan under Article 22 of the Kofu City Autonomy Basic Ordinance; a two-layer plan of a basic concept (FY2026–FY2035, ten years) and an implementation plan revised annually under a three-year rolling method; the city vision is 『幸せ実感 希望ある未来を創り続けるまち 甲府』 and the basic concept was enacted as bill No. 109 on 2025-12-17; three basic goals holding six measures each, 18 measures in total (the sub-measures beneath the measures and the implementation plan's projects are not enumerated in v1), with cross-cutting perspectives (population-decline countermeasures, a sustainable society, administrative reform) and the promotion principles (collaboration, well-being, civic pride); progress governance through evaluation and improvement of the implementation plan's measures and projects — FY2026 is the plan's first year and no annual results under the implementation plan have been published yet. The sixth comprehensive plan (FY2016–FY2025) is kept only as a plan-transition record in a separate version and is never retroactively connected to the seventh plan's framework
+- FY2026 general-account initial budget: 91,787,060 thousand yen (enacted; bill No. 5 『令和8年度甲府市一般会計予算』, passed on 2026-03-25 at the March 2026 regular council session, confirmed in the council's official deliberation results). The amount is published at sen-yen (thousand-yen) precision, so it is kept at that precision and yen-precision amounts are not synthesized
+- FY2024 general-account settlement at yen precision as published: revenue 91,644,865,806 yen / expenditure 90,039,308,506 yen (balance 歳入歳出差引額 1,605,557,300 yen matches the published figure in the audit commissioners' settlement-review opinion 甲監発第24号; real balance 実質収支 1,191,233,328 yen); certification 議案第95号 certified on 2025-10-02. FY2024 is a settlement of the sixth plan's period and its period does not overlap the seventh plan, and its totals are section-level aggregates that are not linked to individual goals, measures or projects, so the linkage stays not_assessable
+
+Deferred depth includes the full enumeration of the sub-measures and the first implementation plan's measure-and-project framework, cross-checks against the budget explanatory materials and the settlement detail book (事項別明細書) at section level, the sixth plan's framework itself, annual results and evaluation evidence under the implementation plan, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 25 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市
+- Reviewed complete: 26 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市
 - Review in progress: 0
-- Pending record review: 42
+- Pending record review: 41
 - Blocked source inventory: 0
-- Next official code: 192015
+- Next official code: 202010
 
 ## Definition of Phase 15 completion
 
