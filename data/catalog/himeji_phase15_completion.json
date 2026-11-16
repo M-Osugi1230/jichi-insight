@@ -1,0 +1,61 @@
+{
+  "id": "himeji-phase15-completion",
+  "phase": 15,
+  "status": "reviewed_complete",
+  "official_code": "282014",
+  "name_ja": "姫路市",
+  "completed_at": "2026-11-16",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "source_catalog_path": "data/catalog/himeji_phase15_sources.json",
+    "plan_review_path": "data/reviewed/himeji-city/plan_review.json",
+    "policy_structure_path": "data/catalog/himeji_current_policy_structure.json",
+    "progress_review_path": "data/catalog/himeji_current_progress_review_summary.json",
+    "fiscal_records_path": "data/reviewed/himeji-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/himeji-city/evidence_packets.json",
+    "counts": {
+      "basic_goals": 9,
+      "basic_plan_measures": 0,
+      "promoted_implementation_item_actual_records": 0,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "current_plan_period_reviewed": true,
+    "current_plan_policy_structure_reviewed": true,
+    "implementation_plan_layer_reviewed": true,
+    "fiscal_states_and_years_separate": true,
+    "budget_enactment_state_preserved": true,
+    "settlement_linkage_not_assessable_preserved": true,
+    "individual_implementation_items_not_overpromoted": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "current-plan-granular-kpi-and-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "9分野の分野別政策の全件列挙と、政策評価の指標（市民意識調査項目・KPI）の個別値は追加depthとし、公式対応が確認できるまで昇格しない。基本構想冊子の体系一覧は2カラム構成であり、テキスト抽出では政策の分野別の帰属が混在して誤りなく転記できないため、候補には分野単位の体系（9分野と分野目標）を保持するが、個別政策・事業単位の対応付けは行わない。"
+    },
+    {
+      "id": "fiscal-vote-and-certification-verification",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "FY2026当初予算の議案番号・議決結果の文言（議案第1号・令和8年第1回定例会・「可決」）と、FY2024決算の認定結果（議案第90号・令和7年第3回定例会・認定）は、市公式の議案及び審議結果による確認を完了し、候補の財政記録・証拠パケット側に反映している。両議決日（2026年3月25日・2025年10月3日）は会期・賛否一覧PDF等から特定したものであり、会議録による最終確認は未実施のまま保持する。決算書の款別合計との最終突合、監査委員の決算審査意見書の内容の精査、補正予算による変更経過は追加エビデンス確認前は記録・結合しない。FY2024決算の歳入・歳出・実質収支（千円精度）とFY2026当初予算総額（千円精度）は一次資料で確認済みであり、候補の財政記録・証拠パケット側に反映している。"
+    },
+    {
+      "id": "plan-transition-version-depth",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "前総合計画「ふるさと・ひめじプラン2020」（2009年度～2020年度）の事業・評価の全件列挙は本候補では行わない。前計画から現行計画への移行は版の履歴として別途記録し、前計画期間の実績を現行計画の期間へ前倒し接続しない。次期総合計画の策定状況は未確認である。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "姫路市総合計画・進捗管理・財政等のステージングは政策効果の因果認定や他都市比較可能性を意味しない。進捗管理（自治体の進行管理の枠組み）をJichi Insight独自の達成判定へ変換しない。"
+    }
+  ],
+  "completion_boundary": "姫路市のPhase 15 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味し、所有者（大杉邑大、単独運用体制）が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが姫路市公式サイトの一次資料で検証した結論に基づく（所有者本人が一次資料を直接レビューしたものではない）。姫路市の計画体系（姫路市総合計画「ふるさと・ひめじプラン2030」は基本構想（2021年度～2030年度の10年間、目指す都市像『ともに生き ともに輝く にぎわい交流拠点都市 姫路』）と実施計画（計画期間3年間・毎年度掲載事業を更新するローリング方式、現行は令和8年度～令和10年度）の2層で構成する。分野体系は9分野（市民活動／健康福祉／教育／環境／産業／観光・スポーツ／都市基盤／防災・安全安心／行財政運営）で構成し、各分野に分野目標と政策を置く。各分野の政策の全件列挙は基本構想冊子の体系一覧が2カラム構成でありテキスト抽出では政策の分野別の帰属が混在して誤りなく転記できないため行わず、追加depthとして保持する。進行管理は、3年ごとに実施する政策評価（市民意識調査項目とKPIによる評価）を軸としたPDCAサイクルと、毎年度の事業形成過程における単年度のPDCAサイクルを組み合わせる自治体の進行管理の枠組みである）、成立したFY2026一般会計当初予算（261,800,000千円。議案第1号『令和8年度姫路市一般会計予算』として令和8年第1回定例会で可決された。市公式『議案及び審議結果』の結果欄の文言は「可決」であり、その文言のまま記録する。議決日2026年3月25日は、会期（2026年2月17日～3月25日）と最終日の表決から特定したものであり、会議録による最終確認は未実施である。公表精度は千円単位のため、その精度（千円単位）のまま記録し、円単位を合成していない）、FY2024一般会計決算の千円精度総額（歳入254,438,371千円・歳出245,476,363千円、差引額8,962,008千円が市公式『令和6年度決算の概要』の形式収支と一致することを検算した）を一次資料で確認した。決算の認定議案である議案第90号は令和7年第3回定例会で認定されたことを市公式の議案及び審議結果で確認し、認定の事実をそのまま記録した（認定の議決日2025年10月3日は議員別賛否一覧PDFの発行日付と会期最終日の表決から特定したものであり、会議録による最終確認は未実施である）。実質収支額は同資料により5,797,686千円であり、千円精度のまま記録する。前総合計画「ふるさと・ひめじプラン2020」（2009年度～2020年度）からの移行は版の履歴として分離して保持し、前計画期間の実績を現行計画の期間へ前倒し接続しない。次期総合計画の策定状況は公式資料で確認できていない。FY2024は基本構想期間内の決算であり計画の版は現行と同一であるが、決算総額と9分野・政策との総額レベルの対応付けは公式資料にないため、接続はnot_assessableとして保持する。9分野の分野別政策の全件、政策評価の指標の個別値、両議決日の会議録による最終確認、予算・決算の事項別明細書の款別合計との最終突合、監査委員の決算審査意見書の内容（個別の指摘事項等）の精査はdeferred depthである。Jichi Insight独自の政策達成度スコアや他都市とのランキングは作成しない。進捗管理（自治体の進行管理の枠組み）をJichi Insight独自の達成判定へ変換しない。"
+}

@@ -608,13 +608,25 @@ Declared v1 package:
 
 Deferred depth includes the per-field individual measures under the seven fields, the individual indicator values (project evaluation reports and indicator achievement status), the specific content of the amendments made when the FY2026 budget was passed with amendments, cross-checks against the budget book and the settlement book （事項別明細書） at section level, the content of the audit commissioners' settlement review opinion (individual findings), the status of the next (Fourth) comprehensive plan, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Forty-third completion — Himeji
+
+姫路市を43番目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 姫路市総合計画「ふるさと・ひめじプラン2030」 — composed of two layers: the basic concept (FY2021-FY2030, ten years, presenting the city image 『ともに生き ともに輝く にぎわい交流拠点都市 姫路』) and the implementation plan (a three-year rolling plan whose listed projects are updated every fiscal year; the current edition covers FY2026-FY2028); the basic concept's ten years and the implementation plan's three-year rolling are kept as separate period semantics. The policy structure is nine fields （市民活動 / 健康福祉 / 教育 / 環境 / 産業 / 観光・スポーツ / 都市基盤 / 防災・安全安心 / 行財政運営）, each with a field goal and policies; the per-field policies are not enumerated because the basic concept booklet's framework table is laid out in two columns and the field attribution of individual policies mixes on text extraction, so they cannot be transcribed without error and stay deferred depth. Progress is managed by a PDCA cycle built around policy evaluation conducted every three years (using citizen-awareness survey items and KPIs), combined with an annual PDCA cycle in each year's project-formation process — the municipality's own progress-management framework, with the two different evaluation cycles kept separate. The transition from the previous plan 「ふるさと・ひめじプラン2020」 (FY2009-FY2020) is kept only as a version chronology record, and results from the previous plan period are never connected forward into the current plan; the status of the next comprehensive plan is unconfirmed
+- FY2026 general-account initial budget: 261,800,000 thousand yen (enacted; bill 議案第1号 『令和8年度姫路市一般会計予算』 at the 2026 first regular session — the result column of the council's official 『議案及び審議結果』 reads 「可決」 and is recorded exactly as published). The amount was cross-checked between the city's 『令和8年度 予算の概要』 page and the general-account budget summary table (expenditure) PDF; it is kept at the published sen-yen (thousand-yen) precision and finer amounts are not synthesized. The voting date 2026-03-25 was identified from the session period (2026-02-17 to 2026-03-25, per 議会報ひめじ No.252) and the final-day vote, and the final confirmation against the council minutes has not been performed
+- FY2024 general-account settlement at sen-yen (thousand-yen) precision as published: revenue 254,438,371 thousand yen / expenditure 245,476,363 thousand yen (their difference of 8,962,008 thousand yen matches the formal balance （形式収支） printed in the city's official 『令和6年度決算の概要』; the real balance is 5,797,686 thousand yen, after deducting 3,164,322 thousand yen of carryover funding, kept at sen-yen precision as printed in that summary). The settlement certification bill, bill 議案第90号 『令和6年度姫路市一般会計決算認定について』, was certified at the 2025 third regular session per the council's official 『議案及び審議結果』; its voting date 2025-10-03 was identified from the issue date of the per-member vote list PDF and the final-day vote, and the final confirmation against the council minutes has not been performed. FY2024 falls inside the basic concept period (FY2021-FY2030), so its plan version is the same as the current one, but no official total-level mapping from settlement totals to the plan's nine fields or policies exists, so the totals are not linked to the plan's structure and the linkage stays not_assessable
+
+Deferred depth includes the per-field policies under the nine fields, the individual indicator values (citizen-awareness survey items and KPIs), the final confirmation of both voting dates against the council minutes, cross-checks against the budget book and the settlement book （事項別明細書） at section level, the content of the audit commissioners' settlement review opinion (individual findings), the status of the next comprehensive plan, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 42 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市
+- Reviewed complete: 43 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市、姫路市
 - Review in progress: 0
-- Pending record review: 25
+- Pending record review: 24
 - Blocked source inventory: 0
-- Next official code: 282014
+- Next official code: 282022
 
 ## Definition of Phase 15 completion
 

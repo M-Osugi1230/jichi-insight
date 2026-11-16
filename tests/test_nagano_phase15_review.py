@@ -355,7 +355,7 @@ def test_nagano_and_previous_twenty_six_are_reviewed_complete_and_matsumoto_is_n
     ):
         assert by_code[code]["status"] == "reviewed_complete"
 
-    assert queue["summary"]["reviewed_complete_count"] == 42
+    assert queue["summary"]["reviewed_complete_count"] == 43
     assert queue["summary"]["review_in_progress_count"] == 0
-    assert queue["summary"]["pending_record_review_count"] == 25
-    assert queue["summary"]["next_official_code"] == "282014"
+    assert queue["summary"]["pending_record_review_count"] == 24
+    assert queue["summary"]["next_official_code"] == "282022"

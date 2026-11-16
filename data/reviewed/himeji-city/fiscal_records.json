@@ -1,0 +1,65 @@
+[
+  {
+    "account_type": "general",
+    "amount_yen": 261800000000,
+    "confidence": "high",
+    "fiscal_year": 2026,
+    "id": "jp-local-282014-fiscal-2026-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算（可決）",
+    "municipality_id": "jp-local-282014",
+    "note": "姫路市公式『令和8年度 予算の概要』ページ（一般会計2,618億円）および同ページから公開される一般会計予算総括表（歳出）の合計261,800,000千円で確認した令和8年度一般会計当初予算総額。公表精度は千円単位であり、その精度のまま記録し円単位を合成していない。当初予算は議案第1号『令和8年度姫路市一般会計予算』として令和8年第1回定例会で可決された（市公式『令和8年第1回定例会 議案及び審議結果』の結果欄の文言は「可決」であり、その文言のまま記録する）。議決日2026年3月25日は、会期（2026年2月17日から3月25日まで。議会報ひめじNo.252）と最終日の本会議が委員長報告・表決・閉会であることから特定したものであり、会議録による最終確認は未実施である。補正予算や決算とは別stateで扱う。",
+    "period_end": "2027-03-31",
+    "period_start": "2026-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "himeji-budget-2026"
+    ],
+    "stage": "initial_budget",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 254438371000,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-282014-fiscal-2024-total-revenue",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入額",
+    "municipality_id": "jp-local-282014",
+    "note": "姫路市公式『令和6年度決算の概要』に示された一般会計の歳入2,544億3,837万1千円、すなわち254,438,371千円。公表精度は千円単位であり、円単位の総額は同資料に印字されていないため合成しない。当該決算の認定議案は議案第90号『令和6年度姫路市一般会計決算認定について』であり、令和7年第3回定例会で認定された（市公式『令和7年第3回定例会 議案及び審議結果』の結果欄で直接確認）。議決日2025年10月3日は、同定例会の議員別賛否一覧PDFの発行日付と会期最終日の表決から特定したものであり、会議録による最終確認は未実施である。FY2024は姫路市総合計画「ふるさと・ひめじプラン2030」基本構想（2021年度～2030年度）期間内の決算である。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "himeji-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 245476363000,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-282014-fiscal-2024-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出額",
+    "municipality_id": "jp-local-282014",
+    "note": "姫路市公式『令和6年度決算の概要』に示された一般会計の歳出2,454億7,636万3千円、すなわち245,476,363千円。歳入総額254,438,371千円との差引額8,962,008千円は、同資料の形式収支89億6,200万8千円（8,962,008千円）と検算一致する。実質収支は同資料の57億9,768万6千円、すなわち5,797,686千円（翌年度への繰越財源31億6,432万2千円、すなわち3,164,322千円を差し引いた額）であり、千円精度のまま記録する。決算の認定議案は議案第90号であり、令和7年第3回定例会で認定された（市公式の議案及び審議結果で確認）。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "himeji-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  }
+]

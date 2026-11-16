@@ -1,0 +1,46 @@
+{
+  "id": "himeji-phase15-sources",
+  "name_ja": "姫路市",
+  "official_code": "282014",
+  "phase": 15,
+  "quality_boundary": "Current plan identity kept as published (the Himeji City Comprehensive Plan 『ふるさと・ひめじプラン2030』: the basic concept covers FY2021-FY2030 with the city image 『ともに生き ともに輝く にぎわい交流拠点都市 姫路』, and the implementation plan is a three-year rolling plan whose current edition covers FY2026-FY2028; the two layers are kept as separate period semantics; the policy structure is nine fields each with a field goal, with per-field policies not enumerated and kept as deferred depth), progress governance (a PDCA cycle built around policy evaluation every three years using citizen-awareness survey items and KPIs, combined with an annual project PDCA cycle, kept as the municipality's own progress-management framework with the two cycles kept separate), budget enactment confirmed in the council's official results table (bill 議案第1号, result column 「可決」 as published; the amount is kept at the published sen-yen precision and is never expanded into synthetic finer amounts; the voting date 2026-03-25 was identified from the session schedule and the final confirmation against the council minutes is still pending), and settlement totals kept at the published sen-yen precision from the city's official settlement summary (the settlement certification bill 議案第90号 was certified at the 2025 third regular session; its voting date 2025-10-03 was identified from the per-member vote list and the minutes confirmation is still pending; the real balance of 5,797,686 thousand yen is kept at sen-yen precision) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "reviewed_at": "2026-11-16",
+  "sources": [
+    {
+      "evidence_location": "姫路市公式Webサイト『姫路市総合計画「ふるさと・ひめじプラン2030」基本構想』ページ（Phase 14インベントリで確認）。総合計画の全体像（基本構想と実施計画の2つで構成）、基本構想の計画期間（令和3年度から令和12年度の10年間）、目指す都市像、4つの行動指針、9分野の分野目標・政策の構成と、基本構想冊子（公式PDF）の公開を直接確認した",
+      "evidence_role": "comprehensive_plan",
+      "format": "html",
+      "id": "himeji-basic-concept",
+      "official_url": "https://www.city.himeji.lg.jp/shisei/0000015166.html",
+      "title": "姫路市総合計画 基本構想",
+      "use_boundary": "現行計画は姫路市総合計画「ふるさと・ひめじプラン2030」（基本構想2021年度～2030年度）として保持し、実施計画（3年ローリング）とlayer semanticsを分離する"
+    },
+    {
+      "evidence_location": "姫路市公式『姫路市総合計画「ふるさと・ひめじプラン2030」実施計画』ページで、現行の実施計画（令和8年度から令和10年度）の構成と期間（計画期間を3年間とし、毎年度、掲載事業を更新）と、総合計画の進行管理（3年ごとの政策評価を軸としたPDCAサイクルと毎年度の事業PDCAの組合せ）を直接確認した",
+      "evidence_role": "implementation_plan_and_progress",
+      "format": "html",
+      "id": "himeji-implementation-2026-2028",
+      "official_url": "https://www.city.himeji.lg.jp/shisei/0000015569.html",
+      "title": "実施計画",
+      "use_boundary": "実施計画の3年ローリングと、施策評価は3年ごと・事業PDCAは毎年度という異なる評価周期を保持し、過去の実施計画期間や評価を上書きしない"
+    },
+    {
+      "evidence_location": "FY2026当初予算の金額は、姫路市公式『令和8年度 予算の概要』ページ（一般会計2,618億円）と同ページから公開される一般会計予算総括表（歳出）PDFの合計261,800,000千円で確認した。議案番号・議決結果は市公式『令和8年第1回定例会 議案及び審議結果』により確認し、議案第1号『令和8年度姫路市一般会計予算』の結果欄の文言は「可決」であった。議決日2026年3月25日は会期（2026年2月17日から3月25日まで）と最終日の表決から特定したもので、会議録による最終確認は未実施である",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "himeji-budget-2026",
+      "official_url": "https://www.city.himeji.lg.jp/shisei/0000032701.html",
+      "title": "令和8年度予算の概要",
+      "use_boundary": "FY2026当初予算は補正予算・決算と別stateで保持する。金額は千円単位の公表値であり、円単位を合成しない。議案番号・議決結果（議案第1号・可決）は確認済みであり、議決後の成立額を保持する"
+    },
+    {
+      "evidence_location": "FY2024決算の公式入口（Phase 14インベントリで確認）。姫路市公式『令和6年度決算の概要』ページの一般会計の節で、歳入2,544億3,837万1千円・歳出2,454億7,636万3千円・形式収支89億6,200万8千円・翌年度への繰越財源31億6,432万2千円・実質収支57億9,768万6千円を直接確認した。決算の認定結果は市公式『令和7年第3回定例会 議案及び審議結果』により確認し、議案第90号『令和6年度姫路市一般会計決算認定について』の結果欄は「認定」であった",
+      "evidence_role": "settlement",
+      "format": "html",
+      "id": "himeji-settlement-2024",
+      "official_url": "https://www.city.himeji.lg.jp/shisei/0000031944.html",
+      "title": "令和6年度決算の概要",
+      "use_boundary": "FY2024決算は基本構想（2021年度～2030年度）期間内の決算として保持する。歳入・歳出・実質収支は決算の概要の千円精度の公表値のまま記録し、認定結果（議案第90号・認定）も市公式の議案及び審議結果で確認済みである"
+    }
+  ]
+}
