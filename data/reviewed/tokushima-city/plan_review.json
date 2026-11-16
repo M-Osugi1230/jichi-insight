@@ -1,0 +1,63 @@
+{
+  "id": "phase15-tokushima-plan-review",
+  "name_ja": "徳島市",
+  "next_action": "Promote the measures and outcome indicators under the six policies of the basic plan (including the nine comprehensive outcome indicators set for the first period) and the projects of the annual action plans (the current edition is the FY2026 edition) only when official sources with stable record-level locators have been reviewed; complete the final cross-checks against the budget explanation book and the settlement book （事項別明細書） at section level; examine the content of the audit commissioners' FY2024 settlement review opinion (individual findings); enumerate the policy structure of the previous plan (Tokushima City Comprehensive Plan 2021) as a separate version; follow the preparation status of the next plan as a separate version once it becomes official; and never connect results from another plan version forward into the current plan. Keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "official_code": "362018",
+  "quality_boundary": "This package reviews the current plan identity and period (the Tokushima City Comprehensive Plan 2025, adopted in March 2025 as the city's top-level plan integrated with the local comprehensive strategy under the machi-hito-shigoto creation act, in three layers: the basic concept, which looks ahead roughly ten years from FY2025 and sets out three basic principles and the future vision 『おどる街 つながる笑顔 水都とくしま』 with six policies; the basic plan in two periods, the first period FY2025-FY2029 and the second period FY2030-FY2034, which sets nine comprehensive outcome indicators for the first period; and the action plans, which spell out each fiscal year's concrete projects, cover the same period as the basic plan and are revised every year, the current edition being the FY2026 edition; the inventory period status of verified_fixed_period (FY2025-FY2034) is kept as recorded, with the basic concept's 'roughly ten years ahead' framing kept as structure), the policy structure (the six policies kept at policy level; the measure structure and outcome indicators under the policies and the action plan's projects are not enumerated and stay deferred depth, so the measures lists stay empty), the progress-governance layer (the municipality's own PDCA cycle and the Tokushima City Comprehensive Plan 2025 evaluation committee of external experts), the enacted FY2026 initial budget at the published sen-yen (thousand-yen) precision (bill 議案第1号; adopted as proposed — 原案可決 — on 2026-03-24, confirmed directly in the council's official plenary minutes, the committee reports recommending adoption as proposed having been accepted by a standing majority), and the FY2024 settlement at the thousand-yen precision printed in the general-account and special-account settlement table of the FY2024 accounts. The FY2024 settlement certification (bill 議案第104号) was certified on 2025-12-18 at the fifth regular session of 2025, confirmed directly in the council's official plenary minutes after continued review by the settlement review special committee during the recess; it was not rejected. The real balance of 1,129,929 thousand yen is recorded at the published thousand-yen precision and is not expanded into a synthetic yen figure. Ordinary-account aggregate figures are not used. FY2024 is a settlement of the previous plan (Tokushima City Comprehensive Plan 2021) period, before the current plan began, so the plan version differs from the current plan, and no official total-level mapping from settlement totals to the current plan's policy structure exists, so the linkage stays not_assessable. The transition from the previous plan is kept separate as a plan transition, and the preparation status of the next plan could not be confirmed in official sources.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "計画の構成と期間は市公式『徳島市総合計画2025』ページと同計画の概要版（基本構想・基本計画・アクションプランの構成、前期・後期の期間）で直接確認し、アクションプランの現行版（令和8年度版）は同ページの掲載資料で確認した",
+      "evidence_role": "current_plan_identity",
+      "id": "tokushima-current-plan-period",
+      "review_note": "総合計画の構成（基本構想・基本計画・アクションプラン）と各層の期間を別period semanticsとして保持した。レビュー済みレコード。",
+      "source_url": "https://www.city.tokushima.tokushima.jp/shisei/machi_keikaku/sougo-plan/sougoukeikaku2025.html",
+      "statement": "徳島市の現行の最上位計画は徳島市総合計画2025であり、令和7年3月に、人口減少対策とまちづくり双方の観点から地方版総合戦略（まち・ひと・しごと創生法に基づく総合戦略）と一体化した計画として策定された。構成は基本構想・基本計画・アクションプランの3層であり、基本構想は令和7年度（2025年度）から概ね10年後を展望して基本理念と将来像と政策を定め、基本計画は前期（2025年度～2029年度）と後期（2030年度～2034年度）で構成して施策を体系的に示し、アクションプランは基本計画に基づく各年度の具体的な事業を明らかにするもので、計画期間は基本計画と同様とし毎年度見直しを行う（現行は令和8年度版）。Phase 14インベントリのperiod_statusはverified_fixed_period（2025年度～2034年度）であり、基本構想自体が「概ね10年後を展望」と表現される点は構造として保持する。",
+      "title": "徳島市総合計画2025の構成（基本構想は2025年度から概ね10年後を展望・基本計画は前期／後期の各5年・アクションプランは毎年度見直し）",
+      "value": "徳島市総合計画2025は基本構想・基本計画・アクションプランで構成／基本構想は2025年度から概ね10年後を展望／基本計画は前期2025年度～2029年度・後期2030年度～2034年度／アクションプランは毎年度見直しで現行は令和8年度版／FY2024決算は前計画（徳島市総合計画2021）の期間の決算"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "将来像・基本理念・6政策は徳島市総合計画2025の概要版（基本構想の章）で直接確認し、総合的な成果指標9件も同概要版（基本計画の章）で確認した",
+      "evidence_role": "policy_structure",
+      "id": "tokushima-current-policy-structure",
+      "review_note": "基本構想の将来像と基本計画の政策レベルの体系を保持した。施策・成果指標の全件列挙は行わない。レビュー済みレコード。",
+      "source_url": "https://www.city.tokushima.tokushima.jp/shisei/machi_keikaku/sougo-plan/sougoukeikaku2025.html",
+      "statement": "基本構想は将来像として『おどる街 つながる笑顔 水都とくしま』を定め、3つの基本理念（基本理念1 将来にわたって持続可能なまちづくり（Sustainable）／基本理念2 安心して暮らせる強靱なまちづくり（Resilience）／基本理念3 多様な幸せを実現できるまちづくり（Well-being））のもと、将来像を実現するための政策として6つの政策（政策1 魅力あふれる都市空間の創造（市街地、自然景観、環境）／政策2 持続可能な徳島経済の創出（産業、労働、関係人口）／政策3 安全安心な生活環境の整備（消防・防災、防犯、インフラ）／政策4 生涯健やかな暮らしの実現（健康・医療、福祉、社会保障）／政策5 こどもまんなか社会の推進（子育て、学校教育、青少年）／政策6 誰もが活躍できる場の提供（人権、文化芸術・スポーツ、地域））を掲げる。基本計画は前期計画期間（2025年度～2029年度）における総合的な成果指標として9つの指標と数値目標を設定する。本候補は政策レベルの体系のみを保持し、基本計画の施策体系と各施策の成果指標の全件列挙は行わない。",
+      "title": "将来像『おどる街 つながる笑顔 水都とくしま』と3つの基本理念・6つの政策の体系"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "進行管理の仕組み（PDCAサイクル・評価委員会の設置）は市公式『徳島市総合計画2025』ページの推進の項で確認し、令和8年度評価委員会の開催状況は同ページおよび令和8年度評価委員会ページで確認した",
+      "evidence_role": "progress_governance",
+      "id": "tokushima-progress-governance-framework",
+      "review_note": "進行管理の公式routeとしてPDCAサイクルと評価委員会の仕組みを保持した。評価結果の個別内容の展開は行わない。レビュー済みレコード。",
+      "source_url": "https://www.city.tokushima.tokushima.jp/shisei/machi_keikaku/sougo-plan/R8_sougoukeikaku2025.html",
+      "statement": "徳島市総合計画2025の推進に当たっては、計画・目標設定（PLAN）、実施（DO）、効果検証（CHECK）、改善（ACTION）のPDCAサイクルを適切に運用し、外部有識者で構成する『徳島市総合計画2025評価委員会』を設置して施策の評価等を行い、同計画に基づく取組の実効性の向上を図ることとされている。評価委員会は令和7年度・令和8年度に開催されており、令和8年度の評価委員会が進行管理の現行の公式routeである。自治体の進行管理の仕組みをJichi Insight独自の達成判定へ変換しない。",
+      "title": "計画の進行管理（PDCAサイクルと徳島市総合計画2025評価委員会による評価）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "前計画の名称・策定時期・将来像は市公式『徳島市総合計画2021 －水都とくしま「新創造」プラン－』ページで確認し、現行計画の策定は市公式『徳島市総合計画2025』ページで確認した",
+      "evidence_role": "plan_transition",
+      "id": "tokushima-plan-transition",
+      "review_note": "計画の世代間の移行を分離記録した。レビュー済みレコード。",
+      "source_url": "https://www.city.tokushima.tokushima.jp/shisei/machi_keikaku/sougo-plan/sougoukeikaku2025.html",
+      "statement": "徳島市の総合計画は、徳島市総合計画2021 －水都とくしま「新創造」プラン－（令和2年度に策定され、先行する徳島市まちづくり総合ビジョンに代わる市政運営の指針とされたもの。将来像『わくわく実感！ 水都とくしま』）から、徳島市総合計画2025（令和7年3月策定）へ移行した。FY2024決算は徳島市総合計画2021の期間の決算であり、徳島市総合計画2025のcurrent actualへ流用しない。前計画の政策体系・事業・成果の全件列挙は本候補では行わない。徳島市総合計画2025の次期計画の策定状況は、本候補の調査時点では公式資料で確認できていない。",
+      "title": "徳島市総合計画2021から徳島市総合計画2025への移行"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "決算総額は令和6年度決算ページの『令和6年度各会計決算』、計画の開始時期は計画ページで確認した。総額レベルの対応付けの不在は、決算・計画の公表範囲で確認した",
+      "evidence_role": "annual_progress",
+      "fiscal_year": 2024,
+      "id": "tokushima-fy2024-settlement-linkage",
+      "review_note": "FY2024決算は前計画期間の決算で現行計画開始前であり版が異なるため接続しないことを明記した。レビュー済みレコード。",
+      "source_url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/kessan/nendo/kessannsokuhou.html",
+      "statement": "FY2024決算は徳島市総合計画2021の期間の決算であり、現行の徳島市総合計画2025（2025年度開始）開始前の決算であるため、計画の版が異なる。決算総額は一次資料で確認済みであるが、決算総額と現行計画の政策体系との総額レベルの対応付けは公式資料にないため、接続はnot_assessableとする。なお議案第104号は令和7年第5回定例会で認定されており、接続判定は認定結果に依存しない。",
+      "title": "令和6年度決算と徳島市総合計画2025の政策体系の接続"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-17"
+}
