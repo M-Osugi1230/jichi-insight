@@ -29,7 +29,7 @@ AI支援（Muse等）による照合、下書き、候補作成を行う場合�
 4. 法務・プライバシー・重大表現に影響する変更がないか確認する。
 5. mainへマージし、GitHub Pages deploymentを確認する。
 6. ホーム、代表自治体ページ、`robots.txt`、`sitemap.xml`のProduction Smokeを確認する。
-7. `.github/publication-status.json`の検証結果を確認する。
+7. `publication-status`ブランチの`.github/publication-status.json`の検証結果を確認する（`git show origin/publication-status:.github/publication-status.json`）。
 8. 公開境界に影響する変更はCHANGELOGまたはPull Requestへ記録する。
 
 ## 4. Update cadence
@@ -143,7 +143,7 @@ AI支援（Muse等）による照合、下書き、候補作成を行う場合�
 
 正式公開後の4週間は、週1回、次の項目を確認し、結果を公開判断の記録（Issue #12）へ残します。
 
-- Production Smokeと公開検証（`.github/publication-status.json`）の結果
+- Production Smokeと公開検証（`publication-status`ブランチの`.github/publication-status.json`）の結果
 - 未解決のP0 / P1 Issueの件数と経過
 - 訂正申請への確認開始が docs/CORRECTIONS.md の目標内であったか
 - ロールバックの実施有無と、その理由
