@@ -9,9 +9,12 @@ results list (可決); its vote date, 2026-03-23, was identified from
 the plenary minutes agenda, while the plenary declaration wording
 itself was not directly confirmed by text retrieval and stays an open
 question.  The FY2024 settlement certification bill (認定第1号) was
-recorded as continued review at the September 2025 session, and its
-final outcome was not reachable by text retrieval, so the candidate
-must not claim either certification or non-certification.  The FY2024
+recorded as continued review at the September 2025 session; a
+supplementary live-browser investigation then confirmed from the
+council's official December 2025 session page, its results list, and
+the plenary minutes that the bill was certified on 2025-12-05, so the
+candidate records that certification while never recording a
+non-certification.  The FY2024
 settlement totals stay at the thousand-yen precision printed in the
 city's official settlement summary; no yen figure is synthesized, and
 ordinary-account aggregate figures are not used as general-account
@@ -143,6 +146,8 @@ def test_takamatsu_fiscal_records_hold_verified_values() -> None:
     assert "認定第1号" in revenue["note"]
     assert "183,171,243千円" in revenue["note"]
     assert "継続審査" in revenue["note"]
+    assert "2025年12月5日" in revenue["note"]
+    assert "認定された" in revenue["note"]
     expenditure = records["jp-local-372013-fiscal-2024-total-expenditure"]
     assert expenditure["amount_yen"] == 177_907_841_000
     assert expenditure["sources"] == ["takamatsu-settlement-2024"]
@@ -169,15 +174,21 @@ def test_takamatsu_fy2024_settlement_values_and_real_balance() -> None:
     assert "千円単位のまま" in expenditure["note"]
 
 
-def test_takamatsu_fy2024_settlement_certification_stays_unconfirmed() -> None:
+def test_takamatsu_fy2024_settlement_certification_confirmed() -> None:
     text = CANDIDATE_PATH.read_text(encoding="utf-8")
     assert "認定第1号" in text
     assert "継続審査" in text
-    assert "最終的な議決結果" in text
-    # The final outcome after continued review was not confirmed by
-    # text retrieval; the candidate must not claim either outcome.
-    assert "認定された" not in text
+    assert "2025年12月5日" in text
+    assert "認定された" in text
+    # The certification was confirmed by a supplementary live-browser
+    # investigation of the council's official December 2025 session
+    # materials; the candidate must record that basis and must never
+    # record a non-certification outcome.
+    assert "実ブラウザによる補完調査" in text
     assert "不認定" not in text
+    # The formerly open question about the final outcome is resolved.
+    assert "認定第1号の継続審査後の最終的な議決結果" not in text
+    assert "認定の成否を記録しない" not in text
 
 
 def test_takamatsu_fy2026_budget_vote_wording() -> None:
@@ -226,6 +237,12 @@ def test_takamatsu_evidence_packets_cover_the_three_fiscal_records() -> None:
     assert "認定第1号" in revenue_claim["statement"]
     assert "183,171,243千円" in revenue_claim["statement"]
     assert "継続審査" in revenue_claim["statement"]
+    assert "2025年12月5日" in revenue_claim["statement"]
+    assert "認定された" in revenue_claim["statement"]
+    revenue_packet = packets["evidence-takamatsu-city-2024-total-revenue"]
+    assert revenue_packet["open_questions"] == [
+        "確定した決算書および監査委員の令和6年度決算審査意見書の値との突合。"
+    ]
     expenditure_claim = packets["evidence-takamatsu-city-2024-total-expenditure"][
         "claims"
     ][0]
