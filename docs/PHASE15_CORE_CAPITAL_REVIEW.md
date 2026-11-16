@@ -476,13 +476,25 @@ Declared v1 package:
 
 Deferred depth includes the Future Investment Packages' project lists under the 54 main initiatives, the group-level reference indicators' individual values, cross-checks against the budget book and the settlement book (事項別明細書) at section level, direct confirmation of the 'passed as proposed' wording from the March 2026 session's voting-results list, the audit commissioners' settlement review opinion, the first period's framework itself, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Thirty-second completion — Ichinomiya
+
+一宮市を32番目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 第7次一宮市総合計画 — a three-layer structure of basic concept (FY2018–FY2027; future city image 『木曽の清流に映え、心ふれあう躍動都市 一宮』; five plans and two managements), basic plan (first period FY2018–FY2022 / latter period FY2023–FY2027, the latter being the current plan) and implementation plans (three-year rolling, with the final edition covering FY2026–FY2027 to match the plan's end); the latter basic plan's structure holds seven groups (プラン1 健やかにいきる／プラン2 快適にくらす／プラン3 安全・安心を高める／プラン4 活力を生みだす／プラン5 未来の人財を育てる／マネジメント1 人を呼び込む／マネジメント2 持続可能で未来につなげる) and 35 policies (all 35 are enumerated); progress is managed through administrative evaluation PDCA, combining outcome indicators (grades A–D) and citizen perception indicators (grades a–d) into 16-grade policy evaluations plus project evaluations (necessity, effectiveness, efficiency) — the municipality's self-evaluation framework. The transition to the Eighth Comprehensive Plan (under preparation) is kept only as a version chronology record
+- FY2026 general-account initial budget: 146,740,000 thousand yen (enacted; mayoral bill No. 3 『令和8年度愛知県一宮市一般会計予算』, submitted to the March 2026 regular session, referred to four committees and passed on 2026-03-23 per the city's official split-vote list (賛否の分かれた議案等) and the session agenda; the city's published result wording is 'passed' (可決), so the exact 'passed as proposed' (原案可決) wording is not asserted). The amount is published at sen-yen (thousand-yen) precision, so it is kept at that precision and yen-precision amounts are not synthesized
+- FY2024 general-account settlement at yen precision as published: revenue 150,057,354,584 yen / expenditure 143,608,246,738 yen (the balance of 6,449,107,846 yen matches the published balance in the official settlement book, whose summary table and general-account statement agree; the real balance is 6,207,237 thousand yen per the settlement book's real-balance statement (実質収支に関する調書), kept at that statement's sen-yen precision with rounding, never expanded into synthetic yen). The settlement certification bill, certification bill No. 4 『令和6年度愛知県一宮市一般会計歳入歳出決算の認定について』, was certified on 2025-12-01 at the December 2025 regular session per the council's official bill-and-result list (it was not rejected). FY2024 is a settlement inside the latter basic plan period (FY2023–FY2027), the same plan version, but no official total-level mapping from settlement totals to the plan's policies or indicators exists, so the totals are not linked to the plan's policies and the linkage stays not_assessable
+
+Deferred depth includes the implementation-plan projects under the 35 policies, the per-policy outcome and citizen-perception indicator values, cross-checks against the budget book and the settlement book (事項別明細書) at section level, direct confirmation of the vote from the March 2026 session's final-day minutes, the audit commissioners' settlement review opinion, the Eighth Plan's framework itself, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 31 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市
+- Reviewed complete: 32 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市
 - Review in progress: 0
-- Pending record review: 36
+- Pending record review: 35
 - Blocked source inventory: 0
-- Next official code: 232033
+- Next official code: 232114
 
 ## Definition of Phase 15 completion
 

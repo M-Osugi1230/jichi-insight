@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-16",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "ichinomiya-city-home",
+      "municipality_key": "ichinomiya-city",
+      "organization": "一宮市",
+      "category": "municipality_profile",
+      "title": "一宮市公式サイト",
+      "url": "https://www.city.ichinomiya.aichi.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一宮市の公式自治体サイト。"
+    },
+    {
+      "id": "ichinomiya-budget-2026",
+      "municipality_key": "ichinomiya-city",
+      "organization": "一宮市",
+      "category": "budget",
+      "title": "令和8年度予算状況",
+      "url": "https://www.city.ichinomiya.aichi.jp/zaimu/zaisei/1044383/1000242/1074585/1074589.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算146,740,000千円のEvidence。市長提出議案第3号『令和8年度愛知県一宮市一般会計予算』として令和8年3月定例会に提出され、4委員会への付託を経て令和8年3月23日の本会議で可決された成立予算。市の公表する議決結果の文言は「可決」であり、『原案可決』の文言は直接確認していない。金額は千円単位の公表値のまま記録し、円単位を合成しない。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "ichinomiya-settlement-2024",
+      "municipality_key": "ichinomiya-city",
+      "organization": "一宮市",
+      "category": "settlement",
+      "title": "令和6年度決算資料",
+      "url": "https://www.city.ichinomiya.aichi.jp/kaikei/kaikei/1044384/1000243/1012315/1022247/1068163.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入150,057,354,584円・歳出143,608,246,738円を円単位で含む公式決算資料（令和6年度歳入歳出決算書）。実質収支額は同決算書の実質収支に関する調書により6,207,237千円（千円単位・端数整理）。決算の認定議案である認定第4号は令和7年12月定例会で令和7年12月1日に認定された。決算書（歳入歳出決算事項別明細書）の款別合計との突合は未実施。監査委員の決算審査意見書の内容は確認していない。"
+    }
+  ]
+}

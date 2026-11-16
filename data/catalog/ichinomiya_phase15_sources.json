@@ -1,0 +1,55 @@
+{
+  "id": "ichinomiya-phase15-sources",
+  "phase": 15,
+  "official_code": "232033",
+  "name_ja": "一宮市",
+  "reviewed_at": "2026-11-16",
+  "quality_boundary": "Current plan identity kept as published (the Seventh Ichinomiya City Comprehensive Plan in a three-layer basic-concept / basic-plan / implementation-plan structure, FY2018-FY2027, with the latter basic plan (FY2023-FY2027) as the current plan, future city image 『木曽の清流に映え、心ふれあう躍動都市 一宮』, seven groups — five plans and two managements — holding 35 policies, all enumerated; the Eighth Comprehensive Plan is under preparation and is kept only as a separate version), progress governance (administrative-evaluation PDCA with 16-grade policy evaluation and project evaluation, kept as the municipality's self-evaluation framework), budget enactment kept as passed on 2026-03-23 as mayoral bill No. 3 at the March 2026 regular session with the amount kept at the published sen-yen precision and never expanded into synthetic yen (the city's published result wording is 可決, so the exact 'passed as proposed' wording is not asserted), and settlement totals kept at the published yen precision from the official settlement book (certification bill No. 4 certified on 2025-12-01; the real balance of 6,207,237 thousand yen is kept at the statement's sen-yen precision) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "sources": [
+    {
+      "evidence_location": "一宮市公式Webサイト『第7次一宮市総合計画（2018年度開始）』ページは現行計画の公式入口（Phase 14インベントリで確認）。計画の構成・期間・都市将来像・5つのプランと2つのマネジメント・全35施策の体系は、同ページからリンクされる公式『第7次一宮市総合計画 後期基本計画』本編と公式『2025年度行政評価結果報告書』で直接確認",
+      "evidence_role": "comprehensive_plan",
+      "format": "html",
+      "id": "ichinomiya-seventh-plan",
+      "official_url": "https://www.city.ichinomiya.aichi.jp/sougouseisaku/seisaku/1044355/1000458/1022818/index.html",
+      "title": "第7次一宮市総合計画（2018年度開始）",
+      "use_boundary": "現行計画は第7次一宮市総合計画（2018年度〜2027年度）と後期基本計画（2023年度〜2027年度）として保持し、策定中の第8次総合計画の内容を混在させない"
+    },
+    {
+      "evidence_location": "一宮市公式Webサイトの報道発表『第7次一宮市総合計画 2026～2027年度 実施計画』ページは最終実施計画の公式入口（Phase 14インベントリで確認）。通常の3か年度ローリングではなく計画終期に合わせた2か年度版であることを同発表で確認",
+      "evidence_role": "implementation_plan",
+      "format": "html",
+      "id": "ichinomiya-implementation-2026-2027",
+      "official_url": "https://www.city.ichinomiya.aichi.jp/shisei/houdouhappyo/1068631/1069098/1074917.html",
+      "title": "第7次一宮市総合計画 2026～2027年度 実施計画",
+      "use_boundary": "2026〜2027年度実施計画は第7次計画の最終実施計画として保持し、次期計画事業へ自動接続しない"
+    },
+    {
+      "evidence_location": "一宮市公式Webサイト『行政評価』ページは進行管理の公式入口（Phase 14インベントリで確認）。全35施策の施策評価（成果指標と市民の体感指標を組み合わせた16段階）と事業評価の方法・結果は、同ページからリンクされる公式『2025年度行政評価結果報告書』で確認",
+      "evidence_role": "annual_progress",
+      "format": "html",
+      "id": "ichinomiya-administrative-evaluation",
+      "official_url": "https://www.city.ichinomiya.aichi.jp/sougouseisaku/seisaku/1044355/1000248/",
+      "title": "行政評価",
+      "use_boundary": "行政評価は自治体の自己評価routeとして保持し、source-reported評価をJichi Insight独自の達成率へ変換しない"
+    },
+    {
+      "evidence_location": "一宮市公式Webサイト『令和8年度予算状況』ページはFY2026当初予算の公式入口（Phase 14インベントリで確認）。同ページ掲載の公式『令和8年度予算概要説明資料』と成立後の『令和8年度愛知県一宮市一般会計予算書及び予算説明書』で一般会計146,740,000千円を確認し、議案番号・付託・議決結果は市公式『賛否の分かれた議案等』、採決日は市議会の議事日程（第4号）で確認",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "ichinomiya-budget-2026",
+      "official_url": "https://www.city.ichinomiya.aichi.jp/zaimu/zaisei/1044383/1000242/1074585/1074589.html",
+      "title": "令和8年度予算状況",
+      "use_boundary": "FY2026当初予算は成立予算（議案第3号・令和8年3月23日可決）として保持し、補正予算と別stateで扱う。市の公表する議決結果の文言は「可決」であり、『原案可決』の文言は直接確認していない"
+    },
+    {
+      "evidence_location": "一宮市公式Webサイト『令和6年度決算資料』ページはFY2024決算の公式入口（Phase 14インベントリで確認）。同ページから取得した公式『令和6年度歳入歳出決算書』の各会計決算総括表と一般会計決算書で歳入・歳出の円単位総額を確認した。同決算書の実質収支に関する調書で実質収支額6,207,237千円（千円単位・端数整理）を確認した。認定議案（認定第4号）の提出と委員会付託は市議会公式資料で確認し、議決結果は市議会公式『議案・議決結果一覧（令和7年12月定例会）』（https://www.city.ichinomiya.aichi.jp/shigikai/1000085/1000357/1068783.html ）で令和7年12月1日・結果「認定」を直接確認した",
+      "evidence_role": "settlement",
+      "format": "html",
+      "id": "ichinomiya-settlement-2024",
+      "official_url": "https://www.city.ichinomiya.aichi.jp/kaikei/kaikei/1044384/1000243/1012315/1022247/1068163.html",
+      "title": "令和6年度決算資料",
+      "use_boundary": "FY2024決算は後期基本計画（2023年度〜2027年度）期間の決算として保持し、決算総額を施策・指標の実績へ流用しない。認定第4号は令和7年12月1日に認定されたものとして記録する（議決結果は市議会公式の議決結果一覧で確認）。実質収支額は決算書の調書の公表精度（千円単位・端数整理）のまま保持し、円単位の値を合成しない"
+    }
+  ]
+}
