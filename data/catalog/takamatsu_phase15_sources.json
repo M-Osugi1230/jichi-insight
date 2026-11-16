@@ -1,0 +1,46 @@
+{
+  "id": "takamatsu-phase15-sources",
+  "name_ja": "高松市",
+  "official_code": "372013",
+  "phase": 15,
+  "quality_boundary": "Current plan identity kept as published (the seventh Takamatsu City comprehensive plan: the basic concept 『たかまつ未来ビジョン』 (FY2024-FY2031) with the city vision 『人がつどい 未来に躍動する 世界都市・高松』, three basic policies and six goals, 17 policies and 43 measures, and the KGI of five numerical targets; and the implementation plan 『高松まちづくりプラン』, a three-year plan revised on a rolling basis every two years across four periods, which also serves as the local comprehensive strategy; the layer semantics are kept separate, the overlap of periods 1 and 2 in FY2026 is kept as published without the period-2 version overwriting the period-1 version, and the period status stays verified_fixed_period (FY2024-FY2031) as recorded in the inventory; the 17 policies and 43 measures and the individual progress of the KGI are not enumerated and stay deferred depth), progress governance (the PDCA cycle with an OODA loop, the Takamatsu City comprehensive plan promotion council and citizen satisfaction surveys — kept as the municipality's own progress-management framework), budget enactment kept as printed in the council's official results list for the second regular session of 2026 (bill 議案第2号; the result wording is 「可決」, kept verbatim and not recorded as an adoption as proposed; the vote date 2026-03-23 was identified from the agenda of the plenary minutes and the final confirmation of the plenary declaration wording in the minutes has not been made) and the amount kept at the published sen-yen precision (192,800,000 thousand yen, confirmed in article 1 of the budget bill and in the initial-budget summary table of the FY2026 initial budget overview, and never expanded into synthetic finer amounts), and settlement totals kept at the published sen-yen precision (the settlement certification, bill 認定第1号, was kept under continued review at the fifth regular session of 2025 and was certified on 2025-12-05 at the sixth regular session of 2025 after the settlement review special committee's report of 2025-11-25, confirmed in a supplementary live-browser investigation of the council's official December session page, its results list, and the plenary minutes; the real balance of 4,071,697 thousand yen stays at the published thousand-yen precision; ordinary-account aggregate figures are not used) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "reviewed_at": "2026-11-17",
+  "sources": [
+    {
+      "evidence_location": "計画ページで、第7次高松市総合計画が基本構想「たかまつ未来ビジョン」（2024年度～2031年度）と実施計画「高松まちづくりプラン」で構成される現行の最上位計画であることを確認し、第2期高松まちづくりプラン本編（令和8年3月、高松市発行）で都市像『人がつどい 未来に躍動する 世界都市・高松』、3つの基本方針、6つの目標、政策17・施策43、KGI（5つの数値目標）を確認した",
+      "evidence_role": "comprehensive_plan",
+      "format": "html",
+      "id": "takamatsu-seventh-plan",
+      "official_url": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/keikaku/sogo/kikaku/sogo/7thsogo.html",
+      "title": "第7次高松市総合計画",
+      "use_boundary": "第7次高松市総合計画（2024年度～2031年度）をcurrent versionとして保持し、前計画である第6次高松市総合計画と分離する。前計画期間の成果を現行計画のcurrent actualへ流用しない"
+    },
+    {
+      "evidence_location": "まちづくりプランのページで、第1期（2024年度～2026年度）・第2期（2026年度～2028年度）を含む各期のプランの掲載を確認し、第2期プラン本編でローリング方式（基本構想期間を4期に分け2年ごとに見直す）、重点テーマ5つ、進行管理（PDCAサイクル・OODAループ・総合計画推進会議・市民満足度調査）を確認した",
+      "evidence_role": "implementation_plan",
+      "format": "html",
+      "id": "takamatsu-machizukuri-plans",
+      "official_url": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/keikaku/sogo/kikaku/sogo/machidukuri7.html",
+      "title": "高松まちづくりプラン",
+      "use_boundary": "FY2026に第1期と第2期の期間が重なる実施計画構造をそのまま保持し、第2期で第1期versionを上書きしない。進行管理の仕組みは自治体のsource-reportedな枠組みとして保持し、Jichi Insight独自の達成判定へ変換しない"
+    },
+    {
+      "evidence_location": "予算編成ページから予算書（議案第2号『令和8年度高松市一般会計予算』）を取得し第1条で一般会計当初予算192,800,000千円を確認し、『令和8年度当初予算の概要』の当初予算総括表でも同額を確認した。議決結果は市議会公式『議案等審議結果一覧（会派別・議員別）』（令和8年第2回定例会）の議決結果等欄で「可決」と確認し、議決日は市議会公式の会議録の議事日程から2026年3月23日と特定した（本会議の議決宣言文言の会議録による最終確認は未実施）",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "takamatsu-budget-2026",
+      "official_url": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/zaisei/katei/r8/2026yosanhensei.html",
+      "title": "令和8年度予算編成",
+      "use_boundary": "FY2026当初予算は補正予算・決算と別stateで保持する。金額は千円単位の公表値であり、円単位を合成しない"
+    },
+    {
+      "evidence_location": "決算状況ページから『令和6年度一般会計・特別会計決算見込みの概要』（高松市）を取得し、一般会計の収入済額183,171,243千円・支出済額177,907,841千円・差引残額（形式収支）5,263,402千円・翌年度への繰越財源1,191,705千円・実質収支4,071,697千円（いずれも千円単位）を確認し、差引と実質収支が検算一致することを確認した。認定第1号は市議会公式の審議結果一覧（令和7年第5回定例会）で「継続審査」と確認した後、実ブラウザによる補完調査で、市議会公式『令和7年12月定例会』ページの継続審査案件の表と『令和7年第6回定例会 議案等審議結果一覧（会派別・議員別）』により議決状況「認定」を確認し、会議録（令和7年第6回（12月）定例会 12月05日－01号）の採決文言で議決日2025年12月5日を直接確認した。普通会計ベースの集計値は一般会計の値とは別のため使用していない",
+      "evidence_role": "settlement",
+      "format": "html",
+      "id": "takamatsu-settlement-2024",
+      "official_url": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/zaisei/jijo/kohyo.html",
+      "title": "決算状況",
+      "use_boundary": "FY2024決算は予算・補正と別stateで保持する。歳入・歳出・実質収支は公表精度である千円単位のまま記録し、円単位を合成しない。普通会計ベースの集計値と一般会計値を混同しない"
+    }
+  ]
+}

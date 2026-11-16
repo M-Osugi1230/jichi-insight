@@ -213,9 +213,9 @@ def test_yokosuka_promotion_is_reflected_in_canonical_queue():
     )
     assert item["status"] == "reviewed_complete"
     assert item["completion_path"] == "data/catalog/yokosuka_phase15_completion.json"
-    assert queue["summary"]["reviewed_complete_count"] == 56
-    assert queue["summary"]["pending_record_review_count"] == 11
-    assert queue["summary"]["next_official_code"] == "372013"
+    assert queue["summary"]["reviewed_complete_count"] == 57
+    assert queue["summary"]["pending_record_review_count"] == 10
+    assert queue["summary"]["next_official_code"] == "382019"
 
 
 def test_public_web_does_not_import_candidate_staging():
