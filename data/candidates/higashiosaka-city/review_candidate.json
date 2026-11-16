@@ -1,0 +1,362 @@
+{
+ "candidate_id": "higashiosaka-phase15-review-candidate",
+ "candidate_package": {
+  "evidence_packets": [
+   {
+    "claims": [
+     {
+      "decision": "needs_review",
+      "field": "amount_yen",
+      "location_note": "東大阪市公式の令和8年度一般会計補正予算（第1回）予算書の総括表（補正前の額241,023,138千円・補正額94,778千円・計241,117,916千円）と、市公式『令和8年度会計別補正予算額の状況』（一般会計の補正前の額241,023,138千円）で金額を確認。財政状況の公表（令和8年6月1日、東大阪市長 野田義和）の一般会計予算額241,023百万円とも整合する。議案番号・議決結果は市議会公式サイト（higashiosaka.gijiroku.com）の議案一覧表で確認を試みたが、同表の表示は令和8年度の直近会期（11月臨時会・9月第3回定例会・6月第2回定例会）分のみで、令和8年3月の第1回定例会分は表示範囲外だった",
+      "review_note": "成立した当初予算の額を、補正予算書に明記される補正前の額という形で市の公式財政資料2件で相互確認し、財政状況の公表の百万円単位表記とも整合させたステージング。議案番号・議決日・議決結果の文言は一次資料で直接確認できていないため断定せず、未確認を明記する。人間による確認待ちステージング。",
+      "source_ids": [
+       "higashiosaka-budget-2026"
+      ],
+      "statement": "令和8年度一般会計当初予算総額は241,023,138千円である。金額は東大阪市公式の令和8年度一般会計補正予算（第1回）予算書の『補正前の額』および市公式『令和8年度会計別補正予算額の状況』の一般会計・補正前の額で確認し、財政状況の公表（令和8年6月1日）の一般会計予算額241,023百万円とも整合する。公表精度は千円単位である。当初予算の議案番号・議決日・議決結果の文言は、市議会公式の議決結果資料で直接確認できていないため未確認とする。"
+     }
+    ],
+    "id": "evidence-higashiosaka-city-2026-total-expenditure",
+    "open_questions": [
+     "令和8年度一般会計当初予算の議案番号・議決日・議決結果の文言を市議会公式の議決結果資料（令和8年第1回定例会の議案一覧表または会議録）で確認すること。",
+     "補正予算による変更経過（令和8年度一般会計補正予算（第1回）以降）は本候補では追わない。",
+     "予算書（歳入歳出予算事項別明細書）の款別合計との最終突合。"
+    ],
+    "review_status": "needs_review",
+    "subject_id": "jp-local-272272-fiscal-2026-total-expenditure",
+    "subject_type": "fiscal_record"
+   },
+   {
+    "claims": [
+     {
+      "decision": "needs_review",
+      "field": "amount_yen",
+      "location_note": "東大阪市監査委員『令和6年度東大阪市一般会計・特別会計決算及び基金運用状況審査意見書』（東大阪監第846号・令和7年8月25日）のⅡ財政状況『決算規模の状況』表（単位：千円）で一般会計の歳入233,897,034千円を確認。本文の万円単位表記（歳入2,338億9,703万円）とも整合する。同意見書は審査の結果として、決算書及び附属書類が関係法令に準拠して作成され、計数は関係諸帳簿等と符合し正確であることを認めたものである。認定議案群は令和7年9月5日に提出されたことが市議会公式の議案添付資料（認定第3号・第4号・第5号・第7号）で確認できるが、一般会計の認定議案の議決結果は議案一覧表の表示範囲外（令和8年度の直近会期分のみ表示）で確認できなかった",
+      "review_note": "監査委員の決算審査意見書という一次資料の千円単位の表で歳入総額を確認したステージング。認定の成否については議決結果資料で直接確認できていないため、前後の手続経過からの推定は行わず未確認を明示する。人間レビュー工程で市議会の議決結果資料（令和7年第4回定例会）を確認してから認定の記録を行う。",
+      "source_ids": [
+       "higashiosaka-settlement-2024"
+      ],
+      "statement": "令和6年度一般会計決算の歳入総額は233,897,034千円である（東大阪市監査委員の決算審査意見書（東大阪監第846号・令和7年8月25日）の『決算規模の状況』表（単位：千円）で確認。公表精度は千円単位であり、円単位の総額は同資料に印字されていないため合成しない）。当該決算の認定の成否・認定議案の番号・議決日は、市議会公式の議決結果資料で直接確認できていないため未確認とする。"
+     }
+    ],
+    "id": "evidence-higashiosaka-city-2024-total-revenue",
+    "open_questions": [
+     "令和6年度決算の認定の成否・認定議案の番号・議決日を市議会公式の議決結果資料（令和7年第4回定例会の議案一覧表または会議録）で確認すること。",
+     "決算書（歳入歳出決算事項別明細書）の款別合計との最終突合。",
+     "円単位の決算総額が公式資料に印字されているか（決算書そのもの）を確認すること。現時点では監査委員の審査意見書の千円単位の表で記録している。"
+    ],
+    "review_status": "needs_review",
+    "subject_id": "jp-local-272272-fiscal-2024-total-revenue",
+    "subject_type": "fiscal_record"
+   },
+   {
+    "claims": [
+     {
+      "decision": "needs_review",
+      "field": "amount_yen",
+      "location_note": "歳入総額と同じく、東大阪市監査委員の決算審査意見書（東大阪監第846号）の『決算規模の状況』表（単位：千円）で一般会計の歳出229,860,314千円を確認。本文の万円単位表記（歳出2,298億6,031万円）とも整合する。実質収支は同資料『決算収支の状況』表（単位：千円）の一般会計の値で確認した",
+      "review_note": "監査委員の決算審査意見書の千円単位の表で歳出総額を確認し、歳入総額との差引が同資料の形式収支と一致することを検算したステージング。認定の成否・議案番号・議決日は未確認のまま保持する。人間による確認待ちステージング。",
+      "source_ids": [
+       "higashiosaka-settlement-2024"
+      ],
+      "statement": "令和6年度一般会計決算の歳出総額は229,860,314千円である（監査委員の決算審査意見書（東大阪監第846号）の『決算規模の状況』表（単位：千円）で確認。公表精度は千円単位）。歳入総額233,897,034千円との差引は4,036,720千円で、同資料『決算収支の状況』表の形式収支4,036,720千円と検算一致する。実質収支は3,767,144千円（同『決算収支の状況』表。翌年度へ繰り越すべき財源は差引269,576千円）であり、千円精度のまま記録する。当該決算の認定の成否・議案番号・議決日は未確認である。"
+     }
+    ],
+    "id": "evidence-higashiosaka-city-2024-total-expenditure",
+    "open_questions": [
+     "決算書（歳入歳出決算事項別明細書）の款別合計との最終突合。",
+     "令和6年度決算の認定の成否・認定議案の番号・議決日を市議会公式の議決結果資料で確認すること（歳入側の証拠パケットと共通の未確認事項）。"
+    ],
+    "review_status": "needs_review",
+    "subject_id": "jp-local-272272-fiscal-2024-total-expenditure",
+    "subject_type": "fiscal_record"
+   }
+  ],
+  "fiscal_records": [
+   {
+    "account_type": "general",
+    "amount_yen": 241023138000,
+    "confidence": "medium",
+    "fiscal_year": 2026,
+    "id": "jp-local-272272-fiscal-2026-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算総額",
+    "municipality_id": "jp-local-272272",
+    "note": "東大阪市公式の令和8年度一般会計補正予算（第1回）予算書に示された補正前の額241,023,138千円、および市公式『令和8年度会計別補正予算額の状況』の一般会計・補正前の額241,023,138千円で確認した令和8年度一般会計当初予算総額。市の財政状況の公表（令和8年6月1日公表）でも一般会計予算額241,023百万円と整合する。公表精度は千円単位であり、その精度のまま記録し円単位を合成していない。当初予算の議案番号・議決日・議決結果の文言（『原案可決』等）は、市議会公式の議決結果資料（議案一覧表は令和8年度の直近会期分のみ表示され、令和8年第1回定例会分は表示範囲外）では本候補作成時点のテキスト取得では直接確認できておらず、未確認のまま保持する。補正予算や決算とは別stateで扱う。",
+    "period_end": "2027-03-31",
+    "period_start": "2026-04-01",
+    "review_status": "needs_review",
+    "sources": [
+     "higashiosaka-budget-2026"
+    ],
+    "stage": "initial_budget",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+   },
+   {
+    "account_type": "general",
+    "amount_yen": 233897034000,
+    "confidence": "medium",
+    "fiscal_year": 2024,
+    "id": "jp-local-272272-fiscal-2024-total-revenue",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入額",
+    "municipality_id": "jp-local-272272",
+    "note": "東大阪市監査委員『令和6年度東大阪市一般会計・特別会計決算及び基金運用状況審査意見書』（東大阪監第846号・令和7年8月25日）の『決算規模の状況』表（単位：千円）に示された一般会計の歳入総額233,897,034千円。公表精度は千円単位であり、円単位の総額は同資料に印字されていないため合成しない。本文の万円単位表記（2,338億9,703万円）とも整合する。同意見書は決算書・歳入歳出決算事項別明細書・実質収支に関する調書等を審査し、計数が関係諸帳簿等と符合し正確であることを認めたものである。当該決算の認定の成否、認定議案の番号および議決日については、市議会公式の議決結果資料（議案一覧表は令和8年度の直近会期分のみ表示）で本候補作成時点のテキスト取得では直接確認できておらず、未確認のまま保持する。認定議案群が令和7年9月5日に提出されたことは市議会公式の議案添付資料（認定第3号・第4号・第5号・第7号）で確認できる。FY2024は東大阪市第3次総合計画の第2次実施計画（2024年度～2027年度）の初年度の決算である。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "needs_review",
+    "sources": [
+     "higashiosaka-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+   },
+   {
+    "account_type": "general",
+    "amount_yen": 229860314000,
+    "confidence": "medium",
+    "fiscal_year": 2024,
+    "id": "jp-local-272272-fiscal-2024-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出額",
+    "municipality_id": "jp-local-272272",
+    "note": "東大阪市監査委員の決算審査意見書（東大阪監第846号）の『決算規模の状況』表（単位：千円）に示された一般会計の歳出総額229,860,314千円。歳入総額233,897,034千円との差引額4,036,720千円は、同資料『決算収支の状況』表の形式収支4,036,720千円と検算一致する。実質収支は同表の3,767,144千円（千円精度のまま記録。翌年度へ繰り越すべき財源は差引269,576千円で、本文の2億6,958万円表記と整合する）。決算の認定の成否・議案番号・議決日は未確認のまま保持する。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "needs_review",
+    "sources": [
+     "higashiosaka-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+   }
+  ],
+  "plan_review": {
+   "id": "phase15-higashiosaka-plan-review",
+   "name_ja": "東大阪市",
+   "official_code": "272272",
+   "records": [
+    {
+     "decision": "needs_review",
+     "evidence_location": "東大阪市公式Webサイト『東大阪市第3次総合計画』ページ（Phase 14インベントリで確認）で、目標年次（令和12年）・将来都市像・実施計画（第1次・第2次と各Ver.）の構成を直接確認。計画本編（13.46MB）と概要版も同ページから公開されている",
+     "evidence_role": "current_plan_identity",
+     "id": "higashiosaka-current-plan-period",
+     "review_note": "総合計画の10年間と実施計画の期間・版（Ver.）を別period semanticsとして保持した。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.higashiosaka.lg.jp/0000028226.html",
+     "statement": "東大阪市の総合計画は東大阪市第3次総合計画であり、令和12（2030）年を目標年次とし、計画期間は令和3（2021）年度から令和12（2030）年度である。将来都市像は『つくる・つながる・ひびきあう ― 感動創造都市 東大阪 ―』である。総合計画のもとに具体的な事業計画となる実施計画を策定し、第1次実施計画（2021年度～2023年度）と第2次実施計画（2024年度～2027年度）からなる。各実施計画は、年度ごとの新規・拡充事業の新たな位置付けと社会情勢の変化等により見直しが必要となる事業を整理した版（Ver.）が策定される（第1次はVer.1.0～3.0、第2次はVer.1.0（2024年度）・Ver.2.0（2025年度）・Ver.3.0（2026年度））。総合計画の10年間と実施計画の期間・版を別period semanticsとして保持し、一律の固定期間へ潰さない。Phase 14インベントリの記録（第3次総合計画 2021～2030年度・verified_fixed_period）とも一致する。",
+     "title": "東大阪市第3次総合計画の計画期間（2021年度～2030年度）と実施計画（第1次・第2次）の構成",
+     "value": "第3次総合計画は2021年度～2030年度（令和12年を目標年次）／実施計画は第1次2021年度～2023年度・第2次2024年度～2027年度（いずれも年度ごとの版（Ver.）で改定）"
+    },
+    {
+     "decision": "needs_review",
+     "evidence_location": "公式『東大阪市第3次総合計画（概要版）』の将来都市像・重点施策・分野別の施策体系図で、7分野の名称と3つの重点施策を直接確認した。分野別の個別施策は体系図が縦書きレイアウトであり、テキスト抽出では分野別の帰属を誤りなく転記できない",
+     "evidence_role": "policy_structure",
+     "id": "higashiosaka-current-policy-structure",
+     "review_note": "分野名と重点施策は公式概要版で直接確認した。分野別の個別施策の全件列挙は転記の正確性を担保できないため候補には含めず、計画本編での直接確認を追加depthとして保持する。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.higashiosaka.lg.jp/0000028226.html",
+     "statement": "第3次総合計画の分野別の施策体系は7分野で構成する。分野1 人権・共生・協働、分野2 子ども・子育て、分野3 教育、分野4 スポーツ・文化・産業、分野5 健康・福祉、分野6 都市・環境、分野7 防災・治安である。あわせて、人口減少社会への対応を踏まえ今後10年間で特に重点的に取り組むべき施策として、3つの重点施策（1 若者・子育て世代に選ばれるまちづくり、2 高齢者が活躍するまちづくり、3 人が集まり、活気あふれるまちづくり）を置く。各分野の個別施策の全件列挙は本候補では行わず、計画本編での直接確認を人間レビュー工程に残す（deferred depth）。",
+     "title": "第3次総合計画の施策体系（7分野と3つの重点施策）"
+    },
+    {
+     "decision": "needs_review",
+     "evidence_location": "東大阪市公式『東大阪市第3次総合計画』ページの『実績報告』『総括』の各節で、年度ごとの事業評価報告書・評価指標達成状況と第1次実施計画実績報告書の公表を直接確認",
+     "evidence_role": "progress_governance",
+     "id": "higashiosaka-progress-governance-framework",
+     "review_note": "進行管理の枠組み（PDCAサイクルによる事業評価と評価指標達成状況の公表）を公式資料から抽出。評価・進捗の個別結果そのものは本候補では扱わない。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.higashiosaka.lg.jp/0000028226.html",
+     "statement": "第3次総合計画の実施計画では、各年度終了後、PDCAサイクルにより実施計画対象事業の評価を行い、評価指標の目標達成と事業の着実な実行に努めるものとし、事業評価報告書と評価指標達成状況を公表する。第1次実施計画については令和3年度～令和5年度の各年度分が、第2次実施計画については令和6年度・令和7年度分が公表済みである。あわせて、実施計画期間における総括として第1次実施計画実績報告書（施策実施による成果指標の達成状況や実施計画事業の指標達成状況を含む）がとりまとめられている。この進捗管理は自治体による進行管理の枠組みであり、Jichi Insight独自の達成判定へ変換しない。",
+     "title": "実施計画の進捗管理（PDCAサイクルによる事業評価と評価指標達成状況の公表）"
+    },
+    {
+     "decision": "needs_review",
+     "evidence_location": "公式『東大阪市第3次総合計画』ページ（実施計画の各版の説明）と、監査委員『令和6年度東大阪市一般会計・特別会計決算及び基金運用状況審査意見書』の『むすび』（第2次実施計画Ver.2.0・東大阪版子どもファーストロードマップ・行財政改革プラン2025への言及）で確認。次期計画の策定状況は公式の計画ページ等で確認できなかった",
+     "evidence_role": "plan_transition",
+     "id": "higashiosaka-plan-transition",
+     "review_note": "同一の第3次総合計画内での実施計画の移行（第1次から第2次）と各Ver.の履歴を版の履歴として記録した。第1次実施計画の事業・評価の全件列挙は本候補では行わない。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.higashiosaka.lg.jp/0000028226.html",
+     "statement": "第3次総合計画の実施計画は、第1次実施計画（令和3（2021）年度～令和5（2023）年度、Ver.1.0～3.0）から第2次実施計画（令和6（2024）年度～令和9（2027）年度、Ver.1.0～3.0）へ移行済みであり、現行は第2次実施計画Ver.3.0（令和8年度の新規・拡充事業の新たな位置付けと見直しが必要となる事業を整理した版）である。監査委員の令和6年度決算審査意見書でも、第2次実施計画をベースに令和6年度から令和9年度までを取組期間とする『東大阪版子どもファーストロードマップ』が作成されたこと、令和7年6月に第2次実施計画Ver.2.0が策定されたこと、令和7年4月に『東大阪市行財政改革プラン2025』が策定されたことが言及されている。総合計画そのものは2021年度～2030年度を通じたものであり、実施計画の第1次／第2次と各Ver.は版を分けて保持する。第3次計画の後継となる次期総合計画の策定状況は、本候補作成時点では市の公式資料で確認できていない。FY2024決算は第2次実施計画の初年度の決算であり、第1次実施計画期間の実績を第2次へ接続しない。",
+     "title": "実施計画の第1次（2021〜2023年度）から第2次（2024〜2027年度）への移行と版の履歴"
+    },
+    {
+     "decision": "not_assessable",
+     "evidence_location": "FY2024決算の公式入口はPhase 14インベントリの決算資料（決算状況ページ）。決算総額と計画の施策との対応付けは公式資料の総額レベルでは示されていない",
+     "evidence_role": "annual_progress",
+     "fiscal_year": 2024,
+     "id": "higashiosaka-fy2024-settlement-linkage",
+     "review_note": "計画の版は同一であるものの総額レベルの対応付けがないことと、決算の認定の成否が未確認であることの二つの理由で接続は未判定のまま保持する。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.higashiosaka.lg.jp/0000000531.html",
+     "statement": "FY2024決算値と東大阪市第3次総合計画の施策体系との接続は未判定（not_assessable）。FY2024は第2次実施計画（2024年度～2027年度）の初年度であり計画の版は現行の第2次実施計画と同一であるが、決算総額は会計別の集計値であり、7分野の施策体系・3つの重点施策との総額レベルの対応付けは公式資料に示されていない。加えて、FY2024決算の認定の成否が未確認であり、認定を前提とする接続の確定もできない。接続は人間レビュー工程の作業とする。",
+     "title": "令和6年度決算と東大阪市第3次総合計画の施策体系の接続"
+    }
+   ],
+   "review_status": "pending_record_review"
+  },
+  "policy_structure": {
+   "current_plan": {
+    "end_fiscal_year": 2027,
+    "management_principles": [
+     "総合計画は東大阪市第3次総合計画（2021年度～2030年度、令和12年を目標年次）であり、そのもとに具体的な事業計画となる実施計画（第1次2021年度～2023年度・第2次2024年度～2027年度）を策定する構成である。各実施計画は年度ごとに版（Ver.）が策定され、現行は第2次実施計画Ver.3.0である。総合計画の期間と実施計画の期間・版を別period semanticsとして保持し、一律の固定期間modelへ潰さない",
+     "施策体系は7分野（人権・共生・協働／子ども・子育て／教育／スポーツ・文化・産業／健康・福祉／都市・環境／防災・治安）で構成し、3つの重点施策（若者・子育て世代に選ばれるまちづくり／高齢者が活躍するまちづくり／人が集まり、活気あふれるまちづくり）を置く。各分野の個別施策の全件列挙は本候補では行わず、追加depthとして保持する",
+     "進行管理は、各年度終了後にPDCAサイクルにより実施計画対象事業の評価を行い、事業評価報告書と評価指標達成状況を公表する枠組みである。自治体の進捗管理をJichi Insight独自の達成判定へ変換しない",
+     "FY2024決算は第2次実施計画（2024年度～2027年度）の初年度の決算であり計画の版は同一であるが、決算総額と施策体系との総額レベルの対応付けは公式資料になく、FY2024決算の認定の成否も未確認のため、決算値を計画のcurrent actualへ流用しない"
+    ],
+    "period_status": "verified_fixed_period",
+    "policy_fields": [
+     {
+      "id": "field-1",
+      "measures": [],
+      "name_ja": "人権・共生・協働"
+     },
+     {
+      "id": "field-2",
+      "measures": [],
+      "name_ja": "子ども・子育て"
+     },
+     {
+      "id": "field-3",
+      "measures": [],
+      "name_ja": "教育"
+     },
+     {
+      "id": "field-4",
+      "measures": [],
+      "name_ja": "スポーツ・文化・産業"
+     },
+     {
+      "id": "field-5",
+      "measures": [],
+      "name_ja": "健康・福祉"
+     },
+     {
+      "id": "field-6",
+      "measures": [],
+      "name_ja": "都市・環境"
+     },
+     {
+      "id": "field-7",
+      "measures": [],
+      "name_ja": "防災・治安"
+     }
+    ],
+    "start_fiscal_year": 2024,
+    "title": "東大阪市第3次総合計画 第2次実施計画",
+    "vision": "つくる・つながる・ひびきあう ― 感動創造都市 東大阪 ―"
+   },
+   "id": "higashiosaka-current-policy-structure",
+   "name_ja": "東大阪市",
+   "official_code": "272272",
+   "phase": 15
+  },
+  "progress_review": {
+   "id": "higashiosaka-current-progress-review-summary",
+   "implementation_plan_framework": {
+    "evaluation_structure": "進行管理は、各年度終了後、PDCAサイクルにより実施計画対象事業の評価を行い、事業評価報告書と評価指標達成状況を公表する枠組みである。第2次実施計画については令和6年度・令和7年度分が公表済みであり、第1次実施計画については期間の総括として実績報告書がとりまとめられている。自治体の進捗管理をJichi Insight独自の達成判定へ変換せず、枠組みそのものを年度実績へ読み替えない",
+    "period": "第3次総合計画の計画期間（2021年度～2030年度）を通じて、実施計画（第1次2021年度～2023年度・第2次2024年度～2027年度）のもとで進捗管理を行う。現行は第2次実施計画Ver.3.0である。FY2024決算は第2次実施計画の初年度の決算で計画の版は同一であるが、決算総額と7分野の施策体系との総額レベルの対応付けは公式資料になく、FY2024決算の認定の成否も未確認のため、進行管理の対象値として接続しない",
+    "title": "第2次実施計画（2024年度～2027年度・Ver.3.0）とPDCAサイクルによる進捗管理"
+   },
+   "name_ja": "東大阪市",
+   "official_code": "272272",
+   "phase": 15,
+   "review_status": "review_candidate_staging"
+  },
+  "source_catalog": {
+   "id": "higashiosaka-phase15-sources",
+   "name_ja": "東大阪市",
+   "official_code": "272272",
+   "phase": 15,
+   "sources": [
+    {
+     "evidence_location": "東大阪市公式Webサイト『東大阪市第3次総合計画』ページ（Phase 14インベントリで確認）。目標年次（令和12年）・将来都市像・計画本編／概要版の公開と、実施計画（第1次・第2次と各Ver.）・実績報告（事業評価報告書・評価指標達成状況）・総括（第1次実施計画実績報告書）の構成を直接確認した",
+     "evidence_role": "comprehensive_plan",
+     "format": "html",
+     "id": "higashiosaka-third-plan",
+     "official_url": "https://www.city.higashiosaka.lg.jp/0000028226.html",
+     "title": "東大阪市第3次総合計画",
+     "use_boundary": "現行計画は東大阪市第3次総合計画（2021年度～2030年度）として保持し、実施計画の第1次（2021年度～2023年度）と第2次（2024年度～2027年度）と各Ver.を版として分離する",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    },
+    {
+     "evidence_location": "同『東大阪市第3次総合計画』ページの実施計画の節で、第2次実施計画Ver.1.0（令和6年度から令和9年度の4年間を計画期間）・Ver.2.0・Ver.3.0の策定と、実績報告の節で令和6年度・令和7年度の事業評価報告書・評価指標達成状況の公表を直接確認した",
+     "evidence_role": "implementation_plan_and_progress",
+     "format": "html",
+     "id": "higashiosaka-second-implementation",
+     "official_url": "https://www.city.higashiosaka.lg.jp/0000028226.html",
+     "title": "第2次実施計画",
+     "use_boundary": "第2次実施計画の複数versionと年度終了後のPDCA評価routeを保持し、過去versionや評価を上書きしない",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    },
+    {
+     "evidence_location": "FY2026当初予算の金額は、東大阪市公式の令和8年度一般会計補正予算（第1回）予算書（補正前の額241,023,138千円）と市公式『令和8年度会計別補正予算額の状況』（一般会計の補正前の額241,023,138千円）で確認し、財政状況の公表（令和8年6月1日）の一般会計予算額241,023百万円とも整合させた。議案番号・議決日・議決結果の文言は市議会公式の議決結果資料では直接確認できていない",
+     "evidence_role": "budget",
+     "format": "html",
+     "id": "higashiosaka-budget-2026",
+     "official_url": "https://www.city.higashiosaka.lg.jp/0000000529.html",
+     "title": "予算状況",
+     "use_boundary": "FY2026当初予算は補正予算・決算と別stateで保持する。金額は千円単位の公表値であり、円単位を合成しない。議案番号・議決日・議決結果の文言は未確認のまま保持する",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    },
+    {
+     "evidence_location": "FY2024決算の公式入口（Phase 14インベントリで確認）。当該ページの取得は本候補作成時に成功しなかったが、一般会計の歳入・歳出の精密値（千円単位）は東大阪市監査委員『令和6年度東大阪市一般会計・特別会計決算及び基金運用状況審査意見書』（東大阪監第846号・令和7年8月25日）で直接確認した。決算の認定の成否は市議会公式の議決結果資料で確認できていない",
+     "evidence_role": "settlement",
+     "format": "html",
+     "id": "higashiosaka-settlement-2024",
+     "official_url": "https://www.city.higashiosaka.lg.jp/0000000531.html",
+     "title": "決算状況",
+     "use_boundary": "FY2024決算は第2次実施計画（2024年度～2027年度）の初年度の決算として保持する。歳入・歳出・実質収支は監査委員の審査意見書の千円単位の公表値のまま記録し、認定の成否は未確認のまま保持して推測で補完しない",
+     "verification_status": "official_landing_not_live_verified_2026-11-16"
+    }
+   ]
+  }
+ },
+ "deferred_depth": [
+  {
+   "boundary": "7分野の分野別施策の全件列挙と、評価指標（事業評価報告書・評価指標達成状況）の個別値は追加depthとし、公式対応が確認できるまで昇格しない。概要版の体系図は縦書きレイアウトで、テキスト抽出では分野別の帰属を誤りなく転記できないため、候補には分野単位の体系（7分野と3つの重点施策）を保持するが、個別施策・事業単位の対応付けは行わない。",
+   "id": "current-plan-granular-kpi-and-project-linkage",
+   "status": "deferred_not_required_for_candidate_staging"
+  },
+  {
+   "boundary": "FY2026当初予算の議案番号・議決日・議決結果の文言と、FY2024決算の認定の成否・認定議案の番号・議決日は、市議会公式の議決結果資料（議案一覧表は令和8年度の直近会期分のみ表示され、対象会期分は表示範囲外）ではテキスト取得で確認できておらず、候補では未確認のまま保持している。決算書の款別合計との最終突合、補正予算による変更経過も追加エビデンス確認前は記録・結合しない。FY2024決算の歳入・歳出・実質収支（千円単位）とFY2026当初予算総額（千円単位）は一次資料で確認済みであり、候補の財政記録・証拠パケット側に反映している。",
+   "id": "fiscal-vote-and-certification-verification",
+   "status": "deferred_not_required_for_candidate_staging"
+  },
+  {
+   "boundary": "第1次実施計画（2021年度～2023年度）の事業・評価の全件列挙は本候補では行わない。実施計画の第1次から第2次への移行と各Ver.の履歴は版の履歴として別途記録し、第1次実施計画期間の実績を第2次実施計画の期間へ前倒し接続しない。次期（第4次）総合計画の策定状況は未確認である。",
+   "id": "plan-transition-version-depth",
+   "status": "deferred_not_required_for_candidate_staging"
+  },
+  {
+   "boundary": "東大阪市総合計画・進捗管理・財政等のステージングは政策効果の因果認定や他都市比較可能性を意味しない。進捗管理（自治体の進行管理の枠組み）をJichi Insight独自の達成判定へ変換しない。",
+   "id": "policy-outcome-causal-and-cross-city-comparability",
+   "status": "deferred_not_required_for_candidate_staging"
+  }
+ ],
+ "human_review": {
+  "boundary": "A person must check the candidate against the cited primary sources before any promotion to reviewed_complete.",
+  "required": true,
+  "reviewed_at": null,
+  "reviewer_note": null,
+  "status": "pending"
+ },
+ "name_ja": "東大阪市",
+ "official_code": "272272",
+ "package_state": "prepared",
+ "phase": 15,
+ "publication": {
+  "boundary": "Candidate data is staging-only and must not be loaded by the public site or treated as reviewed data.",
+  "eligible": false
+ },
+ "quality_boundaries": [
+  "Promoted facts must come from official primary sources with stable evidence locators.",
+  "Unpublished, unavailable, historical-only, draft, and unresolved facts must remain explicit.",
+  "No Jichi Insight policy-achievement score, causal attribution, or unverified cross-city ranking may be created.",
+  "This candidate is machine-prepared evidence only and is not Reviewed until a person checks the primary sources."
+ ],
+ "schema_version": 1,
+ "source_inventory_path": "data/indexed/higashiosaka-city/source_inventory.json",
+ "status": "review_candidate"
+}
