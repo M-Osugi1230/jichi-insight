@@ -1,0 +1,63 @@
+{
+  "id": "phase15-fukui-plan-review",
+  "official_code": "182010",
+  "name_ja": "福井市",
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-16",
+  "next_action": "Promote the full enumeration of the 53 measures and 64 KPIs under the 14 policies and their results only when official sources with stable record-level locators have been reviewed; cross-check the settlement detail book (事項別明細書) and the budget book's bill text (第1号議案第1条) and first table; inspect the audit committee's settlement review opinion; confirm the plan framework against the plan book itself when it becomes retrievable, since v1 confirmed it from official comprehensive-plan reports after retrieval of the plan book pages failed; record the ninth comprehensive plan now being drafted only as a separate version once officially published, without retroactively connecting its policies or measures to the eighth plan's framework; keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "quality_boundary": "This package reviews the current plan identity and period (the Eighth Fukui City Comprehensive Plan, FY2022-FY2026, a five-year plan under the inherited city vision 『みんなが輝く 全国に誇れる ふくい』, structured as vision / priority policies / policies / measures with a separate implementation plan), the plan's structure of four fields holding 14 policies (the 53 measures and 64 KPIs beneath the policies are not enumerated in v1; the plan framework was confirmed from official comprehensive-plan reports and the official budget overview because retrieval of the plan book pages failed, and that provenance is kept explicit rather than claiming confirmation from the plan book itself), the progress-governance layer (annual comprehensive-plan reports and KPI achievement reporting, with the ninth plan now being drafted in the council kept as a separate version), the enacted FY2026 initial budget (bill No. 1, passed as proposed on 2026-03-19), and the FY2024 settlement at yen precision as published, without collapsing proposed, enacted, supplementary, or settlement states. FY2024 is the third year of the plan period, but its totals are section-level aggregates and are not linked to individual policies, measures or KPIs.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "市公式の総合計画ページ（現行計画の公式入口。Phase 14インベントリで確認）と、公式『令和8年度当初予算案の概要』（令和8年度は『第八次福井市総合計画』の最終年度にあたり、目指すべき将来都市像『みんなが輝く 全国に誇れる ふくい』の実現に向けた総仕上げの年である旨を明記）、公式『総合計画レポート2024別紙・令和6年度KPI達成状況』（第八次計画の政策体系を掲載）で直接確認",
+      "evidence_role": "current_plan_identity",
+      "id": "fukui-current-plan-period",
+      "review_note": "計画期間・位置付け・将来都市像を公式資料で確認したレビュー済みレコード。なお計画体系の確認は、計画本編ページの取得が失敗したため、公式の総合計画レポート類（令和6年度KPI達成状況別紙等）と公式の予算概要で行った経緯を保持する。",
+      "source_url": "https://www.city.fukui.lg.jp/sisei/plan/plan/p015748.html",
+      "statement": "第八次福井市総合計画は、福井市の目指すべき将来都市像『みんなが輝く 全国に誇れる ふくい』の実現に向けた市政運営の指針であり、計画期間は令和4（2022）年度から令和8（2026）年度までの5年間である。将来都市像は第七次福井市総合計画から継承されたもので、令和8年度は計画の最終年度にあたる。総合計画は『将来都市像』『重点方針』『政策』『施策』の階層で構成し、将来都市像を実現するための具体的な事業計画として、主要な事業や数値目標を定める実施計画を別途策定する。Phase 14インベントリの記録（第八次福井市総合計画2022年度～2026年度）とも一致する。",
+      "title": "第八次福井市総合計画の計画期間と位置付け",
+      "value": "2022年度～2026年度"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "公式『総合計画レポート2024別紙・令和6年度KPI達成状況』の分野別集計表（I社会基盤分野・II市民福祉分野・III産業分野・IV教育分野の4分野と、分野ごとのKPI設定数14・26・13・11の計64）および政策ごとの見出し（政策番号・政策名・目指すまちの姿・施策・KPIを政策1から政策14まで掲載）で直接確認",
+      "evidence_role": "policy_structure",
+      "id": "fukui-current-policy-structure",
+      "review_note": "公式資料（総合計画レポート2024別紙）が明示した分野・政策の層構造とKPI総数を一次資料で確認したレビュー済みレコード。53施策・64KPIの全件列挙は行わない（deferred depthとして保持）。計画本編ページの取得が失敗したため本編そのものでは確認していない経緯を保持する。",
+      "source_url": "https://www.city.fukui.lg.jp/sisei/plan/plan/p015748.html",
+      "statement": "第八次福井市総合計画の政策は、4つの分野（I 社会基盤分野『快適に暮らすまち』／II 市民福祉分野『住みよいまち』／III 産業分野『活き活きと働くまち』／IV 教育分野『学び成長するまち』）のもとに14の政策を位置付ける。Iには公共交通・中心市街地・生活インフラの3政策、IIには地域活性化・共生、協働・福祉・環境・防災、安全安心の5政策、IIIには農林水産業・商工業・観光の3政策、IVには文化、歴史、自然・学校教育・生涯学習、生涯スポーツの3政策が属し、各政策は目指すまちの姿を掲げる。政策の下には計53の施策があり、実施計画では施策ごとに計64のKPI（数値目標）を設定する。施策・KPIの全件は本候補では列挙しない。",
+      "title": "第八次福井市総合計画の4分野・14政策と53施策・64KPIの体系"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "公式『総合計画レポート2024別紙・令和6年度KPI達成状況』（冒頭の進行管理の説明、分野別達成度、全体達成度64%・前年度63%）および公式『総合計画レポート・令和5年度成果報告書』（重点方針・政策別の取組実績・数字で見る成果・市民アンケート結果の構成）で直接確認",
+      "evidence_role": "progress_governance",
+      "id": "fukui-progress-governance-framework",
+      "review_note": "進行管理の枠組み（毎年度のレポートとKPI達成状況の公表）を公式資料で直接確認したレビュー済みレコード。個別KPIの実績そのものは本パッケージでは扱わない。",
+      "source_url": "https://www.city.fukui.lg.jp/sisei/plan/plan/p015748.html",
+      "statement": "第八次福井市総合計画の進行管理は、実施計画に定める53施策・64KPIの達成状況をふまえて行う。毎年度、取組実績をまとめた『総合計画レポート』（成果報告書）とKPI達成状況（別紙）を公表し、分野別・政策別に目標達成数と達成度を示す。令和6年度はKPI64項目のうち41項目が目標達成で全体達成度は64%であった（自治体による自己評価であり、Jichi Insight独自の達成判定へ変換しない）。市民アンケート結果も成果報告書にあわせて報告される。",
+      "title": "実施計画のKPIと毎年度の総合計画レポートに基づく進行管理"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "市公式の第九次福井市総合計画審議会資料（第1回全体会・令和7年7月24日。『第九次福井市総合計画の策定について』の諮問と、参考資料としての第八次福井市総合計画レポート（令和4～6年度）・令和6年度KPI達成状況の一覧）で確認",
+      "evidence_role": "plan_transition",
+      "id": "fukui-ninth-plan-transition",
+      "review_note": "次期計画の策定経過と版の分離のみを公式資料で確認したレビュー済みレコード。第九次計画の枠組みそのものは本パッケージでは記録しない。",
+      "source_url": "https://www.city.fukui.lg.jp/sisei/plan/plan/p071189_d/fil/shidai.pdf",
+      "statement": "第八次福井市総合計画は令和8（2026）年度が最終年度であり、次期計画である第九次福井市総合計画の策定が進められている。令和7年7月24日に第九次福井市総合計画審議会の第1回全体会が開かれ、第九次計画の策定について諮問された。審議会資料では第八次計画のレポート（令和4～6年度）と令和6年度KPI達成状況が基礎資料として用いられている。各計画はversionを分けて保持し、第九次計画の政策・施策を第八次計画の体系へ遡及接続しない。",
+      "title": "第九次福井市総合計画の策定経過（計画移行）"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "市公式『決算』ページ（決算総額の確認先の公式資料。計画の進捗評価の公式入口は総合計画ページの『総合計画レポート』）",
+      "evidence_role": "annual_progress",
+      "fiscal_year": 2024,
+      "id": "fukui-fy2024-settlement-linkage",
+      "review_note": "決算総額を確認できたことと、個別事業の接続を推測で記録しないことは別の判断であることを示す明示的な未判定レコード。決算と事業の対応付けは人間レビュー工程の作業。",
+      "source_url": "https://www.city.fukui.lg.jp/sisei/zaisei/kessan/p001063.html",
+      "statement": "FY2024決算値と第八次福井市総合計画の政策・施策・KPIとの接続は未判定（not_assessable）。FY2024は第八次計画の計画期間（2022年度～2026年度）の3年目に属する決算であるが、決算総額は款別の集計値であり、個別施策・事業との対応付けは総額レベルでは行われていない。総合計画レポート2024はKPIの達成状況を検証したものであるが、決算総額との突合・対応付けは未実施である。決算と事業の対応付けは人間レビュー工程の作業とする。",
+      "title": "令和6年度決算と第八次福井市総合計画の政策・施策・KPIの接続"
+    }
+  ]
+}

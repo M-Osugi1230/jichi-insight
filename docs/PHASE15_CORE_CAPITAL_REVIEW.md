@@ -392,13 +392,25 @@ Declared v1 package:
 
 Deferred depth includes the full enumeration of the measures and major projects under the 21 policy directions, all 85 KPIs and their results, the revision differences (including the 13 measures / 36 major projects added by the June 2026 revision), cross-checks against the settlement detail book and the budget book's bill text and first table, identification of the budget bill number and vote date and of the settlement certification date, inspection of the audit committee's settlement review opinion, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Twenty-fifth completion — Fukui
+
+福井市を25番目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 第八次福井市総合計画 — the city's governing plan under the city vision 『みんなが輝く 全国に誇れる ふくい』 inherited from the seventh plan; a five-year plan FY2022–FY2026 (FY2026 is its final year) structured as vision / priority policies / policies / measures, with a separate implementation plan setting the major projects and numerical targets; four fields (社会基盤・市民福祉・産業・教育) holding 14 policies beneath them (the 53 measures and 64 KPIs under the policies are not enumerated in v1); progress governance through the annual comprehensive-plan reports (成果報告書 and KPI achievement status), with KPI achievement kept as the municipality's self-evaluation. The plan framework was confirmed from official comprehensive-plan reports (the FY2024 KPI achievement annex) and the official FY2026 budget overview because retrieval of the plan book pages failed; it is not recorded as confirmed from the plan book itself. The ninth comprehensive plan, now being drafted in the council (審議会), is kept only as a plan-transition record in a separate version and is never retroactively connected to the eighth plan's framework
+- FY2026 general-account initial budget: 137,700,000,000 yen (enacted; bill No. 1 『令和8年度福井市一般会計予算』, submitted 2026-02-16 and passed as proposed (原案可決) on 2026-03-19 at the March 2026 regular council session, confirmed in the council's official deliberation results)
+- FY2024 general-account settlement at yen precision as published: revenue 133,427,298,121 yen / expenditure 130,218,901,390 yen (balance 差引・形式収支 3,208,396,731 yen matches the published figure in the official settlement summary table 総表・その2; real balance 実質収支 2,248,179,731 yen); certification 第66号議案 certified on 2025-12-01 (submitted 2025-09-25). FY2024 is the third year of the plan period, but its totals are section-level aggregates and are not linked to individual policies, measures or KPIs, so the linkage stays not_assessable
+
+Deferred depth includes the full enumeration of the 53 measures and 64 KPIs and their results, the implementation plan's major projects, confirmation of the plan framework against the plan book itself when it becomes retrievable, cross-checks against the settlement detail book and the budget book's bill text (第1号議案第1条) and first table, inspection of the audit committee's settlement review opinion, the ninth plan's framework, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 24 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市
+- Reviewed complete: 25 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市
 - Review in progress: 0
-- Pending record review: 43
+- Pending record review: 42
 - Blocked source inventory: 0
-- Next official code: 182010
+- Next official code: 192015
 
 ## Definition of Phase 15 completion
 

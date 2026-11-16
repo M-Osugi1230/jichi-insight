@@ -322,7 +322,7 @@ def test_shinjuku_and_previous_nineteen_are_reviewed_complete_and_hachioji_is_ne
     ):
         assert by_code[code]["status"] == "reviewed_complete"
 
-    assert queue["summary"]["reviewed_complete_count"] == 24
+    assert queue["summary"]["reviewed_complete_count"] == 25
     assert queue["summary"]["review_in_progress_count"] == 0
-    assert queue["summary"]["pending_record_review_count"] == 43
-    assert queue["summary"]["next_official_code"] == "182010"
+    assert queue["summary"]["pending_record_review_count"] == 42
+    assert queue["summary"]["next_official_code"] == "192015"

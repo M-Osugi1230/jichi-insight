@@ -1,0 +1,65 @@
+[
+  {
+    "account_type": "general",
+    "amount_yen": 137700000000,
+    "confidence": "high",
+    "fiscal_year": 2026,
+    "id": "jp-local-182010-fiscal-2026-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算（可決）",
+    "municipality_id": "jp-local-182010",
+    "note": "福井市公式『令和8年度当初予算案の概要』（令和8年2月9日）の会計別予算総括表および一般会計歳入歳出予算総括表（単位 千円）に、令和8年度一般会計当初予算額137,700,000千円（令和7年度140,130,000千円、差引増減△2,430,000千円・△1.7%で検算一致）と示された当初予算額。成立は福井市議会公式『令和8年3月定例会提出議案等及び審議結果』で確認した。同資料で第1号議案『令和8年度福井市一般会計予算』は令和8年2月16日上程・令和8年3月19日原案可決であり、原案どおり可決されたため提案額がそのまま成立した当初予算額である。予算ページ掲載の『令和8年度予算資料』の会計別予算額（一般会計1,377.0億円）とも整合する。補正予算や決算とは別stateで扱う。",
+    "period_end": "2027-03-31",
+    "period_start": "2026-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "fukui-budget-2026"
+    ],
+    "stage": "initial_budget",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 133427298121,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-182010-fiscal-2024-total-revenue",
+    "metric": "total_revenue",
+    "metric_label": "一般会計決算歳入",
+    "municipality_id": "jp-local-182010",
+    "note": "福井市公式『令和6年度一般会計・特別会計決算表（総表・その2）』（単位 円）の一般会計歳入決算額133,427,298,121円。歳出総額130,218,901,390円との差引額3,208,396,731円が同表の公表する差引（形式収支）と一致し、同決算表（総表・その1）（単位 千円）の歳入決算額133,427,298千円とも整合する。実質収支は翌年度繰越事業財源960,217,000円を控除した2,248,179,731円である。令和6年度決算は第66号議案『令和6年度福井市各会計歳入歳出決算の認定について』として令和7年12月1日に認定された（令和7年9月25日上程。福井市議会公式『令和7年12月定例会提出議案等及び審議結果』で確認）。第66号議案は一般会計と特別会計を合わせた各会計歳入歳出決算の認定であり、公営企業会計の決算認定は第67号から第70号議案である。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "fukui-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 130218901390,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-182010-fiscal-2024-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計決算歳出",
+    "municipality_id": "jp-local-182010",
+    "note": "同『令和6年度一般会計・特別会計決算表（総表・その2）』（単位 円）の一般会計歳出決算額130,218,901,390円。歳入総額133,427,298,121円との差引額3,208,396,731円で検算が一致し、同決算表（総表・その1）（単位 千円）の歳出決算額130,218,901千円とも整合する。令和6年度決算は第66号議案として令和7年12月1日に認定された。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "fukui-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  }
+]
