@@ -31,7 +31,12 @@ they describe what actually exists, not an aspirational topology.
   public web source does not import candidate staging data.
 - Every deployment is verified from outside the build artifact by the
   Production Smoke workflow, and the result is recorded in
-  `.github/publication-status.json` (`verified` / `deployed_commit_sha`).
+  `.github/publication-status.json` (`verified` / `deployed_commit_sha`)
+  on the dedicated `publication-status` branch, which the Verify Pages
+  Publication workflow force-pushes after each deployment (branch
+  protection requires pull requests for `main`, so the record cannot be
+  pushed to `main` directly). Read it with
+  `git show origin/publication-status:.github/publication-status.json`.
 
 ### Pre-merge (the staging function)
 

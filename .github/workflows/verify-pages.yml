@@ -110,7 +110,11 @@ jobs:
             exit 0
           fi
           git commit -m "Record Pages publication status"
-          git push origin HEAD:main
+          # Branch protection requires pull requests for main, so the
+          # status record is kept on a dedicated bot branch instead of
+          # being pushed to main directly. The branch always holds the
+          # latest main commit plus this one status commit.
+          git push --force origin HEAD:publication-status
 
       - name: Fail when public verification failed
         if: steps.verify.outcome != 'success'
