@@ -1,0 +1,61 @@
+{
+  "completed_at": "2026-11-17",
+  "completion_boundary": "山口市のPhase 15 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味し、所有者（大杉邑大、単独運用体制）が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが山口市公式サイトの一次資料で検証した結論に基づく（所有者本人が一次資料を直接レビューしたものではない）。山口市の計画体系（第二次山口市総合計画は、基本構想（2018年度～2027年度の10年間、平成30年3月策定）の下に基本計画（前期2018年度～2022年度・後期2023年度～2027年度、後期は令和5年3月策定）を置く構成である。将来都市像は『豊かな暮らし 交流と創造のまち 山口 ～これが私のふるさとだ～』であり、後期基本計画は5政策のもとで30施策・116基本事業と6重点プロジェクトの体系からなる。その下に3年ローリングの実行計画が置かれ、現行の第9次は2026年度～2028年度で基本計画終期を1年越える期間差は構造として保持する。政策レベルの体系は保持したが、施策・基本事業・成果指標と実行計画の事業の全件列挙は行わず、追加depthとして保持する。進行管理は、行政評価システムによるPDSサイクルと毎年度のまちづくり達成状況報告書（主要な施策の成果報告書と一体化）による。各層の期間を別period semanticsとして保持し、period_statusはtransition_or_unresolved（第三次計画の策定が進行中であることに対するもの）を保持する）、成立したFY2026一般会計当初予算（94,480,000千円。議案第1号『令和8年度山口市一般会計予算』として令和8年第1回定例会で可決され成立した（市議会公式『令和8年第1回（3月）定例会 議案等の賛否一覧』の議案第1号の議決結果欄の文言『可決』で確認）。金額は市公式『令和8年度 当初予算資料』の予算規模表および歳入・歳出の各合計で確認した。議決年月日2026年3月13日は同定例会の会期日程表における最終の本会議日から特定したもので、本会議録による最終確認は未実施である。公表精度は千円単位のため、その精度（千円単位）のまま記録し、円単位を合成していない）、FY2024一般会計決算の千円単位総額（歳入108,548,127千円・歳出107,248,447千円、差引1,299,680千円が『令和6年度まちづくり達成状況報告書』の決算の総括表の歳入歳出差引額と検算一致することを確認した）を一次資料で確認した。決算の認定である議案第21号は令和7年第3回定例会で認定されたことを市議会公式『令和7年第3回（9月）定例会 議案等の賛否一覧』の議決結果『認定』で確認し、認定の事実をそのまま記録した。認定日2025年10月2日は同定例会の会期最終日から特定したもので、本会議録による最終確認は未実施である。実質収支額は731,294千円（差引1,299,680千円から翌年度へ繰り越すべき財源568,386千円を差し引いた額）であり、同報告書の千円単位の公表値のまま記録する。監査委員の決算審査意見書等に掲載される普通会計ベースの集計値は一般会計の値とは別のため使用していない。第三次山口市総合計画（2028年度～2037年度、（仮称）ずっと元気な山口プラン）は策定中であり移行記録として分離して保持する。FY2024は第二次山口市総合計画後期基本計画期間（2023年度～2027年度）の決算で計画の版は同一であるが、決算総額と政策体系との総額レベルの対応付けは公式資料にないため、接続はnot_assessableとして保持する。後期基本計画の施策・基本事業・成果指標と第9次実行計画の事業の全件列挙・改定差分、両議決日の本会議録による最終確認、予算・決算の事項別明細書の款別合計との最終突合、監査委員の令和6年度決算審査意見書の所在特定と内容（個別の指摘事項等）の精査はdeferred depthである。Jichi Insight独自の政策達成度スコアや他都市とのランキングは作成しない。進捗管理（自治体の進行管理の枠組み）をJichi Insight独自の達成判定へ変換しない。",
+  "completion_depth": "declared_review_package_v1",
+  "deferred_depth": [
+    {
+      "boundary": "後期基本計画の30施策・116基本事業・成果指標（30施策に62指標・116基本事業に243指標）と6重点プロジェクトのKPI、第9次実行計画の事業の全件列挙・改定差分は追加depthとし、公式対応が確認できるまで昇格しない。政策レベルの体系自体は候補に保持するが、施策・事業単位の対応付けは行わない。",
+      "id": "current-plan-granular-kpi-and-project-linkage",
+      "status": "deferred_not_required_for_v1_completion"
+    },
+    {
+      "boundary": "FY2026当初予算の金額（94,480,000千円）と議決（議案第1号・議決結果『可決』）、FY2024決算の総額（千円精度）と実質収支（千円精度）、議案第21号の認定は一次資料で確認し候補に反映している。一方、議決日（2026年3月13日）と認定日（2025年10月2日）の本会議録による最終確認、予算・決算の事項別明細書の款別合計との最終突合、監査委員の令和6年度決算審査意見書の個別の指摘事項等の内容精査は未実施のまま保持する（同意見書は本候補の調査では公式サイトのテキスト取得で所在を特定できなかった）。",
+      "id": "fiscal-detail-reconciliation",
+      "status": "deferred_not_required_for_v1_completion"
+    },
+    {
+      "boundary": "第三次山口市総合計画（2028年度～2037年度）の策定経過の詳細と、第二次計画の前期基本計画（2018年度～2022年度）の政策体系・事業・成果の全件列挙は本候補では行わない。第三次計画の内容は策定完了後に別versionとして保持する。",
+      "id": "plan-transition-version-depth",
+      "status": "deferred_not_required_for_v1_completion"
+    },
+    {
+      "boundary": "山口市の総合計画・進行管理・財政等のステージングは政策効果の因果認定や他都市比較可能性を意味しない。進行管理（自治体の行政評価と達成状況報告書の仕組み）をJichi Insight独自の達成判定へ変換しない。",
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion"
+    }
+  ],
+  "id": "yamaguchi-phase15-completion",
+  "name_ja": "山口市",
+  "official_code": "352039",
+  "phase": 15,
+  "quality_gate": {
+    "budget_enactment_state_preserved": true,
+    "current_plan_period_reviewed": true,
+    "current_plan_policy_structure_reviewed": true,
+    "declared_package_schema_validated": true,
+    "fiscal_states_and_years_separate": true,
+    "implementation_plan_layer_reviewed": true,
+    "individual_implementation_items_not_overpromoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "no_independent_policy_achievement_promoted": true,
+    "official_source_lineage_preserved": true,
+    "regression_suite_required_before_merge": true,
+    "settlement_linkage_not_assessable_preserved": true
+  },
+  "review_package": {
+    "counts": {
+      "basic_goals": 5,
+      "basic_plan_measures": 0,
+      "fiscal_top_line_records": 3,
+      "promoted_implementation_item_actual_records": 0
+    },
+    "fiscal_evidence_path": "data/reviewed/yamaguchi-city/evidence_packets.json",
+    "fiscal_records_path": "data/reviewed/yamaguchi-city/fiscal_records.json",
+    "plan_review_path": "data/reviewed/yamaguchi-city/plan_review.json",
+    "policy_structure_path": "data/catalog/yamaguchi_current_policy_structure.json",
+    "progress_review_path": "data/catalog/yamaguchi_current_progress_review_summary.json",
+    "source_catalog_path": "data/catalog/yamaguchi_phase15_sources.json"
+  },
+  "status": "reviewed_complete"
+}

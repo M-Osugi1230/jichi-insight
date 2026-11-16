@@ -1,0 +1,55 @@
+{
+  "id": "yamaguchi-phase15-sources",
+  "name_ja": "山口市",
+  "official_code": "352039",
+  "phase": 15,
+  "quality_boundary": "Current plan identity kept as published (the 2nd Yamaguchi City Comprehensive Plan: the basic concept running FY2018-FY2027 over ten years and adopted in March 2018, with the basic plan beneath it in two phases — the first phase FY2018-FY2022 and the latter phase FY2023-FY2027, adopted in March 2023 — and the action plans beneath them in a three-year rolling form, the current ninth action plan running FY2026-FY2028 and adopted in March 2026, extending one year beyond the basic plan's final year with that period difference kept as structure; the layer semantics are kept separate and the period status stays transition_or_unresolved as recorded in the inventory, reflecting that the third plan is under preparation; the basic concept's future city vision 『豊かな暮らし 交流と創造のまち 山口 ～これが私のふるさとだ～』 and the latter basic plan's five policy groups, 30 measures, 116 basic projects and six priority projects are kept at policy level, while the outcome indicators of the measures and basic projects, the KPIs of the priority projects and the action plan's projects are not enumerated and stay deferred depth), progress governance (the administrative-evaluation PDS cycle and the annual machizukuri achievement reports integrated with the report on results of major measures — kept as the municipality's own progress-management framework), budget enactment confirmed from the council's official vote list for the first regular session of 2026 (bill 議案第1号; the result is recorded simply as 『可決』 in the council's own wording; the vote date of 2026-03-13 was identified from the final plenary day in the session schedule and has not been finally confirmed against the plenary-session minutes) and the amount kept at the published sen-yen precision (94,480,000 thousand yen, confirmed in the budget scale table and the revenue and expenditure totals of the official initial budget materials, and never expanded into synthetic finer amounts), and settlement totals kept at the published sen-yen precision (the settlement certification, bill 議案第21号, was certified at the third regular session of 2025 per the council's official vote list; the certification date of 2025-10-02 was identified from the final day of the session period and has not been finally confirmed against the plenary-session minutes; the real balance of 731,294 thousand yen stays at the published thousand-yen precision; ordinary-account aggregate figures are not used; the audit commissioners' FY2024 settlement review opinion could not be located through text retrieval of the official site and its content stays unexamined) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "reviewed_at": "2026-11-17",
+  "sources": [
+    {
+      "evidence_location": "計画ページで、第二次山口市総合計画が平成30年度から10年間を計画期間とすること、後期基本計画を令和5年3月に策定し令和5年度から令和9年度までの方向性・目標を示すことを直接確認し、令和6年度まちづくり達成状況報告書の計画解説で将来都市像『豊かな暮らし 交流と創造のまち 山口 ～これが私のふるさとだ～』と後期基本計画の体系（5政策・30施策・116基本事業・6重点プロジェクト）を確認した",
+      "evidence_role": "comprehensive_plan",
+      "format": "html",
+      "id": "yamaguchi-second-latter-plan",
+      "official_url": "https://www.city.yamaguchi.lg.jp/site/shiseijoho/137038.html",
+      "title": "第二次山口市総合計画後期基本計画",
+      "use_boundary": "第二次総合計画（基本構想2018年度～2027年度）と後期基本計画（2023年度～2027年度）をcurrent versionとして保持し、FY2028開始の第三次計画の策定と分離する。前期基本計画期間の成果を後期基本計画のcurrent actualへ流用しない"
+    },
+    {
+      "evidence_location": "実行計画ページで、実行計画が3カ年計画であり事業の実績を踏まえ毎年度向こう3カ年の改定を行うこと、現行の第9次実行計画（山口市デジタル田園都市国家構想総合戦略アクションプラン）が令和8年3月に策定されたことを確認し、第9次実行計画の冊子で計画期間が令和8年度から令和10年度までの3年間であることを確認した",
+      "evidence_role": "implementation_plan",
+      "format": "html",
+      "id": "yamaguchi-ninth-action-plan",
+      "official_url": "https://www.city.yamaguchi.lg.jp/site/shiseijoho/111486.html",
+      "title": "第二次山口市総合計画 実行計画",
+      "use_boundary": "第9次実行計画（2026年度～2028年度）は基本計画終期の2027年度を1年越える3年ローリングであり、期間差を欠損扱いしない。各次の実行計画のversionを分離して保持し、事業の全件列挙は行わない"
+    },
+    {
+      "evidence_location": "報告書ページから令和6年度まちづくり達成状況報告書（主要な施策の成果報告書と一体化）を取得し、決算の総括表（単位：千円）で一般会計の歳入決算額108,548,127千円・歳出決算額107,248,447千円・歳入歳出差引額1,299,680千円・翌年度へ繰り越すべき財源568,386千円を、本文で実質収支7億3,129万4千円を確認した",
+      "evidence_role": "annual_progress",
+      "format": "html",
+      "id": "yamaguchi-achievement-report-2024",
+      "official_url": "https://www.city.yamaguchi.lg.jp/site/shiseijoho/109762.html",
+      "title": "まちづくり達成状況報告書",
+      "use_boundary": "達成状況報告書は自治体の進行管理の公式routeとして保持し、自治体の達成表現をJichi Insight独自の達成判定へ変換しない。決算総額は千円単位の公表値のまま記録する"
+    },
+    {
+      "evidence_location": "予算ページ（市報2026年4月号）で令和8年度予算の位置づけ（「新たな挑戦 元気山口」予算、16カ月予算としての一体執行、一般会計当初予算総額944億8,000万円）を確認し、『令和8年度 当初予算資料』の予算規模表・歳入合計・歳出合計で一般会計94,480,000千円を確認した。議決は市議会公式『令和8年第1回（3月）定例会 議案等の賛否一覧』の議案第1号で議決結果欄の文言『可決』を直接確認した",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "yamaguchi-budget-2026",
+      "official_url": "https://www.city.yamaguchi.lg.jp/soshiki/16/191175.html",
+      "title": "令和8年度予算とまちづくりの概要",
+      "use_boundary": "FY2026当初予算は補正予算・決算と別stateで保持する。金額は千円単位の公表値であり、円単位を合成しない。16カ月予算の説明は市の予算提示の枠組みとして保持し、会計上の各budget stateは別レコードで扱う"
+    },
+    {
+      "evidence_location": "決算ページが入口となり、市公式『令和6年度決算報告』で令和7年第3回市議会定例会で令和6年度決算が認定された旨と一般会計の歳入総額1,085億4,813万円・歳出総額1,072億4,845万円（万円単位）を確認し、認定は市議会公式『令和7年第3回（9月）定例会 議案等の賛否一覧』の議案第21号で議決結果『認定』を直接確認した。精密値は令和6年度まちづくり達成状況報告書の決算総括表（千円単位）で確認した。監査委員の決算審査意見書に掲載される普通会計ベースの集計値は一般会計の値とは別のため使用していない",
+      "evidence_role": "settlement",
+      "format": "html",
+      "id": "yamaguchi-settlement-2024",
+      "official_url": "https://www.city.yamaguchi.lg.jp/site/shiseijoho/184906.html",
+      "title": "令和6年度決算を公表します",
+      "use_boundary": "FY2024決算は予算・補正と別stateで保持する。歳入・歳出・実質収支は公表精度である千円単位のまま記録し、円単位を合成しない。普通会計ベースの集計値と一般会計値を混同しない"
+    }
+  ]
+}

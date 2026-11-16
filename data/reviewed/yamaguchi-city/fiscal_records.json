@@ -1,0 +1,65 @@
+[
+  {
+    "account_type": "general",
+    "amount_yen": 94480000000,
+    "confidence": "high",
+    "fiscal_year": 2026,
+    "id": "jp-local-352039-fiscal-2026-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算総額",
+    "municipality_id": "jp-local-352039",
+    "note": "山口市の令和8年度一般会計当初予算総額94,480,000千円。市公式『令和8年度 当初予算資料』の予算規模表で一般会計94,480,000千円（前年度96,900,000千円・2.5％減）と印字され、歳入合計・歳出合計とも94,480,000千円で一致することを確認した。市は令和8年度予算を「新たな挑戦 元気山口」予算と位置づけ、令和7年度12月以降の補正予算と令和8年度当初予算を16カ月予算として一体的に執行する旨を公表している。議決は市議会公式『令和8年第1回（3月）定例会 議案等の賛否一覧』で議案第1号『令和8年度山口市一般会計予算』の議決結果欄の文言が『可決』であることを直接確認した。議決年月日2026年3月13日は同定例会の会期日程表における最終の本会議日（議案第1号から議案第49号までの委員長報告・質疑・討論・採決）から特定したものであり、本会議録による最終確認は未実施である。公表精度は千円単位であり、その精度のまま記録し円単位を合成していない。補正予算や決算とは別stateで扱う。",
+    "period_end": "2027-03-31",
+    "period_start": "2026-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "yamaguchi-budget-2026"
+    ],
+    "stage": "initial_budget",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 108548127000,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-352039-fiscal-2024-total-revenue",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入額",
+    "municipality_id": "jp-local-352039",
+    "note": "『令和6年度まちづくり達成状況報告書』（主要な施策の成果報告書と一体化した市公式文書）の決算の総括表（単位：千円）に示された一般会計の歳入決算額108,548,127千円。市公式『令和6年度決算報告』の一般会計歳入総額1,085億4,813万円（万円単位の公表値）とも整合する。当該決算は議案第21号『令和6年度山口市一般会計歳入歳出決算の認定について』として市議会に提出され、市議会公式『令和7年第3回（9月）定例会 議案等の賛否一覧』で議決結果『認定』を直接確認した。議決年月日2025年10月2日は同定例会の会期（2025年9月1日から10月2日まで）の最終日から特定したものであり、本会議録による最終確認は未実施である。監査委員の決算審査意見書等に掲載される普通会計ベースの集計値（歳入108,539,608千円等）は一般会計の値とは別のため使用していない。FY2024は第二次山口市総合計画後期基本計画（2023年度～2027年度）期間の決算である。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "yamaguchi-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 107248447000,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-352039-fiscal-2024-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出額",
+    "municipality_id": "jp-local-352039",
+    "note": "同じく決算の総括表に示された一般会計の歳出決算額107,248,447千円。歳入決算額108,548,127千円との差引は1,299,680千円で、同表の歳入歳出差引額と検算一致する。実質収支は731,294千円であり（差引1,299,680千円－翌年度へ繰り越すべき財源568,386千円（明許繰越し））、同報告書本文の実質収支7億3,129万4千円とも一致する。実質収支は公表精度である千円単位のまま記録し、円単位を合成しない。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "yamaguchi-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  }
+]

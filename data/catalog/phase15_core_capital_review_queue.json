@@ -731,9 +731,9 @@
       "prefecture_name_ja": "山口県",
       "municipality_type": "city",
       "phase14_role": "prefectural_capital_only",
-      "status": "pending_record_review",
+      "status": "reviewed_complete",
       "source_inventory_path": "data/indexed/yamaguchi-city/source_inventory.json",
-      "completion_path": null
+      "completion_path": "data/catalog/yamaguchi_phase15_completion.json"
     },
     {
       "sequence": 56,
@@ -894,11 +894,11 @@
   ],
   "summary": {
     "target_count": 67,
-    "reviewed_complete_count": 54,
+    "reviewed_complete_count": 55,
     "review_in_progress_count": 0,
-    "pending_record_review_count": 13,
+    "pending_record_review_count": 12,
     "blocked_source_inventory_count": 0,
-    "next_official_code": "352039"
+    "next_official_code": "362018"
   },
-  "updated_at": "2026-11-16"
+  "updated_at": "2026-11-17"
 }
