@@ -52,9 +52,9 @@ def test_yamaguchi_review_package_is_the_fifty_fifth_completion():
     }
 
     queue = load(QUEUE)
-    assert queue["summary"]["reviewed_complete_count"] == 63
-    assert queue["summary"]["pending_record_review_count"] == 4
-    assert queue["summary"]["next_official_code"] == "442011"
+    assert queue["summary"]["reviewed_complete_count"] == 64
+    assert queue["summary"]["pending_record_review_count"] == 3
+    assert queue["summary"]["next_official_code"] == "452017"
     entry = next(
         row for row in queue["execution_queue"] if row["official_code"] == "352039"
     )

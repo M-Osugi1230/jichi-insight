@@ -1,0 +1,46 @@
+{
+  "id": "oita-phase15-sources",
+  "name_ja": "大分市",
+  "official_code": "442011",
+  "phase": 15,
+  "quality_boundary": "Current plan identity kept as published (the Oita City Comprehensive Plan 『未来へつなぐ おおいたビジョン2034』: the basic concept (FY2025-FY2034, ten years) and the basic plan (first FY2025-FY2029, currently in force; second FY2030-FY2034) in a two-layer structure, with the city image 『誰もが\"幸せ\"を実感できるまち OITA』, the three basic policies and the 19 policies; the basic-policy-level structure is kept and the full enumeration of the measures under the 19 policies and the 114 indicators stays deferred depth; the period status stays verified_fixed_period; the transition from the previous plan 『おおいた創造ビジョン2024』 is kept separate as a plan transition and previous-plan results are never read forward into the current plan), progress governance (verification through administrative evaluation and the year-end progress publication of the 114 indicators — kept as the municipality's own progress-management framework), budget enactment kept as printed in the council's official voting-results table (bill No. 1 （議第1号）; the result wording is 可決 (approved), kept verbatim; vote date 2026-03-26) and the amount kept at the published sen-yen precision (223,255,000 thousand yen, confirmed directly in Article 1 of the initial budget book itself; finer yen amounts are never synthesized), and settlement totals kept at the sen-yen precision printed in the settlement summary explanation document (revenue 226,470,701 thousand yen / expenditure 220,402,983 thousand yen; the formal balance of 6,067,718 thousand yen checks out against the printed formal balance; the real balance of 5,226,170 thousand yen is kept at the printed sen-yen precision; the settlement certification, bill No. 106 （議第106号）, was certified (認定（多数）) on 2025-09-25 at the Reiwa 7 3rd regular session, confirmed by a live-browser supplementary investigation of the council's official voting-results table; ordinary-account aggregate figures are not used, because their aggregation scope differs from the general account) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "reviewed_at": "2026-11-17",
+  "sources": [
+    {
+      "evidence_location": "計画の公式ページと計画本編『基本構想・基本計画総論』および概要版で、基本構想（2025年度〜2034年度・10年間）、基本計画（第1次2025年度〜2029年度／第2次2030年度〜2034年度）の2層構成、都市像『誰もが\"幸せ\"を実感できるまち OITA』、3つの基本的な政策と19政策、計画推進の基本姿勢を直接確認した",
+      "evidence_role": "comprehensive_plan",
+      "format": "html",
+      "id": "oita-vision-2034",
+      "official_url": "https://www.city.oita.oita.jp/o010/sogokeikaku2025.html",
+      "title": "未来へつなぐ おおいたビジョン2034",
+      "use_boundary": "「未来へつなぐ おおいたビジョン2034」をcurrent versionとして保持し、前計画「おおいた創造ビジョン2024」期間の実績をcurrent actualへ流用しない"
+    },
+    {
+      "evidence_location": "第1次基本計画の各施策の主な目標設定（114指標）について令和7年度末進ちょく状況を公表する市の公式ページで、進捗公表の枠組みを直接確認した",
+      "evidence_role": "annual_progress",
+      "format": "html",
+      "id": "oita-progress-2025",
+      "official_url": "https://www.city.oita.oita.jp/o010/sougoukeikaku2034r7.html",
+      "title": "令和7年度末進ちょく状況",
+      "use_boundary": "第1次基本計画の114指標に関する自治体公表進捗を保持し、進捗率を独自achievement scoreや都市比較へ変換しない"
+    },
+    {
+      "evidence_location": "財政課の公式ページが案内する『令和8年度大分市予算』（当初予算書）第1条で一般会計の歳入歳出予算総額223,255,000千円を直接確認した。議決結果は市議会公式『令和8年第1回定例会 議決結果賛否一覧表』で議第1号『令和8年度大分市一般会計予算』の結果欄「可決」（予算議案（3月26日議決分））を直接確認した",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "oita-budget-2026",
+      "official_url": "https://www.city.oita.oita.jp/o032/r8tousyo-r7_3hosei.html",
+      "title": "令和8年度当初予算(案)および令和7年度3月補正予算(案)について",
+      "use_boundary": "FY2026当初予算は補正予算・決算と別stateで保持する。金額は千円単位の公表値であり、円単位を合成しない"
+    },
+    {
+      "evidence_location": "財政課の公式ページが案内する『令和6年度大分市歳入歳出決算概要説明書』の一般会計決算収支状況で、歳入総額226,470,701千円・歳出総額220,402,983千円・形式収支6,067,718千円・実質収支5,226,170千円（いずれも千円単位）を直接確認し、差引が検算一致することを確認した。決算の認定は、同ページの「令和6年度の決算については第3回市議会定例会にて認定されました」との記載と、市議会公式の決算審査特別委員会の分科会審査日程における議第106号『令和6年度大分市歳入歳出決算の認定について』の審査で確認した。その後、実ブラウザによる補完調査で、市議会公式『令和7年第3回大分市議会定例会議決結果一覧』（議決結果賛否一覧表）の「決算認定（9月25日議決分）」の区分により議第106号の結果欄「認定（多数）」を確認し、議決日2025年9月25日を特定した",
+      "evidence_role": "settlement",
+      "format": "html",
+      "id": "oita-settlement-2024",
+      "official_url": "https://www.city.oita.oita.jp/o032/r6kessangaiyou.html",
+      "title": "令和6年度 大分市決算の概要について",
+      "use_boundary": "FY2024決算は予算・補正と別stateで保持する。決算額は千円単位の公表値のまま記録し円単位を合成しない。『大分市普通会計決算状況』等の普通会計ベースの集計値と一般会計値を混同しない。決算の認定結果（議第106号・令和7年第3回定例会・2025年9月25日・認定（多数））は実ブラウザによる補完調査で確認した公式議決結果のまま記録する"
+    }
+  ]
+}

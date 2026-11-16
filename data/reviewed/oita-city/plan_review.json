@@ -1,0 +1,63 @@
+{
+  "id": "phase15-oita-plan-review",
+  "name_ja": "大分市",
+  "next_action": "Promote the full enumeration of the measures under the 19 policies and the individual progress of the first basic plan's 114 indicators only when official sources with stable record-level locators confirm the correspondence; complete the cross-checks against the budget and settlement books （事項別明細書） at section level and the cross-check against the real-balance statement in the settlement book itself; confirm the preparation status of the second basic plan (FY2030-FY2034); keep the previous plan 『おおいた創造ビジョン2024』 (basic concept FY2016-FY2024; second basic plan FY2020-FY2024) and the current plan 『未来へつなぐ おおいたビジョン2034』 as separate versions and never read the previous plan period's results forward into the current plan. Keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "official_code": "442011",
+  "quality_boundary": "This package reviews the current plan identity and period (the Oita City Comprehensive Plan 『未来へつなぐ おおいたビジョン2034』: a two-layer plan of the basic concept (FY2025-FY2034, ten years) and the basic plan in two five-year periods (first basic plan FY2025-FY2029, currently in force; second basic plan FY2030-FY2034); the basic concept sets out the city image 『誰もが\"幸せ\"を実感できるまち OITA』, the three basic policies and the 19 policies under them, and the seven basic postures for promoting the plan; the structure is kept at the basic-policy level, and the full enumeration of the measures under the 19 policies and the individual progress of the first basic plan's 114 indicators is not promoted and stays deferred depth), the policy structure, the progress-governance layer (verification of project outcomes through administrative evaluation, with the year-end progress of the first basic plan's 114 indicators published on the city's official page), the enacted FY2026 general-account initial budget at the published sen-yen (thousand-yen) precision (bill No. 1 （議第1号）; the council's official voting-results table for the Reiwa 8 1st regular session records the result as 可決 (approved; the voting was by majority), kept verbatim; vote date 2026-03-26; the amount of 223,255,000 thousand yen was confirmed directly in Article 1 of the initial budget book itself, not by reverse calculation), and the FY2024 settlement at the sen-yen precision printed in the settlement summary explanation document (revenue 226,470,701 thousand yen / expenditure 220,402,983 thousand yen; their difference, the formal balance of 6,067,718 thousand yen, checks out arithmetically against the printed formal balance; the amount carried over to the following fiscal year is 841,548 thousand yen and the real balance of 5,226,170 thousand yen is kept at the printed sen-yen precision). The FY2024 settlement certification (bill No. 106 （議第106号）) was certified (認定（多数）) on 2025-09-25 at the Reiwa 7 3rd regular session, confirmed by a live-browser supplementary investigation of the council's official voting-results table; it was not rejected. Ordinary-account aggregate figures (such as 『大分市普通会計決算状況』) are not used, because their aggregation scope differs from the general account. The period status stays verified_fixed_period as recorded in the Phase 14 inventory. FY2024 is the final fiscal year of the previous plan 『おおいた創造ビジョン2024』 (second basic plan FY2020-FY2024) and falls outside the current plan period, so it is kept separate as a plan transition, and no official total-level mapping from settlement totals to the current plan's policy structure exists, so the linkage stays not_assessable. The preparation status of the second basic plan (FY2030-FY2034) has not been confirmed in official sources.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "計画の構成と期間は、市の公式ページ『新たな大分市総合計画「未来へつなぐ おおいたビジョン 2034」を策定しました！』と計画本編『基本構想・基本計画総論』および概要版で直接確認した。period_statusはPhase 14出典目録の記録どおりverified_fixed_periodを保持する",
+      "evidence_role": "current_plan_identity",
+      "id": "oita-current-plan-period",
+      "review_note": "総合計画の構成（基本構想・基本計画）と各層の期間を別period semanticsとして保持し、第1次・第2次基本計画を分離した。レビュー済みレコード。",
+      "source_url": "https://www.city.oita.oita.jp/o010/sogokeikaku2025.html",
+      "statement": "大分市の現行の最上位計画は大分市総合計画「未来へつなぐ おおいたビジョン2034」であり、目指すまちの姿（都市像）や基本的な政策を示す「基本構想」と、具体的な政策・施策の体系や計画推進の基本姿勢を示す「基本計画」の2層で構成される市の最上位計画である。基本構想の期間は2025年度〜2034年度の10年間であり、基本計画は第1次基本計画（2025年度〜2029年度の5年間）と第2次基本計画（2030年度〜2034年度の5年間）に分かれる。基本構想は目指すまちの姿（都市像）として『誰もが\"幸せ\"を実感できるまち OITA』を掲げる。現行の基本計画は第1次基本計画である。Phase 14インベントリのperiod_statusはverified_fixed_periodである。",
+      "title": "大分市総合計画「未来へつなぐ おおいたビジョン2034」の構成（基本構想2025年度〜2034年度・第1次基本計画2025年度〜2029年度／第2次基本計画2030年度〜2034年度）",
+      "value": "ビジョン2034は基本構想（2025年度〜2034年度・10年間）と基本計画（第1次2025年度〜2029年度・第2次2030年度〜2034年度）の2層構成／FY2024決算は旧計画「おおいた創造ビジョン2024」の最終年度の決算"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "都市像・3つの基本的な政策・19政策の構成は、市の公式ページと計画本編（基本構想・基本計画総論、概要版）で直接確認した",
+      "evidence_role": "policy_structure",
+      "id": "oita-current-policy-structure",
+      "review_note": "基本構想の基本的な政策レベルの体系を保持した。各政策配下の施策体系と114指標の全件列挙は行わない。レビュー済みレコード。",
+      "source_url": "https://www.city.oita.oita.jp/o010/sogokeikaku2025.html",
+      "statement": "基本構想は、目指すまちの姿（都市像）『誰もが\"幸せ\"を実感できるまち OITA』の実現を目指し、3つの「基本的な政策」を掲げる。基本的な政策1『豊かな個性をはぐくみ、ともに成長できるまち』には政策1 こども・子育て支援の充実／政策2 豊かな人間性の創造／政策3 スポーツの振興／政策4 個性豊かな文化・芸術の創造と発信／政策5 国際化の推進が、基本的な政策2『共生する社会を実現し、安心して暮らせるまち』には政策6 地域コミュニティの活性化／政策7 人権尊重社会の形成／政策8 社会福祉の充実／政策9 健康の増進と医療体制の充実／政策10 防災・減災力の向上／政策11 安全・安心な暮らしの確保が、基本的な政策3『新たな価値を創造し、未来に挑戦できるまち』には政策12 DXの推進／政策13 快適な生活環境の確立／政策14 活気ある商工業・流通の展開／政策15 特性を生かした農林水産業の振興／政策16 魅力ある観光の振興／政策17 安定した雇用の確保と勤労者福祉の充実／政策18 快適な都市構造の形成と機能の充実／政策19 安定した生活基盤の形成が置かれ、計19政策で構成される。計画推進の基本姿勢として、ひとを中心としたまちづくり、地域の個性を生かした自立したまちづくり、新たな時代の市民ニーズに対応した多様な連携、計画に基づく政策・施策の推進、デジタル技術の活用等による地方創生の更なる推進、地方分権改革の推進、持続可能な行財政運営の推進の7項目が定められている。各政策配下の施策体系の全件列挙は行わない。",
+      "title": "都市像『誰もが\"幸せ\"を実感できるまち OITA』と3つの基本的な政策・19政策の体系"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "進行管理の枠組みは、市の公式ページと計画本編の計画推進の基本姿勢（基本姿勢4）および公式ページ『大分市総合計画（未来へつなぐ おおいたビジョン2034）の令和7年度末進ちょく状況についてお知らせします』で直接確認した",
+      "evidence_role": "progress_governance",
+      "id": "oita-progress-governance-framework",
+      "review_note": "進行管理の公式routeとして行政評価による検証と114指標の年度末進捗公表の枠組みを保持した。評価結果の個別内容の展開は行わない。レビュー済みレコード。",
+      "source_url": "https://www.city.oita.oita.jp/o010/sougoukeikaku2034r7.html",
+      "statement": "計画推進の基本姿勢（基本姿勢4「計画に基づく政策・施策の推進」）では、総合計画の進行管理を適正に行うため、行政評価を通じて事業の成果等の検証を行うとともに、その結果を踏まえた施策や事務事業を展開する枠組みである。第1次基本計画では各施策に主な目標設定（114指標）が数値で置かれ、令和7年度末進ちょく状況が市の公式ページで公表されている。未公表の評価結果を推測で作成せず、自治体の進行管理の仕組みをJichi Insight独自の達成判定へ変換しない。",
+      "title": "計画の進行管理（行政評価による検証と第1次基本計画114指標の年度末進捗公表）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "前計画の構成と期間は市の公式ページ『大分市総合計画「おおいた創造ビジョン2024」第2次基本計画を策定しました』で直接確認し、現行計画の開始は計画本編とPhase 14出典目録で確認した",
+      "evidence_role": "plan_transition",
+      "id": "oita-plan-transition",
+      "review_note": "前計画「おおいた創造ビジョン2024」から現行計画「未来へつなぐ おおいたビジョン2034」への移行を分離記録した。レビュー済みレコード。",
+      "source_url": "https://www.city.oita.oita.jp/o010/sogokeikaku2025.html",
+      "statement": "前計画は大分市総合計画「おおいた創造ビジョン2024」であり、基本構想（2016年度〜2024年度）と基本計画（第1次2016年度〜2019年度／第2次2020年度〜2024年度）によって構成され、めざすまちの姿（都市像）『笑顔が輝き 夢と魅力あふれる 未来創造都市』を掲げていた。2025年度から現行計画「未来へつなぐ おおいたビジョン2034」（基本構想2025年度〜2034年度）へ移行した。FY2024決算は前計画の最終年度（第2次基本計画期間）の決算である。前計画期間の実績を現行計画の実績へ読み替えない。移行記録として分離して保持する。",
+      "title": "「おおいた創造ビジョン2024」（基本構想2016年度〜2024年度）から「未来へつなぐ おおいたビジョン2034」への移行"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "決算総額は決算概要説明書、計画期間は現行計画の公式資料とPhase 14出典目録で確認した。総額レベルの対応付けの不在は、決算・計画の公表範囲で確認した",
+      "evidence_role": "annual_progress",
+      "fiscal_year": 2024,
+      "id": "oita-fy2024-settlement-linkage",
+      "review_note": "FY2024決算は前計画の最終年度の決算で現行計画の期間外であり、総額レベルの対応付けもないため接続しないことを明記した。レビュー済みレコード。",
+      "source_url": "https://www.city.oita.oita.jp/o032/r6kessangaiyou.html",
+      "statement": "FY2024決算は前計画「おおいた創造ビジョン2024」の第2次基本計画（2020年度〜2024年度）の最終年度の決算であり、現行計画「未来へつなぐ おおいたビジョン2034」（2025年度開始）の期間外の決算である。決算総額は一次資料で確認済みであるが、決算総額と計画の施策体系との総額レベルの対応付けは公式資料にないため、接続はnot_assessableとする。なお決算の議案（議第106号）は令和7年第3回定例会で2025年9月25日に認定されているが、接続判定は認定の成否に依存しない。",
+      "title": "令和6年度決算と現行計画「未来へつなぐ おおいたビジョン2034」の施策体系の接続"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-17"
+}

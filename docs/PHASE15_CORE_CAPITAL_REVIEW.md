@@ -860,13 +860,25 @@ Declared v1 package:
 
 Deferred depth includes the direct confirmation of the FY2026 initial budget amount in the original budget explanation document itself, the full enumeration of the latter basic plan's policies and measures with their social indicators and KPIs and the individual progress of the implementation plan's main projects and KPIs, the confirmation of the reorganised policy system of the latter basic plan, cross-checks against the budget and settlement books （事項別明細書） at section level, the cross-check against the real-balance statement in the settlement book itself, the preparation status of the next (eighth) comprehensive plan, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Sixty-fourth completion — Oita
+
+大分市を64番目の`reviewed_complete`へ昇格しました（2026-11-17、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 大分市総合計画「未来へつなぐ おおいたビジョン2034」 (the Oita City Comprehensive Plan "Mirai e tsunagu Oita Vision 2034") — the city's current top-level plan, in two layers: the basic concept (FY2025-FY2034, ten years), which sets out the city image 『誰もが"幸せ"を実感できるまち OITA』, the three basic policies and the 19 policies under them, and the seven basic postures for promoting the plan; and the basic plan in two five-year periods (the first basic plan FY2025-FY2029, currently in force; the second basic plan FY2030-FY2034). The structure is kept at the basic-policy level; the full enumeration of the measures under the 19 policies and the individual progress of the first basic plan's 114 indicators is not performed and stays deferred depth. Progress is managed through the municipality's own progress management (verification of project outcomes through administrative evaluation, with the year-end progress of the first basic plan's 114 indicators published on the city's official page). The period status stays verified_fixed_period as recorded in the Phase 14 inventory. The transition from the previous plan 『おおいた創造ビジョン2024』 (basic concept FY2016-FY2024; second basic plan FY2020-FY2024) is kept separate as a plan transition, and the previous plan period's results are never read forward into the current plan
+- FY2026 general-account initial budget: 223,255,000 thousand yen (enacted). The result recorded for bill No. 1 （議第1号） 『令和8年度大分市一般会計予算』 in the council's official voting-results table for the Reiwa 8 1st regular session （令和8年第1回定例会 議決結果賛否一覧表） is 可決 (approved; the voting was by majority), confirmed directly, and that wording is kept verbatim. The vote date is 2026-03-26. The amount was confirmed directly in Article 1 of the initial budget book 『令和8年度大分市予算』 itself (not by reverse calculation). The amount is kept at the published sen-yen (thousand-yen) precision and finer amounts are not synthesized
+- FY2024 general-account settlement at the sen-yen precision printed in the settlement summary explanation document （令和6年度大分市歳入歳出決算概要説明書）: revenue 226,470,701 thousand yen / expenditure 220,402,983 thousand yen (their difference, the formal balance of 6,067,718 thousand yen, checks out arithmetically against the printed formal balance; the amount carried over to the following fiscal year is 841,548 thousand yen and the real balance is 5,226,170 thousand yen, both kept at the printed sen-yen precision). The settlement certification, bill No. 106 （議第106号）, was certified at the Reiwa 7 3rd regular session with the result column reading 認定（多数）, confirmed by a live-browser supplementary investigation of the council's official voting-results table （令和7年第3回大分市議会定例会議決結果一覧）; it was not rejected. The vote date is 2025-09-25. FY2024 is the final fiscal year of the previous plan 『おおいた創造ビジョン2024』 (second basic plan FY2020-FY2024) and falls outside the current plan period, and no official total-level mapping from settlement totals to the current plan's policy structure exists, so the totals are not linked to the plan's structure and the linkage stays not_assessable
+
+Deferred depth includes the full enumeration of the measures under the 19 policies and the individual progress of the first basic plan's 114 indicators, cross-checks against the budget and settlement books （事項別明細書） at section level, the cross-check against the real-balance statement in the settlement book itself, the preparation status of the second basic plan (FY2030-FY2034), supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 63 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市、姫路市、尼崎市、明石市、西宮市、奈良市、和歌山市、鳥取市、松江市、倉敷市、呉市、福山市、下関市、山口市、徳島市、高松市、松山市、高知市、久留米市、佐賀市、長崎市、佐世保市
+- Reviewed complete: 64 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市、姫路市、尼崎市、明石市、西宮市、奈良市、和歌山市、鳥取市、松江市、倉敷市、呉市、福山市、下関市、山口市、徳島市、高松市、松山市、高知市、久留米市、佐賀市、長崎市、佐世保市、大分市
 - Review in progress: 0
-- Pending record review: 4
+- Pending record review: 3
 - Blocked source inventory: 0
-- Next official code: 442011
+- Next official code: 452017
 
 ## Definition of Phase 15 completion
 

@@ -152,9 +152,9 @@ def test_takasaki_promotion_is_reflected_in_queue_state():
     assert item["status"] == "reviewed_complete"
     assert item["completion_path"] == "data/catalog/takasaki_phase15_completion.json"
     assert (ROOT / item["completion_path"]).is_file()
-    assert queue["summary"]["reviewed_complete_count"] == 63
-    assert queue["summary"]["pending_record_review_count"] == 4
-    assert queue["summary"]["next_official_code"] == "442011"
+    assert queue["summary"]["reviewed_complete_count"] == 64
+    assert queue["summary"]["pending_record_review_count"] == 3
+    assert queue["summary"]["next_official_code"] == "452017"
 
 
 def test_public_web_does_not_import_candidate_staging():
