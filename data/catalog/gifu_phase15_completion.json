@@ -1,0 +1,63 @@
+{
+  "id": "gifu-phase15-completion",
+  "phase": 15,
+  "status": "reviewed_complete",
+  "official_code": "212016",
+  "name_ja": "岐阜市",
+  "completed_at": "2026-11-16",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "source_catalog_path": "data/catalog/gifu_phase15_sources.json",
+    "plan_review_path": "data/reviewed/gifu-city/plan_review.json",
+    "policy_structure_path": "data/catalog/gifu_current_policy_structure.json",
+    "progress_review_path": "data/catalog/gifu_current_progress_review_summary.json",
+    "fiscal_records_path": "data/reviewed/gifu-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/gifu-city/evidence_packets.json",
+    "counts": {
+      "basic_approaches": 4,
+      "policy_fields": 5,
+      "strategy_pillars": 3,
+      "promoted_implementation_item_actual_records": 0,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "current_framework_identity_reviewed": true,
+    "no_fixed_plan_period_preserved": true,
+    "current_framework_policy_structure_reviewed": true,
+    "strategy_layer_reviewed": true,
+    "fiscal_states_and_years_separate": true,
+    "budget_enactment_state_preserved": true,
+    "settlement_linkage_not_assessable_preserved": true,
+    "individual_implementation_items_not_overpromoted": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "current-plan-granular-kpi-and-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "5分野の方向性に基づく分野別計画の施策・事業の全件、岐阜市未来創生総合戦略のKPI実績値の全件は追加depthとし、公式対応が確認できるまで昇格しない。分野別計画は版を分離して保持する。"
+    },
+    {
+      "id": "settlement-values-and-budget-amendment-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "補正予算による変更経過、補正予算・決算と個別事業費の対応関係、決算の実質収支は追加エビデンス確認前は記録・結合しない。FY2024決算は構想期間内（3年目）の決算として保持するが、決算総額を構想の指標・総合戦略のKPIの実績へ流用しない。決算書の事項別明細書の款別合計との最終突合も未実施である。"
+    },
+    {
+      "id": "plan-transition-version-depth",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "前身の『ぎふし未来地図』の枠組みそのものと、改定作業中の次期構想の枠組みは記録しない。移行・改定の経過は版の履歴として別途記録する。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "岐阜市未来のまちづくり構想・岐阜市未来創生総合戦略・財政等のレビューは政策効果の因果認定や他都市比較可能性を意味しない。市民意識調査に基づく指標の進捗（自治体自己管理の枠組み）をJichi Insight独自の達成判定へ変換しない。固定終期を持たない構想型の枠組みを、他都市の固定期間総合計画と同一の物差しで比較しない。"
+    }
+  ],
+  "completion_boundary": "岐阜市のPhase 15 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味し、所有者（大杉邑大、単独運用体制）が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが岐阜市公式サイトの一次資料で検証した結果に基づく（所有者本人が一次資料を直接レビューしたものではない）。岐阜市のまちづくり方針の枠組み（最上位のまちづくり方針は岐阜市未来のまちづくり構想であり、基本構想・基本計画・実施計画の層を持つ固定期間型の総合計画ではない。構想は令和4（2022）年2月に策定され、2022年度を始期とし、2040年頃を見据えた将来像『人がつながる 創造が生まれる しなやかさのあるまち』と、それを実現するためのまちづくりの方向性で構成し、固定した計画終期は定めず5年ごとに見直す。4つのまちづくりの基本的な考え方（オール岐阜のまちづくり／シビックプライドの醸成／DXと脱炭素化／持続可能で選ばれるまち）を掲げ、分野ごとのまちづくりの方向性は5分野（教育・子育て／健康・福祉・医療／市民協働・防災・環境／産業・労働・交流／都市基盤整備・交通・中心市街地活性化）で構成し、各分野に市民意識調査ベースの指標3件を設定する。これに行政経営の視点が加わる。下位の岐阜市未来創生総合戦略（2024年度〜2027年度）は構想の将来像を反映し、地方版総合戦略とSDGs未来都市計画を統合したもので、3本柱（ひとの創生・しごとの創生・まちの創生）で構成し、構想と一体的に推進される。進行管理は将来像に関する3つの数値目標と分野ごとの指標を設定し毎年度成果を確認する枠組みであり、岐阜市未来のまちづくり懇談会が両計画の進捗状況の評価等について意見を述べる）、成立したFY2026一般会計当初予算（200,680,000千円。第1号議案『令和8年度岐阜市一般会計予算』として令和8年第1回（3月）定例会に提出され、令和8年3月27日に原案のとおり可決された。公式『令和8年度岐阜市予算説明書』の事項別明細書の歳入合計・歳出合計とも同額で一致する。公表精度が千円単位のため千円精度のまま記録し、円単位を合成していない）、FY2024一般会計決算の円単位総額（歳入総額198,779,091,770円・歳出総額192,092,917,389円、差引額6,686,174,381円が公式『令和6年度会計別決算』の歳入歳出差引額と一致することを検算）とその認定（第107号議案『令和6年度岐阜市一般会計、特別会計歳入歳出決算認定について』・2025-09-25認定）を一次資料で確認した。2040年頃は見据える対象年として扱い、固定終期として記録しない。構想の改定に向けた取組は移行記録として分離して保持し、改定後の枠組みは記録しない。FY2024は構想の3年目・未来創生総合戦略の初年度の決算であるが、決算総額は会計別・款別の集計値であり構想の指標は市民意識調査に基づく主観指標を中心とするため、決算総額と構想の分野・指標および未来創生総合戦略のKPIとの接続はnot_assessableとして保持する。5分野の方向性に基づく分野別計画の施策・事業の全件、未来創生総合戦略のKPI実績値の全件、決算書の事項別明細書の款別合計との最終突合、決算の実質収支はdeferred depthである。Jichi Insight独自の政策達成度スコアや他都市とのランキングは作成しない。市民意識調査に基づく指標の進捗（自治体自己管理の枠組み）をJichi Insight独自の達成判定へ変換しない。"
+}

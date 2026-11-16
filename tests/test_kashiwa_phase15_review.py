@@ -303,8 +303,8 @@ def test_kashiwa_and_previous_eighteen_are_reviewed_complete_and_shinjuku_is_nex
     ):
         assert by_code[code]["status"] == "reviewed_complete"
 
-    assert queue["summary"]["reviewed_complete_count"] == 28
+    assert queue["summary"]["reviewed_complete_count"] == 29
     assert queue["summary"]["review_in_progress_count"] == 0
-    assert queue["summary"]["pending_record_review_count"] == 39
-    assert queue["summary"]["next_official_code"] == "212016"
+    assert queue["summary"]["pending_record_review_count"] == 38
+    assert queue["summary"]["next_official_code"] == "232017"
     assert by_code["131040"]["status"] == "reviewed_complete"
