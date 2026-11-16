@@ -1,0 +1,71 @@
+{
+  "id": "fukui-phase15-completion",
+  "phase": 15,
+  "status": "reviewed_complete",
+  "official_code": "182010",
+  "name_ja": "福井市",
+  "completed_at": "2026-11-16",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "source_catalog_path": "data/catalog/fukui_phase15_sources.json",
+    "plan_review_path": "data/reviewed/fukui-city/plan_review.json",
+    "policy_structure_path": "data/catalog/fukui_current_policy_structure.json",
+    "progress_review_path": "data/catalog/fukui_current_progress_review_summary.json",
+    "fiscal_records_path": "data/reviewed/fukui-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/fukui-city/evidence_packets.json",
+    "counts": {
+      "basic_goals": 4,
+      "basic_plan_measures": 14,
+      "promoted_implementation_item_actual_records": 0,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "current_plan_period_reviewed": true,
+    "current_plan_policy_structure_reviewed": true,
+    "implementation_plan_layer_reviewed": true,
+    "fiscal_states_and_years_separate": true,
+    "budget_enactment_state_preserved": true,
+    "settlement_linkage_not_assessable_preserved": true,
+    "individual_implementation_items_not_overpromoted": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "current-plan-granular-kpi-and-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "53施策・64KPIの全件とその実績、実施計画の主要事業の全件は追加depthとし、公式対応が確認できるまで昇格しない。KPIは実施計画の版ごとに変わり得るため、版を分離して保持する。"
+    },
+    {
+      "id": "plan-transition-version-depth",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "第九次福井市総合計画（策定中）の枠組みそのものは記録しない。策定経過は版の履歴として別途記録し、次期計画の政策・施策を第八次計画の体系へ遡及接続しない。"
+    },
+    {
+      "id": "settlement-audit-opinion-inspection",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "監査委員の決算審査意見書における意見内容の確認は未実施であり、決算総額（円単位）と認定経過の確認に留める。"
+    },
+    {
+      "id": "current-plan-annual-evaluation-evidence",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "毎年度の総合計画レポートにおける個別KPIの評価エビデンス（KPI項目ごとの実績、市民アンケート結果等）は昇格しない。制度の枠組みのみを確認した。"
+    },
+    {
+      "id": "fiscal-detail-and-amendment-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "予算・決算の項目別内訳（決算事項別明細書の款別合計との突合、予算書の第1号議案第1条の条文・第1表との最終突合を含む）、補正予算による変更経過、補正予算・決算と個別事業費の対応関係、執行・契約・補助金の接続は記録しない。FY2024決算は第八次計画期間の3年目の決算として保持するが、決算総額を政策・施策・KPIの実績へ流用しない。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "政策効果の因果認定、Jichi Insight独自の政策達成度スコア、他都市との未検証の比較・ランキングは作成しない。KPIに基づく進行管理（自治体自己評価の枠組み）をJichi Insight独自の達成判定へ変換しない。"
+    }
+  ],
+  "completion_boundary": "福井市のPhase 15 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味し、所有者（大杉邑大、単独運用体制）が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが福井市公式サイトの一次資料で検証した結果に基づく（所有者本人が一次資料を直接レビューしたものではない）。福井市の計画体系（第八次福井市総合計画は、第七次計画から継承した将来都市像『みんなが輝く 全国に誇れる ふくい』の実現に向けた市政運営の指針であり、計画期間は2022年度～2026年度の5年間（令和8年度が最終年度）で、『将来都市像』『重点方針』『政策』『施策』の階層で構成し、主要な事業や数値目標を定める実施計画を別途策定する。政策は4分野（社会基盤・市民福祉・産業・教育）のもとに14政策を位置付け、政策の下に53施策と実施計画で設定する64のKPIがある。進行管理は毎年度の総合計画レポート（成果報告書とKPI達成状況）で行う。なお計画体系の確認は、計画本編ページの取得が失敗したため、公式の総合計画レポート類（『総合計画レポート2024別紙・令和6年度KPI達成状況』等）と公式『令和8年度当初予算案の概要』で行ったものであり、計画本編そのもので確認したとは記録しない）、成立したFY2026一般会計当初予算（137,700,000千円。第1号議案『令和8年度福井市一般会計予算』として令和8年2月16日上程・令和8年3月19日原案可決）、FY2024一般会計決算の円単位総額（歳入133,427,298,121円・歳出130,218,901,390円、差引・形式収支3,208,396,731円で検算一致、実質収支2,248,179,731円）とその認定（第66号議案『令和6年度福井市各会計歳入歳出決算の認定について』・令和7年9月25日上程・2025-12-01認定）を一次資料で確認した。第九次福井市総合計画は審議会で策定中であり、その策定経過は移行記録として分離して保持し、次期計画の政策・施策を第八次計画の体系へ遡及接続しない。FY2024は第八次計画の計画期間（2022年度～2026年度）の3年目の決算であるが、決算総額は款別の集計値であり、政策・施策・KPIとの接続はnot_assessableとして保持する。53施策・64KPIの全件とその実績、実施計画の主要事業の全件、決算事項別明細書の款別合計との突合、予算書の第1号議案第1条の条文・第1表との最終突合、監査委員の決算審査意見書における意見内容の確認はdeferred depthである。Jichi Insight独自の政策達成度スコアや他都市とのランキングは作成しない。KPIに基づく進行管理（自治体自己評価）をJichi Insight独自の達成判定へ変換しない。"
+}
