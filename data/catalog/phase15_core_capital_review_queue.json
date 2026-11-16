@@ -640,9 +640,9 @@
       "prefecture_name_ja": "和歌山県",
       "municipality_type": "city",
       "phase14_role": "core_city_and_prefectural_capital",
-      "status": "pending_record_review",
+      "status": "reviewed_complete",
       "source_inventory_path": "data/indexed/wakayama-city/source_inventory.json",
-      "completion_path": null
+      "completion_path": "data/catalog/wakayama_phase15_completion.json"
     },
     {
       "sequence": 49,
@@ -894,11 +894,11 @@
   ],
   "summary": {
     "target_count": 67,
-    "reviewed_complete_count": 47,
+    "reviewed_complete_count": 48,
     "review_in_progress_count": 0,
-    "pending_record_review_count": 20,
+    "pending_record_review_count": 19,
     "blocked_source_inventory_count": 0,
-    "next_official_code": "302015"
+    "next_official_code": "312010"
   },
   "updated_at": "2026-11-16"
 }
