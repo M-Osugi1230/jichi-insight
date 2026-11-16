@@ -1,0 +1,65 @@
+[
+  {
+    "account_type": "general",
+    "amount_yen": 123140000000,
+    "confidence": "high",
+    "fiscal_year": 2026,
+    "id": "jp-local-362018-fiscal-2026-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算総額",
+    "municipality_id": "jp-local-362018",
+    "note": "徳島市の令和8年度一般会計当初予算総額123,140,000千円。市公式『令和8年度徳島市一般会計予算』議案（議案第1号）の第1条で、歳入歳出予算の総額は歳入歳出それぞれ123,140,000千円と定められていることを直接確認し、財政課『令和8年度各会計別予算規模・款別内訳表』の予算規模表の一般会計123,140,000千円（前年度124,400,000千円・1.0％減）とも一致する。議決は市議会公式の会議録（令和8年第1回定例会会議録第6号）で直接確認した。同会議録では、議案第1号に対する委員長報告が原案可決であり、2026年3月24日に本会議で委員長報告のとおり起立多数で可決することに決定したと記録されているため、議決結果は原案可決として記録する。公表精度は千円単位であり、その精度のまま記録し円単位を合成していない。補正予算や決算とは別stateで扱う。",
+    "period_end": "2027-03-31",
+    "period_start": "2026-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "tokushima-budget-2026"
+    ],
+    "stage": "initial_budget",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 119147339000,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-362018-fiscal-2024-total-revenue",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入額",
+    "municipality_id": "jp-local-362018",
+    "note": "『令和6年度各会計決算』（一般会計・特別会計決算表、単位：千円）に示された一般会計の歳入決算額119,147,339千円。『令和6年度決算の概要』の款別決算表の歳入合計とも一致する。当該決算は議案第104号『令和6年度徳島市一般会計決算の認定について』として市議会に提出され、令和7年第4回定例会で決算審査特別委員会に付託されて閉会中の継続審査となり、市議会公式の会議録（令和7年第5回定例会会議録第24号）で、2025年12月18日に委員長報告（認定）のとおり起立多数で認定されたことを直接確認し、認定の事実をそのまま記録した。公表精度は千円単位のため千円精度のまま記録し、円単位を合成していない。FY2024は徳島市総合計画2021の期間の決算であり、現行の徳島市総合計画2025（2025年度開始）開始前の決算である。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "tokushima-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 117214965000,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-362018-fiscal-2024-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出額",
+    "municipality_id": "jp-local-362018",
+    "note": "同じく『令和6年度各会計決算』の決算表に示された一般会計の歳出決算額117,214,965千円。歳入決算額119,147,339千円との差引は1,932,374千円で、同表の歳入歳出差引額と検算一致する。実質収支は1,129,929千円であり（差引1,932,374千円－翌年度へ繰り越すべき財源802,445千円）、同表に印字された実質収支と一致する。実質収支は公表精度である千円単位のまま記録し、円単位を合成しない。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "tokushima-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "completed_at": "2026-11-17",
+  "completion_boundary": "徳島市のPhase 15 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味し、所有者（大杉邑大、単独運用体制）が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが徳島市公式サイトの一次資料で検証した結論に基づく（所有者本人が一次資料を直接レビューしたものではない）。徳島市の計画体系（徳島市総合計画2025は、令和7年3月に地方版総合戦略（まち・ひと・しごと創生法に基づく総合戦略）と一体化した最上位計画として策定され、基本構想・基本計画・アクションプランの3層で構成される。基本構想は2025年度から概ね10年後を展望して基本理念と将来像と政策を定め、基本計画は前期（2025年度～2029年度）と後期（2030年度～2034年度）で施策を体系的に示し、アクションプランは毎年度見直しを行い現行は令和8年度版である。将来像は『おどる街 つながる笑顔 水都とくしま』であり、3つの基本理念のもとに6つの政策を掲げる。政策レベルの体系は保持したが、基本計画の施策体系と各施策の成果指標（前期の総合的な成果指標9件を含む）とアクションプランの事業の全件列挙は行わず、追加depthとして保持する。進行管理は、PDCAサイクルと外部有識者で構成する徳島市総合計画2025評価委員会による評価による。各層の期間を別period semanticsとして保持し、period_statusはPhase 14インベントリどおりverified_fixed_period（2025年度～2034年度）を保持する）、成立したFY2026一般会計当初予算（123,140,000千円。議案第1号『令和8年度徳島市一般会計予算』として市議会公式の会議録（令和8年第1回定例会会議録第6号）で、委員長報告（原案可決）のとおり2026年3月24日に起立多数で可決されたことを直接確認した。金額は予算議案の第1条と財政課『令和8年度各会計別予算規模・款別内訳表』の予算規模表で確認した。公表精度は千円単位のため、その精度（千円単位）のまま記録し、円単位を合成していない）、FY2024一般会計決算の千円単位総額（歳入119,147,339千円・歳出117,214,965千円、差引1,932,374千円が『令和6年度各会計決算』の決算表の歳入歳出差引額と検算一致することを確認した）を一次資料で確認した。決算の認定である議案第104号は令和7年第5回定例会（2025年12月18日）で認定されたことを市議会公式の会議録（令和7年第5回定例会会議録第24号）で直接確認し（令和7年第4回定例会で決算審査特別委員会に付託され閉会中の継続審査を経たもの）、認定の事実をそのまま記録した。実質収支額は1,129,929千円（差引1,932,374千円から翌年度へ繰り越すべき財源802,445千円を差し引いた額）であり、同表の千円単位の公表値のまま記録する。普通会計ベースの集計値は一般会計の値とは別のため使用していない。前計画である徳島市総合計画2021から徳島市総合計画2025への移行は移行記録として分離して保持し、次期計画の策定状況は公式資料で確認できていない。FY2024は徳島市総合計画2021の期間の決算で現行計画開始前であり計画の版が異なるため、決算総額と現行計画の政策体系との総額レベルの対応付けは公式資料になく、接続はnot_assessableとして保持する。基本計画の施策・成果指標とアクションプランの事業の全件列挙・改定差分、予算・決算の事項別明細書の款別合計との最終突合、監査委員の令和6年度決算審査意見書の内容（個別の指摘事項等）の精査、前計画の政策体系の全件列挙、次期計画の策定状況はdeferred depthである。Jichi Insight独自の政策達成度スコアや他都市とのランキングは作成しない。進捗管理（自治体のPDCAサイクルと評価委員会の仕組み）をJichi Insight独自の達成判定へ変換しない。",
+  "completion_depth": "declared_review_package_v1",
+  "deferred_depth": [
+    {
+      "boundary": "基本計画の施策体系（6政策のもとの施策と各施策の成果指標、前期の総合的な成果指標9件の個別進捗）とアクションプラン（令和8年度版）の事業の全件列挙・改定差分は追加depthとし、公式対応が確認できるまで昇格しない。政策レベルの体系自体は候補に保持するが、施策・事業単位の対応付けは行わない。",
+      "id": "current-plan-granular-kpi-and-project-linkage",
+      "status": "deferred_not_required_for_v1_completion"
+    },
+    {
+      "boundary": "FY2026当初予算の金額（123,140,000千円）と議決（議案第1号・原案可決、会議録で直接確認）、FY2024決算の総額（千円精度）と実質収支（千円精度）、議案第104号の認定（会議録で直接確認）は一次資料で確認し候補に反映している。一方、予算・決算の事項別明細書の款別合計との最終突合と、監査委員の令和6年度決算審査意見書の個別の指摘事項等の内容精査は未実施のまま保持する。",
+      "id": "fiscal-detail-reconciliation",
+      "status": "deferred_not_required_for_v1_completion"
+    },
+    {
+      "boundary": "前計画である徳島市総合計画2021 －水都とくしま「新創造」プラン－の政策体系・事業・成果の全件列挙は本候補では行わない。徳島市総合計画2025の次期計画の策定状況は本候補の調査時点では公式資料で確認できておらず、確認でき次第、別versionとして保持する。",
+      "id": "plan-transition-version-depth",
+      "status": "deferred_not_required_for_v1_completion"
+    },
+    {
+      "boundary": "徳島市の総合計画・進行管理・財政等のステージングは政策効果の因果認定や他都市比較可能性を意味しない。進行管理（自治体のPDCAサイクルと評価委員会の仕組み）をJichi Insight独自の達成判定へ変換しない。",
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion"
+    }
+  ],
+  "id": "tokushima-phase15-completion",
+  "name_ja": "徳島市",
+  "official_code": "362018",
+  "phase": 15,
+  "quality_gate": {
+    "budget_enactment_state_preserved": true,
+    "current_plan_period_reviewed": true,
+    "current_plan_policy_structure_reviewed": true,
+    "declared_package_schema_validated": true,
+    "fiscal_states_and_years_separate": true,
+    "implementation_plan_layer_reviewed": true,
+    "individual_implementation_items_not_overpromoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "no_independent_policy_achievement_promoted": true,
+    "official_source_lineage_preserved": true,
+    "regression_suite_required_before_merge": true,
+    "settlement_linkage_not_assessable_preserved": true
+  },
+  "review_package": {
+    "counts": {
+      "basic_goals": 6,
+      "basic_plan_measures": 0,
+      "fiscal_top_line_records": 3,
+      "promoted_implementation_item_actual_records": 0
+    },
+    "fiscal_evidence_path": "data/reviewed/tokushima-city/evidence_packets.json",
+    "fiscal_records_path": "data/reviewed/tokushima-city/fiscal_records.json",
+    "plan_review_path": "data/reviewed/tokushima-city/plan_review.json",
+    "policy_structure_path": "data/catalog/tokushima_current_policy_structure.json",
+    "progress_review_path": "data/catalog/tokushima_current_progress_review_summary.json",
+    "source_catalog_path": "data/catalog/tokushima_phase15_sources.json"
+  },
+  "status": "reviewed_complete"
+}

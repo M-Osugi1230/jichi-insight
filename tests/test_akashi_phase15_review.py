@@ -52,9 +52,9 @@ def test_akashi_review_package_is_the_forty_fifth_completion():
     }
 
     queue = load(QUEUE)
-    assert queue["summary"]["reviewed_complete_count"] == 55
-    assert queue["summary"]["pending_record_review_count"] == 12
-    assert queue["summary"]["next_official_code"] == "362018"
+    assert queue["summary"]["reviewed_complete_count"] == 56
+    assert queue["summary"]["pending_record_review_count"] == 11
+    assert queue["summary"]["next_official_code"] == "372013"
     entry = next(
         row for row in queue["execution_queue"] if row["official_code"] == "282030"
     )

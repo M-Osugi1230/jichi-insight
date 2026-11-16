@@ -379,7 +379,7 @@ def test_okazaki_and_previous_thirty_are_reviewed_complete_and_ichinomiya_is_nex
     ):
         assert by_code[code]["status"] == "reviewed_complete"
 
-    assert queue["summary"]["reviewed_complete_count"] == 55
+    assert queue["summary"]["reviewed_complete_count"] == 56
     assert queue["summary"]["review_in_progress_count"] == 0
-    assert queue["summary"]["pending_record_review_count"] == 12
-    assert queue["summary"]["next_official_code"] == "362018"
+    assert queue["summary"]["pending_record_review_count"] == 11
+    assert queue["summary"]["next_official_code"] == "372013"
