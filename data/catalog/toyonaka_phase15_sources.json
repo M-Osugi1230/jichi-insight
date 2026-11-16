@@ -1,0 +1,55 @@
+{
+  "id": "toyonaka-phase15-sources",
+  "name_ja": "豊中市",
+  "official_code": "272035",
+  "phase": 15,
+  "quality_boundary": "Current plan identity kept as published (the Fourth Toyonaka City Comprehensive Plan in a three-layer basic-concept / basic-plan / implementation-plan structure; the basic concept runs FY2018-FY2027 and the current latter basic plan runs FY2023-FY2027, with five chapters holding 16 measures, all enumerated, plus the leading project (南部地域活性化プロジェクト) kept outside the measure count; the first basic plan is kept only as a separate version), progress governance (policy evaluation of the 16 measures and the leading project on two axes every year, with results published in the digital budget book and the policy evaluation result summaries), budget enactment confirmed on the council's official voting-results list (bill 市議案第8号, passed as proposed on 2026-03-23) with the amount kept at the published sen-yen precision and never expanded into synthetic yen, and settlement totals kept at the published yen precision from the official settlement book (the settlement certification bill 市議案第74号 was voted not certified (不認定) on 2025-11-28 at the December 2025 regular session after continued review; the real balance of 4,930,077 thousand yen is kept at sen-yen precision as published in the real-balance statement) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "reviewed_at": "2026-11-16",
+  "sources": [
+    {
+      "evidence_location": "豊中市公式Webサイト『後期基本計画（2023年度から2027年度）』ページは現行基本計画の公式入口（Phase 14インベントリで確認）。16施策とリーディングプロジェクトの一覧、同ページ掲載の公式『第4次豊中市総合計画後期基本計画』本編（序論で基本構想の計画期間・まちの将来像・計画の構成を確認）へのリンクを含む",
+      "evidence_role": "comprehensive_plan",
+      "format": "html",
+      "id": "toyonaka-fourth-latter-plan",
+      "official_url": "https://www.city.toyonaka.osaka.jp/joho/keikaku/soukei4/koukikihonkeikaku.html",
+      "title": "後期基本計画（2023年度から2027年度）",
+      "use_boundary": "現行計画は第4次豊中市総合計画後期基本計画（2023年度～2027年度）として保持し、前期基本計画（2018年度～2022年度）のversionをcurrentへ上書きしない"
+    },
+    {
+      "evidence_location": "豊中市公式Webサイト『実施計画』ページは実施計画の公式入口（Phase 14インベントリで確認）。令和6年度以降の実施計画をデジタル予算書で確認する運用の説明と、令和5年度版までの実施計画（本編）へのリンクを含む",
+      "evidence_role": "implementation_plan",
+      "format": "html",
+      "id": "toyonaka-implementation-plan",
+      "official_url": "https://www.city.toyonaka.osaka.jp/joho/keikaku/soukei4/jijjikeikaku.html",
+      "title": "実施計画",
+      "use_boundary": "実施計画情報がデジタル予算書へ統合された運用を保持し、計画事業と予算項目をEvidence確認なしに同一identityへ統合しない"
+    },
+    {
+      "evidence_location": "豊中市公式Webサイト『政策評価』ページは進行管理の公式入口（Phase 14インベントリで確認）。後期基本計画の16施策とリーディングプロジェクトを進捗度・取組み内容の2軸で毎年度評価する手法の説明と、各年度の政策評価結果概要へのリンクを含む",
+      "evidence_role": "progress_governance",
+      "format": "html",
+      "id": "toyonaka-policy-evaluation",
+      "official_url": "https://www.city.toyonaka.osaka.jp/joho/keikaku/gyousei_hyouka/20190524135532126.html",
+      "title": "政策評価",
+      "use_boundary": "政策評価は自治体の進行管理routeとして保持し、source-reportedな評価をJichi Insight独自の達成率へ変換しない"
+    },
+    {
+      "evidence_location": "豊中市公式Webサイト『令和8年度予算』ページはFY2026当初予算の公式入口（Phase 14インベントリで確認）。同ページ掲載の公式『令和8年度豊中市各経済予算書』（市議案第8号）・各経済予算説明書・議案参考資料へのリンクを含む",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "toyonaka-budget-2026",
+      "official_url": "https://www.city.toyonaka.osaka.jp/joho/zaisei/yosan/r8yosan.html",
+      "title": "令和8年度予算",
+      "use_boundary": "FY2026当初予算は成立予算（市議案第8号・令和8年3月23日原案可決）として保持し、補正予算と別stateで扱う"
+    },
+    {
+      "evidence_location": "豊中市公式Webサイト『令和6年度決算』ページは決算の公式入口（Phase 14インベントリで確認）。FY2024の歳入・歳出の円単位総額は同ページ掲載の公式『令和6年度豊中市各経済歳入歳出決算書』の一般会計歳入歳出決算書で確認し、実質収支は同ページ掲載の『令和6年度豊中市各経済実質収支に関する調書』（一般会計）で確認した",
+      "evidence_role": "settlement",
+      "format": "html",
+      "id": "toyonaka-settlement-2024",
+      "official_url": "https://www.city.toyonaka.osaka.jp/joho/zaisei/kessan/r6kessan/index.html",
+      "title": "令和6年度決算",
+      "use_boundary": "FY2024決算は後期基本計画期間内（2年度目）の決算として保持し、決算総額を計画の施策の実績へ流用しない。認定議案（市議案第74号）は令和7年11月28日に不認定となったものとして保持する"
+    }
+  ]
+}

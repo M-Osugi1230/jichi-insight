@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-16",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "toyonaka-city-home",
+      "municipality_key": "toyonaka-city",
+      "organization": "豊中市",
+      "category": "municipality_profile",
+      "title": "豊中市公式サイト",
+      "url": "https://www.city.toyonaka.osaka.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "豊中市の公式自治体サイト。"
+    },
+    {
+      "id": "toyonaka-budget-2026",
+      "municipality_key": "toyonaka-city",
+      "organization": "豊中市",
+      "category": "budget",
+      "title": "令和8年度予算",
+      "url": "https://www.city.toyonaka.osaka.jp/joho/zaisei/yosan/r8yosan.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算206,946,719千円のEvidence。市議案第8号『令和8年度豊中市一般会計予算』として令和8年2月24日に提出され、令和8年3月23日に原案可決された成立予算（豊中市議会公式『議決結果（令和8年（2026年）3月定例会）』で確認）。金額は千円単位の公表値のまま記録し、円単位を合成しない。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "toyonaka-settlement-2024",
+      "municipality_key": "toyonaka-city",
+      "organization": "豊中市",
+      "category": "settlement",
+      "title": "令和6年度決算",
+      "url": "https://www.city.toyonaka.osaka.jp/joho/zaisei/kessan/r6kessan/index.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入197,263,021,788円・歳出191,790,466,590円を円単位で含む公式決算資料（令和6年度豊中市各経済歳入歳出決算書）。実質収支額は同ページ掲載の『令和6年度豊中市各経済実質収支に関する調書』（一般会計）により4,930,077千円（同調書は千円単位・端数調整の公表のため千円精度のまま記録）。決算の認定議案である市議案第74号は令和7年12月定例会で令和7年11月28日に不認定となった（認定されていない）。不認定に係る市長の措置（地方自治法第233条第7項）の内容確認は未実施。決算書（歳入歳出決算事項別明細書）の款別合計との突合は未実施。"
+    }
+  ]
+}

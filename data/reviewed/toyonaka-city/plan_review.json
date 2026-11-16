@@ -1,0 +1,62 @@
+{
+  "id": "phase15-toyonaka-plan-review",
+  "name_ja": "豊中市",
+  "next_action": "Promote the individual projects under the 16 measures (as listed in the digital budget book's policy-structure and project lists) and the per-measure outcome indicator values, and the project breakdown of the leading project (南部地域活性化プロジェクト), only when official sources with stable record-level locators have been reviewed; complete the final cross-check against the budget explanation book and the settlement book (事項別明細書) at section level; confirm the content of the mayor's measures in response to the FY2024 settlement's non-certification (Local Autonomy Act Article 233(7)) and of any report to the council; record the first basic plan's framework itself (17 measures and its leading project) and the next comprehensive plan after the basic concept period (ending FY2027) only as separate versions, and never retroactively connect the current plan's measures to the first basic plan period's results. Keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "official_code": "272035",
+  "quality_boundary": "This package reviews the current plan identity and period (the Fourth Toyonaka City Comprehensive Plan, the city's top-level plan under the Toyonaka City Basic Autonomy Ordinance, in a three-layer basic-concept / basic-plan / implementation-plan structure; the basic concept runs FY2018-FY2027 with the future city image 『みらい創造都市 とよなか ～明日がもっと楽しみなまち～』 and the policy outline for its realization, and the basic plan is split into a first period (FY2018-FY2022) and the current latter basic plan (FY2023-FY2027), which sets five chapters holding 16 measures, all enumerated, plus the leading project (南部地域活性化プロジェクト) kept outside the measure count; the implementation plan is provided through the digital budget book from FY2024 onward), the progress-governance layer (policy evaluation — the 16 measures and the leading project are evaluated every year on two axes, progress and content, with results published in the digital budget book and the policy evaluation result summaries — kept as the municipality's own progress-management framework), the enacted FY2026 initial budget at the published sen-yen (thousand-yen) precision (bill 市議案第8号, passed as proposed on 2026-03-23 per the council's official voting-results list), and the FY2024 settlement at yen precision as published, without collapsing proposed, enacted, supplementary, or settlement states. The FY2024 settlement certification bill (bill 市議案第74号, covering the general account and the other accounts) was submitted to the September 2025 regular session, went through continued review, and was voted not certified (不認定) on 2025-11-28 at the December 2025 regular session: that outcome is recorded exactly as published and is never rewritten as a certification. The real balance of 4,930,077 thousand yen is kept at sen-yen precision as published in the real-balance statement itself. FY2024 is a settlement inside the latter basic plan period (its second year), so the plan version is the same as the current plan, but no official total-level mapping from settlement totals to the plan's 16 measures or the leading project exists, so the linkage stays not_assessable. The first-to-latter basic plan succession is kept only as a version chronology record, and the status of the next comprehensive plan is left unconfirmed.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "豊中市公式Webサイト『後期基本計画（2023年度から2027年度）』ページ（現行計画の公式入口。Phase 14インベントリで確認）と、同ページ掲載の公式『第4次豊中市総合計画後期基本計画』本編の序論（第4次豊中市総合計画後期基本計画策定の趣旨・計画の構成と期間・まちの将来像と施策大綱）で直接確認",
+      "evidence_role": "current_plan_identity",
+      "id": "toyonaka-current-plan-period",
+      "review_note": "10年間の基本構想と前期・後期各5年の基本計画を別period semanticsとして保持した。レビュー済みレコード。",
+      "source_url": "https://www.city.toyonaka.osaka.jp/joho/keikaku/soukei4/koukikihonkeikaku.html",
+      "statement": "豊中市の総合計画は第4次豊中市総合計画であり、豊中市自治基本条例に基づき策定された市の最上位計画として、基本構想・基本計画・実施計画で構成する。基本構想は、まちの将来像（『みらい創造都市 とよなか ～明日がもっと楽しみなまち～』）とその実現のための施策大綱を示すものであり、計画期間は2018年度から2027年度までの10年間（目標年度2027年度）である。基本計画は前期基本計画（2018年度～2022年度）と後期基本計画（2023年度～2027年度）に分かれ、現行は後期基本計画である。実施計画は、基本計画で示した施策を実現するための事業を明らかにするものであり、後期は2023年度～2027年度の5年間を対象とし、令和6年度以降はデジタル予算書で提供される。Phase 14インベントリの記録（第4次豊中市総合計画 後期基本計画・2023年度～2027年度）とも一致する。",
+      "title": "第4次豊中市総合計画の構成と基本構想・後期基本計画の計画期間",
+      "value": "2018年度～2027年度"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "公式『後期基本計画（2023年度から2027年度）』ページの「16施策とリーディングプロジェクト」の一覧で全件直接確認（章別の施策数の合計16で検算一致）。リーディングプロジェクトは同ページおよび公式『第4次豊中市総合計画後期基本計画』本編で確認",
+      "evidence_role": "policy_structure",
+      "id": "toyonaka-current-policy-structure",
+      "review_note": "公式の計画ページで施策体系を全件確認した。レビュー済みレコード。",
+      "source_url": "https://www.city.toyonaka.osaka.jp/joho/keikaku/soukei4/koukikihonkeikaku.html",
+      "statement": "後期基本計画の施策体系は、基本構想の施策大綱に沿った5つの章のもと、全16施策で構成する。第1章『子ども・若者が夢や希望をもてるまちづくり』は3施策、第2章『安全に安心して暮らせるまちづくり』は4施策、第3章『活力ある快適なまちづくり』は5施策、第4章『いきいきと心豊かに暮らせるまちづくり』は2施策、第5章『施策推進に向けた取組み』は2施策を束ねる（3+4+5+2+2の合計16で検算一致）。16施策の全件はpolicy_structureに列挙する。なお、後期基本計画では、各施策の事業のうち特に重点的・総合的に取り組む事業を「リーディングプロジェクト」として位置付けており、後期基本計画のリーディングプロジェクトは南部地域活性化プロジェクトであるが、施策体系の件数には含めない。",
+      "title": "後期基本計画の5つの章と全16施策"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "豊中市公式Webサイト『政策評価』ページ（進行管理の公式入口。Phase 14インベントリで確認。政策評価の対象・手法の説明と各年度の政策評価結果概要・デジタル予算書へのリンク）で確認",
+      "evidence_role": "progress_governance",
+      "id": "toyonaka-progress-governance-framework",
+      "review_note": "進行管理の枠組み（政策評価と結果の公表）を公式資料で直接確認した。評価の個別結果そのものは本パッケージでは扱わない。レビュー済みレコード。",
+      "source_url": "https://www.city.toyonaka.osaka.jp/joho/keikaku/gyousei_hyouka/20190524135532126.html",
+      "statement": "第4次豊中市総合計画基本計画の進行管理は、政策評価である。政策評価は、後期基本計画の16施策とリーディングプロジェクトを対象に、取組みの進捗度（想定以上に進んでいる／想定どおりに進んでいる／想定よりやや遅れている／想定より大幅に遅れている）と取組み内容（取組み内容を拡充する／取組み内容を継続する／取組み内容を変更する）の2軸で毎年度評価する自治体の制度であり、結果はデジタル予算書と政策評価結果概要で公表される。この進行管理は自治体による進行管理の枠組みであり、Jichi Insight独自の達成判定へ変換しない。",
+      "title": "政策評価（2軸評価）による進行管理と結果の公表"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "公式『第4次豊中市総合計画後期基本計画』本編の序論（前期基本計画の計画期間・17施策とリーディングプロジェクトの設定、後期基本計画の策定）および豊中市公式Webサイト『政策評価』ページの前期基本計画の評価対象の記載で確認",
+      "evidence_role": "plan_transition",
+      "id": "toyonaka-plan-transition",
+      "review_note": "前期から後期への移行を基本計画のversionの履歴として記録した。レビュー済みレコード。",
+      "source_url": "https://www.city.toyonaka.osaka.jp/joho/keikaku/soukei4/koukikihonkeikaku.html",
+      "statement": "第4次豊中市総合計画の基本計画は、前期基本計画（2018年度～2022年度・17施策とリーディングプロジェクト）を経て、現行の後期基本計画（2023年度～2027年度・16施策とリーディングプロジェクト）へ引き継がれてきた。各基本計画はversionを分けて保持し、現行計画の施策を前期基本計画期間の実績へ遡及接続しない。基本構想の計画期間は2027年度までであり、次期総合計画の策定状況は本候補では確認していない（確認できた範囲を超えて断定しない）。",
+      "title": "前期基本計画から後期基本計画への移行"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "FY2024決算の公式入口はPhase 14インベントリの決算資料（決算書）。決算総額と後期基本計画の16施策・リーディングプロジェクトとの対応付けは公式資料の総額レベルでは示されていない",
+      "evidence_role": "annual_progress",
+      "id": "toyonaka-fy2024-settlement-linkage",
+      "review_note": "総額レベルの対応付けがないため、接続を推測で記録しない明示的な未判定レコード。決算と施策の対応付けは人間レビュー工程の作業。",
+      "source_url": "https://www.city.toyonaka.osaka.jp/joho/zaisei/kessan/r6kessan/index.html",
+      "statement": "FY2024決算値と第4次豊中市総合計画後期基本計画の16施策・リーディングプロジェクトとの接続は未判定（not_assessable）。FY2024は後期基本計画（2023年度～2027年度）の期間内の決算であり計画versionは同一であるが、決算総額は会計別の集計値であり、施策との総額レベルの対応付けは公式資料に示されていない。政策評価は施策・リーディングプロジェクト単位の進行管理routeであり、FY2024決算総額との対応付けは行われていない。FY2024決算の精密値そのものは決算書で確認済みであるが、決算と施策の対応付けは人間レビュー工程の作業とする。",
+      "title": "令和6年度決算と後期基本計画の16施策・リーディングプロジェクトの接続"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-16"
+}
