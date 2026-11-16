@@ -1,0 +1,65 @@
+[
+  {
+    "account_type": "general",
+    "amount_yen": 151508494000,
+    "confidence": "high",
+    "fiscal_year": 2026,
+    "id": "jp-local-282030-fiscal-2026-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算（修正議決）",
+    "municipality_id": "jp-local-282030",
+    "note": "明石市公式の修正後の令和8年度一般会計予算書（議案第29号『令和8年度明石市一般会計予算』、令和8年2月19日に市長丸谷聡子が提出）第1条で確認した令和8年度一般会計当初予算総額151,508,494千円。歳入・歳出の各合計とも一致した。公表精度は千円単位であり、その精度のまま記録し円単位を合成していない。当初予算案は修正議決により成立した（市公式『令和8年度当初予算案』ページが『※予算議案に対する修正議決後の内容は次のとおりです（3月25日）』と明記し、修正後の予算書を公表している）。議決日2026年3月25日は同ページの公表日付による。市議会公式の審議結果文書そのものの結果欄の文言と修正の具体的内容は未確認であり、会議録による最終確認は未実施である。補正予算や決算とは別stateで扱う。",
+    "period_end": "2027-03-31",
+    "period_start": "2026-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "akashi-budget-2026"
+    ],
+    "stage": "initial_budget",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 131291999787,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-282030-fiscal-2024-total-revenue",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入額",
+    "municipality_id": "jp-local-282030",
+    "note": "明石市公式『令和6年度決算資料』（決算議案関係資料、令和7年9月、財務室）の会計別決算収支総括表に示された一般会計の歳入総額131,291,999,787円（円単位で印字）。予算現額は138,266,314,000円。当該決算は議案第58号（議案第58号から第69号までの『令和6年度明石市一般会計歳入歳出決算ほか11件』）として、令和7年第2回定例会9月議会で原案どおり認定することに決定した（市議会公式『第2回定例会9月議会審議結果』で直接確認。決定日は2025年10月16日）。FY2024はあかしSDGs前期戦略計画（2022年度～2025年度）期間内の決算である。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "akashi-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 130356924686,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-282030-fiscal-2024-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出額",
+    "municipality_id": "jp-local-282030",
+    "note": "明石市公式『令和6年度決算資料』の会計別決算収支総括表に示された一般会計の歳出総額130,356,924,686円（円単位で印字）。歳入総額131,291,999,787円との差引額935,075,101円は、同表の形式収支と検算一致する。実質収支は同表により886,767,101円（翌年度へ繰り越すべき財源48,308,000円を差し引いた額、円単位）であり、単年度収支は151,241,824円である。当該決算は議案第58号として第2回定例会9月議会で原案どおり認定することに決定した。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "akashi-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  }
+]

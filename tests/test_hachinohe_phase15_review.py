@@ -240,7 +240,7 @@ def test_hachinohe_morioka_akita_yamagata_and_fukushima_are_complete_and_koriyam
     assert by_code["072010"]["completion_path"] == (
         "data/catalog/fukushima_phase15_completion.json"
     )
-    assert queue["summary"]["reviewed_complete_count"] == 44
+    assert queue["summary"]["reviewed_complete_count"] == 45
     assert queue["summary"]["review_in_progress_count"] == 0
-    assert queue["summary"]["pending_record_review_count"] == 23
-    assert queue["summary"]["next_official_code"] == "282030"
+    assert queue["summary"]["pending_record_review_count"] == 22
+    assert queue["summary"]["next_official_code"] == "282049"

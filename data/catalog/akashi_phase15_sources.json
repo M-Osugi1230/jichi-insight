@@ -1,0 +1,46 @@
+{
+  "id": "akashi-phase15-sources",
+  "name_ja": "明石市",
+  "official_code": "282030",
+  "phase": 15,
+  "quality_boundary": "Current plan identity kept as published (the Akashi SDGs Promotion Plan (the Sixth Akashi Long-term Comprehensive Plan, FY2022-FY2030): the promotion plan sets the basic concept (the 2030 vision and the three aspects — economy, society, environment), the strategy plans split into a first half (FY2022-FY2025) and a second half (FY2026-FY2030, current), with individual plans and annual implementation plans below them; the layer semantics are kept separate; the per-field main measures and numerical targets of the strategy plans are not enumerated and stay deferred depth), progress governance (a PDCA cycle run through the annual implementation plans, with deliberation by the Akashi SDGs Promotion Council — kept as the municipality's own progress-management framework), budget enactment confirmed from the amended budget book itself and the city's official budget page (bill 議案第29号; enacted by an amended vote on 2026-03-25, not in its original form; the amount is kept at the published sen-yen precision and is never expanded into synthetic finer amounts; the exact result-column wording in the council's deliberation-results document itself and the concrete content of the amendment are still unconfirmed, and the minutes confirmation is still pending), and settlement totals kept in exact yen as printed in the city's official settlement materials (the settlement certification bill 議案第58号 was certified in its original form at the 2025 second regular session, decided 2025-10-16; the real balance is 886,767,101 yen in exact yen; the minutes confirmation is still pending) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "reviewed_at": "2026-11-16",
+  "sources": [
+    {
+      "evidence_location": "明石市公式Webサイト『あかしSDGs推進計画（明石市第6次長期総合計画）』ページ（Phase 14インベントリで確認）と計画本編（公式PDF）で、計画の構成（推進計画・前期／後期戦略計画・個別計画・実行計画）、期間（推進計画2022年度～2030年度、戦略計画は前期2022年度～2025年度・後期2026年度～2030年度）、基本構想（2030年のあるべき姿、三側面の方向性、行政運営の基本姿勢）を直接確認した",
+      "evidence_role": "comprehensive_plan",
+      "format": "html",
+      "id": "akashi-sdgs-plan",
+      "official_url": "https://www.city.akashi.lg.jp/seisaku/seisaku_shitsu/shise/gyose/kekaku/sogokekaku/index-6sdgs.html",
+      "title": "あかしSDGs推進計画（明石市第6次長期総合計画）",
+      "use_boundary": "現行計画はあかしSDGs推進計画（明石市第6次長期総合計画、2022年度～2030年度）として保持し、推進計画と戦略計画（前期・後期）のlayer semanticsを分離する。前期戦略計画期間の実績を後期戦略計画へ先取りしない"
+    },
+    {
+      "evidence_location": "市公式の計画ページの『あかしSDGs後期戦略計画』『実行計画』『あかしSDGs推進審議会』の各節で、後期戦略計画（2026年度～2030年度）が策定済みであること、実行計画が年度ごとに公表されていること、推進状況が審議会で審議されていることを直接確認した",
+      "evidence_role": "implementation_plan_and_progress",
+      "format": "html",
+      "id": "akashi-latter-strategy-action",
+      "official_url": "https://www.city.akashi.lg.jp/seisaku/seisaku_shitsu/shise/gyose/kekaku/sogokekaku/index-6sdgs.html",
+      "title": "あかしSDGs後期戦略計画・2026年度実行計画",
+      "use_boundary": "後期戦略計画（2026年度～2030年度）、年度実行計画、SDGs推進審議会の進行管理を別Evidence roleで保持し、統合スコアへ変換しない。前期戦略期間（2022年度～2025年度）の結果を後期戦略のactualへ流用しない"
+    },
+    {
+      "evidence_location": "FY2026当初予算の金額は、明石市公式の修正後の令和8年度一般会計予算書（議案第29号『令和8年度明石市一般会計予算』）第1条の総額151,508,494千円で確認し、歳入・歳出の各合計とも一致した。修正議決の事実と日付は市公式『令和8年度当初予算案』ページの『予算議案に対する修正議決後の内容は次のとおりです（3月25日）』の明記により確認した",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "akashi-budget-2026",
+      "official_url": "https://www.city.akashi.lg.jp/zaimu/zaisei_ka/shise/zaise/aramashi/yosannaiyo/index.html",
+      "title": "当初予算の内容",
+      "use_boundary": "FY2026当初予算は補正予算・決算と別stateで保持する。金額は千円単位の公表値であり、円単位を合成しない。議案番号（議案第29号）と修正議決による成立は確認済みであり、議決後の成立額を保持する。修正の具体的内容は未確認のまま保持する"
+    },
+    {
+      "evidence_location": "FY2024決算の公式入口（Phase 14インベントリで確認）。明石市公式『令和6年度決算資料』（決算議案関係資料、令和7年9月、財務室）の会計別決算収支総括表で、一般会計の歳入131,291,999,787円・歳出130,356,924,686円・形式収支935,075,101円・翌年度へ繰り越すべき財源48,308,000円・実質収支886,767,101円を円単位で直接確認した。決算の認定結果は市議会公式『第2回定例会9月議会審議結果』により確認し、議案第58号から第69号までの決算議案は『原案どおり認定することに決定した議案』であり、決定日は2025年10月16日であった",
+      "evidence_role": "settlement",
+      "format": "html",
+      "id": "akashi-settlement-2024",
+      "official_url": "https://www.city.akashi.lg.jp/zaimu/zaisei_ka/shise/zaise/aramashi/zaise/index.html",
+      "title": "財政のあらまし（決算内容）",
+      "use_boundary": "FY2024決算は前期戦略計画（2022年度～2025年度）期間内の決算として保持する。歳入・歳出・実質収支は決算資料の円単位の精密値のまま記録し、認定結果（議案第58号・原案どおり認定）も市議会公式の審議結果文書で確認済みである"
+    }
+  ]
+}

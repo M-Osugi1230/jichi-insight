@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-16",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "akashi-city-home",
+      "municipality_key": "akashi-city",
+      "organization": "明石市",
+      "category": "municipality_profile",
+      "title": "明石市公式サイト",
+      "url": "https://www.city.akashi.lg.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "明石市の公式自治体サイト。"
+    },
+    {
+      "id": "akashi-budget-2026",
+      "municipality_key": "akashi-city",
+      "organization": "明石市",
+      "category": "budget",
+      "title": "当初予算の内容",
+      "url": "https://www.city.akashi.lg.jp/zaimu/zaisei_ka/shise/zaise/aramashi/yosannaiyo/index.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算151,508,494千円（千円精度）のEvidence。議案第29号『令和8年度明石市一般会計予算』は修正議決により成立した成立予算（市公式『令和8年度当初予算案』ページが修正議決後の内容を2026年3月25日付けで公表）。金額は修正後の一般会計予算書第1条で確認し、歳入・歳出の各合計とも一致した千円単位の公表値のまま記録し、円単位を合成しない。市議会公式の審議結果文書そのものの結果欄の文言と修正の具体的内容は未確認であり、会議録による議決日の最終確認は未実施。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "akashi-settlement-2024",
+      "municipality_key": "akashi-city",
+      "organization": "明石市",
+      "category": "settlement",
+      "title": "財政のあらまし（決算内容）",
+      "url": "https://www.city.akashi.lg.jp/zaimu/zaisei_ka/shise/zaise/aramashi/zaise/index.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入131,291,999,787円・歳出130,356,924,686円を含む公式決算資料（市公式『令和6年度決算資料』の会計別決算収支総括表で円単位で確認し、差引935,075,101円が同表の形式収支と検算一致）。実質収支は同表により886,767,101円（円単位のまま記録）。決算の認定議案である議案第58号は令和7年第2回定例会9月議会で原案どおり認定することに決定した（決定日2025年10月16日。市議会公式『第2回定例会9月議会審議結果』で確認）。決算書（歳入歳出決算事項別明細書）の款別合計との突合と監査委員の決算審査意見書の内容（個別の指摘事項等）の精査は未実施。"
+    }
+  ]
+}

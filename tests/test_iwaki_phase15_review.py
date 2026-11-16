@@ -277,8 +277,8 @@ def test_iwaki_and_previous_fourteen_are_reviewed_complete_and_koshigaya_is_next
     ):
         assert by_code[code]["status"] == "reviewed_complete"
 
-    assert queue["summary"]["reviewed_complete_count"] == 44
+    assert queue["summary"]["reviewed_complete_count"] == 45
     assert queue["summary"]["review_in_progress_count"] == 0
-    assert queue["summary"]["pending_record_review_count"] == 23
-    assert queue["summary"]["next_official_code"] == "282030"
+    assert queue["summary"]["pending_record_review_count"] == 22
+    assert queue["summary"]["next_official_code"] == "282049"
     assert by_code["122041"]["status"] == "reviewed_complete"
