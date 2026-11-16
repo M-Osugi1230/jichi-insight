@@ -1,0 +1,61 @@
+{
+  "completed_at": "2026-11-17",
+  "completion_boundary": "佐賀市のPhase 15 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味し、所有者（大杉邑大、単独運用体制）が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが佐賀市公式サイトの一次資料で検証した結論に基づく（所有者本人が一次資料を直接レビューしたものではない）。佐賀市の計画体系（第3次佐賀市総合計画は、基本構想（2025年度〜2040年度・16年間）、基本計画（前期2025年度〜2032年度・後期2033年度〜2040年度の各8年間）、実施計画としての総合戦略（佐賀市未来共創プラン（地方版総合戦略）、概ね4年間・現行は令和7年4月〜令和11年3月）の3層で構成される。基本構想は将来像『佐賀らしさでみんなが上を向くまち』を掲げ、基本計画は横断的な視点（主体性・多様性・持続性・柔軟性・国際性の5つ）の下に10分野の目指す姿を示す。分野レベルの体系は保持したが、分野ごとの目指す姿・主なポイントの全件列挙は行わず、追加depthとして保持する。進行管理は、行政評価（未来共創プランに位置付けられた施策・重点事業評価と市民意向調査）により行う。各層の期間を別period semanticsとして保持し、period_statusはPhase 14インベントリどおりverified_fixed_periodを保持する。現行計画に先立つ第2次佐賀市総合計画（2015年度〜2024年度）からの移行は移行記録として分離して保持する）、成立したFY2026一般会計当初予算（119,800,000千円。第1号議案『令和8年度佐賀市一般会計予算』の議決結果は、市議会公式『さが市議会だより第94号（令和8年2月定例会）』の議案等の審議結果で「原案可決」と直接確認し、その文言のまま記録した。議決日は2026年3月24日。金額は『令和8年度当初予算の概要』（令和8年3月24日）の一般会計歳入・歳出の款別表で合計119,800百万円と確認した。同議案には議員提出の修正案（プロスポーツチーム連携事業の減額により総額を119,749,911千円とする案）が提出されたが、修正案は否決され原案が可決されたため、成立額は原案の119,800,000千円である。公表精度は千円単位のため、その精度（千円単位）のまま記録し、円単位を合成していない）、FY2024一般会計決算の円単位総額（歳入118,510,118,104円・歳出116,749,721,609円、歳入歳出差引額（形式収支）1,760,396,495円が監査委員の決算審査意見書の一般会計歳入・歳出決算表の印字値と検算一致することを確認した）を一次資料で確認した。決算の認定である第60号議案は、令和7年8月定例会で認定されたことを市議会公式『さが市議会だより第91号（令和7年8月定例会）』の議案等の審議結果で確認し、認定の事実をそのまま記録した（議決日は2025年9月16日。会期最終日であり、各常任委員会の審査報告書も同日付であることから特定したもので、本会議録による最終確認は未実施であり、残存事項として保持する）。実質収支額は1,161,595千円（決算審査意見書の一般・特別会計歳入歳出決算額総括表に千円単位で印字された公表値であり、千円単位のまま記録する）である。決算カード・財政状況資料集等の普通会計ベースの集計値（歳入118,508,922千円等）は一般会計とは集計範囲が異なるため使用していない。FY2024は旧計画（第2次佐賀市総合計画）の最終年度の決算で計画の版は現行計画と異なるため、決算総額と旧計画の施策体系との総額レベルの対応付けは公式資料に示されておらず、接続はnot_assessableのまま保持する。予算・決算の事項別明細書の款別合計との最終突合、決算書の実質収支に関する調書そのものの値との突合は未実施であり、残存事項として保持する。",
+  "completion_depth": "declared_review_package_v1",
+  "deferred_depth": [
+    {
+      "boundary": "基本計画10分野ごとの目指す姿・主なポイントの全件列挙と、未来共創プランの重点事業・KPIの個別進捗、行政評価結果との対応付けは追加depthとし、公式対応が確認できるまで昇格しない。分野レベルの体系自体は候補に保持するが、施策・事業単位の対応付けは行わない。",
+      "id": "current-plan-granular-kpi-and-project-linkage",
+      "status": "deferred_not_required_for_v1_completion"
+    },
+    {
+      "boundary": "FY2026当初予算の金額（119,800,000千円）と議決結果の文言（原案可決・議決日2026年3月24日）は一次資料で確認し候補に反映している。FY2024決算の歳入・歳出・形式収支は決算審査意見書で確認し、実質収支は同審査意見書の総括表（千円単位）で確認し、認定議案の認定も議決結果資料で確認して候補に反映している。一方、予算・決算の事項別明細書の款別合計との最終突合、決算書の実質収支に関する調書そのものの値との突合、認定の議決日（2025年9月16日）の本会議録による最終確認は未実施のまま保持する。",
+      "id": "fiscal-detail-reconciliation",
+      "status": "deferred_not_required_for_v1_completion"
+    },
+    {
+      "boundary": "旧計画（第2次佐賀市総合計画）の施策体系の全件列挙と旧計画期間の評価結果は本候補では保持しない。旧計画と現行計画（第3次佐賀市総合計画）の期間と版の分離のみを保持し、一方を他方で上書きしない。",
+      "id": "plan-transition-version-depth",
+      "status": "deferred_not_required_for_v1_completion"
+    },
+    {
+      "boundary": "佐賀市の総合計画・進行管理・財政等のステージングは政策効果の因果認定や他都市比較可能性を意味しない。進行管理（自治体の行政評価の仕組み）をJichi Insight独自の達成判定へ変換しない。",
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion"
+    }
+  ],
+  "id": "saga-phase15-completion",
+  "name_ja": "佐賀市",
+  "official_code": "412015",
+  "phase": 15,
+  "quality_gate": {
+    "budget_enactment_state_preserved": true,
+    "current_plan_period_reviewed": true,
+    "current_plan_policy_structure_reviewed": true,
+    "declared_package_schema_validated": true,
+    "fiscal_states_and_years_separate": true,
+    "implementation_plan_layer_reviewed": true,
+    "individual_implementation_items_not_overpromoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "no_independent_policy_achievement_promoted": true,
+    "official_source_lineage_preserved": true,
+    "regression_suite_required_before_merge": true,
+    "settlement_linkage_not_assessable_preserved": true
+  },
+  "review_package": {
+    "counts": {
+      "basic_goals": 10,
+      "basic_plan_measures": 0,
+      "fiscal_top_line_records": 3,
+      "promoted_implementation_item_actual_records": 0
+    },
+    "fiscal_evidence_path": "data/reviewed/saga-city/evidence_packets.json",
+    "fiscal_records_path": "data/reviewed/saga-city/fiscal_records.json",
+    "plan_review_path": "data/reviewed/saga-city/plan_review.json",
+    "policy_structure_path": "data/catalog/saga_current_policy_structure.json",
+    "progress_review_path": "data/catalog/saga_current_progress_review_summary.json",
+    "source_catalog_path": "data/catalog/saga_phase15_sources.json"
+  },
+  "status": "reviewed_complete"
+}

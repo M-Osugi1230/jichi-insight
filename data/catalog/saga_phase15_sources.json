@@ -1,0 +1,55 @@
+{
+  "id": "saga-phase15-sources",
+  "name_ja": "佐賀市",
+  "official_code": "412015",
+  "phase": 15,
+  "quality_boundary": "Current plan identity kept as published (the Third Saga City Comprehensive Plan: the basic concept (FY2025-FY2040, sixteen years), the basic plan (first period FY2025-FY2032; second period FY2033-FY2040) and the comprehensive strategy as the implementation plan (the Saga City Future Co-Creation Plan, roughly four years, currently April 2025 to March 2029), with the future vision 『佐賀らしさでみんなが上を向くまち』, five cross-cutting viewpoints and ten fields; the field-level structure is kept and the full enumeration of each field's intended state and main points stays deferred depth; the period status stays verified_fixed_period; the previous plan (the Second Saga City Comprehensive Plan, FY2015-FY2024) is kept separate as a plan transition and its results are never read forward into the current plan), progress governance (the administrative evaluation — evaluation of policies and priority projects under the future co-creation plan and the citizen opinion survey — kept as the municipality's own progress-management framework), budget enactment kept as printed in the council newsletter's official deliberation results (bill No. 1; the result wording is 原案可決 (adopted as proposed), kept verbatim; vote date 2026-03-24; a member-submitted amendment was rejected and the original bill adopted) and the amount kept at the published sen-yen precision (119,800,000 thousand yen, confirmed in the section tables of the FY2026 initial budget overview, and never expanded into synthetic finer amounts), and settlement totals kept at the yen precision printed in the audit committee's settlement review opinion (revenue 118,510,118,104 yen / expenditure 116,749,721,609 yen; the formal balance of 1,760,396,495 yen checks out; the real balance of 1,161,595 thousand yen is kept at the thousand-yen precision printed in the opinion's summary table; the settlement certification, bill No. 60, was certified, with the vote date 2025-09-16 identified from the session's final day and the standing committees' review report dates and final confirmation in the plenary minutes still outstanding; ordinary-account aggregate figures are not used, because their aggregation scope differs from the general account) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "reviewed_at": "2026-11-17",
+  "sources": [
+    {
+      "evidence_location": "市の総合計画ページから第3次佐賀市総合計画の計画書（第1章：序論・第2章：人口ビジョン・第3章：2040年に目指す姿（基本構想）・第4章：各分野の目指す姿（基本計画）・資料編）を取得し、基本構想（2025年度〜2040年度・16年間）・基本計画（前期2025年度〜2032年度・後期2033年度〜2040年度）・総合戦略（概ね4年間）の構成、将来像「佐賀らしさでみんなが上を向くまち」、基本計画10分野と横断的な視点5つを計画書で直接確認した",
+      "evidence_role": "comprehensive_plan",
+      "format": "html",
+      "id": "saga-third-plan",
+      "official_url": "https://www.city.saga.lg.jp/shisei/sagashioshiru/2/2/585.html",
+      "title": "第3次佐賀市総合計画を策定しました。",
+      "use_boundary": "第3次佐賀市総合計画をcurrent versionとして保持し、旧計画（第2次佐賀市総合計画）期間の実績をcurrent actualへ流用しない"
+    },
+    {
+      "evidence_location": "佐賀市未来共創プラン（地方版総合戦略）の位置付けと期間（令和7年4月〜令和11年3月までの4年間、第3次佐賀市総合計画の実施計画であり地方版総合戦略を兼ねる）を市の総合戦略ページで確認した",
+      "evidence_role": "implementation_plan",
+      "format": "html",
+      "id": "saga-future-co-creation",
+      "official_url": "https://www.city.saga.lg.jp/shisei/sagashioshiru/2/3/586.html",
+      "title": "佐賀市未来共創プラン（地方版総合戦略）",
+      "use_boundary": "未来共創プランは基本構想の長期periodとは別の実施層として保持し、重点事業の個別進捗を計画全体の達成へ読み替えない"
+    },
+    {
+      "evidence_location": "行政評価の体系（未来共創プランに沿った施策・重点事業評価、市民への公表、まち・ひと・しごと創生推進会議への意見聴取、市民意向調査）を市の行政評価ページで確認した",
+      "evidence_role": "annual_progress",
+      "format": "html",
+      "id": "saga-administrative-evaluation",
+      "official_url": "https://www.city.saga.lg.jp/shisei/gyoseiunei/3/1841.html",
+      "title": "行政評価について",
+      "use_boundary": "行政評価の枠組みを保持し、自治体の指標・評価結果をJichi Insight独自の達成度やランキングへ変換しない"
+    },
+    {
+      "evidence_location": "市の令和8年度当初予算ページから『令和8年度当初予算の概要』（令和8年3月24日）を取得し、一般会計歳入・歳出の款別表で合計119,800百万円（119,800,000千円）を直接確認した。議決結果は市議会公式『さが市議会だより第94号（令和8年2月定例会）』で第1号議案「原案可決」（2026年3月24日議決）を直接確認した。議員提出の修正案は否決され原案が可決された",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "saga-budget-2026",
+      "official_url": "https://www.city.saga.lg.jp/shisei/gyoseiunei/5/1/6/6810.html",
+      "title": "令和8年度当初予算の概要",
+      "use_boundary": "FY2026当初予算は補正予算・決算と別stateで保持する。金額は千円単位の公表値であり、円単位を合成しない"
+    },
+    {
+      "evidence_location": "Phase 14出典目録におけるFY2024決算の公式入口。同ページが案内する決算カード・財政状況資料集はいずれも普通会計ベースの資料であるため一般会計の値として使用せず、一般会計の決算額は佐賀市監査委員の決算審査意見書（令和7年度佐賀市歳入歳出決算及び基金運用状況審査意見書）の一般会計歳入・歳出決算表で歳入118,510,118,104円・歳出116,749,721,609円（いずれも円単位）を直接確認し、差引（形式収支）1,760,396,495円が検算一致することを確認した。実質収支は同審査意見書の総括表（千円単位）で1,161,595千円を確認した。認定議案は市議会公式のさが市議会だより第91号（令和7年8月定例会）で第60号議案「認定」（2025年9月16日議決）と確認した",
+      "evidence_role": "settlement",
+      "format": "html",
+      "id": "saga-settlement-2024",
+      "official_url": "https://www.city.saga.lg.jp/shisei/gyoseiunei/5/2/1484.html",
+      "title": "令和6年度の財政状況（決算）",
+      "use_boundary": "FY2024決算は予算・補正と別stateで保持する。歳入・歳出は決算審査意見書に円単位で印字された値をそのまま記録し、実質収支は千円単位の公表値のまま記録する。決算カード・財政状況資料集等の普通会計ベースの集計値と一般会計値を混同しない。FY2024決算は旧計画期間の決算であり、現行計画の実績へ読み替えない"
+    }
+  ]
+}

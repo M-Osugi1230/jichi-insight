@@ -353,7 +353,7 @@ def test_kofu_and_previous_twenty_five_are_reviewed_complete_and_nagano_is_next(
     ):
         assert by_code[code]["status"] == "reviewed_complete"
 
-    assert queue["summary"]["reviewed_complete_count"] == 60
+    assert queue["summary"]["reviewed_complete_count"] == 61
     assert queue["summary"]["review_in_progress_count"] == 0
-    assert queue["summary"]["pending_record_review_count"] == 7
-    assert queue["summary"]["next_official_code"] == "412015"
+    assert queue["summary"]["pending_record_review_count"] == 6
+    assert queue["summary"]["next_official_code"] == "422010"
