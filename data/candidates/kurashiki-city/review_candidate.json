@@ -1,0 +1,543 @@
+{
+ "candidate_id": "kurashiki-phase15-review-candidate",
+ "candidate_package": {
+  "evidence_packets": [
+   {
+    "claims": [
+     {
+      "decision": "needs_review",
+      "field": "amount_yen",
+      "location_note": "財政課『令和8年度当初予算（案）の概要』の「2 会計別予算」表（単位：千円）で一般会計222,767,966千円を確認した。議決結果は市議会公式『令和8年第3回倉敷市議会（第1回定例会）議案一覧』の議案第26号の記載『原案可決』（令和8年3月18日）で直接確認し、成立額は令和8年度6月補正予算の概要の「補正前の額」とも一致する",
+      "review_note": "当初予算の概要と議案一覧、補正予算の概要から一般会計当初予算の総額と議決を確認したステージング。人間による確認待ちステージング。",
+      "source_ids": [
+       "kurashiki-budget-2026"
+      ],
+      "statement": "令和8年度一般会計当初予算は222,767,966千円であり、成立した予算である。金額は財政課『令和8年度当初予算（案）の概要』の「2 会計別予算」表（単位：千円）で確認し、議決は市議会公式『令和8年第3回倉敷市議会（第1回定例会）議案一覧』の議案第26号『令和8年度倉敷市一般会計予算』（令和8年2月18日上程）の記載で確認した。議決結果の文言は一次資料の表記どおり『原案可決』である（2026年3月18日議決）。同概要は予算案段階の文書であるが、原案可決と令和8年度6月補正予算の概要の「補正前の額」（222,767,966千円）により成立額として確認した。公表精度は千円単位のため千円精度のまま記録する。"
+     }
+    ],
+    "id": "evidence-kurashiki-city-2026-total-expenditure",
+    "open_questions": [
+     "予算に関する説明書（事項別明細書）の款別合計との最終突合。"
+    ],
+    "review_status": "needs_review",
+    "subject_id": "jp-local-332020-fiscal-2026-total-expenditure",
+    "subject_type": "fiscal_record"
+   },
+   {
+    "claims": [
+     {
+      "decision": "needs_review",
+      "field": "amount_yen",
+      "location_note": "監査委員『令和6年度倉敷市決算審査意見書』の決算審査資料第1表『令和6年度歳入歳出決算総括表』（単位：円）で歳入総額232,345,729,550円を確認した。認定は市議会公式『令和7年第5回倉敷市議会（第3回定例会）議案一覧』の議案第135号の記載『認定』（令和7年9月24日）で直接確認した",
+      "review_note": "監査委員の決算審査意見書から一般会計歳入総額を円単位で抽出し、議案一覧で議案第135号の認定を直接確認したステージング。人間による確認待ちステージング。",
+      "source_ids": [
+       "kurashiki-settlement-2024"
+      ],
+      "statement": "令和6年度一般会計決算の歳入総額は232,345,729,550円である（監査委員『令和6年度倉敷市決算審査意見書（一般会計・特別会計・基金の運用状況・財産区会計）』の決算審査資料第1表による。円単位の公表値のまま記録する）。当該決算は議案第135号『令和6年度倉敷市一般会計歳入歳出決算の認定について』として市議会に提出され、令和7年第5回定例会で2025年9月24日に認定の議決が行われた（市議会公式『議案一覧』の結果欄の文言は『認定』）。"
+     }
+    ],
+    "id": "evidence-kurashiki-city-2024-total-revenue",
+    "open_questions": [
+     "決算書（歳入歳出決算事項別明細書）の款別合計との最終突合。",
+     "監査委員の決算審査意見書の内容（個別の指摘事項等）の精査。"
+    ],
+    "review_status": "needs_review",
+    "subject_id": "jp-local-332020-fiscal-2024-total-revenue",
+    "subject_type": "fiscal_record"
+   },
+   {
+    "claims": [
+     {
+      "decision": "needs_review",
+      "field": "amount_yen",
+      "location_note": "同資料第1表で歳出総額225,142,008,893円と差引7,203,720,657円を確認した。実質収支5,803,653,066円は同資料第2表『決算収支状況表』による（差引7,203,720,657円－翌年度へ繰り越すべき財源1,400,067,591円）",
+      "review_note": "監査委員の決算審査意見書から一般会計歳出総額を円単位で抽出し、歳入総額との差引と実質収支が検算一致することを確認したステージング。人間による確認待ちステージング。",
+      "source_ids": [
+       "kurashiki-settlement-2024"
+      ],
+      "statement": "令和6年度一般会計決算の歳出総額は225,142,008,893円である（同資料による。円単位の公表値のまま記録する）。歳入総額232,345,729,550円との差引は7,203,720,657円で同表の記載と検算一致する。実質収支は5,803,653,066円であり（差引7,203,720,657円－翌年度へ繰り越すべき財源1,400,067,591円）、決算審査資料第2表『決算収支状況表』（実質収支に関する調書に相当する表）の円単位の公表値のまま記録する。"
+     }
+    ],
+    "id": "evidence-kurashiki-city-2024-total-expenditure",
+    "open_questions": [
+     "決算書（歳入歳出決算事項別明細書）の款別合計との最終突合。"
+    ],
+    "review_status": "needs_review",
+    "subject_id": "jp-local-332020-fiscal-2024-total-expenditure",
+    "subject_type": "fiscal_record"
+   }
+  ],
+  "fiscal_records": [
+   {
+    "account_type": "general",
+    "amount_yen": 222767966000,
+    "confidence": "medium",
+    "fiscal_year": 2026,
+    "id": "jp-local-332020-fiscal-2026-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算総額",
+    "municipality_id": "jp-local-332020",
+    "note": "倉敷市の令和8年度一般会計当初予算総額222,767,966千円。財政課『令和8年度当初予算（案）の概要』の「2 会計別予算」表（単位：千円）に一般会計222,767,966千円と印字されている。同概要は予算案段階の文書であるが、市議会公式『令和8年第3回倉敷市議会（第1回定例会）議案一覧』は議案第26号『令和8年度倉敷市一般会計予算』（令和8年2月18日上程）の結果を『原案可決』（令和8年3月18日）と記載しており、令和8年度6月補正予算の概要でも一般会計の「補正前の額」が222,767,966千円と一致するため、成立した当初予算額として確認した。議決結果の文言は一次資料の表記どおり『原案可決』である。公表精度は千円単位であり、その精度のまま記録し円単位を合成していない（広報特集ページの2,227億6,800万円は万円単位の概数表示のため精密値の根拠には使わない）。補正予算や決算とは別stateで扱う。",
+    "period_end": "2027-03-31",
+    "period_start": "2026-04-01",
+    "review_status": "needs_review",
+    "sources": [
+     "kurashiki-budget-2026"
+    ],
+    "stage": "initial_budget",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+   },
+   {
+    "account_type": "general",
+    "amount_yen": 232345729550,
+    "confidence": "medium",
+    "fiscal_year": 2024,
+    "id": "jp-local-332020-fiscal-2024-total-revenue",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入額",
+    "municipality_id": "jp-local-332020",
+    "note": "監査委員『令和6年度倉敷市決算審査意見書（一般会計・特別会計・基金の運用状況・財産区会計）』の決算審査資料第1表『令和6年度歳入歳出決算総括表』（単位：円）に示された一般会計の歳入決算額232,345,729,550円（円単位の公表値のまま記録）。同審査意見書の決算総括表（単位：千円）の歳入232,345,729千円とも整合する。当該決算は議案第135号『令和6年度倉敷市一般会計歳入歳出決算の認定について』として市議会に提出され、令和7年第5回定例会（9月）で2025年9月24日に認定の議決が行われた（市議会公式『議案一覧』の結果欄の文言は『認定』）。財政状況資料集の総括表の値（歳入総額232,438,069千円）は普通会計（一般会計等）ベースであり一般会計値とは別のため使用していない。FY2024は現行の倉敷市第七次総合計画（2021年度～2030年度）の期間内の決算である。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "needs_review",
+    "sources": [
+     "kurashiki-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+   },
+   {
+    "account_type": "general",
+    "amount_yen": 225142008893,
+    "confidence": "medium",
+    "fiscal_year": 2024,
+    "id": "jp-local-332020-fiscal-2024-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出額",
+    "municipality_id": "jp-local-332020",
+    "note": "同じく決算審査資料第1表に示された一般会計の歳出決算額225,142,008,893円（円単位の公表値のまま記録）。歳入総額232,345,729,550円との差引（形式収支）は7,203,720,657円で同表の記載と検算一致する。実質収支は5,803,653,066円である（形式収支7,203,720,657円－翌年度へ繰り越すべき財源1,400,067,591円＝5,803,653,066円で検算一致。決算審査資料第2表『決算収支状況表』による）。実質収支も円単位の公表値のまま記録する。なお監査委員『令和6年度倉敷市健全化判断比率及び資金不足比率審査意見書』の実質収支額（一般会計5,807,097千円）は財政健全化法に基づく算定値であり決算収支状況表（実質収支に関する調書に相当する表）の値とは算定が異なるため、ここでは決算収支状況表の値を保持する。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "needs_review",
+    "sources": [
+     "kurashiki-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+   }
+  ],
+  "plan_review": {
+   "id": "phase15-kurashiki-plan-review",
+   "name_ja": "倉敷市",
+   "official_code": "332020",
+   "records": [
+    {
+     "decision": "needs_review",
+     "evidence_location": "計画の構成と各層の期間は市公式『総合計画』ページと計画本編の第1章『策定にあたって』で直接確認した（基本構想・基本計画・実施計画で構成し、基本構想及び基本計画の期間は令和3年度（2021年度）から令和12年度（2030年度）までの10年間、実施計画はPDCAサイクルにより毎年度見直し）。将来像と政策体系は第2章『基本構想』で確認した",
+     "evidence_role": "current_plan_identity",
+     "id": "kurashiki-current-plan-period",
+     "review_note": "総合計画の構成（基本構想・基本計画・実施計画）と各層の期間を別period semanticsとして保持した。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.kurashiki.okayama.jp/cityinfo/plan/1011783/1002083.html",
+     "statement": "倉敷市の現行総合計画は倉敷市第七次総合計画であり、市の最上位計画として令和3年度（2021年度）から令和12年度（2030年度）までの10年間のまちづくりの指針を示す。構成は第1章『策定にあたって』（倉敷みらい創生人口ビジョンを含む）、第2章『基本構想』、第3章『基本計画』、第4章『第2期倉敷みらい創生戦略』、資料編からなる。第1章によれば、本計画は基本構想・基本計画・実施計画で構成し、基本構想及び基本計画の期間は2021年度から2030年度までの10年間とし、実施計画はPDCAサイクルにより毎年度見直しを行う。基本計画のうち地方創生に関する取組は『倉敷みらい創生戦略』として位置づけられ、第4章はその第2期である。各層の期間を別period semanticsとして保持し、一律の固定期間へ潰さない。Phase 14インベントリのperiod_statusはverified_fixed_periodである。",
+     "title": "倉敷市第七次総合計画の構成（基本構想・基本計画2021年度～2030年度・実施計画は毎年度見直し）",
+     "value": "倉敷市第七次総合計画は基本構想・基本計画2021年度～2030年度（10年）／実施計画はPDCAサイクルにより毎年度見直し／FY2024決算は現行計画期間内の決算"
+    },
+    {
+     "decision": "needs_review",
+     "evidence_location": "基本構想（第2章）本編で将来像と5分野・44のめざすまちの姿の全件を直接確認した",
+     "evidence_role": "policy_structure",
+     "id": "kurashiki-current-policy-structure",
+     "review_note": "基本構想の政策体系（5分野・44のめざすまちの姿）を政策単位で保持した。基本計画の市の施策・基本方針・まちづくり指標単位の対応付けは行わない。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.kurashiki.okayama.jp/cityinfo/plan/1011783/1002083.html",
+     "statement": "基本構想は、将来像『豊かな自然と紡がれた歴史・文化を次代へ繋ぎ 人と人との絆と慈しみの心で地域を結ぶまち倉敷』のもとに、5つの分野と44のめざすまちの姿を体系付ける。分野1『子ども・子育て・教育』（象徴〈慈〉いつくしむ）は9件（1-1～1-9）。分野2『文化・産業』（〈紡〉つむぐ）は8件（2-1～2-8）。分野3『生活環境・防災・都市基盤』（〈繋〉つなぐ）は12件（3-1～3-12）。分野4『保健・医療・福祉』（〈結〉むすぶ）は8件（4-1～4-8）。分野5『SDGs・市民協働・コミュニティ・行財政』（〈絆〉きずな）は7件（5-1～5-7）であり、合計44件である。基本計画はこの体系のもとで市の施策・基本方針・まちづくり指標を明らかにするが、施策・指標単位の全件列挙と対応付けは本候補では行わない。",
+     "title": "基本構想の政策体系（5分野・44のめざすまちの姿）"
+    },
+    {
+     "decision": "needs_review",
+     "evidence_location": "実施計画の毎年度見直しは計画本編の第1章で確認し、行政評価は市公式『令和7年度行政評価結果』ページ（令和7年度行政評価結果報告書と第七次総合計画『まちづくり指標』市民アンケート調査結果報告書の掲載）で確認した",
+     "evidence_role": "progress_governance",
+     "id": "kurashiki-progress-governance-framework",
+     "review_note": "進行管理の枠組み（実施計画の毎年度見直しと行政評価）を年度実績へ読み替えず保持した。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.kurashiki.okayama.jp/cityinfo/plan/1002154/1002161/1021963.html",
+     "statement": "倉敷市第七次総合計画の進行管理は、実施計画をPDCAサイクルにより毎年度見直す自治体の枠組みと、毎年度の行政評価による。令和7年度行政評価では、第七次総合計画の施策評価と、その基礎データとなる総合計画『まちづくり指標』市民アンケート調査が実施され、令和7年度行政評価結果報告書（令和7年10月）が公表されている。自治体の評価・進捗公表をJichi Insight独自の達成判定へ変換しない。",
+     "title": "計画の進行管理（実施計画の毎年度見直しと行政評価）"
+    },
+    {
+     "decision": "needs_review",
+     "evidence_location": "現行計画の開始年度は計画本編の第1章で確認した。次期計画の策定状況は計画ページ等の公表範囲で確認できなかった",
+     "evidence_role": "plan_transition",
+     "id": "kurashiki-plan-transition",
+     "review_note": "計画の版の履歴として、現行計画の開始と次期計画の未確認状態を分離記録した。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.kurashiki.okayama.jp/cityinfo/plan/1011783/1002083.html",
+     "statement": "現行の倉敷市第七次総合計画は2021年度に開始した。前計画（第六次総合計画）の政策体系・事業・評価の全件列挙は本候補では行わない。基本構想・基本計画の終期は2030年度であり、次期（第八次）総合計画の策定状況は本候補の調査範囲では公式資料で確認できなかったため未確認として保持する。FY2024決算は現行計画の期間内の決算であり、計画の版の相違による接続の制約はない。",
+     "title": "現行計画の開始と次期計画の策定状況"
+    },
+    {
+     "decision": "not_assessable",
+     "evidence_location": "決算総額は監査委員の決算審査意見書、計画の期間は計画ページ・計画本編で確認した。総額レベルの対応付けの不存在は、決算・計画の公表範囲で確認した",
+     "evidence_role": "annual_progress",
+     "fiscal_year": 2024,
+     "id": "kurashiki-fy2024-settlement-linkage",
+     "review_note": "計画の版は同一であるが、総額レベルの対応付けがないため接続しないことを明記した。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.kurashiki.okayama.jp/cityinfo/finance/1011779/1010784.html",
+     "statement": "FY2024決算は現行の倉敷市第七次総合計画（2021年度～2030年度）の期間内の決算であり、計画の版は現行と同一である。決算総額（円単位）は一次資料で確認済みであるが、決算総額と計画の分野・めざすまちの姿との総額レベルの対応付けは公式資料にないため、接続はnot_assessableとし、決算値を計画のcurrent actualへ流用しない。なお議案第135号は2025年9月24日に認定されており、接続判定は認定結果に依存しない。",
+     "title": "令和6年度決算と総合計画の政策体系の接続"
+    }
+   ],
+   "review_status": "pending_record_review"
+  },
+  "policy_structure": {
+   "current_plan": {
+    "end_fiscal_year": 2030,
+    "management_principles": [
+     "総合計画は倉敷市第七次総合計画であり、基本構想・基本計画・実施計画で構成する。基本構想及び基本計画の期間は令和3年度（2021年度）から令和12年度（2030年度）までの10年間、実施計画はPDCAサイクルにより毎年度見直す。各層の期間を別period semanticsとして保持し、一律の固定期間modelへ潰さない（period_statusはPhase 14インベントリどおりverified_fixed_period）",
+     "基本構想は将来像『豊かな自然と紡がれた歴史・文化を次代へ繋ぎ 人と人との絆と慈しみの心で地域を結ぶまち倉敷』のもとに5つの分野・44のめざすまちの姿を置く。基本計画の市の施策・基本方針・まちづくり指標の全件列挙は本候補では行わず、追加depthとして保持する",
+     "進行管理は、実施計画をPDCAサイクルにより毎年度見直す自治体の枠組みと、毎年度の行政評価（第七次総合計画の施策評価と『まちづくり指標』市民アンケート）による。自治体の評価・進捗公表をJichi Insight独自の達成判定へ変換しない",
+     "FY2024決算は現行計画期間内（2021年度～2030年度）の決算であり計画の版は同一である。決算総額（円単位）は一次資料で確認済みであるが、決算総額と政策体系との総額レベルの対応付けは公式資料にないため、決算値を計画のcurrent actualへ流用しない"
+    ],
+    "period_status": "verified_fixed_period",
+    "policy_fields": [
+     {
+      "id": "field-1",
+      "measures": [],
+      "name_ja": "子ども・子育て・教育：1-1 だれもがその人らしさ（個性）を尊重され、幸せに暮らしていくことができている"
+     },
+     {
+      "id": "field-2",
+      "measures": [],
+      "name_ja": "子ども・子育て・教育：1-2 人の痛みを、子どもたちが実感としてわかっている"
+     },
+     {
+      "id": "field-3",
+      "measures": [],
+      "name_ja": "子ども・子育て・教育：1-3 教員の資質が保たれ、教員と子どもが心豊かな人間関係を築き、学校教育が充実している"
+     },
+     {
+      "id": "field-4",
+      "measures": [],
+      "name_ja": "子ども・子育て・教育：1-4 子どもたちが自然にふれながら、健やかに育っている"
+     },
+     {
+      "id": "field-5",
+      "measures": [],
+      "name_ja": "子ども・子育て・教育：1-5 安心できる環境のもとで出産・子育てができている"
+     },
+     {
+      "id": "field-6",
+      "measures": [],
+      "name_ja": "子ども・子育て・教育：1-6 仕事と家庭の両立ができ、親が子どもとふれあう時間をもつことができている"
+     },
+     {
+      "id": "field-7",
+      "measures": [],
+      "name_ja": "子ども・子育て・教育：1-7 学校・園、地域、家庭が連携して、子どもたちが困窮することなく、安心して学び、成長できる環境となっている"
+     },
+     {
+      "id": "field-8",
+      "measures": [],
+      "name_ja": "子ども・子育て・教育：1-8 障がいの有無にかかわらず、等しく保育・教育を受けることができている"
+     },
+     {
+      "id": "field-9",
+      "measures": [],
+      "name_ja": "子ども・子育て・教育：1-9 興味があることを、だれもが、気軽に学ぶことができている"
+     },
+     {
+      "id": "field-10",
+      "measures": [],
+      "name_ja": "文化・産業：2-1 生活の中に個性的で魅力的な文化芸術が息づいている"
+     },
+     {
+      "id": "field-11",
+      "measures": [],
+      "name_ja": "文化・産業：2-2 世代を超えて受け継がれてきた歴史文化や伝統が大切に継承され、輝いている"
+     },
+     {
+      "id": "field-12",
+      "measures": [],
+      "name_ja": "文化・産業：2-3 生活の中で、日常的かつ気軽にスポーツに親しむことができている"
+     },
+     {
+      "id": "field-13",
+      "measures": [],
+      "name_ja": "文化・産業：2-4 心に充足感やゆとりをもち、家庭と仕事の調和がとれている"
+     },
+     {
+      "id": "field-14",
+      "measures": [],
+      "name_ja": "文化・産業：2-5 産業競争力が高く、多様な人材が働く機会に恵まれ、将来の暮らしに希望をもつことができている"
+     },
+     {
+      "id": "field-15",
+      "measures": [],
+      "name_ja": "文化・産業：2-6 商業の活性化が地域に活力を生み、時代の流れに対応したビジネスの創出や起業が進んでいる"
+     },
+     {
+      "id": "field-16",
+      "measures": [],
+      "name_ja": "文化・産業：2-7 将来にわたり持続可能な魅力ある農業や漁業が営まれている"
+     },
+     {
+      "id": "field-17",
+      "measures": [],
+      "name_ja": "文化・産業：2-8 倉敷の魅力を国内外にＰＲし、たくさんの人が訪れるようになっている"
+     },
+     {
+      "id": "field-18",
+      "measures": [],
+      "name_ja": "生活環境・防災・都市基盤：3-1 自然環境が守られ、環境と経済・社会とのバランスが保たれている"
+     },
+     {
+      "id": "field-19",
+      "measures": [],
+      "name_ja": "生活環境・防災・都市基盤：3-2 水と空気と大地がきれいで、環境負荷の少ないまちがつくられている"
+     },
+     {
+      "id": "field-20",
+      "measures": [],
+      "name_ja": "生活環境・防災・都市基盤：3-3 リデュース（ごみの発生抑制）、リユース（再使用）、リサイクル（ごみの再生利用）が徹底され、環境に配慮した循環型社会が形成されている"
+     },
+     {
+      "id": "field-21",
+      "measures": [],
+      "name_ja": "生活環境・防災・都市基盤：3-4 脱炭素社会の実現に向け、だれもが地球温暖化対策を推進している"
+     },
+     {
+      "id": "field-22",
+      "measures": [],
+      "name_ja": "生活環境・防災・都市基盤：3-5 行政と市民、企業などが連携し、防災・減災対策や感染症対策などを積極的に進めるとともに、だれもが命を守る意識をもっている"
+     },
+     {
+      "id": "field-23",
+      "measures": [],
+      "name_ja": "生活環境・防災・都市基盤：3-6 常に安全でおいしい水が届き、安心して暮らすことができている"
+     },
+     {
+      "id": "field-24",
+      "measures": [],
+      "name_ja": "生活環境・防災・都市基盤：3-7 だれもが安全で快適に移動できる道路環境となっている"
+     },
+     {
+      "id": "field-25",
+      "measures": [],
+      "name_ja": "生活環境・防災・都市基盤：3-8 市中心部の拠点性が高まるとともに、各地域・地区の中心部の利便性が向上するまちづくりが行われている"
+     },
+     {
+      "id": "field-26",
+      "measures": [],
+      "name_ja": "生活環境・防災・都市基盤：3-9 便利に公共交通が利用でき、その周辺に住まいや生活に必要な施設が集まっている"
+     },
+     {
+      "id": "field-27",
+      "measures": [],
+      "name_ja": "生活環境・防災・都市基盤：3-10 地域の特色が生かされ、自然と調和した、だれもが住みやすい生活環境となっている"
+     },
+     {
+      "id": "field-28",
+      "measures": [],
+      "name_ja": "生活環境・防災・都市基盤：3-11 先人から受け継いだ歴史的・魅力的な景観が、市内各地で守られている"
+     },
+     {
+      "id": "field-29",
+      "measures": [],
+      "name_ja": "生活環境・防災・都市基盤：3-12 犯罪が少なく、安心して暮らしている"
+     },
+     {
+      "id": "field-30",
+      "measures": [],
+      "name_ja": "保健・医療・福祉：4-1 だれもが自分の健康に関心をもち、健康づくりに自ら取り組んでいる"
+     },
+     {
+      "id": "field-31",
+      "measures": [],
+      "name_ja": "保健・医療・福祉：4-2 豊かな自然の恵みにより食べ物がおいしく、健全な食生活が実現されている"
+     },
+     {
+      "id": "field-32",
+      "measures": [],
+      "name_ja": "保健・医療・福祉：4-3 市内のどこに住んでいても、だれもが安心して、医療を受けられている"
+     },
+     {
+      "id": "field-33",
+      "measures": [],
+      "name_ja": "保健・医療・福祉：4-4 障がい者が積極的に社会参加でき、地域の人と安心してともに暮らせるようになっている"
+     },
+     {
+      "id": "field-34",
+      "measures": [],
+      "name_ja": "保健・医療・福祉：4-5 様々な事情により困窮している人が、自立できるよう地域で支え合っている"
+     },
+     {
+      "id": "field-35",
+      "measures": [],
+      "name_ja": "保健・医療・福祉：4-6 高齢者が地域で安心して暮らすことができている"
+     },
+     {
+      "id": "field-36",
+      "measures": [],
+      "name_ja": "保健・医療・福祉：4-7 尊厳が守られながら必要な介護サービスを受けることができている"
+     },
+     {
+      "id": "field-37",
+      "measures": [],
+      "name_ja": "保健・医療・福祉：4-8 高齢者が生きがいをもって活動している"
+     },
+     {
+      "id": "field-38",
+      "measures": [],
+      "name_ja": "SDGs・市民協働・コミュニティ・行財政：5-1 地域やコミュニティの中で、だれもが互いに助け合い、支え合って暮らしている"
+     },
+     {
+      "id": "field-39",
+      "measures": [],
+      "name_ja": "SDGs・市民協働・コミュニティ・行財政：5-2 ボランティア・NPOなどの市民主体の活動が活発に行われている"
+     },
+     {
+      "id": "field-40",
+      "measures": [],
+      "name_ja": "SDGs・市民協働・コミュニティ・行財政：5-3 行政が市民の意見を踏まえ、施策の検討、効果的な実施、評価・検証を行い、改善を図っている"
+     },
+     {
+      "id": "field-41",
+      "measures": [],
+      "name_ja": "SDGs・市民協働・コミュニティ・行財政：5-4 市民が安全で快適に、公共施設を利用している"
+     },
+     {
+      "id": "field-42",
+      "measures": [],
+      "name_ja": "SDGs・市民協働・コミュニティ・行財政：5-5 市役所が市民の身近な窓口として課題解決に向けて責任をもって対応している"
+     },
+     {
+      "id": "field-43",
+      "measures": [],
+      "name_ja": "SDGs・市民協働・コミュニティ・行財政：5-6 だれもが快適で活力に満ちた生活ができるよう、先端技術が生活に溶けこんでいる"
+     },
+     {
+      "id": "field-44",
+      "measures": [],
+      "name_ja": "SDGs・市民協働・コミュニティ・行財政：5-7 持続可能な地域をめざすSDGsの理念を、だれもが理解し、行動している"
+     }
+    ],
+    "start_fiscal_year": 2021,
+    "title": "倉敷市第七次総合計画 基本構想・基本計画（2021年度～2030年度）",
+    "vision": "豊かな自然と紡がれた歴史・文化を次代へ繋ぎ 人と人との絆と慈しみの心で地域を結ぶまち倉敷"
+   },
+   "id": "kurashiki-current-policy-structure",
+   "name_ja": "倉敷市",
+   "official_code": "332020",
+   "phase": 15
+  },
+  "progress_review": {
+   "id": "kurashiki-current-progress-review-summary",
+   "implementation_plan_framework": {
+    "evaluation_structure": "進行管理は、実施計画をPDCAサイクルにより毎年度見直す自治体の枠組みと、毎年度実施される行政評価（第七次総合計画の施策評価と、その基礎データとなる『まちづくり指標』市民アンケート調査）による。自治体の評価・進捗公表をJichi Insight独自の達成判定へ変換せず、枠組みそのものを年度実績へ読み替えない",
+    "period": "実施計画の毎年度見直しを通じて、基本構想・基本計画期間（2021年度～2030年度）の進捗管理を行う。FY2024決算は現行計画の期間内の決算で計画の版は同一であるが、決算総額と政策体系との総額レベルの対応付けは公式資料にないため、進行管理の対象値として接続しない",
+    "title": "倉敷市第七次総合計画実施計画（毎年度見直し）のPDCAと行政評価による進行管理"
+   },
+   "name_ja": "倉敷市",
+   "official_code": "332020",
+   "phase": 15,
+   "review_status": "review_candidate_staging"
+  },
+  "source_catalog": {
+   "id": "kurashiki-phase15-sources",
+   "name_ja": "倉敷市",
+   "official_code": "332020",
+   "phase": 15,
+   "sources": [
+    {
+     "evidence_location": "計画ページで第七次総合計画の構成（第1章『策定にあたって』・第2章『基本構想』・第3章『基本計画』・第4章『第2期倉敷みらい創生戦略』・資料編）と実施計画2026の掲載を直接確認した。第1章で基本構想・基本計画の期間（2021年度～2030年度の10年間）と実施計画のPDCAによる毎年度見直しを確認し、第2章で将来像と5分野・44のめざすまちの姿の全件を確認した",
+     "evidence_role": "comprehensive_plan",
+     "format": "html",
+     "id": "kurashiki-seventh-plan",
+     "official_url": "https://www.city.kurashiki.okayama.jp/cityinfo/plan/1011783/1002083.html",
+     "title": "総合計画",
+     "use_boundary": "現行計画は倉敷市第七次総合計画として保持し、基本構想・基本計画・実施計画のlayer semanticsを分離する。他の計画期間の実績を現行計画のcurrent actualへ流用しない",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    },
+    {
+     "evidence_location": "令和7年度行政評価結果報告書（令和7年10月公表）と第七次総合計画『まちづくり指標』市民アンケート調査結果報告書の掲載を同ページで確認した",
+     "evidence_role": "progress_governance",
+     "format": "html",
+     "id": "kurashiki-administrative-evaluation-2025",
+     "official_url": "https://www.city.kurashiki.okayama.jp/cityinfo/plan/1002154/1002161/1021963.html",
+     "title": "令和7年度行政評価結果",
+     "use_boundary": "行政評価・市民アンケートの結果の掲載を達成実績や政策効果と同一視しない。行政評価と財政決算は別Evidence roleとして保持する",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    },
+    {
+     "evidence_location": "Phase 14インベントリ記載の広報特集ページは万円単位の概数表示（一般会計2,227億6,800万円）のため精密値の根拠には使わず、財政課『令和8年度当初予算（案）の概要』の「2 会計別予算」表（単位：千円）でFY2026一般会計当初予算額222,767,966千円を確認した。議決は市議会公式『令和8年第3回倉敷市議会（第1回定例会）議案一覧』の議案第26号の記載（令和8年3月18日 原案可決）で直接確認し、成立額は令和8年度6月補正予算の概要の「補正前の額」とも一致する",
+     "evidence_role": "budget",
+     "format": "html",
+     "id": "kurashiki-budget-2026",
+     "official_url": "https://www.city.kurashiki.okayama.jp/cityinfo/publicity/1001929/1001937/1022190/1024527/1024866.html",
+     "title": "令和8年度当初予算",
+     "use_boundary": "FY2026当初予算は補正予算・決算と別stateで保持する。金額は千円単位の公表値であり、円単位を合成しない",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    },
+    {
+     "evidence_location": "同ページから辿れる監査委員『令和6年度倉敷市決算審査意見書（一般会計・特別会計・基金の運用状況・財産区会計）』の決算審査資料第1表『令和6年度歳入歳出決算総括表』（単位：円）で一般会計の歳入総額232,345,729,550円・歳出総額225,142,008,893円・差引7,203,720,657円を確認し、第2表『決算収支状況表』で翌年度へ繰り越すべき財源1,400,067,591円・実質収支5,803,653,066円を確認した。認定は市議会公式『令和7年第5回倉敷市議会（第3回定例会）議案一覧』の議案第135号の記載（令和7年9月24日 認定）で直接確認した。財政状況資料集の総括表（歳入総額232,438,069千円等）は普通会計（一般会計等）ベースであり一般会計値とは別のため使用していない",
+     "evidence_role": "settlement",
+     "format": "html",
+     "id": "kurashiki-settlement-2024",
+     "official_url": "https://www.city.kurashiki.okayama.jp/cityinfo/finance/1011779/1010784.html",
+     "title": "財政資料",
+     "use_boundary": "FY2024決算は予算・補正と別stateで保持する。歳入・歳出・実質収支は円単位の公表値のまま記録する",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    }
+   ]
+  }
+ },
+ "deferred_depth": [
+  {
+   "boundary": "44のめざすまちの姿の下の基本計画の市の施策・基本方針・まちづくり指標の全件列挙は追加depthとし、公式対応が確認できるまで昇格しない。5つの分野・44のめざすまちの姿の体系自体は候補に保持するが、めざすまちの姿の下の施策・指標単位の対応付けは行わない。",
+   "id": "current-plan-granular-kpi-and-project-linkage",
+   "status": "deferred_not_required_for_candidate_staging"
+  },
+  {
+   "boundary": "FY2026当初予算の金額（222,767,966千円）と議決（議案第26号・2026年3月18日原案可決）、FY2024決算の総額（円単位）と実質収支（円単位）、議案第135号の認定（2025年9月24日）は一次資料で確認し候補に反映している。一方、予算書・決算書の事項別明細書の款別合計との最終突合と、監査委員の決算審査意見書の個別の指摘事項等の内容精査は未実施のまま保持する。",
+   "id": "fiscal-detail-reconciliation",
+   "status": "deferred_not_required_for_candidate_staging"
+  },
+  {
+   "boundary": "次期（第八次）総合計画の策定状況は公式資料で確認できず未確認のまま保持する。前計画（第六次総合計画）の政策体系・事業・評価の全件列挙は本候補では行わない。",
+   "id": "plan-transition-version-depth",
+   "status": "deferred_not_required_for_candidate_staging"
+  },
+  {
+   "boundary": "倉敷市総合計画・進捗管理・財政等のステージングは政策効果の因果認定や他都市比較可能性を意味しない。進捗管理（自治体の見直し・評価の枠組み）をJichi Insight独自の達成判定へ変換しない。",
+   "id": "policy-outcome-causal-and-cross-city-comparability",
+   "status": "deferred_not_required_for_candidate_staging"
+  }
+ ],
+ "human_review": {
+  "boundary": "A person must check the candidate against the cited primary sources before any promotion to reviewed_complete.",
+  "required": true,
+  "reviewed_at": null,
+  "reviewer_note": null,
+  "status": "pending"
+ },
+ "name_ja": "倉敷市",
+ "official_code": "332020",
+ "package_state": "prepared",
+ "phase": 15,
+ "publication": {
+  "boundary": "Candidate data is staging-only and must not be loaded by the public site or treated as reviewed data.",
+  "eligible": false
+ },
+ "quality_boundaries": [
+  "Promoted facts must come from official primary sources with stable evidence locators.",
+  "Unpublished, unavailable, historical-only, draft, and unresolved facts must remain explicit.",
+  "No Jichi Insight policy-achievement score, causal attribution, or unverified cross-city ranking may be created.",
+  "This candidate is machine-prepared evidence only and is not Reviewed until a person checks the primary sources."
+ ],
+ "schema_version": 1,
+ "source_inventory_path": "data/indexed/kurashiki-city/source_inventory.json",
+ "status": "review_candidate"
+}
