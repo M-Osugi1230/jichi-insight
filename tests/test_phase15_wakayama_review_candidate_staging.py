@@ -142,6 +142,7 @@ def test_wakayama_fiscal_records_hold_verified_values_and_vote_facts() -> None:
     assert revenue["sources"] == ["wakayama-settlement-2024"]
     assert "認第6号" in revenue["note"]
     assert "認定された" in revenue["note"]
+    assert "2025年12月1日" in revenue["note"]
     assert "171,406,400,509円" in revenue["note"]
     expenditure = records["jp-local-302015-fiscal-2024-total-expenditure"]
     assert expenditure["amount_yen"] == 167_796_054_596
@@ -149,18 +150,24 @@ def test_wakayama_fiscal_records_hold_verified_values_and_vote_facts() -> None:
     assert revenue["amount_yen"] - expenditure["amount_yen"] == 3_610_345_913
 
 
-def test_wakayama_fy2026_budget_amount_derivation_is_explicit() -> None:
+def test_wakayama_fy2026_budget_amount_is_directly_confirmed() -> None:
     records = {record["id"]: record for record in _package()["fiscal_records"]}
     budget = records["jp-local-302015-fiscal-2026-total-expenditure"]
-    # The initial budget total is identified arithmetically from the
-    # gazette-published supplementary budget No. 1, article 1:
-    # 168,632,712 - 2,863,767 = 165,768,945 (thousand yen).
-    assert 168_632_712 - 2_863_767 == 165_768_945
+    # The initial budget total is confirmed directly in the official
+    # 予算内示資料: the p.5 overview (1,657億6,894万5,000円) and the
+    # p.6 budget summary table (単位 千円) both give 165,768,945千円.
     assert budget["amount_yen"] == 165_768_945 * 1000
-    assert "算術的に特定" in budget["note"]
+    assert "予算内示資料" in budget["note"]
+    assert "直接確認した" in budget["note"]
+    assert "165,768,945千円" in budget["note"]
+    # The earlier arithmetic identification from the gazette-published
+    # supplementary budget No. 1, article 1 stays as a consistency
+    # cross-check: 168,632,712 - 2,863,767 = 165,768,945 (thousand yen).
+    assert 168_632_712 - 2_863_767 == 165_768_945
+    assert "算術的特定" in budget["note"]
     assert "168,632,712千円" in budget["note"]
     assert "2,863,767千円" in budget["note"]
-    assert "直接確認が未了" in budget["note"]
+    assert "未了" not in budget["note"]
 
 
 def test_wakayama_fy2024_settlement_values_and_real_balance() -> None:
@@ -186,10 +193,12 @@ def test_wakayama_fy2024_settlement_certification_is_verified() -> None:
     assert "認第6号" in text
     assert "認定された" in text
     assert "令和7年12月定例会" in text
-    # The certification was confirmed as 認定 in the council's official
-    # voting record; the exact vote date is not printed there and the
-    # candidate must keep it unidentified rather than asserting one.
-    assert "未特定" in text
+    # The certification vote date is pinned from the council's official
+    # 審議結果 (【令和7年12月1日議決分】 table): 認第6号 was certified
+    # on 2025-12-01, so the candidate records the date and no longer
+    # keeps it unidentified anywhere.
+    assert "2025年12月1日" in text
+    assert "未特定" not in text
     assert "不認定" not in text
     assert "原案可決" not in text
     assert "修正可決" not in text
@@ -210,9 +219,16 @@ def test_wakayama_evidence_packets_cover_the_three_fiscal_records() -> None:
     assert "議案第31号" in budget_claim["statement"]
     assert "2026年3月13日" in budget_claim["statement"]
     assert "165,768,945千円" in budget_claim["statement"]
+    assert "予算内示資料" in budget_claim["statement"]
+    assert "直接確認" in budget_claim["statement"]
+    budget_packet = packets["evidence-wakayama-city-2026-total-expenditure"]
+    assert not any("直接確認" in q for q in budget_packet["open_questions"])
     revenue_claim = packets["evidence-wakayama-city-2024-total-revenue"]["claims"][0]
     assert "認第6号" in revenue_claim["statement"]
+    assert "2025年12月1日" in revenue_claim["statement"]
     assert "171,406,400,509円" in revenue_claim["statement"]
+    revenue_packet = packets["evidence-wakayama-city-2024-total-revenue"]
+    assert not any("議決日" in q for q in revenue_packet["open_questions"])
     expenditure_claim = packets["evidence-wakayama-city-2024-total-expenditure"]["claims"][0]
     assert "167,796,054,596円" in expenditure_claim["statement"]
     assert "3,361,400千円" in expenditure_claim["statement"]
