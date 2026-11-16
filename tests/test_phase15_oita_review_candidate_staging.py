@@ -84,6 +84,7 @@ def test_oita_candidate_plan_records_keep_framework_and_transition() -> None:
     assert "おおいた創造ビジョン2024" in linkage["statement"]
     assert "議第106号" in linkage["statement"]
     assert "認定されている" in linkage["statement"]
+    assert "2025年9月25日" in linkage["statement"]
 
 
 def test_oita_candidate_policy_structure_keeps_three_fields() -> None:
@@ -131,8 +132,8 @@ def test_oita_candidate_fiscal_records_match_primary_sources() -> None:
     assert "議第106号" in revenue["note"]
     assert "226,470,701千円" in revenue["note"]
     assert "認定された" in revenue["note"]
-    assert "議決日そのものは" in revenue["note"]
-    assert "未確認" in revenue["note"]
+    assert "2025年9月25日" in revenue["note"]
+    assert "認定（多数）" in revenue["note"]
     assert "普通会計ベース" in revenue["note"]
     assert "おおいた創造ビジョン2024" in revenue["note"]
 
@@ -155,23 +156,37 @@ def test_oita_candidate_keeps_real_balance_from_settlement_summary() -> None:
     assert "千円単位で印字された値のまま記録する" in note
 
 
-def test_oita_candidate_certification_confirmed_but_vote_date_unconfirmed() -> None:
+def test_oita_candidate_certification_outcome_confirmed() -> None:
     candidate = load_candidate()
     text = json.dumps(candidate, ensure_ascii=False)
 
     # The FY2024 settlement bill (議第106号) was certified at the
     # Reiwa 7 3rd regular session, as stated on the Finance Division's
     # official page and the council's official committee schedule.
-    # The exact vote date could not be confirmed from text-accessible
-    # official sources, so it stays an open question, and the candidate
-    # must never claim the settlement was rejected or amended.
+    # A supplementary live-browser investigation then confirmed from
+    # the council's official voting-results table that the bill was
+    # certified (認定（多数）) on 2025-09-25, so the candidate records
+    # that vote date and its browser-supplement basis, while never
+    # recording a non-certification outcome.
     assert "議第106号" in text
     assert "認定された" in text
-    assert "議決日そのものは" in text
-    assert "未確認" in text
+    assert "2025年9月25日" in text
+    assert "認定（多数）" in text
+    assert "実ブラウザによる補完調査" in text
     assert "不認定" not in text
     assert "修正可決" not in text
     assert "修正議決" not in text
+    # The formerly open question about the vote date is resolved.
+    assert "議決日そのものは" not in text
+    assert "議第106号の認定の議決日の特定" not in text
+    packets = {
+        packet["id"]: packet
+        for packet in candidate["candidate_package"]["evidence_packets"]
+    }
+    revenue_packet = packets["evidence-oita-city-2024-total-revenue"]
+    assert revenue_packet["open_questions"] == [
+        "決算事項別明細書の款別合計との最終突合。"
+    ]
 
 
 def test_oita_candidate_budget_vote_wording_is_recorded_as_published() -> None:
