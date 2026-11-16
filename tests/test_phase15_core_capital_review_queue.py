@@ -76,16 +76,16 @@ def test_phase15_current_statuses_are_canonical():
     statuses = Counter(row["status"] for row in queue["execution_queue"])
 
     assert statuses == {
-        "reviewed_complete": 47,
-        "pending_record_review": 20,
+        "reviewed_complete": 48,
+        "pending_record_review": 19,
     }
     assert queue["summary"] == {
         "target_count": 67,
-        "reviewed_complete_count": 47,
+        "reviewed_complete_count": 48,
         "review_in_progress_count": 0,
-        "pending_record_review_count": 20,
+        "pending_record_review_count": 19,
         "blocked_source_inventory_count": 0,
-        "next_official_code": "302015",
+        "next_official_code": "312010",
     }
 
     completed = [
@@ -141,6 +141,7 @@ def test_phase15_current_statuses_are_canonical():
         "明石市",
         "西宮市",
         "奈良市",
+        "和歌山市",
     ]
     assert completed[0]["completion_path"] == "data/catalog/hakodate_phase15_completion.json"
     assert completed[1]["completion_path"] == "data/catalog/asahikawa_phase15_completion.json"
@@ -189,6 +190,7 @@ def test_phase15_current_statuses_are_canonical():
     assert completed[44]["completion_path"] == "data/catalog/akashi_phase15_completion.json"
     assert completed[45]["completion_path"] == "data/catalog/nishinomiya_phase15_completion.json"
     assert completed[46]["completion_path"] == "data/catalog/nara_phase15_completion.json"
+    assert completed[47]["completion_path"] == "data/catalog/wakayama_phase15_completion.json"
 
     current = [
         row
@@ -202,10 +204,10 @@ def test_phase15_current_statuses_are_canonical():
         for row in queue["execution_queue"]
         if row["status"] == "pending_record_review"
     ]
-    assert pending[0]["name_ja"] == "和歌山市"
-    assert pending[0]["official_code"] == "302015"
-    assert pending[0]["sequence"] == 48
-    assert pending[0]["wave"] == 5
+    assert pending[0]["name_ja"] == "鳥取市"
+    assert pending[0]["official_code"] == "312010"
+    assert pending[0]["sequence"] == 49
+    assert pending[0]["wave"] == 6
     assert pending[0]["completion_path"] is None
 
 

@@ -668,13 +668,25 @@ Declared v1 package:
 
 Deferred depth includes the per-measure directions and indicators of the 29 measures, cross-checks against the budget book and the settlement book （事項別明細書） at section level, the content of the audit commissioners' settlement review opinion (individual findings), supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Forty-eighth completion — Wakayama
+
+和歌山市を48番目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 第5次和歌山市長期総合計画 — composed of the basic concept （基本構想） and basic plan （基本計画）, which run FY2017-FY2026 with the future city image 『きらり 輝く元気和歌山市』 and a target population of 347,000 for FY2026, and the implementation plan （実施計画）, which runs in three-year cycles (the current cycle is FY2024-FY2026) with annual inspection and revision; the ten-year layer and the three-year layer are kept as separate period semantics. The basic plan's structure — four field goals and 26 policies — is enumerated in full from the plan volume's table of contents; the measures, projects and indicators under each policy are not enumerated and stay deferred depth, so the measures lists stay empty. A regional plan covering ten blocks of the city is also kept. Progress is managed through the municipality's own framework of inspecting and revising the implementation plan every fiscal year. FY2026 is the plan's final year, the period status stays transition_or_unresolved as recorded in the Phase 14 inventory, and because the preparation status of the next plan (the Sixth Plan) has not been confirmed in official sources, the transition is kept only as a version chronology record and the next plan's content is not pre-empted into the current plan
+- FY2026 general-account initial budget: 165,768,945 thousand yen (enacted). Bill 議案第31号 was passed at the February 2026 regular session on 2026-03-13, and the council's official results document （令和8年2月定例市議会 審議結果） records the result with the wording 『可決』, which is kept as published. The amount was confirmed directly at two places in the city's official 『令和8年度 予算内示資料』 — the initial-budget overview (p.5) and the budget summary table in thousand yen (p.6) — and is also consistent with the arithmetic identification from article 1 of the FY2026 general-account supplementary budget No. 1 as published in the city gazette (post-supplement total 168,632,712 thousand yen minus the supplement of 2,863,767 thousand yen). The amount is kept at the published sen-yen (thousand-yen) precision and finer amounts are not synthesized
+- FY2024 general-account settlement at the yen precision printed in the city's official settlement summary table （令和6年度決算 歳入歳出決算総括表）: revenue 171,406,400,509 yen / expenditure 167,796,054,596 yen (their difference of 3,610,345,913 yen matches the balance printed in the same table; the real balance is 3,361,400 thousand yen — the thousand-yen difference of 3,610,346 thousand yen minus 248,946 thousand yen of funding to be carried over to the next fiscal year — kept at the thousand-yen precision of the settlement statement （実質収支に関する調書）, and yen amounts are not synthesized). The settlement certification, 認第6号, was certified at the December 2025 regular session on 2025-12-01 per the city council's official voting records; it was not rejected. FY2024 falls within the Fifth Plan period and is the first year of the current implementation plan (FY2024-FY2026), so its plan version is the same as the current plan, but no official total-level mapping from settlement totals to the four field goals and 26 policies exists, so the totals are not linked to the plan's structure and the linkage stays not_assessable
+
+Deferred depth includes the measures, projects and indicators under the 26 policies, cross-checks against the budget book and the settlement book （事項別明細書） at section level, the content of the audit commissioners' settlement review opinion (individual findings), supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 47 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市、姫路市、尼崎市、明石市、西宮市、奈良市
+- Reviewed complete: 48 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市、姫路市、尼崎市、明石市、西宮市、奈良市、和歌山市
 - Review in progress: 0
-- Pending record review: 20
+- Pending record review: 19
 - Blocked source inventory: 0
-- Next official code: 302015
+- Next official code: 312010
 
 ## Definition of Phase 15 completion
 

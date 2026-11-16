@@ -1,0 +1,63 @@
+{
+  "id": "phase15-wakayama-plan-review",
+  "name_ja": "和歌山市",
+  "next_action": "Promote the per-policy measures, projects and indicators under the 26 policies of the basic plan only when official sources with stable record-level locators have been reviewed; complete the final cross-check against the budget book and the settlement book （事項別明細書） at section level; examine the content of the audit commissioners' settlement review opinion (individual findings); keep the previous plan (the Fourth Wakayama City Long-Term Comprehensive Plan) only as a separate version, and never connect results from the previous plan period forward into the current plan; do not pre-empt the content of the next plan (the Sixth Plan), whose preparation status has not been confirmed in official sources, into the current Fifth Plan. Keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "official_code": "302015",
+  "quality_boundary": "This package reviews the current plan identity and period (the Fifth Wakayama City Long-Term Comprehensive Plan: the basic concept （基本構想） and basic plan （基本計画） run FY2017-FY2026 with the future city image 『きらり 輝く元気和歌山市』 and a target population of 347,000 for FY2026; the implementation plan （実施計画） runs in three-year cycles, currently FY2024-FY2026, with annual inspection and revision; the ten-year layer and the three-year layer are kept as separate period semantics; FY2026 is the plan's final year and the Phase 14 period status stays transition_or_unresolved), the policy structure (the basic plan's four field goals and 26 policies, enumerated in full from the plan volume's table of contents; the measures, projects and indicators under each policy are not enumerated and stay deferred depth, so the measures lists stay empty), the progress-governance layer (the implementation plan inspected and revised every fiscal year — the municipality's own progress-management framework), the enacted FY2026 initial budget at the published sen-yen (thousand-yen) precision (bill 議案第31号; the council's official results document records the result as 『可決』 on 2026-03-13 — the published wording is kept as-is and is never rewritten as adoption of the original proposal; the amount of 165,768,945 thousand yen was confirmed directly in the city's official budget presentation materials （令和8年度 予算内示資料） and is consistent with the arithmetic identification from supplementary budget No. 1), and the FY2024 settlement at the yen precision printed in the city's official settlement summary table. The FY2024 settlement certification （認第6号） was certified at the December 2025 regular session on 2025-12-01: that outcome is recorded exactly as published; it was not rejected. The real balance of 3,361,400 thousand yen is published only at thousand-yen precision in the settlement statement, so it is kept at that precision and is never expanded into synthetic yen amounts. FY2024 falls within the Fifth Plan period and is the first year of the current implementation plan, so its plan version is the same as the current plan, but no official total-level mapping from settlement totals to the four field goals and 26 policies exists, so the linkage stays not_assessable. The transition to the next plan is kept only as a version chronology record because the preparation status of the Sixth Plan has not been confirmed in official sources.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "和歌山市公式『第5次和歌山市長期総合計画』本編（公式PDF）で、計画の構成（基本構想・基本計画・実施計画の3層）、計画期間（基本構想・基本計画は2017年度～2026年度、実施計画は3年・現行2024年度～2026年度）、将来都市像、目標人口を直接確認した",
+      "evidence_role": "current_plan_identity",
+      "id": "wakayama-current-plan-period",
+      "review_note": "総合計画の構成（基本構想・基本計画・実施計画）と各層の期間を別period semanticsとして保持した。レビュー済みレコード。",
+      "source_url": "https://www.city.wakayama.wakayama.jp/shisei/1009206/1009403/index.html",
+      "statement": "和歌山市の総合計画は第5次和歌山市長期総合計画（2017年3月策定）であり、基本構想・基本計画・実施計画の3層で構成される。基本構想と基本計画の計画期間は2017年度～2026年度の10年間であり、将来都市像として『きらり 輝く元気和歌山市』を掲げ、2026年度の目標人口を347,000人とする。基本計画は社会経済情勢の変化等に応じて随時見直しを行うものとされ、その具体化を担う実施計画は3年間を計画期間として毎年度点検・見直しを行い、現行は2024年度～2026年度である。あわせて市内を10ブロックに分けた地域別計画を置く。基本構想・基本計画の10年と実施計画の3年を別period semanticsとして保持し、一律の固定期間へ潰さない。FY2026は計画の最終年度であり、Phase 14インベントリのperiod_statusはtransition_or_unresolvedである。",
+      "title": "第5次和歌山市長期総合計画の構成（基本構想・基本計画2017年度～2026年度と実施計画）",
+      "value": "第5次和歌山市長期総合計画は基本構想・基本計画2017年度～2026年度（10年）／実施計画は3年（現行2024年度～2026年度）で毎年度点検見直し／FY2026は計画最終年度で次期計画の内容は未確認"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "和歌山市公式『第5次和歌山市長期総合計画』本編の目次（基本計画各論）で、4つの分野別目標とその下の政策26件を直接確認した",
+      "evidence_role": "policy_structure",
+      "id": "wakayama-current-policy-structure",
+      "review_note": "基本計画の政策体系（4分野別目標・26政策）を政策単位で保持した。政策の下の施策・事業単位の対応付けは行わない。レビュー済みレコード。",
+      "source_url": "https://www.city.wakayama.wakayama.jp/shisei/1009206/1009403/index.html",
+      "statement": "基本計画の各論は、4つの分野別目標の下に26の政策を体系付ける。分野別目標1『安定した雇用を生み出す産業が元気なまち』は6政策（1-1 地域を支える既存産業の振興／1-2 新たな事業の創出と産学官金・異業種連携の促進／1-3 農林水産業の活性化／1-4 観光の稼ぐ力の強化／1-5 国際交流の推進／1-6 産業を支える「人」の確保）、分野別目標2『住みたいと選ばれる魅力があふれるまち』は5政策（2-1 中心市街地の魅力向上／2-2 各地域における魅力的なまちづくり／2-3 魅力ある都市景観の創出／2-4 自然と共生する環境にやさしい社会の形成／2-5 郷土に誇りと愛着を育む文化・スポーツの振興と生涯学習の推進）、分野別目標3『子供たちがいきいきと育つまち』は5政策（3-1 安心して子供を生み育てることのできる環境の整備／3-2 社会を生き抜く子供たちの学力の育成／3-3 生涯を通じた豊かな心と健やかな体の育成／3-4 安全・安心な教育環境の整備／3-5 家庭や地域における教育力の向上）、分野別目標4『誰もが安心して住み続けられる持続可能なまち』は10政策（4-1 コンパクトシティの実現／4-2 都市機能や市民生活を支える道路網の整備／4-3 豊かな暮らしを支える住環境の整備／4-4 防災体制の充実／4-5 消防力の充実／4-6 安全で安心な市民生活の確保／4-7 健康で元気に暮らせる環境づくり／4-8 人権尊重・男女共同参画の推進／4-9 将来に向かって希望の持てる福祉社会の形成／4-10 地域コミュニティの充実）である。各政策の下の施策・事業単位の対応付けは行わない。",
+      "title": "基本計画の政策体系（4つの分野別目標・26政策）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "計画本編の計画の構成で、実施計画が3年間を計画期間とし毎年度点検見直しを行うことを確認し、Phase 14インベントリの実施計画の記録とあわせて保持した",
+      "evidence_role": "progress_governance",
+      "id": "wakayama-progress-governance-framework",
+      "review_note": "進行管理の枠組み（実施計画の毎年度点検・見直し）を年度実績へ読み替えず保持した。レビュー済みレコード。",
+      "source_url": "https://www.city.wakayama.wakayama.jp/shisei/1009206/1009403/index.html",
+      "statement": "第5次和歌山市長期総合計画の進行管理は、基本計画を具体化する実施計画（3年・現行2024年度～2026年度）を毎年度点検・見直しする自治体の枠組みによる。自治体の点検・見直しをJichi Insight独自の達成判定へ変換しない。",
+      "title": "計画の進行管理（実施計画の毎年度点検・見直し）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "第5次計画の計画期間（2017年度～2026年度）は計画本編で確認した。次期計画の策定状況は市公式ページの調査範囲で確認できなかった",
+      "evidence_role": "plan_transition",
+      "id": "wakayama-plan-transition",
+      "review_note": "計画最終年度であることと次期計画の未確認状態を版の履歴として分離記録した。レビュー済みレコード。",
+      "source_url": "https://www.city.wakayama.wakayama.jp/shisei/1009206/1009403/index.html",
+      "statement": "第5次和歌山市長期総合計画は2026年度が計画期間の最終年度である。次期計画（第6次）の策定状況は、本候補の調査範囲では和歌山市公式資料で確認できていないため、次期計画の内容を現行計画へ先取りしない。移行は版の履歴として分離して記録し、Phase 14インベントリのperiod_status（transition_or_unresolved）をそのまま保持する。",
+      "title": "第5次長期総合計画の最終年度と次期計画への移行"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "決算総額は『令和6年度決算』歳入歳出決算総括表、認定結果は市議会公式『12月定例会採決状況』で確認した。総額レベルの対応付けの不存在は、決算・計画の公表範囲で確認した",
+      "evidence_role": "annual_progress",
+      "fiscal_year": 2024,
+      "id": "wakayama-fy2024-settlement-linkage",
+      "review_note": "版は同一でも総額レベルの対応付けがないため接続しないことを明記した。レビュー済みレコード。",
+      "source_url": "https://www.city.wakayama.wakayama.jp/shisei/zaisei/1001161/index.html",
+      "statement": "FY2024決算は第5次和歌山市長期総合計画（2017年度～2026年度）の期間内、実施計画（2024年度～2026年度）の初年度の決算であり、計画の版は現行と同一である。決算総額（円単位）と認定結果（認第6号・2025年12月1日認定）は一次資料で確認済みであるが、決算総額と4つの分野別目標・26政策との総額レベルの対応付けは公式資料にないため、接続はnot_assessableとし、決算値を計画のcurrent actualへ流用しない。",
+      "title": "令和6年度決算と第5次和歌山市長期総合計画の政策体系の接続"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-16"
+}

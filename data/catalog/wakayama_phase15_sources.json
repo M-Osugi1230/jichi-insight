@@ -1,0 +1,46 @@
+{
+  "id": "wakayama-phase15-sources",
+  "name_ja": "和歌山市",
+  "official_code": "302015",
+  "phase": 15,
+  "quality_boundary": "Current plan identity kept as published (the Fifth Wakayama City Long-Term Comprehensive Plan: basic concept and basic plan FY2017-FY2026 and implementation plan in three-year cycles, currently FY2024-FY2026 with annual inspection and revision; the layer semantics are kept separate; FY2026 is the final year and the period status stays transition_or_unresolved; the basic plan's four field goals and 26 policies are enumerated, while the measures, projects and indicators under each policy are not enumerated and stay deferred depth), progress governance (the implementation plan inspected and revised every fiscal year — kept as the municipality's own progress-management framework), budget enactment confirmed from the council's official results document (bill 議案第31号; result recorded as 『可決』 on 2026-03-13, kept in the published wording) and the amount confirmed directly in the city's official budget presentation materials (165,768,945 thousand yen, kept at the published sen-yen precision and never expanded into synthetic finer amounts), and settlement totals kept at the yen precision printed in the official settlement summary table (the settlement certification 認第6号 was certified on 2025-12-01; the real balance of 3,361,400 thousand yen stays at the thousand-yen precision of the settlement statement) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "reviewed_at": "2026-11-16",
+  "sources": [
+    {
+      "evidence_location": "計画の構成・期間・将来都市像・政策体系は市公式『第5次和歌山市長期総合計画』本編（公式PDF）で直接確認した。基本構想・基本計画は2017年度～2026年度の10年、実施計画は3年（現行2024年度～2026年度）で毎年度点検見直しを行い、将来都市像『きらり 輝く元気和歌山市』、4つの分野別目標と政策26件を本編の目次で確認した",
+      "evidence_role": "comprehensive_plan",
+      "format": "html",
+      "id": "wakayama-fifth-long-term-plan",
+      "official_url": "https://www.city.wakayama.wakayama.jp/shisei/1009206/1009403/index.html",
+      "title": "第5次和歌山市長期総合計画",
+      "use_boundary": "現行計画は第5次和歌山市長期総合計画として保持し、基本構想・基本計画と実施計画のlayer semanticsを分離する。FY2026は最終年度であり、次期計画の内容を現行計画へ先取りしない"
+    },
+    {
+      "evidence_location": "実施計画（2024年度～2026年度・3年、毎年度点検見直し）の公式入口（Phase 14インベントリで確認）。計画本編の計画の構成でも実施計画の位置付けを確認した",
+      "evidence_role": "implementation_plan_and_progress",
+      "format": "html",
+      "id": "wakayama-implementation-2024-2026",
+      "official_url": "https://www.city.wakayama.wakayama.jp/shisei/1009206/1009403/index.html",
+      "title": "第5次和歌山市長期総合計画 実施計画",
+      "use_boundary": "自治体の点検・見直しをJichi Insight独自の達成評価や因果効果へ変換しない。実施計画の進捗と財政決算は別Evidence roleとして保持する"
+    },
+    {
+      "evidence_location": "FY2026当初予算の議決は、市議会公式『令和8年2月定例市議会 審議結果』で議案第31号『令和8年度和歌山市一般会計予算』が2026年3月13日に『可決』されたことを確認した。当初予算額165,768,945千円は、本ページから「令和8年度当初予算」としてリンクされる和歌山市公式『令和8年度 予算内示資料』（PDF）で直接確認した（p.5「令和8年度当初予算の概要」に一般会計1,657億6,894万5,000円、p.6「令和8年度予算総括表（単位 千円）」に一般会計の本年度予算額165,768,945千円）。和歌山市公報（告示第247号別冊・2026年6月30日）掲載の令和8年度一般会計補正予算（第1号）第1条からの算術的特定（補正額2,863,767千円を追加し総額168,632,712千円）とも一致する",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "wakayama-budget-2026",
+      "official_url": "https://www.city.wakayama.wakayama.jp/shisei/zaisei/1033880/1066991/1066992.html",
+      "title": "令和8年度一般会計予算",
+      "use_boundary": "FY2026当初予算は補正予算・決算と別stateで保持する。金額は千円単位の公表値であり、円単位を合成しない。議決結果は審議結果の文言どおり『可決』として記録する"
+    },
+    {
+      "evidence_location": "FY2024決算額は、同ページから公表される『令和6年度決算』歳入歳出決算総括表（一般会計）で、収入済額171,406,400,509円・支出済額167,796,054,596円・差引残額3,610,345,913円を確認し検算一致した。実質収支は実質収支に関する調書（総括表・千円単位）の3,361,400千円（差引3,610,346千円－翌年度へ繰り越すべき財源248,946千円）で、監査委員の決算審査意見書（和監査第49号・2025年9月1日）でも同値が確認されている。決算の認定は市議会公式『12月定例会採決状況』（令和7年12月定例会）で、認第6号を含む各会計決算の認定の結果が『認定』であることを確認し、議決日は市議会公式『令和7年12月定例市議会 審議結果』の「【令和7年12月1日議決分】」の表に「認第6号 令和6年度和歌山市一般会計歳入歳出決算 認定」と明記されていることから2025年12月1日と特定した",
+      "evidence_role": "settlement",
+      "format": "html",
+      "id": "wakayama-settlement-2024",
+      "official_url": "https://www.city.wakayama.wakayama.jp/shisei/zaisei/1001161/index.html",
+      "title": "決算",
+      "use_boundary": "FY2024決算は予算・補正と別stateで保持する。歳入・歳出は総括表に印字された円単位の精密値であり、実質収支は調書の千円精度のまま記録し円単位を合成しない。認定結果は採決状況の文言どおり『認定』として記録する"
+    }
+  ]
+}

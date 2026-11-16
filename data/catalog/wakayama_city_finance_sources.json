@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-16",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "wakayama-city-home",
+      "municipality_key": "wakayama-city",
+      "organization": "和歌山市",
+      "category": "municipality_profile",
+      "title": "和歌山市公式サイト",
+      "url": "https://www.city.wakayama.wakayama.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "和歌山市の公式自治体サイト。"
+    },
+    {
+      "id": "wakayama-budget-2026",
+      "municipality_key": "wakayama-city",
+      "organization": "和歌山市",
+      "category": "budget",
+      "title": "令和8年度一般会計予算",
+      "url": "https://www.city.wakayama.wakayama.jp/shisei/zaisei/1033880/1066991/1066992.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算165,768,945千円（千円精度）のEvidence。議案第31号『令和8年度和歌山市一般会計予算』は令和8年2月定例市議会で2026年3月13日に可決され成立した（市議会公式『令和8年2月定例市議会 審議結果』の結果欄の文言は『可決』）。当初予算額は市の「一般会計」ページからリンクされる公式『令和8年度 予算内示資料』（p.5当初予算の概要・p.6予算総括表（単位 千円））で直接確認し、和歌山市公報（告示第247号別冊）掲載の補正予算（第1号）第1条からの算術的特定（168,632,712千円－2,863,767千円）とも一致する。千円単位の公表値のまま記録し、円単位を合成しない。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "wakayama-settlement-2024",
+      "municipality_key": "wakayama-city",
+      "organization": "和歌山市",
+      "category": "settlement",
+      "title": "決算",
+      "url": "https://www.city.wakayama.wakayama.jp/shisei/zaisei/1001161/index.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入171,406,400,509円・歳出167,796,054,596円を含む公式決算資料（『令和6年度決算』歳入歳出決算総括表で確認し、差引残額3,610,345,913円が検算一致）。実質収支は実質収支に関する調書（総括表・千円単位）により3,361,400千円（翌年度へ繰り越すべき財源248,946千円。調書の千円精度のまま記録し、円単位を合成しない）。決算の認定は認第6号『令和6年度和歌山市一般会計歳入歳出決算』として令和7年12月定例会で2025年12月1日に認定された（市議会公式『12月定例会採決状況』および『令和7年12月定例市議会 審議結果』で確認）。決算書（歳入歳出決算事項別明細書）の款別合計との突合と監査委員の決算審査意見書の内容（個別の指摘事項等）の精査は未実施。"
+    }
+  ]
+}
