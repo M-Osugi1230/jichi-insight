@@ -1,0 +1,65 @@
+[
+  {
+    "account_type": "general",
+    "amount_yen": 119391000000,
+    "confidence": "high",
+    "fiscal_year": 2026,
+    "id": "jp-local-322016-fiscal-2026-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算総額",
+    "municipality_id": "jp-local-322016",
+    "note": "松江市の令和8年度一般会計当初予算総額119,391,000千円。市公式『令和8年度一般会計・特別会計予算書』（議第56号『令和8年度松江市一般会計予算』・令和8年2月25日に松江市長上定昭仁が提出）の第1条に『歳入歳出予算の総額は、歳入歳出それぞれ119,391,000千円と定める』と印字されている。市議会公式『令和8年第1回松江市議会（定例会）議案等一覧表』は議第56号の結果を『（3月26日原案可決）』と記載しており、議決結果の文言は一次資料の表記どおり『原案可決』である（2026年3月26日議決）。公表精度は千円単位であり、その精度のまま記録し円単位を合成していない。補正予算や決算とは別stateで扱う。Phase 14インベントリに記載された予算ランディングURLは市サイト再編で移転しており、金額と議決は現行の財政課『令和8年度予算の概要』ページから辿れる予算書と議案等一覧表で確認した。",
+    "period_end": "2027-03-31",
+    "period_start": "2026-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "matsue-budget-2026"
+    ],
+    "stage": "initial_budget",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 115607870000,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-322016-fiscal-2024-total-revenue",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入額",
+    "municipality_id": "jp-local-322016",
+    "note": "松江市公式『令和6年度決算の概要』（令和7年9月議会提出資料）に示された一般会計の歳入決算額115,607,870千円。監査委員『令和6年度松江市一般会計・特別会計歳入歳出決算審査意見書』（監第56号・令和7年8月22日）の第1表（決算の規模）でも歳入115,607,870千円・予算現額125,013,565千円が示され、両資料で一致する。両資料とも千円単位の公表のため千円精度のまま記録し、円単位を合成していない。当該決算は決算第1号『令和6年度松江市一般会計歳入歳出決算』として市議会に提出され、令和7年第5回定例会（9月）で2025年10月7日に認定の議決が行われた（市議会公式『議案等一覧表』の結果欄の文言は『認定』であり、同定例会の『議員別表決結果』でも決算第1号の議決結果は『認定』）。FY2024は現行の松江市総合計画『MATSUE DREAMS 2030』（基本構想2022年度～2029年度）の期間内の決算である。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "matsue-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 113268794000,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-322016-fiscal-2024-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出額",
+    "municipality_id": "jp-local-322016",
+    "note": "同じく両資料に示された一般会計の歳出決算額113,268,794千円（千円精度のまま記録）。歳入総額115,607,870千円との差引（形式収支）は2,339,076千円で、両資料の記載と検算一致する。実質収支は1,962,986千円である（形式収支2,339,076千円－翌年度へ繰り越すべき財源376,090千円＝1,962,986千円で検算一致。監査委員審査意見書の第3表『一般会計決算収支の推移』および『令和6年度決算の概要』による）。実質収支の公表精度も千円単位のため千円精度のまま記録し、円単位を合成していない。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "matsue-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  }
+]

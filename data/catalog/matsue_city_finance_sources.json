@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-16",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "matsue-city-home",
+      "municipality_key": "matsue-city",
+      "organization": "松江市",
+      "category": "municipality_profile",
+      "title": "松江市公式サイト",
+      "url": "https://www.city.matsue.lg.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "松江市の公式自治体サイト。"
+    },
+    {
+      "id": "matsue-budget-2026",
+      "municipality_key": "matsue-city",
+      "organization": "松江市",
+      "category": "budget",
+      "title": "令和8年度予算の概要",
+      "url": "https://www.city.matsue.lg.jp/gyoseijoho/gyozaisei/3/3/24272.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算119,391,000千円（千円精度）のEvidence。市公式『令和8年度一般会計・特別会計予算書』（議第56号）の第1条で歳入歳出予算の総額を確認し、議第56号は市議会公式『令和8年第1回松江市議会（定例会）議案等一覧表』で2026年3月26日に原案可決され成立した。千円単位の公表値のまま記録し、円単位を合成しない。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "matsue-settlement-2024",
+      "municipality_key": "matsue-city",
+      "organization": "松江市",
+      "category": "settlement",
+      "title": "令和6年度決算の概要",
+      "url": "https://www.city.matsue.lg.jp/soshikikarasagasu/zaiseibu_zaiseika/gyozaisei/1/1/23753.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入115,607,870千円・歳出113,268,794千円を含む公式決算資料（『令和6年度決算の概要』と監査委員審査意見書（監第56号）の双方で確認し、差引2,339,076千円が検算一致）。実質収支は1,962,986千円（差引2,339,076千円－翌年度へ繰り越すべき財源376,090千円。いずれも千円精度のまま記録し、円単位を合成しない）。決算の認定は決算第1号『令和6年度松江市一般会計歳入歳出決算』として令和7年第5回定例会で2025年10月7日に認定された（市議会公式『議案等一覧表』の結果欄の文言『認定』と同定例会の議員別表決結果で確認）。総務省の決算状況カードの値は普通会計ベースであり一般会計値とは別のため使用していない。予算に関する説明書・決算書の事項別明細書の款別合計との突合と監査委員の決算審査意見書の内容（個別の指摘事項等）の精査、歳入歳出決算書本体の円単位精密値の確認は未実施。"
+    }
+  ]
+}

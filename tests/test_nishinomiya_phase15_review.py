@@ -52,9 +52,9 @@ def test_nishinomiya_review_package_is_the_forty_sixth_completion():
     }
 
     queue = load(QUEUE)
-    assert queue["summary"]["reviewed_complete_count"] == 49
-    assert queue["summary"]["pending_record_review_count"] == 18
-    assert queue["summary"]["next_official_code"] == "322016"
+    assert queue["summary"]["reviewed_complete_count"] == 50
+    assert queue["summary"]["pending_record_review_count"] == 17
+    assert queue["summary"]["next_official_code"] == "332020"
     entry = next(
         row for row in queue["execution_queue"] if row["official_code"] == "282049"
     )
