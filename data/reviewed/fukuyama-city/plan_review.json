@@ -1,0 +1,63 @@
+{
+  "id": "phase15-fukuyama-plan-review",
+  "name_ja": "福山市",
+  "next_action": "Promote the measures and target indicators of the third basic plan under the seven fields only when official sources with stable record-level locators have been reviewed; confirm the FY2026 budget vote date (2026-03-18) and the FY2024 settlement certification date (2025-11-26) against the plenary minutes; confirm article 1 of the FY2026 budget book directly (the budget book PDF is image-based); confirm the yen-precision totals of the settlement book itself (the city's published materials are at thousand-yen precision); complete the final cross-check against the settlement book (事項別明細書) at section level; examine the content of the audit commissioners' settlement review opinion (individual findings); confirm the preparation status of the next (fourth) basic plan; and never connect results from another plan version forward into the current plan. Keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "official_code": "342076",
+  "quality_boundary": "This package reviews the current plan identity and period (the 5th Fukuyama City Comprehensive Plan: the basic concept began in FY2017 with no fixed end, and the basic plan 'Fukuyama Mirai Creation Vision' runs in three periods — the first period FY2017-FY2020, the second period FY2021-FY2025, and the current third period FY2026-FY2030, which unifies the basic plan with the comprehensive strategy; the basic concept's lack of a fixed period and the basic plan's period structure are kept as separate period semantics, and the inventory period status of verified_fixed_period applies to the third basic plan's period), the policy structure (two priority projects and seven fields at the basic-plan level; the measures and target indicators under the fields are not enumerated and stay deferred depth, so the measures lists stay empty), the progress-governance layer (the annual priority policies, the outcome-oriented management policy, and the Fukuyama Mirai-zukuri Council's effect verification and external opinions — the municipality's own progress-management framework), the enacted FY2026 initial budget at the published sen-yen (thousand-yen) precision (bill 議第2号; the council's official result list records the result simply as 『可決』 in its own wording, and the vote date of 2026-03-18 was identified from the council newsletter's session overview, with final confirmation against the plenary minutes still outstanding; article 1 of the budget book itself was not confirmed directly because the budget book PDF is image-based), and the FY2024 settlement at the thousand-yen precision published in the audit commissioners' review opinion. The FY2024 settlement certification (bill 議第108号) was certified at the December 2025 regular session, confirmed directly in the council's official result list; it was not rejected, and the certification date of 2025-11-26 was likewise identified from the council newsletter's session overview, with final confirmation against the plenary minutes still outstanding. The real balance of 4,757,421 thousand yen is recorded at the thousand-yen precision of the opinion's table and is not expanded into a synthetic yen figure, and the yen-precision totals of the settlement book itself stay unconfirmed because the city's published materials are at thousand-yen precision. FY2024 is a settlement of the second basic plan period, so its plan version differs from the current third basic plan, and no official total-level mapping from settlement totals to the plan's policy structure exists, so the linkage stays not_assessable. The preparation status of the next (fourth) basic plan could not be confirmed in official sources and stays unconfirmed.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "計画の構成と各層の期間は市公式『福山市総合計画』トップページの期別一覧と、第3期基本計画ページおよび本編PDF（福山みらい創造ビジョン2026-2030）第Ⅰ章「計画策定の趣旨と期間」の体系図で直接確認した（基本構想は2017年度～期間の定めなし、基本計画は第1期2017年度～2020年度・第2期2021年度～2025年度・第3期2026年度～2030年度、第3期は総合計画の基本計画と総合戦略を一本化したもの）",
+      "evidence_role": "current_plan_identity",
+      "id": "fukuyama-current-plan-period",
+      "review_note": "総合計画の構成（基本構想・基本計画）と各層の期間を別period semanticsとして保持した。レビュー済みレコード。",
+      "source_url": "https://www.city.fukuyama.hiroshima.jp/site/sougoukeikaku/394084.html",
+      "statement": "福山市の現行の最上位計画は第五次福山市総合計画であり、基本構想と基本計画で構成する。基本構想は2017年度に開始し期間の定めはない。基本計画は「福山みらい創造ビジョン」の名称で第1期（2017年度～2020年度）、第2期（2021年度～2025年度）、第3期（2026年度～2030年度）の期別構成を取り、現行は第3期基本計画である。第3期基本計画は総合計画の基本計画と総合戦略を一本化したものであり、部門別計画の上位に位置する。各年度の取組は、社会の情勢変化に柔軟に対応するため毎年度「重点政策」として打ち出される。基本構想の期間の定めのなさと基本計画の期別期間を別period semanticsとして保持し、一律の固定期間へ潰さない。Phase 14インベントリのperiod_statusはverified_fixed_periodであり、これは現行の第3期基本計画の期間（2026年度～2030年度）に対するものである。",
+      "title": "第五次福山市総合計画の構成（基本構想2017年度～期間の定めなし・基本計画『福山みらい創造ビジョン』第3期2026年度～2030年度）",
+      "value": "第五次福山市総合計画は基本構想2017年度～期間の定めなし／基本計画『福山みらい創造ビジョン』第1期2017年度～2020年度・第2期2021年度～2025年度・第3期2026年度～2030年度（現行、第3期は基本計画と総合戦略を一本化）／FY2024決算は第2期基本計画期間の決算"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "めざす姿と重点プロジェクト・7つの分野は本編PDF第Ⅳ章「2030年度のめざす姿」・第Ⅴ章「めざす姿の実現に向けて」で確認し、概要版でも同じ体系を確認した。第3期の分野別施策・目標指標の全件は本候補では確認していない",
+      "evidence_role": "policy_structure",
+      "id": "fukuyama-current-policy-structure",
+      "review_note": "基本計画レベルの7つの分野を政策単位で保持した。第3期の分野別施策・目標指標の全件列挙は行わない。レビュー済みレコード。",
+      "source_url": "https://www.city.fukuyama.hiroshima.jp/site/sougoukeikaku/394084.html",
+      "statement": "第3期基本計画は、2030年度のめざす姿『希望、安心、活力ある備後の中核都市』を掲げ、少子化と若者・女性の転出超過に歯止めをかけるための2つの重点プロジェクト（福山版少子化対策の推進、若者や女性に選ばれる都市づくり）に5年間集中的に取り組む。分野別の諸施策は7つの分野（1 こども・若者、2 地域経済、3 都市基盤、4 医療・福祉、5 ばらのまちづくり・文化・スポーツ、6 地域社会、7 安心・安全）からなり、各分野に施策と目標指標が置かれる。本候補は分野レベルの体系のみを保持し、第3期の分野別施策・目標指標の全件列挙と対応付けは行わない。",
+      "title": "めざす姿と重点プロジェクト・分野別施策体系（7つの分野）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "各年度の重点政策の枠組みは本編PDF第Ⅰ章で、市政運営方針（成果主義）は第Ⅵ章で確認した。福山みらいづくり懇話会の設置目的と会議資料の掲載は市公式『福山市総合計画』トップページで確認した",
+      "evidence_role": "progress_governance",
+      "id": "fukuyama-progress-governance-framework",
+      "review_note": "進行管理の枠組み（各年度の重点政策、目標指標による成果主義、懇話会による効果検証・外部意見）を年度実績へ読み替えず保持した。レビュー済みレコード。",
+      "source_url": "https://www.city.fukuyama.hiroshima.jp/site/sougoukeikaku/",
+      "statement": "第3期基本計画の進行管理は、各年度の取組を毎年度「重点政策」として打ち出す自治体の枠組みと、目的やめざす姿、目標指標を掲げて施策を実施する成果主義を含む市政運営方針による。あわせて、人口減少に歯止めをかけ、市民一人一人の安心な暮らしと希望が実現する都市づくりを進めるための施策の推進に当たり、様々な団体の関係者から意見を聴取するため福山みらいづくり懇話会（旧・福山市総合戦略推進懇話会を再編）が設置されており、計画・地方創生関連施策の効果検証と外部意見を扱う公式のrouteである。懇話会では第2期基本計画期間の効果検証も扱われるため、第2期の効果検証と第3期のcurrent progressを同一系列として扱わない。自治体の評価・外部意見をJichi Insight独自の達成判定へ変換しない。",
+      "title": "計画の進行管理（各年度の重点政策と福山みらいづくり懇話会による効果検証・外部意見）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "第1期から第3期への移行は市公式『福山市総合計画』トップページの期別一覧（第1期基本計画、第2期基本計画、第3期基本計画の各ページへのリンクと期間表示）で確認した。次期計画の策定状況は同ページ等の公表範囲で確認できなかった",
+      "evidence_role": "plan_transition",
+      "id": "fukuyama-plan-transition",
+      "review_note": "同一総合計画内の基本計画の期の移行と、次期計画の未確認状態を分離記録した。レビュー済みレコード。",
+      "source_url": "https://www.city.fukuyama.hiroshima.jp/site/sougoukeikaku/394084.html",
+      "statement": "第五次福山市総合計画の基本計画は、第1期（2017年度～2020年度）、第2期（2021年度～2025年度）を経て、2026年度に第3期（2026年度～2030年度）へ移行した。第2期以降の基本計画は「福山みらい創造ビジョン」として総合戦略と一本化されている。第2期基本計画の政策体系・事業・効果検証の全件列挙は本候補では行わない。次期（第4期）基本計画の策定状況は本候補の調査範囲では公式資料で確認できなかったため未確認として保持する。FY2024決算は第2期基本計画期間の決算であり、現行の第3期基本計画とは計画の版が異なる。",
+      "title": "基本計画の第2期から第3期への移行と次期計画の策定状況"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "決算総額は監査委員の決算審査意見書、計画の期間は計画ページで確認した。総額レベルの対応付けの不存在は、決算・計画の公表範囲で確認した",
+      "evidence_role": "annual_progress",
+      "fiscal_year": 2024,
+      "id": "fukuyama-fy2024-settlement-linkage",
+      "review_note": "FY2024決算は第2期基本計画期間の決算であり現行の第3期基本計画とは版が異なり、総額レベルの対応付けもないため接続しないことを明記した。レビュー済みレコード。",
+      "source_url": "https://www.city.fukuyama.hiroshima.jp/soshiki/zaisei/394209.html",
+      "statement": "FY2024決算は第五次福山市総合計画の第2期基本計画（2021年度～2025年度）期間の決算であり、現行の第3期基本計画（2026年度～2030年度）とは計画の版が異なる。決算総額（千円精度）は一次資料で確認済みであるが、決算総額と計画の分野・施策との総額レベルの対応付けは公式資料にないため、接続はnot_assessableとし、第2期期間の決算値を第3期基本計画のcurrent actualへ流用しない。なお議第108号は令和7年12月定例会で認定されており、接続判定は認定結果に依存しない。",
+      "title": "令和6年度決算と第3期基本計画の政策体系の接続"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-16"
+}

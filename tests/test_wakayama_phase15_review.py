@@ -50,9 +50,9 @@ def test_wakayama_review_package_is_the_forty_eighth_completion():
     }
 
     queue = load(QUEUE)
-    assert queue["summary"]["reviewed_complete_count"] == 52
-    assert queue["summary"]["pending_record_review_count"] == 15
-    assert queue["summary"]["next_official_code"] == "342076"
+    assert queue["summary"]["reviewed_complete_count"] == 53
+    assert queue["summary"]["pending_record_review_count"] == 14
+    assert queue["summary"]["next_official_code"] == "352012"
     entry = next(
         row for row in queue["execution_queue"] if row["official_code"] == "302015"
     )

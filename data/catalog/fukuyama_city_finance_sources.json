@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-16",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "fukuyama-city-home",
+      "municipality_key": "fukuyama-city",
+      "organization": "福山市",
+      "category": "municipality_profile",
+      "title": "福山市公式サイト",
+      "url": "https://www.city.fukuyama.hiroshima.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "福山市の公式自治体サイト。"
+    },
+    {
+      "id": "fukuyama-budget-2026",
+      "municipality_key": "fukuyama-city",
+      "organization": "福山市",
+      "category": "budget",
+      "title": "2026年度（令和8年度）予算（補正予算を含む）",
+      "url": "https://www.city.fukuyama.hiroshima.jp/soshiki/zaisei/391108.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算207,700,000千円（千円精度）のEvidence。財政課『予算参考資料（福山市の財政状況）』の会計別当初予算額比較表と一般会計当初予算款別比較表で一般会計の当初予算額を確認し、議第2号は市議会公式『令和8年3月定例会議案の審議結果一覧』で採決結果『可決』と記載され成立した。議決日は市議会だより第101号の定例会概要から2026年3月18日と特定したが、本会議録による最終確認は未実施である。予算書PDFは画像形式のため第1条の直接確認は行っていない。千円単位の公表値のまま記録し、円単位を合成しない。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "fukuyama-settlement-2024",
+      "municipality_key": "fukuyama-city",
+      "organization": "福山市",
+      "category": "settlement",
+      "title": "財政状況資料集（2024年度決算）",
+      "url": "https://www.city.fukuyama.hiroshima.jp/soshiki/zaisei/394209.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入220,468,943千円・歳出212,772,807千円を含む公式決算資料（監査委員『令和6年度福山市一般会計・特別会計決算及び基金運用状況審査意見書』（福監査意見審第3号・2025年9月4日）の第1表で確認し、差引7,696,136千円が同書記載の歳入歳出差引額と検算一致）。実質収支は4,757,421千円（差引7,696,136千円－翌年度へ繰り越すべき財源2,938,715千円。同書第2表の千円単位の公表値のまま記録）。決算の認定は議第108号『令和6年度一般会計歳入歳出決算認定』として令和7年12月定例会で認定された（市議会公式『令和7年12月定例会議案の審議結果一覧』の採決結果欄の文言『認定』で確認）。認定日は市議会だより第100号の定例会概要から2025年11月26日と特定したが、本会議録による最終確認は未実施である。財政状況資料集の普通会計ベースの集計値は一般会計値とは別のため使用していない。決算事項別明細書の款別合計との突合と監査委員の決算審査意見書の内容（個別の指摘事項等）の精査は未実施。"
+    }
+  ]
+}

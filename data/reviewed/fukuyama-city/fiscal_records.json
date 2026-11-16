@@ -1,0 +1,65 @@
+[
+  {
+    "account_type": "general",
+    "amount_yen": 207700000000,
+    "confidence": "high",
+    "fiscal_year": 2026,
+    "id": "jp-local-342076-fiscal-2026-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算総額",
+    "municipality_id": "jp-local-342076",
+    "note": "福山市の令和8年度一般会計当初予算総額207,700,000千円。財政課『予算参考資料（福山市の財政状況）』の会計別当初予算額比較表に一般会計207,700,000千円（前年度比3.9％増）と印字され、一般会計当初予算款別比較表の歳入合計・歳出合計とも207,700,000千円で一致する。予算書PDFは画像形式のため第1条のテキストによる直接確認は行っておらず、金額は同参考資料で確認した。市議会公式『令和8年3月定例会議案の審議結果一覧』は議第2号『令和8年度一般会計予算』の採決結果を『可決』と記載しており、成立した当初予算額として確認した。議決結果の文言は一次資料の表記どおり『可決』である。議決日は市議会だより第101号の定例会概要から2026年3月18日と特定したが、本会議録による最終確認は未実施である。公表精度は千円単位であり、その精度のまま記録し円単位を合成していない。補正予算や決算とは別stateで扱う。",
+    "period_end": "2027-03-31",
+    "period_start": "2026-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "fukuyama-budget-2026"
+    ],
+    "stage": "initial_budget",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 220468943000,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-342076-fiscal-2024-total-revenue",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入額",
+    "municipality_id": "jp-local-342076",
+    "note": "監査委員『令和6年度福山市一般会計・特別会計決算及び基金運用状況審査意見書』（福監査意見審第3号・2025年9月4日）の第1表に示された一般会計の歳入決算額220,468,943千円（同書の公表精度である千円単位のまま記録し、円単位の精密値を合成していない）。市の財政状況の公表値（令和6年度一般会計歳入2,204億6,900万円）とも整合する。当該決算は議第108号『令和6年度一般会計歳入歳出決算認定』として市議会に提出され、令和7年12月定例会で認定の議決が行われた（同定例会の審議結果一覧の採決結果欄の文言は『認定』）。認定日は市議会だより第100号の定例会概要から2025年11月26日と特定したが、本会議録による最終確認は未実施である。財政状況資料集の普通会計ベースの集計値は一般会計値とは別のため使用していない。FY2024は第五次福山市総合計画の第2期基本計画（2021年度～2025年度）期間の決算である。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "fukuyama-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 212772807000,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-342076-fiscal-2024-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出額",
+    "municipality_id": "jp-local-342076",
+    "note": "同じく審査意見書の第1表に示された一般会計の歳出決算額212,772,807千円（千円単位の公表値のまま記録）。歳入決算額220,468,943千円との差引（形式収支）は7,696,136千円で、同書の第1表・第2表に印字された歳入歳出差引額7,696,136千円と検算一致する。実質収支は4,757,421千円である（差引7,696,136千円－翌年度へ繰り越すべき財源2,938,715千円。同書第2表『決算収支の状況』の実質収支額4,757,421千円による）。実質収支は同書の公表精度である千円単位のまま記録し、円単位を合成しない。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "fukuyama-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  }
+]
