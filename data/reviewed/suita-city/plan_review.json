@@ -1,0 +1,62 @@
+{
+  "id": "phase15-suita-plan-review",
+  "name_ja": "吹田市",
+  "next_action": "Promote the individual projects under the 52 measures (as listed in the implementation plan's project plans by outline, policy and measure) and the per-measure policy indicator values and citizen-awareness indicator values only when official sources with stable record-level locators have been reviewed; complete the final confirmation of both voting dates (the FY2026 budget vote on 2026-03-24 and the FY2024 settlement certification vote on 2025-12-22, each identified from the council's official session schedules) in the plenary minutes; complete the final cross-check against the budget book and the settlement book （事項別明細書） at section level; confirm the content of the audit commissioners' settlement review opinion; record the original basic plan's framework itself (before the FY2024 mid-term revision) and the next (fifth) comprehensive plan after the fourth plan period (ending FY2028) only as separate versions, and never retroactively connect the current plan's measures to the pre-revision basic plan period's results. Keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "official_code": "272051",
+  "quality_boundary": "This package reviews the current plan identity and period (the Fourth Suita City Comprehensive Plan, in a three-layer basic concept / basic plan / implementation plan structure; the basic concept and the basic plan both run FY2019-FY2028, the basic concept showing the future image in its closing passage 『だれもが安心してすこやかで快適に暮らし続けられるまち』 — no fixed-form vision title exists — and the current basic plan is the revised basic plan (FY2024-FY2028, adopted in March 2024 as a mid-term revision, with the second-phase Machi-Hito-Shigoto creation strategy bound in), which sets eight outlines holding 19 policies and 52 measures, all enumerated; the implementation plan is a five-year rolling plan and the current one (FY2026-FY2030) extends beyond the comprehensive plan's final year (FY2028), a period gap kept as structure rather than treated as a defect), the progress-governance layer (the PDCA cycle through administrative evaluation, using policy indicators and a citizen-awareness survey held basically every four years, with each fiscal year's progress published on the official progress page — kept as the municipality's own progress-management framework), the enacted FY2026 initial budget at the published sen-yen (thousand-yen) precision (bill 議案第19号, passed as proposed on 2026-03-24 per the council's official voting-results and vote-split list, 23 to 9; the voting date was identified from the council's official session schedule — the final day's plenary was the only one holding debate and voting — and has not been finally confirmed in the plenary minutes), and the FY2024 settlement at yen precision as published, without collapsing proposed, enacted, supplementary, or settlement states. The FY2024 settlement certification bill (bill 認定第1号) was submitted to the September 2025 regular session, referred to the settlement standing committee, went through continued review, and was certified on 2025-12-22 at the November 2025 regular session: that outcome is recorded exactly as published; the voting date was likewise identified from the official session schedule and has not been finally confirmed in the plenary minutes. The real balance of 259,882 thousand yen is kept at sen-yen precision as published in the official report (the formal balance of 844,653 thousand yen less the 584,771 thousand yen of carryover funding; the report also records a 1,900,000 thousand yen transfer from the fiscal adjustment fund to keep the real balance in surplus). FY2024 is the first year of the revised basic plan, so the plan version is the same as the current plan, but no official total-level mapping from settlement totals to the plan's 19 policies or 52 measures exists, so the linkage stays not_assessable. The succession from the original basic plan to the revised basic plan is kept only as a version chronology record, and the status of the next (fifth) comprehensive plan is left unconfirmed.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "吹田市公式Webサイト『吹田市第4次総合計画』ページ（現行計画の公式入口。Phase 14インベントリで確認）の基本構想Web版「2.計画の構成」「3.計画の期間」の各ページ、および同ページ掲載の公式『第4次総合計画基本計画改訂版』本編序論・概要版（基本計画改訂版の計画期間2024年度～2028年度と基本構想の引き継ぎ）で直接確認",
+      "evidence_role": "current_plan_identity",
+      "id": "suita-current-plan-period",
+      "review_note": "10年間の基本構想・基本計画と、2024年の中間見直しによる基本計画改訂版、5年ローリングの実施計画を別period semanticsとして保持した。レビュー済みレコード。",
+      "source_url": "https://www.city.suita.osaka.jp/shisei/1018811/1018812/1018813/index.html",
+      "statement": "吹田市の総合計画は第4次吹田市総合計画であり、平成31年（2019年）3月に策定された。総合計画は基本構想、基本計画及び実施計画により構成する。基本構想は、本市がめざす将来像（『だれもが安心してすこやかで快適に暮らし続けられるまち』）とそれを実現するための基本方向を施策の大綱として示すものであり、基本構想と基本計画の計画期間は、いずれも2019年度から2028年度までの10年間である。実施計画の計画期間は5年間とし、ローリング方式により毎年度見直しを行う。基本計画については、令和6年（2024年）3月に、計画の評価と検証に基づく中間見直しとして基本計画改訂版が策定され、現行の基本計画は改訂版（対象期間は2024年度～2028年度）である（基本構想は改訂版にも引き継がれている）。Phase 14インベントリの記録（吹田市第4次総合計画 基本計画改訂版・2019年度～2028年度）とも一致する。",
+      "title": "第4次吹田市総合計画の構成と基本構想・基本計画の計画期間",
+      "value": "2019年度～2028年度"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "公式『第4次総合計画基本計画改訂版』概要版の体系図で全件直接確認し、本編（政策・施策）の施策番号（大綱-政策-施策）付きの施策一覧でも全件突合した（大綱別の施策数の合計52で検算一致）",
+      "evidence_role": "policy_structure",
+      "id": "suita-current-policy-structure",
+      "review_note": "公式の計画資料で施策体系を全件確認した。レビュー済みレコード。",
+      "source_url": "https://www.city.suita.osaka.jp/shisei/1018811/1018812/1018813/1032880.html",
+      "statement": "基本計画改訂版の施策体系は、基本構想の施策の大綱（8大綱）のもと、全19政策・全52施策で構成する。大綱1『人権・市民自治』は2政策6施策、大綱2『防災・防犯』は2政策5施策、大綱3『福祉・健康』は4政策11施策、大綱4『子育て・学び』は4政策9施策、大綱5『環境』は1政策3施策、大綱6『都市形成』は2政策7施策、大綱7『都市魅力』は3政策7施策、大綱8『行政経営』は1政策4施策を束ねる（政策数2+2+4+4+1+2+3+1の合計19、施策数6+5+11+9+3+7+7+4の合計52で検算一致）。52施策の全件はpolicy_structureに列挙する。なお、体系図には分野横断の『取組の視点』（分野を超えた連携／市民と行政との協働／地域の特性を生かしたまちづくり）が併記されているが、施策体系の件数には含めない。",
+      "title": "基本計画改訂版の8大綱・全19政策・全52施策"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "吹田市公式Webサイトの基本計画Web版『1.基本計画の進行管理』ページ（進行管理の公式説明）および改訂版概要版（PDCAサイクルによる進行管理）、公式『吹田市第4次総合計画の進捗状況』ページ（各年度の進捗状況の公表。Phase 14インベントリで確認）で確認",
+      "evidence_role": "progress_governance",
+      "id": "suita-progress-governance-framework",
+      "review_note": "進行管理の枠組み（PDCAサイクル・行政評価と結果の公表）を公式資料で直接確認した。評価の個別結果そのものは本パッケージでは扱わない。レビュー済みレコード。",
+      "source_url": "https://www.city.suita.osaka.jp/shisei/1018811/1018812/1018813/1008520.html",
+      "statement": "第4次吹田市総合計画基本計画の進行管理は、PDCAサイクルによる。基本計画で示す政策・施策は、毎年度、具体的な事業を盛り込んだ実施計画を策定しながら個別の事業によって実施され、実施した事業の成果や進捗状況は行政評価により把握・分析し、その評価結果を実施計画の策定に生かす。行政評価では、各施策に設定した施策指標を活用し、新公会計制度の財務諸表なども活用する。施策指標とは別に市民意識指標を設定し、市民意識調査は4年に1回を基本として実施する。また、各年度の進捗状況は公式『吹田市第4次総合計画の進捗状況』ページで公表されており、令和5年度進捗状況以降は基本計画改訂版に基づき取りまとめられている。この進行管理は自治体による進行管理の枠組みであり、Jichi Insight独自の達成判定へ変換しない。",
+      "title": "PDCAサイクル（行政評価）による進行管理と進捗状況の公表"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "公式『第4次総合計画基本計画改訂版』本編序論（策定の趣旨：基本構想は引き継ぎながら、基本計画に係る中間見直しとして必要な増補、追補を行い、令和6年度以降の5か年を対象に策定）および公式『吹田市第4次総合計画』ページ（平成31年3月に策定、令和6年3月に基本計画改訂版を策定の記載）で確認",
+      "evidence_role": "plan_transition",
+      "id": "suita-plan-transition",
+      "review_note": "当初基本計画から改訂版への移行を基本計画のversionの履歴として記録した。レビュー済みレコード。",
+      "source_url": "https://www.city.suita.osaka.jp/shisei/1018811/1018812/1018813/index.html",
+      "statement": "第4次吹田市総合計画の基本計画は、平成31年（2019年）3月に策定された基本計画（2019年度～2028年度）を経て、計画の評価と検証に基づく中間見直しとして、令和6年（2024年）3月に基本計画改訂版（2024年度～2028年度。あわせて第2期まち・ひと・しごと創生総合戦略を一体的に策定）へ引き継がれてきた。基本構想は改訂版にも引き継がれている。各基本計画はversionを分けて保持し、現行計画の施策を改訂前の基本計画期間の実績へ遡及接続しない。第4次総合計画の計画期間は2028年度までであり、次期総合計画の策定状況は本候補では確認していない（確認できた範囲を超えて断定しない）。",
+      "title": "基本計画から基本計画改訂版への移行（中間見直し）"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "FY2024決算の公式入口はPhase 14インベントリの決算資料（決算状況ページ・報告書）。決算総額と基本計画改訂版の19政策・52施策との対応付けは公式資料の総額レベルでは示されていない",
+      "evidence_role": "annual_progress",
+      "id": "suita-fy2024-settlement-linkage",
+      "review_note": "総額レベルの対応付けがないため、接続を推測で記録しない明示的な未判定レコード。決算と政策・施策の対応付けは人間レビュー工程の作業。",
+      "source_url": "https://www.city.suita.osaka.jp/shisei/1018870/1018876/1040442.html",
+      "statement": "FY2024決算値と第4次吹田市総合計画基本計画改訂版の19政策・52施策との接続は未判定（not_assessable）。FY2024は基本計画改訂版（2024年度～2028年度）の初年度の決算であり計画versionは同一であるが、決算総額は会計別の集計値であり、政策・施策との総額レベルの対応付けは公式資料に示されていない。実施計画は大綱・政策・施策別の事業費（計画値）を示すが、FY2024決算総額との対応付けは行われていない。進行管理（行政評価・進捗状況）は施策単位の進行管理routeであり、FY2024決算総額との対応付けは行われていない。FY2024決算の精密値そのものは公式報告書で確認済みであるが、決算と政策・施策の対応付けは人間レビュー工程の作業とする。",
+      "title": "令和6年度決算と基本計画改訂版の19政策・52施策の接続"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-16"
+}

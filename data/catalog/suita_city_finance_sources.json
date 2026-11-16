@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-16",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "suita-city-home",
+      "municipality_key": "suita-city",
+      "organization": "吹田市",
+      "category": "municipality_profile",
+      "title": "吹田市公式サイト",
+      "url": "https://www.city.suita.osaka.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "吹田市の公式自治体サイト。"
+    },
+    {
+      "id": "suita-budget-2026",
+      "municipality_key": "suita-city",
+      "organization": "吹田市",
+      "category": "budget",
+      "title": "令和8年度当初予算",
+      "url": "https://www.city.suita.osaka.jp/shisei/1018870/1018873/1018875/1041852.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算181,996,567千円のEvidence。議案第19号『令和8年度吹田市一般会計予算』として令和8年2月18日に提出され、令和8年3月24日に原案可決された成立予算（吹田市議会公式『令和8年(2026年)2月定例会議決結果・賛否一覧表』で確認。議決日は市議会公式の定例会日程から特定したもので、会議録による最終確認は未実施）。金額は千円単位の公表値のまま記録し、円単位を合成しない。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "suita-settlement-2024",
+      "municipality_key": "suita-city",
+      "organization": "吹田市",
+      "category": "settlement",
+      "title": "令和6年度決算",
+      "url": "https://www.city.suita.osaka.jp/shisei/1018870/1018876/1040442.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入179,335,489,298円・歳出178,490,836,452円を円単位で含む公式報告書（令和6年度吹田市一般会計、特別会計歳入歳出決算に係る主要な施策の成果および基金に関する報告書）。実質収支額は同報告書により259,882千円（同報告書は千円単位の公表のため千円精度のまま記録。実質収支の黒字化を図るため財政調整基金から1,900,000千円を繰り入れている）。決算の認定議案である認定第1号は令和7年11月定例会で令和7年12月22日に認定された（議決日は市議会公式の定例会日程から特定したもので、会議録による最終確認は未実施）。決算書（歳入歳出決算事項別明細書）の款別合計との突合と監査委員の決算審査意見書の内容確認は未実施。"
+    }
+  ]
+}
