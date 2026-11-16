@@ -1,0 +1,46 @@
+{
+  "id": "kanazawa-phase15-sources",
+  "phase": 15,
+  "official_code": "172014",
+  "name_ja": "金沢市",
+  "reviewed_at": "2026-11-16",
+  "quality_boundary": "Current plan identity kept as published (the Future Co-Creation Plan: a single ten-year action plan FY2024-FY2033 under the city vision 『未来を拓く世界の共創文化都市・金沢』, the city's top administrative plan, with three stages and five basic policies holding 21 policy directions; plan versions — original, February 2025 revision and June 2026 revision — kept separate and never retroactively merged), progress governance (KPI-based PDCA with citizen-awareness and policy indicators, stage evaluations and revisions), budget enactment confirmed in the official city gazette (告示第56号, gazette No. 3209, 2026-03-11) with the bill number and vote date left unidentified, and settlement totals kept at the published yen precision without collapsing proposed, enacted, supplementary, or settlement states. The settlement certification date is likewise left unidentified.",
+  "sources": [
+    {
+      "id": "kanazawa-future-co-creation-plan",
+      "title": "未来共創計画",
+      "official_url": "https://www4.city.kanazawa.lg.jp/shiseijoho/seisaku_keikaku/kihon-toshikousou/26161.html",
+      "format": "html",
+      "evidence_role": "comprehensive_plan",
+      "evidence_location": "金沢市公式Webサイト『「未来を拓く世界の共創文化都市・金沢」の実現に向けて』ページは現行計画の公式入口。同ページからリンクされる計画本編（原版・令和7年2月改訂・令和8年6月改訂）および概要版で、金沢市都市像の実現に向けた行動計画としての位置付け（市政運営の最上位計画）、計画期間（令和6年度～令和15年度の10年間、前進期2年・充実期4年・発展期4年）、5つの基本方針と計21の施策方針の体系、KPI（市民意識指標・施策指標）の構成、進捗管理と計画の見直しの枠組みを直接確認",
+      "use_boundary": "現行計画は未来共創計画（2024年度～2033年度）として保持し、原版・令和7年2月改訂・令和8年6月改訂の版を分けて保持する。施策方針の下の施策・主要事業の全件とKPIの全件は本候補では列挙しない。"
+    },
+    {
+      "id": "kanazawa-progress-2026-revision",
+      "title": "未来共創計画 前進期の評価・令和8年6月改訂",
+      "official_url": "https://www4.city.kanazawa.lg.jp/shiseijoho/seisaku_keikaku/kihon-toshikousou/26161.html",
+      "format": "html",
+      "evidence_role": "progress_governance",
+      "evidence_location": "金沢市公式Webサイトの未来共創計画ページに掲載された『前進期の評価・計画の改訂概要』（令和8年6月）で、前進期（令和6年度～令和7年度）のKPIの進捗状況（全85項目：市民意識指標31項目・施策指標54項目、基本方針別の上昇・横ばい・低下の集計）と全体評価・課題、充実期における計画改訂の主な内容（13施策・主要事業36事業の追加）を確認",
+      "use_boundary": "前進期の評価は自治体によるKPI進捗の自己評価として保持し、Jichi Insight独自の政策達成スコアへ変換しない。令和8年6月改訂で追加された施策・事業を原版の体系へ遡及接続しない。"
+    },
+    {
+      "id": "kanazawa-budget-2026",
+      "title": "金沢市予算概要",
+      "official_url": "https://www4.city.kanazawa.lg.jp/shiseijoho/gyozaisei/zaisei_yosan_kessan/2/13057.html",
+      "format": "html",
+      "evidence_role": "budget",
+      "evidence_location": "金沢市公式Webサイト『金沢市予算概要（当初予算及び補正予算）』ページはFY2026当初予算と補正予算の公式入口（Phase 14インベントリで確認）。金額の確定値は同ページの公式『令和8年度（2026年度）金沢市予算概要』の一般会計款別表（単位 千円）で一般会計207,800,000千円を確認し、成立は金沢市公報第3209号（令和8年3月11日）の金沢市告示第56号（地方自治法第219条第2項に基づき、令和7年度金沢市議会2月定例月議会の議決を経た令和8年度金沢市一般会計予算等の要領を公表）で確認。一般会計予算の議案番号と議決日は市議会の議員別賛否一覧・本会議録での確認が取れていない",
+      "use_boundary": "FY2026当初予算は議決・成立済みの額として扱い、proposal/enacted/supplementaryをPhase 15でstage分離する。予算概要は予算案段階の発表資料の性格も持つため、成立の根拠は市公報の告示に置き、両者を混同しない。議案番号・議決日は確認できるまで記録しない。"
+    },
+    {
+      "id": "kanazawa-settlement-2024",
+      "title": "令和6年度決算",
+      "official_url": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/kaikeika/gyomuannai/1_1/30264.html",
+      "format": "html",
+      "evidence_role": "settlement",
+      "evidence_location": "金沢市公式Webサイト『令和6年度決算』ページ（会計課）はFY2024決算の公式入口。同ページに、令和6年度一般会計及び特別会計の決算が令和7年12月定例月議会で認定された旨が明記され、公式『令和6年度金沢市歳入歳出決算書総括表』（単位 円）で一般会計の歳入総額218,624,336,395円・歳出総額210,147,360,368円・歳入歳出差引残額8,476,976,027円を確認し、同ページの一般会計の詳細表（単位 千円）の歳入218,624,336千円・歳出210,147,360千円・実質収支5,081,621千円とも整合。認定の議案番号は金沢市議会公式『令和7年度 金沢市議会12月定例月議会 審議結果』で認定第1号『令和6年度金沢市歳入歳出決算認定について』が賛成多数で認定されたことを確認（認定日は同資料に印字なし）",
+      "use_boundary": "FY2024決算は決算書総括表の円単位の総額で記録し、千円表の値を円単位へ合成しない。決算総額を未来共創計画の基本方針・施策方針やKPIの実績へ直接流用しない。"
+    }
+  ]
+}

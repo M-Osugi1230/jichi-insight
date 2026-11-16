@@ -380,13 +380,25 @@ Declared v1 package:
 
 Deferred depth includes the full enumeration of the latter basic plan's 51 measures, the implementation plan's comprehensive-plan projects and their outcome indicators and results, full-text confirmation of the plan books, the content of the third comprehensive plan now being drafted, inspection of the audit committee's settlement review opinion (including whether yen-precision totals are published there), cross-checks against the settlement detail book and the budget book's bill text and first table, final confirmation of the vote proceedings against the plenary session minutes, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Twenty-fourth completion — Kanazawa
+
+金沢市を24番目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 未来共創計画 — the action plan for the Kanazawa city vision 『未来を拓く世界の共創文化都市・金沢』 (adopted by council vote in December 2023) and the city's top administrative plan; a single ten-year plan FY2024–FY2033 rather than a basic-concept / basic-plan / implementation-plan layer structure, with three stages inside the period (advancement period 2 years, enrichment period 4 years, development period 4 years); five basic policies from the city vision with 21 policy directions beneath them (four under each of basic policies 1–4 and five under basic policy 5; the measures and major projects under the policy directions and all 85 KPIs are not enumerated in v1); progress governance through KPI-based PDCA (citizen-awareness indicators from the annual citizen survey and policy indicators), stage evaluations and plan revisions, with the plan versions (original February 2024, February 2025 revision, June 2026 revision) kept separate and revision-added measures never retroactively connected to the original framework
+- FY2026 general-account initial budget: 207,800,000,000 yen (enacted; enactment confirmed by the official city gazette No. 3209 (2026-03-11), notice No. 56, publishing the budget outline as passed by the February 2026 regular monthly council session under Article 219(2) of the Local Autonomy Act; a skeleton budget (骨格予算) compiled ahead of the mayoral election, centred on mandatory expenses and continuing projects; the general-account budget bill number and the vote date are not identified in the primary sources consulted and are not recorded)
+- FY2024 general-account settlement at yen precision as published: revenue 218,624,336,395 yen / expenditure 210,147,360,368 yen (balance 歳入歳出差引残額 8,476,976,027 yen matches the published figure in the official settlement summary table); certification 認定第1号 certified at the December 2025 regular monthly council session (the exact certification date is not printed in the council's official deliberation results and is not recorded). FY2024 is the first year of the plan period (advancement stage), but its totals are section-level aggregates and are not linked to individual basic policies, policy directions or KPIs, so the linkage stays not_assessable
+
+Deferred depth includes the full enumeration of the measures and major projects under the 21 policy directions, all 85 KPIs and their results, the revision differences (including the 13 measures / 36 major projects added by the June 2026 revision), cross-checks against the settlement detail book and the budget book's bill text and first table, identification of the budget bill number and vote date and of the settlement certification date, inspection of the audit committee's settlement review opinion, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 23 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市
+- Reviewed complete: 24 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市
 - Review in progress: 0
-- Pending record review: 44
+- Pending record review: 43
 - Blocked source inventory: 0
-- Next official code: 172014
+- Next official code: 182010
 
 ## Definition of Phase 15 completion
 

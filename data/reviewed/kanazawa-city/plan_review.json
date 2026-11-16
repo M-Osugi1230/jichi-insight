@@ -1,0 +1,63 @@
+{
+  "id": "phase15-kanazawa-plan-review",
+  "official_code": "172014",
+  "name_ja": "金沢市",
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-16",
+  "next_action": "Promote the full enumeration of the measures and major projects under the 21 policy directions and all 85 KPIs (31 citizen-awareness indicators and 54 policy indicators) and their results only when official sources with stable record-level locators have been reviewed; identify the FY2026 general-account budget bill number and vote date and the FY2024 settlement certification date from council primary sources; cross-check the settlement detail book (事項別明細書); inspect the audit committee's settlement review opinion; record each plan version (original, February 2025 revision, June 2026 revision) separately without retroactively connecting revision-added measures to the original framework; keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "quality_boundary": "This package reviews the current plan identity and period (the Future Co-Creation Plan: a single ten-year action plan FY2024-FY2033 under the Kanazawa city vision 『未来を拓く世界の共創文化都市・金沢』, adopted as the city's top administrative plan, with three stages — advancement (2 years), enrichment (4 years) and development (4 years) — rather than a basic-concept / basic-plan / implementation-plan layer structure), the plan's structure of five basic policies with 21 policy directions beneath them (the measures and major projects under the policy directions and all 85 KPIs are not enumerated in v1), the progress-governance layer (KPI-based PDCA, stage evaluations and plan revisions, with plan versions kept separate), the enacted FY2026 initial budget (a skeleton budget ahead of the mayoral election; its bill number and vote date are not identified), and the FY2024 settlement at yen precision as published, without collapsing proposed, enacted, supplementary, or settlement states. FY2024 is the first year of the plan period (advancement stage), but its totals are section-level aggregates and are not linked to individual basic policies, policy directions or KPIs.",
+  "records": [
+    {
+      "id": "kanazawa-current-plan-period",
+      "title": "未来共創計画の計画期間と位置付け",
+      "statement": "未来共創計画は、金沢市のまちづくりの指針である金沢市都市像『未来を拓く世界の共創文化都市・金沢』（令和5年12月議決）の実現に向けた行動計画であり、都市像に掲げる5つの基本方針ごとに講じるべき主要な施策を取りまとめた市政運営の最上位計画である。令和6年2月に策定され、計画期間は令和6（2024）年度から令和15（2033）年度までの10年間で、期間内に前進期（2年間）・充実期（4年間）・発展期（4年間）の3段階を設定する。Phase 14インベントリの記録（未来共創計画2024年度～2033年度）とも一致する。",
+      "value": "2024年度～2033年度",
+      "decision": "accepted",
+      "evidence_role": "current_plan_identity",
+      "source_url": "https://www4.city.kanazawa.lg.jp/shiseijoho/seisaku_keikaku/kihon-toshikousou/26161.html",
+      "evidence_location": "市公式の未来共創計画ページ（金沢市都市像の実現に向けた行動計画として策定した旨、計画期間、5つの基本方針ごとの主要な施策を取りまとめた市政運営の最上位計画である旨を明記）と、公式『未来共創計画（本編・令和8年6月改訂）』の『未来共創計画の概要』（計画の位置付け・計画期間・金沢市都市像は令和5年12月議決・未来共創計画は令和6年2月策定の図）および公式『未来共創計画（概要版）』で直接確認",
+      "review_note": "計画期間・位置付け・都市像を公式資料で直接確認したレビュー済みレコード。"
+    },
+    {
+      "id": "kanazawa-current-policy-structure",
+      "title": "未来共創計画の5つの基本方針・21施策方針とKPIの体系",
+      "statement": "未来共創計画は、金沢市都市像に掲げる5つの基本方針（1 世界に誇る伝統と創造の文化が息づくまち～魅力づくり～／2 多様な人々が共生し、心豊かに暮らせるまち～暮らしづくり～／3 共に学び、未来を創る人を育むまち～人づくり～／4 創造・変革により成長するまち～仕事づくり～／5 活力と個性があふれ、安全で持続可能なまち～都市づくり～）の下に、計21の施策方針（基本方針1～4に各4件、基本方針5に5件）を位置付ける。各施策方針には取組の進捗や成果を測るKPI（重要業績評価指標）を設定し、KPIは毎年度実施する市民意識アンケート調査により把握する『市民意識指標』と、取組の直接的な成果や進捗状況を示す『施策指標』で構成する。前進期の評価時点のKPIは全85項目（市民意識指標31項目・施策指標54項目）である。施策方針の下の施策・主要事業の全件は本候補では列挙しない。",
+      "decision": "accepted",
+      "evidence_role": "policy_structure",
+      "source_url": "https://www4.city.kanazawa.lg.jp/shiseijoho/seisaku_keikaku/kihon-toshikousou/26161.html",
+      "evidence_location": "公式『未来共創計画（本編・令和8年6月改訂）』の目次『Ⅲ 基本方針ごとの主な施策』（5つの基本方針とその下の施策方針を基本方針1に4件・基本方針2に4件・基本方針3に4件・基本方針4に4件・基本方針5に5件の計21件で列挙）と『未来共創計画の概要』のKPIの項、および公式『前進期の評価・計画の改訂概要』の『前進期の全体評価』（KPIの進捗状況（全体）で全85項目・市民意識指標31項目・施策指標54項目の内訳を基本方針別に集計）で直接確認",
+      "review_note": "公式資料が明示した基本方針・施策方針の体系を一次資料で直接確認したレビュー済みレコード。施策方針の下の施策・主要事業の全件とKPIの全件列挙は行わない（deferred depthとして保持）。"
+    },
+    {
+      "id": "kanazawa-progress-governance-framework",
+      "title": "KPIとPDCAサイクルに基づく進捗管理と評価・見直しの枠組み",
+      "statement": "未来共創計画の進捗管理は、KPIを活用しPlan（計画）‐Do（実施）‐Check（評価）‐Action（改善）のPDCAサイクルに沿って行う。策定後の社会経済情勢や市民ニーズの変化等に柔軟に対応するため、前進期・充実期における評価やKPIの中間目標値の達成状況を勘案しつつ計画を見直し、加えて毎年度、計画の進捗状況等を把握するとともに予算とも連動を図りながら施策の追加や見直しを行う。推進体制は、市長を本部長とする庁内横断組織『共創文化都市推進本部』を設置し全庁的に取り組む枠組みである。",
+      "decision": "accepted",
+      "evidence_role": "progress_governance",
+      "source_url": "https://www4.city.kanazawa.lg.jp/shiseijoho/seisaku_keikaku/kihon-toshikousou/26161.html",
+      "evidence_location": "公式『未来共創計画（本編・令和8年6月改訂）』の『進捗管理と計画の見直し』（KPIを活用したPDCAサイクルによる進捗管理、前進期・充実期における評価やKPIの中間目標値の達成状況を勘案した計画の見直し、毎年度の進捗把握と予算との連動による施策の追加・見直し）と『推進体制』（市長を本部長とする庁内横断組織『共創文化都市推進本部』）で直接確認",
+      "review_note": "進行管理の枠組み（PDCA・期ごとの評価と改訂・推進体制）を公式資料で直接確認したレビュー済みレコード。個別KPIの実績そのものは本パッケージでは扱わない。"
+    },
+    {
+      "id": "kanazawa-plan-revision-chronology",
+      "title": "未来共創計画の改訂経緯（原版・令和7年2月改訂・令和8年6月改訂）",
+      "statement": "未来共創計画には版の履歴がある。原版は令和6年2月に策定され、その後令和7年2月改訂を経て、前進期（令和6年度～令和7年度）の終了にあわせ、KPIの進捗状況を踏まえた前進期の評価と課題の検証に基づき、充実期における計画の更なる推進を図るため13施策（主要事業36事業）を追加する令和8年6月改訂が行われた。基本方針・施策方針の枠組みは改訂後も同一である。各版はversionを分けて保持し、改訂で追加された施策・事業を原版の体系へ遡及接続しない。",
+      "decision": "accepted",
+      "evidence_role": "plan_transition",
+      "source_url": "https://www4.city.kanazawa.lg.jp/shiseijoho/seisaku_keikaku/kihon-toshikousou/26161.html",
+      "evidence_location": "市公式の未来共創計画ページに掲載された計画本編の版一覧（『未来共創計画（本編）』『未来共創計画（本編・令和7年2月改訂）』『未来共創計画（本編・令和8年6月改訂）』）と、公式『前進期の評価・計画の改訂概要』（令和8年6月。前進期の終了にあわせKPIの進捗状況を踏まえ評価と課題等を検証し、充実期における計画の更なる推進を図るため13施策（主要事業：36事業）を追加した旨）で確認。改訂版本編の目次で基本方針・施策方針の枠組みが原版と同一であることも確認",
+      "review_note": "改訂の経緯と版の分離のみを公式資料で確認したレビュー済みレコード。改訂で追加された施策・事業の全件と令和7年2月改訂の差分詳細は本パッケージでは記録しない。"
+    },
+    {
+      "id": "kanazawa-fy2024-settlement-linkage",
+      "title": "令和6年度決算と未来共創計画の施策方針・KPIの接続",
+      "statement": "FY2024決算値と未来共創計画の基本方針・施策方針・KPIとの接続は未判定（not_assessable）。FY2024は未来共創計画の計画期間（2024年度～2033年度）の初年度であり前進期の1年目に属する決算であるが、決算総額は款別の集計値であり、個別施策・事業との対応付けは総額レベルでは行われていない。前進期の評価（令和8年6月）はKPIの進捗状況を検証したものであるが、決算総額との突合・対応付けは未実施である。決算と事業の対応付けは人間レビュー工程の作業とする。",
+      "fiscal_year": 2024,
+      "decision": "not_assessable",
+      "evidence_role": "annual_progress",
+      "source_url": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/kaikeika/gyomuannai/1_1/30264.html",
+      "evidence_location": "市公式『令和6年度決算』ページ（決算総額の確認先の公式資料。計画の進捗評価の公式入口は未来共創計画ページの『前進期の評価・計画の改訂概要』）",
+      "review_note": "決算総額を確認できたことと、個別事業の接続を推測で記録しないことは別の判断であることを示す明示的な未判定レコード。決算と事業の対応付けは人間レビュー工程の作業。"
+    }
+  ]
+}

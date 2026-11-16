@@ -1,0 +1,71 @@
+{
+  "id": "kanazawa-phase15-completion",
+  "phase": 15,
+  "status": "reviewed_complete",
+  "official_code": "172014",
+  "name_ja": "金沢市",
+  "completed_at": "2026-11-16",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "source_catalog_path": "data/catalog/kanazawa_phase15_sources.json",
+    "plan_review_path": "data/reviewed/kanazawa-city/plan_review.json",
+    "policy_structure_path": "data/catalog/kanazawa_current_policy_structure.json",
+    "progress_review_path": "data/catalog/kanazawa_current_progress_review_summary.json",
+    "fiscal_records_path": "data/reviewed/kanazawa-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/kanazawa-city/evidence_packets.json",
+    "counts": {
+      "basic_goals": 5,
+      "basic_plan_measures": 21,
+      "promoted_implementation_item_actual_records": 0,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "current_plan_period_reviewed": true,
+    "current_plan_policy_structure_reviewed": true,
+    "implementation_plan_layer_reviewed": true,
+    "fiscal_states_and_years_separate": true,
+    "budget_enactment_state_preserved": true,
+    "settlement_linkage_not_assessable_preserved": true,
+    "individual_implementation_items_not_overpromoted": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "current-plan-granular-kpi-and-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "施策方針の下の施策・主要事業の全件、KPI全85項目（市民意識指標31項目・施策指標54項目）とその実績は追加depthとし、公式対応が確認できるまで昇格しない。KPIは計画の改訂に伴い版ごとに変わり得るため、版を分離して保持する。"
+    },
+    {
+      "id": "plan-revision-version-depth",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "未来共創計画の改訂差分（令和7年2月改訂の変更内容、令和8年6月改訂で追加された13施策・主要事業36事業の全件）は記録しない。各版が公式に公表された範囲で、版の履歴として別途記録する。"
+    },
+    {
+      "id": "settlement-audit-opinion-inspection",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "監査委員の決算審査意見書における意見内容の確認は未実施であり、決算総額（円単位）と認定経過の確認に留める。"
+    },
+    {
+      "id": "current-plan-annual-evaluation-evidence",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "前進期の評価を含むKPI進捗の個別エビデンス（KPI項目ごとの実績、市民意識アンケート調査の結果等）は昇格しない。制度の枠組みのみを確認した。"
+    },
+    {
+      "id": "fiscal-detail-and-amendment-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "予算・決算の項目別内訳（決算事項別明細書の款別合計との突合、予算書の議案条文・第1表との最終突合を含む）、補正予算による変更経過、執行・契約・補助金の接続は記録しない。あわせて、一般会計予算の議案番号・議決日と決算の認定日は一次資料で確認できるまで記録しない。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "政策効果の因果認定、Jichi Insight独自の政策達成度スコア、他都市との未検証の比較・ランキングは作成しない。KPIに基づく進捗管理（自治体自己評価の枠組み）をJichi Insight独自の達成判定へ変換しない。"
+    }
+  ],
+  "completion_boundary": "金沢市のPhase 15 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味し、所有者（大杉邑大、単独運用体制）が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが金沢市公式サイトの一次資料で検証した結果に基づく（所有者本人が一次資料を直接レビューしたものではない）。金沢市の計画体系（未来共創計画は金沢市都市像『未来を拓く世界の共創文化都市・金沢』（令和5年12月議決）の実現に向けた行動計画であり、市政運営の最上位計画として、基本構想・基本計画・実施計画の層構造ではなく単一の10年計画（2024年度～2033年度）で構成し、期間内に前進期（2年間）・充実期（4年間）・発展期（4年間）の3段階を設定する。計画は都市像の5つの基本方針の下に計21の施策方針を位置付け、各施策方針にKPI（市民意識指標・施策指標）を設定し、KPIを活用したPDCAサイクルと市長を本部長とする共創文化都市推進本部で進行管理する。計画の版（原版・令和7年2月改訂・令和8年6月改訂）はversionを分けて保持し、改訂で追加された施策・事業を原版の体系へ遡及接続しない）、成立したFY2026一般会計当初予算（207,800,000千円。成立は金沢市公報第3209号・金沢市告示第56号で確認した市長選挙を控えた骨格予算であり、一般会計予算の議案番号・議決日は特定していない）、FY2024一般会計決算の円単位総額（歳入218,624,336,395円・歳出210,147,360,368円、歳入歳出差引残額8,476,976,027円で検算一致）とその認定（認定第1号・令和7年12月定例月議会で認定。認定日は特定していない）を一次資料で確認した。FY2024は未来共創計画の計画期間初年度（前進期）の決算であるが、決算総額は款別の集計値であり、基本方針・施策方針・KPIとの接続はnot_assessableとして保持する。施策方針の下の施策・主要事業の全件、KPI全85項目と実績、改訂差分の詳細、決算事項別明細書の款別合計との突合、予算書の議案条文・第1表との最終突合、一般会計予算の議案番号・議決日の特定、決算の認定日の特定、監査委員の決算審査意見書における意見内容の確認はdeferred depthである。Jichi Insight独自の政策達成度スコアや他都市とのランキングは作成しない。KPIに基づく進捗管理（自治体自己評価）をJichi Insight独自の達成判定へ変換しない。"
+}
