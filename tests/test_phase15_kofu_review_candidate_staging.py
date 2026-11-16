@@ -72,38 +72,50 @@ def test_kofu_sources_match_inventory_and_stay_official_only() -> None:
     assert all(source["evidence_location"] for source in sources)
     assert all(source["use_boundary"] for source in sources)
     by_id = {source["id"]: source for source in sources}
-    assert by_id["kofu-seventh-plan"]["verification_status"] == (
-        "primary_source_live_verified_2026-11-16"
-    )
-    for unverified_id in (
-        "kofu-first-implementation-design",
+    for verified_id in (
+        "kofu-seventh-plan",
         "kofu-budget-2026",
         "kofu-settlement-2024",
     ):
-        assert by_id[unverified_id]["verification_status"] == (
-            "official_landing_not_live_verified_2026-11-16"
+        assert by_id[verified_id]["verification_status"] == (
+            "primary_source_live_verified_2026-11-16"
         )
+    assert by_id["kofu-first-implementation-design"]["verification_status"] == (
+        "official_landing_not_live_verified_2026-11-16"
+    )
 
 
-def test_kofu_fiscal_amounts_remain_unconfirmed_not_assessable() -> None:
+def test_kofu_fiscal_amounts_are_primary_source_verified() -> None:
     candidate = load_json(CANDIDATE_PATH)
     package = candidate["candidate_package"]
 
     assert len(package["fiscal_records"]) == 3
     for record in package["fiscal_records"]:
-        assert record["amount_yen"] is None
         assert record["value"] is None
-        assert record["value_status"] == "not_found"
-        assert record["confidence"] == "not_assessable"
+        assert record["value_status"] == "available"
+        assert record["confidence"] == "medium"
         assert record["review_status"] == "needs_review"
 
+    # The FY2026 initial budget was enacted as bill No. 5 at the
+    # March 2026 regular council session (vote on 2026-03-25), so it
+    # must not be labelled as a draft proposal (予算案). The amount
+    # is the sen-yen total on which the account summary table and
+    # both the revenue and expenditure tables of the city's official
+    # initial-budget materials agree (91,787,060千円); it is kept at
+    # sen-yen precision and never expanded into synthetic yen.
     budget = fiscal_record(
         candidate, "jp-local-192015-fiscal-2026-total-expenditure"
     )
     assert budget["fiscal_year"] == 2026
     assert budget["stage"] == "initial_budget"
-    assert "二次情報" in budget["note"]
+    assert budget["amount_yen"] == 91787060000
+    assert "議案第5号" in budget["note"]
+    assert "令和8年3月25日" in budget["note"]
 
+    # The FY2024 settlement totals are published at yen precision in
+    # the audit commissioners' settlement-review opinion (甲監発第24号).
+    # Their difference must equal the published balance
+    # (歳入歳出差引額) of 1,605,557,300 yen.
     revenue = fiscal_record(candidate, "jp-local-192015-fiscal-2024-total-revenue")
     expenditure = fiscal_record(
         candidate, "jp-local-192015-fiscal-2024-total-expenditure"
@@ -111,8 +123,12 @@ def test_kofu_fiscal_amounts_remain_unconfirmed_not_assessable() -> None:
     for settlement in (revenue, expenditure):
         assert settlement["fiscal_year"] == 2024
         assert settlement["stage"] == "settlement"
+    assert revenue["amount_yen"] == 91644865806
+    assert expenditure["amount_yen"] == 90039308506
+    assert revenue["amount_yen"] - expenditure["amount_yen"] == 1605557300
     assert "議案第95号" in revenue["note"]
     assert "認定" in revenue["note"]
+    assert "令和7年10月2日" in revenue["note"]
 
     assert len(package["evidence_packets"]) == 3
     for packet in package["evidence_packets"]:
@@ -120,8 +136,21 @@ def test_kofu_fiscal_amounts_remain_unconfirmed_not_assessable() -> None:
         assert all(
             claim["decision"] == "needs_review" for claim in packet["claims"]
         )
-        assert all("未確認" in claim["statement"] for claim in packet["claims"])
+        assert all("未確認" not in claim["statement"] for claim in packet["claims"])
         assert packet["open_questions"]
+
+    budget_packet = evidence_packet(
+        candidate, "evidence-kofu-city-2026-total-expenditure"
+    )
+    assert "議案第5号" in budget_packet["claims"][0]["statement"]
+    assert "91,787,060千円" in budget_packet["claims"][0]["statement"]
+
+    revenue_packet = evidence_packet(
+        candidate, "evidence-kofu-city-2024-total-revenue"
+    )
+    assert "91,644,865,806円" in revenue_packet["claims"][0]["statement"]
+    assert "議案第95号" in revenue_packet["claims"][0]["statement"]
+    assert "令和7年10月2日" in revenue_packet["claims"][0]["statement"]
 
 
 def test_kofu_plan_framework_is_primary_source_checked() -> None:
