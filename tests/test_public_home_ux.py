@@ -34,7 +34,8 @@ def test_public_home_keeps_the_critical_journey_and_smoke_copy():
     assert 'href="/methodology"' in homepage
     assert "JapanMapExplorer" in homepage
     assert "<JapanMapExplorer" in homepage
-    assert "地図から、まちを見つける。" in (WEB / "components/JapanMapExplorer.tsx").read_text(encoding="utf-8")
+    map_content = (WEB / "components/JapanMapExplorer.tsx").read_text(encoding="utf-8")
+    assert "地図から、まちを見つける。" in map_content
     assert "政策達成評価" in homepage
     assert 'aria-label="Phase 15 詳細レビューの完了状況"' in homepage
 
