@@ -1,0 +1,46 @@
+{
+  "id": "higashiosaka-phase15-sources",
+  "name_ja": "東大阪市",
+  "official_code": "272272",
+  "phase": 15,
+  "quality_boundary": "Current plan identity kept as published (the Third Higashiosaka City Comprehensive Plan, FY2021-FY2030 with FY2030 as the target year and the future image 『つくる・つながる・ひびきあう ― 感動創造都市 東大阪 ―』; implementation plans split into the first (FY2021-FY2023) and the second (FY2024-FY2027), each revised through annual versions, the current version being the second implementation plan Ver.3.0; the policy structure is seven fields plus three priority measures, with per-field individual measures not enumerated and kept as deferred depth), progress governance (after each fiscal year, PDCA-cycle project evaluation with a published project evaluation report and indicator achievement status, kept as the municipality's own progress-management framework), budget enactment confirmed in the council's official bill list (bill 議案第36号, passed with amendments （修正可決） on 2026-03-26; the amount is the post-vote enacted figure at the published sen-yen precision and is never expanded into synthetic finer amounts; the specific content of the amendments is unconfirmed), and settlement totals kept at the published sen-yen precision from the audit commissioners' settlement review opinion (the settlement certification bill 認定第1号 was certified on 2025-12-01 at the December 2025 regular session after continued review; the real balance of 3,767,144 thousand yen is kept at sen-yen precision) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "reviewed_at": "2026-11-16",
+  "sources": [
+    {
+      "evidence_location": "東大阪市公式Webサイト『東大阪市第3次総合計画』ページ（Phase 14インベントリで確認）。目標年次（令和12年）・将来都市像・計画本編／概要版の公開と、実施計画（第1次・第2次と各Ver.）・実績報告（事業評価報告書・評価指標達成状況）・総括（第1次実施計画実績報告書）の構成を直接確認した",
+      "evidence_role": "comprehensive_plan",
+      "format": "html",
+      "id": "higashiosaka-third-plan",
+      "official_url": "https://www.city.higashiosaka.lg.jp/0000028226.html",
+      "title": "東大阪市第3次総合計画",
+      "use_boundary": "現行計画は東大阪市第3次総合計画（2021年度～2030年度）として保持し、実施計画の第1次（2021年度～2023年度）と第2次（2024年度～2027年度）と各Ver.を版として分離する"
+    },
+    {
+      "evidence_location": "同『東大阪市第3次総合計画』ページの実施計画の節で、第2次実施計画Ver.1.0（令和6年度から令和9年度の4年間を計画期間）・Ver.2.0・Ver.3.0の策定と、実績報告の節で令和6年度・令和7年度の事業評価報告書・評価指標達成状況の公表を直接確認した",
+      "evidence_role": "implementation_plan_and_progress",
+      "format": "html",
+      "id": "higashiosaka-second-implementation",
+      "official_url": "https://www.city.higashiosaka.lg.jp/0000028226.html",
+      "title": "第2次実施計画",
+      "use_boundary": "第2次実施計画の複数versionと年度終了後のPDCA評価routeを保持し、過去versionや評価を上書きしない"
+    },
+    {
+      "evidence_location": "FY2026当初予算の金額は、東大阪市公式の令和8年度一般会計補正予算（第1回）予算書（補正前の額241,023,138千円）と市公式『令和8年度会計別補正予算額の状況』（一般会計の補正前の額241,023,138千円）で確認し、財政状況の公表（令和8年6月1日）の一般会計予算額241,023百万円とも整合させた。補正予算書の『補正前の額』は議決後の成立額である。議案番号・議決日・議決結果は補完調査で市議会公式サイト（higashiosaka.gijiroku.com）の議案一覧表により確認し、議案第36号が令和8年2月第1回定例会で2026年3月26日に修正可決（起立多数）された",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "higashiosaka-budget-2026",
+      "official_url": "https://www.city.higashiosaka.lg.jp/0000000529.html",
+      "title": "予算状況",
+      "use_boundary": "FY2026当初予算は補正予算・決算と別stateで保持する。金額は千円単位の公表値であり、円単位を合成しない。議案番号・議決日・議決結果（議案第36号・2026年3月26日修正可決）は確認済みであり、議決後の成立額を保持する。修正の具体的内容・修正箇所は未確認のまま保持する"
+    },
+    {
+      "evidence_location": "FY2024決算の公式入口（Phase 14インベントリで確認）。当該ページの取得は本候補作成時に成功しなかったが、一般会計の歳入・歳出の精密値（千円単位）は東大阪市監査委員『令和6年度東大阪市一般会計・特別会計決算及び基金運用状況審査意見書』（東大阪監第846号・令和7年8月25日）で直接確認した。決算の認定結果は補完調査で市議会公式サイト（higashiosaka.gijiroku.com）の議案一覧表により確認し、認定第1号が令和7年9月第3回定例会での継続審査を経て令和7年12月第4回定例会で2025年12月1日に認定された",
+      "evidence_role": "settlement",
+      "format": "html",
+      "id": "higashiosaka-settlement-2024",
+      "official_url": "https://www.city.higashiosaka.lg.jp/0000000531.html",
+      "title": "決算状況",
+      "use_boundary": "FY2024決算は第2次実施計画（2024年度～2027年度）の初年度の決算として保持する。歳入・歳出・実質収支は監査委員の審査意見書の千円単位の公表値のまま記録し、認定結果（認定第1号・2025年12月1日認定）も市議会公式の議案一覧表で確認済みである"
+    }
+  ]
+}
