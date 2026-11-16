@@ -1,0 +1,61 @@
+{
+  "id": "okazaki-phase15-completion",
+  "phase": 15,
+  "status": "reviewed_complete",
+  "official_code": "232025",
+  "name_ja": "岡崎市",
+  "completed_at": "2026-11-16",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "source_catalog_path": "data/catalog/okazaki_phase15_sources.json",
+    "plan_review_path": "data/reviewed/okazaki-city/plan_review.json",
+    "policy_structure_path": "data/catalog/okazaki_current_policy_structure.json",
+    "progress_review_path": "data/catalog/okazaki_current_progress_review_summary.json",
+    "fiscal_records_path": "data/reviewed/okazaki-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/okazaki-city/evidence_packets.json",
+    "counts": {
+      "basic_goals": 10,
+      "basic_plan_measures": 54,
+      "promoted_implementation_item_actual_records": 0,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "current_plan_period_reviewed": true,
+    "current_plan_policy_structure_reviewed": true,
+    "implementation_plan_layer_reviewed": true,
+    "fiscal_states_and_years_separate": true,
+    "budget_enactment_state_preserved": true,
+    "settlement_linkage_not_assessable_preserved": true,
+    "individual_implementation_items_not_overpromoted": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "current-plan-granular-kpi-and-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "54の主な取組に基づく未来投資パッケージの推進事業の全件と、グループ別参考指標の個別値（2030年の目標値・現況値）は追加depthとし、公式対応が確認できるまで昇格しない。未来投資パッケージは版を分離して保持する。"
+    },
+    {
+      "id": "settlement-values-and-budget-amendment-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "補正予算による変更経過、補正予算・決算と個別事業費の対応関係は追加エビデンス確認前は記録・結合しない。FY2024決算は未来投資計画前期（2021年度〜2025年度）の4年目の決算として保持するが、決算総額を後期計画の取組・パッケージの実績へ流用しない。予算書・決算書の事項別明細書の款別合計との最終突合も未実施である。令和8年3月定例会の議決結果一覧表による『原案可決』の文言の直接確認も未実施のまま保持する。"
+    },
+    {
+      "id": "plan-transition-version-depth",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "前期計画（未来投資計画前期）の枠組みそのものは記録しない。移行の経過は版の履歴として別途記録し、後期計画の取組体系を前期の体系へ遡及接続しない。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "第7次岡崎市総合計画・財政等のレビューは政策効果の因果認定や他都市比較可能性を意味しない。4グループによる目標設定・進捗管理（自治体自己管理の枠組み）をJichi Insight独自の達成判定へ変換しない。"
+    }
+  ],
+  "completion_boundary": "岡崎市のPhase 15 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味し、所有者（大杉邑大、単独運用体制）が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが岡崎市公式サイトの一次資料で検証した結果に基づく（所有者本人が一次資料を直接レビューしたものではない）。岡崎市の計画体系（総合計画は総合政策指針・未来投資計画・個別計画で構成する。総合政策指針は30年先を見据えた10年間の政策指針で、目標年度は令和32年度（2050年）、将来都市像は『一歩先の暮らしで三河を拓く 中枢・中核都市おかざき』、基本指針は公民連携による成長戦略の推進／コンパクトな都市構造の構築／まちへの誇りが育まれる社会づくり／周辺都市との連携の推進の4つである。未来投資計画は将来都市像の実現に向けた10年間の推進事業パッケージを前期（2021年度〜2025年度）・後期（2026年度〜2030年度）の5年ごとに示し、現行は後期計画であり、令和8年3月に未来投資計画部分を見直して改定した。後期計画の『分野別の主な取組』は10分野・全54件で構成し、54件の全件を列挙する。分野横断の『未来投資パッケージ』として未来のまち／未来のひと／未来のしごと／未来のパートナーシップの4パッケージを掲げる。進行管理は10分野を『まち・環境』『ひと・社会』『しごと・経済』『行政運営・パートナーシップ』の4グループに分けて目標設定・進捗管理を行い、グループごとに参考指標（2030年の目標値と現況値）を設定する方式であり、パッケージの推進事業内訳は社会経済情勢の変化を踏まえて随時変更される）、成立したFY2026一般会計当初予算（154,850,000千円。第56号議案『令和8年度岡崎市一般会計予算』として令和8年3月定例会に提出され、予算決算委員会への付託を経て、令和8年3月23日（定例会最終日）の本会議で採決され成立した。ただし、令和8年3月定例会の議決結果一覧表そのものは直接確認できておらず、『原案可決』の文言は未確認のまま保持する（成立自体は、公式『令和8年度当初予算の概要』が成立予算の概要として公表されていること、および同定例会で成立した令和8年度一般会計補正予算（第1号）と令和8年6月定例会の補正予算（第2号・第3号）が当初予算の存在を前提とすることから裏付けられる）。公表精度が千円単位のため千円精度のまま記録し、円単位を合成していない）、FY2024一般会計決算の円単位総額（歳入157,798,763,028円・歳出148,542,565,874円、差引額9,256,197,154円が公式『令和6年度決算の概要』の歳入歳出差引額と一致し、繰越事業充当財源2,796,865,869円を控除した実質収支（純剰余金）6,459,331,285円とも検算が一致することを確認）とその認定（認定第1号『令和6年度岡崎市一般・特別会計の決算の認定について』が令和7年9月定例会で令和7年9月30日に認定されたことを市議会公式『議決結果一覧表』で確認）を一次資料で確認した。未来投資計画の前期から後期への移行は移行記録として分離して保持し、後期計画の取組体系を前期期間の実績へ遡及接続しない。FY2024は未来投資計画前期の計画期間の決算であり後期計画とは計画versionが異なるため、決算総額と後期計画の主な取組・未来投資パッケージとの接続はnot_assessableとして保持する。54件の主な取組に基づく未来投資パッケージの推進事業の全件、グループ別参考指標の個別値、予算書・決算書の事項別明細書の款別合計との最終突合、令和8年3月定例会の議決結果一覧表による『原案可決』の文言の直接確認、監査委員の決算審査意見書の内容確認はdeferred depthである。Jichi Insight独自の政策達成度スコアや他都市とのランキングは作成しない。4グループによる目標設定・進捗管理（自治体自己管理の枠組み）をJichi Insight独自の達成判定へ変換しない。"
+}
