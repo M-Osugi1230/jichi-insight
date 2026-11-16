@@ -1,0 +1,65 @@
+[
+  {
+    "account_type": "general",
+    "amount_yen": 223255000000,
+    "confidence": "high",
+    "fiscal_year": 2026,
+    "id": "jp-local-442011-fiscal-2026-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算総額",
+    "municipality_id": "jp-local-442011",
+    "note": "大分市の令和8年度一般会計当初予算総額223,255,000千円。『令和8年度大分市予算』（当初予算書）第1条に「歳入歳出予算の総額は、歳入歳出それぞれ223,255,000千円と定める」と印字された値を直接確認した。議案は議第1号『令和8年度大分市一般会計予算』であり、議決結果は市議会公式『令和8年第1回定例会 議決結果賛否一覧表』で結果欄の文言「可決」（賛否は多数）を直接確認し、その文言のまま記録する（議決日は2026年3月26日）。なお財政課の当初予算ページでは「令和8年度当初予算および令和7年度3月補正予算は原案通り可決されました」と公表されているが、議決結果の記録は市議会公式の賛否一覧表の結果欄の文言による。公表精度は千円単位であり、その精度のまま記録し円単位を合成していない。補正予算や決算とは別stateで扱う。",
+    "period_end": "2027-03-31",
+    "period_start": "2026-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "oita-budget-2026"
+    ],
+    "stage": "initial_budget",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 226470701000,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-442011-fiscal-2024-total-revenue",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入額",
+    "municipality_id": "jp-local-442011",
+    "note": "大分市『令和6年度大分市歳入歳出決算概要説明書』の一般会計決算収支状況に千円単位で印字された令和6年度の歳入総額226,470,701千円。公表精度は千円単位であり、その精度のまま記録し円単位を合成していない。当該決算の議案は議第106号『令和6年度大分市歳入歳出決算の認定について』であり、財政課の公式ページに「令和6年度の決算については第3回市議会定例会にて認定されました」と記載されていることと、市議会公式の決算審査特別委員会の分科会審査日程で議第106号の審査を確認したことから、令和7年第3回定例会で認定された事実を記録する。その後、議決日が2025年9月25日であることを、市議会公式『令和7年第3回大分市議会定例会議決結果一覧』の議決結果賛否一覧表で、議第106号の結果欄「認定（多数）」（決算認定（9月25日議決分））により確認した。認定日の確認根拠は実ブラウザによる補完調査である。『大分市普通会計決算状況』等の普通会計ベースの集計値は一般会計とは集計範囲が異なるため使用していない。FY2024は前計画「おおいた創造ビジョン2024」の第2次基本計画の最終年度の決算である。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "oita-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 220402983000,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-442011-fiscal-2024-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出額",
+    "municipality_id": "jp-local-442011",
+    "note": "同じく決算概要説明書の一般会計決算収支状況に千円単位で印字された令和6年度の歳出総額220,402,983千円。歳入総額226,470,701千円との差引額（形式収支）は6,067,718千円で、同説明書に印字された形式収支と検算一致する。翌年度へ繰り越すべき財源は841,548千円、実質収支は5,226,170千円であり、いずれも同説明書に千円単位で印字された値のまま記録する（形式収支から繰越財源を差し引いた額と検算一致する）。公表精度は千円単位であり、その精度のまま記録し円単位を合成していない。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "oita-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  }
+]

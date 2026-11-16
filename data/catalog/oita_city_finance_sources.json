@@ -1,0 +1,49 @@
+{
+  "records": [
+    {
+      "availability": "published",
+      "category": "municipality_profile",
+      "confidence": "high",
+      "id": "oita-city-home",
+      "indexed_at": "2026-11-17",
+      "municipality_key": "oita-city",
+      "notes": "大分市の公式自治体サイト。",
+      "organization": "大分市",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "大分市公式サイト",
+      "url": "https://www.city.oita.oita.jp/"
+    },
+    {
+      "availability": "published",
+      "category": "budget",
+      "confidence": "high",
+      "id": "oita-budget-2026",
+      "indexed_at": "2026-11-17",
+      "municipality_key": "oita-city",
+      "notes": "一般会計当初予算223,255,000千円（千円精度）のEvidence。『令和8年度大分市予算』（当初予算書）第1条に「歳入歳出予算の総額は、歳入歳出それぞれ223,255,000千円と定める」と印字された値を直接確認した（逆算による特定ではない）。議決結果は市議会公式『令和8年第1回定例会 議決結果賛否一覧表』で議第1号『令和8年度大分市一般会計予算』の結果欄の文言「可決」（2026年3月26日、賛否は多数）を直接確認し、その文言のまま記録した。千円単位の公表値のまま記録し、円単位を合成しない。補正予算・執行・決算とは分離する。",
+      "organization": "大分市",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "令和8年度当初予算（案）および令和7年3月補正予算（案）について",
+      "url": "https://www.city.oita.oita.jp/o032/r8tousyo-r7_3hosei.html"
+    },
+    {
+      "availability": "published",
+      "category": "settlement",
+      "confidence": "high",
+      "id": "oita-settlement-2024",
+      "indexed_at": "2026-11-17",
+      "municipality_key": "oita-city",
+      "notes": "一般会計歳入226,470,701千円・歳出220,402,983千円（いずれも千円単位）を含む公式決算資料の入口。一般会計の決算額は『令和6年度大分市歳入歳出決算概要説明書』の一般会計決算収支状況で確認し、歳入歳出差引額（形式収支）6,067,718千円が同説明書の印字値と検算一致した。実質収支は5,226,170千円（同じく千円単位で印字された値のまま記録する）。決算の認定は議第106号『令和6年度大分市歳入歳出決算の認定について』として、令和7年第3回定例会で2025年9月25日に認定（多数）された（市議会公式『令和7年第3回大分市議会定例会議決結果一覧』の議決結果賛否一覧表を実ブラウザによる補完調査で確認）。『大分市普通会計決算状況』等の普通会計ベースの集計値は一般会計の値とは集計範囲が別のため使用していない。決算事項別明細書の款別合計との最終突合と、決算書の実質収支に関する調書そのものの値との突合は未実施である。",
+      "organization": "大分市",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "令和6年度 大分市決算の概要について",
+      "url": "https://www.city.oita.oita.jp/o032/r6kessangaiyou.html"
+    }
+  ],
+  "scope": "phase15-core-capital-review",
+  "updated_at": "2026-11-17",
+  "version": "0.1.0"
+}
