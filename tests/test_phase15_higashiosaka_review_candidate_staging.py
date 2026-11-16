@@ -154,10 +154,16 @@ def test_higashiosaka_candidate_fiscal_records_use_primary_source_values() -> No
     assert budget["sources"] == ["higashiosaka-budget-2026"]
     assert "241,023,138千円" in budget["note"]
     assert "千円単位" in budget["note"]
-    # The budget bill number, vote date and vote wording were not confirmed
-    # in council primary sources, so they stay explicitly unconfirmed.
-    assert "議案番号" in budget["note"]
-    assert "未確認" in budget["note"]
+    # The supplementary research confirmed the budget bill in the council's
+    # official bill list: bill No. 36 was passed with amendments (修正可決)
+    # on 2026-03-26, not in its original form. The recorded amount is the
+    # enacted post-vote figure (the supplementary budget book's 補正前の額).
+    assert "議案第36号" in budget["note"]
+    assert "修正可決" in budget["note"]
+    assert "2026年3月26日" in budget["note"]
+    assert "補正前の額" in budget["note"]
+    assert "成立額" in budget["note"]
+    assert "原案可決" not in budget["note"]
     revenue = records["jp-local-272272-fiscal-2024-total-revenue"]
     expenditure = records["jp-local-272272-fiscal-2024-total-expenditure"]
     for record in (revenue, expenditure):
@@ -168,7 +174,13 @@ def test_higashiosaka_candidate_fiscal_records_use_primary_source_values() -> No
         assert record["sources"] == ["higashiosaka-settlement-2024"]
         assert "千円" in record["note"]
         assert "東大阪監第846号" in record["note"]
-        assert "未確認" in record["note"]
+    # The FY2024 certification was confirmed in the supplementary research
+    # from the council's official bill lists: certification bill No. 1 was
+    # kept under continued review in the September 2025 session and
+    # certified on 2025-12-01 in the December session.
+    for record in (revenue, expenditure):
+        assert "認定第1号" in record["note"]
+        assert "2025年12月1日" in record["note"]
     assert revenue["metric"] == "total_revenue"
     assert revenue["amount_yen"] == 233897034000
     assert expenditure["metric"] == "total_expenditure"
@@ -179,7 +191,7 @@ def test_higashiosaka_candidate_fiscal_records_use_primary_source_values() -> No
     assert "3,767,144千円" in expenditure["note"]
 
 
-def test_higashiosaka_candidate_never_claims_fy2024_certification() -> None:
+def test_higashiosaka_candidate_records_fy2024_certification() -> None:
     payload = candidate()
     package = payload["candidate_package"]
     settlement_texts = []
@@ -194,14 +206,21 @@ def test_higashiosaka_candidate_never_claims_fy2024_certification() -> None:
             settlement_texts.append(json.dumps(record, ensure_ascii=False))
     assert settlement_texts
     for text in settlement_texts:
-        # The FY2024 certification outcome was not confirmed in council
-        # primary sources; the candidate must not assert either outcome.
-        assert "認定された" not in text
+        # The supplementary research confirmed from the council's official
+        # bill lists that certification bill No. 1 was kept under continued
+        # review in the September 2025 session and certified on 2025-12-01
+        # in the December session. The outcome must be recorded as a
+        # certification, never as a rejection.
+        assert "認定第1号" in text
+        assert "2025年12月1日" in text
         assert "不認定" not in text
-        assert "未確認" in text
     whole_text = json.dumps(payload, ensure_ascii=False)
     assert "不認定" not in whole_text
-    assert "認定された" not in whole_text
+    # The FY2026 budget was passed with amendments (修正可決), so the
+    # candidate must never describe it as passed in its original form.
+    assert "修正可決" in whole_text
+    assert "議案第36号" in whole_text
+    assert "原案可決" not in whole_text
 
 
 def test_higashiosaka_candidate_evidence_packets_point_at_primary_sources() -> None:
@@ -221,11 +240,15 @@ def test_higashiosaka_candidate_evidence_packets_point_at_primary_sources() -> N
     budget_claim = packets["evidence-higashiosaka-city-2026-total-expenditure"]["claims"][0]
     assert budget_claim["source_ids"] == ["higashiosaka-budget-2026"]
     assert "241,023,138千円" in budget_claim["statement"]
-    assert "未確認" in budget_claim["statement"]
+    assert "議案第36号" in budget_claim["statement"]
+    assert "修正可決" in budget_claim["statement"]
+    assert "2026年3月26日" in budget_claim["statement"]
+    assert "原案可決" not in budget_claim["statement"]
     revenue_claim = packets["evidence-higashiosaka-city-2024-total-revenue"]["claims"][0]
     assert revenue_claim["source_ids"] == ["higashiosaka-settlement-2024"]
     assert "233,897,034千円" in revenue_claim["statement"]
-    assert "未確認" in revenue_claim["statement"]
+    assert "認定第1号" in revenue_claim["statement"]
+    assert "2025年12月1日" in revenue_claim["statement"]
     expenditure_claim = packets["evidence-higashiosaka-city-2024-total-expenditure"][
         "claims"
     ][0]
@@ -233,6 +256,8 @@ def test_higashiosaka_candidate_evidence_packets_point_at_primary_sources() -> N
     assert "229,860,314千円" in expenditure_claim["statement"]
     assert "4,036,720千円" in expenditure_claim["statement"]
     assert "3,767,144千円" in expenditure_claim["statement"]
+    assert "認定第1号" in expenditure_claim["statement"]
+    assert "2025年12月1日" in expenditure_claim["statement"]
 
 
 def test_higashiosaka_candidate_progress_review_stays_staging() -> None:
