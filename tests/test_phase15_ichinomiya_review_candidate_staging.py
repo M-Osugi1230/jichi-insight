@@ -157,30 +157,60 @@ def test_ichinomiya_prepared_candidate_records_only_verified_fiscal_values():
 
     # The FY2024 settlement certification bill
     # (認定第4号) was submitted on 2025-09-29 and
-    # referred to committees for recess review, but no
-    # primary source for the vote result itself was
-    # obtained. The candidate must therefore keep the
-    # certification outcome explicitly unconfirmed and
-    # must never assert that the settlement was
-    # certified (or rejected).
+    # referred to committees for recess review. The
+    # council's official bill-and-result list for the
+    # December 2025 regular session (議案・議決結果一覧
+    # (令和7年12月定例会), published by the council
+    # secretariat on the city domain) records bill
+    # 認定4 as certified (認定) with vote date
+    # 2025-12-01, the session's opening day, whose
+    # finalized agenda also lists the bill. The
+    # candidate must therefore record the certification
+    # and its date as verified, and the settlement
+    # book's real-balance statement (実質収支に関する
+    # 調書) fixes the FY2024 real balance at 6,207,237
+    # thousand yen (thousand-yen precision, rounded),
+    # which must be kept at that published precision
+    # rather than synthesised into an exact yen figure.
     revenue_packet = next(
         pkt
         for pkt in packets
         if pkt["subject_id"] == "jp-local-232033-fiscal-2024-total-revenue"
     )
     assert "認定第4号" in revenue_packet["claims"][0]["statement"]
-    assert "未確認" in revenue_packet["claims"][0]["statement"]
-    assert "認定された" not in revenue_packet["claims"][0]["statement"]
+    assert "令和7年12月1日" in revenue_packet["claims"][0]["statement"]
+    assert "認定された" in revenue_packet["claims"][0]["statement"]
+    assert "6,207,237千円" in revenue_packet["claims"][0]["statement"]
+    assert "未確認" not in revenue_packet["claims"][0]["statement"]
     expenditure_packet = next(
         pkt
         for pkt in packets
         if pkt["subject_id"] == "jp-local-232033-fiscal-2024-total-expenditure"
     )
     assert "認定第4号" in expenditure_packet["claims"][0]["statement"]
-    assert "認定された" not in expenditure_packet["claims"][0]["statement"]
+    assert "令和7年12月1日" in expenditure_packet["claims"][0]["statement"]
+    assert "認定された" in expenditure_packet["claims"][0]["statement"]
     assert "認定第4号" in revenue["note"]
     assert "認定第4号" in expenditure["note"]
-    assert "未確認" in revenue["note"]
+    assert "令和7年12月1日" in revenue["note"]
+    assert "認定された" in revenue["note"]
+    assert "6,207,237千円" in revenue["note"]
+    assert "未確認" not in revenue["note"]
+    assert "令和7年12月1日" in expenditure["note"]
+    assert "認定された" in expenditure["note"]
+    # The certification result and the real balance are
+    # confirmed, so no settlement packet may keep an open
+    # question asking for their confirmation.
+    for pkt in (revenue_packet, expenditure_packet):
+        assert all("議決結果" not in q for q in pkt["open_questions"])
+        assert all("実質収支" not in q for q in pkt["open_questions"])
+    settlement_source = next(
+        source
+        for source in package["source_catalog"]["sources"]
+        if source["id"] == "ichinomiya-settlement-2024"
+    )
+    assert "令和7年12月1日" in settlement_source["use_boundary"]
+    assert "未確認" not in settlement_source["use_boundary"]
 
     plan_review = package["plan_review"]
     assert plan_review["review_status"] == "pending_record_review"
