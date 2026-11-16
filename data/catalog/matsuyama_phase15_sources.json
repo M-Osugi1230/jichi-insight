@@ -1,0 +1,46 @@
+{
+  "id": "matsuyama-phase15-sources",
+  "name_ja": "松山市",
+  "official_code": "382019",
+  "phase": 15,
+  "quality_boundary": "Current plan identity kept as published (the seventh Matsuyama City comprehensive plan: the basic concept (FY2025-FY2034), the basic plan (first period FY2025-FY2029; second period FY2030-FY2034) and the implementation plan (three-year, revised annually on a rolling basis), with the future city vision 『人、まち、仕事がつながる SETOUCHIの交流拠点まつやま』, the philosophy, three directions and eleven policy fields; the layer semantics are kept separate and the period status stays verified_fixed_period (FY2025-FY2034) as recorded in the inventory; the framework was cross-checked against the Phase 14 inventory, the draft basic concept, the outline of the draft first-period basic plan and the confirmed FY2026 budget overview, and the final text of the basic concept and the first-period basic plan itself has not been directly reviewed; the 32 measures under the eleven fields are not enumerated and stay deferred depth), progress governance (the PDCA cycle, external evaluation and citizen awareness surveys — kept as the municipality's own progress-management framework), budget enactment kept as printed in the council's official per-member vote table for the March 2026 session (bill 議案第9号; the result wording is 原案可決 (adopted as proposed), kept verbatim; the vote date is 2026-03-19) and the amount kept at the published sen-yen precision (235,160,000 thousand yen, confirmed in article 1 of the budget bill, in the account-by-account budget summary table and in the FY2026 budget overview, and never expanded into synthetic finer amounts), and settlement totals kept at the published sen-yen precision (the settlement certification, bill 認定第1号, was placed under continued review at the September 2025 regular session and was certified on 2025-11-28 at the December 2025 regular session, confirmed in the council's official per-member vote tables; the real balance of 2,603,854 thousand yen stays at the published thousand-yen precision; ordinary-account aggregate figures published by Ehime Prefecture are not used, because their aggregation scope differs from the general account) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "reviewed_at": "2026-11-17",
+  "sources": [
+    {
+      "evidence_location": "市の計画ページの掲載内容はPhase 14出典目録で確認済みであり、本候補では基本構想（素案）で将来都市像「人、まち、仕事がつながる SETOUCHIの交流拠点まつやま」と理念を確認し、前期基本計画（案）の概要で3つの方向性と11の政策分野を確認し、確定文書である令和8年度予算の概要でも将来都市像と11の政策分野が同一の名称・順序で再掲されていることを確認した（基本構想・前期基本計画の最終本編そのものの直接確認は未実施）",
+      "evidence_role": "comprehensive_plan",
+      "format": "html",
+      "id": "matsuyama-seventh-plan",
+      "official_url": "https://www.city.matsuyama.ehime.jp/shisei/keikaku/sogokeikaku/7jisogokeikaku.html",
+      "title": "第7次松山市総合計画",
+      "use_boundary": "第7次松山市総合計画（2025年度～2034年度）をcurrent versionとして保持し、前計画である第6次松山市総合計画と分離する。前計画期間の成果を現行計画のcurrent actualへ流用しない"
+    },
+    {
+      "evidence_location": "市民意識調査は第7次松山市総合計画の進行管理（PDCAサイクル・外部評価・市民意識調査）の枠組みとして、Phase 14出典目録に市の計画ページの内容として記録されている",
+      "evidence_role": "progress_governance",
+      "format": "html",
+      "id": "matsuyama-citizen-survey",
+      "official_url": "https://www.city.matsuyama.ehime.jp/shisei/keikaku/sogokeikaku/7jisogokeikaku.html",
+      "title": "第7次松山市総合計画 市民意識調査",
+      "use_boundary": "市民の実感・現状を把握する調査を進行管理Evidenceとして保持し、主観指標を客観成果や独自政策達成度へ変換しない"
+    },
+    {
+      "evidence_location": "予算ページから令和8年度松山市予算案（議案第9号）を取得し第1条で一般会計235,160,000千円を確認し、令和8年度各会計別予算総括表および令和8年度予算の概要でも同額を確認した。議決結果は市議会公式『議案等議員別表決結果一覧表』（令和8年3月定例会）で、議案第9号が3月19日に原案可決されたことを直接確認した",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "matsuyama-budget-2026",
+      "official_url": "https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/yosan.html",
+      "title": "予算（事業概要、予算額等）",
+      "use_boundary": "FY2026当初予算は補正予算・決算と別stateで保持する。金額は千円単位の公表値であり、円単位を合成しない"
+    },
+    {
+      "evidence_location": "監査のページから令和6年度松山市各会計決算審査意見書第1冊（松監第63号、令和7年8月26日）を取得し、一般会計の歳入232,638,142千円・歳出228,347,195千円・形式収支4,290,947千円・翌年度へ繰り越すべき財源1,687,093千円・実質収支2,603,854千円（いずれも千円単位）を確認し、差引と実質収支が検算一致することを確認した。市の『令和6年度 松山市財政事情の公表』の一般会計決算総括表とも一致する。認定第1号は市議会公式の議案等議員別表決結果一覧表で、令和7年9月定例会では継続審査、令和7年12月定例会では「認定」（議決日11月28日）と確認した。普通会計ベースの集計値は一般会計の値とは別のため使用していない",
+      "evidence_role": "settlement",
+      "format": "html",
+      "id": "matsuyama-settlement-audit-2024",
+      "official_url": "https://www.city.matsuyama.ehime.jp/shisei/kansa/kakukaikeikessan.html",
+      "title": "各会計決算審査意見",
+      "use_boundary": "FY2024決算は予算・補正と別stateで保持する。歳入・歳出・実質収支は公表精度である千円単位のまま記録し、円単位を合成しない。普通会計ベースの集計値と一般会計値を混同しない。FY2024決算は第6次計画期間の決算であり、第7次計画のcurrent actualへ流用しない"
+    }
+  ]
+}

@@ -40,7 +40,7 @@ def _package() -> dict:
     return _candidate()["candidate_package"]
 
 
-def test_matsuyama_candidate_is_prepared_and_unpublished() -> None:
+def test_matsuyama_candidate_is_prepared_with_delegated_review_approved() -> None:
     candidate = _candidate()
     assert candidate["candidate_id"] == "matsuyama-phase15-review-candidate"
     assert candidate["official_code"] == "382019"
@@ -48,9 +48,17 @@ def test_matsuyama_candidate_is_prepared_and_unpublished() -> None:
     assert candidate["status"] == "review_candidate"
     assert candidate["package_state"] == "prepared"
     assert candidate["human_review"]["required"] is True
-    assert candidate["human_review"]["status"] == "pending"
-    assert candidate["human_review"]["reviewed_at"] is None
-    assert candidate["human_review"]["reviewer_note"] is None
+    assert candidate["human_review"]["status"] == "approved"
+    assert candidate["human_review"]["reviewed_at"] == "2026-11-17"
+    assert candidate["human_review"]["reviewer_note"]
+    # The owner did not review the primary sources personally: on
+    # 2026-11-15 the owner explicitly delegated the review to Muse in
+    # chat, and the note must record that delegation rather than
+    # claiming an owner review.
+    assert "委任" in candidate["human_review"]["reviewer_note"]
+    assert "レビューはあなたがやってください" in candidate["human_review"][
+        "reviewer_note"
+    ]
     assert candidate["publication"]["eligible"] is False
 
 
@@ -249,14 +257,17 @@ def test_matsuyama_progress_review_stays_staging() -> None:
     assert "市民意識調査" in framework["evaluation_structure"]
 
 
-def test_matsuyama_candidate_leaves_review_queue_unchanged() -> None:
+def test_matsuyama_promotion_is_reflected_in_review_queue() -> None:
     queue = json.loads(QUEUE_PATH.read_text(encoding="utf-8"))
     summary = queue["summary"]
-    assert summary["reviewed_complete_count"] == 57
-    assert summary["pending_record_review_count"] == 10
-    assert summary["next_official_code"] == "382019"
+    assert summary["reviewed_complete_count"] == 58
+    assert summary["pending_record_review_count"] == 9
+    assert summary["next_official_code"] == "392014"
     entry = next(
         item for item in queue["execution_queue"] if item["official_code"] == "382019"
     )
-    assert entry["status"] == "pending_record_review"
-    assert entry["completion_path"] is None
+    assert entry["status"] == "reviewed_complete"
+    assert (
+        entry["completion_path"]
+        == "data/catalog/matsuyama_phase15_completion.json"
+    )

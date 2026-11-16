@@ -52,9 +52,9 @@ def test_tokushima_review_package_is_the_fifty_sixth_completion():
     }
 
     queue = load(QUEUE)
-    assert queue["summary"]["reviewed_complete_count"] == 57
-    assert queue["summary"]["pending_record_review_count"] == 10
-    assert queue["summary"]["next_official_code"] == "382019"
+    assert queue["summary"]["reviewed_complete_count"] == 58
+    assert queue["summary"]["pending_record_review_count"] == 9
+    assert queue["summary"]["next_official_code"] == "392014"
     entry = next(
         row for row in queue["execution_queue"] if row["official_code"] == "362018"
     )

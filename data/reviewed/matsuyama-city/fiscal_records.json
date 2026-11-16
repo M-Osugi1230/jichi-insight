@@ -1,0 +1,65 @@
+[
+  {
+    "account_type": "general",
+    "amount_yen": 235160000000,
+    "confidence": "high",
+    "fiscal_year": 2026,
+    "id": "jp-local-382019-fiscal-2026-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算総額",
+    "municipality_id": "jp-local-382019",
+    "note": "松山市の令和8年度一般会計当初予算総額235,160,000千円。市公式『令和8年度松山市予算案』（議案第9号、令和8年2月17日提出）の第1条で、歳入歳出予算の総額は歳入歳出それぞれ235,160,000千円と定められていることを直接確認し、市公式『令和8年度各会計別予算総括表』の一般会計235,160,000千円および『令和8年度予算の概要』の一般会計2,351億6,000万円とも一致する。議決結果は市議会公式『議案等議員別表決結果一覧表』（令和8年3月定例会）で、議案第9号が2026年3月19日に原案可決されたことを直接確認し、その文言のまま記録する（市議会だより令和8年5月15日号も、本会議の審議を経て原案可決された令和8年度当初予算と明記している）。公表精度は千円単位であり、その精度のまま記録し円単位を合成していない。補正予算や決算とは別stateで扱う。",
+    "period_end": "2027-03-31",
+    "period_start": "2026-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "matsuyama-budget-2026"
+    ],
+    "stage": "initial_budget",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 232638142000,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-382019-fiscal-2024-total-revenue",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入額",
+    "municipality_id": "jp-local-382019",
+    "note": "監査委員『令和6年度松山市各会計決算審査意見書』第1冊（松監第63号、令和7年8月26日）の一般会計決算表に示された一般会計の歳入総額（収入済額）232,638,142千円。市の公式資料『令和6年度 松山市財政事情の公表』（令和7年7月）の一般会計の決算の状況とも一致する。当該決算は認定第1号『令和6年度松山市一般・特別会計決算の認定について』として令和7年9月定例会に提出され、市議会公式の議案等議員別表決結果一覧表では同定例会における議決結果は「継続審査」と記録されている。その後、令和7年12月定例会の表決結果一覧表（差し替え後）で認定第1号の結果欄は「認定」となり、議決日は同定例会初日の2025年11月28日である（市議会だより令和8年2月15日号も継続審査分の認定第1号の認定を記している）。公表精度は千円単位のため千円精度のまま記録し、円単位を合成していない。都道府県等が公表する普通会計ベースの集計値は一般会計とは集計範囲が異なるため使用していない。FY2024は第6次松山市総合計画の期間内（最終年度）の決算である。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "matsuyama-settlement-audit-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 228347195000,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-382019-fiscal-2024-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出額",
+    "municipality_id": "jp-local-382019",
+    "note": "同じく決算審査意見書第1冊の一般会計決算表に示された一般会計の歳出総額（支出済額）228,347,195千円。歳入総額232,638,142千円との歳入歳出差引額（形式収支）は4,290,947千円で、同表の印字値と検算一致する。実質収支は2,603,854千円であり（形式収支4,290,947千円－翌年度へ繰り越すべき財源1,687,093千円。内訳は継続費逓次繰越額1千円と繰越明許費繰越額1,687,092千円）、同表に印字された実質収支と一致する。市の『令和6年度 松山市財政事情の公表』とも一致する。実質収支は公表精度である千円単位のまま記録し、円単位を合成しない。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "matsuyama-settlement-audit-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  }
+]
