@@ -374,7 +374,7 @@ def test_ichinomiya_and_previous_thirty_one_are_reviewed_complete_and_toyota_is_
     ):
         assert by_code[code]["status"] == "reviewed_complete"
 
-    assert queue["summary"]["reviewed_complete_count"] == 35
+    assert queue["summary"]["reviewed_complete_count"] == 36
     assert queue["summary"]["review_in_progress_count"] == 0
-    assert queue["summary"]["pending_record_review_count"] == 32
-    assert queue["summary"]["next_official_code"] == "272035"
+    assert queue["summary"]["pending_record_review_count"] == 31
+    assert queue["summary"]["next_official_code"] == "272051"

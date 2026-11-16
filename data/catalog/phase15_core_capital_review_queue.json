@@ -484,9 +484,9 @@
       "prefecture_name_ja": "大阪府",
       "municipality_type": "city",
       "phase14_role": "core_city",
-      "status": "pending_record_review",
+      "status": "reviewed_complete",
       "source_inventory_path": "data/indexed/toyonaka-city/source_inventory.json",
-      "completion_path": null
+      "completion_path": "data/catalog/toyonaka_phase15_completion.json"
     },
     {
       "sequence": 37,
@@ -894,11 +894,11 @@
   ],
   "summary": {
     "target_count": 67,
-    "reviewed_complete_count": 35,
+    "reviewed_complete_count": 36,
     "review_in_progress_count": 0,
-    "pending_record_review_count": 32,
+    "pending_record_review_count": 31,
     "blocked_source_inventory_count": 0,
-    "next_official_code": "272035"
+    "next_official_code": "272051"
   },
   "updated_at": "2026-11-16"
 }

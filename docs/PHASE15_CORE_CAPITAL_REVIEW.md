@@ -524,13 +524,25 @@ Declared v1 package:
 
 Deferred depth includes the individual projects under the 32 measures in the project evaluation, the per-measure outcome indicator values, cross-checks against the budget book and the settlement book (事項別明細書) at section level, direct confirmation of the yen value in the real-balance statement itself, direct confirmation of the "原案可決" wording for bill No. 3 in the plenary minutes, the First and Second Action Plans' frameworks themselves, the next comprehensive plan, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Thirty-sixth completion — Toyonaka
+
+豊中市を36番目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 第4次豊中市総合計画 — the city's top-level plan under the Toyonaka City Basic Autonomy Ordinance, in a three-layer structure of basic concept （基本構想）, basic plan （基本計画） and implementation plan （実施計画）. The basic concept runs FY2018–FY2027 and shows the future city image 『みらい創造都市 とよなか ～明日がもっと楽しみなまち～』 with the policy outline （施策大綱） for its realization. The basic plan is split into a first period (FY2018–FY2022) and the current latter basic plan (FY2023–FY2027), which sets five chapters holding 16 measures (all 16 are enumerated) plus the leading project （南部地域活性化プロジェクト）, kept outside the measure count; the implementation plan is provided through the digital budget book from FY2024 onward; progress is managed through policy evaluation （政策評価： the 16 measures and the leading project are evaluated every year on two axes — progress and content — with results published in the digital budget book and the policy evaluation result summaries) — the municipality's own progress-management framework. The succession from the first basic plan (FY2018–FY2022, 17 measures) to the latter basic plan is kept only as version chronology records, and the status of the next comprehensive plan after the basic concept period (ending FY2027) is left unconfirmed
+- FY2026 general-account initial budget: 206,946,719 thousand yen (enacted; bill 市議案第8号 『令和8年度豊中市一般会計予算』, submitted by Mayor 長内繁樹 on 2026-02-24 and passed as proposed （原案可決） on 2026-03-23 per the council's official voting-results list (『議決結果（令和8年（2026年）3月定例会）』), whose published wording states 原案可決）. The amount is published at sen-yen (thousand-yen) precision, so it is kept at that precision and yen-precision amounts are not synthesized
+- FY2024 general-account settlement at yen precision as published: revenue 197,263,021,788 yen / expenditure 191,790,466,590 yen (the balance of 5,472,555,198 yen matches the balance printed in the official settlement book; the real balance is 4,930,077 thousand yen per the real-balance statement itself, kept at sen-yen precision because that statement is published in thousand yen with rounding adjustments). The settlement certification bill, bill 市議案第74号 『令和6年度大阪府豊中市各経済歳入歳出決算認定について』 (covering the general account and the other accounts), was submitted to the September 2025 regular session, went through continued review, and was voted NOT certified （不認定） on 2025-11-28 at the December 2025 regular session per the council's official voting-results list — that outcome is recorded exactly as published and is never rewritten as a certification. FY2024 is a settlement inside the latter basic plan period (its second year), so the plan version is the same as the current plan, but no official total-level mapping from settlement totals to the plan's 16 measures or the leading project exists, so the totals are not linked to the plan's measures and the linkage stays not_assessable
+
+Deferred depth includes the individual projects under the 16 measures, the per-measure outcome indicator values, the leading project's project breakdown, cross-checks against the budget explanation book and the settlement book （事項別明細書） at section level, the content of the mayor's measures in response to the non-certification (Local Autonomy Act Article 233(7)) and of any report to the council, the first basic plan's framework itself, the next comprehensive plan, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 35 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市
+- Reviewed complete: 36 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市
 - Review in progress: 0
-- Pending record review: 32
+- Pending record review: 31
 - Blocked source inventory: 0
-- Next official code: 272035
+- Next official code: 272051
 
 ## Definition of Phase 15 completion
 
