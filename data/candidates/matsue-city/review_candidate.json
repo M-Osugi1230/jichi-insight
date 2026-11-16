@@ -1,0 +1,414 @@
+{
+ "candidate_id": "matsue-phase15-review-candidate",
+ "candidate_package": {
+  "evidence_packets": [
+   {
+    "claims": [
+     {
+      "decision": "needs_review",
+      "field": "amount_yen",
+      "location_note": "市公式『令和8年度一般会計・特別会計予算書』（議第56号・令和8年2月25日提出）の第1条で歳入歳出予算の総額119,391,000千円を確認した。議決結果は市議会公式『令和8年第1回松江市議会（定例会）議案等一覧表』の議第56号の記載『（3月26日原案可決）』で直接確認した",
+      "review_note": "予算書の第1条と議案等一覧表から一般会計当初予算の総額と議決を確認したステージング。人間による確認待ちステージング。",
+      "source_ids": [
+       "matsue-budget-2026"
+      ],
+      "statement": "令和8年度一般会計当初予算は119,391,000千円（119,391,000,000円）であり、成立した予算である。金額は松江市公式『令和8年度一般会計・特別会計予算書』（議第56号）の第1条（歳入歳出予算の総額は歳入歳出それぞれ119,391,000千円）で確認し、議決は市議会公式『令和8年第1回松江市議会（定例会）議案等一覧表』の議第56号の記載（3月26日原案可決）で確認した。議決結果の文言は一次資料の表記どおり『原案可決』である。公表精度は千円単位のため千円精度のまま記録する。"
+     }
+    ],
+    "id": "evidence-matsue-city-2026-total-expenditure",
+    "open_questions": [
+     "予算に関する説明書（事項別明細書）の款別合計との最終突合。"
+    ],
+    "review_status": "needs_review",
+    "subject_id": "jp-local-322016-fiscal-2026-total-expenditure",
+    "subject_type": "fiscal_record"
+   },
+   {
+    "claims": [
+     {
+      "decision": "needs_review",
+      "field": "amount_yen",
+      "location_note": "市公式『令和6年度決算の概要』（令和7年9月議会提出資料）の一般会計決算表で歳入決算額115,607,870千円（千円単位）を確認し、監査委員審査意見書（監第56号）の第1表でも同値を確認した。認定は市議会公式『令和7年第5回松江市議会（定例会）議案等一覧表』の決算第1号の記載『（10月7日 認定）』と同定例会の議員別表決結果で直接確認した",
+      "review_note": "決算の概要と監査委員審査意見書から一般会計歳入総額を千円精度で抽出し、議案等一覧表で決算第1号の認定を直接確認したステージング。人間による確認待ちステージング。",
+      "source_ids": [
+       "matsue-settlement-2024"
+      ],
+      "statement": "令和6年度一般会計決算の歳入総額は115,607,870千円である（松江市公式『令和6年度決算の概要』および監査委員『令和6年度松江市一般会計・特別会計歳入歳出決算審査意見書』（監第56号）による。いずれも千円単位の公表のため千円精度のまま記録する）。当該決算は決算第1号として市議会に提出され、令和7年第5回定例会で2025年10月7日に認定の議決が行われた（市議会公式『議案等一覧表』の結果欄の文言は『認定』）。"
+     }
+    ],
+    "id": "evidence-matsue-city-2024-total-revenue",
+    "open_questions": [
+     "決算書（歳入歳出決算事項別明細書）の款別合計との最終突合。",
+     "歳入歳出決算書本体に円単位の精密値が印字されている場合の円単位値の確認（現時点では公式の決算の概要・監査委員審査意見書の千円精度で記録している）。",
+     "監査委員の決算審査意見書の内容（個別の指摘事項等）の精査。"
+    ],
+    "review_status": "needs_review",
+    "subject_id": "jp-local-322016-fiscal-2024-total-revenue",
+    "subject_type": "fiscal_record"
+   },
+   {
+    "claims": [
+     {
+      "decision": "needs_review",
+      "field": "amount_yen",
+      "location_note": "同資料で歳出決算額113,268,794千円と歳入歳出差引2,339,076千円を確認した。実質収支1,962,986千円は監査委員審査意見書の第3表『一般会計決算収支の推移』（単位：千円）と決算の概要による（差引2,339,076千円－翌年度へ繰り越すべき財源376,090千円）",
+      "review_note": "決算の概要と監査委員審査意見書から一般会計歳出総額を千円精度で抽出し、歳入総額との差引と実質収支が検算一致することを確認したステージング。人間による確認待ちステージング。",
+      "source_ids": [
+       "matsue-settlement-2024"
+      ],
+      "statement": "令和6年度一般会計決算の歳出総額は113,268,794千円である（同資料による。千円精度のまま記録する）。歳入総額115,607,870千円との差引は2,339,076千円で両資料の記載と検算一致する。実質収支は1,962,986千円であり（差引2,339,076千円－翌年度へ繰り越すべき財源376,090千円）、実質収支に関する調書の集計を示す監査委員審査意見書の公表精度が千円単位のため千円精度のまま記録する。"
+     }
+    ],
+    "id": "evidence-matsue-city-2024-total-expenditure",
+    "open_questions": [
+     "決算書（歳入歳出決算事項別明細書）の款別合計との最終突合。"
+    ],
+    "review_status": "needs_review",
+    "subject_id": "jp-local-322016-fiscal-2024-total-expenditure",
+    "subject_type": "fiscal_record"
+   }
+  ],
+  "fiscal_records": [
+   {
+    "account_type": "general",
+    "amount_yen": 119391000000,
+    "confidence": "medium",
+    "fiscal_year": 2026,
+    "id": "jp-local-322016-fiscal-2026-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算総額",
+    "municipality_id": "jp-local-322016",
+    "note": "松江市の令和8年度一般会計当初予算総額119,391,000千円。市公式『令和8年度一般会計・特別会計予算書』（議第56号『令和8年度松江市一般会計予算』・令和8年2月25日に松江市長上定昭仁が提出）の第1条に『歳入歳出予算の総額は、歳入歳出それぞれ119,391,000千円と定める』と印字されている。市議会公式『令和8年第1回松江市議会（定例会）議案等一覧表』は議第56号の結果を『（3月26日原案可決）』と記載しており、議決結果の文言は一次資料の表記どおり『原案可決』である（2026年3月26日議決）。公表精度は千円単位であり、その精度のまま記録し円単位を合成していない。補正予算や決算とは別stateで扱う。Phase 14インベントリに記載された予算ランディングURLは市サイト再編で移転しており、金額と議決は現行の財政課『令和8年度予算の概要』ページから辿れる予算書と議案等一覧表で確認した。",
+    "period_end": "2027-03-31",
+    "period_start": "2026-04-01",
+    "review_status": "needs_review",
+    "sources": [
+     "matsue-budget-2026"
+    ],
+    "stage": "initial_budget",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+   },
+   {
+    "account_type": "general",
+    "amount_yen": 115607870000,
+    "confidence": "medium",
+    "fiscal_year": 2024,
+    "id": "jp-local-322016-fiscal-2024-total-revenue",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入額",
+    "municipality_id": "jp-local-322016",
+    "note": "松江市公式『令和6年度決算の概要』（令和7年9月議会提出資料）に示された一般会計の歳入決算額115,607,870千円。監査委員『令和6年度松江市一般会計・特別会計歳入歳出決算審査意見書』（監第56号・令和7年8月22日）の第1表（決算の規模）でも歳入115,607,870千円・予算現額125,013,565千円が示され、両資料で一致する。両資料とも千円単位の公表のため千円精度のまま記録し、円単位を合成していない。当該決算は決算第1号『令和6年度松江市一般会計歳入歳出決算』として市議会に提出され、令和7年第5回定例会（9月）で2025年10月7日に認定の議決が行われた（市議会公式『議案等一覧表』の結果欄の文言は『認定』であり、同定例会の『議員別表決結果』でも決算第1号の議決結果は『認定』）。FY2024は現行の松江市総合計画『MATSUE DREAMS 2030』（基本構想2022年度～2029年度）の期間内の決算である。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "needs_review",
+    "sources": [
+     "matsue-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+   },
+   {
+    "account_type": "general",
+    "amount_yen": 113268794000,
+    "confidence": "medium",
+    "fiscal_year": 2024,
+    "id": "jp-local-322016-fiscal-2024-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出額",
+    "municipality_id": "jp-local-322016",
+    "note": "同じく両資料に示された一般会計の歳出決算額113,268,794千円（千円精度のまま記録）。歳入総額115,607,870千円との差引（形式収支）は2,339,076千円で、両資料の記載と検算一致する。実質収支は1,962,986千円である（形式収支2,339,076千円－翌年度へ繰り越すべき財源376,090千円＝1,962,986千円で検算一致。監査委員審査意見書の第3表『一般会計決算収支の推移』および『令和6年度決算の概要』による）。実質収支の公表精度も千円単位のため千円精度のまま記録し、円単位を合成していない。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "needs_review",
+    "sources": [
+     "matsue-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+   }
+  ],
+  "plan_review": {
+   "id": "phase15-matsue-plan-review",
+   "name_ja": "松江市",
+   "official_code": "322016",
+   "records": [
+    {
+     "decision": "needs_review",
+     "evidence_location": "計画の構成（5基本目標・18基本施策）と実施計画の毎年度見直しは市公式『松江市総合計画（MATSUE DREAMS 2030）』ページで直接確認した。計画期間（基本構想2022年度～2029年度・実施計画3年間とし毎年度見直す）・基本理念・将来像は、市公式の政策部事業概要および計画の資料編で確認した。基本構想の本編PDFは画像中心でテキスト抽出が乏しく、本編そのものからの文言確認は行っていない",
+     "evidence_role": "current_plan_identity",
+     "id": "matsue-current-plan-period",
+     "review_note": "総合計画の構成（基本構想・実施計画）と各層の期間を別period semanticsとして保持した。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.matsue.lg.jp/gyoseijoho/kakushukeikaku/10/4/8737.html",
+     "statement": "松江市の現行総合計画は松江市総合計画『MATSUE DREAMS 2030』（令和4年（2022年）3月策定）であり、松江市総合計画条例（平成27年松江市条例第52号）に基づく本市の最上位計画である。構成は、まちづくりの基本理念・将来像・基本目標を示す『基本構想』と具体的な事業を示す『実施計画』からなる。基本構想の計画期間は2022年度～2029年度の8年間、実施計画は3年間を単位とし毎年度見直す。基本理念は『松江のジダイをつくる』、将来像は『夢を実現できるまち 誇れるまち 松江』である。本計画は、まち・ひと・しごと創生法第10条に基づく市町村まち・ひと・しごと創生総合戦略を包含する。各層の期間を別period semanticsとして保持し、一律の固定期間へ潰さない。Phase 14インベントリのperiod_statusはverified_fixed_periodである。",
+     "title": "松江市総合計画『MATSUE DREAMS 2030』の構成（基本構想2022年度～2029年度・実施計画は3年間とし毎年度見直し）",
+     "value": "松江市総合計画『MATSUE DREAMS 2030』は基本構想2022年度～2029年度（8年）／実施計画は3年間とし毎年度見直し／FY2024決算は現行計画の基本構想期間内の決算"
+    },
+    {
+     "decision": "needs_review",
+     "evidence_location": "市公式の計画ページに掲載された基本目標・基本施策の一覧（基本構想・基本施策の計画書への入口）で直接確認した",
+     "evidence_role": "policy_structure",
+     "id": "matsue-current-policy-structure",
+     "review_note": "基本構想の政策体系（5基本目標・18基本施策）を政策単位で保持した。基本施策の下の主要施策・事業・KPI単位の対応付けは行わない。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.matsue.lg.jp/gyoseijoho/kakushukeikaku/10/4/8737.html",
+     "statement": "基本構想は、基本理念『松江のジダイをつくる』と将来像『夢を実現できるまち 誇れるまち 松江』のもとに、5つの基本目標と18の基本施策を体系付ける。基本目標I『しごとづくり』は4施策（1 産業振興、起業・創業／2 商店街活性化／3 農林水産業振興／4 観光振興）。基本目標II『ひとづくり』は3施策（5 ワーク・ライフ・バランス、子育て支援／6 教育／7 共生社会・地域コミュニティ）。基本目標III『つながりづくり』は4施策（8 人材育成・還流／9 関係人口、副業・兼業人材／10 歴史・伝統・文化・芸術／11 スポーツ）。基本目標IV『どだいづくり』は6施策（12 健康・医療／13 自然・環境／14 都市デザイン（水辺・公共交通）／15 都市デザイン（まちなみ・公園）／16 安心・安全、社会資本整備／17 行財政改革、スマート自治体）。基本目標V『なかまづくり』は1施策（18 広域連携）である。各基本施策の下の主要施策・事業・KPI単位の対応付けは行わない。",
+     "title": "基本構想の政策体系（5つの基本目標・18の基本施策）"
+    },
+    {
+     "decision": "needs_review",
+     "evidence_location": "計画ページで実施計画の毎年度見直し（PDCA）と令和8年度実施計画・進捗公表の掲載を確認し、審議会による評価・検証は市公式の政策部事業概要で確認した",
+     "evidence_role": "progress_governance",
+     "id": "matsue-progress-governance-framework",
+     "review_note": "進行管理の枠組み（実施計画の毎年度見直しと審議会による評価・検証）を年度実績へ読み替えず保持した。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.matsue.lg.jp/gyoseijoho/kakushukeikaku/10/4/8737.html",
+     "statement": "松江市総合計画『MATSUE DREAMS 2030』の進行管理は、実施計画を毎年度PDCAサイクルで見直す自治体の枠組みによる。基本施策ごとに成果指標（KPI）を設定し、外部委員で構成する松江市総合計画審議会が毎年秋に各施策の評価・検証を行い、結果を公表する（総合計画の進捗状況・KPI進捗は計画ページで公表され、2024年度実施状況が確認できる）。自治体の評価・進捗公表をJichi Insight独自の達成判定へ変換しない。",
+     "title": "計画の進行管理（PDCAによる毎年度の見直しと総合計画審議会による評価・検証）"
+    },
+    {
+     "decision": "needs_review",
+     "evidence_location": "現行計画の策定時期は市公式の政策部事業概要で確認した。次期計画の策定状況は計画ページ等の公表範囲で確認できなかった",
+     "evidence_role": "plan_transition",
+     "id": "matsue-plan-transition",
+     "review_note": "計画の版の履歴として、現行計画の開始と次期計画の未確認状態を分離記録した。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.matsue.lg.jp/gyoseijoho/kakushukeikaku/10/4/8737.html",
+     "statement": "現行の松江市総合計画『MATSUE DREAMS 2030』は2022年3月に策定され2022年度に開始した。前計画の政策体系・事業・評価の全件列挙は本候補では行わない。基本構想の終期は2029年度であり、次期総合計画の策定状況は本候補の調査範囲では公式資料で確認できなかったため未確認として保持する。FY2024決算は現行計画の期間内の決算であり、計画の版の相違による接続の制約はない。",
+     "title": "現行計画の開始と次期計画の策定状況"
+    },
+    {
+     "decision": "not_assessable",
+     "evidence_location": "決算総額は『令和6年度決算の概要』と監査委員審査意見書、計画の期間は計画ページ・市公式文書で確認した。総額レベルの対応付けの不存在は、決算・計画の公表範囲で確認した",
+     "evidence_role": "annual_progress",
+     "fiscal_year": 2024,
+     "id": "matsue-fy2024-settlement-linkage",
+     "review_note": "計画の版は同一であるが、総額レベルの対応付けがないため接続しないことを明記した。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.matsue.lg.jp/soshikikarasagasu/zaiseibu_zaiseika/gyozaisei/1/1/23753.html",
+     "statement": "FY2024決算は現行の松江市総合計画『MATSUE DREAMS 2030』（基本構想2022年度～2029年度）の期間内の決算であり、計画の版は現行と同一である。決算総額（千円精度）は一次資料で確認済みであるが、決算総額と計画の基本目標・基本施策との総額レベルの対応付けは公式資料にないため、接続はnot_assessableとし、決算値を計画のcurrent actualへ流用しない。なお決算第1号は2025年10月7日に認定されており、接続判定は認定結果に依存しない。",
+     "title": "令和6年度決算と総合計画の政策体系の接続"
+    }
+   ],
+   "review_status": "pending_record_review"
+  },
+  "policy_structure": {
+   "current_plan": {
+    "end_fiscal_year": 2029,
+    "management_principles": [
+     "総合計画は松江市総合計画『MATSUE DREAMS 2030』（2022年3月策定）であり、基本構想（2022年度～2029年度の8年）と実施計画（3年間を単位とし毎年度見直し）で構成する。各層の期間を別period semanticsとして保持し、一律の固定期間modelへ潰さない（period_statusはPhase 14インベントリどおりverified_fixed_period）",
+     "基本構想は基本理念『松江のジダイをつくる』と将来像『夢を実現できるまち 誇れるまち 松江』のもとに5つの基本目標・18の基本施策を置く。各基本施策の下の主要施策・事業・KPIの全件列挙は本候補では行わず、追加depthとして保持する",
+     "進行管理は、実施計画を毎年度PDCAサイクルで見直し、基本施策ごとのKPIの進捗を公表する自治体の枠組みによる。松江市総合計画審議会が毎年秋に評価・検証を行う。自治体の評価・進捗公表をJichi Insight独自の達成判定へ変換しない",
+     "FY2024決算は現行計画の基本構想期間内（2022年度～2029年度）の決算であり計画の版は同一である。決算総額（千円精度）は一次資料で確認済みであるが、決算総額と政策体系との総額レベルの対応付けは公式資料にないため、決算値を計画のcurrent actualへ流用しない"
+    ],
+    "period_status": "verified_fixed_period",
+    "policy_fields": [
+     {
+      "id": "field-1",
+      "measures": [],
+      "name_ja": "基本目標I しごとづくり：1 産業振興、起業・創業"
+     },
+     {
+      "id": "field-2",
+      "measures": [],
+      "name_ja": "基本目標I しごとづくり：2 商店街活性化"
+     },
+     {
+      "id": "field-3",
+      "measures": [],
+      "name_ja": "基本目標I しごとづくり：3 農林水産業振興"
+     },
+     {
+      "id": "field-4",
+      "measures": [],
+      "name_ja": "基本目標I しごとづくり：4 観光振興"
+     },
+     {
+      "id": "field-5",
+      "measures": [],
+      "name_ja": "基本目標II ひとづくり：5 ワーク・ライフ・バランス、子育て支援"
+     },
+     {
+      "id": "field-6",
+      "measures": [],
+      "name_ja": "基本目標II ひとづくり：6 教育"
+     },
+     {
+      "id": "field-7",
+      "measures": [],
+      "name_ja": "基本目標II ひとづくり：7 共生社会・地域コミュニティ"
+     },
+     {
+      "id": "field-8",
+      "measures": [],
+      "name_ja": "基本目標III つながりづくり：8 人材育成・還流"
+     },
+     {
+      "id": "field-9",
+      "measures": [],
+      "name_ja": "基本目標III つながりづくり：9 関係人口、副業・兼業人材"
+     },
+     {
+      "id": "field-10",
+      "measures": [],
+      "name_ja": "基本目標III つながりづくり：10 歴史・伝統・文化・芸術"
+     },
+     {
+      "id": "field-11",
+      "measures": [],
+      "name_ja": "基本目標III つながりづくり：11 スポーツ"
+     },
+     {
+      "id": "field-12",
+      "measures": [],
+      "name_ja": "基本目標IV どだいづくり：12 健康・医療"
+     },
+     {
+      "id": "field-13",
+      "measures": [],
+      "name_ja": "基本目標IV どだいづくり：13 自然・環境"
+     },
+     {
+      "id": "field-14",
+      "measures": [],
+      "name_ja": "基本目標IV どだいづくり：14 都市デザイン（水辺・公共交通）"
+     },
+     {
+      "id": "field-15",
+      "measures": [],
+      "name_ja": "基本目標IV どだいづくり：15 都市デザイン（まちなみ・公園）"
+     },
+     {
+      "id": "field-16",
+      "measures": [],
+      "name_ja": "基本目標IV どだいづくり：16 安心・安全、社会資本整備"
+     },
+     {
+      "id": "field-17",
+      "measures": [],
+      "name_ja": "基本目標IV どだいづくり：17 行財政改革、スマート自治体"
+     },
+     {
+      "id": "field-18",
+      "measures": [],
+      "name_ja": "基本目標V なかまづくり：18 広域連携"
+     }
+    ],
+    "start_fiscal_year": 2022,
+    "title": "松江市総合計画『MATSUE DREAMS 2030』基本構想（2022年度～2029年度）",
+    "vision": "夢を実現できるまち 誇れるまち 松江"
+   },
+   "id": "matsue-current-policy-structure",
+   "name_ja": "松江市",
+   "official_code": "322016",
+   "phase": 15
+  },
+  "progress_review": {
+   "id": "matsue-current-progress-review-summary",
+   "implementation_plan_framework": {
+    "evaluation_structure": "進行管理は、実施計画を毎年度PDCAサイクルで見直し、基本施策ごとに設定したKPIの進捗を公表する自治体の枠組みであり、松江市総合計画審議会（外部委員で構成）が毎年秋に各施策の評価・検証を行う。自治体の評価・進捗公表をJichi Insight独自の達成判定へ変換せず、枠組みそのものを年度実績へ読み替えない",
+    "period": "実施計画（3年間を単位とし毎年度見直し）の運用を通じて、基本構想期間（2022年度～2029年度）の進捗管理を行う。FY2024決算は現行計画の期間内の決算で計画の版は同一であるが、決算総額（千円精度）と政策体系との総額レベルの対応付けは公式資料にないため、進行管理の対象値として接続しない",
+    "title": "松江市総合計画『MATSUE DREAMS 2030』実施計画（3年間・毎年度見直し）のPDCAによる進行管理"
+   },
+   "name_ja": "松江市",
+   "official_code": "322016",
+   "phase": 15,
+   "review_status": "review_candidate_staging"
+  },
+  "source_catalog": {
+   "id": "matsue-phase15-sources",
+   "name_ja": "松江市",
+   "official_code": "322016",
+   "phase": 15,
+   "sources": [
+    {
+     "evidence_location": "計画の構成（5つの基本目標と18の基本施策の全件）と実施計画の毎年度見直し（PDCA）、令和8年度実施計画の掲載は市公式『松江市総合計画（MATSUE DREAMS 2030）』ページで直接確認した。計画期間（基本構想2022年度～2029年度）・基本理念『松江のジダイをつくる』・将来像『夢を実現できるまち 誇れるまち 松江』は、市公式の政策部事業概要および計画の資料編で確認した。基本構想の本編PDFは画像中心でテキスト抽出が乏しい",
+     "evidence_role": "comprehensive_plan",
+     "format": "html",
+     "id": "matsue-dreams-2030",
+     "official_url": "https://www.city.matsue.lg.jp/gyoseijoho/kakushukeikaku/10/4/8737.html",
+     "title": "松江市総合計画(MATSUE DREAMS 2030)",
+     "use_boundary": "現行計画は松江市総合計画『MATSUE DREAMS 2030』として保持し、基本構想・実施計画のlayer semanticsを分離する。他の計画期間の実績を現行計画のcurrent actualへ流用しない",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    },
+    {
+     "evidence_location": "総合計画の実施状況・KPI進捗の公式公表入口（Phase 14インベントリで確認）。計画ページから進捗公表（2024年度実施状況）へ辿れることを確認した",
+     "evidence_role": "progress_governance",
+     "format": "html",
+     "id": "matsue-kpi-progress",
+     "official_url": "https://www.city.matsue.lg.jp/gyoseijoho/kakushukeikaku/10/4/8737.html",
+     "title": "松江市総合計画実施状況・KPI進捗",
+     "use_boundary": "KPI進捗の掲載・自治体の評価公表を達成実績や政策効果と同一視しない。実施計画の進捗と財政決算は別Evidence roleとして保持する",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    },
+    {
+     "evidence_location": "Phase 14インベントリ記載のランディングURLは市サイト再編により移転していたため、現行の財政課『令和8年度予算の概要』ページから辿り、FY2026一般会計当初予算額119,391,000千円を『令和8年度一般会計・特別会計予算書』（議第56号）の第1条で確認した。議決は市議会公式『令和8年第1回松江市議会（定例会）議案等一覧表』の議第56号の記載（3月26日原案可決）で直接確認した",
+     "evidence_role": "budget",
+     "format": "html",
+     "id": "matsue-budget-2026",
+     "official_url": "https://www.city.matsue.lg.jp/gyoseijoho/gyozaisei/3/3/24272.html",
+     "title": "令和8年度予算の概要",
+     "use_boundary": "FY2026当初予算は補正予算・決算と別stateで保持する。金額は千円単位の公表値であり、円単位を合成しない",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    },
+    {
+     "evidence_location": "FY2024決算額は、同ページから辿れる市公式『令和6年度決算の概要』（令和7年9月議会提出資料）で一般会計の歳入決算額115,607,870千円・歳出決算額113,268,794千円・差引2,339,076千円・実質収支1,962,986千円（いずれも千円単位）を確認し、監査委員『令和6年度松江市一般会計・特別会計歳入歳出決算審査意見書』（監第56号）の第1表・第3表でも同値を確認した。認定は市議会公式『令和7年第5回松江市議会（定例会）議案等一覧表』の決算第1号の記載（10月7日 認定）と同定例会の議員別表決結果で直接確認した。総務省の決算状況カードの値（歳入総額115,809,026千円等）は普通会計ベースであり一般会計値とは別のため使用していない",
+     "evidence_role": "settlement",
+     "format": "html",
+     "id": "matsue-settlement-2024",
+     "official_url": "https://www.city.matsue.lg.jp/soshikikarasagasu/zaiseibu_zaiseika/gyozaisei/1/1/23753.html",
+     "title": "令和6年度決算の概要",
+     "use_boundary": "FY2024決算は予算・補正と別stateで保持する。歳入・歳出・実質収支はいずれも公式資料の千円精度のまま記録し、円単位を合成しない",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    }
+   ]
+  }
+ },
+ "deferred_depth": [
+  {
+   "boundary": "18の基本施策の下の主要施策・事業・KPI（2030年の市民の実感を含む）の全件列挙は追加depthとし、公式対応が確認できるまで昇格しない。5つの基本目標・18の基本施策の体系自体は候補に保持するが、基本施策の下の施策・事業単位の対応付けは行わない。",
+   "id": "current-plan-granular-kpi-and-project-linkage",
+   "status": "deferred_not_required_for_candidate_staging"
+  },
+  {
+   "boundary": "FY2026当初予算の金額（119,391,000千円）と議決（議第56号・2026年3月26日原案可決）、FY2024決算の総額（千円精度）と実質収支（千円精度）、決算第1号の認定（2025年10月7日）は一次資料で確認し候補に反映している。一方、予算に関する説明書・決算書の事項別明細書の款別合計との最終突合と、監査委員の決算審査意見書の個別の指摘事項等の内容精査、歳入歳出決算書本体に円単位の精密値が印字されている場合の確認は未実施のまま保持する。",
+   "id": "fiscal-detail-reconciliation",
+   "status": "deferred_not_required_for_candidate_staging"
+  },
+  {
+   "boundary": "次期総合計画（2030年度以降）の策定状況は公式資料で確認できず未確認のまま保持する。前計画の政策体系・事業・評価の全件列挙は本候補では行わない。",
+   "id": "plan-transition-version-depth",
+   "status": "deferred_not_required_for_candidate_staging"
+  },
+  {
+   "boundary": "松江市総合計画・進捗管理・財政等のステージングは政策効果の因果認定や他都市比較可能性を意味しない。進捗管理（自治体の見直し・評価の枠組み）をJichi Insight独自の達成判定へ変換しない。",
+   "id": "policy-outcome-causal-and-cross-city-comparability",
+   "status": "deferred_not_required_for_candidate_staging"
+  }
+ ],
+ "human_review": {
+  "boundary": "A person must check the candidate against the cited primary sources before any promotion to reviewed_complete.",
+  "required": true,
+  "reviewed_at": null,
+  "reviewer_note": null,
+  "status": "pending"
+ },
+ "name_ja": "松江市",
+ "official_code": "322016",
+ "package_state": "prepared",
+ "phase": 15,
+ "publication": {
+  "boundary": "Candidate data is staging-only and must not be loaded by the public site or treated as reviewed data.",
+  "eligible": false
+ },
+ "quality_boundaries": [
+  "Promoted facts must come from official primary sources with stable evidence locators.",
+  "Unpublished, unavailable, historical-only, draft, and unresolved facts must remain explicit.",
+  "No Jichi Insight policy-achievement score, causal attribution, or unverified cross-city ranking may be created.",
+  "This candidate is machine-prepared evidence only and is not Reviewed until a person checks the primary sources."
+ ],
+ "schema_version": 1,
+ "source_inventory_path": "data/indexed/matsue-city/source_inventory.json",
+ "status": "review_candidate"
+}
