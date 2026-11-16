@@ -1,0 +1,63 @@
+{
+  "id": "phase15-yamaguchi-plan-review",
+  "name_ja": "山口市",
+  "next_action": "Promote the outcome indicators under the 30 measures and 116 basic projects of the latter basic plan, the KPIs of the six priority projects, and the projects of the ninth action plan only when official sources with stable record-level locators have been reviewed; complete the final confirmation of the budget vote date (2026-03-13) and the settlement certification date (2025-10-02) against the plenary-session minutes; complete the final cross-checks against the budget and settlement books （事項別明細書） at section level; locate the audit commissioners' FY2024 settlement review opinion — whose location could not be identified through text retrieval of the official site in this review — and examine its content (individual findings); follow the preparation of the third comprehensive plan (FY2028-FY2037) as a separate version once adopted; and never connect results from another plan version forward into the current plan. Keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "official_code": "352039",
+  "quality_boundary": "This package reviews the current plan identity and period (the 2nd Yamaguchi City Comprehensive Plan: the basic concept running FY2018-FY2027 over ten years and adopted in March 2018, with the basic plan beneath it in two phases — the first phase FY2018-FY2022 and the latter phase FY2023-FY2027, adopted in March 2023 — and the action plans beneath them in a three-year rolling form, the current ninth action plan running FY2026-FY2028 and extending one year beyond the basic plan's final year, with that period difference kept as structure; the inventory period status of transition_or_unresolved is kept as recorded, reflecting that the third plan is under preparation), the policy structure (the basic concept's future city vision 『豊かな暮らし 交流と創造のまち 山口 ～これが私のふるさとだ～』 and the latter basic plan's five policy groups, 30 measures, 116 basic projects and six priority projects kept at policy level; the outcome indicators of the measures and basic projects, the KPIs of the priority projects, and the action plan's projects are not enumerated and stay deferred depth, so the measures lists stay empty), the progress-governance layer (the municipality's own administrative-evaluation PDS cycle and the annual machizukuri achievement reports, integrated with the report on results of major measures), the enacted FY2026 initial budget at the published sen-yen (thousand-yen) precision (bill 議案第1号; the council's official vote list records the result simply as 『可決』 in its own wording; the vote date of 2026-03-13 was identified from the final plenary day in the session schedule and has not been finally confirmed against the plenary-session minutes), and the FY2024 settlement at the thousand-yen precision printed in the settlement summary table of the FY2024 machizukuri achievement report. The FY2024 settlement certification (bill 議案第21号) was certified at the third regular session of 2025, confirmed directly in the council's official vote list; it was not rejected, and the certification date of 2025-10-02 was identified from the final day of the session period and has not been finally confirmed against the plenary-session minutes. The real balance of 731,294 thousand yen is recorded at the published thousand-yen precision and is not expanded into a synthetic yen figure. Ordinary-account aggregate figures published in sources such as the audit commissioners' settlement review opinion (for example revenue of 108,539,608 thousand yen) are not used; that opinion's location could not be identified through text retrieval of the official site and its content stays unexamined. FY2024 is a settlement of the latter basic plan period of the second plan (FY2023-FY2027), so the plan version is the same as the current plan, but no official total-level mapping from settlement totals to the plan's policy structure exists, so the linkage stays not_assessable. The third comprehensive plan (FY2028-FY2037, tentatively 『ずっと元気な山口プラン』) is under preparation in the formulation council and is kept separate as a plan transition.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "計画の構成と期間は市公式『第二次山口市総合計画後期基本計画を策定しました』ページ（第二次計画は平成30年度から10年間、後期基本計画は令和5年3月策定・令和5年度～令和9年度）で直接確認し、実行計画の位置づけと第9次実行計画（令和8年3月策定）は市公式『第二次山口市総合計画 実行計画』ページで、第9次の期間（令和8年度～令和10年度）は第9次実行計画の冊子で確認した",
+      "evidence_role": "current_plan_identity",
+      "id": "yamaguchi-current-plan-period",
+      "review_note": "総合計画の構成（基本構想・基本計画・実行計画）と各層の期間を別period semanticsとして保持した。レビュー済みレコード。",
+      "source_url": "https://www.city.yamaguchi.lg.jp/site/shiseijoho/137038.html",
+      "statement": "山口市の現行の最上位計画は第二次山口市総合計画であり、基本構想（2018年度～2027年度の10年間、平成30年3月策定）の下に基本計画（前期2018年度～2022年度・後期2023年度～2027年度）を置く構成である。後期基本計画は令和5年3月に策定された。この下に、各施策の実施を具体化する実行計画が置かれ、計画期間は3カ年とし事業の実績を踏まえ毎年度向こう3カ年の改定を行うローリング方式である。現行の第9次実行計画は2026年度～2028年度で、基本計画の終期（2027年度）を1年越える期間差は構造として保持する。Phase 14インベントリのperiod_statusはtransition_or_unresolvedであり、次期（第三次）計画の策定が進行中であることに対するものである。",
+      "title": "第二次山口市総合計画の構成（基本構想2018年度～2027年度・基本計画は前期／後期の各5年・実行計画は3年ローリング）",
+      "value": "第二次山口市総合計画は基本構想・基本計画とも2018年度～2027年度の10年間／後期基本計画は2023年度～2027年度（2023年3月策定）／実行計画は3年ローリングで現行の第9次は2026年度～2028年度（2026年3月策定）／FY2024決算は後期基本計画期間の決算"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "将来都市像と後期基本計画の体系（推進の方向性、5政策グループ、30施策・62指標、116基本事業・243指標、6重点プロジェクト）は令和6年度まちづくり達成状況報告書の「第二次山口市総合計画の特長」で確認し、5政策の名称は市公式サイトの行政計画ナビゲーション（政策1～政策5の分野別ページ）とも整合する",
+      "evidence_role": "policy_structure",
+      "id": "yamaguchi-current-policy-structure",
+      "review_note": "基本構想の将来都市像と後期基本計画の政策レベルの体系を保持した。施策・基本事業・成果指標の全件列挙は行わない。レビュー済みレコード。",
+      "source_url": "https://www.city.yamaguchi.lg.jp/site/shiseijoho/137038.html",
+      "statement": "基本構想は将来都市像として『豊かな暮らし 交流と創造のまち 山口 ～これが私のふるさとだ～』を掲げ、目標年次（令和9年度）における数値によるまちの姿として人口（定住人口）・交流人口・ふるさと指標の3つを設定する。後期基本計画は推進の方向性に『ずっと元気な山口』の実現を掲げ、5つの政策グループ（政策1 あらゆる世代が健やかにくらせるまち／政策2 学び育み暮らしを楽しむまち／政策3 安全・安心で快適に暮らせるまち／政策4 地域の魅力があふれる産業と観光のまち／政策5 市民と共に創る自立したまち）ごとに「目指すまちの姿」を設定し、施策・基本事業・事務事業の階層的な施策別計画（30施策に62の成果指標、116基本事業に243の成果指標）と、施策を横断する6つの重点プロジェクト（KGI・KPIを設定）からなる。本候補は政策レベルの体系のみを保持し、各施策・基本事業の成果指標の全件列挙は行わない。",
+      "title": "将来都市像『豊かな暮らし 交流と創造のまち 山口』と後期基本計画の5政策・30施策の体系"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "進行管理の仕組み（PDSサイクル・行政評価システム・達成状況報告書と主要な施策の成果報告書の一体化）は令和6年度まちづくり達成状況報告書の「第二次山口市総合計画の進め方」および決算ページで確認し、実行計画の毎年度改定と第9次の位置づけは市公式『第二次山口市総合計画 実行計画』ページで確認した",
+      "evidence_role": "progress_governance",
+      "id": "yamaguchi-progress-governance-framework",
+      "review_note": "進行管理の公式routeとして行政評価と達成状況報告書の仕組みを保持した。実行計画の事業の全件列挙と改定差分の展開は行わない。レビュー済みレコード。",
+      "source_url": "https://www.city.yamaguchi.lg.jp/site/shiseijoho/109762.html",
+      "statement": "第二次山口市総合計画の進行管理は、計画（Plan）－実行（Do）－評価（See）の行政経営サイクルを行政評価システムで回し、施策・基本事業・事務事業の各階層で進捗を定期的に測定・検証する仕組みによる。毎年度、まちづくり達成状況報告書（主要な施策の成果報告書と一体化）が公表され、決算の概要と併せて達成状況が示される。実行計画は毎年度ローリングで改定され、現行の第9次実行計画（2026年度～2028年度、令和8年3月策定）は山口市デジタル田園都市国家構想総合戦略アクションプランを兼ねる。自治体の進行管理の仕組みをJichi Insight独自の達成判定へ変換しない。",
+      "title": "計画の進行管理（行政評価システムによるPDSサイクルと毎年度のまちづくり達成状況報告書）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "第三次計画の期間と策定方針は市公式の報道資料『山口市総合計画策定協議会の公募委員の募集について』（令和8年4月28日）で確認し、策定協議会の審議状況（（仮称）ずっと元気な山口プラン）は同協議会の会議録（概要版）で確認した",
+      "evidence_role": "plan_transition",
+      "id": "yamaguchi-plan-transition",
+      "review_note": "計画の世代間の移行と次期計画の策定状況を分離記録した。レビュー済みレコード。",
+      "source_url": "https://www.city.yamaguchi.lg.jp/soshiki/14/114443.html",
+      "statement": "山口市の総合計画は、第二次山口市総合計画（2018年度～2027年度）から第三次山口市総合計画へ移行する。第三次計画は令和10年度（2028年度）から令和19年度（2037年度）までの10年間を計画期間として策定することとされ、（仮称）ずっと元気な山口プランとして山口市総合計画策定協議会で審議が進められている（策定終了は令和10年3月までを予定）。第二次計画の政策体系・事業・成果の全件列挙は本候補では行わない。FY2024決算は第二次計画の後期基本計画期間の決算であり、第三次計画のcurrent actualへ流用しない。",
+      "title": "第二次山口市総合計画から第三次山口市総合計画（2028年度～2037年度）への移行と策定状況"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "決算総額は達成状況報告書の決算総括表、計画の期間は計画ページで確認した。総額レベルの対応付けの不在は、決算・計画の公表範囲で確認した",
+      "evidence_role": "annual_progress",
+      "fiscal_year": 2024,
+      "id": "yamaguchi-fy2024-settlement-linkage",
+      "review_note": "FY2024決算は後期基本計画期間内で版は同一だが総額レベルの対応付けがないため接続しないことを明記した。レビュー済みレコード。",
+      "source_url": "https://www.city.yamaguchi.lg.jp/site/shiseijoho/184906.html",
+      "statement": "FY2024決算は第二次山口市総合計画後期基本計画（2023年度～2027年度）期間の決算であり、計画の版は同一である。決算総額は一次資料で確認済みであるが、決算総額と計画の政策・施策体系との総額レベルの対応付けは公式資料にないため、接続はnot_assessableとする。なお議案第21号は令和7年第3回定例会で認定されており、接続判定は認定結果に依存しない。",
+      "title": "令和6年度決算と第二次山口市総合計画後期基本計画の政策体系の接続"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-17"
+}

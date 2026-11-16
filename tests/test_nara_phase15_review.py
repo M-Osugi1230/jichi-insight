@@ -50,9 +50,9 @@ def test_nara_review_package_is_the_forty_seventh_completion():
     }
 
     queue = load(QUEUE)
-    assert queue["summary"]["reviewed_complete_count"] == 54
-    assert queue["summary"]["pending_record_review_count"] == 13
-    assert queue["summary"]["next_official_code"] == "352039"
+    assert queue["summary"]["reviewed_complete_count"] == 55
+    assert queue["summary"]["pending_record_review_count"] == 12
+    assert queue["summary"]["next_official_code"] == "362018"
     entry = next(
         row for row in queue["execution_queue"] if row["official_code"] == "292010"
     )
