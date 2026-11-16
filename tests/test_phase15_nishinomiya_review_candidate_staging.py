@@ -132,19 +132,45 @@ def test_nishinomiya_fiscal_records_hold_verified_values_and_vote_facts() -> Non
     assert "議案第493号" in budget["note"]
     assert "賛成多数" in budget["note"]
     assert "千円単位" in budget["note"]
-    assert "会議録による最終確認は未実施" in budget["note"]
+    assert "2026年3月18日" in budget["note"]
+    assert "議決結果" in budget["note"]
     revenue = records["jp-local-282049-fiscal-2024-total-revenue"]
     assert revenue["stage"] == "settlement"
-    assert revenue["amount_yen"] == 205_479_430_000
+    assert revenue["amount_yen"] == 205_479_435_000
     assert revenue["sources"] == ["nishinomiya-settlement-2024"]
     assert "認定第15号" in revenue["note"]
     assert "認定された" in revenue["note"]
-    assert "万円精度" in revenue["note"]
+    assert "205,479,435千円" in revenue["note"]
+    assert "2025年10月2日" in revenue["note"]
+    assert "万円精度のまま" not in revenue["note"]
     expenditure = records["jp-local-282049-fiscal-2024-total-expenditure"]
-    assert expenditure["amount_yen"] == 204_547_920_000
+    assert expenditure["amount_yen"] == 204_547_927_000
     assert expenditure["sources"] == ["nishinomiya-settlement-2024"]
     assert "1,861,075千円" in expenditure["note"]
-    assert revenue["amount_yen"] - expenditure["amount_yen"] == 931_510_000
+    assert revenue["amount_yen"] - expenditure["amount_yen"] == 931_508_000
+
+
+def test_nishinomiya_fy2024_settlement_values_at_thousand_yen_precision() -> None:
+    records = {record["id"]: record for record in _package()["fiscal_records"]}
+    revenue = records["jp-local-282049-fiscal-2024-total-revenue"]
+    expenditure = records["jp-local-282049-fiscal-2024-total-expenditure"]
+    # Values pinned from the audit opinion's section 6 table (決算収支の状況).
+    assert revenue["amount_yen"] == 205_479_435_000
+    assert expenditure["amount_yen"] == 204_547_927_000
+    # 形式収支 (revenue minus expenditure) matches the same table.
+    assert revenue["amount_yen"] - expenditure["amount_yen"] == 931_508_000
+    # 実質収支 = 形式収支 - 翌年度へ繰り越すべき財源 (283,979千円).
+    assert 931_508_000 - 283_979_000 == 647_529_000
+    assert "931,508千円" in expenditure["note"]
+    assert "647,529千円" in expenditure["note"]
+    assert "283,979千円" in expenditure["note"]
+    # The previously recorded man-yen figures are truncations of these values.
+    assert revenue["amount_yen"] // 10_000 == 20_547_943
+    assert expenditure["amount_yen"] // 10_000 == 20_454_792
+    # The combined general/special real balance is not reused as the
+    # general account value.
+    assert "1,861,075千円" in expenditure["note"]
+    assert "流用しない" in expenditure["note"]
 
 
 def test_nishinomiya_fy2024_settlement_certification_is_verified() -> None:
@@ -153,6 +179,9 @@ def test_nishinomiya_fy2024_settlement_certification_is_verified() -> None:
     assert "認定された" in text
     assert "不認定" not in text
     assert "原案可決" not in text
+    # Both vote dates are pinned from the council minutes search system.
+    assert "2025年10月2日" in text
+    assert "2026年3月18日" in text
 
 
 def test_nishinomiya_evidence_packets_cover_the_three_fiscal_records() -> None:
@@ -171,6 +200,13 @@ def test_nishinomiya_evidence_packets_cover_the_three_fiscal_records() -> None:
     assert "賛成多数" in budget_claim["statement"]
     revenue_claim = packets["evidence-nishinomiya-city-2024-total-revenue"]["claims"][0]
     assert "認定第15号" in revenue_claim["statement"]
+    assert "205,479,435千円" in revenue_claim["statement"]
+    assert "2025年10月2日" in revenue_claim["statement"]
+    expenditure_claim = packets["evidence-nishinomiya-city-2024-total-expenditure"][
+        "claims"
+    ][0]
+    assert "204,547,927千円" in expenditure_claim["statement"]
+    assert "647,529千円" in expenditure_claim["statement"]
 
 
 def test_nishinomiya_progress_review_stays_staging() -> None:
