@@ -344,7 +344,7 @@ def test_kanazawa_and_previous_twenty_three_are_reviewed_complete_and_fukui_is_n
     ):
         assert by_code[code]["status"] == "reviewed_complete"
 
-    assert queue["summary"]["reviewed_complete_count"] == 27
+    assert queue["summary"]["reviewed_complete_count"] == 28
     assert queue["summary"]["review_in_progress_count"] == 0
-    assert queue["summary"]["pending_record_review_count"] == 40
-    assert queue["summary"]["next_official_code"] == "202029"
+    assert queue["summary"]["pending_record_review_count"] == 39
+    assert queue["summary"]["next_official_code"] == "212016"
