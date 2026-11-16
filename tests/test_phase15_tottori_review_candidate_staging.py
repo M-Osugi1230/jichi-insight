@@ -5,8 +5,11 @@ cited primary sources.  These tests pin the package state, the source
 catalog, the plan framework, and the verified fiscal values so that a
 promotion change has to be deliberate.  The FY2026 initial budget's own
 vote details and the FY2024 settlement certification outcome could not
-be read from the council's voting-result PDFs by text fetch, so the
-candidate keeps both unconfirmed and these tests pin that boundary.
+be read from the council's voting-result PDFs by text fetch; a browser
+follow-up confirmed both (the budget as bill 6, passed as proposed on
+2026-03-19, and bill 106 certified on 2025-10-06, the latter from the
+council meeting record because the voting-result PDF omits bills 106
+and 107), and these tests pin the confirmed wording and its basis.
 """
 
 import json
@@ -124,14 +127,17 @@ def test_tottori_fiscal_records_hold_verified_values() -> None:
     assert "骨格予算" in budget["note"]
     assert "108,700,000千円" in budget["note"]
     assert "千円単位" in budget["note"]
-    assert "未確認" in budget["note"]
+    assert "議案第6号" in budget["note"]
+    assert "原案可決" in budget["note"]
+    assert "2026年3月19日" in budget["note"]
     revenue = records["jp-local-312010-fiscal-2024-total-revenue"]
     assert revenue["stage"] == "settlement"
     assert revenue["amount_yen"] == 113_544_636_161
     assert revenue["sources"] == ["tottori-settlement-2024"]
     assert "議案第106号" in revenue["note"]
     assert "113,544,636,161円" in revenue["note"]
-    assert "未確認" in revenue["note"]
+    assert "2025年10月6日" in revenue["note"]
+    assert "会議録" in revenue["note"]
     expenditure = records["jp-local-312010-fiscal-2024-total-expenditure"]
     assert expenditure["amount_yen"] == 111_377_983_188
     assert expenditure["sources"] == ["tottori-settlement-2024"]
@@ -173,26 +179,33 @@ def test_tottori_fy2024_settlement_values_and_real_balance() -> None:
     assert "千円精度のまま" in expenditure["note"]
 
 
-def test_tottori_fy2024_settlement_certification_is_not_asserted() -> None:
+def test_tottori_fy2024_settlement_certification_is_confirmed() -> None:
     text = CANDIDATE_PATH.read_text(encoding="utf-8")
     assert "議案第106号" in text
-    assert "未確認" in text
-    # The certification outcome could not be read from the council's
-    # voting-result PDF by text fetch, so the candidate must not claim
-    # either outcome anywhere.
-    assert "認定された" not in text
+    # The certification outcome was confirmed by a browser follow-up in
+    # the council meeting record of 2025-10-06: the September session's
+    # voting-result PDF omits the rows for bills 106 and 107, so the
+    # candidate records the certification with the meeting record as
+    # its basis and never claims the PDF wording confirmed it.
+    assert "認定された" in text
+    assert "2025年10月6日" in text
+    assert "会議録" in text
+    assert "審議結果』PDFには議案第106号・第107号の行" in text
+    assert "未確認" not in text
     assert "不認定" not in text
     assert "修正可決" not in text
 
 
-def test_tottori_fy2026_budget_vote_details_stay_unconfirmed() -> None:
+def test_tottori_fy2026_budget_vote_details_are_confirmed() -> None:
     packets = {packet["id"]: packet for packet in _package()["evidence_packets"]}
     claim = packets["evidence-tottori-city-2026-total-expenditure"]["claims"][0]
-    # The initial budget's own bill number, vote date and result wording
-    # were not directly confirmed; only the supplementary budget No. 1
-    # (bill 70) carries a confirmed 原案可決 in the fiscal record note.
-    assert "未確認" in claim["statement"]
-    assert "原案可決" not in claim["statement"]
+    # The initial budget's own vote was confirmed by a browser follow-up
+    # in the council's February session voting results: bill 6, passed
+    # as proposed (原案可決) by majority on 2026-03-19.
+    assert "議案第6号" in claim["statement"]
+    assert "原案可決" in claim["statement"]
+    assert "2026年3月19日" in claim["statement"]
+    assert "未確認" not in claim["statement"]
     assert "108,700,000千円" in claim["statement"]
 
 
