@@ -380,7 +380,7 @@ def test_toyota_and_previous_thirty_two_are_reviewed_complete_and_tsu_is_next():
     ):
         assert by_code[code]["status"] == "reviewed_complete"
 
-    assert queue["summary"]["reviewed_complete_count"] == 45
+    assert queue["summary"]["reviewed_complete_count"] == 46
     assert queue["summary"]["review_in_progress_count"] == 0
-    assert queue["summary"]["pending_record_review_count"] == 22
-    assert queue["summary"]["next_official_code"] == "282049"
+    assert queue["summary"]["pending_record_review_count"] == 21
+    assert queue["summary"]["next_official_code"] == "292010"

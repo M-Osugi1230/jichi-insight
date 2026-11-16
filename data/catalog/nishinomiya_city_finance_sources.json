@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-16",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "nishinomiya-city-home",
+      "municipality_key": "nishinomiya-city",
+      "organization": "西宮市",
+      "category": "municipality_profile",
+      "title": "西宮市公式サイト",
+      "url": "https://www.nishi.or.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "西宮市の公式自治体サイト。"
+    },
+    {
+      "id": "nishinomiya-budget-2026",
+      "municipality_key": "nishinomiya-city",
+      "organization": "西宮市",
+      "category": "budget",
+      "title": "令和8年度予算",
+      "url": "https://www.nishi.or.jp/shisei/zaiseijoho/yosan/R8yosan.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算221,422,490千円（千円精度）のEvidence。議案第493号『令和8年度西宮市一般会計予算』は第16回（令和8年3月）定例会で賛成多数により可決された成立予算（市議会公式『議案等審議結果一覧表』で議員別賛否を確認。同表は結果文言欄を持たず脚注が『賛成多数で可決されたこと』と定義するため、議決結果はその範囲でのみ記録する）。金額は市公式『令和8年度当初予算の概要』の各会計予算規模で確認し、歳入款別合計・歳出目的別合計とも一致した千円単位の公表値のまま記録し、円単位を合成しない。議決日2026年3月18日は会議録検索システム『議決結果』で確認した。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "nishinomiya-settlement-2024",
+      "municipality_key": "nishinomiya-city",
+      "organization": "西宮市",
+      "category": "settlement",
+      "title": "令和6年度決算の概要",
+      "url": "https://www.nishi.or.jp/shisei/zaiseijoho/kessan/R6_kessan_gaiyou.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入205,479,435千円・歳出204,547,927千円を含む公式決算資料（監査委員『令和6年度西宮市一般会計及び特別会計歳入歳出決算審査意見書』（西監発第53号）第6『一般会計』の表『決算収支の状況』で千円精度で確認し、差引931,508千円が同表の形式収支と検算一致）。実質収支は同表により647,529千円（千円精度のまま記録。総論の一般会計・特別会計合計の実質収支1,861,075千円は使用していない）。決算の認定議案である認定第15号は第14回（令和7年9月）定例会で賛成多数により認定された（認定日2025年10月2日。市議会公式『議案等審議結果一覧表』と会議録検索システム『議決結果』で確認）。決算書（歳入歳出決算事項別明細書）の款別合計との突合と監査委員の決算審査意見書の内容（個別の指摘事項等）の精査は未実施。"
+    }
+  ]
+}

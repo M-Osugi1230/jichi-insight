@@ -207,9 +207,9 @@ def test_suita_candidate_progress_review_stays_staging() -> None:
 def test_suita_promotion_is_reflected_in_review_queue() -> None:
     queue = load_json(QUEUE_PATH)
     assert queue["summary"]["target_count"] == 67
-    assert queue["summary"]["reviewed_complete_count"] == 45
-    assert queue["summary"]["pending_record_review_count"] == 22
-    assert queue["summary"]["next_official_code"] == "282049"
+    assert queue["summary"]["reviewed_complete_count"] == 46
+    assert queue["summary"]["pending_record_review_count"] == 21
+    assert queue["summary"]["next_official_code"] == "292010"
     items = {item["official_code"]: item for item in queue["execution_queue"]}
     assert items["272051"]["name_ja"] == "吹田市"
     assert items["272051"]["status"] == "reviewed_complete"

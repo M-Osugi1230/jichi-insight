@@ -1,0 +1,46 @@
+{
+  "id": "nishinomiya-phase15-sources",
+  "name_ja": "西宮市",
+  "official_code": "282049",
+  "phase": 15,
+  "quality_boundary": "Current plan identity kept as published (the Fifth Nishinomiya Comprehensive Plan: basic concept FY2019-FY2028, basic plan first half FY2019-FY2023 and second half FY2024-FY2028 (current), implementation plans as three-year rolling plans revised annually; the layer semantics are kept separate; the second-half basic plan's six parts and 35 policy fields are enumerated, while the per-field initiatives and departmental plans are not enumerated and stay deferred depth), progress governance (annual revision of the rolling implementation plan plus the published revenue-expenditure outlook and project plan — kept as the municipality's own progress-management framework), budget enactment confirmed from the city's official budget outline and the council's official deliberation results (bill 議案第493号; passed by majority vote, voting date 2026-03-18 confirmed in the council minutes search system; the deliberation-results table carries no result-wording column, so the result is recorded only within its footnote definition and never as adoption in the original form; the amount is kept at the published sen-yen precision and is never expanded into synthetic finer amounts), and settlement totals kept at the sen-yen precision printed in the audit commissioners' settlement review opinion, section 6 (general account) (the settlement certification 認定第15号 was certified by majority vote on 2025-10-02; the real balance is 647,529 thousand yen; the combined general-and-special-account real balance in the general remarks is not reused) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "reviewed_at": "2026-11-16",
+  "sources": [
+    {
+      "evidence_location": "西宮市公式『第5次西宮市総合計画 後期基本計画』ページ（Phase 14インベントリで確認）と後期基本計画本編（公式PDF）で、計画の構成（基本構想・基本計画・実施計画）、基本構想の期間（2019年度～2028年度）、基本計画の前期・後期（後期は2024年度～2028年度）、都市目標、後期基本計画の施策体系（6部・35施策分野）と分野横断の視点を直接確認した",
+      "evidence_role": "comprehensive_plan",
+      "format": "html",
+      "id": "nishinomiya-fifth-latter-plan",
+      "official_url": "https://www.nishi.or.jp/shisei/sogokeikaku/sogokeikaku/dai5jisogokeikaku/2023122011190.html",
+      "title": "第5次西宮市総合計画 後期基本計画",
+      "use_boundary": "現行計画は第5次西宮市総合計画として保持し、基本構想・基本計画（前期／後期）・実施計画のlayer semanticsを分離する。前期基本計画期間の実績を後期基本計画へ先取りしない"
+    },
+    {
+      "evidence_location": "市公式『第5次西宮市総合計画 実施計画』ページで、実施計画の策定趣旨、計画期間3か年・ローリング方式による毎年度見直し、現行版（令和8～10年度実施計画）と過去版（平成31～33年度版から令和7～9年度版まで）の一覧を直接確認した",
+      "evidence_role": "implementation_plan_and_progress",
+      "format": "html",
+      "id": "nishinomiya-implementation-plan",
+      "official_url": "https://www.nishi.or.jp/shisei/sogokeikaku/sogokeikaku/dai5jisogokeikaku/5jisshikeikaku.html",
+      "title": "第5次西宮市総合計画 実施計画",
+      "use_boundary": "実施計画の年度版を公式landingから追跡し、各versionを上書きしない。未掲載年度の内容を推測して作成しない。実施計画の進行管理を統合スコアへ変換しない"
+    },
+    {
+      "evidence_location": "FY2026当初予算の金額は、西宮市公式『令和8年度当初予算の概要』の各会計予算規模で一般会計221,422,490千円を確認し、歳入款別合計・歳出目的別合計とも一致した。議決の経過は市議会公式『第16回（令和8年3月）定例会 議案等審議結果一覧表』で議案第493号『令和8年度西宮市一般会計予算』の議員別賛否を確認し、賛成多数で可決されたことを同表の脚注の定義により確認した（同表に議案第493号に対する修正案の行はない）。議決日は西宮市議会 会議録検索システム『議決結果』で2026年3月18日と確認した",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "nishinomiya-budget-2026",
+      "official_url": "https://www.nishi.or.jp/shisei/zaiseijoho/yosan/R8yosan.html",
+      "title": "令和8年度予算",
+      "use_boundary": "FY2026当初予算は補正予算・決算と別stateで保持する。金額は千円単位の公表値であり、円単位を合成しない。議案番号（議案第493号）と賛成多数による可決は確認済みであり、議決結果は審議結果一覧表の脚注が定義する『賛成多数で可決』の範囲でのみ記録する。議決日（2026年3月18日）は会議録検索システム『議決結果』で確認済みである"
+    },
+    {
+      "evidence_location": "FY2024決算の公式入口（Phase 14インベントリで確認）。決算額は西宮市監査委員『令和6年度西宮市一般会計及び特別会計歳入歳出決算審査意見書』（西監発第53号・令和7年9月9日）第6『一般会計』冒頭の表『決算収支の状況』（印刷p.16、PDF: https://www.nishi.or.jp/shisei/kakushugyoseiiinkai/kansa/kansakekka/kansakekka.files/06ippankaikei.pdf）で、一般会計の歳入205,479,435千円・歳出204,547,927千円・形式収支931,508千円・実質収支647,529千円（いずれも千円精度）を確認し、同意見書が決算書及び付属書類の計数は正確であると認めたことを確認した。決算の認定結果は市議会公式『第14回（令和7年9月）定例会 議案等審議結果一覧表』により確認し、認定第15号は賛成多数により認定された。認定日は西宮市議会 会議録検索システム『議決結果』で2025年10月2日と確認した",
+      "evidence_role": "settlement",
+      "format": "html",
+      "id": "nishinomiya-settlement-2024",
+      "official_url": "https://www.nishi.or.jp/shisei/zaiseijoho/kessan/R6_kessan_gaiyou.html",
+      "title": "令和6年度決算の概要",
+      "use_boundary": "FY2024決算は後期基本計画（2024年度～2028年度）の初年度の決算として保持する。歳入・歳出・形式収支・実質収支は審査意見書第6『一般会計』の表の千円精度のまま記録する。総論に示された一般会計・特別会計合計の実質収支1,861,075千円は一般会計の値として流用しない。認定結果（認定第15号・2025年10月2日認定）は市議会公式の審議結果一覧表と会議録検索システム『議決結果』で確認済みである。同ページの決算カードは普通会計ベースの統計資料であり、一般会計の決算値として流用しない"
+    }
+  ]
+}
