@@ -256,8 +256,8 @@ def test_utsunomiya_and_previous_nine_are_reviewed_complete_and_iwaki_is_next():
     ):
         assert by_code[code]["status"] == "reviewed_complete"
 
-    assert queue["summary"]["reviewed_complete_count"] == 41
+    assert queue["summary"]["reviewed_complete_count"] == 42
     assert queue["summary"]["review_in_progress_count"] == 0
-    assert queue["summary"]["pending_record_review_count"] == 26
-    assert queue["summary"]["next_official_code"] == "272272"
+    assert queue["summary"]["pending_record_review_count"] == 25
+    assert queue["summary"]["next_official_code"] == "282014"
     assert by_code["122041"]["status"] == "reviewed_complete"

@@ -596,13 +596,25 @@ Declared v1 package:
 
 Deferred depth includes the 74 developments and individual projects under the 19 measures, the per-measure indicator values (measure indicators and progress-management indicators), the exact sen-yen-precision FY2026 initial budget total, cross-checks against the budget book and the settlement book （事項別明細書） at section level, the content of the audit commissioners' settlement review opinion, the status of the next (Seventh) comprehensive plan, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Forty-second completion — Higashiosaka
+
+東大阪市を42番目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 東大阪市第3次総合計画 — covering FY2021-FY2030 with FY2030 （令和12） as the target year, presenting the future image 『つくる・つながる・ひびきあう ― 感動創造都市 東大阪 ―』; implementation plans are split into the first implementation plan (FY2021-FY2023) and the second implementation plan (FY2024-FY2027), each revised through annual versions (Ver.1.0-3.0), the current version being the second implementation plan Ver.3.0. The policy structure is seven fields （人権・共生・協働 / 子ども・子育て / 教育 / スポーツ・文化・産業 / 健康・福祉 / 都市・環境 / 防災・治安） plus three priority measures （若者・子育て世代に選ばれるまちづくり / 高齢者が活躍するまちづくり / 人が集まり、活気あふれるまちづくり）; the per-field individual measures are not enumerated because the summary edition's field-structure chart is laid out vertically and cannot be transcribed field-by-field without error, so they stay deferred depth. Progress is managed by evaluating implementation-plan projects under a PDCA cycle after each fiscal year and publishing a project evaluation report and indicator achievement status — the municipality's own progress-management framework. The transition from the first implementation plan to the second implementation plan and the version history are kept only as a version chronology record, and results from the first implementation plan period are never connected forward into the second; the status of the next (Fourth) comprehensive plan is unconfirmed
+- FY2026 general-account initial budget: 241,023,138 thousand yen (enacted; bill 議案第36号 『令和8年度東大阪市一般会計予算』, passed with amendments （修正可決） by standing majority on 2026-03-26 at the February 2026 first regular session per the council's official bill list (higashiosaka.gijiroku.com), with the bill number, the published wording and the voting date confirmed directly in that document). The amount is the post-vote enacted figure shown as the pre-supplement amount （補正前の額） in the FY2026 general-account supplementary budget (No.1) book and matches the city's published fiscal-status summary (241,023 million yen); it is kept at the published sen-yen (thousand-yen) precision and finer amounts are not synthesized. The specific content of the amendments is unconfirmed
+- FY2024 general-account settlement at sen-yen (thousand-yen) precision as published: revenue 233,897,034 thousand yen / expenditure 229,860,314 thousand yen (their difference of 4,036,720 thousand yen matches the formal balance （形式収支） printed in the audit commissioners' settlement review opinion (東大阪監第846号, 2025-08-25); the real balance is 3,767,144 thousand yen, kept at sen-yen precision as printed in that opinion). The settlement certification bill, bill 認定第1号, was kept under continued review at the September 2025 third regular session (2025-09-12) and was certified on 2025-12-01 at the December 2025 fourth regular session by standing majority per the council's official bill lists. FY2024 is the first year of the second implementation plan (FY2024-FY2027), so its plan version is the same as the current one, but no official total-level mapping from settlement totals to the plan's seven fields or three priority measures exists, so the totals are not linked to the plan's structure and the linkage stays not_assessable
+
+Deferred depth includes the per-field individual measures under the seven fields, the individual indicator values (project evaluation reports and indicator achievement status), the specific content of the amendments made when the FY2026 budget was passed with amendments, cross-checks against the budget book and the settlement book （事項別明細書） at section level, the content of the audit commissioners' settlement review opinion (individual findings), the status of the next (Fourth) comprehensive plan, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 41 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市
+- Reviewed complete: 42 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市
 - Review in progress: 0
-- Pending record review: 26
+- Pending record review: 25
 - Blocked source inventory: 0
-- Next official code: 272272
+- Next official code: 282014
 
 ## Definition of Phase 15 completion
 

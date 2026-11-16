@@ -1,0 +1,63 @@
+{
+  "id": "phase15-higashiosaka-plan-review",
+  "name_ja": "東大阪市",
+  "next_action": "Promote the per-field individual measures under the seven fields and the individual indicator values (project evaluation reports and indicator achievement status) only when official sources with stable record-level locators have been reviewed; complete the final cross-check against the budget book and the settlement book （事項別明細書） at section level; examine the content of the audit commissioners' settlement review opinion (individual findings) and the specific content of the amendments made when the FY2026 budget was passed with amendments; confirm the status of the next (Fourth) comprehensive plan; keep the first implementation plan (FY2021-FY2023) and each version (Ver.) only as separate versions, and never connect results from the first implementation plan period forward into the second. Keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "official_code": "272272",
+  "quality_boundary": "This package reviews the current plan identity and period (the Third Higashiosaka City Comprehensive Plan, covering FY2021-FY2030 with FY2030 （令和12） as the target year and the future image 『つくる・つながる・ひびきあう ― 感動創造都市 東大阪 ―』, with implementation plans split into the first implementation plan (FY2021-FY2023) and the second implementation plan (FY2024-FY2027), each revised through annual versions (Ver.), the current version being the second implementation plan Ver.3.0; the comprehensive plan's ten years and the implementation plans' periods and versions are kept as separate period semantics), the policy structure (seven fields — 人権・共生・協働 / 子ども・子育て / 教育 / スポーツ・文化・産業 / 健康・福祉 / 都市・環境 / 防災・治安 — plus three priority measures; the per-field individual measures are not enumerated because the summary edition's vertical layout cannot be transcribed field-by-field without error, so they stay deferred depth and the measures list stays empty), the progress-governance layer (after each fiscal year, implementation-plan projects are evaluated under a PDCA cycle and a project evaluation report and indicator achievement status are published — the municipality's own progress-management framework), the enacted FY2026 initial budget at the published sen-yen (thousand-yen) precision (bill 議案第36号, passed with amendments （修正可決） by standing majority on 2026-03-26 at the February 2026 first regular session per the council's official bill list; the amount is the post-vote enacted figure shown as the pre-supplement amount in the supplementary budget book; the specific content of the amendments is unconfirmed), and the FY2024 settlement at the published sen-yen precision, without collapsing proposed, enacted, supplementary, or settlement states. The FY2024 settlement certification bill (bill 認定第1号) was kept under continued review at the September 2025 third regular session and was certified on 2025-12-01 at the December 2025 fourth regular session: that outcome is recorded exactly as published. The real balance of 3,767,144 thousand yen is kept at sen-yen precision as printed in the audit commissioners' settlement review opinion. FY2024 is the first year of the second implementation plan, so its plan version is the same as the current one, but no official total-level mapping from settlement totals to the plan's seven fields or three priority measures exists, so the linkage stays not_assessable. The transition from the first implementation plan to the second implementation plan and the version history are kept only as a version chronology record, and the status of the next (Fourth) comprehensive plan is unconfirmed.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "東大阪市公式Webサイト『東大阪市第3次総合計画』ページ（Phase 14インベントリで確認）で、目標年次（令和12年）・将来都市像・実施計画（第1次・第2次と各Ver.）の構成を直接確認。計画本編（13.46MB）と概要版も同ページから公開されている",
+      "evidence_role": "current_plan_identity",
+      "id": "higashiosaka-current-plan-period",
+      "review_note": "総合計画の10年間と実施計画の期間・版（Ver.）を別period semanticsとして保持した。レビュー済みレコード。",
+      "source_url": "https://www.city.higashiosaka.lg.jp/0000028226.html",
+      "statement": "東大阪市の総合計画は東大阪市第3次総合計画であり、令和12（2030）年を目標年次とし、計画期間は令和3（2021）年度から令和12（2030）年度である。将来都市像は『つくる・つながる・ひびきあう ― 感動創造都市 東大阪 ―』である。総合計画のもとに具体的な事業計画となる実施計画を策定し、第1次実施計画（2021年度～2023年度）と第2次実施計画（2024年度～2027年度）からなる。各実施計画は、年度ごとの新規・拡充事業の新たな位置付けと社会情勢の変化等により見直しが必要となる事業を整理した版（Ver.）が策定される（第1次はVer.1.0～3.0、第2次はVer.1.0（2024年度）・Ver.2.0（2025年度）・Ver.3.0（2026年度））。総合計画の10年間と実施計画の期間・版を別period semanticsとして保持し、一律の固定期間へ潰さない。Phase 14インベントリの記録（第3次総合計画 2021～2030年度・verified_fixed_period）とも一致する。",
+      "title": "東大阪市第3次総合計画の計画期間（2021年度～2030年度）と実施計画（第1次・第2次）の構成",
+      "value": "第3次総合計画は2021年度～2030年度（令和12年を目標年次）／実施計画は第1次2021年度～2023年度・第2次2024年度～2027年度（いずれも年度ごとの版（Ver.）で改定）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "公式『東大阪市第3次総合計画（概要版）』の将来都市像・重点施策・分野別の施策体系図で、7分野の名称と3つの重点施策を直接確認した。分野別の個別施策は体系図が縦書きレイアウトであり、テキスト抽出では分野別の帰属を誤りなく転記できない",
+      "evidence_role": "policy_structure",
+      "id": "higashiosaka-current-policy-structure",
+      "review_note": "分野名と重点施策は公式概要版で直接確認した。分野別の個別施策の全件列挙は転記の正確性を担保できないため本パッケージには含めず、計画本編での直接確認を追加depthとして保持する。レビュー済みレコード。",
+      "source_url": "https://www.city.higashiosaka.lg.jp/0000028226.html",
+      "statement": "第3次総合計画の分野別の施策体系は7分野で構成する。分野1 人権・共生・協働、分野2 子ども・子育て、分野3 教育、分野4 スポーツ・文化・産業、分野5 健康・福祉、分野6 都市・環境、分野7 防災・治安である。あわせて、人口減少社会への対応を踏まえ今後10年間で特に重点的に取り組むべき施策として、3つの重点施策（1 若者・子育て世代に選ばれるまちづくり、2 高齢者が活躍するまちづくり、3 人が集まり、活気あふれるまちづくり）を置く。各分野の個別施策の全件列挙は本候補では行わず、計画本編での直接確認を人間レビュー工程に残す（deferred depth）。",
+      "title": "第3次総合計画の施策体系（7分野と3つの重点施策）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "東大阪市公式『東大阪市第3次総合計画』ページの『実績報告』『総括』の各節で、年度ごとの事業評価報告書・評価指標達成状況と第1次実施計画実績報告書の公表を直接確認",
+      "evidence_role": "progress_governance",
+      "id": "higashiosaka-progress-governance-framework",
+      "review_note": "進行管理の枠組み（PDCAサイクルによる事業評価と評価指標達成状況の公表）を公式資料から抽出。評価・進捗の個別結果そのものは本パッケージでは扱わない。レビュー済みレコード。",
+      "source_url": "https://www.city.higashiosaka.lg.jp/0000028226.html",
+      "statement": "第3次総合計画の実施計画では、各年度終了後、PDCAサイクルにより実施計画対象事業の評価を行い、評価指標の目標達成と事業の着実な実行に努めるものとし、事業評価報告書と評価指標達成状況を公表する。第1次実施計画については令和3年度～令和5年度の各年度分が、第2次実施計画については令和6年度・令和7年度分が公表済みである。あわせて、実施計画期間における総括として第1次実施計画実績報告書（施策実施による成果指標の達成状況や実施計画事業の指標達成状況を含む）がとりまとめられている。この進捗管理は自治体による進行管理の枠組みであり、Jichi Insight独自の達成判定へ変換しない。",
+      "title": "実施計画の進捗管理（PDCAサイクルによる事業評価と評価指標達成状況の公表）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "公式『東大阪市第3次総合計画』ページ（実施計画の各版の説明）と、監査委員『令和6年度東大阪市一般会計・特別会計決算及び基金運用状況審査意見書』の『むすび』（第2次実施計画Ver.2.0・東大阪版子どもファーストロードマップ・行財政改革プラン2025への言及）で確認。次期計画の策定状況は公式の計画ページ等で確認できなかった",
+      "evidence_role": "plan_transition",
+      "id": "higashiosaka-plan-transition",
+      "review_note": "同一の第3次総合計画内での実施計画の移行（第1次から第2次）と各Ver.の履歴を版の履歴として記録した。第1次実施計画の事業・評価の全件列挙は本パッケージでは行わない。レビュー済みレコード。",
+      "source_url": "https://www.city.higashiosaka.lg.jp/0000028226.html",
+      "statement": "第3次総合計画の実施計画は、第1次実施計画（令和3（2021）年度～令和5（2023）年度、Ver.1.0～3.0）から第2次実施計画（令和6（2024）年度～令和9（2027）年度、Ver.1.0～3.0）へ移行済みであり、現行は第2次実施計画Ver.3.0（令和8年度の新規・拡充事業の新たな位置付けと見直しが必要となる事業を整理した版）である。監査委員の令和6年度決算審査意見書でも、第2次実施計画をベースに令和6年度から令和9年度までを取組期間とする『東大阪版子どもファーストロードマップ』が作成されたこと、令和7年6月に第2次実施計画Ver.2.0が策定されたこと、令和7年4月に『東大阪市行財政改革プラン2025』が策定されたことが言及されている。総合計画そのものは2021年度～2030年度を通じたものであり、実施計画の第1次／第2次と各Ver.は版を分けて保持する。第3次計画の後継となる次期総合計画の策定状況は、本候補作成時点では市の公式資料で確認できていない。FY2024決算は第2次実施計画の初年度の決算であり、第1次実施計画期間の実績を第2次へ接続しない。",
+      "title": "実施計画の第1次（2021〜2023年度）から第2次（2024〜2027年度）への移行と版の履歴"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "FY2024決算の公式入口はPhase 14インベントリの決算資料（決算状況ページ）。決算総額と計画の施策との対応付けは公式資料の総額レベルでは示されていない",
+      "evidence_role": "annual_progress",
+      "fiscal_year": 2024,
+      "id": "higashiosaka-fy2024-settlement-linkage",
+      "review_note": "決算値と認定結果は一次資料で確認済みであるが、総額レベルの対応付けが公式資料にないため接続は未判定のまま保持する。レビュー済みレコード。",
+      "source_url": "https://www.city.higashiosaka.lg.jp/0000000531.html",
+      "statement": "FY2024決算値と東大阪市第3次総合計画の施策体系との接続は未判定（not_assessable）。FY2024は第2次実施計画（2024年度～2027年度）の初年度であり計画の版は現行の第2次実施計画と同一であり、決算総額（歳入233,897,034千円・歳出229,860,314千円、千円精度）と認定結果（認定第1号・2025年12月1日認定）は一次資料で確認済みであるが、決算総額は会計別の集計値であり、7分野の施策体系・3つの重点施策との総額レベルの対応付けは公式資料に示されていない。接続は人間レビュー工程の作業とする。",
+      "title": "令和6年度決算と東大阪市第3次総合計画の施策体系の接続"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-16"
+}
