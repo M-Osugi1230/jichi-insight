@@ -1,0 +1,62 @@
+{
+  "id": "phase15-otsu-plan-review",
+  "name_ja": "大津市",
+  "next_action": "Promote the individual projects under the 32 measures in the project evaluation (事務事業評価) and the per-measure outcome indicator values, only when official sources with stable record-level locators have been reviewed; complete the final cross-check against the budget book and the settlement book (事項別明細書) at section level; directly confirm the yen value in the real-balance statement itself and the wording of the vote on bill No. 3 in the plenary minutes; record the first and second action plans' frameworks themselves and the next comprehensive plan after the Basic Concept period (ending FY2028) only as separate versions, and never retroactively connect the current plan's measures to a previous action plan period's results. Keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "official_code": "252018",
+  "quality_boundary": "This package reviews the current plan identity and period (the Otsu City Comprehensive Plan, composed of the Basic Concept (FY2017-FY2028; future city image 『ひと、自然、歴史の縁で織りなす 住み続けたいまち“大津再生” ～コンパクトで持続可能なまちへの変革～』; three basic principles) and the Action Plans dividing that period into three four-year terms, the current one being the Third Action Plan (FY2025-FY2028) with three basic directions, 13 basic policies and 32 measures, all enumerated), the progress-governance layer (administrative evaluation — comprehensive-plan progress management and project evaluation — with results published annually as administrative evaluation reports, kept as the municipality's own progress-management framework), the enacted FY2026 initial budget at the published sen-yen (thousand-yen) precision (bill No. 3, passed on 2026-03-25 at the February 2026 regular session per the council's official bill-result list; the published result wording is only '可決（多数）', so the wording '原案可決' is not asserted and stays unconfirmed), and the FY2024 settlement at yen precision as published, without collapsing proposed, enacted, supplementary, or settlement states. The FY2024 settlement certification bill (bill No. 110) was certified on 2025-10-28. The real balance of 2,791,920 thousand yen is kept at sen-yen precision as published in the audit commissioners' settlement review opinion; the yen value in the real-balance statement itself stays unconfirmed. FY2024 is the final-year settlement of the Second Action Plan (FY2021-FY2024), so the plan version differs from the current Third Action Plan, and no official total-level mapping from settlement totals to the plan's basic directions, basic policies or measures exists, so the linkage stays not_assessable. The succession of action plans is kept only as version chronology records, and the status of the next comprehensive plan is left unconfirmed.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "大津市公式Webサイト『大津市総合計画 第3期実行計画』ページ（現行計画の公式入口。Phase 14インベントリで確認）と、同ページ掲載の公式『大津市総合計画第3期実行計画（概要版）』の『総合計画とは』『基本構想（平成29年度～令和10年度）』の各節で直接確認",
+      "evidence_role": "current_plan_identity",
+      "id": "otsu-current-plan-period",
+      "review_note": "12年間の基本構想と4年ごとの実行計画（現行は第3期）を別period semanticsとして保持した。レビュー済みレコード。",
+      "source_url": "https://www.city.otsu.lg.jp/soshiki/001/1001/g/sokei/68189.html",
+      "statement": "大津市の総合計画は大津市総合計画であり、基本構想と実行計画で構成する。基本構想は、市の最上位計画として将来都市像（『ひと、自然、歴史の縁で織りなす 住み続けたいまち“大津再生” ～コンパクトで持続可能なまちへの変革～』）と、その実現のための方針や政策等を定めた長期的な構想であり、計画期間は2017年度から2028年度までの12年間である。実行計画は、基本構想に掲げられた将来都市像等を実現するために、基本構想の計画期間を4年ごとに3期に分割し、各期間で取り組む具体的な施策等を示したものであり、現行は第3期実行計画（2025年度～2028年度）である。まちづくりの基本理念は『持続可能な都市経営』『共助社会の確立』『自然、歴史、文化の保全、再生、活用』の3つであり、国の総合戦略は総合計画に一体化され、取り組むべき3つのテーマが設定されている。Phase 14インベントリの記録（大津市総合計画・第3期実行計画・2017年度～2028年度）とも一致する。",
+      "title": "大津市総合計画の構成と基本構想・第3期実行計画の計画期間",
+      "value": "2017年度～2028年度"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "公式『大津市総合計画第3期実行計画（概要版）』の『施策体系図』（基本方針―基本政策―施策）で全件直接確認（基本政策別の施策数の合計32で検算一致）。重点プロジェクトは第3期実行計画（概要版）の重点プロジェクトの節および大津市公式『令和8年度予算』ページの当初予算の概要でも確認",
+      "evidence_role": "policy_structure",
+      "id": "otsu-current-policy-structure",
+      "review_note": "公式の計画概要版で施策体系を全件確認した。レビュー済みレコード。",
+      "source_url": "https://www.city.otsu.lg.jp/soshiki/001/1001/g/sokei/68189.html",
+      "statement": "第3期実行計画の施策体系は、3つの基本方針と、その下の13の基本政策、基本政策の下の32の施策で構成する。第1基本方針『子どもから高齢者までが輝いて、魅力あふれるまちを創ります』は基本政策1〜4（施策11件）、第2基本方針『自然、歴史、文化、スポーツを重視し、多くの人が集うまちを創ります』は基本政策5〜8（施策8件）、第3基本方針『安心、快適に住み続けることのできる活力のあるまちを創ります』は基本政策9〜13（施策13件）を束ねる。施策は全32件である（基本政策別に3/3/3/2/3/1/2/2/3/3/3/2/2件。合計32で検算一致）。32施策の全件はpolicy_structureに列挙する。なお、第3期実行計画では、施策分野が異なる複数の事業を相互に関連付ける4つの重点プロジェクト（就学前教育・保育の魅力向上／市役所庁舎整備／坂本城跡を活かした歴史まちづくり／認知症施策推進）が別途設定されているが、施策体系の件数には含めない。",
+      "title": "第3期実行計画の3つの基本方針・13の基本政策と全32施策"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "大津市公式Webサイト『行政評価について』ページ（進行管理の公式入口。Phase 14インベントリで確認。行政評価の概要・評価体系と各年度の行政評価報告書・実行計画進捗状況報告書へのリンク）で確認",
+      "evidence_role": "progress_governance",
+      "id": "otsu-progress-governance-framework",
+      "review_note": "進行管理の枠組み（行政評価と報告書の公表）を公式資料で直接確認したレビュー済みレコード。指標の個別値そのものは本パッケージでは扱わない。",
+      "source_url": "https://www.city.otsu.lg.jp/soshiki/005/1227/g/hyoka/1393141044295.html",
+      "statement": "大津市総合計画の進行管理は、行政評価である。行政評価は、総合計画の体系に沿った『総合計画進捗管理』（施策ごとに成果指標及び数値目標を設定し、政策―施策―事務事業の階層のうち『施策』の進捗を管理する）と、施策の目的を達成するための具体的な手段となる『事務事業』を評価する『事務事業評価』で構成し、『総合計画－行政評価－予算編成』を関連付けて運営される。行政評価の結果は行政評価報告書として年度ごとに公表され、実行計画については第2期実行計画進捗状況報告書が公表されている（第3期実行計画進捗状況報告書は準備中）。この進行管理は自治体による進行管理の枠組みであり、Jichi Insight独自の達成判定へ変換しない。",
+      "title": "行政評価（総合計画進捗管理・事務事業評価）による進行管理と報告書の公表"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "大津市公式Webサイト『行政評価について』ページ（『総合計画の着実な推進』。第1期・第2期実行計画の計画期間と第3期実行計画の設定）および公式『大津市総合計画第3期実行計画（概要版）』の計画期間図で確認",
+      "evidence_role": "plan_transition",
+      "id": "otsu-plan-transition",
+      "review_note": "第1期から第3期への移行を実行計画のversionの履歴として記録した。レビュー済みレコード。",
+      "source_url": "https://www.city.otsu.lg.jp/soshiki/001/1001/g/sokei/68189.html",
+      "statement": "大津市総合計画の実行計画は、第1期実行計画（2017年度～2020年度）、第2期実行計画（2021年度～2024年度）を経て、現行の第3期実行計画（2025年度～2028年度）へ引き継がれてきた。各実行計画はversionを分けて保持し、現行計画の施策を過去の実行計画期間の実績へ遡及接続しない。基本構想の計画期間は2028年度までであり、次期総合計画の策定状況は本候補では確認していない（確認できた範囲を超えて断定しない）。",
+      "title": "第1期・第2期実行計画から第3期実行計画への移行"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "FY2024決算の公式入口はPhase 14インベントリの決算資料（決算書）。決算総額と第3期実行計画の基本方針・基本政策・施策との対応付けは公式資料の総額レベルでは示されていない",
+      "evidence_role": "annual_progress",
+      "id": "otsu-fy2024-settlement-linkage",
+      "review_note": "計画versionが異なり総額レベルの対応付けもないため、接続を推測で記録しない明示的な未判定レコード。決算と施策の対応付けは人間レビュー工程の作業。",
+      "source_url": "https://www.city.otsu.lg.jp/shisei/zai/k/71025.html",
+      "statement": "FY2024決算値と大津市総合計画第3期実行計画の基本方針・基本政策・施策との接続は未判定（not_assessable）。FY2024は第2期実行計画（2021年度～2024年度）の最終年度の決算であり、現行の第3期実行計画（2025年度～2028年度）の期間外の決算であるため計画versionが異なる。加えて、決算総額は会計別の集計値であり、基本方針・基本政策・施策との総額レベルの対応付けは公式資料に示されていない。行政評価（総合計画進捗管理・事務事業評価）は施策・事業単位の進行管理routeであり、FY2024決算総額との対応付けは行われていない。FY2024決算の精密値そのものは決算書で確認済みであるが、決算と施策の対応付けは人間レビュー工程の作業とする。",
+      "title": "令和6年度決算と第3期実行計画の基本方針・基本政策・施策の接続"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-16"
+}

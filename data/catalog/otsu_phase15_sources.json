@@ -1,0 +1,46 @@
+{
+  "id": "otsu-phase15-sources",
+  "name_ja": "大津市",
+  "official_code": "252018",
+  "phase": 15,
+  "quality_boundary": "Current plan identity kept as published (the Otsu City Comprehensive Plan composed of the Basic Concept (FY2017-FY2028; future city image 『ひと、自然、歴史の縁で織りなす 住み続けたいまち“大津再生” ～コンパクトで持続可能なまちへの変革～』 with three basic principles) and the Action Plans that divide the Basic Concept period into three four-year terms, the current one being the Third Action Plan (FY2025-FY2028) holding three basic directions, 13 basic policies and 32 measures, all enumerated; the first and second action plans are kept only as separate versions, and the status of the next comprehensive plan after the Basic Concept period is left unconfirmed), progress governance (administrative evaluation — comprehensive-plan progress management and project evaluation — published annually as the municipality's own progress-management route), budget enactment kept as passed on 2026-03-25 as bill No. 3 at the February 2026 regular session with the amount kept at the published sen-yen precision and never expanded into synthetic yen (the council's published result wording is only '可決（多数）' and the wording '原案可決' is not asserted), and settlement totals kept at the published yen precision from the official settlement book (bill No. 110 certified on 2025-10-28; the real balance of 2,791,920 thousand yen is kept at sen-yen precision as published in the audit commissioners' settlement review opinion, and the yen value in the real-balance statement itself is left unconfirmed) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "reviewed_at": "2026-11-16",
+  "sources": [
+    {
+      "evidence_location": "大津市公式Webサイト『大津市総合計画 第3期実行計画』ページは現行計画の公式入口（Phase 14インベントリで確認）。計画の構成（基本構想＋実行計画）と期間の説明、同ページ掲載の公式『大津市総合計画第3期実行計画』本編・概要版・資料編へのリンクを含む",
+      "evidence_role": "comprehensive_and_implementation_plan",
+      "format": "html",
+      "id": "otsu-general-plan-third-action",
+      "official_url": "https://www.city.otsu.lg.jp/soshiki/001/1001/g/sokei/68189.html",
+      "title": "大津市総合計画 第3期実行計画",
+      "use_boundary": "現行計画は基本構想（2017年度～2028年度）と第3期実行計画（2025年度～2028年度）として保持し、第1期・第2期実行計画のversionをcurrentへ上書きしない"
+    },
+    {
+      "evidence_location": "大津市公式Webサイト『行政評価について』ページは進行管理の公式入口（Phase 14インベントリで確認）。行政評価の概要・評価体系（総合計画進捗管理・事務事業評価）と各年度の行政評価報告書・実行計画進捗状況報告書へのリンクを含む",
+      "evidence_role": "progress_governance",
+      "format": "html",
+      "id": "otsu-administrative-evaluation",
+      "official_url": "https://www.city.otsu.lg.jp/soshiki/005/1227/g/hyoka/1393141044295.html",
+      "title": "行政評価について",
+      "use_boundary": "行政評価は自治体の進行管理routeとして保持し、source-reportedな進捗をJichi Insight独自の達成率へ変換しない"
+    },
+    {
+      "evidence_location": "大津市公式Webサイト『令和8年度予算』ページはFY2026当初予算の公式入口（Phase 14インベントリで確認）。同ページ掲載の公式『令和8年度大津市各会計予算及び予算説明書』（議案第3号）・『令和8年度当初予算の概要』へのリンクと、可決の公表文を含む",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "otsu-budget-2026",
+      "official_url": "https://www.city.otsu.lg.jp/shisei/zai/ty/73718.html",
+      "title": "令和8年度予算",
+      "use_boundary": "FY2026当初予算は成立予算（議案第3号・令和8年3月25日可決（多数））として保持し、補正予算と別stateで扱う"
+    },
+    {
+      "evidence_location": "大津市公式Webサイト『令和6年度決算について』ページは決算の公式入口（Phase 14インベントリで確認）。FY2024の歳入・歳出の円単位総額は同ページからリンクされる議案第110号添付の公式決算書『令和6年度大津市一般会計歳入歳出決算』総括表で確認し、監査委員の決算審査意見書へのリンクと認定の公表文も含む",
+      "evidence_role": "settlement",
+      "format": "html",
+      "id": "otsu-settlement-2024",
+      "official_url": "https://www.city.otsu.lg.jp/shisei/zai/k/71025.html",
+      "title": "令和6年度決算について",
+      "use_boundary": "FY2024決算は第2期実行計画の最終年度の決算として保持し、決算総額を現行の第3期実行計画の基本政策・施策の実績へ流用しない。議案第110号は令和7年10月28日に認定されたものとして保持する"
+    }
+  ]
+}
