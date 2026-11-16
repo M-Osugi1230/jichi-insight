@@ -89,7 +89,10 @@ def test_kagoshima_candidate_records_fy2026_budget_at_published_precision() -> N
     assert "304,837,000千円" in budget["note"]
     assert "原案可決" in budget["note"]
     assert "千円単位" in budget["note"]
-    assert "未特定" in budget["note"]
+    assert "定第195号議案" in budget["note"]
+    assert "2026年3月19日" in budget["note"]
+    assert "実ブラウザによる補完調査" in budget["note"]
+    assert "未特定" not in budget["note"]
 
 
 def test_kagoshima_candidate_records_fy2024_settlement_at_published_precision() -> None:
@@ -103,20 +106,54 @@ def test_kagoshima_candidate_records_fy2024_settlement_at_published_precision() 
     assert expenditure["value_status"] == "available"
     assert "306,759,735千円" in revenue["note"]
     assert "認定" in revenue["note"]
+    assert "定第56号議案" in revenue["note"]
+    assert "2025年12月2日" in revenue["note"]
+    assert "実ブラウザによる補完調査" in revenue["note"]
+    assert "未特定" not in revenue["note"]
     assert "千円単位" in revenue["note"]
     assert "296,622,819千円" in expenditure["note"]
     assert "10,136,916千円" in expenditure["note"]
     assert "6,584,470千円" in expenditure["note"]
 
 
-def test_kagoshima_candidate_records_certification_without_inventing_a_date() -> None:
+def test_kagoshima_candidate_bill_numbers_and_vote_dates_confirmed() -> None:
     text = candidate_text()
+
+    # The FY2026 budget bill number (定第195号議案) and vote date
+    # (2026-03-19, 原案可決) and the FY2024 settlement bill number
+    # (定第56号議案) and certification date (2025-12-02, 認定) were not
+    # reachable from text-accessible official sources, so a
+    # supplementary live-browser investigation confirmed them from the
+    # council's official minutes search system. The candidate records
+    # those facts and their browser-supplement basis, while never
+    # recording a non-certification or amended-passage outcome.
     assert "令和7年第4回定例会" in text
     assert "認定" in text
-    assert "認定の議決日は未特定" in text
+    assert "定第195号議案" in text
+    assert "2026年3月19日" in text
+    assert "原案可決（賛成多数）" in text
+    assert "定第56号議案" in text
+    assert "2025年12月2日" in text
+    assert "認定（賛成多数）" in text
+    assert "実ブラウザによる補完調査" in text
     assert "不認定" not in text
     assert "修正可決" not in text
     assert "修正議決" not in text
+    # The formerly open questions about the bill numbers and vote
+    # dates are resolved.
+    assert "未特定" not in text
+    assert "一般会計予算の個別の議案番号と議決日の特定" not in text
+    assert "認定の議決日の特定" not in text
+    packets = {
+        packet["id"]: packet
+        for packet in candidate()["candidate_package"]["evidence_packets"]
+    }
+    assert packets["evidence-kagoshima-city-2026-total-expenditure"]["open_questions"] == [
+        "当初予算書の歳入歳出予算事項別明細書の款別合計との最終突合。"
+    ]
+    assert packets["evidence-kagoshima-city-2024-total-revenue"]["open_questions"] == [
+        "決算事項別明細書の款別合計との最終突合。"
+    ]
 
 
 def test_kagoshima_candidate_does_not_link_settlement_to_plan_by_total() -> None:
