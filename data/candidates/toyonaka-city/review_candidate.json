@@ -1,0 +1,378 @@
+{
+ "candidate_id": "toyonaka-phase15-review-candidate",
+ "candidate_package": {
+  "evidence_packets": [
+   {
+    "claims": [
+     {
+      "decision": "needs_review",
+      "field": "amount_yen",
+      "location_note": "豊中市公式『令和8年度予算』ページ掲載の公式予算書『令和8年度豊中市各経済予算書』の市議案第8号『令和8年度豊中市一般会計予算』第1条（歳入歳出予算の総額は歳入歳出それぞれ206,946,719千円）で確認し、提出日・提出者も同予算書の議案末尾（令和8年（2026年）2月24日提出・豊中市長長内繁樹）で確認。議決結果・議決年月日は豊中市議会公式『議決結果（令和8年（2026年）3月定例会）』（市議案第8号・議決月日3月23日・議決結果『原案可決』）で確認",
+      "review_note": "成立当初予算の額を公式予算書で抽出し、議案番号・提出日・提出者を予算書で、議決結果・議決日を市議会公式の議決結果で確認した。議決結果の文言は議決結果の公表表記「原案可決」のとおり記録した。公表精度が千円単位のため千円精度のまま記録し、円単位を合成していない。人間による確認待ちステージング。",
+      "source_ids": [
+       "toyonaka-budget-2026"
+      ],
+      "statement": "令和8年度一般会計当初予算は206,946,719千円（206,946,719,000円）であり、市議案第8号『令和8年度豊中市一般会計予算』として令和8年2月24日に豊中市長長内繁樹から提出され、令和8年3月定例会で令和8年3月23日に原案可決され成立した当初予算である（豊中市議会公式『議決結果（令和8年（2026年）3月定例会）』で市議案第8号・議決結果「原案可決」を確認した）。"
+     }
+    ],
+    "id": "evidence-toyonaka-city-2026-total-expenditure",
+    "open_questions": [
+     "補正予算による変更経過（令和8年度一般会計補正予算第1号等）は本候補では追わない。",
+     "予算説明書（歳入歳出予算事項別明細書）の款別合計との最終突合。"
+    ],
+    "review_status": "needs_review",
+    "subject_id": "jp-local-272035-fiscal-2026-total-expenditure",
+    "subject_type": "fiscal_record"
+   },
+   {
+    "claims": [
+     {
+      "decision": "needs_review",
+      "field": "amount_yen",
+      "location_note": "豊中市公式『令和6年度決算』ページ掲載の公式決算書『令和6年度豊中市各経済歳入歳出決算書』の一般会計歳入歳出決算書の歳入合計（収入済額）で円単位の総額を直接確認。実質収支は同ページ掲載の『令和6年度豊中市各経済実質収支に関する調書』（一般会計）で確認。議決結果は豊中市議会公式『議決結果（令和7年（2025年）12月定例会）』（市議案第74号・議決月日11月28日・議決結果『不認定』）で確認し、提出は令和7年9月定例会提出案件一覧（市議案第74号・決算認定4件の1件）で確認",
+      "review_note": "決算の精密値（円単位）を公式決算書から抽出し、歳入歳出差引残額の印字と検算した。認定については、市議会公式の議決結果で令和7年11月28日の不認定を直接確認したため、不認定の事実をそのまま記録し、認定の事実は記録しない。実質収支額は実質収支に関する調書そのもので確認したが、同調書が千円単位・端数調整の公表のため千円精度のまま記録する。人間による確認待ちステージング。",
+      "source_ids": [
+       "toyonaka-settlement-2024"
+      ],
+      "statement": "令和6年度一般会計決算の歳入決算額（収入済額）は197,263,021,788円である。当該決算を含む各経済歳入歳出決算の認定議案は市議案第74号『令和6年度大阪府豊中市各経済歳入歳出決算認定について』として令和7年9月定例会（令和7年9月8日提出）に提出され、継続審査を経た後、令和7年12月定例会で令和7年11月28日に不認定となった（豊中市議会公式『議決結果（令和7年（2025年）12月定例会）』で、市議案第74号・議決結果『不認定』を確認）。実質収支額は、『令和6年度豊中市各経済実質収支に関する調書』（一般会計）により4,930,077千円と確認した（同調書は千円単位で端数調整して公表されているため千円精度のまま記録する）。"
+     }
+    ],
+    "id": "evidence-toyonaka-city-2024-total-revenue",
+    "open_questions": [
+     "不認定を受けた市長による措置（地方自治法第233条第7項に基づく措置と議会への通知）の内容は未確認。",
+     "決算書（歳入歳出決算事項別明細書）の款別合計との突合。"
+    ],
+    "review_status": "needs_review",
+    "subject_id": "jp-local-272035-fiscal-2024-total-revenue",
+    "subject_type": "fiscal_record"
+   },
+   {
+    "claims": [
+     {
+      "decision": "needs_review",
+      "field": "amount_yen",
+      "location_note": "同決算書の歳出合計（支出済額）および歳入歳出差引残額の印字で確認",
+      "review_note": "決算の精密値（円単位）を公式決算書で抽出し、歳入総額との差引および予算現額（207,364,585,000円＝支出済額＋翌年度繰越額4,049,909,000円＋不用額11,524,209,410円）で検算した。認定については市議会公式の議決結果で不認定を直接確認した。人間による確認待ちステージング。",
+      "source_ids": [
+       "toyonaka-settlement-2024"
+      ],
+      "statement": "令和6年度一般会計決算の歳出決算額（支出済額）は191,790,466,590円である。歳入決算額197,263,021,788円との差引額は5,472,555,198円であり、決算書に印字された歳入歳出差引残額と一致する。当該決算を含む認定議案（市議案第74号）は令和7年11月28日に不認定となった（豊中市議会公式『議決結果（令和7年（2025年）12月定例会）』で確認）。"
+     }
+    ],
+    "id": "evidence-toyonaka-city-2024-total-expenditure",
+    "open_questions": [
+     "決算書（歳入歳出決算事項別明細書）の款別合計との突合。"
+    ],
+    "review_status": "needs_review",
+    "subject_id": "jp-local-272035-fiscal-2024-total-expenditure",
+    "subject_type": "fiscal_record"
+   }
+  ],
+  "fiscal_records": [
+   {
+    "account_type": "general",
+    "amount_yen": 206946719000,
+    "confidence": "medium",
+    "fiscal_year": 2026,
+    "id": "jp-local-272035-fiscal-2026-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算総額",
+    "municipality_id": "jp-local-272035",
+    "note": "豊中市公式『令和8年度予算』ページ掲載の公式予算書『令和8年度豊中市各経済予算書』の市議案第8号『令和8年度豊中市一般会計予算』第1条に示された一般会計当初予算額206,946,719千円（歳入歳出それぞれ同額）。公表精度は千円単位であり、円単位の内訳は公表されていないため千円精度のまま記録する。市議案第8号は令和8年2月24日に豊中市長長内繁樹から提出され、豊中市議会公式『議決結果（令和8年（2026年）3月定例会）』で令和8年3月23日に原案可決され成立した当初予算であることを確認した。補正予算や決算とは別stateで扱う。",
+    "period_end": "2027-03-31",
+    "period_start": "2026-04-01",
+    "review_status": "needs_review",
+    "sources": [
+     "toyonaka-budget-2026"
+    ],
+    "stage": "initial_budget",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+   },
+   {
+    "account_type": "general",
+    "amount_yen": 197263021788,
+    "confidence": "medium",
+    "fiscal_year": 2024,
+    "id": "jp-local-272035-fiscal-2024-total-revenue",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入額",
+    "municipality_id": "jp-local-272035",
+    "note": "豊中市公式『令和6年度決算』ページ掲載の公式決算書『令和6年度豊中市各経済歳入歳出決算書』の一般会計歳入歳出決算書の歳入合計に記載された歳入決算額（収入済額）197,263,021,788円（円単位。予算現額207,364,585,000円・調定額199,598,684,574円）。歳出決算額（支出済額）191,790,466,590円との差引額5,472,555,198円は決算書に印字された歳入歳出差引残額と一致する（うち基金繰入額はなし）。実質収支額は同ページ掲載の『令和6年度豊中市各経済実質収支に関する調書』（一般会計）により4,930,077千円と確認した（歳入歳出差引額5,472,555千円から翌年度へ繰越すべき財源542,478千円（繰越明許費繰越額）を控除した額。同調書は千円単位で各項目ごとに端数調整して公表されているため、実質収支は千円精度のまま記録する）。令和6年度決算の認定議案は市議案第74号『令和6年度大阪府豊中市各経済歳入歳出決算認定について』であり、令和7年9月定例会（令和7年9月8日提出）に決算認定4件の1件として提出され、継続審査を経て、令和7年12月定例会で令和7年11月28日に不認定となった（豊中市議会公式『議決結果（令和7年（2025年）12月定例会）』で市議案第74号・議決結果『不認定』を直接確認）。一般会計を含む各経済歳入歳出決算は不認定であり、本候補では認定の事実を記録しない。FY2024は第4次豊中市総合計画後期基本計画（2023年度～2027年度）の2年度目の決算である。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "needs_review",
+    "sources": [
+     "toyonaka-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+   },
+   {
+    "account_type": "general",
+    "amount_yen": 191790466590,
+    "confidence": "medium",
+    "fiscal_year": 2024,
+    "id": "jp-local-272035-fiscal-2024-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出額",
+    "municipality_id": "jp-local-272035",
+    "note": "同決算書の歳出合計に記載された歳出決算額（支出済額）191,790,466,590円（円単位）。翌年度繰越額4,049,909,000円・不用額11,524,209,410円との合計が予算現額207,364,585,000円と一致し、歳入決算額197,263,021,788円との差引額5,472,555,198円で検算が一致する。令和6年度決算の認定議案である市議案第74号は令和7年11月28日に不認定となった（豊中市議会公式『議決結果（令和7年（2025年）12月定例会）』で確認）。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "needs_review",
+    "sources": [
+     "toyonaka-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+   }
+  ],
+  "plan_review": {
+   "id": "phase15-toyonaka-plan-review",
+   "name_ja": "豊中市",
+   "official_code": "272035",
+   "records": [
+    {
+     "decision": "needs_review",
+     "evidence_location": "豊中市公式Webサイト『後期基本計画（2023年度から2027年度）』ページ（現行計画の公式入口。Phase 14インベントリで確認）と、同ページ掲載の公式『第4次豊中市総合計画後期基本計画』本編の序論（第4次豊中市総合計画後期基本計画策定の趣旨・計画の構成と期間・まちの将来像と施策大綱）で直接確認",
+     "evidence_role": "current_plan_identity",
+     "id": "toyonaka-current-plan-period",
+     "review_note": "10年間の基本構想と前期・後期各5年の基本計画を別period semanticsとして保持した。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.toyonaka.osaka.jp/joho/keikaku/soukei4/koukikihonkeikaku.html",
+     "statement": "豊中市の総合計画は第4次豊中市総合計画であり、豊中市自治基本条例に基づき策定された市の最上位計画として、基本構想・基本計画・実施計画で構成する。基本構想は、まちの将来像（『みらい創造都市 とよなか ～明日がもっと楽しみなまち～』）とその実現のための施策大綱を示すものであり、計画期間は2018年度から2027年度までの10年間（目標年度2027年度）である。基本計画は前期基本計画（2018年度～2022年度）と後期基本計画（2023年度～2027年度）に分かれ、現行は後期基本計画である。実施計画は、基本計画で示した施策を実現するための事業を明らかにするものであり、後期は2023年度～2027年度の5年間を対象とし、令和6年度以降はデジタル予算書で提供される。Phase 14インベントリの記録（第4次豊中市総合計画 後期基本計画・2023年度～2027年度）とも一致する。",
+     "title": "第4次豊中市総合計画の構成と基本構想・後期基本計画の計画期間",
+     "value": "2018年度～2027年度"
+    },
+    {
+     "decision": "needs_review",
+     "evidence_location": "公式『後期基本計画（2023年度から2027年度）』ページの「16施策とリーディングプロジェクト」の一覧で全件直接確認（章別の施策数の合計16で検算一致）。リーディングプロジェクトは同ページおよび公式『第4次豊中市総合計画後期基本計画』本編で確認",
+     "evidence_role": "policy_structure",
+     "id": "toyonaka-current-policy-structure",
+     "review_note": "公式の計画ページで施策体系を全件確認した。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.toyonaka.osaka.jp/joho/keikaku/soukei4/koukikihonkeikaku.html",
+     "statement": "後期基本計画の施策体系は、基本構想の施策大綱に沿った5つの章のもと、全16施策で構成する。第1章『子ども・若者が夢や希望をもてるまちづくり』は3施策、第2章『安全に安心して暮らせるまちづくり』は4施策、第3章『活力ある快適なまちづくり』は5施策、第4章『いきいきと心豊かに暮らせるまちづくり』は2施策、第5章『施策推進に向けた取組み』は2施策を束ねる（3+4+5+2+2の合計16で検算一致）。16施策の全件はpolicy_structureに列挙する。なお、後期基本計画では、各施策の事業のうち特に重点的・総合的に取り組む事業を「リーディングプロジェクト」として位置付けており、後期基本計画のリーディングプロジェクトは南部地域活性化プロジェクトであるが、施策体系の件数には含めない。",
+     "title": "後期基本計画の5つの章と全16施策"
+    },
+    {
+     "decision": "needs_review",
+     "evidence_location": "豊中市公式Webサイト『政策評価』ページ（進行管理の公式入口。Phase 14インベントリで確認。政策評価の対象・手法の説明と各年度の政策評価結果概要・デジタル予算書へのリンク）で確認",
+     "evidence_role": "progress_governance",
+     "id": "toyonaka-progress-governance-framework",
+     "review_note": "進行管理の枠組み（政策評価と結果の公表）を公式資料から抽出。評価の個別結果そのものは本候補では扱わない。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.toyonaka.osaka.jp/joho/keikaku/gyousei_hyouka/20190524135532126.html",
+     "statement": "第4次豊中市総合計画基本計画の進行管理は、政策評価である。政策評価は、後期基本計画の16施策とリーディングプロジェクトを対象に、取組みの進捗度（想定以上に進んでいる／想定どおりに進んでいる／想定よりやや遅れている／想定より大幅に遅れている）と取組み内容（取組み内容を拡充する／取組み内容を継続する／取組み内容を変更する）の2軸で毎年度評価する自治体の制度であり、結果はデジタル予算書と政策評価結果概要で公表される。この進行管理は自治体による進行管理の枠組みであり、Jichi Insight独自の達成判定へ変換しない。",
+     "title": "政策評価（2軸評価）による進行管理と結果の公表"
+    },
+    {
+     "decision": "needs_review",
+     "evidence_location": "公式『第4次豊中市総合計画後期基本計画』本編の序論（前期基本計画の計画期間・17施策とリーディングプロジェクトの設定、後期基本計画の策定）および豊中市公式Webサイト『政策評価』ページの前期基本計画の評価対象の記載で確認",
+     "evidence_role": "plan_transition",
+     "id": "toyonaka-plan-transition",
+     "review_note": "前期から後期への移行を基本計画のversionの履歴として記録した。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.toyonaka.osaka.jp/joho/keikaku/soukei4/koukikihonkeikaku.html",
+     "statement": "第4次豊中市総合計画の基本計画は、前期基本計画（2018年度～2022年度・17施策とリーディングプロジェクト）を経て、現行の後期基本計画（2023年度～2027年度・16施策とリーディングプロジェクト）へ引き継がれてきた。各基本計画はversionを分けて保持し、現行計画の施策を前期基本計画期間の実績へ遡及接続しない。基本構想の計画期間は2027年度までであり、次期総合計画の策定状況は本候補では確認していない（確認できた範囲を超えて断定しない）。",
+     "title": "前期基本計画から後期基本計画への移行"
+    },
+    {
+     "decision": "not_assessable",
+     "evidence_location": "FY2024決算の公式入口はPhase 14インベントリの決算資料（決算書）。決算総額と後期基本計画の16施策・リーディングプロジェクトとの対応付けは公式資料の総額レベルでは示されていない",
+     "evidence_role": "annual_progress",
+     "id": "toyonaka-fy2024-settlement-linkage",
+     "review_note": "総額レベルの対応付けがないため接続は未判定のまま保持する。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.toyonaka.osaka.jp/joho/zaisei/kessan/r6kessan/index.html",
+     "statement": "FY2024決算値と第4次豊中市総合計画後期基本計画の16施策・リーディングプロジェクトとの接続は未判定（not_assessable）。FY2024は後期基本計画（2023年度～2027年度）の期間内の決算であり計画versionは同一であるが、決算総額は会計別の集計値であり、施策との総額レベルの対応付けは公式資料に示されていない。政策評価は施策・リーディングプロジェクト単位の進行管理routeであり、FY2024決算総額との対応付けは行われていない。FY2024決算の精密値そのものは決算書で確認済みであるが、決算と施策の対応付けは人間レビュー工程の作業とする。",
+     "title": "令和6年度決算と後期基本計画の16施策・リーディングプロジェクトの接続"
+    }
+   ],
+   "review_status": "pending_record_review"
+  },
+  "policy_structure": {
+   "current_plan": {
+    "end_fiscal_year": 2027,
+    "management_principles": [
+     "総合計画は基本構想（まちの将来像と、その実現のための施策大綱を示すもの。計画期間は2018年度～2027年度の10年間）と基本計画（基本構想の計画期間を前期（2018年度～2022年度）・後期（2023年度～2027年度）に分け、現行は後期基本計画）と実施計画（基本計画で示した施策を実現するための事業を明らかにするもの。令和6年度以降はデジタル予算書で提供）の3層で構成する。10年間の基本構想と5年ごとの基本計画を一律の固定期間modelへ潰さない",
+     "後期基本計画は、5つの章のもと、施策（全16件）で構成する。16施策の全件をpolicy_structureに列挙する。リーディングプロジェクト（南部地域活性化プロジェクト）は施策体系とは別枠として保持する",
+     "進行管理は政策評価（後期基本計画の16施策とリーディングプロジェクトを進捗度・取組み内容の2軸で毎年度評価）で行い、結果はデジタル予算書と政策評価結果概要で公表する。自治体の進行管理をJichi Insight独自の達成判定へ変換しない",
+     "基本計画は前期（2018年度～2022年度・17施策）を経て後期へ移行した。各計画はversionを分けて保持し、計画間の体系を相互の期間の実績へ遡及・前倒し接続しない"
+    ],
+    "policy_fields": [
+     {
+      "id": "field-1",
+      "measures": [
+       "妊娠・出産・子育て支援の充実",
+       "教育環境の充実",
+       "子ども・若者への総合的な支援の充実"
+      ],
+      "name_ja": "第1章 子ども・若者が夢や希望をもてるまちづくり"
+     },
+     {
+      "id": "field-2",
+      "measures": [
+       "住み慣れた地域で暮らし続けられるまちづくりの推進",
+       "保健・医療環境の充実",
+       "消防・救急救命体制の充実",
+       "災害に強く、犯罪を防ぎ、安全に暮らせる地域づくり"
+      ],
+      "name_ja": "第2章 安全に安心して暮らせるまちづくり"
+     },
+     {
+      "id": "field-3",
+      "measures": [
+       "環境意識の向上と快適なまちの環境の保全・創造",
+       "脱炭素・循環型社会の構築",
+       "安全で安心なまちの基盤づくり",
+       "だれもが住みやすい住環境の実現",
+       "産業振興の充実"
+      ],
+      "name_ja": "第3章 活力ある快適なまちづくり"
+     },
+     {
+      "id": "field-4",
+      "measures": [
+       "共に生きる平和なまちづくり",
+       "学びと文化のあふれるまちづくり"
+      ],
+      "name_ja": "第4章 いきいきと心豊かに暮らせるまちづくり"
+     },
+     {
+      "id": "field-5",
+      "measures": [
+       "情報共有・参画・協働に基づくまちづくり",
+       "持続可能な市政運営の推進"
+      ],
+      "name_ja": "第5章 施策推進に向けた取組み"
+     }
+    ],
+    "start_fiscal_year": 2023,
+    "title": "第4次豊中市総合計画 後期基本計画",
+    "vision": "みらい創造都市 とよなか ～明日がもっと楽しみなまち～"
+   },
+   "id": "toyonaka-current-policy-structure",
+   "name_ja": "豊中市",
+   "official_code": "272035",
+   "phase": 15
+  },
+  "progress_review": {
+   "id": "toyonaka-current-progress-review-summary",
+   "implementation_plan_framework": {
+    "evaluation_structure": "進行管理は、後期基本計画の16施策とリーディングプロジェクトを対象とする政策評価（取組みの進捗度と取組み内容の2軸で毎年度評価し、結果はデジタル予算書と政策評価結果概要で公表される）を中心とする自治体の進行管理の枠組みである。実施計画は令和6年度以降デジタル予算書で提供され、施策体系一覧から事務事業の計画を確認する運用である。自治体の進行管理をJichi Insight独自の達成判定へ変換せず、枠組みそのものを年度実績へ読み替えない",
+    "period": "第4次豊中市総合計画の計画期間（基本構想2018年度～2027年度・後期基本計画2023年度～2027年度）を通じて、政策評価のもとで進行管理を行い、評価結果は年度ごとに公表される。FY2024決算は後期基本計画の期間内の決算であり計画versionは同一であるが、決算総額と16施策・リーディングプロジェクトとの総額レベルの対応付けは公式資料にないため、進行管理の対象値として接続しない",
+    "title": "政策評価による進行管理"
+   },
+   "name_ja": "豊中市",
+   "official_code": "272035",
+   "phase": 15,
+   "review_status": "review_candidate_staging"
+  },
+  "source_catalog": {
+   "id": "toyonaka-phase15-sources",
+   "name_ja": "豊中市",
+   "official_code": "272035",
+   "phase": 15,
+   "sources": [
+    {
+     "evidence_location": "豊中市公式Webサイト『後期基本計画（2023年度から2027年度）』ページは現行基本計画の公式入口（Phase 14インベントリで確認）。16施策とリーディングプロジェクトの一覧、同ページ掲載の公式『第4次豊中市総合計画後期基本計画』本編（序論で基本構想の計画期間・まちの将来像・計画の構成を確認）へのリンクを含む",
+     "evidence_role": "comprehensive_plan",
+     "format": "html",
+     "id": "toyonaka-fourth-latter-plan",
+     "official_url": "https://www.city.toyonaka.osaka.jp/joho/keikaku/soukei4/koukikihonkeikaku.html",
+     "title": "後期基本計画（2023年度から2027年度）",
+     "use_boundary": "現行計画は第4次豊中市総合計画後期基本計画（2023年度～2027年度）として保持し、前期基本計画（2018年度～2022年度）のversionをcurrentへ上書きしない",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    },
+    {
+     "evidence_location": "豊中市公式Webサイト『実施計画』ページは実施計画の公式入口（Phase 14インベントリで確認）。令和6年度以降の実施計画をデジタル予算書で確認する運用の説明と、令和5年度版までの実施計画（本編）へのリンクを含む",
+     "evidence_role": "implementation_plan",
+     "format": "html",
+     "id": "toyonaka-implementation-plan",
+     "official_url": "https://www.city.toyonaka.osaka.jp/joho/keikaku/soukei4/jijjikeikaku.html",
+     "title": "実施計画",
+     "use_boundary": "実施計画情報がデジタル予算書へ統合された運用を保持し、計画事業と予算項目をEvidence確認なしに同一identityへ統合しない",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    },
+    {
+     "evidence_location": "豊中市公式Webサイト『政策評価』ページは進行管理の公式入口（Phase 14インベントリで確認）。後期基本計画の16施策とリーディングプロジェクトを進捗度・取組み内容の2軸で毎年度評価する手法の説明と、各年度の政策評価結果概要へのリンクを含む",
+     "evidence_role": "progress_governance",
+     "format": "html",
+     "id": "toyonaka-policy-evaluation",
+     "official_url": "https://www.city.toyonaka.osaka.jp/joho/keikaku/gyousei_hyouka/20190524135532126.html",
+     "title": "政策評価",
+     "use_boundary": "政策評価は自治体の進行管理routeとして保持し、source-reportedな評価をJichi Insight独自の達成率へ変換しない",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    },
+    {
+     "evidence_location": "豊中市公式Webサイト『令和8年度予算』ページはFY2026当初予算の公式入口（Phase 14インベントリで確認）。同ページ掲載の公式『令和8年度豊中市各経済予算書』（市議案第8号）・各経済予算説明書・議案参考資料へのリンクを含む",
+     "evidence_role": "budget",
+     "format": "html",
+     "id": "toyonaka-budget-2026",
+     "official_url": "https://www.city.toyonaka.osaka.jp/joho/zaisei/yosan/r8yosan.html",
+     "title": "令和8年度予算",
+     "use_boundary": "FY2026当初予算は成立予算（市議案第8号・令和8年3月23日原案可決）として保持し、補正予算と別stateで扱う",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    },
+    {
+     "evidence_location": "豊中市公式Webサイト『令和6年度決算』ページは決算の公式入口（Phase 14インベントリで確認）。FY2024の歳入・歳出の円単位総額は同ページ掲載の公式『令和6年度豊中市各経済歳入歳出決算書』の一般会計歳入歳出決算書で確認し、実質収支は同ページ掲載の『令和6年度豊中市各経済実質収支に関する調書』（一般会計）で確認した",
+     "evidence_role": "settlement",
+     "format": "html",
+     "id": "toyonaka-settlement-2024",
+     "official_url": "https://www.city.toyonaka.osaka.jp/joho/zaisei/kessan/r6kessan/index.html",
+     "title": "令和6年度決算",
+     "use_boundary": "FY2024決算は後期基本計画期間内（2年度目）の決算として保持し、決算総額を計画の施策の実績へ流用しない。認定議案（市議案第74号）は令和7年11月28日に不認定となったものとして保持する",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    }
+   ]
+  }
+ },
+ "deferred_depth": [
+  {
+   "boundary": "16施策に基づく事務事業の全件（デジタル予算書の施策体系一覧・事務事業一覧）と、施策ごとの成果指標の個別値、リーディングプロジェクト（南部地域活性化プロジェクト）の事業内訳は追加depthとし、公式対応が確認できるまで昇格しない。政策評価結果は年度版を分離して保持する。",
+   "id": "current-plan-granular-kpi-and-project-linkage",
+   "status": "deferred_not_required_for_candidate_staging"
+  },
+  {
+   "boundary": "補正予算による変更経過、補正予算・決算と個別事業費の対応関係は追加エビデンス確認前は記録・結合しない。市議案第74号の議決結果（令和7年11月28日・不認定）と決算総額（円単位）は一次資料で確認済みであり、候補の財政記録・証拠パケット側に反映している。実質収支は実質収支に関する調書の千円単位の集計（4,930,077千円）で確認し、その精度のまま保持する。不認定に係る市長の措置（地方自治法第233条第7項）の内容確認は未実施である。",
+   "id": "settlement-values-and-budget-amendment-linkage",
+   "status": "deferred_not_required_for_candidate_staging"
+  },
+  {
+   "boundary": "前期基本計画の枠組みそのもの（17施策・リーディングプロジェクトの内訳）、および基本構想の計画期間（2027年度）後の次期総合計画の策定状況は本候補では記録しない。移行の経過は版の履歴として別途記録し、過去の基本計画の体系を現行計画期間の実績へ遡及接続しない。",
+   "id": "plan-transition-version-depth",
+   "status": "deferred_not_required_for_candidate_staging"
+  },
+  {
+   "boundary": "豊中市総合計画・財政等のステージングは政策効果の因果認定や他都市比較可能性を意味しない。政策評価（自治体の進行管理の枠組み）をJichi Insight独自の達成判定へ変換しない。",
+   "id": "policy-outcome-causal-and-cross-city-comparability",
+   "status": "deferred_not_required_for_candidate_staging"
+  }
+ ],
+ "human_review": {
+  "boundary": "A person must check the candidate against the cited primary sources before any promotion to reviewed_complete.",
+  "required": true,
+  "reviewed_at": null,
+  "reviewer_note": null,
+  "status": "pending"
+ },
+ "name_ja": "豊中市",
+ "official_code": "272035",
+ "package_state": "prepared",
+ "phase": 15,
+ "publication": {
+  "boundary": "Candidate data is staging-only and must not be loaded by the public site or treated as reviewed data.",
+  "eligible": false
+ },
+ "quality_boundaries": [
+  "Promoted facts must come from official primary sources with stable evidence locators.",
+  "Unpublished, unavailable, historical-only, draft, and unresolved facts must remain explicit.",
+  "No Jichi Insight policy-achievement score, causal attribution, or unverified cross-city ranking may be created.",
+  "This candidate is machine-prepared evidence only and is not Reviewed until a person checks the primary sources."
+ ],
+ "schema_version": 1,
+ "source_inventory_path": "data/indexed/toyonaka-city/source_inventory.json",
+ "status": "review_candidate"
+}
