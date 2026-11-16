@@ -1,0 +1,63 @@
+{
+  "id": "phase15-nishinomiya-plan-review",
+  "name_ja": "西宮市",
+  "next_action": "Promote the per-field initiatives, departmental plans and indicators of the 35 policy fields of the second-half basic plan only when official sources with stable record-level locators have been reviewed; complete the final cross-check against the budget book and the settlement book （事項別明細書） at section level; examine the content of the audit commissioners' settlement review opinion (individual findings); keep the previous plan (the Fourth Nishinomiya Comprehensive Plan) only as a separate version, and never connect results from the previous plan period or the first-half basic plan period forward into the current second-half basic plan. Keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "official_code": "282049",
+  "quality_boundary": "This package reviews the current plan identity and period (the Fifth Nishinomiya Comprehensive Plan, adopted in March 2019 as the city's top-level plan: the basic concept runs FY2019-FY2028, the basic plan splits into a first half (FY2019-FY2023) and a second half (FY2024-FY2028, current, with the action plan bound into the plan volume), and the implementation plans are three-year rolling plans revised every year (current edition FY2026-FY2028); the basic-concept period, the basic-plan halves and the implementation-plan periods are kept as separate period semantics), the policy structure (the second-half basic plan's six parts and 35 policy fields under the urban goal 『未来を拓く文教住宅都市・西宮 ～憩い、学び、つながりのある美しいまち～』, with six cross-cutting perspectives; the per-field initiatives and departmental plans are not enumerated and stay deferred depth, so the measures lists stay empty), the progress-governance layer (annual revision of the three-year rolling implementation plan, which adjusts the main works concretizing each basic-plan measure year by year in line with funding and the mayor's manifesto, together with the published revenue-expenditure outlook and project plan — the municipality's own progress-management framework), the enacted FY2026 initial budget at the published sen-yen (thousand-yen) precision (bill 議案第493号; passed by majority vote on 2026-03-18 per the council's minutes search system 『議決結果』 — the council's deliberation-results table itself carries no result-wording column and defines the mark only as passed by majority vote in its footnote, so no other result wording is recorded and the budget is never described as adopted in its original form; the table contains no amendment row for bill 議案第493号), and the FY2024 settlement at the sen-yen precision printed in the audit commissioners' settlement review opinion (section 6, general account). The FY2024 settlement certification （認定第15号） was certified by majority vote at the 14th (September 2025) regular session on 2025-10-02: that outcome is recorded exactly as published; it was not rejected. The real balance of 647,529 thousand yen is kept at the published sen-yen precision, and the combined general-and-special-account real balance of 1,861,075 thousand yen printed in the opinion's general remarks is not used as the general-account value. FY2024 is the first year of the second-half basic plan, so its plan version is the same as the current plan, but no official total-level mapping from settlement totals to the six parts and 35 policy fields exists, so the linkage stays not_assessable. The transition from the previous plan (the Fourth Nishinomiya Comprehensive Plan, basic goal 『ふれあい 感動 文教住宅都市・西宮』) is kept only as a version chronology record.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "西宮市公式『第5次西宮市総合計画 後期基本計画』ページと後期基本計画本編（公式PDF）で、計画の構成（基本構想・基本計画・実施計画）、基本構想の期間（令和元年度～令和10年度の10年）と基本計画の前期（令和元年度～令和5年度）・後期（令和6年度～令和10年度）、都市目標を直接確認した。実施計画の期間と見直し方式は市公式『第5次西宮市総合計画 実施計画』ページで確認した",
+      "evidence_role": "current_plan_identity",
+      "id": "nishinomiya-current-plan-period",
+      "review_note": "総合計画の構成（基本構想・基本計画・実施計画とアクションプラン）と、基本構想の10年、基本計画の前期・後期、実施計画の3年ローリングを別period semanticsとして保持した。レビュー済みレコード。",
+      "source_url": "https://www.nishi.or.jp/shisei/sogokeikaku/sogokeikaku/dai5jisogokeikaku/2023122011190.html",
+      "statement": "西宮市の総合計画は第5次西宮市総合計画であり、市の最上位計画として平成31年3月に策定された。計画の構成は、まちや人の将来像を描く基本構想、将来像実現に向けた施策の体系を示す基本計画、各施策に基づく事務・事業を示す実施計画からなり、基本計画の本編にはアクションプラン（西宮版総合戦略の取組を統合したもの）が収録される。計画の期間は、基本構想が令和元年度～令和10年度の10年間、基本計画は前期5年（令和元年度～令和5年度）・後期5年（令和6年度～令和10年度）に分けられ、現行は後期基本計画（令和5年12月定例会の議案書等をもとに令和6年3月に発行）である。実施計画は各3年を計画期間としローリング方式により毎年度見直しを行うもので、現行は令和8～10年度実施計画である。都市目標は『未来を拓く文教住宅都市・西宮 ～憩い、学び、つながりのある美しいまち～』である。基本構想の10年と基本計画の前期・後期、実施計画の3年を別period semanticsとして保持し、一律の固定期間へ潰さない。Phase 14インベントリの記録（第5次西宮市総合計画 後期基本計画 2024年度～2028年度・verified_fixed_period）とも一致する。",
+      "title": "第5次西宮市総合計画の構成（基本構想2019年度～2028年度と前期・後期基本計画、実施計画）",
+      "value": "第5次西宮市総合計画は基本構想2019年度～2028年度（10年）／基本計画は前期2019年度～2023年度・後期2024年度～2028年度で現行は後期／実施計画は各3年で毎年度見直し（現行は2026年度～2028年度）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "後期基本計画本編（公式PDF）の『後期基本計画の概要と施策推進の視点』と各部の施策分野一覧で、6部・35施策分野の体系と分野横断の視点を直接確認した",
+      "evidence_role": "policy_structure",
+      "id": "nishinomiya-current-policy-structure",
+      "review_note": "後期基本計画の6部・35施策分野の体系と6つの分野横断の視点を計画本編で直接確認した。各施策分野の取組内容・部門別計画の全件列挙は本パッケージでは行わず、追加depthとして保持する。レビュー済みレコード。",
+      "source_url": "https://www.nishi.or.jp/shisei/sogokeikaku/sogokeikaku/dai5jisogokeikaku/2023122011190.html",
+      "statement": "後期基本計画の施策体系は6部・35施策分野で構成する。第Ⅰ部 住環境・自然環境（1．住環境、2．緑・自然、3．景観、4．市街地、5．公共交通）、第Ⅱ部 子供・教育（6．子供・子育て支援、7．学校教育、8．青少年育成）、第Ⅲ部 福祉・健康・共生（9．地域福祉、10．高齢者福祉、11．障害のある人の福祉、12．生活支援、13．医療保険・年金・医療費助成、14．医療サービス、15．健康増進・公衆衛生、16．人権・多文化共生・平和）、第Ⅳ部 都市の魅力・産業（17．生涯学習、18．文化芸術、19．スポーツ、20．都市ブランド、21．大学連携、22．産業、23．農業・食の流通、24．就業・労働）、第Ⅴ部 環境・都市基盤、安全・安心（25．環境保全、26．生活環境、27．水道、28．下水道、29．道路、30．防災・減災、31．消防、32．地域防犯・交通安全・消費者安全）、第Ⅵ部 政策推進（33．住民自治・地域行政、34．政策推進、35．執行体制）。各施策分野には目的と取組内容、部門別計画が対応付けられている。あわせて後期基本計画は、施策分野の横串となる視点として、行政経営改革の推進、財政構造改善の取組、生涯学習を基盤とした持続可能なまちづくり、『西宮市DX』の推進、ゼロカーボンシティの実現、西宮版総合戦略の推進の6つを置き、各施策を分野横断的に連携して推進する枠組みである。各施策分野の取組内容と部門別計画の全件列挙は本候補では行わず、計画本編での直接確認を追加depthとして保持する（deferred depth）。",
+      "title": "後期基本計画の施策体系（6部・35施策分野と分野横断の視点）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "市公式『第5次西宮市総合計画 実施計画』ページで、実施計画の策定趣旨（基本計画の各施策を具体化する主要な事務・事業について年次的な調整を加え、財源や市長のマニフェストなどとの整合を図る）と、計画期間3か年・ローリング方式による毎年度見直し、現行版（令和8～10年度）と過去版の一覧を直接確認した。後期基本計画の公式ページでは収支見通し及び事業計画の公表も確認した",
+      "evidence_role": "progress_governance",
+      "id": "nishinomiya-progress-governance-framework",
+      "review_note": "進行管理の枠組み（実施計画のローリング方式による毎年度見直しと、収支見通し及び事業計画の公表）を公式資料から抽出した。評価・進捗の個別結果そのものは本パッケージでは扱わない。レビュー済みレコード。",
+      "source_url": "https://www.nishi.or.jp/shisei/sogokeikaku/sogokeikaku/dai5jisogokeikaku/5jisshikeikaku.html",
+      "statement": "第5次西宮市総合計画の進行管理は、実施計画を通じた自治体の枠組みである。実施計画は、基本計画で示した各施策を具体化するための主要な事務・事業の実施について年次的な調整を加え、財源や市長のマニフェストなどとの整合を図る具体的で実効性のある計画として策定され、計画期間は3か年とし、ローリング方式により毎年度見直しを行う（現行は令和8～10年度実施計画）。あわせて市は、計画期間中の収支の見通しと計画されている事業の概要等を示す『収支見通し及び事業計画』を公表している。この進捗管理は自治体による進行管理の枠組みであり、Jichi Insight独自の達成判定へ変換しない。",
+      "title": "計画の進行管理（実施計画のローリング方式による毎年度見直し）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "後期基本計画本編（公式PDF）で第4次総合計画の基本目標（『ふれあい 感動 文教住宅都市・西宮』）と第5次総合計画の策定経緯（平成31年3月策定）を確認し、基本計画が前期5年・後期5年で構成され後期基本計画が令和6年度を初年度として策定されたことを公式ページで確認した",
+      "evidence_role": "plan_transition",
+      "id": "nishinomiya-plan-transition",
+      "review_note": "前総合計画から現行計画への移行と、基本計画の前期から後期への版の進行を版の履歴として記録した。前計画の事業・評価の全件列挙は本パッケージでは行わない。レビュー済みレコード。",
+      "source_url": "https://www.nishi.or.jp/shisei/sogokeikaku/sogokeikaku/dai5jisogokeikaku/2023122011190.html",
+      "statement": "現行の第5次西宮市総合計画（平成31年3月策定）に先立つ前総合計画は第4次西宮市総合計画であり、基本目標として『ふれあい 感動 文教住宅都市・西宮』を掲げた。第3次総合計画までは『文教住宅都市を基調とする個性的な都市』を基本目標としており、『文教住宅都市』としての取組が総合計画を通じて積み重ねられてきた。また、第5次計画の内部では基本計画が前期（令和元年度～令和5年度）から後期（令和6年度～令和10年度）へ版を進めており、後期基本計画は第5次総合計画策定後の社会状況の変化や新たな課題に対応して策定された現行の版である。FY2024決算は後期基本計画の初年度の決算であり、前期基本計画期間の実績を後期基本計画へ先取りしない。",
+      "title": "前総合計画（第4次西宮市総合計画）からの移行と基本計画の前期から後期への版の進行"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "FY2024決算の公式入口はPhase 14インベントリの決算の概要ページ。決算総額と計画の施策体系との対応付けは公式資料の総額レベルでは示されていない",
+      "evidence_role": "annual_progress",
+      "fiscal_year": 2024,
+      "id": "nishinomiya-fy2024-settlement-linkage",
+      "review_note": "決算値と認定結果は一次資料で確認済みであるが、総額レベルの対応付けが公式資料にないため接続は未判定のまま保持する。レビュー済みレコード。",
+      "source_url": "https://www.nishi.or.jp/shisei/zaiseijoho/kessan/R6_kessan_gaiyou.html",
+      "statement": "FY2024決算値と第5次西宮市総合計画後期基本計画の施策体系との接続は未判定（not_assessable）。FY2024は後期基本計画（2024年度～2028年度）の初年度の決算であり、計画の版は現行の後期基本計画と同一である。決算総額（歳入205,479,435千円・歳出204,547,927千円、いずれも監査委員決算審査意見書第6『一般会計』の表による千円精度）と認定結果（認定第15号・2025年10月2日に賛成多数により認定）は一次資料で確認済みであるが、決算総額は会計別の集計値であり、後期基本計画の6部・35施策分野との総額レベルの対応付けは公式資料に示されていない。接続は人間レビュー工程の作業とする。",
+      "title": "令和6年度決算と第5次西宮市総合計画後期基本計画の施策体系の接続"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-16"
+}

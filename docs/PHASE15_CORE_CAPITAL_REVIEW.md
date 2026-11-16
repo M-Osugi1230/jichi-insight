@@ -644,13 +644,25 @@ Declared v1 package:
 
 Deferred depth includes the per-field main measures and numerical targets (KPIs) of the strategy plans (first-half and second-half), the wording of the result column in the council's deliberation-result document for the FY2026 budget bill and the specific content of the budget amendment, the final confirmation of both votes against the council minutes, cross-checks against the budget book and the settlement book （事項別明細書） at section level, the content of the audit commissioners' settlement review opinion (individual findings), supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Forty-sixth completion — Nishinomiya
+
+西宮市を46番目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 第5次西宮市総合計画 — the city's top-level plan, adopted in March 2019. It is composed of the basic concept （基本構想， FY2019-FY2028, urban goal 『未来を拓く文教住宅都市・西宮 ～憩い、学び、つながりのある美しいまち～』), the basic plan （基本計画）, which splits into a first half (FY2019-FY2023) and a second half (FY2024-FY2028, the current edition, with the action plan （アクションプラン） bound into the plan volume), and the implementation plans （実施計画）, three-year rolling plans revised every year (current edition FY2026-FY2028); the basic-concept period, the basic-plan periods and the implementation-plan periods are kept as separate period semantics. The second-half basic plan's policy structure — six parts and 35 policy fields, with six cross-cutting perspectives — is enumerated in full from the plan volume itself; the per-field initiatives and departmental plans are not enumerated and stay deferred depth, so the measures lists stay empty. Progress is managed through the annual revision of the rolling implementation plan together with the published revenue-expenditure outlook and project plan — the municipality's own progress-management framework. The transition from the previous plan (the Fourth Nishinomiya Comprehensive Plan, basic goal 『ふれあい 感動 文教住宅都市・西宮』) is kept only as a version chronology record, and results from the previous plan period are never connected forward into the current plan
+- FY2026 general-account initial budget: 221,422,490 thousand yen (enacted). Bill 議案第493号 was passed by majority vote at the 16th (March 2026) regular session: the council's official deliberation-results table shows the per-member votes and carries no result-wording column — its footnote defines the mark only as 'passed by majority vote' — so the result is recorded only within that definition and the budget is not described as adopted in its original form; the table contains no amendment row for bill 議案第493号. The voting date 2026-03-18 was confirmed in the council's minutes search system 『議決結果』 (the deliberation-results table itself prints no date). The amount was confirmed in the city's official 『令和8年度当初予算の概要』, where the account totals, the revenue section totals and the expenditure purpose totals all agree. The amount is kept at the published sen-yen (thousand-yen) precision and finer amounts are not synthesized
+- FY2024 general-account settlement at the sen-yen precision printed in the audit commissioners' settlement review opinion （西監発第53号）, section 6 (general account), table 『決算収支の状況』: revenue 205,479,435 thousand yen / expenditure 204,547,927 thousand yen (their difference of 931,508 thousand yen matches the formal balance （形式収支） printed in the same table; the real balance is 647,529 thousand yen, after deducting 283,979 thousand yen of funding to be carried over to the next fiscal year, kept at sen-yen precision; the combined general-and-special-account real balance of 1,861,075 thousand yen printed in the opinion's general remarks is not used as the general-account value). The settlement certification, 認定第15号, was certified by majority vote at the 14th (September 2025) regular session on 2025-10-02 per the city council's official deliberation results and the minutes search system; it was not rejected. FY2024 is the first year of the second-half basic plan (FY2024-FY2028), so its plan version is the same as the current plan, but no official total-level mapping from settlement totals to the six parts and 35 policy fields exists, so the totals are not linked to the plan's structure and the linkage stays not_assessable
+
+Deferred depth includes the per-field initiatives, departmental plans and indicators of the 35 policy fields, cross-checks against the budget book and the settlement book （事項別明細書） at section level, the content of the audit commissioners' settlement review opinion (individual findings), supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 45 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市、姫路市、尼崎市、明石市
+- Reviewed complete: 46 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市、姫路市、尼崎市、明石市、西宮市
 - Review in progress: 0
-- Pending record review: 22
+- Pending record review: 21
 - Blocked source inventory: 0
-- Next official code: 282049
+- Next official code: 292010
 
 ## Definition of Phase 15 completion
 
