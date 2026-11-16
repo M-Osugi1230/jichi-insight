@@ -15,10 +15,15 @@ def test_map_has_all_47_known_prefectures_and_cc0_attribution():
     text = read("lib/japanMapPaths.ts")
     assert "CC0 1.0 Universal" in text
     assert "lalamalink/japan-map-svg" in text
-    records = json.loads(text.split("export const japanMapPaths: JapanMapPath[] = ", 1)[1].strip().rstrip(";"))
+    payload = text.split("export const japanMapPaths: JapanMapPath[] = ", 1)[1]
+    records = json.loads(payload.strip().rstrip(";"))
     actual = {(record["code"], record["name"]) for record in records}
-    registry = json.loads((ROOT / "data/catalog/prefecture_coverage.json").read_text(encoding="utf-8"))
-    expected = {(record["prefecture_code"], record["name"]) for record in registry["records"]}
+    catalog_path = ROOT / "data/catalog/prefecture_coverage.json"
+    registry = json.loads(catalog_path.read_text(encoding="utf-8"))
+    expected = {
+        (record["prefecture_code"], record["name"])
+        for record in registry["records"]
+    }
     assert len(records) == len(actual) == 47
     assert actual == expected
     assert all(record["d"].startswith("M ") for record in records)
