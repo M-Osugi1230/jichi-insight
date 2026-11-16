@@ -490,3 +490,113 @@
   .serviceRouteCard { transition: none; }
   .serviceRouteCard:hover, .serviceRouteCard:focus-within { transform: none; }
 }
+
+
+/* Map-first homepage: public exploration before technical prose. */
+.mapQuickLinks {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  max-width: 1268px;
+  margin: -31px auto 0;
+  padding: 13px 26px;
+}
+.mapQuickLinks > a {
+  color: #1d5d75;
+  font-size: .85rem;
+  font-weight: 820;
+  min-height: 44px;
+  padding: 11px 2px;
+  text-decoration: none;
+}
+.mapQuickLinks > a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.mapSearchDisclosure {
+  flex: 1 1 250px;
+  max-width: 640px;
+}
+.mapSearchDisclosure summary {
+  align-items: center;
+  background: #fffefa;
+  border: 1px solid #c7d3ce;
+  border-radius: 11px;
+  color: #173c51;
+  cursor: pointer;
+  display: flex;
+  font-size: .9rem;
+  font-weight: 800;
+  justify-content: space-between;
+  list-style: none;
+  min-height: 48px;
+  padding: 10px 17px;
+}
+.mapSearchDisclosure summary::-webkit-details-marker { display: none; }
+.mapSearchDisclosure summary:hover { border-color: #619c83; }
+.mapSearchDisclosure summary:focus-visible { outline: 3px solid #236958; outline-offset: 2px; }
+.mapSearchDisclosure[open] summary { background: #e5efe8; border-color: #72a38e; }
+.mapSearchDisclosure[open] summary span { transform: rotate(180deg); }
+.mapSearchDisclosure :global(section) { margin-top: 11px; }
+.mapStatusStrip {
+  align-items: center;
+  background: #e8f0ed;
+  border-bottom: 1px solid #d4e3dd;
+  border-top: 1px solid #d4e3dd;
+  color: #285848;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px 18px;
+  justify-content: center;
+  padding: 13px 22px;
+}
+.mapStatusStrip > span:first-child {
+  background: #175a53;
+  border-radius: 999px;
+  color: #fff;
+  font-size: .72rem;
+  font-weight: 850;
+  padding: 5px 10px;
+}
+.mapStatusStrip strong { font-size: .85rem; }
+.mapStatusStrip > span:not(:first-child) { font-size: .83rem; }
+.mapStatusStrip a {
+  color: #155c53;
+  font-size: .81rem;
+  font-weight: 850;
+  text-underline-offset: 3px;
+}
+.mapDeepDive {
+  border-top: 1px solid #d7d3c8;
+  margin: 55px auto 30px;
+  max-width: 1268px;
+}
+.mapDeepDive > summary {
+  align-items: center;
+  background: #fffefa;
+  border: 1px solid #d7d3c8;
+  border-radius: 14px;
+  color: #274356;
+  cursor: pointer;
+  display: flex;
+  font-size: .98rem;
+  font-weight: 850;
+  justify-content: space-between;
+  list-style: none;
+  min-height: 64px;
+  padding: 14px 22px;
+}
+.mapDeepDive > summary::-webkit-details-marker { display: none; }
+.mapDeepDive > summary:focus-visible { outline: 3px solid #236958; outline-offset: 3px; }
+.mapDeepDive > summary span:last-child { color: #236958; font-size: 1.45rem; }
+.mapDeepDive[open] > summary span:last-child { transform: rotate(45deg); }
+.mapDeepDiveContent { padding-top: 25px; }
+
+@media (max-width: 760px) {
+  .mapQuickLinks { gap: 8px 18px; margin-top: 0; padding: 12px 16px; }
+  .mapSearchDisclosure { flex-basis: 100%; max-width: none; }
+  .mapStatusStrip { gap: 8px 12px; justify-content: flex-start; padding: 12px 16px; }
+  .mapDeepDive { margin: 31px 16px 24px; }
+  .mapDeepDive > summary { font-size: .89rem; padding: 13px 17px; }
+}
