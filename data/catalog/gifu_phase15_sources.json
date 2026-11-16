@@ -1,0 +1,46 @@
+{
+  "id": "gifu-phase15-sources",
+  "phase": 15,
+  "official_code": "212016",
+  "name_ja": "岐阜市",
+  "reviewed_at": "2026-11-16",
+  "quality_boundary": "Current framework identity kept as published (the Gifu City Future City-Building Concept: a vision-type framework adopted in February 2022, starting FY2022, with no fixed end year — the horizon of around 2040 is not recorded as a fixed end — and five-year reviews; four basic approaches and five policy fields), the subordinate Future Creation Comprehensive Strategy (FY2024–FY2027, three pillars), progress governance (three numerical targets and field indicators checked annually, advised by the Future City-Building Council), budget enactment confirmed on the official council voting-results list (bill No. 1, passed as proposed on 2026-03-27) with the amount kept at the published sen-yen precision and never expanded into synthetic yen, and settlement totals kept at the published yen precision from the official settlement-by-account table (certified as bill No. 107 on 2025-09-25) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "sources": [
+    {
+      "evidence_location": "岐阜市公式Webサイト『岐阜市未来のまちづくり構想(令和4年4月から)』ページは現行構想の公式入口（Phase 14インベントリで確認）。構想の位置づけ・構成・将来像・基本的な考え方・5分野の方向性・進行管理は、同ページからリンクされる公式『岐阜市未来のまちづくり構想』本編（令和4年2月策定）の『位置づけ』『これが岐阜市の将来像』『分野ごとのまちづくりの方向性』『将来像の実現に向けて』で直接確認",
+      "evidence_role": "comprehensive_plan",
+      "format": "html",
+      "id": "gifu-future-city-concept",
+      "official_url": "https://www.city.gifu.lg.jp/info/seisaku/1004125/index.html",
+      "title": "岐阜市未来のまちづくり構想",
+      "use_boundary": "現行構想は2022年度開始・固定終期なしとして保持し、2040年頃は見据える対象年として扱い固定終期として記録しない。前身の『ぎふし未来地図』（令和4年3月まで）の内容を混在させない"
+    },
+    {
+      "evidence_location": "岐阜市公式Webサイト『令和7年度 岐阜市未来のまちづくり懇談会』ページは両計画の進捗の公式入口（Phase 14インベントリで確認）。懇談会資料2『懇談会の目的及び各計画の進捗状況について』（令和7年9月26日・企画部未来創造研究室）で、構想と岐阜市未来創生総合戦略の概要・関係性（総合戦略の計画期間2024〜2027年度・3本柱・地方版総合戦略とSDGs未来都市計画の統合）と両計画の進捗管理の枠組みを直接確認",
+      "evidence_role": "progress_governance",
+      "format": "html",
+      "id": "gifu-progress-dialogue",
+      "official_url": "https://www.city.gifu.lg.jp/info/seisaku/1006500/1006501/1006504/1035894.html",
+      "title": "令和7年度 岐阜市未来のまちづくり懇談会",
+      "use_boundary": "懇談会は構想と未来創生総合戦略を一体的に推進するための意見交換の場として保持し、懇談会資料の進捗表示（指標の進捗判定）をJichi Insight独自の評価へ変換しない"
+    },
+    {
+      "evidence_location": "岐阜市公式Webサイト『令和8年度当初予算』ページはFY2026当初予算の公式入口（Phase 14インベントリで確認）。同ページ掲載の公式『令和8年度当初予算（案）』冊子の会計別表で一般会計200,680,000千円を確認し、議案番号・議決日・結果は市議会公式『令和8年第1回（3月）定例会議決結果・報告一覧』（第1号議案・令和8年3月27日原案のとおり可決）で確認",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "gifu-budget-2026",
+      "official_url": "https://www.city.gifu.lg.jp/info/zaisei/1007720/1035840/1035841.html",
+      "title": "令和8年度当初予算",
+      "use_boundary": "FY2026当初予算は議決・成立済みの額として扱い、proposal/enacted/supplementaryをPhase 15でstage分離する。金額は千円単位の公表値であり、円単位を合成しない"
+    },
+    {
+      "evidence_location": "岐阜市公式Webサイト『令和6年度決算』ページはFY2024決算の公式入口（Phase 14インベントリで確認）。同ページ掲載の公式『令和6年度会計別決算』に一般会計の歳入総額198,779,091,770円・歳出総額192,092,917,389円・歳入歳出差引額6,686,174,381円を記載し、『一般会計決算』の歳入款別表の歳入合計とも一致。認定は市議会公式『令和7年第4回（9月）定例会議決結果・報告一覧』で第107号議案が令和7年9月25日に認定と確認",
+      "evidence_role": "settlement",
+      "format": "html",
+      "id": "gifu-settlement-2024",
+      "official_url": "https://www.city.gifu.lg.jp/info/zaisei/1007720/1023279/1035375.html",
+      "title": "令和6年度決算",
+      "use_boundary": "FY2024決算認定の公式入口。FY2024決算は構想期間内の財政Evidenceとして保持し、決算総額を構想の分野・指標や岐阜市未来創生総合戦略のKPIの実績へ直接流用しない"
+    }
+  ]
+}

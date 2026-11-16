@@ -1,0 +1,73 @@
+{
+  "id": "phase15-gifu-plan-review",
+  "name_ja": "岐阜市",
+  "next_action": "Promote the field-level plans' measures and projects under the five policy fields and the Future Creation Comprehensive Strategy's KPI actuals only when official sources with stable record-level locators have been reviewed; complete the final cross-check against the settlement detail book (事項別明細書) at section level and record the FY2024 real balance (実質収支) only if an official source publishing it has been reviewed; record the revised concept's framework only as a separate version once it is officially adopted, and never treat the horizon of around 2040 as a fixed plan end year. Keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "official_code": "212016",
+  "quality_boundary": "This package reviews the current framework identity (the Gifu City Future City-Building Concept, a vision-type framework adopted in February 2022 and starting FY2022, with no fixed end year — the horizon of around 2040 is a target horizon, not a fixed end — and reviews every five years), the framework's structure of four basic approaches and five policy fields with three citizen-survey-based indicators each, plus the administrative-management viewpoint, the subordinate Gifu City Future Creation Comprehensive Strategy (FY2024–FY2027, three pillars, integrating the regional-revitalization comprehensive strategy and the SDGs Future City plan), the progress-governance layer (three numerical targets for the vision and field indicators checked annually, with the Gifu City Future City-Building Council advising on progress evaluation), the enacted FY2026 initial budget at the published sen-yen (thousand-yen) precision (bill No. 1, passed as proposed on 2026-03-27; yen-precision amounts are not synthesized), and the FY2024 settlement at yen precision as published, without collapsing proposed, enacted, supplementary, or settlement states. FY2024 is a settlement of the concept's third year and the strategy's first year, but its totals are account- and section-level aggregates and the concept's indicators are mainly citizen-survey-based subjective indicators, so its totals are not linked to the concept's fields or indicators or to the strategy's KPIs. The concept revision now in preparation is kept only as a transition chronology record.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "市公式の構想ページ（現行構想の公式入口。Phase 14インベントリで確認）と、公式『岐阜市未来のまちづくり構想』本編（令和4年2月策定）の『位置づけ』（2040年頃を見据えたまちづくりの総合的な方針であり、2022年度を始期とし、2040年頃の「将来像」とそれを実現するための「まちづくりの方向性」で構成し、5年ごとに見直すことを明記）で直接確認。前身の『ぎふし未来地図』が令和4年3月までであることは市公式の構想ページの表記による",
+      "evidence_role": "current_plan_identity",
+      "id": "gifu-current-framework-period",
+      "review_note": "固定期間型の総合計画ではなく、将来像と方向性を示す構想型の枠組みであることを公式本編で確認したレビュー済みレコード。",
+      "source_url": "https://www.city.gifu.lg.jp/info/seisaku/1004125/index.html",
+      "statement": "岐阜市の最上位のまちづくり方針は「岐阜市未来のまちづくり構想」であり、基本構想・基本計画・実施計画の層を持つ固定期間型の総合計画ではない。構想は令和4（2022）年2月に策定され、2022年度を始期とし、2040年頃を見据えた「将来像」と、それを実現するための「まちづくりの方向性」で構成する、まちづくりの総合的な方針である。5年ごとに見直し、著しい社会の変化が生じた場合は5年に限らず見直す。固定した計画終期は定めていない（市公式の懇談会資料では計画期間を「2022〜2040年度」と表記するが、2040年頃は見据える対象年であり、固定終期として記録しない）。前身は「ぎふし未来地図」（令和4年3月まで）であり、本構想はこれに代わるものとして策定された。",
+      "title": "岐阜市未来のまちづくり構想の位置づけと期間（固定終期なし）",
+      "value": "2022年度開始・固定終期なし（2040年頃を見据える）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "公式『岐阜市未来のまちづくり構想』本編の『これが岐阜市の将来像』『まちづくりの基本的な考え方』『分野ごとのまちづくりの方向性』（5分野の見出しとページ割りを本編の目次および該当ページで直接確認）および『行政経営の視点』で直接確認",
+      "evidence_role": "policy_structure",
+      "id": "gifu-current-policy-structure",
+      "review_note": "公式本編が明示した将来像・基本的な考え方・5分野の構造を一次資料で確認したレビュー済みレコード。5分野の全件と各分野の指標はpolicy_structureに列挙する。",
+      "source_url": "https://www.city.gifu.lg.jp/info/seisaku/1004125/index.html",
+      "statement": "岐阜市未来のまちづくり構想の将来像は『人がつながる 創造が生まれる しなやかさのあるまち』である。将来像の実現に向けて、4つの「まちづくりの基本的な考え方」（オール岐阜のまちづくり／シビックプライドの醸成／DXと脱炭素化／持続可能で選ばれるまち）を掲げ、分野ごとのまちづくりの方向性は5分野（教育・子育て／健康・福祉・医療／市民協働・防災・環境／産業・労働・交流／都市基盤整備・交通・中心市街地活性化）で構成する。これに「行政経営の視点」（行財政運営・公共施設等マネジメント、シティプロモーション）が加わる。分野別計画は本構想に沿って、個別具体的な方針や施策・事業を示す位置づけである。5分野の全件はpolicy_structureに列挙する。",
+      "title": "将来像・4つの基本的な考え方と5分野のまちづくりの方向性"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "市公式『令和7年度 岐阜市未来のまちづくり懇談会』ページの懇談会資料2『懇談会の目的及び各計画の進捗状況について』（令和7年9月26日・企画部未来創造研究室）の『2つの計画の概要と関係性』（未来創生総合戦略は構想の将来像を反映し、ひとの創生・しごとの創生・まちの創生を3本柱とし、本市の地方版総合戦略とSDGs未来都市計画を統合したもので、計画期間は2024〜2027年度であることを明記）で直接確認",
+      "evidence_role": "current_plan_structure",
+      "id": "gifu-future-creation-strategy",
+      "review_note": "構想の下位に位置する戦略の期間・柱・統合関係を公式の懇談会資料で確認したレビュー済みレコード。",
+      "source_url": "https://www.city.gifu.lg.jp/info/seisaku/1006500/1006501/1006504/1035894.html",
+      "statement": "岐阜市未来創生総合戦略は、岐阜市未来のまちづくり構想に掲げる将来像を反映し、その実現に向けて「ひとの創生」「しごとの創生」「まちの創生」を3本柱に、デジタル技術も活用しながら地方創生の深化・加速を目指す戦略である。本市の地方版総合戦略とSDGs未来都市計画を統合したもので、計画期間は2024年度から2027年度までである。本戦略のKPIは、地域幸福度（Well-Being）指標の考え方を参考に、主観指標（市民意識調査結果）と客観指標を3本柱それぞれに関連づけて位置づける。構想と本戦略は一体的に推進される。",
+      "title": "岐阜市未来創生総合戦略（2024年度〜2027年度）の位置づけと3本柱"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "公式『岐阜市未来のまちづくり構想』本編の『位置づけ』（進行管理：将来像に近づいているかを測定する数値目標と、分野ごとのまちづくりの方向性に関する指標を設定し、毎年度、成果を確認しながら進行管理を行うことを明記）および『将来像の実現に向けて』（3つの数値目標と分野ごとの指標一覧）、市公式の懇談会ページ（懇談会の目的は構想と未来創生総合戦略を一体的に推進するに当たり両計画の進捗状況の評価等について専門的かつ幅広い意見をいただくことであり、令和7年度は令和7年9月26日に開催）で直接確認",
+      "evidence_role": "progress_governance",
+      "id": "gifu-progress-governance-framework",
+      "review_note": "進行管理の枠組み（数値目標・分野別指標による毎年度の確認と懇談会）を公式資料で直接確認したレビュー済みレコード。個別指標の実績そのものは本パッケージでは扱わない。",
+      "source_url": "https://www.city.gifu.lg.jp/info/seisaku/1004125/index.html",
+      "statement": "岐阜市未来のまちづくり構想の進行管理は、将来像に近づいているかを測定する3つの数値目標（現在幸せだと感じている人の割合／岐阜市民であることに誇りを感じる人の割合／岐阜市に住み続けたいと思う人の割合。いずれも市民意識調査による2021年度基準値と2040年度目標値）と、分野ごとのまちづくりの方向性に関する指標（市民意識調査の設問から設定し、2021年度と比較して評価）を設定し、毎年度、成果を確認しながら行う。岐阜市未来のまちづくり懇談会は、構想と岐阜市未来創生総合戦略を一体的に推進するに当たり、両計画の進捗状況の評価に関する事項等について専門的かつ幅広い意見交換を行う場であり、毎年度開催される（令和7年度は令和7年9月26日開催）。この進行管理は自治体による自己管理の枠組みであり、Jichi Insight独自の達成判定へ変換しない。",
+      "title": "数値目標・分野別指標による毎年度の進行管理と未来のまちづくり懇談会"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "市公式の構想ページの『岐阜市未来のまちづくり構想改定に向けて』の見出しと、その配下の有識者ヒアリング・市民ワークショップ（岐阜市未来共創ワークショップ）・学生ワークショップへのリンクで確認",
+      "evidence_role": "plan_transition",
+      "id": "gifu-plan-revision-transition",
+      "review_note": "改定に向けた取組が進められている事実のみを公式ページで確認したレビュー済みレコード。改定後の枠組みそのものは本パッケージでは記録しない。",
+      "source_url": "https://www.city.gifu.lg.jp/info/seisaku/1004125/index.html",
+      "statement": "岐阜市未来のまちづくり構想については、市公式ページで「岐阜市未来のまちづくり構想改定に向けて」として、有識者ヒアリングや市民ワークショップ（岐阜市未来共創ワークショップ）、学生ワークショップ等の改定に向けた取組が進められている。改定後の構想の枠組みそのものは本候補では記録せず、現行構想（2022年度開始）を現行の枠組みとして保持する。改定の経過は版の履歴として分離して保持する。",
+      "title": "岐阜市未来のまちづくり構想の改定に向けた取組（計画移行）"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "市公式『令和6年度決算』ページ（決算総額の確認先の公式入口。Phase 14インベントリで確認）。構想の公式入口は市公式の構想ページ、進捗の公式入口は市公式の懇談会ページ",
+      "evidence_role": "annual_progress",
+      "fiscal_year": 2024,
+      "id": "gifu-fy2024-settlement-linkage",
+      "review_note": "決算が構想期間内のものであることと、個別事業の接続を推測で記録しないことは別の判断であることを示す明示的な未判定レコード。決算と事業の対応付けは人間レビュー工程の作業。",
+      "source_url": "https://www.city.gifu.lg.jp/info/zaisei/1007720/1023279/1035375.html",
+      "statement": "FY2024決算値と岐阜市未来のまちづくり構想の分野・指標および岐阜市未来創生総合戦略のKPIとの接続は未判定（not_assessable）。FY2024は構想（2022年度開始）の3年目の決算であり、未来創生総合戦略（2024年度〜2027年度）の初年度の決算である。決算総額は会計別・款別の集計値であり、構想の指標は市民意識調査に基づく主観指標を中心とし、個別施策・事業との対応付けは総額レベルでは行われていない。FY2024決算の精密値そのものは会計別決算で確認済みであるが、決算と事業の対応付けは人間レビュー工程の作業とする。",
+      "title": "令和6年度決算と未来のまちづくり構想・未来創生総合戦略の接続"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-16"
+}

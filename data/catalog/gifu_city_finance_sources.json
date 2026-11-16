@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-16",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "gifu-city-home",
+      "municipality_key": "gifu-city",
+      "organization": "岐阜市",
+      "category": "municipality_profile",
+      "title": "岐阜市公式サイト",
+      "url": "https://www.city.gifu.lg.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "岐阜市の公式自治体サイト。"
+    },
+    {
+      "id": "gifu-budget-2026",
+      "municipality_key": "gifu-city",
+      "organization": "岐阜市",
+      "category": "budget",
+      "title": "令和8年度当初予算",
+      "url": "https://www.city.gifu.lg.jp/info/zaisei/1007720/1035840/1035841.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算200,680,000千円のEvidence。第1号議案『令和8年度岐阜市一般会計予算』として令和8年第1回（3月）定例会に提出され、令和8年3月27日に原案のとおり可決された成立予算。金額は千円単位の公表値のまま記録し、円単位を合成しない。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "gifu-settlement-2024",
+      "municipality_key": "gifu-city",
+      "organization": "岐阜市",
+      "category": "settlement",
+      "title": "令和6年度決算",
+      "url": "https://www.city.gifu.lg.jp/info/zaisei/1007720/1023279/1035375.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入総額198,779,091,770円・歳出総額192,092,917,389円を円単位で含む公式決算資料（令和6年度会計別決算）。決算の認定は第107号議案（令和7年9月25日認定）。決算書（歳入歳出決算事項別明細書）の款別合計との最終突合は未実施。実質収支は会計別決算に掲載がなく記録していない。"
+    }
+  ]
+}

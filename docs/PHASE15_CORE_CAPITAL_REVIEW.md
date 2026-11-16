@@ -440,13 +440,25 @@ Declared v1 package:
 
 Deferred depth includes the outcome-indicator (KPI) actuals of the 47 measures, the implementation plan's individual projects, cross-checks against the budget explanatory materials and the settlement detail book (事項別明細書) at section level, the eleventh basic plan's framework itself, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Twenty-ninth completion — Gifu
+
+岐阜市を29番目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current framework: 岐阜市未来のまちづくり構想 — a vision-type framework, not a fixed-period layered comprehensive plan; adopted in February 2022 and starting FY2022, it sets a future vision for around 2040, 『人がつながる 創造が生まれる しなやかさのあるまち』, with no fixed end year (the 2040 horizon is a target horizon, never recorded as a fixed end) and reviews every five years; four basic approaches (オール岐阜のまちづくり／シビックプライドの醸成／DXと脱炭素化／持続可能で選ばれるまち) and five policy fields (教育・子育て／健康・福祉・医療／市民協働・防災・環境／産業・労働・交流／都市基盤整備・交通・中心市街地活性化), each field carrying three citizen-survey-based indicators (all five fields and their indicators are enumerated), plus an administrative-management viewpoint; the subordinate 岐阜市未来創生総合戦略 (FY2024–FY2027) reflects the concept's vision, integrates the regional-revitalization comprehensive strategy and the SDGs Future City plan, and runs on three pillars (ひとの創生・しごとの創生・まちの創生); progress is managed annually against three numerical targets for the vision and the field indicators, with the 岐阜市未来のまちづくり懇談会 advising on progress evaluation. The concept revision now in preparation is kept only as a transition chronology record
+- FY2026 general-account initial budget: 200,680,000 thousand yen (enacted; bill No. 1 『令和8年度岐阜市一般会計予算』, submitted to the first (March) 2026 regular session and passed as proposed on 2026-03-27 per the council's official voting-results list; the official FY2026 budget explanatory book's section-level revenue and expenditure totals agree at the same amount). The amount is published at sen-yen (thousand-yen) precision, so it is kept at that precision and yen-precision amounts are not synthesized
+- FY2024 general-account settlement at yen precision as published: revenue 198,779,091,770 yen / expenditure 192,092,917,389 yen (balance 歳入歳出差引額 6,686,174,381 yen matches the published figure in the official settlement-by-account table; the revenue total also matches the section-level revenue table of the general-account settlement document); certification 第107号議案 certified on 2025-09-25. FY2024 is a settlement of the concept's third year and the Future Creation Comprehensive Strategy's first year, but its totals are account- and section-level aggregates and the concept's indicators are mainly citizen-survey-based subjective indicators, so the totals are not linked to the concept's fields or indicators or to the strategy's KPIs and the linkage stays not_assessable
+
+Deferred depth includes the field-level plans' measures and projects under the five policy fields, the Future Creation Comprehensive Strategy's KPI actuals, the final cross-check against the settlement detail book (事項別明細書) at section level, the FY2024 real balance (実質収支, not published in the settlement-by-account table), the predecessor framework (ぎふし未来地図) and the revised concept's framework, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 28 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市
+- Reviewed complete: 29 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市
 - Review in progress: 0
-- Pending record review: 39
+- Pending record review: 38
 - Blocked source inventory: 0
-- Next official code: 212016
+- Next official code: 232017
 
 ## Definition of Phase 15 completion
 

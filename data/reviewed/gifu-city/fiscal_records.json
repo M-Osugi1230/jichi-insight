@@ -1,0 +1,65 @@
+[
+  {
+    "account_type": "general",
+    "amount_yen": 200680000000,
+    "confidence": "high",
+    "fiscal_year": 2026,
+    "id": "jp-local-212016-fiscal-2026-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算（可決）",
+    "municipality_id": "jp-local-212016",
+    "note": "岐阜市公式『令和8年度当初予算』ページ掲載の公式『令和8年度当初予算（案）』冊子の会計別表に示された当初予算額200,680,000千円（歳入・歳出それぞれ同額。前年度197,100,000千円との比較は+3,580,000千円・+1.82%で整合する）。公表精度は千円単位であり、円単位の内訳は公表されていないため千円精度のまま記録する。議案番号・議決は市議会公式『令和8年第1回（3月）定例会議決結果・報告一覧』で、第1号議案『令和8年度岐阜市一般会計予算』が令和8年3月5日に提出され令和8年3月27日に原案のとおり可決された成立予算であることを確認した。公式『令和8年度岐阜市予算説明書』（令和8年3月5日）の一般会計歳入歳出予算事項別明細書の歳入合計・歳出合計も200,680,000千円で一致する。補正予算や決算とは別stateで扱う。",
+    "period_end": "2027-03-31",
+    "period_start": "2026-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "gifu-budget-2026"
+    ],
+    "stage": "initial_budget",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 198779091770,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-212016-fiscal-2024-total-revenue",
+    "metric": "total_revenue",
+    "metric_label": "一般会計決算歳入",
+    "municipality_id": "jp-local-212016",
+    "note": "岐阜市公式『令和6年度決算』ページ掲載の公式『令和6年度会計別決算』に記載された一般会計歳入総額198,779,091,770円（円単位）。歳出総額192,092,917,389円との差引額6,686,174,381円は同表の歳入歳出差引額と一致する。同ページ掲載の『一般会計決算』の歳入款別表の歳入合計とも一致する。令和6年度決算は第107号議案『令和6年度岐阜市一般会計、特別会計歳入歳出決算認定について』として令和7年9月2日に提出され、令和7年9月25日の令和7年第4回（9月）定例会で認定された（市議会公式議決結果で確認。一般会計と特別会計を合わせた歳入歳出決算の認定であり、公営企業会計決算の認定は第109号から第112号議案である）。FY2024は岐阜市未来のまちづくり構想（2022年度開始）の3年目の決算であり、岐阜市未来創生総合戦略（2024年度〜2027年度）の初年度の決算である。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "gifu-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 192092917389,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-212016-fiscal-2024-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計決算歳出",
+    "municipality_id": "jp-local-212016",
+    "note": "同『令和6年度会計別決算』に記載された一般会計歳出総額192,092,917,389円（円単位）。歳入総額198,779,091,770円との差引額6,686,174,381円で検算が一致する。市議会公式の令和7年第4回（9月）定例会議案ページの第107号議案の決算額（歳出総額1,920億9,291万7,389円）とも一致する。令和6年度決算は第107号議案として令和7年9月25日に認定された。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "gifu-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  }
+]
