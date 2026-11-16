@@ -1,0 +1,65 @@
+[
+  {
+    "account_type": "general",
+    "amount_yen": 304837000000,
+    "confidence": "high",
+    "fiscal_year": 2026,
+    "id": "jp-local-462012-fiscal-2026-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算総額",
+    "municipality_id": "jp-local-462012",
+    "note": "鹿児島市の令和8年度一般会計当初予算総額304,837,000千円。財政課『令和8年度当初予算の概要』の一般会計歳入予算款別前年度比較表・歳出予算（目的別）前年度比較表・歳出予算（性質別）前年度比較表で合計304,837,000千円が各表で一致することを直接確認した。議決結果は市議会公式『議案に対する各会派等の表決態度（令和8年第1回定例会〔新年度関係分〕）』で結果欄の文言「原案可決」を直接確認し、その文言のまま記録する。その後、一般会計予算の議案番号が定第195号議案であり議決日が2026年3月19日であることを、市議会公式の会議録検索システムの本会議録『令和8年第1回定例会 03月19日－10号』により確認した（議事日程に「第195号議案 令和8年度鹿児島市一般会計予算」とあり、表決で原案可決（賛成多数）を確認）。議案番号と議決日の確認根拠は実ブラウザによる補完調査である。公表精度は千円単位であり、その精度のまま記録し円単位を合成していない。補正予算や決算とは別stateで扱う。",
+    "period_end": "2027-03-31",
+    "period_start": "2026-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "kagoshima-budget-2026"
+    ],
+    "stage": "initial_budget",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 306759735000,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-462012-fiscal-2024-total-revenue",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入額",
+    "municipality_id": "jp-local-462012",
+    "note": "鹿児島市財政課『令和6年度一般会計決算等の概要』の「収支等の状況（一般会計）」に千円単位で印字された令和6年度の歳入決算額306,759,735千円。当該決算の議案は定第56号議案『令和6年度鹿児島市一般会計歳入歳出決算』であり、令和7年第3回市議会定例会に提出されたが同定例会では表決されず、市議会公式の表決態度（令和7年第4回定例会（決算関係））により令和7年第4回定例会で認定された事実を記録する。その後、認定の議決日が2025年12月2日であることを、市議会公式の会議録検索システムの本会議録『令和7年第4回定例会 12月02日－01号』により確認した（議事日程に「第56号議案 令和6年度鹿児島市一般会計歳入歳出決算」とあり、表決で認定（賛成多数）を確認）。認定日の確認根拠は実ブラウザによる補完調査である。財政状況資料集等の普通会計ベースの集計値は一般会計とは集計範囲が異なるため使用していない。FY2024は現行計画「第六次鹿児島市総合計画」前期基本計画期間の決算である。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "kagoshima-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 296622819000,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-462012-fiscal-2024-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出額",
+    "municipality_id": "jp-local-462012",
+    "note": "同じく決算等の概要に千円単位で印字された令和6年度の歳出決算額296,622,819千円。歳入総額306,759,735千円との歳入歳出差引額は10,136,916千円で、同概要に印字された差引額と検算一致する。翌年度に繰り越すべき財源は3,552,446千円、実質収支額は6,584,470千円であり、いずれも同概要の公表精度（千円単位）のまま記録する。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "kagoshima-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  }
+]

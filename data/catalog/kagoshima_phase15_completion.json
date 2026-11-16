@@ -1,0 +1,61 @@
+{
+  "completed_at": "2026-11-17",
+  "completion_boundary": "鹿児島市のPhase 15 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味し、所有者（大杉邑大、単独運用体制）が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが鹿児島市公式サイトの一次資料で検証した結論に基づく（所有者本人が一次資料を直接レビューしたものではない）。鹿児島市の計画体系（第六次鹿児島市総合計画は、基本構想・基本計画・実施計画の3層で構成され、基本構想は2022年度〜2031年度の10年間、前期基本計画は2022年度〜2026年度、実施計画は3年計画で現行は第2期実施計画（2024年度〜2026年度）である。基本構想は都市像『つながる人・まち 彩りあふれる 躍動都市・かごしま』と6つの基本目標を掲げる。基本目標レベルの体系は保持したが、各基本目標配下の基本施策・単位施策の全件列挙と重点プロジェクトの個別事業との対応付けは行わず、追加depthとして保持する。進行管理は、前期基本計画に基づく施策・事業を総合的かつ計画的に推進する実施計画（基本目標別事業計画・重点プロジェクト別事業計画）による。各層の期間を別period semanticsとして保持し、period_statusはPhase 14インベントリどおりtransition_or_unresolvedを保持する。後期基本計画（2027年度〜2031年度）は素案段階（2026年9月に市民参画手続き終了）のため移行記録として分離して保持し、採択前の内容を現行計画へ先取りしない。前計画「第五次鹿児島市総合計画」からの移行も移行記録として分離して保持する）、成立したFY2026一般会計当初予算（304,837,000千円。定第195号議案『令和8年度鹿児島市一般会計予算』の議決結果は、市議会公式『議案に対する各会派等の表決態度（令和8年第1回定例会〔新年度関係分〕）』で結果欄の文言が「原案可決」であることを直接確認し、その文言のまま記録した。議案番号と議決日（2026年3月19日・原案可決（賛成多数））は市議会公式の会議録検索システムの本会議録で確認した（実ブラウザによる補完調査）。金額は財政課『令和8年度当初予算の概要』の一般会計歳入・歳出の各比較表に印字された合計で確認し、各表の合計が一致する。公表精度は千円単位のため、その精度（千円単位）のまま記録し、円単位を合成していない）、FY2024一般会計決算（歳入306,759,735千円・歳出296,622,819千円、歳入歳出差引額10,136,916千円が決算等の概要の印字値と検算一致することを確認した）を一次資料で確認した。決算額は、財政課『令和6年度一般会計決算等の概要』に千円単位で印字された値のまま記録する。実質収支額6,584,470千円も同概要の公表値のまま記録し、実質収支に関する調書そのものの値との直接突合は未実施である。決算の認定である定第56号議案は、令和7年第3回定例会に提出されたが同定例会では表決されず、令和7年第4回定例会で2025年12月2日に認定（賛成多数）されたことを、市議会公式の表決態度と会議録検索システムの本会議録（実ブラウザによる補完調査）で確認し、認定の事実をそのまま記録した。財政状況資料集等の普通会計ベースの集計値は一般会計とは集計範囲が異なるため使用していない。FY2024は現行計画の前期基本計画・第2期実施計画の期間内の決算であるが、決算総額と計画の基本目標・施策体系との総額レベルの対応付けは公式資料に示されていないため、接続はnot_assessableのまま保持する。予算・決算の事項別明細書の款別合計との最終突合、実質収支に関する調書そのものの値との直接突合、6つの基本目標配下の基本施策・単位施策の全件列挙と重点プロジェクトの個別事業との対応付け、後期基本計画の採択後の版管理は未実施であり、残存事項として保持する。",
+  "completion_depth": "declared_review_package_v1",
+  "deferred_depth": [
+    {
+      "boundary": "6つの基本目標配下の基本施策・単位施策の全件列挙と重点プロジェクトの個別事業との対応付けは追加depthとし、公式対応が確認できるまで昇格しない。基本目標レベルの体系自体は候補に保持するが、施策・事業単位の対応付けは行わない",
+      "id": "current-plan-granular-policy-and-indicator-linkage",
+      "status": "deferred_not_required_for_v1_completion"
+    },
+    {
+      "boundary": "FY2026当初予算の議決結果の文言（原案可決）と当初予算額304,837,000千円は一次資料で確認し候補に反映している。FY2024決算の歳入・歳出・差引額・実質収支額は決算等の概要の千円単位の印字値で確認して候補に反映し、認定の結果（令和7年第4回定例会・認定）も市議会公式の表決態度で確認して候補に反映している。一般会計予算の議案番号（定第195号議案）と議決日（2026年3月19日）、一般会計決算の議案番号（定第56号議案）と認定の議決日（2025年12月2日）は実ブラウザによる補完調査で市議会公式の会議録により確認し候補に反映している。一方、予算・決算の事項別明細書の款別合計との最終突合は未実施のまま保持する",
+      "id": "fiscal-detail-reconciliation",
+      "status": "deferred_not_required_for_v1_completion"
+    },
+    {
+      "boundary": "後期基本計画（2027年度〜2031年度）は素案・市民参画段階であり、その政策体系の内容は本候補では保持しない。前期基本計画と後期基本計画（素案）の期間と版の分離のみを保持し、一方を他方で上書きしない",
+      "id": "plan-transition-version-depth",
+      "status": "deferred_not_required_for_v1_completion"
+    },
+    {
+      "boundary": "鹿児島市の総合計画・進捗管理・財政等のステージングは政策効果の因果認定や他都市比較可能性を意味しない。進捗管理（実施計画の仕組み）をJichi Insight独自の達成判定へ変換しない",
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion"
+    }
+  ],
+  "id": "kagoshima-phase15-completion",
+  "name_ja": "鹿児島市",
+  "official_code": "462012",
+  "phase": 15,
+  "quality_gate": {
+    "budget_enactment_state_preserved": true,
+    "current_plan_period_reviewed": true,
+    "current_plan_policy_structure_reviewed": true,
+    "declared_package_schema_validated": true,
+    "fiscal_states_and_years_separate": true,
+    "implementation_plan_layer_reviewed": true,
+    "individual_implementation_items_not_overpromoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "no_independent_policy_achievement_promoted": true,
+    "official_source_lineage_preserved": true,
+    "regression_suite_required_before_merge": true,
+    "settlement_linkage_not_assessable_preserved": true
+  },
+  "review_package": {
+    "counts": {
+      "basic_goals": 6,
+      "basic_plan_measures": 0,
+      "fiscal_top_line_records": 3,
+      "promoted_implementation_item_actual_records": 0
+    },
+    "fiscal_evidence_path": "data/reviewed/kagoshima-city/evidence_packets.json",
+    "fiscal_records_path": "data/reviewed/kagoshima-city/fiscal_records.json",
+    "plan_review_path": "data/reviewed/kagoshima-city/plan_review.json",
+    "policy_structure_path": "data/catalog/kagoshima_current_policy_structure.json",
+    "progress_review_path": "data/catalog/kagoshima_current_progress_review_summary.json",
+    "source_catalog_path": "data/catalog/kagoshima_phase15_sources.json"
+  },
+  "status": "reviewed_complete"
+}

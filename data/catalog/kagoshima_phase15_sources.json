@@ -1,0 +1,55 @@
+{
+  "id": "kagoshima-phase15-sources",
+  "name_ja": "鹿児島市",
+  "official_code": "462012",
+  "phase": 15,
+  "quality_boundary": "Current plan identity kept as published (the Sixth Kagoshima City Comprehensive Plan （第六次鹿児島市総合計画）: a three-layer plan of the basic concept, the basic plan and the implementation plan; the basic concept covers FY2022-FY2031 with the city image 『つながる人・まち 彩りあふれる 躍動都市・かごしま』 and the six basic goals; the front basic plan covers FY2022-FY2026; the basic-goal-level structure is kept and the full enumeration of the basic measures and unit measures under the six goals and the focus projects' individual items stays deferred depth; the period status stays transition_or_unresolved because the latter basic plan (FY2027-FY2031) is at the draft stage after the citizen-participation procedures; the draft latter plan is kept separate as a plan transition and its content is never read forward into the current plan; the transition from the previous plan 『第五次鹿児島市総合計画』 is likewise kept separate), progress governance (progress management through the implementation plan — currently the second implementation plan (FY2024-FY2026), composed of the basic-goal-level project plans and the focus-project project plans — kept as the municipality's own progress-management framework), budget enactment kept as printed in the council's official voting-attitude table (bill No. 195 （定第195号議案）; the result wording is 原案可決 (adopted as proposed), kept verbatim; the bill number and vote date 2026-03-19 were confirmed in the plenary minutes through a supplementary live-browser investigation) and the amount kept at the published sen-yen precision (304,837,000 thousand yen; finer yen amounts are never synthesized), and settlement totals kept at the published sen-yen precision (revenue 306,759,735 thousand yen / expenditure 296,622,819 thousand yen; the balance of 10,136,916 thousand yen checks out against the printed balance; the real balance of 6,584,470 thousand yen is kept as printed in the settlement summary; the settlement certification, bill No. 56 （定第56号議案）, was certified on 2025-12-02 at the Reiwa 7 4th regular session; ordinary-account aggregate figures are not used, because their aggregation scope differs from the general account) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "reviewed_at": "2026-11-17",
+  "sources": [
+    {
+      "evidence_location": "計画の公式ページと基本構想の公式資料で、基本構想・基本計画・実施計画の3層構成、基本構想の期間（2022年度〜2031年度の10年間）と前期基本計画の期間（2022年度〜2026年度）、都市像『つながる人・まち 彩りあふれる 躍動都市・かごしま』、6つの基本目標を直接確認した",
+      "evidence_role": "comprehensive_plan",
+      "format": "html",
+      "id": "kagoshima-sixth-front-plan",
+      "official_url": "https://www.city.kagoshima.lg.jp/kikakuzaisei/kikaku/seisaku-k/rokujisougoukeikaku-kihonkousou.html",
+      "title": "第六次鹿児島市総合計画基本構想・前期基本計画",
+      "use_boundary": "「第六次鹿児島市総合計画」の基本構想と前期基本計画をcurrent versionとして保持し、策定中の後期基本計画（素案）の内容をcurrentへ先取りしない。前計画「第五次鹿児島市総合計画」期間の実績をcurrent actualへ流用しない"
+    },
+    {
+      "evidence_location": "市の公式ページ『第六次鹿児島市総合計画第2期実施計画(令和6年度～令和8年度)』で、第2期実施計画が基本構想及び前期基本計画に基づく施策・事業を総合的かつ計画的に推進するために策定されたことと、基本目標別事業計画（6つの基本目標）・重点プロジェクト別事業計画の構成を直接確認した",
+      "evidence_role": "implementation_plan",
+      "format": "html",
+      "id": "kagoshima-second-implementation",
+      "official_url": "https://www.city.kagoshima.lg.jp/kikakuzaisei/kikaku/seisaku-s/shise/shisaku/sogo/r6-r8.html",
+      "title": "第六次鹿児島市総合計画第2期実施計画",
+      "use_boundary": "第2期実施計画（2024年度〜2026年度）を前期基本計画に基づくcurrent実施計画として保持し、後期基本計画期間（2027年度以降）の事業へ自動接続しない"
+    },
+    {
+      "evidence_location": "市の公式ページ『第六次鹿児島市総合計画後期基本計画（令和9年度～13年度）の策定』（2026年9月14日更新）で、後期基本計画の素案が公表され、市民参画手続き（パブリックコメント・意見交換会等）が終了した策定中の段階にあることを直接確認した",
+      "evidence_role": "plan_transition",
+      "format": "html",
+      "id": "kagoshima-latter-transition",
+      "official_url": "https://www.city.kagoshima.lg.jp/kikakuzaisei/kikaku/seisaku-k/dairokujisougoukeikakukoukikihonnkeikaku.html",
+      "title": "第六次鹿児島市総合計画後期基本計画（令和9年度～13年度）の策定",
+      "use_boundary": "後期基本計画は素案・市民参画段階のtransition evidenceとして保持し、採択前の内容をcurrent recordへ昇格しない"
+    },
+    {
+      "evidence_location": "財政課の公式ページが案内する『令和8年度当初予算の概要』で一般会計の当初予算額304,837,000千円（千円単位）を直接確認した。議決結果は市議会公式『議案に対する各会派等の表決態度（令和8年第1回定例会〔新年度関係分〕）』で「令和8年度鹿児島市一般会計予算」の結果欄「原案可決」を直接確認した。その後、実ブラウザによる補完調査で、市議会公式の会議録検索システムの本会議録『令和8年第1回定例会 03月19日－10号』により一般会計予算の議案番号（定第195号議案）と議決日（2026年3月19日・原案可決（賛成多数））を確認した",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "kagoshima-budget-2026",
+      "official_url": "https://www.city.kagoshima.lg.jp/kikakuzaisei/zaisei/zaisei/shise/yosan/jokyo/r7/r08yosantosyo1.html",
+      "title": "令和8年度当初予算",
+      "use_boundary": "FY2026当初予算は補正予算・決算と別stateで保持する。金額は千円単位の公表値であり、円単位を合成しない"
+    },
+    {
+      "evidence_location": "財政課『令和6年度一般会計決算等の概要』の「収支等の状況（一般会計）」で、歳入決算額306,759,735千円・歳出決算額296,622,819千円・歳入歳出差引額10,136,916千円・実質収支額6,584,470千円（いずれも千円単位）を直接確認し、差引が検算一致することを確認した。決算の認定は市議会公式の表決態度で確認した（令和7年第3回定例会では表決されず、令和7年第4回定例会（決算関係）で認定）。その後、実ブラウザによる補完調査で、市議会公式の会議録検索システムの本会議録『令和7年第4回定例会 12月02日－01号』により一般会計決算の議案番号（定第56号議案）と認定日（2025年12月2日・認定（賛成多数））を確認した",
+      "evidence_role": "settlement",
+      "format": "html",
+      "id": "kagoshima-settlement-2024",
+      "official_url": "https://www.city.kagoshima.lg.jp/kikakuzaisei/zaisei/zaisei/shise/yosan/jokyo/r6/r6kessangaiyo.html",
+      "title": "令和6年度一般会計決算等の概要",
+      "use_boundary": "FY2024決算は予算・補正と別stateで保持する。決算額は千円単位の公表値のまま記録する。財政状況資料集等の普通会計ベースの集計値と一般会計値を混同しない。決算の認定結果（定第56号議案・令和7年第4回定例会・2025年12月2日・認定（賛成多数））は実ブラウザによる補完調査で確認した市議会公式の会議録のまま記録する"
+    }
+  ]
+}
