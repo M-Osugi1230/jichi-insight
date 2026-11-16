@@ -1,0 +1,63 @@
+{
+  "id": "phase15-kurashiki-plan-review",
+  "name_ja": "倉敷市",
+  "next_action": "Promote the municipal measures, basic policies and machizukuri indicators under the 44 intended city images of the basic concept only when official sources with stable record-level locators have been reviewed; complete the final cross-check against the budget book and the settlement book (事項別明細書) at section level; examine the content of the audit commissioners' settlement review opinion (individual findings); confirm the preparation status of the next (eighth) comprehensive plan; and never connect results from another plan version forward into the current plan. Keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "official_code": "332020",
+  "quality_boundary": "This package reviews the current plan identity and period (the Kurashiki City Seventh Comprehensive Plan, the municipality's top-level plan: the basic concept and basic plan run FY2021-FY2030 over ten years and the implementation plan is revised every fiscal year through a PDCA cycle; the layers are kept as separate period semantics), the policy structure (five fields and 44 intended city images, confirmed in full in the basic concept itself; the municipal measures, basic policies and machizukuri indicators of the basic plan under each intended image are not enumerated and stay deferred depth, so the measures lists stay empty), the progress-governance layer (the implementation plan revised every fiscal year through a PDCA cycle, together with the annual administrative evaluation — the municipality's own progress-management framework), the enacted FY2026 initial budget at the published sen-yen (thousand-yen) precision (bill 議案第26号; the council's official bill list records the result as 『原案可決』 on 2026-03-18), and the FY2024 settlement at the yen precision published in the audit commissioners' settlement review opinion. The FY2024 settlement certification (議案第135号) was certified on 2025-09-24, confirmed directly in the council's official bill list; it was not rejected. The real balance of 5,803,653,066 yen is recorded at the published yen precision (the difference of 7,203,720,657 yen minus 1,400,067,591 yen of funding to be carried over to the next fiscal year); the real-balance figure in the fiscal-soundness review opinion (5,807,097 thousand yen) rests on a different statutory basis and is not used, and the fiscal-status compendium totals are on an ordinary-account basis and are not used. FY2024 falls within the current plan period (FY2021-FY2030), so the plan version is the same as the current plan, but no official total-level mapping from settlement totals to the plan's policy structure exists, so the linkage stays not_assessable. The preparation status of the next (eighth) comprehensive plan could not be confirmed in official sources and stays unconfirmed.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "計画の構成と各層の期間は市公式『総合計画』ページと計画本編の第1章『策定にあたって』で直接確認した（基本構想・基本計画・実施計画で構成し、基本構想及び基本計画の期間は令和3年度（2021年度）から令和12年度（2030年度）までの10年間、実施計画はPDCAサイクルにより毎年度見直し）。将来像と政策体系は第2章『基本構想』で確認した",
+      "evidence_role": "current_plan_identity",
+      "id": "kurashiki-current-plan-period",
+      "review_note": "総合計画の構成（基本構想・基本計画・実施計画）と各層の期間を別period semanticsとして保持した。レビュー済みレコード。",
+      "source_url": "https://www.city.kurashiki.okayama.jp/cityinfo/plan/1011783/1002083.html",
+      "statement": "倉敷市の現行総合計画は倉敷市第七次総合計画であり、市の最上位計画として令和3年度（2021年度）から令和12年度（2030年度）までの10年間のまちづくりの指針を示す。構成は第1章『策定にあたって』（倉敷みらい創生人口ビジョンを含む）、第2章『基本構想』、第3章『基本計画』、第4章『第2期倉敷みらい創生戦略』、資料編からなる。第1章によれば、本計画は基本構想・基本計画・実施計画で構成し、基本構想及び基本計画の期間は2021年度から2030年度までの10年間とし、実施計画はPDCAサイクルにより毎年度見直しを行う。基本計画のうち地方創生に関する取組は『倉敷みらい創生戦略』として位置づけられ、第4章はその第2期である。各層の期間を別period semanticsとして保持し、一律の固定期間へ潰さない。Phase 14インベントリのperiod_statusはverified_fixed_periodである。",
+      "title": "倉敷市第七次総合計画の構成（基本構想・基本計画2021年度～2030年度・実施計画は毎年度見直し）",
+      "value": "倉敷市第七次総合計画は基本構想・基本計画2021年度～2030年度（10年）／実施計画はPDCAサイクルにより毎年度見直し／FY2024決算は現行計画期間内の決算"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "基本構想（第2章）本編で将来像と5分野・44のめざすまちの姿の全件を直接確認した",
+      "evidence_role": "policy_structure",
+      "id": "kurashiki-current-policy-structure",
+      "review_note": "基本構想の政策体系（5分野・44のめざすまちの姿）を政策単位で保持した。基本計画の市の施策・基本方針・まちづくり指標単位の対応付けは行わない。レビュー済みレコード。",
+      "source_url": "https://www.city.kurashiki.okayama.jp/cityinfo/plan/1011783/1002083.html",
+      "statement": "基本構想は、将来像『豊かな自然と紡がれた歴史・文化を次代へ繋ぎ 人と人との絆と慈しみの心で地域を結ぶまち倉敷』のもとに、5つの分野と44のめざすまちの姿を体系付ける。分野1『子ども・子育て・教育』（象徴〈慈〉いつくしむ）は9件（1-1～1-9）。分野2『文化・産業』（〈紡〉つむぐ）は8件（2-1～2-8）。分野3『生活環境・防災・都市基盤』（〈繋〉つなぐ）は12件（3-1～3-12）。分野4『保健・医療・福祉』（〈結〉むすぶ）は8件（4-1～4-8）。分野5『SDGs・市民協働・コミュニティ・行財政』（〈絆〉きずな）は7件（5-1～5-7）であり、合計44件である。基本計画はこの体系のもとで市の施策・基本方針・まちづくり指標を明らかにするが、施策・指標単位の全件列挙と対応付けは本候補では行わない。",
+      "title": "基本構想の政策体系（5分野・44のめざすまちの姿）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "実施計画の毎年度見直しは計画本編の第1章で確認し、行政評価は市公式『令和7年度行政評価結果』ページ（令和7年度行政評価結果報告書と第七次総合計画『まちづくり指標』市民アンケート調査結果報告書の掲載）で確認した",
+      "evidence_role": "progress_governance",
+      "id": "kurashiki-progress-governance-framework",
+      "review_note": "進行管理の枠組み（実施計画の毎年度見直しと行政評価）を年度実績へ読み替えず保持した。レビュー済みレコード。",
+      "source_url": "https://www.city.kurashiki.okayama.jp/cityinfo/plan/1002154/1002161/1021963.html",
+      "statement": "倉敷市第七次総合計画の進行管理は、実施計画をPDCAサイクルにより毎年度見直す自治体の枠組みと、毎年度の行政評価による。令和7年度行政評価では、第七次総合計画の施策評価と、その基礎データとなる総合計画『まちづくり指標』市民アンケート調査が実施され、令和7年度行政評価結果報告書（令和7年10月）が公表されている。自治体の評価・進捗公表をJichi Insight独自の達成判定へ変換しない。",
+      "title": "計画の進行管理（実施計画の毎年度見直しと行政評価）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "現行計画の開始年度は計画本編の第1章で確認した。次期計画の策定状況は計画ページ等の公表範囲で確認できなかった",
+      "evidence_role": "plan_transition",
+      "id": "kurashiki-plan-transition",
+      "review_note": "計画の版の履歴として、現行計画の開始と次期計画の未確認状態を分離記録した。レビュー済みレコード。",
+      "source_url": "https://www.city.kurashiki.okayama.jp/cityinfo/plan/1011783/1002083.html",
+      "statement": "現行の倉敷市第七次総合計画は2021年度に開始した。前計画（第六次総合計画）の政策体系・事業・評価の全件列挙は本候補では行わない。基本構想・基本計画の終期は2030年度であり、次期（第八次）総合計画の策定状況は本候補の調査範囲では公式資料で確認できなかったため未確認として保持する。FY2024決算は現行計画の期間内の決算であり、計画の版の相違による接続の制約はない。",
+      "title": "現行計画の開始と次期計画の策定状況"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "決算総額は監査委員の決算審査意見書、計画の期間は計画ページ・計画本編で確認した。総額レベルの対応付けの不存在は、決算・計画の公表範囲で確認した",
+      "evidence_role": "annual_progress",
+      "fiscal_year": 2024,
+      "id": "kurashiki-fy2024-settlement-linkage",
+      "review_note": "計画の版は同一であるが、総額レベルの対応付けがないため接続しないことを明記した。レビュー済みレコード。",
+      "source_url": "https://www.city.kurashiki.okayama.jp/cityinfo/finance/1011779/1010784.html",
+      "statement": "FY2024決算は現行の倉敷市第七次総合計画（2021年度～2030年度）の期間内の決算であり、計画の版は現行と同一である。決算総額（円単位）は一次資料で確認済みであるが、決算総額と計画の分野・めざすまちの姿との総額レベルの対応付けは公式資料にないため、接続はnot_assessableとし、決算値を計画のcurrent actualへ流用しない。なお議案第135号は2025年9月24日に認定されており、接続判定は認定結果に依存しない。",
+      "title": "令和6年度決算と総合計画の政策体系の接続"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-16"
+}
