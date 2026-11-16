@@ -73,13 +73,11 @@ def test_neyagawa_candidate_sources_match_phase14_inventory_exactly() -> None:
         "neyagawa-sixth-plan",
         "neyagawa-budget-policy-2026",
         "neyagawa-budget-2026",
+        "neyagawa-settlement-2024",
     ):
         assert by_id[verified_id]["verification_status"] == (
             "primary_source_live_verified_2026-11-16"
         )
-    assert by_id["neyagawa-settlement-2024"]["verification_status"] == (
-        "official_landing_not_live_verified_2026-11-16"
-    )
 
 
 def test_neyagawa_candidate_keeps_plan_review_records_explicit() -> None:
@@ -197,27 +195,48 @@ def test_neyagawa_candidate_fiscal_records_use_primary_source_values() -> None:
     assert "原案可決" in budget["note"]
     assert "2026年3月25日" in budget["note"]
     assert "万円単位" in budget["note"]
-    # The FY2024 settlement values could not be confirmed in official online
-    # primary sources, so they stay unrecorded instead of being filled with
-    # the ordinary-account (普通会計) aggregates the city publishes.
-    for record_id in (
-        "jp-local-272159-fiscal-2024-total-revenue",
-        "jp-local-272159-fiscal-2024-total-expenditure",
-    ):
-        record = records[record_id]
-        assert record["fiscal_year"] == 2024
-        assert record["stage"] == "settlement"
-        assert record["amount_yen"] is None
-        assert record["value"] is None
-        assert record["value_status"] == "not_found"
-        assert record["confidence"] == "not_assessable"
-        assert record["review_status"] == "needs_review"
-        assert record["sources"] == ["neyagawa-settlement-2024"]
-        assert "未確認" in record["note"]
-        assert "普通会計" in record["note"]
+    # The FY2024 settlement values were confirmed in the supplementary
+    # research from two primary sources that agree exactly: the settlement
+    # book's real-balance statement (実質収支に関する調書) and the
+    # September 2025 council reference material. Both publish at
+    # thousand-yen precision, so the values stay at that precision and no
+    # yen figure is synthesised; the ordinary-account (普通会計)
+    # aggregates the city publishes are not used.
+    revenue = records["jp-local-272159-fiscal-2024-total-revenue"]
+    assert revenue["fiscal_year"] == 2024
+    assert revenue["metric"] == "total_revenue"
+    assert revenue["stage"] == "settlement"
+    assert revenue["amount_yen"] == 106597604000
+    assert revenue["value"] is None
+    assert revenue["value_status"] == "available"
+    assert revenue["confidence"] == "medium"
+    assert revenue["review_status"] == "needs_review"
+    assert revenue["sources"] == ["neyagawa-settlement-2024"]
+    assert "106,597,604千円" in revenue["note"]
+    assert "1,263,633千円" in revenue["note"]
+    assert "1,248,678千円" in revenue["note"]
+    assert "認定第1号" in revenue["note"]
+    assert "2025年12月3日" in revenue["note"]
+    assert "千円精度" in revenue["note"]
+    assert "普通会計" in revenue["note"]
+    expenditure = records["jp-local-272159-fiscal-2024-total-expenditure"]
+    assert expenditure["fiscal_year"] == 2024
+    assert expenditure["metric"] == "total_expenditure"
+    assert expenditure["stage"] == "settlement"
+    assert expenditure["amount_yen"] == 105333971000
+    assert expenditure["value"] is None
+    assert expenditure["value_status"] == "available"
+    assert expenditure["confidence"] == "medium"
+    assert expenditure["review_status"] == "needs_review"
+    assert expenditure["sources"] == ["neyagawa-settlement-2024"]
+    assert "105,333,971千円" in expenditure["note"]
+    assert "1,263,633千円" in expenditure["note"]
+    assert "1,248,678千円" in expenditure["note"]
+    assert "認定第1号" in expenditure["note"]
+    assert "千円精度" in expenditure["note"]
 
 
-def test_neyagawa_candidate_never_claims_fy2024_certification() -> None:
+def test_neyagawa_candidate_records_fy2024_certification() -> None:
     payload = candidate()
     package = payload["candidate_package"]
     settlement_texts = []
@@ -232,11 +251,13 @@ def test_neyagawa_candidate_never_claims_fy2024_certification() -> None:
             settlement_texts.append(json.dumps(record, ensure_ascii=False))
     assert settlement_texts
     for text in settlement_texts:
-        # The FY2024 certification outcome was not confirmed in council
-        # primary sources; the candidate must not assert either outcome.
-        assert "認定された" not in text
+        # The supplementary research confirmed from the council's official
+        # bill lists that certification bill No. 1 was submitted to the
+        # September 2025 session, kept under continued review, and
+        # certified on 2025-12-03 in the December session. The outcome
+        # must be recorded as a certification, never as a rejection.
+        assert "認定第1号" in text
         assert "不認定" not in text
-        assert "未確認" in text
     whole_text = json.dumps(payload, ensure_ascii=False)
     assert "不認定" not in whole_text
 
@@ -260,14 +281,20 @@ def test_neyagawa_candidate_evidence_packets_point_at_primary_sources() -> None:
     assert "109,730,000千円" in budget_claim["statement"]
     assert "議案第28号" in budget_claim["statement"]
     assert "原案可決" in budget_claim["statement"]
-    for packet_id in (
-        "evidence-neyagawa-city-2024-total-revenue",
-        "evidence-neyagawa-city-2024-total-expenditure",
-    ):
-        claim = packets[packet_id]["claims"][0]
-        assert claim["source_ids"] == ["neyagawa-settlement-2024"]
-        assert "未確認（not_assessable）" in claim["statement"]
-        assert "認定された" not in claim["statement"]
+    revenue_claim = packets["evidence-neyagawa-city-2024-total-revenue"]["claims"][0]
+    assert revenue_claim["source_ids"] == ["neyagawa-settlement-2024"]
+    assert "106,597,604千円" in revenue_claim["statement"]
+    assert "1,248,678千円" in revenue_claim["statement"]
+    assert "認定第1号" in revenue_claim["statement"]
+    assert "2025年12月3日" in revenue_claim["statement"]
+    expenditure_claim = packets["evidence-neyagawa-city-2024-total-expenditure"][
+        "claims"
+    ][0]
+    assert expenditure_claim["source_ids"] == ["neyagawa-settlement-2024"]
+    assert "105,333,971千円" in expenditure_claim["statement"]
+    assert "1,263,633千円" in expenditure_claim["statement"]
+    assert "認定第1号" in expenditure_claim["statement"]
+    assert "2025年12月3日" in expenditure_claim["statement"]
 
 
 def test_neyagawa_candidate_progress_review_stays_staging() -> None:
