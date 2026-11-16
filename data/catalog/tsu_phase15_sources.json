@@ -1,0 +1,46 @@
+{
+  "id": "tsu-phase15-sources",
+  "name_ja": "津市",
+  "official_code": "242012",
+  "phase": 15,
+  "quality_boundary": "Current plan identity kept as published (the Tsu City Comprehensive Plan composed of the Basic Concept, which sets no fixed plan period and shows the future image 『笑顔があふれ幸せに暮らせる県都 津市 ～夢や希望、明るい未来が広がるまちへ～』 with six town-building outlines, and the Second Basic Plan (FY2018-FY2027) holding six goals plus the cross-cutting block toward realizing the future image, 19 basic policies and 53 policies, all enumerated; the preceding plans and the next comprehensive plan now being formulated are kept only as separate versions), progress governance (project evaluation and policy evaluation published annually as the municipality's own progress-management route), budget enactment kept as passed as proposed on 2026-03-26 as bill No. 39 at the first regular session of 2026 with the amount kept at the published sen-yen precision and never expanded into synthetic yen, and settlement totals kept at the published yen precision from the official settlement book (certification bill No. 1 certified on 2025-09-25; the real balance of 175,738,909 yen is kept at yen precision exactly as published in the real-balance statement) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "reviewed_at": "2026-11-16",
+  "sources": [
+    {
+      "evidence_location": "津市公式Webサイト『津市総合計画基本構想・第2次基本計画（平成30年度～）』ページは現行計画の公式入口（Phase 14インベントリで確認）。計画の構成・期間・将来像・6つの目標と19の基本政策・全53施策の体系は、同ページからリンクされる公式『津市総合計画基本構想・第2次基本計画（全編）』と『概要版』で直接確認",
+      "evidence_role": "comprehensive_plan",
+      "format": "html",
+      "id": "tsu-second-basic-plan",
+      "official_url": "https://www.info.city.tsu.mie.jp/shisei/keikaku_matizukuri_torikumi/1005597/1005623/index.html",
+      "title": "津市総合計画基本構想・第2次基本計画（平成30年度～）",
+      "use_boundary": "現行計画は基本構想（期間を定めない）と第2次基本計画（2018年度～2027年度）として保持し、先行計画（前期基本計画・後期基本計画）および策定中の次期計画の内容を混在させない"
+    },
+    {
+      "evidence_location": "津市公式Webサイト『事務事業評価』ページは進行管理の公式入口（Phase 14インベントリで確認）。事務事業評価が第2次基本計画の進行管理（事務事業評価・施策評価）として実施されることは同ページで確認し、報告書と施策評価シートの一覧は公式ページ『津市総合計画第2次基本計画の進行管理』で確認",
+      "evidence_role": "annual_progress",
+      "format": "html",
+      "id": "tsu-project-evaluation",
+      "official_url": "https://www.info.city.tsu.mie.jp/shisei/gyouzaiseikaikaku/1009903/1005697/1005745.html",
+      "title": "事務事業評価",
+      "use_boundary": "事務事業評価・施策評価は自治体の進行管理routeとして保持し、source-reportedな進捗をJichi Insight独自の達成率へ変換しない"
+    },
+    {
+      "evidence_location": "津市公式Webサイト『当初予算の概要』ページはFY2026当初予算の公式入口（Phase 14インベントリで確認）。同ページ掲載の公式『令和8年度当初予算の概要』（会計別当初予算総括表）で一般会計124,187,000千円を確認し、公式『令和8年度一般会計・特別会計予算書』の議案第39号第1条でも同額を確認。議案番号・提出日は予算書、付託・議決結果・議決日は津市議会公式の会議録および『議決結果一覧表（令和8年第1回津市議会定例会）』で確認",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "tsu-budget-2026",
+      "official_url": "https://www.info.city.tsu.mie.jp/shisei/zaisei/1005573/1005574.html",
+      "title": "当初予算の概要",
+      "use_boundary": "FY2026当初予算は成立予算（議案第39号・令和8年3月26日原案可決）として保持し、補正予算と別stateで扱う"
+    },
+    {
+      "evidence_location": "津市公式Webサイト『決算書』ページは決算の公式入口（Phase 14インベントリで確認）。FY2024の歳入・歳出の円単位総額は同ページ掲載の公式『令和6年度津市歳入歳出決算書』の一般会計歳入歳出決算書で確認し、実質収支額は同年度決算附属書の『実質収支に関する調書』で確認した。認定議案（認定第1号）は同決算書の目次で確認し、議決結果は津市議会公式『議決結果一覧表（令和7年第3回津市議会定例会）』で令和7年9月25日・結果「認定」を直接確認した",
+      "evidence_role": "settlement",
+      "format": "html",
+      "id": "tsu-settlement-2024",
+      "official_url": "https://www.info.city.tsu.mie.jp/shisei/zaisei/1005577/1005578.html",
+      "title": "決算書",
+      "use_boundary": "FY2024決算は第2次基本計画の計画期間の決算として保持し、決算総額を計画の目標・施策の実績へ流用しない。認定第1号は令和7年9月25日に認定されたものとして記録する。実質収支額は調書の公表精度（円単位）のまま保持する"
+    }
+  ]
+}

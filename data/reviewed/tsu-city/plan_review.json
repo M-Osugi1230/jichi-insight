@@ -1,0 +1,62 @@
+{
+  "id": "phase15-tsu-plan-review",
+  "name_ja": "津市",
+  "next_action": "Promote the individual projects under the 53 policies in the project evaluation (事務事業評価) and the per-policy indicator values, only when official sources with stable record-level locators have been reviewed; complete the final cross-check against the budget book and the settlement book (事項別明細書) at section level; confirm the contents of the audit commissioners' settlement review opinion; record the preceding plans' frameworks and the next comprehensive plan now being formulated only as separate versions, and never retroactively connect the current plan's goals or policies to the preceding plan period's results. Keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "official_code": "242012",
+  "quality_boundary": "This package reviews the current plan identity and period (the Tsu City Comprehensive Plan, composed of the Basic Concept, which sets no fixed plan period (future image 『笑顔があふれ幸せに暮らせる県都 津市 ～夢や希望、明るい未来が広がるまちへ～』; six town-building outlines) and the Second Basic Plan (FY2018-FY2027) with six goals plus the cross-cutting block toward realizing the future image, 19 basic policies and 53 policies, all enumerated), the progress-governance layer (project evaluation and policy evaluation, with results published annually as evaluation reports, kept as the municipality's own progress-management framework), the enacted FY2026 initial budget at the published sen-yen (thousand-yen) precision (bill No. 39, passed as proposed on 2026-03-26 at the first regular session of 2026, confirmed in the council's official voting-result table and the plenary minutes; yen-precision amounts are not synthesized), and the FY2024 settlement at yen precision as published, without collapsing proposed, enacted, supplementary, or settlement states. The FY2024 settlement certification bill (certification bill No. 1) was certified on 2025-09-25 at the third regular session of 2025. The real balance of 175,738,909 yen is kept at yen precision exactly as published in the real-balance statement itself. FY2024 is a settlement inside the Second Basic Plan period, so the plan version is the same, but no official total-level mapping from settlement totals to the plan's goals, basic policies or policies exists, so the linkage stays not_assessable. The transition from the preceding plans and the formulation of the next comprehensive plan are kept only as version chronology records.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "津市公式Webサイト『津市総合計画基本構想・第2次基本計画（平成30年度～）』ページ（現行計画の公式入口。Phase 14インベントリで確認）と、同ページからリンクされる公式『津市総合計画基本構想・第2次基本計画（全編）』の計画の構成と期間（基本構想は計画期間を特に定めない・第2次基本計画は2018年度～2027年度）および概要版で直接確認",
+      "evidence_role": "current_plan_identity",
+      "id": "tsu-current-plan-period",
+      "review_note": "期間を定めない基本構想と10年間の第2次基本計画を別period semanticsとして保持したレビュー済みレコード。",
+      "source_url": "https://www.info.city.tsu.mie.jp/shisei/keikaku_matizukuri_torikumi/1005597/1005623/index.html",
+      "statement": "津市の総合計画は津市総合計画であり、基本構想と第2次基本計画で構成する。基本構想は、まちづくりの基本的な理念として津市のめざすべき都市像（望ましいまちの姿『市民がそれぞれの幸せを実感し、心豊かで笑顔あふれる人生を送ることができるまち』、将来像『笑顔があふれ幸せに暮らせる県都 津市 ～夢や希望、明るい未来が広がるまちへ～』）や市民の暮らし・生き方、土地利用の考え方を示し、計画期間は特に定めていない。第2次基本計画は、基本構想に掲げる都市像や市民の暮らしなどの実現に向けた施策や取組の方向性を示し、計画期間は2018年度から2027年度までの10年間である。Phase 14インベントリの記録（津市総合計画 第2次基本計画・2018年度～2027年度）とも一致する。",
+      "title": "津市総合計画の構成と第2次基本計画の計画期間",
+      "value": "2018年度～2027年度"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "公式『津市総合計画基本構想・第2次基本計画』全編の施策体系図（本冊39～40ページ）で全件直接確認（目標別・基本政策別の施策数の合計53で検算一致）。進行管理の公式ページ『津市総合計画第2次基本計画の進行管理』に掲載される施策評価シートの施策番号（施策1～施策49が目標1～目標6に対応）とも対応を確認",
+      "evidence_role": "policy_structure",
+      "id": "tsu-current-policy-structure",
+      "review_note": "公式の計画本編で施策体系を全件確認したレビュー済みレコード。",
+      "source_url": "https://www.info.city.tsu.mie.jp/shisei/keikaku_matizukuri_torikumi/1005597/1005623/index.html",
+      "statement": "第2次基本計画の体系は、基本構想のまちづくりの大綱（1 子どもたちの未来に向けて／2 市民の健やかな人生設計に向けて／3 市民の安全と安心の確立に向けて／4 市民の心豊かで快適な暮らしに向けて／5 市民の生活を支える地域経済の発展に向けて／6 市民の幸せを実現する市役所に向けて）に対応する6つの目標（目標1 子どもたちの未来が輝くまちづくり／目標2 安心して健やかに暮らせるまちづくり／目標3 いのちと暮らしを守るまちづくり／目標4 心やすらぐ住みよいまちづくり／目標5 自分らしく心豊かに輝けるまちづくり／目標6 魅力と活力を生み出すまちづくり）と、目標を横断する『将来像の実現に向けて』で構成する。各目標等の下に基本政策（全19件）を置き、基本政策の下に施策を位置付ける。施策は全53件である（目標別に目標1が5件／目標2が8件／目標3が5件／目標4が12件／目標5が10件／目標6が9件／将来像の実現に向けてが4件。合計53で検算一致）。53施策の全件はpolicy_structureに列挙する。",
+      "title": "第2次基本計画の6つの目標・19の基本政策と全53施策"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "津市公式Webサイト『事務事業評価』ページ（進行管理の公式入口。Phase 14インベントリで確認）および公式ページ『津市総合計画第2次基本計画の進行管理』（事務事業評価・施策評価報告書（令和6年度）の公表と施策評価シートの一覧）で確認",
+      "evidence_role": "progress_governance",
+      "id": "tsu-progress-governance-framework",
+      "review_note": "進行管理の枠組み（事務事業評価・施策評価と報告書の公表）を公式資料で直接確認したレビュー済みレコード。指標の個別値そのものは本パッケージでは扱わない。",
+      "source_url": "https://www.info.city.tsu.mie.jp/shisei/gyouzaiseikaikaku/1009903/1005697/1005745.html",
+      "statement": "津市総合計画第2次基本計画の進行管理は、事務事業評価と施策評価である。事務事業評価は、各種事業の目的や目標、事業実施により求める成果や結果を明らかにした上で、各部等自らが目標の達成状況や現状とのギャップを分析し、事業の実施結果等を評価して実施手法などの改善につなげるものであり、第2次基本計画の進行管理（事務事業評価・施策評価）として実施される。進行管理の実施結果は『津市総合計画第2次基本計画事務事業評価・施策評価報告書』として年度ごとに公表され（令和6年度報告書まで公表済み）、施策ごとの評価シートも公表される。事務事業に係る評価は行政経営課が、施策の評価は政策課が取りまとめる。この進行管理は自治体による進行管理の枠組みであり、Jichi Insight独自の達成判定へ変換しない。",
+      "title": "事務事業評価・施策評価による進行管理と報告書の公表"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "公式『津市総合計画基本構想・第2次基本計画』全編（2018年度開始の新しい総合計画として策定）と市の公式『過去の総合計画』ページ（先行計画を津市総合計画基本構想・前期基本計画／津市総合計画後期基本計画として区分）、および公式『次期津市総合計画の策定』ページ（津市総合計画審議会・津市の未来まちづくり座談会・津市市民意識調査の実施）で確認",
+      "evidence_role": "plan_transition",
+      "id": "tsu-plan-transition",
+      "review_note": "先行計画から現行計画への移行と、次期計画の策定着手をversionの履歴として記録したレビュー済みレコード。",
+      "source_url": "https://www.info.city.tsu.mie.jp/shisei/keikaku_matizukuri_torikumi/1005597/1005623/index.html",
+      "statement": "現行の津市総合計画（基本構想・第2次基本計画）は2018年度に開始し、先行する計画（津市総合計画基本構想・前期基本計画および津市総合計画後期基本計画）から移行した。また、第2次基本計画の計画期間が2027年度までであることから、次期津市総合計画の策定が進められている（津市総合計画審議会の設置、津市の未来まちづくり座談会の開催、津市市民意識調査の実施）。各計画はversionを分けて保持し、現行計画の目標・施策を先行計画期間の実績へ遡及接続せず、次期計画の内容を現行計画へ前倒しで接続しない。",
+      "title": "先行計画から現行計画への移行と次期津市総合計画の策定"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "FY2024決算の公式入口はPhase 14インベントリの決算資料（決算書）。決算総額と第2次基本計画の目標・基本政策・施策との対応付けは公式資料の総額レベルでは示されていない",
+      "evidence_role": "annual_progress",
+      "id": "tsu-fy2024-settlement-linkage",
+      "review_note": "計画versionは同一だが総額レベルの対応付けがないため、接続を推測で記録しない明示的な未判定レコード。決算と施策の対応付けは人間レビュー工程の作業。",
+      "source_url": "https://www.info.city.tsu.mie.jp/shisei/zaisei/1005577/1005578.html",
+      "statement": "FY2024決算値と津市総合計画第2次基本計画の目標・基本政策・施策との接続は未判定（not_assessable）。FY2024は第2次基本計画（2018年度～2027年度）の計画期間内の決算であり計画versionは同一であるが、決算総額は会計別の集計値であり、目標・基本政策・施策との総額レベルの対応付けは公式資料に示されていない。事務事業評価・施策評価は事業・施策単位の進行管理routeであり、FY2024決算総額との対応付けは行われていない。FY2024決算の精密値そのものは決算書で確認済みであるが、決算と施策の対応付けは人間レビュー工程の作業とする。",
+      "title": "令和6年度決算と第2次基本計画の目標・基本政策・施策の接続"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-16"
+}
