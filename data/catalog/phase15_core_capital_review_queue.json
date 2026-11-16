@@ -679,9 +679,9 @@
       "prefecture_name_ja": "岡山県",
       "municipality_type": "city",
       "phase14_role": "core_city",
-      "status": "pending_record_review",
+      "status": "reviewed_complete",
       "source_inventory_path": "data/indexed/kurashiki-city/source_inventory.json",
-      "completion_path": null
+      "completion_path": "data/catalog/kurashiki_phase15_completion.json"
     },
     {
       "sequence": 52,
@@ -894,11 +894,11 @@
   ],
   "summary": {
     "target_count": 67,
-    "reviewed_complete_count": 50,
+    "reviewed_complete_count": 51,
     "review_in_progress_count": 0,
-    "pending_record_review_count": 17,
+    "pending_record_review_count": 16,
     "blocked_source_inventory_count": 0,
-    "next_official_code": "332020"
+    "next_official_code": "342025"
   },
   "updated_at": "2026-11-16"
 }
