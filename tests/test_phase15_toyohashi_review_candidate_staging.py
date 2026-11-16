@@ -326,9 +326,9 @@ def test_toyohashi_promotion_is_reflected_in_canonical_queue():
     )
     assert item["status"] == "reviewed_complete"
     assert item["completion_path"] == "data/catalog/toyohashi_phase15_completion.json"
-    assert queue["summary"]["reviewed_complete_count"] == 60
-    assert queue["summary"]["pending_record_review_count"] == 7
-    assert queue["summary"]["next_official_code"] == "412015"
+    assert queue["summary"]["reviewed_complete_count"] == 61
+    assert queue["summary"]["pending_record_review_count"] == 6
+    assert queue["summary"]["next_official_code"] == "422010"
 
 
 def test_public_web_does_not_import_candidate_staging():

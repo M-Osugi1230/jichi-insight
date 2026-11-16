@@ -1,0 +1,63 @@
+{
+  "id": "phase15-saga-plan-review",
+  "name_ja": "佐賀市",
+  "next_action": "Promote the full enumeration of the ten fields' intended states and main points in the basic plan and the individual progress of the future co-creation plan's priority projects and KPIs only when official sources with stable record-level locators confirm the correspondence; complete the cross-checks against the budget and settlement books （事項別明細書） at section level and against the real-balance statement in the settlement book itself; complete the final confirmation of the settlement certification vote date (2025-09-16) in the plenary-session minutes; keep the previous plan (the Second Saga City Comprehensive Plan, FY2015-FY2024) and the current plan (the Third Saga City Comprehensive Plan, from FY2025) as separate versions and never read the previous plan period's results forward into the current plan. Keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "official_code": "412015",
+  "quality_boundary": "This package reviews the current plan identity and period (the Third Saga City Comprehensive Plan, the city's current top-level plan from FY2025, in three layers: the basic concept (FY2025-FY2040, sixteen years), the basic plan (first period FY2025-FY2032; second period FY2033-FY2040, eight years each) and the comprehensive strategy serving as the implementation plan (the Saga City Future Co-Creation Plan, the local comprehensive strategy, roughly four years; the current plan covers April 2025 to March 2029); the future vision 『佐賀らしさでみんなが上を向くまち』, the five cross-cutting viewpoints and the ten fields of the basic plan are kept at field level; the full enumeration of each field's intended state and main points is not promoted and stays deferred depth), the policy structure, the progress-governance layer (the municipality's own administrative evaluation: evaluation of the policies and priority projects positioned in the future co-creation plan together with the annual citizen opinion survey, operated as a PLAN-DO-SEE management cycle), the enacted FY2026 general-account initial budget at the published sen-yen (thousand-yen) precision (bill No. 1; the council newsletter's official deliberation results record the result as 原案可決 (adopted as proposed) on 2026-03-24, kept verbatim; a member-submitted amendment that would have reduced the total to 119,749,911 thousand yen was rejected and the original bill was adopted as proposed, so the enacted amount is the original 119,800,000 thousand yen and the enactment is not an amended adoption), and the FY2024 settlement at the yen precision printed in the audit committee's settlement review opinion (revenue 118,510,118,104 yen / expenditure 116,749,721,609 yen; their difference, the formal balance of 1,760,396,495 yen, checks out arithmetically; the real balance of 1,161,595 thousand yen is kept at the thousand-yen precision printed in the opinion's summary table, as published, and is not expanded into a synthetic yen figure). The FY2024 settlement certification (bill No. 60) was certified at the August 2025 regular session, confirmed in the council newsletter's official deliberation results; it was not rejected. The vote date 2025-09-16 was identified from the session's final day and the dates of the standing committees' review reports, and final confirmation in the plenary-session minutes has not been performed and stays an open question. Ordinary-account aggregate figures (such as the settlement card's revenue of 118,508,922 thousand yen and the fiscal situation materials) are not used, because their aggregation scope differs from the general account. The period status stays verified_fixed_period as recorded in the Phase 14 inventory. FY2024 is the final fiscal year of the previous plan (the Second Saga City Comprehensive Plan, FY2015-FY2024), so its plan version differs from the current plan; the transition is kept separate as a plan transition, and no official total-level mapping from settlement totals to the previous plan's policy structure exists, so the linkage stays not_assessable.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "計画の構成と期間は、市の総合計画ページ（第3次佐賀市総合計画を策定しました）と計画書第1章・第3章・第4章で直接確認した。period_statusはPhase 14出典目録の記録どおりverified_fixed_periodを保持する",
+      "evidence_role": "current_plan_identity",
+      "id": "saga-current-plan-period",
+      "review_note": "総合計画の構成（基本構想・基本計画・実施計画としての総合戦略）と各層の期間を別period semanticsとして保持し、前期・後期の基本計画を分離した。レビュー済みレコード。",
+      "source_url": "https://www.city.saga.lg.jp/shisei/sagashioshiru/2/2/585.html",
+      "statement": "佐賀市の現行の最上位計画は第3次佐賀市総合計画であり、市の目標（ゴール）を定める基本構想（2025年度〜2040年度の16年間）、取組の方針を定める基本計画（前期2025年度〜2032年度の8年間／後期2033年度〜2040年度の8年間）、その下位に具体的な事業を定める実施計画としての総合戦略（概ね4年間。現行は佐賀市未来共創プラン（地方版総合戦略）、令和7年4月〜令和11年3月）の3層で構成される。将来像は「佐賀らしさでみんなが上を向くまち」である。Phase 14インベントリのperiod_statusはverified_fixed_periodである。",
+      "title": "第3次佐賀市総合計画の構成（基本構想2025年度〜2040年度・基本計画 前期2025年度〜2032年度／後期2033年度〜2040年度・総合戦略 概ね4年）",
+      "value": "第3次佐賀市総合計画は基本構想（2025年度〜2040年度・16年間）と基本計画（前期2025年度〜2032年度・後期2033年度〜2040年度）、実施計画としての総合戦略（概ね4年間）で構成／FY2024決算は旧計画（第2次佐賀市総合計画）の最終年度の決算で現行計画開始前"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "10分野の名称は計画書第4章「各分野の目指す姿（基本計画）」の分野別計画で確認し、横断的な視点は同章の「横断的な視点」で確認した",
+      "evidence_role": "policy_structure",
+      "id": "saga-current-policy-structure",
+      "review_note": "基本計画の分野レベルの体系を保持した。分野ごとの目指す姿・主なポイントの全件列挙は行わない。レビュー済みレコード。",
+      "source_url": "https://www.city.saga.lg.jp/shisei/sagashioshiru/2/2/585.html",
+      "statement": "基本構想は将来像として「佐賀らしさでみんなが上を向くまち」を掲げる。基本計画（第4章「各分野の目指す姿」）は、分野の枠を超えた横断的な視点（主体性・多様性・持続性・柔軟性・国際性の5つの視点）を置き、10の分野（01 子育て・教育／02 健康・福祉／03 文化・スポーツ／04 経済・観光／05 農林水産／06 生活・環境／07 コミュニティ／08 防災・安全／09 都市・交通／10 行政経営）ごとに2040年に目指す市民等の姿を示す。本候補は分野レベルの体系のみを保持し、分野ごとの目指す姿・主なポイントの全件列挙は行わない。",
+      "title": "将来像「佐賀らしさでみんなが上を向くまち」と基本計画10分野の体系"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "進行管理の枠組みは、計画書第1章の「計画の進行管理」と市の行政評価ページ（行政評価について）で直接確認した",
+      "evidence_role": "progress_governance",
+      "id": "saga-progress-governance-framework",
+      "review_note": "進行管理の公式routeとして行政評価（施策・重点事業評価と市民意向調査）の枠組みを保持した。評価結果の個別内容の展開は行わない。レビュー済みレコード。",
+      "source_url": "https://www.city.saga.lg.jp/shisei/gyoseiunei/3/1841.html",
+      "statement": "第3次佐賀市総合計画の進行管理は行政評価の仕組みにより行う。行政評価は、実施計画である佐賀市未来共創プランに位置付けられた施策と重点事業（主な事務事業）の進捗状況や成果を客観的に確認し、評価結果を施策と関係する主な事務事業をセットにして市民へ公表するとともに、「まち・ひと・しごと創生推進会議」への意見聴取を行い、次年度以降の事業の見直し・改善につなげる枠組みである。併せて毎年「市民意向調査」を実施し、施策ごとの現状評価と今後の重要度を把握する。PLAN-DO-SEEのマネジメントサイクルとして運用され、自治体の進行管理の仕組みをJichi Insight独自の達成判定へ変換しない。",
+      "title": "計画の進行管理（行政評価（施策・重点事業評価）と市民意向調査による進行管理）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "旧計画の構成と期間は、第2次佐賀市総合計画（マスタープラン）の「計画の期間」（基準年次2014年度・目標年次2024年度の10年間）で確認し、新計画の開始は市の総合計画ページと計画書で確認した",
+      "evidence_role": "plan_transition",
+      "id": "saga-plan-transition",
+      "review_note": "旧計画から現行計画への移行を分離記録した。レビュー済みレコード。",
+      "source_url": "https://www.city.saga.lg.jp/shisei/sagashioshiru/2/2/585.html",
+      "statement": "現行計画に先立つ最上位計画は第2次佐賀市総合計画であり、基本構想と基本計画から構成され、基準年次を2014年度、目標年次を2024年度とする10年間の計画（2015年度〜2024年度）であった（基本計画は中間年度の2019年度に見直し）。市は2025年度から新たな総合計画「第3次佐賀市総合計画」を開始しており、旧計画期間の実績を現行計画の実績へ読み替えない。移行記録として分離して保持する。",
+      "title": "第2次佐賀市総合計画（2015年度〜2024年度）から第3次佐賀市総合計画への移行"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "決算総額は監査委員の決算審査意見書、計画期間は市の総合計画ページと計画書で確認した。総額レベルの対応付けの不在は、決算・計画の公表範囲で確認した",
+      "evidence_role": "annual_progress",
+      "fiscal_year": 2024,
+      "id": "saga-fy2024-settlement-linkage",
+      "review_note": "FY2024決算は旧計画の最終年度の決算で版が現行計画と異なるため接続しないことを明記した。レビュー済みレコード。",
+      "source_url": "https://www.city.saga.lg.jp/shisei/gyoseiunei/5/2/1484.html",
+      "statement": "FY2024決算は第2次佐賀市総合計画の最終年度（2024年度）の決算であり、現行計画（第3次佐賀市総合計画、2025年度開始）とは計画の版が異なる。決算総額は一次資料で確認済みであるが、決算総額と旧計画の施策体系との総額レベルの対応付けは公式資料にないため、接続はnot_assessableとする。なお決算の議案（第60号議案）は令和7年8月定例会で認定されたが、接続判定は認定の成否に依存しない。",
+      "title": "令和6年度決算と第2次佐賀市総合計画の施策体系の接続"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-17"
+}
