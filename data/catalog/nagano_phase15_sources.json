@@ -1,0 +1,55 @@
+{
+  "id": "nagano-phase15-sources",
+  "phase": 15,
+  "official_code": "202010",
+  "name_ja": "長野市",
+  "reviewed_at": "2026-11-16",
+  "quality_boundary": "Current plan identity kept as published (the Fifth Nagano City Comprehensive Plan, a three-layer basic-concept / basic-plan / implementation-plan structure with the basic concept running FY2017-FY2026 under the city vision 『幸せ実感都市『ながの』〜“オールながの”で未来を創造しよう〜』, seven fields holding 22 policies, and 55 measures plus three cross-field themes in the latter basic plan; the next plan starting FY2027 is under preparation and kept as a separate version), progress governance (PDCA-cycle management by the comprehensive plan promotion headquarters, with evaluation and verification results published every year), budget enactment confirmed by the council's official deliberation status (bill No. 1, passed as proposed on 2026-03-23) with the amount kept at the published sen-yen precision and never expanded into synthetic yen, and settlement totals kept at the published yen precision from the audit commissioners' settlement-review opinion (certified as 認定第2号 on 2025-09-30) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "sources": [
+    {
+      "id": "nagano-fifth-latter-plan",
+      "title": "第五次長野市総合計画後期基本計画",
+      "official_url": "https://www.city.nagano.nagano.jp/n041000/contents/p004191.html",
+      "format": "html",
+      "evidence_role": "comprehensive_plan",
+      "evidence_location": "長野市公式Webサイト『第五次長野市総合計画後期基本計画』ページは現行計画の公式入口（Phase 14インベントリで確認）。計画の構成・期間・将来像は同ページからリンクされる公式『第五次長野市総合計画後期基本計画』本編の『計画の構成と期間』（基本構想10年間・後期基本計画5年間・実施計画1年間と基本構想の議決を明記）で、分野・政策・施策の体系は同本編の体系図『施策の展開』（7分野・22政策・55施策・分野横断テーマ3テーマを明記）で直接確認",
+      "use_boundary": "現行計画は第五次長野市総合計画（基本構想2017年度～2026年度、後期基本計画2022年度～2026年度）として保持し、次期計画（策定中）の内容を混在させない。55施策の全件は本候補では列挙しない。"
+    },
+    {
+      "id": "nagano-progress",
+      "title": "長野市総合計画進捗状況",
+      "official_url": "https://www.city.nagano.nagano.jp/n041000/contents/p004182.html",
+      "format": "html",
+      "evidence_role": "annual_progress",
+      "evidence_location": "長野市公式Webサイト『長野市総合計画進捗状況』ページは進捗公表の公式入口（Phase 14インベントリで確認）。令和6年度分は『第五次長野市総合計画後期基本計画進捗状況（令和7年9月公表）』として、アンケート指標の進捗状況／統計指標の進捗状況／個票が公表されていることを同ページで直接確認",
+      "use_boundary": "進捗状況と指標の実績は自治体の自己評価として保持し、Jichi Insight独自評価や因果効果へ変換しない。計画値と年度実績を区別する。"
+    },
+    {
+      "id": "nagano-next-plan",
+      "title": "次期長野市総合計画について（令和9年度〜）",
+      "official_url": "https://www.city.nagano.nagano.jp/n041000/jikisougoukeikaku.html",
+      "format": "html",
+      "evidence_role": "plan_transition",
+      "evidence_location": "長野市公式Webサイト『次期長野市総合計画について（令和9年度〜）』ページは次期計画策定の公式入口（Phase 14インベントリで確認）。令和9年度を計画初年度とする次期計画の策定、長野市総合審議会での審議、策定方針の策定を同ページで直接確認",
+      "use_boundary": "次期計画は策定中の別versionとして保持し、その枠組みを第五次計画の体系へ遡及接続しない。策定過程の資料（アンケート結果等）を現行計画の実績へ流用しない。"
+    },
+    {
+      "id": "nagano-budget-2026",
+      "title": "長野市の予算",
+      "official_url": "https://www.city.nagano.nagano.jp/n060500/contents/p004384.html",
+      "format": "html",
+      "evidence_role": "budget",
+      "evidence_location": "長野市公式Webサイト『長野市の予算』ページはFY2026当初予算の公式入口（Phase 14インベントリで確認）。同ページ掲載の公式『令和8年度長野市（一般会計・特別会計・企業会計）予算』（予算書）の議案第1号第1条と第1表で一般会計195,220,000千円を確認し、成立は長野市議会公式『令和8年3月定例会　議案の審議状況』で議案第1号が令和8年2月25日上程・令和8年3月23日原案可決と確認",
+      "use_boundary": "FY2026当初予算は議決・成立済みの額として扱い、proposal/enacted/supplementaryをPhase 15でstage分離する。金額は千円単位の公表値であり、円単位を合成しない。"
+    },
+    {
+      "id": "nagano-settlement-2024",
+      "title": "長野市の決算",
+      "official_url": "https://www.city.nagano.nagano.jp/n060500/contents/p004386.html",
+      "format": "html",
+      "evidence_role": "settlement",
+      "evidence_location": "長野市公式Webサイト『長野市の決算』ページはFY2024決算の公式入口（Phase 14インベントリで確認）。長野市監査委員『令和6年度長野市一般会計・特別会計決算及び基金の運用状況審査意見書』（7監査第40号・令和7年8月26日）の一般会計総括に、一般会計の歳入決算額170,949,499,030円・歳出決算額166,702,305,036円・歳入歳出差引額4,247,193,994円を記載。認定は長野市議会公式『令和7年9月定例会提出議案・議決の状況』で認定第2号が令和7年9月30日に原案認定と確認",
+      "use_boundary": "FY2024決算認定の公式入口。FY2024決算は第五次計画期間内の財政Evidenceとして保持し、決算総額を政策・施策・指標の実績へ直接流用しない。"
+    }
+  ]
+}

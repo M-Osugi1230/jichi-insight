@@ -1,0 +1,63 @@
+{
+  "id": "phase15-nagano-plan-review",
+  "official_code": "202010",
+  "name_ja": "長野市",
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-16",
+  "next_action": "Promote the full enumeration of the 55 measures under the 22 policies and the implementation plan's individual projects only when official sources with stable record-level locators have been reviewed; cross-check the budget explanatory materials and the settlement detail book (事項別明細書) at section level, and reconcile the settlement totals against the published plan progress status (indicators and individual sheets); record the next comprehensive plan (under preparation, starting FY2027) as a separate version once enacted and never retroactively connect its framework to the fifth plan; keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "quality_boundary": "This package reviews the current plan identity and period (the Fifth Nagano City Comprehensive Plan, a three-layer plan whose basic concept runs FY2017-FY2026 — enacted by the city council in March 2017 — with basic plans split into a first period FY2017-FY2021 and a latter period FY2022-FY2026 that integrates the city's machi-hito-shigoto creation strategy, and one-year implementation plans revised annually; the city vision is 『幸せ実感都市『ながの』〜“オールながの”で未来を創造しよう〜』), the plan's structure of seven fields holding 22 policies, with 55 measures and three cross-field themes in the latter basic plan (the 55 measures are not enumerated in v1), the progress-governance layer (PDCA-cycle management led by the comprehensive plan promotion headquarters, with evaluation and verification results published every year as the plan progress status), the enacted FY2026 initial budget at the published sen-yen (thousand-yen) precision (bill No. 1, passed as proposed on 2026-03-23; yen-precision amounts are not synthesized), and the FY2024 settlement at yen precision as published, without collapsing proposed, enacted, supplementary, or settlement states. FY2024 falls inside the fifth plan's period (the third year of the latter basic plan), but its totals are section-level aggregates that are not linked to the plan's policies, measures or indicators, and no reconciliation against the published progress status has been performed. The next comprehensive plan (starting FY2027) is under preparation and is kept only as a plan-transition record in a separate version.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "市公式の総合計画ページ（現行計画の公式入口。Phase 14インベントリで確認）と、公式『第五次長野市総合計画後期基本計画』本編の『計画の構成と期間』（基本構想は平成29年3月市議会で議決され令和8年度を目標とすること、計画期間は基本構想10年間・基本計画5年間・実施計画1年間であることを明記）で直接確認",
+      "evidence_role": "current_plan_identity",
+      "id": "nagano-current-plan-period",
+      "review_note": "計画期間・構成・将来像・基本構想の議決を公式資料で確認したレビュー済みレコード。",
+      "source_url": "https://www.city.nagano.nagano.jp/n041000/contents/p004191.html",
+      "statement": "第五次長野市総合計画は、基本構想・基本計画・実施計画の3層で構成する本市の総合計画である。基本構想は平成29年3月市議会で議決され、計画期間は平成29（2017）年度から令和8（2026）年度までの10年間で、まちの将来像は『幸せ実感都市『ながの』〜“オールながの”で未来を創造しよう〜』である。基本計画は5年間で、前期基本計画（2017年度～2021年度）と後期基本計画（令和4（2022）年度から令和8（2026）年度まで）に分かれ、後期基本計画には長野市まち・ひと・しごと創生総合戦略を統合する。実施計画は基本計画で定めた施策体系に基づく具体的な事業を示す1年間の計画で、毎年見直しを行う。令和8年度は基本構想・後期基本計画ともに最終年度にあたる。Phase 14インベントリの記録（第五次長野市総合計画後期基本計画2022年度～2026年度）とも一致する。",
+      "title": "第五次長野市総合計画の計画期間と構成",
+      "value": "2017年度～2026年度"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "公式『第五次長野市総合計画後期基本計画』本編の体系図『施策の展開』（まちの将来像の下に7分野・22政策を明記し、後期基本計画の55施策と分野横断テーマ（総合戦略）3テーマを併記）で直接確認",
+      "evidence_role": "policy_structure",
+      "id": "nagano-current-policy-structure",
+      "review_note": "公式資料が明示した分野・政策の層構造と施策数・分野横断テーマを一次資料で確認したレビュー済みレコード。55施策の全件は列挙しない（deferred depthとして保持）。",
+      "source_url": "https://www.city.nagano.nagano.jp/n041000/contents/p004191.html",
+      "statement": "第五次長野市総合計画の基本構想の体系は、まちの将来像の下に7つの分野と22の政策を位置付ける。分野1行政経営分野には2政策（市民が主役のまちづくりの推進／将来にわたり持続可能な行財政運営の確立）、分野2保健・福祉分野には5政策（少子化対策、切れ目ない子ども・子育て支援／生きがいのある豊かな高齢社会の形成／だれもが自分らしく暮らせる社会の形成／安心して暮らせる健康づくりの推進／人権を尊ぶ明るい社会の形成）、分野3環境分野には2政策（環境に負荷をかけない持続可能な社会の形成／自然と調和した心地よい暮らしづくりの推進）、分野4防災・安全分野には2政策（災害に強いまちづくりの推進／安心して暮らせる安全社会の構築）、分野5教育・文化分野には5政策（未来を切り拓く人材の育成と環境の整備／豊かな人生を送るための学習機会の提供／魅力あふれる文化の創造と継承／スポーツを軸としたまちづくりの推進／国際交流・多文化共生の推進）、分野6産業・経済分野には4政策（魅力を活かした観光の振興／活力ある農林業の振興／特色を活かした商工業の振興／安定した就労の促進）、分野7都市整備分野には2政策（いきいきと暮らせる魅力あるまちづくりの推進／拠点をつなぐネットワークの充実）が属し、計22政策である。後期基本計画では政策の下に計55の施策を展開し、あわせて分野横断テーマ（総合戦略）として3テーマ（誰もが活き生きと安心して暮らし続けられる『まち』の実現／『ひと』が集い、つながり、育つ、ふるさと“ながの”の実現／魅力ある『しごと』による担い手の確保と潤う地域の実現）を掲げる。55施策の全件は本候補では列挙しない。",
+      "title": "第五次長野市総合計画の7分野・22政策と後期基本計画の55施策・分野横断テーマの体系"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "公式『第五次長野市総合計画後期基本計画』本編の『計画の推進に向けて』（PDCAサイクルによる進捗管理、総合計画推進本部の設置、評価・検証結果の毎年度公表を明記）および市公式『長野市総合計画進捗状況』ページ（令和6年度分は『第五次長野市総合計画後期基本計画進捗状況（令和7年9月公表）』としてアンケート指標・統計指標の進捗状況と個票を公表）で直接確認",
+      "evidence_role": "progress_governance",
+      "id": "nagano-progress-governance-framework",
+      "review_note": "進行管理の枠組み（PDCA・推進本部・毎年度の結果公表）を公式資料で直接確認したレビュー済みレコード。個別指標の実績そのものは本パッケージでは扱わない。",
+      "source_url": "https://www.city.nagano.nagano.jp/n041000/contents/p004182.html",
+      "statement": "第五次長野市総合計画の進行管理はPDCAサイクルにより行い、計画の推進状況を指標によって客観的に評価・検証するとともに、行政評価の結果も活用する。推進体制として、推進状況の確認（Check）、効果的な推進の手法の検討（Action）、推進に向けた予算の重点的な配分などを任務とする総合計画推進本部（本部長は市長）を設置する。各施策や分野横断テーマの評価・検証結果は報告書を作成し毎年度公表され、後期基本計画については『長野市総合計画進捗状況』ページで、アンケート指標・統計指標の進捗状況と施策ごとの個票が公表されている（令和6年度分は令和7年9月に公表）。評価・検証は自治体による自己評価であり、Jichi Insight独自の達成判定へ変換しない。",
+      "title": "PDCAサイクルと総合計画推進本部に基づく進行管理"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "市公式『次期長野市総合計画について（令和9年度〜）』ページ（第五次計画に代わり令和9年度を計画初年度とする次期計画を策定すること、長野市総合審議会で策定に関わる審議を行っていること、次期長野市総合計画策定方針を策定したことを明記）で確認",
+      "evidence_role": "plan_transition",
+      "id": "nagano-next-plan-transition",
+      "review_note": "次期計画の策定経過と版の分離のみを公式資料で確認したレビュー済みレコード。次期計画の枠組みそのものは本パッケージでは記録しない。",
+      "source_url": "https://www.city.nagano.nagano.jp/n041000/jikisougoukeikaku.html",
+      "statement": "第五次長野市総合計画は令和8（2026）年度が最終年度であり、令和9（2027）年度を計画初年度とする次期長野市総合計画の策定が進められている。長野市総合審議会において次期計画の策定に関わる審議が行われ、その下部組織として作業部会（分科会）が原案の検討を進めている。次期計画策定に当たっての基本的考え方を定めた策定方針は策定済みであり、市民アンケートや小・中・高校生アンケートの結果も公表されている。各計画はversionを分けて保持し、次期計画の枠組みを第五次計画の体系へ遡及接続しない。",
+      "title": "次期長野市総合計画の策定経過（計画移行）"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "市公式『長野市の決算』ページ（決算総額の確認先の公式入口。Phase 14インベントリで確認）。計画の進捗評価の公式入口は『長野市総合計画進捗状況』ページ",
+      "evidence_role": "annual_progress",
+      "fiscal_year": 2024,
+      "id": "nagano-fy2024-settlement-linkage",
+      "review_note": "決算が現行計画期間内のものであることと、個別事業の接続を推測で記録しないことは別の判断であることを示す明示的な未判定レコード。決算と事業の対応付けは人間レビュー工程の作業。",
+      "source_url": "https://www.city.nagano.nagano.jp/n060500/contents/p004386.html",
+      "statement": "FY2024決算値と第五次長野市総合計画の政策・施策・指標との接続は未判定（not_assessable）。FY2024は第五次計画の計画期間（2017年度～2026年度）の8年目・後期基本計画（2022年度～2026年度）の3年目に属する決算であるが、決算総額は款別の集計値であり、個別施策・事業との対応付けは総額レベルでは行われていない。総合計画の進捗状況（令和6年度分）はアンケート指標・統計指標と個票で検証されたものであるが、決算総額との突合・対応付けは未実施である。FY2024決算の精密値そのものは決算審査意見書で確認済みであるが、決算と事業の対応付けは人間レビュー工程の作業とする。",
+      "title": "令和6年度決算と第五次長野市総合計画の政策・施策・指標の接続"
+    }
+  ]
+}
