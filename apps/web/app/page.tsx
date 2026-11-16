@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
+import { JapanMapExplorer } from "@/components/JapanMapExplorer";
 import {
   MunicipalityQuickSearch,
   type MunicipalitySearchEntry,
@@ -158,75 +159,43 @@ export default function Home() {
       <SiteHeader />
       <main id="main-content">
 
-      <section className={styles.hero}>
-        <div className={styles.heroCopy}>
-          <p className={styles.heroKicker}>全国の自治体・政策データを、一次資料から</p>
-          <h1>
-            あなたのまちを、
-            <br />
-            <em>数字と根拠で知る。</em>
-          </h1>
-          <p className={styles.heroLead}>
-            自治体の計画・予算・取り組み・成果を、ひとつの場所で。
-            公開資料をもとに、気になる地域の情報を自分で確かめられます。
-          </p>
+      <JapanMapExplorer
+        prefectures={reviewedPrefectureCoverage.map((item) => ({
+          code: item.code,
+          name: item.name,
+          region: item.region,
+          href: item.route,
+        }))}
+        cities={loadPhase15CitySummaries().map((item) => ({
+          slug: item.slug,
+          name: item.name,
+          prefecture: item.prefecture,
+          href: `/municipalities/${item.slug}`,
+        }))}
+      />
+
+      <nav className={styles.mapQuickLinks} aria-label="日本地図以外の探し方">
+        <details className={styles.mapSearchDisclosure}>
+          <summary>自治体名から検索する <span aria-hidden="true">⌄</span></summary>
           <MunicipalityQuickSearch entries={searchEntries} />
-          <p className={styles.heroTrustNote}>
-            <span>正式公開中</span>
-            確認済みの内容と、まだ接続できていない情報を区別して掲載しています。
-          </p>
-          <div className={styles.heroActions}>
-            <Link className="primaryAction" href="/municipalities#prefectures">
-              都道府県一覧から探す
-            </Link>
-            <Link className="secondaryAction" href="/about">
-              このサイトの目的
-            </Link>
-          </div>
-          <div className={styles.heroPrinciples} aria-label="表示原則">
-            <span>一次資料を表示</span>
-            <span>未確認を明記</span>
-            <span>単純ランキングなし</span>
-          </div>
-        </div>
+        </details>
+        <Link href="/municipalities#prefectures">都道府県一覧から探す →</Link>
+        <Link href="/about">サイトについて →</Link>
+      </nav>
 
-        <aside
-          className={styles.currentFocus}
-          aria-labelledby="current-focus-title"
-        >
-          <div className={styles.focusHeader}>
-            <span>NATIONWIDE REVIEW</span>
-            <StatusBadge label="47 / 47 公開" tone="verified" />
-          </div>
-          <p className={styles.focusArea}>ALL PREFECTURES / EVIDENCE 100%</p>
-          <h2 id="current-focus-title">
-            {formatNumber(reviewedCoverageStats.reviewedRecords)}件の目標・指標を、
-            根拠付きで。
-          </h2>
-          <dl className={styles.focusMetrics}>
-            <div>
-              <dt>Reviewed</dt>
-              <dd>{reviewedCoverageStats.reviewedPrefectures}<small>県</small></dd>
-            </div>
-            <div>
-              <dt>Evidence</dt>
-              <dd>{formatNumber(reviewedCoverageStats.evidencePackets)}<small>件</small></dd>
-            </div>
-            <div>
-              <dt>根拠付与率</dt>
-              <dd>{reviewedCoverageStats.evidenceCoveragePercent}<small>%</small></dd>
-            </div>
-          </dl>
-          <p className={styles.focusNote}>
-            計画ごとの記載単位を保持しているため、件数は自治体間の優劣を示しません。
-            目標の掲載と、達成評価も分けています。
-          </p>
-          <Link href="/municipalities#prefectures">
-            47都道府県の統合索引へ <span aria-hidden="true">→</span>
-          </Link>
-        </aside>
-      </section>
+      <div className={styles.mapStatusStrip}>
+        <span>正式公開中</span>
+        <strong>47都道府県</strong>
+        <span>目標・指標 {formatNumber(reviewedCoverageStats.reviewedRecords)}件</span>
+        <Link href="/data-quality">出典とデータ品質 →</Link>
+      </div>
 
+      <details className={styles.mapDeepDive}>
+        <summary>
+          <span>データ・レビューの詳しい情報</span>
+          <span aria-hidden="true">＋</span>
+        </summary>
+        <div className={styles.mapDeepDiveContent}>
       <section className={styles.serviceRoutes} aria-labelledby="service-routes-title">
         <div className={styles.serviceRoutesHeading}>
           <div>
@@ -447,6 +416,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+        </div>
+      </details>
 
       </main>
       <SiteFooter />

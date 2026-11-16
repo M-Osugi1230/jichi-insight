@@ -1,0 +1,450 @@
+.explorer {
+  max-width: 1320px;
+  margin-inline: auto;
+  padding: clamp(28px, 4vw, 52px) 26px 58px;
+}
+
+.intro {
+  align-items: end;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 18px 24px;
+  margin-bottom: 26px;
+}
+
+.eyebrow {
+  color: #236958;
+  font-size: .72rem;
+  font-weight: 850;
+  letter-spacing: .13em;
+  margin: 0 0 13px;
+}
+
+.intro h1 {
+  color: #102e46;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: clamp(2.05rem, 4.65vw, 4.45rem);
+  letter-spacing: -.05em;
+  line-height: 1.23;
+  margin: 0;
+}
+
+.lead {
+  color: #42505b;
+  font-size: clamp(.86rem, 1.27vw, 1rem);
+  line-height: 1.7;
+  margin: 13px 0 0;
+}
+
+.listLink {
+  align-items: center;
+  border: 1px solid #c7d7d2;
+  border-radius: 999px;
+  color: #1a5848;
+  display: inline-flex;
+  font-size: .83rem;
+  font-weight: 800;
+  gap: 12px;
+  min-height: 44px;
+  padding: 9px 16px;
+  text-decoration: none;
+}
+
+.listLink:hover, .listLink:focus-visible {
+  background: #e5eee9;
+}
+
+.workspace {
+  align-items: stretch;
+  display: grid;
+  gap: 18px;
+  grid-template-columns: minmax(0, 1.22fr) minmax(330px, .78fr);
+}
+
+.mapCard, .selectCard {
+  background: #fffefa;
+  border: 1px solid #d7d3c8;
+  border-radius: 23px;
+  box-shadow: 0 10px 36px rgb(16 32 46 / 4%);
+  min-width: 0;
+}
+
+.mapCard {
+  background:
+    radial-gradient(circle at 74% 36%, rgb(225 236 235 / 58%), transparent 41%),
+    #f5faf9;
+  overflow: hidden;
+  padding: 23px 23px 19px;
+}
+
+.mapHeading {
+  align-items: center;
+  color: #42505b;
+  display: flex;
+  font-size: .78rem;
+  font-weight: 820;
+  justify-content: space-between;
+}
+
+.mapHeading > span:first-child {
+  align-items: center;
+  display: inline-flex;
+  gap: 9px;
+}
+
+.mapDot, .verifiedDot {
+  background: #236958;
+  border-radius: 50%;
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+}
+
+.japanMap {
+  aspect-ratio: 1;
+  display: block;
+  height: auto;
+  margin-inline: auto;
+  max-height: 580px;
+  overflow: visible;
+  width: 100%;
+}
+
+.prefecture {
+  fill: var(--map-color, #b9d9d2);
+  stroke: #fff;
+  stroke-linejoin: round;
+  stroke-width: 7px;
+  cursor: pointer;
+  outline: none;
+  transition: fill .16s ease, opacity .16s ease;
+}
+
+.prefecture:hover {
+  fill: #457c75;
+}
+
+.prefecture:focus-visible {
+  fill: #285e7c;
+  stroke: #102e46;
+  stroke-width: 13px;
+}
+
+.prefecture.dimmed {
+  fill: #dce5e6;
+  opacity: .63;
+}
+
+.prefecture.selected, .prefecture.selected:hover {
+  fill: #175a53;
+  opacity: 1;
+  stroke: #102e46;
+  stroke-width: 12px;
+}
+
+.mapHint {
+  color: #52616c;
+  font-size: .78rem;
+  margin: 0;
+  text-align: center;
+}
+
+.selectCard {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.selectTop, .detailHeading {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+}
+
+.step {
+  align-items: center;
+  background: #102e46;
+  border-radius: 10px;
+  color: #fff;
+  display: inline-flex;
+  flex: 0 0 auto;
+  font-size: .75rem;
+  font-weight: 850;
+  height: 38px;
+  justify-content: center;
+  width: 38px;
+}
+
+.selectTop h2, .detailHeading h3 {
+  color: #102e46;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.selectTop p, .detailHeading p {
+  color: #5a656d;
+  font-size: .79rem;
+  margin: 4px 0 0;
+}
+
+.regionGrid {
+  display: grid;
+  gap: 9px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 23px;
+}
+
+.regionGrid button {
+  align-items: center;
+  background: #f5f3ed;
+  border: 1px solid #e1ddd5;
+  border-radius: 12px;
+  color: #102e46;
+  cursor: pointer;
+  display: flex;
+  font: inherit;
+  font-size: .91rem;
+  font-weight: 800;
+  gap: 9px;
+  min-height: 48px;
+  padding: 10px;
+  text-align: left;
+}
+
+.regionGrid button:hover, .regionGrid button:focus-visible {
+  background: #e7f1eb;
+  border-color: #76ab98;
+}
+
+.regionGrid button.activeRegion {
+  background: #e0eee7;
+  border: 2px solid #236958;
+  color: #145745;
+  padding: 9px;
+}
+
+.regionMark {
+  border: 1px solid rgb(0 0 0 / 9%);
+  border-radius: 5px;
+  display: inline-block;
+  flex: 0 0 16px;
+  height: 16px;
+}
+
+.detail {
+  border-top: 1px solid #e2ddd3;
+  margin-top: 24px;
+  padding-top: 23px;
+}
+
+.detailHeading .step {
+  background: #e2eee9;
+  color: #236958;
+}
+
+.prefectureGrid {
+  display: grid;
+  gap: 7px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 18px;
+}
+
+.prefectureGrid button {
+  background: #fff;
+  border: 1px solid #ccd5d8;
+  border-radius: 9px;
+  color: #153e56;
+  cursor: pointer;
+  font: inherit;
+  font-size: .84rem;
+  font-weight: 760;
+  min-height: 44px;
+  padding: 8px 9px;
+}
+
+.prefectureGrid button:hover, .prefectureGrid button:focus-visible {
+  background: #e8f0ec;
+}
+
+.prefectureGrid button.activePrefecture {
+  background: #102e46;
+  border-color: #102e46;
+  color: #fff;
+}
+
+.selection {
+  background: #f5f8f7;
+  border: 1px solid #d8e4dd;
+  border-radius: 15px;
+  margin-top: 18px;
+  padding: 17px;
+}
+
+.selectionEyebrow {
+  color: #397568;
+  font-size: .75rem;
+  font-weight: 850;
+}
+
+.selectionHeader h4 {
+  color: #102e46;
+  font-size: clamp(1.45rem, 2.25vw, 1.85rem);
+  margin: 5px 0 16px;
+}
+
+.primaryAction {
+  align-items: center;
+  background: #175a53;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  font-size: .88rem;
+  font-weight: 850;
+  justify-content: space-between;
+  min-height: 50px;
+  padding: 11px 16px;
+  text-decoration: none;
+}
+
+.primaryAction:hover, .primaryAction:focus-visible {
+  background: #102e46;
+}
+
+.cities {
+  margin-top: 18px;
+}
+
+.cities h5 {
+  color: #42505b;
+  font-size: .79rem;
+  margin: 0 0 9px;
+}
+
+.cities ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cities li + li {
+  border-top: 1px solid #dce5e0;
+}
+
+.cities li a {
+  color: #1b5574;
+  display: flex;
+  font-size: .87rem;
+  font-weight: 800;
+  justify-content: space-between;
+  min-height: 44px;
+  padding-block: 11px;
+  text-decoration: none;
+}
+
+.cities li a:hover, .cities li a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.cities p, .prompt {
+  color: #52616c;
+  font-size: .82rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.prompt { margin-top: 18px; }
+
+.emptyPanel {
+  align-items: center;
+  color: #426056;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 30px 10px;
+  text-align: center;
+}
+
+.emptyPanel > span {
+  color: #79a597;
+  font-size: 1.6rem;
+}
+
+.emptyPanel strong {
+  font-size: .9rem;
+}
+
+.emptyPanel p {
+  color: #5a656d;
+  font-size: .8rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.footer {
+  align-items: center;
+  color: #52616c;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: .77rem;
+  gap: 10px 22px;
+  margin-top: 16px;
+}
+
+.footer > span:first-child {
+  align-items: center;
+  display: inline-flex;
+  gap: 8px;
+}
+
+.footer a {
+  color: #1b637c;
+  font-weight: 800;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 1000px) {
+  .workspace {
+    grid-template-columns: minmax(0, 1fr) minmax(285px, .85fr);
+  }
+  .selectCard { padding: 18px; }
+  .mapCard { padding: 18px; }
+}
+
+@media (max-width: 760px) {
+  .explorer { padding: 26px 16px 30px; }
+  .intro { margin-bottom: 17px; }
+  .intro h1 { font-size: clamp(1.85rem, 7.9vw, 2.85rem); }
+  .lead { font-size: .88rem; }
+  .workspace { grid-template-columns: 1fr; gap: 13px; }
+  .mapCard, .selectCard { border-radius: 17px; }
+  .mapCard { padding: 14px 14px 11px; }
+  .japanMap { max-height: 410px; }
+  .mapHint { font-size: .75rem; }
+  .selectCard { padding: 18px; }
+  .regionGrid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 7px; }
+  .regionGrid button {
+    flex-direction: column;
+    font-size: .72rem;
+    gap: 5px;
+    min-height: 60px;
+    padding: 8px 3px;
+    text-align: center;
+  }
+  .regionGrid button.activeRegion { padding: 7px 2px; }
+  .regionMark { flex-basis: 10px; height: 10px; width: 10px; }
+  .emptyPanel { padding: 16px 0; }
+  .prefectureGrid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (max-width: 390px) {
+  .prefectureGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .listLink { font-size: .79rem; }
+  .footer { font-size: .72rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .prefecture { transition: none; }
+}
