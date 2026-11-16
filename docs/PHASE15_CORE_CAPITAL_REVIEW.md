@@ -680,13 +680,25 @@ Declared v1 package:
 
 Deferred depth includes the measures, projects and indicators under the 26 policies, cross-checks against the budget book and the settlement book （事項別明細書） at section level, the content of the audit commissioners' settlement review opinion (individual findings), supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Forty-ninth completion — Tottori
+
+鳥取市を49番目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 第12次鳥取市総合計画 — adopted in March 2026 and composed of the basic concept （基本構想）, which runs FY2026-FY2035, the basic plan （基本計画）, which runs FY2026-FY2030, and the implementation plan （実施計画）, which runs FY2026-FY2030 and is revised every fiscal year; the layers are kept as separate period semantics. The plan philosophy is 『挑戦・協働・共生・誇り』 and the future image is 『一人ひとりが自分の力を発揮でき、支え合いながら ともに豊かに暮らせる鳥取市〜オアシスとっとり〜』. The basic plan's structure — four basic principles for plan promotion, four town-development goals and 11 policies — is confirmed in full on the official plan page; the basic measures, projects and indicators under each policy are not enumerated and stay deferred depth, so the measures lists stay empty. The Tottori City local-revitalization action plan (the third Tottori City creation comprehensive strategy) is positioned as the plan's priority measures. Progress is managed through the municipality's own framework of revising the implementation plan every fiscal year. The period status stays verified_fixed_period as recorded in the Phase 14 inventory, and the transition from the 11th plan (basic concept FY2021-FY2030, basic plan FY2021-FY2025) is kept only as a version chronology record; results from the 11th plan period are not carried forward into the 12th plan
+- FY2026 general-account initial budget: 108,700,000 thousand yen (enacted). The budget is a framework budget （骨格予算） prepared ahead of the mayoral election held on 2026-03-29. Bill 議案第6号 was passed as proposed （原案可決） by majority at the February 2026 regular session on 2026-03-19, as recorded in the council's official results document （令和8年2月定例会の審議結果）. The amount was confirmed at thousand-yen precision through the pre-supplement amount of supplementary budget No. 1 (bill 議案第70号) and the current-budget amount in the May 2026 extraordinary supplementary budget overview. The amount is kept at the published sen-yen (thousand-yen) precision and finer amounts are not synthesized
+- FY2024 general-account settlement at the yen precision printed in the city's official settlement book （令和6年度鳥取市歳入歳出決算書）: revenue 113,544,636,161 yen / expenditure 111,377,983,188 yen (their difference of 2,166,652,973 yen matches the balance printed in the same book; the real balance is 2,017,634 thousand yen — the thousand-yen difference of 2,166,653 thousand yen minus 149,019 thousand yen of funding to be carried over to the next fiscal year — kept at the thousand-yen precision of the settlement statement （実質収支に関する調書）, and yen amounts are not synthesized). The settlement certification, bill 議案第106号, was certified at the plenary session on 2025-10-06 per the city council meeting record (the chair's declaration of the vote and the settlement review special committee chair's report); it was not rejected. The September session's voting-result PDF does not list the rows for bills 106 and 107, so the certification is recorded on the basis of the meeting record, not on the PDF's wording. FY2024 falls within the previous 11th plan's basic-plan period (FY2021-FY2025), so its plan version differs from the current 12th plan, and no official total-level mapping from settlement totals to either plan's policy structure exists, so the totals are not linked to the plan's structure and the linkage stays not_assessable
+
+Deferred depth includes the basic measures, projects and indicators under the 11 policies, cross-checks against the budget book and the settlement book （事項別明細書） at section level, the content of the audit commissioners' settlement review opinion (individual findings), supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 48 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市、姫路市、尼崎市、明石市、西宮市、奈良市、和歌山市
+- Reviewed complete: 49 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市、姫路市、尼崎市、明石市、西宮市、奈良市、和歌山市、鳥取市
 - Review in progress: 0
-- Pending record review: 19
+- Pending record review: 18
 - Blocked source inventory: 0
-- Next official code: 312010
+- Next official code: 322016
 
 ## Definition of Phase 15 completion
 

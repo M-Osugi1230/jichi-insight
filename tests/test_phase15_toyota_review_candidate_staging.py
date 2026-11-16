@@ -306,9 +306,9 @@ def test_toyota_promotion_is_reflected_in_canonical_queue():
     )
     assert item["status"] == "reviewed_complete"
     assert item["completion_path"] == "data/catalog/toyota_phase15_completion.json"
-    assert queue["summary"]["reviewed_complete_count"] == 48
-    assert queue["summary"]["pending_record_review_count"] == 19
-    assert queue["summary"]["next_official_code"] == "312010"
+    assert queue["summary"]["reviewed_complete_count"] == 49
+    assert queue["summary"]["pending_record_review_count"] == 18
+    assert queue["summary"]["next_official_code"] == "322016"
 
 
 def test_public_web_does_not_import_candidate_staging():

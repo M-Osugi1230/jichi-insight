@@ -199,9 +199,9 @@ def test_kofu_plan_framework_is_primary_source_checked() -> None:
 def test_kofu_promotion_is_reflected_in_canonical_queue() -> None:
     queue = load_json(QUEUE_PATH)
     summary = queue["summary"]
-    assert summary["reviewed_complete_count"] == 48
-    assert summary["pending_record_review_count"] == 19
-    assert summary["next_official_code"] == "312010"
+    assert summary["reviewed_complete_count"] == 49
+    assert summary["pending_record_review_count"] == 18
+    assert summary["next_official_code"] == "322016"
 
     kofu = next(
         record
