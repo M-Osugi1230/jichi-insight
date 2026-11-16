@@ -1,0 +1,63 @@
+{
+  "id": "phase15-tottori-plan-review",
+  "name_ja": "鳥取市",
+  "next_action": "Promote the per-policy basic measures, projects and indicators under the 11 policies of the basic plan only when official sources with stable record-level locators have been reviewed; complete the final cross-check against the budget book and the settlement book （事項別明細書） at section level; examine the content of the audit commissioners' settlement review opinion (individual findings); keep the previous plan (the 11th Tottori City Comprehensive Plan) only as a separate version, and never connect results from the 11th plan period forward into the 12th plan. Keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "official_code": "312010",
+  "quality_boundary": "This package reviews the current plan identity and period (the 12th Tottori City Comprehensive Plan, adopted in March 2026: the basic concept （基本構想） runs FY2026-FY2035, the basic plan （基本計画） and implementation plan （実施計画） run FY2026-FY2030 with the implementation plan revised every fiscal year; the layers are kept as separate period semantics; the plan philosophy is 『挑戦・協働・共生・誇り』 and the future image is 『一人ひとりが自分の力を発揮でき、支え合いながら ともに豊かに暮らせる鳥取市〜オアシスとっとり〜』; the Tottori City local-revitalization action plan (the third Tottori City creation comprehensive strategy) is positioned as the plan's priority measures), the policy structure (four basic principles for plan promotion, four town-development goals and 11 policies, confirmed in full on the official plan page; the basic measures, projects and indicators under each policy are not enumerated and stay deferred depth, so the measures lists stay empty), the progress-governance layer (the implementation plan revised every fiscal year — the municipality's own progress-management framework), the enacted FY2026 initial budget at the published sen-yen (thousand-yen) precision (bill 議案第6号; the council's official results document （令和8年2月定例会の審議結果） records the result as 『原案可決』 by majority on 2026-03-19; the budget is a framework budget （骨格予算） ahead of the mayoral election, and the amount of 108,700,000 thousand yen is kept at thousand-yen precision as confirmed through the supplementary-budget lineage), and the FY2024 settlement at the yen precision printed in the city's official settlement book. The FY2024 settlement certification （議案第106号） was certified at the plenary session on 2025-10-06: that outcome is recorded exactly as confirmed in the council meeting record; it was not rejected. The September session's voting-result PDF does not list the rows for bills 106 and 107, so the certification is recorded on the basis of the meeting record, not on the PDF's wording. The real balance of 2,017,634 thousand yen is published only at thousand-yen precision in the settlement statement, so it is kept at that precision and is never expanded into synthetic yen amounts. FY2024 falls within the previous 11th plan's basic-plan period (FY2021-FY2025), so its plan version differs from the current 12th plan, and no official total-level mapping from settlement totals to either plan's policy structure exists, so the linkage stays not_assessable. The transition from the 11th plan is kept only as a version chronology record.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "鳥取市公式『第12次鳥取市総合計画』ページで、計画の構成と期間（基本構想2026年度～令和17年度・基本計画/実施計画2026年度～令和12年度）、まちづくりの理念、めざす将来像を直接確認した",
+      "evidence_role": "current_plan_identity",
+      "id": "tottori-current-plan-period",
+      "review_note": "総合計画の構成（基本構想・基本計画・実施計画）と各層の期間を別period semanticsとして保持した。レビュー済みレコード。",
+      "source_url": "https://www.city.tottori.lg.jp/site/keikakusenryaku/34054.html",
+      "statement": "鳥取市の現行総合計画は第12次鳥取市総合計画（2026年3月策定）であり、基本構想・基本計画・実施計画の3層で構成される。基本構想の計画期間は2026年度～2035年度の10年間、基本計画は2026年度～2030年度の5年間、実施計画は2026年度～2030年度を期間として毎年度見直しを行う。まちづくりの理念は『挑戦・協働・共生・誇り』、めざす将来像は『一人ひとりが自分の力を発揮でき、支え合いながら ともに豊かに暮らせる鳥取市〜オアシスとっとり〜』である。第12次総合計画の重点施策として、鳥取市地方創生アクションプラン（第3期鳥取市創生総合戦略）の施策が位置付けられる。各層の期間を別period semanticsとして保持し、一律の固定期間へ潰さない。Phase 14インベントリのperiod_statusはverified_fixed_periodである。",
+      "title": "第12次鳥取市総合計画の構成（基本構想2026年度～2035年度・基本計画/実施計画2026年度～2030年度）",
+      "value": "第12次鳥取市総合計画は基本構想2026年度～2035年度（10年）／基本計画2026年度～2030年度（5年）／実施計画2026年度～2030年度で毎年度見直し／FY2024決算は旧・第11次計画の期間の決算"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "鳥取市公式『第12次鳥取市総合計画』ページの基本計画の体系（計画推進における基本方針4件・まちづくりの目標4件・政策11件）を直接確認した",
+      "evidence_role": "policy_structure",
+      "id": "tottori-current-policy-structure",
+      "review_note": "基本計画の政策体系（4つのまちづくりの目標・11政策）を政策単位で保持した。政策の下の基本施策・事業単位の対応付けは行わない。レビュー済みレコード。",
+      "source_url": "https://www.city.tottori.lg.jp/site/keikakusenryaku/34054.html",
+      "statement": "基本計画は、計画推進における基本方針4件（協働・連携の推進／スマートシティの推進／効率的な行財政運営の推進／戦略的な自治体経営の推進）のもとに、4つのまちづくりの目標と11の政策を体系付ける。目標1『未来を創る人材を育み、ひとりひとりが活躍するまち』は2政策（政策1 こども／政策2 教育・スポーツ）、目標2『誰もが自分らしく暮らし続けることができる、持続可能な地域共生のまち』は3政策（政策1 福祉／政策2 保健・医療／政策3 人権・共生・協働）、目標3『ひと、もの、ことが行きかい、にぎわいあふれるまち』は4政策（政策1 商工業・農林水産業／政策2 移住定住・関係人口・観光／政策3 文化芸術・文化財／政策4 生活基盤・市街地・中山間地域・交通）、目標4『豊かな自然と調和して、安全・安心に暮らせるまち』は2政策（政策1 防災・防犯／政策2 環境）である。各政策の下の基本施策・事業単位の対応付けは行わない。",
+      "title": "基本計画の政策体系（4つのまちづくりの目標・11政策）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "計画公式ページで実施計画が毎年度見直しであることと、地方創生アクションプランが重点施策と位置付けられることを確認し、Phase 14インベントリのprogress governance入口とあわせて保持した",
+      "evidence_role": "progress_governance",
+      "id": "tottori-progress-governance-framework",
+      "review_note": "進行管理の枠組み（実施計画の毎年度見直しとアクションプランの位置付け）を年度実績へ読み替えず保持した。レビュー済みレコード。",
+      "source_url": "https://www.city.tottori.lg.jp/site/keikakusenryaku/list161-570.html",
+      "statement": "第12次鳥取市総合計画の進行管理は、基本計画で定めた基本施策に基づく実施計画（2026年度～2030年度）を毎年度見直す自治体の枠組みによる。あわせて鳥取市地方創生アクションプラン（第3期鳥取市創生総合戦略）の施策を総合計画の重点施策と位置付け、3つの柱（I 持続的に成長し、稼げる「強い」経済／II 魅力と活力あふれる「豊かな」生活環境／III 誰もが選びたくなる 新しい鳥取・楽しい鳥取）のもとで推進する。自治体の見直し・進捗公表をJichi Insight独自の達成判定へ変換しない。",
+      "title": "計画の進行管理（実施計画の毎年度見直しと地方創生アクションプラン）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "第11次計画の構成・期間は市公式『第11次鳥取市総合計画』ページで確認した。第12次計画の開始は第12次計画公式ページによる",
+      "evidence_role": "plan_transition",
+      "id": "tottori-plan-transition",
+      "review_note": "第11次計画から第12次計画への移行を版の履歴として分離記録した。レビュー済みレコード。",
+      "source_url": "https://www.city.tottori.lg.jp/site/keikakusenryaku/34054.html",
+      "statement": "前計画の第11次鳥取市総合計画（2021年3月策定）は基本構想2021年度～2030年度（10年）・基本計画2021年度～2025年度（5年）・実施計画は基本計画の期間内で3年以内（毎年度見直し）の構成であり、FY2024決算はこの第11次計画の基本計画期間内の決算である。第12次総合計画は2026年度から開始し、第11次基本構想の名目上の終期（2030年度）に先立って置き換わる。移行は版の履歴として分離して記録し、第11次計画期間の決算を第12次計画の実績へ流用しない。",
+      "title": "第11次総合計画から第12次総合計画への移行"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "決算総額は『令和6年度鳥取市歳入歳出決算書』、計画の版関係は第11次・第12次各総合計画の公式ページで確認した。総額レベルの対応付けの不存在は、決算・計画の公表範囲で確認した",
+      "evidence_role": "annual_progress",
+      "fiscal_year": 2024,
+      "id": "tottori-fy2024-settlement-linkage",
+      "review_note": "計画の版が異なり、かつ総額レベルの対応付けがないため接続しないことを明記した。レビュー済みレコード。",
+      "source_url": "https://www.city.tottori.lg.jp/page/20004.html",
+      "statement": "FY2024決算は旧・第11次鳥取市総合計画（基本計画2021年度～2025年度）の期間内の決算であり、現行の第12次総合計画（2026年度開始）とは計画の版が異なる。決算総額（円単位）は一次資料で確認済みであるが、決算総額と第11次計画・第12次計画のいずれの政策体系との総額レベルの対応付けも公式資料にないため、接続はnot_assessableとし、決算値を計画のcurrent actualへ流用しない。なお議案第106号は2025年10月6日の本会議で認定されたことが市議会会議録で確認済みであるが、接続判定は認定結果に依存しない。",
+      "title": "令和6年度決算と総合計画の政策体系の接続"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-16"
+}

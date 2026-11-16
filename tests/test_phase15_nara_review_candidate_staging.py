@@ -225,9 +225,9 @@ def test_nara_progress_review_stays_staging() -> None:
 def test_nara_promotion_is_reflected_in_review_queue() -> None:
     queue = json.loads(QUEUE_PATH.read_text(encoding="utf-8"))
     summary = queue["summary"]
-    assert summary["reviewed_complete_count"] == 48
-    assert summary["pending_record_review_count"] == 19
-    assert summary["next_official_code"] == "312010"
+    assert summary["reviewed_complete_count"] == 49
+    assert summary["pending_record_review_count"] == 18
+    assert summary["next_official_code"] == "322016"
     entry = next(
         item for item in queue["execution_queue"] if item["official_code"] == "292010"
     )

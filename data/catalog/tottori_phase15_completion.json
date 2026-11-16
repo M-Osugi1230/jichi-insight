@@ -1,0 +1,61 @@
+{
+  "id": "tottori-phase15-completion",
+  "phase": 15,
+  "status": "reviewed_complete",
+  "official_code": "312010",
+  "name_ja": "鳥取市",
+  "completed_at": "2026-11-16",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "source_catalog_path": "data/catalog/tottori_phase15_sources.json",
+    "plan_review_path": "data/reviewed/tottori-city/plan_review.json",
+    "policy_structure_path": "data/catalog/tottori_current_policy_structure.json",
+    "progress_review_path": "data/catalog/tottori_current_progress_review_summary.json",
+    "fiscal_records_path": "data/reviewed/tottori-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/tottori-city/evidence_packets.json",
+    "counts": {
+      "basic_goals": 11,
+      "basic_plan_measures": 0,
+      "promoted_implementation_item_actual_records": 0,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "current_plan_period_reviewed": true,
+    "current_plan_policy_structure_reviewed": true,
+    "implementation_plan_layer_reviewed": true,
+    "fiscal_states_and_years_separate": true,
+    "budget_enactment_state_preserved": true,
+    "settlement_linkage_not_assessable_preserved": true,
+    "individual_implementation_items_not_overpromoted": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "boundary": "11政策の下の基本施策・事業・指標の全件列挙は追加depthとし、公式対応が確認できるまで昇格しない。4つのまちづくりの目標・11政策の体系自体は候補に保持するが、政策の下の施策・事業単位の対応付けは行わない。",
+      "id": "current-plan-granular-kpi-and-project-linkage",
+      "status": "deferred_not_required_for_v1_completion"
+    },
+    {
+      "boundary": "FY2026当初予算の金額（108,700,000千円）と骨格予算としての性格、議決経過（議案第6号・2026年3月19日・原案可決）、FY2024決算の総額（円単位）と実質収支（千円精度）、議案第106号の認定結果（2025年10月6日の本会議で認定）は一次資料で確認し候補に反映している（議決・認定の確認は、市議会公式の議決結果資料（PDF）をテキスト取得で読み取ることができなかったため実ブラウザによる補完調査で行った。認定の確認根拠は、『令和7年9月定例会の審議結果』PDFに議案第106号・第107号の行自体が掲載されていないため、市議会会議録である）。予算書・決算書の事項別明細書の款別合計との最終突合と、監査委員の決算審査意見書の内容精査は未実施のまま保持する。",
+      "id": "fiscal-vote-and-certification-verification",
+      "status": "deferred_not_required_for_v1_completion"
+    },
+    {
+      "boundary": "第11次鳥取市総合計画の政策体系・事業・評価の全件列挙は本候補では行わない。第11次計画は基本構想2021年度～2030年度・基本計画2021年度～2025年度であり、第12次計画への移行は版の履歴として分離して保持する。",
+      "id": "plan-transition-version-depth",
+      "status": "deferred_not_required_for_v1_completion"
+    },
+    {
+      "boundary": "鳥取市総合計画・進捗管理・財政等のステージングは政策効果の因果認定や他都市比較可能性を意味しない。進捗管理（自治体の見直しの枠組み）をJichi Insight独自の達成判定へ変換しない。",
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion"
+    }
+  ],
+  "completion_boundary": "鳥取市のPhase 15 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味し、所有者（大杉邑大、単独運用体制）が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが鳥取市公式サイトの一次資料で検証した結論に基づく（所有者本人が一次資料を直接レビューしたものではない）。鳥取市の計画体系（第12次鳥取市総合計画（2026年3月策定）は、基本構想（2026年度～2035年度の10年）・基本計画（2026年度～2030年度の5年）・実施計画（2026年度～2030年度・毎年度見直し）の3層で構成する。まちづくりの理念は『挑戦・協働・共生・誇り』、めざす将来像は『一人ひとりが自分の力を発揮でき、支え合いながら ともに豊かに暮らせる鳥取市〜オアシスとっとり〜』である。基本計画は計画推進における基本方針4件のもとに4つのまちづくりの目標・11政策を体系付け、11政策は公式の計画ページで全件確認し列挙したが、各政策の下の基本施策・事業・指標の全件列挙は行わず、追加depthとして保持する。重点施策として鳥取市地方創生アクションプラン（第3期鳥取市創生総合戦略）の施策が位置付けられる。進行管理は、実施計画を毎年度見直しする自治体の進行管理の枠組みである。各層の期間を別period semanticsとして保持し、period_statusはverified_fixed_periodを保持する）、成立したFY2026一般会計当初予算（108,700,000千円。市長選挙（2026年3月29日執行）を控えた骨格予算であり、議案第6号『令和8年度鳥取市一般会計予算』として令和8年2月定例会で2026年3月19日に原案可決され成立した（賛成多数。市議会公式『令和8年2月定例会の審議結果』の議案第6号の行で確認し、金額欄の108,700,000千円とも一致した）。当初予算額は補正予算（第1号）（議案第70号）の「補正前」額と『令和8年度5月臨時補正予算（案）の概要』の「現計予算額」で確認した。公表精度は千円単位のため、その精度（千円単位）のまま記録し、円単位を合成していない）、FY2024一般会計決算の円単位総額（歳入113,544,636,161円・歳出111,377,983,188円、差引残額2,166,652,973円が『令和6年度鳥取市歳入歳出決算書』の記載と一致することを検算した）を一次資料で確認した。決算の認定である議案第106号は2025年10月6日の本会議で認定されたことを市議会会議録『2025年10月06日：令和7年9月定例会（第8号）本文』日程第1の議長の採決宣言と決算審査特別委員長報告で確認し、認定の事実をそのまま記録した。『令和7年9月定例会の審議結果』PDFには議案第106号・第107号の行自体が掲載されていないため、認定の確認根拠は会議録であり、同PDFの文言で確認したものではない。実質収支額は実質収支に関する調書により2,017,634千円（差引2,166,653千円から翌年度へ繰り越すべき財源149,019千円を差し引いた額）であり、調書の公表精度が千円単位のため千円精度のまま記録し、円単位を合成していない。第11次鳥取市総合計画から第12次計画への移行は版の履歴として分離して保持し、第11次計画期間の実績を現行計画へ流用しない。FY2024は第11次計画（基本計画2021年度～2025年度）の期間内の決算であり現行の第12次計画とは版が異なるうえ、決算総額と政策体系との総額レベルの対応付けは公式資料にないため、接続はnot_assessableとして保持する。11政策の下の基本施策・事業・指標の全件、予算書・決算書の事項別明細書の款別合計との最終突合、監査委員の決算審査意見書の内容（個別の指摘事項等）の精査はdeferred depthである。Jichi Insight独自の政策達成度スコアや他都市とのランキングは作成しない。進捗管理（自治体の進行管理の枠組み）をJichi Insight独自の達成判定へ変換しない。"
+}

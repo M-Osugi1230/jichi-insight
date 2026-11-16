@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-16",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "tottori-city-home",
+      "municipality_key": "tottori-city",
+      "organization": "鳥取市",
+      "category": "municipality_profile",
+      "title": "鳥取市公式サイト",
+      "url": "https://www.city.tottori.lg.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "鳥取市の公式自治体サイト。"
+    },
+    {
+      "id": "tottori-budget-2026",
+      "municipality_key": "tottori-city",
+      "organization": "鳥取市",
+      "category": "budget",
+      "title": "令和8年度当初予算(案)",
+      "url": "https://www.city.tottori.lg.jp/page/30417.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算108,700,000千円（千円精度）のEvidence。市長選挙（2026年3月29日執行）を控えた骨格予算であり、議案第6号『令和8年度鳥取市一般会計予算』は令和8年2月定例会で2026年3月19日に原案可決され成立した（賛成多数。市議会公式『令和8年2月定例会の審議結果』で確認）。当初予算額は一般会計補正予算（第1号）（議案第70号）の「補正前」額と『令和8年度5月臨時補正予算（案）の概要』の「現計予算額」で確認した。千円単位の公表値のまま記録し、円単位を合成しない。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "tottori-settlement-2024",
+      "municipality_key": "tottori-city",
+      "organization": "鳥取市",
+      "category": "settlement",
+      "title": "鳥取市の決算推移(平成27年度～令和6年度)",
+      "url": "https://www.city.tottori.lg.jp/page/20004.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入113,544,636,161円・歳出111,377,983,188円を含む公式決算資料（『令和6年度鳥取市歳入歳出決算書』で確認し、差引残額2,166,652,973円が検算一致）。実質収支は実質収支に関する調書（千円単位）により2,017,634千円（翌年度へ繰り越すべき財源149,019千円。調書の千円精度のまま記録し、円単位を合成しない）。決算の認定は議案第106号『令和6年度鳥取市歳入歳出各会計決算認定について』として2025年10月6日の本会議で認定された（市議会会議録『2025年10月06日：令和7年9月定例会（第8号）本文』日程第1で確認。『令和7年9月定例会の審議結果』PDFには議案第106号・第107号の行自体が掲載されていないため、認定の確認根拠は会議録である）。決算書（歳入歳出決算事項別明細書）の款別合計との突合と監査委員の決算審査意見書の内容（個別の指摘事項等）の精査は未実施。"
+    }
+  ]
+}
