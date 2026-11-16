@@ -1,0 +1,62 @@
+{
+  "id": "phase15-ichinomiya-plan-review",
+  "name_ja": "一宮市",
+  "next_action": "Promote the individual implementation-plan projects under the 35 policies and the per-policy outcome-indicator and citizen-perception indicator values, only when official sources with stable record-level locators have been reviewed; complete the final cross-check against the budget book and the settlement book (事項別明細書) at section level; confirm the exact wording of the FY2026 budget vote from the March 2026 regular session's final-day minutes, and review the audit commissioners' settlement review opinion as a separate evidence step; record the Eighth Comprehensive Plan's framework only as a separate version once it is adopted, and never retroactively connect it to the current plan period's results. Keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "official_code": "232033",
+  "quality_boundary": "This package reviews the current plan identity and period (the Seventh Ichinomiya City Comprehensive Plan: a three-layer basic concept (FY2018-FY2027) / basic plan / implementation plan structure, with the latter basic plan (FY2023-FY2027) as the current plan; future city image 『木曽の清流に映え、心ふれあう躍動都市 一宮』; five plans and two managements holding 35 policies in total, all enumerated), the progress-governance layer (administrative-evaluation PDCA: 16-grade policy evaluation combining outcome indicators and citizen perception indicators, plus project evaluation), the enacted FY2026 initial budget at the published sen-yen (thousand-yen) precision (mayoral bill No. 3, passed on 2026-03-23 at the March 2026 regular session; the city's published result wording is 'passed' (可決), so the exact 'passed as proposed' wording is not asserted; yen-precision amounts are not synthesized), and the FY2024 settlement at yen precision as published, without collapsing proposed, enacted, supplementary, or settlement states. The FY2024 settlement certification bill (certification bill No. 4) was certified on 2025-12-01 at the December 2025 regular session. FY2024 is a settlement inside the latter basic plan period (FY2023-FY2027), the same plan version, but no official total-level mapping from settlement totals to the plan's policies or indicators exists, so the linkage stays not_assessable. The transition to the Eighth Comprehensive Plan (under preparation) is kept only as a version chronology record.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "一宮市公式Webサイト『第7次一宮市総合計画（2018年度開始）』ページ（現行計画の公式入口。Phase 14インベントリで確認）と、同ページからリンクされる公式『第7次一宮市総合計画 後期基本計画』本編（計画の構成・期間・都市将来像・プラン／マネジメントの体系）で直接確認",
+      "evidence_role": "current_plan_identity",
+      "id": "ichinomiya-current-plan-period",
+      "review_note": "基本構想・基本計画・実施計画の3層構成と後期基本計画の期間を計画本編で確認したレビュー済みレコード。",
+      "source_url": "https://www.city.ichinomiya.aichi.jp/sougouseisaku/seisaku/1044355/1000458/1022818/index.html",
+      "statement": "一宮市の総合計画は第7次一宮市総合計画であり、2018年度〜2027年度の10年間を計画期間とし、基本構想・基本計画・実施計画の3層で構成する。基本構想は都市将来像『木曽の清流に映え、心ふれあう躍動都市 一宮』のもと、「5つのプラン」（プラン1 健やかにいきる／プラン2 快適にくらす／プラン3 安全・安心を高める／プラン4 活力を生みだす／プラン5 未来の人財を育てる）と「2つのマネジメント」（マネジメント1 人を呼び込む／マネジメント2 持続可能で未来につなげる）を掲げる。基本計画は前期（2018年度〜2022年度）と後期（2023年度〜2027年度、令和5年3月策定）に分かれ、現行は後期基本計画である。実施計画は向こう3か年度のローリングで毎年度策定するが、最終版は計画終期に合わせた2026年度〜2027年度の2か年度版である。Phase 14インベントリの記録（第7次一宮市総合計画 後期基本計画 2023年度〜2027年度）とも一致する。",
+      "title": "第7次一宮市総合計画の構成と後期基本計画の計画期間",
+      "value": "2023年度～2027年度"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "公式『2025年度行政評価結果報告書』の「施策評価の結果一覧表」（プラン1〜5・マネジメント1・2の全35施策の見出し）で全件直接確認（グループ別件数の合計35で検算一致）",
+      "evidence_role": "policy_structure",
+      "id": "ichinomiya-current-policy-structure",
+      "review_note": "公式の行政評価結果報告書で施策体系を全件確認したレビュー済みレコード。7グループ35施策の全件はpolicy_structureに列挙する。",
+      "source_url": "https://www.city.ichinomiya.aichi.jp/sougouseisaku/seisaku/1044355/1000248/",
+      "statement": "後期基本計画の施策体系は、基本構想の5つのプランと2つのマネジメントに対応する全35施策で構成する（プラン1 健やかにいきる5施策／プラン2 快適にくらす8施策／プラン3 安全・安心を高める5施策／プラン4 活力を生みだす5施策／プラン5 未来の人財を育てる5施策／マネジメント1 人を呼び込む2施策／マネジメント2 持続可能で未来につなげる5施策。合計35で検算一致）。各施策には成果指標1〜3個と市民の体感指標1個が設定される。35施策の全件はpolicy_structureに列挙する。",
+      "title": "後期基本計画の5つのプラン・2つのマネジメントと全35施策"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "一宮市公式Webサイト『行政評価』ページ（進行管理の公式入口。Phase 14インベントリで確認）および公式『2025年度行政評価結果報告書』（施策評価の16段階の方法・対象事業484事業の記載）で確認",
+      "evidence_role": "progress_governance",
+      "id": "ichinomiya-progress-governance-framework",
+      "review_note": "進行管理の枠組み（行政評価によるPDCA・16段階の施策評価・事業評価）を公式資料で直接確認したレビュー済みレコード。指標の個別値そのものは本パッケージでは扱わない。",
+      "source_url": "https://www.city.ichinomiya.aichi.jp/sougouseisaku/seisaku/1044355/1000248/",
+      "statement": "第7次一宮市総合計画の進行管理は、総合計画の進捗管理として実施する行政評価によるPDCAである。全35施策について、成果指標（基準値・現状値・目標値からA〜Dの4段階）と市民の体感指標（長期的・短期的推移からa〜dの4段階）を組み合わせた16段階（Aa〜Dd）の施策評価と、関連事業の事業評価（必要性・有効性・効率性）を行う。2025年度行政評価の対象事業は2024年度実施計画掲載の484事業（延べ数）である。この進行管理は自治体による自己評価の枠組みであり、Jichi Insight独自の達成判定へ変換しない。",
+      "title": "行政評価によるPDCAと16段階の施策評価・事業評価"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "公式『第7次一宮市総合計画（2018年度開始）』ページと実施計画の報道発表（令和8年3月25日・2026〜2027年度実施計画）およびPhase 14インベントリのavailability_boundary（第8次総合計画は策定過程）で確認",
+      "evidence_role": "plan_transition",
+      "id": "ichinomiya-plan-transition",
+      "review_note": "次期計画への移行をversionの履歴として記録したレビュー済みレコード。",
+      "source_url": "https://www.city.ichinomiya.aichi.jp/shisei/houdouhappyo/1068631/1069098/1074917.html",
+      "statement": "第7次一宮市総合計画は2027年度が最終年度であり、第8次一宮市総合計画は策定中である。現行計画（後期基本計画2023年度〜2027年度と最終実施計画2026年度〜2027年度）と次期計画はversionを分けて保持し、策定中の第8次計画の内容を現行計画期間の実績へ遡及接続しない。実施計画は通常の3か年度ローリングから、計画終期に合わせた2か年度版（2026年度〜2027年度）へ移行した最終版である。FY2024決算は後期基本計画期間の決算として保持する。",
+      "title": "第7次総合計画から第8次総合計画への移行（計画移行）"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "FY2024決算の公式入口はPhase 14インベントリの決算資料（歳入歳出決算書）。決算総額と後期基本計画の施策との対応付けは公式資料の総額レベルでは示されていない",
+      "evidence_role": "annual_progress",
+      "id": "ichinomiya-fy2024-settlement-linkage",
+      "review_note": "計画versionは同一だが、決算総額と施策・指標との総額レベルの対応付けが公式資料にないため、接続を推測で記録しない明示的な未判定レコード。決算と施策の対応付けは人間レビュー工程の作業。",
+      "source_url": "https://www.city.ichinomiya.aichi.jp/kaikei/kaikei/1044384/1000243/1012315/1022247/1068163.html",
+      "statement": "FY2024決算値と後期基本計画の施策・指標との接続は未判定（not_assessable）。FY2024は第7次一宮市総合計画の後期基本計画（2023年度〜2027年度）の2年目の決算であり計画versionは同一だが、決算総額は会計別の集計値であり、施策・成果指標との総額レベルの対応付けは公式資料に示されていない。行政評価は施策・事業単位の評価routeであり、決算総額との対応付けは行われていない。FY2024決算の精密値そのものは決算書で確認済みであるが、決算と施策の対応付けは人間レビュー工程の作業とする。",
+      "title": "令和6年度決算と後期基本計画の施策・指標の接続"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-16"
+}
