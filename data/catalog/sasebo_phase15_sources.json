@@ -1,0 +1,46 @@
+{
+  "id": "sasebo-phase15-sources",
+  "name_ja": "佐世保市",
+  "official_code": "422029",
+  "phase": 15,
+  "quality_boundary": "Current plan identity kept as published (the Seventh Sasebo City Comprehensive Plan: the basic concept (FY2020-FY2027, eight years), the basic plan (first period FY2020-FY2023; latter period FY2024-FY2027, currently in force, in mayoral-term-linked four-year periods) and implementation plans of up to four years, with the future image 『海風薫り 世界へはばたく \"キラっ都\" SASEBO』, the four basic principles and the four field-level city images; the field-level structure is kept and the full enumeration of the latter basic plan's policies and measures with their social indicators and KPIs stays deferred depth; the period status stays verified_fixed_period; the transition from the first-period basic plan to the latter basic plan is kept separate as a plan transition and first-period results are never read forward into the latter period), progress governance (PDCA-cycle progress management of the numerical targets, with the comprehensive strategy included in the plan — kept as the municipality's own progress-management framework), budget enactment kept as printed in the council's official session results (bill No. 18; the result wording is 原案可決 (adopted as proposed), kept verbatim; vote date 2026-03-23) and the amount kept at the published sen-yen precision (133,877,303 thousand yen, identified by reverse calculation from the budget explanation document for supplementary budget No. 1; direct confirmation in the original budget explanation document itself has not been performed and the amount is never expanded into synthetic finer amounts), and settlement totals kept at the yen precision printed in the audit committee's settlement review opinion (revenue 130,949,847,225 yen / expenditure 127,473,906,421 yen; the formal balance of 3,475,940,804 yen checks out against the printed formal balance; the real balance of 2,738,920,535 yen is kept at the printed yen precision; the settlement certification, bill No. 100, was certified on 2025-12-04 at the December 2025 regular session after continued review at the September 2025 session, confirmed by a live-browser supplementary investigation of the council's official session results; ordinary-account aggregate figures are not used, because their aggregation scope differs from the general account) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "reviewed_at": "2026-11-17",
+  "sources": [
+    {
+      "evidence_location": "第7次総合計画の公式ページが案内する市の公式資料『第7次佐世保市総合計画の概要について』（総合計画審議会資料）と『第7次佐世保市総合計画（後期基本計画）について』で、基本構想（2020年度〜2027年度・8年間）、基本計画（前期2020年度〜2023年度／後期2024年度〜2027年度。市長任期と連動した1期4年間）、実施計画（4年以内）と進捗管理の構成、将来像『海風薫り 世界へはばたく \"キラっ都\" SASEBO』、基本理念（挑戦・創造・多様性・共生）、4分野の都市像、基本計画の章・政策構成を直接確認した",
+      "evidence_role": "comprehensive_plan",
+      "format": "html",
+      "id": "sasebo-seventh-latter-plan",
+      "official_url": "https://www.city.sasebo.lg.jp/kikaku/seisak/dai7zisougoukeikaku.html",
+      "title": "第7次佐世保市総合計画",
+      "use_boundary": "第7次総合計画（後期基本計画）をcurrent versionとして保持し、前期基本計画期間の実績をcurrent actualへ流用しない"
+    },
+    {
+      "evidence_location": "Phase 14出典目録におけるFY2026予算編成過程の公式入口。令和8年度予算は6つの基本方針を定めて編成されたことが広報させぼ2026年5月号で確認できる。政策推進枠を含む予算編成過程は、配分過程を政策成果へ読み替えない範囲で実施・財政運営のEvidenceとして保持する",
+      "evidence_role": "implementation_and_budget_governance",
+      "format": "html",
+      "id": "sasebo-budget-policy-2026",
+      "official_url": "https://www.city.sasebo.lg.jp/zaimu/zaisei/hensei_housin.html",
+      "title": "予算編成方針及び予算編成過程の公表",
+      "use_boundary": "予算編成過程（政策推進枠を含む）を実施・財政運営Evidenceとして保持し、配分過程を政策成果へ読み替えない"
+    },
+    {
+      "evidence_location": "予算説明資料の公式ページが案内する財務部『令和8年度佐世保市予算説明資料（第1号補正）』で、一般会計の5月補正後予算額133,907,789千円と第1号補正額30,486千円を確認し、差引により当初予算額133,877,303千円を特定した（当初予算説明資料そのものの直接確認は未実施）。議決結果は市議会公式『令和8年3月定例会審議結果』で第18号議案『令和8年度佐世保市一般会計予算』の「原案可決」（2026年3月23日）を直接確認した",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "sasebo-budget-2026",
+      "official_url": "https://www.city.sasebo.lg.jp/zaimu/zaisei/yosansetsumei.html",
+      "title": "予算説明資料",
+      "use_boundary": "FY2026当初予算は補正予算・決算と別stateで保持する。金額は千円単位の公表値であり、円単位を合成しない。当初額は第1号補正予算説明資料からの逆算による特定であり、その旨を保持する"
+    },
+    {
+      "evidence_location": "Phase 14出典目録におけるFY2024決算の公式入口。一般会計の決算額は佐世保市監査委員の決算審査意見書（令和6年度佐世保市一般会計・特別会計決算及び基金運用状況並びに健全化判断比率等の審査意見書、7監第141号、令和7年9月2日）で歳入130,949,847,225円・歳出127,473,906,421円（いずれも円単位）を直接確認し、差引（形式収支）3,475,940,804円が検算一致すること、実質収支2,738,920,535円を確認した。決算の議案（第100号議案）は市議会公式『令和7年9月定例会審議結果』で継続審査（令和7年9月26日）を確認した後、実ブラウザによる補完調査で、市議会公式『令和7年12月定例会審議結果』により第100号議案の結果欄「認定 R7.12.4」を確認し、議決日2025年12月4日を特定した",
+      "evidence_role": "settlement",
+      "format": "html",
+      "id": "sasebo-settlement-2024",
+      "official_url": "https://www.city.sasebo.lg.jp/zaimu/zaisei/wakariyasuikessansyo.html",
+      "title": "わかりやすい決算書",
+      "use_boundary": "FY2024決算は予算・補正と別stateで保持する。決算額は円単位で印字された値のまま記録する。財政状況資料集等の普通会計ベースの集計値と一般会計値を混同しない。決算の認定結果（第100号議案・令和7年12月定例会・2025年12月4日認定）は実ブラウザによる補完調査で確認した公式審議結果のまま記録する"
+    }
+  ]
+}

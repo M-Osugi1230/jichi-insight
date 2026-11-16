@@ -52,9 +52,9 @@ def test_takamatsu_review_package_is_the_fifty_seventh_completion():
     }
 
     queue = load(QUEUE)
-    assert queue["summary"]["reviewed_complete_count"] == 62
-    assert queue["summary"]["pending_record_review_count"] == 5
-    assert queue["summary"]["next_official_code"] == "422029"
+    assert queue["summary"]["reviewed_complete_count"] == 63
+    assert queue["summary"]["pending_record_review_count"] == 4
+    assert queue["summary"]["next_official_code"] == "442011"
     entry = next(
         row for row in queue["execution_queue"] if row["official_code"] == "372013"
     )

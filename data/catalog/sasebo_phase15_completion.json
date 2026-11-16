@@ -1,0 +1,61 @@
+{
+  "completed_at": "2026-11-17",
+  "completion_boundary": "佐世保市のPhase 15 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味し、所有者（大杉邑大、単独運用体制）が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが佐世保市公式サイトの一次資料で検証した結論に基づく（所有者本人が一次資料を直接レビューしたものではない）。佐世保市の計画体系（第7次佐世保市総合計画は、基本構想（2020年度〜2027年度・8年間）、基本計画（市長任期と連動した1期4年間。前期2020年度〜2023年度・後期2024年度〜2027年度。現行は後期基本計画）、実施計画（4年以内）で構成される。基本構想は将来像『海風薫り 世界へはばたく \"キラっ都\" SASEBO』と基本理念（挑戦・創造・多様性・共生）を掲げ、4分野の都市像の下に基本計画の政策・施策が置かれ、政策ごとに社会指標、施策ごとにKPIを設定する。分野レベルの体系は保持したが、政策・施策ごとの社会指標・KPIの全件列挙は行わず、追加depthとして保持する。進行管理は、実施計画とPDCAサイクルによる進行管理の枠組みによる。各層の期間を別period semanticsとして保持し、period_statusはPhase 14インベントリどおりverified_fixed_periodを保持する。前期基本計画から後期基本計画への移行は移行記録として分離して保持する）、成立したFY2026一般会計当初予算（133,877,303千円。第18号議案『令和8年度佐世保市一般会計予算』の議決結果は、市議会公式『令和8年3月定例会審議結果』で「原案可決」と直接確認し、その文言のまま記録した。議決日は2026年3月23日。金額は財務部『令和8年度佐世保市予算説明資料（第1号補正）』の会計別予算の内容で一般会計の5月補正後予算額133,907,789千円と第1号補正額30,486千円を確認し、その差引により特定した逆算による特定であり、当初予算説明資料そのものの直接確認は未実施である。この旨は残存事項として保持する。公表精度は千円単位のため、その精度（千円単位）のまま記録し、円単位を合成していない）、FY2024一般会計決算（歳入130,949,847,225円・歳出127,473,906,421円、歳入歳出差引額（形式収支）3,475,940,804円が監査委員の決算審査意見書の印字値と検算一致することを確認した）を一次資料で確認した。決算額は決算審査意見書に円単位で印字された値のまま記録する。決算の認定である第100号議案は、令和7年9月定例会で継続審査（2025年9月26日）となった後、令和7年12月定例会で認定されたことを市議会公式『令和7年12月定例会審議結果』の第100号議案の行（結果欄「認定 R7.12.4」）で確認し、認定の事実をそのまま記録した（議決日は2025年12月4日。認定の確認は実ブラウザによる補完調査による）。実質収支額は2,738,920,535円（決算審査意見書の決算収支表に円単位で印字された値のまま記録する）である。財政状況資料集等の普通会計ベースの集計値は一般会計とは集計範囲が異なるため使用していない。FY2024は後期基本計画（2024年度〜2027年度）の初年度の決算で現行基本計画の期間内であるが、決算総額と後期基本計画の施策体系との総額レベルの対応付けは公式資料に示されておらず、接続はnot_assessableのまま保持する。当初予算説明資料そのものにおける当初予算額の直接確認、予算・決算の事項別明細書の款別合計との最終突合、決算書の実質収支に関する調書そのものの値との突合、基本構想期間終了後の次期（第8次）計画の策定状況の確認は未実施であり、残存事項として保持する。",
+  "completion_depth": "declared_review_package_v1",
+  "deferred_depth": [
+    {
+      "boundary": "後期基本計画の政策・施策ごとの社会指標・KPIの全件列挙と、実施計画の主要事業・KPIの個別進捗との対応付けは追加depthとし、公式対応が確認できるまで昇格しない。分野レベルの体系自体は候補に保持するが、政策・事業単位の対応付けは行わない。後期基本計画における政策再編（経済政策・文化スポーツ政策・基地政策・上下水道政策等）の確定した体系も本候補では列挙しない。",
+      "id": "current-plan-granular-kpi-and-project-linkage",
+      "status": "deferred_not_required_for_v1_completion"
+    },
+    {
+      "boundary": "FY2026当初予算の議決結果の文言（原案可決・議決日2026年3月23日）は一次資料で確認し候補に反映している。当初予算額133,877,303千円は第1号補正予算説明資料（財務部）からの逆算による特定であり、当初予算説明資料そのものの直接確認は未実施のまま保持する。FY2024決算の歳入・歳出・形式収支・実質収支は決算審査意見書の円単位の印字値で確認して候補に反映している。一方、予算・決算の事項別明細書の款別合計との最終突合は未実施のまま保持する。",
+      "id": "fiscal-detail-reconciliation",
+      "status": "deferred_not_required_for_v1_completion"
+    },
+    {
+      "boundary": "前期基本計画の政策・施策体系の全件列挙と前期期間の評価結果は本候補では保持しない。前期基本計画と後期基本計画の期間と版の分離のみを保持し、一方を他方で上書きしない。基本構想期間終了後の次期（第8次）計画の策定状況も未確認として保持する。",
+      "id": "plan-transition-version-depth",
+      "status": "deferred_not_required_for_v1_completion"
+    },
+    {
+      "boundary": "佐世保市の総合計画・進捗管理・財政等のステージングは政策効果の因果認定や他都市比較可能性を意味しない。進捗管理（自治体のPDCAによる進行管理の仕組み）をJichi Insight独自の達成判定へ変換しない。",
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion"
+    }
+  ],
+  "id": "sasebo-phase15-completion",
+  "name_ja": "佐世保市",
+  "official_code": "422029",
+  "phase": 15,
+  "quality_gate": {
+    "budget_enactment_state_preserved": true,
+    "current_plan_period_reviewed": true,
+    "current_plan_policy_structure_reviewed": true,
+    "declared_package_schema_validated": true,
+    "fiscal_states_and_years_separate": true,
+    "implementation_plan_layer_reviewed": true,
+    "individual_implementation_items_not_overpromoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "no_independent_policy_achievement_promoted": true,
+    "official_source_lineage_preserved": true,
+    "regression_suite_required_before_merge": true,
+    "settlement_linkage_not_assessable_preserved": true
+  },
+  "review_package": {
+    "counts": {
+      "basic_goals": 4,
+      "basic_plan_measures": 0,
+      "fiscal_top_line_records": 3,
+      "promoted_implementation_item_actual_records": 0
+    },
+    "fiscal_evidence_path": "data/reviewed/sasebo-city/evidence_packets.json",
+    "fiscal_records_path": "data/reviewed/sasebo-city/fiscal_records.json",
+    "plan_review_path": "data/reviewed/sasebo-city/plan_review.json",
+    "policy_structure_path": "data/catalog/sasebo_current_policy_structure.json",
+    "progress_review_path": "data/catalog/sasebo_current_progress_review_summary.json",
+    "source_catalog_path": "data/catalog/sasebo_phase15_sources.json"
+  },
+  "status": "reviewed_complete"
+}
