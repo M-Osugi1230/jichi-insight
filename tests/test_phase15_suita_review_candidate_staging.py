@@ -15,16 +15,22 @@ def candidate() -> dict:
     return load_json(CANDIDATE_PATH)
 
 
-def test_suita_candidate_is_prepared_but_not_reviewed_or_publishable() -> None:
+def test_suita_candidate_is_prepared_with_delegated_review_approved() -> None:
     payload = candidate()
     assert payload["official_code"] == "272051"
     assert payload["name_ja"] == "吹田市"
     assert payload["status"] == "review_candidate"
     assert payload["package_state"] == "prepared"
-    assert payload["human_review"]["status"] == "pending"
     assert payload["human_review"]["required"] is True
-    assert payload["human_review"]["reviewed_at"] is None
-    assert payload["human_review"]["reviewer_note"] is None
+    assert payload["human_review"]["status"] == "approved"
+    assert payload["human_review"]["reviewed_at"] == "2026-11-16"
+    assert payload["human_review"]["reviewer_note"]
+    # The owner did not review the primary sources personally: on
+    # 2026-11-15 the owner explicitly delegated the review to Muse in
+    # chat, and the note must record that delegation rather than
+    # claiming an owner review.
+    assert "委任" in payload["human_review"]["reviewer_note"]
+    assert "レビューはあなたがやってください" in payload["human_review"]["reviewer_note"]
     assert payload["publication"]["eligible"] is False
     assert payload["source_inventory_path"] == ("data/indexed/suita-city/source_inventory.json")
 
@@ -198,12 +204,15 @@ def test_suita_candidate_progress_review_stays_staging() -> None:
     assert framework["title"] == "PDCAサイクルによる進行管理（行政評価）"
 
 
-def test_suita_candidate_does_not_change_review_queue() -> None:
+def test_suita_promotion_is_reflected_in_review_queue() -> None:
     queue = load_json(QUEUE_PATH)
     assert queue["summary"]["target_count"] == 67
-    assert queue["summary"]["reviewed_complete_count"] == 36
-    assert queue["summary"]["pending_record_review_count"] == 31
-    assert queue["summary"]["next_official_code"] == "272051"
+    assert queue["summary"]["reviewed_complete_count"] == 37
+    assert queue["summary"]["pending_record_review_count"] == 30
+    assert queue["summary"]["next_official_code"] == "272078"
     items = {item["official_code"]: item for item in queue["execution_queue"]}
     assert items["272051"]["name_ja"] == "吹田市"
-    assert items["272051"]["status"] == "pending_record_review"
+    assert items["272051"]["status"] == "reviewed_complete"
+    assert items["272051"]["completion_path"] == (
+        "data/catalog/suita_phase15_completion.json"
+    )

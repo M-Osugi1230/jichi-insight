@@ -1,0 +1,55 @@
+{
+  "id": "suita-phase15-sources",
+  "name_ja": "吹田市",
+  "official_code": "272051",
+  "phase": 15,
+  "quality_boundary": "Current plan identity kept as published (the Fourth Suita City Comprehensive Plan in a three-layer basic-concept / basic-plan / implementation-plan structure; the basic concept and the basic plan both run FY2019-FY2028 and the current basic plan is the revised basic plan (FY2024-FY2028) adopted as a mid-term revision in March 2024, with eight outlines holding 19 policies and 52 measures, all enumerated; the original basic plan is kept only as a separate version; the implementation plan is a five-year rolling plan whose current edition (FY2026-FY2030) extends beyond the comprehensive plan's final year (FY2028), a period gap kept as structure), progress governance (the PDCA cycle through administrative evaluation, with each fiscal year's progress published on the official progress page), budget enactment confirmed on the council's official voting-results and vote-split list (bill 議案第19号, passed as proposed; the voting date of 2026-03-24 was identified from the council's official session schedule and has not been finally confirmed in the plenary minutes) with the amount kept at the published sen-yen precision and never expanded into synthetic yen, and settlement totals kept at the published yen precision from the official report (the settlement certification bill 認定第1号 was certified on 2025-12-22 at the November 2025 regular session after continued review, the voting date likewise identified from the official session schedule and not finally confirmed in the plenary minutes; the real balance of 259,882 thousand yen is kept at sen-yen precision as published in that report) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "reviewed_at": "2026-11-16",
+  "sources": [
+    {
+      "evidence_location": "吹田市公式Webサイト『吹田市第4次総合計画』ページは現行計画の公式入口（Phase 14インベントリで確認）。基本構想Web版（計画の構成・計画の期間・将来像・施策の大綱）、および令和6年3月策定の公式『第4次総合計画基本計画改訂版』本編・概要版（体系図を含む）へのリンクを含む",
+      "evidence_role": "comprehensive_plan",
+      "format": "html",
+      "id": "suita-fourth-plan",
+      "official_url": "https://www.city.suita.osaka.jp/shisei/1018811/1018812/1018813/index.html",
+      "title": "吹田市第4次総合計画",
+      "use_boundary": "現行計画は第4次吹田市総合計画（基本構想・基本計画とも2019年度～2028年度）として保持し、基本計画改訂版（2024年度～2028年度）と改訂前の基本計画のversionをcurrentへ上書きしない"
+    },
+    {
+      "evidence_location": "吹田市公式Webサイト『実施計画 令和8年度（2026年度）～令和12年度（2030年度）』ページは実施計画の公式入口（Phase 14インベントリで確認）。同ページ掲載の公式『実施計画の概要』（計画期間2026年度～2030年度・ローリング方式・施策の大綱ごとの構成）と大綱別の事業計画へのリンクを含む",
+      "evidence_role": "implementation_plan",
+      "format": "html",
+      "id": "suita-implementation-2026-2030",
+      "official_url": "https://www.city.suita.osaka.jp/shisei/1018811/1018821/1018822/1041855.html",
+      "title": "実施計画 令和8年度（2026年度）～令和12年度（2030年度）",
+      "use_boundary": "5年ローリング実施計画が総合計画の終期（2028年度）を越えて2030年度までを示す構造をそのまま保持し、2029年度～2030年度を現行総合計画期間と誤認しない。また、実施計画の大綱・政策・施策別事業費は計画値であり、決算総額と同一視しない"
+    },
+    {
+      "evidence_location": "吹田市公式Webサイト『吹田市第4次総合計画の進捗状況』ページは進行管理の公式入口（Phase 14インベントリで確認）。令和元年度から令和6年度までの各年度進捗状況（令和5年度進捗状況以降は基本計画改訂版に基づく）へのリンクを含む",
+      "evidence_role": "progress_governance",
+      "format": "html",
+      "id": "suita-progress",
+      "official_url": "https://www.city.suita.osaka.jp/shisei/1018811/1018812/1018813/1008520.html",
+      "title": "吹田市第4次総合計画の進捗状況",
+      "use_boundary": "進捗状況は自治体の進行管理routeとして保持し、source-reportedな評価をJichi Insight独自の達成率へ変換しない"
+    },
+    {
+      "evidence_location": "吹田市公式Webサイト『令和8年度当初予算（歳入・歳出）の状況』ページはFY2026当初予算の公式入口（Phase 14インベントリで確認）。同ページ掲載の公式『令和8年度(2026年度)一般会計予算及び予算説明書』（議案第19号）・『令和8年度当初予算総括表』へのリンクを含む",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "suita-budget-2026",
+      "official_url": "https://www.city.suita.osaka.jp/shisei/1018870/1018873/1018875/1041852.html",
+      "title": "令和8年度当初予算",
+      "use_boundary": "FY2026当初予算は成立予算（議案第19号・令和8年3月24日原案可決）として保持し、補正予算と別stateで扱う"
+    },
+    {
+      "evidence_location": "吹田市公式Webサイト『令和6年度の決算状況』ページは決算の公式入口（Phase 14インベントリで確認）。FY2024の歳入・歳出の円単位総額は同ページ掲載の公式報告書『令和6年度吹田市一般会計、特別会計歳入歳出決算に係る主要な施策の成果および基金に関する報告書』の款別歳入決算額表・款別歳出決算額表で確認し、実質収支は同報告書の一般会計決算の収支の記載で確認した",
+      "evidence_role": "settlement",
+      "format": "html",
+      "id": "suita-settlement-2024",
+      "official_url": "https://www.city.suita.osaka.jp/shisei/1018870/1018876/1040442.html",
+      "title": "令和6年度決算",
+      "use_boundary": "FY2024決算は第4次総合計画基本計画改訂版の初年度の決算として保持し、決算総額を計画の政策・施策の実績へ流用しない。認定議案（認定第1号）は令和7年12月22日に認定されたものとして保持する"
+    }
+  ]
+}

@@ -536,13 +536,25 @@ Declared v1 package:
 
 Deferred depth includes the individual projects under the 16 measures, the per-measure outcome indicator values, the leading project's project breakdown, cross-checks against the budget explanation book and the settlement book （事項別明細書） at section level, the content of the mayor's measures in response to the non-certification (Local Autonomy Act Article 233(7)) and of any report to the council, the first basic plan's framework itself, the next comprehensive plan, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Thirty-seventh completion — Suita
+
+吹田市を37番目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 第4次吹田市総合計画 — in a three-layer structure of basic concept （基本構想）, basic plan （基本計画） and implementation plan （実施計画）. The basic concept and the basic plan both run FY2019–FY2028; the basic concept shows the future image in its closing passage 『だれもが安心してすこやかで快適に暮らし続けられるまち』 (no fixed-form vision title exists). The basic plan was revised at a mid-term review in March 2024 into the current revised basic plan (FY2024–FY2028, with the second-phase Machi-Hito-Shigoto creation strategy bound in), which sets eight outlines （大綱） holding 19 policies and 52 measures (all 52 are enumerated); cross-field perspectives （取組の視点） printed on the framework chart are kept outside the measure count; the implementation plan is a five-year rolling plan and the current one (FY2026–FY2030) extends beyond the comprehensive plan's final year (FY2028), a period gap kept as structure; progress is managed through a PDCA cycle (administrative evaluation （行政評価） using policy indicators and a citizen-awareness survey held basically every four years, with each fiscal year's progress published on the official progress page) — the municipality's own progress-management framework. The succession from the original basic plan to the revised basic plan is kept only as version chronology records, and the status of the next (fifth) comprehensive plan after the fourth plan period (ending FY2028) is left unconfirmed
+- FY2026 general-account initial budget: 181,996,567 thousand yen (enacted; bill 議案第19号 『令和8年度吹田市一般会計予算』, submitted by Mayor 後藤圭二 on 2026-02-18 and passed as proposed （原案可決） at the February 2026 regular session per the council's official voting-results and vote-split list (『令和8年(2026年)2月定例会議決結果・賛否一覧表』, 23 to 9), whose published wording states 原案可決）. The voting date (2026-03-24) was identified from the council's official session schedule — the final day's plenary was the only one holding debate and voting — and has not been finally confirmed in the plenary minutes. The amount is published at sen-yen (thousand-yen) precision, so it is kept at that precision and yen-precision amounts are not synthesized
+- FY2024 general-account settlement at yen precision as published: revenue 179,335,489,298 yen / expenditure 178,490,836,452 yen (the balance of 844,652,846 yen is consistent with the formal balance of 844,653 thousand yen published in the official report; the real balance is 259,882 thousand yen per that report, kept at sen-yen precision because the report is published in thousand yen; the report also records a 1,900,000 thousand yen transfer from the fiscal adjustment fund to keep the real balance in surplus). The settlement certification bill, bill 認定第1号 『令和6年度吹田市一般会計歳入歳出決算認定について』, was submitted to the September 2025 regular session, referred to the settlement standing committee, went through continued review, and was certified at the November 2025 regular session per the council's official voting-results and vote-split list (24 to 9); the voting date (2025-12-22) was likewise identified from the council's official session schedule and has not been finally confirmed in the plenary minutes. FY2024 is the first year of the revised basic plan, so the plan version is the same as the current plan, but no official total-level mapping from settlement totals to the plan's 19 policies or 52 measures exists, so the totals are not linked to the plan's policies or measures and the linkage stays not_assessable
+
+Deferred depth includes the individual projects under the 52 measures, the per-measure policy indicator values, the citizen-awareness indicator values, final confirmation of both voting dates in the plenary minutes, cross-checks against the budget book and the settlement book （事項別明細書） at section level, the content of the audit commissioners' settlement review opinion, the original basic plan's framework itself, the next comprehensive plan, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 36 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市
+- Reviewed complete: 37 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市
 - Review in progress: 0
-- Pending record review: 31
+- Pending record review: 30
 - Blocked source inventory: 0
-- Next official code: 272051
+- Next official code: 272078
 
 ## Definition of Phase 15 completion
 
