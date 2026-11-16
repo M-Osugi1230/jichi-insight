@@ -111,9 +111,9 @@ def test_utsunomiya_promotion_is_reflected_in_queue_state():
     assert item["status"] == "reviewed_complete"
     assert item["completion_path"] == "data/catalog/utsunomiya_phase15_completion.json"
     assert (ROOT / item["completion_path"]).is_file()
-    assert queue["summary"]["reviewed_complete_count"] == 64
-    assert queue["summary"]["pending_record_review_count"] == 3
-    assert queue["summary"]["next_official_code"] == "452017"
+    assert queue["summary"]["reviewed_complete_count"] == 65
+    assert queue["summary"]["pending_record_review_count"] == 2
+    assert queue["summary"]["next_official_code"] == "462012"
 
 
 def test_public_web_does_not_import_candidate_staging():

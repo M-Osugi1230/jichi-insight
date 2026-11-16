@@ -861,9 +861,9 @@
       "prefecture_name_ja": "宮崎県",
       "municipality_type": "city",
       "phase14_role": "core_city_and_prefectural_capital",
-      "status": "pending_record_review",
+      "status": "reviewed_complete",
       "source_inventory_path": "data/indexed/miyazaki-city/source_inventory.json",
-      "completion_path": null
+      "completion_path": "data/catalog/miyazaki_phase15_completion.json"
     },
     {
       "sequence": 66,
@@ -894,11 +894,11 @@
   ],
   "summary": {
     "target_count": 67,
-    "reviewed_complete_count": 64,
+    "reviewed_complete_count": 65,
     "review_in_progress_count": 0,
-    "pending_record_review_count": 3,
+    "pending_record_review_count": 2,
     "blocked_source_inventory_count": 0,
-    "next_official_code": "452017"
+    "next_official_code": "462012"
   },
   "updated_at": "2026-11-17"
 }

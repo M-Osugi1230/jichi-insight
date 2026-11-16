@@ -50,9 +50,9 @@ def test_kurashiki_review_package_is_the_fifty_first_completion():
     }
 
     queue = load(QUEUE)
-    assert queue["summary"]["reviewed_complete_count"] == 64
-    assert queue["summary"]["pending_record_review_count"] == 3
-    assert queue["summary"]["next_official_code"] == "452017"
+    assert queue["summary"]["reviewed_complete_count"] == 65
+    assert queue["summary"]["pending_record_review_count"] == 2
+    assert queue["summary"]["next_official_code"] == "462012"
     entry = next(
         row for row in queue["execution_queue"] if row["official_code"] == "332020"
     )

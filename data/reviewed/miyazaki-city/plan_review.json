@@ -1,0 +1,63 @@
+{
+  "id": "phase15-miyazaki-plan-review",
+  "name_ja": "宮崎市",
+  "next_action": "Promote the full enumeration of the measures under the six policies and the individual items of the population-decline focus projects only when official sources with stable record-level locators confirm the correspondence; confirm the value in the real-balance schedule itself in the settlement book and complete the cross-checks against the budget and settlement books （事項別明細書） at section level; keep the previous plan 『第五次宮崎市総合計画』 (FY2018-FY2027 as originally set) and the current plan 『第六次宮崎市総合計画』 (FY2025-FY2034) as separate versions and never read the previous plan period's results forward into the current plan. Keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "official_code": "452017",
+  "quality_boundary": "This package reviews the current plan identity and period (the Sixth Miyazaki City Comprehensive Plan （第六次宮崎市総合計画）: a two-layer plan of the basic concept （基本構想） and the basic plan （基本計画）, both layers covering FY2025-FY2034 (ten years) with the target year FY2034; the basic concept sets out the future city image 『挑戦し、成長する 開かれたまち ～ OPEN CITY MIYAZAKI ～』 and the three images to aim for, and the basic plan sets out the six policies; the structure is kept at the policy level, and the full enumeration of the measures under the six policies and the individual items of the focus projects is not promoted and stays deferred depth), the policy structure, the progress-governance layer (policy evaluation （施策評価） with internal and external evaluation based on the previous fiscal year's results, with the FY2026 (for FY2025) external evaluation results published on the city's official page, and the annual review of the basic plan), the enacted FY2026 general-account initial budget at the published sen-yen (thousand-yen) precision (mayor-submitted bill No. 2 （市長提出議案第2号）; the council's official voting results for the Reiwa 8 1st regular session record the result as 原案可決 (adopted as proposed), kept verbatim; vote date 2026-03-13; the amount of 204,000,000 thousand yen was confirmed in the finance division's initial budget summary and agrees with the totals of the subject and nature tables), and the FY2024 settlement at the yen precision printed in the settlement book itself （令和6年度宮崎市歳入歳出決算書）, the book submitted as bill No. 109 (revenue 206,745,695,721 yen / expenditure 201,205,711,288 yen; their difference, the balance of 5,539,984,433 yen, checks out arithmetically against the printed balance; the amount carried over to the following fiscal year is 6,301,182,683 yen). The FY2024 settlement certification (bill No. 109 （第109号議案）) was carried over for continued review at the Reiwa 7 4th regular session (2025-09-18) and then certified on 2025-10-07 at the Reiwa 7 5th extraordinary session, confirmed directly in the council's official voting results; it was not rejected. The real balance is not recorded, because the value in the real-balance schedule itself could not be checked (the audit commission's settlement review opinion is published as an image-only PDF whose values could not be read as text). Ordinary-account aggregate figures are not used, because their aggregation scope differs from the general account. The period status stays verified_fixed_period as recorded in the Phase 14 inventory. FY2024 falls within the previous plan 『第五次宮崎市総合計画』 period (FY2018-FY2027 as originally set) and outside the current plan period, so it is kept separate as a plan transition, and no official total-level mapping from settlement totals to the current plan's policy structure exists, so the linkage stays not_assessable.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "計画の構成と期間は、市の公式ページ『第六次宮崎市総合計画について』と計画の概要版『第六次宮崎市総合計画（概要版）』で直接確認した。period_statusはPhase 14出典目録の記録どおりverified_fixed_periodを保持する",
+      "evidence_role": "current_plan_identity",
+      "id": "miyazaki-current-plan-period",
+      "review_note": "総合計画の構成（基本構想・基本計画）と両層の計画期間を保持し、基本計画の見直しの扱いを分離した。レビュー済みレコード。",
+      "source_url": "https://www.city.miyazaki.miyazaki.jp/city/plan/6th_generalplan/6th_citymasterplan/",
+      "statement": "宮崎市の現行の最上位計画は第六次宮崎市総合計画であり、本市の将来像と、将来像を実現するための基本的な方向性を示す「基本構想」と、基本構想を実現するための方策を示す「基本計画」の2層で構成される市の最上位計画である。基本構想・基本計画の計画期間はいずれも2025年度〜2034年度の10年間であり、目標年度は2034年度である。基本計画は、市政運営の状況及び社会経済情勢の変化等を踏まえ、必要に応じ適宜見直しを行うものとし、計画期間は10年間であるが毎年度見直すこととされている。Phase 14インベントリのperiod_statusはverified_fixed_periodである。",
+      "title": "第六次宮崎市総合計画の構成（基本構想・基本計画とも2025年度〜2034年度の10年間）",
+      "value": "第六次計画は基本構想と基本計画の2層構成で、両層とも計画期間は2025年度〜2034年度の10年間／FY2024決算は旧計画「第五次宮崎市総合計画」期間の決算"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "将来の都市像・3つのめざす姿・6つの政策の構成は、市の公式ページと計画の概要版および本編（基本計画第3章）で直接確認した",
+      "evidence_role": "policy_structure",
+      "id": "miyazaki-current-policy-structure",
+      "review_note": "基本構想の都市像と基本計画の政策レベルの体系を保持した。各政策配下の施策体系と重点プロジェクトの個別事業の全件列挙は行わない。レビュー済みレコード。",
+      "source_url": "https://www.city.miyazaki.miyazaki.jp/city/plan/6th_generalplan/6th_citymasterplan/",
+      "statement": "基本構想は、将来の都市像『挑戦し、成長する 開かれたまち ～ OPEN CITY MIYAZAKI ～』を掲げ、その実現に向けて「時代の変化を見据えて成長し、世界に開かれているまち」「多様性を認め、互いに支え合う みんなに開かれているまち」「明日への希望にあふれ、未来に開かれているまち」の3つの「めざす姿」をまとめる。基本計画第3章は「将来の都市像を実現するための6つの政策」として、政策1 経済成長をめざすまちづくり／政策2 経済を支えるまちづくり／政策3 市民の健康を守り、医療・福祉が充実したまちづくり／政策4 支え合い、ともに生きるまちづくり／政策5 次世代を育むまちづくり／政策6 持続可能なまちづくりを置く。基本計画の施策体系とは別に、人口減少対策に焦点を当てた「重点プロジェクト」（地域の活力を維持する経済政策、保健・福祉政策、まちの未来を担う子どもの政策等）が置かれる。各政策配下の施策体系の全件列挙は行わない。",
+      "title": "将来の都市像『挑戦し、成長する 開かれたまち ～ OPEN CITY MIYAZAKI ～』と3つのめざす姿・6つの政策の体系"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "進行管理の枠組みは、市の公式ページ『施策評価』と計画の概要版で直接確認した",
+      "evidence_role": "progress_governance",
+      "id": "miyazaki-progress-governance-framework",
+      "review_note": "進行管理の公式routeとして施策評価（内部評価・外部評価）と基本計画の毎年度見直しの枠組みを保持した。評価結果の個別内容の展開は行わない。レビュー済みレコード。",
+      "source_url": "https://www.city.miyazaki.miyazaki.jp/city/plan/6th_generalplan/policy_evaluation/416357.html",
+      "statement": "第六次宮崎市総合計画においては、基本計画の着実かつ効果的な推進を図るため、施策評価により適切な評価・検証を行うこととしており、施策評価では前年度の実績等に基づき、総合計画の重点項目を対象に、内部評価及び外部評価を実施する。令和8年度（令和7年度分）の施策評価（外部評価結果）が市の公式ページで公表されている。あわせて基本計画は、計画期間は10年間であるが毎年度見直すこととされている。未公表の評価結果を推測で作成せず、自治体の進行管理の仕組みをJichi Insight独自の達成判定へ変換しない。",
+      "title": "計画の進行管理（施策評価による内部・外部評価と基本計画の毎年度見直し）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "前計画の計画期間は市の公式ページ『第五次宮崎市総合計画の策定について』で直接確認し、現行計画の開始は計画の公式ページ・概要版とPhase 14出典目録で確認した",
+      "evidence_role": "plan_transition",
+      "id": "miyazaki-plan-transition",
+      "review_note": "前計画「第五次宮崎市総合計画」から現行計画「第六次宮崎市総合計画」への移行を分離記録した。レビュー済みレコード。",
+      "source_url": "https://www.city.miyazaki.miyazaki.jp/city/plan/5th_generalplan/76517.html",
+      "statement": "前計画は第五次宮崎市総合計画であり、平成30年度（2018年度）から平成39年度（2027年度）を計画期間として策定された。2025年度から現行計画「第六次宮崎市総合計画」（2025年度〜2034年度）へ移行した。FY2024決算は前計画の計画期間中の決算である。前計画期間の実績を現行計画の実績へ読み替えない。移行記録として分離して保持する。",
+      "title": "「第五次宮崎市総合計画」（2018年度開始）から「第六次宮崎市総合計画」（2025年度〜2034年度）への移行"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "決算総額は決算書、計画期間は現行計画の公式資料とPhase 14出典目録で確認した。総額レベルの対応付けの不在は、決算・計画の公表範囲で確認した",
+      "evidence_role": "annual_progress",
+      "fiscal_year": 2024,
+      "id": "miyazaki-fy2024-settlement-linkage",
+      "review_note": "FY2024決算は前計画の計画期間中の決算で現行計画の期間外であり、総額レベルの対応付けもないため接続しないことを明記した。レビュー済みレコード。",
+      "source_url": "https://www.city.miyazaki.miyazaki.jp/city/audit/2052.html",
+      "statement": "FY2024決算は前計画「第五次宮崎市総合計画」の計画期間中の決算であり、現行計画「第六次宮崎市総合計画」（2025年度開始）の期間外の決算である。決算総額は一次資料で確認済みであるが、決算総額と計画の施策体系との総額レベルの対応付けは公式資料にないため、接続はnot_assessableとする。なお決算の議案（第109号）は令和7年第4回定例会で継続審査とされた後、令和7年第5回臨時会で2025年10月7日に認定されているが、接続判定は認定の成否に依存しない。",
+      "title": "令和6年度決算と現行計画「第六次宮崎市総合計画」の施策体系の接続"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-17"
+}
