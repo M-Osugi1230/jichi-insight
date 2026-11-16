@@ -234,9 +234,9 @@ def test_nagasaki_candidate_progress_review_stays_staging() -> None:
 def test_nagasaki_promotion_is_reflected_in_review_queue() -> None:
     queue = json.loads(QUEUE_PATH.read_text(encoding="utf-8"))
 
-    assert queue["summary"]["reviewed_complete_count"] == 64
-    assert queue["summary"]["pending_record_review_count"] == 3
-    assert queue["summary"]["next_official_code"] == "452017"
+    assert queue["summary"]["reviewed_complete_count"] == 65
+    assert queue["summary"]["pending_record_review_count"] == 2
+    assert queue["summary"]["next_official_code"] == "462012"
     entry = next(
         item for item in queue["execution_queue"] if item["official_code"] == "422010"
     )

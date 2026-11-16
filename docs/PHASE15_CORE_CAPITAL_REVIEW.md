@@ -872,13 +872,25 @@ Declared v1 package:
 
 Deferred depth includes the full enumeration of the measures under the 19 policies and the individual progress of the first basic plan's 114 indicators, cross-checks against the budget and settlement books （事項別明細書） at section level, the cross-check against the real-balance statement in the settlement book itself, the preparation status of the second basic plan (FY2030-FY2034), supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Sixty-fifth completion — Miyazaki
+
+宮崎市を65番目の`reviewed_complete`へ昇格しました（2026-11-17、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 第六次宮崎市総合計画 (the Sixth Miyazaki City Comprehensive Plan) — the city's current top-level plan, in two layers: the basic concept （基本構想） and the basic plan （基本計画）, both layers covering FY2025-FY2034 (ten years) with the target year FY2034. The basic concept sets out the future city image 『挑戦し、成長する 開かれたまち ～ OPEN CITY MIYAZAKI ～』 and the three images to aim for, and the basic plan sets out the six policies （政策1 経済成長をめざすまちづくり／政策2 経済を支えるまちづくり／政策3 市民の健康を守り、医療・福祉が充実したまちづくり／政策4 支え合い、ともに生きるまちづくり／政策5 次世代を育むまちづくり／政策6 持続可能なまちづくり）, together with the focus projects on population-decline countermeasures. The structure is kept at the policy level; the full enumeration of the measures under the six policies and the individual items of the focus projects is not performed and stays deferred depth. Progress is managed through the municipality's own progress management (policy evaluation （施策評価） with internal and external evaluation based on the previous fiscal year's results — the FY2026 (for FY2025) external evaluation results are published on the city's official page — and the annual review of the basic plan). The period status stays verified_fixed_period as recorded in the Phase 14 inventory. The transition from the previous plan 『第五次宮崎市総合計画』 (formulated in FY2018 with a plan period originally running to FY2027) is kept separate as a plan transition, and the previous plan period's results are never read forward into the current plan
+- FY2026 general-account initial budget: 204,000,000 thousand yen (enacted). The result recorded for mayor-submitted bill No. 2 （市長提出議案第2号） 『令和8年度宮崎市一般会計予算案』 in the council's official voting results for the Reiwa 8 1st regular session （令和8年第1回定例会議決結果） is 原案可決 (adopted as proposed), confirmed directly, and that wording is kept verbatim. The vote date is 2026-03-13. The amount was confirmed in the finance division's 『令和8年度当初予算案の概要』 and agrees with the totals of the subject and nature tables. The amount is kept at the published sen-yen (thousand-yen) precision and finer amounts are not synthesized
+- FY2024 general-account settlement at the yen precision printed in the settlement book itself （令和6年度宮崎市歳入歳出決算書）, the book submitted to the council as bill No. 109: revenue 206,745,695,721 yen / expenditure 201,205,711,288 yen (their difference, the balance of 5,539,984,433 yen, checks out arithmetically against the printed balance; the amount carried over to the following fiscal year is 6,301,182,683 yen). The settlement certification, bill No. 109 （第109号議案）, was carried over for continued review at the Reiwa 7 4th regular session (2025-09-18) and then certified at the Reiwa 7 5th extraordinary session, confirmed directly in the council's official voting results; it was not rejected. The vote date is 2025-10-07. The real balance is not recorded, because the value in the real-balance schedule itself could not be checked (the audit commission's settlement review opinion is published as an image-only PDF whose values could not be read as text). FY2024 falls within the previous plan 『第五次宮崎市総合計画』 period and outside the current plan period, and no official total-level mapping from settlement totals to the current plan's policy structure exists, so the totals are not linked to the plan's structure and the linkage stays not_assessable
+
+Deferred depth includes the confirmation of the value in the real-balance schedule itself, the full enumeration of the measures under the six policies and the correspondence with the focus projects' individual items, cross-checks against the budget and settlement books （事項別明細書） at section level, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 64 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市、姫路市、尼崎市、明石市、西宮市、奈良市、和歌山市、鳥取市、松江市、倉敷市、呉市、福山市、下関市、山口市、徳島市、高松市、松山市、高知市、久留米市、佐賀市、長崎市、佐世保市、大分市
+- Reviewed complete: 65 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市、姫路市、尼崎市、明石市、西宮市、奈良市、和歌山市、鳥取市、松江市、倉敷市、呉市、福山市、下関市、山口市、徳島市、高松市、松山市、高知市、久留米市、佐賀市、長崎市、佐世保市、大分市、宮崎市
 - Review in progress: 0
-- Pending record review: 3
+- Pending record review: 2
 - Blocked source inventory: 0
-- Next official code: 452017
+- Next official code: 462012
 
 ## Definition of Phase 15 completion
 
