@@ -367,9 +367,9 @@
       "prefecture_name_ja": "長野県",
       "municipality_type": "city",
       "phase14_role": "core_city_and_prefectural_capital",
-      "status": "pending_record_review",
+      "status": "reviewed_complete",
       "source_inventory_path": "data/indexed/nagano-city/source_inventory.json",
-      "completion_path": null
+      "completion_path": "data/catalog/nagano_phase15_completion.json"
     },
     {
       "sequence": 28,
@@ -894,11 +894,11 @@
   ],
   "summary": {
     "target_count": 67,
-    "reviewed_complete_count": 26,
+    "reviewed_complete_count": 27,
     "review_in_progress_count": 0,
-    "pending_record_review_count": 41,
+    "pending_record_review_count": 40,
     "blocked_source_inventory_count": 0,
-    "next_official_code": "202010"
+    "next_official_code": "202029"
   },
   "updated_at": "2026-11-16"
 }

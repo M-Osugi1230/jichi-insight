@@ -416,13 +416,25 @@ Declared v1 package:
 
 Deferred depth includes the full enumeration of the sub-measures and the first implementation plan's measure-and-project framework, cross-checks against the budget explanatory materials and the settlement detail book (事項別明細書) at section level, the sixth plan's framework itself, annual results and evaluation evidence under the implementation plan, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Twenty-seventh completion — Nagano
+
+長野市を27番目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 第五次長野市総合計画 — a three-layer comprehensive plan of a basic concept, basic plans and implementation plans; the basic concept was enacted by the city council in March 2017 and runs FY2017–FY2026 (ten years), the city vision is 『幸せ実感都市『ながの』〜“オールながの”で未来を創造しよう〜』; the basic plans run five years each (first period FY2017–FY2021, latter period FY2022–FY2026, the latter integrating the city's machi-hito-shigoto creation strategy) and the implementation plans are one-year plans revised annually; the basic concept's framework places seven fields holding 22 policies, and the latter basic plan unfolds 55 measures under the policies plus three cross-field themes (the strategy) (the 55 measures are not enumerated in v1); progress governance through a PDCA cycle led by the comprehensive plan promotion headquarters (chaired by the mayor), with evaluation and verification results published every year as the plan progress status (survey and statistical indicators and individual sheets). FY2026 is the plan's final year. The next comprehensive plan (starting FY2027, now being prepared in the city's comprehensive council) is kept only as a plan-transition record in a separate version and is never retroactively connected to the fifth plan's framework
+- FY2026 general-account initial budget: 195,220,000 thousand yen (enacted; bill No. 1 『令和8年度長野市一般会計予算』, passed as proposed (原案可決) on 2026-03-23 at the March 2026 regular council session, with the amendment to bill No. 1 rejected, confirmed in the council's official deliberation status). The amount is published at sen-yen (thousand-yen) precision, so it is kept at that precision and yen-precision amounts are not synthesized
+- FY2024 general-account settlement at yen precision as published: revenue 170,949,499,030 yen / expenditure 166,702,305,036 yen (balance 歳入歳出差引額 4,247,193,994 yen matches the published figure in the audit commissioners' settlement-review opinion 7監査第40号; real balance 実質収支 2,636,253,994 yen); certification 認定第2号 certified on 2025-09-30. FY2024 falls inside the fifth plan's period (the third year of the latter basic plan), but its totals are section-level aggregates that are not linked to individual policies, measures or indicators, and no reconciliation against the published progress status has been performed, so the linkage stays not_assessable
+
+Deferred depth includes the full enumeration of the 55 measures and their indicators and results, the implementation plan's individual projects, cross-checks against the budget explanatory materials and the settlement detail book (事項別明細書) at section level, reconciliation of the settlement totals against the published progress status, the next plan's framework itself, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 26 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市
+- Reviewed complete: 27 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市
 - Review in progress: 0
-- Pending record review: 41
+- Pending record review: 40
 - Blocked source inventory: 0
-- Next official code: 202010
+- Next official code: 202029
 
 ## Definition of Phase 15 completion
 

@@ -1,0 +1,65 @@
+[
+  {
+    "account_type": "general",
+    "amount_yen": 195220000000,
+    "confidence": "high",
+    "fiscal_year": 2026,
+    "id": "jp-local-202010-fiscal-2026-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算（可決）",
+    "municipality_id": "jp-local-202010",
+    "note": "長野市公式『令和8年度長野市（一般会計・特別会計・企業会計）予算』（予算書）の会計別予算一覧および議案第1号『令和8年度長野市一般会計予算』第1条・第1表に、令和8年度一般会計当初予算額195,220,000千円（歳入・歳出それぞれ同額）と示された当初予算額。公表精度は千円単位であり、円単位の内訳は公表されていないため千円精度のまま記録する。成立は長野市議会公式『令和8年3月定例会　議案の審議状況』で確認した。同資料で議案第1号は令和8年2月25日上程・令和8年3月23日に原案可決（賛成多数）であり、原案どおり可決されたため提案額がそのまま成立した当初予算額である（議案第1号に対する修正案は否決）。市公式『令和8年度当初予算の概要』の一般会計1,952.2億円（対前年度比+21.0億円・+1.1%）とも整合する。補正予算や決算とは別stateで扱う。",
+    "period_end": "2027-03-31",
+    "period_start": "2026-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "nagano-budget-2026"
+    ],
+    "stage": "initial_budget",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 170949499030,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-202010-fiscal-2024-total-revenue",
+    "metric": "total_revenue",
+    "metric_label": "一般会計決算歳入",
+    "municipality_id": "jp-local-202010",
+    "note": "長野市監査委員『令和6年度長野市一般会計・特別会計決算及び基金の運用状況審査意見書』（7監査第40号・令和7年8月26日）の一般会計総括に記載された歳入決算額170,949,499,030円（円単位）。歳出決算額166,702,305,036円との差引額4,247,193,994円は同審査意見書に掲載された歳入歳出差引額（形式収支）と一致する（実質収支は、翌年度へ繰り越すべき財源1,610,940,000円を差し引いた2,636,253,994円）。審査意見書は、決算の計数が正確であると認めている。市公式『令和6年度決算の概要（説明資料）』の一般会計歳入170,949,499千円（千円単位）とも整合する。令和6年度決算は認定第2号『令和6年度長野市一般会計、各特別会計決算の認定について』として令和7年9月定例会で認定された（長野市議会公式『令和7年9月定例会提出議案・議決の状況』で令和7年9月4日上程・決算特別委員会付託・令和7年9月30日に原案認定。一般会計と特別会計を合わせた決算の認定であり、公営企業会計の決算認定は認定第3号である）。FY2024は第五次長野市総合計画の計画期間（2017年度～2026年度）の8年目・後期基本計画（2022年度～2026年度）の3年目の決算である。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "nagano-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 166702305036,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-202010-fiscal-2024-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計決算歳出",
+    "municipality_id": "jp-local-202010",
+    "note": "同審査意見書の一般会計総括に記載された歳出決算額166,702,305,036円（円単位）。歳入決算額170,949,499,030円との差引額4,247,193,994円で検算が一致し、実質収支は2,636,253,994円である。市公式『令和6年度決算の概要（説明資料）』の一般会計歳出166,702,305千円（千円単位）とも整合する。令和6年度決算は認定第2号として令和7年9月30日に認定された。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "nagano-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  }
+]

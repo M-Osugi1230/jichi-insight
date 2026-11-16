@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-16",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "nagano-city-home",
+      "municipality_key": "nagano-city",
+      "organization": "長野市",
+      "category": "municipality_profile",
+      "title": "長野市公式サイト",
+      "url": "https://www.city.nagano.nagano.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "長野市の公式自治体サイト。"
+    },
+    {
+      "id": "nagano-budget-2026",
+      "municipality_key": "nagano-city",
+      "organization": "長野市",
+      "category": "budget",
+      "title": "長野市の予算",
+      "url": "https://www.city.nagano.nagano.jp/n060500/contents/p004384.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算195,220,000千円のEvidence。議案第1号『令和8年度長野市一般会計予算』として令和8年3月23日に原案可決され成立した当初予算。金額は千円単位の公表値のまま記録し、円単位を合成しない。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "nagano-settlement-2024",
+      "municipality_key": "nagano-city",
+      "organization": "長野市",
+      "category": "settlement",
+      "title": "長野市の決算",
+      "url": "https://www.city.nagano.nagano.jp/n060500/contents/p004386.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入170,949,499,030円・歳出166,702,305,036円を円単位で含む公式決算資料（長野市監査委員の決算審査意見書・7監査第40号）。決算の認定は認定第2号（令和7年9月30日に認定）。決算書（歳入歳出決算事項別明細書）の款別合計との突合は未実施。"
+    }
+  ]
+}

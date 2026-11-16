@@ -1,0 +1,66 @@
+{
+  "id": "nagano-phase15-completion",
+  "phase": 15,
+  "status": "reviewed_complete",
+  "official_code": "202010",
+  "name_ja": "長野市",
+  "completed_at": "2026-11-16",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "source_catalog_path": "data/catalog/nagano_phase15_sources.json",
+    "plan_review_path": "data/reviewed/nagano-city/plan_review.json",
+    "policy_structure_path": "data/catalog/nagano_current_policy_structure.json",
+    "progress_review_path": "data/catalog/nagano_current_progress_review_summary.json",
+    "fiscal_records_path": "data/reviewed/nagano-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/nagano-city/evidence_packets.json",
+    "counts": {
+      "basic_goals": 7,
+      "basic_plan_measures": 22,
+      "promoted_implementation_item_actual_records": 0,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "current_plan_period_reviewed": true,
+    "current_plan_policy_structure_reviewed": true,
+    "implementation_plan_layer_reviewed": true,
+    "fiscal_states_and_years_separate": true,
+    "budget_enactment_state_preserved": true,
+    "settlement_linkage_not_assessable_preserved": true,
+    "individual_implementation_items_not_overpromoted": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "current-plan-granular-kpi-and-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "55施策の全件とその指標・実績、実施計画の個別事業の全件は追加depthとし、公式対応が確認できるまで昇格しない。実施計画は毎年見直されるため、版を分離して保持する。"
+    },
+    {
+      "id": "fiscal-detail-and-amendment-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "予算・決算の項目別内訳（予算に関する説明書および決算書の事項別明細書の款別合計との突合を含む）、補正予算による変更経過、補正予算・決算と個別事業費の対応関係、執行・契約・補助金の接続は記録しない。FY2024決算は第五次計画期間内（後期基本計画の3年目）の決算として保持するが、決算総額を政策・施策・指標の実績へ流用しない。"
+    },
+    {
+      "id": "plan-transition-version-depth",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "次期長野市総合計画（令和9年度開始・策定中）の枠組みそのものは記録しない。策定経過は版の履歴として別途記録し、次期計画の政策・施策を第五次計画の体系へ遡及接続しない。"
+    },
+    {
+      "id": "current-plan-annual-evaluation-evidence",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "総合計画進捗状況（アンケート指標・統計指標の進捗状況と個票）として毎年度公表される年度実績・評価のエビデンスの個別値は昇格しない。進行管理の枠組み（PDCAサイクル・総合計画推進本部・毎年度公表）のみを確認した。進捗状況と決算総額との突合・対応付けも未実施である。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "政策効果の因果認定、Jichi Insight独自の政策達成度スコア、他都市との未検証の比較・ランキングは作成しない。指標に基づく進行管理（自治体自己評価の枠組み）をJichi Insight独自の達成判定へ変換しない。"
+    }
+  ],
+  "completion_boundary": "長野市のPhase 15 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味し、所有者（大杉邑大、単独運用体制）が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが長野市公式サイトの一次資料で検証した結果に基づく（所有者本人が一次資料を直接レビューしたものではない）。長野市の計画体系（第五次長野市総合計画は、基本構想・基本計画・実施計画の3層構成の総合計画である。基本構想は平成29年3月市議会で議決され、期間は2017年度～2026年度の10年間、まちの将来像は『幸せ実感都市『ながの』〜“オールながの”で未来を創造しよう〜』である。基本計画は前期（2017年度～2021年度）・後期（2022年度～2026年度）の5年間ずつで、後期基本計画には長野市まち・ひと・しごと創生総合戦略を統合する。実施計画は1年間の計画で毎年見直しを行う。基本構想の体系は7分野・22政策であり、後期基本計画では政策の下に55施策を展開し、分野横断テーマ（総合戦略）3テーマを掲げる。55施策の全件は列挙していない。進行管理はPDCAサイクルで行い、総合計画推進本部（本部長は市長）が推進状況の確認・推進手法の検討・予算の重点配分を担い、評価・検証結果は毎年度『長野市総合計画進捗状況』として公表される）、成立したFY2026一般会計当初予算（195,220,000千円。議案第1号『令和8年度長野市一般会計予算』として令和8年3月23日に原案可決。公表精度が千円単位のため千円精度のまま記録し、円単位を合成していない）、FY2024一般会計決算の円単位総額（歳入170,949,499,030円・歳出166,702,305,036円、差引額4,247,193,994円が監査委員の決算審査意見書の歳入歳出差引額と一致することを検算、実質収支2,636,253,994円）とその認定（認定第2号『令和6年度長野市一般会計、各特別会計決算の認定について』・2025-09-30認定）を一次資料で確認した。次期長野市総合計画（令和9年度開始・策定中）は移行記録として分離して保持し、次期計画の枠組みを第五次計画の体系へ遡及接続しない。FY2024は第五次計画の計画期間内（後期基本計画の3年目）の決算であるが、決算総額は款別の集計値であり個別政策・施策・指標との対応付けは総額レベルでは行われておらず、総合計画進捗状況との突合も未実施であるため、決算総額と計画の政策・施策・指標との接続はnot_assessableとして保持する。55施策の全件とその指標・実績、実施計画の個別事業の全件、予算に関する説明書および決算書の事項別明細書の款別合計との突合はdeferred depthである。Jichi Insight独自の政策達成度スコアや他都市とのランキングは作成しない。指標に基づく進行管理（自治体自己評価の枠組み）をJichi Insight独自の達成判定へ変換しない。"
+}
