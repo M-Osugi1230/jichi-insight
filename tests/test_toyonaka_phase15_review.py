@@ -380,7 +380,7 @@ def test_toyonaka_and_previous_thirty_five_are_reviewed_complete_and_suita_is_ne
     ):
         assert by_code[code]["status"] == "reviewed_complete"
 
-    assert queue["summary"]["reviewed_complete_count"] == 51
+    assert queue["summary"]["reviewed_complete_count"] == 52
     assert queue["summary"]["review_in_progress_count"] == 0
-    assert queue["summary"]["pending_record_review_count"] == 16
-    assert queue["summary"]["next_official_code"] == "342025"
+    assert queue["summary"]["pending_record_review_count"] == 15
+    assert queue["summary"]["next_official_code"] == "342076"

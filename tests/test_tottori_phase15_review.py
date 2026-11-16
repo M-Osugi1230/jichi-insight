@@ -50,9 +50,9 @@ def test_tottori_review_package_is_the_forty_ninth_completion():
     }
 
     queue = load(QUEUE)
-    assert queue["summary"]["reviewed_complete_count"] == 51
-    assert queue["summary"]["pending_record_review_count"] == 16
-    assert queue["summary"]["next_official_code"] == "342025"
+    assert queue["summary"]["reviewed_complete_count"] == 52
+    assert queue["summary"]["pending_record_review_count"] == 15
+    assert queue["summary"]["next_official_code"] == "342076"
     entry = next(
         row for row in queue["execution_queue"] if row["official_code"] == "312010"
     )

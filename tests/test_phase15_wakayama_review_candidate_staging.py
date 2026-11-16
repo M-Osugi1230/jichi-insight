@@ -251,9 +251,9 @@ def test_wakayama_progress_review_stays_staging() -> None:
 def test_wakayama_promotion_is_reflected_in_review_queue() -> None:
     queue = json.loads(QUEUE_PATH.read_text(encoding="utf-8"))
     summary = queue["summary"]
-    assert summary["reviewed_complete_count"] == 51
-    assert summary["pending_record_review_count"] == 16
-    assert summary["next_official_code"] == "342025"
+    assert summary["reviewed_complete_count"] == 52
+    assert summary["pending_record_review_count"] == 15
+    assert summary["next_official_code"] == "342076"
     entry = next(
         item for item in queue["execution_queue"] if item["official_code"] == "302015"
     )

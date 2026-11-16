@@ -1,0 +1,63 @@
+{
+  "id": "phase15-kure-plan-review",
+  "name_ja": "呉市",
+  "next_action": "Promote the measures and KPIs of the second-half basic plan under the eight policy fields only when official sources with stable record-level locators have been reviewed; confirm the FY2026 budget vote date (2026-03-24) and the FY2024 settlement certification date (2025-09-24) against the plenary minutes; complete the final cross-check against the budget explanation book and the settlement book (事項別明細書) at section level; examine the content of the audit commissioners' settlement review opinion (individual findings); confirm the preparation status of the next (sixth) long-term comprehensive plan; and never connect results from another plan version forward into the current plan. Keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "official_code": "342025",
+  "quality_boundary": "This package reviews the current plan identity and period (the 5th Kure City Long-term Comprehensive Plan: the basic concept runs FY2021-FY2030 over ten years, the basic plan runs in two five-year halves — the first half FY2021-FY2025 and the second half FY2026-FY2030 — and the constituent project collections are compiled every fiscal year; the layers are kept as separate period semantics), the policy structure (eight policy fields at the basic-concept level; the measures and KPIs of the second-half basic plan are not enumerated and stay deferred depth, so the measures lists stay empty), the progress-governance layer (the constituent project collections compiled every fiscal year and the publication of KPI progress — the municipality's own progress-management framework), the enacted FY2026 initial budget at the published sen-yen (thousand-yen) precision (bill 議第1号; the council's official result page records the result simply as 『可決』 in its own wording, and the vote date of 2026-03-24 was identified from that page's publication date, with final confirmation against the plenary minutes still outstanding), and the FY2024 settlement at the yen precision published in the settlement book. The FY2024 settlement certification (bill 議第99号) was certified at the September 2025 regular session, confirmed directly in the council's official result page; it was not rejected, and the certification date of 2025-09-24 was likewise identified from that page's publication date, with final confirmation against the plenary minutes still outstanding. The real balance of 2,901,588 thousand yen is recorded at the thousand-yen precision of the balance statement and is not expanded into a synthetic yen figure. FY2024 is a settlement of the first-half basic plan period, so its plan version differs from the current second-half basic plan, and no official total-level mapping from settlement totals to the plan's policy structure exists, so the linkage stays not_assessable. The preparation status of the next (sixth) long-term comprehensive plan could not be confirmed in official sources and stays unconfirmed.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "計画の構成と各層の期間は市公式『第5次呉市長期総合計画』ページの「役割・構成・計画期間」で直接確認した（基本構想、基本計画、構成事業集の3層で構成。基本構想は10年間（2021年度から2030年度まで）、基本計画は5年間（前期：2021年度から2025年度まで、後期：2026年度から2030年度まで）、構成事業は年度ごとに作成）",
+      "evidence_role": "current_plan_identity",
+      "id": "kure-current-plan-period",
+      "review_note": "長期総合計画の構成（基本構想・基本計画・構成事業集）と各層の期間を別period semanticsとして保持した。レビュー済みレコード。",
+      "source_url": "https://www.city.kure.lg.jp/soshiki/7/dai5ji-tyoukisougoukeikaku.html",
+      "statement": "呉市の現行の最上位計画は第5次呉市長期総合計画であり、令和3年度（2021年度）から令和12年度（2030年度）までの10年間を見据えた、市の総合的な市政の計画的運営の指針である。構成は基本構想、基本計画、構成事業集の3層であり、基本構想の期間は2021年度から2030年度までの10年間、基本計画は前期（2021年度から2025年度）と後期（2026年度から2030年度）の各5年間、構成事業集は年度ごとに作成される。基本計画は8つの政策分野ごとに施策をまとめ、横断的な視点も示す。前期基本計画は第2期まち・ひと・しごと創生総合戦略と国土強靱化地域計画を、後期基本計画は第3期総合戦略・第2期国土強靱化地域計画を一体的に内包する。各層の期間を別period semanticsとして保持し、一律の固定期間へ潰さない。Phase 14インベントリのperiod_statusはverified_fixed_periodであり、現行の基本計画は後期基本計画（2026年度～2030年度）である。",
+      "title": "第5次呉市長期総合計画の構成（基本構想2021年度～2030年度・基本計画 前期2021年度～2025年度／後期2026年度～2030年度・構成事業集は年度ごとに作成）",
+      "value": "第5次呉市長期総合計画は基本構想2021年度～2030年度（10年）／基本計画 前期2021年度～2025年度・後期2026年度～2030年度／構成事業集は年度ごとに作成／FY2024決算は前期基本計画期間の決算"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "将来都市像と5つの「呉市のあるべき未来の姿」は計画ページの「将来都市像」で確認し、8つの政策分野は基本構想レベルの体系として計画ページ（基本計画は8つの政策分野ごとに施策をまとめる旨）と予算総体説明（八つの政策分野への言及）で確認した。後期基本計画の施策体系の全件は本候補では確認していない",
+      "evidence_role": "policy_structure",
+      "id": "kure-current-policy-structure",
+      "review_note": "基本構想レベルの8つの政策分野を政策単位で保持した。後期基本計画の施策・KPIの全件列挙は行わない。レビュー済みレコード。",
+      "source_url": "https://www.city.kure.lg.jp/soshiki/7/dai5ji-tyoukisougoukeikaku.html",
+      "statement": "基本構想は、将来都市像『誰もが住み続けたい，行ってみたい，人を惹きつけるまち「くれ」〜イキイキと働き，豊かに安心して暮らし，ワクワク生きる〜』と、その実現に向けた5つの「呉市のあるべき未来の姿」（1 質の高い生活が実現されるスマートシティ「くれ」、2 新たなチャレンジでビジネスチャンスを生み育てる「くれ」、3 都会にはない心地よい暮らしが人々を惹きつける「くれ」、4 災害に屈しない強靱なまち「くれ」、5 SDGsを通して豊かな未来を創る「くれ」）を掲げる。基本計画の政策体系は8つの政策分野（1 子育て・教育、2 福祉保健、3 市民生活・防災、4 文化・スポーツ・生涯学習、5 産業、6 都市基盤、7 環境、8 行政経営）からなり、前期・後期を通じて基本構想レベルで共通する。本候補は現行が後期基本計画の期間であるため、政策分野レベルの体系のみを保持し、後期基本計画の施策・KPIの全件列挙と対応付けは行わない。",
+      "title": "基本構想の将来都市像と基本計画の政策体系（8つの政策分野）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "構成事業集の年度作成は計画ページの「計画期間」で確認し、重要業績評価指標（KPI）の進捗状況の公表は同ページ（令和8年9月末時点の進捗状況PDFの掲載）で確認した",
+      "evidence_role": "progress_governance",
+      "id": "kure-progress-governance-framework",
+      "review_note": "進行管理の枠組み（構成事業集の年度更新とKPI進捗の公表）を年度実績へ読み替えず保持した。レビュー済みレコード。",
+      "source_url": "https://www.city.kure.lg.jp/soshiki/7/dai5ji-tyoukisougoukeikaku.html",
+      "statement": "第5次呉市長期総合計画の進行管理は、基本計画に示す施策を実施するための具体的な事業の名称、事業費、事業内容、進捗管理のための指標等を示した構成事業集を年度ごとに作成する自治体の枠組みと、重要業績評価指標（KPI）の進捗状況の公表による。計画ページでは令和8年度構成事業集と、重要業績評価指標（KPI）の進捗状況（令和8年9月末時点）が公表されている。自治体の評価・進捗公表をJichi Insight独自の達成判定へ変換しない。",
+      "title": "計画の進行管理（構成事業集の年度作成と重要業績評価指標（KPI）の進捗公表）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "前期から後期への移行は計画ページの「計画期間」（基本計画 前期：2021年度から2025年度まで、後期：2026年度から2030年度まで）と後期基本計画PDFの掲載で確認した。次期計画の策定状況は計画ページ等の公表範囲で確認できなかった",
+      "evidence_role": "plan_transition",
+      "id": "kure-plan-transition",
+      "review_note": "同一計画内の前期・後期の版の移行と、次期計画の未確認状態を分離記録した。レビュー済みレコード。",
+      "source_url": "https://www.city.kure.lg.jp/soshiki/7/dai5ji-tyoukisougoukeikaku.html",
+      "statement": "第5次呉市長期総合計画は2021年度に開始し、基本計画は2026年度に前期（2021年度～2025年度）から後期（2026年度～2030年度）へ移行した。後期基本計画は第3期まち・ひと・しごと創生総合戦略と第2期国土強靱化地域計画を一体的に内包して作成された。前期基本計画の政策体系・事業・評価の全件列挙は本候補では行わない。基本構想の終期は2030年度であり、次期（第6次）長期総合計画の策定状況は本候補の調査範囲では公式資料で確認できなかったため未確認として保持する。FY2024決算は前期基本計画期間の決算であり、現行の後期基本計画とは計画の版が異なる。",
+      "title": "基本計画の前期から後期への移行と次期計画の策定状況"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "決算総額は歳入歳出決算書、計画の期間は計画ページで確認した。総額レベルの対応付けの不存在は、決算・計画の公表範囲で確認した",
+      "evidence_role": "annual_progress",
+      "fiscal_year": 2024,
+      "id": "kure-fy2024-settlement-linkage",
+      "review_note": "FY2024決算は前期基本計画期間の決算であり現行の後期基本計画とは版が異なり、総額レベルの対応付けもないため接続しないことを明記した。レビュー済みレコード。",
+      "source_url": "https://www.city.kure.lg.jp/soshiki/89/shisei-yosan-kessan06.html",
+      "statement": "FY2024決算は第5次呉市長期総合計画の前期基本計画（2021年度～2025年度）期間の決算であり、現行の後期基本計画（2026年度～2030年度）とは計画の版が異なる。決算総額（円単位）は一次資料で確認済みであるが、決算総額と計画の政策分野・施策との総額レベルの対応付けは公式資料にないため、接続はnot_assessableとし、前期期間の決算値を後期基本計画のcurrent actualへ流用しない。なお議第99号は令和7年9月定例会で認定されており、接続判定は認定結果に依存しない。",
+      "title": "令和6年度決算と後期基本計画の政策体系の接続"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-16"
+}

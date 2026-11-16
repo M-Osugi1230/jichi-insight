@@ -76,16 +76,16 @@ def test_phase15_current_statuses_are_canonical():
     statuses = Counter(row["status"] for row in queue["execution_queue"])
 
     assert statuses == {
-        "reviewed_complete": 51,
-        "pending_record_review": 16,
+        "reviewed_complete": 52,
+        "pending_record_review": 15,
     }
     assert queue["summary"] == {
         "target_count": 67,
-        "reviewed_complete_count": 51,
+        "reviewed_complete_count": 52,
         "review_in_progress_count": 0,
-        "pending_record_review_count": 16,
+        "pending_record_review_count": 15,
         "blocked_source_inventory_count": 0,
-        "next_official_code": "342025",
+        "next_official_code": "342076",
     }
 
     completed = [
@@ -145,6 +145,7 @@ def test_phase15_current_statuses_are_canonical():
         "鳥取市",
         "松江市",
         "倉敷市",
+        "呉市",
     ]
     assert completed[0]["completion_path"] == "data/catalog/hakodate_phase15_completion.json"
     assert completed[1]["completion_path"] == "data/catalog/asahikawa_phase15_completion.json"
@@ -197,6 +198,7 @@ def test_phase15_current_statuses_are_canonical():
     assert completed[48]["completion_path"] == "data/catalog/tottori_phase15_completion.json"
     assert completed[49]["completion_path"] == "data/catalog/matsue_phase15_completion.json"
     assert completed[50]["completion_path"] == "data/catalog/kurashiki_phase15_completion.json"
+    assert completed[51]["completion_path"] == "data/catalog/kure_phase15_completion.json"
 
     current = [
         row
@@ -210,9 +212,9 @@ def test_phase15_current_statuses_are_canonical():
         for row in queue["execution_queue"]
         if row["status"] == "pending_record_review"
     ]
-    assert pending[0]["name_ja"] == "呉市"
-    assert pending[0]["official_code"] == "342025"
-    assert pending[0]["sequence"] == 52
+    assert pending[0]["name_ja"] == "福山市"
+    assert pending[0]["official_code"] == "342076"
+    assert pending[0]["sequence"] == 53
     assert pending[0]["wave"] == 6
     assert pending[0]["completion_path"] is None
 
