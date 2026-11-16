@@ -227,9 +227,9 @@ def test_nishinomiya_progress_review_stays_staging() -> None:
 def test_nishinomiya_promotion_is_reflected_in_review_queue() -> None:
     queue = json.loads(QUEUE_PATH.read_text(encoding="utf-8"))
     summary = queue["summary"]
-    assert summary["reviewed_complete_count"] == 53
-    assert summary["pending_record_review_count"] == 14
-    assert summary["next_official_code"] == "352012"
+    assert summary["reviewed_complete_count"] == 54
+    assert summary["pending_record_review_count"] == 13
+    assert summary["next_official_code"] == "352039"
     entry = next(
         item for item in queue["execution_queue"] if item["official_code"] == "282049"
     )

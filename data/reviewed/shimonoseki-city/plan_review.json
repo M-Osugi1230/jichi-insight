@@ -1,0 +1,63 @@
+{
+  "id": "phase15-shimonoseki-plan-review",
+  "name_ja": "下関市",
+  "next_action": "Promote the measures and numerical targets under the 39 sections of the basic plan and the 37 implementation-plan projects only when official sources with stable record-level locators have been reviewed; complete the final cross-checks against the budget explanation book and the settlement book (事項別明細書) at section level; examine the content of the audit commissioners' settlement review opinion (individual findings); confirm the details of the basic plan's published evaluation and verification framework and the preparation status of the next (fourth) comprehensive plan; and never connect results from another plan version forward into the current plan. Keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "official_code": "352012",
+  "quality_boundary": "This package reviews the current plan identity and period (the 3rd Shimonoseki City Comprehensive Plan, composed of two layers — the basic concept and the basic plan — both running FY2025-FY2034 over ten years and adopted in March 2025; the implementation plan beneath it runs FY2026-FY2030 with 37 projects, adopted in June 2025 and revised in September 2025 and September 2026, with the revision history kept as separate versions; the plan period and the implementation plan period are kept as separate period semantics, and the inventory period status of verified_fixed_period applies to the third plan's period), the policy structure (the basic concept's principle 『可能性を築くまち』, its four developments, the 'Road to 2034' goals, and the basic plan's eight chapters and 39 sections kept at chapter level; the measures and numerical targets under the sections and the 37 implementation-plan projects are not enumerated and stay deferred depth, so the measures lists stay empty), the progress-governance layer (the formulation and revision of the implementation plan as the municipality's own progress-management framework; the details of the basic plan's published evaluation and verification framework could not be confirmed in official sources and stay unconfirmed), the enacted FY2026 initial budget at the published sen-yen (thousand-yen) precision (bill 議案第16号; the council's official vote record book records the result simply as 『可決』 in its own wording, with the vote date of 2026-03-26 printed in the record book; the amount was confirmed in article 1 and table 1 of the budget book, read visually because the budget book PDF does not allow text extraction), and the FY2024 settlement at the yen precision printed in the settlement book. The FY2024 settlement certification (bill 議案第116号) was certified at the third regular session of 2025, confirmed directly in the council's official vote record book; it was not rejected, and the certification date of 2025-09-30 is printed in the record book. The real balance of 4,182,293 thousand yen is recorded at the thousand-yen precision of the real-balance statement and is not expanded into a synthetic yen figure. Ordinary-account aggregate figures, such as the ordinary-account settlement card, are not used. FY2024 is a settlement of the second comprehensive plan period (FY2015-FY2024), so its plan version differs from the current third plan, and no official total-level mapping from settlement totals to the plan's policy structure exists, so the linkage stays not_assessable. The preparation status of the next (fourth) comprehensive plan could not be confirmed in official sources and stays unconfirmed.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "計画の構成と期間は市公式『第3次下関市総合計画』ページの「計画策定の趣旨」「計画の構成」「計画の期間」で直接確認し、計画冊子の第1部序論の目次（計画の構成・計画期間）とも整合する。実施計画の期間と改定履歴は市公式『第3次下関市総合計画 実施計画』ページで直接確認した",
+      "evidence_role": "current_plan_identity",
+      "id": "shimonoseki-current-plan-period",
+      "review_note": "総合計画の構成（基本構想・基本計画の2層）と期間、実施計画の位置づけを別period semanticsとして保持した。レビュー済みレコード。",
+      "source_url": "https://www.city.shimonoseki.lg.jp/soshiki/1/127695.html",
+      "statement": "下関市の現行の最上位計画は第3次下関市総合計画であり、基本構想と基本計画の2層で構成する。計画期間は基本構想・基本計画とも令和7（2025）年度から令和16（2034）年度までの10年間であり、令和7年3月に策定された。この下に、同計画の重点取り組み方針に向けて実施する主要な事業の計画である実施計画が置かれ、現行の実施計画は令和8（2026）年度から令和12（2030）年度までの5年間・37事業で、令和7年6月に策定され令和7年9月に第1次改定、令和8年9月に第2次改定が行われている。総合計画本体の10年間の固定期間と実施計画の5年間の期間を別period semanticsとして保持し、一律の期間modelへ潰さない。Phase 14インベントリのperiod_statusはverified_fixed_periodであり、第3次総合計画の期間（2025年度～2034年度）に対するものである。",
+      "title": "第3次下関市総合計画の構成（基本構想・基本計画の2層、2025年度～2034年度の10年間）",
+      "value": "第3次下関市総合計画は基本構想・基本計画とも2025年度～2034年度の10年間／実施計画は2026年度～2030年度の5年間・37事業（2025年6月策定、第1次改定2025年9月・第2次改定2026年9月）／FY2024決算は第2次下関市総合計画期間の決算"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "基本理念と4つの展開、2034年に向けた目標は計画冊子第2部基本構想（冊子26～27頁）を画像化して目視で確認し、基本計画の8章・39節の体系は冊子目次（第3部基本計画）で全件確認した",
+      "evidence_role": "policy_structure",
+      "id": "shimonoseki-current-policy-structure",
+      "review_note": "基本構想の理念・展開と基本計画の章レベルの体系を保持した。各節の下の施策・数値目標の全件列挙は行わない。レビュー済みレコード。",
+      "source_url": "https://www.city.shimonoseki.lg.jp/soshiki/1/127695.html",
+      "statement": "基本構想は、まちづくりの基本理念として『可能性を築くまち』（SHIMONOSEKI VISION）を掲げ、誰もが安心して未来を描いていける環境を整え、各々が個性を活かし、輝けるまちを市民と一緒に築くことを目指す。理念の展開は4つ（暮らし、コミュニティ、経済、環境）からなり、「Road to 2034」として10年後の下関の目標（下関は「住みやすいと思う」市民の割合88％から100％、「自分のまちとして愛着を感じる」市民の割合84％から100％、「住みたい/住み続けたいと思う」市民の割合70％から100％、若者（39歳以下）の社会減ゼロ）を掲げる。地域別まちづくりの方向性として都市拠点ゾーン、環境共生ゾーン（田園環境共生ゾーン・海岸環境共生ゾーン）、交流促進ゾーンと地域連携軸を示す。基本計画は8章（第1章 産業・就業、第2章 交流・にぎわい、第3章 こども・子育て・教育、第4章 健康・保健・福祉・医療、第5章 都市基盤・生活基盤、第6章 環境、第7章 安全・安心・共生・協働、第8章 行政経営）の39節からなる。本候補は章レベルの体系のみを保持し、各節の施策・数値目標の全件列挙と対応付けは行わない。",
+      "title": "基本理念『可能性を築くまち』と4つの展開、基本計画の章・節体系（8章・39節）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "実施計画の位置づけ（第3次総合計画の重点取り組み方針に向けて実施する主要な事業の計画）、計画期間（令和8年度～令和12年度）、事業数（37事業）と改定履歴（令和7年6月策定、令和7年9月第1次改定、令和8年9月第2次改定）は市公式『第3次下関市総合計画 実施計画』ページで確認した。基本計画自体の評価・検証の公表枠組みの詳細は同ページ等の公表範囲で確認できなかった",
+      "evidence_role": "progress_governance",
+      "id": "shimonoseki-progress-governance-framework",
+      "review_note": "進行管理の公式routeとして実施計画の策定・改定の仕組みを保持した。37事業の全件列挙と改定差分の展開は行わない。レビュー済みレコード。",
+      "source_url": "https://www.city.shimonoseki.lg.jp/soshiki/1/133270.html",
+      "statement": "第3次下関市総合計画の実施段階は、基本計画の下に置かれた実施計画によって具体化される。実施計画は同計画の重点取り組み方針に向けて実施する主要な事業の計画であり、現行版は令和8（2026）年度から令和12（2030）年度までの5年間・37事業からなる。令和7年6月に策定され、令和7年9月に第1次改定、令和8年9月に第2次改定が行われており、改定の履歴はversionとして分離して保持する。基本計画自体の評価・検証の公表枠組みの詳細は本候補の調査範囲では公式資料で確認できなかったため、未確認として保持する。自治体の進行管理の仕組みをJichi Insight独自の達成判定へ変換しない。",
+      "title": "計画の進行管理（実施計画の策定・改定による具体化）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "第2次計画から第3次計画への移行は市公式『第3次下関市総合計画』ページの参考リンク（第2次下関市総合計画 2015-2024、第2次下関市総合計画後期基本計画 2020-2024）と同ページの計画策定の趣旨（令和7年度からの10年間を期間とする第3次計画の策定）で確認した。次期計画の策定状況は同ページ等の公表範囲で確認できなかった",
+      "evidence_role": "plan_transition",
+      "id": "shimonoseki-plan-transition",
+      "review_note": "計画の世代間の移行と、次期計画の未確認状態を分離記録した。レビュー済みレコード。",
+      "source_url": "https://www.city.shimonoseki.lg.jp/soshiki/1/127695.html",
+      "statement": "下関市の総合計画は、第2次下関市総合計画（2015年度～2024年度、後期基本計画は2020年度～2024年度）から、令和7年3月に策定された第3次下関市総合計画（2025年度～2034年度）へ移行した。第2次計画の政策体系・事業・成果の全件列挙は本候補では行わない。次期（第4次）総合計画の策定状況は本候補の調査範囲では公式資料で確認できなかったため未確認として保持する。FY2024決算は第2次計画の最終年度の決算であり、現行の第3次計画とは計画の版が異なる。",
+      "title": "第2次下関市総合計画から第3次計画への移行と次期計画の策定状況"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "決算総額は決算書、計画の期間は計画ページで確認した。総額レベルの対応付けの不存在は、決算・計画の公表範囲で確認した",
+      "evidence_role": "annual_progress",
+      "fiscal_year": 2024,
+      "id": "shimonoseki-fy2024-settlement-linkage",
+      "review_note": "FY2024決算は第2次計画期間の決算であり現行の第3次計画とは版が異なり、総額レベルの対応付けもないため接続しないことを明記した。レビュー済みレコード。",
+      "source_url": "https://www.city.shimonoseki.lg.jp/soshiki/14/119898.html",
+      "statement": "FY2024決算は第2次下関市総合計画（2015年度～2024年度）期間の決算であり、現行の第3次下関市総合計画（2025年度～2034年度）とは計画の版が異なる。決算総額は一次資料で確認済みであるが、決算総額と計画の章・施策との総額レベルの対応付けは公式資料にないため、接続はnot_assessableとし、第2次計画期間の決算値を第3次計画のcurrent actualへ流用しない。なお議案第116号は令和7年第3回定例会で認定されており、接続判定は認定結果に依存しない。",
+      "title": "令和6年度決算と第3次下関市総合計画の政策体系の接続"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-16"
+}

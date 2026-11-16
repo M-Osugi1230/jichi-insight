@@ -718,9 +718,9 @@
       "prefecture_name_ja": "山口県",
       "municipality_type": "city",
       "phase14_role": "core_city",
-      "status": "pending_record_review",
+      "status": "reviewed_complete",
       "source_inventory_path": "data/indexed/shimonoseki-city/source_inventory.json",
-      "completion_path": null
+      "completion_path": "data/catalog/shimonoseki_phase15_completion.json"
     },
     {
       "sequence": 55,
@@ -894,11 +894,11 @@
   ],
   "summary": {
     "target_count": 67,
-    "reviewed_complete_count": 53,
+    "reviewed_complete_count": 54,
     "review_in_progress_count": 0,
-    "pending_record_review_count": 14,
+    "pending_record_review_count": 13,
     "blocked_source_inventory_count": 0,
-    "next_official_code": "352012"
+    "next_official_code": "352039"
   },
   "updated_at": "2026-11-16"
 }

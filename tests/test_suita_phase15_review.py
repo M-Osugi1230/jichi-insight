@@ -395,7 +395,7 @@ def test_suita_and_previous_thirty_six_are_reviewed_complete_and_takatsuki_is_ne
     ):
         assert by_code[code]["status"] == "reviewed_complete"
 
-    assert queue["summary"]["reviewed_complete_count"] == 53
+    assert queue["summary"]["reviewed_complete_count"] == 54
     assert queue["summary"]["review_in_progress_count"] == 0
-    assert queue["summary"]["pending_record_review_count"] == 14
-    assert queue["summary"]["next_official_code"] == "352012"
+    assert queue["summary"]["pending_record_review_count"] == 13
+    assert queue["summary"]["next_official_code"] == "352039"
