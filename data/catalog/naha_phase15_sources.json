@@ -1,0 +1,55 @@
+{
+  "id": "naha-phase15-sources",
+  "name_ja": "那覇市",
+  "official_code": "472018",
+  "phase": 15,
+  "quality_boundary": "Current plan identity kept as published (the Fifth Naha City Comprehensive Plan （第5次那覇市総合計画）: a three-layer plan of the basic concept, the basic plan and the implementation plan; the basic plan covers FY2018-FY2027 with the future image 『なはで暮らし、働き、育てよう！笑顔広がる元気なまちNAHA みんなでつなごう市民力』 and the five city images; the city-image-level structure is kept and the full enumeration of the policies and measures under the five images stays deferred depth; the period status stays transition_or_unresolved because formulation of the Sixth Naha City Comprehensive Plan has begun; the Sixth plan is kept separate as a plan transition and its content is never read forward into the current plan), progress governance (progress management through the three-year rolling implementation plan — currently the FY2026 implementation plan (FY2026-FY2028), kept as the municipality's own progress-management framework, together with the publication of indicator progress), budget enactment kept as printed in the council's official processing-results table (bill No. 22 （議案第22号）; the result wording is 原案可決（賛成多数） (adopted as proposed, by majority) on 2026-03-17, kept verbatim; a rearrangement motion against the bill was rejected on the same day) and the amount kept at the published sen-yen precision (185,220,000 thousand yen; finer yen amounts are never synthesized), and settlement totals kept at the published yen precision (revenue 185,140,399,109 yen / expenditure 178,147,629,486 yen; the formal balance of 6,992,769,623 yen checks out against the printed balance; the real balance of 5,963,603,975 yen is kept as printed in the settlement summary table; the settlement certification, certification bill No. 1 （認定第1号）, was certified on 2025-10-08 within the Reiwa 7 September regular session, confirmed through a supplementary live-browser investigation; ordinary-account aggregate figures are not used, because their aggregation scope differs from the general account) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "reviewed_at": "2026-11-17",
+  "sources": [
+    {
+      "evidence_location": "市の公式ページ『第5次那覇市総合計画とは』で、基本構想・基本計画・実施計画の3層構成、基本計画の期間（2018年度を初年度とする10年間）、実施計画の期間（3年間・毎年度見直し）、将来像、一部改訂（令和6年1月発行）の公表を直接確認した",
+      "evidence_role": "comprehensive_plan",
+      "format": "html",
+      "id": "naha-fifth-plan",
+      "official_url": "https://www.city.naha.okinawa.jp/admin/plans/1004118/1004121.html",
+      "title": "第5次那覇市総合計画",
+      "use_boundary": "「第5次那覇市総合計画」をcurrent versionとして保持し、策定中の第6次計画の内容をcurrentへ先取りしない"
+    },
+    {
+      "evidence_location": "市の公式ページ『令和8年度実施計画策定』で、令和8年度から令和10年度までを期間とする令和8年度実施計画（施策別）が策定されたこと、3年間を計画期間とし毎年度ローリングを行い予算編成の基礎となることを直接確認した",
+      "evidence_role": "implementation_plan",
+      "format": "html",
+      "id": "naha-implementation-2026-2028",
+      "official_url": "https://www.city.naha.okinawa.jp/admin/plans/1004118/1004119.html",
+      "title": "令和8年度実施計画（2026年度〜2028年度）",
+      "use_boundary": "令和8年度実施計画（2026年度〜2028年度）を現行計画のcurrent実施計画として保持する。基本計画の終期（2027年度）を1年越えるローリング構造をそのまま保持し、実施計画の期間で基本計画の期間を上書きしない"
+    },
+    {
+      "evidence_location": "市の公式ページ『第6次那覇市総合計画の策定に向けた取組み』で、第5次計画の計画期間が残り2年となり第6次計画の策定が開始されたこと（策定基本方針の公表、なはみらい会議による市民案の策定）を直接確認した",
+      "evidence_role": "plan_transition",
+      "format": "html",
+      "id": "naha-sixth-plan-transition",
+      "official_url": "https://www.city.naha.okinawa.jp/admin/plans/1012256/1012202.html",
+      "title": "第6次那覇市総合計画の策定に向けた取組み",
+      "use_boundary": "第6次計画は策定開始段階のtransition evidenceとして保持し、策定中の内容をcurrent recordへ昇格しない"
+    },
+    {
+      "evidence_location": "財政課の公式ページ『令和8年度（2026年度）予算』本文の一般会計予算額（1,852億2,000万円）と、同ページが公表する『令和8年度 予算総括表（企業会計を含む）』（単位：千円）の一般会計185,220,000千円を直接確認した。議決結果は市議会公式『令和8年（2026年）2月定例会 上程案件処理結果』で議案第22号・2026年3月17日・結果欄の文言「原案可決（賛成多数）」を直接確認し、組み替え動議の否決も同文書で確認した",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "naha-budget-2026",
+      "official_url": "https://www.city.naha.okinawa.jp/admin/nahashizaisei/1004386/1011083.html",
+      "title": "令和8年度（2026年度）予算",
+      "use_boundary": "FY2026当初予算は補正予算・決算と別stateで保持する。金額は千円単位の公表値であり、円単位を合成しない"
+    },
+    {
+      "evidence_location": "財政課の公式ページ『令和6年度（2024年度）決算』の本文と、同ページが公表する『令和6年度決算総括表』（単位：円）で、歳入決算額185,140,399,109円・歳出決算額178,147,629,486円・形式収支6,992,769,623円・実質収支5,963,603,975円を直接確認し、差引が検算一致することを確認した。決算の認定（認定第1号）は、実ブラウザによる補完調査で、市議会公式『令和7年（2025年）9月 那覇市議会定例会』ページの付議事件名表により2025年10月8日に認定されたことを確認し、議決日を特定した",
+      "evidence_role": "settlement",
+      "format": "html",
+      "id": "naha-settlement-2024",
+      "official_url": "https://www.city.naha.okinawa.jp/admin/nahashizaisei/1004409/1008734.html",
+      "title": "令和6年度（2024年度）決算",
+      "use_boundary": "FY2024決算は予算・補正と別stateで保持する。決算額は円単位の公表値のまま記録する。県の決算状況資料や財政状況資料集等の普通会計ベースの集計値と一般会計値を混同しない。決算の認定結果（認定第1号・令和7年9月定例会・2025年10月8日認定）は実ブラウザによる補完調査で確認した公式議決結果のまま記録する"
+    }
+  ]
+}
