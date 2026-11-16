@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-16",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "toyohashi-city-home",
+      "municipality_key": "toyohashi-city",
+      "organization": "豊橋市",
+      "category": "municipality_profile",
+      "title": "豊橋市公式サイト",
+      "url": "https://www.city.toyohashi.lg.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "豊橋市の公式自治体サイト。"
+    },
+    {
+      "id": "toyohashi-budget-2026",
+      "municipality_key": "toyohashi-city",
+      "organization": "豊橋市",
+      "category": "budget",
+      "title": "豊橋市の予算",
+      "url": "https://www.city.toyohashi.lg.jp/8815.htm",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算165,610,000千円のEvidence。議案第4号『令和8年度豊橋市一般会計予算』として令和8年3月定例会に提出され、予算特別委員会への付託を経て令和8年3月24日に原案可決された成立予算。金額は千円単位の公表値のまま記録し、円単位を合成しない。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "toyohashi-settlement-2024",
+      "municipality_key": "toyohashi-city",
+      "organization": "豊橋市",
+      "category": "settlement",
+      "title": "会計課決算書・決算付属書令和6年度",
+      "url": "https://www.city.toyohashi.lg.jp/63332.htm",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入153,279,132,232円・歳出151,163,708,560円を円単位で含む公式決算資料（令和6年度豊橋市一般会計・特別会計歳入歳出決算付属書）。決算の認定議案である議案第95号は令和7年9月定例会で不認定となった（認定されていない）。議決年月日そのものは未特定であり、市長通知（令和7年9月29日付）の日付は通知日であって議決日と断定しない。決算書（歳入歳出決算事項別明細書）の款別合計との突合は未実施。実質収支に関する調書の値は記録していない。"
+    }
+  ]
+}

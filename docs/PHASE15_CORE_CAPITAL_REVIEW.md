@@ -452,13 +452,25 @@ Declared v1 package:
 
 Deferred depth includes the field-level plans' measures and projects under the five policy fields, the Future Creation Comprehensive Strategy's KPI actuals, the final cross-check against the settlement detail book (事項別明細書) at section level, the FY2024 real balance (実質収支, not published in the settlement-by-account table), the predecessor framework (ぎふし未来地図) and the revised concept's framework, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Thirtieth completion — Toyohashi
+
+豊橋市を30番目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 第6次豊橋市総合計画 — a fixed-period three-layer comprehensive plan (basic concept / basic plan / implementation plan); the basic concept runs FY2021–FY2030 with the basic philosophy 『私たちがつくる 未来をつくる』 and the target city image 『未来を担う 人を育むまち・豊橋』; the basic plan moved from its first period (FY2021–FY2025) to the latter basic plan (FY2026–FY2030), which is the current plan; the latter basic plan's field plans hold eight fields and 38 policies (all 38 policies are enumerated), and the cross-field city-building strategy (まちづくり戦略) is positioned as the priority layer with four individual strategies and 13 basic policies; progress is managed by reviewing the implementation plan every year on a three-year rolling basis and mapping each project to the city-building strategy, with cross-field administrative operations carried in the implementation plan's 『基本計画推進のために』 chapter. The first-to-latter basic plan transition is kept only as a version chronology record
+- FY2026 general-account initial budget: 165,610,000 thousand yen (enacted; bill No. 4 『令和8年度豊橋市一般会計予算』, submitted to the March 2026 regular session, referred to the budget special committee and passed as proposed on 2026-03-24 per the council's official voting-results list; the official June 2026 supplementary-budget material carries the same current-budget total). The amount is published at sen-yen (thousand-yen) precision, so it is kept at that precision and yen-precision amounts are not synthesized
+- FY2024 general-account settlement at yen precision as published: revenue 153,279,132,232 yen / expenditure 151,163,708,560 yen (the balance of 2,115,423,672 yen is consistent with the published balance of 2,115,424 thousand yen (rounded) in the official settlement summary; the appendix's account-level table and section summary table agree). The settlement certification bill, bill No. 95 『令和6年度豊橋市一般会計歳入歳出決算認定について』, was voted NOT certified (不認定) at the September 2025 regular session, as confirmed by the mayor's official notification dated 2025-09-29; the rejection is recorded exactly as published and is never recorded as a certification. The exact vote date remains unidentified — the 2025-09-29 date is the notification date and is not asserted as the vote date. The December 2025 regular session received report No. 37 『決算不認定に係る措置について』 on the measures taken in response to the non-certification. FY2024 is a settlement of the first basic plan period (FY2021–FY2025), a different plan version from the latter basic plan, so the totals are not linked to the latter plan's policies or strategies and the linkage stays not_assessable
+
+Deferred depth includes the field plans' measures and projects under the 38 policies, the project linkage for each of the city-building strategy's 13 basic policies, cross-checks against the budget book and the settlement book (事項別明細書) at section level, the FY2024 real-balance statement values, the exact vote date of bill No. 95, the first basic plan's framework itself, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 29 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市
+- Reviewed complete: 30 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市
 - Review in progress: 0
-- Pending record review: 38
+- Pending record review: 37
 - Blocked source inventory: 0
-- Next official code: 232017
+- Next official code: 232025
 
 ## Definition of Phase 15 completion
 
