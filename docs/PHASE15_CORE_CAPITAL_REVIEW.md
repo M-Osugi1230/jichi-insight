@@ -836,13 +836,25 @@ Declared v1 package:
 
 Deferred depth includes the full enumeration of each of the ten fields' intended states and main points in the basic plan and the individual progress of the future co-creation plan's priority projects and KPIs and their correspondence to administrative evaluation results, cross-checks against the budget and settlement books （事項別明細書） at section level, the cross-check against the real-balance statement in the settlement book itself, the final confirmation of the certification vote date in the plenary-session minutes, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Sixty-second completion — Nagasaki
+
+長崎市を62番目の`reviewed_complete`へ昇格しました（2026-11-17、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 第五次長崎市総合計画 (the Fifth Nagasaki City Comprehensive Plan, adopted in February 2022) — the city's current top-level plan, in three layers: the basic concept (FY2022-FY2030, nine years), the basic plan (first period FY2022-FY2025; second period FY2026-FY2030, integrated with the Third Nagasaki City Machi-Hito-Shigoto Creation Comprehensive Strategy) and implementation plans of three years revised every fiscal year (current: FY2026-FY2028). The basic concept sets out the desired city image 『個性輝く世界都市』 (a world city shining with individuality) and the 2030 city vision 『希望あふれる人間都市』; the latter basic plan organises eight fields of community development (方針 A-H) and 27 measures （施策） under them, with the measures' main projects and KPIs. The field-level structure is kept; the full enumeration of the 27 measures and of their main projects and KPIs is not performed and stays deferred depth. Progress is managed through the municipality's own progress management (annual evaluation （毎年度評価） and the mid-term and final evaluation years of the basic plan). The period status stays verified_fixed_period as recorded in the Phase 14 inventory. The transition from the first-period basic plan (FY2022-FY2025) is kept separate as a plan transition, and the previous period's results are never read forward into the current plan
+- FY2026 general-account initial budget: 227,560,000 thousand yen (enacted). The result recorded for bill No. 13 『令和8年度長崎市一般会計予算』 in the council's official vote results for the February 2026 regular session （長崎市議会議決結果一覧）, whose summary column prints '3月12日 原案可決', is 原案可決 (adopted as proposed), and that wording is kept verbatim. The vote date is 2026-03-12. The amount was confirmed in the revenue and expenditure totals of the FY2026 initial budget overview （令和8年度長崎市当初予算の概要） and agrees with the budget scale table of the city's budget summary （令和8年度予算の概要）. The amount is kept at the published sen-yen (thousand-yen) precision and finer amounts are not synthesized
+- FY2024 general-account settlement at the man-yen (ten-thousand-yen) precision published in the audit committee's settlement review opinion （令和6年度長崎市各会計歳入歳出決算及び基金運用状況審査意見書，長監第36号， 2025-08-26): revenue 2,378億4,081万円 / expenditure 2,344億1,211万円 (their difference, the formal balance of 34億2,870万円， checks out arithmetically against the printed totals; the real balance is 11億3,830万円 as printed in the same table at the same man-yen precision — kept at the published man-yen precision and not expanded into a synthetic yen or thousand-yen figure; the precise figures in the settlement book itself could not be traced from the city's official pages and stay unconfirmed; ordinary-account aggregate figures are not used, because their aggregation scope differs from the general account). The settlement certification, bill No. 180, was certified at the September 2025 regular session, confirmed in the council's official vote results list whose summary column prints '11月25日 認定'; it was not rejected. The vote date is 2025-11-25. FY2024 is a settlement within the previous (first-period) basic plan period (FY2022-FY2025), so the plan version differs from the current latter basic plan, and no official total-level mapping from settlement totals to the previous plan's policy structure exists, so the totals are not linked to the plan's structure and the linkage stays not_assessable
+
+Deferred depth includes the confirmation of the settlement's precise figures in the settlement book itself, the full enumeration of the 27 measures of the latter basic plan and the individual progress of their main projects and KPIs, cross-checks against the budget and settlement books （事項別明細書） at section level, the cross-check against the real-balance statement in the settlement book itself, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 61 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市、姫路市、尼崎市、明石市、西宮市、奈良市、和歌山市、鳥取市、松江市、倉敷市、呉市、福山市、下関市、山口市、徳島市、高松市、松山市、高知市、久留米市、佐賀市
+- Reviewed complete: 62 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市、姫路市、尼崎市、明石市、西宮市、奈良市、和歌山市、鳥取市、松江市、倉敷市、呉市、福山市、下関市、山口市、徳島市、高松市、松山市、高知市、久留米市、佐賀市、長崎市
 - Review in progress: 0
-- Pending record review: 6
+- Pending record review: 5
 - Blocked source inventory: 0
-- Next official code: 422010
+- Next official code: 422029
 
 ## Definition of Phase 15 completion
 

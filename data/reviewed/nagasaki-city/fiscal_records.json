@@ -1,0 +1,65 @@
+[
+  {
+    "account_type": "general",
+    "amount_yen": 227560000000,
+    "confidence": "high",
+    "fiscal_year": 2026,
+    "id": "jp-local-422010-fiscal-2026-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算総額",
+    "municipality_id": "jp-local-422010",
+    "note": "長崎市の令和8年度一般会計当初予算総額227,560,000千円。長崎市財政課『令和8年度当初予算（案）について』（令和8年2月）の各会計別当初予算比較表で一般会計227,560,000千円を直接確認した。議案は第13号議案『令和8年度長崎市一般会計予算』であり、議決結果は市議会公式『令和8年第2回（2月）定例会議決結果一覧』の摘要欄で「3月12日 原案可決」と直接確認し、その文言のまま記録する（議決日は2026年3月12日。同定例会の会期は2月18日から3月12日までの23日間であり、賛否の状況でも原案可決を確認した）。公表精度は千円単位であり、その精度のまま記録し円単位を合成していない。補正予算や決算とは別stateで扱う。",
+    "period_end": "2027-03-31",
+    "period_start": "2026-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "nagasaki-budget-2026"
+    ],
+    "stage": "initial_budget",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 237840810000,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-422010-fiscal-2024-total-revenue",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入額",
+    "municipality_id": "jp-local-422010",
+    "note": "長崎市監査委員の決算審査意見書（令和6年度長崎市一般会計・特別会計歳入歳出決算審査意見書、長監第36号、令和7年8月26日）に一般会計の決算額として印字された令和6年度の歳入2,378億4,081万円。公表精度は万円単位であるため万円単位の公表値のまま記録し（千円換算237,840,810千円）、円単位・千円単位の精密値は決算書で未確認であり合成していない。当該決算の議案は第180号議案『令和6年度長崎市一般会計歳入歳出決算』として令和7年第5回（11月）定例会（会期11月25日から12月12日まで）に付議され、市議会公式の同定例会議決結果一覧の摘要欄で「11月25日 認定」と直接確認した（議決日は2025年11月25日）。決算カード・財政状況資料集等の普通会計ベースの集計値は一般会計とは集計範囲が異なるため使用していない。FY2024は第五次総合計画の前期基本計画（2022年度〜2025年度）期間の決算であり、後期基本計画の期間開始前の決算である。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "nagasaki-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 234412110000,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-422010-fiscal-2024-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出額",
+    "municipality_id": "jp-local-422010",
+    "note": "同じく決算審査意見書に印字された令和6年度の歳出2,344億1,211万円（千円換算234,412,110千円、万円単位の公表値のまま）。歳入決算額2,378億4,081万円との差引額（形式収支）は34億2,870万円（3,428,700千円）で、同審査意見書に印字された形式収支と検算一致する。実質収支は11億3,830万円（1,138,300千円）であり、同じく決算審査意見書に印字された実質収支の値を万円単位の公表値のまま記録する（財政課『令和6年度決算報告』でも差引約34億2,870万円のうち約22億9,040万円が翌年度へ繰り越すべき財源と公表されており、形式収支から繰越財源を差し引いた額と整合する）。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "nagasaki-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  }
+]

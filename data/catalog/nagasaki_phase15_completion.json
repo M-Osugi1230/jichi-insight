@@ -1,0 +1,61 @@
+{
+  "completed_at": "2026-11-17",
+  "completion_boundary": "長崎市のPhase 15 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味し、所有者（大杉邑大、単独運用体制）が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが長崎市公式サイトの一次資料で検証した結論に基づく（所有者本人が一次資料を直接レビューしたものではない）。長崎市の計画体系（第五次総合計画は、基本構想（2022年度〜2030年度・9年間）、基本計画（前期2022年度〜2025年度・後期2026年度〜2030年度。後期基本計画は第3期まち・ひと・しごと創生総合戦略と一体）、実施計画（3年計画・毎年度見直し、現行は2026年度〜2028年度）の3層で構成される。基本構想はめざす都市像『個性輝く世界都市』を掲げ、計画の最終年度である2030年の姿として『希望あふれる人間都市』を描き、8つのまちづくりの方針（方針A〜H）を定め、後期基本計画は方針に対応する27の施策を置く。方針レベルの体系は保持したが、27施策ごとの成果指標・目標値の全件列挙は行わず、追加depthとして保持する。進行管理は、毎年度評価（市内部の評価と長崎市総合計画審議会による評価）により行う。各層の期間を別period semanticsとして保持し、period_statusはPhase 14インベントリどおりverified_fixed_periodを保持する。前期基本計画から後期基本計画への移行は移行記録として分離して保持する）、成立したFY2026一般会計当初予算（227,560,000千円。第13号議案『令和8年度長崎市一般会計予算』の議決結果は、市議会公式『令和8年第2回（2月）定例会議決結果一覧』の摘要欄で「3月12日 原案可決」と直接確認し、その文言のまま記録した。議決日は2026年3月12日。金額は財政課『令和8年度当初予算（案）について』（令和8年2月）の各会計別当初予算比較表で一般会計227,560,000千円と確認した。公表精度は千円単位のため、その精度（千円単位）のまま記録し、円単位を合成していない）、FY2024一般会計決算の公表値（歳入2,378億4,081万円・歳出2,344億1,211万円、歳入歳出差引額（形式収支）34億2,870万円が監査委員の決算審査意見書の印字値と検算一致することを確認した）を一次資料で確認した。公表精度は万円単位であり、円単位・千円単位の精密値は決算書で未確認のため、万円単位の公表値のまま記録し精密値を合成していない。決算の認定である第180号議案は、令和7年第5回（11月）定例会で認定されたことを市議会公式の議決結果一覧の摘要欄（「11月25日 認定」）で確認し、認定の事実をそのまま記録した（議決日は2025年11月25日）。実質収支額は11億3,830万円（決算審査意見書に万円単位で印字された公表値であり、万円単位のまま記録する）である。財政状況資料集等の普通会計ベースの集計値は一般会計とは集計範囲が異なるため使用していない。FY2024は前期基本計画期間の決算で計画の版は現行の後期基本計画と異なるため、決算総額と前期基本計画の施策体系との総額レベルの対応付けは公式資料に示されておらず、接続はnot_assessableのまま保持する。予算・決算の事項別明細書の款別合計との最終突合、決算書における円単位・千円単位の精密値の確認、決算書の実質収支に関する調書そのものの値との突合は未実施であり、残存事項として保持する。",
+  "completion_depth": "declared_review_package_v1",
+  "deferred_depth": [
+    {
+      "boundary": "後期基本計画27施策ごとの成果指標・目標値の全件列挙と、実施計画（令和8〜10年度）の主要事業・KPIの個別進捗、施策評価結果との対応付けは追加depthとし、公式対応が確認できるまで昇格しない。方針レベルの体系自体は候補に保持するが、施策・事業単位の対応付けは行わない。",
+      "id": "current-plan-granular-kpi-and-project-linkage",
+      "status": "deferred_not_required_for_v1_completion"
+    },
+    {
+      "boundary": "FY2026当初予算の金額（227,560,000千円）と議決結果の文言（原案可決・議決日2026年3月12日）は一次資料で確認し候補に反映している。FY2024決算の歳入・歳出・形式収支・実質収支は決算審査意見書の万円単位の公表値で確認し、認定議案の認定も議決結果一覧で確認して候補に反映している。一方、予算・決算の事項別明細書の款別合計との最終突合、決算書における円単位・千円単位の精密値の確認、決算書の実質収支に関する調書そのものの値との突合は未実施のまま保持する。",
+      "id": "fiscal-detail-reconciliation",
+      "status": "deferred_not_required_for_v1_completion"
+    },
+    {
+      "boundary": "前期基本計画の施策体系の全件列挙と前期期間の評価結果は本候補では保持しない。前期基本計画と後期基本計画の期間と版の分離のみを保持し、一方を他方で上書きしない。",
+      "id": "plan-transition-version-depth",
+      "status": "deferred_not_required_for_v1_completion"
+    },
+    {
+      "boundary": "長崎市の総合計画・進捗管理・財政等のステージングは政策効果の因果認定や他都市比較可能性を意味しない。進捗管理（自治体の毎年度評価の仕組み）をJichi Insight独自の達成判定へ変換しない。",
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion"
+    }
+  ],
+  "id": "nagasaki-phase15-completion",
+  "name_ja": "長崎市",
+  "official_code": "422010",
+  "phase": 15,
+  "quality_gate": {
+    "budget_enactment_state_preserved": true,
+    "current_plan_period_reviewed": true,
+    "current_plan_policy_structure_reviewed": true,
+    "declared_package_schema_validated": true,
+    "fiscal_states_and_years_separate": true,
+    "implementation_plan_layer_reviewed": true,
+    "individual_implementation_items_not_overpromoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "no_independent_policy_achievement_promoted": true,
+    "official_source_lineage_preserved": true,
+    "regression_suite_required_before_merge": true,
+    "settlement_linkage_not_assessable_preserved": true
+  },
+  "review_package": {
+    "counts": {
+      "basic_goals": 8,
+      "basic_plan_measures": 0,
+      "fiscal_top_line_records": 3,
+      "promoted_implementation_item_actual_records": 0
+    },
+    "fiscal_evidence_path": "data/reviewed/nagasaki-city/evidence_packets.json",
+    "fiscal_records_path": "data/reviewed/nagasaki-city/fiscal_records.json",
+    "plan_review_path": "data/reviewed/nagasaki-city/plan_review.json",
+    "policy_structure_path": "data/catalog/nagasaki_current_policy_structure.json",
+    "progress_review_path": "data/catalog/nagasaki_current_progress_review_summary.json",
+    "source_catalog_path": "data/catalog/nagasaki_phase15_sources.json"
+  },
+  "status": "reviewed_complete"
+}

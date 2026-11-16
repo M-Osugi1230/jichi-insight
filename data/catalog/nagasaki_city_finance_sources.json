@@ -1,0 +1,49 @@
+{
+  "records": [
+    {
+      "availability": "published",
+      "category": "municipality_profile",
+      "confidence": "high",
+      "id": "nagasaki-city-home",
+      "indexed_at": "2026-11-17",
+      "municipality_key": "nagasaki-city",
+      "notes": "長崎市の公式自治体サイト。",
+      "organization": "長崎市",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "長崎市公式サイト",
+      "url": "https://www.city.nagasaki.lg.jp/"
+    },
+    {
+      "availability": "published",
+      "category": "budget",
+      "confidence": "high",
+      "id": "nagasaki-budget-2026",
+      "indexed_at": "2026-11-17",
+      "municipality_key": "nagasaki-city",
+      "notes": "一般会計当初予算227,560,000千円（千円精度）のEvidence。市公式『令和8年度当初予算（案）について』（財政課、令和8年2月）の各会計別当初予算比較表で一般会計227,560,000千円を直接確認した。議決結果は市議会公式『令和8年第2回（2月）定例会議決結果一覧』の摘要欄で第13号議案『令和8年度長崎市一般会計予算』の議決結果が「3月12日 原案可決」であることを直接確認し、その文言のまま記録した（議決日は2026年3月12日。同定例会の会期は2月18日から3月12日までの23日間であり、賛否の状況でも原案可決を確認した）。千円単位の公表値のまま記録し、円単位を合成しない。補正後予算・執行・決算とは分離する。",
+      "organization": "長崎市",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "令和8年度予算",
+      "url": "https://www.city.nagasaki.lg.jp/life/7/52/315/"
+    },
+    {
+      "availability": "published",
+      "category": "settlement",
+      "confidence": "high",
+      "id": "nagasaki-settlement-2024",
+      "indexed_at": "2026-11-17",
+      "municipality_key": "nagasaki-city",
+      "notes": "一般会計歳入2,378億4,081万円・歳出2,344億1,211万円（いずれも万円単位の公表値）を含む公式決算資料の入口。一般会計の決算額は長崎市監査委員の決算審査意見書（令和6年度長崎市一般会計・特別会計歳入歳出決算審査意見書、長監第36号、令和7年8月26日）で確認し、歳入歳出差引額（形式収支）34億2,870万円が同審査意見書に印字された形式収支と検算一致した。実質収支は11億3,830万円（同じく決算審査意見書に印字された万円単位の公表値のまま記録し、円単位・千円単位の精密値は決算書で未確認であり合成しない）。決算の認定は第180号議案『令和6年度長崎市一般会計歳入歳出決算』として令和7年第5回（11月）定例会で認定された（市議会公式の同定例会議決結果一覧の摘要欄で「11月25日 認定」を確認、議決日は2025年11月25日）。同ページが案内する財政状況資料集等の普通会計ベースの集計値は一般会計の値とは集計範囲が別のため使用していない。決算事項別明細書の款別合計との最終突合と、決算書の実質収支に関する調書そのものの値との突合は未実施である。",
+      "organization": "長崎市",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "財政（予算・決算）",
+      "url": "https://www.city.nagasaki.lg.jp/life/7/52/"
+    }
+  ],
+  "scope": "phase15-core-capital-review",
+  "updated_at": "2026-11-17",
+  "version": "0.1.0"
+}
