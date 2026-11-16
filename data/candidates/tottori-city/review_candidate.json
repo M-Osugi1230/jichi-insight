@@ -1,0 +1,380 @@
+{
+ "candidate_id": "tottori-phase15-review-candidate",
+ "candidate_package": {
+  "evidence_packets": [
+   {
+    "claims": [
+     {
+      "decision": "needs_review",
+      "field": "amount_yen",
+      "location_note": "発表資料『令和8年度予算案について』（2026年2月5日）で骨格予算としての公表（一般会計1,087億円・百万円精度）を確認し、千円精度の確定は議案第70号の附議案案件（補正前108,700,000千円・補正額80,802千円・補正後108,780,802千円）と『令和8年度5月臨時補正予算（案）の概要』（2026年4月30日・現計予算額108,700,000千円）で行った。市議会公式『令和8年2月定例会議決結果』（PDF）はテキスト取得で内容を読み取ることができなかった",
+      "review_note": "骨格予算としての公表と補正予算の系譜から当初予算額を千円精度で特定したステージング。当初予算そのものの議決経過（議案番号・議決日・結果文言）は未確認であり、その旨を明記している。人間による確認待ちステージング。",
+      "source_ids": [
+       "tottori-budget-2026"
+      ],
+      "statement": "令和8年度一般会計当初予算は108,700,000千円（108,700,000,000円）であり、市長選挙（2026年3月29日執行）を控えた骨格予算である。金額は補正予算（第1号）（議案第70号）の「補正前」額と5月臨時補正予算（案）の概要の「現計予算額」で千円精度のまま確認した。当初予算そのものの議案番号・議決日・議決結果の文言は未確認である。公表精度は千円単位のため千円精度のまま記録する。"
+     }
+    ],
+    "id": "evidence-tottori-city-2026-total-expenditure",
+    "open_questions": [
+     "当初予算そのものの議案番号・議決日・議決結果の文言の特定。",
+     "予算書・予算に関する説明書（事項別明細書）の款別合計との最終突合。"
+    ],
+    "review_status": "needs_review",
+    "subject_id": "jp-local-312010-fiscal-2026-total-expenditure",
+    "subject_type": "fiscal_record"
+   },
+   {
+    "claims": [
+     {
+      "decision": "needs_review",
+      "field": "amount_yen",
+      "location_note": "決算書の一般会計歳入の合計行で収入済額113,544,636,161円（調定額117,995,392,018円・不納欠損額130,670,861円・収入未済額4,331,153,071円）を確認した。市議会公式『令和7年9月定例会議決結果』（PDF）はテキスト取得で読み取ることができなかった",
+      "review_note": "決算書から一般会計歳入総額を円単位で抽出したステージング。認定の成否は未確認のまま保持し、断定していない。人間による確認待ちステージング。",
+      "source_ids": [
+       "tottori-settlement-2024"
+      ],
+      "statement": "令和6年度一般会計決算の歳入総額は113,544,636,161円である（『令和6年度鳥取市歳入歳出決算書』による。円単位）。当該決算は議案第106号として市議会へ提出され決算審査特別委員会で審査されたが、認定の成否と議決日は未確認である。"
+     }
+    ],
+    "id": "evidence-tottori-city-2024-total-revenue",
+    "open_questions": [
+     "議案第106号の認定の成否と本会議における議決日の特定。",
+     "決算書（歳入歳出決算事項別明細書）の款別合計との最終突合。",
+     "監査委員の決算審査意見書の内容（個別の指摘事項等）の精査。"
+    ],
+    "review_status": "needs_review",
+    "subject_id": "jp-local-312010-fiscal-2024-total-revenue",
+    "subject_type": "fiscal_record"
+   },
+   {
+    "claims": [
+     {
+      "decision": "needs_review",
+      "field": "amount_yen",
+      "location_note": "決算書の一般会計歳出の合計行で支出済額111,377,983,188円（翌年度繰越額4,405,350,754円・不用額4,481,664,017円）と歳入歳出差引残額2,166,652,973円を確認した。実質収支は実質収支に関する調書（千円単位）の2,017,634千円（差引2,166,653千円－繰越明許費繰越額149,019千円）による",
+      "review_note": "決算書から一般会計歳出総額を円単位で抽出し、歳入総額との差引残額が検算一致することを確認したステージング。実質収支は調書の千円精度のまま保持する。人間による確認待ちステージング。",
+      "source_ids": [
+       "tottori-settlement-2024"
+      ],
+      "statement": "令和6年度一般会計決算の歳出総額は111,377,983,188円である（同決算書による。円単位）。歳入総額113,544,636,161円との差引残額は2,166,652,973円で、同書の記載と検算一致する。実質収支は2,017,634千円であり、実質収支に関する調書の公表精度が千円単位のため千円精度のまま記録する。"
+     }
+    ],
+    "id": "evidence-tottori-city-2024-total-expenditure",
+    "open_questions": [
+     "決算書（歳入歳出決算事項別明細書）の款別合計との最終突合。"
+    ],
+    "review_status": "needs_review",
+    "subject_id": "jp-local-312010-fiscal-2024-total-expenditure",
+    "subject_type": "fiscal_record"
+   }
+  ],
+  "fiscal_records": [
+   {
+    "account_type": "general",
+    "amount_yen": 108700000000,
+    "confidence": "medium",
+    "fiscal_year": 2026,
+    "id": "jp-local-312010-fiscal-2026-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算総額",
+    "municipality_id": "jp-local-312010",
+    "note": "鳥取市の令和8年度一般会計当初予算総額108,700,000千円。市長選挙（2026年3月29日執行）を控えた骨格予算であり、発表資料『令和8年度予算案について』（2026年2月5日）では一般会計1,087億円（百万円精度・対前年度▲15億円・伸び率▲1.4%）と公表された。千円精度の額は、令和8年第2回臨時会で原案可決（全会一致）された一般会計補正予算（第1号）（議案第70号・2026年5月8日議決）の「補正前 108,700,000千円」（補正額80,802千円を追加し補正後108,780,802千円）と、2026年4月30日付『令和8年度5月臨時補正予算（案）の概要』の「現計予算額 108,700,000千円」で確認した。その後の系譜は補正予算（第2号）（議案第75号・+3,128,673千円→111,909,475千円）、補正予算（第3号）（議案第117号・+706,949千円→112,616,424千円）である。当初予算そのものの議案番号・議決日・議決結果の文言は、市議会公式『令和8年2月定例会議決結果』等の資料をテキスト取得で読み取ることができず未確認であり、断定していない。公表精度は千円単位であり、その精度のまま記録し円単位を合成していない。補正予算や決算とは別stateで扱う。",
+    "period_end": "2027-03-31",
+    "period_start": "2026-04-01",
+    "review_status": "needs_review",
+    "sources": [
+     "tottori-budget-2026"
+    ],
+    "stage": "initial_budget",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+   },
+   {
+    "account_type": "general",
+    "amount_yen": 113544636161,
+    "confidence": "medium",
+    "fiscal_year": 2024,
+    "id": "jp-local-312010-fiscal-2024-total-revenue",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入額",
+    "municipality_id": "jp-local-312010",
+    "note": "鳥取市公式『令和6年度鳥取市歳入歳出決算書』（議案第106号『令和6年度鳥取市歳入歳出各会計決算認定について』・2025年9月1日提出）に示された一般会計の収入済額113,544,636,161円。円単位の精密値が公式資料に印字されているため円単位のまま記録する（予算現額120,264,997,959円・調定額117,995,392,018円・不納欠損額130,670,861円・収入未済額4,331,153,071円）。当該決算は決算審査特別委員会で審査された（2025年10月2日に分科会長報告・質疑・討論・採決）。議案第106号の認定の成否と本会議の議決日は、市議会公式『令和7年9月定例会議決結果』をテキスト取得で読み取ることができず未確認であり、断定していない。FY2024は旧・第11次鳥取市総合計画（基本計画2021年度～2025年度）の期間内の決算である。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "needs_review",
+    "sources": [
+     "tottori-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+   },
+   {
+    "account_type": "general",
+    "amount_yen": 111377983188,
+    "confidence": "medium",
+    "fiscal_year": 2024,
+    "id": "jp-local-312010-fiscal-2024-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出額",
+    "municipality_id": "jp-local-312010",
+    "note": "同じく決算書に示された一般会計の支出済額111,377,983,188円（円単位のまま記録。翌年度繰越額4,405,350,754円・不用額4,481,664,017円）。歳入総額113,544,636,161円との差引残額は2,166,652,973円で、決算書の記載（うち基金繰入額0円）と検算一致する。実質収支は、決算書の実質収支に関する調書（千円単位）が示す2,017,634千円である（差引2,166,653千円－翌年度へ繰り越すべき財源149,019千円（繰越明許費繰越額のみ）＝2,017,634千円で検算一致）。調書の公表精度が千円単位のため実質収支は千円精度のまま記録し、円単位を合成していない。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "needs_review",
+    "sources": [
+     "tottori-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+   }
+  ],
+  "plan_review": {
+   "id": "phase15-tottori-plan-review",
+   "name_ja": "鳥取市",
+   "official_code": "312010",
+   "records": [
+    {
+     "decision": "needs_review",
+     "evidence_location": "鳥取市公式『第12次鳥取市総合計画』ページで、計画の構成と期間（基本構想2026年度～令和17年度・基本計画/実施計画2026年度～令和12年度）、まちづくりの理念、めざす将来像を直接確認した",
+     "evidence_role": "current_plan_identity",
+     "id": "tottori-current-plan-period",
+     "review_note": "総合計画の構成（基本構想・基本計画・実施計画）と各層の期間を別period semanticsとして保持した。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.tottori.lg.jp/site/keikakusenryaku/34054.html",
+     "statement": "鳥取市の現行総合計画は第12次鳥取市総合計画（2026年3月策定）であり、基本構想・基本計画・実施計画の3層で構成される。基本構想の計画期間は2026年度～2035年度の10年間、基本計画は2026年度～2030年度の5年間、実施計画は2026年度～2030年度を期間として毎年度見直しを行う。まちづくりの理念は『挑戦・協働・共生・誇り』、めざす将来像は『一人ひとりが自分の力を発揮でき、支え合いながら ともに豊かに暮らせる鳥取市〜オアシスとっとり〜』である。第12次総合計画の重点施策として、鳥取市地方創生アクションプラン（第3期鳥取市創生総合戦略）の施策が位置付けられる。各層の期間を別period semanticsとして保持し、一律の固定期間へ潰さない。Phase 14インベントリのperiod_statusはverified_fixed_periodである。",
+     "title": "第12次鳥取市総合計画の構成（基本構想2026年度～2035年度・基本計画/実施計画2026年度～2030年度）",
+     "value": "第12次鳥取市総合計画は基本構想2026年度～2035年度（10年）／基本計画2026年度～2030年度（5年）／実施計画2026年度～2030年度で毎年度見直し／FY2024決算は旧・第11次計画の期間の決算"
+    },
+    {
+     "decision": "needs_review",
+     "evidence_location": "鳥取市公式『第12次鳥取市総合計画』ページの基本計画の体系（計画推進における基本方針4件・まちづくりの目標4件・政策11件）を直接確認した",
+     "evidence_role": "policy_structure",
+     "id": "tottori-current-policy-structure",
+     "review_note": "基本計画の政策体系（4つのまちづくりの目標・11政策）を政策単位で保持した。政策の下の基本施策・事業単位の対応付けは行わない。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.tottori.lg.jp/site/keikakusenryaku/34054.html",
+     "statement": "基本計画は、計画推進における基本方針4件（協働・連携の推進／スマートシティの推進／効率的な行財政運営の推進／戦略的な自治体経営の推進）のもとに、4つのまちづくりの目標と11の政策を体系付ける。目標1『未来を創る人材を育み、ひとりひとりが活躍するまち』は2政策（政策1 こども／政策2 教育・スポーツ）、目標2『誰もが自分らしく暮らし続けることができる、持続可能な地域共生のまち』は3政策（政策1 福祉／政策2 保健・医療／政策3 人権・共生・協働）、目標3『ひと、もの、ことが行きかい、にぎわいあふれるまち』は4政策（政策1 商工業・農林水産業／政策2 移住定住・関係人口・観光／政策3 文化芸術・文化財／政策4 生活基盤・市街地・中山間地域・交通）、目標4『豊かな自然と調和して、安全・安心に暮らせるまち』は2政策（政策1 防災・防犯／政策2 環境）である。各政策の下の基本施策・事業単位の対応付けは行わない。",
+     "title": "基本計画の政策体系（4つのまちづくりの目標・11政策）"
+    },
+    {
+     "decision": "needs_review",
+     "evidence_location": "計画公式ページで実施計画が毎年度見直しであることと、地方創生アクションプランが重点施策と位置付けられることを確認し、Phase 14インベントリのprogress governance入口とあわせて保持した",
+     "evidence_role": "progress_governance",
+     "id": "tottori-progress-governance-framework",
+     "review_note": "進行管理の枠組み（実施計画の毎年度見直しとアクションプランの位置付け）を年度実績へ読み替えず保持した。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.tottori.lg.jp/site/keikakusenryaku/list161-570.html",
+     "statement": "第12次鳥取市総合計画の進行管理は、基本計画で定めた基本施策に基づく実施計画（2026年度～2030年度）を毎年度見直す自治体の枠組みによる。あわせて鳥取市地方創生アクションプラン（第3期鳥取市創生総合戦略）の施策を総合計画の重点施策と位置付け、3つの柱（I 持続的に成長し、稼げる「強い」経済／II 魅力と活力あふれる「豊かな」生活環境／III 誰もが選びたくなる 新しい鳥取・楽しい鳥取）のもとで推進する。自治体の見直し・進捗公表をJichi Insight独自の達成判定へ変換しない。",
+     "title": "計画の進行管理（実施計画の毎年度見直しと地方創生アクションプラン）"
+    },
+    {
+     "decision": "needs_review",
+     "evidence_location": "第11次計画の構成・期間は市公式『第11次鳥取市総合計画』ページで確認した。第12次計画の開始は第12次計画公式ページによる",
+     "evidence_role": "plan_transition",
+     "id": "tottori-plan-transition",
+     "review_note": "第11次計画から第12次計画への移行を版の履歴として分離記録した。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.tottori.lg.jp/site/keikakusenryaku/34054.html",
+     "statement": "前計画の第11次鳥取市総合計画（2021年3月策定）は基本構想2021年度～2030年度（10年）・基本計画2021年度～2025年度（5年）・実施計画は基本計画の期間内で3年以内（毎年度見直し）の構成であり、FY2024決算はこの第11次計画の基本計画期間内の決算である。第12次総合計画は2026年度から開始し、第11次基本構想の名目上の終期（2030年度）に先立って置き換わる。移行は版の履歴として分離して記録し、第11次計画期間の決算を第12次計画の実績へ流用しない。",
+     "title": "第11次総合計画から第12次総合計画への移行"
+    },
+    {
+     "decision": "not_assessable",
+     "evidence_location": "決算総額は『令和6年度鳥取市歳入歳出決算書』、計画の版関係は第11次・第12次各総合計画の公式ページで確認した。総額レベルの対応付けの不存在は、決算・計画の公表範囲で確認した",
+     "evidence_role": "annual_progress",
+     "fiscal_year": 2024,
+     "id": "tottori-fy2024-settlement-linkage",
+     "review_note": "計画の版が異なり、かつ総額レベルの対応付けがないため接続しないことを明記した。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.tottori.lg.jp/page/20004.html",
+     "statement": "FY2024決算は旧・第11次鳥取市総合計画（基本計画2021年度～2025年度）の期間内の決算であり、現行の第12次総合計画（2026年度開始）とは計画の版が異なる。決算総額（円単位）は一次資料で確認済みであるが、決算総額と第11次計画・第12次計画のいずれの政策体系との総額レベルの対応付けも公式資料にないため、接続はnot_assessableとし、決算値を計画のcurrent actualへ流用しない。なお議案第106号の認定の成否は未確認であり、接続判定は認定結果に依存しない。",
+     "title": "令和6年度決算と総合計画の政策体系の接続"
+    }
+   ],
+   "review_status": "pending_record_review"
+  },
+  "policy_structure": {
+   "current_plan": {
+    "end_fiscal_year": 2030,
+    "management_principles": [
+     "総合計画は第12次鳥取市総合計画（2026年3月策定）であり、基本構想（2026年度～2035年度の10年）・基本計画（2026年度～2030年度の5年）・実施計画（2026年度～2030年度・毎年度見直し）の3層で構成する。各層の期間を別period semanticsとして保持し、一律の固定期間modelへ潰さない（period_statusはPhase 14インベントリどおりverified_fixed_period）",
+     "基本計画は計画推進における基本方針4件（協働・連携の推進／スマートシティの推進／効率的な行財政運営の推進／戦略的な自治体経営の推進）のもとに4つのまちづくりの目標・11政策を置く。各政策の下の基本施策・事業・指標の全件列挙は本候補では行わず、追加depthとして保持する",
+     "進行管理は、実施計画を毎年度見直す自治体の枠組みによる。地方創生アクションプラン（第3期鳥取市創生総合戦略）の施策は総合計画の重点施策と位置付けられる。自治体の見直し・進捗公表をJichi Insight独自の達成判定へ変換しない",
+     "FY2024決算は旧・第11次鳥取市総合計画（基本計画2021年度～2025年度）の期間内の決算であり、現行の第12次計画とは版が異なる。決算総額（円単位）は一次資料で確認済みであるが、決算総額と政策体系との総額レベルの対応付けは公式資料にないため、決算値を計画のcurrent actualへ流用しない"
+    ],
+    "period_status": "verified_fixed_period",
+    "policy_fields": [
+     {
+      "id": "field-1",
+      "measures": [],
+      "name_ja": "まちづくりの目標1 未来を創る人材を育み、ひとりひとりが活躍するまち：政策1 こども"
+     },
+     {
+      "id": "field-2",
+      "measures": [],
+      "name_ja": "まちづくりの目標1 未来を創る人材を育み、ひとりひとりが活躍するまち：政策2 教育・スポーツ"
+     },
+     {
+      "id": "field-3",
+      "measures": [],
+      "name_ja": "まちづくりの目標2 誰もが自分らしく暮らし続けることができる、持続可能な地域共生のまち：政策1 福祉"
+     },
+     {
+      "id": "field-4",
+      "measures": [],
+      "name_ja": "まちづくりの目標2 誰もが自分らしく暮らし続けることができる、持続可能な地域共生のまち：政策2 保健・医療"
+     },
+     {
+      "id": "field-5",
+      "measures": [],
+      "name_ja": "まちづくりの目標2 誰もが自分らしく暮らし続けることができる、持続可能な地域共生のまち：政策3 人権・共生・協働"
+     },
+     {
+      "id": "field-6",
+      "measures": [],
+      "name_ja": "まちづくりの目標3 ひと、もの、ことが行きかい、にぎわいあふれるまち：政策1 商工業・農林水産業"
+     },
+     {
+      "id": "field-7",
+      "measures": [],
+      "name_ja": "まちづくりの目標3 ひと、もの、ことが行きかい、にぎわいあふれるまち：政策2 移住定住・関係人口・観光"
+     },
+     {
+      "id": "field-8",
+      "measures": [],
+      "name_ja": "まちづくりの目標3 ひと、もの、ことが行きかい、にぎわいあふれるまち：政策3 文化芸術・文化財"
+     },
+     {
+      "id": "field-9",
+      "measures": [],
+      "name_ja": "まちづくりの目標3 ひと、もの、ことが行きかい、にぎわいあふれるまち：政策4 生活基盤・市街地・中山間地域・交通"
+     },
+     {
+      "id": "field-10",
+      "measures": [],
+      "name_ja": "まちづくりの目標4 豊かな自然と調和して、安全・安心に暮らせるまち：政策1 防災・防犯"
+     },
+     {
+      "id": "field-11",
+      "measures": [],
+      "name_ja": "まちづくりの目標4 豊かな自然と調和して、安全・安心に暮らせるまち：政策2 環境"
+     }
+    ],
+    "start_fiscal_year": 2026,
+    "title": "第12次鳥取市総合計画 基本計画（2026年度～2030年度）",
+    "vision": "一人ひとりが自分の力を発揮でき、支え合いながら ともに豊かに暮らせる鳥取市〜オアシスとっとり〜"
+   },
+   "id": "tottori-current-policy-structure",
+   "name_ja": "鳥取市",
+   "official_code": "312010",
+   "phase": 15
+  },
+  "progress_review": {
+   "id": "tottori-current-progress-review-summary",
+   "implementation_plan_framework": {
+    "evaluation_structure": "進行管理は、基本計画で定めた基本施策に基づく実施計画を毎年度見直す自治体の枠組みであり、地方創生アクションプラン（第3期鳥取市創生総合戦略）の施策を重点施策として一体的に推進する。自治体の見直し・進捗公表をJichi Insight独自の達成判定へ変換せず、枠組みそのものを年度実績へ読み替えない",
+    "period": "実施計画（2026年度～2030年度）の期間を通じて、毎年度の見直しのもとで進捗管理を行う。FY2024決算は旧・第11次計画の期間内の決算で計画の版が現行と異なり、決算総額（円単位）は一次資料で確認済みであるが、決算総額と政策体系との総額レベルの対応付けは公式資料にないため、進行管理の対象値として接続しない",
+    "title": "第12次鳥取市総合計画 実施計画（2026年度～2030年度）の毎年度見直しによる進行管理"
+   },
+   "name_ja": "鳥取市",
+   "official_code": "312010",
+   "phase": 15,
+   "review_status": "review_candidate_staging"
+  },
+  "source_catalog": {
+   "id": "tottori-phase15-sources",
+   "name_ja": "鳥取市",
+   "official_code": "312010",
+   "phase": 15,
+   "sources": [
+    {
+     "evidence_location": "計画の構成・期間・理念・将来像・政策体系は市公式『第12次鳥取市総合計画』ページで直接確認した。基本構想は2026年度～2035年度、基本計画・実施計画は2026年度～2030年度（実施計画は毎年度見直し）、まちづくりの目標4件と政策11件を同ページで確認した",
+     "evidence_role": "comprehensive_plan",
+     "format": "html",
+     "id": "tottori-twelfth-plan",
+     "official_url": "https://www.city.tottori.lg.jp/site/keikakusenryaku/34054.html",
+     "title": "第12次鳥取市総合計画",
+     "use_boundary": "現行計画は第12次鳥取市総合計画として保持し、基本構想・基本計画・実施計画のlayer semanticsを分離する。第11次計画期間の実績を現行計画のcurrent actualへ流用しない",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    },
+    {
+     "evidence_location": "第12次総合計画の重点施策と位置付けられる鳥取市地方創生アクションプラン（第3期鳥取市創生総合戦略）の公式運用入口（Phase 14インベントリで確認）。3つの柱は令和8年度予算発表資料でも確認した",
+     "evidence_role": "progress_governance",
+     "format": "html",
+     "id": "tottori-action-plan-progress",
+     "official_url": "https://www.city.tottori.lg.jp/site/keikakusenryaku/list161-570.html",
+     "title": "第12次総合計画・地方創生アクションプラン",
+     "use_boundary": "アクションプランの掲載・進捗公表を達成実績や政策効果と同一視しない。実施計画の進捗と財政決算は別Evidence roleとして保持する",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    },
+    {
+     "evidence_location": "FY2026当初予算は市長選挙（2026年3月29日執行）を控えた骨格予算。一般会計当初予算額108,700,000千円は、令和8年第2回臨時会で議決された一般会計補正予算（第1号）（議案第70号）の「補正前 108,700,000千円」と、2026年4月30日付『令和8年度5月臨時補正予算（案）の概要』の「現計予算額 108,700,000千円」で確認した（発表資料『令和8年度予算案について』（2026年2月5日）の百万円精度公表1,087億円とも一致）。当初予算そのものの議案番号・議決日・議決結果の文言は、市議会公式の議決結果資料をテキスト取得で読み取れず未確認である",
+     "evidence_role": "budget",
+     "format": "html",
+     "id": "tottori-budget-2026",
+     "official_url": "https://www.city.tottori.lg.jp/page/30417.html",
+     "title": "令和8年度当初予算(案)",
+     "use_boundary": "FY2026当初予算は補正予算・決算と別stateで保持する。金額は千円単位の公表値であり、円単位を合成しない。議決結果の文言は一次資料で直接確認できるまで断定しない",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    },
+    {
+     "evidence_location": "FY2024決算額は、市公式『令和6年度鳥取市歳入歳出決算書』（議案第106号の認定付議案・2025年9月1日提出）で、一般会計の収入済額113,544,636,161円・支出済額111,377,983,188円・歳入歳出差引残額2,166,652,973円を確認し検算一致した。実質収支は同決算書の実質収支に関する調書（千円単位）の2,017,634千円（差引2,166,653千円－繰越明許費繰越額149,019千円）。決算推移ページの令和6年度値（歳入113,525百万円等）は普通会計ベースであり一般会計値とは別のため使用していない。議案第106号の認定の成否と議決日は、市議会公式の議決結果資料をテキスト取得で読み取れず未確認である",
+     "evidence_role": "settlement",
+     "format": "html",
+     "id": "tottori-settlement-2024",
+     "official_url": "https://www.city.tottori.lg.jp/page/20004.html",
+     "title": "鳥取市の決算推移(平成27年度～令和6年度)",
+     "use_boundary": "FY2024決算は予算・補正と別stateで保持する。歳入・歳出は決算書に印字された円単位の精密値であり、実質収支は調書の千円精度のまま記録し円単位を合成しない。認定の成否は議決結果資料で直接確認できるまで断定しない",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    }
+   ]
+  }
+ },
+ "deferred_depth": [
+  {
+   "boundary": "11政策の下の基本施策・事業・指標の全件列挙は追加depthとし、公式対応が確認できるまで昇格しない。4つのまちづくりの目標・11政策の体系自体は候補に保持するが、政策の下の施策・事業単位の対応付けは行わない。",
+   "id": "current-plan-granular-kpi-and-project-linkage",
+   "status": "deferred_not_required_for_candidate_staging"
+  },
+  {
+   "boundary": "FY2026当初予算の金額（108,700,000千円）と骨格予算としての性格、FY2024決算の総額（円単位）と実質収支（千円精度）は一次資料で確認し候補に反映している。一方、当初予算そのものの議案番号・議決日・議決結果の文言と、FY2024決算の議案第106号の認定の成否・議決日は、市議会公式の議決結果資料（PDF）をテキスト取得で読み取ることができず未確認のまま保持する（実ブラウザによる補完調査が次の手順）。予算書・決算書の事項別明細書の款別合計との最終突合と、監査委員の決算審査意見書の内容精査も未実施のまま保持する。",
+   "id": "fiscal-vote-and-certification-verification",
+   "status": "deferred_not_required_for_candidate_staging"
+  },
+  {
+   "boundary": "第11次鳥取市総合計画の政策体系・事業・評価の全件列挙は本候補では行わない。第11次計画は基本構想2021年度～2030年度・基本計画2021年度～2025年度であり、第12次計画への移行は版の履歴として分離して保持する。",
+   "id": "plan-transition-version-depth",
+   "status": "deferred_not_required_for_candidate_staging"
+  },
+  {
+   "boundary": "鳥取市総合計画・進捗管理・財政等のステージングは政策効果の因果認定や他都市比較可能性を意味しない。進捗管理（自治体の見直しの枠組み）をJichi Insight独自の達成判定へ変換しない。",
+   "id": "policy-outcome-causal-and-cross-city-comparability",
+   "status": "deferred_not_required_for_candidate_staging"
+  }
+ ],
+ "human_review": {
+  "boundary": "A person must check the candidate against the cited primary sources before any promotion to reviewed_complete.",
+  "required": true,
+  "reviewed_at": null,
+  "reviewer_note": null,
+  "status": "pending"
+ },
+ "name_ja": "鳥取市",
+ "official_code": "312010",
+ "package_state": "prepared",
+ "phase": 15,
+ "publication": {
+  "boundary": "Candidate data is staging-only and must not be loaded by the public site or treated as reviewed data.",
+  "eligible": false
+ },
+ "quality_boundaries": [
+  "Promoted facts must come from official primary sources with stable evidence locators.",
+  "Unpublished, unavailable, historical-only, draft, and unresolved facts must remain explicit.",
+  "No Jichi Insight policy-achievement score, causal attribution, or unverified cross-city ranking may be created.",
+  "This candidate is machine-prepared evidence only and is not Reviewed until a person checks the primary sources."
+ ],
+ "schema_version": 1,
+ "source_inventory_path": "data/indexed/tottori-city/source_inventory.json",
+ "status": "review_candidate"
+}
