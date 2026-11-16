@@ -512,13 +512,25 @@ Declared v1 package:
 
 Deferred depth includes the individual projects under the 53 policies in the project evaluation, the per-policy indicator values, cross-checks against the budget book and the settlement book (事項別明細書) at section level, the contents of the audit commissioners' settlement review opinion, the preceding plans' frameworks themselves and the next plan's framework, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Thirty-fifth completion — Otsu
+
+大津市を35番目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 大津市総合計画 — a two-layer structure of the Basic Concept (基本構想; FY2017–FY2028, showing the future city image 『ひと、自然、歴史の縁で織りなす 住み続けたいまち“大津再生” ～コンパクトで持続可能なまちへの変革～』 and three basic principles (まちづくりの基本理念)) and the Action Plans that divide the Basic Concept's twelve years into three four-year terms, the current one being the Third Action Plan (第3期実行計画; FY2025–FY2028), which sets three basic directions holding 13 basic policies and 32 measures (all 32 are enumerated); progress is managed through administrative evaluation (行政評価: comprehensive-plan progress management and project evaluation), with results published annually as administrative evaluation reports — the municipality's own progress-management framework. The succession from the First Action Plan (FY2017–FY2020) and the Second Action Plan (FY2021–FY2024) to the Third Action Plan is kept only as version chronology records, and the status of the next comprehensive plan after the Basic Concept period (ending FY2028) is left unconfirmed
+- FY2026 general-account initial budget: 142,684,000 thousand yen (enacted; bill No. 3 『令和8年度大津市一般会計予算』, submitted by Mayor 佐藤健司 on 2026-02-19, referred to the Budget and Settlement Standing Committee and passed on 2026-03-25 per the council's official bill-result list (『議案の一覧・結果（令和7年度）』). The list's published result wording is only "可決（多数）" and does not state "原案可決", so that wording is not asserted and stays unconfirmed (direct confirmation in the plenary minutes has not been made). The amount is published at sen-yen (thousand-yen) precision, so it is kept at that precision and yen-precision amounts are not synthesized
+- FY2024 general-account settlement at yen precision as published: revenue 146,909,564,029 yen / expenditure 143,932,903,895 yen (the balance of 2,976,660,134 yen matches the balance printed in the official settlement book; the real balance is 2,791,920 thousand yen per the audit commissioners' settlement review opinion summary, kept at sen-yen precision because that opinion is published in thousand yen — the yen value in the real-balance statement itself stays unconfirmed). The settlement certification bill, bill No. 110 (議案第110号) 『令和6年度大津市一般会計の決算の認定について』, was certified on 2025-10-28 per the council's official bill-result list (it was not rejected). FY2024 is the final-year settlement of the Second Action Plan (FY2021–FY2024), so the plan version differs from the current Third Action Plan, and no official total-level mapping from settlement totals to the plan's basic directions, basic policies or measures exists, so the totals are not linked to the plan's measures and the linkage stays not_assessable
+
+Deferred depth includes the individual projects under the 32 measures in the project evaluation, the per-measure outcome indicator values, cross-checks against the budget book and the settlement book (事項別明細書) at section level, direct confirmation of the yen value in the real-balance statement itself, direct confirmation of the "原案可決" wording for bill No. 3 in the plenary minutes, the First and Second Action Plans' frameworks themselves, the next comprehensive plan, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 34 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市
+- Reviewed complete: 35 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市
 - Review in progress: 0
-- Pending record review: 33
+- Pending record review: 32
 - Blocked source inventory: 0
-- Next official code: 252018
+- Next official code: 272035
 
 ## Definition of Phase 15 completion
 

@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-16",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "otsu-city-home",
+      "municipality_key": "otsu-city",
+      "organization": "大津市",
+      "category": "municipality_profile",
+      "title": "大津市公式サイト",
+      "url": "https://www.city.otsu.lg.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "大津市の公式自治体サイト。"
+    },
+    {
+      "id": "otsu-budget-2026",
+      "municipality_key": "otsu-city",
+      "organization": "大津市",
+      "category": "budget",
+      "title": "令和8年度予算",
+      "url": "https://www.city.otsu.lg.jp/shisei/zai/ty/73718.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算142,684,000千円のEvidence。議案第3号『令和8年度大津市一般会計予算』として令和8年2月19日に提出され、予算決算常任委員会への付託を経て令和8年3月25日に可決（多数）された成立予算（市議会公式『議案の一覧・結果（令和7年度）』で確認。同ページは『原案可決』とは表記していないため、その文言は断定しない）。金額は千円単位の公表値のまま記録し、円単位を合成しない。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "otsu-settlement-2024",
+      "municipality_key": "otsu-city",
+      "organization": "大津市",
+      "category": "settlement",
+      "title": "令和6年度決算について",
+      "url": "https://www.city.otsu.lg.jp/shisei/zai/k/71025.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入146,909,564,029円・歳出143,932,903,895円を円単位で含む公式決算資料（議案第110号添付『令和6年度大津市一般会計歳入歳出決算』）。実質収支額は監査委員の決算審査意見書の千円単位の集計により2,791,920千円（千円精度のまま記録し、実質収支に関する調書そのものの円単位の値は未確認）。決算の認定議案である議案第110号は令和7年10月28日に認定された。決算書（歳入歳出決算事項別明細書）の款別合計との突合は未実施。"
+    }
+  ]
+}

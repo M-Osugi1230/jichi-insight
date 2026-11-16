@@ -358,7 +358,7 @@ def test_fukui_and_previous_twenty_four_are_reviewed_complete_and_kofu_is_next()
     ):
         assert by_code[code]["status"] == "reviewed_complete"
 
-    assert queue["summary"]["reviewed_complete_count"] == 34
+    assert queue["summary"]["reviewed_complete_count"] == 35
     assert queue["summary"]["review_in_progress_count"] == 0
-    assert queue["summary"]["pending_record_review_count"] == 33
-    assert queue["summary"]["next_official_code"] == "252018"
+    assert queue["summary"]["pending_record_review_count"] == 32
+    assert queue["summary"]["next_official_code"] == "272035"

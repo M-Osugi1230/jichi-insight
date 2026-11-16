@@ -1,0 +1,61 @@
+{
+  "id": "otsu-phase15-completion",
+  "phase": 15,
+  "status": "reviewed_complete",
+  "official_code": "252018",
+  "name_ja": "大津市",
+  "completed_at": "2026-11-16",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "source_catalog_path": "data/catalog/otsu_phase15_sources.json",
+    "plan_review_path": "data/reviewed/otsu-city/plan_review.json",
+    "policy_structure_path": "data/catalog/otsu_current_policy_structure.json",
+    "progress_review_path": "data/catalog/otsu_current_progress_review_summary.json",
+    "fiscal_records_path": "data/reviewed/otsu-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/otsu-city/evidence_packets.json",
+    "counts": {
+      "basic_goals": 13,
+      "basic_plan_measures": 32,
+      "promoted_implementation_item_actual_records": 0,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "current_plan_period_reviewed": true,
+    "current_plan_policy_structure_reviewed": true,
+    "implementation_plan_layer_reviewed": true,
+    "fiscal_states_and_years_separate": true,
+    "budget_enactment_state_preserved": true,
+    "settlement_linkage_not_assessable_preserved": true,
+    "individual_implementation_items_not_overpromoted": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "current-plan-granular-kpi-and-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "32施策に基づく事務事業評価の対象事業の全件と、施策ごとの成果指標の個別値（基準値・現状値・目標値）は追加depthとし、公式対応が確認できるまで昇格しない。行政評価報告書・実行計画進捗状況報告書は年度版・計画期版を分離して保持する。"
+    },
+    {
+      "id": "settlement-values-and-budget-amendment-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "補正予算による変更経過、補正予算・決算と個別事業費の対応関係は追加エビデンス確認前は記録・結合しない。FY2024決算は第2期実行計画の最終年度の決算として保持するが、決算総額を計画の基本方針・基本政策・施策の実績へ流用しない。議案第110号の議決結果（令和7年10月28日・認定（多数））と決算総額（円単位）は一次資料で確認済みであり、候補の財政記録・証拠パケット側に反映している。実質収支は監査委員審査意見書の千円単位の集計（2,791,920千円）で確認し、その精度のまま保持する（実質収支に関する調書そのものの円単位の値は未確認）。"
+    },
+    {
+      "id": "plan-transition-version-depth",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "第1期・第2期実行計画の枠組みそのもの、および基本構想の計画期間（2028年度）後の次期総合計画の策定状況は本候補では記録しない。移行の経過は版の履歴として別途記録し、過去の実行計画の体系を現行計画期間の実績へ遡及接続しない。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "大津市総合計画・財政等のステージングは政策効果の因果認定や他都市比較可能性を意味しない。行政評価（自治体の進行管理の枠組み）をJichi Insight独自の達成判定へ変換しない。"
+    }
+  ],
+  "completion_boundary": "大津市のPhase 15 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味し、所有者（大杉邑大、単独運用体制）が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが大津市公式サイトの一次資料で検証した結論に基づく（所有者本人が一次資料を直接レビューしたものではない）。大津市の計画体系（大津市総合計画は、基本構想（2017年度〜2028年度。将来都市像『ひと、自然、歴史の縁で織りなす 住み続けたいまち“大津再生” ～コンパクトで持続可能なまちへの変革～』、まちづくりの基本理念3件を示す）と、基本構想の計画期間を4年ごとに3期に分割した実行計画（現行は第3期実行計画（2025年度〜2028年度）。3つの基本方針のもと基本政策13件・全32施策で構成し、32施策の全件を列挙する）の2層で構成する。12年間の基本構想と4年ごとの実行計画を一律の固定期間modelへ潰さない。進行管理は行政評価（総合計画進捗管理・事務事業評価）であり、結果は行政評価報告書として年度ごとに公表される方式である）、成立したFY2026一般会計当初予算（142,684,000千円。議案第3号『令和8年度大津市一般会計予算』として令和8年2月19日に大津市長佐藤健司から提出され、予算決算常任委員会への付託を経て、令和8年3月25日に可決され成立した。議決結果は市議会公式『議案の一覧・結果（令和7年度）』で確認した。同ページの公表文言は『可決（多数）』のみであり『原案可決』とは表記していないため、『原案可決』の文言は断定せず未確認のまま保持する。公表精度が千円単位のため千円精度のまま記録し、円単位を合成していない）、FY2024一般会計決算の円単位総額（歳入146,909,564,029円・歳出143,932,903,895円、差引額2,976,660,134円が決算書に印字された歳入歳出差引残額と一致することを確認）とその認定（議案第110号『令和6年度大津市一般会計の決算の認定について』が令和7年8月通常会議に提出され、令和7年10月28日に認定されたことを市議会公式『議案の一覧・結果（令和7年度）』で確認。実質収支額は監査委員の決算審査意見書の千円単位の集計により2,791,920千円であり、同審査意見書が千円単位で公表されているため千円精度のまま記録し、実質収支に関する調書そのものの円単位の値は未確認のまま保持する）を一次資料で確認した。第1期・第2期実行計画から第3期実行計画への移行は移行記録として分離して保持し、現行計画の内容を先行する実行計画期間の実績へ遡及接続しない。基本構想の計画期間（2028年度）後の次期総合計画の策定状況は未確認のまま保持する。FY2024は第2期実行計画の最終年度の決算であり現行の第3期実行計画とは計画versionが異なる上、決算総額と第3期実行計画の基本方針・基本政策・施策との総額レベルの対応付けは公式資料にないため、接続はnot_assessableとして保持する。32施策に基づく事務事業評価の対象事業の全件、施策ごとの成果指標の個別値、予算書・決算書の事項別明細書の款別合計との最終突合、実質収支に関する調書そのものの円単位の値の直接確認、本会議録本文による『原案可決』の文言の直接確認はdeferred depthである。Jichi Insight独自の政策達成度スコアや他都市とのランキングは作成しない。行政評価（自治体の進行管理の枠組み）をJichi Insight独自の達成判定へ変換しない。"
+}
