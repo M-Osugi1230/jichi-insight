@@ -783,9 +783,9 @@
       "prefecture_name_ja": "高知県",
       "municipality_type": "city",
       "phase14_role": "core_city_and_prefectural_capital",
-      "status": "pending_record_review",
+      "status": "reviewed_complete",
       "source_inventory_path": "data/indexed/kochi-city/source_inventory.json",
-      "completion_path": null
+      "completion_path": "data/catalog/kochi_phase15_completion.json"
     },
     {
       "sequence": 60,
@@ -894,11 +894,11 @@
   ],
   "summary": {
     "target_count": 67,
-    "reviewed_complete_count": 58,
+    "reviewed_complete_count": 59,
     "review_in_progress_count": 0,
-    "pending_record_review_count": 9,
+    "pending_record_review_count": 8,
     "blocked_source_inventory_count": 0,
-    "next_official_code": "392014"
+    "next_official_code": "402036"
   },
   "updated_at": "2026-11-17"
 }

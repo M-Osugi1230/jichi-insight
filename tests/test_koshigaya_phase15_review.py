@@ -277,8 +277,8 @@ def test_koshigaya_and_previous_sixteen_are_reviewed_complete_and_funabashi_is_n
     ):
         assert by_code[code]["status"] == "reviewed_complete"
 
-    assert queue["summary"]["reviewed_complete_count"] == 58
+    assert queue["summary"]["reviewed_complete_count"] == 59
     assert queue["summary"]["review_in_progress_count"] == 0
-    assert queue["summary"]["pending_record_review_count"] == 9
-    assert queue["summary"]["next_official_code"] == "392014"
+    assert queue["summary"]["pending_record_review_count"] == 8
+    assert queue["summary"]["next_official_code"] == "402036"
     assert by_code["122041"]["status"] == "reviewed_complete"
