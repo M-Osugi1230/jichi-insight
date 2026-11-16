@@ -1,0 +1,62 @@
+{
+  "id": "phase15-toyohashi-plan-review",
+  "name_ja": "豊橋市",
+  "next_action": "Promote the individual projects under the 38 policies of the latter basic plan's field plans and the project linkage for each of the city-building strategy's 13 basic policies only when official sources with stable record-level locators have been reviewed; complete the final cross-check against the budget book and the settlement book (事項別明細書) at section level; identify the exact vote date of settlement bill No. 95 only from an official council source, never treating the mayor's notification date of 2025-09-29 as the vote date, and record the FY2024 real-balance statement values only as a separate reviewed evidence step; record the first basic plan's framework only as a separate version if it is ever reviewed, and never retroactively connect the latter basic plan's policies to the first plan period. Keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "official_code": "232017",
+  "quality_boundary": "This package reviews the current plan identity and period (the Sixth Toyohashi City Comprehensive Plan: a fixed-period three-layer structure of basic concept (FY2021-FY2030, basic philosophy 『私たちがつくる 未来をつくる』, target city image 『未来を担う 人を育むまち・豊橋』), basic plan and implementation plan; the basic plan moved from its first period (FY2021-FY2025) to the latter basic plan (FY2026-FY2030), which is the current plan), the latter basic plan's structure of eight fields holding 38 policies (all 38 policies are enumerated) plus the cross-field city-building strategy (まちづくり戦略) of four individual strategies and 13 basic policies, the progress-governance layer (the implementation plan is reviewed every year on a three-year rolling basis and each project is mapped to the city-building strategy; cross-field administrative operations are carried in the implementation plan's 『基本計画推進のために』 chapter), the enacted FY2026 initial budget at the published sen-yen (thousand-yen) precision (bill No. 4, passed as proposed on 2026-03-24; yen-precision amounts are not synthesized), and the FY2024 settlement at yen precision as published, without collapsing proposed, enacted, supplementary, or settlement states. The FY2024 settlement bill (bill No. 95) was voted not certified (不認定) at the September 2025 regular session: that outcome is recorded exactly as published and is never rewritten as a certification, and the exact vote date remains unidentified (the mayor's notification dated 2025-09-29 is a notification date, not the vote date). FY2024 is a settlement of the first basic plan period (FY2021-FY2025) under the same sixth comprehensive plan, a different plan version from the latter basic plan, so its totals are not linked to the latter plan's policies or strategies. The first-to-latter transition is kept only as a version chronology record.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "豊橋市公式Webサイト『第6次豊橋市総合計画』ページ（現行計画の公式入口。Phase 14インベントリで確認）と、同ページからリンクされる公式『第6次豊橋市総合計画後期基本計画 実施計画（令和8〜10年度）』の計画体系の記載（基本構想2021〜2030年度・基本理念・目指すまちの姿・基本計画の前期／後期の区分・実施計画の3年ローリング）で直接確認",
+      "evidence_role": "current_plan_identity",
+      "id": "toyohashi-current-plan-period",
+      "review_note": "固定期間型の総合計画（基本構想・基本計画・実施計画の3層）であることを公式資料で確認したレビュー済みレコード。",
+      "source_url": "https://www.city.toyohashi.lg.jp/40536.htm",
+      "statement": "豊橋市の総合計画は第6次豊橋市総合計画であり、基本構想・基本計画・実施計画の3層で構成する。基本構想の計画期間は2021年度から2030年度までの10年間で、基本理念は『私たちがつくる 未来をつくる』、目指すまちの姿は『未来を担う 人を育むまち・豊橋』である。基本計画は前期基本計画（2021年度〜2025年度）と後期基本計画（2026年度〜2030年度）の各5年で構成し、現行は後期基本計画である。実施計画は3年間のローリング方式で毎年度見直し、現行は令和8（2026）年度から令和10（2028）年度までである。Phase 14インベントリの記録（第6次豊橋市総合計画 後期基本計画 2026年度〜2030年度）とも一致する。",
+      "title": "第6次豊橋市総合計画の構成と後期基本計画の計画期間",
+      "value": "2026年度～2030年度"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "公式『第6次豊橋市総合計画後期基本計画 実施計画（令和8〜10年度）』の各分野冒頭の政策一覧（第1分野から第8分野まで全分野の見出しページ）および『まちづくり戦略』章の個別戦略と施策の基本方針の一覧で直接確認（分野ごとの政策数の合計38で検算一致）",
+      "evidence_role": "policy_structure",
+      "id": "toyohashi-current-policy-structure",
+      "review_note": "公式の実施計画で分野・政策・戦略の体系を全件確認したレビュー済みレコード。8分野38政策の全件とまちづくり戦略の4つの個別戦略・13の施策の基本方針はpolicy_structureに列挙する。",
+      "source_url": "https://www.city.toyohashi.lg.jp/40536.htm",
+      "statement": "後期基本計画の分野別計画は8分野・38政策で構成する（第1分野『豊かな人間性を備え、未来を創る人が育つまち』5政策／第2分野『活力みなぎり、はつらつと働けるまち』4政策／第3分野『命の安全、心の安心が確保されたまち』4政策／第4分野『みんなで支え合い、笑顔で健やかに暮らせるまち』6政策／第5分野『互いを尊重し合い、心豊かに暮らせるまち』6政策／第6分野『魅力にあふれ、いきいきとにぎわいあるまち』4政策／第7分野『自然と共生し、地球環境を大切にするまち』4政策／第8分野『暮らしの基盤が整った、便利で快適なまち』5政策）。これに分野横断の『まちづくり戦略』が加わり、4つの個別戦略（安心に包まれた子育て・教育環境づくり／希望に満ちた仕事づくり／定住につながるまちの魅力づくり／暮らしを支える都市空間づくり）のもとに施策の基本方針（計13方針）を置く。38政策の全件はpolicy_structureに列挙する。",
+      "title": "後期基本計画の8分野38政策とまちづくり戦略（4つの個別戦略）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "公式『第6次豊橋市総合計画後期基本計画 実施計画（令和8〜10年度）』の構成（分野別計画の事業にまちづくり戦略の該当を対応付けて再掲する方式と『基本計画推進のために』章・『まちづくり戦略』章）およびPhase 14インベントリの実施計画の記録（3年間・毎年度見直し）で確認",
+      "evidence_role": "progress_governance",
+      "id": "toyohashi-progress-governance-framework",
+      "review_note": "進行管理の枠組み（実施計画のローリング見直しと戦略対応付け）を公式資料で直接確認したレビュー済みレコード。個別事業の実績そのものは本パッケージでは扱わない。",
+      "source_url": "https://www.city.toyohashi.lg.jp/40536.htm",
+      "statement": "第6次豊橋市総合計画の進行管理は、基本計画に基づく実施計画を3年間のローリング方式で毎年度見直すことで行う。実施計画（現行は令和8〜10年度）は後期基本計画の分野別計画の事業を掲げ、各事業にまちづくり戦略の該当（個別戦略と施策の基本方針）を対応付けて位置づけ、分野横断の行政運営の取組は『基本計画推進のために』として掲げる。この進行管理は自治体による自己管理の枠組みであり、Jichi Insight独自の達成判定へ変換しない。",
+      "title": "実施計画の3年ローリング（毎年度見直し）による進行管理"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "公式『第6次豊橋市総合計画後期基本計画 実施計画（令和8〜10年度）』の計画体系の記載（基本構想2021〜2030年度のもとで基本計画を前期・後期に区分）およびPhase 14インベントリのavailability_boundary（FY2024決算は前期計画期間）で確認",
+      "evidence_role": "plan_transition",
+      "id": "toyohashi-plan-transition",
+      "review_note": "同一基本構想のもとでの基本計画のversion移行として記録したレビュー済みレコード。",
+      "source_url": "https://www.city.toyohashi.lg.jp/40536.htm",
+      "statement": "第6次豊橋市総合計画の基本構想（2021年度〜2030年度）は継続し、その前期計画である前期基本計画（2021年度〜2025年度）から、後期計画である後期基本計画（2026年度〜2030年度）へ移行した。各計画はversionを分けて保持し、後期基本計画の政策体系を前期基本計画の期間の実績へ遡及接続しない。FY2024決算は前期基本計画期間の決算として保持する。",
+      "title": "前期基本計画から後期基本計画への移行（計画移行）"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "FY2024決算の公式入口はPhase 14インベントリの決算資料（会計課決算書・決算付属書令和6年度）。決算総額と後期基本計画の政策との対応付けは公式資料の総額レベルでは示されていない",
+      "evidence_role": "annual_progress",
+      "id": "toyohashi-fy2024-settlement-linkage",
+      "review_note": "決算が前期基本計画期間のものであることと、個別政策・事業の接続を推測で記録しないことは別の判断であることを示す明示的な未判定レコード。決算と政策・事業の対応付けは人間レビュー工程の作業。",
+      "source_url": "https://www.city.toyohashi.lg.jp/63332.htm",
+      "statement": "FY2024決算値と後期基本計画の政策・まちづくり戦略との接続は未判定（not_assessable）。FY2024は第6次豊橋市総合計画の前期基本計画（2021年度〜2025年度）の4年目の決算であり、後期基本計画（2026年度開始）とは計画versionが異なる。決算総額は会計別の集計値であり、個別政策・事業との対応付けは総額レベルでは行われていない。前期基本計画の枠組みそのものは本候補では記録しない。FY2024決算の精密値そのものは決算付属書で確認済みであるが、決算と事業の対応付けは人間レビュー工程の作業とする。",
+      "title": "令和6年度決算と後期基本計画の政策・まちづくり戦略の接続"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-16"
+}

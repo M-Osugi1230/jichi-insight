@@ -1,0 +1,65 @@
+[
+  {
+    "account_type": "general",
+    "amount_yen": 165610000000,
+    "confidence": "high",
+    "fiscal_year": 2026,
+    "id": "jp-local-232017-fiscal-2026-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算（可決）",
+    "municipality_id": "jp-local-232017",
+    "note": "豊橋市公式『令和8年度予算の見どころ』等に示された一般会計当初予算額165,610,000千円（歳入・歳出それぞれ同額。前年度155,900,000千円との比較は+9,710,000千円・+6.2%で整合する）。公表精度は千円単位であり、円単位の内訳は公表されていないため千円精度のまま記録する。議案番号・議決は市公式の令和8年3月定例会提出事件一覧と市議会公式『議決結果一覧表』（令和8年3月定例会）で、議案第4号『令和8年度豊橋市一般会計予算』が予算特別委員会に付託され、令和8年3月24日に原案可決された成立予算であることを確認した。公式『令和8年6月市議会定例会資料（補正予算関係）』の総括表における一般会計の現計予算額165,610,000千円、および予算特別委員会における財政課長答弁の歳入合計額1,656億1,000万円とも一致する。補正予算や決算とは別stateで扱う。",
+    "period_end": "2027-03-31",
+    "period_start": "2026-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "toyohashi-budget-2026"
+    ],
+    "stage": "initial_budget",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 153279132232,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-232017-fiscal-2024-total-revenue",
+    "metric": "total_revenue",
+    "metric_label": "一般会計決算歳入",
+    "municipality_id": "jp-local-232017",
+    "note": "豊橋市公式『令和6年度豊橋市一般会計・特別会計歳入歳出決算付属書』の会計別一覧表（収入済額）および事項別明細書総計表に記載された歳入決算額153,279,132,232円（円単位）。歳出決算額151,163,708,560円との差引額2,115,423,672円は、公式『令和6年度決算の状況について』の収入支出差引額2,115,424千円（千円単位・四捨五入表示）と整合する。令和6年度一般会計決算の認定議案は議案第95号『令和6年度豊橋市一般会計歳入歳出決算認定について』であり、令和7年9月定例会で不認定となった（市長公式通知『令和6年度豊橋市各会計歳入歳出決算等の議決結果について』・令和7年9月29日付で確認。認定されたとは記録しない）。令和7年12月定例会では報37『決算不認定に係る措置について』が令和7年12月8日に報告された。FY2024は第6次豊橋市総合計画の前期基本計画（2021年度〜2025年度）の4年目の決算である。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "toyohashi-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 151163708560,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-232017-fiscal-2024-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計決算歳出",
+    "municipality_id": "jp-local-232017",
+    "note": "同決算付属書の会計別一覧表（支出済額）および事項別明細書総計表に記載された歳出決算額151,163,708,560円（円単位）。歳入決算額153,279,132,232円との差引額2,115,423,672円で検算が一致し、公式『令和6年度決算の状況について』の収入支出差引額2,115,424千円（千円単位・四捨五入表示）とも整合する。令和6年度決算は議案第95号として令和7年9月定例会で不認定となった（認定されていない）。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "toyohashi-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  }
+]

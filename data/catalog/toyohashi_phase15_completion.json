@@ -1,0 +1,61 @@
+{
+  "id": "toyohashi-phase15-completion",
+  "phase": 15,
+  "status": "reviewed_complete",
+  "official_code": "232017",
+  "name_ja": "豊橋市",
+  "completed_at": "2026-11-16",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "source_catalog_path": "data/catalog/toyohashi_phase15_sources.json",
+    "plan_review_path": "data/reviewed/toyohashi-city/plan_review.json",
+    "policy_structure_path": "data/catalog/toyohashi_current_policy_structure.json",
+    "progress_review_path": "data/catalog/toyohashi_current_progress_review_summary.json",
+    "fiscal_records_path": "data/reviewed/toyohashi-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/toyohashi-city/evidence_packets.json",
+    "counts": {
+      "basic_goals": 8,
+      "basic_plan_measures": 38,
+      "promoted_implementation_item_actual_records": 0,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "current_plan_period_reviewed": true,
+    "current_plan_policy_structure_reviewed": true,
+    "implementation_plan_layer_reviewed": true,
+    "fiscal_states_and_years_separate": true,
+    "budget_enactment_state_preserved": true,
+    "settlement_linkage_not_assessable_preserved": true,
+    "individual_implementation_items_not_overpromoted": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "current-plan-granular-kpi-and-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "38政策に基づく分野別計画の施策・事業の全件と、まちづくり戦略の施策の基本方針ごとの事業対応の全件は追加depthとし、公式対応が確認できるまで昇格しない。実施計画は版を分離して保持する。"
+    },
+    {
+      "id": "settlement-values-and-budget-amendment-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "補正予算による変更経過、補正予算・決算と個別事業費の対応関係、決算の実質収支は追加エビデンス確認前は記録・結合しない。FY2024決算は前期基本計画（2021年度〜2025年度）の4年目の決算として保持するが、決算総額を後期基本計画の政策・戦略の実績へ流用しない。決算書の事項別明細書の款別合計との最終突合も未実施である。議案第95号の議決年月日そのものは未特定のまま保持し、市長通知の日付を議決日と断定しない。"
+    },
+    {
+      "id": "plan-transition-version-depth",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "前期基本計画の枠組みそのものは記録しない。移行の経過は版の履歴として別途記録し、後期基本計画の政策体系を前期基本計画の体系へ遡及接続しない。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "第6次豊橋市総合計画・財政等のレビューは政策効果の因果認定や他都市比較可能性を意味しない。実施計画のローリング見直し（自治体自己管理の枠組み）をJichi Insight独自の達成判定へ変換しない。"
+    }
+  ],
+  "completion_boundary": "豊橋市のPhase 15 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味し、所有者（大杉邑大、単独運用体制）が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが豊橋市公式サイトの一次資料で検証した結果に基づく（所有者本人が一次資料を直接レビューしたものではない）。豊橋市の計画体系（総合計画は基本構想・基本計画・実施計画の3層構成である。第6次豊橋市総合計画の基本構想は計画期間を2021年度から2030年度までの10年間とし、基本理念は『私たちがつくる 未来をつくる』、目指すまちの姿は『未来を担う 人を育むまち・豊橋』である。基本計画は前期基本計画（2021年度〜2025年度）と後期基本計画（2026年度〜2030年度）の各5年で構成し、現行は後期基本計画である。後期基本計画の分野別計画は8分野・38政策で構成し、38政策の全件を列挙する。分野横断の重点化事項として『まちづくり戦略』を位置付け、4つの個別戦略（安心に包まれた子育て・教育環境づくり／希望に満ちた仕事づくり／定住につながるまちの魅力づくり／暮らしを支える都市空間づくり）のもとに13の施策の基本方針を掲げる。進行管理は実施計画（現行は令和8〜10年度）を3年間のローリング方式で毎年度見直し、各事業にまちづくり戦略の該当を対応付けることで行い、分野横断の行政運営の取組は実施計画の『基本計画推進のために』に掲げる）、成立したFY2026一般会計当初予算（165,610,000千円。議案第4号『令和8年度豊橋市一般会計予算』として令和8年3月定例会に提出され、予算特別委員会への付託を経て、令和8年3月24日に原案可決された。公式『令和8年6月市議会定例会資料（補正予算関係）』の一般会計・現計予算額とも同額で一致する。公表精度が千円単位のため千円精度のまま記録し、円単位を合成していない）、FY2024一般会計決算の円単位総額（歳入153,279,132,232円・歳出151,163,708,560円、差引額2,115,423,672円が公式『令和6年度決算の状況について』の収入支出差引額2,115,424千円（千円単位・四捨五入表示）と整合することを確認）を一次資料で確認した。決算の認定議案である議案第95号『令和6年度豊橋市一般会計歳入歳出決算認定について』は令和7年9月定例会で不認定となったことを市長公式通知『令和6年度豊橋市各会計歳入歳出決算等の議決結果について』（令和7年9月29日付）で確認し、不認定の事実をそのまま記録した（認定されたとは記録しない）。議案第95号の議決年月日そのものは未特定のまま保持し、市長通知の日付は通知日であって議決日と断定しない。令和7年12月定例会では報37『決算不認定に係る措置について』が令和7年12月8日に報告された。前期基本計画から後期基本計画への移行は移行記録として分離して保持し、後期基本計画の政策体系を前期基本計画の体系へ遡及接続しない。FY2024は前期基本計画の計画期間の決算であり後期基本計画とは計画versionが異なるため、決算総額と後期基本計画の政策・まちづくり戦略との接続はnot_assessableとして保持する。38政策に基づく分野別計画の施策・事業の全件、まちづくり戦略の基本方針ごとの事業対応の全件、予算書・決算書の事項別明細書の款別合計との最終突合、決算の実質収支に関する調書の値、議案第95号の議決年月日はdeferred depthである。Jichi Insight独自の政策達成度スコアや他都市とのランキングは作成しない。実施計画のローリング見直し（自治体自己管理の枠組み）をJichi Insight独自の達成判定へ変換しない。"
+}

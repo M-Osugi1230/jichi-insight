@@ -1,0 +1,46 @@
+{
+  "id": "toyohashi-phase15-sources",
+  "phase": 15,
+  "official_code": "232017",
+  "name_ja": "豊橋市",
+  "reviewed_at": "2026-11-16",
+  "quality_boundary": "Current plan identity kept as published (the Sixth Toyohashi City Comprehensive Plan in a three-layer basic-concept / basic-plan / implementation-plan structure; the basic concept runs FY2021-FY2030 and the current latter basic plan runs FY2026-FY2030, with eight fields holding 38 policies, all enumerated, plus the cross-field city-building strategy of four individual strategies and 13 basic policies; the first basic plan is kept only as a separate version), progress governance (the implementation plan is reviewed every year on a three-year rolling basis and each project is mapped to the city-building strategy), budget enactment confirmed on the council's official voting-results list (bill No. 4, passed as proposed on 2026-03-24) with the amount kept at the published sen-yen precision and never expanded into synthetic yen, and settlement totals kept at the published yen precision from the official settlement appendix (the settlement bill No. 95 was voted not certified (不認定) at the September 2025 regular session; the exact vote date is unidentified and the mayor's 2025-09-29 notification date is not treated as the vote date) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "sources": [
+    {
+      "evidence_location": "豊橋市公式Webサイト『第6次豊橋市総合計画』ページは現行計画の公式入口（Phase 14インベントリで確認）。計画の構成・期間・基本理念・目指すまちの姿は、同ページからリンクされる公式『第6次豊橋市総合計画後期基本計画 実施計画（令和8〜10年度）』の計画体系の記載と各分野冒頭の政策一覧（8分野38政策）で直接確認",
+      "evidence_role": "comprehensive_plan",
+      "format": "html",
+      "id": "toyohashi-sixth-latter-plan",
+      "official_url": "https://www.city.toyohashi.lg.jp/40536.htm",
+      "title": "第6次豊橋市総合計画",
+      "use_boundary": "現行計画は第6次豊橋市総合計画 後期基本計画（2026年度〜2030年度）として保持し、前期基本計画（2021年度〜2025年度）の内容を混在させない"
+    },
+    {
+      "evidence_location": "豊橋市公式Webサイト『第6次豊橋市総合計画』ページは実施計画の公式入口（Phase 14インベントリで確認）。実施計画が3年間のローリング方式で毎年度見直されること、現行版が令和8〜10年度であること、分野別計画の事業とまちづくり戦略の対応付けの方式を同ページからリンクされる実施計画で確認",
+      "evidence_role": "implementation_plan",
+      "format": "html",
+      "id": "toyohashi-latter-implementation",
+      "official_url": "https://www.city.toyohashi.lg.jp/40536.htm",
+      "title": "第6次豊橋市総合計画 後期基本計画 実施計画",
+      "use_boundary": "実施計画の個別事業identityと年度実績は本候補では記録せず、追加depthとして保持する。実施計画の版を分離して保持する"
+    },
+    {
+      "evidence_location": "豊橋市公式Webサイト『予算』ページはFY2026当初予算の公式入口（Phase 14インベントリで確認）。同ページ掲載の公式『令和8年度予算の見どころ』で一般会計165,610,000千円を確認し、議案番号・議決は市公式の提出事件一覧と市議会公式『議決結果一覧表』（令和8年3月定例会）で確認",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "toyohashi-budget-2026",
+      "official_url": "https://www.city.toyohashi.lg.jp/8815.htm",
+      "title": "予算",
+      "use_boundary": "FY2026当初予算は成立予算（議案第4号・令和8年3月24日原案可決）として保持し、補正予算と別stateで扱う"
+    },
+    {
+      "evidence_location": "豊橋市公式Webサイト『会計課決算書・決算付属書令和6年度』ページはFY2024決算の公式入口（Phase 14インベントリで確認）。同ページから取得した公式『令和6年度豊橋市一般会計・特別会計歳入歳出決算付属書』の会計別一覧表と事項別明細書総計表で歳入・歳出の円単位総額を確認し、認定議案の結果は市長公式通知で確認",
+      "evidence_role": "settlement",
+      "format": "html",
+      "id": "toyohashi-settlement-2024",
+      "official_url": "https://www.city.toyohashi.lg.jp/63332.htm",
+      "title": "会計課決算書・決算付属書令和6年度",
+      "use_boundary": "FY2024決算は前期基本計画期間の決算として保持し、後期基本計画の実績へ流用しない。認定議案（議案第95号）は不認定であり、認定されたとは記録しない"
+    }
+  ]
+}
