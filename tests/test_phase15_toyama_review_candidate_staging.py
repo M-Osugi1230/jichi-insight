@@ -243,9 +243,9 @@ def test_toyama_promotion_is_reflected_in_canonical_queue():
     )
     assert item["status"] == "reviewed_complete"
     assert item["completion_path"] == "data/catalog/toyama_phase15_completion.json"
-    assert queue["summary"]["reviewed_complete_count"] == 46
-    assert queue["summary"]["pending_record_review_count"] == 21
-    assert queue["summary"]["next_official_code"] == "292010"
+    assert queue["summary"]["reviewed_complete_count"] == 47
+    assert queue["summary"]["pending_record_review_count"] == 20
+    assert queue["summary"]["next_official_code"] == "302015"
 
 
 def test_public_web_does_not_import_candidate_staging():

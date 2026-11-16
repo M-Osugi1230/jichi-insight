@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-16",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "nara-city-home",
+      "municipality_key": "nara-city",
+      "organization": "奈良市",
+      "category": "municipality_profile",
+      "title": "奈良市公式サイト",
+      "url": "https://www.city.nara.lg.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "奈良市の公式自治体サイト。"
+    },
+    {
+      "id": "nara-budget-2026",
+      "municipality_key": "nara-city",
+      "organization": "奈良市",
+      "category": "budget",
+      "title": "令和8年度当初予算の概要",
+      "url": "https://www.city.nara.lg.jp/site/zaisei/259233.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算193,425,597千円（千円精度）のEvidence。議案第16号『令和8年度奈良市一般会計予算』は令和8年3月定例会で2026年3月26日に修正可決された成立予算（市議会公式『議決結果一覧表（令和8年3月定例会）』で確認）。修正は予算決算委員会に提出された宮池委員提出の修正案によるもので、総額を原案195,000,000千円から1,574,403千円減額した。成立額は財政課『令和8年度当初予算の概要』の予算規模で確認し、令和8年度一般会計補正予算（第1号）の補正前の額とも一致する千円単位の公表値のまま記録し、円単位を合成しない。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "nara-settlement-2024",
+      "municipality_key": "nara-city",
+      "organization": "奈良市",
+      "category": "settlement",
+      "title": "令和6年度決算の概要",
+      "url": "https://www.city.nara.lg.jp/site/zaisei/246327.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入161,996,348,913円・歳出157,827,488,682円を含む公式決算資料（『令和6年度決算総括表（一般会計及び特別会計）』（単位：円）で確認し、差引4,168,860,231円が同表の形式収支と検算一致）。実質収支は同表により3,348,707,231円（繰り越すべき財源820,153,000円。円単位のまま記録）。決算の認定は報告第41号『令和6年度奈良市一般会計歳入歳出決算の認定について』として令和7年9月定例会で2025年9月29日に認定された（市議会公式『議決結果一覧表（令和7年9月定例会）』で確認）。決算書（歳入歳出決算事項別明細書）の款別合計との突合と監査委員の決算審査意見書の内容（個別の指摘事項等）の精査は未実施。"
+    }
+  ]
+}
