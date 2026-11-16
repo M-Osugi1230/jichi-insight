@@ -328,9 +328,9 @@ def test_okazaki_promotion_is_reflected_in_canonical_queue():
     )
     assert item["status"] == "reviewed_complete"
     assert item["completion_path"] == "data/catalog/okazaki_phase15_completion.json"
-    assert queue["summary"]["reviewed_complete_count"] == 62
-    assert queue["summary"]["pending_record_review_count"] == 5
-    assert queue["summary"]["next_official_code"] == "422029"
+    assert queue["summary"]["reviewed_complete_count"] == 63
+    assert queue["summary"]["pending_record_review_count"] == 4
+    assert queue["summary"]["next_official_code"] == "442011"
 
 
 def test_public_web_does_not_import_candidate_staging():
