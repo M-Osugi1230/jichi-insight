@@ -1,0 +1,376 @@
+{
+ "candidate_id": "neyagawa-phase15-review-candidate",
+ "candidate_package": {
+  "evidence_packets": [
+   {
+    "claims": [
+     {
+      "decision": "needs_review",
+      "field": "amount_yen",
+      "location_note": "寝屋川市公式『令和8年度予算』ページ（ページID 26514）の会計別当初予算額表（一般会計1,097億3,000万円・対前年度比5.0%増、全会計合計1,833億3,200万円）で金額を確認。議決結果は寝屋川市議会公式『令和8年3月市議会定例会 付議事件一覧表』（議案第28号・提出2026年2月24日・予算決算常任委員会付託・付議月日3月25日・議決結果『原案可決』）で確認した",
+      "review_note": "成立当初予算の額を市の公式予算ページで抽出し、議案番号・議決結果の文言と議決日を市議会公式の付議事件一覧表で直接確認した（日程資料からの推定ではない）。市の公表は万円単位のため、その精度のまま記録し千円未満の端数を合成していない。千円単位の精密額の確認は人間レビュー工程に残す。人間による確認待ちステージング。",
+      "source_ids": [
+       "neyagawa-budget-2026"
+      ],
+      "statement": "令和8年度一般会計当初予算は1,097億3,000万円（109,730,000千円）であり、議案第28号『令和8年度寝屋川市一般会計予算』として令和8年3月市議会定例会に提出され、2026年3月25日に原案可決され成立した当初予算である（寝屋川市議会公式『令和8年3月市議会定例会 付議事件一覧表』で議案第28号・議決結果『原案可決』・議決日を直接確認した）。金額は寝屋川市公式『令和8年度予算』ページの会計別当初予算額表で確認したもので、市の公表精度は万円単位である。"
+     }
+    ],
+    "id": "evidence-neyagawa-city-2026-total-expenditure",
+    "open_questions": [
+     "千円単位の精密な当初予算総額を当初予算書（令和8年市議会 議案書等）で確認すること。",
+     "補正予算による変更経過（令和8年度一般会計補正予算等）は本候補では追わない。",
+     "予算書（歳入歳出予算事項別明細書）の款別合計との最終突合。"
+    ],
+    "review_status": "needs_review",
+    "subject_id": "jp-local-272159-fiscal-2026-total-expenditure",
+    "subject_type": "fiscal_record"
+   },
+   {
+    "claims": [
+     {
+      "decision": "needs_review",
+      "field": "amount_yen",
+      "location_note": "FY2024決算の公式入口はPhase 14インベントリの決算ページ（財政課『決算』索引から令和6年度決算へのリンクを確認）であるが、当該ページの取得は本候補作成時に成功しなかった。市公式『寝屋川市の財政（令和6年度版）』（財政課）は普通会計の決算収支（百万円単位）を掲載するが一般会計の総額は掲載しない。令和6年度決算における健全化判断比率の公式ページは比率のみで総額の裏付けにならない",
+      "review_note": "金額を一次資料で確認できていないため、普通会計の集計値や概数で埋めず未確認を明示するステージング。認定の成否についても、前年度決算の手続経過からの推定は行わない。人間レビュー工程で決算書（歳入歳出決算書・実質収支に関する調書）と市議会の議決結果資料を確認してから記録する。",
+      "source_ids": [
+       "neyagawa-settlement-2024"
+      ],
+      "statement": "令和6年度一般会計決算の歳入総額は未確認（not_assessable）。決算書そのものは市の有償刊行物扱いでオンライン全文を確認できず、市の公式『寝屋川市の財政（令和6年度版）』の決算収支は普通会計ベース・百万円単位の集計であり一般会計の歳入総額ではないため、精密値を記録しない。当該決算の認定の成否・認定議案の番号・議決日も、市議会公式の議決結果資料で直接確認できていないため未確認とする。"
+     }
+    ],
+    "id": "evidence-neyagawa-city-2024-total-revenue",
+    "open_questions": [
+     "決算書（別冊 令和6年度歳入歳出決算書）で一般会計の歳入総額の精密値を確認すること。",
+     "令和6年度決算の認定の成否・認定議案の番号・議決日を市議会公式の議決結果資料（令和7年9月・12月定例会）で確認すること。",
+     "監査委員の決算審査意見書の内容確認（オンラインでは確認できていない）。"
+    ],
+    "review_status": "needs_review",
+    "subject_id": "jp-local-272159-fiscal-2024-total-revenue",
+    "subject_type": "fiscal_record"
+   },
+   {
+    "claims": [
+     {
+      "decision": "needs_review",
+      "field": "amount_yen",
+      "location_note": "歳入総額と同じく、市の公式なオンライン資料（決算書・決算審査意見書・決算概要資料）では精密値を直接確認できなかった。市の公式『寝屋川市の財政（令和6年度版）』の普通会計の歳出（百万円単位）は一般会計の歳出総額ではない",
+      "review_note": "金額を一次資料で確認できていないため未確認を明示するステージング。歳入総額が確認できた段階で、差引額（形式収支・実質収支）による検算もあわせて行う。人間による確認待ちステージング。",
+      "source_ids": [
+       "neyagawa-settlement-2024"
+      ],
+      "statement": "令和6年度一般会計決算の歳出総額は未確認（not_assessable）。歳入総額と同じく公式の決算資料で精密値を直接確認できていないため記録せず、歳入歳出差引額による検算も行っていない。実質収支額も、実質収支に関する調書そのものを確認できていないため記録しない。"
+     }
+    ],
+    "id": "evidence-neyagawa-city-2024-total-expenditure",
+    "open_questions": [
+     "決算書で一般会計の歳出総額の精密値を確認し、歳入総額との差引額（形式収支・実質収支）で検算すること。",
+     "決算書（歳入歳出決算事項別明細書）の款別合計との最終突合。"
+    ],
+    "review_status": "needs_review",
+    "subject_id": "jp-local-272159-fiscal-2024-total-expenditure",
+    "subject_type": "fiscal_record"
+   }
+  ],
+  "fiscal_records": [
+   {
+    "account_type": "general",
+    "amount_yen": 109730000000,
+    "confidence": "medium",
+    "fiscal_year": 2026,
+    "id": "jp-local-272159-fiscal-2026-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算総額",
+    "municipality_id": "jp-local-272159",
+    "note": "寝屋川市公式『令和8年度予算』ページの会計別当初予算額表に示された一般会計当初予算額1,097億3,000万円（109,730,000千円。特別会計544億2,200万円・公営企業会計191億8,000万円、全会計合計1,833億3,200万円）。市の公表は万円単位であり、千円単位の精密な総額は同ページからは確認できないため、公表精度（万円単位）のまま記録し、千円未満の端数を合成しない。千円単位の精密額は当初予算書（令和8年市議会 議案書等に掲載）で確認する作業を人間レビュー工程に残す。議案第28号『令和8年度寝屋川市一般会計予算』として令和8年3月市議会定例会に提出（2026年2月24日）され、予算決算常任委員会の審査を経て2026年3月25日に原案可決され成立した当初予算であることを、寝屋川市議会公式『令和8年3月市議会定例会 付議事件一覧表』で議案番号・議決結果の文言・議決日とも直接確認した（日程資料からの推定ではない）。補正予算や決算とは別stateで扱う。",
+    "period_end": "2027-03-31",
+    "period_start": "2026-04-01",
+    "review_status": "needs_review",
+    "sources": [
+     "neyagawa-budget-2026"
+    ],
+    "stage": "initial_budget",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+   },
+   {
+    "account_type": "general",
+    "amount_yen": null,
+    "confidence": "not_assessable",
+    "fiscal_year": 2024,
+    "id": "jp-local-272159-fiscal-2024-total-revenue",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入額",
+    "municipality_id": "jp-local-272159",
+    "note": "令和6年度一般会計決算の歳入総額の精密値は、本候補の作成時点では寝屋川市の公式なオンライン資料で直接確認できなかったため記録しない。市の公式『寝屋川市の財政（令和6年度版）』に掲載される決算収支は普通会計ベース・百万円単位であり、一般会計の歳入総額ではないため採用しない（普通会計は一般会計に公共用地先行取得事業・母子父子寡婦福祉資金貸付金の両特別会計を加えた集計で、国民健康保険・介護保険・後期高齢者医療の各特別会計は含まない）。決算書そのものは市の刊行物として有償頒布される扱いで、オンライン全文は確認できていない。当該決算の認定の成否、認定議案の番号および議決日についても、市議会公式の議決結果資料（令和7年9月・12月定例会の付議事件一覧表）で本候補作成時点では直接確認できておらず、未確認のまま保持する。前年度決算（令和5年度）が令和6年9月定例会への提出・閉会中の継続審査・同年12月定例会での認定という経過をたどったことは市の公式資料で確認できるが、経過のパターンから令和6年度決算の結果を推定することはしない。FY2024は第六次寝屋川市総合計画の後期実施計画（2024年度～2027年度）の初年度の決算である。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "needs_review",
+    "sources": [
+     "neyagawa-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "not_found"
+   },
+   {
+    "account_type": "general",
+    "amount_yen": null,
+    "confidence": "not_assessable",
+    "fiscal_year": 2024,
+    "id": "jp-local-272159-fiscal-2024-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出額",
+    "municipality_id": "jp-local-272159",
+    "note": "令和6年度一般会計決算の歳出総額の精密値は、歳入総額と同じく、本候補の作成時点では市の公式なオンライン資料で直接確認できなかったため記録しない。歳入・歳出の精密値が確認できていないため、差引額（形式収支）による検算も行っていない。実質収支額についても、実質収支に関する調書そのものを確認できていないため記録しない（市の公式『寝屋川市の財政（令和6年度版）』の普通会計の実質収支1,249百万円は会計範囲と公表精度が異なるため、一般会計の実質収支として流用しない）。決算の認定の成否・議案番号・議決日は未確認のまま保持する。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "needs_review",
+    "sources": [
+     "neyagawa-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "not_found"
+   }
+  ],
+  "plan_review": {
+   "id": "phase15-neyagawa-plan-review",
+   "name_ja": "寝屋川市",
+   "official_code": "272159",
+   "records": [
+    {
+     "decision": "needs_review",
+     "evidence_location": "寝屋川市公式Webサイトの第六次寝屋川市総合計画の公式入口（Phase 14インベントリで確認）からリンクされる公式『第六次寝屋川市総合計画』本編（最終答申）の第1章第2節『計画の概要』（計画の構成と期間、総合計画と総合戦略の統合）および基本構想第1章（将来像）で直接確認。現行の実施計画は公式『第六次寝屋川市総合計画 後期実施計画（令和6年度～令和9年度）＜令和8年度版＞』で確認",
+     "evidence_role": "current_plan_identity",
+     "id": "neyagawa-current-plan-period",
+     "review_note": "基本戦略（基本構想・戦略プラン）7年間と実施計画（前期3年／後期4年）の構成を別period semanticsとして保持した。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.neyagawa.osaka.jp/organization_list/keieikikaku/kikakuikka/soukei_jinkouvision_senryaku/sougoukeikaku_6_sougousenryaku_2/1616582538632.html",
+     "statement": "寝屋川市の総合計画は第六次寝屋川市総合計画であり、第2期寝屋川市まち・ひと・しごと創生総合戦略と統合して策定されている。構成は、基本戦略（市の目指す将来像や基本姿勢を定め、戦略的に実施する施策の方向性を示す基本構想と、基本構想に基づく将来像の実現のために推進する施策の展開などを総合的かつ体系的に示す戦略プラン）と、基本戦略に基づいて実施していく具体的な取組（事務事業）を示す実施計画からなる。計画期間は令和3（2021）年度を初年度、令和9（2027）年度を目標年度とする7年間で、基本戦略は7年間、実施計画は前期3年間（2021年度～2023年度）・後期4年間（2024年度～2027年度）とし、必要に応じて見直しを行う。将来像は『新たな価値を創り、選ばれるまち 寝屋川 ～イノベーションの創出～』である。基本戦略の7年間と実施計画の前期／後期を別period semanticsとして保持し、一律の固定期間へ潰さない。Phase 14インベントリの記録（第六次総合計画 2021～2027年度・実施計画 前期3年/後期4年・verified_fixed_period）とも一致する。",
+     "title": "第六次寝屋川市総合計画の構成と基本戦略（基本構想・戦略プラン）・実施計画の計画期間",
+     "value": "基本戦略（基本構想・戦略プラン）は2021年度～2027年度（7年間）／実施計画は前期2021年度～2023年度（3年間）・後期2024年度～2027年度（4年間）"
+    },
+    {
+     "decision": "needs_review",
+     "evidence_location": "公式『第六次寝屋川市総合計画』本編（最終答申）の目次（戦略プランの施策1～19）と基本構想第4章（まちづくりの方向性。3つの最重要ファクターの位置付け）、総合計画審議会の審議経過の記録（施策1～9は訴求力のある施策、施策10～13は生活を支える施策、施策14～19はくらしの質を高める施策という区分）で確認し、現行の後期実施計画（令和8年度版）の目次で19施策と施策ごとの施策の展開の全件を再確認した",
+     "evidence_role": "policy_structure",
+     "id": "neyagawa-current-policy-structure",
+     "review_note": "公式の計画本編と後期実施計画で施策体系を全件確認した。施策の展開（74件）の個別列挙は本候補では行わず、施策単位の体系を保持する。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.neyagawa.osaka.jp/organization_list/keieikikaku/kikakuikka/soukei_jinkouvision_senryaku/sougoukeikaku_6_sougousenryaku_2/1616582538632.html",
+     "statement": "戦略プランは19の施策で構成する。子育て世代の誘引に特に効果的であると見込まれる『3つの最重要ファクター』に位置付けられる訴求力のある施策が施策1～9（ファクターI 子どもに最善を尽くす：施策1～3／ファクターII 誰もが住みたくなるまちをつくる：施策4～6／ファクターIII 命を全力で守り、豊かなくらしを実現する：施策7～9）であり、これに生活を支える施策（施策10～13）と、くらしの質を高める施策（施策14～19）が続く。19施策の全件はpolicy_structureに列挙する。後期実施計画（令和6年度～令和9年度・令和8年度版）では、施策ごとに『施策の展開』（全74件。施策別の内訳は5・4・3・6・3・3・6・3・3・3・6・5・6・4・3・2・3・3・3で検算一致）・取組（事務事業）・リーディング事業（総合戦略事業）・進捗管理指標を置き、施策名は総合戦略における基本目標としても取り扱う。",
+     "title": "第六次総合計画の戦略プランの19施策（3つの最重要ファクター・生活を支える施策・くらしの質を高める施策）"
+    },
+    {
+     "decision": "needs_review",
+     "evidence_location": "公式『第六次寝屋川市総合計画 後期実施計画（令和6年度～令和9年度）＜令和8年度版＞』の『後期実施計画の概要』『後期実施計画の見方』『本計画の進捗管理について』で確認",
+     "evidence_role": "progress_governance",
+     "id": "neyagawa-progress-governance-framework",
+     "review_note": "進行管理の枠組み（PDCIサイクルと行政評価の一体的実施、施策指標・進捗管理指標）を公式資料から抽出。評価・進捗の個別結果そのものは本候補では扱わない。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.neyagawa.osaka.jp/organization_list/keieikikaku/kikakuikka/soukei_jinkouvision_senryaku/sougoukeikaku_6_sougousenryaku_2/1616582538632.html",
+     "statement": "第六次寝屋川市総合計画の後期実施計画は、本計画を着実に推進するため、計画の進捗管理とPDCIサイクル（Plan・Do・Check・Innovation）の考え方に基づく行政評価を一体的に行う。施策ごとに施策指標（数値目標）を、施策の展開ごとに進捗管理指標を置き、総合戦略の進捗を測るKPI（重要業績評価指標）として取り扱う指標は★印で示す。この進捗管理は自治体による進行管理の枠組みであり、Jichi Insight独自の達成判定へ変換しない。",
+     "title": "後期実施計画の進捗管理（PDCIサイクルに基づく行政評価との一体的実施）"
+    },
+    {
+     "decision": "needs_review",
+     "evidence_location": "公式『第六次寝屋川市総合計画』本編（最終答申）第1章第2節（実施計画は前期3年間・後期4年間の計画とすること）と、公式『後期実施計画（令和6年度～令和9年度）＜令和8年度版＞』の表紙・概要（計画期間は令和6年度から令和9年度までの4年間）で確認。次期計画の策定状況は公式の計画ページ等で確認できなかった",
+     "evidence_role": "plan_transition",
+     "id": "neyagawa-plan-transition",
+     "review_note": "同一の第六次総合計画内での実施計画の版の移行（前期から後期）を版の履歴として記録した。前期実施計画の施策の展開の全件列挙は本候補では行わない。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.neyagawa.osaka.jp/organization_list/keieikikaku/kikakuikka/soukei_jinkouvision_senryaku/sougoukeikaku_6_sougousenryaku_2/1616582538632.html",
+     "statement": "第六次寝屋川市総合計画の実施計画は、前期実施計画（令和3（2021）年度～令和5（2023）年度）から後期実施計画（令和6（2024）年度～令和9（2027）年度）へ移行済みであり、後期実施計画は毎年度版が作成される（現行は令和8年度版）。基本戦略（基本構想・戦略プラン）そのものは7年間（2021年度～2027年度）を通じたものであり、実施計画の前期／後期は版を分けて保持する。第六次計画の後継となる次期総合計画の策定状況は、本候補作成時点では市の公式資料で確認できていない。FY2024決算は後期実施計画の初年度の決算であり、前期実施計画期間の実績を後期へ接続しない。",
+     "title": "第六次寝屋川市総合計画の実施計画の前期（2021〜2023年度）から後期（2024〜2027年度）への移行"
+    },
+    {
+     "decision": "not_assessable",
+     "evidence_location": "FY2024決算の公式入口はPhase 14インベントリの決算資料（令和6年度決算ページ）。決算総額と計画の施策との対応付けは公式資料の総額レベルでは示されていない",
+     "evidence_role": "annual_progress",
+     "fiscal_year": 2024,
+     "id": "neyagawa-fy2024-settlement-linkage",
+     "review_note": "計画の版は同一であるものの総額レベルの対応付けがないことと、決算の精密値自体が未確認であることの二つの理由で接続は未判定のまま保持する。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.neyagawa.osaka.jp/organization_list/zaimu/zaiseika/kessann/kessan/reiwa5nenndokessann_2/index.html",
+     "statement": "FY2024決算値と第六次寝屋川市総合計画の施策体系との接続は未判定（not_assessable）。FY2024は後期実施計画（2024年度～2027年度）の初年度であり計画の版は現行の後期実施計画と同一であるが、決算総額は会計別の集計値であり、戦略プランの19施策・後期実施計画の施策の展開との総額レベルの対応付けは公式資料に示されていない。加えて、FY2024決算の一般会計の精密値そのものが本候補では未確認であり、接続の前提となる決算値も確定していない。接続は人間レビュー工程の作業とする。",
+     "title": "令和6年度決算と第六次寝屋川市総合計画の施策体系の接続"
+    }
+   ],
+   "review_status": "pending_record_review"
+  },
+  "policy_structure": {
+   "current_plan": {
+    "end_fiscal_year": 2027,
+    "management_principles": [
+     "総合計画は基本戦略（基本構想：市の目指す将来像や基本姿勢と戦略的に実施する施策の方向性／戦略プラン：将来像の実現のために推進する施策の展開などを総合的かつ体系的に示すもの）と実施計画（基本戦略に基づいて実施する具体的な取組（事務事業））で構成し、第2期寝屋川市まち・ひと・しごと創生総合戦略と統合して策定されている。基本戦略は2021年度～2027年度の7年間、実施計画は前期2021年度～2023年度（3年間）・後期2024年度～2027年度（4年間）で、必要に応じて見直しを行う。基本戦略の7年間と実施計画の前期／後期を別period semanticsとして保持し、一律の固定期間modelへ潰さない",
+     "戦略プランは19施策で構成する。施策1～9は子育て世代の誘引に特に効果的と見込まれる『3つの最重要ファクター』（ファクターI 子どもに最善を尽くす／ファクターII 誰もが住みたくなるまちをつくる／ファクターIII 命を全力で守り、豊かなくらしを実現する）に位置付けられる訴求力のある施策、施策10～13は生活を支える施策、施策14～19はくらしの質を高める施策である。後期実施計画では施策ごとに施策の展開（全74件）・取組（事務事業）・リーディング事業（総合戦略事業）・進捗管理指標を置き、施策名は総合戦略の基本目標としても取り扱う",
+     "進行管理は、計画の進捗管理とPDCIサイクル（Plan・Do・Check・Innovation）の考え方に基づく行政評価を一体的に行う枠組みである。施策ごとに施策指標（数値目標）を、施策の展開ごとに進捗管理指標を置く。自治体の進捗管理・行政評価をJichi Insight独自の達成判定へ変換しない",
+     "FY2024決算は後期実施計画（2024年度～2027年度）の初年度の決算であり計画の版は現行と同一であるが、決算総額と施策体系との総額レベルの対応付けは公式資料になく、FY2024決算の一般会計の精密値も未確認のため、決算値を計画のcurrent actualへ流用しない"
+    ],
+    "period_status": "verified_fixed_period",
+    "policy_fields": [
+     {
+      "id": "field-1",
+      "measures": [
+       "施策1 安心して子どもを産み、育てる環境づくり",
+       "施策2 寝屋川市だから学べる「寝屋川教育」",
+       "施策3 子どもを全力で守り抜く"
+      ],
+      "name_ja": "ファクターI 子どもに最善を尽くす（訴求力のある施策）"
+     },
+     {
+      "id": "field-2",
+      "measures": [
+       "施策4 ポテンシャルをフル活用した都市基盤整備",
+       "施策5 将来を見据えた公共施設の集約・複合化",
+       "施策6 働く場の創出と多様な人材の育成・確保"
+      ],
+      "name_ja": "ファクターII 誰もが住みたくなるまちをつくる（訴求力のある施策）"
+     },
+     {
+      "id": "field-3",
+      "measures": [
+       "施策7 災害から命を守るための対策",
+       "施策8 防犯力向上による体感治安の改善",
+       "施策9 健康寿命の延伸"
+      ],
+      "name_ja": "ファクターIII 命を全力で守り、豊かなくらしを実現する（訴求力のある施策）"
+     },
+     {
+      "id": "field-4",
+      "measures": [
+       "施策10 人権を尊重し、多様性を認め合う社会づくり",
+       "施策11 誰もが安心して生活でき、共に支え合う地域づくり",
+       "施策12 衛生的で快適な生活の確保",
+       "施策13 環境を守り、日頃のくらしを良好に"
+      ],
+      "name_ja": "生活を支える施策"
+     },
+     {
+      "id": "field-5",
+      "measures": [
+       "施策14 学びによる市民文化の向上と発展",
+       "施策15 豊かな自然があるくらし",
+       "施策16 地域づくり・きずなづくり",
+       "施策17 市民ニーズを捉えた行政サービスの充実",
+       "施策18 市民ニーズの把握・情報発信力の強化",
+       "施策19 未来へつなぐ行財政運営"
+      ],
+      "name_ja": "くらしの質を高める施策"
+     }
+    ],
+    "start_fiscal_year": 2024,
+    "title": "第六次寝屋川市総合計画 後期実施計画",
+    "vision": "新たな価値を創り、選ばれるまち 寝屋川"
+   },
+   "id": "neyagawa-current-policy-structure",
+   "name_ja": "寝屋川市",
+   "official_code": "272159",
+   "phase": 15
+  },
+  "progress_review": {
+   "id": "neyagawa-current-progress-review-summary",
+   "implementation_plan_framework": {
+    "evaluation_structure": "進行管理は、後期実施計画の進捗管理とPDCIサイクルの考え方に基づく行政評価を一体的に行う枠組みである。施策ごとに施策指標（数値目標：基準値・実績値・目標値）を、施策の展開ごとに取組（事務事業）・リーディング事業（総合戦略事業）・進捗管理指標を置き、総合戦略のKPIとして取り扱う指標は★印で示す。自治体の進捗管理・行政評価をJichi Insight独自の達成判定へ変換せず、枠組みそのものを年度実績へ読み替えない",
+    "period": "第六次総合計画の計画期間（基本戦略2021年度～2027年度）を通じて、実施計画（前期2021年度～2023年度・後期2024年度～2027年度）のもとで進捗管理を行う。現行は後期実施計画の令和8年度版である。FY2024決算は後期実施計画の初年度の決算で計画の版は同一であるが、決算総額と19施策・施策の展開との総額レベルの対応付けは公式資料になく、FY2024決算の精密値・認定の成否も未確認のため、進行管理の対象値として接続しない",
+    "title": "後期実施計画（令和6年度～令和9年度）とPDCIサイクルによる進捗管理"
+   },
+   "name_ja": "寝屋川市",
+   "official_code": "272159",
+   "phase": 15,
+   "review_status": "review_candidate_staging"
+  },
+  "source_catalog": {
+   "id": "neyagawa-phase15-sources",
+   "name_ja": "寝屋川市",
+   "official_code": "272159",
+   "phase": 15,
+   "sources": [
+    {
+     "evidence_location": "寝屋川市公式Webサイトの第六次寝屋川市総合計画の公式入口（Phase 14インベントリで確認）。公式入口からリンクされる公式『第六次寝屋川市総合計画』本編（最終答申）で計画の構成（基本戦略＝基本構想＋戦略プラン、実施計画は前期3年／後期4年）・将来像・戦略プランの19施策を、公式『後期実施計画（令和6年度～令和9年度）＜令和8年度版＞』で現行の実施計画の構成と進捗管理の枠組みを直接確認した。公式入口ページそのものの取得は本候補作成時に成功しておらず、確認は市の公式ドメインで公開される計画本編・後期実施計画のPDFで行った",
+     "evidence_role": "comprehensive_plan",
+     "format": "html",
+     "id": "neyagawa-sixth-plan",
+     "official_url": "https://www.city.neyagawa.osaka.jp/organization_list/keieikikaku/kikakuikka/soukei_jinkouvision_senryaku/sougoukeikaku_6_sougousenryaku_2/1616582538632.html",
+     "title": "第六次寝屋川市総合計画",
+     "use_boundary": "現行計画は第六次寝屋川市総合計画（2021年度～2027年度）として保持し、実施計画の前期（2021年度～2023年度）と後期（2024年度～2027年度）を版として分離する。第2期総合戦略と統合された計画であることを保持し、総合戦略の基本目標としての施策の扱いを分離しない",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    },
+    {
+     "evidence_location": "寝屋川市公式Webサイト『令和8年度予算編成方針』ページ（ページID 25799。Phase 14インベントリで確認）。基本方針（第六次総合計画の将来像の実現に向けた『2つの危機（市民サービスの危機、公共施設・都市インフラの危機）』への対応の継続と未来への必要な『投資』の戦略的推進）と、予算編成に当たって重視する5つの視点（『選ばれるまち』の実現に向けた施策の推進、市民サービス改革の推進、働き方改革の推進、AI技術を用いたデジタルサービスの推進、公共施設等の在り方の整理と総合的かつ計画的な管理の推進）を直接確認",
+     "evidence_role": "budget_policy",
+     "format": "html",
+     "id": "neyagawa-budget-policy-2026",
+     "official_url": "https://www.city.neyagawa.osaka.jp/organization_list/zaimu/zaiseika/yosan/yosanhenseihoushin/25799.html",
+     "title": "令和8年度予算編成方針",
+     "use_boundary": "FY2026の予算編成方針は現行計画の最終期に向けた年度方針として保持し、予算方針を通年のResultや政策効果へ読み替えない",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    },
+    {
+     "evidence_location": "寝屋川市公式Webサイト『令和8年度予算』ページ（ページID 26514。Phase 14インベントリで確認）。会計別当初予算額表（一般会計1,097億3,000万円・全会計合計1,833億3,200万円）で金額を確認し、議案番号・議決結果は寝屋川市議会公式『令和8年3月市議会定例会 付議事件一覧表』（議案第28号・2026年3月25日原案可決）で確認",
+     "evidence_role": "budget",
+     "format": "html",
+     "id": "neyagawa-budget-2026",
+     "official_url": "https://www.city.neyagawa.osaka.jp/organization_list/zaimu/zaiseika/yosan/yosan/R8tousyoyosan/26514.html",
+     "title": "令和8年度当初予算",
+     "use_boundary": "FY2026当初予算は成立予算（議案第28号・2026年3月25日原案可決）として保持し、補正予算・決算と別stateで扱う。金額は万円単位の公表値であり、千円未満の端数を合成しない",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    },
+    {
+     "evidence_location": "FY2024決算の公式入口（Phase 14インベントリで確認。財政課『決算』索引から当該ページへのリンクも確認）。当該ページの取得は本候補作成時に成功せず、一般会計の歳入・歳出の精密値と決算の認定の成否は市の公式なオンライン資料では確認できなかった。市公式『寝屋川市の財政（令和6年度版）』は普通会計ベース・百万円単位の集計であり一般会計の総額の裏付けには用いていない",
+     "evidence_role": "settlement",
+     "format": "html",
+     "id": "neyagawa-settlement-2024",
+     "official_url": "https://www.city.neyagawa.osaka.jp/organization_list/zaimu/zaiseika/kessann/kessan/reiwa5nenndokessann_2/index.html",
+     "title": "令和6年度決算",
+     "use_boundary": "FY2024決算は後期実施計画（2024年度～2027年度）の初年度の決算として保持するが、精密値・実質収支・認定の成否はいずれも未確認のまま保持し、推測や他会計の集計値で補完しない",
+     "verification_status": "official_landing_not_live_verified_2026-11-16"
+    }
+   ]
+  }
+ },
+ "deferred_depth": [
+  {
+   "boundary": "19施策に基づく施策の展開（後期実施計画で全74件）・取組（事務事業）の全件と、施策指標・進捗管理指標の個別値は追加depthとし、公式対応が確認できるまで昇格しない。候補には施策単位の体系（19施策と3つのグループ構成）を保持するが、施策の展開・個別事業単位の対応付けは行わない。",
+   "id": "current-plan-granular-kpi-and-project-linkage",
+   "status": "deferred_not_required_for_candidate_staging"
+  },
+  {
+   "boundary": "FY2024決算の一般会計の歳入・歳出の精密値、実質収支、決算の認定の成否・議案番号・議決日は一次資料で確認できておらず、候補の財政記録では未確認（not_found）のまま保持している。補正予算による変更経過、補正予算・決算と個別事業費の対応関係も追加エビデンス確認前は記録・結合しない。FY2026当初予算については金額（万円単位の公表値）と議案第28号・2026年3月25日原案可決を一次資料で確認済みであり、候補の財政記録・証拠パケット側に反映している。",
+   "id": "settlement-values-and-budget-amendment-linkage",
+   "status": "deferred_not_required_for_candidate_staging"
+  },
+  {
+   "boundary": "前期実施計画（2021年度～2023年度）の施策の展開の全件列挙は本候補では行わない。実施計画の前期から後期への移行の経過は版の履歴として別途記録し、前期実施計画期間の実績を後期実施計画の期間へ前倒し接続しない。次期（第七次）総合計画の策定状況は未確認である。",
+   "id": "plan-transition-version-depth",
+   "status": "deferred_not_required_for_candidate_staging"
+  },
+  {
+   "boundary": "寝屋川市総合計画・進捗管理・財政等のステージングは政策効果の因果認定や他都市比較可能性を意味しない。進捗管理・行政評価（自治体の進行管理の枠組み）をJichi Insight独自の達成判定へ変換しない。",
+   "id": "policy-outcome-causal-and-cross-city-comparability",
+   "status": "deferred_not_required_for_candidate_staging"
+  }
+ ],
+ "human_review": {
+  "boundary": "A person must check the candidate against the cited primary sources before any promotion to reviewed_complete.",
+  "required": true,
+  "reviewed_at": null,
+  "reviewer_note": null,
+  "status": "pending"
+ },
+ "name_ja": "寝屋川市",
+ "official_code": "272159",
+ "package_state": "prepared",
+ "phase": 15,
+ "publication": {
+  "boundary": "Candidate data is staging-only and must not be loaded by the public site or treated as reviewed data.",
+  "eligible": false
+ },
+ "quality_boundaries": [
+  "Promoted facts must come from official primary sources with stable evidence locators.",
+  "Unpublished, unavailable, historical-only, draft, and unresolved facts must remain explicit.",
+  "No Jichi Insight policy-achievement score, causal attribution, or unverified cross-city ranking may be created.",
+  "This candidate is machine-prepared evidence only and is not Reviewed until a person checks the primary sources."
+ ],
+ "schema_version": 1,
+ "source_inventory_path": "data/indexed/neyagawa-city/source_inventory.json",
+ "status": "review_candidate"
+}
