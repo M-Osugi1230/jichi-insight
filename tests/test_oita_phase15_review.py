@@ -52,9 +52,9 @@ def test_oita_review_package_is_the_sixty_fourth_completion():
     }
 
     queue = load(QUEUE)
-    assert queue["summary"]["reviewed_complete_count"] == 65
-    assert queue["summary"]["pending_record_review_count"] == 2
-    assert queue["summary"]["next_official_code"] == "462012"
+    assert queue["summary"]["reviewed_complete_count"] == 66
+    assert queue["summary"]["pending_record_review_count"] == 1
+    assert queue["summary"]["next_official_code"] == "472018"
     entry = next(
         row for row in queue["execution_queue"] if row["official_code"] == "442011"
     )
