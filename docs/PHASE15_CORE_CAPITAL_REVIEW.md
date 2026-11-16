@@ -548,13 +548,25 @@ Declared v1 package:
 
 Deferred depth includes the individual projects under the 52 measures, the per-measure policy indicator values, the citizen-awareness indicator values, final confirmation of both voting dates in the plenary minutes, cross-checks against the budget book and the settlement book （事項別明細書） at section level, the content of the audit commissioners' settlement review opinion, the original basic plan's framework itself, the next comprehensive plan, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Thirty-eighth completion — Takatsuki
+
+高槻市を38番目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 第6次高槻市総合計画 — in a two-layer structure of basic concept （基本構想） and basic plan （基本計画）. The basic concept starts in FY2021 with target year FY2030, presenting eight future city images （将来の都市像） and the town-building motto 『輝く未来を創造する 関西の中央都市 高槻』; the basic plan sets eight fields corresponding to those images, holding 29 measures and 139 measure directions (all 29 measures and all 139 directions are enumerated). Fiscal and administrative management during the plan period follows a separately prepared implementation plan (three-year rolling, renewed every year; the current edition covers FY2026–FY2028), and progress is managed around that implementation plan, with each major project undergoing a retrospective evaluation （実績の振り返り（評価）) before the following years' plan is set — the municipality's own progress-management framework. The succession from the Fifth Takatsuki City Comprehensive Plan (Takatsuki City Comprehensive Strategy Plan, FY2010–FY2020) is kept only as version chronology records, and the status of the next comprehensive plan after the Sixth Plan period (ending FY2030) is left unconfirmed
+- FY2026 general-account initial budget: 151,189,961 thousand yen (enacted; bill 議案第32号 『令和8年度高槻市一般会計予算』, submitted by Mayor 濱田剛史 on 2026-02-25 and passed as proposed （原案可決） at the March 2026 regular session per the council's official voting-results document (『令和8年第1回定例会（3月定例会）の議決結果』 （付議事件と議決てんまつ）), with both the published wording and the voting date (2026-03-23) confirmed directly in that document rather than inferred from the session schedule). The amount is published at sen-yen (thousand-yen) precision, so it is kept at that precision and yen-precision amounts are not synthesized
+- FY2024 general-account settlement at yen precision as published: revenue 147,928,131,915 yen / expenditure 142,805,684,915 yen (their difference of 5,122,447,000 yen matches the balance printed in the official settlement book; the real balance is 3,523,157 thousand yen per the real-balance statement, kept at sen-yen precision because that statement is published in thousand yen; the fund transfer under Local Autonomy Act Article 233-2 is zero). The settlement certification bill, bill 認定第1号 『令和6年度高槻市一般会計歳入歳出決算認定について』, was submitted to the September 2025 regular session, placed under continued review on 2025-09-08, and certified at the December 2025 regular session on 2025-12-03 per the council's official voting-results documents. FY2024 is a settlement inside the Sixth Plan period, so the plan version is the same as the current plan, but no official total-level mapping from settlement totals to the plan's eight fields or 29 measures exists, so the totals are not linked to the plan's fields or measures and the linkage stays not_assessable
+
+Deferred depth includes the individual major projects under the 29 measures and 139 measure directions, the per-measure indicator values, cross-checks against the budget book and the settlement book （事項別明細書） at section level, the content of the audit commissioners' settlement review opinion, the Fifth Plan's framework itself, the next comprehensive plan, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 37 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市
+- Reviewed complete: 38 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市
 - Review in progress: 0
-- Pending record review: 30
+- Pending record review: 29
 - Blocked source inventory: 0
-- Next official code: 272078
+- Next official code: 272108
 
 ## Definition of Phase 15 completion
 

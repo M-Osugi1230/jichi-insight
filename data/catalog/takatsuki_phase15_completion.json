@@ -1,0 +1,61 @@
+{
+  "id": "takatsuki-phase15-completion",
+  "phase": 15,
+  "status": "reviewed_complete",
+  "official_code": "272078",
+  "name_ja": "高槻市",
+  "completed_at": "2026-11-16",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "source_catalog_path": "data/catalog/takatsuki_phase15_sources.json",
+    "plan_review_path": "data/reviewed/takatsuki-city/plan_review.json",
+    "policy_structure_path": "data/catalog/takatsuki_current_policy_structure.json",
+    "progress_review_path": "data/catalog/takatsuki_current_progress_review_summary.json",
+    "fiscal_records_path": "data/reviewed/takatsuki-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/takatsuki-city/evidence_packets.json",
+    "counts": {
+      "basic_goals": 29,
+      "basic_plan_measures": 139,
+      "promoted_implementation_item_actual_records": 0,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "current_plan_period_reviewed": true,
+    "current_plan_policy_structure_reviewed": true,
+    "implementation_plan_layer_reviewed": true,
+    "fiscal_states_and_years_separate": true,
+    "budget_enactment_state_preserved": true,
+    "settlement_linkage_not_assessable_preserved": true,
+    "individual_implementation_items_not_overpromoted": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "current-plan-granular-kpi-and-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "29施策・139施策の方向に基づく主要事業の全件（実施計画の主要事業）と、施策ごとの指標の個別値は追加depthとし、公式対応が確認できるまで昇格しない。実施計画は年度版（3年ローリング）を分離して保持する。"
+    },
+    {
+      "id": "settlement-values-and-budget-amendment-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "補正予算による変更経過、補正予算・決算と個別事業費の対応関係は追加エビデンス確認前は記録・結合しない。認定第1号の議決結果（令和7年12月3日・認定）と決算総額（円単位）は一次資料で確認済みであり、財政記録・証拠パケット側に反映している。実質収支は実質収支に関する調書の千円単位の記載（3,523,157千円）で確認し、その精度のまま保持する。両議決日とも市議会公式の議決結果資料（付議事件と議決てんまつ）で直接確認した。"
+    },
+    {
+      "id": "plan-transition-version-depth",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "第5次高槻市総合計画（高槻市総合戦略プラン、2010年度策定・2020年度まで）の施策体系そのもの、および第6次総合計画の計画期間（2030年度）後の次期総合計画の策定状況は本候補では記録しない。移行の経過は版の履歴として別途記録し、過去の計画の体系を現行計画期間の実績へ遡及接続しない。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "高槻市総合計画・財政等のステージングは政策効果の因果認定や他都市比較可能性を意味しない。実施計画の主要事業の実績の振り返り（評価）（自治体の進行管理の枠組み）をJichi Insight独自の達成判定へ変換しない。"
+    }
+  ],
+  "completion_boundary": "高槻市のPhase 15 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味し、所有者（大杉邑大、単独運用体制）が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが高槻市公式サイトの一次資料で検証した結論に基づく（所有者本人が一次資料を直接レビューしたものではない）。高槻市の計画体系（第6次高槻市総合計画は、基本構想と基本計画の2層で構成する。基本構想はまちづくりの目標となる将来の都市像（8つ）を示し、始期は2021年度、目標年次は2030年度であり、まちづくりの合言葉は『輝く未来を創造する 関西の中央都市 高槻』である。基本計画は基本構想に掲げる8つの将来の都市像に対応する8分野のもと全29施策・全139施策の方向で構成し、29施策・139施策の方向の全件を列挙する。計画期間中の行財政運営に当たっては、別途策定する実施計画（計画期間3年間・毎年度策定、現行は令和8年度～令和10年度版）により取組の推進を図る。進行管理は実施計画を軸とし、各主要事業について実績の振り返り（評価）を行った上で次年度以降の計画を行うという自治体の進行管理の枠組みである）、成立したFY2026一般会計当初予算（151,189,961千円。議案第32号『令和8年度高槻市一般会計予算』として令和8年2月25日に高槻市長濱田剛史から提出され、令和8年第1回定例会（3月定例会）で令和8年3月23日に原案可決され成立した。議決結果は高槻市議会公式『令和8年第1回定例会（3月定例会）の議決結果』（付議事件と議決てんまつ）で文言・議決日とも直接確認した。公表精度が千円単位のため千円精度のまま記録し、円単位を合成していない）、FY2024一般会計決算の円単位総額（歳入147,928,131,915円・歳出142,805,684,915円、差引額5,122,447,000円が決算書に記載された歳入歳出差引残額と一致することを確認）を一次資料で確認した。決算の認定議案である認定第1号『令和6年度高槻市一般会計歳入歳出決算認定について』は令和7年第4回定例会（9月定例会）に提出され令和7年9月8日に継続審査とされた後、令和7年第5回定例会（12月定例会）で令和7年12月3日に認定されたことを高槻市議会公式の各定例会の議決結果で確認し、認定の事実をそのまま記録した。実質収支額は決算附属書類の実質収支に関する調書により3,523,157千円であり、同調書が千円単位で公表しているため千円精度のまま記録する（同調書によれば、実質収支額のうち地方自治法第233条の2の規定による基金繰入額は0千円である）。第5次高槻市総合計画（高槻市総合戦略プラン）から第6次高槻市総合計画への移行は移行記録として分離して保持し、現行計画の内容を前計画期間の実績へ遡及接続しない。第6次総合計画の計画期間（2030年度）後の次期総合計画の策定状況は未確認のまま保持する。FY2024は第6次総合計画の計画期間内の決算であり計画versionは同一であるが、決算総額と8分野・29施策との総額レベルの対応付けは公式資料にないため、接続はnot_assessableとして保持する。29施策・139施策の方向に基づく主要事業の全件、施策ごとの指標の個別値、予算書・決算書の事項別明細書の款別合計との最終突合、監査委員の決算審査意見書の内容確認はdeferred depthである。Jichi Insight独自の政策達成度スコアや他都市とのランキングは作成しない。実施計画における主要事業の実績の振り返り（評価）（自治体の進行管理の枠組み）をJichi Insight独自の達成判定へ変換しない。"
+}

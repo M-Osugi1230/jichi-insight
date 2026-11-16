@@ -199,9 +199,9 @@ def test_iwaki_promotion_is_reflected_in_queue_state():
     assert item["status"] == "reviewed_complete"
     assert item["completion_path"] == "data/catalog/iwaki_phase15_completion.json"
     assert (ROOT / item["completion_path"]).is_file()
-    assert queue["summary"]["reviewed_complete_count"] == 37
-    assert queue["summary"]["pending_record_review_count"] == 30
-    assert queue["summary"]["next_official_code"] == "272078"
+    assert queue["summary"]["reviewed_complete_count"] == 38
+    assert queue["summary"]["pending_record_review_count"] == 29
+    assert queue["summary"]["next_official_code"] == "272108"
 
 
 def test_public_web_does_not_import_candidate_staging():
