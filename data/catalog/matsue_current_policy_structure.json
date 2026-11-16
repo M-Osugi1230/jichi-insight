@@ -1,0 +1,118 @@
+{
+  "counts": {
+    "basic_goals": 18,
+    "basic_plan_measures": 0
+  },
+  "current_plan": {
+    "end_fiscal_year": 2029,
+    "management_principles": [
+      "総合計画は松江市総合計画『MATSUE DREAMS 2030』（2022年3月策定）であり、基本構想（2022年度～2029年度の8年）と実施計画（3年間を単位とし毎年度見直し）で構成する。各層の期間を別period semanticsとして保持し、一律の固定期間modelへ潰さない（period_statusはPhase 14インベントリどおりverified_fixed_period）",
+      "基本構想は基本理念『松江のジダイをつくる』と将来像『夢を実現できるまち 誇れるまち 松江』のもとに5つの基本目標・18の基本施策を置く。各基本施策の下の主要施策・事業・KPIの全件列挙は本候補では行わず、追加depthとして保持する",
+      "進行管理は、実施計画を毎年度PDCAサイクルで見直し、基本施策ごとのKPIの進捗を公表する自治体の枠組みによる。松江市総合計画審議会が毎年秋に評価・検証を行う。自治体の評価・進捗公表をJichi Insight独自の達成判定へ変換しない",
+      "FY2024決算は現行計画の基本構想期間内（2022年度～2029年度）の決算であり計画の版は同一である。決算総額（千円精度）は一次資料で確認済みであるが、決算総額と政策体系との総額レベルの対応付けは公式資料にないため、決算値を計画のcurrent actualへ流用しない"
+    ],
+    "period_status": "verified_fixed_period",
+    "policy_fields": [
+      {
+        "id": "field-1",
+        "measures": [],
+        "name_ja": "基本目標I しごとづくり：1 産業振興、起業・創業"
+      },
+      {
+        "id": "field-2",
+        "measures": [],
+        "name_ja": "基本目標I しごとづくり：2 商店街活性化"
+      },
+      {
+        "id": "field-3",
+        "measures": [],
+        "name_ja": "基本目標I しごとづくり：3 農林水産業振興"
+      },
+      {
+        "id": "field-4",
+        "measures": [],
+        "name_ja": "基本目標I しごとづくり：4 観光振興"
+      },
+      {
+        "id": "field-5",
+        "measures": [],
+        "name_ja": "基本目標II ひとづくり：5 ワーク・ライフ・バランス、子育て支援"
+      },
+      {
+        "id": "field-6",
+        "measures": [],
+        "name_ja": "基本目標II ひとづくり：6 教育"
+      },
+      {
+        "id": "field-7",
+        "measures": [],
+        "name_ja": "基本目標II ひとづくり：7 共生社会・地域コミュニティ"
+      },
+      {
+        "id": "field-8",
+        "measures": [],
+        "name_ja": "基本目標III つながりづくり：8 人材育成・還流"
+      },
+      {
+        "id": "field-9",
+        "measures": [],
+        "name_ja": "基本目標III つながりづくり：9 関係人口、副業・兼業人材"
+      },
+      {
+        "id": "field-10",
+        "measures": [],
+        "name_ja": "基本目標III つながりづくり：10 歴史・伝統・文化・芸術"
+      },
+      {
+        "id": "field-11",
+        "measures": [],
+        "name_ja": "基本目標III つながりづくり：11 スポーツ"
+      },
+      {
+        "id": "field-12",
+        "measures": [],
+        "name_ja": "基本目標IV どだいづくり：12 健康・医療"
+      },
+      {
+        "id": "field-13",
+        "measures": [],
+        "name_ja": "基本目標IV どだいづくり：13 自然・環境"
+      },
+      {
+        "id": "field-14",
+        "measures": [],
+        "name_ja": "基本目標IV どだいづくり：14 都市デザイン（水辺・公共交通）"
+      },
+      {
+        "id": "field-15",
+        "measures": [],
+        "name_ja": "基本目標IV どだいづくり：15 都市デザイン（まちなみ・公園）"
+      },
+      {
+        "id": "field-16",
+        "measures": [],
+        "name_ja": "基本目標IV どだいづくり：16 安心・安全、社会資本整備"
+      },
+      {
+        "id": "field-17",
+        "measures": [],
+        "name_ja": "基本目標IV どだいづくり：17 行財政改革、スマート自治体"
+      },
+      {
+        "id": "field-18",
+        "measures": [],
+        "name_ja": "基本目標V なかまづくり：18 広域連携"
+      }
+    ],
+    "start_fiscal_year": 2022,
+    "title": "松江市総合計画『MATSUE DREAMS 2030』基本構想（2022年度～2029年度）",
+    "vision": "夢を実現できるまち 誇れるまち 松江"
+  },
+  "id": "matsue-current-policy-structure",
+  "name_ja": "松江市",
+  "official_code": "322016",
+  "phase": 15,
+  "review_boundary": "松江市の計画体系（松江市総合計画『MATSUE DREAMS 2030』（2022年3月策定）は、基本構想（2022年度～2029年度の8年）と実施計画（3年間を単位とし毎年度見直し）で構成する。基本理念は『松江のジダイをつくる』、将来像は『夢を実現できるまち 誇れるまち 松江』である。基本構想は5つの基本目標・18の基本施策を置き、18の基本施策は公式の計画ページで全件確認し列挙したが、各基本施策の下の主要施策・事業・KPIの全件列挙は本パッケージでは行わず、追加depthとして保持する（measuresは空のまま保持）。本計画は市町村まち・ひと・しごと創生総合戦略を包含する。進行管理は、実施計画を毎年度PDCAサイクルで見直し、松江市総合計画審議会が毎年秋に評価・検証を行う自治体の進行管理の枠組みである。各層の期間を別period semanticsとして保持し、一律の固定期間modelへ潰さない（period_statusはPhase 14インベントリどおりverified_fixed_periodを保持する）。次期総合計画の策定状況は公式資料で確認できず未確認のまま保持する。進行管理は自治体の進行管理の枠組みであり、Jichi Insight独自の達成判定へ変換しない）",
+  "review_status": "reviewed",
+  "source_id": "matsue-dreams-2030"
+}

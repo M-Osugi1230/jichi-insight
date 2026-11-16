@@ -1,0 +1,46 @@
+{
+  "id": "matsue-phase15-sources",
+  "name_ja": "松江市",
+  "official_code": "322016",
+  "phase": 15,
+  "quality_boundary": "Current plan identity kept as published (the Matsue City Comprehensive Plan “MATSUE DREAMS 2030”, adopted in March 2022: basic concept FY2022-FY2029, implementation plan in three-year units revised every fiscal year; the layer semantics are kept separate and the period status stays verified_fixed_period; the five basic goals and 18 basic measures are enumerated, while the major measures, projects and indicators under each basic measure are not enumerated and stay deferred depth), progress governance (the implementation plan revised every fiscal year through a PDCA cycle, with the Comprehensive Plan Council's annual evaluation and verification — kept as the municipality's own progress-management framework), budget enactment confirmed from the council's official bill/result table (bill 議第56号; result recorded as 『原案可決』 on 2026-03-26) and the amount kept at the published sen-yen precision (119,391,000 thousand yen, confirmed in Article 1 of the official budget book and never expanded into synthetic finer amounts), and settlement totals kept at the thousand-yen precision published in the official settlement overview and the audit commissioners' review opinion (the settlement certification 決算第1号 was certified on 2025-10-07 per the council's official bill/result table and per-member voting results; the real balance of 1,962,986 thousand yen stays at thousand-yen precision; the Ministry of Internal Affairs settlement-status card figures are on an ordinary-account basis and are not used) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "reviewed_at": "2026-11-16",
+  "sources": [
+    {
+      "evidence_location": "計画の構成（5つの基本目標と18の基本施策の全件）と実施計画の毎年度見直し（PDCA）、令和8年度実施計画の掲載は市公式『松江市総合計画（MATSUE DREAMS 2030）』ページで直接確認した。計画期間（基本構想2022年度～2029年度）・基本理念『松江のジダイをつくる』・将来像『夢を実現できるまち 誇れるまち 松江』は、市公式の政策部事業概要および計画の資料編で確認した。基本構想の本編PDFは画像中心でテキスト抽出が乏しい",
+      "evidence_role": "comprehensive_plan",
+      "format": "html",
+      "id": "matsue-dreams-2030",
+      "official_url": "https://www.city.matsue.lg.jp/gyoseijoho/kakushukeikaku/10/4/8737.html",
+      "title": "松江市総合計画(MATSUE DREAMS 2030)",
+      "use_boundary": "現行計画は松江市総合計画『MATSUE DREAMS 2030』として保持し、基本構想・実施計画のlayer semanticsを分離する。他の計画期間の実績を現行計画のcurrent actualへ流用しない"
+    },
+    {
+      "evidence_location": "総合計画の実施状況・KPI進捗の公式公表入口（Phase 14インベントリで確認）。計画ページから進捗公表（2024年度実施状況）へ辿れることを確認した",
+      "evidence_role": "progress_governance",
+      "format": "html",
+      "id": "matsue-kpi-progress",
+      "official_url": "https://www.city.matsue.lg.jp/gyoseijoho/kakushukeikaku/10/4/8737.html",
+      "title": "松江市総合計画実施状況・KPI進捗",
+      "use_boundary": "KPI進捗の掲載・自治体の評価公表を達成実績や政策効果と同一視しない。実施計画の進捗と財政決算は別Evidence roleとして保持する"
+    },
+    {
+      "evidence_location": "Phase 14インベントリ記載のランディングURLは市サイト再編により移転していたため、現行の財政課『令和8年度予算の概要』ページから辿り、FY2026一般会計当初予算額119,391,000千円を『令和8年度一般会計・特別会計予算書』（議第56号）の第1条で確認した。議決は市議会公式『令和8年第1回松江市議会（定例会）議案等一覧表』の議第56号の記載（3月26日原案可決）で直接確認した",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "matsue-budget-2026",
+      "official_url": "https://www.city.matsue.lg.jp/gyoseijoho/gyozaisei/3/3/24272.html",
+      "title": "令和8年度予算の概要",
+      "use_boundary": "FY2026当初予算は補正予算・決算と別stateで保持する。金額は千円単位の公表値であり、円単位を合成しない"
+    },
+    {
+      "evidence_location": "FY2024決算額は、同ページから辿れる市公式『令和6年度決算の概要』（令和7年9月議会提出資料）で一般会計の歳入決算額115,607,870千円・歳出決算額113,268,794千円・差引2,339,076千円・実質収支1,962,986千円（いずれも千円単位）を確認し、監査委員『令和6年度松江市一般会計・特別会計歳入歳出決算審査意見書』（監第56号）の第1表・第3表でも同値を確認した。認定は市議会公式『令和7年第5回松江市議会（定例会）議案等一覧表』の決算第1号の記載（10月7日 認定）と同定例会の議員別表決結果で直接確認した。総務省の決算状況カードの値（歳入総額115,809,026千円等）は普通会計ベースであり一般会計値とは別のため使用していない",
+      "evidence_role": "settlement",
+      "format": "html",
+      "id": "matsue-settlement-2024",
+      "official_url": "https://www.city.matsue.lg.jp/soshikikarasagasu/zaiseibu_zaiseika/gyozaisei/1/1/23753.html",
+      "title": "令和6年度決算の概要",
+      "use_boundary": "FY2024決算は予算・補正と別stateで保持する。歳入・歳出・実質収支はいずれも公式資料の千円精度のまま記録し、円単位を合成しない"
+    }
+  ]
+}

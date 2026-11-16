@@ -1,0 +1,63 @@
+{
+  "id": "phase15-matsue-plan-review",
+  "name_ja": "松江市",
+  "next_action": "Promote the major measures, projects and indicators under the 18 basic measures of the basic concept only when official sources with stable record-level locators have been reviewed; complete the final cross-check against the budget explanation book and the settlement book （事項別明細書） at section level; examine the content of the audit commissioners' settlement review opinion (individual findings); confirm whether yen-precision totals are printed in the settlement book itself; confirm the preparation status of the next comprehensive plan; and never connect results from another plan version forward into the current plan. Keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "official_code": "322016",
+  "quality_boundary": "This package reviews the current plan identity and period (the Matsue City Comprehensive Plan “MATSUE DREAMS 2030”, adopted in March 2022 under the Matsue City Comprehensive Plan Ordinance as the municipality's top-level plan: the basic concept （基本構想） runs FY2022-FY2029 over eight years, and the implementation plan （実施計画） runs in three-year units revised every fiscal year; the layers are kept as separate period semantics; the basic philosophy is 『松江のジダイをつくる』 and the future image is 『夢を実現できるまち 誇れるまち 松江』; the plan also encompasses the municipal machi-hito-shigoto creation comprehensive strategy), the policy structure (five basic goals and 18 basic measures, confirmed in full on the official plan page; the major measures, projects and indicators under each basic measure are not enumerated and stay deferred depth, so the measures lists stay empty), the progress-governance layer (the implementation plan revised every fiscal year through a PDCA cycle, with the Matsue City Comprehensive Plan Council evaluating and verifying each measure every autumn — the municipality's own progress-management framework), the enacted FY2026 initial budget at the published sen-yen (thousand-yen) precision (bill 議第56号; the council's official bill/result table records the result as 『原案可決』 on 2026-03-26), and the FY2024 settlement at the thousand-yen precision published in the city's official settlement overview and the audit commissioners' review opinion. The FY2024 settlement certification （決算第1号） was certified on 2025-10-07, confirmed directly in the council's official bill/result table and the per-member voting results; it was not rejected. Yen-precision totals are not confirmed in the published official materials used here, so the settlement totals stay at thousand-yen precision and are never expanded into synthetic yen amounts; the Ministry of Internal Affairs settlement-status card figures are on an ordinary-account basis and are not used. The real balance of 1,962,986 thousand yen is published only at thousand-yen precision, so it is kept at that precision. FY2024 falls within the current plan's basic-concept period (FY2022-FY2029), so the plan version is the same as the current plan, but no official total-level mapping from settlement totals to the plan's policy structure exists, so the linkage stays not_assessable. The preparation status of the next comprehensive plan could not be confirmed in official sources and stays unconfirmed.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "計画の構成（5基本目標・18基本施策）と実施計画の毎年度見直しは市公式『松江市総合計画（MATSUE DREAMS 2030）』ページで直接確認した。計画期間（基本構想2022年度～2029年度・実施計画3年間とし毎年度見直す）・基本理念・将来像は、市公式の政策部事業概要および計画の資料編で確認した。基本構想の本編PDFは画像中心でテキスト抽出が乏しく、本編そのものからの文言確認は行っていない",
+      "evidence_role": "current_plan_identity",
+      "id": "matsue-current-plan-period",
+      "review_note": "総合計画の構成（基本構想・実施計画）と各層の期間を別period semanticsとして保持した。レビュー済みレコード。",
+      "source_url": "https://www.city.matsue.lg.jp/gyoseijoho/kakushukeikaku/10/4/8737.html",
+      "statement": "松江市の現行総合計画は松江市総合計画『MATSUE DREAMS 2030』（令和4年（2022年）3月策定）であり、松江市総合計画条例（平成27年松江市条例第52号）に基づく本市の最上位計画である。構成は、まちづくりの基本理念・将来像・基本目標を示す『基本構想』と具体的な事業を示す『実施計画』からなる。基本構想の計画期間は2022年度～2029年度の8年間、実施計画は3年間を単位とし毎年度見直す。基本理念は『松江のジダイをつくる』、将来像は『夢を実現できるまち 誇れるまち 松江』である。本計画は、まち・ひと・しごと創生法第10条に基づく市町村まち・ひと・しごと創生総合戦略を包含する。各層の期間を別period semanticsとして保持し、一律の固定期間へ潰さない。Phase 14インベントリのperiod_statusはverified_fixed_periodである。",
+      "title": "松江市総合計画『MATSUE DREAMS 2030』の構成（基本構想2022年度～2029年度・実施計画は3年間とし毎年度見直し）",
+      "value": "松江市総合計画『MATSUE DREAMS 2030』は基本構想2022年度～2029年度（8年）／実施計画は3年間とし毎年度見直し／FY2024決算は現行計画の基本構想期間内の決算"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "市公式の計画ページに掲載された基本目標・基本施策の一覧（基本構想・基本施策の計画書への入口）で直接確認した",
+      "evidence_role": "policy_structure",
+      "id": "matsue-current-policy-structure",
+      "review_note": "基本構想の政策体系（5基本目標・18基本施策）を政策単位で保持した。基本施策の下の主要施策・事業・KPI単位の対応付けは行わない。レビュー済みレコード。",
+      "source_url": "https://www.city.matsue.lg.jp/gyoseijoho/kakushukeikaku/10/4/8737.html",
+      "statement": "基本構想は、基本理念『松江のジダイをつくる』と将来像『夢を実現できるまち 誇れるまち 松江』のもとに、5つの基本目標と18の基本施策を体系付ける。基本目標I『しごとづくり』は4施策（1 産業振興、起業・創業／2 商店街活性化／3 農林水産業振興／4 観光振興）。基本目標II『ひとづくり』は3施策（5 ワーク・ライフ・バランス、子育て支援／6 教育／7 共生社会・地域コミュニティ）。基本目標III『つながりづくり』は4施策（8 人材育成・還流／9 関係人口、副業・兼業人材／10 歴史・伝統・文化・芸術／11 スポーツ）。基本目標IV『どだいづくり』は6施策（12 健康・医療／13 自然・環境／14 都市デザイン（水辺・公共交通）／15 都市デザイン（まちなみ・公園）／16 安心・安全、社会資本整備／17 行財政改革、スマート自治体）。基本目標V『なかまづくり』は1施策（18 広域連携）である。各基本施策の下の主要施策・事業・KPI単位の対応付けは行わない。",
+      "title": "基本構想の政策体系（5つの基本目標・18の基本施策）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "計画ページで実施計画の毎年度見直し（PDCA）と令和8年度実施計画・進捗公表の掲載を確認し、審議会による評価・検証は市公式の政策部事業概要で確認した",
+      "evidence_role": "progress_governance",
+      "id": "matsue-progress-governance-framework",
+      "review_note": "進行管理の枠組み（実施計画の毎年度見直しと審議会による評価・検証）を年度実績へ読み替えず保持した。レビュー済みレコード。",
+      "source_url": "https://www.city.matsue.lg.jp/gyoseijoho/kakushukeikaku/10/4/8737.html",
+      "statement": "松江市総合計画『MATSUE DREAMS 2030』の進行管理は、実施計画を毎年度PDCAサイクルで見直す自治体の枠組みによる。基本施策ごとに成果指標（KPI）を設定し、外部委員で構成する松江市総合計画審議会が毎年秋に各施策の評価・検証を行い、結果を公表する（総合計画の進捗状況・KPI進捗は計画ページで公表され、2024年度実施状況が確認できる）。自治体の評価・進捗公表をJichi Insight独自の達成判定へ変換しない。",
+      "title": "計画の進行管理（PDCAによる毎年度の見直しと総合計画審議会による評価・検証）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "現行計画の策定時期は市公式の政策部事業概要で確認した。次期計画の策定状況は計画ページ等の公表範囲で確認できなかった",
+      "evidence_role": "plan_transition",
+      "id": "matsue-plan-transition",
+      "review_note": "計画の版の履歴として、現行計画の開始と次期計画の未確認状態を分離記録した。レビュー済みレコード。",
+      "source_url": "https://www.city.matsue.lg.jp/gyoseijoho/kakushukeikaku/10/4/8737.html",
+      "statement": "現行の松江市総合計画『MATSUE DREAMS 2030』は2022年3月に策定され2022年度に開始した。前計画の政策体系・事業・評価の全件列挙は本候補では行わない。基本構想の終期は2029年度であり、次期総合計画の策定状況は本候補の調査範囲では公式資料で確認できなかったため未確認として保持する。FY2024決算は現行計画の期間内の決算であり、計画の版の相違による接続の制約はない。",
+      "title": "現行計画の開始と次期計画の策定状況"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "決算総額は『令和6年度決算の概要』と監査委員審査意見書、計画の期間は計画ページ・市公式文書で確認した。総額レベルの対応付けの不存在は、決算・計画の公表範囲で確認した",
+      "evidence_role": "annual_progress",
+      "fiscal_year": 2024,
+      "id": "matsue-fy2024-settlement-linkage",
+      "review_note": "計画の版は同一であるが、総額レベルの対応付けがないため接続しないことを明記した。レビュー済みレコード。",
+      "source_url": "https://www.city.matsue.lg.jp/soshikikarasagasu/zaiseibu_zaiseika/gyozaisei/1/1/23753.html",
+      "statement": "FY2024決算は現行の松江市総合計画『MATSUE DREAMS 2030』（基本構想2022年度～2029年度）の期間内の決算であり、計画の版は現行と同一である。決算総額（千円精度）は一次資料で確認済みであるが、決算総額と計画の基本目標・基本施策との総額レベルの対応付けは公式資料にないため、接続はnot_assessableとし、決算値を計画のcurrent actualへ流用しない。なお決算第1号は2025年10月7日に認定されており、接続判定は認定結果に依存しない。",
+      "title": "令和6年度決算と総合計画の政策体系の接続"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-16"
+}
