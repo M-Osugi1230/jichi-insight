@@ -1,0 +1,49 @@
+{
+  "records": [
+    {
+      "availability": "published",
+      "category": "municipality_profile",
+      "confidence": "high",
+      "id": "takamatsu-city-home",
+      "indexed_at": "2026-11-17",
+      "municipality_key": "takamatsu-city",
+      "notes": "高松市の公式自治体サイト。",
+      "organization": "高松市",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "高松市公式サイト",
+      "url": "https://www.city.takamatsu.kagawa.jp/"
+    },
+    {
+      "availability": "published",
+      "category": "budget",
+      "confidence": "high",
+      "id": "takamatsu-budget-2026",
+      "indexed_at": "2026-11-17",
+      "municipality_key": "takamatsu-city",
+      "notes": "一般会計当初予算192,800,000千円（千円精度）のEvidence。市公式『令和8年度高松市一般会計予算』議案（議案第2号、令和8年3月2日提出）の第1条で歳入歳出予算の総額を確認し、市公式『令和8年度当初予算の概要』の当初予算総括表でも同額を確認した。議決結果は市議会公式『議案等審議結果一覧（会派別・議員別）』（令和8年第2回定例会）の議決結果等欄の文言どおり「可決」である。議決日2026年3月23日は市議会公式の会議録の議事日程（第8号）から特定したもので、本会議における議決宣言文言の会議録による最終確認は未実施である。千円単位の公表値のまま記録し、円単位を合成しない。補正後予算・執行・決算とは分離する。",
+      "organization": "高松市",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "令和8年度予算編成",
+      "url": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/zaisei/katei/r8/2026yosanhensei.html"
+    },
+    {
+      "availability": "published",
+      "category": "settlement",
+      "confidence": "high",
+      "id": "takamatsu-settlement-2024",
+      "indexed_at": "2026-11-17",
+      "municipality_key": "takamatsu-city",
+      "notes": "一般会計歳入183,171,243千円・歳出177,907,841千円（いずれも千円単位）を含む公式決算資料（『令和6年度一般会計・特別会計決算見込みの概要』（高松市）の会計別決算概況に千円単位で印字された値で確認し、差引残額（形式収支）5,263,402千円が同資料の印字値と検算一致）。実質収支は4,071,697千円（差引残額5,263,402千円－翌年度への繰越財源1,191,705千円。同資料の千円単位の公表値のまま記録）。決算の認定は認定第1号『令和6年度高松市一般会計・特別会計歳入歳出決算について』として令和7年第5回定例会（2025年9月）に提出され継続審査となった後、決算審査特別委員会の報告書（令和7年11月25日付）を経て、令和7年第6回定例会（2025年12月定例会）で2025年12月5日に認定された（実ブラウザによる補完調査で市議会公式の12月定例会ページ・『令和7年第6回定例会 議案等審議結果一覧（会派別・議員別）』・会議録（令和7年第6回（12月）定例会 12月05日－01号）で確認）。普通会計ベースの集計値は一般会計の値とは別のため使用していない。確定した決算書および監査委員の令和6年度決算審査意見書の値との突合と、決算事項別明細書の款別合計との最終突合は未実施である。",
+      "organization": "高松市",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "決算状況",
+      "url": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/zaisei/jijo/kohyo.html"
+    }
+  ],
+  "scope": "phase15-core-capital-review",
+  "updated_at": "2026-11-17",
+  "version": "0.1.0"
+}

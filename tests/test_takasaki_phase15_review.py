@@ -263,8 +263,8 @@ def test_takasaki_and_previous_eleven_are_reviewed_complete_and_iwaki_is_next():
     ):
         assert by_code[code]["status"] == "reviewed_complete"
 
-    assert queue["summary"]["reviewed_complete_count"] == 56
+    assert queue["summary"]["reviewed_complete_count"] == 57
     assert queue["summary"]["review_in_progress_count"] == 0
-    assert queue["summary"]["pending_record_review_count"] == 11
-    assert queue["summary"]["next_official_code"] == "372013"
+    assert queue["summary"]["pending_record_review_count"] == 10
+    assert queue["summary"]["next_official_code"] == "382019"
     assert by_code["122041"]["status"] == "reviewed_complete"

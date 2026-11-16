@@ -1,0 +1,63 @@
+{
+  "id": "phase15-takamatsu-plan-review",
+  "name_ja": "高松市",
+  "next_action": "Promote the 17 policies and 43 measures under the six goals and the individual progress of the KGI (the five numerical targets of the basic concept) only when official sources with stable record-level locators have been reviewed; complete the final confirmation of the FY2026 budget's plenary declaration wording in the plenary-session minutes; complete the cross-checks against the final settlement book and the audit commissioners' FY2024 settlement review opinion, and against the budget and settlement books (事項別明細書) at section level, including the real-balance statement; enumerate the policy structure of the previous plan (the sixth Takamatsu City comprehensive plan) as a separate version; follow the preparation status of the next plan as a separate version once it becomes official; and never overwrite the first-period Machizukuri Plan version with the second-period version where their periods overlap in FY2026, nor connect results from another plan version forward into the current plan. Keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "official_code": "372013",
+  "quality_boundary": "This package reviews the current plan identity and period (the seventh Takamatsu City comprehensive plan, in two layers: the basic concept 『たかまつ未来ビジョン』 (FY2024-FY2031), which sets out the city vision 『人がつどい 未来に躍動する 世界都市・高松』, three basic policies and six goals, under which 17 policies and 43 measures are organised and five numerical targets are kept as KGI; and the implementation plan 『高松まちづくりプラン』, a three-year plan revised on a rolling basis every two years across four periods (period 1 FY2024-FY2026, period 2 FY2026-FY2028, period 3 FY2028-FY2030, period 4 FY2030-FY2031), which also serves as the local comprehensive strategy under article 10 of the machi-hito-shigoto creation act; the overlap of periods 1 and 2 in FY2026 is kept as structure and the period-2 version does not overwrite the period-1 version; the inventory period status of verified_fixed_period (FY2024-FY2031) is kept as recorded), the policy structure (the six goals kept at goal level; the 17 policies and 43 measures are not enumerated and stay deferred depth, so the measures lists stay empty), the progress-governance layer (the municipality's own progress management through the PDCA cycle with an OODA loop, the Takamatsu City comprehensive plan promotion council of experts, and citizen satisfaction surveys), the enacted FY2026 initial budget at the published sen-yen (thousand-yen) precision (bill 議案第2号; the result printed in the council's official results list is the wording 「可決」, kept verbatim and not recorded as an adoption as proposed; the vote date 2026-03-23 was identified from the agenda of the plenary minutes, and the final confirmation of the plenary declaration wording in the minutes has not been made), and the FY2024 settlement at the thousand-yen precision printed in the account-by-account settlement summary of the FY2024 settlement outlook summary. The FY2024 settlement certification (bill 認定第1号) was submitted to the fifth regular session of 2025 and kept under continued review at that session, and was certified on 2025-12-05 at the sixth regular session of 2025 after the settlement review special committee's report of 2025-11-25, confirmed in a supplementary live-browser investigation of the council's official December session page, its results list, and the plenary minutes; it was not rejected. The real balance of 4,071,697 thousand yen is recorded at the published thousand-yen precision and is not expanded into a synthetic yen figure. Ordinary-account aggregate figures are not used. FY2024 is a settlement of the first year of the current plan (within the first-period Machizukuri Plan), so the plan version is the same as the current plan, but no official total-level mapping from settlement totals to the current plan's goal and policy structure exists, so the linkage stays not_assessable. The transition from the previous plan (the sixth Takamatsu City comprehensive plan, FY2016-FY2023) is kept separate as a plan transition, and the preparation status of the next plan could not be confirmed in official sources.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "計画の構成と期間は市公式『第7次高松市総合計画』ページと『高松まちづくりプラン』ページで確認し、第2期高松まちづくりプラン本編（令和8年3月、高松市発行）で基本構想・実施計画の2層構造、ローリング方式、各期の期間を直接確認した",
+      "evidence_role": "current_plan_identity",
+      "id": "takamatsu-current-plan-period",
+      "review_note": "総合計画の構成（基本構想・実施計画）と各層の期間、FY2026における実施計画の期間重複を別period semanticsとして保持した。レビュー済みレコード。",
+      "source_url": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/keikaku/sogo/kikaku/sogo/7thsogo.html",
+      "statement": "高松市の現行の最上位計画は第7次高松市総合計画であり、基本構想「たかまつ未来ビジョン」と実施計画「高松まちづくりプラン」で構成される。基本構想は令和6年度（2024年度）から令和13年度（2031年度）までの8か年を計画期間とし、目指すべき都市像『人がつどい 未来に躍動する 世界都市・高松』と、まちづくりの基本方針（選ばれるまちづくり／持続可能なまちづくり／協働によるまちづくり）を定める。実施計画「高松まちづくりプラン」は3か年計画であり、基本構想の計画期間を4期に分けて2年ごとに見直すローリング方式を採る（第1期 令和6年度～令和8年度（2024年度～2026年度）／第2期 令和8年度～令和10年度（2026年度～2028年度）／第3期 令和10年度～令和12年度／第4期 令和12年度・令和13年度）。このため令和8年度（FY2026）は第1期と第2期の期間が重なり、同年度に複数の実施計画versionが存在する構造をそのまま保持し、第2期で第1期を上書きしない。まちづくりプランはまち・ひと・しごと創生法第10条に基づく地方版総合戦略としても位置付けられる。Phase 14インベントリのperiod_statusはverified_fixed_period（2024年度～2031年度）である。",
+      "title": "第7次高松市総合計画の構成（基本構想「たかまつ未来ビジョン」2024年度～2031年度・実施計画「高松まちづくりプラン」は3か年ローリング方式）",
+      "value": "第7次高松市総合計画は基本構想（2024年度～2031年度）と実施計画「高松まちづくりプラン」（第1期2024年度～2026年度・第2期2026年度～2028年度・第3期2028年度～2030年度・第4期2030年度～2031年度）で構成／FY2026に第1期と第2期の期間が重なる／FY2024決算は第7次計画の初年度の決算"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "都市像・基本方針・6つの目標・政策17・施策43は第2期高松まちづくりプラン本編（令和8年3月、高松市発行）の政策・施策表で直接確認し、目標別の政策数・施策数の合計が17・43と一致することを検算した",
+      "evidence_role": "policy_structure",
+      "id": "takamatsu-current-policy-structure",
+      "review_note": "基本構想の都市像と実施計画の目標レベルの体系を保持した。政策・施策の全件列挙は行わない。レビュー済みレコード。",
+      "source_url": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/keikaku/sogo/kikaku/sogo/machidukuri7.html",
+      "statement": "基本構想は目指すべき都市像として『人がつどい 未来に躍動する 世界都市・高松』を掲げ、3つのまちづくりの基本方針（選ばれるまちづくり／持続可能なまちづくり／協働によるまちづくり）のもと、6つのまちづくりの目標を設定する。各目標のもとの政策は計17、施策は計43であり（目標別の施策数は8・6・8・9・6・6で計43、政策数は3・3・3・3・3・2で計17と検算一致する）、基本構想で設定した5つの数値目標をKGI（重要目標達成指標）とする。本候補は目標（政策分野）レベルの体系のみを保持し、政策17・施策43の個別の全件列挙は行わない。",
+      "title": "目指すべき都市像『人がつどい 未来に躍動する 世界都市・高松』と6つのまちづくりの目標・政策17・施策43の体系"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "進行管理の仕組み（PDCAサイクル・OODAループ・総合計画推進会議・市民満足度調査）と第2期プランの重点テーマは第2期高松まちづくりプラン本編で直接確認した",
+      "evidence_role": "progress_governance",
+      "id": "takamatsu-progress-governance-framework",
+      "review_note": "進行管理の公式routeとしてPDCAサイクル・OODAループと推進会議の仕組みを保持した。評価結果の個別内容の展開は行わない。レビュー済みレコード。",
+      "source_url": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/keikaku/sogo/kikaku/sogo/machidukuri7.html",
+      "statement": "第7次高松市総合計画の進行管理は、PDCAサイクルにOODAループを取り入れた進行管理によることとされ、有識者で構成する高松市総合計画推進会議や市民満足度調査等を通じて進捗を管理する。実施計画「高松まちづくりプラン」は2年ごとに見直すローリング方式であり、第2期プラン（令和8年3月策定）は重点テーマとして5つ（若者・女性にも選ばれる／コンパクト・プラス・ネットワーク／デジタルでつながる／イノベーションを生み出す／共生・共創・協働）を掲げる。自治体の進行管理の仕組みをJichi Insight独自の達成判定へ変換しない。",
+      "title": "計画の進行管理（PDCAサイクルとOODAループ、高松市総合計画推進会議による進行管理）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "前計画の名称と期間は市公式の第6次高松市総合計画素案説明会資料（平成28年度～平成35年度までの8年間の計画とする旨の記載）で確認し、都市像は第6次計画本編の表題で確認した。現行計画の期間は市公式『第7次高松市総合計画』ページで確認した",
+      "evidence_role": "plan_transition",
+      "id": "takamatsu-plan-transition",
+      "review_note": "計画の世代間の移行を分離記録した。レビュー済みレコード。",
+      "source_url": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/keikaku/sogo/kikaku/sogo/7thsogo.html",
+      "statement": "高松市の総合計画は、第6次高松市総合計画（平成28年度～平成35年度（2016年度～2023年度）、目指すべき都市像『活力にあふれ 創造性豊かな 瀬戸の都・高松』、実施計画は高松市まちづくり戦略計画）から、第7次高松市総合計画（2024年度～2031年度）へ移行した。FY2024決算は第7次計画の初年度の決算であり、第6次計画期間の決算ではない。前計画の政策体系・事業・成果の全件列挙は本候補では行わない。第7次計画の次期計画の策定状況は、本候補の調査時点では公式資料で確認できていない。",
+      "title": "第6次高松市総合計画から第7次高松市総合計画への移行"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "決算総額は『令和6年度一般会計・特別会計決算見込みの概要』、計画の開始時期は計画ページと第2期プラン本編で確認した。総額レベルの対応付けの不在は、決算・計画の公表範囲で確認した",
+      "evidence_role": "annual_progress",
+      "fiscal_year": 2024,
+      "id": "takamatsu-fy2024-settlement-linkage",
+      "review_note": "FY2024決算は現行計画の初年度の決算で版は同一だが、総額レベルの対応付けが公式資料にないため接続しないことを明記した。レビュー済みレコード。",
+      "source_url": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/zaisei/jijo/kohyo.html",
+      "statement": "FY2024決算は第7次高松市総合計画の初年度（第1期高松まちづくりプランの期間内）の決算であり、計画の版は現行計画と同一である。決算総額は一次資料で確認済みであるが、決算総額と現行計画の目標・政策体系との総額レベルの対応付けは公式資料にないため、接続はnot_assessableとする。なお認定第1号は令和7年第5回定例会で継続審査となった後、令和7年第6回定例会で2025年12月5日に認定されているが、接続判定は認定の成否に依存しない。",
+      "title": "令和6年度決算と第7次高松市総合計画の政策体系の接続"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-17"
+}

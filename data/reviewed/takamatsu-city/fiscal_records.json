@@ -1,0 +1,65 @@
+[
+  {
+    "account_type": "general",
+    "amount_yen": 192800000000,
+    "confidence": "high",
+    "fiscal_year": 2026,
+    "id": "jp-local-372013-fiscal-2026-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算総額",
+    "municipality_id": "jp-local-372013",
+    "note": "高松市の令和8年度一般会計当初予算総額192,800,000千円。市公式『令和8年度高松市一般会計予算』議案（議案第2号、令和8年3月2日提出）の第1条で、歳入歳出予算の総額は歳入歳出それぞれ192,800,000千円と定められていることを直接確認し、市公式『令和8年度当初予算の概要』の当初予算総括表の一般会計192,800,000千円とも一致する。議決結果は市議会公式『議案等審議結果一覧（会派別・議員別）』（令和8年第2回定例会）の議決結果等欄の文言どおり「可決」であり、その文言のまま記録する。議決日は市議会公式の会議録（令和8年第2回（3月）定例会）の2026年3月23日の議事日程（第8号）から2026年3月23日と特定したが、本会議における議決宣言の文言そのものはテキスト取得では直接確認できておらず、会議録による最終確認は未実施である。公表精度は千円単位であり、その精度のまま記録し円単位を合成していない。補正予算や決算とは別stateで扱う。",
+    "period_end": "2027-03-31",
+    "period_start": "2026-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "takamatsu-budget-2026"
+    ],
+    "stage": "initial_budget",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 183171243000,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-372013-fiscal-2024-total-revenue",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入額",
+    "municipality_id": "jp-local-372013",
+    "note": "『令和6年度一般会計・特別会計決算見込みの概要』（高松市）の会計別決算概況に示された一般会計の収入済額183,171,243千円。同資料の歳入款別決算表の合計とも一致する。当該決算は認定第1号『令和6年度高松市一般会計・特別会計歳入歳出決算について』として令和7年第5回定例会（2025年9月）に提出され、同定例会では「継続審査」とされた後、決算審査特別委員会の報告書（令和7年11月25日付）を経て、令和7年第6回定例会（2025年12月定例会）の2025年12月5日の本会議で認定された。議決結果は市議会公式『令和7年12月定例会』ページ（https://www.city.takamatsu.kagawa.jp/smph/kurashi/shigikai/kaigi/gian_giketsu/R7_12teirei.html ）の継続審査案件の表（議決状況「認定」）と『令和7年第6回定例会 議案等審議結果一覧（会派別・議員別）』（https://www.city.takamatsu.kagawa.jp/kurashi/shigikai/kaigi/gian_giketsu/R7_12teirei.files/sanpi.R7.12.pdf ）で確認し、議決日は会議録「高松市令和7年第6回（12月）定例会 12月05日－01号」（https://ssp.kaigiroku.net/tenant/takamatsu/SpMinuteView.html?power_user=false&tenant_id=561&council_id=2381&schedule_id=2&view_years=2025 ）の採決文言で直接確認した。認定の確認根拠は実ブラウザによる補完調査である。公表精度は千円単位のため千円精度のまま記録し、円単位を合成していない。FY2024は第7次高松市総合計画の初年度（第1期高松まちづくりプランの期間内）の決算である。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "takamatsu-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 177907841000,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-372013-fiscal-2024-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出額",
+    "municipality_id": "jp-local-372013",
+    "note": "同じく『令和6年度一般会計・特別会計決算見込みの概要』の会計別決算概況に示された一般会計の支出済額177,907,841千円。歳入決算額183,171,243千円との差引残額（形式収支）は5,263,402千円で、同資料の印字値と検算一致する。実質収支は4,071,697千円であり（差引残額5,263,402千円－翌年度への繰越財源1,191,705千円）、同資料に印字された実質収支と一致する。実質収支は公表精度である千円単位のまま記録し、円単位を合成しない。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "takamatsu-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  }
+]
