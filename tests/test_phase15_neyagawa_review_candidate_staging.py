@@ -317,9 +317,9 @@ def test_neyagawa_candidate_progress_review_stays_staging() -> None:
 def test_neyagawa_promotion_is_reflected_in_review_queue() -> None:
     queue = load_json(QUEUE_PATH)
     assert queue["summary"]["target_count"] == 67
-    assert queue["summary"]["reviewed_complete_count"] == 61
-    assert queue["summary"]["pending_record_review_count"] == 6
-    assert queue["summary"]["next_official_code"] == "422010"
+    assert queue["summary"]["reviewed_complete_count"] == 62
+    assert queue["summary"]["pending_record_review_count"] == 5
+    assert queue["summary"]["next_official_code"] == "422029"
     items = {item["official_code"]: item for item in queue["execution_queue"]}
     assert items["272159"]["name_ja"] == "寝屋川市"
     assert items["272159"]["status"] == "reviewed_complete"

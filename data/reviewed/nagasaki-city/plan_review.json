@@ -1,0 +1,63 @@
+{
+  "id": "phase15-nagasaki-plan-review",
+  "name_ja": "長崎市",
+  "next_action": "Promote the full enumeration of the 27 measures of the latter basic plan (A1-H2) with their outcome indicators and target values and the individual progress of the implementation plan's main projects and KPIs only when official sources with stable record-level locators confirm the correspondence; complete the cross-checks against the budget and settlement books （事項別明細書） at section level, the confirmation of the precise yen and thousand-yen settlement figures in the settlement book itself, and the cross-check against the real-balance statement in the settlement book itself; keep the first-period basic plan (FY2022-FY2025) and the latter basic plan (FY2026-FY2030) of the Fifth Comprehensive Plan as separate versions and never read the first-period results forward into the latter period. Keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "official_code": "422010",
+  "quality_boundary": "This package reviews the current plan identity and period (the Fifth Nagasaki City Comprehensive Plan, adopted in February 2022, in three layers: the basic concept (FY2022-FY2030, nine years), the basic plan (first period FY2022-FY2025; latter period FY2026-FY2030, the latter integrated with the third machi-hito-shigoto comprehensive strategy) and the implementation plan (three-year plan revised every fiscal year; the current plan covers FY2026-FY2028); the basic concept sets out the intended city image 『個性輝く世界都市』 and the intended 2030 state 『希望あふれる人間都市』, and the eight community-development fields (fields A-H) are kept at field level; the full enumeration of the latter basic plan's 27 measures with their outcome indicators and target values is not promoted and stays deferred depth), the policy structure, the progress-governance layer (the municipality's own annual evaluation: internal evaluation plus evaluation by the Nagasaki City Comprehensive Plan Council; the latter basic plan's measure evaluation results are to be published from FY2026), the enacted FY2026 general-account initial budget at the published sen-yen (thousand-yen) precision (bill No. 13; the council's official vote results list records the result in its summary column as 3月12日 原案可決 (adopted as proposed on March 12), kept verbatim; vote date 2026-03-12), and the FY2024 settlement at the man-yen (ten-thousand-yen) precision published in the audit committee's settlement review opinion (revenue 237,840,810 thousand yen, i.e. 2,378億4,081万円 as published / expenditure 234,412,110 thousand yen, i.e. 2,344億1,211万円; their difference, the formal balance of 3,428,700 thousand yen (34億2,870万円), checks out arithmetically against the printed formal balance; the real balance of 1,138,300 thousand yen (11億3,830万円) is kept at the published man-yen precision, as published, and the precise yen and thousand-yen figures in the settlement book itself have not been confirmed and are not synthesized). The FY2024 settlement certification (bill No. 180) was certified at the November 2025 regular session, confirmed in the council's official vote results list, whose summary column records 11月25日 認定; it was not rejected. Ordinary-account aggregate figures (such as the fiscal situation materials) are not used, because their aggregation scope differs from the general account. The period status stays verified_fixed_period as recorded in the Phase 14 inventory. FY2024 falls within the first-period basic plan (FY2022-FY2025), so its plan version differs from the current latter basic plan; the transition is kept separate as a plan transition, and no official total-level mapping from settlement totals to the first-period plan's policy structure exists, so the linkage stays not_assessable.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "計画の構成と期間は、後期基本計画の公式ページ（長崎市第五次総合計画後期基本計画／第3期まち・ひと・しごと創生総合戦略）と計画書第1章・第2章で直接確認した。period_statusはPhase 14出典目録の記録どおりverified_fixed_periodを保持する",
+      "evidence_role": "current_plan_identity",
+      "id": "nagasaki-current-plan-period",
+      "review_note": "総合計画の構成（基本構想・基本計画・実施計画）と各層の期間を別period semanticsとして保持し、前期・後期の基本計画を分離した。レビュー済みレコード。",
+      "source_url": "https://www.city.nagasaki.lg.jp/page/50955.html",
+      "statement": "長崎市の現行の最上位計画は第五次総合計画（令和4年2月策定）であり、基本構想（2022年度〜2030年度の9年間）、基本計画（前期2022年度〜2025年度の4年間／後期2026年度〜2030年度の5年間。後期基本計画は第3期まち・ひと・しごと創生総合戦略と一体）、その下位に具体的な事業を示す実施計画（3年計画・毎年度見直し。現行は令和8〜10年度）の3層で構成される。基本構想はめざす都市像として「個性輝く世界都市」を掲げる。Phase 14インベントリのperiod_statusはverified_fixed_periodである。",
+      "title": "長崎市第五次総合計画の構成（基本構想2022年度〜2030年度・基本計画 前期2022年度〜2025年度／後期2026年度〜2030年度・実施計画 3年計画）",
+      "value": "第五次総合計画は基本構想（2022年度〜2030年度・9年間）と基本計画（前期2022年度〜2025年度・後期2026年度〜2030年度）、実施計画（3年計画・毎年度見直し）で構成／FY2024決算は前期基本計画期間の決算で後期基本計画の開始前"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "8つのまちづくりの方針は計画書第2章（基本構想）で確認し、後期基本計画の施策コード（A1〜H2・27施策）は計画書第3章（後期基本計画）で確認した",
+      "evidence_role": "policy_structure",
+      "id": "nagasaki-current-policy-structure",
+      "review_note": "基本構想の方針レベルの体系を保持した。施策ごとの成果指標・目標値の全件列挙は行わない。レビュー済みレコード。",
+      "source_url": "https://www.city.nagasaki.lg.jp/page/50955.html",
+      "statement": "基本構想はめざす都市像として「個性輝く世界都市」を掲げ、計画の最終年度である2030年の姿として「希望あふれる人間都市」を描く。その実現に向けた8つのまちづくりの方針（方針A〜H）を定める。後期基本計画は、方針A〜Hに対応する27の施策（A1〜A3／B1〜B2／C1〜C3／D1〜D2／E1〜E4／F1〜F7／G1〜G4／H1〜H2）を置き、施策ごとに2030年度にめざす姿と成果指標を掲げる。本候補は方針レベルの体系のみを保持し、27施策ごとの成果指標・目標値の全件列挙は行わない。",
+      "title": "めざす都市像「個性輝く世界都市」と8つのまちづくりの方針・後期基本計画27施策の体系"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "進捗管理の枠組みは、計画書第1章の「進捗状況の管理」と後期基本計画の公式ページ（進捗管理・令和8年度施策評価結果から掲載予定）で直接確認した",
+      "evidence_role": "progress_governance",
+      "id": "nagasaki-progress-governance-framework",
+      "review_note": "進行管理の公式routeとして毎年度評価（市内部評価と総合計画審議会評価）の枠組みを保持した。評価結果の個別内容の展開は行わない。レビュー済みレコード。",
+      "source_url": "https://www.city.nagasaki.lg.jp/page/50955.html",
+      "statement": "第五次総合計画の進捗については、計画期間中、毎年度評価を行う。市内部での評価に加え、長崎市総合計画審議会による評価を行うことで、施策の進捗を把握し、取組みの見直しを図る。後期基本計画及び第3期総合戦略では、施策の成果を客観的な数値で図るための指標を掲げ、後期基本計画の施策評価結果は令和8年度分から公式ページに掲載予定である。未公表の評価結果を推測で作成せず、自治体の進行管理の仕組みをJichi Insight独自の達成判定へ変換しない。",
+      "title": "計画の進捗管理（毎年度評価（市内部評価と総合計画審議会による評価）と施策評価結果の公表）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "前期・後期の構成と期間は計画書第1章の期間図と後期基本計画の公式ページ（前期基本計画・第2期総合戦略の検証への案内を含む）で確認した",
+      "evidence_role": "plan_transition",
+      "id": "nagasaki-plan-transition",
+      "review_note": "同一総合計画内の前期基本計画から後期基本計画への移行を分離記録した。レビュー済みレコード。",
+      "source_url": "https://www.city.nagasaki.lg.jp/page/50955.html",
+      "statement": "第五次総合計画の基本計画は、前期基本計画（2022年度〜2025年度の4年間。第2期まち・ひと・しごと創生総合戦略と一体）と後期基本計画（2026年度〜2030年度の5年間。第3期総合戦略と一体）で構成され、2026年度から後期基本計画へ移行した。前期基本計画期間の実績を後期基本計画の実績へ読み替えない。移行記録として分離して保持する。",
+      "title": "第五次総合計画 前期基本計画（2022年度〜2025年度）から後期基本計画（2026年度〜2030年度）への移行"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "決算総額は監査委員の決算審査意見書、計画期間は後期基本計画の公式ページと計画書で確認した。総額レベルの対応付けの不在は、決算・計画の公表範囲で確認した",
+      "evidence_role": "annual_progress",
+      "fiscal_year": 2024,
+      "id": "nagasaki-fy2024-settlement-linkage",
+      "review_note": "FY2024決算は前期基本計画期間の決算で版が後期基本計画と異なるため接続しないことを明記した。レビュー済みレコード。",
+      "source_url": "https://www.city.nagasaki.lg.jp/life/7/52/",
+      "statement": "FY2024決算は第五次総合計画の前期基本計画（2022年度〜2025年度）期間の決算であり、現行の後期基本計画（2026年度〜2030年度）とは基本計画の版が異なる。決算総額は一次資料で確認済みであるが、決算総額と前期基本計画の施策体系との総額レベルの対応付けは公式資料にないため、接続はnot_assessableとする。なお決算の議案（第180号議案）は令和7年第5回（11月）定例会で認定されたが、接続判定は認定の成否に依存しない。",
+      "title": "令和6年度決算と第五次総合計画（前期基本計画）の施策体系の接続"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-17"
+}

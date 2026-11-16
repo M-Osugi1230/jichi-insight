@@ -1,0 +1,55 @@
+{
+  "id": "nagasaki-phase15-sources",
+  "name_ja": "長崎市",
+  "official_code": "422010",
+  "phase": 15,
+  "quality_boundary": "Current plan identity kept as published (the Fifth Nagasaki City Comprehensive Plan: the basic concept (FY2022-FY2030, nine years), the basic plan (first period FY2022-FY2025; latter period FY2026-FY2030, the latter integrated with the third comprehensive strategy) and the implementation plan (three-year plan revised every fiscal year, currently FY2026-FY2028), with the intended city image 『個性輝く世界都市』, the intended 2030 state 『希望あふれる人間都市』 and the eight fields A-H; the field-level structure is kept and the full enumeration of the latter basic plan's 27 measures with their outcome indicators and target values stays deferred depth; the period status stays verified_fixed_period; the transition from the first-period basic plan to the latter basic plan is kept separate as a plan transition and first-period results are never read forward into the latter period), progress governance (the annual evaluation — internal evaluation and evaluation by the Comprehensive Plan Council — kept as the municipality's own progress-management framework), budget enactment kept as printed in the council's official vote results list (bill No. 13; the result wording is 原案可決 (adopted as proposed), kept verbatim; vote date 2026-03-12) and the amount kept at the published sen-yen precision (227,560,000 thousand yen, confirmed in the account-by-account initial budget comparison table of the finance division's FY2026 initial budget proposal document, and never expanded into synthetic finer amounts), and settlement totals kept at the man-yen precision published in the audit committee's settlement review opinion (revenue 237,840,810 thousand yen / expenditure 234,412,110 thousand yen, as published in man-yen units; the formal balance of 3,428,700 thousand yen checks out against the printed formal balance; the real balance of 1,138,300 thousand yen is kept at the published man-yen precision and the precise yen and thousand-yen figures in the settlement book itself have not been confirmed; the settlement certification, bill No. 180, was certified on 2025-11-25; ordinary-account aggregate figures are not used, because their aggregation scope differs from the general account) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "reviewed_at": "2026-11-17",
+  "sources": [
+    {
+      "evidence_location": "後期基本計画の公式ページから計画書（第1章：計画の策定にあたって・第2章：基本構想・第3章：後期基本計画）を取得し、基本構想（2022年度〜2030年度・9年間）、前期基本計画（2022年度〜2025年度）、後期基本計画（2026年度〜2030年度）と第3期総合戦略、めざす都市像「個性輝く世界都市」、8つのまちづくりの方針、後期基本計画の27施策（方針A〜H対応）を計画書で直接確認した",
+      "evidence_role": "comprehensive_plan",
+      "format": "html",
+      "id": "nagasaki-fifth-latter-plan",
+      "official_url": "https://www.city.nagasaki.lg.jp/page/50955.html",
+      "title": "長崎市第五次総合計画後期基本計画／第3期まち・ひと・しごと創生総合戦略",
+      "use_boundary": "第五次総合計画（後期基本計画）をcurrent versionとして保持し、前期基本計画期間の実績をcurrent actualへ流用しない"
+    },
+    {
+      "evidence_location": "実施計画の公式ページで、実施計画が基本計画で定めた施策を達成するための具体的な事業計画であり、現行は令和8〜10年度（2026年度〜2028年度）の3年計画で、まちづくりの方針A〜H別に構成されることを確認した",
+      "evidence_role": "implementation_plan",
+      "format": "html",
+      "id": "nagasaki-implementation-2026-2028",
+      "official_url": "https://www.city.nagasaki.lg.jp/page/5169.html",
+      "title": "長崎市第五次総合計画の実施計画",
+      "use_boundary": "実施計画は基本構想の長期periodとは別の実施層として保持し、個別事業の進捗を計画全体の達成へ読み替えない"
+    },
+    {
+      "evidence_location": "後期基本計画の公式ページで、計画の進捗は計画期間中、毎年度評価（市内部での評価に加え長崎市総合計画審議会による評価）を行うこと、後期基本計画の施策評価結果は令和8年度分から掲載予定であることを確認した",
+      "evidence_role": "annual_progress",
+      "format": "html",
+      "id": "nagasaki-progress",
+      "official_url": "https://www.city.nagasaki.lg.jp/page/50955.html",
+      "title": "長崎市第五次総合計画後期基本計画 進捗管理",
+      "use_boundary": "未公表の評価結果を推測で作成せず、availability自体を保持する。自治体の評価をJichi Insight独自の達成度やランキングへ変換しない"
+    },
+    {
+      "evidence_location": "令和8年度予算の公式ページから財政課『令和8年度当初予算（案）について』（令和8年2月）を取得し、各会計別当初予算比較表で一般会計227,560,000千円を直接確認した。議決結果は市議会公式『令和8年第2回（2月）定例会議決結果一覧』の摘要欄で第13号議案「3月12日 原案可決」と直接確認した",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "nagasaki-budget-2026",
+      "official_url": "https://www.city.nagasaki.lg.jp/life/7/52/315/",
+      "title": "令和8年度予算",
+      "use_boundary": "FY2026当初予算は補正予算・決算と別stateで保持する。金額は千円単位の公表値であり、円単位を合成しない"
+    },
+    {
+      "evidence_location": "Phase 14出典目録におけるFY2024決算の公式入口。同ページが案内する財政状況資料集は普通会計ベースの資料であるため一般会計の値として使用せず、一般会計の決算額は長崎市監査委員の決算審査意見書（令和6年度長崎市一般会計・特別会計歳入歳出決算審査意見書、長監第36号）で歳入2,378億4,081万円・歳出2,344億1,211万円（いずれも万円単位の公表値）を確認し、差引（形式収支）34億2,870万円が検算一致すること、実質収支11億3,830万円を確認した。認定議案は市議会公式『令和7年第5回（11月）定例会議決結果一覧』の摘要欄で第180号議案「11月25日 認定」と直接確認した",
+      "evidence_role": "settlement",
+      "format": "html",
+      "id": "nagasaki-settlement-2024",
+      "official_url": "https://www.city.nagasaki.lg.jp/life/7/52/",
+      "title": "財政（予算・決算）",
+      "use_boundary": "FY2024決算は予算・補正と別stateで保持する。決算額は万円単位の公表値のまま記録し、円単位・千円単位の精密値を合成しない。財政状況資料集等の普通会計ベースの集計値と一般会計値を混同しない。FY2024決算は前期基本計画期間の決算であり、後期基本計画の実績へ読み替えない"
+    }
+  ]
+}

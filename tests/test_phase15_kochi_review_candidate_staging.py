@@ -237,9 +237,9 @@ def test_kochi_candidate_progress_review_stays_staging() -> None:
 def test_kochi_promotion_is_reflected_in_review_queue() -> None:
     queue = json.loads(QUEUE_PATH.read_text(encoding="utf-8"))
 
-    assert queue["summary"]["reviewed_complete_count"] == 61
-    assert queue["summary"]["pending_record_review_count"] == 6
-    assert queue["summary"]["next_official_code"] == "422010"
+    assert queue["summary"]["reviewed_complete_count"] == 62
+    assert queue["summary"]["pending_record_review_count"] == 5
+    assert queue["summary"]["next_official_code"] == "422029"
     entry = next(
         item for item in queue["execution_queue"] if item["official_code"] == "392014"
     )
