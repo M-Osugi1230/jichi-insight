@@ -1,0 +1,65 @@
+[
+  {
+    "account_type": "general",
+    "amount_yen": 154850000000,
+    "confidence": "high",
+    "fiscal_year": 2026,
+    "id": "jp-local-232025-fiscal-2026-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算（可決）",
+    "municipality_id": "jp-local-232025",
+    "note": "岡崎市公式『令和8年度当初予算の概要』の当初予算総括表および会計別集計表に示された一般会計当初予算額154,850,000千円（歳入・歳出それぞれ同額。前年度153,690,000千円との比較は差引+1,160,000千円・100.8%で整合する）。公表精度は千円単位であり、円単位の内訳は公表されていないため千円精度のまま記録する。議案番号・付託は市議会公式の令和8年3月定例会議事日程（第1号）・議案付託表で、第56号議案『令和8年度岡崎市一般会計予算』が予算決算委員会に付託されたことを確認し、採決日は同定例会議事日程第4号（令和8年3月23日・定例会最終日、第1号議案外72件の委員長報告・質疑・討論・採決）で確認した成立予算である。ただし、令和8年3月定例会の議決結果一覧表そのものは本候補の作成時点で直接確認できておらず、『原案可決』の文言は未確認のまま保持する（成立自体は、公式『令和8年度当初予算の概要』が成立予算の概要として公表されていること、および同定例会で成立した令和8年度一般会計補正予算（第1号）と令和8年6月定例会の補正予算（第2号・第3号）が当初予算の存在を前提とすることから裏付けられる）。補正予算や決算とは別stateで扱う。",
+    "period_end": "2027-03-31",
+    "period_start": "2026-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "okazaki-budget-2026"
+    ],
+    "stage": "initial_budget",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 157798763028,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-232025-fiscal-2024-total-revenue",
+    "metric": "total_revenue",
+    "metric_label": "一般会計決算歳入",
+    "municipality_id": "jp-local-232025",
+    "note": "岡崎市公式『令和6年度決算の概要』の決算総括表および会計別歳入歳出決算状況表（いずれも単位：円）に記載された歳入決算額157,798,763,028円（円単位）。歳出決算額148,542,565,874円との差引額9,256,197,154円は同概要の歳入歳出差引額と一致し、繰越事業充当財源2,796,865,869円を控除した実質収支（純剰余金）6,459,331,285円とも検算が一致する。令和6年度一般・特別会計決算の認定議案は認定第1号『令和6年度岡崎市一般・特別会計の決算の認定について』であり、令和7年9月定例会で令和7年9月30日に認定された（市議会公式『議決結果一覧表』（令和7年9月定例会）で確認）。FY2024は第7次岡崎市総合計画の未来投資計画前期（2021年度〜2025年度）の4年目の決算である。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "okazaki-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 148542565874,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-232025-fiscal-2024-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計決算歳出",
+    "municipality_id": "jp-local-232025",
+    "note": "同決算の概要の決算総括表および会計別歳入歳出決算状況表に記載された歳出決算額148,542,565,874円（円単位）。歳入決算額157,798,763,028円との差引額9,256,197,154円で検算が一致する。令和6年度決算は認定第1号として令和7年9月定例会で令和7年9月30日に認定された。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "okazaki-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  }
+]

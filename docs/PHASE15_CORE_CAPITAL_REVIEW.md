@@ -464,13 +464,25 @@ Declared v1 package:
 
 Deferred depth includes the field plans' measures and projects under the 38 policies, the project linkage for each of the city-building strategy's 13 basic policies, cross-checks against the budget book and the settlement book (事項別明細書) at section level, the FY2024 real-balance statement values, the exact vote date of bill No. 95, the first basic plan's framework itself, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Thirty-first completion — Okazaki
+
+岡崎市を31番目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 第7次岡崎市総合計画 — the Comprehensive Policy Guidelines (ten-year policy guidelines looking thirty years ahead; target year FY2050; future city image 『一歩先の暮らしで三河を拓く 中枢・中核都市おかざき』; four basic guidelines), the Future Investment Plan and individual plans; the Future Investment Plan moved from its first period (FY2021–FY2025) to the latter period (FY2026–FY2030, revised in March 2026), which is the current plan; the latter plan's main initiatives hold ten fields and 54 initiatives (all 54 are enumerated), and the cross-field Future Investment Packages (未来のまち／未来のひと／未来のしごと／未来のパートナーシップ) group the promotion projects; progress is managed by grouping the ten fields into four groups (まち・環境／ひと・社会／しごと・経済／行政運営・パートナーシップ) for target setting and progress management, with reference indicators (FY2030 target values and current values) set for each group, and the packages' project lists are revised as circumstances change. The first-to-latter period transition is kept only as a version chronology record
+- FY2026 general-account initial budget: 154,850,000 thousand yen (enacted; bill No. 56 『令和8年度岡崎市一般会計予算』, submitted to the March 2026 regular session, referred to the Budget and Settlement Committee and voted on 2026-03-23, the session's final day, per the official session agendas (議事日程第1号・議案付託表・議事日程第4号); the March 2026 session's voting-results list itself was not retrieved, so the exact 'passed as proposed' (原案可決) wording is not asserted — enactment is corroborated by the published enacted-budget overview and by the FY2026 supplementary budgets (No. 1 at the same session and Nos. 2–3 at the June 2026 session) that presuppose the initial budget). The amount is published at sen-yen (thousand-yen) precision, so it is kept at that precision and yen-precision amounts are not synthesized
+- FY2024 general-account settlement at yen precision as published: revenue 157,798,763,028 yen / expenditure 148,542,565,874 yen (the balance of 9,256,197,154 yen matches the published balance in the official settlement overview, whose summary table and account-level table agree, and the real balance (純剰余金) of 6,459,331,285 yen after deducting carryover funding of 2,796,865,869 yen also checks out). The settlement certification bill, certification bill No. 1 『令和6年度岡崎市一般・特別会計の決算の認定について』, was certified on 2025-09-30 at the September 2025 regular session per the council's official voting-results list (it was not rejected). FY2024 is a settlement of the Future Investment Plan's first period (FY2021–FY2025), a different plan version from the latter plan, so the totals are not linked to the latter plan's initiatives or packages and the linkage stays not_assessable
+
+Deferred depth includes the Future Investment Packages' project lists under the 54 main initiatives, the group-level reference indicators' individual values, cross-checks against the budget book and the settlement book (事項別明細書) at section level, direct confirmation of the 'passed as proposed' wording from the March 2026 session's voting-results list, the audit commissioners' settlement review opinion, the first period's framework itself, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 30 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市
+- Reviewed complete: 31 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市
 - Review in progress: 0
-- Pending record review: 37
+- Pending record review: 36
 - Blocked source inventory: 0
-- Next official code: 232025
+- Next official code: 232033
 
 ## Definition of Phase 15 completion
 

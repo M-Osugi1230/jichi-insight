@@ -1,0 +1,62 @@
+{
+  "id": "phase15-okazaki-plan-review",
+  "name_ja": "岡崎市",
+  "next_action": "Promote the individual projects under the 54 main initiatives of the latter plan and the Future Investment Packages' project lists, and the group-level reference indicators' individual values, only when official sources with stable record-level locators have been reviewed; complete the final cross-check against the budget book and the settlement book (事項別明細書) at section level; obtain the March 2026 regular session's official voting-results list (or the final-day minutes) to confirm the exact wording of the FY2026 budget vote directly, and review the audit commissioners' settlement review opinion as a separate evidence step; record the Future Investment Plan first period's framework only as a separate version if it is ever reviewed, and never retroactively connect the latter plan's initiatives to the first-period results. Keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "official_code": "232025",
+  "quality_boundary": "This package reviews the current plan identity and period (the Seventh Okazaki City Comprehensive Plan: the Comprehensive Policy Guidelines (ten-year policy guidelines looking thirty years ahead, target year FY2050, future city image 『一歩先の暮らしで三河を拓く 中枢・中核都市おかざき』, four basic guidelines), the Future Investment Plan and individual plans; the Future Investment Plan moved from its first period (FY2021-FY2025) to the latter period (FY2026-FY2030, revised in March 2026), which is the current plan), the latter plan's structure of ten fields holding 54 main initiatives (all 54 initiatives are enumerated) plus the cross-field Future Investment Packages (four packages), the progress-governance layer (the ten fields are grouped into four groups for target setting and progress management, with reference indicators set for each group; the packages' project lists are revised as circumstances change), the enacted FY2026 initial budget at the published sen-yen (thousand-yen) precision (bill No. 56, voted on 2026-03-23, the final day of the March 2026 regular session; the session's voting-results list itself was not retrieved, so the exact 'passed as proposed' wording is not asserted; yen-precision amounts are not synthesized), and the FY2024 settlement at yen precision as published, without collapsing proposed, enacted, supplementary, or settlement states. The FY2024 settlement certification bill (certification bill No. 1) was certified on 2025-09-30 at the September 2025 regular session. FY2024 is a settlement of the Future Investment Plan's first period (FY2021-FY2025), a different plan version from the latter plan, so its totals are not linked to the latter plan's initiatives or packages. The first-to-latter transition is kept only as a version chronology record.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "岡崎市公式Webサイト『第7次岡崎市総合計画（後期計画）を策定しました。』ページ（現行計画の公式入口。Phase 14インベントリで確認）と、同ページからリンクされる公式『第7次岡崎市総合計画（後期計画）』（令和8年3月改定）本編の「総合計画の策定の趣旨と構成」および総合政策指針の章（指針の期間・将来都市像・基本指針）で直接確認",
+      "evidence_role": "current_plan_identity",
+      "id": "okazaki-current-plan-period",
+      "review_note": "総合政策指針・未来投資計画・個別計画の構成であることを計画本編で確認したレビュー済みレコード。",
+      "source_url": "https://www.city.okazaki.lg.jp/shisei/koho/1006195/1006358/1006359/1014373/1014734.html",
+      "statement": "岡崎市の総合計画は第7次岡崎市総合計画であり、総合政策指針・未来投資計画・個別計画で構成する。総合政策指針は30年先を見据えた10年間の政策指針で、将来都市像・基本指針・都市のグランドデザイン・分野別指針からなり、目標年度は令和32年度（2050年）である。将来都市像は『一歩先の暮らしで三河を拓く 中枢・中核都市おかざき』、基本指針は公民連携による成長戦略の推進／コンパクトな都市構造の構築／まちへの誇りが育まれる社会づくり／周辺都市との連携の推進の4つである。未来投資計画は将来都市像の実現に向けた10年間の推進事業パッケージを前期（2021年度〜2025年度）・後期（2026年度〜2030年度）の5年ごとに示し、現行は後期計画であり、令和8年3月に未来投資計画部分を見直して改定した。本計画は岡崎市まち・ひと・しごと創生総合戦略と一体的に策定されている。Phase 14インベントリの記録（第7次岡崎市総合計画 後期計画 2026年度〜2030年度）とも一致する。",
+      "title": "第7次岡崎市総合計画の構成と後期計画の計画期間",
+      "value": "2026年度～2030年度"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "公式『第7次岡崎市総合計画（後期計画）』（令和8年3月改定）本編の「分野別の主な取組」各分野の節見出し（分野（1）から（10）まで全分野の主な取組の見出し）および「未来投資パッケージ」の各パッケージ見出しで直接確認（分野ごとの取組数の合計54で検算一致）",
+      "evidence_role": "policy_structure",
+      "id": "okazaki-current-policy-structure",
+      "review_note": "公式の計画本編で分野・主な取組・パッケージの体系を全件確認したレビュー済みレコード。10分野54件の主な取組の全件はpolicy_structureに列挙する。",
+      "source_url": "https://www.city.okazaki.lg.jp/shisei/koho/1006195/1006358/1006359/1014373/1014734.html",
+      "statement": "未来投資計画の「分野別の主な取組」は、総合政策指針の分野別指針に対応する10分野・全54件の主な取組で構成する（（1）暮らしを支える都市づくり（都市インフラ）7件／（2）暮らしを守る強靭な都市づくり（防災・強靭化）6件／（3）持続可能な循環型の都市づくり（環境・農山村）4件／（4）多様な主体が協働・活躍できる社会づくり（地域社会）4件／（5）健康で生きがいをもって活躍できる社会づくり（保健・医療・福祉）5件／（6）女性や子どもがいきいきと輝ける社会づくり（子育て・男女共同参画）5件／（7）誰もが学び活躍できる社会づくり（教育・文化）6件／（8）商業と観光が成長産業となる地域経済づくり（商業・観光）6件／（9）ものづくりが柱でありつづける地域経済づくり（工業）4件／（10）スマートでスリムな行政運営の確立（行政・パートナーシップ）7件）。これに分野横断の「未来投資パッケージ」が加わり、未来のまちパッケージ／未来のひとパッケージ／未来のしごとパッケージ／未来のパートナーシップパッケージの4パッケージで推進事業をまとめる。54件の全件はpolicy_structureに列挙する。",
+      "title": "後期計画の10分野54の主な取組と未来投資パッケージ（4パッケージ）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "公式『第7次岡崎市総合計画（後期計画）』本編の「未来投資計画とは」の記載（10分野の4グループ化による目標設定・進捗管理、計画期間10年間・中間年見直し、パッケージの推進事業内訳の随時変更）および各グループの参考指標（2030年の目標値と現況値）の掲載で確認",
+      "evidence_role": "progress_governance",
+      "id": "okazaki-progress-governance-framework",
+      "review_note": "進行管理の枠組み（4グループ化・参考指標・推進事業内訳の随時変更）を計画本編で直接確認したレビュー済みレコード。参考指標の個別値そのものは本パッケージでは扱わない。",
+      "source_url": "https://www.city.okazaki.lg.jp/shisei/koho/1006195/1006358/1006359/1014373/1014734.html",
+      "statement": "第7次岡崎市総合計画の進行管理は、未来投資計画において、10の分野別の主な取組を「まち・環境」（分野（1）〜（3））「ひと・社会」（分野（4）〜（7））「しごと・経済」（分野（8）〜（9））「行政運営・パートナーシップ」（分野（10））の4つにグループ化して目標設定・進捗管理を行う方式であり、グループごとに参考指標（2030年の目標値と現況値）を設定する。未来投資パッケージの推進事業内訳は社会経済情勢の変化を踏まえて随時変更される。この進行管理は自治体による自己管理の枠組みであり、Jichi Insight独自の達成判定へ変換しない。",
+      "title": "4グループ化による目標設定・進捗管理と参考指標"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "公式『第7次岡崎市総合計画（後期計画）』本編の「総合計画の策定の趣旨と構成」（令和3年（2021年）スタート、未来投資計画を5年ごとの前期・後期に分け、今回の改定で今後の5年間（令和8年度〜12年度）の未来投資計画部分を見直し）およびPhase 14インベントリのavailability_boundary（FY2024決算は前期期間）で確認",
+      "evidence_role": "plan_transition",
+      "id": "okazaki-plan-transition",
+      "review_note": "同一計画内での未来投資計画のversion移行として記録したレビュー済みレコード。",
+      "source_url": "https://www.city.okazaki.lg.jp/shisei/koho/1006195/1006358/1006359/1014373/1014734.html",
+      "statement": "第7次岡崎市総合計画の総合政策指針は継続し、その未来投資計画は前期（2021年度〜2025年度）から後期（2026年度〜2030年度）へ移行した（令和8年3月に未来投資計画部分を見直して改定）。各計画はversionを分けて保持し、後期計画の取組体系を前期期間の実績へ遡及接続しない。FY2024決算は前期期間の決算として保持する。",
+      "title": "未来投資計画の前期計画から後期計画への移行（計画移行）"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "FY2024決算の公式入口はPhase 14インベントリの決算資料（決算の概要・主要施策成果説明書）。決算総額と後期計画の取組との対応付けは公式資料の総額レベルでは示されていない",
+      "evidence_role": "annual_progress",
+      "id": "okazaki-fy2024-settlement-linkage",
+      "review_note": "決算が未来投資計画前期期間のものであることと、個別の取組・事業の接続を推測で記録しないことは別の判断であることを示す明示的な未判定レコード。決算と取組・事業の対応付けは人間レビュー工程の作業。",
+      "source_url": "https://www.city.okazaki.lg.jp/shisei/yosan/1006101/1010956.html",
+      "statement": "FY2024決算値と後期計画の主な取組・未来投資パッケージとの接続は未判定（not_assessable）。FY2024は第7次岡崎市総合計画の未来投資計画前期（2021年度〜2025年度）の4年目の決算であり、後期計画（2026年度開始）とは計画versionが異なる。決算総額は会計別の集計値であり、個別の取組・事業との対応付けは総額レベルでは行われていない。前期の枠組みそのものは本候補では記録しない。FY2024決算の精密値そのものは決算の概要で確認済みであるが、決算と事業の対応付けは人間レビュー工程の作業とする。",
+      "title": "令和6年度決算と後期計画の取組・未来投資パッケージの接続"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-16"
+}

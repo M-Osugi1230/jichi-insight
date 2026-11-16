@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-16",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "okazaki-city-home",
+      "municipality_key": "okazaki-city",
+      "organization": "岡崎市",
+      "category": "municipality_profile",
+      "title": "岡崎市公式サイト",
+      "url": "https://www.city.okazaki.lg.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "岡崎市の公式自治体サイト。"
+    },
+    {
+      "id": "okazaki-budget-2026",
+      "municipality_key": "okazaki-city",
+      "organization": "岡崎市",
+      "category": "budget",
+      "title": "令和8年度予算",
+      "url": "https://www.city.okazaki.lg.jp/shisei/yosan/1006068/1011272.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算154,850,000千円のEvidence。第56号議案『令和8年度岡崎市一般会計予算』として令和8年3月定例会に提出され、予算決算委員会への付託を経て令和8年3月23日（定例会最終日）の本会議で採決された成立予算。令和8年3月定例会の議決結果一覧表そのものは未取得であり、『原案可決』の文言は直接確認していない。金額は千円単位の公表値のまま記録し、円単位を合成しない。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "okazaki-settlement-2024",
+      "municipality_key": "okazaki-city",
+      "organization": "岡崎市",
+      "category": "settlement",
+      "title": "令和6年度決算",
+      "url": "https://www.city.okazaki.lg.jp/shisei/yosan/1006101/1010956.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入157,798,763,028円・歳出148,542,565,874円を円単位で含む公式決算資料（令和6年度決算の概要）。決算の認定議案である認定第1号は令和7年9月定例会で令和7年9月30日に認定された。決算書（歳入歳出決算事項別明細書）の款別合計との突合は未実施。監査委員の決算審査意見書の内容は確認していない。"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "okazaki-phase15-sources",
+  "phase": 15,
+  "official_code": "232025",
+  "name_ja": "岡崎市",
+  "reviewed_at": "2026-11-16",
+  "quality_boundary": "Current plan identity kept as published (the Seventh Okazaki City Comprehensive Plan in a Comprehensive Policy Guidelines / Future Investment Plan / individual plans structure; the guidelines are ten-year policy guidelines looking thirty years ahead with target year FY2050, and the Future Investment Plan moved from its first period (FY2021-FY2025) to the latter period (FY2026-FY2030, revised March 2026), which is the current plan, with ten fields holding 54 main initiatives, all enumerated, plus the four cross-field Future Investment Packages; the first period is kept only as a separate version), progress governance (the ten fields are grouped into four groups for target setting and progress management with reference indicators per group, and the packages' project lists are revised as circumstances change), budget enactment kept as voted on 2026-03-23 as bill No. 56 at the March 2026 regular session (the session's voting-results list itself was not retrieved, so the exact 'passed as proposed' wording is not asserted) with the amount kept at the published sen-yen precision and never expanded into synthetic yen, and settlement totals kept at the published yen precision from the official settlement overview (certification bill No. 1 certified on 2025-09-30) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "sources": [
+    {
+      "evidence_location": "岡崎市公式Webサイト『第7次岡崎市総合計画（後期計画）を策定しました。』ページは現行計画の公式入口（Phase 14インベントリで確認）。計画の構成・期間・将来都市像・基本指針・10分野54の主な取組・4つの未来投資パッケージは、同ページからリンクされる公式『第7次岡崎市総合計画（後期計画）』（令和8年3月改定）本編で直接確認",
+      "evidence_role": "comprehensive_plan",
+      "format": "html",
+      "id": "okazaki-seventh-latter-plan",
+      "official_url": "https://www.city.okazaki.lg.jp/shisei/koho/1006195/1006358/1006359/1014373/1014734.html",
+      "title": "第7次岡崎市総合計画（後期計画）を策定しました。",
+      "use_boundary": "現行計画は第7次岡崎市総合計画 後期計画（2026年度〜2030年度）として保持し、前期計画（2021年度〜2025年度）の内容を混在させない"
+    },
+    {
+      "evidence_location": "岡崎市公式Webサイト『第7次岡崎市総合計画（後期計画）』ページは進行管理の公式入口（Phase 14インベントリで確認）。10分野を4グループに分けて目標設定・進捗管理を行う構造、グループごとの参考指標（2030年の目標値と現況値）、未来投資パッケージの推進事業内訳が随時変更されることを計画本編で確認",
+      "evidence_role": "progress_governance",
+      "format": "html",
+      "id": "okazaki-future-investment-progress",
+      "official_url": "https://www.city.okazaki.lg.jp/shisei/koho/1006195/1006358/1006359/1014373/1014734.html",
+      "title": "第7次岡崎市総合計画（後期計画）",
+      "use_boundary": "参考指標は自治体の目標設定・進捗管理の枠組みとして保持し、個別指標の値をJichi Insight独自の達成度へ変換しない"
+    },
+    {
+      "evidence_location": "岡崎市公式Webサイト『令和8年度予算』ページはFY2026当初予算の公式入口（Phase 14インベントリで確認）。同ページ掲載の公式『令和8年度当初予算の概要』で一般会計154,850,000千円を確認し、議案番号・付託は市議会公式の令和8年3月定例会議事日程（第1号）・議案付託表（第56号議案・予算決算委員会付託）、採決日は同定例会議事日程第4号（令和8年3月23日）で確認",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "okazaki-budget-2026",
+      "official_url": "https://www.city.okazaki.lg.jp/shisei/yosan/1006068/1011272.html",
+      "title": "令和8年度予算",
+      "use_boundary": "FY2026当初予算は成立予算（第56号議案・令和8年3月23日採決）として保持し、補正予算と別stateで扱う。令和8年3月定例会の議決結果一覧表そのものは未取得であり、『原案可決』の文言は直接確認していない"
+    },
+    {
+      "evidence_location": "岡崎市公式Webサイト『令和6年度決算』ページはFY2024決算の公式入口（Phase 14インベントリで確認）。同ページから取得した公式『令和6年度決算の概要』の決算総括表と会計別歳入歳出決算状況表で歳入・歳出の円単位総額を確認し、認定は市議会公式『議決結果一覧表』（令和7年9月定例会）で確認",
+      "evidence_role": "settlement",
+      "format": "html",
+      "id": "okazaki-settlement-2024",
+      "official_url": "https://www.city.okazaki.lg.jp/shisei/yosan/1006101/1010956.html",
+      "title": "令和6年度決算",
+      "use_boundary": "FY2024決算は未来投資計画前期（2021年度〜2025年度）期間の決算として保持し、後期計画の実績へ流用しない。認定第1号は令和7年9月30日に認定された事実をそのまま記録する"
+    }
+  ]
+}
