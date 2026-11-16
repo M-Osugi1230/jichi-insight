@@ -1,0 +1,63 @@
+{
+  "id": "phase15-kofu-plan-review",
+  "official_code": "192015",
+  "name_ja": "甲府市",
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-16",
+  "next_action": "Promote the full enumeration of the sub-measures under the 18 measures and the first implementation plan's measure-and-project framework only when official sources with stable record-level locators have been reviewed; cross-check the budget explanatory materials and the settlement detail book (事項別明細書) at section level; record each rolling revision of the implementation plan as a separate version; keep the sixth plan's framework itself unrecorded beyond the transition chronology and never retroactively connect the seventh plan's goals or measures to the sixth plan's framework; keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "quality_boundary": "This package reviews the current plan identity and period (the Seventh Kofu City Comprehensive Plan, the city's top-level plan under Article 22 of the Kofu City Autonomy Basic Ordinance, a two-layer plan whose basic concept runs FY2026-FY2035 under the city vision 『幸せ実感 希望ある未来を創り続けるまち 甲府』 and whose basic concept was enacted as bill No. 109 on 2025-12-17, with a rolling implementation plan beneath it), the plan's structure of three basic goals holding 18 measures (the sub-measures beneath the measures and the implementation plan's individual projects are not enumerated in v1), the progress-governance layer (the implementation plan is revised annually under a three-year rolling method and its measures and projects are evaluated and improved; FY2026 is the plan's first year and no annual results under the implementation plan have been published yet), the enacted FY2026 initial budget at the published sen-yen (thousand-yen) precision (bill No. 5, passed on 2026-03-25; yen-precision amounts are not synthesized), and the FY2024 settlement at yen precision as published, without collapsing proposed, enacted, supplementary, or settlement states. FY2024 is a settlement of the sixth plan's period (FY2016-FY2025); its period does not overlap the seventh plan, and its totals are section-level aggregates that are not linked to the seventh plan's goals or measures.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "市公式の総合計画ページ（現行計画の公式入口。Phase 14インベントリで確認）と、公式『第七次甲府市総合計画の概要について』（令和8年1月5日市長定例記者会見資料1。基本構想の期間・都市像・策定経過を明記）、公式の策定経緯資料（令和7年12月17日に12月市議会定例会において基本構想を議決と明記）、市議会公式『令和7年12月定例会 議員別表決結果一覧』（議案第109号『第七次甲府市総合計画の基本構想について』の可決）で直接確認",
+      "evidence_role": "current_plan_identity",
+      "id": "kofu-current-plan-period",
+      "review_note": "計画期間・位置付け・都市像・基本構想の議決を公式資料で確認したレビュー済みレコード。",
+      "source_url": "https://www.city.kofu.yamanashi.jp/sogokeikaku/7jisgkeikaku.html",
+      "statement": "第七次甲府市総合計画は、甲府市自治基本条例第22条の規定に基づき策定する本市の最上位計画であり、『基本構想』と『実施計画』の2層構成である。基本構想は目指す都市像や都市像を実現するための基本目標を定めるもので、期間は令和8（2026）年度から令和17（2035）年度までの10年間である。都市像は『幸せ実感 希望ある未来を創り続けるまち 甲府』である。基本構想は議案第109号『第七次甲府市総合計画の基本構想について』として令和7年12月定例会で可決された（議決日は令和7年12月17日）。実施計画は基本構想の実現を図るための計画であり、基本構想に基づき実施する各種施策と施策ごとの事務事業の具体的な内容を示す。Phase 14インベントリの記録（第七次甲府市総合計画2026年度～2035年度）とも一致する。",
+      "title": "第七次甲府市総合計画の計画期間と位置付け",
+      "value": "2026年度～2035年度"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "公式『第七次甲府市総合計画の体系図』（都市像・横断的視点・基本目標・施策・小施策の体系を明記）および広報こうふ令和8年4月号の公式特集（3基本目標と18施策を明記）、総合計画審議会の答申書（推進理念としてコラボレーション・ウェルビーイング・シビックプライドを明記）で直接確認",
+      "evidence_role": "policy_structure",
+      "id": "kofu-current-policy-structure",
+      "review_note": "公式資料が明示した基本目標・施策の層構造と横断的視点・推進理念を一次資料で確認したレビュー済みレコード。施策の下の小施策の全件は列挙しない（deferred depthとして保持）。",
+      "source_url": "https://www.city.kofu.yamanashi.jp/sogokeikaku/7jisgkeikaku.html",
+      "statement": "第七次甲府市総合計画の基本目標は3つである。基本目標1『未来に輝く『ひと』を育む』には6施策（誰もが学び、成長できる機会の創出／自分らしく暮らせる福祉の充実／子育て・子育ちを支える環境づくり／互いを尊重し共生できる社会の実現／地域とのつながり・愛着の醸成／健康に生活できる環境の整備）、基本目標2『安全・安心で快適な『まち』を創る』には6施策（災害・感染症等に強い地域づくり／安心な暮らしを守る犯罪の抑止と交通安全の確保／心地よく暮らせる住環境の形成／衛生的な生活環境の構築／生活を支えるインフラの整備・更新／時代に合った良好な都市空間の形成）、基本目標3『都市機能と自然が調和する甲府の『魅力』を磨く』には6施策（宝飾をはじめとする地域産業を活かしたブランド力の強化／地域活力を支える産業の振興と雇用の創出／新しい人の流れを創る交流とにぎわいの創出／リニア開業を見据えたまちづくりの展開／多様な主体との連携の推進／将来にわたり持続可能な行財政運営の推進）が属し、計18施策である。各施策の下には小施策が位置付けられるが、全件は本候補では列挙しない。都市像を実現するための横断的視点として人口減少対策・持続可能な社会の構築・時代に即した行政改革が掲げられ、推進理念はコラボレーション・ウェルビーイング・シビックプライドである。人口減少や行政改革、SDGsといった施策横断的な重要課題は、従来の別途計画から今般、総合計画に包含された。",
+      "title": "第七次甲府市総合計画の3基本目標・18施策と横断的視点の体系"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "市公式の総合計画ページ（実施計画の性格と、施策や事務事業を適正に評価し改善しながら推進する旨を明記）および公式『第七次甲府市総合計画の概要について』（令和8年1月5日市長定例記者会見資料1。『実施計画は3年ごとのローリング方式により毎年度見直す』と明記）で直接確認",
+      "evidence_role": "progress_governance",
+      "id": "kofu-progress-governance-framework",
+      "review_note": "進行管理の枠組み（実施計画のローリング方式と評価・改善）を公式資料で直接確認したレビュー済みレコード。第1次実施計画の施策・事業体系の全件と個別事業の実績は本パッケージでは扱わない。",
+      "source_url": "https://www.city.kofu.yamanashi.jp/sogokeikaku/7jisgkeikaku.html",
+      "statement": "実施計画は、基本構想に基づき実施する各種施策と施策ごとの事務事業の具体的な内容を示す計画であり、3年ごとのローリング方式により毎年度見直す。第1次実施計画は令和8年度を初年度とし、その施策・事業体系は令和8年2月17日の市長定例記者会見で示された（Phase 14インベントリの公式入口）。計画の推進にあたっては、施策や事務事業を適正に評価し改善しながら推進するとされる。令和8年度は計画の初年度であり、実施計画に基づく年度実績や評価の公表はまだない。進行管理の枠組みそのものを年度実績へ読み替えない。",
+      "title": "実施計画のローリング方式と評価・改善に基づく進行管理"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "公式『第七次甲府市総合計画』本編（計画策定の趣旨。第六次計画の期間・都市像と、これまでの施策を継承しつつ第七次計画を策定する旨を明記）で直接確認",
+      "evidence_role": "plan_transition",
+      "id": "kofu-sixth-plan-transition",
+      "review_note": "旧計画から現行計画への移行と版の分離のみを公式資料で確認したレビュー済みレコード。第六次計画の枠組みそのものは本パッケージでは記録しない。",
+      "source_url": "https://www.city.kofu.yamanashi.jp/sogokeikaku/7jisgkeikaku.html",
+      "statement": "第六次甲府市総合計画は平成28（2016）年度を初年度とし、令和7（2025）年度を目標年度とする計画であり、目指すべき都市像は『人・まち・自然が共生する未来創造都市 甲府』であった。令和8（2026）年度からは第七次甲府市総合計画（基本構想2026年度～2035年度）が開始する。各計画はversionを分けて保持し、第七次計画の基本目標・施策を第六次計画の体系へ遡及接続しない。FY2024決算は第六次計画の計画期間の決算として保持する。",
+      "title": "第六次甲府市総合計画から第七次計画への移行（計画移行）"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "市公式『令和6年度決算状況』ページ（決算総額の確認先の公式入口。Phase 14インベントリで確認）。計画期間の確認先は総合計画ページ",
+      "evidence_role": "annual_progress",
+      "fiscal_year": 2024,
+      "id": "kofu-fy2024-settlement-linkage",
+      "review_note": "決算が旧計画期間のものであることと、個別事業の接続を推測で記録しないことは別の判断であることを示す明示的な未判定レコード。決算と事業の対応付けは人間レビュー工程の作業。",
+      "source_url": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r6kessan/r6kessan.html",
+      "statement": "FY2024決算値と第七次甲府市総合計画の基本目標・施策との接続は未判定（not_assessable）。FY2024は第六次甲府市総合計画の計画期間（2016年度～2025年度）の9年目に属する決算であり、第七次計画は令和8（2026）年度開始のため対象期間が重ならない。第六次計画の施策との対応付けについても、決算総額は款別の集計値であり個別施策・事業との対応付けは総額レベルでは行われていないFY2024決算の精密値そのものは決算審査意見書で確認済みであるが、決算と事業の対応付けは人間レビュー工程の作業とする。",
+      "title": "令和6年度決算と第七次甲府市総合計画の基本目標・施策の接続"
+    }
+  ]
+}

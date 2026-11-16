@@ -1,0 +1,66 @@
+{
+  "id": "kofu-phase15-completion",
+  "phase": 15,
+  "status": "reviewed_complete",
+  "official_code": "192015",
+  "name_ja": "甲府市",
+  "completed_at": "2026-11-16",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "source_catalog_path": "data/catalog/kofu_phase15_sources.json",
+    "plan_review_path": "data/reviewed/kofu-city/plan_review.json",
+    "policy_structure_path": "data/catalog/kofu_current_policy_structure.json",
+    "progress_review_path": "data/catalog/kofu_current_progress_review_summary.json",
+    "fiscal_records_path": "data/reviewed/kofu-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/kofu-city/evidence_packets.json",
+    "counts": {
+      "basic_goals": 3,
+      "basic_plan_measures": 18,
+      "promoted_implementation_item_actual_records": 0,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "current_plan_period_reviewed": true,
+    "current_plan_policy_structure_reviewed": true,
+    "implementation_plan_layer_reviewed": true,
+    "fiscal_states_and_years_separate": true,
+    "budget_enactment_state_preserved": true,
+    "settlement_linkage_not_assessable_preserved": true,
+    "individual_implementation_items_not_overpromoted": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "current-plan-granular-kpi-and-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "小施策の全件、第1次実施計画の施策・事業体系と個別事業の全件は追加depthとし、公式対応が確認できるまで昇格しない。実施計画はローリング方式で版が変わり得るため、版を分離して保持する。"
+    },
+    {
+      "id": "fiscal-detail-and-amendment-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "予算・決算の項目別内訳（予算書・予算に関する説明書および決算書の事項別明細書の款別合計との突合を含む）、補正予算による変更経過、補正予算・決算と個別事業費の対応関係、執行・契約・補助金の接続は記録しない。FY2024決算は第六次計画期間の決算として保持するが、決算総額を第七次計画の基本目標・施策の実績へ流用しない。"
+    },
+    {
+      "id": "plan-transition-version-depth",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "第六次甲府市総合計画の枠組みそのもの（基本目標・施策の全件）は記録しない。移行の経緯は版の履歴として別途記録し、旧計画の施策を第七次計画の体系へ遡及接続しない。"
+    },
+    {
+      "id": "current-plan-annual-evaluation-evidence",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "第1次実施計画に基づく年度実績・評価のエビデンス（施策・事務事業ごとの実績、評価結果等）は昇格しない。令和8年度は計画の初年度であり公表はまだない。制度の枠組みのみを確認した。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "政策効果の因果認定、Jichi Insight独自の政策達成度スコア、他都市との未検証の比較・ランキングは作成しない。実施計画の評価・改善の枠組み（自治体の運用）をJichi Insight独自の達成判定へ変換しない。"
+    }
+  ],
+  "completion_boundary": "甲府市のPhase 15 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味し、所有者（大杉邑大、単独運用体制）が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが甲府市公式サイトの一次資料で検証した結果に基づく（所有者本人が一次資料を直接レビューしたものではない）。甲府市の計画体系（第七次甲府市総合計画は、甲府市自治基本条例第22条の規定に基づき策定する本市の最上位計画であり、『基本構想』と『実施計画』の2層構成である。基本構想の期間は2026年度～2035年度の10年間で、都市像は『幸せ実感 希望ある未来を創り続けるまち 甲府』であり、基本構想は議案第109号として令和7年12月17日に議決された。基本目標は3つで各基本目標に6施策、計18施策を位置付け、横断的視点（人口減少対策・持続可能な社会の構築・時代に即した行政改革）と推進理念（コラボレーション・ウェルビーイング・シビックプライド）を保持する。実施計画は3年ごとのローリング方式により毎年度見直し、施策・事務事業を適正に評価し改善しながら推進する。令和8年度は計画の初年度であり、実施計画に基づく年度実績・評価の公表はまだない）、成立したFY2026一般会計当初予算（91,787,060千円。議案第5号『令和8年度甲府市一般会計予算』として令和8年3月25日に可決。公表精度が千円単位のため千円精度のまま記録し、円単位を合成していない）、FY2024一般会計決算の円単位総額（歳入91,644,865,806円・歳出90,039,308,506円、差引額1,605,557,300円が監査委員の決算審査意見書の歳入歳出差引額と一致することを検算、実質収支1,191,233,328円）とその認定（議案第95号『令和6年度甲府市各会計別決算の認定について』・2025-10-02認定）を一次資料で確認した。第六次甲府市総合計画（2016年度～2025年度）からの移行は移行記録として分離して保持し、第七次計画の基本目標・施策を第六次計画の体系へ遡及接続しない。FY2024は第六次計画の計画期間の決算であり第七次計画とは対象期間が重ならないため、決算総額と第七次計画の基本目標・施策との接続はnot_assessableとして保持する。小施策の全件、第1次実施計画の施策・事業体系と個別事業の全件、予算書・予算に関する説明書および決算書の事項別明細書の款別合計との突合はdeferred depthである。Jichi Insight独自の政策達成度スコアや他都市とのランキングは作成しない。実施計画の評価・改善の枠組み（自治体の運用）をJichi Insight独自の達成判定へ変換しない。"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "kofu-phase15-sources",
+  "phase": 15,
+  "official_code": "192015",
+  "name_ja": "甲府市",
+  "reviewed_at": "2026-11-16",
+  "quality_boundary": "Current plan identity kept as published (the Seventh Kofu City Comprehensive Plan, a two-layer basic-concept / implementation-plan structure with the basic concept running FY2026-FY2035, under the city vision 『幸せ実感 希望ある未来を創り続けるまち 甲府』, with three basic goals holding 18 measures; the sixth plan FY2016-FY2025 kept as a separate version), progress governance (three-year rolling implementation plan revised annually, with evaluation and improvement; no annual results published yet in the plan's first year), budget enactment confirmed by the council's official deliberation results (bill No. 5, passed on 2026-03-25) with the amount kept at the published sen-yen precision and never expanded into synthetic yen, and settlement totals kept at the published yen precision from the audit commissioners' settlement-review opinion (certified as bill No. 95 on 2025-10-02) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "sources": [
+    {
+      "id": "kofu-seventh-plan",
+      "title": "第七次甲府市総合計画",
+      "official_url": "https://www.city.kofu.yamanashi.jp/sogokeikaku/7jisgkeikaku.html",
+      "format": "html",
+      "evidence_role": "comprehensive_plan",
+      "evidence_location": "甲府市公式Webサイト『第七次甲府市総合計画』ページは現行計画の公式入口（Phase 14インベントリで確認）。計画の構成・期間・都市像は同ページで、基本目標・施策・小施策と横断的視点の体系は公式『第七次甲府市総合計画の体系図』で、基本構想の議決を含む策定経緯は公式の概要資料・策定経緯資料および市議会の表決結果一覧で直接確認",
+      "use_boundary": "現行計画は第七次甲府市総合計画（基本構想2026年度～2035年度）として保持し、第六次計画（2016年度～2025年度）の内容を混在させない。小施策・実施計画事業の全件は本候補では列挙しない。"
+    },
+    {
+      "id": "kofu-first-implementation-design",
+      "title": "第七次甲府市総合計画 第1次実施計画 施策・事業体系",
+      "official_url": "https://www.city.kofu.yamanashi.jp/shise/gaiyo/shicho/kaiken/r7/r80217.html",
+      "format": "html",
+      "evidence_role": "implementation_plan",
+      "evidence_location": "令和8年2月17日市長定例記者会見のページは第1次実施計画の施策・事業体系を確認する公式入口（Phase 14インベントリで確認）。本候補の作成時点では当該ページ自体を取得できず、実施計画のローリング方式の枠組みは総合計画ページと公式『第七次甲府市総合計画の概要について』で確認した。第1次実施計画の施策・事業体系の全件確認は未実施",
+      "use_boundary": "第1次実施計画は基本構想（2026年度～2035年度）の下の実施計画として保持し、案・確定版と将来のローリング改訂をversion分離する。個別事業の全件は本候補では列挙しない。"
+    },
+    {
+      "id": "kofu-budget-2026",
+      "title": "令和8年度予算",
+      "official_url": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r8yosan.html",
+      "format": "html",
+      "evidence_role": "budget",
+      "evidence_location": "甲府市公式Webサイト『令和8年度予算』ページはFY2026当初予算の公式入口（Phase 14インベントリで確認）。同ページからリンクされる『令和8年度甲府市当初予算案資料』の会計別当初予算一覧・一般会計歳入予算款別一覧・歳出予算款別一覧（単位 千円）に一般会計91,787,060千円を記載し、甲府市議会公式『令和8年3月定例会審議結果』に議案第5号『令和8年度甲府市一般会計予算』の可決（令和8年3月25日）を記載",
+      "use_boundary": "FY2026当初予算は議決・成立済みの額として扱い、proposal/enacted/supplementaryをPhase 15でstage分離する。金額は千円単位の公表値であり、円単位を合成しない。"
+    },
+    {
+      "id": "kofu-settlement-2024",
+      "title": "令和6年度決算状況",
+      "official_url": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r6kessan/r6kessan.html",
+      "format": "html",
+      "evidence_role": "settlement",
+      "evidence_location": "甲府市公式Webサイト『令和6年度決算状況』ページはFY2024決算の公式入口（Phase 14インベントリで確認）。甲府市監査委員『令和6年度甲府市一般会計・特別会計歳入歳出決算及び基金運用状況審査意見書』（甲監発第24号・令和7年8月1日）の一般会計総括に、一般会計の歳入総額91,644,865,806円・歳出総額90,039,308,506円・歳入歳出差引額1,605,557,300円を記載。認定は甲府市議会公式『令和7年9月定例会審議結果』の議案第95号『10月2日・認定』で確認",
+      "use_boundary": "FY2024決算認定の公式入口。FY2024決算は旧第六次計画期間の財政Evidenceとして保持し、第七次計画current actualへ流用しない。"
+    }
+  ]
+}
