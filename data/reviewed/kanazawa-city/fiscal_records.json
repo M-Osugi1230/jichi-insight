@@ -1,0 +1,65 @@
+[
+  {
+    "id": "jp-local-172014-fiscal-2026-total-expenditure",
+    "municipality_id": "jp-local-172014",
+    "fiscal_year": 2026,
+    "stage": "initial_budget",
+    "account_type": "general",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算（可決）",
+    "amount_yen": 207800000000,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "sources": [
+      "kanazawa-budget-2026"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "金沢市公式『令和8年度（2026年度）金沢市予算概要』の一般会計款別表（単位 千円）に、令和8年度一般会計当初予算額207,800,000千円（令和7年度204,900,000千円、差引増減2,900,000千円・1.4％増で検算一致）と示された当初予算額。成立は金沢市公報第3209号（令和8年3月11日）の金沢市告示第56号で確認した。同告示は地方自治法第219条第2項の規定により『令和7年度金沢市議会2月定例月議会の議決を経た』予算として令和8年度金沢市一般会計予算の要領を公表するものであり、議決を受けて成立した当初予算であって予算案段階の額ではない。市公式『金沢市の財政（令和7年度下半期末）』によれば、令和8年度当初予算は市長選挙を控え義務的経費や継続事業を主体とする『骨格予算』として編成された。一般会計予算の議案番号と議決日は、市議会の議員別賛否一覧・本会議録での確認が取れていないため本候補では特定していない。補正予算や決算とは別stateで扱う。"
+  },
+  {
+    "id": "jp-local-172014-fiscal-2024-total-revenue",
+    "municipality_id": "jp-local-172014",
+    "fiscal_year": 2024,
+    "stage": "settlement",
+    "account_type": "general",
+    "metric": "total_revenue",
+    "metric_label": "一般会計決算歳入",
+    "amount_yen": 218624336395,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "kanazawa-settlement-2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "金沢市公式『令和6年度金沢市歳入歳出決算書総括表』（単位 円）の一般会計歳入総額（収入済額）218,624,336,395円。歳出総額210,147,360,368円との差引額8,476,976,027円が同総括表の公表する歳入歳出差引残額と一致し、会計課公式『令和6年度決算』ページの一般会計の詳細表（単位 千円）の歳入218,624,336千円・実質収支5,081,621千円とも整合する。令和6年度決算は認定第1号『令和6年度金沢市歳入歳出決算認定について』として令和7年12月定例月議会で賛成多数により認定された（金沢市議会公式『審議結果』で確認）。認定第1号は一般会計と特別会計を合わせた歳入歳出決算の認定であり、公営企業特別会計の決算認定は認定第2号である。認定日（年月日）は公式資料で特定できていない。"
+  },
+  {
+    "id": "jp-local-172014-fiscal-2024-total-expenditure",
+    "municipality_id": "jp-local-172014",
+    "fiscal_year": 2024,
+    "stage": "settlement",
+    "account_type": "general",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計決算歳出",
+    "amount_yen": 210147360368,
+    "unit": "yen",
+    "value": null,
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "kanazawa-settlement-2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "note": "同『令和6年度金沢市歳入歳出決算書総括表』（単位 円）の一般会計歳出総額（支出済額）210,147,360,368円。歳入総額218,624,336,395円との差引額8,476,976,027円で検算が一致する。令和6年度決算は認定第1号として令和7年12月定例月議会で認定された。"
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-16",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "kanazawa-city-home",
+      "municipality_key": "kanazawa-city",
+      "organization": "金沢市",
+      "category": "municipality_profile",
+      "title": "金沢市公式サイト",
+      "url": "https://www4.city.kanazawa.lg.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "金沢市の公式自治体サイト。"
+    },
+    {
+      "id": "kanazawa-budget-2026",
+      "municipality_key": "kanazawa-city",
+      "organization": "金沢市",
+      "category": "budget",
+      "title": "金沢市予算概要",
+      "url": "https://www4.city.kanazawa.lg.jp/shiseijoho/gyozaisei/zaisei_yosan_kessan/2/13057.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算207,800,000千円のEvidence。成立は金沢市公報第3209号・金沢市告示第56号で確認した（市長選挙を控えた骨格予算）。一般会計予算の議案番号・議決日は未特定のまま保持する。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "kanazawa-settlement-2024",
+      "municipality_key": "kanazawa-city",
+      "organization": "金沢市",
+      "category": "settlement",
+      "title": "令和6年度決算",
+      "url": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/kaikeika/gyomuannai/1_1/30264.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入218,624,336,395円・歳出210,147,360,368円を円単位で含む公式決算資料（決算書総括表）。決算の認定は認定第1号（令和7年12月定例月議会で認定、認定日は未特定）。監査委員の決算審査意見書における意見内容の確認は未実施。"
+    }
+  ]
+}
