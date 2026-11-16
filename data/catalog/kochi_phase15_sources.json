@@ -1,0 +1,55 @@
+{
+  "id": "kochi-phase15-sources",
+  "name_ja": "高知市",
+  "official_code": "392014",
+  "phase": 15,
+  "quality_boundary": "Current plan identity kept as published (the 2011 Kochi City comprehensive plan: the basic concept (FY2011-FY2030), the basic plan (first period FY2011-FY2020; second period FY2021-FY2030) and implementation plans of roughly three years (second-period No. 1 FY2021-FY2023; No. 2 FY2024-FY2026), with the future city vision 『森・里・海と人の環 自由と創造の共生都市 高知』, six rings and fourteen policies; the 54 measures are not enumerated and stay deferred depth; the period status stays transition_or_unresolved because the city has officially announced the abolition of the current plan at the end of FY2026 and a new plan, Kochi City Future Vision (provisional name) (FY2027-FY2034), in preparation — the transition is kept separate and the nominal period is not overwritten), progress governance (administrative-project evaluation, outcome indicators and the PDCA cycle — kept as the municipality's own progress-management framework), budget enactment kept as printed in the council's official results for the 512th regular session (bill 市第4号; the result wording is 可決（多数） (passed by majority), kept verbatim; the vote date 2026-03-26 is as published on the finance division's FY2026 budget page) and the amount kept at the published sen-yen precision (168,400,000 thousand yen, confirmed in the finance division's overview of the initial budget and March-session bills and in the section revenue total of the same document, and never expanded into synthetic finer amounts), and settlement totals kept at the published sen-yen precision (the settlement certification, bill 市第165号, was certified unanimously at the 509th regular session; its vote date is not printed in the results document and stays unidentified; the real balance of 544,453 thousand yen is the printed value in the audit commissioners' opinion, kept as printed; ordinary-account aggregate figures are not used, because their aggregation scope differs from the general account) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "reviewed_at": "2026-11-17",
+  "sources": [
+    {
+      "evidence_location": "市の後期基本計画ページから後期基本計画の全体版・概要版を取得し、基本構想（2011年度～2030年度・20年間）・基本計画（前期2011年度～2020年度・後期2021年度～2030年度）の構成、将来の都市像「森・里・海と人の環 自由と創造の共生都市 高知」、6つの環と14の政策・54の施策の体系を概要版（高知市、2021年3月発行）で直接確認した",
+      "evidence_role": "comprehensive_plan",
+      "format": "html",
+      "id": "kochi-latter-plan",
+      "official_url": "https://www.city.kochi.kochi.jp/soshiki/2/sougoukeikakukouki.html",
+      "title": "2011高知市総合計画 後期基本計画について",
+      "use_boundary": "2011高知市総合計画をcurrent versionとして保持し、名目上の計画期間（2030年度まで）と、公式公表された令和8年度末廃止・新計画への移行方針を混同しない。策定中の新計画の内容をcurrent planへ昇格しない"
+    },
+    {
+      "evidence_location": "市の実施計画ページから第2次実施計画（2024～2026年度）を取得し、後期基本計画の実施計画が第1次（2021年度～2023年度）・第2次（2024年度～2026年度）であること、登載事業を事務事業評価の対象とし施策の成果指標を共有してPDCAサイクルで進行管理する枠組みを直接確認した",
+      "evidence_role": "implementation_plan_and_progress",
+      "format": "html",
+      "id": "kochi-second-implementation",
+      "official_url": "https://www.city.kochi.kochi.jp/soshiki/2/koukijissikeikaku.html",
+      "title": "2011高知市総合計画後期基本計画 実施計画（第1次～第2次）",
+      "use_boundary": "実施計画と事務事業評価による進行管理の枠組みを保持し、自治体の進行管理をJichi Insight独自の達成判定へ変換しない"
+    },
+    {
+      "evidence_location": "現行計画の廃止方針と新計画の方向性は、市長定例記者会見配布資料「高知市総合計画の見直しについて」（令和7年9月2日）と総合計画審議会資料で確認した（現行計画は令和8年度末で廃止、新計画「高知市未来ビジョン（仮称）」は令和9年度～令和16年度の8年計画として令和9年3月議会への上程に向けて策定中）。Phase 14出典目録では本URLが移行方針の出典として記録されている",
+      "evidence_role": "plan_transition",
+      "format": "html",
+      "id": "kochi-next-plan-transition",
+      "official_url": "https://www.city.kochi.kochi.jp/soshiki/3/yosan08.html",
+      "title": "高知市未来ビジョン（仮称）策定方針",
+      "use_boundary": "策定中の新計画はtransition evidenceとして保持し、採択前の内容をcurrent planへ昇格しない。名目上の現行計画期間（2030年度まで）と実際の移行時期を混同しない"
+    },
+    {
+      "evidence_location": "財政課の令和8年度予算ページから『令和8年度当初予算・3月議会提出議案の概要』を取得し、一般会計当初予算168,400,000千円を当初予算規模表と款別歳入表の歳入合計で確認した。議決結果は市議会公式『令和8年第512回定例会 議決結果』で市第4号「可決（多数）」を直接確認し、同ページは令和8年度当初予算が2026年3月26日に原案どおり可決された旨を公表している",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "kochi-budget-2026",
+      "official_url": "https://www.city.kochi.kochi.jp/soshiki/3/yosan08.html",
+      "title": "令和8年度予算",
+      "use_boundary": "FY2026当初予算は補正予算・決算と別stateで保持する。金額は千円単位の公表値であり、円単位を合成しない"
+    },
+    {
+      "evidence_location": "Phase 14出典目録におけるFY2024決算の公式入口。一般会計の決算額そのものは、この決算カード（普通会計ベース）からは取得せず、監査委員『令和6年度高知市一般会計・特別会計決算及び基金の運用状況審査意見書』（高監第24号、令和7年9月1日）の一般会計決算表で歳入163,081,014千円・歳出161,832,607千円・形式収支1,248,407千円・実質収支544,453千円（いずれも千円単位）を確認し、差引が検算一致することを確認した。認定議案は市議会公式の第509回定例会議決結果で市第165号「認定（全員）」と確認した",
+      "evidence_role": "settlement",
+      "format": "html",
+      "id": "kochi-settlement-2024",
+      "official_url": "https://www.city.kochi.kochi.jp/soshiki/3/06card.html",
+      "title": "令和6年度普通会計決算状況（決算カード）",
+      "use_boundary": "FY2024決算は予算・補正と別stateで保持する。歳入・歳出・実質収支は公表精度である千円単位のまま記録し、円単位を合成しない。決算カード等の普通会計ベースの集計値と一般会計値を混同しない。FY2024決算は後期基本計画期間内の決算であり、次期計画の実績へ読み替えない"
+    }
+  ]
+}

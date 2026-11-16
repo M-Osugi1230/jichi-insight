@@ -1,0 +1,49 @@
+{
+  "records": [
+    {
+      "availability": "published",
+      "category": "municipality_profile",
+      "confidence": "high",
+      "id": "kochi-city-home",
+      "indexed_at": "2026-11-17",
+      "municipality_key": "kochi-city",
+      "notes": "高知市の公式自治体サイト。",
+      "organization": "高知市",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "高知市公式サイト",
+      "url": "https://www.city.kochi.kochi.jp/"
+    },
+    {
+      "availability": "published",
+      "category": "budget",
+      "confidence": "high",
+      "id": "kochi-budget-2026",
+      "indexed_at": "2026-11-17",
+      "municipality_key": "kochi-city",
+      "notes": "一般会計当初予算168,400,000千円（千円精度）のEvidence。市財政課『令和8年度当初予算・3月議会提出議案の概要』の当初予算規模表で一般会計168,400,000千円を確認し、同資料の款別歳入表の歳入合計とも一致した。議決結果は市議会公式『令和8年第512回定例会 議決結果』で、市第4号『令和8年度高知市一般会計予算』の議決結果が「可決（多数）」であることを直接確認し、その文言のまま記録した。議決日2026年3月26日は財政課の令和8年度予算ページの公表による。千円単位の公表値のまま記録し、円単位を合成しない。補正後予算・執行・決算とは分離する。",
+      "organization": "高知市",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "令和8年度予算",
+      "url": "https://www.city.kochi.kochi.jp/soshiki/3/yosan08.html"
+    },
+    {
+      "availability": "published",
+      "category": "settlement",
+      "confidence": "high",
+      "id": "kochi-settlement-2024",
+      "indexed_at": "2026-11-17",
+      "municipality_key": "kochi-city",
+      "notes": "一般会計歳入163,081,014千円・歳出161,832,607千円（いずれも千円単位）を含む公式決算資料の入口。一般会計の決算額そのものは決算カード（普通会計ベース）からは取得せず、監査委員『令和6年度高知市一般会計・特別会計決算及び基金の運用状況審査意見書』（高監第24号、令和7年9月1日）の一般会計決算表で確認し、歳入歳出差引額（形式収支）1,248,407千円が同表の印字値と検算一致した。実質収支は544,453千円（同表に印字された値を保持。形式収支から翌年度へ繰り越すべき財源703,953千円を差し引いた千円単位の計算値とは1千円異なるが、意見書の千円単位への丸めによる）。決算の認定は市第165号『決算の認定議案（一般会計及び特別会計決算）』として令和7年第509回定例会で認定（全員）された（市議会公式の議決結果で確認）。議決結果資料には議決日の印字がなく、会議録検索システムのテキスト取得では議決日を特定できなかったため、議決日は未特定のまま保持する。決算カード等の普通会計ベースの集計値は一般会計の値とは集計範囲が別のため使用していない。予算・決算の事項別明細書の款別合計との最終突合と、決算書の実質収支に関する調書そのものの値との突合は未実施である。",
+      "organization": "高知市",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "令和6年度普通会計決算状況（決算カード）",
+      "url": "https://www.city.kochi.kochi.jp/soshiki/3/06card.html"
+    }
+  ],
+  "scope": "phase15-core-capital-review",
+  "updated_at": "2026-11-17",
+  "version": "0.1.0"
+}

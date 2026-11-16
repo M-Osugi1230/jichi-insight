@@ -1,0 +1,63 @@
+{
+  "id": "phase15-kochi-plan-review",
+  "name_ja": "高知市",
+  "next_action": "Promote the 54 measures under the fourteen policies and their individual progress only when official sources with stable record-level locators confirm the correspondence; identify the vote date of the FY2024 settlement certification bill (市第165号) from the council minutes; complete the cross-checks against the budget and settlement books （事項別明細書） at section level and against the real-balance statement in the settlement book itself; register the next plan (Kochi City Future Vision (provisional name), FY2027-FY2034) as a separate version once it has been adopted, keeping the current plan's nominal period (to FY2030) and the announced abolition at the end of FY2026 as separate facts that never overwrite each other; and never connect results from another plan version forward into the current plan. Keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "official_code": "392014",
+  "quality_boundary": "This package reviews the current plan identity and period (the 2011 Kochi City comprehensive plan, adopted in March 2011, in three layers: the basic concept (FY2011-FY2030, twenty years), the basic plan (first period FY2011-FY2020; second period FY2021-FY2030) and implementation plans of roughly three years (in the second basic plan period, No. 1 FY2021-FY2023 and No. 2 FY2024-FY2026); the future city vision 『森・里・海と人の環 自由と創造の共生都市 高知』 and the six rings (the basic concept's policy outlines) with fourteen policies are kept, and the 54 measures under the policies are not enumerated and stay deferred depth, so no measure-level enumeration is promoted), the policy structure, the progress-governance layer (the municipality's own progress management through administrative-project evaluation, outcome indicators and the PDCA cycle), the enacted FY2026 initial budget at the published sen-yen (thousand-yen) precision (bill 市第4号; the result printed in the council's official results for the 512th regular session is the wording 可決（多数） (passed by majority), kept verbatim and never recorded as an adoption of the original draft wording; the vote date 2026-03-26 is as published on the finance division's FY2026 budget page), and the FY2024 settlement at the thousand-yen precision printed in the audit commissioners' settlement review opinion （高監第24号, 2025-09-01, which states that the settlement figures are accurate). The FY2024 settlement certification (bill 市第165号) was certified unanimously （認定（全員）) at the 509th regular session, confirmed in the council's official vote results; it was not rejected. The vote date of the certification is not printed in the results document and could not be identified from the minutes search system by text retrieval, so it stays unidentified, as in the Kanazawa precedent. The formal balance of 1,248,407 thousand yen checks out arithmetically, and the real balance of 544,453 thousand yen is the value printed in the opinion, kept as printed (it differs by one thousand yen from the plain thousand-yen subtraction because of rounding in the opinion). Ordinary-account aggregate figures (such as the settlement card) are not used, because their aggregation scope differs from the general account. The period status stays transition_or_unresolved: the city has officially announced that the current plan will be abolished at the end of FY2026 and replaced from FY2027 by a new plan, Kochi City Future Vision (provisional name) (FY2027-FY2034), now in preparation for submission to the March 2027 council session; the transition is kept separate as a plan transition and the nominal end of the current plan (FY2030) is not overwritten by the abolition schedule. FY2024 is a settlement within the current plan's second basic plan period and the plan version is the same as the current plan, but no official total-level mapping from settlement totals to the plan's policy structure exists, so the linkage stays not_assessable.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "計画の構成と期間は、市の後期基本計画ページおよび後期基本計画概要版（高知市、2021年3月発行）の「計画の構造と期間」、第2次実施計画（2024～2026年度）の策定経緯で直接確認した。period_statusはPhase 14出典目録の記録どおりtransition_or_unresolvedを保持する",
+      "evidence_role": "current_plan_identity",
+      "id": "kochi-current-plan-period",
+      "review_note": "総合計画の構成（基本構想・基本計画・実施計画）と各層の期間を別period semanticsとして保持し、名目上の終期と移行方針を分離した。レビュー済みレコード。",
+      "source_url": "https://www.city.kochi.kochi.jp/soshiki/2/sougoukeikakukouki.html",
+      "statement": "高知市の現行の最上位計画は2011高知市総合計画（平成23年3月策定）であり、長期的な視点に立つ基本構想（計画期間20年間、2011年度～2030年度）、基本構想実現の方策を示す基本計画（前期・後期それぞれ10年間、前期2011年度～2020年度・後期2021年度～2030年度）、基本計画に基づき具体的な事務事業を定める実施計画（概ね3年ごと、後期基本計画では第1次2021年度～2023年度・第2次2024年度～2026年度）の3層で構成される。将来の都市像は「森・里・海と人の環 自由と創造の共生都市 高知」である。Phase 14インベントリのperiod_statusはtransition_or_unresolvedである。名目上の計画期間は2030年度までだが、市は現行計画を後期基本計画第2次実施計画が満了する令和8年度末をもって廃止する方針を公式公表しており、名目上の終期と実際の移行を混同しない（移行の詳細は移行記録に分離する）。",
+      "title": "2011高知市総合計画の構成（基本構想2011年度～2030年度・基本計画 前期2011年度～2020年度／後期2021年度～2030年度・実施計画 概ね3年）",
+      "value": "2011高知市総合計画は基本構想（2011年度～2030年度・20年間）と基本計画（前期2011年度～2020年度・後期2021年度～2030年度）、実施計画（概ね3年、後期基本計画では第1次2021年度～2023年度・第2次2024年度～2026年度）で構成／FY2024決算は後期基本計画期間内（第2次実施計画期間内）の決算"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "6つの環・14の政策の名称と帰属は、後期基本計画概要版（高知市発行）の体系図と政策一覧、第2次実施計画の目次（体系別事業計画）の双方で同一であることを確認した",
+      "evidence_role": "policy_structure",
+      "id": "kochi-current-policy-structure",
+      "review_note": "基本構想の将来の都市像と環・政策レベルの体系を保持した。施策の全件列挙は行わない。レビュー済みレコード。",
+      "source_url": "https://www.city.kochi.kochi.jp/soshiki/2/sougoukeikakukouki.html",
+      "statement": "基本構想は将来の都市像として「森・里・海と人の環 自由と創造の共生都市 高知」を掲げ、施策の大綱として6つの環（共生の環／安心の環／育みの環／地産の環／まちの環／自立の環）を設定する。後期基本計画はこの6つの環の下に14の政策と54の施策を体系化し（共生の環に政策1～5、安心の環に政策6・7、育みの環に政策8・9、地産の環に政策10・11、まちの環に政策12・13、自立の環に政策14）、横断的施策として推進戦略「維新・創生 高知市」（主要課題と「維新・創生8大エンジン」）を置く。政策名は後期基本計画概要版と第2次実施計画の体系で確認した。本候補は環と政策レベルの体系のみを保持し、施策54件の全件列挙は行わない。",
+      "title": "将来の都市像「森・里・海と人の環 自由と創造の共生都市 高知」と6つの環（施策の大綱）・14の政策の体系"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "進行管理の枠組みは、市の実施計画ページの説明と第2次実施計画の「計画の着実な進行管理に向けて」で直接確認した",
+      "evidence_role": "progress_governance",
+      "id": "kochi-progress-governance-framework",
+      "review_note": "進行管理の公式routeとして事務事業評価・成果指標・PDCAサイクルの枠組みを保持した。評価結果の個別内容の展開は行わない。レビュー済みレコード。",
+      "source_url": "https://www.city.kochi.kochi.jp/soshiki/2/koukijissikeikaku.html",
+      "statement": "2011高知市総合計画の進行管理は、実施計画に登載する事業を事務事業評価の対象として評価を実施し、基本計画で設定した施策の成果指標（数値目標）を共有しながら、PDCAサイクルの推進に基づく進捗管理を行う枠組みである。第2次実施計画（2024年度～2026年度）では、登載事業について事業費と数値目標を設定し、事務事業評価による厳正な進行管理を行うとしている。自治体の進行管理の仕組みをJichi Insight独自の達成判定へ変換しない。",
+      "title": "計画の進行管理（事務事業評価とPDCAサイクルによる進行管理）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "廃止方針と新計画の期間・構造は、市長定例記者会見配布資料「高知市総合計画の見直しについて」（令和7年9月2日）の比較表で確認し、総合計画審議会の資料（次期総合計画の骨格について）でも同内容を確認した。新計画の計画書そのものは未策定である",
+      "evidence_role": "plan_transition",
+      "id": "kochi-plan-transition",
+      "review_note": "現行計画の廃止方針と次期計画への移行を分離記録した。レビュー済みレコード。",
+      "source_url": "https://www.city.kochi.kochi.jp/soshiki/3/yosan08.html",
+      "statement": "市は、社会・経済情勢の変化に対応できる機動性・柔軟性を重視し、現行の2011高知市総合計画を、後期基本計画第2次実施計画が満了する令和8年度末をもって廃止し、令和9年度を始期とする新たな総合計画「高知市未来ビジョン（仮称）」を策定する方針を公式公表している（市長定例記者会見資料「高知市総合計画の見直しについて」令和7年9月2日、総合計画審議会資料）。新計画は基本構想と基本計画を統合した8年間の計画（令和9年度～令和16年度）とし、実施計画は前期・後期各4年とする方向であり、令和9年3月議会への上程に向けて策定作業が進められている。策定前の新計画の内容を現行計画（current plan）へ昇格せず、移行記録として分離して保持する。名目上の現行計画期間（2030年度まで）と実際の移行時期（令和8年度末廃止）を混同しない。",
+      "title": "現行計画の令和8年度末廃止方針と次期計画「高知市未来ビジョン（仮称）」（2027年度～2034年度）への移行"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "決算総額は監査委員の決算審査意見書、計画期間は後期基本計画概要版と第2次実施計画で確認した。総額レベルの対応付けの不在は、決算・計画の公表範囲で確認した",
+      "evidence_role": "annual_progress",
+      "fiscal_year": 2024,
+      "id": "kochi-fy2024-settlement-linkage",
+      "review_note": "FY2024決算は現行計画の後期基本計画期間内の決算で版は同一だが、総額レベルの対応付けがないため接続しないことを明記した。レビュー済みレコード。",
+      "source_url": "https://www.city.kochi.kochi.jp/uploaded/attachment/166520.pdf",
+      "statement": "FY2024決算は2011高知市総合計画の後期基本計画期間（2021年度～2030年度）内、かつ後期基本計画第2次実施計画（2024年度～2026年度）期間内の決算であり、計画の版は現行計画と同一である。決算総額は一次資料で確認済みであるが、決算総額と後期基本計画の政策・施策体系との総額レベルの対応付けは公式資料にないため、接続はnot_assessableとする。なお決算の認定議案（市第165号）は令和7年第509回定例会で認定（全員）されたが、接続判定は認定の成否に依存しない。",
+      "title": "令和6年度決算と2011高知市総合計画（後期基本計画）の政策体系の接続"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-17"
+}
