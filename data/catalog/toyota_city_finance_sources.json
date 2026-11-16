@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-16",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "toyota-city-home",
+      "municipality_key": "toyota-city",
+      "organization": "豊田市",
+      "category": "municipality_profile",
+      "title": "豊田市公式サイト",
+      "url": "https://www.city.toyota.aichi.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "豊田市の公式自治体サイト。"
+    },
+    {
+      "id": "toyota-budget-2026",
+      "municipality_key": "toyota-city",
+      "organization": "豊田市",
+      "category": "budget",
+      "title": "一般会計・特別会計予算書・予算説明書",
+      "url": "https://www.city.toyota.aichi.jp/shisei/yosan/1073321/1019490.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算211,800,000千円のEvidence。議案第45号『令和8年度豊田市一般会計予算』として令和8年2月20日に提出され、予算決算委員会への付託を経て令和8年3月18日に原案可決された成立予算（市議会公式『議決結果一覧（令和8年3月定例会）』で確認。同表の議案第45号の欄は「〃」表記であり、同表冒頭の明示行の原案可決・令和8年3月18日と同値）。金額は千円単位の公表値のまま記録し、円単位を合成しない。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "toyota-settlement-2024",
+      "municipality_key": "toyota-city",
+      "organization": "豊田市",
+      "category": "settlement",
+      "title": "決算報告・健全化判断比率",
+      "url": "https://www.city.toyota.aichi.jp/shisei/yosan/1073321/1004779.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入246,602,084,906円・歳出229,543,452,176円を円単位で含む公式決算資料（令和6年度豊田市決算書。市が公式オープンデータとして公開）。実質収支額は監査委員の決算等審査意見書の決算収支状況により8,192,990千円（千円単位）。実質収支に関する調書そのものの直接確認は未実施。決算の認定議案である令和7年承認第4号は令和7年9月定例会で令和7年9月24日に認定された。決算書（歳入歳出決算事項別明細書）の款別合計との突合は未実施。"
+    }
+  ]
+}

@@ -488,13 +488,25 @@ Declared v1 package:
 
 Deferred depth includes the implementation-plan projects under the 35 policies, the per-policy outcome and citizen-perception indicator values, cross-checks against the budget book and the settlement book (事項別明細書) at section level, direct confirmation of the vote from the March 2026 session's final-day minutes, the audit commissioners' settlement review opinion, the Eighth Plan's framework itself, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Thirty-third completion — Toyota
+
+豊田市を33番目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 第9次豊田市総合計画 — a two-layer structure of the Mirai Concept (ミライ構想; a long-term direction looking ahead to 2050, future image 『つながる つくる 暮らし楽しむまち・とよた』, basic approaches to town-building, and a hub-linked future city structure) and the Mirai Realization Strategy 2030 (ミライ実現戦略2030; FY2025–FY2029), which sets two action principles (ともにこどものミライに夢と希望をつくる／ともにミライにつながるまちをつくる), five action goals and twelve target states holding 30 policies (all 30 are enumerated; the policies are as adopted and are revised as annual progress and socioeconomic conditions change); progress is managed through annual rolling (policy rolling and project rolling feeding budget compilation), with results published alongside the initial budget compilation and the year's main initiatives published as annual policy project collections (施策別事業集) — the municipality's own progress-management framework. The transition from the Eighth Comprehensive Plan is kept only as a version chronology record
+- FY2026 general-account initial budget: 211,800,000 thousand yen (enacted; bill No. 45 『令和8年度豊田市一般会計予算』, submitted by Mayor 太田稔彦 on 2026-02-20, referred to the Budget and Settlement Committee and passed as proposed (原案可決) on 2026-03-18 per the council's official voting-result table for the March 2026 regular session; in that table the result and date cells for bill No. 45 use the ditto mark (〃), resolving to the table's explicit first entry (bill No. 5: passed as proposed, 2026-03-18), and that reading is recorded explicitly). The amount is published at sen-yen (thousand-yen) precision, so it is kept at that precision and yen-precision amounts are not synthesized
+- FY2024 general-account settlement at yen precision as published: revenue 246,602,084,906 yen / expenditure 229,543,452,176 yen (the balance of 17,058,632,730 yen matches the published balance in the official settlement book published by the city as open data, and both totals are consistent with the audit committee's sen-yen figures; the real balance is 8,192,990 thousand yen per the audit committee's settlement review opinion (豊監発第393号, 2025-08-21), kept at that opinion's sen-yen precision, never expanded into synthetic yen; the real-balance statement (実質収支に関する調書) itself has not been directly confirmed). The settlement certification bill, approval bill No. 4 (令和7年承認第4号) 『令和6年度豊田市一般会計決算』, was certified on 2025-09-24 at the September 2025 regular session per the council's official voting-result table (it was not rejected). FY2024 is a settlement of the Eighth Comprehensive Plan period, a different plan version from the current Ninth Plan, and no official total-level mapping from settlement totals to the strategy's goals or policies exists, so the totals are not linked to the plan's policies and the linkage stays not_assessable
+
+Deferred depth includes the individual projects in the annual policy project collections under the 30 policies, the per-target-state indicator values, cross-checks against the budget book and the settlement book (事項別明細書) at section level, direct confirmation of the vote from the March 2026 session's minutes (including the reading of the ditto-mark cells), direct confirmation of the real-balance statement itself, the Eighth Plan's framework itself, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 32 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市
+- Reviewed complete: 33 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市
 - Review in progress: 0
-- Pending record review: 35
+- Pending record review: 34
 - Blocked source inventory: 0
-- Next official code: 232114
+- Next official code: 242012
 
 ## Definition of Phase 15 completion
 

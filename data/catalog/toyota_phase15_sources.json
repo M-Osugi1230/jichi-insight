@@ -1,0 +1,46 @@
+{
+  "id": "toyota-phase15-sources",
+  "phase": 15,
+  "official_code": "232114",
+  "name_ja": "豊田市",
+  "reviewed_at": "2026-11-16",
+  "quality_boundary": "Current plan identity kept as published (the Ninth Toyota City Comprehensive Plan composed of the Mirai Concept, a long-term direction looking ahead to 2050 with future image 『つながる つくる 暮らし楽しむまち・とよた』, and the Mirai Realization Strategy 2030 (FY2025-FY2029) holding two action principles, five action goals, twelve target states and 30 policies, all enumerated; the Eighth Comprehensive Plan is kept only as a separate version), progress governance (annual rolling with policy evaluation, published with the initial budget compilation together with annual policy project collections, kept as the municipality's own progress-management route), budget enactment kept as passed as proposed on 2026-03-18 as bill No. 45 at the March 2026 regular session with the amount kept at the published sen-yen precision and never expanded into synthetic yen (the council table's cells for bill No. 45 use the ditto mark, read as the same values as the table's explicit first entry), and settlement totals kept at the published yen precision from the official settlement book (approval bill No. 4 certified on 2025-09-24; the real balance of 8,192,990 thousand yen is kept at the audit committee review opinion's sen-yen precision, and the real-balance statement itself has not been directly confirmed) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "sources": [
+    {
+      "evidence_location": "豊田市公式Webサイト『第9次豊田市総合計画（ミライ構想・ミライ実現戦略2030）』ページは現行計画の公式入口（Phase 14インベントリで確認）。計画の構成・期間・将来像・2つの取組方針と5つの取組目標・12の目指す姿・全30施策の体系は、同ページからリンクされる公式『第9次豊田市総合計画 本冊』と『概要版』で直接確認",
+      "evidence_role": "comprehensive_plan",
+      "format": "html",
+      "id": "toyota-ninth-plan",
+      "official_url": "https://www.city.toyota.aichi.jp/shisei/1073254/1073594/1055819/index.html",
+      "title": "第9次豊田市総合計画（ミライ構想・ミライ実現戦略2030）",
+      "use_boundary": "現行計画は第9次豊田市総合計画（ミライ構想とミライ実現戦略2030で構成）とミライ実現戦略2030（2025年度〜2029年度）として保持し、第8次総合計画の内容を混在させない"
+    },
+    {
+      "evidence_location": "豊田市公式Webサイトの同計画ページは進行管理の公式入口（Phase 14インベントリで確認）。毎年度ローリングの方法と結果は、同ページからリンクされる公式『ローリング結果公表資料（2025年度版）』で確認し、当該年度の主な取組は『令和8年度豊田市の予算（施策別事業集）』で公表される",
+      "evidence_role": "annual_progress",
+      "format": "html",
+      "id": "toyota-rolling-2026",
+      "official_url": "https://www.city.toyota.aichi.jp/shisei/1073254/1073594/1055819/index.html",
+      "title": "第9次豊田市総合計画 ローリング結果公表資料・施策別事業集",
+      "use_boundary": "ローリング結果と施策別事業集は自治体の進行管理routeとして保持し、source-reportedな進捗をJichi Insight独自の達成率へ変換しない"
+    },
+    {
+      "evidence_location": "豊田市公式Webサイト『一般会計・特別会計予算書・予算説明書』ページはFY2026当初予算の公式入口（Phase 14インベントリで確認）。同ページ掲載の公式『令和8年度一般会計・特別会計予算書』（議案第45号・第1条）で一般会計211,800,000千円を確認し、公式『令和8年度当初予算の概要』でも2,118億円と一致を確認。議案番号・提出日は予算書の表紙、付託・議決結果・議決日は豊田市議会公式『議決結果一覧（令和8年3月定例会）』で確認",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "toyota-budget-2026",
+      "official_url": "https://www.city.toyota.aichi.jp/shisei/yosan/1073321/1019490.html",
+      "title": "一般会計・特別会計予算書・予算説明書",
+      "use_boundary": "FY2026当初予算は成立予算（議案第45号・令和8年3月18日原案可決）として保持し、補正予算と別stateで扱う"
+    },
+    {
+      "evidence_location": "豊田市公式Webサイト『決算報告・健全化判断比率』ページは決算の公式入口（Phase 14インベントリで確認）。FY2024の歳入・歳出の円単位総額は、豊田市が公式オープンデータとして公開する『令和6年度豊田市決算書』の一般会計歳入歳出決算書で確認した。実質収支額は監査委員の公式『令和6年度豊田市決算等審査意見書』（豊監発第393号）の決算収支状況で確認した。認定議案（令和7年承認第4号）の提出は同決算書で確認し、議決結果は豊田市議会公式『議決結果一覧（令和7年9月定例会）』（https://toyota-shigikai.jp/resultpopup1816.html ）で令和7年9月24日・結果「認定」を直接確認した",
+      "evidence_role": "settlement",
+      "format": "html",
+      "id": "toyota-settlement-2024",
+      "official_url": "https://www.city.toyota.aichi.jp/shisei/yosan/1073321/1004779.html",
+      "title": "決算報告・健全化判断比率",
+      "use_boundary": "FY2024決算は第8次豊田市総合計画の計画期間の決算として保持し、決算総額を第9次計画の施策・指標の実績へ流用しない。令和7年承認第4号は令和7年9月24日に認定されたものとして記録する。実質収支額は審査意見書の公表精度（千円単位）のまま保持し、円単位の値を合成しない"
+    }
+  ]
+}
