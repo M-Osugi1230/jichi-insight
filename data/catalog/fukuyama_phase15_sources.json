@@ -1,0 +1,46 @@
+{
+  "id": "fukuyama-phase15-sources",
+  "name_ja": "福山市",
+  "official_code": "342076",
+  "phase": 15,
+  "quality_boundary": "Current plan identity kept as published (the 5th Fukuyama City Comprehensive Plan: the basic concept began in FY2017 with no fixed end, and the basic plan 'Fukuyama Mirai Creation Vision' runs in three periods — first period FY2017-FY2020, second period FY2021-FY2025, current third period FY2026-FY2030 — with the third period unifying the basic plan and the comprehensive strategy; the layer semantics are kept separate and the period status stays verified_fixed_period as recorded against the third basic plan's period; the two priority projects and seven fields are kept at the basic-plan level, while the measures and target indicators under the fields are not enumerated and stay deferred depth), progress governance (the annual priority policies, the outcome-oriented management policy, and the Fukuyama Mirai-zukuri Council — kept as the municipality's own progress-management framework), budget enactment confirmed from the council's official result list (bill 議第2号; the result is recorded simply as 『可決』 in the council's own wording; the vote date of 2026-03-18 was identified from the council newsletter's session overview and final confirmation against the plenary minutes is still outstanding; article 1 of the budget book itself was not confirmed directly because the budget book PDF is image-based) and the amount kept at the published sen-yen precision (207,700,000 thousand yen, confirmed in the finance division's budget reference materials and never expanded into synthetic finer amounts), and settlement totals kept at the thousand-yen precision published in the audit commissioners' review opinion (the settlement certification was certified at the December 2025 regular session per the council's official result list; the certification date of 2025-11-26 was identified from the council newsletter's session overview and final confirmation against the plenary minutes is still outstanding; the real balance of 4,757,421 thousand yen stays at the thousand-yen precision of the opinion's table; ordinary-account aggregate figures are not used) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "reviewed_at": "2026-11-16",
+  "sources": [
+    {
+      "evidence_location": "第3期基本計画ページで計画期間（2026年度～2030年度）と「総合計画の基本計画と総合戦略を一本化したもの」であることを確認し、本編PDF（福山みらい創造ビジョン2026-2030）第Ⅰ章の体系図で基本構想（2017年度～期間の定めなし）と基本計画の期別構成を、第Ⅳ章・第Ⅴ章でめざす姿、2つの重点プロジェクト、7つの分野の体系を確認した",
+      "evidence_role": "comprehensive_plan",
+      "format": "html",
+      "id": "fukuyama-third-vision",
+      "official_url": "https://www.city.fukuyama.hiroshima.jp/site/sougoukeikaku/394084.html",
+      "title": "福山みらい創造ビジョン（第3期基本計画）",
+      "use_boundary": "現行計画は第五次福山市総合計画の第3期基本計画として保持し、基本構想・基本計画のlayer semanticsを分離する。第2期基本計画と総合戦略を一本化したcurrent planとして保持し、第2期の効果検証を第3期のactualへ流用しない"
+    },
+    {
+      "evidence_location": "総合計画トップページで、福山みらいづくり懇話会が人口減少対策等の施策の推進に当たり様々な団体の関係者から意見を聴取するため設置されたこと（旧・福山市総合戦略推進懇話会を再編）、設置要綱とこれまでの会議資料が掲載されていることを確認した",
+      "evidence_role": "progress_governance",
+      "format": "html",
+      "id": "fukuyama-progress-governance",
+      "official_url": "https://www.city.fukuyama.hiroshima.jp/site/sougoukeikaku/",
+      "title": "福山みらいづくり懇話会",
+      "use_boundary": "計画・地方創生関連施策の効果検証と外部意見を扱う公式会議route。第2期の効果検証と第3期のcurrent progressを時点分離し、外部意見を独自評価へ変換しない"
+    },
+    {
+      "evidence_location": "当初予算ページ掲載の財政課『予算参考資料（福山市の財政状況）』の会計別当初予算額比較表と一般会計当初予算款別比較表（歳入・歳出）でFY2026一般会計当初予算額207,700,000千円を確認した（予算書PDFは画像形式のため第1条のテキスト確認は行っていない）。議決は市議会公式『令和8年3月定例会議案の審議結果一覧』の議第2号の採決結果欄（文言『可決』）で直接確認した。議決日は市議会だより第101号の定例会概要から2026年3月18日と特定したが、本会議録による最終確認は未実施である",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "fukuyama-budget-2026",
+      "official_url": "https://www.city.fukuyama.hiroshima.jp/soshiki/zaisei/391108.html",
+      "title": "2026年度（令和8年度）予算（補正予算を含む）",
+      "use_boundary": "FY2026当初予算は補正予算・決算と別stateで保持する。金額は千円単位の公表値であり、円単位を合成しない"
+    },
+    {
+      "evidence_location": "決算ページが入口となり、監査委員『令和6年度福山市一般会計・特別会計決算及び基金運用状況審査意見書』（福監査意見審第3号・2025年9月4日）の第1表・第2表で一般会計の歳入決算額220,468,943千円・歳出決算額212,772,807千円・歳入歳出差引額7,696,136千円・実質収支4,757,421千円を確認した（いずれも同書の千円単位の公表値）。認定は市議会公式『令和7年12月定例会議案の審議結果一覧』の議第108号の採決結果欄（文言『認定』）で直接確認した。認定日は市議会だより第100号の定例会概要から2025年11月26日と特定したが、本会議録による最終確認は未実施である。財政状況資料集の普通会計ベースの集計値は一般会計値とは別のため使用していない",
+      "evidence_role": "settlement",
+      "format": "html",
+      "id": "fukuyama-settlement-2024",
+      "official_url": "https://www.city.fukuyama.hiroshima.jp/soshiki/zaisei/394209.html",
+      "title": "財政状況資料集（2024年度決算）",
+      "use_boundary": "FY2024決算は予算・補正と別stateで保持する。歳入・歳出・実質収支は審査意見書の千円単位の公表値のまま記録する。第2期計画期間の決算・成果資料と第3期current planをversion分離する"
+    }
+  ]
+}

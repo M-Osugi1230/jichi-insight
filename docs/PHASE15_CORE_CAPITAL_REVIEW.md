@@ -728,13 +728,25 @@ Declared v1 package:
 
 Deferred depth includes the measures and KPIs of the second-half basic plan under the eight policy fields, final confirmation of both vote dates against the plenary minutes, cross-checks against the budget explanation book and the settlement book （事項別明細書） at section level, the content of the audit commissioners' settlement review opinion (individual findings), the preparation status of the next (sixth) long-term comprehensive plan, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Fifty-third completion — Fukuyama
+
+福山市を53番目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 第五次福山市総合計画 — composed of the basic concept （基本構想）, which began in FY2017 with no fixed end, and the basic plan （基本計画） "Fukuyama Mirai Creation Vision" （福山みらい創造ビジョン）, which runs in three periods (first period FY2017-FY2020, second period FY2021-FY2025, current third period FY2026-FY2030); the third period unifies the basic plan with the comprehensive strategy, and the layers are kept as separate period semantics. The target image is 『希望、安心、活力ある備後の中核都市』, with two priority projects （福山版少子化対策の推進 / 若者や女性に選ばれる都市づくり）. The field-level measures are organised under seven fields, which are kept at the basic-plan level; the measures and target indicators under the fields are not enumerated and stay deferred depth, so the measures lists stay empty. Progress is managed through the municipality's own framework of issuing each fiscal year's initiatives as annual priority policies （重点政策）, an outcome-oriented management policy, and the Fukuyama Mirai-zukuri Council （福山みらいづくり懇話会）, which handles effect verification and external opinions. The period status stays verified_fixed_period as recorded in the Phase 14 inventory (it applies to the third basic plan's period), and the preparation status of the next (fourth) basic plan could not be confirmed in official sources and stays unconfirmed
+- FY2026 general-account initial budget: 207,700,000 thousand yen (enacted). Bill 議第2号 was recorded simply as 『可決』 in the council's official result list for the March 2026 regular session （令和8年3月定例会議案の審議結果一覧）, in the council's own wording. The amount was confirmed in the finance division's budget reference materials （予算参考資料（福山市の財政状況））; article 1 of the budget book itself was not confirmed directly because the budget book PDF is image-based. The vote date of 2026-03-18 was identified from the council newsletter's session overview （市議会だより第101号）, and final confirmation against the plenary minutes is still outstanding. The amount is kept at the published sen-yen (thousand-yen) precision and finer amounts are not synthesized
+- FY2024 general-account settlement at the thousand-yen precision published in the audit commissioners' review opinion （令和6年度福山市一般会計・特別会計決算及び基金運用状況審査意見書）: revenue 220,468,943 thousand yen / expenditure 212,772,807 thousand yen (their difference of 7,696,136 thousand yen matches the balance printed in the opinion; the real balance is 4,757,421 thousand yen — the difference of 7,696,136 thousand yen minus 2,938,715 thousand yen of funding to be carried over to the next fiscal year — recorded at the thousand-yen precision of the opinion's table and not expanded into a synthetic yen figure; the yen-precision totals of the settlement book itself stay unconfirmed because the city's published materials are at thousand-yen precision; ordinary-account aggregate figures, such as the fiscal-status compendium totals, are not used). The settlement certification, bill 議第108号, was certified at the December 2025 regular session, confirmed directly in the council's official result list （令和7年12月定例会議案の審議結果一覧）; it was not rejected. The certification date of 2025-11-26 was identified from the council newsletter's session overview （市議会だより第100号）, and final confirmation against the plenary minutes is still outstanding. FY2024 is a settlement of the second basic plan period (FY2021-FY2025), so its plan version differs from the current third basic plan, and no official total-level mapping from settlement totals to the plan's policy structure exists, so the totals are not linked to the plan's structure and the linkage stays not_assessable
+
+Deferred depth includes the measures and target indicators of the third basic plan under the seven fields, final confirmation of both vote dates against the plenary minutes, direct confirmation of article 1 of the budget book, the yen-precision totals of the settlement book itself, cross-checks against the settlement book （事項別明細書） at section level, the content of the audit commissioners' settlement review opinion (individual findings), the preparation status of the next (fourth) basic plan, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 52 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市、姫路市、尼崎市、明石市、西宮市、奈良市、和歌山市、鳥取市、松江市、倉敷市、呉市
+- Reviewed complete: 53 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市、姫路市、尼崎市、明石市、西宮市、奈良市、和歌山市、鳥取市、松江市、倉敷市、呉市、福山市
 - Review in progress: 0
-- Pending record review: 15
+- Pending record review: 14
 - Blocked source inventory: 0
-- Next official code: 342076
+- Next official code: 352012
 
 ## Definition of Phase 15 completion
 
