@@ -1,0 +1,63 @@
+{
+  "id": "phase15-kurume-plan-review",
+  "name_ja": "久留米市",
+  "next_action": "Promote the full enumeration of the 33 measures of the first-period basic plan and their individual progress (each measure's intended outcomes and indicators) and their correspondence to project-plan items only when official sources with stable record-level locators confirm the correspondence; complete the cross-checks against the budget and settlement books （事項別明細書） at section level and against the real-balance statement in the settlement book itself; keep the previous plan (the Kurume City New Comprehensive Plan, whose fourth basic plan covers FY2020-FY2025) and the current plan (Kurume Future Design Plan 2035, from FY2026) as separate versions and never read the previous plan period's results forward into the current plan; and keep the FY2026 provisional budget for April to June (bill No. 6, 70,670,000 thousand yen, adopted as proposed on 2026-03-25) separate from the regular initial budget (bill No. 45) that followed the mayoral election. Keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "official_code": "402036",
+  "quality_boundary": "This package reviews the current plan identity and period (the Kurume Future Design Plan 2035, the city's current top-level plan from FY2026, in three layers: the basic concept (FY2026-FY2035, ten years), the basic plan (first period FY2026-FY2030; second period FY2031-FY2035) and project plans of three years revised every fiscal year; the future city vision 『優しさ 豊かさ 輝き あふれるまち』, three viewpoints for community development and ten basic goals are kept, with the policy-field level structure under the goals; the 33 measures the first-period basic plan systematises are not enumerated in full and stay deferred depth, so no measure-level enumeration is promoted), the policy structure, the progress-governance layer (the municipality's own policy evaluation system: machizukuri evaluation of the basic plan as a whole and of each basic goal, and project evaluation of individual administrative projects), the enacted FY2026 general-account initial budget in its regular form at the published sen-yen (thousand-yen) precision (bill No. 45, submitted on 2026-06-01; the council's official vote record for the second regular session of 2026 records the result as 原案可決 (adopted as proposed) on 2026-06-26, kept verbatim; because a mayoral election was scheduled for 2026-01-25, a provisional budget for April to June (bill No. 6, 70,670,000 thousand yen, adopted as proposed on 2026-03-25) was enacted first, and the provisional and regular budgets are kept separate and never conflated), and the FY2024 settlement at the yen precision printed in the settlement book (revenue 151,712,648,320 yen / expenditure 150,433,124,636 yen; their difference, the formal balance of 1,279,523,684 yen, checks out arithmetically; the real balance of 1,011,356 thousand yen is kept at the thousand-yen precision printed in the settlement summary documents, as published, and is not expanded into a synthetic yen figure). The FY2024 settlement certification (bill 認定第1号) was certified at the third regular session of 2025, confirmed in the council's official vote record with the vote date 2025-10-15; it was not rejected. Ordinary-account aggregate figures (such as the fiscal situation materials and the settlement card) are not used, because their aggregation scope differs from the general account. The period status stays verified_fixed_period as recorded in the Phase 14 inventory. FY2024 is a settlement within the previous plan's fourth basic plan period (FY2020-FY2025), so its plan version differs from the current plan; the transition is kept separate as a plan transition, and no official total-level mapping from settlement totals to the previous plan's policy structure exists, so the linkage stays not_assessable.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "計画の構成と期間は、計画書の基本構想（2026-2035）と前期基本計画総論の「構成と期間」で直接確認した。period_statusはPhase 14出典目録の記録どおりverified_fixed_periodを保持する",
+      "evidence_role": "current_plan_identity",
+      "id": "kurume-current-plan-period",
+      "review_note": "総合計画の構成（基本構想・基本計画・事業計画）と各層の期間を別period semanticsとして保持し、前期・後期の基本計画を分離した。レビュー済みレコード。",
+      "source_url": "https://www.city.kurume.fukuoka.jp/1100keikaku/2045keikaku/3010sougou/",
+      "statement": "久留米市の現行の最上位計画は久留米未来デザイン計画2035であり、将来都市像や基本目標を示す基本構想（10年間、2026年度〜2035年度）、基本構想を実現するための施策を体系的に示す基本計画（前期5年間、2026年度〜2030年度／後期5年間、2031年度〜2035年度）、基本計画で示す施策を実現するための具体的な計画である事業計画（3年間、毎年度見直しを実施）の3層で構成される。将来都市像は「優しさ 豊かさ 輝き あふれるまち」である。Phase 14インベントリのperiod_statusはverified_fixed_periodである。",
+      "title": "久留米未来デザイン計画2035の構成（基本構想2026年度〜2035年度・基本計画 前期2026年度〜2030年度／後期2031年度〜2035年度・事業計画 3年（毎年度見直し））",
+      "value": "久留米未来デザイン計画2035は基本構想（2026年度〜2035年度・10年間）と基本計画（前期2026年度〜2030年度・後期2031年度〜2035年度）、事業計画（3年間、毎年度見直し）で構成／FY2024決算は旧計画（久留米市新総合計画）の第4次基本計画期間内の決算"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "10の基本目標の名称は計画書の基本構想と前期基本計画各論（基本目標1〜10）の双方で確認し、施策分野の帰属は前期基本計画総論の全体図で確認した",
+      "evidence_role": "policy_structure",
+      "id": "kurume-current-policy-structure",
+      "review_note": "基本構想の将来都市像と基本目標・施策分野レベルの体系を保持した。施策の全件列挙は行わない。レビュー済みレコード。",
+      "source_url": "https://www.city.kurume.fukuoka.jp/1100keikaku/2045keikaku/3010sougou/",
+      "statement": "基本構想は将来都市像として「優しさ 豊かさ 輝き あふれるまち」を掲げ、3つのまちづくりの視点（人口減少に本格的に向き合ったまちづくりへの転換／一人ひとりを大切にした人づくりと共生、協働の深化／時代の潮流を捉えたまち全体の変革・更新）を置く。その実現に向けて10の基本目標（1「安全・安心な暮らし」を守る／2「自分らしく輝き続けられる社会」をつくる／3「つながり支え合う地域」をつくる／4「未来を創り担うひと」を育む／5「楽しく心豊かな暮らし」を実現する／6「魅力ある快適な都市」をデザインする／7「豊かな自然と恵まれた環境」を次世代につなぐ／8「新たな価値、地域の稼ぐ力」を生み出す／9「久留米ならではの魅力」を高め広げる／10「スマートな行財政運営」に転換する）を設定し、前期基本計画はその下に施策分野と33の施策を体系化する。本候補は基本目標と施策分野レベルの体系のみを保持し、施策33件の全件列挙は行わない。",
+      "title": "将来都市像「優しさ 豊かさ 輝き あふれるまち」と10の基本目標・施策分野の体系"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "進行管理の枠組みは、前期基本計画総論の「政策評価制度」と「基本計画のまちづくり評価」、市の政策評価制度ページで直接確認した",
+      "evidence_role": "progress_governance",
+      "id": "kurume-progress-governance-framework",
+      "review_note": "進行管理の公式routeとして政策評価制度（まちづくり評価・事業評価）の枠組みを保持した。評価結果の個別内容の展開は行わない。レビュー済みレコード。",
+      "source_url": "https://www.city.kurume.fukuoka.jp/1100keikaku/2045keikaku/3010sougou/",
+      "statement": "久留米未来デザイン計画2035の進行管理は、まちづくりの状況を点検・評価し、その結果を次の施策や事業等の企画立案・実施に反映するとともに市民と共有するための進行管理システムとして、政策評価制度に取り組む枠組みである。政策評価制度は、基本計画全体と基本目標ごとに掲げるめざす姿の実現状況を点検する「まちづくり評価」と、具体的な事務事業の取組状況や成果を評価する「事業評価」により運用する。基本計画全体の評価は人口・住みやすさ・定住意向の指標で行い、基本目標の評価は各施策の「めざす成果」と「施策指標」で行う。自治体の進行管理の仕組みをJichi Insight独自の達成判定へ変換しない。",
+      "title": "計画の進行管理（政策評価制度（まちづくり評価・事業評価）による進行管理）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "旧計画の構成と期間は、市の総合計画ページの久留米市新総合計画の案内（基本構想 平成13年度〜令和7年度、第4次基本計画 令和2年度〜令和7年度）で確認し、新計画の開始は基本構想の策定趣旨で確認した",
+      "evidence_role": "plan_transition",
+      "id": "kurume-plan-transition",
+      "review_note": "旧計画から現行計画への移行を分離記録した。レビュー済みレコード。",
+      "source_url": "https://www.city.kurume.fukuoka.jp/1100keikaku/2045keikaku/3010sougou/",
+      "statement": "現行計画に先立つ最上位計画は久留米市新総合計画（平成13年策定）であり、基本構想は平成13年度〜令和7年度、基本計画は第1次（平成13年度〜平成16年度）・第2次（平成17年度〜平成26年度）・第3次（平成27年度〜令和元年度）・第4次（令和2年度〜令和7年度）と続いた。市は令和8年度から新たな総合計画「久留米未来デザイン計画2035」を開始しており、旧計画期間の実績を現行計画の実績へ読み替えない。移行記録として分離して保持する。",
+      "title": "久留米市新総合計画（基本構想 平成13年度〜令和7年度）から久留米未来デザイン計画2035への移行"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "決算総額は一般会計決算書、計画期間は基本構想・前期基本計画総論と市の総合計画ページで確認した。総額レベルの対応付けの不在は、決算・計画の公表範囲で確認した",
+      "evidence_role": "annual_progress",
+      "fiscal_year": 2024,
+      "id": "kurume-fy2024-settlement-linkage",
+      "review_note": "FY2024決算は旧計画の第4次基本計画期間内の決算で版が現行計画と異なるため接続しないことを明記した。レビュー済みレコード。",
+      "source_url": "https://www.city.kurume.fukuoka.jp/1100keikaku/2070zaisei/3020kessan/4210kessanr06/2025-0909-1424-6.html",
+      "statement": "FY2024決算は久留米市新総合計画の第4次基本計画期間（令和2年度〜令和7年度）内の決算であり、現行計画（久留米未来デザイン計画2035、2026年度開始）とは計画の版が異なる。決算総額は一次資料で確認済みであるが、決算総額と旧計画の施策体系との総額レベルの対応付けは公式資料にないため、接続はnot_assessableとする。なお決算の認定議案（認定第1号）は令和7年第3回定例会で認定されたが、接続判定は認定の成否に依存しない。",
+      "title": "令和6年度決算と久留米市新総合計画（第4次基本計画）の施策体系の接続"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-17"
+}

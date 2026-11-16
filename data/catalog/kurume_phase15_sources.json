@@ -1,0 +1,46 @@
+{
+  "id": "kurume-phase15-sources",
+  "name_ja": "久留米市",
+  "official_code": "402036",
+  "phase": 15,
+  "quality_boundary": "Current plan identity kept as published (the Kurume Future Design Plan 2035: the basic concept (FY2026-FY2035, ten years), the basic plan (first period FY2026-FY2030; second period FY2031-FY2035) and project plans of three years revised every fiscal year, with the future city vision 『優しさ 豊かさ 輝き あふれるまち』, three viewpoints and ten basic goals; the policy-field level structure is kept and the full enumeration of the 33 measures stays deferred depth; the period status stays verified_fixed_period; the previous plan (the Kurume City New Comprehensive Plan, basic concept FY2001-FY2025, fourth basic plan FY2020-FY2025) is kept separate as a plan transition and its results are never read forward into the current plan), progress governance (the policy evaluation system — machizukuri evaluation and project evaluation — kept as the municipality's own progress-management framework), budget enactment kept as printed in the council's official vote record (bill No. 45; the result wording is 原案可決 (adopted as proposed), kept verbatim; vote date 2026-06-26) and the amount kept at the published sen-yen precision (167,760,000 thousand yen, confirmed in Article 1 of the budget book and in the budget scale table of the budget overview, and never expanded into synthetic finer amounts; the provisional budget enacted first for April to June FY2026 (bill No. 6, 70,670,000 thousand yen) is kept separate), and settlement totals kept at the yen precision printed in the settlement book (revenue 151,712,648,320 yen / expenditure 150,433,124,636 yen; the formal balance of 1,279,523,684 yen checks out; the real balance of 1,011,356 thousand yen is kept at the thousand-yen precision printed in the settlement summary documents; the settlement certification, bill 認定第1号, was certified on 2025-10-15; ordinary-account aggregate figures are not used, because their aggregation scope differs from the general account) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "reviewed_at": "2026-11-17",
+  "sources": [
+    {
+      "evidence_location": "市の総合計画・政策評価制度ページから久留米未来デザイン計画2035の計画書（基本構想・前期基本計画総論・各論）を取得し、基本構想（2026年度〜2035年度・10年間）・基本計画（前期2026年度〜2030年度・後期2031年度〜2035年度）・事業計画（3年間、毎年度見直し）の構成、将来都市像「優しさ 豊かさ 輝き あふれるまち」、10の基本目標と施策分野・33の施策の体系を計画書で直接確認した",
+      "evidence_role": "comprehensive_plan",
+      "format": "html",
+      "id": "kurume-future-design-2035",
+      "official_url": "https://www.city.kurume.fukuoka.jp/1100keikaku/2045keikaku/3010sougou/",
+      "title": "総合計画・政策評価制度",
+      "use_boundary": "久留米未来デザイン計画2035をcurrent versionとして保持し、旧計画（久留米市新総合計画）期間の実績をcurrent actualへ流用しない"
+    },
+    {
+      "evidence_location": "政策評価制度の枠組みは、前期基本計画総論の「政策評価制度」（まちづくり評価と事業評価により運用）と市の政策評価制度ページで確認した",
+      "evidence_role": "annual_progress",
+      "format": "html",
+      "id": "kurume-policy-evaluation",
+      "official_url": "https://www.city.kurume.fukuoka.jp/1100keikaku/2045keikaku/3010sougou/",
+      "title": "総合計画・政策評価制度",
+      "use_boundary": "政策評価制度の枠組みを保持し、自治体の指標・評価結果をJichi Insight独自の達成度やランキングへ変換しない"
+    },
+    {
+      "evidence_location": "市の令和8年度予算ページから『令和8年度久留米市一般会計予算書』（第45号議案）を取得し、第1条で一般会計予算の総額167,760,000千円を直接確認し、『令和8年度一般会計予算の概要』の予算規模表とも一致した。議決結果は市議会公式『令和8年第2回市議会定例会（6月）における議案に対する賛否の状況』で第45号議案「原案可決」（2026年6月26日議決）を直接確認した。同ページは令和8年度当初に暫定予算（第6号議案、70,670,000千円）が編成された経緯も公表している",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "kurume-budget-2026",
+      "official_url": "https://www.city.kurume.fukuoka.jp/1100keikaku/2070zaisei/3010yosan/4230yosanr08/",
+      "title": "令和8年度予算",
+      "use_boundary": "FY2026当初予算（通常予算）は暫定予算・補正予算・決算と別stateで保持する。金額は千円単位の公表値であり、円単位を合成しない"
+    },
+    {
+      "evidence_location": "Phase 14出典目録におけるFY2024決算の公式入口。一般会計の決算額は、この入口から取得した『令和6年度一般会計決算書』の歳入決算書・歳出決算書で歳入151,712,648,320円・歳出150,433,124,636円（いずれも円単位）を直接確認し、差引（形式収支）1,279,523,684円が検算一致することを確認した。実質収支は『令和6年度決算の概要』等の千円単位表で1,011,356千円を確認した。認定議案は市議会公式の令和7年第3回定例会議案に対する賛否の状況で認定第1号「認定」（2025年10月15日議決）と確認した",
+      "evidence_role": "settlement",
+      "format": "html",
+      "id": "kurume-settlement-2024",
+      "official_url": "https://www.city.kurume.fukuoka.jp/1100keikaku/2070zaisei/3020kessan/4210kessanr06/2025-0909-1424-6.html",
+      "title": "令和６年度一般会計決算",
+      "use_boundary": "FY2024決算は予算・補正と別stateで保持する。歳入・歳出は決算書に円単位で印字された値をそのまま記録し、実質収支は千円単位の公表値のまま記録する。財政状況資料集・決算カード等の普通会計ベースの集計値と一般会計値を混同しない。FY2024決算は旧計画期間の決算であり、現行計画の実績へ読み替えない"
+    }
+  ]
+}

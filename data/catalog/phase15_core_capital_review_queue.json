@@ -796,9 +796,9 @@
       "prefecture_name_ja": "福岡県",
       "municipality_type": "city",
       "phase14_role": "core_city",
-      "status": "pending_record_review",
+      "status": "reviewed_complete",
       "source_inventory_path": "data/indexed/kurume-city/source_inventory.json",
-      "completion_path": null
+      "completion_path": "data/catalog/kurume_phase15_completion.json"
     },
     {
       "sequence": 61,
@@ -894,11 +894,11 @@
   ],
   "summary": {
     "target_count": 67,
-    "reviewed_complete_count": 59,
+    "reviewed_complete_count": 60,
     "review_in_progress_count": 0,
-    "pending_record_review_count": 8,
+    "pending_record_review_count": 7,
     "blocked_source_inventory_count": 0,
-    "next_official_code": "402036"
+    "next_official_code": "412015"
   },
   "updated_at": "2026-11-17"
 }

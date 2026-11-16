@@ -252,8 +252,8 @@ def test_koriyama_is_reviewed_complete_and_iwaki_is_next():
     assert koriyama["completion_path"] == "data/catalog/koriyama_phase15_completion.json"
     assert (ROOT / koriyama["completion_path"]).is_file()
 
-    assert queue["summary"]["reviewed_complete_count"] == 59
+    assert queue["summary"]["reviewed_complete_count"] == 60
     assert queue["summary"]["review_in_progress_count"] == 0
-    assert queue["summary"]["pending_record_review_count"] == 8
-    assert queue["summary"]["next_official_code"] == "402036"
+    assert queue["summary"]["pending_record_review_count"] == 7
+    assert queue["summary"]["next_official_code"] == "412015"
     assert by_code["122041"]["status"] == "reviewed_complete"

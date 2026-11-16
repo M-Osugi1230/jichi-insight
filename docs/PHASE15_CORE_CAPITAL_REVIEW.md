@@ -812,13 +812,25 @@ Declared v1 package:
 
 Deferred depth includes the full enumeration of the 54 measures and the individual progress of the measures' outcome indicators and their correspondence to implementation-plan projects, the identification of the certification bill's vote date, cross-checks against the budget and settlement books （事項別明細書） at section level, the cross-check against the real-balance statement in the settlement book itself, the content of the next plan once adopted, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Sixtieth completion — Kurume
+
+久留米市を60番目の`reviewed_complete`へ昇格しました（2026-11-17、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 久留米未来デザイン計画2035 (Kurume Future Design Plan 2035) — the city's current top-level plan from FY2026, in three layers: the basic concept (FY2026-FY2035, ten years), the basic plan (first period FY2026-FY2030; second period FY2031-FY2035) and project plans of three years revised every fiscal year. The basic concept sets out the future city vision 『優しさ 豊かさ 輝き あふれるまち』 and three viewpoints for community development, and ten basic goals; the first-period basic plan systematises policy fields and 33 measures under the goals. The basic goals and the policy-field level structure are kept; the full enumeration of the 33 measures (including each measure's intended outcomes and indicators) is not performed and stays deferred depth. Progress is managed through the municipality's own policy evaluation system (machizukuri evaluation, which checks the realisation of the basic plan as a whole and of each basic goal, and project evaluation of individual administrative projects). The period status stays verified_fixed_period as recorded in the Phase 14 inventory. The transition from the previous top-level plan, the Kurume City New Comprehensive Plan (basic concept FY2001-FY2025; fourth basic plan FY2020-FY2025), is kept separate as a plan transition, and the previous plan period's results are never read forward into the current plan
+- FY2026 general-account initial budget (regular budget): 167,760,000 thousand yen (enacted). The result recorded for bill No. 45 『令和8年度久留米市一般会計予算』 in the council's official vote record for the second regular session of 2026 （令和8年第2回市議会定例会（6月）における議案に対する賛否の状況） is 原案可決 (adopted as proposed), and that wording is kept verbatim. The vote date is 2026-06-26. The amount was confirmed in Article 1 of the budget book (bill No. 45, submitted on 2026-06-01) and agrees with the budget scale table of the FY2026 general-account budget overview. Because a mayoral election was scheduled for 2026-01-25, a provisional budget for April to June was enacted first (bill No. 6 『令和8年度久留米市一般会計暫定予算』, 70,670,000 thousand yen, submitted on 2026-02-25 and adopted as proposed on 2026-03-25); the regular budget was submitted and enacted separately as bill No. 45, and the provisional and regular budgets are kept separate and never conflated. The amount is kept at the published sen-yen (thousand-yen) precision and finer amounts are not synthesized
+- FY2024 general-account settlement at the yen precision printed in the settlement book: revenue 151,712,648,320 yen / expenditure 150,433,124,636 yen (their difference, the formal balance of 1,279,523,684 yen, checks out arithmetically against the printed totals; the real balance is 1,011,356 thousand yen as printed at thousand-yen precision in the settlement summary documents （令和6年度決算の概要 / 令和6年度決算のポイント） — kept at the published thousand-yen precision and not expanded into a synthetic yen figure; ordinary-account aggregate figures such as the fiscal situation materials and the settlement card are not used, because their aggregation scope differs from the general account). The settlement certification, bill 認定第1号, was certified at the third regular session of 2025 (September session), confirmed in the council's official vote record; it was not rejected. The vote date is 2025-10-15. FY2024 is a settlement within the previous plan's fourth basic plan period (FY2020-FY2025), so the plan version differs from the current plan, and no official total-level mapping from settlement totals to the previous plan's policy structure exists, so the totals are not linked to the plan's structure and the linkage stays not_assessable
+
+Deferred depth includes the full enumeration of the 33 measures of the first-period basic plan and the individual progress of each measure's intended outcomes and indicators and their correspondence to project-plan items, the full enumeration of the previous plan's policy structure and its evaluation results, cross-checks against the budget and settlement books （事項別明細書） at section level, the cross-check against the real-balance statement in the settlement book itself, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 59 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市、姫路市、尼崎市、明石市、西宮市、奈良市、和歌山市、鳥取市、松江市、倉敷市、呉市、福山市、下関市、山口市、徳島市、高松市、松山市、高知市
+- Reviewed complete: 60 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市、姫路市、尼崎市、明石市、西宮市、奈良市、和歌山市、鳥取市、松江市、倉敷市、呉市、福山市、下関市、山口市、徳島市、高松市、松山市、高知市、久留米市
 - Review in progress: 0
-- Pending record review: 8
+- Pending record review: 7
 - Blocked source inventory: 0
-- Next official code: 402036
+- Next official code: 412015
 
 ## Definition of Phase 15 completion
 
