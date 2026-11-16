@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-16",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "neyagawa-city-home",
+      "municipality_key": "neyagawa-city",
+      "organization": "寝屋川市",
+      "category": "municipality_profile",
+      "title": "寝屋川市公式サイト",
+      "url": "https://www.city.neyagawa.osaka.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "寝屋川市の公式自治体サイト。"
+    },
+    {
+      "id": "neyagawa-budget-2026",
+      "municipality_key": "neyagawa-city",
+      "organization": "寝屋川市",
+      "category": "budget",
+      "title": "令和8年度当初予算",
+      "url": "https://www.city.neyagawa.osaka.jp/organization_list/zaimu/zaiseika/yosan/yosan/R8tousyoyosan/26514.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算1,097億3,000万円（109,730,000千円）のEvidence。議案第28号『令和8年度寝屋川市一般会計予算』として令和8年3月市議会定例会に提出され、2026年3月25日に原案可決された成立予算（寝屋川市議会公式『令和8年3月市議会定例会 付議事件一覧表』で確認）。金額は万円単位の公表値のまま記録し、千円未満の端数を合成しない。千円単位の精密額の当初予算書での確認は未実施。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "neyagawa-settlement-2024",
+      "municipality_key": "neyagawa-city",
+      "organization": "寝屋川市",
+      "category": "settlement",
+      "title": "令和6年度決算",
+      "url": "https://www.city.neyagawa.osaka.jp/organization_list/zaimu/zaiseika/kessann/kessan/reiwa5nenndokessann_2/index.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入106,597,604千円・歳出105,333,971千円を含む公式決算資料（別冊『令和6年度歳入歳出決算書』の実質収支に関する調書と令和7年9月参考資料『令和6年度 寝屋川市会計別決算状況』で一致を確認）。実質収支額は同調書により1,248,678千円（千円精度のまま記録し、円単位を合成しない）。決算の認定議案である認定第1号は令和7年12月定例会で2025年12月3日に認定された。決算書（歳入歳出決算事項別明細書）の款別合計との突合と監査委員の決算審査意見書の内容確認は未実施。"
+    }
+  ]
+}

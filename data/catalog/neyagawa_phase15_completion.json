@@ -1,0 +1,61 @@
+{
+  "id": "neyagawa-phase15-completion",
+  "phase": 15,
+  "status": "reviewed_complete",
+  "official_code": "272159",
+  "name_ja": "寝屋川市",
+  "completed_at": "2026-11-16",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "source_catalog_path": "data/catalog/neyagawa_phase15_sources.json",
+    "plan_review_path": "data/reviewed/neyagawa-city/plan_review.json",
+    "policy_structure_path": "data/catalog/neyagawa_current_policy_structure.json",
+    "progress_review_path": "data/catalog/neyagawa_current_progress_review_summary.json",
+    "fiscal_records_path": "data/reviewed/neyagawa-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/neyagawa-city/evidence_packets.json",
+    "counts": {
+      "basic_goals": 5,
+      "basic_plan_measures": 19,
+      "promoted_implementation_item_actual_records": 0,
+      "fiscal_top_line_records": 3
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "current_plan_period_reviewed": true,
+    "current_plan_policy_structure_reviewed": true,
+    "implementation_plan_layer_reviewed": true,
+    "fiscal_states_and_years_separate": true,
+    "budget_enactment_state_preserved": true,
+    "settlement_linkage_not_assessable_preserved": true,
+    "individual_implementation_items_not_overpromoted": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "current-plan-granular-kpi-and-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "19施策に基づく施策の展開（後期実施計画で全74件）・取組（事務事業）の全件と、施策指標・進捗管理指標の個別値は追加depthとし、公式対応が確認できるまで昇格しない。施策単位の体系（19施策と5つのグループ構成）は保持するが、施策の展開・個別事業単位の対応付けは行わない。"
+    },
+    {
+      "id": "settlement-values-and-budget-amendment-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "補正予算による変更経過、補正予算・決算と個別事業費の対応関係は追加エビデンス確認前は記録・結合しない。FY2024決算の一般会計の歳入・歳出総額（106,597,604千円・105,333,971千円）、実質収支（1,248,678千円）、決算の認定結果（認定第1号・2025年12月3日認定）は一次資料で確認済みであり、財政記録・証拠パケット側に反映している（いずれも千円精度のまま記録し、円単位を合成していない）。FY2026当初予算については金額（万円単位の公表値）と議案第28号・2026年3月25日原案可決を一次資料で確認済みであり、財政記録・証拠パケット側に反映している（千円単位の精密額は当初予算書での確認を残件として保持する）。"
+    },
+    {
+      "id": "plan-transition-version-depth",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "前期実施計画（2021年度～2023年度）の施策の展開の全件列挙は行わない。実施計画の前期から後期への移行の経過は版の履歴として別途記録し、前期実施計画期間の実績を後期実施計画の期間へ前倒し接続しない。次期（第七次）総合計画の策定状況は未確認である。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "寝屋川市総合計画・進捗管理・財政等の記録は政策効果の因果認定や他都市比較可能性を意味しない。進捗管理・行政評価（自治体の進行管理の枠組み）をJichi Insight独自の達成判定へ変換しない。"
+    }
+  ],
+  "completion_boundary": "寝屋川市のPhase 15 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味し、所有者（大杉邑大、単独運用体制）が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが寝屋川市公式サイトの一次資料で検証した結論に基づく（所有者本人が一次資料を直接レビューしたものではない）。寝屋川市の計画体系（第六次寝屋川市総合計画は、第2期寝屋川市まち・ひと・しごと創生総合戦略と統合して策定され、基本戦略（市の目指す将来像や基本姿勢を定める基本構想と、将来像の実現のために推進する施策の展開などを総合的かつ体系的に示す戦略プラン）と、基本戦略に基づいて実施する具体的な取組（事務事業）を示す実施計画で構成する。基本戦略は2021年度から2027年度までの7年間について、将来像『新たな価値を創り、選ばれるまち 寝屋川 ～イノベーションの創出～』を示す。実施計画は前期（2021年度～2023年度・3年間）・後期（2024年度～2027年度・4年間）であり、現行は後期実施計画（令和8年度版）である。戦略プランは19施策で構成し、施策1～9は子育て世代の誘引に特に効果的と見込まれる『3つの最重要ファクター』（ファクターI 子どもに最善を尽くす／ファクターII 誰もが住みたくなるまちをつくる／ファクターIII 命を全力で守り、豊かなくらしを実現する）に位置付けられる訴求力のある施策、施策10～13は生活を支える施策、施策14～19はくらしの質を高める施策であり、全件を列挙する。後期実施計画では施策ごとに施策の展開（全74件）・取組（事務事業）・リーディング事業（総合戦略事業）・進捗管理指標を置き、施策名は総合戦略の基本目標としても取り扱う。進行管理は、計画の進捗管理とPDCIサイクル（Plan・Do・Check・Innovation）の考え方に基づく行政評価を一体的に行う自治体の進行管理の枠組みである）、成立したFY2026一般会計当初予算（1,097億3,000万円＝109,730,000千円。議案第28号『令和8年度寝屋川市一般会計予算』として令和8年3月市議会定例会に提出（2026年2月24日）され、予算決算常任委員会の審査を経て2026年3月25日に原案可決され成立した。議決結果は寝屋川市議会公式『令和8年3月市議会定例会 付議事件一覧表』で議案番号・文言・議決日とも直接確認した。市の公表は万円単位のため、その精度（万円単位）のまま記録し、千円未満の端数を合成していない。千円単位の精密額の当初予算書での確認は未実施であり残件として保持する）、FY2024一般会計決算の千円精度総額（歳入106,597,604千円・歳出105,333,971千円、差引額1,263,633千円が決算書の実質収支に関する調書に記載された歳入歳出差引額と一致することを確認し、令和7年9月参考資料『令和6年度 寝屋川市会計別決算状況』の一般会計行とも完全一致した）を一次資料で確認した。決算の認定議案である認定第1号は令和7年9月定例会に提出（2025年9月2日）され、予算決算常任委員会への付託と閉会中の継続審査を経て、令和7年12月定例会で2025年12月3日に認定されたことを寝屋川市議会公式の付議事件一覧表で確認し、認定の事実をそのまま記録した。実質収支額は公式決算書の実質収支に関する調書により1,248,678千円であり、千円精度のまま記録する（差引額から翌年度へ繰り越すべき財源14,955千円を控除した額）。実施計画の前期（2021年度～2023年度）から後期（2024年度～2027年度）への移行は版の履歴として分離して保持し、前期実施計画期間の実績を後期実施計画の期間へ前倒し接続しない。次期（第七次）総合計画の策定状況は公式資料で確認できていない。FY2024は後期実施計画の初年度の決算であり計画の版は現行と同一であるが、決算総額と19施策・施策の展開との総額レベルの対応付けは公式資料にないため、接続はnot_assessableとして保持する。19施策に基づく施策の展開・取組の全件、施策指標・進捗管理指標の個別値、予算・決算の事項別明細書の款別合計との最終突合、監査委員の決算審査意見書の内容確認、FY2026当初予算の千円単位の精密額の確認はdeferred depthである。Jichi Insight独自の政策達成度スコアや他都市とのランキングは作成しない。進捗管理・行政評価（自治体の進行管理の枠組み）をJichi Insight独自の達成判定へ変換しない。"
+}

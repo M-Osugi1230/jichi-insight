@@ -584,13 +584,25 @@ Declared v1 package:
 
 Deferred depth includes the individual projects under the 33 measures, the per-measure indicator values, cross-checks against the budget book and the settlement book （事項別明細書） at section level, the content of the audit commissioners' settlement review opinion, the earlier basic plan's full measure structure, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Forty-first completion — Neyagawa
+
+寝屋川市を41番目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 第六次寝屋川市総合計画 — integrated with the Second Neyagawa City まち・ひと・しごと創生総合戦略， structured as a basic strategy （基本戦略 = 基本構想 plus 戦略プラン） and an implementation plan （実施計画）. The basic strategy covers FY2021-FY2027 (seven years), presenting the future image 『新たな価値を創り、選ばれるまち 寝屋川 ～イノベーションの創出～』; the implementation plan splits into an earlier period (FY2021-FY2023, three years) and a latter period (FY2024-FY2027, four years), the current version being the latter implementation plan (FY2026 edition). The strategic plan's 19 measures are grouped into the three key factors' nine appeal measures （訴求力のある施策）, four life-supporting measures （生活を支える施策） and six quality-of-life measures （くらしの質を高める施策）, all enumerated; the latter implementation plan lists 74 developments （施策の展開） under the measures, each with projects （取組）, leading projects and progress-management indicators. Progress is managed by integrating the plan's progress management with administrative evaluation based on the PDCI cycle (Plan・Do・Check・Innovation) — the municipality's own progress-management framework. The transition from the earlier implementation plan to the latter implementation plan within the Sixth Plan is kept only as a version chronology record, and results from the earlier period are never connected forward into the latter period; the status of the next (Seventh) comprehensive plan is unconfirmed
+- FY2026 general-account initial budget: 109,730,000 thousand yen as published (1,097億3,000万円; enacted; bill 議案第28号 『令和8年度寝屋川市一般会計予算』, submitted on 2026-02-24 and passed as proposed （原案可決） on 2026-03-25 at the March 2026 regular session per the council's official list of submitted items (『令和8年3月市議会定例会 付議事件一覧表』), with the bill number, the published wording and the voting date confirmed directly in that document rather than inferred from the session schedule). The city's published amount is at man-yen (ten-thousand-yen) precision, so it is kept at that precision and finer amounts are not synthesized; the exact sen-yen-precision total in the initial budget book remains unconfirmed
+- FY2024 general-account settlement at sen-yen (thousand-yen) precision as published: revenue 106,597,604 thousand yen / expenditure 105,333,971 thousand yen (their difference of 1,263,633 thousand yen matches the balance printed in the real-balance statement （実質収支に関する調書） of the official settlement book and the figures in the September 2025 reference materials; the real balance is 1,248,678 thousand yen, kept at sen-yen precision as confirmed in that statement itself). The settlement certification bill, bill 認定第1号, was submitted to the September 2025 regular session, referred to the Budget and Settlement Standing Committee and kept under continued review during recess, and was certified on 2025-12-03 at the December 2025 regular session per the council's official lists of submitted items. FY2024 is the first year of the latter implementation plan (FY2024-FY2027), so its plan version is the same as the current one, but no official total-level mapping from settlement totals to the plan's measures or developments exists, so the totals are not linked to the plan's measures and the linkage stays not_assessable
+
+Deferred depth includes the 74 developments and individual projects under the 19 measures, the per-measure indicator values (measure indicators and progress-management indicators), the exact sen-yen-precision FY2026 initial budget total, cross-checks against the budget book and the settlement book （事項別明細書） at section level, the content of the audit commissioners' settlement review opinion, the status of the next (Seventh) comprehensive plan, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 40 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市
+- Reviewed complete: 41 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市
 - Review in progress: 0
-- Pending record review: 27
+- Pending record review: 26
 - Blocked source inventory: 0
-- Next official code: 272159
+- Next official code: 272272
 
 ## Definition of Phase 15 completion
 
