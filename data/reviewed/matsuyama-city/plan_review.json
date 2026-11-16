@@ -1,0 +1,63 @@
+{
+  "id": "phase15-matsuyama-plan-review",
+  "name_ja": "松山市",
+  "next_action": "Promote the 32 measures under the eleven policy fields and their individual progress only when the final text of the basic concept and the first-period basic plan has been directly reviewed in official sources with stable record-level locators; complete the cross-checks against the budget and settlement books （事項別明細書） at section level and against the real-balance statement in the settlement book itself; enumerate the policy structure of the previous plan (the sixth Matsuyama City comprehensive plan) as a separate version; follow the preparation status of the next plan as a separate version once it becomes official; and never connect results from another plan version forward into the current plan. Keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "official_code": "382019",
+  "quality_boundary": "This package reviews the current plan identity and period (the seventh Matsuyama City comprehensive plan, in three layers: the basic concept (FY2025-FY2034), the basic plan (first period FY2025-FY2029; second period FY2030-FY2034) and the implementation plan (three-year, revised annually on a rolling basis); the framework — the future city vision 『人、まち、仕事がつながる SETOUCHIの交流拠点まつやま』, the philosophy, three directions of city-building and eleven policy fields — was cross-checked against the Phase 14 inventory, the draft basic concept, the outline of the draft first-period basic plan and the confirmed FY2026 budget overview, and the final text of the basic concept and the first-period basic plan itself has not been directly reviewed, which stays an open question; the eleven policy fields are kept at field level and the 32 measures are not enumerated and stay deferred depth, so the measures lists stay empty), the policy structure, the progress-governance layer (the municipality's own progress management through the PDCA cycle, external evaluation and citizen awareness surveys), the enacted FY2026 initial budget at the published sen-yen (thousand-yen) precision (bill 議案第9号; the result printed in the council's official per-member vote table for the March 2026 session is the wording 原案可決 (adopted as proposed), kept verbatim, with the vote date 2026-03-19), and the FY2024 settlement at the thousand-yen precision printed in the audit commissioners' settlement review opinion (book 1, 松監第63号) and the city's FY2024 fiscal circumstances publication. The FY2024 settlement certification (bill 認定第1号) was placed under continued review at the September 2025 regular session and was certified on 2025-11-28 at the December 2025 regular session, confirmed in the council's official per-member vote tables; it was not rejected. The real balance of 2,603,854 thousand yen is recorded at the published thousand-yen precision and is not expanded into a synthetic yen figure. Ordinary-account aggregate figures published by Ehime Prefecture (revenue 233,179,187 thousand yen and related values) are not used, because their aggregation scope differs from the general account. FY2024 is a settlement of the final year of the previous plan (the sixth Matsuyama City comprehensive plan), so the plan version differs from the current plan and the linkage stays not_assessable. The transition from the previous plan is kept separate as a plan transition, and the preparation status of the next plan could not be confirmed in official sources.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "計画の構成と期間はPhase 14出典目録（市の計画ページで確認済み）に基づき、本候補の作成時に基本構想（素案）、前期基本計画（案）の概要、および確定文書である令和8年度予算の概要（将来都市像と11の政策分野を再掲）で相互に確認した。基本構想・前期基本計画の最終本編そのものの直接確認は未実施である",
+      "evidence_role": "current_plan_identity",
+      "id": "matsuyama-current-plan-period",
+      "review_note": "総合計画の構成（基本構想・基本計画・実施計画）と各層の期間を別period semanticsとして保持した。レビュー済みレコード。",
+      "source_url": "https://www.city.matsuyama.ehime.jp/shisei/keikaku/sogokeikaku/7jisogokeikaku.html",
+      "statement": "松山市の現行の最上位計画は第7次松山市総合計画であり、基本構想（2025年度から2034年度までの10年）、基本計画（前期2025年度～2029年度・後期2030年度～2034年度）、実施計画（3年、ローリング方式で毎年見直し）の3層で構成される。将来都市像は「人、まち、仕事がつながる SETOUCHIの交流拠点まつやま」、まちづくりの理念は「一人ひとりの幸せが、実現するまちへ ～笑顔を大切に、「つながる力」で挑戦～」である。松山市まち・ひと・しごと創生総合戦略は第7次総合計画に統合されている。Phase 14インベントリのperiod_statusはverified_fixed_period（2025年度～2034年度）である。なお、基本構想・前期基本計画の最終本編そのものの直接確認は未実施であり、本レコードの枠組みは基本構想（素案）、前期基本計画（案）の概要、確定した令和8年度予算の概要、およびPhase 14インベントリによる相互確認に基づく。",
+      "title": "第7次松山市総合計画の構成（基本構想2025年度～2034年度・基本計画 前期2025年度～2029年度／後期2030年度～2034年度・実施計画3年ローリング方式）",
+      "value": "第7次松山市総合計画は基本構想（2025年度～2034年度）と基本計画（前期2025年度～2029年度・後期2030年度～2034年度）、実施計画（3年・ローリング方式、Phase 14インベントリでは2025年度～2027年度）で構成／FY2024決算は前計画である第6次松山市総合計画の期間内（最終年度）の決算"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "将来都市像・理念・3つの方向性・11の政策分野は、前期基本計画（案）の概要と、確定文書である令和8年度予算の概要の双方で、名称と順序が同一であることを確認した",
+      "evidence_role": "policy_structure",
+      "id": "matsuyama-current-policy-structure",
+      "review_note": "基本構想の将来都市像と政策分野レベルの体系を保持した。施策の全件列挙は行わない。レビュー済みレコード。",
+      "source_url": "https://www.city.matsuyama.ehime.jp/shisei/keikaku/sogokeikaku/7jisogokeikaku.html",
+      "statement": "基本構想は将来都市像として「人、まち、仕事がつながる SETOUCHIの交流拠点まつやま」を掲げ、まちづくりの理念「一人ひとりの幸せが、実現するまちへ ～笑顔を大切に、「つながる力」で挑戦～」のもと、まちづくりの方向性として「人」がつながる、「まち」がつながる、「仕事」がつながるの3つを設定する。その下に11の政策分野（こどもを輝く未来へつなぐ／人と人の支えあいをつなぐ／健康をつなぐ／自分らしさと誇りをつなぐ／ワクワクを全国・世界へつなぐ／人と仕事と暮らしをつなぐ／まちとまちをつなぐ／にぎわいと住みやすいまちをつなぐ／豊かな自然と暮らしをつなぐ／安全と安心をつなぐ／つなぐを支える）が置かれる。分野名と順序は、前期基本計画（案）の概要と確定文書である令和8年度予算の概要の双方で同一である。本候補は政策分野レベルの体系のみを保持し、各分野の下の施策（前期基本計画（案）の概要では32施策）の全件列挙は、案段階の資料に基づくため行わない。",
+      "title": "将来都市像「人、まち、仕事がつながる SETOUCHIの交流拠点まつやま」と3つの方向性・11の政策分野の体系"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "進行管理の枠組み（PDCAサイクルによる進行管理、外部評価、市民意識調査）はPhase 14出典目録に市の計画ページの内容として記録されている",
+      "evidence_role": "progress_governance",
+      "id": "matsuyama-progress-governance-framework",
+      "review_note": "進行管理の公式routeとしてPDCAサイクル・外部評価・市民意識調査の枠組みを保持した。評価結果の個別内容の展開は行わない。レビュー済みレコード。",
+      "source_url": "https://www.city.matsuyama.ehime.jp/shisei/keikaku/sogokeikaku/7jisogokeikaku.html",
+      "statement": "第7次松山市総合計画の進行管理は、PDCAサイクルによる進行管理を行い、外部評価や市民意識調査によって進捗を把握する枠組みである。実施計画は3年計画をローリング方式で毎年見直す。市民意識調査は市民の実感・現状を把握する主観指標であり、客観成果や独自の政策達成度へ変換しない。自治体の進行管理の仕組みをJichi Insight独自の達成判定へ変換しない。",
+      "title": "計画の進行管理（PDCAサイクル、外部評価、市民意識調査による進行管理）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "前計画の名称・将来都市像・期間の延長と令和6年度末までの対象期間は、市の第6次松山市総合計画のページおよび第7次計画の策定資料で確認した。現行計画の期間はPhase 14出典目録で確認した",
+      "evidence_role": "plan_transition",
+      "id": "matsuyama-plan-transition",
+      "review_note": "計画の世代間の移行を分離記録した。レビュー済みレコード。",
+      "source_url": "https://www.city.matsuyama.ehime.jp/shisei/keikaku/sogokeikaku/7jisogokeikaku.html",
+      "statement": "松山市の総合計画は、第6次松山市総合計画（将来都市像「人が集い 笑顔広がる 幸せ実感都市まつやま」、6つの基本目標。計画期間の延長を経て令和6年度末までを対象）から、第7次松山市総合計画（2025年度～2034年度）へ移行した。FY2024決算は第6次計画の期間内（最終年度）の決算であり、第7次計画期間の決算ではない。前計画の政策体系・事業・成果の全件列挙は本候補では行わない。第7次計画の次期計画の策定状況は、本候補の調査時点では公式資料で確認できていない。",
+      "title": "第6次松山市総合計画から第7次松山市総合計画への移行"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "決算総額は決算審査意見書と財政事情の公表、計画の開始時期はPhase 14出典目録と第7次計画の策定資料で確認した。総額レベルの対応付けの不在は、決算・計画の公表範囲で確認した",
+      "evidence_role": "annual_progress",
+      "fiscal_year": 2024,
+      "id": "matsuyama-fy2024-settlement-linkage",
+      "review_note": "FY2024決算は前計画である第6次計画期間の決算で版が現行計画と異なるため接続しないことを明記した。レビュー済みレコード。",
+      "source_url": "https://www.city.matsuyama.ehime.jp/shisei/kansa/kakukaikeikessan.html",
+      "statement": "FY2024決算は第6次松山市総合計画の期間内（最終年度）の決算であり、第7次松山市総合計画（2025年度開始）とは計画の版が異なる。決算総額は一次資料で確認済みであるが、決算総額と第7次計画の政策分野体系との総額レベルの対応付けは公式資料にないため、接続はnot_assessableとする。なお認定第1号は令和7年12月定例会で認定された（議決日2025年11月28日）が、接続判定は認定の成否に依存しない。",
+      "title": "令和6年度決算と第7次松山市総合計画の政策体系の接続"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-17"
+}
