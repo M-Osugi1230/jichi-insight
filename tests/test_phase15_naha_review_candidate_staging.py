@@ -106,20 +106,43 @@ def test_naha_candidate_records_fy2024_settlement_at_published_precision() -> No
     assert revenue["value_status"] == "available"
     assert expenditure["value_status"] == "available"
     assert "185,140,399,109円" in revenue["note"]
-    assert "未確認" in revenue["note"]
+    assert "認定第1号" in revenue["note"]
+    assert "2025年10月8日" in revenue["note"]
+    assert "認定された" in revenue["note"]
+    assert "実ブラウザによる補完調査" in revenue["note"]
     assert "178,147,629,486円" in expenditure["note"]
     assert "6,992,769,623円" in expenditure["note"]
     assert "5,963,603,975円" in expenditure["note"]
 
 
-def test_naha_candidate_does_not_claim_an_unverified_certification() -> None:
+def test_naha_candidate_certification_outcome_confirmed() -> None:
     text = candidate_text()
-    assert "認定の成否" in text
-    assert "未確認" in text
-    assert "認定された" not in text
+
+    # The FY2024 settlement was submitted to the September 2025 session
+    # as 認定第1号; a supplementary live-browser investigation then
+    # confirmed from the council's official September 2025 session page
+    # that it was certified on 2025-10-08 within that session (it was
+    # not carried over to the November session), so the candidate
+    # records that certification and its browser-supplement basis,
+    # while never recording a non-certification outcome.
+    assert "認定第1号" in text
+    assert "2025年10月8日" in text
+    assert "認定された" in text
+    assert "実ブラウザによる補完調査" in text
     assert "不認定" not in text
     assert "修正可決" not in text
     assert "修正議決" not in text
+    # The formerly open question about the certification outcome is resolved.
+    assert "認定の成否と議決日の特定" not in text
+    packets = {
+        packet["id"]: packet
+        for packet in candidate()["candidate_package"]["evidence_packets"]
+    }
+    revenue_packet = packets["evidence-naha-city-2024-total-revenue"]
+    assert revenue_packet["open_questions"] == [
+        "決算事項別明細書の款別合計との最終突合。",
+        "監査委員の決算審査意見書の内容精査。",
+    ]
 
 
 def test_naha_candidate_does_not_link_settlement_to_plan_by_total() -> None:
@@ -128,6 +151,7 @@ def test_naha_candidate_does_not_link_settlement_to_plan_by_total() -> None:
     assert linkage["fiscal_year"] == 2024
     assert "第5次那覇市総合計画" in linkage["statement"]
     assert "not_assessable" in linkage["statement"]
+    assert "認定されている" in linkage["statement"]
 
 
 def test_naha_candidate_keeps_granular_and_reconciliation_depth_deferred() -> None:
