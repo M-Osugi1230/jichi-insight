@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-16",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "himeji-city-home",
+      "municipality_key": "himeji-city",
+      "organization": "姫路市",
+      "category": "municipality_profile",
+      "title": "姫路市公式サイト",
+      "url": "https://www.city.himeji.lg.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "姫路市の公式自治体サイト。"
+    },
+    {
+      "id": "himeji-budget-2026",
+      "municipality_key": "himeji-city",
+      "organization": "姫路市",
+      "category": "budget",
+      "title": "令和8年度 予算の概要",
+      "url": "https://www.city.himeji.lg.jp/shisei/0000032701.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算261,800,000千円（千円精度）のEvidence。議案第1号『令和8年度姫路市一般会計予算』として令和8年第1回定例会で可決された成立予算（市公式『令和8年第1回定例会 議案及び審議結果』の結果欄の文言は「可決」であり、その文言のまま記録する）。金額は市公式『令和8年度 予算の概要』ページと一般会計予算総括表（歳出）で確認した千円単位の公表値のまま記録し、円単位を合成しない。議決日2026年3月25日は会期（2026年2月17日～3月25日）と最終日の表決から特定したものであり、会議録による最終確認は未実施。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "himeji-settlement-2024",
+      "municipality_key": "himeji-city",
+      "organization": "姫路市",
+      "category": "settlement",
+      "title": "令和6年度決算の概要",
+      "url": "https://www.city.himeji.lg.jp/shisei/0000031944.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入254,438,371千円・歳出245,476,363千円を含む公式決算資料（市公式『令和6年度決算の概要』の一般会計の節で確認）。実質収支は同資料により5,797,686千円（千円精度のまま記録し、円単位を合成しない）。決算の認定議案である議案第90号は令和7年第3回定例会で認定された（議決日2025年10月3日は議員別賛否一覧PDFの発行日付と会期最終日の表決から特定したものであり、会議録による最終確認は未実施）。決算書（歳入歳出決算事項別明細書）の款別合計との突合と監査委員の決算審査意見書の内容（個別の指摘事項等）の精査は未実施。"
+    }
+  ]
+}
