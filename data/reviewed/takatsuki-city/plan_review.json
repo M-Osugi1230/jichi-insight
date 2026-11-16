@@ -1,0 +1,62 @@
+{
+  "id": "phase15-takatsuki-plan-review",
+  "name_ja": "高槻市",
+  "next_action": "Promote the individual major projects under the 29 measures and 139 measure directions (as listed in the implementation plan) and the per-measure indicator values only when official sources with stable record-level locators have been reviewed; complete the final cross-check against the budget book and the settlement book (事項別明細書) at section level; confirm the content of the audit commissioners' settlement review opinion; record the Fifth Takatsuki City Comprehensive Plan's (Takatsuki City Comprehensive Strategy Plan) framework itself and the next comprehensive plan after the Sixth Plan period (ending FY2030) only as separate versions, and never retroactively connect the current plan's measures to the previous plan period's results. Keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "official_code": "272078",
+  "quality_boundary": "This package reviews the current plan identity and period (the Sixth Takatsuki City Comprehensive Plan, in a two-layer basic-concept / basic-plan structure; the basic concept starts in FY2021 with target year FY2030, presenting eight future city images and the town-building motto 『輝く未来を創造する 関西の中央都市 高槻』, and the basic plan sets eight fields corresponding to those images, holding 29 measures and 139 measure directions, all enumerated; the implementation plan is prepared separately as a three-year rolling plan renewed every year, the current edition covering FY2026-FY2028), the progress-governance layer (progress management built around the implementation plan, under which each major project undergoes a retrospective evaluation (実績の振り返り（評価）) before the following years' plan is set — kept as the municipality's own progress-management framework), the enacted FY2026 initial budget at the published sen-yen (thousand-yen) precision (bill 議案第32号, passed as proposed on 2026-03-23 per the council's official voting-results document, with both the wording and the date confirmed directly in that document), and the FY2024 settlement at yen precision as published, without collapsing proposed, enacted, supplementary, or settlement states. The FY2024 settlement certification bill (bill 認定第1号) was submitted to the September 2025 regular session, was placed under continued review on 2025-09-08, and was certified on 2025-12-03 at the December 2025 regular session: that outcome is recorded exactly as published. The real balance of 3,523,157 thousand yen is kept at sen-yen precision as published in the real-balance statement (the fund transfer under Local Autonomy Act Article 233-2 is zero). FY2024 is a settlement inside the Sixth Plan period, so the plan version is the same as the current plan, but no official total-level mapping from settlement totals to the plan's eight fields or 29 measures exists, so the linkage stays not_assessable. The Fifth-to-Sixth plan succession is kept only as a version chronology record, and the status of the next comprehensive plan is left unconfirmed.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "高槻市公式Webサイト『第6次高槻市総合計画』ページ（現行計画の公式入口。Phase 14インベントリで確認）の計画の構成・策定趣旨の説明、および同ページ掲載の公式『第6次高槻市総合計画』本編『基本構想、まちづくりの合言葉』（基本構想の始期・目標年次・将来の都市像・まちづくりの合言葉）で直接確認",
+      "evidence_role": "current_plan_identity",
+      "id": "takatsuki-current-plan-period",
+      "review_note": "基本構想・基本計画の2層構成と、別途策定される3年ローリングの実施計画を別period semanticsとして保持した。レビュー済みレコード。",
+      "source_url": "https://www.city.takatsuki.osaka.jp/site/keikaku/1228.html",
+      "statement": "高槻市の総合計画は第6次高槻市総合計画であり、基本構想及び基本計画により構成する。基本構想では、まちづくりの目標となる将来の都市像を示し、基本計画では、基本構想を踏まえたまちづくりの方向性を示す。基本構想は、始期を令和3（2021）年度、目標年次を令和12（2030）年度として、8つの将来の都市像を掲げる。まちづくりの合言葉は『輝く未来を創造する 関西の中央都市 高槻』である。計画期間中の行財政運営に当たっては、別途策定する実施計画（計画期間3年間、毎年度策定）により、基本計画で示された方向性に沿った取組の推進を図る。Phase 14インベントリの記録（第6次高槻市総合計画・2021年度～2030年度・verified_fixed_period）とも一致する。",
+      "title": "第6次高槻市総合計画の構成と基本構想・基本計画の計画期間",
+      "value": "2021年度～2030年度"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "公式『第6次高槻市総合計画』本編『基本計画 基本計画の施策体系一覧、基本計画の見方』（施策体系一覧表）で全件直接確認し、分野別の施策数・施策の方向数の合計で検算した",
+      "evidence_role": "policy_structure",
+      "id": "takatsuki-current-policy-structure",
+      "review_note": "公式の計画本編で施策体系を全件確認した。レビュー済みレコード。",
+      "source_url": "https://www.city.takatsuki.osaka.jp/site/keikaku/1228.html",
+      "statement": "基本計画の施策体系は、基本構想に掲げる8つの将来の都市像に対応する8分野のもと、全29施策・全139施策の方向で構成する。分野1『都市機能が充実し、快適に暮らせるまち』は5施策21方向、分野2『安全で安心して暮らせるまち』は3施策21方向、分野3『子育て・教育の環境が整ったまち』は4施策20方向、分野4『健やかに暮らし、ともに支え合うまち』は4施策21方向、分野5『魅力にあふれ、にぎわいと活力のあるまち』は4施策23方向、分野6『良好な環境が形成されるまち』は3施策11方向、分野7『地域に元気があって市民生活が充実したまち』は4施策19方向、分野8『効果的・効率的な行財政運営が行われているまち』は2施策3方向を束ねる（施策数5+3+4+4+4+3+4+2の合計29、施策の方向数21+21+20+21+23+11+19+3の合計139で検算一致）。29施策と139施策の方向の全件はpolicy_structureに列挙する。",
+      "title": "基本計画の8分野・全29施策・全139施策の方向"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "高槻市公式Webサイト『第6次高槻市総合計画 実施計画』ページ（実施計画の公式入口。Phase 14インベントリで確認）の実施計画の枠組みの説明および現行版（令和8年度～令和10年度）の掲載で確認",
+      "evidence_role": "progress_governance",
+      "id": "takatsuki-progress-governance-framework",
+      "review_note": "進行管理の枠組み（実施計画の毎年度策定と主要事業の実績の振り返り（評価））を公式資料で直接確認した。評価の個別結果そのものは本パッケージでは扱わない。レビュー済みレコード。",
+      "source_url": "https://www.city.takatsuki.osaka.jp/site/keikaku/1229.html",
+      "statement": "第6次高槻市総合計画の進行管理は、実施計画を軸に行う。実施計画は、基本計画で示された方向性に沿って具体的な取組の推進を図るため策定するもので、基本構想に掲げる将来の都市像の実現に向け、取り組むべき主要な事業（主要事業）を分野ごとに掲載する。実施計画の計画期間は3年間とし、主要事業の進捗や社会環境の変化を踏まえるため、毎年度、策定する。その際、各主要事業について、実績の振り返り（評価）を行った上で、次年度以降の計画を行うこととし、効果的・効率的な進行管理を行う。現行の実施計画は令和8年度から令和10年度まで（2026年度～2028年度）の版である。この進行管理は自治体による進行管理の枠組みであり、Jichi Insight独自の達成判定へ変換しない。",
+      "title": "実施計画（3年ローリング）における主要事業の実績の振り返り（評価）による進行管理"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "高槻市公式Webサイト『第6次高槻市総合計画』ページの策定趣旨（第5次高槻市総合計画（高槻市総合戦略プラン）を平成22（2010）年度に策定し、令和2（2020）年度までを計画期間としてまちづくりを進めてきた記載）で確認",
+      "evidence_role": "plan_transition",
+      "id": "takatsuki-plan-transition",
+      "review_note": "前計画から現行計画への移行を計画のversionの履歴として記録した。レビュー済みレコード。",
+      "source_url": "https://www.city.takatsuki.osaka.jp/site/keikaku/1228.html",
+      "statement": "第6次高槻市総合計画は、平成22（2010）年度に策定され令和2（2020）年度までを計画期間とした第5次高槻市総合計画（高槻市総合戦略プラン）の後継として策定された。各計画はversionを分けて保持し、現行計画の施策を前計画期間の実績へ遡及接続しない。第6次総合計画の計画期間は2030年度までであり、次期総合計画の策定状況は本候補では確認していない（確認できた範囲を超えて断定しない）。",
+      "title": "第5次高槻市総合計画（高槻市総合戦略プラン）から第6次高槻市総合計画への移行"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "FY2024決算の公式入口はPhase 14インベントリの決算資料（決算の概況ページ・各会計決算状況一覧表・決算書）。決算総額と第6次総合計画の8分野・29施策との対応付けは公式資料の総額レベルでは示されていない",
+      "evidence_role": "annual_progress",
+      "id": "takatsuki-fy2024-settlement-linkage",
+      "review_note": "総額レベルの対応付けがないため、接続を推測で記録しない明示的な未判定レコード。決算と分野・施策の対応付けは人間レビュー工程の作業。",
+      "source_url": "https://www.city.takatsuki.osaka.jp/soshiki/7/67945.html",
+      "statement": "FY2024決算値と第6次高槻市総合計画の8分野・29施策との接続は未判定（not_assessable）。FY2024は第6次高槻市総合計画（2021年度～2030年度）の計画期間内の決算であり計画versionは同一であるが、決算総額は会計別の集計値であり、分野・施策との総額レベルの対応付けは公式資料に示されていない。実施計画は分野ごとに主要事業を掲載し進行管理（実績の振り返り（評価））を行うが、FY2024決算総額との対応付けは行われていない。FY2024決算の精密値そのものは公式決算書で確認済みであるが、決算と分野・施策の対応付けは人間レビュー工程の作業とする。",
+      "title": "令和6年度決算と第6次高槻市総合計画の8分野・29施策の接続"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-16"
+}

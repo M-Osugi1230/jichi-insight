@@ -1,0 +1,46 @@
+{
+  "id": "takatsuki-phase15-sources",
+  "name_ja": "高槻市",
+  "official_code": "272078",
+  "phase": 15,
+  "quality_boundary": "Current plan identity kept as published (the Sixth Takatsuki City Comprehensive Plan in a two-layer basic-concept / basic-plan structure; the basic concept starts in FY2021 with target year FY2030, presenting eight future city images under the motto 『輝く未来を創造する 関西の中央都市 高槻』, and the basic plan sets eight fields holding 29 measures and 139 measure directions, all enumerated; the Fifth Plan (Comprehensive Strategy Plan) is kept only as a separate version), progress governance (progress management built around the separately prepared three-year rolling implementation plan, renewed every year, under which each major project undergoes a retrospective evaluation), budget enactment confirmed on the council's official voting-results document (bill 議案第32号, passed as proposed on 2026-03-23, with the wording and the date confirmed directly in that document) with the amount kept at the published sen-yen precision and never expanded into synthetic yen, and settlement totals kept at the published yen precision from the official settlement book (the settlement certification bill 認定第1号 was certified on 2025-12-03 at the December 2025 regular session after continued review; the real balance of 3,523,157 thousand yen is kept at sen-yen precision as published in the real-balance statement) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "reviewed_at": "2026-11-16",
+  "sources": [
+    {
+      "evidence_location": "高槻市公式Webサイト『第6次高槻市総合計画』ページは現行計画の公式入口（Phase 14インベントリで確認）。同ページ掲載の公式『第6次高槻市総合計画』本編（基本構想・まちづくりの合言葉、基本計画の施策体系一覧・分野別基本計画、資料編）へのリンクを含む",
+      "evidence_role": "comprehensive_plan",
+      "format": "html",
+      "id": "takatsuki-sixth-plan",
+      "official_url": "https://www.city.takatsuki.osaka.jp/site/keikaku/1228.html",
+      "title": "第6次高槻市総合計画",
+      "use_boundary": "現行計画は第6次高槻市総合計画（基本構想・基本計画、2021年度～2030年度）として保持し、第5次高槻市総合計画（高槻市総合戦略プラン）のversionをcurrentへ上書きしない"
+    },
+    {
+      "evidence_location": "高槻市公式Webサイト『第6次高槻市総合計画 実施計画』ページは実施計画の公式入口（Phase 14インベントリで確認）。実施計画の枠組み（計画期間3年間・毎年度策定・主要事業の実績の振り返り（評価）による進行管理）の説明と、現行の令和8年度～令和10年度版を含む各年度版へのリンクを含む",
+      "evidence_role": "implementation_plan_and_progress",
+      "format": "html",
+      "id": "takatsuki-implementation-2026-2028",
+      "official_url": "https://www.city.takatsuki.osaka.jp/site/keikaku/1229.html",
+      "title": "第6次高槻市総合計画実施計画",
+      "use_boundary": "3年ローリング実施計画（現行は2026年度～2028年度版）は年度版を分離して保持し、主要事業の実績の振り返り（評価）をJichi Insight独自の達成率へ変換しない。また、実施計画の主要事業は計画・進行管理の対象であり、決算総額と同一視しない"
+    },
+    {
+      "evidence_location": "高槻市公式Webサイト『予算書』ページはFY2026当初予算を含む予算書の公式入口（Phase 14インベントリで確認）。同ページ掲載の公式『令和8年度当初予算書（一般会計）』（議案第32号）へのリンクを含む",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "takatsuki-budget-2026",
+      "official_url": "https://www.city.takatsuki.osaka.jp/soshiki/7/67908.html",
+      "title": "予算",
+      "use_boundary": "FY2026当初予算は成立予算（議案第32号・令和8年3月23日原案可決）として保持し、補正予算・決算と別stateで扱う"
+    },
+    {
+      "evidence_location": "高槻市公式Webサイト『決算の概況』ページはFY2024決算の公式入口（Phase 14インベントリで確認）。同ページ掲載の公式『令和6年度各会計決算状況一覧表』（単位：千円）へのリンクを含む。FY2024の歳入・歳出の円単位総額は高槻市公式『決算書』ページ掲載の公式『令和6年度歳入歳出決算書』（高槻市一般会計歳入歳出決算書）で確認し、実質収支は同『決算書』ページ掲載の公式『歳入歳出決算附属書類及び運用基金に関する調書』の実質収支に関する調書（単位：千円）で確認した",
+      "evidence_role": "settlement",
+      "format": "html",
+      "id": "takatsuki-settlement-2024",
+      "official_url": "https://www.city.takatsuki.osaka.jp/soshiki/7/67945.html",
+      "title": "決算の概況",
+      "use_boundary": "FY2024決算は第6次高槻市総合計画の計画期間内（2021年度～2030年度）の決算として保持し、決算総額を計画の分野・施策の実績へ流用しない。認定議案（認定第1号）は令和7年12月3日に認定されたものとして保持する"
+    }
+  ]
+}

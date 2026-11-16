@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-16",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "takatsuki-city-home",
+      "municipality_key": "takatsuki-city",
+      "organization": "高槻市",
+      "category": "municipality_profile",
+      "title": "高槻市公式サイト",
+      "url": "https://www.city.takatsuki.osaka.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "高槻市の公式自治体サイト。"
+    },
+    {
+      "id": "takatsuki-budget-2026",
+      "municipality_key": "takatsuki-city",
+      "organization": "高槻市",
+      "category": "budget",
+      "title": "令和8年度予算",
+      "url": "https://www.city.takatsuki.osaka.jp/soshiki/7/67908.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算151,189,961千円のEvidence。議案第32号『令和8年度高槻市一般会計予算』として令和8年2月25日に提出され、令和8年3月23日に原案可決された成立予算（高槻市議会公式『令和8年第1回定例会（3月定例会）の議決結果』で確認）。金額は千円単位の公表値のまま記録し、円単位を合成しない。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "takatsuki-settlement-2024",
+      "municipality_key": "takatsuki-city",
+      "organization": "高槻市",
+      "category": "settlement",
+      "title": "令和6年度決算",
+      "url": "https://www.city.takatsuki.osaka.jp/soshiki/7/67945.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入147,928,131,915円・歳出142,805,684,915円を円単位で含む公式決算資料（令和6年度高槻市一般会計歳入歳出決算書）。実質収支額は決算附属書類の実質収支に関する調書により3,523,157千円（同調書は千円単位の公表のため千円精度のまま記録）。決算の認定議案である認定第1号は令和7年第5回定例会（12月定例会）で令和7年12月3日に認定された。決算書（歳入歳出決算事項別明細書）の款別合計との突合と監査委員の決算審査意見書の内容確認は未実施。"
+    }
+  ]
+}
