@@ -98,6 +98,14 @@ def test_checklist_next_target_matches_canonical_queue():
     """If the checklist names the next review target, it must be the queue's."""
     queue = _queue()
     next_code = queue["summary"]["next_official_code"]
+    if next_code is None:
+        # The queue is complete: there is no next review target to name.
+        assert queue["summary"]["pending_record_review_count"] == 0
+        assert all(
+            entry["status"] == "reviewed_complete"
+            for entry in queue["execution_queue"]
+        )
+        return
     next_entries = [e for e in queue["execution_queue"] if e["official_code"] == next_code]
     assert len(next_entries) == 1, "next_official_code must identify exactly one queue entry"
     next_name = next_entries[0]["name_ja"]

@@ -896,13 +896,25 @@ Declared v1 package:
 
 Deferred depth includes the full enumeration of the basic measures and unit measures under the six basic goals and the correspondence with the focus projects' individual items, cross-checks against the budget and settlement itemized statements （事項別明細書） at section level, the direct cross-check of the real balance against the value in the real-balance schedule itself, the version management of the latter basic plan after its adoption, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Sixty-seventh completion — Naha
+
+那覇市を67番目の`reviewed_complete`へ昇格しました（2026-11-17、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。これによりPhase 15のキューは67/67自治体すべてが`reviewed_complete`となり、完了した。
+
+Declared v1 package:
+
+- current plan: 第5次那覇市総合計画 (the Fifth Naha City Comprehensive Plan) — the city's current top-level plan, in three layers: the basic concept （基本構想）, the basic plan （基本計画） and the implementation plan （実施計画）. The basic plan covers FY2018-FY2027 (ten years); a partial revision following the interim review was issued in January 2024. The plan sets out the future image 『なはで暮らし、働き、育てよう！笑顔広がる元気なまちNAHA みんなでつなごう市民力』 and the five city images （目指すまちの姿）: 多様なつながりで共に助け合い、認め合う安全安心に暮らせるまちNAHA／互いの幸せを地域と福祉で支え合い誰もが輝くまちNAHA／次世代の未来を拓き、豊かな学びと文化が薫る誇りあるまちNAHA／ヒト・モノ・コトが集い、育ち、ひろがる万国津梁のまちNAHA／自然環境と都市機能が調和した住みつづけたいまちNAHA. The structure is kept at the city-image level; the full enumeration of the policies and measures under the five images is not performed and stays deferred depth. Progress is managed through the municipality's own progress management (the three-year rolling implementation plan — currently the FY2026 implementation plan (FY2026-FY2028), whose rolling structure extends one year beyond the basic plan's final year FY2027 and is kept as published — and the publication of indicator progress). The period status stays transition_or_unresolved as recorded in the Phase 14 inventory, because formulation of the Sixth Naha City Comprehensive Plan has begun; the Sixth plan is kept separate as a plan transition and its content is never read forward into the current plan
+- FY2026 general-account initial budget: 185,220,000 thousand yen (enacted). The result recorded for bill No. 22 （議案第22号） 『令和8年度那覇市一般会計予算』 in the council's official 『令和8年（2026年）2月定例会 上程案件処理結果』 is 原案可決（賛成多数） (adopted as proposed, by majority) on 2026-03-17, confirmed directly, and that wording is kept verbatim. A rearrangement motion （組み替え動議） against bill No. 22 was rejected on the same day and the original proposal was adopted, so the adoption is not an amended one. The amount was confirmed in the finance division's 『令和8年度 予算総括表（企業会計を含む）』 (in thousand yen) and agrees with the amount stated in the text of the finance division's budget page. The amount is kept at the published sen-yen (thousand-yen) precision and finer amounts are not synthesized
+- FY2024 general-account settlement at the published yen precision in the finance division's 『令和6年度決算総括表』: revenue 185,140,399,109 yen / expenditure 178,147,629,486 yen (their difference, the formal balance of 6,992,769,623 yen, checks out arithmetically against the printed balance; the amount to be carried over to the following fiscal year is 1,029,165,648 yen and the real balance is 5,963,603,975 yen, both kept at the published yen precision; the direct cross-check of the real balance against the value in the real-balance schedule itself has not been performed). The settlement certification, certification bill No. 1 （認定第1号）, was certified on 2025-10-08 within the Reiwa 7 September regular session, confirmed in the council's official session page's table of submitted items through a supplementary live-browser investigation (it was not carried over to the November session); it was not rejected. Ordinary-account aggregate figures (such as the prefecture's settlement-status materials) are not used, because their aggregation scope differs from the general account. FY2024 falls within the current plan's basic plan period (FY2018-FY2027), but no official total-level mapping from settlement totals to the plan's city-image and policy structure exists, so the totals are not linked to the plan's structure and the linkage stays not_assessable
+
+Deferred depth includes the full enumeration of the policies and measures under the five city images, cross-checks against the budget and settlement itemized statements （事項別明細書） at section level, the direct cross-check of the real balance against the value in the real-balance schedule itself, the detailed reading of the audit commissioners' settlement review opinion, the version management of the Sixth plan after its adoption, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 66 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市、姫路市、尼崎市、明石市、西宮市、奈良市、和歌山市、鳥取市、松江市、倉敷市、呉市、福山市、下関市、山口市、徳島市、高松市、松山市、高知市、久留米市、佐賀市、長崎市、佐世保市、大分市、宮崎市、鹿児島市
+- Reviewed complete: 67 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市、姫路市、尼崎市、明石市、西宮市、奈良市、和歌山市、鳥取市、松江市、倉敷市、呉市、福山市、下関市、山口市、徳島市、高松市、松山市、高知市、久留米市、佐賀市、長崎市、佐世保市、大分市、宮崎市、鹿児島市、那覇市
 - Review in progress: 0
-- Pending record review: 1
+- Pending record review: 0
 - Blocked source inventory: 0
-- Next official code: 472018
+- Next official code: null
 
 ## Definition of Phase 15 completion
 

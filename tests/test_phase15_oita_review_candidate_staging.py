@@ -256,9 +256,9 @@ def test_oita_candidate_progress_review_stays_staging() -> None:
 def test_oita_promotion_is_reflected_in_review_queue() -> None:
     queue = json.loads(QUEUE_PATH.read_text(encoding="utf-8"))
 
-    assert queue["summary"]["reviewed_complete_count"] == 66
-    assert queue["summary"]["pending_record_review_count"] == 1
-    assert queue["summary"]["next_official_code"] == "472018"
+    assert queue["summary"]["reviewed_complete_count"] == 67
+    assert queue["summary"]["pending_record_review_count"] == 0
+    assert queue["summary"]["next_official_code"] is None
     entry = next(
         item for item in queue["execution_queue"] if item["official_code"] == "442011"
     )

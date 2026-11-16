@@ -25,31 +25,34 @@ def plan_record(record_id: str) -> dict:
     return next(record for record in package["plan_review"]["records"] if record["id"] == record_id)
 
 
-def test_naha_candidate_is_prepared_but_not_reviewed_or_published() -> None:
+def test_naha_candidate_is_prepared_with_delegated_review_approved() -> None:
     data = candidate()
     assert data["candidate_id"] == "naha-phase15-review-candidate"
     assert data["official_code"] == "472018"
     assert data["name_ja"] == "那覇市"
     assert data["package_state"] == "prepared"
     assert data["status"] == "review_candidate"
-    assert data["human_review"]["status"] == "pending"
-    assert data["human_review"]["reviewed_at"] is None
-    assert data["human_review"]["reviewer_note"] is None
+    assert data["human_review"]["status"] == "approved"
+    assert data["human_review"]["reviewed_at"] == "2026-11-17"
+    note = data["human_review"]["reviewer_note"]
+    assert "委任" in note
+    assert "レビューはあなたがやってください" in note
+    assert "所有者本人が一次資料を直接レビューしたものではない" in note
     assert data["publication"]["eligible"] is False
 
 
-def test_naha_candidate_queue_remains_pending_at_sixty_six_reviewed() -> None:
+def test_naha_promotion_is_reflected_in_review_queue() -> None:
     queue = json.loads(QUEUE.read_text(encoding="utf-8"))
     summary = queue["summary"]
     assert summary["target_count"] == 67
-    assert summary["reviewed_complete_count"] == 66
-    assert summary["pending_record_review_count"] == 1
-    assert summary["next_official_code"] == "472018"
+    assert summary["reviewed_complete_count"] == 67
+    assert summary["pending_record_review_count"] == 0
+    assert summary["next_official_code"] is None
     entry = next(item for item in queue["execution_queue"] if item["official_code"] == "472018")
     assert entry["sequence"] == 67
     assert entry["name_ja"] == "那覇市"
-    assert entry["status"] == "pending_record_review"
-    assert entry["completion_path"] is None
+    assert entry["status"] == "reviewed_complete"
+    assert entry["completion_path"] == "data/catalog/naha_phase15_completion.json"
 
 
 def test_naha_candidate_sources_match_phase14_inventory() -> None:

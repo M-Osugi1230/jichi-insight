@@ -1,0 +1,49 @@
+{
+  "records": [
+    {
+      "availability": "published",
+      "category": "municipality_profile",
+      "confidence": "high",
+      "id": "naha-city-home",
+      "indexed_at": "2026-11-17",
+      "municipality_key": "naha-city",
+      "notes": "那覇市の公式自治体サイト。",
+      "organization": "那覇市",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "那覇市公式サイト",
+      "url": "https://www.city.naha.okinawa.jp/"
+    },
+    {
+      "availability": "published",
+      "category": "budget",
+      "confidence": "high",
+      "id": "naha-budget-2026",
+      "indexed_at": "2026-11-17",
+      "municipality_key": "naha-city",
+      "notes": "一般会計当初予算185,220,000千円（千円精度）のEvidence。財政課の公式ページ『令和8年度（2026年度）予算』が公表する『令和8年度 予算総括表（企業会計を含む）』（単位：千円）で、一般会計の令和8年度予算額185,220,000千円（令和7年度185,397,000千円、差引△177,000千円）を直接確認し、同ページ本文の「1,852億2,000万円」とも一致する。議決結果は市議会公式『令和8年（2026年）2月定例会 上程案件処理結果』で、議案第22号の議決年月日（2026年3月17日）と結果欄の文言「原案可決（賛成多数）」を直接確認し、その文言のまま記録した。議案第22号に対する組み替え動議は同日に否決され、原案が可決されている。千円単位の公表値のまま記録し、円単位を合成しない。補正予算・執行・決算とは分離する。",
+      "organization": "那覇市",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "令和8年度（2026年度）予算",
+      "url": "https://www.city.naha.okinawa.jp/admin/nahashizaisei/1004386/1011083.html"
+    },
+    {
+      "availability": "published",
+      "category": "settlement",
+      "confidence": "high",
+      "id": "naha-settlement-2024",
+      "indexed_at": "2026-11-17",
+      "municipality_key": "naha-city",
+      "notes": "一般会計歳入185,140,399,109円・歳出178,147,629,486円（いずれも円単位）を含む公式決算資料。一般会計の決算額は、財政課『令和6年度決算総括表』（単位：円）で確認し、差引（形式収支）6,992,769,623円が同総括表の印字値と検算一致した。翌年度へ繰り越すべき財源1,029,165,648円・実質収支5,963,603,975円は同総括表に円単位で印字された公表値のまま記録する（実質収支に関する調書そのものの値との直接突合は未実施）。決算の認定は認定第1号『令和6年度那覇市一般会計歳入歳出決算』として、令和7年9月定例会の会期中の2025年10月8日に認定された（市議会公式の定例会ページの付議事件名表を実ブラウザによる補完調査で確認）。沖縄県の決算状況資料等の普通会計ベースの集計値は一般会計の値とは集計範囲が別のため使用していない。決算事項別明細書の款別合計との最終突合と監査委員の決算審査意見書の内容精査は未実施である。",
+      "organization": "那覇市",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "令和6年度（2024年度）決算",
+      "url": "https://www.city.naha.okinawa.jp/admin/nahashizaisei/1004409/1008734.html"
+    }
+  ],
+  "scope": "phase15-core-capital-review",
+  "updated_at": "2026-11-17",
+  "version": "0.1.0"
+}

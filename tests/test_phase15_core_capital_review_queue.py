@@ -25,7 +25,7 @@ def test_phase15_queue_validates_and_starts_from_phase14_completion():
     )
     assert list(validator.iter_errors(queue)) == []
     assert queue["phase"] == 15
-    assert queue["status"] == "in_progress"
+    assert queue["status"] == "complete"
     assert queue["source_phase"] == 14
     assert queue["source_completion_path"] == "data/catalog/phase14_completion.json"
     assert load(PHASE14_COMPLETION)["status"] == "complete"
@@ -76,16 +76,15 @@ def test_phase15_current_statuses_are_canonical():
     statuses = Counter(row["status"] for row in queue["execution_queue"])
 
     assert statuses == {
-        "reviewed_complete": 66,
-        "pending_record_review": 1,
+        "reviewed_complete": 67,
     }
     assert queue["summary"] == {
         "target_count": 67,
-        "reviewed_complete_count": 66,
+        "reviewed_complete_count": 67,
         "review_in_progress_count": 0,
-        "pending_record_review_count": 1,
+        "pending_record_review_count": 0,
         "blocked_source_inventory_count": 0,
-        "next_official_code": "472018",
+        "next_official_code": None,
     }
 
     completed = [
@@ -160,6 +159,7 @@ def test_phase15_current_statuses_are_canonical():
         "大分市",
         "宮崎市",
         "鹿児島市",
+        "那覇市",
     ]
     assert completed[0]["completion_path"] == "data/catalog/hakodate_phase15_completion.json"
     assert completed[1]["completion_path"] == "data/catalog/asahikawa_phase15_completion.json"
@@ -227,6 +227,7 @@ def test_phase15_current_statuses_are_canonical():
     assert completed[63]["completion_path"] == "data/catalog/oita_phase15_completion.json"
     assert completed[64]["completion_path"] == "data/catalog/miyazaki_phase15_completion.json"
     assert completed[65]["completion_path"] == "data/catalog/kagoshima_phase15_completion.json"
+    assert completed[66]["completion_path"] == "data/catalog/naha_phase15_completion.json"
 
     current = [
         row
@@ -240,11 +241,7 @@ def test_phase15_current_statuses_are_canonical():
         for row in queue["execution_queue"]
         if row["status"] == "pending_record_review"
     ]
-    assert pending[0]["name_ja"] == "那覇市"
-    assert pending[0]["official_code"] == "472018"
-    assert pending[0]["sequence"] == 67
-    assert pending[0]["wave"] == 8
-    assert pending[0]["completion_path"] is None
+    assert pending == []
 
 
 def test_phase15_all_source_inventories_exist_and_remain_unreviewed():

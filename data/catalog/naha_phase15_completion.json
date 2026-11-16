@@ -1,0 +1,61 @@
+{
+  "completed_at": "2026-11-17",
+  "completion_boundary": "那覇市のPhase 15 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味し、所有者（大杉邑大、単独運用体制）が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが那覇市公式サイトの一次資料で検証した結論に基づく（所有者本人が一次資料を直接レビューしたものではない）。那覇市の計画体系（第5次那覇市総合計画は、基本構想・基本計画・実施計画の3層で構成され、基本計画は2018年度〜2027年度の10年間である。将来像『なはで暮らし、働き、育てよう！笑顔広がる元気なまちNAHA みんなでつなごう市民力』と5つの目指すまちの姿を掲げ、2024年1月に中間検証による一部改訂が行われた。目指すまちの姿レベルの体系は保持したが、各姿配下の政策・施策の全件列挙は行わず、追加depthとして保持する。進行管理は、3年を計画期間とし毎年度ローリングする実施計画（現行は令和8年度実施計画（2026年度〜2028年度））と指標の進捗状況の公表による。各層の期間を別period semanticsとして保持し、period_statusはPhase 14インベントリどおりtransition_or_unresolvedを保持する。第6次那覇市総合計画は策定が開始された段階のため移行記録として分離して保持し、策定中の内容を現行計画へ先取りしない）、成立したFY2026一般会計当初予算（185,220,000千円。議案第22号『令和8年度那覇市一般会計予算』の議決結果は、市議会公式『令和8年（2026年）2月定例会 上程案件処理結果』で結果欄の文言が「原案可決（賛成多数）」であることを直接確認し、その文言のまま記録した。議案第22号に対する組み替え動議は同日に否決され、原案が可決されている。金額は財政課『令和8年度 予算総括表（企業会計を含む）』（単位：千円）に印字された一般会計の予算額で確認した。公表精度は千円単位のため、その精度（千円単位）のまま記録し、円単位を合成していない）、FY2024一般会計決算（歳入185,140,399,109円・歳出178,147,629,486円、差引（形式収支）6,992,769,623円が決算総括表の印字値と検算一致することを確認した）を一次資料で確認した。決算額は、財政課『令和6年度決算総括表』に円単位で印字された値のまま記録する。翌年度へ繰り越すべき財源1,029,165,648円・実質収支5,963,603,975円も同総括表の公表値のまま記録し、実質収支に関する調書そのものの値との直接突合は未実施である。決算の認定第1号は、令和7年9月定例会の会期中の2025年10月8日に認定されたことを市議会公式の定例会ページの付議事件名表で確認し（実ブラウザによる補完調査）、認定の事実をそのまま記録した。沖縄県の決算状況資料等の普通会計ベースの集計値は一般会計とは集計範囲が異なるため使用していない。FY2024は現行計画の期間内の決算であるが、決算総額と計画の目指すまちの姿・政策体系との総額レベルの対応付けは公式資料に示されていないため、接続はnot_assessableのまま保持する。予算・決算の事項別明細書の款別合計との最終突合、監査委員の決算審査意見書の内容精査、5つの目指すまちの姿配下の政策・施策の全件列挙、第6次計画の策定後の版管理は未実施であり、残存事項として保持する。",
+  "completion_depth": "declared_review_package_v1",
+  "deferred_depth": [
+    {
+      "boundary": "5つの目指すまちの姿配下の政策・施策の全件列挙（Phase 14の次アクションに言及のある政策・施策の件数を含む）と個別事業との対応付けは追加depthとし、計画本編での直接確認ができるまで昇格しない。目指すまちの姿レベルの体系自体は候補に保持するが、政策・施策単位の対応付けは行わない",
+      "id": "current-plan-granular-policy-and-indicator-linkage",
+      "status": "deferred_not_required_for_v1_completion"
+    },
+    {
+      "boundary": "FY2026当初予算の議決結果の文言（原案可決（賛成多数））と当初予算額185,220,000千円は一次資料で確認し候補に反映している。FY2024決算の歳入・歳出・形式収支・実質収支は決算総括表の円単位の印字値で確認して候補に反映している。FY2024決算の認定（認定第1号・令和7年9月定例会の会期中に2025年10月8日認定）は実ブラウザによる補完調査で市議会公式の議決結果を確認し候補に反映している。一方、予算・決算の事項別明細書の款別合計との最終突合と監査委員の決算審査意見書の内容精査は未実施のまま保持する",
+      "id": "fiscal-detail-reconciliation",
+      "status": "deferred_not_required_for_v1_completion"
+    },
+    {
+      "boundary": "第6次那覇市総合計画は策定が開始された段階であり、その政策体系の内容は本候補では保持しない。第5次計画と第6次計画（策定中）の期間と版の分離のみを保持し、一方を他方で上書きしない",
+      "id": "plan-transition-version-depth",
+      "status": "deferred_not_required_for_v1_completion"
+    },
+    {
+      "boundary": "那覇市の総合計画・進捗管理・財政等のステージングは政策効果の因果認定や他都市比較可能性を意味しない。進捗管理（実施計画の仕組み）をJichi Insight独自の達成判定へ変換しない",
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion"
+    }
+  ],
+  "id": "naha-phase15-completion",
+  "name_ja": "那覇市",
+  "official_code": "472018",
+  "phase": 15,
+  "quality_gate": {
+    "budget_enactment_state_preserved": true,
+    "current_plan_period_reviewed": true,
+    "current_plan_policy_structure_reviewed": true,
+    "declared_package_schema_validated": true,
+    "fiscal_states_and_years_separate": true,
+    "implementation_plan_layer_reviewed": true,
+    "individual_implementation_items_not_overpromoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "no_independent_policy_achievement_promoted": true,
+    "official_source_lineage_preserved": true,
+    "regression_suite_required_before_merge": true,
+    "settlement_linkage_not_assessable_preserved": true
+  },
+  "review_package": {
+    "counts": {
+      "basic_goals": 5,
+      "basic_plan_measures": 0,
+      "fiscal_top_line_records": 3,
+      "promoted_implementation_item_actual_records": 0
+    },
+    "fiscal_evidence_path": "data/reviewed/naha-city/evidence_packets.json",
+    "fiscal_records_path": "data/reviewed/naha-city/fiscal_records.json",
+    "plan_review_path": "data/reviewed/naha-city/plan_review.json",
+    "policy_structure_path": "data/catalog/naha_current_policy_structure.json",
+    "progress_review_path": "data/catalog/naha_current_progress_review_summary.json",
+    "source_catalog_path": "data/catalog/naha_phase15_sources.json"
+  },
+  "status": "reviewed_complete"
+}

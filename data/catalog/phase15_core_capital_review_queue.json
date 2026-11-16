@@ -1,7 +1,7 @@
 {
   "id": "phase15-core-capital-record-review-queue",
   "phase": 15,
-  "status": "in_progress",
+  "status": "complete",
   "scope": "core_cities_and_prefectural_capitals_record_review",
   "promotion_target": "reviewed",
   "source_phase": 14,
@@ -887,18 +887,18 @@
       "prefecture_name_ja": "沖縄県",
       "municipality_type": "city",
       "phase14_role": "core_city_and_prefectural_capital",
-      "status": "pending_record_review",
+      "status": "reviewed_complete",
       "source_inventory_path": "data/indexed/naha-city/source_inventory.json",
-      "completion_path": null
+      "completion_path": "data/catalog/naha_phase15_completion.json"
     }
   ],
   "summary": {
     "target_count": 67,
-    "reviewed_complete_count": 66,
+    "reviewed_complete_count": 67,
     "review_in_progress_count": 0,
-    "pending_record_review_count": 1,
+    "pending_record_review_count": 0,
     "blocked_source_inventory_count": 0,
-    "next_official_code": "472018"
+    "next_official_code": null
   },
   "updated_at": "2026-11-17"
 }
