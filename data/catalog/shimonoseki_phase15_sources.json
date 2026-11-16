@@ -1,0 +1,46 @@
+{
+  "id": "shimonoseki-phase15-sources",
+  "name_ja": "下関市",
+  "official_code": "352012",
+  "phase": 15,
+  "quality_boundary": "Current plan identity kept as published (the 3rd Shimonoseki City Comprehensive Plan: two layers — the basic concept and the basic plan — both running FY2025-FY2034 over ten years and adopted in March 2025; beneath them sits the implementation plan for FY2026-FY2030 with 37 projects, adopted in June 2025 and revised in September 2025 and September 2026 with the revision history kept as separate versions; the layer semantics are kept separate and the period status stays verified_fixed_period as recorded against the third plan's period; the basic concept's principle 『可能性を築くまち』, its four developments and the 'Road to 2034' goals, and the basic plan's eight chapters and 39 sections are kept at chapter level, while the measures and numerical targets under the sections and the 37 implementation-plan projects are not enumerated and stay deferred depth), progress governance (the formulation and revision of the implementation plan — kept as the municipality's own progress-management framework; the details of the basic plan's published evaluation and verification framework could not be confirmed and stay unconfirmed), budget enactment confirmed from the council's official vote record book (bill 議案第16号; the result is recorded simply as 『可決』 in the council's own wording; the vote date of 2026-03-26 is printed in the record book) and the amount kept at the published sen-yen precision (142,580,000 thousand yen, confirmed in article 1 and table 1 of the budget book, read visually because the budget book PDF does not allow text extraction, and never expanded into synthetic finer amounts), and settlement totals kept at the yen precision printed in the settlement book (the settlement certification, bill 議案第116号, was certified at the third regular session of 2025 per the council's official vote record book, with the certification date of 2025-09-30 printed in the record book; the real balance of 4,182,293 thousand yen stays at the thousand-yen precision of the real-balance statement; ordinary-account aggregate figures are not used) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "reviewed_at": "2026-11-16",
+  "sources": [
+    {
+      "evidence_location": "計画ページで計画の構成（基本構想・基本計画の2層）と計画期間（2025年度～2034年度の10年間）を直接確認し、計画冊子の第2部基本構想で基本理念『可能性を築くまち』と4つの展開・「Road to 2034」の目標を、冊子目次で基本計画の8章・39節の体系を確認した（冊子PDFはテキスト抽出ができない形式のため画像化して目視確認）",
+      "evidence_role": "comprehensive_plan",
+      "format": "html",
+      "id": "shimonoseki-third-plan",
+      "official_url": "https://www.city.shimonoseki.lg.jp/soshiki/1/127695.html",
+      "title": "第3次下関市総合計画",
+      "use_boundary": "現行計画は第3次下関市総合計画として保持し、基本構想・基本計画のlayer semanticsを分離する。第2次計画の後期資料と分離し、第2次計画期間の成果を第3次計画のcurrent actualへ流用しない"
+    },
+    {
+      "evidence_location": "実施計画ページで、実施計画が第3次総合計画の重点取り組み方針に向けて実施する主要な事業の計画であること、計画期間（令和8年度～令和12年度）、事業数（37事業）、改定履歴（令和7年6月策定、令和7年9月第1次改定、令和8年9月第2次改定）を確認した",
+      "evidence_role": "implementation_plan",
+      "format": "html",
+      "id": "shimonoseki-implementation-2026-2030",
+      "official_url": "https://www.city.shimonoseki.lg.jp/soshiki/1/133270.html",
+      "title": "第3次下関市総合計画 実施計画",
+      "use_boundary": "実施計画は策定・第1次改定・第2次改定のversionを分離して保持し、最新改定で旧versionを消さない。37事業の全件列挙と改定差分の展開は追加depthとする"
+    },
+    {
+      "evidence_location": "予算ページが入口となり、予算書（議案第16号）第1条でFY2026一般会計当初予算額142,580,000千円を画像化して目視で確認し、『令和8年度当初予算案の概要』の会計別比較表と『令和8年度6月補正予算の概要』の現計予算額でも同額を確認した。議決は市議会公式の議決事件簿『議案（令和8年第1回定例会）』の議案第16号で議決年月日2026年3月26日・議決結果欄の文言『可決』を直接確認した",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "shimonoseki-budget-2026",
+      "official_url": "https://www.city.shimonoseki.lg.jp/soshiki/14/137804.html",
+      "title": "令和8年度予算の状況",
+      "use_boundary": "FY2026当初予算は補正予算・決算と別stateで保持する。金額は千円単位の公表値であり、円単位を合成しない"
+    },
+    {
+      "evidence_location": "決算ページが入口となり、『令和6年度下関市決算書』の各会計別歳入歳出決算総括表で一般会計の歳入決算額154,157,063,123円・歳出決算額147,926,762,467円を円単位で確認し、実質収支に関する調書で実質収支4,182,293千円（千円単位）を確認した。認定は市議会公式の議決事件簿『議案（令和7年）』の議案第116号で議決年月日2025年9月30日・議決結果欄の文言『認定』を直接確認した。普通会計決算カードの普通会計ベースの集計値は一般会計値とは別のため使用していない",
+      "evidence_role": "settlement",
+      "format": "html",
+      "id": "shimonoseki-settlement-2024",
+      "official_url": "https://www.city.shimonoseki.lg.jp/soshiki/14/119898.html",
+      "title": "令和6年度決算の状況",
+      "use_boundary": "FY2024決算は予算・補正と別stateで保持する。歳入・歳出は決算書の円単位の値、実質収支は調書の千円単位の公表値のまま記録する。第2次計画期間の決算・成果資料と第3次計画current planをversion分離する"
+    }
+  ]
+}

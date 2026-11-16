@@ -740,13 +740,25 @@ Declared v1 package:
 
 Deferred depth includes the measures and target indicators of the third basic plan under the seven fields, final confirmation of both vote dates against the plenary minutes, direct confirmation of article 1 of the budget book, the yen-precision totals of the settlement book itself, cross-checks against the settlement book （事項別明細書） at section level, the content of the audit commissioners' settlement review opinion (individual findings), the preparation status of the next (fourth) basic plan, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Fifty-fourth completion — Shimonoseki
+
+下関市を54番目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 第3次下関市総合計画 — composed of two layers, the basic concept （基本構想） and the basic plan （基本計画）, both running FY2025-FY2034 over ten years and adopted in March 2025. The basic concept sets out the principle 『可能性を築くまち』 (SHIMONOSEKI VISION), four developments （暮らし / コミュニティ / 経済 / 環境） and the "Road to 2034" goals, and the basic plan is organised into eight chapters and 39 sections, which are kept at chapter level; the measures and numerical targets under the sections are not enumerated and stay deferred depth, so the measures lists stay empty. Beneath the plan sits the implementation plan （実施計画） for FY2026-FY2030 with 37 projects, adopted in June 2025 and revised in September 2025 (first revision) and September 2026 (second revision), with the revision history kept as separate versions. Progress is managed through the municipality's own framework of formulating and revising the implementation plan; the details of the basic plan's published evaluation and verification framework could not be confirmed in official sources and stay unconfirmed. The period status stays verified_fixed_period as recorded in the Phase 14 inventory (it applies to the third plan's period FY2025-FY2034), and the preparation status of the next (fourth) comprehensive plan could not be confirmed in official sources and stays unconfirmed
+- FY2026 general-account initial budget: 142,580,000 thousand yen (enacted). Bill 議案第16号 was recorded simply as 『可決』 in the council's official vote record book for the first regular session of 2026 （議案（令和8年第1回定例会）), in the council's own wording, with the vote date of 2026-03-26 printed in the record book. The amount was confirmed in article 1 and table 1 of the budget book itself (read visually because the budget book PDF does not allow text extraction) and also matches the account comparison table of the initial budget outline and the current-budget figure in the June supplementary budget outline. The amount is kept at the published sen-yen (thousand-yen) precision and finer amounts are not synthesized
+- FY2024 general-account settlement at the yen precision printed in the settlement book （令和6年度下関市決算書）: revenue 154,157,063,123 yen / expenditure 147,926,762,467 yen (their difference of 6,230,300,656 yen checks out arithmetically and is consistent with the thousand-yen difference of 6,230,301 thousand yen printed in the settlement outline and the real-balance statement; the real balance is 4,182,293 thousand yen — the thousand-yen difference of 6,230,301 thousand yen minus 2,048,008 thousand yen of funding to be carried over to the next fiscal year — recorded at the thousand-yen precision of the real-balance statement and not expanded into a synthetic yen figure; ordinary-account aggregate figures, such as the ordinary-account settlement card, are not used). The settlement certification, bill 議案第116号, was certified at the third regular session of 2025, confirmed directly in the council's official vote record book （議案（令和7年）); it was not rejected, and the certification date of 2025-09-30 is printed in the record book. FY2024 is a settlement of the second Shimonoseki City comprehensive plan period (FY2015-FY2024), so its plan version differs from the current third plan, and no official total-level mapping from settlement totals to the plan's policy structure exists, so the totals are not linked to the plan's structure and the linkage stays not_assessable
+
+Deferred depth includes the measures and numerical targets under the 39 sections of the basic plan and the full enumeration and revision differences of the 37 implementation-plan projects, cross-checks against the budget explanation book and the settlement book （事項別明細書） at section level, the content of the audit commissioners' settlement review opinion (individual findings), the details of the basic plan's published evaluation and verification framework, the preparation status of the next (fourth) comprehensive plan, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 53 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市、姫路市、尼崎市、明石市、西宮市、奈良市、和歌山市、鳥取市、松江市、倉敷市、呉市、福山市
+- Reviewed complete: 54 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市、姫路市、尼崎市、明石市、西宮市、奈良市、和歌山市、鳥取市、松江市、倉敷市、呉市、福山市、下関市
 - Review in progress: 0
-- Pending record review: 14
+- Pending record review: 13
 - Blocked source inventory: 0
-- Next official code: 352012
+- Next official code: 352039
 
 ## Definition of Phase 15 completion
 
