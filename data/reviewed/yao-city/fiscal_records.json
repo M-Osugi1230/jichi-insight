@@ -1,0 +1,65 @@
+[
+  {
+    "account_type": "general",
+    "amount_yen": 132613637000,
+    "confidence": "high",
+    "fiscal_year": 2026,
+    "id": "jp-local-272124-fiscal-2026-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算（可決）",
+    "municipality_id": "jp-local-272124",
+    "note": "八尾市公式『令和8年度当初予算』ページの会計別当初予算額表に示された一般会計当初予算額132,613,637千円（歳入歳出それぞれ同額。全会計合計は239,878,565千円）。同ページ掲載の公式『令和8年度予算参考資料（当初予算の概要）』の一般会計額とも一致する。公表精度は千円単位であり、円単位の内訳は公表されていないため千円精度のまま記録する。議案第18号『令和8年度八尾市一般会計予算の件』として2026年2月市議会定例会に提出され、2026年3月27日に原案可決され成立した当初予算であることを八尾市議会公式『2026年2月市議会定例会 議決結果』で確認した（議決結果の文言・議決日とも同議決結果資料で直接確認したものであり、日程資料からの推定ではない）。補正予算や決算とは別stateで扱う。",
+    "period_end": "2027-03-31",
+    "period_start": "2026-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "yao-budget-2026"
+    ],
+    "stage": "initial_budget",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 126116660528,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-272124-fiscal-2024-total-revenue",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入額",
+    "municipality_id": "jp-local-272124",
+    "note": "八尾市公式『令和6年度決算』ページ掲載の公式『令和6年度八尾市一般会計・特別会計歳入歳出決算書』（2025年9月8日に八尾市長 山本桂右が提出）の一般会計の会計別決算総括表に記載された歳入総額126,116,660,528円（円単位）。歳出総額123,882,040,366円との差引額2,234,620,162円は、同決算書の実質収支に関する調書に記載された歳入総額・歳出総額・差引額と一致する（予算現額130,761,543,349円）。実質収支額は同調書により1,797,799,491円と確認した（差引額2,234,620,162円から翌年度へ繰り越すべき財源436,820,671円を控除した額。調書そのもので円単位のまま直接確認した）。公式『令和6年度決算の概要』の千円集計および監査委員の決算審査意見書の総計とも整合する。令和6年度決算の認定議案は認定第1号であり、2025年10月22日に認定された（八尾市議会公式『令和7年9月市議会定例会 議決結果』で直接確認）。FY2024は第6次八尾市総合計画の前期基本計画（2021年度～2024年度）期間の決算であり、現行の後期基本計画（2025年度～2028年度）とは計画の版が異なる。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "yao-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  },
+  {
+    "account_type": "general",
+    "amount_yen": 123882040366,
+    "confidence": "high",
+    "fiscal_year": 2024,
+    "id": "jp-local-272124-fiscal-2024-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出額",
+    "municipality_id": "jp-local-272124",
+    "note": "同『令和6年度八尾市一般会計・特別会計歳入歳出決算書』の一般会計の会計別決算総括表に記載された歳出総額123,882,040,366円（円単位）。歳入総額126,116,660,528円との差引額2,234,620,162円は、同決算書の実質収支に関する調書の記載と一致する。令和6年度決算の認定議案である認定第1号は2025年10月22日に認定された（八尾市議会公式『令和7年9月市議会定例会 議決結果』で確認）。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "reviewed",
+    "sources": [
+      "yao-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+  }
+]

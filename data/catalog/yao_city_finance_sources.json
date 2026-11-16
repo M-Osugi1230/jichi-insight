@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-16",
+  "scope": "phase15-core-capital-review",
+  "records": [
+    {
+      "id": "yao-city-home",
+      "municipality_key": "yao-city",
+      "organization": "八尾市",
+      "category": "municipality_profile",
+      "title": "八尾市公式サイト",
+      "url": "https://www.city.yao.osaka.jp/",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "八尾市の公式自治体サイト。"
+    },
+    {
+      "id": "yao-budget-2026",
+      "municipality_key": "yao-city",
+      "organization": "八尾市",
+      "category": "budget",
+      "title": "令和8年度予算",
+      "url": "https://www.city.yao.osaka.jp/shisei/seisaku_keikaku_zaisei/1009738/1009740/1017102.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計当初予算132,613,637千円のEvidence。議案第18号『令和8年度八尾市一般会計予算の件』として2026年2月市議会定例会に提出され、2026年3月27日に原案可決された成立予算（八尾市議会公式『2026年2月市議会定例会 議決結果』で確認）。金額は千円単位の公表値のまま記録し、円単位を合成しない。補正後予算・執行・決算とは分離する。"
+    },
+    {
+      "id": "yao-settlement-2024",
+      "municipality_key": "yao-city",
+      "organization": "八尾市",
+      "category": "settlement",
+      "title": "令和6年度決算",
+      "url": "https://www.city.yao.osaka.jp/shisei/seisaku_keikaku_zaisei/1009738/1009743/1009747.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-16",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳入126,116,660,528円・歳出123,882,040,366円を円単位で含む公式決算資料（令和6年度八尾市一般会計・特別会計歳入歳出決算書）。実質収支額は同決算書の実質収支に関する調書により1,797,799,491円（調書そのもので円単位で直接確認したため円単位のまま記録）。決算の認定議案である認定第1号は2025年10月22日に認定された。決算書（歳入歳出決算事項別明細書）の款別合計との突合と監査委員の決算審査意見書の内容確認は未実施。"
+    }
+  ]
+}
