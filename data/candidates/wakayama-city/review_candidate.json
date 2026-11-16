@@ -1,0 +1,455 @@
+{
+ "candidate_id": "wakayama-phase15-review-candidate",
+ "candidate_package": {
+  "evidence_packets": [
+   {
+    "claims": [
+     {
+      "decision": "needs_review",
+      "field": "amount_yen",
+      "location_note": "市議会公式『令和8年2月定例市議会 審議結果』（令和8年3月13日議決分）で議案第31号『令和8年度和歌山市一般会計予算』の結果欄が『可決』であることを確認した。当初予算額は和歌山市公報（告示第247号別冊・2026年6月30日）掲載の令和8年度一般会計補正予算（第1号）第1条から算術的に特定した（補正後総額168,632,712千円－補正額2,863,767千円＝165,768,945千円）。当初予算書そのものの直接確認は未了である",
+      "review_note": "成立した当初予算の議決経過を市議会公式資料で確認し、当初予算額を市の公報に掲載された補正予算（第1号）の条文から算術的に特定したステージング。当初予算書そのものによる直接確認は未了であり、その旨を明記している。人間による確認待ちステージング。",
+      "source_ids": [
+       "wakayama-budget-2026"
+      ],
+      "statement": "令和8年度一般会計当初予算は165,768,945千円（165,768,945,000円）であり、議案第31号『令和8年度和歌山市一般会計予算』として令和8年2月定例市議会で可決され成立した予算である（市議会公式『令和8年2月定例市議会 審議結果』の結果欄の文言は『可決』、議決日は2026年3月13日）。当初予算額は補正予算（第1号）第1条からの算術的特定による。公表精度は千円単位のため千円精度のまま記録する。"
+     }
+    ],
+    "id": "evidence-wakayama-city-2026-total-expenditure",
+    "open_questions": [
+     "当初予算書・当初予算の概要そのものによる当初予算額165,768,945千円の直接確認。",
+     "予算書・予算に関する説明書（事項別明細書）の款別合計との最終突合。"
+    ],
+    "review_status": "needs_review",
+    "subject_id": "jp-local-302015-fiscal-2026-total-expenditure",
+    "subject_type": "fiscal_record"
+   },
+   {
+    "claims": [
+     {
+      "decision": "needs_review",
+      "field": "amount_yen",
+      "location_note": "和歌山市公式『令和6年度決算』（歳入歳出決算総括表・一般会計）における収入済額171,406,400,509円の記載（円単位）。認定の経過は市議会公式『12月定例会採決状況』（令和7年12月定例会）で認第6号を含む各会計決算の認定の結果が『認定』であることを確認した（同資料に議決日の印字はない）",
+      "review_note": "決算総括表から一般会計歳入総額を円単位で抽出したステージング。認定結果は市議会公式の採決状況で直接確認済みである。認定の正確な議決日は未特定のまま保持する。人間による確認待ちステージング。",
+      "source_ids": [
+       "wakayama-settlement-2024"
+      ],
+      "statement": "令和6年度一般会計決算の歳入総額は171,406,400,509円である（和歌山市公式『令和6年度決算』歳入歳出決算総括表による。円単位）。当該決算は認第6号『令和6年度和歌山市一般会計歳入歳出決算』として市議会へ提出され、令和7年12月定例会で認定された（市議会公式『12月定例会採決状況』で確認）。認定の正確な議決日は未特定である。"
+     }
+    ],
+    "id": "evidence-wakayama-city-2024-total-revenue",
+    "open_questions": [
+     "認定の正確な議決日（令和7年12月定例会における議決日）の特定。",
+     "決算書（歳入歳出決算事項別明細書）の款別合計との最終突合。",
+     "監査委員の決算審査意見書の内容（個別の指摘事項等）の精査。"
+    ],
+    "review_status": "needs_review",
+    "subject_id": "jp-local-302015-fiscal-2024-total-revenue",
+    "subject_type": "fiscal_record"
+   },
+   {
+    "claims": [
+     {
+      "decision": "needs_review",
+      "field": "amount_yen",
+      "location_note": "同じく決算総括表における一般会計の支出済額167,796,054,596円の記載（円単位）。歳入総額との差引残額3,610,345,913円も同表による。実質収支は実質収支に関する調書（総括表・千円単位）の3,361,400千円による",
+      "review_note": "決算総括表から一般会計歳出総額を円単位で抽出し、歳入総額との差引残額が検算一致することを確認したステージング。実質収支は調書の千円精度のまま保持する。人間による確認待ちステージング。",
+      "source_ids": [
+       "wakayama-settlement-2024"
+      ],
+      "statement": "令和6年度一般会計決算の歳出総額は167,796,054,596円である（和歌山市公式『令和6年度決算』歳入歳出決算総括表による。円単位）。歳入総額171,406,400,509円との差引残額は3,610,345,913円で、同表の記載と検算一致する。実質収支は3,361,400千円であり、実質収支に関する調書の公表精度が千円単位のため千円精度のまま記録する。当該決算は認第6号として令和7年12月定例会で認定された。"
+     }
+    ],
+    "id": "evidence-wakayama-city-2024-total-expenditure",
+    "open_questions": [
+     "決算書（歳入歳出決算事項別明細書）の款別合計との最終突合。"
+    ],
+    "review_status": "needs_review",
+    "subject_id": "jp-local-302015-fiscal-2024-total-expenditure",
+    "subject_type": "fiscal_record"
+   }
+  ],
+  "fiscal_records": [
+   {
+    "account_type": "general",
+    "amount_yen": 165768945000,
+    "confidence": "medium",
+    "fiscal_year": 2026,
+    "id": "jp-local-302015-fiscal-2026-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算総額",
+    "municipality_id": "jp-local-302015",
+    "note": "和歌山市の令和8年度一般会計当初予算総額165,768,945千円。当初予算は議案第31号『令和8年度和歌山市一般会計予算』として令和8年2月定例市議会に提出され、市議会公式『令和8年2月定例市議会 審議結果』で2026年3月13日に可決され成立した（同資料の結果欄の文言は『可決』である）。当初予算額そのものは当初予算書の直接確認が未了のため、和歌山市公報（告示第247号別冊・2026年6月30日）に掲載された令和8年度一般会計補正予算（第1号）第1条（補正額2,863,767千円を追加し総額を168,632,712千円とする）から、168,632,712千円－2,863,767千円＝165,768,945千円と算術的に特定したもので、市長記者会見（2026年2月12日）で公表された『一般会計1,650億円程度・前年度比3.4%増・過去最大』とも整合する。公表精度は千円単位であり、その精度のまま記録し円単位を合成していない。補正予算や決算とは別stateで扱う。",
+    "period_end": "2027-03-31",
+    "period_start": "2026-04-01",
+    "review_status": "needs_review",
+    "sources": [
+     "wakayama-budget-2026"
+    ],
+    "stage": "initial_budget",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+   },
+   {
+    "account_type": "general",
+    "amount_yen": 171406400509,
+    "confidence": "medium",
+    "fiscal_year": 2024,
+    "id": "jp-local-302015-fiscal-2024-total-revenue",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入額",
+    "municipality_id": "jp-local-302015",
+    "note": "和歌山市公式『令和6年度決算』の歳入歳出決算総括表（一般会計）に示された収入済額171,406,400,509円。円単位の精密値が公式資料に印字されているため円単位のまま記録する。当該決算の認定は認第6号『令和6年度和歌山市一般会計歳入歳出決算』（2025年9月12日提出・監査委員の意見付き）として市議会へ提出され、令和7年12月定例会で認定された（市議会公式『12月定例会採決状況』で、認第1号～第8号・認第10号～第13号・認第15号・認第16号を含む『令和6年度和歌山市各会計決算（公営企業会計、一般会計、各特別会計）の認定』の結果が『認定』であることを確認した）。認定の正確な議決日は同資料に印字がなく未特定である。FY2024は第5次和歌山市長期総合計画（2017年度～2026年度）の期間内、実施計画（2024年度～2026年度）の初年度の決算である。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "needs_review",
+    "sources": [
+     "wakayama-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+   },
+   {
+    "account_type": "general",
+    "amount_yen": 167796054596,
+    "confidence": "medium",
+    "fiscal_year": 2024,
+    "id": "jp-local-302015-fiscal-2024-total-expenditure",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出額",
+    "municipality_id": "jp-local-302015",
+    "note": "同じく歳入歳出決算総括表に示された一般会計の支出済額167,796,054,596円（円単位のまま記録）。歳入総額171,406,400,509円との差引残額は3,610,345,913円で、同表の記載と検算一致する。実質収支は、実質収支に関する調書（総括表）が千円単位で示す3,361,400千円である（差引3,610,346千円－翌年度へ繰り越すべき財源248,946千円＝3,361,400千円で検算一致。繰り越すべき財源は明許費繰越額のみ）。調書の公表精度が千円単位のため実質収支は千円精度のまま記録し、円単位を合成していない。監査委員の決算審査意見書（和監査第49号・2025年9月1日）でも同じ千円単位の値が確認され、計数は正確である旨の審査結果が示されている。当該決算は認第6号として令和7年12月定例会で認定された。",
+    "period_end": "2025-03-31",
+    "period_start": "2024-04-01",
+    "review_status": "needs_review",
+    "sources": [
+     "wakayama-settlement-2024"
+    ],
+    "stage": "settlement",
+    "unit": "yen",
+    "value": null,
+    "value_status": "available"
+   }
+  ],
+  "plan_review": {
+   "id": "phase15-wakayama-plan-review",
+   "name_ja": "和歌山市",
+   "official_code": "302015",
+   "records": [
+    {
+     "decision": "needs_review",
+     "evidence_location": "和歌山市公式『第5次和歌山市長期総合計画』本編（公式PDF）で、計画の構成（基本構想・基本計画・実施計画の3層）、計画期間（基本構想・基本計画は2017年度～2026年度、実施計画は3年・現行2024年度～2026年度）、将来都市像、目標人口を直接確認した",
+     "evidence_role": "current_plan_identity",
+     "id": "wakayama-current-plan-period",
+     "review_note": "総合計画の構成（基本構想・基本計画・実施計画）と各層の期間を別period semanticsとして保持した。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.wakayama.wakayama.jp/shisei/1009206/1009403/index.html",
+     "statement": "和歌山市の総合計画は第5次和歌山市長期総合計画（2017年3月策定）であり、基本構想・基本計画・実施計画の3層で構成される。基本構想と基本計画の計画期間は2017年度～2026年度の10年間であり、将来都市像として『きらり 輝く元気和歌山市』を掲げ、2026年度の目標人口を347,000人とする。基本計画は社会経済情勢の変化等に応じて随時見直しを行うものとされ、その具体化を担う実施計画は3年間を計画期間として毎年度点検・見直しを行い、現行は2024年度～2026年度である。あわせて市内を10ブロックに分けた地域別計画を置く。基本構想・基本計画の10年と実施計画の3年を別period semanticsとして保持し、一律の固定期間へ潰さない。FY2026は計画の最終年度であり、Phase 14インベントリのperiod_statusはtransition_or_unresolvedである。",
+     "title": "第5次和歌山市長期総合計画の構成（基本構想・基本計画2017年度～2026年度と実施計画）",
+     "value": "第5次和歌山市長期総合計画は基本構想・基本計画2017年度～2026年度（10年）／実施計画は3年（現行2024年度～2026年度）で毎年度点検見直し／FY2026は計画最終年度で次期計画の内容は未確認"
+    },
+    {
+     "decision": "needs_review",
+     "evidence_location": "和歌山市公式『第5次和歌山市長期総合計画』本編の目次（基本計画各論）で、4つの分野別目標とその下の政策26件を直接確認した",
+     "evidence_role": "policy_structure",
+     "id": "wakayama-current-policy-structure",
+     "review_note": "基本計画の政策体系（4分野別目標・26政策）を政策単位で保持した。政策の下の施策・事業単位の対応付けは行わない。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.wakayama.wakayama.jp/shisei/1009206/1009403/index.html",
+     "statement": "基本計画の各論は、4つの分野別目標の下に26の政策を体系付ける。分野別目標1『安定した雇用を生み出す産業が元気なまち』は6政策（1-1 地域を支える既存産業の振興／1-2 新たな事業の創出と産学官金・異業種連携の促進／1-3 農林水産業の活性化／1-4 観光の稼ぐ力の強化／1-5 国際交流の推進／1-6 産業を支える「人」の確保）、分野別目標2『住みたいと選ばれる魅力があふれるまち』は5政策（2-1 中心市街地の魅力向上／2-2 各地域における魅力的なまちづくり／2-3 魅力ある都市景観の創出／2-4 自然と共生する環境にやさしい社会の形成／2-5 郷土に誇りと愛着を育む文化・スポーツの振興と生涯学習の推進）、分野別目標3『子供たちがいきいきと育つまち』は5政策（3-1 安心して子供を生み育てることのできる環境の整備／3-2 社会を生き抜く子供たちの学力の育成／3-3 生涯を通じた豊かな心と健やかな体の育成／3-4 安全・安心な教育環境の整備／3-5 家庭や地域における教育力の向上）、分野別目標4『誰もが安心して住み続けられる持続可能なまち』は10政策（4-1 コンパクトシティの実現／4-2 都市機能や市民生活を支える道路網の整備／4-3 豊かな暮らしを支える住環境の整備／4-4 防災体制の充実／4-5 消防力の充実／4-6 安全で安心な市民生活の確保／4-7 健康で元気に暮らせる環境づくり／4-8 人権尊重・男女共同参画の推進／4-9 将来に向かって希望の持てる福祉社会の形成／4-10 地域コミュニティの充実）である。各政策の下の施策・事業単位の対応付けは行わない。",
+     "title": "基本計画の政策体系（4つの分野別目標・26政策）"
+    },
+    {
+     "decision": "needs_review",
+     "evidence_location": "計画本編の計画の構成で、実施計画が3年間を計画期間とし毎年度点検見直しを行うことを確認し、Phase 14インベントリの実施計画の記録とあわせて保持した",
+     "evidence_role": "progress_governance",
+     "id": "wakayama-progress-governance-framework",
+     "review_note": "進行管理の枠組み（実施計画の毎年度点検・見直し）を年度実績へ読み替えず保持した。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.wakayama.wakayama.jp/shisei/1009206/1009403/index.html",
+     "statement": "第5次和歌山市長期総合計画の進行管理は、基本計画を具体化する実施計画（3年・現行2024年度～2026年度）を毎年度点検・見直しする自治体の枠組みによる。自治体の点検・見直しをJichi Insight独自の達成判定へ変換しない。",
+     "title": "計画の進行管理（実施計画の毎年度点検・見直し）"
+    },
+    {
+     "decision": "needs_review",
+     "evidence_location": "第5次計画の計画期間（2017年度～2026年度）は計画本編で確認した。次期計画の策定状況は市公式ページの調査範囲で確認できなかった",
+     "evidence_role": "plan_transition",
+     "id": "wakayama-plan-transition",
+     "review_note": "計画最終年度であることと次期計画の未確認状態を版の履歴として分離記録した。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.wakayama.wakayama.jp/shisei/1009206/1009403/index.html",
+     "statement": "第5次和歌山市長期総合計画は2026年度が計画期間の最終年度である。次期計画（第6次）の策定状況は、本候補の調査範囲では和歌山市公式資料で確認できていないため、次期計画の内容を現行計画へ先取りしない。移行は版の履歴として分離して記録し、Phase 14インベントリのperiod_status（transition_or_unresolved）をそのまま保持する。",
+     "title": "第5次長期総合計画の最終年度と次期計画への移行"
+    },
+    {
+     "decision": "not_assessable",
+     "evidence_location": "決算総額は『令和6年度決算』歳入歳出決算総括表、認定結果は市議会公式『12月定例会採決状況』で確認した。総額レベルの対応付けの不存在は、決算・計画の公表範囲で確認した",
+     "evidence_role": "annual_progress",
+     "fiscal_year": 2024,
+     "id": "wakayama-fy2024-settlement-linkage",
+     "review_note": "版は同一でも総額レベルの対応付けがないため接続しないことを明記した。人間による一次資料確認前の候補レコード。",
+     "source_url": "https://www.city.wakayama.wakayama.jp/shisei/zaisei/1001161/index.html",
+     "statement": "FY2024決算は第5次和歌山市長期総合計画（2017年度～2026年度）の期間内、実施計画（2024年度～2026年度）の初年度の決算であり、計画の版は現行と同一である。決算総額（円単位）と認定結果（認第6号・令和7年12月定例会で認定）は一次資料で確認済みであるが、決算総額と4つの分野別目標・26政策との総額レベルの対応付けは公式資料にないため、接続はnot_assessableとし、決算値を計画のcurrent actualへ流用しない。",
+     "title": "令和6年度決算と第5次和歌山市長期総合計画の政策体系の接続"
+    }
+   ],
+   "review_status": "pending_record_review"
+  },
+  "policy_structure": {
+   "current_plan": {
+    "end_fiscal_year": 2026,
+    "management_principles": [
+     "総合計画は第5次和歌山市長期総合計画であり、基本構想・基本計画（2017年度～2026年度の10年）と実施計画（3年・現行2024年度～2026年度、毎年度点検見直し）の3層で構成する。各層の期間を別period semanticsとして保持し、一律の固定期間modelへ潰さない。FY2026は計画の最終年度であり、次期計画の内容は未確認である（period_statusはPhase 14インベントリどおりtransition_or_unresolved）",
+     "基本計画の各論は4つの分野別目標の下に26政策を置く。各政策の下の施策・事業・指標の全件列挙は本候補では行わず、追加depthとして保持する。あわせて地域別計画（10ブロック）を置く",
+     "進行管理は、実施計画を毎年度点検・見直しする自治体の枠組みによる。自治体の点検・見直しをJichi Insight独自の達成判定へ変換しない",
+     "FY2024決算は第5次計画の期間内、実施計画（2024年度～2026年度）の初年度の決算であり、計画の版は現行と同一である。決算総額（円単位）と認定結果（認第6号・令和7年12月定例会で認定）は一次資料で確認済みであるが、決算総額と4つの分野別目標・26政策との総額レベルの対応付けは公式資料にないため、決算値を計画のcurrent actualへ流用しない"
+    ],
+    "period_status": "transition_or_unresolved",
+    "policy_fields": [
+     {
+      "id": "field-1",
+      "measures": [],
+      "name_ja": "分野別目標1 安定した雇用を生み出す産業が元気なまち：1-1 地域を支える既存産業の振興"
+     },
+     {
+      "id": "field-2",
+      "measures": [],
+      "name_ja": "分野別目標1 安定した雇用を生み出す産業が元気なまち：1-2 新たな事業の創出と産学官金・異業種連携の促進"
+     },
+     {
+      "id": "field-3",
+      "measures": [],
+      "name_ja": "分野別目標1 安定した雇用を生み出す産業が元気なまち：1-3 農林水産業の活性化"
+     },
+     {
+      "id": "field-4",
+      "measures": [],
+      "name_ja": "分野別目標1 安定した雇用を生み出す産業が元気なまち：1-4 観光の稼ぐ力の強化"
+     },
+     {
+      "id": "field-5",
+      "measures": [],
+      "name_ja": "分野別目標1 安定した雇用を生み出す産業が元気なまち：1-5 国際交流の推進"
+     },
+     {
+      "id": "field-6",
+      "measures": [],
+      "name_ja": "分野別目標1 安定した雇用を生み出す産業が元気なまち：1-6 産業を支える「人」の確保"
+     },
+     {
+      "id": "field-7",
+      "measures": [],
+      "name_ja": "分野別目標2 住みたいと選ばれる魅力があふれるまち：2-1 中心市街地の魅力向上"
+     },
+     {
+      "id": "field-8",
+      "measures": [],
+      "name_ja": "分野別目標2 住みたいと選ばれる魅力があふれるまち：2-2 各地域における魅力的なまちづくり"
+     },
+     {
+      "id": "field-9",
+      "measures": [],
+      "name_ja": "分野別目標2 住みたいと選ばれる魅力があふれるまち：2-3 魅力ある都市景観の創出"
+     },
+     {
+      "id": "field-10",
+      "measures": [],
+      "name_ja": "分野別目標2 住みたいと選ばれる魅力があふれるまち：2-4 自然と共生する環境にやさしい社会の形成"
+     },
+     {
+      "id": "field-11",
+      "measures": [],
+      "name_ja": "分野別目標2 住みたいと選ばれる魅力があふれるまち：2-5 郷土に誇りと愛着を育む文化・スポーツの振興と生涯学習の推進"
+     },
+     {
+      "id": "field-12",
+      "measures": [],
+      "name_ja": "分野別目標3 子供たちがいきいきと育つまち：3-1 安心して子供を生み育てることのできる環境の整備"
+     },
+     {
+      "id": "field-13",
+      "measures": [],
+      "name_ja": "分野別目標3 子供たちがいきいきと育つまち：3-2 社会を生き抜く子供たちの学力の育成"
+     },
+     {
+      "id": "field-14",
+      "measures": [],
+      "name_ja": "分野別目標3 子供たちがいきいきと育つまち：3-3 生涯を通じた豊かな心と健やかな体の育成"
+     },
+     {
+      "id": "field-15",
+      "measures": [],
+      "name_ja": "分野別目標3 子供たちがいきいきと育つまち：3-4 安全・安心な教育環境の整備"
+     },
+     {
+      "id": "field-16",
+      "measures": [],
+      "name_ja": "分野別目標3 子供たちがいきいきと育つまち：3-5 家庭や地域における教育力の向上"
+     },
+     {
+      "id": "field-17",
+      "measures": [],
+      "name_ja": "分野別目標4 誰もが安心して住み続けられる持続可能なまち：4-1 コンパクトシティの実現"
+     },
+     {
+      "id": "field-18",
+      "measures": [],
+      "name_ja": "分野別目標4 誰もが安心して住み続けられる持続可能なまち：4-2 都市機能や市民生活を支える道路網の整備"
+     },
+     {
+      "id": "field-19",
+      "measures": [],
+      "name_ja": "分野別目標4 誰もが安心して住み続けられる持続可能なまち：4-3 豊かな暮らしを支える住環境の整備"
+     },
+     {
+      "id": "field-20",
+      "measures": [],
+      "name_ja": "分野別目標4 誰もが安心して住み続けられる持続可能なまち：4-4 防災体制の充実"
+     },
+     {
+      "id": "field-21",
+      "measures": [],
+      "name_ja": "分野別目標4 誰もが安心して住み続けられる持続可能なまち：4-5 消防力の充実"
+     },
+     {
+      "id": "field-22",
+      "measures": [],
+      "name_ja": "分野別目標4 誰もが安心して住み続けられる持続可能なまち：4-6 安全で安心な市民生活の確保"
+     },
+     {
+      "id": "field-23",
+      "measures": [],
+      "name_ja": "分野別目標4 誰もが安心して住み続けられる持続可能なまち：4-7 健康で元気に暮らせる環境づくり"
+     },
+     {
+      "id": "field-24",
+      "measures": [],
+      "name_ja": "分野別目標4 誰もが安心して住み続けられる持続可能なまち：4-8 人権尊重・男女共同参画の推進"
+     },
+     {
+      "id": "field-25",
+      "measures": [],
+      "name_ja": "分野別目標4 誰もが安心して住み続けられる持続可能なまち：4-9 将来に向かって希望の持てる福祉社会の形成"
+     },
+     {
+      "id": "field-26",
+      "measures": [],
+      "name_ja": "分野別目標4 誰もが安心して住み続けられる持続可能なまち：4-10 地域コミュニティの充実"
+     }
+    ],
+    "start_fiscal_year": 2017,
+    "title": "第5次和歌山市長期総合計画 基本計画（2017年度～2026年度）",
+    "vision": "きらり 輝く元気和歌山市"
+   },
+   "id": "wakayama-current-policy-structure",
+   "name_ja": "和歌山市",
+   "official_code": "302015",
+   "phase": 15
+  },
+  "progress_review": {
+   "id": "wakayama-current-progress-review-summary",
+   "implementation_plan_framework": {
+    "evaluation_structure": "進行管理は、基本計画を具体化する実施計画を毎年度点検・見直しする自治体の枠組みである。自治体の点検・見直しをJichi Insight独自の達成判定へ変換せず、枠組みそのものを年度実績へ読み替えない",
+    "period": "実施計画（2024年度～2026年度）の期間を通じて、毎年度の点検・見直しのもとで進捗管理を行う。FY2024決算は実施計画の初年度の決算で計画の版は現行と同一であり、決算総額（円単位）と認定結果（認第6号・令和7年12月定例会で認定）は一次資料で確認済みであるが、決算総額と政策体系との総額レベルの対応付けは公式資料にないため、進行管理の対象値として接続しない",
+    "title": "第5次和歌山市長期総合計画 実施計画（2024年度～2026年度）の毎年度点検・見直しによる進行管理"
+   },
+   "name_ja": "和歌山市",
+   "official_code": "302015",
+   "phase": 15,
+   "review_status": "review_candidate_staging"
+  },
+  "source_catalog": {
+   "id": "wakayama-phase15-sources",
+   "name_ja": "和歌山市",
+   "official_code": "302015",
+   "phase": 15,
+   "sources": [
+    {
+     "evidence_location": "計画の構成・期間・将来都市像・政策体系は市公式『第5次和歌山市長期総合計画』本編（公式PDF）で直接確認した。基本構想・基本計画は2017年度～2026年度の10年、実施計画は3年（現行2024年度～2026年度）で毎年度点検見直しを行い、将来都市像『きらり 輝く元気和歌山市』、4つの分野別目標と政策26件を本編の目次で確認した",
+     "evidence_role": "comprehensive_plan",
+     "format": "html",
+     "id": "wakayama-fifth-long-term-plan",
+     "official_url": "https://www.city.wakayama.wakayama.jp/shisei/1009206/1009403/index.html",
+     "title": "第5次和歌山市長期総合計画",
+     "use_boundary": "現行計画は第5次和歌山市長期総合計画として保持し、基本構想・基本計画と実施計画のlayer semanticsを分離する。FY2026は最終年度であり、次期計画の内容を現行計画へ先取りしない",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    },
+    {
+     "evidence_location": "実施計画（2024年度～2026年度・3年、毎年度点検見直し）の公式入口（Phase 14インベントリで確認）。計画本編の計画の構成でも実施計画の位置付けを確認した",
+     "evidence_role": "implementation_plan_and_progress",
+     "format": "html",
+     "id": "wakayama-implementation-2024-2026",
+     "official_url": "https://www.city.wakayama.wakayama.jp/shisei/1009206/1009403/index.html",
+     "title": "第5次和歌山市長期総合計画 実施計画",
+     "use_boundary": "自治体の点検・見直しをJichi Insight独自の達成評価や因果効果へ変換しない。実施計画の進捗と財政決算は別Evidence roleとして保持する",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    },
+    {
+     "evidence_location": "FY2026当初予算の議決は、市議会公式『令和8年2月定例市議会 審議結果』で議案第31号『令和8年度和歌山市一般会計予算』が2026年3月13日に『可決』されたことを確認した。当初予算額165,768,945千円は、和歌山市公報（告示第247号別冊・2026年6月30日）掲載の令和8年度一般会計補正予算（第1号）第1条（補正額2,863,767千円を追加し総額168,632,712千円）から算術的に特定したもので、当初予算書そのものの直接確認は未了である",
+     "evidence_role": "budget",
+     "format": "html",
+     "id": "wakayama-budget-2026",
+     "official_url": "https://www.city.wakayama.wakayama.jp/shisei/zaisei/1033880/1066991/1066992.html",
+     "title": "令和8年度一般会計予算",
+     "use_boundary": "FY2026当初予算は補正予算・決算と別stateで保持する。金額は千円単位の公表値であり、円単位を合成しない。議決結果は審議結果の文言どおり『可決』として記録する",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    },
+    {
+     "evidence_location": "FY2024決算額は、同ページから公表される『令和6年度決算』歳入歳出決算総括表（一般会計）で、収入済額171,406,400,509円・支出済額167,796,054,596円・差引残額3,610,345,913円を確認し検算一致した。実質収支は実質収支に関する調書（総括表・千円単位）の3,361,400千円（差引3,610,346千円－翌年度へ繰り越すべき財源248,946千円）で、監査委員の決算審査意見書（和監査第49号・2025年9月1日）でも同値が確認されている。決算の認定は市議会公式『12月定例会採決状況』（令和7年12月定例会）で、認第6号を含む各会計決算の認定の結果が『認定』であることを確認した（認定の正確な議決日は同資料に印字がなく未特定）",
+     "evidence_role": "settlement",
+     "format": "html",
+     "id": "wakayama-settlement-2024",
+     "official_url": "https://www.city.wakayama.wakayama.jp/shisei/zaisei/1001161/index.html",
+     "title": "決算",
+     "use_boundary": "FY2024決算は予算・補正と別stateで保持する。歳入・歳出は総括表に印字された円単位の精密値であり、実質収支は調書の千円精度のまま記録し円単位を合成しない。認定結果は採決状況の文言どおり『認定』として記録する",
+     "verification_status": "primary_source_live_verified_2026-11-16"
+    }
+   ]
+  }
+ },
+ "deferred_depth": [
+  {
+   "boundary": "26政策の下の施策・事業・指標の全件列挙は追加depthとし、公式対応が確認できるまで昇格しない。4つの分野別目標・26政策の体系自体は候補に保持するが、政策の下の施策・事業単位の対応付けは行わない。",
+   "id": "current-plan-granular-kpi-and-project-linkage",
+   "status": "deferred_not_required_for_candidate_staging"
+  },
+  {
+   "boundary": "FY2026当初予算の議決結果（議案第31号・可決・議決日2026年3月13日）は市議会公式の審議結果による確認を完了し、候補の財政記録・証拠パケット側に反映している。ただし当初予算額165,768,945千円は補正予算（第1号）第1条からの算術的特定であり、当初予算書・当初予算の概要そのものによる直接確認は未実施のまま保持する。FY2024決算の認定結果（認第6号・認定）は市議会公式の採決状況による確認を完了したが、認定の正確な議決日は同資料に印字がなく未特定のまま保持する。予算書・決算書の事項別明細書の款別合計との最終突合と、監査委員の決算審査意見書の内容精査は未実施のまま保持する。",
+   "id": "fiscal-vote-and-certification-verification",
+   "status": "deferred_not_required_for_candidate_staging"
+  },
+  {
+   "boundary": "前総合計画（第4次長期総合計画）の事業・評価の全件列挙は本候補では行わない。第5次計画はFY2026が最終年度であり、次期計画の策定状況は未確認のため、確定するまで現行計画へ先取りしない。",
+   "id": "plan-transition-version-depth",
+   "status": "deferred_not_required_for_candidate_staging"
+  },
+  {
+   "boundary": "和歌山市総合計画・進捗管理・財政等のステージングは政策効果の因果認定や他都市比較可能性を意味しない。進捗管理（自治体の点検・見直しの枠組み）をJichi Insight独自の達成判定へ変換しない。",
+   "id": "policy-outcome-causal-and-cross-city-comparability",
+   "status": "deferred_not_required_for_candidate_staging"
+  }
+ ],
+ "human_review": {
+  "boundary": "A person must check the candidate against the cited primary sources before any promotion to reviewed_complete.",
+  "required": true,
+  "reviewed_at": null,
+  "reviewer_note": null,
+  "status": "pending"
+ },
+ "name_ja": "和歌山市",
+ "official_code": "302015",
+ "package_state": "prepared",
+ "phase": 15,
+ "publication": {
+  "boundary": "Candidate data is staging-only and must not be loaded by the public site or treated as reviewed data.",
+  "eligible": false
+ },
+ "quality_boundaries": [
+  "Promoted facts must come from official primary sources with stable evidence locators.",
+  "Unpublished, unavailable, historical-only, draft, and unresolved facts must remain explicit.",
+  "No Jichi Insight policy-achievement score, causal attribution, or unverified cross-city ranking may be created.",
+  "This candidate is machine-prepared evidence only and is not Reviewed until a person checks the primary sources."
+ ],
+ "schema_version": 1,
+ "source_inventory_path": "data/indexed/wakayama-city/source_inventory.json",
+ "status": "review_candidate"
+}
