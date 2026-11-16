@@ -1,0 +1,62 @@
+{
+  "id": "phase15-hirakata-plan-review",
+  "name_ja": "枚方市",
+  "next_action": "Promote the individual projects under the 32 policy-goal units (28 policy goals and four plan-promotion units) and 79 policies (as listed in the Third Action Plan's policy sheets) and the per-policy indicator values (subjective and objective indicators) only when official sources with stable record-level locators have been reviewed; complete the final cross-check against the budget book and the settlement book （事項別明細書） at section level; confirm the content of the audit commissioners' settlement review opinion; directly confirm the real-balance statement itself in the settlement book; record the next comprehensive plan (starting FY2028, now being formulated) only as a separate version, and never connect the current plan's policy goals or policies forward into the next plan period. Keep supplementary budgets, execution, and fiscal detail as separate states.",
+  "official_code": "272108",
+  "quality_boundary": "This package reviews the current plan identity and period (the Fifth Hirakata City Comprehensive Plan, in a three-layer basic-concept / basic-plan / action-plan structure; the basic concept starts in FY2016 and sets no fixed plan period, presenting the future image 『持続的に発展し、一人ひとりが輝くまち 枚方』 and five basic goals; the basic plan covers FY2016-FY2027; the action plan runs in four-year periods, the current Third Action Plan covering FY2024-FY2027, holding 28 policy goals and four plan-promotion units (32 policy-goal units in total) with 79 policies, all enumerated), the progress-governance layer (annual verification and evaluation of the action plan — internal evaluation plus external evaluation by policy evaluators — using project results, indicators and citizen satisfaction, with the Third Action Plan revised at budget-compilation time and the basic plan verified and evaluated on a four-year PDCA cycle, kept as the municipality's own progress-management framework), the enacted FY2026 initial budget at the published sen-yen (thousand-yen) precision (bill 議案第84号, passed as proposed on 2026-03-27 per the council's official voting-results list, with both the wording and the date confirmed directly in that document), and the FY2024 settlement at yen precision as published, without collapsing proposed, enacted, supplementary, or settlement states. The FY2024 settlement certification bill (bill 認定第1号) was referred to the settlement special committee on the first day of the September 2025 regular session and was certified on 2025-10-17 at that session: that outcome is recorded exactly as published. The real balance of 1,938,746,472 yen is kept at yen precision as published in the settlement summary document; the real-balance statement page in the settlement book itself could not be read (fonts not embedded), so direct confirmation of that statement itself remains open. FY2024 is a settlement inside the basic plan period and is the first year of the Third Action Plan, so the plan version is the same as the current plan, but no official total-level mapping from settlement totals to the plan's 28 policy goals or 79 policies exists, so the linkage stays not_assessable. The transition to the next comprehensive plan (starting FY2028, now being formulated, which keeps the Fifth Plan's basic concept as its base and revises the basic plan) is kept only as a version chronology record.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "枚方市公式Webサイト『第5次枚方市総合計画について』ページ（現行計画の公式入口。Phase 14インベントリで確認）の策定経緯の説明（平成28年3月8日議決、3月14日策定）、同ページ掲載の公式『第5次枚方市総合計画』本編『基本構想』（めざすまちの姿・5つの基本目標）、および公式『第3期実行計画』本編『はじめに』（計画の構成と期間。基本構想は計画期間を設定しない・基本計画は平成28年度～令和9年度の12年間・実行計画は4年間）で直接確認",
+      "evidence_role": "current_plan_identity",
+      "id": "hirakata-current-plan-period",
+      "review_note": "基本構想（期間設定なし）・基本計画（2016年度～2027年度）・実行計画（4年間・第3期）の3層構成を別period semanticsとして保持した。レビュー済みレコード。",
+      "source_url": "https://www.city.hirakata.osaka.jp/0000007699.html",
+      "statement": "枚方市の総合計画は第5次枚方市総合計画であり、基本構想・基本計画・実行計画の3層で構成する。基本構想は平成28（2016）年度を計画始期として計画期間を設定せず、長期的な視点に立って、めざすまちの姿を『持続的に発展し、一人ひとりが輝くまち 枚方』とし、その実現に向けて5つの基本目標を定める。基本計画は、基本構想の具体化を図るため、平成28（2016）年度から令和9（2027）年度までの12年間において重点的に進める施策を示す。実行計画は、基本計画を推進するため4年間で実施していく具体的な実現計画であり、第1期（2016年度～2019年度）・第2期（2020年度～2023年度）を経て、現行は第3期（2024年度～2027年度）である。第5次総合計画は平成28年3月8日に議決され、3月14日に策定された（枚方市公式『第5次枚方市総合計画について』ページで確認）。基本構想の固定終期なし・基本計画の固定期間・実行計画の4年期間を別period semanticsとして保持し、一律の固定期間へ潰さない。Phase 14インベントリの記録（基本構想2016年度開始・計画期間を設定せず・verified_no_fixed_end）とも一致する。",
+      "title": "第5次枚方市総合計画の構成と基本構想・基本計画・実行計画の計画期間",
+      "value": "基本構想は2016年度開始・計画期間を設定しない／基本計画は2016年度～2027年度／実行計画は4年間（現行は第3期・2024年度～2027年度）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "公式『第3期実行計画＜令和6年度～令和9年度＞（令和8年10月更新）』本編の目次および各施策シートの『総合計画体系』欄（基本目標等・施策目標等）で全件直接確認し、基本目標別の施策目標数・施策数の合計で検算した",
+      "evidence_role": "policy_structure",
+      "id": "hirakata-current-policy-structure",
+      "review_note": "公式の実行計画本編で施策体系を全件確認した。レビュー済みレコード。",
+      "source_url": "https://www.city.hirakata.osaka.jp/0000049873.html",
+      "statement": "基本計画・第3期実行計画の施策体系は、基本構想の5つの基本目標のもと、28の施策目標と4つの計画推進（施策目標等29～32）を置き、各施策目標等のもとに全79施策（施策シート）を位置づける。基本目標1『安全で、利便性の高いまち』は施策目標1～5・15施策、基本目標2『健やかに、生きがいを持って暮らせるまち』は施策目標6～13・16施策、基本目標3『一人ひとりの成長を支え、豊かな心を育むまち』は施策目標14～17・18施策、基本目標4『地域資源を生かし、人々が集い活力がみなぎるまち』は施策目標18～22・10施策、基本目標5『自然と共生し、美しい環境を守り育てるまち』は施策目標23～28・10施策、計画推進は4つの計画推進・10施策を束ねる（施策目標数5+8+4+5+6=28、計画推進4、施策数15+16+18+10+10+10=79で検算一致）。32の施策目標等と79施策の全件はpolicy_structureに列挙する。",
+      "title": "基本計画の5つの基本目標・28の施策目標と4つの計画推進・全79施策"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "公式『第3期実行計画』本編『はじめに』（実行計画の進行管理について。毎年度の検証・評価、内部評価と施策評価員による外部評価、基本計画の4年ごとの検証・評価）および枚方市公式Webサイト『第3期実行計画＜令和6年度～令和9年度＞の更新内容』ページ（予算編成の時期に合わせた改訂と更新内容の公表）で確認",
+      "evidence_role": "progress_governance",
+      "id": "hirakata-progress-governance-framework",
+      "review_note": "進行管理の枠組み（毎年度の検証・評価と予算編成に合わせた改訂）を公式資料で直接確認した。評価の個別結果そのものは本パッケージでは扱わない。レビュー済みレコード。",
+      "source_url": "https://www.city.hirakata.osaka.jp/0000051624.html",
+      "statement": "第5次枚方市総合計画の進行管理は、実行計画を軸に行う。実行計画については、具体的な取り組みの実績や指標、主観的指標で把握する市民満足度を活用し、毎年度、検証・評価しながら進行管理を行い、評価結果や社会状況等を踏まえて必要に応じて見直しを行う。検証・評価は、市自ら行う内部評価と合わせて、有識者などからなる施策評価員による外部評価を行う。第3期実行計画は、4年間の計画期間において事業の見直しや喫緊の課題へ対応するため、予算編成の時期に合わせて改訂を実施し、改訂の内容（当初予算・補正予算の都度）は公式ページ『第3期実行計画の更新内容』で公表する。基本計画については4年ごとにPDCAサイクルによる検証・評価を実施し、必要に応じて改定を行う。この進行管理は自治体による進行管理の枠組みであり、Jichi Insight独自の達成判定へ変換しない。",
+      "title": "実行計画の毎年度の検証・評価（PDCA）と予算編成に合わせた改訂による進行管理"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "枚方市議会公式『総務委員協議会資料（令和7年11月21日）次期総合計画等の策定について』（第5次基本計画・第3期実行計画が令和9年度末に終期を迎えること、次期計画は令和10年度始期・基本構想は第5次を基本とし基本計画を改定する方針、策定スケジュール）および枚方市総合計画審議会の公式資料で確認",
+      "evidence_role": "plan_transition",
+      "id": "hirakata-plan-transition",
+      "review_note": "現行計画から次期計画への移行を計画のversionの履歴として記録した。次期計画は策定中であり、策定済みの計画として扱わない。レビュー済みレコード。",
+      "source_url": "https://www.city.hirakata.osaka.jp/0000007699.html",
+      "statement": "第5次枚方市総合計画の基本計画および第3期実行計画は令和9（2027）年度末をもって計画終期を迎える。令和10（2028）年度を始期とする次期総合計画の策定は進行中であり、枚方市議会総務委員協議会資料（令和7年11月21日）によれば、次期総合計画においても第5次総合計画の基本構想を基本とし、基本計画については現下の社会情勢や地域課題、市民ニーズなどを踏まえて改定を行う方針である。策定スケジュール（想定）は、枚方市総合計画審議会を令和9年度まで開催し、令和9年度に総合計画の策定について議案を提出し、総合計画の策定・公表を行うものとされている。各計画はversionを分けて保持し、現行計画の施策を次期計画の期間へ前倒し接続しない。",
+      "title": "第5次枚方市総合計画から次期総合計画（2028年度始期・策定中）への移行"
+    },
+    {
+      "decision": "not_assessable",
+      "evidence_location": "FY2024決算の公式入口はPhase 14インベントリの決算資料（令和6年度決算ページ・決算書・決算概要説明書）。決算総額と第5次総合計画の施策目標・施策との対応付けは公式資料の総額レベルでは示されていない",
+      "evidence_role": "annual_progress",
+      "id": "hirakata-fy2024-settlement-linkage",
+      "review_note": "総額レベルの対応付けがないため、接続を推測で記録しない明示的な未判定レコード。決算と施策目標・施策の対応付けは人間レビュー工程の作業。",
+      "source_url": "https://www.city.hirakata.osaka.jp/0000052610.html",
+      "statement": "FY2024決算値と第5次枚方市総合計画の28の施策目標・4つの計画推進・79施策との接続は未判定（not_assessable）。FY2024は基本計画（2016年度～2027年度）の計画期間内であり、第3期実行計画（2024年度～2027年度）の初年度の決算で計画versionは同一であるが、決算総額は会計別の集計値であり、施策目標・施策との総額レベルの対応付けは公式資料に示されていない。第3期実行計画の施策シートは施策ごとの取組・指標で進行管理するが、FY2024決算総額との対応付けは行われていない。FY2024決算の精密値そのものは公式決算書で確認済みであるが、決算と施策目標・施策の対応付けは人間レビュー工程の作業とする。",
+      "title": "令和6年度決算と第5次枚方市総合計画の28の施策目標・79施策の接続"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-16"
+}

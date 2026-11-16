@@ -560,13 +560,25 @@ Declared v1 package:
 
 Deferred depth includes the individual major projects under the 29 measures and 139 measure directions, the per-measure indicator values, cross-checks against the budget book and the settlement book （事項別明細書） at section level, the content of the audit commissioners' settlement review opinion, the Fifth Plan's framework itself, the next comprehensive plan, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
 
+## Thirty-ninth completion — Hirakata
+
+枚方市を39番目の`reviewed_complete`へ昇格しました（2026-11-16、所有者・大杉邑大が2026-11-15にチャットで『レビューはあなたがやってください。それで大丈夫です』と明示してレビューをClaudeへ委任し、Claudeが一次資料で検証したことに基づく。所有者本人が一次資料を直接レビューしたものではない）。
+
+Declared v1 package:
+
+- current plan: 第5次枚方市総合計画 — in a three-layer structure of basic concept （基本構想）, basic plan （基本計画） and action plan （実行計画）. The basic concept starts in FY2016 and sets no fixed plan period, presenting the future image 『持続的に発展し、一人ひとりが輝くまち 枚方』 and five basic goals; the basic plan covers FY2016-FY2027 (twelve years); the action plan runs in four-year periods (the current Third Action Plan covers FY2024-FY2027). The basic plan and the Third Action Plan hold 28 policy goals and four plan-promotion units (32 policy-goal units in total) under the five basic goals, with 79 policies in total (all 32 policy-goal units and all 79 policies are enumerated). Progress is managed around the action plan: each year the municipality verifies and evaluates the action plan using the results of concrete initiatives, indicators and citizen satisfaction captured through subjective indicators (internal evaluation plus external evaluation by policy evaluators), and the Third Action Plan is revised at budget-compilation time, while the basic plan is verified and evaluated on a four-year PDCA cycle — the municipality's own progress-management framework. The transition to the next comprehensive plan (starting FY2028, now being formulated, which keeps the Fifth Plan's basic concept as its base and revises the basic plan) is kept only as a version chronology record, and the current plan's content is never connected forward into the next plan period
+- FY2026 general-account initial budget: 176,300,000 thousand yen (enacted; bill 議案第84号 『令和8年度大阪府枚方市一般会計予算』, referred to the budget special committee at the March 2026 regular session on its first day (2026-02-24) and passed as proposed （原案可決） on the fifth day (2026-03-27) per the council's official voting-results list (『付議事件議決結果一覧』), with both the published wording and the voting date confirmed directly in that document rather than inferred from the session schedule). The amount is published at sen-yen (thousand-yen) precision, so it is kept at that precision and yen-precision amounts are not synthesized
+- FY2024 general-account settlement at yen precision as published: revenue 167,040,111,596 yen / expenditure 164,593,615,013 yen (their difference of 2,446,496,583 yen matches the balance printed in the official settlement book; the real balance is 1,938,746,472 yen per the settlement summary document （決算概要説明書）, kept at yen precision because that document publishes it in yen; the real-balance statement page in the settlement book itself could not be read because its fonts are not embedded, so direct confirmation of that statement itself remains unconfirmed). The settlement certification bill, bill 認定第1号 『令和6年度大阪府枚方市一般会計歳入歳出決算の認定について』, was referred to the settlement special committee on the first day of the September 2025 regular session (2025-09-05) and certified on the seventh day (2025-10-17) per the council's official voting-results list. FY2024 is a settlement inside the basic plan period and is the first year of the Third Action Plan, so the plan version is the same as the current plan, but no official total-level mapping from settlement totals to the plan's 28 policy goals or 79 policies exists, so the totals are not linked to the plan's policy goals or policies and the linkage stays not_assessable
+
+Deferred depth includes the individual projects under the 32 policy-goal units and 79 policies, the per-policy indicator values (subjective and objective indicators), cross-checks against the budget book and the settlement book （事項別明細書） at section level, the content of the audit commissioners' settlement review opinion, direct confirmation of the real-balance statement itself in the settlement book, the next comprehensive plan's framework itself, supplementary-budget history, fiscal project detail, causality and cross-city comparability.
+
 ## Current queue
 
-- Reviewed complete: 38 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市
+- Reviewed complete: 39 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市
 - Review in progress: 0
-- Pending record review: 29
+- Pending record review: 28
 - Blocked source inventory: 0
-- Next official code: 272108
+- Next official code: 272124
 
 ## Definition of Phase 15 completion
 

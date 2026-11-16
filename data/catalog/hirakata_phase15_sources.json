@@ -1,0 +1,55 @@
+{
+  "id": "hirakata-phase15-sources",
+  "name_ja": "枚方市",
+  "official_code": "272108",
+  "phase": 15,
+  "quality_boundary": "Current plan identity kept as published (the Fifth Hirakata City Comprehensive Plan in a three-layer basic-concept / basic-plan / action-plan structure; the basic concept starts in FY2016 and sets no fixed plan period, presenting the future image 『持続的に発展し、一人ひとりが輝くまち 枚方』 and five basic goals; the basic plan covers FY2016-FY2027; the action plan runs in four-year periods, the current Third Action Plan covering FY2024-FY2027, holding 28 policy goals and four plan-promotion units — 32 policy-goal units in total — and 79 policies, all enumerated; the next comprehensive plan, starting FY2028 and now being formulated, is kept only as a separate version), progress governance (annual verification and evaluation of the action plan through internal evaluation and external evaluation by policy evaluators, with the Third Action Plan revised at budget-compilation time, kept as the municipality's own progress-management framework), budget enactment confirmed on the council's official voting-results list (bill 議案第84号, passed as proposed on 2026-03-27, with the wording and the date confirmed directly in that document) with the amount kept at the published sen-yen precision and never expanded into synthetic yen, and settlement totals kept at the published yen precision from the official settlement book (the settlement certification bill 認定第1号 was certified on 2025-10-17 at the September 2025 regular session; the real balance of 1,938,746,472 yen is kept at yen precision as published in the settlement summary document, while the real-balance statement itself in the settlement book remains unconfirmed) without collapsing proposed, enacted, supplementary, or settlement states.",
+  "reviewed_at": "2026-11-16",
+  "sources": [
+    {
+      "evidence_location": "枚方市公式Webサイト『第5次枚方市総合計画について』ページは現行計画の公式入口（Phase 14インベントリで確認）。策定経緯（平成28年3月8日議決、3月14日策定）の説明と、同ページ掲載の公式『第5次枚方市総合計画』本編（表紙・あいさつ・目次、総合計画の策定について、基本構想、基本計画、付属資料）・概要版へのリンクを含む",
+      "evidence_role": "comprehensive_plan",
+      "format": "html",
+      "id": "hirakata-fifth-plan",
+      "official_url": "https://www.city.hirakata.osaka.jp/0000007699.html",
+      "title": "第5次枚方市総合計画について",
+      "use_boundary": "現行計画は第5次枚方市総合計画（基本構想は2016年度開始・計画期間を設定せず、基本計画は2016年度～2027年度）として保持し、基本構想に便宜的な終了年度を付与しない"
+    },
+    {
+      "evidence_location": "枚方市公式Webサイト『第3期実行計画＜令和6年度～令和9年度＞』ページは実行計画の公式入口（Phase 14インベントリで確認）。第3期実行計画本編（令和8年10月更新版・令和8年2月更新版等の各版。表紙・目次、はじめに～基本目標1、基本目標2～5、計画推進、SDGs）へのリンクを含む",
+      "evidence_role": "implementation_plan",
+      "format": "html",
+      "id": "hirakata-third-action-plan",
+      "official_url": "https://www.city.hirakata.osaka.jp/0000049873.html",
+      "title": "第3期実行計画＜令和6年度～令和9年度＞",
+      "use_boundary": "第3期実行計画（2024年度～2027年度）は基本計画（2016年度～2027年度）・基本構想（期間設定なし）と期間の意味を分離して保持し、実行計画の施策シートの取組・指標をJichi Insight独自の達成率へ変換しない。また、実行計画の施策は計画・進行管理の対象であり、決算総額と同一視しない"
+    },
+    {
+      "evidence_location": "枚方市公式Webサイト『第3期実行計画＜令和6年度～令和9年度＞の更新内容』ページは実行計画の改訂の公式入口（Phase 14インベントリで確認）。当初予算・補正予算の都度の更新内容（令和8年度9月追加補正予算・令和8年度当初予算・令和7年度12月補正予算等）へのリンクを含む",
+      "evidence_role": "progress_governance",
+      "format": "html",
+      "id": "hirakata-action-plan-update",
+      "official_url": "https://www.city.hirakata.osaka.jp/0000051624.html",
+      "title": "第3期実行計画＜令和6年度～令和9年度＞の更新内容",
+      "use_boundary": "実行計画の更新・改訂は自治体の進行管理の記録として保持し、政策達成や政策効果の独自判定へ変換しない"
+    },
+    {
+      "evidence_location": "枚方市公式Webサイト『令和8年度当初予算』ページはFY2026当初予算の公式入口（Phase 14インベントリで確認）。会計別予算額表（一般会計176,300,000千円）・当初予算額の推移・予算編成過程と、一般会計歳入・歳出予算書（事項別明細書）等へのリンクを含む",
+      "evidence_role": "budget",
+      "format": "html",
+      "id": "hirakata-budget-2026",
+      "official_url": "https://www.city.hirakata.osaka.jp/0000053350.html",
+      "title": "令和8年度予算",
+      "use_boundary": "FY2026当初予算は成立予算（議案第84号・令和8年3月27日原案可決）として保持し、補正予算・決算と別stateで扱う"
+    },
+    {
+      "evidence_location": "枚方市公式Webサイト『令和6年度決算』ページはFY2024決算の公式入口（Phase 14インベントリで確認）。同ページ掲載の公式『令和6年度歳入歳出決算書』（一般会計・各特別会計）で歳入・歳出の円単位総額を確認し、公式『令和6年度決算概要説明書』の会計別収支表で実質収支額（円単位）を確認した",
+      "evidence_role": "settlement",
+      "format": "html",
+      "id": "hirakata-settlement-2024",
+      "official_url": "https://www.city.hirakata.osaka.jp/0000052610.html",
+      "title": "令和6年度決算",
+      "use_boundary": "FY2024決算は第5次枚方市総合計画の基本計画期間内（2016年度～2027年度）・第3期実行計画初年度の決算として保持し、決算総額を計画の施策目標・施策の実績へ流用しない。認定議案（認定第1号）は令和7年10月17日に認定されたものとして保持する"
+    }
+  ]
+}
