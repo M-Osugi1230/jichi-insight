@@ -1,0 +1,168 @@
+[
+  {
+    "id": "jp-local-401005-project-2024-mega-region-promotion-kpi-overnight-guests",
+    "project_id": "jp-local-401005-project-2024-mega-region-promotion",
+    "name": "北九州都市圏域内の宿泊者数",
+    "definition": "北九州都市圏域内における宿泊者数（成果指標）。行政評価の事業評価票に掲載された値をそのまま記録する。",
+    "unit": "千人",
+    "direction": "increase",
+    "baseline": {
+      "period": "令和元年度",
+      "value": 2338,
+      "status": "available",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-policy"
+      ]
+    },
+    "target": {
+      "period": "目標年度の印字なし",
+      "value": 2268,
+      "status": "available",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-policy"
+      ]
+    },
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "value": null,
+        "status": "not_published",
+        "source_ids": [
+          "kitakyushu-admin-eval-fy2024-policy"
+        ]
+      }
+    ],
+    "assessment": "not_assessable",
+    "causality_note": "圏域内の宿泊者数と観光消費額は、経済動向や観光需要全体など本事業以外の要因の影響を強く受ける指標であり、数値の変動が本事業の成果であるとは限らない。北九州市も評価にあたって活動指標（連携都市との協議数）を併せて参照している。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "kitakyushu-admin-eval-fy2024-policy"
+    ]
+  },
+  {
+    "id": "jp-local-401005-project-2024-mega-region-promotion-kpi-kanmon-tourism-consumption",
+    "project_id": "jp-local-401005-project-2024-mega-region-promotion",
+    "name": "関門エリアの観光消費額の増加",
+    "definition": "関門エリアにおける観光消費額（成果指標）。行政評価の事業評価票に掲載された値をそのまま記録する。",
+    "unit": "億円",
+    "direction": "increase",
+    "baseline": {
+      "period": "令和3年度",
+      "value": 646.8,
+      "status": "available",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-policy"
+      ]
+    },
+    "target": {
+      "period": "令和7年度",
+      "value": 2230.3,
+      "status": "available",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-policy"
+      ]
+    },
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "value": null,
+        "status": "not_published",
+        "source_ids": [
+          "kitakyushu-admin-eval-fy2024-policy"
+        ]
+      }
+    ],
+    "assessment": "not_assessable",
+    "causality_note": "圏域内の宿泊者数と観光消費額は、経済動向や観光需要全体など本事業以外の要因の影響を強く受ける指標であり、数値の変動が本事業の成果であるとは限らない。北九州市も評価にあたって活動指標（連携都市との協議数）を併せて参照している。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "kitakyushu-admin-eval-fy2024-policy"
+    ]
+  },
+  {
+    "id": "jp-local-401005-project-2024-information-dissemination-kpi-line-friends",
+    "project_id": "jp-local-401005-project-2024-information-dissemination",
+    "name": "市公式LINEの友だち登録者数",
+    "definition": "北九州市公式LINEの友だち登録者数（成果指標）。事業評価票の達成率は103.2%。目標値は毎年度設定され、令和6年度は90,000人、令和7年度は100,000人（主要事務事業リストで確認）。",
+    "unit": "人",
+    "direction": "increase",
+    "baseline": {
+      "period": "令和5年度",
+      "value": 81343,
+      "status": "available",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-mayor"
+      ]
+    },
+    "target": {
+      "period": "令和6年度",
+      "value": 90000,
+      "status": "available",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-mayor",
+        "kitakyushu-new-vision-project-list-r6r7-mayor"
+      ]
+    },
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "value": 92857,
+        "status": "available",
+        "source_ids": [
+          "kitakyushu-admin-eval-fy2024-mayor"
+        ]
+      }
+    ],
+    "assessment": "achieved",
+    "causality_note": "登録者数は本事業の機能強化の取組と関連するが、SNS・LINEの利用動向など事業以外の要因にも影響されるため、増加分すべてが本事業の成果であるとは限らない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "kitakyushu-admin-eval-fy2024-mayor",
+      "kitakyushu-new-vision-project-list-r6r7-mayor"
+    ]
+  },
+  {
+    "id": "jp-local-401005-project-2024-disaster-stockpile-kpi-stockpile-adequacy",
+    "project_id": "jp-local-401005-project-2024-disaster-stockpile",
+    "name": "備蓄の適正量の整備",
+    "definition": "想定最大避難者数（約22,000人）を基に定めた備蓄の適正量（非常用食料・飲料水・ミルクの3品目で構成される複合指標）。事業評価票の達成率は100.0%。",
+    "unit": "複合（食料・飲料水・ミルク）",
+    "direction": "maintain",
+    "baseline": {
+      "period": "令和5年度",
+      "value": "食料198,000食・飲料水6,600リットル・ミルク2,400食",
+      "status": "available",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-projects"
+      ]
+    },
+    "target": {
+      "period": "令和6年度",
+      "value": "食料198,000食・飲料水6,600リットル・ミルク2,400食",
+      "status": "available",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-projects"
+      ]
+    },
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "value": "食料198,000食・飲料水6,600リットル・ミルク2,400食",
+        "status": "available",
+        "source_ids": [
+          "kitakyushu-admin-eval-fy2024-projects"
+        ]
+      }
+    ],
+    "assessment": "achieved",
+    "causality_note": "備蓄量は市の購入・入替計画によって直接決まる量であり、計画どおり整備されたことを示す指標である。災害時に十分な量かどうかは、想定最大避難者数など前提条件に依存し、この指標だけでは判断できない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "kitakyushu-admin-eval-fy2024-projects"
+    ]
+  }
+]

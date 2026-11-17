@@ -1,0 +1,67 @@
+{
+  "version": "0.1.0",
+  "updated_at": "2026-11-17",
+  "municipality_id": "jp-local-401005",
+  "municipality_key": "kitakyushu-city",
+  "issue": 7,
+  "scope": "pilot",
+  "population": {
+    "description": "北九州市・新ビジョン（基本構想・基本計画、令和6年3月策定）の98の主な施策を構成する主要事務事業のうち、令和6年度に実施され行政評価（事業評価）の対象となった198事業。北九州市自治基本条例第18条に基づく行政評価の公式母集団。",
+    "fiscal_year": 2024,
+    "project_count": 198,
+    "policy_count": 98,
+    "source_ids": [
+      "kitakyushu-admin-eval-fy2024-overview"
+    ]
+  },
+  "selection_rule": {
+    "description": "新ビジョンの重点戦略（施策の柱）ごとに、公式資料（令和6年度行政評価の取組結果・事業評価）の掲載順で先頭の事業を1件ずつ選ぶ。掲載順は、概要資料の目次に示された局の順序（市長公室、危機管理室、技術監理局、政策局、総務市民局、財政・変革局、保健福祉局、子ども家庭局、環境局、産業経済局、都市ブランド創造局、都市戦略局、都市整備局、港湾空港局、消防局、上下水道局、教育委員会）と、各局内での重点戦略見出しの出現順および事務事業番号の順序で定める。金額の大小では選ばない。",
+    "pillars": [
+      "I「稼げるまち」の実現",
+      "II「彩りあるまち」の実現",
+      "III「安らぐまち」の実現"
+    ]
+  },
+  "selections": [
+    {
+      "pillar": "I「稼げるまち」の実現",
+      "bureau": "政策局",
+      "bureau_project_number": 1,
+      "project_id": "jp-local-401005-project-2024-mega-region-promotion",
+      "series_id": "jp-local-401005-project-series-mega-region-promotion",
+      "official_title": "メガリージョン推進事業",
+      "selection_basis": "市長公室・危機管理室・技術監理局には重点戦略Iの事業掲載がなく、政策局の見出しIの先頭（事務事業番号1）が全体の掲載順で最初の重点戦略I事業。",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-policy",
+        "kitakyushu-admin-eval-fy2024-overview"
+      ]
+    },
+    {
+      "pillar": "II「彩りあるまち」の実現",
+      "bureau": "市長公室",
+      "bureau_project_number": 1,
+      "project_id": "jp-local-401005-project-2024-information-dissemination",
+      "series_id": "jp-local-401005-project-series-information-dissemination",
+      "official_title": "情報発信強化事業",
+      "selection_basis": "掲載順の最初の局である市長公室の見出しIIの先頭（事務事業番号1）。",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-mayor",
+        "kitakyushu-admin-eval-fy2024-overview"
+      ]
+    },
+    {
+      "pillar": "III「安らぐまち」の実現",
+      "bureau": "危機管理室",
+      "bureau_project_number": 1,
+      "project_id": "jp-local-401005-project-2024-disaster-stockpile",
+      "series_id": "jp-local-401005-project-series-disaster-stockpile",
+      "official_title": "大規模災害に備えた備蓄整備事業",
+      "selection_basis": "市長公室には重点戦略IIIの事業掲載がなく、危機管理室の見出しIIIの先頭（事務事業番号1）が全体の掲載順で最初の重点戦略III事業。",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-projects",
+        "kitakyushu-admin-eval-fy2024-overview"
+      ]
+    }
+  ],
+  "review_status": "reviewed"
+}
