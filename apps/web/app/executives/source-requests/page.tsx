@@ -14,9 +14,13 @@ import {
   sourceRequestStatusLabel,
 } from "@/lib/sourceRequests";
 
+import { canonicalFor } from "@/lib/pageMetadata";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: canonicalFor("/executives/source-requests"),
+  },
   title: "公約資料の照会案",
   description:
     "公約原文資料を確認するために準備した行政機関への照会案と、送信・回答状況を公開します。",

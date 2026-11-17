@@ -12,9 +12,13 @@ import {
   kitakyushuSettlementRecord,
 } from "@/lib/kitakyushuFinance";
 
+import { canonicalFor } from "@/lib/pageMetadata";
 import styles from "../fukuoka-prefecture/page.module.css";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: canonicalFor("/municipalities/kitakyushu-city"),
+  },
   title: "北九州市｜2026年度当初予算案と2024年度決算",
   description:
     "北九州市の2026年度一般会計当初予算案と2024年度一般会計決算を、公式資料の該当ページと確認状態付きで表示します。",

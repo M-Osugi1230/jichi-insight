@@ -17,9 +17,13 @@ import {
 } from "@/lib/hokkaidoPolicies";
 import { nationwidePrefectureCoverage } from "@/lib/nationwideCoverage";
 
+import { canonicalFor } from "@/lib/pageMetadata";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: canonicalFor("/municipalities/hokkaido"),
+  },
   title: `北海道｜政策指標1〜${hokkaidoIndicatorReviewStats.reviewedIndicators}`,
   description:
     `北海道総合計画の政策体系とReviewed指標1〜${hokkaidoIndicatorReviewStats.reviewedIndicators}を、分野、現状値、中間目標、最終目標、比較上の注意、根拠資料とともに確認できます。`,

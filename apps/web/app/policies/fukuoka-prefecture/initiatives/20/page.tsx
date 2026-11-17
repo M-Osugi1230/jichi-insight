@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
 import { PolicyTargetDetail } from "@/components/PolicyTargetDetail";
 import { policyTargetPage } from "@/lib/policyTargets";
+import { canonicalFor } from "@/lib/pageMetadata";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: canonicalFor("/policies/fukuoka-prefecture/initiatives/20"),
+  },
   title: "安全で安心して暮らせる地域づくり｜数値目標",
   description: "福岡県総合計画の取組20に設定された7つの固有数値目標を、犯罪、飲酒運転、交通事故、消費者安全、食品監視、再掲範囲、実績未接続状態とともに確認できます。",
 };

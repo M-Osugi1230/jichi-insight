@@ -13,9 +13,13 @@ import {
   formatExactYen,
 } from "@/lib/finance";
 
+import { canonicalFor } from "@/lib/pageMetadata";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: canonicalFor("/municipalities/fukuoka-prefecture"),
+  },
   title: "福岡県｜当初予算と普通会計決算",
   description:
     "福岡県の2026年度一般会計当初予算と2020〜2024年度普通会計決算を、公式資料の該当ページと確認状態付きで表示します。",

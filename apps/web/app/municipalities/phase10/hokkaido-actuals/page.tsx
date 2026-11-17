@@ -12,9 +12,13 @@ import {
   partialReasonLabel,
 } from "@/lib/hokkaidoAnnualActuals";
 
+import { canonicalFor } from "@/lib/pageMetadata";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: canonicalFor("/municipalities/phase10/hokkaido-actuals"),
+  },
   title: "北海道 108指標の年度実績接続｜Phase 10",
   description:
     "北海道総合計画の108指標を令和6年度推進状況へ照合し、年度実績へ接続した指標と版・定義・単位変更を分けて公開します。",

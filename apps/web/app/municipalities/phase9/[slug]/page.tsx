@@ -11,6 +11,7 @@ import {
   loadPhase9Summary,
   phase9SourceLocation,
 } from "@/lib/phase9Targets";
+import { canonicalFor } from "@/lib/pageMetadata";
 
 import styles from "../phase9.module.css";
 
@@ -40,6 +41,9 @@ export async function generateMetadata({
   return {
     title: `${catalog.name}｜主要数値目標Reviewed`,
     description: `${catalog.name}の主要数値目標${catalog.reviewed_target_statement_count}件を、公式資料の原文・資料位置・Evidenceとともに公開します。`,
+    alternates: {
+      canonical: canonicalFor(`/municipalities/phase9/${catalog.slug}`),
+    },
   };
 }
 

@@ -10,9 +10,13 @@ import {
   kagawaReviewManifest,
 } from "@/lib/kagawaIndicators";
 
+import { canonicalFor } from "@/lib/pageMetadata";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: canonicalFor("/municipalities/kagawa"),
+  },
   title: "香川県｜延長後計画の135指標",
   description:
     "「人生100年時代のフロンティア県・香川」実現計画の135指標を、現状値、延長前目標、延長後目標、Evidenceとともに公開します。",

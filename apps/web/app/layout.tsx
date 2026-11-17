@@ -1,9 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 
-import "./globals.css";
+import { defaultOgImages, siteUrl } from "@/lib/pageMetadata";
 
-const siteUrl = "https://m-osugi1230.github.io/jichi-insight";
+import "./globals.css";
 
 export const metadata: Metadata = {
   // metadataBase is the origin only, on purpose: Next.js prefixes
@@ -23,12 +23,16 @@ export const metadata: Metadata = {
   // og:title / og:description are intentionally NOT set here: Next.js falls
   // back to each page's own title/description, so shared links preview with
   // the page's content instead of this generic copy. The homepage sets its
-  // own openGraph in app/page.tsx. Images come from app/opengraph-image.png.
+  // own openGraph in app/page.tsx. The default image is declared here (and
+  // in lib/pageMetadata) so pages that declare no image of their own share
+  // the site image; templates whose generateMetadata replaces the inherited
+  // openGraph object pass the same default explicitly.
   openGraph: {
     type: "website",
     locale: "ja_JP",
     url: siteUrl,
     siteName: "Jichi Insight",
+    images: defaultOgImages,
   },
   twitter: {
     card: "summary_large_image",

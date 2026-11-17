@@ -22,9 +22,13 @@ import {
   type Phase10UniformRecord,
 } from "@/lib/phase10";
 
+import { canonicalFor } from "@/lib/pageMetadata";
 import styles from "./phase10.module.css";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: canonicalFor("/municipalities/phase10"),
+  },
   title: "Phase 10｜全国47都道府県の情報深度をそろえる",
   description:
     "全国47都道府県がPhase 10の共通品質ゲートへ到達した完了状態と、文書スコープ・個票スコープの境界を公開します。",

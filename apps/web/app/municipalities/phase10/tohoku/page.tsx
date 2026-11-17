@@ -10,9 +10,13 @@ import {
   regionalDepthLabels,
 } from "@/lib/phase10RegionalDepth";
 
+import { canonicalFor } from "@/lib/pageMetadata";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: canonicalFor("/municipalities/phase10/tohoku"),
+  },
   title: "Phase 10 東北｜5県の年度実績・予算・決算・事業・監査",
   description:
     "青森県、岩手県、秋田県、山形県、福島県について、年度実績、予算、決算、重点事業、監査の公式資料と未接続範囲を公開します。",

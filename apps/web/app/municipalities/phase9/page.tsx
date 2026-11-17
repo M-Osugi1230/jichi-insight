@@ -7,9 +7,13 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { StatusBadge } from "@/components/StatusBadge";
 import { loadPhase9Summary } from "@/lib/phase9Targets";
 
+import { canonicalFor } from "@/lib/pageMetadata";
 import styles from "./phase9.module.css";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: canonicalFor("/municipalities/phase9"),
+  },
   title: "Phase 9｜38県の主要数値目標Reviewed",
   description:
     "Phase 9対象38県の主要数値目標を、公式資料の原文・資料位置・Evidence・比較可能性境界とともに公開します。",

@@ -14,9 +14,13 @@ import {
   tokyoValueRoleLabel,
 } from "@/lib/tokyoPolicyTargets";
 
+import { canonicalFor } from "@/lib/pageMetadata";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: canonicalFor("/municipalities/tokyo"),
+  },
   title: "東京都｜2050東京戦略の政策目標304件",
   description:
     "2050東京戦略の政策目標一覧60ページ、25政策分野、304目標カードをEvidence Packet付きで公開しています。年度実績と政策評価は未接続です。",

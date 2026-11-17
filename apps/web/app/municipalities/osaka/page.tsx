@@ -8,9 +8,13 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { StatusBadge } from "@/components/StatusBadge";
 import { osakaIndicatorStats, osakaPolicySources } from "@/lib/osakaIndicators";
 
+import { canonicalFor } from "@/lib/pageMetadata";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: canonicalFor("/municipalities/osaka"),
+  },
   title: "大阪府｜Beyond EXPO 2025の政策指標",
   description:
     "Beyond EXPO 2025の経済目標、客観KPI、主観・Well-Being指標83件・91系列をEvidence付きで公開します。",

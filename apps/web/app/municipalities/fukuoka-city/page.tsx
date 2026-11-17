@@ -15,9 +15,13 @@ import {
   evidenceForCityRecord,
 } from "@/lib/fukuokaCityFinance";
 
+import { canonicalFor } from "@/lib/pageMetadata";
 import styles from "../fukuoka-prefecture/page.module.css";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: canonicalFor("/municipalities/fukuoka-city"),
+  },
   title: "福岡市｜2026年度当初予算案と2024年度決算",
   description:
     "福岡市の2026年度一般会計当初予算案と2024年度一般会計決算を、公式資料の該当箇所と確認状態付きで表示します。",
