@@ -62,7 +62,11 @@ def test_fukuoka_budget_values_and_stages_are_explicit() -> None:
 
 def test_fukuoka_settlement_series_is_complete_and_separate() -> None:
     records = load_json("data/reviewed/fukuoka-prefecture/settlement_records.json")
-    trend_records = [record for record in records if record["metric"] != "local_tax"]
+    trend_records = [
+        record
+        for record in records
+        if record["metric"] in {"total_revenue", "total_expenditure"}
+    ]
 
     assert {record["fiscal_year"] for record in trend_records} == {
         2020,
@@ -84,16 +88,20 @@ def test_fukuoka_settlement_series_is_complete_and_separate() -> None:
 
 def test_fukuoka_2024_settlement_values_match_official_tables() -> None:
     records = load_json("data/reviewed/fukuoka-prefecture/settlement_records.json")
+    core_metrics = {"total_revenue", "total_expenditure", "local_tax"}
     values = {
         record["metric"]: record["amount_yen"]
         for record in records
-        if record["fiscal_year"] == 2024
+        if record["fiscal_year"] == 2024 and record["metric"] in core_metrics
     }
 
+    # Thousand-yen precision from the Ministry of Internal Affairs and
+    # Communications settlement tables; refines the earlier million-yen
+    # figures within their rounding range.
     assert values == {
-        "total_revenue": 2_093_700_000_000,
-        "total_expenditure": 2_032_626_000_000,
-        "local_tax": 784_235_000_000,
+        "total_revenue": 2_093_699_535_000,
+        "total_expenditure": 2_032_626_014_000,
+        "local_tax": 784_235_058_000,
     }
 
 
