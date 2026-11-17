@@ -6,6 +6,14 @@ import settlementRecords from "../../../data/reviewed/fukuoka-prefecture/settlem
 
 import { sourceCatalog } from "./catalog";
 
+export type FiscalBreakdownItem = {
+  key: string;
+  label: string;
+  amount_yen: number | null;
+  parent_key: string | null;
+  note: string | null;
+};
+
 export type FiscalRecord = {
   id: string;
   municipality_id: string;
@@ -24,6 +32,7 @@ export type FiscalRecord = {
   review_status: string;
   confidence: string;
   sources: string[];
+  breakdown?: FiscalBreakdownItem[] | null;
 };
 
 export type EvidencePacket = {
@@ -83,6 +92,30 @@ export function settlementRecord(fiscalYear: number, metric: string) {
     throw new Error(`Missing ordinary-account settlement: ${fiscalYear}/${metric}`);
   }
   return record;
+}
+
+export function settlementSeries(metric: string): FiscalRecord[] {
+  return fukuokaPrefectureFinance.records
+    .filter(
+      (item) =>
+        item.metric === metric &&
+        item.stage === "settlement" &&
+        item.account_type === "ordinary",
+    )
+    .sort((a, b) => a.fiscal_year - b.fiscal_year);
+}
+
+export function breakdownItems(record: FiscalRecord): FiscalBreakdownItem[] {
+  return record.breakdown ?? [];
+}
+
+export function breakdownChildren(
+  record: FiscalRecord,
+  parentKey: string | null,
+): FiscalBreakdownItem[] {
+  return breakdownItems(record).filter(
+    (item) => (item.parent_key ?? null) === parentKey,
+  );
 }
 
 export function settlementTrend(): SettlementYear[] {
