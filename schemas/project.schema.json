@@ -26,6 +26,10 @@
       "type": "string",
       "pattern": "^jp-local-[0-9]{6}$"
     },
+    "series_id": {
+      "type": "string",
+      "pattern": "^jp-local-[0-9]{6}-project-series-[a-z0-9-]+$"
+    },
     "fiscal_year": {
       "type": "integer",
       "minimum": 1900,
@@ -48,6 +52,46 @@
         "string",
         "null"
       ]
+    },
+    "responsible_department": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "parent_policy": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "official_evaluation": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "rating"
+      ],
+      "properties": {
+        "rating": {
+          "type": "string",
+          "minLength": 1
+        },
+        "direction": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
     },
     "policy_area": {
       "type": "string",
@@ -203,7 +247,7 @@
       "type": "array",
       "items": {
         "type": "string",
-        "pattern": "^source-[a-z0-9-]+$"
+        "pattern": "^[a-z0-9-]+$"
       },
       "minItems": 1,
       "uniqueItems": true

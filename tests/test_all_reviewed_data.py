@@ -89,6 +89,12 @@ def test_all_reviewed_municipalities_have_complete_evidence() -> None:
         packet_files = sorted(directory.glob("*evidence_packets.json"))
         records = [record for path in record_files for record in load_json(path)]
         packets = [packet for path in packet_files for packet in load_json(path)]
+        # Issue #7 project evidence packets (subject_type "project") live in
+        # the same directory but are not fiscal records; they are validated
+        # against their own records in test_issue7_kitakyushu_projects.py.
+        packets = [
+            packet for packet in packets if packet["subject_type"] == "fiscal_record"
+        ]
 
         assert records
         assert len(records) == len(packets)
