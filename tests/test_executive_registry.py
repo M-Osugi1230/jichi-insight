@@ -41,8 +41,8 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 6
-    assert len({record["id"] for record in catalog["records"]}) == 6
+    assert len(catalog["records"]) == 7
+    assert len({record["id"] for record in catalog["records"]}) == 7
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
@@ -71,7 +71,8 @@ def test_manifesto_readiness_is_not_confused_with_progress() -> None:
     assert by_municipality["jp-local-400009"]["manifesto_source_ids"] == []
     assert by_municipality["jp-local-401307"]["manifesto_source_ids"] == []
     assert by_municipality["jp-local-401005"]["manifesto_source_ids"] == [
-        "kitakyushu-mayor-election-2023-bulletin"
+        "kitakyushu-mayor-election-2023-bulletin",
+        "kitakyushu-mayor-candidate-2023-manifesto-v13-archive",
     ]
 
 

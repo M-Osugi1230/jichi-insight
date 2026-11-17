@@ -20,12 +20,37 @@ def validate(schema_path, value):
 
 def test_manifesto_review_matches_contract_and_preserves_zero_records():
     reviews = load("data/entities/executives/manifesto_reviews.json")
-    assert len(reviews) == 1
-    review = reviews[0]
+    assert len(reviews) == 2
+    bulletin = next(
+        review
+        for review in reviews
+        if review["source_id"] == "kitakyushu-mayor-election-2023-bulletin"
+    )
+    assert validate("schemas/manifesto_review.schema.json", bulletin) == []
+    assert bulletin["segmentation_status"] == "manual_review_required"
+    assert bulletin["statement_boundary"] == "mixed"
+    assert bulletin["promise_records_created"] == 0
+
+
+def test_candidate_manifesto_review_is_segmented_into_34_records():
+    reviews = load("data/entities/executives/manifesto_reviews.json")
+    review = next(
+        review
+        for review in reviews
+        if review["id"] == "manifesto-review-jp-local-401005-2023-v13"
+    )
     assert validate("schemas/manifesto_review.schema.json", review) == []
-    assert review["segmentation_status"] == "manual_review_required"
-    assert review["statement_boundary"] == "mixed"
-    assert review["promise_records_created"] == 0
+    assert review["source_id"] == (
+        "kitakyushu-mayor-candidate-2023-manifesto-v13-archive"
+    )
+    assert review["review_scope"] == "document"
+    assert review["statement_boundary"] == "clear"
+    assert review["segmentation_status"] == "segmented"
+    assert review["promise_records_created"] == 34
+    # The version caveat travels with the review: v13 is not the final
+    # version by assertion, and the V15 diff is unverified.
+    assert "V15" in review["review_note"]
+    assert "最終版とは扱わない" in review["review_note"]
 
 
 def test_manifesto_review_has_evidence_and_known_references():

@@ -65,20 +65,22 @@
     "manifesto_source_ids_found": [
       "kitakyushu-mayor-election-2023-bulletin",
       "kitakyushu-mayor-candidate-2023-official-site",
-      "kitakyushu-mayor-candidate-2023-official-site-archive"
+      "kitakyushu-mayor-candidate-2023-official-site-archive",
+      "kitakyushu-mayor-candidate-2023-manifesto-v13-archive"
     ],
     "checked_source_ids": [
       "kitakyushu-mayor-election-history",
       "kitakyushu-mayor-election-2023-bulletin",
       "kitakyushu-mayor-candidate-2023-official-site",
-      "kitakyushu-mayor-candidate-2023-official-site-archive"
+      "kitakyushu-mayor-candidate-2023-official-site-archive",
+      "kitakyushu-mayor-candidate-2023-manifesto-v13-archive"
     ],
     "nonexistence_claim": false,
-    "review_note": "北九州市選挙管理委員会の選挙結果ページから2023年市長選挙の公式選挙公報を確認し、公約原文資料として登録した。2026-11-17の追跡探索で、候補者本人の公式サイト（takeuchi-kazuhisa.com）の現存を確認したが、現行トップページでは選挙時に公表された「7つの基本政策」の全文（7本柱と小項目）は確認できなかった。Wayback Machine の availability API で2023年1月11日（選挙期間中）時点の保存コピー（HTTP 200）の存在を確認し、出典として登録した。ただし保存コピー本文の抽出・照合は未実施のため、個別公約レコードはまだ作成していない。任期の manifesto_source_ids は、原文の抽出と分割レビューが完了した資料を対象とするため、現時点では選挙公報のみのままとする。資料が存在しないとは判定しない。",
+    "review_note": "北九州市選挙管理委員会の選挙結果ページから2023年市長選挙の公式選挙公報を確認し、公約原文資料として登録した。2026-11-17の追跡探索で、候補者本人の公式サイト（takeuchi-kazuhisa.com）の現存と、Wayback Machine に2023年1月11日（選挙期間中）時点の保存コピーが存在することを確認した。同日、保存コピー（政策PDF v13）から「7つの基本政策」の全文（7本柱・小項目34件）を実ブラウザで取得・照合し、分割レビュー（manifesto-review-jp-local-401005-2023-v13）を経て公約レコード34件を作成した。任期の manifesto_source_ids には、原文の抽出と分割レビューが完了した資料として、選挙公報に加えて本資料を追加した。V15（2023年1月31日保存）との差分は未検証であり、v13を最終版とは扱わない。資料が存在しないとは判定しない。",
     "next_actions": [
-      "保存コピーから「7つの基本政策」の全文（7本柱と小項目）を抽出し、柱・小項目の境界を照合する",
-      "抽出した全文を対象に、候補者公式サイトを主文書とする分割レビュー（manifesto_review）を実施する",
-      "分割レビュー後に小項目単位で個別公約レコードを作成し、選挙公報を補足出典として併記する"
+      "2023年1月31日保存のV15（たけビジョンV15_keiryou.pdf）とv13の差分を検証し、差分があれば公約レコードへ反映する",
+      "公約文書が予告した「網羅的な公約」の後続公表文書が存在するか確認する",
+      "未接続の公約について、計画・行政評価・決算資料への進捗証拠の接続を拡充する"
     ],
     "review_status": "reviewed",
     "confidence": "high"

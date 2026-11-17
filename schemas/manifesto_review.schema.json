@@ -22,7 +22,7 @@
   "properties": {
     "id": {
       "type": "string",
-      "pattern": "^manifesto-review-jp-local-[0-9]{6}-[0-9]{4}$"
+      "pattern": "^manifesto-review-jp-local-[0-9]{6}-[0-9]{4}(-[a-z0-9-]+)?$"
     },
     "executive_term_id": {
       "type": "string",

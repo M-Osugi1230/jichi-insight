@@ -7,7 +7,9 @@
       {
         "field": "checked_source_ids",
         "statement": "2025年福岡県知事選挙の公式結果ページを確認した。",
-        "source_ids": ["fukuoka-pref-governor-election-2025-results"],
+        "source_ids": [
+          "fukuoka-pref-governor-election-2025-results"
+        ],
         "location_note": "福岡県選挙管理委員会の個別選挙ページ。投票結果、開票結果、候補者別得票数等を掲載。",
         "decision": "accepted",
         "review_note": "選挙結果の一次資料として採用。"
@@ -15,7 +17,9 @@
       {
         "field": "result_status",
         "statement": "確認した公式結果ページ内に、選挙公報または候補者公約原文への安定した導線を確認できなかった。",
-        "source_ids": ["fukuoka-pref-governor-election-2025-results"],
+        "source_ids": [
+          "fukuoka-pref-governor-election-2025-results"
+        ],
         "location_note": "ページ本文と掲載ファイル一覧を確認。",
         "decision": "accepted",
         "review_note": "資料不存在の主張ではなく、確認範囲で未発見という判断。"
@@ -35,7 +39,9 @@
       {
         "field": "checked_source_ids",
         "statement": "2022年福岡市長選挙の公式結果ページを確認した。",
-        "source_ids": ["fukuoka-city-mayor-election-2022-results"],
+        "source_ids": [
+          "fukuoka-city-mayor-election-2022-results"
+        ],
         "location_note": "福岡市選挙管理委員会の個別選挙ページ。投票結果と開票結果を掲載。",
         "decision": "accepted",
         "review_note": "選挙結果の一次資料として採用。"
@@ -43,7 +49,9 @@
       {
         "field": "result_status",
         "statement": "確認した公式結果ページ内に、選挙公報または候補者公約原文への安定した導線を確認できなかった。",
-        "source_ids": ["fukuoka-city-mayor-election-2022-results"],
+        "source_ids": [
+          "fukuoka-city-mayor-election-2022-results"
+        ],
         "location_note": "ページ本文と掲載ファイル一覧を確認。",
         "decision": "accepted",
         "review_note": "資料不存在の主張ではなく、確認範囲で未発見という判断。"
@@ -73,14 +81,15 @@
       },
       {
         "field": "result_status",
-        "statement": "候補者本人公表マニフェスト（公式サイト）は所在を特定し、選挙時期の保存コピーの存在も確認したが、「7つの基本政策」の全文の抽出・照合は未実施である。",
+        "statement": "候補者本人公表マニフェスト（公式サイト）の政策PDF（v13）保存コピーから「7つの基本政策」の全文を抽出・照合し、公約レコード34件を作成した。",
         "source_ids": [
           "kitakyushu-mayor-candidate-2023-official-site",
-          "kitakyushu-mayor-candidate-2023-official-site-archive"
+          "kitakyushu-mayor-candidate-2023-official-site-archive",
+          "kitakyushu-mayor-candidate-2023-manifesto-v13-archive"
         ],
-        "location_note": "公式サイト現行トップページと、Wayback Machine availability API の応答（2026-11-17確認）。",
-        "decision": "needs_review",
-        "review_note": "全文の抽出・照合が完了した時点で、分割レビューと探索記録を更新する。"
+        "location_note": "公式サイト現行トップページと、Wayback Machine の保存コピー（政策PDF、2023年1月11日保存）。",
+        "decision": "accepted",
+        "review_note": "2026-11-17に実ブラウザで保存コピーを開いて全文を取得・照合した。V15との差分は未検証であり、v13を最終版とは扱わない。"
       },
       {
         "field": "manifesto_source_ids_found",
@@ -95,17 +104,19 @@
       },
       {
         "field": "promise_records_created",
-        "statement": "「7つの基本政策」の小項目の原文が一次資料で未照合のため、個別公約レコードは作成していない。報道や第三者の引用から公約本文を復元しない。",
-        "source_ids": ["kitakyushu-mayor-candidate-2023-official-site-archive"],
-        "location_note": "保存コピー本文は未抽出。",
-        "decision": "needs_review",
-        "review_note": "公約数を増やすための推測分割は行わない（docs/PROMISE_EXTRACTION.md の分割ルール）。"
+        "statement": "「7つの基本政策」の小項目34件を公約レコードとして作成した（柱別内訳: ①5件・②4件・③7件・④6件・⑤6件・⑥4件・⑦2件）。",
+        "source_ids": [
+          "kitakyushu-mayor-candidate-2023-manifesto-v13-archive"
+        ],
+        "location_note": "政策PDF（takevision0111_v13_keiryou.pdf）12–13ページ。",
+        "decision": "accepted",
+        "review_note": "分割は資料上の箇条書き境界に従い、推測による分割は行っていない。進捗状態は、公式証拠へ接続できた6件のみ in_progress とし、残りは not_assessable のままである。"
       }
     ],
     "open_questions": [
-      "保存コピーから「7つの基本政策」の全文（7本柱と小項目）を抽出できるか。",
-      "候補者本人が公開した詳細版マニフェストの保存先があるか。",
-      "選挙公報候補者欄から原文上明確な公約単位を抽出できるか。"
+      "2023年1月31日保存のV15（たけビジョンV15_keiryou.pdf）とv13の間に文言の差分があるか。",
+      "公約文書の末尾には、網羅的な公約を順次公式ウェブサイト等で公開する旨の注記があり、後続の公表文書が存在するかは未確認である。",
+      "選挙公報候補者欄から原文上明確な公約単位を抽出できるか（引き続き manual_review_required）。"
     ],
     "review_status": "reviewed"
   }

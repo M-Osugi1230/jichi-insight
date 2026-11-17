@@ -18,5 +18,23 @@
     "last_reviewed_at": "2026-07-15",
     "review_status": "reviewed",
     "confidence": "medium"
+  },
+  {
+    "id": "manifesto-review-jp-local-401005-2023-v13",
+    "executive_term_id": "jp-local-401005-executive-2023-02-20",
+    "source_id": "kitakyushu-mayor-candidate-2023-manifesto-v13-archive",
+    "candidate_name": "武内 和久",
+    "source_location": "政策PDF（takevision0111_v13_keiryou.pdf、全13ページ）12–13ページ「7つの基本政策」",
+    "review_scope": "document",
+    "statement_boundary": "clear",
+    "segmentation_status": "segmented",
+    "promise_records_created": 34,
+    "reason_codes": [
+      "other"
+    ],
+    "review_note": "資料は7本の基本政策（柱）と各柱の小項目（箇条書き）で構成され、原文上の境界が明確なため、小項目を単位として34件の公約レコードを作成した（柱別内訳: ①5件・②4件・③7件・④6件・⑤6件・⑥4件・⑦2件）。柱の見出し自体は公約レコードにせず、policy_area のグルーピングとして保持した。末尾の注記（網羅的な公約の後続公表の予告）は公約ではないためレコード化しなかった。原典は2023年1月11日時点のv13であり、同日保存の旧版と2023年1月31日保存のV15が存在する。V15との差分は未検証であり、v13を最終版とは扱わない。",
+    "last_reviewed_at": "2026-11-17",
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]

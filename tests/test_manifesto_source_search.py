@@ -61,6 +61,7 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         "kitakyushu-mayor-election-2023-bulletin",
         "kitakyushu-mayor-candidate-2023-official-site",
         "kitakyushu-mayor-candidate-2023-official-site-archive",
+        "kitakyushu-mayor-candidate-2023-manifesto-v13-archive",
     ]
 
 
