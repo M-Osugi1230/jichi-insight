@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: canonicalFor("/municipalities/kitakyushu-city"),
   },
-  title: "北九州市｜2026年度当初予算案と2024年度決算",
+  title: "北九州市｜2026年度当初予算と2024年度決算",
   description:
-    "北九州市の2026年度一般会計当初予算案と2024年度一般会計決算を、公式資料の該当ページと確認状態付きで表示します。",
+    "北九州市の2026年度一般会計当初予算と2024年度一般会計決算を、公式資料の該当ページと確認状態付きで表示します。",
 };
 
 export default function KitakyushuCityPage() {
@@ -52,7 +52,7 @@ export default function KitakyushuCityPage() {
             </div>
             <h1>北九州市</h1>
             <p>
-              現在は、2026年度一般会計の<strong>当初予算案</strong>2項目と、
+              現在は、2026年度一般会計の<strong>当初予算</strong>2項目と、
               2024年度一般会計の<strong>決算</strong>3項目を公開しています。
               重点事業、市長公約、市議会の評価はまだ行っていません。
             </p>
@@ -67,26 +67,26 @@ export default function KitakyushuCityPage() {
         <section className={styles.scope} aria-labelledby="kitakyushu-scope-title">
           <div>
             <p className="eyebrow">Scope</p>
-            <h2 id="kitakyushu-scope-title">予算案と決算を、同じ数字として扱わない。</h2>
+            <h2 id="kitakyushu-scope-title">当初予算と決算を、同じ数字として扱わない。</h2>
           </div>
           <p>
             2026年度は年度開始時の計画、2024年度は年度終了後の実績です。
-            年度と段階を明示し、当初予算案から決算へ直結するような比較や成果評価は行いません。
+            年度と段階を明示し、当初予算から決算へ直結するような比較や成果評価は行いません。
           </p>
         </section>
 
         <section className={styles.headline} aria-labelledby="kitakyushu-budget-title">
           <div className="sectionIntro">
-            <p className="eyebrow">2026 initial budget proposal</p>
+            <p className="eyebrow">2026 initial budget</p>
             <h2 id="kitakyushu-budget-title">2026年度一般会計の計画規模</h2>
             <p>
-              北九州市の計数資料から、一般会計当初予算案と市税収入を確認しました。
+              2026年3月25日に可決され成立した北九州市の予算書から、一般会計当初予算と市税収入を確認しました。
               一般会計予算額は公式資料で過去最高と説明されています。
             </p>
           </div>
           <div className={styles.metricGrid}>
             <article className={styles.metricCard}>
-              <span>一般会計当初予算案</span>
+              <span>一般会計当初予算</span>
               <strong>{formatJapaneseYen(budgetRevenue.amount_yen)}</strong>
               <small>{formatExactYen(budgetRevenue.amount_yen)}</small>
               <p>公式表の647,684百万円を円へ換算。</p>
@@ -98,10 +98,10 @@ export default function KitakyushuCityPage() {
               <p>個人市民税・固定資産税などの増収を見込む。</p>
             </article>
             <article className={`${styles.metricCard} ${styles.derived}`}>
-              <span>当初予算案に対する市税収入</span>
+              <span>当初予算に対する市税収入</span>
               <strong>{taxShare === null ? "評価不能" : `${taxShare.toFixed(1)}%`}</strong>
               <small>Jichi Insightによる単純計算</small>
-              <p>市税収入 ÷ 一般会計当初予算案。財源構成全体の評価ではありません。</p>
+              <p>市税収入 ÷ 一般会計当初予算。財源構成全体の評価ではありません。</p>
             </article>
           </div>
         </section>

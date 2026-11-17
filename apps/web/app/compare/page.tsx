@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 };
 
 const stageLabels = {
-  initial_budget: "当初予算案",
+  initial_budget: "当初予算",
   settlement: "決算",
 };
 
@@ -44,7 +44,7 @@ export default function ComparePage() {
           <ul>
             <li>対象は福岡市と北九州市の2政令指定都市</li>
             <li>会計区分は一般会計のみ</li>
-            <li>2026年度は当初予算案、2024年度は決算として分離</li>
+            <li>2026年度は当初予算、2024年度は決算として分離</li>
             <li>公式値とJichi Insightの単純計算を分離</li>
             <li>人口・行政需要・面積・産業構造を補正する前に優劣を付けない</li>
           </ul>
@@ -99,17 +99,17 @@ export default function ComparePage() {
 
         <section className="contentSection" aria-labelledby="tax-share-title">
           <p className="eyebrow">Derived context</p>
-          <h2 id="tax-share-title">当初予算案に占める市税収入</h2>
+          <h2 id="tax-share-title">当初予算に占める市税収入</h2>
           <div className={styles.shareGrid}>
             <article className={styles.shareCard}>
               <span>福岡市</span>
               <strong>{(cityTaxShares.fukuoka * 100).toFixed(1)}%</strong>
-              <p>市税収入 ÷ 一般会計当初予算案。Jichi Insightによる単純計算。</p>
+              <p>市税収入 ÷ 一般会計当初予算。Jichi Insightによる単純計算。</p>
             </article>
             <article className={styles.shareCard}>
               <span>北九州市</span>
               <strong>{(cityTaxShares.kitakyushu * 100).toFixed(1)}%</strong>
-              <p>市税収入 ÷ 一般会計当初予算案。市税は億円単位の公式表示を使用。</p>
+              <p>市税収入 ÷ 一般会計当初予算。市税は億円単位の公式表示を使用。</p>
             </article>
           </div>
         </section>
