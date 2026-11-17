@@ -17,6 +17,13 @@ SELECTION_PATH = "data/catalog/kitakyushu_priority_project_selection.json"
 MEGA = "jp-local-401005-project-2024-mega-region-promotion"
 LINE = "jp-local-401005-project-2024-information-dissemination"
 STOCK = "jp-local-401005-project-2024-disaster-stockpile"
+SHIN_JIDAI = "jp-local-401005-project-2024-shin-jidai-youth-challenge"
+WOMEN = "jp-local-401005-project-2024-women-perspective-policy"
+CITY_PROMO = "jp-local-401005-project-2024-city-promotion"
+SUMARAKU = "jp-local-401005-project-2024-sumaraku-ward-office"
+SHELTER = "jp-local-401005-project-2024-community-shelter-operation"
+DRILL = "jp-local-401005-project-2024-city-disaster-drill"
+FOREIGN = "jp-local-401005-project-2024-foreign-resident-coexistence"
 
 
 def load_json(path: str) -> Any:
@@ -52,14 +59,40 @@ def test_selection_rule_and_population() -> None:
     assert selection["population"]["project_count"] == 198
     assert selection["population"]["fiscal_year"] == 2024
     selections = selection["selections"]
-    assert [item["pillar"] for item in selections] == [
+    # Pilot: one project per pillar, each the first in the official listing.
+    pilot = selections[:3]
+    assert [item["pillar"] for item in pilot] == [
         "I「稼げるまち」の実現",
         "II「彩りあるまち」の実現",
         "III「安らぐまち」の実現",
     ]
-    # One project per pillar, each the first in its bureau's official listing.
-    assert [item["bureau_project_number"] for item in selections] == [1, 1, 1]
-    assert [item["project_id"] for item in selections] == [MEGA, LINE, STOCK]
+    assert [item["bureau_project_number"] for item in pilot] == [1, 1, 1]
+    assert [item["project_id"] for item in pilot] == [MEGA, LINE, STOCK]
+    # Scale-up: the next two projects per pillar in publication order, plus
+    # the first abolished project (lifecycle end) in publication order.
+    added = selections[3:]
+    assert [(item["pillar"], item["bureau"], item["bureau_project_number"]) for item in added] == [
+        ("I「稼げるまち」の実現", "政策局", 2),
+        ("I「稼げるまち」の実現", "政策局", 3),
+        ("II「彩りあるまち」の実現", "市長公室", 2),
+        ("II「彩りあるまち」の実現", "政策局", 5),
+        ("III「安らぐまち」の実現", "危機管理室", 2),
+        ("III「安らぐまち」の実現", "危機管理室", 3),
+        ("III「安らぐまち」の実現", "政策局", 6),
+    ]
+    assert [item["project_id"] for item in added] == [
+        SHIN_JIDAI,
+        WOMEN,
+        CITY_PROMO,
+        SUMARAKU,
+        SHELTER,
+        DRILL,
+        FOREIGN,
+    ]
+    assert all(item["selection_round"] == "scale" for item in added)
+    assert selection["expansion_rule"]["total_count"] == 10
+    assert len(selections) == 10
+    assert len(projects_by_id()) == 10
     projects = projects_by_id()
     for item in selections:
         record = projects[item["project_id"]]
@@ -75,6 +108,13 @@ def test_project_budget_records_and_settlement_stage_honesty() -> None:
         MEGA: (15_970_000, 5_621_000),
         LINE: (43_249_000, 37_486_000),
         STOCK: (19_263_000, 22_364_000),
+        SHIN_JIDAI: (50_000_000, 45_654_000),
+        WOMEN: (5_000_000, 4_636_000),
+        CITY_PROMO: (71_037_000, 69_624_000),
+        SUMARAKU: (287_583_000, 207_806_000),
+        SHELTER: (7_600_000, 5_790_000),
+        DRILL: (6_000_000, 3_982_000),
+        FOREIGN: (65_821_000, 64_266_000),
     }
     for project_id, (initial, settlement) in expected.items():
         records = {item["kind"]: item for item in projects[project_id]["budget_records"]}
@@ -92,7 +132,7 @@ def test_project_budget_records_and_settlement_stage_honesty() -> None:
 
 def test_kpi_baseline_target_actual_are_separated() -> None:
     kpis = {record["id"]: record for record in load_json(KPIS_PATH)}
-    assert len(kpis) == 4
+    assert len(kpis) == 13
     for record in kpis.values():
         project = projects_by_id()[record["project_id"]]
         assert record["review_status"] == "reviewed"
@@ -133,17 +173,88 @@ def test_kpi_baseline_target_actual_are_separated() -> None:
     assert stock["actuals"][0]["value"] == stock["target"]["value"]
     assert stock["assessment"] == "achieved"
 
+    promo = kpis[f"{CITY_PROMO}-kpi-city-affection"]
+    assert promo["baseline"]["value"] == 87.0
+    assert promo["baseline"]["period"] == "令和5年度"
+    assert promo["target"]["value"] == 90.0
+    assert promo["target"]["period"] == "令和6年度"
+    assert promo["actuals"][0]["value"] == 85.2
+    # Printed achievement rate is 94.7%: mostly achieved, not achieved.
+    assert promo["assessment"] == "mostly_achieved"
+
+    online = kpis[f"{SUMARAKU}-kpi-online-application-rate"]
+    assert online["baseline"]["value"] == 24.0
+    assert online["baseline"]["period"] == "令和4年度"
+    # The 45.0% target belongs to FY2027, so the FY2024 actual is mid-course.
+    assert online["target"]["value"] == 45.0
+    assert online["target"]["period"] == "令和7年度"
+    assert online["actuals"][0]["value"] == 40.1
+    assert online["assessment"] == "in_progress"
+
+    work_time = kpis[f"{SUMARAKU}-kpi-window-work-time-reduction"]
+    assert work_time["direction"] == "decrease"
+    # Reductions are recorded as negative values (▲50.0% target for FY2029).
+    assert work_time["target"]["value"] == -50.0
+    assert work_time["actuals"][0]["value"] == -45.5
+    assert work_time["assessment"] == "in_progress"
+
+    youth = kpis[f"{SHIN_JIDAI}-kpi-youth-activity-image"]
+    # No baseline or target value is printed in the source (both are "―");
+    # the FY2024 actual must not be promoted into either slot.
+    assert youth["baseline"]["value"] is None
+    assert youth["target"]["value"] is None
+    assert youth["target"]["period"] == "令和8年度"
+    assert youth["actuals"][0]["value"] == 8.6
+    assert youth["assessment"] == "not_assessable"
+
+    livability = kpis[f"{FOREIGN}-kpi-foreign-resident-livability"]
+    assert livability["baseline"]["value"] == 72.4
+    # The survey runs once every five years: no target or FY2024 actual exists.
+    assert livability["target"]["value"] is None
+    assert livability["actuals"][0]["value"] is None
+    assert livability["actuals"][0]["status"] == "not_published"
+    assert livability["assessment"] == "not_assessable"
+
 
 def test_official_evaluation_is_the_citys_not_ours() -> None:
     projects = projects_by_id()
     assert projects[MEGA]["official_evaluation"]["rating"] == "概ね順調"
     assert projects[LINE]["official_evaluation"]["rating"] == "順調"
     assert projects[STOCK]["official_evaluation"]["rating"] == "順調"
+    expected_directions = {
+        MEGA: "継続",
+        LINE: "継続",
+        STOCK: "継続",
+        SHIN_JIDAI: "継続",
+        WOMEN: "継続",
+        CITY_PROMO: "継続",
+        SUMARAKU: "拡充",
+        SHELTER: "継続",
+        DRILL: "継続",
+        FOREIGN: "廃止",
+    }
+    for project_id, direction in expected_directions.items():
+        record = projects[project_id]
+        assert record["official_evaluation"]["direction"] == direction
     for record in projects.values():
-        assert record["official_evaluation"]["direction"] == "継続"
         assert "Jichi Insight独自の評価ではない" in record["official_evaluation"]["note"]
-        # Promises are Issue #8: no fabricated links in the pilot.
+        # Promises are Issue #8: no fabricated links.
         assert record["related_promise_ids"] == []
+
+
+def test_lifecycle_end_project_is_the_abolished_one() -> None:
+    projects = projects_by_id()
+    abolished = [
+        record
+        for record in projects.values()
+        if record["official_evaluation"]["direction"] == "廃止"
+    ]
+    # At most one completed/abolished project may be included; it is the
+    # foreign-resident coexistence project, whose work continues under a
+    # successor project from FY2025 (a reorganisation, not a disappearance).
+    assert [record["id"] for record in abolished] == [FOREIGN]
+    note = projects[FOREIGN]["official_evaluation"]["note"]
+    assert "外国人材の受入れ環境整備事業" in note
 
 
 def test_every_project_has_an_evidence_packet_and_known_sources() -> None:
@@ -166,6 +277,15 @@ def test_every_project_has_an_evidence_packet_and_known_sources() -> None:
 def test_parent_policy_missing_is_explicit_not_invented() -> None:
     projects = projects_by_id()
     assert projects[MEGA]["parent_policy"] == "メガリージョンの視点による近隣市町との連携"
-    # The source sheets print no policy name for these two projects.
+    # The source sheets print no policy name for these projects.
     assert projects[LINE]["parent_policy"] is None
     assert projects[STOCK]["parent_policy"] is None
+    assert projects[SHELTER]["parent_policy"] is None
+    assert projects[SHIN_JIDAI]["parent_policy"] == "若者のチャレンジ支援"
+    assert projects[WOMEN]["parent_policy"] == "女性のキャリア形成支援"
+    assert projects[CITY_PROMO]["parent_policy"] == (
+        "都市ブランドの確立（ポジティブな情報発信による北九州市のイメージアップ）"
+    )
+    assert projects[SUMARAKU]["parent_policy"] == "DXによる市民サービス向上"
+    assert projects[DRILL]["parent_policy"] == "自助・共助・公助による防災力のさらなる強化"
+    assert projects[FOREIGN]["parent_policy"] == "外国人との共生社会の実現に向けた環境整備"
