@@ -109,7 +109,7 @@ export default function ComparePage() {
             <article className={styles.shareCard}>
               <span>北九州市</span>
               <strong>{(cityTaxShares.kitakyushu * 100).toFixed(1)}%</strong>
-              <p>市税収入 ÷ 一般会計当初予算。市税は億円単位の公式表示を使用。</p>
+              <p>市税収入 ÷ 一般会計当初予算。市税は予算書の千円単位の公式表示を使用。</p>
             </article>
           </div>
         </section>

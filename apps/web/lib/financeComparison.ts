@@ -53,7 +53,7 @@ export const cityFiscalComparison: ComparableFiscalMetric[] = [
       kitakyushuBudgetRecord("local_tax").amount_yen,
       "kitakyushu-2026-tax",
     ),
-    precisionNote: "北九州市は公式資料の億円単位の表示精度で収録。",
+    precisionNote: "北九州市は予算書の千円単位の表示精度で収録。",
   },
   {
     id: "2024-settlement-revenue",
