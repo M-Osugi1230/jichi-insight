@@ -128,18 +128,35 @@ def test_term_manifesto_sources_include_segmented_manifesto() -> None:
 def test_promise_registry_holds_the_verified_manifesto_items() -> None:
     # Promise records exist only because the primary text was verified
     # against the archived candidate publication; nothing was created
-    # from news quotes or third-party summaries.
-    promises = load_json("data/entities/executives/promises.json")
+    # from news quotes or third-party summaries. Scoped to this term:
+    # the registry also holds other terms' records.
+    promises = [
+        promise
+        for promise in load_json("data/entities/executives/promises.json")
+        if promise["executive_term_id"] == TERM_ID
+    ]
     packets = load_json("data/entities/executives/promise_evidence_packets.json")
     assert len(promises) == 34
-    assert len(packets) == 34
+    assert len(packets) == 40
     for promise in promises:
         assert promise["sources"] == [MANIFESTO_ID]
 
 
 def test_promise_records_and_project_links_are_consistent() -> None:
-    promises = load_json("data/entities/executives/promises.json")
-    packets = load_json("data/entities/executives/promise_evidence_packets.json")
+    all_promises = load_json("data/entities/executives/promises.json")
+    promises = [
+        promise
+        for promise in all_promises
+        if promise["executive_term_id"] == TERM_ID
+    ]
+    promise_ids = {promise["id"] for promise in promises}
+    packets = [
+        packet
+        for packet in load_json(
+            "data/entities/executives/promise_evidence_packets.json"
+        )
+        if packet["subject_id"] in promise_ids
+    ]
     projects = load_json("data/reviewed/kitakyushu-city/projects.json")
     known_sources = source_ids()
 

@@ -36,5 +36,23 @@
     "last_reviewed_at": "2026-11-17",
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-review-jp-local-401307-2022",
+    "executive_term_id": "jp-local-401307-executive-2022-12-07",
+    "source_id": "fukuoka-city-mayor-manifesto-2022-go2senkyo-archive",
+    "candidate_name": "高島 宗一郎",
+    "source_location": "選挙ドットコム記事（2022年11月16日）のWayback Machine保存コピー・候補者ホームページの公約引用部分",
+    "review_scope": "document",
+    "statement_boundary": "clear",
+    "segmentation_status": "segmented",
+    "promise_records_created": 6,
+    "reason_codes": [
+      "other"
+    ],
+    "review_note": "資料は公約タイトル「一緒に福岡の未来へ種をまこう」と6本の柱、各柱1段落の本文で構成され、原文上の境界が明確なため、柱を単位として6件の公約レコードを作成した。段落を文単位に編集分割はしていない。柱の見出しは各レコードのoriginal_text に含めた。原文は候補者本人のホームページの引用（選挙ドットコム記事の保存コピー経由）であり、候補者ホームページ自体の2022年当時の保存コピーは存在しない。見出し6本は選挙公報・西日本新聞・いい政治ドットコムの記載と照合済みである。この来歴のため confidence は medium とする。柱3・柱4の見出しには選挙公報等での長い形がある。",
+    "last_reviewed_at": "2026-11-17",
+    "review_status": "reviewed",
+    "confidence": "medium"
   }
 ]

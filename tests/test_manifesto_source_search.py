@@ -51,12 +51,15 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         for search in searches
         if search["result_status"] == "no_stable_primary_source_found"
     ]
-    assert len(missing) == 2
+    assert len(missing) == 1
     assert all(search["manifesto_source_ids_found"] == [] for search in missing)
 
     registered = next(
-        search for search in searches if search["result_status"] == "source_registered"
+        search
+        for search in searches
+        if search["executive_term_id"] == "jp-local-401005-executive-2023-02-20"
     )
+    assert registered["result_status"] == "source_registered"
     assert registered["manifesto_source_ids_found"] == [
         "kitakyushu-mayor-election-2023-bulletin",
         "kitakyushu-mayor-candidate-2023-official-site",

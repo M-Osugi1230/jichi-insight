@@ -1,5 +1,5 @@
 {
-  "version": "0.4.0",
+  "version": "0.5.0",
   "updated_at": "2026-11-17",
   "scope": "pilot",
   "records": [
@@ -125,9 +125,37 @@
       "source_kind": "landing_page",
       "availability": "published",
       "indexed_at": "2026-11-17",
-      "review_status": "extracted",
+      "review_status": "reviewed",
       "confidence": "medium",
-      "notes": "選挙当時の候補者本人の公式ブログ（LINEブログ）の Wayback Machine 保存コピー。2026-11-17に availability API と CDX で、2022年10月11日（出馬表明日）時点の保存コピー（HTTP 200）の存在と、2023年3月28日時点の保存コピーの存在を確認した。公約の発表は2022年11月2日であり、2022年10月11日時点の保存コピーは発表前のもののため、公約本文を含むとは限らない。2026-11-17の確認時点で Internet Archive が一時的にオフラインとなり（CDX・本文取得で 503/504 が発生）、保存コピー本文の抽出・照合は未実施であり、この資料から個別公約レコードはまだ作成していない。"
+      "notes": "選挙当時の候補者本人の公式ブログ（LINEブログ）の Wayback Machine 保存コピー。2022年10月11日時点と2023年3月28日時点の保存コピーが存在する。2026-11-17の追跡探索で保存コピー本文を実ブラウザで確認したところ、2022年11月の記事は3件（11月17日・11月21日・11月27日）で、公約発表（2022年11月2日）に関する記事は投稿されておらず、出馬表明記事（2022年10月11日保存）にも公約6本柱の列挙はなかった。したがって本資料は公約原文の出典とはならない。公約本文は選挙ドットコム記事の保存コピー（fukuoka-city-mayor-manifesto-2022-go2senkyo-archive）から取得した。"
+    },
+    {
+      "id": "fukuoka-city-mayor-election-2022-bulletin",
+      "municipality_key": "fukuoka-city",
+      "organization": "福岡市選挙管理委員会",
+      "category": "election",
+      "title": "令和4年11月20日施行 福岡市長選挙 選挙公報（高島宗一郎候補欄）",
+      "url": "https://prod-cdn.go2senkyo.com/public/senkyo_koho/21431/%E7%A6%8F%E5%B2%A1%E5%B8%82%E9%95%B7%E9%81%B8%E6%8C%99.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-17",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "福岡市長選挙の公式選挙公報。1ページ目「未来へ向けたビジョン」に公約タイトル「一緒に福岡の未来へ種をまこう!!」と6本柱の見出しが掲載されており、見出しの照合に用いた。各柱の本文（段落）は選挙公報には掲載されていない。URLは選挙ドットコムが公開する選挙公報PDFのコピーであり、福岡市選挙管理委員会の公式サイト上に安定した選挙公報への導線は確認できていない。"
+    },
+    {
+      "id": "fukuoka-city-mayor-manifesto-2022-go2senkyo-archive",
+      "municipality_key": "fukuoka-city",
+      "organization": "選挙ドットコム／保存は Internet Archive",
+      "category": "election",
+      "title": "福岡市長選挙に立候補 高島宗一郎氏の経歴・政策まとめ（2022年11月16日、候補者ホームページの公約全文を引用、Wayback Machine 保存コピー）",
+      "url": "https://web.archive.org/web/20221116023507/https://go2senkyo.com/articles/2022/11/16/73290.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-17",
+      "review_status": "reviewed",
+      "confidence": "medium",
+      "notes": "選挙ドットコムの記事（2022年11月16日公開）の Wayback Machine 保存コピー（2022年11月16日02:35:07 UTC 保存）。記事は「高島氏は自らのホームページにおいて以下の政策を公表しています」として、公約「一緒に福岡の未来へ種をまこう」の全文（6本柱・各柱1段落）を引用している。2026-11-17に実ブラウザで保存コピーを開き、全文を原文のまま取得した。見出し6本は選挙公報・西日本新聞（2022年11月7日）・いい政治ドットコムの記載と一致することを照合した。候補者本人のホームページ（takashima-soichiro.com）自体の2022年当時の保存コピーは Wayback Machine に存在せず、2022年11月2日の記者発表配布資料の保存も見つかっていないため、公約本文の取得はこの引用経由である。この来歴のため confidence は medium とする。柱3・柱4の見出しは選挙公報等ではより長い形で記されている。"
     }
   ]
 }
