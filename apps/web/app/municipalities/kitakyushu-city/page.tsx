@@ -94,7 +94,7 @@ export default function KitakyushuCityPage() {
             <article className={styles.metricCard}>
               <span>市税収入</span>
               <strong>{formatJapaneseYen(budgetTax.amount_yen)}</strong>
-              <small>公式資料の表示精度：億円</small>
+              <small>{formatExactYen(budgetTax.amount_yen)}</small>
               <p>個人市民税・固定資産税などの増収を見込む。</p>
             </article>
             <article className={`${styles.metricCard} ${styles.derived}`}>
