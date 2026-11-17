@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updated_at": "2026-07-15",
+  "updated_at": "2026-11-17",
   "scope": "pilot",
   "records": [
     {
@@ -43,7 +43,105 @@
       "indexed_at": "2026-07-15",
       "review_status": "reviewed",
       "confidence": "high",
-      "notes": "PDF3ページ目（冊子1頁）に一般会計の歳入・歳出・形式収支・実質収支を千円単位で掲載。"
+      "notes": "PDF3ページ目（冊子1頁）に一般会計の歳入・歳出・形式収支・実質収支を千円単位で掲載。冊子末尾（33〜34頁）の「令和6年度決算カード」に普通会計の収支・基金・地方債・主要指標・人口（前年度欄を含む）を千円単位で掲載。"
+    },
+    {
+      "id": "fukuoka-city-pref-fiscal-trend-pdf",
+      "municipality_key": "fukuoka-city",
+      "organization": "福岡県",
+      "category": "settlement",
+      "title": "市町村財政状況の推移（令和2年度〜令和6年度）その1 福岡市分",
+      "url": "https://www.pref.fukuoka.lg.jp/uploaded/attachment/280064.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-17",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "福岡県が公表する福岡市の普通会計決算の推移表。歳入・歳出・地方税・性質別歳出・基金残高・地方債残高・主要財政指標を千円単位で掲載。"
+    },
+    {
+      "id": "fukuoka-city-soumu-settlement-card-2022-pdf",
+      "municipality_key": "fukuoka-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和4年度市町村決算カード 福岡市",
+      "url": "https://www.soumu.go.jp/main_content/000937146.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-17",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省の令和4年度（2022年度）市町村決算カード（福岡県分PDF）の福岡市カード。収支・目的別・性質別歳出・基金・地方債・財政指標・人口（令和5年1月1日現在）を千円単位で掲載。"
+    },
+    {
+      "id": "fukuoka-city-assembly-settlement-2023-pdf",
+      "municipality_key": "fukuoka-city",
+      "organization": "福岡市議会事務局",
+      "category": "settlement",
+      "title": "令和5年度 決算資料（指定都市の概況）",
+      "url": "https://www.city.fukuoka.lg.jp/gikaizimukyoku/chosahousei/shigikai/jimukyoku-siryo/documents/R5kessannsiryousiteitosi.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-17",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "福岡市議会事務局の令和5年度（2023年度）決算資料。福岡市の普通会計決算内訳、目的別・性質別歳出、健全化判断比率、決算の概況（人口・財政力指数・標準財政規模等）を掲載。"
+    },
+    {
+      "id": "fukuoka-city-soumu-fiscal-overview-2022-pdf",
+      "municipality_key": "fukuoka-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "財政状況資料集 令和4年度 福岡市 概要版",
+      "url": "https://www.soumu.go.jp/main_content/000952443.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-17",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省「財政状況資料集」令和4年度（2022年度）の福岡市概要版。経常収支比率・財政力指数・住民基本台帳人口等の照合に使用。"
+    },
+    {
+      "id": "fukuoka-city-gazette-budget-2026-pdf",
+      "municipality_key": "fukuoka-city",
+      "organization": "福岡市",
+      "category": "budget",
+      "title": "福岡市公報第7233号（別冊）福岡市告示第101号 予算の要領（令和8年度当初予算）",
+      "url": "https://www.city.fukuoka.lg.jp/soki/hosei/shisei/documents/7233-1.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-17",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "令和8年3月27日に成立した令和8年度当初予算の要領を告示する公報別冊。第1表に一般会計の歳入歳出予算（歳入合計・市税・歳出合計）を千円単位で掲載。成立額の一次資料。"
+    },
+    {
+      "id": "fukuoka-city-assembly-newsletter-171",
+      "municipality_key": "fukuoka-city",
+      "organization": "福岡市議会",
+      "category": "budget",
+      "title": "ふくおか市議会だより No.171",
+      "url": "https://gikai.city.fukuoka.lg.jp/wp-content/uploads/2026/04/no.171.txt",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-17",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "令和8年2・3月定例会の報告号。議案第27号（一般会計予算）が令和8年3月27日の本会議で賛成多数により可決されたことを掲載。"
+    },
+    {
+      "id": "fukuoka-city-settlement-2023-booklet-pdf",
+      "municipality_key": "fukuoka-city",
+      "organization": "福岡市",
+      "category": "settlement",
+      "title": "財政のあらまし（令和5年度決算）",
+      "url": "https://www.city.fukuoka.lg.jp/shisei/kouhou-hodo/hodo-happyo/2024/documents/zaiseinoaramashinohaihunituite.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-17",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "令和5年度（2023年度）決算冊子の全文を含む報道発表資料。冊子1頁に一般会計の実質収支（9,362,362千円）を掲載。普通会計の実質収支との混同防止の照合に使用。"
     }
   ]
 }

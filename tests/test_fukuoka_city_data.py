@@ -23,11 +23,25 @@ def assert_valid(schema_path: str, instance: Any) -> None:
     assert errors == [], "; ".join(error.message for error in errors)
 
 
+def all_records() -> list[dict[str, Any]]:
+    return [
+        *load_json("data/reviewed/fukuoka-city/fiscal_records.json"),
+        *load_json("data/reviewed/fukuoka-city/settlement_records.json"),
+    ]
+
+
+def all_packets() -> list[dict[str, Any]]:
+    return [
+        *load_json("data/reviewed/fukuoka-city/evidence_packets.json"),
+        *load_json("data/reviewed/fukuoka-city/settlement_evidence_packets.json"),
+    ]
+
+
 def test_fukuoka_city_sources_and_reviewed_data_match_contracts() -> None:
     catalog = load_json("data/catalog/fukuoka_city_finance_sources.json")
     municipality = load_json("data/reviewed/fukuoka-city/municipality.json")
-    records = load_json("data/reviewed/fukuoka-city/fiscal_records.json")
-    packets = load_json("data/reviewed/fukuoka-city/evidence_packets.json")
+    records = all_records()
+    packets = all_packets()
 
     assert_valid("schemas/source_catalog.schema.json", catalog)
     assert_valid("schemas/municipality.schema.json", municipality)
@@ -39,11 +53,20 @@ def test_fukuoka_city_sources_and_reviewed_data_match_contracts() -> None:
 
 def test_fukuoka_city_exact_values_and_stages() -> None:
     records = load_json("data/reviewed/fukuoka-city/fiscal_records.json")
-    values = {record["id"]: record["amount_yen"] for record in records}
+    general_values = {
+        record["id"]: record["amount_yen"] for record in records
+    }
 
-    assert values == {
-        "jp-local-401307-fiscal-2026-total-revenue": 1_131_800_000_000,
-        "jp-local-401307-fiscal-2026-local-tax": 426_300_000_000,
+    # The FY2026 figures are the enacted initial budget: thousand-yen
+    # precision from the official gazette (Fukuoka City Gazette No. 7233
+    # supplement, Notification No. 101), refined in place from the
+    # draft-stage values that were published only in hundred-million-yen
+    # units (1,131,800,000,000 and 426,300,000,000). The FY2026 total
+    # expenditure record is new: the draft stage had no such record.
+    assert general_values == {
+        "jp-local-401307-fiscal-2026-total-revenue": 1_131_811_000_000,
+        "jp-local-401307-fiscal-2026-local-tax": 426_320_009_000,
+        "jp-local-401307-fiscal-2026-total-expenditure": 1_131_811_000_000,
         "jp-local-401307-fiscal-2024-total-revenue": 1_126_286_330_000,
         "jp-local-401307-fiscal-2024-total-expenditure": 1_108_780_593_000,
     }
@@ -55,11 +78,23 @@ def test_fukuoka_city_exact_values_and_stages() -> None:
         (2024, "settlement", "general"),
     }
 
+    settlement_records = load_json(
+        "data/reviewed/fukuoka-city/settlement_records.json"
+    )
+    assert {
+        (record["fiscal_year"], record["stage"], record["account_type"])
+        for record in settlement_records
+    } == {
+        (2022, "settlement", "ordinary"),
+        (2023, "settlement", "ordinary"),
+        (2024, "settlement", "ordinary"),
+    }
+
 
 def test_every_fukuoka_city_value_has_evidence_and_known_sources() -> None:
     municipality = load_json("data/reviewed/fukuoka-city/municipality.json")
-    records = load_json("data/reviewed/fukuoka-city/fiscal_records.json")
-    packets = load_json("data/reviewed/fukuoka-city/evidence_packets.json")
+    records = all_records()
+    packets = all_packets()
     catalogs = [
         load_json("data/catalog/official_sources.json"),
         load_json("data/catalog/fukuoka_finance_sources.json"),

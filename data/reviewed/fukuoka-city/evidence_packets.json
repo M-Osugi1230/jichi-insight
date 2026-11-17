@@ -6,14 +6,19 @@
     "claims": [
       {
         "field": "amount_yen",
-        "statement": "令和8年度一般会計当初予算案は1兆1,318億円。",
-        "source_ids": ["fukuoka-city-budget-2026-page"],
-        "location_note": "公式ページ「1 予算規模」の一般会計欄。",
+        "statement": "令和8年度一般会計当初予算（成立後）の歳入総額は1,131,811,000千円。",
+        "source_ids": [
+          "fukuoka-city-gazette-budget-2026-pdf",
+          "fukuoka-city-assembly-newsletter-171"
+        ],
+        "location_note": "福岡市公報第7233号（別冊）福岡市告示第101号「予算の要領」第1表 歳入歳出予算の歳入合計欄。",
         "decision": "accepted",
-        "review_note": "当初予算案であり、補正後予算・執行額・決算額と区別して保存。"
+        "review_note": "令和8年3月27日に成立した当初予算の告示による成立額。予算案段階の億円単位表示（1兆1,318億円）から千円単位へ精密化した。ふくおか市議会だよりNo.171でも議案第27号（一般会計予算）の可決（賛成多数）を確認。"
       }
     ],
-    "open_questions": ["年度終了後の執行額・決算額は未確定。"],
+    "open_questions": [
+      "年度終了後の執行額・決算額は未確定。"
+    ],
     "review_status": "reviewed"
   },
   {
@@ -23,14 +28,40 @@
     "claims": [
       {
         "field": "amount_yen",
-        "statement": "令和8年度当初予算案の市税収入は4,263億円。",
-        "source_ids": ["fukuoka-city-budget-2026-page"],
-        "location_note": "公式ページ「2 令和8年度当初予算案のポイント」歳入欄。",
+        "statement": "令和8年度一般会計当初予算（成立後）の市税収入は426,320,009千円。",
+        "source_ids": [
+          "fukuoka-city-gazette-budget-2026-pdf"
+        ],
+        "location_note": "福岡市公報第7233号（別冊）福岡市告示第101号「予算の要領」第1表の款(1)市税欄。",
         "decision": "accepted",
-        "review_note": "公式ページの『過去最高を更新』との説明も確認。"
+        "review_note": "項別8税目の合計が426,320,009千円と一致することを検算で確認。予算案段階の億円単位表示（4,263億円）から千円単位へ精密化した。"
       }
     ],
-    "open_questions": ["税目別内訳と年度末の実収入は今後確認する。"],
+    "open_questions": [
+      "年度末の実収入は今後確認する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-city-2026-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401307-fiscal-2026-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算（成立後）の歳出総額は1,131,811,000千円。",
+        "source_ids": [
+          "fukuoka-city-gazette-budget-2026-pdf",
+          "fukuoka-city-assembly-newsletter-171"
+        ],
+        "location_note": "福岡市公報第7233号（別冊）福岡市告示第101号「予算の要領」第1表 歳入歳出予算の歳出合計欄。",
+        "decision": "accepted",
+        "review_note": "歳出の款別16区分の合計が1,131,811,000千円と一致することを検算で確認。歳入総額と同額。成立前の当初予算案の段階では歳出総額のレコードはなかったため、成立額で新規に収録した。"
+      }
+    ],
+    "open_questions": [
+      "年度終了後の執行額・決算額は未確定。"
+    ],
     "review_status": "reviewed"
   },
   {
@@ -41,13 +72,17 @@
       {
         "field": "amount_yen",
         "statement": "2024年度一般会計の歳入決算額は1,126,286,330千円。",
-        "source_ids": ["fukuoka-city-settlement-2024-overview-pdf"],
+        "source_ids": [
+          "fukuoka-city-settlement-2024-overview-pdf"
+        ],
         "location_note": "PDF3ページ目（冊子1頁）下部の一般会計決算表。",
         "decision": "accepted",
         "review_note": "千円単位を1,000倍して円単位で保存。資料注記の決算見込み時点も保持。"
       }
     ],
-    "open_questions": ["確定版への差し替えが公表された場合は再確認する。"],
+    "open_questions": [
+      "確定版への差し替えが公表された場合は再確認する。"
+    ],
     "review_status": "reviewed"
   },
   {
@@ -58,13 +93,17 @@
       {
         "field": "amount_yen",
         "statement": "2024年度一般会計の歳出決算額は1,108,780,593千円。",
-        "source_ids": ["fukuoka-city-settlement-2024-overview-pdf"],
+        "source_ids": [
+          "fukuoka-city-settlement-2024-overview-pdf"
+        ],
         "location_note": "PDF3ページ目（冊子1頁）下部の一般会計決算表。",
         "decision": "accepted",
         "review_note": "千円単位を1,000倍して円単位で保存。資料注記の決算見込み時点も保持。"
       }
     ],
-    "open_questions": ["目的別・性質別の歳出内訳は次の財政拡充で追加する。"],
+    "open_questions": [
+      "目的別・性質別の歳出内訳は次の財政拡充で追加する。"
+    ],
     "review_status": "reviewed"
   }
 ]
