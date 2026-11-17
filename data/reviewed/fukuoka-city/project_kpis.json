@@ -1,0 +1,125 @@
+[
+  {
+    "actuals": [
+      {
+        "period": "2025年度",
+        "source_ids": [
+          "fukuoka-city-plan-evaluation-goal1-fy2025"
+        ],
+        "status": "available",
+        "value": 66.2
+      }
+    ],
+    "assessment": "in_progress",
+    "baseline": {
+      "period": "初期値（時点の明示なし）",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal1-fy2025"
+      ],
+      "status": "available",
+      "value": 62.7
+    },
+    "causality_note": "認知度は意識指標であり、本事業の広報・啓発以外の要因（報道、学校教育、市民の関心の変化など）にも影響されるため、数値の変動のすべてが本事業の成果であるとは限らない。市も達成状況の判定にあたり、意識系の指標についてはアンケート調査の誤差を考慮し、初期値からの変動幅が概ね±3％未満の場合は「初期値と同程度」の範囲内としている。",
+    "confidence": "high",
+    "definition": "ユニバーサルデザインに基づく取組みの認知度（成果指標）。令和7年度福岡市基本計画に係る実施状況の報告（施策評価シート、施策1-1）の掲載値をそのまま記録する。市の達成状況はA（目標に向けて順調に進んでいる）。",
+    "direction": "increase",
+    "id": "jp-local-401307-project-2025-universal-city-promotion-kpi-universal-design-awareness",
+    "name": "ユニバーサルデザインに基づく取組みの認知度",
+    "project_id": "jp-local-401307-project-2025-universal-city-promotion",
+    "review_status": "reviewed",
+    "sources": [
+      "fukuoka-city-plan-evaluation-goal1-fy2025"
+    ],
+    "target": {
+      "period": "目標値（達成年度の明示なし）",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal1-fy2025"
+      ],
+      "status": "available",
+      "value": 70
+    },
+    "unit": "％"
+  },
+  {
+    "actuals": [
+      {
+        "period": "2025年度",
+        "source_ids": [
+          "fukuoka-city-plan-evaluation-goal2-fy2025"
+        ],
+        "status": "available",
+        "value": 9.7
+      }
+    ],
+    "assessment": "not_achieved",
+    "baseline": {
+      "period": "2023年度",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal2-fy2025"
+      ],
+      "status": "available",
+      "value": 5.3
+    },
+    "causality_note": "本指標は学校・家庭・地域など子どもを取り巻く社会全体の状況を反映する意識指標であり、本事業（普及・啓発と意見表明等支援）の取組だけで変動するものではない。初期値から悪化した要因は資料上特定されておらず、本事業の実施が悪化の原因であるとも、実施しなければさらに悪化していたとも、資料からは判断できない。",
+    "confidence": "high",
+    "definition": "自分の意見が大切にされていないように感じることがよくあると回答した子ども（中高生等）の割合（成果指標）。令和7年度福岡市基本計画に係る実施状況の報告（施策評価シート、施策2-1）の掲載値をそのまま記録する。数値が下がると成果が向上する指標であり、市の達成状況はD（初期値を上回っている＝悪化）。初期値と最新値の列位置はPDFの座標で照合済み。",
+    "direction": "decrease",
+    "id": "jp-local-401307-project-2025-child-rights-voice-support-kpi-children-voice-not-valued-share",
+    "name": "自分の意見が大切にされていないように感じることがよくあると回答した子ども（中高生等）の割合",
+    "project_id": "jp-local-401307-project-2025-child-rights-voice-support",
+    "review_status": "reviewed",
+    "sources": [
+      "fukuoka-city-plan-evaluation-goal2-fy2025"
+    ],
+    "target": {
+      "period": "目標値（達成年度の明示なし）",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal2-fy2025"
+      ],
+      "status": "available",
+      "value": "3％未満"
+    },
+    "unit": "％"
+  },
+  {
+    "actuals": [
+      {
+        "period": "2025年度",
+        "source_ids": [
+          "fukuoka-city-plan-evaluation-goal3-fy2025"
+        ],
+        "status": "available",
+        "value": 64
+      }
+    ],
+    "assessment": "in_progress",
+    "baseline": {
+      "period": "初期値（時点の明示なし）",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal3-fy2025"
+      ],
+      "status": "available",
+      "value": 9
+    },
+    "causality_note": "導入校区数は、市の制度設計・周知と、校区側の受入体制や担い手の状況の双方によって決まる量である。校区数の増加は本事業の取組の進捗を示すが、導入した校区で地域活動が実際に活性化したかどうかは、この指標だけでは判断できない。",
+    "confidence": "high",
+    "definition": "ふくおかポイントの導入校区数（成果指標）。令和7年度福岡市基本計画に係る実施状況の報告（施策評価シート、施策3-1）の掲載値をそのまま記録する。市の達成状況はA（目標に向けて順調に進んでいる）。",
+    "direction": "increase",
+    "id": "jp-local-401307-project-2025-fukuoka-points-kpi-point-adoption-districts",
+    "name": "ふくおかポイントの導入校区数",
+    "project_id": "jp-local-401307-project-2025-fukuoka-points",
+    "review_status": "reviewed",
+    "sources": [
+      "fukuoka-city-plan-evaluation-goal3-fy2025"
+    ],
+    "target": {
+      "period": "目標値（達成年度の明示なし）",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal3-fy2025"
+      ],
+      "status": "available",
+      "value": 100
+    },
+    "unit": "校区"
+  }
+]

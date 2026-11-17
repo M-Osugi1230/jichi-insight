@@ -1,0 +1,71 @@
+{
+  "issue": 7,
+  "municipality_id": "jp-local-401307",
+  "municipality_key": "fukuoka-city",
+  "population": {
+    "description": "福岡市第10次基本計画（2024年12月策定、計画期間2025〜2034年度）の8つの分野別目標・30施策の下に位置づけられ、令和7年度福岡市基本計画に係る実施状況の報告（施策評価、2026年9月2日公表）の対象となった事業のうち、各局の当初予算資料の「重要施策」に事業単位で掲載され、事業単独の金額が確認できる事業。福岡市には単一の公式な「重点事業」リストがなく、事務事業評価も現行制度としては確認できていないため、母集団は「重要施策に掲載された事業 ∩ 施策評価の対象事業」と定義する。施策評価の対象事業の総数は公式に集計・公表されていないため、件数は記録しない。",
+    "fiscal_year": 2025,
+    "policy_count": 30,
+    "source_ids": [
+      "fukuoka-city-plan-report-fy2025-page"
+    ]
+  },
+  "review_status": "reviewed",
+  "scope": "pilot",
+  "selection_rule": {
+    "description": "市の計画体系の柱である第10次基本計画の分野別目標の表示順に、先頭の3目標（目標1・2・3）を取り、各目標について、最初の施策から、施策評価シート「3 事業の指標・進捗状況・課題・今後の方向性」の掲載順に事業をたどり、母集団の交差条件（当初予算資料の重要施策に事業単位で掲載され、事業単独の金額が確認できること）を満たす先頭の事業を1件ずつ選ぶ。金額の大小では選ばない。接続に確信が持てない事業は選ばず、次の事業に進み、その経緯をskippedに残す。目標4〜8はパイロットの範囲外とし、今後の展開で扱う。",
+    "pillars": [
+      "目標1 一人ひとりが心豊かに暮らし、自分らしく輝いている",
+      "目標2 すべての子ども・若者が夢を描きながら健やかに成長している",
+      "目標3 地域の人々がつながり、支え合い、安全・安心に暮らしている"
+    ]
+  },
+  "selections": [
+    {
+      "official_title": "ユニバーサル都市・福岡の推進",
+      "pillar": "目標1 一人ひとりが心豊かに暮らし、自分らしく輝いている",
+      "project_id": "jp-local-401307-project-2025-universal-city-promotion",
+      "selection_basis": "目標1の最初の施策である施策1-1の掲載順先頭の事業。総務企画局の当初予算案等説明資料の重要施策「主な事業」に同名で事業単位の金額（7,893千円）が掲載されており、交差条件を満たす。",
+      "series_id": "jp-local-401307-project-series-universal-city-promotion",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal1-fy2025",
+        "fukuoka-city-budget-briefing-general-affairs-fy2025"
+      ]
+    },
+    {
+      "official_title": "子どもの権利の尊重・意見表明の支援",
+      "pillar": "目標2 すべての子ども・若者が夢を描きながら健やかに成長している",
+      "project_id": "jp-local-401307-project-2025-child-rights-voice-support",
+      "selection_basis": "目標2の最初の施策である施策2-1の掲載順先頭の事業。当初予算案説明書（その一）の各局重要施策に、こども未来局の項目としてほぼ同名（子どもの権利の尊重と意見表明支援）で事業単位の金額（30,809千円）が掲載されており、交差条件を満たす。表記ゆれの接続根拠は証拠パケットに記録した。",
+      "series_id": "jp-local-401307-project-series-child-rights-voice-support",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal2-fy2025",
+        "fukuoka-city-budget-proposal-book1-fy2025"
+      ]
+    },
+    {
+      "official_title": "地域ポイント事業",
+      "pillar": "目標3 地域の人々がつながり、支え合い、安全・安心に暮らしている",
+      "project_id": "jp-local-401307-project-2025-fukuoka-points",
+      "selection_basis": "目標3の最初の施策である施策3-1の掲載順2番目の事業。先頭の「共創の地域づくり」は交差条件を確認できず除外した（skipped参照）。本事業は総務企画局の当初予算案等説明資料の重要施策「主な事業」に同名で事業単位の金額（60,718千円）が掲載されており、交差条件を満たす。",
+      "series_id": "jp-local-401307-project-series-fukuoka-points",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal3-fy2025",
+        "fukuoka-city-budget-briefing-general-affairs-fy2025"
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "official_title": "共創の地域づくり",
+      "pillar": "目標3 地域の人々がつながり、支え合い、安全・安心に暮らしている",
+      "reason": "施策3-1の掲載順先頭の事業だが、当初予算資料側で事業単独の金額を確認できなかった。市民局の当初予算案等説明資料（事業単位の重要施策を掲載）は市の公式サイトから削除されており取得できず、当初予算案説明書（その一）の各局重要施策では、対応する市民局の項目「住民主体のコミュニティづくりの支援」（1,567,866千円）が公民館整備・集会施設整備補助金等を含む複数事業の束ねであり、本事業の内容（自治協議会共創補助金、町内会活動支援事業補助金、ふくおか共創パートナー企業登録等）はその一部にとどまるため、金額を本事業の額として接続する確信が持てなかった。ルールに従い次の事業（地域ポイント事業）に進んだ。",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal3-fy2025",
+        "fukuoka-city-budget-proposal-book1-fy2025"
+      ]
+    }
+  ],
+  "updated_at": "2026-11-17",
+  "version": "0.1.0"
+}
