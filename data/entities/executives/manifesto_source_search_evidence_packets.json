@@ -73,14 +73,37 @@
       },
       {
         "field": "result_status",
-        "statement": "公式選挙公報より詳細な候補者本人公表マニフェストは、現時点で安定した一次資料を特定できていない。",
-        "source_ids": ["kitakyushu-mayor-election-2023-bulletin"],
-        "location_note": "登録済み資料の範囲と追加探索結果を区別。",
+        "statement": "候補者本人公表マニフェスト（公式サイト）は所在を特定し、選挙時期の保存コピーの存在も確認したが、「7つの基本政策」の全文の抽出・照合は未実施である。",
+        "source_ids": [
+          "kitakyushu-mayor-candidate-2023-official-site",
+          "kitakyushu-mayor-candidate-2023-official-site-archive"
+        ],
+        "location_note": "公式サイト現行トップページと、Wayback Machine availability API の応答（2026-11-17確認）。",
         "decision": "needs_review",
-        "review_note": "追加資料が見つかれば探索結果と分割レビューを更新する。"
+        "review_note": "全文の抽出・照合が完了した時点で、分割レビューと探索記録を更新する。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "武内和久候補の公式サイトの現存と、Wayback Machine に2023年1月11日（選挙期間中）時点の保存コピー（HTTP 200）が存在することを確認し、出典として登録した。",
+        "source_ids": [
+          "kitakyushu-mayor-candidate-2023-official-site",
+          "kitakyushu-mayor-candidate-2023-official-site-archive"
+        ],
+        "location_note": "公式サイト現行トップページ（プロフィール等を掲載）。保存コピーの本文は未抽出。",
+        "decision": "accepted",
+        "review_note": "確認できたのは保存コピーの存在まで。本文を一次資料として照合するまでは公約レコードを作成しない。"
+      },
+      {
+        "field": "promise_records_created",
+        "statement": "「7つの基本政策」の小項目の原文が一次資料で未照合のため、個別公約レコードは作成していない。報道や第三者の引用から公約本文を復元しない。",
+        "source_ids": ["kitakyushu-mayor-candidate-2023-official-site-archive"],
+        "location_note": "保存コピー本文は未抽出。",
+        "decision": "needs_review",
+        "review_note": "公約数を増やすための推測分割は行わない（docs/PROMISE_EXTRACTION.md の分割ルール）。"
       }
     ],
     "open_questions": [
+      "保存コピーから「7つの基本政策」の全文（7本柱と小項目）を抽出できるか。",
       "候補者本人が公開した詳細版マニフェストの保存先があるか。",
       "選挙公報候補者欄から原文上明確な公約単位を抽出できるか。"
     ],

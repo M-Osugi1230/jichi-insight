@@ -5,6 +5,8 @@ import manifestoReviewPackets from "../../../data/entities/executives/manifesto_
 import manifestoReviews from "../../../data/entities/executives/manifesto_reviews.json";
 import manifestoSourceSearchPackets from "../../../data/entities/executives/manifesto_source_search_evidence_packets.json";
 import manifestoSourceSearches from "../../../data/entities/executives/manifesto_source_searches.json";
+import promisePackets from "../../../data/entities/executives/promise_evidence_packets.json";
+import promises from "../../../data/entities/executives/promises.json";
 
 import { municipalityMeta, sourceCatalog, type SourceRecord } from "./catalog";
 
@@ -121,6 +123,67 @@ export const manifestoSourceSearchRecords =
   manifestoSourceSearches as ManifestoSourceSearch[];
 export const manifestoSourceSearchEvidencePackets =
   manifestoSourceSearchPackets as ManifestoSourceSearchEvidencePacket[];
+
+export type PromiseRecord = {
+  id: string;
+  municipality_id: string;
+  executive_term_id: string;
+  original_text: string;
+  source_location: string;
+  statement_type:
+    | "specific_commitment"
+    | "directional_commitment"
+    | "vision"
+    | "supporting_context";
+  plain_summary: string | null;
+  policy_area: string;
+  baseline: number | string | null;
+  target: number | string | null;
+  deadline: string | null;
+  funding_statement: string | null;
+  controllability: "high" | "medium" | "low" | "shared" | "not_assessable";
+  assessability: "assessable" | "partially_assessable" | "not_assessable";
+  progress_state:
+    | "achieved"
+    | "mostly_achieved"
+    | "partially_achieved"
+    | "in_progress"
+    | "not_started"
+    | "changed"
+    | "abandoned"
+    | "not_assessable";
+  related_project_ids: string[];
+  change_explanation: string | null;
+  extraction_note: string | null;
+  review_status: "verified" | "reviewed" | "extracted" | "inferred" | "missing";
+  confidence: "high" | "medium" | "low" | "not_assessable";
+  sources: string[];
+};
+
+export type PromiseEvidencePacket = {
+  id: string;
+  subject_type: "promise";
+  subject_id: string;
+  claims: EvidenceClaim[];
+  open_questions: string[];
+  review_status: "reviewed" | "verified";
+};
+
+export const promiseRecords = promises as PromiseRecord[];
+export const promiseEvidencePackets =
+  promisePackets as PromiseEvidencePacket[];
+
+export function promisesForExecutive(term: ExecutiveTerm) {
+  return promiseRecords.filter(
+    (promise) => promise.executive_term_id === term.id,
+  );
+}
+
+export function evidenceForPromise(promise: PromiseRecord) {
+  return promiseEvidencePackets.find(
+    (packet) => packet.subject_id === promise.id,
+  );
+}
 
 export function executiveMunicipality(term: ExecutiveTerm) {
   const key = municipalityIdToKey[term.municipality_id as keyof typeof municipalityIdToKey];

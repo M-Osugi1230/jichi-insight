@@ -58,7 +58,9 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         search for search in searches if search["result_status"] == "source_registered"
     )
     assert registered["manifesto_source_ids_found"] == [
-        "kitakyushu-mayor-election-2023-bulletin"
+        "kitakyushu-mayor-election-2023-bulletin",
+        "kitakyushu-mayor-candidate-2023-official-site",
+        "kitakyushu-mayor-candidate-2023-official-site-archive",
     ]
 
 
