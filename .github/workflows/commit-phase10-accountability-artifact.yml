@@ -21,7 +21,7 @@ jobs:
           ref: ${{ github.ref_name }}
           fetch-depth: 0
       - name: Download reviewed accountability artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: phase10-accountability-source-candidates
           path: downloaded-accountability
