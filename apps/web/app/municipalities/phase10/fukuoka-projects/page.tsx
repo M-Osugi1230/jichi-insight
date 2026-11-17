@@ -11,9 +11,13 @@ import {
   projectStatusLabel,
 } from "@/lib/fukuokaProjectLinkage";
 
+import { canonicalFor } from "@/lib/pageMetadata";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: canonicalFor("/municipalities/phase10/fukuoka-projects"),
+  },
   title: "福岡県 重点事業・予算・決算候補接続｜Phase 10",
   description:
     "福岡県の既存重点事業266件を、令和8年度予算、令和6年度決算、総合計画118目標へ保守的に照合した候補台帳です。",

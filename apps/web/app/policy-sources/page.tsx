@@ -16,9 +16,13 @@ import {
   policySourceStats,
 } from "@/lib/policySources";
 
+import { canonicalFor } from "@/lib/pageMetadata";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: canonicalFor("/policy-sources"),
+  },
   title: "政策資料マップ",
   description:
     "福岡県・福岡市・北九州市の総合計画、実施計画、年度施策、進捗報告、事業点検の収集状況を確認できます。",

@@ -15,6 +15,7 @@ import {
   type Phase15PlanRecord,
   type Phase15ResolvedSource,
 } from "@/lib/phase15Cities";
+import { defaultOgImages } from "@/lib/pageMetadata";
 
 import styles from "./page.module.css";
 
@@ -50,6 +51,9 @@ export async function generateMetadata({
       title,
       description,
       url: `${siteUrl}/municipalities/${city.slug}/`,
+      // A returned openGraph object replaces the inherited one, including
+      // the layout's default image, so the shared default is passed here.
+      images: defaultOgImages,
     },
   };
 }

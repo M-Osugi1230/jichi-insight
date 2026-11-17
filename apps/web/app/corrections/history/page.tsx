@@ -6,8 +6,12 @@ import { PageIntro } from "@/components/PageIntro";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { correctionsHistory } from "@/lib/correctionsHistory";
+import { canonicalFor } from "@/lib/pageMetadata";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: canonicalFor("/corrections/history"),
+  },
   title: "変更履歴",
   description:
     "Jichi Insightが公開データへ適用した訂正の履歴。修正前後、理由、根拠、日時、レビュー担当を公開します。",

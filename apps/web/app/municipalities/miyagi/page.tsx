@@ -18,9 +18,13 @@ import {
   type MiyagiKpiValue,
 } from "@/lib/miyagiPolicies";
 
+import { canonicalFor } from "@/lib/pageMetadata";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: canonicalFor("/municipalities/miyagi"),
+  },
   title: `宮城県｜政策目標${miyagiPolicyReviewStats.reviewedTargetGroups}件・年度実績${miyagiKpiActualStats.annualResultRows}件`,
   description:
     `宮城県の政策目標${miyagiPolicyReviewStats.reviewedTargetGroups}件と、${miyagiKpiActualStats.reviewedLinks}系列・${miyagiKpiActualStats.annualResultRows}件の年度実績を、公式評価書と現行計画の目標を分けて確認できます。`,

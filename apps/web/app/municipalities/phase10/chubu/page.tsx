@@ -10,9 +10,13 @@ import {
   regionalDepthLabels,
 } from "@/lib/phase10RegionalDepth";
 
+import { canonicalFor } from "@/lib/pageMetadata";
 import styles from "../tohoku/page.module.css";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: canonicalFor("/municipalities/phase10/chubu"),
+  },
   title: "Phase 10 中部｜8県の年度実績・予算・決算・事業・監査",
   description:
     "新潟県、富山県、石川県、福井県、山梨県、長野県、岐阜県、静岡県について、年度実績、予算、決算、重点事業、監査の公式資料と未接続範囲を公開します。",

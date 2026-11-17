@@ -2,8 +2,12 @@ import type { Metadata } from "next";
 
 import { Phase10RegionalDepthPage } from "@/components/Phase10RegionalDepthPage";
 import { loadPhase10KyushuDepth } from "@/lib/phase10RegionalDepth";
+import { canonicalFor } from "@/lib/pageMetadata";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: canonicalFor("/municipalities/phase10/kyushu"),
+  },
   title: "Phase 10 九州｜6県の年度実績・予算・決算・事業・監査",
   description:
     "佐賀県、長崎県、熊本県、大分県、宮崎県、鹿児島県の年度実績、予算、決算、重点事業、監査の公式資料と境界を公開します。",

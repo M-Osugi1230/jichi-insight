@@ -11,9 +11,13 @@ import {
   miyagiProjectMoneyRecords,
 } from "@/lib/miyagiProjectMoney";
 
+import { canonicalFor } from "@/lib/pageMetadata";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: canonicalFor("/municipalities/phase10/miyagi-money"),
+  },
   title: "宮城県 予算・決算・事業接続｜Phase 10",
   description:
     "宮城県の令和8年度予算事業627件を令和6年度決算・実績へ照合し、同一事業系列、追加確認、前年度同一事業なしを分けて公開します。",

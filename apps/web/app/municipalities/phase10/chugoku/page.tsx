@@ -2,8 +2,12 @@ import type { Metadata } from "next";
 
 import { Phase10RegionalDepthPage } from "@/components/Phase10RegionalDepthPage";
 import { loadPhase10ChugokuDepth } from "@/lib/phase10RegionalDepth";
+import { canonicalFor } from "@/lib/pageMetadata";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: canonicalFor("/municipalities/phase10/chugoku"),
+  },
   title: "Phase 10 中国｜4県の年度実績・予算・決算・事業・監査",
   description:
     "鳥取県、島根県、岡山県、山口県の年度実績、予算、決算、重点事業、監査の公式資料と境界を公開します。",

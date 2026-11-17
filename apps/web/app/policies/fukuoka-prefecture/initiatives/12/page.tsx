@@ -2,8 +2,12 @@ import type { Metadata } from "next";
 
 import { PolicyTargetDetail } from "@/components/PolicyTargetDetail";
 import { policyTargetPage } from "@/lib/policyTargets";
+import { canonicalFor } from "@/lib/pageMetadata";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: canonicalFor("/policies/fukuoka-prefecture/initiatives/12"),
+  },
   title: "健康づくり、安心で質の高い医療の提供｜数値目標",
   description:
     "福岡県総合計画の取組12に設定された5つの数値目標を、健康寿命の条件型目標、死亡率の上限目標、医薬品普及率、看護職員就職者数とともに確認できます。",

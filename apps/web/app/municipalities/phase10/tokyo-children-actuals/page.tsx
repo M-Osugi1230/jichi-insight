@@ -12,9 +12,13 @@ import {
   tokyoConflictLabel,
 } from "@/lib/tokyoChildrenActuals";
 
+import { canonicalFor } from "@/lib/pageMetadata";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: canonicalFor("/municipalities/phase10/tokyo-children-actuals"),
+  },
   title: "東京都 子供分野8目標の年度実績接続｜Phase 10",
   description:
     "2050東京戦略の子供分野8目標を政策レビューへ照合し、年度実績へ接続した目標と文書間の値・期間差を分けて公開します。",

@@ -11,9 +11,13 @@ import {
 } from "@/lib/fukuokaAnnualActuals";
 import { policyTargetPages } from "@/lib/policyTargets";
 
+import { canonicalFor } from "@/lib/pageMetadata";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: canonicalFor("/municipalities/phase10/fukuoka-actuals"),
+  },
   title: "福岡県 年度実績接続｜Phase 10",
   description:
     "福岡県総合計画の118目標を令和6年度実施状況へ照合し、接続済み、目標版再確認、別資料探索を分けて公開します。",

@@ -13,9 +13,13 @@ import {
 } from "@/lib/assemblyOverseas";
 import { sourceCatalog } from "@/lib/catalog";
 
+import { canonicalFor } from "@/lib/pageMetadata";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: canonicalFor("/assemblies/fukuoka-prefecture/overseas-activities"),
+  },
   title: "福岡県議会｜海外活動の公開状況",
   description:
     "福岡県議会の海外活動を、日程、目的、参加者、費用、報告書、政策反映の公開状態に分けて整理します。",

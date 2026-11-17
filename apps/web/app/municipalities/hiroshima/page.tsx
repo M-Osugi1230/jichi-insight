@@ -10,9 +10,13 @@ import {
   hiroshimaReviewManifest,
 } from "@/lib/hiroshimaIndicators";
 
+import { canonicalFor } from "@/lib/pageMetadata";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: canonicalFor("/municipalities/hiroshima"),
+  },
   title: "広島県｜改定版ひろしまビジョンの成果指標",
   description:
     "改定版「安心▷誇り▷挑戦 ひろしまビジョン」の現行62指標を、基準値、最新値、目標、資料位置とともに公開します。",

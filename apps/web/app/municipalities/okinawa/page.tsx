@@ -10,9 +10,13 @@ import {
   okinawaReviewManifest,
 } from "@/lib/okinawaIndicators";
 
+import { canonicalFor } from "@/lib/pageMetadata";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: canonicalFor("/municipalities/okinawa"),
+  },
   title: "沖縄県｜中期実施計画の375指標",
   description:
     "新・沖縄21世紀ビジョン実施計画（中期）の主要指標36件と成果指標339件を、基準値、R9年度目標、全国値、Evidenceとともに公開します。",

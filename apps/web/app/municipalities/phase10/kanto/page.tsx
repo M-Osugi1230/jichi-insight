@@ -10,9 +10,13 @@ import {
   regionalDepthLabels,
 } from "@/lib/phase10RegionalDepth";
 
+import { canonicalFor } from "@/lib/pageMetadata";
 import styles from "../tohoku/page.module.css";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: canonicalFor("/municipalities/phase10/kanto"),
+  },
   title: "Phase 10 関東｜6県の年度実績・予算・決算・事業・監査",
   description:
     "茨城県、栃木県、群馬県、埼玉県、千葉県、神奈川県について、年度実績、予算、決算、重点事業、監査の公式資料と未接続範囲を公開します。",

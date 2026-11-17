@@ -11,9 +11,13 @@ import {
   aichiPolicySources,
 } from "@/lib/aichiIndicators";
 
+import { canonicalFor } from "@/lib/pageMetadata";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: canonicalFor("/municipalities/aichi"),
+  },
   title: "愛知県｜あいちビジョン2030の進捗管理指標",
   description:
     "あいちビジョン2030の進捗管理指標56件・62系列を、策定時、現状、進捗目標、Evidenceとともに公開します。",
