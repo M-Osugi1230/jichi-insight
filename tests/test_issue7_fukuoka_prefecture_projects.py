@@ -25,6 +25,26 @@ TECH = "jp-local-400009-project-2025-technology-talent"
 DANSEI = "jp-local-400009-project-2025-male-childcare-leave"
 YOBO = "jp-local-400009-project-2025-vaccination-revaccination"
 
+TERM_ID = "jp-local-400009-executive-2025-04-14"
+
+# Issue #8 registered the governor's nine bulletin items and linked the
+# projects whose content corresponds; the three unlinked projects
+# (airport cargo, rubella antibody test, vaccination re-vaccination)
+# stay empty. Links are inferred from wording/content, capped at
+# low / inferred in the promise evidence packets.
+EXPECTED_PROMISE_LINKS = {
+    MIRAI: [f"{TERM_ID}-promise-001"],
+    HITORI: [f"{TERM_ID}-promise-003", f"{TERM_ID}-promise-008"],
+    KANSHO: [f"{TERM_ID}-promise-007"],
+    CARGO: [],
+    SEISHONEN: [f"{TERM_ID}-promise-002"],
+    HATARAKI: [f"{TERM_ID}-promise-003", f"{TERM_ID}-promise-004"],
+    FUSHIN: [],
+    TECH: [f"{TERM_ID}-promise-002"],
+    DANSEI: [f"{TERM_ID}-promise-008"],
+    YOBO: [],
+}
+
 PILLAR1 = "世界を視野に、未来を見据えて成長し、発展する"
 PILLAR2 = "誰もが住み慣れたところで働き、長く元気に暮らし、子どもを安心して産み育てることができる"
 PILLAR3 = "感染症や災害に負けない強靭な社会をつくる"
@@ -321,8 +341,9 @@ def test_official_evaluation_is_the_prefectures_not_ours() -> None:
         expected_direction = "終了" if project_id == DANSEI else "継続"
         assert record["official_evaluation"]["direction"] == expected_direction
         assert "Jichi Insight独自の評価ではない" in record["official_evaluation"]["note"]
-        # Promises are Issue #8: no fabricated links.
-        assert record["related_promise_ids"] == []
+        # Issue #8 links are exact: only the projects whose content
+        # corresponds to a registered bulletin item carry promise IDs.
+        assert record["related_promise_ids"] == EXPECTED_PROMISE_LINKS[project_id]
 
 
 def test_every_project_has_an_evidence_packet_and_known_sources() -> None:

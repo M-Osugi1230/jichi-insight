@@ -1032,5 +1032,245 @@
       "fukuoka-city-mayor-manifesto-2022-go2senkyo-archive",
       "fukuoka-city-mayor-election-2022-bulletin"
     ]
+  },
+  {
+    "id": "jp-local-400009-executive-2025-04-14-promise-001",
+    "municipality_id": "jp-local-400009",
+    "executive_term_id": "jp-local-400009-executive-2025-04-14",
+    "original_text": "「こども」の教育環境を充実",
+    "source_location": "選挙公報1ページ目下段・服部誠太郎候補欄「これからの未来を見据え 3つの挑戦」挑戦1「人こそ財! 人を育てる」項目①",
+    "statement_type": "directional_commitment",
+    "plain_summary": "子どもたちが良い教育を受けられる環境を整える。",
+    "policy_area": "education_and_human_development",
+    "baseline": null,
+    "target": null,
+    "deadline": null,
+    "funding_statement": null,
+    "controllability": "high",
+    "assessability": "partially_assessable",
+    "progress_state": "in_progress",
+    "related_project_ids": [
+      "jp-local-400009-project-2025-mirai-kodomo-challenge"
+    ],
+    "change_explanation": null,
+    "extraction_note": "選挙公報の候補者欄「3つの挑戦」の番号項目を単位とした。柱（挑戦）の見出し自体はレコードにせず、source_location と policy_area のグルーピングで保持した。公約部分に数値目標・期限・財源の明示はないため、target 等は記録していない。同じ候補者欄の「主な実績」欄にも類似の文言があるが、そちらは1期目の実績説明であり、本レコードは「3つの挑戦」側の文言で作成した。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukuoka-pref-governor-election-2025-bulletin"
+    ]
+  },
+  {
+    "id": "jp-local-400009-executive-2025-04-14-promise-002",
+    "municipality_id": "jp-local-400009",
+    "executive_term_id": "jp-local-400009-executive-2025-04-14",
+    "original_text": "「若者」の挑戦を応援",
+    "source_location": "選挙公報1ページ目下段・服部誠太郎候補欄「これからの未来を見据え 3つの挑戦」挑戦1「人こそ財! 人を育てる」項目②",
+    "statement_type": "directional_commitment",
+    "plain_summary": "若者が新しいことに挑戦するのを後押しする。",
+    "policy_area": "education_and_human_development",
+    "baseline": null,
+    "target": null,
+    "deadline": null,
+    "funding_statement": null,
+    "controllability": "high",
+    "assessability": "partially_assessable",
+    "progress_state": "in_progress",
+    "related_project_ids": [
+      "jp-local-400009-project-2025-youth-international-exchange",
+      "jp-local-400009-project-2025-technology-talent"
+    ],
+    "change_explanation": null,
+    "extraction_note": "選挙公報の候補者欄「3つの挑戦」の番号項目を単位とした。柱（挑戦）の見出し自体はレコードにせず、source_location と policy_area のグルーピングで保持した。公約部分に数値目標・期限・財源の明示はないため、target 等は記録していない。同じ候補者欄の「主な実績」欄にも類似の文言があるが、そちらは1期目の実績説明であり、本レコードは「3つの挑戦」側の文言で作成した。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukuoka-pref-governor-election-2025-bulletin"
+    ]
+  },
+  {
+    "id": "jp-local-400009-executive-2025-04-14-promise-003",
+    "municipality_id": "jp-local-400009",
+    "executive_term_id": "jp-local-400009-executive-2025-04-14",
+    "original_text": "「女性・高齢者」をはじめ「すべての人」の活躍を応援",
+    "source_location": "選挙公報1ページ目下段・服部誠太郎候補欄「これからの未来を見据え 3つの挑戦」挑戦1「人こそ財! 人を育てる」項目③",
+    "statement_type": "directional_commitment",
+    "plain_summary": "女性や高齢者を含むすべての人が、それぞれの力を発揮して活躍できるよう応援する。",
+    "policy_area": "education_and_human_development",
+    "baseline": null,
+    "target": null,
+    "deadline": null,
+    "funding_statement": null,
+    "controllability": "high",
+    "assessability": "partially_assessable",
+    "progress_state": "in_progress",
+    "related_project_ids": [
+      "jp-local-400009-project-2025-work-style-improvement",
+      "jp-local-400009-project-2025-single-parent-employment-support"
+    ],
+    "change_explanation": null,
+    "extraction_note": "選挙公報の候補者欄「3つの挑戦」の番号項目を単位とした。柱（挑戦）の見出し自体はレコードにせず、source_location と policy_area のグルーピングで保持した。公約部分に数値目標・期限・財源の明示はないため、target 等は記録していない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukuoka-pref-governor-election-2025-bulletin"
+    ]
+  },
+  {
+    "id": "jp-local-400009-executive-2025-04-14-promise-004",
+    "municipality_id": "jp-local-400009",
+    "executive_term_id": "jp-local-400009-executive-2025-04-14",
+    "original_text": "県経済の原動力「中小企業」を応援",
+    "source_location": "選挙公報1ページ目下段・服部誠太郎候補欄「これからの未来を見据え 3つの挑戦」挑戦2「世界に輝く福岡! 産業を育てる」項目①",
+    "statement_type": "directional_commitment",
+    "plain_summary": "県の経済を支える中小企業を応援する。",
+    "policy_area": "industry_and_economy",
+    "baseline": null,
+    "target": null,
+    "deadline": null,
+    "funding_statement": null,
+    "controllability": "high",
+    "assessability": "partially_assessable",
+    "progress_state": "in_progress",
+    "related_project_ids": [
+      "jp-local-400009-project-2025-work-style-improvement"
+    ],
+    "change_explanation": null,
+    "extraction_note": "選挙公報の候補者欄「3つの挑戦」の番号項目を単位とした。柱（挑戦）の見出し自体はレコードにせず、source_location と policy_area のグルーピングで保持した。公約部分に数値目標・期限・財源の明示はないため、target 等は記録していない。同じ候補者欄の「主な実績」欄にも類似の文言があるが、そちらは1期目の実績説明であり、本レコードは「3つの挑戦」側の文言で作成した。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukuoka-pref-governor-election-2025-bulletin"
+    ]
+  },
+  {
+    "id": "jp-local-400009-executive-2025-04-14-promise-005",
+    "municipality_id": "jp-local-400009",
+    "executive_term_id": "jp-local-400009-executive-2025-04-14",
+    "original_text": "成長の起爆剤となる「スタートアップ」の育成",
+    "source_location": "選挙公報1ページ目下段・服部誠太郎候補欄「これからの未来を見据え 3つの挑戦」挑戦2「世界に輝く福岡! 産業を育てる」項目②",
+    "statement_type": "directional_commitment",
+    "plain_summary": "成長のきっかけとなるスタートアップ（新興企業）を育てる。",
+    "policy_area": "industry_and_economy",
+    "baseline": null,
+    "target": null,
+    "deadline": null,
+    "funding_statement": null,
+    "controllability": "high",
+    "assessability": "partially_assessable",
+    "progress_state": "not_assessable",
+    "related_project_ids": [],
+    "change_explanation": null,
+    "extraction_note": "選挙公報の候補者欄「3つの挑戦」の番号項目を単位とした。柱（挑戦）の見出し自体はレコードにせず、source_location と policy_area のグルーピングで保持した。公約部分に数値目標・期限・財源の明示はないため、target 等は記録していない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukuoka-pref-governor-election-2025-bulletin"
+    ]
+  },
+  {
+    "id": "jp-local-400009-executive-2025-04-14-promise-006",
+    "municipality_id": "jp-local-400009",
+    "executive_term_id": "jp-local-400009-executive-2025-04-14",
+    "original_text": "基幹産業「農林水産業」を稼ぐ産業へ",
+    "source_location": "選挙公報1ページ目下段・服部誠太郎候補欄「これからの未来を見据え 3つの挑戦」挑戦2「世界に輝く福岡! 産業を育てる」項目③",
+    "statement_type": "directional_commitment",
+    "plain_summary": "県の基幹産業である農林水産業を、稼げる産業に育てる。",
+    "policy_area": "industry_and_economy",
+    "baseline": null,
+    "target": null,
+    "deadline": null,
+    "funding_statement": null,
+    "controllability": "medium",
+    "assessability": "partially_assessable",
+    "progress_state": "not_assessable",
+    "related_project_ids": [],
+    "change_explanation": null,
+    "extraction_note": "選挙公報の候補者欄「3つの挑戦」の番号項目を単位とした。柱（挑戦）の見出し自体はレコードにせず、source_location と policy_area のグルーピングで保持した。公約部分に数値目標・期限・財源の明示はないため、target 等は記録していない。産業の収益化は市場環境や事業者の取組みにも依存するため、controllability は medium とした。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukuoka-pref-governor-election-2025-bulletin"
+    ]
+  },
+  {
+    "id": "jp-local-400009-executive-2025-04-14-promise-007",
+    "municipality_id": "jp-local-400009",
+    "executive_term_id": "jp-local-400009-executive-2025-04-14",
+    "original_text": "人の命・健康を守る「ワンヘルス」の取組みを推進",
+    "source_location": "選挙公報1ページ目下段・服部誠太郎候補欄「これからの未来を見据え 3つの挑戦」挑戦3「人も地球も笑顔! 安全・安心なまちをつくる」項目①",
+    "statement_type": "directional_commitment",
+    "plain_summary": "人の命と健康を守るため、人・動物・環境の健康を一体で考える「ワンヘルス」の取組みを進める。",
+    "policy_area": "health_welfare_and_safety",
+    "baseline": null,
+    "target": null,
+    "deadline": null,
+    "funding_statement": null,
+    "controllability": "high",
+    "assessability": "partially_assessable",
+    "progress_state": "in_progress",
+    "related_project_ids": [
+      "jp-local-400009-project-2025-infectious-disease-prevention"
+    ],
+    "change_explanation": null,
+    "extraction_note": "選挙公報の候補者欄「3つの挑戦」の番号項目を単位とした。柱（挑戦）の見出し自体はレコードにせず、source_location と policy_area のグルーピングで保持した。公約部分に数値目標・期限・財源の明示はないため、target 等は記録していない。同じ候補者欄の「主な実績」欄にも類似の文言があるが、そちらは1期目の実績説明であり、本レコードは「3つの挑戦」側の文言で作成した。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukuoka-pref-governor-election-2025-bulletin"
+    ]
+  },
+  {
+    "id": "jp-local-400009-executive-2025-04-14-promise-008",
+    "municipality_id": "jp-local-400009",
+    "executive_term_id": "jp-local-400009-executive-2025-04-14",
+    "original_text": "「子育て世帯」の応援及び「生活困難者」を支援",
+    "source_location": "選挙公報1ページ目下段・服部誠太郎候補欄「これからの未来を見据え 3つの挑戦」挑戦3「人も地球も笑顔! 安全・安心なまちをつくる」項目②",
+    "statement_type": "directional_commitment",
+    "plain_summary": "子育て中の世帯を応援し、生活に困っている人を支援する。",
+    "policy_area": "health_welfare_and_safety",
+    "baseline": null,
+    "target": null,
+    "deadline": null,
+    "funding_statement": null,
+    "controllability": "high",
+    "assessability": "partially_assessable",
+    "progress_state": "in_progress",
+    "related_project_ids": [
+      "jp-local-400009-project-2025-single-parent-employment-support",
+      "jp-local-400009-project-2025-male-childcare-leave"
+    ],
+    "change_explanation": null,
+    "extraction_note": "選挙公報の候補者欄「3つの挑戦」の番号項目を単位とした。柱（挑戦）の見出し自体はレコードにせず、source_location と policy_area のグルーピングで保持した。公約部分に数値目標・期限・財源の明示はないため、target 等は記録していない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukuoka-pref-governor-election-2025-bulletin"
+    ]
+  },
+  {
+    "id": "jp-local-400009-executive-2025-04-14-promise-009",
+    "municipality_id": "jp-local-400009",
+    "executive_term_id": "jp-local-400009-executive-2025-04-14",
+    "original_text": "「防災・減災」対策の強化",
+    "source_location": "選挙公報1ページ目下段・服部誠太郎候補欄「これからの未来を見据え 3つの挑戦」挑戦3「人も地球も笑顔! 安全・安心なまちをつくる」項目③",
+    "statement_type": "directional_commitment",
+    "plain_summary": "災害に備える防災・減災の対策を強める。",
+    "policy_area": "health_welfare_and_safety",
+    "baseline": null,
+    "target": null,
+    "deadline": null,
+    "funding_statement": null,
+    "controllability": "high",
+    "assessability": "partially_assessable",
+    "progress_state": "not_assessable",
+    "related_project_ids": [],
+    "change_explanation": null,
+    "extraction_note": "選挙公報の候補者欄「3つの挑戦」の番号項目を単位とした。柱（挑戦）の見出し自体はレコードにせず、source_location と policy_area のグルーピングで保持した。公約部分に数値目標・期限・財源の明示はないため、target 等は記録していない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukuoka-pref-governor-election-2025-bulletin"
+    ]
   }
 ]

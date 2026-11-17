@@ -41,8 +41,8 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 11
-    assert len({record["id"] for record in catalog["records"]}) == 11
+    assert len(catalog["records"]) == 12
+    assert len({record["id"] for record in catalog["records"]}) == 12
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
@@ -68,7 +68,9 @@ def test_manifesto_readiness_is_not_confused_with_progress() -> None:
     terms = load_json("data/entities/executives/executive_terms.json")
     by_municipality = {term["municipality_id"]: term for term in terms}
 
-    assert by_municipality["jp-local-400009"]["manifesto_source_ids"] == []
+    assert by_municipality["jp-local-400009"]["manifesto_source_ids"] == [
+        "fukuoka-pref-governor-election-2025-bulletin",
+    ]
     assert by_municipality["jp-local-401307"]["manifesto_source_ids"] == [
         "fukuoka-city-mayor-election-2022-bulletin",
         "fukuoka-city-mayor-manifesto-2022-go2senkyo-archive",
