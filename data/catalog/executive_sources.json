@@ -1,5 +1,5 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "updated_at": "2026-11-17",
   "scope": "pilot",
   "records": [
@@ -86,6 +86,20 @@
       "review_status": "extracted",
       "confidence": "medium",
       "notes": "原本は候補者本人の公式サイト（kitakyushu-mayor-candidate-2023-official-site）で、発行主体は候補者本人、保存主体は Internet Archive（Wayback Machine）。2026-11-17に availability API で、2023年1月11日（選挙期間中）時点の保存コピー（HTTP 200）の存在を確認した。保存コピー本文の抽出・照合は未実施であり、この資料から個別公約レコードはまだ作成していない。"
+    },
+    {
+      "id": "kitakyushu-mayor-candidate-2023-manifesto-v13-archive",
+      "municipality_key": "kitakyushu-city",
+      "organization": "武内和久（候補者本人）／保存は Internet Archive",
+      "category": "election",
+      "title": "武内和久 政策資料（7つの基本政策）v13（2023年1月11日時点の保存コピー）",
+      "url": "https://web.archive.org/web/20230111091302/https://takeuchi-kazuhisa.com/cmsmin/wp-content/uploads/2022/12/takevision0111_v13_keiryou.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-17",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "候補者本人の公式サイトで公表された政策PDF（ファイル名 takevision0111_v13_keiryou.pdf、全13ページ）の Wayback Machine 保存コピー（2023年1月11日09:13:02 UTC 保存）。原本URLは https://takeuchi-kazuhisa.com/cmsmin/wp-content/uploads/2022/12/takevision0111_v13_keiryou.pdf 。「7つの基本政策」（7本柱・小項目34件）は12–13ページに掲載されている。2026-11-17に実ブラウザで保存コピーを開き、全文を原文のまま取得・照合した。本資料は2023年1月11日時点の公表版（v13）であり、同日保存の旧版（タケウチビジョン.pdf）と2023年1月31日保存のV15（たけビジョンV15_keiryou.pdf）が別途存在する。V15との差分は未検証であり、v13を最終版とは扱わない。文書末尾には、網羅的な公約を順次公式ウェブサイト等で公開する旨の注記がある。"
     }
   ]
 }

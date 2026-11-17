@@ -12,6 +12,7 @@ TERM_ID = "jp-local-401005-executive-2023-02-20"
 SITE_ID = "kitakyushu-mayor-candidate-2023-official-site"
 ARCHIVE_ID = "kitakyushu-mayor-candidate-2023-official-site-archive"
 BULLETIN_ID = "kitakyushu-mayor-election-2023-bulletin"
+MANIFESTO_ID = "kitakyushu-mayor-candidate-2023-manifesto-v13-archive"
 
 CATALOG_PATHS = [
     "data/catalog/official_sources.json",
@@ -71,6 +72,20 @@ def test_candidate_manifesto_sources_are_registered() -> None:
     assert "未実施" in archive["notes"]
     assert "まだ作成していない" in archive["notes"]
 
+    manifesto = by_id[MANIFESTO_ID]
+    assert manifesto["url"] == (
+        "https://web.archive.org/web/20230111091302/"
+        "https://takeuchi-kazuhisa.com/cmsmin/wp-content/uploads/2022/12/"
+        "takevision0111_v13_keiryou.pdf"
+    )
+    assert manifesto["availability"] == "published"
+    # The version caveat must stay attached to the source: v13 is the
+    # 2023-01-11 published version, the V15 diff is unverified, and v13
+    # must not be presented as the final version.
+    assert "V15" in manifesto["notes"]
+    assert "未検証" in manifesto["notes"]
+    assert "最終版とは扱わない" in manifesto["notes"]
+
 
 def test_followup_search_records_archive_without_overstating() -> None:
     search = kitakyushu_search()
@@ -81,6 +96,7 @@ def test_followup_search_records_archive_without_overstating() -> None:
         BULLETIN_ID,
         SITE_ID,
         ARCHIVE_ID,
+        MANIFESTO_ID,
     ]
     assert set(search["checked_source_ids"]) <= source_ids()
     assert search["nonexistence_claim"] is False
@@ -98,24 +114,27 @@ def test_followup_search_records_archive_without_overstating() -> None:
         assert set(claim["source_ids"]) <= source_ids()
 
 
-def test_term_manifesto_sources_stay_limited_to_segmented_document() -> None:
-    # Until the "7つの基本政策" full text is extracted from the archived
-    # candidate site and passes segmentation review, the term keeps only the
-    # election bulletin as its registered manifesto source. Identifying a
-    # candidate publication must not be presented as a completed registry.
+def test_term_manifesto_sources_include_segmented_manifesto() -> None:
+    # The term lists manifesto sources whose text extraction and
+    # segmentation review are complete. The election bulletin was first;
+    # the candidate manifesto (v13) joined it once its full text was
+    # extracted from the archived policy PDF and segmented into the
+    # 34 small items (manifesto-review-jp-local-401005-2023-v13).
     terms = load_json("data/entities/executives/executive_terms.json")
     term = next(term for term in terms if term["id"] == TERM_ID)
-    assert term["manifesto_source_ids"] == [BULLETIN_ID]
+    assert term["manifesto_source_ids"] == [BULLETIN_ID, MANIFESTO_ID]
 
 
-def test_promise_registry_is_empty_until_manifesto_text_is_verified() -> None:
-    # No promise records may be created from news quotes or third-party
-    # summaries. The registry stays empty (not "zero progress") until the
-    # primary text is verified; see the Kitakyushu source search record.
+def test_promise_registry_holds_the_verified_manifesto_items() -> None:
+    # Promise records exist only because the primary text was verified
+    # against the archived candidate publication; nothing was created
+    # from news quotes or third-party summaries.
     promises = load_json("data/entities/executives/promises.json")
     packets = load_json("data/entities/executives/promise_evidence_packets.json")
-    assert promises == []
-    assert packets == []
+    assert len(promises) == 34
+    assert len(packets) == 34
+    for promise in promises:
+        assert promise["sources"] == [MANIFESTO_ID]
 
 
 def test_promise_records_and_project_links_are_consistent() -> None:

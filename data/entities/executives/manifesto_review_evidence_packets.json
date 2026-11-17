@@ -7,7 +7,9 @@
       {
         "field": "source_location",
         "statement": "武内和久候補欄は2023年北九州市長選挙公報の1ページ下段左に掲載されている。",
-        "source_ids": ["kitakyushu-mayor-election-2023-bulletin"],
+        "source_ids": [
+          "kitakyushu-mayor-election-2023-bulletin"
+        ],
         "location_note": "1ページPDF・下段左の候補者欄。",
         "decision": "accepted",
         "review_note": "候補者名と欄の位置を目視確認。"
@@ -15,7 +17,9 @@
       {
         "field": "segmentation_status",
         "statement": "候補者欄は政策方向、経歴、決意が連続する文章で、独立した番号付き公約一覧ではないため手動レビューを要する。",
-        "source_ids": ["kitakyushu-mayor-election-2023-bulletin"],
+        "source_ids": [
+          "kitakyushu-mayor-election-2023-bulletin"
+        ],
         "location_note": "1ページPDF・下段左の候補者欄全体。",
         "decision": "needs_review",
         "review_note": "公約境界は解釈を伴うため、現段階では個別公約レコードを作成しない。"
@@ -25,6 +29,49 @@
       "独立した具体的公約として分割できる原文範囲はどこか。",
       "候補者本人が公表した詳細マニフェストを追加で確認できるか。",
       "分割後の各記録を事業・予算・KPIへ接続できるか。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2023-manifesto-review-v13",
+    "subject_type": "manifesto_review",
+    "subject_id": "manifesto-review-jp-local-401005-2023-v13",
+    "claims": [
+      {
+        "field": "source_location",
+        "statement": "「7つの基本政策」は政策PDF（全13ページ）の12–13ページに、7本柱の見出しと小項目の箇条書きで掲載されている。",
+        "source_ids": [
+          "kitakyushu-mayor-candidate-2023-manifesto-v13-archive"
+        ],
+        "location_note": "政策PDF（takevision0111_v13_keiryou.pdf）12–13ページ。",
+        "decision": "accepted",
+        "review_note": "2026-11-17に実ブラウザで保存コピーを開き、全文を原文のまま取得した取得記録に基づく。"
+      },
+      {
+        "field": "segmentation_status",
+        "statement": "小項目の箇条書きが原文上の境界として明確なため、小項目を単位に34件へ分割した。柱の見出しと末尾の注記は公約レコードに含めていない。",
+        "source_ids": [
+          "kitakyushu-mayor-candidate-2023-manifesto-v13-archive"
+        ],
+        "location_note": "政策PDF 12–13ページ全体。",
+        "decision": "accepted",
+        "review_note": "句読点による推測分割は行っていない（docs/PROMISE_EXTRACTION.md の分割ルール）。"
+      },
+      {
+        "field": "source_version",
+        "statement": "原典は2023年1月11日時点の公表版（v13）である。同日保存の旧版（タケウチビジョン.pdf）と2023年1月31日保存のV15（たけビジョンV15_keiryou.pdf）が別途存在するが、V15との差分は未検証であり、v13を最終版とは扱わない。",
+        "source_ids": [
+          "kitakyushu-mayor-candidate-2023-manifesto-v13-archive"
+        ],
+        "location_note": "保存コピーのファイル名と保存日時に基づく。",
+        "decision": "accepted",
+        "review_note": "版の確定は登録の前提にしない。差分が確認されれば公約レコードを見直す。"
+      }
+    ],
+    "open_questions": [
+      "2023年1月31日保存のV15（たけビジョンV15_keiryou.pdf）とv13の間に文言の差分があるか。",
+      "公約文書の末尾には、網羅的な公約を順次公式ウェブサイト等で公開する旨の注記があり、後続の公表文書が存在するかは未確認である。",
+      "選挙公報候補者欄の分割は、文章型のため引き続き manual_review_required である。"
     ],
     "review_status": "reviewed"
   }

@@ -7,7 +7,9 @@
       {
         "field": "person_name",
         "statement": "福岡県の現職知事名を公式知事室で確認した。",
-        "source_ids": ["fukuoka-pref-governor"],
+        "source_ids": [
+          "fukuoka-pref-governor"
+        ],
         "location_note": "福岡県公式『ようこそ知事室へ』。",
         "decision": "accepted",
         "review_note": "公式ページの現職表示を確認。"
@@ -15,7 +17,9 @@
       {
         "field": "election_date",
         "statement": "現任期に対応する2025年3月23日執行の知事選挙を個別結果ページで確認した。",
-        "source_ids": ["fukuoka-pref-governor-election-2025-results"],
+        "source_ids": [
+          "fukuoka-pref-governor-election-2025-results"
+        ],
         "location_note": "福岡県選挙管理委員会の2025年知事選挙公式結果ページ。",
         "decision": "accepted",
         "review_note": "選挙日と投開票結果資料の存在を確認。"
@@ -35,7 +39,9 @@
       {
         "field": "person_name",
         "statement": "福岡市の現職市長名を公式市長ページで確認した。",
-        "source_ids": ["fukuoka-city-mayor"],
+        "source_ids": [
+          "fukuoka-city-mayor"
+        ],
         "location_note": "福岡市公式『市長のオフィス』。",
         "decision": "accepted",
         "review_note": "公式ページの現職表示を確認。"
@@ -43,7 +49,9 @@
       {
         "field": "election_date",
         "statement": "現任期に対応する2022年11月20日執行の市長選挙を個別結果ページで確認した。",
-        "source_ids": ["fukuoka-city-mayor-election-2022-results"],
+        "source_ids": [
+          "fukuoka-city-mayor-election-2022-results"
+        ],
         "location_note": "福岡市選挙管理委員会の2022年市長選挙公式結果ページ。",
         "decision": "accepted",
         "review_note": "選挙日と投開票結果資料の存在を確認。"
@@ -63,7 +71,9 @@
       {
         "field": "person_name",
         "statement": "北九州市の現職市長名を公式市長ページで確認した。",
-        "source_ids": ["kitakyushu-mayor"],
+        "source_ids": [
+          "kitakyushu-mayor"
+        ],
         "location_note": "北九州市公式『市長室』。",
         "decision": "accepted",
         "review_note": "公式ページの現職表示を確認。"
@@ -71,7 +81,9 @@
       {
         "field": "election_date",
         "statement": "現任期に対応する2023年2月5日執行の市長選挙を公式選挙記録で確認した。",
-        "source_ids": ["kitakyushu-mayor-election-history"],
+        "source_ids": [
+          "kitakyushu-mayor-election-history"
+        ],
         "location_note": "北九州市選挙管理委員会『北九州市長選挙』。",
         "decision": "accepted",
         "review_note": "過去の投開票結果と選挙公報への公式導線を確認。"
@@ -79,16 +91,28 @@
       {
         "field": "manifesto_source_ids",
         "statement": "2023年北九州市長選挙の候補者提出原稿を掲載した公式選挙公報を公約原文資料として登録した。",
-        "source_ids": ["kitakyushu-mayor-election-2023-bulletin"],
+        "source_ids": [
+          "kitakyushu-mayor-election-2023-bulletin"
+        ],
         "location_note": "1ページPDFの下段左、武内和久候補欄。",
         "decision": "accepted",
         "review_note": "資料単位の登録のみ。個別公約への分割、要約、期限・数値目標・財源・自治体権限の判定は未実施。"
+      },
+      {
+        "field": "manifesto_source_ids",
+        "statement": "候補者本人が公表した政策資料（7つの基本政策、v13）の保存コピーから全文を抽出・照合し、分割レビューを完了したため、公約原文資料として追加登録した。",
+        "source_ids": [
+          "kitakyushu-mayor-candidate-2023-manifesto-v13-archive"
+        ],
+        "location_note": "政策PDF（takevision0111_v13_keiryou.pdf）12–13ページ。",
+        "decision": "accepted",
+        "review_note": "小項目34件の公約レコードを作成済み。V15との差分は未検証であり、v13を最終版とは扱わない。"
       }
     ],
     "open_questions": [
-      "選挙公報を個別公約へ分割していない。",
-      "各公約の期限・数値目標・財源・自治体権限を未確認。",
-      "公約の進捗状態、関連事業、予算、KPI、公式説明を未収録。"
+      "選挙公報候補者欄の個別公約への分割は未実施（文章型のため manual_review_required のまま）。",
+      "候補者マニフェスト（v13）と2023年1月31日保存のV15との差分は未検証。",
+      "公約34件のうち進捗証拠へ接続できたのは6件で、残り28件の進捗状態は not_assessable のままである。"
     ],
     "review_status": "reviewed"
   }

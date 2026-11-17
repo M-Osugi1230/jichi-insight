@@ -238,8 +238,24 @@ def test_official_evaluation_is_the_citys_not_ours() -> None:
         assert record["official_evaluation"]["direction"] == direction
     for record in projects.values():
         assert "Jichi Insight独自の評価ではない" in record["official_evaluation"]["note"]
-        # Promises are Issue #8: no fabricated links.
-        assert record["related_promise_ids"] == []
+    # Issue #8 registered the mayor's 34 manifesto items and linked the
+    # ones with defensible, wording-based connections. Links are pinned
+    # exactly here; unlinked projects keep an empty list (not "no data").
+    term = "jp-local-401005-executive-2023-02-20"
+    expected_links = {
+        MEGA: [],
+        LINE: [f"{term}-promise-005", f"{term}-promise-033"],
+        STOCK: [f"{term}-promise-029"],
+        SHIN_JIDAI: [f"{term}-promise-020"],
+        WOMEN: [f"{term}-promise-013"],
+        CITY_PROMO: [f"{term}-promise-033", f"{term}-promise-034"],
+        SUMARAKU: [f"{term}-promise-005"],
+        SHELTER: [f"{term}-promise-029"],
+        DRILL: [],
+        FOREIGN: [],
+    }
+    for project_id, promise_ids in expected_links.items():
+        assert projects[project_id]["related_promise_ids"] == promise_ids
 
 
 def test_lifecycle_end_project_is_the_abolished_one() -> None:
