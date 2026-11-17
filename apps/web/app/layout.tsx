@@ -56,10 +56,30 @@ export const viewport: Viewport = {
   themeColor: "#102e46",
 };
 
+// Minimal WebSite structured data so search engines can identify the site
+// itself (name, canonical URL, purpose). Static JSON-LD only: no external
+// script, no analytics or tracking payload.
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Jichi Insight",
+  alternateName: "自治体インサイト",
+  url: `${siteUrl}/`,
+  inLanguage: "ja",
+  description:
+    "住民が自治体を自分で評価できるよう、政策計画・予算・事業・年度実績・議会を一次資料からつなぐ公共データ基盤。",
+};
+
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="ja">
-      <body>{children}</body>
+      <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
+        {children}
+      </body>
     </html>
   );
 }

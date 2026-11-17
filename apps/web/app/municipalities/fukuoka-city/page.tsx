@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: canonicalFor("/municipalities/fukuoka-city"),
   },
-  title: "福岡市｜2026年度当初予算案と2024年度決算",
+  title: "福岡市｜2026年度当初予算と2024年度決算",
   description:
-    "福岡市の2026年度一般会計当初予算案と2024年度一般会計決算を、公式資料の該当箇所と確認状態付きで表示します。",
+    "福岡市の2026年度一般会計当初予算と2024年度一般会計決算を、公式資料の該当箇所と確認状態付きで表示します。",
 };
 
 export default function FukuokaCityPage() {
@@ -54,7 +54,7 @@ export default function FukuokaCityPage() {
             </div>
             <h1>福岡市</h1>
             <p>
-              現在は、2026年度一般会計の<strong>当初予算案</strong>2項目と、
+              現在は、2026年度一般会計の<strong>当初予算</strong>2項目と、
               2024年度一般会計の<strong>決算</strong>2項目を公開しています。
               事業成果、市長公約、市議会の評価はまだ行っていません。
             </p>
@@ -69,25 +69,25 @@ export default function FukuokaCityPage() {
         <section className={styles.scope} aria-labelledby="city-scope-title">
           <div>
             <p className="eyebrow">Scope</p>
-            <h2 id="city-scope-title">予算案と決算を、別の事実として見る。</h2>
+            <h2 id="city-scope-title">当初予算と決算を、別の事実として見る。</h2>
           </div>
           <p>
-            2026年度の数値は年度開始時に示された当初予算案です。2024年度の数値は年度終了後の決算です。
+            2026年度の数値は年度開始時に示された当初予算です。2024年度の数値は年度終了後の決算です。
             年度も段階も異なるため、増減率として直接比較せず、それぞれの意味と根拠を分けて表示します。
           </p>
         </section>
 
         <section className={styles.headline} aria-labelledby="city-budget-title">
           <div className="sectionIntro">
-            <p className="eyebrow">2026 initial budget proposal</p>
+            <p className="eyebrow">2026 initial budget</p>
             <h2 id="city-budget-title">2026年度に計画した一般会計の規模</h2>
             <p>
-              福岡市が2026年2月20日に公表した当初予算案ページから、一般会計の規模と市税収入を確認しました。
+              2026年3月27日に成立した当初予算について、福岡市公報に掲載された「予算の要領」から、一般会計の規模と市税収入を確認しました。
             </p>
           </div>
           <div className={styles.metricGrid}>
             <article className={styles.metricCard}>
-              <span>一般会計当初予算案</span>
+              <span>一般会計当初予算</span>
               <strong>{formatJapaneseYen(budgetRevenue.amount_yen)}</strong>
               <small>{formatExactYen(budgetRevenue.amount_yen)}</small>
               <p>前年度比1.7%増。公式ページでは過去最大と説明。</p>
@@ -99,10 +99,10 @@ export default function FukuokaCityPage() {
               <p>固定資産税・都市計画税の増などにより過去最高と説明。</p>
             </article>
             <article className={`${styles.metricCard} ${styles.derived}`}>
-              <span>当初予算案に対する市税収入</span>
+              <span>当初予算に対する市税収入</span>
               <strong>{taxShare === null ? "評価不能" : `${taxShare.toFixed(1)}%`}</strong>
               <small>Jichi Insightによる単純計算</small>
-              <p>市税収入 ÷ 一般会計当初予算案。財源構成全体の評価ではありません。</p>
+              <p>市税収入 ÷ 一般会計当初予算。財源構成全体の評価ではありません。</p>
             </article>
           </div>
         </section>

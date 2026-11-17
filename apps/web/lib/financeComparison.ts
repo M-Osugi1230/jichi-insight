@@ -25,7 +25,7 @@ function requiredAmount(amount: number | null, id: string) {
 export const cityFiscalComparison: ComparableFiscalMetric[] = [
   {
     id: "2026-initial-budget",
-    label: "一般会計当初予算案",
+    label: "一般会計当初予算",
     fiscalYear: 2026,
     stage: "initial_budget",
     accountType: "general",
@@ -41,7 +41,7 @@ export const cityFiscalComparison: ComparableFiscalMetric[] = [
   },
   {
     id: "2026-local-tax",
-    label: "市税収入（当初予算案）",
+    label: "市税収入（当初予算）",
     fiscalYear: 2026,
     stage: "initial_budget",
     accountType: "general",
