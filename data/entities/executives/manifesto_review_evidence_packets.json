@@ -117,5 +117,47 @@
       "柱3・柱4の見出しは選挙公報等ではより長い形であり、ホームページ掲載時の形と同一かは未確認である。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-pref-2025-manifesto-review",
+    "subject_type": "manifesto_review",
+    "subject_id": "manifesto-review-jp-local-400009-2025",
+    "claims": [
+      {
+        "field": "source_location",
+        "statement": "服部誠太郎候補欄は選挙公報1ページ目下段に掲載され、「3つの挑戦」は同欄の下部に、挑戦ごとの見出しと番号項目を記した3つの表として配置されている。",
+        "source_ids": [
+          "fukuoka-pref-governor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全4ページ）の1ページ目下段。",
+        "decision": "accepted",
+        "review_note": "2026-11-17にPDFを取得し、描画画像で候補者欄の構成を確認した。"
+      },
+      {
+        "field": "segmentation_status",
+        "statement": "公約部分「3つの挑戦」の番号項目は原文上の境界が明確なため、番号項目を単位に9件へ分割した。柱見出し自体はレコードにせず、実績説明・経歴・推薦は公約として分割しなかった。",
+        "source_ids": [
+          "fukuoka-pref-governor-election-2025-bulletin"
+        ],
+        "location_note": "挑戦1〜3の各表（見出し+①〜③）。",
+        "decision": "accepted",
+        "review_note": "実績欄の類似文言（「学校教育を充実」等）と公約を取り違えていないことを、欄の見出し（「主な実績」と「3つの挑戦」）で区別して確認した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は福岡県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは選挙ドットコムが公開するコピーで、県選管の公式サイトには公報への導線がない。Wayback Machine に投票日（2025年3月23日）の保存スナップショットが存在する。",
+        "source_ids": [
+          "fukuoka-pref-governor-election-2025-bulletin"
+        ],
+        "location_note": "公報の表頭（福岡県選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）に基づく。",
+        "decision": "accepted",
+        "review_note": "引用経由ではなく公報そのものの取得であるため confidence は high とする。候補者欄が画像形式である点は、複数解像度での描画照合で担保した。"
+      }
+    ],
+    "open_questions": [
+      "2025年3月3日に発表された政策の詳細（政策パンフレット等、選挙公報より詳細な候補者資料）の安定した所在が特定できれば、登録済みの公約文と照合する。",
+      "事業との接続は文言・内容に基づく推定であり、県が公約と事業の公式な対応付けを公表した場合は接続を見直す。"
+    ],
+    "review_status": "reviewed"
   }
 ]

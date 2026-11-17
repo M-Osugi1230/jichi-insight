@@ -51,8 +51,22 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         for search in searches
         if search["result_status"] == "no_stable_primary_source_found"
     ]
-    assert len(missing) == 1
+    # All three searches have since registered a primary source (the
+    # Fukuoka Prefecture search was the last one, closed by the 2025
+    # election bulletin). The safety invariant still applies to any
+    # record that reports no source: it must not claim found sources.
+    assert len(missing) == 0
     assert all(search["manifesto_source_ids_found"] == [] for search in missing)
+
+    prefecture = next(
+        search
+        for search in searches
+        if search["executive_term_id"] == "jp-local-400009-executive-2025-04-14"
+    )
+    assert prefecture["result_status"] == "source_registered"
+    assert prefecture["manifesto_source_ids_found"] == [
+        "fukuoka-pref-governor-election-2025-bulletin",
+    ]
 
     registered = next(
         search

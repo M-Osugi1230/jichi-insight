@@ -23,11 +23,21 @@
         "location_note": "福岡県選挙管理委員会の2025年知事選挙公式結果ページ。",
         "decision": "accepted",
         "review_note": "選挙日と投開票結果資料の存在を確認。"
+      },
+      {
+        "field": "manifesto_source_ids",
+        "statement": "2025年福岡県知事選挙の候補者提出原稿を掲載した公式選挙公報を公約原文資料として登録した。",
+        "source_ids": [
+          "fukuoka-pref-governor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報1ページ目下段の服部誠太郎候補欄。",
+        "decision": "accepted",
+        "review_note": "選挙公報は出典優先順位の最上位であり、候補者欄の「3つの挑戦」は分割レビューで番号項目9件へ分割済み。"
       }
     ],
     "open_questions": [
-      "選挙公報または候補者本人が公表した公約原文の安定した一次資料は未登録。",
-      "公約と予算・重点事業の対応付けは未実施。"
+      "公約9件のうち進捗証拠へ接続できたのは6件で、残り3件（スタートアップ、農林水産業、防災・減災）の進捗状態は not_assessable のままである。",
+      "政策パンフレット等、選挙公報より詳細な候補者資料の安定した所在は未特定。"
     ],
     "review_status": "reviewed"
   },

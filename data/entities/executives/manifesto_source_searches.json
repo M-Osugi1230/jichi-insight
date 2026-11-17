@@ -2,27 +2,31 @@
   {
     "id": "manifesto-source-search-fukuoka-pref-2025",
     "executive_term_id": "jp-local-400009-executive-2025-04-14",
-    "searched_at": "2026-07-15",
+    "searched_at": "2026-11-17",
     "search_scopes": [
       "official_election_result_page",
       "official_site_search",
       "official_document_archive",
+      "candidate_publication_search",
       "general_web_search"
     ],
-    "result_status": "no_stable_primary_source_found",
-    "manifesto_source_ids_found": [],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "fukuoka-pref-governor-election-2025-bulletin"
+    ],
     "checked_source_ids": [
-      "fukuoka-pref-governor-election-2025-results"
+      "fukuoka-pref-governor-election-2025-results",
+      "fukuoka-pref-governor-election-2025-bulletin"
     ],
     "nonexistence_claim": false,
-    "review_note": "福岡県選挙管理委員会の2025年知事選挙ページでは投票・開票結果と統計資料を確認したが、選挙公報または候補者公約原文への安定した導線は確認できなかった。公式サイト内検索と一般検索でも登録可能な一次資料を特定できていない。資料が存在しないとは判定しない。",
+    "review_note": "福岡県選挙管理委員会の2025年知事選挙ページでは投票・開票結果のExcelのみを確認し、選挙公報への導線はなかった（2026-11-17再確認）。2026-11-17の追跡探索で、選挙ドットコムが公開する選挙公報PDFのコピー（Wayback Machine に投票日・2025年3月23日の保存あり）を取得し、服部誠太郎候補欄（1ページ目下段）の「3つの挑戦」（3挑戦・番号項目9件）を確認したため、選挙公報を出典として登録し、分割レビュー（manifesto-review-jp-local-400009-2025）を経て公約レコード9件を作成した。選挙公報は候補者提出原稿をそのまま印刷した公式文書であり、公約レコードの confidence は high とした。2025年3月3日の政策発表で示された具体策（県立高校の体育館等のエアコン整備、イチゴやコメの新品種開発、ワンヘルスセンター整備等）は報道要約で確認できるが、政策パンフレット等の候補者資料の安定した所在は特定できておらず、資料が存在しないとは判定しない。",
     "next_actions": [
-      "福岡県選挙管理委員会の過去資料保存方針を確認する",
-      "候補者本人または選挙事務所が公開した資料の保存先を再調査する",
-      "必要に応じて選挙管理委員会へ保存資料の有無を照会する"
+      "政策パンフレット等、選挙公報より詳細な候補者資料（2025年3月3日発表）の安定した所在が特定できれば、登録済みの公約文と照合する",
+      "未接続の公約（スタートアップ、農林水産業、防災・減災）について、計画・事業資料への進捗証拠の接続を拡充する",
+      "福岡県選挙管理委員会の選挙公報保存・公開方針を確認する"
     ],
     "review_status": "reviewed",
-    "confidence": "medium"
+    "confidence": "high"
   },
   {
     "id": "manifesto-source-search-fukuoka-city-2022",
