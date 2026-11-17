@@ -55,11 +55,42 @@
         "location_note": "ページ本文と掲載ファイル一覧を確認。",
         "decision": "accepted",
         "review_note": "資料不存在の主張ではなく、確認範囲で未発見という判断。"
+      },
+      {
+        "field": "candidate_official_site",
+        "statement": "候補者本人の公式サイト（takashima-soichiro.com）の現存を2026-11-17に確認した。現行の政策ページは当選後の政策紹介（「都市の成長」「成長の果実を市民に還元」）であり、2022年福岡市長選挙の公約原文ではない。Wayback Machine の同ドメインの保存は2026年7月24日分から始まっており、選挙期間中（2022年11月）の保存コピーは存在しない。",
+        "source_ids": [
+          "fukuoka-city-mayor-candidate-official-site"
+        ],
+        "location_note": "公式サイト現行トップページおよび政策ページ（/policy/）、Wayback Machine の timemap で確認。",
+        "decision": "accepted",
+        "review_note": "当選後の政策方針は選挙時公約の原文の代替にならないため、原典としては扱わない。サイトの現存自体は後続探索の入口として記録する。"
+      },
+      {
+        "field": "candidate_blog_archive",
+        "statement": "選挙当時の候補者本人の公式ブログ（LINEブログ）について、Wayback Machine に2022年10月11日時点（HTTP 200）と2023年3月28日時点の保存コピーが存在することを、availability API と CDX で2026-11-17に確認した。",
+        "source_ids": [
+          "fukuoka-city-mayor-candidate-2022-blog-archive"
+        ],
+        "location_note": "Wayback Machine の availability API 応答と CDX 検索結果（lineblog.me/takashima の保存一覧）。",
+        "decision": "accepted",
+        "review_note": "保存コピーの存在確認のみであり、公約本文の抽出・照合は未実施。2022年10月11日時点の保存は公約発表（2022年11月2日）前のため、公約本文を含むとは限らない。"
+      },
+      {
+        "field": "archive_access",
+        "statement": "2026-11-17の確認時点で Internet Archive が一時的にオフラインとなり、CDX 検索と保存コピー本文の取得で 503/504 が発生したため、保存コピー本文の取得・照合は行えなかった。",
+        "source_ids": [
+          "fukuoka-city-mayor-candidate-2022-blog-archive"
+        ],
+        "location_note": "web.archive.org の CDX 応答（Internet Archive: Temporarily Offline）および本文取得の失敗記録。",
+        "decision": "needs_review",
+        "review_note": "本文未照合のため公約レコードは作成しない。保存コピー本文の取得は、Internet Archive 復旧後に実ブラウザ等で別途行う。"
       }
     ],
     "open_questions": [
       "福岡市選挙管理委員会が選挙公報を保存・提供しているか。",
-      "高島宗一郎氏の選挙時公式サイトまたは公約資料の安定した保存先があるか。"
+      "高島宗一郎氏の選挙時公式サイトまたは公約資料の安定した保存先があるか。",
+      "公式ブログ（LINEブログ）の保存コピーに、2022年11月2日発表の公約（6本柱・小項目）の本文が含まれるか。"
     ],
     "review_status": "reviewed"
   },
