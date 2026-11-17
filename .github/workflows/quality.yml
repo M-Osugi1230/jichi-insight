@@ -35,7 +35,7 @@ jobs:
 
       - name: Upload repository validation diagnostics
         if: failure()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: repository-validation-diagnostics
           path: repository-validation.log
@@ -49,7 +49,7 @@ jobs:
 
       - name: Upload pytest diagnostics
         if: failure()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: pytest-diagnostics
           path: pytest.log
@@ -63,7 +63,7 @@ jobs:
 
       - name: Upload Python lint diagnostics
         if: failure()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: python-lint-diagnostics
           path: ruff.log
@@ -106,7 +106,7 @@ jobs:
 
       - name: Upload build diagnostics
         if: failure()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: web-build-diagnostics
           path: build-error.log
@@ -125,7 +125,7 @@ jobs:
 
       - name: Upload static-export diagnostics
         if: failure()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: static-export-diagnostics
           path: |

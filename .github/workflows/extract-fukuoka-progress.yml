@@ -39,7 +39,7 @@ jobs:
             --pdf /tmp/fukuoka-progress.pdf \
             --text /tmp/fukuoka-progress.txt \
             --output-dir extracted-fukuoka-progress
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: fukuoka-progress-extraction
           path: extracted-fukuoka-progress

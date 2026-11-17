@@ -46,7 +46,7 @@ jobs:
             --catalog data/entities/policy/tokyo_policy_target_catalog_children.json \
             --review-pdf /tmp/tokyo-policy-review-2025.pdf \
             --output-dir extracted-tokyo-children-reviewed
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: tokyo-children-review-candidates
