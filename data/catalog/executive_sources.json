@@ -1,5 +1,5 @@
 {
-  "version": "0.3.0",
+  "version": "0.4.0",
   "updated_at": "2026-11-17",
   "scope": "pilot",
   "records": [
@@ -100,6 +100,34 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "候補者本人の公式サイトで公表された政策PDF（ファイル名 takevision0111_v13_keiryou.pdf、全13ページ）の Wayback Machine 保存コピー（2023年1月11日09:13:02 UTC 保存）。原本URLは https://takeuchi-kazuhisa.com/cmsmin/wp-content/uploads/2022/12/takevision0111_v13_keiryou.pdf 。「7つの基本政策」（7本柱・小項目34件）は12–13ページに掲載されている。2026-11-17に実ブラウザで保存コピーを開き、全文を原文のまま取得・照合した。本資料は2023年1月11日時点の公表版（v13）であり、同日保存の旧版（タケウチビジョン.pdf）と2023年1月31日保存のV15（たけビジョンV15_keiryou.pdf）が別途存在する。V15との差分は未検証であり、v13を最終版とは扱わない。文書末尾には、網羅的な公約を順次公式ウェブサイト等で公開する旨の注記がある。"
+    },
+    {
+      "id": "fukuoka-city-mayor-candidate-official-site",
+      "municipality_key": "fukuoka-city",
+      "organization": "高島宗一郎（本人）",
+      "category": "election",
+      "title": "高島宗一郎オフィシャルサイト",
+      "url": "https://www.takashima-soichiro.com/",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-17",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "高島宗一郎氏の公式サイト。2026-11-17に現存を確認した。現行の政策ページは当選後の政策紹介（「都市の成長」「成長の果実を市民に還元」）であり、2022年福岡市長選挙で公表された公約（「一緒に福岡の未来へ種をまこう」、6本柱）の原文ではないため、選挙時公約の原典としては扱わない。Wayback Machine におけるこのドメインの保存は2026年7月24日分から始まっており、選挙期間中（2022年11月）の保存コピーは存在しない。選挙時期の保存コピーは fukuoka-city-mayor-candidate-2022-blog-archive を参照。"
+    },
+    {
+      "id": "fukuoka-city-mayor-candidate-2022-blog-archive",
+      "municipality_key": "fukuoka-city",
+      "organization": "高島宗一郎（本人）／保存は Internet Archive",
+      "category": "election",
+      "title": "高島宗一郎公式ブログ（LINEブログ、2022年10月11日時点の保存コピー）",
+      "url": "https://web.archive.org/web/20221011231540/https://lineblog.me/takashima/",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-17",
+      "review_status": "extracted",
+      "confidence": "medium",
+      "notes": "選挙当時の候補者本人の公式ブログ（LINEブログ）の Wayback Machine 保存コピー。2026-11-17に availability API と CDX で、2022年10月11日（出馬表明日）時点の保存コピー（HTTP 200）の存在と、2023年3月28日時点の保存コピーの存在を確認した。公約の発表は2022年11月2日であり、2022年10月11日時点の保存コピーは発表前のもののため、公約本文を含むとは限らない。2026-11-17の確認時点で Internet Archive が一時的にオフラインとなり（CDX・本文取得で 503/504 が発生）、保存コピー本文の抽出・照合は未実施であり、この資料から個別公約レコードはまだ作成していない。"
     }
   ]
 }
