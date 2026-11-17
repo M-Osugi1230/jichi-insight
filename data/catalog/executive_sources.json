@@ -1,6 +1,6 @@
 {
-  "version": "0.1.0",
-  "updated_at": "2026-07-15",
+  "version": "0.2.0",
+  "updated_at": "2026-11-17",
   "scope": "pilot",
   "records": [
     {
@@ -58,6 +58,34 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "候補者提出原稿を写真製版で掲載した1ページの公式選挙公報。武内和久候補欄は下段左。個別公約への分割は未実施。"
+    },
+    {
+      "id": "kitakyushu-mayor-candidate-2023-official-site",
+      "municipality_key": "kitakyushu-city",
+      "organization": "武内和久（候補者本人）",
+      "category": "election",
+      "title": "武内和久（たけうちかずひさ）公式サイト",
+      "url": "https://takeuchi-kazuhisa.com/",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-17",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "2023年北九州市長選挙の武内和久候補の公式サイト。2026-11-17に現存を確認した。現行トップページにはプロフィールと北九州未来会議の案内が掲載されているが、選挙時に公表された「7つの基本政策」の全文（7本柱と小項目）は現行ページ上では確認できなかった。選挙時期の保存コピーは kitakyushu-mayor-candidate-2023-official-site-archive を参照。"
+    },
+    {
+      "id": "kitakyushu-mayor-candidate-2023-official-site-archive",
+      "municipality_key": "kitakyushu-city",
+      "organization": "武内和久（候補者本人）／保存は Internet Archive",
+      "category": "election",
+      "title": "武内和久公式サイト（2023年1月11日時点の保存コピー）",
+      "url": "https://web.archive.org/web/20230111091207/https://takeuchi-kazuhisa.com/",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-17",
+      "review_status": "extracted",
+      "confidence": "medium",
+      "notes": "原本は候補者本人の公式サイト（kitakyushu-mayor-candidate-2023-official-site）で、発行主体は候補者本人、保存主体は Internet Archive（Wayback Machine）。2026-11-17に availability API で、2023年1月11日（選挙期間中）時点の保存コピー（HTTP 200）の存在を確認した。保存コピー本文の抽出・照合は未実施であり、この資料から個別公約レコードはまだ作成していない。"
     }
   ]
 }
