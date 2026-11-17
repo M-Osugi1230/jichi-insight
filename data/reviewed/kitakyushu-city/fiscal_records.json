@@ -6,17 +6,20 @@
     "account_type": "general",
     "stage": "initial_budget",
     "metric": "total_revenue",
-    "metric_label": "一般会計当初予算案",
+    "metric_label": "一般会計当初予算・歳入総額",
     "amount_yen": 647684000000,
     "value": null,
     "unit": "yen",
     "value_status": "available",
     "period_start": "2026-04-01",
     "period_end": "2027-03-31",
-    "note": "公式計数資料の百万円単位表を円へ換算。執行額・決算額ではない。",
+    "note": "令和8年度一般会計当初予算（成立後）の歳入総額。北九州市『令和8年度北九州市予算』予算書の議案第1号「令和8年度北九州市一般会計予算」第1条・第1表による。令和8年2月定例会で2026年3月25日に可決され成立した。予算案段階の計数資料の百万円単位表示と総額は一致する。執行額・決算額ではない。",
     "review_status": "reviewed",
     "confidence": "high",
-    "sources": ["kitakyushu-budget-2026-count-pdf"]
+    "sources": [
+      "kitakyushu-budget-2026-book-pdf",
+      "kitakyushu-assembly-results-2026-02-pdf"
+    ]
   },
   {
     "id": "jp-local-401005-fiscal-2026-local-tax",
@@ -26,16 +29,40 @@
     "stage": "initial_budget",
     "metric": "local_tax",
     "metric_label": "市税収入",
-    "amount_yen": 192500000000,
+    "amount_yen": 192462010000,
     "value": null,
     "unit": "yen",
     "value_status": "available",
     "period_start": "2026-04-01",
     "period_end": "2027-03-31",
-    "note": "公式計数資料が億円単位で示す1,925億円を保存。税目別計数の精査前はこれ以上の精度を付与しない。",
+    "note": "令和8年度一般会計当初予算（成立後）の市税収入。予算書第1表 歳入 第1款市税の千円単位の値で、税目別11項目の合計と一致する。予算案段階では概要資料の億円単位表示（1,925億円）に基づく192,500,000,000円を収録していたものを、成立後の予算書の千円単位へ精密化した。差額は表示精度によるもので、議会での修正による差異ではない。",
     "review_status": "reviewed",
     "confidence": "high",
-    "sources": ["kitakyushu-budget-2026-count-pdf"]
+    "sources": [
+      "kitakyushu-budget-2026-book-pdf"
+    ]
+  },
+  {
+    "id": "jp-local-401005-fiscal-2026-total-expenditure",
+    "municipality_id": "jp-local-401005",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算・歳出総額",
+    "amount_yen": 647684000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "令和8年度一般会計当初予算（成立後）の歳出総額。予算書の議案第1号第1条・第1表による。歳入総額と同額。令和8年2月定例会で2026年3月25日に可決され成立した。予算案段階では歳出総額のレコードはなかったため、成立額で新規に収録した。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "kitakyushu-budget-2026-book-pdf",
+      "kitakyushu-assembly-results-2026-02-pdf"
+    ]
   },
   {
     "id": "jp-local-401005-fiscal-2024-total-revenue",
@@ -54,7 +81,9 @@
     "note": "公式PDFの千円単位表を円へ換算。",
     "review_status": "reviewed",
     "confidence": "high",
-    "sources": ["kitakyushu-settlement-2024-revenue-pdf"]
+    "sources": [
+      "kitakyushu-settlement-2024-revenue-pdf"
+    ]
   },
   {
     "id": "jp-local-401005-fiscal-2024-total-expenditure",
@@ -73,7 +102,9 @@
     "note": "公式PDFの千円単位表を円へ換算。",
     "review_status": "reviewed",
     "confidence": "high",
-    "sources": ["kitakyushu-settlement-2024-expenditure-pdf"]
+    "sources": [
+      "kitakyushu-settlement-2024-expenditure-pdf"
+    ]
   },
   {
     "id": "jp-local-401005-fiscal-2024-local-tax",
@@ -92,6 +123,8 @@
     "note": "公式市税決算状況の千円単位表を円へ換算。",
     "review_status": "reviewed",
     "confidence": "high",
-    "sources": ["kitakyushu-settlement-2024-tax-pdf"]
+    "sources": [
+      "kitakyushu-settlement-2024-tax-pdf"
+    ]
   }
 ]
