@@ -1,10 +1,10 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "updated_at": "2026-11-17",
   "municipality_id": "jp-local-401005",
   "municipality_key": "kitakyushu-city",
   "issue": 7,
-  "scope": "pilot",
+  "scope": "expanded",
   "population": {
     "description": "北九州市・新ビジョン（基本構想・基本計画、令和6年3月策定）の98の主な施策を構成する主要事務事業のうち、令和6年度に実施され行政評価（事業評価）の対象となった198事業。北九州市自治基本条例第18条に基づく行政評価の公式母集団。",
     "fiscal_year": 2024,
@@ -61,7 +61,110 @@
         "kitakyushu-admin-eval-fy2024-projects",
         "kitakyushu-admin-eval-fy2024-overview"
       ]
+    },
+    {
+      "pillar": "I「稼げるまち」の実現",
+      "bureau": "政策局",
+      "bureau_project_number": 2,
+      "project_id": "jp-local-401005-project-2024-shin-jidai-youth-challenge",
+      "series_id": "jp-local-401005-project-series-shin-jidai-youth-challenge",
+      "official_title": "シン・ジダイ創造事業（若者のチャレンジ応援）",
+      "selection_basis": "重点戦略Iの掲載順でパイロット（政策局・事務事業番号1）の次の事業（政策局・事務事業番号2）。",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-policy",
+        "kitakyushu-admin-eval-fy2024-overview"
+      ],
+      "selection_round": "scale"
+    },
+    {
+      "pillar": "I「稼げるまち」の実現",
+      "bureau": "政策局",
+      "bureau_project_number": 3,
+      "project_id": "jp-local-401005-project-2024-women-perspective-policy",
+      "series_id": "jp-local-401005-project-series-women-perspective-policy",
+      "official_title": "女性の視点を生かした都市課題解決推進事業",
+      "selection_basis": "重点戦略Iの掲載順で3番目の事業（政策局・事務事業番号3）。",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-policy",
+        "kitakyushu-admin-eval-fy2024-overview"
+      ],
+      "selection_round": "scale"
+    },
+    {
+      "pillar": "II「彩りあるまち」の実現",
+      "bureau": "市長公室",
+      "bureau_project_number": 2,
+      "project_id": "jp-local-401005-project-2024-city-promotion",
+      "series_id": "jp-local-401005-project-series-city-promotion",
+      "official_title": "シティプロモーション推進事業",
+      "selection_basis": "重点戦略IIの掲載順でパイロット（市長公室・事務事業番号1）の次の事業（市長公室・事務事業番号2）。",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-mayor",
+        "kitakyushu-admin-eval-fy2024-overview"
+      ],
+      "selection_round": "scale"
+    },
+    {
+      "pillar": "II「彩りあるまち」の実現",
+      "bureau": "政策局",
+      "bureau_project_number": 5,
+      "project_id": "jp-local-401005-project-2024-sumaraku-ward-office",
+      "series_id": "jp-local-401005-project-series-sumaraku-ward-office",
+      "official_title": "スマらく区役所サービスプロジェクト",
+      "selection_basis": "重点戦略IIの掲載順で3番目の事業。市長公室の次に掲載される政策局の見出しIIの先頭（事務事業番号5）。",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-policy",
+        "kitakyushu-admin-eval-fy2024-overview"
+      ],
+      "selection_round": "scale"
+    },
+    {
+      "pillar": "III「安らぐまち」の実現",
+      "bureau": "危機管理室",
+      "bureau_project_number": 2,
+      "project_id": "jp-local-401005-project-2024-community-shelter-operation",
+      "series_id": "jp-local-401005-project-series-community-shelter-operation",
+      "official_title": "地域と連携した避難所開設・運営事業",
+      "selection_basis": "重点戦略IIIの掲載順でパイロット（危機管理室・事務事業番号1）の次の事業（危機管理室・事務事業番号2）。",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-projects",
+        "kitakyushu-admin-eval-fy2024-overview"
+      ],
+      "selection_round": "scale"
+    },
+    {
+      "pillar": "III「安らぐまち」の実現",
+      "bureau": "危機管理室",
+      "bureau_project_number": 3,
+      "project_id": "jp-local-401005-project-2024-city-disaster-drill",
+      "series_id": "jp-local-401005-project-series-city-disaster-drill",
+      "official_title": "市総合防災訓練",
+      "selection_basis": "重点戦略IIIの掲載順で3番目の事業（危機管理室・事務事業番号3）。",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-projects",
+        "kitakyushu-admin-eval-fy2024-overview"
+      ],
+      "selection_round": "scale"
+    },
+    {
+      "pillar": "III「安らぐまち」の実現",
+      "bureau": "政策局",
+      "bureau_project_number": 6,
+      "project_id": "jp-local-401005-project-2024-foreign-resident-coexistence",
+      "series_id": "jp-local-401005-project-series-foreign-resident-coexistence",
+      "official_title": "外国人との共生社会推進事業",
+      "selection_basis": "ライフサイクルの終端（事業の終了）を示すための追加選定。今後の方向性が「廃止」の事業のうち、全体の掲載順で最初の事業（政策局・事務事業番号6）。取り組みは後継事業に引き継がれる。",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-policy",
+        "kitakyushu-admin-eval-fy2024-overview"
+      ],
+      "selection_round": "scale"
     }
   ],
-  "review_status": "reviewed"
+  "review_status": "reviewed",
+  "expansion_rule": {
+    "description": "展開分（北九州市の合計10件化）: パイロットの選定ルールをそのまま継続し、各重点戦略について掲載順の後続2件ずつ（重点戦略I: 政策局2・3番、重点戦略II: 市長公室2番・政策局5番、重点戦略III: 危機管理室2・3番）の計6件を追加した。さらに、事業ライフサイクルの終端を表示できるようにするため、今後の方向性が「廃止」の事業のうち全体の掲載順で最初の1件（政策局・外国人との共生社会推進事業）を追加した（廃止・完了事業の追加は最大1件まで）。selections の並びは、パイロット3件の後に、重点戦略I・II・IIIの追加分、最後に廃止事業の順。",
+    "added_count": 7,
+    "total_count": 10
+  }
 }

@@ -164,5 +164,376 @@
     "sources": [
       "kitakyushu-admin-eval-fy2024-projects"
     ]
+  },
+  {
+    "id": "jp-local-401005-project-2024-shin-jidai-youth-challenge-kpi-youth-activity-image",
+    "project_id": "jp-local-401005-project-2024-shin-jidai-youth-challenge",
+    "name": "北九州市の最近のイメージで「活躍する若者をよく目にするようになった」と答えた人の割合",
+    "definition": "北九州市の最近のイメージで「活躍する若者をよく目にするようになった」と答えた人の割合（成果指標）。行政評価の事業評価票に掲載された値をそのまま記録する。令和6年度実績値8.6%が掲載されているが、基準値・目標値はいずれも事業評価票で「―」であり、目標年度は令和8年度と印字されている。",
+    "unit": "%",
+    "direction": "increase",
+    "baseline": {
+      "period": "印字なし",
+      "value": null,
+      "status": "not_published",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-policy"
+      ]
+    },
+    "target": {
+      "period": "令和8年度",
+      "value": null,
+      "status": "not_published",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-policy"
+      ]
+    },
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "value": 8.6,
+        "status": "available",
+        "source_ids": [
+          "kitakyushu-admin-eval-fy2024-policy"
+        ]
+      }
+    ],
+    "assessment": "not_assessable",
+    "causality_note": "市民のイメージを示す指標であり、メディア露出や他の若者施策、市の施策全般など本事業以外の要因にも左右される。目標値が設定されていないため、数値の達成度は判定できない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "kitakyushu-admin-eval-fy2024-policy"
+    ]
+  },
+  {
+    "id": "jp-local-401005-project-2024-women-perspective-policy-kpi-policy-proposals",
+    "project_id": "jp-local-401005-project-2024-women-perspective-policy",
+    "name": "市政への課題提言数",
+    "definition": "市政への課題提言数（成果指標）。行政評価の事業評価票に掲載された値をそのまま記録する。目標値は令和7年度の5件で、提言（最終報告会）は令和7年10月に実施予定のため、令和6年度の実績値は事業評価票でも「―」となっている。",
+    "unit": "件",
+    "direction": "increase",
+    "baseline": {
+      "period": "印字なし",
+      "value": null,
+      "status": "not_published",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-policy"
+      ]
+    },
+    "target": {
+      "period": "令和7年度",
+      "value": 5,
+      "status": "available",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-policy"
+      ]
+    },
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "value": null,
+        "status": "not_published",
+        "source_ids": [
+          "kitakyushu-admin-eval-fy2024-policy"
+        ]
+      }
+    ],
+    "assessment": "not_assessable",
+    "causality_note": "提言数は活動の量を示す指標であり、提言の内容の質や市政への反映の度合いはこの指標だけでは測れない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "kitakyushu-admin-eval-fy2024-policy"
+    ]
+  },
+  {
+    "id": "jp-local-401005-project-2024-city-promotion-kpi-city-affection",
+    "project_id": "jp-local-401005-project-2024-city-promotion",
+    "name": "北九州市が好きだと答えた（肯定的な回答をした）市民の割合",
+    "definition": "北九州市が好きだと答えた（肯定的な回答をした）市民の割合（成果指標）。行政評価の事業評価票に掲載された値をそのまま記録する。事業評価票の達成率は94.7%。目標値は毎年度設定され、令和6年度・令和7年度はいずれも90.0%（主要事務事業リストで確認）。",
+    "unit": "%",
+    "direction": "increase",
+    "baseline": {
+      "period": "令和5年度",
+      "value": 87.0,
+      "status": "available",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-mayor"
+      ]
+    },
+    "target": {
+      "period": "令和6年度",
+      "value": 90.0,
+      "status": "available",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-mayor",
+        "kitakyushu-new-vision-project-list-r6r7-mayor"
+      ]
+    },
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "value": 85.2,
+        "status": "available",
+        "source_ids": [
+          "kitakyushu-admin-eval-fy2024-mayor"
+        ]
+      }
+    ],
+    "assessment": "mostly_achieved",
+    "causality_note": "市民の愛着度は、広報・プロモーション活動だけでなく、市の施策全般や生活環境、社会経済の動向など事業以外の要因にも影響されるため、変動のすべてが本事業の成果であるとは限らない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "kitakyushu-admin-eval-fy2024-mayor",
+      "kitakyushu-new-vision-project-list-r6r7-mayor"
+    ]
+  },
+  {
+    "id": "jp-local-401005-project-2024-sumaraku-ward-office-kpi-online-application-rate",
+    "project_id": "jp-local-401005-project-2024-sumaraku-ward-office",
+    "name": "オンライン申請率の向上",
+    "definition": "オンライン申請率（成果指標）。行政評価の事業評価票に掲載された値をそのまま記録する。目標値45.0%は令和7年度の目標であり、令和6年度実績値40.1%はその途中経過（事業評価票の達成率は89.1%）。",
+    "unit": "%",
+    "direction": "increase",
+    "baseline": {
+      "period": "令和4年度",
+      "value": 24.0,
+      "status": "available",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-policy"
+      ]
+    },
+    "target": {
+      "period": "令和7年度",
+      "value": 45.0,
+      "status": "available",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-policy"
+      ]
+    },
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "value": 40.1,
+        "status": "available",
+        "source_ids": [
+          "kitakyushu-admin-eval-fy2024-policy"
+        ]
+      }
+    ],
+    "assessment": "in_progress",
+    "causality_note": "オンライン申請率は、対象手続きの拡大やツールの提供といった本事業の取組に加え、市民のデジタル利用の動向など事業以外の要因にも影響される。目標年度が令和7年度のため、令和6年度時点の達成度は確定しない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "kitakyushu-admin-eval-fy2024-policy"
+    ]
+  },
+  {
+    "id": "jp-local-401005-project-2024-sumaraku-ward-office-kpi-window-work-time-reduction",
+    "project_id": "jp-local-401005-project-2024-sumaraku-ward-office",
+    "name": "集約する窓口業務に従事している職員の作業時間の削減",
+    "definition": "集約する窓口業務に従事している職員の作業時間の削減率（成果指標）。行政評価の事業評価票に掲載された値をそのまま記録する。目標値は令和9年度に作業時間を▲50.0%（50%削減）とするもので、削減を負の値として記録する。令和6年度実績値は▲45.5%（事業評価票の達成率は91.0%）。",
+    "unit": "%",
+    "direction": "decrease",
+    "baseline": {
+      "period": "印字なし",
+      "value": null,
+      "status": "not_published",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-policy"
+      ]
+    },
+    "target": {
+      "period": "令和9年度",
+      "value": -50.0,
+      "status": "available",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-policy"
+      ]
+    },
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "value": -45.5,
+        "status": "available",
+        "source_ids": [
+          "kitakyushu-admin-eval-fy2024-policy"
+        ]
+      }
+    ],
+    "assessment": "in_progress",
+    "causality_note": "作業時間は、集約・効率化の取組に加え、業務量や対象業務の構成、繁忙の度合いによっても変動する。目標年度が令和9年度のため、令和6年度時点の達成度は確定しない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "kitakyushu-admin-eval-fy2024-policy"
+    ]
+  },
+  {
+    "id": "jp-local-401005-project-2024-community-shelter-operation-kpi-participating-school-districts",
+    "project_id": "jp-local-401005-project-2024-community-shelter-operation",
+    "name": "参画する校区まちづくり協議会数",
+    "definition": "避難所の開設・運営に参画する校区まちづくり協議会数（成果指標）。行政評価の事業評価票に掲載された値をそのまま記録する。事業評価票の達成率は92.5%。",
+    "unit": "校区",
+    "direction": "increase",
+    "baseline": {
+      "period": "令和5年度",
+      "value": 35,
+      "status": "available",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-projects"
+      ]
+    },
+    "target": {
+      "period": "目標年度の印字なし",
+      "value": 40,
+      "status": "available",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-projects"
+      ]
+    },
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "value": 37,
+        "status": "available",
+        "source_ids": [
+          "kitakyushu-admin-eval-fy2024-projects"
+        ]
+      }
+    ],
+    "assessment": "mostly_achieved",
+    "causality_note": "参画する協議会数は連携の広がりを示す指標だが、避難所運営の質や実際の災害時に機能するかどうかはこの指標だけでは測れない。地域側の事情や担い手の状況にも左右される。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "kitakyushu-admin-eval-fy2024-projects"
+    ]
+  },
+  {
+    "id": "jp-local-401005-project-2024-city-disaster-drill-kpi-disaster-response-confidence",
+    "project_id": "jp-local-401005-project-2024-city-disaster-drill",
+    "name": "「実際に災害が起きても対応できる・概ね対応できる」と回答した人の割合の上昇（訓練実施後にアンケート）",
+    "definition": "訓練実施後のアンケートで「実際に災害が起きても対応できる・概ね対応できる」と回答した人の割合（成果指標）。行政評価の事業評価票に掲載された値をそのまま記録する。事業評価票の達成率は102.5%。",
+    "unit": "%",
+    "direction": "increase",
+    "baseline": {
+      "period": "令和5年度",
+      "value": 77.0,
+      "status": "available",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-projects"
+      ]
+    },
+    "target": {
+      "period": "目標年度の印字なし",
+      "value": 80.0,
+      "status": "available",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-projects"
+      ]
+    },
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "value": 82.0,
+        "status": "available",
+        "source_ids": [
+          "kitakyushu-admin-eval-fy2024-projects"
+        ]
+      }
+    ],
+    "assessment": "achieved",
+    "causality_note": "アンケートの回答は訓練参加者の自己評価であり、実際の災害対応力を直接測るものではない。訓練の内容や参加者の構成によっても変動しうる。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "kitakyushu-admin-eval-fy2024-projects"
+    ]
+  },
+  {
+    "id": "jp-local-401005-project-2024-foreign-resident-coexistence-kpi-multicultural-awareness",
+    "project_id": "jp-local-401005-project-2024-foreign-resident-coexistence",
+    "name": "市民の「多文化共生」という言葉の認知度",
+    "definition": "市民の「多文化共生」という言葉の認知度（成果指標）。行政評価の事業評価票に掲載された値をそのまま記録する。事業評価票の達成率は90.2%。",
+    "unit": "%",
+    "direction": "increase",
+    "baseline": {
+      "period": "令和5年度",
+      "value": 59.5,
+      "status": "available",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-policy"
+      ]
+    },
+    "target": {
+      "period": "目標年度の印字なし",
+      "value": 62.0,
+      "status": "available",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-policy"
+      ]
+    },
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "value": 55.9,
+        "status": "available",
+        "source_ids": [
+          "kitakyushu-admin-eval-fy2024-policy"
+        ]
+      }
+    ],
+    "assessment": "mostly_achieved",
+    "causality_note": "言葉の認知度は、メディア報道や社会の動向、他の啓発活動など本事業以外の要因にも影響されるため、変動のすべてが本事業の成果であるとは限らない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "kitakyushu-admin-eval-fy2024-policy"
+    ]
+  },
+  {
+    "id": "jp-local-401005-project-2024-foreign-resident-coexistence-kpi-foreign-resident-livability",
+    "project_id": "jp-local-401005-project-2024-foreign-resident-coexistence",
+    "name": "「暮らしやすい」と回答した人の割合（外国人市民アンケート：1回／5年）",
+    "definition": "外国人市民アンケートで「暮らしやすい」と回答した人の割合（成果指標）。行政評価の事業評価票に掲載された値をそのまま記録する。アンケートは5年に1回の実施で、令和6年度は実施年に当たらないため、目標値・実績値とも事業評価票では「―」となっている。",
+    "unit": "%",
+    "direction": "increase",
+    "baseline": {
+      "period": "令和5年度",
+      "value": 72.4,
+      "status": "available",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-policy"
+      ]
+    },
+    "target": {
+      "period": "印字なし",
+      "value": null,
+      "status": "not_published",
+      "source_ids": [
+        "kitakyushu-admin-eval-fy2024-policy"
+      ]
+    },
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "value": null,
+        "status": "not_published",
+        "source_ids": [
+          "kitakyushu-admin-eval-fy2024-policy"
+        ]
+      }
+    ],
+    "assessment": "not_assessable",
+    "causality_note": "アンケート結果は、回答者の属性や在留状況の変化によっても変動しうる。5年に1回の調査のため、年度ごとの事業の効果を切り分けて測ることはできない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "kitakyushu-admin-eval-fy2024-policy"
+    ]
   }
 ]
