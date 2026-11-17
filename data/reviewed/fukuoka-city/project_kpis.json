@@ -121,5 +121,292 @@
       "value": 100
     },
     "unit": "校区"
+  },
+  {
+    "actuals": [
+      {
+        "period": "2025年度",
+        "source_ids": [
+          "fukuoka-city-plan-evaluation-goal4-fy2025"
+        ],
+        "status": "available",
+        "value": 41
+      }
+    ],
+    "assessment": "in_progress",
+    "baseline": {
+      "period": "2024年度",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal4-fy2025"
+      ],
+      "status": "available",
+      "value": 17
+    },
+    "causality_note": "植替え面積は、市営林の整備の進捗だけでなく、私有林所有者の伐採・植替えの判断や林業経営の状況にも左右される。また、面積の増加がそのまま花粉飛散量の減少や森林の多面的機能の向上の時期・程度を示すものではない。指標には水道局所管の水源かん養林分（R7n：8ha）が含まれる。",
+    "confidence": "high",
+    "definition": "広葉樹等への植替え面積（累計）（成果指標）。令和7年度福岡市基本計画に係る実施状況の報告（施策評価シート、施策4-1）の掲載値をそのまま記録する。初期値・最新値の年度は、進捗状況の記載（R6n：17ha→R7n：41ha）に基づき、それぞれ2024年度・2025年度として記録する。市の達成状況はA（目標に向けて順調に進んでいる）。",
+    "direction": "increase",
+    "id": "jp-local-401307-project-2025-rich-forest-development-kpi-broadleaf-replanting-area",
+    "name": "広葉樹等への植替え面積（累計）",
+    "project_id": "jp-local-401307-project-2025-rich-forest-development",
+    "review_status": "reviewed",
+    "sources": [
+      "fukuoka-city-plan-evaluation-goal4-fy2025"
+    ],
+    "target": {
+      "period": "目標値（達成年度の明示なし）",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal4-fy2025"
+      ],
+      "status": "available",
+      "value": 112
+    },
+    "unit": "ha"
+  },
+  {
+    "actuals": [
+      {
+        "period": "2025年度",
+        "source_ids": [
+          "fukuoka-city-plan-evaluation-goal5-fy2025"
+        ],
+        "status": "available",
+        "value": 66.6
+      }
+    ],
+    "assessment": "in_progress",
+    "baseline": {
+      "period": "初期値（時点の明示なし）",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal5-fy2025"
+      ],
+      "status": "available",
+      "value": 58.7
+    },
+    "causality_note": "満足度は、来訪者の国・地域の構成や為替・旅行費用、食以外の旅行体験などにも影響される意識指標であり、本事業の受入環境整備や情報発信の取組だけで変動するものではない。",
+    "confidence": "high",
+    "definition": "外国人観光客の福岡の食の多様性に関する満足度（成果指標）。令和7年度福岡市基本計画に係る実施状況の報告（施策評価シート、施策5-1）の掲載値をそのまま記録する。市の達成状況はA（目標に向けて順調に進んでいる）。初期値と最新値の列位置はPDFの座標で照合済み。",
+    "direction": "increase",
+    "id": "jp-local-401307-project-2025-food-universal-hospitality-kpi-foreign-visitor-food-diversity-satisfaction",
+    "name": "外国人観光客の福岡の食の多様性に関する満足度",
+    "project_id": "jp-local-401307-project-2025-food-universal-hospitality",
+    "review_status": "reviewed",
+    "sources": [
+      "fukuoka-city-plan-evaluation-goal5-fy2025"
+    ],
+    "target": {
+      "period": "目標値（達成年度の明示なし）",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal5-fy2025"
+      ],
+      "status": "available",
+      "value": 80
+    },
+    "unit": "％"
+  },
+  {
+    "actuals": [
+      {
+        "period": "2025年度",
+        "source_ids": [
+          "fukuoka-city-plan-evaluation-goal6-fy2025"
+        ],
+        "status": "available",
+        "value": 85
+      }
+    ],
+    "assessment": "in_progress",
+    "baseline": {
+      "period": "2023年度",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal6-fy2025"
+      ],
+      "status": "available",
+      "value": 58
+    },
+    "causality_note": "竣工棟数は、民間事業者の投資判断や市況、個別の開発計画の進捗に左右されるものであり、本事業の誘導制度（容積率緩和やグリーンボーナス）の成果だけを反映するものではない。",
+    "confidence": "high",
+    "definition": "天神ビッグバンエリア内での竣工棟数（成果指標）。令和7年度福岡市基本計画に係る実施状況の報告（施策評価シート、施策6-1）の掲載値をそのまま記録する。市の達成状況はA（目標に向けて順調に進んでいる）。最新値（2025年度）は目標値（2026年度）を既に上回っているが、市の公表値をそのまま記録する。初期値と最新値の列位置はPDFの座標で照合済み。",
+    "direction": "increase",
+    "id": "jp-local-401307-project-2025-downtown-redevelopment-promotion-kpi-tenjin-bigbang-completed-buildings",
+    "name": "天神ビッグバンエリア内での竣工棟数",
+    "project_id": "jp-local-401307-project-2025-downtown-redevelopment-promotion",
+    "review_status": "reviewed",
+    "sources": [
+      "fukuoka-city-plan-evaluation-goal6-fy2025"
+    ],
+    "target": {
+      "period": "2026年度",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal6-fy2025"
+      ],
+      "status": "available",
+      "value": 70
+    },
+    "unit": "棟"
+  },
+  {
+    "actuals": [
+      {
+        "period": "2025年度",
+        "source_ids": [
+          "fukuoka-city-plan-evaluation-goal6-fy2025"
+        ],
+        "status": "available",
+        "value": 30
+      }
+    ],
+    "assessment": "in_progress",
+    "baseline": {
+      "period": "2023年度",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal6-fy2025"
+      ],
+      "status": "available",
+      "value": 22
+    },
+    "causality_note": "竣工棟数は、民間事業者の投資判断や市況、個別の開発計画の進捗に左右されるものであり、本事業の誘導制度の成果だけを反映するものではない。",
+    "confidence": "high",
+    "definition": "博多コネクティッドエリア内での竣工棟数（成果指標）。令和7年度福岡市基本計画に係る実施状況の報告（施策評価シート、施策6-1）の掲載値をそのまま記録する。市の達成状況はA（目標に向けて順調に進んでいる）。初期値と最新値の列位置はPDFの座標で照合済み。",
+    "direction": "increase",
+    "id": "jp-local-401307-project-2025-downtown-redevelopment-promotion-kpi-hakata-connected-completed-buildings",
+    "name": "博多コネクティッドエリア内での竣工棟数",
+    "project_id": "jp-local-401307-project-2025-downtown-redevelopment-promotion",
+    "review_status": "reviewed",
+    "sources": [
+      "fukuoka-city-plan-evaluation-goal6-fy2025"
+    ],
+    "target": {
+      "period": "目標値（達成年度の明示なし）",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal6-fy2025"
+      ],
+      "status": "available",
+      "value": 30
+    },
+    "unit": "棟"
+  },
+  {
+    "actuals": [
+      {
+        "period": "2024年度",
+        "source_ids": [
+          "fukuoka-city-plan-evaluation-goal7-fy2025"
+        ],
+        "status": "available",
+        "value": 67768
+      }
+    ],
+    "assessment": "in_progress",
+    "baseline": {
+      "period": "2023年度",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal7-fy2025"
+      ],
+      "status": "available",
+      "value": 65499
+    },
+    "causality_note": "対象法人数は、市内の景気動向や開業・廃業の状況など経済全体の動きを反映する指標であり、本事業の相談・助言や融資の取組の成果を直接測るものではない。",
+    "confidence": "high",
+    "definition": "法人市民税（均等割）の対象法人数（成果指標）。令和7年度福岡市基本計画に係る実施状況の報告（施策評価シート、施策7-1）の掲載値をそのまま記録する。市の達成状況はA（目標に向けて順調に進んでいる）。初期値と最新値の列位置はPDFの座標で照合済み。",
+    "direction": "increase",
+    "id": "jp-local-401307-project-2025-sme-management-base-strengthening-kpi-corporate-taxpayer-count",
+    "name": "法人市民税（均等割）の対象法人数",
+    "project_id": "jp-local-401307-project-2025-sme-management-base-strengthening",
+    "review_status": "reviewed",
+    "sources": [
+      "fukuoka-city-plan-evaluation-goal7-fy2025"
+    ],
+    "target": {
+      "period": "目標値（達成年度の明示なし）",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal7-fy2025"
+      ],
+      "status": "available",
+      "value": 73000
+    },
+    "unit": "社"
+  },
+  {
+    "actuals": [
+      {
+        "period": "2025年度",
+        "source_ids": [
+          "fukuoka-city-plan-evaluation-goal2-fy2025"
+        ],
+        "status": "available",
+        "value": 27.1
+      }
+    ],
+    "assessment": "in_progress",
+    "baseline": {
+      "period": "2023年度",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal2-fy2025"
+      ],
+      "status": "available",
+      "value": 44.8
+    },
+    "causality_note": "若者の意識は、社会経済情勢や価値観の変化、メディアの影響など多くの要因に左右される意識指標であり、本事業の体験プログラムや広報の取組だけで変動するものではない。",
+    "confidence": "high",
+    "definition": "子育ての精神的な負担を理由に、子どもをほしいと思わないと答える若者の割合（成果指標）。令和7年度福岡市基本計画に係る実施状況の報告（施策評価シート、施策2-1）の掲載値をそのまま記録する。数値が下がると成果が向上する指標であり、市の達成状況はA（目標に向けて順調に進んでいる）。目標値は「減少」と定性的な形で示されている。初期値と最新値の列位置はPDFの座標で照合済み。",
+    "direction": "decrease",
+    "id": "jp-local-401307-project-2025-community-childrearing-support-kpi-youth-child-mental-burden-share",
+    "name": "子育ての精神的な負担を理由に、子どもをほしいと思わないと答える若者の割合",
+    "project_id": "jp-local-401307-project-2025-community-childrearing-support",
+    "review_status": "reviewed",
+    "sources": [
+      "fukuoka-city-plan-evaluation-goal2-fy2025"
+    ],
+    "target": {
+      "period": "目標値（達成年度の明示なし）",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal2-fy2025"
+      ],
+      "status": "available",
+      "value": "減少"
+    },
+    "unit": "％"
+  },
+  {
+    "actuals": [
+      {
+        "period": "2025年度",
+        "source_ids": [
+          "fukuoka-city-plan-evaluation-goal6-fy2025"
+        ],
+        "status": "not_published",
+        "value": null
+      }
+    ],
+    "assessment": "not_assessable",
+    "baseline": {
+      "period": "―",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal6-fy2025"
+      ],
+      "status": "not_applicable",
+      "value": null
+    },
+    "causality_note": "数値指標が設定されていないため、本事業の成果を数値で評価することはできない。検討の進捗は、市の公表資料の記述によって確認するほかない。",
+    "confidence": "high",
+    "definition": "令和7年度福岡市基本計画に係る実施状況の報告（施策評価シート、施策6-1）では、本事業の指標として「継続実施」が掲げられ、初期値・最新値・目標値・達成状況はいずれも「―」とされている。数値指標は設定されていないため、値は未公表・該当なしとして記録し、数値で補完しない。",
+    "direction": "not_applicable",
+    "id": "jp-local-401307-project-2025-waterfront-redevelopment-kpi-continued-implementation",
+    "name": "継続実施",
+    "project_id": "jp-local-401307-project-2025-waterfront-redevelopment",
+    "review_status": "reviewed",
+    "sources": [
+      "fukuoka-city-plan-evaluation-goal6-fy2025"
+    ],
+    "target": {
+      "period": "―",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal6-fy2025"
+      ],
+      "status": "not_applicable",
+      "value": null
+    },
+    "unit": "―"
   }
 ]
