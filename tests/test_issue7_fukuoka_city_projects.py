@@ -279,6 +279,21 @@ def test_port_sales_project_has_no_kpi_and_says_so() -> None:
     assert "掲載がない" in kpi_claims[0]["statement"]
 
 
+TERM_ID = "jp-local-401307-executive-2022-12-07"
+EXPECTED_PROMISE_LINKS = {
+    UNIVERSAL: [f"{TERM_ID}-promise-004"],
+    CHILD: [f"{TERM_ID}-promise-001"],
+    POINTS: [f"{TERM_ID}-promise-006"],
+    FOREST: [],
+    FOOD: [f"{TERM_ID}-promise-003"],
+    DOWNTOWN: [f"{TERM_ID}-promise-005"],
+    SME: [f"{TERM_ID}-promise-003"],
+    PORT: [],
+    CHILDREARING: [f"{TERM_ID}-promise-001"],
+    WATERFRONT: [f"{TERM_ID}-promise-005"],
+}
+
+
 def test_official_evaluation_is_the_citys_policy_level_not_ours() -> None:
     projects = projects_by_id()
     expected_ratings = {
@@ -300,8 +315,12 @@ def test_official_evaluation_is_the_citys_policy_level_not_ours() -> None:
         # must say so and must not present the rating as our own judgement.
         assert "施策単位" in evaluation["note"]
         assert "Jichi Insight独自の評価ではない" in evaluation["note"]
-        # Promises are Issue #8: no fabricated links.
-        assert projects[project_id]["related_promise_ids"] == []
+        # Issue #8 registered the mayor's six pillars and linked the
+        # projects whose content corresponds; links are exact, and the
+        # two unlinked projects (forest, port sales) stay empty.
+        assert projects[project_id]["related_promise_ids"] == (
+            EXPECTED_PROMISE_LINKS[project_id]
+        )
 
 
 def test_every_project_has_an_evidence_packet_and_known_sources() -> None:

@@ -35,19 +35,24 @@
       "candidate_publication_search",
       "general_web_search"
     ],
-    "result_status": "no_stable_primary_source_found",
-    "manifesto_source_ids_found": [],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "fukuoka-city-mayor-election-2022-bulletin",
+      "fukuoka-city-mayor-manifesto-2022-go2senkyo-archive"
+    ],
     "checked_source_ids": [
       "fukuoka-city-mayor-election-2022-results",
       "fukuoka-city-mayor-candidate-official-site",
-      "fukuoka-city-mayor-candidate-2022-blog-archive"
+      "fukuoka-city-mayor-candidate-2022-blog-archive",
+      "fukuoka-city-mayor-election-2022-bulletin",
+      "fukuoka-city-mayor-manifesto-2022-go2senkyo-archive"
     ],
     "nonexistence_claim": false,
-    "review_note": "福岡市選挙管理委員会の2022年市長選挙ページでは投票結果と開票結果を確認したが、選挙公報または高島宗一郎候補の公約原文への安定した導線は確認できなかった。2026-11-17の追跡探索で、候補者本人の公式サイト（takashima-soichiro.com）の現存を確認したが、現行の政策ページは当選後の政策紹介であり選挙時の公約（「一緒に福岡の未来へ種をまこう」、6本柱）の原文ではなく、Wayback Machine における同ドメインの保存は2026年7月24日分から始まっており選挙期間中の保存コピーは存在しなかった。選挙当時の公式ブログ（LINEブログ）については、2022年10月11日時点と2023年3月28日時点の保存コピーの存在を確認したが、公約発表（2022年11月2日）の本文を照合するには保存コピー本文の取得が必要であり、確認時点で Internet Archive が一時的にオフライン（503/504）だったため、本文の抽出・照合は未実施である。公約原文を特定できたとは判定せず、資料が存在しないとも判定しない。",
+    "review_note": "福岡市選挙管理委員会の2022年市長選挙ページでは投票結果と開票結果を確認したが、選挙公報または高島宗一郎候補の公約原文への安定した導線は確認できなかった。2026-11-17の追跡探索で、候補者本人の公式サイト（takashima-soichiro.com）の現存を確認したが、現行の政策ページは当選後の政策紹介であり選挙時の公約原文ではなく、同ドメインの選挙期間中の保存コピーも存在しなかった。公式ブログ（LINEブログ）の保存コピーを実ブラウザで確認したところ、2022年11月の記事は3件のみで、公約発表に関する記事は投稿されていなかった。一方、選挙ドットコム記事（2022年11月16日）の保存コピーが、候補者ホームページに掲載された公約「一緒に福岡の未来へ種をまこう」の全文（6本柱・各柱1段落）を原文引用していることを確認し、見出し6本を選挙公報・西日本新聞・いい政治ドットコムの記載と照合したうえで、両資料を出典として登録し、分割レビュー（manifesto-review-jp-local-401307-2022）を経て公約レコード6件を作成した。原文は候補者ホームページ自体の保存コピーではなく第三者記事経由の引用であるため、公約レコードの confidence は medium とし、来歴を明記した。2022年11月2日の記者発表配布資料そのものの保存は見つかっておらず、資料が存在しないとは判定しない。",
     "next_actions": [
-      "Internet Archive の復旧後に、公式ブログ（LINEブログ）の2023年3月28日時点の保存コピーおよび2022年11月前後に保存された個別記事から、2022年11月2日発表の公約（6本柱・小項目）の本文を取得・照合する",
-      "福岡市選挙管理委員会の選挙公報保存・公開方針を確認する",
-      "必要に応じて選挙管理委員会へ保存資料の有無を照会する"
+      "2022年11月2日の記者発表配布資料、または候補者ホームページ自体の2022年当時の保存コピーが新たに見つかれば、登録済みの公約本文と照合する",
+      "未接続の公約（柱2・交通分野）について、計画・事業資料への進捗証拠の接続を拡充する",
+      "福岡市選挙管理委員会の選挙公報保存・公開方針を確認する"
     ],
     "review_status": "reviewed",
     "confidence": "medium"

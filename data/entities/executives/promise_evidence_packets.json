@@ -1252,5 +1252,334 @@
       "事業との接続は文言・内容に基づく推定であり、自治体が公約と事業の公式な対応付けを公表した場合は接続を見直す。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-city-2022-promise-001",
+    "subject_type": "promise",
+    "subject_id": "jp-local-401307-executive-2022-12-07-promise-001",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "柱1の見出しと本文段落を、候補者ホームページの公約を引用した選挙ドットコム記事（2022年11月16日）の保存コピーから原文のまま転記した。",
+        "source_ids": [
+          "fukuoka-city-mayor-manifesto-2022-go2senkyo-archive",
+          "fukuoka-city-mayor-election-2022-bulletin"
+        ],
+        "location_note": "選挙ドットコム記事の「高島氏は自らのホームページにおいて以下の政策を公表しています」以下の引用部分・柱1。見出しは選挙公報1ページ目「未来へ向けたビジョン」と照合した。",
+        "decision": "accepted",
+        "review_note": "2026-11-17に実ブラウザで取得した全文と照合した。資料上の柱の境界をそのまま公約の単位とし、段落を文単位に分割していない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、候補者本人のホームページに掲載された公約を選挙ドットコム記事（2022年11月16日）が引用したものの Wayback Machine 保存コピーから取得した。候補者ホームページ自体の2022年当時の保存コピーは存在せず、2022年11月2日の記者発表配布資料の保存も見つかっていない。見出し6本は選挙公報・西日本新聞（2022年11月7日）・いい政治ドットコムの記載と一致することを照合した。この来歴のため、公約レコードの confidence は medium とした。",
+        "source_ids": [
+          "fukuoka-city-mayor-manifesto-2022-go2senkyo-archive",
+          "fukuoka-city-mayor-election-2022-bulletin"
+        ],
+        "location_note": "保存コピーのURLと保存日時、選挙公報の見出し記載に基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。一次資料そのものの保存が新たに見つかれば照合する。"
+      },
+      {
+        "field": "target",
+        "statement": "文中の「ひと月最大で500円」は、既存施策「ふくおか安心ワンコイン」について「進めてきました」と述べる継続言及であり、新規の数値目標ではないため、target には記録しなかった。",
+        "source_ids": [
+          "fukuoka-city-mayor-manifesto-2022-go2senkyo-archive"
+        ],
+        "location_note": "柱1本文の「などを進めてきましたが、今後は」という文脈に基づく。",
+        "decision": "accepted",
+        "review_note": "既存施策の水準を新規の公約目標として記録しない。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "令和7年度の登録済み事業「子どもの権利の尊重・意見表明の支援」「社会全体で子育てを応援する環境づくり」と、公約の文言・内容が対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "fukuoka-city-plan-evaluation-goal2-fy2025",
+          "fukuoka-city-budget-proposal-book1-fy2025"
+        ],
+        "location_note": "令和7年度の施策評価・予算資料に基づく登録済み事業レコード。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      },
+      {
+        "field": "progress_state",
+        "statement": "接続事業のうち「社会全体で子育てを応援する環境づくり」は令和7年度の登録済み事業として実施されており、その指標「子育ての精神的な負担を理由に、子どもをほしいと思わないと答える若者の割合」は市の施策評価資料で進行中と記録されている。「子どもの権利の尊重・意見表明の支援」も実施されているが、その指標の達成状況は市によりDと記録されている。",
+        "source_ids": [
+          "fukuoka-city-plan-evaluation-goal2-fy2025",
+          "fukuoka-city-budget-proposal-book1-fy2025"
+        ],
+        "location_note": "令和7年度の施策評価・予算資料に基づく登録済み事業レコード。",
+        "decision": "needs_review",
+        "review_note": "推定接続を前提とする暫定的な in_progress 判定であり、自治体の公式な公約進捗公表に基づくものではない。達成度（達成・一部達成等）の判定は行わない。"
+      }
+    ],
+    "open_questions": [
+      "候補者ホームページ自体の2022年当時の保存コピー、または2022年11月2日の記者発表配布資料が新たに見つかれば、本文を照合する。",
+      "事業との接続は文言・内容に基づく推定であり、自治体が公約と事業の公式な対応付けを公表した場合は接続を見直す。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-city-2022-promise-002",
+    "subject_type": "promise",
+    "subject_id": "jp-local-401307-executive-2022-12-07-promise-002",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "柱2の見出しと本文段落を、候補者ホームページの公約を引用した選挙ドットコム記事（2022年11月16日）の保存コピーから原文のまま転記した。",
+        "source_ids": [
+          "fukuoka-city-mayor-manifesto-2022-go2senkyo-archive",
+          "fukuoka-city-mayor-election-2022-bulletin"
+        ],
+        "location_note": "選挙ドットコム記事の「高島氏は自らのホームページにおいて以下の政策を公表しています」以下の引用部分・柱2。見出しは選挙公報1ページ目「未来へ向けたビジョン」と照合した。",
+        "decision": "accepted",
+        "review_note": "2026-11-17に実ブラウザで取得した全文と照合した。資料上の柱の境界をそのまま公約の単位とし、段落を文単位に分割していない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、候補者本人のホームページに掲載された公約を選挙ドットコム記事（2022年11月16日）が引用したものの Wayback Machine 保存コピーから取得した。候補者ホームページ自体の2022年当時の保存コピーは存在せず、2022年11月2日の記者発表配布資料の保存も見つかっていない。見出し6本は選挙公報・西日本新聞（2022年11月7日）・いい政治ドットコムの記載と一致することを照合した。この来歴のため、公約レコードの confidence は medium とした。",
+        "source_ids": [
+          "fukuoka-city-mayor-manifesto-2022-go2senkyo-archive",
+          "fukuoka-city-mayor-election-2022-bulletin"
+        ],
+        "location_note": "保存コピーのURLと保存日時、選挙公報の見出し記載に基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。一次資料そのものの保存が新たに見つかれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "候補者ホームページ自体の2022年当時の保存コピー、または2022年11月2日の記者発表配布資料が新たに見つかれば、本文を照合する。",
+      "交通ネットワークの検討や生活交通の確保に対応する事業は未登録であり、事業接続と進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-city-2022-promise-003",
+    "subject_type": "promise",
+    "subject_id": "jp-local-401307-executive-2022-12-07-promise-003",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "柱3の見出しと本文段落を、候補者ホームページの公約を引用した選挙ドットコム記事（2022年11月16日）の保存コピーから原文のまま転記した。",
+        "source_ids": [
+          "fukuoka-city-mayor-manifesto-2022-go2senkyo-archive",
+          "fukuoka-city-mayor-election-2022-bulletin"
+        ],
+        "location_note": "選挙ドットコム記事の「高島氏は自らのホームページにおいて以下の政策を公表しています」以下の引用部分・柱3。見出しは選挙公報1ページ目「未来へ向けたビジョン」と照合した。",
+        "decision": "accepted",
+        "review_note": "2026-11-17に実ブラウザで取得した全文と照合した。資料上の柱の境界をそのまま公約の単位とし、段落を文単位に分割していない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、候補者本人のホームページに掲載された公約を選挙ドットコム記事（2022年11月16日）が引用したものの Wayback Machine 保存コピーから取得した。候補者ホームページ自体の2022年当時の保存コピーは存在せず、2022年11月2日の記者発表配布資料の保存も見つかっていない。見出し6本は選挙公報・西日本新聞（2022年11月7日）・いい政治ドットコムの記載と一致することを照合した。この来歴のため、公約レコードの confidence は medium とした。",
+        "source_ids": [
+          "fukuoka-city-mayor-manifesto-2022-go2senkyo-archive",
+          "fukuoka-city-mayor-election-2022-bulletin"
+        ],
+        "location_note": "保存コピーのURLと保存日時、選挙公報の見出し記載に基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。一次資料そのものの保存が新たに見つかれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "令和7年度の登録済み事業「中小企業の経営基盤の強化」「食のユニバーサル対応の推進」と、公約の文言・内容が対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "fukuoka-city-plan-evaluation-goal7-fy2025",
+          "fukuoka-city-budget-proposal-book1-fy2025",
+          "fukuoka-city-plan-evaluation-goal5-fy2025",
+          "fukuoka-city-budget-briefing-economy-fy2025"
+        ],
+        "location_note": "令和7年度の施策評価・予算資料に基づく登録済み事業レコード。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      },
+      {
+        "field": "progress_state",
+        "statement": "接続事業「中小企業の経営基盤の強化」は令和7年度の登録済み事業として実施されており、その指標「法人市民税（均等割）の対象法人数」は進行中と記録されている。「食のユニバーサル対応の推進」も実施されており、指標「外国人観光客の福岡の食の多様性に関する満足度」は進行中、上位施策の公式評価は「◎：順調」と記録されている。",
+        "source_ids": [
+          "fukuoka-city-plan-evaluation-goal7-fy2025",
+          "fukuoka-city-budget-proposal-book1-fy2025",
+          "fukuoka-city-plan-evaluation-goal5-fy2025",
+          "fukuoka-city-budget-briefing-economy-fy2025"
+        ],
+        "location_note": "令和7年度の施策評価・予算資料に基づく登録済み事業レコード。",
+        "decision": "needs_review",
+        "review_note": "推定接続を前提とする暫定的な in_progress 判定であり、自治体の公式な公約進捗公表に基づくものではない。達成度（達成・一部達成等）の判定は行わない。"
+      }
+    ],
+    "open_questions": [
+      "候補者ホームページ自体の2022年当時の保存コピー、または2022年11月2日の記者発表配布資料が新たに見つかれば、本文を照合する。",
+      "事業との接続は文言・内容に基づく推定であり、自治体が公約と事業の公式な対応付けを公表した場合は接続を見直す。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-city-2022-promise-004",
+    "subject_type": "promise",
+    "subject_id": "jp-local-401307-executive-2022-12-07-promise-004",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "柱4の見出しと本文段落を、候補者ホームページの公約を引用した選挙ドットコム記事（2022年11月16日）の保存コピーから原文のまま転記した。",
+        "source_ids": [
+          "fukuoka-city-mayor-manifesto-2022-go2senkyo-archive",
+          "fukuoka-city-mayor-election-2022-bulletin"
+        ],
+        "location_note": "選挙ドットコム記事の「高島氏は自らのホームページにおいて以下の政策を公表しています」以下の引用部分・柱4。見出しは選挙公報1ページ目「未来へ向けたビジョン」と照合した。",
+        "decision": "accepted",
+        "review_note": "2026-11-17に実ブラウザで取得した全文と照合した。資料上の柱の境界をそのまま公約の単位とし、段落を文単位に分割していない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、候補者本人のホームページに掲載された公約を選挙ドットコム記事（2022年11月16日）が引用したものの Wayback Machine 保存コピーから取得した。候補者ホームページ自体の2022年当時の保存コピーは存在せず、2022年11月2日の記者発表配布資料の保存も見つかっていない。見出し6本は選挙公報・西日本新聞（2022年11月7日）・いい政治ドットコムの記載と一致することを照合した。この来歴のため、公約レコードの confidence は medium とした。",
+        "source_ids": [
+          "fukuoka-city-mayor-manifesto-2022-go2senkyo-archive",
+          "fukuoka-city-mayor-election-2022-bulletin"
+        ],
+        "location_note": "保存コピーのURLと保存日時、選挙公報の見出し記載に基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。一次資料そのものの保存が新たに見つかれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "令和7年度の登録済み事業「ユニバーサル都市・福岡の推進」と、公約の文言・内容が対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "fukuoka-city-plan-evaluation-goal1-fy2025",
+          "fukuoka-city-budget-briefing-general-affairs-fy2025"
+        ],
+        "location_note": "令和7年度の施策評価・予算資料に基づく登録済み事業レコード。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      },
+      {
+        "field": "progress_state",
+        "statement": "接続事業「ユニバーサル都市・福岡の推進」は令和7年度の登録済み事業として実施されており、指標「ユニバーサルデザインに基づく取組みの認知度」は基準値62.7%から66.2%へ推移し、進行中と記録されている。",
+        "source_ids": [
+          "fukuoka-city-plan-evaluation-goal1-fy2025",
+          "fukuoka-city-budget-briefing-general-affairs-fy2025"
+        ],
+        "location_note": "令和7年度の施策評価・予算資料に基づく登録済み事業レコード。",
+        "decision": "needs_review",
+        "review_note": "推定接続を前提とする暫定的な in_progress 判定であり、自治体の公式な公約進捗公表に基づくものではない。達成度（達成・一部達成等）の判定は行わない。"
+      }
+    ],
+    "open_questions": [
+      "候補者ホームページ自体の2022年当時の保存コピー、または2022年11月2日の記者発表配布資料が新たに見つかれば、本文を照合する。",
+      "事業との接続は文言・内容に基づく推定であり、自治体が公約と事業の公式な対応付けを公表した場合は接続を見直す。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-city-2022-promise-005",
+    "subject_type": "promise",
+    "subject_id": "jp-local-401307-executive-2022-12-07-promise-005",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "柱5の見出しと本文段落を、候補者ホームページの公約を引用した選挙ドットコム記事（2022年11月16日）の保存コピーから原文のまま転記した。",
+        "source_ids": [
+          "fukuoka-city-mayor-manifesto-2022-go2senkyo-archive",
+          "fukuoka-city-mayor-election-2022-bulletin"
+        ],
+        "location_note": "選挙ドットコム記事の「高島氏は自らのホームページにおいて以下の政策を公表しています」以下の引用部分・柱5。見出しは選挙公報1ページ目「未来へ向けたビジョン」と照合した。",
+        "decision": "accepted",
+        "review_note": "2026-11-17に実ブラウザで取得した全文と照合した。資料上の柱の境界をそのまま公約の単位とし、段落を文単位に分割していない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、候補者本人のホームページに掲載された公約を選挙ドットコム記事（2022年11月16日）が引用したものの Wayback Machine 保存コピーから取得した。候補者ホームページ自体の2022年当時の保存コピーは存在せず、2022年11月2日の記者発表配布資料の保存も見つかっていない。見出し6本は選挙公報・西日本新聞（2022年11月7日）・いい政治ドットコムの記載と一致することを照合した。この来歴のため、公約レコードの confidence は medium とした。",
+        "source_ids": [
+          "fukuoka-city-mayor-manifesto-2022-go2senkyo-archive",
+          "fukuoka-city-mayor-election-2022-bulletin"
+        ],
+        "location_note": "保存コピーのURLと保存日時、選挙公報の見出し記載に基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。一次資料そのものの保存が新たに見つかれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "令和7年度の登録済み事業「都心部のまちづくりの推進」「ウォーターフロント再整備の推進」と、公約の文言・内容が対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "fukuoka-city-plan-evaluation-goal6-fy2025",
+          "fukuoka-city-budget-briefing-housing-fy2025"
+        ],
+        "location_note": "令和7年度の施策評価・予算資料に基づく登録済み事業レコード。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      },
+      {
+        "field": "progress_state",
+        "statement": "接続事業「都心部のまちづくりの推進」は令和7年度の登録済み事業として実施されており、天神ビッグバン・博多コネクティッド両エリアの竣工棟数の指標はいずれも進行中と記録されている。「ウォーターフロント再整備の推進」も再整備の検討を進める事業として継続実施と記録されている。",
+        "source_ids": [
+          "fukuoka-city-plan-evaluation-goal6-fy2025",
+          "fukuoka-city-budget-briefing-housing-fy2025"
+        ],
+        "location_note": "令和7年度の施策評価・予算資料に基づく登録済み事業レコード。",
+        "decision": "needs_review",
+        "review_note": "推定接続を前提とする暫定的な in_progress 判定であり、自治体の公式な公約進捗公表に基づくものではない。達成度（達成・一部達成等）の判定は行わない。"
+      }
+    ],
+    "open_questions": [
+      "候補者ホームページ自体の2022年当時の保存コピー、または2022年11月2日の記者発表配布資料が新たに見つかれば、本文を照合する。",
+      "事業との接続は文言・内容に基づく推定であり、自治体が公約と事業の公式な対応付けを公表した場合は接続を見直す。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-city-2022-promise-006",
+    "subject_type": "promise",
+    "subject_id": "jp-local-401307-executive-2022-12-07-promise-006",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "柱6の見出しと本文段落を、候補者ホームページの公約を引用した選挙ドットコム記事（2022年11月16日）の保存コピーから原文のまま転記した。",
+        "source_ids": [
+          "fukuoka-city-mayor-manifesto-2022-go2senkyo-archive",
+          "fukuoka-city-mayor-election-2022-bulletin"
+        ],
+        "location_note": "選挙ドットコム記事の「高島氏は自らのホームページにおいて以下の政策を公表しています」以下の引用部分・柱6。見出しは選挙公報1ページ目「未来へ向けたビジョン」と照合した。",
+        "decision": "accepted",
+        "review_note": "2026-11-17に実ブラウザで取得した全文と照合した。資料上の柱の境界をそのまま公約の単位とし、段落を文単位に分割していない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、候補者本人のホームページに掲載された公約を選挙ドットコム記事（2022年11月16日）が引用したものの Wayback Machine 保存コピーから取得した。候補者ホームページ自体の2022年当時の保存コピーは存在せず、2022年11月2日の記者発表配布資料の保存も見つかっていない。見出し6本は選挙公報・西日本新聞（2022年11月7日）・いい政治ドットコムの記載と一致することを照合した。この来歴のため、公約レコードの confidence は medium とした。",
+        "source_ids": [
+          "fukuoka-city-mayor-manifesto-2022-go2senkyo-archive",
+          "fukuoka-city-mayor-election-2022-bulletin"
+        ],
+        "location_note": "保存コピーのURLと保存日時、選挙公報の見出し記載に基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。一次資料そのものの保存が新たに見つかれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "令和7年度の登録済み事業「地域ポイント事業」と、公約の文言・内容（地域活動の支援・地域コミュニティづくり）が対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "fukuoka-city-plan-evaluation-goal3-fy2025",
+          "fukuoka-city-budget-briefing-general-affairs-fy2025"
+        ],
+        "location_note": "令和7年度の施策評価・予算資料に基づく登録済み事業レコード。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      },
+      {
+        "field": "progress_state",
+        "statement": "接続事業「地域ポイント事業」は令和7年度の登録済み事業として実施されており、指標「ふくおかポイントの導入校区数」は進行中と記録されている。ただし柱6の中心である感染症対策・防災・防犯の面に対応する登録済み事業はなく、その範囲の進捗は評価できない。",
+        "source_ids": [
+          "fukuoka-city-plan-evaluation-goal3-fy2025",
+          "fukuoka-city-budget-briefing-general-affairs-fy2025"
+        ],
+        "location_note": "令和7年度の施策評価・予算資料に基づく登録済み事業レコード。",
+        "decision": "needs_review",
+        "review_note": "推定接続を前提とする暫定的な in_progress 判定であり、自治体の公式な公約進捗公表に基づくものではない。達成度（達成・一部達成等）の判定は行わない。"
+      }
+    ],
+    "open_questions": [
+      "候補者ホームページ自体の2022年当時の保存コピー、または2022年11月2日の記者発表配布資料が新たに見つかれば、本文を照合する。",
+      "事業との接続は文言・内容に基づく推定であり、自治体が公約と事業の公式な対応付けを公表した場合は接続を見直す。",
+      "感染症対策・防災・防犯の面に対応する事業接続は未実施であり、その範囲の進捗は評価できない。"
+    ],
+    "review_status": "reviewed"
   }
 ]

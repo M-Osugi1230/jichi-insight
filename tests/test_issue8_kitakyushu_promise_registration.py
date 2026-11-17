@@ -110,12 +110,21 @@ def assert_valid(schema_path: str, instance: Any) -> None:
 
 
 def promises() -> list[dict[str, Any]]:
-    return load_json("data/entities/executives/promises.json")
+    # Scoped to this term: the registry also holds other terms' records.
+    return [
+        record
+        for record in load_json("data/entities/executives/promises.json")
+        if record["executive_term_id"] == TERM_ID
+    ]
 
 
 def packets_by_subject() -> dict[str, dict[str, Any]]:
     packets = load_json("data/entities/executives/promise_evidence_packets.json")
-    return {packet["subject_id"]: packet for packet in packets}
+    return {
+        packet["subject_id"]: packet
+        for packet in packets
+        if packet["subject_id"].startswith(TERM_ID)
+    }
 
 
 def test_all_34_items_registered_verbatim_in_document_order() -> None:

@@ -68,29 +68,51 @@
       },
       {
         "field": "candidate_blog_archive",
-        "statement": "選挙当時の候補者本人の公式ブログ（LINEブログ）について、Wayback Machine に2022年10月11日時点（HTTP 200）と2023年3月28日時点の保存コピーが存在することを、availability API と CDX で2026-11-17に確認した。",
+        "statement": "選挙当時の候補者本人の公式ブログ（LINEブログ）の保存コピーを2026-11-17に実ブラウザで確認した。2022年11月の記事は3件（11月17日・11月21日・11月27日）で、公約発表（2022年11月2日）に関する記事は投稿されておらず、出馬表明記事（2022年10月11日保存）にも6本柱の列挙はなかった。",
         "source_ids": [
           "fukuoka-city-mayor-candidate-2022-blog-archive"
         ],
         "location_note": "Wayback Machine の availability API 応答と CDX 検索結果（lineblog.me/takashima の保存一覧）。",
         "decision": "accepted",
-        "review_note": "保存コピーの存在確認のみであり、公約本文の抽出・照合は未実施。2022年10月11日時点の保存は公約発表（2022年11月2日）前のため、公約本文を含むとは限らない。"
+        "review_note": "公式ブログは公約原文の出典とはならないことが確定した。"
       },
       {
         "field": "archive_access",
-        "statement": "2026-11-17の確認時点で Internet Archive が一時的にオフラインとなり、CDX 検索と保存コピー本文の取得で 503/504 が発生したため、保存コピー本文の取得・照合は行えなかった。",
+        "statement": "2026-11-17の確認時点で Internet Archive が一時的にオフライン（503/504）だったが、その後の実ブラウザ確認で保存コピー本文を取得できた。",
         "source_ids": [
           "fukuoka-city-mayor-candidate-2022-blog-archive"
         ],
         "location_note": "web.archive.org の CDX 応答（Internet Archive: Temporarily Offline）および本文取得の失敗記録。",
-        "decision": "needs_review",
-        "review_note": "本文未照合のため公約レコードは作成しない。保存コピー本文の取得は、Internet Archive 復旧後に実ブラウザ等で別途行う。"
+        "decision": "accepted",
+        "review_note": "アクセス障害は解消し、本文確認を完了した。"
+      },
+      {
+        "field": "manifesto_text",
+        "statement": "選挙ドットコム記事（2022年11月16日）の保存コピーが、候補者ホームページに掲載された公約「一緒に福岡の未来へ種をまこう」の全文（6本柱・各柱1段落）を引用していることを確認し、出典として登録した（fukuoka-city-mayor-manifesto-2022-go2senkyo-archive）。見出し6本は選挙公報（fukuoka-city-mayor-election-2022-bulletin）・西日本新聞（2022年11月7日）・いい政治ドットコムの記載と照合した。",
+        "source_ids": [
+          "fukuoka-city-mayor-manifesto-2022-go2senkyo-archive",
+          "fukuoka-city-mayor-election-2022-bulletin"
+        ],
+        "location_note": "保存コピーの記事本文と選挙公報1ページ目「未来へ向けたビジョン」。",
+        "decision": "accepted",
+        "review_note": "原文は候補者ホームページ自体の保存コピーではなく第三者記事経由の引用であるため、公約レコードの confidence は medium とし、来歴を各レコードの証拠パケットに明記した。"
+      },
+      {
+        "field": "result_status",
+        "statement": "公約全文を引用資料と選挙公報の照合により確保できたため、探索結果をsource_registered へ更新し、分割レビューを経て公約レコード6件を作成した。",
+        "source_ids": [
+          "fukuoka-city-mayor-manifesto-2022-go2senkyo-archive",
+          "fukuoka-city-mayor-election-2022-bulletin"
+        ],
+        "location_note": "登録した公約レコード6件と分割レビュー manifesto-review-jp-local-401307-2022。",
+        "decision": "accepted",
+        "review_note": "資料不存在の主張はしていない。記者発表配布資料の保存は未発見のままである。"
       }
     ],
     "open_questions": [
-      "福岡市選挙管理委員会が選挙公報を保存・提供しているか。",
-      "高島宗一郎氏の選挙時公式サイトまたは公約資料の安定した保存先があるか。",
-      "公式ブログ（LINEブログ）の保存コピーに、2022年11月2日発表の公約（6本柱・小項目）の本文が含まれるか。"
+      "福岡市選挙管理委員会が公式サイト上で選挙公報を保存・提供しているか（今回照合に用いた選挙公報PDFは選挙ドットコム公開のコピーである）。",
+      "2022年11月2日の記者発表配布資料そのものの保存が存在するか。",
+      "未接続の公約（柱2・交通）について、事業・計画資料への接続を拡充できるか。"
     ],
     "review_status": "reviewed"
   },

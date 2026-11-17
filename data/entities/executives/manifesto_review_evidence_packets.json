@@ -74,5 +74,48 @@
       "選挙公報候補者欄の分割は、文章型のため引き続き manual_review_required である。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-city-2022-manifesto-review",
+    "subject_type": "manifesto_review",
+    "subject_id": "manifesto-review-jp-local-401307-2022",
+    "claims": [
+      {
+        "field": "source_location",
+        "statement": "公約「一緒に福岡の未来へ種をまこう」は、選挙ドットコム記事（2022年11月16日）の保存コピーに、候補者ホームページの引用として6本柱の見出しと各柱1段落の本文で掲載されている。",
+        "source_ids": [
+          "fukuoka-city-mayor-manifesto-2022-go2senkyo-archive"
+        ],
+        "location_note": "記事の「高島氏は自らのホームページにおいて以下の政策を公表しています」以下の引用部分。",
+        "decision": "accepted",
+        "review_note": "2026-11-17に実ブラウザで保存コピーを開き、全文を原文のまま取得した取得記録に基づく。"
+      },
+      {
+        "field": "segmentation_status",
+        "statement": "柱の見出しと段落の境界が原文上で明確なため、柱を単位に6件へ分割した。段落を文単位に編集分割はしていない。",
+        "source_ids": [
+          "fukuoka-city-mayor-manifesto-2022-go2senkyo-archive"
+        ],
+        "location_note": "引用部分全体。",
+        "decision": "accepted",
+        "review_note": "句読点による推測分割は行っていない（docs/PROMISE_EXTRACTION.md の分割ルール）。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は候補者ホームページの引用（選挙ドットコム記事の保存コピー経由）であり、候補者ホームページ自体の2022年当時の保存コピーは存在しない。見出し6本は選挙公報・西日本新聞（2022年11月7日）・いい政治ドットコムの記載と照合済みである。この来歴のため confidence は medium とした。",
+        "source_ids": [
+          "fukuoka-city-mayor-manifesto-2022-go2senkyo-archive",
+          "fukuoka-city-mayor-election-2022-bulletin"
+        ],
+        "location_note": "保存コピーのURLと保存日時、選挙公報の見出し記載に基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。一次資料そのものの保存が新たに見つかれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "2022年11月2日の記者発表配布資料そのものの保存が存在するか。",
+      "柱3・柱4の見出しは選挙公報等ではより長い形であり、ホームページ掲載時の形と同一かは未確認である。"
+    ],
+    "review_status": "reviewed"
   }
 ]
