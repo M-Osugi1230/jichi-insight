@@ -1,4 +1,9 @@
 {
+  "expansion_rule": {
+    "added_count": 7,
+    "description": "展開分（福岡市の合計10件化）: パイロットの母集団・交差条件（重要施策に事業単位で掲載され、事業単独の金額が確認できること）をそのまま継続した。まず未カバーの目標4〜8について、各目標の最初の施策（施策4-1・5-1・6-1・7-1・8-1）の事業を掲載順にたどり、交差条件を満たす最初の事業を1件ずつ選んだ。施策4-1・5-1では先頭の事業、施策8-1では先頭と2番目の事業が条件を満たさず、経緯をskippedに記録した。次に、既に選定済みの施策の後続事業を目標の表示順にたどり、施策2-1の掲載順2番目の事業と、施策6-1の掲載順2番目の事業を選んだ。施策1-1の後続事業はいずれも交差条件を満たさず（skippedに記録）、施策3-1の後続事業は再掲事業のみであったため、再掲事業は元の施策で扱うものとして再掲先の施策では選定対象としなかった。金額の大小では選んでいない。selectionsの並びは、パイロット3件の後に、展開分7件（目標4〜8の順、続いて後続事業の順）。",
+    "total_count": 10
+  },
   "issue": 7,
   "municipality_id": "jp-local-401307",
   "municipality_key": "fukuoka-city",
@@ -11,7 +16,7 @@
     ]
   },
   "review_status": "reviewed",
-  "scope": "pilot",
+  "scope": "expanded",
   "selection_rule": {
     "description": "市の計画体系の柱である第10次基本計画の分野別目標の表示順に、先頭の3目標（目標1・2・3）を取り、各目標について、最初の施策から、施策評価シート「3 事業の指標・進捗状況・課題・今後の方向性」の掲載順に事業をたどり、母集団の交差条件（当初予算資料の重要施策に事業単位で掲載され、事業単独の金額が確認できること）を満たす先頭の事業を1件ずつ選ぶ。金額の大小では選ばない。接続に確信が持てない事業は選ばず、次の事業に進み、その経緯をskippedに残す。目標4〜8はパイロットの範囲外とし、今後の展開で扱う。",
     "pillars": [
@@ -53,6 +58,83 @@
         "fukuoka-city-plan-evaluation-goal3-fy2025",
         "fukuoka-city-budget-briefing-general-affairs-fy2025"
       ]
+    },
+    {
+      "official_title": "豊かな森づくりの推進",
+      "pillar": "目標4 人と自然が共生し、身近に潤いと安らぎが感じられる",
+      "project_id": "jp-local-401307-project-2025-rich-forest-development",
+      "selection_basis": "目標4の最初の施策である施策4-1の掲載順2番目の事業。先頭の「生物多様性の確保」は交差条件を確認できず除外した（skipped参照）。本事業は当初予算案説明書（その一）の農林水産局のテーマ「豊かな森づくりと森林資源循環利用の推進」に、取組みの対応する形で金額（442,644千円）が掲載されており、交差条件を満たす。",
+      "series_id": "jp-local-401307-project-series-rich-forest-development",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal4-fy2025",
+        "fukuoka-city-budget-proposal-book1-fy2025"
+      ]
+    },
+    {
+      "official_title": "食のユニバーサル対応の推進",
+      "pillar": "目標5 磨かれた魅力に人々が集い、活力に満ちている",
+      "project_id": "jp-local-401307-project-2025-food-universal-hospitality",
+      "selection_basis": "目標5の最初の施策である施策5-1の掲載順2番目の事業。先頭の「海辺を生かした観光振興」は交差条件を確認できず除外した（skipped参照）。本事業は経済観光文化局の当初予算案等説明資料に「食のユニバーサル対応推進事業」として事業単位の金額（22,643千円）が掲載されており、交差条件を満たす。",
+      "series_id": "jp-local-401307-project-series-food-universal-hospitality",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal5-fy2025",
+        "fukuoka-city-budget-briefing-economy-fy2025"
+      ]
+    },
+    {
+      "official_title": "都心部のまちづくりの推進",
+      "pillar": "目標6 都市機能が充実し、多くの人や企業から選ばれている",
+      "project_id": "jp-local-401307-project-2025-downtown-redevelopment-promotion",
+      "selection_basis": "目標6の最初の施策である施策6-1の掲載順先頭の事業。住宅都市みどり局の当初予算案等説明資料の重要施策の主な事業表に同名で事業単位の金額（55,007千円）が掲載されており、交差条件を満たす。",
+      "series_id": "jp-local-401307-project-series-downtown-redevelopment-promotion",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal6-fy2025",
+        "fukuoka-city-budget-briefing-housing-fy2025"
+      ]
+    },
+    {
+      "official_title": "中小企業の経営基盤の強化",
+      "pillar": "目標7 チャレンジ精神と新たな価値の創造により、地域経済が活性化している",
+      "project_id": "jp-local-401307-project-2025-sme-management-base-strengthening",
+      "selection_basis": "目標7の最初の施策である施策7-1の掲載順先頭の事業。当初予算案説明書（その一）の経済観光文化局の項目ア「経営相談・助言及び資金供給の円滑化」に、本事業の取組み（経営相談・専門家派遣による診断助言、融資）と対応する金額（171,456,950千円）が掲載されており、交差条件を満たす。",
+      "series_id": "jp-local-401307-project-series-sme-management-base-strengthening",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal7-fy2025",
+        "fukuoka-city-budget-proposal-book1-fy2025"
+      ]
+    },
+    {
+      "official_title": "ポートセールス事業",
+      "pillar": "目標8 アジアのモデル都市として世界とつながり、国際的な存在感がある",
+      "project_id": "jp-local-401307-project-2025-port-sales-hakata",
+      "selection_basis": "目標8の最初の施策である施策8-1の掲載順3番目の事業。先頭の「博多港の物流・人流機能の強化」と2番目の「博多港におけるカーボンニュートラルポートの形成」は交差条件を確認できず除外した（skipped参照）。本事業は当初予算案説明書（その一）の港湾空港局の項目イ「博多港の振興」に、取組みの対応する金額（150,154千円）が掲載されており、交差条件を満たす。なお本事業には施策評価シートに指標の掲載がない。",
+      "series_id": "jp-local-401307-project-series-port-sales-hakata",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal8-fy2025",
+        "fukuoka-city-budget-proposal-book1-fy2025"
+      ]
+    },
+    {
+      "official_title": "社会全体で子育てを応援する環境づくり",
+      "pillar": "目標2 すべての子ども・若者が夢を描きながら健やかに成長している",
+      "project_id": "jp-local-401307-project-2025-community-childrearing-support",
+      "selection_basis": "パイロットで選定した施策2-1の掲載順2番目の事業（後続事業）。当初予算案説明書（その一）のこども未来局の項目イに同名で金額（36,591,233千円）が掲載されており、交差条件を満たす。同項目には経済的負担軽減の取組みも含めて掲載されている点は証拠パケットに記録した。",
+      "series_id": "jp-local-401307-project-series-community-childrearing-support",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal2-fy2025",
+        "fukuoka-city-budget-proposal-book1-fy2025"
+      ]
+    },
+    {
+      "official_title": "ウォーターフロント再整備の推進",
+      "pillar": "目標6 都市機能が充実し、多くの人や企業から選ばれている",
+      "project_id": "jp-local-401307-project-2025-waterfront-redevelopment",
+      "selection_basis": "本展開で選定した施策6-1の掲載順2番目の事業（後続事業）。住宅都市みどり局の当初予算案等説明資料の重要施策の主な事業表に同名で事業単位の金額（22,000千円）が掲載されており、交差条件を満たす。",
+      "series_id": "jp-local-401307-project-series-waterfront-redevelopment",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal6-fy2025",
+        "fukuoka-city-budget-briefing-housing-fy2025"
+      ]
     }
   ],
   "skipped": [
@@ -64,8 +146,134 @@
         "fukuoka-city-plan-evaluation-goal3-fy2025",
         "fukuoka-city-budget-proposal-book1-fy2025"
       ]
+    },
+    {
+      "official_title": "生物多様性の確保",
+      "pillar": "目標4 人と自然が共生し、身近に潤いと安らぎが感じられる",
+      "reason": "施策4-1の掲載順先頭の事業だが、当初予算案説明書（その一）の環境局の項目は「生き物や自然環境の保全・再生と自然のネットワークの形成」（54,807千円）と「生物多様性の認識の社会への浸透」（58,644千円）に分かれ、本事業の取組みは両項目にまたがる（指標に対応する普及・啓発は後者、自然環境調査は前者に含まれる）ため、事業単独の金額を確定できなかった。環境局の当初予算案等説明資料は市の公式サイトから削除されており、Internet Archiveにも保存がなかった。ルールに従い次の事業（豊かな森づくりの推進）に進んだ。",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal4-fy2025",
+        "fukuoka-city-budget-proposal-book1-fy2025"
+      ]
+    },
+    {
+      "official_title": "海辺を生かした観光振興",
+      "pillar": "目標5 磨かれた魅力に人々が集い、活力に満ちている",
+      "reason": "施策5-1の掲載順先頭の事業だが、経済観光文化局の当初予算案等説明資料の宿泊税充当事業一覧では「海辺を活かした観光振興事業」（213,297千円）と「海辺を活かした観光振興に向けた道づくり」（532,000千円）に分かれて掲載され、さらに海の中道エリアの自転車通行空間整備や海づり公園を活用した北崎地区活性化事業など関連項目との範囲の切り分けが資料上確定できず、事業単独の金額を確定できなかった。ルールに従い次の事業（食のユニバーサル対応の推進）に進んだ。",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal5-fy2025",
+        "fukuoka-city-budget-briefing-economy-fy2025"
+      ]
+    },
+    {
+      "official_title": "博多港の物流・人流機能の強化",
+      "pillar": "目標8 アジアのモデル都市として世界とつながり、国際的な存在感がある",
+      "reason": "施策8-1の掲載順先頭の事業だが、当初予算案説明書（その一）の港湾空港局の項目ア「博多港の機能強化」（1,799,054千円）は、クルーズ客船誘致・受入体制の充実（施策8-1に再掲される別事業）等も含む束ねであり、臨港道路等の整備は「アイランドシティ整備推進」（7,043,644千円）にもまたがるため、事業単独の金額を確定できなかった。港湾空港局の当初予算案等説明資料は取得できなかった（公式サイト404、Internet Archiveにも保存なし）。ルールに従い次の事業に進んだ。",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal8-fy2025",
+        "fukuoka-city-budget-proposal-book1-fy2025"
+      ]
+    },
+    {
+      "official_title": "博多港におけるカーボンニュートラルポートの形成",
+      "pillar": "目標8 アジアのモデル都市として世界とつながり、国際的な存在感がある",
+      "reason": "施策8-1の掲載順2番目の事業だが、当初予算案説明書（その一）の港湾空港局の項目ウ「環境の保全・創造」（1,293,181千円）は、博多湾の環境保全やエコパークゾーンの整備、アイランドシティはばたき公園の整備等を含む束ねであり、本事業の分を分離できなかった。ルールに従い次の事業（ポートセールス事業）に進んだ。",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal8-fy2025",
+        "fukuoka-city-budget-proposal-book1-fy2025"
+      ]
+    },
+    {
+      "official_title": "人権教育・啓発",
+      "pillar": "目標1 一人ひとりが心豊かに暮らし、自分らしく輝いている",
+      "reason": "施策1-1の掲載順2番目の事業だが、市民局のテーマ「人権行政の推進」（519,784千円）は性的マイノリティへの支援等を含む束ねであり、教育委員会所管の人権教育にもまたがるため、事業単独の金額を確定できなかった。市民局の当初予算案等説明資料は取得できなかった（パイロット時の確認どおり）。ルールに従い次の事業に進んだ。",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal1-fy2025",
+        "fukuoka-city-budget-proposal-book1-fy2025"
+      ]
+    },
+    {
+      "official_title": "性的マイノリティへの支援",
+      "pillar": "目標1 一人ひとりが心豊かに暮らし、自分らしく輝いている",
+      "reason": "施策1-1の掲載順3番目の事業だが、市民局のテーマ「人権行政の推進」（519,784千円）の中の一取組みとして掲載されるにとどまり、事業単独の金額が掲載されていないため、交差条件を満たさなかった。ルールに従い次の事業に進んだ。",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal1-fy2025",
+        "fukuoka-city-budget-proposal-book1-fy2025"
+      ]
+    },
+    {
+      "official_title": "バリアフリーのまちづくり",
+      "pillar": "目標1 一人ひとりが心豊かに暮らし、自分らしく輝いている",
+      "reason": "施策1-1の掲載順4番目の事業だが、ユニバーサルデザインタクシーの導入補助（住宅都市みどり局）、生活関連経路のバリアフリー化、地下鉄車両の優先スペース改修（交通局）など複数局の取組みにまたがり、事業単独の金額を確定できなかった。ルールに従い次の事業に進んだ。",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal1-fy2025",
+        "fukuoka-city-budget-proposal-book1-fy2025"
+      ]
+    },
+    {
+      "official_title": "インクルーシブな子ども広場の整備・運営",
+      "pillar": "目標1 一人ひとりが心豊かに暮らし、自分らしく輝いている",
+      "reason": "施策1-1の掲載順5番目の事業だが、当初予算案説明書（その一）では住宅都市みどり局のテーマ「みどり豊かなまちづくり」（12,240,016千円）の中の一取組みとして触れられるにとどまり、事業単独の金額が掲載されていないため、交差条件を満たさなかった。ルールに従い次の事業に進んだ。",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal1-fy2025",
+        "fukuoka-city-budget-proposal-book1-fy2025"
+      ]
+    },
+    {
+      "official_title": "障がい者スポーツセンターの機能強化",
+      "pillar": "目標1 一人ひとりが心豊かに暮らし、自分らしく輝いている",
+      "reason": "施策1-1の掲載順6番目の事業だが、福祉局の項目ウ「誰もがいきいきと暮らせる環境づくり」（2,735,928千円）は、障がい者の工賃向上支援や外出支援、レクリエーション・文化芸術活動等を含む束ねであり、本事業の分を分離できなかった。ルールに従い次の事業に進んだ。",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal1-fy2025",
+        "fukuoka-city-budget-proposal-book1-fy2025"
+      ]
+    },
+    {
+      "official_title": "男女共同参画の推進",
+      "pillar": "目標1 一人ひとりが心豊かに暮らし、自分らしく輝いている",
+      "reason": "施策1-1の「男女共同参画意識の浸透」グループの先頭事業だが、市民局のテーマ「男女共同参画の推進」（269,014千円）は、女性活躍の推進や困難を抱える女性への支援と一体のテーマであり、本事業単独の金額が掲載されていないため、交差条件を満たさなかった。ルールに従い次の事業に進んだ。",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal1-fy2025",
+        "fukuoka-city-budget-proposal-book1-fy2025"
+      ]
+    },
+    {
+      "official_title": "女性活躍の推進",
+      "pillar": "目標1 一人ひとりが心豊かに暮らし、自分らしく輝いている",
+      "reason": "施策1-1の掲載順で男女共同参画の推進に続く事業だが、市民局のテーマ「男女共同参画の推進」（269,014千円）の中に含まれる取組みであり、事業単独の金額が掲載されていないため、交差条件を満たさなかった。ルールに従い次の事業に進んだ。",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal1-fy2025",
+        "fukuoka-city-budget-proposal-book1-fy2025"
+      ]
+    },
+    {
+      "official_title": "困難を抱える女性への支援",
+      "pillar": "目標1 一人ひとりが心豊かに暮らし、自分らしく輝いている",
+      "reason": "施策1-1の掲載順で女性活躍の推進に続く事業だが、市民局のテーマ「男女共同参画の推進」（269,014千円）に含まれる配偶者等からの暴力の防止及び被害者の保護等の取組みと一体であり、事業単独の金額が掲載されていないため、交差条件を満たさなかった。ルールに従い次の事業に進んだ。",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal1-fy2025",
+        "fukuoka-city-budget-proposal-book1-fy2025"
+      ]
+    },
+    {
+      "official_title": "外国人の生活環境づくり",
+      "pillar": "目標1 一人ひとりが心豊かに暮らし、自分らしく輝いている",
+      "reason": "施策1-1の「多文化共生の推進」グループの先頭事業だが、総務企画局のテーマ「国際化の推進」（391,228千円）は姉妹都市交流や国際機関との連携、グローバル人材の育成・定着等を含む束ねであり、同局の当初予算案等説明資料でも、地域の多文化共生（9,000千円）や国際交流財団（117,537千円）など複数の主な事業に分かれるため、事業単独の金額を確定できなかった。ルールに従い次の事業に進んだ。",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal1-fy2025",
+        "fukuoka-city-budget-briefing-general-affairs-fy2025"
+      ]
+    },
+    {
+      "official_title": "医療の国際化",
+      "pillar": "目標1 一人ひとりが心豊かに暮らし、自分らしく輝いている",
+      "reason": "施策1-1の掲載順で外国人の生活環境づくりに続く事業だが、対応する可能性のある保健医療局の項目カ「外国人にもやさしい保健医療環境の推進」（2,055千円）は内容が総論的な記載にとどまり、本事業の中核である医療通訳コールセンターの運営との対応を確定できなかった。ルールに従い、施策1-1の後続事業の確認を終えた。",
+      "source_ids": [
+        "fukuoka-city-plan-evaluation-goal1-fy2025",
+        "fukuoka-city-budget-proposal-book1-fy2025"
+      ]
     }
   ],
   "updated_at": "2026-11-17",
-  "version": "0.1.0"
+  "version": "0.2.0"
 }
