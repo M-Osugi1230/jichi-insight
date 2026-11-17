@@ -6,17 +6,20 @@
     "account_type": "general",
     "stage": "initial_budget",
     "metric": "total_revenue",
-    "metric_label": "一般会計当初予算案",
-    "amount_yen": 1131800000000,
+    "metric_label": "一般会計当初予算・歳入総額",
+    "amount_yen": 1131811000000,
     "value": null,
     "unit": "yen",
     "value_status": "available",
     "period_start": "2026-04-01",
     "period_end": "2027-03-31",
-    "note": "福岡市の公式ページに掲載された令和8年度当初予算案。執行額・決算額ではない。",
+    "note": "令和8年度一般会計当初予算（成立後）の歳入総額。福岡市公報第7233号（別冊）・福岡市告示第101号「予算の要領」第1表による。令和8年3月27日に成立。予算案段階では億円単位の表示（1兆1,318億円）で収録していたものを、成立額の千円単位へ精密化した。執行額・決算額ではない。",
     "review_status": "reviewed",
     "confidence": "high",
-    "sources": ["fukuoka-city-budget-2026-page"]
+    "sources": [
+      "fukuoka-city-gazette-budget-2026-pdf",
+      "fukuoka-city-assembly-newsletter-171"
+    ]
   },
   {
     "id": "jp-local-401307-fiscal-2026-local-tax",
@@ -26,16 +29,40 @@
     "stage": "initial_budget",
     "metric": "local_tax",
     "metric_label": "市税収入",
-    "amount_yen": 426300000000,
+    "amount_yen": 426320009000,
     "value": null,
     "unit": "yen",
     "value_status": "available",
     "period_start": "2026-04-01",
     "period_end": "2027-03-31",
-    "note": "令和8年度当初予算案の市税収入。公式ページでは過去最高と記載。",
+    "note": "令和8年度一般会計当初予算（成立後）の市税収入。福岡市公報第7233号（別冊）・福岡市告示第101号「予算の要領」第1表の款(1)市税。項別8税目の合計と一致する。予算案段階の億円単位表示（4,263億円）から千円単位へ精密化した。",
     "review_status": "reviewed",
     "confidence": "high",
-    "sources": ["fukuoka-city-budget-2026-page"]
+    "sources": [
+      "fukuoka-city-gazette-budget-2026-pdf"
+    ]
+  },
+  {
+    "id": "jp-local-401307-fiscal-2026-total-expenditure",
+    "municipality_id": "jp-local-401307",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算・歳出総額",
+    "amount_yen": 1131811000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "令和8年度一般会計当初予算（成立後）の歳出総額。福岡市公報第7233号（別冊）・福岡市告示第101号「予算の要領」第1表による。歳出の款別16区分の合計と一致する。令和8年3月27日に成立。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukuoka-city-gazette-budget-2026-pdf",
+      "fukuoka-city-assembly-newsletter-171"
+    ]
   },
   {
     "id": "jp-local-401307-fiscal-2024-total-revenue",
@@ -54,7 +81,9 @@
     "note": "公式PDFの千円単位の決算表を円へ換算。資料注記では2025年9月中旬時点の決算見込み。",
     "review_status": "reviewed",
     "confidence": "high",
-    "sources": ["fukuoka-city-settlement-2024-overview-pdf"]
+    "sources": [
+      "fukuoka-city-settlement-2024-overview-pdf"
+    ]
   },
   {
     "id": "jp-local-401307-fiscal-2024-total-expenditure",
@@ -73,6 +102,8 @@
     "note": "公式PDFの千円単位の決算表を円へ換算。資料注記では2025年9月中旬時点の決算見込み。",
     "review_status": "reviewed",
     "confidence": "high",
-    "sources": ["fukuoka-city-settlement-2024-overview-pdf"]
+    "sources": [
+      "fukuoka-city-settlement-2024-overview-pdf"
+    ]
   }
 ]

@@ -1,13 +1,21 @@
 import evidencePackets from "../../../data/reviewed/fukuoka-city/evidence_packets.json";
 import fiscalRecords from "../../../data/reviewed/fukuoka-city/fiscal_records.json";
 import municipality from "../../../data/reviewed/fukuoka-city/municipality.json";
+import settlementEvidencePackets from "../../../data/reviewed/fukuoka-city/settlement_evidence_packets.json";
+import settlementRecords from "../../../data/reviewed/fukuoka-city/settlement_records.json";
 
 import type { EvidencePacket, FiscalRecord } from "./finance";
 
 export const fukuokaCityFinance = {
   municipality,
-  records: fiscalRecords as FiscalRecord[],
-  evidencePackets: evidencePackets as EvidencePacket[],
+  records: [
+    ...(fiscalRecords as FiscalRecord[]),
+    ...(settlementRecords as FiscalRecord[]),
+  ],
+  evidencePackets: [
+    ...(evidencePackets as EvidencePacket[]),
+    ...(settlementEvidencePackets as EvidencePacket[]),
+  ],
 };
 
 export function cityBudgetRecord(metric: string) {
