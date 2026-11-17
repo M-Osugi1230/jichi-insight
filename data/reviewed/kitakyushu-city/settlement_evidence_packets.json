@@ -1,0 +1,1150 @@
+[
+  {
+    "id": "evidence-kitakyushu-2022-ordinary-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2022-ordinary-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計歳入総額は605,369,946千円。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2022-pdf"
+        ],
+        "location_note": "北九州市『令和4年度決算カード』「決算状況」。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。歳入−歳出＝形式収支、形式収支−繰越財源＝実質収支の検算と一致することを確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2022-ordinary-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2022-ordinary-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計歳出総額は601,494,524千円。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2022-pdf"
+        ],
+        "location_note": "北九州市『令和4年度決算カード』「決算状況」。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2022-ordinary-local-tax",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2022-ordinary-local-tax",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計市税収入は179,669,924千円。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2022-pdf"
+        ],
+        "location_note": "北九州市『令和4年度決算カード』「歳入の状況」。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2022-formal-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2022-formal-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計形式収支は3,875,422千円。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2022-pdf"
+        ],
+        "location_note": "北九州市『令和4年度決算カード』「決算状況」。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。検算（歳入−歳出、形式収支−繰越財源）と一致することを確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2022-carryover-resources",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2022-carryover-resources",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計翌年度に繰り越すべき財源は2,127,474千円。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2022-pdf"
+        ],
+        "location_note": "北九州市『令和4年度決算カード』「決算状況」。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。検算（歳入−歳出、形式収支−繰越財源）と一致することを確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2022-real-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2022-real-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計実質収支は1,747,948千円。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2022-pdf"
+        ],
+        "location_note": "北九州市『令和4年度決算カード』「決算状況」。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。検算（歳入−歳出、形式収支−繰越財源）と一致することを確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2022-real-balance-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2022-real-balance-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の実質収支比率は0.6%。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2022-pdf"
+        ],
+        "location_note": "北九州市『令和4年度決算カード』の該当欄。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2022-standard-fiscal-scale",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2022-standard-fiscal-scale",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の標準財政規模は283,019,933千円。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2022-pdf"
+        ],
+        "location_note": "北九州市『令和4年度決算カード』の該当欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2022-expenditure-by-purpose",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2022-expenditure-by-purpose",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計目的別歳出は601,494,524千円。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2022-pdf"
+        ],
+        "location_note": "北九州市『令和4年度決算カード』「目的別歳出の状況」。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。内訳の合計が歳出総額と一致することを検算で確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "目的別の『公債費』は性質別の『公債費』と分類が異なる。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2022-expenditure-by-nature",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2022-expenditure-by-nature",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計性質別歳出は601,494,524千円。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2022-pdf"
+        ],
+        "location_note": "北九州市『令和4年度決算カード』「性質別歳出の状況」。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。義務的経費計・投資的経費計を含む各区分の合計が歳出総額と一致することを検算で確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "性質別の『公債費』は目的別の『公債費』と分類が異なる。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2022-fund-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2022-fund-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度末の普通会計の基金残高（決算カード基準の3区分）は45,507,550千円で、3区分の内訳を併せて収録した。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2022-pdf",
+          "kitakyushu-fiscal-collection-2022-xlsx",
+          "kitakyushu-property-statement-2023-pdf"
+        ],
+        "location_note": "北九州市『令和4年度決算カード』「財政調整基金等現在高の状況」、財政状況資料集『基金残高に係る経年分析』、令和5年度『財産に関する調書』。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。3区分の積み上げが合計と一致することを検算で確認。財産調書基準の財政調整基金残高は別基準であり、レコードの注記に明記して混在させていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "基金残高は決算カード基準（総務省3区分）を正とし、財産に関する調書基準の基金別残高とは混在させていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2022-debt-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2022-debt-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計地方債残高は1,014,124,299千円。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2022-pdf"
+        ],
+        "location_note": "北九州市『令和4年度決算カード』「地方債現在高の状況」。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2022-current-balance-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2022-current-balance-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の経常収支比率は99.3%。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2022-pdf"
+        ],
+        "location_note": "北九州市『令和4年度決算カード』の該当欄。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2022-current-balance-ratio-excluding-temporary-bonds",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2022-current-balance-ratio-excluding-temporary-bonds",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の経常収支比率（減収補塡債（特例分）等及び臨時財政対策債を除く）は106.1%。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2022-pdf"
+        ],
+        "location_note": "北九州市『令和4年度決算カード』の該当欄。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。令和5年度分は未取得のため収録していない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "令和5年度の同指標は決算カードが画像形式で取得できなかったため収録していない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2022-real-debt-service-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2022-real-debt-service-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の実質公債費比率は10.4%。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2022-pdf",
+          "kitakyushu-fiscal-collection-2022-xlsx"
+        ],
+        "location_note": "北九州市『令和4年度決算カード』および財政状況資料集の該当欄（健全化判断比率の公表資料は画像形式）。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2022-future-burden-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2022-future-burden-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の将来負担比率は147.2%。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2022-pdf",
+          "kitakyushu-fiscal-collection-2022-xlsx"
+        ],
+        "location_note": "北九州市『令和4年度決算カード』および財政状況資料集の該当欄（健全化判断比率の公表資料は画像形式）。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2022-fiscal-strength-index",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2022-fiscal-strength-index",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の財政力指数は0.7。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2022-pdf"
+        ],
+        "location_note": "北九州市『令和4年度決算カード』の該当欄。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2022-population",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2022-population",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の住民基本台帳人口（令和5年1月1日現在）は929,396人。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2022-pdf"
+        ],
+        "location_note": "北九州市『令和4年度決算カード』の該当欄。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2023-ordinary-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2023-ordinary-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計歳入総額は617,806,572千円。",
+        "source_ids": [
+          "kitakyushu-fiscal-collection-2023-xlsx",
+          "kitakyushu-settlement-card-2024-pdf"
+        ],
+        "location_note": "北九州市の令和5年度財政状況資料集『普通会計の状況』および令和6年度決算カードの前年度欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。歳入−歳出＝形式収支、形式収支−繰越財源＝実質収支の検算と一致することを確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2023-ordinary-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2023-ordinary-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計歳出総額は614,040,979千円。",
+        "source_ids": [
+          "kitakyushu-fiscal-collection-2023-xlsx",
+          "kitakyushu-settlement-card-2024-pdf"
+        ],
+        "location_note": "北九州市の令和5年度財政状況資料集『普通会計の状況』および令和6年度決算カードの前年度欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2023-ordinary-local-tax",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2023-ordinary-local-tax",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計市税収入は181,081,993千円。",
+        "source_ids": [
+          "kitakyushu-fiscal-collection-2023-xlsx",
+          "kitakyushu-settlement-card-2024-pdf"
+        ],
+        "location_note": "北九州市の令和5年度財政状況資料集『普通会計の状況』および令和6年度決算カードの前年度欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2023-formal-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2023-formal-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計形式収支は3,765,593千円。",
+        "source_ids": [
+          "kitakyushu-fiscal-collection-2023-xlsx",
+          "kitakyushu-settlement-card-2024-pdf"
+        ],
+        "location_note": "北九州市の令和5年度財政状況資料集『普通会計の状況』および令和6年度決算カードの前年度欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。検算（歳入−歳出、形式収支−繰越財源）と一致することを確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2023-carryover-resources",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2023-carryover-resources",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計翌年度に繰り越すべき財源は1,537,293千円。",
+        "source_ids": [
+          "kitakyushu-fiscal-collection-2023-xlsx",
+          "kitakyushu-settlement-card-2024-pdf"
+        ],
+        "location_note": "北九州市の令和5年度財政状況資料集『普通会計の状況』および令和6年度決算カードの前年度欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。検算（歳入−歳出、形式収支−繰越財源）と一致することを確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2023-real-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2023-real-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計実質収支は2,228,300千円。",
+        "source_ids": [
+          "kitakyushu-fiscal-collection-2023-xlsx",
+          "kitakyushu-settlement-card-2024-pdf"
+        ],
+        "location_note": "北九州市の令和5年度財政状況資料集『普通会計の状況』および令和6年度決算カードの前年度欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。検算（歳入−歳出、形式収支−繰越財源）と一致することを確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2023-real-balance-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2023-real-balance-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の実質収支比率は0.8%。",
+        "source_ids": [
+          "kitakyushu-fiscal-collection-2023-xlsx",
+          "kitakyushu-settlement-card-2024-pdf"
+        ],
+        "location_note": "北九州市の令和5年度財政状況資料集『普通会計の状況』および令和6年度決算カードの前年度欄。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2023-standard-fiscal-scale",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2023-standard-fiscal-scale",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の標準財政規模は287,670,566千円。",
+        "source_ids": [
+          "kitakyushu-fiscal-collection-2023-xlsx",
+          "kitakyushu-settlement-card-2024-pdf"
+        ],
+        "location_note": "北九州市の令和5年度財政状況資料集『普通会計の状況』および令和6年度決算カードの前年度欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2023-expenditure-by-purpose",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2023-expenditure-by-purpose",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計目的別歳出は614,040,979千円。",
+        "source_ids": [
+          "kitakyushu-fiscal-collection-2023-xlsx"
+        ],
+        "location_note": "北九州市の令和5年度財政状況資料集『普通会計の状況』および令和6年度決算カードの前年度欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。内訳の合計が歳出総額と一致することを検算で確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "目的別の『公債費』は性質別の『公債費』と分類が異なる。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2023-expenditure-by-nature",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2023-expenditure-by-nature",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計性質別歳出は614,040,979千円。",
+        "source_ids": [
+          "kitakyushu-fiscal-collection-2023-xlsx"
+        ],
+        "location_note": "北九州市の令和5年度財政状況資料集『普通会計の状況』および令和6年度決算カードの前年度欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。義務的経費計・投資的経費計を含む各区分の合計が歳出総額と一致することを検算で確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "性質別の『公債費』は目的別の『公債費』と分類が異なる。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2023-fund-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2023-fund-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度末の普通会計の基金残高（決算カード基準の3区分）は50,719,235千円で、3区分の内訳を併せて収録した。",
+        "source_ids": [
+          "kitakyushu-fiscal-collection-2023-xlsx",
+          "kitakyushu-settlement-card-2024-pdf",
+          "kitakyushu-property-statement-2023-pdf"
+        ],
+        "location_note": "北九州市の令和5年度財政状況資料集『基金残高に係る経年分析』、令和6年度決算カードの前年度欄、令和5年度『財産に関する調書』。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。3区分の積み上げが合計と一致することを検算で確認。財産調書基準の財政調整基金残高は別基準であり、レコードの注記に明記して混在させていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "基金残高は決算カード基準（総務省3区分）を正とし、財産に関する調書基準の基金別残高とは混在させていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2023-debt-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2023-debt-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計地方債残高は1,008,758,183千円。",
+        "source_ids": [
+          "kitakyushu-fiscal-collection-2023-xlsx",
+          "kitakyushu-settlement-card-2024-pdf"
+        ],
+        "location_note": "北九州市の令和5年度財政状況資料集『普通会計の状況』および令和6年度決算カードの前年度欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2023-current-balance-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2023-current-balance-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の経常収支比率は97.1%。",
+        "source_ids": [
+          "kitakyushu-fiscal-collection-2023-xlsx",
+          "kitakyushu-settlement-card-2024-pdf"
+        ],
+        "location_note": "北九州市の令和5年度財政状況資料集『普通会計の状況』および令和6年度決算カードの前年度欄。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2023-real-debt-service-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2023-real-debt-service-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の実質公債費比率は10.1%。",
+        "source_ids": [
+          "kitakyushu-soundness-2023-pdf",
+          "kitakyushu-settlement-card-2024-pdf"
+        ],
+        "location_note": "北九州市『健全化判断比率等の状況（令和5年度）』。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2023-future-burden-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2023-future-burden-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の将来負担比率は143.2%。",
+        "source_ids": [
+          "kitakyushu-soundness-2023-pdf",
+          "kitakyushu-settlement-card-2024-pdf"
+        ],
+        "location_note": "北九州市『健全化判断比率等の状況（令和5年度）』。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2023-fiscal-strength-index",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2023-fiscal-strength-index",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の財政力指数は0.69。",
+        "source_ids": [
+          "kitakyushu-fiscal-collection-2023-xlsx",
+          "kitakyushu-settlement-card-2024-pdf"
+        ],
+        "location_note": "北九州市の令和5年度財政状況資料集『普通会計の状況』および令和6年度決算カードの前年度欄。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2023-population",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2023-population",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の住民基本台帳人口（令和6年1月1日現在）は921,241人。",
+        "source_ids": [
+          "kitakyushu-fiscal-collection-2023-xlsx",
+          "kitakyushu-settlement-card-2024-pdf"
+        ],
+        "location_note": "北九州市の令和5年度財政状況資料集『普通会計の状況』および令和6年度決算カードの前年度欄。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2024-ordinary-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2024-ordinary-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計歳入総額は626,051,961千円。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2024-pdf"
+        ],
+        "location_note": "北九州市『令和6年度決算カード』「決算状況」。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。歳入−歳出＝形式収支、形式収支−繰越財源＝実質収支の検算と一致することを確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2024-ordinary-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2024-ordinary-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計歳出総額は621,430,401千円。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2024-pdf"
+        ],
+        "location_note": "北九州市『令和6年度決算カード』「決算状況」。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2024-ordinary-local-tax",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2024-ordinary-local-tax",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計市税収入は180,177,794千円。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2024-pdf"
+        ],
+        "location_note": "北九州市『令和6年度決算カード』「歳入の状況」。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2024-formal-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2024-formal-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計形式収支は4,621,560千円。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2024-pdf"
+        ],
+        "location_note": "北九州市『令和6年度決算カード』「決算状況」。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。検算（歳入−歳出、形式収支−繰越財源）と一致することを確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2024-carryover-resources",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2024-carryover-resources",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計翌年度に繰り越すべき財源は2,738,684千円。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2024-pdf"
+        ],
+        "location_note": "北九州市『令和6年度決算カード』「決算状況」。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。検算（歳入−歳出、形式収支−繰越財源）と一致することを確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2024-real-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2024-real-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計実質収支は1,882,876千円。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2024-pdf"
+        ],
+        "location_note": "北九州市『令和6年度決算カード』「決算状況」。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。検算（歳入−歳出、形式収支−繰越財源）と一致することを確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2024-real-balance-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2024-real-balance-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の実質収支比率は0.6%。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2024-pdf"
+        ],
+        "location_note": "北九州市『令和6年度決算カード』の該当欄。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2024-standard-fiscal-scale",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2024-standard-fiscal-scale",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の標準財政規模は292,156,624千円。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2024-pdf"
+        ],
+        "location_note": "北九州市『令和6年度決算カード』の該当欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2024-expenditure-by-purpose",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2024-expenditure-by-purpose",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計目的別歳出は621,430,401千円。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2024-pdf"
+        ],
+        "location_note": "北九州市『令和6年度決算カード』「目的別歳出の状況」。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。内訳の合計が歳出総額と一致することを検算で確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "目的別の『公債費』は性質別の『公債費』と分類が異なる。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2024-expenditure-by-nature",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2024-expenditure-by-nature",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計性質別歳出は621,430,401千円。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2024-pdf"
+        ],
+        "location_note": "北九州市『令和6年度決算カード』「性質別歳出の状況」。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。義務的経費計・投資的経費計を含む各区分の合計が歳出総額と一致することを検算で確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "性質別の『公債費』は目的別の『公債費』と分類が異なる。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2024-fund-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2024-fund-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度末の普通会計の基金残高（決算カード基準の3区分）は45,380,233千円で、3区分の内訳を併せて収録した。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2024-pdf",
+          "kitakyushu-fiscal-collection-2024-xlsx",
+          "kitakyushu-property-statement-2024-pdf"
+        ],
+        "location_note": "北九州市『令和6年度決算カード』「財政調整基金等現在高の状況」、財政状況資料集『基金残高に係る経年分析』、決算書附属『財産に関する調書』。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。3区分の積み上げが合計と一致することを検算で確認。財産調書基準の財政調整基金残高は別基準であり、レコードの注記に明記して混在させていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "基金残高は決算カード基準（総務省3区分）を正とし、財産に関する調書基準の基金別残高とは混在させていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2024-debt-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2024-debt-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計地方債残高は1,002,178,426千円。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2024-pdf"
+        ],
+        "location_note": "北九州市『令和6年度決算カード』「地方債現在高の状況」。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2024-current-balance-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2024-current-balance-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の経常収支比率は99.3%。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2024-pdf"
+        ],
+        "location_note": "北九州市『令和6年度決算カード』の該当欄。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2024-current-balance-ratio-excluding-temporary-bonds",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2024-current-balance-ratio-excluding-temporary-bonds",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の経常収支比率（減収補塡債（特例分）等及び臨時財政対策債を除く）は101.3%。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2024-pdf"
+        ],
+        "location_note": "北九州市『令和6年度決算カード』の該当欄。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。令和5年度分は未取得のため収録していない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "令和5年度の同指標は決算カードが画像形式で取得できなかったため収録していない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2024-real-debt-service-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2024-real-debt-service-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の実質公債費比率は10.6%。",
+        "source_ids": [
+          "kitakyushu-soundness-2024-pdf",
+          "kitakyushu-settlement-card-2024-pdf"
+        ],
+        "location_note": "北九州市『健全化判断比率等の状況（令和6年度）』。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2024-future-burden-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2024-future-burden-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の将来負担比率は143.0%。",
+        "source_ids": [
+          "kitakyushu-soundness-2024-pdf",
+          "kitakyushu-settlement-card-2024-pdf"
+        ],
+        "location_note": "北九州市『健全化判断比率等の状況（令和6年度）』。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2024-fiscal-strength-index",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2024-fiscal-strength-index",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の財政力指数は0.69。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2024-pdf"
+        ],
+        "location_note": "北九州市『令和6年度決算カード』の該当欄。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kitakyushu-2024-population",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-401005-fiscal-2024-population",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の住民基本台帳人口（令和7年1月1日現在）は913,577人。",
+        "source_ids": [
+          "kitakyushu-settlement-card-2024-pdf"
+        ],
+        "location_note": "北九州市『令和6年度決算カード』の該当欄。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  }
+]
