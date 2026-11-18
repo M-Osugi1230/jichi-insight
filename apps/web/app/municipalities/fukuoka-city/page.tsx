@@ -174,6 +174,7 @@ export default function FukuokaCityPage() {
         </section>
 
         <nav className={styles.bottomNav} aria-label="関連ページ">
+          <Link href="/projects">重点事業・予算とKPI</Link>
           <Link href="/sources#fukuoka-city">福岡市の公式資料一覧</Link>
           <Link href="/data-quality">データ品質</Link>
           <Link href="/municipalities">自治体一覧</Link>
