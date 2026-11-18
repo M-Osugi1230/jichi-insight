@@ -1,5 +1,5 @@
 {
-  "version": "0.7.0",
+  "version": "0.8.0",
   "updated_at": "2026-11-19",
   "scope": "pilot",
   "records": [
@@ -212,6 +212,48 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "北九州市選挙管理委員会の報道発表資料。冒頭に「令和9年2月19日任期満了に伴う、北九州市長選挙の期日等を決定するため」と明記し、現市長の任期満了日が令和9年2月19日であることを示す。福岡県『市町村の長及び議員の任期満了日一覧』（fukuoka-pref-term-expiry-list-2026）でも同日を確認した。2026-11-19にPDF本文を直接確認した。"
+    },
+    {
+      "id": "fukuoka-pref-governor-election-2025-execution-gazette",
+      "municipality_key": "fukuoka-prefecture",
+      "organization": "福岡県選挙管理委員会",
+      "category": "election",
+      "title": "福岡県公報 令和7年3月6日号外 福岡県選挙管理委員会告示第9号（福岡県知事選挙の執行）",
+      "url": "https://www.pref.fukuoka.lg.jp/uploaded/attachment/248970.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "「知事の任期満了による福岡県知事選挙を次のとおり行う」とし、選挙の期日を令和7年3月23日と定めた告示。2025年知事選挙が任期満了による選挙として、満了日前に執行されたことを示す。2026-11-19にPDF本文を直接確認した。"
+    },
+    {
+      "id": "public-offices-election-act",
+      "municipality_key": "fukuoka-prefecture",
+      "organization": "デジタル庁（e-Gov法令検索）",
+      "category": "election",
+      "title": "公職選挙法（昭和25年法律第100号）第259条（地方公共団体の長の任期の起算）",
+      "url": "https://laws.e-gov.go.jp/law/325AC1000000100",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "第259条は、地方公共団体の長の任期は選挙の日から起算すること、ただし任期満了による選挙が任期満了の日前に行われた場合において前任の長が任期満了の日まで在任したときは、前任者の任期満了の日の翌日から起算することを定める。任期4年は地方自治法第140条第1項。2026-11-19にe-Gov法令検索で法令ページを確認した。"
+    },
+    {
+      "id": "fukuoka-pref-governor-election-2021-proclamation",
+      "municipality_key": "fukuoka-prefecture",
+      "organization": "福岡県選挙管理委員会",
+      "category": "election",
+      "title": "福岡県公報 令和3年4月（4月14日）選挙管理委員会告示第76号（福岡県知事選挙における当選人の住所及び氏名）",
+      "url": "https://www.pref.fukuoka.lg.jp/contents/kenkouhou3-4.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "福岡県公報の公式索引ページ。令和3年4月14日の掲載として、選挙管理委員会告示第76号「福岡県知事選挙における当選人の住所及び氏名」を収録する。2021年知事選挙の当選告示が2021年4月14日に行われたことを示す。この日は当選の効力が発生し知事が就任した日であり、公職選挙法第259条による任期の起算日（選挙の日＝2021年4月11日）ではない。2026-11-19に索引ページで確認した。"
     }
   ]
 }
