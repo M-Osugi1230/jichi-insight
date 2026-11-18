@@ -26,7 +26,8 @@ export function ProjectReview({area, record, kpis}:{area:string;record:ProjectRe
   const end = record.official_evaluation?.direction;
   return <section className={styles.section}>
     <p className={styles.meta}>Reviewed / {record.fiscal_year}年度 / 対象：{show(record.target_population)} / 担当：{show(record.responsible_department)} / 上位施策：{show(record.parent_policy)}</p>
-    <div className={styles.detail}><h2>目的と対象</h2><p>{record.purpose}</p><p className={styles.meta}>計画・首長公約との接続：関連候補は登録されていますが、確定的な因果接続としては評価していません。</p></div>
+    <div className={styles.detail}><h2>目的と対象</h2><p>{record.purpose}</p><p className={styles.meta}>首長公約との接続：{record.related_promise_ids.length ? "関連候補（自動推定を含む・要確認）。確信度：低（inferred）／証拠パケット：needs_review。確定的な因果接続や達成判定ではありません。" : "接続公約なし（未着手・未達を意味しません）"}</p>
+      {record.related_promise_ids.length ? <ul>{record.related_promise_ids.map(id=><li key={id}><Link className={styles.link} href="/promises">公約原文を確認</Link> <span className={styles.meta}>（公約ID: {id}、接続レビュー未完了）</span></li>)}</ul> : null}</div>
     <div className={styles.detail}><h2>予算から成果までの記録</h2>
       <ol className={styles.lifecycle}>
         <li><strong>計画・公約との接続</strong>要確認。関連性の自動推定を含み、確定済みの接続ではありません。</li>
