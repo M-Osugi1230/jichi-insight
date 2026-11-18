@@ -21,7 +21,7 @@ function display(record: FiscalRecord | undefined): string {
   if (record.unit === "yen") return yen(record.amount_yen);
   if (record.value === null) return "未収録";
   if (record.unit === "percent") return `${record.value}%`;
-  if (record.unit === "people") return `${record.value.toLocaleString("ja-JP")}人`;
+  if ((record.unit === "people" || record.unit === "persons")) return `${record.value.toLocaleString("ja-JP")}人`;
   return `${record.value.toLocaleString("ja-JP")}${record.unit === "ratio" || record.unit === "index" ? "" : ` ${record.unit}`}`;
 }
 function SourceLinks({ records }: { records: (FiscalRecord | undefined)[] }) {
@@ -44,14 +44,25 @@ function YearRows({ records, metricKeys }: { records: FiscalRecord[]; metricKeys
 function Breakdown({ records, metric, title }: { records: FiscalRecord[]; metric: string; title: string }) {
   const record = records.find(r => r.fiscal_year === 2024 && r.metric === metric);
   const topLevel = record ? breakdownChildren(record, null) : [];
+  const rows: { item: (typeof topLevel)[number]; depth: number }[] = [];
+  function appendRows(items: typeof topLevel, depth: number, visited: Set<string>) {
+    for (const item of items) {
+      if (visited.has(item.key)) continue;
+      rows.push({ item, depth });
+      const nextVisited = new Set(visited);
+      nextVisited.add(item.key);
+      if (record) appendRows(breakdownChildren(record, item.key), depth + 1, nextVisited);
+    }
+  }
+  appendRows(topLevel, 0, new Set());
   return <section className={styles.subsection}>
     <h3>{title}（2024年度・普通会計決算）</h3>
     {!topLevel.length ? <p>内訳は未収録です。</p> :
       <div className={styles.scroll}><table className={styles.table}><thead><tr><th>区分</th><th>決算額</th></tr></thead><tbody>
-        {topLevel.map(item => <tr key={item.key}><th scope="row">{item.label}</th><td>{yen(item.amount_yen)}</td></tr>)}
+        {rows.map(({ item, depth }) => <tr key={item.key}><th scope="row" style={{ paddingLeft: 12 + depth * 18 }}>{depth > 0 ? "内訳： " : ""}{item.label}</th><td>{yen(item.amount_yen)}</td></tr>)}
       </tbody></table></div>}
     {record && breakdownChildren(record, null).some(item => breakdownChildren(record, item.key).length > 0) ?
-      <p className={styles.muted}>内数（「うち」の項目）は二重計上を避けるため上位区分の額に加算していません。</p> : null}
+      <p className={styles.muted}>字下げした内訳・内数（「うち」）は上位区分に含まれ、二重計上を避けるため上位区分の額に加算していません。</p> : null}
     <SourceLinks records={[record]} />
   </section>;
 }
