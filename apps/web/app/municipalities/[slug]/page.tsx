@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import { BreadcrumbTrail } from "@/components/BreadcrumbTrail";
 import { PageIntro } from "@/components/PageIntro";
 import { CityOverview } from "@/components/CityOverview";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -243,6 +244,7 @@ export default async function Phase15CityPage({
       <SiteHeader />
       <main id="main-content">
       <div className={`pageShell ${styles.cityShell}`}>
+        <BreadcrumbTrail items={[{name:"ホーム",href:"/"},{name:"自治体一覧",href:"/municipalities"},{name:city.name,href:`/municipalities/${city.slug}`}]} />
         <PageIntro
           eyebrow={`${city.prefecture} / ${city.officialCode} / 公式資料レビュー`}
           title={`${city.name}の政策・予算・決算`}
