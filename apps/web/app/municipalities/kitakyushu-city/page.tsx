@@ -66,6 +66,11 @@ export default function KitakyushuCityPage() {
           </dl>
         </section>
 
+        <section className={styles.scope} aria-label="自治体のプロフィール">
+          <div><p className="eyebrow">Municipality profile</p><h2>この自治体について</h2></div>
+          <div><p>北九州市は1963年に門司・小倉・若松・八幡・戸畑の5市が合併して誕生した、九州初の政令指定都市です。</p><p>出典：<a href="https://www.city.kitakyushu.lg.jp/category/90000752.html" target="_blank" rel="noopener noreferrer">北九州市公式「7区の紹介」</a>（公式プロフィール。財政データの年度とは別の説明情報）</p></div>
+        </section>
+
         <section className={styles.scope} aria-labelledby="kitakyushu-scope-title">
           <div>
             <p className="eyebrow">Scope</p>
