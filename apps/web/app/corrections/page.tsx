@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     "Jichi Insightの事実訂正、根拠資料の追加、反論、変更履歴に関する公開手続。",
   alternates: {
-    canonical: "https://m-osugi1230.github.io/jichi-insight/corrections/",
+    canonical: "https://jimieru.com/corrections/",
   },
 };
 

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     "議会の議案、採決、費用、政務活動費、視察・海外活動を、役割と一次資料に基づいて整理します。",
   alternates: {
-    canonical: "https://m-osugi1230.github.io/jichi-insight/assemblies/",
+    canonical: "https://jimieru.com/assemblies/",
   },
 };
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-BASE_URL="${JICHI_PRODUCTION_URL:-https://m-osugi1230.github.io/jichi-insight}"
+BASE_URL="${JICHI_PRODUCTION_URL:-https://jimieru.com}"
 REPORT="${JICHI_SMOKE_REPORT:-production-smoke-report.txt}"
 INDEX_FILE="$(mktemp)"
 CONTENT_FILE="$(mktemp)"
@@ -74,7 +74,7 @@ for attempt in $(seq 1 18); do
     && grep --quiet --fixed-strings 'Jichi Insight' "$INDEX_FILE" \
     && grep --quiet --fixed-strings '自治体を検索' "$INDEX_FILE" \
     && grep --quiet --fixed-strings "${REVIEWED_TOTAL}件" "$INDEX_FILE" \
-    && grep --quiet --fixed-strings '/jichi-insight/_next/' "$INDEX_FILE"; then
+    && grep --quiet --fixed-strings '/_next/' "$INDEX_FILE"; then
     ready=true
     break
   fi

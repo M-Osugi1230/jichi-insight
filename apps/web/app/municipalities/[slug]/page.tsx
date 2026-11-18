@@ -19,7 +19,7 @@ import { defaultOgImages } from "@/lib/pageMetadata";
 
 import styles from "./page.module.css";
 
-const siteUrl = "https://m-osugi1230.github.io/jichi-insight";
+const siteUrl = "https://jimieru.com";
 const sourcePrefix = "https://github.com/M-Osugi1230/jichi-insight/blob/main/";
 
 export const dynamic = "force-static";

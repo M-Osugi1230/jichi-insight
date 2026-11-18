@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   description:
     `全国47都道府県、${reviewedCoverageStats.reviewedRecords.toLocaleString("ja-JP")}件の確認済み目標・指標を検索し、実績・予算・事業の接続状況を確認できます。`,
   alternates: {
-    canonical: "https://m-osugi1230.github.io/jichi-insight/municipalities/",
+    canonical: "https://jimieru.com/municipalities/",
   },
 };
 

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     "なぜJichi Insightが必要か。分断された自治体の公開資料を、目標・支出・実行・成果のつながりとして住民が自分で判断できる根拠へ変える目的と、「しないこと」を説明します。",
   alternates: {
-    canonical: "https://m-osugi1230.github.io/jichi-insight/about/",
+    canonical: "https://jimieru.com/about/",
   },
 };
 

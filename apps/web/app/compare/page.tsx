@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description:
     "福岡市と北九州市の同年度・同会計・同段階の財政値だけを、比較条件と限界を明示して並べます。",
   alternates: {
-    canonical: "https://m-osugi1230.github.io/jichi-insight/compare/",
+    canonical: "https://jimieru.com/compare/",
   },
 };
 

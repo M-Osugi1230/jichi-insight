@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   description:
     "北海道・宮城県・福岡県の政策体系、数値目標、年度実績、未接続範囲を一次資料から確認できます。",
   alternates: {
-    canonical: "https://m-osugi1230.github.io/jichi-insight/policies/",
+    canonical: "https://jimieru.com/policies/",
   },
 };
 

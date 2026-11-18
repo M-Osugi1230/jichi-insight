@@ -36,7 +36,7 @@ jobs:
         id: verify
         continue-on-error: true
         env:
-          SITE_ROOT: https://m-osugi1230.github.io/jichi-insight
+          SITE_ROOT: https://jimieru.com
           DEPLOYED_SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
         run: |
           set -uo pipefail
@@ -51,7 +51,7 @@ jobs:
             miyagi_targets=false; grep -Eq '全(<!-- -->)?128(<!-- -->)?目標' /tmp/miyagi.html 2>/dev/null && miyagi_targets=true
             miyagi_actuals=false; grep -Eq '508(<!-- -->)?件の実績' /tmp/miyagi.html 2>/dev/null && miyagi_actuals=true
             robots_sitemap=false; grep -Fq 'Sitemap:' /tmp/robots.txt 2>/dev/null && robots_sitemap=true
-            sitemap_miyagi=false; grep -Fq '/jichi-insight/municipalities/miyagi' /tmp/sitemap.xml 2>/dev/null && sitemap_miyagi=true
+            sitemap_miyagi=false; grep -Fq '/municipalities/miyagi' /tmp/sitemap.xml 2>/dev/null && sitemap_miyagi=true
             printf 'attempt=%s home=%s miyagi=%s robots=%s sitemap=%s home_copy=%s miyagi_targets=%s miyagi_actuals=%s robots_sitemap=%s sitemap_miyagi=%s\n' \
               "$attempt" "$home_code" "$miyagi_code" "$robots_code" "$sitemap_code" "$home_copy" "$miyagi_targets" "$miyagi_actuals" "$robots_sitemap" "$sitemap_miyagi" | tee -a /tmp/verification.log
             if [ "$home_code" = 200 ] && [ "$miyagi_code" = 200 ] && [ "$robots_code" = 200 ] && [ "$sitemap_code" = 200 ] \
@@ -85,7 +85,7 @@ jobs:
               json.dumps(
                   {
                       'status': os.environ['STATUS'],
-                      'site_url': 'https://m-osugi1230.github.io/jichi-insight/',
+                      'site_url': 'https://jimieru.com/',
                       'deployed_commit_sha': os.environ['DEPLOYED_SHA'],
                       'verified_at': os.environ['VERIFIED_AT'],
                       'deployment_workflow_run_url': os.environ['WORKFLOW_RUN_URL'],

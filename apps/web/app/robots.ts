@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const siteUrl = "https://m-osugi1230.github.io/jichi-insight";
+const siteUrl = "https://jimieru.com";
 
 export const dynamic = "force-static";
 

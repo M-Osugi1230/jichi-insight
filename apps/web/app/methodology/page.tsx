@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     "事実・比較・解釈・評価の4層を混ぜない読み方、自治体・首長・議会の役割別の見方、データの深さ7段階、そして人物の単一総合点を出さない方針を説明します。",
   alternates: {
-    canonical: "https://m-osugi1230.github.io/jichi-insight/methodology/",
+    canonical: "https://jimieru.com/methodology/",
   },
 };
 
