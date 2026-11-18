@@ -7,7 +7,9 @@
       {
         "field": "report_status",
         "statement": "2026年3月30日から4月1日の慶尚南道友好訪問団は公式一覧に掲載されているが、2026年7月15日時点で報告書リンクは掲載されていない。",
-        "source_ids": ["fukuoka-pref-overseas-reports"],
+        "source_ids": [
+          "fukuoka-pref-overseas-reports"
+        ],
         "location_note": "活動報告書一覧の項番1。",
         "decision": "accepted",
         "review_note": "一覧ページは未掲載資料を順次掲載すると説明しているため、将来の更新対象。"
@@ -15,17 +17,49 @@
       {
         "field": "cost_status",
         "statement": "確認した公式一覧では総費用・1人当たり費用を確認できない。",
-        "source_ids": ["fukuoka-pref-overseas-reports"],
+        "source_ids": [
+          "fukuoka-pref-overseas-reports"
+        ],
         "location_note": "活動報告書一覧。",
         "decision": "accepted",
         "review_note": "費用が存在しないという意味ではなく、確認した公開資料で見つからない状態。"
+      },
+      {
+        "field": "report_status",
+        "statement": "2026年11月18日の再確認で、公式一覧に報告書PDFが掲載されていることを確認した。",
+        "source_ids": [
+          "fukuoka-pref-overseas-reports",
+          "fukuoka-pref-overseas-report-2026-gyeongsangnam-do"
+        ],
+        "location_note": "活動報告書一覧の報告書欄。",
+        "decision": "accepted",
+        "review_note": "2026年7月15日時点の未掲載という記録は当時の状態として保持し、公表の進展をここに追加記録する。"
+      },
+      {
+        "field": "cost_status",
+        "statement": "2026年11月18日の再確認で、経費の内訳が公表され、総経費は2,490千円と印字されていることを確認した（千円単位・四捨五入の公表値）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-cost-2026-gyeongsangnam-do"
+        ],
+        "location_note": "経費の内訳の「総経費」欄。",
+        "decision": "accepted",
+        "review_note": "経費の内訳に記載された訪問団の人数は報告書の参加者名簿と一致せず、内訳の対象範囲は資料からは特定できない。"
+      },
+      {
+        "field": "participants",
+        "statement": "報告書の訪問団（参加者）欄に参加者の氏名・役職が掲載されている。",
+        "source_ids": [
+          "fukuoka-pref-overseas-report-2026-gyeongsangnam-do"
+        ],
+        "location_note": "報告書の訪問団（参加者）欄。",
+        "decision": "accepted",
+        "review_note": "記載どおり転記した。随行職員は人数のみの掲載のため氏名非掲載として記録した。"
       }
     ],
     "open_questions": [
-      "参加者名・人数",
-      "総費用・1人当たり費用・宿泊費・航空運賃",
+      "参加者ごとの費用負担区分",
       "契約方式と契約先",
-      "訪問後の報告書と政策反映"
+      "報告書の所見・提案が議案・質問・予算・事業へ反映されたか"
     ],
     "review_status": "reviewed"
   },
@@ -37,7 +71,9 @@
       {
         "field": "report_status",
         "statement": "2026年1月19日から23日のハワイ州議会友好訪問団は公式一覧に掲載されているが、2026年7月15日時点で報告書リンクは掲載されていない。",
-        "source_ids": ["fukuoka-pref-overseas-reports"],
+        "source_ids": [
+          "fukuoka-pref-overseas-reports"
+        ],
         "location_note": "活動報告書一覧の項番2。",
         "decision": "accepted",
         "review_note": "県議会は2026年6月から報告書公開を始め、未掲載分も順次掲載すると説明。"
@@ -45,17 +81,50 @@
       {
         "field": "cost_status",
         "statement": "確認した公式一覧・海外活動Q&Aでは、この訪問団の総費用・1人当たり費用を特定できない。",
-        "source_ids": ["fukuoka-pref-overseas-reports", "fukuoka-pref-overseas-faq"],
+        "source_ids": [
+          "fukuoka-pref-overseas-reports",
+          "fukuoka-pref-overseas-faq"
+        ],
         "location_note": "活動報告書一覧、海外活動Q&Aの費用に関する説明。",
         "decision": "accepted",
         "review_note": "訪問単位の金額を公開資料から特定できない状態。"
+      },
+      {
+        "field": "report_status",
+        "statement": "2026年11月18日の再確認で、公式一覧に報告書PDFが掲載されていることを確認した。",
+        "source_ids": [
+          "fukuoka-pref-overseas-reports",
+          "fukuoka-pref-overseas-report-2026-hawaii"
+        ],
+        "location_note": "活動報告書一覧の報告書欄。",
+        "decision": "accepted",
+        "review_note": "2026年7月15日時点の未掲載という記録は当時の状態として保持し、公表の進展をここに追加記録する。"
+      },
+      {
+        "field": "cost_status",
+        "statement": "2026年11月18日の再確認で、経費の内訳が公表され、総経費は10,600千円と印字されていることを確認した（千円単位・四捨五入の公表値）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-cost-2026-hawaii"
+        ],
+        "location_note": "経費の内訳の「総経費」欄。",
+        "decision": "accepted",
+        "review_note": "経費の内訳に記載された訪問団の人数は報告書の参加者名簿と一致せず、内訳の対象範囲は資料からは特定できない。"
+      },
+      {
+        "field": "participants",
+        "statement": "報告書の訪問団（参加者）欄に参加者の氏名・役職が掲載されている。",
+        "source_ids": [
+          "fukuoka-pref-overseas-report-2026-hawaii"
+        ],
+        "location_note": "報告書の訪問団（参加者）欄。",
+        "decision": "accepted",
+        "review_note": "記載どおり転記した。随行職員は人数のみの掲載のため氏名非掲載として記録した。"
       }
     ],
     "open_questions": [
-      "参加者名・人数と公費負担区分",
-      "総費用・1人当たり費用・宿泊費・航空運賃",
-      "契約方式・契約先・予定価格・変更契約",
-      "訪問内容と具体的な政策反映"
+      "参加者ごとの費用負担区分",
+      "契約方式と契約先",
+      "報告書の所見・提案が議案・質問・予算・事業へ反映されたか"
     ],
     "review_status": "reviewed"
   },
@@ -67,7 +136,9 @@
       {
         "field": "participants",
         "statement": "報告書には議員10人、国際交流コーディネーター1人、議会事務局随行者3人が記載され、合計14人と確認できる。",
-        "source_ids": ["fukuoka-pref-overseas-bangkok-report-2026"],
+        "source_ids": [
+          "fukuoka-pref-overseas-bangkok-report-2026"
+        ],
         "location_note": "PDF2ページ目の『3 訪問団』。",
         "decision": "accepted",
         "review_note": "随行者3人の個人名と各参加者の費用負担区分は同資料では確認できない。"
@@ -75,7 +146,10 @@
       {
         "field": "report_status",
         "statement": "2026年1月13日から17日のバンコク都議会友好訪問団には31ページの活動報告書が公開されている。",
-        "source_ids": ["fukuoka-pref-overseas-reports", "fukuoka-pref-overseas-bangkok-report-2026"],
+        "source_ids": [
+          "fukuoka-pref-overseas-reports",
+          "fukuoka-pref-overseas-bangkok-report-2026"
+        ],
         "location_note": "活動報告書一覧の項番3、報告書表紙・概要。",
         "decision": "accepted",
         "review_note": "目的、訪問先、説明内容、訪問団コメントを確認。"
@@ -83,7 +157,9 @@
       {
         "field": "policy_follow_up",
         "statement": "報告書には、環境行政の知見を議員連盟等を通じた提案や県内公共施設の整備へ生かす意向が記載されている。",
-        "source_ids": ["fukuoka-pref-overseas-bangkok-report-2026"],
+        "source_ids": [
+          "fukuoka-pref-overseas-bangkok-report-2026"
+        ],
         "location_note": "PDF9ページ目前後の訪問団コメント。",
         "decision": "accepted",
         "review_note": "意向・示唆の記載であり、提案・予算・制度変更が実施されたことまでは確認していない。"
@@ -91,17 +167,756 @@
       {
         "field": "cost_status",
         "statement": "確認した活動報告書・公式一覧では、訪問団の総費用・1人当たり費用を確認できない。",
-        "source_ids": ["fukuoka-pref-overseas-reports", "fukuoka-pref-overseas-bangkok-report-2026"],
+        "source_ids": [
+          "fukuoka-pref-overseas-reports",
+          "fukuoka-pref-overseas-bangkok-report-2026"
+        ],
         "location_note": "活動報告書一覧および31ページの報告書全体。",
         "decision": "accepted",
         "review_note": "確認した資料に金額が掲載されていない状態。"
+      },
+      {
+        "field": "cost_status",
+        "statement": "2026年11月18日の再確認で、経費の内訳が公表され、総経費は4,839千円と印字されていることを確認した（千円単位・四捨五入の公表値）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-cost-2026-bangkok"
+        ],
+        "location_note": "経費の内訳の「総経費」欄。",
+        "decision": "accepted",
+        "review_note": "経費の内訳の訪問団欄は議員5名・随行5名とされ、報告書の参加者名簿（14名）と一致しない。内訳の対象範囲は資料からは特定できないため、参加者は報告書側の記載を保持し、総経費は公表資料の印字値を登録した。"
       }
     ],
     "open_questions": [
       "参加者ごとの費用負担区分",
-      "総費用・1人当たり費用・費目別内訳",
+      "経費の内訳の対象範囲（報告書の参加者名簿との人数の相違）",
       "契約方式・契約先・予定価格・変更契約額",
       "報告書の提案が議案・質問・予算・事業へ反映されたか"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-assembly-2025-paris",
+    "subject_type": "inspection_trip",
+    "subject_id": "jp-local-400009-assembly-2023-inspection-2025-paris",
+    "claims": [
+      {
+        "field": "report_status",
+        "statement": "公式一覧に報告書PDFが掲載されている（福岡県パリ訪問団報告書）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-reports",
+          "fukuoka-pref-overseas-report-2025-paris"
+        ],
+        "location_note": "活動報告書一覧の報告書欄、報告書表紙・訪問団（参加者）欄。",
+        "decision": "accepted",
+        "review_note": "参加者は報告書の訪問団（参加者）欄の記載どおり転記した。氏名が掲載されていない参加者は人数のみを氏名非掲載として記録した。"
+      },
+      {
+        "field": "cost_status",
+        "statement": "経費の内訳が公表され、総経費は14,077千円と印字されている（千円単位・四捨五入の公表値のため、円換算は千円単位の精度）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-cost-2025-paris"
+        ],
+        "location_note": "経費の内訳の「総経費」欄。",
+        "decision": "accepted",
+        "review_note": "経費の内訳に記載された訪問団の人数は報告書の参加者名簿と一致しない場合があり、内訳の対象範囲は資料からは特定できない。総経費は公表資料の印字値をそのまま登録した。"
+      }
+    ],
+    "open_questions": [
+      "参加者ごとの費用負担区分",
+      "報告書の所見・提案が議案・質問・予算・事業へ反映されたか"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-assembly-2025-china",
+    "subject_type": "inspection_trip",
+    "subject_id": "jp-local-400009-assembly-2023-inspection-2025-china",
+    "claims": [
+      {
+        "field": "report_status",
+        "statement": "公式一覧に報告書PDFが掲載されている（福岡県議会中国訪問団報告書）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-reports",
+          "fukuoka-pref-overseas-report-2025-china"
+        ],
+        "location_note": "活動報告書一覧の報告書欄、報告書表紙・訪問団（参加者）欄。",
+        "decision": "accepted",
+        "review_note": "参加者は報告書の訪問団（参加者）欄の記載どおり転記した。氏名が掲載されていない参加者は人数のみを氏名非掲載として記録した。"
+      },
+      {
+        "field": "cost_status",
+        "statement": "経費の内訳が公表され、総経費は3,892千円と印字されている（千円単位・四捨五入の公表値のため、円換算は千円単位の精度）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-cost-2025-china"
+        ],
+        "location_note": "経費の内訳の「総経費」欄。",
+        "decision": "accepted",
+        "review_note": "経費の内訳に記載された訪問団の人数は報告書の参加者名簿と一致しない場合があり、内訳の対象範囲は資料からは特定できない。総経費は公表資料の印字値をそのまま登録した。"
+      },
+      {
+        "field": "participants",
+        "statement": "日中友好議員連盟の参加者2名の経費は同議員連盟の負担であると報告書に記載されている。負担区分の列挙値に該当する区分がないため、各参加者の費用負担区分は unknown とし、この事実をここに記録する。",
+        "source_ids": [
+          "fukuoka-pref-overseas-report-2025-china"
+        ],
+        "location_note": "報告書「3 訪問団参加者」の注記。",
+        "decision": "accepted",
+        "review_note": "期間は報告書・経費の内訳とも8月20日〜24日であり、公式一覧の「8月23日まで」という記載とは異なる。報告書側の日付を登録した。"
+      }
+    ],
+    "open_questions": [
+      "参加者ごとの費用負担区分",
+      "報告書の所見・提案が議案・質問・予算・事業へ反映されたか"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-assembly-2025-qatar",
+    "subject_type": "inspection_trip",
+    "subject_id": "jp-local-400009-assembly-2023-inspection-2025-qatar",
+    "claims": [
+      {
+        "field": "report_status",
+        "statement": "公式一覧に報告書PDFが掲載されている（世界卓球選手権大会誘致カタール訪問団報告書）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-reports",
+          "fukuoka-pref-overseas-report-2025-qatar"
+        ],
+        "location_note": "活動報告書一覧の報告書欄、報告書表紙・訪問団（参加者）欄。",
+        "decision": "accepted",
+        "review_note": "参加者は報告書の訪問団（参加者）欄の記載どおり転記した。氏名が掲載されていない参加者は人数のみを氏名非掲載として記録した。"
+      },
+      {
+        "field": "cost_status",
+        "statement": "公式一覧の経費欄には「執行部から支出」とのみ記載され、経費の内訳資料は掲載されていない。訪問団単位の金額は議会の公表資料では確認できない。",
+        "source_ids": [
+          "fukuoka-pref-overseas-reports"
+        ],
+        "location_note": "活動報告書一覧の経費欄。",
+        "decision": "accepted",
+        "review_note": "執行部側の支出額は本登録の対象外とし、金額は登録しない。"
+      }
+    ],
+    "open_questions": [
+      "参加者の総数（報告書の名簿に人数の明記されていない区分がある）",
+      "参加者ごとの費用負担区分",
+      "報告書の所見・提案が議案・質問・予算・事業へ反映されたか"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-assembly-2025-gyeongsangnam-do",
+    "subject_type": "inspection_trip",
+    "subject_id": "jp-local-400009-assembly-2023-inspection-2025-gyeongsangnam-do",
+    "claims": [
+      {
+        "field": "report_status",
+        "statement": "公式一覧に報告書PDFが掲載されている（福岡県議会・大韓民国慶尚南道議会友好訪問団報告書）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-reports",
+          "fukuoka-pref-overseas-report-2025-gyeongsangnam-do"
+        ],
+        "location_note": "活動報告書一覧の報告書欄、報告書表紙・訪問団（参加者）欄。",
+        "decision": "accepted",
+        "review_note": "参加者は報告書の訪問団（参加者）欄の記載どおり転記した。氏名が掲載されていない参加者は人数のみを氏名非掲載として記録した。"
+      },
+      {
+        "field": "cost_status",
+        "statement": "経費の内訳が公表され、総経費は3,901千円と印字されている（千円単位・四捨五入の公表値のため、円換算は千円単位の精度）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-cost-2025-gyeongsangnam-do"
+        ],
+        "location_note": "経費の内訳の「総経費」欄。",
+        "decision": "accepted",
+        "review_note": "経費の内訳に記載された訪問団の人数は報告書の参加者名簿と一致しない場合があり、内訳の対象範囲は資料からは特定できない。総経費は公表資料の印字値をそのまま登録した。"
+      }
+    ],
+    "open_questions": [
+      "参加者ごとの費用負担区分",
+      "報告書の所見・提案が議案・質問・予算・事業へ反映されたか"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-assembly-2025-hanoi",
+    "subject_type": "inspection_trip",
+    "subject_id": "jp-local-400009-assembly-2023-inspection-2025-hanoi",
+    "claims": [
+      {
+        "field": "report_status",
+        "statement": "公式一覧に報告書PDFが掲載されている（福岡県議会・ハノイ市人民評議会友好提携10周年記念訪問団報告書）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-reports",
+          "fukuoka-pref-overseas-report-2025-hanoi"
+        ],
+        "location_note": "活動報告書一覧の報告書欄、報告書表紙・訪問団（参加者）欄。",
+        "decision": "accepted",
+        "review_note": "参加者は報告書の訪問団（参加者）欄の記載どおり転記した。氏名が掲載されていない参加者は人数のみを氏名非掲載として記録した。"
+      },
+      {
+        "field": "cost_status",
+        "statement": "経費の内訳が公表され、総経費は5,304千円と印字されている（千円単位・四捨五入の公表値のため、円換算は千円単位の精度）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-cost-2025-hanoi"
+        ],
+        "location_note": "経費の内訳の「総経費」欄。",
+        "decision": "accepted",
+        "review_note": "経費の内訳に記載された訪問団の人数は報告書の参加者名簿と一致しない場合があり、内訳の対象範囲は資料からは特定できない。総経費は公表資料の印字値をそのまま登録した。"
+      }
+    ],
+    "open_questions": [
+      "参加者ごとの費用負担区分",
+      "報告書の所見・提案が議案・質問・予算・事業へ反映されたか"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-assembly-2025-hawaii",
+    "subject_type": "inspection_trip",
+    "subject_id": "jp-local-400009-assembly-2023-inspection-2025-hawaii",
+    "claims": [
+      {
+        "field": "report_status",
+        "statement": "公式一覧に報告書PDFが掲載されている（福岡県議会・ハワイ州議会友好訪問団報告書）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-reports",
+          "fukuoka-pref-overseas-report-2025-hawaii"
+        ],
+        "location_note": "活動報告書一覧の報告書欄、報告書表紙・訪問団（参加者）欄。",
+        "decision": "accepted",
+        "review_note": "参加者は報告書の訪問団（参加者）欄の記載どおり転記した。氏名が掲載されていない参加者は人数のみを氏名非掲載として記録した。"
+      },
+      {
+        "field": "cost_status",
+        "statement": "経費の内訳が公表され、総経費は14,130千円と印字されている（千円単位・四捨五入の公表値のため、円換算は千円単位の精度）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-cost-2025-hawaii"
+        ],
+        "location_note": "経費の内訳の「総経費」欄。",
+        "decision": "accepted",
+        "review_note": "経費の内訳に記載された訪問団の人数は報告書の参加者名簿と一致しない場合があり、内訳の対象範囲は資料からは特定できない。総経費は公表資料の印字値をそのまま登録した。"
+      }
+    ],
+    "open_questions": [
+      "参加者ごとの費用負担区分",
+      "報告書の所見・提案が議案・質問・予算・事業へ反映されたか"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-assembly-2024-bangkok-nov",
+    "subject_type": "inspection_trip",
+    "subject_id": "jp-local-400009-assembly-2023-inspection-2024-bangkok-nov",
+    "claims": [
+      {
+        "field": "report_status",
+        "statement": "公式一覧に報告書PDFが掲載されている（福岡県・バンコク都友好訪問団報告書）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-reports",
+          "fukuoka-pref-overseas-report-2024-bangkok-nov"
+        ],
+        "location_note": "活動報告書一覧の報告書欄、報告書表紙・訪問団（参加者）欄。",
+        "decision": "accepted",
+        "review_note": "参加者は報告書の訪問団（参加者）欄の記載どおり転記した。氏名が掲載されていない参加者は人数のみを氏名非掲載として記録した。"
+      },
+      {
+        "field": "cost_status",
+        "statement": "経費の内訳が公表され、総経費は7,808千円と印字されている（千円単位・四捨五入の公表値のため、円換算は千円単位の精度）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-cost-2024-bangkok-nov"
+        ],
+        "location_note": "経費の内訳の「総経費」欄。",
+        "decision": "accepted",
+        "review_note": "経費の内訳に記載された訪問団の人数は報告書の参加者名簿と一致しない場合があり、内訳の対象範囲は資料からは特定できない。総経費は公表資料の印字値をそのまま登録した。"
+      }
+    ],
+    "open_questions": [
+      "参加者ごとの費用負担区分",
+      "報告書の所見・提案が議案・質問・予算・事業へ反映されたか"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-assembly-2024-egypt-cairo",
+    "subject_type": "inspection_trip",
+    "subject_id": "jp-local-400009-assembly-2023-inspection-2024-egypt-cairo",
+    "claims": [
+      {
+        "field": "report_status",
+        "statement": "公式一覧に報告書PDFが掲載されている（福岡県議会エジプト・カイロ訪問団報告書）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-reports",
+          "fukuoka-pref-overseas-report-2024-egypt-cairo"
+        ],
+        "location_note": "活動報告書一覧の報告書欄、報告書表紙・訪問団（参加者）欄。",
+        "decision": "accepted",
+        "review_note": "参加者は報告書の訪問団（参加者）欄の記載どおり転記した。氏名が掲載されていない参加者は人数のみを氏名非掲載として記録した。"
+      },
+      {
+        "field": "cost_status",
+        "statement": "経費の内訳が公表され、総経費は10,994千円と印字されている（千円単位・四捨五入の公表値のため、円換算は千円単位の精度）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-cost-2024-egypt-cairo"
+        ],
+        "location_note": "経費の内訳の「総経費」欄。",
+        "decision": "accepted",
+        "review_note": "経費の内訳に記載された訪問団の人数は報告書の参加者名簿と一致しない場合があり、内訳の対象範囲は資料からは特定できない。総経費は公表資料の印字値をそのまま登録した。"
+      }
+    ],
+    "open_questions": [
+      "参加者ごとの費用負担区分",
+      "報告書の所見・提案が議案・質問・予算・事業へ反映されたか"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-assembly-2024-new-south-wales",
+    "subject_type": "inspection_trip",
+    "subject_id": "jp-local-400009-assembly-2023-inspection-2024-new-south-wales",
+    "claims": [
+      {
+        "field": "report_status",
+        "statement": "公式一覧に報告書PDFが掲載されている（福岡県・ニューサウスウェールズ州交流促進訪問団報告書）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-reports",
+          "fukuoka-pref-overseas-report-2024-new-south-wales"
+        ],
+        "location_note": "活動報告書一覧の報告書欄、報告書表紙・訪問団（参加者）欄。",
+        "decision": "accepted",
+        "review_note": "参加者は報告書の訪問団（参加者）欄の記載どおり転記した。氏名が掲載されていない参加者は人数のみを氏名非掲載として記録した。"
+      },
+      {
+        "field": "cost_status",
+        "statement": "経費の内訳が公表され、総経費は12,727千円と印字されている（千円単位・四捨五入の公表値のため、円換算は千円単位の精度）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-cost-2024-new-south-wales"
+        ],
+        "location_note": "経費の内訳の「総経費」欄。",
+        "decision": "accepted",
+        "review_note": "経費の内訳に記載された訪問団の人数は報告書の参加者名簿と一致しない場合があり、内訳の対象範囲は資料からは特定できない。総経費は公表資料の印字値をそのまま登録した。"
+      }
+    ],
+    "open_questions": [
+      "参加者の総数（報告書の名簿に人数の明記されていない区分がある）",
+      "参加者ごとの費用負担区分",
+      "報告書の所見・提案が議案・質問・予算・事業へ反映されたか"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-assembly-2024-london-paris",
+    "subject_type": "inspection_trip",
+    "subject_id": "jp-local-400009-assembly-2023-inspection-2024-london-paris",
+    "claims": [
+      {
+        "field": "report_status",
+        "statement": "公式一覧に報告書PDFが掲載されている（福岡県パリ訪問団報告書）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-reports",
+          "fukuoka-pref-overseas-report-2024-london-paris"
+        ],
+        "location_note": "活動報告書一覧の報告書欄、報告書表紙・訪問団（参加者）欄。",
+        "decision": "accepted",
+        "review_note": "参加者は報告書の訪問団（参加者）欄の記載どおり転記した。氏名が掲載されていない参加者は人数のみを氏名非掲載として記録した。"
+      },
+      {
+        "field": "cost_status",
+        "statement": "経費の内訳が公表され、総経費は17,511千円と印字されている（千円単位・四捨五入の公表値のため、円換算は千円単位の精度）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-cost-2024-london-paris"
+        ],
+        "location_note": "経費の内訳の「総経費」欄。",
+        "decision": "accepted",
+        "review_note": "経費の内訳に記載された訪問団の人数は報告書の参加者名簿と一致しない場合があり、内訳の対象範囲は資料からは特定できない。総経費は公表資料の印字値をそのまま登録した。"
+      }
+    ],
+    "open_questions": [
+      "参加者ごとの費用負担区分",
+      "報告書の所見・提案が議案・質問・予算・事業へ反映されたか"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-assembly-2024-hawaii-may",
+    "subject_type": "inspection_trip",
+    "subject_id": "jp-local-400009-assembly-2023-inspection-2024-hawaii-may",
+    "claims": [
+      {
+        "field": "report_status",
+        "statement": "公式一覧に報告書PDFが掲載されている（福岡県・ハワイ州友好促進訪問団報告書）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-reports",
+          "fukuoka-pref-overseas-report-2024-hawaii-may"
+        ],
+        "location_note": "活動報告書一覧の報告書欄、報告書表紙・訪問団（参加者）欄。",
+        "decision": "accepted",
+        "review_note": "参加者は報告書の訪問団（参加者）欄の記載どおり転記した。氏名が掲載されていない参加者は人数のみを氏名非掲載として記録した。"
+      },
+      {
+        "field": "cost_status",
+        "statement": "経費の内訳が公表され、総経費は11,537千円と印字されている（千円単位・四捨五入の公表値のため、円換算は千円単位の精度）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-cost-2024-hawaii-may"
+        ],
+        "location_note": "経費の内訳の「総経費」欄。",
+        "decision": "accepted",
+        "review_note": "経費の内訳に記載された訪問団の人数は報告書の参加者名簿と一致しない場合があり、内訳の対象範囲は資料からは特定できない。総経費は公表資料の印字値をそのまま登録した。"
+      }
+    ],
+    "open_questions": [
+      "参加者ごとの費用負担区分",
+      "報告書の所見・提案が議案・質問・予算・事業へ反映されたか"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-assembly-2024-south-africa-dubai",
+    "subject_type": "inspection_trip",
+    "subject_id": "jp-local-400009-assembly-2023-inspection-2024-south-africa-dubai",
+    "claims": [
+      {
+        "field": "report_status",
+        "statement": "公式一覧に報告書PDFが掲載されている（福岡県議会南アフリカ等視察訪問団報告書）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-reports",
+          "fukuoka-pref-overseas-report-2024-south-africa-dubai"
+        ],
+        "location_note": "活動報告書一覧の報告書欄、報告書表紙・訪問団（参加者）欄。",
+        "decision": "accepted",
+        "review_note": "参加者は報告書の訪問団（参加者）欄の記載どおり転記した。氏名が掲載されていない参加者は人数のみを氏名非掲載として記録した。"
+      },
+      {
+        "field": "cost_status",
+        "statement": "経費の内訳が公表され、総経費は26,271千円と印字されている（千円単位・四捨五入の公表値のため、円換算は千円単位の精度）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-cost-2024-south-africa-dubai"
+        ],
+        "location_note": "経費の内訳の「総経費」欄。",
+        "decision": "accepted",
+        "review_note": "経費の内訳に記載された訪問団の人数は報告書の参加者名簿と一致しない場合があり、内訳の対象範囲は資料からは特定できない。総経費は公表資料の印字値をそのまま登録した。"
+      },
+      {
+        "field": "destinations",
+        "statement": "報告書では視察先は南アフリカ共和国・ケニア共和国とされ、ドバイ（アラブ首長国連邦）での視察が追加されたことが記載されている。公式一覧の訪問先欄は「南アフリカ、ドバイ」である。",
+        "source_ids": [
+          "fukuoka-pref-overseas-report-2024-south-africa-dubai"
+        ],
+        "location_note": "報告書「第1 視察調査の目的及び場所」。",
+        "decision": "accepted",
+        "review_note": "報告書側の場所の記載を登録した。なお報告書2ページ目の日程欄には「2025年4月11日」とあるが、表紙・一覧・経費資料はいずれも令和6年（2024年）であり、誤記と判断して2024年の日付を登録した。"
+      }
+    ],
+    "open_questions": [
+      "参加者ごとの費用負担区分",
+      "報告書の所見・提案が議案・質問・予算・事業へ反映されたか"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-assembly-2024-gyeongsangnam-do",
+    "subject_type": "inspection_trip",
+    "subject_id": "jp-local-400009-assembly-2023-inspection-2024-gyeongsangnam-do",
+    "claims": [
+      {
+        "field": "report_status",
+        "statement": "公式一覧に報告書PDFが掲載されている（福岡県議会・大韓民国慶尚南道議会友好訪問団報告書）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-reports",
+          "fukuoka-pref-overseas-report-2024-gyeongsangnam-do"
+        ],
+        "location_note": "活動報告書一覧の報告書欄、報告書表紙・訪問団（参加者）欄。",
+        "decision": "accepted",
+        "review_note": "参加者は報告書の訪問団（参加者）欄の記載どおり転記した。氏名が掲載されていない参加者は人数のみを氏名非掲載として記録した。"
+      },
+      {
+        "field": "cost_status",
+        "statement": "経費の内訳が公表され、総経費は3,846千円と印字されている（千円単位・四捨五入の公表値のため、円換算は千円単位の精度）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-cost-2024-gyeongsangnam-do"
+        ],
+        "location_note": "経費の内訳の「総経費」欄。",
+        "decision": "accepted",
+        "review_note": "経費の内訳に記載された訪問団の人数は報告書の参加者名簿と一致しない場合があり、内訳の対象範囲は資料からは特定できない。総経費は公表資料の印字値をそのまま登録した。"
+      }
+    ],
+    "open_questions": [
+      "参加者ごとの費用負担区分",
+      "報告書の所見・提案が議案・質問・予算・事業へ反映されたか"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-assembly-2024-europe",
+    "subject_type": "inspection_trip",
+    "subject_id": "jp-local-400009-assembly-2023-inspection-2024-europe",
+    "claims": [
+      {
+        "field": "report_status",
+        "statement": "公式一覧に報告書PDFが掲載されている（福岡県議会欧州調査視察団報告書）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-reports",
+          "fukuoka-pref-overseas-report-2024-europe"
+        ],
+        "location_note": "活動報告書一覧の報告書欄、報告書表紙・訪問団（参加者）欄。",
+        "decision": "accepted",
+        "review_note": "参加者は報告書の訪問団（参加者）欄の記載どおり転記した。氏名が掲載されていない参加者は人数のみを氏名非掲載として記録した。"
+      },
+      {
+        "field": "cost_status",
+        "statement": "経費の内訳が公表され、総経費は30,038千円と印字されている（千円単位・四捨五入の公表値のため、円換算は千円単位の精度）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-cost-2024-europe"
+        ],
+        "location_note": "経費の内訳の「総経費」欄。",
+        "decision": "accepted",
+        "review_note": "経費の内訳に記載された訪問団の人数は報告書の参加者名簿と一致しない場合があり、内訳の対象範囲は資料からは特定できない。総経費は公表資料の印字値をそのまま登録した。"
+      }
+    ],
+    "open_questions": [
+      "参加者ごとの費用負担区分",
+      "報告書の所見・提案が議案・質問・予算・事業へ反映されたか"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-assembly-2024-bangkok-jan",
+    "subject_type": "inspection_trip",
+    "subject_id": "jp-local-400009-assembly-2023-inspection-2024-bangkok-jan",
+    "claims": [
+      {
+        "field": "report_status",
+        "statement": "公式一覧に報告書PDFが掲載されている（福岡県議会・バンコク都議会友好訪問団報告書）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-reports",
+          "fukuoka-pref-overseas-report-2024-bangkok-jan"
+        ],
+        "location_note": "活動報告書一覧の報告書欄、報告書表紙・訪問団（参加者）欄。",
+        "decision": "accepted",
+        "review_note": "参加者は報告書の訪問団（参加者）欄の記載どおり転記した。氏名が掲載されていない参加者は人数のみを氏名非掲載として記録した。"
+      },
+      {
+        "field": "cost_status",
+        "statement": "経費の内訳が公表され、総経費は2,830千円と印字されている（千円単位・四捨五入の公表値のため、円換算は千円単位の精度）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-cost-2024-bangkok-jan"
+        ],
+        "location_note": "経費の内訳の「総経費」欄。",
+        "decision": "accepted",
+        "review_note": "経費の内訳に記載された訪問団の人数は報告書の参加者名簿と一致しない場合があり、内訳の対象範囲は資料からは特定できない。総経費は公表資料の印字値をそのまま登録した。"
+      },
+      {
+        "field": "cost_status",
+        "statement": "バンコク都議会訪問団単独の経費の内訳も別に公表され、総経費は2,830千円と印字されている。ただし議長ほか代表者の経費は合算資料側に含まれると同資料に注記されており、2,830千円が訪問団全員の経費の合計とは限らない。",
+        "source_ids": [
+          "fukuoka-pref-overseas-cost-2024-bangkok-jan"
+        ],
+        "location_note": "経費の内訳の「総経費」欄と訪問団欄の注記。",
+        "decision": "accepted",
+        "review_note": "公表資料の印字値をそのまま登録し、範囲の限定をここに明記する。"
+      }
+    ],
+    "open_questions": [
+      "参加者ごとの費用負担区分",
+      "報告書の所見・提案が議案・質問・予算・事業へ反映されたか"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-assembly-2024-hanoi-jan",
+    "subject_type": "inspection_trip",
+    "subject_id": "jp-local-400009-assembly-2023-inspection-2024-hanoi-jan",
+    "claims": [
+      {
+        "field": "report_status",
+        "statement": "公式一覧に報告書PDFが掲載されている（福岡県・ハノイ市友好提携15周年記念等訪問団報告書）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-reports",
+          "fukuoka-pref-overseas-report-2024-hanoi-jan"
+        ],
+        "location_note": "活動報告書一覧の報告書欄、報告書表紙・訪問団（参加者）欄。",
+        "decision": "accepted",
+        "review_note": "参加者は報告書の訪問団（参加者）欄の記載どおり転記した。氏名が掲載されていない参加者は人数のみを氏名非掲載として記録した。"
+      },
+      {
+        "field": "cost_status",
+        "statement": "経費の内訳はバンコク都議会訪問団分と合算した1資料で公表され、総経費6,377千円は両訪問団の合算額である。ハノイ訪問団単独の金額は公表されていないため、金額は登録しない。",
+        "source_ids": [
+          "fukuoka-pref-overseas-cost-2024-hanoi-bangkok-combined"
+        ],
+        "location_note": "合算の経費の内訳の表題・「総経費」欄。",
+        "decision": "accepted",
+        "review_note": "合算額を一方の訪問団の金額として登録することはしない。"
+      }
+    ],
+    "open_questions": [
+      "参加者ごとの費用負担区分",
+      "報告書の所見・提案が議案・質問・予算・事業へ反映されたか"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-assembly-2024-hawaii-jan",
+    "subject_type": "inspection_trip",
+    "subject_id": "jp-local-400009-assembly-2023-inspection-2024-hawaii-jan",
+    "claims": [
+      {
+        "field": "report_status",
+        "statement": "公式一覧に報告書PDFが掲載されている（福岡県・ハワイ州友好促進訪問団報告書）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-reports",
+          "fukuoka-pref-overseas-report-2024-hawaii-jan"
+        ],
+        "location_note": "活動報告書一覧の報告書欄、報告書表紙・訪問団（参加者）欄。",
+        "decision": "accepted",
+        "review_note": "参加者は報告書の訪問団（参加者）欄の記載どおり転記した。氏名が掲載されていない参加者は人数のみを氏名非掲載として記録した。"
+      },
+      {
+        "field": "cost_status",
+        "statement": "経費の内訳が公表され、総経費は23,207千円と印字されている（千円単位・四捨五入の公表値のため、円換算は千円単位の精度）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-cost-2024-hawaii-jan"
+        ],
+        "location_note": "経費の内訳の「総経費」欄。",
+        "decision": "accepted",
+        "review_note": "経費の内訳に記載された訪問団の人数は報告書の参加者名簿と一致しない場合があり、内訳の対象範囲は資料からは特定できない。総経費は公表資料の印字値をそのまま登録した。"
+      }
+    ],
+    "open_questions": [
+      "参加者ごとの費用負担区分",
+      "報告書の所見・提案が議案・質問・予算・事業へ反映されたか"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-assembly-2023-delhi",
+    "subject_type": "inspection_trip",
+    "subject_id": "jp-local-400009-assembly-2023-inspection-2023-delhi",
+    "claims": [
+      {
+        "field": "report_status",
+        "statement": "公式一覧に報告書PDFが掲載されている（福岡県・デリー準州友好提携15周年記念訪問団報告書）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-reports",
+          "fukuoka-pref-overseas-report-2023-delhi"
+        ],
+        "location_note": "活動報告書一覧の報告書欄、報告書表紙・訪問団（参加者）欄。",
+        "decision": "accepted",
+        "review_note": "参加者は報告書の訪問団（参加者）欄の記載どおり転記した。氏名が掲載されていない参加者は人数のみを氏名非掲載として記録した。"
+      },
+      {
+        "field": "cost_status",
+        "statement": "経費の内訳が公表され、総経費は6,360千円と印字されている（千円単位・四捨五入の公表値のため、円換算は千円単位の精度）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-cost-2023-delhi"
+        ],
+        "location_note": "経費の内訳の「総経費」欄。",
+        "decision": "accepted",
+        "review_note": "経費の内訳に記載された訪問団の人数は報告書の参加者名簿と一致しない場合があり、内訳の対象範囲は資料からは特定できない。総経費は公表資料の印字値をそのまま登録した。"
+      }
+    ],
+    "open_questions": [
+      "参加者の総数（報告書の名簿に人数の明記されていない区分がある）",
+      "参加者ごとの費用負担区分",
+      "報告書の所見・提案が議案・質問・予算・事業へ反映されたか"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-assembly-2023-malaysia",
+    "subject_type": "inspection_trip",
+    "subject_id": "jp-local-400009-assembly-2023-inspection-2023-malaysia",
+    "claims": [
+      {
+        "field": "report_status",
+        "statement": "公式一覧に報告書PDFが掲載されている（福岡県議会マレーシア訪問団報告書）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-reports",
+          "fukuoka-pref-overseas-report-2023-malaysia"
+        ],
+        "location_note": "活動報告書一覧の報告書欄、報告書表紙・訪問団（参加者）欄。",
+        "decision": "accepted",
+        "review_note": "参加者は報告書の訪問団（参加者）欄の記載どおり転記した。氏名が掲載されていない参加者は人数のみを氏名非掲載として記録した。"
+      },
+      {
+        "field": "cost_status",
+        "statement": "経費の内訳が公表され、総経費は15,331千円と印字されている（千円単位・四捨五入の公表値のため、円換算は千円単位の精度）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-cost-2023-malaysia"
+        ],
+        "location_note": "経費の内訳の「総経費」欄。",
+        "decision": "accepted",
+        "review_note": "経費の内訳に記載された訪問団の人数は報告書の参加者名簿と一致しない場合があり、内訳の対象範囲は資料からは特定できない。総経費は公表資料の印字値をそのまま登録した。"
+      }
+    ],
+    "open_questions": [
+      "参加者ごとの費用負担区分",
+      "報告書の所見・提案が議案・質問・予算・事業へ反映されたか"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-assembly-2023-boston-new-york",
+    "subject_type": "inspection_trip",
+    "subject_id": "jp-local-400009-assembly-2023-inspection-2023-boston-new-york",
+    "claims": [
+      {
+        "field": "report_status",
+        "statement": "公式一覧に報告書PDFが掲載されている（福岡県ボストン・ニューヨーク訪問団報告書）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-reports",
+          "fukuoka-pref-overseas-report-2023-boston-new-york"
+        ],
+        "location_note": "活動報告書一覧の報告書欄、報告書表紙・訪問団（参加者）欄。",
+        "decision": "accepted",
+        "review_note": "参加者は報告書の訪問団（参加者）欄の記載どおり転記した。氏名が掲載されていない参加者は人数のみを氏名非掲載として記録した。"
+      },
+      {
+        "field": "cost_status",
+        "statement": "経費の内訳が公表され、総経費は17,300千円と印字されている（千円単位・四捨五入の公表値のため、円換算は千円単位の精度）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-cost-2023-boston-new-york"
+        ],
+        "location_note": "経費の内訳の「総経費」欄。",
+        "decision": "accepted",
+        "review_note": "経費の内訳に記載された訪問団の人数は報告書の参加者名簿と一致しない場合があり、内訳の対象範囲は資料からは特定できない。総経費は公表資料の印字値をそのまま登録した。"
+      }
+    ],
+    "open_questions": [
+      "参加者ごとの費用負担区分",
+      "報告書の所見・提案が議案・質問・予算・事業へ反映されたか"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukuoka-assembly-2023-new-south-wales",
+    "subject_type": "inspection_trip",
+    "subject_id": "jp-local-400009-assembly-2023-inspection-2023-new-south-wales",
+    "claims": [
+      {
+        "field": "report_status",
+        "statement": "公式一覧に報告書PDFが掲載されている（福岡県・ニューサウスウェールズ州交流促進訪問団報告書）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-reports",
+          "fukuoka-pref-overseas-report-2023-new-south-wales"
+        ],
+        "location_note": "活動報告書一覧の報告書欄、報告書表紙・訪問団（参加者）欄。",
+        "decision": "accepted",
+        "review_note": "参加者は報告書の訪問団（参加者）欄の記載どおり転記した。氏名が掲載されていない参加者は人数のみを氏名非掲載として記録した。"
+      },
+      {
+        "field": "cost_status",
+        "statement": "経費の内訳が公表され、総経費は13,592千円と印字されている（千円単位・四捨五入の公表値のため、円換算は千円単位の精度）。",
+        "source_ids": [
+          "fukuoka-pref-overseas-cost-2023-new-south-wales"
+        ],
+        "location_note": "経費の内訳の「総経費」欄。",
+        "decision": "accepted",
+        "review_note": "経費の内訳に記載された訪問団の人数は報告書の参加者名簿と一致しない場合があり、内訳の対象範囲は資料からは特定できない。総経費は公表資料の印字値をそのまま登録した。"
+      }
+    ],
+    "open_questions": [
+      "参加者ごとの費用負担区分",
+      "報告書の所見・提案が議案・質問・予算・事業へ反映されたか"
     ],
     "review_status": "reviewed"
   }
