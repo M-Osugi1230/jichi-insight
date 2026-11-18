@@ -36,5 +36,24 @@
     "review_status": "reviewed",
     "confidence": "high",
     "sources": ["fukuoka-pref-budget-2026-overview-pdf"]
+  },
+  {
+    "id": "jp-local-400009-fiscal-2026-total-expenditure",
+    "municipality_id": "jp-local-400009",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算・歳出総額",
+    "amount_yen": 2300027028000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "令和8年度一般会計当初予算（成立後）の歳出総額。県の当初予算編成概要「一般会計歳出予算額調」（千円単位）の合計2,300,027,028千円による。款別14区分の合計と一致する。第1号議案は令和8年2月定例会で2026年3月24日に原案のとおり可決され、提案額のまま成立した。歳入総額レコード（概要資料に基づく億円精度）とは別の資料で独立に確認した。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": ["fukuoka-pref-budget-2026-compilation-pdf"]
   }
 ]
