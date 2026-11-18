@@ -1,6 +1,6 @@
 {
-  "version": "0.6.0",
-  "updated_at": "2026-11-17",
+  "version": "0.7.0",
+  "updated_at": "2026-11-19",
   "scope": "pilot",
   "records": [
     {
@@ -170,6 +170,48 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "福岡県知事選挙の公式選挙公報（候補者から提出された原稿をそのまま印刷したもの。全4ページ）。服部誠太郎候補欄は1ページ目下段にあり、見出し「福岡県の未来の扉を開く!!」、「主な実績」（1期目の実績説明）、「これからの未来を見据え 3つの挑戦!!」（挑戦1「人こそ財! 人を育てる」・挑戦2「世界に輝く福岡! 産業を育てる」・挑戦3「人も地球も笑顔! 安全・安心なまちをつくる」、各挑戦に番号項目3件、計9件）、プロフィール・推薦政党を掲載する。公約レコードは「3つの挑戦」の番号項目から作成した。URLは選挙ドットコムが公開する選挙公報PDFのコピーであり、福岡県選挙管理委員会の公式サイト（2025年知事選挙ページ）には選挙公報への導線はなく、投票・開票結果のExcelのみが掲載されている。Wayback Machine に2025年3月23日（投票日）保存のスナップショットが存在する。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度で照合した。"
+    },
+    {
+      "id": "fukuoka-pref-term-expiry-list-2026",
+      "municipality_key": "fukuoka-prefecture",
+      "organization": "福岡県",
+      "category": "election",
+      "title": "市町村の長及び議員の任期満了日一覧（令和8年5月13日現在）",
+      "url": "https://www.pref.fukuoka.lg.jp/uploaded/attachment/286492.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "福岡県が公表する県内全市町村の長及び議員の任期満了日一覧。末尾に福岡県知事の任期満了日（令和11年4月10日）を掲載するほか、北九州市長の任期満了日（令和9年2月19日）、福岡市長の任期満了日（令和8年12月6日）も掲載する。2026-11-19にPDF本文を直接確認した。"
+    },
+    {
+      "id": "fukuoka-city-mayor-election-2026-schedule-decision",
+      "municipality_key": "fukuoka-city",
+      "organization": "福岡市選挙管理委員会",
+      "category": "election",
+      "title": "福岡市長選挙の選挙期日等について（選挙管理委員会会議資料、令和8年5月7日）",
+      "url": "https://www.city.fukuoka.lg.jp/senkan/senkyo/iinkai/documents/kaigishiryour8nen10kai.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "福岡市選挙管理委員会が令和8年12月6日任期満了に伴う市長選挙の期日（令和8年11月15日）を決定した会議資料。参考資料に「現市長の任期は、地方自治法第140条及び公職選挙法第259条ただし書の規定により、令和8年12月6日をもって満了する」「任期の起算日は令和4年12月7日起算」と明記する。福岡市選挙管理委員会の『選挙の種類』ページ（任期満了日一覧）でも同日を確認した。2026-11-19にPDF本文を直接確認した。"
+    },
+    {
+      "id": "kitakyushu-mayor-election-2027-schedule-notice",
+      "municipality_key": "kitakyushu-city",
+      "organization": "北九州市選挙管理委員会",
+      "category": "election",
+      "title": "北九州市長選挙の期日等を決定する選挙管理委員会の開催について（令和8年7月14日報道発表）",
+      "url": "https://ssl.city.kitakyushu.lg.jp/files/001220755.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "北九州市選挙管理委員会の報道発表資料。冒頭に「令和9年2月19日任期満了に伴う、北九州市長選挙の期日等を決定するため」と明記し、現市長の任期満了日が令和9年2月19日であることを示す。福岡県『市町村の長及び議員の任期満了日一覧』（fukuoka-pref-term-expiry-list-2026）でも同日を確認した。2026-11-19にPDF本文を直接確認した。"
     }
   ]
 }
