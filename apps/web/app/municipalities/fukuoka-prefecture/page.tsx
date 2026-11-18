@@ -161,6 +161,7 @@ export default function FukuokaPrefecturePage() {
         </section>
 
         <nav className={styles.bottomNav} aria-label="関連ページ">
+          <Link href="/projects">重点事業・予算とKPI</Link>
           <Link href="/sources#fukuoka-prefecture">福岡県の公式資料一覧</Link>
           <Link href="/methodology">評価方法</Link>
           <Link href="/municipalities">自治体一覧</Link>
