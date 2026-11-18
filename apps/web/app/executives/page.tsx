@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 
 import { PageIntro } from "@/components/PageIntro";
@@ -6,6 +7,8 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { StatusBadge } from "@/components/StatusBadge";
 import {
   currentExecutiveTerms,
+  promiseRecords,
+  promisesForExecutive,
   evidenceForExecutive,
   evidenceForManifestoReview,
   evidenceForManifestoSourceSearch,
@@ -44,9 +47,6 @@ function sourceSearchStatusLabel(status: ManifestoSourceSearch["result_status"])
 }
 
 export default function ExecutivesPage() {
-  const manifestoReady = currentExecutiveTerms.filter(
-    (term) => term.manifesto_source_ids.length > 0,
-  ).length;
   const electionResultsReady = currentExecutiveTerms.filter(
     (term) => sourcesForExecutive(term).some((source) => source.category === "election"),
   ).length;
@@ -80,14 +80,14 @@ export default function ExecutivesPage() {
             <p>見つからなかった場合も、確認範囲と次の調査を記録。</p>
           </article>
           <article className={styles.summaryCard}>
-            <span>公約原文の登録（公式選挙公報）</span>
-            <strong>{manifestoReady}</strong>
-            <p>北九州市長選挙の候補者提出原稿を登録。</p>
+            <span>Reviewed 公約原文</span>
+            <strong>{promiseRecords.filter(p => p.review_status === "reviewed").length}</strong>
+            <p>3首長の原文公約を分割・登録済み。<Link href="/promises">公約一覧を見る</Link></p>
           </article>
           <article className={styles.summaryCard}>
             <span>公約進捗評価</span>
             <strong>0</strong>
-            <p>公約分割、事業・予算・KPI接続前は評価しません。</p>
+            <p>登録した公約を一律に達成判定するものではありません。首長スコアは表示しません。</p>
           </article>
         </section>
 
@@ -124,7 +124,7 @@ export default function ExecutivesPage() {
                     <div><dt>選挙日</dt><dd>{formatDateJa(term.election_date)}</dd></div>
                     <div>
                       <dt>公約原文資料</dt>
-                      <dd>{manifestoSources.length ? "選挙公報登録済み" : "未登録"}</dd>
+                      <dd>{promisesForExecutive(term).length ? "原文公約登録済み" : "未登録"}</dd>
                     </div>
                     <div><dt>公約進捗評価</dt><dd>未実施</dd></div>
                   </dl>
@@ -166,7 +166,7 @@ export default function ExecutivesPage() {
                         </a>
                       ))}
                       <p>
-                        選挙公報を登録した段階です。個別公約への分割や達成度の判定は行っていません。
+                        原文を個別公約に分割・登録済みです。達成率や首長ごとの点数は算出していません。
                       </p>
                     </div>
                   ) : null}
@@ -209,8 +209,8 @@ export default function ExecutivesPage() {
           <ul>
             <li>3首長の個別選挙結果ページを確認済み</li>
             <li>3首長分の公約資料探索履歴を記録済み</li>
-            <li>北九州市長選挙の公式選挙公報を登録済み</li>
-            <li>福岡県知事・福岡市長は安定した公約原文資料を未発見</li>
+            <li>北九州市長・福岡市長・福岡県知事の公約原文を Reviewed で登録済み</li>
+            <li>福岡市長の公約は候補者HPの同時期原文引用と選挙公報見出しの照合、福岡県知事の公約は選挙公報を原典として登録</li>
             <li>資料が存在しないとは判定せず、追加確認を継続</li>
           </ul>
         </section>
@@ -221,7 +221,7 @@ export default function ExecutivesPage() {
             <h2>現職名と任期が分かっても、実績評価はできない。</h2>
           </div>
           <ul>
-            <li>公約原文の完全な収録</li>
+            <li>登録済み公約の進捗評価に必要な公式資料の継続確認</li>
             <li>公約ごとの期限・数値目標・財源・自治体権限</li>
             <li>関連する事業、予算、契約、KPI</li>
             <li>変更・延期・中止の公式説明</li>
@@ -232,11 +232,11 @@ export default function ExecutivesPage() {
         <section className="callout callout--dark">
           <div>
             <p className="eyebrow">Next step</p>
-            <h2>資料探索を続け、確認できた原文だけを公約台帳へ昇格する。</h2>
+            <h2>登録済み公約49件の原文と、未接続・要確認の範囲を分けて見る。</h2>
             <p>
-              福岡県・福岡市は選挙管理委員会の保存資料と候補者本人の公開資料を継続調査します。
-              北九州市は選挙公報の人手レビューを続け、原文上で独立している記述だけを公約レコードへ変換します。
+              福岡県・福岡市・北九州市の原文公約は登録済みです。関連事業への接続は推定を含み、評価材料がない公約は未達・未着手とは扱いません。
             </p>
+            <p><Link href="/promises">公約レジストリで原文・出典・関連事業を確認する</Link></p>
           </div>
         </section>
       </div>
