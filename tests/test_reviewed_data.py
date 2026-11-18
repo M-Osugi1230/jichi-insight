@@ -55,6 +55,13 @@ def test_fukuoka_budget_values_and_stages_are_explicit() -> None:
 
     assert by_metric["total_revenue"]["amount_yen"] == 2_300_000_000_000
     assert by_metric["local_tax"]["amount_yen"] == 830_800_000_000
+    # Thousand-yen precision from the prefecture's budget compilation
+    # overview (general-account expenditure table); confirmed from the
+    # expenditure side, not copied from the revenue total.
+    assert by_metric["total_expenditure"]["amount_yen"] == 2_300_027_028_000
+    assert by_metric["total_expenditure"]["sources"] == [
+        "fukuoka-pref-budget-2026-compilation-pdf"
+    ]
     assert all(record["stage"] == "initial_budget" for record in records)
     assert all(record["account_type"] == "general" for record in records)
     assert all(record["review_status"] == "reviewed" for record in records)

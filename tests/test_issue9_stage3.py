@@ -120,12 +120,14 @@ def test_stage3_fy2026_budget_matches_issue6_facts() -> None:
     assert budget["outcome"] == "approved"
 
     # The prefecture's FY2026 fiscal records registered under Issue #6
-    # hold total revenue and local tax only (no total-expenditure record
-    # exists), so the link covers exactly those two records.
+    # hold total revenue, local tax and total expenditure, so the link
+    # covers exactly those three records. (The total-expenditure record
+    # was added after stage 3 closed the gap noted here.)
     fiscal_ids = {record["id"] for record in fiscal_records}
     assert budget["related_fiscal_record_ids"] == [
         "jp-local-400009-fiscal-2026-total-revenue",
         "jp-local-400009-fiscal-2026-local-tax",
+        "jp-local-400009-fiscal-2026-total-expenditure",
     ]
     assert set(budget["related_fiscal_record_ids"]) <= fiscal_ids
 
