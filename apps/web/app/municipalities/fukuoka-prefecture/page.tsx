@@ -67,6 +67,11 @@ export default function FukuokaPrefecturePage() {
           </dl>
         </section>
 
+        <section className={styles.scope} aria-label="自治体のプロフィール">
+          <div><p className="eyebrow">Municipality profile</p><h2>この自治体について</h2></div>
+          <div><p>福岡県は九州北部に位置し、九州と本州をつなぐ地域です。県内には福岡市・北九州市の2つの政令指定都市があります。</p><p>出典：<a href="https://www.pref.fukuoka.lg.jp/contents/ken-gaiyou.html" target="_blank" rel="noopener noreferrer">福岡県公式「福岡県の概要」</a>（公式プロフィール。財政データの年度とは別の説明情報）</p></div>
+        </section>
+
         <section className={styles.scope} aria-labelledby="scope-title">
           <div>
             <p className="eyebrow">Scope</p>
