@@ -63,9 +63,10 @@ export default function OverseasActivitiesPage() {
             <h1>海外活動の公開状況</h1>
             <p>
               海外活動の必要性だけでなく、誰が参加し、いくら使い、何を報告し、その後の政策へどう反映したかまで確認できることが重要です。
-              現在は2026年の直近3活動を、公開されている事実と確認できない項目に分けて表示します。
+              このページは初期パイロット（2026年の直近3活動）の保存ビューです。現任期の最新登録24件（うち費用公表22件）は議会詳細ページで確認できます。
             </p>
           </div>
+          <p><Link href="/assemblies/fukuoka-prefecture#trips">現任期24件の最新視察レジストリへ</Link></p>
           <dl className={styles.summaryGrid}>
             <div>
               <dt>収録活動</dt>
