@@ -333,6 +333,7 @@ def validate_reviewed_fukuoka_finance() -> list[str]:
     expected_values = {
         "jp-local-400009-fiscal-2026-total-revenue": 2_300_000_000_000,
         "jp-local-400009-fiscal-2026-local-tax": 830_800_000_000,
+        "jp-local-400009-fiscal-2026-total-expenditure": 2_300_027_028_000,
         "jp-local-400009-fiscal-2020-ordinary-revenue": 2_136_593_000_000,
         "jp-local-400009-fiscal-2020-ordinary-expenditure": 2_018_161_000_000,
         "jp-local-400009-fiscal-2021-ordinary-revenue": 2_528_210_000_000,
