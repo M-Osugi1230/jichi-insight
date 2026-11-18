@@ -1,102 +1,54 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-
-import { PageIntro } from "@/components/PageIntro";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
-import { StatusBadge } from "@/components/StatusBadge";
-import { overseasDisclosureSummary } from "@/lib/assemblyOverseas";
+import { assemblies, assemblySlugs } from "@/lib/assemblyRegistry";
+import { canonicalFor } from "@/lib/pageMetadata";
+import styles from "./assembly.module.css";
 
 export const metadata: Metadata = {
-  title: "議会アカウンタビリティ",
-  description:
-    "議会の議案、採決、費用、政務活動費、視察・海外活動を、役割と一次資料に基づいて整理します。",
-  alternates: {
-    canonical: "https://jimieru.com/assemblies/",
-  },
+  title: "議会アカウンタビリティ｜3議会の議案・表決・政務活動費・視察",
+  description: "福岡県議会・福岡市議会・北九州市議会の公式資料と情報公開状況を確認します。議員スコアや活動量ランキングは作りません。",
+  alternates: { canonical: canonicalFor("/assemblies") },
 };
-
+const status: Record<string,string> = {
+  published:"公表あり", not_published:"公表されていません",
+  restricted:"窓口等で閲覧", unknown:"公開状況未確認",
+};
+const keyItems = ["proposals_and_results","faction_votes","member_votes",
+  "political_activity_expense_reports","political_activity_expense_receipts","inspection_trip_reports"] as const;
+const names: Record<string,string> = {
+  proposals_and_results:"議案・議決結果",faction_votes:"会派別の賛否",
+  member_votes:"議員ごとの賛否",political_activity_expense_reports:"政務活動費",
+  political_activity_expense_receipts:"領収書",inspection_trip_reports:"視察報告書",
+};
 export default function AssembliesPage() {
-  return (
-    <>
-      <SiteHeader />
-      <main>
-      <div className="pageShell">
-        <PageIntro
-          eyebrow="Assembly accountability"
-          title="議会を、質問数ではなく役割と根拠で見る。"
-        >
-          <p>
-            議会の役割は、条例・予算・決算の審議、修正、監視、政策提案、住民への説明です。
-            Jichi Insightは、首長の政策成果を議会の成果として直接採点せず、議会が何を決め、何を問い、何を公開したかを分けて追います。
-          </p>
-        </PageIntro>
-
-        <section className="contentSection">
-          <p className="eyebrow">First reviewed assembly slice</p>
-          <h2>福岡県議会の海外活動</h2>
-          <div className="roleGrid">
-            <article>
-              <div className="sectionHeadingWithBadge">
-                <h3>2026年の活動台帳</h3>
-                <StatusBadge label="Reviewed" tone="verified" />
-              </div>
-              <p>
-                公式一覧に掲載された直近3件を、報告書、参加者、費用、政策反映の公開状態に分けて整理しました。
-              </p>
-            </article>
-            <article>
-              <h3>公開状態</h3>
-              <p>
-                報告書は{overseasDisclosureSummary.reportsPublished}/
-                {overseasDisclosureSummary.activities}件、参加者人数は
-                {overseasDisclosureSummary.participantListsAvailable}/
-                {overseasDisclosureSummary.activities}件で確認できました。
-              </p>
-            </article>
-            <article>
-              <h3>費用</h3>
-              <p>
-                確認した資料では、訪問単位の総費用・1人当たり費用を確認できた活動は
-                {overseasDisclosureSummary.costsAvailable}件です。費用がゼロという意味ではありません。
-              </p>
-            </article>
-          </div>
-          <div className="heroActions">
-            <Link
-              className="primaryAction"
-              href="/assemblies/fukuoka-prefecture/overseas-activities"
-            >
-              海外活動台帳を見る
-            </Link>
-            <Link className="secondaryAction" href="/sources#fukuoka-prefecture">
-              福岡県議会の公式資料を見る
-            </Link>
-          </div>
-        </section>
-
-        <section className="contentSection narrativeSection">
-          <div>
-            <p className="eyebrow">Next scope</p>
-            <h2>議会全体の評価は、まだ行いません。</h2>
-          </div>
-          <div>
-            <ul className="plainList">
-              <li>議案と提出主体</li>
-              <li>議員別採決の公開状況</li>
-              <li>修正案・附帯決議</li>
-              <li>政務活動費と成果物</li>
-              <li>委員会調査と政策反映</li>
-              <li>住民参加・情報公開</li>
-            </ul>
-            <p>
-              これらを同じ期間で収集し、議会が本来担う役割ごとに比較できるまで、総合点や会派ランキングは出しません。
-            </p>
-          </div>
-        </section>
-      </div>
-      </main>
-      <SiteFooter />
-    </>
-  );
+  return <><SiteHeader/><main><div className="pageShell">
+    <header className={styles.intro}>
+      <p className="eyebrow">Assembly accountability</p>
+      <h1>議会の議決と情報公開を、公式記録から見る。</h1>
+      <p>議会の審議・表決・情報公開と、執行部が実施した政策成果は別のものです。公開されていない議員別賛否を推測して再現したり、議員や会派を活動量・支出額で順位付けしたりしません。</p>
+      <p className={styles.attention}>3議会とも、議員ごとの賛否は公表されていません。会派別賛否が公表されているのは福岡市・北九州市の2議会のみです。</p>
+    </header>
+    <section aria-label="3議会の情報公開状況" className={styles.grid}>
+      {assemblySlugs.map(slug => {
+        const entry=assemblies[slug]; const assembly=entry.assembly;
+        const members=assembly.factions.reduce((sum,faction)=>sum+faction.member_count,0);
+        return <article className={styles.card} key={slug}>
+          <p className="eyebrow">Reviewed</p><h2>{assembly.name}</h2>
+          <p className={styles.note}>現任期：{assembly.term_start} 〜 {assembly.term_end}</p>
+          <p>議員定数 {assembly.seat_count}人／登録名簿の現員 {members}人
+          {assembly.seat_count > members ? `（欠員 ${assembly.seat_count-members}人）`:""}</p>
+          <h3>この議会で公開されているもの</h3>
+          <ul>{keyItems.map(item => {
+            const profile=entry.disclosure.items.find(row=>row.item===item);
+            return <li key={item}>{names[item]}：{status[profile?.availability??"unknown"]??profile?.availability??"未収録"}</li>;
+          })}</ul>
+          <p className={styles.note}>確認時点：{entry.disclosure.as_of}。公開範囲は資料ごとに異なります。</p>
+          <Link href={`/assemblies/${slug}`}>公式データと議案・視察の詳細を見る</Link>
+        </article>;
+      })}
+    </section>
+    <p className={styles.note}>上記は公開状況を並べたものであり、議会の優劣を評価する比較表ではありません。出典リンクと項目ごとの注意書きは各詳細ページに掲載しています。</p>
+  </div></main><SiteFooter/></>;
 }
