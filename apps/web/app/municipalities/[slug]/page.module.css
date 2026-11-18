@@ -176,3 +176,18 @@
   .cityJumpNav { border-radius: 8px; top: 64px; }
   .cityJumpNav a { font-size: .82rem; padding: 9px 11px; }
 }
+
+/*
+ * Long Reviewed city pages can contain many plan, fiscal and source records.
+ * Keep the complete server-rendered document, including all evidence and links,
+ * but let browsers skip layout/paint of off-screen cards until approached.
+ * No slicing, client fetching, content removal or new JavaScript.
+ */
+@supports (content-visibility: auto) {
+  .recordCard,
+  .sourceCatalog > li,
+  .deferredList > li {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 360px;
+  }
+}
