@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { EvidencePanel } from "@/components/EvidencePanel";
+import { FiscalReview } from "@/components/FiscalReview";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { StatusBadge } from "@/components/StatusBadge";
@@ -11,6 +12,7 @@ import {
 } from "@/lib/finance";
 import {
   cityBudgetRecord,
+  fukuokaCityFinance,
   citySettlementRecord,
   evidenceForCityRecord,
 } from "@/lib/fukuokaCityFinance";
@@ -56,14 +58,19 @@ export default function FukuokaCityPage() {
             <p>
               現在は、2026年度一般会計の<strong>当初予算</strong>2項目と、
               2024年度一般会計の<strong>決算</strong>2項目を公開しています。
-              事業成果、市長公約、市議会の評価はまだ行っていません。
+              普通会計の2022〜2024年度決算も収録しています。事業成果の評価とは区別して表示します。
             </p>
           </div>
           <dl className={styles.heroFacts}>
-            <div><dt>確認済み財政値</dt><dd>4項目</dd></div>
-            <div><dt>収録年度</dt><dd>2024・2026</dd></div>
-            <div><dt>最終確認</dt><dd>2026年7月15日</dd></div>
+            <div><dt>確認済み財政値</dt><dd>決算3年度以上</dd></div>
+            <div><dt>収録年度</dt><dd>2022〜2024・2026</dd></div>
+            <div><dt>最終確認</dt><dd>各資料の索引更新日を参照</dd></div>
           </dl>
+        </section>
+
+        <section className={styles.scope} aria-label="自治体のプロフィール">
+          <div><p className="eyebrow">Municipality profile</p><h2>この自治体について</h2></div>
+          <div><p>福岡市は1972年に政令指定都市へ移行した都市です。市の人口・まちの特徴や行政の基礎情報は、市が公開する「市のプロフィール」から確認できます。</p><p>出典：<a href="https://www.city.fukuoka.lg.jp/shisei/profile/04.html" target="_blank" rel="noopener noreferrer">福岡市公式「福岡市のあゆみ（年表）」</a>（公式プロフィール。財政データの年度とは別の説明情報）</p></div>
         </section>
 
         <section className={styles.scope} aria-labelledby="city-scope-title">
@@ -138,6 +145,8 @@ export default function FukuokaCityPage() {
           </div>
         </section>
 
+        <FiscalReview municipality="福岡市" records={fukuokaCityFinance.records} />
+
         <section className={styles.evidence} aria-labelledby="city-evidence-title">
           <div className="sectionIntro">
             <p className="eyebrow">Evidence trail</p>
@@ -166,7 +175,7 @@ export default function FukuokaCityPage() {
           </div>
           <ul>
             <li>2026年度予算が実際にどこまで執行されたか</li>
-            <li>目的別・性質別に何へ支出したか</li>
+            <li>目的別・性質別支出の政策的な妥当性</li>
             <li>主要事業と契約先、KPI、成果の対応</li>
             <li>市長公約の進捗と市の権限・外部要因</li>
             <li>市議会の審議、修正、採決、監視活動</li>

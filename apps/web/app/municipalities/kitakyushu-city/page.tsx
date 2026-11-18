@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { EvidencePanel } from "@/components/EvidencePanel";
+import { FiscalReview } from "@/components/FiscalReview";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { StatusBadge } from "@/components/StatusBadge";
@@ -9,6 +10,7 @@ import { formatExactYen, formatJapaneseYen } from "@/lib/finance";
 import {
   evidenceForKitakyushuRecord,
   kitakyushuBudgetRecord,
+  kitakyushuFinance,
   kitakyushuSettlementRecord,
 } from "@/lib/kitakyushuFinance";
 
@@ -54,14 +56,19 @@ export default function KitakyushuCityPage() {
             <p>
               現在は、2026年度一般会計の<strong>当初予算</strong>2項目と、
               2024年度一般会計の<strong>決算</strong>3項目を公開しています。
-              重点事業、市長公約、市議会の評価はまだ行っていません。
+              普通会計の2022〜2024年度決算も収録しています。事業成果の評価とは区別して表示します。
             </p>
           </div>
           <dl className={styles.heroFacts}>
-            <div><dt>確認済み財政値</dt><dd>5項目</dd></div>
-            <div><dt>収録年度</dt><dd>2024・2026</dd></div>
-            <div><dt>最終確認</dt><dd>2026年7月15日</dd></div>
+            <div><dt>確認済み財政値</dt><dd>決算3年度以上</dd></div>
+            <div><dt>収録年度</dt><dd>2022〜2024・2026</dd></div>
+            <div><dt>最終確認</dt><dd>各資料の索引更新日を参照</dd></div>
           </dl>
+        </section>
+
+        <section className={styles.scope} aria-label="自治体のプロフィール">
+          <div><p className="eyebrow">Municipality profile</p><h2>この自治体について</h2></div>
+          <div><p>北九州市は1963年に門司・小倉・若松・八幡・戸畑の5市が合併して誕生した、九州初の政令指定都市です。</p><p>出典：<a href="https://www.city.kitakyushu.lg.jp/category/90000752.html" target="_blank" rel="noopener noreferrer">北九州市公式「7区の紹介」</a>（公式プロフィール。財政データの年度とは別の説明情報）</p></div>
         </section>
 
         <section className={styles.scope} aria-labelledby="kitakyushu-scope-title">
@@ -89,7 +96,7 @@ export default function KitakyushuCityPage() {
               <span>一般会計当初予算</span>
               <strong>{formatJapaneseYen(budgetRevenue.amount_yen)}</strong>
               <small>{formatExactYen(budgetRevenue.amount_yen)}</small>
-              <p>公式表の647,684百万円を円へ換算。</p>
+              <p>成立後の当初予算として登録された決算とは別段階の数値。</p>
             </article>
             <article className={styles.metricCard}>
               <span>市税収入</span>
@@ -142,6 +149,8 @@ export default function KitakyushuCityPage() {
           </div>
         </section>
 
+        <FiscalReview municipality="北九州市" records={kitakyushuFinance.records} />
+
         <section className={styles.evidence} aria-labelledby="kitakyushu-evidence-title">
           <div className="sectionIntro">
             <p className="eyebrow">Evidence trail</p>
@@ -165,7 +174,7 @@ export default function KitakyushuCityPage() {
           <div><p className="eyebrow">Not assessed yet</p><h2>まだ評価していないこと</h2></div>
           <ul>
             <li>2026年度予算の執行状況</li>
-            <li>目的別・性質別支出の妥当性</li>
+            <li>目的別・性質別支出の政策的な妥当性</li>
             <li>重点事業、契約、KPI、成果の接続</li>
             <li>市長公約の進捗と外部要因</li>
             <li>市議会の審議、修正、採決、監視活動</li>
