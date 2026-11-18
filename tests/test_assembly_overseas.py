@@ -39,18 +39,21 @@ def test_overseas_activity_data_matches_contracts() -> None:
         assert_valid("schemas/evidence_packet.schema.json", packet)
 
 
-def test_2026_register_preserves_disclosure_gaps() -> None:
+def test_stage5_register_reflects_current_publication() -> None:
+    # Stage 5 (2026-11-18) re-checked the official list: reports and cost
+    # breakdowns are now published for every delegation of the term, so
+    # the July gaps recorded for the three 2026 trips no longer hold.
+    # The dated July claims stay in the evidence packets as history.
     trips = load_json(
         "data/reviewed/fukuoka-prefecture/assembly/inspection_trips.json"
     )
-    by_destination = {trip["destinations"][0]: trip for trip in trips}
+    by_id = {trip["id"]: trip for trip in trips}
 
-    assert len(trips) == 3
-    assert sum(trip["report_status"] == "published" for trip in trips) == 1
-    assert sum(trip["cost_status"] == "available" for trip in trips) == 0
-    assert sum(trip["participant_count"] is not None for trip in trips) == 1
+    assert len(trips) == 24
+    assert all(trip["report_status"] == "published" for trip in trips)
+    assert sum(trip["cost_status"] == "available" for trip in trips) == 22
 
-    bangkok = by_destination["タイ王国・バンコク都"]
+    bangkok = by_id["jp-local-400009-assembly-2023-inspection-2026-bangkok"]
     assert bangkok["participant_count"] == 14
     assert len(
         [
@@ -60,15 +63,31 @@ def test_2026_register_preserves_disclosure_gaps() -> None:
         ]
     ) == 10
     assert bangkok["report_status"] == "published"
-    assert bangkok["cost_status"] == "not_found"
+    assert bangkok["total_cost_yen"] == 4_839_000
     assert len(bangkok["policy_follow_up"]) == 2
 
-    assert by_destination["アメリカ合衆国・ハワイ州"]["report_status"] == (
-        "not_published"
-    )
-    assert by_destination["大韓民国・慶尚南道"]["report_status"] == (
-        "not_published"
-    )
+    hawaii = by_id["jp-local-400009-assembly-2023-inspection-2026-hawaii"]
+    assert hawaii["report_status"] == "published"
+    assert hawaii["total_cost_yen"] == 10_600_000
+    assert hawaii["participant_count"] == 13
+
+    gyeongsangnam = by_id[
+        "jp-local-400009-assembly-2023-inspection-2026-gyeongsangnam-do"
+    ]
+    assert gyeongsangnam["report_status"] == "published"
+    assert gyeongsangnam["total_cost_yen"] == 2_490_000
+    assert gyeongsangnam["participant_count"] == 13
+
+    # The Qatar delegation's costs were borne by the executive branch
+    # (the list publishes no cost breakdown), and the January 2024 Hanoi
+    # delegation only appears in a combined cost document, so neither
+    # carries a per-trip total.
+    qatar = by_id["jp-local-400009-assembly-2023-inspection-2025-qatar"]
+    assert qatar["cost_status"] == "not_found"
+    assert qatar["total_cost_yen"] is None
+    hanoi_jan = by_id["jp-local-400009-assembly-2023-inspection-2024-hanoi-jan"]
+    assert hanoi_jan["cost_status"] == "not_found"
+    assert hanoi_jan["total_cost_yen"] is None
 
 
 def test_every_activity_has_evidence_and_known_sources() -> None:
