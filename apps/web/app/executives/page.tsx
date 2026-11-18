@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 
+import { BreadcrumbTrail } from "@/components/BreadcrumbTrail";
 import { PageIntro } from "@/components/PageIntro";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -56,6 +57,7 @@ export default function ExecutivesPage() {
       <SiteHeader />
       <main>
       <div className="pageShell">
+        <BreadcrumbTrail items={[{name:"ホーム",href:"/"},{name:"首長台帳",href:"/executives"}]} />
         <PageIntro eyebrow="Executive registry" title="首長評価の前に、任期と公約の根拠を固定する。">
           <p>
             誰が現職か、どの選挙と任期に基づくか、公約原文をどこから取得するかを先に整理します。
@@ -205,6 +207,7 @@ export default function ExecutivesPage() {
           <div>
             <p className="eyebrow">Source readiness</p>
             <h2>資料があることと、公約を評価できることは別です。未発見と不存在も、同じ意味にしません。</h2>
+            <p>行政機関への公約資料の照会は、準備した文案と送信・回答の状態を分けて公開しています。<Link href="/executives/source-requests">公約資料の照会案と送信状況を見る</Link></p>
           </div>
           <ul>
             <li>3首長の個別選挙結果ページを確認済み</li>

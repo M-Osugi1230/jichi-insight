@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 
+import { BreadcrumbTrail } from "@/components/BreadcrumbTrail";
 import { PageIntro } from "@/components/PageIntro";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -35,6 +36,7 @@ export default function SourceRequestsPage() {
       <SiteHeader />
       <main>
       <div className="pageShell">
+        <BreadcrumbTrail items={[{name:"ホーム",href:"/"},{name:"首長台帳",href:"/executives"},{name:"公約資料の照会案",href:"/executives/source-requests"}]} />
         <PageIntro eyebrow="Source request drafts" title="照会案を作ったことと、送信したことを分ける。">
           <p>
             公開資料を特定できなかった場合に、行政機関へ確認する文案を準備します。

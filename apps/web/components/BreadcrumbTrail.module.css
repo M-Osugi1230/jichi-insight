@@ -1,0 +1,6 @@
+.trail { margin: 18px 0 0; font-size: .78rem; color: #53616b; }
+.trail ol { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; list-style: none; padding: 0; margin: 0; }
+.trail li { display: flex; align-items: center; gap: 6px; min-width: 0; }
+.trail li + li::before { content: "›"; color: #697983; margin-right: 2px; }
+.trail a { color: #255f80; text-underline-offset: 3px; }
+.trail [aria-current="page"] { overflow-wrap: anywhere; font-weight: 700; color: #243c4b; }
