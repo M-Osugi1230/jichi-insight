@@ -70,7 +70,7 @@ export default function FukuokaCityPage() {
 
         <section className={styles.scope} aria-label="自治体のプロフィール">
           <div><p className="eyebrow">Municipality profile</p><h2>この自治体について</h2></div>
-          <div><p>福岡市は1972年に政令指定都市へ移行した都市です。市の人口・まちの特徴や行政の基礎情報は、市が公開する「市のプロフィール」から確認できます。</p><p>出典：<a href="https://www.city.fukuoka.lg.jp/shisei/profile/index.html" target="_blank" rel="noopener noreferrer">福岡市公式「市のプロフィール」</a>（公式プロフィール。財政データの年度とは別の説明情報）</p></div>
+          <div><p>福岡市は1972年に政令指定都市へ移行した都市です。市の人口・まちの特徴や行政の基礎情報は、市が公開する「市のプロフィール」から確認できます。</p><p>出典：<a href="https://www.city.fukuoka.lg.jp/shisei/profile/04.html" target="_blank" rel="noopener noreferrer">福岡市公式「福岡市のあゆみ（年表）」</a>（公式プロフィール。財政データの年度とは別の説明情報）</p></div>
         </section>
 
         <section className={styles.scope} aria-labelledby="city-scope-title">
