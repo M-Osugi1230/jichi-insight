@@ -9,9 +9,9 @@ export const metadata: Metadata = {
   // metadataBase is the origin only, on purpose: Next.js prefixes
   // file-convention asset paths (icon, opengraph-image) with basePath
   // before resolving them against metadataBase, so a metadataBase that
-  // already contains "/jichi-insight" would double the path segment in
+  // already contains a path would double the path segment in
   // the emitted og:image URL.
-  metadataBase: new URL("https://m-osugi1230.github.io"),
+  metadataBase: new URL("https://jimieru.com"),
   title: {
     default: "Jichi Insight | 自治体インサイト",
     template: "%s | Jichi Insight",
@@ -41,9 +41,11 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  // Google Search Console ownership verification (URL-prefix property for
-  // https://m-osugi1230.github.io/jichi-insight/). Rendered as the
-  // google-site-verification meta tag in every page's <head>.
+  // Google Search Console ownership verification (token issued for the
+  // pre-migration URL-prefix property on the old github.io URL; the
+  // jimieru.com domain property is verified separately via DNS).
+  // Rendered as the google-site-verification meta tag in every page's
+  // <head>.
   verification: {
     google: "y5HZtY4bPWD9Jj8-sXA48x0v61gP1xpOAqWxfQuvY48",
   },

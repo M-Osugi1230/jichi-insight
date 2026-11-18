@@ -121,7 +121,7 @@ jobs:
       - name: Audit publication output
         run: |
           set -o pipefail
-          python scripts/audit_static_site.py --base-path /jichi-insight 2>&1 | tee publication-audit.log
+          python scripts/audit_static_site.py 2>&1 | tee publication-audit.log
 
       - name: Upload static-export diagnostics
         if: failure()

@@ -21,8 +21,6 @@ jobs:
   build:
     name: Build static site
     runs-on: ubuntu-latest
-    env:
-      NEXT_PUBLIC_BASE_PATH: /jichi-insight
     steps:
       - uses: actions/checkout@v7
 
@@ -43,7 +41,7 @@ jobs:
         run: pnpm build
 
       - name: Validate static export
-        run: python scripts/validate_static_export.py --base-path /jichi-insight
+        run: python scripts/validate_static_export.py
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4

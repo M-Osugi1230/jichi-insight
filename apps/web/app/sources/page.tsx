@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     "調査に使用する自治体・議会の公式ページ入口の一覧です。確認済みの公式入口と、索引段階にとどまる公開範囲をそのまま示します。",
   alternates: {
-    canonical: "https://m-osugi1230.github.io/jichi-insight/sources/",
+    canonical: "https://jimieru.com/sources/",
   },
 };
 

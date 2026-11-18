@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   description:
     "福岡県知事、福岡市長、北九州市長の現任期、選挙結果、公約原文資料、資料探索履歴、未評価範囲を確認できます。",
   alternates: {
-    canonical: "https://m-osugi1230.github.io/jichi-insight/executives/",
+    canonical: "https://jimieru.com/executives/",
   },
 };
 

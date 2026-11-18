@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description:
     `全国47都道府県、${reviewedCoverageStats.reviewedRecords.toLocaleString("ja-JP")}件の確認済み目標・指標の根拠と接続状況、未確認範囲を公開します。`,
   alternates: {
-    canonical: "https://m-osugi1230.github.io/jichi-insight/data-quality/",
+    canonical: "https://jimieru.com/data-quality/",
   },
 };
 

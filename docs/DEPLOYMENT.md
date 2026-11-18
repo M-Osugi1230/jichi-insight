@@ -4,7 +4,7 @@
 
 Production URL:
 
-`https://m-osugi1230.github.io/jichi-insight/`
+`https://jimieru.com/`
 
 The repository is configured for a static Next.js export deployed through GitHub Pages custom workflows.
 
@@ -63,8 +63,8 @@ fulfilled inside the repository:
 - Preview is the local build output only. No hosted per-PR preview URL is
   issued, and no PR preview deployment exists.
 - The pre-merge substitute is building the exact production artifact
-  locally (including the production base path) and running the
-  static-export smoke test, which is what CI does for every pull request.
+  locally and running the static-export smoke test, which is what CI
+  does for every pull request.
 - Hosted per-PR previews remain a future option to revisit if local
   verification becomes insufficient; they are not a current capability
   and must not be described as one.
@@ -117,11 +117,12 @@ The deploy job targets the protected `github-pages` environment.
 
 ## Base path
 
-Because the site is initially hosted as a project site, production builds set:
-
-`NEXT_PUBLIC_BASE_PATH=/jichi-insight`
-
-Next.js applies this base path to routes and generated assets. Local and pull-request quality builds use an empty base path.
+The site is served from the root of the custom domain `jimieru.com`, so
+no base path is used: production builds no longer set
+`NEXT_PUBLIC_BASE_PATH`, and local and pull-request quality builds use
+the same empty base path. (Until the custom-domain migration the site
+was hosted as a GitHub Pages project site and production builds set
+`NEXT_PUBLIC_BASE_PATH=/jichi-insight`.)
 
 ## Automated production verification
 
@@ -131,7 +132,7 @@ It verifies:
 
 - the home page returns HTTP 200
 - the site identity and publication-state copy are present
-- static assets use `/jichi-insight/_next/`
+- static assets use `/_next/`
 - about, corrections, data quality, methodology, municipalities, the 福岡県 page and sources return HTTP 200
 - `robots.txt`, `sitemap.xml` and `manifest.webmanifest` return HTTP 200
 
@@ -142,8 +143,8 @@ The workflow retries briefly while the deployment propagates and uploads a human
 After every production deployment, verify:
 
 - Home, sources, municipalities, methodology, corrections, data quality and about pages return 200
-- Static assets load under `/jichi-insight/_next/`
-- Internal links remain under the project base path
+- Static assets load under `/_next/`
+- Internal links resolve from the domain root
 - 404 page renders
 - `robots.txt`, `sitemap.xml` and `manifest.webmanifest` are available
 - Official source links open externally
@@ -162,4 +163,11 @@ Do not force-push `main` to roll back production.
 
 ## Custom domain
 
-A custom domain may be added after the public beta name, legal pages and canonical URL are finalized. When introduced, update metadata, sitemap, robots, deployment documentation and DNS together.
+The custom domain `jimieru.com` is the production domain. The CNAME
+record file ships with the site artifact (`apps/web/public/CNAME`), and
+metadata, sitemap, robots and the deployment workflows all use
+`https://jimieru.com` as the canonical origin. The previous project-site
+URL (`https://m-osugi1230.github.io/jichi-insight/`) redirects to the
+custom domain once the repository Pages settings point at it. DNS
+records at the registrar and the Pages custom-domain setting are
+managed together with this migration.

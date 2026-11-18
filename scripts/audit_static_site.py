@@ -75,7 +75,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--base-path",
         default="",
-        help="Deployment base path, for example /jichi-insight.",
+        help="Deployment base path, for example /subpath.",
     )
     return parser.parse_args()
 

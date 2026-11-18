@@ -9,7 +9,7 @@ import type { Metadata } from "next";
  * Pages that already declare their own canonical or images keep them; these
  * helpers are only the fallback for pages that declare neither.
  */
-export const siteUrl = "https://m-osugi1230.github.io/jichi-insight";
+export const siteUrl = "https://jimieru.com";
 
 /**
  * The site-wide Open Graph image (app/opengraph-image.png, 1200x630).

@@ -35,7 +35,7 @@ import tokyoChildrenLinkage from "../../../data/catalog/tokyo_children_annual_ac
 import tokyoReviewManifest from "../../../data/catalog/tokyo_policy_target_review_manifest.json";
 import sourceRequests from "../../../data/entities/executives/source_requests.json";
 
-const siteUrl = "https://m-osugi1230.github.io/jichi-insight";
+const siteUrl = "https://jimieru.com";
 const staticRoutes = [
   "",
   "/about",
@@ -246,9 +246,8 @@ export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return routes.map((route) => ({
-    // The homepage entry needs the trailing slash: the Search Console
-    // URL-prefix property is "https://m-osugi1230.github.io/jichi-insight/"
-    // and the bare ".../jichi-insight" URL falls outside that prefix.
+    // The homepage entry needs the trailing slash so it matches the
+    // canonical root URL ("https://jimieru.com/") exactly.
     url: route === "" ? `${siteUrl}/` : `${siteUrl}${route}`,
     ...(lastModifiedByRoute.has(route)
       ? { lastModified: lastModifiedByRoute.get(route) }
