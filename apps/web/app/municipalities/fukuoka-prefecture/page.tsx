@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { EvidencePanel } from "@/components/EvidencePanel";
-import { SettlementTrend } from "@/components/SettlementTrend";
+import { FiscalReview } from "@/components/FiscalReview";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { StatusBadge } from "@/components/StatusBadge";
 import {
   evidenceForRecord,
+  fukuokaPrefectureFinance,
   fiscalRecordByMetric,
   formatCompactYen,
   formatExactYen,
@@ -53,7 +54,7 @@ export default function FukuokaPrefecturePage() {
           <dl className={styles.heroFacts}>
             <div>
               <dt>確認済み財政値</dt>
-              <dd>13項目</dd>
+              <dd>決算3年度以上</dd>
             </div>
             <div>
               <dt>収録年度</dt>
@@ -61,7 +62,7 @@ export default function FukuokaPrefecturePage() {
             </div>
             <div>
               <dt>最終確認</dt>
-              <dd>2026年7月15日</dd>
+              <dd>各資料の索引更新日を参照</dd>
             </div>
           </dl>
         </section>
@@ -127,7 +128,7 @@ export default function FukuokaPrefecturePage() {
           </div>
         </section>
 
-        <SettlementTrend />
+        <FiscalReview municipality="福岡県" records={fukuokaPrefectureFinance.records} />
 
         <section className={styles.evidence} aria-labelledby="evidence-title">
           <div className="sectionIntro">
