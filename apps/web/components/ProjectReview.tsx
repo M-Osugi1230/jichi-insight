@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { formatJapaneseYen } from "@/lib/finance";
-import { sourceCatalog } from "@/lib/catalog";
+import { projectSourceCatalog } from "@/lib/projectRegistry";
 import type { ProjectRecord, KpiRecord } from "@/lib/kitakyushuProjects";
 import styles from "./ProjectReview.module.css";
 
@@ -13,7 +13,7 @@ function stageLabel(area: string, stage: string, year: number) {
 }
 function sourceLinks(ids: string[]) {
   return <p className={styles.sourceList}>出典：{ids.length ? ids.map((id,i) => {
-    const source = sourceCatalog.find(item => item.id === id);
+    const source = projectSourceCatalog.find(item => item.id === id);
     return <span key={id}>{i ? " ／ " : ""}{source ? <a className={styles.link} href={source.url} target="_blank" rel="noreferrer">{source.title}</a> : id}{source ? `（索引 ${source.indexed_at}）` : "（参照ID・出典URL未連携）"}</span>;
   }) : "未収録"}</p>;
 }
