@@ -252,6 +252,7 @@ def test_review_search_and_term_reflect_the_registration() -> None:
     terms = load_json("data/entities/executives/executive_terms.json")
     term = next(record for record in terms if record["id"] == TERM_ID)
     assert term["manifesto_source_ids"] == [BULLETIN_ID]
-    # The term end is still unregistered; it is never used as an
-    # implicit promise deadline.
-    assert term["term_end"] is None
+    # The term end is registered from the prefecture's official
+    # term-expiry list; it is still never used as an implicit promise
+    # deadline.
+    assert term["term_end"] == "2029-04-10"

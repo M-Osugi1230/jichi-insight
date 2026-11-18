@@ -41,8 +41,8 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 12
-    assert len({record["id"] for record in catalog["records"]}) == 12
+    assert len(catalog["records"]) == 15
+    assert len({record["id"] for record in catalog["records"]}) == 15
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
@@ -62,6 +62,33 @@ def test_executive_registry_matches_shared_contracts() -> None:
         assert term["confidence"] == "high"
     for packet in packets:
         assert validation_errors("schemas/evidence_packet.schema.json", packet) == []
+
+
+def test_executive_term_ends_match_official_term_expiry_records() -> None:
+    terms = load_json("data/entities/executives/executive_terms.json")
+    packets = load_json("data/entities/executives/evidence_packets.json")
+    known_sources = source_ids()
+
+    # Term ends are registered only where an official source states the
+    # expiry date itself; they are never derived by adding four years.
+    expected_term_ends = {
+        "jp-local-400009": "2029-04-10",
+        "jp-local-401307": "2026-12-06",
+        "jp-local-401005": "2027-02-19",
+    }
+    for term in terms:
+        assert term["term_end"] == expected_term_ends[term["municipality_id"]]
+
+    packets_by_subject = {packet["subject_id"]: packet for packet in packets}
+    for term in terms:
+        packet = packets_by_subject[term["id"]]
+        term_end_claims = [
+            claim for claim in packet["claims"] if claim["field"] == "term_end"
+        ]
+        assert len(term_end_claims) == 1
+        assert term_end_claims[0]["decision"] == "accepted"
+        assert set(term_end_claims[0]["source_ids"]) <= known_sources
+        assert set(term_end_claims[0]["source_ids"]) <= set(term["sources"])
 
 
 def test_manifesto_readiness_is_not_confused_with_progress() -> None:
