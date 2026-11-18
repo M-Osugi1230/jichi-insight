@@ -1,6 +1,6 @@
 {
-  "version": "0.1.0",
-  "updated_at": "2026-07-15",
+  "version": "0.2.0",
+  "updated_at": "2026-11-18",
   "scope": "pilot",
   "records": [
     {
@@ -22,14 +22,56 @@
       "municipality_key": "fukuoka-prefecture",
       "organization": "福岡県議会",
       "category": "assembly",
-      "title": "議員の紹介（令和8年5月19日現在）",
+      "title": "議員の紹介（令和8年10月16日現在）",
       "url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/index.html",
       "source_kind": "document",
       "availability": "published",
-      "indexed_at": "2026-07-15",
+      "indexed_at": "2026-11-18",
       "review_status": "reviewed",
       "confidence": "high",
-      "notes": "会派別人数と委員会構成を掲載。"
+      "notes": "会派別人数（17会派・計86人、定数87）と委員会構成（議会運営・常任8・特別8）を掲載。"
+    },
+    {
+      "id": "fukuoka-pref-assembly-term",
+      "municipality_key": "fukuoka-prefecture",
+      "organization": "福岡市選挙管理委員会",
+      "category": "election",
+      "title": "選挙の種類（福岡県議会議員の任期満了日・定数）",
+      "url": "https://www.city.fukuoka.lg.jp/senkan/senkyo/shisei/senkyo_kiso/senkyo_kiso_syurui.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-18",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "福岡県議会議員の任期満了日は令和9年4月29日、定数87人と掲載。任期は4年のため開始日は令和5年4月30日。"
+    },
+    {
+      "id": "fukuoka-pref-assembly-session-results",
+      "municipality_key": "fukuoka-prefecture",
+      "organization": "福岡県議会",
+      "category": "proposals",
+      "title": "採決結果（令和8年2月定例会）",
+      "url": "https://www.gikai.pref.fukuoka.lg.jp/site/honkaigi/saiketsu-0802.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-18",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "議案番号・件名の一覧と議案単位の結果文言を掲載。会派別・議員別の内訳は掲載されていない。"
+    },
+    {
+      "id": "fukuoka-pref-assembly-seimu-list",
+      "municipality_key": "fukuoka-prefecture",
+      "organization": "福岡県議会",
+      "category": "political_activity_expenses",
+      "title": "政務活動費収支報告書一覧",
+      "url": "https://www.gikai.pref.fukuoka.lg.jp/seimukatsudouhi-list.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-18",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "会派別の収支報告書（PDF）を年度別に公開。領収書等は議会棟図書室等での閲覧。"
     },
     {
       "id": "fukuoka-pref-overseas-contract-faq",

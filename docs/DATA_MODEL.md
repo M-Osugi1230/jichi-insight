@@ -27,7 +27,10 @@ Municipality
      ├─ Session
      ├─ Proposal
      ├─ Vote
+     │   └─ FactionVote
+     ├─ Member
      ├─ Committee
+     ├─ DisclosureProfile
      ├─ PoliticalActivityExpense
      └─ InspectionTrip
 ```

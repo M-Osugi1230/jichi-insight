@@ -1,5 +1,5 @@
 {
-  "version": "0.10.0",
+  "version": "0.11.0",
   "entries": [
     {"name":"source","schema":"schemas/source.schema.json","fixture":"data/examples/source.example.json"},
     {"name":"municipality","schema":"schemas/municipality.schema.json","fixture":"data/examples/municipality.example.json"},
@@ -22,6 +22,12 @@
     {"name":"proposal","schema":"schemas/proposal.schema.json","fixture":"data/examples/proposal.example.json"},
     {"name":"vote","schema":"schemas/vote.schema.json","fixture":"data/examples/vote.example.json"},
     {"name":"inspection_trip","schema":"schemas/inspection_trip.schema.json","fixture":"data/examples/inspection_trip.example.json"},
+    {"name":"faction_vote","schema":"schemas/faction_vote.schema.json","fixture":"data/examples/faction_vote.example.json"},
+    {"name":"member","schema":"schemas/member.schema.json","fixture":"data/examples/member.example.json"},
+    {"name":"political_activity_expense","schema":"schemas/political_activity_expense.schema.json","fixture":"data/examples/political_activity_expense.example.json"},
+    {"name":"session","schema":"schemas/session.schema.json","fixture":"data/examples/session.example.json"},
+    {"name":"committee","schema":"schemas/committee.schema.json","fixture":"data/examples/committee.example.json"},
+    {"name":"disclosure_profile","schema":"schemas/disclosure_profile.schema.json","fixture":"data/examples/disclosure_profile.example.json"},
     {"name":"evidence_packet","schema":"schemas/evidence_packet.schema.json","fixture":"data/examples/evidence_packet.example.json"}
   ]
 }

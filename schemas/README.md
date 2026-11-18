@@ -33,6 +33,12 @@ Jichi Insightは、画面や収集処理が独自の解釈でデータを補わ�
 | Assembly | 議会の任期、定数、会派、委員会 |
 | Proposal | 議案、提出主体、結果、関連事業 |
 | Vote | 採決方法、結果、議員別賛否の公開状況 |
+| Faction vote | 会派別の賛否（賛否双方ありを含む） |
+| Member | 議員の名簿属性（氏名・会派・選挙区・委員会。活動量指標は持たない） |
+| Political activity expense | 政務活動費の交付・支出・返還、報告書と領収書の公開範囲 |
+| Session | 定例会・臨時会の会期単位 |
+| Committee | 委員会の種別、定数、委員長 |
+| Disclosure profile | 議会ごとの公開状況台帳（項目別の公開有無と粒度） |
 | Inspection trip | 視察目的、参加者、費用、報告、政策反映 |
 | Evidence packet | 一つの公開判断を支える根拠と未解決事項 |
 
