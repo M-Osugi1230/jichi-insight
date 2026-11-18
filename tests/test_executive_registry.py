@@ -41,8 +41,8 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 15
-    assert len({record["id"] for record in catalog["records"]}) == 15
+    assert len(catalog["records"]) == 18
+    assert len({record["id"] for record in catalog["records"]}) == 18
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
@@ -89,6 +89,45 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
         assert term_end_claims[0]["decision"] == "accepted"
         assert set(term_end_claims[0]["source_ids"]) <= known_sources
         assert set(term_end_claims[0]["source_ids"]) <= set(term["sources"])
+
+
+def test_executive_term_starts_follow_statutory_counting() -> None:
+    from datetime import date, timedelta
+
+    terms = load_json("data/entities/executives/executive_terms.json")
+    packets = load_json("data/entities/executives/evidence_packets.json")
+    known_sources = source_ids()
+
+    # Term starts follow the counting rule of Article 259 of the Public
+    # Offices Election Act; each four-year term ends the day before the
+    # fourth anniversary of its start. The Fukuoka governor's second
+    # term starts on 2025-04-11 (the day after the first term expired);
+    # the earlier value 2025-04-14 was the 2021 election-proclamation
+    # date plus four years and was corrected under Issue #676. The
+    # record ID keeps the original date as an opaque identifier.
+    expected_term_starts = {
+        "jp-local-400009": "2025-04-11",
+        "jp-local-401307": "2022-12-07",
+        "jp-local-401005": "2023-02-20",
+    }
+    for term in terms:
+        assert term["term_start"] == expected_term_starts[term["municipality_id"]]
+        start = date.fromisoformat(term["term_start"])
+        expected_end = start.replace(year=start.year + 4) - timedelta(days=1)
+        assert term["term_end"] == expected_end.isoformat()
+
+    packets_by_subject = {packet["subject_id"]: packet for packet in packets}
+    governor = next(
+        term for term in terms if term["municipality_id"] == "jp-local-400009"
+    )
+    packet = packets_by_subject[governor["id"]]
+    start_claims = [
+        claim for claim in packet["claims"] if claim["field"] == "term_start"
+    ]
+    assert len(start_claims) == 1
+    assert start_claims[0]["decision"] == "accepted"
+    assert set(start_claims[0]["source_ids"]) <= known_sources
+    assert set(start_claims[0]["source_ids"]) <= set(governor["sources"])
 
 
 def test_manifesto_readiness_is_not_confused_with_progress() -> None:
