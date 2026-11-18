@@ -6,7 +6,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { canonicalFor } from "@/lib/pageMetadata";
 import {
   assemblies, assemblySlugs, evidenceFor, isAssemblySlug,
-  type AssemblySlug, type AssemblySource, type Evidence,
+  type AssemblySource, type Evidence,
 } from "@/lib/assemblyRegistry";
 import styles from "../assembly.module.css";
 
