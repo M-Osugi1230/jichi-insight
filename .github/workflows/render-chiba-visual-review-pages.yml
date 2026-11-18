@@ -43,7 +43,7 @@ jobs:
             --pdf /tmp/chiba-second-implementation-plan.pdf \
             --output-dir chiba-visual-review-pages \
             --dpi 180
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: chiba-visual-review-pages
           path: chiba-visual-review-pages

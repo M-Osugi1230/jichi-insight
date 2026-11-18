@@ -41,7 +41,7 @@ jobs:
             --budget-pdf /tmp/miyagi-budget-reflection.pdf \
             --settlement-pdf /tmp/miyagi-settlement-results.pdf \
             --output-dir extracted-miyagi-money-linkage
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: miyagi-money-linkage-extraction
           path: extracted-miyagi-money-linkage
