@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { BreadcrumbTrail } from "@/components/BreadcrumbTrail";
 import { PageIntro } from "@/components/PageIntro";
 import { CityOverview } from "@/components/CityOverview";
+import { FiscalReview } from "@/components/FiscalReview";
 import { MunicipalityDiscoveryPanel } from "@/components/MunicipalityDiscoveryPanel";
 import { DeduplicateCitySourceTabStops } from "@/components/DeduplicateCitySourceTabStops";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -19,6 +20,7 @@ import {
   type Phase15ResolvedSource,
 } from "@/lib/phase15Cities";
 import { defaultOgImages } from "@/lib/pageMetadata";
+import { loadGenericCityFinance } from "@/lib/genericCityFinance";
 
 import styles from "./page.module.css";
 
@@ -230,6 +232,8 @@ export default async function Phase15CityPage({
     notFound();
   }
 
+  const fiscalDetail = loadGenericCityFinance(slug);
+
   const promiseRecords = city.planRecords.filter(
     (record) => record.decision === "accepted" && record.evidenceRole !== "plan_transition",
   );
@@ -291,6 +295,7 @@ export default async function Phase15CityPage({
           officialCode={city.officialCode}
           planHref="#promise-title"
           budgetHref="#money-title"
+          fiscalDetailHref={fiscalDetail ? "#fiscal-detail" : undefined}
         />
 
         <nav className={styles.cityJumpNav} aria-label="この自治体ページの目次">
@@ -349,6 +354,12 @@ export default async function Phase15CityPage({
             ))}
           </div>
         </section>
+
+        {fiscalDetail ? (
+          <div id="fiscal-detail" style={{ scrollMarginTop: 90 }}>
+            <FiscalReview municipality={city.name} records={fiscalDetail.records} sources={fiscalDetail.sources} />
+          </div>
+        ) : null}
 
         <section className="contentSection" aria-labelledby="linkage-title">
           <div className={styles.sectionHeading}>
