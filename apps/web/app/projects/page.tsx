@@ -51,8 +51,8 @@ export default function ProjectsPage() {
       <SiteHeader />
       <main className="pageShell">
         <h1>重点事業</h1>
-        <p>3自治体の Reviewed 事業レコードを掲載しています。公式母集団から各政策の柱ごとに掲載順で選定したものであり、金額順・優先度順・独自ランキングではありません。</p>
-        <p>確認できること：福岡県・福岡市・北九州市の登録済み重点事業の予算・KPI・公式評価。まだ確認できないこと：3自治体のすべての事業を網羅した一覧ではありません。未収録の項目を推測で補いません。</p>
+        <p>6自治体の Reviewed 事業レコードを掲載しています。公式母集団から各政策の柱ごとに掲載順で選定したものであり、金額順・優先度順・独自ランキングではありません。</p>
+        <p>確認できること：福岡県・福岡市・北九州市・愛知県・名古屋市・豊田市の登録済み重点事業の予算・KPI・公式評価（登録のあるもの）。まだ確認できないこと：6自治体の全事業を網羅した一覧ではありません。名古屋市の金額は予算案段階の予定額で成立値ではなく、愛知県のFY2026当初予算額は億円単位の概数です。豊田市の事業単位の公式評価は公表されていません。</p>
 
         <ProgressiveRecordFilter
           kind="projects"
@@ -60,11 +60,14 @@ export default function ProjectsPage() {
           themes={themes}
         >
           {areas.map(([key, area]) => (
-            <section className={styles.section} key={key} data-filter-section="">
+            <section className={styles.section} key={key} id={key} data-filter-section="">
               <h2>{area.name}｜登録事業</h2>
               <p className={styles.meta}>母集団：{area.selection.population?.description ?? "詳細未収録"}</p>
               <p className={styles.meta}>選定方法：{area.selection.selection_rule?.description ?? "選定規則未収録"}</p>
               <p className={styles.meta}>選定カタログ更新：{area.selection.updated_at ?? "未収録"}。選定・除外理由は Reviewed 選定カタログで管理しています。</p>
+              {key === "nagoya-city" ? <p className={styles.meta}>金額は予算案段階の「予定額」であり、成立後の事業別予算額ではありません。</p> : null}
+              {key === "aichi-prefecture" ? <p className={styles.meta}>FY2026 当初予算額は、億円単位で公表された概数です。公式評価の A〜E は愛知県の判定をそのまま表示します。</p> : null}
+              {key === "toyota-city" ? <p className={styles.meta}>事業単位の公式評価は公表されていません。目標・施策単位の叙述を事業評価として扱いません。</p> : null}
               <div className={styles.cards}>
                 {area.projects.filter((project) => project.review_status === "reviewed").map((project) => {
                   const matchedSources = project.sources
@@ -87,6 +90,9 @@ export default function ProjectsPage() {
                       <h3>{project.official_title}</h3>
                       <p>{project.plain_title}</p>
                       <p className={styles.meta}>段階：{stages.length ? stages.join("／") : "該当する予算・決算段階の登録なし"}</p>
+                      {key === "nagoya-city" ? <p className={styles.meta}>予算案段階の予定額（成立値ではありません）</p> : null}
+                      {key === "aichi-prefecture" ? <p className={styles.meta}>FY2026 当初予算は億円単位の概数です。県の公式評価：{project.official_evaluation?.rating ?? "未収録"}</p> : null}
+                      {key === "toyota-city" ? <p className={styles.meta}>事業単位の公式評価は公表されていません。</p> : null}
                       <p className={styles.meta}>
                         出典：{primarySource ? (
                           <a href={primarySource.url} target="_blank" rel="noopener noreferrer">
