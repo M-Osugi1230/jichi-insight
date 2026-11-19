@@ -1,0 +1,46 @@
+[
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "term",
+        "location_note": "北海道選挙管理委員会の任期満了一覧、会派別名簿",
+        "review_note": null,
+        "source_ids": [
+          "sapporo-city-assembly-roster-faction"
+        ],
+        "statement": "議員の任期は2023年5月2日から2027年5月1日まで。満了日は北海道選挙管理委員会の「道内市町村の長及び議会議員の任期満了年月日一覧」（令和8年10月26日現在）で公式に確認した。開始日は地方自治法第93条第2項の法構成による整理であり、開始日を直接明記した市公式ページは未確認である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "factions",
+        "location_note": "会派別名簿（2026年5月10日保存コピー）",
+        "review_note": null,
+        "source_ids": [
+          "sapporo-city-assembly-roster-faction"
+        ],
+        "statement": "会派構成は対象会期時点（2026年6月）の11会派・計67人。会派別名簿の2026年5月10日時点の保存コピー（ページ更新日2025年9月29日）で確認した。現行名簿（2026年11月13日更新）では民主市民連合が16人となりグリッド札幌（1人）が新設されているが、これは会期後の変動であり登録には用いていない。定数68に対し欠員1人。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes_not_published",
+        "location_note": "市議会だよりNo.151の議決結果一覧",
+        "review_note": null,
+        "source_ids": [
+          "sapporo-city-dayori-151-pdf"
+        ],
+        "statement": "札幌市議会では議員個人別の賛否は公表されていない（起立採決で会議録にも個人名は残らない）。会派別の賛否のみが市議会だよりの議決結果一覧で公表されるため、議員別投票は not_published として登録し、復元・推測はしていない。"
+      }
+    ],
+    "id": "evidence-jp-local-011002-assembly-2023",
+    "open_questions": [
+      "令和8年第3回定例会（決算会期、2026年9月24日〜10月30日）は議決事件等一覧表（審議結果）と市議会だよりNo.152が未公表のため未登録。両資料の公表後に追加登録する。",
+      "議員の任期開始日（2023年5月2日）を直接明記した市公式ページは未確認（法構成による整理）。",
+      "定数68人に対し現員67人（欠員1人）の事由・時期は未確認。",
+      "本会期で結論が出ていない請願・陳情は議決事件等一覧表に現れないため未登録。結論が出た会期で登録する。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-011002-assembly-2023",
+    "subject_type": "assembly"
+  }
+]

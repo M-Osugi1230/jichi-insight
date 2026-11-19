@@ -1,0 +1,94 @@
+[
+  {
+    "as_of": "2026-11-20",
+    "assembly_id": "jp-local-011002-assembly-2023",
+    "confidence": "high",
+    "id": "jp-local-011002-assembly-2023-disclosure-2026",
+    "items": [
+      {
+        "availability": "published",
+        "granularity": "member",
+        "item": "member_roster",
+        "note": "会派別・50音別の議員名簿を市公式サイトに掲載。",
+        "source_url": "https://www.city.sapporo.jp/gikai/meibo/meibo-kaiha.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "faction",
+        "item": "faction_composition",
+        "note": "会派別名簿に各会派の所属議員と人数を掲載。",
+        "source_url": "https://www.city.sapporo.jp/gikai/meibo/meibo-kaiha.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "assembly",
+        "item": "committee_composition",
+        "note": "委員会名簿を市公式サイトに掲載。",
+        "source_url": "https://www.city.sapporo.jp/gikai/meibo/meibo-iinkai.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "assembly",
+        "item": "proposals_and_results",
+        "note": "会期ごとに議決事件等一覧表（議案・諮問・意見書案・決議案・請願・陳情・報告の提出・付託・委員会結果・本会議結果）と議案等一覧を掲載。",
+        "source_url": "https://www.city.sapporo.jp/gikai/html/shingikekka.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "faction",
+        "item": "faction_votes",
+        "note": "市議会だよりの議決結果一覧に会派別の賛否（○/×）を掲載。陳情は集約行での公表。",
+        "source_url": "https://www.city.sapporo.jp/gikai/html/documents/no151_p2.pdf"
+      },
+      {
+        "availability": "not_published",
+        "granularity": "none",
+        "item": "member_votes",
+        "note": "議員個人別の賛否は公表されていない。起立採決のため会議録にも個人名は残らない。",
+        "source_url": null
+      },
+      {
+        "availability": "published",
+        "granularity": "faction",
+        "item": "political_activity_expense_reports",
+        "note": "交付は会派のみ。収支報告書と政務活動概要報告書を会派単位でWeb公表（令和2〜7年度交付分）。公開期間は公開開始日から5年間。",
+        "source_url": "https://www.city.sapporo.jp/gikai/html/seimukatsudouhi.html"
+      },
+      {
+        "availability": "restricted",
+        "granularity": "document",
+        "item": "political_activity_expense_receipts",
+        "note": "領収書の写しは令和6年度分からネット公開があるが閲覧申請形式で、閲覧用URL・データの流布は禁止されている。令和5年度以前はネット閲覧の対象外。",
+        "source_url": "https://www.city.sapporo.jp/gikai/html/seimukatsudouhi.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "assembly",
+        "item": "inspection_trip_reports",
+        "note": "委員会×年度の行政視察結果報告書を各委員会の活動状況ページに掲載（現任期の令和5〜8年度分を確認）。総務委員会の令和6年度分は台風のため中止され、中止の公表のみ。議会運営委員会の令和8年度分、新たな都心空間調査特別委員会の令和5年度分・令和8年度分、大都市税財政制度・DX推進調査特別委員会の令和8年度分は2026年11月20日時点で未掲載。",
+        "source_url": "https://www.city.sapporo.jp/gikai/html/iinkai-katsudou.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "assembly",
+        "item": "meeting_minutes",
+        "note": "会議録速報版を会期資料として掲載するほか、会議録検索システムで本会議・委員会の会議録を公開。",
+        "source_url": "https://www.city.sapporo.jp/gikai/html/documents/08_2t_080521.pdf"
+      },
+      {
+        "availability": "published",
+        "granularity": "assembly",
+        "item": "petition_results",
+        "note": "陳情は議決事件等一覧表に個別の結果（採択・不採択）を掲載。請願の結果も同表の対象（対象会期は請願0件）。",
+        "source_url": "https://www.city.sapporo.jp/gikai/html/documents/08_kekka2t.pdf"
+      }
+    ],
+    "review_status": "reviewed",
+    "sources": [
+      "sapporo-city-assembly-roster-faction",
+      "sapporo-city-assembly-results-index",
+      "sapporo-city-seimu-index",
+      "sapporo-city-assembly-committees-index"
+    ]
+  }
+]
