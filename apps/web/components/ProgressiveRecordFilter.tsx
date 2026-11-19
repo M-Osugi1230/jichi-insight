@@ -7,7 +7,7 @@ import styles from "./ProgressiveRecordFilter.module.css";
 type Props = {
   kind: "projects" | "proposals";
   total: number;
-  themes?: string[];
+  themes?: Array<{ value: string; label: string }>;
   sessions?: Array<{ id: string; name: string }>;
   children: ReactNode;
 };
@@ -47,7 +47,7 @@ export function ProgressiveRecordFilter({ kind, total, themes = [], sessions = [
 
   const isProjects = kind === "projects";
   const chosenLabel = isProjects
-    ? themes.find((item) => item === selected)
+    ? themes.find((item) => item.value === selected)?.label
     : sessions.find((item) => item.id === selected)?.name;
   const active = Boolean(query.trim() || selected);
 
@@ -69,7 +69,7 @@ export function ProgressiveRecordFilter({ kind, total, themes = [], sessions = [
             <select value={selected} onChange={(event) => setSelected(event.target.value)}>
               <option value="">すべて</option>
               {isProjects
-                ? themes.map((theme) => <option value={theme} key={theme}>{theme}</option>)
+                ? themes.map((theme) => <option value={theme.value} key={theme.value}>{theme.label}</option>)
                 : sessions.map((session) => <option value={session.id} key={session.id}>{session.name}</option>)}
             </select>
           </label>
