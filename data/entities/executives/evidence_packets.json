@@ -222,5 +222,57 @@
       "2023年知事選挙の選挙公報は選挙管理委員会の公式ページに掲載されているが、公約レジストリへの登録は愛知クラスターの後続段階（公約）で扱うため、本段階では manifesto_source_ids を空としている。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-current-mayor-term",
+    "subject_type": "executive_term",
+    "subject_id": "jp-local-231002-executive-2024-11-24",
+    "claims": [
+      {
+        "field": "person_name",
+        "statement": "名古屋市の現職市長が広沢一郎であることを公式市長プロフィールで確認した。",
+        "source_ids": [
+          "nagoya-city-mayor"
+        ],
+        "location_note": "名古屋市公式「市長のプロフィール」（令和6年11月に名古屋市長へ就任した記載あり）。",
+        "decision": "accepted",
+        "review_note": "公式ページの現職表示と経歴を確認。"
+      },
+      {
+        "field": "election_date",
+        "statement": "現任期に対応する市長選挙は2024年11月24日に執行され、広沢一郎が392,519票を得て最多得票で当選した（候補者7人、法定得票数183,665.750票）。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-results"
+        ],
+        "location_note": "名古屋市選挙管理委員会「令和6年11月24日執行 名古屋市長選挙の結果」の開票結果PDF（候補者別得票数の計欄）。",
+        "decision": "accepted",
+        "review_note": "選挙日と開票結果の公式資料で確認。"
+      },
+      {
+        "field": "term_start",
+        "statement": "広沢一郎市長の現任期の起算日は2024年11月24日である。本選挙は前市長・河村たかしの失職に伴う欠員選挙であり、任期満了による選挙ではないため、公職選挙法第259条本文により、任期は選挙の日である2024年11月24日から起算される。選挙管理委員会の選挙実施経緯および愛知県「市町村長等名簿」が現任期の満了日を2028年11月23日と明示していることとも整合する（起算日＋4年−1日＝2028年11月23日）。",
+        "source_ids": [
+          "aichi-pref-mayors-term-list-2026",
+          "public-offices-election-act"
+        ],
+        "location_note": "公職選挙法第259条本文と、愛知県「市町村長等名簿」（2026年9月13日現在）の名古屋市の行。",
+        "decision": "accepted",
+        "review_note": "欠員選挙のため第259条ただし書（任期満了選挙の特例）は適用されず、本文の選挙日起算で確認した。"
+      },
+      {
+        "field": "term_end",
+        "statement": "名古屋市長の現任期の満了日は2028年11月23日である。",
+        "source_ids": [
+          "aichi-pref-mayors-term-list-2026"
+        ],
+        "location_note": "愛知県「市町村長等名簿」（2026年9月13日現在）の名古屋市の行に、広沢一郎の任期満了日として令和10年11月23日の明記がある。",
+        "decision": "accepted",
+        "review_note": "任期満了日は県の公式公表の明記に基づく。"
+      }
+    ],
+    "open_questions": [
+      "登録済み事業と接続していない公約（市民税減税、敬老パス値下げ、保育料無償化、名古屋城木造復元等）については、進捗を裏付ける公式資料が登録され次第、接続を拡充する。"
+    ],
+    "review_status": "reviewed"
   }
 ]

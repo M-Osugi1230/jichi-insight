@@ -9,7 +9,8 @@ export type MunicipalityKey =
   | "aichi-prefecture"
   | "fukuoka-prefecture"
   | "fukuoka-city"
-  | "kitakyushu-city";
+  | "kitakyushu-city"
+  | "nagoya-city";
 
 export type SourceRecord = {
   id: string;
@@ -68,6 +69,14 @@ export const municipalityMeta: Record<
     status: "財政データ公開",
     href: "/municipalities/kitakyushu-city",
     fiscalSummary: "Reviewed 5項目",
+  },
+  "nagoya-city": {
+    name: "名古屋市",
+    type: "政令指定都市",
+    summary: "財政、重点事業、市長公約を一次資料で確認します。",
+    status: "財政データ公開",
+    href: "/municipalities/nagoya-city",
+    fiscalSummary: "Reviewed 3項目（当初予算1件・決算2件）",
   },
 };
 
