@@ -80,6 +80,7 @@ export default async function AssemblyDetailPage({params}:PageProps){
     <header className={styles.intro}>
       <p className="eyebrow">Reviewed · Assembly accountability</p><h1>{assembly.name}</h1>
       <p>自治体議会の議案と表決、政務活動費、視察および情報公開範囲を公式資料に沿って表示します。議会が審議した予算と執行部の事業成果を、議会・議員の成績として結びつけません。</p>
+      <p className={styles.attention}>確認できること：議案・議決結果と公表資料{slug === "fukuoka-prefecture" ? "。" : "、会派別賛否。"}まだ確認できないこと：議員ごとの賛否は3議会とも公表されていません。{slug === "fukuoka-prefecture" ? "福岡県議会は会派別賛否も公表されていません。" : "会派別賛否が公表されているのは福岡市議会・北九州市議会のみです。"}</p>
       <p><Link href="/assemblies">3議会の一覧に戻る</Link></p>
       <nav aria-label="ページ内のセクション">
         <a href="#basic">基本情報</a> ／ <a href="#proposals">会期と議案</a> ／ <a href="#votes">表決</a> ／ <a href="#expenses">政務活動費</a> ／ <a href="#trips">視察</a> ／ <a href="#disclosure">情報公開</a>
