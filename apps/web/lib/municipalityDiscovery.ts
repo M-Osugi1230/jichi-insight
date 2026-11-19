@@ -56,7 +56,7 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
         (promise.review_status === "reviewed" || promise.review_status === "verified"),
       ),
     );
-    return { key: null, finance: hasReviewedSettlement, promises: hasPromises, assembly: hasAssembly, projects: hasProjects };
+    return { key: hasAssembly ? "aichi-prefecture" : null, finance: hasReviewedSettlement, promises: hasPromises, assembly: hasAssembly, projects: hasProjects };
   }
 
   if (!matched) {
