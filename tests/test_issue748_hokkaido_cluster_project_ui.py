@@ -89,7 +89,7 @@ def test_registry_preserves_six_existing_areas_and_adds_three():
     assert 'id={key}' in INDEX
     assert "data-filter-entry" in INDEX
     assert "9自治体の Reviewed 事業レコード" in INDEX
-    assert "北海道｜登録事業" not in INDEX or "area.name" in INDEX
+    assert "area.name" in INDEX
 
 
 def test_hokkaido_budget_is_not_a_settlement_or_independent_rating():
@@ -104,7 +104,7 @@ def test_hokkaido_budget_is_not_a_settlement_or_independent_rating():
     assert "当初予算ベース" in REVIEW
     assert "決算額ではありません" in REVIEW
     assert "北海道の一次政策評価・総合判定" in REVIEW
-    assert "独自の評価ではありません" in INDEX
+    assert "独自評価や順位付けは行いません" in INDEX
     assert 'id="priority-projects"' in HOKKAIDO
     assert 'projectHref="#priority-projects"' in HOKKAIDO
     assert "reviewedProjects.map" in HOKKAIDO
