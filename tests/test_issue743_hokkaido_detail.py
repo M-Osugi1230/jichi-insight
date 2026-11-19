@@ -34,9 +34,21 @@ def test_real_finance_and_evidence_have_three_initial_and_51_settlement_records(
         x["review_status"] == "reviewed" and x["municipality_id"] == "jp-local-010006"
         for x in budget + settlement
     )
-    assert all(x["stage"] == "initial_budget" and x["account_type"] == "general" and x["fiscal_year"] == 2026 for x in budget)
-    assert all(x["stage"] == "settlement" and x["account_type"] == "ordinary" and x["fiscal_year"] in (2022, 2023, 2024) for x in settlement)
-    assert {x["subject_id"] for x in evidence + settlement_evidence} == {x["id"] for x in budget + settlement}
+    assert all(
+        x["stage"] == "initial_budget"
+        and x["account_type"] == "general"
+        and x["fiscal_year"] == 2026
+        for x in budget
+    )
+    assert all(
+        x["stage"] == "settlement"
+        and x["account_type"] == "ordinary"
+        and x["fiscal_year"] in (2022, 2023, 2024)
+        for x in settlement
+    )
+    assert {x["subject_id"] for x in evidence + settlement_evidence} == {
+        x["id"] for x in budget + settlement
+    }
     assert 'data/reviewed/hokkaido-prefecture/settlement_records.json' in FINANCE
     assert 'data/reviewed/hokkaido-prefecture/settlement_evidence_packets.json' in FINANCE
 
