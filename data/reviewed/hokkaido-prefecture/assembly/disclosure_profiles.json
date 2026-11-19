@@ -1,0 +1,101 @@
+[
+  {
+    "as_of": "2026-11-20",
+    "assembly_id": "jp-local-010006-assembly-2023",
+    "confidence": "high",
+    "id": "jp-local-010006-assembly-2023-disclosure-2026",
+    "items": [
+      {
+        "availability": "published",
+        "granularity": "member",
+        "item": "member_roster",
+        "note": "選挙区・議員数のページに選挙区別の議員情報を掲載し、議員紹介ページ群への導線がある。",
+        "source_url": "https://www.gikai.pref.hokkaido.lg.jp/gaiyou/senkyoku/30senkyoku.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "faction",
+        "item": "faction_composition",
+        "note": "会派別議員数を掲載（令和8年8月10日現在：自民党・道民会議51、民主・道民連合26、北海道結志会8、公明党8、日本共産党2、北海道維新の会1の計96人、定数100人・欠員4人）。",
+        "source_url": "https://www.gikai.pref.hokkaido.lg.jp/gaiyou/senkyoku/30senkyoku.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "assembly",
+        "item": "committee_composition",
+        "note": "委員会一覧ページに常任委員会9・議会運営委員会・特別委員会8の構成と所管事務を掲載。",
+        "source_url": "https://www.gikai.pref.hokkaido.lg.jp/iinkai/index2.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "assembly",
+        "item": "proposals_and_results",
+        "note": "会期ごとに議案処理簿（PDF）で議案番号・件名・提出年月日・付託委員会・議決年月日・議決状況を掲載。",
+        "source_url": "https://www.gikai.pref.hokkaido.lg.jp/honkaigi/32honkaigi/8-3t/269430.html"
+      },
+      {
+        "availability": "not_published",
+        "granularity": "none",
+        "item": "faction_votes",
+        "note": "議案処理簿に会派別の賛否・態度の欄はなく、会期ごとの会派別態度を示す公表物は存在しない。",
+        "source_url": null
+      },
+      {
+        "availability": "not_published",
+        "granularity": "none",
+        "item": "member_votes",
+        "note": "本会議会議録（速報版）でも起立採決は「起立多数」の宣告のみで、起立者数・議員名は記録されない。議員個人別の表決は公表されていない。",
+        "source_url": null
+      },
+      {
+        "availability": "restricted",
+        "granularity": "document",
+        "item": "political_activity_expense_reports",
+        "note": "Web公表は年度ごとの集計（会派分・議員分・合計の交付額・支出額・返納額・執行率）のみ。収支報告書自体は北海道議会事務局閲覧室（議会庁舎2階）で閲覧に供される（5年分、提出期限の末日の翌日から90日経過後）。",
+        "source_url": "https://www.gikai.pref.hokkaido.lg.jp/Contents/seimukatudou/seimukatudou-index.html"
+      },
+      {
+        "availability": "restricted",
+        "granularity": "document",
+        "item": "political_activity_expense_receipts",
+        "note": "領収書等の写しはオンライン公開されず、閲覧室での閲覧のみ。写しの交付は情報公開条例に基づき有料（1枚10円）。",
+        "source_url": null
+      },
+      {
+        "availability": "not_published",
+        "granularity": "none",
+        "item": "inspection_trip_reports",
+        "note": "委員会の道内・道外調査は各委員会の審議概要に「調査実施報告の件［委員長報告］」の議事記録があるのみで、報告書・一覧は公表されていない。本会議議決による議員派遣も、内容の一覧・報告書のWeb公表は確認できなかった。",
+        "source_url": null
+      },
+      {
+        "availability": "published",
+        "granularity": "document",
+        "item": "meeting_minutes",
+        "note": "本会議会議録は速報版PDFを公表し、正式版は会議録データベースで検索・閲覧できる（令和8年第3回定例会の正式版は登録時点で未登載）。",
+        "source_url": null
+      },
+      {
+        "availability": "published",
+        "granularity": "document",
+        "item": "session_broadcast",
+        "note": "本会議のインターネット中継・録画配信を提供。",
+        "source_url": null
+      },
+      {
+        "availability": "published",
+        "granularity": "assembly",
+        "item": "petition_results",
+        "note": "請願は付託会期別に番号・件名・受理日・付託委員会・結果（継続審査・採択・取り下げ）を一覧公表（第1号〜第33号）。令和8年第3回定例会では新規付託・結論ともになく、閉会中の継続審査が決定されたのみ（2026年11月20日に一覧を再確認）。",
+        "source_url": "https://www.gikai.pref.hokkaido.lg.jp/gian/seigan/146988.html"
+      }
+    ],
+    "review_status": "reviewed",
+    "sources": [
+      "hokkaido-assembly-members-2026",
+      "hokkaido-assembly-proposals-2026-3",
+      "hokkaido-assembly-seimu",
+      "hokkaido-assembly-petitions"
+    ]
+  }
+]

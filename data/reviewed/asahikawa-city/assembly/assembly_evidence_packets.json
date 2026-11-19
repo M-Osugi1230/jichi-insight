@@ -1,0 +1,71 @@
+[
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "seat_count",
+        "location_note": "「市議会の仕組み」ページ",
+        "review_note": null,
+        "source_ids": [
+          "asahikawa-city-assembly-structure"
+        ],
+        "statement": "議員定数は条例で34人と定めている（市議会の仕組み）。会派等別名簿・議員別賛否ページの人数とも34人で一致する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "term",
+        "location_note": "令和5年度議会運営委員会の記録、「請願・陳情」ページの結果一覧、北海道選挙管理委員会の任期満了一覧",
+        "review_note": null,
+        "source_ids": [
+          "asahikawa-city-assembly-operations-2023",
+          "asahikawa-city-assembly-petitions",
+          "hokkaido-assembly-term-expiry-list-2026"
+        ],
+        "statement": "現任期の開始は2023年5月2日（議会運営委員会の記録に「令和5年5月2日以降」の新体制の記述があり、請願・陳情の結果一覧も令和5年分を「5月1日以前／5月2日以降」で区分する）。満了日は北海道選挙管理委員会「市町村の長及び議会議員の任期満了一覧（令和8年10月26日現在）」の旭川市の行に、議会議員の任期満了として令和9年5月1日（2027-05-01）の明記がある。"
+      },
+      {
+        "decision": "accepted",
+        "field": "factions",
+        "location_note": "会派等別名簿、議員別賛否ページ",
+        "review_note": null,
+        "source_ids": [
+          "asahikawa-city-assembly-roster-by-faction",
+          "asahikawa-city-assembly-votes-2026-nintei1"
+        ],
+        "statement": "会派構成は自民党・市民会議13人・民主・市民連合6人・公明党5人・日本共産党4人・旭川市民連合4人・無所属2人の計34人。令和8年第3回定例会の議員別賛否ページの会派別人数とも一致する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "committees",
+        "location_note": "常任委員会行政視察報告ページ、議会運営委員会の記録",
+        "review_note": null,
+        "source_ids": [
+          "asahikawa-city-assembly-inspection-2025",
+          "asahikawa-city-assembly-operations-2023"
+        ],
+        "statement": "常任委員会は総務・民生・経済建設・子育て文教の4委員会で、ほかに議会運営委員会がある。決算審査特別委員会は令和8年第3回定例会で設置が議決された特別委員会であり、常設の委員会一覧には含めない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "continued_petitions",
+        "location_note": "令和8年第3回定例会 議決結果",
+        "review_note": "登録は結論が出た会期で行う（更新サイクルの設計どおり）。本会期の結果表には継続の決定自体は全会一致で記録されているが、案件としては登録しない。",
+        "source_ids": [
+          "asahikawa-city-assembly-results-2026-r8s3"
+        ],
+        "statement": "本会期で閉会中継続審査となった陳情は14件（第35・44・45・49・52・53・54・56・57・58・59・60・61・62号）で、いずれも結論が出ていないため本登録の対象外とした。"
+      }
+    ],
+    "id": "evidence-jp-local-012041-assembly-2023",
+    "open_questions": [
+      "令和5・6年度分の常任委員会行政視察報告ページの所在（令和7年11月実施分のみ所在を確認）",
+      "単独行政視察報告書の公表ページの所在（令和5年度からHP公開と議会改革の取組資料に明記があるが未特定）",
+      "視察費用（旅費等）の公表有無（概要HTMLに記載なし、報告書PDF本文は未確認）",
+      "請願第2号（令和8年・採択）が結論した会期（第1回または第2回定例会。第3回の結果表には現れない）",
+      "令和7年度政活費で個人単位の公表がある杉山允孝の会派異動の時期（現在の会派等別名簿では自民党・市民会議所属）"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-012041-assembly-2023",
+    "subject_type": "assembly"
+  }
+]

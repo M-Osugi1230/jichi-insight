@@ -1,0 +1,33 @@
+[
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "inspection_trip_reports",
+        "location_note": "委員会一覧・各委員会の審議概要ページ（総務・総合政策・経済・文教・建設・北方領土対策特別・子ども政策調査特別・食と観光調査特別の各委員会）",
+        "review_note": null,
+        "source_ids": [
+          "hokkaido-assembly-committees-2026"
+        ],
+        "statement": "常任・特別委員会の道内・道外調査について、報告書または一覧の形での公式公表は確認できなかった。各委員会の審議概要には「道内調査実施報告の件［委員長報告］」「道外調査実施報告の件［委員長報告］」という議事項目として委員長報告が行われた事実は記録されるが、報告書本文（調査先・日程・参加者・費用）は添付・一覧化されていない。したがって視察レコードは登録せず、公表がないこと自体を記録する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_dispatch_reports",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "hokkaido-assembly-proposals-2026-3"
+        ],
+        "statement": "本会議の議決による議員派遣については、対象会期でも議決が行われたが、派遣内容（派遣先・期間・派遣議員）の一覧・報告書のWeb公表は確認できなかった。旧サイトには過去期の派遣報告書PDFが残るが、第32期分の体系的なWeb公表は未確認であるため、議員派遣も欠損として扱う。"
+      }
+    ],
+    "id": "evidence-jp-local-010006-assembly-2023-inspection-trips",
+    "open_questions": [
+      "正式会議録（第3回定例会分）の登載後に派遣内容が確認できた場合は、議員派遣の登録を別途検討する。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-010006-assembly-2023",
+    "subject_type": "assembly"
+  }
+]
