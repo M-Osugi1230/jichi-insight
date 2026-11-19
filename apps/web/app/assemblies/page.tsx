@@ -28,7 +28,7 @@ export default function AssembliesPage() {
       <p className="eyebrow">Assembly accountability</p>
       <h1>議会を、質問数ではなく役割と根拠で見る。</h1>
       <p>議会の審議・表決・情報公開と、執行部が実施した政策成果は別のものです。公開されていない議員別賛否を推測して再現したり、議員や会派を活動量・支出額で順位付けしたりしません。総合点や会派ランキングは出しません。</p>
-      <p className={styles.attention}>3議会とも、議員ごとの賛否は公表されていません。会派別賛否が公表されているのは福岡市・北九州市の2議会のみです。</p>
+      <p className={styles.attention}>確認できること：3議会の議案・議決結果と公開範囲、福岡市議会・北九州市議会の会派別賛否。まだ確認できないこと：議員ごとの賛否は3議会とも公表されていません。福岡県議会は会派別賛否も公表されていません。</p>
     </header>
     <section aria-label="3議会の情報公開状況" className={styles.grid}>
       {assemblySlugs.map(slug => {
