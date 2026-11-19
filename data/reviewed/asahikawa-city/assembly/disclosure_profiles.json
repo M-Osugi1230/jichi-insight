@@ -1,0 +1,102 @@
+[
+  {
+    "as_of": "2026-11-20",
+    "assembly_id": "jp-local-012041-assembly-2023",
+    "confidence": "high",
+    "id": "jp-local-012041-assembly-2023-disclosure-2026",
+    "items": [
+      {
+        "availability": "published",
+        "granularity": "member",
+        "item": "member_roster",
+        "note": "会派等別名簿・議席順名簿を公式サイトに掲載（34人、会派等・議席番号・当選回数を含む）。",
+        "source_url": "https://www.city.asahikawa.hokkaido.jp/council/6100/6120/d066336.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "faction",
+        "item": "faction_composition",
+        "note": "会派等別名簿に5会派と無所属の所属議員数（計34人）を掲載。",
+        "source_url": "https://www.city.asahikawa.hokkaido.jp/council/6100/6120/d066336.html"
+      },
+      {
+        "availability": "unknown",
+        "granularity": "unknown",
+        "item": "committee_composition",
+        "note": "常任委員会の委員は行政視察報告の概要等に個別に現れるが、委員会構成の一覧ページは本登録では特定できなかった。",
+        "source_url": "https://www.city.asahikawa.hokkaido.jp/council/6400/6440/d083733.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "assembly",
+        "item": "proposals_and_results",
+        "note": "定例会ごとに議決結果表（議案番号・件名・提出者・議決月日・議決結果）を掲載。令和3年以降の会期が索引から辿れる。",
+        "source_url": "https://www.city.asahikawa.hokkaido.jp/council/6400/6410/d084790.html"
+      },
+      {
+        "availability": "not_published",
+        "granularity": "none",
+        "item": "faction_votes",
+        "note": "会派別賛否の独立した公表はない。賛否が分かれた案件については議員別表（会派等を併記）からの集計のみが可能。",
+        "source_url": "https://www.city.asahikawa.hokkaido.jp/council/6400/6410/d084790.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "member",
+        "item": "member_votes",
+        "note": "賛否が分かれた案件に限り、議員別賛否（会派等・議員名・賛否等の別34名分）を掲載。全会一致の案件は内訳の公表なし。",
+        "source_url": "https://www.city.asahikawa.hokkaido.jp/council/6400/6410/d084894.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "faction",
+        "item": "political_activity_expense_reports",
+        "note": "会派別・無所属議員個人別に決算書・会計帳簿を掲載（決算書は過去5年分）。",
+        "source_url": "https://www.city.asahikawa.hokkaido.jp/council/6100/6121/d052623.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "document",
+        "item": "political_activity_expense_receipts",
+        "note": "領収書等の写しを単位別ページに月別PDFで掲載（平成29年度執行分から）。",
+        "source_url": "https://www.city.asahikawa.hokkaido.jp/council/6100/6121/d052623.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "assembly",
+        "item": "inspection_trip_reports",
+        "note": "常任委員会行政視察報告（概要HTML・委員個人別報告書PDF）を掲載（令和5年度からHP公開）。",
+        "source_url": "https://www.city.asahikawa.hokkaido.jp/council/6400/6440/d083733.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "document",
+        "item": "meeting_minutes",
+        "note": "公式サイトの「会議録、議会中継」ページに会議録を掲載。",
+        "source_url": "https://www.city.asahikawa.hokkaido.jp/council/6500/6540/index.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "document",
+        "item": "session_broadcast",
+        "note": "公式サイトの「会議録、議会中継」ページに議会中継を掲載。",
+        "source_url": "https://www.city.asahikawa.hokkaido.jp/council/6500/6540/index.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "assembly",
+        "item": "petition_results",
+        "note": "「結果が出た請願・陳情一覧」に結論が出た請願・陳情を暦年別に整理し、本文PDFと結果（採択／不採択／取下げ）を掲載。",
+        "source_url": "https://www.city.asahikawa.hokkaido.jp/council/6300/d052622.html"
+      }
+    ],
+    "review_status": "reviewed",
+    "sources": [
+      "asahikawa-city-assembly-roster-by-faction",
+      "asahikawa-city-assembly-results-2026-r8s3",
+      "asahikawa-city-assembly-expenses-index",
+      "asahikawa-city-assembly-inspection-2025",
+      "asahikawa-city-assembly-petitions"
+    ]
+  }
+]
