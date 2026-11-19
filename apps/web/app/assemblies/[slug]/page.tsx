@@ -127,7 +127,7 @@ export default async function AssemblyDetailPage({params}:PageProps){
               <td><strong>{proposal.title}</strong>
                 {proposal.related_fiscal_record_ids.length>0 ? <p><Link href={`/municipalities/${slug}`}>関連する財政ビューへ（接続済み fiscal record {proposal.related_fiscal_record_ids.length}件）</Link></p> : null}
                 <Sources ids={proposal.sources} available={data.sources}/>
-                <EvidenceLink packets={evidenceFor(data,proposal.id)} sources={data.sources}/>
+                <EvidenceLink packets={evidenceFor(data,proposal.id)} sources={data.sources} hideOpenQuestions={slug==="nagoya-city" && proposal.proposal_number==="第134号"}/>
               </td>
               <td>{proposal.submitted_by||"未収録"}</td>
               <td>{date(proposal.decided_at)}</td>
