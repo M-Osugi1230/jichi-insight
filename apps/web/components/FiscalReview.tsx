@@ -2,7 +2,8 @@ import { breakdownChildren, formatJapaneseYen, type FiscalRecord } from "@/lib/f
 import { sourceCatalog } from "@/lib/catalog";
 import styles from "./FiscalReview.module.css";
 
-type Props = { municipality: string; records: FiscalRecord[] };
+type FiscalSource = { id: string; title: string; url: string; indexed_at: string };
+type Props = { municipality: string; records: FiscalRecord[]; sources?: FiscalSource[] };
 const metrics = [
   ["total_revenue", "歳入総額"], ["local_tax", "地方税収"], ["total_expenditure", "歳出総額"],
   ["formal_balance", "形式収支"], ["carryover_resources", "翌年度繰越財源"],
@@ -24,24 +25,24 @@ function display(record: FiscalRecord | undefined): string {
   if ((record.unit === "people" || record.unit === "persons")) return `${record.value.toLocaleString("ja-JP")}人`;
   return `${record.value.toLocaleString("ja-JP")}${record.unit === "ratio" || record.unit === "index" ? "" : ` ${record.unit}`}`;
 }
-function SourceLinks({ records }: { records: (FiscalRecord | undefined)[] }) {
+function SourceLinks({ records, sources = sourceCatalog }: { records: (FiscalRecord | undefined)[]; sources?: FiscalSource[] }) {
   const ids = [...new Set(records.flatMap(record => record?.sources ?? []))];
-  const sources = ids.map(id => sourceCatalog.find(source => source.id === id)).filter((s): s is NonNullable<typeof s> => Boolean(s));
-  if (!sources.length) return <p className={styles.muted}>出典リンク未収録</p>;
-  return <p className={styles.sources}>一次資料：{sources.map((source, i) =>
+  const matchedSources = ids.map(id => sources.find(source => source.id === id)).filter((s): s is NonNullable<typeof s> => Boolean(s));
+  if (!matchedSources.length) return <p className={styles.muted}>出典リンク未収録</p>;
+  return <p className={styles.sources}>一次資料：{matchedSources.map((source, i) =>
     <span key={source.id}>{i > 0 ? " ／ " : ""}<a href={source.url} rel="noopener noreferrer" target="_blank">{source.title}</a>（索引更新 {source.indexed_at}）</span>)}</p>;
 }
-function YearRows({ records, metricKeys }: { records: FiscalRecord[]; metricKeys: readonly (readonly [string, string])[] }) {
+function YearRows({ records, metricKeys, sources }: { records: FiscalRecord[]; metricKeys: readonly (readonly [string, string])[]; sources?: FiscalSource[] }) {
   const years = [2022, 2023, 2024];
   return <div className={styles.scroll}><table className={styles.table}>
     <thead><tr><th scope="col">項目</th>{years.map(year => <th scope="col" key={year}>{year}年度 決算</th>)}</tr></thead>
     <tbody>{metricKeys.map(([key, label]) => <tr key={key}><th scope="row">{label}</th>{years.map(year => {
       const record = records.find(r => r.fiscal_year === year && r.metric === key);
-      return <td key={year}>{display(record)}{record ? <SourceLinks records={[record]} /> : null}</td>;
+      return <td key={year}>{display(record)}{record ? <SourceLinks records={[record]} sources={sources} /> : null}</td>;
     })}</tr>)}</tbody>
   </table></div>;
 }
-function Breakdown({ records, metric, title }: { records: FiscalRecord[]; metric: string; title: string }) {
+function Breakdown({ records, metric, title, sources }: { records: FiscalRecord[]; metric: string; title: string; sources?: FiscalSource[] }) {
   const record = records.find(r => r.fiscal_year === 2024 && r.metric === metric);
   const topLevel = record ? breakdownChildren(record, null) : [];
   const rows: { item: (typeof topLevel)[number]; depth: number }[] = [];
@@ -63,10 +64,10 @@ function Breakdown({ records, metric, title }: { records: FiscalRecord[]; metric
       </tbody></table></div>}
     {record && breakdownChildren(record, null).some(item => breakdownChildren(record, item.key).length > 0) ?
       <p className={styles.muted}>字下げした内訳・内数（「うち」）は上位区分に含まれ、二重計上を避けるため上位区分の額に加算していません。</p> : null}
-    <SourceLinks records={[record]} />
+    <SourceLinks records={[record]} sources={sources} />
   </section>;
 }
-export function FiscalReview({ municipality, records }: Props) {
+export function FiscalReview({ municipality, records, sources }: Props) {
   const settlement = records.filter(r => r.stage === "settlement" && r.account_type === "ordinary" && r.review_status === "reviewed");
   const latest = (metric: string, year = 2024) => settlement.find(r => r.metric === metric && r.fiscal_year === year);
   const pop = latest("population");
@@ -81,22 +82,22 @@ export function FiscalReview({ municipality, records }: Props) {
       {[[revenue,"歳入総額"],[expenditure,"歳出総額"],[taxes,"地方税収"]].map(([r,label]) => {
         const record = r as FiscalRecord | undefined;
         return <article className={styles.card} key={label as string}><small>2024年度 普通会計決算</small><h3>{label as string}</h3>
-          <strong>{display(record)}</strong><SourceLinks records={[record]} /></article>;
+          <strong>{display(record)}</strong><SourceLinks records={[record]} sources={sources} /></article>;
       })}
     </div>
     <section className={styles.subsection}><h3>歳入・歳出・収支の推移（2022〜2024年度、普通会計決算）</h3>
-      <YearRows records={settlement} metricKeys={metrics} /></section>
+      <YearRows records={settlement} metricKeys={metrics} sources={sources} /></section>
     <div className={styles.twoCols}>
-      <Breakdown records={settlement} metric="expenditure_by_purpose" title="目的別歳出" />
-      <Breakdown records={settlement} metric="expenditure_by_nature" title="性質別歳出" />
+      <Breakdown records={settlement} metric="expenditure_by_purpose" title="目的別歳出" sources={sources} />
+      <Breakdown records={settlement} metric="expenditure_by_nature" title="性質別歳出" sources={sources} />
     </div>
     <section className={styles.subsection}><h3>基金・地方債残高（普通会計決算）</h3>
-      <YearRows records={settlement} metricKeys={[["fund_balance","基金残高"],["debt_balance","地方債残高"]]} />
+      <YearRows records={settlement} metricKeys={[["fund_balance","基金残高"],["debt_balance","地方債残高"]]} sources={sources} />
       <p className={styles.muted}>基金の内訳は下記の2024年度レコードに基づきます。</p>
-      <Breakdown records={settlement} metric="fund_balance" title="基金内訳" />
+      <Breakdown records={settlement} metric="fund_balance" title="基金内訳" sources={sources} />
     </section>
     <section className={styles.subsection}><h3>主要財政指標（普通会計決算）</h3>
-      <YearRows records={settlement} metricKeys={indicators} />
+      <YearRows records={settlement} metricKeys={indicators} sources={sources} />
       <p className={styles.muted}>指標の未収録項目や算定条件の異なる比率は補完しません。福岡県独自の性質別区分は標準区分と混用しません。</p>
     </section>
     <section className={styles.subsection}><h3>住民1人あたりの参考値（2024年度）</h3>
@@ -106,7 +107,7 @@ export function FiscalReview({ municipality, records }: Props) {
         const record = r as FiscalRecord | undefined;
         const perResident = population && record?.amount_yen != null ? Math.round(record.amount_yen / population) : null;
         return <article className={styles.card} key={label as string}><h3>{label as string}／人</h3><strong>{perResident === null ? "未収録" : `${perResident.toLocaleString("ja-JP")}円`}</strong><small>Jichi Insight 算出・参考値</small>
-          <SourceLinks records={[record,pop]} /></article>;
+          <SourceLinks records={[record,pop]} sources={sources} /></article>;
       })}</div>
     </section>
     <p className={styles.muted}>出典鮮度：各表内の「索引更新」を参照。掲載数値は Reviewed の決算レコードに限定しています。比較は参考併記のみで順位・評価を示しません。</p>
