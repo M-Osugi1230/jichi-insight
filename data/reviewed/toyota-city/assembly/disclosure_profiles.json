@@ -1,0 +1,94 @@
+[
+  {
+    "as_of": "2026-11-19",
+    "assembly_id": "jp-local-232114-assembly-2023",
+    "confidence": "high",
+    "id": "jp-local-232114-assembly-2023-disclosure-2026",
+    "items": [
+      {
+        "availability": "published",
+        "granularity": "member",
+        "item": "member_roster",
+        "note": "議員紹介ページに会派別名簿・50音別名簿を掲載。",
+        "source_url": "https://toyota-shigikai.jp/member.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "faction",
+        "item": "faction_composition",
+        "note": "会派別名簿に会派ごとの構成議員を掲載（自民クラブ28人・市民フォーラム9人・公明党豊田市議団4人・新しい風とよた3人・諸派1人、計45人）。",
+        "source_url": "https://toyota-shigikai.jp/member.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "assembly",
+        "item": "committee_composition",
+        "note": "議員紹介ページに委員会別名簿（常任・特別・議会運営等）を掲載。",
+        "source_url": "https://toyota-shigikai.jp/member.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "assembly",
+        "item": "proposals_and_results",
+        "note": "会期ごとに議決結果一覧（番号・件名・議決結果・議決年月日・付託委員会）を掲載。",
+        "source_url": "https://toyota-shigikai.jp/result.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "faction",
+        "item": "faction_votes",
+        "note": "全ての表決案件について会派別の賛成・反対人数を議決結果一覧に掲載。自民クラブは議長を除く人数で表示され、令和8年9月定例会では欠席1名のため26人と印字されている。",
+        "source_url": "https://toyota-shigikai.jp/resultpopup1916.html"
+      },
+      {
+        "availability": "not_published",
+        "granularity": "none",
+        "item": "member_votes",
+        "note": "議員個人別の賛否は公表されていない（議決結果一覧・議会だよりとも会派別のみ）。",
+        "source_url": null
+      },
+      {
+        "availability": "published",
+        "granularity": "faction",
+        "item": "political_activity_expense_reports",
+        "note": "会派別の交付額・使途項目別支出額・差引額の集計を年度別に掲載。議員個人単位の集計公表はない。",
+        "source_url": "https://toyota-shigikai.jp/investigation.html"
+      },
+      {
+        "availability": "restricted",
+        "granularity": "document",
+        "item": "political_activity_expense_receipts",
+        "note": "収支報告書・領収書等の詳細はWeb公表されておらず、南庁舎1階市政情報コーナーで閲覧できる旨が公表文書に明記されている。",
+        "source_url": null
+      },
+      {
+        "availability": "published",
+        "granularity": "document",
+        "item": "inspection_trip_reports",
+        "note": "常任・特別委員会の視察報告書（委員会別・報告委員個人単位）を一覧掲載。現任期分として令和5〜7年度分を確認。費用の公表はない。",
+        "source_url": "https://toyota-shigikai.jp/committeereport.html"
+      },
+      {
+        "availability": "not_published",
+        "granularity": "none",
+        "item": "petition_results",
+        "note": "陳情の件名・結果の一覧公表の所在を特定できなかった。令和8年9月定例会の提出案件には陳情1件が含まれるが、未登録（欠損として記録）。",
+        "source_url": null
+      },
+      {
+        "availability": "published",
+        "granularity": "document",
+        "item": "meeting_minutes",
+        "note": "会議録検索システムを提供。",
+        "source_url": null
+      }
+    ],
+    "review_status": "reviewed",
+    "sources": [
+      "toyota-city-assembly-official-site",
+      "toyota-city-assembly-results-2026-september",
+      "toyota-city-assembly-expenses-page",
+      "toyota-city-assembly-inspection-index"
+    ]
+  }
+]
