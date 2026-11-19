@@ -66,7 +66,7 @@ export function MunicipalityDiscoveryPanel({
           <li className={styles.item} key={item.label}>
             <span className={styles.label}>{item.label}</span>
             {item.enabled && item.href ? (
-              <Link href={item.href}>この情報を見る</Link>
+              <Link href={item.href}>{item.label}を見る</Link>
             ) : (
               <span className={styles.unavailable}>対象外</span>
             )}
