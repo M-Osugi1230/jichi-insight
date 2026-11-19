@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updated_at": "2026-11-16",
+  "updated_at": "2026-11-19",
   "scope": "phase15-core-capital-review",
   "records": [
     {
@@ -44,6 +44,90 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "一般会計歳入147,928,131,915円・歳出142,805,684,915円を円単位で含む公式決算資料（令和6年度高槻市一般会計歳入歳出決算書）。実質収支額は決算附属書類の実質収支に関する調書により3,523,157千円（同調書は千円単位の公表のため千円精度のまま記録）。決算の認定議案である認定第1号は令和7年第5回定例会（12月定例会）で令和7年12月3日に認定された。決算書（歳入歳出決算事項別明細書）の款別合計との突合と監査委員の決算審査意見書の内容確認は未実施。"
+    },
+    {
+      "availability": "published",
+      "category": "settlement",
+      "confidence": "high",
+      "id": "takatsuki-city-mic-settlement-card-fy2022",
+      "indexed_at": "2026-11-19",
+      "municipality_key": "takatsuki-city",
+      "notes": "総務省が公表する令和4年度市町村決算カード（大阪府分）のうち高槻市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、高槻市『令和4年度財政状況資料集』と突合した。",
+      "organization": "総務省",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "令和4年度 市町村決算カード（大阪府）",
+      "url": "https://www.soumu.go.jp/main_content/000937106.pdf"
+    },
+    {
+      "availability": "published",
+      "category": "settlement",
+      "confidence": "high",
+      "id": "takatsuki-city-fiscal-situation-collection-fy2022",
+      "indexed_at": "2026-11-19",
+      "municipality_key": "takatsuki-city",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する公式資料。大阪府が府内市町村の財政状況資料集を公表しており、高槻市分はExcel形式で掲載されている。総務省決算カードの照合先として使用した。",
+      "organization": "大阪府",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "令和4年度 財政状況資料集",
+      "url": "https://www.pref.osaka.lg.jp/documents/62628/08takatsuki_2022_2.xlsx"
+    },
+    {
+      "availability": "published",
+      "category": "settlement",
+      "confidence": "high",
+      "id": "takatsuki-city-mic-settlement-card-fy2023",
+      "indexed_at": "2026-11-19",
+      "municipality_key": "takatsuki-city",
+      "notes": "総務省が公表する令和5年度市町村決算カード（大阪府分）のうち高槻市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、高槻市『令和5年度財政状況資料集』と突合した。",
+      "organization": "総務省",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "令和5年度 市町村決算カード（大阪府）",
+      "url": "https://www.soumu.go.jp/main_content/000998973.pdf"
+    },
+    {
+      "availability": "published",
+      "category": "settlement",
+      "confidence": "high",
+      "id": "takatsuki-city-fiscal-situation-collection-fy2023",
+      "indexed_at": "2026-11-19",
+      "municipality_key": "takatsuki-city",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する公式資料。大阪府が府内市町村の財政状況資料集を公表しており、高槻市分はExcel形式で掲載されている。総務省決算カードの照合先として使用した。",
+      "organization": "大阪府",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "令和5年度 財政状況資料集",
+      "url": "https://www.pref.osaka.lg.jp/documents/105232/08takatsuki_2023_2.xlsx"
+    },
+    {
+      "availability": "published",
+      "category": "settlement",
+      "confidence": "high",
+      "id": "takatsuki-city-mic-settlement-card-fy2024",
+      "indexed_at": "2026-11-19",
+      "municipality_key": "takatsuki-city",
+      "notes": "総務省が公表する令和6年度市町村決算カード（大阪府分）のうち高槻市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、高槻市『令和6年度財政状況資料集』と突合した。",
+      "organization": "総務省",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "令和6年度 市町村決算カード（大阪府）",
+      "url": "https://www.soumu.go.jp/main_content/001063998.pdf"
+    },
+    {
+      "availability": "published",
+      "category": "settlement",
+      "confidence": "high",
+      "id": "takatsuki-city-fiscal-situation-collection-fy2024",
+      "indexed_at": "2026-11-19",
+      "municipality_key": "takatsuki-city",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する公式資料。大阪府が府内市町村の財政状況資料集を公表しており、高槻市分はExcel形式で掲載されている。総務省決算カードの照合先として使用した。",
+      "organization": "大阪府",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "令和6年度 財政状況資料集",
+      "url": "https://www.pref.osaka.lg.jp/documents/127944/08takatsuki_2024_2.xlsx"
     }
   ]
 }
