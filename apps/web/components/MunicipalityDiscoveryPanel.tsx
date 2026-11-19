@@ -11,6 +11,8 @@ type Props = {
   budgetHref: string;
   settlementHref?: string;
   fiscalDetailHref?: string;
+  /** Link directly to a registered project list or section when available. */
+  projectHref?: string;
 };
 
 export function MunicipalityDiscoveryPanel({
@@ -19,6 +21,7 @@ export function MunicipalityDiscoveryPanel({
   budgetHref,
   settlementHref,
   fiscalDetailHref,
+  projectHref,
 }: Props) {
   const available = municipalityDiscoveryAvailability(officialCode);
   const items = [
@@ -40,7 +43,7 @@ export function MunicipalityDiscoveryPanel({
     {
       label: "重点事業",
       enabled: available.projects,
-      href: "/projects",
+      href: projectHref ?? "/projects",
     },
   ];
 
