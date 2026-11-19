@@ -27,6 +27,7 @@ import {
 import { formatCompactYen, formatExactYen } from "@/lib/finance";
 import { projectRegistry } from "@/lib/projectRegistry";
 import { canonicalFor } from "@/lib/pageMetadata";
+import { assemblies } from "@/lib/assemblyRegistry";
 import { promiseSourceDetails } from "@/lib/promiseSources";
 import { sourceConfidenceLabel } from "@/lib/statusLabels";
 
@@ -41,6 +42,7 @@ export const metadata: Metadata = {
 };
 
 export default function AichiPrefecturePage() {
+  const assembly = assemblies["aichi-prefecture"];
   const projects = projectRegistry["aichi-prefecture"];
   const reviewedProjects = projects.projects.filter((project) => project.review_status === "reviewed");
   const seriesCount = new Set(reviewedProjects.map((project) => project.series_id)).size;
@@ -101,7 +103,7 @@ export default function AichiPrefecturePage() {
             <div><p className="eyebrow">Scope</p><h2 id="scope-title">計画・予算・決算・知事の任期を分けて確認する。</h2></div>
             <div>
               <p>確認できること：「あいちビジョン2030」の計画構造と実施計画、2026年度の成立後一般会計当初予算、2022〜2024年度普通会計決算、Reviewed 重点事業と県の公式評価、大村秀章知事の現任期、公式選挙公報に基づく公約10件と出典。公約と重点事業の接続は推定関係として区別します。</p>
-              <p>まだ確認できないこと：本サイトには県議会の個別レコードが未登録です（議案・表決等）。公約と重点事業の登録はありますが、接続は low / inferred・要レビューであり、公約達成度や政策成果の確定判定ではありません。</p>
+              <p>確認できること：県議会の会期・議案・請願・会派別態度・政務活動費の Reviewed レコードも登録済みです。まだ確認できないこと：本会議の議員個人の投票記録と委員会視察の公式報告書は本サイトで未収録です。公約と重点事業の接続は low / inferred・要レビューであり、公約達成度や政策成果の確定判定ではありません。</p>
               <p>一般会計と普通会計、予算と決算は範囲・段階が異なります。直接つないで増減率や達成率とは扱いません。</p>
             </div>
           </section>
@@ -309,6 +311,22 @@ export default function AichiPrefecturePage() {
             </section>
           ) : null}
 
+          <section id="aichi-assembly" className={styles.scope} aria-labelledby="aichi-assembly-title">
+            <div>
+              <p className="eyebrow">Assembly accountability</p>
+              <h2 id="aichi-assembly-title">愛知県議会の議案・表決と情報公開</h2>
+              <p><Link href="/assemblies/aichi-prefecture">愛知県議会の Reviewed 詳細を見る</Link></p>
+            </div>
+            <div>
+              <h3>{assembly.sessions[0]?.name ?? "議会の会期"}</h3>
+              <p>会期：{assembly.sessions[0]?.start_date ?? "未確認"} 〜 {assembly.sessions[0]?.end_date ?? "未確認"}</p>
+              <p>登録案件：{assembly.proposals.length}件（議案32件・請願26件）。会派別態度：{assembly.factionVotes.length}件。政務活動費：{assembly.expenses.length}件（2025年度、会派分・議員個人分）。</p>
+              <p><strong>会派の態度は、採決に先立って議会運営委員会で確認したもので、本会議の投票記録そのものではありません。</strong> 無所属の人数内訳は原資料の印字どおりであり、所属人数・採決人数の一致を推定しません。</p>
+              <p>議員別賛否は公表されていません。委員会視察の報告書・一覧も公式 Web での公表を確認できず、本サイトには視察実績を推定登録していません。</p>
+              <p><Link href="/assemblies/aichi-prefecture#proposals">会期・議案・請願を確認</Link> ／ <Link href="/assemblies/aichi-prefecture#votes">会派別態度を確認</Link> ／ <Link href="/assemblies/aichi-prefecture#expenses">政務活動費を確認</Link> ／ <Link href="/assemblies/aichi-prefecture#trips">視察の公表状況を確認</Link></p>
+            </div>
+          </section>
+
           <section className={styles.scope} aria-labelledby="sources-title">
             <div><p className="eyebrow">Official sources</p><h2 id="sources-title">公式出典一覧</h2></div>
             <div>
@@ -329,7 +347,7 @@ export default function AichiPrefecturePage() {
               <li>登録済み公約10件の進捗・達成度を確定判定するための公式評価材料</li>
               <li>公約と重点事業の公式な対応関係・因果関係（現時点の接続は推定・要レビュー）</li>
               <li>収録対象外の重点事業と、確認できていない年度・執行・成果との接続</li>
-              <li>県議会の議案・表決・監視活動の個別記録</li>
+              <li>県議会の議員個人の投票記録と、委員会視察の公式報告書（公表未確認）。会派別態度は本会議の個票ではありません。</li>
               <li>2026年度予算の執行実績・決算</li>
             </ul>
           </section>
