@@ -13,7 +13,7 @@ REVIEW = (WEB / "components/FiscalReview.tsx").read_text(encoding="utf-8")
 PANEL = (WEB / "components/MunicipalityDiscoveryPanel.tsx").read_text(encoding="utf-8")
 
 
-def test_existing_phase15_cities_have_no_optional_settlement_package():
+def test_phase15_city_packages_allow_future_reviewed_settlement_expansion():
     queue = json.loads(
         (DATA / "catalog/phase15_core_capital_review_queue.json").read_text(encoding="utf-8")
     )
@@ -22,7 +22,21 @@ def test_existing_phase15_cities_have_no_optional_settlement_package():
     for row in reviewed:
         completion_file = Path(row["completion_path"]).name
         slug = completion_file.removesuffix("_phase15_completion.json") + "-city"
-        assert not (DATA / "reviewed" / slug / "settlement_records.json").exists(), slug
+        directory = DATA / "reviewed" / slug
+        assert (directory / "municipality.json").exists(), slug
+        assert (directory / "fiscal_records.json").exists(), slug
+        settlement_file = directory / "settlement_records.json"
+        if settlement_file.exists():
+            # Future #691 pilot data is allowed; it must supply Reviewed evidence.
+            assert (directory / "settlement_evidence_packets.json").exists(), slug
+            records = json.loads(settlement_file.read_text(encoding="utf-8"))
+            assert records, slug
+            assert all(
+                row["review_status"] == "reviewed"
+                and row["stage"] == "settlement"
+                and row["account_type"] == "ordinary"
+                for row in records
+            ), slug
 
 
 def test_missing_settlement_does_not_render_or_activate_fiscal_details():
