@@ -42,7 +42,7 @@ export default function ProjectsPage() {
   const reviewed = areas.flatMap(([, area]) =>
     area.projects.filter((project) => project.review_status === "reviewed"),
   );
-  const themes = [...new Set(reviewed.map((project) => project.policy_area))].sort();
+  const themes = [...new Set(reviewed.map((project) => project.policy_area))].sort().map((value) => ({\n    value, label: `${policyAreaLabels[value] ?? value}（${value}）`,\n  }));
 
   return (
     <>
