@@ -1,3 +1,4 @@
+import aichiFinanceCatalog from "../../../data/catalog/aichi_prefecture_finance_sources.json";
 import assemblyCatalog from "../../../data/catalog/fukuoka_assembly_sources.json";
 import cityFinanceCatalog from "../../../data/catalog/fukuoka_city_finance_sources.json";
 import financeCatalog from "../../../data/catalog/fukuoka_finance_sources.json";
@@ -40,9 +41,9 @@ export const municipalityMeta: Record<
     name: "愛知県",
     type: "都道府県",
     summary: "あいちビジョンの政策指標と、知事の任期・一次資料を確認します。",
-    status: "資料索引中",
-    href: "/municipalities/aichi",
-    fiscalSummary: "財政詳細は未登録",
+    status: "財政データ公開",
+    href: "/municipalities/aichi-prefecture",
+    fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
   },
   "fukuoka-prefecture": {
     name: "福岡県",
@@ -71,6 +72,7 @@ export const municipalityMeta: Record<
 };
 
 export const sourceCatalog = [
+  ...(aichiFinanceCatalog.records as SourceRecord[]),
   ...(officialCatalog.records as SourceRecord[]),
   ...(financeCatalog.records as SourceRecord[]),
   ...(cityFinanceCatalog.records as SourceRecord[]),
