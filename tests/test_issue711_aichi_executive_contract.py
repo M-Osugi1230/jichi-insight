@@ -30,6 +30,13 @@ def test_executive_page_does_not_claim_every_term_has_reviewed_promises():
     assert "3首長の原文公約を分割・登録済み" not in page
 
 
+def test_financial_quality_remains_scoped_to_existing_three_pilots():
+    page = (LIB / "dataQuality.ts").read_text(encoding="utf-8")
+    assert 'type FiscalMunicipalityKey = Exclude<MunicipalityKey, "aichi-prefecture">' in page
+    assert "Record<FiscalMunicipalityKey" in page
+    assert '"aichi-prefecture": fukuokaPrefectureFinance.records' not in page
+
+
 def test_empty_promise_terms_render_status_without_fake_records():
     page = (WEB / "promises/page.tsx").read_text(encoding="utf-8")
     assert 'promisesForExecutive(term).filter(p=>p.review_status==="reviewed")' in page
