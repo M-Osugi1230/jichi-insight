@@ -1,0 +1,326 @@
+{
+  "expansion_rule": {
+    "added_count": 5,
+    "description": "第2ラウンド（合計10件化）: 第1ラウンドと同じ母集団・交差条件を継続し、各都市像について、第1ラウンドの選定事業の続きから掲載順に事業をたどり、交差条件を満たす次の事業を1件ずつ選んだ。都市像1は施策3の事業013、都市像2は施策13の事業139、都市像3は施策19の事業265、都市像4は施策28の事業347（施策26・27では条件を満たさなかった）、都市像5は施策34の事業420を選んだ。金額の大小では選んでいない。selectionsの並びは、第1ラウンド5件（都市像1〜5の順）の後に、第2ラウンド5件（同じく都市像1〜5の順）。",
+    "total_count": 10
+  },
+  "issue": 716,
+  "municipality_id": "jp-local-231002",
+  "municipality_key": "nagoya-city",
+  "population": {
+    "description": "名古屋市総合計画2028（計画期間2024〜2028年度）の5つの都市像・42施策の下に位置づけられ、令和7年度実施状況（2026年11月公表）の対象となった計画掲載事業506件のうち、令和7年度当初予算の公表資料「令和7年度主な施策等一覧」に事項として掲載され、事業単独の金額（予定額）が確認できる事業。名古屋市には単一の公式な「重点事業」リストがないため、母集団は「総合計画2028の計画掲載事業 ∩ 主な施策等一覧に事項として掲載され事業単独の金額が確認できる事業」と定義する。主な施策等一覧は新規・拡充・特徴的な継続事項を中心とする選択的な公表資料であり、掲載されていないことは事業の重要性や実施の有無を意味しない。",
+    "fiscal_year": 2025,
+    "policy_count": 42,
+    "source_ids": [
+      "nagoya-city-plan-progress-fy2025-page"
+    ]
+  },
+  "review_status": "reviewed",
+  "scope": "expanded",
+  "selection_rule": {
+    "description": "第1ラウンド: 市の計画体系の柱である総合計画2028の5つの都市像の表示順に各都市像を取り、各都市像について、最初の施策から、令和7年度実施状況の掲載順に事業をたどり、母集団の交差条件（令和7年度主な施策等一覧に事項として掲載され、事業単独の金額が確認できること）を満たす最初の事業を1件ずつ選ぶ。金額の大小では選ばない。対応が事項の一部にとどまる場合や、1つの事項が複数事業にまたがる場合は選ばず、次の事業に進み、その経緯をskippedに残す。",
+    "pillars": [
+      "都市像1 人権が尊重され、誰もがいきいきと暮らし、活躍できる都市",
+      "都市像2 安心して子育てができ、子どもや若者が豊かに育つ都市",
+      "都市像3 人が支え合い、災害に強く安心・安全に暮らせる都市",
+      "都市像4 快適な都市環境と自然が調和した都市",
+      "都市像5 魅力と活力にあふれ、世界から人や企業をひきつける、開かれた都市"
+    ]
+  },
+  "selections": [
+    {
+      "official_title": "雇用等における女性の活躍推進",
+      "pillar": "都市像1 人権が尊重され、誰もがいきいきと暮らし、活躍できる都市",
+      "project_id": "jp-local-231002-project-2025-women-advancement-in-employment",
+      "selection_basis": "都市像1の最初の施策である施策1では交差条件を満たす事業がなく、施策2の掲載順に事業005〜008をたどったが条件を満たさず（事業006はskipped参照）、掲載順で最初に交差条件を満たした事業。一覧（スポーツ市民局分）に同名の事項として事業単独の金額（11,538千円）が掲載されている。",
+      "series_id": "jp-local-231002-project-series-women-advancement-in-employment",
+      "source_ids": [
+        "nagoya-city-plan-progress-fy2025-pdf",
+        "nagoya-city-budget-measures-sports-citizen-fy2025-pdf"
+      ]
+    },
+    {
+      "official_title": "保育所等利用待機児童対策等の推進",
+      "pillar": "都市像2 安心して子育てができ、子どもや若者が豊かに育つ都市",
+      "project_id": "jp-local-231002-project-2025-childcare-waitlist-countermeasures",
+      "selection_basis": "都市像2の最初の施策である施策13の掲載順に事業をたどり、事業122・132等は交差条件を満たさず（skipped参照）、掲載順で最初に交差条件を満たした事業。一覧（子ども青少年局分）に「保育所等利用待機児童対策」として金額（1,552,115千円）が掲載されている。",
+      "series_id": "jp-local-231002-project-series-childcare-waitlist-countermeasures",
+      "source_ids": [
+        "nagoya-city-plan-progress-fy2025-pdf",
+        "nagoya-city-budget-measures-children-youth-fy2025-pdf"
+      ]
+    },
+    {
+      "official_title": "感震ブレーカーの設置促進",
+      "pillar": "都市像3 人が支え合い、災害に強く安心・安全に暮らせる都市",
+      "project_id": "jp-local-231002-project-2025-seismic-breaker-installation",
+      "selection_basis": "都市像3では、最初の施策である施策18の全18事業に交差条件を満たす事業がなく、施策19の掲載順に事業237〜251をたどったが条件を満たさず（事業237・242・243・244はskipped参照）、掲載順で最初に交差条件を満たした事業。一覧（防災危機管理局分）に同名の事項として金額（140,940千円）が掲載されている。",
+      "series_id": "jp-local-231002-project-series-seismic-breaker-installation",
+      "source_ids": [
+        "nagoya-city-plan-progress-fy2025-pdf",
+        "nagoya-city-budget-measures-disaster-management-fy2025-pdf"
+      ]
+    },
+    {
+      "official_title": "新たな路面公共交通システム（SRT）の導入",
+      "pillar": "都市像4 快適な都市環境と自然が調和した都市",
+      "project_id": "jp-local-231002-project-2025-srt-new-surface-transit",
+      "selection_basis": "都市像4では、最初の施策である施策25に交差条件を満たす事業がなく（事業321はskipped参照）、施策26の掲載順に事業331〜338をたどったが条件を満たさず（事業335はskipped参照）、掲載順で最初に交差条件を満たした事業。一覧（住宅都市局分）に「新たな路面公共交通システムの導入」として金額（107,700千円）が掲載されている。",
+      "series_id": "jp-local-231002-project-series-srt-new-surface-transit",
+      "source_ids": [
+        "nagoya-city-plan-progress-fy2025-pdf",
+        "nagoya-city-budget-measures-housing-urban-fy2025-pdf"
+      ]
+    },
+    {
+      "official_title": "栄地区まちづくりプロジェクトの推進",
+      "pillar": "都市像5 魅力と活力にあふれ、世界から人や企業をひきつける、開かれた都市",
+      "project_id": "jp-local-231002-project-2025-sakae-district-project",
+      "selection_basis": "都市像5の最初の施策である施策34の掲載順に事業414〜418をたどったが条件を満たさず（事業414・416・417はskipped参照）、掲載順で最初に交差条件を満たした事業。一覧（住宅都市局分）に同名の事項として金額（459,929千円）が掲載されている。",
+      "series_id": "jp-local-231002-project-series-sakae-district-project",
+      "source_ids": [
+        "nagoya-city-plan-progress-fy2025-pdf",
+        "nagoya-city-budget-measures-housing-urban-fy2025-pdf"
+      ]
+    },
+    {
+      "official_title": "民間鉄道駅舎のバリアフリー化の推進",
+      "pillar": "都市像1 人権が尊重され、誰もがいきいきと暮らし、活躍できる都市",
+      "project_id": "jp-local-231002-project-2025-private-railway-station-barrier-free",
+      "selection_basis": "第2ラウンド。都市像1の掲載順の続きをたどり、施策3の事業011・012は交差条件を満たさず（skipped参照）、次に条件を満たした事業。一覧（健康福祉局分）に「民間鉄道駅舎バリアフリー化設備設置補助」として金額（332,977千円）が掲載され、本事業はこの補助制度を通じて実施される。",
+      "series_id": "jp-local-231002-project-series-private-railway-station-barrier-free",
+      "source_ids": [
+        "nagoya-city-plan-progress-fy2025-pdf",
+        "nagoya-city-budget-measures-health-welfare-fy2025-pdf"
+      ]
+    },
+    {
+      "official_title": "エリア支援保育所事業",
+      "pillar": "都市像2 安心して子育てができ、子どもや若者が豊かに育つ都市",
+      "project_id": "jp-local-231002-project-2025-area-support-nursery-schools",
+      "selection_basis": "第2ラウンド。都市像2の掲載順の続きをたどり、施策13の事業138は交差条件を満たさず（skipped参照）、次に条件を満たした事業。一覧（子ども青少年局分）に同名の事項として金額（29,327千円）が掲載されている。",
+      "series_id": "jp-local-231002-project-series-area-support-nursery-schools",
+      "source_ids": [
+        "nagoya-city-plan-progress-fy2025-pdf",
+        "nagoya-city-budget-measures-children-youth-fy2025-pdf"
+      ]
+    },
+    {
+      "official_title": "被災地域への支援・交流",
+      "pillar": "都市像3 人が支え合い、災害に強く安心・安全に暮らせる都市",
+      "project_id": "jp-local-231002-project-2025-disaster-area-support-and-exchange",
+      "selection_basis": "第2ラウンド。都市像3の掲載順の続きをたどり、施策19の事業253は交差条件を満たさず（skipped参照）、事業254〜264にも対応する事項がなく、次に条件を満たした事業。一覧（防災危機管理局分）に「被災地域への支援、交流事業」として金額（41,192千円）が掲載されている。",
+      "series_id": "jp-local-231002-project-series-disaster-area-support-and-exchange",
+      "source_ids": [
+        "nagoya-city-plan-progress-fy2025-pdf",
+        "nagoya-city-budget-measures-disaster-management-fy2025-pdf"
+      ]
+    },
+    {
+      "official_title": "なごや子ども住まいるプロジェクトの推進",
+      "pillar": "都市像4 快適な都市環境と自然が調和した都市",
+      "project_id": "jp-local-231002-project-2025-kodomo-sumairu-housing-project",
+      "selection_basis": "第2ラウンド。都市像4の掲載順の続きをたどり、施策26の事業340は交差条件を満たさず（skipped参照）、事業341〜343、施策27の事業344〜346にも対応する事項がなく、施策28の先頭で条件を満たした事業。一覧（住宅都市局分）に同名の事項として金額（32,114千円）が掲載されている。",
+      "series_id": "jp-local-231002-project-series-kodomo-sumairu-housing-project",
+      "source_ids": [
+        "nagoya-city-plan-progress-fy2025-pdf",
+        "nagoya-city-budget-measures-housing-urban-fy2025-pdf"
+      ]
+    },
+    {
+      "official_title": "金山駅周辺まちづくりの推進",
+      "pillar": "都市像5 魅力と活力にあふれ、世界から人や企業をひきつける、開かれた都市",
+      "project_id": "jp-local-231002-project-2025-kanayama-station-area-project",
+      "selection_basis": "第2ラウンド。都市像5の掲載順の続きで、施策34の事業419の次の事業であり、交差条件を満たす。一覧（住宅都市局分）に同名の事項として金額（204,000千円）が掲載されている。",
+      "series_id": "jp-local-231002-project-series-kanayama-station-area-project",
+      "source_ids": [
+        "nagoya-city-plan-progress-fy2025-pdf",
+        "nagoya-city-budget-measures-housing-urban-fy2025-pdf"
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "official_title": "人権擁護・啓発活動の推進",
+      "pillar": "都市像1 人権が尊重され、誰もがいきいきと暮らし、活躍できる都市",
+      "reason": "施策1の掲載順先頭の事業だが、令和7年度主な施策等一覧に対応する事項がない。スポーツ市民局分の「新たな人権擁護体制整備に係る調査等」（29,313千円）は人権擁護体制の整備に係る調査であり、本事業（人権擁護・啓発活動）とは別の取組である。施策1の全4事業とも対応する事項がなく、施策2へ進んだ。",
+      "source_ids": [
+        "nagoya-city-plan-progress-fy2025-pdf",
+        "nagoya-city-budget-measures-sports-citizen-fy2025-pdf"
+      ]
+    },
+    {
+      "official_title": "配偶者からの暴力被害者等の支援",
+      "pillar": "都市像1 人権が尊重され、誰もがいきいきと暮らし、活躍できる都市",
+      "reason": "子ども青少年局分の「困難な問題を抱える女性への支援」（20,181千円）は、困難な問題を抱える女性全般への支援の事項であり、本事業（配偶者からの暴力被害者等への相談・保護・自立支援）単独の額とは確認できないため選ばなかった。",
+      "source_ids": [
+        "nagoya-city-plan-progress-fy2025-pdf",
+        "nagoya-city-budget-measures-children-youth-fy2025-pdf"
+      ]
+    },
+    {
+      "official_title": "出会いや結婚の希望をかなえる支援",
+      "pillar": "都市像2 安心して子育てができ、子どもや若者が豊かに育つ都市",
+      "reason": "子ども青少年局分の「結婚新生活支援事業」（587,729千円）は、本事業の内容（婚活イベント、ライフデザインセミナー、結婚新生活支援、若者の意識等調査、広報）のうち結婚新生活支援のみに対応する事項であり、本事業単独の額とは確認できないため選ばなかった。",
+      "source_ids": [
+        "nagoya-city-plan-progress-fy2025-pdf",
+        "nagoya-city-budget-measures-children-youth-fy2025-pdf"
+      ]
+    },
+    {
+      "official_title": "子どものインフルエンザ予防接種費用の助成",
+      "pillar": "都市像2 安心して子育てができ、子どもや若者が豊かに育つ都市",
+      "reason": "健康福祉局分の「予防接種事業」（2,255,039千円）は予防接種全体の事項であり、本事業（子どものインフルエンザ予防接種費用の助成）単独の額とは確認できないため選ばなかった。",
+      "source_ids": [
+        "nagoya-city-plan-progress-fy2025-pdf",
+        "nagoya-city-budget-measures-health-welfare-fy2025-pdf"
+      ]
+    },
+    {
+      "official_title": "水防法改正等に伴うハザードマップ等の周知・啓発",
+      "pillar": "都市像3 人が支え合い、災害に強く安心・安全に暮らせる都市",
+      "reason": "防災危機管理局分の「水防法改正に伴うハザードマップの改定」（38,000千円）はハザードマップ自体の改定作業の事項であり、本事業の内容（改定されたハザードマップ等の周知・啓発）とは取組が異なるため、金額を本事業の額として接続しなかった。",
+      "source_ids": [
+        "nagoya-city-plan-progress-fy2025-pdf",
+        "nagoya-city-budget-measures-disaster-management-fy2025-pdf"
+      ]
+    },
+    {
+      "official_title": "地域防災マネジメント事業における自助力向上の啓発・支援",
+      "pillar": "都市像3 人が支え合い、災害に強く安心・安全に暮らせる都市",
+      "reason": "消防局分の「地域防災マネジメント事業の推進」（34,630千円）は、本事業と事業243「地域防災マネジメント事業における自主防災組織の活動支援」の双方を含む事業全体の事項であり、事業単独の額を切り分けられないため選ばなかった。",
+      "source_ids": [
+        "nagoya-city-plan-progress-fy2025-pdf",
+        "nagoya-city-budget-measures-disaster-management-fy2025-pdf"
+      ]
+    },
+    {
+      "official_title": "地域防災マネジメント事業における自主防災組織の活動支援",
+      "pillar": "都市像3 人が支え合い、災害に強く安心・安全に暮らせる都市",
+      "reason": "消防局分の「地域防災マネジメント事業の推進」（34,630千円）は、本事業と事業242「地域防災マネジメント事業における自助力向上の啓発・支援」の双方を含む事業全体の事項であり、事業単独の額を切り分けられないため選ばなかった。",
+      "source_ids": [
+        "nagoya-city-plan-progress-fy2025-pdf",
+        "nagoya-city-budget-measures-disaster-management-fy2025-pdf"
+      ]
+    },
+    {
+      "official_title": "避難行動要支援者の個別避難計画作成",
+      "pillar": "都市像3 人が支え合い、災害に強く安心・安全に暮らせる都市",
+      "reason": "防災危機管理局分の「個別避難計画作成モデル事業」（55,469千円）はモデル地区での先行実施の事項であり、本事業（個別避難計画作成の推進全体）単独の額とは確認できないため選ばなかった。",
+      "source_ids": [
+        "nagoya-city-plan-progress-fy2025-pdf",
+        "nagoya-city-budget-measures-disaster-management-fy2025-pdf"
+      ]
+    },
+    {
+      "official_title": "市有建築物の天井等落下防止対策",
+      "pillar": "都市像3 人が支え合い、災害に強く安心・安全に暮らせる都市",
+      "reason": "施策18の掲載順先頭の事業だが、令和7年度主な施策等一覧に対応する事項がない。施策18は橋りょう・上下水道・河川等の耐震化・整備が中心で、全18事業とも事業単独の金額を確認できる事項がなく、施策19へ進んだ。",
+      "source_ids": [
+        "nagoya-city-plan-progress-fy2025-pdf",
+        "nagoya-city-budget-measures-all-fy2025-pdf"
+      ]
+    },
+    {
+      "official_title": "土地区画整理事業の推進",
+      "pillar": "都市像4 快適な都市環境と自然が調和した都市",
+      "reason": "施策25の掲載順先頭の事業だが、令和7年度主な施策等一覧に対応する事項がない。施策25では事業321を除き対応候補自体がなく、施策26へ進んだ。",
+      "source_ids": [
+        "nagoya-city-plan-progress-fy2025-pdf",
+        "nagoya-city-budget-measures-all-fy2025-pdf"
+      ]
+    },
+    {
+      "official_title": "インフラ分野のDX推進",
+      "pillar": "都市像4 快適な都市環境と自然が調和した都市",
+      "reason": "緑政土木局分の「公共土木インフラの管理業務等におけるDXの推進」（199,562千円）は管理業務等に係るDXの事項であり、本事業（ネットワーク基盤・システム基盤の構築、手続きのオンライン化、建設現場のDX等、インフラ分野全般のDX推進）単独の額とは確認できないため選ばなかった。",
+      "source_ids": [
+        "nagoya-city-plan-progress-fy2025-pdf",
+        "nagoya-city-budget-measures-all-fy2025-pdf"
+      ]
+    },
+    {
+      "official_title": "キャッシュレス化による市バス・地下鉄の利便性の向上",
+      "pillar": "都市像4 快適な都市環境と自然が調和した都市",
+      "reason": "交通局分には「キャッシュレス化の推進」（84,813千円）と「クレジットカード対応券売機の設置拡大」（101,826千円）の2事項があり、本事業の内容（券売機の設置拡大と自動改札機等の改修によるキャッシュレス化）は両事項に分かれて掲載されているため、事業単独の金額を確定できなかった。",
+      "source_ids": [
+        "nagoya-city-plan-progress-fy2025-pdf",
+        "nagoya-city-budget-measures-all-fy2025-pdf"
+      ]
+    },
+    {
+      "official_title": "リニア中央新幹線の整備促進",
+      "pillar": "都市像5 魅力と活力にあふれ、世界から人や企業をひきつける、開かれた都市",
+      "reason": "住宅都市局分の「リニア中央新幹線開業に向けたまちづくりの推進」（2,189,525千円）は名古屋駅周辺のまちづくりの事項であり、本事業（リニア中央新幹線の整備促進そのもの）とは取組が異なるため選ばなかった。",
+      "source_ids": [
+        "nagoya-city-plan-progress-fy2025-pdf",
+        "nagoya-city-budget-measures-housing-urban-fy2025-pdf"
+      ]
+    },
+    {
+      "official_title": "リニア駅周辺の面的整備",
+      "pillar": "都市像5 魅力と活力にあふれ、世界から人や企業をひきつける、開かれた都市",
+      "reason": "住宅都市局分の「リニア中央新幹線開業に向けたまちづくりの推進」（2,189,525千円）は、本事業（リニア駅周辺の広場・道路・基盤整備）と事業417「名古屋駅周辺の地域資源を活かしたまちづくりの推進」の双方にまたがる名古屋駅周辺のまちづくり全体の事項であり、事業単独の額を切り分けられないため選ばなかった。",
+      "source_ids": [
+        "nagoya-city-plan-progress-fy2025-pdf",
+        "nagoya-city-budget-measures-housing-urban-fy2025-pdf"
+      ]
+    },
+    {
+      "official_title": "名古屋駅周辺の地域資源を活かしたまちづくりの推進",
+      "pillar": "都市像5 魅力と活力にあふれ、世界から人や企業をひきつける、開かれた都市",
+      "reason": "住宅都市局分の「リニア中央新幹線開業に向けたまちづくりの推進」（2,189,525千円）は、本事業と事業416「リニア駅周辺の面的整備」の双方にまたがる名古屋駅周辺のまちづくり全体の事項であり、事業単独の額を切り分けられないため選ばなかった。",
+      "source_ids": [
+        "nagoya-city-plan-progress-fy2025-pdf",
+        "nagoya-city-budget-measures-housing-urban-fy2025-pdf"
+      ]
+    },
+    {
+      "official_title": "バリアフリーのまちづくりの推進",
+      "pillar": "都市像1 人権が尊重され、誰もがいきいきと暮らし、活躍できる都市",
+      "reason": "第2ラウンドで検討。健康福祉局分の「バリアフリー整備相談支援事業」（35,484千円）は相談支援という本事業の一部の取組の事項であり、本事業（福祉都市環境整備指針に基づく都市施設整備の推進、バリアフリー情報発信サイトの運営、当事者参画の仕組み等）単独の額とは確認できないため選ばなかった。",
+      "source_ids": [
+        "nagoya-city-plan-progress-fy2025-pdf",
+        "nagoya-city-budget-measures-health-welfare-fy2025-pdf"
+      ]
+    },
+    {
+      "official_title": "重点整備地区のバリアフリー化の推進",
+      "pillar": "都市像1 人権が尊重され、誰もがいきいきと暮らし、活躍できる都市",
+      "reason": "第2ラウンドで検討。令和7年度主な施策等一覧に対応する事項がなく、事業単独の金額を確認できなかった。",
+      "source_ids": [
+        "nagoya-city-plan-progress-fy2025-pdf",
+        "nagoya-city-budget-measures-all-fy2025-pdf"
+      ]
+    },
+    {
+      "official_title": "保育所等における多様な保育サービスの提供",
+      "pillar": "都市像2 安心して子育てができ、子どもや若者が豊かに育つ都市",
+      "reason": "第2ラウンドで検討。子ども青少年局分には障害児保育事業、医療的ケア児保育支援事業、私立幼稚園における一時預かり事業、乳児等通園支援事業（こども誰でも通園制度）等の個別の事項はあるが、本事業（多様な保育サービス全体）に対応する単一の事項はなく、事業単独の金額を確定できなかった。",
+      "source_ids": [
+        "nagoya-city-plan-progress-fy2025-pdf",
+        "nagoya-city-budget-measures-children-youth-fy2025-pdf"
+      ]
+    },
+    {
+      "official_title": "民間建築物の耐震化",
+      "pillar": "都市像3 人が支え合い、災害に強く安心・安全に暮らせる都市",
+      "reason": "第2ラウンドで検討。住宅都市局分の「民間住宅等の耐震対策」（361,350千円）は民間住宅等の耐震化支援制度の拡充の事項であり、本事業（民間住宅の耐震化に加え、耐震診断義務付け対象建築物の耐震化、民間ブロック塀等の撤去、耐震対策啓発を含む民間建築物全般の耐震化）単独の額とは確認できないため選ばなかった。",
+      "source_ids": [
+        "nagoya-city-plan-progress-fy2025-pdf",
+        "nagoya-city-budget-measures-housing-urban-fy2025-pdf"
+      ]
+    },
+    {
+      "official_title": "ゆとりーとラインの機能強化",
+      "pillar": "都市像4 快適な都市環境と自然が調和した都市",
+      "reason": "第2ラウンドで検討。住宅都市局分の「ガイドウェイバス志段味線への自動運転技術導入検討」（252,000千円）は自動運転技術の導入検討の事項であり、本事業（ガイドウェイバス次期システム導入検討と沿線施設と連携した利用促進策）単独の額とは確認できないため選ばなかった。",
+      "source_ids": [
+        "nagoya-city-plan-progress-fy2025-pdf",
+        "nagoya-city-budget-measures-housing-urban-fy2025-pdf"
+      ]
+    }
+  ],
+  "updated_at": "2026-11-19",
+  "version": "0.1.0"
+}
