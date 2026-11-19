@@ -18,7 +18,7 @@ def test_phase15_city_packages_allow_future_reviewed_settlement_expansion():
         (DATA / "catalog/phase15_core_capital_review_queue.json").read_text(encoding="utf-8")
     )
     reviewed = [row for row in queue["execution_queue"] if row["status"] == "reviewed_complete"]
-    assert len(reviewed) == 68
+    assert len(reviewed) == 69
     for row in reviewed:
         completion_file = Path(row["completion_path"]).name
         slug = completion_file.removesuffix("_phase15_completion.json") + "-city"

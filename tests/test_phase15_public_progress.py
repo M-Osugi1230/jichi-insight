@@ -21,7 +21,7 @@ def test_phase15_public_counts_are_derived_from_valid_canonical_state():
     summary = queue["summary"]
     counts = Counter(record["status"] for record in records)
 
-    assert len(records) == summary["target_count"] == 68
+    assert len(records) == summary["target_count"] == 69
     assert len({record["official_code"] for record in records}) == len(records)
     assert set(counts).issubset(STATUS_TO_SUMMARY)
     assert sum(counts.values()) == len(records)

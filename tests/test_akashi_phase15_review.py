@@ -52,7 +52,7 @@ def test_akashi_review_package_is_the_forty_fifth_completion():
     }
 
     queue = load(QUEUE)
-    assert queue["summary"]["reviewed_complete_count"] == 68
+    assert queue["summary"]["reviewed_complete_count"] == 69
     assert queue["summary"]["pending_record_review_count"] == 0
     assert queue["summary"]["next_official_code"] is None
     entry = next(

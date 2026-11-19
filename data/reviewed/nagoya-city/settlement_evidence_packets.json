@@ -1,0 +1,1127 @@
+[
+  {
+    "id": "evidence-nagoya-city-2022-ordinary-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2022-ordinary-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計歳入総額は1,435,285,544千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2022",
+          "nagoya-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "総務省『令和4年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和4年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。歳入−歳出＝形式収支、形式収支−繰越財源＝実質収支の検算と一致することを確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2022-ordinary-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2022-ordinary-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計歳出総額は1,419,455,934千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2022",
+          "nagoya-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "総務省『令和4年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和4年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。歳入−歳出＝形式収支、形式収支−繰越財源＝実質収支の検算と一致することを確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2022-ordinary-local-tax",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2022-ordinary-local-tax",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計市税収入は609,533,906千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2022",
+          "nagoya-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "総務省『令和4年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和4年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2022-formal-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2022-formal-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計形式収支は15,829,610千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2022",
+          "nagoya-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "総務省『令和4年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和4年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。歳入−歳出＝形式収支、形式収支−繰越財源＝実質収支の検算と一致することを確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2022-carryover-resources",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2022-carryover-resources",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の翌年度に繰り越すべき財源は7,627,367千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2022",
+          "nagoya-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "総務省『令和4年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和4年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。歳入−歳出＝形式収支、形式収支−繰越財源＝実質収支の検算と一致することを確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2022-real-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2022-real-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計実質収支は8,202,243千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2022",
+          "nagoya-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "総務省『令和4年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和4年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。歳入−歳出＝形式収支、形式収支−繰越財源＝実質収支の検算と一致することを確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2022-real-balance-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2022-real-balance-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の実質収支比率は1.2%。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2022",
+          "nagoya-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "総務省『令和4年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和4年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2022-standard-fiscal-scale",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2022-standard-fiscal-scale",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の標準財政規模は664,266,118千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2022",
+          "nagoya-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "総務省『令和4年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和4年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2022-expenditure-by-purpose",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2022-expenditure-by-purpose",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計目的別歳出は1,419,455,934千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2022",
+          "nagoya-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "総務省『令和4年度市町村決算カード』『目的別歳出の状況』表（名古屋市『令和4年度財政状況資料集』『（1）普通会計の状況』でも全項目一致）。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。各区分の合計が歳出総額と一致することを検算で確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2022-expenditure-by-nature",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2022-expenditure-by-nature",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計性質別歳出は1,419,455,934千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2022",
+          "nagoya-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "総務省『令和4年度市町村決算カード』『性質別歳出の状況』表（名古屋市『令和4年度財政状況資料集』『（1）普通会計の状況』でも全項目一致）。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。各区分の合計が歳出総額と一致することを検算で確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2022-fund-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2022-fund-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計基金残高は101,079,320千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2022",
+          "nagoya-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "総務省『令和4年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和4年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。内訳の合計が現在高と一致することを検算で確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2022-debt-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2022-debt-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計地方債残高は1,381,520,504千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2022",
+          "nagoya-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "総務省『令和4年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和4年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。内訳の『臨時財政対策債』は現在高から資料集印字の『臨時財政対策債除き』を差し引いた算出値。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2022-current-balance-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2022-current-balance-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の経常収支比率は97.8%。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2022",
+          "nagoya-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "総務省『令和4年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和4年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2022-real-debt-service-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2022-real-debt-service-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の実質公債費比率は6.8%。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2022",
+          "nagoya-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "総務省『令和4年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和4年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2022-future-burden-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2022-future-burden-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の将来負担比率は88.6%。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2022",
+          "nagoya-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "総務省『令和4年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和4年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2022-fiscal-strength-index",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2022-fiscal-strength-index",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の財政力指数は0.98。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2022",
+          "nagoya-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "総務省『令和4年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和4年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2022-population",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2022-population",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の住民基本台帳人口は2,294,854人（令和5年1月1日現在）。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2022",
+          "nagoya-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "総務省『令和4年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和4年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "人口の基準日は年度末日ではなく、調査対象年度の1月1日である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2023-ordinary-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2023-ordinary-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計歳入総額は1,412,510,019千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2023",
+          "nagoya-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "総務省『令和5年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和5年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。歳入−歳出＝形式収支、形式収支−繰越財源＝実質収支の検算と一致することを確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2023-ordinary-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2023-ordinary-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計歳出総額は1,394,832,519千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2023",
+          "nagoya-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "総務省『令和5年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和5年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。歳入−歳出＝形式収支、形式収支−繰越財源＝実質収支の検算と一致することを確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2023-ordinary-local-tax",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2023-ordinary-local-tax",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計市税収入は617,466,086千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2023",
+          "nagoya-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "総務省『令和5年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和5年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2023-formal-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2023-formal-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計形式収支は17,677,500千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2023",
+          "nagoya-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "総務省『令和5年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和5年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。歳入−歳出＝形式収支、形式収支−繰越財源＝実質収支の検算と一致することを確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2023-carryover-resources",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2023-carryover-resources",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の翌年度に繰り越すべき財源は8,236,585千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2023",
+          "nagoya-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "総務省『令和5年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和5年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。歳入−歳出＝形式収支、形式収支−繰越財源＝実質収支の検算と一致することを確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2023-real-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2023-real-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計実質収支は9,440,915千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2023",
+          "nagoya-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "総務省『令和5年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和5年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。歳入−歳出＝形式収支、形式収支−繰越財源＝実質収支の検算と一致することを確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2023-real-balance-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2023-real-balance-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の実質収支比率は1.4%。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2023",
+          "nagoya-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "総務省『令和5年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和5年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2023-standard-fiscal-scale",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2023-standard-fiscal-scale",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の標準財政規模は678,205,853千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2023",
+          "nagoya-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "総務省『令和5年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和5年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2023-expenditure-by-purpose",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2023-expenditure-by-purpose",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計目的別歳出は1,394,832,519千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2023",
+          "nagoya-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "総務省『令和5年度市町村決算カード』『目的別歳出の状況』表（名古屋市『令和5年度財政状況資料集』『（1）普通会計の状況』でも全項目一致）。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。各区分の合計が歳出総額と一致することを検算で確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2023-expenditure-by-nature",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2023-expenditure-by-nature",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計性質別歳出は1,394,832,519千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2023",
+          "nagoya-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "総務省『令和5年度市町村決算カード』『性質別歳出の状況』表（名古屋市『令和5年度財政状況資料集』『（1）普通会計の状況』でも全項目一致）。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。各区分の合計が歳出総額と一致することを検算で確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2023-fund-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2023-fund-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計基金残高は97,772,343千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2023",
+          "nagoya-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "総務省『令和5年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和5年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。内訳の合計が現在高と一致することを検算で確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2023-debt-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2023-debt-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計地方債残高は1,377,752,258千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2023",
+          "nagoya-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "総務省『令和5年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和5年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。内訳の『臨時財政対策債』は現在高から資料集印字の『臨時財政対策債除き』を差し引いた算出値。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2023-current-balance-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2023-current-balance-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の経常収支比率は99.9%。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2023",
+          "nagoya-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "総務省『令和5年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和5年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2023-real-debt-service-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2023-real-debt-service-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の実質公債費比率は6.4%。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2023",
+          "nagoya-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "総務省『令和5年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和5年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2023-future-burden-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2023-future-burden-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の将来負担比率は83.0%。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2023",
+          "nagoya-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "総務省『令和5年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和5年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2023-fiscal-strength-index",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2023-fiscal-strength-index",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の財政力指数は0.97。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2023",
+          "nagoya-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "総務省『令和5年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和5年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2023-population",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2023-population",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の住民基本台帳人口は2,297,745人（令和6年1月1日現在）。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2023",
+          "nagoya-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "総務省『令和5年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和5年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "人口の基準日は年度末日ではなく、調査対象年度の1月1日である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-ordinary-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2024-ordinary-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計歳入総額は1,488,889,175千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2024",
+          "nagoya-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "総務省『令和6年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和6年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。歳入−歳出＝形式収支、形式収支−繰越財源＝実質収支の検算と一致することを確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-ordinary-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2024-ordinary-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計歳出総額は1,468,251,421千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2024",
+          "nagoya-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "総務省『令和6年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和6年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。歳入−歳出＝形式収支、形式収支−繰越財源＝実質収支の検算と一致することを確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-ordinary-local-tax",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2024-ordinary-local-tax",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計市税収入は635,823,199千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2024",
+          "nagoya-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "総務省『令和6年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和6年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-formal-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2024-formal-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計形式収支は20,637,754千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2024",
+          "nagoya-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "総務省『令和6年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和6年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。歳入−歳出＝形式収支、形式収支−繰越財源＝実質収支の検算と一致することを確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-carryover-resources",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2024-carryover-resources",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の翌年度に繰り越すべき財源は15,152,457千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2024",
+          "nagoya-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "総務省『令和6年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和6年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。歳入−歳出＝形式収支、形式収支−繰越財源＝実質収支の検算と一致することを確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-real-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2024-real-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計実質収支は5,485,297千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2024",
+          "nagoya-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "総務省『令和6年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和6年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。歳入−歳出＝形式収支、形式収支−繰越財源＝実質収支の検算と一致することを確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-real-balance-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2024-real-balance-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の実質収支比率は0.8%。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2024",
+          "nagoya-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "総務省『令和6年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和6年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-standard-fiscal-scale",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2024-standard-fiscal-scale",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の標準財政規模は697,193,943千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2024",
+          "nagoya-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "総務省『令和6年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和6年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-expenditure-by-purpose",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2024-expenditure-by-purpose",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計目的別歳出は1,468,251,421千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2024",
+          "nagoya-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "総務省『令和6年度市町村決算カード』『目的別歳出の状況』表（名古屋市『令和6年度財政状況資料集』『（1）普通会計の状況』でも全項目一致）。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。各区分の合計が歳出総額と一致することを検算で確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-expenditure-by-nature",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2024-expenditure-by-nature",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計性質別歳出は1,468,251,421千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2024",
+          "nagoya-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "総務省『令和6年度市町村決算カード』『性質別歳出の状況』表（名古屋市『令和6年度財政状況資料集』『（1）普通会計の状況』でも全項目一致）。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。各区分の合計が歳出総額と一致することを検算で確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-fund-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2024-fund-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計基金残高は77,843,053千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2024",
+          "nagoya-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "総務省『令和6年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和6年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。内訳の合計が現在高と一致することを検算で確認。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-debt-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2024-debt-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計地方債残高は1,405,632,264千円。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2024",
+          "nagoya-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "総務省『令和6年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和6年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。内訳の『臨時財政対策債』は現在高から資料集印字の『臨時財政対策債除き』を差し引いた算出値。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-current-balance-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2024-current-balance-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の経常収支比率は101.2%。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2024",
+          "nagoya-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "総務省『令和6年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和6年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-real-debt-service-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2024-real-debt-service-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の実質公債費比率は6.4%。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2024",
+          "nagoya-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "総務省『令和6年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和6年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-future-burden-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2024-future-burden-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の将来負担比率は84.2%。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2024",
+          "nagoya-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "総務省『令和6年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和6年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-fiscal-strength-index",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2024-fiscal-strength-index",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の財政力指数は0.98。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2024",
+          "nagoya-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "総務省『令和6年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和6年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-population",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-231002-fiscal-2024-population",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の住民基本台帳人口は2,303,004人（令和7年1月1日現在）。",
+        "source_ids": [
+          "nagoya-city-mic-settlement-card-fy2024",
+          "nagoya-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "総務省『令和6年度市町村決算カード』（愛知県）の名古屋市カードおよび名古屋市『令和6年度財政状況資料集』総括表の該当欄。",
+        "decision": "accepted",
+        "review_note": "一次資料の印字値をそのまま収録。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "人口の基準日は年度末日ではなく、調査対象年度の1月1日である。"
+    ],
+    "review_status": "reviewed"
+  }
+]

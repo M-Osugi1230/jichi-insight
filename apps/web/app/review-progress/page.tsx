@@ -11,7 +11,7 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
   title: "自治体レビューの進捗・収録範囲",
   description:
-    "Jichi InsightのPhase 15対象68自治体について、一次資料レビューの完了・進行中・未着手を、正本データから透明に公開します。",
+    "Jichi InsightのPhase 15対象69自治体について、一次資料レビューの完了・進行中・未着手を、正本データから透明に公開します。",
   alternates: {
     canonical: "https://jimieru.com/review-progress/",
   },
@@ -32,7 +32,7 @@ export default function ReviewProgressPage() {
           title="どこまで確認できたかも、公開する。"
         >
           <p>
-            47都道府県の公開済みデータと、中核市・県庁所在地68自治体の詳細レビューは別の取り組みです。
+            47都道府県の公開済みデータと、中核市・県庁所在地69自治体の詳細レビューは別の取り組みです。
             このページではPhase 15の進捗を、審査待ちも含めて公開します。
             「資料を発見した」「候補を作った」だけでレビュー完了とは扱いません。
           </p>
@@ -101,7 +101,7 @@ export default function ReviewProgressPage() {
         <section className={styles.directory} aria-labelledby="review-directory-title">
           <div className={styles.directoryHeading}>
             <div>
-              <p className="eyebrow">All 68 municipalities</p>
+              <p className="eyebrow">All 69 municipalities</p>
               <h2 id="review-directory-title">自治体別のレビュー状況</h2>
             </div>
             <p>
@@ -111,7 +111,7 @@ export default function ReviewProgressPage() {
             </p>
           </div>
 
-          <a className={styles.directorySkip} href="#review-progress-after-directory">68自治体の一覧を飛ばして次の項目へ進む</a>
+          <a className={styles.directorySkip} href="#review-progress-after-directory">69自治体の一覧を飛ばして次の項目へ進む</a>
           <ol className={styles.list}>
             {phase15Progress.municipalities.map((record) => (
               <li key={record.officialCode} className={styles.municipality}>

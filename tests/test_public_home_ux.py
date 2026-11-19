@@ -13,7 +13,7 @@ def test_public_home_cites_the_canonical_phase15_progress():
     progress = (WEB / "lib/phase15Progress.ts").read_text(encoding="utf-8")
     queue = json.loads(PHASE15.read_text(encoding="utf-8"))
 
-    assert queue["summary"]["target_count"] == 68
+    assert queue["summary"]["target_count"] == 69
     assert 'import { phase15Progress } from "@/lib/phase15Progress";' in homepage
     assert "phase15Progress.reviewed" in homepage
     assert "phase15Progress.total" in homepage

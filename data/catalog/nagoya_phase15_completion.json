@@ -1,0 +1,85 @@
+{
+  "id": "nagoya-phase15-completion",
+  "phase": 15,
+  "status": "reviewed_complete",
+  "official_code": "231002",
+  "name_ja": "名古屋市",
+  "completed_at": "2026-11-19",
+  "completion_depth": "declared_review_package_v1",
+  "review_package": {
+    "source_catalog_path": "data/catalog/nagoya_phase15_sources.json",
+    "plan_review_path": "data/reviewed/nagoya-city/plan_review.json",
+    "policy_structure_path": "data/catalog/nagoya_current_policy_structure.json",
+    "progress_review_path": "data/catalog/nagoya_current_progress_review_summary.json",
+    "fiscal_records_path": "data/reviewed/nagoya-city/fiscal_records.json",
+    "fiscal_evidence_path": "data/reviewed/nagoya-city/evidence_packets.json",
+    "counts": {
+      "plan_records": 5,
+      "fiscal_top_line_records": 3,
+      "current_city_visions": 5,
+      "current_measures_aggregate": 42,
+      "current_outcome_indicators_aggregate": 135,
+      "current_listed_projects_aggregate": 506
+    }
+  },
+  "quality_gate": {
+    "declared_package_schema_validated": true,
+    "official_source_lineage_preserved": true,
+    "current_plan_period_review_complete": true,
+    "current_5_city_vision_42_measure_structure_review_complete": true,
+    "current_135_indicator_universe_review_complete": true,
+    "current_506_project_universe_review_complete": true,
+    "fy2024_indicator_source_reported_aggregate_review_complete": true,
+    "fy2024_project_source_reported_aggregate_review_complete": true,
+    "citizen_survey_role_separate": true,
+    "approximate_project_cost_separate_from_fiscal_accounts": true,
+    "amended_enacted_budget_used_instead_of_proposal": true,
+    "budget_and_settlement_states_separate": true,
+    "aggregate_counts_not_allocated_to_unreviewed_records": true,
+    "no_independent_policy_achievement_promoted": true,
+    "no_causal_attribution_promoted": true,
+    "no_cross_city_comparability_promoted": true,
+    "regression_suite_required_before_merge": true
+  },
+  "deferred_depth": [
+    {
+      "id": "measure-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "count": 42,
+      "boundary": "42施策の個別identity・所管・政策文脈は追加depth。aggregate countから施策属性を推測しない。"
+    },
+    {
+      "id": "indicator-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "count": 135,
+      "boundary": "135成果指標の定義・計画策定時値・年度基準値・2024実績・2028目標・A/B/C/Dの完全個票化は追加depth。A54/B18/C23/D40の集計を未確認指標へ配分しない。"
+    },
+    {
+      "id": "listed-project-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "count": 506,
+      "boundary": "506掲載事業の事業名・所管・計画目標・2024実績・星分類・事業費の完全個票化は追加depth。384/96/20/6/0の集計を未確認事業へ配分しない。"
+    },
+    {
+      "id": "citizen-survey-detail",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "成果指標アンケートの設問別・属性別結果は別Evidence laneで追加レビューする。有効回答者の意識結果を行政評価や全市民の直接評価と同一視しない。"
+    },
+    {
+      "id": "project-cost-to-fiscal-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "計画事業費約2兆6,987億円と2024年度実績事業費見込み約5,145億円は概算の計画・進捗Evidence。一般会計予算・決算と個別事業単位で照合するまで財政トップラインと自動接続しない。"
+    },
+    {
+      "id": "fiscal-detail-policy-project-linkage",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "v1では議会修正後の2026年度一般会計当初予算と2024年度一般会計決算トップラインをstate分離して保持する。補正、執行、契約、補助金の施策・事業接続は別Evidenceレビューとする。"
+    },
+    {
+      "id": "policy-outcome-causal-and-cross-city-comparability",
+      "status": "deferred_not_required_for_v1_completion",
+      "boundary": "A/B/C/D、星分類、市民アンケート、事業費見込み、財政値のレビューは政策効果の因果認定や他都市との比較可能性を意味しない。専用方法論なしに統合スコアやランキングへ昇格しない。"
+    }
+  ],
+  "completion_boundary": "名古屋市のPhase 15 reviewed_completeは、宣言したv1レビュー・パッケージの完了を意味する。原完了はPhase 13（data/catalog/nagoya_phase13_completion.json、2026-09-28）であり、名古屋市総合計画2028の計画期間（2024年度〜2028年度）、5つのめざす都市像・42施策・135成果指標・506掲載事業の公式構造、2024年度進行管理における成果指標A54・B18・C23・D40の計135件と事業進捗の市公表集計、市民アンケート（対象4,000人・有効回収率44.2%）、議会修正後に成立した2026年度一般会計当初予算1,696,086,000,000円、2024年度一般会計決算歳入1,505,378,206,754円・歳出1,486,264,707,319円を、公式ソースと証拠位置を保持してレビュー済みである。名古屋市は政令指定都市としてPhase 13で完了していたため、Phase 14の対象母集団（中核市・県庁所在地67自治体）には含まれず、Phase 15キューにも入っていなかった。2026-11-19にIssue #734として名古屋市を汎用市ページの枠組みへ統合し69自治体とすることとなり、本記録によりPhase 15枠組みへ統合する（札幌市の68市化＝Issue #695・PR #697の前例に倣う）。あわせて、Issue #691の形式による普通会計決算詳細（FY2022〜2024、17指標×3年＝51レコード）を本統合で登録した（出典は総務省決算カードと名古屋市財政状況資料集の2系統照合、検算済み）。plan_review.jsonは、Phase 13完了宣言（2026-09-28）に含まれていた同パッケージの状態に合わせ、review_statusをreviewedへ揃え、Phase 15共通スキーマの語彙（id・evidence_role・decision・source_url）へ形式を揃えた（statement・値・出典の実質はPhase 13レビューのまま変更していない）。42施策・135指標・506事業の完全個票化、アンケート詳細、事業費と財政の個別接続はdeferred_depthに保持し、集計を個別レコードへ配分しない。この完了は名古屋市の全公開データの網羅、Jichi Insight独自の政策達成度、因果効果、他都市比較可能性またはランキングの認定を意味しない。"
+}

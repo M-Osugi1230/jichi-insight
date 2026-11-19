@@ -273,7 +273,7 @@ def test_mito_and_previous_fifteen_are_reviewed_complete_and_koshigaya_is_next()
     ):
         assert by_code[code]["status"] == "reviewed_complete"
 
-    assert queue["summary"]["reviewed_complete_count"] == 68
+    assert queue["summary"]["reviewed_complete_count"] == 69
     assert queue["summary"]["review_in_progress_count"] == 0
     assert queue["summary"]["pending_record_review_count"] == 0
     assert queue["summary"]["next_official_code"] is None
