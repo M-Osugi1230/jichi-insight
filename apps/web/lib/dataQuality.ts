@@ -42,11 +42,13 @@ const municipalityNames: Record<MunicipalityKey, string> = {
 
 const municipalityKeys = Object.keys(municipalityNames) as MunicipalityKey[];
 const recordsByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFinance.records> = {
+  "aichi-prefecture": aichiFinance.records,
   "fukuoka-prefecture": fukuokaPrefectureFinance.records,
   "fukuoka-city": fukuokaCityFinance.records,
   "kitakyushu-city": kitakyushuFinance.records,
 };
 const evidenceByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFinance.evidencePackets> = {
+  "aichi-prefecture": aichiFinance.evidencePackets,
   "fukuoka-prefecture": fukuokaPrefectureFinance.evidencePackets,
   "fukuoka-city": fukuokaCityFinance.evidencePackets,
   "kitakyushu-city": kitakyushuFinance.evidencePackets,
