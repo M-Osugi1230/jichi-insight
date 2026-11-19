@@ -6,7 +6,7 @@ import styles from "./ProjectReview.module.css";
 
 const show = (v: string | number | null | undefined) => v === null || v === undefined || v === "" ? "未収録" : String(v);
 function stageLabel(area: string, stage: string, year: number) {
-  if (area === "hokkaido-prefecture" && stage === "initial_budget") return "基本評価調書の「予算額」に基づく当初予算ベース（決算額・個別事務事業額ではありません）";
+  if (area === "hokkaido-prefecture" && stage === "initial_budget") return "基本評価調書の「予算額」に基づく当初予算ベース（決算額ではありません。個別事務事業の額でもありません）";
   if (area === "nagoya-city" && stage === "initial_budget") return "予算案段階の予定額（成立後の事業別予算額ではありません）";
   if (area === "aichi-prefecture" && stage === "initial_budget" && year === 2026) return "FY2026 当初予算・億円単位で公表された概数（千円単位の確定額ではありません）";
   if (area === "fukuoka-city" && stage === "initial_budget") return "当初予算案段階の額（成立後の事業別額は未確認）";
