@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 EXPORT_ROOT = ROOT / "apps" / "web" / "out"
 
 SOURCE_CATALOG_PATHS = [
+    ROOT / "data" / "catalog" / "hokkaido_prefecture_finance_sources.json",
     ROOT / "data" / "catalog" / "aichi_prefecture_finance_sources.json",
     ROOT / "data" / "catalog" / "official_sources.json",
     ROOT / "data" / "catalog" / "fukuoka_finance_sources.json",
@@ -38,6 +39,7 @@ REQUIRED_FILES = [
     "municipalities/index.html",
     "municipalities/phase9/index.html",
     "municipalities/hokkaido/index.html",
+    "municipalities/hokkaido-prefecture/index.html",
     "municipalities/miyagi/index.html",
     "municipalities/tokyo/index.html",
     "municipalities/aichi/index.html",
@@ -89,6 +91,17 @@ BASE_PAGE_REQUIREMENTS: dict[str, list[str]] = {
         "108 / 108のKPI本文Reviewedを完了",
         "年度別実績は未接続",
         "政策成果の達成率ではなく",
+    ],
+    "municipalities/hokkaido-prefecture/index.html": [
+        "北海道総合計画の計画レビュー",
+        "2026年度に成立した一般会計当初予算",
+        "3年度の財政実績（普通会計）",
+        "2026年3月19日に原案可決",
+        "鈴木 直道",
+        "公約原文：" + "未登録",
+        "北海道議会の個別レコードは未登録",
+        "重点事業は段階2で登録中",
+        "まだ登録・評価していないこと",
     ],
     "municipalities/miyagi/index.html": [
         "目標と実績を、同じものにしない。",

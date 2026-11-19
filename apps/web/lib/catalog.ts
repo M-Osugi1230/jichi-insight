@@ -1,3 +1,4 @@
+import hokkaidoFinanceCatalog from "../../../data/catalog/hokkaido_prefecture_finance_sources.json";
 import aichiFinanceCatalog from "../../../data/catalog/aichi_prefecture_finance_sources.json";
 import assemblyCatalog from "../../../data/catalog/fukuoka_assembly_sources.json";
 import cityFinanceCatalog from "../../../data/catalog/fukuoka_city_finance_sources.json";
@@ -43,10 +44,10 @@ export const municipalityMeta: Record<
   "hokkaido-prefecture": {
     name: "北海道",
     type: "都道府県",
-    summary: "北海道総合計画の政策指標と、鈴木直道知事の任期・公式出典を確認します。",
-    status: "資料索引中",
-    href: "/municipalities/hokkaido",
-    fiscalSummary: "財政データ54項目登録済み（財政詳細ページは未公開）",
+    summary: "北海道総合計画、2026年度成立後当初予算、3年度の普通会計決算と鈴木直道知事の現任期を確認します。",
+    status: "財政データ公開",
+    href: "/municipalities/hokkaido-prefecture",
+    fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
   },
   "aichi-prefecture": {
     name: "愛知県",
@@ -99,6 +100,7 @@ export const municipalityMeta: Record<
 };
 
 export const sourceCatalog = [
+  ...(hokkaidoFinanceCatalog.records as SourceRecord[]),
   ...(aichiFinanceCatalog.records as SourceRecord[]),
   ...(officialCatalog.records as SourceRecord[]),
   ...(financeCatalog.records as SourceRecord[]),
