@@ -4,7 +4,7 @@ import { currentExecutiveTerms, promiseRecords } from "@/lib/executives";
 import { fukuokaPrefectureFinance } from "@/lib/finance";
 import { fukuokaCityFinance } from "@/lib/fukuokaCityFinance";
 import { kitakyushuFinance } from "@/lib/kitakyushuFinance";
-import { projectRegistry } from "@/lib/projectRegistry";
+import { isProjectArea, projectRegistry } from "@/lib/projectRegistry";
 import { loadPhase15CitySummaries } from "@/lib/phase15Cities";
 import { loadGenericCityFinance } from "@/lib/genericCityFinance";
 
@@ -40,9 +40,13 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
       record.account_type === "ordinary" &&
       [2022, 2023, 2024].includes(record.fiscal_year),
     );
-    // Aichi has a fiscal view and a Reviewed governor term, but no registered
-    // promises, assembly or projects; those gates stay closed.
-    return { key: null, finance: hasReviewedSettlement, promises: false, assembly: false, projects: false };
+    // Only reviewed projects in the matching prefecture activate this link.
+    // Governor promises and assembly records remain unregistered.
+    const hasProjects = projectRegistry["aichi-prefecture"].projects.some((project) =>
+      project.review_status === "reviewed" &&
+      project.municipality_id === aichiFinance.municipality.id,
+    );
+    return { key: null, finance: hasReviewedSettlement, promises: false, assembly: false, projects: hasProjects };
   }
 
   if (!matched) {
@@ -51,6 +55,15 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
     // The unrelated promise/assembly/project gates remain strictly closed.
     const city = loadPhase15CitySummaries().find((item) => item.officialCode === officialCode);
     const hasFinance = city ? loadGenericCityFinance(city.slug) !== null : false;
+    const hasProjects = city && isProjectArea(city.slug)
+      ? projectRegistry[city.slug].projects.some((project) =>
+        project.review_status === "reviewed" &&
+        project.municipality_id === `jp-local-${officialCode}`,
+      )
+      : false;
+    if (hasProjects) {
+      return { finance: hasFinance, promises: false, assembly: false, projects: true, key: null };
+    }
     return { finance: hasFinance, promises: false, assembly: false, projects: false, key: null };
   }
 
