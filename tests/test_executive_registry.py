@@ -41,8 +41,8 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 37
-    assert len({record["id"] for record in catalog["records"]}) == 37
+    assert len(catalog["records"]) == 41
+    assert len({record["id"] for record in catalog["records"]}) == 41
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
@@ -59,6 +59,7 @@ def test_executive_registry_matches_shared_contracts() -> None:
         "jp-local-232114",
         "jp-local-010006",
         "jp-local-012041",
+        "jp-local-011002",
     }
     for term in terms:
         assert validation_errors("schemas/executive_term.schema.json", term) == []
@@ -91,6 +92,11 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
     # 2029-09-25. The evidence packet records the full chain and the
     # outstanding cross-check against the Hokkaido election
     # commission's term-expiry list.
+    # 2027-04-22. The evidence packet records the full chain. Sapporo
+    # City's end (2027-05-01) is stated directly in the Hokkaido Election
+    # Commission's official term-expiry list; its start (2023-05-02)
+    # follows the same Article 259 proviso chain, anchored by the
+    # mayoral profile's stated May 2 term start and the stated expiry.
     expected_term_ends = {
         "jp-local-400009": "2029-04-10",
         "jp-local-401307": "2026-12-06",
@@ -100,6 +106,7 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
         "jp-local-232114": "2028-02-18",
         "jp-local-010006": "2027-04-22",
         "jp-local-012041": "2029-09-25",
+        "jp-local-011002": "2027-05-01",
     }
     for term in terms:
         assert term["term_end"] == expected_term_ends[term["municipality_id"]]
@@ -139,6 +146,7 @@ def test_executive_term_starts_follow_statutory_counting() -> None:
         "jp-local-232114": "2024-02-19",
         "jp-local-010006": "2023-04-23",
         "jp-local-012041": "2025-09-26",
+        "jp-local-011002": "2023-05-02",
     }
     for term in terms:
         assert term["term_start"] == expected_term_starts[term["municipality_id"]]
@@ -177,6 +185,9 @@ def test_manifesto_readiness_is_not_confused_with_progress() -> None:
     ]
     assert by_municipality["jp-local-231002"]["manifesto_source_ids"] == [
         "nagoya-city-mayor-election-2024-bulletin",
+    ]
+    assert by_municipality["jp-local-011002"]["manifesto_source_ids"] == [
+        "sapporo-city-mayor-election-2023-bulletin",
     ]
     # Toyota City registers no manifesto source: the 2024 bulletin is
     # not extant as an official web publication and no verifiable

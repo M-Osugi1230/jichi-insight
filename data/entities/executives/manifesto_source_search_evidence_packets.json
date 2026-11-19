@@ -364,5 +364,47 @@
       "候補者公式サイトの2025年公約ページの現存有無は未確認。紙の選挙公報の現物確認はオフライン経路が必要で、本探索の範囲外。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-sapporo-city-2023",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-sapporo-city-2023",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "2023年札幌市長選挙の公式結果ページを確認し、秋元克広の当選（458,221票・最多得票）を確認した。",
+        "source_ids": [
+          "sapporo-city-mayor-election-2023-results"
+        ],
+        "location_note": "札幌市選挙管理委員会の個別選挙ページ。投票の状況と開票の結果の資料を掲載。",
+        "decision": "accepted",
+        "review_note": "選挙結果の一次資料として採用。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "札幌市選挙管理委員会の選挙公報ページから、公式の選挙公報PDFを取得し、秋元克広候補欄（1ページ目右上）を確認した。",
+        "source_ids": [
+          "sapporo-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全1ページ）の右上の候補者欄。",
+        "decision": "accepted",
+        "review_note": "公報は候補者提出原稿をそのまま印刷した公式文書であり、出典優先順位の最上位として登録した。"
+      },
+      {
+        "field": "result_status",
+        "statement": "選挙公報を登録し、分割レビューを経て公約レコード13件を作成したため、result_status を source_registered とした。公報より詳細な候補者資料は未特定のままである。",
+        "source_ids": [
+          "sapporo-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "分割レビュー manifesto-review-jp-local-011002-2023 に基づく。",
+        "decision": "accepted",
+        "review_note": "詳細資料が存在しないという主張はしない。"
+      }
+    ],
+    "open_questions": [
+      "政策パンフレット等、選挙公報より詳細な候補者資料の安定した所在が特定できるか。",
+      "未接続の公約への進捗証拠の接続を拡充できるか。"
+    ],
+    "review_status": "reviewed"
   }
 ]
