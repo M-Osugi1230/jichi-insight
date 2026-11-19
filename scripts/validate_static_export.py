@@ -422,7 +422,7 @@ def validate_hokkaido_promise_scope() -> list[str]:
 
     content = normalized_html(path)
     section = re.search(
-        r'<section\\b(?=[^>]*\\bid=["\\\']hokkaido-prefecture["\\\'])[^>]*>(.*?)</section>',
+        r'<section\b(?=[^>]*\bid="hokkaido-prefecture")[^>]*>(.*?)</section>',
         content,
         flags=re.DOTALL,
     )
