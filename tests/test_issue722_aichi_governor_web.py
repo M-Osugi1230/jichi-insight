@@ -84,6 +84,12 @@ def test_static_export_keeps_strict_aichi_promise_requirements():
         '"公式選挙公報"',
     ):
         assert required in EXPORT
-    assert '"公約原文：未登録"' not in EXPORT
+    aichi_requirements = EXPORT.split(
+        '"municipalities/aichi-prefecture/index.html": [', 1
+    )[1].split('"promises/index.html": [', 1)[0]
+    assert '"公約原文：未登録"' not in aichi_requirements
+    # Other municipalities can truthfully have zero reviewed promises.
+    assert '"北海道・鈴木 直道"' in EXPORT
+    assert '"公約原文：未登録"' in EXPORT
     assert 'municipalities/aichi-prefecture/index.html' in EXPORT
     assert "export function promisesForExecutive(term:" in EXE
