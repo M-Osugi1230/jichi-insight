@@ -88,6 +88,9 @@ def test_static_copy_preserves_hokkaido_unregistered_promise_status():
     assert "promises.length === 0" in page
     assert 'promisesForExecutive(term).length ? "原文公約登録済み" : "未登録"' in executive
     assert '"北海道・鈴木 直道"' in EXPORT
-    assert '"公約原文：未登録"' in EXPORT
+    assert 'def validate_hokkaido_promise_scope()' in EXPORT
+    assert "failures.extend(validate_hokkaido_promise_scope())" in EXPORT
+    assert 'expected_status = "公約原文：" + "未登録"' in EXPORT
+    assert '"公約原文：未登録"' not in EXPORT
     assert '"北海道・知事"' in EXPORT
     assert '"2023年4月23日"' in EXPORT
