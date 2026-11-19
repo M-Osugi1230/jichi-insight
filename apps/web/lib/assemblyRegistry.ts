@@ -107,7 +107,7 @@ export type Vote = {
 };
 export type FactionVote = {
   id: string; vote_id: string; faction_name: string; member_count: number | null;
-  position: string; sources: string[];
+  position: string; for_count?: number | null; against_count?: number | null; sources: string[];
 };
 export type Expense = {
   id: string; fiscal_year: number; recipient_name: string; recipient_type: string;
