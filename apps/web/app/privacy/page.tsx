@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Jichi Insightにおけるアクセス情報、訂正申請、外部サービス、個人情報の取扱方針。",
 };
 
-const updatedAt = "2026年7月29日";
+const updatedAt = "2026年11月19日";
 
 export default function PrivacyPage() {
   return (
@@ -29,7 +29,7 @@ export default function PrivacyPage() {
             <li>訂正・反論申請で申請者が自ら入力した対象ページ、根拠資料、説明、GitHubアカウント情報等</li>
             <li>リポジトリへのIssue、Pull Request、コメントなど、利用者が公開操作によって投稿した情報</li>
           </ul>
-          <p>現時点で、本サイト独自の広告トラッキング、行動プロファイリング、会員登録、決済機能は導入していません。</p>
+          <p>本サイト独自の広告トラッキング、行動プロファイリング、会員登録、決済機能は導入していません。サイトの使いやすさの改善に限り、Microsoft Clarity を利用しています（第6節参照）。</p>
         </section>
 
         <section className="contentSection">
@@ -48,7 +48,7 @@ export default function PrivacyPage() {
 
         <section className="contentSection">
           <h2>4. 第三者サービス</h2>
-          <p>本サイトはGitHubおよびGitHub Pagesを利用しています。外部リンク先やGitHub上での情報処理には、それぞれの提供者の規約・プライバシーポリシーが適用されます。自治体等の公式サイトへ移動した後の取扱いも、各サイトの方針に従います。</p>
+          <p>本サイトはGitHubおよびGitHub Pagesを利用し、サイト内の利用状況の解析に Microsoft Clarity を利用しています。Clarity に伴う情報の処理には Microsoft のプライバシーステートメントが適用されます（第6節参照）。外部リンク先やGitHub上での情報処理には、それぞれの提供者の規約・プライバシーポリシーが適用されます。自治体等の公式サイトへ移動した後の取扱いも、各サイトの方針に従います。</p>
         </section>
 
         <section className="contentSection">
@@ -57,8 +57,15 @@ export default function PrivacyPage() {
         </section>
 
         <section className="contentSection">
-          <h2>6. アクセス解析を導入する場合</h2>
-          <p>将来アクセス解析を導入する場合は、目的、取得項目、保存期間、第三者提供、オプトアウト方法を本ページに追記し、必要な同意・告知・設定を確認したうえで導入します。</p>
+          <h2>6. アクセス解析（Microsoft Clarity）</h2>
+          <p>本サイトでは Microsoft Clarity を使用し、利用者がどのページを閲覧し、どこをクリック・スクロールしたかなどの操作情報、ブラウザ・端末の種類、閲覧環境等を取得・解析します。利用状況を把握するため、セッションの記録や集計を含む場合があります。取得情報の処理は Microsoft のプライバシーステートメントに従います。</p>
+          <p>利用目的は、自治体の情報を探す導線とサイトの使いやすさの改善を測定することに限定します。運営者が個人を特定するために利用するものではなく、政治的な嗜好の推定や個人単位での評価・追跡を目的としません。</p>
+          <p>Clarity は Cookie 等を利用して閲覧セッションを識別する場合があります。利用者はブラウザの設定で Cookie を拒否・削除したり、トラッキング防止機能や拡張機能を用いてアクセス解析の通信を制限したりできます。ただし、Cookie の無効化だけですべての通信・計測が停止するとは限りません。Microsoft によるデータの取扱いについては、以下の公式資料をご確認ください。</p>
+          <ul className="plainList">
+            <li><a href="https://www.microsoft.com/en-US/privacy/privacystatement" target="_blank" rel="noopener noreferrer">Microsoft プライバシーステートメント（公式）</a></li>
+            <li><a href="https://learn.microsoft.com/en-us/clarity/setup-and-installation/clarity-data" target="_blank" rel="noopener noreferrer">Microsoft Clarity が収集するデータ（公式）</a></li>
+            <li><a href="https://learn.microsoft.com/ja-jp/clarity/setup-and-installation/clarity-cookies" target="_blank" rel="noopener noreferrer">Microsoft Clarity の Cookie（公式）</a></li>
+          </ul>
         </section>
 
         <section className="contentSection">
