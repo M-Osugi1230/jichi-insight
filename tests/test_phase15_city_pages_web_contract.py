@@ -112,7 +112,7 @@ def test_progress_model_and_pages_link_to_city_pages():
     sitemap = SITEMAP.read_text(encoding="utf-8")
 
     assert "slugFromCompletionPath" in model
-    assert "市のページを見る" in review_progress
+    assert "{record.name}のページを見る" in review_progress
     assert "/municipalities/${record.slug}" in review_progress
     assert "loadPhase15CitySummaries" in municipalities
     assert "/municipalities/${city.slug}" in municipalities

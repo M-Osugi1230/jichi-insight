@@ -60,10 +60,13 @@ def test_reviewed_rows_link_to_the_generated_city_pages():
 
     # Reviewed rows link to the city page generated from the reviewed package;
     # the GitHub completion record stays available as a secondary link.
-    assert "市のページを見る" in page
+    assert "{record.name}のページを見る" in page
     assert 'record.status === "reviewed_complete" && record.slug' in page
     assert "/municipalities/${record.slug}" in page
-    assert "レビュー完了記録" in page
+    assert "{record.name}のレビュー完了記録" in page
+    assert "{record.name}の公式資料の索引" in page
+    assert 'href="#review-progress-after-directory"' in page
+    assert 'id="review-progress-after-directory" tabIndex={-1}' in page
     # The slug is derived from the completion path in the public model.
     assert "slugFromCompletionPath" in model
     assert "_phase15_completion.json" in model

@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { BreadcrumbTrail } from "@/components/BreadcrumbTrail";
 import { PageIntro } from "@/components/PageIntro";
 import { CityOverview } from "@/components/CityOverview";
+import { DeduplicateCitySourceTabStops } from "@/components/DeduplicateCitySourceTabStops";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SourceLocation } from "@/components/SourceLocation";
@@ -243,7 +244,8 @@ export default async function Phase15CityPage({
     <>
       <SiteHeader />
       <main id="main-content">
-      <div className={`pageShell ${styles.cityShell}`}>
+      <div className={`pageShell ${styles.cityShell}`} data-city-source-tab-scope>
+        <DeduplicateCitySourceTabStops />
         <BreadcrumbTrail items={[{name:"ホーム",href:"/"},{name:"自治体一覧",href:"/municipalities"},{name:city.name,href:`/municipalities/${city.slug}`}]} />
         <PageIntro
           eyebrow={`${city.prefecture} / ${city.officialCode} / 公式資料レビュー`}

@@ -121,3 +121,27 @@
   .metrics > div { padding: 12px; }
   .summary { padding: 18px; }
 }
+
+/* Explicit, always discoverable keyboard shortcut over the long directory. */
+.directorySkip {
+  border: 1px solid var(--line-strong);
+  border-radius: 9px;
+  color: var(--blue);
+  display: inline-block;
+  font-size: .85rem;
+  font-weight: 750;
+  margin: 0 0 20px;
+  padding: 10px 14px;
+  text-underline-offset: 3px;
+}
+.directoryEnd {
+  scroll-margin-top: 115px;
+}
+.directoryEnd h2 {
+  font-size: 1rem;
+  margin: 0 0 18px;
+}
+.directoryEnd:focus {
+  outline: 3px solid #6bb2da;
+  outline-offset: 3px;
+}

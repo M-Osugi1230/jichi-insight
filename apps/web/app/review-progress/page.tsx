@@ -111,6 +111,7 @@ export default function ReviewProgressPage() {
             </p>
           </div>
 
+          <a className={styles.directorySkip} href="#review-progress-after-directory">67自治体の一覧を飛ばして次の項目へ進む</a>
           <ol className={styles.list}>
             {phase15Progress.municipalities.map((record) => (
               <li key={record.officialCode} className={styles.municipality}>
@@ -137,27 +138,24 @@ export default function ReviewProgressPage() {
                     {record.status === "reviewed_complete" && record.slug && (
                       <Link
                         href={`/municipalities/${record.slug}`}
-                        aria-label={`${record.name}のページを見る`}
                       >
-                        市のページを見る
+                        {record.name}のページを見る
                       </Link>
                     )}
                     <a
                       href={sourcePrefix + record.sourceInventoryPath}
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label={`${record.name}の公式資料の索引`}
                     >
-                      公式資料の索引
+                      {record.name}の公式資料の索引
                     </a>
                     {record.status === "reviewed_complete" && record.completionPath && (
                       <a
                         href={sourcePrefix + record.completionPath}
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label={`${record.name}のレビュー完了記録`}
                       >
-                        レビュー完了記録
+                        {record.name}のレビュー完了記録
                       </a>
                     )}
                   </div>
@@ -167,6 +165,9 @@ export default function ReviewProgressPage() {
           </ol>
         </section>
 
+        <div id="review-progress-after-directory" tabIndex={-1} className={styles.directoryEnd}>
+          <h2>レビュー状況の一覧はここまでです</h2>
+        </div>
         <div className={styles.disclaimer}>
           <p>掲載状態は公式資料の有無や政策の達成度を意味しません。</p>
           <Link href="/methodology">判定方法を見る →</Link>
