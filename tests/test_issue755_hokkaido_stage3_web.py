@@ -61,8 +61,7 @@ def test_executive_metadata_and_quality_registration():
     assert 'href: "/municipalities/asahikawa-city"' in CATALOG
     assert "Reviewed 公約13件" in CATALOG
     assert "公約原文は未登録" in CATALOG
-    for slug in ("sapporo-city", "asahikawa-city"):
-        assert (WEB / "app/municipalities/[slug]/page.tsx").is_file()
+    assert (WEB / "app/municipalities/[slug]/page.tsx").is_file()
 
 
 def test_hokkaido_governor_and_discovery_gates_follow_reviewed_records():
