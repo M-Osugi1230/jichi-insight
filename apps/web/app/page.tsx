@@ -29,31 +29,26 @@ export const metadata: Metadata = {
 
 const evidenceChain = [
   {
-    number: "01",
     key: "Promise",
     title: "何を目指すか",
     text: "計画、公約、数値目標を原文と期間から読む。",
   },
   {
-    number: "02",
     key: "Money",
     title: "いくら使うか",
     text: "予算、補正、執行、決算を同じ金額として混ぜない。",
   },
   {
-    number: "03",
     key: "Action",
     title: "何をしたか",
     text: "事業、契約、支出先、実施内容を目標へつなぐ。",
   },
   {
-    number: "04",
     key: "Result",
     title: "何が変わったか",
     text: "年度実績とKPIを比較可能な条件で確かめる。",
   },
   {
-    number: "05",
     key: "Accountability",
     title: "どう説明したか",
     text: "首長、議会、監査、訂正履歴から説明責任を見る。",
@@ -124,7 +119,6 @@ const searchEntries: MunicipalitySearchEntry[] = [
 
 const startPaths = [
   {
-    number: "01",
     label: "財政",
     heading: "市の借金・財政を知る",
     description: "自治体の予算・決算と公式資料を確認します。市債残高などは全市で同条件に揃っていません。",
@@ -132,7 +126,6 @@ const startPaths = [
     action: "自治体を選んで財政を見る",
   },
   {
-    number: "02",
     label: "公約",
     heading: "首長の公約を確かめる",
     description: "福岡県知事・福岡市長・北九州市長の公約原文と評価材料を確認します。",
@@ -140,7 +133,6 @@ const startPaths = [
     action: "公約の原文と根拠を見る",
   },
   {
-    number: "03",
     label: "議会",
     heading: "議会で何が決まったかを見る",
     description: "3議会の議案や表決を確認します。議員ごとの賛否は公表されていません。",
@@ -148,7 +140,6 @@ const startPaths = [
     action: "議会の公開情報を見る",
   },
   {
-    number: "04",
     label: "事業",
     heading: "事業のお金と結果を確認する",
     description: "3自治体の登録済み重点事業について、予算・KPI・公式評価をたどります。",
@@ -156,7 +147,6 @@ const startPaths = [
     action: "登録済みの重点事業を見る",
   },
   {
-    number: "05",
     label: "比較",
     heading: "同じ条件の数値を並べて見る",
     description: "福岡市と北九州市の同条件4指標だけを比較します。任意の市の比較は未提供です。",
@@ -185,9 +175,8 @@ export default function Home() {
         </div>
         <div className={styles.serviceRoutesGrid}>
           {startPaths.map((item) => (
-            <article className={styles.serviceRouteCard} key={item.number}>
+            <article className={styles.serviceRouteCard} key={item.href}>
               <div className={styles.serviceRouteTop}>
-                <span>{item.number}</span>
                 <span>{item.label}</span>
               </div>
               <h3>{item.heading}</h3>
