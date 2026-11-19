@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { EvidencePanel } from "@/components/EvidencePanel";
 import { FiscalReview } from "@/components/FiscalReview";
+import { ProjectReview } from "@/components/ProjectReview";
 import { MunicipalityDiscoveryPanel } from "@/components/MunicipalityDiscoveryPanel";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -23,8 +24,10 @@ import {
   hokkaidoPlanReview,
 } from "@/lib/hokkaidoFinance";
 import { canonicalFor } from "@/lib/pageMetadata";
+import { projectRegistry } from "@/lib/projectRegistry";
 
 import styles from "../fukuoka-prefecture/page.module.css";
+import projectStyles from "@/components/ProjectReview.module.css";
 
 export const metadata: Metadata = {
   alternates: { canonical: canonicalFor("/municipalities/hokkaido-prefecture") },
@@ -34,6 +37,9 @@ export const metadata: Metadata = {
 };
 
 export default function HokkaidoPrefecturePage() {
+  const projects = projectRegistry["hokkaido-prefecture"];
+  const reviewedProjects = projects.projects.filter((project) => project.review_status === "reviewed");
+  const seriesCount = new Set(reviewedProjects.map((project) => project.series_id)).size;
   const budget = hokkaidoBudgetRecord("total_revenue");
   const tax = hokkaidoBudgetRecord("local_tax");
   const expenditure = hokkaidoBudgetRecord("total_expenditure");
@@ -84,6 +90,7 @@ export default function HokkaidoPrefecturePage() {
             budgetHref="#finance-headline-title"
             settlementHref="#fiscal-detail"
             fiscalDetailHref="#fiscal-detail"
+            projectHref="#priority-projects"
           />
 
           <section className={styles.scope} aria-label="登録情報の範囲">
@@ -92,8 +99,8 @@ export default function HokkaidoPrefecturePage() {
               <h2 id="scope-title">計画・予算・決算・知事の任期を分けて確認する。</h2>
             </div>
             <div>
-              <p>確認できること：北海道総合計画の Reviewed 計画レビュー、2026年度の成立後一般会計当初予算、2022〜2024年度の普通会計決算51件、鈴木直道知事の現任期と公式出典です。</p>
-              <p>まだ登録・評価していないこと：知事公約の原文は未登録（段階3で登録予定）、北海道議会の個別レコードは未登録（段階4で登録予定）です。重点事業は段階2で登録中であり、このページに個別事業の成果を掲載していません。未登録は実際の公表・実施の不存在を意味しません。</p>
+              <p>確認できること：北海道総合計画の Reviewed 計画レビュー、2026年度の成立後一般会計当初予算、2022〜2024年度の普通会計決算51件、重点事業の Reviewed 10系列と道による一次政策評価（総合判定）、鈴木直道知事の現任期と公式出典です。</p>
+              <p>まだ登録・評価していないこと：知事公約の原文は未登録（段階3で登録予定）、北海道議会の個別レコードは未登録（段階4で登録予定）です。重点事業は段階2で10系列の Reviewed レコードを登録済みですが、全121施策の網羅や事業成果の独自判定ではありません。基本評価調書の「予算額」は当初予算ベースの施策単位合計額であり、決算額ではありません。未登録は実際の公表・実施の不存在を意味しません。</p>
               <p>北海道総合計画は政策指標108件（重複を含め113件）が公表されていますが、このページの計画レビュー4項目を個別指標の達成度に置き換えません。一般会計と普通会計、予算と決算を直接連結した増減率・達成率は示しません。</p>
             </div>
           </section>
@@ -170,6 +177,46 @@ export default function HokkaidoPrefecturePage() {
             </div>
           </section>
 
+          <section id="priority-projects" className={styles.headline} aria-labelledby="priority-projects-title">
+            <div className="sectionIntro">
+              <p className="eyebrow">Reviewed priority projects</p>
+              <h2 id="priority-projects-title">北海道の重点施策の予算・KPI・道の公式評価</h2>
+              <p>北海道総合計画の3つの基本方向・政策の柱をたどり、令和7年度基本評価調書の公式掲載順から選定した {seriesCount} 系列・{reviewedProjects.length} 件の Reviewed 施策を掲載しています。全121施策の網羅ではなく、金額の大小による順位付けではありません。</p>
+              <p><strong>基本評価調書の「予算額」は当初予算ベースの施策単位の合計額です。決算額、執行額、個別事務事業の額ではありません。</strong> 記録済みの総合判定は北海道による<strong>一次政策評価の公式評価</strong>であり、Jichi Insight の独自評価ではありません。</p>
+              <p>予算・KPI の目標値・実績値、一次評価の根拠を分けて表示します。<Link href="/projects#hokkaido-prefecture">北海道の事業一覧を見る</Link></p>
+            </div>
+            <div className={projectStyles.cards}>
+              {reviewedProjects.map((project) => (
+                <article className={projectStyles.card} key={project.id}>
+                  <p className={projectStyles.meta}>{project.fiscal_year}年度／{project.policy_area}／Reviewed</p>
+                  <h3>{project.official_title}</h3>
+                  <p>{project.plain_title}</p>
+                  <p><strong>北海道の一次政策評価・総合判定：{project.official_evaluation?.rating ?? "未収録"}</strong></p>
+                  <p>{project.official_evaluation?.note ?? "公式評価の注記は未収録"}</p>
+                  <ul>
+                    {project.budget_records.map((record, index) => (
+                      <li key={`${record.fiscal_year}-${record.kind}-${index}`}>
+                        {record.fiscal_year}年度／基本評価調書の「予算額」（当初予算ベース・決算額ではありません）：
+                        {record.amount_yen === null ? "未収録" : formatCompactYen(record.amount_yen)}
+                        {record.note ? <p className={projectStyles.meta}>{record.note}</p> : null}
+                      </li>
+                    ))}
+                  </ul>
+                  <p className={projectStyles.meta}>Reviewed KPI：{projects.kpis.filter((kpi) =>
+                    kpi.project_id === project.id && kpi.review_status === "reviewed",
+                  ).length}件</p>
+                  <details>
+                    <summary>北海道の一次政策評価・KPI・公式出典を詳しく見る</summary>
+                    <ProjectReview area="hokkaido-prefecture" record={project} kpis={projects.kpis.filter(
+                      (kpi) => kpi.project_id === project.id && kpi.review_status === "reviewed",
+                    )} />
+                  </details>
+                  <p><Link href={`/projects/hokkaido-prefecture/${encodeURIComponent(project.series_id)}`}>この施策の年度別詳細を見る</Link></p>
+                </article>
+              ))}
+            </div>
+          </section>
+
           <section className={styles.scope} aria-labelledby="governor-title">
             <div>
               <p className="eyebrow">Executive term</p>
@@ -221,7 +268,7 @@ export default function HokkaidoPrefecturePage() {
             <ul>
               <li>知事公約の原文・進捗・達成度（段階3で登録予定）</li>
               <li>北海道議会の議案・表決・監視活動の個別記録（段階4で登録予定）</li>
-              <li>重点事業の個別予算・KPI・実績（段階2で登録中）</li>
+              <li>登録済み10系列以外の事業全体の網羅、施策単位の決算・執行額、契約・監査との公式対応</li>
               <li>2026年度の執行実績と決算</li>
               <li>計画指標の年度実績と公表値に基づく政策成果判定</li>
             </ul>

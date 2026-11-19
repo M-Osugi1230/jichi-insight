@@ -40,6 +40,7 @@ REQUIRED_FILES = [
     "municipalities/phase9/index.html",
     "municipalities/hokkaido/index.html",
     "municipalities/hokkaido-prefecture/index.html",
+    "projects/index.html",
     "municipalities/miyagi/index.html",
     "municipalities/tokyo/index.html",
     "municipalities/aichi/index.html",
@@ -100,7 +101,11 @@ BASE_PAGE_REQUIREMENTS: dict[str, list[str]] = {
         "鈴木 直道",
         "公約原文：" + "未登録",
         "北海道議会の個別レコードは未登録",
-        "重点事業は段階2で登録中",
+        "重点事業は段階2で10系列の Reviewed レコードを登録済み",
+        "基本評価調書の「予算額」",
+        "決算額ではありません",
+        "北海道の重点施策の予算・KPI・道の公式評価",
+        "北海道の一次政策評価・総合判定",
         "まだ登録・評価していないこと",
     ],
     "municipalities/miyagi/index.html": [
@@ -146,6 +151,18 @@ BASE_PAGE_REQUIREMENTS: dict[str, list[str]] = {
         "ジブリパークの魅力発信",
         "low / inferred・要レビュー",
         "まだ登録・評価していないこと",
+    ],
+    "projects/index.html": [
+        "9自治体の Reviewed 事業レコード",
+        "北海道｜登録事業",
+        "札幌市｜登録事業",
+        "旭川市｜登録事業",
+        "基本評価調書の「予算額」",
+        "当初予算ベース",
+        "決算額ではありません",
+        "北海道の総合判定は道の一次政策評価の判定",
+        "事業単位の公式評価は公表されていません",
+        "独自評価や順位付けは行いません",
     ],
     "promises/index.html": [
         "北海道・鈴木 直道",
@@ -418,6 +435,18 @@ def reviewed_coverage_requirements() -> dict[str, list[str]]:
     }
 
 
+def hokkaido_cluster_project_detail_files() -> set[str]:
+    """Require each Reviewed Hokkaido cluster project series to export a detail page."""
+    required: set[str] = set()
+    for slug in ("hokkaido-prefecture", "sapporo-city", "asahikawa-city"):
+        records = load_json(ROOT / "data" / "reviewed" / slug / "projects.json")
+        for series in {
+            item["series_id"] for item in records if item["review_status"] == "reviewed"
+        }:
+            required.add(f"projects/{slug}/{series}/index.html")
+    return required
+
+
 def normalized_html(path: Path) -> str:
     content = path.read_text(encoding="utf-8")
     return re.sub(r"<!--.*?-->", "", content, flags=re.DOTALL)
@@ -456,7 +485,11 @@ def validate_hokkaido_promise_scope() -> list[str]:
 def main() -> int:
     args = parse_args()
     failures: list[str] = []
-    required_files = set(REQUIRED_FILES) | published_required_files()
+    required_files = (
+        set(REQUIRED_FILES)
+        | published_required_files()
+        | hokkaido_cluster_project_detail_files()
+    )
 
     for relative_path in sorted(required_files):
         if not (EXPORT_ROOT / relative_path).is_file():

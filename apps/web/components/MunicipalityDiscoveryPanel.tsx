@@ -51,7 +51,7 @@ export function MunicipalityDiscoveryPanel({
     <section className={styles.panel} aria-labelledby="municipality-discovery-title">
       <h2 id="municipality-discovery-title">この自治体で調べられること</h2>
       <p className={styles.note}>
-        公約・議会の深掘りは現在、福岡県・福岡市・北九州市が対象です。重点事業の深掘りは、Reviewed 事業が登録されている自治体に限ります。
+        公約・議会の深掘りは、その自治体の Reviewed レコードが登録されている場合に限って案内します。重点事業も Reviewed 事業の登録と自治体コードの一致を確認した場合に限って案内します。
         「対象外」は本サイトの深掘り対象外を意味します。
       </p>
       <ul className={styles.list}>

@@ -6,6 +6,7 @@ import styles from "./ProjectReview.module.css";
 
 const show = (v: string | number | null | undefined) => v === null || v === undefined || v === "" ? "未収録" : String(v);
 function stageLabel(area: string, stage: string, year: number) {
+  if (area === "hokkaido-prefecture" && stage === "initial_budget") return "基本評価調書の「予算額」に基づく当初予算ベース（決算額ではありません。個別事務事業の額でもありません）";
   if (area === "nagoya-city" && stage === "initial_budget") return "予算案段階の予定額（成立後の事業別予算額ではありません）";
   if (area === "aichi-prefecture" && stage === "initial_budget" && year === 2026) return "FY2026 当初予算・億円単位で公表された概数（千円単位の確定額ではありません）";
   if (area === "fukuoka-city" && stage === "initial_budget") return "当初予算案段階の額（成立後の事業別額は未確認）";
@@ -26,11 +27,14 @@ export function ProjectReview({area, record, kpis}:{area:string;record:ProjectRe
   const budgets = [...record.budget_records].sort((a,b) => a.fiscal_year - b.fiscal_year);
   const hasSettlement = budgets.some(b => b.kind === "settlement" && b.amount_yen !== null);
   const end = record.official_evaluation?.direction;
+  const hasNoPublishedProjectAssessment = area === "toyota-city" || area === "sapporo-city" || area === "asahikawa-city";
   return <section className={styles.section}>
     <p className={styles.meta}>Reviewed / {record.fiscal_year}年度 / 対象：{show(record.target_population)} / 担当：{show(record.responsible_department)} / 上位施策：{show(record.parent_policy)}</p>
     <div className={styles.detail}><h2>目的と対象</h2><p>{record.purpose}</p><p className={styles.meta}>首長公約との接続：{record.related_promise_ids.length ? "関連候補（自動推定を含む・要確認）。確信度：低（inferred）／証拠パケット：needs_review。確定的な因果接続や達成判定ではありません。" : "接続公約なし（未着手・未達を意味しません）"}</p>
       {record.related_promise_ids.length ? <ul>{record.related_promise_ids.map(id=><li key={id}><Link className={styles.link} href={`/promises#${id}`}>公約原文を見る</Link> <span className={styles.meta}>（公約ID: {id}、自動推定を含む・確信度低・要レビュー）</span></li>)}</ul> : null}</div>
     <div className={styles.detail}><h2>予算から成果までの記録</h2>
+      {area === "hokkaido-prefecture" ? <p className={styles.warning}>北海道の金額は基本評価調書の「予算額」に基づく施策単位の当初予算ベースです。決算額・執行額・個別事務事業の金額ではありません。公式評価（総合判定）は北海道による一次政策評価の判定であり、Jichi Insight 独自の評価ではありません。</p> : null}
+      {hasNoPublishedProjectAssessment ? <p className={styles.warning}>事業単位の公式評価は公表されていません。目標・施策・計画単位の叙述をこの事業の公式評価に読み替えず、独自の評価・順位付けをしません。</p> : null}
       <ol className={styles.lifecycle}>
         <li><strong>計画・公約との接続</strong>要確認。関連性の自動推定を含み、確定済みの接続ではありません。</li>
         {budgets.map((budget,i)=><li key={`${budget.fiscal_year}-${budget.kind}-${i}`}>
@@ -42,11 +46,13 @@ export function ProjectReview({area, record, kpis}:{area:string;record:ProjectRe
         <li><strong>KPI 実績</strong>以下に基準値・目標・実績を分離して表示</li>
         <li><strong>自治体の公式評価・次年度方向性</strong>
           {record.official_evaluation
-            ? `${show(record.official_evaluation.rating)}／${show(end)}`
-            : area === "toyota-city" ? "事業単位の公式評価は公表されていません" : "未収録"}
+            ? `${area === "hokkaido-prefecture" ? "北海道の一次政策評価・総合判定：" : ""}${show(record.official_evaluation.rating)}／${show(end)}`
+            : hasNoPublishedProjectAssessment ? "事業単位の公式評価は公表されていません" : "未収録"}
           <p className={styles.meta}>{record.official_evaluation?.note ??
-            (area === "toyota-city"
-              ? "目標・施策単位の進捗や叙述を、この事業の公式評価に読み替えません。"
+            (hasNoPublishedProjectAssessment
+              ? area === "toyota-city"
+                ? "目標・施策単位の進捗や叙述を、この事業の公式評価に読み替えません。"
+                : "目標・施策・計画単位の進捗や叙述を、この事業の公式評価に読み替えません。"
               : "公式評価は未収録")}</p></li>
       </ol>
       {end && /廃止|終了|完了/.test(end+" "+record.official_evaluation?.rating) ? <p className={styles.warning}>この事業は終了・廃止等の終端として記録されています。後継事業の有無は公式評価の注記をご確認ください。</p> : null}
