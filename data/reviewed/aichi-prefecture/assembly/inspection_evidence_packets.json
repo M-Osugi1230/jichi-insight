@@ -1,0 +1,33 @@
+[
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "inspection_trip_reports",
+        "location_note": "委員会情報・委員会結果概要・委員会審査状況の各ページおよびサイト内検索",
+        "review_note": null,
+        "source_ids": [
+          "aichi-pref-assembly-committees-2026"
+        ],
+        "statement": "常任委員会等の視察（県内調査・県外調査）について、報告書または一覧の形での公式公表は確認できなかった。したがって視察レコードは登録せず、公表がないこと自体を記録する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "overseas_delegation_reports",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "aichi-pref-assembly-overseas-reports"
+        ],
+        "statement": "議会が派遣する海外調査団の報告書は別制度の公表物として平成29年度〜令和7年度分が掲載されているが、委員会視察の報告書ではないため、本登録では視察レコードとして扱わない。"
+      }
+    ],
+    "id": "evidence-aichi-prefecture-assembly-2023-inspection-trips",
+    "open_questions": [
+      "海外調査団報告書を将来「視察」の枠組みで登録するかは設計判断として残す。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-230006-assembly-2023",
+    "subject_type": "assembly"
+  }
+]
