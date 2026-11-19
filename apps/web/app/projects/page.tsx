@@ -11,6 +11,7 @@ export default function ProjectsPage(){
   const areas = Object.entries(projectRegistry) as [ProjectArea,(typeof projectRegistry)[ProjectArea]][];
   return <><SiteHeader/><main className="pageShell"><h1>重点事業</h1>
     <p>3自治体の Reviewed 事業レコードを掲載しています。公式母集団から各政策の柱ごとに掲載順で選定したものであり、金額順・優先度順・独自ランキングではありません。</p>
+    <p>確認できること：福岡県・福岡市・北九州市の登録済み重点事業の予算・KPI・公式評価。まだ確認できないこと：3自治体のすべての事業を網羅した一覧ではありません。未収録の項目を推測で補いません。</p>
     {areas.map(([key,area])=><section className={styles.section} key={key}>
       <h2>{area.name}｜登録事業</h2>
       <p className={styles.meta}>母集団：{area.selection.population?.description ?? "詳細未収録"}</p>
