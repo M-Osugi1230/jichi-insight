@@ -1,0 +1,100 @@
+[
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "seat_count",
+        "location_note": "議員紹介ページ 会派別名簿",
+        "review_note": null,
+        "source_ids": [
+          "toyota-city-assembly-members-by-faction"
+        ],
+        "statement": "定数は45人。会派別名簿の会派別人数の合計（28+9+4+3+1）が45と一致する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "term",
+        "location_note": "愛知県一覧表の豊田市議会議員の項",
+        "review_note": null,
+        "source_ids": [
+          "toyota-city-assembly-term-aichi",
+          "toyota-city-assembly-members-by-faction"
+        ],
+        "statement": "議員の任期は令和5年4月30日から令和9年4月29日まで。任期満了日は愛知県「市町村長及び議会議員の任期満了日等一覧表」で令和9年4月29日と公表され、開始日は市公式の正・副議長資料における議員歴の起算日（4月30日）と整合する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "factions",
+        "location_note": "会派別名簿、政務活動費の会派別状況（令和7年度）",
+        "review_note": null,
+        "source_ids": [
+          "toyota-city-assembly-members-by-faction",
+          "toyota-city-assembly-expenses-fy2025"
+        ],
+        "statement": "会派は自民クラブ28人、市民フォーラム9人、公明党豊田市議団4人、新しい風とよた3人、諸派（日本共産党）1人。会派別名簿の見出しは「豊田市議会自民クラブ議員団」「豊田市議会市民フォーラム」で、政務活動費の会派別状況の表記（自民クラブ等）に合わせて記録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "committees",
+        "location_note": "議員紹介ページの委員会別名簿、議決結果一覧",
+        "review_note": null,
+        "source_ids": [
+          "toyota-city-assembly-members-by-faction",
+          "toyota-city-assembly-results-2026-september"
+        ],
+        "statement": "常任委員会は企画総務・地域生活・教育社会・環境福祉・産業建設の5委員会で、ほかに議会運営委員会と予算決算委員会がある（議決結果一覧の付託委員会欄にも予算決算が現れる）。"
+      }
+    ],
+    "id": "evidence-jp-local-232114-assembly-2023",
+    "open_questions": [
+      "陳情の件名・結果の公式公表の所在",
+      "委員会視察の費用の公表有無"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-232114-assembly-2023",
+    "subject_type": "assembly"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "session",
+        "location_note": "令和8年9月定例会 議決結果一覧全体",
+        "review_note": null,
+        "source_ids": [
+          "toyota-city-assembly-results-2026-september"
+        ],
+        "statement": "令和8年9月定例会の会期は、議決結果一覧における報告案件の報告日（2026年8月28日）から全表決案件の議決日（2026年9月18日）までとして記録した。提出案件は報告4件・承認13件・議案44件・同意2件の計63件で、ほかに陳情1件が提出されたが件名・結果の公式公表の所在を特定できず未登録とした。"
+      }
+    ],
+    "id": "evidence-jp-local-232114-assembly-2023-session-2026-1",
+    "open_questions": [
+      "陳情1件の件名・結果"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-232114-assembly-2023-session-2026-1",
+    "subject_type": "session"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "items",
+        "location_note": "公式サイト各ページ",
+        "review_note": null,
+        "source_ids": [
+          "toyota-city-assembly-official-site",
+          "toyota-city-assembly-results-2026-september",
+          "toyota-city-assembly-expenses-page",
+          "toyota-city-assembly-inspection-index"
+        ],
+        "statement": "各項目の公開状況は2026年11月19日に公式サイトで確認した。会派別賛否は人数まで公表される一方、議員個人別の賛否は公表されていない。政務活動費は会派別集計のみWeb公表で、詳細は市政情報コーナーでの閲覧に限られる。"
+      }
+    ],
+    "id": "evidence-jp-local-232114-assembly-2023-disclosure-2026",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-232114-assembly-2023-disclosure-2026",
+    "subject_type": "disclosure_profile"
+  }
+]
