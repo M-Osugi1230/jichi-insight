@@ -125,27 +125,43 @@ const searchEntries: MunicipalitySearchEntry[] = [
 const startPaths = [
   {
     number: "01",
-    label: "政策と成果",
-    heading: "地域は何を目指している？",
-    description: "自治体が公表した計画・目標と、確認できる年度実績をたどります。",
-    href: "/policies",
-    action: "政策を見る",
+    label: "財政",
+    heading: "市の借金・財政を知る",
+    description: "自治体の予算・決算と公式資料を確認します。市債残高などは全市で同条件に揃っていません。",
+    href: "/municipalities",
+    action: "自治体を選んで財政を見る",
   },
   {
     number: "02",
-    label: "予算と財政",
-    heading: "お金はどう使われている？",
-    description: "予算と決算を区別して、条件の揃う数字だけを確認します。",
-    href: "/compare",
-    action: "財政を見る",
+    label: "公約",
+    heading: "首長の公約を確かめる",
+    description: "福岡県知事・福岡市長・北九州市長の公約原文と評価材料を確認します。",
+    href: "/promises",
+    action: "公約の原文と根拠を見る",
   },
   {
     number: "03",
-    label: "公約と議会",
-    heading: "誰が、何を説明している？",
-    description: "首長の公約や議会の公開資料を、一次情報から読み解きます。",
-    href: "/executives",
-    action: "首長の情報を見る",
+    label: "議会",
+    heading: "議会で何が決まったかを見る",
+    description: "3議会の議案や表決を確認します。議員ごとの賛否は公表されていません。",
+    href: "/assemblies",
+    action: "議会の公開情報を見る",
+  },
+  {
+    number: "04",
+    label: "事業",
+    heading: "事業のお金と結果を確認する",
+    description: "3自治体の登録済み重点事業について、予算・KPI・公式評価をたどります。",
+    href: "/projects",
+    action: "登録済みの重点事業を見る",
+  },
+  {
+    number: "05",
+    label: "比較",
+    heading: "同じ条件の数値を並べて見る",
+    description: "福岡市と北九州市の同条件4指標だけを比較します。任意の市の比較は未提供です。",
+    href: "/compare",
+    action: "比較できる範囲を見る",
   },
 ];
 
@@ -158,6 +174,31 @@ export default function Home() {
     <>
       <SiteHeader />
       <main id="main-content">
+
+      <section className={styles.serviceRoutes} aria-labelledby="service-routes-title">
+        <div className={styles.serviceRoutesHeading}>
+          <div>
+            <p className="eyebrow">EXPLORE BY QUESTION</p>
+            <h2 id="service-routes-title">知りたいことから、調べる。</h2>
+          </div>
+          <p>自治体ごとに確認できる範囲は異なります。掲載のない情報は推測で補いません。</p>
+        </div>
+        <div className={styles.serviceRoutesGrid}>
+          {startPaths.map((item) => (
+            <article className={styles.serviceRouteCard} key={item.number}>
+              <div className={styles.serviceRouteTop}>
+                <span>{item.number}</span>
+                <span>{item.label}</span>
+              </div>
+              <h3>{item.heading}</h3>
+              <p>{item.description}</p>
+              <Link href={item.href}>
+                {item.action} <span aria-hidden="true">→</span>
+              </Link>
+            </article>
+          ))}
+        </div>
+      </section>
 
       <JapanMapExplorer
         prefectures={reviewedPrefectureCoverage.map((item) => ({
@@ -196,31 +237,6 @@ export default function Home() {
           <span aria-hidden="true">＋</span>
         </summary>
         <div className={styles.mapDeepDiveContent}>
-      <section className={styles.serviceRoutes} aria-labelledby="service-routes-title">
-        <div className={styles.serviceRoutesHeading}>
-          <div>
-            <p className="eyebrow">EXPLORE BY QUESTION</p>
-            <h2 id="service-routes-title">知りたいことから、調べる。</h2>
-          </div>
-          <p>自治体ごとに確認できる範囲は異なります。掲載のない情報は推測で補いません。</p>
-        </div>
-        <div className={styles.serviceRoutesGrid}>
-          {startPaths.map((item) => (
-            <article className={styles.serviceRouteCard} key={item.number}>
-              <div className={styles.serviceRouteTop}>
-                <span>{item.number}</span>
-                <span>{item.label}</span>
-              </div>
-              <h3>{item.heading}</h3>
-              <p>{item.description}</p>
-              <Link href={item.href}>
-                {item.action} <span aria-hidden="true">→</span>
-              </Link>
-            </article>
-          ))}
-        </div>
-      </section>
-
       <section className={styles.snapshot} aria-label="現在のデータ公開状況">
         <div className={styles.snapshotLead}>
           <p>JICHI INSIGHT NOW</p>
