@@ -51,8 +51,8 @@ export default function ProjectsPage() {
       <SiteHeader />
       <main className="pageShell">
         <h1>重点事業</h1>
-        <p>6自治体の Reviewed 事業レコードを掲載しています。公式母集団から各政策の柱ごとに掲載順で選定したものであり、金額順・優先度順・独自ランキングではありません。</p>
-        <p>確認できること：福岡県・福岡市・北九州市・愛知県・名古屋市・豊田市の登録済み重点事業の予算・KPI・公式評価（登録のあるもの）。まだ確認できないこと：6自治体の全事業を網羅した一覧ではありません。名古屋市の金額は予算案段階の予定額で成立値ではなく、愛知県のFY2026当初予算額は億円単位の概数です。豊田市の事業単位の公式評価は公表されていません。</p>
+        <p>9自治体の Reviewed 事業レコードを掲載しています。公式母集団から各政策の柱ごとに掲載順で選定したものであり、金額順・優先度順・独自ランキングではありません。</p>
+        <p>確認できること：福岡県・福岡市・北九州市・愛知県・名古屋市・豊田市・北海道・札幌市・旭川市の登録済み重点事業の予算・KPI・公式評価（公表のあるもの）。まだ確認できないこと：9自治体の全事業を網羅した一覧ではありません。名古屋市の金額は予算案段階の予定額で成立値ではなく、愛知県のFY2026当初予算額は億円単位の概数です。北海道の金額は基本評価調書の「予算額」に基づく当初予算ベースで、決算額ではありません。北海道の総合判定は道の一次政策評価の判定です。豊田市・札幌市・旭川市の事業単位の公式評価は公表されていません。独自評価や順位付けは行いません。</p>
 
         <ProgressiveRecordFilter
           kind="projects"
@@ -68,6 +68,8 @@ export default function ProjectsPage() {
               {key === "nagoya-city" ? <p className={styles.meta}>金額は予算案段階の「予定額」であり、成立後の事業別予算額ではありません。</p> : null}
               {key === "aichi-prefecture" ? <p className={styles.meta}>FY2026 当初予算額は、億円単位で公表された概数です。公式評価の A〜E は愛知県の判定をそのまま表示します。</p> : null}
               {key === "toyota-city" ? <p className={styles.meta}>事業単位の公式評価は公表されていません。目標・施策単位の叙述を事業評価として扱いません。</p> : null}
+              {key === "hokkaido-prefecture" ? <p className={styles.meta}>基本評価調書の「予算額」に基づく当初予算ベースの施策単位合計額であり、決算額・個別事務事業の額ではありません。公式評価（総合判定）は北海道の一次政策評価の判定で、当サイトの独自評価ではありません。</p> : null}
+              {key === "sapporo-city" || key === "asahikawa-city" ? <p className={styles.meta}>事業単位の公式評価は公表されていません。計画・施策単位の進捗を事業単位の評価に読み替えず、独自の評価・順位付けをしません。</p> : null}
               <div className={styles.cards}>
                 {area.projects.filter((project) => project.review_status === "reviewed").map((project) => {
                   const matchedSources = project.sources
@@ -93,6 +95,8 @@ export default function ProjectsPage() {
                       {key === "nagoya-city" ? <p className={styles.meta}>予算案段階の予定額（成立値ではありません）</p> : null}
                       {key === "aichi-prefecture" ? <p className={styles.meta}>FY2026 当初予算は億円単位の概数です。県の公式評価：{project.official_evaluation?.rating ?? "未収録"}</p> : null}
                       {key === "toyota-city" ? <p className={styles.meta}>事業単位の公式評価は公表されていません。</p> : null}
+                      {key === "hokkaido-prefecture" ? <p className={styles.meta}>基本評価調書の「予算額」＝当初予算ベース（決算額ではありません）。道の一次政策評価・総合判定：{project.official_evaluation?.rating ?? "未収録"}（道の公式評価・独自評価ではありません）。</p> : null}
+                      {key === "sapporo-city" || key === "asahikawa-city" ? <p className={styles.meta}>事業単位の公式評価は公表されていません。</p> : null}
                       <p className={styles.meta}>
                         出典：{primarySource ? (
                           <a href={primarySource.url} target="_blank" rel="noopener noreferrer">
