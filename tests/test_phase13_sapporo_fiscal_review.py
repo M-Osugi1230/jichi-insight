@@ -65,9 +65,19 @@ def test_sapporo_review_sources_are_official_and_record_level_locations_exist():
         "sapporo-city-home",
         "sapporo-city-budget-2026-page",
         "sapporo-city-settlement-2024-page",
+        # Issue #691 fiscal-settlement expansion sources.
+        "sapporo-city-mic-settlement-card-fy2022",
+        "sapporo-city-mic-settlement-card-fy2023",
+        "sapporo-city-mic-settlement-card-fy2024",
+        "sapporo-city-fiscal-situation-collection-fy2022",
+        "sapporo-city-fiscal-situation-collection-fy2023",
+        "sapporo-city-fiscal-situation-collection-fy2024",
     }
     assert all(
-        source["url"].startswith("https://www.city.sapporo.jp/") for source in sources
+        source["url"].startswith(
+            ("https://www.city.sapporo.jp/", "https://www.soumu.go.jp/")
+        )
+        for source in sources
     )
 
     packets = load(REVIEWED_ROOT / "evidence_packets.json")
