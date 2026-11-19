@@ -106,7 +106,7 @@ export function loadGenericCityFinance(slug: string): GenericCityFinance | null 
     }
   }
 
-  // The default three-city catalog does not cover the generic 67-city
+  // The default three-city catalog does not cover the generic 68-city
   // sources; keep them local to this FiscalReview instead of global mutation.
   return { municipality, records, evidencePackets, sources };
 }

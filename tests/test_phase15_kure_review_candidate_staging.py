@@ -230,7 +230,7 @@ def test_kure_progress_review_stays_staging() -> None:
 def test_kure_promotion_is_reflected_in_review_queue() -> None:
     queue = json.loads(QUEUE_PATH.read_text(encoding="utf-8"))
     summary = queue["summary"]
-    assert summary["reviewed_complete_count"] == 67
+    assert summary["reviewed_complete_count"] == 68
     assert summary["pending_record_review_count"] == 0
     assert summary["next_official_code"] is None
     entry = next(

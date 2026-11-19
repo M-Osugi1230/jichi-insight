@@ -210,7 +210,7 @@ def test_hachioji_promotion_is_reflected_in_canonical_queue():
     )
     assert item["status"] == "reviewed_complete"
     assert item["completion_path"] == "data/catalog/hachioji_phase15_completion.json"
-    assert queue["summary"]["reviewed_complete_count"] == 67
+    assert queue["summary"]["reviewed_complete_count"] == 68
     assert queue["summary"]["pending_record_review_count"] == 0
     assert queue["summary"]["next_official_code"] is None
 

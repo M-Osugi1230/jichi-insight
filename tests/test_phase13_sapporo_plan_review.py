@@ -14,7 +14,11 @@ def load():
 def test_sapporo_plan_review_preserves_evidence_roles():
     review = load()
     assert review["official_code"] == "011002"
-    assert review["review_status"] == "review_in_progress"
+    # Aligned to "reviewed" when Sapporo's Phase 13 package was integrated
+    # into the Phase 15 framework (owner decision, 2026-11-19, Issue #695);
+    # the Phase 13 completion record had declared this package
+    # reviewed_complete on 2026-08-18.
+    assert review["review_status"] == "reviewed"
     roles = {record["evidence_role"] for record in review["records"]}
     assert roles == {"current_plan_identity", "implementation_layer"}
 
@@ -37,7 +41,10 @@ def test_sapporo_planned_cost_is_not_presented_as_fiscal_actual():
         for item in review["records"]
         if item["id"] == "sapporo-action-plan-2023-planned-cost"
     )
-    assert record["amount_yen"] == 1_785_400_000_000
+    # The amount is held in the Phase 15 value/unit fields (converted from
+    # the Phase 13 amount_yen field at the Phase 15 integration, #695).
+    assert record["value"] == 1_785_400_000_000
+    assert record["unit"] == "yen"
     assert "単年度予算" in record["review_note"]
     assert "決算額" in record["review_note"]
 

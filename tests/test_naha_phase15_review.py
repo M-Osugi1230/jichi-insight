@@ -30,7 +30,7 @@ def test_naha_completion_is_the_sixty_seventh_reviewed_package():
     assert completion["official_code"] == "472018"
     assert completion["status"] == "reviewed_complete"
     assert completion["completion_depth"] == "declared_review_package_v1"
-    assert queue["summary"]["reviewed_complete_count"] == 67
+    assert queue["summary"]["reviewed_complete_count"] == 68
     assert queue["summary"]["pending_record_review_count"] == 0
     assert queue["summary"]["next_official_code"] is None
 

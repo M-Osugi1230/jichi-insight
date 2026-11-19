@@ -353,7 +353,7 @@ def test_gifu_and_previous_twenty_eight_are_reviewed_complete_and_toyohashi_is_n
     ):
         assert by_code[code]["status"] == "reviewed_complete"
 
-    assert queue["summary"]["reviewed_complete_count"] == 67
+    assert queue["summary"]["reviewed_complete_count"] == 68
     assert queue["summary"]["review_in_progress_count"] == 0
     assert queue["summary"]["pending_record_review_count"] == 0
     assert queue["summary"]["next_official_code"] is None

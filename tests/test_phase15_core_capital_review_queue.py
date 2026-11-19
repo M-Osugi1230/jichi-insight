@@ -38,20 +38,33 @@ def test_phase15_queue_matches_exact_phase14_target_universe():
     queued = queue["execution_queue"]
     targets = registry["targets"]
 
-    assert len(queued) == len(targets) == 67
-    assert [row["official_code"] for row in queued] == [
+    # The original Phase 15 universe is exactly the Phase 14 registry, in
+    # registry order. Sapporo was integrated afterwards (owner decision,
+    # 2026-11-19, Issue #695) and is appended as the sole extra row: it had
+    # already completed in Phase 13, so it never entered the Phase 14
+    # registry.
+    assert len(targets) == 67
+    assert len(queued) == 68
+    original = queued[:67]
+    assert [row["official_code"] for row in original] == [
         row["official_code"] for row in targets
     ]
-    assert [row["standard_area_code"] for row in queued] == [
+    assert [row["standard_area_code"] for row in original] == [
         row["standard_area_code"] for row in targets
     ]
-    assert [row["name_ja"] for row in queued] == [row["name_ja"] for row in targets]
-    assert [row["wave"] for row in queued] == [row["wave"] for row in targets]
+    assert [row["name_ja"] for row in original] == [row["name_ja"] for row in targets]
+    assert [row["wave"] for row in original] == [row["wave"] for row in targets]
 
-    for queued_row, target in zip(queued, targets, strict=True):
+    for queued_row, target in zip(original, targets, strict=True):
         assert target["status"] == "source_inventory_complete"
         assert queued_row["phase14_role"] == target["phase14_role"]
         assert queued_row["municipality_type"] == target["municipality_type"]
+
+    sapporo = queued[67]
+    assert sapporo["official_code"] == "011002"
+    assert sapporo["name_ja"] == "札幌市"
+    assert sapporo["status"] == "reviewed_complete"
+    assert sapporo["completion_path"] == "data/catalog/sapporo_phase15_completion.json"
 
 
 def test_phase15_queue_excludes_phase13_designated_cities():
@@ -66,9 +79,13 @@ def test_phase15_queue_excludes_phase13_designated_cities():
         row["official_code"] for row in phase13["reviewed_completion_contracts"]
     )
 
-    assert len(phase15_codes) == 67
+    assert len(phase15_codes) == 68
     assert len(designated_codes) == 20
-    assert phase15_codes.isdisjoint(designated_codes)
+    # Sapporo (011002) is the sole exception: it completed in Phase 13 and
+    # was integrated into the Phase 15 framework by owner decision on
+    # 2026-11-19 (Issue #695). The other 19 Phase 13 designated cities stay
+    # excluded.
+    assert phase15_codes.intersection(designated_codes) == {"011002"}
 
 
 def test_phase15_current_statuses_are_canonical():
@@ -76,11 +93,11 @@ def test_phase15_current_statuses_are_canonical():
     statuses = Counter(row["status"] for row in queue["execution_queue"])
 
     assert statuses == {
-        "reviewed_complete": 67,
+        "reviewed_complete": 68,
     }
     assert queue["summary"] == {
-        "target_count": 67,
-        "reviewed_complete_count": 67,
+        "target_count": 68,
+        "reviewed_complete_count": 68,
         "review_in_progress_count": 0,
         "pending_record_review_count": 0,
         "blocked_source_inventory_count": 0,
@@ -160,6 +177,7 @@ def test_phase15_current_statuses_are_canonical():
         "宮崎市",
         "鹿児島市",
         "那覇市",
+        "札幌市",
     ]
     assert completed[0]["completion_path"] == "data/catalog/hakodate_phase15_completion.json"
     assert completed[1]["completion_path"] == "data/catalog/asahikawa_phase15_completion.json"
@@ -228,6 +246,7 @@ def test_phase15_current_statuses_are_canonical():
     assert completed[64]["completion_path"] == "data/catalog/miyazaki_phase15_completion.json"
     assert completed[65]["completion_path"] == "data/catalog/kagoshima_phase15_completion.json"
     assert completed[66]["completion_path"] == "data/catalog/naha_phase15_completion.json"
+    assert completed[67]["completion_path"] == "data/catalog/sapporo_phase15_completion.json"
 
     current = [
         row

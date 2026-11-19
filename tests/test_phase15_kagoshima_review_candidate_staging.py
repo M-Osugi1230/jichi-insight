@@ -48,8 +48,8 @@ def test_kagoshima_candidate_is_prepared_with_delegated_review_approved() -> Non
 def test_kagoshima_promotion_is_reflected_in_review_queue() -> None:
     queue = json.loads(QUEUE.read_text(encoding="utf-8"))
     summary = queue["summary"]
-    assert summary["target_count"] == 67
-    assert summary["reviewed_complete_count"] == 67
+    assert summary["target_count"] == 68
+    assert summary["reviewed_complete_count"] == 68
     assert summary["pending_record_review_count"] == 0
     assert summary["next_official_code"] is None
     entry = next(item for item in queue["execution_queue"] if item["official_code"] == "462012")
