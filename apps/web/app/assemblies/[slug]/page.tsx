@@ -70,7 +70,6 @@ export default async function AssemblyDetailPage({params}:PageProps){
   const members=assembly.factions.reduce((total,f)=>total+f.member_count,0);
   const receipt=data.disclosure.items.find(item=>item.item==="political_activity_expense_receipts");
   const votingInfo=data.disclosure.items.find(item=>item.item==="faction_votes");
-  const memberVotingInfo=data.disclosure.items.find(item=>item.item==="member_votes");
   const noFactionVotes=votingInfo?.availability==="not_published";
   const votesByProposal=new Map(data.votes.map(v=>[v.proposal_id,v]));
   const factionByVote=new Map<string,typeof data.factionVotes>();
@@ -147,7 +146,7 @@ export default async function AssemblyDetailPage({params}:PageProps){
                   {slug==="aichi-prefecture" ? <p className={styles.attention}>会派の態度は、採決に先立って議会運営委員会で確認したもので、本会議の投票記録そのものではありません。無所属の内訳は原資料の印字どおりです。</p> : null}
                   {slug==="toyota-city" ? <p className={styles.note}>会派別人数は印字どおりです。自民クラブは議長を除く・欠席1名であり、所属人数とは一致しない場合があります。</p> : null}
                   {noFactionVotes?<p>会派ごとの賛否は公表されていません。</p>:
-                    factionVotes.length ? <ul>{factionVotes.map(f=><li key={f.id}>{f.faction_name}（会派人数：{f.member_count??"未収録"}人）：{positions[f.position]??`登録値 ${f.position}`}</li>)}</ul>
+                    factionVotes.length ? <ul>{factionVotes.map(f=><li key={f.id}>{f.faction_name}（会派人数：{f.member_count??"未収録"}人）：{positions[f.position]??`登録値 ${f.position}`}{f.for_count!==null && f.for_count!==undefined ? `／賛成 ${f.for_count}人` : ""}{f.against_count!==null && f.against_count!==undefined ? `／反対 ${f.against_count}人` : ""}</li>)}</ul>
                     : <p>この議案の会派別賛否は未収録です。</p>}
                   <p className={styles.note}>賛否人数の集計：{vote.totals===null?"公表されていません（人数の推計・復元はしません）":"出典記録の範囲のみ。会派人数と採決人数を同一視しません。"}</p>
                   <Sources ids={vote.sources} available={data.sources}/>
