@@ -1,4 +1,4 @@
-import { assemblies } from "@/lib/assemblyRegistry";
+import { assemblies, isAssemblySlug } from "@/lib/assemblyRegistry";
 import { aichiFinance } from "@/lib/aichiFinance";
 import { currentExecutiveTerms, promiseRecords } from "@/lib/executives";
 import { fukuokaPrefectureFinance } from "@/lib/finance";
@@ -46,7 +46,17 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
       project.review_status === "reviewed" &&
       project.municipality_id === aichiFinance.municipality.id,
     );
-    return { key: null, finance: hasReviewedSettlement, promises: false, assembly: false, projects: hasProjects };
+    const hasAssembly = assemblies["aichi-prefecture"].assembly.review_status === "reviewed" &&
+      assemblies["aichi-prefecture"].disclosure.review_status === "reviewed";
+    const hasPromises = currentExecutiveTerms.some((term) =>
+      term.municipality_id === aichiFinance.municipality.id &&
+      (term.review_status === "reviewed" || term.review_status === "verified") &&
+      promiseRecords.some((promise) =>
+        promise.executive_term_id === term.id &&
+        (promise.review_status === "reviewed" || promise.review_status === "verified"),
+      ),
+    );
+    return { key: hasAssembly ? "aichi-prefecture" : null, finance: hasReviewedSettlement, promises: hasPromises, assembly: hasAssembly, projects: hasProjects };
   }
 
   if (!matched) {
@@ -61,6 +71,24 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
         project.municipality_id === `jp-local-${officialCode}`,
       )
       : false;
+    // Activate the independent gates only when official-code identity and the
+    // relevant Reviewed records are both present. Toyota has no manifesto.
+    const hasAssembly = Boolean(city && isAssemblySlug(city.slug) &&
+      assemblies[city.slug].assembly.id.startsWith(`jp-local-${officialCode}-assembly-`) &&
+      assemblies[city.slug].assembly.review_status === "reviewed" &&
+      assemblies[city.slug].disclosure.review_status === "reviewed");
+    const hasPromises = Boolean(city && currentExecutiveTerms.some((term) =>
+      term.municipality_id === `jp-local-${officialCode}` &&
+      (term.review_status === "reviewed" || term.review_status === "verified") &&
+      promiseRecords.some((promise) =>
+        promise.municipality_id === term.municipality_id &&
+        promise.executive_term_id === term.id &&
+        (promise.review_status === "reviewed" || promise.review_status === "verified"),
+      ),
+    ));
+    if (hasAssembly || hasPromises) {
+      return { finance: hasFinance, promises: hasPromises, assembly: hasAssembly, projects: Boolean(hasProjects), key: city?.slug ?? null };
+    }
     if (hasProjects) {
       return { finance: hasFinance, promises: false, assembly: false, projects: true, key: null };
     }

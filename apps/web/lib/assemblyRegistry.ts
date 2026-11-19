@@ -1,3 +1,41 @@
+import aichiAssembly from "../../../data/reviewed/aichi-prefecture/assembly/assembly_records.json";
+import aichiDisclosure from "../../../data/reviewed/aichi-prefecture/assembly/disclosure_profiles.json";
+import aichiSessions from "../../../data/reviewed/aichi-prefecture/assembly/sessions.json";
+import aichiProposals from "../../../data/reviewed/aichi-prefecture/assembly/proposals.json";
+import aichiVotes from "../../../data/reviewed/aichi-prefecture/assembly/votes.json";
+import aichiFactionVotes from "../../../data/reviewed/aichi-prefecture/assembly/faction_votes.json";
+import aichiExpenses from "../../../data/reviewed/aichi-prefecture/assembly/political_activity_expenses.json";
+import aichiAssemblyEvidence from "../../../data/reviewed/aichi-prefecture/assembly/assembly_evidence_packets.json";
+import aichiVoteEvidence from "../../../data/reviewed/aichi-prefecture/assembly/proposal_vote_evidence_packets.json";
+import aichiExpenseEvidence from "../../../data/reviewed/aichi-prefecture/assembly/expense_evidence_packets.json";
+import aichiTrips from "../../../data/reviewed/aichi-prefecture/assembly/inspection_trips.json";
+import aichiTripEvidence from "../../../data/reviewed/aichi-prefecture/assembly/inspection_evidence_packets.json";
+import aichiSources from "../../../data/catalog/aichi_assembly_sources.json";
+import nagoyaAssembly from "../../../data/reviewed/nagoya-city/assembly/assembly_records.json";
+import nagoyaDisclosure from "../../../data/reviewed/nagoya-city/assembly/disclosure_profiles.json";
+import nagoyaSessions from "../../../data/reviewed/nagoya-city/assembly/sessions.json";
+import nagoyaProposals from "../../../data/reviewed/nagoya-city/assembly/proposals.json";
+import nagoyaVotes from "../../../data/reviewed/nagoya-city/assembly/votes.json";
+import nagoyaFactionVotes from "../../../data/reviewed/nagoya-city/assembly/faction_votes.json";
+import nagoyaExpenses from "../../../data/reviewed/nagoya-city/assembly/political_activity_expenses.json";
+import nagoyaAssemblyEvidence from "../../../data/reviewed/nagoya-city/assembly/assembly_evidence_packets.json";
+import nagoyaVoteEvidence from "../../../data/reviewed/nagoya-city/assembly/proposal_vote_evidence_packets.json";
+import nagoyaExpenseEvidence from "../../../data/reviewed/nagoya-city/assembly/expense_evidence_packets.json";
+import nagoyaSources from "../../../data/catalog/nagoya_assembly_sources.json";
+import toyotaAssembly from "../../../data/reviewed/toyota-city/assembly/assembly_records.json";
+import toyotaDisclosure from "../../../data/reviewed/toyota-city/assembly/disclosure_profiles.json";
+import toyotaSessions from "../../../data/reviewed/toyota-city/assembly/sessions.json";
+import toyotaProposals from "../../../data/reviewed/toyota-city/assembly/proposals.json";
+import toyotaVotes from "../../../data/reviewed/toyota-city/assembly/votes.json";
+import toyotaFactionVotes from "../../../data/reviewed/toyota-city/assembly/faction_votes.json";
+import toyotaExpenses from "../../../data/reviewed/toyota-city/assembly/political_activity_expenses.json";
+import toyotaAssemblyEvidence from "../../../data/reviewed/toyota-city/assembly/assembly_evidence_packets.json";
+import toyotaVoteEvidence from "../../../data/reviewed/toyota-city/assembly/proposal_vote_evidence_packets.json";
+import toyotaExpenseEvidence from "../../../data/reviewed/toyota-city/assembly/expense_evidence_packets.json";
+import toyotaTrips from "../../../data/reviewed/toyota-city/assembly/inspection_trips.json";
+import toyotaTripEvidence from "../../../data/reviewed/toyota-city/assembly/inspection_evidence_packets.json";
+import toyotaSources from "../../../data/catalog/toyota_city_assembly_sources.json";
+
 import prefAssembly from "../../../data/reviewed/fukuoka-prefecture/assembly/assembly_records.json";
 import prefDisclosure from "../../../data/reviewed/fukuoka-prefecture/assembly/disclosure_profiles.json";
 import prefSessions from "../../../data/reviewed/fukuoka-prefecture/assembly/sessions.json";
@@ -36,7 +74,7 @@ import prefSources from "../../../data/catalog/fukuoka_assembly_sources.json";
 import citySources from "../../../data/catalog/fukuoka_city_assembly_sources.json";
 import kitaSources from "../../../data/catalog/kitakyushu_assembly_sources.json";
 
-export type AssemblySlug = "fukuoka-prefecture" | "fukuoka-city" | "kitakyushu-city";
+export type AssemblySlug = "fukuoka-prefecture" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city";
 export type Assembly = {
   id: string; name: string; seat_count: number;
   term_start: string; term_end: string;
@@ -56,17 +94,20 @@ export type Session = {
 };
 export type Proposal = {
   id: string; session_id: string; proposal_number: string; title: string;
-  submitted_by: string; decided_at: string | null; submitted_at: string | null;
+  submitted_by: string; decided_at: string | null; submitted_at?: string | null;
   outcome: string; related_fiscal_record_ids: string[]; sources: string[];
 };
 export type Vote = {
   id: string; proposal_id: string; member_vote_availability: string;
   totals: { for?: number; against?: number } | null;
+  /** Officially published per-member votes, never reconstructed from factions. */
+  member_votes?: { member_name: string; position: string }[];
+  method?: string;
   vote_date: string | null; sources: string[];
 };
 export type FactionVote = {
   id: string; vote_id: string; faction_name: string; member_count: number | null;
-  position: string; sources: string[];
+  position: string; for_count?: number | null; against_count?: number | null; sources: string[];
 };
 export type Expense = {
   id: string; fiscal_year: number; recipient_name: string; recipient_type: string;
@@ -129,9 +170,28 @@ export const assemblies: Record<AssemblySlug, Registry> = {
     [...kitaAssemblyEvidence, ...kitaVoteEvidence, ...kitaExpenseEvidence],
     kitaSources.records,
   ),
+  "aichi-prefecture": registry(
+    aichiAssembly, aichiDisclosure, aichiSessions, aichiProposals, aichiVotes,
+    aichiFactionVotes, aichiExpenses, aichiTrips,
+    [...aichiAssemblyEvidence, ...aichiVoteEvidence, ...aichiExpenseEvidence, ...aichiTripEvidence],
+    aichiSources.records,
+  ),
+  "nagoya-city": registry(
+    nagoyaAssembly, nagoyaDisclosure, nagoyaSessions, nagoyaProposals, nagoyaVotes,
+    nagoyaFactionVotes, nagoyaExpenses, [],
+    [...nagoyaAssemblyEvidence, ...nagoyaVoteEvidence, ...nagoyaExpenseEvidence],
+    nagoyaSources.records,
+  ),
+  "toyota-city": registry(
+    toyotaAssembly, toyotaDisclosure, toyotaSessions, toyotaProposals, toyotaVotes,
+    toyotaFactionVotes, toyotaExpenses, toyotaTrips,
+    [...toyotaAssemblyEvidence, ...toyotaVoteEvidence, ...toyotaExpenseEvidence, ...toyotaTripEvidence],
+    toyotaSources.records,
+  ),
 };
 export const assemblySlugs: AssemblySlug[] = [
   "fukuoka-prefecture", "fukuoka-city", "kitakyushu-city",
+  "aichi-prefecture", "nagoya-city", "toyota-city",
 ];
 export function isAssemblySlug(slug: string): slug is AssemblySlug {
   return Object.prototype.hasOwnProperty.call(assemblies, slug);
