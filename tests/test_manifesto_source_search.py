@@ -33,7 +33,7 @@ def test_manifesto_source_search_fixture_is_registered_and_linked():
 def test_manifesto_source_searches_match_contract_and_safety_boundary():
     searches = load("data/entities/executives/manifesto_source_searches.json")
 
-    assert len(searches) == 6
+    assert len(searches) == 7
     assert {search["executive_term_id"] for search in searches} == {
         "jp-local-400009-executive-2025-04-14",
         "jp-local-401307-executive-2022-12-07",
@@ -41,6 +41,7 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         "jp-local-230006-executive-2023-02-15",
         "jp-local-231002-executive-2024-11-24",
         "jp-local-232114-executive-2024-02-19",
+        "jp-local-012041-executive-2025-09-26",
     }
 
     for search in searches:
@@ -58,14 +59,18 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
     # Prefecture search was closed by the 2025 election bulletin, the
     # Aichi Prefecture search by the 2023 bulletin hosted on the
     # election commission's official page, and the Nagoya City search
-    # found the official bulletin directly). The Toyota City search is
-    # the remaining exception: the 2024 bulletin is not extant as an
-    # official web publication and no verifiable candidate publication
-    # was found, so its term registers no manifesto source. The safety
-    # invariant still applies to any record that reports no source: it
-    # must not claim found sources.
-    assert len(missing) == 1
-    assert missing[0]["executive_term_id"] == "jp-local-232114-executive-2024-02-19"
+    # found the official bulletin directly). Two searches remain
+    # exceptions: Toyota City (the 2024 bulletin is not extant as an
+    # official web publication) and Asahikawa City (the 2025 bulletin
+    # has no official web publication); in both cases no verifiable
+    # candidate publication was found, so their terms register no
+    # manifesto source. The safety invariant still applies to any
+    # record that reports no source: it must not claim found sources.
+    assert len(missing) == 2
+    assert {search["executive_term_id"] for search in missing} == {
+        "jp-local-232114-executive-2024-02-19",
+        "jp-local-012041-executive-2025-09-26",
+    }
     assert all(search["manifesto_source_ids_found"] == [] for search in missing)
 
     prefecture = next(

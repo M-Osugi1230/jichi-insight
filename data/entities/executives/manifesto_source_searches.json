@@ -178,5 +178,32 @@
     ],
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-asahikawa-city-2025",
+    "executive_term_id": "jp-local-012041-executive-2025-09-26",
+    "searched_at": "2026-11-20",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "no_stable_primary_source_found",
+    "manifesto_source_ids_found": [],
+    "checked_source_ids": [
+      "asahikawa-city-mayor-election-2025-schedule",
+      "asahikawa-city-mayor-election-2025-results",
+      "asahikawa-city-mayor-profile"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "2025年旭川市長選挙の選挙公報は、旭川市公式サイトの選挙課ページ群（投開票結果・日程公表）に掲載・導線がなく、Wayback Machineの選挙セクション配下の保存（2025年8〜12月の全6件）にも公報ページ・PDFは存在しないため、公式のWeb公表物としては特定できなかった。紙の選挙公報の配布自体は市の入札公表（選挙公報等配布業務）で公式に確認できるが、公報本文のWeb掲載ではない。候補者本人の公式サイト（今津寛介事務所）の存在は確認できるものの、2025年選挙時の公約を検証可能な形で現在も公開する一次資料は特定できなかった。選挙ドットコム等の民間ミラーの転載や報道の候補者アンケートは公式公表物ではないため原典として採用しない。以上により、検証可能な原典を特定できなかったものとして公約は未登録とする。これは公約が存在しないという主張ではない。なお、Waybackのドメイン全体照会は応答不良で完遂できておらず、選挙公報の全件不存在までは証明できていない。",
+    "next_actions": [
+      "紙の選挙公報の現物（選挙管理委員会の保管分・図書館所蔵）や候補者公式サイトの2025年公約ページが特定できれば、原典として登録し直す",
+      "2029年9月執行予定の次回市長選挙では、選挙期間中に選挙公報の公式掲載を確認し、新任期の公約原文資料として登録する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]
