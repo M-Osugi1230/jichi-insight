@@ -7,17 +7,17 @@ LIB = ROOT / "apps/web/lib"
 WEB = ROOT / "apps/web/app"
 
 
-def test_aichi_official_code_is_mapped_to_existing_public_policy_page():
+def test_aichi_official_code_is_mapped_to_dedicated_page():
     executives = (LIB / "executives.ts").read_text(encoding="utf-8")
     catalog = (LIB / "catalog.ts").read_text(encoding="utf-8")
     assert '"jp-local-230006": "aichi-prefecture"' in executives
     assert '| "aichi-prefecture"' in catalog
     assert '"aichi-prefecture": {' in catalog
-    assert 'href: "/municipalities/aichi"' in catalog
-    assert 'status: "資料索引中"' in catalog
-    assert 'fiscalSummary: "財政詳細は未登録"' in catalog
+    assert 'href: "/municipalities/aichi-prefecture"' in catalog
+    assert 'status: "財政データ公開"' in catalog
+    assert 'fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）"' in catalog
     assert (WEB / "municipalities/aichi/page.tsx").exists()
-    assert not (WEB / "municipalities/aichi-prefecture/page.tsx").exists()
+    assert (WEB / "municipalities/aichi-prefecture/page.tsx").exists()
 
 
 def test_executive_page_does_not_claim_every_term_has_reviewed_promises():
@@ -30,10 +30,11 @@ def test_executive_page_does_not_claim_every_term_has_reviewed_promises():
     assert "3首長の原文公約を分割・登録済み" not in page
 
 
-def test_financial_quality_remains_scoped_to_existing_three_pilots():
+def test_financial_quality_now_includes_real_aichi_records():
     page = (LIB / "dataQuality.ts").read_text(encoding="utf-8")
-    assert 'type FiscalMunicipalityKey = Exclude<MunicipalityKey, "aichi-prefecture">' in page
-    assert "Record<FiscalMunicipalityKey" in page
+    assert 'type FiscalMunicipalityKey = Exclude<MunicipalityKey, "aichi-prefecture">' not in page
+    assert '"aichi-prefecture": aichiFinance.records' in page
+    assert '"aichi-prefecture": aichiFinance.evidencePackets' in page
     assert '"aichi-prefecture": fukuokaPrefectureFinance.records' not in page
 
 
