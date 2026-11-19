@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updated_at": "2026-11-16",
+  "updated_at": "2026-11-19",
   "scope": "phase15-core-capital-review",
   "records": [
     {
@@ -44,6 +44,90 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "一般会計歳入140,215,912,093円・歳出131,705,070,771円を円単位で含む公式決算資料。決算の認定は第101号議案（2025年9月25日に認定可決）。監査委員の決算審査意見の内容確認は未実施。"
+    },
+    {
+      "availability": "published",
+      "category": "settlement",
+      "confidence": "high",
+      "id": "koshigaya-city-mic-settlement-card-fy2022",
+      "indexed_at": "2026-11-19",
+      "municipality_key": "koshigaya-city",
+      "notes": "総務省が公表する令和4年度市町村決算カード（埼玉県分）のうち越谷市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、越谷市『令和4年度財政状況資料集』と突合した。",
+      "organization": "総務省",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "令和4年度 市町村決算カード（埼玉県）",
+      "url": "https://www.soumu.go.jp/main_content/000937053.pdf"
+    },
+    {
+      "availability": "published",
+      "category": "settlement",
+      "confidence": "high",
+      "id": "koshigaya-city-fiscal-situation-collection-fy2022",
+      "indexed_at": "2026-11-19",
+      "municipality_key": "koshigaya-city",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する公式資料。埼玉県が県内市町村の財政状況資料集を公表しており、越谷市分はExcel形式で掲載されている。総務省決算カードの照合先として使用した。",
+      "organization": "埼玉県",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "令和4年度 財政状況資料集",
+      "url": "https://www.pref.saitama.lg.jp/documents/251716/112224_kosigaya_2022_2.xlsx"
+    },
+    {
+      "availability": "published",
+      "category": "settlement",
+      "confidence": "high",
+      "id": "koshigaya-city-mic-settlement-card-fy2023",
+      "indexed_at": "2026-11-19",
+      "municipality_key": "koshigaya-city",
+      "notes": "総務省が公表する令和5年度市町村決算カード（埼玉県分）のうち越谷市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、越谷市『令和5年度財政状況資料集』と突合した。",
+      "organization": "総務省",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "令和5年度 市町村決算カード（埼玉県）",
+      "url": "https://www.soumu.go.jp/main_content/000998941.pdf"
+    },
+    {
+      "availability": "published",
+      "category": "settlement",
+      "confidence": "high",
+      "id": "koshigaya-city-fiscal-situation-collection-fy2023",
+      "indexed_at": "2026-11-19",
+      "municipality_key": "koshigaya-city",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する公式資料。埼玉県が県内市町村の財政状況資料集を公表しており、越谷市分はExcel形式で掲載されている。総務省決算カードの照合先として使用した。",
+      "organization": "埼玉県",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "令和5年度 財政状況資料集",
+      "url": "https://www.pref.saitama.lg.jp/documents/266165/112224_koshigaya_2023_2.xlsx"
+    },
+    {
+      "availability": "published",
+      "category": "settlement",
+      "confidence": "high",
+      "id": "koshigaya-city-mic-settlement-card-fy2024",
+      "indexed_at": "2026-11-19",
+      "municipality_key": "koshigaya-city",
+      "notes": "総務省が公表する令和6年度市町村決算カード（埼玉県分）のうち越谷市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、越谷市『令和6年度財政状況資料集』と突合した。",
+      "organization": "総務省",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "令和6年度 市町村決算カード（埼玉県）",
+      "url": "https://www.soumu.go.jp/main_content/001063966.pdf"
+    },
+    {
+      "availability": "published",
+      "category": "settlement",
+      "confidence": "high",
+      "id": "koshigaya-city-fiscal-situation-collection-fy2024",
+      "indexed_at": "2026-11-19",
+      "municipality_key": "koshigaya-city",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する公式資料。埼玉県が県内市町村の財政状況資料集を公表しており、越谷市分はExcel形式で掲載されている。総務省決算カードの照合先として使用した。",
+      "organization": "埼玉県",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "令和6年度 財政状況資料集",
+      "url": "https://www.pref.saitama.lg.jp/documents/280669/112224_koshigaya_2024_2.xlsx"
     }
   ]
 }
