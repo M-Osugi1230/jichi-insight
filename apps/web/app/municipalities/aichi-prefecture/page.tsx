@@ -17,14 +17,19 @@ import {
 import {
   currentExecutiveTerms,
   evidenceForExecutive,
+  evidenceForPromise,
+  manifestoSourcesForExecutive,
   formatDateJa,
   sourcesForExecutive,
   promisesForExecutive,
 } from "@/lib/executives";
 import { formatCompactYen, formatExactYen } from "@/lib/finance";
 import { canonicalFor } from "@/lib/pageMetadata";
+import { promiseSourceDetails } from "@/lib/promiseSources";
+import { sourceConfidenceLabel } from "@/lib/statusLabels";
 
 import styles from "../fukuoka-prefecture/page.module.css";
+import promiseStyles from "../../promises/page.module.css";
 
 export const metadata: Metadata = {
   alternates: { canonical: canonicalFor("/municipalities/aichi-prefecture") },
@@ -45,6 +50,7 @@ export default function AichiPrefecturePage() {
     (term.review_status === "reviewed" || term.review_status === "verified"),
   );
   const governorSources = governor ? sourcesForExecutive(governor) : [];
+  const manifestoSources = governor ? manifestoSourcesForExecutive(governor) : [];
   const governorEvidence = governor ? evidenceForExecutive(governor) : undefined;
   const governorPromises = governor ? promisesForExecutive(governor).filter(
     (promise) => promise.review_status === "reviewed" || promise.review_status === "verified",
@@ -87,8 +93,8 @@ export default function AichiPrefecturePage() {
           <section className={styles.scope} aria-label="登録情報の範囲">
             <div><p className="eyebrow">Scope</p><h2 id="scope-title">計画・予算・決算・知事の任期を分けて確認する。</h2></div>
             <div>
-              <p>確認できること：「あいちビジョン2030」の計画構造と実施計画、2026年度の成立後一般会計当初予算、2022〜2024年度普通会計決算、大村秀章知事の登録済み現任期と公式出典。</p>
-              <p>まだ確認できないこと：本サイトには愛知県知事の Reviewed 公約、重点事業、県議会の個別レコードが未登録です。未登録は実際の公表・実施の不存在を意味しません。個別の公約達成度や政策成果を推定しません。</p>
+              <p>確認できること：「あいちビジョン2030」の計画構造と実施計画、2026年度の成立後一般会計当初予算、2022〜2024年度普通会計決算、大村秀章知事の現任期、公式選挙公報に基づく公約10件と出典。重点事業の登録データとは推定関係として区別します。</p>
+              <p>まだ確認できないこと：本サイトでは県議会の議案・表決等の個別レコードが未登録です。公約と重点事業の登録はありますが、接続は low / inferred・要レビューであり、公約達成度や政策成果の確定判定ではありません。</p>
               <p>一般会計と普通会計、予算と決算は範囲・段階が異なります。直接つないで増減率や達成率とは扱いません。</p>
             </div>
           </section>
@@ -177,7 +183,13 @@ export default function AichiPrefecturePage() {
                   <h3>{governor.person_name} 知事</h3>
                   <p>任期：{formatDateJa(governor.term_start)} 〜 {formatDateJa(governor.term_end)}</p>
                   <p>選挙日：{formatDateJa(governor.election_date)} ／ 登録状態：{governor.review_status}</p>
-                  <p>{governorPromises.length > 0 ? `Reviewed 公約原文：${governorPromises.length}件` : "公約原文：未登録（公約の不存在や未公表を意味しません）"}</p>
+                  <p>{governorPromises.length > 0
+                    ? `公約原文：選挙公報（Reviewed ${governorPromises.length}件）`
+                    : "公約原文：未登録（公約の不存在や未公表を意味しません）"}</p>
+                  {manifestoSources.map((source) => (
+                    <p key={source.id}><a href={source.url} target="_blank" rel="noopener noreferrer">公約原典・公式選挙公報：{source.title}</a></p>
+                  ))}
+                  {governorPromises.length > 0 ? <p><a href="#governor-promises">選挙公報に基づく公約原文を読む</a></p> : null}
                   {governorSources.map((source) => (
                     <p key={source.id}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title}</a></p>
                   ))}
@@ -190,6 +202,64 @@ export default function AichiPrefecturePage() {
               )}
             </div>
           </section>
+
+          {governorPromises.length > 0 ? (
+            <section className={styles.headline} id="governor-promises" aria-labelledby="governor-promises-title">
+              <div className="sectionIntro">
+                <p className="eyebrow">Reviewed manifesto / official election bulletin</p>
+                <h2 id="governor-promises-title">大村秀章知事の公約原文（選挙公報）</h2>
+                <p>2023年愛知県知事選挙の公式選挙公報から {governorPromises.length} 件を Reviewed として登録しています。★印の政策項目を分割した原文です。経歴・スローガンは公約として数えていません。</p>
+                <p>進捗区分は登録上の状態であり、実績や公約達成率を断定しません。重点事業との対応は low / inferred・要レビューで、県が公表した公式対応表ではありません。</p>
+                <p><Link href="/promises#aichi-prefecture">公約レジストリで出典・関連事業を確認する</Link></p>
+              </div>
+              <div className={promiseStyles.grid}>
+                {governorPromises.map((promise) => {
+                  const evidence = evidenceForPromise(promise);
+                  const assessment = promise.progress_state === "not_assessable"
+                    ? "評価材料なし（未接続）"
+                    : promise.progress_state === "in_progress"
+                      ? "進行中（関連事業に基づく記録・要確認）"
+                      : promise.progress_state;
+                  return (
+                    <article className={promiseStyles.card} key={promise.id}>
+                      <p className={promiseStyles.meta}>公約原文（改変なし）／{promise.statement_type}</p>
+                      <blockquote>{promise.original_text}</blockquote>
+                      {promise.plain_summary ? <p className={promiseStyles.summary}><strong>平易な要約（原文ではありません）</strong>：{promise.plain_summary}</p> : null}
+                      <p className={promiseStyles.status}>進捗記録：{assessment}</p>
+                      <p className={promiseStyles.meta}>出典箇所：{promise.source_location}</p>
+                      {promise.extraction_note ? (
+                        <details>
+                          <summary>抽出・分割に関する注記</summary>
+                          <p>{promise.extraction_note}</p>
+                        </details>
+                      ) : null}
+                      <div className={promiseStyles.links}>
+                        <h3>公式出典と証拠</h3>
+                        {promiseSourceDetails(promise.sources).map((source) => (
+                          <p key={source.id}>
+                            {source.url ? <a href={source.url} target="_blank" rel="noopener noreferrer">{source.title}</a> : source.id}
+                            <span> / {source.review} / {source.confidence}</span>
+                          </p>
+                        ))}
+                        <p>記録の確認：{promise.review_status} / {sourceConfidenceLabel(promise.confidence)}</p>
+                        <p>証拠パケット：{evidence?.review_status ?? "未収録"}。未解決事項：{evidence?.open_questions.length ? evidence.open_questions.join("／") : "記載なし"}</p>
+                        <p>関連事業：{promise.related_project_ids.length
+                          ? `${promise.related_project_ids.length}件（low / inferred・needs_review、公式対応表ではありません）`
+                          : "接続事業なし（未着手や未達の意味ではありません）"}</p>
+                        {promise.related_project_ids.length > 0 ? (
+                          <ul>
+                            {promise.related_project_ids.map((projectId) => (
+                              <li key={projectId}>{projectId}（接続は推定・要レビュー）</li>
+                            ))}
+                          </ul>
+                        ) : null}
+                      </div>
+                    </article>
+                  );
+                })}
+              </div>
+            </section>
+          ) : null}
 
           <section className={styles.scope} aria-labelledby="sources-title">
             <div><p className="eyebrow">Official sources</p><h2 id="sources-title">公式出典一覧</h2></div>
@@ -208,8 +278,8 @@ export default function AichiPrefecturePage() {
           <section className={styles.notAssessed}>
             <div><p className="eyebrow">Not assessed yet</p><h2>まだ登録・評価していないこと</h2></div>
             <ul>
-              <li>知事の公約原文と達成度（本サイトへの公約登録は未実施）</li>
-              <li>重点事業の個別予算・実施状況・KPI</li>
+              <li>登録済み公約10件の進捗・達成度を確定判定するための公式評価材料</li>
+              <li>公約と重点事業の公式な対応関係・因果関係（現時点の接続は推定・要レビュー）</li>
               <li>県議会の議案・表決・監視活動の個別記録</li>
               <li>2026年度予算の執行実績・決算</li>
             </ul>
