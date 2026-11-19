@@ -600,3 +600,37 @@
   .mapDeepDive { margin: 31px 16px 24px; }
   .mapDeepDive > summary { font-size: .89rem; padding: 13px 17px; }
 }
+
+/* Task-first entry remains visible; region map and search follow immediately. */
+.serviceRoutes {
+  padding-top: clamp(28px, 4vw, 52px);
+  padding-bottom: clamp(18px, 3vw, 38px);
+}
+.serviceRoutesGrid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.serviceRouteCard {
+  min-height: 240px;
+}
+.serviceRouteCard > a:focus-visible {
+  border-radius: 5px;
+  outline: 3px solid #236958;
+  outline-offset: 4px;
+}
+@media (max-width: 1040px) {
+  .serviceRoutesGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .serviceRouteCard:last-child { grid-column: auto; min-height: 240px; }
+}
+@media (max-width: 760px) {
+  .serviceRoutes { padding-top: 22px; padding-bottom: 20px; }
+  .serviceRoutesGrid { grid-template-columns: 1fr; }
+  .serviceRouteCard, .serviceRouteCard:last-child { min-height: 0; }
+}
+
+/* The task cards use descriptive categories, never numbered badges. */
+.serviceRouteTop span:first-child {
+  height: auto;
+  width: auto;
+  padding: 6px 11px;
+  font-size: .77rem;
+}

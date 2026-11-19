@@ -34,6 +34,7 @@ export default function ComparePage() {
           <p>
             金額の大小は、行政の良し悪しを意味しません。ここでは、政令指定都市・一般会計・同年度・同段階という条件が揃う値だけを並べます。
           </p>
+          <p>確認できること：福岡市と北九州市の同年度・同会計・同段階の4指標。まだ確認できないこと：任意の市同士の比較は未提供です。市債残高や財政健全性の比較も掲載していません。</p>
         </section>
 
         <section className={styles.gate} aria-labelledby="comparison-gate-title">

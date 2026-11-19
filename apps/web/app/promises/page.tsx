@@ -40,6 +40,7 @@ export default function PromisesPage() {
   return <><SiteHeader/><main className="pageShell">
     <header className={styles.hero}><p className="eyebrow">Reviewed promise registry</p><h1>首長公約の原文と根拠</h1>
       <p>公約を首長・選挙ごとに整理しています。事業との関連は確定的な成果や達成を意味しません。未接続は未着手・未達を意味しません。首長のスコア、達成率、ランキングは表示しません。</p>
+      <p>確認できること：福岡県知事・福岡市長・北九州市長の3首長の公約原文と根拠。まだ確認できないこと：すべての公約の進捗評価は提供していません。評価材料がない公約は「評価材料なし（未接続）」と表示します。</p>
     </header>
     {currentExecutiveTerms.map(term=>{
       const municipality=executiveMunicipality(term);
