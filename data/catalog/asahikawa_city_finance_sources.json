@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updated_at": "2026-10-01",
+  "updated_at": "2026-11-19",
   "scope": "phase15-core-capital-review",
   "records": [
     {
@@ -44,6 +44,90 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "一般会計収入済額・支出済額の円単位exact valuesを含む監査委員資料。"
+    },
+    {
+      "id": "asahikawa-city-mic-settlement-card-fy2022",
+      "municipality_key": "asahikawa-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和4年度 市町村決算カード（北海道）",
+      "url": "https://www.soumu.go.jp/main_content/000936874.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和4年度市町村決算カード（北海道分）のうち旭川市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、旭川市『令和4年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "asahikawa-city-fiscal-situation-collection-fy2022",
+      "municipality_key": "asahikawa-city",
+      "organization": "旭川市",
+      "category": "settlement",
+      "title": "令和4年度 財政状況資料集",
+      "url": "https://www.harp.lg.jp/opendata/dataset/2273/resource/9579/08_%E4%B8%8A%E5%B7%9D%E3%80%90%E8%B2%A1%E6%94%BF%E7%8A%B6%E6%B3%81%E8%B3%87%E6%96%99%E9%9B%86%E3%80%912022.zip",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する市公式資料。北海道オープンデータポータル（HARP）の上川分ZIPに収録される旭川市分のExcel（総括表・普通会計の状況）を使用した。総務省決算カードの照合先として使用した。"
+    },
+    {
+      "id": "asahikawa-city-mic-settlement-card-fy2023",
+      "municipality_key": "asahikawa-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和5年度 市町村決算カード（北海道）",
+      "url": "https://www.soumu.go.jp/main_content/000998919.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和5年度市町村決算カード（北海道分）のうち旭川市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、旭川市『令和5年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "asahikawa-city-fiscal-situation-collection-fy2023",
+      "municipality_key": "asahikawa-city",
+      "organization": "旭川市",
+      "category": "settlement",
+      "title": "令和5年度 財政状況資料集",
+      "url": "https://www.harp.lg.jp/opendata/dataset/2274/resource/9609/08_%E4%B8%8A%E5%B7%9D%E3%80%90%E8%B2%A1%E6%94%BF%E7%8A%B6%E6%B3%81%E8%B3%87%E6%96%99%E9%9B%86%E3%80%912023.zip",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する市公式資料。北海道オープンデータポータル（HARP）の上川分ZIPに収録される旭川市分のExcel（総括表・普通会計の状況）を使用した。総務省決算カードの照合先として使用した。"
+    },
+    {
+      "id": "asahikawa-city-mic-settlement-card-fy2024",
+      "municipality_key": "asahikawa-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和6年度 市町村決算カード（北海道）",
+      "url": "https://www.soumu.go.jp/main_content/001063944.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和6年度市町村決算カード（北海道分）のうち旭川市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、旭川市『令和6年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "asahikawa-city-fiscal-situation-collection-fy2024",
+      "municipality_key": "asahikawa-city",
+      "organization": "旭川市",
+      "category": "settlement",
+      "title": "令和6年度 財政状況資料集",
+      "url": "https://www.harp.lg.jp/opendata/dataset/2275/resource/9693/08_%E4%B8%8A%E5%B7%9D%E3%80%90%E8%B2%A1%E6%94%BF%E7%8A%B6%E6%B3%81%E8%B3%87%E6%96%99%E9%9B%86%E3%80%912024.zip",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する市公式資料。北海道オープンデータポータル（HARP）の上川分ZIPに収録される旭川市分のExcel（総括表・普通会計の状況）を使用した。総務省決算カードの照合先として使用した。"
     }
   ]
 }

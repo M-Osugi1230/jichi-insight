@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updated_at": "2026-10-01",
+  "updated_at": "2026-11-19",
   "scope": "phase15-core-capital-review",
   "records": [
     {
@@ -58,6 +58,90 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "一般会計歳入142,517,400,928円・歳出138,679,303,495円の円単位exact source valueを含む監査資料。"
+    },
+    {
+      "id": "aomori-city-mic-settlement-card-fy2022",
+      "municipality_key": "aomori-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和4年度 市町村決算カード（青森県）",
+      "url": "https://www.soumu.go.jp/main_content/000936878.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和4年度市町村決算カード（青森県分）のうち青森市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、青森市『令和4年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "aomori-city-fiscal-situation-collection-fy2022",
+      "municipality_key": "aomori-city",
+      "organization": "青森県",
+      "category": "settlement",
+      "title": "令和4年度 財政状況資料集",
+      "url": "https://www.pref.aomori.lg.jp/soshiki/zaimu/shichoson/files/01aomorishi-2022zaiseishiryou.xlsx",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する公式資料。青森県が県内市町村の財政状況資料集を公表しており、青森市分はExcel形式で掲載されている。総務省決算カードの照合先として使用した。"
+    },
+    {
+      "id": "aomori-city-mic-settlement-card-fy2023",
+      "municipality_key": "aomori-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和5年度 市町村決算カード（青森県）",
+      "url": "https://www.soumu.go.jp/main_content/000998923.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和5年度市町村決算カード（青森県分）のうち青森市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、青森市『令和5年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "aomori-city-fiscal-situation-collection-fy2023",
+      "municipality_key": "aomori-city",
+      "organization": "青森県",
+      "category": "settlement",
+      "title": "令和5年度 財政状況資料集",
+      "url": "https://www.pref.aomori.lg.jp/soshiki/zaimu/shichoson/files/01aomorishi-2023zaiseishiryou.xlsx",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する公式資料。青森県が県内市町村の財政状況資料集を公表しており、青森市分はExcel形式で掲載されている。総務省決算カードの照合先として使用した。"
+    },
+    {
+      "id": "aomori-city-mic-settlement-card-fy2024",
+      "municipality_key": "aomori-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和6年度 市町村決算カード（青森県）",
+      "url": "https://www.soumu.go.jp/main_content/001063948.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和6年度市町村決算カード（青森県分）のうち青森市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、青森市『令和6年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "aomori-city-fiscal-situation-collection-fy2024",
+      "municipality_key": "aomori-city",
+      "organization": "青森県",
+      "category": "settlement",
+      "title": "令和6年度 財政状況資料集",
+      "url": "https://www.pref.aomori.lg.jp/soshiki/zaimu/shichoson/files/01aomorishi-2024zaiseishiryou.xlsx",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する公式資料。青森県が県内市町村の財政状況資料集を公表しており、青森市分はExcel形式で掲載されている。総務省決算カードの照合先として使用した。"
     }
   ]
 }

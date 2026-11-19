@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updated_at": "2026-11-15",
+  "updated_at": "2026-11-19",
   "scope": "phase15-core-capital-review",
   "records": [
     {
@@ -58,6 +58,90 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "一般会計歳入総額154,582,839千円・歳出総額152,675,103千円を千円単位のsource precisionで含む公式決算資料。円換算後も1,000円未満のprecisionを主張しない。"
+    },
+    {
+      "id": "akita-city-mic-settlement-card-fy2022",
+      "municipality_key": "akita-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和4年度 市町村決算カード（秋田県）",
+      "url": "https://www.soumu.go.jp/main_content/000936911.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和4年度市町村決算カード（秋田県分）のうち秋田市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、秋田市『令和4年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "akita-city-fiscal-situation-collection-fy2022",
+      "municipality_key": "akita-city",
+      "organization": "秋田市",
+      "category": "settlement",
+      "title": "令和4年度 財政状況資料集",
+      "url": "https://www.city.akita.lg.jp/_res/projects/default_project/_page_/001/009/195/052019_akitashi_2022_02.xlsx",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する市公式資料。総務省決算カードの照合先として使用した。秋田市は財政状況資料集をExcel形式でのみ公表しており、PDF版の公表はない。"
+    },
+    {
+      "id": "akita-city-mic-settlement-card-fy2023",
+      "municipality_key": "akita-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和5年度 市町村決算カード（秋田県）",
+      "url": "https://www.soumu.go.jp/main_content/000998929.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和5年度市町村決算カード（秋田県分）のうち秋田市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、秋田市『令和5年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "akita-city-fiscal-situation-collection-fy2023",
+      "municipality_key": "akita-city",
+      "organization": "秋田市",
+      "category": "settlement",
+      "title": "令和5年度 財政状況資料集",
+      "url": "https://www.city.akita.lg.jp/_res/projects/default_project/_page_/001/009/195/052019_akitashi_2023_02.xlsx",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する市公式資料。総務省決算カードの照合先として使用した。秋田市は財政状況資料集をExcel形式でのみ公表しており、PDF版の公表はない。"
+    },
+    {
+      "id": "akita-city-mic-settlement-card-fy2024",
+      "municipality_key": "akita-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和6年度 市町村決算カード（秋田県）",
+      "url": "https://www.soumu.go.jp/main_content/001063954.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和6年度市町村決算カード（秋田県分）のうち秋田市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、秋田市『令和6年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "akita-city-fiscal-situation-collection-fy2024",
+      "municipality_key": "akita-city",
+      "organization": "秋田市",
+      "category": "settlement",
+      "title": "令和6年度 財政状況資料集",
+      "url": "https://www.city.akita.lg.jp/_res/projects/default_project/_page_/001/009/195/052019_akitashi_2024_02.xlsx",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する市公式資料。総務省決算カードの照合先として使用した。秋田市は財政状況資料集をExcel形式でのみ公表しており、PDF版の公表はない。"
     }
   ]
 }
