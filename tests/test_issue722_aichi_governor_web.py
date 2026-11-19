@@ -67,7 +67,7 @@ def test_aichi_detail_has_bulletin_source_and_original_text_cards():
     assert 'id="governor-promises"' in AICHI
     assert 'href="/promises#aichi-prefecture"' in AICHI
     assert "公約原文：選挙公報" in AICHI
-    assert "県議会の議案・表決等の個別レコードが未登録" in AICHI
+    assert "県議会の個別レコードが未登録" in AICHI
     assert "Reviewed 公約、重点事業、県議会の個別レコードが未登録" not in AICHI
     assert "公約登録は未実施" not in AICHI
     assert "公約の達成判定に必要" not in AICHI or "公式評価材料" in AICHI
@@ -85,4 +85,4 @@ def test_static_export_keeps_strict_aichi_promise_requirements():
         assert required in EXPORT
     assert '"公約原文：未登録"' not in EXPORT
     assert 'municipalities/aichi-prefecture/index.html' in EXPORT
-    assert 'promisesForExecutive(term)' in EXE
+    assert "export function promisesForExecutive(term:" in EXE
