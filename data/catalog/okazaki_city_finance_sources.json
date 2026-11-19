@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updated_at": "2026-11-16",
+  "updated_at": "2026-11-19",
   "scope": "phase15-core-capital-review",
   "records": [
     {
@@ -44,6 +44,90 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "一般会計歳入157,798,763,028円・歳出148,542,565,874円を円単位で含む公式決算資料（令和6年度決算の概要）。決算の認定議案である認定第1号は令和7年9月定例会で令和7年9月30日に認定された。決算書（歳入歳出決算事項別明細書）の款別合計との突合は未実施。監査委員の決算審査意見書の内容は確認していない。"
+    },
+    {
+      "id": "okazaki-city-mic-settlement-card-fy2022",
+      "municipality_key": "okazaki-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和4年度 市町村決算カード（愛知県）",
+      "url": "https://www.soumu.go.jp/main_content/000937094.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和4年度市町村決算カード（愛知県）のうち岡崎市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、岡崎市『令和4年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "okazaki-city-fiscal-situation-collection-fy2022",
+      "municipality_key": "okazaki-city",
+      "organization": "岡崎市",
+      "category": "settlement",
+      "title": "令和4年度 財政状況資料集",
+      "url": "https://www.pref.aichi.jp/uploaded/attachment/584687.xlsx",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する資料集。愛知県が県内市町村分を一括公表するExcel版を一次資料とした。総務省決算カードの照合先として使用した。"
+    },
+    {
+      "id": "okazaki-city-mic-settlement-card-fy2023",
+      "municipality_key": "okazaki-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和5年度 市町村決算カード（愛知県）",
+      "url": "https://www.soumu.go.jp/main_content/000998965.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和5年度市町村決算カード（愛知県）のうち岡崎市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、岡崎市『令和5年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "okazaki-city-fiscal-situation-collection-fy2023",
+      "municipality_key": "okazaki-city",
+      "organization": "岡崎市",
+      "category": "settlement",
+      "title": "令和5年度 財政状況資料集",
+      "url": "https://www.pref.aichi.jp/uploaded/attachment/606844.xlsx",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する資料集。愛知県が県内市町村分を一括公表するExcel版を一次資料とした。総務省決算カードの照合先として使用した。"
+    },
+    {
+      "id": "okazaki-city-mic-settlement-card-fy2024",
+      "municipality_key": "okazaki-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和6年度 市町村決算カード（愛知県）",
+      "url": "https://www.soumu.go.jp/main_content/001063990.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和6年度市町村決算カード（愛知県）のうち岡崎市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、岡崎市『令和6年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "okazaki-city-fiscal-situation-collection-fy2024",
+      "municipality_key": "okazaki-city",
+      "organization": "岡崎市",
+      "category": "settlement",
+      "title": "令和6年度 財政状況資料集",
+      "url": "https://www.pref.aichi.jp/uploaded/attachment/632000.xlsx",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する資料集。愛知県が県内市町村分を一括公表するExcel版を一次資料とした。総務省決算カードの照合先として使用した。"
     }
   ]
 }
