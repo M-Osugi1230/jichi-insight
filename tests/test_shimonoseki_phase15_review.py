@@ -294,7 +294,7 @@ def test_shimonoseki_progress_review_keeps_implementation_plan_framework():
 def test_shimonoseki_finance_sources_are_reviewed():
     finance = load(ROOT / "data/catalog/shimonoseki_city_finance_sources.json")
     assert finance["version"] == "0.1.0"
-    assert finance["updated_at"] == "2026-11-16"
+    assert finance["updated_at"] == "2026-11-19"
     assert finance["scope"] == "phase15-core-capital-review"
 
     by_id = {record["id"]: record for record in finance["records"]}
@@ -302,6 +302,13 @@ def test_shimonoseki_finance_sources_are_reviewed():
         "shimonoseki-city-home",
         "shimonoseki-budget-2026",
         "shimonoseki-settlement-2024",
+        # Issue #691 fiscal-settlement expansion sources.
+        "shimonoseki-city-mic-settlement-card-fy2022",
+        "shimonoseki-city-mic-settlement-card-fy2023",
+        "shimonoseki-city-mic-settlement-card-fy2024",
+        "shimonoseki-city-fiscal-situation-collection-fy2022",
+        "shimonoseki-city-fiscal-situation-collection-fy2023",
+        "shimonoseki-city-fiscal-situation-collection-fy2024",
     }
     for record in finance["records"]:
         assert record["municipality_key"] == "shimonoseki-city"
@@ -309,7 +316,9 @@ def test_shimonoseki_finance_sources_are_reviewed():
         assert record["availability"] == "published"
         assert record["review_status"] == "reviewed"
         assert record["confidence"] == "high"
-        assert record["url"].startswith("https://www.city.shimonoseki.lg.jp/")
+        assert record["url"].startswith(
+            ("https://www.city.shimonoseki.lg.jp/", "https://www.soumu.go.jp/", "https://www.pref.yamaguchi.lg.jp/")
+        )
 
 
 def test_shimonoseki_completion_marks_every_gate_and_defers_depth():

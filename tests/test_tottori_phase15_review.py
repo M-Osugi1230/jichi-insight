@@ -279,7 +279,7 @@ def test_tottori_progress_review_keeps_annual_review_framework():
 def test_tottori_finance_sources_are_staged_only():
     finance = load(ROOT / "data/catalog/tottori_city_finance_sources.json")
     assert finance["version"] == "0.1.0"
-    assert finance["updated_at"] == "2026-11-16"
+    assert finance["updated_at"] == "2026-11-19"
     assert finance["scope"] == "phase15-core-capital-review"
 
     by_id = {record["id"]: record for record in finance["records"]}
@@ -287,6 +287,13 @@ def test_tottori_finance_sources_are_staged_only():
         "tottori-city-home",
         "tottori-budget-2026",
         "tottori-settlement-2024",
+        # Issue #691 fiscal-settlement expansion sources.
+        "tottori-city-mic-settlement-card-fy2022",
+        "tottori-city-mic-settlement-card-fy2023",
+        "tottori-city-mic-settlement-card-fy2024",
+        "tottori-city-fiscal-situation-collection-fy2022",
+        "tottori-city-fiscal-situation-collection-fy2023",
+        "tottori-city-fiscal-situation-collection-fy2024",
     }
     for record in finance["records"]:
         assert record["municipality_key"] == "tottori-city"
@@ -294,7 +301,9 @@ def test_tottori_finance_sources_are_staged_only():
         assert record["availability"] == "published"
         assert record["review_status"] == "reviewed"
         assert record["confidence"] == "high"
-        assert record["url"].startswith("https://www.city.tottori.lg.jp/")
+        assert record["url"].startswith(
+            ("https://www.city.tottori.lg.jp/", "https://www.soumu.go.jp/", "https://www.pref.tottori.lg.jp/")
+        )
 
 
 def test_tottori_completion_marks_every_gate_and_defers_depth():

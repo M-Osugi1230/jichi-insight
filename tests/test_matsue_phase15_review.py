@@ -271,7 +271,7 @@ def test_matsue_progress_review_keeps_pdca_framework():
 def test_matsue_finance_sources_are_staged_only():
     finance = load(ROOT / "data/catalog/matsue_city_finance_sources.json")
     assert finance["version"] == "0.1.0"
-    assert finance["updated_at"] == "2026-11-16"
+    assert finance["updated_at"] == "2026-11-19"
     assert finance["scope"] == "phase15-core-capital-review"
 
     by_id = {record["id"]: record for record in finance["records"]}
@@ -279,6 +279,13 @@ def test_matsue_finance_sources_are_staged_only():
         "matsue-city-home",
         "matsue-budget-2026",
         "matsue-settlement-2024",
+        # Issue #691 fiscal-settlement expansion sources.
+        "matsue-city-mic-settlement-card-fy2022",
+        "matsue-city-mic-settlement-card-fy2023",
+        "matsue-city-mic-settlement-card-fy2024",
+        "matsue-city-fiscal-situation-collection-fy2022",
+        "matsue-city-fiscal-situation-collection-fy2023",
+        "matsue-city-fiscal-situation-collection-fy2024",
     }
     for record in finance["records"]:
         assert record["municipality_key"] == "matsue-city"
@@ -286,7 +293,9 @@ def test_matsue_finance_sources_are_staged_only():
         assert record["availability"] == "published"
         assert record["review_status"] == "reviewed"
         assert record["confidence"] == "high"
-        assert record["url"].startswith("https://www.city.matsue.lg.jp/")
+        assert record["url"].startswith(
+            ("https://www.city.matsue.lg.jp/", "https://www.soumu.go.jp/", "https://www.pref.shimane.lg.jp/")
+        )
 
 
 def test_matsue_completion_marks_every_gate_and_defers_depth():

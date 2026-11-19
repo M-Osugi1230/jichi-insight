@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updated_at": "2026-11-16",
+  "updated_at": "2026-11-19",
   "scope": "phase15-core-capital-review",
   "records": [
     {
@@ -44,6 +44,90 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "一般会計歳入232,345,729,550円・歳出225,142,008,893円を含む公式決算資料（監査委員『令和6年度倉敷市決算審査意見書』の決算審査資料第1表（単位：円）で確認し、差引7,203,720,657円が検算一致）。実質収支は5,803,653,066円（差引7,203,720,657円－翌年度へ繰り越すべき財源1,400,067,591円。同資料第2表『決算収支状況表』の円単位の公表値のまま記録）。決算の認定は議案第135号『令和6年度倉敷市一般会計歳入歳出決算の認定について』として令和7年第5回定例会で2025年9月24日に認定された（市議会公式『議案一覧』の結果欄の文言『認定』で確認）。財政状況資料集の総括表の値（歳入総額232,438,069千円）は普通会計（一般会計等）ベースであり一般会計値とは別のため使用していない。健全化判断比率審査意見書の実質収支額（一般会計5,807,097千円）は算定が異なるため決算収支状況表の値を保持する。予算書・決算書の事項別明細書の款別合計との突合と監査委員の決算審査意見書の内容（個別の指摘事項等）の精査は未実施。"
+    },
+    {
+      "availability": "published",
+      "category": "settlement",
+      "confidence": "high",
+      "id": "kurashiki-city-mic-settlement-card-fy2022",
+      "indexed_at": "2026-11-19",
+      "municipality_key": "kurashiki-city",
+      "notes": "総務省が公表する令和4年度市町村決算カード（岡山県分）のうち倉敷市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、倉敷市『令和4年度財政状況資料集』と突合した。",
+      "organization": "総務省",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "令和4年度 市町村決算カード（岡山県）",
+      "url": "https://www.soumu.go.jp/main_content/000937123.pdf"
+    },
+    {
+      "availability": "published",
+      "category": "settlement",
+      "confidence": "high",
+      "id": "kurashiki-city-fiscal-situation-collection-fy2022",
+      "indexed_at": "2026-11-19",
+      "municipality_key": "kurashiki-city",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する公式資料。岡山県が県内市町村の財政状況資料集を公表しており、倉敷市分はExcel形式で掲載されている。総務省決算カードの照合先として使用した。",
+      "organization": "岡山県",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "令和4年度 財政状況資料集",
+      "url": "https://www.pref.okayama.lg.jp/uploaded/attachment/375593.xlsx"
+    },
+    {
+      "availability": "published",
+      "category": "settlement",
+      "confidence": "high",
+      "id": "kurashiki-city-mic-settlement-card-fy2023",
+      "indexed_at": "2026-11-19",
+      "municipality_key": "kurashiki-city",
+      "notes": "総務省が公表する令和5年度市町村決算カード（岡山県分）のうち倉敷市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、倉敷市『令和5年度財政状況資料集』と突合した。",
+      "organization": "総務省",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "令和5年度 市町村決算カード（岡山県）",
+      "url": "https://www.soumu.go.jp/main_content/000998985.pdf"
+    },
+    {
+      "availability": "published",
+      "category": "settlement",
+      "confidence": "high",
+      "id": "kurashiki-city-fiscal-situation-collection-fy2023",
+      "indexed_at": "2026-11-19",
+      "municipality_key": "kurashiki-city",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する公式資料。岡山県が県内市町村の財政状況資料集を公表しており、倉敷市分はExcel形式で掲載されている。総務省決算カードの照合先として使用した。",
+      "organization": "岡山県",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "令和5年度 財政状況資料集",
+      "url": "https://www.pref.okayama.lg.jp/uploaded/attachment/409707.xlsx"
+    },
+    {
+      "availability": "published",
+      "category": "settlement",
+      "confidence": "high",
+      "id": "kurashiki-city-mic-settlement-card-fy2024",
+      "indexed_at": "2026-11-19",
+      "municipality_key": "kurashiki-city",
+      "notes": "総務省が公表する令和6年度市町村決算カード（岡山県分）のうち倉敷市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、倉敷市『令和6年度財政状況資料集』と突合した。",
+      "organization": "総務省",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "令和6年度 市町村決算カード（岡山県）",
+      "url": "https://www.soumu.go.jp/main_content/001064010.pdf"
+    },
+    {
+      "availability": "published",
+      "category": "settlement",
+      "confidence": "high",
+      "id": "kurashiki-city-fiscal-situation-collection-fy2024",
+      "indexed_at": "2026-11-19",
+      "municipality_key": "kurashiki-city",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する公式資料。岡山県が県内市町村の財政状況資料集を公表しており、倉敷市分はExcel形式で掲載されている。総務省決算カードの照合先として使用した。",
+      "organization": "岡山県",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "令和6年度 財政状況資料集",
+      "url": "https://www.pref.okayama.lg.jp/uploaded/attachment/421542.xlsx"
     }
   ]
 }
