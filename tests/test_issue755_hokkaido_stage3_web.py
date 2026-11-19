@@ -118,7 +118,7 @@ def test_all_three_promise_sections_have_independent_expected_states(tmp_path):
         output.write_text("".join(incorrect), encoding="utf-8")
         assert checks[0]()
         assert checks[1]() == []
-        assert checks[2]()
+        assert checks[2]() == []
 
         incorrect = (
             sections[0],
