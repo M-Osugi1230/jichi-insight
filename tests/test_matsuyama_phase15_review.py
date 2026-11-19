@@ -52,7 +52,7 @@ def test_matsuyama_review_package_is_the_fifty_eighth_completion():
     }
 
     queue = load(QUEUE)
-    assert queue["summary"]["reviewed_complete_count"] == 67
+    assert queue["summary"]["reviewed_complete_count"] == 68
     assert queue["summary"]["pending_record_review_count"] == 0
     assert queue["summary"]["next_official_code"] is None
     entry = next(

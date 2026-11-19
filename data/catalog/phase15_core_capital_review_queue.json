@@ -890,15 +890,28 @@
       "status": "reviewed_complete",
       "source_inventory_path": "data/indexed/naha-city/source_inventory.json",
       "completion_path": "data/catalog/naha_phase15_completion.json"
+    },
+    {
+      "sequence": 68,
+      "wave": 9,
+      "official_code": "011002",
+      "standard_area_code": "01100",
+      "name_ja": "札幌市",
+      "prefecture_name_ja": "北海道",
+      "municipality_type": "city",
+      "phase14_role": "designated_city_and_prefectural_capital",
+      "status": "reviewed_complete",
+      "source_inventory_path": "data/indexed/sapporo-city/source_inventory.json",
+      "completion_path": "data/catalog/sapporo_phase15_completion.json"
     }
   ],
   "summary": {
-    "target_count": 67,
-    "reviewed_complete_count": 67,
+    "target_count": 68,
+    "reviewed_complete_count": 68,
     "review_in_progress_count": 0,
     "pending_record_review_count": 0,
     "blocked_source_inventory_count": 0,
     "next_official_code": null
   },
-  "updated_at": "2026-11-17"
+  "updated_at": "2026-11-19"
 }

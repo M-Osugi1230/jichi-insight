@@ -202,8 +202,8 @@ def test_hirakata_candidate_progress_review_stays_staging() -> None:
 
 def test_hirakata_promotion_is_reflected_in_review_queue() -> None:
     queue = load_json(QUEUE_PATH)
-    assert queue["summary"]["target_count"] == 67
-    assert queue["summary"]["reviewed_complete_count"] == 67
+    assert queue["summary"]["target_count"] == 68
+    assert queue["summary"]["reviewed_complete_count"] == 68
     assert queue["summary"]["pending_record_review_count"] == 0
     assert queue["summary"]["next_official_code"] is None
     items = {item["official_code"]: item for item in queue["execution_queue"]}

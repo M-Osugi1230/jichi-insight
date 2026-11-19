@@ -57,8 +57,8 @@
     },
     "execution_queue": {
       "type": "array",
-      "minItems": 67,
-      "maxItems": 67,
+      "minItems": 68,
+      "maxItems": 68,
       "items": {
         "$ref": "#/$defs/queuedMunicipality"
       }
@@ -76,22 +76,22 @@
       ],
       "properties": {
         "target_count": {
-          "const": 67
+          "const": 68
         },
         "reviewed_complete_count": {
           "type": "integer",
           "minimum": 0,
-          "maximum": 67
+          "maximum": 68
         },
         "review_in_progress_count": {
           "type": "integer",
           "minimum": 0,
-          "maximum": 67
+          "maximum": 68
         },
         "pending_record_review_count": {
           "type": "integer",
           "minimum": 0,
-          "maximum": 67
+          "maximum": 68
         },
         "blocked_source_inventory_count": {
           "const": 0
@@ -135,12 +135,12 @@
         "sequence": {
           "type": "integer",
           "minimum": 1,
-          "maximum": 67
+          "maximum": 68
         },
         "wave": {
           "type": "integer",
           "minimum": 1,
-          "maximum": 8
+          "maximum": 9
         },
         "official_code": {
           "type": "string",
@@ -168,7 +168,8 @@
           "enum": [
             "core_city",
             "core_city_and_prefectural_capital",
-            "prefectural_capital_only"
+            "prefectural_capital_only",
+            "designated_city_and_prefectural_capital"
           ]
         },
         "status": {
