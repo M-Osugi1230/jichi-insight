@@ -27,6 +27,9 @@ REQUIRED_FILES = [
     "about/index.html",
     "assemblies/index.html",
     "assemblies/fukuoka-prefecture/overseas-activities/index.html",
+    "assemblies/aichi-prefecture/index.html",
+    "assemblies/nagoya-city/index.html",
+    "assemblies/toyota-city/index.html",
     "compare/index.html",
     "corrections/index.html",
     "data-quality/index.html",
@@ -210,6 +213,27 @@ BASE_PAGE_REQUIREMENTS: dict[str, list[str]] = {
     "executives/index.html": [
         "首長評価の前に、任期と公約の根拠を固定する。",
         "現職名と任期が分かっても、実績評価はできない。",
+    ],
+    "assemblies/aichi-prefecture/index.html": [
+        "愛知県議会",
+        "令和8年6月愛知県議会定例会",
+        "本会議の投票記録そのものではありません",
+        "政務活動費",
+        "視察",
+    ],
+    "assemblies/nagoya-city/index.html": [
+        "名古屋市会",
+        "第134号",
+        "議決に参加できない",
+        "68人分",
+        "全会一致",
+    ],
+    "assemblies/toyota-city/index.html": [
+        "豊田市議会",
+        "令和8年9月豊田市議会定例会",
+        "自民クラブは議長を除く・欠席1名",
+        "政務活動費",
+        "視察",
     ],
     "assemblies/index.html": [
         "議会を、質問数ではなく役割と根拠で見る。",
