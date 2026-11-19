@@ -308,7 +308,7 @@ def test_saga_progress_review_keeps_implementation_plan_framework():
 def test_saga_finance_sources_are_reviewed():
     finance = load(ROOT / "data/catalog/saga_city_finance_sources.json")
     assert finance["version"] == "0.1.0"
-    assert finance["updated_at"] == "2026-11-17"
+    assert finance["updated_at"] == "2026-11-19"
     assert finance["scope"] == "phase15-core-capital-review"
 
     by_id = {record["id"]: record for record in finance["records"]}
@@ -316,6 +316,13 @@ def test_saga_finance_sources_are_reviewed():
         "saga-city-home",
         "saga-budget-2026",
         "saga-settlement-2024",
+        # Issue #691 fiscal-settlement expansion sources.
+        "saga-city-mic-settlement-card-fy2022",
+        "saga-city-mic-settlement-card-fy2023",
+        "saga-city-mic-settlement-card-fy2024",
+        "saga-city-fiscal-situation-collection-fy2022",
+        "saga-city-fiscal-situation-collection-fy2023",
+        "saga-city-fiscal-situation-collection-fy2024",
     }
     for record in finance["records"]:
         assert record["municipality_key"] == "saga-city"
@@ -323,7 +330,9 @@ def test_saga_finance_sources_are_reviewed():
         assert record["availability"] == "published"
         assert record["review_status"] == "reviewed"
         assert record["confidence"] == "high"
-        assert record["url"].startswith("https://www.city.saga.lg.jp/")
+        assert record["url"].startswith(
+            ("https://www.city.saga.lg.jp/", "https://www.soumu.go.jp/", "https://www.pref.saga.lg.jp/")
+        )
 
 
 def test_saga_completion_marks_every_gate_and_defers_depth():

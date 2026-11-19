@@ -310,7 +310,7 @@ def test_matsuyama_progress_review_keeps_implementation_plan_framework():
 def test_matsuyama_finance_sources_are_reviewed():
     finance = load(ROOT / "data/catalog/matsuyama_city_finance_sources.json")
     assert finance["version"] == "0.1.0"
-    assert finance["updated_at"] == "2026-11-17"
+    assert finance["updated_at"] == "2026-11-19"
     assert finance["scope"] == "phase15-core-capital-review"
 
     by_id = {record["id"]: record for record in finance["records"]}
@@ -318,6 +318,13 @@ def test_matsuyama_finance_sources_are_reviewed():
         "matsuyama-city-home",
         "matsuyama-budget-2026",
         "matsuyama-settlement-audit-2024",
+        # Issue #691 fiscal-settlement expansion sources.
+        "matsuyama-city-mic-settlement-card-fy2022",
+        "matsuyama-city-mic-settlement-card-fy2023",
+        "matsuyama-city-mic-settlement-card-fy2024",
+        "matsuyama-city-fiscal-situation-collection-fy2022",
+        "matsuyama-city-fiscal-situation-collection-fy2023",
+        "matsuyama-city-fiscal-situation-collection-fy2024",
     }
     for record in finance["records"]:
         assert record["municipality_key"] == "matsuyama-city"
@@ -326,7 +333,7 @@ def test_matsuyama_finance_sources_are_reviewed():
         assert record["review_status"] == "reviewed"
         assert record["confidence"] == "high"
         assert record["url"].startswith(
-            "https://www.city.matsuyama.ehime.jp/"
+            ("https://www.city.matsuyama.ehime.jp/", "https://www.soumu.go.jp/", "https://www.pref.ehime.jp/")
         )
 
 
