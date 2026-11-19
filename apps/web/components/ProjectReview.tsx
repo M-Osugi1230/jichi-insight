@@ -50,7 +50,9 @@ export function ProjectReview({area, record, kpis}:{area:string;record:ProjectRe
             : hasNoPublishedProjectAssessment ? "事業単位の公式評価は公表されていません" : "未収録"}
           <p className={styles.meta}>{record.official_evaluation?.note ??
             (hasNoPublishedProjectAssessment
-              ? "目標・施策・計画単位の進捗や叙述を、この事業の公式評価に読み替えません。"
+              ? area === "toyota-city"
+                ? "目標・施策単位の進捗や叙述を、この事業の公式評価に読み替えません。"
+                : "目標・施策・計画単位の進捗や叙述を、この事業の公式評価に読み替えません。"
               : "公式評価は未収録")}</p></li>
       </ol>
       {end && /廃止|終了|完了/.test(end+" "+record.official_evaluation?.rating) ? <p className={styles.warning}>この事業は終了・廃止等の終端として記録されています。後継事業の有無は公式評価の注記をご確認ください。</p> : null}
