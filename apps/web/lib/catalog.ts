@@ -5,6 +5,7 @@ import kitakyushuFinanceCatalog from "../../../data/catalog/kitakyushu_finance_s
 import officialCatalog from "../../../data/catalog/official_sources.json";
 
 export type MunicipalityKey =
+  | "aichi-prefecture"
   | "fukuoka-prefecture"
   | "fukuoka-city"
   | "kitakyushu-city";
@@ -35,6 +36,14 @@ export const municipalityMeta: Record<
     fiscalSummary: string;
   }
 > = {
+  "aichi-prefecture": {
+    name: "愛知県",
+    type: "都道府県",
+    summary: "あいちビジョンの政策指標と、知事の任期・一次資料を確認します。",
+    status: "資料索引中",
+    href: "/municipalities/aichi",
+    fiscalSummary: "財政詳細は未登録",
+  },
   "fukuoka-prefecture": {
     name: "福岡県",
     type: "都道府県",

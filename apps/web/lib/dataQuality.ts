@@ -32,19 +32,24 @@ export type MunicipalityQuality = {
   status: "reviewed-data" | "indexed-only";
 };
 
-const municipalityNames: Record<MunicipalityKey, string> = {
+// Financial quality statistics cover only the three municipalities with
+// dedicated Reviewed fiscal registries. Other catalog keys must not imply
+// fiscal records or evidence that do not exist.
+type FiscalMunicipalityKey = Exclude<MunicipalityKey, "aichi-prefecture">;
+
+const municipalityNames: Record<FiscalMunicipalityKey, string> = {
   "fukuoka-prefecture": "福岡県",
   "fukuoka-city": "福岡市",
   "kitakyushu-city": "北九州市",
 };
 
-const municipalityKeys = Object.keys(municipalityNames) as MunicipalityKey[];
-const recordsByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFinance.records> = {
+const municipalityKeys = Object.keys(municipalityNames) as FiscalMunicipalityKey[];
+const recordsByMunicipality: Record<FiscalMunicipalityKey, typeof fukuokaPrefectureFinance.records> = {
   "fukuoka-prefecture": fukuokaPrefectureFinance.records,
   "fukuoka-city": fukuokaCityFinance.records,
   "kitakyushu-city": kitakyushuFinance.records,
 };
-const evidenceByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFinance.evidencePackets> = {
+const evidenceByMunicipality: Record<FiscalMunicipalityKey, typeof fukuokaPrefectureFinance.evidencePackets> = {
   "fukuoka-prefecture": fukuokaPrefectureFinance.evidencePackets,
   "fukuoka-city": fukuokaCityFinance.evidencePackets,
   "kitakyushu-city": kitakyushuFinance.evidencePackets,

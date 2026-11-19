@@ -28,7 +28,7 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
   title: "首長台帳",
   description:
-    "福岡県知事、福岡市長、北九州市長の現任期、選挙結果、公約原文資料、資料探索履歴、未評価範囲を確認できます。",
+    "登録済みの知事・市長の現任期、選挙結果、公約原文資料、資料探索履歴、未評価範囲を確認できます。",
   alternates: {
     canonical: "https://jimieru.com/executives/",
   },
@@ -52,6 +52,10 @@ export default function ExecutivesPage() {
     (term) => sourcesForExecutive(term).some((source) => source.category === "election"),
   ).length;
 
+  const executivesWithReviewedPromises = currentExecutiveTerms.filter((term) =>
+    promisesForExecutive(term).some((promise) => promise.review_status === "reviewed"),
+  );
+
   return (
     <>
       <SiteHeader />
@@ -69,7 +73,7 @@ export default function ExecutivesPage() {
           <article className={styles.summaryCard}>
             <span>現職首長</span>
             <strong>{currentExecutiveTerms.length}</strong>
-            <p>福岡県知事、福岡市長、北九州市長。</p>
+            <p>任期の登録済み首長を表示。公約が未登録の首長も含みます。</p>
           </article>
           <article className={styles.summaryCard}>
             <span>個別選挙結果</span>
@@ -84,7 +88,7 @@ export default function ExecutivesPage() {
           <article className={styles.summaryCard}>
             <span>Reviewed 公約原文</span>
             <strong>{promiseRecords.filter(p => p.review_status === "reviewed").length}</strong>
-            <p>3首長の原文公約を分割・登録済み。<Link href="/promises">公約一覧を見る</Link></p>
+            <p>{executivesWithReviewedPromises.length}首長に Reviewed 公約を登録済み。公約未登録の首長は含めません。<Link href="/promises">公約一覧を見る</Link></p>
           </article>
           <article className={styles.summaryCard}>
             <span>公約進捗評価</span>
@@ -168,7 +172,9 @@ export default function ExecutivesPage() {
                         </a>
                       ))}
                       <p>
-                        原文を個別公約に分割・登録済みです。達成率や首長ごとの点数は算出していません。
+                        {promisesForExecutive(term).some((promise) => promise.review_status === "reviewed")
+                          ? "原文を個別公約に分割・登録済みです。達成率や首長ごとの点数は算出していません。"
+                          : "公約原文は本サイトで未登録です。資料の存在や公表状況を断定するものではありません。"}
                       </p>
                     </div>
                   ) : null}
@@ -210,9 +216,9 @@ export default function ExecutivesPage() {
             <p>行政機関への公約資料の照会は、準備した文案と送信・回答の状態を分けて公開しています。<Link href="/executives/source-requests">公約資料の照会案と送信状況を見る</Link></p>
           </div>
           <ul>
-            <li>3首長の個別選挙結果ページを確認済み</li>
-            <li>3首長分の公約資料探索履歴を記録済み</li>
-            <li>北九州市長・福岡市長・福岡県知事の公約原文を Reviewed で登録済み</li>
+            <li>個別選挙結果は登録済みの公式出典がある範囲で表示します。</li>
+            <li>公約資料の探索履歴は、調査が登録された首長について表示します。</li>
+            <li>Reviewed 公約原文が登録済みの首長は {executivesWithReviewedPromises.map((term) => `${executiveMunicipality(term).name}${term.office === "governor" ? "知事" : "市長"}`).join("・")}。未登録の首長を登録済みとは扱いません。</li>
             <li>福岡市長の公約は候補者HPの同時期原文引用と選挙公報見出しの照合、福岡県知事の公約は選挙公報を原典として登録</li>
             <li>資料が存在しないとは判定せず、追加確認を継続</li>
           </ul>
@@ -235,9 +241,9 @@ export default function ExecutivesPage() {
         <section className="callout callout--dark">
           <div>
             <p className="eyebrow">Next step</p>
-            <h2>登録済み公約49件の原文と、未接続・要確認の範囲を分けて見る。</h2>
+            <h2>登録済み公約{promiseRecords.filter((promise) => promise.review_status === "reviewed").length}件の原文と、未接続・要確認の範囲を分けて見る。</h2>
             <p>
-              福岡県・福岡市・北九州市の原文公約は登録済みです。関連事業への接続は推定を含み、評価材料がない公約は未達・未着手とは扱いません。
+              公約原文を登録している首長のみ掲載しています。公約が未登録の首長も首長台帳に残し、未登録と未達・未着手を混同しません。
             </p>
             <p><Link href="/promises">公約レジストリで原文・出典・関連事業を確認する</Link></p>
           </div>
