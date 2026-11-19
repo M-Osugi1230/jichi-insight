@@ -1,0 +1,2079 @@
+[
+  {
+    "id": "jp-local-010006-fiscal-2022-ordinary-revenue",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "普通会計歳入総額",
+    "amount_yen": 3094654845000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "総務省『令和4年度都道府県決算カード』（北海道シート）の千円単位の値を円換算して収録。総務省『令和4年度財政状況資料集』（北海道）総括表でも一致を確認し、北海道公式『普通会計決算の状況』でも同額を確認。普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計の決算額とは一致しない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2022",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2022-ordinary-expenditure",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "普通会計歳出総額",
+    "amount_yen": 3058479552000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "総務省『令和4年度都道府県決算カード』（北海道シート）の千円単位の値を円換算して収録。総務省『令和4年度財政状況資料集』（北海道）総括表でも一致を確認し、北海道公式『普通会計決算の状況』でも同額を確認。目的別・性質別の内訳合計とも一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2022",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2022-ordinary-local-tax",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "local_tax",
+    "metric_label": "普通会計道税収入",
+    "amount_yen": 757893739000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "普通会計の地方税（道税）収入済額。総務省『令和4年度都道府県決算カード』（北海道シート）の千円単位の値を円換算。総務省『令和4年度財政状況資料集』（北海道）「普通会計の状況」でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2022",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2022-formal-balance",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "formal_balance",
+    "metric_label": "普通会計形式収支",
+    "amount_yen": 36175293000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "歳入総額から歳出総額を差し引いた形式収支。総務省決算カードの印字値であり、歳入総額−歳出総額の検算と円単位で一致する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2022",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2022-carryover-resources",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "carryover_resources",
+    "metric_label": "普通会計翌年度に繰り越すべき財源",
+    "amount_yen": 8606652000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "翌年度へ繰り越すべき財源（継続費逓次繰越・繰越明許費・事故繰越しに係る財源）。形式収支から差し引くと実質収支となる。総務省決算カードの印字値。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2022",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2022-real-balance",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance",
+    "metric_label": "普通会計実質収支",
+    "amount_yen": 27568641000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "形式収支から翌年度に繰り越すべき財源を差し引いた実質収支。総務省決算カードの印字値であり、検算と円単位で一致する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2022",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2022-real-balance-ratio",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance_ratio",
+    "metric_label": "実質収支比率",
+    "amount_yen": null,
+    "value": 2,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "実質収支の標準財政規模に対する割合。総務省『令和4年度都道府県決算カード』（北海道シート）の印字値。総務省『令和4年度財政状況資料集』（北海道）総括表でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2022",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2022-standard-fiscal-scale",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "standard_fiscal_scale",
+    "metric_label": "標準財政規模",
+    "amount_yen": 1358763320000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "標準財政規模（臨時財政対策債発行可能額を含む）。総務省『令和4年度都道府県決算カード』（北海道シート）の千円単位の値を円換算。総務省『令和4年度財政状況資料集』（北海道）総括表でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2022",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2022-expenditure-by-purpose",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_purpose",
+    "metric_label": "普通会計目的別歳出",
+    "amount_yen": 3058479552000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "総務省『令和4年度都道府県決算カード』（北海道シート）「目的別歳出の状況」の千円単位の値を円換算。各区分の合計は歳出総額と一致する（検算済み）。目的別の「公債費」は性質別の「公債費」と分類が異なる。カード上「－」の区分（消防費・諸支出金・前年度繰上充用金・特別地方消費税交付金・自動車取得税交付金・特別区財政調整交付金）は該当がないため区分に含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2022",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "breakdown": [
+      {
+        "key": "assembly",
+        "label": "議会費",
+        "amount_yen": 3127298000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "general_affairs",
+        "label": "総務費",
+        "amount_yen": 149958913000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "welfare",
+        "label": "民生費",
+        "amount_yen": 417951565000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "public_health",
+        "label": "衛生費",
+        "amount_yen": 317710682000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "labor",
+        "label": "労働費",
+        "amount_yen": 5504297000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "agriculture_forestry_fisheries",
+        "label": "農林水産業費",
+        "amount_yen": 270584874000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "commerce_industry",
+        "label": "商工費",
+        "amount_yen": 457940136000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "civil_engineering",
+        "label": "土木費",
+        "amount_yen": 334411069000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "police",
+        "label": "警察費",
+        "amount_yen": 129360204000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "education",
+        "label": "教育費",
+        "amount_yen": 420214658000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "disaster_recovery",
+        "label": "災害復旧費",
+        "amount_yen": 6041147000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 379674744000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "interest_allocation_grant",
+        "label": "利子割交付金",
+        "amount_yen": 250597000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "dividend_allocation_grant",
+        "label": "配当割交付金",
+        "amount_yen": 1831472000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "capital_gains_allocation_grant",
+        "label": "株式等譲渡所得割交付金",
+        "amount_yen": 1477793000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "separate_taxation_allocation_grant",
+        "label": "分離課税所得割交付金",
+        "amount_yen": 361077000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "local_consumption_tax_grant",
+        "label": "地方消費税交付金",
+        "amount_yen": 140473551000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "golf_course_tax_grant",
+        "label": "ゴルフ場利用税交付金",
+        "amount_yen": 1042127000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "light_oil_tax_grant",
+        "label": "軽油引取税交付金",
+        "amount_yen": 7397372000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "automobile_environment_tax_grant",
+        "label": "自動車税環境性能割交付金",
+        "amount_yen": 2548792000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "corporate_enterprise_tax_grant",
+        "label": "法人事業税交付金",
+        "amount_yen": 10617184000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2022-expenditure-by-nature",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_nature",
+    "metric_label": "普通会計性質別歳出",
+    "amount_yen": 3058479552000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "総務省『令和4年度都道府県決算カード』（北海道シート）「性質別歳出の状況」の千円単位の値を円換算。義務的経費計・その他の経費・投資的経費計の合計は歳出総額と一致する（検算済み）。性質別の「公債費」は目的別の「公債費」と分類が異なる。前年度繰上充用金・失業対策事業費は該当なし（カード上「－」）のため区分に含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2022",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "breakdown": [
+      {
+        "key": "mandatory_expenses",
+        "label": "義務的経費計",
+        "amount_yen": 993994113000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "personnel",
+        "label": "人件費",
+        "amount_yen": 550303331000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "staff_salaries",
+        "label": "うち職員給",
+        "amount_yen": 408323810000,
+        "parent_key": "personnel",
+        "note": null
+      },
+      {
+        "key": "assistance",
+        "label": "扶助費",
+        "amount_yen": 65045710000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 378645072000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "other_expenses",
+        "label": "その他の経費",
+        "amount_yen": 1581275581000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "goods_and_services",
+        "label": "物件費",
+        "amount_yen": 160787909000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "maintenance",
+        "label": "維持補修費",
+        "amount_yen": 42613010000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidies",
+        "label": "補助費等",
+        "amount_yen": 926901450000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "transfers_out",
+        "label": "繰出金",
+        "amount_yen": 30340159000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "fund_contributions",
+        "label": "積立金",
+        "amount_yen": 52840332000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "equity_investments",
+        "label": "投資及び出資金",
+        "amount_yen": 392807000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "loans",
+        "label": "貸付金",
+        "amount_yen": 367399914000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "capital_expenses",
+        "label": "投資的経費計",
+        "amount_yen": 483209858000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "construction",
+        "label": "普通建設事業費",
+        "amount_yen": 477175083000,
+        "parent_key": "capital_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidized_construction",
+        "label": "うち補助",
+        "amount_yen": 316948962000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "independent_construction",
+        "label": "うち単独",
+        "amount_yen": 64630344000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "disaster_recovery_works",
+        "label": "災害復旧事業費",
+        "amount_yen": 6034775000,
+        "parent_key": "capital_expenses",
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2022-fund-balance",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fund_balance",
+    "metric_label": "普通会計基金残高",
+    "amount_yen": 136903702000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "年度末の積立金現在高（財政調整基金・減債基金・その他特定目的基金の3区分）。総務省『令和4年度都道府県決算カード』（北海道シート）の千円単位の値を円換算し、総務省『令和4年度財政状況資料集』（北海道）総括表でも一致を確認。内訳の合計は基金残高と一致する（検算済み）。定額運用基金は積立金現在高の3区分に含まれないため含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2022",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "breakdown": [
+      {
+        "key": "fiscal_adjustment_fund",
+        "label": "財政調整基金",
+        "amount_yen": 42848498000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_reduction_fund",
+        "label": "減債基金",
+        "amount_yen": 55851418000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "other_specific_purpose_funds",
+        "label": "その他特定目的基金",
+        "amount_yen": 38203786000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2022-debt-balance",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "debt_balance",
+    "metric_label": "普通会計地方債残高",
+    "amount_yen": 5778413965000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "年度末の地方債現在高（臨時財政対策債を含む）。総務省『令和4年度都道府県決算カード』（北海道シート）の千円単位の値を円換算。内訳の「地方債現在高（臨時財政対策債を除く）」は総務省『令和4年度財政状況資料集』（北海道）総括表の印字値であり、「臨時財政対策債」は現在高からこれを差し引いた算出値。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2022",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "breakdown": [
+      {
+        "key": "bonds_excluding_temporary_fiscal",
+        "label": "地方債現在高（臨時財政対策債を除く）",
+        "amount_yen": 4084262751000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "temporary_fiscal_measures_bonds",
+        "label": "臨時財政対策債",
+        "amount_yen": 1694151214000,
+        "parent_key": null,
+        "note": "総務省資料集に直接の印字がなく、地方債現在高から臨時財政対策債を除く残高を差し引いた算出値。"
+      }
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2022-current-balance-ratio",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "current_balance_ratio",
+    "metric_label": "経常収支比率",
+    "amount_yen": null,
+    "value": 98.1,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "経常収支比率。総務省『令和4年度都道府県決算カード』（北海道シート）の印字値（括弧内の「減収補塡債（特例分）及び臨時財政対策債を除く」値は収録していない）。総務省『令和4年度財政状況資料集』（北海道）総括表でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2022",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2022-real-debt-service-ratio",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_debt_service_ratio",
+    "metric_label": "実質公債費比率",
+    "amount_yen": null,
+    "value": 18.9,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "実質公債費比率（健全化判断比率）。総務省『令和4年度都道府県決算カード』（北海道シート）の印字値をそのまま収録し、再計算による置き換えはしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2022",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2022-future-burden-ratio",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "future_burden_ratio",
+    "metric_label": "将来負担比率",
+    "amount_yen": null,
+    "value": 311,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "将来負担比率（健全化判断比率）。総務省『令和4年度都道府県決算カード』（北海道シート）の印字値をそのまま収録し、再計算による置き換えはしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2022",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2022-fiscal-strength-index",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fiscal_strength_index",
+    "metric_label": "財政力指数",
+    "amount_yen": null,
+    "value": 0.44422,
+    "unit": "index",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "財政力指数（過去3年平均）。総務省『令和4年度都道府県決算カード』（北海道シート）の印字値をそのまま収録する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2022",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2022-population",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "population",
+    "metric_label": "住民基本台帳人口",
+    "amount_yen": null,
+    "value": 5139913,
+    "unit": "persons",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "住民基本台帳人口（2023年1月1日現在）。総務省『令和4年度都道府県決算カード』（北海道シート）の値（総務省『令和4年度財政状況資料集』（北海道）総括表でも一致）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2022",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2023-ordinary-revenue",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "普通会計歳入総額",
+    "amount_yen": 2856219142000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "総務省『令和5年度都道府県決算カード』（北海道シート）の千円単位の値を円換算して収録。総務省『令和5年度財政状況資料集』（北海道）総括表でも一致を確認し、北海道公式『普通会計決算の状況』でも同額を確認。普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計の決算額とは一致しない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2023",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2023-ordinary-expenditure",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "普通会計歳出総額",
+    "amount_yen": 2819962872000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "総務省『令和5年度都道府県決算カード』（北海道シート）の千円単位の値を円換算して収録。総務省『令和5年度財政状況資料集』（北海道）総括表でも一致を確認し、北海道公式『普通会計決算の状況』でも同額を確認。目的別・性質別の内訳合計とも一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2023",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2023-ordinary-local-tax",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "local_tax",
+    "metric_label": "普通会計道税収入",
+    "amount_yen": 752046629000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "普通会計の地方税（道税）収入済額。総務省『令和5年度都道府県決算カード』（北海道シート）の千円単位の値を円換算。総務省『令和5年度財政状況資料集』（北海道）「普通会計の状況」でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2023",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2023-formal-balance",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "formal_balance",
+    "metric_label": "普通会計形式収支",
+    "amount_yen": 36256270000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "歳入総額から歳出総額を差し引いた形式収支。総務省決算カードの印字値であり、歳入総額−歳出総額の検算と円単位で一致する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2023",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2023-carryover-resources",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "carryover_resources",
+    "metric_label": "普通会計翌年度に繰り越すべき財源",
+    "amount_yen": 7849615000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "翌年度へ繰り越すべき財源（継続費逓次繰越・繰越明許費・事故繰越しに係る財源）。形式収支から差し引くと実質収支となる。総務省決算カードの印字値。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2023",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2023-real-balance",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance",
+    "metric_label": "普通会計実質収支",
+    "amount_yen": 28406655000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "形式収支から翌年度に繰り越すべき財源を差し引いた実質収支。総務省決算カードの印字値であり、検算と円単位で一致する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2023",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2023-real-balance-ratio",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance_ratio",
+    "metric_label": "実質収支比率",
+    "amount_yen": null,
+    "value": 2.1,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "実質収支の標準財政規模に対する割合。総務省『令和5年度都道府県決算カード』（北海道シート）の印字値。総務省『令和5年度財政状況資料集』（北海道）総括表でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2023",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2023-standard-fiscal-scale",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "standard_fiscal_scale",
+    "metric_label": "標準財政規模",
+    "amount_yen": 1364505815000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "標準財政規模（臨時財政対策債発行可能額を含む）。総務省『令和5年度都道府県決算カード』（北海道シート）の千円単位の値を円換算。総務省『令和5年度財政状況資料集』（北海道）総括表でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2023",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2023-expenditure-by-purpose",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_purpose",
+    "metric_label": "普通会計目的別歳出",
+    "amount_yen": 2819962872000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "総務省『令和5年度都道府県決算カード』（北海道シート）「目的別歳出の状況」の千円単位の値を円換算。各区分の合計は歳出総額と一致する（検算済み）。目的別の「公債費」は性質別の「公債費」と分類が異なる。カード上「－」の区分（消防費・諸支出金・前年度繰上充用金・特別地方消費税交付金・特別区財政調整交付金）は該当がないため区分に含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2023",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "breakdown": [
+      {
+        "key": "assembly",
+        "label": "議会費",
+        "amount_yen": 3166083000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "general_affairs",
+        "label": "総務費",
+        "amount_yen": 148912301000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "welfare",
+        "label": "民生費",
+        "amount_yen": 416590304000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "public_health",
+        "label": "衛生費",
+        "amount_yen": 142099038000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "labor",
+        "label": "労働費",
+        "amount_yen": 5433309000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "agriculture_forestry_fisheries",
+        "label": "農林水産業費",
+        "amount_yen": 285349719000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "commerce_industry",
+        "label": "商工費",
+        "amount_yen": 388232492000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "civil_engineering",
+        "label": "土木費",
+        "amount_yen": 335037732000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "police",
+        "label": "警察費",
+        "amount_yen": 132384500000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "education",
+        "label": "教育費",
+        "amount_yen": 412314175000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "disaster_recovery",
+        "label": "災害復旧費",
+        "amount_yen": 6658415000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 377376810000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "interest_allocation_grant",
+        "label": "利子割交付金",
+        "amount_yen": 222224000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "dividend_allocation_grant",
+        "label": "配当割交付金",
+        "amount_yen": 2059750000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "capital_gains_allocation_grant",
+        "label": "株式等譲渡所得割交付金",
+        "amount_yen": 2373877000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "separate_taxation_allocation_grant",
+        "label": "分離課税所得割交付金",
+        "amount_yen": 380347000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "local_consumption_tax_grant",
+        "label": "地方消費税交付金",
+        "amount_yen": 139572569000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "golf_course_tax_grant",
+        "label": "ゴルフ場利用税交付金",
+        "amount_yen": 1095208000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "automobile_acquisition_tax_grant",
+        "label": "自動車取得税交付金",
+        "amount_yen": 241973000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "light_oil_tax_grant",
+        "label": "軽油引取税交付金",
+        "amount_yen": 6719953000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "automobile_environment_tax_grant",
+        "label": "自動車税環境性能割交付金",
+        "amount_yen": 2989560000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "corporate_enterprise_tax_grant",
+        "label": "法人事業税交付金",
+        "amount_yen": 10752533000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2023-expenditure-by-nature",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_nature",
+    "metric_label": "普通会計性質別歳出",
+    "amount_yen": 2819962872000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "総務省『令和5年度都道府県決算カード』（北海道シート）「性質別歳出の状況」の千円単位の値を円換算。義務的経費計・その他の経費・投資的経費計の合計は歳出総額と一致する（検算済み）。性質別の「公債費」は目的別の「公債費」と分類が異なる。前年度繰上充用金・失業対策事業費は該当なし（カード上「－」）のため区分に含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2023",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "breakdown": [
+      {
+        "key": "mandatory_expenses",
+        "label": "義務的経費計",
+        "amount_yen": 967922725000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "personnel",
+        "label": "人件費",
+        "amount_yen": 528768208000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "staff_salaries",
+        "label": "うち職員給",
+        "amount_yen": 408209251000,
+        "parent_key": "personnel",
+        "note": null
+      },
+      {
+        "key": "assistance",
+        "label": "扶助費",
+        "amount_yen": 62791385000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 376363132000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "other_expenses",
+        "label": "その他の経費",
+        "amount_yen": 1356754814000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "goods_and_services",
+        "label": "物件費",
+        "amount_yen": 86621364000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "maintenance",
+        "label": "維持補修費",
+        "amount_yen": 42996649000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidies",
+        "label": "補助費等",
+        "amount_yen": 759743914000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "transfers_out",
+        "label": "繰出金",
+        "amount_yen": 30890621000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "fund_contributions",
+        "label": "積立金",
+        "amount_yen": 73838660000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "equity_investments",
+        "label": "投資及び出資金",
+        "amount_yen": 517974000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "loans",
+        "label": "貸付金",
+        "amount_yen": 362145632000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "capital_expenses",
+        "label": "投資的経費計",
+        "amount_yen": 495285333000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "construction",
+        "label": "普通建設事業費",
+        "amount_yen": 488630290000,
+        "parent_key": "capital_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidized_construction",
+        "label": "うち補助",
+        "amount_yen": 326487469000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "independent_construction",
+        "label": "うち単独",
+        "amount_yen": 62853498000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "disaster_recovery_works",
+        "label": "災害復旧事業費",
+        "amount_yen": 6655043000,
+        "parent_key": "capital_expenses",
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2023-fund-balance",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fund_balance",
+    "metric_label": "普通会計基金残高",
+    "amount_yen": 152968813000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "年度末の積立金現在高（財政調整基金・減債基金・その他特定目的基金の3区分）。総務省『令和5年度都道府県決算カード』（北海道シート）の千円単位の値を円換算し、総務省『令和5年度財政状況資料集』（北海道）総括表でも一致を確認。内訳の合計は基金残高と一致する（検算済み）。定額運用基金は積立金現在高の3区分に含まれないため含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2023",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "breakdown": [
+      {
+        "key": "fiscal_adjustment_fund",
+        "label": "財政調整基金",
+        "amount_yen": 36347357000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_reduction_fund",
+        "label": "減債基金",
+        "amount_yen": 57496342000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "other_specific_purpose_funds",
+        "label": "その他特定目的基金",
+        "amount_yen": 59125114000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2023-debt-balance",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "debt_balance",
+    "metric_label": "普通会計地方債残高",
+    "amount_yen": 5717309814000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "年度末の地方債現在高（臨時財政対策債を含む）。総務省『令和5年度都道府県決算カード』（北海道シート）の千円単位の値を円換算。内訳の「地方債現在高（臨時財政対策債を除く）」は総務省『令和5年度財政状況資料集』（北海道）総括表の印字値であり、「臨時財政対策債」は現在高からこれを差し引いた算出値。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2023",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "breakdown": [
+      {
+        "key": "bonds_excluding_temporary_fiscal",
+        "label": "地方債現在高（臨時財政対策債を除く）",
+        "amount_yen": 4100478068000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "temporary_fiscal_measures_bonds",
+        "label": "臨時財政対策債",
+        "amount_yen": 1616831746000,
+        "parent_key": null,
+        "note": "総務省資料集に直接の印字がなく、地方債現在高から臨時財政対策債を除く残高を差し引いた算出値。"
+      }
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2023-current-balance-ratio",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "current_balance_ratio",
+    "metric_label": "経常収支比率",
+    "amount_yen": null,
+    "value": 97.8,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "経常収支比率。総務省『令和5年度都道府県決算カード』（北海道シート）の印字値（括弧内の「減収補塡債（特例分）及び臨時財政対策債を除く」値は収録していない）。総務省『令和5年度財政状況資料集』（北海道）総括表でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2023",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2023-real-debt-service-ratio",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_debt_service_ratio",
+    "metric_label": "実質公債費比率",
+    "amount_yen": null,
+    "value": 19.1,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "実質公債費比率（健全化判断比率）。総務省『令和5年度都道府県決算カード』（北海道シート）の印字値をそのまま収録し、再計算による置き換えはしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2023",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2023-future-burden-ratio",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "future_burden_ratio",
+    "metric_label": "将来負担比率",
+    "amount_yen": null,
+    "value": 306.7,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "将来負担比率（健全化判断比率）。総務省『令和5年度都道府県決算カード』（北海道シート）の印字値をそのまま収録し、再計算による置き換えはしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2023",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2023-fiscal-strength-index",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fiscal_strength_index",
+    "metric_label": "財政力指数",
+    "amount_yen": null,
+    "value": 0.44355,
+    "unit": "index",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "財政力指数（過去3年平均）。総務省『令和5年度都道府県決算カード』（北海道シート）の印字値をそのまま収録する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2023",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2023-population",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "population",
+    "metric_label": "住民基本台帳人口",
+    "amount_yen": null,
+    "value": 5093983,
+    "unit": "persons",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "住民基本台帳人口（2024年1月1日現在）。総務省『令和5年度都道府県決算カード』（北海道シート）の値（総務省『令和5年度財政状況資料集』（北海道）総括表でも一致）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2023",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2024-ordinary-revenue",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "普通会計歳入総額",
+    "amount_yen": 2825928611000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "総務省『令和6年度都道府県決算カード』（北海道シート）の千円単位の値を円換算して収録。総務省『令和6年度財政状況資料集』（北海道）総括表でも一致を確認し、北海道公式『普通会計決算の状況』でも同額を確認。普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計の決算額とは一致しない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2024",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2024-ordinary-expenditure",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "普通会計歳出総額",
+    "amount_yen": 2803025736000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "総務省『令和6年度都道府県決算カード』（北海道シート）の千円単位の値を円換算して収録。総務省『令和6年度財政状況資料集』（北海道）総括表でも一致を確認し、北海道公式『普通会計決算の状況』でも同額を確認。目的別・性質別の内訳合計とも一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2024",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2024-ordinary-local-tax",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "local_tax",
+    "metric_label": "普通会計道税収入",
+    "amount_yen": 780186497000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "普通会計の地方税（道税）収入済額。総務省『令和6年度都道府県決算カード』（北海道シート）の千円単位の値を円換算。総務省『令和6年度財政状況資料集』（北海道）「普通会計の状況」でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2024",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2024-formal-balance",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "formal_balance",
+    "metric_label": "普通会計形式収支",
+    "amount_yen": 22902875000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "歳入総額から歳出総額を差し引いた形式収支。総務省決算カードの印字値であり、歳入総額−歳出総額の検算と円単位で一致する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2024",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2024-carryover-resources",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "carryover_resources",
+    "metric_label": "普通会計翌年度に繰り越すべき財源",
+    "amount_yen": 6470238000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "翌年度へ繰り越すべき財源（継続費逓次繰越・繰越明許費・事故繰越しに係る財源）。形式収支から差し引くと実質収支となる。総務省決算カードの印字値。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2024",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2024-real-balance",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance",
+    "metric_label": "普通会計実質収支",
+    "amount_yen": 16432637000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "形式収支から翌年度に繰り越すべき財源を差し引いた実質収支。総務省決算カードの印字値であり、検算と円単位で一致する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2024",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2024-real-balance-ratio",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance_ratio",
+    "metric_label": "実質収支比率",
+    "amount_yen": null,
+    "value": 1.2,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "実質収支の標準財政規模に対する割合。総務省『令和6年度都道府県決算カード』（北海道シート）の印字値。総務省『令和6年度財政状況資料集』（北海道）総括表でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2024",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2024-standard-fiscal-scale",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "standard_fiscal_scale",
+    "metric_label": "標準財政規模",
+    "amount_yen": 1378127405000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "標準財政規模（臨時財政対策債発行可能額を含む）。総務省『令和6年度都道府県決算カード』（北海道シート）の千円単位の値を円換算。総務省『令和6年度財政状況資料集』（北海道）総括表でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2024",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2024-expenditure-by-purpose",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_purpose",
+    "metric_label": "普通会計目的別歳出",
+    "amount_yen": 2803025736000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "総務省『令和6年度都道府県決算カード』（北海道シート）「目的別歳出の状況」の千円単位の値を円換算。各区分の合計は歳出総額と一致する（検算済み）。目的別の「公債費」は性質別の「公債費」と分類が異なる。カード上「－」の区分（消防費・諸支出金・前年度繰上充用金・自動車取得税交付金・特別区財政調整交付金）は該当がないため区分に含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2024",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "breakdown": [
+      {
+        "key": "assembly",
+        "label": "議会費",
+        "amount_yen": 3283834000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "general_affairs",
+        "label": "総務費",
+        "amount_yen": 181225263000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "welfare",
+        "label": "民生費",
+        "amount_yen": 425131656000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "public_health",
+        "label": "衛生費",
+        "amount_yen": 85609836000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "labor",
+        "label": "労働費",
+        "amount_yen": 5455529000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "agriculture_forestry_fisheries",
+        "label": "農林水産業費",
+        "amount_yen": 263782250000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "commerce_industry",
+        "label": "商工費",
+        "amount_yen": 348697142000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "civil_engineering",
+        "label": "土木費",
+        "amount_yen": 344092265000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "police",
+        "label": "警察費",
+        "amount_yen": 139761421000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "education",
+        "label": "教育費",
+        "amount_yen": 439432428000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "disaster_recovery",
+        "label": "災害復旧費",
+        "amount_yen": 5367543000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 387582139000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "interest_allocation_grant",
+        "label": "利子割交付金",
+        "amount_yen": 299823000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "dividend_allocation_grant",
+        "label": "配当割交付金",
+        "amount_yen": 2856897000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "capital_gains_allocation_grant",
+        "label": "株式等譲渡所得割交付金",
+        "amount_yen": 4407358000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "separate_taxation_allocation_grant",
+        "label": "分離課税所得割交付金",
+        "amount_yen": 369199000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "local_consumption_tax_grant",
+        "label": "地方消費税交付金",
+        "amount_yen": 143056732000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "golf_course_tax_grant",
+        "label": "ゴルフ場利用税交付金",
+        "amount_yen": 1068858000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "light_oil_tax_grant",
+        "label": "軽油引取税交付金",
+        "amount_yen": 6554416000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "automobile_environment_tax_grant",
+        "label": "自動車税環境性能割交付金",
+        "amount_yen": 3214324000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "corporate_enterprise_tax_grant",
+        "label": "法人事業税交付金",
+        "amount_yen": 11776823000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2024-expenditure-by-nature",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_nature",
+    "metric_label": "普通会計性質別歳出",
+    "amount_yen": 2803025736000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "総務省『令和6年度都道府県決算カード』（北海道シート）「性質別歳出の状況」の千円単位の値を円換算。義務的経費計・その他の経費・投資的経費計の合計は歳出総額と一致する（検算済み）。性質別の「公債費」は目的別の「公債費」と分類が異なる。前年度繰上充用金・失業対策事業費は該当なし（カード上「－」）のため区分に含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2024",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "breakdown": [
+      {
+        "key": "mandatory_expenses",
+        "label": "義務的経費計",
+        "amount_yen": 1005766657000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "personnel",
+        "label": "人件費",
+        "amount_yen": 559890779000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "staff_salaries",
+        "label": "うち職員給",
+        "amount_yen": 417584757000,
+        "parent_key": "personnel",
+        "note": null
+      },
+      {
+        "key": "assistance",
+        "label": "扶助費",
+        "amount_yen": 59246995000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 386628883000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "other_expenses",
+        "label": "その他の経費",
+        "amount_yen": 1284611018000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "goods_and_services",
+        "label": "物件費",
+        "amount_yen": 65771899000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "maintenance",
+        "label": "維持補修費",
+        "amount_yen": 44085508000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidies",
+        "label": "補助費等",
+        "amount_yen": 710414010000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "transfers_out",
+        "label": "繰出金",
+        "amount_yen": 31033308000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "fund_contributions",
+        "label": "積立金",
+        "amount_yen": 86937861000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "equity_investments",
+        "label": "投資及び出資金",
+        "amount_yen": 683727000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "loans",
+        "label": "貸付金",
+        "amount_yen": 345684705000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "capital_expenses",
+        "label": "投資的経費計",
+        "amount_yen": 512648061000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "construction",
+        "label": "普通建設事業費",
+        "amount_yen": 507297960000,
+        "parent_key": "capital_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidized_construction",
+        "label": "うち補助",
+        "amount_yen": 335729928000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "independent_construction",
+        "label": "うち単独",
+        "amount_yen": 67464799000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "disaster_recovery_works",
+        "label": "災害復旧事業費",
+        "amount_yen": 5350101000,
+        "parent_key": "capital_expenses",
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2024-fund-balance",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fund_balance",
+    "metric_label": "普通会計基金残高",
+    "amount_yen": 154493159000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "年度末の積立金現在高（財政調整基金・減債基金・その他特定目的基金の3区分）。総務省『令和6年度都道府県決算カード』（北海道シート）の千円単位の値を円換算し、総務省『令和6年度財政状況資料集』（北海道）総括表でも一致を確認。内訳の合計は基金残高と一致する（検算済み）。定額運用基金は積立金現在高の3区分に含まれないため含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2024",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "breakdown": [
+      {
+        "key": "fiscal_adjustment_fund",
+        "label": "財政調整基金",
+        "amount_yen": 35321948000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_reduction_fund",
+        "label": "減債基金",
+        "amount_yen": 67636688000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "other_specific_purpose_funds",
+        "label": "その他特定目的基金",
+        "amount_yen": 51534523000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2024-debt-balance",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "debt_balance",
+    "metric_label": "普通会計地方債残高",
+    "amount_yen": 5650821719000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "年度末の地方債現在高（臨時財政対策債を含む）。総務省『令和6年度都道府県決算カード』（北海道シート）の千円単位の値を円換算。内訳の「地方債現在高（臨時財政対策債を除く）」は総務省『令和6年度財政状況資料集』（北海道）総括表の印字値であり、「臨時財政対策債」は現在高からこれを差し引いた算出値。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2024",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "breakdown": [
+      {
+        "key": "bonds_excluding_temporary_fiscal",
+        "label": "地方債現在高（臨時財政対策債を除く）",
+        "amount_yen": 4110644940000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "temporary_fiscal_measures_bonds",
+        "label": "臨時財政対策債",
+        "amount_yen": 1540176779000,
+        "parent_key": null,
+        "note": "総務省資料集に直接の印字がなく、地方債現在高から臨時財政対策債を除く残高を差し引いた算出値。"
+      }
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2024-current-balance-ratio",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "current_balance_ratio",
+    "metric_label": "経常収支比率",
+    "amount_yen": null,
+    "value": 99.8,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "経常収支比率。総務省『令和6年度都道府県決算カード』（北海道シート）の印字値（括弧内の「減収補塡債（特例分）及び臨時財政対策債を除く」値は収録していない）。総務省『令和6年度財政状況資料集』（北海道）総括表でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2024",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2024-real-debt-service-ratio",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_debt_service_ratio",
+    "metric_label": "実質公債費比率",
+    "amount_yen": null,
+    "value": 20,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "実質公債費比率（健全化判断比率）。総務省『令和6年度都道府県決算カード』（北海道シート）の印字値をそのまま収録し、再計算による置き換えはしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2024",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2024-future-burden-ratio",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "future_burden_ratio",
+    "metric_label": "将来負担比率",
+    "amount_yen": null,
+    "value": 307,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "将来負担比率（健全化判断比率）。総務省『令和6年度都道府県決算カード』（北海道シート）の印字値をそのまま収録し、再計算による置き換えはしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2024",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2024-fiscal-strength-index",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fiscal_strength_index",
+    "metric_label": "財政力指数",
+    "amount_yen": null,
+    "value": 0.46275,
+    "unit": "index",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "財政力指数（過去3年平均）。総務省『令和6年度都道府県決算カード』（北海道シート）の印字値をそのまま収録する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2024",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2024-population",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "population",
+    "metric_label": "住民基本台帳人口",
+    "amount_yen": null,
+    "value": 5044825,
+    "unit": "persons",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "住民基本台帳人口（2025年1月1日現在）。総務省『令和6年度都道府県決算カード』（北海道シート）の値（総務省『令和6年度財政状況資料集』（北海道）総括表でも一致）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-prefecture-mic-settlement-card-fy2024",
+      "hokkaido-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  }
+]

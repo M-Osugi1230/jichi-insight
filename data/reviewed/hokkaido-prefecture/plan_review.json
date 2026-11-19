@@ -1,0 +1,55 @@
+{
+  "id": "phase15-hokkaido-plan-review",
+  "name_ja": "北海道",
+  "next_action": "Enumerate the 18 policy pillars and the 108 plan indicators only when official sources with stable record-level locators confirm them; register the governor's promises from the official 2023 election bulletin in the cluster's promise stage; add project and assembly layers in the later stages of the Hokkaido cluster programme; and keep supplementary budgets, execution and settlement as separate states.",
+  "official_code": "010006",
+  "quality_boundary": "This package reviews the current plan identity and period (the Hokkaido Comprehensive Plan, the prefecture's most basic plan under the Hokkaido Administrative Basic Ordinance, adopted in July 2024 for roughly ten years from FY2024), the policy structure (two visions, three basic directions for policy development and 18 policy pillars, as printed in the plan's official summary and on the plan page), the implementation layer (measures organised along the plan's policy structure in the policy-evaluation basic evaluation sheets; no standalone implementation-plan document was confirmed) and the progress-governance layer (annual policy evaluation under the Hokkaido Policy Evaluation Ordinance with four-stage overall judgements, and 108 plan indicators). The 18 pillars and the 108 indicators are not enumerated at record level and stay deferred depth. The enacted FY2026 general-account initial budget is registered separately in fiscal_records.json at the published thousand-yen precision, and the FY2022-FY2024 ordinary-account settlements are registered separately in settlement_records.json; general-account settlement figures are not mixed into the ordinary-account series.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "計画の位置付けは本編（1・2章）第1章「計画の位置付け」で、策定時期は本編の知事挨拶の日付（令和6（2024）年7月）と概要版の表紙で、計画期間は概要版で直接確認した。",
+      "evidence_role": "current_plan_identity",
+      "id": "hokkaido-current-plan-identity",
+      "review_note": "計画の同一性と期間を、政策評価の調書や年度予算と分離して保持する。レビュー済みレコード。",
+      "source_url": "https://www.pref.hokkaido.lg.jp/ss/sks/hokkaido_sogokeikaku.html",
+      "statement": "北海道の現行の最上位計画は「北海道総合計画」である。総合計画は、道が策定する計画のうち最も基本となる計画であって、北海道行政基本条例に基づき、長期的な展望に立って道の政策の基本的な方向を総合的に示すものとして、2024年7月に策定された。計画の期間は2024（令和6）年度から概ね10年間である。",
+      "title": "北海道総合計画の策定と計画期間（2024年7月策定、2024年度から概ね10年間）",
+      "value": "北海道総合計画（2024年7月策定、計画期間2024年度から概ね10年間）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "枠組みは計画の公式ページに掲載された指標個票の一覧（3つの基本方向と18の政策の柱）と概要版で直接確認した。",
+      "evidence_role": "policy_structure",
+      "id": "hokkaido-plan-policy-structure",
+      "review_note": "政策の柱の文言は公式ページの個票見出しの表記を採用した。レビュー済みレコード。",
+      "source_url": "https://www.pref.hokkaido.lg.jp/ss/sks/hokkaido_sogokeikaku.html",
+      "statement": "めざす姿は「北海道の力が日本そして世界を変えていく」「一人ひとりが豊かで安心して住み続けられる地域を創る」の2つである。政策展開の基本方向は3つで、それぞれに対応する18の政策の柱が設定されている。基本方向1「潜在力発揮による成長」の柱は、食、観光、ゼロカーボン、デジタル、ものづくり・成長分野、産業活性化・業種横断分野。基本方向2「誰もが可能性を発揮できる社会と安全・安心なくらし」の柱は、子ども・子育て、教育・学び、医療・福祉、就業・就労環境、中小企業・商業、安全・安心。基本方向3「各地域の持続的な発展」の柱は、地域づくり、グローバル、北海道の強靱化、社会経済の基盤整備、自然・環境、歴史・文化・スポーツである。",
+      "title": "2つのめざす姿・3つの政策展開の基本方向・18の政策の柱",
+      "value": "2つのめざす姿／3つの政策展開の基本方向／18の政策の柱"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "実施の仕組みは、令和7年度基本評価調書の公式ページの「基本評価調書について」の説明で直接確認した。",
+      "evidence_role": "implementation_layer",
+      "id": "hokkaido-plan-implementation-layer",
+      "review_note": "独立した実施計画文書は公式サイト上で確認できなかったため、実施層は政策評価の施策体系として記録し、実施計画の不存在を推測で補わない。レビュー済みレコード。",
+      "source_url": "https://www.pref.hokkaido.lg.jp/ss/sks/ksk/sesakuhyoka/228449.html",
+      "statement": "総合計画に対応する独立した実施計画文書は確認できず、実施は政策評価を通じて行われる。道は、令和6年7月に策定した北海道総合計画における政策体系に沿って整理した施策ごとに「基本評価調書」を作成し、施策・事務事業の進行を管理する。各年度の予算はこの施策体系と総合計画の方向に沿って編成される。",
+      "title": "政策体系に沿った基本評価調書による実施管理（独立した実施計画文書はなし）",
+      "value": "基本評価調書（総合計画の政策体系に沿った施策単位）による実施管理"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "進行管理の方法と総合判定の段階は令和7年度基本評価調書の公式ページで、指標数は計画の公式ページ（指標個票の案内）で直接確認した。",
+      "evidence_role": "progress_governance",
+      "id": "hokkaido-plan-progress-governance",
+      "review_note": "指標の実績値そのものの登録は本レビューの対象外とする。レビュー済みレコード。",
+      "source_url": "https://www.pref.hokkaido.lg.jp/ss/sks/ksk/sesakuhyoka/228449.html",
+      "statement": "進行管理は、北海道政策評価条例に基づく政策評価（基本評価）により毎年度実施される。基本評価調書は、Plan（施策目標や現状と課題）、Do&Check（取組実績やそれに対する評価）、Action（評価を踏まえた対応）を順次公表する形式であり、施策の進捗の総合判定は「順調」「概ね順調」「やや遅れている」「遅れている」の4段階で示される。総合計画には108の指標（重複を含めると113）が設定され、指標ごとの個票が公式ページで公表されている。",
+      "title": "政策評価（基本評価）による毎年度の進行管理と4段階の総合判定・108の指標",
+      "value": "基本評価による毎年度の進行管理／4段階の総合判定／計画指標108（重複含め113）"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-20"
+}

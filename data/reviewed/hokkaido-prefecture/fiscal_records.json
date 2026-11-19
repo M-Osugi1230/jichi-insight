@@ -1,0 +1,65 @@
+[
+  {
+    "id": "jp-local-010006-fiscal-2026-total-revenue",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入歳出規模",
+    "amount_yen": 3168109306000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "令和8年度当初予算（成立後）。議案第1号は令和8年第1回定例会（会期2026年2月20日〜3月19日）で2026年3月19日に原案可決され、提案額のまま成立した（予算の組み替えを求める動議は同日に否決）。補正予算とは区別して管理する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-pref-budget-2026-bill-pdf"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2026-local-tax",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "local_tax",
+    "metric_label": "道税収入",
+    "amount_yen": 714862942000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "令和8年度当初予算（成立後）の道税収入。議案第1号「第1表 歳入歳出予算」の款「道税」の印字値。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-pref-budget-2026-bill-pdf"
+    ]
+  },
+  {
+    "id": "jp-local-010006-fiscal-2026-total-expenditure",
+    "municipality_id": "jp-local-010006",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算・歳出総額",
+    "amount_yen": 3168109306000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "令和8年度一般会計当初予算（成立後）の歳出総額。議案第1号第1条および第1表の歳出合計3,168,109,306千円による。議案第1号は令和8年第1回定例会（会期2026年2月20日〜3月19日）で2026年3月19日に原案可決され、提案額のまま成立した（予算の組み替えを求める動議は同日に否決）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hokkaido-pref-budget-2026-bill-pdf"
+    ]
+  }
+]
