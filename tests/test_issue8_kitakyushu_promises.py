@@ -138,8 +138,9 @@ def test_promise_registry_holds_the_verified_manifesto_items() -> None:
     packets = load_json("data/entities/executives/promise_evidence_packets.json")
     assert len(promises) == 34
     # One packet per registered promise across all terms:
-    # 34 Kitakyushu + 6 Fukuoka City + 9 Fukuoka Prefecture.
-    assert len(packets) == 49
+    # 34 Kitakyushu + 6 Fukuoka City + 9 Fukuoka Prefecture
+    # + 10 Aichi Prefecture (Issue #722).
+    assert len(packets) == 59
     for promise in promises:
         assert promise["sources"] == [MANIFESTO_ID]
 

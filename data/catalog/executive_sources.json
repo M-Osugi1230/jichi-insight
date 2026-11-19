@@ -1,5 +1,5 @@
 {
-  "version": "0.9.0",
+  "version": "0.10.0",
   "updated_at": "2026-11-19",
   "scope": "pilot",
   "records": [
@@ -296,6 +296,20 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "「2027年2月14日任期満了による愛知県知事選挙」の執行決定（2027年1月21日告示・2月7日選挙期日）を公表する。前回選挙の告示日（2023年1月19日）と選挙期日（2023年2月5日）も参考として掲載する。"
+    },
+    {
+      "id": "aichi-pref-governor-election-2023-bulletin",
+      "municipality_key": "aichi-prefecture",
+      "organization": "愛知県選挙管理委員会",
+      "category": "election",
+      "title": "令和5年2月5日執行 愛知県知事選挙 選挙公報（大村秀章候補欄）",
+      "url": "https://www.pref.aichi.jp/uploaded/attachment/449838.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "愛知県知事選挙の公式選挙公報（候補者から提出された原稿をそのまま印刷したもの。全4ページ）。選挙管理委員会の公式ページ「投開票の状況・選挙公報」から直接リンクされ、県公式サイト上で公開されている。大村秀章候補欄は1ページ目上段にあり、キャッチコピー「日本一元気な愛知をつくり 日本の未来をつくる！」とスローガン「人が輝くあいち」の下に、★印の政策項目（冒頭行の囲み2件、詳細文を伴う3件、右カラムの5件、計10件）とプロフィール（経歴）を掲載する。公約レコードは★印の項目から作成した。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度で照合した。"
     }
   ]
 }
