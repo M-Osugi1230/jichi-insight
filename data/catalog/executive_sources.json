@@ -1,5 +1,5 @@
 {
-  "version": "0.13.0",
+  "version": "0.14.0",
   "updated_at": "2026-11-20",
   "scope": "pilot",
   "records": [
@@ -478,6 +478,62 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "2023年北海道知事選挙の選挙公報を掲載する選挙管理委員会の公式ページ。公式公表があり到達可能であることを確認した。公約レコードの登録は北海道クラスターの公約段階で行う。"
+    },
+    {
+      "id": "sapporo-city-mayor",
+      "municipality_key": "sapporo-city",
+      "organization": "札幌市",
+      "category": "executive",
+      "title": "市長のプロフィール（秋元克広）",
+      "url": "https://www.city.sapporo.jp/city/mayor/profile/akimoto_profile.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-20",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "札幌市公式の市長プロフィール（2023年5月2日更新）。経歴に「平成27年 札幌市長選挙で当選（任期5月2日から）」「平成31年（令和元年）再選」「令和5年 三選（現在3期目）」と明記する。"
+    },
+    {
+      "id": "sapporo-city-mayor-election-2023-results",
+      "municipality_key": "sapporo-city",
+      "organization": "札幌市選挙管理委員会",
+      "category": "election",
+      "title": "第20回統一地方選挙結果（令和5年4月9日執行）",
+      "url": "https://www.city.sapporo.jp/senkan/kekka20230409/sokuhou20230409.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-20",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "2023年札幌市長選挙の投票・開票結果を掲載する公式ページ。開票結果集計表（確定）によれば、秋元克広は458,221票を得て最多得票となった（候補者3人、得票総数817,747票）。"
+    },
+    {
+      "id": "sapporo-city-mayor-election-2023-bulletin",
+      "municipality_key": "sapporo-city",
+      "organization": "札幌市選挙管理委員会",
+      "category": "election",
+      "title": "令和5年4月9日執行 札幌市長選挙 選挙公報（秋元克広候補欄）",
+      "url": "https://www.city.sapporo.jp/senkan/documents/webshicho.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-20",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "札幌市長選挙の公式選挙公報（候補者から提出された原稿をそのまま印刷したもの。全1ページ、候補者3人）。秋元克広候補欄は右上にあり、見出し「安心と、希望。」、政策枠「秋元克広の政策 6つの道標 2023-2026」（6つの柱と◆箇条書き13項目）、プロフィールを掲載する。公約レコードはこの候補欄から作成した。掲載ページは札幌市選挙管理委員会「令和5年4月9日執行 第20回統一地方選挙の選挙公報」（https://www.city.sapporo.jp/senkan/20touitsu_senkyokouhou.html）。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度で照合した。"
+    },
+    {
+      "id": "hokkaido-mayors-term-expiry-list-2026",
+      "municipality_key": "sapporo-city",
+      "organization": "北海道選挙管理委員会",
+      "category": "election",
+      "title": "市町村の長及び議会議員の任期満了一覧（令和8年10月26日現在）",
+      "url": "https://www.pref.hokkaido.lg.jp/fs/1/3/2/3/7/4/4/4/_/06_ninmanR81026%E7%8F%BE%E5%9C%A8.xlsx",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-20",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "北海道選挙管理委員会が「市町村選挙関係資料」ページ（https://www.pref.hokkaido.lg.jp/hs/68024.html）で公表する道内市町村の長及び議会議員の任期満了年月日一覧。札幌市の行に、市町村長の任期満了日として令和9年5月1日の明記がある。"
     }
   ]
 }

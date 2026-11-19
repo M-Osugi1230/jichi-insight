@@ -242,5 +242,46 @@
       "事業との接続は文言・内容に基づく推定であり、県が公約と事業の公式な対応付けを公表した場合は接続を見直す。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sapporo-city-2023-manifesto-review",
+    "subject_type": "manifesto_review",
+    "subject_id": "manifesto-review-jp-local-011002-2023",
+    "claims": [
+      {
+        "field": "source_location",
+        "statement": "秋元克広候補欄は札幌市長選挙の選挙公報1ページ目右上に掲載され、見出し、政策枠「6つの道標」（6つの柱と箇条書き13項目）、プロフィールで構成される。",
+        "source_ids": [
+          "sapporo-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全1ページ）の右上。",
+        "decision": "accepted",
+        "review_note": "2026-11-20に公式PDFを取得し、候補者欄全体を描画画像で確認した。"
+      },
+      {
+        "field": "segmentation_status",
+        "statement": "資料上の境界（柱・箇条書き）に従い13件へ分割した。見出し文（政治姿勢の表明）、柱の表題（政策の枠組み）とプロフィール（経歴）は公約ではないためレコード化していない。",
+        "source_ids": [
+          "sapporo-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "候補者欄全体。",
+        "decision": "accepted",
+        "review_note": "句読点による推測分割は行っていない（docs/PROMISE_EXTRACTION.md の分割ルール）。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、札幌市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "sapporo-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "札幌市選挙管理委員会の選挙公報ページとPDFに基づく。",
+        "decision": "accepted",
+        "review_note": "公報は出典優先順位の最上位であり、第三者経由の引用ではない。"
+      }
+    ],
+    "open_questions": [
+      "公報より詳細な候補者資料（政策パンフレット等）の安定した所在が特定できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
   }
 ]

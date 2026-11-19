@@ -108,5 +108,23 @@
     "last_reviewed_at": "2026-11-19",
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-review-jp-local-011002-2023",
+    "executive_term_id": "jp-local-011002-executive-2023-05-02",
+    "source_id": "sapporo-city-mayor-election-2023-bulletin",
+    "candidate_name": "秋元 克広",
+    "source_location": "1ページPDF・右上の候補者欄",
+    "review_scope": "candidate_panel",
+    "statement_boundary": "clear",
+    "segmentation_status": "segmented",
+    "promise_records_created": 13,
+    "reason_codes": [
+      "other"
+    ],
+    "review_note": "候補者欄は、見出し「安心と、希望。」、政策枠「秋元克広の政策 6つの道標 2023-2026」、プロフィールで構成される。政策枠は6つの柱（道標1 医療・福祉・介護、道標2 暮らし、防災・防犯、道標3 子ども・教育、道標4 共生、環境、道標5 経済・観光・雇用・人材育成、道標6 まちづくり、スポーツ、文化）からなり、各柱に◆印の箇条書きが2〜3項目、計13項目ある。見出し文は候補者の政治姿勢の表明であり個別の約束ではないためレコード化せず、柱の表題（「〜な街」）は政策の枠組みの表示として箇条書きの所在情報に含めるに留め、プロフィールも経歴であるためレコード化しなかった。箇条書き13項目は資料上の境界が明確なためそれぞれ1レコードとした（計13件）。項目5（子ども医療費や保育料の無料化）は2つの制度を1項目に併記するが、箇条書きの境界をそのまま単位とし分割していない。数値目標・期限・財源の明示はいずれの項目にもなく、政策枠の表題に付された「2023-2026」は政策の期間表示として扱い、個別公約の期限には記録していない。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi〜600dpi）で照合した。",
+    "last_reviewed_at": "2026-11-20",
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]
