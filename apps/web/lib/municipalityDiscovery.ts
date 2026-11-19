@@ -41,13 +41,21 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
       record.account_type === "ordinary" &&
       [2022, 2023, 2024].includes(record.fiscal_year),
     );
-    // Stage 2 projects are enabled only for Reviewed records belonging to this prefecture.
-    // Promises and assembly remain closed until separately reviewed.
+    // Independent Reviewed data gates: assembly stays closed until stage four.
     const hasProjects = projectRegistry["hokkaido-prefecture"].projects.some((project) =>
       project.review_status === "reviewed" &&
       project.municipality_id === hokkaidoFinance.municipality.id,
     );
-    return { key: "hokkaido-prefecture", finance: hasReviewedSettlement, promises: false, assembly: false, projects: hasProjects };
+    const hasPromises = currentExecutiveTerms.some((term) =>
+      term.municipality_id === hokkaidoFinance.municipality.id &&
+      (term.review_status === "reviewed" || term.review_status === "verified") &&
+      promiseRecords.some((promise) =>
+        promise.executive_term_id === term.id &&
+        promise.municipality_id === term.municipality_id &&
+        (promise.review_status === "reviewed" || promise.review_status === "verified"),
+      ),
+    );
+    return { key: "hokkaido-prefecture", finance: hasReviewedSettlement, promises: hasPromises, assembly: false, projects: hasProjects };
   }
 
   if (!matched && officialCode === aichiFinance.municipality.official_code &&
