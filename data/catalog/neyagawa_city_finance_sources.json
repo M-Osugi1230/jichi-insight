@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updated_at": "2026-11-16",
+  "updated_at": "2026-11-19",
   "scope": "phase15-core-capital-review",
   "records": [
     {
@@ -44,6 +44,90 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "一般会計歳入106,597,604千円・歳出105,333,971千円を含む公式決算資料（別冊『令和6年度歳入歳出決算書』の実質収支に関する調書と令和7年9月参考資料『令和6年度 寝屋川市会計別決算状況』で一致を確認）。実質収支額は同調書により1,248,678千円（千円精度のまま記録し、円単位を合成しない）。決算の認定議案である認定第1号は令和7年12月定例会で2025年12月3日に認定された。決算書（歳入歳出決算事項別明細書）の款別合計との突合と監査委員の決算審査意見書の内容確認は未実施。"
+    },
+    {
+      "id": "neyagawa-city-mic-settlement-card-fy2022",
+      "municipality_key": "neyagawa-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和4年度 市町村決算カード（大阪府）",
+      "url": "https://www.soumu.go.jp/main_content/000937106.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和4年度市町村決算カード（大阪府）のうち寝屋川市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、寝屋川市『令和4年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "neyagawa-city-fiscal-situation-collection-fy2022",
+      "municipality_key": "neyagawa-city",
+      "organization": "寝屋川市",
+      "category": "settlement",
+      "title": "令和4年度 財政状況資料集",
+      "url": "https://www.pref.osaka.lg.jp/documents/62628/16neyagawa_2022_2.xlsx",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する資料集。大阪府が府内市町村分を一括公表するExcel版（府公式サイト『市町村別財政状況資料集』）を一次資料とした。総務省決算カードの照合先として使用した。"
+    },
+    {
+      "id": "neyagawa-city-mic-settlement-card-fy2023",
+      "municipality_key": "neyagawa-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和5年度 市町村決算カード（大阪府）",
+      "url": "https://www.soumu.go.jp/main_content/000998973.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和5年度市町村決算カード（大阪府）のうち寝屋川市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、寝屋川市『令和5年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "neyagawa-city-fiscal-situation-collection-fy2023",
+      "municipality_key": "neyagawa-city",
+      "organization": "寝屋川市",
+      "category": "settlement",
+      "title": "令和5年度 財政状況資料集",
+      "url": "https://www.pref.osaka.lg.jp/documents/105232/16neyagawa_2023_2.xlsx",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する資料集。大阪府が府内市町村分を一括公表するExcel版（府公式サイト『市町村別財政状況資料集』）を一次資料とした。総務省決算カードの照合先として使用した。"
+    },
+    {
+      "id": "neyagawa-city-mic-settlement-card-fy2024",
+      "municipality_key": "neyagawa-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和6年度 市町村決算カード（大阪府）",
+      "url": "https://www.soumu.go.jp/main_content/001063998.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和6年度市町村決算カード（大阪府）のうち寝屋川市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、寝屋川市『令和6年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "neyagawa-city-fiscal-situation-collection-fy2024",
+      "municipality_key": "neyagawa-city",
+      "organization": "寝屋川市",
+      "category": "settlement",
+      "title": "令和6年度 財政状況資料集",
+      "url": "https://www.pref.osaka.lg.jp/documents/127944/16neyagawa_2024_2.xlsx",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する資料集。大阪府が府内市町村分を一括公表するExcel版（府公式サイト『市町村別財政状況資料集』）を一次資料とした。総務省決算カードの照合先として使用した。"
     }
   ]
 }
