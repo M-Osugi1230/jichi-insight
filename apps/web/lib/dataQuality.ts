@@ -4,6 +4,7 @@ import hokkaidoIndicatorSourceIndex from "../../../data/catalog/hokkaido_indicat
 import policySourceCatalog from "../../../data/catalog/policy_sources.json";
 
 import { sourceCatalog, type MunicipalityKey } from "./catalog";
+import { aichiFinance } from "./aichiFinance";
 import {
   currentExecutiveTerms,
   executiveEvidencePackets,
@@ -32,18 +33,14 @@ export type MunicipalityQuality = {
   status: "reviewed-data" | "indexed-only";
 };
 
-// Financial quality statistics cover only the three municipalities with
-// dedicated Reviewed fiscal registries. Other catalog keys must not imply
-// fiscal records or evidence that do not exist.
-type FiscalMunicipalityKey = Exclude<MunicipalityKey, "aichi-prefecture">;
-
-const municipalityNames: Record<FiscalMunicipalityKey, string> = {
+const municipalityNames: Record<MunicipalityKey, string> = {
+  "aichi-prefecture": "愛知県",
   "fukuoka-prefecture": "福岡県",
   "fukuoka-city": "福岡市",
   "kitakyushu-city": "北九州市",
 };
 
-const municipalityKeys = Object.keys(municipalityNames) as FiscalMunicipalityKey[];
+const municipalityKeys = Object.keys(municipalityNames) as MunicipalityKey[];
 const recordsByMunicipality: Record<FiscalMunicipalityKey, typeof fukuokaPrefectureFinance.records> = {
   "fukuoka-prefecture": fukuokaPrefectureFinance.records,
   "fukuoka-city": fukuokaCityFinance.records,
