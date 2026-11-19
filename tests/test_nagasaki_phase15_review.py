@@ -310,7 +310,7 @@ def test_nagasaki_progress_review_keeps_implementation_plan_framework():
 def test_nagasaki_finance_sources_are_reviewed():
     finance = load(ROOT / "data/catalog/nagasaki_city_finance_sources.json")
     assert finance["version"] == "0.1.0"
-    assert finance["updated_at"] == "2026-11-17"
+    assert finance["updated_at"] == "2026-11-19"
     assert finance["scope"] == "phase15-core-capital-review"
 
     by_id = {record["id"]: record for record in finance["records"]}
@@ -318,6 +318,13 @@ def test_nagasaki_finance_sources_are_reviewed():
         "nagasaki-city-home",
         "nagasaki-budget-2026",
         "nagasaki-settlement-2024",
+        # Issue #691 fiscal-settlement expansion sources.
+        "nagasaki-city-mic-settlement-card-fy2022",
+        "nagasaki-city-mic-settlement-card-fy2023",
+        "nagasaki-city-mic-settlement-card-fy2024",
+        "nagasaki-city-fiscal-situation-collection-fy2022",
+        "nagasaki-city-fiscal-situation-collection-fy2023",
+        "nagasaki-city-fiscal-situation-collection-fy2024",
     }
     for record in finance["records"]:
         assert record["municipality_key"] == "nagasaki-city"
@@ -325,7 +332,9 @@ def test_nagasaki_finance_sources_are_reviewed():
         assert record["availability"] == "published"
         assert record["review_status"] == "reviewed"
         assert record["confidence"] == "high"
-        assert record["url"].startswith("https://www.city.nagasaki.lg.jp/")
+        assert record["url"].startswith(
+            ("https://www.city.nagasaki.lg.jp/", "https://www.soumu.go.jp/", "https://www.pref.nagasaki.jp/")
+        )
 
 
 def test_nagasaki_completion_marks_every_gate_and_defers_depth():

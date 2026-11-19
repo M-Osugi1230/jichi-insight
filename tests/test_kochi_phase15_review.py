@@ -315,7 +315,7 @@ def test_kochi_progress_review_keeps_implementation_plan_framework():
 def test_kochi_finance_sources_are_reviewed():
     finance = load(ROOT / "data/catalog/kochi_city_finance_sources.json")
     assert finance["version"] == "0.1.0"
-    assert finance["updated_at"] == "2026-11-17"
+    assert finance["updated_at"] == "2026-11-19"
     assert finance["scope"] == "phase15-core-capital-review"
 
     by_id = {record["id"]: record for record in finance["records"]}
@@ -323,6 +323,13 @@ def test_kochi_finance_sources_are_reviewed():
         "kochi-city-home",
         "kochi-budget-2026",
         "kochi-settlement-2024",
+        # Issue #691 fiscal-settlement expansion sources.
+        "kochi-city-mic-settlement-card-fy2022",
+        "kochi-city-mic-settlement-card-fy2023",
+        "kochi-city-mic-settlement-card-fy2024",
+        "kochi-city-fiscal-situation-collection-fy2022",
+        "kochi-city-fiscal-situation-collection-fy2023",
+        "kochi-city-fiscal-situation-collection-fy2024",
     }
     for record in finance["records"]:
         assert record["municipality_key"] == "kochi-city"
@@ -330,7 +337,9 @@ def test_kochi_finance_sources_are_reviewed():
         assert record["availability"] == "published"
         assert record["review_status"] == "reviewed"
         assert record["confidence"] == "high"
-        assert record["url"].startswith("https://www.city.kochi.kochi.jp/")
+        assert record["url"].startswith(
+            ("https://www.city.kochi.kochi.jp/", "https://www.soumu.go.jp/", "https://www.pref.kochi.lg.jp/")
+        )
 
 
 def test_kochi_completion_marks_every_gate_and_defers_depth():

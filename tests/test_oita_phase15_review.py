@@ -299,7 +299,7 @@ def test_oita_progress_review_keeps_implementation_plan_framework():
 def test_oita_finance_sources_are_reviewed():
     finance = load(ROOT / "data/catalog/oita_city_finance_sources.json")
     assert finance["version"] == "0.1.0"
-    assert finance["updated_at"] == "2026-11-17"
+    assert finance["updated_at"] == "2026-11-19"
     assert finance["scope"] == "phase15-core-capital-review"
 
     by_id = {record["id"]: record for record in finance["records"]}
@@ -307,6 +307,13 @@ def test_oita_finance_sources_are_reviewed():
         "oita-city-home",
         "oita-budget-2026",
         "oita-settlement-2024",
+        # Issue #691 fiscal-settlement expansion sources.
+        "oita-city-mic-settlement-card-fy2022",
+        "oita-city-mic-settlement-card-fy2023",
+        "oita-city-mic-settlement-card-fy2024",
+        "oita-city-fiscal-situation-collection-fy2022",
+        "oita-city-fiscal-situation-collection-fy2023",
+        "oita-city-fiscal-situation-collection-fy2024",
     }
     for record in finance["records"]:
         assert record["municipality_key"] == "oita-city"
@@ -314,7 +321,9 @@ def test_oita_finance_sources_are_reviewed():
         assert record["availability"] == "published"
         assert record["review_status"] == "reviewed"
         assert record["confidence"] == "high"
-        assert record["url"].startswith("https://www.city.oita.oita.jp/")
+        assert record["url"].startswith(
+            ("https://www.city.oita.oita.jp/", "https://www.soumu.go.jp/", "https://www.pref.oita.jp/")
+        )
 
 
 def test_oita_completion_marks_every_gate_and_defers_depth():

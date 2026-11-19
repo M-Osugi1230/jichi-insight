@@ -314,7 +314,7 @@ def test_takamatsu_progress_review_keeps_machizukuri_plan_framework():
 def test_takamatsu_finance_sources_are_reviewed():
     finance = load(ROOT / "data/catalog/takamatsu_city_finance_sources.json")
     assert finance["version"] == "0.1.0"
-    assert finance["updated_at"] == "2026-11-17"
+    assert finance["updated_at"] == "2026-11-19"
     assert finance["scope"] == "phase15-core-capital-review"
 
     by_id = {record["id"]: record for record in finance["records"]}
@@ -322,6 +322,13 @@ def test_takamatsu_finance_sources_are_reviewed():
         "takamatsu-city-home",
         "takamatsu-budget-2026",
         "takamatsu-settlement-2024",
+        # Issue #691 fiscal-settlement expansion sources.
+        "takamatsu-city-mic-settlement-card-fy2022",
+        "takamatsu-city-mic-settlement-card-fy2023",
+        "takamatsu-city-mic-settlement-card-fy2024",
+        "takamatsu-city-fiscal-situation-collection-fy2022",
+        "takamatsu-city-fiscal-situation-collection-fy2023",
+        "takamatsu-city-fiscal-situation-collection-fy2024",
     }
     for record in finance["records"]:
         assert record["municipality_key"] == "takamatsu-city"
@@ -330,7 +337,7 @@ def test_takamatsu_finance_sources_are_reviewed():
         assert record["review_status"] == "reviewed"
         assert record["confidence"] == "high"
         assert record["url"].startswith(
-            "https://www.city.takamatsu.kagawa.jp/"
+            ("https://www.city.takamatsu.kagawa.jp/", "https://www.soumu.go.jp/", "https://www.pref.kagawa.lg.jp/")
         )
 
 
