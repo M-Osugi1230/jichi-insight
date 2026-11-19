@@ -60,23 +60,23 @@ def test_executive_registry_maps_all_six_existing_and_hokkaido():
     ).read_text(encoding="utf-8")
 
 
-def test_catalog_uses_existing_hokkaido_policy_page_not_fake_fiscal_page():
+def test_catalog_links_published_hokkaido_detail_and_keeps_policy_page():
     catalog = (LIB / "catalog.ts").read_text(encoding="utf-8")
     assert '| "hokkaido-prefecture"' in catalog
     assert '"hokkaido-prefecture": {' in catalog
     assert 'name: "北海道"' in catalog
-    assert 'href: "/municipalities/hokkaido"' in catalog
-    assert 'status: "資料索引中"' in catalog
-    assert "財政詳細ページは未公開" in catalog
+    assert 'href: "/municipalities/hokkaido-prefecture"' in catalog
+    assert 'status: "財政データ公開"' in catalog
+    assert "Reviewed 54項目（当初予算3件・決算51件）" in catalog
     assert (APP / "municipalities/hokkaido/page.tsx").is_file()
-    assert not (APP / "municipalities/hokkaido-prefecture/page.tsx").exists()
+    assert (APP / "municipalities/hokkaido-prefecture/page.tsx").is_file()
 
 
-def test_legacy_financial_quality_does_not_impute_hokkaido_web_data():
+def test_hokkaido_financial_quality_counts_real_reviewed_web_data():
     quality = (LIB / "dataQuality.ts").read_text(encoding="utf-8")
-    assert 'type FiscalMunicipalityKey = Exclude<MunicipalityKey, "hokkaido-prefecture">' in quality
-    assert "Record<FiscalMunicipalityKey," in quality
-    assert '"hokkaido-prefecture": aichiFinance.records' not in quality
+    assert 'type FiscalMunicipalityKey = Exclude<MunicipalityKey, "hokkaido-prefecture">' not in quality
+    assert '"hokkaido-prefecture": hokkaidoFinance.records' in quality
+    assert '"hokkaido-prefecture": hokkaidoFinance.evidencePackets' in quality
     assert '"aichi-prefecture": aichiFinance.records' in quality
     assert '"toyota-city": toyotaCityFinance.records' in quality
 
