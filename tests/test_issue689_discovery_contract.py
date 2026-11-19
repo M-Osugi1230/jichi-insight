@@ -57,10 +57,11 @@ def test_assembly_search_does_not_change_vote_disclosure_logic():
 def test_filter_works_without_hiding_initial_server_rendered_records():
     widget = FILTER.read_text(encoding="utf-8")
     assert '"use client"' in widget
-    assert "useEffect" in widget
+    assert "onChange" in widget
     assert 'entry.hidden = !match' in widget
-    assert 'item.hidden = false' in widget
-    assert 'setQuery(""); setSelected("");' in widget
+    assert 'apply("", "")' in widget
+    assert 'setQuery("");' in widget
+    assert 'setSelected("");' in widget
     assert "該当する収録事業がありません" in widget
     assert "該当する収録議案がありません" in widget
     assert "role=\"status\"" in widget
