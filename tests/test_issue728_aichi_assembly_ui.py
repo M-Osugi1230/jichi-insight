@@ -74,6 +74,7 @@ def test_nagoya_only_no_134_has_individual_votes_and_speaker_is_not_absent():
     assert "議決に参加できない" in DETAIL
     assert "欠席ではありません" in DETAIL
     assert 'hideOpenQuestions={slug==="nagoya-city"' in DETAIL
+    assert 'proposal.proposal_number==="第134号"' in DETAIL
 
 
 def test_toyota_count_and_in_person_expense_disclosure():
@@ -91,6 +92,7 @@ def test_discovery_respects_registered_assembly_and_mayor_promises():
     assert 'isAssemblySlug(city.slug)' in DISCOVERY
     assert 'promise.executive_term_id === term.id' in DISCOVERY
     assert "assembly: hasAssembly" in DISCOVERY
+    assert 'key: hasAssembly ? "aichi-prefecture" : null' in DISCOVERY
     assert "promises: hasPromises" in DISCOVERY
     assert "projects: false, key: null" in DISCOVERY
     # The registry still drives the original Fukouka three councils.
