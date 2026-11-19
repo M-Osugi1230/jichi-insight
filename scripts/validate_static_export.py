@@ -99,7 +99,7 @@ BASE_PAGE_REQUIREMENTS: dict[str, list[str]] = {
         "3年度の財政実績（普通会計）",
         "2026年3月19日に原案可決",
         "鈴木 直道",
-        "公約原文：" + "未登録",
+        "Reviewed 公約原文：15件",
         "北海道議会の個別レコードは未登録",
         "重点事業は段階2で10系列の Reviewed レコードを登録済み",
         "基本評価調書の「予算額」",
@@ -166,6 +166,8 @@ BASE_PAGE_REQUIREMENTS: dict[str, list[str]] = {
     ],
     "promises/index.html": [
         "北海道・鈴木 直道",
+        "札幌市・秋元 克広",
+        "旭川市・今津 寛介",
         "愛知県・大村 秀章",
         "Reviewed 公約原文 10件",
         "ジブリパークの魅力発信",
@@ -452,34 +454,50 @@ def normalized_html(path: Path) -> str:
     return re.sub(r"<!--.*?-->", "", content, flags=re.DOTALL)
 
 
-def validate_hokkaido_promise_scope() -> list[str]:
-    """Check the status within Hokkaido's own section, not anywhere on /promises.
-
-    A global required-copy check could pass from another municipality's
-    unregistered status even if Hokkaido were rendered incorrectly.
-    """
+def validate_promise_section(
+    slug: str, heading: str, status: str
+) -> list[str]:
+    """Validate reviewed/absent promises only within the municipality's section."""
     path = EXPORT_ROOT / "promises/index.html"
     if not path.is_file():
         return []
 
     content = normalized_html(path)
     section = re.search(
-        r'<section\b(?=[^>]*\bid="hokkaido-prefecture")[^>]*>(.*?)</section>',
+        rf'<section\b(?=[^>]*\bid="{re.escape(slug)}")[^>]*>(.*?)</section>',
         content,
         flags=re.DOTALL,
     )
     if section is None:
-        return ["promises/index.html is missing the Hokkaido section (id=hokkaido-prefecture)"]
-
+        return [f"promises/index.html is missing the {slug} section (id={slug})"]
     section_html = section.group(1)
-    expected_heading = "北海道・鈴木 直道"
-    expected_status = "公約原文：" + "未登録"
     failures = []
-    if expected_heading not in section_html:
-        failures.append("Hokkaido promise section is missing its governor heading")
-    if expected_status not in section_html:
-        failures.append("Hokkaido promise section does not show unregistered Reviewed promises")
+    if heading not in section_html:
+        failures.append(f"{slug} promise section is missing its executive heading")
+    if status not in section_html:
+        failures.append(f"{slug} promise section does not show expected status: {status}")
     return failures
+
+
+def validate_hokkaido_promise_scope() -> list[str]:
+    """Hokkaido has 15 Reviewed promises; other municipalities cannot satisfy it."""
+    return validate_promise_section(
+        "hokkaido-prefecture", "北海道・鈴木 直道", "Reviewed 公約原文 15件"
+    )
+
+
+def validate_sapporo_promise_scope() -> list[str]:
+    """Sapporo has 13 Reviewed mayor promises from the registered bulletin."""
+    return validate_promise_section(
+        "sapporo-city", "札幌市・秋元 克広", "Reviewed 公約原文 13件"
+    )
+
+
+def validate_asahikawa_promise_scope() -> list[str]:
+    """Asahikawa has a reviewed mayor term but no registered manifesto."""
+    return validate_promise_section(
+        "asahikawa-city", "旭川市・今津 寛介", "公約原文：" + "未登録"
+    )
 
 
 def main() -> int:
@@ -524,6 +542,8 @@ def main() -> int:
                 )
 
     failures.extend(validate_hokkaido_promise_scope())
+    failures.extend(validate_sapporo_promise_scope())
+    failures.extend(validate_asahikawa_promise_scope())
 
     sources_path = EXPORT_ROOT / "sources/index.html"
     if sources_path.is_file():
