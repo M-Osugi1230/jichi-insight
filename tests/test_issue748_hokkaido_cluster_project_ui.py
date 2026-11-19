@@ -130,7 +130,7 @@ def test_discovery_routes_to_reviewed_projects_without_opening_other_gates():
     assert 'officialCode === hokkaidoFinance.municipality.official_code' in DISCOVERY
     assert 'projectRegistry["hokkaido-prefecture"].projects.some' in DISCOVERY
     assert 'project.municipality_id === hokkaidoFinance.municipality.id' in DISCOVERY
-    assert 'promises: false, assembly: false, projects: hasProjects' in DISCOVERY
+    assert 'promises: hasPromises, assembly: false, projects: hasProjects' in DISCOVERY
     assert "isProjectArea(city.slug)" in DISCOVERY
     assert 'project.municipality_id === `jp-local-${officialCode}`' in DISCOVERY
     assert 'projectHref={isProjectArea(slug)' in GENERIC

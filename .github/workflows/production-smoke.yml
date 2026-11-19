@@ -4,6 +4,8 @@ on:
   pull_request:
     branches:
       - main
+      # Stacked PR #755: integration data PR #754 must receive the same smoke check.
+      - feat/cluster3-stage3-integration
   workflow_dispatch:
   schedule:
     # Daily 09:23 JST. GitHub Actions cron is UTC.
