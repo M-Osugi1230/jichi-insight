@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 EXPORT_ROOT = ROOT / "apps" / "web" / "out"
 
 SOURCE_CATALOG_PATHS = [
+    ROOT / "data" / "catalog" / "aichi_prefecture_finance_sources.json",
     ROOT / "data" / "catalog" / "official_sources.json",
     ROOT / "data" / "catalog" / "fukuoka_finance_sources.json",
     ROOT / "data" / "catalog" / "fukuoka_city_finance_sources.json",
@@ -37,6 +38,7 @@ REQUIRED_FILES = [
     "municipalities/miyagi/index.html",
     "municipalities/tokyo/index.html",
     "municipalities/aichi/index.html",
+    "municipalities/aichi-prefecture/index.html",
     "municipalities/osaka/index.html",
     "municipalities/hiroshima/index.html",
     "municipalities/kagawa/index.html",
@@ -116,6 +118,14 @@ BASE_PAGE_REQUIREMENTS: dict[str, list[str]] = {
         "管理事業評価",
         "政策評価 未判定",
         "56指標を、政策方向・値・年度から探す。",
+    ],
+    "municipalities/aichi-prefecture/index.html": [
+        "あいちビジョン2030",
+        "2026年度に成立した一般会計当初予算",
+        "3年度の財政実績（普通会計）",
+        "大村 秀章",
+        "公約原文：未登録",
+        "まだ登録・評価していないこと",
     ],
     "municipalities/osaka/index.html": [
         "大阪府の戦略目標とWell-Beingを、同じ点数にしない。",
