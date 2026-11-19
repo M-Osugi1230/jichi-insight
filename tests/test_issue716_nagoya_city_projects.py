@@ -216,9 +216,21 @@ def test_official_evaluation_is_the_citys_project_level_not_ours() -> None:
         # note must say so and must not present the rating as our own.
         assert "事業単位" in evaluation["note"]
         assert "Jichi Insight独自の評価ではない" in evaluation["note"]
-        # Nagoya mayoral promises are not registered yet (stage 3), so no
-        # project claims a promise link.
-        assert projects[project_id]["related_promise_ids"] == []
+        # Promise links were registered in Aichi cluster stage 3
+        # (Issue #722): the three childrearing projects link to the
+        # childrearing promise and the seismic-breaker project to the
+        # disaster-preparedness promise; all other projects stay
+        # unlinked. Exact bidirectional consistency is asserted by
+        # tests/test_issue722_nagoya_promise_registration.py.
+        expected_links = {
+            WAITLIST: ["jp-local-231002-executive-2024-11-24-promise-008"],
+            AREA: ["jp-local-231002-executive-2024-11-24-promise-008"],
+            SUMAIRU: ["jp-local-231002-executive-2024-11-24-promise-008"],
+            BREAKER: ["jp-local-231002-executive-2024-11-24-promise-010"],
+        }
+        assert projects[project_id]["related_promise_ids"] == (
+            expected_links.get(project_id, [])
+        )
 
 
 def test_every_project_has_an_evidence_packet_and_known_sources() -> None:

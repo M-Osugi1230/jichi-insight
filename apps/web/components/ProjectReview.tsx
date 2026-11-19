@@ -6,6 +6,8 @@ import styles from "./ProjectReview.module.css";
 
 const show = (v: string | number | null | undefined) => v === null || v === undefined || v === "" ? "未収録" : String(v);
 function stageLabel(area: string, stage: string, year: number) {
+  if (area === "nagoya-city" && stage === "initial_budget") return "予算案段階の予定額（成立後の事業別予算額ではありません）";
+  if (area === "aichi-prefecture" && stage === "initial_budget" && year === 2026) return "FY2026 当初予算・億円単位で公表された概数（千円単位の確定額ではありません）";
   if (area === "fukuoka-city" && stage === "initial_budget") return "当初予算案段階の額（成立後の事業別額は未確認）";
   if (area === "fukuoka-prefecture" && stage === "initial_budget" && year === 2026) return "令和8年度 予算案の額（成立額ではありません）";
   if (area === "kitakyushu-city" && stage === "settlement") return "決算額（令和7年8月公表時点・議会認定前）";
@@ -39,8 +41,13 @@ export function ProjectReview({area, record, kpis}:{area:string;record:ProjectRe
         {!hasSettlement ? <li><strong>事業別決算額</strong>未取得（公式資料で接続できた金額なし。推測補完しません）</li> : null}
         <li><strong>KPI 実績</strong>以下に基準値・目標・実績を分離して表示</li>
         <li><strong>自治体の公式評価・次年度方向性</strong>
-          {record.official_evaluation ? `${show(record.official_evaluation.rating)}／${show(end)}` : "未収録"}
-          <p className={styles.meta}>{record.official_evaluation?.note ?? "公式評価は未収録"}</p></li>
+          {record.official_evaluation
+            ? `${show(record.official_evaluation.rating)}／${show(end)}`
+            : area === "toyota-city" ? "事業単位の公式評価は公表されていません" : "未収録"}
+          <p className={styles.meta}>{record.official_evaluation?.note ??
+            (area === "toyota-city"
+              ? "目標・施策単位の進捗や叙述を、この事業の公式評価に読み替えません。"
+              : "公式評価は未収録")}</p></li>
       </ol>
       {end && /廃止|終了|完了/.test(end+" "+record.official_evaluation?.rating) ? <p className={styles.warning}>この事業は終了・廃止等の終端として記録されています。後継事業の有無は公式評価の注記をご確認ください。</p> : null}
     </div>

@@ -4,8 +4,6 @@ on:
   pull_request:
     branches:
       - main
-      # Stacked Issue #722 Web PRs target the data registration branch, not main.
-      - feat/cluster2-stage3-aichi
   workflow_dispatch:
   schedule:
     # Daily 09:23 JST. GitHub Actions cron is UTC.

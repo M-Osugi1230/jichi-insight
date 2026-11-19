@@ -11,6 +11,8 @@ type Props = {
   budgetHref: string;
   settlementHref?: string;
   fiscalDetailHref?: string;
+  /** Link directly to a registered project list or section when available. */
+  projectHref?: string;
 };
 
 export function MunicipalityDiscoveryPanel({
@@ -19,6 +21,7 @@ export function MunicipalityDiscoveryPanel({
   budgetHref,
   settlementHref,
   fiscalDetailHref,
+  projectHref,
 }: Props) {
   const available = municipalityDiscoveryAvailability(officialCode);
   const items = [
@@ -40,7 +43,7 @@ export function MunicipalityDiscoveryPanel({
     {
       label: "重点事業",
       enabled: available.projects,
-      href: "/projects",
+      href: projectHref ?? "/projects",
     },
   ];
 
@@ -48,7 +51,7 @@ export function MunicipalityDiscoveryPanel({
     <section className={styles.panel} aria-labelledby="municipality-discovery-title">
       <h2 id="municipality-discovery-title">この自治体で調べられること</h2>
       <p className={styles.note}>
-        公約・議会・重点事業などの深掘りは、現在は福岡県・福岡市・北九州市のみが対象です。
+        公約・議会の深掘りは現在、福岡県・福岡市・北九州市が対象です。重点事業の深掘りは、Reviewed 事業が登録されている自治体に限ります。
         「対象外」は本サイトの深掘り対象外を意味します。
       </p>
       <ul className={styles.list}>

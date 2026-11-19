@@ -1,5 +1,5 @@
 {
-  "version": "0.10.0",
+  "version": "0.11.0",
   "updated_at": "2026-11-19",
   "scope": "pilot",
   "records": [
@@ -296,6 +296,62 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "「2027年2月14日任期満了による愛知県知事選挙」の執行決定（2027年1月21日告示・2月7日選挙期日）を公表する。前回選挙の告示日（2023年1月19日）と選挙期日（2023年2月5日）も参考として掲載する。"
+    },
+    {
+      "id": "nagoya-city-mayor",
+      "municipality_key": "nagoya-city",
+      "organization": "名古屋市",
+      "category": "executive",
+      "title": "市長のプロフィール（広沢一郎）",
+      "url": "https://www.city.nagoya.jp/mayor/1002561.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "名古屋市公式の市長プロフィール。広沢一郎が令和6年11月に名古屋市長へ就任したことを掲載する。"
+    },
+    {
+      "id": "nagoya-city-mayor-election-2024-results",
+      "municipality_key": "nagoya-city",
+      "organization": "名古屋市選挙管理委員会",
+      "category": "election",
+      "title": "令和6年11月24日執行 名古屋市長選挙の結果",
+      "url": "https://www.city.nagoya.jp/shisei/senkyo/1030152/1030156/1030169.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "2024年名古屋市長選挙の投票・開票結果を掲載する公式ページ。開票結果PDFによれば、広沢一郎は392,519票を得て最多得票となり、法定得票数（183,665.750票）を上回った。候補者は7人。"
+    },
+    {
+      "id": "nagoya-city-mayor-election-2024-bulletin",
+      "municipality_key": "nagoya-city",
+      "organization": "名古屋市選挙管理委員会",
+      "category": "election",
+      "title": "令和6年11月24日執行 名古屋市長選挙 選挙公報（広沢一郎候補欄）",
+      "url": "https://www.city.nagoya.jp/_res/projects/default_project/_page_/001/032/417/06sityokouhou.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "名古屋市長選挙の公式選挙公報（候補者から提出された原稿をそのまま印刷したもの。全2ページ）。広沢一郎候補欄は1ページ目左下にあり、重点公約の4枠（市民税減税・敬老パス・保育料・名古屋城）、市長報酬・市議報酬に関する帯、箇条書き11項目、プロフィールを掲載する。公約レコードはこの候補欄から作成した。掲載ページは名古屋市公式「令和6年11月24日執行 名古屋市長選挙の選挙公報」（https://www.city.nagoya.jp/shisei/senkyo/1030152/1030179/1032417.html）。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度で照合した。"
+    },
+    {
+      "id": "aichi-pref-mayors-term-list-2026",
+      "municipality_key": "nagoya-city",
+      "organization": "愛知県",
+      "category": "election",
+      "title": "市町村長等名簿（2026年9月13日現在）",
+      "url": "https://www.pref.aichi.jp/soshiki/shichoson/0000046285.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "愛知県が公表する県内市町村長の一覧。名古屋市長・広沢一郎の任期満了日を令和10年11月23日（2028年11月23日）、就任回数を1回と明記する。本カタログでは名古屋市長の任期満了日の出典として登録する。"
     },
     {
       "id": "aichi-pref-governor-election-2023-bulletin",

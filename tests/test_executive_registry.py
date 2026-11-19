@@ -41,20 +41,21 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 22
-    assert len({record["id"] for record in catalog["records"]}) == 22
+    assert len(catalog["records"]) == 26
+    assert len({record["id"] for record in catalog["records"]}) == 26
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
     terms = load_json("data/entities/executives/executive_terms.json")
     packets = load_json("data/entities/executives/evidence_packets.json")
 
-    assert len(terms) == 4
+    assert len(terms) == 5
     assert {term["municipality_id"] for term in terms} == {
         "jp-local-400009",
         "jp-local-401307",
         "jp-local-401005",
         "jp-local-230006",
+        "jp-local-231002",
     }
     for term in terms:
         assert validation_errors("schemas/executive_term.schema.json", term) == []
@@ -77,6 +78,7 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
         "jp-local-401307": "2026-12-06",
         "jp-local-401005": "2027-02-19",
         "jp-local-230006": "2027-02-14",
+        "jp-local-231002": "2028-11-23",
     }
     for term in terms:
         assert term["term_end"] == expected_term_ends[term["municipality_id"]]
@@ -112,6 +114,7 @@ def test_executive_term_starts_follow_statutory_counting() -> None:
         "jp-local-401307": "2022-12-07",
         "jp-local-401005": "2023-02-20",
         "jp-local-230006": "2023-02-15",
+        "jp-local-231002": "2024-11-24",
     }
     for term in terms:
         assert term["term_start"] == expected_term_starts[term["municipality_id"]]
@@ -147,6 +150,9 @@ def test_manifesto_readiness_is_not_confused_with_progress() -> None:
     assert by_municipality["jp-local-401005"]["manifesto_source_ids"] == [
         "kitakyushu-mayor-election-2023-bulletin",
         "kitakyushu-mayor-candidate-2023-manifesto-v13-archive",
+    ]
+    assert by_municipality["jp-local-231002"]["manifesto_source_ids"] == [
+        "nagoya-city-mayor-election-2024-bulletin",
     ]
 
 

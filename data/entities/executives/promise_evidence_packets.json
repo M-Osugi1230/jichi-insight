@@ -2005,6 +2005,620 @@
     "review_status": "reviewed"
   },
   {
+    "id": "evidence-nagoya-city-2024-promise-001",
+    "subject_type": "promise",
+    "subject_id": "jp-local-231002-executive-2024-11-24-promise-001",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、名古屋市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報1ページ目左下・広沢一郎候補欄の重点公約枠（1）「市民税減税」。",
+        "decision": "accepted",
+        "review_note": "2026-11-19に公式PDFを取得し、200dpi・400dpiの複数解像度で照合した。資料上の境界（枠・行・箇条書き）をそのまま公約の単位とし、文単位の編集分割はしていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、名古屋市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "名古屋市公式「令和6年11月24日執行 名古屋市長選挙の選挙公報」ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      },
+      {
+        "field": "target",
+        "statement": "枠内に「5%→10%」と数値が明示されており、減税率の引き上げそのものが約束の内容であるため、target に「市民税減税 5%→10%」を記録した。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報1ページ目左下・広沢一郎候補欄の重点公約枠（1）「市民税減税」の記載に基づく。",
+        "decision": "accepted",
+        "review_note": "資料に明示された数値だけを記録し、期限・財源は補っていない。"
+      }
+    ],
+    "open_questions": [
+      "対応する登録済み事業はなく、事業接続と進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-promise-002",
+    "subject_type": "promise",
+    "subject_id": "jp-local-231002-executive-2024-11-24-promise-002",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、名古屋市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報1ページ目左下・広沢一郎候補欄の重点公約枠（2）「敬老パス」。",
+        "decision": "accepted",
+        "review_note": "2026-11-19に公式PDFを取得し、200dpi・400dpiの複数解像度で照合した。資料上の境界（枠・行・箇条書き）をそのまま公約の単位とし、文単位の編集分割はしていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、名古屋市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "名古屋市公式「令和6年11月24日執行 名古屋市長選挙の選挙公報」ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      }
+    ],
+    "open_questions": [
+      "対応する登録済み事業はなく、事業接続と進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-promise-003",
+    "subject_type": "promise",
+    "subject_id": "jp-local-231002-executive-2024-11-24-promise-003",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、名古屋市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報1ページ目左下・広沢一郎候補欄の重点公約枠（3）「保育料」。",
+        "decision": "accepted",
+        "review_note": "2026-11-19に公式PDFを取得し、200dpi・400dpiの複数解像度で照合した。資料上の境界（枠・行・箇条書き）をそのまま公約の単位とし、文単位の編集分割はしていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、名古屋市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "名古屋市公式「令和6年11月24日執行 名古屋市長選挙の選挙公報」ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      },
+      {
+        "field": "target",
+        "statement": "枠内に「0歳児から無償化」と対象年齢と無償化が明示されているため、target に「0歳児からの保育料無償化」を記録した。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報1ページ目左下・広沢一郎候補欄の重点公約枠（3）「保育料」の記載に基づく。",
+        "decision": "accepted",
+        "review_note": "資料に明示された数値だけを記録し、期限・財源は補っていない。"
+      }
+    ],
+    "open_questions": [
+      "対応する登録済み事業はなく、事業接続と進捗判定は未実施である。",
+      "保育料の無償化そのものを実施する事業が登録されれば接続する。待機児童対策の事業とは措置が異なるため、現時点では接続していない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-promise-004",
+    "subject_type": "promise",
+    "subject_id": "jp-local-231002-executive-2024-11-24-promise-004",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、名古屋市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報1ページ目左下・広沢一郎候補欄の重点公約枠（4）「名古屋城」。",
+        "decision": "accepted",
+        "review_note": "2026-11-19に公式PDFを取得し、200dpi・400dpiの複数解像度で照合した。資料上の境界（枠・行・箇条書き）をそのまま公約の単位とし、文単位の編集分割はしていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、名古屋市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "名古屋市公式「令和6年11月24日執行 名古屋市長選挙の選挙公報」ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      }
+    ],
+    "open_questions": [
+      "対応する登録済み事業はなく、事業接続と進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-promise-005",
+    "subject_type": "promise",
+    "subject_id": "jp-local-231002-executive-2024-11-24-promise-005",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、名古屋市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報1ページ目左下・広沢一郎候補欄の帯（市長報酬の行）。",
+        "decision": "accepted",
+        "review_note": "2026-11-19に公式PDFを取得し、200dpi・400dpiの複数解像度で照合した。資料上の境界（枠・行・箇条書き）をそのまま公約の単位とし、文単位の編集分割はしていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、名古屋市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "名古屋市公式「令和6年11月24日執行 名古屋市長選挙の選挙公報」ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      },
+      {
+        "field": "target",
+        "statement": "帯に「2,800万円から800万円」と金額が明示され、退職金廃止も併記されているため、target に「市長報酬800万円・退職金廃止」を記録した。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報1ページ目左下・広沢一郎候補欄の帯（市長報酬の行）の記載に基づく。",
+        "decision": "accepted",
+        "review_note": "資料に明示された数値だけを記録し、期限・財源は補っていない。"
+      }
+    ],
+    "open_questions": [
+      "対応する登録済み事業はなく、事業接続と進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-promise-006",
+    "subject_type": "promise",
+    "subject_id": "jp-local-231002-executive-2024-11-24-promise-006",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、名古屋市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報1ページ目左下・広沢一郎候補欄の帯（市議報酬の行）。",
+        "decision": "accepted",
+        "review_note": "2026-11-19に公式PDFを取得し、200dpi・400dpiの複数解像度で照合した。資料上の境界（枠・行・箇条書き）をそのまま公約の単位とし、文単位の編集分割はしていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、名古屋市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "名古屋市公式「令和6年11月24日執行 名古屋市長選挙の選挙公報」ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      },
+      {
+        "field": "target",
+        "statement": "帯に「800万円を貫き」と金額が明示されているため、target に「市議報酬800万円」を記録した。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報1ページ目左下・広沢一郎候補欄の帯（市議報酬の行）の記載に基づく。",
+        "decision": "accepted",
+        "review_note": "資料に明示された数値だけを記録し、期限・財源は補っていない。"
+      }
+    ],
+    "open_questions": [
+      "対応する登録済み事業はなく、事業接続と進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-promise-007",
+    "subject_type": "promise",
+    "subject_id": "jp-local-231002-executive-2024-11-24-promise-007",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、名古屋市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報1ページ目左下・広沢一郎候補欄の箇条書き第1項目。",
+        "decision": "accepted",
+        "review_note": "2026-11-19に公式PDFを取得し、200dpi・400dpiの複数解像度で照合した。資料上の境界（枠・行・箇条書き）をそのまま公約の単位とし、文単位の編集分割はしていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、名古屋市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "名古屋市公式「令和6年11月24日執行 名古屋市長選挙の選挙公報」ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      }
+    ],
+    "open_questions": [
+      "対応する登録済み事業はなく、事業接続と進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-promise-008",
+    "subject_type": "promise",
+    "subject_id": "jp-local-231002-executive-2024-11-24-promise-008",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、名古屋市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報1ページ目左下・広沢一郎候補欄の箇条書き第2項目。",
+        "decision": "accepted",
+        "review_note": "2026-11-19に公式PDFを取得し、200dpi・400dpiの複数解像度で照合した。資料上の境界（枠・行・箇条書き）をそのまま公約の単位とし、文単位の編集分割はしていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、名古屋市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "名古屋市公式「令和6年11月24日執行 名古屋市長選挙の選挙公報」ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "令和7年度の登録済み事業「保育所等利用待機児童対策等の推進」「エリア支援保育所事業」「なごや子ども住まいるプロジェクトの推進」と、公約の文言・内容（子ども・子育て世帯への支援）が対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "nagoya-city-plan-progress-fy2025-pdf",
+          "nagoya-city-budget-measures-children-youth-fy2025-pdf",
+          "nagoya-city-budget-measures-housing-urban-fy2025-pdf"
+        ],
+        "location_note": "令和7年度の実施状況・主な施策等一覧に基づく登録済み事業レコード。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      },
+      {
+        "field": "progress_state",
+        "statement": "接続事業はいずれも令和7年度の登録済み事業として実施されている。「保育所等利用待機児童対策等の推進」の指標「保育所等利用待機児童数」は目標0人に対し実績0人で達成と記録され、市の公式評価は☆☆☆である。「エリア支援保育所事業」の指標「子育てしやすいまちだと思う市民の割合」は進行中、公式評価は☆☆☆☆、「なごや子ども住まいるプロジェクトの推進」の指標「住んでいる住宅に満足している市民の割合」は進行中、公式評価は☆☆☆☆と記録されている。",
+        "source_ids": [
+          "nagoya-city-plan-progress-fy2025-pdf",
+          "nagoya-city-budget-measures-children-youth-fy2025-pdf",
+          "nagoya-city-budget-measures-housing-urban-fy2025-pdf"
+        ],
+        "location_note": "令和7年度の実施状況・主な施策等一覧に基づく登録済み事業レコード。",
+        "decision": "needs_review",
+        "review_note": "推定接続を前提とする暫定的な in_progress 判定であり、自治体の公式な公約進捗公表に基づくものではない。達成度（達成・一部達成等）の判定は行わない。"
+      }
+    ],
+    "open_questions": [
+      "事業との接続は文言・内容に基づく推定であり、自治体が公約と事業の公式な対応付けを公表した場合は接続を見直す。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-promise-009",
+    "subject_type": "promise",
+    "subject_id": "jp-local-231002-executive-2024-11-24-promise-009",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、名古屋市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報1ページ目左下・広沢一郎候補欄の箇条書き第3項目。",
+        "decision": "accepted",
+        "review_note": "2026-11-19に公式PDFを取得し、200dpi・400dpiの複数解像度で照合した。資料上の境界（枠・行・箇条書き）をそのまま公約の単位とし、文単位の編集分割はしていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、名古屋市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "名古屋市公式「令和6年11月24日執行 名古屋市長選挙の選挙公報」ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      }
+    ],
+    "open_questions": [
+      "対応する登録済み事業はなく、事業接続と進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-promise-010",
+    "subject_type": "promise",
+    "subject_id": "jp-local-231002-executive-2024-11-24-promise-010",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、名古屋市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報1ページ目左下・広沢一郎候補欄の箇条書き第4項目。",
+        "decision": "accepted",
+        "review_note": "2026-11-19に公式PDFを取得し、200dpi・400dpiの複数解像度で照合した。資料上の境界（枠・行・箇条書き）をそのまま公約の単位とし、文単位の編集分割はしていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、名古屋市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "名古屋市公式「令和6年11月24日執行 名古屋市長選挙の選挙公報」ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "令和7年度の登録済み事業「感震ブレーカーの設置促進」と、公約の文言・内容（地震火災への備えを含む防災体制）が対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "nagoya-city-plan-progress-fy2025-pdf",
+          "nagoya-city-budget-measures-disaster-management-fy2025-pdf"
+        ],
+        "location_note": "令和7年度の実施状況・主な施策等一覧に基づく登録済み事業レコード。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      },
+      {
+        "field": "progress_state",
+        "statement": "接続事業「感震ブレーカーの設置促進」は令和7年度の登録済み事業として実施されており、その指標「家庭内において災害に対する複数の備えをしている市民の割合」は進行中、市の公式評価は☆☆☆と記録されている。",
+        "source_ids": [
+          "nagoya-city-plan-progress-fy2025-pdf",
+          "nagoya-city-budget-measures-disaster-management-fy2025-pdf"
+        ],
+        "location_note": "令和7年度の実施状況・主な施策等一覧に基づく登録済み事業レコード。",
+        "decision": "needs_review",
+        "review_note": "推定接続を前提とする暫定的な in_progress 判定であり、自治体の公式な公約進捗公表に基づくものではない。達成度（達成・一部達成等）の判定は行わない。"
+      }
+    ],
+    "open_questions": [
+      "事業との接続は文言・内容に基づく推定であり、自治体が公約と事業の公式な対応付けを公表した場合は接続を見直す。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-promise-011",
+    "subject_type": "promise",
+    "subject_id": "jp-local-231002-executive-2024-11-24-promise-011",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、名古屋市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報1ページ目左下・広沢一郎候補欄の箇条書き第5項目。",
+        "decision": "accepted",
+        "review_note": "2026-11-19に公式PDFを取得し、200dpi・400dpiの複数解像度で照合した。資料上の境界（枠・行・箇条書き）をそのまま公約の単位とし、文単位の編集分割はしていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、名古屋市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "名古屋市公式「令和6年11月24日執行 名古屋市長選挙の選挙公報」ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      }
+    ],
+    "open_questions": [
+      "対応する登録済み事業はなく、事業接続と進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-promise-012",
+    "subject_type": "promise",
+    "subject_id": "jp-local-231002-executive-2024-11-24-promise-012",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、名古屋市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報1ページ目左下・広沢一郎候補欄の箇条書き第6項目。",
+        "decision": "accepted",
+        "review_note": "2026-11-19に公式PDFを取得し、200dpi・400dpiの複数解像度で照合した。資料上の境界（枠・行・箇条書き）をそのまま公約の単位とし、文単位の編集分割はしていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、名古屋市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "名古屋市公式「令和6年11月24日執行 名古屋市長選挙の選挙公報」ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      }
+    ],
+    "open_questions": [
+      "対応する登録済み事業はなく、事業接続と進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-promise-013",
+    "subject_type": "promise",
+    "subject_id": "jp-local-231002-executive-2024-11-24-promise-013",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、名古屋市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報1ページ目左下・広沢一郎候補欄の箇条書き第7項目。",
+        "decision": "accepted",
+        "review_note": "2026-11-19に公式PDFを取得し、200dpi・400dpiの複数解像度で照合した。資料上の境界（枠・行・箇条書き）をそのまま公約の単位とし、文単位の編集分割はしていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、名古屋市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "名古屋市公式「令和6年11月24日執行 名古屋市長選挙の選挙公報」ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      }
+    ],
+    "open_questions": [
+      "対応する登録済み事業はなく、事業接続と進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-promise-014",
+    "subject_type": "promise",
+    "subject_id": "jp-local-231002-executive-2024-11-24-promise-014",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、名古屋市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報1ページ目左下・広沢一郎候補欄の箇条書き第8項目。",
+        "decision": "accepted",
+        "review_note": "2026-11-19に公式PDFを取得し、200dpi・400dpiの複数解像度で照合した。資料上の境界（枠・行・箇条書き）をそのまま公約の単位とし、文単位の編集分割はしていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、名古屋市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "名古屋市公式「令和6年11月24日執行 名古屋市長選挙の選挙公報」ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      }
+    ],
+    "open_questions": [
+      "対応する登録済み事業はなく、事業接続と進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-promise-015",
+    "subject_type": "promise",
+    "subject_id": "jp-local-231002-executive-2024-11-24-promise-015",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、名古屋市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報1ページ目左下・広沢一郎候補欄の箇条書き第9項目。",
+        "decision": "accepted",
+        "review_note": "2026-11-19に公式PDFを取得し、200dpi・400dpiの複数解像度で照合した。資料上の境界（枠・行・箇条書き）をそのまま公約の単位とし、文単位の編集分割はしていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、名古屋市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "名古屋市公式「令和6年11月24日執行 名古屋市長選挙の選挙公報」ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      }
+    ],
+    "open_questions": [
+      "対応する登録済み事業はなく、事業接続と進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-promise-016",
+    "subject_type": "promise",
+    "subject_id": "jp-local-231002-executive-2024-11-24-promise-016",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、名古屋市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報1ページ目左下・広沢一郎候補欄の箇条書き第10項目。",
+        "decision": "accepted",
+        "review_note": "2026-11-19に公式PDFを取得し、200dpi・400dpiの複数解像度で照合した。資料上の境界（枠・行・箇条書き）をそのまま公約の単位とし、文単位の編集分割はしていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、名古屋市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "名古屋市公式「令和6年11月24日執行 名古屋市長選挙の選挙公報」ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      }
+    ],
+    "open_questions": [
+      "対応する登録済み事業はなく、事業接続と進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-nagoya-city-2024-promise-017",
+    "subject_type": "promise",
+    "subject_id": "jp-local-231002-executive-2024-11-24-promise-017",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、名古屋市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報1ページ目左下・広沢一郎候補欄の箇条書き第11項目。",
+        "decision": "accepted",
+        "review_note": "2026-11-19に公式PDFを取得し、200dpi・400dpiの複数解像度で照合した。資料上の境界（枠・行・箇条書き）をそのまま公約の単位とし、文単位の編集分割はしていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、名古屋市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "nagoya-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "名古屋市公式「令和6年11月24日執行 名古屋市長選挙の選挙公報」ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      }
+    ],
+    "open_questions": [
+      "対応する登録済み事業はなく、事業接続と進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
     "id": "evidence-aichi-pref-2023-promise-001",
     "subject_type": "promise",
     "subject_id": "jp-local-230006-executive-2023-02-15-promise-001",

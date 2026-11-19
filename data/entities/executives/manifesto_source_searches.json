@@ -97,6 +97,33 @@
     "confidence": "high"
   },
   {
+    "id": "manifesto-source-search-nagoya-city-2024",
+    "executive_term_id": "jp-local-231002-executive-2024-11-24",
+    "searched_at": "2026-11-19",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "nagoya-city-mayor-election-2024-bulletin"
+    ],
+    "checked_source_ids": [
+      "nagoya-city-mayor-election-2024-results",
+      "nagoya-city-mayor-election-2024-bulletin",
+      "nagoya-city-mayor"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "名古屋市選挙管理委員会の「令和6年11月24日執行 名古屋市長選挙の選挙公報」ページに、選挙公報PDFへの安定した導線があり、市の公式サイト上で公報そのものを取得できた。広沢一郎候補欄（1ページ目左下）を確認し、選挙公報を出典として登録、分割レビュー（manifesto-review-jp-local-231002-2024）を経て公約レコード17件を作成した。選挙公報は候補者提出原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たるため、公約レコードの confidence は high とした。候補者の政策パンフレット等、公報より詳細な資料の安定した所在は特定しておらず、資料が存在しないとは判定しない。",
+    "next_actions": [
+      "候補者の政策資料（公報より詳細な公約資料）の安定した所在が特定できれば、登録済みの公約文と照合する",
+      "未接続の公約（市民税減税、敬老パス値下げ、保育料無償化、名古屋城木造復元等）について、計画・事業資料への進捗証拠の接続を拡充する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
+  },
+  {
     "id": "manifesto-source-search-aichi-pref-2023",
     "executive_term_id": "jp-local-230006-executive-2023-02-15",
     "searched_at": "2026-11-19",

@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { EvidencePanel } from "@/components/EvidencePanel";
 import { FiscalReview } from "@/components/FiscalReview";
+import { ProjectReview } from "@/components/ProjectReview";
 import { MunicipalityDiscoveryPanel } from "@/components/MunicipalityDiscoveryPanel";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -24,12 +25,14 @@ import {
   promisesForExecutive,
 } from "@/lib/executives";
 import { formatCompactYen, formatExactYen } from "@/lib/finance";
+import { projectRegistry } from "@/lib/projectRegistry";
 import { canonicalFor } from "@/lib/pageMetadata";
 import { promiseSourceDetails } from "@/lib/promiseSources";
 import { sourceConfidenceLabel } from "@/lib/statusLabels";
 
 import styles from "../fukuoka-prefecture/page.module.css";
 import promiseStyles from "../../promises/page.module.css";
+import projectStyles from "@/components/ProjectReview.module.css";
 
 export const metadata: Metadata = {
   alternates: { canonical: canonicalFor("/municipalities/aichi-prefecture") },
@@ -38,6 +41,9 @@ export const metadata: Metadata = {
 };
 
 export default function AichiPrefecturePage() {
+  const projects = projectRegistry["aichi-prefecture"];
+  const reviewedProjects = projects.projects.filter((project) => project.review_status === "reviewed");
+  const seriesCount = new Set(reviewedProjects.map((project) => project.series_id)).size;
   const budget = aichiBudgetRecord("total_revenue");
   const tax = aichiBudgetRecord("local_tax");
   const expenditure = aichiBudgetRecord("total_expenditure");
@@ -88,12 +94,13 @@ export default function AichiPrefecturePage() {
             budgetHref="#finance-headline-title"
             settlementHref="#fiscal-detail"
             fiscalDetailHref="#fiscal-detail"
+            projectHref="#priority-projects"
           />
 
           <section className={styles.scope} aria-label="登録情報の範囲">
             <div><p className="eyebrow">Scope</p><h2 id="scope-title">計画・予算・決算・知事の任期を分けて確認する。</h2></div>
             <div>
-              <p>確認できること：「あいちビジョン2030」の計画構造と実施計画、2026年度の成立後一般会計当初予算、2022〜2024年度普通会計決算、大村秀章知事の現任期、公式選挙公報に基づく公約10件と出典。重点事業の登録データとは推定関係として区別します。</p>
+              <p>確認できること：「あいちビジョン2030」の計画構造と実施計画、2026年度の成立後一般会計当初予算、2022〜2024年度普通会計決算、Reviewed 重点事業と県の公式評価、大村秀章知事の現任期、公式選挙公報に基づく公約10件と出典。公約と重点事業の接続は推定関係として区別します。</p>
               <p>まだ確認できないこと：本サイトには県議会の個別レコードが未登録です（議案・表決等）。公約と重点事業の登録はありますが、接続は low / inferred・要レビューであり、公約達成度や政策成果の確定判定ではありません。</p>
               <p>一般会計と普通会計、予算と決算は範囲・段階が異なります。直接つないで増減率や達成率とは扱いません。</p>
             </div>
@@ -167,6 +174,47 @@ export default function AichiPrefecturePage() {
             <div className={styles.evidenceGrid}>
               {[budget, tax, expenditure].filter((record) => record !== undefined).map((record) => (
                 <EvidencePanel key={record.id} record={record} packet={aichiEvidenceForRecord(record.id)} />
+              ))}
+            </div>
+          </section>
+
+          <section id="priority-projects" className={styles.headline} aria-labelledby="priority-projects-title">
+            <div className="sectionIntro">
+              <p className="eyebrow">Reviewed priority projects</p>
+              <h2 id="priority-projects-title">重点事業の予算・KPI・県の公式評価</h2>
+              <p>あいちビジョン2030の重要政策の方向性に沿って登録した {seriesCount} 事業系列・{reviewedProjects.length} 年度別事業レコードを掲載しています。選定した事業の一覧であり、県の事業を網羅したものではありません。</p>
+              <p>FY2026 当初予算額は億円単位（小数第1位）で公表された概数です。千円単位の確定額として扱いません。公式評価は愛知県の A〜E の原表記をそのまま表示し、Jichi Insight の独自評価ではありません。</p>
+              <p>年度別の予算・決算の金額を同じ段階として合算せず、個別の根拠と KPI の実績を分けて表示します。</p>
+            </div>
+            <div className={projectStyles.cards}>
+              {reviewedProjects.map((project) => (
+                <article className={projectStyles.card} key={project.id}>
+                  <p className={projectStyles.meta}>{project.fiscal_year}年度／{project.policy_area}／Reviewed</p>
+                  <h3>{project.official_title}</h3>
+                  <p>{project.plain_title}</p>
+                  <p><strong>県の公式評価：{project.official_evaluation?.rating ?? "未収録"}</strong></p>
+                  <p>次年度の方向性：{project.official_evaluation?.direction ?? "未収録"}</p>
+                  <ul>
+                    {project.budget_records.map((record, index) => (
+                      <li key={`${record.fiscal_year}-${record.kind}-${index}`}>
+                        {record.fiscal_year}年度／{record.kind === "settlement" ? "決算" : "当初予算"}：
+                        {record.amount_yen === null ? "未収録" : formatCompactYen(record.amount_yen)}
+                        {record.fiscal_year === 2026 && record.kind === "initial_budget" ? "（億円単位の概数）" : ""}
+                        {record.note ? <p className={projectStyles.meta}>{record.note}</p> : null}
+                      </li>
+                    ))}
+                  </ul>
+                  <p className={projectStyles.meta}>登録 KPI：{projects.kpis.filter((kpi) =>
+                    kpi.project_id === project.id && kpi.review_status === "reviewed",
+                  ).length}件</p>
+                  <details>
+                    <summary>公式評価・KPI・証拠を詳しく見る</summary>
+                    <ProjectReview area="aichi-prefecture" record={project} kpis={projects.kpis.filter(
+                      (kpi) => kpi.project_id === project.id && kpi.review_status === "reviewed",
+                    )} />
+                  </details>
+                  <p><Link href={`/projects/aichi-prefecture/${encodeURIComponent(project.series_id)}`}>この事業の年度別詳細を開く</Link></p>
+                </article>
               ))}
             </div>
           </section>
@@ -280,6 +328,7 @@ export default function AichiPrefecturePage() {
             <ul>
               <li>登録済み公約10件の進捗・達成度を確定判定するための公式評価材料</li>
               <li>公約と重点事業の公式な対応関係・因果関係（現時点の接続は推定・要レビュー）</li>
+              <li>収録対象外の重点事業と、確認できていない年度・執行・成果との接続</li>
               <li>県議会の議案・表決・監視活動の個別記録</li>
               <li>2026年度予算の執行実績・決算</li>
             </ul>
