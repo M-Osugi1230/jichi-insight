@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updated_at": "2026-11-16",
+  "updated_at": "2026-11-19",
   "scope": "phase15-core-capital-review",
   "records": [
     {
@@ -44,6 +44,90 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "一般会計歳入161,996,348,913円・歳出157,827,488,682円を含む公式決算資料（『令和6年度決算総括表（一般会計及び特別会計）』（単位：円）で確認し、差引4,168,860,231円が同表の形式収支と検算一致）。実質収支は同表により3,348,707,231円（繰り越すべき財源820,153,000円。円単位のまま記録）。決算の認定は報告第41号『令和6年度奈良市一般会計歳入歳出決算の認定について』として令和7年9月定例会で2025年9月29日に認定された（市議会公式『議決結果一覧表（令和7年9月定例会）』で確認）。決算書（歳入歳出決算事項別明細書）の款別合計との突合と監査委員の決算審査意見書の内容（個別の指摘事項等）の精査は未実施。"
+    },
+    {
+      "id": "nara-city-mic-settlement-card-fy2022",
+      "municipality_key": "nara-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和4年度 市町村決算カード（奈良県）",
+      "url": "https://www.soumu.go.jp/main_content/000937112.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和4年度市町村決算カード（奈良県）のうち奈良市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、奈良市『令和4年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "nara-city-fiscal-situation-collection-fy2022",
+      "municipality_key": "nara-city",
+      "organization": "奈良市",
+      "category": "settlement",
+      "title": "令和4年度 財政状況資料集",
+      "url": "https://www.pref.nara.lg.jp/documents/22465/zai04-01nara.xlsx",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する資料集。奈良県が県内市町村分を一括公表するExcel版を一次資料とした。総務省決算カードの照合先として使用した。"
+    },
+    {
+      "id": "nara-city-mic-settlement-card-fy2023",
+      "municipality_key": "nara-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和5年度 市町村決算カード（奈良県）",
+      "url": "https://www.soumu.go.jp/main_content/000998977.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和5年度市町村決算カード（奈良県）のうち奈良市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、奈良市『令和5年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "nara-city-fiscal-situation-collection-fy2023",
+      "municipality_key": "nara-city",
+      "organization": "奈良市",
+      "category": "settlement",
+      "title": "令和5年度 財政状況資料集",
+      "url": "https://www.pref.nara.lg.jp/documents/13206/2zai05-01nara.xlsx",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する資料集。奈良県が県内市町村分を一括公表するExcel版を一次資料とした。総務省決算カードの照合先として使用した。"
+    },
+    {
+      "id": "nara-city-mic-settlement-card-fy2024",
+      "municipality_key": "nara-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和6年度 市町村決算カード（奈良県）",
+      "url": "https://www.soumu.go.jp/main_content/001064002.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和6年度市町村決算カード（奈良県）のうち奈良市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、奈良市『令和6年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "nara-city-fiscal-situation-collection-fy2024",
+      "municipality_key": "nara-city",
+      "organization": "奈良市",
+      "category": "settlement",
+      "title": "令和6年度 財政状況資料集",
+      "url": "https://www.pref.nara.lg.jp/documents/22394/zai06-01nara.xlsx",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する資料集。奈良県が県内市町村分を一括公表するExcel版を一次資料とした。総務省決算カードの照合先として使用した。"
     }
   ]
 }

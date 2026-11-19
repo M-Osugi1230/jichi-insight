@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updated_at": "2026-11-16",
+  "updated_at": "2026-11-19",
   "scope": "phase15-core-capital-review",
   "records": [
     {
@@ -44,6 +44,90 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "一般会計歳入254,438,371千円・歳出245,476,363千円を含む公式決算資料（市公式『令和6年度決算の概要』の一般会計の節で確認）。実質収支は同資料により5,797,686千円（千円精度のまま記録し、円単位を合成しない）。決算の認定議案である議案第90号は令和7年第3回定例会で認定された（議決日2025年10月3日は議員別賛否一覧PDFの発行日付と会期最終日の表決から特定したものであり、会議録による最終確認は未実施）。決算書（歳入歳出決算事項別明細書）の款別合計との突合と監査委員の決算審査意見書の内容（個別の指摘事項等）の精査は未実施。"
+    },
+    {
+      "id": "himeji-city-mic-settlement-card-fy2022",
+      "municipality_key": "himeji-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和4年度 市町村決算カード（兵庫県）",
+      "url": "https://www.soumu.go.jp/main_content/000937109.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和4年度市町村決算カード（兵庫県）のうち姫路市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、姫路市『令和4年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "himeji-city-fiscal-situation-collection-fy2022",
+      "municipality_key": "himeji-city",
+      "organization": "姫路市",
+      "category": "settlement",
+      "title": "令和4年度 財政状況資料集",
+      "url": "https://web.pref.hyogo.lg.jp/kk25/documents/2022_02himezi.xlsx",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する資料集。兵庫県公式サイトで公表されるExcel版（各市が作成した資料集を県サイトにも掲載するもの）を一次資料とした。総務省決算カードの照合先として使用した。"
+    },
+    {
+      "id": "himeji-city-mic-settlement-card-fy2023",
+      "municipality_key": "himeji-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和5年度 市町村決算カード（兵庫県）",
+      "url": "https://www.soumu.go.jp/main_content/000998975.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和5年度市町村決算カード（兵庫県）のうち姫路市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、姫路市『令和5年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "himeji-city-fiscal-situation-collection-fy2023",
+      "municipality_key": "himeji-city",
+      "organization": "姫路市",
+      "category": "settlement",
+      "title": "令和5年度 財政状況資料集",
+      "url": "https://web.pref.hyogo.lg.jp/kk25/documents/2023_02himaji.xlsx",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する資料集。兵庫県公式サイトで公表されるExcel版（各市が作成した資料集を県サイトにも掲載するもの）を一次資料とした。総務省決算カードの照合先として使用した。"
+    },
+    {
+      "id": "himeji-city-mic-settlement-card-fy2024",
+      "municipality_key": "himeji-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和6年度 市町村決算カード（兵庫県）",
+      "url": "https://www.soumu.go.jp/main_content/001064000.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和6年度市町村決算カード（兵庫県）のうち姫路市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、姫路市『令和6年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "himeji-city-fiscal-situation-collection-fy2024",
+      "municipality_key": "himeji-city",
+      "organization": "姫路市",
+      "category": "settlement",
+      "title": "令和6年度 財政状況資料集",
+      "url": "https://web.pref.hyogo.lg.jp/kk25/documents/2024_02himaji2.xlsx",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する資料集。兵庫県公式サイトで公表されるExcel版（各市が作成した資料集を県サイトにも掲載するもの）を一次資料とした。総務省決算カードの照合先として使用した。"
     }
   ]
 }

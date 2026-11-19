@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updated_at": "2026-11-16",
+  "updated_at": "2026-11-19",
   "scope": "phase15-core-capital-review",
   "records": [
     {
@@ -44,6 +44,90 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "一般会計歳入131,291,999,787円・歳出130,356,924,686円を含む公式決算資料（市公式『令和6年度決算資料』の会計別決算収支総括表で円単位で確認し、差引935,075,101円が同表の形式収支と検算一致）。実質収支は同表により886,767,101円（円単位のまま記録）。決算の認定議案である議案第58号は令和7年第2回定例会9月議会で原案どおり認定することに決定した（決定日2025年10月16日。市議会公式『第2回定例会9月議会審議結果』で確認）。決算書（歳入歳出決算事項別明細書）の款別合計との突合と監査委員の決算審査意見書の内容（個別の指摘事項等）の精査は未実施。"
+    },
+    {
+      "id": "akashi-city-mic-settlement-card-fy2022",
+      "municipality_key": "akashi-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和4年度 市町村決算カード（兵庫県）",
+      "url": "https://www.soumu.go.jp/main_content/000937109.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和4年度市町村決算カード（兵庫県）のうち明石市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、明石市『令和4年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "akashi-city-fiscal-situation-collection-fy2022",
+      "municipality_key": "akashi-city",
+      "organization": "明石市",
+      "category": "settlement",
+      "title": "令和4年度 財政状況資料集",
+      "url": "https://web.pref.hyogo.lg.jp/kk25/documents/2022_04akasi.xlsx",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する資料集。兵庫県公式サイトで公表されるExcel版（各市が作成した資料集を県サイトにも掲載するもの）を一次資料とした。総務省決算カードの照合先として使用した。"
+    },
+    {
+      "id": "akashi-city-mic-settlement-card-fy2023",
+      "municipality_key": "akashi-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和5年度 市町村決算カード（兵庫県）",
+      "url": "https://www.soumu.go.jp/main_content/000998975.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和5年度市町村決算カード（兵庫県）のうち明石市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、明石市『令和5年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "akashi-city-fiscal-situation-collection-fy2023",
+      "municipality_key": "akashi-city",
+      "organization": "明石市",
+      "category": "settlement",
+      "title": "令和5年度 財政状況資料集",
+      "url": "https://web.pref.hyogo.lg.jp/kk25/documents/2023_04akashi.xlsx",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する資料集。兵庫県公式サイトで公表されるExcel版（各市が作成した資料集を県サイトにも掲載するもの）を一次資料とした。総務省決算カードの照合先として使用した。"
+    },
+    {
+      "id": "akashi-city-mic-settlement-card-fy2024",
+      "municipality_key": "akashi-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和6年度 市町村決算カード（兵庫県）",
+      "url": "https://www.soumu.go.jp/main_content/001064000.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和6年度市町村決算カード（兵庫県）のうち明石市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、明石市『令和6年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "akashi-city-fiscal-situation-collection-fy2024",
+      "municipality_key": "akashi-city",
+      "organization": "明石市",
+      "category": "settlement",
+      "title": "令和6年度 財政状況資料集",
+      "url": "https://web.pref.hyogo.lg.jp/kk25/documents/2024_04akashi2.xlsx",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する資料集。兵庫県公式サイトで公表されるExcel版（各市が作成した資料集を県サイトにも掲載するもの）を一次資料とした。総務省決算カードの照合先として使用した。"
     }
   ]
 }

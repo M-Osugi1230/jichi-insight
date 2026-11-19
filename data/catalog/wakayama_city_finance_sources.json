@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updated_at": "2026-11-16",
+  "updated_at": "2026-11-19",
   "scope": "phase15-core-capital-review",
   "records": [
     {
@@ -44,6 +44,90 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "一般会計歳入171,406,400,509円・歳出167,796,054,596円を含む公式決算資料（『令和6年度決算』歳入歳出決算総括表で確認し、差引残額3,610,345,913円が検算一致）。実質収支は実質収支に関する調書（総括表・千円単位）により3,361,400千円（翌年度へ繰り越すべき財源248,946千円。調書の千円精度のまま記録し、円単位を合成しない）。決算の認定は認第6号『令和6年度和歌山市一般会計歳入歳出決算』として令和7年12月定例会で2025年12月1日に認定された（市議会公式『12月定例会採決状況』および『令和7年12月定例市議会 審議結果』で確認）。決算書（歳入歳出決算事項別明細書）の款別合計との突合と監査委員の決算審査意見書の内容（個別の指摘事項等）の精査は未実施。"
+    },
+    {
+      "id": "wakayama-city-mic-settlement-card-fy2022",
+      "municipality_key": "wakayama-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和4年度 市町村決算カード（和歌山県）",
+      "url": "https://www.soumu.go.jp/main_content/000937114.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和4年度市町村決算カード（和歌山県）のうち和歌山市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、令和5年度決算審査意見書、令和5年度決算に基づく健全化判断比率等の公表資料および令和6年度版『財政状況資料集』の経年分析と突合した。"
+    },
+    {
+      "id": "wakayama-city-fiscal-situation-collection-fy2022",
+      "municipality_key": "wakayama-city",
+      "organization": "和歌山市",
+      "category": "settlement",
+      "title": "令和4年度決算の照合資料（令和5年度決算審査意見書ほか）",
+      "url": "https://www.city.wakayama.wakayama.jp/_res/projects/default_project/_page_/001/008/451/R5ippanntokubetsu.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "令和4年度版『財政状況資料集』Excelは和歌山市公式サイトで現行公表されていないため、照合は代替の公式公表物で行った。収支・市税・地方債現在高・臨時財政対策債年度末残高・各比率は和歌山市監査委員『令和5年度各会計歳入歳出決算審査意見書』普通会計における財政状況の令和4年度欄（前年度欄）の印字値、標準財政規模・将来負担比率は『令和5年度決算に基づく健全化判断比率等の状況について』の令和4年度欄の印字値、基金現在高は『令和6年度財政状況資料集』の基金残高に係る経年分析シート（百万円単位）の令和4年度値、人口は総務省『令和5年度市町村決算カード』（翌年度版）の住民基本台帳人口欄の印字値と総務省決算カードを突合した。本レコードのURLは主たる照合資料である審査意見書を指す。"
+    },
+    {
+      "id": "wakayama-city-mic-settlement-card-fy2023",
+      "municipality_key": "wakayama-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和5年度 市町村決算カード（和歌山県）",
+      "url": "https://www.soumu.go.jp/main_content/000998979.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和5年度市町村決算カード（和歌山県）のうち和歌山市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、令和6年度版『財政状況資料集』総括表の令和5年度欄（前年度欄）、令和5年度決算審査意見書および令和5年度決算に基づく健全化判断比率等の公表資料と突合した。"
+    },
+    {
+      "id": "wakayama-city-fiscal-situation-collection-fy2023",
+      "municipality_key": "wakayama-city",
+      "organization": "和歌山市",
+      "category": "settlement",
+      "title": "令和5年度 財政状況資料集（令和6年度版の前年度欄ほかで照合）",
+      "url": "https://www.city.wakayama.wakayama.jp/_res/projects/default_project/_page_/001/008/508/R6zaiseijoukyou2.xlsx",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "令和5年度版『財政状況資料集』Excelは和歌山市公式サイトで現行公表されていないため、照合は代替の公式公表物で行った。収支・標準財政規模・地方債現在高（臨時財政対策債除き）・基金現在高・各比率・人口は『令和6年度財政状況資料集』総括表の令和5年度欄（前年度欄）の印字値、市税は和歌山市監査委員『令和5年度各会計歳入歳出決算審査意見書』の印字値、健全化判断比率は『令和5年度決算に基づく健全化判断比率等の状況について』の印字値と総務省決算カードを突合した。本レコードのURLは照合に用いた令和6年度版資料集Excelを指す。"
+    },
+    {
+      "id": "wakayama-city-mic-settlement-card-fy2024",
+      "municipality_key": "wakayama-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和6年度 市町村決算カード（和歌山県）",
+      "url": "https://www.soumu.go.jp/main_content/001064004.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和6年度市町村決算カード（和歌山県）のうち和歌山市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、和歌山市『令和6年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "wakayama-city-fiscal-situation-collection-fy2024",
+      "municipality_key": "wakayama-city",
+      "organization": "和歌山市",
+      "category": "settlement",
+      "title": "令和6年度 財政状況資料集",
+      "url": "https://www.city.wakayama.wakayama.jp/_res/projects/default_project/_page_/001/008/508/R6zaiseijoukyou2.xlsx",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する資料集。和歌山市公式サイトで公表されるExcel版を一次資料とした。総務省決算カードの照合先として使用した。"
     }
   ]
 }
