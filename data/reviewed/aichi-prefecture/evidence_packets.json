@@ -1,0 +1,69 @@
+[
+  {
+    "id": "evidence-aichi-pref-2026-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-230006-fiscal-2026-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算の歳入歳出総額は3,222,441,000千円である。",
+        "source_ids": [
+          "aichi-pref-budget-2026-explanation-pdf",
+          "aichi-pref-budget-2026-bill-pdf",
+          "aichi-pref-assembly-2026-feb-session-results"
+        ],
+        "location_note": "予算に関する説明書「歳入歳出予算事項別明細書」総括表の歳入合計。第1号議案（その1）の歳出合計とも一致する。",
+        "decision": "accepted",
+        "review_note": "2026年2月9日公表の予算案の規模（3兆2,224億円）と千円単位で一致し、第1号議案が2026年3月25日に可決されたことを県議会公式の結果概要で確認した。予算案段階の額ではなく成立後の額として収録する。"
+      }
+    ],
+    "open_questions": [
+      "年度終了後の執行額・決算額は未確定。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aichi-pref-2026-local-tax",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-230006-fiscal-2026-local-tax",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度当初予算の県税は1,324,300,000千円である。",
+        "source_ids": [
+          "aichi-pref-budget-2026-explanation-pdf",
+          "aichi-pref-assembly-2026-feb-session-results"
+        ],
+        "location_note": "予算に関する説明書「歳入歳出予算事項別明細書」総括表（歳入）の「1 県税」欄。",
+        "decision": "accepted",
+        "review_note": "第1号議案の成立（2026年3月25日可決）を確認したうえで、成立後の当初予算の額として収録する。"
+      }
+    ],
+    "open_questions": [
+      "年度終了後の執行額・決算額は未確定。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aichi-pref-2026-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-230006-fiscal-2026-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算（成立後）の歳出総額は3,222,441,000千円である。",
+        "source_ids": [
+          "aichi-pref-budget-2026-explanation-pdf",
+          "aichi-pref-assembly-2026-feb-session-results"
+        ],
+        "location_note": "予算に関する説明書「歳入歳出予算事項別明細書」総括表の歳出合計。",
+        "decision": "accepted",
+        "review_note": "歳入合計と同額であり、款別13区分の合計とも一致する。第1号議案は2026年3月25日に可決され、提案額のまま成立した。"
+      }
+    ],
+    "open_questions": [
+      "年度終了後の執行額・決算額は未確定。"
+    ],
+    "review_status": "reviewed"
+  }
+]
