@@ -626,3 +626,11 @@
   .serviceRoutesGrid { grid-template-columns: 1fr; }
   .serviceRouteCard, .serviceRouteCard:last-child { min-height: 0; }
 }
+
+/* The task cards use descriptive categories, never numbered badges. */
+.serviceRouteTop span:first-child {
+  height: auto;
+  width: auto;
+  padding: 6px 11px;
+  font-size: .77rem;
+}
