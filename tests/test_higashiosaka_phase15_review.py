@@ -394,7 +394,7 @@ def test_higashiosaka_and_previous_fortyone_are_reviewed_complete_and_himeji_is_
     ):
         assert by_code[code]["status"] == "reviewed_complete"
 
-    assert queue["summary"]["reviewed_complete_count"] == 67
+    assert queue["summary"]["reviewed_complete_count"] == 68
     assert queue["summary"]["review_in_progress_count"] == 0
     assert queue["summary"]["pending_record_review_count"] == 0
     assert queue["summary"]["next_official_code"] is None

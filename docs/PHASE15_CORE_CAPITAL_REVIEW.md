@@ -910,7 +910,7 @@ Deferred depth includes the full enumeration of the policies and measures under 
 
 ## Current queue
 
-- Reviewed complete: 67 / 67 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市、姫路市、尼崎市、明石市、西宮市、奈良市、和歌山市、鳥取市、松江市、倉敷市、呉市、福山市、下関市、山口市、徳島市、高松市、松山市、高知市、久留米市、佐賀市、長崎市、佐世保市、大分市、宮崎市、鹿児島市、那覇市
+- Reviewed complete: 68 / 68 — 函館市、旭川市、青森市、八戸市、盛岡市、秋田市、山形市、福島市、郡山市、いわき市、水戸市、宇都宮市、前橋市、高崎市、川越市、川口市、越谷市、船橋市、柏市、新宿区、八王子市、横須賀市、富山市、金沢市、福井市、甲府市、長野市、松本市、岐阜市、豊橋市、岡崎市、一宮市、豊田市、津市、大津市、豊中市、吹田市、高槻市、枚方市、八尾市、寝屋川市、東大阪市、姫路市、尼崎市、明石市、西宮市、奈良市、和歌山市、鳥取市、松江市、倉敷市、呉市、福山市、下関市、山口市、徳島市、高松市、松山市、高知市、久留米市、佐賀市、長崎市、佐世保市、大分市、宮崎市、鹿児島市、那覇市、札幌市
 - Review in progress: 0
 - Pending record review: 0
 - Blocked source inventory: 0
@@ -928,3 +928,7 @@ Phase 15 is complete only when:
 - all deferred evidence remains explicit
 - independent policy-achievement, causal-attribution and unverified cross-city ranking counts remain zero
 - final repository/data validation, regression tests, web checks and Production Smoke pass on the merged head
+
+## Post-completion integration — Sapporo (2026-11-19)
+
+札幌市は政令指定都市としてPhase 13で`reviewed_complete`となっていたため、Phase 14の対象母集団（中核市・県庁所在地67自治体）に含まれず、本キューの対象外だった。2026-11-19に所有者（大杉邑大）が札幌市を汎用市ページの枠組みへ統合し68自治体とすることを決定したため、Phase 13のv1レビュー・パッケージを原完了（`data/catalog/sapporo_phase13_completion.json`、2026-08-18）として、`data/catalog/sapporo_phase15_completion.json`によりPhase 15枠組みへ統合した（Issue #695）。これによりキューは68/68自治体すべてが`reviewed_complete`となった。上記の完了定義は、統合後の68レコードすべてに適用されるものとして読み替える。Phase 15が67自治体で完了した経緯（2026-11-17、那覇市が67番目）は上記の記録のとおり保持する。
