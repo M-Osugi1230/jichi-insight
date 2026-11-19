@@ -1,5 +1,5 @@
 {
-  "version": "0.8.0",
+  "version": "0.9.0",
   "updated_at": "2026-11-19",
   "scope": "pilot",
   "records": [
@@ -254,6 +254,48 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "福岡県公報の公式索引ページ。令和3年4月14日の掲載として、選挙管理委員会告示第76号「福岡県知事選挙における当選人の住所及び氏名」を収録する。2021年知事選挙の当選告示が2021年4月14日に行われたことを示す。この日は当選の効力が発生し知事が就任した日であり、公職選挙法第259条による任期の起算日（選挙の日＝2021年4月11日）ではない。2026-11-19に索引ページで確認した。"
+    },
+    {
+      "id": "aichi-pref-governor",
+      "municipality_key": "aichi-prefecture",
+      "organization": "愛知県",
+      "category": "executive",
+      "title": "愛知県知事 大村秀章のプロフィール",
+      "url": "https://www.pref.aichi.jp/site/chiji/profile.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "愛知県公式の知事プロフィール。2011年2月に知事へ就任し、2023年2月に4期目となった経歴を掲載する。"
+    },
+    {
+      "id": "aichi-pref-governor-election-2023-results",
+      "municipality_key": "aichi-prefecture",
+      "organization": "愛知県選挙管理委員会",
+      "category": "election",
+      "title": "投開票の状況・選挙公報（令和5年2月5日執行 愛知県知事選挙）",
+      "url": "https://www.pref.aichi.jp/soshiki/senkyo/0000087359.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "2023年愛知県知事選挙の投開票結果と選挙公報を掲載する選挙管理委員会の公式ページ。"
+    },
+    {
+      "id": "aichi-pref-governor-election-2027-schedule",
+      "municipality_key": "aichi-prefecture",
+      "organization": "愛知県選挙管理委員会",
+      "category": "election",
+      "title": "愛知県知事選挙の執行について（2026年11月10日 選挙管理委員会プレスリリース）",
+      "url": "https://www.pref.aichi.jp/press-release/081110.html",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "「2027年2月14日任期満了による愛知県知事選挙」の執行決定（2027年1月21日告示・2月7日選挙期日）を公表する。前回選挙の告示日（2023年1月19日）と選挙期日（2023年2月5日）も参考として掲載する。"
     }
   ]
 }

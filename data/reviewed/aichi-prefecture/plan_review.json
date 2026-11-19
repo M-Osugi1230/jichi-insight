@@ -1,0 +1,55 @@
+{
+  "id": "phase15-aichi-plan-review",
+  "name_ja": "愛知県",
+  "next_action": "Enumerate the 47 major policies of the 2024-2026 implementation plan and their progress indicators only when official sources with stable record-level locators confirm them; register the governor's promises from the official 2023 election bulletin in the cluster's promise stage; add assembly, project and promise layers in the later stages of the Aichi cluster programme; and keep supplementary budgets, execution and settlement as separate states.",
+  "official_code": "230006",
+  "quality_boundary": "This package reviews the current plan identity and period (Aichi Vision 2030, the prefecture's top-level plan adopted in November 2020 for FY2021-FY2030, looking ahead to around 2040), the policy structure (the basic goal, the four intended forms of Aichi and the ten key policy directions, as restated in the official FY2024 annual report), the implementation layer (the three-year implementation plan for 2024-2026 with 47 major policies) and the progress-governance layer (annual reports and progress-management indicators). The 47 major policies are not enumerated at record level and stay deferred depth. The enacted FY2026 general-account initial budget is registered separately in fiscal_records.json at the published thousand-yen precision, and the FY2022-FY2024 ordinary-account settlements are registered separately in settlement_records.json; general-account settlement figures published by the prefecture are not mixed into the ordinary-account series.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "計画の策定時期と位置付けは、年次レポート概要版の冒頭（「あいちビジョン2030」（2020年11月策定））と企画課の公式ページで直接確認した。",
+      "evidence_role": "current_plan_identity",
+      "id": "aichi-current-plan-identity",
+      "review_note": "計画の同一性と期間を、後継の実施計画や年次レポートと分離して保持する。レビュー済みレコード。",
+      "source_url": "https://www.pref.aichi.jp/soshiki/kikaku/aichivision2030-2024-2026keikaku.html",
+      "statement": "愛知県の現行の最上位計画は「あいちビジョン2030」であり、2040年頃の社会経済を展望し、2030年度までに重点的に取り組むべき政策の方向性を示す計画として、2020年11月に策定された。計画期間は2021年度から2030年度までの10年間である。",
+      "title": "あいちビジョン2030の策定と計画期間（2020年11月策定、2021年度〜2030年度）",
+      "value": "あいちビジョン2030（2020年11月策定、計画期間2021年度〜2030年度、2040年頃を展望）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "枠組みは年次レポート概要版（2024年度版）の「基本目標の達成に向けて」と各方向性の見出しで直接確認した。",
+      "evidence_role": "policy_structure",
+      "id": "aichi-plan-policy-structure",
+      "review_note": "方向性⑧の文言は2024-2026実施計画における現行表記（日本中央回廊の中心を担う大都市圏づくり）を採用した。レビュー済みレコード。",
+      "source_url": "https://www.pref.aichi.jp/uploaded/attachment/530461.pdf",
+      "statement": "基本目標は「暮らし・経済・環境が調和した輝くあいち〜危機を乗り越え、愛知の元気を日本の活力に〜」である。4つのめざすべき姿は「危機に強い愛知」「すべての人が生涯輝き、活躍できる愛知」「イノベーションを創出する愛知」「世界から選ばれる魅力的な愛知」である。10の重要政策の方向性は、①危機に強い安全・安心な地域づくり、②次代を創る人づくり、③すべての人が生涯にわたって活躍できる社会づくり、④安心と支え合いの社会づくり、⑤豊かな時間を生み出す働き方が可能な社会づくり、⑥イノベーションを巻き起こす力強い産業づくり、⑦世界とつながるグローバルネットワークづくり、⑧日本中央回廊の中心を担う大都市圏づくり、⑨選ばれる魅力的な地域づくり、⑩持続可能な地域づくりである。",
+      "title": "基本目標・4つのめざすべき姿・10の重要政策の方向性",
+      "value": "基本目標「暮らし・経済・環境が調和した輝くあいち〜危機を乗り越え、愛知の元気を日本の活力に〜」／4つのめざすべき姿／10の重要政策の方向性"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "実施計画の構成は年次レポート概要版の冒頭で直接確認した。",
+      "evidence_role": "implementation_layer",
+      "id": "aichi-plan-implementation-layer",
+      "review_note": "主要政策47の個別列挙は本レビューの対象外とし、後続の深掘りに分離する。レビュー済みレコード。",
+      "source_url": "https://www.pref.aichi.jp/uploaded/attachment/530461.pdf",
+      "statement": "ビジョンの推進のため、3か年（2024〜2026年度）の実施計画が作成され、10の重要政策の方向性に沿った47の主要政策ごとに3か年の工程表が示されている。ビジョン推進の前期は2021〜2023年度であり、2024年度は中期の初年度にあたる。",
+      "title": "3か年実施計画（2024-2026実施計画）と主要政策47",
+      "value": "2024-2026実施計画（主要政策47、3か年の工程表）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "進行管理の方法と指標は年次レポート概要版の「基本目標の達成に向けた進捗を評価するための進捗管理指標」および方向性別の進捗目標表で直接確認した。",
+      "evidence_role": "progress_governance",
+      "id": "aichi-plan-progress-governance",
+      "review_note": "指標の実績値そのものの登録は本レビューの対象外とする。レビュー済みレコード。",
+      "source_url": "https://www.pref.aichi.jp/uploaded/attachment/530461.pdf",
+      "statement": "進行管理は毎年度、年次レポートにより実施される。基本目標の達成に向けた進捗管理指標は、県民の幸福感（暮らし）、県内総生産の国内総生産に対するシェア（経済）、温室効果ガスの総排出量の削減率（2013年度比）（環境）の3件であり、2030年頃の数値目標と2026年頃の進捗目標が設定されている。10の重要政策の方向性ごとに設定された進捗管理指標についても、2026年頃の進捗目標が設定されている。",
+      "title": "年次レポートによる進行管理と進捗管理指標",
+      "value": "年次レポートによる毎年度の進行管理／進捗管理指標（基本目標3件＋方向性ごと）"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-19"
+}

@@ -41,19 +41,20 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 18
-    assert len({record["id"] for record in catalog["records"]}) == 18
+    assert len(catalog["records"]) == 21
+    assert len({record["id"] for record in catalog["records"]}) == 21
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
     terms = load_json("data/entities/executives/executive_terms.json")
     packets = load_json("data/entities/executives/evidence_packets.json")
 
-    assert len(terms) == 3
+    assert len(terms) == 4
     assert {term["municipality_id"] for term in terms} == {
         "jp-local-400009",
         "jp-local-401307",
         "jp-local-401005",
+        "jp-local-230006",
     }
     for term in terms:
         assert validation_errors("schemas/executive_term.schema.json", term) == []
@@ -75,6 +76,7 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
         "jp-local-400009": "2029-04-10",
         "jp-local-401307": "2026-12-06",
         "jp-local-401005": "2027-02-19",
+        "jp-local-230006": "2027-02-14",
     }
     for term in terms:
         assert term["term_end"] == expected_term_ends[term["municipality_id"]]
@@ -109,6 +111,7 @@ def test_executive_term_starts_follow_statutory_counting() -> None:
         "jp-local-400009": "2025-04-11",
         "jp-local-401307": "2022-12-07",
         "jp-local-401005": "2023-02-20",
+        "jp-local-230006": "2023-02-15",
     }
     for term in terms:
         assert term["term_start"] == expected_term_starts[term["municipality_id"]]
