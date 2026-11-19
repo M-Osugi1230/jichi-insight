@@ -1,0 +1,167 @@
+{
+  "expansion_rule": {
+    "added_count": 2,
+    "description": "第2ラウンド（合計10件化）: 第1ラウンドと同じ母集団・交差条件を継続し、分野1・分野2について、第1ラウンドの選定事業の続きから掲載順に事業をたどり、次に交差条件を満たす事業を1件ずつ追加した。selectionsの並びは、第1ラウンド8件（分野1〜8の順）の後に、第2ラウンド2件（分野1・分野2の順）。",
+    "total_count": 10
+  },
+  "issue": 742,
+  "municipality_id": "jp-local-011002",
+  "municipality_key": "sapporo-city",
+  "population": {
+    "description": "アクションプラン2023（第2次札幌市まちづくり戦略ビジョンの中期実施計画、計画期間2023〜2027年度）第2章に計画体系別に掲載された全599事業（計画事業費総額1兆7,854億円）のうち、事業目標が設定されている事業（主な事業406件中403件が該当）と、令和8年度札幌市予算の概要（別冊）主要事業一覧（一般会計）に事業単独の金額が確認できる事業の交差集合。札幌市には単一の公式な「重点事業」リストがないため、母集団はこの交差集合と定義する。主要事業一覧は主要事業のみを掲載する資料であり、掲載されていないことは事業の重要性や実施の有無を意味しない。",
+    "fiscal_year": 2026,
+    "policy_count": 8,
+    "source_ids": [
+      "sapporo-city-action-plan-2023-page"
+    ]
+  },
+  "review_status": "reviewed",
+  "scope": "expanded",
+  "selection_rule": {
+    "description": "第1ラウンド: 計画体系の柱である8つの「まちづくりの分野」を本書の掲載順に取り、各分野について「主な事業」を基本目標の順・掲載順にたどり、交差条件（事業目標が設定されていること、かつ令和8年度主要事業一覧に事業単独の金額が確認できること）を満たす最初の事業を1件ずつ選ぶ（8件）。金額の大小では選ばない。対応が別事業の項目にとどまる場合は選ばず、次の事業に進み、その経緯をskippedに残す。",
+    "pillars": [
+      "まちづくりの分野1 子ども・若者",
+      "まちづくりの分野2 生活・暮らし",
+      "まちづくりの分野3 地域",
+      "まちづくりの分野4 安全・安心",
+      "まちづくりの分野5 経済",
+      "まちづくりの分野6 スポーツ・文化",
+      "まちづくりの分野7 環境",
+      "まちづくりの分野8 都市空間"
+    ]
+  },
+  "selections": [
+    {
+      "official_title": "さっぽろ未来創生プラン推進事業",
+      "pillar": "まちづくりの分野1 子ども・若者",
+      "project_id": "jp-local-011002-project-2026-future-creation-plan-promotion",
+      "selection_basis": "第1ラウンド。分野1「子ども・若者」の主な事業の掲載順1番目で、事業目標が設定され、令和8年度主要事業一覧に項目「さっぽろ未来創生プラン推進費」として事業単独の金額（23,000千円）が掲載されており、交差条件を満たす最初の事業。計画推進のための事業だが、掲載順の機械的なルールに従って選定した。",
+      "series_id": "jp-local-011002-project-series-future-creation-plan-promotion",
+      "source_ids": [
+        "sapporo-city-action-plan-2023-field1-children-youth-pdf",
+        "sapporo-city-budget-fy2026-bessatsu-pdf"
+      ]
+    },
+    {
+      "official_title": "就労ボランティア体験事業",
+      "pillar": "まちづくりの分野2 生活・暮らし",
+      "project_id": "jp-local-011002-project-2026-employment-volunteer-experience",
+      "selection_basis": "第1ラウンド。分野2「生活・暮らし」の主な事業の掲載順1番目で、事業目標が設定され、令和8年度主要事業一覧に項目「就労ボランティア体験事業費」として事業単独の金額（23,000千円）が掲載されており、交差条件を満たす最初の事業。",
+      "series_id": "jp-local-011002-project-series-employment-volunteer-experience",
+      "source_ids": [
+        "sapporo-city-action-plan-2023-field2-daily-life-pdf",
+        "sapporo-city-budget-fy2026-bessatsu-pdf"
+      ]
+    },
+    {
+      "official_title": "多文化共生推進事業",
+      "pillar": "まちづくりの分野3 地域",
+      "project_id": "jp-local-011002-project-2026-multicultural-coexistence-promotion",
+      "selection_basis": "第1ラウンド。分野3「地域」の主な事業の掲載順1番目で、事業目標が設定され、令和8年度主要事業一覧に項目「多文化共生推進費」として事業単独の金額（75,000千円）が掲載されており、交差条件を満たす最初の事業。",
+      "series_id": "jp-local-011002-project-series-multicultural-coexistence-promotion",
+      "source_ids": [
+        "sapporo-city-action-plan-2023-field3-community-pdf",
+        "sapporo-city-budget-fy2026-bessatsu-pdf"
+      ]
+    },
+    {
+      "official_title": "災害対策本部機能強化事業",
+      "pillar": "まちづくりの分野4 安全・安心",
+      "project_id": "jp-local-011002-project-2026-disaster-hq-function-strengthening",
+      "selection_basis": "第1ラウンド。分野4「安全・安心」の主な事業の掲載順1番目で、事業目標が設定され、令和8年度主要事業一覧に項目「災害対策本部機能強化費」として事業単独の金額（3,400千円）が掲載されており、交差条件を満たす最初の事業。",
+      "series_id": "jp-local-011002-project-series-disaster-hq-function-strengthening",
+      "source_ids": [
+        "sapporo-city-action-plan-2023-field4-safety-pdf",
+        "sapporo-city-budget-fy2026-bessatsu-pdf"
+      ]
+    },
+    {
+      "official_title": "ふるさと納税活用事業",
+      "pillar": "まちづくりの分野5 経済",
+      "project_id": "jp-local-011002-project-2026-hometown-tax-utilization",
+      "selection_basis": "第1ラウンド。分野5「経済」の主な事業の掲載順1番目で、事業目標が設定され、令和8年度主要事業一覧に項目「ふるさと納税活用費」として事業単独の金額（2,978,000千円）が掲載されており、交差条件を満たす最初の事業。歳入関連の事業だが、掲載順の機械的なルールに従って選定した。",
+      "series_id": "jp-local-011002-project-series-hometown-tax-utilization",
+      "source_ids": [
+        "sapporo-city-action-plan-2023-field5-economy-pdf",
+        "sapporo-city-budget-fy2026-bessatsu-pdf"
+      ]
+    },
+    {
+      "official_title": "アスリート発掘・育成・活用事業",
+      "pillar": "まちづくりの分野6 スポーツ・文化",
+      "project_id": "jp-local-011002-project-2026-athlete-discovery-development",
+      "selection_basis": "第1ラウンド。分野6「スポーツ・文化」の主な事業の掲載順2番目。掲載順1番目の藻岩山スキー場運営体制強化支援事業は令和8年度主要事業一覧に事業単独の項目がなく交差条件を満たさなかったため（skipped参照）、次に条件を満たした事業（項目は事業名と同名、56,000千円）。",
+      "series_id": "jp-local-011002-project-series-athlete-discovery-development",
+      "source_ids": [
+        "sapporo-city-action-plan-2023-field6-sports-culture-pdf",
+        "sapporo-city-budget-fy2026-bessatsu-pdf"
+      ]
+    },
+    {
+      "official_title": "GX投資推進事業",
+      "pillar": "まちづくりの分野7 環境",
+      "project_id": "jp-local-011002-project-2026-gx-investment-promotion",
+      "selection_basis": "第1ラウンド。分野7「環境」の主な事業の掲載順1番目で、事業目標が設定され、令和8年度主要事業一覧に項目「GX投資推進費」として事業単独の金額（187,000千円）が掲載されており、交差条件を満たす最初の事業。",
+      "series_id": "jp-local-011002-project-series-gx-investment-promotion",
+      "source_ids": [
+        "sapporo-city-action-plan-2023-field7-environment-pdf",
+        "sapporo-city-budget-fy2026-bessatsu-pdf"
+      ]
+    },
+    {
+      "official_title": "土地利用計画策定",
+      "pillar": "まちづくりの分野8 都市空間",
+      "project_id": "jp-local-011002-project-2026-land-use-plan-formulation",
+      "selection_basis": "第1ラウンド。分野8「都市空間」の主な事業の掲載順2番目。掲載順1番目の歩きたくなるまちづくり推進事業は令和8年度主要事業一覧に対応する事業単独の項目がなく交差条件を満たさなかったため（skipped参照）、次に条件を満たした事業（項目「土地利用計画策定費」11,000千円）。",
+      "series_id": "jp-local-011002-project-series-land-use-plan-formulation",
+      "source_ids": [
+        "sapporo-city-action-plan-2023-field8-urban-space-pdf",
+        "sapporo-city-budget-fy2026-bessatsu-pdf"
+      ]
+    },
+    {
+      "official_title": "DV対策推進事業",
+      "pillar": "まちづくりの分野1 子ども・若者",
+      "project_id": "jp-local-011002-project-2026-dv-countermeasures-promotion",
+      "selection_basis": "第2ラウンド。分野1「子ども・若者」について第1ラウンドの選定事業の続きから掲載順にたどり、次に交差条件を満たした事業（主な事業の掲載順2番目、項目「DV対策推進費」25,000千円）。",
+      "series_id": "jp-local-011002-project-series-dv-countermeasures-promotion",
+      "source_ids": [
+        "sapporo-city-action-plan-2023-field1-children-youth-pdf",
+        "sapporo-city-budget-fy2026-bessatsu-pdf"
+      ]
+    },
+    {
+      "official_title": "札幌シニア大学運営事業",
+      "pillar": "まちづくりの分野2 生活・暮らし",
+      "project_id": "jp-local-011002-project-2026-senior-university-operation",
+      "selection_basis": "第2ラウンド。分野2「生活・暮らし」について第1ラウンドの選定事業の続きから掲載順にたどり、次に交差条件を満たした事業（主な事業の掲載順2番目、項目「札幌シニア大学運営費」5,200千円）。",
+      "series_id": "jp-local-011002-project-series-senior-university-operation",
+      "source_ids": [
+        "sapporo-city-action-plan-2023-field2-daily-life-pdf",
+        "sapporo-city-budget-fy2026-bessatsu-pdf"
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "official_title": "藻岩山スキー場運営体制強化支援事業",
+      "pillar": "まちづくりの分野6 スポーツ・文化",
+      "reason": "スポーツ・文化の主な事業の掲載順先頭で事業目標も設定されているが、令和8年度主要事業一覧（一般会計）に事業単独の項目がないため、交差条件を満たさなかった。",
+      "source_ids": [
+        "sapporo-city-action-plan-2023-field6-sports-culture-pdf",
+        "sapporo-city-budget-fy2026-bessatsu-pdf"
+      ]
+    },
+    {
+      "official_title": "歩きたくなるまちづくり推進事業",
+      "pillar": "まちづくりの分野8 都市空間",
+      "reason": "都市空間の主な事業の掲載順先頭で事業目標も設定されているが、令和8年度主要事業一覧に同名または対応する事業単独の項目がない。主要事業一覧の「居心地が良く歩きたくなる都心まちづくり推進費」（13,000千円）は都心部を対象とする別の事業であり、本事業（歩行を中心とした身体活動の促進とガイドライン策定の検討）とは内容が異なるため、対応させなかった。",
+      "source_ids": [
+        "sapporo-city-action-plan-2023-field8-urban-space-pdf",
+        "sapporo-city-budget-fy2026-bessatsu-pdf"
+      ]
+    }
+  ],
+  "updated_at": "2026-11-20",
+  "version": "0.1.0"
+}
