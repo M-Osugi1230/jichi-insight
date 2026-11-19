@@ -276,5 +276,49 @@
       "事業との接続は文言・内容に基づく推定であり、県が公約と事業の公式な対応付けを公表した場合は接続を見直す。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-toyota-city-2024",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-toyota-city-2024",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "愛知県選挙管理委員会「市町村選挙情報（令和5年度）」で豊田市長選挙の日程（2024年2月4日執行）を確認したが、選挙公報への導線は掲載されていない。県の名簿・任期満了日等一覧表は任期情報のみで、公約原文は含まない。",
+        "source_ids": [
+          "toyota-city-mayor-election-2024-schedule",
+          "aichi-pref-mayors-term-list-2026",
+          "aichi-pref-term-expiry-list-2026"
+        ],
+        "location_note": "県選管の選挙情報ページと県の名簿・一覧表（いずれも公式公表）。",
+        "decision": "accepted",
+        "review_note": "公式資料側に公約原文の掲載がないことを確認。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "豊田市公式サイトの旧選挙ページ（Wayback Machine保存版）には「選挙公報（1月下旬順次掲載予定）」の予告があったが、同ページは投開票直後に削除され、公報ページ・PDFのアーカイブ保存は存在しない。候補者本人の公式サイトも特定できなかった。",
+        "source_ids": [
+          "toyota-city-mayor-election-2024-schedule"
+        ],
+        "location_note": "豊田市公式サイト旧選挙ページの保存版（2024年1月19日時点）と、現行の選挙セクション・県選管ページの確認結果に基づく。",
+        "decision": "accepted",
+        "review_note": "掲載予告のみが証拠であり、公報の実物は確認できていないため、原典としては採用しない。"
+      },
+      {
+        "field": "result_status",
+        "statement": "検証可能な原典を特定できなかったため、result_status を no_stable_primary_source_found とし、公約レコードは作成しない。報道の候補者アンケート回答は候補者自身の公式公表物ではないため、原典の代替として採用しない。",
+        "source_ids": [
+          "toyota-city-mayor-election-2024-schedule"
+        ],
+        "location_note": "探索記録 manifesto-source-search-toyota-city-2024 の review_note に判断の詳細を記載。",
+        "decision": "accepted",
+        "review_note": "不存在の断定はしない（nonexistence_claim は false）。"
+      }
+    ],
+    "open_questions": [
+      "選挙公報コピーのCDN（民間選挙情報サイト）全件確認はアーカイブ側の応答不良で完遂できていない。該当が存在する可能性は低いと判断するが、完全な不存在証明ではない。",
+      "国立国会図書館WARPにおける豊田市サイトの収集有無は未確定。紙の選挙公報・法定ビラの現物確認はオフライン経路が必要で、本探索の範囲外。"
+    ],
+    "review_status": "reviewed"
   }
 ]

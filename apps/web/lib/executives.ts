@@ -109,6 +109,7 @@ const municipalityIdToKey = {
   "jp-local-401307": "fukuoka-city",
   "jp-local-401005": "kitakyushu-city",
   "jp-local-231002": "nagoya-city",
+  "jp-local-232114": "toyota-city",
 } as const;
 
 const executiveSources = [

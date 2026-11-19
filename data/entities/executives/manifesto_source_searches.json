@@ -151,5 +151,32 @@
     ],
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-toyota-city-2024",
+    "executive_term_id": "jp-local-232114-executive-2024-02-19",
+    "searched_at": "2026-11-19",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "no_stable_primary_source_found",
+    "manifesto_source_ids_found": [],
+    "checked_source_ids": [
+      "toyota-city-mayor-election-2024-schedule",
+      "aichi-pref-mayors-term-list-2026",
+      "aichi-pref-term-expiry-list-2026"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "2024年豊田市長選挙の選挙公報は、豊田市の公式選挙ページに選挙期間中の掲載予告があったものの、投開票（2024年2月4日）直後に選挙ページ一式が削除され、公報ページ・PDFはWayback Machineにも保存されていないため、公式のWeb公表物としては現存しない。候補者本人の公式ウェブサイトは確認できず（想定ドメインにもアーカイブ保存なし）、Facebookページには選挙期間中の保存がなく、選挙ドットコムにも豊田市長選の記事・公報コピーはなかった。報道の候補者アンケートは候補者自身の公式公表物ではないため原典として採用しない。以上により、検証可能な原典を特定できなかったものとして公約は未登録とする。これは公約が存在しないという主張ではない。なお、選挙公報の全件不存在までは証明できていない（選挙公報コピーのCDN全件確認はアーカイブ側の応答不良で完遂できず、国立国会図書館WARPの収集有無も未確定）。",
+    "next_actions": [
+      "紙の選挙公報の現物（選挙管理委員会の保管分・図書館所蔵）や選挙公報の複写が特定できれば、原典として登録し直す",
+      "2028年2月執行予定の次回市長選挙では、選挙期間中に選挙公報の公式掲載を確認し、新任期の公約原文資料として登録する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]

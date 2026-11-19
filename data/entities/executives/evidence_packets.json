@@ -286,5 +286,72 @@
       "登録済み事業と接続していない公約（市民税減税、敬老パス値下げ、保育料無償化、名古屋城木造復元等）については、進捗を裏付ける公式資料が登録され次第、接続を拡充する。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-toyota-city-current-mayor-term",
+    "subject_type": "executive_term",
+    "subject_id": "jp-local-232114-executive-2024-02-19",
+    "claims": [
+      {
+        "field": "person_name",
+        "statement": "豊田市の現職市長が太田稔彦であることを、豊田市公式サイトの市長あいさつと愛知県「市町村長等名簿」で確認した。",
+        "source_ids": [
+          "toyota-city-mayor",
+          "aichi-pref-mayors-term-list-2026"
+        ],
+        "location_note": "豊田市公式「市長あいさつ（新年のごあいさつ）」（令和8年元日付、豊田市長・太田稔彦の署名）と、愛知県「市町村長等名簿」の豊田市の行（就任回数4回）。",
+        "decision": "accepted",
+        "review_note": "公式ページの現職表示と県名簿の記載を確認。"
+      },
+      {
+        "field": "election_date",
+        "statement": "現任期に対応する市長選挙は2024年2月4日に執行され、太田稔彦が再選した（任期満了に伴う選挙、投票率46.31%）。",
+        "source_ids": [
+          "toyota-city-mayor-election-2024-schedule",
+          "aichi-pref-mayors-term-list-2026"
+        ],
+        "location_note": "愛知県選挙管理委員会「市町村選挙情報（令和5年度）」の市町村長選挙の表（豊田市長選挙：選挙期日2月4日、告示日1月28日、任期満了（2月18日）、46.31%）と、県名簿の就任回数4回の記載。",
+        "decision": "accepted",
+        "review_note": "選挙期日と選挙事由は県選管の公式公表で確認。得票数は市の選挙ページ削除により公式の現行公表で確認できないため、登録値には含めない。"
+      },
+      {
+        "field": "term_start",
+        "statement": "太田稔彦市長の現任期の起算日は2024年2月19日である。2024年市長選挙は任期満了に伴う選挙として、前任期の満了日（2024年2月18日）前の2024年2月4日に執行されたため、公職選挙法第259条ただし書により、任期は前任者の任期満了の日の翌日である2024年2月19日から起算される。県の任期満了日等一覧表が現任期の満了日を2028年2月18日と明示していることとも整合する（起算日＋4年−1日＝2028年2月18日）。",
+        "source_ids": [
+          "toyota-city-mayor-election-2024-schedule",
+          "aichi-pref-term-expiry-list-2026",
+          "public-offices-election-act"
+        ],
+        "location_note": "公職選挙法第259条ただし書と、愛知県選挙管理委員会「市町村選挙情報（令和5年度）」の「任期満了（2月18日）」の記載、県「任期満了日等一覧表」（令和8年3月5日現在）の豊田市の行。",
+        "decision": "accepted",
+        "review_note": "任期満了選挙のため第259条ただし書（前任者満了の翌日起算）を適用して確認した。"
+      },
+      {
+        "field": "term_end",
+        "statement": "豊田市長の現任期の満了日は2028年2月18日である。",
+        "source_ids": [
+          "aichi-pref-mayors-term-list-2026",
+          "aichi-pref-term-expiry-list-2026"
+        ],
+        "location_note": "愛知県「市町村長等名簿」の豊田市の行と、県「市町村長及び議会議員の任期満了日等一覧表」（令和8年3月5日現在）の豊田市の行に、いずれも任期満了日として令和10年2月18日の明記がある。",
+        "decision": "accepted",
+        "review_note": "任期満了日は県の公式公表2資料の明記に基づく。"
+      },
+      {
+        "field": "manifesto_source_ids",
+        "statement": "太田稔彦市長の公約原文資料は登録しない。2024年豊田市長選挙の選挙公報は、市の公式選挙ページが投開票直後に削除され、公報ページ・PDFのアーカイブ保存もないため、公式のWeb公表物としては現存しない。候補者本人の公式サイト等の検証可能な公式公表物も特定できなかった。探索の記録は manifesto-source-search-toyota-city-2024 に残す。",
+        "source_ids": [
+          "toyota-city-mayor-election-2024-schedule"
+        ],
+        "location_note": "愛知県選挙管理委員会「市町村選挙情報（令和5年度）」には選挙日程の掲載のみで、選挙公報への導線はない。探索範囲と結論の詳細は探索記録とその証拠パケットに記載。",
+        "decision": "accepted",
+        "review_note": "「公約が存在しない」という主張ではなく、「検証可能な原典を特定できなかった」という記録として未登録とした。"
+      }
+    ],
+    "open_questions": [
+      "紙の選挙公報の現物（選挙管理委員会の保管分・図書館所蔵）や選挙公報の複写が特定できれば、原典として公約を登録し直す。",
+      "2028年2月執行予定の次回市長選挙では、選挙期間中に選挙公報の公式掲載を確認し、新任期の公約原文資料として登録する。"
+    ],
+    "review_status": "reviewed"
   }
 ]
