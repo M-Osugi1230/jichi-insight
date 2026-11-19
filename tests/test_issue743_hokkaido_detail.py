@@ -69,7 +69,7 @@ def test_plan_review_and_governor_are_reviewed_without_imputed_promises():
     assert "公約原文：未登録" in PAGE
     assert "段階3で登録予定" in PAGE
     assert "段階4で登録予定" in PAGE
-    assert "重点事業は段階2で登録中" in PAGE
+    assert "重点事業は段階2で10系列の Reviewed レコードを登録済み" in PAGE
     assert "hokkaidoFinanceSources.map" in PAGE
     assert (WEB / "app/municipalities/hokkaido/page.tsx").exists()
 
@@ -80,7 +80,7 @@ def test_catalog_quality_discovery_and_static_copy_are_real_and_differentiated()
     assert '"hokkaido-prefecture": hokkaidoFinance.evidencePackets' in QUALITY
     assert '"hokkaido-prefecture": "北海道"' in QUALITY
     assert 'officialCode === hokkaidoFinance.municipality.official_code' in DISCOVERY
-    assert 'promises: false, assembly: false, projects: false' in DISCOVERY
+    assert 'promises: false, assembly: false, projects: hasProjects' in DISCOVERY
     assert '"municipalities/hokkaido-prefecture/index.html"' in EXPORT
     assert '"2026年3月19日に原案可決"' in EXPORT
     assert '"北海道議会の個別レコードは未登録"' in EXPORT
