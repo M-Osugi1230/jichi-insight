@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
+import { ProgressiveRecordFilter } from "@/components/ProgressiveRecordFilter";
 import { canonicalFor } from "@/lib/pageMetadata";
 import {
   assemblies, assemblySlugs, evidenceFor, isAssemblySlug,
@@ -103,16 +104,22 @@ export default async function AssemblyDetailPage({params}:PageProps){
 
     <section id="proposals" className={styles.section}>
       <h2>会期と議案</h2>
+      <p className={styles.note}>登録議案を会期・議案番号・件名から探せます。絞り込みを解除すると全登録議案が表示されます。出典リンクは各会期・議案名のすぐ下に表示しています。</p>
       <p className={styles.note}>出典に議決結果の原文言が登録されていない項目では、正確な文言を推測せず「登録結果コード」をそのまま表示します。原文は各出典をご確認ください。日付や提出者の欠損も補完しません。</p>
-      {data.sessions.map(session=><section key={session.id}>
-        <h3>{session.name}</h3><p className={styles.note}>会期開始：{date(session.start_date)}／終了：{date(session.end_date)}</p>
+      <ProgressiveRecordFilter
+        kind="proposals"
+        total={data.proposals.length}
+        sessions={data.sessions.map((session) => ({ id: session.id, name: session.name }))}
+      >
+      {data.sessions.map(session=><section key={session.id} data-filter-section="">
+        <h3>{session.name}</h3><p className={styles.note}>段階：議決結果（登録コード）／確認基準日：{data.disclosure.as_of}／会期開始：{date(session.start_date)}／終了：{date(session.end_date)}</p>
         <Sources ids={session.sources} available={data.sources}/>
         <div className={styles.tableWrap}><table className={styles.table}>
           <thead><tr><th>議案番号</th><th>議案名・出典</th><th>提出者（登録値）</th><th>議決日</th><th>登録結果コード・表決</th></tr></thead>
           <tbody>{data.proposals.filter(p=>p.session_id===session.id).map(proposal=>{
             const vote=votesByProposal.get(proposal.id);
             const factionVotes=vote?factionByVote.get(vote.id)??[]:[];
-            return <tr key={proposal.id} id={proposal.id}>
+            return <tr key={proposal.id} id={proposal.id} data-filter-entry="" data-filter-group={session.id} data-search-text={`${proposal.proposal_number} ${proposal.title}`}>
               <td>{proposal.proposal_number}</td>
               <td><strong>{proposal.title}</strong>
                 {proposal.related_fiscal_record_ids.length>0 ? <p><Link href={`/municipalities/${slug}`}>関連する財政ビューへ（接続済み fiscal record {proposal.related_fiscal_record_ids.length}件）</Link></p> : null}
@@ -136,6 +143,7 @@ export default async function AssemblyDetailPage({params}:PageProps){
           })}</tbody>
         </table></div>
       </section>)}
+      </ProgressiveRecordFilter>
       {!data.sessions.length?<p>会期と議案は未収録です。</p>:null}
     </section>
 
