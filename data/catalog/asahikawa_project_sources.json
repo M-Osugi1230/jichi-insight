@@ -1,0 +1,91 @@
+{
+  "version": "1.0.0",
+  "updated_at": "2026-11-20",
+  "scope": "pilot",
+  "records": [
+    {
+      "id": "asahikawa-city-promotion-plan-fy2026-revised",
+      "municipality_key": "asahikawa-city",
+      "organization": "旭川市",
+      "category": "priority_projects",
+      "title": "第8次旭川市総合計画 推進計画（令和6〜9年度）令和8年6月改定版",
+      "url": "https://www.city.asahikawa.hokkaido.jp/700/735/736/738/d079836_d/fil/R8plan.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-20",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "第8次旭川市総合計画の推進計画（推進プログラム）。13の基本政策・34の施策・61の展開施策の体系と、展開施策ごとに「１ 総合計画の位置付け／２ 概要／３ 評価指標／４ 展開施策を構成する事業等（事業名・部局名の2列表、金額なし）」を掲載する。本登録の事業母集団と掲載順の正本。構成事業表は左列を上から下へ読み終えてから右列へ続く列優先のレイアウトであることを展開施策1-1-1のページ画像で目視確認した。構成事業は機械抽出で396件を確認した（表の検出漏れがあり得るため下限値）。"
+    },
+    {
+      "id": "asahikawa-city-budget-detail-fy2026",
+      "municipality_key": "asahikawa-city",
+      "organization": "旭川市",
+      "category": "budget",
+      "title": "令和8年度各会計歳入歳出予算事項別明細書",
+      "url": "https://www.city.asahikawa.hokkaido.jp/700/731/732/d083385_d/fil/R8zikoubetsu.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-20",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "一般会計歳出の説明欄に事業名と金額（千円）を明記する公式予算書類。本登録の10事業はいずれも歳出側の説明欄にちょうど1回ずつ現れることを座標抽出で確認し、事業名と同じ行の金額と照合した。道路橋りょう整備費・道路側溝整備費は歳入（市債）の使途説明にも内数として現れるが、事業総額ではないため登録には用いていない。「＊」印は臨時事業費を示す凡例が各項の冒頭に明記されている。"
+    },
+    {
+      "id": "asahikawa-city-budget-overview-page-fy2026",
+      "municipality_key": "asahikawa-city",
+      "organization": "旭川市",
+      "category": "budget",
+      "title": "予算の概要（令和8年度）",
+      "url": "https://www.city.asahikawa.hokkaido.jp/700/731/732/d083385.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-20",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "財政課の公式ページ。一般会計当初予算総額181,800,000千円等をHTML表で公表し、予算書・各会計歳入歳出予算事項別明細書・予算参考資料のPDFへの導線を持つ。"
+    },
+    {
+      "id": "asahikawa-city-plan-page",
+      "municipality_key": "asahikawa-city",
+      "organization": "旭川市",
+      "category": "comprehensive_plan",
+      "title": "第8次旭川市総合計画（市公式ページ）",
+      "url": "https://www.city.asahikawa.hokkaido.jp/700/735/736/738/p006642.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-20",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "基本構想・基本計画・推進計画・点検報告書への公式導線。既存カタログの asahikawa-promotion-2026-revised と同一文書（推進計画）を指す。"
+    },
+    {
+      "id": "asahikawa-city-plan-inspection-report",
+      "municipality_key": "asahikawa-city",
+      "organization": "旭川市",
+      "category": "project_evaluation",
+      "title": "第8次旭川市総合計画点検報告書（概要版）",
+      "url": "https://www.city.asahikawa.hokkaido.jp/700/735/736/738/p006642_d/fil/dai8jitenkengaiyou.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-20",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "令和7年度末の状況を基に、成果指標の達成状況・成果・課題を基本目標・基本政策単位で整理した公式報告書の概要版。事業単位の評定（記号・段階評価）は含まれないため、本登録では事業の公式評価を未登録とし、欠損として証拠パケットに明記した。行政評価の個別シートPDFは市サイト上に散在し一覧索引がないため、事業の母集団・評価の出典としては用いていない（北海道クラスター段階0棚卸しの結論）。"
+    },
+    {
+      "id": "asahikawa-city-council-results-2026-first-session",
+      "municipality_key": "asahikawa-city",
+      "organization": "旭川市議会",
+      "category": "proposals",
+      "title": "令和8年第1回定例会 議決結果",
+      "url": "https://www.city.asahikawa.hokkaido.jp/council/6400/6410/d083645.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-20",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "令和8年度一般会計予算（議案第14号）が2026年3月26日に原案可決されたことを示す市議会公式の議決結果。本登録の金額が成立後の当初予算額であることの根拠。"
+    }
+  ]
+}

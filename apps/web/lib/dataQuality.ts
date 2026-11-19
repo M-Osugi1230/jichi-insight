@@ -5,6 +5,7 @@ import policySourceCatalog from "../../../data/catalog/policy_sources.json";
 
 import { sourceCatalog, type MunicipalityKey } from "./catalog";
 import { aichiFinance } from "./aichiFinance";
+import { hokkaidoFinance } from "./hokkaidoFinance";
 import {
   currentExecutiveTerms,
   executiveEvidencePackets,
@@ -35,11 +36,8 @@ export type MunicipalityQuality = {
   status: "reviewed-data" | "indexed-only";
 };
 
-// Only cities with a Web Reviewed fiscal registry enter these quality totals.
-// Hokkaido fiscal JSON is registered in PR #738, but its detail Web loader is not yet published.
-type FiscalMunicipalityKey = Exclude<MunicipalityKey, "hokkaido-prefecture">;
-
-const municipalityNames: Record<FiscalMunicipalityKey, string> = {
+const municipalityNames: Record<MunicipalityKey, string> = {
+  "hokkaido-prefecture": "北海道",
   "aichi-prefecture": "愛知県",
   "fukuoka-prefecture": "福岡県",
   "fukuoka-city": "福岡市",
@@ -48,8 +46,9 @@ const municipalityNames: Record<FiscalMunicipalityKey, string> = {
   "toyota-city": "豊田市",
 };
 
-const municipalityKeys = Object.keys(municipalityNames) as FiscalMunicipalityKey[];
-const recordsByMunicipality: Record<FiscalMunicipalityKey, typeof fukuokaPrefectureFinance.records> = {
+const municipalityKeys = Object.keys(municipalityNames) as MunicipalityKey[];
+const recordsByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFinance.records> = {
+  "hokkaido-prefecture": hokkaidoFinance.records,
   "aichi-prefecture": aichiFinance.records,
   "fukuoka-prefecture": fukuokaPrefectureFinance.records,
   "fukuoka-city": fukuokaCityFinance.records,
@@ -57,7 +56,8 @@ const recordsByMunicipality: Record<FiscalMunicipalityKey, typeof fukuokaPrefect
   "nagoya-city": nagoyaCityFinance.records,
   "toyota-city": toyotaCityFinance.records,
 };
-const evidenceByMunicipality: Record<FiscalMunicipalityKey, typeof fukuokaPrefectureFinance.evidencePackets> = {
+const evidenceByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFinance.evidencePackets> = {
+  "hokkaido-prefecture": hokkaidoFinance.evidencePackets,
   "aichi-prefecture": aichiFinance.evidencePackets,
   "fukuoka-prefecture": fukuokaPrefectureFinance.evidencePackets,
   "fukuoka-city": fukuokaCityFinance.evidencePackets,
