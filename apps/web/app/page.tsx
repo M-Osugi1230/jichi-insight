@@ -29,26 +29,31 @@ export const metadata: Metadata = {
 
 const evidenceChain = [
   {
+    number: "01",
     key: "Promise",
     title: "何を目指すか",
     text: "計画、公約、数値目標を原文と期間から読む。",
   },
   {
+    number: "02",
     key: "Money",
     title: "いくら使うか",
     text: "予算、補正、執行、決算を同じ金額として混ぜない。",
   },
   {
+    number: "03",
     key: "Action",
     title: "何をしたか",
     text: "事業、契約、支出先、実施内容を目標へつなぐ。",
   },
   {
+    number: "04",
     key: "Result",
     title: "何が変わったか",
     text: "年度実績とKPIを比較可能な条件で確かめる。",
   },
   {
+    number: "05",
     key: "Accountability",
     title: "どう説明したか",
     text: "首長、議会、監査、訂正履歴から説明責任を見る。",
