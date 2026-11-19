@@ -135,6 +135,8 @@ BASE_PAGE_REQUIREMENTS: dict[str, list[str]] = {
         "まだ登録・評価していないこと",
     ],
     "promises/index.html": [
+        "北海道・鈴木 直道",
+        "公約原文：未登録",
         "愛知県・大村 秀章",
         "Reviewed 公約原文 10件",
         "ジブリパークの魅力発信",
@@ -211,6 +213,9 @@ BASE_PAGE_REQUIREMENTS: dict[str, list[str]] = {
         "規模の違いを、優劣へ変換しない。",
     ],
     "executives/index.html": [
+        "北海道・知事",
+        "鈴木 直道",
+        "2023年4月23日",
         "首長評価の前に、任期と公約の根拠を固定する。",
         "現職名と任期が分かっても、実績評価はできない。",
     ],
