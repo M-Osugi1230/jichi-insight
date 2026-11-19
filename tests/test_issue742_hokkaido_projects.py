@@ -31,6 +31,23 @@ SOURCES_PATH = "data/catalog/hokkaido_project_sources.json"
 SELECTION_PATH = "data/catalog/hokkaido_priority_project_selection.json"
 
 MID = "jp-local-010006"
+TERM = "jp-local-010006-executive-2023-04-23"
+# Governor promises were registered in stage 3 (Issue #749); the
+# project-side links are pinned here and cross-checked bidirectionally
+# in the stage-3 registration test. Unlisted slugs stay unlinked.
+EXPECTED_PROMISE_LINKS = {
+    "agricultural-rural-infrastructure": [
+        f"{TERM}-promise-013",
+        f"{TERM}-promise-015",
+    ],
+    "marriage-childbirth-support": [f"{TERM}-promise-010"],
+    "regional-revitalization": [f"{TERM}-promise-001"],
+    "visitor-attraction": [f"{TERM}-promise-005"],
+    "competency-education": [f"{TERM}-promise-007"],
+    "global-warming-countermeasures": [f"{TERM}-promise-003"],
+    "regional-healthcare": [f"{TERM}-promise-011"],
+    "digital-company-clustering": [f"{TERM}-promise-004"],
+}
 # slug -> (official title, overall rating, measure code)
 SLUGS = {
     "agricultural-rural-infrastructure": ("農業農村整備の推進", "概ね順調", "0601"),
@@ -222,9 +239,9 @@ def test_official_evaluation_is_the_prefectures_not_ours() -> None:
         # follow-up policies are recorded in the evidence packet instead.
         assert record["official_evaluation"]["direction"] is None
         assert "Jichi Insight独自の評価ではない" in record["official_evaluation"]["note"]
-        # Governor promises are registered in stage 3 of the cluster;
-        # until then the link list stays empty.
-        assert record["related_promise_ids"] == []
+        # Governor promises were registered in stage 3 (Issue #749);
+        # the project-side links are pinned in EXPECTED_PROMISE_LINKS.
+        assert record["related_promise_ids"] == EXPECTED_PROMISE_LINKS.get(slug, [])
 
 
 def test_every_project_has_an_evidence_packet_and_known_sources() -> None:
