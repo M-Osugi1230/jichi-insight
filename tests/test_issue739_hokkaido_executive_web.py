@@ -6,8 +6,8 @@ fabricate promises or a fiscal detail page before their Reviewed UI exists.
 
 import json
 import runpy
-from unittest.mock import patch
 from pathlib import Path
+from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
