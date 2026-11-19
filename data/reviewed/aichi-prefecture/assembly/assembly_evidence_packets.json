@@ -1,0 +1,246 @@
+[
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "seat_count",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "aichi-pref-assembly-overview-2026",
+          "aichi-pref-assembly-seats"
+        ],
+        "statement": "議員定数は102人。選挙管理委員会の「選挙の区域と定数」（55選挙区・102名）と県議会議員紹介ページ（定数102人、欠員5人）で一致。"
+      },
+      {
+        "decision": "accepted",
+        "field": "term",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "aichi-pref-assembly-overview-2026"
+        ],
+        "statement": "現任期は2023年統一地方選挙によるもので、任期は2023年4月30日から2027年4月29日まで。"
+      },
+      {
+        "decision": "accepted",
+        "field": "factions",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "aichi-pref-assembly-members-2026"
+        ],
+        "statement": "会派別議員一覧（2026年11月19日確認）に5つの会派区分・計97人を掲載: 自由民主党愛知県議員団53名、あいち民主県議団26名、公明党愛知県議員団4名、減税日本愛知県議員団4名、無所属10名（うち県政自民クラブ1名・日本共産党愛知県議会議員団1名）。定数102との差5人は欠員。"
+      },
+      {
+        "decision": "accepted",
+        "field": "committees",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "aichi-pref-assembly-committees-2026"
+        ],
+        "statement": "委員会情報ページ（2026年6月11日更新）に議会運営委員会、常任委員会8、特別委員会6を掲載。"
+      }
+    ],
+    "id": "evidence-aichi-prefecture-assembly-2023",
+    "open_questions": [
+      "会派構成は2026年11月19日確認時点のもので、任期中の異動により変わりうる。県議会議員紹介ページには自民54名・無所属9名とする時点の内訳もあり、時点差の理由は公式資料からは特定できないため、会派別議員一覧の内訳を採用した。",
+      "継続審査中の令和7年度第24号請願「愛知県議会議員選挙の選挙区」について（議会運営委員会付託）は、令和8年6月定例議会では結論が出ていないため本登録の対象外とした。態度PDFでは4会派とも「継続審査」、無所属は賛成1人・継続審査8人と公表されている。同請願は令和8年8月定例議会で不採択が確定したため、将来の会期登録で扱う。",
+      "会期ページは議案・請願の提出日を掲載していないため、proposals の submitted_at は登録していない。",
+      "態度PDFで無所属の態度別人数の合計は9人分しか現れず、会派別議員一覧の無所属10名と一致しない。理由は公式資料からは特定できないため、印字どおりに記録し補完しない。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-230006-assembly-2023",
+    "subject_type": "assembly"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "member_roster",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "aichi-pref-assembly-members-2026",
+          "aichi-pref-assembly-committees-2026",
+          "aichi-pref-assembly-session-2026-1",
+          "aichi-pref-assembly-attitude-2026-1",
+          "aichi-pref-assembly-seimu-list-2025",
+          "aichi-pref-assembly-overseas-reports"
+        ],
+        "statement": "会派別議員一覧に全議員を会派別に掲載。議員紹介ページも選挙区別等で掲載。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_composition",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "aichi-pref-assembly-members-2026",
+          "aichi-pref-assembly-committees-2026",
+          "aichi-pref-assembly-session-2026-1",
+          "aichi-pref-assembly-attitude-2026-1",
+          "aichi-pref-assembly-seimu-list-2025",
+          "aichi-pref-assembly-overseas-reports"
+        ],
+        "statement": "会派別議員一覧に会派ごとの所属議員を掲載（2026年11月19日確認: 自民53名、民主26名、公明4名、減税4名、無所属10名の計97名、定数102名・欠員5名）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "committee_composition",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "aichi-pref-assembly-members-2026",
+          "aichi-pref-assembly-committees-2026",
+          "aichi-pref-assembly-session-2026-1",
+          "aichi-pref-assembly-attitude-2026-1",
+          "aichi-pref-assembly-seimu-list-2025",
+          "aichi-pref-assembly-overseas-reports"
+        ],
+        "statement": "委員会情報ページに議会運営委員会・常任委員会8・特別委員会6の構成を掲載。"
+      },
+      {
+        "decision": "accepted",
+        "field": "proposals_and_results",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "aichi-pref-assembly-members-2026",
+          "aichi-pref-assembly-committees-2026",
+          "aichi-pref-assembly-session-2026-1",
+          "aichi-pref-assembly-attitude-2026-1",
+          "aichi-pref-assembly-seimu-list-2025",
+          "aichi-pref-assembly-overseas-reports"
+        ],
+        "statement": "会期ページに議案・請願の番号、件名、付託委員会、議決結果を掲載。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "aichi-pref-assembly-members-2026",
+          "aichi-pref-assembly-committees-2026",
+          "aichi-pref-assembly-session-2026-1",
+          "aichi-pref-assembly-attitude-2026-1",
+          "aichi-pref-assembly-seimu-list-2025",
+          "aichi-pref-assembly-overseas-reports"
+        ],
+        "statement": "会期ごとに「議案等に対する各会派の態度」をPDFで公表。自民・民主・公明・減税は会派として単一の態度、無所属は態度別の人数内訳を掲載。ただし同PDFは「議案等の採決を行う本会議に先立って開かれる議会運営委員会で、各会派及び無所属議員の態度について、確認した内容」を示すもので、本会議の投票記録そのものではない（PDF末尾注記）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "aichi-pref-assembly-members-2026",
+          "aichi-pref-assembly-committees-2026",
+          "aichi-pref-assembly-session-2026-1",
+          "aichi-pref-assembly-attitude-2026-1",
+          "aichi-pref-assembly-seimu-list-2025",
+          "aichi-pref-assembly-overseas-reports"
+        ],
+        "statement": "議員個人別の表決は公表されていない。無所属議員についても個人別ではなく人数内訳までが公表の単位。"
+      },
+      {
+        "decision": "accepted",
+        "field": "political_activity_expense_reports",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "aichi-pref-assembly-members-2026",
+          "aichi-pref-assembly-committees-2026",
+          "aichi-pref-assembly-session-2026-1",
+          "aichi-pref-assembly-attitude-2026-1",
+          "aichi-pref-assembly-seimu-list-2025",
+          "aichi-pref-assembly-overseas-reports"
+        ],
+        "statement": "令和5年度分から議会ホームページに掲載。会派分（4会派）と議員個人分の双方を公開し、議員分は五十音順に議員単位で掲載。"
+      },
+      {
+        "decision": "accepted",
+        "field": "political_activity_expense_receipts",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "aichi-pref-assembly-members-2026",
+          "aichi-pref-assembly-committees-2026",
+          "aichi-pref-assembly-session-2026-1",
+          "aichi-pref-assembly-attitude-2026-1",
+          "aichi-pref-assembly-seimu-list-2025",
+          "aichi-pref-assembly-overseas-reports"
+        ],
+        "statement": "領収書等の写しは収支報告書と同じPDFに含めてオンライン公開されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "inspection_trip_reports",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "aichi-pref-assembly-members-2026",
+          "aichi-pref-assembly-committees-2026",
+          "aichi-pref-assembly-session-2026-1",
+          "aichi-pref-assembly-attitude-2026-1",
+          "aichi-pref-assembly-seimu-list-2025",
+          "aichi-pref-assembly-overseas-reports"
+        ],
+        "statement": "常任委員会等の視察について、報告書または一覧の形での公式公表は確認できなかった。議会の海外調査団報告書は別制度の公表物として掲載されている（委員会視察の報告書ではない）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "meeting_minutes",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "aichi-pref-assembly-members-2026",
+          "aichi-pref-assembly-committees-2026",
+          "aichi-pref-assembly-session-2026-1",
+          "aichi-pref-assembly-attitude-2026-1",
+          "aichi-pref-assembly-seimu-list-2025",
+          "aichi-pref-assembly-overseas-reports"
+        ],
+        "statement": "会議録の検索・閲覧を提供。"
+      },
+      {
+        "decision": "accepted",
+        "field": "session_broadcast",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "aichi-pref-assembly-members-2026",
+          "aichi-pref-assembly-committees-2026",
+          "aichi-pref-assembly-session-2026-1",
+          "aichi-pref-assembly-attitude-2026-1",
+          "aichi-pref-assembly-seimu-list-2025",
+          "aichi-pref-assembly-overseas-reports"
+        ],
+        "statement": "本会議のインターネット中継・録画配信を提供。"
+      },
+      {
+        "decision": "accepted",
+        "field": "petition_results",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "aichi-pref-assembly-members-2026",
+          "aichi-pref-assembly-committees-2026",
+          "aichi-pref-assembly-session-2026-1",
+          "aichi-pref-assembly-attitude-2026-1",
+          "aichi-pref-assembly-seimu-list-2025",
+          "aichi-pref-assembly-overseas-reports"
+        ],
+        "statement": "会期ページの請願表に請願ごとの付託委員会と議決結果（採択・不採択・継続審査）を掲載。"
+      }
+    ],
+    "id": "evidence-jp-local-230006-assembly-2023-disclosure-2026",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-230006-assembly-2023-disclosure-2026",
+    "subject_type": "disclosure_profile"
+  }
+]

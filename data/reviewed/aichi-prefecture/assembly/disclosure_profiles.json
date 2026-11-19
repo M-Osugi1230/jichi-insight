@@ -1,0 +1,103 @@
+[
+  {
+    "as_of": "2026-11-19",
+    "assembly_id": "jp-local-230006-assembly-2023",
+    "confidence": "high",
+    "id": "jp-local-230006-assembly-2023-disclosure-2026",
+    "items": [
+      {
+        "availability": "published",
+        "granularity": "member",
+        "item": "member_roster",
+        "note": "会派別議員一覧に全議員を会派別に掲載。議員紹介ページも選挙区別等で掲載。",
+        "source_url": "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "faction",
+        "item": "faction_composition",
+        "note": "会派別議員一覧に会派ごとの所属議員を掲載（2026年11月19日確認: 自民53名、民主26名、公明4名、減税4名、無所属10名の計97名、定数102名・欠員5名）。",
+        "source_url": "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "assembly",
+        "item": "committee_composition",
+        "note": "委員会情報ページに議会運営委員会・常任委員会8・特別委員会6の構成を掲載。",
+        "source_url": "https://www.pref.aichi.jp/site/gikai/iinkai.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "assembly",
+        "item": "proposals_and_results",
+        "note": "会期ページに議案・請願の番号、件名、付託委員会、議決結果を掲載。",
+        "source_url": "https://www.pref.aichi.jp/site/gikai/nittei-0806.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "faction",
+        "item": "faction_votes",
+        "note": "会期ごとに「議案等に対する各会派の態度」をPDFで公表。自民・民主・公明・減税は会派として単一の態度、無所属は態度別の人数内訳を掲載。ただし同PDFは「議案等の採決を行う本会議に先立って開かれる議会運営委員会で、各会派及び無所属議員の態度について、確認した内容」を示すもので、本会議の投票記録そのものではない（PDF末尾注記）。",
+        "source_url": "https://www.pref.aichi.jp/uploaded/attachment/623326.pdf"
+      },
+      {
+        "availability": "not_published",
+        "granularity": "none",
+        "item": "member_votes",
+        "note": "議員個人別の表決は公表されていない。無所属議員についても個人別ではなく人数内訳までが公表の単位。",
+        "source_url": null
+      },
+      {
+        "availability": "published",
+        "granularity": "member",
+        "item": "political_activity_expense_reports",
+        "note": "令和5年度分から議会ホームページに掲載。会派分（4会派）と議員個人分の双方を公開し、議員分は五十音順に議員単位で掲載。",
+        "source_url": "https://www.pref.aichi.jp/site/gikai/r7shushihokokusho.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "document",
+        "item": "political_activity_expense_receipts",
+        "note": "領収書等の写しは収支報告書と同じPDFに含めてオンライン公開されている。",
+        "source_url": "https://www.pref.aichi.jp/site/gikai/r7shushihokokusho.html"
+      },
+      {
+        "availability": "not_published",
+        "granularity": "none",
+        "item": "inspection_trip_reports",
+        "note": "常任委員会等の視察について、報告書または一覧の形での公式公表は確認できなかった。議会の海外調査団報告書は別制度の公表物として掲載されている（委員会視察の報告書ではない）。",
+        "source_url": null
+      },
+      {
+        "availability": "published",
+        "granularity": "document",
+        "item": "meeting_minutes",
+        "note": "会議録の検索・閲覧を提供。",
+        "source_url": null
+      },
+      {
+        "availability": "published",
+        "granularity": "document",
+        "item": "session_broadcast",
+        "note": "本会議のインターネット中継・録画配信を提供。",
+        "source_url": null
+      },
+      {
+        "availability": "published",
+        "granularity": "assembly",
+        "item": "petition_results",
+        "note": "会期ページの請願表に請願ごとの付託委員会と議決結果（採択・不採択・継続審査）を掲載。",
+        "source_url": "https://www.pref.aichi.jp/site/gikai/nittei-0806.html"
+      }
+    ],
+    "review_status": "reviewed",
+    "sources": [
+      "aichi-pref-assembly-members-2026",
+      "aichi-pref-assembly-committees-2026",
+      "aichi-pref-assembly-session-2026-1",
+      "aichi-pref-assembly-attitude-2026-1",
+      "aichi-pref-assembly-seimu-list-2025",
+      "aichi-pref-assembly-overseas-reports"
+    ]
+  }
+]
