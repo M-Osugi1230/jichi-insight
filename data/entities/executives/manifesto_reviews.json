@@ -126,5 +126,23 @@
     "last_reviewed_at": "2026-11-20",
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-review-jp-local-010006-2023",
+    "executive_term_id": "jp-local-010006-executive-2023-04-23",
+    "source_id": "hokkaido-pref-governor-election-2023-bulletin",
+    "candidate_name": "鈴木 直道",
+    "source_location": "2ページPDF・1ページ目上段の候補者欄",
+    "review_scope": "candidate_panel",
+    "statement_boundary": "mixed",
+    "segmentation_status": "segmented",
+    "promise_records_created": 15,
+    "reason_codes": [
+      "other"
+    ],
+    "review_note": "候補者欄はポスター形式で、見出し「鈴木直道の主な基本政策」（副題「北海道のポテンシャルを活かし、北海道の価値を押し上げる」）の下に3つの柱（地域とともにすすめる／北海道の未来をつくる／道民の暮らしをまもる）と●印の政策項目15件、「3つのキーワード」の円の図（7個）、左端に「4年間の主な実績」（7項目）と略歴、右端にスローガン「暮らしをまもり、未来をつくる」と縦書きの決意文で構成される。実績・略歴・顔写真は公約ではないためレコード化しなかった。見出し「直向きに、北海道を前へ。」、スローガン、決意文もレコード化していない。●印の項目は原文上の境界が明確なため、これを単位に15件の公約レコードを作成した。「3つのキーワード」の円7個（ほっかいどう応援団 第二章、エネルギー、食、暮らしと経済、観光、デジタル、子ども応援社会）は、同じ政策群を図で重ねて述べたものであるため独立レコードにはせず、円の原文は対応する●項目レコードの extraction_note に記録した。公約部分に数値目標・期限・財源の明示はない（「1376億円」「1500億円」等は左端の実績欄にある1期目の実績の記載であり、目標値・財源としては登録していない）。候補者欄は画像形式（テキスト層なし）のため、登録文はPDFの描画画像から転記し、複数解像度で照合した。",
+    "last_reviewed_at": "2026-11-20",
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]

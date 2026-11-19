@@ -232,5 +232,34 @@
     ],
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-hokkaido-pref-2023",
+    "executive_term_id": "jp-local-010006-executive-2023-04-23",
+    "searched_at": "2026-11-20",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "hokkaido-pref-governor-election-2023-bulletin"
+    ],
+    "checked_source_ids": [
+      "hokkaido-pref-governor-election-2023-results",
+      "hokkaido-pref-governor-election-2023-bulletin"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "北海道選挙管理委員会の公式ページ「令和5年北海道知事選挙及び北海道議会議員選挙 選挙公報」に、知事選挙公報PDFへのリンクがあることを確認し、2026-11-20にPDF（全2ページ）を道公式サイトから直接取得した。1ページ目上段の鈴木直道候補欄（「鈴木直道の主な基本政策」の3柱・●印項目15件）を確認し、選挙公報を出典として登録、分割レビュー（manifesto-review-jp-local-010006-2023）を経て公約レコード15件を作成した。選挙公報は候補者提出原稿をそのまま印刷した公式文書であり、第三者のコピーではなく選管公式サイトから直接取得できたため、公約レコードの confidence は high とした。選挙公報より詳細な候補者資料（政策集・政策パンフレット等）の安定した所在は特定できておらず、資料が存在しないとは判定しない。",
+    "next_actions": [
+      "政策パンフレット等、選挙公報より詳細な候補者資料の安定した所在が特定できれば、登録済みの公約文と照合する",
+      "未接続の公約（チャレンジする道庁づくり、アイヌ文化振興、北方領土問題の解決に向けた取り組み、経済活性化、感染症対策・防災、交通・物流政策の推進）について、計画・事業資料への進捗証拠の接続を拡充する",
+      "2027年4月の任期満了に伴う次回知事選挙では、新任期の公約原文資料として選挙公報を改めて登録する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]

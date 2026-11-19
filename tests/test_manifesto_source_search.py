@@ -43,6 +43,7 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         "jp-local-232114-executive-2024-02-19",
         "jp-local-012041-executive-2025-09-26",
         "jp-local-011002-executive-2023-05-02",
+        "jp-local-010006-executive-2023-04-23",
     }
 
     for search in searches:
@@ -75,6 +76,10 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
     # election commission's official page, and the Nagoya City and
     # Sapporo City searches found the official bulletin directly). The
     # Toyota City search is
+    # election commission's official page, the Nagoya City search
+    # found the official bulletin directly, and the Hokkaido search
+    # was closed by the 2023 bulletin hosted on the Hokkaido election
+    # commission's official page). The Toyota City search is
     # the remaining exception: the 2024 bulletin is not extant as an
     # official web publication and no verifiable candidate publication
     # was found, so its term registers no manifesto source. The safety
