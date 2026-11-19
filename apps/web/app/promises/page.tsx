@@ -12,7 +12,7 @@ import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title:"首長公約レジストリ｜原文・出典・評価材料",
-  description:"福岡県知事・福岡市長・北九州市長の登録済み公約を原文と証拠に基づき掲載。達成率や首長の点数は公開しません。",
+  description:"登録済みの知事・市長の公約原文と証拠を掲載。公約未登録の首長は区別し、達成率や首長の点数は公開しません。",
 };
 const projectGroups = [
   ["fukuoka-prefecture",fukuokaPrefectureProjectData.projects],
@@ -40,7 +40,7 @@ export default function PromisesPage() {
   return <><SiteHeader/><main className="pageShell">
     <header className={styles.hero}><p className="eyebrow">Reviewed promise registry</p><h1>首長公約の原文と根拠</h1>
       <p>公約を首長・選挙ごとに整理しています。事業との関連は確定的な成果や達成を意味しません。未接続は未着手・未達を意味しません。首長のスコア、達成率、ランキングは表示しません。</p>
-      <p>確認できること：福岡県知事・福岡市長・北九州市長の3首長の公約原文と根拠。まだ確認できないこと：すべての公約の進捗評価は提供していません。評価材料がない公約は「評価材料なし（未接続）」と表示します。</p>
+      <p>確認できること：本サイトに Reviewed 公約が登録されている首長の公約原文と根拠。公約が未登録の首長については未登録と表示し、公約の不存在や未実施を意味しません。まだ確認できないこと：すべての公約の進捗評価は提供していません。評価材料がない公約は「評価材料なし（未接続）」と表示します。</p>
     </header>
     {currentExecutiveTerms.map(term=>{
       const municipality=executiveMunicipality(term);
@@ -48,7 +48,8 @@ export default function PromisesPage() {
       const areas=[...new Set(promises.map(p=>p.policy_area))];
       return <section className={styles.area} key={term.id} id={municipality.key}>
         <h2>{municipality.name}・{term.person_name}</h2>
-        <p className={styles.meta}>{term.office==="governor"?"知事":"市長"} / 選挙日：{formatDateJa(term.election_date)} / 任期開始：{formatDateJa(term.term_start)} / Reviewed 公約原文</p>
+        <p className={styles.meta}>{term.office==="governor"?"知事":"市長"} / 選挙日：{formatDateJa(term.election_date)} / 任期開始：{formatDateJa(term.term_start)} / {promises.length > 0 ? `Reviewed 公約原文 ${promises.length}件` : "公約原文：未登録"}</p>
+        {promises.length === 0 ? <p className={styles.meta}>本サイトにはこの首長の Reviewed 公約が登録されていません。公約が存在しない、または公表されていないことを示すものではありません。</p> : null}
         {areas.map(policyArea=><section key={policyArea} className={styles.policy}><h3>政策の柱：{policyArea}</h3>
           <div className={styles.grid}>{promises.filter(p=>p.policy_area===policyArea).map(p=>{
             const evidence=evidenceForPromise(p);
