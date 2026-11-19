@@ -1,5 +1,6 @@
 import { assemblies, isAssemblySlug } from "@/lib/assemblyRegistry";
 import { aichiFinance } from "@/lib/aichiFinance";
+import { hokkaidoFinance } from "@/lib/hokkaidoFinance";
 import { currentExecutiveTerms, promiseRecords } from "@/lib/executives";
 import { fukuokaPrefectureFinance } from "@/lib/finance";
 import { fukuokaCityFinance } from "@/lib/fukuokaCityFinance";
@@ -30,6 +31,20 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
     return municipality.official_code === officialCode &&
       municipality.data_status === "reviewed";
   });
+
+  if (!matched && officialCode === hokkaidoFinance.municipality.official_code &&
+    hokkaidoFinance.municipality.data_status === "reviewed") {
+    const hasReviewedSettlement = hokkaidoFinance.records.some((record) =>
+      record.municipality_id === hokkaidoFinance.municipality.id &&
+      record.review_status === "reviewed" &&
+      record.stage === "settlement" &&
+      record.account_type === "ordinary" &&
+      [2022, 2023, 2024].includes(record.fiscal_year),
+    );
+    // Stage 1: finance is available; promises, assembly and projects
+    // remain disabled until their independent Reviewed records are published.
+    return { key: "hokkaido-prefecture", finance: hasReviewedSettlement, promises: false, assembly: false, projects: false };
+  }
 
   if (!matched && officialCode === aichiFinance.municipality.official_code &&
     aichiFinance.municipality.data_status === "reviewed") {
