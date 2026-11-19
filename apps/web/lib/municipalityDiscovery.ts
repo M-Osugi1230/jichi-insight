@@ -41,9 +41,13 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
       record.account_type === "ordinary" &&
       [2022, 2023, 2024].includes(record.fiscal_year),
     );
-    // Stage 1: finance is available; promises, assembly and projects
-    // remain disabled until their independent Reviewed records are published.
-    return { key: "hokkaido-prefecture", finance: hasReviewedSettlement, promises: false, assembly: false, projects: false };
+    // Stage 2 projects are enabled only for Reviewed records belonging to this prefecture.
+    // Promises and assembly remain closed until separately reviewed.
+    const hasProjects = projectRegistry["hokkaido-prefecture"].projects.some((project) =>
+      project.review_status === "reviewed" &&
+      project.municipality_id === hokkaidoFinance.municipality.id,
+    );
+    return { key: "hokkaido-prefecture", finance: hasReviewedSettlement, promises: false, assembly: false, projects: hasProjects };
   }
 
   if (!matched && officialCode === aichiFinance.municipality.official_code &&
@@ -75,9 +79,9 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
   }
 
   if (!matched) {
-    // Only the fiscal-detail gate expands: a Reviewed Phase 15 city with a
-    // validated settlement package can enable its own in-page FiscalReview.
-    // The unrelated promise/assembly/project gates remain strictly closed.
+    // The Phase 15 city identity is checked by official code and Reviewed completion.
+    // Finance, promises, assembly and projects then use independent data-backed gates;
+    // in particular Sapporo/Asahikawa projects must match the official municipality ID.
     const city = loadPhase15CitySummaries().find((item) => item.officialCode === officialCode);
     const hasFinance = city ? loadGenericCityFinance(city.slug) !== null : false;
     const hasProjects = city && isProjectArea(city.slug)
