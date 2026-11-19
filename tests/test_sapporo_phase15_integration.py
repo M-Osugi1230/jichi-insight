@@ -25,11 +25,13 @@ def load(path: Path):
 def test_sapporo_is_the_68th_reviewed_complete_queue_row():
     queue = load(QUEUE_PATH)
     rows = queue["execution_queue"]
-    assert len(rows) == 68
-    assert queue["summary"]["target_count"] == 68
-    assert queue["summary"]["reviewed_complete_count"] == 68
+    # Nagoya was appended as the 69th row by the Issue #734 integration;
+    # Sapporo remains the 68th row.
+    assert len(rows) == 69
+    assert queue["summary"]["target_count"] == 69
+    assert queue["summary"]["reviewed_complete_count"] == 69
 
-    sapporo = rows[-1]
+    sapporo = rows[67]
     assert sapporo["sequence"] == 68
     assert sapporo["official_code"] == "011002"
     assert sapporo["name_ja"] == "札幌市"

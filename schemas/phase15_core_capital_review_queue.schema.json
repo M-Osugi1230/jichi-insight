@@ -57,8 +57,8 @@
     },
     "execution_queue": {
       "type": "array",
-      "minItems": 68,
-      "maxItems": 68,
+      "minItems": 69,
+      "maxItems": 69,
       "items": {
         "$ref": "#/$defs/queuedMunicipality"
       }
@@ -76,22 +76,22 @@
       ],
       "properties": {
         "target_count": {
-          "const": 68
+          "const": 69
         },
         "reviewed_complete_count": {
           "type": "integer",
           "minimum": 0,
-          "maximum": 68
+          "maximum": 69
         },
         "review_in_progress_count": {
           "type": "integer",
           "minimum": 0,
-          "maximum": 68
+          "maximum": 69
         },
         "pending_record_review_count": {
           "type": "integer",
           "minimum": 0,
-          "maximum": 68
+          "maximum": 69
         },
         "blocked_source_inventory_count": {
           "const": 0
@@ -135,12 +135,12 @@
         "sequence": {
           "type": "integer",
           "minimum": 1,
-          "maximum": 68
+          "maximum": 69
         },
         "wave": {
           "type": "integer",
           "minimum": 1,
-          "maximum": 9
+          "maximum": 10
         },
         "official_code": {
           "type": "string",

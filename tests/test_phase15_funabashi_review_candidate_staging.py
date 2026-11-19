@@ -231,7 +231,7 @@ def test_funabashi_promotion_is_reflected_in_queue_state():
     assert item["status"] == "reviewed_complete"
     assert item["completion_path"] == "data/catalog/funabashi_phase15_completion.json"
     assert (ROOT / item["completion_path"]).is_file()
-    assert queue["summary"]["reviewed_complete_count"] == 68
+    assert queue["summary"]["reviewed_complete_count"] == 69
     assert queue["summary"]["pending_record_review_count"] == 0
     assert queue["summary"]["next_official_code"] is None
 

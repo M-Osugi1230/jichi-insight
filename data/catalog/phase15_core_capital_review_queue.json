@@ -903,11 +903,24 @@
       "status": "reviewed_complete",
       "source_inventory_path": "data/indexed/sapporo-city/source_inventory.json",
       "completion_path": "data/catalog/sapporo_phase15_completion.json"
+    },
+    {
+      "sequence": 69,
+      "wave": 10,
+      "official_code": "231002",
+      "standard_area_code": "23100",
+      "name_ja": "名古屋市",
+      "prefecture_name_ja": "愛知県",
+      "municipality_type": "city",
+      "phase14_role": "designated_city_and_prefectural_capital",
+      "status": "reviewed_complete",
+      "source_inventory_path": "data/indexed/nagoya-city/source_inventory.json",
+      "completion_path": "data/catalog/nagoya_phase15_completion.json"
     }
   ],
   "summary": {
-    "target_count": 68,
-    "reviewed_complete_count": 68,
+    "target_count": 69,
+    "reviewed_complete_count": 69,
     "review_in_progress_count": 0,
     "pending_record_review_count": 0,
     "blocked_source_inventory_count": 0,
