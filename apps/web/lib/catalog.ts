@@ -10,7 +10,8 @@ export type MunicipalityKey =
   | "fukuoka-prefecture"
   | "fukuoka-city"
   | "kitakyushu-city"
-  | "nagoya-city";
+  | "nagoya-city"
+  | "toyota-city";
 
 export type SourceRecord = {
   id: string;
@@ -76,6 +77,14 @@ export const municipalityMeta: Record<
     summary: "財政、重点事業、市長公約を一次資料で確認します。",
     status: "財政データ公開",
     href: "/municipalities/nagoya-city",
+    fiscalSummary: "Reviewed 3項目（当初予算1件・決算2件）",
+  },
+  "toyota-city": {
+    name: "豊田市",
+    type: "中核市",
+    summary: "財政、重点事業、市長の任期を一次資料で確認します。",
+    status: "財政データ公開",
+    href: "/municipalities/toyota-city",
     fiscalSummary: "Reviewed 3項目（当初予算1件・決算2件）",
   },
 };

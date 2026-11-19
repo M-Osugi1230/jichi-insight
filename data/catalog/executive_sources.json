@@ -1,5 +1,5 @@
 {
-  "version": "0.11.0",
+  "version": "0.12.0",
   "updated_at": "2026-11-19",
   "scope": "pilot",
   "records": [
@@ -351,7 +351,7 @@
       "indexed_at": "2026-11-19",
       "review_status": "reviewed",
       "confidence": "high",
-      "notes": "愛知県が公表する県内市町村長の一覧。名古屋市長・広沢一郎の任期満了日を令和10年11月23日（2028年11月23日）、就任回数を1回と明記する。本カタログでは名古屋市長の任期満了日の出典として登録する。"
+      "notes": "愛知県が公表する県内市町村長の一覧。名古屋市長・広沢一郎の任期満了日を令和10年11月23日（2028年11月23日）、就任回数を1回と明記する。また豊田市長・太田稔彦の任期満了日を令和10年2月18日（2028年2月18日）、就任回数を4回と明記する。本カタログでは名古屋市長と豊田市長の任期満了日の出典として登録する。"
     },
     {
       "id": "aichi-pref-governor-election-2023-bulletin",
@@ -366,6 +366,48 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "愛知県知事選挙の公式選挙公報（候補者から提出された原稿をそのまま印刷したもの。全4ページ）。選挙管理委員会の公式ページ「投開票の状況・選挙公報」から直接リンクされ、県公式サイト上で公開されている。大村秀章候補欄は1ページ目上段にあり、キャッチコピー「日本一元気な愛知をつくり 日本の未来をつくる！」とスローガン「人が輝くあいち」の下に、★印の政策項目（冒頭行の囲み2件、詳細文を伴う3件、右カラムの5件、計10件）とプロフィール（経歴）を掲載する。公約レコードは★印の項目から作成した。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度で照合した。"
+    },
+    {
+      "id": "toyota-city-mayor",
+      "municipality_key": "toyota-city",
+      "organization": "豊田市",
+      "category": "executive",
+      "title": "市長あいさつ（新年のごあいさつ）",
+      "url": "https://www.city.toyota.aichi.jp/shisei/koho/1012329.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "豊田市公式サイトの市長あいさつページ。令和8年元日付のあいさつに豊田市長・太田稔彦の署名があり、太田稔彦が現職の豊田市長であることを確認できる。"
+    },
+    {
+      "id": "toyota-city-mayor-election-2024-schedule",
+      "municipality_key": "toyota-city",
+      "organization": "愛知県選挙管理委員会",
+      "category": "election",
+      "title": "市町村選挙情報（令和5年度）",
+      "url": "https://www.pref.aichi.jp/soshiki/senkyo/050222.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "愛知県選挙管理委員会が公表する令和5年度の市町村選挙情報。豊田市長選挙について、選挙期日は2024年2月4日、告示日は1月28日、選挙事由は任期満了（前任期の満了日は2月18日）、投票率は46.31%と明記する。"
+    },
+    {
+      "id": "aichi-pref-term-expiry-list-2026",
+      "municipality_key": "toyota-city",
+      "organization": "愛知県",
+      "category": "election",
+      "title": "市町村長及び議会議員の任期満了日等一覧表（令和8年3月5日現在）",
+      "url": "https://www.pref.aichi.jp/uploaded/attachment/603368.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "愛知県が公表する県内全市町村の長及び議員の任期満了日一覧。豊田市の長の任期満了日を令和10年2月18日（2028年2月18日）と明記する。2026-11-19にPDF本文を直接確認した。"
     }
   ]
 }
