@@ -21,6 +21,7 @@ import {
 } from "@/lib/phase15Cities";
 import { defaultOgImages } from "@/lib/pageMetadata";
 import { loadGenericCityFinance } from "@/lib/genericCityFinance";
+import { isProjectArea } from "@/lib/projectRegistry";
 
 import styles from "./page.module.css";
 
@@ -296,6 +297,7 @@ export default async function Phase15CityPage({
           planHref="#promise-title"
           budgetHref="#money-title"
           fiscalDetailHref={fiscalDetail ? "#fiscal-detail" : undefined}
+          projectHref={isProjectArea(slug) ? `/projects#${slug}` : undefined}
         />
 
         <nav className={styles.cityJumpNav} aria-label="この自治体ページの目次">
