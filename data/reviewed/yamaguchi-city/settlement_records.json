@@ -1,0 +1,1841 @@
+[
+  {
+    "id": "jp-local-352039-fiscal-2022-ordinary-revenue",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "普通会計歳入総額",
+    "amount_yen": 91202219000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "総務省『令和4年度市町村決算カード』の千円単位の値を円換算して収録。山口市『令和4年度財政状況資料集』総括表でも一致を確認。普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計の決算額とは一致しない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2022",
+      "yamaguchi-city-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2022-ordinary-expenditure",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "普通会計歳出総額",
+    "amount_yen": 89937702000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "総務省『令和4年度市町村決算カード』の千円単位の値を円換算して収録。山口市『令和4年度財政状況資料集』総括表でも一致を確認。性質別・目的別の各区分の合計は歳出総額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2022",
+      "yamaguchi-city-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2022-ordinary-local-tax",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "local_tax",
+    "metric_label": "普通会計市税収入",
+    "amount_yen": 27416999000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "普通会計の地方税（市税）収入済額。総務省『令和4年度市町村決算カード』の千円単位の値を円換算。山口市『令和4年度財政状況資料集』でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2022",
+      "yamaguchi-city-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2022-formal-balance",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "formal_balance",
+    "metric_label": "普通会計形式収支",
+    "amount_yen": 1264517000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "歳入総額から歳出総額を差し引いた形式収支。総務省決算カードの印字値であり、歳入総額−歳出総額の検算と円単位で一致する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2022",
+      "yamaguchi-city-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2022-carryover-resources",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "carryover_resources",
+    "metric_label": "普通会計翌年度に繰り越すべき財源",
+    "amount_yen": 437349000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "翌年度へ繰り越すべき財源（継続費逓次繰越・繰越明許費・事故繰越しに係る財源）。形式収支から差し引くと実質収支となる。総務省決算カードの印字値。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2022",
+      "yamaguchi-city-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2022-real-balance",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance",
+    "metric_label": "普通会計実質収支",
+    "amount_yen": 827168000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "形式収支から翌年度に繰り越すべき財源を差し引いた実質収支。総務省決算カードの印字値であり、検算と円単位で一致する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2022",
+      "yamaguchi-city-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2022-real-balance-ratio",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance_ratio",
+    "metric_label": "実質収支比率",
+    "amount_yen": null,
+    "value": 1.7,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "実質収支の標準財政規模に対する割合。総務省『令和4年度市町村決算カード』の印字値。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2022",
+      "yamaguchi-city-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2022-standard-fiscal-scale",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "standard_fiscal_scale",
+    "metric_label": "標準財政規模",
+    "amount_yen": 47804659000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "標準財政規模（臨時財政対策債発行可能額を含む）。総務省『令和4年度市町村決算カード』の千円単位の値を円換算。山口市『令和4年度財政状況資料集』総括表でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2022",
+      "yamaguchi-city-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2022-expenditure-by-purpose",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_purpose",
+    "metric_label": "普通会計目的別歳出",
+    "amount_yen": 89937702000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "総務省『令和4年度市町村決算カード』『目的別歳出の状況』の千円単位の値を円換算。各区分の合計は歳出総額と一致する（検算済み）。目的別の『公債費』は性質別の『公債費』と分類が異なる。諸支出金・前年度繰上充用金は該当なし（カード上『－』）のため null とした。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2022",
+      "yamaguchi-city-fiscal-situation-collection-fy2022"
+    ],
+    "breakdown": [
+      {
+        "key": "assembly",
+        "label": "議会費",
+        "amount_yen": 427437000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "general_affairs",
+        "label": "総務費",
+        "amount_yen": 12384293000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "welfare",
+        "label": "民生費",
+        "amount_yen": 32690651000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "public_health",
+        "label": "衛生費",
+        "amount_yen": 7645671000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "labor",
+        "label": "労働費",
+        "amount_yen": 118671000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "agriculture_forestry_fisheries",
+        "label": "農林水産業費",
+        "amount_yen": 3912140000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "commerce_industry",
+        "label": "商工費",
+        "amount_yen": 4654705000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "civil_engineering",
+        "label": "土木費",
+        "amount_yen": 7583566000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "fire_service",
+        "label": "消防費",
+        "amount_yen": 2937417000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "education",
+        "label": "教育費",
+        "amount_yen": 7207028000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "disaster_recovery",
+        "label": "災害復旧費",
+        "amount_yen": 215609000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 10160514000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "miscellaneous_expenditures",
+        "label": "諸支出金",
+        "amount_yen": null,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "prior_year_advance_appropriation",
+        "label": "前年度繰上充用金",
+        "amount_yen": null,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2022-expenditure-by-nature",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_nature",
+    "metric_label": "普通会計性質別歳出",
+    "amount_yen": 89937702000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "総務省『令和4年度市町村決算カード』『性質別歳出の状況』の千円単位の値を円換算。義務的経費計・投資的経費計を含む各区分の合計は歳出総額と一致する（検算済み）。性質別の『公債費』は目的別の『公債費』と分類が異なる。『投資・出資金・貸付金』は決算カードの表記のとおり1区分として収録した。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2022",
+      "yamaguchi-city-fiscal-situation-collection-fy2022"
+    ],
+    "breakdown": [
+      {
+        "key": "mandatory_expenses",
+        "label": "義務的経費計",
+        "amount_yen": 45310720000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "personnel",
+        "label": "人件費",
+        "amount_yen": 15252624000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "assistance",
+        "label": "扶助費",
+        "amount_yen": 19897695000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 10160401000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "capital_expenses",
+        "label": "投資的経費計",
+        "amount_yen": 11227288000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "construction",
+        "label": "普通建設事業費",
+        "amount_yen": 11011679000,
+        "parent_key": "capital_expenses",
+        "note": null
+      },
+      {
+        "key": "independent_construction",
+        "label": "うち単独事業費",
+        "amount_yen": 6766443000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "disaster_recovery_works",
+        "label": "災害復旧事業費",
+        "amount_yen": 215609000,
+        "parent_key": "capital_expenses",
+        "note": null
+      },
+      {
+        "key": "goods_and_services",
+        "label": "物件費",
+        "amount_yen": 14158305000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "maintenance",
+        "label": "維持補修費",
+        "amount_yen": 607393000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "subsidies",
+        "label": "補助費等",
+        "amount_yen": 8921546000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "transfers_out",
+        "label": "繰出金",
+        "amount_yen": 7526010000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "fund_contributions",
+        "label": "積立金",
+        "amount_yen": 1186226000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "investments_and_loans",
+        "label": "投資・出資金・貸付金",
+        "amount_yen": 1000214000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2022-fund-balance",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fund_balance",
+    "metric_label": "普通会計基金残高",
+    "amount_yen": 19278214000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "年度末の積立金現在高（財政調整基金・減債基金・その他特定目的基金の3区分）。総務省『令和4年度市町村決算カード』の千円単位の値を円換算し、山口市『令和4年度財政状況資料集』総括表でも一致を確認。内訳の合計は現在高と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2022",
+      "yamaguchi-city-fiscal-situation-collection-fy2022"
+    ],
+    "breakdown": [
+      {
+        "key": "fiscal_adjustment_fund",
+        "label": "財政調整基金",
+        "amount_yen": 3926740000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_reduction_fund",
+        "label": "減債基金",
+        "amount_yen": 4544096000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "other_specific_purpose_funds",
+        "label": "その他特定目的基金",
+        "amount_yen": 10807378000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2022-debt-balance",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "debt_balance",
+    "metric_label": "普通会計地方債残高",
+    "amount_yen": 109805770000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "年度末の地方債現在高（臨時財政対策債を含む）。総務省『令和4年度市町村決算カード』の千円単位の値を円換算。内訳の『地方債現在高（臨時財政対策債除き）』は山口市『令和4年度財政状況資料集』総括表の印字値であり、『臨時財政対策債』は現在高からこれを差し引いた算出値。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2022",
+      "yamaguchi-city-fiscal-situation-collection-fy2022"
+    ],
+    "breakdown": [
+      {
+        "key": "bonds_excluding_temporary_fiscal",
+        "label": "地方債現在高（臨時財政対策債を除く）",
+        "amount_yen": 76820441000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "temporary_fiscal_measures_bonds",
+        "label": "臨時財政対策債",
+        "amount_yen": 32985329000,
+        "parent_key": null,
+        "note": "地方債現在高から『地方債現在高（臨時財政対策債除き）』（財政状況資料集総括表の印字値）を差し引いた算出値。"
+      }
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2022-current-balance-ratio",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "current_balance_ratio",
+    "metric_label": "経常収支比率",
+    "amount_yen": null,
+    "value": 94.8,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "経常収支比率。総務省『令和4年度市町村決算カード』の印字値（括弧内の『減収補塡債（特例分）及び臨時財政対策債を除く』値96.6%は収録していない）。山口市『令和4年度財政状況資料集』総括表でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2022",
+      "yamaguchi-city-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2022-real-debt-service-ratio",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_debt_service_ratio",
+    "metric_label": "実質公債費比率",
+    "amount_yen": null,
+    "value": 5.8,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "実質公債費比率（健全化判断比率）。総務省『令和4年度市町村決算カード』の印字値をそのまま収録し、再計算による置き換えはしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2022",
+      "yamaguchi-city-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2022-future-burden-ratio",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "future_burden_ratio",
+    "metric_label": "将来負担比率",
+    "amount_yen": null,
+    "value": 62.2,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "将来負担比率（健全化判断比率）。総務省『令和4年度市町村決算カード』の印字値をそのまま収録し、再計算による置き換えはしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2022",
+      "yamaguchi-city-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2022-fiscal-strength-index",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fiscal_strength_index",
+    "metric_label": "財政力指数",
+    "amount_yen": null,
+    "value": 0.63,
+    "unit": "index",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "財政力指数（過去3年平均）。確認した一次資料（総務省決算カード・山口市『令和4年度財政状況資料集』）はいずれも小数第2位までの表示（0.63）であり、小数第3位までの精密値は未取得のため、表示どおりの値を収録する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2022",
+      "yamaguchi-city-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2022-population",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "population",
+    "metric_label": "住民基本台帳人口",
+    "amount_yen": null,
+    "value": 188598,
+    "unit": "persons",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "住民基本台帳人口（令和5年1月1日現在）。総務省『令和4年度市町村決算カード』の値（山口市『令和4年度財政状況資料集』でも一致を確認）。決算カードの注記により、人口は調査対象年度の1月1日現在の住民基本台帳に登載されている人口とされている。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2022",
+      "yamaguchi-city-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2023-ordinary-revenue",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "普通会計歳入総額",
+    "amount_yen": 96204599000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "総務省『令和5年度市町村決算カード』の千円単位の値を円換算して収録。山口市『令和5年度財政状況資料集』総括表でも一致を確認。普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計の決算額とは一致しない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2023",
+      "yamaguchi-city-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2023-ordinary-expenditure",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "普通会計歳出総額",
+    "amount_yen": 94373740000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "総務省『令和5年度市町村決算カード』の千円単位の値を円換算して収録。山口市『令和5年度財政状況資料集』総括表でも一致を確認。性質別・目的別の各区分の合計は歳出総額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2023",
+      "yamaguchi-city-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2023-ordinary-local-tax",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "local_tax",
+    "metric_label": "普通会計市税収入",
+    "amount_yen": 27908019000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "普通会計の地方税（市税）収入済額。総務省『令和5年度市町村決算カード』の千円単位の値を円換算。山口市『令和5年度財政状況資料集』でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2023",
+      "yamaguchi-city-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2023-formal-balance",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "formal_balance",
+    "metric_label": "普通会計形式収支",
+    "amount_yen": 1830859000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "歳入総額から歳出総額を差し引いた形式収支。総務省決算カードの印字値であり、歳入総額−歳出総額の検算と円単位で一致する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2023",
+      "yamaguchi-city-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2023-carryover-resources",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "carryover_resources",
+    "metric_label": "普通会計翌年度に繰り越すべき財源",
+    "amount_yen": 1147929000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "翌年度へ繰り越すべき財源（継続費逓次繰越・繰越明許費・事故繰越しに係る財源）。形式収支から差し引くと実質収支となる。総務省決算カードの印字値。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2023",
+      "yamaguchi-city-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2023-real-balance",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance",
+    "metric_label": "普通会計実質収支",
+    "amount_yen": 682930000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "形式収支から翌年度に繰り越すべき財源を差し引いた実質収支。総務省決算カードの印字値であり、検算と円単位で一致する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2023",
+      "yamaguchi-city-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2023-real-balance-ratio",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance_ratio",
+    "metric_label": "実質収支比率",
+    "amount_yen": null,
+    "value": 1.4,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "実質収支の標準財政規模に対する割合。総務省『令和5年度市町村決算カード』の印字値。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2023",
+      "yamaguchi-city-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2023-standard-fiscal-scale",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "standard_fiscal_scale",
+    "metric_label": "標準財政規模",
+    "amount_yen": 48477665000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "標準財政規模（臨時財政対策債発行可能額を含む）。総務省『令和5年度市町村決算カード』の千円単位の値を円換算。山口市『令和5年度財政状況資料集』総括表でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2023",
+      "yamaguchi-city-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2023-expenditure-by-purpose",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_purpose",
+    "metric_label": "普通会計目的別歳出",
+    "amount_yen": 94373740000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "総務省『令和5年度市町村決算カード』『目的別歳出の状況』の千円単位の値を円換算。各区分の合計は歳出総額と一致する（検算済み）。目的別の『公債費』は性質別の『公債費』と分類が異なる。諸支出金・前年度繰上充用金は該当なし（カード上『－』）のため null とした。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2023",
+      "yamaguchi-city-fiscal-situation-collection-fy2023"
+    ],
+    "breakdown": [
+      {
+        "key": "assembly",
+        "label": "議会費",
+        "amount_yen": 418396000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "general_affairs",
+        "label": "総務費",
+        "amount_yen": 13661431000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "welfare",
+        "label": "民生費",
+        "amount_yen": 35278660000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "public_health",
+        "label": "衛生費",
+        "amount_yen": 7243545000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "labor",
+        "label": "労働費",
+        "amount_yen": 132551000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "agriculture_forestry_fisheries",
+        "label": "農林水産業費",
+        "amount_yen": 3599378000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "commerce_industry",
+        "label": "商工費",
+        "amount_yen": 4726972000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "civil_engineering",
+        "label": "土木費",
+        "amount_yen": 6862541000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "fire_service",
+        "label": "消防費",
+        "amount_yen": 4338887000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "education",
+        "label": "教育費",
+        "amount_yen": 6960557000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "disaster_recovery",
+        "label": "災害復旧費",
+        "amount_yen": 1042169000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 10108653000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "miscellaneous_expenditures",
+        "label": "諸支出金",
+        "amount_yen": null,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "prior_year_advance_appropriation",
+        "label": "前年度繰上充用金",
+        "amount_yen": null,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2023-expenditure-by-nature",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_nature",
+    "metric_label": "普通会計性質別歳出",
+    "amount_yen": 94373740000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "総務省『令和5年度市町村決算カード』『性質別歳出の状況』の千円単位の値を円換算。義務的経費計・投資的経費計を含む各区分の合計は歳出総額と一致する（検算済み）。性質別の『公債費』は目的別の『公債費』と分類が異なる。『投資・出資金・貸付金』は決算カードの表記のとおり1区分として収録した。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2023",
+      "yamaguchi-city-fiscal-situation-collection-fy2023"
+    ],
+    "breakdown": [
+      {
+        "key": "mandatory_expenses",
+        "label": "義務的経費計",
+        "amount_yen": 46816698000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "personnel",
+        "label": "人件費",
+        "amount_yen": 14602582000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "assistance",
+        "label": "扶助費",
+        "amount_yen": 22105598000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 10108518000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "capital_expenses",
+        "label": "投資的経費計",
+        "amount_yen": 16523677000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "construction",
+        "label": "普通建設事業費",
+        "amount_yen": 15481508000,
+        "parent_key": "capital_expenses",
+        "note": null
+      },
+      {
+        "key": "independent_construction",
+        "label": "うち単独事業費",
+        "amount_yen": 10574304000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "disaster_recovery_works",
+        "label": "災害復旧事業費",
+        "amount_yen": 1042169000,
+        "parent_key": "capital_expenses",
+        "note": null
+      },
+      {
+        "key": "goods_and_services",
+        "label": "物件費",
+        "amount_yen": 13728817000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "maintenance",
+        "label": "維持補修費",
+        "amount_yen": 567691000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "subsidies",
+        "label": "補助費等",
+        "amount_yen": 7863916000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "transfers_out",
+        "label": "繰出金",
+        "amount_yen": 7224933000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "fund_contributions",
+        "label": "積立金",
+        "amount_yen": 597321000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "investments_and_loans",
+        "label": "投資・出資金・貸付金",
+        "amount_yen": 1050687000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2023-fund-balance",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fund_balance",
+    "metric_label": "普通会計基金残高",
+    "amount_yen": 16629391000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "年度末の積立金現在高（財政調整基金・減債基金・その他特定目的基金の3区分）。総務省『令和5年度市町村決算カード』の千円単位の値を円換算し、山口市『令和5年度財政状況資料集』総括表でも一致を確認。内訳の合計は現在高と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2023",
+      "yamaguchi-city-fiscal-situation-collection-fy2023"
+    ],
+    "breakdown": [
+      {
+        "key": "fiscal_adjustment_fund",
+        "label": "財政調整基金",
+        "amount_yen": 2940964000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_reduction_fund",
+        "label": "減債基金",
+        "amount_yen": 3952827000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "other_specific_purpose_funds",
+        "label": "その他特定目的基金",
+        "amount_yen": 9735600000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2023-debt-balance",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "debt_balance",
+    "metric_label": "普通会計地方債残高",
+    "amount_yen": 109699255000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "年度末の地方債現在高（臨時財政対策債を含む）。総務省『令和5年度市町村決算カード』の千円単位の値を円換算。内訳の『地方債現在高（臨時財政対策債除き）』は山口市『令和5年度財政状況資料集』総括表の印字値であり、『臨時財政対策債』は現在高からこれを差し引いた算出値。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2023",
+      "yamaguchi-city-fiscal-situation-collection-fy2023"
+    ],
+    "breakdown": [
+      {
+        "key": "bonds_excluding_temporary_fiscal",
+        "label": "地方債現在高（臨時財政対策債を除く）",
+        "amount_yen": 79339597000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "temporary_fiscal_measures_bonds",
+        "label": "臨時財政対策債",
+        "amount_yen": 30359658000,
+        "parent_key": null,
+        "note": "地方債現在高から『地方債現在高（臨時財政対策債除き）』（財政状況資料集総括表の印字値）を差し引いた算出値。"
+      }
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2023-current-balance-ratio",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "current_balance_ratio",
+    "metric_label": "経常収支比率",
+    "amount_yen": null,
+    "value": 95.4,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "経常収支比率。総務省『令和5年度市町村決算カード』の印字値（括弧内の『減収補塡債（特例分）及び臨時財政対策債を除く』値96.2%は収録していない）。山口市『令和5年度財政状況資料集』総括表でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2023",
+      "yamaguchi-city-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2023-real-debt-service-ratio",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_debt_service_ratio",
+    "metric_label": "実質公債費比率",
+    "amount_yen": null,
+    "value": 6.1,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "実質公債費比率（健全化判断比率）。総務省『令和5年度市町村決算カード』の印字値をそのまま収録し、再計算による置き換えはしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2023",
+      "yamaguchi-city-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2023-future-burden-ratio",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "future_burden_ratio",
+    "metric_label": "将来負担比率",
+    "amount_yen": null,
+    "value": 72.1,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "将来負担比率（健全化判断比率）。総務省『令和5年度市町村決算カード』の印字値をそのまま収録し、再計算による置き換えはしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2023",
+      "yamaguchi-city-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2023-fiscal-strength-index",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fiscal_strength_index",
+    "metric_label": "財政力指数",
+    "amount_yen": null,
+    "value": 0.62,
+    "unit": "index",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "財政力指数（過去3年平均）。確認した一次資料（総務省決算カード・山口市『令和5年度財政状況資料集』）はいずれも小数第2位までの表示（0.62）であり、小数第3位までの精密値は未取得のため、表示どおりの値を収録する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2023",
+      "yamaguchi-city-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2023-population",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "population",
+    "metric_label": "住民基本台帳人口",
+    "amount_yen": null,
+    "value": 187494,
+    "unit": "persons",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "住民基本台帳人口（令和6年1月1日現在）。総務省『令和5年度市町村決算カード』の値（山口市『令和5年度財政状況資料集』でも一致を確認）。決算カードの注記により、人口は調査対象年度の1月1日現在の住民基本台帳に登載されている人口とされている。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2023",
+      "yamaguchi-city-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2024-ordinary-revenue",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "普通会計歳入総額",
+    "amount_yen": 108539608000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "総務省『令和6年度市町村決算カード』の千円単位の値を円換算して収録。山口市『令和6年度財政状況資料集』総括表でも一致を確認。普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計の決算額とは一致しない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2024",
+      "yamaguchi-city-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2024-ordinary-expenditure",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "普通会計歳出総額",
+    "amount_yen": 107239725000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "総務省『令和6年度市町村決算カード』の千円単位の値を円換算して収録。山口市『令和6年度財政状況資料集』総括表でも一致を確認。性質別・目的別の各区分の合計は歳出総額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2024",
+      "yamaguchi-city-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2024-ordinary-local-tax",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "local_tax",
+    "metric_label": "普通会計市税収入",
+    "amount_yen": 27701466000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "普通会計の地方税（市税）収入済額。総務省『令和6年度市町村決算カード』の千円単位の値を円換算。山口市『令和6年度財政状況資料集』でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2024",
+      "yamaguchi-city-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2024-formal-balance",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "formal_balance",
+    "metric_label": "普通会計形式収支",
+    "amount_yen": 1299883000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "歳入総額から歳出総額を差し引いた形式収支。総務省決算カードの印字値であり、歳入総額−歳出総額の検算と円単位で一致する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2024",
+      "yamaguchi-city-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2024-carryover-resources",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "carryover_resources",
+    "metric_label": "普通会計翌年度に繰り越すべき財源",
+    "amount_yen": 568386000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "翌年度へ繰り越すべき財源（継続費逓次繰越・繰越明許費・事故繰越しに係る財源）。形式収支から差し引くと実質収支となる。総務省決算カードの印字値。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2024",
+      "yamaguchi-city-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2024-real-balance",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance",
+    "metric_label": "普通会計実質収支",
+    "amount_yen": 731497000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "形式収支から翌年度に繰り越すべき財源を差し引いた実質収支。総務省決算カードの印字値であり、検算と円単位で一致する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2024",
+      "yamaguchi-city-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2024-real-balance-ratio",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance_ratio",
+    "metric_label": "実質収支比率",
+    "amount_yen": null,
+    "value": 1.5,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "実質収支の標準財政規模に対する割合。総務省『令和6年度市町村決算カード』の印字値。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2024",
+      "yamaguchi-city-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2024-standard-fiscal-scale",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "standard_fiscal_scale",
+    "metric_label": "標準財政規模",
+    "amount_yen": 49676255000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "標準財政規模（臨時財政対策債発行可能額を含む）。総務省『令和6年度市町村決算カード』の千円単位の値を円換算。山口市『令和6年度財政状況資料集』総括表でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2024",
+      "yamaguchi-city-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2024-expenditure-by-purpose",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_purpose",
+    "metric_label": "普通会計目的別歳出",
+    "amount_yen": 107239725000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "総務省『令和6年度市町村決算カード』『目的別歳出の状況』の千円単位の値を円換算。各区分の合計は歳出総額と一致する（検算済み）。目的別の『公債費』は性質別の『公債費』と分類が異なる。諸支出金・前年度繰上充用金は該当なし（カード上『－』）のため null とした。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2024",
+      "yamaguchi-city-fiscal-situation-collection-fy2024"
+    ],
+    "breakdown": [
+      {
+        "key": "assembly",
+        "label": "議会費",
+        "amount_yen": 408609000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "general_affairs",
+        "label": "総務費",
+        "amount_yen": 22978784000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "welfare",
+        "label": "民生費",
+        "amount_yen": 35214929000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "public_health",
+        "label": "衛生費",
+        "amount_yen": 6882628000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "labor",
+        "label": "労働費",
+        "amount_yen": 135498000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "agriculture_forestry_fisheries",
+        "label": "農林水産業費",
+        "amount_yen": 3756600000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "commerce_industry",
+        "label": "商工費",
+        "amount_yen": 4990496000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "civil_engineering",
+        "label": "土木費",
+        "amount_yen": 7546415000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "fire_service",
+        "label": "消防費",
+        "amount_yen": 6266904000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "education",
+        "label": "教育費",
+        "amount_yen": 7742985000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "disaster_recovery",
+        "label": "災害復旧費",
+        "amount_yen": 1036820000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 10279057000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "miscellaneous_expenditures",
+        "label": "諸支出金",
+        "amount_yen": null,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "prior_year_advance_appropriation",
+        "label": "前年度繰上充用金",
+        "amount_yen": null,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2024-expenditure-by-nature",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_nature",
+    "metric_label": "普通会計性質別歳出",
+    "amount_yen": 107239725000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "総務省『令和6年度市町村決算カード』『性質別歳出の状況』の千円単位の値を円換算。義務的経費計・投資的経費計を含む各区分の合計は歳出総額と一致する（検算済み）。性質別の『公債費』は目的別の『公債費』と分類が異なる。『投資・出資金・貸付金』は決算カードの表記のとおり1区分として収録した。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2024",
+      "yamaguchi-city-fiscal-situation-collection-fy2024"
+    ],
+    "breakdown": [
+      {
+        "key": "mandatory_expenses",
+        "label": "義務的経費計",
+        "amount_yen": 48398909000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "personnel",
+        "label": "人件費",
+        "amount_yen": 15998232000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "assistance",
+        "label": "扶助費",
+        "amount_yen": 22121620000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 10279057000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "capital_expenses",
+        "label": "投資的経費計",
+        "amount_yen": 25250600000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "construction",
+        "label": "普通建設事業費",
+        "amount_yen": 24213780000,
+        "parent_key": "capital_expenses",
+        "note": null
+      },
+      {
+        "key": "independent_construction",
+        "label": "うち単独事業費",
+        "amount_yen": 18547347000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "disaster_recovery_works",
+        "label": "災害復旧事業費",
+        "amount_yen": 1036820000,
+        "parent_key": "capital_expenses",
+        "note": null
+      },
+      {
+        "key": "goods_and_services",
+        "label": "物件費",
+        "amount_yen": 14529949000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "maintenance",
+        "label": "維持補修費",
+        "amount_yen": 645522000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "subsidies",
+        "label": "補助費等",
+        "amount_yen": 8821582000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "transfers_out",
+        "label": "繰出金",
+        "amount_yen": 7330573000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "fund_contributions",
+        "label": "積立金",
+        "amount_yen": 1273539000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "investments_and_loans",
+        "label": "投資・出資金・貸付金",
+        "amount_yen": 989051000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2024-fund-balance",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fund_balance",
+    "metric_label": "普通会計基金残高",
+    "amount_yen": 13380648000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "年度末の積立金現在高（財政調整基金・減債基金・その他特定目的基金の3区分）。総務省『令和6年度市町村決算カード』の千円単位の値を円換算し、山口市『令和6年度財政状況資料集』総括表でも一致を確認。内訳の合計は現在高と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2024",
+      "yamaguchi-city-fiscal-situation-collection-fy2024"
+    ],
+    "breakdown": [
+      {
+        "key": "fiscal_adjustment_fund",
+        "label": "財政調整基金",
+        "amount_yen": 3020490000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_reduction_fund",
+        "label": "減債基金",
+        "amount_yen": 2538413000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "other_specific_purpose_funds",
+        "label": "その他特定目的基金",
+        "amount_yen": 7821745000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2024-debt-balance",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "debt_balance",
+    "metric_label": "普通会計地方債残高",
+    "amount_yen": 116881951000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "年度末の地方債現在高（臨時財政対策債を含む）。総務省『令和6年度市町村決算カード』の千円単位の値を円換算。内訳の『地方債現在高（臨時財政対策債除き）』は山口市『令和6年度財政状況資料集』総括表の印字値であり、『臨時財政対策債』は現在高からこれを差し引いた算出値。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2024",
+      "yamaguchi-city-fiscal-situation-collection-fy2024"
+    ],
+    "breakdown": [
+      {
+        "key": "bonds_excluding_temporary_fiscal",
+        "label": "地方債現在高（臨時財政対策債を除く）",
+        "amount_yen": 89334347000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "temporary_fiscal_measures_bonds",
+        "label": "臨時財政対策債",
+        "amount_yen": 27547604000,
+        "parent_key": null,
+        "note": "地方債現在高から『地方債現在高（臨時財政対策債除き）』（財政状況資料集総括表の印字値）を差し引いた算出値。"
+      }
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2024-current-balance-ratio",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "current_balance_ratio",
+    "metric_label": "経常収支比率",
+    "amount_yen": null,
+    "value": 97.4,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "経常収支比率。総務省『令和6年度市町村決算カード』の印字値（括弧内の『減収補塡債（特例分）及び臨時財政対策債を除く』値97.8%は収録していない）。山口市『令和6年度財政状況資料集』総括表でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2024",
+      "yamaguchi-city-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2024-real-debt-service-ratio",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_debt_service_ratio",
+    "metric_label": "実質公債費比率",
+    "amount_yen": null,
+    "value": 6.3,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "実質公債費比率（健全化判断比率）。総務省『令和6年度市町村決算カード』の印字値をそのまま収録し、再計算による置き換えはしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2024",
+      "yamaguchi-city-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2024-future-burden-ratio",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "future_burden_ratio",
+    "metric_label": "将来負担比率",
+    "amount_yen": null,
+    "value": 89.3,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "将来負担比率（健全化判断比率）。総務省『令和6年度市町村決算カード』の印字値をそのまま収録し、再計算による置き換えはしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2024",
+      "yamaguchi-city-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2024-fiscal-strength-index",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fiscal_strength_index",
+    "metric_label": "財政力指数",
+    "amount_yen": null,
+    "value": 0.62,
+    "unit": "index",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "財政力指数（過去3年平均）。確認した一次資料（総務省決算カード・山口市『令和6年度財政状況資料集』）はいずれも小数第2位までの表示（0.62）であり、小数第3位までの精密値は未取得のため、表示どおりの値を収録する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2024",
+      "yamaguchi-city-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-352039-fiscal-2024-population",
+    "municipality_id": "jp-local-352039",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "population",
+    "metric_label": "住民基本台帳人口",
+    "amount_yen": null,
+    "value": 185982,
+    "unit": "persons",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "住民基本台帳人口（令和7年1月1日現在）。総務省『令和6年度市町村決算カード』の値（山口市『令和6年度財政状況資料集』でも一致を確認）。決算カードの注記により、人口は調査対象年度の1月1日現在の住民基本台帳に登載されている人口とされている。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "yamaguchi-city-mic-settlement-card-fy2024",
+      "yamaguchi-city-fiscal-situation-collection-fy2024"
+    ]
+  }
+]

@@ -280,7 +280,7 @@ def test_fukuyama_progress_review_keeps_priority_policy_framework():
 def test_fukuyama_finance_sources_are_reviewed():
     finance = load(ROOT / "data/catalog/fukuyama_city_finance_sources.json")
     assert finance["version"] == "0.1.0"
-    assert finance["updated_at"] == "2026-11-16"
+    assert finance["updated_at"] == "2026-11-19"
     assert finance["scope"] == "phase15-core-capital-review"
 
     by_id = {record["id"]: record for record in finance["records"]}
@@ -288,6 +288,13 @@ def test_fukuyama_finance_sources_are_reviewed():
         "fukuyama-city-home",
         "fukuyama-budget-2026",
         "fukuyama-settlement-2024",
+        # Issue #691 fiscal-settlement expansion sources.
+        "fukuyama-city-mic-settlement-card-fy2022",
+        "fukuyama-city-mic-settlement-card-fy2023",
+        "fukuyama-city-mic-settlement-card-fy2024",
+        "fukuyama-city-fiscal-situation-collection-fy2022",
+        "fukuyama-city-fiscal-situation-collection-fy2023",
+        "fukuyama-city-fiscal-situation-collection-fy2024",
     }
     for record in finance["records"]:
         assert record["municipality_key"] == "fukuyama-city"
@@ -295,7 +302,9 @@ def test_fukuyama_finance_sources_are_reviewed():
         assert record["availability"] == "published"
         assert record["review_status"] == "reviewed"
         assert record["confidence"] == "high"
-        assert record["url"].startswith("https://www.city.fukuyama.hiroshima.jp/")
+        assert record["url"].startswith(
+            ("https://www.city.fukuyama.hiroshima.jp/", "https://www.soumu.go.jp/", "https://www.pref.hiroshima.lg.jp/")
+        )
 
 
 def test_fukuyama_completion_marks_every_gate_and_defers_depth():

@@ -281,7 +281,7 @@ def test_kurashiki_progress_review_keeps_pdca_framework():
 def test_kurashiki_finance_sources_are_reviewed():
     finance = load(ROOT / "data/catalog/kurashiki_city_finance_sources.json")
     assert finance["version"] == "0.1.0"
-    assert finance["updated_at"] == "2026-11-16"
+    assert finance["updated_at"] == "2026-11-19"
     assert finance["scope"] == "phase15-core-capital-review"
 
     by_id = {record["id"]: record for record in finance["records"]}
@@ -289,6 +289,13 @@ def test_kurashiki_finance_sources_are_reviewed():
         "kurashiki-city-home",
         "kurashiki-budget-2026",
         "kurashiki-settlement-2024",
+        # Issue #691 fiscal-settlement expansion sources.
+        "kurashiki-city-mic-settlement-card-fy2022",
+        "kurashiki-city-mic-settlement-card-fy2023",
+        "kurashiki-city-mic-settlement-card-fy2024",
+        "kurashiki-city-fiscal-situation-collection-fy2022",
+        "kurashiki-city-fiscal-situation-collection-fy2023",
+        "kurashiki-city-fiscal-situation-collection-fy2024",
     }
     for record in finance["records"]:
         assert record["municipality_key"] == "kurashiki-city"
@@ -296,7 +303,9 @@ def test_kurashiki_finance_sources_are_reviewed():
         assert record["availability"] == "published"
         assert record["review_status"] == "reviewed"
         assert record["confidence"] == "high"
-        assert record["url"].startswith("https://www.city.kurashiki.okayama.jp/")
+        assert record["url"].startswith(
+            ("https://www.city.kurashiki.okayama.jp/", "https://www.soumu.go.jp/", "https://www.pref.okayama.lg.jp/")
+        )
 
 
 def test_kurashiki_completion_marks_every_gate_and_defers_depth():
