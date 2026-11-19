@@ -67,7 +67,8 @@ def test_aichi_detail_has_bulletin_source_and_original_text_cards():
     assert 'id="governor-promises"' in AICHI
     assert 'href="/promises#aichi-prefecture"' in AICHI
     assert "公約原文：選挙公報" in AICHI
-    assert "県議会の個別レコードが未登録" in AICHI
+    assert "県議会の会期・議案・請願・会派別態度" in AICHI
+    assert "県議会の個別レコードが未登録" not in AICHI
     assert "Reviewed 公約、重点事業、県議会の個別レコードが未登録" not in AICHI
     assert "公約登録は未実施" not in AICHI
     assert "公約の達成判定に必要" not in AICHI or "公式評価材料" in AICHI
