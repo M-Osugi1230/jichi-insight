@@ -320,5 +320,49 @@
       "国立国会図書館WARPにおける豊田市サイトの収集有無は未確定。紙の選挙公報・法定ビラの現物確認はオフライン経路が必要で、本探索の範囲外。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-asahikawa-city-2025",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-asahikawa-city-2025",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "旭川市選挙管理委員会の報道依頼資料と市公式の投開票結果ページで2025年市長選挙の日程・結果を確認したが、いずれにも選挙公報への導線は掲載されていない。市長プロフィール・経歴は現職と経歴のみで、公約原文は含まない。",
+        "source_ids": [
+          "asahikawa-city-mayor-election-2025-schedule",
+          "asahikawa-city-mayor-election-2025-results",
+          "asahikawa-city-mayor-profile"
+        ],
+        "location_note": "選管の報道依頼資料、市公式の投開票結果ページ、市長プロフィール・経歴ページ（いずれも公式公表、2026-11-20に本文を直接確認）。",
+        "decision": "accepted",
+        "review_note": "公式資料側に公約原文の掲載がないことを確認。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "Wayback Machineの旭川市公式サイト選挙セクション配下の保存（2025年8〜12月の全6件）にも選挙公報のページ・PDFは存在しない。候補者本人の公式サイトは存在するが、2025年選挙時の公約一次資料の現存は特定できなかった。",
+        "source_ids": [
+          "asahikawa-city-mayor-election-2025-results"
+        ],
+        "location_note": "Wayback CDXによる選挙セクション配下の保存一覧と、現行の選挙課ページ群・検索エンジンの確認結果に基づく。",
+        "decision": "accepted",
+        "review_note": "公報の実物は確認できていないため、原典としては採用しない。"
+      },
+      {
+        "field": "result_status",
+        "statement": "検証可能な原典を特定できなかったため、result_status を no_stable_primary_source_found とし、公約レコードは作成しない。選挙ドットコム等の民間ミラーの転載や報道の候補者アンケート回答は候補者自身の公式公表物ではないため、原典の代替として採用しない。",
+        "source_ids": [
+          "asahikawa-city-mayor-election-2025-results"
+        ],
+        "location_note": "探索記録 manifesto-source-search-asahikawa-city-2025 の review_note に判断の詳細を記載。",
+        "decision": "accepted",
+        "review_note": "不存在の断定はしない（nonexistence_claim は false）。"
+      }
+    ],
+    "open_questions": [
+      "Wayback Machineのドメイン全体照会は応答不良（504等）で完遂できていない。選挙セクション外のURLに公報PDFの保存がある可能性は低いと判断するが、完全な不存在証明ではない。",
+      "候補者公式サイトの2025年公約ページの現存有無は未確認。紙の選挙公報の現物確認はオフライン経路が必要で、本探索の範囲外。"
+    ],
+    "review_status": "reviewed"
   }
 ]

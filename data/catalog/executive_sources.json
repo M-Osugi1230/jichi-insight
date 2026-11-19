@@ -1,5 +1,5 @@
 {
-  "version": "0.13.0",
+  "version": "0.14.0",
   "updated_at": "2026-11-20",
   "scope": "pilot",
   "records": [
@@ -478,6 +478,48 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "2023年北海道知事選挙の選挙公報を掲載する選挙管理委員会の公式ページ。公式公表があり到達可能であることを確認した。公約レコードの登録は北海道クラスターの公約段階で行う。"
+    },
+    {
+      "id": "asahikawa-city-mayor-profile",
+      "municipality_key": "asahikawa-city",
+      "organization": "旭川市",
+      "category": "executive",
+      "title": "市長プロフィール・経歴",
+      "url": "https://www.city.asahikawa.hokkaido.jp/1401/topsales/d054418.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-20",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "旭川市公式サイトの市長プロフィール・経歴ページ。今津寛介が現職の旭川市長であること、略歴に「令和7年9月 任期満了に伴う旭川市長選挙に出馬し当選（2期目）」と明記する。2026-11-20に本文を直接確認した。"
+    },
+    {
+      "id": "asahikawa-city-mayor-election-2025-schedule",
+      "municipality_key": "asahikawa-city",
+      "organization": "旭川市選挙管理委員会",
+      "category": "election",
+      "title": "旭川市長選挙及び旭川市議会議員補欠選挙の日程の決定について（報道依頼）",
+      "url": "https://www.city.asahikawa.hokkaido.jp/700/723/729/d081580_d/fil/0415-05.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-20",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "旭川市選挙管理委員会が2025年4月15日に公表した報道依頼資料（2025年4月14日の選管会議の決定）。旭川市長選挙について「任期満了日 令和7年9月25日」と明記し、選挙期日は2025年9月7日、告示日は8月31日と決定した旨を公表する。前任期の満了日の公式公表として用いた。2026-11-20にPDF本文を直接確認した。"
+    },
+    {
+      "id": "asahikawa-city-mayor-election-2025-results",
+      "municipality_key": "asahikawa-city",
+      "organization": "旭川市選挙管理委員会事務局（選挙課）",
+      "category": "election",
+      "title": "令和7年9月7日執行 旭川市長選挙投開票結果",
+      "url": "https://www.city.asahikawa.hokkaido.jp/kurashi/461/463/4633/d073961.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-20",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "旭川市公式サイトの投開票結果ページ。今津ひろすけが78,884票で1位当選したこと（のむらパターソン19,031票、石田ひさとし12,854票、有効得票総数110,769票、投票率41.53%）を明記する。得票数は市の公式公表で現在も確認できる。2026-11-20に本文を直接確認した。"
     }
   ]
 }
