@@ -58,7 +58,7 @@ def test_page_has_plan_budget_three_year_finance_governor_and_sources():
     assert 'term.municipality_id === aichiFinance.municipality.id' in PAGE
     assert 'governorPromises.length > 0' in PAGE
     assert "公約原文：未登録" in PAGE
-    assert "県議会の個別レコードが未登録" in PAGE
+    assert "県議会の会期・議案・請願・会派別態度" in PAGE
     assert "aichiFinanceSources.map" in PAGE
     assert (WEB / "app/municipalities/aichi/page.tsx").exists()
 
@@ -69,4 +69,4 @@ def test_catalog_quality_and_discovery_are_not_overclaimed():
     assert '"aichi-prefecture": aichiFinance.records' in QUALITY
     assert '"aichi-prefecture": aichiFinance.evidencePackets' in QUALITY
     assert 'officialCode === aichiFinance.municipality.official_code' in DISCOVERY
-    assert "promises: false, assembly: false, projects: false" in DISCOVERY
+    assert "assembly: hasAssembly" in DISCOVERY
