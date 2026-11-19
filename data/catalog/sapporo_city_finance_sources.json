@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updated_at": "2026-08-08",
+  "updated_at": "2026-11-19",
   "scope": "phase13-designated-city-review",
   "records": [
     {
@@ -44,6 +44,90 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "令和6年度一般会計の歳入・歳出決算概要と決算書等への公式入口。"
+    },
+    {
+      "id": "sapporo-city-mic-settlement-card-fy2022",
+      "municipality_key": "sapporo-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和4年度 市町村決算カード（北海道）",
+      "url": "https://www.soumu.go.jp/main_content/000936874.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和4年度市町村決算カード（北海道分）のうち札幌市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、札幌市『令和4年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "sapporo-city-fiscal-situation-collection-fy2022",
+      "municipality_key": "sapporo-city",
+      "organization": "札幌市",
+      "category": "settlement",
+      "title": "令和4年度 財政状況資料集",
+      "url": "https://www.city.sapporo.jp/zaisei/kohyo/zaimu/zaisei-ichiran/documents/zaiseijokyo_r4.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する市公式資料。総務省決算カードの照合先として使用した。"
+    },
+    {
+      "id": "sapporo-city-mic-settlement-card-fy2023",
+      "municipality_key": "sapporo-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和5年度 市町村決算カード（北海道）",
+      "url": "https://www.soumu.go.jp/main_content/000998919.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和5年度市町村決算カード（北海道分）のうち札幌市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、札幌市『令和5年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "sapporo-city-fiscal-situation-collection-fy2023",
+      "municipality_key": "sapporo-city",
+      "organization": "札幌市",
+      "category": "settlement",
+      "title": "令和5年度 財政状況資料集",
+      "url": "https://www.city.sapporo.jp/zaisei/kohyo/zaimu/zaisei-ichiran/documents/r5_zaiseijoukyoushiryoushu.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する市公式資料。総務省決算カードの照合先として使用した。"
+    },
+    {
+      "id": "sapporo-city-mic-settlement-card-fy2024",
+      "municipality_key": "sapporo-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和6年度 市町村決算カード（北海道）",
+      "url": "https://www.soumu.go.jp/main_content/001063944.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和6年度市町村決算カード（北海道分）のうち札幌市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、札幌市『令和6年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "sapporo-city-fiscal-situation-collection-fy2024",
+      "municipality_key": "sapporo-city",
+      "organization": "札幌市",
+      "category": "settlement",
+      "title": "令和6年度 財政状況資料集",
+      "url": "https://www.city.sapporo.jp/zaisei/kohyo/zaimu/zaisei-ichiran/documents/r6_zaiseijoukyoushiryoushu.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する市公式資料。総務省決算カードの照合先として使用した。"
     }
   ]
 }
