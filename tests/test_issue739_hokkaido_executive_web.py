@@ -74,7 +74,10 @@ def test_catalog_links_published_hokkaido_detail_and_keeps_policy_page():
 
 def test_hokkaido_financial_quality_counts_real_reviewed_web_data():
     quality = (LIB / "dataQuality.ts").read_text(encoding="utf-8")
-    assert 'type FiscalMunicipalityKey = Exclude<MunicipalityKey, "hokkaido-prefecture">' not in quality
+    assert (
+        'type FiscalMunicipalityKey = Exclude<MunicipalityKey, "hokkaido-prefecture">'
+        not in quality
+    )
     assert '"hokkaido-prefecture": hokkaidoFinance.records' in quality
     assert '"hokkaido-prefecture": hokkaidoFinance.evidencePackets' in quality
     assert '"aichi-prefecture": aichiFinance.records' in quality
