@@ -33,7 +33,10 @@ def test_missing_settlement_does_not_render_or_activate_fiscal_details():
     assert 'id="fiscal-detail"' in PAGE
     assert 'available.finance && Boolean(fiscalDetailHref)' in PANEL
     assert "const hasFinance = city ? loadGenericCityFinance(city.slug) !== null : false;" in GATE
-    assert "return { finance: hasFinance, promises: false, assembly: false, projects: false, key: null };" in GATE
+    assert (
+        "return { finance: hasFinance, promises: false, assembly: false, "
+        "projects: false, key: null };"
+    ) in GATE
 
 
 def test_pilot_package_requires_reviewed_ordinary_settlement_with_evidence():
