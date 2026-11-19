@@ -94,7 +94,7 @@ export type Session = {
 };
 export type Proposal = {
   id: string; session_id: string; proposal_number: string; title: string;
-  submitted_by: string; decided_at: string | null; submitted_at: string | null;
+  submitted_by: string; decided_at: string | null; submitted_at?: string | null;
   outcome: string; related_fiscal_record_ids: string[]; sources: string[];
 };
 export type Vote = {
