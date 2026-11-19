@@ -256,6 +256,7 @@ export default async function Phase15CityPage({
             {city.name}の政策計画と一般会計の予算・決算を、公式資料に基づいて整理しています。
             確認できた内容と、実績・事業との接続がまだできない内容を区別して掲載します。
           </p>
+          <p>確認できること：この市のレビュー済み計画・予算・決算と公式出典。まだ確認できないこと：市債残高や財政健全性の指標は全67市に同条件では揃っていません。未収録の指標は、自治体が公表していないことを意味しません。</p>
           <div className={styles.introMeta}>
             <StatusBadge label="一次資料レビュー完了" tone="verified" />
             <dl>
