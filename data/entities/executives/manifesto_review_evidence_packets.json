@@ -200,5 +200,47 @@
       "公報より詳細な候補者資料（政策パンフレット等）の安定した所在が特定できれば、登録済みの公約文と照合する。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aichi-pref-2023-manifesto-review",
+    "subject_type": "manifesto_review",
+    "subject_id": "manifesto-review-jp-local-230006-2023",
+    "claims": [
+      {
+        "field": "source_location",
+        "statement": "大村秀章候補欄は選挙公報1ページ目上段に掲載され、★印の政策項目は欄の左側（冒頭行の囲み2件と詳細文を伴う3件）と右カラム（見出し5件）に配置されている。",
+        "source_ids": [
+          "aichi-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全4ページ）の1ページ目上段。",
+        "decision": "accepted",
+        "review_note": "2026-11-19にPDFを取得し、描画画像で候補者欄の構成を確認した。"
+      },
+      {
+        "field": "segmentation_status",
+        "statement": "★印と囲みによる原文上の境界が明確なため、★印の項目を単位に10件へ分割した。キャッチコピー・スローガン・経歴は公約として分割しなかった。詳細文を伴う項目は見出しと詳細文を一体として転記した。",
+        "source_ids": [
+          "aichi-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "冒頭行の囲み2件、詳細文を伴う★項目3件、右カラムの★項目5件。",
+        "decision": "accepted",
+        "review_note": "冒頭行の2つの囲み（ジブリパークの魅力発信と新型コロナウイルス感染症の克服）は主題が異なる独立した訴えであり、1件に統合していない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は愛知県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。公報PDFは選挙管理委員会の公式ページ「投開票の状況・選挙公報」から、県公式サイト上で直接取得した（第三者が公開するコピーではない）。",
+        "source_ids": [
+          "aichi-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "公報の表頭（愛知県選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）に基づく。",
+        "decision": "accepted",
+        "review_note": "公式サイトから直接取得した公報そのものであるため confidence は high とする。候補者欄が画像形式である点は、複数解像度での描画照合で担保した。"
+      }
+    ],
+    "open_questions": [
+      "選挙公報より詳細な候補者資料（政策パンフレット等）の安定した所在が特定できれば、登録済みの公約文と照合する。",
+      "事業との接続は文言・内容に基づく推定であり、県が公約と事業の公式な対応付けを公表した場合は接続を見直す。"
+    ],
+    "review_status": "reviewed"
   }
 ]

@@ -7,7 +7,8 @@ import { promiseSourceDetails } from "@/lib/promiseSources";
 import { sourceConfidenceLabel } from "@/lib/statusLabels";
 import { fukuokaCityProjectData } from "@/lib/fukuokaCityProjects";
 import { fukuokaPrefectureProjectData } from "@/lib/fukuokaPrefectureProjects";
-import { kitakyushuProjectData } from "@/lib/kitakyushuProjects";
+import { kitakyushuProjectData, type ProjectRecord } from "@/lib/kitakyushuProjects";
+import aichiProjects from "../../../../data/reviewed/aichi-prefecture/projects.json";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
@@ -18,6 +19,7 @@ const projectGroups = [
   ["fukuoka-prefecture",fukuokaPrefectureProjectData.projects],
   ["fukuoka-city",fukuokaCityProjectData.projects],
   ["kitakyushu-city",kitakyushuProjectData.projects],
+  ["aichi-prefecture",aichiProjects as ProjectRecord[]],
 ] as const;
 function relatedProject(id:string) {
   for(const [area,projects] of projectGroups) {
@@ -63,7 +65,10 @@ export default function PromisesPage() {
               <div className={styles.links}><h4>関連事業（自動推定を含む・要確認）</h4>
                 {p.related_project_ids.length ? <ul>{p.related_project_ids.map(projectId=>{
                   const match=relatedProject(projectId);
-                  return <li key={projectId}>{match ? <Link href={`/projects/${match.area}/${encodeURIComponent(match.project.series_id)}`}>{match.project.official_title}</Link> : "事業レコード参照ID："+projectId}
+                  return <li key={projectId}>{match ? (match.area === "aichi-prefecture"
+                    ? <span>{match.project.official_title}（愛知県・関連事業の詳細ページは Web 登録後に公開）</span>
+                    : <Link href={`/projects/${match.area}/${encodeURIComponent(match.project.series_id)}`}>{match.project.official_title}</Link>)
+                    : "事業レコード参照ID："+projectId}
                     <span> / 確信度：低（inferred） / Evidence: needs_review</span></li>;
                 })}</ul> : <p>接続事業なし（未着手・未達の意味ではありません）</p>}
               </div>
@@ -75,6 +80,7 @@ export default function PromisesPage() {
                 <p>原文箇所：{p.source_location}</p>
                 {municipality.key==="fukuoka-city" ? <p>原典来歴：候補者サイトを直接保存したものではなく、同時期記事の原文引用と選挙公報の見出し照合により登録しています。</p> : null}
                 {municipality.key==="fukuoka-prefecture" ? <p>原典来歴：公式選挙公報を使用しています。</p> : null}
+                {municipality.key==="aichi-prefecture" ? <p>原典来歴：2023年愛知県知事選挙の公式選挙公報を使用しています。資料上の★印項目を基に10件登録。事業との関連は low / inferred・要レビューであり、進捗記録は事業の成果・達成の確定判定ではありません。</p> : null}
                 <p>記録の確認：{p.review_status} / {sourceConfidenceLabel(p.confidence)}</p>
                 <p>証拠パケット：{evidence?.review_status ?? "未収録"}。未解決事項：{evidence?.open_questions.length ? evidence.open_questions.join("／") : "記載なし"}</p>
               </div>

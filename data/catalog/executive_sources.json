@@ -1,5 +1,5 @@
 {
-  "version": "0.10.0",
+  "version": "0.11.0",
   "updated_at": "2026-11-19",
   "scope": "pilot",
   "records": [
@@ -352,6 +352,20 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "愛知県が公表する県内市町村長の一覧。名古屋市長・広沢一郎の任期満了日を令和10年11月23日（2028年11月23日）、就任回数を1回と明記する。本カタログでは名古屋市長の任期満了日の出典として登録する。"
+    },
+    {
+      "id": "aichi-pref-governor-election-2023-bulletin",
+      "municipality_key": "aichi-prefecture",
+      "organization": "愛知県選挙管理委員会",
+      "category": "election",
+      "title": "令和5年2月5日執行 愛知県知事選挙 選挙公報（大村秀章候補欄）",
+      "url": "https://www.pref.aichi.jp/uploaded/attachment/449838.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "愛知県知事選挙の公式選挙公報（候補者から提出された原稿をそのまま印刷したもの。全4ページ）。選挙管理委員会の公式ページ「投開票の状況・選挙公報」から直接リンクされ、県公式サイト上で公開されている。大村秀章候補欄は1ページ目上段にあり、キャッチコピー「日本一元気な愛知をつくり 日本の未来をつくる！」とスローガン「人が輝くあいち」の下に、★印の政策項目（冒頭行の囲み2件、詳細文を伴う3件、右カラムの5件、計10件）とプロフィール（経歴）を掲載する。公約レコードは★印の項目から作成した。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度で照合した。"
     }
   ]
 }

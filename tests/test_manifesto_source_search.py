@@ -33,11 +33,12 @@ def test_manifesto_source_search_fixture_is_registered_and_linked():
 def test_manifesto_source_searches_match_contract_and_safety_boundary():
     searches = load("data/entities/executives/manifesto_source_searches.json")
 
-    assert len(searches) == 4
+    assert len(searches) == 5
     assert {search["executive_term_id"] for search in searches} == {
         "jp-local-400009-executive-2025-04-14",
         "jp-local-401307-executive-2022-12-07",
         "jp-local-401005-executive-2023-02-20",
+        "jp-local-230006-executive-2023-02-15",
         "jp-local-231002-executive-2024-11-24",
     }
 
@@ -52,8 +53,10 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         for search in searches
         if search["result_status"] == "no_stable_primary_source_found"
     ]
-    # All four searches have registered a primary source (the Fukuoka
-    # Prefecture search was closed by the 2025 election bulletin, and the
+    # All five searches have since registered a primary source (the
+    # Fukuoka Prefecture search was closed by the 2025 election
+    # bulletin, the Aichi Prefecture search by the 2023 bulletin
+    # hosted on the election commission's official page, and the
     # Nagoya City search found the official bulletin directly). The
     # safety invariant still applies to any record that reports no
     # source: it must not claim found sources.

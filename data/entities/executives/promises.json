@@ -1703,5 +1703,271 @@
     "sources": [
       "nagoya-city-mayor-election-2024-bulletin"
     ]
+  },
+  {
+    "id": "jp-local-230006-executive-2023-02-15-promise-001",
+    "municipality_id": "jp-local-230006",
+    "executive_term_id": "jp-local-230006-executive-2023-02-15",
+    "original_text": "ジブリパークの魅力発信",
+    "source_location": "選挙公報1ページ目上段・大村秀章候補欄「人が輝くあいち」の冒頭行・囲み1件目",
+    "statement_type": "directional_commitment",
+    "plain_summary": "愛知県が整備したジブリパークの魅力を発信する。",
+    "policy_area": "urban_development_and_tourism",
+    "baseline": null,
+    "target": null,
+    "deadline": null,
+    "funding_statement": null,
+    "controllability": "high",
+    "assessability": "partially_assessable",
+    "progress_state": "in_progress",
+    "related_project_ids": [
+      "jp-local-230006-project-2025-ghibli-park-promotion"
+    ],
+    "change_explanation": null,
+    "extraction_note": "候補者欄の冒頭行には2つの囲みスローガンが並び、それぞれ独立した訴えのため1件ずつレコード化した。本項目の囲みには末尾にハート記号（♥）が装飾として付くが、登録文には含めていない。公約部分に数値目標・期限・財源の明示はないため、target 等は記録していない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aichi-pref-governor-election-2023-bulletin"
+    ]
+  },
+  {
+    "id": "jp-local-230006-executive-2023-02-15-promise-002",
+    "municipality_id": "jp-local-230006",
+    "executive_term_id": "jp-local-230006-executive-2023-02-15",
+    "original_text": "新型コロナウイルス感染症を克服!!",
+    "source_location": "選挙公報1ページ目上段・大村秀章候補欄「人が輝くあいち」の冒頭行・囲み2件目",
+    "statement_type": "directional_commitment",
+    "plain_summary": "新型コロナウイルス感染症への対策を進め、克服を目指す。",
+    "policy_area": "health_welfare_and_safety",
+    "baseline": null,
+    "target": null,
+    "deadline": null,
+    "funding_statement": null,
+    "controllability": "medium",
+    "assessability": "partially_assessable",
+    "progress_state": "in_progress",
+    "related_project_ids": [
+      "jp-local-230006-project-2025-infectious-disease-control"
+    ],
+    "change_explanation": null,
+    "extraction_note": "候補者欄の冒頭行の囲み2件目を1レコードとした。感染症の克服は感染症の動向や国の制度にも左右されるため、controllability は medium とした。公約部分に数値目標・期限・財源の明示はないため、target 等は記録していない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aichi-pref-governor-election-2023-bulletin"
+    ]
+  },
+  {
+    "id": "jp-local-230006-executive-2023-02-15-promise-003",
+    "municipality_id": "jp-local-230006",
+    "executive_term_id": "jp-local-230006-executive-2023-02-15",
+    "original_text": "「リニア大交流圏」の形成 〜首都圏・中京圏で5千万人のメガ・リージョンを！リニア中央新幹線。名古屋駅スーパーターミナル化。高速道路・鉄道ネットワーク。中部国際空港の2本目滑走路。港湾国際競争力強化。住みやすさ日本一あいちの発信。",
+    "source_location": "選挙公報1ページ目上段・大村秀章候補欄「人が輝くあいち」の★項目「「リニア大交流圏」の形成」（見出し＋詳細文）",
+    "statement_type": "directional_commitment",
+    "plain_summary": "リニア中央新幹線の開業を見据え、名古屋駅の結節機能の強化、高速道路・鉄道網の整備、中部国際空港の2本目滑走路、港湾の競争力強化を進め、首都圏と中京圏を一体とする大交流圏の形成を目指す。",
+    "policy_area": "transport_infrastructure",
+    "baseline": null,
+    "target": null,
+    "deadline": null,
+    "funding_statement": null,
+    "controllability": "medium",
+    "assessability": "partially_assessable",
+    "progress_state": "in_progress",
+    "related_project_ids": [
+      "jp-local-230006-project-2025-transport-measures"
+    ],
+    "change_explanation": null,
+    "extraction_note": "★見出しと直下の詳細文を一体の原文として転記した。「5千万人」は首都圏・中京圏の人口規模の説明であり、公約の数値目標ではないため target は記録していない。リニア中央新幹線はJR東海の事業であり、空港・港湾も国等との連携に依存するため、controllability は medium とした。数値目標・期限・財源の明示はないため、deadline 等も記録していない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aichi-pref-governor-election-2023-bulletin"
+    ]
+  },
+  {
+    "id": "jp-local-230006-executive-2023-02-15-promise-004",
+    "municipality_id": "jp-local-230006",
+    "executive_term_id": "jp-local-230006-executive-2023-02-15",
+    "original_text": "「産業首都あいち」〜国際イノベーション都市へ 国際展示場「Aichi Sky Expo」、国際的なMICE誘致、新たな産業展示会の創出。スタートアップ・エコシステム「STATION Ai」整備（24年）、世界一の集積・自動車産業のイノベーション。自動運転、FCV次世代自動車の世界一の拠点化（開発・生産・普及）。アジアNo.1航空宇宙産業の発展。産業用・サービスロボットの社会実装。健康長寿（あいちデジタルヘルスプロジェクト）。環境、エネルギー、中小企業の振興。商店街の振興（集客力・販売力向上、コミュニティ機能強化、大型店の地域貢献活動等）。金融・政策減税の強化。中部最大の農業県・愛知の力をパワーアップ。農林水産業の振興。",
+    "source_location": "選挙公報1ページ目上段・大村秀章候補欄「人が輝くあいち」の★項目「「産業首都あいち」〜国際イノベーション都市へ」（見出し＋詳細文）",
+    "statement_type": "directional_commitment",
+    "plain_summary": "国際展示場やスタートアップ拠点の整備、自動車・航空宇宙・ロボット等の産業振興、中小企業・商店街・農林水産業の振興を進め、国際的なイノベーション都市を目指す。",
+    "policy_area": "industry_and_economy",
+    "baseline": null,
+    "target": null,
+    "deadline": null,
+    "funding_statement": null,
+    "controllability": "high",
+    "assessability": "partially_assessable",
+    "progress_state": "in_progress",
+    "related_project_ids": [
+      "jp-local-230006-project-2025-station-ai-project",
+      "jp-local-230006-project-2025-aichi-sky-expo-management"
+    ],
+    "change_explanation": null,
+    "extraction_note": "★見出しと直下の詳細文を一体の原文として転記した。詳細文中の「STATION Ai」整備（24年）の「（24年）」は施設の整備時期の記載であり、公約の期限としては登録していない。数値目標・財源の明示はないため、target 等は記録していない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aichi-pref-governor-election-2023-bulletin"
+    ]
+  },
+  {
+    "id": "jp-local-230006-executive-2023-02-15-promise-005",
+    "municipality_id": "jp-local-230006",
+    "executive_term_id": "jp-local-230006-executive-2023-02-15",
+    "original_text": "「すべての人が輝くあいち」〜子ども、若者、女性、高齢者、障害のある人など、全ての人が活躍 教育立県あいち、人財創造あいち。中高一貫校。少人数学級。魅力ある高校づくり。定時制・通信制リニューアル。夜間中学。特別支援学校。女性の活躍促進。子ども・子育て支援。医療の充実。健康長寿。認知症医療の強化。障害者福祉・支援、ノーマライゼーション推進。産業人材育成。「技能五輪・アビリンピック」。働き方改革、ワーク・ライフ・バランス。人権施策の推進。",
+    "source_location": "選挙公報1ページ目上段・大村秀章候補欄「人が輝くあいち」の★項目「「すべての人が輝くあいち」」（見出し＋詳細文）",
+    "statement_type": "directional_commitment",
+    "plain_summary": "教育の充実、女性の活躍促進、子ども・子育て支援、医療・福祉の充実、働き方改革などを進め、子ども、若者、女性、高齢者、障害のある人など全ての人が活躍できる社会を目指す。",
+    "policy_area": "education_and_human_development",
+    "baseline": null,
+    "target": null,
+    "deadline": null,
+    "funding_statement": null,
+    "controllability": "high",
+    "assessability": "partially_assessable",
+    "progress_state": "in_progress",
+    "related_project_ids": [
+      "jp-local-230006-project-2025-high-school-education-promotion",
+      "jp-local-230006-project-2025-gender-equality-promotion",
+      "jp-local-230006-project-2025-child-rearing-support",
+      "jp-local-230006-project-2025-worker-welfare-promotion"
+    ],
+    "change_explanation": null,
+    "extraction_note": "★見出しと直下の詳細文を一体の原文として転記した。詳細文は教育・人づくり、女性の活躍、子ども・子育て、働き方まで広い範囲を含むため、文中に明示された要素に対応する登録済み事業4件と接続した。公約部分に数値目標・期限・財源の明示はないため、target 等は記録していない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aichi-pref-governor-election-2023-bulletin"
+    ]
+  },
+  {
+    "id": "jp-local-230006-executive-2023-02-15-promise-006",
+    "municipality_id": "jp-local-230006",
+    "executive_term_id": "jp-local-230006-executive-2023-02-15",
+    "original_text": "観光あいち・魅力発信、文化芸術都市、スポーツ王国あいち",
+    "source_location": "選挙公報1ページ目上段・大村秀章候補欄の右カラム★項目1件目",
+    "statement_type": "directional_commitment",
+    "plain_summary": "観光と県の魅力の発信、文化芸術、スポーツの振興を進める。",
+    "policy_area": "urban_development_and_tourism",
+    "baseline": null,
+    "target": null,
+    "deadline": null,
+    "funding_statement": null,
+    "controllability": "high",
+    "assessability": "partially_assessable",
+    "progress_state": "not_assessable",
+    "related_project_ids": [],
+    "change_explanation": null,
+    "extraction_note": "右カラムの★項目は見出しのみで詳細文を伴わない。段階2で登録した事業のうち観光全般・文化芸術・スポーツに対応する事業はない（ジブリパーク推進事業はジブリパークの活用に特化した事業のため、本項目とは接続していない）。公約部分に数値目標・期限・財源の明示はないため、target 等は記録していない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aichi-pref-governor-election-2023-bulletin"
+    ]
+  },
+  {
+    "id": "jp-local-230006-executive-2023-02-15-promise-007",
+    "municipality_id": "jp-local-230006",
+    "executive_term_id": "jp-local-230006-executive-2023-02-15",
+    "original_text": "あいちのグローバル展開",
+    "source_location": "選挙公報1ページ目上段・大村秀章候補欄の右カラム★項目2件目",
+    "statement_type": "directional_commitment",
+    "plain_summary": "愛知の国際的な展開を進める。",
+    "policy_area": "international_engagement",
+    "baseline": null,
+    "target": null,
+    "deadline": null,
+    "funding_statement": null,
+    "controllability": "medium",
+    "assessability": "partially_assessable",
+    "progress_state": "not_assessable",
+    "related_project_ids": [],
+    "change_explanation": null,
+    "extraction_note": "右カラムの★項目は見出しのみで詳細文を伴わない。国際展開は国際情勢や相手方との関係にも左右されるため、controllability は medium とした。段階2で登録した事業のうち本項目全般に対応する事業はない（愛知県国際展示場管理運営事業は展示場の運営そのものであり、項目「産業首都あいち」側で接続している）。公約部分に数値目標・期限・財源の明示はないため、target 等は記録していない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aichi-pref-governor-election-2023-bulletin"
+    ]
+  },
+  {
+    "id": "jp-local-230006-executive-2023-02-15-promise-008",
+    "municipality_id": "jp-local-230006",
+    "executive_term_id": "jp-local-230006-executive-2023-02-15",
+    "original_text": "安全・安心なあいち",
+    "source_location": "選挙公報1ページ目上段・大村秀章候補欄の右カラム★項目3件目",
+    "statement_type": "directional_commitment",
+    "plain_summary": "安全で安心して暮らせる愛知を目指す。",
+    "policy_area": "safety_and_disaster_prevention",
+    "baseline": null,
+    "target": null,
+    "deadline": null,
+    "funding_statement": null,
+    "controllability": "high",
+    "assessability": "partially_assessable",
+    "progress_state": "not_assessable",
+    "related_project_ids": [],
+    "change_explanation": null,
+    "extraction_note": "右カラムの★項目は見出しのみで詳細文を伴わない。段階2で登録した事業のうち防災・防犯等に対応する事業はない（感染症対策事業は項目「新型コロナウイルス感染症を克服」側で接続しており、本項目とは別には接続していない）。公約部分に数値目標・期限・財源の明示はないため、target 等は記録していない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aichi-pref-governor-election-2023-bulletin"
+    ]
+  },
+  {
+    "id": "jp-local-230006-executive-2023-02-15-promise-009",
+    "municipality_id": "jp-local-230006",
+    "executive_term_id": "jp-local-230006-executive-2023-02-15",
+    "original_text": "環境首都あいち",
+    "source_location": "選挙公報1ページ目上段・大村秀章候補欄の右カラム★項目4件目",
+    "statement_type": "directional_commitment",
+    "plain_summary": "環境分野で先進的な「環境首都」を目指す。",
+    "policy_area": "environment_and_climate",
+    "baseline": null,
+    "target": null,
+    "deadline": null,
+    "funding_statement": null,
+    "controllability": "medium",
+    "assessability": "partially_assessable",
+    "progress_state": "in_progress",
+    "related_project_ids": [
+      "jp-local-230006-project-2025-global-warming-countermeasures"
+    ],
+    "change_explanation": null,
+    "extraction_note": "右カラムの★項目は見出しのみで詳細文を伴わない。脱炭素の進展は国や民間の取組にも左右されるため、controllability は medium とした。公約部分に数値目標・期限・財源の明示はないため、target 等は記録していない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aichi-pref-governor-election-2023-bulletin"
+    ]
+  },
+  {
+    "id": "jp-local-230006-executive-2023-02-15-promise-010",
+    "municipality_id": "jp-local-230006",
+    "executive_term_id": "jp-local-230006-executive-2023-02-15",
+    "original_text": "地方分権・行財政改革、東三河の振興",
+    "source_location": "選挙公報1ページ目上段・大村秀章候補欄の右カラム★項目5件目",
+    "statement_type": "directional_commitment",
+    "plain_summary": "地方分権と行財政改革を進め、東三河地域の振興を図る。",
+    "policy_area": "fiscal_administrative_reform",
+    "baseline": null,
+    "target": null,
+    "deadline": null,
+    "funding_statement": null,
+    "controllability": "shared",
+    "assessability": "partially_assessable",
+    "progress_state": "not_assessable",
+    "related_project_ids": [],
+    "change_explanation": null,
+    "extraction_note": "右カラムの★項目は見出しのみで詳細文を伴わない。地方分権の実現は国の制度改正にも関わるため、controllability は shared とした。段階2で登録した事業のうち本項目に対応する事業はない。公約部分に数値目標・期限・財源の明示はないため、target 等は記録していない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aichi-pref-governor-election-2023-bulletin"
+    ]
   }
 ]

@@ -28,6 +28,22 @@ POLICY_SOURCES_PATH = "data/catalog/aichi_policy_sources.json"
 SELECTION_PATH = "data/catalog/aichi_priority_project_selection.json"
 
 MID = "jp-local-230006"
+TERM = "jp-local-230006-executive-2023-02-15"
+# Governor promises registered in stage 3 (Issue #722) link back to
+# these projects; the promise-side lists are pinned in
+# tests/test_issue722_aichi_prefecture_promise_registration.py.
+EXPECTED_PROMISE_LINKS = {
+    "infectious-disease-control": [f"{TERM}-promise-002"],
+    "high-school-education-promotion": [f"{TERM}-promise-005"],
+    "gender-equality-promotion": [f"{TERM}-promise-005"],
+    "child-rearing-support": [f"{TERM}-promise-005"],
+    "worker-welfare-promotion": [f"{TERM}-promise-005"],
+    "station-ai-project": [f"{TERM}-promise-004"],
+    "aichi-sky-expo-management": [f"{TERM}-promise-004"],
+    "transport-measures": [f"{TERM}-promise-003"],
+    "ghibli-park-promotion": [f"{TERM}-promise-001"],
+    "global-warming-countermeasures": [f"{TERM}-promise-009"],
+}
 SLUGS = {
     "infectious-disease-control": ("感染症対策事業", "C：相当程度進展あり", "拡大"),
     "high-school-education-promotion": ("高等学校教育振興事業", "C：相当程度進展あり", "現行水準"),
@@ -192,8 +208,10 @@ def test_official_evaluation_is_the_prefectures_not_ours() -> None:
         assert record["official_evaluation"]["rating"] == rating
         assert record["official_evaluation"]["direction"] == direction
         assert "Jichi Insight独自の評価ではない" in record["official_evaluation"]["note"]
-        # Governor promises are registered in stage 3; links stay empty.
-        assert record["related_promise_ids"] == []
+        # Governor promises were registered in stage 3 (Issue #722);
+        # the project-side links are pinned here and cross-checked
+        # bidirectionally in the stage-3 registration test.
+        assert record["related_promise_ids"] == EXPECTED_PROMISE_LINKS[slug]
 
 
 def test_every_project_has_an_evidence_packet_and_known_sources() -> None:
