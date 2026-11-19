@@ -104,6 +104,7 @@ export type ManifestoSourceSearchEvidencePacket = {
 };
 
 const municipalityIdToKey = {
+  "jp-local-010006": "hokkaido-prefecture",
   "jp-local-230006": "aichi-prefecture",
   "jp-local-400009": "fukuoka-prefecture",
   "jp-local-401307": "fukuoka-city",

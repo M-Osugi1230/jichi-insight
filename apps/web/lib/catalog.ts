@@ -6,6 +6,7 @@ import kitakyushuFinanceCatalog from "../../../data/catalog/kitakyushu_finance_s
 import officialCatalog from "../../../data/catalog/official_sources.json";
 
 export type MunicipalityKey =
+  | "hokkaido-prefecture"
   | "aichi-prefecture"
   | "fukuoka-prefecture"
   | "fukuoka-city"
@@ -39,6 +40,14 @@ export const municipalityMeta: Record<
     fiscalSummary: string;
   }
 > = {
+  "hokkaido-prefecture": {
+    name: "北海道",
+    type: "都道府県",
+    summary: "北海道総合計画の政策指標と、鈴木直道知事の任期・公式出典を確認します。",
+    status: "資料索引中",
+    href: "/municipalities/hokkaido",
+    fiscalSummary: "財政データ54項目登録済み（財政詳細ページは未公開）",
+  },
   "aichi-prefecture": {
     name: "愛知県",
     type: "都道府県",

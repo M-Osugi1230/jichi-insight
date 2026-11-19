@@ -353,5 +353,62 @@
       "2028年2月執行予定の次回市長選挙では、選挙期間中に選挙公報の公式掲載を確認し、新任期の公約原文資料として登録する。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hokkaido-pref-current-governor-term",
+    "subject_type": "executive_term",
+    "subject_id": "jp-local-010006-executive-2023-04-23",
+    "claims": [
+      {
+        "field": "person_name",
+        "statement": "北海道の現職知事が鈴木直道であることを公式知事プロフィールで確認した。",
+        "source_ids": [
+          "hokkaido-pref-governor"
+        ],
+        "location_note": "北海道公式「北海道知事・鈴木直道プロフィール」。",
+        "decision": "accepted",
+        "review_note": "公式ページの現職表示を確認。"
+      },
+      {
+        "field": "election_date",
+        "statement": "現任期に対応する知事選挙は2023年4月9日に執行された。",
+        "source_ids": [
+          "hokkaido-pref-governor-election-2023-results",
+          "hokkaido-pref-governor-election-2023-notice"
+        ],
+        "location_note": "北海道選挙管理委員会「令和5年執行北海道知事・北海道議会議員選挙結果」および同委員会告示第5号（令和5年3月23日）。",
+        "decision": "accepted",
+        "review_note": "選挙期日と投開票結果資料の存在を確認。"
+      },
+      {
+        "field": "term_start",
+        "statement": "鈴木直道知事の現任期の起算日は2023年4月23日である。2023年知事選挙は任期満了に伴う選挙であり（北海道選挙管理委員会告示第5号が「北海道知事の任期満了による選挙」と明記）、前任期の満了日は2023年4月22日であることが道内自治体の公式な任期満了一覧（長沼町「各選挙の任期満了」）で公表されている。前任の知事が任期満了の日まで在任したため、公職選挙法第259条ただし書により、任期は前任期満了の日の翌日である2023年4月23日から起算される。",
+        "source_ids": [
+          "hokkaido-pref-governor-election-2023-notice",
+          "hokkaido-governor-term-expiry-list",
+          "public-offices-election-act"
+        ],
+        "location_note": "北海道選挙管理委員会告示第5号、長沼町「各選挙の任期満了」（北海道知事選挙の任期満了日 令和5年4月22日）、公職選挙法第259条ただし書。",
+        "decision": "accepted",
+        "review_note": "道選管・道庁の公式ページには現任期の開始日の日単位の明記が確認できなかったため、前任期満了日の公式公表と法定の起算方法の組み合わせで確定した。福岡県知事の任期起算日の是正（Issue #676）と同種の論法である。"
+      },
+      {
+        "field": "term_end",
+        "statement": "北海道知事の現任期の満了日は2027年4月22日である。起算日2023年4月23日に、任期4年（地方自治法第140条第1項）から定まる満了日（起算日＋4年−1日）として求めた値であり、前任期の満了日（2023年4月22日）の公式公表と起算日の組み合わせから導かれる。",
+        "source_ids": [
+          "hokkaido-governor-term-expiry-list",
+          "public-offices-election-act"
+        ],
+        "location_note": "長沼町「各選挙の任期満了」（北海道知事の任期は4年と明記）、公職選挙法第259条ただし書（起算）、地方自治法第140条第1項（任期4年）。",
+        "decision": "accepted",
+        "review_note": "現任期の満了日そのものの日単位の明記は、道選管・道庁・総務省の公式公表では確認できなかった（次回選挙の日程は未公表）。選挙期日に4年を加える方法ではなく、前任期満了日の公式公表を起点とする法定の数え方で確定した。"
+      }
+    ],
+    "open_questions": [
+      "2023年北海道知事選挙の選挙公報は北海道選挙管理委員会の公式ページで公表され到達可能であることを確認したが、公約レコードの登録は北海道クラスターの公約段階で行うため、本段階では manifesto_source_ids を空としている。",
+      "次回知事選挙（任期満了2027年4月22日）の日程が道選管から公表されたら、任期満了日の明示値と本登録の計算値を照合する。",
+      "事業との接続は文言・内容に基づく推定であり、道が公約と事業の公式な対応付けを公表した場合は接続を見直す。"
+    ],
+    "review_status": "reviewed"
   }
 ]

@@ -1,6 +1,6 @@
 {
-  "version": "0.12.0",
-  "updated_at": "2026-11-19",
+  "version": "0.13.0",
+  "updated_at": "2026-11-20",
   "scope": "pilot",
   "records": [
     {
@@ -408,6 +408,76 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "愛知県が公表する県内全市町村の長及び議員の任期満了日一覧。豊田市の長の任期満了日を令和10年2月18日（2028年2月18日）と明記する。2026-11-19にPDF本文を直接確認した。"
+    },
+    {
+      "id": "hokkaido-pref-governor",
+      "municipality_key": "hokkaido-prefecture",
+      "organization": "北海道",
+      "category": "executive",
+      "title": "北海道知事・鈴木直道プロフィール",
+      "url": "https://www.pref.hokkaido.lg.jp/ss/tsh/profile/suzukiGprofile.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-20",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "北海道公式の知事プロフィール。現職知事が鈴木直道であることを示す。任期の日単位の開始日・満了日は掲載されていない。"
+    },
+    {
+      "id": "hokkaido-pref-governor-election-2023-results",
+      "municipality_key": "hokkaido-prefecture",
+      "organization": "北海道選挙管理委員会",
+      "category": "election",
+      "title": "令和5年執行北海道知事・北海道議会議員選挙結果",
+      "url": "https://www.pref.hokkaido.lg.jp/hs/senkyokankeidate/177022.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-20",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "2023年4月9日執行の北海道知事選挙の投票結果・開票結果（候補者別得票数等）を掲載する選挙管理委員会の公式ページ。"
+    },
+    {
+      "id": "hokkaido-pref-governor-election-2023-notice",
+      "municipality_key": "hokkaido-prefecture",
+      "organization": "北海道選挙管理委員会",
+      "category": "election",
+      "title": "北海道選挙管理委員会告示第5号（令和5年3月23日）",
+      "url": "https://www.pref.hokkaido.lg.jp/fs/1/3/0/9/0/5/0/7/_/令和5年告示第5号.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-20",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "「北海道知事の任期満了による選挙を令和5年4月9日に行う」ことを告示する選挙管理委員会告示。2023年知事選挙が任期満了に伴う選挙であることの公式な根拠。"
+    },
+    {
+      "id": "hokkaido-governor-term-expiry-list",
+      "municipality_key": "hokkaido-prefecture",
+      "organization": "長沼町",
+      "category": "election",
+      "title": "各選挙の任期満了（長沼町）",
+      "url": "https://www.maoi-net.jp/files/00000300/00000310/ninkimanryou.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-20",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "北海道長沼町が公表する選挙の任期満了一覧。北海道知事選挙について任期4年・任期満了日「令和5年4月22日」（2023年4月22日）・前回選挙執行日「平成31年4月7日」を明記する。前任期の満了日の公式公表として用いた。"
+    },
+    {
+      "id": "hokkaido-pref-governor-election-2023-bulletin",
+      "municipality_key": "hokkaido-prefecture",
+      "organization": "北海道選挙管理委員会",
+      "category": "election",
+      "title": "令和5年執行 統一地方選挙 選挙公報（北海道知事選挙）",
+      "url": "https://www.pref.hokkaido.lg.jp/hs/151082.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-20",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "2023年北海道知事選挙の選挙公報を掲載する選挙管理委員会の公式ページ。公式公表があり到達可能であることを確認した。公約レコードの登録は北海道クラスターの公約段階で行う。"
     }
   ]
 }
