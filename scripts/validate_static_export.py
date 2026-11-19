@@ -135,6 +135,7 @@ BASE_PAGE_REQUIREMENTS: dict[str, list[str]] = {
         "まだ登録・評価していないこと",
     ],
     "promises/index.html": [
+        "北海道・鈴木 直道",
         "愛知県・大村 秀章",
         "Reviewed 公約原文 10件",
         "ジブリパークの魅力発信",
@@ -211,6 +212,9 @@ BASE_PAGE_REQUIREMENTS: dict[str, list[str]] = {
         "規模の違いを、優劣へ変換しない。",
     ],
     "executives/index.html": [
+        "北海道・知事",
+        "鈴木 直道",
+        "2023年4月23日",
         "首長評価の前に、任期と公約の根拠を固定する。",
         "現職名と任期が分かっても、実績評価はできない。",
     ],
@@ -406,6 +410,36 @@ def normalized_html(path: Path) -> str:
     return re.sub(r"<!--.*?-->", "", content, flags=re.DOTALL)
 
 
+def validate_hokkaido_promise_scope() -> list[str]:
+    """Check the status within Hokkaido's own section, not anywhere on /promises.
+
+    A global required-copy check could pass from another municipality's
+    unregistered status even if Hokkaido were rendered incorrectly.
+    """
+    path = EXPORT_ROOT / "promises/index.html"
+    if not path.is_file():
+        return []
+
+    content = normalized_html(path)
+    section = re.search(
+        r'<section\b(?=[^>]*\bid="hokkaido-prefecture")[^>]*>(.*?)</section>',
+        content,
+        flags=re.DOTALL,
+    )
+    if section is None:
+        return ["promises/index.html is missing the Hokkaido section (id=hokkaido-prefecture)"]
+
+    section_html = section.group(1)
+    expected_heading = "北海道・鈴木 直道"
+    expected_status = "公約原文：" + "未登録"
+    failures = []
+    if expected_heading not in section_html:
+        failures.append("Hokkaido promise section is missing its governor heading")
+    if expected_status not in section_html:
+        failures.append("Hokkaido promise section does not show unregistered Reviewed promises")
+    return failures
+
+
 def main() -> int:
     args = parse_args()
     failures: list[str] = []
@@ -442,6 +476,8 @@ def main() -> int:
                     "Static export does not contain expected asset prefix: "
                     f"{expected_prefix}"
                 )
+
+    failures.extend(validate_hokkaido_promise_scope())
 
     sources_path = EXPORT_ROOT / "sources/index.html"
     if sources_path.is_file():

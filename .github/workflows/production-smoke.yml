@@ -4,6 +4,8 @@ on:
   pull_request:
     branches:
       - main
+      # The data-only Hokkaido stage-one branch is the base of this stacked Web PR.
+      - feat/cluster3-stage1-hokkaido
   workflow_dispatch:
   schedule:
     # Daily 09:23 JST. GitHub Actions cron is UTC.
