@@ -1,4 +1,5 @@
 import { assemblies } from "@/lib/assemblyRegistry";
+import { aichiFinance } from "@/lib/aichiFinance";
 import { currentExecutiveTerms, promiseRecords } from "@/lib/executives";
 import { fukuokaPrefectureFinance } from "@/lib/finance";
 import { fukuokaCityFinance } from "@/lib/fukuokaCityFinance";
@@ -29,6 +30,20 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
     return municipality.official_code === officialCode &&
       municipality.data_status === "reviewed";
   });
+
+  if (!matched && officialCode === aichiFinance.municipality.official_code &&
+    aichiFinance.municipality.data_status === "reviewed") {
+    const hasReviewedSettlement = aichiFinance.records.some((record) =>
+      record.municipality_id === aichiFinance.municipality.id &&
+      record.review_status === "reviewed" &&
+      record.stage === "settlement" &&
+      record.account_type === "ordinary" &&
+      [2022, 2023, 2024].includes(record.fiscal_year),
+    );
+    // Aichi has a fiscal view and a Reviewed governor term, but no registered
+    // promises, assembly or projects; those gates stay closed.
+    return { key: null, finance: hasReviewedSettlement, promises: false, assembly: false, projects: false };
+  }
 
   if (!matched) {
     // Only the fiscal-detail gate expands: a Reviewed Phase 15 city with a
