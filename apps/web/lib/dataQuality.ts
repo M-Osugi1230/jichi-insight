@@ -16,6 +16,7 @@ import { fukuokaCityFinance } from "./fukuokaCityFinance";
 import { hokkaidoIndicatorReviewStats } from "./hokkaidoIndicators";
 import { hokkaidoPolicyHierarchyStats } from "./hokkaidoPolicies";
 import { kitakyushuFinance } from "./kitakyushuFinance";
+import { nagoyaCityFinance } from "./nagoyaCityFinance";
 import { miyagiKpiActualStats } from "./miyagiActuals";
 import { nationwideCoverageStats } from "./nationwideCoverage";
 import { policyDirectionStats, policyInitiativeStats } from "./policies";
@@ -38,6 +39,7 @@ const municipalityNames: Record<MunicipalityKey, string> = {
   "fukuoka-prefecture": "福岡県",
   "fukuoka-city": "福岡市",
   "kitakyushu-city": "北九州市",
+  "nagoya-city": "名古屋市",
 };
 
 const municipalityKeys = Object.keys(municipalityNames) as MunicipalityKey[];
@@ -46,12 +48,14 @@ const recordsByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFin
   "fukuoka-prefecture": fukuokaPrefectureFinance.records,
   "fukuoka-city": fukuokaCityFinance.records,
   "kitakyushu-city": kitakyushuFinance.records,
+  "nagoya-city": nagoyaCityFinance.records,
 };
 const evidenceByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFinance.evidencePackets> = {
   "aichi-prefecture": aichiFinance.evidencePackets,
   "fukuoka-prefecture": fukuokaPrefectureFinance.evidencePackets,
   "fukuoka-city": fukuokaCityFinance.evidencePackets,
   "kitakyushu-city": kitakyushuFinance.evidencePackets,
+  "nagoya-city": nagoyaCityFinance.evidencePackets,
 };
 const fiscalRecords = Object.values(recordsByMunicipality).flat();
 const evidencePackets = Object.values(evidenceByMunicipality).flat();

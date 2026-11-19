@@ -72,5 +72,23 @@
     "last_reviewed_at": "2026-11-17",
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-review-jp-local-231002-2024",
+    "executive_term_id": "jp-local-231002-executive-2024-11-24",
+    "source_id": "nagoya-city-mayor-election-2024-bulletin",
+    "candidate_name": "広沢 一郎",
+    "source_location": "2ページPDF・1ページ目左下の候補者欄",
+    "review_scope": "candidate_panel",
+    "statement_boundary": "clear",
+    "segmentation_status": "segmented",
+    "promise_records_created": 17,
+    "reason_codes": [
+      "other"
+    ],
+    "review_note": "候補者欄は、見出し「河村たかし後継!!」と「前名古屋市副市長 広沢一郎は河村たかしの政策を発展させます!!」、重点公約の4枠（市民税減税 5%→10%、敬老パス値下げ、保育料0歳児から無償化、名古屋城木造本物復元）、市長報酬・市議報酬に関する帯（2行）、箇条書き11項目、プロフィールで構成される。見出し文は候補者の政治姿勢の表明であり個別の約束ではないためレコード化せず、プロフィールも経歴であるためレコード化しなかった。4枠と箇条書き11項目は資料上の境界が明確なためそれぞれ1レコードとし、帯は市長報酬（退職金廃止を含む）と市議報酬で対象が異なる2行からなるため、行を単位として2レコードとした（計17件）。数値が明示されているのは市民税減税（5%→10%）と報酬額（2,800万円から800万円、市議報酬800万円）のみであり、期限・財源の明示はない。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度で照合した。",
+    "last_reviewed_at": "2026-11-19",
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]
