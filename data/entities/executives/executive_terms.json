@@ -136,7 +136,9 @@
     "term_end": "2027-04-22",
     "election_date": "2023-04-09",
     "status": "current",
-    "manifesto_source_ids": [],
+    "manifesto_source_ids": [
+      "hokkaido-pref-governor-election-2023-bulletin"
+    ],
     "review_status": "reviewed",
     "confidence": "high",
     "sources": [
@@ -144,6 +146,46 @@
       "hokkaido-pref-governor-election-2023-results",
       "hokkaido-pref-governor-election-2023-notice",
       "hokkaido-governor-term-expiry-list",
+      "public-offices-election-act"
+    ]
+  },
+  {
+    "id": "jp-local-012041-executive-2025-09-26",
+    "municipality_id": "jp-local-012041",
+    "office": "mayor",
+    "person_name": "今津 寛介",
+    "term_start": "2025-09-26",
+    "term_end": "2029-09-25",
+    "election_date": "2025-09-07",
+    "status": "current",
+    "manifesto_source_ids": [],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "asahikawa-city-mayor-profile",
+      "asahikawa-city-mayor-election-2025-schedule",
+      "asahikawa-city-mayor-election-2025-results",
+      "public-offices-election-act"
+    ]
+  },
+  {
+    "id": "jp-local-011002-executive-2023-05-02",
+    "municipality_id": "jp-local-011002",
+    "office": "mayor",
+    "person_name": "秋元 克広",
+    "term_start": "2023-05-02",
+    "term_end": "2027-05-01",
+    "election_date": "2023-04-09",
+    "status": "current",
+    "manifesto_source_ids": [
+      "sapporo-city-mayor-election-2023-bulletin"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "sapporo-city-mayor",
+      "sapporo-city-mayor-election-2023-results",
+      "hokkaido-mayors-term-expiry-list-2026",
       "public-offices-election-act"
     ]
   }

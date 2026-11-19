@@ -12,6 +12,7 @@ import {
   currentExecutiveTerms,
   evidenceForExecutive,
   formatDateJa,
+  manifestoSourcesForExecutive,
   promisesForExecutive,
   sourcesForExecutive,
 } from "@/lib/executives";
@@ -53,6 +54,7 @@ export default function HokkaidoPrefecturePage() {
     (term.review_status === "reviewed" || term.review_status === "verified"),
   );
   const governorSources = governor ? sourcesForExecutive(governor) : [];
+  const governorManifestoSources = governor ? manifestoSourcesForExecutive(governor) : [];
   const governorEvidence = governor ? evidenceForExecutive(governor) : undefined;
   const governorPromises = governor ? promisesForExecutive(governor).filter(
     (promise) => promise.review_status === "reviewed" || promise.review_status === "verified",
@@ -100,7 +102,7 @@ export default function HokkaidoPrefecturePage() {
             </div>
             <div>
               <p>確認できること：北海道総合計画の Reviewed 計画レビュー、2026年度の成立後一般会計当初予算、2022〜2024年度の普通会計決算51件、重点事業の Reviewed 10系列と道による一次政策評価（総合判定）、鈴木直道知事の現任期と公式出典です。</p>
-              <p>まだ登録・評価していないこと：知事公約の原文は未登録（段階3で登録予定）、北海道議会の個別レコードは未登録（段階4で登録予定）です。重点事業は段階2で10系列の Reviewed レコードを登録済みですが、全121施策の網羅や事業成果の独自判定ではありません。基本評価調書の「予算額」は当初予算ベースの施策単位合計額であり、決算額ではありません。未登録は実際の公表・実施の不存在を意味しません。</p>
+              <p>確認できること：鈴木直道知事の公式選挙公報から Reviewed 公約原文15件が段階3で登録済みです。北海道議会の個別レコードは未登録（段階4で登録予定）です。重点事業は段階2で10系列の Reviewed レコードを登録済みですが、全121施策の網羅や事業成果の独自判定ではありません。基本評価調書の「予算額」は当初予算ベースの施策単位合計額であり、決算額ではありません。未登録は実際の公表・実施の不存在を意味しません。</p>
               <p>北海道総合計画は政策指標108件（重複を含め113件）が公表されていますが、このページの計画レビュー4項目を個別指標の達成度に置き換えません。一般会計と普通会計、予算と決算を直接連結した増減率・達成率は示しません。</p>
             </div>
           </section>
@@ -230,8 +232,14 @@ export default function HokkaidoPrefecturePage() {
                   <p>任期：{formatDateJa(governor.term_start)} 〜 {formatDateJa(governor.term_end)}</p>
                   <p>選挙日：{formatDateJa(governor.election_date)} ／ 登録状態：{governor.review_status}</p>
                   <p>{governorPromises.length > 0
-                    ? `Reviewed 公約原文：${governorPromises.length}件`
-                    : "公約原文：未登録（段階3で登録予定。公約の不存在や未公表を意味しません）"}</p>
+                    ? `Reviewed 公約原文：${governorPromises.length}件（段階3で登録済み）`
+                    : "公約原文はこの知事の Reviewed 台帳に未登録です（不存在を意味しません）"}</p>
+                  {governorPromises.length > 0 ? (
+                    <p><Link href="/promises#hokkaido-prefecture">鈴木直道知事の公約原文15件と根拠を見る</Link></p>
+                  ) : null}
+                  {governorManifestoSources.map((source) => (
+                    <p key={source.id}>公約原典：<a href={source.url} target="_blank" rel="noopener noreferrer">{source.title}</a></p>
+                  ))}
                   {governorSources.map((source) => (
                     <p key={source.id}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title}</a></p>
                   ))}
@@ -266,7 +274,7 @@ export default function HokkaidoPrefecturePage() {
           <section className={styles.notAssessed}>
             <div><p className="eyebrow">Not assessed yet</p><h2>まだ登録・評価していないこと</h2></div>
             <ul>
-              <li>知事公約の原文・進捗・達成度（段階3で登録予定）</li>
+              <li>知事公約原文は Reviewed 15件登録済みですが、達成度や実績との因果関係は未判定です。</li>
               <li>北海道議会の議案・表決・監視活動の個別記録（段階4で登録予定）</li>
               <li>登録済み10系列以外の事業全体の網羅、施策単位の決算・執行額、契約・監査との公式対応</li>
               <li>2026年度の執行実績と決算</li>

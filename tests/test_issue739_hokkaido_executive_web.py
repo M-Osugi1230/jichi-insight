@@ -22,7 +22,11 @@ def load(path):
     return json.loads((DATA / path).read_text(encoding="utf-8"))
 
 
-def test_hokkaido_term_is_reviewed_and_has_no_registered_promises():
+def test_hokkaido_term_is_reviewed_and_promises_registered_in_stage3():
+    # Stage 1 (Issue #737/#739) registered the term with no manifesto
+    # source; stage 3 (Issue #749) registered the official 2023
+    # election bulletin and 15 promise records, superseding the
+    # earlier unregistered state this test originally pinned.
     terms = load("entities/executives/executive_terms.json")
     promises = load("entities/executives/promises.json")
     hokkaido = [term for term in terms if term["municipality_id"] == "jp-local-010006"]
@@ -34,12 +38,15 @@ def test_hokkaido_term_is_reviewed_and_has_no_registered_promises():
     assert term["term_start"] == "2023-04-23"
     assert term["term_end"] == "2027-04-22"
     assert term["review_status"] == "reviewed"
-    assert term["manifesto_source_ids"] == []
-    assert not [
+    assert term["manifesto_source_ids"] == [
+        "hokkaido-pref-governor-election-2023-bulletin"
+    ]
+    registered = [
         record for record in promises
         if record["municipality_id"] == term["municipality_id"]
         or record["executive_term_id"] == term["id"]
     ]
+    assert len(registered) == 15
 
 
 def test_executive_registry_maps_all_six_existing_and_hokkaido():
@@ -84,7 +91,7 @@ def test_hokkaido_financial_quality_counts_real_reviewed_web_data():
     assert '"toyota-city": toyotaCityFinance.records' in quality
 
 
-def test_static_copy_preserves_hokkaido_unregistered_promise_status():
+def test_static_copy_preserves_hokkaido_registered_promise_status():
     page = (APP / "promises/page.tsx").read_text(encoding="utf-8")
     executive = (APP / "executives/page.tsx").read_text(encoding="utf-8")
     assert 'promisesForExecutive(term).filter(p=>p.review_status==="reviewed")' in page
@@ -95,7 +102,7 @@ def test_static_copy_preserves_hokkaido_unregistered_promise_status():
     assert '"北海道・鈴木 直道"' in EXPORT
     assert 'def validate_hokkaido_promise_scope()' in EXPORT
     assert "failures.extend(validate_hokkaido_promise_scope())" in EXPORT
-    assert 'expected_status = "公約原文：" + "未登録"' in EXPORT
+    assert '"hokkaido-prefecture", "北海道・鈴木 直道", "Reviewed 公約原文 15件"' in EXPORT
     assert '"公約原文：未登録"' not in EXPORT
     assert '"北海道・知事"' in EXPORT
     assert '"2023年4月23日"' in EXPORT
@@ -118,16 +125,16 @@ def test_hokkaido_export_scope_rejects_other_municipality_unregistered_copy(tmp_
 
     with patch.dict(check.__globals__, {"EXPORT_ROOT": tmp_path}):
         output.write_text(
-            other_section + hokkaido_section.format(status="Reviewed 公約原文 1件"),
+            other_section + hokkaido_section.format(status="公約原文：未登録"),
             encoding="utf-8",
         )
-        assert any("unregistered" in msg for msg in check())
+        assert any("expected status" in msg for msg in check())
 
         output.write_text(
-            other_section + hokkaido_section.format(status="公約原文：未登録"),
+            other_section + hokkaido_section.format(status="Reviewed 公約原文 15件"),
             encoding="utf-8",
         )
         assert check() == []
 
         output.write_text(other_section, encoding="utf-8")
-        assert any("missing the Hokkaido section" in msg for msg in check())
+        assert any("missing the hokkaido-prefecture section" in msg for msg in check())
