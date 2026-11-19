@@ -1,0 +1,103 @@
+[
+  {
+    "as_of": "2026-11-19",
+    "assembly_id": "jp-local-231002-assembly-2023",
+    "confidence": "high",
+    "id": "jp-local-231002-assembly-2023-disclosure-2026",
+    "items": [
+      {
+        "availability": "published",
+        "granularity": "member",
+        "item": "member_roster",
+        "note": "議員名簿（会派別・50音別）を市公式サイトに掲載。各議員の選出区・所属委員会等を含む。",
+        "source_url": "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "faction",
+        "item": "faction_composition",
+        "note": "会派別議員名簿に9会派の所属議員と人数（計68人）を掲載。",
+        "source_url": "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "assembly",
+        "item": "committee_composition",
+        "note": "議員名簿（50音別）に各議員の所属委員会等（常任委員会・議会運営委員会・特別委員会、委員長/副委員長を含む）を掲載。",
+        "source_url": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "assembly",
+        "item": "proposals_and_results",
+        "note": "定例会ごとに市長提出案件・議員提出議案の一覧表（議案番号・案件名・提出年月日・付議委員会・議決年月日・議決結果）を掲載。本会議の議事日程も日付別に掲載。",
+        "source_url": "https://www.city.nagoya.jp/shikai/shingi/1030858/1030859/1050954.html"
+      },
+      {
+        "availability": "not_published",
+        "granularity": "none",
+        "item": "faction_votes",
+        "note": "会派別の賛否は公表されていない。賛否が分かれた議案については議員個人別の賛否が市会だよりに公表される（本登録の会派別賛否は、その議員別表からの集計）。",
+        "source_url": null
+      },
+      {
+        "availability": "published",
+        "granularity": "member",
+        "item": "member_votes",
+        "note": "賛成多数となった市長提出議案について、市会だより（HTML版・PDF版）に議員個人別の賛否を掲載。全会一致の議案は議員別の表の対象外で、「全会一致」と叙述される。",
+        "source_url": "https://www.city.nagoya.jp/shikai/kouhou/1030998/1030999/1051058/1052591/1052592/1052602.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "faction",
+        "item": "political_activity_expense_reports",
+        "note": "会派別（9会派）の収支報告書を年度別に公開。Web公開は公開を開始した日の翌日から起算して1年間（令和7年度分は2026年7月7日公開）。議員個人分の報告書は制度上存在しない（交付は会派単位）。",
+        "source_url": "https://www.city.nagoya.jp/shikai/kouhou/1031717/1051281/index.html"
+      },
+      {
+        "availability": "restricted",
+        "granularity": "document",
+        "item": "political_activity_expense_receipts",
+        "note": "領収書等の写しはWeb公開されず、市会事務局での閲覧のみ（提出期限から5年間保存、複写・撮影は不可）。",
+        "source_url": null
+      },
+      {
+        "availability": "not_published",
+        "granularity": "none",
+        "item": "inspection_trip_reports",
+        "note": "委員会視察の報告書・一覧は公式に公表されていない。議員派遣による海外出張の報告書は別制度（地方自治法第100条第13項）として公表されているが、委員会視察とは区分が異なる。",
+        "source_url": null
+      },
+      {
+        "availability": "published",
+        "granularity": "document",
+        "item": "meeting_minutes",
+        "note": "会議録・委員会記録検索システムで本会議・委員会の記録を検索・閲覧できる。本登録の照合時点（2026-11-19）では同システムが緊急メンテナンス中で閲覧できなかった。",
+        "source_url": "https://ssp.kaigiroku.net/tenant/nagoya/SpTop.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "document",
+        "item": "session_broadcast",
+        "note": "本会議・委員会の録画中継を市公式サイト（市会情報）で提供。",
+        "source_url": null
+      },
+      {
+        "availability": "not_published",
+        "granularity": "none",
+        "item": "petition_results",
+        "note": "請願は常任委員会の閉会中審査で結論を出し、議長が大要を市会公報に記載して議員へ報告し、請願人に結果が通知される制度で、会期単位の結果一覧はWeb公表されていない。令和8年6月定例会では請願第4号・第5号・第6号が7月6日の本会議議事日程に掲載されたが、その審議結果はWeb公表されていない。",
+        "source_url": null
+      }
+    ],
+    "review_status": "reviewed",
+    "sources": [
+      "nagoya-city-assembly-roster-by-faction",
+      "nagoya-city-dayori-202-votes-html",
+      "nagoya-city-assembly-seimu-2025-index",
+      "nagoya-city-assembly-petition-guide",
+      "nagoya-city-assembly-minutes-search",
+      "nagoya-city-assembly-agenda-2026-07-06"
+    ]
+  }
+]
