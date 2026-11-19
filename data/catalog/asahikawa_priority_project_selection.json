@@ -1,0 +1,168 @@
+{
+  "version": "1.0.0",
+  "updated_at": "2026-11-20",
+  "municipality_id": "jp-local-012041",
+  "municipality_key": "asahikawa-city",
+  "issue": 742,
+  "scope": "expanded",
+  "population": {
+    "description": "第8次旭川市総合計画の推進計画（令和6〜9年度、令和8年6月改定版）が、5つの基本目標・13の基本政策・34の施策・61の展開施策に位置付ける構成事業の全体。推進計画は展開施策ごとに構成事業（事業名・部局名）を掲載する公式資料であり、総合計画の公式ページから公表されている。行政評価の個別シートPDFは市サイト上に散在し一覧索引がないため母集団には用いない。",
+    "fiscal_year": 2026,
+    "project_count": 396,
+    "policy_count": 13,
+    "expansion_measure_count": 61,
+    "count_note": "project_count は推進計画PDFの構成事業表からの機械抽出による確認数であり、表の検出漏れがあり得るため下限値として扱う（公式資料に総数の記載はない）。",
+    "source_ids": [
+      "asahikawa-city-promotion-plan-fy2026-revised",
+      "asahikawa-city-plan-page"
+    ]
+  },
+  "selection_rule": {
+    "description": "計画体系の柱である5つの基本目標ごとに、公式資料（推進計画）の掲載順で先頭の2事業ずつ、計10件を選ぶ。掲載順は、基本目標内での基本政策・施策・展開施策の並び順と、各展開施策内での構成事業の掲載順で定める。構成事業表は2列組であり、左列を上から下へ読み終えてから右列へ続く列優先の掲載であることをページ画像で確認した上で、この読み順を掲載順とした。金額の大小では選ばない。",
+    "pillars": [
+      "基本目標1 すくすくと子どもが育ち、誰もが健やかに暮らせるまちを目指します",
+      "基本目標2 たくましく未来を拓く人材を育み、生涯を通じて学べるまちを目指します",
+      "基本目標3 活力と賑わいにあふれ、経済が力強く発展するまちを目指します",
+      "基本目標4 自然と共生し、安全・安心な社会を支える強靱なまちを目指します",
+      "基本目標5 互いに支え合い、共に築くまちを目指します"
+    ]
+  },
+  "selections": [
+    {
+      "pillar": "基本目標1 すくすくと子どもが育ち、誰もが健やかに暮らせるまちを目指します",
+      "policy": "相談体制・情報提供の充実",
+      "department": "こども・女性・若者未来部",
+      "plan_page": 4,
+      "project_id": "jp-local-012041-project-2026-developmental-support-counseling",
+      "series_id": "jp-local-012041-project-series-developmental-support-counseling",
+      "official_title": "発達支援相談事業費",
+      "selection_basis": "基本目標1 すくすくと子どもが育ち、誰もが健やかに暮らせるまちを目指しますの掲載順1番目の事業。最初の基本政策「子育てに希望を持ち、子どもの成長を支える環境づくり」の最初の施策「妊娠・子育てに関する支援の充実」の最初の展開施策1-1-1「相談体制・情報提供の充実」の構成事業の掲載順1番目にあたり、金額の大小では選んでいない。",
+      "source_ids": [
+        "asahikawa-city-promotion-plan-fy2026-revised"
+      ]
+    },
+    {
+      "pillar": "基本目標1 すくすくと子どもが育ち、誰もが健やかに暮らせるまちを目指します",
+      "policy": "相談体制・情報提供の充実",
+      "department": "こども・女性・若者未来部",
+      "plan_page": 4,
+      "project_id": "jp-local-012041-project-2026-child-family-counseling",
+      "series_id": "jp-local-012041-project-series-child-family-counseling",
+      "official_title": "こども家庭相談事業費",
+      "selection_basis": "基本目標1 すくすくと子どもが育ち、誰もが健やかに暮らせるまちを目指しますの掲載順2番目の事業。最初の基本政策「子育てに希望を持ち、子どもの成長を支える環境づくり」の最初の施策「妊娠・子育てに関する支援の充実」の最初の展開施策1-1-1「相談体制・情報提供の充実」の構成事業の掲載順2番目にあたり、金額の大小では選んでいない。",
+      "source_ids": [
+        "asahikawa-city-promotion-plan-fy2026-revised"
+      ]
+    },
+    {
+      "pillar": "基本目標2 たくましく未来を拓く人材を育み、生涯を通じて学べるまちを目指します",
+      "policy": "確かな学力、豊かな心、健やかな体を育成する教育の推進",
+      "department": "学校教育部",
+      "plan_page": 18,
+      "project_id": "jp-local-012041-project-2026-education-support-center",
+      "series_id": "jp-local-012041-project-series-education-support-center",
+      "official_title": "教育支援センター運営費",
+      "selection_basis": "基本目標2 たくましく未来を拓く人材を育み、生涯を通じて学べるまちを目指しますの掲載順1番目の事業。最初の基本政策「次代の担い手が、生き生きと学ぶ教育の推進」の最初の施策「社会で自立し、活躍できる力を培う教育の推進」の最初の展開施策4-1-1「確かな学力、豊かな心、健やかな体を育成する教育の推進」の構成事業の掲載順1番目にあたり、金額の大小では選んでいない。",
+      "source_ids": [
+        "asahikawa-city-promotion-plan-fy2026-revised"
+      ]
+    },
+    {
+      "pillar": "基本目標2 たくましく未来を拓く人材を育み、生涯を通じて学べるまちを目指します",
+      "policy": "確かな学力、豊かな心、健やかな体を育成する教育の推進",
+      "department": "学校教育部",
+      "plan_page": 18,
+      "project_id": "jp-local-012041-project-2026-english-education-promotion",
+      "series_id": "jp-local-012041-project-series-english-education-promotion",
+      "official_title": "英語教育推進費",
+      "selection_basis": "基本目標2 たくましく未来を拓く人材を育み、生涯を通じて学べるまちを目指しますの掲載順2番目の事業。最初の基本政策「次代の担い手が、生き生きと学ぶ教育の推進」の最初の施策「社会で自立し、活躍できる力を培う教育の推進」の最初の展開施策4-1-1「確かな学力、豊かな心、健やかな体を育成する教育の推進」の構成事業の掲載順2番目にあたり、金額の大小では選んでいない。",
+      "source_ids": [
+        "asahikawa-city-promotion-plan-fy2026-revised"
+      ]
+    },
+    {
+      "pillar": "基本目標3 活力と賑わいにあふれ、経済が力強く発展するまちを目指します",
+      "policy": "ブランド化の推進と販路拡大",
+      "department": "農政部",
+      "plan_page": 33,
+      "project_id": "jp-local-012041-project-2026-agricultural-products-distribution",
+      "series_id": "jp-local-012041-project-series-agricultural-products-distribution",
+      "official_title": "農産物等流通拡大支援費",
+      "selection_basis": "基本目標3 活力と賑わいにあふれ、経済が力強く発展するまちを目指しますの掲載順1番目の事業。最初の基本政策「魅力と活力のある産業の展開」の最初の施策「魅力の活用、発信と競争力の強化」の最初の展開施策6-1-1「ブランド化の推進と販路拡大」の構成事業の掲載順1番目にあたり、金額の大小では選んでいない。",
+      "source_ids": [
+        "asahikawa-city-promotion-plan-fy2026-revised"
+      ]
+    },
+    {
+      "pillar": "基本目標3 活力と賑わいにあふれ、経済が力強く発展するまちを目指します",
+      "policy": "ブランド化の推進と販路拡大",
+      "department": "農政部",
+      "plan_page": 33,
+      "project_id": "jp-local-012041-project-2026-clean-agriculture-research",
+      "series_id": "jp-local-012041-project-series-clean-agriculture-research",
+      "official_title": "クリーン農業技術試験研究費",
+      "selection_basis": "基本目標3 活力と賑わいにあふれ、経済が力強く発展するまちを目指しますの掲載順2番目の事業。最初の基本政策「魅力と活力のある産業の展開」の最初の施策「魅力の活用、発信と競争力の強化」の最初の展開施策6-1-1「ブランド化の推進と販路拡大」の構成事業の掲載順2番目にあたり、金額の大小では選んでいない。",
+      "source_ids": [
+        "asahikawa-city-promotion-plan-fy2026-revised"
+      ]
+    },
+    {
+      "pillar": "基本目標4 自然と共生し、安全・安心な社会を支える強靱なまちを目指します",
+      "policy": "都市基盤の整備・保全",
+      "department": "土木部",
+      "plan_page": 43,
+      "project_id": "jp-local-012041-project-2026-roads-bridges-improvement",
+      "series_id": "jp-local-012041-project-series-roads-bridges-improvement",
+      "official_title": "道路橋りょう整備費",
+      "selection_basis": "基本目標4 自然と共生し、安全・安心な社会を支える強靱なまちを目指しますの掲載順1番目の事業。最初の基本政策「四季を通じて暮らしやすい快適な都市の構築」の最初の施策「市民生活を支える都市機能の維持」の最初の展開施策8-1-1「都市基盤の整備・保全」の構成事業の掲載順1番目にあたり、金額の大小では選んでいない。",
+      "source_ids": [
+        "asahikawa-city-promotion-plan-fy2026-revised"
+      ]
+    },
+    {
+      "pillar": "基本目標4 自然と共生し、安全・安心な社会を支える強靱なまちを目指します",
+      "policy": "都市基盤の整備・保全",
+      "department": "土木部",
+      "plan_page": 43,
+      "project_id": "jp-local-012041-project-2026-road-drainage-improvement",
+      "series_id": "jp-local-012041-project-series-road-drainage-improvement",
+      "official_title": "道路側溝整備費",
+      "selection_basis": "基本目標4 自然と共生し、安全・安心な社会を支える強靱なまちを目指しますの掲載順2番目の事業。最初の基本政策「四季を通じて暮らしやすい快適な都市の構築」の最初の施策「市民生活を支える都市機能の維持」の最初の展開施策8-1-1「都市基盤の整備・保全」の構成事業の掲載順2番目にあたり、金額の大小では選んでいない。",
+      "source_ids": [
+        "asahikawa-city-promotion-plan-fy2026-revised"
+      ]
+    },
+    {
+      "pillar": "基本目標5 互いに支え合い、共に築くまちを目指します",
+      "policy": "市民活動の促進と協働によるまちづくりの推進",
+      "department": "市民生活部",
+      "plan_page": 55,
+      "project_id": "jp-local-012041-project-2026-collaborative-community-development",
+      "series_id": "jp-local-012041-project-series-collaborative-community-development",
+      "official_title": "協働のまちづくり推進費",
+      "selection_basis": "基本目標5 互いに支え合い、共に築くまちを目指しますの掲載順1番目の事業。最初の基本政策「市民、地域、行政が結び付き、心が通い合う環境づくり」の最初の施策「市民主体のまちづくりの推進」の最初の展開施策11-1-1「市民活動の促進と協働によるまちづくりの推進」の構成事業の掲載順1番目にあたり、金額の大小では選んでいない。",
+      "source_ids": [
+        "asahikawa-city-promotion-plan-fy2026-revised"
+      ]
+    },
+    {
+      "pillar": "基本目標5 互いに支え合い、共に築くまちを目指します",
+      "policy": "市民活動の促進と協働によるまちづくりの推進",
+      "department": "市民生活部",
+      "plan_page": 55,
+      "project_id": "jp-local-012041-project-2026-peace-city-charter-promotion",
+      "series_id": "jp-local-012041-project-series-peace-city-charter-promotion",
+      "official_title": "平和都市・市民憲章推進費",
+      "selection_basis": "基本目標5 互いに支え合い、共に築くまちを目指しますの掲載順2番目の事業。最初の基本政策「市民、地域、行政が結び付き、心が通い合う環境づくり」の最初の施策「市民主体のまちづくりの推進」の最初の展開施策11-1-1「市民活動の促進と協働によるまちづくりの推進」の構成事業の掲載順2番目にあたり、金額の大小では選んでいない。",
+      "source_ids": [
+        "asahikawa-city-promotion-plan-fy2026-revised"
+      ]
+    }
+  ],
+  "review_status": "reviewed",
+  "expansion_rule": {
+    "description": "初回登録として10件（各基本目標2件）。後続の展開では、同じ掲載順ルールを継続し、各基本目標について掲載順の後続事業を追加する。",
+    "added_count": 10,
+    "total_count": 10
+  }
+}
