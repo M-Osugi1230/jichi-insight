@@ -1,0 +1,129 @@
+[
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "seat_count",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "hokkaido-assembly-members-2026"
+        ],
+        "statement": "議員定数は100人、選挙区は46（振興局・総合振興局所管区域15、市21、札幌市区10）。選挙区・議員数のページに掲載。"
+      },
+      {
+        "decision": "accepted",
+        "field": "term",
+        "location_note": "歴代議員名簿（第31期の行）",
+        "review_note": "第32期の日単位の任期を直接明記した公式ページは特定できていない（open_questions 参照）。",
+        "source_ids": [
+          "hokkaido-assembly-history"
+        ],
+        "statement": "第32期の任期は2023年4月30日から2027年4月29日。前任期（第31期）の満了日2023年4月29日は議会自身の歴代議員名簿に「平成31年4月30日～令和5年4月29日」と公式明記されている。第32期の選挙は任期満了による選挙として満了日前に執行されたため、公職選挙法第259条ただし書により任期は満了日の翌日（2023年4月30日）から起算し、地方自治法第140条の4年により2027年4月29日に満了する。段階1の知事任期と同型の構成で確定した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "factions",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "hokkaido-assembly-members-2026"
+        ],
+        "statement": "会派別議員数（令和8年8月10日現在）：自民党・道民会議51、民主・道民連合26、北海道結志会8、公明党8、日本共産党2、北海道維新の会1の計96人（欠員4人）。議員数は逝去・補欠等で変動するため、出典の現在日を併記する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "committees",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "hokkaido-assembly-committees-2026"
+        ],
+        "statement": "委員会一覧ページに、常任委員会9（総務・総合政策・環境生活・保健福祉・経済・農政・水産林務・建設・文教）、議会運営委員会、特別委員会8（産炭地域振興・GX推進・エネルギー調査、北方領土対策、新幹線・総合交通体系対策、人口減少問題・地方分権改革等調査、子ども政策調査、食と観光調査、予算、決算）を掲載。"
+      },
+      {
+        "decision": "accepted",
+        "field": "petitions",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "hokkaido-assembly-petitions"
+        ],
+        "statement": "請願は議案等カテゴリの「32期 請願一覧」で、付託会期ごとに番号・件名・受理日・付託委員会・結果を公表している（第1号〜第33号）。令和8年第3回定例会では新規付託・結論ともになく、本会議では審査中の請願の閉会中継続審査が決定されたのみである。一覧ページは登録時（2026年11月20日）に再取得し、第3回定例会付託の区分が追加されていないことを確認した。請願の個別登録は、結論が出た会期の登録時に併せて行う設計とする。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_dispatch",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "hokkaido-assembly-proposals-2026-3"
+        ],
+        "statement": "本会議の議決による議員派遣は対象会期にも現れた（9月8日に報告、10月2日に派遣の件を議決）が、派遣先・期間・派遣議員の内容は正式会議録の巻末に掲載される建付けで、第3回定例会分の正式会議録は登録時点で未登載であり、現行サイト内に派遣内容の一覧・報告書ページは確認できなかった。"
+      }
+    ],
+    "id": "evidence-jp-local-010006-assembly-2023",
+    "open_questions": [
+      "第32期の任期の日単位の明示値は公式ページで直接確認できていない。次回選挙の日程告示時に明示値と照合すること。",
+      "陳情の件名単位の公表形式は、正式会議録の巻末「請願・陳情の部」が第3回定例会分で未登載のため未確認。",
+      "議員派遣の内容（派遣先・期間・議員名）の公表有無は正式会議録の登載後に再確認すること。確認できた場合は登録を検討する。",
+      "報告第1号〜第6号（決算）および議案第19号の結論は令和8年第4回定例会以降に出る見込みであり、結論が出た会期で proposals の状態を更新すること。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-010006-assembly-2023",
+    "subject_type": "assembly"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "hokkaido-assembly-proposals-2026-3"
+        ],
+        "statement": "議案処理簿に会派別の賛否・態度の欄はなく、議案等カテゴリ・議会広報にも会期ごとの会派別態度を示す公表物は存在しない（棚卸しで会期ページ群・議案等カテゴリ・会議録等カテゴリ・議会広報カテゴリを直接確認）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "hokkaido-assembly-minutes-2026-3"
+        ],
+        "statement": "本会議会議録（速報版・全8日分）を通読検索した結果、起立採決は「起立多数」の宣告のみで起立者数・議員名は記録されず、簡易採決は「御異議なし」のみである。反対討論者名は記録されるが討論の記録であり、賛否の公表ではない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "political_activity_expense_reports",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "hokkaido-assembly-seimu",
+          "hokkaido-assembly-seimu-ordinance"
+        ],
+        "statement": "交付は会派（月額10万円×所属議員数）と議員（月額43万円）の二層。Web公表は年度×区分（会派分・議員分・合計）の集計のみで、収支報告書・領収書等の写しは北海道議会事務局閲覧室（議会庁舎2階）で5年分の現地閲覧のみ（提出期限の末日の翌日から90日経過後、写しは1枚10円）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "inspection_trip_reports",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "hokkaido-assembly-committees-2026"
+        ],
+        "statement": "各委員会の審議概要には「道内調査実施報告の件［委員長報告］」等の議事記録があるのみで、報告書本文・調査先・日程・参加者・費用を記した文書は添付・一覧化されていない（棚卸しで8委員会のページを確認）。"
+      }
+    ],
+    "id": "evidence-jp-local-010006-assembly-2023-disclosure-2026",
+    "open_questions": [
+      "政務活動費の令和5年度以前の集計のWeb取得可否は未確認（現行ページは当年度＋前年度比較のみ）。",
+      "北海道議会時報に賛否表が含まれるかは未走査。ただし時報は会議録・処理簿と同一の記録から編まれる後刊誌であり、賛否の公表単位が変わる可能性は低いと判断した。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-010006-assembly-2023-disclosure-2026",
+    "subject_type": "disclosure_profile"
+  }
+]
