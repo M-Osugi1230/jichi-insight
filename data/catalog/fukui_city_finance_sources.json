@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updated_at": "2026-11-16",
+  "updated_at": "2026-11-19",
   "scope": "phase15-core-capital-review",
   "records": [
     {
@@ -44,6 +44,90 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "一般会計歳入133,427,298,121円・歳出130,218,901,390円を円単位で含む公式決算資料（決算表・総表）。決算の認定は第66号議案（令和7年12月1日に認定）。監査委員の決算審査意見書における意見内容の確認は未実施。"
+    },
+    {
+      "id": "fukui-city-mic-settlement-card-fy2022",
+      "municipality_key": "fukui-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和4年度 市町村決算カード（福井県）",
+      "url": "https://www.soumu.go.jp/main_content/000937068.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和4年度市町村決算カード（福井県）のうち福井市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、福井市『令和4年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "fukui-city-fiscal-situation-collection-fy2022",
+      "municipality_key": "fukui-city",
+      "organization": "福井市",
+      "category": "settlement",
+      "title": "令和4年度 財政状況資料集",
+      "url": "https://www.pref.fukui.lg.jp/doc/sityousinkou/r04zaiseisiryoushuu_d/fil/r04fukui.xlsx",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する資料集。福井県が県内市町村分を一括公表するExcel版を一次資料とした。総務省決算カードの照合先として使用した。"
+    },
+    {
+      "id": "fukui-city-mic-settlement-card-fy2023",
+      "municipality_key": "fukui-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和5年度 市町村決算カード（福井県）",
+      "url": "https://www.soumu.go.jp/main_content/000998955.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和5年度市町村決算カード（福井県）のうち福井市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、福井市『令和5年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "fukui-city-fiscal-situation-collection-fy2023",
+      "municipality_key": "fukui-city",
+      "organization": "福井市",
+      "category": "settlement",
+      "title": "令和5年度 財政状況資料集",
+      "url": "https://www.pref.fukui.lg.jp/doc/sityousinkou/r05zaiseisiryoushuu_d/fil/r05fukui.xlsx",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する資料集。福井県が県内市町村分を一括公表するExcel版を一次資料とした。総務省決算カードの照合先として使用した。"
+    },
+    {
+      "id": "fukui-city-mic-settlement-card-fy2024",
+      "municipality_key": "fukui-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和6年度 市町村決算カード（福井県）",
+      "url": "https://www.soumu.go.jp/main_content/001063980.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和6年度市町村決算カード（福井県）のうち福井市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、福井市『令和6年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "fukui-city-fiscal-situation-collection-fy2024",
+      "municipality_key": "fukui-city",
+      "organization": "福井市",
+      "category": "settlement",
+      "title": "令和6年度 財政状況資料集",
+      "url": "https://www.pref.fukui.lg.jp/doc/sityousinkou/r06zaiseisiryoushuu_d/fil/01_fukui06_2.xlsx",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する資料集。福井県が県内市町村分を一括公表するExcel版を一次資料とした。総務省決算カードの照合先として使用した。"
     }
   ]
 }
