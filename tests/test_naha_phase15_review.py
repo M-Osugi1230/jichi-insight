@@ -194,9 +194,17 @@ def test_naha_finance_source_records_exist():
         "naha-city-home",
         "naha-budget-2026",
         "naha-settlement-2024",
+        "naha-city-mic-settlement-card-fy2022",
+        "naha-city-mic-settlement-card-fy2023",
+        "naha-city-mic-settlement-card-fy2024",
+        "naha-city-fiscal-situation-collection-fy2022",
+        "naha-city-fiscal-situation-collection-fy2023",
+        "naha-city-fiscal-situation-collection-fy2024",
     }
     assert all(
-        record["url"].startswith("https://www.city.naha.okinawa.jp/")
+        record["url"].startswith(
+            ("https://www.city.naha.okinawa.jp/", "https://www.soumu.go.jp/", "https://www.pref.okinawa.jp/")
+        )
         for record in finance["records"]
     )
 
