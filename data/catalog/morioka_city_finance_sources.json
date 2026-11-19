@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updated_at": "2026-11-15",
+  "updated_at": "2026-11-19",
   "scope": "phase15-core-capital-review",
   "records": [
     {
@@ -58,6 +58,90 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "一般会計収入済額135,207,433,943円・支出済額132,975,741,966円の円単位exact source valueを含む決算認定資料。"
+    },
+    {
+      "id": "morioka-city-mic-settlement-card-fy2022",
+      "municipality_key": "morioka-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和4年度 市町村決算カード（岩手県）",
+      "url": "https://www.soumu.go.jp/main_content/000936905.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和4年度市町村決算カード（岩手県分）のうち盛岡市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、盛岡市『令和4年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "morioka-city-fiscal-situation-collection-fy2022",
+      "municipality_key": "morioka-city",
+      "organization": "盛岡市",
+      "category": "settlement",
+      "title": "令和4年度 財政状況資料集",
+      "url": "https://www.city.morioka.iwate.jp/_res/projects/default_project/_page_/001/010/749/R04zaiseijoukyousiryou.pdf1.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する市公式資料。総務省決算カードの照合先として使用した。"
+    },
+    {
+      "id": "morioka-city-mic-settlement-card-fy2023",
+      "municipality_key": "morioka-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和5年度 市町村決算カード（岩手県）",
+      "url": "https://www.soumu.go.jp/main_content/000998925.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和5年度市町村決算カード（岩手県分）のうち盛岡市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、盛岡市『令和5年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "morioka-city-fiscal-situation-collection-fy2023",
+      "municipality_key": "morioka-city",
+      "organization": "盛岡市",
+      "category": "settlement",
+      "title": "令和5年度 財政状況資料集",
+      "url": "https://www.city.morioka.iwate.jp/_res/projects/default_project/_page_/001/010/749/R05zaiseijoukyousiryou.pdf1.pdf.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する市公式資料。総務省決算カードの照合先として使用した。"
+    },
+    {
+      "id": "morioka-city-mic-settlement-card-fy2024",
+      "municipality_key": "morioka-city",
+      "organization": "総務省",
+      "category": "settlement",
+      "title": "令和6年度 市町村決算カード（岩手県）",
+      "url": "https://www.soumu.go.jp/main_content/001063950.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する令和6年度市町村決算カード（岩手県分）のうち盛岡市カード。普通会計の歳入・歳出（性質別・目的別）・収支・財政指標・積立金現在高・地方債現在高を千円単位で印字する一次資料。本リポジトリの転記は同一公表のExcel版から行い、盛岡市『令和6年度財政状況資料集』と突合した。"
+    },
+    {
+      "id": "morioka-city-fiscal-situation-collection-fy2024",
+      "municipality_key": "morioka-city",
+      "organization": "岩手県",
+      "category": "settlement",
+      "title": "令和6年度 財政状況資料集",
+      "url": "https://www.pref.iwate.jp/_res/projects/default_project/_page_/001/097/113/r6zaiseizyoukyousiryousyuu.zip",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "岩手県が県内市町村の財政状況資料集を一括公表するZIPに含まれる盛岡市ファイル（Excel形式）。総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する。盛岡市公式サイトの財政状況資料集ページでは令和6年度版が未掲載（2026-11-19確認）のため、県が公表する市作成資料を使用し、総務省決算カードの照合先とした。"
     }
   ]
 }
