@@ -4,6 +4,8 @@ import { fukuokaPrefectureFinance } from "@/lib/finance";
 import { fukuokaCityFinance } from "@/lib/fukuokaCityFinance";
 import { kitakyushuFinance } from "@/lib/kitakyushuFinance";
 import { projectRegistry } from "@/lib/projectRegistry";
+import { loadPhase15CitySummaries } from "@/lib/phase15Cities";
+import { loadGenericCityFinance } from "@/lib/genericCityFinance";
 
 type DeepDiveKey = "fukuoka-prefecture" | "fukuoka-city" | "kitakyushu-city";
 
@@ -29,7 +31,12 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
   });
 
   if (!matched) {
-    return { finance: false, promises: false, assembly: false, projects: false, key: null };
+    // Only the fiscal-detail gate expands: a Reviewed Phase 15 city with a
+    // validated settlement package can enable its own in-page FiscalReview.
+    // The unrelated promise/assembly/project gates remain strictly closed.
+    const city = loadPhase15CitySummaries().find((item) => item.officialCode === officialCode);
+    const hasFinance = city ? loadGenericCityFinance(city.slug) !== null : false;
+    return { finance: hasFinance, promises: false, assembly: false, projects: false, key: null };
   }
 
   const municipality = financeByKey[matched].municipality;
