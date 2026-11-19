@@ -1,0 +1,77 @@
+{
+  "version": "1.0.0",
+  "updated_at": "2026-11-19",
+  "scope": "pilot",
+  "records": [
+    {
+      "id": "toyota-city-project-collection-fy2026",
+      "municipality_key": "toyota-city",
+      "organization": "豊田市企画政策部企画課",
+      "category": "priority_projects",
+      "title": "令和8年度豊田市の予算（施策別事業集）",
+      "url": "https://www.city.toyota.aichi.jp/_res/projects/default_project/_page_/001/004/776/r0802/02.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "ローリング結果公表資料（2025年度版）の別紙として、市の公式計画ページから公表。第9次豊田市総合計画ミライ実現戦略2030の5つの取組目標・全30施策に紐づく事業を、事業内容・担当課・新規/拡充区分・事業費（千円単位）つきで掲載する。事業費つきの掲載は全234件（うち21件は【再掲】と明示された他施策からの再掲掲載）。"
+    },
+    {
+      "id": "toyota-city-rolling-results-fy2025",
+      "municipality_key": "toyota-city",
+      "organization": "豊田市企画政策部企画課",
+      "category": "comprehensive_plan",
+      "title": "第9次豊田市総合計画 ローリング結果公表資料（2025年度版）",
+      "url": "https://www.city.toyota.aichi.jp/_res/projects/default_project/_page_/001/055/819/r0803/01.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "2026年3月発行。2025年度ローリングの概要と、ローリングを踏まえた2026年度の取組概要を取組目標単位で叙述する公表資料。事業単位の評定（公式評価）は含まないため、事業の公式評価としては転用しない。"
+    },
+    {
+      "id": "toyota-city-ninth-plan-page",
+      "municipality_key": "toyota-city",
+      "organization": "豊田市企画政策部企画課",
+      "category": "comprehensive_plan",
+      "title": "第9次豊田市総合計画（ミライ構想・ミライ実現戦略2030）",
+      "url": "https://www.city.toyota.aichi.jp/shisei/1073254/1073594/1055819/index.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "現行計画の公式入口。ミライ実現戦略2030の体系（2つの取組方針・5つの取組目標・12の目指す姿・全30施策）と、ローリング結果公表資料・施策別事業集へのリンクを確認した。"
+    },
+    {
+      "id": "toyota-city-budget-overview-fy2026",
+      "municipality_key": "toyota-city",
+      "organization": "豊田市企画政策部財政課",
+      "category": "budget",
+      "title": "令和8年度（2026年度）当初予算の概要",
+      "url": "https://www.city.toyota.aichi.jp/_res/projects/default_project/_page_/001/074/047/01.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "取組目標ごとの主な事業と金額（万円単位）を掲載。選定事業の金額の突合に使用した（万円単位の丸めのため、登録値は施策別事業集の千円単位の値を正とする）。"
+    },
+    {
+      "id": "toyota-city-budget-books-fy2026",
+      "municipality_key": "toyota-city",
+      "organization": "豊田市企画政策部財政課",
+      "category": "budget",
+      "title": "一般会計・特別会計予算書・予算説明書",
+      "url": "https://www.city.toyota.aichi.jp/shisei/yosan/1073321/1019490.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-19",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "令和8年度一般会計・特別会計予算書（議案第45号）の公式入口。令和8年度当初予算が令和8年3月18日に原案可決され成立したことは、市の審査済み財政レコード（fiscal_records.json）でも確認済み。"
+    }
+  ]
+}
