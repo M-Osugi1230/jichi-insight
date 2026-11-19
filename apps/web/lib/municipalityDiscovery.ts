@@ -1,0 +1,67 @@
+import { assemblies } from "@/lib/assemblyRegistry";
+import { currentExecutiveTerms, promiseRecords } from "@/lib/executives";
+import { fukuokaPrefectureFinance } from "@/lib/finance";
+import { fukuokaCityFinance } from "@/lib/fukuokaCityFinance";
+import { kitakyushuFinance } from "@/lib/kitakyushuFinance";
+import { projectRegistry } from "@/lib/projectRegistry";
+
+type DeepDiveKey = "fukuoka-prefecture" | "fukuoka-city" | "kitakyushu-city";
+
+const financeByKey = {
+  "fukuoka-prefecture": fukuokaPrefectureFinance,
+  "fukuoka-city": fukuokaCityFinance,
+  "kitakyushu-city": kitakyushuFinance,
+} as const;
+
+/**
+ * Read-only availability gate. The official code is checked against the
+ * Reviewed municipality record before consulting the four independent
+ * registries. The key is a route identifier, never an availability shortcut.
+ *
+ * A municipality with no corresponding Reviewed registration receives NO
+ * deep-dive links, regardless of its display name or prefecture.
+ */
+export function municipalityDiscoveryAvailability(officialCode: string) {
+  const matched = (Object.keys(financeByKey) as DeepDiveKey[]).find((key) => {
+    const municipality = financeByKey[key].municipality;
+    return municipality.official_code === officialCode &&
+      municipality.data_status === "reviewed";
+  });
+
+  if (!matched) {
+    return { finance: false, promises: false, assembly: false, projects: false, key: null };
+  }
+
+  const municipality = financeByKey[matched].municipality;
+  const registeredFinance = financeByKey[matched].records.some(
+    (record) => record.review_status === "reviewed" &&
+      record.stage === "settlement" && record.account_type === "ordinary" &&
+      [2022, 2023, 2024].includes(record.fiscal_year),
+  );
+  const reviewedTerms = currentExecutiveTerms.filter(
+    (term) => term.municipality_id === municipality.id &&
+      (term.review_status === "reviewed" || term.review_status === "verified"),
+  );
+  const registeredPromises = reviewedTerms.some((term) =>
+    promiseRecords.some((promise) =>
+      promise.executive_term_id === term.id &&
+      promise.municipality_id === municipality.id &&
+      (promise.review_status === "reviewed" || promise.review_status === "verified"),
+    ),
+  );
+  const assembly = assemblies[matched];
+  const registeredAssembly =
+    assembly.assembly.review_status === "reviewed" &&
+    assembly.disclosure.review_status === "reviewed";
+  const registeredProjects = projectRegistry[matched].projects.some(
+    (project) => project.review_status === "reviewed",
+  );
+
+  return {
+    key: matched,
+    finance: registeredFinance,
+    promises: registeredPromises,
+    assembly: registeredAssembly,
+    projects: registeredProjects,
+  };
+}

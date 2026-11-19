@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { BreadcrumbTrail } from "@/components/BreadcrumbTrail";
 import { PageIntro } from "@/components/PageIntro";
 import { CityOverview } from "@/components/CityOverview";
+import { MunicipalityDiscoveryPanel } from "@/components/MunicipalityDiscoveryPanel";
 import { DeduplicateCitySourceTabStops } from "@/components/DeduplicateCitySourceTabStops";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -285,6 +286,12 @@ export default async function Phase15CityPage({
             </a>
           </div>
         </PageIntro>
+
+        <MunicipalityDiscoveryPanel
+          officialCode={city.officialCode}
+          planHref="#promise-title"
+          budgetHref="#money-title"
+        />
 
         <nav className={styles.cityJumpNav} aria-label="この自治体ページの目次">
           <a href="#city-summary-title">概要</a>

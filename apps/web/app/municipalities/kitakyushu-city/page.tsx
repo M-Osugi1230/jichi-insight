@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { EvidencePanel } from "@/components/EvidencePanel";
 import { FiscalReview } from "@/components/FiscalReview";
+import { MunicipalityDiscoveryPanel } from "@/components/MunicipalityDiscoveryPanel";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { StatusBadge } from "@/components/StatusBadge";
@@ -65,6 +66,14 @@ export default function KitakyushuCityPage() {
             <div><dt>最終確認</dt><dd>各資料の索引更新日を参照</dd></div>
           </dl>
         </section>
+
+        <MunicipalityDiscoveryPanel
+          officialCode={kitakyushuFinance.municipality.official_code}
+          planHref="#kitakyushu-scope-title"
+          budgetHref="#kitakyushu-budget-title"
+          settlementHref="#kitakyushu-settlement-title"
+          fiscalDetailHref="#fiscal-detail"
+        />
 
         <section className={styles.scope} aria-label="自治体のプロフィール">
           <div><p className="eyebrow">Municipality profile</p><h2>この自治体について</h2></div>
@@ -149,7 +158,9 @@ export default function KitakyushuCityPage() {
           </div>
         </section>
 
-        <FiscalReview municipality="北九州市" records={kitakyushuFinance.records} />
+        <div id="fiscal-detail" style={{ scrollMarginTop: 90 }}>
+          <FiscalReview municipality="北九州市" records={kitakyushuFinance.records} />
+        </div>
 
         <section className={styles.evidence} aria-labelledby="kitakyushu-evidence-title">
           <div className="sectionIntro">
