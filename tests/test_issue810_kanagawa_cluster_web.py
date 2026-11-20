@@ -96,7 +96,14 @@ def test_kanagawa_prefecture_page_facts_match_reviewed_plan_finance_projects_and
     assert 'href: "/municipalities/kanagawa-prefecture"' in catalog
 
     # Regression guard for the known cross-prefecture copy/paste failure mode.
-    for foreign_copy in ("副首都ビジョン", "府政運営の基本方針", "吉村洋文", "北海道総合計画", "鈴木直道"):
+    foreign_copies = (
+        "副首都ビジョン",
+        "府政運営の基本方針",
+        "吉村洋文",
+        "北海道総合計画",
+        "鈴木直道",
+    )
+    for foreign_copy in foreign_copies:
         assert foreign_copy not in page
 
 
