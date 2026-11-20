@@ -751,7 +751,8 @@ def main() -> int:
         set(REQUIRED_FILES)
         | published_required_files()
         | hokkaido_cluster_project_detail_files()
-        | osaka_cluster_project_detail_files()\n        | kanagawa_cluster_project_detail_files()
+        | osaka_cluster_project_detail_files()
+        | kanagawa_cluster_project_detail_files()
         | {"municipalities/osaka-prefecture/index.html"}
         | {
             f"assemblies/{slug}/index.html"
