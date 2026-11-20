@@ -639,7 +639,7 @@ def validate_osaka_assembly_scope() -> list[str]:
         },
         "sakai-city": {
             "votes": ["主な議案", "10件", "その他の議案"],
-            "petitions": ["陳情19件", "陳情回答綴"],
+            "proposals": ["陳情19件", "陳情回答綴"],
         },
     }
     for slug, sections in expected.items():
