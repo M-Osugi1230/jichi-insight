@@ -169,6 +169,7 @@ export default async function AssemblyDetailPage({params}:PageProps){
       <p className={styles.attention}>{slug==="asahikawa-city" ? "議員ごとの賛否は賛否が分かれた8件のみ公表されています。全会一致の案件には個別内訳がなく、陳情の表決は採択への賛否です。" : slug==="nagoya-city"
         ? "議員ごとの賛否は第134号のみ68人分が公式公表されています。残る議案は全会一致です。議長の「議決に参加できない」は欠席ではありません。"
         : "議員ごとの賛否は公表されていません。議員名簿や会派の表決から、個人の賛否を推測・復元することはしません。"}</p>
+      {slug==="sapporo-city" ? <p className={styles.attention}>札幌市議会は会派別の賛否のみ公表し、議員個人別の賛否は公表されていません。</p> : null}
       {noFactionVotes?<p className={styles.attention}>会派ごとの賛否は公表されていません。</p>:
         <p>会派別賛否は登録済み議案の「表決の公開範囲・会派別内訳」から確認できます。会派内で賛否が分かれた場合はその旨を記し、議員個人の賛否は特定しません。</p>}
       {slug==="aichi-prefecture" ? <p className={styles.attention}>会派別態度は採決に先立ち議会運営委員会で確認した態度であり、本会議の投票記録そのものではありません。無所属の人数内訳は原資料の印字を保持します。</p> : null}
@@ -178,7 +179,7 @@ export default async function AssemblyDetailPage({params}:PageProps){
     </section>
 
     <section id="expenses" className={styles.section}>
-      <h2>政務活動費（2025年度／令和7年度）</h2>
+      <h2>政務活動費（登録年度別）</h2>
       <p className={styles.attention}>{slug==="hokkaido-prefecture" ? "北海道議会の政務活動費は集計値と閲覧制度のみが登録されています。領収書・個別支出を推計しません。" : slug==="sapporo-city" ? "札幌市議会の領収書は閲覧申請形式のため登録対象外です。" : slug==="fukuoka-city"?
         "福岡市議会は公式公開単位どおり会派交付分と議員個人分を併記します。":
         "公式公開単位は会派単位です。議員個人分の収支報告書は本登録に収録されておらず、個人別支出額を推測しません。"}
@@ -189,7 +190,7 @@ export default async function AssemblyDetailPage({params}:PageProps){
             : "領収書は窓口でのみ閲覧可能です。"}支出額の順位付けはしません。</p>
       <p className={styles.note}>掲載順は Reviewed 原資料の登録順です。交付額・支出額・残額は年度と公開単位を保ち、会派と議員の額を合算して個人の支出に帰属させません。</p>
       <div className={styles.recordList}>
-      {data.expenses.filter(exp=>exp.fiscal_year===2025).map(exp=><article className={styles.record} key={exp.id}>
+      {data.expenses.map(exp=><article className={styles.record} key={exp.id}>
         <h3>{exp.recipient_name}</h3>
         <p className={styles.note}>公開単位：{exp.recipient_type==="member"?"議員個人":"会派"}／年度：{exp.fiscal_year}</p>
         <dl className={styles.facts}>
