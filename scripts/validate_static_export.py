@@ -153,7 +153,7 @@ BASE_PAGE_REQUIREMENTS: dict[str, list[str]] = {
         "まだ登録・評価していないこと",
     ],
     "projects/index.html": [
-        "9自治体の Reviewed 事業レコード",
+        "12自治体の Reviewed 事業レコード",
         "北海道｜登録事業",
         "札幌市｜登録事業",
         "旭川市｜登録事業",
@@ -500,6 +500,73 @@ def validate_asahikawa_promise_scope() -> list[str]:
     )
 
 
+
+def osaka_cluster_project_detail_files() -> set[str]:
+    """Require each Osaka cluster Reviewed project series to export."""
+    files: set[str] = set()
+    for slug in ("osaka-prefecture", "osaka-city", "sakai-city"):
+        records = load_json(ROOT / "data" / "reviewed" / slug / "projects.json")
+        for series in {
+            item["series_id"] for item in records if item["review_status"] == "reviewed"
+        }:
+            files.add(f"projects/{slug}/{series}/index.html")
+    return files
+
+
+def validate_osaka_cluster_sections() -> list[str]:
+    """Require municipality-specific promises and project content in scoped sections."""
+    failures: list[str] = []
+    promise_statuses = (
+        ("osaka-prefecture", "大阪府・吉村 洋文", "Reviewed 公約原文 7件"),
+        ("osaka-city", "大阪市・横山 英幸", "Reviewed 公約原文 5件"),
+        ("sakai-city", "堺市・永藤 英機", ("公約原文：" + "未登録")),
+    )
+    for slug, heading, status in promise_statuses:
+        failures.extend(validate_promise_section(slug, heading, status))
+    for slug, page, section_id, status in (
+        (
+            "osaka-prefecture", "municipalities/osaka/index.html",
+            "osaka-executive-promises", "Reviewed 公約原文 7件",
+        ),
+        (
+            "osaka-city", "municipalities/osaka-city/index.html",
+            "mayor-promises", "Reviewed 公約原文：5件",
+        ),
+        (
+            "sakai-city", "municipalities/sakai-city/index.html",
+            "mayor-promises", "公約原文：" + "未登録",
+        ),
+    ):
+        path = EXPORT_ROOT / page
+        if not path.is_file():
+            failures.append(f"Missing static export file: {page}")
+            continue
+        match = re.search(
+            rf'<section\b(?=[^>]*\bid="{re.escape(section_id)}")[^>]*>(.*?)</section>',
+            normalized_html(path), flags=re.DOTALL,
+        )
+        if match is None:
+            failures.append(f"{slug} municipality page has no {section_id} section")
+        elif status not in match.group(1):
+            failures.append(f"{slug} municipality section missing status: {status}")
+
+    projects_path = EXPORT_ROOT / "projects/index.html"
+    if projects_path.is_file():
+        content = normalized_html(projects_path)
+        for slug, name in (
+            ("osaka-prefecture", "大阪府"),
+            ("osaka-city", "大阪市"),
+            ("sakai-city", "堺市"),
+        ):
+            match = re.search(
+                rf'<section\b(?=[^>]*\bid="{re.escape(slug)}")[^>]*>(.*?)</section>',
+                content, flags=re.DOTALL,
+            )
+            if match is None or f"{name}｜登録事業" not in match.group(1):
+                failures.append(f"projects index is missing the {slug} section")
+    return failures
+
+
 def main() -> int:
     args = parse_args()
     failures: list[str] = []
@@ -507,6 +574,7 @@ def main() -> int:
         set(REQUIRED_FILES)
         | published_required_files()
         | hokkaido_cluster_project_detail_files()
+        | osaka_cluster_project_detail_files()
     )
 
     for relative_path in sorted(required_files):
@@ -544,6 +612,7 @@ def main() -> int:
     failures.extend(validate_hokkaido_promise_scope())
     failures.extend(validate_sapporo_promise_scope())
     failures.extend(validate_asahikawa_promise_scope())
+    failures.extend(validate_osaka_cluster_sections())
 
     sources_path = EXPORT_ROOT / "sources/index.html"
     if sources_path.is_file():

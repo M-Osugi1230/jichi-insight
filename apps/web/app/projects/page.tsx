@@ -51,8 +51,8 @@ export default function ProjectsPage() {
       <SiteHeader />
       <main className="pageShell">
         <h1>重点事業</h1>
-        <p>9自治体の Reviewed 事業レコードを掲載しています。公式母集団から各政策の柱ごとに掲載順で選定したものであり、金額順・優先度順・独自ランキングではありません。</p>
-        <p>確認できること：福岡県・福岡市・北九州市・愛知県・名古屋市・豊田市・北海道・札幌市・旭川市の登録済み重点事業の予算・KPI・公式評価（公表のあるもの）。まだ確認できないこと：9自治体の全事業を網羅した一覧ではありません。名古屋市の金額は予算案段階の予定額で成立値ではなく、愛知県のFY2026当初予算額は億円単位の概数です。北海道の金額は基本評価調書の「予算額」に基づく当初予算ベースで、決算額ではありません。北海道の総合判定は道の一次政策評価の判定です。豊田市・札幌市・旭川市の事業単位の公式評価は公表されていません。独自評価や順位付けは行いません。</p>
+        <p>12自治体の Reviewed 事業レコードを掲載しています。公式母集団から各政策の柱ごとに掲載順で選定したものであり、金額順・優先度順・独自ランキングではありません。</p>
+        <p>確認できること：福岡県・福岡市・北九州市・愛知県・名古屋市・豊田市・北海道・札幌市・旭川市・大阪府・大阪市・堺市の登録済み重点事業の予算・KPI・公式評価（公表のあるもの）。まだ確認できないこと：12自治体の全事業を網羅した一覧ではありません。名古屋市の金額は予算案段階の予定額で成立値ではなく、愛知県のFY2026当初予算額は億円単位の概数です。北海道の金額は基本評価調書の「予算額」に基づく当初予算ベースで、決算額ではありません。北海道の総合判定は道の一次政策評価の判定です。豊田市・札幌市・旭川市の事業単位の公式評価は公表されていません。独自評価や順位付けは行いません。</p>
 
         <ProgressiveRecordFilter
           kind="projects"
@@ -62,8 +62,8 @@ export default function ProjectsPage() {
           {areas.map(([key, area]) => (
             <section className={styles.section} key={key} id={key} data-filter-section="">
               <h2>{area.name}｜登録事業</h2>
-              <p className={styles.meta}>母集団：{area.selection.population?.description ?? "詳細未収録"}</p>
-              <p className={styles.meta}>選定方法：{area.selection.selection_rule?.description ?? "選定規則未収録"}</p>
+              <p className={styles.meta}>母集団：{area.selection.population?.description ?? area.selection.population?.label ?? "詳細未収録"}</p>
+              <p className={styles.meta}>選定方法：{(typeof area.selection.selection_rule === "string" ? area.selection.selection_rule : area.selection.selection_rule?.description) ?? "選定規則未収録"}</p>
               <p className={styles.meta}>選定カタログ更新：{area.selection.updated_at ?? "未収録"}。選定・除外理由は Reviewed 選定カタログで管理しています。</p>
               {key === "nagoya-city" ? <p className={styles.meta}>金額は予算案段階の「予定額」であり、成立後の事業別予算額ではありません。</p> : null}
               {key === "aichi-prefecture" ? <p className={styles.meta}>FY2026 当初予算額は、億円単位で公表された概数です。公式評価の A〜E は愛知県の判定をそのまま表示します。</p> : null}

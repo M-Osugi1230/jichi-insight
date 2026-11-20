@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { currentExecutiveTerms, promisesForExecutive } from "@/lib/executives";
 import { OsakaIndicatorExplorer } from "@/components/OsakaIndicatorExplorer";
 import { PageIntro } from "@/components/PageIntro";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -21,6 +22,8 @@ export const metadata: Metadata = {
 };
 
 export default function OsakaPage() {
+  const governor = currentExecutiveTerms.find((term) => term.municipality_id === "jp-local-270008" && term.office === "governor");
+  const promises = governor ? promisesForExecutive(governor).filter((promise) => promise.review_status === "reviewed") : [];
   return (
     <>
       <SiteHeader />
@@ -41,6 +44,14 @@ export default function OsakaPage() {
             </a>
           </div>
         </PageIntro>
+
+        <section className="contentSection" id="osaka-executive-promises" aria-labelledby="osaka-executive-promises-title">
+          <p className="eyebrow">Reviewed governor promises</p>
+          <h2 id="osaka-executive-promises-title">大阪府知事の公約原文</h2>
+          <p>{governor?.person_name ?? "知事"}の公式選挙公報に基づく Reviewed 公約原文 {promises.length}件を登録しています。達成率や成果の独自判定ではありません。</p>
+          <p><Link href="/promises#osaka-prefecture">大阪府知事の公約原文と一次資料を見る</Link></p>
+          <p><Link href="/projects#osaka-prefecture">大阪府の重点事業を見る</Link></p>
+        </section>
 
         <section className={styles.summaryGrid} aria-label="大阪府政策指標の公開状況">
           <article>
