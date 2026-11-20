@@ -154,7 +154,51 @@ import prefSources from "../../../data/catalog/fukuoka_assembly_sources.json";
 import citySources from "../../../data/catalog/fukuoka_city_assembly_sources.json";
 import kitaSources from "../../../data/catalog/kitakyushu_assembly_sources.json";
 
-export type AssemblySlug = "osaka-prefecture" | "osaka-city" | "sakai-city" | "hokkaido-prefecture" | "sapporo-city" | "asahikawa-city" | "fukuoka-prefecture" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city";
+
+// Kanagawa cluster: prefectural assembly, Yokohama City Assembly and Kawasaki City Council.
+import kanagawaAssembly from "../../../data/reviewed/kanagawa-prefecture/assembly/assembly_records.json";
+import kanagawaDisclosure from "../../../data/reviewed/kanagawa-prefecture/assembly/disclosure_profiles.json";
+import kanagawaSessions from "../../../data/reviewed/kanagawa-prefecture/assembly/sessions.json";
+import kanagawaProposals from "../../../data/reviewed/kanagawa-prefecture/assembly/proposals.json";
+import kanagawaVotes from "../../../data/reviewed/kanagawa-prefecture/assembly/votes.json";
+import kanagawaFactionVotes from "../../../data/reviewed/kanagawa-prefecture/assembly/faction_votes.json";
+import kanagawaExpenses from "../../../data/reviewed/kanagawa-prefecture/assembly/political_activity_expenses.json";
+import kanagawaTrips from "../../../data/reviewed/kanagawa-prefecture/assembly/inspection_trips.json";
+import kanagawaAssemblyEvidence from "../../../data/reviewed/kanagawa-prefecture/assembly/assembly_evidence_packets.json";
+import kanagawaVoteEvidence from "../../../data/reviewed/kanagawa-prefecture/assembly/proposal_vote_evidence_packets.json";
+import kanagawaExpenseEvidence from "../../../data/reviewed/kanagawa-prefecture/assembly/expense_evidence_packets.json";
+import kanagawaTripEvidence from "../../../data/reviewed/kanagawa-prefecture/assembly/inspection_evidence_packets.json";
+import kanagawaSources from "../../../data/catalog/kanagawa_prefecture_assembly_sources.json";
+
+import yokohamaAssembly from "../../../data/reviewed/yokohama-city/assembly/assembly_records.json";
+import yokohamaDisclosure from "../../../data/reviewed/yokohama-city/assembly/disclosure_profiles.json";
+import yokohamaSessions from "../../../data/reviewed/yokohama-city/assembly/sessions.json";
+import yokohamaProposals from "../../../data/reviewed/yokohama-city/assembly/proposals.json";
+import yokohamaVotes from "../../../data/reviewed/yokohama-city/assembly/votes.json";
+import yokohamaFactionVotes from "../../../data/reviewed/yokohama-city/assembly/faction_votes.json";
+import yokohamaExpenses from "../../../data/reviewed/yokohama-city/assembly/political_activity_expenses.json";
+import yokohamaTrips from "../../../data/reviewed/yokohama-city/assembly/inspection_trips.json";
+import yokohamaAssemblyEvidence from "../../../data/reviewed/yokohama-city/assembly/assembly_evidence_packets.json";
+import yokohamaVoteEvidence from "../../../data/reviewed/yokohama-city/assembly/proposal_vote_evidence_packets.json";
+import yokohamaExpenseEvidence from "../../../data/reviewed/yokohama-city/assembly/expense_evidence_packets.json";
+import yokohamaTripEvidence from "../../../data/reviewed/yokohama-city/assembly/inspection_evidence_packets.json";
+import yokohamaSources from "../../../data/catalog/yokohama_city_assembly_sources.json";
+
+import kawasakiAssembly from "../../../data/reviewed/kawasaki-city/assembly/assembly_records.json";
+import kawasakiDisclosure from "../../../data/reviewed/kawasaki-city/assembly/disclosure_profiles.json";
+import kawasakiSessions from "../../../data/reviewed/kawasaki-city/assembly/sessions.json";
+import kawasakiProposals from "../../../data/reviewed/kawasaki-city/assembly/proposals.json";
+import kawasakiVotes from "../../../data/reviewed/kawasaki-city/assembly/votes.json";
+import kawasakiFactionVotes from "../../../data/reviewed/kawasaki-city/assembly/faction_votes.json";
+import kawasakiExpenses from "../../../data/reviewed/kawasaki-city/assembly/political_activity_expenses.json";
+import kawasakiTrips from "../../../data/reviewed/kawasaki-city/assembly/inspection_trips.json";
+import kawasakiAssemblyEvidence from "../../../data/reviewed/kawasaki-city/assembly/assembly_evidence_packets.json";
+import kawasakiVoteEvidence from "../../../data/reviewed/kawasaki-city/assembly/proposal_vote_evidence_packets.json";
+import kawasakiExpenseEvidence from "../../../data/reviewed/kawasaki-city/assembly/expense_evidence_packets.json";
+import kawasakiTripEvidence from "../../../data/reviewed/kawasaki-city/assembly/inspection_evidence_packets.json";
+import kawasakiSources from "../../../data/catalog/kawasaki_city_assembly_sources.json";
+
+export type AssemblySlug = "osaka-prefecture" | "osaka-city" | "sakai-city" | "hokkaido-prefecture" | "sapporo-city" | "asahikawa-city" | "fukuoka-prefecture" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city" | "kanagawa-prefecture" | "yokohama-city" | "kawasaki-city";
 export type Assembly = {
   id: string; name: string; seat_count: number;
   term_start: string; term_end: string;
@@ -305,12 +349,31 @@ export const assemblies: Record<AssemblySlug, Registry> = {
     [...toyotaAssemblyEvidence, ...toyotaVoteEvidence, ...toyotaExpenseEvidence, ...toyotaTripEvidence],
     toyotaSources.records,
   ),
+  "kanagawa-prefecture": registry(
+    kanagawaAssembly, kanagawaDisclosure, kanagawaSessions, kanagawaProposals, kanagawaVotes,
+    kanagawaFactionVotes, kanagawaExpenses, kanagawaTrips,
+    [...kanagawaAssemblyEvidence, ...kanagawaVoteEvidence, ...kanagawaExpenseEvidence, ...kanagawaTripEvidence],
+    kanagawaSources.records,
+  ),
+  "yokohama-city": registry(
+    yokohamaAssembly, yokohamaDisclosure, yokohamaSessions, yokohamaProposals, yokohamaVotes,
+    yokohamaFactionVotes, yokohamaExpenses, yokohamaTrips,
+    [...yokohamaAssemblyEvidence, ...yokohamaVoteEvidence, ...yokohamaExpenseEvidence, ...yokohamaTripEvidence],
+    yokohamaSources.records,
+  ),
+  "kawasaki-city": registry(
+    kawasakiAssembly, kawasakiDisclosure, kawasakiSessions, kawasakiProposals, kawasakiVotes,
+    kawasakiFactionVotes, kawasakiExpenses, kawasakiTrips,
+    [...kawasakiAssemblyEvidence, ...kawasakiVoteEvidence, ...kawasakiExpenseEvidence, ...kawasakiTripEvidence],
+    kawasakiSources.records,
+  ),
 };
 export const assemblySlugs: AssemblySlug[] = [
   "osaka-prefecture", "osaka-city", "sakai-city",
   "hokkaido-prefecture", "sapporo-city", "asahikawa-city",
   "fukuoka-prefecture", "fukuoka-city", "kitakyushu-city",
   "aichi-prefecture", "nagoya-city", "toyota-city",
+  "kanagawa-prefecture", "yokohama-city", "kawasaki-city",
 ];
 export function isAssemblySlug(slug: string): slug is AssemblySlug {
   return Object.prototype.hasOwnProperty.call(assemblies, slug);
