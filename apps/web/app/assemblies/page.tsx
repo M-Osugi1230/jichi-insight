@@ -8,7 +8,7 @@ import styles from "./assembly.module.css";
 
 export const metadata: Metadata = {
   title: "議会アカウンタビリティ｜12議会の議案・表決・政務活動費・視察",
-  description: "北海道3議会、大阪3議会、福岡3議会と愛知3議会の公式資料と情報公開状況を確認します。議員スコアや活動量ランキングは作りません。",
+  description: "北海道3議会、大阪府議会・大阪市会・堺市議会、福岡3議会と愛知3議会の公式資料と情報公開状況を確認します。議員スコアや活動量ランキングは作りません。",
   alternates: { canonical: canonicalFor("/assemblies") },
 };
 const status: Record<string,string> = {
