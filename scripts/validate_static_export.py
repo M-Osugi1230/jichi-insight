@@ -504,6 +504,20 @@ def validate_asahikawa_promise_scope() -> list[str]:
     )
 
 
+def validate_yokohama_promise_scope() -> list[str]:
+    """Yokohama has 12 reviewed promises for the current mayor's term."""
+    return validate_promise_section(
+        "yokohama-city", "横浜市・原澤 敦美", "Reviewed 公約原文 12件"
+    )
+
+
+def validate_kawasaki_promise_scope() -> list[str]:
+    """Kawasaki has 13 reviewed promises for the current mayor's term."""
+    return validate_promise_section(
+        "kawasaki-city", "川崎市・福田 紀彦", "Reviewed 公約原文 13件"
+    )
+
+
 
 def osaka_cluster_project_detail_files() -> set[str]:
     """Require each Osaka cluster Reviewed project series to export."""
@@ -739,6 +753,8 @@ def main() -> int:
     failures.extend(validate_hokkaido_promise_scope())
     failures.extend(validate_sapporo_promise_scope())
     failures.extend(validate_asahikawa_promise_scope())
+    failures.extend(validate_yokohama_promise_scope())
+    failures.extend(validate_kawasaki_promise_scope())
     failures.extend(validate_osaka_cluster_sections())
     failures.extend(validate_hokkaido_assembly_scope())
     failures.extend(validate_osaka_assembly_scope())
