@@ -37,7 +37,11 @@ def test_osaka_assembly_records_are_reviewed_and_registry_has_twelve_entries():
     assert "osakaCityAssembly" in REGISTRY
     assert "sakaiAssembly" in REGISTRY
     assert REGISTRY.count('"osaka-prefecture"') >= 2
-    assert len([line for line in REGISTRY.splitlines() if line.strip().startswith('"') and 'registry(' in line]) >= 12
+    registry_entries = [
+        line for line in REGISTRY.splitlines()
+        if line.strip().startswith('"') and "registry(" in line
+    ]
+    assert len(registry_entries) >= 12
     assert '"osaka-prefecture", "osaka-city", "sakai-city"' in REGISTRY
 
 
@@ -126,8 +130,14 @@ def test_osaka_prefecture_page_matches_reviewed_plan_promises_and_project_select
     # The page must follow the actual Osaka plan review: joint Vision, revised March 2023,
     # with annual basic policy and governor-priority projects as its implementation layer.
     accepted = [record for record in plan["records"] if record["decision"] == "accepted"]
-    identity = next(record for record in accepted if record["evidence_role"] == "current_plan_identity")
-    implementation = next(record for record in accepted if record["evidence_role"] == "implementation_layer")
+    identity = next(
+        record for record in accepted
+        if record["evidence_role"] == "current_plan_identity"
+    )
+    implementation = next(
+        record for record in accepted
+        if record["evidence_role"] == "implementation_layer"
+    )
     assert "副首都ビジョン" in identity["statement"]
     assert "2023年3月の改定版" in identity["statement"]
     assert "府政運営の基本方針" in implementation["statement"]
