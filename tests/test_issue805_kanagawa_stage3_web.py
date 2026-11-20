@@ -28,7 +28,7 @@ def test_yokohama_and_kawasaki_current_mayor_terms_and_promises_are_registered()
         ("141003", "yokohama-city", "原澤 敦美", "2026-10-18", "2030-10-17", 12),
         ("141305", "kawasaki-city", "福田 紀彦", "2025-11-19", "2029-11-18", 13),
     )
-    for code, slug, name, start, end, count in expected:
+    for code, _slug, name, start, end, count in expected:
         municipality_id = f"jp-local-{code}"
         matching_terms = [term for term in terms if term["municipality_id"] == municipality_id]
         assert len(matching_terms) == 1
