@@ -70,8 +70,8 @@ export const municipalityMeta: Record<
   },
   "kanagawa-prefecture": {
     name: "神奈川県", type: "都道府県",
-    summary: "新かながわグランドデザイン、2026年度成立後当初予算、3年度の普通会計決算と黒岩祐治知事の現任期を確認します。自治体別ページは準備中です。",
-    status: "財政データ公開", href: null,
+    summary: "新かながわグランドデザイン、2026年度成立後当初予算、2022〜2024年度の普通会計決算、黒岩祐治知事の現任期・公約33件、県議会を確認します。",
+    status: "財政データ公開", href: "/municipalities/kanagawa-prefecture",
     fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
   },
   "kawasaki-city": {

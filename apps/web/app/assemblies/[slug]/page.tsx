@@ -91,7 +91,10 @@ export default async function AssemblyDetailPage({params}:PageProps){
       {slug==="osaka-prefecture" ? <p className={styles.attention}>大阪府議会の賛否は会派別のみ公表され、議員個人別の賛否は公表されていません。請願第36号は第1〜4項と第5項を分けた項目別採決で、項目群によって態度が異なります。令和7年度決算認定関連の18件は閉会中継続審査中であり、確定した決算認定として扱いません。</p> : null}
       {slug==="osaka-city" ? <p className={styles.attention}>大阪市会の賛否は会派別のみ公表されています。政務活動費は会派交付分の収支報告書・領収書がWeb公表されていますが、交付対象議員個人分の収支報告書はWeb公表されず、市会図書室での閲覧のみです。</p> : null}
       {slug==="sakai-city" ? <p className={styles.attention}>堺市議会の会派別賛否は「主な議案」10件のみ公表され、その他の議案の会派別賛否は公表されていません。陳情19件は請願・議案の採決とは別系統の「陳情回答綴」で回答文が公表され、採択・不採択の結論とは扱いません。</p> : null}
-      <p><Link href="/assemblies">9議会の一覧に戻る</Link></p>
+      {slug==="kanagawa-prefecture" ? <p className={styles.attention}>神奈川県議会の賛否は会派別のみ公表され、議員個人別の賛否は公表されていません。凡例に欠席者等（▲）がありますが、登録対象の令和8年第2回定例会では▲は使われていません。欠席者等は備考欄の記載をそのまま扱います。</p> : null}
+      {slug==="yokohama-city" ? <p className={styles.attention}>横浜市会の議員個人別賛否は、議員別賛否表に記載された「委員会報告への賛否」です。請願の賛否は請願内容への賛否ではなく、採択への賛否として登録しています。令和7年度決算関係27件は第4回定例会（2026年10月29日開会）の決算特別委員会で継続審査中です。政務活動費の領収書はWeb公表されず、市会図書室での閲覧のみです。</p> : null}
+      {slug==="kawasaki-city" ? <p className={styles.attention}>川崎市議会は無所属議員5名について個人名の列で賛否を公表しています。会派所属議員の個人別賛否は公表されていません。政務活動費はWeb公開がなく、議会局での閲覧制度のみを登録しています。陳情は委員会で審査され、本会議での表決対象ではありません。</p> : null}
+      <p><Link href="/assemblies">15議会の一覧に戻る</Link></p>
       <nav aria-label="ページ内のセクション">
         <a href="#basic">基本情報</a> ／ <a href="#proposals">会期と議案</a> ／ <a href="#votes">表決</a> ／ <a href="#expenses">政務活動費</a> ／ <a href="#trips">視察</a> ／ <a href="#disclosure">情報公開</a>
       </nav>

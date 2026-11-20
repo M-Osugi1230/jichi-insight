@@ -32,6 +32,9 @@ REQUIRED_FILES = [
     "assemblies/aichi-prefecture/index.html",
     "assemblies/nagoya-city/index.html",
     "assemblies/toyota-city/index.html",
+    "assemblies/kanagawa-prefecture/index.html",
+    "assemblies/yokohama-city/index.html",
+    "assemblies/kawasaki-city/index.html",
     "compare/index.html",
     "corrections/index.html",
     "data-quality/index.html",
@@ -46,6 +49,7 @@ REQUIRED_FILES = [
     "municipalities/tokyo/index.html",
     "municipalities/aichi/index.html",
     "municipalities/aichi-prefecture/index.html",
+    "municipalities/kanagawa-prefecture/index.html",
     "municipalities/osaka/index.html",
     "municipalities/hiroshima/index.html",
     "municipalities/kagawa/index.html",
@@ -477,6 +481,60 @@ def kanagawa_cluster_project_detail_files() -> set[str]:
     return files
 
 
+def validate_kanagawa_prefecture_page() -> list[str]:
+    """Require the dedicated Kanagawa page to expose its own reviewed facts."""
+    path = EXPORT_ROOT / "municipalities/kanagawa-prefecture/index.html"
+    if not path.is_file():
+        return ["Missing dedicated Kanagawa prefecture page."]
+    content = normalized_html(path)
+    required = (
+        "新かながわグランドデザイン",
+        "普通会計決算",
+        "2022〜2024年度",
+        "2026年度",
+        "13プロジェクト",
+        "1億円未満切捨て",
+        "総合計画審議会による二次評価",
+        "黒岩祐治知事",
+        "神奈川県議会",
+    )
+    return [
+        f"Kanagawa prefecture page is missing required copy: {phrase}"
+        for phrase in required if phrase not in content
+    ]
+
+
+def validate_kanagawa_assembly_scope() -> list[str]:
+    """Require the three Kanagawa cluster assembly pages and their distinct caveats."""
+    expected = {
+        "kanagawa-prefecture": (
+            "神奈川県議会の賛否は会派別のみ公表",
+            "▲は使われていません",
+        ),
+        "yokohama-city": (
+            "委員会報告への賛否",
+            "決算関係27件",
+            "市会図書室での閲覧のみ",
+        ),
+        "kawasaki-city": (
+            "無所属議員5名",
+            "議会局での閲覧制度のみ",
+            "陳情は委員会で審査され、本会議での表決対象ではありません",
+        ),
+    }
+    failures: list[str] = []
+    for slug, phrases in expected.items():
+        path = EXPORT_ROOT / "assemblies" / slug / "index.html"
+        if not path.is_file():
+            failures.append(f"Missing Kanagawa cluster assembly page: {slug}")
+            continue
+        content = normalized_html(path)
+        for phrase in phrases:
+            if phrase not in content:
+                failures.append(f"{slug} assembly page is missing required copy: {phrase}")
+    return failures
+
+
 def validate_kanagawa_cluster_sections() -> list[str]:
     """Check Kanagawa cluster project disclosures in the exported index."""
     failures: list[str] = []
@@ -698,8 +756,9 @@ def validate_hokkaido_assembly_scope() -> list[str]:
     if path.is_file():
         content = normalized_html(path)
         for phrase in [
-            "12議会", "大阪府議会", "大阪市会", "堺市議会",
+            "15議会", "大阪府議会", "大阪市会", "堺市議会",
             "北海道議会", "札幌市議会", "旭川市議会",
+            "神奈川県議会", "横浜市会", "川崎市議会",
         ]:
             if phrase not in content:
                 failures.append(f"assemblies/index.html missing {phrase}")
@@ -817,6 +876,8 @@ def main() -> int:
     failures.extend(validate_kawasaki_promise_scope())
     failures.extend(validate_osaka_cluster_sections())
     failures.extend(validate_kanagawa_cluster_sections())
+    failures.extend(validate_kanagawa_prefecture_page())
+    failures.extend(validate_kanagawa_assembly_scope())
     failures.extend(validate_hokkaido_assembly_scope())
     failures.extend(validate_osaka_assembly_scope())
 
