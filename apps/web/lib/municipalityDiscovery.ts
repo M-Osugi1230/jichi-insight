@@ -6,6 +6,7 @@ import osakaSettlementRecords from "../../../data/reviewed/osaka-prefecture/sett
 import { assemblies, isAssemblySlug } from "@/lib/assemblyRegistry";
 import { aichiFinance } from "@/lib/aichiFinance";
 import { hokkaidoFinance } from "@/lib/hokkaidoFinance";
+import { kanagawaFinance } from "@/lib/kanagawaFinance";
 import { currentExecutiveTerms, promiseRecords } from "@/lib/executives";
 import { fukuokaPrefectureFinance } from "@/lib/finance";
 import { fukuokaCityFinance } from "@/lib/fukuokaCityFinance";
@@ -55,8 +56,16 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
       project.review_status === "reviewed" &&
       project.municipality_id === kanagawaMunicipality.id,
     );
-    // Stage-two project registration does not activate finance, promises or assembly.
-    return { key: "kanagawa-prefecture", finance: false, promises: false, assembly: false, projects: hasProjects };
+    const hasFinance = kanagawaFinance.records.some((record) =>
+      record.municipality_id === kanagawaMunicipality.id &&
+      record.review_status === "reviewed" &&
+      ((record.stage === "initial_budget" && record.account_type === "general" && record.fiscal_year === 2026) ||
+        (record.stage === "settlement" && record.account_type === "ordinary" && [2022, 2023, 2024].includes(record.fiscal_year))),
+    );
+    const hasPromises = hasReviewedExecutivePromises(kanagawaMunicipality.id);
+    const hasAssembly = assemblies["kanagawa-prefecture"].assembly.review_status === "reviewed" &&
+      assemblies["kanagawa-prefecture"].disclosure.review_status === "reviewed";
+    return { key: "kanagawa-prefecture", finance: hasFinance, promises: hasPromises, assembly: hasAssembly, projects: hasProjects };
   }
 
   if (!matched && officialCode === yokohamaMunicipality.official_code &&
