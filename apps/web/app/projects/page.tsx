@@ -66,8 +66,8 @@ export default function ProjectsPage() {
               <p className={styles.meta}>選定方法：{(typeof area.selection.selection_rule === "string" ? area.selection.selection_rule : area.selection.selection_rule?.description) ?? "選定規則未収録"}</p>
               <p className={styles.meta}>選定カタログ更新：{area.selection.updated_at ?? "未収録"}。選定・除外理由は Reviewed 選定カタログで管理しています。</p>
               {key === "kanagawa-prefecture" ? <p className={styles.meta}>金額は評価報告書「プロジェクト事業費」の億円単位の公表値（1億円未満切捨て）を円換算したものです。千円単位の内訳・プロジェクト単位の決算額・執行額は公表されていません。</p> : null}
-              {key === "yokohama-city" ? <p className={styles.meta}>登録単位：施策群。横浜市中期計画の33施策群から選定した10件であり、個別事業ではありません。施策群単位の金額・公式評価は公表されていません。</p> : null}
-              {key === "kawasaki-city" ? <p className={styles.meta}>第4期実施計画の事務事業から選定した10件です。第4期事業に対応する事業別当初予算額・公式評価は現時点で公表されていません。</p> : null}
+              {key === "yokohama-city" ? <p className={styles.meta}>登録単位：施策群。横浜市中期計画の33施策群から選定した10件であり、個別事業ではありません。施策群単位の金額・公式評価は公表されていないため、金額は未登録です。施策群単位の公式評価も未公表です。</p> : null}
+              {key === "kawasaki-city" ? <p className={styles.meta}>第4期実施計画の事務事業から選定した10件です。第4期実施計画に対応する事業別当初予算額は公表されていないため、金額は未登録です。第4期の公式評価は未登録（未公表）です。</p> : null}
               {key === "nagoya-city" ? <p className={styles.meta}>金額は予算案段階の「予定額」であり、成立後の事業別予算額ではありません。</p> : null}
               {key === "aichi-prefecture" ? <p className={styles.meta}>FY2026 当初予算額は、億円単位で公表された概数です。公式評価の A〜E は愛知県の判定をそのまま表示します。</p> : null}
               {key === "toyota-city" ? <p className={styles.meta}>事業単位の公式評価は公表されていません。目標・施策単位の叙述を事業評価として扱いません。</p> : null}
