@@ -154,10 +154,17 @@ BASE_PAGE_REQUIREMENTS: dict[str, list[str]] = {
         "まだ登録・評価していないこと",
     ],
     "projects/index.html": [
-        "12自治体の Reviewed 事業レコード",
+        "15自治体の Reviewed 事業レコード",
         "北海道｜登録事業",
         "札幌市｜登録事業",
         "旭川市｜登録事業",
+        "神奈川県｜登録事業",
+        "横浜市｜登録事業",
+        "川崎市｜登録事業",
+        "億円単位の公表値",
+        "登録単位：施策群",
+        "施策群単位の金額は公表していない",
+        "第4期実施計画に対応する事業別当初予算額",
         "基本評価調書の「予算額」",
         "当初予算ベース",
         "決算額ではありません",
@@ -458,6 +465,58 @@ def normalized_html(path: Path) -> str:
     return re.sub(r"<!--.*?-->", "", content, flags=re.DOTALL)
 
 
+def kanagawa_cluster_project_detail_files() -> set[str]:
+    """Require each Kanagawa cluster Reviewed project series to export."""
+    files: set[str] = set()
+    for slug in ("kanagawa-prefecture", "yokohama-city", "kawasaki-city"):
+        records = load_json(ROOT / "data" / "reviewed" / slug / "projects.json")
+        for series in {
+            item["series_id"] for item in records if item["review_status"] == "reviewed"
+        }:
+            files.add(f"projects/{slug}/{series}/index.html")
+    return files
+
+
+def validate_kanagawa_cluster_sections() -> list[str]:
+    """Check Kanagawa cluster project disclosures in the exported index."""
+    failures: list[str] = []
+    path = EXPORT_ROOT / "projects/index.html"
+    if not path.is_file():
+        return failures
+
+    content = normalized_html(path)
+    expected = (
+        ("kanagawa-prefecture", "神奈川県", "億円単位の公表値"),
+        ("yokohama-city", "横浜市", "登録単位：施策群"),
+        ("kawasaki-city", "川崎市", "第4期実施計画"),
+    )
+    for slug, name, disclosure in expected:
+        match = re.search(
+            rf'<section\b(?=[^>]*\bid="{re.escape(slug)}")[^>]*>(.*?)</section>',
+            content,
+            flags=re.DOTALL,
+        )
+        if match is None:
+            failures.append(f"projects index is missing the {slug} section")
+            continue
+        section = match.group(1)
+        if f"{name}｜登録事業" not in section:
+            failures.append(f"projects index {slug} section is missing its heading")
+        if disclosure not in section:
+            failures.append(f"projects index {slug} section is missing disclosure: {disclosure}")
+
+    for phrase in (
+        "施策群単位の金額は公表していない",
+        "施策群単位の公式評価",
+        "第4期実施計画に対応する事業別当初予算額",
+        "公式評価は未登録",
+        "金額は未登録",
+    ):
+        if phrase not in content:
+            failures.append(f"projects index is missing Kanagawa cluster disclosure: {phrase}")
+    return failures
+
+
 def validate_promise_section(
     slug: str, heading: str, status: str
 ) -> list[str]:
@@ -707,6 +766,7 @@ def main() -> int:
         | published_required_files()
         | hokkaido_cluster_project_detail_files()
         | osaka_cluster_project_detail_files()
+        | kanagawa_cluster_project_detail_files()
         | {"municipalities/osaka-prefecture/index.html"}
         | {
             f"assemblies/{slug}/index.html"
@@ -756,6 +816,7 @@ def main() -> int:
     failures.extend(validate_yokohama_promise_scope())
     failures.extend(validate_kawasaki_promise_scope())
     failures.extend(validate_osaka_cluster_sections())
+    failures.extend(validate_kanagawa_cluster_sections())
     failures.extend(validate_hokkaido_assembly_scope())
     failures.extend(validate_osaka_assembly_scope())
 
