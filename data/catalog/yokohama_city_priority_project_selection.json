@@ -1,0 +1,440 @@
+{
+  "issue": 793,
+  "municipality_id": "jp-local-141003",
+  "municipality_key": "yokohama-city",
+  "population": {
+    "description": "横浜市中期計画2026～2029（2026年6月5日に市会で附帯意見を付し可決）の政策群―施策群―事業体系を母集団とした。計画の総合的な取組は14の政策群と33の施策群で構成され、施策群ごとに施策指標（現状値・2029目標）と主管局が設定されているため、登録単位は施策群とした。個別事業の単位ではKPIも公式評価も金額も付かない。施策群単位の金額は当初予算で公表されていないため、全件で金額を未登録（null）とし、理由を明記した。",
+    "fiscal_year": 2026,
+    "measure_group_count": 33,
+    "measure_groups": [
+      {
+        "name": "防犯、歩行者の安心・安全",
+        "number": 1,
+        "policy_group": "政策群01「毎日の安心・安全」"
+      },
+      {
+        "name": "インフラ施設の安全確保",
+        "number": 2,
+        "policy_group": "政策群01「毎日の安心・安全」"
+      },
+      {
+        "name": "地震防災対策",
+        "number": 3,
+        "policy_group": "政策群02「防災・減災」"
+      },
+      {
+        "name": "風水害対策",
+        "number": 4,
+        "policy_group": "政策群02「防災・減災」"
+      },
+      {
+        "name": "医療・救急・保健",
+        "number": 5,
+        "policy_group": "政策群03「医療・保健」"
+      },
+      {
+        "name": "子育て支援",
+        "number": 6,
+        "policy_group": "政策群04「こども・子育て」"
+      },
+      {
+        "name": "保育・幼児教育",
+        "number": 7,
+        "policy_group": "政策群04「こども・子育て」"
+      },
+      {
+        "name": "こどもの体験機会づくりと居場所の充実",
+        "number": 8,
+        "policy_group": "政策群04「こども・子育て」"
+      },
+      {
+        "name": "困難な状況にあるこども・家庭への支援",
+        "number": 9,
+        "policy_group": "政策群04「こども・子育て」"
+      },
+      {
+        "name": "教育環境の整備（ソフト・ハード）",
+        "number": 10,
+        "policy_group": "政策群05「教育」"
+      },
+      {
+        "name": "安心して生活できる学びの環境づくり",
+        "number": 11,
+        "policy_group": "政策群05「教育」"
+      },
+      {
+        "name": "学力の向上",
+        "number": 12,
+        "policy_group": "政策群05「教育」"
+      },
+      {
+        "name": "教職員",
+        "number": 13,
+        "policy_group": "政策群05「教育」"
+      },
+      {
+        "name": "高齢者支援",
+        "number": 14,
+        "policy_group": "政策群06「高齢・長寿」"
+      },
+      {
+        "name": "障害児・者支援",
+        "number": 15,
+        "policy_group": "政策群07「障害児・者」"
+      },
+      {
+        "name": "地域の生活環境",
+        "number": 16,
+        "policy_group": "政策群08「暮らし・コミュニティ」"
+      },
+      {
+        "name": "学び・交流を支える地域の情報拠点",
+        "number": 17,
+        "policy_group": "政策群08「暮らし・コミュニティ」"
+      },
+      {
+        "name": "多文化共生",
+        "number": 18,
+        "policy_group": "政策群08「暮らし・コミュニティ」"
+      },
+      {
+        "name": "困難を抱えた人の支援",
+        "number": 19,
+        "policy_group": "政策群08「暮らし・コミュニティ」"
+      },
+      {
+        "name": "市民の移動手段の確保",
+        "number": 20,
+        "policy_group": "政策群09「交通」"
+      },
+      {
+        "name": "観光・MICE",
+        "number": 21,
+        "policy_group": "政策群10「にぎわい・スポーツ・文化」"
+      },
+      {
+        "name": "スポーツ",
+        "number": 22,
+        "policy_group": "政策群10「にぎわい・スポーツ・文化」"
+      },
+      {
+        "name": "文化芸術",
+        "number": 23,
+        "policy_group": "政策群10「にぎわい・スポーツ・文化」"
+      },
+      {
+        "name": "経済成長",
+        "number": 24,
+        "policy_group": "政策群11「産業」"
+      },
+      {
+        "name": "地域産業",
+        "number": 25,
+        "policy_group": "政策群11「産業」"
+      },
+      {
+        "name": "都心部・臨海部のまちづくり",
+        "number": 26,
+        "policy_group": "政策群12「まちづくり」"
+      },
+      {
+        "name": "郊外部のまちづくり",
+        "number": 27,
+        "policy_group": "政策群12「まちづくり」"
+      },
+      {
+        "name": "カーボンニュートラル",
+        "number": 28,
+        "policy_group": "政策群13「環境との共生」"
+      },
+      {
+        "name": "横浜グリーンエクスポ",
+        "number": 29,
+        "policy_group": "政策群13「環境との共生」"
+      },
+      {
+        "name": "循環型社会に向けた取組",
+        "number": 30,
+        "policy_group": "政策群13「環境との共生」"
+      },
+      {
+        "name": "公園・動物園",
+        "number": 31,
+        "policy_group": "政策群14「みどり」"
+      },
+      {
+        "name": "都市農業",
+        "number": 32,
+        "policy_group": "政策群14「みどり」"
+      },
+      {
+        "name": "みどりの保全と創出",
+        "number": 33,
+        "policy_group": "政策群14「みどり」"
+      }
+    ],
+    "policy_group_count": 14
+  },
+  "review_status": "reviewed",
+  "scope": "expanded",
+  "selection_rule": {
+    "description": "14政策群を計画書の公式掲載順に巡回し、各政策群の先頭の施策群を1件ずつ、10件に達するまで選定した。政策群01〜10の先頭の施策群が選定対象となり、政策群11以降は巡回の途中で10件に達したため対象外となった。金額の大小では選んでいない（施策群単位の金額は公表されていないため、金額順の選定はできない）。",
+    "pillars": [
+      "政策群01「毎日の安心・安全」",
+      "政策群02「防災・減災」",
+      "政策群03「医療・保健」",
+      "政策群04「こども・子育て」",
+      "政策群05「教育」",
+      "政策群06「高齢・長寿」",
+      "政策群07「障害児・者」",
+      "政策群08「暮らし・コミュニティ」",
+      "政策群09「交通」",
+      "政策群10「にぎわい・スポーツ・文化」",
+      "政策群11「産業」",
+      "政策群12「まちづくり」",
+      "政策群13「環境との共生」",
+      "政策群14「みどり」"
+    ]
+  },
+  "selections": [
+    {
+      "measure_group_number": 1,
+      "official_title": "防犯、歩行者の安心・安全",
+      "pillar": "政策群01「毎日の安心・安全」",
+      "project_id": "jp-local-141003-project-2026-crime-prevention-pedestrian-safety",
+      "selection_basis": "政策群01「毎日の安心・安全」の掲載順1番目の施策群（施策群1）。14政策群を公式掲載順に巡回し、各政策群の先頭の施策群を選ぶ規則により選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-141003-project-series-crime-prevention-pedestrian-safety",
+      "source_ids": [
+        "yokohama-city-medium-term-plan-2026-2029-chapter4-pdf",
+        "yokohama-city-medium-term-plan-2026-2029-page"
+      ]
+    },
+    {
+      "measure_group_number": 3,
+      "official_title": "地震防災対策",
+      "pillar": "政策群02「防災・減災」",
+      "project_id": "jp-local-141003-project-2026-earthquake-disaster-prevention",
+      "selection_basis": "政策群02「防災・減災」の掲載順1番目の施策群（施策群3）。14政策群を公式掲載順に巡回し、各政策群の先頭の施策群を選ぶ規則により選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-141003-project-series-earthquake-disaster-prevention",
+      "source_ids": [
+        "yokohama-city-medium-term-plan-2026-2029-chapter4-pdf",
+        "yokohama-city-medium-term-plan-2026-2029-page"
+      ]
+    },
+    {
+      "measure_group_number": 5,
+      "official_title": "医療・救急・保健",
+      "pillar": "政策群03「医療・保健」",
+      "project_id": "jp-local-141003-project-2026-medical-emergency-health",
+      "selection_basis": "政策群03「医療・保健」の掲載順1番目の施策群（施策群5）。14政策群を公式掲載順に巡回し、各政策群の先頭の施策群を選ぶ規則により選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-141003-project-series-medical-emergency-health",
+      "source_ids": [
+        "yokohama-city-medium-term-plan-2026-2029-chapter4-pdf",
+        "yokohama-city-medium-term-plan-2026-2029-page"
+      ]
+    },
+    {
+      "measure_group_number": 6,
+      "official_title": "子育て支援",
+      "pillar": "政策群04「こども・子育て」",
+      "project_id": "jp-local-141003-project-2026-childcare-support",
+      "selection_basis": "政策群04「こども・子育て」の掲載順1番目の施策群（施策群6）。14政策群を公式掲載順に巡回し、各政策群の先頭の施策群を選ぶ規則により選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-141003-project-series-childcare-support",
+      "source_ids": [
+        "yokohama-city-medium-term-plan-2026-2029-chapter4-pdf",
+        "yokohama-city-medium-term-plan-2026-2029-page"
+      ]
+    },
+    {
+      "measure_group_number": 10,
+      "official_title": "教育環境の整備（ソフト・ハード）",
+      "pillar": "政策群05「教育」",
+      "project_id": "jp-local-141003-project-2026-education-environment",
+      "selection_basis": "政策群05「教育」の掲載順1番目の施策群（施策群10）。14政策群を公式掲載順に巡回し、各政策群の先頭の施策群を選ぶ規則により選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-141003-project-series-education-environment",
+      "source_ids": [
+        "yokohama-city-medium-term-plan-2026-2029-chapter4-pdf",
+        "yokohama-city-medium-term-plan-2026-2029-page"
+      ]
+    },
+    {
+      "measure_group_number": 14,
+      "official_title": "高齢者支援",
+      "pillar": "政策群06「高齢・長寿」",
+      "project_id": "jp-local-141003-project-2026-elderly-support",
+      "selection_basis": "政策群06「高齢・長寿」の掲載順1番目の施策群（施策群14）。14政策群を公式掲載順に巡回し、各政策群の先頭の施策群を選ぶ規則により選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-141003-project-series-elderly-support",
+      "source_ids": [
+        "yokohama-city-medium-term-plan-2026-2029-chapter4-pdf",
+        "yokohama-city-medium-term-plan-2026-2029-page"
+      ]
+    },
+    {
+      "measure_group_number": 15,
+      "official_title": "障害児・者支援",
+      "pillar": "政策群07「障害児・者」",
+      "project_id": "jp-local-141003-project-2026-disability-support",
+      "selection_basis": "政策群07「障害児・者」の掲載順1番目の施策群（施策群15）。14政策群を公式掲載順に巡回し、各政策群の先頭の施策群を選ぶ規則により選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-141003-project-series-disability-support",
+      "source_ids": [
+        "yokohama-city-medium-term-plan-2026-2029-chapter4-pdf",
+        "yokohama-city-medium-term-plan-2026-2029-page"
+      ]
+    },
+    {
+      "measure_group_number": 16,
+      "official_title": "地域の生活環境",
+      "pillar": "政策群08「暮らし・コミュニティ」",
+      "project_id": "jp-local-141003-project-2026-community-living-environment",
+      "selection_basis": "政策群08「暮らし・コミュニティ」の掲載順1番目の施策群（施策群16）。14政策群を公式掲載順に巡回し、各政策群の先頭の施策群を選ぶ規則により選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-141003-project-series-community-living-environment",
+      "source_ids": [
+        "yokohama-city-medium-term-plan-2026-2029-chapter4-pdf",
+        "yokohama-city-medium-term-plan-2026-2029-page"
+      ]
+    },
+    {
+      "measure_group_number": 20,
+      "official_title": "市民の移動手段の確保",
+      "pillar": "政策群09「交通」",
+      "project_id": "jp-local-141003-project-2026-citizen-mobility",
+      "selection_basis": "政策群09「交通」の掲載順1番目の施策群（施策群20）。14政策群を公式掲載順に巡回し、各政策群の先頭の施策群を選ぶ規則により選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-141003-project-series-citizen-mobility",
+      "source_ids": [
+        "yokohama-city-medium-term-plan-2026-2029-chapter4-pdf",
+        "yokohama-city-medium-term-plan-2026-2029-page"
+      ]
+    },
+    {
+      "measure_group_number": 21,
+      "official_title": "観光・MICE",
+      "pillar": "政策群10「にぎわい・スポーツ・文化」",
+      "project_id": "jp-local-141003-project-2026-tourism-mice",
+      "selection_basis": "政策群10「にぎわい・スポーツ・文化」の掲載順1番目の施策群（施策群21）。14政策群を公式掲載順に巡回し、各政策群の先頭の施策群を選ぶ規則により選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-141003-project-series-tourism-mice",
+      "source_ids": [
+        "yokohama-city-medium-term-plan-2026-2029-chapter4-pdf",
+        "yokohama-city-medium-term-plan-2026-2029-page"
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "official_title": "インフラ施設の安全確保",
+      "policy_group": "政策群01「毎日の安心・安全」",
+      "reason": "同一政策群の先頭の施策群を優先する巡回選定のため未選定"
+    },
+    {
+      "official_title": "風水害対策",
+      "policy_group": "政策群02「防災・減災」",
+      "reason": "同一政策群の先頭の施策群を優先する巡回選定のため未選定"
+    },
+    {
+      "official_title": "保育・幼児教育",
+      "policy_group": "政策群04「こども・子育て」",
+      "reason": "同一政策群の先頭の施策群を優先する巡回選定のため未選定"
+    },
+    {
+      "official_title": "こどもの体験機会づくりと居場所の充実",
+      "policy_group": "政策群04「こども・子育て」",
+      "reason": "同一政策群の先頭の施策群を優先する巡回選定のため未選定"
+    },
+    {
+      "official_title": "困難な状況にあるこども・家庭への支援",
+      "policy_group": "政策群04「こども・子育て」",
+      "reason": "同一政策群の先頭の施策群を優先する巡回選定のため未選定"
+    },
+    {
+      "official_title": "安心して生活できる学びの環境づくり",
+      "policy_group": "政策群05「教育」",
+      "reason": "同一政策群の先頭の施策群を優先する巡回選定のため未選定"
+    },
+    {
+      "official_title": "学力の向上",
+      "policy_group": "政策群05「教育」",
+      "reason": "同一政策群の先頭の施策群を優先する巡回選定のため未選定"
+    },
+    {
+      "official_title": "教職員",
+      "policy_group": "政策群05「教育」",
+      "reason": "同一政策群の先頭の施策群を優先する巡回選定のため未選定"
+    },
+    {
+      "official_title": "学び・交流を支える地域の情報拠点",
+      "policy_group": "政策群08「暮らし・コミュニティ」",
+      "reason": "同一政策群の先頭の施策群を優先する巡回選定のため未選定"
+    },
+    {
+      "official_title": "多文化共生",
+      "policy_group": "政策群08「暮らし・コミュニティ」",
+      "reason": "同一政策群の先頭の施策群を優先する巡回選定のため未選定"
+    },
+    {
+      "official_title": "困難を抱えた人の支援",
+      "policy_group": "政策群08「暮らし・コミュニティ」",
+      "reason": "同一政策群の先頭の施策群を優先する巡回選定のため未選定"
+    },
+    {
+      "official_title": "スポーツ",
+      "policy_group": "政策群10「にぎわい・スポーツ・文化」",
+      "reason": "同一政策群の先頭の施策群を優先する巡回選定のため未選定"
+    },
+    {
+      "official_title": "文化芸術",
+      "policy_group": "政策群10「にぎわい・スポーツ・文化」",
+      "reason": "同一政策群の先頭の施策群を優先する巡回選定のため未選定"
+    },
+    {
+      "official_title": "経済成長",
+      "policy_group": "政策群11「産業」",
+      "reason": "巡回選定で10件に達したため未選定"
+    },
+    {
+      "official_title": "地域産業",
+      "policy_group": "政策群11「産業」",
+      "reason": "巡回選定で10件に達したため未選定"
+    },
+    {
+      "official_title": "都心部・臨海部のまちづくり",
+      "policy_group": "政策群12「まちづくり」",
+      "reason": "巡回選定で10件に達したため未選定"
+    },
+    {
+      "official_title": "郊外部のまちづくり",
+      "policy_group": "政策群12「まちづくり」",
+      "reason": "巡回選定で10件に達したため未選定"
+    },
+    {
+      "official_title": "カーボンニュートラル",
+      "policy_group": "政策群13「環境との共生」",
+      "reason": "巡回選定で10件に達したため未選定"
+    },
+    {
+      "official_title": "横浜グリーンエクスポ",
+      "policy_group": "政策群13「環境との共生」",
+      "reason": "巡回選定で10件に達したため未選定"
+    },
+    {
+      "official_title": "循環型社会に向けた取組",
+      "policy_group": "政策群13「環境との共生」",
+      "reason": "巡回選定で10件に達したため未選定"
+    },
+    {
+      "official_title": "公園・動物園",
+      "policy_group": "政策群14「みどり」",
+      "reason": "巡回選定で10件に達したため未選定"
+    },
+    {
+      "official_title": "都市農業",
+      "policy_group": "政策群14「みどり」",
+      "reason": "巡回選定で10件に達したため未選定"
+    },
+    {
+      "official_title": "みどりの保全と創出",
+      "policy_group": "政策群14「みどり」",
+      "reason": "巡回選定で10件に達したため未選定"
+    }
+  ],
+  "updated_at": "2026-11-21",
+  "version": "1.0.0"
+}

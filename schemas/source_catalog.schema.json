@@ -45,7 +45,7 @@
           },
           "municipality_key": {
             "type": "string",
-            "enum": ["fukuoka-prefecture", "fukuoka-city", "kitakyushu-city", "aichi-prefecture", "nagoya-city", "toyota-city", "hokkaido-prefecture", "sapporo-city", "asahikawa-city", "osaka-prefecture", "osaka-city", "sakai-city", "kanagawa-prefecture", "kawasaki-city"]
+            "enum": ["fukuoka-prefecture", "fukuoka-city", "kitakyushu-city", "aichi-prefecture", "nagoya-city", "toyota-city", "hokkaido-prefecture", "sapporo-city", "asahikawa-city", "osaka-prefecture", "osaka-city", "sakai-city", "kanagawa-prefecture", "kawasaki-city", "yokohama-city"]
           },
           "organization": {
             "type": "string",
