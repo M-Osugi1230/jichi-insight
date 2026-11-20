@@ -217,9 +217,21 @@ def test_official_evaluation_gap_is_explicit() -> None:
         # stated in each evidence packet rather than filled by our own
         # judgement.
         assert record["official_evaluation"] is None
-        # Promise links belong to Hokkaido cluster stage 3; none are made
-        # in this stage.
-        assert record["related_promise_ids"] == []
+        # Promise links were registered in Hokkaido cluster stage 3
+        # (Issue #749): the multicultural coexistence project links to
+        # the coexistence-ordinance promise and the GX investment project
+        # to the zero-carbon promise; all other projects stay unlinked.
+        # Exact bidirectional consistency is asserted by
+        # tests/test_issue749_sapporo_promise_registration.py.
+        expected_links = {
+            "jp-local-011002-project-2026-multicultural-coexistence-promotion": [
+                "jp-local-011002-executive-2023-05-02-promise-008"
+            ],
+            "jp-local-011002-project-2026-gx-investment-promotion": [
+                "jp-local-011002-executive-2023-05-02-promise-009"
+            ],
+        }
+        assert record["related_promise_ids"] == expected_links.get(record["id"], [])
     packets = {packet["subject_id"]: packet for packet in load_json(PACKETS_PATH)}
     for packet in packets.values():
         evaluation_claims = [

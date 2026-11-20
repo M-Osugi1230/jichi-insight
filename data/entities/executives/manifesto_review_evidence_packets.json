@@ -242,5 +242,88 @@
       "事業との接続は文言・内容に基づく推定であり、県が公約と事業の公式な対応付けを公表した場合は接続を見直す。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sapporo-city-2023-manifesto-review",
+    "subject_type": "manifesto_review",
+    "subject_id": "manifesto-review-jp-local-011002-2023",
+    "claims": [
+      {
+        "field": "source_location",
+        "statement": "秋元克広候補欄は札幌市長選挙の選挙公報1ページ目右上に掲載され、見出し、政策枠「6つの道標」（6つの柱と箇条書き13項目）、プロフィールで構成される。",
+        "source_ids": [
+          "sapporo-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全1ページ）の右上。",
+        "decision": "accepted",
+        "review_note": "2026-11-20に公式PDFを取得し、候補者欄全体を描画画像で確認した。"
+      },
+      {
+        "field": "segmentation_status",
+        "statement": "資料上の境界（柱・箇条書き）に従い13件へ分割した。見出し文（政治姿勢の表明）、柱の表題（政策の枠組み）とプロフィール（経歴）は公約ではないためレコード化していない。",
+        "source_ids": [
+          "sapporo-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "候補者欄全体。",
+        "decision": "accepted",
+        "review_note": "句読点による推測分割は行っていない（docs/PROMISE_EXTRACTION.md の分割ルール）。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、札幌市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "sapporo-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "札幌市選挙管理委員会の選挙公報ページとPDFに基づく。",
+        "decision": "accepted",
+        "review_note": "公報は出典優先順位の最上位であり、第三者経由の引用ではない。"
+      }
+    ],
+    "open_questions": [
+      "公報より詳細な候補者資料（政策パンフレット等）の安定した所在が特定できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hokkaido-pref-2023-manifesto-review",
+    "subject_type": "manifesto_review",
+    "subject_id": "manifesto-review-jp-local-010006-2023",
+    "claims": [
+      {
+        "field": "source_location",
+        "statement": "鈴木直道候補欄は選挙公報1ページ目上段に掲載され、「鈴木直道の主な基本政策」の3つの柱の下に●印の政策項目15件が配置されている。欄の中央下部には「3つのキーワード」の円の図（7個）、左端には「4年間の主な実績」と略歴、右端には氏名・スローガンと縦書きの決意文が配置されている。",
+        "source_ids": [
+          "hokkaido-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全2ページ）の1ページ目上段。",
+        "decision": "accepted",
+        "review_note": "2026-11-20にPDFを取得し、描画画像で候補者欄の構成を確認した。"
+      },
+      {
+        "field": "segmentation_status",
+        "statement": "●印による原文上の境界が明確なため、●印の項目を単位に15件へ分割した。見出し文・スローガン・決意文・実績・略歴は公約として分割しなかった。「3つのキーワード」の円7個は同じ政策群を図で重ねて述べたものであるため独立レコードにはせず、対応する●項目レコードの extraction_note に円の原文を記録した。",
+        "source_ids": [
+          "hokkaido-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "柱「地域とともにすすめる」2件、柱「北海道の未来をつくる」6件、柱「道民の暮らしをまもる」7件。",
+        "decision": "accepted",
+        "review_note": "円の図と箇条書きの二重計上を避けるための判断であり、円の原文自体は各レコードの extraction_note と本レビューに残している。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は北海道選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。公報PDFは選挙管理委員会の公式ページ「令和5年北海道知事選挙及び北海道議会議員選挙 選挙公報」から、道公式サイト上で直接取得した（第三者が公開するコピーではない）。",
+        "source_ids": [
+          "hokkaido-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "公報の表頭（北海道選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）に基づく。",
+        "decision": "accepted",
+        "review_note": "公式サイトから直接取得した公報そのものであるため confidence は high とする。候補者欄が画像形式である点は、複数解像度での描画照合で担保した。"
+      }
+    ],
+    "open_questions": [
+      "選挙公報より詳細な候補者資料（政策パンフレット等）の安定した所在が特定できれば、登録済みの公約文と照合する。",
+      "事業との接続は文言・内容に基づく推定であり、道が公約と事業の公式な対応付けを公表した場合は接続を見直す。"
+    ],
+    "review_status": "reviewed"
   }
 ]

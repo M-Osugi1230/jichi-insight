@@ -13,7 +13,9 @@ export type MunicipalityKey =
   | "fukuoka-city"
   | "kitakyushu-city"
   | "nagoya-city"
-  | "toyota-city";
+  | "toyota-city"
+  | "sapporo-city"
+  | "asahikawa-city";
 
 export type SourceRecord = {
   id: string;
@@ -48,6 +50,22 @@ export const municipalityMeta: Record<
     status: "財政データ公開",
     href: "/municipalities/hokkaido-prefecture",
     fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
+  },
+  "sapporo-city": {
+    name: "札幌市",
+    type: "政令指定都市",
+    summary: "計画・財政・重点事業に加え、秋元克広市長の任期と Reviewed 公約13件を公式出典で確認します。",
+    status: "財政データ公開",
+    href: "/municipalities/sapporo-city",
+    fiscalSummary: "Reviewed 財政データ（汎用市ページ）",
+  },
+  "asahikawa-city": {
+    name: "旭川市",
+    type: "中核市",
+    summary: "計画・財政・重点事業と今津寛介市長の任期を確認します。公約原文は未登録であり、不存在を意味しません。",
+    status: "財政データ公開",
+    href: "/municipalities/asahikawa-city",
+    fiscalSummary: "Reviewed 財政データ（汎用市ページ）",
   },
   "aichi-prefecture": {
     name: "愛知県",

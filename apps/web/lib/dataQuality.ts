@@ -6,6 +6,7 @@ import policySourceCatalog from "../../../data/catalog/policy_sources.json";
 import { sourceCatalog, type MunicipalityKey } from "./catalog";
 import { aichiFinance } from "./aichiFinance";
 import { hokkaidoFinance } from "./hokkaidoFinance";
+import { loadGenericCityFinance } from "./genericCityFinance";
 import {
   currentExecutiveTerms,
   executiveEvidencePackets,
@@ -36,8 +37,14 @@ export type MunicipalityQuality = {
   status: "reviewed-data" | "indexed-only";
 };
 
+// Generic Phase-15 city fiscal records are counted only if the Reviewed loader accepts them.
+const sapporoFiscal = loadGenericCityFinance("sapporo-city");
+const asahikawaFiscal = loadGenericCityFinance("asahikawa-city");
+
 const municipalityNames: Record<MunicipalityKey, string> = {
   "hokkaido-prefecture": "北海道",
+  "asahikawa-city": "旭川市",
+  "sapporo-city": "札幌市",
   "aichi-prefecture": "愛知県",
   "fukuoka-prefecture": "福岡県",
   "fukuoka-city": "福岡市",
@@ -49,6 +56,8 @@ const municipalityNames: Record<MunicipalityKey, string> = {
 const municipalityKeys = Object.keys(municipalityNames) as MunicipalityKey[];
 const recordsByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFinance.records> = {
   "hokkaido-prefecture": hokkaidoFinance.records,
+  "asahikawa-city": asahikawaFiscal?.records ?? [],
+  "sapporo-city": sapporoFiscal?.records ?? [],
   "aichi-prefecture": aichiFinance.records,
   "fukuoka-prefecture": fukuokaPrefectureFinance.records,
   "fukuoka-city": fukuokaCityFinance.records,
@@ -58,6 +67,8 @@ const recordsByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFin
 };
 const evidenceByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFinance.evidencePackets> = {
   "hokkaido-prefecture": hokkaidoFinance.evidencePackets,
+  "asahikawa-city": asahikawaFiscal?.evidencePackets ?? [],
+  "sapporo-city": sapporoFiscal?.evidencePackets ?? [],
   "aichi-prefecture": aichiFinance.evidencePackets,
   "fukuoka-prefecture": fukuokaPrefectureFinance.evidencePackets,
   "fukuoka-city": fukuokaCityFinance.evidencePackets,
