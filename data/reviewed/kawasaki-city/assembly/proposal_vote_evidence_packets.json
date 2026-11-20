@@ -1,0 +1,5728 @@
+[
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-001",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-001",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-001",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-001",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-002",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-002",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-002",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-002",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-003",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-003",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-003",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-003",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-004",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-004",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-004",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-004",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-005",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-005",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-005",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-005",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-006",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-006",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-006",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-006",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-007",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-007",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-007",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-007",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-008",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-008",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-008",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-008",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "全ての列が賛成であり、会議結果の公式集計でも全会一致の区分に数えられている。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-009",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-009",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-009",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-009",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行と会議結果資料の注記",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian",
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "棚卸し段階では会議結果PDFの注記の対応付けから本議案の反対構成が議案第133号と入れ替わって記録されていたが、議決結果表の実物（座標抽出と描画画像の目視）および会議結果PDFの注記の再読により、日本共産党・川崎・維新・無所属議員5名全員が反対であることを確定した。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-010",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-010",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-010",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-010",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-011",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-011",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-011",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-011",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-012",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-012",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-012",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-012",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "全ての列が賛成であり、会議結果の公式集計でも全会一致の区分に数えられている。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-013",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-013",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-013",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-013",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "全ての列が賛成であり、会議結果の公式集計でも全会一致の区分に数えられている。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-014",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-014",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-014",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-014",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "飯田満議員と三宅隆介議員の欄には「退席」と印字されている。退席は欠席とは別の公表値であり、本登録では position を abstained に対応付けた。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-015",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-015",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "「退席」の印字は欠席とは別の公表値であり、position は abstained に対応付けた。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-015",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-015",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-016",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-016",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-016",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-016",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-017",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-017",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-017",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-017",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "全ての列が賛成であり、会議結果の公式集計でも全会一致の区分に数えられている。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-018",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-018",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-018",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-018",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-019",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-019",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-019",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-019",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-020",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-020",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-020",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-020",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-021",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-021",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-021",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-021",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-022",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-022",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-022",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-022",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-023",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-023",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-023",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-023",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-024",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-024",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-024",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-024",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「同意」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "全ての列が賛成であり、会議結果の公式集計でも全会一致の区分に数えられている。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-025",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-025",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-025",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-025",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「同意」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "全ての列が賛成であり、会議結果の公式集計でも全会一致の区分に数えられている。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-026",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-026",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-026",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-026",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "全ての列が賛成であり、会議結果の公式集計でも全会一致の区分に数えられている。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-027",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-027",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-027",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-027",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行と会議結果資料の注記",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian",
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "棚卸し段階では会議結果PDFの注記の対応付けから本議案の反対構成が議案第115号と入れ替わって記録されていたが、議決結果表の実物（座標抽出と描画画像の目視）および会議結果PDFの注記の再読により、反対は日本共産党のみであることを確定した。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-028",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-028",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-028",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-028",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "全ての列が賛成であり、会議結果の公式集計でも全会一致の区分に数えられている。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-029",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-029",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-029",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-029",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "全ての列が賛成であり、会議結果の公式集計でも全会一致の区分に数えられている。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-030",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-030",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-030",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-030",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "全ての列が賛成であり、会議結果の公式集計でも全会一致の区分に数えられている。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-031",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-031",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-031",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-031",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "全ての列が賛成であり、会議結果の公式集計でも全会一致の区分に数えられている。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-032",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-032",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-032",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-032",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "全ての列が賛成であり、会議結果の公式集計でも全会一致の区分に数えられている。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-033",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-033",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-033",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-033",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "全ての列が賛成であり、会議結果の公式集計でも全会一致の区分に数えられている。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-034",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-034",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-034",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-034",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "全ての列が賛成であり、会議結果の公式集計でも全会一致の区分に数えられている。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-035",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-035",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-035",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-035",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「認定」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "committee_referral",
+        "location_note": "会議結果資料「4 委員会への付託案件数」「7 その他の議事」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "本議案は決算審査特別委員会（令和8年9月11日から10月5日まで開催）に付託され審査された。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-036",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-036",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-036",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-036",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「認定」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "committee_referral",
+        "location_note": "会議結果資料「4 委員会への付託案件数」「7 その他の議事」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "本議案は決算審査特別委員会（令和8年9月11日から10月5日まで開催）に付託され審査された。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-037",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-037",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-037",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-037",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「認定」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "committee_referral",
+        "location_note": "会議結果資料「4 委員会への付託案件数」「7 その他の議事」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "本議案は決算審査特別委員会（令和8年9月11日から10月5日まで開催）に付託され審査された。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "全ての列が賛成であり、会議結果の公式集計でも全会一致の区分に数えられている。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-038",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-038",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-038",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-038",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「認定」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "committee_referral",
+        "location_note": "会議結果資料「4 委員会への付託案件数」「7 その他の議事」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "本議案は決算審査特別委員会（令和8年9月11日から10月5日まで開催）に付託され審査された。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-039",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-039",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-039",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-039",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「認定」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "committee_referral",
+        "location_note": "会議結果資料「4 委員会への付託案件数」「7 その他の議事」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "本議案は決算審査特別委員会（令和8年9月11日から10月5日まで開催）に付託され審査された。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "全ての列が賛成であり、会議結果の公式集計でも全会一致の区分に数えられている。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-040",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-040",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-040",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-040",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「認定」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "committee_referral",
+        "location_note": "会議結果資料「4 委員会への付託案件数」「7 その他の議事」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "本議案は決算審査特別委員会（令和8年9月11日から10月5日まで開催）に付託され審査された。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-041",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-041",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-041",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-041",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「認定」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "committee_referral",
+        "location_note": "会議結果資料「4 委員会への付託案件数」「7 その他の議事」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "本議案は決算審査特別委員会（令和8年9月11日から10月5日まで開催）に付託され審査された。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "全ての列が賛成であり、会議結果の公式集計でも全会一致の区分に数えられている。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-042",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-042",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-042",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-042",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「認定」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "committee_referral",
+        "location_note": "会議結果資料「4 委員会への付託案件数」「7 その他の議事」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "本議案は決算審査特別委員会（令和8年9月11日から10月5日まで開催）に付託され審査された。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-043",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-043",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-043",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-043",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「認定」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "committee_referral",
+        "location_note": "会議結果資料「4 委員会への付託案件数」「7 その他の議事」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "本議案は決算審査特別委員会（令和8年9月11日から10月5日まで開催）に付託され審査された。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-044",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-044",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-044",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-044",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「認定」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "committee_referral",
+        "location_note": "会議結果資料「4 委員会への付託案件数」「7 その他の議事」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "本議案は決算審査特別委員会（令和8年9月11日から10月5日まで開催）に付託され審査された。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "全ての列が賛成であり、会議結果の公式集計でも全会一致の区分に数えられている。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-045",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-045",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-045",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-045",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「認定」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "committee_referral",
+        "location_note": "会議結果資料「4 委員会への付託案件数」「7 その他の議事」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "本議案は決算審査特別委員会（令和8年9月11日から10月5日まで開催）に付託され審査された。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "全ての列が賛成であり、会議結果の公式集計でも全会一致の区分に数えられている。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-046",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-046",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-046",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-046",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「認定」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "committee_referral",
+        "location_note": "会議結果資料「4 委員会への付託案件数」「7 その他の議事」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "本議案は決算審査特別委員会（令和8年9月11日から10月5日まで開催）に付託され審査された。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "全ての列が賛成であり、会議結果の公式集計でも全会一致の区分に数えられている。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-047",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-047",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-047",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-047",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「認定」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "committee_referral",
+        "location_note": "会議結果資料「4 委員会への付託案件数」「7 その他の議事」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "本議案は決算審査特別委員会（令和8年9月11日から10月5日まで開催）に付託され審査された。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-048",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-048",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-048",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-048",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「認定」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "committee_referral",
+        "location_note": "会議結果資料「4 委員会への付託案件数」「7 その他の議事」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "本議案は決算審査特別委員会（令和8年9月11日から10月5日まで開催）に付託され審査された。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "全ての列が賛成であり、会議結果の公式集計でも全会一致の区分に数えられている。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-049",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-049",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-049",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-049",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「認定」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "committee_referral",
+        "location_note": "会議結果資料「4 委員会への付託案件数」「7 その他の議事」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "本議案は決算審査特別委員会（令和8年9月11日から10月5日まで開催）に付託され審査された。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "全ての列が賛成であり、会議結果の公式集計でも全会一致の区分に数えられている。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-050",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-050",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-050",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-050",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決及び認定」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "committee_referral",
+        "location_note": "会議結果資料「4 委員会への付託案件数」「7 その他の議事」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "本議案は決算審査特別委員会（令和8年9月11日から10月5日まで開催）に付託され審査された。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "全ての列が賛成であり、会議結果の公式集計でも全会一致の区分に数えられている。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-051",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-051",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-051",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-051",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決及び認定」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "committee_referral",
+        "location_note": "会議結果資料「4 委員会への付託案件数」「7 その他の議事」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "本議案は決算審査特別委員会（令和8年9月11日から10月5日まで開催）に付託され審査された。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "全ての列が賛成であり、会議結果の公式集計でも全会一致の区分に数えられている。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-052",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-052",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-052",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-052",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「原案可決及び認定」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "committee_referral",
+        "location_note": "会議結果資料「4 委員会への付託案件数」「7 その他の議事」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "本議案は決算審査特別委員会（令和8年9月11日から10月5日まで開催）に付託され審査された。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-053",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-053",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-053",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-053",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「認定」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "committee_referral",
+        "location_note": "会議結果資料「4 委員会への付託案件数」「7 その他の議事」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "本議案は決算審査特別委員会（令和8年9月11日から10月5日まで開催）に付託され審査された。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "全ての列が賛成であり、会議結果の公式集計でも全会一致の区分に数えられている。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-054",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-054",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-054",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-054",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「同意」で、議決日は令和8年8月31日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "committee_referral",
+        "location_note": "会議結果資料「5 委員会への付託を省略した案件」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "本議案は委員会付託を省略し、開会日（8月31日）に議決された。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "全ての列が賛成であり、会議結果の公式集計でも全会一致の区分に数えられている。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-055",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-055",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-055",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-055",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本議案の議決結果は公式公表の印字どおり「同意」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "賛否は議決結果表（市長提出議案）において会派5列と無所属議員5名の個人名列で公表されており、座標ベースの抽出と描画画像の目視で照合した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "committee_referral",
+        "location_note": "会議結果資料「3 本会議に付議された案件数」「5 委員会への付託を省略した案件」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "本議案は当会期の追加議案であり、委員会付託を省略し、閉会日（10月13日）に議決された。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "全ての列が賛成であり、会議結果の公式集計でも全会一致の区分に数えられている。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-056",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-056",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-056",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-056",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "議決結果表（市長提出議案）の末尾の行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian",
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "議案第120号に対する附帯決議案であり、独立の議案番号は公表されていない。結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（市長提出議案）の末尾の行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "議決結果表（市長提出議案）の末尾に本決議案の行が収録され、賛否が会派別・無所属議員個人別に公表されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の末尾の行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "飯田満議員と三宅隆介議員の欄には「退席」と印字されている。退席は欠席とは別の公表値であり、本登録では position を abstained に対応付けた。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-057",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-057",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（市長提出議案）の末尾の行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の末尾の行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（市長提出議案）の末尾の行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-gian"
+        ],
+        "statement": "「退席」の印字は欠席とは別の公表値であり、position は abstained に対応付けた。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-057",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-057",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "議決結果表（修正案）と会議結果資料「6 本会議における議決状況 (2) 修正案」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-shusei",
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "議案第115号に対する修正案（提出者：月本琢也議員ほか4人）であり、独立の議案番号は公表されていない。結果は公式公表の印字どおり「否決」で、議決日は令和8年10月13日である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（修正案）",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-shusei"
+        ],
+        "statement": "賛成は無所属議員5名のみで、全5会派が反対した。賛否は専用の議決結果表（修正案）で公表されている。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-058",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-058",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（修正案）",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-shusei"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（修正案）",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-shusei"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-058",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-058",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本意見書案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。地方自治法第99条に基づく意見書案である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（意見書案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-ikensho"
+        ],
+        "statement": "賛否は議決結果表（意見書案）で会派別・無所属議員個人別に公表されている。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-059",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-059",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（意見書案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-ikensho"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（意見書案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-ikensho"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-059",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-059",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本意見書案の議決結果は公式公表の印字どおり「原案可決」で、議決日は令和8年10月13日である。地方自治法第99条に基づく意見書案である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（意見書案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-ikensho"
+        ],
+        "statement": "賛否は議決結果表（意見書案）で会派別・無所属議員個人別に公表されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料「6 本会議における議決状況 (4) 法99条の意見書」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "会議結果の公式注記では反対は「自民党15人及び川崎・維新5人」とされており、自由民主党の表決者が名簿上の16人から議長を除く15人であることと整合する。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-060",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-060",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（意見書案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-ikensho"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（意見書案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-ikensho"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-060",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-060",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本意見書案の議決結果は公式公表の印字どおり「否決」で、議決日は令和8年10月13日である。地方自治法第99条に基づく意見書案である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（意見書案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-ikensho"
+        ],
+        "statement": "賛否は議決結果表（意見書案）で会派別・無所属議員個人別に公表されている。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-061",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-061",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（意見書案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-ikensho"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（意見書案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-ikensho"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-061",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-061",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本意見書案の議決結果は公式公表の印字どおり「否決」で、議決日は令和8年10月13日である。地方自治法第99条に基づく意見書案である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（意見書案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-ikensho"
+        ],
+        "statement": "賛否は議決結果表（意見書案）で会派別・無所属議員個人別に公表されている。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-062",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-062",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（意見書案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-ikensho"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（意見書案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-ikensho"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-062",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-062",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本意見書案の議決結果は公式公表の印字どおり「否決」で、議決日は令和8年10月13日である。地方自治法第99条に基づく意見書案である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_votes",
+        "location_note": "議決結果表（意見書案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-ikensho"
+        ],
+        "statement": "賛否は議決結果表（意見書案）で会派別・無所属議員個人別に公表されている。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-063",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-063",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（意見書案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-ikensho"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（意見書案）の当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-ikensho"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-063",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-063",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "議決結果表（請願）と会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-seigan",
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "本請願は令和8年10月13日の本会議で不採択と議決された。議決結果表の賛否は請願の「採択」に対する賛否であり、賛成は日本共産党のみである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "submitted_at",
+        "location_note": "請願の受理・審査結果（031から040）の請願第40号の行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-petitions-031-040"
+        ],
+        "statement": "受理日は令和8年6月3日で、前会期に健康福祉委員会へ付託され、令和8年7月30日の委員会審査で不採択とされた。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-064",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-064",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "method",
+        "location_note": "議決結果表（請願）",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-seigan"
+        ],
+        "statement": "採決方法（起立・投票等）は公表資料に明記がないため method は unknown とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "totals",
+        "location_note": "会議結果資料「6 本会議における議決状況」",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd"
+        ],
+        "statement": "投票総数は、欠席・退席と議長の表決不参加を名簿ベースでは確定できないため登録していない（totals は null）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_votes",
+        "location_note": "議決結果表（請願）",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-votes-2026-seigan"
+        ],
+        "statement": "無所属議員5名については個人名の列で賛否が公表されているため member_votes に登録した。会派所属議員の個人別の賛否は公表されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "member_count",
+        "location_note": "会議結果資料の意見書案第15号の注記および委員会別議員名簿",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-pdf-2026-3rd",
+          "kawasaki-city-assembly-members-by-committee"
+        ],
+        "statement": "議長（原典之議員・自由民主党）は地方自治法第116条第2項により表決に加わらない。会派別賛否の member_count は名簿上の会派人数であり、自由民主党の表決者は15人となる。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-vote-2026-064",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-vote-2026-064",
+    "subject_type": "vote"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "市長からの報告案件であり、本会議での表決は行われないため outcome は not_assessable とし、議決日は登録しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "decided_at",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "報告本文には「令和8年8月31日提出」の印字があるが、会議結果資料に本会議での報告日は明記されていないため、提出日・議決日はいずれも登録しない。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-065",
+    "open_questions": [
+      "個別の報告日は会議結果資料に明記がなく未確認である。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-065",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "市長からの報告案件であり、本会議での表決は行われないため outcome は not_assessable とし、議決日は登録しない。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-066",
+    "open_questions": [
+      "個別の報告日は会議結果資料に明記がなく未確認である。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-066",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "市長からの報告案件であり、本会議での表決は行われないため outcome は not_assessable とし、議決日は登録しない。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-067",
+    "open_questions": [
+      "個別の報告日は会議結果資料に明記がなく未確認である。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-067",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "市長からの報告案件であり、本会議での表決は行われないため outcome は not_assessable とし、議決日は登録しない。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-068",
+    "open_questions": [
+      "個別の報告日は会議結果資料に明記がなく未確認である。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-068",
+    "subject_type": "proposal"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "outcome",
+        "location_note": "会議結果ページの当該行",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-assembly-results-2026-3rd"
+        ],
+        "statement": "市長からの報告案件であり、本会議での表決は行われないため outcome は not_assessable とし、議決日は登録しない。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023-proposal-2026-069",
+    "open_questions": [
+      "個別の報告日は会議結果資料に明記がなく未確認である。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023-proposal-2026-069",
+    "subject_type": "proposal"
+  }
+]
