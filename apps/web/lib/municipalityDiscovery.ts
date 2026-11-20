@@ -1,3 +1,5 @@
+import osakaMunicipality from "../../../data/reviewed/osaka-prefecture/municipality.json";
+import osakaSettlementRecords from "../../../data/reviewed/osaka-prefecture/settlement_records.json";
 import { assemblies, isAssemblySlug } from "@/lib/assemblyRegistry";
 import { aichiFinance } from "@/lib/aichiFinance";
 import { hokkaidoFinance } from "@/lib/hokkaidoFinance";
@@ -56,6 +58,31 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
       ),
     );
     return { key: "hokkaido-prefecture", finance: hasReviewedSettlement, promises: hasPromises, assembly: false, projects: hasProjects };
+  }
+
+
+  if (!matched && officialCode === osakaMunicipality.official_code &&
+    osakaMunicipality.data_status === "reviewed") {
+    const hasFinance = osakaSettlementRecords.some((record) =>
+      record.municipality_id === osakaMunicipality.id &&
+      record.review_status === "reviewed" &&
+      record.stage === "settlement" &&
+      record.account_type === "ordinary",
+    );
+    const hasProjects = projectRegistry["osaka-prefecture"].projects.some((project) =>
+      project.municipality_id === osakaMunicipality.id &&
+      project.review_status === "reviewed",
+    );
+    const hasPromises = currentExecutiveTerms.some((term) =>
+      term.municipality_id === osakaMunicipality.id &&
+      (term.review_status === "reviewed" || term.review_status === "verified") &&
+      promiseRecords.some((promise) =>
+        promise.executive_term_id === term.id &&
+        promise.municipality_id === osakaMunicipality.id &&
+        (promise.review_status === "reviewed" || promise.review_status === "verified"),
+      ),
+    );
+    return { key: "osaka-prefecture", finance: hasFinance, promises: hasPromises, assembly: false, projects: hasProjects };
   }
 
   if (!matched && officialCode === aichiFinance.municipality.official_code &&
