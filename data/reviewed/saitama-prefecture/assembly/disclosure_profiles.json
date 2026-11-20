@@ -1,0 +1,102 @@
+[
+ {
+  "as_of": "2026-11-21",
+  "assembly_id": "jp-local-110001-assembly-2023",
+  "confidence": "high",
+  "id": "jp-local-110001-assembly-2023-disclosure-2026",
+  "items": [
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_roster",
+    "note": "議員名簿・会派別議員名簿を県議会公式サイトで公開。2026年9月24日掲載の現員は84人（定数93人・欠員9人）。無所属議員3名（小谷野五雄・諸井真英・高木功介）を含む。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_composition",
+    "note": "会派別議員名簿で8会派の構成を公開。表決状況確認時の人数は埼玉県議会自由民主党議員団50人・埼玉民主フォーラム11人・埼玉県議会公明党議員団9人・無所属県民会議5人・日本共産党埼玉県議会議員団3人・無所属改革の会1人・無所属保守さくらの会1人・埼玉県市民ネットワーク1人の計81人で、無所属議員3人は会派に属さない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "committee_composition",
+    "note": "常任委員会7・特別委員会7と議会運営委員会が置かれている。委員会の活動は議会記録「閉会中の委員会活動」に掲載される。委員の氏名単位の構成表は本登録では収録していない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "proposals_and_results",
+    "note": "議案一覧ページに番号・件名・要旨・審査結果を掲載。ただし審査結果の表示は人事案件（同意案件）でも一律「原案可決」とされるなど会派別表決状況PDFと異なる場合があり、結果文言は表決状況PDFを正本とする。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_votes",
+    "note": "会派別表決状況PDFで会派別の賛否を公表。ただしPDFの注記どおり、これは採決を行う本会議に先立って開かれる議会運営委員会で確認した態度であり、本会議の投票記録そのものではない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_votes",
+    "note": "無所属議員3名（小谷野五雄・諸井真英・高木功介）のみ個人名の列で賛否が公表されている。会派所属議員の個人別の賛否は公表されておらず、会派単位の態度のみが示される。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "political_activity_expense_reports",
+    "note": "会派単位の収支報告書をWebで公開。令和7年度分は11単位（交付単位の構成は現行会派と異なり、無所属の会・保守無所属の会・青藍会・周山会を含む）。訂正分が提出された単位は訂正分を正本とする。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "political_activity_expense_receipts",
+    "note": "収支報告書と併せて領収書等の写しがWebで公開されている。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "inspection_trip_reports",
+    "note": "委員会視察は議会記録「閉会中の委員会活動」に委員会単位（調査日・調査先・調査の概要）で掲載され、参加議員の氏名・費用は掲載されていない。政務活動費による海外視察は報告書が政務活動費のページに掲載される（令和7年度分は台湾視察2件）。議員派遣は議案として議決される。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "meeting_minutes",
+    "note": "会議録検索システムで会議録を検索・閲覧できる。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "session_broadcast",
+    "note": "本会議及び予算特別委員会の生中継・録画中継を公開している。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "petition_results",
+    "note": "採択された請願は全文とともに定例会概要ページに掲載される。不採択・継続審査となった請願の有無・件名は公式ページでは確認できない。陳情は結論を出さない制度であり、受理された陳情は一覧表を全議員に配布し、写しを各会派に配布するのみである。",
+    "source_url": null
+   }
+  ],
+  "review_status": "reviewed",
+  "sources": [
+   "saitama-pref-assembly-members-2026",
+   "saitama-pref-assembly-votes-2026-9",
+   "saitama-pref-assembly-seimu-index",
+   "saitama-pref-assembly-petition-guide",
+   "saitama-pref-assembly-session-2026-9"
+  ]
+ }
+]
