@@ -74,9 +74,11 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
       project.review_status === "reviewed" &&
       project.municipality_id === yokohamaMunicipality.id,
     );
-    // Stage three adds the promises gate on top of the stage-two projects gate.
+    // Stage three promises and stage four assembly gates are independent Reviewed registrations.
     const hasPromises = hasReviewedExecutivePromises(yokohamaMunicipality.id);
-    return { key: "yokohama-city", finance: false, promises: hasPromises, assembly: false, projects: hasProjects };
+    const hasAssembly = assemblies["yokohama-city"].assembly.review_status === "reviewed" &&
+      assemblies["yokohama-city"].disclosure.review_status === "reviewed";
+    return { key: "yokohama-city", finance: false, promises: hasPromises, assembly: hasAssembly, projects: hasProjects };
   }
 
   if (!matched && officialCode === kawasakiMunicipality.official_code &&
@@ -85,9 +87,11 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
       project.review_status === "reviewed" &&
       project.municipality_id === kawasakiMunicipality.id,
     );
-    // Stage three adds the promises gate on top of the stage-two projects gate.
+    // Stage three promises and stage four assembly gates are independent Reviewed registrations.
     const hasPromises = hasReviewedExecutivePromises(kawasakiMunicipality.id);
-    return { key: "kawasaki-city", finance: false, promises: hasPromises, assembly: false, projects: hasProjects };
+    const hasAssembly = assemblies["kawasaki-city"].assembly.review_status === "reviewed" &&
+      assemblies["kawasaki-city"].disclosure.review_status === "reviewed";
+    return { key: "kawasaki-city", finance: false, promises: hasPromises, assembly: hasAssembly, projects: hasProjects };
   }
 
   if (!matched && officialCode === hokkaidoFinance.municipality.official_code &&
