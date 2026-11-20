@@ -1,3 +1,43 @@
+import hokkaidoAssembly from "../../../data/reviewed/hokkaido-prefecture/assembly/assembly_records.json";
+import hokkaidoDisclosure from "../../../data/reviewed/hokkaido-prefecture/assembly/disclosure_profiles.json";
+import hokkaidoSessions from "../../../data/reviewed/hokkaido-prefecture/assembly/sessions.json";
+import hokkaidoProposals from "../../../data/reviewed/hokkaido-prefecture/assembly/proposals.json";
+import hokkaidoVotes from "../../../data/reviewed/hokkaido-prefecture/assembly/votes.json";
+import hokkaidoFactionVotes from "../../../data/reviewed/hokkaido-prefecture/assembly/faction_votes.json";
+import hokkaidoExpenses from "../../../data/reviewed/hokkaido-prefecture/assembly/political_activity_expenses.json";
+import hokkaidoTrips from "../../../data/reviewed/hokkaido-prefecture/assembly/inspection_trips.json";
+import hokkaidoAssemblyEvidence from "../../../data/reviewed/hokkaido-prefecture/assembly/assembly_evidence_packets.json";
+import hokkaidoVoteEvidence from "../../../data/reviewed/hokkaido-prefecture/assembly/proposal_vote_evidence_packets.json";
+import hokkaidoExpenseEvidence from "../../../data/reviewed/hokkaido-prefecture/assembly/expense_evidence_packets.json";
+import hokkaidoTripEvidence from "../../../data/reviewed/hokkaido-prefecture/assembly/inspection_evidence_packets.json";
+import hokkaidoSources from "../../../data/catalog/hokkaido_assembly_sources.json";
+import sapporoAssembly from "../../../data/reviewed/sapporo-city/assembly/assembly_records.json";
+import sapporoDisclosure from "../../../data/reviewed/sapporo-city/assembly/disclosure_profiles.json";
+import sapporoSessions from "../../../data/reviewed/sapporo-city/assembly/sessions.json";
+import sapporoProposals from "../../../data/reviewed/sapporo-city/assembly/proposals.json";
+import sapporoVotes from "../../../data/reviewed/sapporo-city/assembly/votes.json";
+import sapporoFactionVotes from "../../../data/reviewed/sapporo-city/assembly/faction_votes.json";
+import sapporoExpenses from "../../../data/reviewed/sapporo-city/assembly/political_activity_expenses.json";
+import sapporoTrips from "../../../data/reviewed/sapporo-city/assembly/inspection_trips.json";
+import sapporoAssemblyEvidence from "../../../data/reviewed/sapporo-city/assembly/assembly_evidence_packets.json";
+import sapporoVoteEvidence from "../../../data/reviewed/sapporo-city/assembly/proposal_vote_evidence_packets.json";
+import sapporoExpenseEvidence from "../../../data/reviewed/sapporo-city/assembly/expense_evidence_packets.json";
+import sapporoTripEvidence from "../../../data/reviewed/sapporo-city/assembly/inspection_evidence_packets.json";
+import sapporoSources from "../../../data/catalog/sapporo_assembly_sources.json";
+import asahikawaAssembly from "../../../data/reviewed/asahikawa-city/assembly/assembly_records.json";
+import asahikawaDisclosure from "../../../data/reviewed/asahikawa-city/assembly/disclosure_profiles.json";
+import asahikawaSessions from "../../../data/reviewed/asahikawa-city/assembly/sessions.json";
+import asahikawaProposals from "../../../data/reviewed/asahikawa-city/assembly/proposals.json";
+import asahikawaVotes from "../../../data/reviewed/asahikawa-city/assembly/votes.json";
+import asahikawaFactionVotes from "../../../data/reviewed/asahikawa-city/assembly/faction_votes.json";
+import asahikawaExpenses from "../../../data/reviewed/asahikawa-city/assembly/political_activity_expenses.json";
+import asahikawaTrips from "../../../data/reviewed/asahikawa-city/assembly/inspection_trips.json";
+import asahikawaAssemblyEvidence from "../../../data/reviewed/asahikawa-city/assembly/assembly_evidence_packets.json";
+import asahikawaVoteEvidence from "../../../data/reviewed/asahikawa-city/assembly/proposal_vote_evidence_packets.json";
+import asahikawaExpenseEvidence from "../../../data/reviewed/asahikawa-city/assembly/expense_evidence_packets.json";
+import asahikawaTripEvidence from "../../../data/reviewed/asahikawa-city/assembly/inspection_evidence_packets.json";
+import asahikawaSources from "../../../data/catalog/asahikawa_city_assembly_sources.json";
+
 import aichiAssembly from "../../../data/reviewed/aichi-prefecture/assembly/assembly_records.json";
 import aichiDisclosure from "../../../data/reviewed/aichi-prefecture/assembly/disclosure_profiles.json";
 import aichiSessions from "../../../data/reviewed/aichi-prefecture/assembly/sessions.json";
@@ -74,7 +114,7 @@ import prefSources from "../../../data/catalog/fukuoka_assembly_sources.json";
 import citySources from "../../../data/catalog/fukuoka_city_assembly_sources.json";
 import kitaSources from "../../../data/catalog/kitakyushu_assembly_sources.json";
 
-export type AssemblySlug = "fukuoka-prefecture" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city";
+export type AssemblySlug = "hokkaido-prefecture" | "sapporo-city" | "asahikawa-city" | "fukuoka-prefecture" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city";
 export type Assembly = {
   id: string; name: string; seat_count: number;
   term_start: string; term_end: string;
@@ -152,6 +192,24 @@ function registry(
   };
 }
 export const assemblies: Record<AssemblySlug, Registry> = {
+  "hokkaido-prefecture": registry(
+    hokkaidoAssembly, hokkaidoDisclosure, hokkaidoSessions, hokkaidoProposals, hokkaidoVotes,
+    hokkaidoFactionVotes, hokkaidoExpenses.map((expense) => ({ breakdown: [], ...expense })), hokkaidoTrips,
+    [...hokkaidoAssemblyEvidence, ...hokkaidoVoteEvidence, ...hokkaidoExpenseEvidence, ...hokkaidoTripEvidence],
+    hokkaidoSources.records,
+  ),
+  "sapporo-city": registry(
+    sapporoAssembly, sapporoDisclosure, sapporoSessions, sapporoProposals, sapporoVotes,
+    sapporoFactionVotes, sapporoExpenses, sapporoTrips,
+    [...sapporoAssemblyEvidence, ...sapporoVoteEvidence, ...sapporoExpenseEvidence, ...sapporoTripEvidence],
+    sapporoSources.records,
+  ),
+  "asahikawa-city": registry(
+    asahikawaAssembly, asahikawaDisclosure, asahikawaSessions, asahikawaProposals, asahikawaVotes,
+    asahikawaFactionVotes, asahikawaExpenses, asahikawaTrips,
+    [...asahikawaAssemblyEvidence, ...asahikawaVoteEvidence, ...asahikawaExpenseEvidence, ...asahikawaTripEvidence],
+    asahikawaSources.records,
+  ),
   "fukuoka-prefecture": registry(
     prefAssembly, prefDisclosure, prefSessions, prefProposals, prefVotes,
     prefFactionVotes, prefExpenses, prefTrips,
@@ -190,6 +248,7 @@ export const assemblies: Record<AssemblySlug, Registry> = {
   ),
 };
 export const assemblySlugs: AssemblySlug[] = [
+  "hokkaido-prefecture", "sapporo-city", "asahikawa-city",
   "fukuoka-prefecture", "fukuoka-city", "kitakyushu-city",
   "aichi-prefecture", "nagoya-city", "toyota-city",
 ];

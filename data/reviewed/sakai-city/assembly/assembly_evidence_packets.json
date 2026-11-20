@@ -1,0 +1,122 @@
+[
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "seat_count",
+        "location_note": "会派別名簿、堺市選挙管理委員会「選挙の予定」",
+        "review_note": null,
+        "source_ids": [
+          "sakai-city-assembly-members-by-faction",
+          "sakai-city-assembly-term-sakai-election"
+        ],
+        "statement": "議員定数は48人（選挙区別: 堺区9・中区7・東区5・西区8・南区8・北区9・美原区2）。現員は47人で欠員1。会派別名簿（2026年5月1日更新）の合計47人と、賛否一覧（2026年9月）の所属議員数の合計47人が一致する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "term",
+        "location_note": "堺市選管「選挙の予定」の市議会議員の項、大阪府選管一覧の堺市の行",
+        "review_note": null,
+        "source_ids": [
+          "sakai-city-assembly-term-sakai-election",
+          "sakai-city-assembly-term-osaka-pref"
+        ],
+        "statement": "議員の任期満了日は令和9年4月30日（2027-04-30）で、堺市選挙管理委員会「選挙の予定」と大阪府選挙管理委員会「議員・首長の任期満了日」の双方に日単位で明記され、相互に一致する。開始日は前任期満了日（2023年4月30日）の翌日として公職選挙法第259条ただし書の構成で導かれる2023年5月1日（計算値）であり、開始日を日単位で直接明記した公式公表は特定できていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "factions",
+        "location_note": "賛否一覧のヘッダ、会派別名簿",
+        "review_note": null,
+        "source_ids": [
+          "sakai-city-assembly-votes-2026-0925",
+          "sakai-city-assembly-members-by-faction"
+        ],
+        "statement": "会派構成（令和8年第4回定例会時点）は、大阪維新の会堺市議会議員団16人、公明党堺市議団11人、堺創志会5人、自由民主党堺市議会議員団5人、自由民主党・保守クラブ4人、日本共産党堺市議会議員団4人、会派に属さない議員2人（井関貴史・長谷川俊英）。賛否一覧のヘッダの所属議員数と会派別名簿が一致する。議長の長谷川俊英は会派に属さない議員である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "committees",
+        "location_note": "委員会別名簿（令和8年5月20日現在）",
+        "review_note": null,
+        "source_ids": [
+          "sakai-city-assembly-members-by-committee"
+        ],
+        "statement": "常任委員会は総務財政・市民人権・健康福祉・産業環境・建設・文教の6委員会で、ほかに議会運営委員会と特別委員会（孤独・孤立社会対策調査特別委員会、人口減少対策調査特別委員会、堺都心部活性化調査特別委員会）がある。"
+      }
+    ],
+    "id": "evidence-jp-local-271403-assembly-2023",
+    "open_questions": [
+      "欠員1の発生時期・事由",
+      "任期開始日を日単位で直接明記した公式公表の所在"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-271403-assembly-2023",
+    "subject_type": "assembly"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "session_scope",
+        "location_note": "議決等案件一覧の冒頭、陳情回答綴の表紙",
+        "review_note": null,
+        "source_ids": [
+          "sakai-city-assembly-results-2026-4th",
+          "sakai-city-assembly-petition-answers-2026-4th"
+        ],
+        "statement": "令和8年第4回定例会は2026年8月17日開会・9月25日閉会、会期40日間・開催日数5日。議決等案件一覧に掲載された案件は42件（市長提出議案27・報告10・議員提出議案5）で、全件に会期内の結論が印字されている。このほかに陳情19件（第42〜60号）が委員会審査分として陳情回答綴で別系統に公表されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "continued_review",
+        "location_note": "議決等案件一覧全体",
+        "review_note": "存在しないものとして扱わず、会議録でのみ確認可能な事項として注記する。",
+        "source_ids": [
+          "sakai-city-assembly-results-2026-4th"
+        ],
+        "statement": "継続審査の記載は議決等案件一覧に現れない。付託のみで結論のない案件が一覧から落ちている可能性は一覧だけでは判定できないため、未確認として残す。"
+      }
+    ],
+    "id": "evidence-jp-local-271403-assembly-2023-session-2026-4",
+    "open_questions": [
+      "付託のみで結論のない案件が議決等案件一覧に現れない可能性の確認"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-271403-assembly-2023-session-2026-4",
+    "subject_type": "session"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "faction_votes_scope",
+        "location_note": "賛否一覧の索引ページと令和8年9月25日議決分",
+        "review_note": null,
+        "source_ids": [
+          "sakai-city-assembly-votes-2026-0925",
+          "sakai-city-assembly-votes-index"
+        ],
+        "statement": "会派別賛否の公表は「主な議案に対する会派等の賛否一覧」に限られ、選定基準の公式明記はない。令和8年第4回定例会の掲載は42件中10件（決算認定9件と議員提出議案第15号）のみである。掲載の有無は賛否の有無とは独立しており、掲載されない議案について全会一致の推定はしない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "petition_system",
+        "location_note": "請願・陳情のご案内、陳情回答綴",
+        "review_note": null,
+        "source_ids": [
+          "sakai-city-assembly-petition-guide",
+          "sakai-city-assembly-petition-answers-2026-4th"
+        ],
+        "statement": "堺市では請願は本会議と委員会で審議され、陳情は関係する委員会でのみ審議される。陳情の審査結果は回答文の形式で陳情回答綴に公表され、採択・不採択の語彙による結論表示はない。"
+      }
+    ],
+    "id": "evidence-jp-local-271403-assembly-2023-disclosure-2026",
+    "open_questions": [
+      "「主な議案」の選定基準の内規の有無"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-271403-assembly-2023-disclosure-2026",
+    "subject_type": "disclosure_profile"
+  }
+]

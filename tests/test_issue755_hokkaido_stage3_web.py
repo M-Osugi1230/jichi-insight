@@ -68,7 +68,7 @@ def test_hokkaido_governor_and_discovery_gates_follow_reviewed_records():
     assert "公約原文15件が段階3で登録済み" in HOKKAIDO
     assert "manifestoSourcesForExecutive(governor)" in HOKKAIDO
     assert "鈴木直道知事の公約原文15件と根拠を見る" in HOKKAIDO
-    assert "北海道議会の個別レコードは未登録（段階4で登録予定）" in HOKKAIDO
+    assert "北海道議会の議案・表決・政務活動費・情報公開状況は段階4で登録済み" in HOKKAIDO
     assert "知事公約の原文は未登録" not in HOKKAIDO
     assert 'promises: hasPromises, assembly: false, projects: hasProjects' in DISCOVERY
     assert "project.municipality_id ===" in DISCOVERY

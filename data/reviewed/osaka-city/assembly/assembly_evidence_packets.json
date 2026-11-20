@@ -1,0 +1,75 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "seat_count",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "osaka-city-assembly-roster-by-faction"
+    ],
+    "statement": "議員定数は81人。各派名簿（令和8年10月13日現在）に「定数81名・現在数81名」と掲載。"
+   },
+   {
+    "decision": "accepted",
+    "field": "term",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "osaka-city-assembly-structure",
+     "osaka-city-election-schedule"
+    ],
+    "statement": "議員の任期は2023-04-30から2027-04-29。市会公式「市会のしくみ」に「現議員の任期は、令和5年4月30日から4年間」と明記され、市選挙管理委員会「これからの選挙」の任期満了一覧に「大阪市議会議員選挙 任期満了日 令和9年4月29日」と明記されている。いずれも計算によらない公式明記値。"
+   },
+   {
+    "decision": "accepted",
+    "field": "factions",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "osaka-city-assembly-roster-by-faction"
+    ],
+    "statement": "会派構成は対象会期（2026年5〜6月）時点の人数で登録した。大阪維新の会42名・公明党17名・自由民主党・市民クラブ10名・自由民主党・国民民主党・市民とつながる・くらしが第一5名・日本共産党2名・無所属1名・大阪にし1名・福島クラブ1名・大阪平野1名・総活躍社会実現の会1名の計81名。これは会派別議員名簿ページ（大阪維新の会は2026年5月18日更新で42人、自由民主党・市民クラブは2026年4月28日更新で10人）と、各派名簿（令和8年10月13日現在）の人数と一致する。なお令和8年3月31日現在の各派名簿では大阪維新の会41名・自由民主党・市民クラブ11名であり、会期前に1名の会派異動があったことが分かる。"
+   },
+   {
+    "decision": "accepted",
+    "field": "committees",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "osaka-city-assembly-roster-by-faction"
+    ],
+    "statement": "常任委員会は財政総務・教育こども・民生保健・都市経済・市政改革・建設港湾の6委員会で、ほかに市会運営委員会がある。各派名簿の凡例（財＝財政総務委員会委員、教＝教育こども委員会委員、民＝民生保健委員会委員、都＝都市経済委員会委員、市＝市政改革委員会委員、建＝建設港湾委員会委員、運営＝市会運営委員会委員）で確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "procedural_items",
+    "location_note": "議決等案件事項一覧（令和8年5・6月市会）の番号なし・賛否欄なしの行",
+    "review_note": null,
+    "source_ids": [
+     "osaka-city-assembly-results-2026-05"
+    ],
+    "statement": "対象会期の一覧には、会期の決定、議席の指定、会期の延長、議長辞職許可について、議長の選挙、常任委員会委員の選任、常任委員長の選挙、市会運営委員会委員の選任、市会運営委員長の選挙、特別委員会委員の選任、大阪広域環境施設組合議会議員（15人）の選挙、関西広域連合議会議員（3人）の選挙の12件の手続案件が掲載されているが、いずれも会派別賛否の掲載がなく議会内部の手続であるため、議案レコードとしては登録せず、本記録に名称を残す。表決案件26件のみを proposals に登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "petitions",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "osaka-city-assembly-results-2026-05",
+     "osaka-city-assembly-petition-guide"
+    ],
+    "statement": "請願・陳情は対象会期の議決等案件事項一覧に掲載されていない。制度上、請願は委員会審査のうえ本会議で結論（採択・不採択）を出し、陳情は委員会で結論を出す（本会議に上程されない）ため、陳情の結果の一覧公表はない。対象会期中に提出・結論が出た請願・陳情の有無は一覧からは判別できないため、登録対象外とし、制度と経緯をここに記録する。"
+   }
+  ],
+  "id": "evidence-jp-local-271004-assembly-2023",
+  "open_questions": [
+   "対象会期中に提出・結論が出た請願・陳情の有無は議決等案件事項一覧からは判別できない（委員会会議録の確認が必要だが、登録対象外のため追跡しない）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-271004-assembly-2023",
+  "subject_type": "assembly"
+ }
+]
