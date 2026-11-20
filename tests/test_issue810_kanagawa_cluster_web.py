@@ -132,7 +132,10 @@ def test_kanagawa_assembly_display_facts_match_reviewed_registry():
     items = {item["item"]: item for item in disclosure["items"]}
     assert items["faction_votes"]["availability"] == "published"
     assert items["member_votes"]["availability"] == "not_published"
-    assert "会派単位のみ" in items["member_votes"]["note"] or "議員個人別" in items["member_votes"]["note"]
+    assert (
+        "会派単位のみ" in items["member_votes"]["note"]
+        or "議員個人別" in items["member_votes"]["note"]
+    )
     assert "▲" in items["faction_votes"]["note"]
     assert "本会期では▲は使われておらず" in items["faction_votes"]["note"]
     assert all(vote["member_vote_availability"] == "not_published" for vote in votes)
