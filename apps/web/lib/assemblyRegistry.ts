@@ -36,7 +36,7 @@ import sakaiAssemblyEvidence from "../../../data/reviewed/sakai-city/assembly/as
 import sakaiVoteEvidence from "../../../data/reviewed/sakai-city/assembly/proposal_vote_evidence_packets.json";
 import sakaiExpenseEvidence from "../../../data/reviewed/sakai-city/assembly/expense_evidence_packets.json";
 import sakaiTripEvidence from "../../../data/reviewed/sakai-city/assembly/inspection_evidence_packets.json";
-import sakaiSources from "../../../data/catalog/sakai_assembly_sources.json";
+import sakaiSources from "../../../data/catalog/sakai_city_assembly_sources.json";
 
 import hokkaidoAssembly from "../../../data/reviewed/hokkaido-prefecture/assembly/assembly_records.json";
 import hokkaidoDisclosure from "../../../data/reviewed/hokkaido-prefecture/assembly/disclosure_profiles.json";
@@ -183,6 +183,7 @@ export type Vote = {
   /** Officially published per-member votes, never reconstructed from factions. */
   member_votes?: { member_name: string; position: string }[];
   method?: string;
+  item_scope?: string | null;
   vote_date: string | null; sources: string[];
 };
 export type FactionVote = {
