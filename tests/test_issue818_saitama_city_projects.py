@@ -26,6 +26,19 @@ P9 = "jp-local-111007-project-2024-omiya-station-gcs"
 P10 = "jp-local-111007-project-2024-utility-pole-removal"
 PROJECT_IDS = [P1, P2, P3, P4, P5, P6, P7, P8, P9, P10]
 
+TERM_ID = "jp-local-111007-executive-2025-05-27"
+EXPECTED_PROMISE_LINKS = {
+    P1: [f"{TERM_ID}-promise-012"],
+    P2: [f"{TERM_ID}-promise-004"],
+    P3: [f"{TERM_ID}-promise-005"],
+    P4: [f"{TERM_ID}-promise-003", f"{TERM_ID}-promise-007"],
+    P6: [f"{TERM_ID}-promise-010"],
+    P7: [f"{TERM_ID}-promise-007", f"{TERM_ID}-promise-008"],
+    P8: [f"{TERM_ID}-promise-003"],
+    P9: [f"{TERM_ID}-promise-002"],
+    P10: [f"{TERM_ID}-promise-001"],
+}
+
 SELECTED_TITLES = [
     "自治会への加入促進",
     "市民・事業者との連携による省エネ・創エネ化の促進",
@@ -128,7 +141,12 @@ def test_selection_rule_and_population() -> None:
     for record in projects.values():
         assert record["fiscal_year"] == 2024
         assert record["review_status"] == "reviewed"
-        assert record["related_promise_ids"] == []
+        # Stage 3 (Issue #822) connected the mayor's bulletin promises
+        # to the series by wording and content only; the reverse links
+        # below are the full extent of those connections.
+        assert record["related_promise_ids"] == EXPECTED_PROMISE_LINKS.get(
+            record["id"], []
+        )
     skipped = selection["skipped"]
     assert len(skipped) == 1
     assert skipped[0]["official_title"] == "東日本連携の推進による地域経済活性化"

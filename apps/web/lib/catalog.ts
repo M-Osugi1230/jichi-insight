@@ -25,8 +25,8 @@ export type MunicipalityKey =
   | "sapporo-city"
   | "asahikawa-city"
   | "saitama-prefecture"
+  | "saitama-city"
   | "kawaguchi-city";
-
 export type SourceRecord = {
   id: string;
   municipality_key: MunicipalityKey;
@@ -82,6 +82,12 @@ export const municipalityMeta: Record<
     summary: "埼玉県5か年計画、2026年度成立後当初予算、2022〜2024年度の普通会計決算と大野元裕知事の現任期を確認します。自治体別ページは準備中です。",
     status: "財政データ公開", href: null,
     fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
+  },
+  "saitama-city": {
+    name: "さいたま市", type: "政令指定都市",
+    summary: "計画・財政・重点事業に加え、清水勇人市長の任期と Reviewed 公約12件を公式出典で確認します。自治体別ページは準備中です。",
+    status: "財政データ公開", href: null,
+    fiscalSummary: "Reviewed 54項目（財政レコード3件・決算51件）",
   },
   "kawaguchi-city": {
     name: "川口市", type: "中核市",

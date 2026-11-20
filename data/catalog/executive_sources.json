@@ -1,5 +1,5 @@
 {
-  "version": "0.25.0",
+  "version": "0.26.0",
   "updated_at": "2026-11-21",
   "scope": "pilot",
   "records": [
@@ -1052,6 +1052,48 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "さいたま市選挙管理委員会の公式開票結果表。当選人 大野もとひろ（大野元裕、無所属）の合計得票1,138,973票を示し、見出しに「当選人の任期 令和5年8月31日～令和9年8月30日」と開始日・満了日の双方を日単位で明記する。"
+    },
+    {
+      "id": "saitama-city-mayor-election-2025-bulletin-page",
+      "municipality_key": "saitama-city",
+      "organization": "さいたま市選挙管理委員会",
+      "category": "election",
+      "title": "令和7年さいたま市長選挙（過去の選挙結果）（2025年5月25日執行）",
+      "url": "https://www.city.saitama.lg.jp/006/009/kakonosenkyokekka/p121736.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "さいたま市選挙管理委員会の公式ページ。令和7年さいたま市長選挙の選挙公報PDFと開票結果表（得票数及び当選人）への導線を掲載する。"
+    },
+    {
+      "id": "saitama-city-mayor-election-2025-bulletin",
+      "municipality_key": "saitama-city",
+      "organization": "さいたま市選挙管理委員会",
+      "category": "election",
+      "title": "令和7年5月25日執行 さいたま市長選挙 選挙公報（清水はやと候補欄）",
+      "url": "https://www.city.saitama.lg.jp/006/009/kakonosenkyokekka/p121736_d/fil/saitamashichosen0511.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "さいたま市長選挙の公式選挙公報（候補者から提出された原稿を原文のまま印刷したもの。全2ページ、候補者5人）。清水はやと候補欄は1ページ目左下にあり、見出し「希望のまちへ もっとシンカ！」、「4つのシンカ」枠（見出し4件と・付き項目12件）、「市民とともに実現した16年間の実績」枠、経歴を掲載する。候補者欄は画像形式でテキスト層がないため、登録文はPDFの描画画像（300dpi・450dpi・600dpi）から転記し、複数解像度で照合した。公約レコードはこの候補欄から作成した。掲載ページはさいたま市選挙管理委員会公式「過去の選挙結果」（令和7年さいたま市長選挙）ページ。"
+    },
+    {
+      "id": "saitama-city-mayor-election-2025-results",
+      "municipality_key": "saitama-city",
+      "organization": "さいたま市選挙管理委員会",
+      "category": "election",
+      "title": "令和7年さいたま市長選挙 開票結果（得票数及び当選人）",
+      "url": "https://www.city.saitama.lg.jp/006/009/kakonosenkyokekka/p121736_d/fil/R7tokuhyoutousenn.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "さいたま市選挙管理委員会の公式開票結果表（全1ページ、区別内訳つき）。表題に「当選人の任期：令和7年5月27日～令和11年5月26日」と当選人の任期の開始日・満了日が日単位で明記されている。清水はやと（清水勇人）は177,217票（得票率45.61%）を得て最多得票で当選した。候補者は5人、有効投票数388,554票、無効投票数4,440票。得票数と任期は本PDFの本体で直接照合した。"
     },
     {
       "id": "saitama-pref-governor-election-2023-bulletin",

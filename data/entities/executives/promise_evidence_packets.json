@@ -7190,6 +7190,468 @@
     "review_status": "reviewed"
   },
   {
+    "id": "evidence-saitama-city-2025-promise-001",
+    "subject_type": "promise",
+    "subject_id": "jp-local-111007-executive-2025-05-27-promise-001",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、さいたま市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報・清水はやと候補欄「4つのシンカ」見出し1「安全で強靱な都市へのシンカ」第1項目。",
+        "decision": "accepted",
+        "review_note": "2026-11-21に公式PDFを取得し、300dpi・450dpi・600dpiの複数解像度で照合した。資料上の境界（「4つのシンカ」枠内の・付き項目）をそのまま公約の単位とし、文単位の編集分割はしていない。項目末尾に句点はないため、そのまま転記した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、さいたま市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "さいたま市選挙管理委員会公式「過去の選挙結果」（令和7年さいたま市長選挙）ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "総合振興計画基本計画 第10章「防災・消防」の施策「災害に強い都市基盤整備」に属する事業「無電柱化の推進」（防災上重要な道路の無電柱化により首都直下型地震や大型台風などの自然災害へ対策する事業）と、公約の文言・内容（災害に強い都市）が対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "さいたま市総合振興計画の事業（段階2で登録済みの事業レコード）。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "接続は推定であり、公式な対応付けが公表されれば見直す。進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-saitama-city-2025-promise-002",
+    "subject_type": "promise",
+    "subject_id": "jp-local-111007-executive-2025-05-27-promise-002",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、さいたま市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報・清水はやと候補欄「4つのシンカ」見出し2「誇りあふれる都市へのシンカ」第1項目。",
+        "decision": "accepted",
+        "review_note": "2026-11-21に公式PDFを取得し、300dpi・450dpi・600dpiの複数解像度で照合した。資料上の境界（「4つのシンカ」枠内の・付き項目）をそのまま公約の単位とし、文単位の編集分割はしていない。項目末尾に句点はないため、そのまま転記した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、さいたま市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "さいたま市選挙管理委員会公式「過去の選挙結果」（令和7年さいたま市長選挙）ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "事業「大宮駅グランドセントラルステーション化構想の推進」は、東日本の玄関口である大宮駅周辺で人を呼び込み交流を促す都市インフラの構想であり、公約の文言・内容（東日本共創（協奏）都市）と対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "さいたま市総合振興計画の事業（段階2で登録済みの事業レコード）。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "接続は推定であり、公式な対応付けが公表されれば見直す。進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-saitama-city-2025-promise-003",
+    "subject_type": "promise",
+    "subject_id": "jp-local-111007-executive-2025-05-27-promise-003",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、さいたま市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報・清水はやと候補欄「4つのシンカ」見出し2「誇りあふれる都市へのシンカ」第2項目。",
+        "decision": "accepted",
+        "review_note": "2026-11-21に公式PDFを取得し、300dpi・450dpi・600dpiの複数解像度で照合した。資料上の境界（「4つのシンカ」枠内の・付き項目）をそのまま公約の単位とし、文単位の編集分割はしていない。項目末尾に句点はないため、そのまま転記した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、さいたま市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "さいたま市選挙管理委員会公式「過去の選挙結果」（令和7年さいたま市長選挙）ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "事業「アクティブ・ラーニングの推進」（教育）と事業「岩槻人形博物館を拠点とした人形文化の振興・発信」（文化）が、公約の文言・内容（教育文化都市）の両面に対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "さいたま市総合振興計画の事業（段階2で登録済みの事業レコード）。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "接続は推定であり、公式な対応付けが公表されれば見直す。進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-saitama-city-2025-promise-004",
+    "subject_type": "promise",
+    "subject_id": "jp-local-111007-executive-2025-05-27-promise-004",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、さいたま市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報・清水はやと候補欄「4つのシンカ」見出し2「誇りあふれる都市へのシンカ」第3項目。",
+        "decision": "accepted",
+        "review_note": "2026-11-21に公式PDFを取得し、300dpi・450dpi・600dpiの複数解像度で照合した。資料上の境界（「4つのシンカ」枠内の・付き項目）をそのまま公約の単位とし、文単位の編集分割はしていない。項目末尾に句点はないため、そのまま転記した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、さいたま市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "さいたま市選挙管理委員会公式「過去の選挙結果」（令和7年さいたま市長選挙）ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "総合振興計画基本計画 第2章「環境」に属する事業「市民・事業者との連携による省エネ・創エネ化の促進」と、公約の文言・内容（環境循環都市）が対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "さいたま市総合振興計画の事業（段階2で登録済みの事業レコード）。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "接続は推定であり、公式な対応付けが公表されれば見直す。進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-saitama-city-2025-promise-005",
+    "subject_type": "promise",
+    "subject_id": "jp-local-111007-executive-2025-05-27-promise-005",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、さいたま市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報・清水はやと候補欄「4つのシンカ」見出し2「誇りあふれる都市へのシンカ」第4項目。",
+        "decision": "accepted",
+        "review_note": "2026-11-21に公式PDFを取得し、300dpi・450dpi・600dpiの複数解像度で照合した。資料上の境界（「4つのシンカ」枠内の・付き項目）をそのまま公約の単位とし、文単位の編集分割はしていない。項目末尾に句点はないため、そのまま転記した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、さいたま市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "さいたま市選挙管理委員会公式「過去の選挙結果」（令和7年さいたま市長選挙）ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "総合振興計画基本計画 第3章「健康・スポーツ」の施策「スポーツなどを通じた健康づくりの意識醸成」に属する事業「市民の主体的な健康づくりの推進」と、公約の文言・内容（スポーツ・健康先進都市）が対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "さいたま市総合振興計画の事業（段階2で登録済みの事業レコード）。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "接続は推定であり、公式な対応付けが公表されれば見直す。進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-saitama-city-2025-promise-006",
+    "subject_type": "promise",
+    "subject_id": "jp-local-111007-executive-2025-05-27-promise-006",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、さいたま市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報・清水はやと候補欄「4つのシンカ」見出し3「誰一人取り残さないしあわせ実感都市へのシンカ」第1項目。",
+        "decision": "accepted",
+        "review_note": "2026-11-21に公式PDFを取得し、300dpi・450dpi・600dpiの複数解像度で照合した。資料上の境界（「4つのシンカ」枠内の・付き項目）をそのまま公約の単位とし、文単位の編集分割はしていない。項目末尾に句点はないため、そのまま転記した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、さいたま市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "さいたま市選挙管理委員会公式「過去の選挙結果」（令和7年さいたま市長選挙）ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      }
+    ],
+    "open_questions": [
+      "対応する登録済み事業（段階2の10系列）がないため未接続とした。事業の追加登録や公式な対応付けが公表されれば見直す。進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-saitama-city-2025-promise-007",
+    "subject_type": "promise",
+    "subject_id": "jp-local-111007-executive-2025-05-27-promise-007",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、さいたま市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報・清水はやと候補欄「4つのシンカ」見出し3「誰一人取り残さないしあわせ実感都市へのシンカ」第2項目。",
+        "decision": "accepted",
+        "review_note": "2026-11-21に公式PDFを取得し、300dpi・450dpi・600dpiの複数解像度で照合した。資料上の境界（「4つのシンカ」枠内の・付き項目）をそのまま公約の単位とし、文単位の編集分割はしていない。項目末尾に句点はないため、そのまま転記した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、さいたま市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "さいたま市選挙管理委員会公式「過去の選挙結果」（令和7年さいたま市長選挙）ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "事業「妊娠期からの親と子の健康づくり支援」（子ども・子育て）と事業「アクティブ・ラーニングの推進」（子どもたちの学び）と、公約の文言・内容（子ども・若者）が対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "さいたま市総合振興計画の事業（段階2で登録済みの事業レコード）。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "接続は推定であり、公式な対応付けが公表されれば見直す。進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-saitama-city-2025-promise-008",
+    "subject_type": "promise",
+    "subject_id": "jp-local-111007-executive-2025-05-27-promise-008",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、さいたま市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報・清水はやと候補欄「4つのシンカ」見出し3「誰一人取り残さないしあわせ実感都市へのシンカ」第3項目。",
+        "decision": "accepted",
+        "review_note": "2026-11-21に公式PDFを取得し、300dpi・450dpi・600dpiの複数解像度で照合した。資料上の境界（「4つのシンカ」枠内の・付き項目）をそのまま公約の単位とし、文単位の編集分割はしていない。項目末尾に句点はないため、そのまま転記した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、さいたま市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "さいたま市選挙管理委員会公式「過去の選挙結果」（令和7年さいたま市長選挙）ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "事業「妊娠期からの親と子の健康づくり支援」（妊娠期から子育て期まで切れ目なく支援する事業）と、公約の文言・内容（子育てがしやすいまち）が対応するため接続した。「女性が活躍し」の部分に対応する登録済み事業はない。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "さいたま市総合振興計画の事業（段階2で登録済みの事業レコード）。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "接続は推定であり、公式な対応付けが公表されれば見直す。進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-saitama-city-2025-promise-009",
+    "subject_type": "promise",
+    "subject_id": "jp-local-111007-executive-2025-05-27-promise-009",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、さいたま市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報・清水はやと候補欄「4つのシンカ」見出し3「誰一人取り残さないしあわせ実感都市へのシンカ」第4項目。",
+        "decision": "accepted",
+        "review_note": "2026-11-21に公式PDFを取得し、300dpi・450dpi・600dpiの複数解像度で照合した。資料上の境界（「4つのシンカ」枠内の・付き項目）をそのまま公約の単位とし、文単位の編集分割はしていない。項目末尾に句点はないため、そのまま転記した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、さいたま市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "さいたま市選挙管理委員会公式「過去の選挙結果」（令和7年さいたま市長選挙）ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      }
+    ],
+    "open_questions": [
+      "対応する登録済み事業（段階2の10系列）がないため未接続とした。事業の追加登録や公式な対応付けが公表されれば見直す。進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-saitama-city-2025-promise-010",
+    "subject_type": "promise",
+    "subject_id": "jp-local-111007-executive-2025-05-27-promise-010",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、さいたま市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報・清水はやと候補欄「4つのシンカ」見出し3「誰一人取り残さないしあわせ実感都市へのシンカ」第5項目。",
+        "decision": "accepted",
+        "review_note": "2026-11-21に公式PDFを取得し、300dpi・450dpi・600dpiの複数解像度で照合した。資料上の境界（「4つのシンカ」枠内の・付き項目）をそのまま公約の単位とし、文単位の編集分割はしていない。項目末尾に句点はないため、そのまま転記した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、さいたま市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "さいたま市選挙管理委員会公式「過去の選挙結果」（令和7年さいたま市長選挙）ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "事業「介護予防の推進」は、高齢者の介護予防に加えて社会活動への参加や生きがいづくりにも働きかける事業であり、公約の文言・内容（高齢者が生きがいと安心できるまち）と対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "さいたま市総合振興計画の事業（段階2で登録済みの事業レコード）。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "接続は推定であり、公式な対応付けが公表されれば見直す。進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-saitama-city-2025-promise-011",
+    "subject_type": "promise",
+    "subject_id": "jp-local-111007-executive-2025-05-27-promise-011",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、さいたま市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報・清水はやと候補欄「4つのシンカ」見出し4「絆で支えあう都市へのシンカ」第1項目。",
+        "decision": "accepted",
+        "review_note": "2026-11-21に公式PDFを取得し、300dpi・450dpi・600dpiの複数解像度で照合した。資料上の境界（「4つのシンカ」枠内の・付き項目）をそのまま公約の単位とし、文単位の編集分割はしていない。項目末尾に句点はないため、そのまま転記した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、さいたま市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "さいたま市選挙管理委員会公式「過去の選挙結果」（令和7年さいたま市長選挙）ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      }
+    ],
+    "open_questions": [
+      "対応する登録済み事業（段階2の10系列）がないため未接続とした。事業の追加登録や公式な対応付けが公表されれば見直す。進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-saitama-city-2025-promise-012",
+    "subject_type": "promise",
+    "subject_id": "jp-local-111007-executive-2025-05-27-promise-012",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、さいたま市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報・清水はやと候補欄「4つのシンカ」見出し4「絆で支えあう都市へのシンカ」第2項目。",
+        "decision": "accepted",
+        "review_note": "2026-11-21に公式PDFを取得し、300dpi・450dpi・600dpiの複数解像度で照合した。資料上の境界（「4つのシンカ」枠内の・付き項目）をそのまま公約の単位とし、文単位の編集分割はしていない。項目末尾に句点はないため、そのまま転記した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、さいたま市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "さいたま市選挙管理委員会公式「過去の選挙結果」（令和7年さいたま市長選挙）ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "事業「自治会への加入促進」は、地域の活動や交流を活発にし、ふれあいのある地域社会の形成を目指す取組であり、公約の文言・内容（絆でつくる共創都市）と対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "さいたま市総合振興計画の事業（段階2で登録済みの事業レコード）。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "接続は推定であり、公式な対応付けが公表されれば見直す。進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
     "id": "evidence-saitama-pref-2023-promise-001",
     "subject_type": "promise",
     "subject_id": "jp-local-110001-executive-2023-08-31-promise-001",

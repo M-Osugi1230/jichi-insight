@@ -237,6 +237,24 @@
     "confidence": "high"
   },
   {
+    "id": "manifesto-review-jp-local-111007-2025",
+    "executive_term_id": "jp-local-111007-executive-2025-05-27",
+    "source_id": "saitama-city-mayor-election-2025-bulletin",
+    "candidate_name": "清水 勇人",
+    "source_location": "全2ページのうち1ページ目・左下の候補者欄「清水はやと」",
+    "review_scope": "candidate_panel",
+    "statement_boundary": "clear",
+    "segmentation_status": "segmented",
+    "promise_records_created": 12,
+    "reason_codes": [
+      "other"
+    ],
+    "review_note": "候補者欄は、見出し「希望のまちへ もっとシンカ！」、市長としての16年間を振り返り「4つのシンカ」を推進する旨を述べる文章、「4つのシンカ」枠（見出し4件と・付き項目12件）、「市民とともに実現した16年間の実績」枠（政令指定都市 幸福度 第1位、住み続けたい 過去最高87.2%、水道管路耐震化率 政令指定都市 第1位の3件の実績提示）、経歴、公式サイト・SNSのQRコードで構成される。「4つのシンカ」の・付き項目は資料上の境界が明確なため、それぞれ1レコードとした（読み順は見出し1から4の順、各見出し内は掲載順）。見出し4件は配下の項目を束ねる分野の名称であり、個別の約束として重ねてレコード化しなかった。「4つのシンカ」を推進する旨の文章は枠全体への総論的な表明であるためレコード化せず、実績枠の3件は過去の実績の提示であるため、見出しはスローガンであるため、経歴は候補者の経歴であるため、いずれもレコード化しなかった。数値目標・期限・財源の明示はない（87.2%・53.1%等の数値は実績枠の提示値であり、目標値ではない）。各項目の末尾に句点はないため、そのまま転記した。候補者欄は画像形式でテキスト層がないため、登録文はPDFの描画画像（300dpi・450dpi・600dpi）から転記し、複数解像度で照合した。",
+    "last_reviewed_at": "2026-11-21",
+    "review_status": "reviewed",
+    "confidence": "high"
+  },
+  {
     "id": "manifesto-review-jp-local-110001-2023",
     "executive_term_id": "jp-local-110001-executive-2023-08-31",
     "source_id": "saitama-pref-governor-election-2023-bulletin",

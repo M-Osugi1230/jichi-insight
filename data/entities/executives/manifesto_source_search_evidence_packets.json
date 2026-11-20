@@ -708,6 +708,49 @@
     "review_status": "reviewed"
   },
   {
+    "id": "evidence-manifesto-source-search-saitama-city-2025",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-saitama-city-2025",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "2025年さいたま市長選挙の公式開票結果表を確認し、清水勇人の当選（177,217票・最多得票）と、表題に明記された当選人の任期（令和7年5月27日～令和11年5月26日）をPDF本体で直接照合した。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-results"
+        ],
+        "location_note": "さいたま市選挙管理委員会「令和7年さいたま市長選挙 開票結果（得票数及び当選人）」。",
+        "decision": "accepted",
+        "review_note": "選挙結果の一次資料として採用。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "さいたま市選挙管理委員会の「過去の選挙結果」ページから、公式の選挙公報PDFを取得し、清水はやと候補欄（全2ページのうち1ページ目・左下）を確認した。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin-page",
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全2ページ）の1ページ目左下の候補者欄。",
+        "decision": "accepted",
+        "review_note": "公報は候補者提出原稿をそのまま印刷した公式文書であり、出典優先順位の最上位として登録した。"
+      },
+      {
+        "field": "result_status",
+        "statement": "選挙公報を登録し、分割レビューを経て公約レコード12件を作成したため、result_status を source_registered とした。公報より詳細な候補者資料は未特定のままである。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "分割レビュー manifesto-review-jp-local-111007-2025 に基づく。",
+        "decision": "accepted",
+        "review_note": "詳細資料が存在しないという主張はしない。"
+      }
+    ],
+    "open_questions": [
+      "政策パンフレット等、選挙公報より詳細な候補者資料の安定した所在が特定できるか。",
+      "未接続の公約への進捗証拠の接続を拡充できるか。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
     "id": "evidence-manifesto-source-search-saitama-pref-2023",
     "subject_type": "manifesto_source_search",
     "subject_id": "manifesto-source-search-saitama-pref-2023",
