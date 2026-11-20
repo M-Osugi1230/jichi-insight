@@ -261,5 +261,12 @@ def test_kanagawa_page_and_registry_are_not_using_foreign_prefecture_copy():
     assert "kanagawa-prefecture" in page
     assert "kanagawa-prefecture" in finance
     assert "神奈川3議会" in overview
-    for wrong_prefecture in ("副首都ビジョン", "府政運営の基本方針", "吉村洋文", "北海道総合計画", "鈴木直道"):
+    wrong_prefecture_copies = (
+        "副首都ビジョン",
+        "府政運営の基本方針",
+        "吉村洋文",
+        "北海道総合計画",
+        "鈴木直道",
+    )
+    for wrong_prefecture in wrong_prefecture_copies:
         assert wrong_prefecture not in page
