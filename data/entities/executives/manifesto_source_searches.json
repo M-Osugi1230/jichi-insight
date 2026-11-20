@@ -261,5 +261,32 @@
     ],
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-sakai-city-2023",
+    "executive_term_id": "jp-local-271403-executive-2023-06-09",
+    "searched_at": "2026-11-20",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "no_stable_primary_source_found",
+    "manifesto_source_ids_found": [],
+    "checked_source_ids": [
+      "sakai-city-mayor-election-2023-results",
+      "sakai-city-election-schedule",
+      "sakai-city-mayor-profile"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "2023年堺市長選挙の選挙公報は、堺市公式サイトの2023年市長選挙結果ページに掲載・導線がなく（投票結果・開票結果・選挙結果調のPDFのみ）、Wayback Machineの市公式サイト選挙データセクション配下の2023年の保存にも公報ページ・PDFは存在しないため、公式のWeb公表物としては特定できなかった。紙の選挙公報の発行自体は市選管・令和5年第1回会議録（様式の決定：標題「令和5年6月4日執行 堺市長選挙選挙公報」、ブランケット判）で公式に確認できるが、公報本文のWeb掲載ではない。候補者本人の公式サイト（nagafujihideki.com）の存在は確認できるものの、その「政策」ページの選挙前日（2023年6月3日）の保存は府議会議員時代（平成27年）の政策・演説であり、2023年選挙時の公約を検証可能な形で公開する一次資料は特定できなかった。選挙ドットコム等の民間ミラーの転載や報道の候補者アンケートは公式公表物ではないため原典として採用しない。以上により、検証可能な原典を特定できなかったものとして公約は未登録とする。これは公約が存在しないという主張ではない。なお、Waybackの選管セクション全体を対象とする絞り込み照会は応答不良で完遂できておらず、選挙公報の全件不存在までは証明できていない。",
+    "next_actions": [
+      "紙の選挙公報の現物（選挙管理委員会の保管分・図書館所蔵）や候補者公式サイトの2023年公約ページが特定できれば、原典として登録し直す",
+      "2027年6月執行予定の次回市長選挙では、選挙期間中に選挙公報の公式掲載を確認し、新任期の公約原文資料として登録する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]
