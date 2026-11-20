@@ -433,5 +433,33 @@
     ],
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-saitama-city-2025",
+    "executive_term_id": "jp-local-111007-executive-2025-05-27",
+    "searched_at": "2026-11-21",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "saitama-city-mayor-election-2025-bulletin"
+    ],
+    "checked_source_ids": [
+      "saitama-city-mayor-election-2025-bulletin-page",
+      "saitama-city-mayor-election-2025-bulletin",
+      "saitama-city-mayor-election-2025-results"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "さいたま市選挙管理委員会の「過去の選挙結果」ページ（令和7年さいたま市長選挙）に選挙公報PDFへの安定した導線があり、市の公式サイト上で公報そのものを取得できた。清水はやと候補欄（全2ページのうち1ページ目・左下）を確認し、選挙公報を出典として登録、分割レビュー（manifesto-review-jp-local-111007-2025）を経て公約レコード12件を作成した。選挙公報は候補者提出原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たるため、公約レコードの confidence は high とした。あわせて同ページから開票結果表（得票数及び当選人）を取得し、当選・得票数177,217票と、表題に明記された任期の開始日（2025年5月27日）・満了日（2029年5月26日）をPDF本体で直接照合した。候補者の政策パンフレット等、公報より詳細な資料の安定した所在は特定しておらず、資料が存在しないとは判定しない。",
+    "next_actions": [
+      "候補者の政策資料（公報より詳細な公約資料）の安定した所在が特定できれば、登録済みの公約文と照合する",
+      "埼玉県選挙管理委員会の任期満了一覧で、さいたま市長の任期満了日（2029年5月26日）の明記を確認する",
+      "未接続の公約3件について、計画・事業資料への進捗証拠の接続を拡充する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]

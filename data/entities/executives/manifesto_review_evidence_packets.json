@@ -545,5 +545,46 @@
       "候補者の公式サイト等に公報より詳細な政策資料が安定した所在で現存するかは未確認である（公報欄内の案内文はホームページへの誘導だが、選挙特設サイトは差し替え済み）。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-saitama-city-2025-manifesto-review",
+    "subject_type": "manifesto_review",
+    "subject_id": "manifesto-review-jp-local-111007-2025",
+    "claims": [
+      {
+        "field": "source_location",
+        "statement": "清水はやと候補欄はさいたま市長選挙の選挙公報（全2ページ）の1ページ目左下に掲載され、見出し、「4つのシンカ」枠（見出し4件と・付き項目12件）、実績枠、経歴、QRコードで構成される。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全2ページ）の1ページ目左下。",
+        "decision": "accepted",
+        "review_note": "2026-11-21に公式PDFを取得し、候補者欄全体を描画画像で確認した。"
+      },
+      {
+        "field": "segmentation_status",
+        "statement": "資料上の境界（「4つのシンカ」枠内の・付き項目）に従い12件へ分割した。読み順は見出し1から4の順、各見出し内は掲載順とした。見出し4件（分野の名称）、総論的な表明文、実績枠の3件（過去の実績の提示）、見出しのスローガン、経歴は公約ではないためレコード化していない。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "候補者欄全体。",
+        "decision": "accepted",
+        "review_note": "句読点による推測分割は行っていない（docs/PROMISE_EXTRACTION.md の分割ルール）。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、さいたま市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "saitama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "さいたま市公式の選挙公報ページとPDFに基づく。",
+        "decision": "accepted",
+        "review_note": "公報は出典優先順位の最上位であり、第三者経由の引用ではない。"
+      }
+    ],
+    "open_questions": [
+      "公報より詳細な候補者資料（政策パンフレット等）の安定した所在が特定できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
   }
 ]
