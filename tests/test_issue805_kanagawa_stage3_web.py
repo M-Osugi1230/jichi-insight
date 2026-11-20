@@ -89,12 +89,15 @@ def test_existing_web_registry_and_quality_metadata_cover_both_municipalities():
 
 
 def test_yokohama_and_kawasaki_promise_discovery_gates_are_reviewed_record_scoped():
-    assert 'officialCode === "141003"' in DISCOVERY
-    assert 'hasReviewedExecutivePromises("jp-local-141003")' in DISCOVERY
-    assert 'key: "yokohama-city", finance: false, promises: true' in DISCOVERY
-    assert 'officialCode === "141305"' in DISCOVERY
-    assert 'hasReviewedExecutivePromises("jp-local-141305")' in DISCOVERY
-    assert 'key: "kawasaki-city", finance: false, promises: true' in DISCOVERY
+    # After the stage-two merge (PR #800), the gates use the Reviewed
+    # municipality records instead of literal codes, and the promises gate
+    # is combined with the projects gate for both cities.
+    assert "officialCode === yokohamaMunicipality.official_code" in DISCOVERY
+    assert "hasReviewedExecutivePromises(yokohamaMunicipality.id)" in DISCOVERY
+    assert 'key: "yokohama-city", finance: false, promises: hasPromises' in DISCOVERY
+    assert "officialCode === kawasakiMunicipality.official_code" in DISCOVERY
+    assert "hasReviewedExecutivePromises(kawasakiMunicipality.id)" in DISCOVERY
+    assert 'key: "kawasaki-city", finance: false, promises: hasPromises' in DISCOVERY
     assert 'term.municipality_id === municipalityId' in DISCOVERY
     assert 'promise.municipality_id === municipalityId' in DISCOVERY
     assert 'promise.executive_term_id === term.id' in DISCOVERY
