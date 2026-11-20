@@ -113,7 +113,7 @@ def test_osaka_prefecture_page_matches_reviewed_plan_promises_and_project_select
     assert "府政運営の基本方針2026" in page
     assert "第2「知事重点事業」の52件" in page
     assert "柱1→柱2→柱3" in page
-    assert "柱1の第4の重点分野" in selection["selection_rule"]["description"]
+    assert "柱1の第4分野" in selection["selection_rule"]["description"]
     assert "10件に到達" in selection["selection_rule"]["description"]
     assert "構成予算事業費の合算" in page
     assert "重点事業単位の総額は一覧自体に印字されていません" in page
