@@ -6,6 +6,8 @@ import kanagawaFiscalRecords from "../../../data/reviewed/kanagawa-prefecture/fi
 import kanagawaSettlementRecords from "../../../data/reviewed/kanagawa-prefecture/settlement_records.json";
 import kanagawaFiscalEvidence from "../../../data/reviewed/kanagawa-prefecture/evidence_packets.json";
 import kanagawaSettlementEvidence from "../../../data/reviewed/kanagawa-prefecture/settlement_evidence_packets.json";
+import kawasakiFiscalRecords from "../../../data/reviewed/kawasaki-city/fiscal_records.json";
+import kawasakiFiscalEvidence from "../../../data/reviewed/kawasaki-city/evidence_packets.json";
 import yokohamaFiscalRecords from "../../../data/reviewed/yokohama-city/fiscal_records.json";
 import yokohamaFiscalEvidence from "../../../data/reviewed/yokohama-city/evidence_packets.json";
 import hokkaidoIndicatorPageIndex from "../../../data/catalog/hokkaido_indicator_page_index.json";
@@ -54,6 +56,7 @@ const sapporoFiscal = loadGenericCityFinance("sapporo-city");
 const asahikawaFiscal = loadGenericCityFinance("asahikawa-city");
 
 const municipalityNames: Record<MunicipalityKey, string> = {
+  "kawasaki-city": "川崎市",
   "kanagawa-prefecture": "神奈川県",
   "yokohama-city": "横浜市",
   "osaka-prefecture": "大阪府",
@@ -72,6 +75,7 @@ const municipalityNames: Record<MunicipalityKey, string> = {
 
 const municipalityKeys = Object.keys(municipalityNames) as MunicipalityKey[];
 const recordsByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFinance.records> = {
+  "kawasaki-city": kawasakiFiscalRecords as typeof fukuokaPrefectureFinance.records,
   "kanagawa-prefecture": [...kanagawaFiscalRecords, ...kanagawaSettlementRecords] as typeof fukuokaPrefectureFinance.records,
   "yokohama-city": yokohamaFiscalRecords as typeof fukuokaPrefectureFinance.records,
   "osaka-prefecture": [...osakaFiscalRecords, ...osakaSettlementRecords] as typeof fukuokaPrefectureFinance.records,
@@ -88,6 +92,7 @@ const recordsByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFin
   "toyota-city": toyotaCityFinance.records,
 };
 const evidenceByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFinance.evidencePackets> = {
+  "kawasaki-city": kawasakiFiscalEvidence as typeof fukuokaPrefectureFinance.evidencePackets,
   "kanagawa-prefecture": [...kanagawaFiscalEvidence, ...kanagawaSettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
   "yokohama-city": yokohamaFiscalEvidence as typeof fukuokaPrefectureFinance.evidencePackets,
   "osaka-prefecture": [...osakaFiscalEvidence, ...osakaSettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,

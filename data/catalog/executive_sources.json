@@ -1,5 +1,5 @@
 {
-  "version": "0.21.0",
+  "version": "0.22.0",
   "updated_at": "2026-11-21",
   "scope": "pilot",
   "records": [
@@ -926,6 +926,76 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "横浜市選挙管理委員会の公式結果表（全5ページ）。候補者別得票数（確定・01時56分現在）によれば、原沢あつみは552,207票（得票率39.49%）を得て最多得票で当選した。候補者は7人、法定得票数349,589.500票、供託物没収点139,835.800票、有効投票数1,398,358票、投票率45.56%。得票数は本PDFの本体で直接照合した。"
+    },
+    {
+      "id": "kawasaki-city-mayor",
+      "municipality_key": "kawasaki-city",
+      "organization": "川崎市",
+      "category": "executive",
+      "title": "福田紀彦市長プロフィール",
+      "url": "https://www.city.kawasaki.jp/shisei/category/37-2-0-0-0-0-0-0-0-0.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "川崎市公式サイトの市長プロフィールページ（更新日 2025年11月19日）。福田紀彦が現職の川崎市長であること、経歴に「2013（平成25）年11月 川崎市長（4期）」と記載され4期目であること、生年月日が1972（昭和47）年4月20日であることを明記する。2026-11-21に本文を直接確認した。"
+    },
+    {
+      "id": "kawasaki-city-election-term-list",
+      "municipality_key": "kawasaki-city",
+      "organization": "川崎市選挙管理委員会",
+      "category": "election",
+      "title": "公職の任期、定数、選挙区など",
+      "url": "https://www.city.kawasaki.jp/910/page/0000019034.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "川崎市選挙管理委員会のページ（更新日 2026年1月6日）。川崎市長について「任期4年／任期満了日 令和11年11月18日／前回の選挙執行日 令和7年10月26日」と日単位で明記する。現任期の満了日の公式明記として用いた。市議会議員の任期満了日（令和9年5月2日）も同ページに明記される。2026-11-21に本文を直接確認した。"
+    },
+    {
+      "id": "kawasaki-city-mayor-election-2025-schedule",
+      "municipality_key": "kawasaki-city",
+      "organization": "川崎市選挙管理委員会",
+      "category": "election",
+      "title": "川崎市長選挙の選挙期日等について",
+      "url": "https://www.city.kawasaki.jp/910/page/0000176727.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "2025年5月12日開催の川崎市選挙管理委員会で選挙期日等を決定した公表。「選挙事由 任期満了による選挙を想定」「現市長の任期満了日 令和7年11月18日（火曜日）」「選挙期日 令和7年10月26日（日曜日）、告示日 令和7年10月12日（日曜日）」と明記する。前任期満了日の公式明記として用いた。2026-11-21に本文を直接確認した。"
+    },
+    {
+      "id": "kawasaki-city-mayor-election-2025-results",
+      "municipality_key": "kawasaki-city",
+      "organization": "川崎市選挙管理委員会",
+      "category": "election",
+      "title": "令和7年10月26日執行 川崎市長選挙 候補者別得票数（全市確定）",
+      "url": "https://www.city.kawasaki.jp/910/cmsfiles/contents/0000181/181605/K2502sc.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "川崎市選挙管理委員会の開票結果PDF（全市確定、確定時刻25時02分）。福田紀彦が253,355票で当選したことを明記する（候補者6人、得票総数410,771票、無効投票3,849票、当日有権者数1,258,970人、投票率32.93%）。得票数は市の公式開票結果で現在も確認できる。2026-11-21にPDFを直接確認した。"
+    },
+    {
+      "id": "kawasaki-city-mayor-election-2025-bulletin",
+      "municipality_key": "kawasaki-city",
+      "organization": "川崎市選挙管理委員会",
+      "category": "election",
+      "title": "令和7年10月26日執行 川崎市長選挙 選挙公報（福田紀彦候補欄、「選挙の記録」第8章再録）",
+      "url": "https://www.city.kawasaki.jp/910/cmsfiles/contents/0000186/186116/senkyonokirokusyuusei2_8-10.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "選挙公報の単独PDFは現存しない（川崎市の選挙特設サイトは選挙ごとに差し替えられるため）。川崎市選挙管理委員会「令和7年10月26日執行 川崎市長選挙・川崎市議会議員川崎区選挙区補欠選挙の記録」（2026年3月発行）の第8章(3)「選挙公報」に、公報そのものが画像で再録されており（記録90〜91ページが市長選分）、市公式サイトの「選挙の記録」ページ（https://www.city.kawasaki.jp/910/page/0000186116.html ）から現在も到達可能である。福田紀彦候補欄は記録90ページの下段左。テキスト層はなく画像のみのため、登録文はPDFの描画画像（200dpi・300dpi・450dpi・600dpi）から転記し複数解像度で照合した。再録であることは記録の体裁（各ページの標題と記録のページ番号）から明らかであり、公報自体は候補者から提出された原稿をそのまま掲載した公式文書（欄外にその旨の注記あり）で出典優先順位の最上位に当たるため、confidence は high とした。2026-11-21に描画画像を直接確認した。"
     }
   ]
 }

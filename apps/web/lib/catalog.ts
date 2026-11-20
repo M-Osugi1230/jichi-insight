@@ -9,6 +9,7 @@ import officialCatalog from "../../../data/catalog/official_sources.json";
 
 export type MunicipalityKey =
   | "hokkaido-prefecture"
+  | "kawasaki-city"
   | "kanagawa-prefecture"
   | "yokohama-city"
   | "osaka-prefecture"
@@ -72,6 +73,12 @@ export const municipalityMeta: Record<
     summary: "新かながわグランドデザイン、2026年度成立後当初予算、3年度の普通会計決算と黒岩祐治知事の現任期を確認します。自治体別ページは準備中です。",
     status: "財政データ公開", href: null,
     fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
+  },
+  "kawasaki-city": {
+    name: "川崎市", type: "政令指定都市",
+    summary: "計画・財政・重点事業に加え、福田紀彦市長の任期と Reviewed 公約13件を公式出典で確認します。自治体別ページは準備中です。",
+    status: "財政データ公開", href: null,
+    fiscalSummary: "Reviewed 財政レコード3件",
   },
   "yokohama-city": {
     name: "横浜市", type: "政令指定都市",

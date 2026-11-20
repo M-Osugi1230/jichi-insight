@@ -41,15 +41,15 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 66
-    assert len({record["id"] for record in catalog["records"]}) == 66
+    assert len(catalog["records"]) == 71
+    assert len({record["id"] for record in catalog["records"]}) == 71
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
     terms = load_json("data/entities/executives/executive_terms.json")
     packets = load_json("data/entities/executives/evidence_packets.json")
 
-    assert len(terms) == 14
+    assert len(terms) == 15
     assert {term["municipality_id"] for term in terms} == {
         "jp-local-400009",
         "jp-local-401307",
@@ -65,6 +65,7 @@ def test_executive_registry_matches_shared_contracts() -> None:
         "jp-local-271403",
         "jp-local-140007",
         "jp-local-141003",
+        "jp-local-141305",
     }
     for term in terms:
         assert validation_errors("schemas/executive_term.schema.json", term) == []
@@ -127,6 +128,12 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
     # election and still shows the predecessor's expiry, so the stated
     # cross-check against the list is pending its next update; the
     # evidence packet records the full chain and the open question.
+    # Kawasaki City's end (2029-11-18) is stated directly in the city
+    # election commission's official list of terms of public offices;
+    # its start (2025-11-19) follows the same Article 259 proviso
+    # chain, anchored by the previous term's expiry (2025-11-18)
+    # stated in the commission's election-schedule announcement, and
+    # the two values agree.
     expected_term_ends = {
         "jp-local-400009": "2029-04-10",
         "jp-local-401307": "2026-12-06",
@@ -142,6 +149,7 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
         "jp-local-271403": "2027-06-08",
         "jp-local-140007": "2027-04-22",
         "jp-local-141003": "2030-10-17",
+        "jp-local-141305": "2029-11-18",
     }
     for term in terms:
         assert term["term_end"] == expected_term_ends[term["municipality_id"]]
@@ -187,6 +195,7 @@ def test_executive_term_starts_follow_statutory_counting() -> None:
         "jp-local-271403": "2023-06-09",
         "jp-local-140007": "2023-04-23",
         "jp-local-141003": "2026-10-18",
+        "jp-local-141305": "2025-11-19",
     }
     for term in terms:
         assert term["term_start"] == expected_term_starts[term["municipality_id"]]
@@ -275,6 +284,16 @@ def test_manifesto_readiness_is_not_confused_with_progress() -> None:
     # in that election from the official bulletin itself.
     assert by_municipality["jp-local-141003"]["manifesto_source_ids"] == [
         "yokohama-city-mayor-election-2026-bulletin",
+    ]
+    # Kawasaki City's source is the 2025 election bulletin as reprinted
+    # in the city election commission's official election record
+    # (Chapter 8): the standalone bulletin PDF is not extant because
+    # the city's election special site is replaced at each election,
+    # but the record reprints the bulletin itself and stays reachable
+    # on the official site, so the reprint is registered as the source
+    # with its provenance stated in the catalog and evidence packets.
+    assert by_municipality["jp-local-141305"]["manifesto_source_ids"] == [
+        "kawasaki-city-mayor-election-2025-bulletin",
     ]
 
 

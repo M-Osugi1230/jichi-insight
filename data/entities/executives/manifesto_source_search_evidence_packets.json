@@ -663,5 +663,48 @@
       "未接続の公約への進捗証拠の接続を拡充できるか。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-kawasaki-city-2025",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-kawasaki-city-2025",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "川崎市長選挙の選挙期日等の公表と開票結果を確認し、2025年10月26日執行・候補者6人・福田紀彦の当選（253,355票）を確認した。選挙特設サイトは選挙ごとに差し替えられており、公報の単独PDFには到達できなかった。",
+        "source_ids": [
+          "kawasaki-city-mayor-election-2025-schedule",
+          "kawasaki-city-mayor-election-2025-results"
+        ],
+        "location_note": "市選挙管理委員会の選挙期日等の公表ページと開票結果PDF。",
+        "decision": "accepted",
+        "review_note": "選挙の基本事実の一次資料として採用。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "市選挙管理委員会の「選挙の記録」（2026年3月発行）第8章(3)「選挙公報」に、選挙公報そのものが画像で再録されていることを確認した（市長選分は記録90〜91ページ、福田紀彦候補欄は90ページ下段左）。記録は市の「選挙の記録」ページから現在も到達可能である。",
+        "source_ids": [
+          "kawasaki-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "「選挙の記録」第8〜10章PDFの記録90〜91ページ。",
+        "decision": "accepted",
+        "review_note": "再録は公報の掲載内容そのものであり、出典優先順位の最上位として登録した。描画画像を複数解像度で照合して転記した。"
+      },
+      {
+        "field": "result_status",
+        "statement": "選挙公報（「選挙の記録」への再録）を登録し、分割レビューを経て公約レコード13件を作成したため、result_status を source_registered とした。公報より詳細な候補者資料は未特定のままである。",
+        "source_ids": [
+          "kawasaki-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "分割レビュー manifesto-review-jp-local-141305-2025 に基づく。",
+        "decision": "accepted",
+        "review_note": "詳細資料が存在しないという主張はしない。"
+      }
+    ],
+    "open_questions": [
+      "選挙公報の単独PDFが市の公式サイト内に現存するか。",
+      "政策パンフレット等、選挙公報より詳細な候補者資料の安定した所在が特定できるか。"
+    ],
+    "review_status": "reviewed"
   }
 ]

@@ -832,5 +832,71 @@
       "登録済み事業と接続していない公約9件については、進捗を裏付ける公式資料が登録され次第、接続を拡充する。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kawasaki-city-current-mayor-term",
+    "subject_type": "executive_term",
+    "subject_id": "jp-local-141305-executive-2025-11-19",
+    "claims": [
+      {
+        "field": "person_name",
+        "statement": "福田紀彦は現職の川崎市長であり、4期目である。市の公式プロフィールは経歴に「2013（平成25）年11月 川崎市長（4期）」と記載する。",
+        "source_ids": [
+          "kawasaki-city-mayor"
+        ],
+        "location_note": "市長プロフィールページの経歴欄（更新日 2025年11月19日）。",
+        "decision": "accepted",
+        "review_note": "現職性と期数は市の公式プロフィールに基づく。"
+      },
+      {
+        "field": "election_date",
+        "statement": "直近の選挙は第21回川崎市長選挙で、2025年10月26日に執行され（告示日は同年10月12日、選挙事由は任期満了）、候補者6人のうち福田紀彦が253,355票（得票率61.68%）で当選した。得票総数は410,771票、無効投票は3,849票、投票率は32.93%であった。得票数は市の公式開票結果（全市確定）で現在も確認できる。首長レコード自体に得票数の項目はないため、得票数はこの証拠パケットにのみ記録する。",
+        "source_ids": [
+          "kawasaki-city-mayor-election-2025-results",
+          "kawasaki-city-mayor-election-2025-schedule"
+        ],
+        "location_note": "開票結果PDF（全市確定、確定時刻25時02分）の候補者別得票数表と、選挙期日等の決定公表。",
+        "decision": "accepted",
+        "review_note": "得票数は開票結果PDFを直接読み取り照合した。総務省の選挙結果調の同選挙の数値とも一致する。"
+      },
+      {
+        "field": "term_start",
+        "statement": "任期開始日は2025年11月19日である。前市長の任期満了日は2025年11月18日と市選挙管理委員会が公式に明記しており、本選挙は任期満了による選挙としてその満了日より前に執行され、当選者（現職の福田紀彦）は満了日まで在任したため、公職選挙法第259条ただし書により任期は前任期満了日の翌日から起算される。開始日を日単位で直接明記した市公式資料は未特定であり、開始日はこの構成により確定した。",
+        "source_ids": [
+          "kawasaki-city-mayor-election-2025-schedule",
+          "public-offices-election-act"
+        ],
+        "location_note": "選挙期日等の公表の「現市長の任期満了日」欄と公職選挙法第259条ただし書。",
+        "decision": "accepted",
+        "review_note": "満了日の公式明記と法令の構成で開始日を確定した（札幌市長・堺市長と同型）。"
+      },
+      {
+        "field": "term_end",
+        "statement": "任期満了日は2029年11月18日であり、市選挙管理委員会の「公職の任期、定数、選挙区など」に「川崎市長 任期4年 任期満了日 令和11年11月18日」と日単位で明記されている。開始日（2025年11月19日）に地方自治法第140条の4年を加えた満了日とも一致する。",
+        "source_ids": [
+          "kawasaki-city-election-term-list",
+          "public-offices-election-act"
+        ],
+        "location_note": "「公職の任期、定数、選挙区など」の川崎市長の行（更新日 2026年1月6日）。",
+        "decision": "accepted",
+        "review_note": "公式明記の満了日を正とし、法令計算との一致も確認した。"
+      },
+      {
+        "field": "manifesto_source_ids",
+        "statement": "原典は2025年川崎市長選挙の選挙公報である。公報の単独PDFは現存しないが、市選挙管理委員会の「選挙の記録」（2026年3月発行）第8章(3)に公報そのものが画像で再録されており、福田紀彦候補欄（記録90ページ下段左）から公約13件を転記・登録したため、manifesto_source_ids に接続した。原典探索の記録は manifesto-source-search-kawasaki-city-2025、分割レビューは manifesto-review-jp-local-141305-2025 にある。",
+        "source_ids": [
+          "kawasaki-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "「選挙の記録」第8〜10章PDFの記録90〜91ページ（市長選の選挙公報）。",
+        "decision": "accepted",
+        "review_note": "再録という来歴は出典カタログと公約証拠パケットにも明記した。"
+      }
+    ],
+    "open_questions": [
+      "任期開始日（2025年11月19日）を日単位で直接明記した市の公式ページは未特定である。次回選挙の日程公表時などに、選管の任期満了一覧等の明示値と照合する。",
+      "選挙公報の単独PDFが市の公式サイト内に現存するかは未確認である（到達手段は「選挙の記録」への再録のみを確認した）。",
+      "2029年の次回市長選挙では、選挙期間中に公報の公式掲載を確認し、次任期の原典として登録する。"
+    ],
+    "review_status": "reviewed"
   }
 ]

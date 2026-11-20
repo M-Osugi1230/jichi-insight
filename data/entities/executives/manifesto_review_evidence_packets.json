@@ -503,5 +503,47 @@
       "公報より詳細な候補者資料（政策パンフレット等）の安定した所在が特定できれば、登録済みの公約文と照合する。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kawasaki-city-2025-manifesto-review",
+    "subject_type": "manifesto_review",
+    "subject_id": "manifesto-review-jp-local-141305-2025",
+    "claims": [
+      {
+        "field": "source_location",
+        "statement": "福田紀彦候補欄は「選挙の記録」90ページの下段左に掲載され、見出し、政策枠12件（2列×6段）、「特別市」ブロック、プロフィール、案内文で構成される。候補欄の欄外には「この選挙公報は、候補者から提出された原稿をそのまま掲載したものです。」との注記がある。",
+        "source_ids": [
+          "kawasaki-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "「選挙の記録」第8〜10章PDFの記録90ページ下段左。",
+        "decision": "accepted",
+        "review_note": "2026-11-21に描画画像（200dpi・300dpi・450dpi・600dpi）で候補者欄全体を確認した。"
+      },
+      {
+        "field": "segmentation_status",
+        "statement": "政策枠12件を枠の境界に従い12件へ分割し、「特別市」ブロックの見出しを1件として計13件を作成した。見出しのスローガン、プロフィール（経歴）、詳細への案内文、選挙運動方法の表明は公約ではないためレコード化していない。要介護度の改善の枠は実績の主張と将来への方向性の表明が混在するため、原文のまま1件として登録し、その性質を明記した。",
+        "source_ids": [
+          "kawasaki-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "候補者欄全体。",
+        "decision": "accepted",
+        "review_note": "句読点による推測分割は行っていない（docs/PROMISE_EXTRACTION.md の分割ルール）。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、市選挙管理委員会の「選挙の記録」（2026年3月発行）第8章(3)「選挙公報」に再録された選挙公報そのものから取得した。選挙公報は候補者から提出された原稿をそのまま掲載した公式文書であり、出典優先順位の最上位に当たる。単独PDFが現存しないことは隠さず、再録という来歴を出典カタログと各証拠パケットに明記した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "kawasaki-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "市の「選挙の記録」ページと第8〜10章PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "公報は出典優先順位の最上位であり、第三者経由の引用ではない。"
+      }
+    ],
+    "open_questions": [
+      "選挙公報の単独PDFが市の公式サイト内に現存するかは未確認である（到達手段は「選挙の記録」への再録のみを確認した）。",
+      "候補者の公式サイト等に公報より詳細な政策資料が安定した所在で現存するかは未確認である（公報欄内の案内文はホームページへの誘導だが、選挙特設サイトは差し替え済み）。"
+    ],
+    "review_status": "reviewed"
   }
 ]
