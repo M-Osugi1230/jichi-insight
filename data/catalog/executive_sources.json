@@ -1,5 +1,5 @@
 {
-  "version": "0.15.0",
+  "version": "0.16.0",
   "updated_at": "2026-11-20",
   "scope": "pilot",
   "records": [
@@ -576,6 +576,90 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "北海道選挙管理委員会が「市町村選挙関係資料」ページ（https://www.pref.hokkaido.lg.jp/hs/68024.html）で公表する道内市町村の長及び議会議員の任期満了年月日一覧。札幌市の行に、市町村長の任期満了日として令和9年5月1日の明記がある。"
+    },
+    {
+      "availability": "published",
+      "category": "executive",
+      "confidence": "high",
+      "id": "osaka-pref-governor",
+      "indexed_at": "2026-11-20",
+      "municipality_key": "osaka-prefecture",
+      "notes": "大阪府公式の知事プロフィール。現職知事が吉村洋文であることと略歴を示す。略歴は「平成31年4月 大阪府知事（第一期）」「令和5年4月 大阪府知事（第二期）」までの記載で、2026年2月の出直し選挙での再選を「第三期」とは記載していない。ページ末尾に大阪府の法人番号4000020270008（団体コード270008を含む）が掲載されている。",
+      "organization": "大阪府",
+      "review_status": "reviewed",
+      "source_kind": "landing_page",
+      "title": "知事のプロフィール（大阪府）",
+      "url": "https://www.pref.osaka.lg.jp/o020020/hisho/tijiprofile/index.html"
+    },
+    {
+      "availability": "published",
+      "category": "executive",
+      "confidence": "high",
+      "id": "osaka-pref-governor-term-faq",
+      "indexed_at": "2026-11-20",
+      "municipality_key": "osaka-prefecture",
+      "notes": "大阪府公式FAQ（秘書課、更新日2024年5月14日）。「知事の任期は、令和5年4月9日から令和9年4月8日（4年）となっております」と、現任期の開始日・満了日を日単位で明記する。",
+      "organization": "大阪府",
+      "review_status": "reviewed",
+      "source_kind": "landing_page",
+      "title": "知事の任期について知りたい。（大阪府FAQ）",
+      "url": "https://www.pref.osaka.lg.jp/faq/o020020/faq_001386.html"
+    },
+    {
+      "availability": "published",
+      "category": "election",
+      "confidence": "high",
+      "id": "osaka-pref-term-expiry-list-2026",
+      "indexed_at": "2026-11-20",
+      "municipality_key": "osaka-prefecture",
+      "notes": "大阪府選挙管理委員会「議員・首長の任期満了日」一覧（令和8年11月11日現在）。大阪府知事の任期満了日として令和9年4月8日を明記する。2026年2月の出直し選挙の後に作成された一覧であり、再選後も満了日が変わらないことの裏取りになる。",
+      "organization": "大阪府選挙管理委員会",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "議員・首長の任期満了日一覧（令和8年11月11日現在）",
+      "url": "https://www.pref.osaka.lg.jp/documents/15148/r081111ninki.pdf"
+    },
+    {
+      "availability": "published",
+      "category": "election",
+      "confidence": "high",
+      "id": "osaka-pref-governor-election-2026-page",
+      "indexed_at": "2026-11-20",
+      "municipality_key": "osaka-prefecture",
+      "notes": "大阪府選挙管理委員会の選挙トップページ。大阪府知事選挙について「選挙期日：令和8年2月8日（日曜日）」「選挙期日の告示日：令和8年1月22日（木曜日）」と明記し、退職の申立てに伴う選挙（出直し選挙）であることを示す。",
+      "organization": "大阪府選挙管理委員会",
+      "review_status": "reviewed",
+      "source_kind": "landing_page",
+      "title": "令和8年執行 衆議院議員総選挙・大阪府知事選挙（選挙管理委員会）",
+      "url": "https://www.pref.osaka.lg.jp/o190010/senkan/r8syuugiinsenkyo/r8syuugiinsenkyo.html"
+    },
+    {
+      "availability": "published",
+      "category": "election",
+      "confidence": "high",
+      "id": "osaka-pref-governor-election-2026-results",
+      "indexed_at": "2026-11-20",
+      "municipality_key": "osaka-prefecture",
+      "notes": "2026年2月8日執行の大阪府知事選挙の投開票結果調（大阪府選挙管理委員会）。府計で吉村洋文3,024,106票（当選）、大西つねき452,807票、なっとうたもつ155,855票、有効投票3,632,768票を掲載する。",
+      "organization": "大阪府選挙管理委員会",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "令和8年2月8日執行 大阪府知事選挙 投開票結果調",
+      "url": "https://www.pref.osaka.lg.jp/documents/125389/4-1toukaihyokekkacho_chiji.pdf"
+    },
+    {
+      "availability": "published",
+      "category": "election",
+      "confidence": "high",
+      "id": "osaka-pref-governor-election-2023-results-daito",
+      "indexed_at": "2026-11-20",
+      "municipality_key": "osaka-prefecture",
+      "notes": "大東市選挙管理委員会の公式結果PDF。2023年4月9日執行の大阪府知事選挙について、大東市分とあわせて府全体の確定得票（吉村洋文2,439,444票で当選）を併記する。府選管の2023年投開票結果調の確定版ページの所在が未確認のため、確定値の裏付けとして用いた。",
+      "organization": "大東市選挙管理委員会",
+      "review_status": "reviewed",
+      "source_kind": "document",
+      "title": "令和5年4月9日執行 大阪府知事選挙 結果（大東市・府全体の確定得票）",
+      "url": "https://www.city.daito.lg.jp/uploaded/attachment/28420.pdf"
     }
   ]
 }
