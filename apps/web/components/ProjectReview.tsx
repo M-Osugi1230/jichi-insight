@@ -27,7 +27,7 @@ export function ProjectReview({area, record, kpis}:{area:string;record:ProjectRe
   const budgets = [...record.budget_records].sort((a,b) => a.fiscal_year - b.fiscal_year);
   const hasSettlement = budgets.some(b => b.kind === "settlement" && b.amount_yen !== null);
   const end = record.official_evaluation?.direction;
-  const hasNoPublishedProjectAssessment = area === "toyota-city" || area === "sapporo-city" || area === "asahikawa-city";
+  const hasNoPublishedProjectAssessment = area === "osaka-prefecture" || area === "toyota-city" || area === "sapporo-city" || area === "asahikawa-city";
   return <section className={styles.section}>
     <p className={styles.meta}>Reviewed / {record.fiscal_year}年度 / 対象：{show(record.target_population)} / 担当：{show(record.responsible_department)} / 上位施策：{show(record.parent_policy)}</p>
     <div className={styles.detail}><h2>目的と対象</h2><p>{record.purpose}</p><p className={styles.meta}>首長公約との接続：{record.related_promise_ids.length ? "関連候補（自動推定を含む・要確認）。確信度：低（inferred）／証拠パケット：needs_review。確定的な因果接続や達成判定ではありません。" : "接続公約なし（未着手・未達を意味しません）"}</p>
