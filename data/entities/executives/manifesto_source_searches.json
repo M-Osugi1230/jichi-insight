@@ -433,5 +433,35 @@
     ],
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-kawaguchi-city-2026",
+    "executive_term_id": "jp-local-112038-executive-2026-02-09",
+    "searched_at": "2026-11-21",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "general_web_search"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "kawaguchi-city-mayor-election-2026-bulletin"
+    ],
+    "checked_source_ids": [
+      "kawaguchi-city-mayor-election-2026-bulletin",
+      "kawaguchi-city-mayor-election-2026-results-page",
+      "kawaguchi-city-mayor-election-2026-results",
+      "kawaguchi-city-koho-2026-03-inauguration",
+      "kawaguchi-city-election-2026-schedule-press"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "選挙公報は、市の選挙結果ページから単独PDFで現在も到達できることを確認したため、これを原典として登録し、分割レビュー（manifesto-review-jp-local-112038-2026）を経て公約26件を作成した。公報は候補者提出原稿をそのまま掲載した公式文書であるため、原典としての格付けは high とした。公報より詳細な候補者資料（候補者サイトの政策ページ等。公報欄内に yurikookamura.com とQRコードの案内がある）の安定した所在は特定していないが、存在しないという主張はしない。",
+    "next_actions": [
+      "候補者の政策資料が公式に保全・公表された場合は、登録済みの公約文と照合する。",
+      "2030年の次回市長選挙では、選挙期間中に公報の公式掲載を確認し、次任期の原典として登録する。"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]
