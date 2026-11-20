@@ -79,6 +79,15 @@ def test_executives_and_promises_pages_show_term_end_and_both_city_promises():
     assert "Reviewed 公約原文 13件" not in PROMISES_PAGE
 
 
+def test_existing_web_registry_and_quality_metadata_cover_both_municipalities():
+    assert '"jp-local-141003": "yokohama-city"' in EXECUTIVES
+    assert '"jp-local-141305": "kawasaki-city"' in EXECUTIVES
+    assert '"yokohama-city": {' in CATALOG
+    assert '"kawasaki-city": {' in CATALOG
+    assert '"yokohama-city":' in QUALITY
+    assert '"kawasaki-city":' in QUALITY
+
+
 def test_yokohama_and_kawasaki_promise_discovery_gates_are_reviewed_record_scoped():
     assert 'officialCode === "141003"' in DISCOVERY
     assert 'hasReviewedExecutivePromises("jp-local-141003")' in DISCOVERY
