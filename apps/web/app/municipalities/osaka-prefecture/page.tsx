@@ -23,7 +23,7 @@ import {
   osakaFinance,
   osakaFinanceSources,
   osakaPlanReview,
-} from "@/lib/osakaFinance";
+} from "@/lib/osakaPrefectureFinance";
 import { canonicalFor } from "@/lib/pageMetadata";
 import { assemblies } from "@/lib/assemblyRegistry";
 import { projectRegistry } from "@/lib/projectRegistry";
