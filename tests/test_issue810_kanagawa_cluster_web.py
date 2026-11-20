@@ -171,7 +171,8 @@ def test_yokohama_assembly_display_facts_match_reviewed_records_and_caveats():
     assert "委員会報告への賛否" in evidence_text
     assert "採択への賛否" in evidence_text
     assert "第4回定例会" in evidence_text
-    assert "継続審査中" in evidence_text
+    assert "表決はまだ行われていない" in evidence_text
+    assert "継続審査中" in detail
     assert "横浜市会の議員個人別賛否" in detail
     assert "請願の賛否" in detail
     assert "決算関係27件" in detail
