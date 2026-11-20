@@ -75,9 +75,9 @@ export const municipalityMeta: Record<
   },
   "kawasaki-city": {
     name: "川崎市", type: "政令指定都市",
-    summary: "計画・財政・重点事業に加え、福田紀彦市長の任期と Reviewed 公約13件を公式出典で確認します。",
-    status: "財政データ公開", href: "/municipalities/kawasaki-city",
-    fiscalSummary: "Reviewed 財政データ（汎用市ページ）",
+    summary: "計画・財政・重点事業に加え、福田紀彦市長の任期と Reviewed 公約13件を公式出典で確認します。自治体別ページは準備中です。",
+    status: "財政データ公開", href: null,
+    fiscalSummary: "Reviewed 財政レコード3件",
   },
   "hokkaido-prefecture": {
     name: "北海道",
