@@ -1,0 +1,169 @@
+{
+  "version": "1.0.0",
+  "updated_at": "2026-11-20",
+  "municipality_id": "jp-local-271403",
+  "municipality_key": "sakai-city",
+  "issue": 768,
+  "scope": "expanded",
+  "population": {
+    "description": "堺市基本計画2030（2026年3月策定、5重点戦略・27施策）の構成事業のうち、計画の点検の受け皿として公表される令和8年度事務事業評価シート（2026年8月13日公表）に掲載された事務事業の全体。基本計画2030の本編は施策と取組の方向性（叙述）を示すのみで事業の一覧を持たないため、事業レベルの母集団は評価シートに拠る。各シートは「事業の位置付け」として計画の重点戦略・施策を宣言する（継続事業は実施年度の枠組みである基本計画2025の戦略・施策で、令和8年度新規事業は基本計画2030の戦略・施策で宣言する。5つの重点戦略は両計画に共通するが、戦略4・5の英語表記の接尾辞は版により異なる）。正誤表（r8_seigohyou.pdf）は事業シートではないため母集団から除いた。評価シートが作成されない事業（基本計画等のKPIに寄与しないB〜G分類の事業等）は事業概要一覧表のみの公表であり、本母集団には含まれない。",
+    "fiscal_year": 2026,
+    "project_count": 482,
+    "strategy_linked_count": 399,
+    "strategy_unlinked_count": 83,
+    "count_note": "project_count 482件は組織機構順索引から取得したシートファイル483件から正誤表1件を除いた数（令和7年度事務事業480件＋令和8年度新規事業2件）。strategy_linked_count 399件は、シートの「事業の位置付け」の座標抽出により単一の重点戦略への紐付けを確認した数（戦略別内訳：戦略1＝38、戦略2＝135、戦略3＝113、戦略4＝51、戦略5＝62）。残り83件は施策との関連が「―」（なし）と明記された事業であり、重点戦略の選定対象としない。",
+    "source_ids": [
+      "sakai-city-project-evaluation-fy2026-index",
+      "sakai-city-project-evaluation-fy2026-sosiki-index",
+      "sakai-city-basic-plan-2030"
+    ]
+  },
+  "selection_rule": {
+    "description": "計画体系の柱である5つの重点戦略ごとに、先頭から2事業ずつ、計10件を選ぶ。重点戦略内での並びは、(1)シートが「事業の位置付け」に宣言する施策の順（施策番号順）、(2)公式公表順（事務事業評価の組織機構順索引における部局の掲載順、次いで各部局ページ内の掲載順＝事業番号順）で定める。重点戦略への位置付けがない事業（83件）は選定対象としない。金額の大小では選ばない。",
+    "pillars": [
+      "重点戦略1 堺の特色ある歴史文化 ～Legacy～",
+      "重点戦略2 人生100年時代の健康・福祉 ～Well-being～",
+      "重点戦略3 将来に希望が持てる子育て・教育 ～Children's future～",
+      "重点戦略4 人や企業を惹きつける都市魅力 ～Attractiveness～",
+      "重点戦略5 強くしなやかな都市基盤 ～Resilience～"
+    ]
+  },
+  "selections": [
+    {
+      "pillar": "重点戦略1 堺の特色ある歴史文化 ～Legacy～",
+      "policy": "世界遺産「百舌鳥・古市古墳群」の継承と魅力の創出",
+      "department": "文化観光局 歴史遺産活用部 世界遺産課",
+      "project_id": "jp-local-271403-project-2026-world-heritage-preservation-utilization",
+      "series_id": "jp-local-271403-project-series-world-heritage-preservation-utilization",
+      "official_title": "世界遺産保存活用事業",
+      "selection_basis": "重点戦略1 堺の特色ある歴史文化 ～Legacy～の掲載順1番目の事業。最初の施策「世界遺産「百舌鳥・古市古墳群」の継承と魅力の創出」に位置付けられる事業のうち、公式公表順（組織機構順の部局別一覧における掲載順＝事業番号順）の先頭から1番目にあたり、金額の大小では選んでいない。",
+      "source_ids": [
+        "sakai-city-evaluation-sheet-008-068",
+        "sakai-city-evaluation-fy2026-dept-bunkakankoukyoku"
+      ]
+    },
+    {
+      "pillar": "重点戦略1 堺の特色ある歴史文化 ～Legacy～",
+      "policy": "世界遺産「百舌鳥・古市古墳群」の継承と魅力の創出",
+      "department": "文化観光局 歴史遺産活用部 世界遺産課",
+      "project_id": "jp-local-271403-project-2026-mozu-kofun-group-management",
+      "series_id": "jp-local-271403-project-series-mozu-kofun-group-management",
+      "official_title": "百舌鳥古墳群等管理事業",
+      "selection_basis": "重点戦略1 堺の特色ある歴史文化 ～Legacy～の掲載順2番目の事業。最初の施策「世界遺産「百舌鳥・古市古墳群」の継承と魅力の創出」に位置付けられる事業のうち、公式公表順（組織機構順の部局別一覧における掲載順＝事業番号順）の先頭から2番目にあたり、金額の大小では選んでいない。",
+      "source_ids": [
+        "sakai-city-evaluation-sheet-008-094",
+        "sakai-city-evaluation-fy2026-dept-bunkakankoukyoku"
+      ]
+    },
+    {
+      "pillar": "重点戦略2 人生100年時代の健康・福祉 ～Well-being～",
+      "policy": "健康で長生きできる都市の実現",
+      "department": "健康福祉局 健康部 健康医療政策課",
+      "project_id": "jp-local-271403-project-2026-oral-health-center-subsidy",
+      "series_id": "jp-local-271403-project-series-oral-health-center-subsidy",
+      "official_title": "口腔保健センター補助事業",
+      "selection_basis": "重点戦略2 人生100年時代の健康・福祉 ～Well-being～の掲載順1番目の事業。最初の施策「健康で長生きできる都市の実現」に位置付けられる事業のうち、公式公表順（組織機構順の部局別一覧における掲載順＝事業番号順）の先頭から1番目にあたり、金額の大小では選んでいない。",
+      "source_ids": [
+        "sakai-city-evaluation-sheet-011-175",
+        "sakai-city-evaluation-fy2026-dept-kenkouhukushikyoku"
+      ]
+    },
+    {
+      "pillar": "重点戦略2 人生100年時代の健康・福祉 ～Well-being～",
+      "policy": "健康で長生きできる都市の実現",
+      "department": "健康福祉局 健康部 健康医療政策課",
+      "project_id": "jp-local-271403-project-2026-nurse-workforce-measures",
+      "series_id": "jp-local-271403-project-series-nurse-workforce-measures",
+      "official_title": "看護師確保対策事業",
+      "selection_basis": "重点戦略2 人生100年時代の健康・福祉 ～Well-being～の掲載順2番目の事業。最初の施策「健康で長生きできる都市の実現」に位置付けられる事業のうち、公式公表順（組織機構順の部局別一覧における掲載順＝事業番号順）の先頭から2番目にあたり、金額の大小では選んでいない。",
+      "source_ids": [
+        "sakai-city-evaluation-sheet-011-176",
+        "sakai-city-evaluation-fy2026-dept-kenkouhukushikyoku"
+      ]
+    },
+    {
+      "pillar": "重点戦略3 将来に希望が持てる子育て・教育 ～Children's future～",
+      "policy": "妊娠から学齢期まで切れめのない子育て支援の充実",
+      "department": "こども青少年局 子育て支援部 幼保政策課",
+      "project_id": "jp-local-271403-project-2026-actual-cost-supplementary-benefit",
+      "series_id": "jp-local-271403-project-series-actual-cost-supplementary-benefit",
+      "official_title": "実費徴収に係る補足給付を行う事業",
+      "selection_basis": "重点戦略3 将来に希望が持てる子育て・教育 ～Children's future～の掲載順1番目の事業。最初の施策「妊娠から学齢期まで切れめのない子育て支援の充実」に位置付けられる事業のうち、公式公表順（組織機構順の部局別一覧における掲載順＝事業番号順）の先頭から1番目にあたり、金額の大小では選んでいない。",
+      "source_ids": [
+        "sakai-city-evaluation-sheet-014-002",
+        "sakai-city-evaluation-fy2026-dept-kodomoseishounenkyoku"
+      ]
+    },
+    {
+      "pillar": "重点戦略3 将来に希望が持てる子育て・教育 ～Children's future～",
+      "policy": "妊娠から学齢期まで切れめのない子育て支援の充実",
+      "department": "こども青少年局 こども青少年育成部 こども企画課",
+      "project_id": "jp-local-271403-project-2026-child-supporter-training",
+      "series_id": "jp-local-271403-project-series-child-supporter-training",
+      "official_title": "さかいチャイルドサポーター育成事業",
+      "selection_basis": "重点戦略3 将来に希望が持てる子育て・教育 ～Children's future～の掲載順2番目の事業。最初の施策「妊娠から学齢期まで切れめのない子育て支援の充実」に位置付けられる事業のうち、公式公表順（組織機構順の部局別一覧における掲載順＝事業番号順）の先頭から2番目にあたり、金額の大小では選んでいない。",
+      "source_ids": [
+        "sakai-city-evaluation-sheet-014-003",
+        "sakai-city-evaluation-fy2026-dept-kodomoseishounenkyoku"
+      ]
+    },
+    {
+      "pillar": "重点戦略4 人や企業を惹きつける都市魅力 ～Attractiveness～",
+      "policy": "行政のデジタル化、スマートシティ推進による暮らしの質の向上",
+      "department": "政策局 政策企画部 共創連携課",
+      "project_id": "jp-local-271403-project-2026-public-private-demonstration-projects",
+      "series_id": "jp-local-271403-project-series-public-private-demonstration-projects",
+      "official_title": "公民連携実証プロジェクト推進事業",
+      "selection_basis": "重点戦略4 人や企業を惹きつける都市魅力 ～Attractiveness～の掲載順1番目の事業。最初の施策「行政のデジタル化、スマートシティ推進による暮らしの質の向上」に位置付けられる事業のうち、公式公表順（組織機構順の部局別一覧における掲載順＝事業番号順）の先頭から1番目にあたり、金額の大小では選んでいない。",
+      "source_ids": [
+        "sakai-city-evaluation-sheet-001-025",
+        "sakai-city-evaluation-fy2026-dept-seisakukyoku"
+      ]
+    },
+    {
+      "pillar": "重点戦略4 人や企業を惹きつける都市魅力 ～Attractiveness～",
+      "policy": "行政のデジタル化、スマートシティ推進による暮らしの質の向上",
+      "department": "政策局 政策企画部 共創連携課",
+      "project_id": "jp-local-271403-project-2026-city-os-utilization",
+      "series_id": "jp-local-271403-project-series-city-os-utilization",
+      "official_title": "都市OS活用事業",
+      "selection_basis": "重点戦略4 人や企業を惹きつける都市魅力 ～Attractiveness～の掲載順2番目の事業。最初の施策「行政のデジタル化、スマートシティ推進による暮らしの質の向上」に位置付けられる事業のうち、公式公表順（組織機構順の部局別一覧における掲載順＝事業番号順）の先頭から2番目にあたり、金額の大小では選んでいない。",
+      "source_ids": [
+        "sakai-city-evaluation-sheet-001-026",
+        "sakai-city-evaluation-fy2026-dept-seisakukyoku"
+      ]
+    },
+    {
+      "pillar": "重点戦略5 強くしなやかな都市基盤 ～Resilience～",
+      "policy": "自助・共助・公助のバランスのとれた防災・減災力の向上",
+      "department": "危機管理室 危機管理課",
+      "project_id": "jp-local-271403-project-2026-crisis-management-system",
+      "series_id": "jp-local-271403-project-series-crisis-management-system",
+      "official_title": "危機管理体制整備事業",
+      "selection_basis": "重点戦略5 強くしなやかな都市基盤 ～Resilience～の掲載順1番目の事業。最初の施策「自助・共助・公助のバランスのとれた防災・減災力の向上」に位置付けられる事業のうち、公式公表順（組織機構順の部局別一覧における掲載順＝事業番号順）の先頭から1番目にあたり、金額の大小では選んでいない。",
+      "source_ids": [
+        "sakai-city-evaluation-sheet-002-001",
+        "sakai-city-evaluation-fy2026-dept-kikikanrishitsu"
+      ]
+    },
+    {
+      "pillar": "重点戦略5 強くしなやかな都市基盤 ～Resilience～",
+      "policy": "自助・共助・公助のバランスのとれた防災・減災力の向上",
+      "department": "危機管理室 防災課",
+      "project_id": "jp-local-271403-project-2026-disaster-stockpile-development",
+      "series_id": "jp-local-271403-project-series-disaster-stockpile-development",
+      "official_title": "防災備蓄等整備事業",
+      "selection_basis": "重点戦略5 強くしなやかな都市基盤 ～Resilience～の掲載順2番目の事業。最初の施策「自助・共助・公助のバランスのとれた防災・減災力の向上」に位置付けられる事業のうち、公式公表順（組織機構順の部局別一覧における掲載順＝事業番号順）の先頭から2番目にあたり、金額の大小では選んでいない。",
+      "source_ids": [
+        "sakai-city-evaluation-sheet-002-003",
+        "sakai-city-evaluation-fy2026-dept-kikikanrishitsu"
+      ]
+    }
+  ],
+  "review_status": "reviewed",
+  "expansion_rule": {
+    "description": "初回登録として10件（各重点戦略2件）。後続の展開では、同じ掲載順ルールを継続し、各重点戦略について掲載順の後続事業を追加する。",
+    "added_count": 10,
+    "total_count": 10
+  }
+}
