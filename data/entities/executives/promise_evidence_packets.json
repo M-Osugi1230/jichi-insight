@@ -6331,6 +6331,408 @@
     "review_status": "reviewed"
   },
   {
+    "id": "evidence-yokohama-city-2026-promise-001",
+    "subject_type": "promise",
+    "subject_id": "jp-local-141003-executive-2026-10-18-promise-001",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、横浜市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "yokohama-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報・原沢あつみ候補欄「横浜の未来をつくる12の政策」左列第1段。",
+        "decision": "accepted",
+        "review_note": "2026-11-21に公式PDFを取得し、300dpi・450dpiの複数解像度で照合した。資料上の境界（枠内の項目）をそのまま公約の単位とし、文単位の編集分割はしていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、横浜市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "yokohama-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "横浜市公式「横浜市長選挙（候補者情報・選挙公報）」ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "横浜市中期計画2026～2029 政策群02「防災・減災」の施策群「地震防災対策」と、公約の文言・内容が対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "yokohama-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "横浜市中期計画2026～2029の施策群（段階2で登録済みの事業レコード）。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "接続は推定であり、公式な対応付けが公表されれば見直す。進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-yokohama-city-2026-promise-002",
+    "subject_type": "promise",
+    "subject_id": "jp-local-141003-executive-2026-10-18-promise-002",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、横浜市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "yokohama-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報・原沢あつみ候補欄「横浜の未来をつくる12の政策」左列第2段。",
+        "decision": "accepted",
+        "review_note": "2026-11-21に公式PDFを取得し、300dpi・450dpiの複数解像度で照合した。資料上の境界（枠内の項目）をそのまま公約の単位とし、文単位の編集分割はしていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、横浜市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "yokohama-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "横浜市公式「横浜市長選挙（候補者情報・選挙公報）」ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      }
+    ],
+    "open_questions": [
+      "対応する登録済み事業はなく、事業接続と進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-yokohama-city-2026-promise-003",
+    "subject_type": "promise",
+    "subject_id": "jp-local-141003-executive-2026-10-18-promise-003",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、横浜市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "yokohama-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報・原沢あつみ候補欄「横浜の未来をつくる12の政策」左列第3段。",
+        "decision": "accepted",
+        "review_note": "2026-11-21に公式PDFを取得し、300dpi・450dpiの複数解像度で照合した。資料上の境界（枠内の項目）をそのまま公約の単位とし、文単位の編集分割はしていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、横浜市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "yokohama-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "横浜市公式「横浜市長選挙（候補者情報・選挙公報）」ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      }
+    ],
+    "open_questions": [
+      "対応する登録済み事業はなく、事業接続と進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-yokohama-city-2026-promise-004",
+    "subject_type": "promise",
+    "subject_id": "jp-local-141003-executive-2026-10-18-promise-004",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、横浜市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "yokohama-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報・原沢あつみ候補欄「横浜の未来をつくる12の政策」左列第4段。",
+        "decision": "accepted",
+        "review_note": "2026-11-21に公式PDFを取得し、300dpi・450dpiの複数解像度で照合した。資料上の境界（枠内の項目）をそのまま公約の単位とし、文単位の編集分割はしていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、横浜市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "yokohama-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "横浜市公式「横浜市長選挙（候補者情報・選挙公報）」ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      }
+    ],
+    "open_questions": [
+      "対応する登録済み事業はなく、事業接続と進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-yokohama-city-2026-promise-005",
+    "subject_type": "promise",
+    "subject_id": "jp-local-141003-executive-2026-10-18-promise-005",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、横浜市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "yokohama-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報・原沢あつみ候補欄「横浜の未来をつくる12の政策」左列第5段。",
+        "decision": "accepted",
+        "review_note": "2026-11-21に公式PDFを取得し、300dpi・450dpiの複数解像度で照合した。資料上の境界（枠内の項目）をそのまま公約の単位とし、文単位の編集分割はしていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、横浜市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "yokohama-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "横浜市公式「横浜市長選挙（候補者情報・選挙公報）」ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "横浜市中期計画2026～2029 政策群10「にぎわい・スポーツ・文化」の施策群「観光・MICE」と、公約の文言・内容が対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "yokohama-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "横浜市中期計画2026～2029の施策群（段階2で登録済みの事業レコード）。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "接続は推定であり、公式な対応付けが公表されれば見直す。進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-yokohama-city-2026-promise-006",
+    "subject_type": "promise",
+    "subject_id": "jp-local-141003-executive-2026-10-18-promise-006",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、横浜市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "yokohama-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報・原沢あつみ候補欄「横浜の未来をつくる12の政策」左列第6段。",
+        "decision": "accepted",
+        "review_note": "2026-11-21に公式PDFを取得し、300dpi・450dpiの複数解像度で照合した。資料上の境界（枠内の項目）をそのまま公約の単位とし、文単位の編集分割はしていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、横浜市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "yokohama-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "横浜市公式「横浜市長選挙（候補者情報・選挙公報）」ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      }
+    ],
+    "open_questions": [
+      "対応する登録済み事業はなく、事業接続と進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-yokohama-city-2026-promise-007",
+    "subject_type": "promise",
+    "subject_id": "jp-local-141003-executive-2026-10-18-promise-007",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、横浜市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "yokohama-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報・原沢あつみ候補欄「横浜の未来をつくる12の政策」右列第1段。",
+        "decision": "accepted",
+        "review_note": "2026-11-21に公式PDFを取得し、300dpi・450dpiの複数解像度で照合した。資料上の境界（枠内の項目）をそのまま公約の単位とし、文単位の編集分割はしていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、横浜市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "yokohama-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "横浜市公式「横浜市長選挙（候補者情報・選挙公報）」ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      }
+    ],
+    "open_questions": [
+      "対応する登録済み事業はなく、事業接続と進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-yokohama-city-2026-promise-008",
+    "subject_type": "promise",
+    "subject_id": "jp-local-141003-executive-2026-10-18-promise-008",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、横浜市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "yokohama-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報・原沢あつみ候補欄「横浜の未来をつくる12の政策」右列第2段。",
+        "decision": "accepted",
+        "review_note": "2026-11-21に公式PDFを取得し、300dpi・450dpiの複数解像度で照合した。資料上の境界（枠内の項目）をそのまま公約の単位とし、文単位の編集分割はしていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、横浜市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "yokohama-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "横浜市公式「横浜市長選挙（候補者情報・選挙公報）」ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "横浜市中期計画2026～2029 政策群04「こども・子育て」の施策群「子育て支援」と、公約の文言・内容が対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "yokohama-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "横浜市中期計画2026～2029の施策群（段階2で登録済みの事業レコード）。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "接続は推定であり、公式な対応付けが公表されれば見直す。進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-yokohama-city-2026-promise-009",
+    "subject_type": "promise",
+    "subject_id": "jp-local-141003-executive-2026-10-18-promise-009",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、横浜市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "yokohama-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報・原沢あつみ候補欄「横浜の未来をつくる12の政策」右列第3段。",
+        "decision": "accepted",
+        "review_note": "2026-11-21に公式PDFを取得し、300dpi・450dpiの複数解像度で照合した。資料上の境界（枠内の項目）をそのまま公約の単位とし、文単位の編集分割はしていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、横浜市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "yokohama-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "横浜市公式「横浜市長選挙（候補者情報・選挙公報）」ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      }
+    ],
+    "open_questions": [
+      "対応する登録済み事業はなく、事業接続と進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-yokohama-city-2026-promise-010",
+    "subject_type": "promise",
+    "subject_id": "jp-local-141003-executive-2026-10-18-promise-010",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、横浜市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "yokohama-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報・原沢あつみ候補欄「横浜の未来をつくる12の政策」右列第4段。",
+        "decision": "accepted",
+        "review_note": "2026-11-21に公式PDFを取得し、300dpi・450dpiの複数解像度で照合した。資料上の境界（枠内の項目）をそのまま公約の単位とし、文単位の編集分割はしていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、横浜市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "yokohama-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "横浜市公式「横浜市長選挙（候補者情報・選挙公報）」ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      }
+    ],
+    "open_questions": [
+      "対応する登録済み事業はなく、事業接続と進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-yokohama-city-2026-promise-011",
+    "subject_type": "promise",
+    "subject_id": "jp-local-141003-executive-2026-10-18-promise-011",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、横浜市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "yokohama-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報・原沢あつみ候補欄「横浜の未来をつくる12の政策」右列第5段。",
+        "decision": "accepted",
+        "review_note": "2026-11-21に公式PDFを取得し、300dpi・450dpiの複数解像度で照合した。資料上の境界（枠内の項目）をそのまま公約の単位とし、文単位の編集分割はしていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、横浜市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "yokohama-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "横浜市公式「横浜市長選挙（候補者情報・選挙公報）」ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      }
+    ],
+    "open_questions": [
+      "対応する登録済み事業はなく、事業接続と進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-yokohama-city-2026-promise-012",
+    "subject_type": "promise",
+    "subject_id": "jp-local-141003-executive-2026-10-18-promise-012",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "候補者欄の該当部分を、横浜市選挙管理委員会の公式選挙公報PDFの描画画像から原文のまま転記した。",
+        "source_ids": [
+          "yokohama-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報・原沢あつみ候補欄「横浜の未来をつくる12の政策」右列第6段。",
+        "decision": "accepted",
+        "review_note": "2026-11-21に公式PDFを取得し、300dpi・450dpiの複数解像度で照合した。資料上の境界（枠内の項目）をそのまま公約の単位とし、文単位の編集分割はしていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、横浜市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "yokohama-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "横浜市公式「横浜市長選挙（候補者情報・選挙公報）」ページからリンクされる公式PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。"
+      }
+    ],
+    "open_questions": [
+      "対応する登録済み事業はなく、事業接続と進捗判定は未実施である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
     "id": "evidence-kawasaki-city-2025-promise-001",
     "subject_type": "promise",
     "subject_id": "jp-local-141305-executive-2025-11-19-promise-001",

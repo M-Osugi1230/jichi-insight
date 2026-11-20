@@ -109,7 +109,22 @@ def test_selection_rule_and_population() -> None:
         # responsible department is assigned (the bureau of each
         # indicator is recorded in the KPI definitions instead).
         assert record["responsible_department"] is None
-        assert record["related_promise_ids"] == []
+        # Stage 3 (Issue #798) connected three measure groups to the
+        # 2026 mayoral bulletin promises by wording and content
+        # (confidence capped at low / inferred); the other seven
+        # series still assert no link.
+        expected_links = {
+            "jp-local-141003-project-2026-earthquake-disaster-prevention": [
+                "jp-local-141003-executive-2026-10-18-promise-001"
+            ],
+            "jp-local-141003-project-2026-tourism-mice": [
+                "jp-local-141003-executive-2026-10-18-promise-005"
+            ],
+            "jp-local-141003-project-2026-childcare-support": [
+                "jp-local-141003-executive-2026-10-18-promise-008"
+            ],
+        }
+        assert record["related_promise_ids"] == expected_links.get(record["id"], [])
     skipped = selection["skipped"]
     assert len(skipped) == 23
     skipped_titles = {item["official_title"] for item in skipped}

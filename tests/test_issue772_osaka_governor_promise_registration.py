@@ -276,10 +276,11 @@ def test_review_search_and_term_reflect_the_registration() -> None:
 def test_bulletin_source_record_points_at_the_pdf() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     # The catalog has since grown: the Kanagawa cluster's stage 3
-    # (Issue #798) appended the Kanagawa bulletin record and the five
-    # Kawasaki City records, as version 0.21.0 / 68 records.
-    assert catalog["version"] == "0.21.0"
-    assert len(catalog["records"]) == 68
+    # (Issue #798) appended the Kanagawa bulletin record, the
+    # Yokohama City records and the five Kawasaki City records,
+    # bringing the combined catalog to version 0.22.0 / 71 records.
+    assert catalog["version"] == "0.22.0"
+    assert len(catalog["records"]) == 71
     bulletin = next(r for r in catalog["records"] if r["id"] == BULLETIN_ID)
     assert bulletin["url"].endswith("chijisenkyokoho.pdf")
     assert bulletin["municipality_key"] == "osaka-prefecture"

@@ -200,6 +200,24 @@
     "confidence": "high"
   },
   {
+    "id": "manifesto-review-jp-local-141003-2026",
+    "executive_term_id": "jp-local-141003-executive-2026-10-18",
+    "source_id": "yokohama-city-mayor-election-2026-bulletin",
+    "candidate_name": "原澤 敦美",
+    "source_location": "全1ページ（新聞形式）・中段左の候補者欄「原沢あつみ」",
+    "review_scope": "candidate_panel",
+    "statement_boundary": "clear",
+    "segmentation_status": "segmented",
+    "promise_records_created": 12,
+    "reason_codes": [
+      "other"
+    ],
+    "review_note": "候補者欄は、見出し「あなたの笑顔のために。」、キャッチコピー「横浜を、もっと前へ。」、枠「横浜の未来をつくる12の政策」（2列×6段の12項目）、応援団体（自民党・日本維新の会・公明党・国民民主党）の帯、標語「守る。育てる。支える。横浜の未来を、もっと強く、もっと豊かに。」、プロフィールで構成される。12の政策項目は資料上の境界が明確なため、それぞれ1レコードとした。読み順は左列を上から下へ6項目、続いて右列を上から下へ6項目とした（枠に番号付けはない）。見出し・キャッチコピー・標語は候補者の政治姿勢の表明であり個別の約束ではないためレコード化せず、応援団体の帯は候補者本人の約束ではないため、プロフィールも経歴であるためレコード化しなかった。候補者は新人であり、過去の実績を提示するブロックはないため、実績の公約化は生じていない。数値目標・期限・財源の明示はない（「18区」は市の行政区の数、「GREEN×EXPO 2027」は催事の名称であり、目標値ではない）。右列第5項目は原文が句点で終わっていないため、そのまま転記した。候補者欄は画像形式のため、登録文はPDFの描画画像（300dpi・450dpi）から転記し、複数解像度で照合した。",
+    "last_reviewed_at": "2026-11-21",
+    "review_status": "reviewed",
+    "confidence": "high"
+  },
+  {
     "id": "manifesto-review-jp-local-141305-2025",
     "executive_term_id": "jp-local-141305-executive-2025-11-19",
     "source_id": "kawasaki-city-mayor-election-2025-bulletin",

@@ -41,15 +41,15 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 68
-    assert len({record["id"] for record in catalog["records"]}) == 68
+    assert len(catalog["records"]) == 71
+    assert len({record["id"] for record in catalog["records"]}) == 71
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
     terms = load_json("data/entities/executives/executive_terms.json")
     packets = load_json("data/entities/executives/evidence_packets.json")
 
-    assert len(terms) == 14
+    assert len(terms) == 15
     assert {term["municipality_id"] for term in terms} == {
         "jp-local-400009",
         "jp-local-401307",
@@ -64,6 +64,7 @@ def test_executive_registry_matches_shared_contracts() -> None:
         "jp-local-271004",
         "jp-local-271403",
         "jp-local-140007",
+        "jp-local-141003",
         "jp-local-141305",
     }
     for term in terms:
@@ -119,6 +120,14 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
     # start (2023-04-23) follows the same Article 259 proviso chain
     # (the 2023 election was a term-expiry election held before the
     # previous term expired), and the two values agree.
+    # Yokohama City is a vacancy-election construction: the previous
+    # mayor resigned on 2026-09-07, so under the main text of Article
+    # 259 the term runs four years from the election day itself
+    # (2026-10-18 to 2030-10-17). The prefectural term-expiry list's
+    # current published edition (as of 2026-08-03) predates the
+    # election and still shows the predecessor's expiry, so the stated
+    # cross-check against the list is pending its next update; the
+    # evidence packet records the full chain and the open question.
     # Kawasaki City's end (2029-11-18) is stated directly in the city
     # election commission's official list of terms of public offices;
     # its start (2025-11-19) follows the same Article 259 proviso
@@ -139,6 +148,7 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
         "jp-local-271004": "2027-04-08",
         "jp-local-271403": "2027-06-08",
         "jp-local-140007": "2027-04-22",
+        "jp-local-141003": "2030-10-17",
         "jp-local-141305": "2029-11-18",
     }
     for term in terms:
@@ -184,6 +194,7 @@ def test_executive_term_starts_follow_statutory_counting() -> None:
         "jp-local-271004": "2026-02-09",
         "jp-local-271403": "2023-06-09",
         "jp-local-140007": "2023-04-23",
+        "jp-local-141003": "2026-10-18",
         "jp-local-141305": "2025-11-19",
     }
     for term in terms:
@@ -267,6 +278,12 @@ def test_manifesto_readiness_is_not_confused_with_progress() -> None:
     # bulletin to the governor's term.
     assert by_municipality["jp-local-140007"]["manifesto_source_ids"] == [
         "kanagawa-pref-governor-election-2023-bulletin",
+    ]
+    # Yokohama City's source is the October 2026 vacancy-election
+    # bulletin: Issue #798 registered the promises of the mayor elected
+    # in that election from the official bulletin itself.
+    assert by_municipality["jp-local-141003"]["manifesto_source_ids"] == [
+        "yokohama-city-mayor-election-2026-bulletin",
     ]
     # Kawasaki City's source is the 2025 election bulletin as reprinted
     # in the city election commission's official election record

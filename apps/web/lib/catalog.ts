@@ -11,6 +11,7 @@ export type MunicipalityKey =
   | "hokkaido-prefecture"
   | "kawasaki-city"
   | "kanagawa-prefecture"
+  | "yokohama-city"
   | "osaka-prefecture"
   | "osaka-city"
   | "sakai-city"
@@ -78,6 +79,12 @@ export const municipalityMeta: Record<
     summary: "計画・財政・重点事業に加え、福田紀彦市長の任期と Reviewed 公約13件を公式出典で確認します。自治体別ページは準備中です。",
     status: "財政データ公開", href: null,
     fiscalSummary: "Reviewed 財政レコード3件",
+  },
+  "yokohama-city": {
+    name: "横浜市", type: "政令指定都市",
+    summary: "横浜市中期計画2026～2029、2026年度成立後当初予算と原澤敦美市長の現任期・公約原文12件を公式資料で確認します。",
+    status: "財政データ公開", href: "/municipalities/yokohama-city",
+    fiscalSummary: "Reviewed 財政データ（汎用市ページ）",
   },
   "hokkaido-prefecture": {
     name: "北海道",

@@ -8,6 +8,8 @@ import kanagawaFiscalEvidence from "../../../data/reviewed/kanagawa-prefecture/e
 import kanagawaSettlementEvidence from "../../../data/reviewed/kanagawa-prefecture/settlement_evidence_packets.json";
 import kawasakiFiscalRecords from "../../../data/reviewed/kawasaki-city/fiscal_records.json";
 import kawasakiFiscalEvidence from "../../../data/reviewed/kawasaki-city/evidence_packets.json";
+import yokohamaFiscalRecords from "../../../data/reviewed/yokohama-city/fiscal_records.json";
+import yokohamaFiscalEvidence from "../../../data/reviewed/yokohama-city/evidence_packets.json";
 import hokkaidoIndicatorPageIndex from "../../../data/catalog/hokkaido_indicator_page_index.json";
 import hokkaidoIndicatorRelationshipIndex from "../../../data/catalog/hokkaido_indicator_relationship_index.json";
 import hokkaidoIndicatorSourceIndex from "../../../data/catalog/hokkaido_indicator_source_index.json";
@@ -56,6 +58,7 @@ const asahikawaFiscal = loadGenericCityFinance("asahikawa-city");
 const municipalityNames: Record<MunicipalityKey, string> = {
   "kawasaki-city": "川崎市",
   "kanagawa-prefecture": "神奈川県",
+  "yokohama-city": "横浜市",
   "osaka-prefecture": "大阪府",
   "osaka-city": "大阪市",
   "sakai-city": "堺市",
@@ -74,6 +77,7 @@ const municipalityKeys = Object.keys(municipalityNames) as MunicipalityKey[];
 const recordsByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFinance.records> = {
   "kawasaki-city": kawasakiFiscalRecords as typeof fukuokaPrefectureFinance.records,
   "kanagawa-prefecture": [...kanagawaFiscalRecords, ...kanagawaSettlementRecords] as typeof fukuokaPrefectureFinance.records,
+  "yokohama-city": yokohamaFiscalRecords as typeof fukuokaPrefectureFinance.records,
   "osaka-prefecture": [...osakaFiscalRecords, ...osakaSettlementRecords] as typeof fukuokaPrefectureFinance.records,
   "osaka-city": osakaCityFiscal?.records ?? [],
   "sakai-city": sakaiFiscal?.records ?? [],
@@ -90,6 +94,7 @@ const recordsByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFin
 const evidenceByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFinance.evidencePackets> = {
   "kawasaki-city": kawasakiFiscalEvidence as typeof fukuokaPrefectureFinance.evidencePackets,
   "kanagawa-prefecture": [...kanagawaFiscalEvidence, ...kanagawaSettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
+  "yokohama-city": yokohamaFiscalEvidence as typeof fukuokaPrefectureFinance.evidencePackets,
   "osaka-prefecture": [...osakaFiscalEvidence, ...osakaSettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
   "osaka-city": osakaCityFiscal?.evidencePackets ?? [],
   "sakai-city": sakaiFiscal?.evidencePackets ?? [],
