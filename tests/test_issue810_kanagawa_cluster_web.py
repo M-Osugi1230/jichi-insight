@@ -101,7 +101,6 @@ def test_kanagawa_prefecture_page_facts_match_reviewed_plan_finance_projects_and
 
 
 def test_kanagawa_assembly_display_facts_match_reviewed_registry():
-    base = DATA / "reviewed/kanagawa-prefecture/assembly"
     assembly = load("reviewed/kanagawa-prefecture/assembly/assembly_records.json")[0]
     disclosure = load("reviewed/kanagawa-prefecture/assembly/disclosure_profiles.json")[0]
     proposals = load("reviewed/kanagawa-prefecture/assembly/proposals.json")
