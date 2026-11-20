@@ -1,0 +1,96 @@
+[
+ {
+  "as_of": "2026-11-20",
+  "assembly_id": "jp-local-271004-assembly-2023",
+  "confidence": "high",
+  "id": "jp-local-271004-assembly-2023-disclosure-2026",
+  "items": [
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_roster",
+    "note": "各派名簿・選挙区別名簿・会派別議員名簿ページを市公式サイトに掲載。",
+    "source_url": "https://www.city.osaka.lg.jp/shikai/page/0000151161.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_composition",
+    "note": "各派名簿に会派ごとの所属議員と人数を掲載（令和8年10月13日現在で10会派・81名）。",
+    "source_url": "https://www.city.osaka.lg.jp/shikai/page/0000151161.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "committee_composition",
+    "note": "各派名簿に各議員の所属委員会を略号で掲載し、凡例で委員会名を示す。",
+    "source_url": "https://www.city.osaka.lg.jp/shikai/page/0000151161.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "proposals_and_results",
+    "note": "会期ごとに議決等案件事項一覧（番号・案件名・委員会審査・本会議結果・会派別賛否・備考）を掲載。",
+    "source_url": "https://www.city.osaka.lg.jp/shikai/page/0000001592.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_votes",
+    "note": "全ての表決案件について会派別の賛否を掲載。全会一致の案件でも各会派欄に「賛成」と明記される形式。",
+    "source_url": "https://www.city.osaka.lg.jp/contents/wdu260/result/202605.html"
+   },
+   {
+    "availability": "not_published",
+    "granularity": "none",
+    "item": "member_votes",
+    "note": "議員個人別の賛否は公表されていない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "political_activity_expense_reports",
+    "note": "交付は会派と交付対象議員（個人）の二層。Web公表は会派分の収支報告書と総括表のみ（令和3〜7年度交付分）で、交付対象議員個人分の収支報告書はWeb公表されておらず市会図書室での閲覧のみ。手引き上は市会ホームページで閲覧可能とされている建付けと実態に齟齬がある。",
+    "source_url": "https://www.city.osaka.lg.jp/shikai/page/0000338698.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "political_activity_expense_receipts",
+    "note": "会派分の領収書等の写しを会派別にPDFで公表（100ページ単位に分割したPDF群）。個人分はWeb公表なし。",
+    "source_url": "https://www.city.osaka.lg.jp/shikai/page/0000338698.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "inspection_trip_reports",
+    "note": "議員派遣による海外出張は派遣ごとに概要・視察議員・報告書・支出経費を公表。常任委員会の国内行政視察は報告書の体系的な公表を確認できなかった。",
+    "source_url": "https://www.city.osaka.lg.jp/shikai/page/0000022166.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "meeting_minutes",
+    "note": "本会議・委員会の会議録は会議録検索システムで公表される。",
+    "source_url": null
+   },
+   {
+    "availability": "not_published",
+    "granularity": "none",
+    "item": "petition_results",
+    "note": "請願は委員会審査のうえ本会議で結論を出す制度だが、議決等案件事項一覧に請願・陳情の行は掲載されず、陳情は委員会で結論を出すため結果の一覧公表はない。",
+    "source_url": "https://www.city.osaka.lg.jp/shikai/page/0000002285.html"
+   }
+  ],
+  "review_status": "reviewed",
+  "sources": [
+   "osaka-city-assembly-roster-by-faction",
+   "osaka-city-assembly-results-index",
+   "osaka-city-assembly-results-2026-05",
+   "osaka-city-seimu-index",
+   "osaka-city-overseas-index",
+   "osaka-city-assembly-petition-guide"
+  ]
+ }
+]
