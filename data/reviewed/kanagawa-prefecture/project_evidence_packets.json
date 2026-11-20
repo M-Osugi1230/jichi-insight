@@ -1,0 +1,1749 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施計画テキスト版のプロジェクト見出し",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "プロジェクト1「子ども・若者」（サブタイトル: ～子ども・若者が明るい未来を描けるかながわ～）は、新かながわグランドデザイン実施計画（2024～2027年度）のテーマ「希望の持てる神奈川」に属する13プロジェクトの一つ。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "実施計画テキスト版のテーマ・プロジェクト掲載順",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "選定規則（5テーマを公式掲載順に巡回し、各テーマではプロジェクトを掲載順にたどる）により第1巡目で選定した。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/kanagawa_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施計画テキスト版の「背景やねらい」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "実施計画の「背景やねらい」は「そこで、結婚、妊娠、出産、子育てができる環境を整備するとともに、配慮が必要な子ども・若者の実態に応じた適切かつ効果的な支援に取り組むことで、希望する人が希望する人数の子どもを持ち、安心して子どもを生み育てることができ、また、子ども・若者が主体的に生き、自立・参加・共生する社会をめざします。」とする。"
+   },
+   {
+    "decision": "accepted",
+    "field": "policy_structure",
+    "location_note": "実施計画テキスト版の「具体的な取組」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策はＡ「子育てに希望の持てる社会づくり」、Ｂ「子ども・若者が希望を持てる社会づくり」の2施策である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "評価報告書2024「4 プロジェクト事業費」の表",
+    "review_note": "金額は億円単位の公表値を円換算したもので、精度は億円単位である。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2024"
+    ],
+    "statement": "プロジェクト事業費（当初予算ベース）は、2024年度122億円、2025年度121億円。計画期間通算は488億円。評価報告書の「4 プロジェクト事業費」に億円単位（プロジェクトは1億円未満切捨て）で掲載された当初予算ベースの値であり、千円単位の内訳は公表されていない。プロジェクト単位の決算額・執行額は公表されていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "評価報告書2024のプロジェクト章（最終評価・県による一次評価）",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2024",
+     "kanagawa-pref-grand-design-council-material-2024"
+    ],
+    "statement": "評価報告書2024（2025年7月25日公表）における最終評価（総合計画審議会による二次評価）は「概ね順調に進んでいる」。県の事業部局による一次評価は「概ね順調に進んでいる」、KPIの平均達成率は88.2％。これは県の公式評価であり、Jichi Insight独自の評価ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "KPI一覧および実施計画テキスト版の＜KPI＞",
+    "review_note": "達成率の対応付けは登録側の機械的処理であり、公式評価はプロジェクト単位の二次評価のみである。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-2024-kpi-list",
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策のKPI9件を登録した。目標値・実績値・達成率は評価報告書2024のKPIの達成状況一覧（令和8年9月30日現在の追加把握版）に掲載された値をそのまま用いた。県は個別KPIの評定を公表していないため、assessment は県が公表した達成率の分布区分（100％以上／60％以上100％未満／60％未満）に対応づけた機械的な対応付け（100％以上=achieved、60％以上=partially_achieved、60％未満=not_achieved、実績値未公表=not_assessable）であり、県の公式な評定ではない。"
+   }
+  ],
+  "id": "evidence-jp-local-140007-project-2024-children-and-youth",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "プロジェクト単位の決算額・執行額は公表されていないため、金額は当初予算ベースのプロジェクト事業費のみを登録した。",
+   "とりまとめ局は評価報告書の章頭に局名マークの図形で示されるのみでテキストとして公表されていないため、responsible_department は null とした（未登録）。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-140007-project-2024-children-and-youth",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施計画テキスト版のプロジェクト見出し",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "プロジェクト1「子ども・若者」（サブタイトル: ～子ども・若者が明るい未来を描けるかながわ～）は、新かながわグランドデザイン実施計画（2024～2027年度）のテーマ「希望の持てる神奈川」に属する13プロジェクトの一つ。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "実施計画テキスト版のテーマ・プロジェクト掲載順",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "選定規則（5テーマを公式掲載順に巡回し、各テーマではプロジェクトを掲載順にたどる）により第1巡目で選定した。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/kanagawa_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施計画テキスト版の「背景やねらい」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "実施計画の「背景やねらい」は「そこで、結婚、妊娠、出産、子育てができる環境を整備するとともに、配慮が必要な子ども・若者の実態に応じた適切かつ効果的な支援に取り組むことで、希望する人が希望する人数の子どもを持ち、安心して子どもを生み育てることができ、また、子ども・若者が主体的に生き、自立・参加・共生する社会をめざします。」とする。"
+   },
+   {
+    "decision": "accepted",
+    "field": "policy_structure",
+    "location_note": "実施計画テキスト版の「具体的な取組」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策はＡ「子育てに希望の持てる社会づくり」、Ｂ「子ども・若者が希望を持てる社会づくり」の2施策である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "評価報告書2025「4 プロジェクト事業費」の表",
+    "review_note": "金額は億円単位の公表値を円換算したもので、精度は億円単位である。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2025"
+    ],
+    "statement": "プロジェクト事業費（当初予算ベース）は、2024年度122億円、2025年度121億円、2026年度327億円。計画期間通算は488億円。評価報告書の「4 プロジェクト事業費」に億円単位（プロジェクトは1億円未満切捨て）で掲載された当初予算ベースの値であり、千円単位の内訳は公表されていない。プロジェクト単位の決算額・執行額は公表されていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "評価報告書2025のプロジェクト章（最終評価・県による一次評価）",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2025",
+     "kanagawa-pref-grand-design-council-material-2025"
+    ],
+    "statement": "評価報告書2025（2026年7月13日公表）における最終評価（総合計画審議会による二次評価）は「概ね順調に進んでいる」。県の事業部局による一次評価は「概ね順調に進んでいる」、KPIの平均達成率は89.3％。これは県の公式評価であり、Jichi Insight独自の評価ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "KPI一覧および実施計画テキスト版の＜KPI＞",
+    "review_note": "達成率の対応付けは登録側の機械的処理であり、公式評価はプロジェクト単位の二次評価のみである。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-2025-kpi-list",
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策のKPI9件を登録した。目標値・実績値・達成率は評価報告書2025の資料2「数値目標の達成状況及び評価一覧」に掲載された値をそのまま用いた。県は個別KPIの評定を公表していないため、assessment は県が公表した達成率の分布区分（100％以上／60％以上100％未満／60％未満）に対応づけた機械的な対応付け（100％以上=achieved、60％以上=partially_achieved、60％未満=not_achieved、実績値未公表=not_assessable）であり、県の公式な評定ではない。あわせてプロジェクト指標2件を評価報告書2025の「指標の動向」から登録した（個別の評定は付されていないためnot_assessable）。"
+   }
+  ],
+  "id": "evidence-jp-local-140007-project-2025-children-and-youth",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "プロジェクト単位の決算額・執行額は公表されていないため、金額は当初予算ベースのプロジェクト事業費のみを登録した。",
+   "とりまとめ局は評価報告書の章頭に局名マークの図形で示されるのみでテキストとして公表されていないため、responsible_department は null とした（未登録）。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-140007-project-2025-children-and-youth",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施計画テキスト版のプロジェクト見出し",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "プロジェクト6「経済・労働」（サブタイトル: ～県内産業の活性化と多様な人材の活躍促進～）は、新かながわグランドデザイン実施計画（2024～2027年度）のテーマ「持続的に発展する神奈川」に属する13プロジェクトの一つ。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "実施計画テキスト版のテーマ・プロジェクト掲載順",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "選定規則（5テーマを公式掲載順に巡回し、各テーマではプロジェクトを掲載順にたどる）により第1巡目で選定した。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/kanagawa_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施計画テキスト版の「背景やねらい」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "実施計画の「背景やねらい」は「そこで、神奈川の豊かな知的資源を生かしながら、未病や最先端医療、ロボットなどの成長産業の創出や集積を図るとともに、生産性向上の支援などにより県内中小企業の経営基盤の強化や商店街の活性化に取り組みます。さらに、若年者や中高年齢者、女性、障がい者、外国人等の多様なニーズに対応した就業支援などを進め、一人ひとりが輝きながら働ける、持続的な県内経済の発展をめざします。」とする。"
+   },
+   {
+    "decision": "accepted",
+    "field": "policy_structure",
+    "location_note": "実施計画テキスト版の「具体的な取組」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策はＡ「産業競争力の強化」、Ｂ「中小企業の収益の改善」、Ｃ「多様な人材の活躍促進」の3施策である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "評価報告書2024「4 プロジェクト事業費」の表",
+    "review_note": "金額は億円単位の公表値を円換算したもので、精度は億円単位である。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2024"
+    ],
+    "statement": "プロジェクト事業費（当初予算ベース）は、2024年度120億円、2025年度131億円。計画期間通算は509億円。評価報告書の「4 プロジェクト事業費」に億円単位（プロジェクトは1億円未満切捨て）で掲載された当初予算ベースの値であり、千円単位の内訳は公表されていない。プロジェクト単位の決算額・執行額は公表されていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "評価報告書2024のプロジェクト章（最終評価・県による一次評価）",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2024",
+     "kanagawa-pref-grand-design-council-material-2024"
+    ],
+    "statement": "評価報告書2024（2025年7月25日公表）における最終評価（総合計画審議会による二次評価）は「順調に進んでいる」。県の事業部局による一次評価は「順調に進んでいる」、KPIの平均達成率は98.2％。これは県の公式評価であり、Jichi Insight独自の評価ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "KPI一覧および実施計画テキスト版の＜KPI＞",
+    "review_note": "達成率の対応付けは登録側の機械的処理であり、公式評価はプロジェクト単位の二次評価のみである。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-2024-kpi-list",
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策のKPI9件を登録した。目標値・実績値・達成率は評価報告書2024のKPIの達成状況一覧（令和8年9月30日現在の追加把握版）に掲載された値をそのまま用いた。県は個別KPIの評定を公表していないため、assessment は県が公表した達成率の分布区分（100％以上／60％以上100％未満／60％未満）に対応づけた機械的な対応付け（100％以上=achieved、60％以上=partially_achieved、60％未満=not_achieved、実績値未公表=not_assessable）であり、県の公式な評定ではない。"
+   }
+  ],
+  "id": "evidence-jp-local-140007-project-2024-economy-and-employment",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "プロジェクト単位の決算額・執行額は公表されていないため、金額は当初予算ベースのプロジェクト事業費のみを登録した。",
+   "とりまとめ局は評価報告書の章頭に局名マークの図形で示されるのみでテキストとして公表されていないため、responsible_department は null とした（未登録）。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-140007-project-2024-economy-and-employment",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施計画テキスト版のプロジェクト見出し",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "プロジェクト6「経済・労働」（サブタイトル: ～県内産業の活性化と多様な人材の活躍促進～）は、新かながわグランドデザイン実施計画（2024～2027年度）のテーマ「持続的に発展する神奈川」に属する13プロジェクトの一つ。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "実施計画テキスト版のテーマ・プロジェクト掲載順",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "選定規則（5テーマを公式掲載順に巡回し、各テーマではプロジェクトを掲載順にたどる）により第1巡目で選定した。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/kanagawa_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施計画テキスト版の「背景やねらい」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "実施計画の「背景やねらい」は「そこで、神奈川の豊かな知的資源を生かしながら、未病や最先端医療、ロボットなどの成長産業の創出や集積を図るとともに、生産性向上の支援などにより県内中小企業の経営基盤の強化や商店街の活性化に取り組みます。さらに、若年者や中高年齢者、女性、障がい者、外国人等の多様なニーズに対応した就業支援などを進め、一人ひとりが輝きながら働ける、持続的な県内経済の発展をめざします。」とする。"
+   },
+   {
+    "decision": "accepted",
+    "field": "policy_structure",
+    "location_note": "実施計画テキスト版の「具体的な取組」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策はＡ「産業競争力の強化」、Ｂ「中小企業の収益の改善」、Ｃ「多様な人材の活躍促進」の3施策である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "評価報告書2025「4 プロジェクト事業費」の表",
+    "review_note": "金額は億円単位の公表値を円換算したもので、精度は億円単位である。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2025"
+    ],
+    "statement": "プロジェクト事業費（当初予算ベース）は、2024年度120億円、2025年度131億円、2026年度147億円。計画期間通算は509億円。評価報告書の「4 プロジェクト事業費」に億円単位（プロジェクトは1億円未満切捨て）で掲載された当初予算ベースの値であり、千円単位の内訳は公表されていない。プロジェクト単位の決算額・執行額は公表されていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "評価報告書2025のプロジェクト章（最終評価・県による一次評価）",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2025",
+     "kanagawa-pref-grand-design-council-material-2025"
+    ],
+    "statement": "評価報告書2025（2026年7月13日公表）における最終評価（総合計画審議会による二次評価）は「順調に進んでいる」。県の事業部局による一次評価は「順調に進んでいる」、KPIの平均達成率は98.4％。これは県の公式評価であり、Jichi Insight独自の評価ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "KPI一覧および実施計画テキスト版の＜KPI＞",
+    "review_note": "達成率の対応付けは登録側の機械的処理であり、公式評価はプロジェクト単位の二次評価のみである。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-2025-kpi-list",
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策のKPI9件を登録した。目標値・実績値・達成率は評価報告書2025の資料2「数値目標の達成状況及び評価一覧」に掲載された値をそのまま用いた。県は個別KPIの評定を公表していないため、assessment は県が公表した達成率の分布区分（100％以上／60％以上100％未満／60％未満）に対応づけた機械的な対応付け（100％以上=achieved、60％以上=partially_achieved、60％未満=not_achieved、実績値未公表=not_assessable）であり、県の公式な評定ではない。あわせてプロジェクト指標5件を評価報告書2025の「指標の動向」から登録した（個別の評定は付されていないためnot_assessable）。"
+   }
+  ],
+  "id": "evidence-jp-local-140007-project-2025-economy-and-employment",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "プロジェクト単位の決算額・執行額は公表されていないため、金額は当初予算ベースのプロジェクト事業費のみを登録した。",
+   "とりまとめ局は評価報告書の章頭に局名マークの図形で示されるのみでテキストとして公表されていないため、responsible_department は null とした（未登録）。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-140007-project-2025-economy-and-employment",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施計画テキスト版のプロジェクト見出し",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "プロジェクト9「生活困窮」（サブタイトル: ～誰もが自分らしく夢や希望を持つことができる地域づくり～）は、新かながわグランドデザイン実施計画（2024～2027年度）のテーマ「自分らしく生きられる神奈川」に属する13プロジェクトの一つ。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "実施計画テキスト版のテーマ・プロジェクト掲載順",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "選定規則（5テーマを公式掲載順に巡回し、各テーマではプロジェクトを掲載順にたどる）により第1巡目で選定した。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/kanagawa_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施計画テキスト版の「背景やねらい」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "実施計画の「背景やねらい」は「そこで、多様な担い手と連携し、生きづらさやくらしにくさを抱えながら、声を上げない・上げられない方に積極的にアプローチし、早期に相談や地域の支援につなげる取組などを推進し、誰もが自分らしく前に進むことができる地域づくりに取り組みます。」とする。"
+   },
+   {
+    "decision": "accepted",
+    "field": "policy_structure",
+    "location_note": "実施計画テキスト版の「具体的な取組」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策はＡ「子ども・若者が抱える困難に気づき、寄り添った支援につなげる拠点やしくみの整備」、Ｂ「ひとり親家庭や困難な問題を抱える女性等への寄り添った支援の推進」、Ｃ「孤独・孤立に悩む方への社会とのつながりの支援」の3施策である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "評価報告書2024「4 プロジェクト事業費」の表",
+    "review_note": "金額は億円単位の公表値を円換算したもので、精度は億円単位である。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2024"
+    ],
+    "statement": "プロジェクト事業費（当初予算ベース）は、2024年度6億円、2025年度7億円。計画期間通算は24億円。評価報告書の「4 プロジェクト事業費」に億円単位（プロジェクトは1億円未満切捨て）で掲載された当初予算ベースの値であり、千円単位の内訳は公表されていない。プロジェクト単位の決算額・執行額は公表されていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "評価報告書2024のプロジェクト章（最終評価・県による一次評価）",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2024",
+     "kanagawa-pref-grand-design-council-material-2024"
+    ],
+    "statement": "評価報告書2024（2025年7月25日公表）における最終評価（総合計画審議会による二次評価）は「概ね順調に進んでいる」。県の事業部局による一次評価は「概ね順調に進んでいる」、KPIの平均達成率は96.7％。これは県の公式評価であり、Jichi Insight独自の評価ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "KPI一覧および実施計画テキスト版の＜KPI＞",
+    "review_note": "達成率の対応付けは登録側の機械的処理であり、公式評価はプロジェクト単位の二次評価のみである。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-2024-kpi-list",
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策のKPI8件を登録した。目標値・実績値・達成率は評価報告書2024のKPIの達成状況一覧（令和8年9月30日現在の追加把握版）に掲載された値をそのまま用いた。県は個別KPIの評定を公表していないため、assessment は県が公表した達成率の分布区分（100％以上／60％以上100％未満／60％未満）に対応づけた機械的な対応付け（100％以上=achieved、60％以上=partially_achieved、60％未満=not_achieved、実績値未公表=not_assessable）であり、県の公式な評定ではない。"
+   }
+  ],
+  "id": "evidence-jp-local-140007-project-2024-livelihood-support",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "プロジェクト単位の決算額・執行額は公表されていないため、金額は当初予算ベースのプロジェクト事業費のみを登録した。",
+   "とりまとめ局は評価報告書の章頭に局名マークの図形で示されるのみでテキストとして公表されていないため、responsible_department は null とした（未登録）。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-140007-project-2024-livelihood-support",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施計画テキスト版のプロジェクト見出し",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "プロジェクト9「生活困窮」（サブタイトル: ～誰もが自分らしく夢や希望を持つことができる地域づくり～）は、新かながわグランドデザイン実施計画（2024～2027年度）のテーマ「自分らしく生きられる神奈川」に属する13プロジェクトの一つ。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "実施計画テキスト版のテーマ・プロジェクト掲載順",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "選定規則（5テーマを公式掲載順に巡回し、各テーマではプロジェクトを掲載順にたどる）により第1巡目で選定した。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/kanagawa_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施計画テキスト版の「背景やねらい」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "実施計画の「背景やねらい」は「そこで、多様な担い手と連携し、生きづらさやくらしにくさを抱えながら、声を上げない・上げられない方に積極的にアプローチし、早期に相談や地域の支援につなげる取組などを推進し、誰もが自分らしく前に進むことができる地域づくりに取り組みます。」とする。"
+   },
+   {
+    "decision": "accepted",
+    "field": "policy_structure",
+    "location_note": "実施計画テキスト版の「具体的な取組」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策はＡ「子ども・若者が抱える困難に気づき、寄り添った支援につなげる拠点やしくみの整備」、Ｂ「ひとり親家庭や困難な問題を抱える女性等への寄り添った支援の推進」、Ｃ「孤独・孤立に悩む方への社会とのつながりの支援」の3施策である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "評価報告書2025「4 プロジェクト事業費」の表",
+    "review_note": "金額は億円単位の公表値を円換算したもので、精度は億円単位である。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2025"
+    ],
+    "statement": "プロジェクト事業費（当初予算ベース）は、2024年度6億円、2025年度7億円、2026年度9億円。計画期間通算は24億円。評価報告書の「4 プロジェクト事業費」に億円単位（プロジェクトは1億円未満切捨て）で掲載された当初予算ベースの値であり、千円単位の内訳は公表されていない。プロジェクト単位の決算額・執行額は公表されていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "評価報告書2025のプロジェクト章（最終評価・県による一次評価）",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2025",
+     "kanagawa-pref-grand-design-council-material-2025"
+    ],
+    "statement": "評価報告書2025（2026年7月13日公表）における最終評価（総合計画審議会による二次評価）は「概ね順調に進んでいる」。県の事業部局による一次評価は「順調に進んでいる」、KPIの平均達成率は95.3％。これは県の公式評価であり、Jichi Insight独自の評価ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "KPI一覧および実施計画テキスト版の＜KPI＞",
+    "review_note": "達成率の対応付けは登録側の機械的処理であり、公式評価はプロジェクト単位の二次評価のみである。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-2025-kpi-list",
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策のKPI8件を登録した。目標値・実績値・達成率は評価報告書2025の資料2「数値目標の達成状況及び評価一覧」に掲載された値をそのまま用いた。県は個別KPIの評定を公表していないため、assessment は県が公表した達成率の分布区分（100％以上／60％以上100％未満／60％未満）に対応づけた機械的な対応付け（100％以上=achieved、60％以上=partially_achieved、60％未満=not_achieved、実績値未公表=not_assessable）であり、県の公式な評定ではない。あわせてプロジェクト指標4件を評価報告書2025の「指標の動向」から登録した（個別の評定は付されていないためnot_assessable）。"
+   }
+  ],
+  "id": "evidence-jp-local-140007-project-2025-livelihood-support",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "プロジェクト単位の決算額・執行額は公表されていないため、金額は当初予算ベースのプロジェクト事業費のみを登録した。",
+   "とりまとめ局は評価報告書の章頭に局名マークの図形で示されるのみでテキストとして公表されていないため、responsible_department は null とした（未登録）。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-140007-project-2025-livelihood-support",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施計画テキスト版のプロジェクト見出し",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "プロジェクト11「くらしの安心」（サブタイトル: ～くらしや経済活動をとりまく脅威から県民を守る～）は、新かながわグランドデザイン実施計画（2024～2027年度）のテーマ「安心してくらせる神奈川」に属する13プロジェクトの一つ。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "実施計画テキスト版のテーマ・プロジェクト掲載順",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "選定規則（5テーマを公式掲載順に巡回し、各テーマではプロジェクトを掲載順にたどる）により第1巡目で選定した。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/kanagawa_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施計画テキスト版の「背景やねらい」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "実施計画の「背景やねらい」は「こうした中、先端技術の導入を進め、変化する治安情勢に即応し、巧妙化する特殊詐欺などの犯罪や事故の未然防止・検挙対策を強化する必要があります。」とする。"
+   },
+   {
+    "decision": "accepted",
+    "field": "policy_structure",
+    "location_note": "実施計画テキスト版の「具体的な取組」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策はＡ「犯罪などの起きにくい地域社会づくり」、Ｂ「交通事故の防止」、Ｃ「消費生活の安心」の3施策である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "評価報告書2024「4 プロジェクト事業費」の表",
+    "review_note": "金額は億円単位の公表値を円換算したもので、精度は億円単位である。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2024"
+    ],
+    "statement": "プロジェクト事業費（当初予算ベース）は、2024年度80億円、2025年度102億円。計画期間通算は319億円。評価報告書の「4 プロジェクト事業費」に億円単位（プロジェクトは1億円未満切捨て）で掲載された当初予算ベースの値であり、千円単位の内訳は公表されていない。プロジェクト単位の決算額・執行額は公表されていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "評価報告書2024のプロジェクト章（最終評価・県による一次評価）",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2024",
+     "kanagawa-pref-grand-design-council-material-2024"
+    ],
+    "statement": "評価報告書2024（2025年7月25日公表）における最終評価（総合計画審議会による二次評価）は「概ね順調に進んでいる」。県の事業部局による一次評価は「概ね順調に進んでいる」、KPIの平均達成率は84.7％。これは県の公式評価であり、Jichi Insight独自の評価ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "KPI一覧および実施計画テキスト版の＜KPI＞",
+    "review_note": "達成率の対応付けは登録側の機械的処理であり、公式評価はプロジェクト単位の二次評価のみである。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-2024-kpi-list",
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策のKPI8件を登録した。目標値・実績値・達成率は評価報告書2024のKPIの達成状況一覧（令和8年9月30日現在の追加把握版）に掲載された値をそのまま用いた。県は個別KPIの評定を公表していないため、assessment は県が公表した達成率の分布区分（100％以上／60％以上100％未満／60％未満）に対応づけた機械的な対応付け（100％以上=achieved、60％以上=partially_achieved、60％未満=not_achieved、実績値未公表=not_assessable）であり、県の公式な評定ではない。"
+   }
+  ],
+  "id": "evidence-jp-local-140007-project-2024-everyday-life-safety",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "プロジェクト単位の決算額・執行額は公表されていないため、金額は当初予算ベースのプロジェクト事業費のみを登録した。",
+   "とりまとめ局は評価報告書の章頭に局名マークの図形で示されるのみでテキストとして公表されていないため、responsible_department は null とした（未登録）。",
+   "契約・議会・監査との連携は未登録である。",
+   "構成施策AのKPI「自主防犯活動団体の登録数（総数）」の達成率は、2024年度の一覧に-250.0％と掲載され（目標値2,435団体・実績値2,400団体）、2025年度の一覧では「―」とされている。算出方法の説明は一覧に掲載されていないため、達成率に基づく区分は2024年度分のみ機械的に対応付けた。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-140007-project-2024-everyday-life-safety",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施計画テキスト版のプロジェクト見出し",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "プロジェクト11「くらしの安心」（サブタイトル: ～くらしや経済活動をとりまく脅威から県民を守る～）は、新かながわグランドデザイン実施計画（2024～2027年度）のテーマ「安心してくらせる神奈川」に属する13プロジェクトの一つ。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "実施計画テキスト版のテーマ・プロジェクト掲載順",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "選定規則（5テーマを公式掲載順に巡回し、各テーマではプロジェクトを掲載順にたどる）により第1巡目で選定した。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/kanagawa_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施計画テキスト版の「背景やねらい」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "実施計画の「背景やねらい」は「こうした中、先端技術の導入を進め、変化する治安情勢に即応し、巧妙化する特殊詐欺などの犯罪や事故の未然防止・検挙対策を強化する必要があります。」とする。"
+   },
+   {
+    "decision": "accepted",
+    "field": "policy_structure",
+    "location_note": "実施計画テキスト版の「具体的な取組」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策はＡ「犯罪などの起きにくい地域社会づくり」、Ｂ「交通事故の防止」、Ｃ「消費生活の安心」の3施策である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "評価報告書2025「4 プロジェクト事業費」の表",
+    "review_note": "金額は億円単位の公表値を円換算したもので、精度は億円単位である。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2025"
+    ],
+    "statement": "プロジェクト事業費（当初予算ベース）は、2024年度80億円、2025年度102億円、2026年度120億円。計画期間通算は319億円。評価報告書の「4 プロジェクト事業費」に億円単位（プロジェクトは1億円未満切捨て）で掲載された当初予算ベースの値であり、千円単位の内訳は公表されていない。プロジェクト単位の決算額・執行額は公表されていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "評価報告書2025のプロジェクト章（最終評価・県による一次評価）",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2025",
+     "kanagawa-pref-grand-design-council-material-2025"
+    ],
+    "statement": "評価報告書2025（2026年7月13日公表）における最終評価（総合計画審議会による二次評価）は「概ね順調に進んでいる」。県の事業部局による一次評価は「概ね順調に進んでいる」、KPIの平均達成率は76.5％。これは県の公式評価であり、Jichi Insight独自の評価ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "KPI一覧および実施計画テキスト版の＜KPI＞",
+    "review_note": "達成率の対応付けは登録側の機械的処理であり、公式評価はプロジェクト単位の二次評価のみである。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-2025-kpi-list",
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策のKPI8件を登録した。目標値・実績値・達成率は評価報告書2025の資料2「数値目標の達成状況及び評価一覧」に掲載された値をそのまま用いた。県は個別KPIの評定を公表していないため、assessment は県が公表した達成率の分布区分（100％以上／60％以上100％未満／60％未満）に対応づけた機械的な対応付け（100％以上=achieved、60％以上=partially_achieved、60％未満=not_achieved、実績値未公表=not_assessable）であり、県の公式な評定ではない。あわせてプロジェクト指標2件を評価報告書2025の「指標の動向」から登録した（個別の評定は付されていないためnot_assessable）。"
+   }
+  ],
+  "id": "evidence-jp-local-140007-project-2025-everyday-life-safety",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "プロジェクト単位の決算額・執行額は公表されていないため、金額は当初予算ベースのプロジェクト事業費のみを登録した。",
+   "とりまとめ局は評価報告書の章頭に局名マークの図形で示されるのみでテキストとして公表されていないため、responsible_department は null とした（未登録）。",
+   "契約・議会・監査との連携は未登録である。",
+   "構成施策AのKPI「自主防犯活動団体の登録数（総数）」の達成率は、2024年度の一覧に-250.0％と掲載され（目標値2,435団体・実績値2,400団体）、2025年度の一覧では「―」とされている。算出方法の説明は一覧に掲載されていないため、達成率に基づく区分は2024年度分のみ機械的に対応付けた。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-140007-project-2025-everyday-life-safety",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施計画テキスト版のプロジェクト見出し",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "プロジェクト13「都市基盤」（サブタイトル: ～持続可能な県土の形成をめざして～）は、新かながわグランドデザイン実施計画（2024～2027年度）のテーマ「神奈川を支える基盤づくり」に属する13プロジェクトの一つ。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "実施計画テキスト版のテーマ・プロジェクト掲載順",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "選定規則（5テーマを公式掲載順に巡回し、各テーマではプロジェクトを掲載順にたどる）により第1巡目で選定した。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/kanagawa_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施計画テキスト版の「背景やねらい」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "実施計画の「背景やねらい」は「そこで、交流と連携を支える交通ネットワークの強化や、自動運転などのデジタル技術の進展を踏まえたスマートモビリティ社会の実現などに取り組むとともに、限られた財源の中で、インフラ施設の戦略的なメンテナンスに取り組みます。こうした取組を推進し、次世代に引き継げる持続可能な県土の形成を図ります。」とする。"
+   },
+   {
+    "decision": "accepted",
+    "field": "policy_structure",
+    "location_note": "実施計画テキスト版の「具体的な取組」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策はＡ「交流と連携を支える交通ネットワークの充実」、Ｂ「活力と魅力あふれる強靭なまちづくりの推進」の2施策である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "評価報告書2024「4 プロジェクト事業費」の表",
+    "review_note": "金額は億円単位の公表値を円換算したもので、精度は億円単位である。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2024"
+    ],
+    "statement": "プロジェクト事業費（当初予算ベース）は、2024年度482億円、2025年度642億円。計画期間通算は1990億円。評価報告書の「4 プロジェクト事業費」に億円単位（プロジェクトは1億円未満切捨て）で掲載された当初予算ベースの値であり、千円単位の内訳は公表されていない。プロジェクト単位の決算額・執行額は公表されていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "評価報告書2024のプロジェクト章（最終評価・県による一次評価）",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2024",
+     "kanagawa-pref-grand-design-council-material-2024"
+    ],
+    "statement": "評価報告書2024（2025年7月25日公表）における最終評価（総合計画審議会による二次評価）は「概ね順調に進んでいる」。県の事業部局による一次評価は「概ね順調に進んでいる」、KPIの平均達成率は83.3％。これは県の公式評価であり、Jichi Insight独自の評価ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "KPI一覧および実施計画テキスト版の＜KPI＞",
+    "review_note": "達成率の対応付けは登録側の機械的処理であり、公式評価はプロジェクト単位の二次評価のみである。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-2024-kpi-list",
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策のKPI7件を登録した。目標値・実績値・達成率は評価報告書2024のKPIの達成状況一覧（令和8年9月30日現在の追加把握版）に掲載された値をそのまま用いた。県は個別KPIの評定を公表していないため、assessment は県が公表した達成率の分布区分（100％以上／60％以上100％未満／60％未満）に対応づけた機械的な対応付け（100％以上=achieved、60％以上=partially_achieved、60％未満=not_achieved、実績値未公表=not_assessable）であり、県の公式な評定ではない。"
+   }
+  ],
+  "id": "evidence-jp-local-140007-project-2024-urban-infrastructure",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "プロジェクト単位の決算額・執行額は公表されていないため、金額は当初予算ベースのプロジェクト事業費のみを登録した。",
+   "とりまとめ局は評価報告書の章頭に局名マークの図形で示されるのみでテキストとして公表されていないため、responsible_department は null とした（未登録）。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-140007-project-2024-urban-infrastructure",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施計画テキスト版のプロジェクト見出し",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "プロジェクト13「都市基盤」（サブタイトル: ～持続可能な県土の形成をめざして～）は、新かながわグランドデザイン実施計画（2024～2027年度）のテーマ「神奈川を支える基盤づくり」に属する13プロジェクトの一つ。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "実施計画テキスト版のテーマ・プロジェクト掲載順",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "選定規則（5テーマを公式掲載順に巡回し、各テーマではプロジェクトを掲載順にたどる）により第1巡目で選定した。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/kanagawa_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施計画テキスト版の「背景やねらい」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "実施計画の「背景やねらい」は「そこで、交流と連携を支える交通ネットワークの強化や、自動運転などのデジタル技術の進展を踏まえたスマートモビリティ社会の実現などに取り組むとともに、限られた財源の中で、インフラ施設の戦略的なメンテナンスに取り組みます。こうした取組を推進し、次世代に引き継げる持続可能な県土の形成を図ります。」とする。"
+   },
+   {
+    "decision": "accepted",
+    "field": "policy_structure",
+    "location_note": "実施計画テキスト版の「具体的な取組」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策はＡ「交流と連携を支える交通ネットワークの充実」、Ｂ「活力と魅力あふれる強靭なまちづくりの推進」の2施策である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "評価報告書2025「4 プロジェクト事業費」の表",
+    "review_note": "金額は億円単位の公表値を円換算したもので、精度は億円単位である。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2025"
+    ],
+    "statement": "プロジェクト事業費（当初予算ベース）は、2024年度482億円、2025年度642億円、2026年度541億円。計画期間通算は1990億円。評価報告書の「4 プロジェクト事業費」に億円単位（プロジェクトは1億円未満切捨て）で掲載された当初予算ベースの値であり、千円単位の内訳は公表されていない。プロジェクト単位の決算額・執行額は公表されていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "評価報告書2025のプロジェクト章（最終評価・県による一次評価）",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2025",
+     "kanagawa-pref-grand-design-council-material-2025"
+    ],
+    "statement": "評価報告書2025（2026年7月13日公表）における最終評価（総合計画審議会による二次評価）は「順調に進んでいる」。県の事業部局による一次評価は「順調に進んでいる」、KPIの平均達成率は96.2％。これは県の公式評価であり、Jichi Insight独自の評価ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "KPI一覧および実施計画テキスト版の＜KPI＞",
+    "review_note": "達成率の対応付けは登録側の機械的処理であり、公式評価はプロジェクト単位の二次評価のみである。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-2025-kpi-list",
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策のKPI7件を登録した。目標値・実績値・達成率は評価報告書2025の資料2「数値目標の達成状況及び評価一覧」に掲載された値をそのまま用いた。県は個別KPIの評定を公表していないため、assessment は県が公表した達成率の分布区分（100％以上／60％以上100％未満／60％未満）に対応づけた機械的な対応付け（100％以上=achieved、60％以上=partially_achieved、60％未満=not_achieved、実績値未公表=not_assessable）であり、県の公式な評定ではない。あわせてプロジェクト指標2件を評価報告書2025の「指標の動向」から登録した（個別の評定は付されていないためnot_assessable）。"
+   }
+  ],
+  "id": "evidence-jp-local-140007-project-2025-urban-infrastructure",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "プロジェクト単位の決算額・執行額は公表されていないため、金額は当初予算ベースのプロジェクト事業費のみを登録した。",
+   "とりまとめ局は評価報告書の章頭に局名マークの図形で示されるのみでテキストとして公表されていないため、responsible_department は null とした（未登録）。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-140007-project-2025-urban-infrastructure",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施計画テキスト版のプロジェクト見出し",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "プロジェクト2「教育」（サブタイトル: ～変化の激しい社会に適応できる柔軟で自立した人材の育成～）は、新かながわグランドデザイン実施計画（2024～2027年度）のテーマ「希望の持てる神奈川」に属する13プロジェクトの一つ。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "実施計画テキスト版のテーマ・プロジェクト掲載順",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "選定規則（5テーマを公式掲載順に巡回し、各テーマではプロジェクトを掲載順にたどる）により第2巡目で選定した。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/kanagawa_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施計画テキスト版の「背景やねらい」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "実施計画の「背景やねらい」は「そこで、思いやる力や自立して生き抜く力、社会に貢献する力を育成し、「日本社会に根差したウェルビーイング」の向上」とする。"
+   },
+   {
+    "decision": "accepted",
+    "field": "policy_structure",
+    "location_note": "実施計画テキスト版の「具体的な取組」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策はＡ「思いやる力や自立して生き抜く力、社会に貢献する力を育成する学校教育」、Ｂ「安心して快適に学べる教育環境の整備」の2施策である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "評価報告書2024「4 プロジェクト事業費」の表",
+    "review_note": "金額は億円単位の公表値を円換算したもので、精度は億円単位である。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2024"
+    ],
+    "statement": "プロジェクト事業費（当初予算ベース）は、2024年度98億円、2025年度128億円。計画期間通算は562億円。評価報告書の「4 プロジェクト事業費」に億円単位（プロジェクトは1億円未満切捨て）で掲載された当初予算ベースの値であり、千円単位の内訳は公表されていない。プロジェクト単位の決算額・執行額は公表されていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "評価報告書2024のプロジェクト章（最終評価・県による一次評価）",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2024",
+     "kanagawa-pref-grand-design-council-material-2024"
+    ],
+    "statement": "評価報告書2024（2025年7月25日公表）における最終評価（総合計画審議会による二次評価）は「順調に進んでいる」。県の事業部局による一次評価は「順調に進んでいる」、KPIの平均達成率は97.5％。これは県の公式評価であり、Jichi Insight独自の評価ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "KPI一覧および実施計画テキスト版の＜KPI＞",
+    "review_note": "達成率の対応付けは登録側の機械的処理であり、公式評価はプロジェクト単位の二次評価のみである。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-2024-kpi-list",
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策のKPI10件を登録した。目標値・実績値・達成率は評価報告書2024のKPIの達成状況一覧（令和8年9月30日現在の追加把握版）に掲載された値をそのまま用いた。県は個別KPIの評定を公表していないため、assessment は県が公表した達成率の分布区分（100％以上／60％以上100％未満／60％未満）に対応づけた機械的な対応付け（100％以上=achieved、60％以上=partially_achieved、60％未満=not_achieved、実績値未公表=not_assessable）であり、県の公式な評定ではない。"
+   }
+  ],
+  "id": "evidence-jp-local-140007-project-2024-education",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "プロジェクト単位の決算額・執行額は公表されていないため、金額は当初予算ベースのプロジェクト事業費のみを登録した。",
+   "とりまとめ局は評価報告書の章頭に局名マークの図形で示されるのみでテキストとして公表されていないため、responsible_department は null とした（未登録）。",
+   "契約・議会・監査との連携は未登録である。",
+   "評価報告書2024のプロジェクト2の章はPDF内で画像化されておりテキスト抽出できないため、一次評価・二次評価・KPI平均達成率（97.5％）は該当ページの描画画像を目視で確認して登録した。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-140007-project-2024-education",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施計画テキスト版のプロジェクト見出し",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "プロジェクト2「教育」（サブタイトル: ～変化の激しい社会に適応できる柔軟で自立した人材の育成～）は、新かながわグランドデザイン実施計画（2024～2027年度）のテーマ「希望の持てる神奈川」に属する13プロジェクトの一つ。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "実施計画テキスト版のテーマ・プロジェクト掲載順",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "選定規則（5テーマを公式掲載順に巡回し、各テーマではプロジェクトを掲載順にたどる）により第2巡目で選定した。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/kanagawa_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施計画テキスト版の「背景やねらい」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "実施計画の「背景やねらい」は「そこで、思いやる力や自立して生き抜く力、社会に貢献する力を育成し、「日本社会に根差したウェルビーイング」の向上」とする。"
+   },
+   {
+    "decision": "accepted",
+    "field": "policy_structure",
+    "location_note": "実施計画テキスト版の「具体的な取組」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策はＡ「思いやる力や自立して生き抜く力、社会に貢献する力を育成する学校教育」、Ｂ「安心して快適に学べる教育環境の整備」の2施策である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "評価報告書2025「4 プロジェクト事業費」の表",
+    "review_note": "金額は億円単位の公表値を円換算したもので、精度は億円単位である。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2025"
+    ],
+    "statement": "プロジェクト事業費（当初予算ベース）は、2024年度98億円、2025年度128億円、2026年度162億円。計画期間通算は562億円。評価報告書の「4 プロジェクト事業費」に億円単位（プロジェクトは1億円未満切捨て）で掲載された当初予算ベースの値であり、千円単位の内訳は公表されていない。プロジェクト単位の決算額・執行額は公表されていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "評価報告書2025のプロジェクト章（最終評価・県による一次評価）",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2025",
+     "kanagawa-pref-grand-design-council-material-2025"
+    ],
+    "statement": "評価報告書2025（2026年7月13日公表）における最終評価（総合計画審議会による二次評価）は「順調に進んでいる」。県の事業部局による一次評価は「順調に進んでいる」、KPIの平均達成率は96.4％。これは県の公式評価であり、Jichi Insight独自の評価ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "KPI一覧および実施計画テキスト版の＜KPI＞",
+    "review_note": "達成率の対応付けは登録側の機械的処理であり、公式評価はプロジェクト単位の二次評価のみである。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-2025-kpi-list",
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策のKPI10件を登録した。目標値・実績値・達成率は評価報告書2025の資料2「数値目標の達成状況及び評価一覧」に掲載された値をそのまま用いた。県は個別KPIの評定を公表していないため、assessment は県が公表した達成率の分布区分（100％以上／60％以上100％未満／60％未満）に対応づけた機械的な対応付け（100％以上=achieved、60％以上=partially_achieved、60％未満=not_achieved、実績値未公表=not_assessable）であり、県の公式な評定ではない。あわせてプロジェクト指標4件を評価報告書2025の「指標の動向」から登録した（個別の評定は付されていないためnot_assessable）。"
+   }
+  ],
+  "id": "evidence-jp-local-140007-project-2025-education",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "プロジェクト単位の決算額・執行額は公表されていないため、金額は当初予算ベースのプロジェクト事業費のみを登録した。",
+   "とりまとめ局は評価報告書の章頭に局名マークの図形で示されるのみでテキストとして公表されていないため、responsible_department は null とした（未登録）。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-140007-project-2025-education",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施計画テキスト版のプロジェクト見出し",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "プロジェクト7「農林水産」（サブタイトル: ～地産地消の推進による持続可能な農林水産業の実現～）は、新かながわグランドデザイン実施計画（2024～2027年度）のテーマ「持続的に発展する神奈川」に属する13プロジェクトの一つ。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "実施計画テキスト版のテーマ・プロジェクト掲載順",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "選定規則（5テーマを公式掲載順に巡回し、各テーマではプロジェクトを掲載順にたどる）により第2巡目で選定した。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/kanagawa_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施計画テキスト版の「背景やねらい」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "実施計画の「背景やねらい」は「そこで、新規就業の促進や経営感覚に優れた担い手の育成、スマート技術をはじめとする生産技術の開発・普及、環境負荷低減技術の導入支援、担い手への農地集積の促進などに取り組みます。また、県民ニーズに応じた新鮮で安全・安心な農林水産物の提供を支援するとともに、ブランド力を強化することで、農林水産物の利用拡大を図ります。こうした取組により、地産地消を推進し、持続可能な農林水産業の実現をめざします。」とする。"
+   },
+   {
+    "decision": "accepted",
+    "field": "policy_structure",
+    "location_note": "実施計画テキスト版の「具体的な取組」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策はＡ「安定した食料等の生産基盤の構築」、Ｂ「安全・安心な魅力ある県産農林水産物の利用拡大」の2施策である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "評価報告書2024「4 プロジェクト事業費」の表",
+    "review_note": "金額は億円単位の公表値を円換算したもので、精度は億円単位である。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2024"
+    ],
+    "statement": "プロジェクト事業費（当初予算ベース）は、2024年度58億円、2025年度76億円。計画期間通算は254億円。評価報告書の「4 プロジェクト事業費」に億円単位（プロジェクトは1億円未満切捨て）で掲載された当初予算ベースの値であり、千円単位の内訳は公表されていない。プロジェクト単位の決算額・執行額は公表されていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "評価報告書2024のプロジェクト章（最終評価・県による一次評価）",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2024",
+     "kanagawa-pref-grand-design-council-material-2024"
+    ],
+    "statement": "評価報告書2024（2025年7月25日公表）における最終評価（総合計画審議会による二次評価）は「順調に進んでいる」。県の事業部局による一次評価は「順調に進んでいる」、KPIの平均達成率は99.0％。これは県の公式評価であり、Jichi Insight独自の評価ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "KPI一覧および実施計画テキスト版の＜KPI＞",
+    "review_note": "達成率の対応付けは登録側の機械的処理であり、公式評価はプロジェクト単位の二次評価のみである。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-2024-kpi-list",
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策のKPI7件を登録した。目標値・実績値・達成率は評価報告書2024のKPIの達成状況一覧（令和8年9月30日現在の追加把握版）に掲載された値をそのまま用いた。県は個別KPIの評定を公表していないため、assessment は県が公表した達成率の分布区分（100％以上／60％以上100％未満／60％未満）に対応づけた機械的な対応付け（100％以上=achieved、60％以上=partially_achieved、60％未満=not_achieved、実績値未公表=not_assessable）であり、県の公式な評定ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "indicator_errata",
+    "location_note": "評価報告書2024の正誤表および評価報告書2025のプロジェクト7の章",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-2024-errata",
+     "kanagawa-pref-grand-design-evaluation-report-2025"
+    ],
+    "statement": "評価報告書2024には正誤表があり、プロジェクト7の指標「地元でとれた新鮮な野菜や魚を食べられることに関する満足度」の2022年度実績値は27.9％（掲載時29.1％）、2024年度実績値は27.9％（同27.2％）に訂正されている。評価報告書2025の指標の動向には訂正後の値が掲載されており、本登録は訂正後の値を用いた。"
+   }
+  ],
+  "id": "evidence-jp-local-140007-project-2024-agriculture-forestry-fisheries",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "プロジェクト単位の決算額・執行額は公表されていないため、金額は当初予算ベースのプロジェクト事業費のみを登録した。",
+   "とりまとめ局は評価報告書の章頭に局名マークの図形で示されるのみでテキストとして公表されていないため、responsible_department は null とした（未登録）。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-140007-project-2024-agriculture-forestry-fisheries",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施計画テキスト版のプロジェクト見出し",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "プロジェクト7「農林水産」（サブタイトル: ～地産地消の推進による持続可能な農林水産業の実現～）は、新かながわグランドデザイン実施計画（2024～2027年度）のテーマ「持続的に発展する神奈川」に属する13プロジェクトの一つ。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "実施計画テキスト版のテーマ・プロジェクト掲載順",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "選定規則（5テーマを公式掲載順に巡回し、各テーマではプロジェクトを掲載順にたどる）により第2巡目で選定した。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/kanagawa_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施計画テキスト版の「背景やねらい」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "実施計画の「背景やねらい」は「そこで、新規就業の促進や経営感覚に優れた担い手の育成、スマート技術をはじめとする生産技術の開発・普及、環境負荷低減技術の導入支援、担い手への農地集積の促進などに取り組みます。また、県民ニーズに応じた新鮮で安全・安心な農林水産物の提供を支援するとともに、ブランド力を強化することで、農林水産物の利用拡大を図ります。こうした取組により、地産地消を推進し、持続可能な農林水産業の実現をめざします。」とする。"
+   },
+   {
+    "decision": "accepted",
+    "field": "policy_structure",
+    "location_note": "実施計画テキスト版の「具体的な取組」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策はＡ「安定した食料等の生産基盤の構築」、Ｂ「安全・安心な魅力ある県産農林水産物の利用拡大」の2施策である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "評価報告書2025「4 プロジェクト事業費」の表",
+    "review_note": "金額は億円単位の公表値を円換算したもので、精度は億円単位である。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2025"
+    ],
+    "statement": "プロジェクト事業費（当初予算ベース）は、2024年度58億円、2025年度76億円、2026年度95億円。計画期間通算は254億円。評価報告書の「4 プロジェクト事業費」に億円単位（プロジェクトは1億円未満切捨て）で掲載された当初予算ベースの値であり、千円単位の内訳は公表されていない。プロジェクト単位の決算額・執行額は公表されていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "評価報告書2025のプロジェクト章（最終評価・県による一次評価）",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2025",
+     "kanagawa-pref-grand-design-council-material-2025"
+    ],
+    "statement": "評価報告書2025（2026年7月13日公表）における最終評価（総合計画審議会による二次評価）は「順調に進んでいる」。県の事業部局による一次評価は「順調に進んでいる」、KPIの平均達成率は94.1％。これは県の公式評価であり、Jichi Insight独自の評価ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "KPI一覧および実施計画テキスト版の＜KPI＞",
+    "review_note": "達成率の対応付けは登録側の機械的処理であり、公式評価はプロジェクト単位の二次評価のみである。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-2025-kpi-list",
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策のKPI7件を登録した。目標値・実績値・達成率は評価報告書2025の資料2「数値目標の達成状況及び評価一覧」に掲載された値をそのまま用いた。県は個別KPIの評定を公表していないため、assessment は県が公表した達成率の分布区分（100％以上／60％以上100％未満／60％未満）に対応づけた機械的な対応付け（100％以上=achieved、60％以上=partially_achieved、60％未満=not_achieved、実績値未公表=not_assessable）であり、県の公式な評定ではない。あわせてプロジェクト指標2件を評価報告書2025の「指標の動向」から登録した（個別の評定は付されていないためnot_assessable）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "indicator_errata",
+    "location_note": "評価報告書2024の正誤表および評価報告書2025のプロジェクト7の章",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-2024-errata",
+     "kanagawa-pref-grand-design-evaluation-report-2025"
+    ],
+    "statement": "評価報告書2024には正誤表があり、プロジェクト7の指標「地元でとれた新鮮な野菜や魚を食べられることに関する満足度」の2022年度実績値は27.9％（掲載時29.1％）、2024年度実績値は27.9％（同27.2％）に訂正されている。評価報告書2025の指標の動向には訂正後の値が掲載されており、本登録は訂正後の値を用いた。"
+   }
+  ],
+  "id": "evidence-jp-local-140007-project-2025-agriculture-forestry-fisheries",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "プロジェクト単位の決算額・執行額は公表されていないため、金額は当初予算ベースのプロジェクト事業費のみを登録した。",
+   "とりまとめ局は評価報告書の章頭に局名マークの図形で示されるのみでテキストとして公表されていないため、responsible_department は null とした（未登録）。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-140007-project-2025-agriculture-forestry-fisheries",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施計画テキスト版のプロジェクト見出し",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "プロジェクト10「共生社会」（サブタイトル: ～障がい、国籍、性別によらない、ともに生きる社会の実現～）は、新かながわグランドデザイン実施計画（2024～2027年度）のテーマ「自分らしく生きられる神奈川」に属する13プロジェクトの一つ。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "実施計画テキスト版のテーマ・プロジェクト掲載順",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "選定規則（5テーマを公式掲載順に巡回し、各テーマではプロジェクトを掲載順にたどる）により第2巡目で選定した。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/kanagawa_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施計画テキスト版の「背景やねらい」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "実施計画の「背景やねらい」は「そこで、「ともに生きる社会かながわ憲章」の理念を広めていくため、「当事者目線の障害福祉推進条例～ともに生きる社会を目指して～」の普及啓発や、障がいへの理解促進、多文化共生や、ジェンダー平等に向けた取組などを進めることで、県民総ぐるみで、すべての人のいのちを大切にし、またいかなる偏見や差別も排除し、誰もがその人らしくくらすことのできる地域社会の実現をめざします。」とする。"
+   },
+   {
+    "decision": "accepted",
+    "field": "policy_structure",
+    "location_note": "実施計画テキスト版の「具体的な取組」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策はＡ「障がい児・者とともに生きる社会の実現」、Ｂ「多文化共生の推進」、Ｃ「ジェンダー平等社会の実現」の3施策である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "評価報告書2024「4 プロジェクト事業費」の表",
+    "review_note": "金額は億円単位の公表値を円換算したもので、精度は億円単位である。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2024"
+    ],
+    "statement": "プロジェクト事業費（当初予算ベース）は、2024年度93億円、2025年度108億円。計画期間通算は372億円。評価報告書の「4 プロジェクト事業費」に億円単位（プロジェクトは1億円未満切捨て）で掲載された当初予算ベースの値であり、千円単位の内訳は公表されていない。プロジェクト単位の決算額・執行額は公表されていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "評価報告書2024のプロジェクト章（最終評価・県による一次評価）",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2024",
+     "kanagawa-pref-grand-design-council-material-2024"
+    ],
+    "statement": "評価報告書2024（2025年7月25日公表）における最終評価（総合計画審議会による二次評価）は「やや遅れている」。県の事業部局による一次評価は「やや遅れている」、KPIの平均達成率は87.5％。これは県の公式評価であり、Jichi Insight独自の評価ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "KPI一覧および実施計画テキスト版の＜KPI＞",
+    "review_note": "達成率の対応付けは登録側の機械的処理であり、公式評価はプロジェクト単位の二次評価のみである。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-2024-kpi-list",
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策のKPI10件を登録した。目標値・実績値・達成率は評価報告書2024のKPIの達成状況一覧（令和8年9月30日現在の追加把握版）に掲載された値をそのまま用いた。県は個別KPIの評定を公表していないため、assessment は県が公表した達成率の分布区分（100％以上／60％以上100％未満／60％未満）に対応づけた機械的な対応付け（100％以上=achieved、60％以上=partially_achieved、60％未満=not_achieved、実績値未公表=not_assessable）であり、県の公式な評定ではない。"
+   }
+  ],
+  "id": "evidence-jp-local-140007-project-2024-inclusive-society",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "プロジェクト単位の決算額・執行額は公表されていないため、金額は当初予算ベースのプロジェクト事業費のみを登録した。",
+   "とりまとめ局は評価報告書の章頭に局名マークの図形で示されるのみでテキストとして公表されていないため、responsible_department は null とした（未登録）。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-140007-project-2024-inclusive-society",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施計画テキスト版のプロジェクト見出し",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "プロジェクト10「共生社会」（サブタイトル: ～障がい、国籍、性別によらない、ともに生きる社会の実現～）は、新かながわグランドデザイン実施計画（2024～2027年度）のテーマ「自分らしく生きられる神奈川」に属する13プロジェクトの一つ。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "実施計画テキスト版のテーマ・プロジェクト掲載順",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "選定規則（5テーマを公式掲載順に巡回し、各テーマではプロジェクトを掲載順にたどる）により第2巡目で選定した。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/kanagawa_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施計画テキスト版の「背景やねらい」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "実施計画の「背景やねらい」は「そこで、「ともに生きる社会かながわ憲章」の理念を広めていくため、「当事者目線の障害福祉推進条例～ともに生きる社会を目指して～」の普及啓発や、障がいへの理解促進、多文化共生や、ジェンダー平等に向けた取組などを進めることで、県民総ぐるみで、すべての人のいのちを大切にし、またいかなる偏見や差別も排除し、誰もがその人らしくくらすことのできる地域社会の実現をめざします。」とする。"
+   },
+   {
+    "decision": "accepted",
+    "field": "policy_structure",
+    "location_note": "実施計画テキスト版の「具体的な取組」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策はＡ「障がい児・者とともに生きる社会の実現」、Ｂ「多文化共生の推進」、Ｃ「ジェンダー平等社会の実現」の3施策である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "評価報告書2025「4 プロジェクト事業費」の表",
+    "review_note": "金額は億円単位の公表値を円換算したもので、精度は億円単位である。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2025"
+    ],
+    "statement": "プロジェクト事業費（当初予算ベース）は、2024年度93億円、2025年度108億円、2026年度111億円。計画期間通算は372億円。評価報告書の「4 プロジェクト事業費」に億円単位（プロジェクトは1億円未満切捨て）で掲載された当初予算ベースの値であり、千円単位の内訳は公表されていない。プロジェクト単位の決算額・執行額は公表されていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "評価報告書2025のプロジェクト章（最終評価・県による一次評価）",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2025",
+     "kanagawa-pref-grand-design-council-material-2025"
+    ],
+    "statement": "評価報告書2025（2026年7月13日公表）における最終評価（総合計画審議会による二次評価）は「やや遅れている」。県の事業部局による一次評価は「やや遅れている」、KPIの平均達成率は89.0％。これは県の公式評価であり、Jichi Insight独自の評価ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "KPI一覧および実施計画テキスト版の＜KPI＞",
+    "review_note": "達成率の対応付けは登録側の機械的処理であり、公式評価はプロジェクト単位の二次評価のみである。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-2025-kpi-list",
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策のKPI10件を登録した。目標値・実績値・達成率は評価報告書2025の資料2「数値目標の達成状況及び評価一覧」に掲載された値をそのまま用いた。県は個別KPIの評定を公表していないため、assessment は県が公表した達成率の分布区分（100％以上／60％以上100％未満／60％未満）に対応づけた機械的な対応付け（100％以上=achieved、60％以上=partially_achieved、60％未満=not_achieved、実績値未公表=not_assessable）であり、県の公式な評定ではない。あわせてプロジェクト指標3件を評価報告書2025の「指標の動向」から登録した（個別の評定は付されていないためnot_assessable）。"
+   }
+  ],
+  "id": "evidence-jp-local-140007-project-2025-inclusive-society",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "プロジェクト単位の決算額・執行額は公表されていないため、金額は当初予算ベースのプロジェクト事業費のみを登録した。",
+   "とりまとめ局は評価報告書の章頭に局名マークの図形で示されるのみでテキストとして公表されていないため、responsible_department は null とした（未登録）。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-140007-project-2025-inclusive-society",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施計画テキスト版のプロジェクト見出し",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "プロジェクト12「危機管理」（サブタイトル: ～災害に強いかながわをめざして～）は、新かながわグランドデザイン実施計画（2024～2027年度）のテーマ「安心してくらせる神奈川」に属する13プロジェクトの一つ。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "実施計画テキスト版のテーマ・プロジェクト掲載順",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "選定規則（5テーマを公式掲載順に巡回し、各テーマではプロジェクトを掲載順にたどる）により第2巡目で選定した。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/kanagawa_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施計画テキスト版の「背景やねらい」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "実施計画の「背景やねらい」は「そこで、「地震災害対策推進条例」に基づく自助・共助の取組を促進するほか、災害時応急活動体制の強化や国民保護対策の推進、河川や土砂災害防止施設の整備、非常時にも対応できる持続可能な医療提供体制の構築に取り組み、住む人や訪れる人のいのちやくらしを守る災害に強いかながわの実現をめざします。」とする。"
+   },
+   {
+    "decision": "accepted",
+    "field": "policy_structure",
+    "location_note": "実施計画テキスト版の「具体的な取組」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策はＡ「災害対応力の強化」、Ｂ「災害に強いまちづくり」、Ｃ「非常時に対応できる持続可能な医療提供体制の構築」の3施策である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "評価報告書2024「4 プロジェクト事業費」の表",
+    "review_note": "金額は億円単位の公表値を円換算したもので、精度は億円単位である。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2024"
+    ],
+    "statement": "プロジェクト事業費（当初予算ベース）は、2024年度611億円、2025年度592億円。計画期間通算は2376億円。評価報告書の「4 プロジェクト事業費」に億円単位（プロジェクトは1億円未満切捨て）で掲載された当初予算ベースの値であり、千円単位の内訳は公表されていない。プロジェクト単位の決算額・執行額は公表されていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "評価報告書2024のプロジェクト章（最終評価・県による一次評価）",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2024",
+     "kanagawa-pref-grand-design-council-material-2024"
+    ],
+    "statement": "評価報告書2024（2025年7月25日公表）における最終評価（総合計画審議会による二次評価）は「順調に進んでいる」。県の事業部局による一次評価は「順調に進んでいる」、KPIの平均達成率は98.7％。これは県の公式評価であり、Jichi Insight独自の評価ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "KPI一覧および実施計画テキスト版の＜KPI＞",
+    "review_note": "達成率の対応付けは登録側の機械的処理であり、公式評価はプロジェクト単位の二次評価のみである。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-2024-kpi-list",
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策のKPI8件を登録した。目標値・実績値・達成率は評価報告書2024のKPIの達成状況一覧（令和8年9月30日現在の追加把握版）に掲載された値をそのまま用いた。県は個別KPIの評定を公表していないため、assessment は県が公表した達成率の分布区分（100％以上／60％以上100％未満／60％未満）に対応づけた機械的な対応付け（100％以上=achieved、60％以上=partially_achieved、60％未満=not_achieved、実績値未公表=not_assessable）であり、県の公式な評定ではない。"
+   }
+  ],
+  "id": "evidence-jp-local-140007-project-2024-crisis-management",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "プロジェクト単位の決算額・執行額は公表されていないため、金額は当初予算ベースのプロジェクト事業費のみを登録した。",
+   "とりまとめ局は評価報告書の章頭に局名マークの図形で示されるのみでテキストとして公表されていないため、responsible_department は null とした（未登録）。",
+   "契約・議会・監査との連携は未登録である。",
+   "プロジェクト指標「協定締結医療機関の病床数（総数）」は、実施計画の策定時に見込値2,038床が掲載されていたが、評価報告書2025の現況値（2023年度実績）は1,517床であり、両者の差異の理由は公表されていない。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-140007-project-2024-crisis-management",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施計画テキスト版のプロジェクト見出し",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "プロジェクト12「危機管理」（サブタイトル: ～災害に強いかながわをめざして～）は、新かながわグランドデザイン実施計画（2024～2027年度）のテーマ「安心してくらせる神奈川」に属する13プロジェクトの一つ。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "実施計画テキスト版のテーマ・プロジェクト掲載順",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "選定規則（5テーマを公式掲載順に巡回し、各テーマではプロジェクトを掲載順にたどる）により第2巡目で選定した。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/kanagawa_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施計画テキスト版の「背景やねらい」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "実施計画の「背景やねらい」は「そこで、「地震災害対策推進条例」に基づく自助・共助の取組を促進するほか、災害時応急活動体制の強化や国民保護対策の推進、河川や土砂災害防止施設の整備、非常時にも対応できる持続可能な医療提供体制の構築に取り組み、住む人や訪れる人のいのちやくらしを守る災害に強いかながわの実現をめざします。」とする。"
+   },
+   {
+    "decision": "accepted",
+    "field": "policy_structure",
+    "location_note": "実施計画テキスト版の「具体的な取組」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策はＡ「災害対応力の強化」、Ｂ「災害に強いまちづくり」、Ｃ「非常時に対応できる持続可能な医療提供体制の構築」の3施策である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "評価報告書2025「4 プロジェクト事業費」の表",
+    "review_note": "金額は億円単位の公表値を円換算したもので、精度は億円単位である。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2025"
+    ],
+    "statement": "プロジェクト事業費（当初予算ベース）は、2024年度611億円、2025年度592億円、2026年度616億円。計画期間通算は2376億円。評価報告書の「4 プロジェクト事業費」に億円単位（プロジェクトは1億円未満切捨て）で掲載された当初予算ベースの値であり、千円単位の内訳は公表されていない。プロジェクト単位の決算額・執行額は公表されていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "評価報告書2025のプロジェクト章（最終評価・県による一次評価）",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2025",
+     "kanagawa-pref-grand-design-council-material-2025"
+    ],
+    "statement": "評価報告書2025（2026年7月13日公表）における最終評価（総合計画審議会による二次評価）は「順調に進んでいる」。県の事業部局による一次評価は「順調に進んでいる」、KPIの平均達成率は95.5％。これは県の公式評価であり、Jichi Insight独自の評価ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "KPI一覧および実施計画テキスト版の＜KPI＞",
+    "review_note": "達成率の対応付けは登録側の機械的処理であり、公式評価はプロジェクト単位の二次評価のみである。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-2025-kpi-list",
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策のKPI8件を登録した。目標値・実績値・達成率は評価報告書2025の資料2「数値目標の達成状況及び評価一覧」に掲載された値をそのまま用いた。県は個別KPIの評定を公表していないため、assessment は県が公表した達成率の分布区分（100％以上／60％以上100％未満／60％未満）に対応づけた機械的な対応付け（100％以上=achieved、60％以上=partially_achieved、60％未満=not_achieved、実績値未公表=not_assessable）であり、県の公式な評定ではない。あわせてプロジェクト指標3件を評価報告書2025の「指標の動向」から登録した（個別の評定は付されていないためnot_assessable）。"
+   }
+  ],
+  "id": "evidence-jp-local-140007-project-2025-crisis-management",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "プロジェクト単位の決算額・執行額は公表されていないため、金額は当初予算ベースのプロジェクト事業費のみを登録した。",
+   "とりまとめ局は評価報告書の章頭に局名マークの図形で示されるのみでテキストとして公表されていないため、responsible_department は null とした（未登録）。",
+   "契約・議会・監査との連携は未登録である。",
+   "プロジェクト指標「協定締結医療機関の病床数（総数）」は、実施計画の策定時に見込値2,038床が掲載されていたが、評価報告書2025の現況値（2023年度実績）は1,517床であり、両者の差異の理由は公表されていない。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-140007-project-2025-crisis-management",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施計画テキスト版のプロジェクト見出し",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "プロジェクト3「未病・健康長寿」（サブタイトル: ～未病改善や医療・介護の充実による生き生きとくらせる社会～）は、新かながわグランドデザイン実施計画（2024～2027年度）のテーマ「希望の持てる神奈川」に属する13プロジェクトの一つ。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "実施計画テキスト版のテーマ・プロジェクト掲載順",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "選定規則（5テーマを公式掲載順に巡回し、各テーマではプロジェクトを掲載順にたどる）により第3巡目で選定した。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/kanagawa_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施計画テキスト版の「背景やねらい」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "実施計画の「背景やねらい」は「そこで、ライフステージに応じて「食・運動・社会参加」の3つを柱とする未病改善」とする。"
+   },
+   {
+    "decision": "accepted",
+    "field": "policy_structure",
+    "location_note": "実施計画テキスト版の「具体的な取組」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策はＡ「未病改善による健康寿命の延伸」、Ｂ「人口減少・超高齢社会においても持続可能で質の高い保健・医療の提供」、Ｃ「地域包括ケアシステムの深化」の3施策である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "評価報告書2024「4 プロジェクト事業費」の表",
+    "review_note": "金額は億円単位の公表値を円換算したもので、精度は億円単位である。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2024"
+    ],
+    "statement": "プロジェクト事業費（当初予算ベース）は、2024年度156億円、2025年度224億円。計画期間通算は618億円。評価報告書の「4 プロジェクト事業費」に億円単位（プロジェクトは1億円未満切捨て）で掲載された当初予算ベースの値であり、千円単位の内訳は公表されていない。プロジェクト単位の決算額・執行額は公表されていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "評価報告書2024のプロジェクト章（最終評価・県による一次評価）",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2024",
+     "kanagawa-pref-grand-design-council-material-2024"
+    ],
+    "statement": "評価報告書2024（2025年7月25日公表）における最終評価（総合計画審議会による二次評価）は「概ね順調に進んでいる」。県の事業部局による一次評価は「概ね順調に進んでいる」、KPIの平均達成率は87.3％。これは県の公式評価であり、Jichi Insight独自の評価ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "KPI一覧および実施計画テキスト版の＜KPI＞",
+    "review_note": "達成率の対応付けは登録側の機械的処理であり、公式評価はプロジェクト単位の二次評価のみである。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-2024-kpi-list",
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策のKPI9件を登録した。目標値・実績値・達成率は評価報告書2024のKPIの達成状況一覧（令和8年9月30日現在の追加把握版）に掲載された値をそのまま用いた。県は個別KPIの評定を公表していないため、assessment は県が公表した達成率の分布区分（100％以上／60％以上100％未満／60％未満）に対応づけた機械的な対応付け（100％以上=achieved、60％以上=partially_achieved、60％未満=not_achieved、実績値未公表=not_assessable）であり、県の公式な評定ではない。"
+   }
+  ],
+  "id": "evidence-jp-local-140007-project-2024-mebyo-health-longevity",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "プロジェクト単位の決算額・執行額は公表されていないため、金額は当初予算ベースのプロジェクト事業費のみを登録した。",
+   "とりまとめ局は評価報告書の章頭に局名マークの図形で示されるのみでテキストとして公表されていないため、responsible_department は null とした（未登録）。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-140007-project-2024-mebyo-health-longevity",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施計画テキスト版のプロジェクト見出し",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "プロジェクト3「未病・健康長寿」（サブタイトル: ～未病改善や医療・介護の充実による生き生きとくらせる社会～）は、新かながわグランドデザイン実施計画（2024～2027年度）のテーマ「希望の持てる神奈川」に属する13プロジェクトの一つ。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "実施計画テキスト版のテーマ・プロジェクト掲載順",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "選定規則（5テーマを公式掲載順に巡回し、各テーマではプロジェクトを掲載順にたどる）により第3巡目で選定した。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/kanagawa_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施計画テキスト版の「背景やねらい」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "実施計画の「背景やねらい」は「そこで、ライフステージに応じて「食・運動・社会参加」の3つを柱とする未病改善」とする。"
+   },
+   {
+    "decision": "accepted",
+    "field": "policy_structure",
+    "location_note": "実施計画テキスト版の「具体的な取組」",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策はＡ「未病改善による健康寿命の延伸」、Ｂ「人口減少・超高齢社会においても持続可能で質の高い保健・医療の提供」、Ｃ「地域包括ケアシステムの深化」の3施策である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "評価報告書2025「4 プロジェクト事業費」の表",
+    "review_note": "金額は億円単位の公表値を円換算したもので、精度は億円単位である。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2025"
+    ],
+    "statement": "プロジェクト事業費（当初予算ベース）は、2024年度156億円、2025年度224億円、2026年度227億円。計画期間通算は618億円。評価報告書の「4 プロジェクト事業費」に億円単位（プロジェクトは1億円未満切捨て）で掲載された当初予算ベースの値であり、千円単位の内訳は公表されていない。プロジェクト単位の決算額・執行額は公表されていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "評価報告書2025のプロジェクト章（最終評価・県による一次評価）",
+    "review_note": null,
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-report-2025",
+     "kanagawa-pref-grand-design-council-material-2025"
+    ],
+    "statement": "評価報告書2025（2026年7月13日公表）における最終評価（総合計画審議会による二次評価）は「概ね順調に進んでいる」。県の事業部局による一次評価は「概ね順調に進んでいる」、KPIの平均達成率は89.1％。これは県の公式評価であり、Jichi Insight独自の評価ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "KPI一覧および実施計画テキスト版の＜KPI＞",
+    "review_note": "達成率の対応付けは登録側の機械的処理であり、公式評価はプロジェクト単位の二次評価のみである。",
+    "source_ids": [
+     "kanagawa-pref-grand-design-evaluation-2025-kpi-list",
+     "kanagawa-pref-grand-design-plan-text"
+    ],
+    "statement": "構成施策のKPI9件を登録した。目標値・実績値・達成率は評価報告書2025の資料2「数値目標の達成状況及び評価一覧」に掲載された値をそのまま用いた。県は個別KPIの評定を公表していないため、assessment は県が公表した達成率の分布区分（100％以上／60％以上100％未満／60％未満）に対応づけた機械的な対応付け（100％以上=achieved、60％以上=partially_achieved、60％未満=not_achieved、実績値未公表=not_assessable）であり、県の公式な評定ではない。あわせてプロジェクト指標4件を評価報告書2025の「指標の動向」から登録した（個別の評定は付されていないためnot_assessable）。"
+   }
+  ],
+  "id": "evidence-jp-local-140007-project-2025-mebyo-health-longevity",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "プロジェクト単位の決算額・執行額は公表されていないため、金額は当初予算ベースのプロジェクト事業費のみを登録した。",
+   "とりまとめ局は評価報告書の章頭に局名マークの図形で示されるのみでテキストとして公表されていないため、responsible_department は null とした（未登録）。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-140007-project-2025-mebyo-health-longevity",
+  "subject_type": "project"
+ }
+]
