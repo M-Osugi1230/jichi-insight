@@ -3,7 +3,9 @@
 Scope: Saitama cluster stage 1 (Issue #815 (1)) — entity identity, the
 current comprehensive plan review, the FY2026 general-account initial
 budget, the FY2022-FY2024 ordinary-account settlements and the governor's
-current term.
+current term — and stage 2 (Issue #818): ten of the 54 field-level
+measures of the five-year plan with their policy indicators from the
+annual policy evaluations.
 
 - Municipality: 埼玉県 (`jp-local-110001`, official code 110001), as
   carried by the MIC settlement cards and the prefecture's fiscal
@@ -41,6 +43,39 @@ current term.
   commission's term-expiry list. His 1,138,973 votes are confirmed in
   both election commissions' publications.
 
+- Projects (stage 2, Issue #818): the population is the 54 field-level
+  measures of the current five-year plan (twelve courses under three
+  visions, FY2022-FY2026). Ten series were selected by round-robin over
+  the twelve courses in official listing order, taking the first measure
+  of each course; the first round alone produced ten series (measures 1,
+  5, 11, 16, 19, 25, 28, 32, 38, 41), so the first measures of courses
+  11 and 12 (measures 48 and 52) are not registered. Selection was never
+  by amount. Each series has four yearly records (FY2022-FY2025), one
+  per annual policy evaluation published by the Planning and Coordination
+  Division.
+- Amounts and official evaluations: the annual policy evaluations
+  publish no measure-level budget or settlement amounts and no
+  per-measure official rating — only per-indicator judgements — so
+  amounts and `official_evaluation` are registered as null with the
+  reason stated (never zero-filled). The per-indicator official
+  judgements (annual-target symbols ○/△/×/－) are mapped mechanically
+  onto the KPI assessments.
+- KPIs: the selected measures' policy indicators as printed in each
+  evaluation report's "latest values" list, cross-checked against the
+  per-indicator sheets. Indicator values lag by indicator (the latest
+  published figure may predate the evaluation year); each KPI records
+  the printed reference period. Composite indicators (No. 36 academic
+  achievement, No. 49 cancer screening) and sex-split indicators
+  (Nos. 51-52) are registered as single KPIs with component values in
+  string form, because the prefecture publishes one judgement per
+  indicator. Indicator 31 was replaced in the March 2025 rolling
+  revision (total fertility rate → share of residents who feel society
+  is becoming warm toward marriage, pregnancy and child-rearing); each
+  year's record registers the indicator(s) as printed in that year's
+  report, with no cross-version mapping. Indicator 75's final target
+  changed from 46 municipalities to all 63 municipalities in the same
+  revision; values are registered as printed per year.
+
 Not yet published for Saitama Prefecture:
 
 - Governor's promises (the 2023 election bulletin is officially
@@ -48,7 +83,7 @@ Not yet published for Saitama Prefecture:
   but whether its text layer is machine-readable has not been measured;
   the promise registration decision belongs to the cluster's promise
   stage)
-- The 54 field-level measures of the five-year plan and their
-  evaluations
+- The 44 field-level measures not selected in stage 2 and the FY2026
+  policy evaluation
 - Assembly records
 - FY2026 execution and settlement figures

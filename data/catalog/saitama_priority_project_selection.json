@@ -1,0 +1,144 @@
+{
+ "issue": 818,
+ "municipality_id": "jp-local-110001",
+ "municipality_key": "saitama-prefecture",
+ "population": {
+  "description": "現行「埼玉県5か年計画 ～日本一暮らしやすい埼玉へ～」（令和4〜8年度）の54の分野別施策。3つの将来像の下に12の針路が置かれ、各針路に分野別施策が公式掲載順で並ぶこの54施策が公式の母集団になる。施策ごとに年次施策評価（計画調整課）で施策指標の進捗が公表されるため、分野別施策を登録単位とした。次期5か年計画（令和9〜13年度）は策定中のため、その施策は母集団に含めず、現行計画の施策と対応付けない。",
+  "fiscal_year": 2025,
+  "project_count": 54,
+  "source_ids": [
+   "saitama-pref-five-year-plan-part2"
+  ]
+ },
+ "review_status": "reviewed",
+ "scope": "initial",
+ "selection_rule": {
+  "description": "12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどって10系列を選定する。第1巡目で針路1〜10の先頭施策（施策1・5・11・16・19・25・28・32・38・41）を選定した時点で10系列が揃ったため、第2巡目には進んでいない。針路11（施策48 新たな産業の育成と企業誘致の推進が先頭）と針路12（施策52 農業の担い手育成と生産基盤の強化が先頭）の施策は本段階では未選定である。金額の大小では選ばない。",
+  "pillars": [
+   "災害・危機に強い埼玉の構築",
+   "県民の暮らしの安心確保",
+   "介護・医療体制の充実",
+   "子育てに希望が持てる社会の実現",
+   "未来を創る子供たちの育成",
+   "人生100年を見据えたシニア活躍の推進",
+   "誰もが活躍し共に生きる社会の実現",
+   "支え合い魅力あふれる地域社会の構築",
+   "未来を見据えた社会基盤の創造",
+   "豊かな自然と共生する社会の実現",
+   "稼げる力の向上",
+   "儲かる農林業の推進"
+  ]
+ },
+ "selections": [
+  {
+   "measure_number": 1,
+   "needle": "災害・危機に強い埼玉の構築",
+   "official_title": "危機管理・防災体制の再構築",
+   "project_id": "jp-local-110001-project-2025-crisis-management-disaster-prevention",
+   "selection_basis": "第1巡目: 針路1「災害・危機に強い埼玉の構築」について、計画の掲載順で先頭の施策1「危機管理・防災体制の再構築」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-110001-project-series-crisis-management-disaster-prevention",
+   "source_ids": [
+    "saitama-pref-five-year-plan-part2"
+   ]
+  },
+  {
+   "measure_number": 5,
+   "needle": "県民の暮らしの安心確保",
+   "official_title": "防犯対策の推進と捜査活動の強化",
+   "project_id": "jp-local-110001-project-2025-crime-prevention-investigation",
+   "selection_basis": "第1巡目: 針路2「県民の暮らしの安心確保」について、計画の掲載順で先頭の施策5「防犯対策の推進と捜査活動の強化」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-110001-project-series-crime-prevention-investigation",
+   "source_ids": [
+    "saitama-pref-five-year-plan-part2"
+   ]
+  },
+  {
+   "measure_number": 11,
+   "needle": "介護・医療体制の充実",
+   "official_title": "地域で高齢者が安心して暮らせる社会づくり",
+   "project_id": "jp-local-110001-project-2025-elderly-community-care",
+   "selection_basis": "第1巡目: 針路3「介護・医療体制の充実」について、計画の掲載順で先頭の施策11「地域で高齢者が安心して暮らせる社会づくり」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-110001-project-series-elderly-community-care",
+   "source_ids": [
+    "saitama-pref-five-year-plan-part2"
+   ]
+  },
+  {
+   "measure_number": 16,
+   "needle": "子育てに希望が持てる社会の実現",
+   "official_title": "きめ細かな少子化対策の推進",
+   "project_id": "jp-local-110001-project-2025-declining-birthrate-measures",
+   "selection_basis": "第1巡目: 針路4「子育てに希望が持てる社会の実現」について、計画の掲載順で先頭の施策16「きめ細かな少子化対策の推進」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-110001-project-series-declining-birthrate-measures",
+   "source_ids": [
+    "saitama-pref-five-year-plan-part2"
+   ]
+  },
+  {
+   "measure_number": 19,
+   "needle": "未来を創る子供たちの育成",
+   "official_title": "確かな学力と自立する力の育成",
+   "project_id": "jp-local-110001-project-2025-academic-ability-independence",
+   "selection_basis": "第1巡目: 針路5「未来を創る子供たちの育成」について、計画の掲載順で先頭の施策19「確かな学力と自立する力の育成」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-110001-project-series-academic-ability-independence",
+   "source_ids": [
+    "saitama-pref-five-year-plan-part2"
+   ]
+  },
+  {
+   "measure_number": 25,
+   "needle": "人生100年を見据えたシニア活躍の推進",
+   "official_title": "生涯を通じた健康の確保",
+   "project_id": "jp-local-110001-project-2025-lifelong-health",
+   "selection_basis": "第1巡目: 針路6「人生100年を見据えたシニア活躍の推進」について、計画の掲載順で先頭の施策25「生涯を通じた健康の確保」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-110001-project-series-lifelong-health",
+   "source_ids": [
+    "saitama-pref-five-year-plan-part2"
+   ]
+  },
+  {
+   "measure_number": 28,
+   "needle": "誰もが活躍し共に生きる社会の実現",
+   "official_title": "就業支援と雇用環境の改善",
+   "project_id": "jp-local-110001-project-2025-employment-support-environment",
+   "selection_basis": "第1巡目: 針路7「誰もが活躍し共に生きる社会の実現」について、計画の掲載順で先頭の施策28「就業支援と雇用環境の改善」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-110001-project-series-employment-support-environment",
+   "source_ids": [
+    "saitama-pref-five-year-plan-part2"
+   ]
+  },
+  {
+   "measure_number": 32,
+   "needle": "支え合い魅力あふれる地域社会の構築",
+   "official_title": "多文化共生と国際交流のSAITAMAづくり",
+   "project_id": "jp-local-110001-project-2025-multicultural-coexistence",
+   "selection_basis": "第1巡目: 針路8「支え合い魅力あふれる地域社会の構築」について、計画の掲載順で先頭の施策32「多文化共生と国際交流のSAITAMAづくり」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-110001-project-series-multicultural-coexistence",
+   "source_ids": [
+    "saitama-pref-five-year-plan-part2"
+   ]
+  },
+  {
+   "measure_number": 38,
+   "needle": "未来を見据えた社会基盤の創造",
+   "official_title": "住み続けられるまちづくり",
+   "project_id": "jp-local-110001-project-2025-livable-community-development",
+   "selection_basis": "第1巡目: 針路9「未来を見据えた社会基盤の創造」について、計画の掲載順で先頭の施策38「住み続けられるまちづくり」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-110001-project-series-livable-community-development",
+   "source_ids": [
+    "saitama-pref-five-year-plan-part2"
+   ]
+  },
+  {
+   "measure_number": 41,
+   "needle": "豊かな自然と共生する社会の実現",
+   "official_title": "みどりの保全と創出",
+   "project_id": "jp-local-110001-project-2025-green-conservation-creation",
+   "selection_basis": "第1巡目: 針路10「豊かな自然と共生する社会の実現」について、計画の掲載順で先頭の施策41「みどりの保全と創出」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-110001-project-series-green-conservation-creation",
+   "source_ids": [
+    "saitama-pref-five-year-plan-part2"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2964 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策1「危機管理・防災体制の再構築」は、埼玉県5か年計画（令和4〜8年度）の針路1「災害・危機に強い埼玉の構築」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路1の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和5年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2022"
+    ],
+    "statement": "令和5年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和5年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2022"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和5年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2022"
+    ],
+    "statement": "本施策の施策指標3件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2022-crisis-management-disaster-prevention",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2022-crisis-management-disaster-prevention",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策1「危機管理・防災体制の再構築」は、埼玉県5か年計画（令和4〜8年度）の針路1「災害・危機に強い埼玉の構築」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路1の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和6年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2023"
+    ],
+    "statement": "令和6年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和6年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2023"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和6年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2023"
+    ],
+    "statement": "本施策の施策指標3件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2023-crisis-management-disaster-prevention",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2023-crisis-management-disaster-prevention",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策1「危機管理・防災体制の再構築」は、埼玉県5か年計画（令和4〜8年度）の針路1「災害・危機に強い埼玉の構築」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路1の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和7年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2024"
+    ],
+    "statement": "令和7年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2024"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2024"
+    ],
+    "statement": "本施策の施策指標3件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2024-crisis-management-disaster-prevention",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2024-crisis-management-disaster-prevention",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策1「危機管理・防災体制の再構築」は、埼玉県5か年計画（令和4〜8年度）の針路1「災害・危機に強い埼玉の構築」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路1の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2025"
+    ],
+    "statement": "令和8年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2025"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和8年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2025"
+    ],
+    "statement": "本施策の施策指標3件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2025-crisis-management-disaster-prevention",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2025-crisis-management-disaster-prevention",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策5「防犯対策の推進と捜査活動の強化」は、埼玉県5か年計画（令和4〜8年度）の針路2「県民の暮らしの安心確保」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路2の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和5年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2022"
+    ],
+    "statement": "令和5年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和5年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2022"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和5年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2022"
+    ],
+    "statement": "本施策の施策指標1件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2022-crime-prevention-investigation",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2022-crime-prevention-investigation",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策5「防犯対策の推進と捜査活動の強化」は、埼玉県5か年計画（令和4〜8年度）の針路2「県民の暮らしの安心確保」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路2の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和6年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2023"
+    ],
+    "statement": "令和6年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和6年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2023"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和6年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2023"
+    ],
+    "statement": "本施策の施策指標1件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2023-crime-prevention-investigation",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2023-crime-prevention-investigation",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策5「防犯対策の推進と捜査活動の強化」は、埼玉県5か年計画（令和4〜8年度）の針路2「県民の暮らしの安心確保」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路2の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和7年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2024"
+    ],
+    "statement": "令和7年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2024"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2024"
+    ],
+    "statement": "本施策の施策指標1件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2024-crime-prevention-investigation",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2024-crime-prevention-investigation",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策5「防犯対策の推進と捜査活動の強化」は、埼玉県5か年計画（令和4〜8年度）の針路2「県民の暮らしの安心確保」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路2の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2025"
+    ],
+    "statement": "令和8年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2025"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和8年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2025"
+    ],
+    "statement": "本施策の施策指標1件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2025-crime-prevention-investigation",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2025-crime-prevention-investigation",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策11「地域で高齢者が安心して暮らせる社会づくり」は、埼玉県5か年計画（令和4〜8年度）の針路3「介護・医療体制の充実」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路3の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和5年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2022"
+    ],
+    "statement": "令和5年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和5年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2022"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和5年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2022"
+    ],
+    "statement": "本施策の施策指標2件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2022-elderly-community-care",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2022-elderly-community-care",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策11「地域で高齢者が安心して暮らせる社会づくり」は、埼玉県5か年計画（令和4〜8年度）の針路3「介護・医療体制の充実」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路3の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和6年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2023"
+    ],
+    "statement": "令和6年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和6年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2023"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和6年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2023"
+    ],
+    "statement": "本施策の施策指標2件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2023-elderly-community-care",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2023-elderly-community-care",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策11「地域で高齢者が安心して暮らせる社会づくり」は、埼玉県5か年計画（令和4〜8年度）の針路3「介護・医療体制の充実」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路3の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和7年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2024"
+    ],
+    "statement": "令和7年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2024"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2024"
+    ],
+    "statement": "本施策の施策指標2件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2024-elderly-community-care",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2024-elderly-community-care",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策11「地域で高齢者が安心して暮らせる社会づくり」は、埼玉県5か年計画（令和4〜8年度）の針路3「介護・医療体制の充実」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路3の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2025"
+    ],
+    "statement": "令和8年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2025"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和8年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2025"
+    ],
+    "statement": "本施策の施策指標2件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2025-elderly-community-care",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2025-elderly-community-care",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策16「きめ細かな少子化対策の推進」は、埼玉県5か年計画（令和4〜8年度）の針路4「子育てに希望が持てる社会の実現」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路4の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和5年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2022"
+    ],
+    "statement": "令和5年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和5年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2022"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和5年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2022"
+    ],
+    "statement": "本施策の施策指標1件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2022-declining-birthrate-measures",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2022-declining-birthrate-measures",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策16「きめ細かな少子化対策の推進」は、埼玉県5か年計画（令和4〜8年度）の針路4「子育てに希望が持てる社会の実現」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路4の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和6年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2023"
+    ],
+    "statement": "令和6年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和6年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2023"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和6年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2023"
+    ],
+    "statement": "本施策の施策指標1件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2023-declining-birthrate-measures",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2023-declining-birthrate-measures",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策16「きめ細かな少子化対策の推進」は、埼玉県5か年計画（令和4〜8年度）の針路4「子育てに希望が持てる社会の実現」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路4の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和7年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2024"
+    ],
+    "statement": "令和7年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2024"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2024"
+    ],
+    "statement": "本施策の施策指標2件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2024-declining-birthrate-measures",
+  "open_questions": [
+   "令和7年度施策評価では、差し替え前の指標（合計特殊出生率、判定は「－」で評価対象外）と差し替え後の指標の双方が一覧に掲載されているため、掲載どおり両方を登録した。",
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2024-declining-birthrate-measures",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策16「きめ細かな少子化対策の推進」は、埼玉県5か年計画（令和4〜8年度）の針路4「子育てに希望が持てる社会の実現」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路4の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2025"
+    ],
+    "statement": "令和8年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2025"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和8年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2025"
+    ],
+    "statement": "本施策の施策指標1件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2025-declining-birthrate-measures",
+  "open_questions": [
+   "施策指標31は令和7年3月のローリング見直しで合計特殊出生率から「『結婚、妊娠、こども・子育てに温かい社会の実現に向かっている』と思う人の割合」へ差し替えられた。旧指標は令和8年度施策評価の一覧に掲載されていないため、本年度レコードには新指標のみを登録し、版をまたぐ対応付けはしていない。",
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2025-declining-birthrate-measures",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策19「確かな学力と自立する力の育成」は、埼玉県5か年計画（令和4〜8年度）の針路5「未来を創る子供たちの育成」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路5の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和5年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2022"
+    ],
+    "statement": "令和5年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和5年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2022"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和5年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2022"
+    ],
+    "statement": "本施策の施策指標2件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2022-academic-ability-independence",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2022-academic-ability-independence",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策19「確かな学力と自立する力の育成」は、埼玉県5か年計画（令和4〜8年度）の針路5「未来を創る子供たちの育成」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路5の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和6年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2023"
+    ],
+    "statement": "令和6年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和6年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2023"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和6年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2023"
+    ],
+    "statement": "本施策の施策指標2件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2023-academic-ability-independence",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2023-academic-ability-independence",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策19「確かな学力と自立する力の育成」は、埼玉県5か年計画（令和4〜8年度）の針路5「未来を創る子供たちの育成」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路5の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和7年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2024"
+    ],
+    "statement": "令和7年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2024"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2024"
+    ],
+    "statement": "本施策の施策指標2件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2024-academic-ability-independence",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2024-academic-ability-independence",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策19「確かな学力と自立する力の育成」は、埼玉県5か年計画（令和4〜8年度）の針路5「未来を創る子供たちの育成」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路5の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2025"
+    ],
+    "statement": "令和8年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2025"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和8年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2025"
+    ],
+    "statement": "本施策の施策指標2件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2025-academic-ability-independence",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2025-academic-ability-independence",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策25「生涯を通じた健康の確保」は、埼玉県5か年計画（令和4〜8年度）の針路6「人生100年を見据えたシニア活躍の推進」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路6の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和5年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2022"
+    ],
+    "statement": "令和5年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和5年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2022"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和5年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2022"
+    ],
+    "statement": "本施策の施策指標4件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2022-lifelong-health",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2022-lifelong-health",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策25「生涯を通じた健康の確保」は、埼玉県5か年計画（令和4〜8年度）の針路6「人生100年を見据えたシニア活躍の推進」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路6の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和6年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2023"
+    ],
+    "statement": "令和6年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和6年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2023"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和6年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2023"
+    ],
+    "statement": "本施策の施策指標4件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2023-lifelong-health",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2023-lifelong-health",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策25「生涯を通じた健康の確保」は、埼玉県5か年計画（令和4〜8年度）の針路6「人生100年を見据えたシニア活躍の推進」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路6の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和7年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2024"
+    ],
+    "statement": "令和7年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2024"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2024"
+    ],
+    "statement": "本施策の施策指標4件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2024-lifelong-health",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2024-lifelong-health",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策25「生涯を通じた健康の確保」は、埼玉県5か年計画（令和4〜8年度）の針路6「人生100年を見据えたシニア活躍の推進」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路6の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2025"
+    ],
+    "statement": "令和8年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2025"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和8年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2025"
+    ],
+    "statement": "本施策の施策指標4件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2025-lifelong-health",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2025-lifelong-health",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策28「就業支援と雇用環境の改善」は、埼玉県5か年計画（令和4〜8年度）の針路7「誰もが活躍し共に生きる社会の実現」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路7の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和5年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2022"
+    ],
+    "statement": "令和5年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和5年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2022"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和5年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2022"
+    ],
+    "statement": "本施策の施策指標2件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2022-employment-support-environment",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2022-employment-support-environment",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策28「就業支援と雇用環境の改善」は、埼玉県5か年計画（令和4〜8年度）の針路7「誰もが活躍し共に生きる社会の実現」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路7の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和6年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2023"
+    ],
+    "statement": "令和6年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和6年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2023"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和6年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2023"
+    ],
+    "statement": "本施策の施策指標2件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2023-employment-support-environment",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2023-employment-support-environment",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策28「就業支援と雇用環境の改善」は、埼玉県5か年計画（令和4〜8年度）の針路7「誰もが活躍し共に生きる社会の実現」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路7の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和7年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2024"
+    ],
+    "statement": "令和7年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2024"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2024"
+    ],
+    "statement": "本施策の施策指標2件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2024-employment-support-environment",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2024-employment-support-environment",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策28「就業支援と雇用環境の改善」は、埼玉県5か年計画（令和4〜8年度）の針路7「誰もが活躍し共に生きる社会の実現」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路7の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2025"
+    ],
+    "statement": "令和8年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2025"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和8年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2025"
+    ],
+    "statement": "本施策の施策指標2件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2025-employment-support-environment",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2025-employment-support-environment",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策32「多文化共生と国際交流のSAITAMAづくり」は、埼玉県5か年計画（令和4〜8年度）の針路8「支え合い魅力あふれる地域社会の構築」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路8の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和5年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2022"
+    ],
+    "statement": "令和5年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和5年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2022"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和5年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2022"
+    ],
+    "statement": "本施策の施策指標2件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2022-multicultural-coexistence",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2022-multicultural-coexistence",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策32「多文化共生と国際交流のSAITAMAづくり」は、埼玉県5か年計画（令和4〜8年度）の針路8「支え合い魅力あふれる地域社会の構築」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路8の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和6年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2023"
+    ],
+    "statement": "令和6年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和6年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2023"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和6年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2023"
+    ],
+    "statement": "本施策の施策指標2件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2023-multicultural-coexistence",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2023-multicultural-coexistence",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策32「多文化共生と国際交流のSAITAMAづくり」は、埼玉県5か年計画（令和4〜8年度）の針路8「支え合い魅力あふれる地域社会の構築」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路8の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和7年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2024"
+    ],
+    "statement": "令和7年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2024"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2024"
+    ],
+    "statement": "本施策の施策指標2件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2024-multicultural-coexistence",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2024-multicultural-coexistence",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策32「多文化共生と国際交流のSAITAMAづくり」は、埼玉県5か年計画（令和4〜8年度）の針路8「支え合い魅力あふれる地域社会の構築」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路8の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2025"
+    ],
+    "statement": "令和8年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2025"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和8年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2025"
+    ],
+    "statement": "本施策の施策指標2件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2025-multicultural-coexistence",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2025-multicultural-coexistence",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策38「住み続けられるまちづくり」は、埼玉県5か年計画（令和4〜8年度）の針路9「未来を見据えた社会基盤の創造」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路9の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和5年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2022"
+    ],
+    "statement": "令和5年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和5年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2022"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和5年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2022"
+    ],
+    "statement": "本施策の施策指標2件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2022-livable-community-development",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2022-livable-community-development",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策38「住み続けられるまちづくり」は、埼玉県5か年計画（令和4〜8年度）の針路9「未来を見据えた社会基盤の創造」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路9の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和6年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2023"
+    ],
+    "statement": "令和6年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和6年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2023"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和6年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2023"
+    ],
+    "statement": "本施策の施策指標2件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2023-livable-community-development",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2023-livable-community-development",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策38「住み続けられるまちづくり」は、埼玉県5か年計画（令和4〜8年度）の針路9「未来を見据えた社会基盤の創造」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路9の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和7年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2024"
+    ],
+    "statement": "令和7年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2024"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2024"
+    ],
+    "statement": "本施策の施策指標2件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2024-livable-community-development",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2024-livable-community-development",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策38「住み続けられるまちづくり」は、埼玉県5か年計画（令和4〜8年度）の針路9「未来を見据えた社会基盤の創造」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路9の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2025"
+    ],
+    "statement": "令和8年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2025"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和8年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2025"
+    ],
+    "statement": "本施策の施策指標2件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2025-livable-community-development",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2025-livable-community-development",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策41「みどりの保全と創出」は、埼玉県5か年計画（令和4〜8年度）の針路10「豊かな自然と共生する社会の実現」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路10の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和5年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2022"
+    ],
+    "statement": "令和5年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和5年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2022"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和5年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2022"
+    ],
+    "statement": "本施策の施策指標2件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2022-green-conservation-creation",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2022-green-conservation-creation",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策41「みどりの保全と創出」は、埼玉県5か年計画（令和4〜8年度）の針路10「豊かな自然と共生する社会の実現」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路10の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和6年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2023"
+    ],
+    "statement": "令和6年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和6年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2023"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和6年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2023"
+    ],
+    "statement": "本施策の施策指標2件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2023-green-conservation-creation",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2023-green-conservation-creation",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策41「みどりの保全と創出」は、埼玉県5か年計画（令和4〜8年度）の針路10「豊かな自然と共生する社会の実現」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路10の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和7年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2024"
+    ],
+    "statement": "令和7年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2024"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2024"
+    ],
+    "statement": "本施策の施策指標2件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2024-green-conservation-creation",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2024-green-conservation-creation",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第2編の分野別施策見出しと施策評価の分野別施策名",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "施策41「みどりの保全と創出」は、埼玉県5か年計画（令和4〜8年度）の針路10「豊かな自然と共生する社会の実現」に属する54の分野別施策の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第2編の針路・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "選定規則（12の針路を計画の掲載順に巡回し、各針路では分野別施策を掲載順にたどる）により第1巡目で、針路10の先頭施策として選定した。10系列が第1巡目で揃ったため、針路11・12の先頭施策（施策48 新たな産業の育成と企業誘致の推進、施策52 農業の担い手育成と生産基盤の強化）は選定していない。金額の大小では選んでいない。対応関係は選定カタログ（data/catalog/saitama_priority_project_selection.json）に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書第2編の「施策内容」",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-five-year-plan-part2"
+    ],
+    "statement": "purpose は計画書第2編の当該施策の「施策内容」の本文を転記したものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度施策評価の全体構成",
+    "review_note": "施策単位の金額が公表されていないことは評価書全体の構成から確認した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2025"
+    ],
+    "statement": "令和8年度施策評価は指標の進捗（指標シート・最新値一覧）と主な取組の実績で構成され、分野別施策単位の予算額・決算額は掲載されていない。このため金額は未登録（null）とし、0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度施策評価の全体構成",
+    "review_note": null,
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2025"
+    ],
+    "statement": "県の施策評価は指標単位の判定（策定時からの進捗判定と年度目標判定）のみで、分野別施策単位の公式評定は公表されていない。このため official_evaluation は未登録（null）とし、指標単位の公式判定は KPI の assessment に対応付けて登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和8年度施策評価「指標の最新値一覧」と個別の指標シート見出し",
+    "review_note": "値は一覧と個別シートの見出し値の双方で照合した。複合指標（36・49）と男女別指標（51・52）は県が指標全体で一つの判定を公表するため、構成要素を併記した文字列で登録した。",
+    "source_ids": [
+     "saitama-pref-policy-evaluation-fy2025"
+    ],
+    "statement": "本施策の施策指標2件を登録した。策定時の値・最新値・年度目標値・最終目標値と年度目標判定は評価書の掲載どおりであり、assessment は県の公式判定記号（○=achieved、△=partially_achieved、×=not_achieved、－=not_assessable）への機械的な対応付けである。指標の最新値は指標ごとに把握時点が異なり、評価対象年度より前の年度の値が最新値として掲載される場合がある（各KPIの period に掲載時点を明記した）。"
+   }
+  ],
+  "id": "evidence-jp-local-110001-project-2025-green-conservation-creation",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "分野別施策単位の予算額・決算額は公表されていないため、金額は未登録である。",
+   "次期5か年計画（令和9〜13年度、策定中）の施策とは対応付けていない。現行計画が正本である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-110001-project-2025-green-conservation-creation",
+  "subject_type": "project"
+ }
+]
