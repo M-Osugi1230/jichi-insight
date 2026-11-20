@@ -194,7 +194,7 @@ function registry(
 export const assemblies: Record<AssemblySlug, Registry> = {
   "hokkaido-prefecture": registry(
     hokkaidoAssembly, hokkaidoDisclosure, hokkaidoSessions, hokkaidoProposals, hokkaidoVotes,
-    hokkaidoFactionVotes, hokkaidoExpenses.map((expense) => ({ ...expense, breakdown: [] })), hokkaidoTrips,
+    hokkaidoFactionVotes, hokkaidoExpenses.map((expense) => ({ breakdown: [], ...expense })), hokkaidoTrips,
     [...hokkaidoAssemblyEvidence, ...hokkaidoVoteEvidence, ...hokkaidoExpenseEvidence, ...hokkaidoTripEvidence],
     hokkaidoSources.records,
   ),
