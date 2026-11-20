@@ -1,5 +1,6 @@
 import hokkaidoFinanceCatalog from "../../../data/catalog/hokkaido_prefecture_finance_sources.json";
 import kanagawaFinanceCatalog from "../../../data/catalog/kanagawa_prefecture_finance_sources.json";
+import saitamaFinanceCatalog from "../../../data/catalog/saitama_prefecture_finance_sources.json";
 import aichiFinanceCatalog from "../../../data/catalog/aichi_prefecture_finance_sources.json";
 import assemblyCatalog from "../../../data/catalog/fukuoka_assembly_sources.json";
 import cityFinanceCatalog from "../../../data/catalog/fukuoka_city_finance_sources.json";
@@ -22,7 +23,8 @@ export type MunicipalityKey =
   | "nagoya-city"
   | "toyota-city"
   | "sapporo-city"
-  | "asahikawa-city";
+  | "asahikawa-city"
+  | "saitama-prefecture";
 
 export type SourceRecord = {
   id: string;
@@ -72,6 +74,12 @@ export const municipalityMeta: Record<
     name: "神奈川県", type: "都道府県",
     summary: "新かながわグランドデザイン、2026年度成立後当初予算、2022〜2024年度の普通会計決算、黒岩祐治知事の現任期・公約33件、県議会を確認します。",
     status: "財政データ公開", href: "/municipalities/kanagawa-prefecture",
+    fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
+  },
+  "saitama-prefecture": {
+    name: "埼玉県", type: "都道府県",
+    summary: "埼玉県5か年計画、2026年度成立後当初予算、2022〜2024年度の普通会計決算と大野元裕知事の現任期を確認します。自治体別ページは準備中です。",
+    status: "財政データ公開", href: null,
     fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
   },
   "kawasaki-city": {
@@ -163,6 +171,7 @@ export const municipalityMeta: Record<
 export const sourceCatalog = [
   ...(hokkaidoFinanceCatalog.records as SourceRecord[]),
   ...(kanagawaFinanceCatalog.records as SourceRecord[]),
+  ...(saitamaFinanceCatalog.records as SourceRecord[]),
   ...(aichiFinanceCatalog.records as SourceRecord[]),
   ...(officialCatalog.records as SourceRecord[]),
   ...(financeCatalog.records as SourceRecord[]),

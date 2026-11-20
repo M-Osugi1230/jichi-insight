@@ -1,5 +1,5 @@
 {
-  "version": "0.22.0",
+  "version": "0.23.0",
   "updated_at": "2026-11-21",
   "scope": "pilot",
   "records": [
@@ -996,6 +996,62 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "選挙公報の単独PDFは現存しない（川崎市の選挙特設サイトは選挙ごとに差し替えられるため）。川崎市選挙管理委員会「令和7年10月26日執行 川崎市長選挙・川崎市議会議員川崎区選挙区補欠選挙の記録」（2026年3月発行）の第8章(3)「選挙公報」に、公報そのものが画像で再録されており（記録90〜91ページが市長選分）、市公式サイトの「選挙の記録」ページ（https://www.city.kawasaki.jp/910/page/0000186116.html ）から現在も到達可能である。福田紀彦候補欄は記録90ページの下段左。テキスト層はなく画像のみのため、登録文はPDFの描画画像（200dpi・300dpi・450dpi・600dpi）から転記し複数解像度で照合した。再録であることは記録の体裁（各ページの標題と記録のページ番号）から明らかであり、公報自体は候補者から提出された原稿をそのまま掲載した公式文書（欄外にその旨の注記あり）で出典優先順位の最上位に当たるため、confidence は high とした。2026-11-21に描画画像を直接確認した。"
+    },
+    {
+      "id": "saitama-pref-governor",
+      "municipality_key": "saitama-prefecture",
+      "organization": "埼玉県",
+      "category": "executive",
+      "title": "知事プロフィル（埼玉県）",
+      "url": "https://www.pref.saitama.lg.jp/a0301/room/profile.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "埼玉県公式の知事プロフィル。現職知事が大野元裕であることと経歴（令和元年8月 第61代埼玉県知事に就任、令和5年8月 第62代埼玉県知事に就任）を示す。"
+    },
+    {
+      "id": "saitama-pref-governor-election-2023-results",
+      "municipality_key": "saitama-prefecture",
+      "organization": "埼玉県選挙管理委員会",
+      "category": "election",
+      "title": "埼玉県知事選挙（令和5年8月6日執行）結果",
+      "url": "https://www.pref.saitama.lg.jp/e1701/r5chijikekka.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "2023年8月6日執行の埼玉県知事選挙の公式結果ページ。候補者3人、大野もとひろ1,138,973票（得票率80.21％、無所属・現職）で当選、柴岡ゆうま183,692票、大沢としお97,252票。有効投票1,419,917票、投票率23.76％。選挙公報（PDF：974KB）へのリンクも掲載する。"
+    },
+    {
+      "id": "saitama-governor-term-expiry-list",
+      "municipality_key": "saitama-prefecture",
+      "organization": "埼玉県選挙管理委員会",
+      "category": "election",
+      "title": "任期満了日一覧（国会議員、埼玉県知事及び埼玉県議会議員の任期満了日一覧）",
+      "url": "https://www.pref.saitama.lg.jp/e1701/ninki.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "埼玉県選挙管理委員会の任期満了日一覧。埼玉県知事の任期満了日として令和9年8月30日（2027年8月30日）を日単位で明記する。埼玉県議会議員の任期満了日は令和9年4月29日。"
+    },
+    {
+      "id": "saitama-city-governor-election-2023-result-table",
+      "municipality_key": "saitama-prefecture",
+      "organization": "さいたま市選挙管理委員会",
+      "category": "election",
+      "title": "令和5年8月6日執行 埼玉県知事選挙 得票数及び当選人（開票結果表）",
+      "url": "https://www.city.saitama.lg.jp/006/009/kakonosenkyokekka/p098825_d/fil/R5chijitokuhyousuu.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "さいたま市選挙管理委員会の公式開票結果表。当選人 大野もとひろ（大野元裕、無所属）の合計得票1,138,973票を示し、見出しに「当選人の任期 令和5年8月31日～令和9年8月30日」と開始日・満了日の双方を日単位で明記する。"
     }
   ]
 }

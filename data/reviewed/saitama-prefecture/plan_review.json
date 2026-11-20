@@ -1,0 +1,55 @@
+{
+  "id": "phase15-saitama-plan-review",
+  "name_ja": "埼玉県",
+  "next_action": "Register the 54 field-level measures of the five-year plan in the Saitama cluster's project stage, using the annual policy evaluations as the official evaluation source; register the governor's promises in the promise stage from the official 2023 election bulletin (whether its text layer is machine-readable still needs to be measured); add the assembly layer in the assembly stage; and keep supplementary budgets, execution and settlement as separate states.",
+  "official_code": "110001",
+  "quality_boundary": "This package reviews the identity and structure of Saitama Prefecture's current comprehensive plan (the Saitama Five-Year Plan 'Towards a Saitama Where Everyone Can Live Best in Japan', covering FY2022-FY2026: three visions looking ahead to 2040, twelve courses and 54 field-level measures, with policy indicators set for every measure), the implementation layer (measure-level management under the twelve courses, with a rolling mid-term revision carried out in March 2025) and the progress-governance layer (annual policy evaluations of the 54 measures, combining indicator progress sheets, records of main initiatives and a residents' satisfaction survey, fed back into the next year's budget and organisation). The next plan (FY2027-FY2031) is still being drafted — its outline was published in July 2026 — so it is outside this review and no cross-version mapping of measures is made. The 54 measures are enumerated by name in the policy-structure record but their indicators and evaluations are registered in the project stage, not here. The enacted FY2026 general-account initial budget is registered separately in fiscal_records.json at the published thousand-yen precision, and the FY2022-FY2024 ordinary-account settlements are registered separately in settlement_records.json; general-account settlement figures are not mixed into the ordinary-account series.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "計画の位置付け・期間・構成は県公式「埼玉県5か年計画 ～日本一暮らしやすい埼玉へ～」のページで、大綱の取りまとめ経緯は「埼玉県5か年計画大綱」（令和3年7月）で直接確認した。",
+      "evidence_role": "current_plan_identity",
+      "id": "saitama-current-plan-identity",
+      "review_note": "計画の同一性と期間を、政策評価や年度予算と分離して保持する。レビュー済みレコード。",
+      "source_url": "https://www.pref.saitama.lg.jp/a0102/5-keikaku/04-index.html",
+      "statement": "埼玉県の現行の総合計画は「埼玉県5か年計画 ～日本一暮らしやすい埼玉へ～」である。県はこの計画を「県政運営の基礎となる計画」と位置付けており、令和4年度（2022年度）から令和8年度（2026年度）までの5か年を計画期間とする。基本理念は「あらゆる人に居場所があり、活躍でき、安心して暮らせる『日本一暮らしやすい埼玉』」であり、計画は第1編 総論・第2編 全体計画・第3編 地域別施策で構成される。令和3年7月に取りまとめられた計画大綱を基に、県民意見を経て策定された。なお、計画期間の3年度目を迎えたことから検証・見直し（ローリング）が行われ、令和7年3月に13指標の目標値等の変更を含む一部変更が行われている。",
+      "title": "埼玉県5か年計画 ～日本一暮らしやすい埼玉へ～ の策定と構成（令和4〜8年度）",
+      "value": "埼玉県5か年計画 ～日本一暮らしやすい埼玉へ～（令和4年度〜令和8年度）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "将来像・針路・分野別施策の構成は計画大綱および計画の概要ページで、施策指標の数は大綱の説明資料で直接確認した。",
+      "evidence_role": "policy_structure",
+      "id": "saitama-plan-policy-structure",
+      "review_note": "針路名は計画書の見出し表記を採用した。レビュー済みレコード。",
+      "source_url": "https://www.pref.saitama.lg.jp/a0102/5-keikaku/04-gaiyo.html",
+      "statement": "計画は、2030年やその先の2040年を見据えた3つの将来像（1 安心・安全の追究 ～Resilience～／2 誰もが輝く社会 ～Empowerment～／3 持続可能な成長 ～Sustainability～）を掲げ、その実現に向けて政策分野ごとに12の針路（1 災害・危機に強い埼玉の構築／2 県民の暮らしの安心確保／3 介護・医療体制の充実／4 子育てに希望が持てる社会の実現／5 未来を創る子供たちの育成／6 人生100年を見据えたシニア活躍の推進／7 誰もが活躍し共に生きる社会の実現／8 支え合い魅力あふれる地域社会の構築／9 未来を見据えた社会基盤の創造／10 豊かな自然と共生する社会の実現／11 稼げる力の向上／12 儲かる農林業の推進）を示し、針路ごとに分野別施策を置く全54の分野別施策で構成される。54の施策全てに、達成すべき数値目標として98の施策指標が設定されている。全ての施策を貫く横断的な基本姿勢は「埼玉版SDGsの推進」と「新たな社会に向けた変革」の2点である。",
+      "title": "3つの将来像・12の針路・54の分野別施策（計画の政策体系）",
+      "value": "3つの将来像／12の針路／54の分野別施策"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "実施の単位と指標の設定は施策評価（令和8年度）の「施策評価に基づいた県政運営」で、ローリング見直しと一部変更は計画の公式ページで直接確認した。",
+      "evidence_role": "implementation_layer",
+      "id": "saitama-plan-implementation-layer",
+      "review_note": "事業の登録は段階2で54の分野別施策を単位に行う。レビュー済みレコード。",
+      "source_url": "https://www.pref.saitama.lg.jp/a0102/5-keikaku/04-index.html",
+      "statement": "実施は、54の分野別施策を単位として行われ、各施策には施策指標が設定される。計画の実効性を担保するため、中間年度を目途に計画の見直し（ローリング）を実施することとされており、計画期間の3年度目に検証・見直しが行われ、令和7年3月に13指標の目標値等の変更を含む一部変更が行われた。次期計画（令和9年度〜令和13年度）は大綱が2026年7月に公表され策定中であり、本計画とは体系が異なる（3つの将来像→9の政策→51の分野別施策）ため、本レビューの対象とせず、版をまたぐ施策の対応付けは行わない。",
+      "title": "54の分野別施策による実施と中間年度のローリング見直し",
+      "value": "54の分野別施策単位の実施管理＋ローリング見直し（令和7年3月に一部変更）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "施策評価の公表と方法は県公式「施策評価」ページと令和8年度施策評価（令和7年度実績分）全体版で直接確認した。",
+      "evidence_role": "progress_governance",
+      "id": "saitama-plan-progress-governance",
+      "review_note": "分野別施策ごとの評価の登録は段階2で行う。レビュー済みレコード。",
+      "source_url": "https://www.pref.saitama.lg.jp/a0102/sesakuhyouka.html",
+      "statement": "進行管理は、企画財政部計画調整課による年次の「施策評価」として実施され、公表される（直近は令和8年度施策評価＝令和7年度実績分、2026年10月19日掲載）。評価の単位は5か年計画の54の分野別施策で、各施策に設定した施策指標の進捗状況（指標等の進捗状況シートに指標・達成率（年度目標比）・分析を掲載）、各施策の「主な取組」の進捗状況、県民満足度調査の結果を把握して行う。各施策の進捗状況を毎年度確認し、評価結果を踏まえて施策の進め方の見直しを行うとともに、翌年度の予算・組織や事業の実施方法に反映するPDCAサイクルで計画を推進する運用が明記されている。",
+      "title": "年次「施策評価」（54の分野別施策単位）による進行管理",
+      "value": "施策評価（年次）／54の分野別施策単位"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-21"
+}
