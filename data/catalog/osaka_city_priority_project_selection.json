@@ -1,0 +1,380 @@
+{
+  "expansion_rule": "登録単位は戦略の「具体的な施策」とした。大阪市は主な事業単位のKPIを持たず、公式評価（令和7年度効果検証の施策別進捗状況評価）が施策単位で存在するためである。選定は4基本目標を巡回し、各基本目標の施策を戦略本編の掲載順にたどって1件ずつ選ぶ方法とし、10件に達した時点で打ち切った。第1巡は各基本目標の1番目、第2巡は基本目標④（施策1件のみ）の次を基本目標①～③の2番目、第3巡は基本目標①～③の3番目を選んだ。金額順では選定していない。金額は、戦略の施策単位の令和8年度当初予算額が公式に公表されていないため全件nullとし、その理由を各プロジェクトのbudget_recordsに明記した。KPIは、戦略アクションプラン編の工程表に掲載され、令和7年度効果検証（参考資料）で基準値・目標値・実績値・市の評価記号が確認できたものを登録した。令和8年9月改訂で新設された後継KPIは、基準値・実績値を未公表（not_published）として追加登録した。",
+  "issue": 768,
+  "municipality_id": "jp-local-271004",
+  "municipality_key": "osaka-city",
+  "population": {
+    "label": "大阪市未来都市創生総合戦略（令和6年3月策定、令和8年9月改訂）の具体的な施策（25件）",
+    "projects": [
+      {
+        "name": "妊娠前からの切れ目ない支援の充実と幼児教育・保育の質の向上",
+        "parent_policy": "基本目標①",
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ]
+      },
+      {
+        "name": "こども・青少年の生きる力の育成",
+        "parent_policy": "基本目標①",
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ]
+      },
+      {
+        "name": "児童虐待防止体制の強化",
+        "parent_policy": "基本目標①",
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ]
+      },
+      {
+        "name": "安全・安心な教育の推進",
+        "parent_policy": "基本目標①",
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ]
+      },
+      {
+        "name": "未来を切り拓く学力・体力の向上",
+        "parent_policy": "基本目標①",
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ]
+      },
+      {
+        "name": "学びを支える教育環境の充実",
+        "parent_policy": "基本目標①",
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ]
+      },
+      {
+        "name": "若者・女性の活躍促進",
+        "parent_policy": "基本目標①",
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ]
+      },
+      {
+        "name": "多文化共生のまちづくり",
+        "parent_policy": "基本目標①",
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ]
+      },
+      {
+        "name": "健康都市大阪の実現",
+        "parent_policy": "基本目標②",
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ]
+      },
+      {
+        "name": "高齢者等が安心して暮らせる社会の実現",
+        "parent_policy": "基本目標②",
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ]
+      },
+      {
+        "name": "防災・減災対策の推進",
+        "parent_policy": "基本目標②",
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ]
+      },
+      {
+        "name": "防犯対策の強化",
+        "parent_policy": "基本目標②",
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ]
+      },
+      {
+        "name": "活力ある地域社会の実現",
+        "parent_policy": "基本目標②",
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ]
+      },
+      {
+        "name": "西成特区構想",
+        "parent_policy": "基本目標②",
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ]
+      },
+      {
+        "name": "大阪の都市魅力の創造・発信",
+        "parent_policy": "基本目標③",
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ]
+      },
+      {
+        "name": "大阪の強みを活かし、イノベーションが次々と生まれる好循環づくり",
+        "parent_policy": "基本目標③",
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ]
+      },
+      {
+        "name": "中小企業振興と経済成長の担い手の育成",
+        "parent_policy": "基本目標③",
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ]
+      },
+      {
+        "name": "交流人口・関連マーケットの拡大によるビジネスチャンスの創出",
+        "parent_policy": "基本目標③",
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ]
+      },
+      {
+        "name": "2025年大阪・関西万博を契機とした大阪・関西の経済活性化及び都市格の向上",
+        "parent_policy": "基本目標③",
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ]
+      },
+      {
+        "name": "大阪の成長をリードする拠点形成",
+        "parent_policy": "基本目標③",
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ]
+      },
+      {
+        "name": "交通ネットワークや交通環境の充実",
+        "parent_policy": "基本目標③",
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ]
+      },
+      {
+        "name": "ゼロカーボンおおさかの実現",
+        "parent_policy": "基本目標③",
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ]
+      },
+      {
+        "name": "循環型社会の形成",
+        "parent_policy": "基本目標③",
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ]
+      },
+      {
+        "name": "快適な都市環境の確保",
+        "parent_policy": "基本目標③",
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ]
+      },
+      {
+        "name": "「Re-Designおおさか～大阪市DX戦略～」に基づく事業・施策の立案及び推進",
+        "parent_policy": "基本目標④",
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ]
+      }
+    ]
+  },
+  "review_status": "reviewed",
+  "scope": "expanded",
+  "selection_rule": "登録単位を戦略の「具体的な施策」とし、4基本目標を巡回して各基本目標の施策を掲載順に1件ずつ選定し、10件に達した時点で打ち切る。金額順では選定しない。",
+  "selections": [
+    {
+      "official_title": "妊娠前からの切れ目ない支援の充実と幼児教育・保育の質の向上",
+      "reason": "4基本目標を巡回し、掲載順にたどって選定した（選定規則はexpansion_ruleに記録）。",
+      "source_ids": [
+        "osaka-city-future-city-strategy-honpen-r89-pdf",
+        "osaka-city-future-city-strategy-actionplan-r89-pdf"
+      ]
+    },
+    {
+      "official_title": "こども・青少年の生きる力の育成",
+      "reason": "4基本目標を巡回し、掲載順にたどって選定した（選定規則はexpansion_ruleに記録）。",
+      "source_ids": [
+        "osaka-city-future-city-strategy-honpen-r89-pdf",
+        "osaka-city-future-city-strategy-actionplan-r89-pdf"
+      ]
+    },
+    {
+      "official_title": "児童虐待防止体制の強化",
+      "reason": "4基本目標を巡回し、掲載順にたどって選定した（選定規則はexpansion_ruleに記録）。",
+      "source_ids": [
+        "osaka-city-future-city-strategy-honpen-r89-pdf",
+        "osaka-city-future-city-strategy-actionplan-r89-pdf"
+      ]
+    },
+    {
+      "official_title": "健康都市大阪の実現",
+      "reason": "4基本目標を巡回し、掲載順にたどって選定した（選定規則はexpansion_ruleに記録）。",
+      "source_ids": [
+        "osaka-city-future-city-strategy-honpen-r89-pdf",
+        "osaka-city-future-city-strategy-actionplan-r89-pdf"
+      ]
+    },
+    {
+      "official_title": "高齢者等が安心して暮らせる社会の実現",
+      "reason": "4基本目標を巡回し、掲載順にたどって選定した（選定規則はexpansion_ruleに記録）。",
+      "source_ids": [
+        "osaka-city-future-city-strategy-honpen-r89-pdf",
+        "osaka-city-future-city-strategy-actionplan-r89-pdf"
+      ]
+    },
+    {
+      "official_title": "防災・減災対策の推進",
+      "reason": "4基本目標を巡回し、掲載順にたどって選定した（選定規則はexpansion_ruleに記録）。",
+      "source_ids": [
+        "osaka-city-future-city-strategy-honpen-r89-pdf",
+        "osaka-city-future-city-strategy-actionplan-r89-pdf"
+      ]
+    },
+    {
+      "official_title": "大阪の都市魅力の創造・発信",
+      "reason": "4基本目標を巡回し、掲載順にたどって選定した（選定規則はexpansion_ruleに記録）。",
+      "source_ids": [
+        "osaka-city-future-city-strategy-honpen-r89-pdf",
+        "osaka-city-future-city-strategy-actionplan-r89-pdf"
+      ]
+    },
+    {
+      "official_title": "大阪の強みを活かし、イノベーションが次々と生まれる好循環づくり",
+      "reason": "4基本目標を巡回し、掲載順にたどって選定した（選定規則はexpansion_ruleに記録）。",
+      "source_ids": [
+        "osaka-city-future-city-strategy-honpen-r89-pdf",
+        "osaka-city-future-city-strategy-actionplan-r89-pdf"
+      ]
+    },
+    {
+      "official_title": "中小企業振興と経済成長の担い手の育成",
+      "reason": "4基本目標を巡回し、掲載順にたどって選定した（選定規則はexpansion_ruleに記録）。",
+      "source_ids": [
+        "osaka-city-future-city-strategy-honpen-r89-pdf",
+        "osaka-city-future-city-strategy-actionplan-r89-pdf"
+      ]
+    },
+    {
+      "official_title": "「Re-Designおおさか～大阪市DX戦略～」に基づく事業・施策の立案及び推進",
+      "reason": "4基本目標を巡回し、掲載順にたどって選定した（選定規則はexpansion_ruleに記録）。",
+      "source_ids": [
+        "osaka-city-future-city-strategy-honpen-r89-pdf",
+        "osaka-city-future-city-strategy-actionplan-r89-pdf"
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "official_title": "安全・安心な教育の推進",
+      "reason": "巡回選定で10件に達したため未選定（掲載順の後位）。",
+      "source_ids": [
+        "osaka-city-future-city-strategy-honpen-r89-pdf"
+      ]
+    },
+    {
+      "official_title": "未来を切り拓く学力・体力の向上",
+      "reason": "巡回選定で10件に達したため未選定（掲載順の後位）。",
+      "source_ids": [
+        "osaka-city-future-city-strategy-honpen-r89-pdf"
+      ]
+    },
+    {
+      "official_title": "学びを支える教育環境の充実",
+      "reason": "巡回選定で10件に達したため未選定（掲載順の後位）。",
+      "source_ids": [
+        "osaka-city-future-city-strategy-honpen-r89-pdf"
+      ]
+    },
+    {
+      "official_title": "若者・女性の活躍促進",
+      "reason": "巡回選定で10件に達したため未選定（掲載順の後位）。",
+      "source_ids": [
+        "osaka-city-future-city-strategy-honpen-r89-pdf"
+      ]
+    },
+    {
+      "official_title": "多文化共生のまちづくり",
+      "reason": "巡回選定で10件に達したため未選定（掲載順の後位）。",
+      "source_ids": [
+        "osaka-city-future-city-strategy-honpen-r89-pdf"
+      ]
+    },
+    {
+      "official_title": "防犯対策の強化",
+      "reason": "巡回選定で10件に達したため未選定（掲載順の後位）。",
+      "source_ids": [
+        "osaka-city-future-city-strategy-honpen-r89-pdf"
+      ]
+    },
+    {
+      "official_title": "活力ある地域社会の実現",
+      "reason": "巡回選定で10件に達したため未選定（掲載順の後位）。",
+      "source_ids": [
+        "osaka-city-future-city-strategy-honpen-r89-pdf"
+      ]
+    },
+    {
+      "official_title": "西成特区構想",
+      "reason": "巡回選定で10件に達したため未選定（掲載順の後位）。",
+      "source_ids": [
+        "osaka-city-future-city-strategy-honpen-r89-pdf"
+      ]
+    },
+    {
+      "official_title": "交流人口・関連マーケットの拡大によるビジネスチャンスの創出",
+      "reason": "巡回選定で10件に達したため未選定（掲載順の後位）。",
+      "source_ids": [
+        "osaka-city-future-city-strategy-honpen-r89-pdf"
+      ]
+    },
+    {
+      "official_title": "2025年大阪・関西万博を契機とした大阪・関西の経済活性化及び都市格の向上",
+      "reason": "巡回選定で10件に達したため未選定（掲載順の後位）。",
+      "source_ids": [
+        "osaka-city-future-city-strategy-honpen-r89-pdf"
+      ]
+    },
+    {
+      "official_title": "大阪の成長をリードする拠点形成",
+      "reason": "巡回選定で10件に達したため未選定（掲載順の後位）。",
+      "source_ids": [
+        "osaka-city-future-city-strategy-honpen-r89-pdf"
+      ]
+    },
+    {
+      "official_title": "交通ネットワークや交通環境の充実",
+      "reason": "巡回選定で10件に達したため未選定（掲載順の後位）。",
+      "source_ids": [
+        "osaka-city-future-city-strategy-honpen-r89-pdf"
+      ]
+    },
+    {
+      "official_title": "ゼロカーボンおおさかの実現",
+      "reason": "巡回選定で10件に達したため未選定（掲載順の後位）。",
+      "source_ids": [
+        "osaka-city-future-city-strategy-honpen-r89-pdf"
+      ]
+    },
+    {
+      "official_title": "循環型社会の形成",
+      "reason": "巡回選定で10件に達したため未選定（掲載順の後位）。",
+      "source_ids": [
+        "osaka-city-future-city-strategy-honpen-r89-pdf"
+      ]
+    },
+    {
+      "official_title": "快適な都市環境の確保",
+      "reason": "巡回選定で10件に達したため未選定（掲載順の後位）。",
+      "source_ids": [
+        "osaka-city-future-city-strategy-honpen-r89-pdf"
+      ]
+    }
+  ],
+  "updated_at": "2026-11-20",
+  "version": "1.0.0"
+}
