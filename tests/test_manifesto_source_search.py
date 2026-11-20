@@ -46,6 +46,7 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         "jp-local-010006-executive-2023-04-23",
         "jp-local-270008-executive-2023-04-09",
         "jp-local-271004-executive-2026-02-09",
+        "jp-local-271403-executive-2023-06-09",
     }
 
     for search in searches:
@@ -63,18 +64,19 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
     # Prefecture, Fukuoka City, Kitakyushu City, Aichi Prefecture,
     # Nagoya City, Sapporo City, Hokkaido, Osaka Prefecture and
     # Osaka City, each closed by its official election bulletin).
-    # Two searches remain
-    # exceptions:
+    # Three searches remain exceptions:
     # Toyota City (the 2024 bulletin is not extant as an official web
-    # publication) and Asahikawa City (the 2025 bulletin has no
-    # official web publication); in both cases no verifiable
+    # publication), Asahikawa City (the 2025 bulletin has no official
+    # web publication) and Sakai City (the 2023 bulletin has no
+    # official web publication); in all three cases no verifiable
     # candidate publication was found, so their terms register no
     # manifesto source. The safety invariant still applies to any
     # record that reports no source: it must not claim found sources.
-    assert len(missing) == 2
+    assert len(missing) == 3
     assert {search["executive_term_id"] for search in missing} == {
         "jp-local-232114-executive-2024-02-19",
         "jp-local-012041-executive-2025-09-26",
+        "jp-local-271403-executive-2023-06-09",
     }
     assert all(search["manifesto_source_ids_found"] == [] for search in missing)
 

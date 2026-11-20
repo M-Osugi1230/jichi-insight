@@ -41,8 +41,8 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 54
-    assert len({record["id"] for record in catalog["records"]}) == 54
+    assert len(catalog["records"]) == 58
+    assert len({record["id"] for record in catalog["records"]}) == 58
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
@@ -62,6 +62,7 @@ def test_executive_registry_matches_shared_contracts() -> None:
         "jp-local-011002",
         "jp-local-270008",
         "jp-local-271004",
+        "jp-local-271403",
     }
     for term in terms:
         assert validation_errors("schemas/executive_term.schema.json", term) == []
@@ -106,6 +107,11 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
     # mayors gives the 2026-02-09 start; the city election commission
     # publishes the 2027-04-08 expiry), and the term is not reset by
     # the snap election.
+    # Sakai City's end (2027-06-08) is stated directly in the city
+    # election commission's official election-schedule page; its start
+    # (2023-06-09) follows the same Article 259 proviso chain, anchored
+    # by the previous term's expiry (2023-06-08) stated in the election
+    # commission's own minutes, and the two values agree.
     expected_term_ends = {
         "jp-local-400009": "2029-04-10",
         "jp-local-401307": "2026-12-06",
@@ -118,6 +124,7 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
         "jp-local-011002": "2027-05-01",
         "jp-local-270008": "2027-04-08",
         "jp-local-271004": "2027-04-08",
+        "jp-local-271403": "2027-06-08",
     }
     for term in terms:
         assert term["term_end"] == expected_term_ends[term["municipality_id"]]
@@ -160,6 +167,7 @@ def test_executive_term_starts_follow_statutory_counting() -> None:
         "jp-local-011002": "2023-05-02",
         "jp-local-270008": "2023-04-09",
         "jp-local-271004": "2026-02-09",
+        "jp-local-271403": "2023-06-09",
     }
     for term in terms:
         assert term["term_start"] == expected_term_starts[term["municipality_id"]]
@@ -232,6 +240,10 @@ def test_manifesto_readiness_is_not_confused_with_progress() -> None:
     assert by_municipality["jp-local-270008"]["manifesto_source_ids"] == [
         "osaka-pref-governor-election-2026-bulletin",
     ]
+    # Sakai City registers no manifesto source either: the 2023
+    # bulletin has no official web publication and no verifiable
+    # candidate publication was found (see the source search record).
+    assert by_municipality["jp-local-271403"]["manifesto_source_ids"] == []
 
 
 def test_every_executive_has_evidence_and_known_sources() -> None:
