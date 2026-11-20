@@ -25,6 +25,7 @@ import {
   hokkaidoPlanReview,
 } from "@/lib/hokkaidoFinance";
 import { canonicalFor } from "@/lib/pageMetadata";
+import { assemblies } from "@/lib/assemblyRegistry";
 import { projectRegistry } from "@/lib/projectRegistry";
 
 import styles from "../fukuoka-prefecture/page.module.css";
@@ -38,6 +39,7 @@ export const metadata: Metadata = {
 };
 
 export default function HokkaidoPrefecturePage() {
+  const assembly = assemblies["hokkaido-prefecture"];
   const projects = projectRegistry["hokkaido-prefecture"];
   const reviewedProjects = projects.projects.filter((project) => project.review_status === "reviewed");
   const seriesCount = new Set(reviewedProjects.map((project) => project.series_id)).size;
@@ -93,6 +95,7 @@ export default function HokkaidoPrefecturePage() {
             settlementHref="#fiscal-detail"
             fiscalDetailHref="#fiscal-detail"
             projectHref="#priority-projects"
+            assemblyHref="#assembly-title"
           />
 
           <section className={styles.scope} aria-label="登録情報の範囲">
@@ -102,7 +105,7 @@ export default function HokkaidoPrefecturePage() {
             </div>
             <div>
               <p>確認できること：北海道総合計画の Reviewed 計画レビュー、2026年度の成立後一般会計当初予算、2022〜2024年度の普通会計決算51件、重点事業の Reviewed 10系列と道による一次政策評価（総合判定）、鈴木直道知事の現任期と公式出典です。</p>
-              <p>確認できること：鈴木直道知事の公式選挙公報から Reviewed 公約原文15件が段階3で登録済みです。北海道議会の個別レコードは未登録（段階4で登録予定）です。重点事業は段階2で10系列の Reviewed レコードを登録済みですが、全121施策の網羅や事業成果の独自判定ではありません。基本評価調書の「予算額」は当初予算ベースの施策単位合計額であり、決算額ではありません。未登録は実際の公表・実施の不存在を意味しません。</p>
+              <p>確認できること：鈴木直道知事の公式選挙公報から Reviewed 公約原文15件が段階3で登録済みです。北海道議会の議案・表決・政務活動費・情報公開状況は段階4で登録済みです。重点事業は段階2で10系列の Reviewed レコードを登録済みですが、全121施策の網羅や事業成果の独自判定ではありません。基本評価調書の「予算額」は当初予算ベースの施策単位合計額であり、決算額ではありません。未登録は実際の公表・実施の不存在を意味しません。</p>
               <p>北海道総合計画は政策指標108件（重複を含め113件）が公表されていますが、このページの計画レビュー4項目を個別指標の達成度に置き換えません。一般会計と普通会計、予算と決算を直接連結した増減率・達成率は示しません。</p>
             </div>
           </section>
@@ -253,6 +256,19 @@ export default function HokkaidoPrefecturePage() {
             </div>
           </section>
 
+          <section id="assembly" className={styles.scope} aria-labelledby="assembly-title">
+            <div>
+              <p className="eyebrow">Reviewed assembly</p>
+              <h2 id="assembly-title">北海道議会の議案・表決と情報公開</h2>
+              <p><Link href="/assemblies/hokkaido-prefecture">北海道議会の議案・表決・政務活動費・情報公開の詳細を見る</Link></p>
+            </div>
+            <div>
+              <p>北海道議会の登録議案 {assembly.proposals.length}件、表決 {assembly.votes.length}件、政務活動費の集計 {assembly.expenses.length}レコードを公式資料に基づき掲載しています。</p>
+              <p>議員個人別・会派別の賛否は公表されていません。政務活動費は集計値と閲覧制度のみが登録され、領収書の詳細を掲載していません。</p>
+              <p>委員会視察・議員派遣は公表されていないため、実績を推測せず未登録とします。未公表は活動の不存在を意味しません。</p>
+            </div>
+          </section>
+
           <section className={styles.scope} aria-labelledby="sources-title">
             <div>
               <p className="eyebrow">Primary sources</p>
@@ -275,7 +291,7 @@ export default function HokkaidoPrefecturePage() {
             <div><p className="eyebrow">Not assessed yet</p><h2>まだ登録・評価していないこと</h2></div>
             <ul>
               <li>知事公約原文は Reviewed 15件登録済みですが、達成度や実績との因果関係は未判定です。</li>
-              <li>北海道議会の議案・表決・監視活動の個別記録（段階4で登録予定）</li>
+              <li>北海道議会の非公表の議員個人別・会派別賛否、委員会視察・議員派遣の個別記録</li>
               <li>登録済み10系列以外の事業全体の網羅、施策単位の決算・執行額、契約・監査との公式対応</li>
               <li>2026年度の執行実績と決算</li>
               <li>計画指標の年度実績と公表値に基づく政策成果判定</li>
