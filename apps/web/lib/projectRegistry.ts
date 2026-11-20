@@ -46,13 +46,28 @@ import toyotaEvidence from "../../../data/reviewed/toyota-city/project_evidence_
 import kitakyushuProjectSources from "../../../data/catalog/kitakyushu_project_sources.json";
 import fukuokaProjectSources from "../../../data/catalog/fukuoka_project_sources.json";
 import fukuokaCityProjectSources from "../../../data/catalog/fukuoka_city_project_sources.json";
+import kanagawaProjectSources from "../../../data/catalog/kanagawa_project_sources.json";
+import yokohamaProjectSources from "../../../data/catalog/yokohama_city_project_sources.json";
+import kawasakiProjectSources from "../../../data/catalog/kawasaki_project_sources.json";
+import kanagawaSelection from "../../../data/catalog/kanagawa_priority_project_selection.json";
+import yokohamaSelection from "../../../data/catalog/yokohama_city_priority_project_selection.json";
+import kawasakiSelection from "../../../data/catalog/kawasaki_priority_project_selection.json";
+import kanagawaProjects from "../../../data/reviewed/kanagawa-prefecture/projects.json";
+import kanagawaKpis from "../../../data/reviewed/kanagawa-prefecture/project_kpis.json";
+import kanagawaEvidence from "../../../data/reviewed/kanagawa-prefecture/project_evidence_packets.json";
+import yokohamaProjects from "../../../data/reviewed/yokohama-city/projects.json";
+import yokohamaKpis from "../../../data/reviewed/yokohama-city/project_kpis.json";
+import yokohamaEvidence from "../../../data/reviewed/yokohama-city/project_evidence_packets.json";
+import kawasakiProjects from "../../../data/reviewed/kawasaki-city/projects.json";
+import kawasakiKpis from "../../../data/reviewed/kawasaki-city/project_kpis.json";
+import kawasakiEvidence from "../../../data/reviewed/kawasaki-city/project_evidence_packets.json";
 import { sourceCatalog, type SourceRecord } from "./catalog";
 import { fukuokaCityProjectData } from "./fukuokaCityProjects";
 import { fukuokaPrefectureProjectData } from "./fukuokaPrefectureProjects";
 import { kitakyushuProjectData, type ProjectRecord, type KpiRecord } from "./kitakyushuProjects";
 import type { EvidencePacket } from "./finance";
 
-export type ProjectArea = "fukuoka-prefecture" | "osaka-prefecture" | "osaka-city" | "sakai-city" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city" | "hokkaido-prefecture" | "sapporo-city" | "asahikawa-city";
+export type ProjectArea = "fukuoka-prefecture" | "osaka-prefecture" | "osaka-city" | "sakai-city" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city" | "hokkaido-prefecture" | "sapporo-city" | "asahikawa-city" | "kanagawa-prefecture" | "yokohama-city" | "kawasaki-city";
 type Selection = { updated_at?: string; population?: { description?: string; label?: string }; selection_rule?: { description?: string } | string; };
 type SetOfProjects = { name: string; projects: ProjectRecord[]; kpis: KpiRecord[]; evidencePackets: EvidencePacket[]; selection: Selection };
 export const projectRegistry: Record<ProjectArea, SetOfProjects> = {
@@ -68,6 +83,9 @@ export const projectRegistry: Record<ProjectArea, SetOfProjects> = {
   "hokkaido-prefecture": { name: "北海道", projects: hokkaidoProjects as ProjectRecord[], kpis: hokkaidoKpis as KpiRecord[], evidencePackets: hokkaidoEvidence as EvidencePacket[], selection: hokkaidoSelection },
   "sapporo-city": { name: "札幌市", projects: sapporoProjects as ProjectRecord[], kpis: sapporoKpis as KpiRecord[], evidencePackets: sapporoEvidence as EvidencePacket[], selection: sapporoSelection },
   "asahikawa-city": { name: "旭川市", projects: asahikawaProjects as ProjectRecord[], kpis: asahikawaKpis as KpiRecord[], evidencePackets: asahikawaEvidence as EvidencePacket[], selection: asahikawaSelection },
+  "kanagawa-prefecture": { name: "神奈川県", projects: kanagawaProjects as ProjectRecord[], kpis: kanagawaKpis as KpiRecord[], evidencePackets: kanagawaEvidence as EvidencePacket[], selection: kanagawaSelection },
+  "yokohama-city": { name: "横浜市", projects: yokohamaProjects as ProjectRecord[], kpis: yokohamaKpis as KpiRecord[], evidencePackets: yokohamaEvidence as EvidencePacket[], selection: yokohamaSelection },
+  "kawasaki-city": { name: "川崎市", projects: kawasakiProjects as ProjectRecord[], kpis: kawasakiKpis as KpiRecord[], evidencePackets: kawasakiEvidence as EvidencePacket[], selection: kawasakiSelection },
 };
 export function isProjectArea(key: string): key is ProjectArea { return Object.prototype.hasOwnProperty.call(projectRegistry,key); }
 export const projectSourceCatalog: SourceRecord[] = [...sourceCatalog,
@@ -82,4 +100,7 @@ export const projectSourceCatalog: SourceRecord[] = [...sourceCatalog,
   ...(osakaProjectSources.records as SourceRecord[]),
   ...(osakaCityProjectSources.records as SourceRecord[]),
   ...(sakaiProjectSources.records as SourceRecord[]),
-  ...(asahikawaProjectSources.records as SourceRecord[])];
+  ...(asahikawaProjectSources.records as SourceRecord[]),
+  ...(kanagawaProjectSources.records as SourceRecord[]),
+  ...(yokohamaProjectSources.records as SourceRecord[]),
+  ...(kawasakiProjectSources.records as SourceRecord[])];
