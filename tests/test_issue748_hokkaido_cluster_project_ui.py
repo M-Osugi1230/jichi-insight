@@ -88,7 +88,7 @@ def test_registry_preserves_six_existing_areas_and_adds_three():
     assert "Object.entries(projectRegistry).flatMap" in DETAIL
     assert 'id={key}' in INDEX
     assert "data-filter-entry" in INDEX
-    assert "9自治体の Reviewed 事業レコード" in INDEX
+    assert "12自治体の Reviewed 事業レコード" in INDEX
     assert "area.name" in INDEX
 
 
