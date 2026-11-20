@@ -1,0 +1,102 @@
+[
+ {
+  "as_of": "2026-11-21",
+  "assembly_id": "jp-local-141003-assembly-2023",
+  "confidence": "high",
+  "id": "jp-local-141003-assembly-2023-disclosure-2026",
+  "items": [
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_roster",
+    "note": "会派別名簿（令和8年9月4日現在、86人）を公式サイトに掲載。賛否表の議員配列もこの名簿順。",
+    "source_url": "https://www.city.yokohama.lg.jp/shikai/giin/kaihabetsu.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_composition",
+    "note": "会派別名簿に8区分（自由民主党31人・公明党15人・立憲民主党9人・日本維新の会8人・国民民主党6人・日本共産党5人・地域政党よこはま2人・無所属10人）を掲載。",
+    "source_url": "https://www.city.yokohama.lg.jp/shikai/giin/kaihabetsu.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "committee_composition",
+    "note": "常任委員会名簿を年度別に掲載。委員会活動概要ページにも各年度の委員会構成が示される。",
+    "source_url": "https://www.city.yokohama.lg.jp/shikai/giin/iinkaibetsu/jonin/meibo2025j.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "proposals_and_results",
+    "note": "定例会ごとに議案一覧（議案番号・議案名・内容・結果）を掲載。決算案件は結果欄が空欄で、継続審査中であることが読み取れる。",
+    "source_url": "https://www.city.yokohama.lg.jp/shikai/kiroku/kekka/gianR08-3.html"
+   },
+   {
+    "availability": "not_published",
+    "granularity": "faction",
+    "item": "faction_votes",
+    "note": "当会期分の会派別賛否一覧PDFの所在は確認できなかった。本登録の会派別賛否は議員別賛否表からの集計である。",
+    "source_url": "https://www.city.yokohama.lg.jp/shikai/kiroku/kekka/kaihabetsu.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_votes",
+    "note": "本会議の開催日ごとに議員別賛否表（PDF）を掲載。全議員86人の記号（○賛成・×反対・空欄＝投票なし・除＝除斥・／＝欠席（退席））を示す。記号は形式上、委員会報告への賛否として表示される。議長は採決に加わらない。",
+    "source_url": "https://www.city.yokohama.lg.jp/shikai/kiroku/kekka/kaihabetsu.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "political_activity_expense_reports",
+    "note": "収支報告書（第5号様式）を令和5〜7年度交付分について公表ファイル単位（会派年次・議員個人年次、期間分割・四半期ファイルを含む）で掲載。11項目の支出内訳まで印字される。",
+    "source_url": "https://www.city.yokohama.lg.jp/shikai/koho/seimukatsudouhi/kakunendhoukokusho/reiwa7.html"
+   },
+   {
+    "availability": "restricted",
+    "granularity": "document",
+    "item": "political_activity_expense_receipts",
+    "note": "領収書はWeb公表されず、市会図書室での閲覧のみ。",
+    "source_url": "https://www.city.yokohama.lg.jp/shikai/koho/seimukatsudouhi/kakunendhoukokusho/reiwa7.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "inspection_trip_reports",
+    "note": "委員会活動概要ページに委員会別の視察記録を掲載し、市外視察には視察概要（PDF、視察委員・視察先・視察事項を収録）が添付される。市内の単日視察は視察先のみの掲載で概要PDFはない。視察費用の公表はない。",
+    "source_url": "https://www.city.yokohama.lg.jp/shikai/kiroku/katsudo/r8/JohninGSK-R08.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "meeting_minutes",
+    "note": "会議録は会議録検索システムで公開される。",
+    "source_url": "https://www.city.yokohama.lg.jp/shikai/kiroku/kaigiroku.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "session_broadcast",
+    "note": "本会議・委員会のインターネット中継（録画を含む）が公開される。",
+    "source_url": "https://gikaichukei.city.yokohama.lg.jp/"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "petition_results",
+    "note": "請願は議案一覧に件名と結果（採択・不採択）が掲載され、本会議の議員別賛否表にも載る。陳情の結果の公表形式は本登録では確認できなかったため、陳情は登録対象外とし、未確認事項として記録する。",
+    "source_url": "https://www.city.yokohama.lg.jp/shikai/kiroku/kekka/gianR08-3.html"
+   }
+  ],
+  "review_status": "reviewed",
+  "sources": [
+   "yokohama-city-assembly-roster-by-faction-2026",
+   "yokohama-city-assembly-proposals-2026-r8s3",
+   "yokohama-city-assembly-votes-2026-0925",
+   "yokohama-city-assembly-expenses-index-2025",
+   "yokohama-city-assembly-committee-activity-r8-johningsk-r08"
+  ]
+ }
+]
