@@ -4,8 +4,6 @@ import osakaMunicipality from "../../../data/reviewed/osaka-city/municipality.js
 import sakaiMunicipality from "../../../data/reviewed/sakai-city/municipality.json";
 import osakaFiscal from "../../../data/reviewed/osaka-city/fiscal_records.json";
 import sakaiFiscal from "../../../data/reviewed/sakai-city/fiscal_records.json";
-import osakaSettlements from "../../../data/reviewed/osaka-city/settlement_records.json";
-import sakaiSettlements from "../../../data/reviewed/sakai-city/settlement_records.json";
 
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -15,8 +13,8 @@ import { projectRegistry } from "@/lib/projectRegistry";
 type OsakaCitySlug = "osaka-city" | "sakai-city";
 
 const municipalities = {
-  "osaka-city": { municipality: osakaMunicipality, fiscal: [...osakaFiscal, ...osakaSettlements] },
-  "sakai-city": { municipality: sakaiMunicipality, fiscal: [...sakaiFiscal, ...sakaiSettlements] },
+  "osaka-city": { municipality: osakaMunicipality, fiscal: osakaFiscal },
+  "sakai-city": { municipality: sakaiMunicipality, fiscal: sakaiFiscal },
 };
 
 function formatAmount(amount: number | null): string {
