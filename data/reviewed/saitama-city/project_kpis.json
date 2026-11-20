@@ -1,0 +1,1094 @@
+[
+  {
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "source_ids": [
+          "saitama-city-implementation-status-report-fy2024-pdf"
+        ],
+        "status": "available",
+        "value": -3255
+      }
+    ],
+    "assessment": "not_achieved",
+    "baseline": {
+      "period": "令和元年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 848
+    },
+    "causality_note": "指標値の変動には本事業の取組以外の要因も影響しうる。達成度分類は市の事業評価（内部評価）による。",
+    "confidence": "high",
+    "definition": "令和6年度実施状況報告書の事業評価シート（事業コード 01-1-1-01）に掲載された事業としての目標指標1「自治会加入世帯増加数」。達成度分類は市の評価で「C」（目標を未達成）。シートでは「2,000世帯増」（目標）・「3,255世帯減」（実績）と増減の向きで表記されており、登録値は増加を正・減少を負とする符号付きの世帯数に読み替えた。基準値は令和2年度（参考）欄に掲載された令和元年度実績「848世帯増」（令和元年度の自治会加入世帯数は372,159世帯）。",
+    "direction": "increase",
+    "id": "jp-local-111007-project-2024-community-association-membership-kpi-community-association-household-growth",
+    "name": "自治会加入世帯増加数",
+    "project_id": "jp-local-111007-project-2024-community-association-membership",
+    "review_status": "reviewed",
+    "sources": [
+      "saitama-city-implementation-status-report-fy2024-pdf",
+      "saitama-city-implementation-status-report-fy2024-page"
+    ],
+    "target": {
+      "period": "令和6年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 2000
+    },
+    "unit": "世帯"
+  },
+  {
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "source_ids": [
+          "saitama-city-implementation-status-report-fy2024-pdf"
+        ],
+        "status": "available",
+        "value": 54
+      }
+    ],
+    "assessment": "achieved",
+    "baseline": {
+      "period": "令和2年度（参考）",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "not_published",
+      "value": null
+    },
+    "causality_note": "指標値の変動には本事業の取組以外の要因も影響しうる。達成度分類は市の事業評価（内部評価）による。",
+    "confidence": "high",
+    "definition": "令和6年度実施状況報告書の事業評価シート（事業コード 01-1-1-01）に掲載された事業としての目標指標2「自治会加入促進啓発事業数」。達成度分類は市の評価で「A」（目標を上回って達成）。令和2年度（参考）欄に値は掲載されていない（令和3年度実績36件が最も古い実績値）。",
+    "direction": "increase",
+    "id": "jp-local-111007-project-2024-community-association-membership-kpi-community-association-outreach-events",
+    "name": "自治会加入促進啓発事業数",
+    "project_id": "jp-local-111007-project-2024-community-association-membership",
+    "review_status": "reviewed",
+    "sources": [
+      "saitama-city-implementation-status-report-fy2024-pdf",
+      "saitama-city-implementation-status-report-fy2024-page"
+    ],
+    "target": {
+      "period": "令和6年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 40
+    },
+    "unit": "件"
+  },
+  {
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "source_ids": [
+          "saitama-city-implementation-status-report-fy2024-pdf"
+        ],
+        "status": "available",
+        "value": "34自治会導入"
+      }
+    ],
+    "assessment": "not_achieved",
+    "baseline": {
+      "period": "令和2年度（参考）",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "not_published",
+      "value": null
+    },
+    "causality_note": "指標値の変動には本事業の取組以外の要因も影響しうる。達成度分類は市の事業評価（内部評価）による。",
+    "confidence": "high",
+    "definition": "令和6年度実施状況報告書の事業評価シート（事業コード 01-1-1-01）に掲載された事業としての目標指標3「ICTを活用した自治会活動の支援」。達成度分類は市の評価で「C」（目標を未達成）。目標・実績とも文で示される段階指標であり、登録値はシートの表記どおりの文字列とした。",
+    "direction": "not_applicable",
+    "id": "jp-local-111007-project-2024-community-association-membership-kpi-community-association-ict-support",
+    "name": "ICTを活用した自治会活動の支援",
+    "project_id": "jp-local-111007-project-2024-community-association-membership",
+    "review_status": "reviewed",
+    "sources": [
+      "saitama-city-implementation-status-report-fy2024-pdf",
+      "saitama-city-implementation-status-report-fy2024-page"
+    ],
+    "target": {
+      "period": "令和6年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": "自治会電子回覧板の本格実施（導入自治会数100）"
+    },
+    "unit": "取組段階"
+  },
+  {
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "source_ids": [
+          "saitama-city-implementation-status-report-fy2024-pdf"
+        ],
+        "status": "available",
+        "value": 16
+      }
+    ],
+    "assessment": "achieved",
+    "baseline": {
+      "period": "令和2年度（参考）",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "not_published",
+      "value": null
+    },
+    "causality_note": "指標値の変動には本事業の取組以外の要因も影響しうる。達成度分類は市の事業評価（内部評価）による。",
+    "confidence": "high",
+    "definition": "令和6年度実施状況報告書の事業評価シート（事業コード 01-1-1-01）に掲載された事業としての目標指標4「自治会向けICT活用に関する講座の実施」。達成度分類は市の評価で「A」（目標を上回って達成）。令和2年度（参考）欄に実績値は掲載されていない（令和3年度は試行実施で実績「―」、令和4年度実績1回）。",
+    "direction": "increase",
+    "id": "jp-local-111007-project-2024-community-association-membership-kpi-community-association-ict-lectures",
+    "name": "自治会向けICT活用に関する講座の実施",
+    "project_id": "jp-local-111007-project-2024-community-association-membership",
+    "review_status": "reviewed",
+    "sources": [
+      "saitama-city-implementation-status-report-fy2024-pdf",
+      "saitama-city-implementation-status-report-fy2024-page"
+    ],
+    "target": {
+      "period": "令和6年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 4
+    },
+    "unit": "回"
+  },
+  {
+    "actuals": [
+      {
+        "period": "令和3年度",
+        "source_ids": [
+          "saitama-city-implementation-status-report-fy2024-pdf"
+        ],
+        "status": "available",
+        "value": 167
+      }
+    ],
+    "assessment": "not_assessable",
+    "baseline": {
+      "period": "平成25年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 216
+    },
+    "causality_note": "指標値の変動には本事業の取組以外の要因も影響しうる。達成度分類は市の事業評価（内部評価）による。",
+    "confidence": "high",
+    "definition": "令和6年度実施状況報告書の事業評価シート（事業コード 02-1-1-01）に掲載された事業としての目標指標1「家庭部門における温室効果ガス排出量（市民）」。令和6年度の達成度分類は「―」（分類なし）であった。シートには同名の指標が2行併記されており、これはその1行目。令和3年度分までの目標・実績が掲載され、令和6年度（評価年度）の欄は空欄（斜線）である。基準値は基準年度（平成25年度）の216万t-CO2。",
+    "direction": "decrease",
+    "id": "jp-local-111007-project-2024-energy-saving-renewables-promotion-kpi-household-ghg-emissions-1",
+    "name": "家庭部門における温室効果ガス排出量（市民）",
+    "project_id": "jp-local-111007-project-2024-energy-saving-renewables-promotion",
+    "review_status": "reviewed",
+    "sources": [
+      "saitama-city-implementation-status-report-fy2024-pdf",
+      "saitama-city-implementation-status-report-fy2024-page"
+    ],
+    "target": {
+      "period": "令和3年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 168
+    },
+    "unit": "万t-CO2"
+  },
+  {
+    "actuals": [
+      {
+        "period": "令和4年度",
+        "source_ids": [
+          "saitama-city-implementation-status-report-fy2024-pdf"
+        ],
+        "status": "available",
+        "value": 147
+      }
+    ],
+    "assessment": "mostly_achieved",
+    "baseline": {
+      "period": "令和3年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 149.5
+    },
+    "causality_note": "指標値の変動には本事業の取組以外の要因も影響しうる。達成度分類は市の事業評価（内部評価）による。",
+    "confidence": "high",
+    "definition": "令和6年度実施状況報告書の事業評価シート（事業コード 02-1-1-01）に掲載された事業としての目標指標1「家庭部門における温室効果ガス排出量（市民）」。達成度分類は市の評価で「B」（目標をおおむね達成）。シートに同名で併記された2行目。温室効果ガス排出量は推計の公表が遅れるため、令和6年度の評価は最新の令和4年度排出量で行われ、シートの令和6年度（評価年度）欄に目標「154万t-CO2（令和4年度）」と実績「147万t-CO2（令和4年度）」が掲載されている。シートの注記によれば令和4年度実績値は「さいたま市域における温室効果ガス排出量推計（令和4年度排出量推計）」（令和7年3月）に基づき更新された。基準値に相当する値は参考欄に掲載された令和3年度実績149.5万t-CO2とした。",
+    "direction": "decrease",
+    "id": "jp-local-111007-project-2024-energy-saving-renewables-promotion-kpi-household-ghg-emissions-2",
+    "name": "家庭部門における温室効果ガス排出量（市民）",
+    "project_id": "jp-local-111007-project-2024-energy-saving-renewables-promotion",
+    "review_status": "reviewed",
+    "sources": [
+      "saitama-city-implementation-status-report-fy2024-pdf",
+      "saitama-city-implementation-status-report-fy2024-page"
+    ],
+    "target": {
+      "period": "令和6年度（評価年度）",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 154
+    },
+    "unit": "万t-CO2"
+  },
+  {
+    "actuals": [
+      {
+        "period": "令和3年度",
+        "source_ids": [
+          "saitama-city-implementation-status-report-fy2024-pdf"
+        ],
+        "status": "available",
+        "value": 315
+      }
+    ],
+    "assessment": "not_assessable",
+    "baseline": {
+      "period": "平成25年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 333
+    },
+    "causality_note": "指標値の変動には本事業の取組以外の要因も影響しうる。達成度分類は市の事業評価（内部評価）による。",
+    "confidence": "high",
+    "definition": "令和6年度実施状況報告書の事業評価シート（事業コード 02-1-1-01）に掲載された事業としての目標指標2「産業部門・業務部門における温室効果ガス排出量（事業者・行政）」。令和6年度の達成度分類は「―」（分類なし）であった。令和3年度分までの目標・実績が掲載され、令和6年度（評価年度）の欄は空欄（斜線）である。基準値は基準年度（平成25年度）の333万t-CO2。",
+    "direction": "decrease",
+    "id": "jp-local-111007-project-2024-energy-saving-renewables-promotion-kpi-industry-business-ghg-emissions",
+    "name": "産業部門・業務部門における温室効果ガス排出量（事業者・行政）",
+    "project_id": "jp-local-111007-project-2024-energy-saving-renewables-promotion",
+    "review_status": "reviewed",
+    "sources": [
+      "saitama-city-implementation-status-report-fy2024-pdf",
+      "saitama-city-implementation-status-report-fy2024-page"
+    ],
+    "target": {
+      "period": "令和3年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 270
+    },
+    "unit": "万t-CO2"
+  },
+  {
+    "actuals": [
+      {
+        "period": "令和3年度",
+        "source_ids": [
+          "saitama-city-implementation-status-report-fy2024-pdf"
+        ],
+        "status": "available",
+        "value": 46.2
+      }
+    ],
+    "assessment": "mostly_achieved",
+    "baseline": {
+      "period": "平成29年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 46.5
+    },
+    "causality_note": "指標値の変動には本事業の取組以外の要因も影響しうる。達成度分類は市の事業評価（内部評価）による。",
+    "confidence": "high",
+    "definition": "令和6年度実施状況報告書の事業評価シート（事業コード 03-1-1-01）に掲載された事業としての目標指標1「1日1時間以上の身体活動を実施している者の割合（40歳～74歳）」。達成度分類は市の評価で「B」（目標をおおむね達成）。シートの各値にはデータの年度が括弧書きされ、令和6年度の目標は「48.4％（令和3年度）」、実績は「46.2％（令和3年度）」と、評価は令和3年度の調査値で行われている。",
+    "direction": "increase",
+    "id": "jp-local-111007-project-2024-citizen-health-promotion-kpi-physical-activity-rate",
+    "name": "1日1時間以上の身体活動を実施している者の割合（40歳～74歳）",
+    "project_id": "jp-local-111007-project-2024-citizen-health-promotion",
+    "review_status": "reviewed",
+    "sources": [
+      "saitama-city-implementation-status-report-fy2024-pdf",
+      "saitama-city-implementation-status-report-fy2024-page"
+    ],
+    "target": {
+      "period": "令和6年度（評価年度）",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 48.4
+    },
+    "unit": "％"
+  },
+  {
+    "actuals": [
+      {
+        "period": "令和3年度",
+        "source_ids": [
+          "saitama-city-implementation-status-report-fy2024-pdf"
+        ],
+        "status": "available",
+        "value": 19.8
+      }
+    ],
+    "assessment": "mostly_achieved",
+    "baseline": {
+      "period": "平成29年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 20.7
+    },
+    "causality_note": "指標値の変動には本事業の取組以外の要因も影響しうる。達成度分類は市の事業評価（内部評価）による。",
+    "confidence": "high",
+    "definition": "令和6年度実施状況報告書の事業評価シート（事業コード 03-1-1-01）に掲載された事業としての目標指標2「喫煙している者の割合（40歳～74歳）」。達成度分類は市の評価で「B」（目標をおおむね達成）。シートの各値にはデータの年度が括弧書きされ、令和6年度の目標は「18.9％（令和3年度）」、実績は「19.8％（令和3年度）」と、評価は令和3年度の調査値で行われている。",
+    "direction": "decrease",
+    "id": "jp-local-111007-project-2024-citizen-health-promotion-kpi-smoking-rate",
+    "name": "喫煙している者の割合（40歳～74歳）",
+    "project_id": "jp-local-111007-project-2024-citizen-health-promotion",
+    "review_status": "reviewed",
+    "sources": [
+      "saitama-city-implementation-status-report-fy2024-pdf",
+      "saitama-city-implementation-status-report-fy2024-page"
+    ],
+    "target": {
+      "period": "令和6年度（評価年度）",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 18.9
+    },
+    "unit": "％"
+  },
+  {
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "source_ids": [
+          "saitama-city-implementation-status-report-fy2024-pdf"
+        ],
+        "status": "available",
+        "value": "基本設計完了"
+      }
+    ],
+    "assessment": "mostly_achieved",
+    "baseline": {
+      "period": "令和元年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": "方針決定"
+    },
+    "causality_note": "指標値の変動には本事業の取組以外の要因も影響しうる。達成度分類は市の事業評価（内部評価）による。",
+    "confidence": "high",
+    "definition": "令和6年度実施状況報告書の事業評価シート（事業コード 03-1-1-01）に掲載された事業としての目標指標3「（仮称）さいたま市口腔保健センターの開設」。達成度分類は市の評価で「B」（目標をおおむね達成）。目標・実績とも文で示される工程指標であり、登録値はシートの表記どおりの文字列とした。",
+    "direction": "not_applicable",
+    "id": "jp-local-111007-project-2024-citizen-health-promotion-kpi-oral-health-center-opening",
+    "name": "（仮称）さいたま市口腔保健センターの開設",
+    "project_id": "jp-local-111007-project-2024-citizen-health-promotion",
+    "review_status": "reviewed",
+    "sources": [
+      "saitama-city-implementation-status-report-fy2024-pdf",
+      "saitama-city-implementation-status-report-fy2024-page"
+    ],
+    "target": {
+      "period": "令和6年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": "基本設計"
+    },
+    "unit": "取組段階"
+  },
+  {
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "source_ids": [
+          "saitama-city-implementation-status-report-fy2024-pdf"
+        ],
+        "status": "available",
+        "value": 187
+      }
+    ],
+    "assessment": "achieved",
+    "baseline": {
+      "period": "令和2年度（参考）",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 111
+    },
+    "causality_note": "指標値の変動には本事業の取組以外の要因も影響しうる。達成度分類は市の事業評価（内部評価）による。",
+    "confidence": "high",
+    "definition": "令和6年度実施状況報告書の事業評価シート（事業コード 03-1-1-01）に掲載された事業としての目標指標4「さいたま健幸ネットワーク加入団体数、健康経営認定企業数の合計」。達成度分類は市の評価で「A+」（目標を上回って達成）（「＋」は計画期間中に目標値が上方修正された指標に付される表示）。基準値は令和2年度（参考）欄の実績111。",
+    "direction": "increase",
+    "id": "jp-local-111007-project-2024-citizen-health-promotion-kpi-healthy-network-members",
+    "name": "さいたま健幸ネットワーク加入団体数、健康経営認定企業数の合計",
+    "project_id": "jp-local-111007-project-2024-citizen-health-promotion",
+    "review_status": "reviewed",
+    "sources": [
+      "saitama-city-implementation-status-report-fy2024-pdf",
+      "saitama-city-implementation-status-report-fy2024-page"
+    ],
+    "target": {
+      "period": "令和6年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 162
+    },
+    "unit": "団体・社"
+  },
+  {
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "source_ids": [
+          "saitama-city-implementation-status-report-fy2024-pdf"
+        ],
+        "status": "available",
+        "value": 90.6
+      }
+    ],
+    "assessment": "mostly_achieved",
+    "baseline": {
+      "period": "令和元年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 87.2
+    },
+    "causality_note": "指標値の変動には本事業の取組以外の要因も影響しうる。達成度分類は市の事業評価（内部評価）による。",
+    "confidence": "high",
+    "definition": "令和6年度実施状況報告書の事業評価シート（事業コード 04-1-1-01）に掲載された事業としての目標指標1「「授業では、課題の解決に向けて、自分で考え、自分から取り組んでいたと思う」について肯定的な回答をした児童生徒の割合」。達成度分類は市の評価で「B」（目標をおおむね達成）。基準値は令和2年度（参考）欄に掲載された令和元年度実績87.2％。",
+    "direction": "increase",
+    "id": "jp-local-111007-project-2024-active-learning-promotion-kpi-self-directed-learning-response-rate",
+    "name": "「授業では、課題の解決に向けて、自分で考え、自分から取り組んでいたと思う」について肯定的な回答をした児童生徒の割合",
+    "project_id": "jp-local-111007-project-2024-active-learning-promotion",
+    "review_status": "reviewed",
+    "sources": [
+      "saitama-city-implementation-status-report-fy2024-pdf",
+      "saitama-city-implementation-status-report-fy2024-page"
+    ],
+    "target": {
+      "period": "令和6年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 89.5
+    },
+    "unit": "％"
+  },
+  {
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "source_ids": [
+          "saitama-city-implementation-status-report-fy2024-pdf"
+        ],
+        "status": "available",
+        "value": 93.7
+      }
+    ],
+    "assessment": "mostly_achieved",
+    "baseline": {
+      "period": "令和元年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 85
+    },
+    "causality_note": "指標値の変動には本事業の取組以外の要因も影響しうる。達成度分類は市の事業評価（内部評価）による。",
+    "confidence": "high",
+    "definition": "令和6年度実施状況報告書の事業評価シート（事業コード 04-1-1-01）に掲載された事業としての目標指標2「「生徒の間で話し合う活動を通じて、自分の考えを深めたり、広げたりすることができていると思う」について肯定的な回答をした児童生徒の割合」。達成度分類は市の評価で「B」（目標をおおむね達成）。基準値は令和2年度（参考）欄に掲載された令和元年度実績85％。",
+    "direction": "increase",
+    "id": "jp-local-111007-project-2024-active-learning-promotion-kpi-discussion-learning-response-rate",
+    "name": "「生徒の間で話し合う活動を通じて、自分の考えを深めたり、広げたりすることができていると思う」について肯定的な回答をした児童生徒の割合",
+    "project_id": "jp-local-111007-project-2024-active-learning-promotion",
+    "review_status": "reviewed",
+    "sources": [
+      "saitama-city-implementation-status-report-fy2024-pdf",
+      "saitama-city-implementation-status-report-fy2024-page"
+    ],
+    "target": {
+      "period": "令和6年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 89.5
+    },
+    "unit": "％"
+  },
+  {
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "source_ids": [
+          "saitama-city-implementation-status-report-fy2024-pdf"
+        ],
+        "status": "available",
+        "value": 413
+      }
+    ],
+    "assessment": "not_achieved",
+    "baseline": {
+      "period": "令和元年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 839
+    },
+    "causality_note": "指標値の変動には本事業の取組以外の要因も影響しうる。達成度分類は市の事業評価（内部評価）による。",
+    "confidence": "high",
+    "definition": "令和6年度実施状況報告書の事業評価シート（事業コード 05-1-1-01）に掲載された事業としての目標指標1「道路照明施設（公衆街路灯）の設置数」。達成度分類は市の評価で「C」（目標を未達成）。基準値は令和2年度（参考）欄に掲載された令和元年度実績839灯。",
+    "direction": "increase",
+    "id": "jp-local-111007-project-2024-traffic-safety-facilities-kpi-street-light-installations",
+    "name": "道路照明施設（公衆街路灯）の設置数",
+    "project_id": "jp-local-111007-project-2024-traffic-safety-facilities",
+    "review_status": "reviewed",
+    "sources": [
+      "saitama-city-implementation-status-report-fy2024-pdf",
+      "saitama-city-implementation-status-report-fy2024-page"
+    ],
+    "target": {
+      "period": "令和6年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 600
+    },
+    "unit": "灯"
+  },
+  {
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "source_ids": [
+          "saitama-city-implementation-status-report-fy2024-pdf"
+        ],
+        "status": "available",
+        "value": 237
+      }
+    ],
+    "assessment": "mostly_achieved",
+    "baseline": {
+      "period": "令和元年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 246
+    },
+    "causality_note": "指標値の変動には本事業の取組以外の要因も影響しうる。達成度分類は市の事業評価（内部評価）による。",
+    "confidence": "high",
+    "definition": "令和6年度実施状況報告書の事業評価シート（事業コード 05-1-1-01）に掲載された事業としての目標指標2「道路反射鏡の設置数」。達成度分類は市の評価で「B」（目標をおおむね達成）。基準値は令和2年度（参考）欄に掲載された令和元年度実績246基。",
+    "direction": "increase",
+    "id": "jp-local-111007-project-2024-traffic-safety-facilities-kpi-road-mirror-installations",
+    "name": "道路反射鏡の設置数",
+    "project_id": "jp-local-111007-project-2024-traffic-safety-facilities",
+    "review_status": "reviewed",
+    "sources": [
+      "saitama-city-implementation-status-report-fy2024-pdf",
+      "saitama-city-implementation-status-report-fy2024-page"
+    ],
+    "target": {
+      "period": "令和6年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 250
+    },
+    "unit": "基"
+  },
+  {
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "source_ids": [
+          "saitama-city-implementation-status-report-fy2024-pdf"
+        ],
+        "status": "available",
+        "value": 20601
+      }
+    ],
+    "assessment": "mostly_achieved",
+    "baseline": {
+      "period": "令和元年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 5978
+    },
+    "causality_note": "指標値の変動には本事業の取組以外の要因も影響しうる。達成度分類は市の事業評価（内部評価）による。",
+    "confidence": "high",
+    "definition": "令和6年度実施状況報告書の事業評価シート（事業コード 06-1-1-01）に掲載された事業としての目標指標1「「通いの場」への高齢者の参加者数」。達成度分類は市の評価で「B+」（目標をおおむね達成）（「＋」は計画期間中に目標値が上方修正された指標に付される表示）。基準値は令和2年度（参考）欄に掲載された令和元年度実績5,978人。",
+    "direction": "increase",
+    "id": "jp-local-111007-project-2024-care-prevention-promotion-kpi-community-gathering-participants",
+    "name": "「通いの場」への高齢者の参加者数",
+    "project_id": "jp-local-111007-project-2024-care-prevention-promotion",
+    "review_status": "reviewed",
+    "sources": [
+      "saitama-city-implementation-status-report-fy2024-pdf",
+      "saitama-city-implementation-status-report-fy2024-page"
+    ],
+    "target": {
+      "period": "令和6年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 19000
+    },
+    "unit": "人"
+  },
+  {
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "source_ids": [
+          "saitama-city-implementation-status-report-fy2024-pdf"
+        ],
+        "status": "available",
+        "value": 55
+      }
+    ],
+    "assessment": "mostly_achieved",
+    "baseline": {
+      "period": "令和元年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 39
+    },
+    "causality_note": "指標値の変動には本事業の取組以外の要因も影響しうる。達成度分類は市の事業評価（内部評価）による。",
+    "confidence": "high",
+    "definition": "令和6年度実施状況報告書の事業評価シート（事業コード 06-1-1-01）に掲載された事業としての目標指標2「いきいきサポーター養成講座参加者が講座内容について「とても満足」と回答した割合」。達成度分類は市の評価で「B+」（目標をおおむね達成）（「＋」は計画期間中に目標値が上方修正された指標に付される表示）。基準値は令和2年度（参考）欄に掲載された令和元年度実績39％。",
+    "direction": "increase",
+    "id": "jp-local-111007-project-2024-care-prevention-promotion-kpi-supporter-course-satisfaction",
+    "name": "いきいきサポーター養成講座参加者が講座内容について「とても満足」と回答した割合",
+    "project_id": "jp-local-111007-project-2024-care-prevention-promotion",
+    "review_status": "reviewed",
+    "sources": [
+      "saitama-city-implementation-status-report-fy2024-pdf",
+      "saitama-city-implementation-status-report-fy2024-page"
+    ],
+    "target": {
+      "period": "令和6年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 58
+    },
+    "unit": "％"
+  },
+  {
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "source_ids": [
+          "saitama-city-implementation-status-report-fy2024-pdf"
+        ],
+        "status": "available",
+        "value": 99.9
+      }
+    ],
+    "assessment": "mostly_achieved",
+    "baseline": {
+      "period": "令和元年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 75
+    },
+    "causality_note": "指標値の変動には本事業の取組以外の要因も影響しうる。達成度分類は市の事業評価（内部評価）による。",
+    "confidence": "high",
+    "definition": "令和6年度実施状況報告書の事業評価シート（事業コード 07-1-1-01）に掲載された事業としての目標指標1「専門職による母子健康手帳交付時の面接率」。達成度分類は市の評価で「B」（目標をおおむね達成）。基準値は令和2年度（参考）欄に掲載された令和元年度実績75％。",
+    "direction": "increase",
+    "id": "jp-local-111007-project-2024-maternal-child-health-support-kpi-maternal-handbook-interview-rate",
+    "name": "専門職による母子健康手帳交付時の面接率",
+    "project_id": "jp-local-111007-project-2024-maternal-child-health-support",
+    "review_status": "reviewed",
+    "sources": [
+      "saitama-city-implementation-status-report-fy2024-pdf",
+      "saitama-city-implementation-status-report-fy2024-page"
+    ],
+    "target": {
+      "period": "令和6年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 100
+    },
+    "unit": "％"
+  },
+  {
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "source_ids": [
+          "saitama-city-implementation-status-report-fy2024-pdf"
+        ],
+        "status": "available",
+        "value": 97
+      }
+    ],
+    "assessment": "mostly_achieved",
+    "baseline": {
+      "period": "令和2年度（参考）",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "not_published",
+      "value": null
+    },
+    "causality_note": "指標値の変動には本事業の取組以外の要因も影響しうる。達成度分類は市の事業評価（内部評価）による。",
+    "confidence": "high",
+    "definition": "令和6年度実施状況報告書の事業評価シート（事業コード 07-1-1-01）に掲載された事業としての目標指標2「産後ケアを利用し育児不安が軽減した人の割合」。達成度分類は市の評価で「B+」（目標をおおむね達成）（「＋」は計画期間中に目標値が上方修正された指標に付される表示）。令和2年度（参考）欄の実績は「―」で値がない（令和3年度実績94％が最も古い実績値）。",
+    "direction": "increase",
+    "id": "jp-local-111007-project-2024-maternal-child-health-support-kpi-postpartum-care-relief-rate",
+    "name": "産後ケアを利用し育児不安が軽減した人の割合",
+    "project_id": "jp-local-111007-project-2024-maternal-child-health-support",
+    "review_status": "reviewed",
+    "sources": [
+      "saitama-city-implementation-status-report-fy2024-pdf",
+      "saitama-city-implementation-status-report-fy2024-page"
+    ],
+    "target": {
+      "period": "令和6年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 92
+    },
+    "unit": "％"
+  },
+  {
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "source_ids": [
+          "saitama-city-implementation-status-report-fy2024-pdf"
+        ],
+        "status": "available",
+        "value": 4728
+      }
+    ],
+    "assessment": "mostly_achieved",
+    "baseline": {
+      "period": "令和2年度（参考）",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "not_published",
+      "value": null
+    },
+    "causality_note": "指標値の変動には本事業の取組以外の要因も影響しうる。達成度分類は市の事業評価（内部評価）による。",
+    "confidence": "high",
+    "definition": "令和6年度実施状況報告書の事業評価シート（事業コード 07-1-1-01）に掲載された事業としての目標指標3「産後ケアの利用者数」。達成度分類は市の評価で「B+」（目標をおおむね達成）（「＋」は計画期間中に目標値が上方修正された指標に付される表示）。令和2年度（参考）欄の実績は「―」で値がない（令和3年度実績938人が最も古い実績値）。",
+    "direction": "increase",
+    "id": "jp-local-111007-project-2024-maternal-child-health-support-kpi-postpartum-care-users",
+    "name": "産後ケアの利用者数",
+    "project_id": "jp-local-111007-project-2024-maternal-child-health-support",
+    "review_status": "reviewed",
+    "sources": [
+      "saitama-city-implementation-status-report-fy2024-pdf",
+      "saitama-city-implementation-status-report-fy2024-page"
+    ],
+    "target": {
+      "period": "令和6年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 4323
+    },
+    "unit": "人"
+  },
+  {
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "source_ids": [
+          "saitama-city-implementation-status-report-fy2024-pdf"
+        ],
+        "status": "available",
+        "value": 156
+      }
+    ],
+    "assessment": "not_achieved",
+    "baseline": {
+      "period": "令和元年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 217
+    },
+    "causality_note": "指標値の変動には本事業の取組以外の要因も影響しうる。達成度分類は市の事業評価（内部評価）による。",
+    "confidence": "high",
+    "definition": "令和6年度実施状況報告書の事業評価シート（事業コード 07-1-1-01）に掲載された事業としての目標指標4「専門職による相談事業等の利用者数」。達成度分類は市の評価で「C」（目標を未達成）。基準値は令和2年度（参考）欄に掲載された令和元年度実績217人。シートの要因分析では、令和4年度から不妊治療が保険適用となったことに伴い相談件数が減少傾向にあるとされている。",
+    "direction": "increase",
+    "id": "jp-local-111007-project-2024-maternal-child-health-support-kpi-professional-consultation-users",
+    "name": "専門職による相談事業等の利用者数",
+    "project_id": "jp-local-111007-project-2024-maternal-child-health-support",
+    "review_status": "reviewed",
+    "sources": [
+      "saitama-city-implementation-status-report-fy2024-pdf",
+      "saitama-city-implementation-status-report-fy2024-page"
+    ],
+    "target": {
+      "period": "令和6年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 254
+    },
+    "unit": "人"
+  },
+  {
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "source_ids": [
+          "saitama-city-implementation-status-report-fy2024-pdf"
+        ],
+        "status": "available",
+        "value": 49662
+      }
+    ],
+    "assessment": "not_achieved",
+    "baseline": {
+      "period": "令和2年度（参考）",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "not_published",
+      "value": null
+    },
+    "causality_note": "指標値の変動には本事業の取組以外の要因も影響しうる。達成度分類は市の事業評価（内部評価）による。",
+    "confidence": "high",
+    "definition": "令和6年度実施状況報告書の事業評価シート（事業コード 08-1-1-01）に掲載された事業としての目標指標1「岩槻人形博物館来館者数」。達成度分類は市の評価で「C」（目標を未達成）。令和2年度（参考）欄の実績は「―」で値がない（令和3年度実績29,254人が最も古い実績値）。",
+    "direction": "increase",
+    "id": "jp-local-111007-project-2024-iwatsuki-ningyo-museum-culture-kpi-museum-visitors",
+    "name": "岩槻人形博物館来館者数",
+    "project_id": "jp-local-111007-project-2024-iwatsuki-ningyo-museum-culture",
+    "review_status": "reviewed",
+    "sources": [
+      "saitama-city-implementation-status-report-fy2024-pdf",
+      "saitama-city-implementation-status-report-fy2024-page"
+    ],
+    "target": {
+      "period": "令和6年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 74000
+    },
+    "unit": "人"
+  },
+  {
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "source_ids": [
+          "saitama-city-implementation-status-report-fy2024-pdf"
+        ],
+        "status": "available",
+        "value": "①45.5％ ②30.1％"
+      }
+    ],
+    "assessment": "mostly_achieved",
+    "baseline": {
+      "period": "令和3年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": "①39.7％ ②26.6％"
+    },
+    "causality_note": "指標値の変動には本事業の取組以外の要因も影響しうる。達成度分類は市の事業評価（内部評価）による。",
+    "confidence": "high",
+    "definition": "令和6年度実施状況報告書の事業評価シート（事業コード 08-1-1-01）に掲載された事業としての目標指標2「岩槻人形博物館の認知度（①市内在住者、②在勤者）」。達成度分類は市の評価で「B」（目標をおおむね達成）。1つの指標に①市内在住者と②在勤者の2つの値が併記される形式であり、登録値はシートの表記どおりの文字列とした。基準値は令和3年度の値で、シートでは令和2年度（参考）欄の位置に掲載されている。",
+    "direction": "increase",
+    "id": "jp-local-111007-project-2024-iwatsuki-ningyo-museum-culture-kpi-museum-awareness",
+    "name": "岩槻人形博物館の認知度（①市内在住者、②在勤者）",
+    "project_id": "jp-local-111007-project-2024-iwatsuki-ningyo-museum-culture",
+    "review_status": "reviewed",
+    "sources": [
+      "saitama-city-implementation-status-report-fy2024-pdf",
+      "saitama-city-implementation-status-report-fy2024-page"
+    ],
+    "target": {
+      "period": "令和6年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": "①47.0％ ②29.0％"
+    },
+    "unit": "％"
+  },
+  {
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "source_ids": [
+          "saitama-city-implementation-status-report-fy2024-pdf"
+        ],
+        "status": "available",
+        "value": "都市計画手続等に必要な資料作成に係る業務管理、都市計画手続着手に向けた関係者協議"
+      }
+    ],
+    "assessment": "not_achieved",
+    "baseline": {
+      "period": "令和2年度（参考）",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": "大宮GCSプラン2020の策定"
+    },
+    "causality_note": "指標値の変動には本事業の取組以外の要因も影響しうる。達成度分類は市の事業評価（内部評価）による。",
+    "confidence": "high",
+    "definition": "令和6年度実施状況報告書の事業評価シート（事業コード 09-1-1-01）に掲載された事業としての目標指標1「大宮駅GCS化構想の事業進捗」。達成度分類は市の評価で「C」（目標を未達成）。目標・実績とも文で示される工程指標であり、登録値はシートの表記どおりの文字列とした。シートの要因分析では、合意形成に課題があり都市計画決定手続を行うことができなかったとされている。",
+    "direction": "not_applicable",
+    "id": "jp-local-111007-project-2024-omiya-station-gcs-kpi-gcs-project-progress",
+    "name": "大宮駅GCS化構想の事業進捗",
+    "project_id": "jp-local-111007-project-2024-omiya-station-gcs",
+    "review_status": "reviewed",
+    "sources": [
+      "saitama-city-implementation-status-report-fy2024-pdf",
+      "saitama-city-implementation-status-report-fy2024-page"
+    ],
+    "target": {
+      "period": "令和6年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": "新東西通路の都市計画決定手続き"
+    },
+    "unit": "取組段階"
+  },
+  {
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "source_ids": [
+          "saitama-city-implementation-status-report-fy2024-pdf"
+        ],
+        "status": "available",
+        "value": 17.4
+      }
+    ],
+    "assessment": "achieved",
+    "baseline": {
+      "period": "令和2年度（参考）",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 14.0
+    },
+    "causality_note": "指標値の変動には本事業の取組以外の要因も影響しうる。達成度分類は市の事業評価（内部評価）による。",
+    "confidence": "high",
+    "definition": "令和6年度実施状況報告書の事業評価シート（事業コード 10-1-1-01）に掲載された事業としての目標指標1「防災上の重要な道路の無電柱化率」。達成度分類は市の評価で「A」（目標を上回って達成）。基準値は令和2年度（参考）欄の実績14.0％。",
+    "direction": "increase",
+    "id": "jp-local-111007-project-2024-utility-pole-removal-kpi-priority-road-pole-removal-rate",
+    "name": "防災上の重要な道路の無電柱化率",
+    "project_id": "jp-local-111007-project-2024-utility-pole-removal",
+    "review_status": "reviewed",
+    "sources": [
+      "saitama-city-implementation-status-report-fy2024-pdf",
+      "saitama-city-implementation-status-report-fy2024-page"
+    ],
+    "target": {
+      "period": "令和6年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 17.4
+    },
+    "unit": "％"
+  },
+  {
+    "actuals": [
+      {
+        "period": "令和6年度",
+        "source_ids": [
+          "saitama-city-implementation-status-report-fy2024-pdf"
+        ],
+        "status": "available",
+        "value": 65.7
+      }
+    ],
+    "assessment": "not_achieved",
+    "baseline": {
+      "period": "令和2年度（参考）",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 56.5
+    },
+    "causality_note": "指標値の変動には本事業の取組以外の要因も影響しうる。達成度分類は市の事業評価（内部評価）による。",
+    "confidence": "high",
+    "definition": "令和6年度実施状況報告書の事業評価シート（事業コード 10-1-1-01）に掲載された事業としての目標指標2「バリアフリー経路の無電柱化率」。達成度分類は市の評価で「C」（目標を未達成）。基準値は令和2年度（参考）欄の実績56.5％。表示上の目標値・実績値はともに65.7％で一致するが、市の分類は「C」である。シートの要因分析では、令和5年度に事業が想定よりも進捗したことにより令和6年度の目標指標に対する伸び率が目標を下回ったとされており、一部事業で計画期間の伸び率を用いて達成率を算出する運用（報告書「評価シートの見方」）によるものとみられる。表示桁未満の差異は公表資料からは確認できない。",
+    "direction": "increase",
+    "id": "jp-local-111007-project-2024-utility-pole-removal-kpi-barrier-free-route-pole-removal-rate",
+    "name": "バリアフリー経路の無電柱化率",
+    "project_id": "jp-local-111007-project-2024-utility-pole-removal",
+    "review_status": "reviewed",
+    "sources": [
+      "saitama-city-implementation-status-report-fy2024-pdf",
+      "saitama-city-implementation-status-report-fy2024-page"
+    ],
+    "target": {
+      "period": "令和6年度",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf"
+      ],
+      "status": "available",
+      "value": 65.7
+    },
+    "unit": "％"
+  }
+]

@@ -1,0 +1,191 @@
+{
+  "expansion_rule": {
+    "added_count": 10,
+    "description": "初回登録として10件（各分野1件）。後続の展開では、同じ掲載順ルールを継続し、各分野について掲載順の後続の施策・事業を追加する。",
+    "total_count": 10
+  },
+  "issue": 818,
+  "municipality_id": "jp-local-111007",
+  "municipality_key": "saitama-city",
+  "population": {
+    "business_count": 299,
+    "count_note": "299事業は報告書「評価シートの見方」が示す事業評価シートの対象数（重複を除く）。分野別の達成度集計は再掲を含む延べ316事業（11分野）と質の高い都市経営の54事業を合わせた370事業で行われている。",
+    "description": "さいたま市総合振興計画基本計画（2021〜2030年度）の63施策を構成する事業のうち、令和6年度実施状況報告書で事業評価シートが作成された重複を除く299事業を母集団とした。事業評価シートには事業ごとに投入資源（令和6年度当初予算額・実績額）・事業としての目標指標（目標・実績・達成度分類）・事業の達成度（A/B/C）が付く。施策評価シート（63施策）には施策の進捗評価と成果指標は付くが金額は付かないため、登録単位は事業とした。基本計画実施計画第4編「質の高い都市経営の実現」の事業（事業コード第51・52章）は分野別の柱とは別の編であり、達成度の集計も分野別とは別に扱われるため、巡回の対象外とした。",
+    "field_count": 11,
+    "fiscal_year": 2024,
+    "measure_count": 63,
+    "source_ids": [
+      "saitama-city-implementation-status-report-fy2024-pdf",
+      "saitama-city-implementation-status-report-fy2024-page"
+    ]
+  },
+  "review_status": "reviewed",
+  "scope": "expanded",
+  "selection_rule": {
+    "description": "基本計画の分野（章）全11分野を公式掲載順に巡回し、各分野の先頭の施策の先頭の本掲事業（再掲事業を除く）を1件ずつ、10件に達するまで選定した。第11章「経済・産業」は10件到達のため未選定。金額の大小では選んでいない。",
+    "pillars": [
+      "第1章「コミュニティ・人権・多文化共生」",
+      "第2章「環境」",
+      "第3章「健康・スポーツ」",
+      "第4章「教育」",
+      "第5章「生活安全」",
+      "第6章「福祉」",
+      "第7章「子ども・子育て」",
+      "第8章「文化」",
+      "第9章「都市インフラ」",
+      "第10章「防災・消防」",
+      "第11章「経済・産業」"
+    ]
+  },
+  "selections": [
+    {
+      "business_code": "01-1-1-01",
+      "measure": "地域住民等の交流や自主的活動の促進",
+      "official_title": "自治会への加入促進",
+      "pillar": "第1章「コミュニティ・人権・多文化共生」",
+      "policy": "第1節「ふれあいのある地域社会の形成と活性化」",
+      "project_id": "jp-local-111007-project-2024-community-association-membership",
+      "selection_basis": "第1章「コミュニティ・人権・多文化共生」の掲載順1番目の施策「地域住民等の交流や自主的活動の促進」（施策コード 01-1-1）の先頭の本掲事業（事業コード 01-1-1-01）。基本計画の11分野を公式掲載順に巡回し、各分野から1事業を選ぶ規則により選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-111007-project-series-community-association-membership",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf",
+        "saitama-city-implementation-status-report-fy2024-page"
+      ]
+    },
+    {
+      "business_code": "02-1-1-01",
+      "measure": "脱炭素社会に向けた地球温暖化対策の推進",
+      "official_title": "市民・事業者との連携による省エネ・創エネ化の促進",
+      "pillar": "第2章「環境」",
+      "policy": "第1節「地域から取り組む「脱炭素社会に向けた持続可能な都市」の実現」",
+      "project_id": "jp-local-111007-project-2024-energy-saving-renewables-promotion",
+      "selection_basis": "第2章「環境」の掲載順1番目の施策「脱炭素社会に向けた地球温暖化対策の推進」（施策コード 02-1-1）の先頭の本掲事業（事業コード 02-1-1-01）。基本計画の11分野を公式掲載順に巡回し、各分野から1事業を選ぶ規則により選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-111007-project-series-energy-saving-renewables-promotion",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf",
+        "saitama-city-implementation-status-report-fy2024-page"
+      ]
+    },
+    {
+      "business_code": "03-1-1-01",
+      "measure": "スポーツなどを通じた健康づくりの意識醸成",
+      "official_title": "市民の主体的な健康づくりの推進",
+      "pillar": "第3章「健康・スポーツ」",
+      "policy": "第1節「主体的な健康づくりの推進」",
+      "project_id": "jp-local-111007-project-2024-citizen-health-promotion",
+      "selection_basis": "第3章「健康・スポーツ」の掲載順1番目の施策「スポーツなどを通じた健康づくりの意識醸成」（施策コード 03-1-1）の先頭の本掲事業（事業コード 03-1-1-01）。基本計画の11分野を公式掲載順に巡回し、各分野から1事業を選ぶ規則により選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-111007-project-series-citizen-health-promotion",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf",
+        "saitama-city-implementation-status-report-fy2024-page"
+      ]
+    },
+    {
+      "business_code": "04-1-1-01",
+      "measure": "12年間の学びの連続性を生かした「真の学力」の育成",
+      "official_title": "アクティブ・ラーニングの推進",
+      "pillar": "第4章「教育」",
+      "policy": "第1節「人生100年時代を豊かに生きる「未来を拓くさいたま教育」の推進」",
+      "project_id": "jp-local-111007-project-2024-active-learning-promotion",
+      "selection_basis": "第4章「教育」の掲載順1番目の施策「12年間の学びの連続性を生かした「真の学力」の育成」（施策コード 04-1-1）の先頭の本掲事業（事業コード 04-1-1-01）。基本計画の11分野を公式掲載順に巡回し、各分野から1事業を選ぶ規則により選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-111007-project-series-active-learning-promotion",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf",
+        "saitama-city-implementation-status-report-fy2024-page"
+      ]
+    },
+    {
+      "business_code": "05-1-1-01",
+      "measure": "交通事故の防止",
+      "official_title": "交通安全施設設置の推進",
+      "pillar": "第5章「生活安全」",
+      "policy": "第1節「安全・安心に暮らせる生活環境の形成」",
+      "project_id": "jp-local-111007-project-2024-traffic-safety-facilities",
+      "selection_basis": "第5章「生活安全」の掲載順1番目の施策「交通事故の防止」（施策コード 05-1-1）の先頭の本掲事業（事業コード 05-1-1-01）。基本計画の11分野を公式掲載順に巡回し、各分野から1事業を選ぶ規則により選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-111007-project-series-traffic-safety-facilities",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf",
+        "saitama-city-implementation-status-report-fy2024-page"
+      ]
+    },
+    {
+      "business_code": "06-1-1-01",
+      "measure": "可能な限り住み慣れた地域で自分らしく暮らすことができる環境づくり",
+      "official_title": "介護予防の推進",
+      "pillar": "第6章「福祉」",
+      "policy": "第1節「誰もが生き生きと長生きして暮らせる地域共生社会の実現」",
+      "project_id": "jp-local-111007-project-2024-care-prevention-promotion",
+      "selection_basis": "第6章「福祉」の掲載順1番目の施策「可能な限り住み慣れた地域で自分らしく暮らすことができる環境づくり」（施策コード 06-1-1）の先頭の本掲事業（事業コード 06-1-1-01）。基本計画の11分野を公式掲載順に巡回し、各分野から1事業を選ぶ規則により選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-111007-project-series-care-prevention-promotion",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf",
+        "saitama-city-implementation-status-report-fy2024-page"
+      ]
+    },
+    {
+      "business_code": "07-1-1-01",
+      "measure": "安心して妊娠・出産・子育てできる切れ目ない支援と親と子の健康づくり",
+      "official_title": "妊娠期からの親と子の健康づくり支援",
+      "pillar": "第7章「子ども・子育て」",
+      "policy": "第1節「子ども・子育てを支える都市の実現」",
+      "project_id": "jp-local-111007-project-2024-maternal-child-health-support",
+      "selection_basis": "第7章「子ども・子育て」の掲載順1番目の施策「安心して妊娠・出産・子育てできる切れ目ない支援と親と子の健康づくり」（施策コード 07-1-1）の先頭の本掲事業（事業コード 07-1-1-01）。基本計画の11分野を公式掲載順に巡回し、各分野から1事業を選ぶ規則により選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-111007-project-series-maternal-child-health-support",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf",
+        "saitama-city-implementation-status-report-fy2024-page"
+      ]
+    },
+    {
+      "business_code": "08-1-1-01",
+      "measure": "文化芸術を活用したまちの活性化",
+      "official_title": "岩槻人形博物館を拠点とした人形文化の振興・発信",
+      "pillar": "第8章「文化」",
+      "policy": "第1節「生き生きと心豊かに暮らせる文化芸術都市の創造」",
+      "project_id": "jp-local-111007-project-2024-iwatsuki-ningyo-museum-culture",
+      "selection_basis": "第8章「文化」の掲載順1番目の施策「文化芸術を活用したまちの活性化」（施策コード 08-1-1）の先頭の本掲事業（事業コード 08-1-1-01）。基本計画の11分野を公式掲載順に巡回し、各分野から1事業を選ぶ規則により選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-111007-project-series-iwatsuki-ningyo-museum-culture",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf",
+        "saitama-city-implementation-status-report-fy2024-page"
+      ]
+    },
+    {
+      "business_code": "09-1-1-01",
+      "measure": "都市基盤整備の推進",
+      "official_title": "大宮駅グランドセントラルステーション化構想の推進",
+      "pillar": "第9章「都市インフラ」",
+      "policy": "第1節「人を呼び込み交流を促す都市インフラ」",
+      "project_id": "jp-local-111007-project-2024-omiya-station-gcs",
+      "selection_basis": "第9章「都市インフラ」の掲載順1番目の施策「都市基盤整備の推進」（施策コード 09-1-1）の先頭の本掲事業（事業コード 09-1-1-01）。基本計画の11分野を公式掲載順に巡回し、各分野から1事業を選ぶ規則により選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-111007-project-series-omiya-station-gcs",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf",
+        "saitama-city-implementation-status-report-fy2024-page"
+      ]
+    },
+    {
+      "business_code": "10-1-1-01",
+      "measure": "災害に強い都市基盤整備",
+      "official_title": "無電柱化の推進",
+      "pillar": "第10章「防災・消防」",
+      "policy": "第1節「災害に強い都市の構築」",
+      "project_id": "jp-local-111007-project-2024-utility-pole-removal",
+      "selection_basis": "第10章「防災・消防」の掲載順1番目の施策「災害に強い都市基盤整備」（施策コード 10-1-1）の先頭の本掲事業（事業コード 10-1-1-01）。基本計画の11分野を公式掲載順に巡回し、各分野から1事業を選ぶ規則により選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-111007-project-series-utility-pole-removal",
+      "source_ids": [
+        "saitama-city-implementation-status-report-fy2024-pdf",
+        "saitama-city-implementation-status-report-fy2024-page"
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "official_title": "東日本連携の推進による地域経済活性化",
+      "policy_group": "第11章「経済・産業」",
+      "reason": "巡回選定で10件に達したため未選定"
+    }
+  ],
+  "updated_at": "2026-11-21",
+  "version": "1.0.0"
+}
