@@ -30,6 +30,18 @@ const financeByKey = {
  * A municipality with no corresponding Reviewed registration receives NO
  * deep-dive links, regardless of its display name or prefecture.
  */
+function hasReviewedExecutivePromises(municipalityId: string) {
+  return currentExecutiveTerms.some((term) =>
+    term.municipality_id === municipalityId &&
+    (term.review_status === "reviewed" || term.review_status === "verified") &&
+    promiseRecords.some((promise) =>
+      promise.municipality_id === municipalityId &&
+      promise.executive_term_id === term.id &&
+      (promise.review_status === "reviewed" || promise.review_status === "verified"),
+    ),
+  );
+}
+
 export function municipalityDiscoveryAvailability(officialCode: string) {
   const matched = (Object.keys(financeByKey) as DeepDiveKey[]).find((key) => {
     const municipality = financeByKey[key].municipality;
@@ -53,7 +65,9 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
       project.review_status === "reviewed" &&
       project.municipality_id === yokohamaMunicipality.id,
     );
-    return { key: "yokohama-city", finance: false, promises: false, assembly: false, projects: hasProjects };
+    // Stage three adds the promises gate on top of the stage-two projects gate.
+    const hasPromises = hasReviewedExecutivePromises(yokohamaMunicipality.id);
+    return { key: "yokohama-city", finance: false, promises: hasPromises, assembly: false, projects: hasProjects };
   }
 
   if (!matched && officialCode === kawasakiMunicipality.official_code &&
@@ -62,7 +76,9 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
       project.review_status === "reviewed" &&
       project.municipality_id === kawasakiMunicipality.id,
     );
-    return { key: "kawasaki-city", finance: false, promises: false, assembly: false, projects: hasProjects };
+    // Stage three adds the promises gate on top of the stage-two projects gate.
+    const hasPromises = hasReviewedExecutivePromises(kawasakiMunicipality.id);
+    return { key: "kawasaki-city", finance: false, promises: hasPromises, assembly: false, projects: hasProjects };
   }
 
   if (!matched && officialCode === hokkaidoFinance.municipality.official_code &&

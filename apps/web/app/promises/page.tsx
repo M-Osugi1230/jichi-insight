@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { currentExecutiveTerms, executiveMunicipality, promisesForExecutive, evidenceForPromise, formatDateJa } from "@/lib/executives";
+import { currentExecutiveTerms, executiveMunicipality, promisesForExecutive, evidenceForPromise, evidenceForExecutive, formatDateJa } from "@/lib/executives";
 import { promiseSourceDetails } from "@/lib/promiseSources";
 import { sourceConfidenceLabel } from "@/lib/statusLabels";
 import { fukuokaCityProjectData } from "@/lib/fukuokaCityProjects";
@@ -47,10 +47,16 @@ export default function PromisesPage() {
     {currentExecutiveTerms.map(term=>{
       const municipality=executiveMunicipality(term);
       const promises=promisesForExecutive(term).filter(p=>p.review_status==="reviewed");
+      const evidence=evidenceForExecutive(term);
+      const termStartClaim=evidence?.claims.find(claim=>claim.field==="term_start");
+      const vacancyElectionStart=municipality.key==="yokohama-city" &&
+        Boolean(termStartClaim?.statement.includes("欠員選挙") &&
+          termStartClaim?.review_note?.includes("欠員選挙"));
       const areas=[...new Set(promises.map(p=>p.policy_area))];
       return <section className={styles.area} key={term.id} id={municipality.key}>
         <h2>{municipality.name}・{term.person_name}</h2>
-        <p className={styles.meta}>{term.office==="governor"?"知事":"市長"} / 選挙日：{formatDateJa(term.election_date)} / 任期開始：{formatDateJa(term.term_start)} / {promises.length > 0 ? `Reviewed 公約原文 ${promises.length}件` : "公約原文：未登録"}</p>
+        <p className={styles.meta}>{term.office==="governor"?"知事":"市長"} / 選挙日：{formatDateJa(term.election_date)} / 任期開始：{formatDateJa(term.term_start)} / 任期満了：{formatDateJa(term.term_end)} / {promises.length > 0 ? `Reviewed 公約原文 ${promises.length}件` : "公約原文：未登録"}</p>
+        {vacancyElectionStart ? <p className={styles.meta}>任期起算：欠員選挙による選挙日起算</p> : null}
         {promises.length === 0 ? <p className={styles.meta}>本サイトにはこの首長の Reviewed 公約が登録されていません。公約が存在しない、または公表されていないことを示すものではありません。</p> : null}
         {areas.map(policyArea=><section key={policyArea} className={styles.policy}><h3>政策の柱：{policyArea}</h3>
           <div className={styles.grid}>{promises.filter(p=>p.policy_area===policyArea).map(p=>{
