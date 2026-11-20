@@ -113,7 +113,8 @@ export default async function AssemblyDetailPage({params}:PageProps){
 
     <section id="proposals" className={styles.section}>
       <h2>会期と議案</h2>
-      <p className={styles.note}>登録議案を会期・議案番号・件名から探せます。絞り込みを解除すると全登録議案が表示されます。出典リンクは各会期・議案名のすぐ下に表示しています。</p>\n      {slug==="osaka-prefecture" ? <p className={styles.attention}>請願第36号は第1〜4項と第5項を別々に採決した記録です。項目ごとの賛否を一括の結論として扱いません。令和7年度決算認定関連18件は閉会中継続審査中です。</p> : null}\n      {slug==="sakai-city" ? <p className={styles.attention}>「主な議案」に掲載された10件のみ会派別賛否が公表されています。その他の議案の賛否は未公表です。陳情19件は議案・請願の採決とは別系統の「陳情回答綴」で回答文を公開し、採択・不採択の決定とは扱いません。</p> : null}
+      <p className={styles.note}>登録議案を会期・議案番号・件名から探せます。絞り込みを解除すると全登録議案が表示されます。出典リンクは各会期・議案名のすぐ下に表示しています。</p>
+      {slug==="osaka-prefecture" ? <p className={styles.attention}>請願第36号は第1〜4項と第5項を別々に採決した記録です。項目ごとの賛否を一括の結論として扱いません。令和7年度決算認定関連18件は閉会中継続審査中です。</p> : null}\n      {slug==="sakai-city" ? <p className={styles.attention}>「主な議案」に掲載された10件のみ会派別賛否が公表されています。その他の議案の賛否は未公表です。陳情19件は議案・請願の採決とは別系統の「陳情回答綴」で回答文を公開し、採択・不採択の決定とは扱いません。</p> : null}
       <p className={styles.note}>出典に議決結果の原文言が登録されていない項目では、正確な文言を推測せず「登録結果コード」をそのまま表示します。原文は各出典をご確認ください。日付や提出者の欠損も補完しません。</p>
       <ProgressiveRecordFilter
         kind="proposals"
@@ -191,7 +192,8 @@ export default async function AssemblyDetailPage({params}:PageProps){
           : slug==="toyota-city"
             ? "政務活動費は会派別集計のみが Web 公表され、詳細の収支報告書・領収書等は Web 公表されていません（市政情報コーナーで閲覧）。"
             : "領収書は窓口でのみ閲覧可能です。"}支出額の順位付けはしません。</p>
-      <p className={styles.note}>掲載順は Reviewed 原資料の登録順です。交付額・支出額・残額は年度と公開単位を保ち、会派と議員の額を合算して個人の支出に帰属させません。</p>\n      {slug==="osaka-prefecture" ? <p className={styles.attention}>令和7年度分は会派9・議員80の計89単位をWeb公開。収支報告書と領収書の公開範囲を確認できます。</p> : null}
+      <p className={styles.note}>掲載順は Reviewed 原資料の登録順です。交付額・支出額・残額は年度と公開単位を保ち、会派と議員の額を合算して個人の支出に帰属させません。</p>
+      {slug==="osaka-prefecture" ? <p className={styles.attention}>令和7年度分は会派9・議員80の計89単位をWeb公開。収支報告書と領収書の公開範囲を確認できます。</p> : null}
       <div className={styles.recordList}>
       {data.expenses.map(exp=><article className={styles.record} key={exp.id}>
         <h3>{exp.recipient_name}</h3>
