@@ -1,0 +1,106 @@
+[
+ {
+  "as_of": "2026-11-21",
+  "assembly_id": "jp-local-140007-assembly-2023",
+  "confidence": "high",
+  "id": "jp-local-140007-assembly-2023-disclosure-2026",
+  "items": [
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_roster",
+    "note": "議員名簿と会派構成を議会公式の冊子「議会の組織」（令和8年6月1日現在）等で公開。定数105人・現員99人。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_composition",
+    "note": "13会派の構成（令和8年6月1日現在）を「議会の組織」の凡例で公開。賛否表の略称と正式名称の対応も同冊子で確定できる。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "committee_composition",
+    "note": "「議会の組織」に常任委員会・特別委員会・議会運営委員会の委員名簿を公開。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "proposals_and_results",
+    "note": "審議結果は会期ごとのHTML一覧表「提案された議案及び審議結果」が唯一の公式公表形式（PDF等の第二系統はない）。本登録の対象は令和8年第2回定例会の45件。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_votes",
+    "note": "審議結果一覧に、知事提出議案31件と議員派遣5件について会派別の賛成（〇）・反対（×）を併記（議決の確定結果）。凡例には欠席者等（▲）もあるが本会期では▲は使われておらず、欠席は備考の「欠席者等N名」のみ。意見書・決議・請願には会派別賛否の公表がない。",
+    "source_url": null
+   },
+   {
+    "availability": "not_published",
+    "granularity": "none",
+    "item": "member_votes",
+    "note": "議員個人別の賛否は公表されていない（審議結果一覧は会派単位のみ）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "political_activity_expense_reports",
+    "note": "政務活動費の収支報告書一覧表（修正版）と単位ごとの収支報告書を公開。本登録の対象は令和7年度分の19単位（会派交付6・議員交付13）。",
+    "source_url": null
+   },
+   {
+    "availability": "not_published",
+    "granularity": "none",
+    "item": "political_activity_expense_receipts",
+    "note": "令和7年度分の会計帳簿・証拠書類等は、令和7年度ページに「11月末頃にインターネットで閲覧できるようになる予定」と明記されたまま、2026年11月21日時点で未公開。公開後に公開範囲を確定する。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "inspection_trip_reports",
+    "note": "委員会調査報告書を集約ページ「委員会調査」で令和4年度以降分を県内調査・県外調査の区分で公開。本登録の対象は現任期分（2023年4月30日以降実施）の79件。報告書に費用（旅費）の記載はない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "meeting_minutes",
+    "note": "本会議会議録を公開（審議結果のもう一つの公式記録）。",
+    "source_url": null
+   },
+   {
+    "availability": "unknown",
+    "granularity": "assembly",
+    "item": "session_broadcast",
+    "note": "本会議の映像配信の有無は本登録の棚卸しでは確認していない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "petition_results",
+    "note": "請願は「採択された請願」一覧のみ（件名・付託先・議決日つき）を公開。不採択・継続審査の請願の公式一覧はない。陳情は「了承された陳情」一覧のみで、本会期分は0件。",
+    "source_url": null
+   }
+  ],
+  "review_status": "reviewed",
+  "sources": [
+   "kanagawa-pref-assembly-organization-2026",
+   "kanagawa-pref-assembly-term",
+   "kanagawa-pref-assembly-session-2026-2",
+   "kanagawa-pref-assembly-petitions-adopted",
+   "kanagawa-pref-assembly-petition-reports-accepted",
+   "kanagawa-pref-assembly-opinions",
+   "kanagawa-pref-assembly-seimu-system",
+   "kanagawa-pref-assembly-seimu-page-r7",
+   "kanagawa-pref-assembly-inspection-index"
+  ]
+ }
+]
