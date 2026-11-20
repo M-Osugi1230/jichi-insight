@@ -1,0 +1,170 @@
+{
+ "version": "1.0.0",
+ "updated_at": "2026-11-21",
+ "municipality_id": "jp-local-141305",
+ "municipality_key": "kawasaki-city",
+ "issue": 793,
+ "scope": "expanded",
+ "population": {
+  "description": "川崎市総合計画 第4期実施計画（令和8〜11年度、2026年3月策定・公表）が政策体系に位置づける事務事業の全体。体系は5つの基本政策・18の政策・48の施策・350の事務事業で、資料編「3 事務事業一覧（1）」が全事務事業を基本政策・政策・施策の掲載順で掲載する（○の付いた事業は「政策体系別の取組」の「計画期間の主な取組」に取組内容が掲載される）。資料編「事務事業一覧（2）」に載る政策体系に位置づけない事務事業は母集団に含まない。事務事業評価シートは、公表済みの最新版（令和7年度）が第3期実施計画の政策体系に基づくため、第4期の母集団の確定には用いない。",
+  "fiscal_year": 2026,
+  "project_count": 350,
+  "basic_policy_count": 5,
+  "policy_count": 18,
+  "measure_count": 48,
+  "count_note": "project_count 350件は、第4期実施計画の序章・基本構想・基本計画が「48の『施策』と350の『事務事業』が連なります」と明記する計画自身の公表値であり、資料編の事務事業一覧（1）がその全体を掲載する。",
+  "source_ids": [
+   "kawasaki-city-fourth-implementation-plan-page",
+   "kawasaki-city-fourth-plan-intro-basic-plan",
+   "kawasaki-city-fourth-plan-appendix"
+  ]
+ },
+ "selection_rule": {
+  "description": "計画体系の柱である5つの基本政策ごとに、政策→施策→事務事業の公式掲載順で先頭の2事業ずつ、計10件を選ぶ。掲載順は資料編「事務事業一覧（1）」の並びで定め、各基本政策の最初の施策については「政策体系別の取組」の「計画期間の主な取組」の掲載順とも一致することを確認した。金額の大小では選ばない。",
+  "pillars": [
+   "基本政策1 生命を守り生き生きと暮らすことができるまちづくり",
+   "基本政策2 子どもを安心して育てることのできるふるさとづくり",
+   "基本政策3 市民生活を豊かにする環境づくり",
+   "基本政策4 活力と魅力あふれる力強い都市づくり",
+   "基本政策5 誰もが生きがいを持てる市民自治の地域づくり"
+  ]
+ },
+ "selections": [
+  {
+   "pillar": "基本政策1 生命を守り生き生きと暮らすことができるまちづくり",
+   "policy": "地域防災力の向上",
+   "department": null,
+   "project_id": "jp-local-141305-project-2026-disaster-response-capacity",
+   "series_id": "jp-local-141305-project-series-disaster-response-capacity",
+   "official_title": "災害対応力強化事業",
+   "selection_basis": "基本政策1 生命を守り生き生きと暮らすことができるまちづくりの掲載順1番目の事業。最初の政策「政策1-1 災害に強いまちをつくる」の最初の施策1-1-1「地域防災力の向上」に位置付けられる事業のうち、公式公表順（資料編「事務事業一覧（1）」の掲載順であり、「政策体系別の取組」の「計画期間の主な取組」の掲載順とも一致する）の先頭から1番目にあたり、金額の大小では選んでいない。",
+   "source_ids": [
+    "kawasaki-city-fourth-plan-appendix",
+    "kawasaki-city-fourth-plan-policy1"
+   ]
+  },
+  {
+   "pillar": "基本政策1 生命を守り生き生きと暮らすことができるまちづくり",
+   "policy": "地域防災力の向上",
+   "department": null,
+   "project_id": "jp-local-141305-project-2026-community-disaster-prevention",
+   "series_id": "jp-local-141305-project-series-community-disaster-prevention",
+   "official_title": "地域防災推進事業",
+   "selection_basis": "基本政策1 生命を守り生き生きと暮らすことができるまちづくりの掲載順2番目の事業。最初の政策「政策1-1 災害に強いまちをつくる」の最初の施策1-1-1「地域防災力の向上」に位置付けられる事業のうち、公式公表順（資料編「事務事業一覧（1）」の掲載順であり、「政策体系別の取組」の「計画期間の主な取組」の掲載順とも一致する）の先頭から2番目にあたり、金額の大小では選んでいない。",
+   "source_ids": [
+    "kawasaki-city-fourth-plan-appendix",
+    "kawasaki-city-fourth-plan-policy1"
+   ]
+  },
+  {
+   "pillar": "基本政策2 子どもを安心して育てることのできるふるさとづくり",
+   "policy": "子ども・子育て支援の推進",
+   "department": null,
+   "project_id": "jp-local-141305-project-2026-childcare-capacity",
+   "series_id": "jp-local-141305-project-series-childcare-capacity",
+   "official_title": "保育・幼児教育の提供体制確保事業",
+   "selection_basis": "基本政策2 子どもを安心して育てることのできるふるさとづくりの掲載順1番目の事業。最初の政策「政策2-1 安心して子育てできる環境をつくる」の最初の施策2-1-1「子ども・子育て支援の推進」に位置付けられる事業のうち、公式公表順（資料編「事務事業一覧（1）」の掲載順であり、「政策体系別の取組」の「計画期間の主な取組」の掲載順とも一致する）の先頭から1番目にあたり、金額の大小では選んでいない。",
+   "source_ids": [
+    "kawasaki-city-fourth-plan-appendix",
+    "kawasaki-city-fourth-plan-policy2"
+   ]
+  },
+  {
+   "pillar": "基本政策2 子どもを安心して育てることのできるふるさとづくり",
+   "policy": "子ども・子育て支援の推進",
+   "department": null,
+   "project_id": "jp-local-141305-project-2026-childcare-quality",
+   "series_id": "jp-local-141305-project-series-childcare-quality",
+   "official_title": "保育・幼児教育の質の維持・向上事業",
+   "selection_basis": "基本政策2 子どもを安心して育てることのできるふるさとづくりの掲載順2番目の事業。最初の政策「政策2-1 安心して子育てできる環境をつくる」の最初の施策2-1-1「子ども・子育て支援の推進」に位置付けられる事業のうち、公式公表順（資料編「事務事業一覧（1）」の掲載順であり、「政策体系別の取組」の「計画期間の主な取組」の掲載順とも一致する）の先頭から2番目にあたり、金額の大小では選んでいない。",
+   "source_ids": [
+    "kawasaki-city-fourth-plan-appendix",
+    "kawasaki-city-fourth-plan-policy2"
+   ]
+  },
+  {
+   "pillar": "基本政策3 市民生活を豊かにする環境づくり",
+   "policy": "脱炭素化の推進",
+   "department": null,
+   "project_id": "jp-local-141305-project-2026-decarbonization-strategy",
+   "series_id": "jp-local-141305-project-series-decarbonization-strategy",
+   "official_title": "脱炭素戦略推進事業",
+   "selection_basis": "基本政策3 市民生活を豊かにする環境づくりの掲載順1番目の事業。最初の政策「政策3-1 環境に配慮したしくみをつくる」の最初の施策3-1-1「脱炭素化の推進」に位置付けられる事業のうち、公式公表順（資料編「事務事業一覧（1）」の掲載順であり、「政策体系別の取組」の「計画期間の主な取組」の掲載順とも一致する）の先頭から1番目にあたり、金額の大小では選んでいない。",
+   "source_ids": [
+    "kawasaki-city-fourth-plan-appendix",
+    "kawasaki-city-fourth-plan-policy3"
+   ]
+  },
+  {
+   "pillar": "基本政策3 市民生活を豊かにする環境づくり",
+   "policy": "脱炭素化の推進",
+   "department": null,
+   "project_id": "jp-local-141305-project-2026-renewable-energy-promotion",
+   "series_id": "jp-local-141305-project-series-renewable-energy-promotion",
+   "official_title": "再エネ導入等促進事業",
+   "selection_basis": "基本政策3 市民生活を豊かにする環境づくりの掲載順2番目の事業。最初の政策「政策3-1 環境に配慮したしくみをつくる」の最初の施策3-1-1「脱炭素化の推進」に位置付けられる事業のうち、公式公表順（資料編「事務事業一覧（1）」の掲載順であり、「政策体系別の取組」の「計画期間の主な取組」の掲載順とも一致する）の先頭から2番目にあたり、金額の大小では選んでいない。",
+   "source_ids": [
+    "kawasaki-city-fourth-plan-appendix",
+    "kawasaki-city-fourth-plan-policy3"
+   ]
+  },
+  {
+   "pillar": "基本政策4 活力と魅力あふれる力強い都市づくり",
+   "policy": "イノベーション創出の推進",
+   "department": null,
+   "project_id": "jp-local-141305-project-2026-startup-support",
+   "series_id": "jp-local-141305-project-series-startup-support",
+   "official_title": "スタートアップ支援事業",
+   "selection_basis": "基本政策4 活力と魅力あふれる力強い都市づくりの掲載順1番目の事業。最初の政策「政策4-1 地域経済を活性化する」の最初の施策4-1-1「イノベーション創出の推進」に位置付けられる事業のうち、公式公表順（資料編「事務事業一覧（1）」の掲載順であり、「政策体系別の取組」の「計画期間の主な取組」の掲載順とも一致する）の先頭から1番目にあたり、金額の大小では選んでいない。",
+   "source_ids": [
+    "kawasaki-city-fourth-plan-appendix",
+    "kawasaki-city-fourth-plan-policy4"
+   ]
+  },
+  {
+   "pillar": "基本政策4 活力と魅力あふれる力強い都市づくり",
+   "policy": "イノベーション創出の推進",
+   "department": null,
+   "project_id": "jp-local-141305-project-2026-shin-kawasaki-sozo-no-mori",
+   "series_id": "jp-local-141305-project-series-shin-kawasaki-sozo-no-mori",
+   "official_title": "新川崎・創造のもり推進事業",
+   "selection_basis": "基本政策4 活力と魅力あふれる力強い都市づくりの掲載順2番目の事業。最初の政策「政策4-1 地域経済を活性化する」の最初の施策4-1-1「イノベーション創出の推進」に位置付けられる事業のうち、公式公表順（資料編「事務事業一覧（1）」の掲載順であり、「政策体系別の取組」の「計画期間の主な取組」の掲載順とも一致する）の先頭から2番目にあたり、金額の大小では選んでいない。",
+   "source_ids": [
+    "kawasaki-city-fourth-plan-appendix",
+    "kawasaki-city-fourth-plan-policy4"
+   ]
+  },
+  {
+   "pillar": "基本政策5 誰もが生きがいを持てる市民自治の地域づくり",
+   "policy": "協働・連携による地域づくり",
+   "department": null,
+   "project_id": "jp-local-141305-project-2026-urban-community",
+   "series_id": "jp-local-141305-project-series-urban-community",
+   "official_title": "都市型コミュニティ形成推進事業",
+   "selection_basis": "基本政策5 誰もが生きがいを持てる市民自治の地域づくりの掲載順1番目の事業。最初の政策「政策5-1 参加と協働により市民自治を推進する」の最初の施策5-1-1「協働・連携による地域づくり」に位置付けられる事業のうち、公式公表順（資料編「事務事業一覧（1）」の掲載順であり、「政策体系別の取組」の「計画期間の主な取組」の掲載順とも一致する）の先頭から1番目にあたり、金額の大小では選んでいない。",
+   "source_ids": [
+    "kawasaki-city-fourth-plan-appendix",
+    "kawasaki-city-fourth-plan-policy5"
+   ]
+  },
+  {
+   "pillar": "基本政策5 誰もが生きがいを持てる市民自治の地域づくり",
+   "policy": "協働・連携による地域づくり",
+   "department": null,
+   "project_id": "jp-local-141305-project-2026-neighborhood-association-support",
+   "series_id": "jp-local-141305-project-series-neighborhood-association-support",
+   "official_title": "町内会・自治会活動支援事業",
+   "selection_basis": "基本政策5 誰もが生きがいを持てる市民自治の地域づくりの掲載順2番目の事業。最初の政策「政策5-1 参加と協働により市民自治を推進する」の最初の施策5-1-1「協働・連携による地域づくり」に位置付けられる事業のうち、公式公表順（資料編「事務事業一覧（1）」の掲載順であり、「政策体系別の取組」の「計画期間の主な取組」の掲載順とも一致する）の先頭から2番目にあたり、金額の大小では選んでいない。",
+   "source_ids": [
+    "kawasaki-city-fourth-plan-appendix",
+    "kawasaki-city-fourth-plan-policy5"
+   ]
+  }
+ ],
+ "review_status": "reviewed",
+ "expansion_rule": {
+  "description": "初回登録として10件（各基本政策2件）。後続の展開では、同じ掲載順ルールを継続し、各基本政策について掲載順の後続事業を追加する。",
+  "added_count": 10,
+  "total_count": 10
+ }
+}

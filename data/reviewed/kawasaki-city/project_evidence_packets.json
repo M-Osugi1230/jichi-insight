@@ -1,0 +1,822 @@
+[
+ {
+  "id": "evidence-jp-local-141305-project-2026-disaster-response-capacity",
+  "subject_type": "project",
+  "subject_id": "jp-local-141305-project-2026-disaster-response-capacity",
+  "claims": [
+   {
+    "field": "official_title",
+    "statement": "事業名は「災害対応力強化事業」。基本政策1 生命を守り生き生きと暮らすことができるまちづくりの政策1-1 災害に強いまちをつくるのもと、施策1-1-1「地域防災力の向上」に位置付けられる事務事業であり、資料編「事務事業一覧（1）」で当該施策の掲載順1番目に掲載される（○＝「政策体系別の取組」の「主な取組」掲載事業）。事業名と掲載順は資料編の描画画像で目視確認した。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-appendix",
+     "kawasaki-city-fourth-plan-policy1"
+    ],
+    "location_note": "資料編「3 事務事業一覧（1）」（pp.162-165）および「政策体系別の取組」当該施策ページ",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "parent_policy",
+    "statement": "本登録の parent_policy には、事業を直接束ねる計画単位として施策1-1-1「地域防災力の向上」を用いた。「政策体系別の取組」の同施策「計画期間の主な取組」（p.37）に記載された本事業の取組内容は「「かわさき強靱化計画」等、市の防災対策を定めた各計画に基づく取組及び、武力攻撃事態等あらゆる危機事象への対応力強化の取組を進めるとともに、新たな地震被害想定調査の結果を踏まえて公助の範囲を整理し、各計画に反映します。」であり、purpose はこの公式記載に基づく。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-policy1"
+    ],
+    "location_note": "「政策体系別の取組」施策1-1-1「地域防災力の向上」の「計画期間の主な取組」表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "responsible_department",
+    "statement": "第4期実施計画（政策体系別の取組・資料編）は事務事業ごとの担当部署を掲載していないため、responsible_department は null とした。令和7年度事務事業評価シートには所属名の記載があるが、第3期実施計画の政策体系に基づく資料であり、版をまたいで引き継がない。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-appendix",
+     "kawasaki-city-third-plan-evaluation-fy2025-page"
+    ],
+    "location_note": "資料編「3 事務事業一覧」全般（担当部署の記載なし）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "budget_records.initial_budget",
+    "statement": "令和8年度当初予算の事業単位の金額は未登録（amount_yen は null）。第4期実施計画は事務事業ごとの金額を掲載しない。公表済みの最新の事務事業評価シート（令和7年度）は第3期実施計画の政策体系に基づき、その予決算の掲載も令和4〜7年度分までで、令和8年度当初予算の欄はない（シートに堺市様式の「III．投入量」に相当する節もない）。令和8年度予算の「主な事業一覧」は予算説明資料の主な事業を予算書の掲載順に並べた部分的な一覧で、計画の事務事業との公式な対応表は公表されていない。なお、令和8年度一般会計予算そのものは議案第45号として2026年3月18日に原案可決され成立している。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-appendix",
+     "kawasaki-city-third-plan-evaluation-fy2025-page",
+     "kawasaki-city-evaluation-sheets-fy2025-policy1-1",
+     "kawasaki-city-budget-fy2026-main-projects",
+     "kawasaki-city-council-vote-2026-03-18"
+    ],
+    "location_note": "資料編「3 事務事業一覧」（金額の記載なし）、令和7年度事務事業評価シート「予決算」、令和8年度予算の主な事業一覧、令和8年第1回定例会議決結果",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_evaluation",
+    "statement": "公式評価は未登録（official_evaluation は null）。第4期実施計画の進行管理では、内部評価は毎年度実施し「事務事業を含めて施策単位で一体的に評価する」とされるが、第4期の事務事業は令和8年度の実施後に評価されるため、本登録時点で第4期事業の公式評価は公表されていない。公表済みの令和7年度事務事業評価シートの評定（達成度・必要性・有効性・効率性・施策への貢献度）は第3期実施計画の政策体系に基づく評価であり、政策・施策の名称と構成が異なる第4期の事業へ版をまたいで引き継がない。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-progress-management",
+     "kawasaki-city-third-plan-evaluation-fy2025-page"
+    ],
+    "location_note": "第4期実施計画「3 進行管理・評価」（内部評価は毎年度・施策単位で一体的に評価）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "kpis",
+    "statement": "事業単位のKPIは登録していない。第4期実施計画の成果指標は施策単位で設定されるもので、事業単位の公式な指標・評定は公表されていない。「計画期間の主な取組」の主なアウトプットは計画期間中の取組の成果見込みの叙述であり、実績値と市の評価を伴う指標ではないため、KPIとしては登録しない。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-policy1"
+    ],
+    "location_note": "「政策体系別の取組」施策1-1-1「地域防災力の向上」の成果指標（施策単位）および「計画期間の主な取組」の主なアウトプット欄",
+    "decision": "accepted",
+    "review_note": null
+   }
+  ],
+  "open_questions": [
+   "事業単位のKPIは未登録（project_kpis.json は空とし、欠損として明示）。第4期実施計画の成果指標は施策単位の設定であり、事業単位の公式な指標・評定は公表されていないため引き当てない。",
+   "令和8年度当初予算の事業単位の金額は未登録（欠損として明示）。公表資料では確認できないためであり、0では補完しない。第4期を対象とする事務事業評価シート（令和8年度評価）が公表されれば、金額の登録を検討する。",
+   "公式評価は未登録（欠損として明示）。第4期実施計画の事務事業に対する市の評価は未公表であり、令和7年度事務事業評価シートは第3期実施計画の政策体系に基づくため、版をまたいで引き継がない。令和8年度評価の公表後に登録を検討する。",
+   "担当部署は未登録（欠損として明示）。第4期実施計画は事務事業ごとの担当部署を掲載していない。",
+   "首長公約との接続は行っていない。段階3（公約）の登録後に接続を検討する。"
+  ],
+  "review_status": "reviewed"
+ },
+ {
+  "id": "evidence-jp-local-141305-project-2026-community-disaster-prevention",
+  "subject_type": "project",
+  "subject_id": "jp-local-141305-project-2026-community-disaster-prevention",
+  "claims": [
+   {
+    "field": "official_title",
+    "statement": "事業名は「地域防災推進事業」。基本政策1 生命を守り生き生きと暮らすことができるまちづくりの政策1-1 災害に強いまちをつくるのもと、施策1-1-1「地域防災力の向上」に位置付けられる事務事業であり、資料編「事務事業一覧（1）」で当該施策の掲載順2番目に掲載される（○＝「政策体系別の取組」の「主な取組」掲載事業）。事業名と掲載順は資料編の描画画像で目視確認した。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-appendix",
+     "kawasaki-city-fourth-plan-policy1"
+    ],
+    "location_note": "資料編「3 事務事業一覧（1）」（pp.162-165）および「政策体系別の取組」当該施策ページ",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "parent_policy",
+    "statement": "本登録の parent_policy には、事業を直接束ねる計画単位として施策1-1-1「地域防災力の向上」を用いた。「政策体系別の取組」の同施策「計画期間の主な取組」（p.37）に記載された本事業の取組内容は「自主防災組織等への支援、民間企業との連携、防災訓練や研修により、自助・共助・公助の取組を強化するとともに、在宅避難者への物資の支援策等を避難所運営マニュアルに反映するなど、避難所環境の改善及び在宅避難の推奨を両輪で推進します。」であり、purpose はこの公式記載に基づく。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-policy1"
+    ],
+    "location_note": "「政策体系別の取組」施策1-1-1「地域防災力の向上」の「計画期間の主な取組」表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "responsible_department",
+    "statement": "第4期実施計画（政策体系別の取組・資料編）は事務事業ごとの担当部署を掲載していないため、responsible_department は null とした。令和7年度事務事業評価シートには所属名の記載があるが、第3期実施計画の政策体系に基づく資料であり、版をまたいで引き継がない。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-appendix",
+     "kawasaki-city-third-plan-evaluation-fy2025-page"
+    ],
+    "location_note": "資料編「3 事務事業一覧」全般（担当部署の記載なし）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "budget_records.initial_budget",
+    "statement": "令和8年度当初予算の事業単位の金額は未登録（amount_yen は null）。第4期実施計画は事務事業ごとの金額を掲載しない。公表済みの最新の事務事業評価シート（令和7年度）は第3期実施計画の政策体系に基づき、その予決算の掲載も令和4〜7年度分までで、令和8年度当初予算の欄はない（シートに堺市様式の「III．投入量」に相当する節もない）。令和8年度予算の「主な事業一覧」は予算説明資料の主な事業を予算書の掲載順に並べた部分的な一覧で、計画の事務事業との公式な対応表は公表されていない。なお、令和8年度一般会計予算そのものは議案第45号として2026年3月18日に原案可決され成立している。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-appendix",
+     "kawasaki-city-third-plan-evaluation-fy2025-page",
+     "kawasaki-city-evaluation-sheets-fy2025-policy1-1",
+     "kawasaki-city-budget-fy2026-main-projects",
+     "kawasaki-city-council-vote-2026-03-18"
+    ],
+    "location_note": "資料編「3 事務事業一覧」（金額の記載なし）、令和7年度事務事業評価シート「予決算」、令和8年度予算の主な事業一覧、令和8年第1回定例会議決結果",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_evaluation",
+    "statement": "公式評価は未登録（official_evaluation は null）。第4期実施計画の進行管理では、内部評価は毎年度実施し「事務事業を含めて施策単位で一体的に評価する」とされるが、第4期の事務事業は令和8年度の実施後に評価されるため、本登録時点で第4期事業の公式評価は公表されていない。公表済みの令和7年度事務事業評価シートの評定（達成度・必要性・有効性・効率性・施策への貢献度）は第3期実施計画の政策体系に基づく評価であり、政策・施策の名称と構成が異なる第4期の事業へ版をまたいで引き継がない。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-progress-management",
+     "kawasaki-city-third-plan-evaluation-fy2025-page"
+    ],
+    "location_note": "第4期実施計画「3 進行管理・評価」（内部評価は毎年度・施策単位で一体的に評価）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "kpis",
+    "statement": "事業単位のKPIは登録していない。第4期実施計画の成果指標は施策単位で設定されるもので、事業単位の公式な指標・評定は公表されていない。「計画期間の主な取組」の主なアウトプットは計画期間中の取組の成果見込みの叙述であり、実績値と市の評価を伴う指標ではないため、KPIとしては登録しない。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-policy1"
+    ],
+    "location_note": "「政策体系別の取組」施策1-1-1「地域防災力の向上」の成果指標（施策単位）および「計画期間の主な取組」の主なアウトプット欄",
+    "decision": "accepted",
+    "review_note": null
+   }
+  ],
+  "open_questions": [
+   "事業単位のKPIは未登録（project_kpis.json は空とし、欠損として明示）。第4期実施計画の成果指標は施策単位の設定であり、事業単位の公式な指標・評定は公表されていないため引き当てない。",
+   "令和8年度当初予算の事業単位の金額は未登録（欠損として明示）。公表資料では確認できないためであり、0では補完しない。第4期を対象とする事務事業評価シート（令和8年度評価）が公表されれば、金額の登録を検討する。",
+   "公式評価は未登録（欠損として明示）。第4期実施計画の事務事業に対する市の評価は未公表であり、令和7年度事務事業評価シートは第3期実施計画の政策体系に基づくため、版をまたいで引き継がない。令和8年度評価の公表後に登録を検討する。",
+   "担当部署は未登録（欠損として明示）。第4期実施計画は事務事業ごとの担当部署を掲載していない。",
+   "首長公約との接続は行っていない。段階3（公約）の登録後に接続を検討する。"
+  ],
+  "review_status": "reviewed"
+ },
+ {
+  "id": "evidence-jp-local-141305-project-2026-childcare-capacity",
+  "subject_type": "project",
+  "subject_id": "jp-local-141305-project-2026-childcare-capacity",
+  "claims": [
+   {
+    "field": "official_title",
+    "statement": "事業名は「保育・幼児教育の提供体制確保事業」。基本政策2 子どもを安心して育てることのできるふるさとづくりの政策2-1 安心して子育てできる環境をつくるのもと、施策2-1-1「子ども・子育て支援の推進」に位置付けられる事務事業であり、資料編「事務事業一覧（1）」で当該施策の掲載順1番目に掲載される（○＝「政策体系別の取組」の「主な取組」掲載事業）。事業名と掲載順は資料編の描画画像で目視確認した。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-appendix",
+     "kawasaki-city-fourth-plan-policy2"
+    ],
+    "location_note": "資料編「3 事務事業一覧（1）」（pp.162-165）および「政策体系別の取組」当該施策ページ",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "parent_policy",
+    "statement": "本登録の parent_policy には、事業を直接束ねる計画単位として施策2-1-1「子ども・子育て支援の推進」を用いた。「政策体系別の取組」の同施策「計画期間の主な取組」（p.71）に記載された本事業の取組内容は「既存の保育資源の活用を前提とし、「子ども・子育て支援事業計画」に基づく認可保育所等の整備や認定こども園への移行、一時預かり事業の推進等により、適切な提供体制の確保に取り組み、安心して子どもを預けられる環境づくりを進めます。」であり、purpose はこの公式記載に基づく。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-policy2"
+    ],
+    "location_note": "「政策体系別の取組」施策2-1-1「子ども・子育て支援の推進」の「計画期間の主な取組」表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "responsible_department",
+    "statement": "第4期実施計画（政策体系別の取組・資料編）は事務事業ごとの担当部署を掲載していないため、responsible_department は null とした。令和7年度事務事業評価シートには所属名の記載があるが、第3期実施計画の政策体系に基づく資料であり、版をまたいで引き継がない。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-appendix",
+     "kawasaki-city-third-plan-evaluation-fy2025-page"
+    ],
+    "location_note": "資料編「3 事務事業一覧」全般（担当部署の記載なし）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "budget_records.initial_budget",
+    "statement": "令和8年度当初予算の事業単位の金額は未登録（amount_yen は null）。第4期実施計画は事務事業ごとの金額を掲載しない。公表済みの最新の事務事業評価シート（令和7年度）は第3期実施計画の政策体系に基づき、その予決算の掲載も令和4〜7年度分までで、令和8年度当初予算の欄はない（シートに堺市様式の「III．投入量」に相当する節もない）。令和8年度予算の「主な事業一覧」は予算説明資料の主な事業を予算書の掲載順に並べた部分的な一覧で、計画の事務事業との公式な対応表は公表されていない。なお、令和8年度一般会計予算そのものは議案第45号として2026年3月18日に原案可決され成立している。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-appendix",
+     "kawasaki-city-third-plan-evaluation-fy2025-page",
+     "kawasaki-city-evaluation-sheets-fy2025-policy1-1",
+     "kawasaki-city-budget-fy2026-main-projects",
+     "kawasaki-city-council-vote-2026-03-18"
+    ],
+    "location_note": "資料編「3 事務事業一覧」（金額の記載なし）、令和7年度事務事業評価シート「予決算」、令和8年度予算の主な事業一覧、令和8年第1回定例会議決結果",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_evaluation",
+    "statement": "公式評価は未登録（official_evaluation は null）。第4期実施計画の進行管理では、内部評価は毎年度実施し「事務事業を含めて施策単位で一体的に評価する」とされるが、第4期の事務事業は令和8年度の実施後に評価されるため、本登録時点で第4期事業の公式評価は公表されていない。公表済みの令和7年度事務事業評価シートの評定（達成度・必要性・有効性・効率性・施策への貢献度）は第3期実施計画の政策体系に基づく評価であり、政策・施策の名称と構成が異なる第4期の事業へ版をまたいで引き継がない。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-progress-management",
+     "kawasaki-city-third-plan-evaluation-fy2025-page"
+    ],
+    "location_note": "第4期実施計画「3 進行管理・評価」（内部評価は毎年度・施策単位で一体的に評価）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "kpis",
+    "statement": "事業単位のKPIは登録していない。第4期実施計画の成果指標は施策単位で設定されるもので、事業単位の公式な指標・評定は公表されていない。「計画期間の主な取組」の主なアウトプットは計画期間中の取組の成果見込みの叙述であり、実績値と市の評価を伴う指標ではないため、KPIとしては登録しない。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-policy2"
+    ],
+    "location_note": "「政策体系別の取組」施策2-1-1「子ども・子育て支援の推進」の成果指標（施策単位）および「計画期間の主な取組」の主なアウトプット欄",
+    "decision": "accepted",
+    "review_note": null
+   }
+  ],
+  "open_questions": [
+   "事業単位のKPIは未登録（project_kpis.json は空とし、欠損として明示）。第4期実施計画の成果指標は施策単位の設定であり、事業単位の公式な指標・評定は公表されていないため引き当てない。",
+   "令和8年度当初予算の事業単位の金額は未登録（欠損として明示）。公表資料では確認できないためであり、0では補完しない。第4期を対象とする事務事業評価シート（令和8年度評価）が公表されれば、金額の登録を検討する。",
+   "公式評価は未登録（欠損として明示）。第4期実施計画の事務事業に対する市の評価は未公表であり、令和7年度事務事業評価シートは第3期実施計画の政策体系に基づくため、版をまたいで引き継がない。令和8年度評価の公表後に登録を検討する。",
+   "担当部署は未登録（欠損として明示）。第4期実施計画は事務事業ごとの担当部署を掲載していない。",
+   "首長公約との接続は行っていない。段階3（公約）の登録後に接続を検討する。"
+  ],
+  "review_status": "reviewed"
+ },
+ {
+  "id": "evidence-jp-local-141305-project-2026-childcare-quality",
+  "subject_type": "project",
+  "subject_id": "jp-local-141305-project-2026-childcare-quality",
+  "claims": [
+   {
+    "field": "official_title",
+    "statement": "事業名は「保育・幼児教育の質の維持・向上事業」。基本政策2 子どもを安心して育てることのできるふるさとづくりの政策2-1 安心して子育てできる環境をつくるのもと、施策2-1-1「子ども・子育て支援の推進」に位置付けられる事務事業であり、資料編「事務事業一覧（1）」で当該施策の掲載順2番目に掲載される（○＝「政策体系別の取組」の「主な取組」掲載事業）。事業名と掲載順は資料編の描画画像で目視確認した。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-appendix",
+     "kawasaki-city-fourth-plan-policy2"
+    ],
+    "location_note": "資料編「3 事務事業一覧（1）」（pp.162-165）および「政策体系別の取組」当該施策ページ",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "parent_policy",
+    "statement": "本登録の parent_policy には、事業を直接束ねる計画単位として施策2-1-1「子ども・子育て支援の推進」を用いた。「政策体系別の取組」の同施策「計画期間の主な取組」（p.71）に記載された本事業の取組内容は「保育の仕事に関する魅力発信や就職・復職・就労継続支援などの取組により、保育人材の確保対策や定着支援を推進するとともに、民間への支援・指導、医療的ケア児など多様なニーズに応じた取組の推進、公民保育所の人材育成、幼保小連携の充実等により、保育・幼児教育の質の維持・向上を図ります。」であり、purpose はこの公式記載に基づく。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-policy2"
+    ],
+    "location_note": "「政策体系別の取組」施策2-1-1「子ども・子育て支援の推進」の「計画期間の主な取組」表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "responsible_department",
+    "statement": "第4期実施計画（政策体系別の取組・資料編）は事務事業ごとの担当部署を掲載していないため、responsible_department は null とした。令和7年度事務事業評価シートには所属名の記載があるが、第3期実施計画の政策体系に基づく資料であり、版をまたいで引き継がない。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-appendix",
+     "kawasaki-city-third-plan-evaluation-fy2025-page"
+    ],
+    "location_note": "資料編「3 事務事業一覧」全般（担当部署の記載なし）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "budget_records.initial_budget",
+    "statement": "令和8年度当初予算の事業単位の金額は未登録（amount_yen は null）。第4期実施計画は事務事業ごとの金額を掲載しない。公表済みの最新の事務事業評価シート（令和7年度）は第3期実施計画の政策体系に基づき、その予決算の掲載も令和4〜7年度分までで、令和8年度当初予算の欄はない（シートに堺市様式の「III．投入量」に相当する節もない）。令和8年度予算の「主な事業一覧」は予算説明資料の主な事業を予算書の掲載順に並べた部分的な一覧で、計画の事務事業との公式な対応表は公表されていない。なお、令和8年度一般会計予算そのものは議案第45号として2026年3月18日に原案可決され成立している。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-appendix",
+     "kawasaki-city-third-plan-evaluation-fy2025-page",
+     "kawasaki-city-evaluation-sheets-fy2025-policy1-1",
+     "kawasaki-city-budget-fy2026-main-projects",
+     "kawasaki-city-council-vote-2026-03-18"
+    ],
+    "location_note": "資料編「3 事務事業一覧」（金額の記載なし）、令和7年度事務事業評価シート「予決算」、令和8年度予算の主な事業一覧、令和8年第1回定例会議決結果",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_evaluation",
+    "statement": "公式評価は未登録（official_evaluation は null）。第4期実施計画の進行管理では、内部評価は毎年度実施し「事務事業を含めて施策単位で一体的に評価する」とされるが、第4期の事務事業は令和8年度の実施後に評価されるため、本登録時点で第4期事業の公式評価は公表されていない。公表済みの令和7年度事務事業評価シートの評定（達成度・必要性・有効性・効率性・施策への貢献度）は第3期実施計画の政策体系に基づく評価であり、政策・施策の名称と構成が異なる第4期の事業へ版をまたいで引き継がない。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-progress-management",
+     "kawasaki-city-third-plan-evaluation-fy2025-page"
+    ],
+    "location_note": "第4期実施計画「3 進行管理・評価」（内部評価は毎年度・施策単位で一体的に評価）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "kpis",
+    "statement": "事業単位のKPIは登録していない。第4期実施計画の成果指標は施策単位で設定されるもので、事業単位の公式な指標・評定は公表されていない。「計画期間の主な取組」の主なアウトプットは計画期間中の取組の成果見込みの叙述であり、実績値と市の評価を伴う指標ではないため、KPIとしては登録しない。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-policy2"
+    ],
+    "location_note": "「政策体系別の取組」施策2-1-1「子ども・子育て支援の推進」の成果指標（施策単位）および「計画期間の主な取組」の主なアウトプット欄",
+    "decision": "accepted",
+    "review_note": null
+   }
+  ],
+  "open_questions": [
+   "事業単位のKPIは未登録（project_kpis.json は空とし、欠損として明示）。第4期実施計画の成果指標は施策単位の設定であり、事業単位の公式な指標・評定は公表されていないため引き当てない。",
+   "令和8年度当初予算の事業単位の金額は未登録（欠損として明示）。公表資料では確認できないためであり、0では補完しない。第4期を対象とする事務事業評価シート（令和8年度評価）が公表されれば、金額の登録を検討する。",
+   "公式評価は未登録（欠損として明示）。第4期実施計画の事務事業に対する市の評価は未公表であり、令和7年度事務事業評価シートは第3期実施計画の政策体系に基づくため、版をまたいで引き継がない。令和8年度評価の公表後に登録を検討する。",
+   "担当部署は未登録（欠損として明示）。第4期実施計画は事務事業ごとの担当部署を掲載していない。",
+   "首長公約との接続は行っていない。段階3（公約）の登録後に接続を検討する。"
+  ],
+  "review_status": "reviewed"
+ },
+ {
+  "id": "evidence-jp-local-141305-project-2026-decarbonization-strategy",
+  "subject_type": "project",
+  "subject_id": "jp-local-141305-project-2026-decarbonization-strategy",
+  "claims": [
+   {
+    "field": "official_title",
+    "statement": "事業名は「脱炭素戦略推進事業」。基本政策3 市民生活を豊かにする環境づくりの政策3-1 環境に配慮したしくみをつくるのもと、施策3-1-1「脱炭素化の推進」に位置付けられる事務事業であり、資料編「事務事業一覧（1）」で当該施策の掲載順1番目に掲載される（○＝「政策体系別の取組」の「主な取組」掲載事業）。事業名と掲載順は資料編の描画画像で目視確認した。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-appendix",
+     "kawasaki-city-fourth-plan-policy3"
+    ],
+    "location_note": "資料編「3 事務事業一覧（1）」（pp.162-165）および「政策体系別の取組」当該施策ページ",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "parent_policy",
+    "statement": "本登録の parent_policy には、事業を直接束ねる計画単位として施策3-1-1「脱炭素化の推進」を用いた。「政策体系別の取組」の同施策「計画期間の主な取組」（p.85）に記載された本事業の取組内容は「脱炭素モデル地区「脱炭素アクションみぞのくち」の取組を通じ、市民・事業者の行動変容の促進を図るとともに、モデル地区の横展開に向けた取組を推進します。また、地球温暖化対策推進基本計画改定の検討を進めます。」であり、purpose はこの公式記載に基づく。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-policy3"
+    ],
+    "location_note": "「政策体系別の取組」施策3-1-1「脱炭素化の推進」の「計画期間の主な取組」表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "responsible_department",
+    "statement": "第4期実施計画（政策体系別の取組・資料編）は事務事業ごとの担当部署を掲載していないため、responsible_department は null とした。令和7年度事務事業評価シートには所属名の記載があるが、第3期実施計画の政策体系に基づく資料であり、版をまたいで引き継がない。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-appendix",
+     "kawasaki-city-third-plan-evaluation-fy2025-page"
+    ],
+    "location_note": "資料編「3 事務事業一覧」全般（担当部署の記載なし）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "budget_records.initial_budget",
+    "statement": "令和8年度当初予算の事業単位の金額は未登録（amount_yen は null）。第4期実施計画は事務事業ごとの金額を掲載しない。公表済みの最新の事務事業評価シート（令和7年度）は第3期実施計画の政策体系に基づき、その予決算の掲載も令和4〜7年度分までで、令和8年度当初予算の欄はない（シートに堺市様式の「III．投入量」に相当する節もない）。令和8年度予算の「主な事業一覧」は予算説明資料の主な事業を予算書の掲載順に並べた部分的な一覧で、計画の事務事業との公式な対応表は公表されていない。なお、令和8年度一般会計予算そのものは議案第45号として2026年3月18日に原案可決され成立している。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-appendix",
+     "kawasaki-city-third-plan-evaluation-fy2025-page",
+     "kawasaki-city-evaluation-sheets-fy2025-policy1-1",
+     "kawasaki-city-budget-fy2026-main-projects",
+     "kawasaki-city-council-vote-2026-03-18"
+    ],
+    "location_note": "資料編「3 事務事業一覧」（金額の記載なし）、令和7年度事務事業評価シート「予決算」、令和8年度予算の主な事業一覧、令和8年第1回定例会議決結果",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_evaluation",
+    "statement": "公式評価は未登録（official_evaluation は null）。第4期実施計画の進行管理では、内部評価は毎年度実施し「事務事業を含めて施策単位で一体的に評価する」とされるが、第4期の事務事業は令和8年度の実施後に評価されるため、本登録時点で第4期事業の公式評価は公表されていない。公表済みの令和7年度事務事業評価シートの評定（達成度・必要性・有効性・効率性・施策への貢献度）は第3期実施計画の政策体系に基づく評価であり、政策・施策の名称と構成が異なる第4期の事業へ版をまたいで引き継がない。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-progress-management",
+     "kawasaki-city-third-plan-evaluation-fy2025-page"
+    ],
+    "location_note": "第4期実施計画「3 進行管理・評価」（内部評価は毎年度・施策単位で一体的に評価）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "kpis",
+    "statement": "事業単位のKPIは登録していない。第4期実施計画の成果指標は施策単位で設定されるもので、事業単位の公式な指標・評定は公表されていない。「計画期間の主な取組」の主なアウトプットは計画期間中の取組の成果見込みの叙述であり、実績値と市の評価を伴う指標ではないため、KPIとしては登録しない。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-policy3"
+    ],
+    "location_note": "「政策体系別の取組」施策3-1-1「脱炭素化の推進」の成果指標（施策単位）および「計画期間の主な取組」の主なアウトプット欄",
+    "decision": "accepted",
+    "review_note": null
+   }
+  ],
+  "open_questions": [
+   "事業単位のKPIは未登録（project_kpis.json は空とし、欠損として明示）。第4期実施計画の成果指標は施策単位の設定であり、事業単位の公式な指標・評定は公表されていないため引き当てない。",
+   "令和8年度当初予算の事業単位の金額は未登録（欠損として明示）。公表資料では確認できないためであり、0では補完しない。第4期を対象とする事務事業評価シート（令和8年度評価）が公表されれば、金額の登録を検討する。",
+   "公式評価は未登録（欠損として明示）。第4期実施計画の事務事業に対する市の評価は未公表であり、令和7年度事務事業評価シートは第3期実施計画の政策体系に基づくため、版をまたいで引き継がない。令和8年度評価の公表後に登録を検討する。",
+   "担当部署は未登録（欠損として明示）。第4期実施計画は事務事業ごとの担当部署を掲載していない。",
+   "首長公約との接続は行っていない。段階3（公約）の登録後に接続を検討する。"
+  ],
+  "review_status": "reviewed"
+ },
+ {
+  "id": "evidence-jp-local-141305-project-2026-renewable-energy-promotion",
+  "subject_type": "project",
+  "subject_id": "jp-local-141305-project-2026-renewable-energy-promotion",
+  "claims": [
+   {
+    "field": "official_title",
+    "statement": "事業名は「再エネ導入等促進事業」。基本政策3 市民生活を豊かにする環境づくりの政策3-1 環境に配慮したしくみをつくるのもと、施策3-1-1「脱炭素化の推進」に位置付けられる事務事業であり、資料編「事務事業一覧（1）」で当該施策の掲載順2番目に掲載される（○＝「政策体系別の取組」の「主な取組」掲載事業）。事業名と掲載順は資料編の描画画像で目視確認した。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-appendix",
+     "kawasaki-city-fourth-plan-policy3"
+    ],
+    "location_note": "資料編「3 事務事業一覧（1）」（pp.162-165）および「政策体系別の取組」当該施策ページ",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "parent_policy",
+    "statement": "本登録の parent_policy には、事業を直接束ねる計画単位として施策3-1-1「脱炭素化の推進」を用いた。「政策体系別の取組」の同施策「計画期間の主な取組」（p.85）に記載された本事業の取組内容は「太陽光発電設備の設置義務制度や補助制度の運用等により、次世代太陽電池も含め、住宅等への再エネ設備の導入を促進します。また、脱炭素先行地域の実現や、川崎未来エナジー（株）等と連携し、家庭や学校で生じた太陽光発電の余剰電力を地産地消する等、再エネ普及を促進します。」であり、purpose はこの公式記載に基づく。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-policy3"
+    ],
+    "location_note": "「政策体系別の取組」施策3-1-1「脱炭素化の推進」の「計画期間の主な取組」表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "responsible_department",
+    "statement": "第4期実施計画（政策体系別の取組・資料編）は事務事業ごとの担当部署を掲載していないため、responsible_department は null とした。令和7年度事務事業評価シートには所属名の記載があるが、第3期実施計画の政策体系に基づく資料であり、版をまたいで引き継がない。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-appendix",
+     "kawasaki-city-third-plan-evaluation-fy2025-page"
+    ],
+    "location_note": "資料編「3 事務事業一覧」全般（担当部署の記載なし）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "budget_records.initial_budget",
+    "statement": "令和8年度当初予算の事業単位の金額は未登録（amount_yen は null）。第4期実施計画は事務事業ごとの金額を掲載しない。公表済みの最新の事務事業評価シート（令和7年度）は第3期実施計画の政策体系に基づき、その予決算の掲載も令和4〜7年度分までで、令和8年度当初予算の欄はない（シートに堺市様式の「III．投入量」に相当する節もない）。令和8年度予算の「主な事業一覧」は予算説明資料の主な事業を予算書の掲載順に並べた部分的な一覧で、計画の事務事業との公式な対応表は公表されていない。なお、令和8年度一般会計予算そのものは議案第45号として2026年3月18日に原案可決され成立している。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-appendix",
+     "kawasaki-city-third-plan-evaluation-fy2025-page",
+     "kawasaki-city-evaluation-sheets-fy2025-policy1-1",
+     "kawasaki-city-budget-fy2026-main-projects",
+     "kawasaki-city-council-vote-2026-03-18"
+    ],
+    "location_note": "資料編「3 事務事業一覧」（金額の記載なし）、令和7年度事務事業評価シート「予決算」、令和8年度予算の主な事業一覧、令和8年第1回定例会議決結果",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_evaluation",
+    "statement": "公式評価は未登録（official_evaluation は null）。第4期実施計画の進行管理では、内部評価は毎年度実施し「事務事業を含めて施策単位で一体的に評価する」とされるが、第4期の事務事業は令和8年度の実施後に評価されるため、本登録時点で第4期事業の公式評価は公表されていない。公表済みの令和7年度事務事業評価シートの評定（達成度・必要性・有効性・効率性・施策への貢献度）は第3期実施計画の政策体系に基づく評価であり、政策・施策の名称と構成が異なる第4期の事業へ版をまたいで引き継がない。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-progress-management",
+     "kawasaki-city-third-plan-evaluation-fy2025-page"
+    ],
+    "location_note": "第4期実施計画「3 進行管理・評価」（内部評価は毎年度・施策単位で一体的に評価）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "kpis",
+    "statement": "事業単位のKPIは登録していない。第4期実施計画の成果指標は施策単位で設定されるもので、事業単位の公式な指標・評定は公表されていない。「計画期間の主な取組」の主なアウトプットは計画期間中の取組の成果見込みの叙述であり、実績値と市の評価を伴う指標ではないため、KPIとしては登録しない。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-policy3"
+    ],
+    "location_note": "「政策体系別の取組」施策3-1-1「脱炭素化の推進」の成果指標（施策単位）および「計画期間の主な取組」の主なアウトプット欄",
+    "decision": "accepted",
+    "review_note": null
+   }
+  ],
+  "open_questions": [
+   "事業単位のKPIは未登録（project_kpis.json は空とし、欠損として明示）。第4期実施計画の成果指標は施策単位の設定であり、事業単位の公式な指標・評定は公表されていないため引き当てない。",
+   "令和8年度当初予算の事業単位の金額は未登録（欠損として明示）。公表資料では確認できないためであり、0では補完しない。第4期を対象とする事務事業評価シート（令和8年度評価）が公表されれば、金額の登録を検討する。",
+   "公式評価は未登録（欠損として明示）。第4期実施計画の事務事業に対する市の評価は未公表であり、令和7年度事務事業評価シートは第3期実施計画の政策体系に基づくため、版をまたいで引き継がない。令和8年度評価の公表後に登録を検討する。",
+   "担当部署は未登録（欠損として明示）。第4期実施計画は事務事業ごとの担当部署を掲載していない。",
+   "首長公約との接続は行っていない。段階3（公約）の登録後に接続を検討する。"
+  ],
+  "review_status": "reviewed"
+ },
+ {
+  "id": "evidence-jp-local-141305-project-2026-startup-support",
+  "subject_type": "project",
+  "subject_id": "jp-local-141305-project-2026-startup-support",
+  "claims": [
+   {
+    "field": "official_title",
+    "statement": "事業名は「スタートアップ支援事業」。基本政策4 活力と魅力あふれる力強い都市づくりの政策4-1 地域経済を活性化するのもと、施策4-1-1「イノベーション創出の推進」に位置付けられる事務事業であり、資料編「事務事業一覧（1）」で当該施策の掲載順1番目に掲載される（○＝「政策体系別の取組」の「主な取組」掲載事業）。事業名と掲載順は資料編の描画画像で目視確認した。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-appendix",
+     "kawasaki-city-fourth-plan-policy4"
+    ],
+    "location_note": "資料編「3 事務事業一覧（1）」（pp.162-165）および「政策体系別の取組」当該施策ページ",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "parent_policy",
+    "statement": "本登録の parent_policy には、事業を直接束ねる計画単位として施策4-1-1「イノベーション創出の推進」を用いた。「政策体系別の取組」の同施策「計画期間の主な取組」（p.95）に記載された本事業の取組内容は「新エネルギー・産業技術総合開発機構（NEDO）と連携した起業家支援拠点Kawasaki-NEDO Innovation Center（K-NIC）を軸に、アクセラレーションプログラムの実施やディープテックスタートアップへの支援を実施します。」であり、purpose はこの公式記載に基づく。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-policy4"
+    ],
+    "location_note": "「政策体系別の取組」施策4-1-1「イノベーション創出の推進」の「計画期間の主な取組」表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "responsible_department",
+    "statement": "第4期実施計画（政策体系別の取組・資料編）は事務事業ごとの担当部署を掲載していないため、responsible_department は null とした。令和7年度事務事業評価シートには所属名の記載があるが、第3期実施計画の政策体系に基づく資料であり、版をまたいで引き継がない。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-appendix",
+     "kawasaki-city-third-plan-evaluation-fy2025-page"
+    ],
+    "location_note": "資料編「3 事務事業一覧」全般（担当部署の記載なし）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "budget_records.initial_budget",
+    "statement": "令和8年度当初予算の事業単位の金額は未登録（amount_yen は null）。第4期実施計画は事務事業ごとの金額を掲載しない。公表済みの最新の事務事業評価シート（令和7年度）は第3期実施計画の政策体系に基づき、その予決算の掲載も令和4〜7年度分までで、令和8年度当初予算の欄はない（シートに堺市様式の「III．投入量」に相当する節もない）。令和8年度予算の「主な事業一覧」は予算説明資料の主な事業を予算書の掲載順に並べた部分的な一覧で、計画の事務事業との公式な対応表は公表されていない。なお、令和8年度一般会計予算そのものは議案第45号として2026年3月18日に原案可決され成立している。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-appendix",
+     "kawasaki-city-third-plan-evaluation-fy2025-page",
+     "kawasaki-city-evaluation-sheets-fy2025-policy1-1",
+     "kawasaki-city-budget-fy2026-main-projects",
+     "kawasaki-city-council-vote-2026-03-18"
+    ],
+    "location_note": "資料編「3 事務事業一覧」（金額の記載なし）、令和7年度事務事業評価シート「予決算」、令和8年度予算の主な事業一覧、令和8年第1回定例会議決結果",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_evaluation",
+    "statement": "公式評価は未登録（official_evaluation は null）。第4期実施計画の進行管理では、内部評価は毎年度実施し「事務事業を含めて施策単位で一体的に評価する」とされるが、第4期の事務事業は令和8年度の実施後に評価されるため、本登録時点で第4期事業の公式評価は公表されていない。公表済みの令和7年度事務事業評価シートの評定（達成度・必要性・有効性・効率性・施策への貢献度）は第3期実施計画の政策体系に基づく評価であり、政策・施策の名称と構成が異なる第4期の事業へ版をまたいで引き継がない。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-progress-management",
+     "kawasaki-city-third-plan-evaluation-fy2025-page"
+    ],
+    "location_note": "第4期実施計画「3 進行管理・評価」（内部評価は毎年度・施策単位で一体的に評価）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "kpis",
+    "statement": "事業単位のKPIは登録していない。第4期実施計画の成果指標は施策単位で設定されるもので、事業単位の公式な指標・評定は公表されていない。「計画期間の主な取組」の主なアウトプットは計画期間中の取組の成果見込みの叙述であり、実績値と市の評価を伴う指標ではないため、KPIとしては登録しない。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-policy4"
+    ],
+    "location_note": "「政策体系別の取組」施策4-1-1「イノベーション創出の推進」の成果指標（施策単位）および「計画期間の主な取組」の主なアウトプット欄",
+    "decision": "accepted",
+    "review_note": null
+   }
+  ],
+  "open_questions": [
+   "事業単位のKPIは未登録（project_kpis.json は空とし、欠損として明示）。第4期実施計画の成果指標は施策単位の設定であり、事業単位の公式な指標・評定は公表されていないため引き当てない。",
+   "令和8年度当初予算の事業単位の金額は未登録（欠損として明示）。公表資料では確認できないためであり、0では補完しない。第4期を対象とする事務事業評価シート（令和8年度評価）が公表されれば、金額の登録を検討する。",
+   "公式評価は未登録（欠損として明示）。第4期実施計画の事務事業に対する市の評価は未公表であり、令和7年度事務事業評価シートは第3期実施計画の政策体系に基づくため、版をまたいで引き継がない。令和8年度評価の公表後に登録を検討する。",
+   "担当部署は未登録（欠損として明示）。第4期実施計画は事務事業ごとの担当部署を掲載していない。",
+   "首長公約との接続は行っていない。段階3（公約）の登録後に接続を検討する。"
+  ],
+  "review_status": "reviewed"
+ },
+ {
+  "id": "evidence-jp-local-141305-project-2026-shin-kawasaki-sozo-no-mori",
+  "subject_type": "project",
+  "subject_id": "jp-local-141305-project-2026-shin-kawasaki-sozo-no-mori",
+  "claims": [
+   {
+    "field": "official_title",
+    "statement": "事業名は「新川崎・創造のもり推進事業」。基本政策4 活力と魅力あふれる力強い都市づくりの政策4-1 地域経済を活性化するのもと、施策4-1-1「イノベーション創出の推進」に位置付けられる事務事業であり、資料編「事務事業一覧（1）」で当該施策の掲載順2番目に掲載される（○＝「政策体系別の取組」の「主な取組」掲載事業）。事業名と掲載順は資料編の描画画像で目視確認した。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-appendix",
+     "kawasaki-city-fourth-plan-policy4"
+    ],
+    "location_note": "資料編「3 事務事業一覧（1）」（pp.162-165）および「政策体系別の取組」当該施策ページ",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "parent_policy",
+    "statement": "本登録の parent_policy には、事業を直接束ねる計画単位として施策4-1-1「イノベーション創出の推進」を用いた。「政策体系別の取組」の同施策「計画期間の主な取組」（p.95）に記載された本事業の取組内容は「立地誘導・投資促進制度の活用等を通じ、イノベーション拠点の整備や企業等の立地に向けた取組を推進します。KBICにおけるスタートアップ支援や、新川崎・創造のもりを拠点としたオープンイノベーションを推進します。」であり、purpose はこの公式記載に基づく。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-policy4"
+    ],
+    "location_note": "「政策体系別の取組」施策4-1-1「イノベーション創出の推進」の「計画期間の主な取組」表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "responsible_department",
+    "statement": "第4期実施計画（政策体系別の取組・資料編）は事務事業ごとの担当部署を掲載していないため、responsible_department は null とした。令和7年度事務事業評価シートには所属名の記載があるが、第3期実施計画の政策体系に基づく資料であり、版をまたいで引き継がない。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-appendix",
+     "kawasaki-city-third-plan-evaluation-fy2025-page"
+    ],
+    "location_note": "資料編「3 事務事業一覧」全般（担当部署の記載なし）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "budget_records.initial_budget",
+    "statement": "令和8年度当初予算の事業単位の金額は未登録（amount_yen は null）。第4期実施計画は事務事業ごとの金額を掲載しない。公表済みの最新の事務事業評価シート（令和7年度）は第3期実施計画の政策体系に基づき、その予決算の掲載も令和4〜7年度分までで、令和8年度当初予算の欄はない（シートに堺市様式の「III．投入量」に相当する節もない）。令和8年度予算の「主な事業一覧」は予算説明資料の主な事業を予算書の掲載順に並べた部分的な一覧で、計画の事務事業との公式な対応表は公表されていない。なお、令和8年度一般会計予算そのものは議案第45号として2026年3月18日に原案可決され成立している。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-appendix",
+     "kawasaki-city-third-plan-evaluation-fy2025-page",
+     "kawasaki-city-evaluation-sheets-fy2025-policy1-1",
+     "kawasaki-city-budget-fy2026-main-projects",
+     "kawasaki-city-council-vote-2026-03-18"
+    ],
+    "location_note": "資料編「3 事務事業一覧」（金額の記載なし）、令和7年度事務事業評価シート「予決算」、令和8年度予算の主な事業一覧、令和8年第1回定例会議決結果",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_evaluation",
+    "statement": "公式評価は未登録（official_evaluation は null）。第4期実施計画の進行管理では、内部評価は毎年度実施し「事務事業を含めて施策単位で一体的に評価する」とされるが、第4期の事務事業は令和8年度の実施後に評価されるため、本登録時点で第4期事業の公式評価は公表されていない。公表済みの令和7年度事務事業評価シートの評定（達成度・必要性・有効性・効率性・施策への貢献度）は第3期実施計画の政策体系に基づく評価であり、政策・施策の名称と構成が異なる第4期の事業へ版をまたいで引き継がない。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-progress-management",
+     "kawasaki-city-third-plan-evaluation-fy2025-page"
+    ],
+    "location_note": "第4期実施計画「3 進行管理・評価」（内部評価は毎年度・施策単位で一体的に評価）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "kpis",
+    "statement": "事業単位のKPIは登録していない。第4期実施計画の成果指標は施策単位で設定されるもので、事業単位の公式な指標・評定は公表されていない。「計画期間の主な取組」の主なアウトプットは計画期間中の取組の成果見込みの叙述であり、実績値と市の評価を伴う指標ではないため、KPIとしては登録しない。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-policy4"
+    ],
+    "location_note": "「政策体系別の取組」施策4-1-1「イノベーション創出の推進」の成果指標（施策単位）および「計画期間の主な取組」の主なアウトプット欄",
+    "decision": "accepted",
+    "review_note": null
+   }
+  ],
+  "open_questions": [
+   "事業単位のKPIは未登録（project_kpis.json は空とし、欠損として明示）。第4期実施計画の成果指標は施策単位の設定であり、事業単位の公式な指標・評定は公表されていないため引き当てない。",
+   "令和8年度当初予算の事業単位の金額は未登録（欠損として明示）。公表資料では確認できないためであり、0では補完しない。第4期を対象とする事務事業評価シート（令和8年度評価）が公表されれば、金額の登録を検討する。",
+   "公式評価は未登録（欠損として明示）。第4期実施計画の事務事業に対する市の評価は未公表であり、令和7年度事務事業評価シートは第3期実施計画の政策体系に基づくため、版をまたいで引き継がない。令和8年度評価の公表後に登録を検討する。",
+   "担当部署は未登録（欠損として明示）。第4期実施計画は事務事業ごとの担当部署を掲載していない。",
+   "首長公約との接続は行っていない。段階3（公約）の登録後に接続を検討する。"
+  ],
+  "review_status": "reviewed"
+ },
+ {
+  "id": "evidence-jp-local-141305-project-2026-urban-community",
+  "subject_type": "project",
+  "subject_id": "jp-local-141305-project-2026-urban-community",
+  "claims": [
+   {
+    "field": "official_title",
+    "statement": "事業名は「都市型コミュニティ形成推進事業」。基本政策5 誰もが生きがいを持てる市民自治の地域づくりの政策5-1 参加と協働により市民自治を推進するのもと、施策5-1-1「協働・連携による地域づくり」に位置付けられる事務事業であり、資料編「事務事業一覧（1）」で当該施策の掲載順1番目に掲載される（○＝「政策体系別の取組」の「主な取組」掲載事業）。事業名と掲載順は資料編の描画画像で目視確認した。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-appendix",
+     "kawasaki-city-fourth-plan-policy5"
+    ],
+    "location_note": "資料編「3 事務事業一覧（1）」（pp.162-165）および「政策体系別の取組」当該施策ページ",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "parent_policy",
+    "statement": "本登録の parent_policy には、事業を直接束ねる計画単位として施策5-1-1「協働・連携による地域づくり」を用いた。「政策体系別の取組」の同施策「計画期間の主な取組」（p.125）に記載された本事業の取組内容は「市民活動団体等の多様な主体と連携した取組やまちのひろば、各区ソーシャルデザインセンター（SDC）を通じた取組、（公財）かわさき市民活動センターとの連携を推進します。また、コミュニティ施策の基本的考え方の目標年次を踏まえ、今後のあり方について検討を進めます。」であり、purpose はこの公式記載に基づく。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-policy5"
+    ],
+    "location_note": "「政策体系別の取組」施策5-1-1「協働・連携による地域づくり」の「計画期間の主な取組」表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "responsible_department",
+    "statement": "第4期実施計画（政策体系別の取組・資料編）は事務事業ごとの担当部署を掲載していないため、responsible_department は null とした。令和7年度事務事業評価シートには所属名の記載があるが、第3期実施計画の政策体系に基づく資料であり、版をまたいで引き継がない。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-appendix",
+     "kawasaki-city-third-plan-evaluation-fy2025-page"
+    ],
+    "location_note": "資料編「3 事務事業一覧」全般（担当部署の記載なし）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "budget_records.initial_budget",
+    "statement": "令和8年度当初予算の事業単位の金額は未登録（amount_yen は null）。第4期実施計画は事務事業ごとの金額を掲載しない。公表済みの最新の事務事業評価シート（令和7年度）は第3期実施計画の政策体系に基づき、その予決算の掲載も令和4〜7年度分までで、令和8年度当初予算の欄はない（シートに堺市様式の「III．投入量」に相当する節もない）。令和8年度予算の「主な事業一覧」は予算説明資料の主な事業を予算書の掲載順に並べた部分的な一覧で、計画の事務事業との公式な対応表は公表されていない。なお、令和8年度一般会計予算そのものは議案第45号として2026年3月18日に原案可決され成立している。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-appendix",
+     "kawasaki-city-third-plan-evaluation-fy2025-page",
+     "kawasaki-city-evaluation-sheets-fy2025-policy1-1",
+     "kawasaki-city-budget-fy2026-main-projects",
+     "kawasaki-city-council-vote-2026-03-18"
+    ],
+    "location_note": "資料編「3 事務事業一覧」（金額の記載なし）、令和7年度事務事業評価シート「予決算」、令和8年度予算の主な事業一覧、令和8年第1回定例会議決結果",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_evaluation",
+    "statement": "公式評価は未登録（official_evaluation は null）。第4期実施計画の進行管理では、内部評価は毎年度実施し「事務事業を含めて施策単位で一体的に評価する」とされるが、第4期の事務事業は令和8年度の実施後に評価されるため、本登録時点で第4期事業の公式評価は公表されていない。公表済みの令和7年度事務事業評価シートの評定（達成度・必要性・有効性・効率性・施策への貢献度）は第3期実施計画の政策体系に基づく評価であり、政策・施策の名称と構成が異なる第4期の事業へ版をまたいで引き継がない。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-progress-management",
+     "kawasaki-city-third-plan-evaluation-fy2025-page"
+    ],
+    "location_note": "第4期実施計画「3 進行管理・評価」（内部評価は毎年度・施策単位で一体的に評価）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "kpis",
+    "statement": "事業単位のKPIは登録していない。第4期実施計画の成果指標は施策単位で設定されるもので、事業単位の公式な指標・評定は公表されていない。「計画期間の主な取組」の主なアウトプットは計画期間中の取組の成果見込みの叙述であり、実績値と市の評価を伴う指標ではないため、KPIとしては登録しない。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-policy5"
+    ],
+    "location_note": "「政策体系別の取組」施策5-1-1「協働・連携による地域づくり」の成果指標（施策単位）および「計画期間の主な取組」の主なアウトプット欄",
+    "decision": "accepted",
+    "review_note": null
+   }
+  ],
+  "open_questions": [
+   "事業単位のKPIは未登録（project_kpis.json は空とし、欠損として明示）。第4期実施計画の成果指標は施策単位の設定であり、事業単位の公式な指標・評定は公表されていないため引き当てない。",
+   "令和8年度当初予算の事業単位の金額は未登録（欠損として明示）。公表資料では確認できないためであり、0では補完しない。第4期を対象とする事務事業評価シート（令和8年度評価）が公表されれば、金額の登録を検討する。",
+   "公式評価は未登録（欠損として明示）。第4期実施計画の事務事業に対する市の評価は未公表であり、令和7年度事務事業評価シートは第3期実施計画の政策体系に基づくため、版をまたいで引き継がない。令和8年度評価の公表後に登録を検討する。",
+   "担当部署は未登録（欠損として明示）。第4期実施計画は事務事業ごとの担当部署を掲載していない。",
+   "首長公約との接続は行っていない。段階3（公約）の登録後に接続を検討する。"
+  ],
+  "review_status": "reviewed"
+ },
+ {
+  "id": "evidence-jp-local-141305-project-2026-neighborhood-association-support",
+  "subject_type": "project",
+  "subject_id": "jp-local-141305-project-2026-neighborhood-association-support",
+  "claims": [
+   {
+    "field": "official_title",
+    "statement": "事業名は「町内会・自治会活動支援事業」。基本政策5 誰もが生きがいを持てる市民自治の地域づくりの政策5-1 参加と協働により市民自治を推進するのもと、施策5-1-1「協働・連携による地域づくり」に位置付けられる事務事業であり、資料編「事務事業一覧（1）」で当該施策の掲載順2番目に掲載される（○＝「政策体系別の取組」の「主な取組」掲載事業）。事業名と掲載順は資料編の描画画像で目視確認した。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-appendix",
+     "kawasaki-city-fourth-plan-policy5"
+    ],
+    "location_note": "資料編「3 事務事業一覧（1）」（pp.162-165）および「政策体系別の取組」当該施策ページ",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "parent_policy",
+    "statement": "本登録の parent_policy には、事業を直接束ねる計画単位として施策5-1-1「協働・連携による地域づくり」を用いた。「政策体系別の取組」の同施策「計画期間の主な取組」（p.125）に記載された本事業の取組内容は「町内会・自治会活動応援補助金等の交付や表彰により町内会・自治会への自発的な加入や活動への参加促進を進めます。また、（公財）川崎市市民自治財団と連携した個別支援により、町内会・自治会活動の活性化を推進します。」であり、purpose はこの公式記載に基づく。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-policy5"
+    ],
+    "location_note": "「政策体系別の取組」施策5-1-1「協働・連携による地域づくり」の「計画期間の主な取組」表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "responsible_department",
+    "statement": "第4期実施計画（政策体系別の取組・資料編）は事務事業ごとの担当部署を掲載していないため、responsible_department は null とした。令和7年度事務事業評価シートには所属名の記載があるが、第3期実施計画の政策体系に基づく資料であり、版をまたいで引き継がない。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-appendix",
+     "kawasaki-city-third-plan-evaluation-fy2025-page"
+    ],
+    "location_note": "資料編「3 事務事業一覧」全般（担当部署の記載なし）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "budget_records.initial_budget",
+    "statement": "令和8年度当初予算の事業単位の金額は未登録（amount_yen は null）。第4期実施計画は事務事業ごとの金額を掲載しない。公表済みの最新の事務事業評価シート（令和7年度）は第3期実施計画の政策体系に基づき、その予決算の掲載も令和4〜7年度分までで、令和8年度当初予算の欄はない（シートに堺市様式の「III．投入量」に相当する節もない）。令和8年度予算の「主な事業一覧」は予算説明資料の主な事業を予算書の掲載順に並べた部分的な一覧で、計画の事務事業との公式な対応表は公表されていない。なお、令和8年度一般会計予算そのものは議案第45号として2026年3月18日に原案可決され成立している。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-appendix",
+     "kawasaki-city-third-plan-evaluation-fy2025-page",
+     "kawasaki-city-evaluation-sheets-fy2025-policy1-1",
+     "kawasaki-city-budget-fy2026-main-projects",
+     "kawasaki-city-council-vote-2026-03-18"
+    ],
+    "location_note": "資料編「3 事務事業一覧」（金額の記載なし）、令和7年度事務事業評価シート「予決算」、令和8年度予算の主な事業一覧、令和8年第1回定例会議決結果",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_evaluation",
+    "statement": "公式評価は未登録（official_evaluation は null）。第4期実施計画の進行管理では、内部評価は毎年度実施し「事務事業を含めて施策単位で一体的に評価する」とされるが、第4期の事務事業は令和8年度の実施後に評価されるため、本登録時点で第4期事業の公式評価は公表されていない。公表済みの令和7年度事務事業評価シートの評定（達成度・必要性・有効性・効率性・施策への貢献度）は第3期実施計画の政策体系に基づく評価であり、政策・施策の名称と構成が異なる第4期の事業へ版をまたいで引き継がない。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-progress-management",
+     "kawasaki-city-third-plan-evaluation-fy2025-page"
+    ],
+    "location_note": "第4期実施計画「3 進行管理・評価」（内部評価は毎年度・施策単位で一体的に評価）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "kpis",
+    "statement": "事業単位のKPIは登録していない。第4期実施計画の成果指標は施策単位で設定されるもので、事業単位の公式な指標・評定は公表されていない。「計画期間の主な取組」の主なアウトプットは計画期間中の取組の成果見込みの叙述であり、実績値と市の評価を伴う指標ではないため、KPIとしては登録しない。",
+    "source_ids": [
+     "kawasaki-city-fourth-plan-policy5"
+    ],
+    "location_note": "「政策体系別の取組」施策5-1-1「協働・連携による地域づくり」の成果指標（施策単位）および「計画期間の主な取組」の主なアウトプット欄",
+    "decision": "accepted",
+    "review_note": null
+   }
+  ],
+  "open_questions": [
+   "事業単位のKPIは未登録（project_kpis.json は空とし、欠損として明示）。第4期実施計画の成果指標は施策単位の設定であり、事業単位の公式な指標・評定は公表されていないため引き当てない。",
+   "令和8年度当初予算の事業単位の金額は未登録（欠損として明示）。公表資料では確認できないためであり、0では補完しない。第4期を対象とする事務事業評価シート（令和8年度評価）が公表されれば、金額の登録を検討する。",
+   "公式評価は未登録（欠損として明示）。第4期実施計画の事務事業に対する市の評価は未公表であり、令和7年度事務事業評価シートは第3期実施計画の政策体系に基づくため、版をまたいで引き継がない。令和8年度評価の公表後に登録を検討する。",
+   "担当部署は未登録（欠損として明示）。第4期実施計画は事務事業ごとの担当部署を掲載していない。",
+   "首長公約との接続は行っていない。段階3（公約）の登録後に接続を検討する。"
+  ],
+  "review_status": "reviewed"
+ }
+]

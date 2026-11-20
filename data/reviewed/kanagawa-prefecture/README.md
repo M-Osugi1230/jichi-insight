@@ -3,7 +3,9 @@
 Scope: Kanagawa cluster stage 1 (Issue #790) — entity identity, the
 current comprehensive plan review, the FY2026 general-account initial
 budget, the FY2022-FY2024 ordinary-account settlements and the governor's
-current term.
+current term — and stage 2 (Issue #793): ten of the thirteen
+implementation-plan projects with their official evaluations, KPIs and
+project costs.
 
 - Municipality: 神奈川県 (`jp-local-140007`, official code 140007). The
   code is confirmed by the corporate number 1000020140007 printed on the
@@ -37,11 +39,38 @@ current term.
   Public Offices Election Act (term-expiry election held before the
   previous term expired) and agrees with the stated end.
 
+- Projects (stage 2, Issue #793): the population is the 13 projects of
+  the implementation plan (five themes, FY2024-FY2027). Ten series were
+  selected by round-robin over the five themes in official listing
+  order (round 1: projects 1, 6, 9, 11, 13; round 2: 2, 7, 10, 12;
+  round 3: 3), never by amount; projects 4 (culture/sports), 5
+  (tourism/regional revitalization) and 8 (decarbonization/environment)
+  are not registered. Each series has an FY2024 and an FY2025 record.
+- Official evaluations: the final (secondary) evaluation by the
+  Comprehensive Plan Council is registered as the official evaluation,
+  with the prefecture's primary evaluation and the KPI average
+  achievement rate in the note. FY2024 averages were updated in the
+  FY2025 report's table after additional actuals were collected; both
+  printed figures are recorded where they differ. Project 2's chapter
+  of the FY2024 report is image-only in the PDF, so its ratings were
+  verified against the rendered pages.
+- Amounts: only the project costs of section 4 of the evaluation
+  reports (initial-budget basis, published in 100-million-yen units
+  with project figures rounded down below that unit) are registered;
+  no project-level settlement or execution figure is published.
+- KPIs: all 85 component-measure KPIs of the selected projects per
+  year, from the reports' KPI lists (FY2024 values from the official
+  updated list as of 2026-09-30), plus the 31 project indicators of the
+  FY2025 records from the FY2025 report. The prefecture publishes no
+  per-KPI grade, so the registered assessment is a mechanical mapping
+  of the published achievement-rate bins. The FY2024 report's errata
+  for project 7's food-satisfaction indicator are applied.
+
 Not yet published for Kanagawa Prefecture:
 
 - Governor's promises (the 2023 election bulletin is officially
   published but its candidate pages are image-only; the promise
   registration decision belongs to the cluster's promise stage)
-- The 13 implementation-plan projects and their evaluations
+- The 3 implementation-plan projects not selected in stage 2 (projects 4, 5 and 8) and the FY2026 project evaluations
 - Assembly records
 - FY2026 execution and settlement figures
