@@ -169,7 +169,7 @@ export default async function AssemblyDetailPage({params}:PageProps){
 
     <section id="votes" className={styles.section}>
       <h2>表決の公開範囲</h2>
-      <p className={styles.attention}>{slug==="osaka-prefecture" ? "大阪府議会は会派別の賛否のみ公表。請願第36号は第1〜4項と第5項を分けた項目別採決です。" : slug==="sakai-city" ? "堺市議会は「主な議案」10件のみ会派別賛否を公表し、その他の議案は未公表です。陳情19件は別系統の陳情回答綴で扱います。" : slug==="osaka-city" ? "大阪市会は会派別賛否のみ公表し、議員個人別の賛否は公表されていません。" : slug==="asahikawa-city" ? "議員ごとの賛否は賛否が分かれた8件のみ公表されています。全会一致の案件には個別内訳がなく、陳情の表決は採択への賛否です。" : slug==="nagoya-city"
+      <p className={styles.attention}>{slug==="osaka-prefecture" ? "大阪府議会は会派別の賛否のみ公表し、議員個人別の賛否は公表されていません。請願第36号は第1〜4項と第5項を分けた項目別採決です。" : slug==="sakai-city" ? "堺市議会は「主な議案」10件のみ会派別賛否を公表し、その他の議案は未公表です。陳情19件は別系統の陳情回答綴で扱います。" : slug==="osaka-city" ? "大阪市会は会派別賛否のみ公表し、議員個人別の賛否は公表されていません。" : slug==="asahikawa-city" ? "議員ごとの賛否は賛否が分かれた8件のみ公表されています。全会一致の案件には個別内訳がなく、陳情の表決は採択への賛否です。" : slug==="nagoya-city"
         ? "議員ごとの賛否は第134号のみ68人分が公式公表されています。残る議案は全会一致です。議長の「議決に参加できない」は欠席ではありません。"
         : "議員ごとの賛否は公表されていません。議員名簿や会派の表決から、個人の賛否を推測・復元することはしません。"}</p>
       {slug==="sapporo-city" ? <p className={styles.attention}>札幌市議会は会派別の賛否のみ公表し、議員個人別の賛否は公表されていません。</p> : null}
@@ -191,7 +191,7 @@ export default async function AssemblyDetailPage({params}:PageProps){
           : slug==="toyota-city"
             ? "政務活動費は会派別集計のみが Web 公表され、詳細の収支報告書・領収書等は Web 公表されていません（市政情報コーナーで閲覧）。"
             : "領収書は窓口でのみ閲覧可能です。"}支出額の順位付けはしません。</p>
-      <p className={styles.note}>掲載順は Reviewed 原資料の登録順です。交付額・支出額・残額は年度と公開単位を保ち、会派と議員の額を合算して個人の支出に帰属させません。</p>\n      {slug==="osaka-prefecture" ? <p className={styles.attention}>令和7年度分は会派9単位・議員80単位の計89単位をWeb公開。収支報告書と領収書の公開範囲を確認できます。</p> : null}
+      <p className={styles.note}>掲載順は Reviewed 原資料の登録順です。交付額・支出額・残額は年度と公開単位を保ち、会派と議員の額を合算して個人の支出に帰属させません。</p>\n      {slug==="osaka-prefecture" ? <p className={styles.attention}>令和7年度分は会派9・議員80の計89単位をWeb公開。収支報告書と領収書の公開範囲を確認できます。</p> : null}
       <div className={styles.recordList}>
       {data.expenses.map(exp=><article className={styles.record} key={exp.id}>
         <h3>{exp.recipient_name}</h3>
