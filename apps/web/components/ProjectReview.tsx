@@ -28,13 +28,14 @@ export function ProjectReview({area, record, kpis}:{area:string;record:ProjectRe
   const budgets = [...record.budget_records].sort((a,b) => a.fiscal_year - b.fiscal_year);
   const hasSettlement = budgets.some(b => b.kind === "settlement" && b.amount_yen !== null);
   const end = record.official_evaluation?.direction;
-  const hasNoPublishedProjectAssessment = area === "osaka-prefecture" || area === "toyota-city" || area === "sapporo-city" || area === "asahikawa-city" || area === "yokohama-city" || area === "kawasaki-city";
+  const hasNoPublishedProjectAssessment = area === "osaka-prefecture" || area === "toyota-city" || area === "sapporo-city" || area === "asahikawa-city" || area === "kawasaki-city";
   return <section className={styles.section}>
     <p className={styles.meta}>Reviewed / {record.fiscal_year}年度 / 対象：{show(record.target_population)} / 担当：{show(record.responsible_department)} / 上位施策：{show(record.parent_policy)}</p>
     <div className={styles.detail}><h2>目的と対象</h2><p>{record.purpose}</p><p className={styles.meta}>首長公約との接続：{record.related_promise_ids.length ? "関連候補（自動推定を含む・要確認）。確信度：低（inferred）／証拠パケット：needs_review。確定的な因果接続や達成判定ではありません。" : "接続公約なし（未着手・未達を意味しません）"}</p>
       {record.related_promise_ids.length ? <ul>{record.related_promise_ids.map(id=><li key={id}><Link className={styles.link} href={`/promises#${id}`}>公約原文を見る</Link> <span className={styles.meta}>（公約ID: {id}、自動推定を含む・確信度低・要レビュー）</span></li>)}</ul> : null}</div>
     <div className={styles.detail}><h2>予算から成果までの記録</h2>
       {area === "hokkaido-prefecture" ? <p className={styles.warning}>北海道の金額は基本評価調書の「予算額」に基づく施策単位の当初予算ベースです。決算額・執行額・個別事務事業の金額ではありません。公式評価（総合判定）は北海道による一次政策評価の判定であり、Jichi Insight 独自の評価ではありません。</p> : null}
+      {area === "yokohama-city" ? <p className={styles.warning}>施策群単位の公式評価は公表されていません。個別事業の評価に読み替えず、独自の評価・順位付けをしません。</p> : null}
       {hasNoPublishedProjectAssessment ? <p className={styles.warning}>事業単位の公式評価は公表されていません。目標・施策・計画単位の叙述をこの事業の公式評価に読み替えず、独自の評価・順位付けをしません。</p> : null}
       {area === "kanagawa-prefecture" ? <p className={styles.warning}>金額は評価報告書の「プロジェクト事業費」に億円単位（1億円未満切捨て）で掲載された当初予算ベースの公表値です。千円単位の内訳、プロジェクト単位の決算額・執行額は公表されていません。公式評価は神奈川県の評価報告書に記載された県の公式評価であり、Jichi Insight独自の評価ではありません。</p> : null}
       {area === "yokohama-city" ? <p className={styles.warning}>横浜市の登録単位は施策群です。施策群単位の金額は公表されておらず、公式評価も現時点で公表されていません。個別事業の金額・評価に読み替えません。</p> : null}
@@ -51,7 +52,7 @@ export function ProjectReview({area, record, kpis}:{area:string;record:ProjectRe
         <li><strong>自治体の公式評価・次年度方向性</strong>
           {record.official_evaluation
             ? `${area === "hokkaido-prefecture" ? "北海道の一次政策評価・総合判定：" : ""}${show(record.official_evaluation.rating)}／${show(end)}`
-            : hasNoPublishedProjectAssessment ? "事業単位の公式評価は公表されていません" : "未収録"}
+            : area === "yokohama-city" ? "施策群単位の公式評価は公表されていません" : hasNoPublishedProjectAssessment ? "事業単位の公式評価は公表されていません" : "未収録"}
           <p className={styles.meta}>{record.official_evaluation?.note ??
             (hasNoPublishedProjectAssessment
               ? area === "toyota-city"
