@@ -22,6 +22,9 @@
 - `osaka/stage4-osaka-pref-assembly-inventory-2026-11-20.md` — 大阪府議会の段階4棚卸し（令和8年9月定例会。会派別態度の座標抽出、請願第36号の項目別採決、政活費ポータルの登録設計）
 - `osaka/stage4-osaka-city-assembly-inventory-2026-11-20.md` — 大阪市会の段階4棚卸し（令和8年5・6月市会。全案件×全10会派の賛否公表、個人分の政活費報告書は Web 公表なし）
 - `osaka/stage4-sakai-assembly-inventory-2026-11-20.md` — 堺市議会の段階4棚卸し（令和8年第4回定例会。賛否は「主な議案」10件のみ、決算9件のセル結合ブロック表示、陳情19件は別系統）
+- `kanagawa/inventory-prefecture-2026-11-21.md` — 神奈川クラスター段階0の棚卸し（神奈川県。黒岩知事の任期、公報は画像のみ、新かながわグランドデザインの13プロジェクト、県議会は会派別のみ）
+- `kanagawa/inventory-yokohama-2026-11-21.md` — 神奈川クラスター段階0の棚卸し（横浜市。市長交代＝山中前市長が2026-09-07辞職、原澤市長が欠員選挙で当選。議員個人別の賛否を公式公表）
+- `kanagawa/inventory-kawasaki-2026-11-21.md` — 神奈川クラスター段階0の棚卸し（川崎市。福田市長の任期は公式明記、公報は「選挙の記録」の再録画像で到達可、政活費は Web 公開なし）
 - `hokkaido/stage4-hokkaido-assembly-inventory-2026-11-20.md` — 北海道議会の段階4棚卸し（賛否の公表なし、政活費は集計のみ、対象会期は令和8年第3回定例会）
 - `hokkaido/stage4-sapporo-assembly-inventory-2026-11-20.md` — 札幌市議会の段階4棚卸し（会派別賛否のみ、政活費の公開期間5年、対象会期は令和8年第2回定例会）
 - `hokkaido/stage4-asahikawa-assembly-inventory-2026-11-20.md` — 旭川市議会の段階4棚卸し（賛否が分かれた議案のみ議員個人別、対象会期は令和8年第3回定例会）
