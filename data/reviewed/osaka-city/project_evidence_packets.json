@@ -1,0 +1,732 @@
+[
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "project_unit",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf",
+          "osaka-city-future-city-strategy-actionplan-r89-pdf"
+        ],
+        "statement": "本レコードは、大阪市未来都市創生総合戦略（令和6年3月策定、令和8年9月改訂が現行）の「具体的な施策」である「妊娠前からの切れ目ない支援の充実と幼児教育・保育の質の向上」を単位として登録した。大阪市は事業単位のKPIを公表しておらず、公式評価は施策単位で存在するため、施策を登録単位とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf",
+          "osaka-city-future-city-strategy-actionplan-r89-pdf"
+        ],
+        "statement": "登録単位は戦略の「具体的な施策」とし、4基本目標を巡回して掲載順に10施策を選定した（選定規則は選定カタログに記録）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-actionplan-r89-pdf",
+          "osaka-city-future-city-strategy-verification-fy2025-pdf",
+          "osaka-city-future-city-strategy-verification-fy2025-appendix-pdf"
+        ],
+        "statement": "本施策のKPIは5件で、戦略アクションプラン編（令和8年9月改訂）の工程表に掲載された指標と、令和7年度効果検証（令和8年9月公表）本体の施策別集計及び参考資料のKPI別達成状況を照合して登録した。基準値・目標値・実績値・市の評価記号は一次資料のとおりであり、再計算や置き換えはしていない。基準値は令和5年度実績、実績値は令和7年度（健康寿命・防災骨格形成率など指標により確定時点が異なるものは資料のとおりの時点を記録）の値である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-verification-fy2025-pdf"
+        ],
+        "statement": "大阪市は令和7年度効果検証で本施策の進捗状況を「D」と評価している。これは市の公式評価であり、Jichi Insight独自の評価ではない。評価の内訳と達成率はプロジェクトのofficial_evaluationに記録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_amount",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-budget-fy2026-page"
+        ],
+        "statement": "令和8年度当初予算の金額は、戦略の施策単位では公表されていない。大阪市は当初予算を事業単位（当初予算事業一覧・各局別）で公表しており、予算事業と戦略施策の公式な対応表はないため、金額はnullとし、理由をbudget_recordsのnoteに明記した。0では補完していない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ],
+        "statement": "本施策は複数の局・区にまたがる取組であり、戦略自体は大阪市未来都市創生会議で進捗管理され、文書は政策企画室が発行している。単一の担当局は戦略に明示されていないため、responsible_departmentはnullとした。"
+      }
+    ],
+    "id": "evidence-jp-local-271004-project-2026-seamless-pregnancy-childcare-support",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-271004-project-2026-seamless-pregnancy-childcare-support",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "project_unit",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf",
+          "osaka-city-future-city-strategy-actionplan-r89-pdf"
+        ],
+        "statement": "本レコードは、大阪市未来都市創生総合戦略（令和6年3月策定、令和8年9月改訂が現行）の「具体的な施策」である「こども・青少年の生きる力の育成」を単位として登録した。大阪市は事業単位のKPIを公表しておらず、公式評価は施策単位で存在するため、施策を登録単位とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf",
+          "osaka-city-future-city-strategy-actionplan-r89-pdf"
+        ],
+        "statement": "登録単位は戦略の「具体的な施策」とし、4基本目標を巡回して掲載順に10施策を選定した（選定規則は選定カタログに記録）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-actionplan-r89-pdf",
+          "osaka-city-future-city-strategy-verification-fy2025-pdf",
+          "osaka-city-future-city-strategy-verification-fy2025-appendix-pdf"
+        ],
+        "statement": "本施策のKPIは5件で、戦略アクションプラン編（令和8年9月改訂）の工程表に掲載された指標と、令和7年度効果検証（令和8年9月公表）本体の施策別集計及び参考資料のKPI別達成状況を照合して登録した。基準値・目標値・実績値・市の評価記号は一次資料のとおりであり、再計算や置き換えはしていない。基準値は令和5年度実績、実績値は令和7年度（健康寿命・防災骨格形成率など指標により確定時点が異なるものは資料のとおりの時点を記録）の値である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-verification-fy2025-pdf"
+        ],
+        "statement": "大阪市は令和7年度効果検証で本施策の進捗状況を「A」と評価している。これは市の公式評価であり、Jichi Insight独自の評価ではない。評価の内訳と達成率はプロジェクトのofficial_evaluationに記録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_amount",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-budget-fy2026-page"
+        ],
+        "statement": "令和8年度当初予算の金額は、戦略の施策単位では公表されていない。大阪市は当初予算を事業単位（当初予算事業一覧・各局別）で公表しており、予算事業と戦略施策の公式な対応表はないため、金額はnullとし、理由をbudget_recordsのnoteに明記した。0では補完していない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ],
+        "statement": "本施策は複数の局・区にまたがる取組であり、戦略自体は大阪市未来都市創生会議で進捗管理され、文書は政策企画室が発行している。単一の担当局は戦略に明示されていないため、responsible_departmentはnullとした。"
+      }
+    ],
+    "id": "evidence-jp-local-271004-project-2026-children-youth-development",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-271004-project-2026-children-youth-development",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "project_unit",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf",
+          "osaka-city-future-city-strategy-actionplan-r89-pdf"
+        ],
+        "statement": "本レコードは、大阪市未来都市創生総合戦略（令和6年3月策定、令和8年9月改訂が現行）の「具体的な施策」である「児童虐待防止体制の強化」を単位として登録した。大阪市は事業単位のKPIを公表しておらず、公式評価は施策単位で存在するため、施策を登録単位とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf",
+          "osaka-city-future-city-strategy-actionplan-r89-pdf"
+        ],
+        "statement": "登録単位は戦略の「具体的な施策」とし、4基本目標を巡回して掲載順に10施策を選定した（選定規則は選定カタログに記録）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-actionplan-r89-pdf",
+          "osaka-city-future-city-strategy-verification-fy2025-pdf",
+          "osaka-city-future-city-strategy-verification-fy2025-appendix-pdf"
+        ],
+        "statement": "本施策のKPIは2件で、戦略アクションプラン編（令和8年9月改訂）の工程表に掲載された指標と、令和7年度効果検証（令和8年9月公表）本体の施策別集計及び参考資料のKPI別達成状況を照合して登録した。基準値・目標値・実績値・市の評価記号は一次資料のとおりであり、再計算や置き換えはしていない。基準値は令和5年度実績、実績値は令和7年度（健康寿命・防災骨格形成率など指標により確定時点が異なるものは資料のとおりの時点を記録）の値である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-verification-fy2025-pdf"
+        ],
+        "statement": "大阪市は令和7年度効果検証で本施策の進捗状況を「C」と評価している。これは市の公式評価であり、Jichi Insight独自の評価ではない。評価の内訳と達成率はプロジェクトのofficial_evaluationに記録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_amount",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-budget-fy2026-page"
+        ],
+        "statement": "令和8年度当初予算の金額は、戦略の施策単位では公表されていない。大阪市は当初予算を事業単位（当初予算事業一覧・各局別）で公表しており、予算事業と戦略施策の公式な対応表はないため、金額はnullとし、理由をbudget_recordsのnoteに明記した。0では補完していない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ],
+        "statement": "本施策は複数の局・区にまたがる取組であり、戦略自体は大阪市未来都市創生会議で進捗管理され、文書は政策企画室が発行している。単一の担当局は戦略に明示されていないため、responsible_departmentはnullとした。"
+      }
+    ],
+    "id": "evidence-jp-local-271004-project-2026-child-abuse-prevention",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-271004-project-2026-child-abuse-prevention",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "project_unit",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf",
+          "osaka-city-future-city-strategy-actionplan-r89-pdf"
+        ],
+        "statement": "本レコードは、大阪市未来都市創生総合戦略（令和6年3月策定、令和8年9月改訂が現行）の「具体的な施策」である「健康都市大阪の実現」を単位として登録した。大阪市は事業単位のKPIを公表しておらず、公式評価は施策単位で存在するため、施策を登録単位とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf",
+          "osaka-city-future-city-strategy-actionplan-r89-pdf"
+        ],
+        "statement": "登録単位は戦略の「具体的な施策」とし、4基本目標を巡回して掲載順に10施策を選定した（選定規則は選定カタログに記録）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-actionplan-r89-pdf",
+          "osaka-city-future-city-strategy-verification-fy2025-pdf",
+          "osaka-city-future-city-strategy-verification-fy2025-appendix-pdf"
+        ],
+        "statement": "本施策のKPIは1件で、戦略アクションプラン編（令和8年9月改訂）の工程表に掲載された指標と、令和7年度効果検証（令和8年9月公表）本体の施策別集計及び参考資料のKPI別達成状況を照合して登録した。基準値・目標値・実績値・市の評価記号は一次資料のとおりであり、再計算や置き換えはしていない。基準値は令和5年度実績、実績値は令和7年度（健康寿命・防災骨格形成率など指標により確定時点が異なるものは資料のとおりの時点を記録）の値である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-verification-fy2025-pdf"
+        ],
+        "statement": "大阪市は令和7年度効果検証で本施策の進捗状況を「ー（未測定等）」と評価している。これは市の公式評価であり、Jichi Insight独自の評価ではない。評価の内訳と達成率はプロジェクトのofficial_evaluationに記録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_amount",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-budget-fy2026-page"
+        ],
+        "statement": "令和8年度当初予算の金額は、戦略の施策単位では公表されていない。大阪市は当初予算を事業単位（当初予算事業一覧・各局別）で公表しており、予算事業と戦略施策の公式な対応表はないため、金額はnullとし、理由をbudget_recordsのnoteに明記した。0では補完していない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ],
+        "statement": "本施策は複数の局・区にまたがる取組であり、戦略自体は大阪市未来都市創生会議で進捗管理され、文書は政策企画室が発行している。単一の担当局は戦略に明示されていないため、responsible_departmentはnullとした。"
+      }
+    ],
+    "id": "evidence-jp-local-271004-project-2026-healthy-city-osaka",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-271004-project-2026-healthy-city-osaka",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "project_unit",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf",
+          "osaka-city-future-city-strategy-actionplan-r89-pdf"
+        ],
+        "statement": "本レコードは、大阪市未来都市創生総合戦略（令和6年3月策定、令和8年9月改訂が現行）の「具体的な施策」である「高齢者等が安心して暮らせる社会の実現」を単位として登録した。大阪市は事業単位のKPIを公表しておらず、公式評価は施策単位で存在するため、施策を登録単位とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf",
+          "osaka-city-future-city-strategy-actionplan-r89-pdf"
+        ],
+        "statement": "登録単位は戦略の「具体的な施策」とし、4基本目標を巡回して掲載順に10施策を選定した（選定規則は選定カタログに記録）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-actionplan-r89-pdf",
+          "osaka-city-future-city-strategy-verification-fy2025-pdf",
+          "osaka-city-future-city-strategy-verification-fy2025-appendix-pdf"
+        ],
+        "statement": "本施策のKPIは5件で、戦略アクションプラン編（令和8年9月改訂）の工程表に掲載された指標と、令和7年度効果検証（令和8年9月公表）本体の施策別集計及び参考資料のKPI別達成状況を照合して登録した。基準値・目標値・実績値・市の評価記号は一次資料のとおりであり、再計算や置き換えはしていない。基準値は令和5年度実績、実績値は令和7年度（健康寿命・防災骨格形成率など指標により確定時点が異なるものは資料のとおりの時点を記録）の値である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-verification-fy2025-pdf"
+        ],
+        "statement": "大阪市は令和7年度効果検証で本施策の進捗状況を「A」と評価している。これは市の公式評価であり、Jichi Insight独自の評価ではない。評価の内訳と達成率はプロジェクトのofficial_evaluationに記録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_amount",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-budget-fy2026-page"
+        ],
+        "statement": "令和8年度当初予算の金額は、戦略の施策単位では公表されていない。大阪市は当初予算を事業単位（当初予算事業一覧・各局別）で公表しており、予算事業と戦略施策の公式な対応表はないため、金額はnullとし、理由をbudget_recordsのnoteに明記した。0では補完していない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ],
+        "statement": "本施策は複数の局・区にまたがる取組であり、戦略自体は大阪市未来都市創生会議で進捗管理され、文書は政策企画室が発行している。単一の担当局は戦略に明示されていないため、responsible_departmentはnullとした。"
+      }
+    ],
+    "id": "evidence-jp-local-271004-project-2026-elderly-secure-living",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-271004-project-2026-elderly-secure-living",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "project_unit",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf",
+          "osaka-city-future-city-strategy-actionplan-r89-pdf"
+        ],
+        "statement": "本レコードは、大阪市未来都市創生総合戦略（令和6年3月策定、令和8年9月改訂が現行）の「具体的な施策」である「防災・減災対策の推進」を単位として登録した。大阪市は事業単位のKPIを公表しておらず、公式評価は施策単位で存在するため、施策を登録単位とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf",
+          "osaka-city-future-city-strategy-actionplan-r89-pdf"
+        ],
+        "statement": "登録単位は戦略の「具体的な施策」とし、4基本目標を巡回して掲載順に10施策を選定した（選定規則は選定カタログに記録）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-actionplan-r89-pdf",
+          "osaka-city-future-city-strategy-verification-fy2025-pdf",
+          "osaka-city-future-city-strategy-verification-fy2025-appendix-pdf"
+        ],
+        "statement": "本施策のKPIは5件で、戦略アクションプラン編（令和8年9月改訂）の工程表に掲載された指標と、令和7年度効果検証（令和8年9月公表）本体の施策別集計及び参考資料のKPI別達成状況を照合して登録した。基準値・目標値・実績値・市の評価記号は一次資料のとおりであり、再計算や置き換えはしていない。基準値は令和5年度実績、実績値は令和7年度（健康寿命・防災骨格形成率など指標により確定時点が異なるものは資料のとおりの時点を記録）の値である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-verification-fy2025-pdf"
+        ],
+        "statement": "大阪市は令和7年度効果検証で本施策の進捗状況を「A」と評価している。これは市の公式評価であり、Jichi Insight独自の評価ではない。評価の内訳と達成率はプロジェクトのofficial_evaluationに記録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_amount",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-budget-fy2026-page"
+        ],
+        "statement": "令和8年度当初予算の金額は、戦略の施策単位では公表されていない。大阪市は当初予算を事業単位（当初予算事業一覧・各局別）で公表しており、予算事業と戦略施策の公式な対応表はないため、金額はnullとし、理由をbudget_recordsのnoteに明記した。0では補完していない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ],
+        "statement": "本施策は複数の局・区にまたがる取組であり、戦略自体は大阪市未来都市創生会議で進捗管理され、文書は政策企画室が発行している。単一の担当局は戦略に明示されていないため、responsible_departmentはnullとした。"
+      }
+    ],
+    "id": "evidence-jp-local-271004-project-2026-disaster-prevention-mitigation",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-271004-project-2026-disaster-prevention-mitigation",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "project_unit",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf",
+          "osaka-city-future-city-strategy-actionplan-r89-pdf"
+        ],
+        "statement": "本レコードは、大阪市未来都市創生総合戦略（令和6年3月策定、令和8年9月改訂が現行）の「具体的な施策」である「大阪の都市魅力の創造・発信」を単位として登録した。大阪市は事業単位のKPIを公表しておらず、公式評価は施策単位で存在するため、施策を登録単位とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf",
+          "osaka-city-future-city-strategy-actionplan-r89-pdf"
+        ],
+        "statement": "登録単位は戦略の「具体的な施策」とし、4基本目標を巡回して掲載順に10施策を選定した（選定規則は選定カタログに記録）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-actionplan-r89-pdf",
+          "osaka-city-future-city-strategy-verification-fy2025-pdf",
+          "osaka-city-future-city-strategy-verification-fy2025-appendix-pdf"
+        ],
+        "statement": "本施策のKPIは8件で、戦略アクションプラン編（令和8年9月改訂）の工程表に掲載された指標と、令和7年度効果検証（令和8年9月公表）本体の施策別集計及び参考資料のKPI別達成状況を照合して登録した。基準値・目標値・実績値・市の評価記号は一次資料のとおりであり、再計算や置き換えはしていない。基準値は令和5年度実績、実績値は令和7年度（健康寿命・防災骨格形成率など指標により確定時点が異なるものは資料のとおりの時点を記録）の値である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-verification-fy2025-pdf"
+        ],
+        "statement": "大阪市は令和7年度効果検証で本施策の進捗状況を「A」と評価している。これは市の公式評価であり、Jichi Insight独自の評価ではない。評価の内訳と達成率はプロジェクトのofficial_evaluationに記録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_amount",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-budget-fy2026-page"
+        ],
+        "statement": "令和8年度当初予算の金額は、戦略の施策単位では公表されていない。大阪市は当初予算を事業単位（当初予算事業一覧・各局別）で公表しており、予算事業と戦略施策の公式な対応表はないため、金額はnullとし、理由をbudget_recordsのnoteに明記した。0では補完していない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ],
+        "statement": "本施策は複数の局・区にまたがる取組であり、戦略自体は大阪市未来都市創生会議で進捗管理され、文書は政策企画室が発行している。単一の担当局は戦略に明示されていないため、responsible_departmentはnullとした。"
+      }
+    ],
+    "id": "evidence-jp-local-271004-project-2026-city-attraction-creation",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-271004-project-2026-city-attraction-creation",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "project_unit",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf",
+          "osaka-city-future-city-strategy-actionplan-r89-pdf"
+        ],
+        "statement": "本レコードは、大阪市未来都市創生総合戦略（令和6年3月策定、令和8年9月改訂が現行）の「具体的な施策」である「大阪の強みを活かし、イノベーションが次々と生まれる好循環づくり」を単位として登録した。大阪市は事業単位のKPIを公表しておらず、公式評価は施策単位で存在するため、施策を登録単位とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf",
+          "osaka-city-future-city-strategy-actionplan-r89-pdf"
+        ],
+        "statement": "登録単位は戦略の「具体的な施策」とし、4基本目標を巡回して掲載順に10施策を選定した（選定規則は選定カタログに記録）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-actionplan-r89-pdf",
+          "osaka-city-future-city-strategy-verification-fy2025-pdf",
+          "osaka-city-future-city-strategy-verification-fy2025-appendix-pdf"
+        ],
+        "statement": "本施策のKPIは4件で、戦略アクションプラン編（令和8年9月改訂）の工程表に掲載された指標と、令和7年度効果検証（令和8年9月公表）本体の施策別集計及び参考資料のKPI別達成状況を照合して登録した。基準値・目標値・実績値・市の評価記号は一次資料のとおりであり、再計算や置き換えはしていない。基準値は令和5年度実績、実績値は令和7年度（健康寿命・防災骨格形成率など指標により確定時点が異なるものは資料のとおりの時点を記録）の値である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-verification-fy2025-pdf"
+        ],
+        "statement": "大阪市は令和7年度効果検証で本施策の進捗状況を「A」と評価している。これは市の公式評価であり、Jichi Insight独自の評価ではない。評価の内訳と達成率はプロジェクトのofficial_evaluationに記録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_amount",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-budget-fy2026-page"
+        ],
+        "statement": "令和8年度当初予算の金額は、戦略の施策単位では公表されていない。大阪市は当初予算を事業単位（当初予算事業一覧・各局別）で公表しており、予算事業と戦略施策の公式な対応表はないため、金額はnullとし、理由をbudget_recordsのnoteに明記した。0では補完していない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ],
+        "statement": "本施策は複数の局・区にまたがる取組であり、戦略自体は大阪市未来都市創生会議で進捗管理され、文書は政策企画室が発行している。単一の担当局は戦略に明示されていないため、responsible_departmentはnullとした。"
+      }
+    ],
+    "id": "evidence-jp-local-271004-project-2026-innovation-cycle",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-271004-project-2026-innovation-cycle",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "project_unit",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf",
+          "osaka-city-future-city-strategy-actionplan-r89-pdf"
+        ],
+        "statement": "本レコードは、大阪市未来都市創生総合戦略（令和6年3月策定、令和8年9月改訂が現行）の「具体的な施策」である「中小企業振興と経済成長の担い手の育成」を単位として登録した。大阪市は事業単位のKPIを公表しておらず、公式評価は施策単位で存在するため、施策を登録単位とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf",
+          "osaka-city-future-city-strategy-actionplan-r89-pdf"
+        ],
+        "statement": "登録単位は戦略の「具体的な施策」とし、4基本目標を巡回して掲載順に10施策を選定した（選定規則は選定カタログに記録）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-actionplan-r89-pdf",
+          "osaka-city-future-city-strategy-verification-fy2025-pdf",
+          "osaka-city-future-city-strategy-verification-fy2025-appendix-pdf"
+        ],
+        "statement": "本施策のKPIは4件で、戦略アクションプラン編（令和8年9月改訂）の工程表に掲載された指標と、令和7年度効果検証（令和8年9月公表）本体の施策別集計及び参考資料のKPI別達成状況を照合して登録した。基準値・目標値・実績値・市の評価記号は一次資料のとおりであり、再計算や置き換えはしていない。基準値は令和5年度実績、実績値は令和7年度（健康寿命・防災骨格形成率など指標により確定時点が異なるものは資料のとおりの時点を記録）の値である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-verification-fy2025-pdf"
+        ],
+        "statement": "大阪市は令和7年度効果検証で本施策の進捗状況を「A」と評価している。これは市の公式評価であり、Jichi Insight独自の評価ではない。評価の内訳と達成率はプロジェクトのofficial_evaluationに記録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_amount",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-budget-fy2026-page"
+        ],
+        "statement": "令和8年度当初予算の金額は、戦略の施策単位では公表されていない。大阪市は当初予算を事業単位（当初予算事業一覧・各局別）で公表しており、予算事業と戦略施策の公式な対応表はないため、金額はnullとし、理由をbudget_recordsのnoteに明記した。0では補完していない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ],
+        "statement": "本施策は複数の局・区にまたがる取組であり、戦略自体は大阪市未来都市創生会議で進捗管理され、文書は政策企画室が発行している。単一の担当局は戦略に明示されていないため、responsible_departmentはnullとした。"
+      }
+    ],
+    "id": "evidence-jp-local-271004-project-2026-sme-promotion",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-271004-project-2026-sme-promotion",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "project_unit",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf",
+          "osaka-city-future-city-strategy-actionplan-r89-pdf"
+        ],
+        "statement": "本レコードは、大阪市未来都市創生総合戦略（令和6年3月策定、令和8年9月改訂が現行）の「具体的な施策」である「「Re-Designおおさか～大阪市DX戦略～」に基づく事業・施策の立案及び推進」を単位として登録した。大阪市は事業単位のKPIを公表しておらず、公式評価は施策単位で存在するため、施策を登録単位とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf",
+          "osaka-city-future-city-strategy-actionplan-r89-pdf"
+        ],
+        "statement": "登録単位は戦略の「具体的な施策」とし、4基本目標を巡回して掲載順に10施策を選定した（選定規則は選定カタログに記録）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-actionplan-r89-pdf",
+          "osaka-city-future-city-strategy-verification-fy2025-pdf",
+          "osaka-city-future-city-strategy-verification-fy2025-appendix-pdf"
+        ],
+        "statement": "本施策のKPIは3件で、戦略アクションプラン編（令和8年9月改訂）の工程表に掲載された指標と、令和7年度効果検証（令和8年9月公表）本体の施策別集計及び参考資料のKPI別達成状況を照合して登録した。基準値・目標値・実績値・市の評価記号は一次資料のとおりであり、再計算や置き換えはしていない。基準値は令和5年度実績、実績値は令和7年度（健康寿命・防災骨格形成率など指標により確定時点が異なるものは資料のとおりの時点を記録）の値である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-verification-fy2025-pdf"
+        ],
+        "statement": "大阪市は令和7年度効果検証で本施策の進捗状況を「A」と評価している。これは市の公式評価であり、Jichi Insight独自の評価ではない。評価の内訳と達成率はプロジェクトのofficial_evaluationに記録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_amount",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-budget-fy2026-page"
+        ],
+        "statement": "令和8年度当初予算の金額は、戦略の施策単位では公表されていない。大阪市は当初予算を事業単位（当初予算事業一覧・各局別）で公表しており、予算事業と戦略施策の公式な対応表はないため、金額はnullとし、理由をbudget_recordsのnoteに明記した。0では補完していない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "osaka-city-future-city-strategy-honpen-r89-pdf"
+        ],
+        "statement": "本施策は複数の局・区にまたがる取組であり、戦略自体は大阪市未来都市創生会議で進捗管理され、文書は政策企画室が発行している。単一の担当局は戦略に明示されていないため、responsible_departmentはnullとした。"
+      }
+    ],
+    "id": "evidence-jp-local-271004-project-2026-redesign-osaka-dx",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-271004-project-2026-redesign-osaka-dx",
+    "subject_type": "project"
+  }
+]
