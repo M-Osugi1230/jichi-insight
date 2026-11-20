@@ -1,0 +1,68 @@
+[
+  {
+    "id": "evidence-osaka-pref-2026-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-270008-fiscal-2026-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算の歳入歳出総額は3,921,606,338千円である。",
+        "source_ids": [
+          "osaka-pref-budget-2026-bill-pdf",
+          "osaka-pref-assembly-2026-budget-vote-pdf"
+        ],
+        "location_note": "令和8年度一般会計当初予算書（第1号議案）第1条および「第1表 歳入歳出予算」の歳入合計・歳出合計。議決結果は令和8年2月定例会の提出議案・議決結果PDFの第1号の行。",
+        "decision": "accepted",
+        "review_note": "第1号議案は2026年2月24日に提出され、令和8年2月定例会の最終日（2026年3月24日）に原案可決されたことを議決結果PDFで確認した（民主ネット・日本共産党が反対、他会派は賛成）。府財政課の公表値（一般会計3兆9,216億円）とも整合する。予算案段階の額ではなく成立後の額として収録する。"
+      }
+    ],
+    "open_questions": [
+      "年度終了後の執行額・決算額は未確定。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-osaka-pref-2026-local-tax",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-270008-fiscal-2026-local-tax",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算の府税収入は1,700,082,000千円である。",
+        "source_ids": [
+          "osaka-pref-budget-2026-bill-pdf",
+          "osaka-pref-assembly-2026-budget-vote-pdf"
+        ],
+        "location_note": "令和8年度一般会計当初予算書（第1号議案）「第1表 歳入歳出予算」の款「府税」の金額。府民税・事業税・地方消費税など12項の合計とも一致する。",
+        "decision": "accepted",
+        "review_note": "予算案の概要（資料1）の府税収入1兆7,001億円（当初予算ベースで2年連続の過去最高）とも整合する。成立後の額として収録する。"
+      }
+    ],
+    "open_questions": [
+      "年度終了後の執行額・決算額は未確定。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-osaka-pref-2026-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-270008-fiscal-2026-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算の歳出総額は3,921,606,338千円である。",
+        "source_ids": [
+          "osaka-pref-budget-2026-bill-pdf",
+          "osaka-pref-assembly-2026-budget-vote-pdf"
+        ],
+        "location_note": "令和8年度一般会計当初予算書（第1号議案）第1条および「第1表 歳入歳出予算」の歳出合計。",
+        "decision": "accepted",
+        "review_note": "歳入総額と同額であり、第1号議案が2026年3月24日に原案可決されたことを議決結果PDFで確認した。"
+      }
+    ],
+    "open_questions": [
+      "年度終了後の執行額・決算額は未確定。"
+    ],
+    "review_status": "reviewed"
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "id": "phase15-osaka-plan-review",
+  "name_ja": "大阪府",
+  "next_action": "Register the governor's priority projects from the annual 「府政運営の基本方針」 (governor priority projects list) in the Osaka cluster's project stage; register the governor's promises in the promise stage after locating the official 2023 election bulletin text (the 2026 re-election bulletin is image-only and needs transcription); add the assembly layer in the assembly stage; and keep supplementary budgets, execution and settlement as separate states.",
+  "official_code": "270008",
+  "quality_boundary": "This package reviews the identity of Osaka Prefecture's current top-level vision (the 副首都ビジョン, a joint Osaka Prefecture / Osaka City vision revised in March 2023, which the prefecture itself positions as the foundation of its other medium- and long-term policies), the absence of a current period-based comprehensive plan, the vision's structure (the posture it aims for, four roles, a 2030 / 2040 / 2050s timeline and numerical targets for Osaka's GDP share and resident awareness), and the implementation layer (the annual 府政運営の基本方針 and its governor priority projects list). No unified prefecture-wide policy-evaluation sheet with overall judgements was confirmed, so no evaluation layer is registered. The enacted FY2026 general-account initial budget is registered separately in fiscal_records.json at the published thousand-yen precision, and the FY2022-FY2024 ordinary-account settlements are registered separately in settlement_records.json; general-account settlement figures are not mixed into the ordinary-account series.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "ビジョンの位置付けは副首都推進本部の概要資料（体系イメージ）で、改定の経緯と現行版は改定版本編第1章「改定趣旨」で直接確認した。",
+      "evidence_role": "current_plan_identity",
+      "id": "osaka-current-plan-identity",
+      "review_note": "期間型の総合計画が現行にないことを、ビジョンの位置付けとあわせて明記する。レビュー済みレコード。",
+      "source_url": "https://www.pref.osaka.lg.jp/documents/13052/vision4_1.pdf",
+      "statement": "大阪府の現行の最上位相当の計画は、大阪府・大阪市の共同ビジョン「副首都ビジョン」である。府は、副首都ビジョンを「府市で策定している他の中長期方針の土台となるビジョン」と位置付けており、伝統的な期間型の「総合計画」の名称の計画は現行では置かれていない。副首都ビジョンは2017年に策定され、現行版は副首都推進本部による2023年3月の改定版である。",
+      "title": "副首都ビジョンの位置付けと沿革（2017年策定、2023年3月改定版が現行）",
+      "value": "副首都ビジョン（大阪府・大阪市共同、2023年3月改定版）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "めざす姿と4つの役割は改定版本編第1章「大阪がめざす副首都の姿の再定義」「副首都・大阪が果たすべき4つの役割」で、今後の取組の方向性（3つの戦略）は第3章の目次と全体イメージ図で直接確認した。",
+      "evidence_role": "policy_structure",
+      "id": "osaka-plan-policy-structure",
+      "review_note": "北海道総合計画のような「柱―施策―指標個票」の体系とは形式が異なることを明記する。レビュー済みレコード。",
+      "source_url": "https://www.pref.osaka.lg.jp/documents/13052/vision4_1.pdf",
+      "statement": "めざす姿は、平時の日本の成長と非常時の首都機能のバックアップを担う「副首都」として、『東西二極の一極、さらに複数の都市が日本の成長をけん引する新たな国の形』を先導することである。副首都・大阪が果たすべき役割は4つで、「西日本の首都（分都）」「首都機能のバックアップ（重都）」「アジアの主要都市」「民都」。改定版の第3章「今後の取組の方向性」は、「世界標準の都市機能の充実」「府市一体を核に行政体制の整備」「チャレンジを促す経済政策」の3つの戦略で構成される。",
+      "title": "めざす姿・4つの役割・3つの戦略（今後の取組の方向性）",
+      "value": "4つの役割（分都・重都・アジアの主要都市・民都）／3つの戦略"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "時間軸と数値目標は改定版本編第1章「目標と戦略・工程の再構築」「数値目標」で直接確認した。",
+      "evidence_role": "policy_structure",
+      "id": "osaka-plan-targets",
+      "review_note": "数値目標はビジョンの目標であり、実績値ではない。実績の登録は本レビューの対象外とする。レビュー済みレコード。",
+      "source_url": "https://www.pref.osaka.lg.jp/documents/13052/vision4_1.pdf",
+      "statement": "改定版は2050年代を到達点とし、2030年・2040年の工程を設定する。数値目標は大阪のGDP（府内総生産・名目）の国内シェアと副首都・大阪の府民認知度である。GDPシェアは現状約7.4％（2019年度、経済規模約41兆円）から、2030年約9％（約50兆円）、2040年約10％（約60兆円）、2050年代約12％（約80兆円）を掲げる。府民認知度は現状約55％から、2030年60％以上、2040年70％以上、2050年代80％以上を掲げる。",
+      "title": "2030年／2040年／2050年代の工程と数値目標（GDPシェア・府民認知度）",
+      "value": "GDP国内シェア 約7.4％→2030年約9％→2040年約10％→2050年代約12％／府民認知度 約55％→60％以上→70％以上→80％以上"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "実施層の定義と構成は「府政運営の基本方針2026」（令和8年2月16日）の第1部・第2部の構成と本文で直接確認した。",
+      "evidence_role": "implementation_layer",
+      "id": "osaka-plan-implementation-layer",
+      "review_note": "複数年次の独立した実施計画文書は確認できなかったため、実施層は毎年度の基本方針と知事重点事業として記録する。事業そのものの登録は段階2で行う。レビュー済みレコード。",
+      "source_url": "https://www.pref.osaka.lg.jp/documents/35767/kihonhoushin2026.pdf",
+      "statement": "副首都ビジョンに対応する複数年次の独立した実施計画文書は確認できず、実施は毎年度の「府政運営の基本方針」により行われる。基本方針は、府がめざす将来像の実現に向け、政策創造（重点的に取り組む分野）・財政運営・組織運営について翌年度に取り組むべき大きな方向性を全庁統一の視点で示すもので、第2部に「知事重点事業」が事業単位で列挙される。令和8年度版（府政運営の基本方針2026）の政策創造は、(1)万博のレガシーを活かした「副首都・大阪」の早期実現、(2)誰もが安全・安心にいきいきと暮らせる社会の実現、(3)次代を担う子どもたちが自らの可能性を追求できる社会の実現、の3つの柱で構成される。",
+      "title": "毎年度の「府政運営の基本方針」と「知事重点事業」による実施（独立した実施計画文書はなし）",
+      "value": "府政運営の基本方針（毎年度）＋知事重点事業一覧"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "全庁一律の政策評価調書の不存在は段階0棚卸しで府公式サイトの政策企画・行政評価関係ページ群とサイト内検索により確認できなかった旨を記録し、分野別の点検・評価の例（教育振興基本計画）を確認した。",
+      "evidence_role": "progress_governance",
+      "id": "osaka-plan-progress-governance",
+      "review_note": "評価制度の不存在を推測で補わず、未確認の範囲を明記する。レビュー済みレコード。",
+      "source_url": "https://www.pref.osaka.lg.jp/documents/13052/vision4_1.pdf",
+      "statement": "北海道の政策評価（基本評価調書と総合判定）のような、全施策を一律の調書様式と総合判定で公表する全庁一律の政策評価制度は、府公式サイトでは特定できなかった。分野別には点検・評価の仕組みが存在し（例：大阪府教育振興基本計画の点検・評価調書）、各部局は年度ごとの「部局運営方針」を策定・公表している。したがって本レビューでは、ビジョン単位の一律評価は登録しない。",
+      "title": "全庁一律の政策評価調書は未確認（分野別の点検・評価と部局運営方針が存在）",
+      "value": "全庁一律の政策評価は未確認／分野別の点検・評価あり"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-20"
+}

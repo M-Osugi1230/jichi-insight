@@ -1,0 +1,68 @@
+[
+  {
+    "id": "jp-local-270008-fiscal-2026-total-revenue",
+    "municipality_id": "jp-local-270008",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入歳出規模",
+    "amount_yen": 3921606338000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "令和8年度当初予算（成立後）。第1号議案は令和8年2月定例会（会期2026年2月24日〜3月24日）で2026年3月24日に原案可決され、提案額のまま成立した。補正予算とは区別して管理する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "osaka-pref-budget-2026-bill-pdf",
+      "osaka-pref-assembly-2026-budget-vote-pdf"
+    ]
+  },
+  {
+    "id": "jp-local-270008-fiscal-2026-local-tax",
+    "municipality_id": "jp-local-270008",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "local_tax",
+    "metric_label": "府税収入",
+    "amount_yen": 1700082000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "令和8年度当初予算（成立後）の府税収入。第1号議案「第1表 歳入歳出予算」の款「府税」の印字値（項の合計とも一致する）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "osaka-pref-budget-2026-bill-pdf",
+      "osaka-pref-assembly-2026-budget-vote-pdf"
+    ]
+  },
+  {
+    "id": "jp-local-270008-fiscal-2026-total-expenditure",
+    "municipality_id": "jp-local-270008",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算・歳出総額",
+    "amount_yen": 3921606338000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "令和8年度一般会計当初予算（成立後）の歳出総額。第1号議案第1条および第1表の歳出合計3,921,606,338千円による。第1号議案は令和8年2月定例会で2026年3月24日に原案可決され、提案額のまま成立した。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "osaka-pref-budget-2026-bill-pdf",
+      "osaka-pref-assembly-2026-budget-vote-pdf"
+    ]
+  }
+]

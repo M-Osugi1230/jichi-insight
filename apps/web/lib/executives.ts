@@ -104,6 +104,9 @@ export type ManifestoSourceSearchEvidencePacket = {
 };
 
 const municipalityIdToKey = {
+  "jp-local-270008": "osaka-prefecture",
+  "jp-local-271004": "osaka-city",
+  "jp-local-271403": "sakai-city",
   "jp-local-010006": "hokkaido-prefecture",
   "jp-local-011002": "sapporo-city",
   "jp-local-012041": "asahikawa-city",

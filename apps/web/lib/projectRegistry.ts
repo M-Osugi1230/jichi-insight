@@ -1,3 +1,18 @@
+import osakaProjectSources from "../../../data/catalog/osaka_project_sources.json";
+import osakaCityProjectSources from "../../../data/catalog/osaka_city_project_sources.json";
+import sakaiProjectSources from "../../../data/catalog/sakai_project_sources.json";
+import osakaSelection from "../../../data/catalog/osaka_priority_project_selection.json";
+import osakaCitySelection from "../../../data/catalog/osaka_city_priority_project_selection.json";
+import sakaiSelection from "../../../data/catalog/sakai_priority_project_selection.json";
+import osakaProjects from "../../../data/reviewed/osaka-prefecture/projects.json";
+import osakaKpis from "../../../data/reviewed/osaka-prefecture/project_kpis.json";
+import osakaEvidence from "../../../data/reviewed/osaka-prefecture/project_evidence_packets.json";
+import osakaCityProjects from "../../../data/reviewed/osaka-city/projects.json";
+import osakaCityKpis from "../../../data/reviewed/osaka-city/project_kpis.json";
+import osakaCityEvidence from "../../../data/reviewed/osaka-city/project_evidence_packets.json";
+import sakaiProjects from "../../../data/reviewed/sakai-city/projects.json";
+import sakaiKpis from "../../../data/reviewed/sakai-city/project_kpis.json";
+import sakaiEvidence from "../../../data/reviewed/sakai-city/project_evidence_packets.json";
 import hokkaidoProjectSources from "../../../data/catalog/hokkaido_project_sources.json";
 import sapporoProjectSources from "../../../data/catalog/sapporo_city_project_sources.json";
 import asahikawaProjectSources from "../../../data/catalog/asahikawa_project_sources.json";
@@ -37,10 +52,13 @@ import { fukuokaPrefectureProjectData } from "./fukuokaPrefectureProjects";
 import { kitakyushuProjectData, type ProjectRecord, type KpiRecord } from "./kitakyushuProjects";
 import type { EvidencePacket } from "./finance";
 
-export type ProjectArea = "fukuoka-prefecture" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city" | "hokkaido-prefecture" | "sapporo-city" | "asahikawa-city";
-type Selection = { updated_at?: string; population?: { description?: string }; selection_rule?: { description?: string }; };
+export type ProjectArea = "fukuoka-prefecture" | "osaka-prefecture" | "osaka-city" | "sakai-city" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city" | "hokkaido-prefecture" | "sapporo-city" | "asahikawa-city";
+type Selection = { updated_at?: string; population?: { description?: string; label?: string }; selection_rule?: { description?: string } | string; };
 type SetOfProjects = { name: string; projects: ProjectRecord[]; kpis: KpiRecord[]; evidencePackets: EvidencePacket[]; selection: Selection };
 export const projectRegistry: Record<ProjectArea, SetOfProjects> = {
+  "osaka-prefecture": { name: "大阪府", projects: osakaProjects as ProjectRecord[], kpis: osakaKpis as KpiRecord[], evidencePackets: osakaEvidence as EvidencePacket[], selection: osakaSelection },
+  "osaka-city": { name: "大阪市", projects: osakaCityProjects as ProjectRecord[], kpis: osakaCityKpis as KpiRecord[], evidencePackets: osakaCityEvidence as EvidencePacket[], selection: osakaCitySelection },
+  "sakai-city": { name: "堺市", projects: sakaiProjects as ProjectRecord[], kpis: sakaiKpis as KpiRecord[], evidencePackets: sakaiEvidence as EvidencePacket[], selection: sakaiSelection },
   "fukuoka-prefecture": { name: "福岡県", ...fukuokaPrefectureProjectData },
   "fukuoka-city": { name: "福岡市", ...fukuokaCityProjectData },
   "kitakyushu-city": { name: "北九州市", ...kitakyushuProjectData },
@@ -61,4 +79,7 @@ export const projectSourceCatalog: SourceRecord[] = [...sourceCatalog,
   ...(toyotaProjectSources.records as SourceRecord[]),
   ...(hokkaidoProjectSources.records as SourceRecord[]),
   ...(sapporoProjectSources.records as SourceRecord[]),
+  ...(osakaProjectSources.records as SourceRecord[]),
+  ...(osakaCityProjectSources.records as SourceRecord[]),
+  ...(sakaiProjectSources.records as SourceRecord[]),
   ...(asahikawaProjectSources.records as SourceRecord[])];

@@ -448,5 +448,135 @@
       "事業との接続は文言・内容に基づく推定であり、道が公約と事業の公式な対応付けを公表した場合は接続を見直す。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-osaka-pref-2026",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-osaka-pref-2026",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "大阪府選挙管理委員会の選挙トップページ「令和8年執行 衆議院議員総選挙・大阪府知事選挙」を確認した。知事選挙について選挙期日（令和8年2月8日）と告示日（令和8年1月22日）が明記され、退職の申立てに伴う選挙であることが示されている。同ページから「大阪府知事選挙 選挙公報」ページへのリンクを確認した。",
+        "source_ids": [
+          "osaka-pref-governor-election-2026-page"
+        ],
+        "location_note": "大阪府選挙管理委員会の選挙トップページ。",
+        "decision": "accepted",
+        "review_note": "選挙の実施と公報掲載への一次資料として採用。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "「大阪府知事選挙 選挙公報」ページから選挙公報PDF（全1ページの大判シート）を府公式サイト上で直接取得し、最上段の吉村洋文候補欄（冒頭文、実績ブロック、展望ブロック、大見出し、略歴）を確認した。あわせて投開票結果調で吉村洋文の当選（3,024,106票）を確認した。",
+        "source_ids": [
+          "osaka-pref-governor-election-2026-bulletin",
+          "osaka-pref-governor-election-2026-results"
+        ],
+        "location_note": "選挙公報の最上段の候補者欄。",
+        "decision": "accepted",
+        "review_note": "公報は候補者提出原稿をそのまま印刷した公式文書であり、出典優先順位の最上位として登録した。候補者欄は画像形式のため、描画画像を複数解像度で照合した。"
+      },
+      {
+        "field": "result_status",
+        "statement": "選挙公報を登録し、分割レビューを経て公約レコード7件を作成したため、result_status を source_registered とした。2023年の知事選挙公報も到達可能だが今回は登録対象外とした。政策パンフレット等の詳細資料は未特定のままである。",
+        "source_ids": [
+          "osaka-pref-governor-election-2026-bulletin"
+        ],
+        "location_note": "分割レビュー manifesto-review-jp-local-270008-2026 に基づく。",
+        "decision": "accepted",
+        "review_note": "詳細資料が存在しないとは判定しない。"
+      }
+    ],
+    "open_questions": [
+      "選挙公報より詳細な候補者資料（政策パンフレット等）の安定した所在は特定できていない。",
+      "2023年知事選挙の選挙公報は到達可能だが、公約レコードは作成していない（将来の比較用に所在を記録した）。",
+      "事業との接続は文言・内容に基づく推定であり、府が公約と事業の公式な対応付けを公表した場合は接続を見直す。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-osaka-city-2026",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-osaka-city-2026",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "2026年大阪市長選挙の公式開票結果を確認し、横山ひでゆきの当選（830,257票・最多得票）を確認した。",
+        "source_ids": [
+          "osaka-city-mayor-election-2026-results"
+        ],
+        "location_note": "大阪市選挙管理委員会の開票結果ページ（大阪市計・確定）。",
+        "decision": "accepted",
+        "review_note": "選挙結果の一次資料として採用。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "大阪市選挙管理委員会の選挙特設ページから、公式の選挙公報PDFを取得し、横山ひでゆき候補欄（1ページ目中段右）を確認した。",
+        "source_ids": [
+          "osaka-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全1ページ）の中段右の候補者欄。",
+        "decision": "accepted",
+        "review_note": "公報は候補者提出原稿をそのまま掲載した公式文書であり、出典優先順位の最上位として登録した。"
+      },
+      {
+        "field": "result_status",
+        "statement": "選挙公報を登録し、分割レビューを経て公約レコード5件を作成したため、result_status を source_registered とした。2023年選挙の公報も到達可能であることは確認しているが、原典の選択は Issue #772 の判断により2026年公報とした。公報より詳細な候補者資料は未特定のままである。",
+        "source_ids": [
+          "osaka-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "分割レビュー manifesto-review-jp-local-271004-2026 に基づく。",
+        "decision": "accepted",
+        "review_note": "詳細資料が存在しないという主張はしない。"
+      }
+    ],
+    "open_questions": [
+      "政策パンフレット等、選挙公報より詳細な候補者資料の安定した所在が特定できるか。",
+      "未接続の公約への進捗証拠の接続を拡充できるか。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-sakai-city-2023",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-sakai-city-2023",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "堺市公式サイトの2023年市長選挙結果ページと市選管「選挙の予定」で2023年市長選挙の日程・結果を確認したが、いずれにも選挙公報への導線は掲載されていない。市長プロフィールは現職と経歴のみで、公約原文は含まない。",
+        "source_ids": [
+          "sakai-city-mayor-election-2023-results",
+          "sakai-city-election-schedule",
+          "sakai-city-mayor-profile"
+        ],
+        "location_note": "市の2023年市長選挙結果ページ、選管「選挙の予定」、市長プロフィールページ（いずれも公式公表、2026-11-20に本文を直接確認）。",
+        "decision": "accepted",
+        "review_note": "公式資料側に公約原文の掲載がないことを確認。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "Wayback Machineの堺市公式サイト選挙データセクション配下の2023年の保存にも選挙公報のページ・PDFは存在しない。候補者本人の公式サイトは存在するが、その「政策」ページの選挙前日の保存は府議会議員時代（平成27年）の内容であり、2023年市長選挙の公約一次資料の現存は特定できなかった。",
+        "source_ids": [
+          "sakai-city-mayor-election-2023-results"
+        ],
+        "location_note": "Wayback CDXによる選挙データセクション配下の保存一覧、候補者公式サイトの「政策」ページの2023年6月3日保存、現行の選管ページ群・検索エンジンの確認結果に基づく。",
+        "decision": "accepted",
+        "review_note": "公報の実物は確認できていないため、原典としては採用しない。"
+      },
+      {
+        "field": "result_status",
+        "statement": "検証可能な原典を特定できなかったため、result_status を no_stable_primary_source_found とし、公約レコードは作成しない。選挙ドットコム等の民間ミラーの転載や報道の候補者アンケート回答は候補者自身の公式公表物ではないため、原典の代替として採用しない。紙の選挙公報の発行自体は市選管の会議録（様式の決定）で公式に確認できる。",
+        "source_ids": [
+          "sakai-city-mayor-election-2023-results"
+        ],
+        "location_note": "探索記録 manifesto-source-search-sakai-city-2023 の review_note に判断の詳細を記載。",
+        "decision": "accepted",
+        "review_note": "不存在の断定はしない（nonexistence_claim は false）。"
+      }
+    ],
+    "open_questions": [
+      "Wayback Machineの選管セクション全体を対象とする絞り込み照会は応答不良で完遂できていない。選挙データセクション外のURLに公報PDFの保存がある可能性は低いと判断するが、完全な不存在証明ではない。",
+      "候補者公式サイトの2023年公約ページの現存有無は未確認。紙の選挙公報の現物確認はオフライン経路が必要で、本探索の範囲外。"
+    ],
+    "review_status": "reviewed"
   }
 ]
