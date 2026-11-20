@@ -33,9 +33,9 @@ import projectStyles from "@/components/ProjectReview.module.css";
 
 export const metadata: Metadata = {
   alternates: { canonical: canonicalFor("/municipalities/osaka-prefecture") },
-  title: "大阪府｜大阪府総合計画・2026年度当初予算・普通会計決算",
+  title: "大阪府｜副首都ビジョン・2026年度当初予算・普通会計決算",
   description:
-    "大阪府総合計画、2026年度に成立した一般会計当初予算、2022〜2024年度の普通会計決算、吉村洋文知事の現任期を一次資料とともに掲載します。",
+    "大阪府・大阪市共同の副首都ビジョン（2023年3月改定版）と、毎年度の府政運営の基本方針・知事重点事業、2026年度当初予算、2022〜2024年度の普通会計決算、吉村洋文知事の公約を一次資料とともに掲載します。",
 };
 
 export default function OsakaPrefecturePage() {
@@ -75,10 +75,10 @@ export default function OsakaPrefecturePage() {
               </div>
               <h1>大阪府</h1>
               <p>
-                大阪府総合計画の計画レビュー、2026年度一般会計の
+                副首都ビジョンの計画レビューと、2026年度一般会計の
                 <strong>成立後当初予算</strong>、2022〜2024年度の
                 <strong>普通会計決算</strong>を会計区分と段階を保って掲載します。
-                道政の成果や知事の公約達成率を独自に判定しません。
+                大阪府の政策成果や知事の公約達成率を独自に判定しません。
               </p>
             </div>
             <dl className={styles.heroFacts}>
@@ -103,18 +103,18 @@ export default function OsakaPrefecturePage() {
               <h2 id="scope-title">計画・予算・決算・知事の任期を分けて確認する。</h2>
             </div>
             <div>
-              <p>確認できること：大阪府総合計画の Reviewed 計画レビュー、2026年度の成立後一般会計当初予算、2022〜2024年度の普通会計決算51件、重点事業の Reviewed 10系列と道による一次政策評価（総合判定）、吉村洋文知事の現任期と公式出典です。</p>
-              <p>確認できること：吉村洋文知事の公式選挙公報から Reviewed 公約原文15件が段階3で登録済みです。大阪府議会の議案・表決・政務活動費・情報公開状況は段階4で登録済みです。重点事業は段階2で10系列の Reviewed レコードを登録済みですが、全121施策の網羅や事業成果の独自判定ではありません。基本評価調書の「予算額」は当初予算ベースの施策単位合計額であり、決算額ではありません。未登録は実際の公表・実施の不存在を意味しません。</p>
-              <p>大阪府総合計画は政策指標108件（重複を含め113件）が公表されていますが、このページの計画レビュー4項目を個別指標の達成度に置き換えません。一般会計と普通会計、予算と決算を直接連結した増減率・達成率は示しません。</p>
+              <p>確認できること：副首都ビジョン（大阪府・大阪市共同、2023年3月改定版）の Reviewed 計画レビュー、毎年度の府政運営の基本方針と知事重点事業、2026年度の成立後一般会計当初予算、2022〜2024年度の普通会計決算51件、知事重点事業52件を母集団とする Reviewed 10系列、吉村洋文知事の現任期と公式出典です。</p>
+              <p>吉村洋文知事の公式選挙公報から Reviewed 公約原文7件が段階3で登録済みです。大阪府議会の議案・表決・政務活動費・情報公開状況は段階4で登録済みです。重点事業は段階2で10系列の Reviewed レコードを登録済みですが、府政運営の基本方針2026 第2「知事重点事業」の52件すべてを網羅したものではなく、選定規則に基づく10件です。各金額は「知事重点事業一覧（大阪府施策集）」に掲載された構成予算事業費の合算です。重点事業単位の総額は一覧自体に印字されていません。事業単位の公式評価は公表されていません。未登録は実際の公表・実施の不存在を意味しません。</p>
+              <p>副首都ビジョンが掲げる将来像・4つの役割・3つの戦略・時間軸と数値目標を、実績値や達成判定と混同しません。一般会計と普通会計、予算と決算を直接連結した増減率・達成率は示しません。</p>
             </div>
           </section>
 
           <section className={styles.scope} aria-labelledby="plan-title">
             <div>
               <p className="eyebrow">Plan review</p>
-              <h2 id="plan-title">大阪府総合計画の計画レビュー</h2>
+              <h2 id="plan-title">副首都ビジョンの計画レビュー</h2>
               <p>Reviewed：{osakaPlanReview.reviewed_at}</p>
-              <p><Link href="/municipalities/hokkaido">大阪府の政策指標108件を見る</Link></p>
+              
             </div>
             <div>
               {osakaPlanReview.records.filter((record) => record.decision === "accepted").map((record) => (
@@ -126,7 +126,7 @@ export default function OsakaPrefecturePage() {
                   <p><a href={record.source_url} target="_blank" rel="noopener noreferrer">計画の公式出典を見る</a></p>
                 </article>
               ))}
-              <p>大阪府総合計画（2024年7月策定、2024年度から概ね10年間）に独立した実施計画文書は確認されていません。実施の管理単位は、政策体系に沿った基本評価調書の施策です。計画に記載された目標を政策成果と同一視しません。</p>
+              <p>大阪府には期間型の総合計画はありません。最上位相当の計画は大阪府・大阪市共同の「副首都ビジョン」（2017年策定、2023年3月改定版）です。実施層は毎年度の「府政運営の基本方針」と、その第2に列挙される「知事重点事業」です。複数年次の独立した実施計画文書や全庁一律の政策評価調書は確認されていません。</p>
             </div>
           </section>
 
@@ -184,9 +184,9 @@ export default function OsakaPrefecturePage() {
           <section id="priority-projects" className={styles.headline} aria-labelledby="priority-projects-title">
             <div className="sectionIntro">
               <p className="eyebrow">Reviewed priority projects</p>
-              <h2 id="priority-projects-title">大阪府の重点施策の予算・KPI・道の公式評価</h2>
-              <p>大阪府総合計画の3つの基本方向・政策の柱をたどり、令和7年度基本評価調書の公式掲載順から選定した {seriesCount} 系列・{reviewedProjects.length} 件の Reviewed 施策を掲載しています。全121施策の網羅ではなく、金額の大小による順位付けではありません。</p>
-              <p><strong>基本評価調書の「予算額」は当初予算ベースの施策単位の合計額です。決算額、執行額、個別事務事業の額ではありません。</strong> 記録済みの総合判定は大阪府による<strong>一次政策評価の公式評価</strong>であり、Jichi Insight の独自評価ではありません。</p>
+              <h2 id="priority-projects-title">大阪府の知事重点事業：予算・KPI・登録範囲</h2>
+              <p>母集団は「府政運営の基本方針2026」第2「知事重点事業」の52件です。3つの柱を柱1→柱2→柱3の順に巡回し、各柱では重点分野を公式掲載順にたどって各分野の先頭1件ずつ選定しています。柱1の第4分野「世界の人々を惹きつける都市魅力の向上」で10件に到達したため、そこで選定を終了しました。金額の大小による選定ではありません。登録済みの {seriesCount} 系列・{reviewedProjects.length} 件を掲載しています。</p>
+              <p><strong>各金額は「知事重点事業一覧（大阪府施策集）」に掲載された構成予算事業費の合算です。重点事業単位の総額は一覧自体に印字されていないため、構成予算事業費の合算額として表示しています。</strong> 10系列の登録データに公式評価はなく、大阪府は事業単位の公式評価を公表していません。Jichi Insight 独自の評価・順位付けも行いません。</p>
               <p>予算・KPI の目標値・実績値、一次評価の根拠を分けて表示します。<Link href="/projects#osaka-prefecture">大阪府の事業一覧を見る</Link></p>
             </div>
             <div className={projectStyles.cards}>
@@ -195,12 +195,12 @@ export default function OsakaPrefecturePage() {
                   <p className={projectStyles.meta}>{project.fiscal_year}年度／{project.policy_area}／Reviewed</p>
                   <h3>{project.official_title}</h3>
                   <p>{project.plain_title}</p>
-                  <p><strong>大阪府の一次政策評価・総合判定：{project.official_evaluation?.rating ?? "未収録"}</strong></p>
-                  <p>{project.official_evaluation?.note ?? "公式評価の注記は未収録"}</p>
+                  
+                  <p>事業単位の公式評価は公表されていません。</p>
                   <ul>
                     {project.budget_records.map((record, index) => (
                       <li key={`${record.fiscal_year}-${record.kind}-${index}`}>
-                        {record.fiscal_year}年度／基本評価調書の「予算額」（当初予算ベース・決算額ではありません）：
+                        {record.fiscal_year}年度／知事重点事業一覧（大阪府施策集）の構成予算事業費合算：
                         {record.amount_yen === null ? "未収録" : formatCompactYen(record.amount_yen)}
                         {record.note ? <p className={projectStyles.meta}>{record.note}</p> : null}
                       </li>
@@ -210,7 +210,7 @@ export default function OsakaPrefecturePage() {
                     kpi.project_id === project.id && kpi.review_status === "reviewed",
                   ).length}件</p>
                   <details>
-                    <summary>大阪府の一次政策評価・KPI・公式出典を詳しく見る</summary>
+                    <summary>予算構成・KPI・公式出典を詳しく見る</summary>
                     <ProjectReview area="osaka-prefecture" record={project} kpis={projects.kpis.filter(
                       (kpi) => kpi.project_id === project.id && kpi.review_status === "reviewed",
                     )} />
@@ -237,7 +237,7 @@ export default function OsakaPrefecturePage() {
                     ? `Reviewed 公約原文：${governorPromises.length}件（段階3で登録済み）`
                     : "公約原文はこの知事の Reviewed 台帳に未登録です（不存在を意味しません）"}</p>
                   {governorPromises.length > 0 ? (
-                    <p><Link href="/promises#osaka-prefecture">吉村洋文知事の公約原文15件と根拠を見る</Link></p>
+                    <p><Link href="/promises#osaka-prefecture">吉村洋文知事の公約原文7件と根拠を見る</Link></p>
                   ) : null}
                   {governorManifestoSources.map((source) => (
                     <p key={source.id}>公約原典：<a href={source.url} target="_blank" rel="noopener noreferrer">{source.title}</a></p>
@@ -272,7 +272,7 @@ export default function OsakaPrefecturePage() {
             <div>
               <p className="eyebrow">Primary sources</p>
               <h2 id="sources-title">計画・予算・決算の公式資料</h2>
-              <p>出典は省庁・道庁・道議会の一次資料です。</p>
+              <p>出典は大阪府・大阪市・大阪府議会等の一次資料です。</p>
             </div>
             <div>
               <ul>
@@ -289,7 +289,7 @@ export default function OsakaPrefecturePage() {
           <section className={styles.notAssessed}>
             <div><p className="eyebrow">Not assessed yet</p><h2>まだ登録・評価していないこと</h2></div>
             <ul>
-              <li>知事公約原文は Reviewed 15件登録済みですが、達成度や実績との因果関係は未判定です。</li>
+              <li>知事公約原文は Reviewed 7件登録済みですが、達成度や実績との因果関係は未判定です。</li>
               <li>大阪府議会の非公表の議員個人別・会派別賛否、委員会視察・議員派遣の個別記録</li>
               <li>登録済み10系列以外の事業全体の網羅、施策単位の決算・執行額、契約・監査との公式対応</li>
               <li>2026年度の執行実績と決算</li>
@@ -298,7 +298,7 @@ export default function OsakaPrefecturePage() {
           </section>
 
           <nav className={styles.bottomNav} aria-label="関連ページ">
-            <Link href="/municipalities/hokkaido">大阪府の政策指標</Link>
+            <Link href="/municipalities">自治体一覧</Link>
             <Link href="/executives">首長台帳</Link>
             <Link href="/methodology">評価方法</Link>
             <Link href="/municipalities">自治体一覧</Link>
