@@ -526,7 +526,7 @@ def validate_hokkaido_assembly_scope() -> list[str]:
         content = normalized_html(path)
         for section_id, phrases in sections.items():
             section = re.search(
-                rf'<section\\b(?=[^>]*\\bid="{re.escape(section_id)}")[^>]*>(.*?)</section>',
+                rf'<section\b(?=[^>]*\bid="{re.escape(section_id)}")[^>]*>(.*?)</section>',
                 content,
                 flags=re.DOTALL,
             )
@@ -540,7 +540,7 @@ def validate_hokkaido_assembly_scope() -> list[str]:
     path = EXPORT_ROOT / "municipalities/hokkaido-prefecture/index.html"
     if path.is_file():
         section = re.search(
-            r'<section\\b(?=[^>]*\\bid="assembly")[^>]*>(.*?)</section>',
+            r'<section\b(?=[^>]*\bid="assembly")[^>]*>(.*?)</section>',
             normalized_html(path), flags=re.DOTALL,
         )
         required = ["北海道議会の議案・表決と情報公開", "委員会視察・議員派遣は公表されていない"]
