@@ -70,7 +70,9 @@ def test_plan_review_and_governor_are_reviewed_without_imputed_promises():
     assert "公約原文15件が段階3で登録済み" in PAGE
     assert "鈴木直道知事の公約原文15件と根拠を見る" in PAGE
     assert "manifestoSourcesForExecutive(governor)" in PAGE
-    assert "段階4で登録予定" in PAGE
+    assert "北海道議会の議案・表決・政務活動費・情報公開状況は段階4で登録済み" in PAGE
+    assert 'id="assembly"' in PAGE
+    assert 'href="/assemblies/hokkaido-prefecture"' in PAGE
     assert "重点事業は段階2で10系列の Reviewed レコードを登録済み" in PAGE
     assert "hokkaidoFinanceSources.map" in PAGE
     assert (WEB / "app/municipalities/hokkaido/page.tsx").exists()
@@ -85,7 +87,8 @@ def test_catalog_quality_discovery_and_static_copy_are_real_and_differentiated()
     assert 'promises: hasPromises, assembly: false, projects: hasProjects' in DISCOVERY
     assert '"municipalities/hokkaido-prefecture/index.html"' in EXPORT
     assert '"2026年3月19日に原案可決"' in EXPORT
-    assert '"北海道議会の個別レコードは未登録"' in EXPORT
+    assert '"北海道議会の議案・表決・政務活動費・情報公開状況は段階4で登録済み"' in EXPORT
+    assert "validate_hokkaido_assembly_scope()" in EXPORT
     assert 'hokkaido_prefecture_finance_sources.json' in CATALOG
     assert 'hokkaido_prefecture_finance_sources.json' in EXPORT
     assert '"公約原文：未登録"' not in EXPORT
