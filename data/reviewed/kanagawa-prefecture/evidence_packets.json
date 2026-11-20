@@ -1,0 +1,68 @@
+[
+  {
+    "id": "evidence-kanagawa-pref-2026-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-140007-fiscal-2026-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算の歳入歳出総額は2,375,969,000千円である。",
+        "source_ids": [
+          "kanagawa-pref-budget-2026-bill-pdf",
+          "kanagawa-pref-assembly-2026-budget-vote"
+        ],
+        "location_note": "定県第1号議案「令和8年度神奈川県一般会計予算」第1条および「第1表 歳入歳出予算」。議決結果は令和8年第1回定例会の審議結果一覧表の定県第1号の行。",
+        "decision": "accepted",
+        "review_note": "定県第1号議案は2026年2月12日に提出され、令和8年第1回定例会の最終日（2026年3月25日）に原案可決されたことを審議結果一覧表で確認した（日本共産党のみ反対、他会派は賛成）。予算案段階の額ではなく成立後の額として収録する。"
+      }
+    ],
+    "open_questions": [
+      "年度終了後の執行額・決算額は未確定。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kanagawa-pref-2026-local-tax",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-140007-fiscal-2026-local-tax",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算の県税収入は1,525,483,133千円である。",
+        "source_ids": [
+          "kanagawa-pref-budget-2026-bill-pdf",
+          "kanagawa-pref-assembly-2026-budget-vote"
+        ],
+        "location_note": "定県第1号議案「令和8年度神奈川県一般会計予算」第1条および「第1表 歳入歳出予算」。議決結果は令和8年第1回定例会の審議結果一覧表の定県第1号の行。",
+        "decision": "accepted",
+        "review_note": "第1表の款「県税」の金額であり、県民税・事業税・地方消費税など10項の合計とも一致する。成立後の額として収録する。"
+      }
+    ],
+    "open_questions": [
+      "年度終了後の執行額・決算額は未確定。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kanagawa-pref-2026-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-140007-fiscal-2026-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算の歳出総額は2,375,969,000千円である。",
+        "source_ids": [
+          "kanagawa-pref-budget-2026-bill-pdf",
+          "kanagawa-pref-assembly-2026-budget-vote"
+        ],
+        "location_note": "定県第1号議案「令和8年度神奈川県一般会計予算」第1条および「第1表 歳入歳出予算」。議決結果は令和8年第1回定例会の審議結果一覧表の定県第1号の行。",
+        "decision": "accepted",
+        "review_note": "歳入総額と同額であり、定県第1号議案が2026年3月25日に原案可決されたことを審議結果一覧表で確認した。"
+      }
+    ],
+    "open_questions": [
+      "年度終了後の執行額・決算額は未確定。"
+    ],
+    "review_status": "reviewed"
+  }
+]
