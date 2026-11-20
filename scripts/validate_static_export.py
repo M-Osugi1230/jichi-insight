@@ -650,7 +650,7 @@ def validate_osaka_assembly_scope() -> list[str]:
         content = normalized_html(path)
         for section_id, phrases in sections.items():
             section = re.search(
-                rf'<section\\b(?=[^>]*\\bid="{re.escape(section_id)}")[^>]*>(.*?)</section>',
+                rf'<section\b(?=[^>]*\bid="{re.escape(section_id)}")[^>]*>(.*?)</section>',
                 content, flags=re.DOTALL,
             )
             if section is None:
@@ -664,7 +664,7 @@ def validate_osaka_assembly_scope() -> list[str]:
     if path.is_file():
         content = normalized_html(path)
         section = re.search(
-            r'<section\\b(?=[^>]*\\bid="assembly")[^>]*>(.*?)</section>',
+            r'<section\b(?=[^>]*\bid="assembly")[^>]*>(.*?)</section>',
             content, flags=re.DOTALL,
         )
         required = ["大阪府議会の議案・表決と情報公開", "請願第36号", "継続審査中"]
