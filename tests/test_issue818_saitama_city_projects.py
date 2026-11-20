@@ -177,7 +177,7 @@ def test_kpi_values_and_assessments() -> None:
         # (two KPIs in project P2 share one printed name, so matching
         # must be positional, not by name).
         assert len(embedded) == len(records)
-        for record, summary in zip(records, embedded):
+        for record, summary in zip(records, embedded, strict=True):
             assert record["review_status"] == "reviewed"
             assert summary["name"] == record["name"]
             assert summary["baseline"] == (
