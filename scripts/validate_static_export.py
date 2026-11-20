@@ -524,8 +524,14 @@ def validate_osaka_cluster_sections() -> list[str]:
     for slug, heading, status in promise_statuses:
         failures.extend(validate_promise_section(slug, heading, status))
     for slug, page, section_id, status in (
-        ("osaka-prefecture", "municipalities/osaka/index.html", "osaka-executive-promises", "Reviewed 公約原文 7件"),
-        ("osaka-city", "municipalities/osaka-city/index.html", "mayor-promises", "Reviewed 公約原文：5件"),
+        (
+            "osaka-prefecture", "municipalities/osaka/index.html",
+            "osaka-executive-promises", "Reviewed 公約原文 7件",
+        ),
+        (
+            "osaka-city", "municipalities/osaka-city/index.html",
+            "mayor-promises", "Reviewed 公約原文：5件",
+        ),
         ("sakai-city", "municipalities/sakai-city/index.html", "mayor-promises", "公約原文：未登録"),
     ):
         path = EXPORT_ROOT / page
