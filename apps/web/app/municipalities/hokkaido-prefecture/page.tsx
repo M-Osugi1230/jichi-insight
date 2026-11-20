@@ -95,7 +95,6 @@ export default function HokkaidoPrefecturePage() {
             settlementHref="#fiscal-detail"
             fiscalDetailHref="#fiscal-detail"
             projectHref="#priority-projects"
-            assemblyHref="#assembly-title"
           />
 
           <section className={styles.scope} aria-label="登録情報の範囲">
