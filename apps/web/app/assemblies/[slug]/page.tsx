@@ -191,7 +191,7 @@ export default async function AssemblyDetailPage({params}:PageProps){
           : slug==="toyota-city"
             ? "政務活動費は会派別集計のみが Web 公表され、詳細の収支報告書・領収書等は Web 公表されていません（市政情報コーナーで閲覧）。"
             : "領収書は窓口でのみ閲覧可能です。"}支出額の順位付けはしません。</p>
-      <p className={styles.note}>掲載順は Reviewed 原資料の登録順です。交付額・支出額・残額は年度と公開単位を保ち、会派と議員の額を合算して個人の支出に帰属させません。</p>
+      <p className={styles.note}>掲載順は Reviewed 原資料の登録順です。交付額・支出額・残額は年度と公開単位を保ち、会派と議員の額を合算して個人の支出に帰属させません。</p>\n      {slug==="osaka-prefecture" ? <p className={styles.attention}>令和7年度分は会派9単位・議員80単位の計89単位をWeb公開。収支報告書と領収書の公開範囲を確認できます。</p> : null}
       <div className={styles.recordList}>
       {data.expenses.map(exp=><article className={styles.record} key={exp.id}>
         <h3>{exp.recipient_name}</h3>
