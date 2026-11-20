@@ -262,9 +262,9 @@ export default function OsakaPrefecturePage() {
               <p><Link href="/assemblies/osaka-prefecture">大阪府議会の議案・表決・政務活動費・情報公開の詳細を見る</Link></p>
             </div>
             <div>
-              <p>大阪府議会の登録議案 {assembly.proposals.length}件、表決 {assembly.votes.length}件、政務活動費の集計 {assembly.expenses.length}レコードを公式資料に基づき掲載しています。</p>
-              <p>議員個人別・会派別の賛否は公表されていません。政務活動費は集計値と閲覧制度のみが登録され、領収書の詳細を掲載していません。</p>
-              <p>委員会視察・議員派遣は公表されていないため、実績を推測せず未登録とします。未公表は活動の不存在を意味しません。</p>
+              <p>大阪府議会の登録議案 {assembly.proposals.length}件、表決 {assembly.votes.length}件、政務活動費 {assembly.expenses.length}レコードを掲載しています。賛否は会派別のみで、議員個人別の賛否は公表されていません。</p>
+              <p>請願第36号は第1〜4項と第5項を分けた項目別採決であり、項目群によって態度が異なります。令和7年度決算認定関連18件は継続審査中です。政務活動費は会派9・議員80の計89単位でWeb公表されています。</p>
+              <p>議会の公表範囲と個別記録の未収録を区別します。未公表は活動の不存在を意味しません。</p>
             </div>
           </section>
 
