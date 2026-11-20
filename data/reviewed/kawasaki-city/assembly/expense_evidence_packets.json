@@ -1,0 +1,54 @@
+[
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "expense_publication",
+        "location_note": "政務活動費の案内ページ",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-seimu-overview"
+        ],
+        "statement": "政務活動費の収支報告書・領収書等の金額データはWeb公表されておらず、本登録では金額レコードを作成しない。公式の制度案内ページは制度の説明のみで、報告書や金額の一覧は掲載されていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "expense_system",
+        "location_note": "政務活動費条例第3条",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-seimu-ordinance"
+        ],
+        "statement": "条例第3条により、交付は会派への月額45万円×所属議員数の一括交付か、会派への月額5万円×所属議員数と交付対象議員への月額40万円の併用かの選択制であり、年度内の変更はできない。ここに記す金額は条例上の制度額であり、実際の交付額ではない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "expense_system",
+        "location_note": "政務活動費条例第11条・第12条・第15条",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-seimu-ordinance"
+        ],
+        "statement": "条例第11条により収支報告書は毎年4月30日までに領収書等の写しを添えて議長に提出され、第15条により議長のもとで一般の閲覧に供される（閲覧は無料、写しの交付は請求者の負担）。残余がある場合は条例第12条により返還される。"
+      },
+      {
+        "decision": "accepted",
+        "field": "expense_system",
+        "location_note": "政務活動費条例別表",
+        "review_note": null,
+        "source_ids": [
+          "kawasaki-city-seimu-ordinance"
+        ],
+        "statement": "政務活動費を充てることができる経費の区分は条例別表の9区分（調査研究費・研修費・広報費・広聴費・要請陳情等活動費・会議費・資料作成費・資料購入費・人件費）である。"
+      }
+    ],
+    "id": "evidence-jp-local-141305-assembly-2023",
+    "open_questions": [
+      "各会派がいずれの交付方法を選択したかは公表されておらず、登録しない。",
+      "閲覧開始日（毎年6月30日）は段階0の棚卸しで確認したが、本登録時の再取得では確認できていない。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-141305-assembly-2023",
+    "subject_type": "assembly"
+  }
+]

@@ -1,0 +1,94 @@
+[
+  {
+    "as_of": "2026-11-21",
+    "assembly_id": "jp-local-141305-assembly-2023",
+    "confidence": "high",
+    "id": "jp-local-141305-assembly-2023-disclosure-2026",
+    "items": [
+      {
+        "availability": "published",
+        "granularity": "member",
+        "item": "member_roster",
+        "note": "委員会別議員名簿（令和8年8月1日現在）に全議員が委員会別に掲載され、各議員の会派略号も併記されている。",
+        "source_url": "https://www.city.kawasaki.jp/980/page/0000151353.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "faction",
+        "item": "faction_composition",
+        "note": "委員会別議員名簿の会派略号から会派構成が確認できる。令和8年8月1日現在の内訳は自由民主党16人・みらい14人・公明党11人・日本共産党8人・あしたの川崎・日本維新の会5人・無所属5人の計59人（定数60人、欠員1人）。",
+        "source_url": "https://www.city.kawasaki.jp/980/page/0000151353.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "assembly",
+        "item": "committee_composition",
+        "note": "委員会別議員名簿に常任委員会・議会運営委員会・特別委員会の所属が掲載されている。",
+        "source_url": "https://www.city.kawasaki.jp/980/page/0000151353.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "document",
+        "item": "proposals_and_results",
+        "note": "定例会ごとに会議結果のページが公表され、議案一覧・議決結果・会議結果資料へのリンクが掲載される。",
+        "source_url": "https://www.city.kawasaki.jp/980/page/0000189620.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "faction",
+        "item": "faction_votes",
+        "note": "全ての表決案件について、区分別の議決結果表（市長提出議案・意見書案・請願・修正案）で会派別の賛否が公表される。",
+        "source_url": "https://www.city.kawasaki.jp/980/cmsfiles/contents/0000189/189620/261013gian.pdf"
+      },
+      {
+        "availability": "published",
+        "granularity": "member",
+        "item": "member_votes",
+        "note": "議決結果表には無所属議員5名の個人名の列があり、その賛否（賛成・反対・退席）は議員個人別に公表される。会派所属議員の個人別の賛否は公表されていない。",
+        "source_url": "https://www.city.kawasaki.jp/980/cmsfiles/contents/0000189/189620/261013gian.pdf"
+      },
+      {
+        "availability": "not_published",
+        "granularity": "none",
+        "item": "political_activity_expense_reports",
+        "note": "収支報告書のWeb公表はない。川崎市議会政務活動費の交付等に関する条例第15条により、議長のもとで一般の閲覧に供されるのみであり、金額データの集計もWeb掲載はない。",
+        "source_url": "https://www.city.kawasaki.jp/shisei/category/40-11-11-1-0-0-0-0-0-0.html"
+      },
+      {
+        "availability": "not_published",
+        "granularity": "none",
+        "item": "political_activity_expense_receipts",
+        "note": "領収書等の写しも収支報告書とともに議長のもとでの一般閲覧のみで、Web公表はない。",
+        "source_url": "https://www.city.kawasaki.jp/shisei/category/40-11-11-1-0-0-0-0-0-0.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "document",
+        "item": "inspection_trip_reports",
+        "note": "議員海外視察（令和6年度は3視察団）の報告書一式がWeb公表される。国内の委員会視察については報告書・一覧の体系的な公表は確認できない。",
+        "source_url": "https://www.city.kawasaki.jp/980/page/0000022637.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "document",
+        "item": "meeting_minutes",
+        "note": "本会議・委員会の会議録は市議会会議録検索システムで公開されている。",
+        "source_url": null
+      },
+      {
+        "availability": "published",
+        "granularity": "document",
+        "item": "petition_results",
+        "note": "請願は受理一覧で委員会付託先と本会議の審査結果が公表される。陳情は委員会の審査結果のみが受理一覧に記録され、本会議での表決は行われない。",
+        "source_url": "https://www.city.kawasaki.jp/980/page/0000180353.html"
+      }
+    ],
+    "review_status": "reviewed",
+    "sources": [
+      "kawasaki-city-assembly-results-2026-3rd",
+      "kawasaki-city-seimu-overview",
+      "kawasaki-city-assembly-overseas-trips-2024",
+      "kawasaki-city-assembly-members-by-committee"
+    ]
+  }
+]
