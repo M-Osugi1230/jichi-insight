@@ -1,3 +1,7 @@
+import osakaFiscalRecords from "../../../data/reviewed/osaka-prefecture/fiscal_records.json";
+import osakaSettlementRecords from "../../../data/reviewed/osaka-prefecture/settlement_records.json";
+import osakaFiscalEvidence from "../../../data/reviewed/osaka-prefecture/evidence_packets.json";
+import osakaSettlementEvidence from "../../../data/reviewed/osaka-prefecture/settlement_evidence_packets.json";
 import hokkaidoIndicatorPageIndex from "../../../data/catalog/hokkaido_indicator_page_index.json";
 import hokkaidoIndicatorRelationshipIndex from "../../../data/catalog/hokkaido_indicator_relationship_index.json";
 import hokkaidoIndicatorSourceIndex from "../../../data/catalog/hokkaido_indicator_source_index.json";
@@ -60,7 +64,7 @@ const municipalityNames: Record<MunicipalityKey, string> = {
 
 const municipalityKeys = Object.keys(municipalityNames) as MunicipalityKey[];
 const recordsByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFinance.records> = {
-  "osaka-prefecture": [],
+  "osaka-prefecture": [...osakaFiscalRecords, ...osakaSettlementRecords] as typeof fukuokaPrefectureFinance.records,
   "osaka-city": osakaCityFiscal?.records ?? [],
   "sakai-city": sakaiFiscal?.records ?? [],
   "hokkaido-prefecture": hokkaidoFinance.records,
@@ -74,7 +78,7 @@ const recordsByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFin
   "toyota-city": toyotaCityFinance.records,
 };
 const evidenceByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFinance.evidencePackets> = {
-  "osaka-prefecture": [],
+  "osaka-prefecture": [...osakaFiscalEvidence, ...osakaSettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
   "osaka-city": osakaCityFiscal?.evidencePackets ?? [],
   "sakai-city": sakaiFiscal?.evidencePackets ?? [],
   "hokkaido-prefecture": hokkaidoFinance.evidencePackets,
