@@ -686,6 +686,11 @@ def main() -> int:
         | published_required_files()
         | hokkaido_cluster_project_detail_files()
         | osaka_cluster_project_detail_files()
+        | {"municipalities/osaka-prefecture/index.html"}
+        | {
+            f"assemblies/{slug}/index.html"
+            for slug in ("osaka-prefecture", "osaka-city", "sakai-city")
+        }
         | {
             f"assemblies/{slug}/index.html"
             for slug in ("hokkaido-prefecture", "sapporo-city", "asahikawa-city")
