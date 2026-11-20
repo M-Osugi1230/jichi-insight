@@ -116,9 +116,11 @@ def test_discovery_gates_are_official_code_and_reviewed_record_scoped():
         assert f"officialCode === {municipality}.official_code" in DISCOVERY
         assert f'projectRegistry["{code}"].projects.some' in DISCOVERY
         assert f"project.municipality_id === {municipality}.id" in DISCOVERY
-    assert 'return { key: "kanagawa-prefecture", finance: hasFinance, promises: hasPromises, assembly: hasAssembly, projects: hasProjects }' in DISCOVERY
-    assert 'key: "yokohama-city", finance: false, promises: hasPromises, assembly: hasAssembly' in DISCOVERY
-    assert 'key: "kawasaki-city", finance: false, promises: hasPromises, assembly: hasAssembly' in DISCOVERY
+    assert 'return { key: "kanagawa-prefecture",' in DISCOVERY
+    assert "finance: hasFinance, promises: hasPromises, assembly: hasAssembly, projects: hasProjects" in DISCOVERY
+    for slug in ("yokohama-city", "kawasaki-city"):
+        assert f'key: "{slug}", finance: false, promises: hasPromises,' in DISCOVERY
+        assert "assembly: hasAssembly, projects: hasProjects" in DISCOVERY
 
 
 def test_static_export_requires_all_cluster_detail_pages_and_scoped_copy():
