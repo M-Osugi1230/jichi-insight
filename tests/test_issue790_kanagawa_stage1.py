@@ -188,7 +188,11 @@ def test_kanagawa_governor_term() -> None:
     assert term["term_start"] == "2023-04-23"
     assert term["term_end"] == "2027-04-22"
     assert term["election_date"] == "2023-04-09"
-    assert term["manifesto_source_ids"] == []
+    # The manifesto source was empty at stage 1; stage 3 (Issue #798)
+    # transcribed the image-only bulletin panel and connected it.
+    assert term["manifesto_source_ids"] == [
+        "kanagawa-pref-governor-election-2023-bulletin"
+    ]
 
 
 def test_kanagawa_catalog_shape() -> None:
