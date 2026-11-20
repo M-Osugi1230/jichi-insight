@@ -116,7 +116,17 @@ def test_selected_projects_match_records() -> None:
         assert record["municipality_id"] == MID
         assert record["fiscal_year"] == 2026
         assert record["review_status"] == "reviewed"
-        assert record["related_promise_ids"] == []
+        # Stage 3 (Issue #798) connected two promises; the reverse links
+        # are pinned here so the connection cannot silently disappear.
+        expected_links = {
+            "jp-local-141305-project-2026-renewable-energy-promotion": [
+                "jp-local-141305-executive-2025-11-19-promise-005"
+            ],
+            "jp-local-141305-project-2026-community-disaster-prevention": [
+                "jp-local-141305-executive-2025-11-19-promise-008"
+            ],
+        }
+        assert record["related_promise_ids"] == expected_links.get(record["id"], [])
 
 
 def test_budget_amounts_are_explicitly_unregistered() -> None:
