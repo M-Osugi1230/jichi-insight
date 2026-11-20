@@ -799,7 +799,8 @@ def main() -> int:
     failures.extend(validate_hokkaido_promise_scope())
     failures.extend(validate_sapporo_promise_scope())
     failures.extend(validate_asahikawa_promise_scope())
-    failures.extend(validate_osaka_cluster_sections())\n    failures.extend(validate_kanagawa_cluster_sections())
+    failures.extend(validate_osaka_cluster_sections())
+    failures.extend(validate_kanagawa_cluster_sections())
     failures.extend(validate_hokkaido_assembly_scope())
     failures.extend(validate_osaka_assembly_scope())
 
