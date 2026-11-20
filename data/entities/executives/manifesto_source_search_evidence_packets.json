@@ -448,5 +448,49 @@
       "事業との接続は文言・内容に基づく推定であり、道が公約と事業の公式な対応付けを公表した場合は接続を見直す。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-osaka-pref-2026",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-osaka-pref-2026",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "大阪府選挙管理委員会の選挙トップページ「令和8年執行 衆議院議員総選挙・大阪府知事選挙」を確認した。知事選挙について選挙期日（令和8年2月8日）と告示日（令和8年1月22日）が明記され、退職の申立てに伴う選挙であることが示されている。同ページから「大阪府知事選挙 選挙公報」ページへのリンクを確認した。",
+        "source_ids": [
+          "osaka-pref-governor-election-2026-page"
+        ],
+        "location_note": "大阪府選挙管理委員会の選挙トップページ。",
+        "decision": "accepted",
+        "review_note": "選挙の実施と公報掲載への一次資料として採用。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "「大阪府知事選挙 選挙公報」ページから選挙公報PDF（全1ページの大判シート）を府公式サイト上で直接取得し、最上段の吉村洋文候補欄（冒頭文、実績ブロック、展望ブロック、大見出し、略歴）を確認した。あわせて投開票結果調で吉村洋文の当選（3,024,106票）を確認した。",
+        "source_ids": [
+          "osaka-pref-governor-election-2026-bulletin",
+          "osaka-pref-governor-election-2026-results"
+        ],
+        "location_note": "選挙公報の最上段の候補者欄。",
+        "decision": "accepted",
+        "review_note": "公報は候補者提出原稿をそのまま印刷した公式文書であり、出典優先順位の最上位として登録した。候補者欄は画像形式のため、描画画像を複数解像度で照合した。"
+      },
+      {
+        "field": "result_status",
+        "statement": "選挙公報を登録し、分割レビューを経て公約レコード7件を作成したため、result_status を source_registered とした。2023年の知事選挙公報も到達可能だが今回は登録対象外とした。政策パンフレット等の詳細資料は未特定のままである。",
+        "source_ids": [
+          "osaka-pref-governor-election-2026-bulletin"
+        ],
+        "location_note": "分割レビュー manifesto-review-jp-local-270008-2026 に基づく。",
+        "decision": "accepted",
+        "review_note": "詳細資料が存在しないとは判定しない。"
+      }
+    ],
+    "open_questions": [
+      "選挙公報より詳細な候補者資料（政策パンフレット等）の安定した所在は特定できていない。",
+      "2023年知事選挙の選挙公報は到達可能だが、公約レコードは作成していない（将来の比較用に所在を記録した）。",
+      "事業との接続は文言・内容に基づく推定であり、府が公約と事業の公式な対応付けを公表した場合は接続を見直す。"
+    ],
+    "review_status": "reviewed"
   }
 ]

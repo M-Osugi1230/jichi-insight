@@ -1,5 +1,5 @@
 {
-  "version": "0.16.0",
+  "version": "0.17.0",
   "updated_at": "2026-11-20",
   "scope": "pilot",
   "records": [
@@ -660,6 +660,20 @@
       "source_kind": "document",
       "title": "令和5年4月9日執行 大阪府知事選挙 結果（大東市・府全体の確定得票）",
       "url": "https://www.city.daito.lg.jp/uploaded/attachment/28420.pdf"
+    },
+    {
+      "id": "osaka-pref-governor-election-2026-bulletin",
+      "municipality_key": "osaka-prefecture",
+      "organization": "大阪府選挙管理委員会",
+      "category": "election",
+      "title": "令和8年2月8日執行 大阪府知事選挙 選挙公報（吉村洋文候補欄）",
+      "url": "https://www.pref.osaka.lg.jp/documents/124004/chijisenkyokoho.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-20",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "大阪府知事選挙の公式選挙公報（候補者から提出された原稿をそのまま印刷したもの。全1ページの大判シート）。選挙管理委員会の公式ページ「大阪府知事選挙 選挙公報」（https://www.pref.osaka.lg.jp/o190010/senkan/r8syuugiinsenkyo/chijikouhosya.html）から直接リンクされ、府公式サイト上で公開されている。本選挙は知事の退職の申立てに伴う出直し選挙（告示2026年1月22日、執行2026年2月8日）であり、任期は2023年開始の期が継続する。吉村洋文候補欄は最上段にあり、冒頭文、左端の縦帯「副首都・大阪 「都構想」へ挑戦」、「維新には実績がある」ブロック（万博の矢印見出し、実績3枠、身を切る改革）、「維新には展望がある」ブロック（見出し2件と▶印の項目5件）、下部の大見出し「府市一体で大阪を日本のエンジンに！」、略歴を掲載する。公約レコードは冒頭文の都構想の表明、万博の矢印見出しの単位、展望ブロックの▶項目から作成した（分割の判断は manifesto-review-jp-local-270008-2026 に記録）。候補者欄は画像形式（テキスト層なし）のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・300dpi・400dpi）で照合した。"
     }
   ]
 }
