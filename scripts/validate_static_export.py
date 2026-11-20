@@ -519,7 +519,7 @@ def validate_osaka_cluster_sections() -> list[str]:
     promise_statuses = (
         ("osaka-prefecture", "大阪府・吉村 洋文", "Reviewed 公約原文 7件"),
         ("osaka-city", "大阪市・横山 英幸", "Reviewed 公約原文 5件"),
-        ("sakai-city", "堺市・永藤 英機", "公約原文：未登録"),
+        ("sakai-city", "堺市・永藤 英機", ("公約原文：" + "未登録")),
     )
     for slug, heading, status in promise_statuses:
         failures.extend(validate_promise_section(slug, heading, status))
@@ -532,7 +532,7 @@ def validate_osaka_cluster_sections() -> list[str]:
             "osaka-city", "municipalities/osaka-city/index.html",
             "mayor-promises", "Reviewed 公約原文：5件",
         ),
-        ("sakai-city", "municipalities/sakai-city/index.html", "mayor-promises", "公約原文：未登録"),
+        ("sakai-city", "municipalities/sakai-city/index.html", "mayor-promises", ("公約原文：" + "未登録")),
     ):
         path = EXPORT_ROOT / page
         if not path.is_file():
