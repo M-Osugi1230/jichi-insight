@@ -41,8 +41,8 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 67
-    assert len({record["id"] for record in catalog["records"]}) == 67
+    assert len(catalog["records"]) == 68
+    assert len({record["id"] for record in catalog["records"]}) == 68
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
@@ -261,11 +261,13 @@ def test_manifesto_readiness_is_not_confused_with_progress() -> None:
     # bulletin has no official web publication and no verifiable
     # candidate publication was found (see the source search record).
     assert by_municipality["jp-local-271403"]["manifesto_source_ids"] == []
-    # Kanagawa Prefecture registers no manifesto source at this stage:
-    # the 2023 bulletin is officially published but its candidate pages
-    # are image-only, so the promise decision is deferred to the
-    # cluster's promise stage.
-    assert by_municipality["jp-local-140007"]["manifesto_source_ids"] == []
+    # Kanagawa Prefecture registers the 2023 bulletin: the promise
+    # stage (Issue #798) transcribed the image-only candidate panel
+    # from rendered images at multiple resolutions and connected the
+    # bulletin to the governor's term.
+    assert by_municipality["jp-local-140007"]["manifesto_source_ids"] == [
+        "kanagawa-pref-governor-election-2023-bulletin",
+    ]
     # Kawasaki City's source is the 2025 election bulletin as reprinted
     # in the city election commission's official election record
     # (Chapter 8): the standalone bulletin PDF is not extant because

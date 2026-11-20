@@ -1,5 +1,5 @@
 {
-  "version": "0.20.0",
+  "version": "0.21.0",
   "updated_at": "2026-11-21",
   "scope": "pilot",
   "records": [
@@ -870,6 +870,20 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "県選管の選挙の記録ページ。令和5年4月9日執行の知事選挙について、選挙公報（PDF）と候補者別得票数へのリンクを掲載する。選挙公報の候補者欄は写真植字で機械可読なテキスト層がない。"
+    },
+    {
+      "id": "kanagawa-pref-governor-election-2023-bulletin",
+      "municipality_key": "kanagawa-prefecture",
+      "organization": "神奈川県選挙管理委員会",
+      "category": "election",
+      "title": "令和5年4月9日執行 神奈川県知事選挙 選挙公報（黒岩祐治候補欄）",
+      "url": "https://www.pref.kanagawa.jp/documents/7577/tiji-kouhou.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "候補者提出原稿を写真製版で掲載した全2ページの公式選挙公報。黒岩祐治候補欄は1ページ目中段。候補者欄は画像形式（テキスト層なし）のため、公約文はPDFの描画画像（200dpi・300dpi）の照合で転記した。"
     },
     {
       "id": "kawasaki-city-mayor",

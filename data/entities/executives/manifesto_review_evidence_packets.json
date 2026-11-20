@@ -421,6 +421,49 @@
     "review_status": "reviewed"
   },
   {
+    "id": "evidence-kanagawa-pref-2023-manifesto-review",
+    "subject_type": "manifesto_review",
+    "subject_id": "manifesto-review-jp-local-140007-2023",
+    "claims": [
+      {
+        "field": "source_location",
+        "statement": "黒岩祐治候補欄は選挙公報1ページ目中段に掲載され、見出し「県民目線のデジタル行政で やさしい社会を実現！」の下に、「3つの実現」の3項目、「5つのチカラ」の5枠、「4期目の新たな挑戦」の5政策分野・●項目30件が配置されている。欄の右側には3期12年の取組実績と略歴、「黒岩祐治 検索」の案内が配置されている。",
+        "source_ids": [
+          "kanagawa-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全2ページ）の1ページ目中段。",
+        "decision": "accepted",
+        "review_note": "2026-11-21にPDFを取得し、描画画像で候補者欄の構成を確認した。"
+      },
+      {
+        "field": "segmentation_status",
+        "statement": "「3つの実現」の番号項目3件と●印の項目30件は原文上の境界が明確なため、計33件へ分割した。見出し文、「5つのチカラ」、実績、略歴は公約として分割しなかった。「3つの実現」は●項目の要約ではなく欄の最上位の公約として独立した内容を持つため、独立レコードとした（政策分野の●項目群と主題が重なる項目があることは extraction_note と本レビューに明記した）。",
+        "source_ids": [
+          "kanagawa-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "「3つの実現」3件、政策分野1〜5の●項目各6件（計30件）。",
+        "decision": "accepted",
+        "review_note": "見出し項目と●項目の二重計上に当たるかどうかは境界判断であり、open_questions に残す。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は神奈川県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。公報PDFは選挙管理委員会の公式ページ「神奈川県知事選挙・神奈川県議会議員選挙（過去の選挙結果）」から、県公式サイト上で直接取得した（第三者が公開するコピーではない）。",
+        "source_ids": [
+          "kanagawa-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "公報の表頭（神奈川県選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）に基づく。",
+        "decision": "accepted",
+        "review_note": "公式サイトから直接取得した公報そのものであるため confidence は high とする。候補者欄が画像形式である点は、複数解像度での描画照合で担保した。"
+      }
+    ],
+    "open_questions": [
+      "「3つの実現」の3項目は政策分野の●項目群と主題が重なる部分があり、独立レコードとした判断は境界ケースである。詳細な候補者資料（政策集）が確認できれば、項目の階層関係を照合する。",
+      "選挙公報より詳細な候補者資料（候補者ホームページの政策集）の安定した所在が特定できれば、登録済みの公約文と照合する。",
+      "事業との接続は文言・内容に基づく推定であり、県が公約と事業の公式な対応付けを公表した場合は接続を見直す。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
     "id": "evidence-kawasaki-city-2025-manifesto-review",
     "subject_type": "manifesto_review",
     "subject_id": "manifesto-review-jp-local-141305-2025",
