@@ -8,6 +8,9 @@ import officialCatalog from "../../../data/catalog/official_sources.json";
 
 export type MunicipalityKey =
   | "hokkaido-prefecture"
+  | "osaka-prefecture"
+  | "osaka-city"
+  | "sakai-city"
   | "aichi-prefecture"
   | "fukuoka-prefecture"
   | "fukuoka-city"
@@ -43,6 +46,24 @@ export const municipalityMeta: Record<
     fiscalSummary: string;
   }
 > = {
+  "osaka-prefecture": {
+    name: "大阪府", type: "都道府県",
+    summary: "大阪府の計画・財政・重点事業と知事の公式選挙公報に基づく公約7件を確認します。",
+    status: "財政データ公開", href: "/municipalities/osaka",
+    fiscalSummary: "Reviewed 財政レコード（大阪クラスター）",
+  },
+  "osaka-city": {
+    name: "大阪市", type: "政令指定都市",
+    summary: "大阪市の計画・財政・重点事業と市長の公約原文5件を公式資料で確認します。",
+    status: "財政データ公開", href: "/municipalities/osaka-city",
+    fiscalSummary: "Reviewed 財政データ（汎用市ページ）",
+  },
+  "sakai-city": {
+    name: "堺市", type: "政令指定都市",
+    summary: "計画・財政・重点事業と市長の現任期を確認します。公約原文は未登録です。",
+    status: "財政データ公開", href: "/municipalities/sakai-city",
+    fiscalSummary: "Reviewed 財政データ（汎用市ページ）",
+  },
   "hokkaido-prefecture": {
     name: "北海道",
     type: "都道府県",

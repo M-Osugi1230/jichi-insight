@@ -261,5 +261,91 @@
     ],
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-osaka-pref-2026",
+    "executive_term_id": "jp-local-270008-executive-2023-04-09",
+    "searched_at": "2026-11-20",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "osaka-pref-governor-election-2026-bulletin"
+    ],
+    "checked_source_ids": [
+      "osaka-pref-governor-election-2026-page",
+      "osaka-pref-governor-election-2026-results",
+      "osaka-pref-governor-election-2026-bulletin"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "大阪府選挙管理委員会の選挙トップページ「令和8年執行 衆議院議員総選挙・大阪府知事選挙」から「大阪府知事選挙 選挙公報」ページにリンクがあり、知事選挙公報PDF（全1ページの大判シート）を府公式サイトから直接取得できることを確認し、2026-11-20にPDFを取得した。最上段の吉村洋文候補欄を確認し、選挙公報を出典として登録、分割レビュー（manifesto-review-jp-local-270008-2026）を経て公約レコード7件を作成した。本選挙は知事の退職の申立てに伴う出直し選挙（告示2026年1月22日、執行2026年2月8日）であり、現任期の起点となった2023年4月9日執行の知事選挙の選挙公報も府選管の公式ページから到達可能であることを段階0の棚卸しで確認しているが、公約の原典は直近の選挙で有権者に示された公約として2026年の公報を採用した（2023年の公報は今回は登録対象外とし、将来の比較に備えて本記録に残す）。選挙公報は候補者提出原稿をそのまま印刷した公式文書であり、第三者のコピーではなく選管公式サイトから直接取得できたため、公約レコードの confidence は high とした。選挙公報より詳細な候補者資料（政策集・政策パンフレット等）の安定した所在は特定できておらず、資料が存在しないとは判定しない。",
+    "next_actions": [
+      "政策パンフレット等、選挙公報より詳細な候補者資料の安定した所在が特定できれば、登録済みの公約文と照合する",
+      "2023年知事選挙の選挙公報との比較が必要になれば、同公報を別途登録して公約の変遷を記録する",
+      "未接続の公約（都構想の実現、地方分権の促進、規制緩和、首都機能の移転、多極型社会への移行）について、計画・事業資料への進捗証拠の接続を拡充する",
+      "2027年4月の任期満了に伴う次回知事選挙では、新任期の公約原文資料として選挙公報を改めて登録する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-osaka-city-2026",
+    "executive_term_id": "jp-local-271004-executive-2026-02-09",
+    "searched_at": "2026-11-20",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "osaka-city-mayor-election-2026-bulletin"
+    ],
+    "checked_source_ids": [
+      "osaka-city-mayor-election-2026-results",
+      "osaka-city-mayor-election-2026-bulletin",
+      "osaka-city-mayor"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "大阪市選挙管理委員会の選挙特設ページ「候補者名簿・選挙公報」に、2026年大阪市長選挙の選挙公報PDFへの安定した導線があり、市の公式サイト上で公報そのものを取得できた。横山ひでゆき候補欄（1ページ目中段右）を確認し、選挙公報を出典として登録、分割レビュー（manifesto-review-jp-local-271004-2026）を経て公約レコード5件を作成した。選挙公報は候補者提出原稿をそのまま掲載した公式文書であり、出典優先順位の最上位に当たるため、公約レコードの confidence は high とした。原典の選択（2026年出直し選挙の公報を正本とし、2023年選挙の公報は比較対象として記録に留める）は Issue #772 の判断による。候補者の政策パンフレット等、公報より詳細な資料の安定した所在は特定しておらず、資料が存在しないとは判定しない。",
+    "next_actions": [
+      "候補者の政策資料（公報より詳細な公約資料）の安定した所在が特定できれば、登録済みの公約文と照合する",
+      "2023年選挙公報の公約との比較検証を行う場合は、両公報の項目対応を別途レビューする",
+      "未接続の公約（全5件）について、計画・事業資料への進捗証拠の接続を拡充する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-sakai-city-2023",
+    "executive_term_id": "jp-local-271403-executive-2023-06-09",
+    "searched_at": "2026-11-20",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "no_stable_primary_source_found",
+    "manifesto_source_ids_found": [],
+    "checked_source_ids": [
+      "sakai-city-mayor-election-2023-results",
+      "sakai-city-election-schedule",
+      "sakai-city-mayor-profile"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "2023年堺市長選挙の選挙公報は、堺市公式サイトの2023年市長選挙結果ページに掲載・導線がなく（投票結果・開票結果・選挙結果調のPDFのみ）、Wayback Machineの市公式サイト選挙データセクション配下の2023年の保存にも公報ページ・PDFは存在しないため、公式のWeb公表物としては特定できなかった。紙の選挙公報の発行自体は市選管・令和5年第1回会議録（様式の決定：標題「令和5年6月4日執行 堺市長選挙選挙公報」、ブランケット判）で公式に確認できるが、公報本文のWeb掲載ではない。候補者本人の公式サイト（nagafujihideki.com）の存在は確認できるものの、その「政策」ページの選挙前日（2023年6月3日）の保存は府議会議員時代（平成27年）の政策・演説であり、2023年選挙時の公約を検証可能な形で公開する一次資料は特定できなかった。選挙ドットコム等の民間ミラーの転載や報道の候補者アンケートは公式公表物ではないため原典として採用しない。以上により、検証可能な原典を特定できなかったものとして公約は未登録とする。これは公約が存在しないという主張ではない。なお、Waybackの選管セクション全体を対象とする絞り込み照会は応答不良で完遂できておらず、選挙公報の全件不存在までは証明できていない。",
+    "next_actions": [
+      "紙の選挙公報の現物（選挙管理委員会の保管分・図書館所蔵）や候補者公式サイトの2023年公約ページが特定できれば、原典として登録し直す",
+      "2027年6月執行予定の次回市長選挙では、選挙期間中に選挙公報の公式掲載を確認し、新任期の公約原文資料として登録する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]

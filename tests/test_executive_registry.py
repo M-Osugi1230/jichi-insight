@@ -41,15 +41,15 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 41
-    assert len({record["id"] for record in catalog["records"]}) == 41
+    assert len(catalog["records"]) == 58
+    assert len({record["id"] for record in catalog["records"]}) == 58
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
     terms = load_json("data/entities/executives/executive_terms.json")
     packets = load_json("data/entities/executives/evidence_packets.json")
 
-    assert len(terms) == 9
+    assert len(terms) == 12
     assert {term["municipality_id"] for term in terms} == {
         "jp-local-400009",
         "jp-local-401307",
@@ -60,6 +60,9 @@ def test_executive_registry_matches_shared_contracts() -> None:
         "jp-local-010006",
         "jp-local-012041",
         "jp-local-011002",
+        "jp-local-270008",
+        "jp-local-271004",
+        "jp-local-271403",
     }
     for term in terms:
         assert validation_errors("schemas/executive_term.schema.json", term) == []
@@ -97,6 +100,18 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
     # Commission's official term-expiry list; its start (2023-05-02)
     # follows the same Article 259 proviso chain, anchored by the
     # mayoral profile's stated May 2 term start and the stated expiry.
+    # Osaka City is a different construction again: the mayor resigned
+    # and was re-elected in the February 2026 snap election, so the
+    # current term is the residue of the 2023 cycle. Both endpoints are
+    # stated directly by official sources (the city's list of past
+    # mayors gives the 2026-02-09 start; the city election commission
+    # publishes the 2027-04-08 expiry), and the term is not reset by
+    # the snap election.
+    # Sakai City's end (2027-06-08) is stated directly in the city
+    # election commission's official election-schedule page; its start
+    # (2023-06-09) follows the same Article 259 proviso chain, anchored
+    # by the previous term's expiry (2023-06-08) stated in the election
+    # commission's own minutes, and the two values agree.
     expected_term_ends = {
         "jp-local-400009": "2029-04-10",
         "jp-local-401307": "2026-12-06",
@@ -107,6 +122,9 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
         "jp-local-010006": "2027-04-22",
         "jp-local-012041": "2029-09-25",
         "jp-local-011002": "2027-05-01",
+        "jp-local-270008": "2027-04-08",
+        "jp-local-271004": "2027-04-08",
+        "jp-local-271403": "2027-06-08",
     }
     for term in terms:
         assert term["term_end"] == expected_term_ends[term["municipality_id"]]
@@ -147,9 +165,19 @@ def test_executive_term_starts_follow_statutory_counting() -> None:
         "jp-local-010006": "2023-04-23",
         "jp-local-012041": "2025-09-26",
         "jp-local-011002": "2023-05-02",
+        "jp-local-270008": "2023-04-09",
+        "jp-local-271004": "2026-02-09",
+        "jp-local-271403": "2023-06-09",
     }
     for term in terms:
         assert term["term_start"] == expected_term_starts[term["municipality_id"]]
+        if term["municipality_id"] == "jp-local-271004":
+            # Osaka City's current term is the residue of the 2023
+            # cycle after a resignation and snap re-election, so the
+            # four-year arithmetic does not apply: the end is the
+            # 2027-04-08 expiry published by the city election
+            # commission (asserted in the term-ends test above).
+            continue
         start = date.fromisoformat(term["term_start"])
         expected_end = start.replace(year=start.year + 4) - timedelta(days=1)
         assert term["term_end"] == expected_end.isoformat()
@@ -189,6 +217,12 @@ def test_manifesto_readiness_is_not_confused_with_progress() -> None:
     assert by_municipality["jp-local-011002"]["manifesto_source_ids"] == [
         "sapporo-city-mayor-election-2023-bulletin",
     ]
+    # Osaka City's source is the February 2026 snap-election bulletin:
+    # Issue #772 chose the most recent election's bulletin as the
+    # primary source for the current mayor's promises.
+    assert by_municipality["jp-local-271004"]["manifesto_source_ids"] == [
+        "osaka-city-mayor-election-2026-bulletin",
+    ]
     # Toyota City registers no manifesto source: the 2024 bulletin is
     # not extant as an official web publication and no verifiable
     # candidate publication was found (see the source search record).
@@ -197,6 +231,19 @@ def test_manifesto_readiness_is_not_confused_with_progress() -> None:
     # bulletin has no official web publication and no verifiable
     # candidate publication was found (see the source search record).
     assert by_municipality["jp-local-012041"]["manifesto_source_ids"] == []
+    # Osaka Prefecture registers the 2026 re-election bulletin: the
+    # promise stage (Issue #772) decided that the promises shown to
+    # voters at the most recent election are the appropriate source,
+    # even though the term itself started with the 2023 election. The
+    # 2023 bulletin remains reachable but unregistered (see the
+    # source search record).
+    assert by_municipality["jp-local-270008"]["manifesto_source_ids"] == [
+        "osaka-pref-governor-election-2026-bulletin",
+    ]
+    # Sakai City registers no manifesto source either: the 2023
+    # bulletin has no official web publication and no verifiable
+    # candidate publication was found (see the source search record).
+    assert by_municipality["jp-local-271403"]["manifesto_source_ids"] == []
 
 
 def test_every_executive_has_evidence_and_known_sources() -> None:

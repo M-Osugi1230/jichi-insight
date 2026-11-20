@@ -1,0 +1,96 @@
+[
+  {
+    "as_of": "2026-11-20",
+    "assembly_id": "jp-local-271403-assembly-2023",
+    "confidence": "high",
+    "id": "jp-local-271403-assembly-2023-disclosure-2026",
+    "items": [
+      {
+        "availability": "published",
+        "granularity": "member",
+        "item": "member_roster",
+        "note": "議員名簿を会派別・五十音順・区別・委員会別に掲載。",
+        "source_url": "https://www.city.sakai.lg.jp/shigikai/meibo/75932120220517150837343.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "faction",
+        "item": "faction_composition",
+        "note": "会派別名簿（2026年5月1日更新）に会派ごとの構成議員を掲載（大阪維新の会堺市議会議員団16人・公明党堺市議団11人・堺創志会5人・自由民主党堺市議会議員団5人・自由民主党・保守クラブ4人・日本共産党堺市議会議員団4人・会派に属さない議員2人、計47人）。",
+        "source_url": "https://www.city.sakai.lg.jp/shigikai/meibo/75932120220517150837343.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "assembly",
+        "item": "committee_composition",
+        "note": "委員会別名簿に常任委員会（6）・議会運営委員会・特別委員会（3）の構成を掲載。",
+        "source_url": "https://www.city.sakai.lg.jp/shigikai/meibo/75932120220517152932178.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "assembly",
+        "item": "proposals_and_results",
+        "note": "会期ごとに議決等案件一覧（番号・件名・議決年月日・結果）を掲載。平成23年分まで遡れる。",
+        "source_url": "https://www.city.sakai.lg.jp/shigikai/kekka/giketsukekka/giketsuanken.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "faction",
+        "item": "faction_votes",
+        "note": "「主な議案に対する会派等の賛否一覧」を議決日ごとに掲載するが、掲載は議会局が選定する一部の議案に限られ、選定基準の公式明記はない。令和8年第4回定例会では42件中10件のみ掲載。掲載されない議案の会派別賛否は公表されておらず、全会一致の推定はできない。",
+        "source_url": "https://www.city.sakai.lg.jp/shigikai/kekka/giketsukekka/sanpiichiran051220.html"
+      },
+      {
+        "availability": "not_published",
+        "granularity": "none",
+        "item": "member_votes",
+        "note": "議員個人別の賛否は公表されていない。本会議場には令和6年4月から電子採決システムが導入されているが、個人別結果のWeb公表は確認できなかった。",
+        "source_url": null
+      },
+      {
+        "availability": "published",
+        "granularity": "document",
+        "item": "political_activity_expense_reports",
+        "note": "会派分・議員分の二層で、収支報告書・事業実施報告書・会計帳簿を収録する収支報告書等PDFを年度別に公開。現行のインターネット公開索引で到達できるのは令和5年度分以降（令和8年度4月分を含む）。",
+        "source_url": "https://www.city.sakai.lg.jp/shigikai/seimuchosa/seimukatsudouhi/internetopen/index.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "document",
+        "item": "political_activity_expense_receipts",
+        "note": "領収書等支払証拠書類のPDFも収支報告書等とあわせてWeb公開されている（本登録では領収書自体は登録対象にしない）。",
+        "source_url": "https://www.city.sakai.lg.jp/shigikai/seimuchosa/seimukatsudouhi/internetopen/index.html"
+      },
+      {
+        "availability": "not_published",
+        "granularity": "none",
+        "item": "inspection_trip_reports",
+        "note": "視察報告書の公表はない。「委員会活動（行政視察）」ページに委員会名・日程・視察都市・内容（テーマ）の一覧のみが掲載され、参加者・費用の公表もない。海外調査研究派遣は平成20年度以降未実施と公式明記されている。",
+        "source_url": "https://www.city.sakai.lg.jp/shigikai/seimuchosa/gaiyo.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "document",
+        "item": "meeting_minutes",
+        "note": "会議録は市議会ホームページで公開され、インターネット中継映像も提供されている（陳情回答綴の回答文にも明記）。",
+        "source_url": null
+      },
+      {
+        "availability": "published",
+        "granularity": "document",
+        "item": "petition_results",
+        "note": "陳情は関係する委員会でのみ審査され、審査結果（委員会・所管局の回答文）が陳情回答綴としてWeb公開される（採択・不採択の語彙による結論表示はない）。請願は本会議・委員会で審議され、年間の議決事項一覧に処理結果が集約公表される。",
+        "source_url": "https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/R8-3giannsyo.html"
+      }
+    ],
+    "review_status": "reviewed",
+    "sources": [
+      "sakai-city-assembly-official-site",
+      "sakai-city-assembly-members-by-faction",
+      "sakai-city-assembly-results-index",
+      "sakai-city-assembly-votes-index",
+      "sakai-city-assembly-expenses-index",
+      "sakai-city-assembly-inspections-fy2025"
+    ]
+  }
+]

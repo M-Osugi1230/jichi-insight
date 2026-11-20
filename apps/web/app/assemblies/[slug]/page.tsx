@@ -82,10 +82,13 @@ export default async function AssemblyDetailPage({params}:PageProps){
       <p className="eyebrow">Reviewed · Assembly accountability</p><h1>{assembly.name}</h1>
       <p>自治体議会の議案と表決、政務活動費、視察および情報公開範囲を公式資料に沿って表示します。議会が審議した予算と執行部の事業成果を、議会・議員の成績として結びつけません。</p>
       <p className={styles.attention}>確認できること：議案・議決結果と登録済みの公式資料。会派別・議員別の賛否は各議会の公開範囲でのみ表示します。議員や会派を採点・順位付けしません。</p>
+      {slug==="hokkaido-prefecture" ? <p className={styles.attention}>北海道議会は議員個人別・会派別の賛否を公表していません。政務活動費は集計値と閲覧制度のみを登録しています。委員会視察・議員派遣の個別資料は公表されていません。</p> : null}
+      {slug==="sapporo-city" ? <p className={styles.attention}>札幌市議会の賛否は会派別のみ公表され、議員個人別の賛否は公表されていません。政務活動費の領収書は閲覧申請形式のため登録対象外です。</p> : null}
+      {slug==="asahikawa-city" ? <p className={styles.attention}>旭川市議会の議員別賛否は賛否が分かれた8件のみ公表されています。全会一致の案件には議員別内訳がありません。陳情の賛否は「採択への賛否」であり、陳情内容への賛否と混同しません。</p> : null}
       {slug==="aichi-prefecture" ? <p className={styles.attention}>愛知県議会の会派の態度は、採決に先立って議会運営委員会で確認したもので、本会議の投票記録そのものではありません。無所属の内訳は原資料の印字に従い、議員数との不一致を補完・推計しません。</p> : null}
       {slug==="nagoya-city" ? <p className={styles.attention}>名古屋市会の議員別賛否は第134号（名古屋城天守閣の契約変更）のみ68人分が公表されています。他の登録議案は全会一致です。「議決に参加できない」は議長の立場を示し、欠席ではありません。</p> : null}
       {slug==="toyota-city" ? <p className={styles.attention}>豊田市議会の会派別採決人数は公式の印字どおりです。自民クラブは議長を除く・欠席1名の人数であり、会派所属人数と表決人数を同一視しません。</p> : null}
-      <p><Link href="/assemblies">6議会の一覧に戻る</Link></p>
+      <p><Link href="/assemblies">9議会の一覧に戻る</Link></p>
       <nav aria-label="ページ内のセクション">
         <a href="#basic">基本情報</a> ／ <a href="#proposals">会期と議案</a> ／ <a href="#votes">表決</a> ／ <a href="#expenses">政務活動費</a> ／ <a href="#trips">視察</a> ／ <a href="#disclosure">情報公開</a>
       </nav>
@@ -163,9 +166,10 @@ export default async function AssemblyDetailPage({params}:PageProps){
 
     <section id="votes" className={styles.section}>
       <h2>表決の公開範囲</h2>
-      <p className={styles.attention}>{slug==="nagoya-city"
+      <p className={styles.attention}>{slug==="asahikawa-city" ? "議員ごとの賛否は賛否が分かれた8件のみ公表されています。全会一致の案件には個別内訳がなく、陳情の表決は採択への賛否です。" : slug==="nagoya-city"
         ? "議員ごとの賛否は第134号のみ68人分が公式公表されています。残る議案は全会一致です。議長の「議決に参加できない」は欠席ではありません。"
         : "議員ごとの賛否は公表されていません。議員名簿や会派の表決から、個人の賛否を推測・復元することはしません。"}</p>
+      {slug==="sapporo-city" ? <p className={styles.attention}>札幌市議会は会派別の賛否のみ公表し、議員個人別の賛否は公表されていません。</p> : null}
       {noFactionVotes?<p className={styles.attention}>会派ごとの賛否は公表されていません。</p>:
         <p>会派別賛否は登録済み議案の「表決の公開範囲・会派別内訳」から確認できます。会派内で賛否が分かれた場合はその旨を記し、議員個人の賛否は特定しません。</p>}
       {slug==="aichi-prefecture" ? <p className={styles.attention}>会派別態度は採決に先立ち議会運営委員会で確認した態度であり、本会議の投票記録そのものではありません。無所属の人数内訳は原資料の印字を保持します。</p> : null}
@@ -175,8 +179,8 @@ export default async function AssemblyDetailPage({params}:PageProps){
     </section>
 
     <section id="expenses" className={styles.section}>
-      <h2>政務活動費（2025年度／令和7年度）</h2>
-      <p className={styles.attention}>{slug==="fukuoka-city"?
+      <h2>政務活動費（登録年度別）</h2>
+      <p className={styles.attention}>{slug==="hokkaido-prefecture" ? "北海道議会の政務活動費は集計値と閲覧制度のみが登録されています。領収書・個別支出を推計しません。" : slug==="sapporo-city" ? "札幌市議会の領収書は閲覧申請形式のため登録対象外です。" : slug==="fukuoka-city"?
         "福岡市議会は公式公開単位どおり会派交付分と議員個人分を併記します。":
         "公式公開単位は会派単位です。議員個人分の収支報告書は本登録に収録されておらず、個人別支出額を推測しません。"}
         {slug==="aichi-prefecture"
@@ -186,7 +190,7 @@ export default async function AssemblyDetailPage({params}:PageProps){
             : "領収書は窓口でのみ閲覧可能です。"}支出額の順位付けはしません。</p>
       <p className={styles.note}>掲載順は Reviewed 原資料の登録順です。交付額・支出額・残額は年度と公開単位を保ち、会派と議員の額を合算して個人の支出に帰属させません。</p>
       <div className={styles.recordList}>
-      {data.expenses.filter(exp=>exp.fiscal_year===2025).map(exp=><article className={styles.record} key={exp.id}>
+      {data.expenses.map(exp=><article className={styles.record} key={exp.id}>
         <h3>{exp.recipient_name}</h3>
         <p className={styles.note}>公開単位：{exp.recipient_type==="member"?"議員個人":"会派"}／年度：{exp.fiscal_year}</p>
         <dl className={styles.facts}>
@@ -195,9 +199,11 @@ export default async function AssemblyDetailPage({params}:PageProps){
           <div><dt>差引残額</dt><dd>{exp.returned_yen===null?
             "支出が交付額を超過（詳細は出典資料）":yen(exp.returned_yen)}</dd></div>
         </dl>
-        <details><summary>支出の内訳（報告書上の区分）</summary>
-          <ul>{exp.breakdown.map((b,i)=><li key={`${b.category}-${i}`}>{b.category}：{yen(b.amount_yen)}</li>)}</ul>
-        </details>
+        {exp.breakdown.length > 0 ? (
+          <details><summary>支出の内訳（報告書上の区分）</summary>
+            <ul>{exp.breakdown.map((b,i)=><li key={`${b.category}-${i}`}>{b.category}：{yen(b.amount_yen)}</li>)}</ul>
+          </details>
+        ) : <p className={styles.note}>支出の内訳：集計値のみ登録（科目別内訳は未収録）</p>}
         <p className={styles.note}>領収書：{exp.receipt_access==="in_person_only"?"窓口でのみ閲覧可能":exp.receipt_access==="published"?"Web 公表あり":exp.receipt_access==="not_published"?"Web では公表されていません":"公開状況を要確認"}。報告書：{exp.report_status==="published"?"公表あり":"公開状況未確認"}。</p>
         <Sources ids={exp.sources} available={data.sources}/>
         <EvidenceLink packets={evidenceFor(data,exp.id)} sources={data.sources}/>
@@ -209,6 +215,7 @@ export default async function AssemblyDetailPage({params}:PageProps){
 
     <section id="trips" className={styles.section}>
       <h2>視察・海外活動（現任期）</h2>
+      {slug==="hokkaido-prefecture" ? <p className={styles.attention}>北海道議会の委員会視察・議員派遣の資料は公表されておらず、個別レコードは未登録です。</p> : null}
       {slug==="kitakyushu-city" ? <p className={styles.attention}>北九州市議会では現任期分の視察報告書は公表されていません。確認できた過去の視察資料は現任期より前のため、現任期の実績として表示しません。</p>:null}
       {slug==="aichi-prefecture" || slug==="nagoya-city" ? <p className={styles.attention}>この議会の委員会視察報告書・一覧は公式 Web 上で公表が確認できず、本サイトでは未登録です。別制度の海外調査団・議員派遣報告書を委員会視察の実績へ転用しません。</p> : null}
       {data.trips.length ? <div className={styles.recordList}>

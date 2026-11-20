@@ -22,6 +22,7 @@ import {
 import { defaultOgImages } from "@/lib/pageMetadata";
 import { loadGenericCityFinance } from "@/lib/genericCityFinance";
 import { isProjectArea } from "@/lib/projectRegistry";
+import { currentExecutiveTerms, promisesForExecutive } from "@/lib/executives";
 
 import styles from "./page.module.css";
 
@@ -309,6 +310,26 @@ export default async function Phase15CityPage({
           <a href="#boundary-title">確認の範囲</a>
         </nav>
         <CityOverview city={city} />
+        {(slug === "osaka-city" || slug === "sakai-city") ? (() => {
+          const mayor = currentExecutiveTerms.find((term) =>
+            term.municipality_id === `jp-local-${city.officialCode}` &&
+            term.office === "mayor" &&
+            (term.review_status === "reviewed" || term.review_status === "verified"),
+          );
+          const reviewedPromises = mayor ? promisesForExecutive(mayor).filter(
+            (promise) => promise.review_status === "reviewed" || promise.review_status === "verified",
+          ) : [];
+          return <section className="contentSection" id="mayor-promises" aria-labelledby="mayor-promises-title">
+            <h2 id="mayor-promises-title">{city.name}長の公約原文</h2>
+            <p>{mayor?.person_name ?? "市長"}の現任期：{mayor ? `${mayor.term_start} 〜 ${mayor.term_end}` : "未登録"}</p>
+            <p>{reviewedPromises.length > 0
+              ? `Reviewed 公約原文：${reviewedPromises.length}件`
+              : "公約原文：未登録"}</p>
+            <p>未登録は公約の不存在を意味しません。政策成果や公約達成率は独自に判定しません。</p>
+            <p><Link href={`/promises#${slug}`}>公約原文の登録状況と根拠を見る</Link></p>
+          </section>;
+        })() : null}
+
 
         <section className="contentSection" aria-labelledby="promise-title">
           <div className={styles.sectionHeading}>
