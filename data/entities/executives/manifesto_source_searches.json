@@ -347,5 +347,33 @@
     ],
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-kawasaki-city-2025",
+    "executive_term_id": "jp-local-141305-executive-2025-11-19",
+    "searched_at": "2026-11-21",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "general_web_search"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "kawasaki-city-mayor-election-2025-bulletin"
+    ],
+    "checked_source_ids": [
+      "kawasaki-city-mayor-election-2025-bulletin",
+      "kawasaki-city-mayor-election-2025-schedule",
+      "kawasaki-city-mayor-election-2025-results"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "選挙公報の単独PDFは、川崎市の選挙特設サイトが選挙ごとに差し替えられるため到達できなかった。一方で、市選挙管理委員会の「選挙の記録」（2026年3月発行）第8章(3)「選挙公報」に公報そのものが画像で再録されており、市公式サイトの「選挙の記録」ページから安定して到達できることを確認したため、この再録を原典として登録し、分割レビュー（manifesto-review-jp-local-141305-2025）を経て公約13件を作成した。再録は公報の掲載内容そのものであり、候補者提出原稿をそのまま掲載した公式文書であるため、原典としての格付けは high とした。公報より詳細な候補者資料（政策パンフレット等）の安定した所在は特定していないが、存在しないという主張はしない。",
+    "next_actions": [
+      "選挙公報の単独PDFの現存を、市の公式サイト内の別経路で引き続き確認する。",
+      "2029年の次回市長選挙では、選挙期間中に公報の公式掲載を確認し、次任期の原典として登録する。"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]
