@@ -435,6 +435,35 @@
     "confidence": "high"
   },
   {
+    "id": "manifesto-source-search-saitama-pref-2023",
+    "executive_term_id": "jp-local-110001-executive-2023-08-31",
+    "searched_at": "2026-11-21",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "saitama-pref-governor-election-2023-bulletin"
+    ],
+    "checked_source_ids": [
+      "saitama-pref-governor-election-2023-results",
+      "saitama-pref-governor-election-2023-bulletin"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "埼玉県選挙管理委員会の公式ページ「埼玉県知事選挙（令和5年8月6日執行）結果」から選挙公報PDFへ到達できることを段階0の棚卸しで確認し、2026-11-21に公報PDF（全2ページ、997,146バイト。公式表記の974KBと一致）を県公式サイトから直接取得した。1ページ目上段の大野もとひろ候補欄（「これからの政策（抜粋）」の番号項目4件・●項目8件）を確認し、選挙公報を出典として登録、分割レビュー（manifesto-review-jp-local-110001-2023）を経て公約レコード12件を作成した。PDFのテキスト層は選挙管理委員会の定型文のみで候補者欄は画像形式であることを実測し、登録文は描画画像（200dpi・300dpi）の照合で転記した。選挙公報は候補者提出原稿をそのまま印刷した公式文書であり、第三者のコピーではなく県公式サイトから直接取得できたため、公約レコードの confidence は high とした。候補者欄には「これまでの実績・政策詳細は公式LINEでご覧ください」との案内があるが、その内容の安定した所在は本探索では特定しておらず、資料が存在しないとは判定しない。",
+    "next_actions": [
+      "公式LINEの実績・政策詳細の安定した所在が特定できれば、登録済みの公約文と照合する",
+      "未接続の公約（交通の利便性、環境と経済の両立、スタートアップ支援、DXと行政改革、県庁及び地域機関の建替検討、持続的な発展に向けた戦略的転換、あらゆる人が生き生きと活躍できる居場所と社会）について、計画・事業資料への進捗証拠の接続を拡充する",
+      "2027年8月の任期満了に伴う次回知事選挙では、新任期の公約原文資料として選挙公報を改めて登録する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
+  },
+  {
     "id": "manifesto-source-search-kawaguchi-city-2026",
     "executive_term_id": "jp-local-112038-executive-2026-02-09",
     "searched_at": "2026-11-21",

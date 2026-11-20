@@ -237,6 +237,24 @@
     "confidence": "high"
   },
   {
+    "id": "manifesto-review-jp-local-110001-2023",
+    "executive_term_id": "jp-local-110001-executive-2023-08-31",
+    "source_id": "saitama-pref-governor-election-2023-bulletin",
+    "candidate_name": "大野 元裕",
+    "source_location": "全2ページPDF・1ページ目上段の候補者欄",
+    "review_scope": "candidate_panel",
+    "statement_boundary": "mixed",
+    "segmentation_status": "segmented",
+    "promise_records_created": 12,
+    "reason_codes": [
+      "other"
+    ],
+    "review_note": "候補者欄はポスター形式で、見出し「守り抜く！ 県民の命 暮らし 未来」の下に、左側に「4年間の実績（抜粋）」として7つの実績枠（コロナ対策／災害対応／公共事業／エネルギー・物価高騰／デジタル・トランスフォーメーション（DX）／女性活躍／子ども支援）と吹き出し「まだまだ数多い、日本をリードする埼玉発の施策」、右側に「これからの政策（抜粋）」として番号項目4件と各項目の●項目（各2件、計8件）、欄の下部にプロフィールが配置されている。実績・略歴・顔写真は公約ではないためレコード化しなかった。見出し文（スローガン）もレコード化していない。番号項目4件は●項目の単なる見出しではなく、項目1の災害対応の要素や項目4の「あらゆる人」という対象範囲など、●項目にない内容を含む政策の柱であるため、公約レコードとして登録した（●項目群と主題が重なる項目があることは extraction_note と証拠パケットの open_questions に残す）。●項目8件は原文上の境界が明確なため、これを単位に登録した。公約部分に数値目標・期限・財源の明示はない（項目3の●項目1の「建替検討」は検討の表明であり、実施や期限の約束としては登録していない）。候補者欄は画像形式（テキスト層は選挙管理委員会の定型文のみ）のため、登録文はPDFの描画画像（200dpi・300dpi）から転記し、複数解像度で照合した。",
+    "last_reviewed_at": "2026-11-21",
+    "review_status": "reviewed",
+    "confidence": "high"
+  },
+  {
     "id": "manifesto-review-jp-local-112038-2026",
     "executive_term_id": "jp-local-112038-executive-2026-02-09",
     "source_id": "kawaguchi-city-mayor-election-2026-bulletin",

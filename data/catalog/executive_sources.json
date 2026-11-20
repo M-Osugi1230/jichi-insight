@@ -1,5 +1,5 @@
 {
-  "version": "0.24.0",
+  "version": "0.25.0",
   "updated_at": "2026-11-21",
   "scope": "pilot",
   "records": [
@@ -1052,6 +1052,20 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "さいたま市選挙管理委員会の公式開票結果表。当選人 大野もとひろ（大野元裕、無所属）の合計得票1,138,973票を示し、見出しに「当選人の任期 令和5年8月31日～令和9年8月30日」と開始日・満了日の双方を日単位で明記する。"
+    },
+    {
+      "id": "saitama-pref-governor-election-2023-bulletin",
+      "municipality_key": "saitama-prefecture",
+      "organization": "埼玉県選挙管理委員会",
+      "category": "election",
+      "title": "令和5年8月6日執行 埼玉県知事選挙 選挙公報（大野もとひろ候補欄）",
+      "url": "https://www.pref.saitama.lg.jp/documents/240322/senkyokoho.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "候補者提出原稿を写真製版で掲載した全2ページの公式選挙公報。大野もとひろ候補欄は1ページ目上段。候補者欄は画像形式（テキスト層は選挙管理委員会の定型文のみ）のため、公約文はPDFの描画画像（200dpi・300dpi）の照合で転記した。"
     },
     {
       "id": "kawaguchi-city-mayor-election-2026-bulletin",
