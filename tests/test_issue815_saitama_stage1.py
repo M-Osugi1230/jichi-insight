@@ -210,11 +210,14 @@ def test_saitama_governor_term() -> None:
     assert term["term_start"] == "2023-08-31"
     assert term["term_end"] == "2027-08-30"
     assert term["election_date"] == "2023-08-06"
-    # No manifesto source is registered at stage 1: the bulletin is
-    # officially published, but whether its text layer is
-    # machine-readable has not been measured; the promise stage
-    # decides.
-    assert term["manifesto_source_ids"] == []
+    # At stage 1 no manifesto source was registered yet: the
+    # bulletin is officially published, but whether its text layer
+    # is machine-readable had not been measured. Stage 3
+    # (Issue #822) measured it (the candidate panels are image-only)
+    # and registered the bulletin as the manifesto source.
+    assert term["manifesto_source_ids"] == [
+        "saitama-pref-governor-election-2023-bulletin"
+    ]
 
 
 def test_saitama_catalog_shape() -> None:

@@ -327,7 +327,9 @@
     "term_end": "2027-08-30",
     "election_date": "2023-08-06",
     "status": "current",
-    "manifesto_source_ids": [],
+    "manifesto_source_ids": [
+      "saitama-pref-governor-election-2023-bulletin"
+    ],
     "review_status": "reviewed",
     "confidence": "high",
     "sources": [
@@ -354,6 +356,27 @@
     "sources": [
       "saitama-city-mayor-election-2025-results",
       "saitama-city-mayor-election-2025-bulletin"
+    ]
+  },
+  {
+    "id": "jp-local-112038-executive-2026-02-09",
+    "municipality_id": "jp-local-112038",
+    "office": "mayor",
+    "person_name": "岡村 ゆり子",
+    "term_start": "2026-02-09",
+    "term_end": "2030-02-08",
+    "election_date": "2026-02-01",
+    "status": "current",
+    "manifesto_source_ids": [
+      "kawaguchi-city-mayor-election-2026-bulletin"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "kawaguchi-city-koho-2026-03-inauguration",
+      "kawaguchi-city-election-2026-schedule-press",
+      "kawaguchi-city-mayor-election-2026-results",
+      "kawaguchi-city-mayor-election-2026-bulletin"
     ]
   }
 ]

@@ -41,15 +41,15 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 78
-    assert len({record["id"] for record in catalog["records"]}) == 78
+    assert len(catalog["records"]) == 84
+    assert len({record["id"] for record in catalog["records"]}) == 84
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
     terms = load_json("data/entities/executives/executive_terms.json")
     packets = load_json("data/entities/executives/evidence_packets.json")
 
-    assert len(terms) == 17
+    assert len(terms) == 18
     assert {term["municipality_id"] for term in terms} == {
         "jp-local-400009",
         "jp-local-401307",
@@ -68,6 +68,7 @@ def test_executive_registry_matches_shared_contracts() -> None:
         "jp-local-141305",
         "jp-local-110001",
         "jp-local-111007",
+        "jp-local-112038",
     }
     for term in terms:
         assert validation_errors("schemas/executive_term.schema.json", term) == []
@@ -146,6 +147,13 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
     # states the winner's term itself in its title (2025-05-27 to
     # 2029-05-26), so both endpoints are the published values and no
     # statutory construction is needed.
+    # Kawaguchi City's end (2030-02-08) and start (2026-02-09) are
+    # both stated day-exact in the city's official public-relations
+    # magazine (March 2026 issue, page 2: took office on 9 February,
+    # term until 8 February 2030); the start also follows the Article
+    # 259 proviso chain, anchored by the previous term's expiry
+    # (2026-02-08) stated in the election commission's 2025-05-16
+    # press release, and the two values agree.
     expected_term_ends = {
         "jp-local-400009": "2029-04-10",
         "jp-local-401307": "2026-12-06",
@@ -164,6 +172,7 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
         "jp-local-141305": "2029-11-18",
         "jp-local-110001": "2027-08-30",
         "jp-local-111007": "2029-05-26",
+        "jp-local-112038": "2030-02-08",
     }
     for term in terms:
         assert term["term_end"] == expected_term_ends[term["municipality_id"]]
@@ -212,6 +221,7 @@ def test_executive_term_starts_follow_statutory_counting() -> None:
         "jp-local-141305": "2025-11-19",
         "jp-local-110001": "2023-08-31",
         "jp-local-111007": "2025-05-27",
+        "jp-local-112038": "2026-02-09",
     }
     for term in terms:
         assert term["term_start"] == expected_term_starts[term["municipality_id"]]
@@ -311,18 +321,28 @@ def test_manifesto_readiness_is_not_confused_with_progress() -> None:
     assert by_municipality["jp-local-141305"]["manifesto_source_ids"] == [
         "kawasaki-city-mayor-election-2025-bulletin",
     ]
-    # Saitama Prefecture registers no manifesto source at this stage:
-    # the 2023 bulletin is officially published and reachable from the
-    # election commission's result page, but whether its text layer is
-    # machine-readable has not been measured, so the promise decision
-    # is deferred to the cluster's promise stage.
-    assert by_municipality["jp-local-110001"]["manifesto_source_ids"] == []
+    # Saitama Prefecture registers the 2023 bulletin: the promise
+    # stage (Issue #822) measured the bulletin PDF (the text layer
+    # holds only the election commission's boilerplate; the candidate
+    # panels are image-only), transcribed Governor Ono's panel from
+    # rendered images at multiple resolutions and connected the
+    # bulletin to the governor's term.
+    assert by_municipality["jp-local-110001"]["manifesto_source_ids"] == [
+        "saitama-pref-governor-election-2023-bulletin",
+    ]
     # Saitama City registers the 2025 bulletin: the city election
     # commission publishes the bulletin PDF on its official past-results
     # page, and Issue #822 transcribed the image-only candidate panel
     # from rendered images at multiple resolutions.
     assert by_municipality["jp-local-111007"]["manifesto_source_ids"] == [
         "saitama-city-mayor-election-2025-bulletin",
+    ]
+    # Kawaguchi City's source is the February 2026 election bulletin
+    # itself, published as a standalone PDF on the city's official
+    # election-result page: Issue #822 registered the promises of the
+    # mayor elected in that election from the bulletin panel.
+    assert by_municipality["jp-local-112038"]["manifesto_source_ids"] == [
+        "kawaguchi-city-mayor-election-2026-bulletin",
     ]
 
 

@@ -104,6 +104,7 @@ export type ManifestoSourceSearchEvidencePacket = {
 };
 
 const municipalityIdToKey = {
+  "jp-local-112038": "kawaguchi-city",
   "jp-local-110001": "saitama-prefecture",
   "jp-local-111007": "saitama-city",
   "jp-local-141305": "kawasaki-city",

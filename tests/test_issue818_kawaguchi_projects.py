@@ -139,8 +139,42 @@ def test_selected_projects_match_records() -> None:
         assert record["municipality_id"] == MID
         assert record["fiscal_year"] == 2026
         assert record["review_status"] == "reviewed"
-        # Stage 3 (promises) has not run yet, so no promise links exist.
-        assert record["related_promise_ids"] == []
+        # Stage 3 (Issue #822) connected twelve promises; the reverse
+        # links are pinned here so the connection cannot silently
+        # disappear.
+        expected_links = {
+            "jp-local-112038-project-2026-child-wellbeing-support": [
+                "jp-local-112038-executive-2026-02-09-promise-005"
+            ],
+            "jp-local-112038-project-2026-multi-stakeholder-collaboration": [
+                "jp-local-112038-executive-2026-02-09-promise-007"
+            ],
+            "jp-local-112038-project-2026-mutual-respect-community": [
+                "jp-local-112038-executive-2026-02-09-promise-008",
+                "jp-local-112038-executive-2026-02-09-promise-011",
+            ],
+            "jp-local-112038-project-2026-lifelong-learning-sports": [
+                "jp-local-112038-executive-2026-02-09-promise-009",
+                "jp-local-112038-executive-2026-02-09-promise-016",
+            ],
+            "jp-local-112038-project-2026-disaster-resilient-safe-city": [
+                "jp-local-112038-executive-2026-02-09-promise-012"
+            ],
+            "jp-local-112038-project-2026-elderly-healthy-active-life": [
+                "jp-local-112038-executive-2026-02-09-promise-014"
+            ],
+            "jp-local-112038-project-2026-water-and-greenery": [
+                "jp-local-112038-executive-2026-02-09-promise-017"
+            ],
+            "jp-local-112038-project-2026-economic-activity-employment": [
+                "jp-local-112038-executive-2026-02-09-promise-018"
+            ],
+            "jp-local-112038-project-2026-planned-urban-development": [
+                "jp-local-112038-executive-2026-02-09-promise-020",
+                "jp-local-112038-executive-2026-02-09-promise-021",
+            ],
+        }
+        assert record["related_promise_ids"] == expected_links.get(record["id"], [])
 
 
 def test_budget_amounts_are_explicitly_unregistered() -> None:

@@ -25,8 +25,8 @@ export type MunicipalityKey =
   | "sapporo-city"
   | "asahikawa-city"
   | "saitama-prefecture"
-  | "saitama-city";
-
+  | "saitama-city"
+  | "kawaguchi-city";
 export type SourceRecord = {
   id: string;
   municipality_key: MunicipalityKey;
@@ -88,6 +88,12 @@ export const municipalityMeta: Record<
     summary: "計画・財政・重点事業に加え、清水勇人市長の任期と Reviewed 公約12件を公式出典で確認します。自治体別ページは準備中です。",
     status: "財政データ公開", href: null,
     fiscalSummary: "Reviewed 54項目（財政レコード3件・決算51件）",
+  },
+  "kawaguchi-city": {
+    name: "川口市", type: "中核市",
+    summary: "第6次川口市総合計画、2026年度成立後当初予算、2022〜2024年度の普通会計決算、重点事業10系列と岡村ゆり子市長の現任期・公約26件を確認します。自治体別ページは準備中です。",
+    status: "財政データ公開", href: null,
+    fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
   },
   "kawasaki-city": {
     name: "川崎市", type: "政令指定都市",

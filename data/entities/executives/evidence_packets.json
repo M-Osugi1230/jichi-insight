@@ -1006,5 +1006,70 @@
       "登録済み事業と接続していない公約3件については、対応する事業が登録され次第、接続を拡充する。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kawaguchi-city-current-mayor-term",
+    "subject_type": "executive_term",
+    "subject_id": "jp-local-112038-executive-2026-02-09",
+    "claims": [
+      {
+        "field": "person_name",
+        "statement": "岡村ゆり子は現職の川口市長であり、1期目である。広報かわぐち2026年3月号は経歴として川口市議会議員（平成27年5月初当選）、埼玉県議会議員（平成31年4月初当選・令和5年4月再選）、令和8年2月に川口市長初当選と記載する。",
+        "source_ids": [
+          "kawaguchi-city-koho-2026-03-inauguration"
+        ],
+        "location_note": "広報かわぐち2026年3月号2ページの「川口市長 岡村ゆり子氏」経歴欄。",
+        "decision": "accepted",
+        "review_note": "現職性と期数は市の公式広報に基づく。"
+      },
+      {
+        "field": "election_date",
+        "statement": "直近の選挙は2026年2月1日執行の川口市長選挙で（告示日は同年1月25日、選挙事由は任期満了）、候補者6人のうち岡村ゆり子が85,637票で当選した。有効投票は192,479票、無効投票は2,378票、投票者総数は194,859人であった。得票数は市の公式開票結果（23時35分確定）で現在も確認できる。首長レコード自体に得票数の項目はないため、得票数はこの証拠パケットにのみ記録する。",
+        "source_ids": [
+          "kawaguchi-city-mayor-election-2026-results",
+          "kawaguchi-city-election-2026-schedule-press"
+        ],
+        "location_note": "開票結果PDFの候補者別得票数表と、選挙日程のプレスリリース。",
+        "decision": "accepted",
+        "review_note": "得票数は開票結果PDFを直接読み取り照合した。広報かわぐち2026年3月号の候補者別得票数とも一致する。"
+      },
+      {
+        "field": "term_start",
+        "statement": "任期開始日は2026年2月9日であり、広報かわぐち2026年3月号に「新たな市長として2月9日に就任しました」と日単位で明記されている。前任期の満了日は2026年2月8日と市選挙管理委員会のプレスリリースに明記されており、本選挙は任期満了による選挙として満了日より前に執行されたため、公職選挙法第259条ただし書の構成（任期は前任期満了日の翌日から起算）とも一致する。",
+        "source_ids": [
+          "kawaguchi-city-koho-2026-03-inauguration",
+          "kawaguchi-city-election-2026-schedule-press"
+        ],
+        "location_note": "広報かわぐち2026年3月号2ページと、2025年5月16日プレスリリースの「市長任期満了日」欄。",
+        "decision": "accepted",
+        "review_note": "開始日は市の公式広報の日単位明記を正とし、法令の構成との一致も確認した。"
+      },
+      {
+        "field": "term_end",
+        "statement": "任期満了日は2030年2月8日であり、広報かわぐち2026年3月号に「任期は令和12年2月8日までの4年間です」と日単位で明記されている。開始日（2026年2月9日）に地方自治法第140条の4年を加えた満了日とも一致する。",
+        "source_ids": [
+          "kawaguchi-city-koho-2026-03-inauguration"
+        ],
+        "location_note": "広報かわぐち2026年3月号2ページ。",
+        "decision": "accepted",
+        "review_note": "公式明記の満了日を正とし、法令計算との一致も確認した。"
+      },
+      {
+        "field": "manifesto_source_ids",
+        "statement": "原典は2026年川口市長選挙の選挙公報であり、市の選挙結果ページから単独PDFで現在も到達できる。岡村ゆり子候補欄（公報（3）ページ下段）から公約26件を転記・登録したため、manifesto_source_ids に接続した。原典探索の記録は manifesto-source-search-kawaguchi-city-2026、分割レビューは manifesto-review-jp-local-112038-2026 にある。",
+        "source_ids": [
+          "kawaguchi-city-mayor-election-2026-bulletin",
+          "kawaguchi-city-mayor-election-2026-results-page"
+        ],
+        "location_note": "選挙公報（3）ページ下段の岡村ゆり子候補欄と、選挙結果ページの公報へのリンク。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、描画画像を複数解像度で照合して転記した。"
+      }
+    ],
+    "open_questions": [
+      "埼玉県選挙管理委員会の任期満了一覧における川口市長の任期満了日（2030年2月8日）の明記照合は未実施である（市の公式広報で開始日・満了日とも日単位の明記が取れているため登録上の支障はない。一覧が更新されたら照合する）。",
+      "前市長・奥ノ木信夫の term は登録していない（段階1の判断で、深掘り対象は現任期のみとし、前任者の在職経緯は棚卸し記録に残した。横浜市の前任者の扱いと同じ）。"
+    ],
+    "review_status": "reviewed"
   }
 ]

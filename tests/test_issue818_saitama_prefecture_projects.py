@@ -61,6 +61,25 @@ SLUGS = {
 # replacement indicator for measure 16, hence one extra record.
 EXPECTED_KPI_TOTALS = {2022: 21, 2023: 21, 2024: 22, 2025: 21}
 
+# Reverse links added by the stage-3 promise registration (Issue #822):
+# only the FY2025 records carry them, mirroring the promise records.
+_TERM = "jp-local-110001-executive-2023-08-31"
+EXPECTED_PROMISE_LINKS = {
+    f"{MID}-project-2025-livable-community-development": [
+        f"{_TERM}-promise-001",
+        f"{_TERM}-promise-002",
+    ],
+    f"{MID}-project-2025-employment-support-environment": [
+        f"{_TERM}-promise-009",
+    ],
+    f"{MID}-project-2025-elderly-community-care": [
+        f"{_TERM}-promise-011",
+    ],
+    f"{MID}-project-2025-declining-birthrate-measures": [
+        f"{_TERM}-promise-012",
+    ],
+}
+
 
 def load_json(relative: str) -> Any:
     return json.loads((ROOT / relative).read_text(encoding="utf-8"))
@@ -130,7 +149,12 @@ def test_series_and_yearly_records() -> None:
             assert record["official_title"] == title
             assert record["parent_policy"] == needle
             assert record["review_status"] == "reviewed"
-            assert record["related_promise_ids"] == []
+            # Stage 3 (Issue #822) added the governor's promise links
+            # to the FY2025 records of four series; every other record
+            # stays unlinked.
+            assert record["related_promise_ids"] == EXPECTED_PROMISE_LINKS.get(
+                record["id"], []
+            )
             assert record["sources"][0] == "saitama-pref-five-year-plan-part2"
             assert record["sources"][1] == f"saitama-pref-policy-evaluation-fy{year}"
 
