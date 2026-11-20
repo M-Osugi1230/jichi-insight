@@ -4,7 +4,6 @@ on:
   pull_request:
     branches:
       - main
-      - feat/cluster4-osaka-integration # Temporary stacked-PR trigger; remove on integration
       # Stacked PR #755: integration data PR #754 must receive the same smoke check.
   workflow_dispatch:
   schedule:
