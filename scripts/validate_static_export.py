@@ -492,7 +492,7 @@ def validate_kanagawa_cluster_sections() -> list[str]:
     )
     for slug, name, disclosure in expected:
         match = re.search(
-            rf'<section\\b(?=[^>]*\\bid="{re.escape(slug)}")[^>]*>(.*?)</section>',
+            rf'<section\b(?=[^>]*\bid="{re.escape(slug)}")[^>]*>(.*?)</section>',
             content,
             flags=re.DOTALL,
         )
