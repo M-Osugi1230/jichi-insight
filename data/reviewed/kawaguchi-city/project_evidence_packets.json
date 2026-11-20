@@ -1,0 +1,1042 @@
+[
+ {
+  "id": "evidence-jp-local-112038-project-2026-healthy-life",
+  "subject_type": "project",
+  "subject_id": "jp-local-112038-project-2026-healthy-life",
+  "claims": [
+   {
+    "field": "registration_unit",
+    "statement": "本登録の単位は前期基本計画の「施策」とした。市の行政評価では、各施策に進捗を管理するための計測可能な目標指標が設定され、施策評価として A〜D の総合評価（実施計画事業の総評価60点満点の平均に基づく）が施策単位で付される（令和7年度実施分の「行政評価内部評価結果の概要」で仕組みを確認した）。単位施策には固有の目標指標・公式評価は設定されない。実施計画事業（事業別予算の細々目、令和8年度は798件）は事務事業評価の対象だが、第6次計画分（令和8年度）の評価調書は未公表であり、実施計画書の各論が事業名・予算額を掲載する範囲も主な事業128件にとどまるため、本段階では事業単位の登録は行わない。事業単位の登録は、第6次計画分の事務事業評価の調書が公表され次第、追加登録の対象とする。",
+    "source_ids": [
+     "kawaguchi-city-admin-evaluation-fy2025-summary",
+     "kawaguchi-city-implementation-plan-fy2026",
+     "kawaguchi-city-sixth-plan-basic-plan-introduction"
+    ],
+    "location_note": "行政評価内部評価結果の概要（令和7年度）「1 行政評価内部評価結果の概要」、令和8年度版実施計画書 総論（4）実施計画の対象事業・各論（1）総括表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_title",
+    "statement": "施策名は「健康な心と身体を育むまちづくり」。めざす姿I 健康で、自分らしく生き生きと暮らせるまちの施策1であり、前期基本計画各論と令和8年度版実施計画書の目次・各論のいずれでも同じ掲載順・名称で確認した。",
+    "source_ids": [
+     "kawaguchi-city-sixth-plan-chapter-goal1",
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "基本計画各論 めざす姿Iの章、令和8年度版実施計画書 目次および各論（冊子p.7）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "parent_policy",
+    "statement": "本登録のparent_policyには、施策を直接束ねる計画単位として「めざす姿I 健康で、自分らしく生き生きと暮らせるまち」を用いた。",
+    "source_ids": [
+     "kawaguchi-city-sixth-plan-basic-concept",
+     "kawaguchi-city-sixth-plan-chapter-goal1"
+    ],
+    "location_note": "基本構想（8つのめざす姿）および基本計画各論の章立て",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "purpose",
+    "statement": "施策の目標は「市民の健康への関心を高めて自発的な健康づくりを促し、それを支える保健・医療体制を充実させることで、健康な心と身体を育むことができるまちをめざします。健康上の問題で日常生活が制限されることなく生活できる期間である「健康寿命」をできるだけ長くしていくための取り組みを推進します。」であり、施策の概要・単位施策（①保健・予防活動の推進、②医療体制の充実、③感染症対策の強化、④医療保険制度の充実）は基本計画各論および実施計画書各論の記載に基づく。",
+    "source_ids": [
+     "kawaguchi-city-sixth-plan-chapter-goal1",
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "令和8年度版実施計画書 各論（冊子p.7）「施策の目標」「施策の概要」「単位施策」",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "kpis",
+    "statement": "目標指標は実施計画書の目標指標表に掲載された4件（「この施策の推進が図られていると感じる人の割合」、「川口市民の65歳健康寿命（男性）」、「川口市民の65歳健康寿命（女性）」、「特定健康診査受診率」）を全て登録した。各指標には担当課・基準値・令和7年度実績値・中間目標（令和12年度）・最終目標（令和17年度）が示されている。登録では中間目標をtargetとし、最終目標は各KPIレコードのdefinitionに明記した。実績値は実施計画書の公表値（計画開始前の最新値）を登録し、市の公式な達成判定は未公表のためassessmentはin_progressとした。",
+    "source_ids": [
+     "kawaguchi-city-implementation-plan-fy2026",
+     "kawaguchi-city-sixth-plan-chapter-goal1"
+    ],
+    "location_note": "令和8年度版実施計画書 各論（冊子p.7）の目標指標表。基本計画各論の目標指標とも一致を確認した",
+    "decision": "accepted",
+    "review_note": "数値の対応は実施計画書の表の行単位で転記し、基本計画各論の掲載値と突き合わせた。特定健康診査受診率の中間目標45.0・最終目標60.0は実施計画書の「見方」ページ（冊子p.4）の再掲表でも同じ対応を確認した。"
+   },
+   {
+    "field": "responsible_department",
+    "statement": "基本計画・実施計画書は施策単位の担当課を掲載していないため、responsible_departmentはnullとした。目標指標ごとに担当課が示されており、その値は各KPIレコードのdefinitionに記録した。",
+    "source_ids": [
+     "kawaguchi-city-implementation-plan-fy2026",
+     "kawaguchi-city-sixth-plan-chapter-goal1"
+    ],
+    "location_note": "令和8年度版実施計画書 各論の目標指標表（担当課は指標単位の掲載）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "budget_records.initial_budget",
+    "statement": "川口市は施策単位の令和8年度当初予算額を公表していない。令和8年度版実施計画書の「めざす姿別実施計画事業総括表」が公表する金額は、めざす姿単位の実施計画事業の令和8年度予算額総計（本施策が属するめざす姿Iは32,395,006千円、企業会計を除く）と、主な事業（128件）単位の予算額のみであり、施策単位の集計は公表されていない。主な事業の予算額を合算して施策の金額とすることはしないため、本施策の令和8年度当初予算額は未登録とした（0では補完しない）。なお、令和8年度一般会計予算は議案第18号として2026年3月23日に原案可決され成立している。",
+    "source_ids": [
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "令和8年度版実施計画書 各論（1）「めざす姿別実施計画事業総括表」（冊子p.3）。総括表の数値は座標レベルの照合と合計検算（23施策・74単位施策・798事業・178,118,133千円）で一致を確認した",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_evaluation",
+    "statement": "公式評価は未登録（official_evaluationはnull）。行政評価（施策評価）は前年度の施策を対象に翌年度に実施・公表される仕組みであり、第6次計画の初年度である令和8年度分の施策評価は未公表である。第5次計画の施策（体系・名称が異なる）の評価結果は、版をまたいで引き継がない。第6次計画でも A〜D の総合評価の形式が継続するかは、初回公表をもって確認する。",
+    "source_ids": [
+     "kawaguchi-city-admin-evaluation-fy2025-summary",
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "行政評価内部評価結果の概要（令和7年度）は第5次計画の令和6年度分を対象とする文書であること",
+    "decision": "accepted",
+    "review_note": null
+   }
+  ],
+  "open_questions": [
+   "公式評価は未登録。第6次計画を対象とする行政評価（施策評価）の初回公表は令和8年度分について令和9年度の見込みだが、公表時期・形式（第5次計画と同型のA〜D総合評価かを含む）は未確認。公表され次第、official_evaluationを登録する。",
+   "金額は未登録。施策単位の当初予算額・決算額を掲載した公式資料は確認できていない（実施計画書の総括表はめざす姿単位の総計と主な事業単位の金額のみ）。公表され次第、更新サイクルで登録する。",
+   "KPIは未登録分として、令和8年度以降の実績値と市の公式な達成判定がある。実施計画書に掲載された令和7年度実績値（計画開始前の最新公表値）は登録済みであり、後続の実績値は市の進行管理・行政評価で公表され次第、更新サイクルで追加する。",
+   "実施計画事業（細々目）単位の登録は本段階では行っていない。第6次計画の実施計画事業を対象とする事務事業評価の調書が公表されれば、事業単位の追加登録が可能になる。",
+   "首長公約との接続は埼玉クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と施策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed"
+ },
+ {
+  "id": "evidence-jp-local-112038-project-2026-disaster-resilient-safe-city",
+  "subject_type": "project",
+  "subject_id": "jp-local-112038-project-2026-disaster-resilient-safe-city",
+  "claims": [
+   {
+    "field": "registration_unit",
+    "statement": "本登録の単位は前期基本計画の「施策」とした。市の行政評価では、各施策に進捗を管理するための計測可能な目標指標が設定され、施策評価として A〜D の総合評価（実施計画事業の総評価60点満点の平均に基づく）が施策単位で付される（令和7年度実施分の「行政評価内部評価結果の概要」で仕組みを確認した）。単位施策には固有の目標指標・公式評価は設定されない。実施計画事業（事業別予算の細々目、令和8年度は798件）は事務事業評価の対象だが、第6次計画分（令和8年度）の評価調書は未公表であり、実施計画書の各論が事業名・予算額を掲載する範囲も主な事業128件にとどまるため、本段階では事業単位の登録は行わない。事業単位の登録は、第6次計画分の事務事業評価の調書が公表され次第、追加登録の対象とする。",
+    "source_ids": [
+     "kawaguchi-city-admin-evaluation-fy2025-summary",
+     "kawaguchi-city-implementation-plan-fy2026",
+     "kawaguchi-city-sixth-plan-basic-plan-introduction"
+    ],
+    "location_note": "行政評価内部評価結果の概要（令和7年度）「1 行政評価内部評価結果の概要」、令和8年度版実施計画書 総論（4）実施計画の対象事業・各論（1）総括表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_title",
+    "statement": "施策名は「災害や危機に強く、誰もが安全・安心に暮らせるまちづくり」。めざす姿II 誰もがお互いを認め合い、安心して暮らせるまちの施策1であり、前期基本計画各論と令和8年度版実施計画書の目次・各論のいずれでも同じ掲載順・名称で確認した。",
+    "source_ids": [
+     "kawaguchi-city-sixth-plan-chapter-goal2",
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "基本計画各論 めざす姿IIの章、令和8年度版実施計画書 目次および各論（冊子p.23）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "parent_policy",
+    "statement": "本登録のparent_policyには、施策を直接束ねる計画単位として「めざす姿II 誰もがお互いを認め合い、安心して暮らせるまち」を用いた。",
+    "source_ids": [
+     "kawaguchi-city-sixth-plan-basic-concept",
+     "kawaguchi-city-sixth-plan-chapter-goal2"
+    ],
+    "location_note": "基本構想（8つのめざす姿）および基本計画各論の章立て",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "purpose",
+    "statement": "施策の目標は「災害や犯罪などのあらゆる脅威から市民の生命と財産を守るため、消防・救急体制の充実・強化や防犯意識の向上を図ることにより、誰もが安心して暮らせるまちをめざします。」であり、施策の概要・単位施策（①防災対策の充実、②治水・浸水対策の推進、③防犯対策の充実、④消防・救急・救助体制の充実、⑤危機管理体制の充実・強化）は基本計画各論および実施計画書各論の記載に基づく。",
+    "source_ids": [
+     "kawaguchi-city-sixth-plan-chapter-goal2",
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "令和8年度版実施計画書 各論（冊子p.23）「施策の目標」「施策の概要」「単位施策」",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "kpis",
+    "statement": "目標指標は実施計画書の目標指標表に掲載された3件（「この施策の推進が図られていると感じる人の割合」、「刑法犯認知件数」、「防災リーダー認定者数（累計数）」）を全て登録した。各指標には担当課・基準値・令和7年度実績値・中間目標（令和12年度）・最終目標（令和17年度）が示されている。登録では中間目標をtargetとし、最終目標は各KPIレコードのdefinitionに明記した。実績値は実施計画書の公表値（計画開始前の最新値）を登録し、市の公式な達成判定は未公表のためassessmentはin_progressとした。",
+    "source_ids": [
+     "kawaguchi-city-implementation-plan-fy2026",
+     "kawaguchi-city-sixth-plan-chapter-goal2"
+    ],
+    "location_note": "令和8年度版実施計画書 各論（冊子p.23）の目標指標表。基本計画各論の目標指標とも一致を確認した",
+    "decision": "accepted",
+    "review_note": "数値の対応は実施計画書の表の行単位で転記し、基本計画各論の掲載値と突き合わせた。特定健康診査受診率の中間目標45.0・最終目標60.0は実施計画書の「見方」ページ（冊子p.4）の再掲表でも同じ対応を確認した。"
+   },
+   {
+    "field": "responsible_department",
+    "statement": "基本計画・実施計画書は施策単位の担当課を掲載していないため、responsible_departmentはnullとした。目標指標ごとに担当課が示されており、その値は各KPIレコードのdefinitionに記録した。",
+    "source_ids": [
+     "kawaguchi-city-implementation-plan-fy2026",
+     "kawaguchi-city-sixth-plan-chapter-goal2"
+    ],
+    "location_note": "令和8年度版実施計画書 各論の目標指標表（担当課は指標単位の掲載）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "budget_records.initial_budget",
+    "statement": "川口市は施策単位の令和8年度当初予算額を公表していない。令和8年度版実施計画書の「めざす姿別実施計画事業総括表」が公表する金額は、めざす姿単位の実施計画事業の令和8年度予算額総計（本施策が属するめざす姿IIは5,158,920千円、企業会計を除く）と、主な事業（128件）単位の予算額のみであり、施策単位の集計は公表されていない。主な事業の予算額を合算して施策の金額とすることはしないため、本施策の令和8年度当初予算額は未登録とした（0では補完しない）。なお、令和8年度一般会計予算は議案第18号として2026年3月23日に原案可決され成立している。",
+    "source_ids": [
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "令和8年度版実施計画書 各論（1）「めざす姿別実施計画事業総括表」（冊子p.3）。総括表の数値は座標レベルの照合と合計検算（23施策・74単位施策・798事業・178,118,133千円）で一致を確認した",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_evaluation",
+    "statement": "公式評価は未登録（official_evaluationはnull）。行政評価（施策評価）は前年度の施策を対象に翌年度に実施・公表される仕組みであり、第6次計画の初年度である令和8年度分の施策評価は未公表である。第5次計画の施策（体系・名称が異なる）の評価結果は、版をまたいで引き継がない。第6次計画でも A〜D の総合評価の形式が継続するかは、初回公表をもって確認する。",
+    "source_ids": [
+     "kawaguchi-city-admin-evaluation-fy2025-summary",
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "行政評価内部評価結果の概要（令和7年度）は第5次計画の令和6年度分を対象とする文書であること",
+    "decision": "accepted",
+    "review_note": null
+   }
+  ],
+  "open_questions": [
+   "公式評価は未登録。第6次計画を対象とする行政評価（施策評価）の初回公表は令和8年度分について令和9年度の見込みだが、公表時期・形式（第5次計画と同型のA〜D総合評価かを含む）は未確認。公表され次第、official_evaluationを登録する。",
+   "金額は未登録。施策単位の当初予算額・決算額を掲載した公式資料は確認できていない（実施計画書の総括表はめざす姿単位の総計と主な事業単位の金額のみ）。公表され次第、更新サイクルで登録する。",
+   "KPIは未登録分として、令和8年度以降の実績値と市の公式な達成判定がある。実施計画書に掲載された令和7年度実績値（計画開始前の最新公表値）は登録済みであり、後続の実績値は市の進行管理・行政評価で公表され次第、更新サイクルで追加する。",
+   "実施計画事業（細々目）単位の登録は本段階では行っていない。第6次計画の実施計画事業を対象とする事務事業評価の調書が公表されれば、事業単位の追加登録が可能になる。",
+   "首長公約との接続は埼玉クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と施策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed"
+ },
+ {
+  "id": "evidence-jp-local-112038-project-2026-child-wellbeing-support",
+  "subject_type": "project",
+  "subject_id": "jp-local-112038-project-2026-child-wellbeing-support",
+  "claims": [
+   {
+    "field": "registration_unit",
+    "statement": "本登録の単位は前期基本計画の「施策」とした。市の行政評価では、各施策に進捗を管理するための計測可能な目標指標が設定され、施策評価として A〜D の総合評価（実施計画事業の総評価60点満点の平均に基づく）が施策単位で付される（令和7年度実施分の「行政評価内部評価結果の概要」で仕組みを確認した）。単位施策には固有の目標指標・公式評価は設定されない。実施計画事業（事業別予算の細々目、令和8年度は798件）は事務事業評価の対象だが、第6次計画分（令和8年度）の評価調書は未公表であり、実施計画書の各論が事業名・予算額を掲載する範囲も主な事業128件にとどまるため、本段階では事業単位の登録は行わない。事業単位の登録は、第6次計画分の事務事業評価の調書が公表され次第、追加登録の対象とする。",
+    "source_ids": [
+     "kawaguchi-city-admin-evaluation-fy2025-summary",
+     "kawaguchi-city-implementation-plan-fy2026",
+     "kawaguchi-city-sixth-plan-basic-plan-introduction"
+    ],
+    "location_note": "行政評価内部評価結果の概要（令和7年度）「1 行政評価内部評価結果の概要」、令和8年度版実施計画書 総論（4）実施計画の対象事業・各論（1）総括表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_title",
+    "statement": "施策名は「すべてのこどもの幸せにつながる支援の推進」。めざす姿III こどもをみんなで育み、こどもが輝き活躍するまちの施策1であり、前期基本計画各論と令和8年度版実施計画書の目次・各論のいずれでも同じ掲載順・名称で確認した。",
+    "source_ids": [
+     "kawaguchi-city-sixth-plan-chapter-goal3",
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "基本計画各論 めざす姿IIIの章、令和8年度版実施計画書 目次および各論（冊子p.39）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "parent_policy",
+    "statement": "本登録のparent_policyには、施策を直接束ねる計画単位として「めざす姿III こどもをみんなで育み、こどもが輝き活躍するまち」を用いた。",
+    "source_ids": [
+     "kawaguchi-city-sixth-plan-basic-concept",
+     "kawaguchi-city-sixth-plan-chapter-goal3"
+    ],
+    "location_note": "基本構想（8つのめざす姿）および基本計画各論の章立て",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "purpose",
+    "statement": "施策の目標は「すべてのこどもが幸せな状態で生まれ育ち、保護者が安心して必要な支援を受けられる体制を構築することで、こどもの健やかな成長と発達を図ります。」であり、施策の概要・単位施策（①妊娠期から幼児期までの支援の充実、②学童期・思春期の支援の充実、③青年期の支援の充実）は基本計画各論および実施計画書各論の記載に基づく。",
+    "source_ids": [
+     "kawaguchi-city-sixth-plan-chapter-goal3",
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "令和8年度版実施計画書 各論（冊子p.39）「施策の目標」「施策の概要」「単位施策」",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "kpis",
+    "statement": "目標指標は実施計画書の目標指標表に掲載された4件（「この施策の推進が図られていると感じる人の割合」、「保育所等の待機児童数」、「産後ケア事業の利用率」、「通学合宿の参加者数」）を全て登録した。各指標には担当課・基準値・令和7年度実績値・中間目標（令和12年度）・最終目標（令和17年度）が示されている。登録では中間目標をtargetとし、最終目標は各KPIレコードのdefinitionに明記した。実績値は実施計画書の公表値（計画開始前の最新値）を登録し、市の公式な達成判定は未公表のためassessmentはin_progressとした。",
+    "source_ids": [
+     "kawaguchi-city-implementation-plan-fy2026",
+     "kawaguchi-city-sixth-plan-chapter-goal3"
+    ],
+    "location_note": "令和8年度版実施計画書 各論（冊子p.39）の目標指標表。基本計画各論の目標指標とも一致を確認した",
+    "decision": "accepted",
+    "review_note": "数値の対応は実施計画書の表の行単位で転記し、基本計画各論の掲載値と突き合わせた。特定健康診査受診率の中間目標45.0・最終目標60.0は実施計画書の「見方」ページ（冊子p.4）の再掲表でも同じ対応を確認した。"
+   },
+   {
+    "field": "responsible_department",
+    "statement": "基本計画・実施計画書は施策単位の担当課を掲載していないため、responsible_departmentはnullとした。目標指標ごとに担当課が示されており、その値は各KPIレコードのdefinitionに記録した。",
+    "source_ids": [
+     "kawaguchi-city-implementation-plan-fy2026",
+     "kawaguchi-city-sixth-plan-chapter-goal3"
+    ],
+    "location_note": "令和8年度版実施計画書 各論の目標指標表（担当課は指標単位の掲載）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "budget_records.initial_budget",
+    "statement": "川口市は施策単位の令和8年度当初予算額を公表していない。令和8年度版実施計画書の「めざす姿別実施計画事業総括表」が公表する金額は、めざす姿単位の実施計画事業の令和8年度予算額総計（本施策が属するめざす姿IIIは50,976,839千円、企業会計を除く）と、主な事業（128件）単位の予算額のみであり、施策単位の集計は公表されていない。主な事業の予算額を合算して施策の金額とすることはしないため、本施策の令和8年度当初予算額は未登録とした（0では補完しない）。なお、令和8年度一般会計予算は議案第18号として2026年3月23日に原案可決され成立している。",
+    "source_ids": [
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "令和8年度版実施計画書 各論（1）「めざす姿別実施計画事業総括表」（冊子p.3）。総括表の数値は座標レベルの照合と合計検算（23施策・74単位施策・798事業・178,118,133千円）で一致を確認した",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_evaluation",
+    "statement": "公式評価は未登録（official_evaluationはnull）。行政評価（施策評価）は前年度の施策を対象に翌年度に実施・公表される仕組みであり、第6次計画の初年度である令和8年度分の施策評価は未公表である。第5次計画の施策（体系・名称が異なる）の評価結果は、版をまたいで引き継がない。第6次計画でも A〜D の総合評価の形式が継続するかは、初回公表をもって確認する。",
+    "source_ids": [
+     "kawaguchi-city-admin-evaluation-fy2025-summary",
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "行政評価内部評価結果の概要（令和7年度）は第5次計画の令和6年度分を対象とする文書であること",
+    "decision": "accepted",
+    "review_note": null
+   }
+  ],
+  "open_questions": [
+   "公式評価は未登録。第6次計画を対象とする行政評価（施策評価）の初回公表は令和8年度分について令和9年度の見込みだが、公表時期・形式（第5次計画と同型のA〜D総合評価かを含む）は未確認。公表され次第、official_evaluationを登録する。",
+   "金額は未登録。施策単位の当初予算額・決算額を掲載した公式資料は確認できていない（実施計画書の総括表はめざす姿単位の総計と主な事業単位の金額のみ）。公表され次第、更新サイクルで登録する。",
+   "KPIは未登録分として、令和8年度以降の実績値と市の公式な達成判定がある。実施計画書に掲載された令和7年度実績値（計画開始前の最新公表値）は登録済みであり、後続の実績値は市の進行管理・行政評価で公表され次第、更新サイクルで追加する。",
+   "実施計画事業（細々目）単位の登録は本段階では行っていない。第6次計画の実施計画事業を対象とする事務事業評価の調書が公表されれば、事業単位の追加登録が可能になる。",
+   "首長公約との接続は埼玉クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と施策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed"
+ },
+ {
+  "id": "evidence-jp-local-112038-project-2026-lifelong-learning-sports",
+  "subject_type": "project",
+  "subject_id": "jp-local-112038-project-2026-lifelong-learning-sports",
+  "claims": [
+   {
+    "field": "registration_unit",
+    "statement": "本登録の単位は前期基本計画の「施策」とした。市の行政評価では、各施策に進捗を管理するための計測可能な目標指標が設定され、施策評価として A〜D の総合評価（実施計画事業の総評価60点満点の平均に基づく）が施策単位で付される（令和7年度実施分の「行政評価内部評価結果の概要」で仕組みを確認した）。単位施策には固有の目標指標・公式評価は設定されない。実施計画事業（事業別予算の細々目、令和8年度は798件）は事務事業評価の対象だが、第6次計画分（令和8年度）の評価調書は未公表であり、実施計画書の各論が事業名・予算額を掲載する範囲も主な事業128件にとどまるため、本段階では事業単位の登録は行わない。事業単位の登録は、第6次計画分の事務事業評価の調書が公表され次第、追加登録の対象とする。",
+    "source_ids": [
+     "kawaguchi-city-admin-evaluation-fy2025-summary",
+     "kawaguchi-city-implementation-plan-fy2026",
+     "kawaguchi-city-sixth-plan-basic-plan-introduction"
+    ],
+    "location_note": "行政評価内部評価結果の概要（令和7年度）「1 行政評価内部評価結果の概要」、令和8年度版実施計画書 総論（4）実施計画の対象事業・各論（1）総括表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_title",
+    "statement": "施策名は「生涯学習・スポーツができる環境づくり」。めざす姿IV 学びとスポーツ・文化に親しみ、自己実現ができるまちの施策1であり、前期基本計画各論と令和8年度版実施計画書の目次・各論のいずれでも同じ掲載順・名称で確認した。",
+    "source_ids": [
+     "kawaguchi-city-sixth-plan-chapter-goal4",
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "基本計画各論 めざす姿IVの章、令和8年度版実施計画書 目次および各論（冊子p.53）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "parent_policy",
+    "statement": "本登録のparent_policyには、施策を直接束ねる計画単位として「めざす姿IV 学びとスポーツ・文化に親しみ、自己実現ができるまち」を用いた。",
+    "source_ids": [
+     "kawaguchi-city-sixth-plan-basic-concept",
+     "kawaguchi-city-sixth-plan-chapter-goal4"
+    ],
+    "location_note": "基本構想（8つのめざす姿）および基本計画各論の章立て",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "purpose",
+    "statement": "施策の目標は「誰もが生涯学習やスポーツに親しめる環境づくりを通じて、一人ひとりの個性や魅力を伸ばし、自己実現を図ります。」であり、施策の概要・単位施策（①生涯を通じて学び続けられる環境の充実、②目的に応じてスポーツ・レクリエーション活動に親しめる環境の充実）は基本計画各論および実施計画書各論の記載に基づく。",
+    "source_ids": [
+     "kawaguchi-city-sixth-plan-chapter-goal4",
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "令和8年度版実施計画書 各論（冊子p.53）「施策の目標」「施策の概要」「単位施策」",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "kpis",
+    "statement": "目標指標は実施計画書の目標指標表に掲載された3件（「この施策の推進が図られていると感じる人の割合」、「生涯学習施設（公民館等・図書館・科学館）の利用者数」、「スポーツ施設の利用者数」）を全て登録した。各指標には担当課・基準値・令和7年度実績値・中間目標（令和12年度）・最終目標（令和17年度）が示されている。登録では中間目標をtargetとし、最終目標は各KPIレコードのdefinitionに明記した。実績値は実施計画書の公表値（計画開始前の最新値）を登録し、市の公式な達成判定は未公表のためassessmentはin_progressとした。",
+    "source_ids": [
+     "kawaguchi-city-implementation-plan-fy2026",
+     "kawaguchi-city-sixth-plan-chapter-goal4"
+    ],
+    "location_note": "令和8年度版実施計画書 各論（冊子p.53）の目標指標表。基本計画各論の目標指標とも一致を確認した",
+    "decision": "accepted",
+    "review_note": "数値の対応は実施計画書の表の行単位で転記し、基本計画各論の掲載値と突き合わせた。特定健康診査受診率の中間目標45.0・最終目標60.0は実施計画書の「見方」ページ（冊子p.4）の再掲表でも同じ対応を確認した。"
+   },
+   {
+    "field": "responsible_department",
+    "statement": "基本計画・実施計画書は施策単位の担当課を掲載していないため、responsible_departmentはnullとした。目標指標ごとに担当課が示されており、その値は各KPIレコードのdefinitionに記録した。",
+    "source_ids": [
+     "kawaguchi-city-implementation-plan-fy2026",
+     "kawaguchi-city-sixth-plan-chapter-goal4"
+    ],
+    "location_note": "令和8年度版実施計画書 各論の目標指標表（担当課は指標単位の掲載）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "budget_records.initial_budget",
+    "statement": "川口市は施策単位の令和8年度当初予算額を公表していない。令和8年度版実施計画書の「めざす姿別実施計画事業総括表」が公表する金額は、めざす姿単位の実施計画事業の令和8年度予算額総計（本施策が属するめざす姿IVは11,002,697千円、企業会計を除く）と、主な事業（128件）単位の予算額のみであり、施策単位の集計は公表されていない。主な事業の予算額を合算して施策の金額とすることはしないため、本施策の令和8年度当初予算額は未登録とした（0では補完しない）。なお、令和8年度一般会計予算は議案第18号として2026年3月23日に原案可決され成立している。",
+    "source_ids": [
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "令和8年度版実施計画書 各論（1）「めざす姿別実施計画事業総括表」（冊子p.3）。総括表の数値は座標レベルの照合と合計検算（23施策・74単位施策・798事業・178,118,133千円）で一致を確認した",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_evaluation",
+    "statement": "公式評価は未登録（official_evaluationはnull）。行政評価（施策評価）は前年度の施策を対象に翌年度に実施・公表される仕組みであり、第6次計画の初年度である令和8年度分の施策評価は未公表である。第5次計画の施策（体系・名称が異なる）の評価結果は、版をまたいで引き継がない。第6次計画でも A〜D の総合評価の形式が継続するかは、初回公表をもって確認する。",
+    "source_ids": [
+     "kawaguchi-city-admin-evaluation-fy2025-summary",
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "行政評価内部評価結果の概要（令和7年度）は第5次計画の令和6年度分を対象とする文書であること",
+    "decision": "accepted",
+    "review_note": null
+   }
+  ],
+  "open_questions": [
+   "公式評価は未登録。第6次計画を対象とする行政評価（施策評価）の初回公表は令和8年度分について令和9年度の見込みだが、公表時期・形式（第5次計画と同型のA〜D総合評価かを含む）は未確認。公表され次第、official_evaluationを登録する。",
+   "金額は未登録。施策単位の当初予算額・決算額を掲載した公式資料は確認できていない（実施計画書の総括表はめざす姿単位の総計と主な事業単位の金額のみ）。公表され次第、更新サイクルで登録する。",
+   "KPIは未登録分として、令和8年度以降の実績値と市の公式な達成判定がある。実施計画書に掲載された令和7年度実績値（計画開始前の最新公表値）は登録済みであり、後続の実績値は市の進行管理・行政評価で公表され次第、更新サイクルで追加する。",
+   "実施計画事業（細々目）単位の登録は本段階では行っていない。第6次計画の実施計画事業を対象とする事務事業評価の調書が公表されれば、事業単位の追加登録が可能になる。",
+   "首長公約との接続は埼玉クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と施策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed"
+ },
+ {
+  "id": "evidence-jp-local-112038-project-2026-economic-activity-employment",
+  "subject_type": "project",
+  "subject_id": "jp-local-112038-project-2026-economic-activity-employment",
+  "claims": [
+   {
+    "field": "registration_unit",
+    "statement": "本登録の単位は前期基本計画の「施策」とした。市の行政評価では、各施策に進捗を管理するための計測可能な目標指標が設定され、施策評価として A〜D の総合評価（実施計画事業の総評価60点満点の平均に基づく）が施策単位で付される（令和7年度実施分の「行政評価内部評価結果の概要」で仕組みを確認した）。単位施策には固有の目標指標・公式評価は設定されない。実施計画事業（事業別予算の細々目、令和8年度は798件）は事務事業評価の対象だが、第6次計画分（令和8年度）の評価調書は未公表であり、実施計画書の各論が事業名・予算額を掲載する範囲も主な事業128件にとどまるため、本段階では事業単位の登録は行わない。事業単位の登録は、第6次計画分の事務事業評価の調書が公表され次第、追加登録の対象とする。",
+    "source_ids": [
+     "kawaguchi-city-admin-evaluation-fy2025-summary",
+     "kawaguchi-city-implementation-plan-fy2026",
+     "kawaguchi-city-sixth-plan-basic-plan-introduction"
+    ],
+    "location_note": "行政評価内部評価結果の概要（令和7年度）「1 行政評価内部評価結果の概要」、令和8年度版実施計画書 総論（4）実施計画の対象事業・各論（1）総括表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_title",
+    "statement": "施策名は「経済活動の持続的発展と安定した雇用の確保」。めざす姿V にぎわいと魅力があり、伝統と未来が響き合うまちの施策1であり、前期基本計画各論と令和8年度版実施計画書の目次・各論のいずれでも同じ掲載順・名称で確認した。",
+    "source_ids": [
+     "kawaguchi-city-sixth-plan-chapter-goal5",
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "基本計画各論 めざす姿Vの章、令和8年度版実施計画書 目次および各論（冊子p.61）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "parent_policy",
+    "statement": "本登録のparent_policyには、施策を直接束ねる計画単位として「めざす姿V にぎわいと魅力があり、伝統と未来が響き合うまち」を用いた。",
+    "source_ids": [
+     "kawaguchi-city-sixth-plan-basic-concept",
+     "kawaguchi-city-sixth-plan-chapter-goal5"
+    ],
+    "location_note": "基本構想（8つのめざす姿）および基本計画各論の章立て",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "purpose",
+    "statement": "施策の目標は「先進技術導入などに対する制度融資の充実や創業支援、就労環境の向上に取り組むとともに、市産品の積極的な市内外へのPRにより販路拡大を支援することで、市内経済の好循環と雇用を創出し、伝統産業や多様な産業の持続的発展を図ります。」であり、施策の概要・単位施策（①企業経営の強化支援、②就労環境の向上）は基本計画各論および実施計画書各論の記載に基づく。",
+    "source_ids": [
+     "kawaguchi-city-sixth-plan-chapter-goal5",
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "令和8年度版実施計画書 各論（冊子p.61）「施策の目標」「施策の概要」「単位施策」",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "kpis",
+    "statement": "目標指標は実施計画書の目標指標表に掲載された3件（「この施策の推進が図られていると感じる人の割合」、「市内総生産額」、「就職支援セミナー参加者数」）を全て登録した。各指標には担当課・基準値・令和7年度実績値・中間目標（令和12年度）・最終目標（令和17年度）が示されている。登録では中間目標をtargetとし、最終目標は各KPIレコードのdefinitionに明記した。実績値は実施計画書の公表値（計画開始前の最新値）を登録し、市の公式な達成判定は未公表のためassessmentはin_progressとした。",
+    "source_ids": [
+     "kawaguchi-city-implementation-plan-fy2026",
+     "kawaguchi-city-sixth-plan-chapter-goal5"
+    ],
+    "location_note": "令和8年度版実施計画書 各論（冊子p.61）の目標指標表。基本計画各論の目標指標とも一致を確認した",
+    "decision": "accepted",
+    "review_note": "数値の対応は実施計画書の表の行単位で転記し、基本計画各論の掲載値と突き合わせた。特定健康診査受診率の中間目標45.0・最終目標60.0は実施計画書の「見方」ページ（冊子p.4）の再掲表でも同じ対応を確認した。"
+   },
+   {
+    "field": "responsible_department",
+    "statement": "基本計画・実施計画書は施策単位の担当課を掲載していないため、responsible_departmentはnullとした。目標指標ごとに担当課が示されており、その値は各KPIレコードのdefinitionに記録した。",
+    "source_ids": [
+     "kawaguchi-city-implementation-plan-fy2026",
+     "kawaguchi-city-sixth-plan-chapter-goal5"
+    ],
+    "location_note": "令和8年度版実施計画書 各論の目標指標表（担当課は指標単位の掲載）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "budget_records.initial_budget",
+    "statement": "川口市は施策単位の令和8年度当初予算額を公表していない。令和8年度版実施計画書の「めざす姿別実施計画事業総括表」が公表する金額は、めざす姿単位の実施計画事業の令和8年度予算額総計（本施策が属するめざす姿Vは2,070,285千円、企業会計を除く）と、主な事業（128件）単位の予算額のみであり、施策単位の集計は公表されていない。主な事業の予算額を合算して施策の金額とすることはしないため、本施策の令和8年度当初予算額は未登録とした（0では補完しない）。なお、令和8年度一般会計予算は議案第18号として2026年3月23日に原案可決され成立している。",
+    "source_ids": [
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "令和8年度版実施計画書 各論（1）「めざす姿別実施計画事業総括表」（冊子p.3）。総括表の数値は座標レベルの照合と合計検算（23施策・74単位施策・798事業・178,118,133千円）で一致を確認した",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_evaluation",
+    "statement": "公式評価は未登録（official_evaluationはnull）。行政評価（施策評価）は前年度の施策を対象に翌年度に実施・公表される仕組みであり、第6次計画の初年度である令和8年度分の施策評価は未公表である。第5次計画の施策（体系・名称が異なる）の評価結果は、版をまたいで引き継がない。第6次計画でも A〜D の総合評価の形式が継続するかは、初回公表をもって確認する。",
+    "source_ids": [
+     "kawaguchi-city-admin-evaluation-fy2025-summary",
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "行政評価内部評価結果の概要（令和7年度）は第5次計画の令和6年度分を対象とする文書であること",
+    "decision": "accepted",
+    "review_note": null
+   }
+  ],
+  "open_questions": [
+   "公式評価は未登録。第6次計画を対象とする行政評価（施策評価）の初回公表は令和8年度分について令和9年度の見込みだが、公表時期・形式（第5次計画と同型のA〜D総合評価かを含む）は未確認。公表され次第、official_evaluationを登録する。",
+   "金額は未登録。施策単位の当初予算額・決算額を掲載した公式資料は確認できていない（実施計画書の総括表はめざす姿単位の総計と主な事業単位の金額のみ）。公表され次第、更新サイクルで登録する。",
+   "KPIは未登録分として、令和8年度以降の実績値と市の公式な達成判定がある。実施計画書に掲載された令和7年度実績値（計画開始前の最新公表値）は登録済みであり、後続の実績値は市の進行管理・行政評価で公表され次第、更新サイクルで追加する。",
+   "実施計画事業（細々目）単位の登録は本段階では行っていない。第6次計画の実施計画事業を対象とする事務事業評価の調書が公表されれば、事業単位の追加登録が可能になる。",
+   "首長公約との接続は埼玉クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と施策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed"
+ },
+ {
+  "id": "evidence-jp-local-112038-project-2026-water-and-greenery",
+  "subject_type": "project",
+  "subject_id": "jp-local-112038-project-2026-water-and-greenery",
+  "claims": [
+   {
+    "field": "registration_unit",
+    "statement": "本登録の単位は前期基本計画の「施策」とした。市の行政評価では、各施策に進捗を管理するための計測可能な目標指標が設定され、施策評価として A〜D の総合評価（実施計画事業の総評価60点満点の平均に基づく）が施策単位で付される（令和7年度実施分の「行政評価内部評価結果の概要」で仕組みを確認した）。単位施策には固有の目標指標・公式評価は設定されない。実施計画事業（事業別予算の細々目、令和8年度は798件）は事務事業評価の対象だが、第6次計画分（令和8年度）の評価調書は未公表であり、実施計画書の各論が事業名・予算額を掲載する範囲も主な事業128件にとどまるため、本段階では事業単位の登録は行わない。事業単位の登録は、第6次計画分の事務事業評価の調書が公表され次第、追加登録の対象とする。",
+    "source_ids": [
+     "kawaguchi-city-admin-evaluation-fy2025-summary",
+     "kawaguchi-city-implementation-plan-fy2026",
+     "kawaguchi-city-sixth-plan-basic-plan-introduction"
+    ],
+    "location_note": "行政評価内部評価結果の概要（令和7年度）「1 行政評価内部評価結果の概要」、令和8年度版実施計画書 総論（4）実施計画の対象事業・各論（1）総括表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_title",
+    "statement": "施策名は「豊かな水と緑に親しむ空間づくり」。めざす姿VI 都市と自然が調和した、うるおいとやすらぎのあるまちの施策1であり、前期基本計画各論と令和8年度版実施計画書の目次・各論のいずれでも同じ掲載順・名称で確認した。",
+    "source_ids": [
+     "kawaguchi-city-sixth-plan-chapter-goal6",
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "基本計画各論 めざす姿VIの章、令和8年度版実施計画書 目次および各論（冊子p.69）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "parent_policy",
+    "statement": "本登録のparent_policyには、施策を直接束ねる計画単位として「めざす姿VI 都市と自然が調和した、うるおいとやすらぎのあるまち」を用いた。",
+    "source_ids": [
+     "kawaguchi-city-sixth-plan-basic-concept",
+     "kawaguchi-city-sixth-plan-chapter-goal6"
+    ],
+    "location_note": "基本構想（8つのめざす姿）および基本計画各論の章立て",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "purpose",
+    "statement": "施策の目標は「本市に広がる貴重で豊かな自然環境を守り、市民が自然を身近に感じながら生活できるよう、水と緑に親しめる憩いとやすらぎの空間の創出をめざします。」であり、施策の概要・単位施策（①水辺環境の整備・保全、②緑地環境の整備・保全）は基本計画各論および実施計画書各論の記載に基づく。",
+    "source_ids": [
+     "kawaguchi-city-sixth-plan-chapter-goal6",
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "令和8年度版実施計画書 各論（冊子p.69）「施策の目標」「施策の概要」「単位施策」",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "kpis",
+    "statement": "目標指標は実施計画書の目標指標表に掲載された3件（「この施策の推進が図られていると感じる人の割合」、「親水護岸の整備延長（旧芝川）」、「保全緑地指定面積」）を全て登録した。各指標には担当課・基準値・令和7年度実績値・中間目標（令和12年度）・最終目標（令和17年度）が示されている。登録では中間目標をtargetとし、最終目標は各KPIレコードのdefinitionに明記した。実績値は実施計画書の公表値（計画開始前の最新値）を登録し、市の公式な達成判定は未公表のためassessmentはin_progressとした。",
+    "source_ids": [
+     "kawaguchi-city-implementation-plan-fy2026",
+     "kawaguchi-city-sixth-plan-chapter-goal6"
+    ],
+    "location_note": "令和8年度版実施計画書 各論（冊子p.69）の目標指標表。基本計画各論の目標指標とも一致を確認した",
+    "decision": "accepted",
+    "review_note": "数値の対応は実施計画書の表の行単位で転記し、基本計画各論の掲載値と突き合わせた。特定健康診査受診率の中間目標45.0・最終目標60.0は実施計画書の「見方」ページ（冊子p.4）の再掲表でも同じ対応を確認した。"
+   },
+   {
+    "field": "responsible_department",
+    "statement": "基本計画・実施計画書は施策単位の担当課を掲載していないため、responsible_departmentはnullとした。目標指標ごとに担当課が示されており、その値は各KPIレコードのdefinitionに記録した。",
+    "source_ids": [
+     "kawaguchi-city-implementation-plan-fy2026",
+     "kawaguchi-city-sixth-plan-chapter-goal6"
+    ],
+    "location_note": "令和8年度版実施計画書 各論の目標指標表（担当課は指標単位の掲載）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "budget_records.initial_budget",
+    "statement": "川口市は施策単位の令和8年度当初予算額を公表していない。令和8年度版実施計画書の「めざす姿別実施計画事業総括表」が公表する金額は、めざす姿単位の実施計画事業の令和8年度予算額総計（本施策が属するめざす姿VIは16,626,007千円、企業会計を除く）と、主な事業（128件）単位の予算額のみであり、施策単位の集計は公表されていない。主な事業の予算額を合算して施策の金額とすることはしないため、本施策の令和8年度当初予算額は未登録とした（0では補完しない）。なお、令和8年度一般会計予算は議案第18号として2026年3月23日に原案可決され成立している。",
+    "source_ids": [
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "令和8年度版実施計画書 各論（1）「めざす姿別実施計画事業総括表」（冊子p.3）。総括表の数値は座標レベルの照合と合計検算（23施策・74単位施策・798事業・178,118,133千円）で一致を確認した",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_evaluation",
+    "statement": "公式評価は未登録（official_evaluationはnull）。行政評価（施策評価）は前年度の施策を対象に翌年度に実施・公表される仕組みであり、第6次計画の初年度である令和8年度分の施策評価は未公表である。第5次計画の施策（体系・名称が異なる）の評価結果は、版をまたいで引き継がない。第6次計画でも A〜D の総合評価の形式が継続するかは、初回公表をもって確認する。",
+    "source_ids": [
+     "kawaguchi-city-admin-evaluation-fy2025-summary",
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "行政評価内部評価結果の概要（令和7年度）は第5次計画の令和6年度分を対象とする文書であること",
+    "decision": "accepted",
+    "review_note": null
+   }
+  ],
+  "open_questions": [
+   "公式評価は未登録。第6次計画を対象とする行政評価（施策評価）の初回公表は令和8年度分について令和9年度の見込みだが、公表時期・形式（第5次計画と同型のA〜D総合評価かを含む）は未確認。公表され次第、official_evaluationを登録する。",
+   "金額は未登録。施策単位の当初予算額・決算額を掲載した公式資料は確認できていない（実施計画書の総括表はめざす姿単位の総計と主な事業単位の金額のみ）。公表され次第、更新サイクルで登録する。",
+   "KPIは未登録分として、令和8年度以降の実績値と市の公式な達成判定がある。実施計画書に掲載された令和7年度実績値（計画開始前の最新公表値）は登録済みであり、後続の実績値は市の進行管理・行政評価で公表され次第、更新サイクルで追加する。",
+   "実施計画事業（細々目）単位の登録は本段階では行っていない。第6次計画の実施計画事業を対象とする事務事業評価の調書が公表されれば、事業単位の追加登録が可能になる。",
+   "首長公約との接続は埼玉クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と施策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed"
+ },
+ {
+  "id": "evidence-jp-local-112038-project-2026-planned-urban-development",
+  "subject_type": "project",
+  "subject_id": "jp-local-112038-project-2026-planned-urban-development",
+  "claims": [
+   {
+    "field": "registration_unit",
+    "statement": "本登録の単位は前期基本計画の「施策」とした。市の行政評価では、各施策に進捗を管理するための計測可能な目標指標が設定され、施策評価として A〜D の総合評価（実施計画事業の総評価60点満点の平均に基づく）が施策単位で付される（令和7年度実施分の「行政評価内部評価結果の概要」で仕組みを確認した）。単位施策には固有の目標指標・公式評価は設定されない。実施計画事業（事業別予算の細々目、令和8年度は798件）は事務事業評価の対象だが、第6次計画分（令和8年度）の評価調書は未公表であり、実施計画書の各論が事業名・予算額を掲載する範囲も主な事業128件にとどまるため、本段階では事業単位の登録は行わない。事業単位の登録は、第6次計画分の事務事業評価の調書が公表され次第、追加登録の対象とする。",
+    "source_ids": [
+     "kawaguchi-city-admin-evaluation-fy2025-summary",
+     "kawaguchi-city-implementation-plan-fy2026",
+     "kawaguchi-city-sixth-plan-basic-plan-introduction"
+    ],
+    "location_note": "行政評価内部評価結果の概要（令和7年度）「1 行政評価内部評価結果の概要」、令和8年度版実施計画書 総論（4）実施計画の対象事業・各論（1）総括表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_title",
+    "statement": "施策名は「住・工・商・緑が調和した計画的なまちづくり」。めざす姿VII 誰もが安全で快適に暮らせるまちの施策1であり、前期基本計画各論と令和8年度版実施計画書の目次・各論のいずれでも同じ掲載順・名称で確認した。",
+    "source_ids": [
+     "kawaguchi-city-sixth-plan-chapter-goal7",
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "基本計画各論 めざす姿VIIの章、令和8年度版実施計画書 目次および各論（冊子p.77）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "parent_policy",
+    "statement": "本登録のparent_policyには、施策を直接束ねる計画単位として「めざす姿VII 誰もが安全で快適に暮らせるまち」を用いた。",
+    "source_ids": [
+     "kawaguchi-city-sixth-plan-basic-concept",
+     "kawaguchi-city-sixth-plan-chapter-goal7"
+    ],
+    "location_note": "基本構想（8つのめざす姿）および基本計画各論の章立て",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "purpose",
+    "statement": "施策の目標は「適正な土地利用と適切な都市機能の配置を図り、環境にやさしく災害に強い、機能的で誰もが快適で安全・安心に生活できる持続可能なまちをめざします。」であり、施策の概要・単位施策（①計画的で持続可能な土地利用の推進、②土地区画整理をはじめとした市街地整備の推進、③周辺環境と調和した景観形成の促進、④鉄道駅周辺整備の推進、⑤良好な住環境の整備）は基本計画各論および実施計画書各論の記載に基づく。",
+    "source_ids": [
+     "kawaguchi-city-sixth-plan-chapter-goal7",
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "令和8年度版実施計画書 各論（冊子p.77）「施策の目標」「施策の概要」「単位施策」",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "kpis",
+    "statement": "目標指標は実施計画書の目標指標表に掲載された2件（「この施策の推進が図られていると感じる人の割合」、「土地区画整理事業の進捗率（11地区）」）を全て登録した。各指標には担当課・基準値・令和7年度実績値・中間目標（令和12年度）・最終目標（令和17年度）が示されている。登録では中間目標をtargetとし、最終目標は各KPIレコードのdefinitionに明記した。実績値は実施計画書の公表値（計画開始前の最新値）を登録し、市の公式な達成判定は未公表のためassessmentはin_progressとした。",
+    "source_ids": [
+     "kawaguchi-city-implementation-plan-fy2026",
+     "kawaguchi-city-sixth-plan-chapter-goal7"
+    ],
+    "location_note": "令和8年度版実施計画書 各論（冊子p.77）の目標指標表。基本計画各論の目標指標とも一致を確認した",
+    "decision": "accepted",
+    "review_note": "数値の対応は実施計画書の表の行単位で転記し、基本計画各論の掲載値と突き合わせた。特定健康診査受診率の中間目標45.0・最終目標60.0は実施計画書の「見方」ページ（冊子p.4）の再掲表でも同じ対応を確認した。"
+   },
+   {
+    "field": "responsible_department",
+    "statement": "基本計画・実施計画書は施策単位の担当課を掲載していないため、responsible_departmentはnullとした。目標指標ごとに担当課が示されており、その値は各KPIレコードのdefinitionに記録した。",
+    "source_ids": [
+     "kawaguchi-city-implementation-plan-fy2026",
+     "kawaguchi-city-sixth-plan-chapter-goal7"
+    ],
+    "location_note": "令和8年度版実施計画書 各論の目標指標表（担当課は指標単位の掲載）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "budget_records.initial_budget",
+    "statement": "川口市は施策単位の令和8年度当初予算額を公表していない。令和8年度版実施計画書の「めざす姿別実施計画事業総括表」が公表する金額は、めざす姿単位の実施計画事業の令和8年度予算額総計（本施策が属するめざす姿VIIは21,620,526千円、企業会計を除く）と、主な事業（128件）単位の予算額のみであり、施策単位の集計は公表されていない。主な事業の予算額を合算して施策の金額とすることはしないため、本施策の令和8年度当初予算額は未登録とした（0では補完しない）。なお、令和8年度一般会計予算は議案第18号として2026年3月23日に原案可決され成立している。",
+    "source_ids": [
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "令和8年度版実施計画書 各論（1）「めざす姿別実施計画事業総括表」（冊子p.3）。総括表の数値は座標レベルの照合と合計検算（23施策・74単位施策・798事業・178,118,133千円）で一致を確認した",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_evaluation",
+    "statement": "公式評価は未登録（official_evaluationはnull）。行政評価（施策評価）は前年度の施策を対象に翌年度に実施・公表される仕組みであり、第6次計画の初年度である令和8年度分の施策評価は未公表である。第5次計画の施策（体系・名称が異なる）の評価結果は、版をまたいで引き継がない。第6次計画でも A〜D の総合評価の形式が継続するかは、初回公表をもって確認する。",
+    "source_ids": [
+     "kawaguchi-city-admin-evaluation-fy2025-summary",
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "行政評価内部評価結果の概要（令和7年度）は第5次計画の令和6年度分を対象とする文書であること",
+    "decision": "accepted",
+    "review_note": null
+   }
+  ],
+  "open_questions": [
+   "公式評価は未登録。第6次計画を対象とする行政評価（施策評価）の初回公表は令和8年度分について令和9年度の見込みだが、公表時期・形式（第5次計画と同型のA〜D総合評価かを含む）は未確認。公表され次第、official_evaluationを登録する。",
+   "金額は未登録。施策単位の当初予算額・決算額を掲載した公式資料は確認できていない（実施計画書の総括表はめざす姿単位の総計と主な事業単位の金額のみ）。公表され次第、更新サイクルで登録する。",
+   "KPIは未登録分として、令和8年度以降の実績値と市の公式な達成判定がある。実施計画書に掲載された令和7年度実績値（計画開始前の最新公表値）は登録済みであり、後続の実績値は市の進行管理・行政評価で公表され次第、更新サイクルで追加する。",
+   "実施計画事業（細々目）単位の登録は本段階では行っていない。第6次計画の実施計画事業を対象とする事務事業評価の調書が公表されれば、事業単位の追加登録が可能になる。",
+   "首長公約との接続は埼玉クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と施策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed"
+ },
+ {
+  "id": "evidence-jp-local-112038-project-2026-multi-stakeholder-collaboration",
+  "subject_type": "project",
+  "subject_id": "jp-local-112038-project-2026-multi-stakeholder-collaboration",
+  "claims": [
+   {
+    "field": "registration_unit",
+    "statement": "本登録の単位は前期基本計画の「施策」とした。市の行政評価では、各施策に進捗を管理するための計測可能な目標指標が設定され、施策評価として A〜D の総合評価（実施計画事業の総評価60点満点の平均に基づく）が施策単位で付される（令和7年度実施分の「行政評価内部評価結果の概要」で仕組みを確認した）。単位施策には固有の目標指標・公式評価は設定されない。実施計画事業（事業別予算の細々目、令和8年度は798件）は事務事業評価の対象だが、第6次計画分（令和8年度）の評価調書は未公表であり、実施計画書の各論が事業名・予算額を掲載する範囲も主な事業128件にとどまるため、本段階では事業単位の登録は行わない。事業単位の登録は、第6次計画分の事務事業評価の調書が公表され次第、追加登録の対象とする。",
+    "source_ids": [
+     "kawaguchi-city-admin-evaluation-fy2025-summary",
+     "kawaguchi-city-implementation-plan-fy2026",
+     "kawaguchi-city-sixth-plan-basic-plan-introduction"
+    ],
+    "location_note": "行政評価内部評価結果の概要（令和7年度）「1 行政評価内部評価結果の概要」、令和8年度版実施計画書 総論（4）実施計画の対象事業・各論（1）総括表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_title",
+    "statement": "施策名は「多様な主体と進めるまちづくり」。めざす姿VIII 持続可能で自立したまちの施策1であり、前期基本計画各論と令和8年度版実施計画書の目次・各論のいずれでも同じ掲載順・名称で確認した。",
+    "source_ids": [
+     "kawaguchi-city-sixth-plan-chapter-goal8",
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "基本計画各論 めざす姿VIIIの章、令和8年度版実施計画書 目次および各論（冊子p.89）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "parent_policy",
+    "statement": "本登録のparent_policyには、施策を直接束ねる計画単位として「めざす姿VIII 持続可能で自立したまち」を用いた。",
+    "source_ids": [
+     "kawaguchi-city-sixth-plan-basic-concept",
+     "kawaguchi-city-sixth-plan-chapter-goal8"
+    ],
+    "location_note": "基本構想（8つのめざす姿）および基本計画各論の章立て",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "purpose",
+    "statement": "施策の目標は「民間活力を活かした地域課題の解決を図るため、市民や企業、団体など多様な主体との連携・協働を推進し、市政に参加しやすく、その意義を実感できる環境づくりを進め、相互に協力するまちをめざします。」であり、施策の概要・単位施策（①広報・広聴の充実、②多様な主体との連携の推進）は基本計画各論および実施計画書各論の記載に基づく。",
+    "source_ids": [
+     "kawaguchi-city-sixth-plan-chapter-goal8",
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "令和8年度版実施計画書 各論（冊子p.89）「施策の目標」「施策の概要」「単位施策」",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "kpis",
+    "statement": "目標指標は実施計画書の目標指標表に掲載された3件（「この施策の推進が図られていると感じる人の割合」、「市民意識調査の回答率」、「市の公募機関等の公募委員の応募倍率」）を全て登録した。各指標には担当課・基準値・令和7年度実績値・中間目標（令和12年度）・最終目標（令和17年度）が示されている。登録では中間目標をtargetとし、最終目標は各KPIレコードのdefinitionに明記した。実績値は実施計画書の公表値（計画開始前の最新値）を登録し、市の公式な達成判定は未公表のためassessmentはin_progressとした。",
+    "source_ids": [
+     "kawaguchi-city-implementation-plan-fy2026",
+     "kawaguchi-city-sixth-plan-chapter-goal8"
+    ],
+    "location_note": "令和8年度版実施計画書 各論（冊子p.89）の目標指標表。基本計画各論の目標指標とも一致を確認した",
+    "decision": "accepted",
+    "review_note": "数値の対応は実施計画書の表の行単位で転記し、基本計画各論の掲載値と突き合わせた。特定健康診査受診率の中間目標45.0・最終目標60.0は実施計画書の「見方」ページ（冊子p.4）の再掲表でも同じ対応を確認した。"
+   },
+   {
+    "field": "responsible_department",
+    "statement": "基本計画・実施計画書は施策単位の担当課を掲載していないため、responsible_departmentはnullとした。目標指標ごとに担当課が示されており、その値は各KPIレコードのdefinitionに記録した。",
+    "source_ids": [
+     "kawaguchi-city-implementation-plan-fy2026",
+     "kawaguchi-city-sixth-plan-chapter-goal8"
+    ],
+    "location_note": "令和8年度版実施計画書 各論の目標指標表（担当課は指標単位の掲載）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "budget_records.initial_budget",
+    "statement": "川口市は施策単位の令和8年度当初予算額を公表していない。令和8年度版実施計画書の「めざす姿別実施計画事業総括表」が公表する金額は、めざす姿単位の実施計画事業の令和8年度予算額総計（本施策が属するめざす姿VIIIは38,267,853千円、企業会計を除く）と、主な事業（128件）単位の予算額のみであり、施策単位の集計は公表されていない。主な事業の予算額を合算して施策の金額とすることはしないため、本施策の令和8年度当初予算額は未登録とした（0では補完しない）。なお、令和8年度一般会計予算は議案第18号として2026年3月23日に原案可決され成立している。",
+    "source_ids": [
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "令和8年度版実施計画書 各論（1）「めざす姿別実施計画事業総括表」（冊子p.3）。総括表の数値は座標レベルの照合と合計検算（23施策・74単位施策・798事業・178,118,133千円）で一致を確認した",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_evaluation",
+    "statement": "公式評価は未登録（official_evaluationはnull）。行政評価（施策評価）は前年度の施策を対象に翌年度に実施・公表される仕組みであり、第6次計画の初年度である令和8年度分の施策評価は未公表である。第5次計画の施策（体系・名称が異なる）の評価結果は、版をまたいで引き継がない。第6次計画でも A〜D の総合評価の形式が継続するかは、初回公表をもって確認する。",
+    "source_ids": [
+     "kawaguchi-city-admin-evaluation-fy2025-summary",
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "行政評価内部評価結果の概要（令和7年度）は第5次計画の令和6年度分を対象とする文書であること",
+    "decision": "accepted",
+    "review_note": null
+   }
+  ],
+  "open_questions": [
+   "公式評価は未登録。第6次計画を対象とする行政評価（施策評価）の初回公表は令和8年度分について令和9年度の見込みだが、公表時期・形式（第5次計画と同型のA〜D総合評価かを含む）は未確認。公表され次第、official_evaluationを登録する。",
+   "金額は未登録。施策単位の当初予算額・決算額を掲載した公式資料は確認できていない（実施計画書の総括表はめざす姿単位の総計と主な事業単位の金額のみ）。公表され次第、更新サイクルで登録する。",
+   "KPIは未登録分として、令和8年度以降の実績値と市の公式な達成判定がある。実施計画書に掲載された令和7年度実績値（計画開始前の最新公表値）は登録済みであり、後続の実績値は市の進行管理・行政評価で公表され次第、更新サイクルで追加する。",
+   "実施計画事業（細々目）単位の登録は本段階では行っていない。第6次計画の実施計画事業を対象とする事務事業評価の調書が公表されれば、事業単位の追加登録が可能になる。",
+   "首長公約との接続は埼玉クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と施策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed"
+ },
+ {
+  "id": "evidence-jp-local-112038-project-2026-elderly-healthy-active-life",
+  "subject_type": "project",
+  "subject_id": "jp-local-112038-project-2026-elderly-healthy-active-life",
+  "claims": [
+   {
+    "field": "registration_unit",
+    "statement": "本登録の単位は前期基本計画の「施策」とした。市の行政評価では、各施策に進捗を管理するための計測可能な目標指標が設定され、施策評価として A〜D の総合評価（実施計画事業の総評価60点満点の平均に基づく）が施策単位で付される（令和7年度実施分の「行政評価内部評価結果の概要」で仕組みを確認した）。単位施策には固有の目標指標・公式評価は設定されない。実施計画事業（事業別予算の細々目、令和8年度は798件）は事務事業評価の対象だが、第6次計画分（令和8年度）の評価調書は未公表であり、実施計画書の各論が事業名・予算額を掲載する範囲も主な事業128件にとどまるため、本段階では事業単位の登録は行わない。事業単位の登録は、第6次計画分の事務事業評価の調書が公表され次第、追加登録の対象とする。",
+    "source_ids": [
+     "kawaguchi-city-admin-evaluation-fy2025-summary",
+     "kawaguchi-city-implementation-plan-fy2026",
+     "kawaguchi-city-sixth-plan-basic-plan-introduction"
+    ],
+    "location_note": "行政評価内部評価結果の概要（令和7年度）「1 行政評価内部評価結果の概要」、令和8年度版実施計画書 総論（4）実施計画の対象事業・各論（1）総括表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_title",
+    "statement": "施策名は「高齢者が健やかに暮らし、活躍できるまちづくり」。めざす姿I 健康で、自分らしく生き生きと暮らせるまちの施策2であり、前期基本計画各論と令和8年度版実施計画書の目次・各論のいずれでも同じ掲載順・名称で確認した。",
+    "source_ids": [
+     "kawaguchi-city-sixth-plan-chapter-goal1",
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "基本計画各論 めざす姿Iの章、令和8年度版実施計画書 目次および各論（冊子p.9）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "parent_policy",
+    "statement": "本登録のparent_policyには、施策を直接束ねる計画単位として「めざす姿I 健康で、自分らしく生き生きと暮らせるまち」を用いた。",
+    "source_ids": [
+     "kawaguchi-city-sixth-plan-basic-concept",
+     "kawaguchi-city-sixth-plan-chapter-goal1"
+    ],
+    "location_note": "基本構想（8つのめざす姿）および基本計画各論の章立て",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "purpose",
+    "statement": "施策の目標は「高齢者一人ひとりが、住み慣れた地域で、いかなる心身の状態であっても、尊厳を保ち、安心して幸福に暮らせる地域社会をめざします。」であり、施策の概要・単位施策（①介護予防・フレイル対策の充実、②高齢者の生きがいと安全・安心な暮らしを支える施策の充実、③介護サービスの基盤整備と介護保険事業の持続可能性の確保、④在宅医療と在宅介護の連携強化）は基本計画各論および実施計画書各論の記載に基づく。",
+    "source_ids": [
+     "kawaguchi-city-sixth-plan-chapter-goal1",
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "令和8年度版実施計画書 各論（冊子p.9）「施策の目標」「施策の概要」「単位施策」",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "kpis",
+    "statement": "目標指標は実施計画書の目標指標表に掲載された3件（「この施策の推進が図られていると感じる人の割合」、「要介護認定を受けている高齢者の割合」、「一般介護予防教室の参加者数（延べ）」）を全て登録した。各指標には担当課・基準値・令和7年度実績値・中間目標（令和12年度）・最終目標（令和17年度）が示されている。登録では中間目標をtargetとし、最終目標は各KPIレコードのdefinitionに明記した。実績値は実施計画書の公表値（計画開始前の最新値）を登録し、市の公式な達成判定は未公表のためassessmentはin_progressとした。",
+    "source_ids": [
+     "kawaguchi-city-implementation-plan-fy2026",
+     "kawaguchi-city-sixth-plan-chapter-goal1"
+    ],
+    "location_note": "令和8年度版実施計画書 各論（冊子p.9）の目標指標表。基本計画各論の目標指標とも一致を確認した",
+    "decision": "accepted",
+    "review_note": "数値の対応は実施計画書の表の行単位で転記し、基本計画各論の掲載値と突き合わせた。特定健康診査受診率の中間目標45.0・最終目標60.0は実施計画書の「見方」ページ（冊子p.4）の再掲表でも同じ対応を確認した。"
+   },
+   {
+    "field": "responsible_department",
+    "statement": "基本計画・実施計画書は施策単位の担当課を掲載していないため、responsible_departmentはnullとした。目標指標ごとに担当課が示されており、その値は各KPIレコードのdefinitionに記録した。",
+    "source_ids": [
+     "kawaguchi-city-implementation-plan-fy2026",
+     "kawaguchi-city-sixth-plan-chapter-goal1"
+    ],
+    "location_note": "令和8年度版実施計画書 各論の目標指標表（担当課は指標単位の掲載）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "budget_records.initial_budget",
+    "statement": "川口市は施策単位の令和8年度当初予算額を公表していない。令和8年度版実施計画書の「めざす姿別実施計画事業総括表」が公表する金額は、めざす姿単位の実施計画事業の令和8年度予算額総計（本施策が属するめざす姿Iは32,395,006千円、企業会計を除く）と、主な事業（128件）単位の予算額のみであり、施策単位の集計は公表されていない。主な事業の予算額を合算して施策の金額とすることはしないため、本施策の令和8年度当初予算額は未登録とした（0では補完しない）。なお、令和8年度一般会計予算は議案第18号として2026年3月23日に原案可決され成立している。",
+    "source_ids": [
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "令和8年度版実施計画書 各論（1）「めざす姿別実施計画事業総括表」（冊子p.3）。総括表の数値は座標レベルの照合と合計検算（23施策・74単位施策・798事業・178,118,133千円）で一致を確認した",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_evaluation",
+    "statement": "公式評価は未登録（official_evaluationはnull）。行政評価（施策評価）は前年度の施策を対象に翌年度に実施・公表される仕組みであり、第6次計画の初年度である令和8年度分の施策評価は未公表である。第5次計画の施策（体系・名称が異なる）の評価結果は、版をまたいで引き継がない。第6次計画でも A〜D の総合評価の形式が継続するかは、初回公表をもって確認する。",
+    "source_ids": [
+     "kawaguchi-city-admin-evaluation-fy2025-summary",
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "行政評価内部評価結果の概要（令和7年度）は第5次計画の令和6年度分を対象とする文書であること",
+    "decision": "accepted",
+    "review_note": null
+   }
+  ],
+  "open_questions": [
+   "公式評価は未登録。第6次計画を対象とする行政評価（施策評価）の初回公表は令和8年度分について令和9年度の見込みだが、公表時期・形式（第5次計画と同型のA〜D総合評価かを含む）は未確認。公表され次第、official_evaluationを登録する。",
+   "金額は未登録。施策単位の当初予算額・決算額を掲載した公式資料は確認できていない（実施計画書の総括表はめざす姿単位の総計と主な事業単位の金額のみ）。公表され次第、更新サイクルで登録する。",
+   "KPIは未登録分として、令和8年度以降の実績値と市の公式な達成判定がある。実施計画書に掲載された令和7年度実績値（計画開始前の最新公表値）は登録済みであり、後続の実績値は市の進行管理・行政評価で公表され次第、更新サイクルで追加する。",
+   "実施計画事業（細々目）単位の登録は本段階では行っていない。第6次計画の実施計画事業を対象とする事務事業評価の調書が公表されれば、事業単位の追加登録が可能になる。",
+   "首長公約との接続は埼玉クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と施策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed"
+ },
+ {
+  "id": "evidence-jp-local-112038-project-2026-mutual-respect-community",
+  "subject_type": "project",
+  "subject_id": "jp-local-112038-project-2026-mutual-respect-community",
+  "claims": [
+   {
+    "field": "registration_unit",
+    "statement": "本登録の単位は前期基本計画の「施策」とした。市の行政評価では、各施策に進捗を管理するための計測可能な目標指標が設定され、施策評価として A〜D の総合評価（実施計画事業の総評価60点満点の平均に基づく）が施策単位で付される（令和7年度実施分の「行政評価内部評価結果の概要」で仕組みを確認した）。単位施策には固有の目標指標・公式評価は設定されない。実施計画事業（事業別予算の細々目、令和8年度は798件）は事務事業評価の対象だが、第6次計画分（令和8年度）の評価調書は未公表であり、実施計画書の各論が事業名・予算額を掲載する範囲も主な事業128件にとどまるため、本段階では事業単位の登録は行わない。事業単位の登録は、第6次計画分の事務事業評価の調書が公表され次第、追加登録の対象とする。",
+    "source_ids": [
+     "kawaguchi-city-admin-evaluation-fy2025-summary",
+     "kawaguchi-city-implementation-plan-fy2026",
+     "kawaguchi-city-sixth-plan-basic-plan-introduction"
+    ],
+    "location_note": "行政評価内部評価結果の概要（令和7年度）「1 行政評価内部評価結果の概要」、令和8年度版実施計画書 総論（4）実施計画の対象事業・各論（1）総括表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_title",
+    "statement": "施策名は「互いに尊重し合い、地域で生き生きと活動しやすい環境づくり」。めざす姿II 誰もがお互いを認め合い、安心して暮らせるまちの施策2であり、前期基本計画各論と令和8年度版実施計画書の目次・各論のいずれでも同じ掲載順・名称で確認した。",
+    "source_ids": [
+     "kawaguchi-city-sixth-plan-chapter-goal2",
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "基本計画各論 めざす姿IIの章、令和8年度版実施計画書 目次および各論（冊子p.33）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "parent_policy",
+    "statement": "本登録のparent_policyには、施策を直接束ねる計画単位として「めざす姿II 誰もがお互いを認め合い、安心して暮らせるまち」を用いた。",
+    "source_ids": [
+     "kawaguchi-city-sixth-plan-basic-concept",
+     "kawaguchi-city-sixth-plan-chapter-goal2"
+    ],
+    "location_note": "基本構想（8つのめざす姿）および基本計画各論の章立て",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "purpose",
+    "statement": "施策の目標は「さまざまな交流や啓発の機会を設け、誰もがお互いを尊重・理解し合える環境を整えることで、一人ひとりが人権を尊重する意識を醸成し、みんなが支え合いながら生き生きと活躍するまちをめざします。」であり、施策の概要・単位施策（①人権を尊重した社会づくり、②男女共同参画を進める意識・環境づくり、③多文化共生の実現に向けた意識・環境づくり、④地縁活動(町会・自治会など)の支援、⑤市民活動（NPO・ボランティアなど）の人材育成と支援）は基本計画各論および実施計画書各論の記載に基づく。",
+    "source_ids": [
+     "kawaguchi-city-sixth-plan-chapter-goal2",
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "令和8年度版実施計画書 各論（冊子p.33）「施策の目標」「施策の概要」「単位施策」",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "kpis",
+    "statement": "目標指標は実施計画書の目標指標表に掲載された4件（「この施策の推進が図られていると感じる人の割合」、「各種審議会・委員会への女性の登用率」、「多文化共生関連事業の参加者数」、「町会・自治会加入率」）を全て登録した。各指標には担当課・基準値・令和7年度実績値・中間目標（令和12年度）・最終目標（令和17年度）が示されている。登録では中間目標をtargetとし、最終目標は各KPIレコードのdefinitionに明記した。実績値は実施計画書の公表値（計画開始前の最新値）を登録し、市の公式な達成判定は未公表のためassessmentはin_progressとした。",
+    "source_ids": [
+     "kawaguchi-city-implementation-plan-fy2026",
+     "kawaguchi-city-sixth-plan-chapter-goal2"
+    ],
+    "location_note": "令和8年度版実施計画書 各論（冊子p.33）の目標指標表。基本計画各論の目標指標とも一致を確認した",
+    "decision": "accepted",
+    "review_note": "数値の対応は実施計画書の表の行単位で転記し、基本計画各論の掲載値と突き合わせた。特定健康診査受診率の中間目標45.0・最終目標60.0は実施計画書の「見方」ページ（冊子p.4）の再掲表でも同じ対応を確認した。"
+   },
+   {
+    "field": "responsible_department",
+    "statement": "基本計画・実施計画書は施策単位の担当課を掲載していないため、responsible_departmentはnullとした。目標指標ごとに担当課が示されており、その値は各KPIレコードのdefinitionに記録した。",
+    "source_ids": [
+     "kawaguchi-city-implementation-plan-fy2026",
+     "kawaguchi-city-sixth-plan-chapter-goal2"
+    ],
+    "location_note": "令和8年度版実施計画書 各論の目標指標表（担当課は指標単位の掲載）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "budget_records.initial_budget",
+    "statement": "川口市は施策単位の令和8年度当初予算額を公表していない。令和8年度版実施計画書の「めざす姿別実施計画事業総括表」が公表する金額は、めざす姿単位の実施計画事業の令和8年度予算額総計（本施策が属するめざす姿IIは5,158,920千円、企業会計を除く）と、主な事業（128件）単位の予算額のみであり、施策単位の集計は公表されていない。主な事業の予算額を合算して施策の金額とすることはしないため、本施策の令和8年度当初予算額は未登録とした（0では補完しない）。なお、令和8年度一般会計予算は議案第18号として2026年3月23日に原案可決され成立している。",
+    "source_ids": [
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "令和8年度版実施計画書 各論（1）「めざす姿別実施計画事業総括表」（冊子p.3）。総括表の数値は座標レベルの照合と合計検算（23施策・74単位施策・798事業・178,118,133千円）で一致を確認した",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_evaluation",
+    "statement": "公式評価は未登録（official_evaluationはnull）。行政評価（施策評価）は前年度の施策を対象に翌年度に実施・公表される仕組みであり、第6次計画の初年度である令和8年度分の施策評価は未公表である。第5次計画の施策（体系・名称が異なる）の評価結果は、版をまたいで引き継がない。第6次計画でも A〜D の総合評価の形式が継続するかは、初回公表をもって確認する。",
+    "source_ids": [
+     "kawaguchi-city-admin-evaluation-fy2025-summary",
+     "kawaguchi-city-implementation-plan-fy2026"
+    ],
+    "location_note": "行政評価内部評価結果の概要（令和7年度）は第5次計画の令和6年度分を対象とする文書であること",
+    "decision": "accepted",
+    "review_note": null
+   }
+  ],
+  "open_questions": [
+   "公式評価は未登録。第6次計画を対象とする行政評価（施策評価）の初回公表は令和8年度分について令和9年度の見込みだが、公表時期・形式（第5次計画と同型のA〜D総合評価かを含む）は未確認。公表され次第、official_evaluationを登録する。",
+   "金額は未登録。施策単位の当初予算額・決算額を掲載した公式資料は確認できていない（実施計画書の総括表はめざす姿単位の総計と主な事業単位の金額のみ）。公表され次第、更新サイクルで登録する。",
+   "KPIは未登録分として、令和8年度以降の実績値と市の公式な達成判定がある。実施計画書に掲載された令和7年度実績値（計画開始前の最新公表値）は登録済みであり、後続の実績値は市の進行管理・行政評価で公表され次第、更新サイクルで追加する。",
+   "実施計画事業（細々目）単位の登録は本段階では行っていない。第6次計画の実施計画事業を対象とする事務事業評価の調書が公表されれば、事業単位の追加登録が可能になる。",
+   "首長公約との接続は埼玉クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と施策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed"
+ }
+]

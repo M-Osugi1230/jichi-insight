@@ -1,0 +1,174 @@
+{
+ "version": "1.0.0",
+ "updated_at": "2026-11-21",
+ "municipality_id": "jp-local-112038",
+ "municipality_key": "kawaguchi-city",
+ "issue": 818,
+ "scope": "expanded",
+ "population": {
+  "description": "第6次川口市総合計画（基本構想2026～2035年度／前期基本計画2026～2030年度／実施計画は当該年度を初年度とする3年ローリング）の前期基本計画が、8つのめざす姿のもとに体系的に位置付ける23施策を母集団とした。登録単位は施策とした。理由は、市の行政評価において目標指標（KPI）とA〜Dの総合評価（施策評価）が付く単位が施策であり、基本計画・実施計画書が施策ごとに目標指標（基準値・中間目標・最終目標）を公表しているためである。単位施策（74件）には固有の目標指標・公式評価は設定されない。実施計画事業（事業別予算の細々目、令和8年度は798件）は事務事業評価の対象だが、第6次計画分（令和8年度）の評価調書は未公表で、実施計画書の各論が事業名・予算額を掲載する範囲も主な事業128件にとどまるため、本段階の登録単位とはしない。実施計画書の総括表によれば、令和8年度の実施計画事業は798件・予算額総計178,118,133千円（企業会計を除く）である。",
+  "fiscal_year": 2026,
+  "goal_count": 8,
+  "measure_count": 23,
+  "unit_measure_count": 74,
+  "implementation_project_count": 798,
+  "featured_project_count": 128,
+  "count_note": "施策数23・単位施策数74・実施計画事業数798・予算額総計178,118,133千円は、令和8年度版実施計画書「めざす姿別実施計画事業総括表」の公表値であり、座標レベルの照合と合計検算で一致を確認した。主な事業128件・74,216,233千円も同表の公表値である。",
+  "source_ids": [
+   "kawaguchi-city-implementation-plan-fy2026",
+   "kawaguchi-city-sixth-plan-basic-plan-introduction",
+   "kawaguchi-city-admin-evaluation-fy2025-summary"
+  ]
+ },
+ "selection_rule": {
+  "description": "計画体系の柱である8つのめざす姿を掲載順に巡回し、各めざす姿の先頭の施策を1件ずつ選ぶ（8件）。10件に満たないため巡回を続け、めざす姿I・IIの2番目の施策を1件ずつ追加する（2件）。掲載順は前期基本計画各論および令和8年度版実施計画書の目次・各論の並びで定める。金額の大小では選ばない。",
+  "pillars": [
+   "めざす姿I 健康で、自分らしく生き生きと暮らせるまち",
+   "めざす姿II 誰もがお互いを認め合い、安心して暮らせるまち",
+   "めざす姿III こどもをみんなで育み、こどもが輝き活躍するまち",
+   "めざす姿IV 学びとスポーツ・文化に親しみ、自己実現ができるまち",
+   "めざす姿V にぎわいと魅力があり、伝統と未来が響き合うまち",
+   "めざす姿VI 都市と自然が調和した、うるおいとやすらぎのあるまち",
+   "めざす姿VII 誰もが安全で快適に暮らせるまち",
+   "めざす姿VIII 持続可能で自立したまち"
+  ]
+ },
+ "selections": [
+  {
+   "pillar": "めざす姿I 健康で、自分らしく生き生きと暮らせるまち",
+   "policy": "めざす姿I 健康で、自分らしく生き生きと暮らせるまち",
+   "department": null,
+   "project_id": "jp-local-112038-project-2026-healthy-life",
+   "series_id": "jp-local-112038-project-series-healthy-life",
+   "official_title": "健康な心と身体を育むまちづくり",
+   "selection_basis": "めざす姿I 健康で、自分らしく生き生きと暮らせるまちの先頭の施策（1巡目）。前期基本計画各論および令和8年度版実施計画書の掲載順によるもので、金額の大小では選んでいない。",
+   "source_ids": [
+    "kawaguchi-city-sixth-plan-chapter-goal1",
+    "kawaguchi-city-implementation-plan-fy2026"
+   ]
+  },
+  {
+   "pillar": "めざす姿II 誰もがお互いを認め合い、安心して暮らせるまち",
+   "policy": "めざす姿II 誰もがお互いを認め合い、安心して暮らせるまち",
+   "department": null,
+   "project_id": "jp-local-112038-project-2026-disaster-resilient-safe-city",
+   "series_id": "jp-local-112038-project-series-disaster-resilient-safe-city",
+   "official_title": "災害や危機に強く、誰もが安全・安心に暮らせるまちづくり",
+   "selection_basis": "めざす姿II 誰もがお互いを認め合い、安心して暮らせるまちの先頭の施策（1巡目）。前期基本計画各論および令和8年度版実施計画書の掲載順によるもので、金額の大小では選んでいない。",
+   "source_ids": [
+    "kawaguchi-city-sixth-plan-chapter-goal2",
+    "kawaguchi-city-implementation-plan-fy2026"
+   ]
+  },
+  {
+   "pillar": "めざす姿III こどもをみんなで育み、こどもが輝き活躍するまち",
+   "policy": "めざす姿III こどもをみんなで育み、こどもが輝き活躍するまち",
+   "department": null,
+   "project_id": "jp-local-112038-project-2026-child-wellbeing-support",
+   "series_id": "jp-local-112038-project-series-child-wellbeing-support",
+   "official_title": "すべてのこどもの幸せにつながる支援の推進",
+   "selection_basis": "めざす姿III こどもをみんなで育み、こどもが輝き活躍するまちの先頭の施策（1巡目）。前期基本計画各論および令和8年度版実施計画書の掲載順によるもので、金額の大小では選んでいない。",
+   "source_ids": [
+    "kawaguchi-city-sixth-plan-chapter-goal3",
+    "kawaguchi-city-implementation-plan-fy2026"
+   ]
+  },
+  {
+   "pillar": "めざす姿IV 学びとスポーツ・文化に親しみ、自己実現ができるまち",
+   "policy": "めざす姿IV 学びとスポーツ・文化に親しみ、自己実現ができるまち",
+   "department": null,
+   "project_id": "jp-local-112038-project-2026-lifelong-learning-sports",
+   "series_id": "jp-local-112038-project-series-lifelong-learning-sports",
+   "official_title": "生涯学習・スポーツができる環境づくり",
+   "selection_basis": "めざす姿IV 学びとスポーツ・文化に親しみ、自己実現ができるまちの先頭の施策（1巡目）。前期基本計画各論および令和8年度版実施計画書の掲載順によるもので、金額の大小では選んでいない。",
+   "source_ids": [
+    "kawaguchi-city-sixth-plan-chapter-goal4",
+    "kawaguchi-city-implementation-plan-fy2026"
+   ]
+  },
+  {
+   "pillar": "めざす姿V にぎわいと魅力があり、伝統と未来が響き合うまち",
+   "policy": "めざす姿V にぎわいと魅力があり、伝統と未来が響き合うまち",
+   "department": null,
+   "project_id": "jp-local-112038-project-2026-economic-activity-employment",
+   "series_id": "jp-local-112038-project-series-economic-activity-employment",
+   "official_title": "経済活動の持続的発展と安定した雇用の確保",
+   "selection_basis": "めざす姿V にぎわいと魅力があり、伝統と未来が響き合うまちの先頭の施策（1巡目）。前期基本計画各論および令和8年度版実施計画書の掲載順によるもので、金額の大小では選んでいない。",
+   "source_ids": [
+    "kawaguchi-city-sixth-plan-chapter-goal5",
+    "kawaguchi-city-implementation-plan-fy2026"
+   ]
+  },
+  {
+   "pillar": "めざす姿VI 都市と自然が調和した、うるおいとやすらぎのあるまち",
+   "policy": "めざす姿VI 都市と自然が調和した、うるおいとやすらぎのあるまち",
+   "department": null,
+   "project_id": "jp-local-112038-project-2026-water-and-greenery",
+   "series_id": "jp-local-112038-project-series-water-and-greenery",
+   "official_title": "豊かな水と緑に親しむ空間づくり",
+   "selection_basis": "めざす姿VI 都市と自然が調和した、うるおいとやすらぎのあるまちの先頭の施策（1巡目）。前期基本計画各論および令和8年度版実施計画書の掲載順によるもので、金額の大小では選んでいない。",
+   "source_ids": [
+    "kawaguchi-city-sixth-plan-chapter-goal6",
+    "kawaguchi-city-implementation-plan-fy2026"
+   ]
+  },
+  {
+   "pillar": "めざす姿VII 誰もが安全で快適に暮らせるまち",
+   "policy": "めざす姿VII 誰もが安全で快適に暮らせるまち",
+   "department": null,
+   "project_id": "jp-local-112038-project-2026-planned-urban-development",
+   "series_id": "jp-local-112038-project-series-planned-urban-development",
+   "official_title": "住・工・商・緑が調和した計画的なまちづくり",
+   "selection_basis": "めざす姿VII 誰もが安全で快適に暮らせるまちの先頭の施策（1巡目）。前期基本計画各論および令和8年度版実施計画書の掲載順によるもので、金額の大小では選んでいない。",
+   "source_ids": [
+    "kawaguchi-city-sixth-plan-chapter-goal7",
+    "kawaguchi-city-implementation-plan-fy2026"
+   ]
+  },
+  {
+   "pillar": "めざす姿VIII 持続可能で自立したまち",
+   "policy": "めざす姿VIII 持続可能で自立したまち",
+   "department": null,
+   "project_id": "jp-local-112038-project-2026-multi-stakeholder-collaboration",
+   "series_id": "jp-local-112038-project-series-multi-stakeholder-collaboration",
+   "official_title": "多様な主体と進めるまちづくり",
+   "selection_basis": "めざす姿VIII 持続可能で自立したまちの先頭の施策（1巡目）。前期基本計画各論および令和8年度版実施計画書の掲載順によるもので、金額の大小では選んでいない。",
+   "source_ids": [
+    "kawaguchi-city-sixth-plan-chapter-goal8",
+    "kawaguchi-city-implementation-plan-fy2026"
+   ]
+  },
+  {
+   "pillar": "めざす姿I 健康で、自分らしく生き生きと暮らせるまち",
+   "policy": "めざす姿I 健康で、自分らしく生き生きと暮らせるまち",
+   "department": null,
+   "project_id": "jp-local-112038-project-2026-elderly-healthy-active-life",
+   "series_id": "jp-local-112038-project-series-elderly-healthy-active-life",
+   "official_title": "高齢者が健やかに暮らし、活躍できるまちづくり",
+   "selection_basis": "めざす姿I 健康で、自分らしく生き生きと暮らせるまちの2番目の施策（2巡目）。前期基本計画各論および令和8年度版実施計画書の掲載順によるもので、金額の大小では選んでいない。",
+   "source_ids": [
+    "kawaguchi-city-sixth-plan-chapter-goal1",
+    "kawaguchi-city-implementation-plan-fy2026"
+   ]
+  },
+  {
+   "pillar": "めざす姿II 誰もがお互いを認め合い、安心して暮らせるまち",
+   "policy": "めざす姿II 誰もがお互いを認め合い、安心して暮らせるまち",
+   "department": null,
+   "project_id": "jp-local-112038-project-2026-mutual-respect-community",
+   "series_id": "jp-local-112038-project-series-mutual-respect-community",
+   "official_title": "互いに尊重し合い、地域で生き生きと活動しやすい環境づくり",
+   "selection_basis": "めざす姿II 誰もがお互いを認め合い、安心して暮らせるまちの2番目の施策（2巡目）。前期基本計画各論および令和8年度版実施計画書の掲載順によるもので、金額の大小では選んでいない。",
+   "source_ids": [
+    "kawaguchi-city-sixth-plan-chapter-goal2",
+    "kawaguchi-city-implementation-plan-fy2026"
+   ]
+  }
+ ],
+ "review_status": "reviewed",
+ "expansion_rule": {
+  "description": "初回登録として10件（8つのめざす姿の先頭の施策8件と、めざす姿I・IIの2番目の施策2件）。後続の展開では、同じ掲載順ルールを継続し、巡回の続きから施策を追加する。",
+  "added_count": 10,
+  "total_count": 10
+ }
+}
