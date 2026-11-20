@@ -1,6 +1,6 @@
 {
-  "version": "0.18.0",
-  "updated_at": "2026-11-20",
+  "version": "0.19.0",
+  "updated_at": "2026-11-21",
   "scope": "pilot",
   "records": [
     {
@@ -814,6 +814,62 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "堺市選挙管理委員会の令和5年第13回会議録（要旨、2023年12月20日開催）。補足資料に「堺市長の任期満了日（令和5年6月8日）」と明記し、2023年の市長選挙を公職選挙法第33条に基づく単独執行（満了日の30日前以内の選挙）とした経緯と、投票率34.12%を記録する。前任期の満了日の公式公表として用いた。2026-11-20にPDF本文を直接確認した。"
+    },
+    {
+      "id": "kanagawa-pref-governor",
+      "municipality_key": "kanagawa-prefecture",
+      "organization": "神奈川県",
+      "category": "executive",
+      "title": "知事プロフィール（神奈川県）",
+      "url": "https://www.pref.kanagawa.jp/chiji/profile/index.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "神奈川県公式の知事プロフィール。現職知事が黒岩祐治であることと略歴（平成23年4月就任、平成27年4月二期目、平成31年4月三期目、令和5年4月四期目）を示す。ページには神奈川県の法人番号1000020140007（団体コード140007を含む）が掲載されている。"
+    },
+    {
+      "id": "kanagawa-pref-governor-election-2023-results",
+      "municipality_key": "kanagawa-prefecture",
+      "organization": "神奈川県選挙管理委員会",
+      "category": "election",
+      "title": "令和5年4月9日執行 神奈川県知事選挙 候補者別得票数（選挙の記録）",
+      "url": "https://www.pref.kanagawa.jp/documents/7577/chijikiroku.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "2023年4月9日執行の神奈川県知事選挙の公式結果。候補者4人、黒岩祐治1,933,753票（得票率67.60％、無所属・現職）で当選、岸牧子651,473票、おおつあやか151,361票、加藤健一郎123,922票。有効投票2,860,509票、投票率40.35％。"
+    },
+    {
+      "id": "kanagawa-governor-term-expiry-list",
+      "municipality_key": "kanagawa-prefecture",
+      "organization": "神奈川県選挙管理委員会",
+      "category": "election",
+      "title": "議員及び長の任期満了一覧（令和8年8月3日現在）",
+      "url": "https://www.pref.kanagawa.jp/documents/7396/giinnoyobichounoninnkimannryou.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "神奈川県選挙管理委員会の任期満了一覧。神奈川県知事の任期満了日として令和9年4月22日（2027年4月22日）を日単位で明記する。県議会議員は定数105・任期満了令和9年4月29日。"
+    },
+    {
+      "id": "kanagawa-pref-governor-election-2023-page",
+      "municipality_key": "kanagawa-prefecture",
+      "organization": "神奈川県選挙管理委員会",
+      "category": "election",
+      "title": "神奈川県知事選挙・神奈川県議会議員選挙（過去の選挙結果）（選挙管理委員会）",
+      "url": "https://www.pref.kanagawa.jp/docs/em7/cnt/f5/p744573.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "県選管の選挙の記録ページ。令和5年4月9日執行の知事選挙について、選挙公報（PDF）と候補者別得票数へのリンクを掲載する。選挙公報の候補者欄は写真植字で機械可読なテキスト層がない。"
     }
   ]
 }

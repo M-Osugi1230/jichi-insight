@@ -1,0 +1,55 @@
+{
+  "id": "phase15-kanagawa-plan-review",
+  "name_ja": "神奈川県",
+  "next_action": "Register the 13 projects of the implementation plan in the Kanagawa cluster's project stage, using the annual evaluation reports as the official evaluation source; register the governor's promises in the promise stage from the official 2023 election bulletin (the candidate pages are image-only and need transcription); add the assembly layer in the assembly stage; and keep supplementary budgets, execution and settlement as separate states.",
+  "official_code": "140007",
+  "quality_boundary": "This package reviews the identity and structure of Kanagawa Prefecture's current comprehensive plan (the New Kanagawa Grand Design, adopted in March 2024: a basic concept looking ahead to 2040 under the philosophy 'Inochi kagayaku Magnet Kanagawa', plus an implementation plan for FY2024-FY2027 organised into five themes and 13 cross-field projects, with major measures arranged in seven policy fields), the implementation layer (project-level management with logic models and project indicators/KPIs; no project-level policy-evaluation sheet exists) and the progress-governance layer (annual evaluation reports with four-stage project judgements by the Comprehensive Plan Council). The 13 projects are enumerated by name in the policy-structure record but their indicators and evaluations are registered in the project stage, not here. The enacted FY2026 general-account initial budget is registered separately in fiscal_records.json at the published thousand-yen precision, and the FY2022-FY2024 ordinary-account settlements are registered separately in settlement_records.json; general-account settlement figures are not mixed into the ordinary-account series.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "計画の位置付けと構成は県公式「総合計画のページ」で、理念・基本構想と実施計画の構成と策定時期は「新かながわグランドデザインの策定について」で直接確認した。",
+      "evidence_role": "current_plan_identity",
+      "id": "kanagawa-current-plan-identity",
+      "review_note": "計画の同一性と期間を、政策評価や年度予算と分離して保持する。レビュー済みレコード。",
+      "source_url": "https://www.pref.kanagawa.jp/docs/r5k/keikaku2024.html",
+      "statement": "神奈川県の現行の総合計画は「新かながわグランドデザイン」である。県は総合計画を「県政運営の総合的・基本的指針」と位置付けており、新かながわグランドデザインは、これまで掲げてきた「いのち輝くマグネット神奈川」の理念を継承し、2040年の神奈川を展望した「基本構想」と、2024年度から2027年度を計画期間とする「実施計画」で構成される。2024年3月に策定された（県は2024年3月28日に策定を公表）。",
+      "title": "新かながわグランドデザインの策定と構成（2024年3月策定、基本構想＋実施計画）",
+      "value": "新かながわグランドデザイン（基本構想＋実施計画2024–2027）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "テーマとプロジェクトの構成は実施計画（プロジェクト）テキスト版で、主要施策の7分野は実施計画骨子案で直接確認した。",
+      "evidence_role": "policy_structure",
+      "id": "kanagawa-plan-policy-structure",
+      "review_note": "プロジェクト名は実施計画テキスト版の見出し表記を採用した。レビュー済みレコード。",
+      "source_url": "https://www.pref.kanagawa.jp/docs/r5k/keikaku2024_tjpj.html",
+      "statement": "実施計画は、「基本構想」に示した「2040年に向けた政策の基本方向」を踏まえ、5つのテーマ（I 希望の持てる神奈川／II 持続的に発展する神奈川／III 自分らしく生きられる神奈川／IV 安心してくらせる神奈川／V 神奈川を支える基盤づくり）を設定し、県の重点施策を分野横断的に13のプロジェクト（1 子ども・若者、2 教育、3 未病・健康長寿、4 文化・スポーツ、5 観光・地域活性化、6 経済・労働、7 農林水産、8 脱炭素・環境、9 生活困窮、10 共生社会、11 くらしの安心、12 危機管理、13 都市基盤）として取りまとめたものである。各プロジェクトにはロジックモデルが作成され、プロジェクト指標とKPIが設定されている。あわせて主要施策は7つの政策分野（I 子ども・若者・教育／II 健康・福祉／III 産業・労働／IV 環境・エネルギー／V 共生・県民生活／VI 危機管理・くらしの安心／VII 県土・まちづくり）で体系化されている。",
+      "title": "5つのテーマと13のプロジェクト（実施計画の政策体系）",
+      "value": "5つのテーマ／13のプロジェクト"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "実施計画の期間と政策評価・ロジックモデルの考え方は実施計画（プロジェクト）テキスト版の冒頭で直接確認した。",
+      "evidence_role": "implementation_layer",
+      "id": "kanagawa-plan-implementation-layer",
+      "review_note": "事業の登録は段階2でプロジェクト単位に行う。レビュー済みレコード。",
+      "source_url": "https://www.pref.kanagawa.jp/docs/r5k/keikaku2024_tjpj.html",
+      "statement": "実施は、基本構想のもとに策定された実施計画（計画期間2024年度から2027年度）により行われる。県は実施計画の策定に当たり、証拠に基づく政策立案（EBPM）の考え方を用いて施策の実施状況について政策評価を行うこととし、プロジェクトごとにロジックモデルを作成して、プロジェクトのねらいと施策との関係性を明確化した政策体系を構築している。事業単位の母集団は13プロジェクト（および主要施策の体系）であり、事業単位の「政策評価調書」の様式は存在しない。",
+      "title": "実施計画（2024–2027）による実施とプロジェクト単位の政策評価",
+      "value": "実施計画（2024–2027年度）＋13プロジェクト単位の実施管理"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "評価報告書の公表と位置付けは県公式「総合計画のページ」と評価報告書2025の公表ページで、評価の方法と2025年度の内訳は令和8年第2回定例会の産業労働常任委員会報告資料で確認した。",
+      "evidence_role": "progress_governance",
+      "id": "kanagawa-plan-progress-governance",
+      "review_note": "プロジェクトごとの評価の登録は段階2で行う。レビュー済みレコード。",
+      "source_url": "https://www.pref.kanagawa.jp/docs/r5k/cnt/f4895/hyoukahoukokusho2025.html",
+      "statement": "進行管理は、総合計画審議会による政策評価として毎年度実施され、結果は「新かながわグランドデザイン 評価報告書」に整理・公表される（2024年度評価＝評価報告書2024を2025年7月25日、2025年度評価＝評価報告書2025を2026年7月13日に公表）。評価の単位は実施計画の13プロジェクトで、事業部局による一次評価のうえ総合計画審議会が第三者の立場から二次評価を行い、「順調に進んでいる／概ね順調に進んでいる／やや遅れている／遅れている」の4段階で示される。評価報告書2025では、13プロジェクト中、順調6・概ね順調6・やや遅れ1・遅れ0であった。",
+      "title": "年次「評価報告書」（総合計画審議会の政策評価、4段階）による進行管理",
+      "value": "評価報告書（年次）／プロジェクト単位・4段階評価"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-21"
+}
