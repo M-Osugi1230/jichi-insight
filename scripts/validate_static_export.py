@@ -440,7 +440,7 @@ def reviewed_coverage_requirements() -> dict[str, list[str]]:
 def hokkaido_cluster_project_detail_files() -> set[str]:
     """Require each Reviewed Hokkaido cluster project series to export a detail page."""
     required: set[str] = set()
-    for slug in ("hokkaido-prefecture", "sapporo-city", "asahikawa-city"):
+    for slug in ("hokkaido-prefecture", "sapporo-city", "asahikawa-city", "osaka-prefecture", "osaka-city", "sakai-city"):
         records = load_json(ROOT / "data" / "reviewed" / slug / "projects.json")
         for series in {
             item["series_id"] for item in records if item["review_status"] == "reviewed"
@@ -620,10 +620,63 @@ def validate_hokkaido_assembly_scope() -> list[str]:
     path = EXPORT_ROOT / "assemblies/index.html"
     if path.is_file():
         content = normalized_html(path)
-        for phrase in ["9議会", "北海道議会", "札幌市議会", "旭川市議会"]:
+        for phrase in ["12議会", "大阪府議会", "大阪市会", "堺市議会", "北海道議会", "札幌市議会", "旭川市議会"]:
             if phrase not in content:
                 failures.append(f"assemblies/index.html missing {phrase}")
     return failures
+
+def validate_osaka_assembly_scope() -> list[str]:
+    """Keep Osaka assembly disclosures scoped to each assembly and its page."""
+    failures: list[str] = []
+    expected = {
+        "osaka-prefecture": {
+            "votes": ["会派別", "議員個人別の賛否は公表されていません", "第1〜4項", "第5項"],
+            "expenses": ["会派9・議員80", "89単位"],
+        },
+        "osaka-city": {
+            "votes": ["会派別", "議員個人別の賛否は公表されていません"],
+            "expenses": ["個人交付分", "市会図書室"],
+        },
+        "sakai-city": {
+            "votes": ["主な議案", "10件", "その他の議案"],
+            "petitions": ["陳情19件", "陳情回答綴"],
+        },
+    }
+    for slug, sections in expected.items():
+        path = EXPORT_ROOT / "assemblies" / slug / "index.html"
+        if not path.is_file():
+            failures.append(f"Missing static export file: assemblies/{slug}/index.html")
+            continue
+        content = normalized_html(path)
+        for section_id, phrases in sections.items():
+            section = re.search(
+                rf'<section\\b(?=[^>]*\\bid="{re.escape(section_id)}")[^>]*>(.*?)</section>',
+                content, flags=re.DOTALL,
+            )
+            if section is None:
+                failures.append(f"{slug} missing assembly section: {section_id}")
+                continue
+            failures.extend(
+                f"{slug} {section_id} missing required copy: {phrase}"
+                for phrase in phrases if phrase not in section.group(1)
+            )
+    path = EXPORT_ROOT / "municipalities/osaka-prefecture/index.html"
+    if path.is_file():
+        content = normalized_html(path)
+        section = re.search(
+            r'<section\\b(?=[^>]*\\bid="assembly")[^>]*>(.*?)</section>',
+            content, flags=re.DOTALL,
+        )
+        required = ["大阪府議会の議案・表決と情報公開", "請願第36号", "継続審査中"]
+        if section is None:
+            failures.append("Osaka prefecture page is missing its assembly section")
+        else:
+            failures.extend(
+                f"Osaka prefecture assembly section missing: {phrase}"
+                for phrase in required if phrase not in section.group(1)
+            )
+    return failures
+
 
 def main() -> int:
     args = parse_args()
@@ -676,6 +729,7 @@ def main() -> int:
     failures.extend(validate_asahikawa_promise_scope())
     failures.extend(validate_osaka_cluster_sections())
     failures.extend(validate_hokkaido_assembly_scope())
+    failures.extend(validate_osaka_assembly_scope())
 
     sources_path = EXPORT_ROOT / "sources/index.html"
     if sources_path.is_file():
