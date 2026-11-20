@@ -566,7 +566,10 @@ def main() -> int:
         set(REQUIRED_FILES)
         | published_required_files()
         | hokkaido_cluster_project_detail_files()
-        | {f"assemblies/{slug}/index.html" for slug in ("hokkaido-prefecture", "sapporo-city", "asahikawa-city")}
+        | {
+            f"assemblies/{slug}/index.html"
+            for slug in ("hokkaido-prefecture", "sapporo-city", "asahikawa-city")
+        }
     )
 
     for relative_path in sorted(required_files):
