@@ -80,7 +80,6 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
     const hasPromises = hasReviewedExecutivePromises(kawasakiMunicipality.id);
     return { key: "kawasaki-city", finance: false, promises: hasPromises, assembly: false, projects: hasProjects };
   }
-  }
 
   if (!matched && officialCode === hokkaidoFinance.municipality.official_code &&
     hokkaidoFinance.municipality.data_status === "reviewed") {
