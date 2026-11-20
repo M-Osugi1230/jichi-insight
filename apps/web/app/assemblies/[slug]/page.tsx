@@ -199,9 +199,11 @@ export default async function AssemblyDetailPage({params}:PageProps){
           <div><dt>差引残額</dt><dd>{exp.returned_yen===null?
             "支出が交付額を超過（詳細は出典資料）":yen(exp.returned_yen)}</dd></div>
         </dl>
-        <details><summary>支出の内訳（報告書上の区分）</summary>
-          <ul>{exp.breakdown.map((b,i)=><li key={`${b.category}-${i}`}>{b.category}：{yen(b.amount_yen)}</li>)}</ul>
-        </details>
+        {exp.breakdown.length > 0 ? (
+          <details><summary>支出の内訳（報告書上の区分）</summary>
+            <ul>{exp.breakdown.map((b,i)=><li key={`${b.category}-${i}`}>{b.category}：{yen(b.amount_yen)}</li>)}</ul>
+          </details>
+        ) : <p className={styles.note}>支出の内訳：集計値のみ登録（科目別内訳は未収録）</p>}
         <p className={styles.note}>領収書：{exp.receipt_access==="in_person_only"?"窓口でのみ閲覧可能":exp.receipt_access==="published"?"Web 公表あり":exp.receipt_access==="not_published"?"Web では公表されていません":"公開状況を要確認"}。報告書：{exp.report_status==="published"?"公表あり":"公開状況未確認"}。</p>
         <Sources ids={exp.sources} available={data.sources}/>
         <EvidenceLink packets={evidenceFor(data,exp.id)} sources={data.sources}/>
