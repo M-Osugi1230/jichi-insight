@@ -261,5 +261,33 @@
     ],
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-osaka-city-2026",
+    "executive_term_id": "jp-local-271004-executive-2026-02-09",
+    "searched_at": "2026-11-20",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "osaka-city-mayor-election-2026-bulletin"
+    ],
+    "checked_source_ids": [
+      "osaka-city-mayor-election-2026-results",
+      "osaka-city-mayor-election-2026-bulletin",
+      "osaka-city-mayor"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "大阪市選挙管理委員会の選挙特設ページ「候補者名簿・選挙公報」に、2026年大阪市長選挙の選挙公報PDFへの安定した導線があり、市の公式サイト上で公報そのものを取得できた。横山ひでゆき候補欄（1ページ目中段右）を確認し、選挙公報を出典として登録、分割レビュー（manifesto-review-jp-local-271004-2026）を経て公約レコード5件を作成した。選挙公報は候補者提出原稿をそのまま掲載した公式文書であり、出典優先順位の最上位に当たるため、公約レコードの confidence は high とした。原典の選択（2026年出直し選挙の公報を正本とし、2023年選挙の公報は比較対象として記録に留める）は Issue #772 の判断による。候補者の政策パンフレット等、公報より詳細な資料の安定した所在は特定しておらず、資料が存在しないとは判定しない。",
+    "next_actions": [
+      "候補者の政策資料（公報より詳細な公約資料）の安定した所在が特定できれば、登録済みの公約文と照合する",
+      "2023年選挙公報の公約との比較検証を行う場合は、両公報の項目対応を別途レビューする",
+      "未接続の公約（全5件）について、計画・事業資料への進捗証拠の接続を拡充する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]

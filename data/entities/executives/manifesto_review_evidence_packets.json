@@ -325,5 +325,46 @@
       "事業との接続は文言・内容に基づく推定であり、道が公約と事業の公式な対応付けを公表した場合は接続を見直す。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-osaka-city-2026-manifesto-review",
+    "subject_type": "manifesto_review",
+    "subject_id": "manifesto-review-jp-local-271004-2026",
+    "claims": [
+      {
+        "field": "source_location",
+        "statement": "横山ひでゆき候補欄は大阪市長選挙の選挙公報1ページ目中段右に掲載され、見出し、「維新には実績がある」枠、「維新には展望がある」枠（2ボックス・計5項目）、スローガン、プロフィールで構成される。",
+        "source_ids": [
+          "osaka-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全1ページ）の中段右。",
+        "decision": "accepted",
+        "review_note": "2026-11-20に公式PDFを取得し、候補者欄全体を描画画像で確認した。"
+      },
+      {
+        "field": "segmentation_status",
+        "statement": "「維新には展望がある」枠の5項目を資料上の境界（行）に従い5件へ分割した。見出し・スローガン（政治姿勢・主題の表明）、ボックスの表題（政策の枠組み）とプロフィール（経歴）は公約ではないためレコード化していない。「維新には実績がある」枠の3項目は実績の提示であり、将来への約束ではないためレコード化していない。",
+        "source_ids": [
+          "osaka-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "候補者欄全体。",
+        "decision": "accepted",
+        "review_note": "句読点による推測分割は行っていない（docs/PROMISE_EXTRACTION.md の分割ルール）。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、大阪市選挙管理委員会が公式サイトで公表する選挙公報PDFそのものから取得した。選挙公報は候補者から提出された原稿をそのまま掲載した公式文書であり、出典優先順位の最上位に当たる。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "osaka-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "大阪市選挙管理委員会の選挙特設ページとPDFに基づく。",
+        "decision": "accepted",
+        "review_note": "公報は出典優先順位の最上位であり、第三者経由の引用ではない。"
+      }
+    ],
+    "open_questions": [
+      "2023年選挙の選挙公報の公約との比較検証は行っていない（原典の選択は Issue #772 の判断による）。"
+    ],
+    "review_status": "reviewed"
   }
 ]
