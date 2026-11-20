@@ -27,12 +27,32 @@ const financeByKey = {
  * A municipality with no corresponding Reviewed registration receives NO
  * deep-dive links, regardless of its display name or prefecture.
  */
+function hasReviewedExecutivePromises(municipalityId: string) {
+  return currentExecutiveTerms.some((term) =>
+    term.municipality_id === municipalityId &&
+    (term.review_status === "reviewed" || term.review_status === "verified") &&
+    promiseRecords.some((promise) =>
+      promise.municipality_id === municipalityId &&
+      promise.executive_term_id === term.id &&
+      (promise.review_status === "reviewed" || promise.review_status === "verified"),
+    ),
+  );
+}
+
 export function municipalityDiscoveryAvailability(officialCode: string) {
   const matched = (Object.keys(financeByKey) as DeepDiveKey[]).find((key) => {
     const municipality = financeByKey[key].municipality;
     return municipality.official_code === officialCode &&
       municipality.data_status === "reviewed";
   });
+
+  if (!matched && officialCode === "141003" && hasReviewedExecutivePromises("jp-local-141003")) {
+    return { key: "yokohama-city", finance: false, promises: true, assembly: false, projects: false };
+  }
+
+  if (!matched && officialCode === "141305" && hasReviewedExecutivePromises("jp-local-141305")) {
+    return { key: "kawasaki-city", finance: false, promises: true, assembly: false, projects: false };
+  }
 
   if (!matched && officialCode === hokkaidoFinance.municipality.official_code &&
     hokkaidoFinance.municipality.data_status === "reviewed") {
