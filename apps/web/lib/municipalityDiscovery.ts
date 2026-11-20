@@ -1,4 +1,7 @@
 import osakaMunicipality from "../../../data/reviewed/osaka-prefecture/municipality.json";
+import kanagawaMunicipality from "../../../data/reviewed/kanagawa-prefecture/municipality.json";
+import yokohamaMunicipality from "../../../data/reviewed/yokohama-city/municipality.json";
+import kawasakiMunicipality from "../../../data/reviewed/kawasaki-city/municipality.json";
 import osakaSettlementRecords from "../../../data/reviewed/osaka-prefecture/settlement_records.json";
 import { assemblies, isAssemblySlug } from "@/lib/assemblyRegistry";
 import { aichiFinance } from "@/lib/aichiFinance";
@@ -33,6 +36,34 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
     return municipality.official_code === officialCode &&
       municipality.data_status === "reviewed";
   });
+
+  if (!matched && officialCode === kanagawaMunicipality.official_code &&
+    kanagawaMunicipality.data_status === "reviewed") {
+    const hasProjects = projectRegistry["kanagawa-prefecture"].projects.some((project) =>
+      project.review_status === "reviewed" &&
+      project.municipality_id === kanagawaMunicipality.id,
+    );
+    // Stage-two project registration does not activate finance, promises or assembly.
+    return { key: "kanagawa-prefecture", finance: false, promises: false, assembly: false, projects: hasProjects };
+  }
+
+  if (!matched && officialCode === yokohamaMunicipality.official_code &&
+    yokohamaMunicipality.data_status === "reviewed") {
+    const hasProjects = projectRegistry["yokohama-city"].projects.some((project) =>
+      project.review_status === "reviewed" &&
+      project.municipality_id === yokohamaMunicipality.id,
+    );
+    return { key: "yokohama-city", finance: false, promises: false, assembly: false, projects: hasProjects };
+  }
+
+  if (!matched && officialCode === kawasakiMunicipality.official_code &&
+    kawasakiMunicipality.data_status === "reviewed") {
+    const hasProjects = projectRegistry["kawasaki-city"].projects.some((project) =>
+      project.review_status === "reviewed" &&
+      project.municipality_id === kawasakiMunicipality.id,
+    );
+    return { key: "kawasaki-city", finance: false, promises: false, assembly: false, projects: hasProjects };
+  }
 
   if (!matched && officialCode === hokkaidoFinance.municipality.official_code &&
     hokkaidoFinance.municipality.data_status === "reviewed") {

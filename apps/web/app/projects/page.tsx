@@ -51,8 +51,8 @@ export default function ProjectsPage() {
       <SiteHeader />
       <main className="pageShell">
         <h1>重点事業</h1>
-        <p>12自治体の Reviewed 事業レコードを掲載しています。公式母集団から各政策の柱ごとに掲載順で選定したものであり、金額順・優先度順・独自ランキングではありません。</p>
-        <p>確認できること：福岡県・福岡市・北九州市・愛知県・名古屋市・豊田市・北海道・札幌市・旭川市・大阪府・大阪市・堺市の登録済み重点事業の予算・KPI・公式評価（公表のあるもの）。まだ確認できないこと：12自治体の全事業を網羅した一覧ではありません。名古屋市の金額は予算案段階の予定額で成立値ではなく、愛知県のFY2026当初予算額は億円単位の概数です。北海道の金額は基本評価調書の「予算額」に基づく当初予算ベースで、決算額ではありません。北海道の総合判定は道の一次政策評価の判定です。豊田市・札幌市・旭川市の事業単位の公式評価は公表されていません。独自評価や順位付けは行いません。</p>
+        <p>15自治体の Reviewed 事業レコードを掲載しています。公式母集団から各政策の柱ごとに掲載順で選定したものであり、金額順・優先度順・独自ランキングではありません。</p>
+        <p>確認できること：福岡県・福岡市・北九州市・愛知県・名古屋市・豊田市・北海道・札幌市・旭川市・大阪府・大阪市・堺市・神奈川県・横浜市・川崎市の登録済み重点事業の予算・KPI・公式評価（公表のあるもの）。まだ確認できないこと：15自治体の全事業を網羅した一覧ではありません。名古屋市の金額は予算案段階の予定額で成立値ではなく、愛知県のFY2026当初予算額は億円単位の概数です。北海道の金額は基本評価調書の「予算額」に基づく当初予算ベースで、決算額ではありません。北海道の総合判定は道の一次政策評価の判定です。豊田市・札幌市・旭川市の事業単位の公式評価は公表されていません。独自評価や順位付けは行いません。神奈川県の金額は評価報告書に億円単位で公表されたプロジェクト事業費（1億円未満切捨て）です。横浜市は施策群単位の登録であり、個別事業単位ではありません。横浜市・川崎市の金額と公式評価は、登録単位・計画年度に対応する公表値がないため未登録です。</p>
 
         <ProgressiveRecordFilter
           kind="projects"
@@ -65,6 +65,9 @@ export default function ProjectsPage() {
               <p className={styles.meta}>母集団：{area.selection.population?.description ?? area.selection.population?.label ?? "詳細未収録"}</p>
               <p className={styles.meta}>選定方法：{(typeof area.selection.selection_rule === "string" ? area.selection.selection_rule : area.selection.selection_rule?.description) ?? "選定規則未収録"}</p>
               <p className={styles.meta}>選定カタログ更新：{area.selection.updated_at ?? "未収録"}。選定・除外理由は Reviewed 選定カタログで管理しています。</p>
+              {key === "kanagawa-prefecture" ? <p className={styles.meta}>金額は評価報告書「プロジェクト事業費」の億円単位の公表値（1億円未満切捨て）を円換算したものです。千円単位の内訳・プロジェクト単位の決算額・執行額は公表されていません。</p> : null}
+              {key === "yokohama-city" ? <p className={styles.meta}>登録単位：施策群。横浜市中期計画の33施策群から選定した10件であり、個別事業ではありません。施策群単位の金額・公式評価は公表されていないため、金額は未登録です。施策群単位の公式評価も未公表です。</p> : null}
+              {key === "kawasaki-city" ? <p className={styles.meta}>第4期実施計画の事務事業から選定した10件です。第4期実施計画に対応する事業別当初予算額は公表されていないため、金額は未登録です。第4期の公式評価は未登録（未公表）です。</p> : null}
               {key === "nagoya-city" ? <p className={styles.meta}>金額は予算案段階の「予定額」であり、成立後の事業別予算額ではありません。</p> : null}
               {key === "aichi-prefecture" ? <p className={styles.meta}>FY2026 当初予算額は、億円単位で公表された概数です。公式評価の A〜E は愛知県の判定をそのまま表示します。</p> : null}
               {key === "toyota-city" ? <p className={styles.meta}>事業単位の公式評価は公表されていません。目標・施策単位の叙述を事業評価として扱いません。</p> : null}
@@ -76,6 +79,13 @@ export default function ProjectsPage() {
                     .map((sourceId) => projectSourceCatalog.find((source) => source.id === sourceId))
                     .filter((source): source is NonNullable<typeof source> => Boolean(source));
                   const primarySource = matchedSources.find((source) => source.url);
+                  const evidencePacket = area.evidencePackets.find((packet) => packet.subject_id === project.id);
+                  const budgetDisclosure = project.budget_records
+                    .map((record) => record.note)
+                    .filter((note): note is string => Boolean(note));
+                  const evaluationDisclosure = evidencePacket?.claims
+                    .filter((claim) => claim.field === "official_evaluation")
+                    .map((claim) => claim.statement) ?? [];
                   const stages = [...new Set(project.budget_records.map((record) =>
                     `${record.fiscal_year}年度 ${stageLabels[record.kind] ?? record.kind}`,
                   ))];
@@ -92,6 +102,14 @@ export default function ProjectsPage() {
                       <h3>{project.official_title}</h3>
                       <p>{project.plain_title}</p>
                       <p className={styles.meta}>段階：{stages.length ? stages.join("／") : "該当する予算・決算段階の登録なし"}</p>
+                      {key === "yokohama-city" ? <p className={styles.meta}>登録単位：施策群</p> : null}
+                      {budgetDisclosure.length || evaluationDisclosure.length ? (
+                        <details>
+                          <summary>金額・公式評価の公表状況と欠損理由</summary>
+                          {budgetDisclosure.map((note, index) => <p className={styles.meta} key={`budget-note-${index}`}>金額：{note}</p>)}
+                          {evaluationDisclosure.map((note, index) => <p className={styles.meta} key={`evaluation-note-${index}`}>公式評価：{note}</p>)}
+                        </details>
+                      ) : null}
                       {key === "nagoya-city" ? <p className={styles.meta}>予算案段階の予定額（成立値ではありません）</p> : null}
                       {key === "aichi-prefecture" ? <p className={styles.meta}>FY2026 当初予算は億円単位の概数です。県の公式評価：{project.official_evaluation?.rating ?? "未収録"}</p> : null}
                       {key === "toyota-city" ? <p className={styles.meta}>事業単位の公式評価は公表されていません。</p> : null}
