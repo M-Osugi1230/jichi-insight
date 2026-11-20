@@ -27,6 +27,7 @@ import {
 import { canonicalFor } from "@/lib/pageMetadata";
 import { assemblies } from "@/lib/assemblyRegistry";
 import { projectRegistry } from "@/lib/projectRegistry";
+import type { ProjectBudgetRecord } from "@/lib/kitakyushuProjects";
 
 import styles from "../fukuoka-prefecture/page.module.css";
 import projectStyles from "@/components/ProjectReview.module.css";
@@ -246,7 +247,7 @@ export default function KanagawaPrefecturePage() {
                   <p>{project.plain_title}</p>
                   <p>{project.official_evaluation?.note ?? "公式評価の詳細は登録資料を確認してください。"}</p>
                   <ul>
-                    {project.budget_records.map((record, index) => (
+                    {project.budget_records.map((record: ProjectBudgetRecord, index: number) => (
                       <li key={`${record.fiscal_year}-${record.kind}-${index}`}>
                         {record.fiscal_year}年度／評価報告書掲載プロジェクト事業費：
                         {yenHundredMillion(record.amount_yen)}
