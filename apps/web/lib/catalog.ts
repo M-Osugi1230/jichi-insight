@@ -1,4 +1,5 @@
 import hokkaidoFinanceCatalog from "../../../data/catalog/hokkaido_prefecture_finance_sources.json";
+import kanagawaFinanceCatalog from "../../../data/catalog/kanagawa_prefecture_finance_sources.json";
 import aichiFinanceCatalog from "../../../data/catalog/aichi_prefecture_finance_sources.json";
 import assemblyCatalog from "../../../data/catalog/fukuoka_assembly_sources.json";
 import cityFinanceCatalog from "../../../data/catalog/fukuoka_city_finance_sources.json";
@@ -8,6 +9,7 @@ import officialCatalog from "../../../data/catalog/official_sources.json";
 
 export type MunicipalityKey =
   | "hokkaido-prefecture"
+  | "kanagawa-prefecture"
   | "osaka-prefecture"
   | "osaka-city"
   | "sakai-city"
@@ -63,6 +65,12 @@ export const municipalityMeta: Record<
     summary: "計画・財政・重点事業と市長の現任期を確認します。公約原文は未登録です。",
     status: "財政データ公開", href: "/municipalities/sakai-city",
     fiscalSummary: "Reviewed 財政データ（汎用市ページ）",
+  },
+  "kanagawa-prefecture": {
+    name: "神奈川県", type: "都道府県",
+    summary: "新かながわグランドデザイン、2026年度成立後当初予算、3年度の普通会計決算と黒岩祐治知事の現任期を確認します。自治体別ページは準備中です。",
+    status: "財政データ公開", href: null,
+    fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
   },
   "hokkaido-prefecture": {
     name: "北海道",
@@ -140,6 +148,7 @@ export const municipalityMeta: Record<
 
 export const sourceCatalog = [
   ...(hokkaidoFinanceCatalog.records as SourceRecord[]),
+  ...(kanagawaFinanceCatalog.records as SourceRecord[]),
   ...(aichiFinanceCatalog.records as SourceRecord[]),
   ...(officialCatalog.records as SourceRecord[]),
   ...(financeCatalog.records as SourceRecord[]),
