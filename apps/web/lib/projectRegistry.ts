@@ -53,7 +53,7 @@ import { kitakyushuProjectData, type ProjectRecord, type KpiRecord } from "./kit
 import type { EvidencePacket } from "./finance";
 
 export type ProjectArea = "fukuoka-prefecture" | "osaka-prefecture" | "osaka-city" | "sakai-city" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city" | "hokkaido-prefecture" | "sapporo-city" | "asahikawa-city";
-type Selection = { updated_at?: string; population?: { description?: string }; selection_rule?: { description?: string }; };
+type Selection = { updated_at?: string; population?: { description?: string }; selection_rule?: { description?: string } | string; };
 type SetOfProjects = { name: string; projects: ProjectRecord[]; kpis: KpiRecord[]; evidencePackets: EvidencePacket[]; selection: Selection };
 export const projectRegistry: Record<ProjectArea, SetOfProjects> = {
   "osaka-prefecture": { name: "大阪府", projects: osakaProjects as ProjectRecord[], kpis: osakaKpis as KpiRecord[], evidencePackets: osakaEvidence as EvidencePacket[], selection: osakaSelection },
