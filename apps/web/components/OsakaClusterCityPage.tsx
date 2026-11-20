@@ -83,7 +83,7 @@ export function OsakaClusterCityPage({ slug }: { slug: OsakaCitySlug }) {
             </div>
             {promises.length > 0 ? (
               <ul>
-                {promises.map((promise) => <li key={promise.id}>{promise.title}</li>)}
+                {promises.map((promise) => <li key={promise.id}>{promise.plain_summary ?? promise.original_text}</li>)}
               </ul>
             ) : null}
             <p><Link href={`/promises#${slug}`}>公約の根拠とレビュー状態を見る</Link></p>
@@ -98,7 +98,7 @@ export function OsakaClusterCityPage({ slug }: { slug: OsakaCitySlug }) {
             <ul>
               {projects.map((project) => (
                 <li key={project.id}>
-                  <Link href={`/projects/${slug}/${project.series_id}`}>{project.name}</Link>
+                  <Link href={`/projects/${slug}/${project.series_id}`}>{project.official_title}</Link>
                 </li>
               ))}
             </ul>
