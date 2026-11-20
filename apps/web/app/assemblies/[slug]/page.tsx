@@ -88,6 +88,9 @@ export default async function AssemblyDetailPage({params}:PageProps){
       {slug==="aichi-prefecture" ? <p className={styles.attention}>愛知県議会の会派の態度は、採決に先立って議会運営委員会で確認したもので、本会議の投票記録そのものではありません。無所属の内訳は原資料の印字に従い、議員数との不一致を補完・推計しません。</p> : null}
       {slug==="nagoya-city" ? <p className={styles.attention}>名古屋市会の議員別賛否は第134号（名古屋城天守閣の契約変更）のみ68人分が公表されています。他の登録議案は全会一致です。「議決に参加できない」は議長の立場を示し、欠席ではありません。</p> : null}
       {slug==="toyota-city" ? <p className={styles.attention}>豊田市議会の会派別採決人数は公式の印字どおりです。自民クラブは議長を除く・欠席1名の人数であり、会派所属人数と表決人数を同一視しません。</p> : null}
+      {slug==="osaka-prefecture" ? <p className={styles.attention}>大阪府議会の賛否は会派別のみ公表され、議員個人別の賛否は公表されていません。請願第36号は第1〜4項と第5項を分けた項目別採決で、項目群によって態度が異なります。令和7年度決算認定関連の18件は閉会中継続審査中であり、確定した決算認定として扱いません。</p> : null}
+      {slug==="osaka-city" ? <p className={styles.attention}>大阪市会の賛否は会派別のみ公表されています。政務活動費は会派交付分の収支報告書・領収書がWeb公表されていますが、交付対象議員個人分の収支報告書はWeb公表されず、市会図書室での閲覧のみです。</p> : null}
+      {slug==="sakai-city" ? <p className={styles.attention}>堺市議会の会派別賛否は「主な議案」10件のみ公表され、その他の議案の会派別賛否は公表されていません。陳情19件は請願・議案の採決とは別系統の「陳情回答綴」で回答文が公表され、採択・不採択の結論とは扱いません。</p> : null}
       <p><Link href="/assemblies">9議会の一覧に戻る</Link></p>
       <nav aria-label="ページ内のセクション">
         <a href="#basic">基本情報</a> ／ <a href="#proposals">会期と議案</a> ／ <a href="#votes">表決</a> ／ <a href="#expenses">政務活動費</a> ／ <a href="#trips">視察</a> ／ <a href="#disclosure">情報公開</a>
@@ -135,7 +138,7 @@ export default async function AssemblyDetailPage({params}:PageProps){
               <td>{proposal.submitted_by||"未収録"}</td>
               <td>{date(proposal.decided_at)}</td>
               <td>{proposal.outcome||"未収録"}
-                {vote ? <details><summary>表決の公開範囲・会派別内訳</summary>
+                {vote ? <details><summary>表決の公開範囲・会派別内訳</summary>\n                  {vote.item_scope ? <p className={styles.note}>採決対象項目：{vote.item_scope}。項目ごとに採決された記録です。</p> : null}
                   {vote.member_vote_availability==="published" && vote.member_votes?.length
                     ? <div>
                         <p>公式公表の議員別賛否（{vote.member_votes.length}人分）。「議決に参加できない」は議長の扱いであり、欠席ではありません。</p>
@@ -166,7 +169,7 @@ export default async function AssemblyDetailPage({params}:PageProps){
 
     <section id="votes" className={styles.section}>
       <h2>表決の公開範囲</h2>
-      <p className={styles.attention}>{slug==="asahikawa-city" ? "議員ごとの賛否は賛否が分かれた8件のみ公表されています。全会一致の案件には個別内訳がなく、陳情の表決は採択への賛否です。" : slug==="nagoya-city"
+      <p className={styles.attention}>{slug==="osaka-prefecture" ? "大阪府議会は会派別の賛否のみ公表。請願第36号は第1〜4項と第5項を分けた項目別採決です。" : slug==="sakai-city" ? "堺市議会は「主な議案」10件のみ会派別賛否を公表し、その他の議案は未公表です。陳情19件は別系統の陳情回答綴で扱います。" : slug==="osaka-city" ? "大阪市会は会派別賛否のみ公表し、議員個人別の賛否は公表されていません。" : slug==="asahikawa-city" ? "議員ごとの賛否は賛否が分かれた8件のみ公表されています。全会一致の案件には個別内訳がなく、陳情の表決は採択への賛否です。" : slug==="nagoya-city"
         ? "議員ごとの賛否は第134号のみ68人分が公式公表されています。残る議案は全会一致です。議長の「議決に参加できない」は欠席ではありません。"
         : "議員ごとの賛否は公表されていません。議員名簿や会派の表決から、個人の賛否を推測・復元することはしません。"}</p>
       {slug==="sapporo-city" ? <p className={styles.attention}>札幌市議会は会派別の賛否のみ公表し、議員個人別の賛否は公表されていません。</p> : null}
@@ -180,7 +183,7 @@ export default async function AssemblyDetailPage({params}:PageProps){
 
     <section id="expenses" className={styles.section}>
       <h2>政務活動費（登録年度別）</h2>
-      <p className={styles.attention}>{slug==="hokkaido-prefecture" ? "北海道議会の政務活動費は集計値と閲覧制度のみが登録されています。領収書・個別支出を推計しません。" : slug==="sapporo-city" ? "札幌市議会の領収書は閲覧申請形式のため登録対象外です。" : slug==="fukuoka-city"?
+      <p className={styles.attention}>{slug==="osaka-city" ? "大阪市会の個人交付分の政務活動費収支報告書はWeb公表されておらず、市会図書室での閲覧のみです。会派交付分の公表資料と混同しません。" : slug==="hokkaido-prefecture" ? "北海道議会の政務活動費は集計値と閲覧制度のみが登録されています。領収書・個別支出を推計しません。" : slug==="sapporo-city" ? "札幌市議会の領収書は閲覧申請形式のため登録対象外です。" : slug==="fukuoka-city"?
         "福岡市議会は公式公開単位どおり会派交付分と議員個人分を併記します。":
         "公式公開単位は会派単位です。議員個人分の収支報告書は本登録に収録されておらず、個人別支出額を推測しません。"}
         {slug==="aichi-prefecture"
