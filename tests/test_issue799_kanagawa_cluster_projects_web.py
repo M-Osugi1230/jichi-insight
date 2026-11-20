@@ -36,13 +36,14 @@ def test_registry_adds_three_reviewed_areas_without_replacing_existing_ones():
 
 def test_projects_index_exposes_all_three_registered_areas_and_disclosure_units():
     assert "15自治体の Reviewed 事業レコード" in INDEX
-    for slug, heading in (
-        ("kanagawa-prefecture", "神奈川県｜登録事業"),
-        ("yokohama-city", "横浜市｜登録事業"),
-        ("kawasaki-city", "川崎市｜登録事業"),
+    for slug, name in (
+        ("kanagawa-prefecture", "神奈川県"),
+        ("yokohama-city", "横浜市"),
+        ("kawasaki-city", "川崎市"),
     ):
         assert f'"{slug}"' in REGISTRY
-        assert heading in INDEX
+        assert f'name: "{name}"' in REGISTRY
+    assert "area.name}｜登録事業" in INDEX
     assert "登録単位：施策群" in INDEX
     assert "億円単位の公表値（1億円未満切捨て）" in INDEX
     assert "第4期実施計画の事務事業から選定した10件" in INDEX
