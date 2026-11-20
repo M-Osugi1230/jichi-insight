@@ -1,0 +1,106 @@
+[
+ {
+  "as_of": "2026-11-20",
+  "assembly_id": "jp-local-270008-assembly-2023",
+  "confidence": "high",
+  "id": "jp-local-270008-assembly-2023-disclosure-2026",
+  "items": [
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_roster",
+    "note": "議員名簿と会派構成一覧表（令和8年9月10日現在、79人）を公開。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_composition",
+    "note": "9会派の構成を会派構成一覧表で公開。議決結果表の凡例では「政策会派 大大阪の和」、構成表では「大阪なにわの和」と表記が異なる（同一会派・1人）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "committee_composition",
+    "note": "所属委員会別一覧（常任委員会・特別委員会・議会運営委員会）を公開。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "proposals_and_results",
+    "note": "会期ページで提出議案・議決結果、請願議決結果、意見書案議決結果をPDF・Word版で公開。本登録の対象は令和8年9月定例会の79件。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_votes",
+    "note": "議決結果表に会派別の賛成（○）・反対（×）を併記。採決に先立つ確認態度ではなく議決の確定結果。請願第36号は項目別（第1〜4項／第5項）に採決された。",
+    "source_url": null
+   },
+   {
+    "availability": "not_published",
+    "granularity": "none",
+    "item": "member_votes",
+    "note": "議員個人別の賛否は公表されていない（結果PDF群・本会議ページ・会議録検索システムの案内で確認できず）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "political_activity_expense_reports",
+    "note": "政務活動費ポータルで、令和7年度分の収支報告書を含む会計帳簿等を全89単位（会派9・議員80）について公開。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "political_activity_expense_receipts",
+    "note": "領収書も同じポータルで単位ごとに公開されている。本登録では領収書を個別登録せず、公開の事実のみを記録する。",
+    "source_url": null
+   },
+   {
+    "availability": "not_published",
+    "granularity": "none",
+    "item": "inspection_trip_reports",
+    "note": "常任委員会の視察・管外調査について、報告書または一覧の形での体系的な公表は公式サイト上で特定できなかった。閉会中継続調査の結果は「各委員会調査報告書」として本会議に報告される運用があるが、個別の視察報告書（視察先・日程・参加者・費用）のWeb公表形式は確認できない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "meeting_minutes",
+    "note": "本会議会議録は外部の会議録検索システムで公開（府公式FAQから案内）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "session_broadcast",
+    "note": "本会議のライブ中継・録画配信を提供。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "petition_results",
+    "note": "請願は請願文書表（件名・受理年月日・請願項目・紹介議員）と請願議決結果を公開。陳情は所管の常任委員会委員等への送付のみで、委員会における審査や本会議における採決・不採択の決定は行われない制度のため、結果公表の形式も存在しない。",
+    "source_url": null
+   }
+  ],
+  "review_status": "reviewed",
+  "sources": [
+   "osaka-pref-assembly-factions-2026",
+   "osaka-pref-assembly-committee-members-2026",
+   "osaka-pref-assembly-session-page-2026-3",
+   "osaka-pref-assembly-proposals-2026-3",
+   "osaka-pref-assembly-petition-documents-2026-3",
+   "osaka-pref-assembly-petition-system",
+   "osaka-pref-assembly-seimu-portal",
+   "osaka-pref-assembly-honkaigi-2026",
+   "osaka-pref-assembly-committees-faq"
+  ]
+ }
+]
