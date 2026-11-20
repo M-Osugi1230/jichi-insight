@@ -114,10 +114,23 @@ def test_osaka_price_rise_amount_excludes_uchisu_component() -> None:
 
 def test_osaka_no_official_evaluation_and_kpis_empty() -> None:
     projects = _load(DATA / "projects.json")
+    # Promise back-links were completed when the Osaka data PRs were
+    # integrated: two projects are linked from the governor's promises
+    # (Issue #772); every other project still has none.
+    expected_links = {
+        "jp-local-270008-project-2026-cutting-edge-technology-implementation": [
+            "jp-local-270008-executive-2023-04-09-promise-002"
+        ],
+        "jp-local-270008-project-2026-growth-industry-talent": [
+            "jp-local-270008-executive-2023-04-09-promise-005"
+        ],
+    }
     for project in projects:
         assert project["official_evaluation"] is None
         assert project["kpis"] == []
-        assert project["related_promise_ids"] == []
+        assert project["related_promise_ids"] == expected_links.get(
+            project["id"], []
+        )
     assert _load(DATA / "project_kpis.json") == []
 
 
