@@ -41,8 +41,8 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 75
-    assert len({record["id"] for record in catalog["records"]}) == 75
+    assert len(catalog["records"]) == 76
+    assert len({record["id"] for record in catalog["records"]}) == 76
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
@@ -303,12 +303,15 @@ def test_manifesto_readiness_is_not_confused_with_progress() -> None:
     assert by_municipality["jp-local-141305"]["manifesto_source_ids"] == [
         "kawasaki-city-mayor-election-2025-bulletin",
     ]
-    # Saitama Prefecture registers no manifesto source at this stage:
-    # the 2023 bulletin is officially published and reachable from the
-    # election commission's result page, but whether its text layer is
-    # machine-readable has not been measured, so the promise decision
-    # is deferred to the cluster's promise stage.
-    assert by_municipality["jp-local-110001"]["manifesto_source_ids"] == []
+    # Saitama Prefecture registers the 2023 bulletin: the promise
+    # stage (Issue #822) measured the bulletin PDF (the text layer
+    # holds only the election commission's boilerplate; the candidate
+    # panels are image-only), transcribed Governor Ono's panel from
+    # rendered images at multiple resolutions and connected the
+    # bulletin to the governor's term.
+    assert by_municipality["jp-local-110001"]["manifesto_source_ids"] == [
+        "saitama-pref-governor-election-2023-bulletin",
+    ]
 
 
 def test_every_executive_has_evidence_and_known_sources() -> None:
