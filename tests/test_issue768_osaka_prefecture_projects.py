@@ -128,9 +128,7 @@ def test_osaka_no_official_evaluation_and_kpis_empty() -> None:
     for project in projects:
         assert project["official_evaluation"] is None
         assert project["kpis"] == []
-        assert project["related_promise_ids"] == expected_links.get(
-            project["id"], []
-        )
+        assert project["related_promise_ids"] == expected_links.get(project["id"], [])
     assert _load(DATA / "project_kpis.json") == []
 
 
