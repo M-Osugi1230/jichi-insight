@@ -261,5 +261,36 @@
     ],
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-osaka-pref-2026",
+    "executive_term_id": "jp-local-270008-executive-2023-04-09",
+    "searched_at": "2026-11-20",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "osaka-pref-governor-election-2026-bulletin"
+    ],
+    "checked_source_ids": [
+      "osaka-pref-governor-election-2026-page",
+      "osaka-pref-governor-election-2026-results",
+      "osaka-pref-governor-election-2026-bulletin"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "大阪府選挙管理委員会の選挙トップページ「令和8年執行 衆議院議員総選挙・大阪府知事選挙」から「大阪府知事選挙 選挙公報」ページにリンクがあり、知事選挙公報PDF（全1ページの大判シート）を府公式サイトから直接取得できることを確認し、2026-11-20にPDFを取得した。最上段の吉村洋文候補欄を確認し、選挙公報を出典として登録、分割レビュー（manifesto-review-jp-local-270008-2026）を経て公約レコード7件を作成した。本選挙は知事の退職の申立てに伴う出直し選挙（告示2026年1月22日、執行2026年2月8日）であり、現任期の起点となった2023年4月9日執行の知事選挙の選挙公報も府選管の公式ページから到達可能であることを段階0の棚卸しで確認しているが、公約の原典は直近の選挙で有権者に示された公約として2026年の公報を採用した（2023年の公報は今回は登録対象外とし、将来の比較に備えて本記録に残す）。選挙公報は候補者提出原稿をそのまま印刷した公式文書であり、第三者のコピーではなく選管公式サイトから直接取得できたため、公約レコードの confidence は high とした。選挙公報より詳細な候補者資料（政策集・政策パンフレット等）の安定した所在は特定できておらず、資料が存在しないとは判定しない。",
+    "next_actions": [
+      "政策パンフレット等、選挙公報より詳細な候補者資料の安定した所在が特定できれば、登録済みの公約文と照合する",
+      "2023年知事選挙の選挙公報との比較が必要になれば、同公報を別途登録して公約の変遷を記録する",
+      "未接続の公約（都構想の実現、地方分権の促進、規制緩和、首都機能の移転、多極型社会への移行）について、計画・事業資料への進捗証拠の接続を拡充する",
+      "2027年4月の任期満了に伴う次回知事選挙では、新任期の公約原文資料として選挙公報を改めて登録する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]

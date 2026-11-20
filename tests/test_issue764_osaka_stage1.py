@@ -122,11 +122,14 @@ def test_osaka_governor_term_and_reelection_history() -> None:
     assert term["term_end"] == "2027-04-08"
     # The February 2026 re-election (resignation-triggered, won with
     # 3,024,106 votes) does not start a new term, so no second term
-    # record exists for Osaka and no manifesto source is registered
-    # yet (decided in the promise stage).
+    # record exists for Osaka. The promise stage (Issue #772) later
+    # connected the 2026 re-election bulletin as the manifesto source
+    # of this same term.
     osaka_terms = [t for t in terms if t["municipality_id"] == "jp-local-270008"]
     assert len(osaka_terms) == 1
-    assert term["manifesto_source_ids"] == []
+    assert term["manifesto_source_ids"] == [
+        "osaka-pref-governor-election-2026-bulletin"
+    ]
 
     packets = load_json(ROOT / "data/entities/executives/evidence_packets.json")
     packet = next(p for p in packets if p["subject_id"] == TERM_ID)

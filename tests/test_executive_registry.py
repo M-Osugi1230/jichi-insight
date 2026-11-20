@@ -41,8 +41,8 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 47
-    assert len({record["id"] for record in catalog["records"]}) == 47
+    assert len(catalog["records"]) == 48
+    assert len({record["id"] for record in catalog["records"]}) == 48
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
@@ -200,11 +200,15 @@ def test_manifesto_readiness_is_not_confused_with_progress() -> None:
     # bulletin has no official web publication and no verifiable
     # candidate publication was found (see the source search record).
     assert by_municipality["jp-local-012041"]["manifesto_source_ids"] == []
-    # Osaka Prefecture registers no manifesto source yet: whether to
-    # register promises from the 2023 bulletin (the term's origin) or
-    # the image-only 2026 re-election bulletin is decided in the Osaka
-    # cluster's promise stage (see the term evidence packet).
-    assert by_municipality["jp-local-270008"]["manifesto_source_ids"] == []
+    # Osaka Prefecture registers the 2026 re-election bulletin: the
+    # promise stage (Issue #772) decided that the promises shown to
+    # voters at the most recent election are the appropriate source,
+    # even though the term itself started with the 2023 election. The
+    # 2023 bulletin remains reachable but unregistered (see the
+    # source search record).
+    assert by_municipality["jp-local-270008"]["manifesto_source_ids"] == [
+        "osaka-pref-governor-election-2026-bulletin",
+    ]
 
 
 def test_every_executive_has_evidence_and_known_sources() -> None:
