@@ -45,6 +45,7 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         "jp-local-011002-executive-2023-05-02",
         "jp-local-010006-executive-2023-04-23",
         "jp-local-270008-executive-2023-04-09",
+        "jp-local-271004-executive-2026-02-09",
     }
 
     for search in searches:
@@ -58,10 +59,11 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         for search in searches
         if search["result_status"] == "no_stable_primary_source_found"
     ]
-    # Eight searches have registered a primary source (Fukuoka
+    # Nine searches have registered a primary source (Fukuoka
     # Prefecture, Fukuoka City, Kitakyushu City, Aichi Prefecture,
-    # Nagoya City, Sapporo City, Hokkaido and Osaka Prefecture, each
-    # closed by its official election bulletin). Two searches remain
+    # Nagoya City, Sapporo City, Hokkaido, Osaka Prefecture and
+    # Osaka City, each closed by its official election bulletin).
+    # Two searches remain
     # exceptions:
     # Toyota City (the 2024 bulletin is not extant as an official web
     # publication) and Asahikawa City (the 2025 bulletin has no
