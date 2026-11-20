@@ -82,7 +82,9 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
         (promise.review_status === "reviewed" || promise.review_status === "verified"),
       ),
     );
-    return { key: "osaka-prefecture", finance: hasFinance, promises: hasPromises, assembly: false, projects: hasProjects };
+    const hasAssembly = assemblies["osaka-prefecture"].assembly.review_status === "reviewed" &&
+      assemblies["osaka-prefecture"].disclosure.review_status === "reviewed";
+    return { key: "osaka-prefecture", finance: hasFinance, promises: hasPromises, assembly: hasAssembly, projects: hasProjects };
   }
 
   if (!matched && officialCode === aichiFinance.municipality.official_code &&
