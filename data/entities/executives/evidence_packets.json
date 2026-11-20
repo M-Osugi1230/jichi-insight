@@ -898,5 +898,59 @@
       "2029年の次回市長選挙では、選挙期間中に公報の公式掲載を確認し、次任期の原典として登録する。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-saitama-pref-current-governor-term",
+    "subject_type": "executive_term",
+    "subject_id": "jp-local-110001-executive-2023-08-31",
+    "claims": [
+      {
+        "field": "person_name",
+        "statement": "埼玉県の現職知事が大野元裕であることを公式知事プロフィルで確認した。プロフィルには「令和元年8月 第61代埼玉県知事に就任」「令和5年8月 第62代埼玉県知事に就任」と記載されている。",
+        "source_ids": [
+          "saitama-pref-governor"
+        ],
+        "location_note": "埼玉県公式「知事プロフィル」。",
+        "decision": "accepted",
+        "review_note": "現職知事の氏名と就任歴を保持する。"
+      },
+      {
+        "field": "election_date",
+        "statement": "現任期に対応する知事選挙は2023年8月6日に執行された任期満了に伴う選挙であり、大野もとひろが1,138,973票（得票率80.21％、無所属・現職）で当選した。候補者は3人で、柴岡ゆうま183,692票、大沢としお97,252票。有効投票1,419,917票、投票率23.76％。",
+        "source_ids": [
+          "saitama-pref-governor-election-2023-results",
+          "saitama-city-governor-election-2023-result-table"
+        ],
+        "location_note": "埼玉県選挙管理委員会「埼玉県知事選挙（令和5年8月6日執行）結果」およびさいたま市選挙管理委員会の開票結果表。",
+        "decision": "accepted",
+        "review_note": "得票数は県選管の公式結果とさいたま市選管の開票結果表（合計欄）の双方で一致を確認した。"
+      },
+      {
+        "field": "term_start",
+        "statement": "大野元裕知事の現任期の開始日は2023年8月31日である。さいたま市選挙管理委員会の公式開票結果表が「当選人の任期 令和5年8月31日～令和9年8月30日」と開始日・満了日の双方を日単位で明記する。2023年の知事選は前任期満了（2023年8月30日）前に執行されたため、公職選挙法第259条ただし書の起算（前任期満了日の翌日から）とも一致する。",
+        "source_ids": [
+          "saitama-city-governor-election-2023-result-table"
+        ],
+        "location_note": "さいたま市選挙管理委員会「令和5年8月6日執行 埼玉県知事選挙 得票数及び当選人」の見出し。",
+        "decision": "accepted",
+        "review_note": "開始日は公式の開票結果表に直接明記されており、推算には依存しない。"
+      },
+      {
+        "field": "term_end",
+        "statement": "埼玉県知事の現任期の満了日は2027年8月30日である。県選挙管理委員会「任期満了日一覧」が、埼玉県知事の任期満了日を令和9年8月30日と日単位で明記し、さいたま市選挙管理委員会の開票結果表の任期の明記とも一致する。",
+        "source_ids": [
+          "saitama-governor-term-expiry-list",
+          "saitama-city-governor-election-2023-result-table"
+        ],
+        "location_note": "埼玉県選挙管理委員会「任期満了日一覧」の埼玉県知事の行、およびさいたま市選挙管理委員会の開票結果表。",
+        "decision": "accepted",
+        "review_note": "満了日は2つの公式資料に直接明記されており、推算には依存しない。"
+      }
+    ],
+    "open_questions": [
+      "2023年埼玉県知事選挙の選挙公報は県選挙管理委員会の公式結果ページから到達可能であることを確認したが、PDFのテキスト層の有無は実測できていないため、公約レコードの登録は埼玉クラスターの公約段階で判断し、本段階では manifesto_source_ids を空としている。",
+      "次回知事選挙（任期満了2027年8月30日）の日程が県選管から公表されたら、任期満了日の明示値と本登録を照合する。"
+    ],
+    "review_status": "reviewed"
   }
 ]

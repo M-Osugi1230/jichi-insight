@@ -41,15 +41,15 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 71
-    assert len({record["id"] for record in catalog["records"]}) == 71
+    assert len(catalog["records"]) == 75
+    assert len({record["id"] for record in catalog["records"]}) == 75
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
     terms = load_json("data/entities/executives/executive_terms.json")
     packets = load_json("data/entities/executives/evidence_packets.json")
 
-    assert len(terms) == 15
+    assert len(terms) == 16
     assert {term["municipality_id"] for term in terms} == {
         "jp-local-400009",
         "jp-local-401307",
@@ -66,6 +66,7 @@ def test_executive_registry_matches_shared_contracts() -> None:
         "jp-local-140007",
         "jp-local-141003",
         "jp-local-141305",
+        "jp-local-110001",
     }
     for term in terms:
         assert validation_errors("schemas/executive_term.schema.json", term) == []
@@ -134,6 +135,11 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
     # chain, anchored by the previous term's expiry (2025-11-18)
     # stated in the commission's election-schedule announcement, and
     # the two values agree.
+    # Saitama Prefecture's end (2027-08-30) is stated directly in the
+    # prefectural election commission's official term-expiry list; its
+    # start (2023-08-31) and end are both also stated day-exact in the
+    # Saitama City election commission's official ballot-count table
+    # for the 2023 election, and the values agree.
     expected_term_ends = {
         "jp-local-400009": "2029-04-10",
         "jp-local-401307": "2026-12-06",
@@ -150,6 +156,7 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
         "jp-local-140007": "2027-04-22",
         "jp-local-141003": "2030-10-17",
         "jp-local-141305": "2029-11-18",
+        "jp-local-110001": "2027-08-30",
     }
     for term in terms:
         assert term["term_end"] == expected_term_ends[term["municipality_id"]]
@@ -196,6 +203,7 @@ def test_executive_term_starts_follow_statutory_counting() -> None:
         "jp-local-140007": "2023-04-23",
         "jp-local-141003": "2026-10-18",
         "jp-local-141305": "2025-11-19",
+        "jp-local-110001": "2023-08-31",
     }
     for term in terms:
         assert term["term_start"] == expected_term_starts[term["municipality_id"]]
@@ -295,6 +303,12 @@ def test_manifesto_readiness_is_not_confused_with_progress() -> None:
     assert by_municipality["jp-local-141305"]["manifesto_source_ids"] == [
         "kawasaki-city-mayor-election-2025-bulletin",
     ]
+    # Saitama Prefecture registers no manifesto source at this stage:
+    # the 2023 bulletin is officially published and reachable from the
+    # election commission's result page, but whether its text layer is
+    # machine-readable has not been measured, so the promise decision
+    # is deferred to the cluster's promise stage.
+    assert by_municipality["jp-local-110001"]["manifesto_source_ids"] == []
 
 
 def test_every_executive_has_evidence_and_known_sources() -> None:

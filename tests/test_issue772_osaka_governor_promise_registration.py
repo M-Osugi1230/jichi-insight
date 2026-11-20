@@ -278,9 +278,12 @@ def test_bulletin_source_record_points_at_the_pdf() -> None:
     # The catalog has since grown: the Kanagawa cluster's stage 3
     # (Issue #798) appended the Kanagawa bulletin record, the
     # Yokohama City records and the five Kawasaki City records,
-    # bringing the combined catalog to version 0.22.0 / 71 records.
-    assert catalog["version"] == "0.22.0"
-    assert len(catalog["records"]) == 71
+    # bringing the combined catalog to version 0.22.0 / 71 records;
+    # the Saitama cluster's stage 1 (Issue #815) then appended the
+    # four Saitama Prefecture governor records, bringing it to
+    # version 0.23.0 / 75 records.
+    assert catalog["version"] == "0.23.0"
+    assert len(catalog["records"]) == 75
     bulletin = next(r for r in catalog["records"] if r["id"] == BULLETIN_ID)
     assert bulletin["url"].endswith("chijisenkyokoho.pdf")
     assert bulletin["municipality_key"] == "osaka-prefecture"
