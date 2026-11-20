@@ -440,7 +440,10 @@ def reviewed_coverage_requirements() -> dict[str, list[str]]:
 def hokkaido_cluster_project_detail_files() -> set[str]:
     """Require each Reviewed Hokkaido cluster project series to export a detail page."""
     required: set[str] = set()
-    for slug in ("hokkaido-prefecture", "sapporo-city", "asahikawa-city", "osaka-prefecture", "osaka-city", "sakai-city"):
+    for slug in (
+        "hokkaido-prefecture", "sapporo-city", "asahikawa-city",
+        "osaka-prefecture", "osaka-city", "sakai-city",
+    ):
         records = load_json(ROOT / "data" / "reviewed" / slug / "projects.json")
         for series in {
             item["series_id"] for item in records if item["review_status"] == "reviewed"
@@ -620,7 +623,10 @@ def validate_hokkaido_assembly_scope() -> list[str]:
     path = EXPORT_ROOT / "assemblies/index.html"
     if path.is_file():
         content = normalized_html(path)
-        for phrase in ["12議会", "大阪府議会", "大阪市会", "堺市議会", "北海道議会", "札幌市議会", "旭川市議会"]:
+        for phrase in [
+            "12議会", "大阪府議会", "大阪市会", "堺市議会",
+            "北海道議会", "札幌市議会", "旭川市議会",
+        ]:
             if phrase not in content:
                 failures.append(f"assemblies/index.html missing {phrase}")
     return failures
