@@ -532,7 +532,10 @@ def validate_osaka_cluster_sections() -> list[str]:
             "osaka-city", "municipalities/osaka-city/index.html",
             "mayor-promises", "Reviewed 公約原文：5件",
         ),
-        ("sakai-city", "municipalities/sakai-city/index.html", "mayor-promises", ("公約原文：" + "未登録")),
+        (
+            "sakai-city", "municipalities/sakai-city/index.html",
+            "mayor-promises", "公約原文：" + "未登録",
+        ),
     ):
         path = EXPORT_ROOT / page
         if not path.is_file():
