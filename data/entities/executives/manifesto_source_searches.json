@@ -347,5 +347,35 @@
     ],
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-kanagawa-pref-2023",
+    "executive_term_id": "jp-local-140007-executive-2023-04-23",
+    "searched_at": "2026-11-21",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "kanagawa-pref-governor-election-2023-bulletin"
+    ],
+    "checked_source_ids": [
+      "kanagawa-pref-governor-election-2023-page",
+      "kanagawa-pref-governor-election-2023-results",
+      "kanagawa-pref-governor-election-2023-bulletin"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "神奈川県選挙管理委員会の公式ページ「神奈川県知事選挙・神奈川県議会議員選挙（過去の選挙結果）」から選挙公報PDFへ到達できることを段階0の棚卸しで確認し、2026-11-21に公報PDF（全2ページ）を県公式サイトから直接取得した。1ページ目中段の黒岩祐治候補欄（「3つの実現」3項目と「4期目の新たな挑戦」5政策分野・●項目30件）を確認し、選挙公報を出典として登録、分割レビュー（manifesto-review-jp-local-140007-2023）を経て公約レコード33件を作成した。選挙公報は候補者提出原稿をそのまま印刷した公式文書であり、第三者のコピーではなく県公式サイトから直接取得できたため、公約レコードの confidence は high とした。候補者欄には「詳しくはホームページに記載されている政策集をご参照ください」との案内があるが、その政策集の安定した所在は本探索では特定しておらず、資料が存在しないとは判定しない。",
+    "next_actions": [
+      "候補者ホームページの政策集の安定した所在が特定できれば、登録済みの公約文と照合する",
+      "未接続の公約（デジタル革命（DX）推進、サイバー攻撃へのセキュリティ対策強化、インバウンド観光強化、脱炭素社会を強力推進、市町村と連携し移住・定住促進、犬猫殺処分ゼロ継続）について、計画・事業資料への進捗証拠の接続を拡充する",
+      "2027年4月の任期満了に伴う次回知事選挙では、新任期の公約原文資料として選挙公報を改めて登録する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]

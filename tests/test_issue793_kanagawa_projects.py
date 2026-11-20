@@ -63,6 +63,31 @@ SELECTION_ORDER = [
     "crisis-management",
     "mebyo-health-longevity",
 ]
+# Governor promises were registered in stage 3 (Issue #798) from the
+# official 2023 election bulletin; the project-side reverse links sit
+# on the FY2025 records only (the latest registered year), mirroring
+# the promise-side links.
+_TERM = "jp-local-140007-executive-2023-04-23"
+EXPECTED_PROMISE_LINKS = {
+    "children-and-youth": [
+        f"{_TERM}-promise-{index:03d}" for index in (4, 5, 6, 7, 8, 9)
+    ],
+    "crisis-management": [
+        f"{_TERM}-promise-{index:03d}" for index in (3, 10, 14, 15, 32)
+    ],
+    "inclusive-society": [
+        f"{_TERM}-promise-{index:03d}" for index in (2, 22, 23, 24)
+    ],
+    "urban-infrastructure": [f"{_TERM}-promise-011"],
+    "everyday-life-safety": [f"{_TERM}-promise-013"],
+    "economy-and-employment": [
+        f"{_TERM}-promise-{index:03d}" for index in (16, 17, 18)
+    ],
+    "mebyo-health-longevity": [
+        f"{_TERM}-promise-{index:03d}" for index in (25, 28, 29, 30, 31, 33)
+    ],
+    "livelihood-support": [f"{_TERM}-promise-026"],
+}
 # slug -> (FY2024, FY2025, FY2026) project cost in yen, converted from
 # the 100-million-yen figures printed in the evaluation reports.
 EXPECTED_BUDGETS = {
@@ -175,8 +200,15 @@ def test_selection_rule_and_population() -> None:
             assert record["official_title"] == item["official_title"]
             assert record["parent_policy"] == item["theme"]
             assert record["review_status"] == "reviewed"
-            # Governor promises are registered in stage 3.
-            assert record["related_promise_ids"] == []
+            # Governor promises were registered in stage 3 (Issue
+            # #798); the project-side links sit on the FY2025 records
+            # and are pinned in EXPECTED_PROMISE_LINKS.
+            if year == 2025:
+                assert record["related_promise_ids"] == (
+                    EXPECTED_PROMISE_LINKS.get(slug, [])
+                )
+            else:
+                assert record["related_promise_ids"] == []
         assert set(item["source_ids"]) <= known_source_ids()
 
 

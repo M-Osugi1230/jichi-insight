@@ -578,5 +578,47 @@
       "候補者公式サイトの2023年公約ページの現存有無は未確認。紙の選挙公報の現物確認はオフライン経路が必要で、本探索の範囲外。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-kanagawa-pref-2023",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-kanagawa-pref-2023",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "神奈川県選挙管理委員会の公式ページ「神奈川県知事選挙・神奈川県議会議員選挙（過去の選挙結果）」を確認した。知事選挙公報PDFへのリンクと、選挙の記録（候補者別得票数）へのリンクが掲載されている。",
+        "source_ids": [
+          "kanagawa-pref-governor-election-2023-page"
+        ],
+        "location_note": "神奈川県選挙管理委員会の公式ページ（神奈川県知事選挙・神奈川県議会議員選挙（過去の選挙結果））。",
+        "decision": "accepted",
+        "review_note": "選挙結果と選挙公報の一次資料として採用。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "同ページから選挙公報PDF（全2ページ）を県公式サイト上で直接取得し、1ページ目中段の黒岩祐治候補欄（「3つの実現」3項目、「4期目の新たな挑戦」5政策分野・●項目30件、「5つのチカラ」、実績、略歴）を確認した。",
+        "source_ids": [
+          "kanagawa-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報1ページ目中段の候補者欄。",
+        "decision": "accepted",
+        "review_note": "公報は候補者提出原稿をそのまま印刷した公式文書であり、出典優先順位の最上位として登録した。候補者欄は画像形式のため、描画画像を複数解像度で照合した。"
+      },
+      {
+        "field": "result_status",
+        "statement": "選挙公報を登録し、分割レビューを経て公約レコード33件を作成したため、result_status を source_registered とした。候補者ホームページの政策集は未特定のままである。",
+        "source_ids": [
+          "kanagawa-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "分割レビュー manifesto-review-jp-local-140007-2023 に基づく。",
+        "decision": "accepted",
+        "review_note": "詳細資料が存在しないとは判定しない。"
+      }
+    ],
+    "open_questions": [
+      "候補者欄が案内する候補者ホームページの政策集の安定した所在は特定できていない。",
+      "事業との接続は文言・内容に基づく推定であり、県が公約と事業の公式な対応付けを公表した場合は接続を見直す。"
+    ],
+    "review_status": "reviewed"
   }
 ]
