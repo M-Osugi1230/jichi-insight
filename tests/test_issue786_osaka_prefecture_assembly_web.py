@@ -74,3 +74,71 @@ def test_static_export_validator_requires_osaka_assembly_pages_and_scoped_copy()
     assert "failures.extend(validate_osaka_assembly_scope())" in VALIDATOR
     assert '"公約原文：未登録"' not in VALIDATOR
     assert '"osaka-prefecture", "osaka-city", "sakai-city"' in VALIDATOR
+
+def test_osaka_prefecture_page_matches_reviewed_plan_promises_and_project_selection():
+    page = OSAKA_PAGE_PATH.read_text(encoding="utf-8")
+    projects = json.loads(
+        (DATA / "reviewed/osaka-prefecture/projects.json").read_text(encoding="utf-8")
+    )
+    selection = json.loads(
+        (DATA / "catalog/osaka_priority_project_selection.json").read_text(encoding="utf-8")
+    )
+    plan = json.loads(
+        (DATA / "reviewed/osaka-prefecture/plan_review.json").read_text(encoding="utf-8")
+    )
+    promises = json.loads(
+        (DATA / "entities/executives/promises.json").read_text(encoding="utf-8")
+    )
+    osaka_promises = [
+        item for item in promises
+        if item["municipality_id"] == "jp-local-270008"
+        and item["review_status"] in {"reviewed", "verified"}
+    ]
+
+    # Promise count must match the actual reviewed source records, not copied Hokkaido text.
+    assert len(osaka_promises) == 7
+    assert "公約原文7件" in page
+    assert "公約原文15件" not in page
+
+    # The ten selected Osaka project series have no published official assessment.
+    assert len(projects) == 10
+    assert all(project["official_evaluation"] is None for project in projects)
+    assert "事業単位の公式評価は公表されていません" in page
+    assert "一次政策評価" not in page
+    assert "総合判定" not in page
+
+    # Population and selection rule must reproduce the reviewed 52-project universe.
+    assert selection["population"]["project_count"] == 52
+    assert len(selection["selections"]) == 10
+    assert "府政運営の基本方針2026" in page
+    assert "第2「知事重点事業」の52件" in page
+    assert "柱1→柱2→柱3" in page
+    assert "柱1の第4の重点分野" in selection["selection_rule"]["description"]
+    assert "10件に到達" in selection["selection_rule"]["description"]
+    assert "構成予算事業費の合算" in page
+    assert "重点事業単位の総額は一覧自体に印字されていません" in page
+    assert all(
+        "構成予算事業" in project["budget_records"][0]["note"]
+        and "一覧は知事重点事業単位の総額を印字していない" in project["budget_records"][0]["note"]
+        for project in projects
+    )
+
+    # The page must follow the actual Osaka plan review: joint Vision, revised March 2023,
+    # with annual basic policy and governor-priority projects as its implementation layer.
+    accepted = [record for record in plan["records"] if record["decision"] == "accepted"]
+    identity = next(record for record in accepted if record["evidence_role"] == "current_plan_identity")
+    implementation = next(record for record in accepted if record["evidence_role"] == "implementation_layer")
+    assert "副首都ビジョン" in identity["statement"]
+    assert "2023年3月の改定版" in identity["statement"]
+    assert "府政運営の基本方針" in implementation["statement"]
+    assert "知事重点事業" in implementation["statement"]
+    assert "副首都ビジョン" in page
+    assert "2023年3月改定版" in page
+    assert "府政運営の基本方針" in page
+    assert "大阪府総合計画" not in page
+    assert "2024年7月策定" not in page
+    assert "2024年度から概ね10年間" not in page
+
+    # Guard against copied Hokkaido-specific policy and evaluation terminology.
+    for forbidden in ("道政", "道による", "基本評価調書", "121施策"):
+        assert forbidden not in page
