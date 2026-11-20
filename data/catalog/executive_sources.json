@@ -1,5 +1,5 @@
 {
-  "version": "0.20.0",
+  "version": "0.21.0",
   "updated_at": "2026-11-21",
   "scope": "pilot",
   "records": [
@@ -884,6 +884,48 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "候補者提出原稿を写真製版で掲載した全2ページの公式選挙公報。黒岩祐治候補欄は1ページ目中段。候補者欄は画像形式（テキスト層なし）のため、公約文はPDFの描画画像（200dpi・300dpi）の照合で転記した。"
+    },
+    {
+      "id": "yokohama-city-mayor-election-2026-bulletin-page",
+      "municipality_key": "yokohama-city",
+      "organization": "横浜市選挙管理委員会",
+      "category": "election",
+      "title": "横浜市長選挙（候補者情報・選挙公報）（令和8年10月18日執行）",
+      "url": "https://www.city.yokohama.lg.jp/city-info/senkyo/data/mayor/20261018kohosya_koho.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "横浜市選挙管理委員会の公式ページ。候補者7人の選挙公報PDFへの導線を掲載する。原沢あつみ候補については音声読み上げ対応データの提出がない旨が明記されている。"
+    },
+    {
+      "id": "yokohama-city-mayor-election-2026-bulletin",
+      "municipality_key": "yokohama-city",
+      "organization": "横浜市選挙管理委員会",
+      "category": "election",
+      "title": "令和8年10月18日執行 横浜市長選挙 選挙公報（原沢あつみ候補欄）",
+      "url": "https://www.city.yokohama.lg.jp/city-info/senkyo/data/mayor/20261018kohosya_koho.files/R08_kouhou.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "横浜市長選挙の公式選挙公報（候補者から提出された原稿をそのまま印刷したもの。全1ページ・新聞形式、候補者7人）。原沢あつみ候補欄は中段左にあり、見出し「あなたの笑顔のために。」、枠「横浜の未来をつくる12の政策」（2列×6段の12項目）、応援団体（自民党・日本維新の会・公明党・国民民主党）の帯、標語、プロフィールを掲載する。候補者欄は画像形式でテキスト層は実質ないため、登録文はPDFの描画画像（300dpi・450dpi）から転記し、複数解像度で照合した。公約レコードはこの候補欄から作成した。掲載ページは横浜市選挙管理委員会公式「横浜市長選挙（候補者情報・選挙公報）」ページ。"
+    },
+    {
+      "id": "yokohama-city-mayor-election-2026-results",
+      "municipality_key": "yokohama-city",
+      "organization": "横浜市選挙管理委員会",
+      "category": "election",
+      "title": "令和8年10月18日執行 横浜市長選挙結果表",
+      "url": "https://www.city.yokohama.lg.jp/city-info/senkyo/data/mayor/20261018_shicho.files/R08_shicho_kekka.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "横浜市選挙管理委員会の公式結果表（全5ページ）。候補者別得票数（確定・01時56分現在）によれば、原沢あつみは552,207票（得票率39.49%）を得て最多得票で当選した。候補者は7人、法定得票数349,589.500票、供託物没収点139,835.800票、有効投票数1,398,358票、投票率45.56%。得票数は本PDFの本体で直接照合した。"
     }
   ]
 }
