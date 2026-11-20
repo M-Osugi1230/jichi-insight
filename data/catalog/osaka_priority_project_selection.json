@@ -1,0 +1,592 @@
+{
+  "version": "1.0.0",
+  "updated_at": "2026-11-20",
+  "municipality_id": "jp-local-270008",
+  "municipality_key": "osaka-prefecture",
+  "issue": 768,
+  "scope": "initial",
+  "population": {
+    "description": "大阪府が毎年度策定する「府政運営の基本方針」の第2「知事重点事業」に列挙される事業。令和8年度版（府政運営の基本方針2026、令和8年2月16日）では、政策創造の3つの柱のもと11の重点分野に52件の知事重点事業が「新規」「継続」の別付きで掲載される（柱1は①さらなる成長の加速・②都市力の向上の2区分に5分野、柱2・柱3は各3分野）。府はこの一覧を「大阪府施策集（知事重点事業一覧）」として、知事重点事業ごとに構成する予算事業名・部局・事業概要・事業費（千円）を載せた一覧（PDF／Excel）でも公表しており、事業単位の金額は施策集で確認できる。この52件が公式の母集団になる。愛知・北海道のような複数年次の実施計画文書は府にはなく、毎年度の方針が母集団である点が他クラスターと異なる。",
+    "fiscal_year": 2026,
+    "project_count": 52,
+    "budget_program_count": 288,
+    "source_ids": [
+      "osaka-pref-basic-policy-2026",
+      "osaka-pref-priority-projects-fy2026-page",
+      "osaka-pref-priority-projects-fy2026-xlsx"
+    ]
+  },
+  "selection_rule": {
+    "description": "府政運営の基本方針2026の政策創造の3つの柱を柱1→柱2→柱3の順に巡回し、各柱では重点分野を公式掲載順にたどって、各重点分野の掲載順先頭の知事重点事業を1件ずつ選ぶ。柱1は5分野、柱2は3分野、柱3は3分野のため、巡回は柱1の第4分野（世界の人々を惹きつける都市魅力の向上）を選んだ時点で10件に到達し、そこで終了する。金額の大小では選ばない。各選定の対応関係は selections の selection_basis に記録した。",
+    "pillars": [
+      "万博のレガシーを活かした「副首都・大阪」の早期実現",
+      "誰もが安全・安心にいきいきと暮らせる社会の実現",
+      "次代を担う子どもたちが自らの可能性を追求できる社会の実現"
+    ]
+  },
+  "selections": [
+    {
+      "pillar": "（１）万博のレガシーを活かした「副首都・大阪」の早期実現",
+      "sub_pillar": "①さらなる成長の加速",
+      "field": "万博のレガシーを活かした成長産業の創出",
+      "project_id": "jp-local-270008-project-2026-cutting-edge-technology-implementation",
+      "series_id": "jp-local-270008-project-series-cutting-edge-technology-implementation",
+      "official_title": "最先端技術の実装化の加速",
+      "status": "新規",
+      "selection_basis": "柱1「万博のレガシーを活かした「副首都・大阪」の早期実現」の第1の重点分野「万博のレガシーを活かした成長産業の創出」の掲載順先頭の事業。巡回1周目で選定。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "pillar": "（２）誰もが安全・安心にいきいきと暮らせる社会の実現",
+      "sub_pillar": null,
+      "field": "物価高騰に対応し、府民や事業者を支援する取組の推進",
+      "project_id": "jp-local-270008-project-2026-price-rise-support",
+      "series_id": "jp-local-270008-project-series-price-rise-support",
+      "official_title": "物価高騰の影響を受ける府民・事業者への支援",
+      "status": "新規",
+      "selection_basis": "柱2「誰もが安全・安心にいきいきと暮らせる社会の実現」の第1の重点分野「物価高騰に対応し、府民や事業者を支援する取組の推進」の掲載順先頭の事業（同分野の事業はこの1件のみ）。巡回1周目で選定。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "pillar": "（３）次代を担う子どもたちが自らの可能性を追求できる社会の実現",
+      "sub_pillar": null,
+      "field": "子どもたちの「学び」の環境の充実",
+      "project_id": "jp-local-270008-project-2026-high-school-tuition-free",
+      "series_id": "jp-local-270008-project-series-high-school-tuition-free",
+      "official_title": "高等学校等授業料無償化",
+      "status": "継続",
+      "selection_basis": "柱3「次代を担う子どもたちが自らの可能性を追求できる社会の実現」の第1の重点分野「子どもたちの「学び」の環境の充実」の掲載順先頭の事業。巡回1周目で選定。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "pillar": "（１）万博のレガシーを活かした「副首都・大阪」の早期実現",
+      "sub_pillar": "①さらなる成長の加速",
+      "field": "世界との戦略的交流",
+      "project_id": "jp-local-270008-project-2026-strategic-international-exchange",
+      "series_id": "jp-local-270008-project-series-strategic-international-exchange",
+      "official_title": "万博を契機とした戦略的国際交流の推進",
+      "status": "新規",
+      "selection_basis": "柱1の第2の重点分野「世界との戦略的交流」の掲載順先頭の事業。巡回2周目で選定。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "pillar": "（２）誰もが安全・安心にいきいきと暮らせる社会の実現",
+      "sub_pillar": null,
+      "field": "府民のいのちと健康、安全・安心を守る取組の推進",
+      "project_id": "jp-local-270008-project-2026-disaster-response-capacity",
+      "series_id": "jp-local-270008-project-series-disaster-response-capacity",
+      "official_title": "災害対応力の強化",
+      "status": "新規",
+      "selection_basis": "柱2の第2の重点分野「府民のいのちと健康、安全・安心を守る取組の推進」の掲載順先頭の事業。巡回2周目で選定。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "pillar": "（３）次代を担う子どもたちが自らの可能性を追求できる社会の実現",
+      "sub_pillar": null,
+      "field": "国際社会で活躍できる力を育む教育の推進",
+      "project_id": "jp-local-270008-project-2026-global-talent-development",
+      "series_id": "jp-local-270008-project-series-global-talent-development",
+      "official_title": "グローバル人材の育成",
+      "status": "新規",
+      "selection_basis": "柱3の第2の重点分野「国際社会で活躍できる力を育む教育の推進」の掲載順先頭の事業。巡回2周目で選定。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "pillar": "（１）万博のレガシーを活かした「副首都・大阪」の早期実現",
+      "sub_pillar": "①さらなる成長の加速",
+      "field": "成長を支える人材の確保・育成",
+      "project_id": "jp-local-270008-project-2026-growth-industry-talent",
+      "series_id": "jp-local-270008-project-series-growth-industry-talent",
+      "official_title": "成長産業を支える人材の育成",
+      "status": "新規",
+      "selection_basis": "柱1の第3の重点分野「成長を支える人材の確保・育成」の掲載順先頭の事業。巡回3周目で選定。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "pillar": "（２）誰もが安全・安心にいきいきと暮らせる社会の実現",
+      "sub_pillar": null,
+      "field": "府民のいきいきとした暮らしの充実に向けた取組の推進",
+      "project_id": "jp-local-270008-project-2026-sdgs-promotion",
+      "series_id": "jp-local-270008-project-series-sdgs-promotion",
+      "official_title": "SDGsの推進",
+      "status": "継続",
+      "selection_basis": "柱2の第3の重点分野「府民のいきいきとした暮らしの充実に向けた取組の推進」の掲載順先頭の事業。巡回3周目で選定。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "pillar": "（３）次代を担う子どもたちが自らの可能性を追求できる社会の実現",
+      "sub_pillar": null,
+      "field": "すべての子どもたちの健やかな成長を支える環境の充実",
+      "project_id": "jp-local-270008-project-2026-nonattendance-support",
+      "series_id": "jp-local-270008-project-series-nonattendance-support",
+      "official_title": "不登校等の児童・生徒への支援の充実",
+      "status": "新規",
+      "selection_basis": "柱3の第3の重点分野「すべての子どもたちの健やかな成長を支える環境の充実」の掲載順先頭の事業。巡回3周目で選定。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "pillar": "（１）万博のレガシーを活かした「副首都・大阪」の早期実現",
+      "sub_pillar": "②都市力の向上",
+      "field": "世界の人々を惹きつける都市魅力の向上",
+      "project_id": "jp-local-270008-project-2026-osaka-attraction-promotion",
+      "series_id": "jp-local-270008-project-series-osaka-attraction-promotion",
+      "official_title": "大阪の魅力の磨き上げ・発信",
+      "status": "新規",
+      "selection_basis": "柱1の第4の重点分野「世界の人々を惹きつける都市魅力の向上」の掲載順先頭の事業。巡回4周目で選定し、10件に到達したため選定を終了した。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "official_title": "健康・医療関連産業のリーディング産業化",
+      "pillar": "（１）万博のレガシーを活かした「副首都・大阪」の早期実現",
+      "field": "万博のレガシーを活かした成長産業の創出",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "カーボンニュートラルの実現に向けた取組の推進",
+      "pillar": "（１）万博のレガシーを活かした「副首都・大阪」の早期実現",
+      "field": "万博のレガシーを活かした成長産業の創出",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "新モビリティの実現に向けた取組の推進",
+      "pillar": "（１）万博のレガシーを活かした「副首都・大阪」の早期実現",
+      "field": "万博のレガシーを活かした成長産業の創出",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "スタートアップエコシステムの推進",
+      "pillar": "（１）万博のレガシーを活かした「副首都・大阪」の早期実現",
+      "field": "万博のレガシーを活かした成長産業の創出",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "新たな成長分野へのチャレンジ",
+      "pillar": "（１）万博のレガシーを活かした「副首都・大阪」の早期実現",
+      "field": "万博のレガシーを活かした成長産業の創出",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "成長産業の立地促進",
+      "pillar": "（１）万博のレガシーを活かした「副首都・大阪」の早期実現",
+      "field": "万博のレガシーを活かした成長産業の創出",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "国際金融都市の推進",
+      "pillar": "（１）万博のレガシーを活かした「副首都・大阪」の早期実現",
+      "field": "世界との戦略的交流",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "中小企業等の生産性・稼ぐ力の向上",
+      "pillar": "（１）万博のレガシーを活かした「副首都・大阪」の早期実現",
+      "field": "成長を支える人材の確保・育成",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "多様な人材が活躍できる環境整備",
+      "pillar": "（１）万博のレガシーを活かした「副首都・大阪」の早期実現",
+      "field": "成長を支える人材の確保・育成",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "IR実現に向けた取組の推進",
+      "pillar": "（１）万博のレガシーを活かした「副首都・大阪」の早期実現",
+      "field": "世界の人々を惹きつける都市魅力の向上",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "府内周遊の促進",
+      "pillar": "（１）万博のレガシーを活かした「副首都・大阪」の早期実現",
+      "field": "世界の人々を惹きつける都市魅力の向上",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "来阪旅行者の受入環境整備",
+      "pillar": "（１）万博のレガシーを活かした「副首都・大阪」の早期実現",
+      "field": "世界の人々を惹きつける都市魅力の向上",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "全国豊かな海づくり大会の開催",
+      "pillar": "（１）万博のレガシーを活かした「副首都・大阪」の早期実現",
+      "field": "世界の人々を惹きつける都市魅力の向上",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "成長の拠点となるまちづくり",
+      "pillar": "（１）万博のレガシーを活かした「副首都・大阪」の早期実現",
+      "field": "「副首都」化を見据えたまちづくり・都市基盤整備",
+      "reason": "重点分野「「副首都」化を見据えたまちづくり・都市基盤整備」の掲載順先頭の事業だが、3つの柱の巡回による選定がこの分野に到達する前に10件に到達したため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "道路・鉄道ネットワーク等の充実強化",
+      "pillar": "（１）万博のレガシーを活かした「副首都・大阪」の早期実現",
+      "field": "「副首都」化を見据えたまちづくり・都市基盤整備",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "デジタルインフラの整備促進",
+      "pillar": "（１）万博のレガシーを活かした「副首都・大阪」の早期実現",
+      "field": "「副首都」化を見据えたまちづくり・都市基盤整備",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "インフラ老朽化対策の推進",
+      "pillar": "（１）万博のレガシーを活かした「副首都・大阪」の早期実現",
+      "field": "「副首都」化を見据えたまちづくり・都市基盤整備",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "災害に強いまちづくり・都市基盤整備",
+      "pillar": "（１）万博のレガシーを活かした「副首都・大阪」の早期実現",
+      "field": "「副首都」化を見据えたまちづくり・都市基盤整備",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "感染症対策の充実・強化",
+      "pillar": "（２）誰もが安全・安心にいきいきと暮らせる社会の実現",
+      "field": "府民のいのちと健康、安全・安心を守る取組の推進",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "都市緑化を活用した猛暑対策の推進",
+      "pillar": "（２）誰もが安全・安心にいきいきと暮らせる社会の実現",
+      "field": "府民のいのちと健康、安全・安心を守る取組の推進",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "ギャンブル等依存症対策の強化",
+      "pillar": "（２）誰もが安全・安心にいきいきと暮らせる社会の実現",
+      "field": "府民のいのちと健康、安全・安心を守る取組の推進",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "性犯罪・性暴力被害者への支援の充実",
+      "pillar": "（２）誰もが安全・安心にいきいきと暮らせる社会の実現",
+      "field": "府民のいのちと健康、安全・安心を守る取組の推進",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "特殊詐欺被害防止対策の推進",
+      "pillar": "（２）誰もが安全・安心にいきいきと暮らせる社会の実現",
+      "field": "府民のいのちと健康、安全・安心を守る取組の推進",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "自殺対策の強化",
+      "pillar": "（２）誰もが安全・安心にいきいきと暮らせる社会の実現",
+      "field": "府民のいのちと健康、安全・安心を守る取組の推進",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "インターネット上の人権侵害事象への対応",
+      "pillar": "（２）誰もが安全・安心にいきいきと暮らせる社会の実現",
+      "field": "府民のいのちと健康、安全・安心を守る取組の推進",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "孤独・孤立等福祉課題への対応",
+      "pillar": "（２）誰もが安全・安心にいきいきと暮らせる社会の実現",
+      "field": "府民のいのちと健康、安全・安心を守る取組の推進",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "健康づくりの推進",
+      "pillar": "（２）誰もが安全・安心にいきいきと暮らせる社会の実現",
+      "field": "府民のいのちと健康、安全・安心を守る取組の推進",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "デジタルサービスの実装による利便性向上",
+      "pillar": "（２）誰もが安全・安心にいきいきと暮らせる社会の実現",
+      "field": "府民のいきいきとした暮らしの充実に向けた取組の推進",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "共生社会の実現に向けた取組の推進",
+      "pillar": "（２）誰もが安全・安心にいきいきと暮らせる社会の実現",
+      "field": "府民のいきいきとした暮らしの充実に向けた取組の推進",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "地域公共交通の確保・維持",
+      "pillar": "（２）誰もが安全・安心にいきいきと暮らせる社会の実現",
+      "field": "府民のいきいきとした暮らしの充実に向けた取組の推進",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "基礎自治機能の充実・強化",
+      "pillar": "（２）誰もが安全・安心にいきいきと暮らせる社会の実現",
+      "field": "府民のいきいきとした暮らしの充実に向けた取組の推進",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "安定的な行政サービス提供のための人材確保",
+      "pillar": "（２）誰もが安全・安心にいきいきと暮らせる社会の実現",
+      "field": "府民のいきいきとした暮らしの充実に向けた取組の推進",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "大阪公立大学等授業料等無償化",
+      "pillar": "（３）次代を担う子どもたちが自らの可能性を追求できる社会の実現",
+      "field": "子どもたちの「学び」の環境の充実",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "大阪公立大学の「知の拠点」としての機能強化",
+      "pillar": "（３）次代を担う子どもたちが自らの可能性を追求できる社会の実現",
+      "field": "子どもたちの「学び」の環境の充実",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "府立高校の魅力化・特色化",
+      "pillar": "（３）次代を担う子どもたちが自らの可能性を追求できる社会の実現",
+      "field": "子どもたちの「学び」の環境の充実",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "専門的な学びの充実",
+      "pillar": "（３）次代を担う子どもたちが自らの可能性を追求できる社会の実現",
+      "field": "子どもたちの「学び」の環境の充実",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "教育環境の整備",
+      "pillar": "（３）次代を担う子どもたちが自らの可能性を追求できる社会の実現",
+      "field": "子どもたちの「学び」の環境の充実",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "英語教育の推進",
+      "pillar": "（３）次代を担う子どもたちが自らの可能性を追求できる社会の実現",
+      "field": "国際社会で活躍できる力を育む教育の推進",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "日本語指導が必要な児童・生徒への支援の充実",
+      "pillar": "（３）次代を担う子どもたちが自らの可能性を追求できる社会の実現",
+      "field": "すべての子どもたちの健やかな成長を支える環境の充実",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "児童虐待対応の強化",
+      "pillar": "（３）次代を担う子どもたちが自らの可能性を追求できる社会の実現",
+      "field": "すべての子どもたちの健やかな成長を支える環境の充実",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "困難を抱える子どもへの支援の充実",
+      "pillar": "（３）次代を担う子どもたちが自らの可能性を追求できる社会の実現",
+      "field": "すべての子どもたちの健やかな成長を支える環境の充実",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    },
+    {
+      "official_title": "少子化対策の推進",
+      "pillar": "（３）次代を担う子どもたちが自らの可能性を追求できる社会の実現",
+      "field": "すべての子どもたちの健やかな成長を支える環境の充実",
+      "reason": "選定規則により、各重点分野からは掲載順先頭の知事重点事業のみを選定するため対象外。",
+      "source_ids": [
+        "osaka-pref-basic-policy-2026",
+        "osaka-pref-priority-projects-fy2026-xlsx"
+      ]
+    }
+  ],
+  "review_status": "reviewed"
+}
