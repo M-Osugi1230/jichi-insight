@@ -114,6 +114,10 @@ export default function ExecutivesPage() {
               const sourceSearchEvidence = sourceSearch
                 ? evidenceForManifestoSourceSearch(sourceSearch)
                 : undefined;
+              const termStartClaim = evidence?.claims.find((claim) => claim.field === "term_start");
+              const vacancyElectionStart = municipality.key === "yokohama-city" &&
+                Boolean(termStartClaim?.statement.includes("欠員選挙") &&
+                  termStartClaim?.review_note?.includes("欠員選挙"));
 
               return (
                 <article className={styles.executiveCard} key={term.id}>
@@ -127,7 +131,11 @@ export default function ExecutivesPage() {
 
                   <dl className={styles.facts}>
                     <div><dt>現任期開始</dt><dd>{formatDateJa(term.term_start)}</dd></div>
+                    <div><dt>任期満了</dt><dd>{formatDateJa(term.term_end)}</dd></div>
                     <div><dt>選挙日</dt><dd>{formatDateJa(term.election_date)}</dd></div>
+                    {vacancyElectionStart ? (
+                      <div><dt>任期起算</dt><dd>欠員選挙による選挙日起算</dd></div>
+                    ) : null}
                     <div>
                       <dt>公約原文資料</dt>
                       <dd>{promisesForExecutive(term).length ? "原文公約登録済み" : "未登録"}</dd>
