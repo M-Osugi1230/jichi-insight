@@ -24,7 +24,8 @@ export type MunicipalityKey =
   | "toyota-city"
   | "sapporo-city"
   | "asahikawa-city"
-  | "saitama-prefecture";
+  | "saitama-prefecture"
+  | "kawaguchi-city";
 
 export type SourceRecord = {
   id: string;
@@ -79,6 +80,12 @@ export const municipalityMeta: Record<
   "saitama-prefecture": {
     name: "埼玉県", type: "都道府県",
     summary: "埼玉県5か年計画、2026年度成立後当初予算、2022〜2024年度の普通会計決算と大野元裕知事の現任期を確認します。自治体別ページは準備中です。",
+    status: "財政データ公開", href: null,
+    fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
+  },
+  "kawaguchi-city": {
+    name: "川口市", type: "中核市",
+    summary: "第6次川口市総合計画、2026年度成立後当初予算、2022〜2024年度の普通会計決算、重点事業10系列と岡村ゆり子市長の現任期・公約26件を確認します。自治体別ページは準備中です。",
     status: "財政データ公開", href: null,
     fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
   },
