@@ -1,0 +1,55 @@
+{
+  "id": "phase15-chiba-plan-review",
+  "name_ja": "千葉県",
+  "next_action": "Register the 41 measures of the implementation plan in the Chiba cluster's project stage, after confirming in the stage-2 inventory whether an official source attaches amounts or ratings to individual measures (the annual policy evaluations centre on indicator progress); register the governor's promises in the promise stage from the official 2025 election bulletin, whose candidate columns are image-only and need visual transcription; add the assembly layer in the assembly stage; and keep supplementary budgets, execution and settlement as separate states.",
+  "official_code": "120006",
+  "quality_boundary": "This package reviews the identity and structure of Chiba Prefecture's current comprehensive plan (the Chiba Prefecture Comprehensive Plan 'Creating Chiba's Future Together', decided on 10 October 2025: a basic-concept part looking roughly ten years ahead and an implementation-plan part for FY2025-FY2028, structured as six basic goals, fifteen policies, forty-one measures and two hundred main initiatives, with 89 social-goal indicators, 40 supporting indicators and 455 administrative-activity indicators), and the progress-governance layer (annual policy evaluations of the previous year's implementation, compiled by the prefecture with the opinions of external experts). The 41 measures are enumerated by name in the policy-structure record but their indicators and evaluations are registered in the project stage, not here. The previous plan ('Opening a New Era for Chiba', implementation period FY2022-FY2024) has a different structure and no cross-version mapping of measures, policies or indicators is made. The enacted FY2026 general-account initial budget is registered separately in fiscal_records.json at the published thousand-yen precision, and the FY2022-FY2024 ordinary-account settlements are registered separately in settlement_records.json; general-account settlement figures are not mixed into the ordinary-account series.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "計画の位置付け・決定日・構成と期間は県公式「千葉県総合計画 ～千葉の未来をともに創る～」のページで直接確認した。",
+      "evidence_role": "current_plan_identity",
+      "id": "chiba-current-plan-identity",
+      "review_note": "計画の同一性と期間を、政策評価や年度予算と分離して保持する。レビュー済みレコード。",
+      "source_url": "https://www.pref.chiba.lg.jp/seisaku/sougou/sinchibakensoukei.html",
+      "statement": "千葉県の現行の総合計画は「千葉県総合計画 ～千葉の未来をともに創る～」である。県はこの計画を「県政全般に関する最上位の基本的かつ総合的な計画」と位置付けており、令和7年9月定例県議会における議決を経て、令和7年（2025年）10月10日に決定された。計画は「基本構想編」（策定時を起点におおむね10年後を見据えた課題意識と目指す姿）と「実施計画編」（令和7年度から令和10年度までの4年間に重点的に取り組む施策・取組を体系的に整理）で構成され、令和7年度からこの計画に基づき各施策が推進されている。",
+      "title": "千葉県総合計画 ～千葉の未来をともに創る～ の決定と構成（実施計画編は令和7〜10年度）",
+      "value": "千葉県総合計画 ～千葉の未来をともに創る～（2025年10月10日決定、実施計画編は令和7年度〜令和10年度）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "体系（基本目標6・政策15・施策41・主な取組200）と指標数（社会目標89・補助指標40・行政活動目標455）は政策評価の概要（令和7年度事業実施分）の体系図で直接確認し、基本目標の名称も同資料で確認した。",
+      "evidence_role": "policy_structure",
+      "id": "chiba-plan-policy-structure",
+      "review_note": "基本目標名は政策評価資料の表記を採用した。レビュー済みレコード。",
+      "source_url": "https://www.pref.chiba.lg.jp/seisaku/press/2026/documents/r8shiryou1.pdf",
+      "statement": "実施計画編の体系は、6つの基本目標（I 危機管理体制の構築と安全の確保／II 千葉経済圏の確立と社会資本の整備／III 超高齢化時代に対応した医療・福祉の充実／IV こども・若者の可能性を広げる千葉の確立／V 誰もがその人らしく生きる・分かり合える共生社会の実現／VI 独自の自然・文化を生かした魅力ある千葉の創造）の下に15の政策、41の施策、200の主な取組を置くものである。県民と共有・協力して実現を目指す具体的な数値目標として89の社会目標が掲げられ、ほかに補助指標40、行政活動目標455指標が設定されている。このほか「行政経営の基本的視点」が5つ置かれている。",
+      "title": "基本目標6・政策15・施策41・主な取組200（計画の政策体系）",
+      "value": "6つの基本目標／15の政策／41の施策／200の主な取組"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "実施計画編の期間と構成は計画の公式ページで、前計画の実施期間と体系は段階0棚卸しで確認した計画資料による。",
+      "evidence_role": "implementation_layer",
+      "id": "chiba-plan-implementation-layer",
+      "review_note": "事業の登録は段階2で実施計画の施策を単位に行う。レビュー済みレコード。",
+      "source_url": "https://www.pref.chiba.lg.jp/seisaku/sougou/sinchibakensoukei.html",
+      "statement": "実施は、実施計画編（令和7年度〜令和10年度の4年間）に体系的に整理された41の施策と200の主な取組を単位として行われる。前計画「千葉県総合計画 ～新しい千葉の時代を切り開く～」（令和4年3月に策定、実施計画は令和4年度〜令和6年度の3年間、基本目標6・社会目標76）とは体系が異なるため、本レビューでは版をまたぐ施策・指標の対応付けは行わない。",
+      "title": "41の施策・200の主な取組による実施（実施計画編・令和7〜10年度）",
+      "value": "41の施策・200の主な取組単位の実施管理（実施計画編 令和7年度〜令和10年度）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "政策評価の方法と初年度（令和7年度事業実施分）の結果は政策評価の概要で直接確認した。",
+      "evidence_role": "progress_governance",
+      "id": "chiba-plan-progress-governance",
+      "review_note": "施策ごとの評価の登録は段階2で行う。レビュー済みレコード。",
+      "source_url": "https://www.pref.chiba.lg.jp/seisaku/press/2026/documents/r8shiryou1.pdf",
+      "statement": "進行管理は、毎年度、前年度の事業実施分について行う「政策評価」として実施され、公表される。政策評価は、基本目標の実現に向けて各施策の実施状況の把握や分析を通して課題を把握し、必要な改善を次の施策展開に反映させていく取組であり、県の自己評価に外部有識者の意見を踏まえてとりまとめられる。社会目標は指標ごとに進捗が判定され、施策単位では行政活動目標の達成状況（達成指標数／全指標数）が集計される。現行計画の初年度に当たる令和7年度事業実施分の評価では、89の社会目標のうち56指標（62.9％）が目標設定時より進展し、うち34指標が目安値以上に進展した。実績値が未判明の指標には前年度評価を使う「みなし評価」の注記がある（24指標）。",
+      "title": "年次「政策評価」（社会目標89指標の進捗判定）による進行管理",
+      "value": "政策評価（年次）／社会目標89指標の進捗判定と施策単位の行政活動目標の集計"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-21"
+}

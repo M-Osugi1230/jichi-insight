@@ -1,6 +1,7 @@
 import hokkaidoFinanceCatalog from "../../../data/catalog/hokkaido_prefecture_finance_sources.json";
 import kanagawaFinanceCatalog from "../../../data/catalog/kanagawa_prefecture_finance_sources.json";
 import saitamaFinanceCatalog from "../../../data/catalog/saitama_prefecture_finance_sources.json";
+import chibaFinanceCatalog from "../../../data/catalog/chiba_prefecture_finance_sources.json";
 import aichiFinanceCatalog from "../../../data/catalog/aichi_prefecture_finance_sources.json";
 import assemblyCatalog from "../../../data/catalog/fukuoka_assembly_sources.json";
 import cityFinanceCatalog from "../../../data/catalog/fukuoka_city_finance_sources.json";
@@ -26,7 +27,8 @@ export type MunicipalityKey =
   | "asahikawa-city"
   | "saitama-prefecture"
   | "saitama-city"
-  | "kawaguchi-city";
+  | "kawaguchi-city"
+  | "chiba-prefecture";
 export type SourceRecord = {
   id: string;
   municipality_key: MunicipalityKey;
@@ -81,6 +83,12 @@ export const municipalityMeta: Record<
     name: "埼玉県", type: "都道府県",
     summary: "埼玉県5か年計画、2026年度成立後当初予算、2022〜2024年度の普通会計決算と大野元裕知事の現任期を確認します。自治体別ページで知事公約12件・重点事業10系列・県議会の公開範囲も確認できます。",
     status: "財政データ公開", href: "/municipalities/saitama-prefecture",
+    fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
+  },
+  "chiba-prefecture": {
+    name: "千葉県", type: "都道府県",
+    summary: "千葉県総合計画 ～千葉の未来をともに創る～、2026年度成立後当初予算、2022〜2024年度の普通会計決算と熊谷俊人知事の現任期を確認します。自治体別ページは準備中です。",
+    status: "財政データ公開", href: null,
     fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
   },
   "saitama-city": {
@@ -185,6 +193,7 @@ export const sourceCatalog = [
   ...(hokkaidoFinanceCatalog.records as SourceRecord[]),
   ...(kanagawaFinanceCatalog.records as SourceRecord[]),
   ...(saitamaFinanceCatalog.records as SourceRecord[]),
+  ...(chibaFinanceCatalog.records as SourceRecord[]),
   ...(aichiFinanceCatalog.records as SourceRecord[]),
   ...(officialCatalog.records as SourceRecord[]),
   ...(financeCatalog.records as SourceRecord[]),

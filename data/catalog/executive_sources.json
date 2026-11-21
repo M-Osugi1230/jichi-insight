@@ -1,5 +1,5 @@
 {
-  "version": "0.26.0",
+  "version": "0.27.0",
   "updated_at": "2026-11-21",
   "scope": "pilot",
   "records": [
@@ -1178,6 +1178,62 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "2025年5月16日の選挙管理委員会で決定した選挙日程の公表。「告示日 令和8年1月25日」「選挙期日 令和8年2月1日」「市長任期満了日 令和8年2月8日」と明記する。前任期の満了日（2026年2月8日）の公式明記として用いた。2026-11-21にPDFを直接確認した。"
+    },
+    {
+      "id": "chiba-pref-governor",
+      "municipality_key": "chiba-prefecture",
+      "organization": "千葉県",
+      "category": "executive",
+      "title": "知事プロフィール（千葉県）",
+      "url": "https://www.pref.chiba.lg.jp/chiji/chijishitsu/profile.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "千葉県公式の知事プロフィール。現職知事が熊谷俊人であることと経歴を示す。"
+    },
+    {
+      "id": "chiba-pref-governor-election-2025-results",
+      "municipality_key": "chiba-prefecture",
+      "organization": "千葉県選挙管理委員会",
+      "category": "election",
+      "title": "令和7年3月16日執行千葉県知事選挙（千葉県選挙管理委員会）",
+      "url": "https://www.pref.chiba.lg.jp/senkan/kakokekka/r7-0316.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "2025年3月16日執行の千葉県知事選挙の公式結果ページ。本選挙が「令和7年4月4日の任期満了に伴う選挙」であることを明記し、候補者4人の得票数（熊谷俊人1,404,905票で当選、小倉正行140,435票、立花孝志79,060票、黒川あつひこ10,948票）を掲載する。選挙公報（PDF）へのリンクも掲載する。Wikipediaの集計表には1,405,905とする表記揺れがあるが、県選管の公式公表値は1,404,905である。"
+    },
+    {
+      "id": "chiba-pref-governors-list",
+      "municipality_key": "chiba-prefecture",
+      "organization": "千葉県",
+      "category": "executive",
+      "title": "歴代知事一覧（千葉県）",
+      "url": "https://www.pref.chiba.lg.jp/chiji/chijishitsu/rekidai-ichiran.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "千葉県公式の歴代知事一覧。熊谷俊人が第21代（令和3年4月就任）・第22代（令和7年4月就任）の知事であることを示す。"
+    },
+    {
+      "id": "kashiwa-city-term-expiry-list",
+      "municipality_key": "chiba-prefecture",
+      "organization": "柏市選挙管理委員会",
+      "category": "election",
+      "title": "選挙の任期及び任期満了日（柏市選挙管理委員会）",
+      "url": "https://www.city.kashiwa.lg.jp/senkan/shiseijoho/senkyo/ninki.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "柏市選挙管理委員会の任期・任期満了日一覧。千葉県知事選挙について、定数1・任期4年・任期満了日 令和11年4月4日（2029年4月4日）を日単位で明記する。"
     }
   ]
 }
