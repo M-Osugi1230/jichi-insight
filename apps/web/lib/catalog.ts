@@ -4,6 +4,7 @@ import saitamaFinanceCatalog from "../../../data/catalog/saitama_prefecture_fina
 import chibaFinanceCatalog from "../../../data/catalog/chiba_prefecture_finance_sources.json";
 import hyogoFinanceCatalog from "../../../data/catalog/hyogo_prefecture_finance_sources.json";
 import miyagiFinanceCatalog from "../../../data/catalog/miyagi_prefecture_finance_sources.json";
+import shizuokaFinanceCatalog from "../../../data/catalog/shizuoka_prefecture_finance_sources.json";
 import aichiFinanceCatalog from "../../../data/catalog/aichi_prefecture_finance_sources.json";
 import assemblyCatalog from "../../../data/catalog/fukuoka_assembly_sources.json";
 import cityFinanceCatalog from "../../../data/catalog/fukuoka_city_finance_sources.json";
@@ -37,6 +38,8 @@ export type MunicipalityKey =
   | "miyagi-prefecture"
   | "sendai-city"
   | "shizuoka-city";
+  | "hamamatsu-city"
+  | "shizuoka-prefecture";
 export type SourceRecord = {
   id: string;
   municipality_key: MunicipalityKey;
@@ -115,6 +118,12 @@ export const municipalityMeta: Record<
     name: "宮城県", type: "都道府県",
     summary: "新・宮城の将来ビジョン、FY2026成立後当初予算、FY2022〜2024普通会計決算、村井嘉浩知事の公約4件、施策単位10系列、宮城県議会第401回定例会の議員個人別事後表決記録を確認します。",
     status: "財政データ公開", href: "/municipalities/miyagi-prefecture",
+    fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
+  },
+  "shizuoka-prefecture": {
+    name: "静岡県", type: "都道府県",
+    summary: "静岡県総合計画～しずおか ウェルビーイングプラン～、2026年度成立後当初予算、2022〜2024年度の普通会計決算と鈴木康友知事の現任期を確認します。",
+    status: "財政データ公開", href: "/municipalities/shizuoka-prefecture",
     fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
   },
   "kobe-city": {
@@ -231,6 +240,14 @@ export const municipalityMeta: Record<
     status: "財政データ公開", href: null,
     fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
   },
+  "hamamatsu-city": {
+    name: "浜松市", type: "政令指定都市",
+    summary: "第2期浜松市基本計画（2025〜2034年度）、FY2026成立後一般会計当初予算、FY2022〜2024普通会計決算と中野祐介市長の現任期を公式出典で確認します。",
+    status: "財政データ公開", href: "/municipalities/hamamatsu-city",
+    fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
+  },
+    fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
+  },
 };
 
 export const sourceCatalog = [
@@ -240,6 +257,7 @@ export const sourceCatalog = [
   ...(chibaFinanceCatalog.records as SourceRecord[]),
   ...(hyogoFinanceCatalog.records as SourceRecord[]),
   ...(miyagiFinanceCatalog.records as SourceRecord[]),
+  ...(shizuokaFinanceCatalog.records as SourceRecord[]),
   ...(aichiFinanceCatalog.records as SourceRecord[]),
   ...(officialCatalog.records as SourceRecord[]),
   ...(financeCatalog.records as SourceRecord[]),

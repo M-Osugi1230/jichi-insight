@@ -1,0 +1,1826 @@
+[
+  {
+    "id": "jp-local-221309-fiscal-2022-ordinary-revenue",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "普通会計歳入総額",
+    "amount_yen": 396006285000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "普通会計の歳入総額（決算額）。一般会計単独の歳入とは異なる統計上の会計区分である。第2系統は浜松市が作成し総務省が公表する『財政状況資料集』（総括表・普通会計の状況）とした。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2022",
+      "hamamatsu-city-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2022-ordinary-expenditure",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "普通会計歳出総額",
+    "amount_yen": 381204906000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "普通会計の歳出総額（決算額）。一般会計単独の歳出とは異なる統計上の会計区分である。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2022",
+      "hamamatsu-city-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2022-formal-balance",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "formal_balance",
+    "metric_label": "形式収支",
+    "amount_yen": 14801379000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "歳入総額から歳出総額を差し引いた形式収支。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2022",
+      "hamamatsu-city-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2022-carryover-resources",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "carryover_resources",
+    "metric_label": "翌年度へ繰り越すべき財源",
+    "amount_yen": 5482924000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "翌年度へ繰り越すべき財源。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2022",
+      "hamamatsu-city-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2022-real-balance",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance",
+    "metric_label": "実質収支",
+    "amount_yen": 9318455000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "形式収支から翌年度へ繰り越すべき財源を差し引いた実質収支。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2022",
+      "hamamatsu-city-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2022-real-balance-ratio",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance_ratio",
+    "metric_label": "実質収支比率",
+    "value": 4.3,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "標準財政規模に対する実質収支額の割合。一次資料の印字値をそのまま収録する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2022",
+      "hamamatsu-city-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2022-current-balance-ratio",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "current_balance_ratio",
+    "metric_label": "経常収支比率",
+    "value": 90.1,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "経常収支比率。括弧内の『減収補塡債（特例分）及び臨時財政対策債を除く』値（96.3％）ではなく、本体の表示値を収録する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2022",
+      "hamamatsu-city-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2022-fiscal-strength-index",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fiscal_strength_index",
+    "metric_label": "財政力指数",
+    "value": 0.829,
+    "unit": "index",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "財政力指数。総務省版決算カードの指数表は小数第2位まで（0.83）の印字だが、浜松市公表の決算カードは小数第3位（0.829）まで印字しているため、第3位までの値を収録する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2022",
+      "hamamatsu-city-settlement-card-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2022-real-debt-service-ratio",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_debt_service_ratio",
+    "metric_label": "実質公債費比率",
+    "value": 4.4,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "実質公債費比率（3か年平均）。一次資料の印字値をそのまま収録する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2022",
+      "hamamatsu-city-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2022-future-burden-ratio",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "future_burden_ratio",
+    "metric_label": "将来負担比率",
+    "amount_yen": null,
+    "value": null,
+    "unit": "percent",
+    "value_status": "not_published",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "将来負担比率（健全化判断比率）。当年度は将来負担額が充当可能財源等を下回り、総務省『市町村決算カード』・浜松市『財政状況資料集』のいずれでも『－』（数値なし）と公表されているため、数値は収録しない。推測や0による補完はしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2022",
+      "hamamatsu-city-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2022-ordinary-local-tax",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "local_tax",
+    "metric_label": "市税",
+    "amount_yen": 150582086000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "普通会計の市税収入額（決算額）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2022",
+      "hamamatsu-city-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2022-population",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "population",
+    "metric_label": "住民基本台帳人口",
+    "value": 792704,
+    "unit": "persons",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "住民基本台帳人口（令和5年1月1日現在）。財政状況資料集総括表の注記（※7）に基づく1月1日現在の値を収録する。浜松市公表の決算カードは3月31日現在の人口（790,580人）を印字しており、基準日が異なるため値は一致しない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2022",
+      "hamamatsu-city-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2022-standard-fiscal-scale",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "standard_fiscal_scale",
+    "metric_label": "標準財政規模",
+    "amount_yen": 218550571000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "標準財政規模。地方交付税の算定基礎となる標準的な一般財源の規模。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2022",
+      "hamamatsu-city-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2022-fund-balance",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fund_balance",
+    "metric_label": "基金残高",
+    "amount_yen": 51077877000,
+    "value": null,
+    "breakdown": [
+      {
+        "key": "fiscal_adjustment_fund",
+        "label": "財政調整基金",
+        "amount_yen": 13798070000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_reduction_fund",
+        "label": "減債基金",
+        "amount_yen": 773553000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "other_specific_purpose_funds",
+        "label": "その他特定目的基金",
+        "amount_yen": 36506254000,
+        "parent_key": null,
+        "note": null
+      }
+    ],
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "普通会計の基金残高（財政調整基金・減債基金・その他特定目的基金の合計）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2022",
+      "hamamatsu-city-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2022-debt-balance",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "debt_balance",
+    "metric_label": "地方債残高",
+    "amount_yen": 249257808000,
+    "value": null,
+    "breakdown": [
+      {
+        "key": "bonds_excluding_temporary_fiscal",
+        "label": "地方債現在高（臨時財政対策債を除く）",
+        "amount_yen": 113807769000,
+        "parent_key": null,
+        "note": "浜松市『財政状況資料集』総括表の印字値。"
+      },
+      {
+        "key": "temporary_fiscal_measures_bonds",
+        "label": "臨時財政対策債",
+        "amount_yen": 135450039000,
+        "parent_key": null,
+        "note": "地方債現在高から『地方債現在高（臨時財政対策債を除く）』を差し引いた算出値。"
+      }
+    ],
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "普通会計の地方債現在高。内訳の『地方債現在高（臨時財政対策債を除く）』は浜松市『財政状況資料集』総括表の印字値であり、『臨時財政対策債』は現在高からこれを差し引いた算出値。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2022",
+      "hamamatsu-city-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2022-expenditure-by-nature",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_nature",
+    "metric_label": "性質別歳出",
+    "amount_yen": 381204906000,
+    "value": null,
+    "breakdown": [
+      {
+        "key": "mandatory_expenses",
+        "label": "義務的経費計",
+        "amount_yen": 201625835000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "personnel",
+        "label": "人件費",
+        "amount_yen": 79907742000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "assistance",
+        "label": "扶助費",
+        "amount_yen": 86402076000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 35316017000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "capital_expenses",
+        "label": "投資的経費計",
+        "amount_yen": 56202583000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "construction",
+        "label": "普通建設事業費",
+        "amount_yen": 52453232000,
+        "parent_key": "capital_expenses",
+        "note": null
+      },
+      {
+        "key": "independent_construction",
+        "label": "うち単独事業費",
+        "amount_yen": 28346434000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "disaster_recovery_works",
+        "label": "災害復旧事業費",
+        "amount_yen": 3749351000,
+        "parent_key": "capital_expenses",
+        "note": null
+      },
+      {
+        "key": "goods_and_services",
+        "label": "物件費",
+        "amount_yen": 56044996000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "maintenance",
+        "label": "維持補修費",
+        "amount_yen": 7764749000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "subsidies",
+        "label": "補助費等",
+        "amount_yen": 26257118000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "transfers_out",
+        "label": "繰出金",
+        "amount_yen": 25580800000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "fund_contributions",
+        "label": "積立金",
+        "amount_yen": 6567660000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "investments_and_loans",
+        "label": "投資・出資金・貸付金",
+        "amount_yen": 1161165000,
+        "parent_key": null,
+        "note": null
+      }
+    ],
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "普通会計の性質別歳出内訳。区分名は決算カードの印字どおりとし、前年度繰上充用金は目的別内訳にのみ含める。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2022",
+      "hamamatsu-city-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2022-expenditure-by-purpose",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_purpose",
+    "metric_label": "目的別歳出",
+    "amount_yen": 381204906000,
+    "value": null,
+    "breakdown": [
+      {
+        "key": "assembly",
+        "label": "議会費",
+        "amount_yen": 903119000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "general_affairs",
+        "label": "総務費",
+        "amount_yen": 30129018000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "welfare",
+        "label": "民生費",
+        "amount_yen": 123347718000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "public_health",
+        "label": "衛生費",
+        "amount_yen": 39254711000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "labor",
+        "label": "労働費",
+        "amount_yen": 496944000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "agriculture_forestry_fisheries",
+        "label": "農林水産業費",
+        "amount_yen": 5475402000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "commerce_industry",
+        "label": "商工費",
+        "amount_yen": 10749963000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "civil_engineering",
+        "label": "土木費",
+        "amount_yen": 45743025000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "fire_service",
+        "label": "消防費",
+        "amount_yen": 11555157000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "education",
+        "label": "教育費",
+        "amount_yen": 74405817000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "disaster_recovery",
+        "label": "災害復旧費",
+        "amount_yen": 3749351000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 35394681000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "miscellaneous_expenditures",
+        "label": "諸支出金",
+        "amount_yen": null,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "prior_year_advance_appropriation",
+        "label": "前年度繰上充用金",
+        "amount_yen": null,
+        "parent_key": null,
+        "note": null
+      }
+    ],
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "普通会計の目的別歳出内訳。諸支出金・前年度繰上充用金は決算カードに『－』と印字され金額の公表がないため null とする。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2022",
+      "hamamatsu-city-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2023-ordinary-revenue",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "普通会計歳入総額",
+    "amount_yen": 424171006000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "普通会計の歳入総額（決算額）。一般会計単独の歳入とは異なる統計上の会計区分である。第2系統は浜松市が作成し総務省が公表する『財政状況資料集』（総括表・普通会計の状況）とした。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2023",
+      "hamamatsu-city-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2023-ordinary-expenditure",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "普通会計歳出総額",
+    "amount_yen": 410056352000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "普通会計の歳出総額（決算額）。一般会計単独の歳出とは異なる統計上の会計区分である。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2023",
+      "hamamatsu-city-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2023-formal-balance",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "formal_balance",
+    "metric_label": "形式収支",
+    "amount_yen": 14114654000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "歳入総額から歳出総額を差し引いた形式収支。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2023",
+      "hamamatsu-city-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2023-carryover-resources",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "carryover_resources",
+    "metric_label": "翌年度へ繰り越すべき財源",
+    "amount_yen": 6473021000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "翌年度へ繰り越すべき財源。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2023",
+      "hamamatsu-city-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2023-real-balance",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance",
+    "metric_label": "実質収支",
+    "amount_yen": 7641633000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "形式収支から翌年度へ繰り越すべき財源を差し引いた実質収支。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2023",
+      "hamamatsu-city-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2023-real-balance-ratio",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance_ratio",
+    "metric_label": "実質収支比率",
+    "value": 3.4,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "標準財政規模に対する実質収支額の割合。一次資料の印字値をそのまま収録する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2023",
+      "hamamatsu-city-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2023-current-balance-ratio",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "current_balance_ratio",
+    "metric_label": "経常収支比率",
+    "value": 91.2,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "経常収支比率。括弧内の『減収補塡債（特例分）及び臨時財政対策債を除く』値（95.1％）ではなく、本体の表示値を収録する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2023",
+      "hamamatsu-city-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2023-fiscal-strength-index",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fiscal_strength_index",
+    "metric_label": "財政力指数",
+    "value": 0.813,
+    "unit": "index",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "財政力指数。総務省版決算カードの指数表は小数第2位まで（0.81）の印字だが、浜松市公表の決算カードは小数第3位（0.813）まで印字しているため、第3位までの値を収録する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2023",
+      "hamamatsu-city-settlement-card-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2023-real-debt-service-ratio",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_debt_service_ratio",
+    "metric_label": "実質公債費比率",
+    "value": 3.8,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "実質公債費比率（3か年平均）。一次資料の印字値をそのまま収録する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2023",
+      "hamamatsu-city-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2023-future-burden-ratio",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "future_burden_ratio",
+    "metric_label": "将来負担比率",
+    "amount_yen": null,
+    "value": null,
+    "unit": "percent",
+    "value_status": "not_published",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "将来負担比率（健全化判断比率）。当年度は将来負担額が充当可能財源等を下回り、総務省『市町村決算カード』・浜松市『財政状況資料集』のいずれでも『－』（数値なし）と公表されているため、数値は収録しない。推測や0による補完はしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2023",
+      "hamamatsu-city-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2023-ordinary-local-tax",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "local_tax",
+    "metric_label": "市税",
+    "amount_yen": 152373340000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "普通会計の市税収入額（決算額）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2023",
+      "hamamatsu-city-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2023-population",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "population",
+    "metric_label": "住民基本台帳人口",
+    "value": 788985,
+    "unit": "persons",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "住民基本台帳人口（令和6年1月1日現在）。財政状況資料集総括表の注記（※7）に基づく1月1日現在の値を収録する。浜松市公表の決算カードは3月31日現在の人口（786,792人）を印字しており、基準日が異なるため値は一致しない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2023",
+      "hamamatsu-city-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2023-standard-fiscal-scale",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "standard_fiscal_scale",
+    "metric_label": "標準財政規模",
+    "amount_yen": 223069265000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "標準財政規模。地方交付税の算定基礎となる標準的な一般財源の規模。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2023",
+      "hamamatsu-city-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2023-fund-balance",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fund_balance",
+    "metric_label": "基金残高",
+    "amount_yen": 37149702000,
+    "value": null,
+    "breakdown": [
+      {
+        "key": "fiscal_adjustment_fund",
+        "label": "財政調整基金",
+        "amount_yen": 14511349000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_reduction_fund",
+        "label": "減債基金",
+        "amount_yen": 1757785000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "other_specific_purpose_funds",
+        "label": "その他特定目的基金",
+        "amount_yen": 20880568000,
+        "parent_key": null,
+        "note": null
+      }
+    ],
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "普通会計の基金残高（財政調整基金・減債基金・その他特定目的基金の合計）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2023",
+      "hamamatsu-city-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2023-debt-balance",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "debt_balance",
+    "metric_label": "地方債残高",
+    "amount_yen": 244418676000,
+    "value": null,
+    "breakdown": [
+      {
+        "key": "bonds_excluding_temporary_fiscal",
+        "label": "地方債現在高（臨時財政対策債を除く）",
+        "amount_yen": 117017623000,
+        "parent_key": null,
+        "note": "浜松市『財政状況資料集』総括表の印字値。"
+      },
+      {
+        "key": "temporary_fiscal_measures_bonds",
+        "label": "臨時財政対策債",
+        "amount_yen": 127401053000,
+        "parent_key": null,
+        "note": "地方債現在高から『地方債現在高（臨時財政対策債を除く）』を差し引いた算出値。"
+      }
+    ],
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "普通会計の地方債現在高。内訳の『地方債現在高（臨時財政対策債を除く）』は浜松市『財政状況資料集』総括表の印字値であり、『臨時財政対策債』は現在高からこれを差し引いた算出値。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2023",
+      "hamamatsu-city-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2023-expenditure-by-nature",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_nature",
+    "metric_label": "性質別歳出",
+    "amount_yen": 410056352000,
+    "value": null,
+    "breakdown": [
+      {
+        "key": "mandatory_expenses",
+        "label": "義務的経費計",
+        "amount_yen": 204433587000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "personnel",
+        "label": "人件費",
+        "amount_yen": 77819857000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "assistance",
+        "label": "扶助費",
+        "amount_yen": 91623871000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 34989859000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "capital_expenses",
+        "label": "投資的経費計",
+        "amount_yen": 83758001000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "construction",
+        "label": "普通建設事業費",
+        "amount_yen": 76526475000,
+        "parent_key": "capital_expenses",
+        "note": null
+      },
+      {
+        "key": "independent_construction",
+        "label": "うち単独事業費",
+        "amount_yen": 43498867000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "disaster_recovery_works",
+        "label": "災害復旧事業費",
+        "amount_yen": 7231526000,
+        "parent_key": "capital_expenses",
+        "note": null
+      },
+      {
+        "key": "goods_and_services",
+        "label": "物件費",
+        "amount_yen": 52935916000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "maintenance",
+        "label": "維持補修費",
+        "amount_yen": 8389929000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "subsidies",
+        "label": "補助費等",
+        "amount_yen": 24993916000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "transfers_out",
+        "label": "繰出金",
+        "amount_yen": 26226462000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "fund_contributions",
+        "label": "積立金",
+        "amount_yen": 8142485000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "investments_and_loans",
+        "label": "投資・出資金・貸付金",
+        "amount_yen": 1176056000,
+        "parent_key": null,
+        "note": null
+      }
+    ],
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "普通会計の性質別歳出内訳。区分名は決算カードの印字どおりとし、前年度繰上充用金は目的別内訳にのみ含める。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2023",
+      "hamamatsu-city-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2023-expenditure-by-purpose",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_purpose",
+    "metric_label": "目的別歳出",
+    "amount_yen": 410056352000,
+    "value": null,
+    "breakdown": [
+      {
+        "key": "assembly",
+        "label": "議会費",
+        "amount_yen": 917306000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "general_affairs",
+        "label": "総務費",
+        "amount_yen": 31331679000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "welfare",
+        "label": "民生費",
+        "amount_yen": 127764124000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "public_health",
+        "label": "衛生費",
+        "amount_yen": 58643255000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "labor",
+        "label": "労働費",
+        "amount_yen": 441456000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "agriculture_forestry_fisheries",
+        "label": "農林水産業費",
+        "amount_yen": 6485926000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "commerce_industry",
+        "label": "商工費",
+        "amount_yen": 10963945000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "civil_engineering",
+        "label": "土木費",
+        "amount_yen": 44179224000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "fire_service",
+        "label": "消防費",
+        "amount_yen": 12907317000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "education",
+        "label": "教育費",
+        "amount_yen": 74117033000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "disaster_recovery",
+        "label": "災害復旧費",
+        "amount_yen": 7231526000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 35073561000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "miscellaneous_expenditures",
+        "label": "諸支出金",
+        "amount_yen": null,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "prior_year_advance_appropriation",
+        "label": "前年度繰上充用金",
+        "amount_yen": null,
+        "parent_key": null,
+        "note": null
+      }
+    ],
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "普通会計の目的別歳出内訳。諸支出金・前年度繰上充用金は決算カードに『－』と印字され金額の公表がないため null とする。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2023",
+      "hamamatsu-city-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2024-ordinary-revenue",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "普通会計歳入総額",
+    "amount_yen": 416549107000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "普通会計の歳入総額（決算額）。一般会計単独の歳入とは異なる統計上の会計区分である。第2系統は浜松市が作成し総務省が公表する『財政状況資料集』（総括表・普通会計の状況）とした。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2024",
+      "hamamatsu-city-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2024-ordinary-expenditure",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "普通会計歳出総額",
+    "amount_yen": 403626364000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "普通会計の歳出総額（決算額）。一般会計単独の歳出とは異なる統計上の会計区分である。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2024",
+      "hamamatsu-city-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2024-formal-balance",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "formal_balance",
+    "metric_label": "形式収支",
+    "amount_yen": 12922743000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "歳入総額から歳出総額を差し引いた形式収支。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2024",
+      "hamamatsu-city-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2024-carryover-resources",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "carryover_resources",
+    "metric_label": "翌年度へ繰り越すべき財源",
+    "amount_yen": 5432177000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "翌年度へ繰り越すべき財源。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2024",
+      "hamamatsu-city-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2024-real-balance",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance",
+    "metric_label": "実質収支",
+    "amount_yen": 7490566000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "形式収支から翌年度へ繰り越すべき財源を差し引いた実質収支。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2024",
+      "hamamatsu-city-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2024-real-balance-ratio",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance_ratio",
+    "metric_label": "実質収支比率",
+    "value": 3.3,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "標準財政規模に対する実質収支額の割合。一次資料の印字値をそのまま収録する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2024",
+      "hamamatsu-city-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2024-current-balance-ratio",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "current_balance_ratio",
+    "metric_label": "経常収支比率",
+    "value": 93.3,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "経常収支比率。括弧内の『減収補塡債（特例分）及び臨時財政対策債を除く』値（95.1％）ではなく、本体の表示値を収録する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2024",
+      "hamamatsu-city-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2024-fiscal-strength-index",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fiscal_strength_index",
+    "metric_label": "財政力指数",
+    "value": 0.808,
+    "unit": "index",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "財政力指数。総務省版決算カードの指数表は小数第2位まで（0.81）の印字だが、浜松市公表の決算カードは小数第3位（0.808）まで印字しているため、第3位までの値を収録する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2024",
+      "hamamatsu-city-settlement-card-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2024-real-debt-service-ratio",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_debt_service_ratio",
+    "metric_label": "実質公債費比率",
+    "value": 3.3,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "実質公債費比率（3か年平均）。一次資料の印字値をそのまま収録する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2024",
+      "hamamatsu-city-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2024-future-burden-ratio",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "future_burden_ratio",
+    "metric_label": "将来負担比率",
+    "amount_yen": null,
+    "value": null,
+    "unit": "percent",
+    "value_status": "not_published",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "将来負担比率（健全化判断比率）。当年度は将来負担額が充当可能財源等を下回り、総務省『市町村決算カード』・浜松市『財政状況資料集』のいずれでも『－』（数値なし）と公表されているため、数値は収録しない。推測や0による補完はしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2024",
+      "hamamatsu-city-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2024-ordinary-local-tax",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "local_tax",
+    "metric_label": "市税",
+    "amount_yen": 151900602000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "普通会計の市税収入額（決算額）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2024",
+      "hamamatsu-city-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2024-population",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "population",
+    "metric_label": "住民基本台帳人口",
+    "value": 783924,
+    "unit": "persons",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "住民基本台帳人口（令和7年1月1日現在）。財政状況資料集総括表の注記（※7）に基づく1月1日現在の値を収録する。浜松市公表の決算カードは3月31日現在の人口（781,011人）を印字しており、基準日が異なるため値は一致しない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2024",
+      "hamamatsu-city-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2024-standard-fiscal-scale",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "standard_fiscal_scale",
+    "metric_label": "標準財政規模",
+    "amount_yen": 228440968000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "標準財政規模。地方交付税の算定基礎となる標準的な一般財源の規模。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2024",
+      "hamamatsu-city-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2024-fund-balance",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fund_balance",
+    "metric_label": "基金残高",
+    "amount_yen": 36768755000,
+    "value": null,
+    "breakdown": [
+      {
+        "key": "fiscal_adjustment_fund",
+        "label": "財政調整基金",
+        "amount_yen": 15052376000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_reduction_fund",
+        "label": "減債基金",
+        "amount_yen": 2646058000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "other_specific_purpose_funds",
+        "label": "その他特定目的基金",
+        "amount_yen": 19070321000,
+        "parent_key": null,
+        "note": null
+      }
+    ],
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "普通会計の基金残高（財政調整基金・減債基金・その他特定目的基金の合計）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2024",
+      "hamamatsu-city-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2024-debt-balance",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "debt_balance",
+    "metric_label": "地方債残高",
+    "amount_yen": 238158797000,
+    "value": null,
+    "breakdown": [
+      {
+        "key": "bonds_excluding_temporary_fiscal",
+        "label": "地方債現在高（臨時財政対策債を除く）",
+        "amount_yen": 122611231000,
+        "parent_key": null,
+        "note": "浜松市『財政状況資料集』総括表の印字値。"
+      },
+      {
+        "key": "temporary_fiscal_measures_bonds",
+        "label": "臨時財政対策債",
+        "amount_yen": 115547566000,
+        "parent_key": null,
+        "note": "地方債現在高から『地方債現在高（臨時財政対策債を除く）』を差し引いた算出値。"
+      }
+    ],
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "普通会計の地方債現在高。内訳の『地方債現在高（臨時財政対策債を除く）』は浜松市『財政状況資料集』総括表の印字値であり、『臨時財政対策債』は現在高からこれを差し引いた算出値。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2024",
+      "hamamatsu-city-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2024-expenditure-by-nature",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_nature",
+    "metric_label": "性質別歳出",
+    "amount_yen": 403626364000,
+    "value": null,
+    "breakdown": [
+      {
+        "key": "mandatory_expenses",
+        "label": "義務的経費計",
+        "amount_yen": 219574083000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "personnel",
+        "label": "人件費",
+        "amount_yen": 82290360000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "assistance",
+        "label": "扶助費",
+        "amount_yen": 103495499000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 33788224000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "capital_expenses",
+        "label": "投資的経費計",
+        "amount_yen": 58353310000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "construction",
+        "label": "普通建設事業費",
+        "amount_yen": 51689285000,
+        "parent_key": "capital_expenses",
+        "note": null
+      },
+      {
+        "key": "independent_construction",
+        "label": "うち単独事業費",
+        "amount_yen": 31436251000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "disaster_recovery_works",
+        "label": "災害復旧事業費",
+        "amount_yen": 6664025000,
+        "parent_key": "capital_expenses",
+        "note": null
+      },
+      {
+        "key": "goods_and_services",
+        "label": "物件費",
+        "amount_yen": 57039589000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "maintenance",
+        "label": "維持補修費",
+        "amount_yen": 8576025000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "subsidies",
+        "label": "補助費等",
+        "amount_yen": 22992419000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "transfers_out",
+        "label": "繰出金",
+        "amount_yen": 26779494000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "fund_contributions",
+        "label": "積立金",
+        "amount_yen": 9152408000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "investments_and_loans",
+        "label": "投資・出資金・貸付金",
+        "amount_yen": 1159036000,
+        "parent_key": null,
+        "note": null
+      }
+    ],
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "普通会計の性質別歳出内訳。区分名は決算カードの印字どおりとし、前年度繰上充用金は目的別内訳にのみ含める。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2024",
+      "hamamatsu-city-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2024-expenditure-by-purpose",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_purpose",
+    "metric_label": "目的別歳出",
+    "amount_yen": 403626364000,
+    "value": null,
+    "breakdown": [
+      {
+        "key": "assembly",
+        "label": "議会費",
+        "amount_yen": 931784000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "general_affairs",
+        "label": "総務費",
+        "amount_yen": 32453695000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "welfare",
+        "label": "民生費",
+        "amount_yen": 140580503000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "public_health",
+        "label": "衛生費",
+        "amount_yen": 31375006000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "labor",
+        "label": "労働費",
+        "amount_yen": 471611000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "agriculture_forestry_fisheries",
+        "label": "農林水産業費",
+        "amount_yen": 6151517000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "commerce_industry",
+        "label": "商工費",
+        "amount_yen": 8518849000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "civil_engineering",
+        "label": "土木費",
+        "amount_yen": 49463468000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "fire_service",
+        "label": "消防費",
+        "amount_yen": 11773875000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "education",
+        "label": "教育費",
+        "amount_yen": 81370694000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "disaster_recovery",
+        "label": "災害復旧費",
+        "amount_yen": 6664025000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 33871337000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "miscellaneous_expenditures",
+        "label": "諸支出金",
+        "amount_yen": null,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "prior_year_advance_appropriation",
+        "label": "前年度繰上充用金",
+        "amount_yen": null,
+        "parent_key": null,
+        "note": null
+      }
+    ],
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "普通会計の目的別歳出内訳。諸支出金・前年度繰上充用金は決算カードに『－』と印字され金額の公表がないため null とする。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-mic-settlement-card-fy2024",
+      "hamamatsu-city-fiscal-situation-collection-fy2024"
+    ]
+  }
+]

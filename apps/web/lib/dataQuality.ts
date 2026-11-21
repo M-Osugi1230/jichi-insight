@@ -22,6 +22,10 @@ import miyagiFiscalRecords from "../../../data/reviewed/miyagi-prefecture/fiscal
 import miyagiSettlementRecords from "../../../data/reviewed/miyagi-prefecture/settlement_records.json";
 import miyagiFiscalEvidence from "../../../data/reviewed/miyagi-prefecture/evidence_packets.json";
 import miyagiSettlementEvidence from "../../../data/reviewed/miyagi-prefecture/settlement_evidence_packets.json";
+import shizuokaFiscalRecords from "../../../data/reviewed/shizuoka-prefecture/fiscal_records.json";
+import shizuokaSettlementRecords from "../../../data/reviewed/shizuoka-prefecture/settlement_records.json";
+import shizuokaFiscalEvidence from "../../../data/reviewed/shizuoka-prefecture/evidence_packets.json";
+import shizuokaSettlementEvidence from "../../../data/reviewed/shizuoka-prefecture/settlement_evidence_packets.json";
 import kobeCityFiscalRecords from "../../../data/reviewed/kobe-city/fiscal_records.json";
 import kobeCitySettlementRecords from "../../../data/reviewed/kobe-city/settlement_records.json";
 import kobeCityFiscalEvidence from "../../../data/reviewed/kobe-city/evidence_packets.json";
@@ -46,6 +50,10 @@ import shizuokaCityFiscalRecords from "../../../data/reviewed/shizuoka-city/fisc
 import shizuokaCitySettlementRecords from "../../../data/reviewed/shizuoka-city/settlement_records.json";
 import shizuokaCityFiscalEvidence from "../../../data/reviewed/shizuoka-city/evidence_packets.json";
 import shizuokaCitySettlementEvidence from "../../../data/reviewed/shizuoka-city/settlement_evidence_packets.json";
+import hamamatsuCityFiscalRecords from "../../../data/reviewed/hamamatsu-city/fiscal_records.json";
+import hamamatsuCitySettlementRecords from "../../../data/reviewed/hamamatsu-city/settlement_records.json";
+import hamamatsuCityFiscalEvidence from "../../../data/reviewed/hamamatsu-city/evidence_packets.json";
+import hamamatsuCitySettlementEvidence from "../../../data/reviewed/hamamatsu-city/settlement_evidence_packets.json";
 import kawasakiFiscalRecords from "../../../data/reviewed/kawasaki-city/fiscal_records.json";
 import kawasakiFiscalEvidence from "../../../data/reviewed/kawasaki-city/evidence_packets.json";
 import yokohamaFiscalRecords from "../../../data/reviewed/yokohama-city/fiscal_records.json";
@@ -104,6 +112,7 @@ const municipalityNames: Record<MunicipalityKey, string> = {
   "chiba-city": "千葉市",
   "hyogo-prefecture": "兵庫県",
   "miyagi-prefecture": "宮城県",
+  "shizuoka-prefecture": "静岡県",
   "kobe-city": "神戸市",
   "saitama-city": "さいたま市",
   "yokohama-city": "横浜市",
@@ -121,6 +130,7 @@ const municipalityNames: Record<MunicipalityKey, string> = {
   "toyota-city": "豊田市",
   "sendai-city": "仙台市",
   "shizuoka-city": "静岡市",
+  "hamamatsu-city": "浜松市",
 };
 
 const municipalityKeys = Object.keys(municipalityNames) as MunicipalityKey[];
@@ -132,6 +142,7 @@ const recordsByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFin
   "chiba-prefecture": [...chibaFiscalRecords, ...chibaSettlementRecords] as typeof fukuokaPrefectureFinance.records,
   "hyogo-prefecture": [...hyogoFiscalRecords, ...hyogoSettlementRecords] as typeof fukuokaPrefectureFinance.records,
   "miyagi-prefecture": [...miyagiFiscalRecords, ...miyagiSettlementRecords] as typeof fukuokaPrefectureFinance.records,
+  "shizuoka-prefecture": [...shizuokaFiscalRecords, ...shizuokaSettlementRecords] as typeof fukuokaPrefectureFinance.records,
   "kobe-city": [...kobeCityFiscalRecords, ...kobeCitySettlementRecords] as typeof fukuokaPrefectureFinance.records,
   "chiba-city": [...chibaCityFiscalRecords, ...chibaCitySettlementRecords] as typeof fukuokaPrefectureFinance.records,
   "saitama-city": [...saitamaCityFiscalRecords, ...saitamaCitySettlementRecords] as typeof fukuokaPrefectureFinance.records,
@@ -150,6 +161,7 @@ const recordsByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFin
   "toyota-city": toyotaCityFinance.records,
   "sendai-city": [...sendaiCityFiscalRecords, ...sendaiCitySettlementRecords] as typeof fukuokaPrefectureFinance.records,
   "shizuoka-city": [...shizuokaCityFiscalRecords, ...shizuokaCitySettlementRecords] as typeof fukuokaPrefectureFinance.records,
+  "hamamatsu-city": [...hamamatsuCityFiscalRecords, ...hamamatsuCitySettlementRecords] as typeof fukuokaPrefectureFinance.records,
 };
 const evidenceByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFinance.evidencePackets> = {
   "kawasaki-city": kawasakiFiscalEvidence as typeof fukuokaPrefectureFinance.evidencePackets,
@@ -159,6 +171,7 @@ const evidenceByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFi
   "chiba-prefecture": [...chibaFiscalEvidence, ...chibaSettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
   "hyogo-prefecture": [...hyogoFiscalEvidence, ...hyogoSettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
   "miyagi-prefecture": [...miyagiFiscalEvidence, ...miyagiSettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
+  "shizuoka-prefecture": [...shizuokaFiscalEvidence, ...shizuokaSettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
   "kobe-city": [...kobeCityFiscalEvidence, ...kobeCitySettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
   "chiba-city": [...chibaCityFiscalEvidence, ...chibaCitySettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
   "saitama-city": [...saitamaCityFiscalEvidence, ...saitamaCitySettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
@@ -177,6 +190,7 @@ const evidenceByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFi
   "toyota-city": toyotaCityFinance.evidencePackets,
   "sendai-city": [...sendaiCityFiscalEvidence, ...sendaiCitySettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
   "shizuoka-city": [...shizuokaCityFiscalEvidence, ...shizuokaCitySettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
+  "hamamatsu-city": [...hamamatsuCityFiscalEvidence, ...hamamatsuCitySettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
 };
 const fiscalRecords = Object.values(recordsByMunicipality).flat();
 const evidencePackets = Object.values(evidenceByMunicipality).flat();
