@@ -258,9 +258,11 @@ def test_shizuoka_mayor_term_and_votes() -> None:
     # Election Commission's official list of mayoral terms.
     assert term["term_end"] == "2027-04-12"
     assert term["election_date"] == "2023-04-09"
-    # Stage 1 leaves the manifesto unconnected; the bulletin is
-    # connected at stage 3.
-    assert term["manifesto_source_ids"] == []
+    # Stage 1 left the manifesto unconnected; stage 3 (Issue #900)
+    # then transcribed the panel and registered the bulletin.
+    assert term["manifesto_source_ids"] == [
+        "shizuoka-city-mayor-election-2023-bulletin"
+    ]
 
     packets = load_json("data/entities/executives/evidence_packets.json")
     packet = next(p for p in packets if p["subject_id"] == term["id"])
@@ -272,7 +274,9 @@ def test_shizuoka_mayor_term_and_votes() -> None:
     assert claims["term_end"]["source_ids"] == [
         "shizuoka-pref-mayor-term-list"
     ]
-    # The one open question at stage 1 is the current location of the
-    # 2023 election bulletin PDF, to be confirmed at stage 3.
+    # The stage-3 bulletin connection is complete, so the only open
+    # question left is the candidate's detailed policy materials;
+    # the bulletin itself is now the manifesto claim.
     assert len(packet["open_questions"]) == 1
-    assert "選挙公報" in packet["open_questions"][0]
+    assert "政策資料" in packet["open_questions"][0]
+    assert "選挙公報" in claims["manifesto_source_ids"]["statement"]

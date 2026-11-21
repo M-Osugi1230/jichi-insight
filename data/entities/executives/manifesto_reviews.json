@@ -415,5 +415,23 @@
     "last_reviewed_at": "2026-11-22",
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-review-jp-local-221007-2023",
+    "executive_term_id": "jp-local-221007-executive-2023-04-13",
+    "source_id": "shizuoka-city-mayor-election-2023-bulletin",
+    "candidate_name": "難波 喬司",
+    "source_location": "全2ページPDF・1ページ目の候補者欄",
+    "review_scope": "candidate_panel",
+    "statement_boundary": "mixed",
+    "segmentation_status": "segmented",
+    "promise_records_created": 3,
+    "reason_codes": [
+      "other"
+    ],
+    "review_note": "候補者欄はポスター形式で、右側に顔写真と縦書きの候補者名「なんばたかし」・標語「現場主義」が配置され、左側に大見出し「市政の変革で『難しい』を『できる』に変えます！」の下に番号付きの3項目（①現場主義、②開かれたわかりやすい市政、③信頼と共創の市政）が各見出しと本文で配置され、下部に「難波喬司プロフィール」欄（昭和31年生まれ、静岡県リニア・熱海土石流担当理事、静岡県副知事、国土交通省技術総括審議官等の経歴）がある。3項目はいずれも見出しと本文が一体の単位であり、見出しだけでは公約文として完結しないため、福岡市長・宮城県知事・静岡県知事の先例（見出し＋本文を1レコードとする形式）に倣い、見出しと本文を改行でつないだ3件を公約レコードとした。大見出しは3項目全体にかかる標語的宣言であり個別の政策の約束ではないためレコード化せず、source_location と本レビューに保持した。プロフィール欄は候補者の経歴の提示であり公約化しなかった（欄内に番号付きの実績項目はない）。3項目のいずれにも数値目標・期限・財源の明示はない。公報は全文が画像（テキスト層なし）のため、登録文は描画画像（200dpi・300dpi）から転記し、複数解像度で照合した。",
+    "last_reviewed_at": "2026-11-22",
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]

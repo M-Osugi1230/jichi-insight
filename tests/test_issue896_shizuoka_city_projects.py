@@ -156,9 +156,16 @@ def test_selected_projects_match_records() -> None:
         assert record["municipality_id"] == MID
         assert record["fiscal_year"] == 2026
         assert record["review_status"] == "reviewed"
-        # Stage 3 of the Shizuoka cluster has not run yet, so no
-        # promise links are registered at this stage.
-        assert record["related_promise_ids"] == []
+        # Stage 3 (Issue #900) linked the co-creation promise to the
+        # citizen-activity measure only; every other measure stays
+        # unlinked.
+        expected_links = (
+            ["jp-local-221007-executive-2023-04-13-promise-003"]
+            if item["project_id"]
+            == "jp-local-221007-project-2026-citizen-activity-support"
+            else []
+        )
+        assert record["related_promise_ids"] == expected_links
     areas = [projects[pid]["policy_area"] for pid in EXPECTED_IDS]
     assert areas == EXPECTED_POLICY_AREAS
 

@@ -740,5 +740,37 @@
     ],
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-shizuoka-city-2023",
+    "executive_term_id": "jp-local-221007-executive-2023-04-13",
+    "searched_at": "2026-11-22",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "shizuoka-city-mayor-election-2023-bulletin"
+    ],
+    "checked_source_ids": [
+      "shizuoka-city-mayor-election-2023-results",
+      "shizuoka-city-mayor-profile",
+      "shizuoka-pref-mayor-term-list",
+      "shizuoka-city-mayor-election-2023-bulletin"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "静岡市長選挙（令和5年4月9日執行）の選挙公報は、選挙期間中は静岡市公式サイトの選挙ページ（384_000097.html）から「令和5年4月9日執行 静岡市長選挙選挙公報」としてPDF（000973077.pdf）がリンクされ公表されていた。現行サイトでは2023年選挙の記録ページに公報への導線がなく当該URLは404であり、旧選挙ページのURLはサイトリニューアルで別ページへ転送される。一方、市の公式URLの Wayback Machine 保存コピーが選挙期間中の2023年3月27日・3月29日・4月9日（投票日）に存在し、3保存分はダイジェスト（DZNM3S4ZQGC4UR55TI2F6I42C2TCR6HQ）が一致し取得ファイルの SHA-256 も一致したため、これを原典として登録した（全2ページ、3,973,474バイト）。1ページ目のなんばたかし候補欄（見出しの下に番号付き3項目とプロフィール）を確認し、分割レビュー（manifesto-review-jp-local-221007-2023）を経て公約レコード3件を作成した。公報は全文が画像でテキスト層はない（抽出文字数0字）ため、登録文は描画画像（200dpi・300dpi）の目視転記を正とし、複数解像度で照合した。選挙公報は候補者提出原稿をそのまま写真製版により印刷した公式文書であり、市の公式URLの保存コピーで実物を確認できたため、公約レコードの confidence は high とした。難波候補の公式サイトには政策ページの所在を確認できなかったが、詳細な政策資料が存在しないと判定するものではない。",
+    "next_actions": [
+      "難波候補の公式サイト等に掲載された詳細な政策資料の安定した所在が特定できれば、登録済みの公約文と照合する",
+      "未接続の公約（現場主義、開かれたわかりやすい市政）について、計画・事業資料への進捗証拠の接続を拡充する",
+      "事業との接続（信頼と共創の市政）は文言・内容に基づく推定であり、市が公約と事業の公式な対応付けを公表した場合は接続を見直す",
+      "2027年4月の任期満了に伴う次回市長選挙では、新任期の公約原文資料として選挙公報を改めて登録する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]

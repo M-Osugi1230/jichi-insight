@@ -1475,10 +1475,21 @@
         "location_note": "静岡県選挙管理委員会『市町長及び議会議員の任期』の静岡市長の行。",
         "decision": "accepted",
         "review_note": "任期満了日（令和9年4月12日）が明記されている。"
+      },
+      {
+        "field": "manifesto_source_ids",
+        "statement": "原典は2023年静岡市長選挙の選挙公報である。選挙期間中は市の公式サイトの選挙ページで公表されていたが、現行サイトからは削除されているため、市の公式URLの Wayback Machine 保存コピー（2023年3月29日保存）で実物を確認し、なんばたかし候補欄（公報1ページ目）から公約3件を転記・登録したため、manifesto_source_ids に接続した。原典探索の記録は manifesto-source-search-shizuoka-city-2023、分割レビューは manifesto-review-jp-local-221007-2023。",
+        "source_ids": [
+          "shizuoka-city-mayor-election-2023-bulletin",
+          "shizuoka-city-mayor-election-2023-results"
+        ],
+        "location_note": "選挙公報PDF（全2ページ）の1ページ目のなんばたかし候補欄。",
+        "decision": "accepted",
+        "review_note": "公報そのものを出典優先順位の最上位として登録した。段階1で未確認としていた公報の所在は、市の公式URLの Wayback Machine 保存コピー（2023年3月27日・3月29日・4月9日の保存分でダイジェスト一致）により確認し、段階3で接続を完了した。"
       }
     ],
     "open_questions": [
-      "2023年市長選の選挙公報PDFの現在の所在と候補者欄のテキスト層の有無は未確認（段階3で確認する）。"
+      "難波候補の公式サイト（市選管の候補者一覧表に掲載された https://www.nanbatakashi.com ）に公報欄の3項目の詳細な政策資料が掲載されていたかは、選挙期間中の保存では確認できていない。詳細資料の安定した所在が特定できれば、登録済みの公約文と照合する。"
     ],
     "review_status": "reviewed"
   },
