@@ -1,0 +1,101 @@
+[
+ {
+  "as_of": "2026-11-22",
+  "assembly_id": "jp-local-041009-assembly-2023",
+  "confidence": "high",
+  "id": "jp-local-041009-assembly-2023-disclosure-2026",
+  "items": [
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "member_roster",
+    "note": "区別議員名簿が公表され、「定数、議員の任期など」のページに定数55人と任期（2023年8月28日から2027年8月27日）が明記されている。",
+    "source_url": "https://gikai.city.sendai.jp/list/district/meibo_kubetu.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_composition",
+    "note": "会派別議員名簿（令和8年9月1日現在）で12会派・54人の構成が公表されている。定数55人との差1人は、若林区選出議員の逝去（2026年8月4日）による欠員である。",
+    "source_url": "https://gikai.city.sendai.jp/list/parties/index.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "committee_composition",
+    "note": "委員会等名簿のページで常任委員会5・議会運営委員会・広報委員会・調査特別委員会5の委員構成が公表されている。",
+    "source_url": "https://gikai.city.sendai.jp/list/committee_member/index.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "proposals_and_results",
+    "note": "会期ごとに会議結果のページで議案等の件名・会派別賛否・結果が公表されている。",
+    "source_url": "https://gikai.city.sendai.jp/result/result/confe_2026/gian_r8_3.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_votes",
+    "note": "会議結果ページの表に12会派の賛否が掲載され、会派内で割れた場合は人数内訳（例：賛成8人反対1人）まで掲載される。",
+    "source_url": "https://gikai.city.sendai.jp/result/result/confe_2026/gian_r8_3.html"
+   },
+   {
+    "availability": "not_published",
+    "granularity": "none",
+    "item": "member_votes",
+    "note": "議員個人別の賛否は公表されていない。公表の単位は会派別までである。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "political_activity_expense_reports",
+    "note": "年度ごとに会派交付分の収支報告書と執行状況一覧が公表されている。令和7年度は会派交付分11単位で、個人交付分は「ございません」と明記されている。",
+    "source_url": "https://gikai.city.sendai.jp/disclosure/activity/yearly/r7/index.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "political_activity_expense_receipts",
+    "note": "領収書等の写しも各会派のページでWeb公表されている（過去5年度分）。",
+    "source_url": "https://gikai.city.sendai.jp/disclosure/activity/yearly/r7/index.html"
+   },
+   {
+    "availability": "not_published",
+    "granularity": "none",
+    "item": "inspection_trip_reports",
+    "note": "委員会視察について、報告書または一覧の形での公式公表は確認できなかった。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "meeting_minutes",
+    "note": "本会議・委員会の会議録が会議録検索システムで公表されている。",
+    "source_url": "https://www.city.sendai.miyagi.dbsr.jp/"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "session_broadcast",
+    "note": "本会議のインターネット中継・録画配信が行われている。",
+    "source_url": "https://sendai-city.stream.jfit.co.jp/"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "petition_results",
+    "note": "請願の結論は会議結果ページに掲載される。令和8年第3回定例会の会議結果には請願の掲載がなく、結論のあった請願は0件だった。陳情は原則として写しを各会派へ配付する扱いで、本会議の結論は公表されない。",
+    "source_url": "https://gikai.city.sendai.jp/result/result/confe_2026/gian_r8_3.html"
+   }
+  ],
+  "review_status": "reviewed",
+  "sources": [
+   "sendai-city-assembly-roster",
+   "sendai-city-assembly-factions",
+   "sendai-city-assembly-results-2026-09",
+   "sendai-city-assembly-seimu-2025"
+  ]
+ }
+]

@@ -1,0 +1,78 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "assembly",
+    "location_note": "「定数、議員の任期など」ページ",
+    "review_note": null,
+    "source_ids": [
+     "sendai-city-assembly-roster"
+    ],
+    "statement": "仙台市議会の議員定数は55人（青葉区15人・宮城野区10人・若林区7人・太白区12人・泉区11人）。現議員の任期は令和5年8月28日から令和9年8月27日まで。議長は野田譲。"
+   },
+   {
+    "decision": "accepted",
+    "field": "faction_composition",
+    "location_note": "会派別議員名簿（令和8年9月1日現在）、会議結果ページの表頭、区別議員名簿、議会事務局記者発表資料",
+    "review_note": null,
+    "source_ids": [
+     "sendai-city-assembly-factions",
+     "sendai-city-assembly-results-2026-09",
+     "sendai-city-assembly-district-roster",
+     "sendai-city-assembly-obituary-2026-08"
+    ],
+    "statement": "会派別賛否表の会派人数の合計は54人で、定数55人との差は1人である。照合の結果、この差は欠員1人によるものと確定した。若林区選出の仁平覚子議員（仙台維新）が令和8年8月4日に逝去したことが、議会事務局の記者発表資料「市議会議員の訃報について」（令和8年8月5日）で公表されており、区別議員名簿でも若林区は定数7人に対し6人のみが掲載されている。会派構成は令和8年9月1日現在の会派別議員名簿と会議結果ページの表頭が一致する（12会派・54人）。なお令和7年度時点では仙台維新（3人）と維新の会仙台市議団（2人）だった維新系は、逝去後に日本維新の会（2人）と新政SENDAI（2人）へ再編されている。"
+   },
+   {
+    "decision": "accepted",
+    "field": "session",
+    "location_note": "令和8年第3回定例会の日程ページ",
+    "review_note": null,
+    "source_ids": [
+     "sendai-city-assembly-schedule-2026-09"
+    ],
+    "statement": "令和8年第3回定例会の会期は2026年9月4日（本会議初日）から10月8日（本会議最終日）まで。本会議は初日・代表質疑（9月10・11日）・一般質問（9月14〜16日）・最終日のみで、常任委員会（9月17日）と決算等審査特別委員会（9月18日〜10月6日）の審査後に開かれる本会議は最終日だけである。このため全議案の議決日は2026年10月8日で、議員提出議案については意見書・決議ページにも議決年月日（令和8年10月8日）が明記されている。"
+   },
+   {
+    "decision": "accepted",
+    "field": "proposals",
+    "location_note": "会議結果ページ",
+    "review_note": null,
+    "source_ids": [
+     "sendai-city-assembly-results-2026-09"
+    ],
+    "statement": "登録範囲は市長提出議案41件（第91〜131号議案：決算認定7件・補正予算3件・条例9件・その他18件・人事4件）と議員提出議案6件（意見書4件・決議2件）の計47件。令和7年度決算（第91〜97号）は全て認定された。賛否は会議結果ページの会派別賛否表を正本とし、同一行にまとめられた議案は議案ごとに票決レコードを作成した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "petitions",
+    "location_note": "会議結果ページおよび市議会ガイド「請願・陳情」",
+    "review_note": null,
+    "source_ids": [
+     "sendai-city-assembly-results-2026-09",
+     "sendai-city-assembly-petition-guide"
+    ],
+    "statement": "仙台市議会では請願は委員会の審査を経て本会議で結論を出し、結論は会議結果ページに掲載される（令和8年第2回定例会では第1号請願の不採択が掲載された）。本会期（第3回定例会）の会議結果ページには請願の掲載がなく、本会期に結論のあった請願は0件だったため、請願レコードは登録していない。陳情は、請願に適合するもののみ請願と同様に扱われ、それ以外は写しが各会派へ配付される扱いで、本会議の結論は公表されない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "political_activity_expenses",
+    "location_note": "政務活動費の制度案内ページおよび令和7年度ページ",
+    "review_note": null,
+    "source_ids": [
+     "sendai-city-assembly-seimu-2025"
+    ],
+    "statement": "政務活動費は議員1人あたり月額35万円を上限に、会派交付と個人交付の二層で四半期ごとに交付される。令和7年度は会派交付分11単位の収支報告書が公表され、個人交付分は「ございません」と明記されている。収支報告書と領収書等の写しは過去5年度分がWeb公表されている。"
+   }
+  ],
+  "id": "evidence-jp-local-041009-assembly-2023",
+  "open_questions": [
+   "会議録検索システムでの本会議議事の個別照合は、アクセス集中による制限のため本登録では実施していない。議決日は意見書・決議ページの議決年月日と会期日程から確定した。",
+   "令和8年第4回定例会以降の議案・賛否は、Issue #706の更新サイクルで追加登録する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-041009-assembly-2023",
+  "subject_type": "assembly"
+ }
+]
