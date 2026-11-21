@@ -1,0 +1,100 @@
+[
+ {
+  "as_of": "2026-11-21",
+  "assembly_id": "jp-local-121002-assembly-2023",
+  "confidence": "high",
+  "id": "jp-local-121002-assembly-2023-disclosure-2026",
+  "items": [
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_roster",
+    "note": "議員名簿は区ごとの議員紹介ページで公表され、会派別名簿（PDF）も公表されている。",
+    "source_url": "https://www.city.chiba.jp/sogoseisaku/shichokoshitsu/hisho/hodo/documents/230501-3-2.pdf"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_composition",
+    "note": "会派別名簿及び政務活動費の公表ページで会派構成が確認できる。登録した構成は令和8年4月1日時点のものである。",
+    "source_url": "https://www.city.chiba.jp/sogoseisaku/shichokoshitsu/hisho/hodo/documents/230501-3-2.pdf"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "committee_composition",
+    "note": "各委員会のページに委員名簿が掲載されている。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "proposals_and_results",
+    "note": "会期ごとに市長提出・議員提出議案の議決結果表が公表されている。",
+    "source_url": "https://www.city.chiba.jp/shigikai/kanrenrink2603.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_votes",
+    "note": "議決結果（賛否）表に会派別の賛否が掲載されている。市のFAQでは「会派の賛否はHPでは公開していない」と案内されているが、実際の議決結果表には掲載されており、実物を正本とした。",
+    "source_url": "https://www.city.chiba.jp/shigikai/sichoteisyutu2603.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_votes",
+    "note": "無所属議員4名については議決結果表に個人名列で賛否が公表されている。会派所属議員の個人別の賛否は公表されていない。",
+    "source_url": "https://www.city.chiba.jp/shigikai/sichoteisyutu2603.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "political_activity_expense_reports",
+    "note": "会派分・議員分の収支報告書（画像）及び支出明細書が年度別ページで公表されている（令和2年度から令和7年度分）。",
+    "source_url": "https://www.city.chiba.jp/shigikai/seimukatudou-r7.html"
+   },
+   {
+    "availability": "restricted",
+    "granularity": "document",
+    "item": "political_activity_expense_receipts",
+    "note": "領収書等の証拠書類はWeb公開されておらず、議会事務局で過去5年分を閲覧できる（写しの交付は1枚10円）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "inspection_trip_reports",
+    "note": "委員会の活動状況ページに行政視察報告が掲載され、報告書（PDF）が添付されている。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "meeting_minutes",
+    "note": "会議録検索システムで本会議・委員会の会議録が公開されている。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "session_broadcast",
+    "note": "本会議のインターネット中継（ライブ・録画）が実施されている。",
+    "source_url": "https://www.city.chiba.jp/shigikai/kanrenrink2603.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "petition_results",
+    "note": "請願の議決結果と会派別・無所属議員の賛否、陳情の委員会審査結果が会期ごとに公表されている。",
+    "source_url": "https://www.city.chiba.jp/shigikai/seichin0803.html"
+   }
+  ],
+  "review_status": "reviewed",
+  "sources": [
+   "chiba-city-assembly-session-2026-09",
+   "chiba-city-assembly-mayor-bills-2026-09",
+   "chiba-city-assembly-seimu-2025"
+  ]
+ }
+]
