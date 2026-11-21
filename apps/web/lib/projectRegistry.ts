@@ -8,6 +8,16 @@ import chibaCitySelection from "../../../data/catalog/chiba_city_priority_projec
 import chibaCityProjects from "../../../data/reviewed/chiba-city/projects.json";
 import chibaCityKpis from "../../../data/reviewed/chiba-city/project_kpis.json";
 import chibaCityEvidence from "../../../data/reviewed/chiba-city/project_evidence_packets.json";
+import chibaProjectSources from "../../../data/catalog/chiba_project_sources.json";
+import chibaSelection from "../../../data/catalog/chiba_priority_project_selection.json";
+import chibaProjects from "../../../data/reviewed/chiba-prefecture/projects.json";
+import chibaKpis from "../../../data/reviewed/chiba-prefecture/project_kpis.json";
+import chibaEvidence from "../../../data/reviewed/chiba-prefecture/project_evidence_packets.json";
+import chibaCityProjectSources from "../../../data/catalog/chiba_city_project_sources.json";
+import chibaCitySelection from "../../../data/catalog/chiba_city_priority_project_selection.json";
+import chibaCityProjects from "../../../data/reviewed/chiba-city/projects.json";
+import chibaCityKpis from "../../../data/reviewed/chiba-city/project_kpis.json";
+import chibaCityEvidence from "../../../data/reviewed/chiba-city/project_evidence_packets.json";
 import saitamaProjectSources from "../../../data/catalog/saitama_project_sources.json";
 import saitamaSelection from "../../../data/catalog/saitama_priority_project_selection.json";
 import saitamaProjects from "../../../data/reviewed/saitama-prefecture/projects.json";
@@ -96,6 +106,8 @@ export type ProjectArea = "fukuoka-prefecture" | "osaka-prefecture" | "osaka-cit
 type Selection = { updated_at?: string; population?: { description?: string; label?: string }; selection_rule?: { description?: string } | string; };
 type SetOfProjects = { name: string; projects: ProjectRecord[]; kpis: KpiRecord[]; evidencePackets: EvidencePacket[]; selection: Selection };
 export const projectRegistry: Record<ProjectArea, SetOfProjects> = {
+  "chiba-prefecture": { name: "千葉県", projects: chibaProjects as ProjectRecord[], kpis: chibaKpis as KpiRecord[], evidencePackets: chibaEvidence as EvidencePacket[], selection: chibaSelection },
+  "chiba-city": { name: "千葉市", projects: chibaCityProjects as ProjectRecord[], kpis: chibaCityKpis as KpiRecord[], evidencePackets: chibaCityEvidence as EvidencePacket[], selection: chibaCitySelection },
   "chiba-prefecture": { name: "千葉県", projects: chibaProjects as ProjectRecord[], kpis: chibaKpis as KpiRecord[], evidencePackets: chibaEvidence as EvidencePacket[], selection: chibaSelection },
   "chiba-city": { name: "千葉市", projects: chibaCityProjects as ProjectRecord[], kpis: chibaCityKpis as KpiRecord[], evidencePackets: chibaCityEvidence as EvidencePacket[], selection: chibaCitySelection },
   "saitama-prefecture": { name: "埼玉県", projects: saitamaProjects as ProjectRecord[], kpis: saitamaKpis as KpiRecord[], evidencePackets: saitamaEvidence as EvidencePacket[], selection: saitamaSelection },
