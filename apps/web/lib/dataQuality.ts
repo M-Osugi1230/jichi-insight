@@ -38,6 +38,10 @@ import kawaguchiFiscalRecords from "../../../data/reviewed/kawaguchi-city/fiscal
 import kawaguchiSettlementRecords from "../../../data/reviewed/kawaguchi-city/settlement_records.json";
 import kawaguchiFiscalEvidence from "../../../data/reviewed/kawaguchi-city/evidence_packets.json";
 import kawaguchiSettlementEvidence from "../../../data/reviewed/kawaguchi-city/settlement_evidence_packets.json";
+import sendaiCityFiscalRecords from "../../../data/reviewed/sendai-city/fiscal_records.json";
+import sendaiCitySettlementRecords from "../../../data/reviewed/sendai-city/settlement_records.json";
+import sendaiCityFiscalEvidence from "../../../data/reviewed/sendai-city/evidence_packets.json";
+import sendaiCitySettlementEvidence from "../../../data/reviewed/sendai-city/settlement_evidence_packets.json";
 import kawasakiFiscalRecords from "../../../data/reviewed/kawasaki-city/fiscal_records.json";
 import kawasakiFiscalEvidence from "../../../data/reviewed/kawasaki-city/evidence_packets.json";
 import yokohamaFiscalRecords from "../../../data/reviewed/yokohama-city/fiscal_records.json";
@@ -111,6 +115,7 @@ const municipalityNames: Record<MunicipalityKey, string> = {
   "kitakyushu-city": "北九州市",
   "nagoya-city": "名古屋市",
   "toyota-city": "豊田市",
+  "sendai-city": "仙台市",
 };
 
 const municipalityKeys = Object.keys(municipalityNames) as MunicipalityKey[];
@@ -138,6 +143,7 @@ const recordsByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFin
   "kitakyushu-city": kitakyushuFinance.records,
   "nagoya-city": nagoyaCityFinance.records,
   "toyota-city": toyotaCityFinance.records,
+  "sendai-city": [...sendaiCityFiscalRecords, ...sendaiCitySettlementRecords] as typeof fukuokaPrefectureFinance.records,
 };
 const evidenceByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFinance.evidencePackets> = {
   "kawasaki-city": kawasakiFiscalEvidence as typeof fukuokaPrefectureFinance.evidencePackets,
@@ -163,6 +169,7 @@ const evidenceByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFi
   "kitakyushu-city": kitakyushuFinance.evidencePackets,
   "nagoya-city": nagoyaCityFinance.evidencePackets,
   "toyota-city": toyotaCityFinance.evidencePackets,
+  "sendai-city": [...sendaiCityFiscalEvidence, ...sendaiCitySettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
 };
 const fiscalRecords = Object.values(recordsByMunicipality).flat();
 const evidencePackets = Object.values(evidenceByMunicipality).flat();

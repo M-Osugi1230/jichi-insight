@@ -1313,6 +1313,68 @@
     "review_status": "reviewed"
   },
   {
+    "id": "evidence-sendai-city-current-mayor-term",
+    "subject_type": "executive_term",
+    "subject_id": "jp-local-041009-executive-2025-08-22",
+    "claims": [
+      {
+        "field": "person_name",
+        "statement": "郡 和子は現職の仙台市長であり、3期目である。",
+        "source_ids": [
+          "sendai-city-mayor-election-2025-results",
+          "sendai-city-mayors-history-page"
+        ],
+        "location_note": "仙台市選挙管理委員会の開票結果および仙台市公式サイト『歴代市長』（第37代として記載）。",
+        "decision": "accepted",
+        "review_note": "現職性と期数は市および市選管の公式資料に基づく。"
+      },
+      {
+        "field": "election_date",
+        "statement": "直近の選挙は2025年8月3日執行の仙台市長選挙（任期満了に伴う選挙）で、郡和子が204,844票で当選した。次点は松本剛83,353票、有効投票は322,381票、投票率は36.83%であった。得票数は市選管の公式開票結果で現在も確認できる。首長レコード自体に得票数の項目はないため、得票数はこの証拠パケットにのみ記録する。",
+        "source_ids": [
+          "sendai-city-mayor-election-2025-results"
+        ],
+        "location_note": "仙台市選挙管理委員会の開票結果PDF（区別内訳を含む）。",
+        "decision": "accepted",
+        "review_note": "得票数は開票結果PDFを直接読み取り、5区の内訳（青葉区54,049票、宮城野区31,572票、若林区28,368票、太白区45,980票、泉区44,875票）の合計とも一致することを照合した。"
+      },
+      {
+        "field": "term_start",
+        "statement": "任期開始日は2025年8月22日である。仙台市公式サイト『歴代市長』は第37代市長の就任日を令和7年8月22日、第36代の満期を令和7年8月21日と明記する。本選挙は任期満了による選挙として満了日より前に執行されたため、公職選挙法第259条ただし書の構成（任期は前任期満了日の翌日から起算）とも一致する。",
+        "source_ids": [
+          "sendai-city-mayors-history-page"
+        ],
+        "location_note": "仙台市公式サイト『歴代市長』の第36代・第37代の記載。",
+        "decision": "accepted",
+        "review_note": "開始日は市の公式明記と法令の構成の一致で確定した。"
+      },
+      {
+        "field": "term_end",
+        "statement": "任期満了日は2029年8月21日である。宮城県選挙管理委員会『市町村長・議会議員等任期満了一覧』（令和8年10月22日現在）に仙台市長の任期満了が令和11年8月21日と明記されており、開始日（2025年8月22日）に地方自治法第140条の4年を加えた満了日とも一致する。他自治体で未了として残る県選管一覧での明記照合は、仙台市長については本登録で完了した。",
+        "source_ids": [
+          "sendai-city-mayor-term-expiry-list"
+        ],
+        "location_note": "宮城県選挙管理委員会『市町村長・議会議員等任期満了一覧』の仙台市長の欄。",
+        "decision": "accepted",
+        "review_note": "満了日は県選管一覧の明記をPDF本体で直接照合して確定した。"
+      },
+      {
+        "field": "manifesto_source_ids",
+        "statement": "郡和子市長の公約原文資料は段階1では登録しない。2025年仙台市長選挙の選挙公報の現在の公表所在は棚卸し（Issue #873）時点で未確認であり、宮城クラスター段階3（公約登録）で実物を確認したうえで接続する。",
+        "source_ids": [
+          "sendai-city-mayor-election-2025-results-page"
+        ],
+        "location_note": "仙台市選挙管理委員会の市長選挙ページ群には、現時点で選挙公報への導線を確認していない。",
+        "decision": "accepted",
+        "review_note": "「公約が存在しない」という主張ではなく、段階3で原典を確認してから接続するための未登録である。"
+      }
+    ],
+    "open_questions": [
+      "2025年市長選挙の選挙公報の現在の公表所在を確認し、宮城クラスター段階3（公約登録）で manifesto_source_ids に接続すること。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
     "id": "evidence-miyagi-pref-current-governor-term",
     "subject_type": "executive_term",
     "subject_id": "jp-local-040002-executive-2025-11-21",

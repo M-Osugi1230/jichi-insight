@@ -106,6 +106,7 @@ export type ManifestoSourceSearchEvidencePacket = {
 const municipalityIdToKey = {
   "jp-local-040002": "miyagi-prefecture",
   "jp-local-281000": "kobe-city",
+  "jp-local-041009": "sendai-city",
   "jp-local-280003": "hyogo-prefecture",
   "jp-local-121002": "chiba-city",
   "jp-local-120006": "chiba-prefecture",

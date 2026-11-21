@@ -34,7 +34,8 @@ export type MunicipalityKey =
   | "chiba-city"
   | "hyogo-prefecture"
   | "kobe-city"
-  | "miyagi-prefecture";
+  | "miyagi-prefecture"
+  | "sendai-city";
 export type SourceRecord = {
   id: string;
   municipality_key: MunicipalityKey;
@@ -216,6 +217,12 @@ export const municipalityMeta: Record<
     status: "財政データ公開",
     href: "/municipalities/toyota-city",
     fiscalSummary: "Reviewed 3項目（当初予算1件・決算2件）",
+  },
+  "sendai-city": {
+    name: "仙台市", type: "政令指定都市",
+    summary: "仙台市基本計画2021-2030と実施計画、2026年度成立後当初予算、2022〜2024年度の普通会計決算に加え、郡 和子市長の現任期を公式出典で確認します。公約原文は未登録です。自治体別ページは準備中です。",
+    status: "財政データ公開", href: null,
+    fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
   },
 };
 

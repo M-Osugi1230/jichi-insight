@@ -86,7 +86,12 @@ def test_sendai_completion_counts_are_derived_from_reviewed_records():
     assert counts["citizen_survey_priority_items"] == len(
         survey_priority["items"]
     ) == 26
-    assert counts["fiscal_top_line_records"] == len(fiscal) == 3
+    # The completion catalog is the Phase 13 snapshot (3 top-line
+    # fiscal records at completion). The Miyagi cluster stage 1
+    # (Issue #874) later added the FY2026 local-tax record, so the
+    # current fiscal file holds 4 records.
+    assert counts["fiscal_top_line_records"] == 3
+    assert len(fiscal) == 4
 
 
 def test_sendai_completion_evidence_covers_declared_record_packages():

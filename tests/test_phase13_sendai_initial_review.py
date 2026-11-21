@@ -49,7 +49,7 @@ def test_sendai_reviewed_sources_are_official_and_declared_by_municipality():
     source_records = load(SOURCE_PATH)["records"]
     source_map = {record["id"]: record for record in source_records}
 
-    assert len(source_map) == 8
+    assert len(source_map) == 9
     assert set(municipality["sources"]) == set(source_map)
     assert all(record["organization"] == "仙台市" for record in source_records)
     assert all(
@@ -77,10 +77,16 @@ def test_sendai_fiscal_records_preserve_budget_and_settlement_states():
     budget = records["jp-local-041009-fiscal-2026-total-revenue"]
     assert budget["stage"] == "initial_budget"
     assert budget["metric"] == "total_revenue"
-    assert budget["amount_yen"] == 730_600_000_000
+    # The amount was corrected at the Miyagi cluster stage 1
+    # (Issue #874): the Phase 13 registration used the rounded
+    # announcement figure (7,306億円 = 730,600,000,000円), while the
+    # enacted budget bill itself (第14号議案, Article 1) states
+    # 730,647,000千円.
+    assert budget["amount_yen"] == 730_647_000_000
     assert set(budget["sources"]) == {
         "sendai-city-budget-2026-announcement",
         "sendai-city-budget-2026-enactment-page",
+        "sendai-city-budget-2026-bill",
     }
     assert "原案通り可決" in budget["note"]
 
@@ -102,7 +108,9 @@ def test_sendai_fiscal_records_have_one_to_one_reviewed_evidence():
     packets = load(EVIDENCE_PATH)
     packet_map = {packet["subject_id"]: packet for packet in packets}
 
-    assert len(records) == len(packets) == 3
+    # 3 records at the Phase 13 review; the Miyagi cluster stage 1
+    # (Issue #874) added the FY2026 local-tax record.
+    assert len(records) == len(packets) == 4
     assert set(packet_map) == {record["id"] for record in records}
     assert all(validate(packet, EVIDENCE_SCHEMA_PATH) == [] for packet in packets)
     assert all(packet["subject_type"] == "fiscal_record" for packet in packets)
