@@ -1,0 +1,102 @@
+[
+ {
+  "as_of": "2026-11-22",
+  "assembly_id": "jp-local-221007-assembly-2025",
+  "confidence": "high",
+  "id": "jp-local-221007-assembly-2025-disclosure-2026",
+  "items": [
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "member_roster",
+    "note": "区別名簿（3区）のページに葵区17人・駿河区15人・清水区16人（定数48人）が公表されている。",
+    "source_url": "https://www.city.shizuoka.lg.jp/gikai/s006683.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_composition",
+    "note": "会派別名簿（令和8年9月1日現在）で9会派・48人の構成が公表されている。欠員はない。",
+    "source_url": "https://www.city.shizuoka.lg.jp/documents/6545/20260901_kaihabetsumeibo.pdf"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "committee_composition",
+    "note": "常任委員会名簿・議会運営委員会名簿・特別委員会名簿（令和8年4月27日現在）で委員構成が公表されている。",
+    "source_url": "https://www.city.shizuoka.lg.jp/gikai/s006677.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "proposals_and_results",
+    "note": "審議結果のページに会期ごとの議案結果PDFと請願・陳情結果PDFが公表されている。",
+    "source_url": "https://www.city.shizuoka.lg.jp/gikai/s006689.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_votes",
+    "note": "議案結果PDFに9会派の賛否が掲載される（○賛成・×反対・△賛否双方あり・－欠席）。",
+    "source_url": "https://www.city.shizuoka.lg.jp/documents/6558/202609gatu_gigetukekka2.pdf"
+   },
+   {
+    "availability": "not_published",
+    "granularity": "none",
+    "item": "member_votes",
+    "note": "議員個人別の賛否は公表されていない。公表の単位は会派別までである。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "political_activity_expense_reports",
+    "note": "令和7年度は8会派分の収支報告書・会計帳簿・活動概要報告書がWeb公表されている（2026年6月30日公開）。",
+    "source_url": "https://www.city.shizuoka.lg.jp/gikai/s006793.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "political_activity_expense_receipts",
+    "note": "領収書等も会派ごとに月別のPDFでWeb公表されている。",
+    "source_url": "https://www.city.shizuoka.lg.jp/gikai/s006793.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "inspection_trip_reports",
+    "note": "委員会視察は年次の「静岡市議会活動報告」に一覧（委員会名・視察日・視察先・内容）が掲載される。個別の視察報告書の単独公表はない。",
+    "source_url": "https://www.city.shizuoka.lg.jp/gikai/s900224.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "meeting_minutes",
+    "note": "本会議・委員会の会議録が会議録検索システムで公表されている（会議録のページから外部システムへリンク）。",
+    "source_url": "https://www.city.shizuoka.lg.jp/gikai/s006790.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "session_broadcast",
+    "note": "本会議のインターネット中継・録画映像の検索と閲覧が行われている（外部システム）。",
+    "source_url": "https://www.city.shizuoka.lg.jp/gikai/s006790.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "petition_results",
+    "note": "請願・陳情の結論は審議結果（請願・陳情）PDFに掲載される。請願には会派別賛否も議案結果PDFに掲載されるが、陳情には会派別内訳は掲載されない。",
+    "source_url": "https://www.city.shizuoka.lg.jp/documents/6558/202609gatu_seigan_tinjyo.pdf"
+   }
+  ],
+  "review_status": "reviewed",
+  "sources": [
+   "shizuoka-city-assembly-roster",
+   "shizuoka-city-assembly-factions",
+   "shizuoka-city-assembly-results-page",
+   "shizuoka-city-assembly-seimu-2025",
+   "shizuoka-city-assembly-minutes"
+  ]
+ }
+]
