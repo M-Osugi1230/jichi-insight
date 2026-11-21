@@ -1,0 +1,98 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "assembly",
+    "location_note": "会派別名簿及び政務活動費ページの注記（会派名称・所属議員は令和8年4月1日時点）",
+    "review_note": null,
+    "source_ids": [
+     "chiba-city-assembly-roster",
+     "chiba-city-assembly-seimu-2025"
+    ],
+    "statement": "千葉市議会。定数50人、任期は2023年5月1日から2027年4月30日。会派構成（令和8年4月1日時点）は自由民主党17人・立憲民主・無所属11人・公明党8人・日本共産党7人・日本維新の会ちば3人・無所属4人で、合計50人と一致する。会派名は議決結果（賛否）表の表頭表記を用い、正式名称は自由民主党千葉市議会議員団・立憲民主・無所属千葉市議会議員団・公明党千葉市議会議員団・日本共産党千葉市議会議員団・日本維新の会ちばである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "session",
+    "location_note": "令和8年第3回定例会関連ページへのリンク集の日程表",
+    "review_note": null,
+    "source_ids": [
+     "chiba-city-assembly-session-2026-09"
+    ],
+    "statement": "対象会期は令和8年第3回定例会（2026年9月7日から10月5日）。本会議は9月7日・8日・17日・10月5日に開かれ、議案の採決は9月17日と10月5日に行われた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "proposals",
+    "location_note": "各議決結果表の行数により確認",
+    "review_note": null,
+    "source_ids": [
+     "chiba-city-assembly-mayor-bills-2026-09",
+     "chiba-city-assembly-member-bills-2026-09",
+     "chiba-city-assembly-petitions-2026-09"
+    ],
+    "statement": "議案等は57件。市長提出議案46件（議案第110号から第155号）、議員提出議案（意見書）6件（発議第9号から第14号）、請願3件（請願第3号から第5号）、陳情2件（陳情第3号・第4号）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "votes",
+    "location_note": "各議決結果（賛否）表",
+    "review_note": null,
+    "source_ids": [
+     "chiba-city-assembly-mayor-bills-2026-09",
+     "chiba-city-assembly-member-bills-2026-09",
+     "chiba-city-assembly-petitions-2026-09"
+    ],
+    "statement": "本会議で表決された55件について表決記録を登録した（会派別賛否275件、無所属議員の個人別賛否220件）。陳情2件は委員会審査のみで本会議の表決対象ではなく、賛否は公表されていないため表決記録は登録していない。会派所属議員の個人別の賛否は公表されていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "expenses",
+    "location_note": "令和7年度交付分（政務活動費収支報告書）ページ及び各収支報告書",
+    "review_note": null,
+    "source_ids": [
+     "chiba-city-assembly-seimu-2025"
+    ],
+    "statement": "政務活動費は令和7年度（2025年度）交付分の収支報告書48単位（会派分5・議員分43）を登録した。日本共産党千葉市議会議員団は全額を会派交付とするため議員分はない。全単位で科目合計・収入合計・残余額の検算を行い、不一致がある単位は公表値どおり登録して個別の証拠パケットに明記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "inspections",
+    "location_note": "各委員会の活動状況ページ及び行政視察報告ページ",
+    "review_note": null,
+    "source_ids": [
+     "chiba-city-assembly-committee-soumu",
+     "chiba-city-assembly-committee-hoken",
+     "chiba-city-assembly-committee-kankyo",
+     "chiba-city-assembly-committee-kyouiku",
+     "chiba-city-assembly-committee-toshi",
+     "chiba-city-assembly-committee-toshi-past",
+     "chiba-city-assembly-committee-bousai",
+     "chiba-city-assembly-committee-daitoshi"
+    ],
+    "statement": "行政視察は現任期（2023年5月以降）に実施され委員会ページから到達できる26件を登録した。参加者は各報告書の出席者・視察委員名簿から転記し、費用は公表されていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "disclosure",
+    "location_note": "千葉市議会の各公開ページ",
+    "review_note": null,
+    "source_ids": [
+     "chiba-city-assembly-session-2026-09",
+     "chiba-city-assembly-seimu-2025"
+    ],
+    "statement": "公開プロファイルの12項目は、議員名簿・議決結果表・政務活動費ページ・委員会ページ・会議録検索システム等の実物を確認して評価した。"
+   }
+  ],
+  "id": "evidence-jp-local-121002-assembly-2023",
+  "open_questions": [
+   "政務活動費は令和2年度から令和6年度分もWeb公開されている。今回の登録は令和7年度分のみであり、過年度分の追加登録は更新サイクル（Issue #706）の対象とする。",
+   "会派構成は時点により変動する。登録した構成は令和8年4月1日時点（政務活動費ページの注記）であり、令和5年5月1日時点の会派別名簿とは内訳が異なる。",
+   "市のFAQでは会派の賛否はHPで公開していないと案内されているが、議決結果表には掲載されている。案内と実物の食い違いは市の側の更新待ちである。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-121002-assembly-2023",
+  "subject_type": "assembly"
+ }
+]
