@@ -112,7 +112,7 @@ def test_discovery_gates_require_matching_reviewed_municipalities():
         assert f"const municipalityId = {source}.id" in DISCOVERY
         assert "project.municipality_id === municipalityId" in DISCOVERY
         assert f'const entry = assemblies["{slug}"]' in DISCOVERY
-        assert 'entry.assembly.municipality_id === municipalityId' in DISCOVERY
+        assert 'entry.assembly.id.startsWith(municipalityId + "-assembly-")' in DISCOVERY
     assert 'promises: hasReviewedExecutivePromises(municipalityId)' in DISCOVERY
     assert 'assembly: hasAssembly, projects: hasProjects' in DISCOVERY
     assert 'key: "hyogo-prefecture", finance: hasFinance' in DISCOVERY

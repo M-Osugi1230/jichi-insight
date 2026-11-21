@@ -5,7 +5,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 WEB = ROOT / "apps" / "web"
-PAGE = (WEB / "app" / "municipalities" / "hyogo-prefecture" / "page.tsx").read_text(encoding="utf-8")
+PAGE = (
+    WEB / "app" / "municipalities" / "hyogo-prefecture" / "page.tsx"
+).read_text(encoding="utf-8")
 REGISTRY = (WEB / "lib" / "assemblyRegistry.ts").read_text(encoding="utf-8")
 INDEX = (WEB / "app" / "assemblies" / "page.tsx").read_text(encoding="utf-8")
 DETAIL = (WEB / "app" / "assemblies" / "[slug]" / "page.tsx").read_text(encoding="utf-8")
@@ -47,11 +49,20 @@ def test_executive_terms_votes_and_promises_are_verbatim_reviewed_facts():
         ("jp-local-281000", "mayor", "久元 喜造", "2025-11-20", "2029-11-19", "275,273票", 28),
     )
     for municipality_id, office, name, start, end, vote, count in rows:
-        term = next(t for t in terms if t["municipality_id"] == municipality_id and t["office"] == office and t["status"] == "current")
+        term = next(
+            t for t in terms
+            if t["municipality_id"] == municipality_id
+            and t["office"] == office and t["status"] == "current"
+        )
         assert (term["person_name"], term["term_start"], term["term_end"]) == (name, start, end)
-        assert len([p for p in promises if p["executive_term_id"] == term["id"] and p["review_status"] == "reviewed"]) == count
+        assert len([
+            p for p in promises
+            if p["executive_term_id"] == term["id"] and p["review_status"] == "reviewed"
+        ]) == count
         evidence = next(p for p in packets if p["subject_id"] == term["id"])
-        assert vote in next(c["statement"] for c in evidence["claims"] if c["field"] == "election_date")
+        assert vote in next(
+            c["statement"] for c in evidence["claims"] if c["field"] == "election_date"
+        )
         assert vote in PAGE
     assert "governorPromises.length" in PAGE
     assert "mayorPromises.length" in PAGE

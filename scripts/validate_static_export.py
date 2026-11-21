@@ -1460,8 +1460,10 @@ def validate_hyogo_web_finish_data_facts() -> None:
     promises = load_json(ROOT / "data" / "entities" / "executives" / "promises.json")
     evidence = load_json(ROOT / "data" / "entities" / "executives" / "evidence_packets.json")
     for municipality_id, office, name, start, end, election, count, vote in (
-        ("jp-local-280003", "governor", "斎藤 元彦", "2024-11-17", "2028-11-16", "2024-11-17", 18, "1,113,911票"),
-        ("jp-local-281000", "mayor", "久元 喜造", "2025-11-20", "2029-11-19", "2025-10-26", 28, "275,273票"),
+        ("jp-local-280003", "governor", "斎藤 元彦", "2024-11-17", "2028-11-16",
+         "2024-11-17", 18, "1,113,911票"),
+        ("jp-local-281000", "mayor", "久元 喜造", "2025-11-20", "2029-11-19",
+         "2025-10-26", 28, "275,273票"),
     ):
         term = next(record for record in terms
                     if record["municipality_id"] == municipality_id
@@ -1475,7 +1477,9 @@ def validate_hyogo_web_finish_data_facts() -> None:
                              and record["review_status"] in ("reviewed", "verified")]
         assert len(reviewed_promises) == count
         packet = next(record for record in evidence if record["subject_id"] == term["id"])
-        election_claim = next(claim for claim in packet["claims"] if claim["field"] == "election_date")
+        election_claim = next(
+            claim for claim in packet["claims"] if claim["field"] == "election_date"
+        )
         assert vote in election_claim["statement"]
 
     for slug, municipality_id, name, seats, proposals, votes, factions, expenses, trips in (
@@ -1557,14 +1561,36 @@ def validate_hyogo_web_finish_export() -> list[str]:
         projects = load_json(
             ROOT / "data" / "reviewed" / "hyogo-prefecture" / "projects.json"
         )
-        section = re.search(
-            r'<section\b(?=[^>]*\bid="priority-projects")[^>]*>(.*?)</section>',
-            html, flags=re.DOTALL,
+        section_match = re.search(
+            r'<section\b(?=[^>]*\bid="priority-projects")[^>]*>',
+            html,
         )
-        if section:
+        section_body = None
+        if section_match:
+            depth = 1
+            pos = section_match.end()
+            tag_re = re.compile(r'</?section\b[^>]*>')
+            while depth and pos < len(html):
+                tag = tag_re.search(html, pos)
+                if tag is None:
+                    break
+                if tag.group(0).startswith("</"):
+                    depth -= 1
+                    if depth == 0:
+                        section_body = html[section_match.end():tag.start()]
+                else:
+                    depth += 1
+                pos = tag.end()
+        if section_body is not None:
             for record in projects:
-                if record["review_status"] == "reviewed" and record["official_title"] not in section.group(1):
-                    failures.append(f"Hyogo dedicated project section missing official title: {record['official_title']}")
+                if (
+                    record["review_status"] == "reviewed"
+                    and record["official_title"] not in section_body
+                ):
+                    failures.append(
+                        "Hyogo dedicated project section missing official title: "
+                        f"{record['official_title']}"
+                    )
         else:
             failures.append("Hyogo dedicated page missing priority-projects section")
 

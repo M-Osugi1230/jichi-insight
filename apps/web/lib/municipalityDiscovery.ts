@@ -77,7 +77,7 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
     const entry = assemblies["hyogo-prefecture"];
     const hasAssembly = entry.assembly.review_status === "reviewed" &&
       entry.disclosure.review_status === "reviewed" &&
-      entry.assembly.municipality_id === municipalityId;
+      entry.assembly.id.startsWith(municipalityId + "-assembly-");
     return {
       key: "hyogo-prefecture", finance: hasFinance,
       promises: hasReviewedExecutivePromises(municipalityId),
@@ -94,7 +94,7 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
     const entry = assemblies["kobe-city"];
     const hasAssembly = entry.assembly.review_status === "reviewed" &&
       entry.disclosure.review_status === "reviewed" &&
-      entry.assembly.municipality_id === municipalityId;
+      entry.assembly.id.startsWith(municipalityId + "-assembly-");
     return {
       key: "kobe-city", finance: loadGenericCityFinance("kobe-city") !== null,
       promises: hasReviewedExecutivePromises(municipalityId),
