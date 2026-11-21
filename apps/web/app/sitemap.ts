@@ -1,3 +1,6 @@
+import shizuokaPrefectureMunicipality from "../../../data/reviewed/shizuoka-prefecture/municipality.json";
+import shizuokaCityMunicipality from "../../../data/reviewed/shizuoka-city/municipality.json";
+import hamamatsuMunicipality from "../../../data/reviewed/hamamatsu-city/municipality.json";
 import type { MetadataRoute } from "next";
 
 import { correctionsHistory } from "@/lib/correctionsHistory";
@@ -71,6 +74,9 @@ const staticRoutes = [
   "/municipalities/hiroshima",
   "/municipalities/kagawa",
   "/municipalities/okinawa",
+  "/municipalities/shizuoka-prefecture",
+  "/municipalities/shizuoka-city",
+  "/municipalities/hamamatsu-city",
   "/municipalities/fukuoka-prefecture",
   "/municipalities/fukuoka-city",
   "/municipalities/kitakyushu-city",
@@ -111,6 +117,9 @@ const lastModifiedByRoute = new Map<string, string>();
 for (const city of phase15Cities) {
   lastModifiedByRoute.set(`/municipalities/${city.slug}`, city.completedAt);
 }
+lastModifiedByRoute.set("/municipalities/shizuoka-prefecture", shizuokaPrefectureMunicipality.last_verified_at);
+lastModifiedByRoute.set("/municipalities/shizuoka-city", shizuokaCityMunicipality.last_verified_at);
+lastModifiedByRoute.set("/municipalities/hamamatsu-city", hamamatsuMunicipality.last_verified_at);
 lastModifiedByRoute.set("/municipalities", phase15Progress.updatedAt);
 lastModifiedByRoute.set("/review-progress", phase15Progress.updatedAt);
 
