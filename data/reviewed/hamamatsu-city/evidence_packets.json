@@ -57,5 +57,25 @@
     ],
     "open_questions": [],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hamamatsu-city-2026-budget-local-tax",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-221309-fiscal-2026-local-tax",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2026年度の浜松市一般会計当初予算の市税は160,600,000,000円。",
+        "source_ids": [
+          "hamamatsu-budget-2026-bill",
+          "hamamatsu-budget-2026"
+        ],
+        "location_note": "第42号議案『令和8年度浜松市一般会計予算』第1表 歳入予算（第1款 市税）。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。税目別内訳（市民税81,068,000千円、固定資産税58,463,000千円、軽自動車税2,753,000千円、市たばこ税4,682,000千円、鉱産税20千円、入湯税103,980千円、事業所税5,699,000千円、都市計画税7,831,000千円）の合計が160,600,000千円と一致することを検算で確認。予算は令和8年第1回定例会で2026年3月23日に原案可決された。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
   }
 ]
