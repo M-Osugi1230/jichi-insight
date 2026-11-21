@@ -1006,7 +1006,11 @@ def validate_saitama_export() -> list[str]:
 
 def chiba_project_detail_files() -> set[str]:
     """Require static detail pages for all reviewed Chiba project series."""
-    required: set[str] = set()
+    required: set[str] = {
+        "municipalities/chiba-prefecture/index.html",
+        "assemblies/chiba-prefecture/index.html",
+        "assemblies/chiba-city/index.html",
+    }
     for slug in ("chiba-prefecture", "chiba-city"):
         records = load_json(ROOT / "data" / "reviewed" / slug / "projects.json")
         for series in {
@@ -1135,11 +1139,113 @@ def validate_chiba_export() -> list[str]:
     return failures
 
 
+
+def validate_chiba_cluster_data_facts() -> None:
+    """Cross-check executive, finance, plan and assembly copy against canonical Chiba records."""
+    terms = load_json(ROOT / "data" / "entities" / "executives" / "executive_terms.json")
+    promises = load_json(ROOT / "data" / "entities" / "executives" / "promises.json")
+    executive_evidence = load_json(ROOT / "data" / "entities" / "executives" / "evidence_packets.json")
+    prefecture_term_id = "jp-local-120006-executive-2025-04-05"
+    city_term_id = "jp-local-121002-executive-2025-03-21"
+    prefecture = next(t for t in terms if t["id"] == prefecture_term_id)
+    city = next(t for t in terms if t["id"] == city_term_id)
+    assert (prefecture["person_name"], prefecture["term_start"], prefecture["term_end"], prefecture["election_date"]) == ("熊谷 俊人", "2025-04-05", "2029-04-04", "2025-03-16")
+    assert (city["person_name"], city["term_start"], city["term_end"], city["election_date"]) == ("神谷 俊一", "2025-03-21", "2029-03-20", "2025-03-16")
+    for term in (prefecture, city):
+        rows = [p for p in promises if p["executive_term_id"] == term["id"] and p["municipality_id"] == term["municipality_id"] and p["review_status"] == "reviewed"]
+        assert len(rows) == 25, (term["id"], len(rows))
+    for term, vote_phrase in ((prefecture, "1,404,905票"), (city, "245,748票")):
+        packet = next(p for p in executive_evidence if p["subject_id"] == term["id"])
+        election_claim = next(claim for claim in packet["claims"] if claim["field"] == "election_date")
+        assert vote_phrase in election_claim["statement"], (term["id"], election_claim["statement"])
+
+    plan = load_json(ROOT / "data" / "reviewed" / "chiba-prefecture" / "plan_review.json")
+    structure = next(r for r in plan["records"] if r["id"] == "chiba-plan-policy-structure")
+    assert all(x in structure["statement"] for x in ("6つの基本目標", "15の政策", "41の施策", "200の主な取組"))
+
+    budget = load_json(ROOT / "data" / "reviewed" / "chiba-prefecture" / "fiscal_records.json")
+    settlements = load_json(ROOT / "data" / "reviewed" / "chiba-prefecture" / "settlement_records.json")
+    assert len([r for r in budget if r["review_status"] == "reviewed" and r["stage"] == "initial_budget" and r["fiscal_year"] == 2026 and r["account_type"] == "general"]) == 3
+    ordinary = [r for r in settlements if r["review_status"] == "reviewed" and r["stage"] == "settlement" and r["account_type"] == "ordinary"]
+    assert len(ordinary) == 51
+    assert {r["fiscal_year"] for r in ordinary} == {2022, 2023, 2024}
+
+    for slug, municipality_id, proposal_count, vote_count, faction_count, expense_count, trip_count, seat_count in (
+        ("chiba-prefecture", "jp-local-120006", 51, 51, 700, 110, 47, 95),
+        ("chiba-city", "jp-local-121002", 57, 55, 275, 48, 26, 50),
+    ):
+        base = ROOT / "data" / "reviewed" / slug / "assembly"
+        assembly = load_json(base / "assembly_records.json")
+        assert len(assembly) == 1 and assembly[0]["municipality_id"] == municipality_id
+        assert assembly[0]["seat_count"] == seat_count
+        roster_count = sum(faction["member_count"] for faction in assembly[0]["factions"])
+        if slug == "chiba-prefecture":
+            assert roster_count == 87 and roster_count + 2 == 89
+        else:
+            assert roster_count == 50
+        assert len(load_json(base / "proposals.json")) == proposal_count
+        assert len(load_json(base / "votes.json")) == vote_count
+        assert len(load_json(base / "faction_votes.json")) == faction_count
+        assert len(load_json(base / "political_activity_expenses.json")) == expense_count
+        assert len(load_json(base / "inspection_trips.json")) == trip_count
+
+    pref_base = ROOT / "data" / "reviewed" / "chiba-prefecture" / "assembly"
+    proposals = load_json(pref_base / "proposals.json")
+    pending = [p for p in proposals if p["outcome"] == "pending"]
+    assert len(pending) == 1 and pending[0]["title"] == "決算認定について"
+    disclosure = load_json(pref_base / "disclosure_profiles.json")[0]
+    faction_note = next(item["note"] for item in disclosure["items"] if item["item"] == "faction_votes")
+    assert all(x in faction_note for x in ("原案に反対", "賛成会派等の内訳", "採択することに賛成"))
+
+
+def validate_chiba_cluster_export() -> list[str]:
+    failures: list[str] = []
+    page = EXPORT_ROOT / "municipalities/chiba-prefecture/index.html"
+    if page.is_file():
+        html = normalized_html(page)
+        required = (
+            "千葉県総合計画 ～千葉の未来をともに創る～",
+            "基本目標6", "政策15", "施策41",
+            "2026年度に成立した一般会計当初予算",
+            "2022〜2024年度の普通会計決算",
+            "熊谷 俊人", "2025年4月5日", "2029年4月4>",
+            "1,404,905票", "25件", "千葉県議会", "継続審査中",
+            "95人／89人", "神谷 俊一", "2025年3月21日", "2029年3月20日", "245,748票",
+        )
+        for phrase in required:
+            if phrase not in html:
+                failures.append(f"Chiba prefecture page missing registered fact: {phrase}")
+    assemblies_page = EXPORT_ROOT / "assemblies/index.html"
+    if assemblies_page.is_file():
+        html = normalized_html(assemblies_page)
+        for phrase in ("20議会", "千葉県議会", "千葉市議会"):
+            if phrase not in html:
+                failures.append(f"Assemblies index missing Chiba fact: {phrase}")
+    for slug, phrases in {
+        "chiba-prefecture": ("千葉県議会", "議案表", "発議案表", "請願表"),
+        "chiba-city": ("千葉市議会", "57件", "55件"),
+    }.items():
+        path = EXPORT_ROOT / "assemblies" / slug / "index.html"
+        if path.is_file():
+            html = normalized_html(path)
+            for phrase in phrases:
+                if phrase not in html:
+                    failures.append(f"Chiba assembly page {slug} missing fact: {phrase}")
+    promises_page = EXPORT_ROOT / "promises/index.html"
+    if promises_page.is_file():
+        html = normalized_html(promises_page)
+        for phrase in ("千葉県・熊谷 俊人", "千葉市・神谷 俊一"):
+            if phrase not in html:
+                failures.append(f"Promises page missing Chiba executive: {phrase}")
+    return failures
+
+
 def main() -> int:
     args = parse_args()
     failures: list[str] = []
     validate_saitama_data_facts()
     validate_chiba_data_facts()
+    validate_chiba_cluster_data_facts()
     required_files = (
         set(REQUIRED_FILES)
         | published_required_files()
@@ -1202,6 +1308,7 @@ def main() -> int:
     failures.extend(validate_kanagawa_assembly_scope())
     failures.extend(validate_saitama_export())
     failures.extend(validate_chiba_export())
+    failures.extend(validate_chiba_cluster_export())
     failures.extend(validate_hokkaido_assembly_scope())
     failures.extend(validate_osaka_assembly_scope())
 
