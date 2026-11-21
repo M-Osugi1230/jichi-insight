@@ -118,7 +118,6 @@ def test_assembly_granularity_and_pending_records_are_not_inferred():
         assert assembly["name"] == name
         assert len(proposals) == count
         assert f'"{slug}": registry(' in ASSEMBLY_REGISTRY
-        assert f'"/assemblies/{slug}"' not in ASSEMBLIES or slug in ASSEMBLIES
     pref_proposals = data("data/reviewed/shizuoka-prefecture/assembly/proposals.json")
     assert len([p for p in pref_proposals if p["outcome"] == "pending"]) == 17
     assert "未議決（pending）" in PREFECTURE
@@ -152,3 +151,6 @@ def test_reviewed_gates_generic_city_routes_and_scoped_static_contract():
     assert "_shizuoka_scoped_text" in EXPORT_VALIDATOR
     assert 'record["official_title"] not in project_section' in EXPORT_VALIDATOR
     assert "27議会" in EXPORT_VALIDATOR
+    sitemap = src("apps/web/app/sitemap.ts")
+    for slug in ("shizuoka-prefecture", "shizuoka-city", "hamamatsu-city"):
+        assert f'"/municipalities/{slug}"' in sitemap
