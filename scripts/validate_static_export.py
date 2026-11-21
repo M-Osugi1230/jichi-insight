@@ -1077,7 +1077,7 @@ def validate_chiba_export() -> list[str]:
     }
     for slug, phrases in expected.items():
         match = re.search(
-            rf'<section\\b(?=[^>]*\\bid="{re.escape(slug)}")[^>]*>(.*?)</section>',
+            rf'<section\b(?=[^>]*\bid="{re.escape(slug)}")[^>]*>(.*?)</section>',
             html, flags=re.DOTALL,
         )
         if match is None:
