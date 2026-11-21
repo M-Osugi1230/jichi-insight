@@ -1,3 +1,18 @@
+import saitamaProjectSources from "../../../data/catalog/saitama_project_sources.json";
+import saitamaSelection from "../../../data/catalog/saitama_priority_project_selection.json";
+import saitamaProjects from "../../../data/reviewed/saitama-prefecture/projects.json";
+import saitamaKpis from "../../../data/reviewed/saitama-prefecture/project_kpis.json";
+import saitamaEvidence from "../../../data/reviewed/saitama-prefecture/project_evidence_packets.json";
+import saitamaCityProjectSources from "../../../data/catalog/saitama_city_project_sources.json";
+import saitamaCitySelection from "../../../data/catalog/saitama_city_priority_project_selection.json";
+import saitamaCityProjects from "../../../data/reviewed/saitama-city/projects.json";
+import saitamaCityKpis from "../../../data/reviewed/saitama-city/project_kpis.json";
+import saitamaCityEvidence from "../../../data/reviewed/saitama-city/project_evidence_packets.json";
+import kawaguchiProjectSources from "../../../data/catalog/kawaguchi_city_project_sources.json";
+import kawaguchiSelection from "../../../data/catalog/kawaguchi_city_priority_project_selection.json";
+import kawaguchiProjects from "../../../data/reviewed/kawaguchi-city/projects.json";
+import kawaguchiKpis from "../../../data/reviewed/kawaguchi-city/project_kpis.json";
+import kawaguchiEvidence from "../../../data/reviewed/kawaguchi-city/project_evidence_packets.json";
 import osakaProjectSources from "../../../data/catalog/osaka_project_sources.json";
 import osakaCityProjectSources from "../../../data/catalog/osaka_city_project_sources.json";
 import sakaiProjectSources from "../../../data/catalog/sakai_project_sources.json";
@@ -67,10 +82,13 @@ import { fukuokaPrefectureProjectData } from "./fukuokaPrefectureProjects";
 import { kitakyushuProjectData, type ProjectRecord, type KpiRecord } from "./kitakyushuProjects";
 import type { EvidencePacket } from "./finance";
 
-export type ProjectArea = "fukuoka-prefecture" | "osaka-prefecture" | "osaka-city" | "sakai-city" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city" | "hokkaido-prefecture" | "sapporo-city" | "asahikawa-city" | "kanagawa-prefecture" | "yokohama-city" | "kawasaki-city";
+export type ProjectArea = "fukuoka-prefecture" | "osaka-prefecture" | "osaka-city" | "sakai-city" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city" | "hokkaido-prefecture" | "sapporo-city" | "asahikawa-city" | "kanagawa-prefecture" | "yokohama-city" | "kawasaki-city" | "saitama-prefecture" | "saitama-city" | "kawaguchi-city";
 type Selection = { updated_at?: string; population?: { description?: string; label?: string }; selection_rule?: { description?: string } | string; };
 type SetOfProjects = { name: string; projects: ProjectRecord[]; kpis: KpiRecord[]; evidencePackets: EvidencePacket[]; selection: Selection };
 export const projectRegistry: Record<ProjectArea, SetOfProjects> = {
+  "saitama-prefecture": { name: "埼玉県", projects: saitamaProjects as ProjectRecord[], kpis: saitamaKpis as KpiRecord[], evidencePackets: saitamaEvidence as EvidencePacket[], selection: saitamaSelection },
+  "saitama-city": { name: "さいたま市", projects: saitamaCityProjects as ProjectRecord[], kpis: saitamaCityKpis as KpiRecord[], evidencePackets: saitamaCityEvidence as EvidencePacket[], selection: saitamaCitySelection },
+  "kawaguchi-city": { name: "川口市", projects: kawaguchiProjects as ProjectRecord[], kpis: kawaguchiKpis as KpiRecord[], evidencePackets: kawaguchiEvidence as EvidencePacket[], selection: kawaguchiSelection },
   "osaka-prefecture": { name: "大阪府", projects: osakaProjects as ProjectRecord[], kpis: osakaKpis as KpiRecord[], evidencePackets: osakaEvidence as EvidencePacket[], selection: osakaSelection },
   "osaka-city": { name: "大阪市", projects: osakaCityProjects as ProjectRecord[], kpis: osakaCityKpis as KpiRecord[], evidencePackets: osakaCityEvidence as EvidencePacket[], selection: osakaCitySelection },
   "sakai-city": { name: "堺市", projects: sakaiProjects as ProjectRecord[], kpis: sakaiKpis as KpiRecord[], evidencePackets: sakaiEvidence as EvidencePacket[], selection: sakaiSelection },
@@ -103,4 +121,7 @@ export const projectSourceCatalog: SourceRecord[] = [...sourceCatalog,
   ...(asahikawaProjectSources.records as SourceRecord[]),
   ...(kanagawaProjectSources.records as SourceRecord[]),
   ...(yokohamaProjectSources.records as SourceRecord[]),
-  ...(kawasakiProjectSources.records as SourceRecord[])];
+  ...(kawasakiProjectSources.records as SourceRecord[]),
+  ...(saitamaProjectSources.records as SourceRecord[]),
+  ...(saitamaCityProjectSources.records as SourceRecord[]),
+  ...(kawaguchiProjectSources.records as SourceRecord[])];
