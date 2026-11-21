@@ -1,0 +1,148 @@
+{
+ "issue": 839,
+ "municipality_id": "jp-local-120006",
+ "municipality_key": "chiba-prefecture",
+ "population": {
+  "description": "現行「千葉県総合計画 ～千葉の未来をともに創る～」（2025年10月10日決定、実施計画編は令和7〜10年度）の41の施策。6つの基本目標の下に15の政策が置かれ、各政策に施策が公式掲載順で並ぶこの41施策が公式の母集団になる。施策ごとに政策評価帳票（施策評価シート）で社会目標の進捗状況と予算額・決算額が公表されるため、施策を登録単位とした。前計画（～新しい千葉の時代を切り開く～、実施計画は令和4〜6年度）の施策は母集団に含めず、現行計画の施策と対応付けない。",
+  "fiscal_year": 2025,
+  "project_count": 41,
+  "source_ids": [
+   "chiba-pref-comprehensive-plan-document"
+  ]
+ },
+ "review_status": "reviewed",
+ "scope": "initial",
+ "selection_rule": {
+  "description": "6つの基本目標を計画の掲載順に巡回し、各基本目標では施策を掲載順にたどって10系列を選定する。第1巡目で基本目標I〜VIの先頭施策（施策1・7・19・23・30・34）を、第2巡目で基本目標I〜IVの第2施策（施策2・8・20・24）を選定した時点で10系列が揃ったため、第3巡目には進んでいない。基本目標V・VIの第2施策以降の施策は本段階では未選定である。金額の大小では選ばない。",
+  "pillars": [
+   "危機管理体制の構築と安全の確保",
+   "千葉経済圏の確立と社会資本の整備",
+   "超高齢化時代に対応した医療・福祉の充実",
+   "こども・若者の可能性を広げる千葉の確立",
+   "誰もがその人らしく生きる・分かり合える共生社会の実現",
+   "独自の自然・文化を生かした魅力ある千葉の創造"
+  ]
+ },
+ "selections": [
+  {
+   "basic_goal": "危機管理体制の構築と安全の確保",
+   "measure_code": "Ⅰ-1-①",
+   "measure_number": 1,
+   "official_title": "激甚化する災害への対応力強化",
+   "project_id": "jp-local-120006-project-2025-disaster-response-strengthening",
+   "selection_basis": "第1巡目: 基本目標1「危機管理体制の構築と安全の確保」について、計画の掲載順で先頭の施策1「激甚化する災害への対応力強化」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-120006-project-series-disaster-response-strengthening",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ]
+  },
+  {
+   "basic_goal": "危機管理体制の構築と安全の確保",
+   "measure_code": "Ⅰ-1-②",
+   "measure_number": 2,
+   "official_title": "災害に強いまちづくりの推進",
+   "project_id": "jp-local-120006-project-2025-disaster-resilient-community-development",
+   "selection_basis": "第2巡目: 基本目標1「危機管理体制の構築と安全の確保」について、計画の掲載順で第2の施策2「災害に強いまちづくりの推進」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-120006-project-series-disaster-resilient-community-development",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ]
+  },
+  {
+   "basic_goal": "千葉経済圏の確立と社会資本の整備",
+   "measure_code": "Ⅱ-1-①",
+   "measure_number": 7,
+   "official_title": "新たな産業・地域づくりと企業誘致の推進",
+   "project_id": "jp-local-120006-project-2025-new-industry-and-business-attraction",
+   "selection_basis": "第1巡目: 基本目標2「千葉経済圏の確立と社会資本の整備」について、計画の掲載順で先頭の施策7「新たな産業・地域づくりと企業誘致の推進」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-120006-project-series-new-industry-and-business-attraction",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ]
+  },
+  {
+   "basic_goal": "千葉経済圏の確立と社会資本の整備",
+   "measure_code": "Ⅱ-1-②",
+   "measure_number": 8,
+   "official_title": "県経済を担う産業の振興と育成",
+   "project_id": "jp-local-120006-project-2025-core-industry-promotion",
+   "selection_basis": "第2巡目: 基本目標2「千葉経済圏の確立と社会資本の整備」について、計画の掲載順で第2の施策8「県経済を担う産業の振興と育成」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-120006-project-series-core-industry-promotion",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ]
+  },
+  {
+   "basic_goal": "超高齢化時代に対応した医療・福祉の充実",
+   "measure_code": "Ⅲ-1-①",
+   "measure_number": 19,
+   "official_title": "増大する医療需要への対応",
+   "project_id": "jp-local-120006-project-2025-growing-medical-demand",
+   "selection_basis": "第1巡目: 基本目標3「超高齢化時代に対応した医療・福祉の充実」について、計画の掲載順で先頭の施策19「増大する医療需要への対応」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-120006-project-series-growing-medical-demand",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ]
+  },
+  {
+   "basic_goal": "超高齢化時代に対応した医療・福祉の充実",
+   "measure_code": "Ⅲ-1-②",
+   "measure_number": 20,
+   "official_title": "生涯を通じた健康づくりと予防医療の推進",
+   "project_id": "jp-local-120006-project-2025-lifelong-health-prevention",
+   "selection_basis": "第2巡目: 基本目標3「超高齢化時代に対応した医療・福祉の充実」について、計画の掲載順で第2の施策20「生涯を通じた健康づくりと予防医療の推進」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-120006-project-series-lifelong-health-prevention",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ]
+  },
+  {
+   "basic_goal": "こども・若者の可能性を広げる千葉の確立",
+   "measure_code": "Ⅳ-1-①",
+   "measure_number": 23,
+   "official_title": "こども・若者の健やかな成長への支援",
+   "project_id": "jp-local-120006-project-2025-children-youth-growth-support",
+   "selection_basis": "第1巡目: 基本目標4「こども・若者の可能性を広げる千葉の確立」について、計画の掲載順で先頭の施策23「こども・若者の健やかな成長への支援」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-120006-project-series-children-youth-growth-support",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ]
+  },
+  {
+   "basic_goal": "こども・若者の可能性を広げる千葉の確立",
+   "measure_code": "Ⅳ-1-②",
+   "measure_number": 24,
+   "official_title": "安心して子育てできる環境づくり",
+   "project_id": "jp-local-120006-project-2025-childrearing-environment",
+   "selection_basis": "第2巡目: 基本目標4「こども・若者の可能性を広げる千葉の確立」について、計画の掲載順で第2の施策24「安心して子育てできる環境づくり」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-120006-project-series-childrearing-environment",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ]
+  },
+  {
+   "basic_goal": "誰もがその人らしく生きる・分かり合える共生社会の実現",
+   "measure_code": "Ⅴ-1-①",
+   "measure_number": 30,
+   "official_title": "誰もが力を発揮できる社会の実現",
+   "project_id": "jp-local-120006-project-2025-diversity-inclusive-society",
+   "selection_basis": "第1巡目: 基本目標5「誰もがその人らしく生きる・分かり合える共生社会の実現」について、計画の掲載順で先頭の施策30「誰もが力を発揮できる社会の実現」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-120006-project-series-diversity-inclusive-society",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ]
+  },
+  {
+   "basic_goal": "独自の自然・文化を生かした魅力ある千葉の創造",
+   "measure_code": "Ⅵ-1-①",
+   "measure_number": 34,
+   "official_title": "地球温暖化対策の推進",
+   "project_id": "jp-local-120006-project-2025-climate-change-measures",
+   "selection_basis": "第1巡目: 基本目標6「独自の自然・文化を生かした魅力ある千葉の創造」について、計画の掲載順で先頭の施策34「地球温暖化対策の推進」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-120006-project-series-climate-change-measures",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1172 @@
+[
+ {
+  "actuals": [
+   {
+    "period": "令和7年度",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal1",
+     "chiba-pref-policy-evaluation-fy2025-indicators"
+    ],
+    "status": "available",
+    "value": 48.8
+   }
+  ],
+  "assessment": "not_achieved",
+  "baseline": {
+   "period": "令和6年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document",
+    "chiba-pref-policy-evaluation-form-fy2025-goal1"
+   ],
+   "status": "available",
+   "value": 48.9
+  },
+  "causality_note": null,
+  "confidence": "high",
+  "definition": "県政に関する世論調査において、「災害に備えて3日分以上の食料品、飲料水を備蓄している」と回答した県民の割合のうち食料品分（千葉県総合計画の指標一覧）。この指標は食料品と飲料水の2項目で構成され、県の政策評価の概要では2項目を合わせた指標として「一部項目が進展」の区分に数えられている。本登録では項目ごとに分けて記録した。値は千葉県総合計画政策評価帳票（施策評価シート、評価年度：令和7年度）と政策評価の概要資料2「社会目標の実績値及び目標値」に掲載された計画策定時の現状値（令和6年度：48.9%）、令和7年度目安値（52.9%）、令和7年度実績値、令和10年度目標値をそのまま用いた。県は令和7年度進捗率（（実績値－現状値）÷（目安値－現状値））を0%と公表している。assessment はこの公表進捗率への機械的な対応付け（100%以上は achieved、0%を超え100%未満は partially_achieved、0%は not_achieved）であり、Jichi Insight 独自の評価ではない。県は指標ごとの評定区分そのものは公表しておらず、区分別の集計は基本目標単位でのみ公表している。",
+  "direction": "increase",
+  "id": "jp-local-120006-project-2025-disaster-response-strengthening-kpi-food-stockpile-rate",
+  "name": "3日分以上の備蓄をしている県民の割合（食料品）",
+  "project_id": "jp-local-120006-project-2025-disaster-response-strengthening",
+  "review_status": "reviewed",
+  "sources": [
+   "chiba-pref-comprehensive-plan-document",
+   "chiba-pref-policy-evaluation-form-fy2025-goal1",
+   "chiba-pref-policy-evaluation-fy2025-indicators"
+  ],
+  "target": {
+   "period": "令和10年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ],
+   "status": "available",
+   "value": 65.0
+  },
+  "unit": "%"
+ },
+ {
+  "actuals": [
+   {
+    "period": "令和7年度",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal1",
+     "chiba-pref-policy-evaluation-fy2025-indicators"
+    ],
+    "status": "available",
+    "value": 56.3
+   }
+  ],
+  "assessment": "partially_achieved",
+  "baseline": {
+   "period": "令和6年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document",
+    "chiba-pref-policy-evaluation-form-fy2025-goal1"
+   ],
+   "status": "available",
+   "value": 54.1
+  },
+  "causality_note": null,
+  "confidence": "high",
+  "definition": "県政に関する世論調査において、「災害に備えて3日分以上の食料品、飲料水を備蓄している」と回答した県民の割合のうち飲料水分（千葉県総合計画の指標一覧）。この指標は食料品と飲料水の2項目で構成され、県の政策評価の概要では2項目を合わせた指標として「一部項目が進展」の区分に数えられている。本登録では項目ごとに分けて記録した。値は千葉県総合計画政策評価帳票（施策評価シート、評価年度：令和7年度）と政策評価の概要資料2「社会目標の実績値及び目標値」に掲載された計画策定時の現状値（令和6年度：54.1%）、令和7年度目安値（58.1%）、令和7年度実績値、令和10年度目標値をそのまま用いた。県は令和7年度進捗率（（実績値－現状値）÷（目安値－現状値））を55%と公表している。assessment はこの公表進捗率への機械的な対応付け（100%以上は achieved、0%を超え100%未満は partially_achieved、0%は not_achieved）であり、Jichi Insight 独自の評価ではない。県は指標ごとの評定区分そのものは公表しておらず、区分別の集計は基本目標単位でのみ公表している。",
+  "direction": "increase",
+  "id": "jp-local-120006-project-2025-disaster-response-strengthening-kpi-drinking-water-stockpile-rate",
+  "name": "3日分以上の備蓄をしている県民の割合（飲料水）",
+  "project_id": "jp-local-120006-project-2025-disaster-response-strengthening",
+  "review_status": "reviewed",
+  "sources": [
+   "chiba-pref-comprehensive-plan-document",
+   "chiba-pref-policy-evaluation-form-fy2025-goal1",
+   "chiba-pref-policy-evaluation-fy2025-indicators"
+  ],
+  "target": {
+   "period": "令和10年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ],
+   "status": "available",
+   "value": 70.0
+  },
+  "unit": "%"
+ },
+ {
+  "actuals": [
+   {
+    "period": "令和7年度",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal1",
+     "chiba-pref-policy-evaluation-fy2025-indicators"
+    ],
+    "status": "not_published",
+    "value": null
+   }
+  ],
+  "assessment": "not_assessable",
+  "baseline": {
+   "period": "令和5年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document",
+    "chiba-pref-policy-evaluation-form-fy2025-goal1"
+   ],
+   "status": "available",
+   "value": 1729
+  },
+  "causality_note": null,
+  "confidence": "high",
+  "definition": "自主防災組織が実施した防災訓練の回数（千葉県総合計画の指標一覧）。値は千葉県総合計画政策評価帳票（施策評価シート、評価年度：令和7年度）と政策評価の概要資料2「社会目標の実績値及び目標値」に掲載された計画策定時の現状値（令和5年度：1729回）、令和7年度目安値（2077回）、令和7年度実績値、令和10年度目標値をそのまま用いた。令和7年度実績値は未判明（令和9年3月頃に判明予定と評価シートに記載）であり、進捗率も未判明のため、assessment は not_assessable とした。政策評価資料2には直近の判明値として令和6年度実績値1,828回が参考として併記されている。県は本指標を現行計画で新たに設定した指標として、みなし評価の対象（資料2の「※」）としている。assessment は進捗率が公表されていないため not_assessable とした。進捗率が公表されている指標については、県の公表進捗率への機械的な対応付け（100%以上は achieved、0%を超え100%未満は partially_achieved、0%はnot_achieved）としており、Jichi Insight 独自の評価ではない。",
+  "direction": "increase",
+  "id": "jp-local-120006-project-2025-disaster-response-strengthening-kpi-disaster-drill-count",
+  "name": "自主防災組織による防災訓練の実施回数",
+  "project_id": "jp-local-120006-project-2025-disaster-response-strengthening",
+  "review_status": "reviewed",
+  "sources": [
+   "chiba-pref-comprehensive-plan-document",
+   "chiba-pref-policy-evaluation-form-fy2025-goal1",
+   "chiba-pref-policy-evaluation-fy2025-indicators"
+  ],
+  "target": {
+   "period": "令和10年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ],
+   "status": "available",
+   "value": 2600
+  },
+  "unit": "回"
+ },
+ {
+  "actuals": [
+   {
+    "period": "令和7年度",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal1",
+     "chiba-pref-policy-evaluation-fy2025-indicators"
+    ],
+    "status": "available",
+    "value": 22
+   }
+  ],
+  "assessment": "achieved",
+  "baseline": {
+   "period": "令和6年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document",
+    "chiba-pref-policy-evaluation-form-fy2025-goal1"
+   ],
+   "status": "available",
+   "value": 4
+  },
+  "causality_note": null,
+  "confidence": "high",
+  "definition": "デジタル技術を活用した共通仕様の被災者支援システムの導入市町村数（千葉県総合計画の指標一覧）。値は千葉県総合計画政策評価帳票（施策評価シート、評価年度：令和7年度）と政策評価の概要資料2「社会目標の実績値及び目標値」に掲載された計画策定時の現状値（令和6年度：4市町村）、令和7年度目安値（17市町村）、令和7年度実績値、令和10年度目標値をそのまま用いた。県は令和7年度進捗率（（実績値－現状値）÷（目安値－現状値））を100%と公表している。assessment はこの公表進捗率への機械的な対応付け（100%以上は achieved、0%を超え100%未満は partially_achieved、0%は not_achieved）であり、Jichi Insight 独自の評価ではない。県は指標ごとの評定区分そのものは公表しておらず、区分別の集計は基本目標単位でのみ公表している。",
+  "direction": "increase",
+  "id": "jp-local-120006-project-2025-disaster-response-strengthening-kpi-victim-support-system-municipalities",
+  "name": "被災者支援システムの導入市町村数",
+  "project_id": "jp-local-120006-project-2025-disaster-response-strengthening",
+  "review_status": "reviewed",
+  "sources": [
+   "chiba-pref-comprehensive-plan-document",
+   "chiba-pref-policy-evaluation-form-fy2025-goal1",
+   "chiba-pref-policy-evaluation-fy2025-indicators"
+  ],
+  "target": {
+   "period": "令和10年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ],
+   "status": "available",
+   "value": 54
+  },
+  "unit": "市町村"
+ },
+ {
+  "actuals": [
+   {
+    "period": "令和7年度",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal1",
+     "chiba-pref-policy-evaluation-fy2025-indicators"
+    ],
+    "status": "available",
+    "value": 56
+   }
+  ],
+  "assessment": "not_achieved",
+  "baseline": {
+   "period": "令和6年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document",
+    "chiba-pref-policy-evaluation-form-fy2025-goal1"
+   ],
+   "status": "available",
+   "value": 56
+  },
+  "causality_note": null,
+  "confidence": "high",
+  "definition": "無電柱化推進計画に基づく優先整備区間の事業着手した延長（千葉県総合計画の指標一覧）。値は千葉県総合計画政策評価帳票（施策評価シート、評価年度：令和7年度）と政策評価の概要資料2「社会目標の実績値及び目標値」に掲載された計画策定時の現状値（令和6年度：56km）、令和7年度目安値（63km）、令和7年度実績値、令和10年度目標値をそのまま用いた。県は令和7年度進捗率（（実績値－現状値）÷（目安値－現状値））を0%と公表している。assessment はこの公表進捗率への機械的な対応付け（100%以上は achieved、0%を超え100%未満は partially_achieved、0%は not_achieved）であり、Jichi Insight 独自の評価ではない。県は指標ごとの評定区分そのものは公表しておらず、区分別の集計は基本目標単位でのみ公表している。",
+  "direction": "increase",
+  "id": "jp-local-120006-project-2025-disaster-resilient-community-development-kpi-utility-pole-removal-length",
+  "name": "無電柱化の事業着手した延長",
+  "project_id": "jp-local-120006-project-2025-disaster-resilient-community-development",
+  "review_status": "reviewed",
+  "sources": [
+   "chiba-pref-comprehensive-plan-document",
+   "chiba-pref-policy-evaluation-form-fy2025-goal1",
+   "chiba-pref-policy-evaluation-fy2025-indicators"
+  ],
+  "target": {
+   "period": "令和10年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ],
+   "status": "available",
+   "value": 83
+  },
+  "unit": "km"
+ },
+ {
+  "actuals": [
+   {
+    "period": "令和7年度",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal1",
+     "chiba-pref-policy-evaluation-fy2025-indicators"
+    ],
+    "status": "available",
+    "value": 948.93
+   }
+  ],
+  "assessment": "partially_achieved",
+  "baseline": {
+   "period": "令和6年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document",
+    "chiba-pref-policy-evaluation-form-fy2025-goal1"
+   ],
+   "status": "available",
+   "value": 929
+  },
+  "causality_note": null,
+  "confidence": "high",
+  "definition": "一筆ごとの土地の所有者、地番及び地目の調査並びに境界及び地積に関する測量を行う調査を実施した面積（千葉県総合計画の指標一覧）。令和7年度実績値は評価シートの948.93㎢を用いた（政策評価資料2では949㎢に丸めて表示されている）。値は千葉県総合計画政策評価帳票（施策評価シート、評価年度：令和7年度）と政策評価の概要資料2「社会目標の実績値及び目標値」に掲載された計画策定時の現状値（令和6年度：929㎢）、令和7年度目安値（984㎢）、令和7年度実績値、令和10年度目標値をそのまま用いた。県は令和7年度進捗率（（実績値－現状値）÷（目安値－現状値））を36.5%と公表している。assessment はこの公表進捗率への機械的な対応付け（100%以上は achieved、0%を超え100%未満は partially_achieved、0%は not_achieved）であり、Jichi Insight 独自の評価ではない。県は指標ごとの評定区分そのものは公表しておらず、区分別の集計は基本目標単位でのみ公表している。",
+  "direction": "increase",
+  "id": "jp-local-120006-project-2025-disaster-resilient-community-development-kpi-cadastral-survey-area",
+  "name": "地籍調査面積",
+  "project_id": "jp-local-120006-project-2025-disaster-resilient-community-development",
+  "review_status": "reviewed",
+  "sources": [
+   "chiba-pref-comprehensive-plan-document",
+   "chiba-pref-policy-evaluation-form-fy2025-goal1",
+   "chiba-pref-policy-evaluation-fy2025-indicators"
+  ],
+  "target": {
+   "period": "令和10年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ],
+   "status": "available",
+   "value": 1147
+  },
+  "unit": "㎢"
+ },
+ {
+  "actuals": [
+   {
+    "period": "令和7年度",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal2",
+     "chiba-pref-policy-evaluation-fy2025-indicators"
+    ],
+    "status": "available",
+    "value": 80
+   }
+  ],
+  "assessment": "partially_achieved",
+  "baseline": {
+   "period": "令和3年～6年平均",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document",
+    "chiba-pref-policy-evaluation-form-fy2025-goal2"
+   ],
+   "status": "available",
+   "value": 85
+  },
+  "causality_note": null,
+  "confidence": "high",
+  "definition": "各年1～12月の製造業等、研究所及び物流施設等の本県への立地件数（1,000㎡以上）（千葉県総合計画の指標一覧）。現状値は令和3年～6年の平均85件、令和10年度目標値は令和7年～10年の4年合計340件であり、単年度の実績値80件と単純には比較できない。県の進捗率は令和7年度目安値85件を基準に算出されている。値は千葉県総合計画政策評価帳票（施策評価シート、評価年度：令和7年度）と政策評価の概要資料2「社会目標の実績値及び目標値」に掲載された計画策定時の現状値（令和3年～6年平均：85件）、令和7年度目安値（85件）、令和7年度実績値、令和10年度目標値をそのまま用いた。県は令和7年度進捗率（（実績値－現状値）÷（目安値－現状値））を94.1%と公表している。assessment はこの公表進捗率への機械的な対応付け（100%以上は achieved、0%を超え100%未満は partially_achieved、0%は not_achieved）であり、Jichi Insight 独自の評価ではない。県は指標ごとの評定区分そのものは公表しておらず、区分別の集計は基本目標単位でのみ公表している。",
+  "direction": "increase",
+  "id": "jp-local-120006-project-2025-new-industry-and-business-attraction-kpi-business-location-count",
+  "name": "県内への企業立地件数",
+  "project_id": "jp-local-120006-project-2025-new-industry-and-business-attraction",
+  "review_status": "reviewed",
+  "sources": [
+   "chiba-pref-comprehensive-plan-document",
+   "chiba-pref-policy-evaluation-form-fy2025-goal2",
+   "chiba-pref-policy-evaluation-fy2025-indicators"
+  ],
+  "target": {
+   "period": "令和7年～10年合計",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ],
+   "status": "available",
+   "value": 340
+  },
+  "unit": "件"
+ },
+ {
+  "actuals": [
+   {
+    "period": "令和7年度",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal2",
+     "chiba-pref-policy-evaluation-fy2025-indicators"
+    ],
+    "status": "not_published",
+    "value": null
+   }
+  ],
+  "assessment": "not_assessable",
+  "baseline": {
+   "period": "令和4年",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document",
+    "chiba-pref-policy-evaluation-form-fy2025-goal2"
+   ],
+   "status": "available",
+   "value": 158925
+  },
+  "causality_note": null,
+  "confidence": "high",
+  "definition": "事業所（製造業）における年間の製造品出荷額、加工賃収入額、くず廃物の出荷額及びその他収入額の合計（消費税等を含む）（千葉県総合計画の指標一覧）。令和10年度目標値は数値ではなく「増加を目指します」とされている。令和7年度目安値は現状値と同額である。値は千葉県総合計画政策評価帳票（施策評価シート、評価年度：令和7年度）と政策評価の概要資料2「社会目標の実績値及び目標値」に掲載された計画策定時の現状値（令和4年：158925億円）、令和7年度目安値（158925億円）、令和7年度実績値、令和10年度目標値をそのまま用いた。令和7年度実績値は未判明（令和9年10月頃に判明予定と評価シートに記載）であり、進捗率も未判明のため、assessment は not_assessable とした。政策評価資料2には直近の判明値として令和6年度実績値15兆9,871億円が参考として併記され、県は本指標をみなし評価の対象（資料2の「〇」）とし、令和5年度進捗率100.0%を注記している。assessment は進捗率が公表されていないため not_assessable とした。進捗率が公表されている指標については、県の公表進捗率への機械的な対応付け（100%以上は achieved、0%を超え100%未満は partially_achieved、0%はnot_achieved）としており、Jichi Insight 独自の評価ではない。",
+  "direction": "increase",
+  "id": "jp-local-120006-project-2025-core-industry-promotion-kpi-manufacturing-shipments",
+  "name": "県内製造品出荷額等",
+  "project_id": "jp-local-120006-project-2025-core-industry-promotion",
+  "review_status": "reviewed",
+  "sources": [
+   "chiba-pref-comprehensive-plan-document",
+   "chiba-pref-policy-evaluation-form-fy2025-goal2",
+   "chiba-pref-policy-evaluation-fy2025-indicators"
+  ],
+  "target": {
+   "period": "令和10年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ],
+   "status": "available",
+   "value": "増加を目指します"
+  },
+  "unit": "億円"
+ },
+ {
+  "actuals": [
+   {
+    "period": "令和7年度",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal2",
+     "chiba-pref-policy-evaluation-fy2025-indicators"
+    ],
+    "status": "not_published",
+    "value": null
+   }
+  ],
+  "assessment": "not_assessable",
+  "baseline": {
+   "period": "令和4年",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document",
+    "chiba-pref-policy-evaluation-form-fy2025-goal2"
+   ],
+   "status": "available",
+   "value": 141768
+  },
+  "causality_note": null,
+  "confidence": "high",
+  "definition": "卸売業又は小売業において、一定の場所（一区画）を占める事業所における有体商品の販売額（千葉県総合計画の指標一覧）。令和10年度目標値は数値ではなく「増加を目指します」とされている。令和7年度目安値は現状値と同額である。値は千葉県総合計画政策評価帳票（施策評価シート、評価年度：令和7年度）と政策評価の概要資料2「社会目標の実績値及び目標値」に掲載された計画策定時の現状値（令和4年：141768億円）、令和7年度目安値（141768億円）、令和7年度実績値、令和10年度目標値をそのまま用いた。令和7年度実績値は未判明（令和9年10月頃に判明予定と評価シートに記載）であり、進捗率も未判明のため、assessment は not_assessable とした。政策評価資料2には直近の判明値として令和5年度実績値15兆3,620億円が参考として併記され、県は本指標をみなし評価の対象（資料2の「〇」）とし、令和5年度進捗率100.0%を注記している。assessment は進捗率が公表されていないため not_assessable とした。進捗率が公表されている指標については、県の公表進捗率への機械的な対応付け（100%以上は achieved、0%を超え100%未満は partially_achieved、0%はnot_achieved）としており、Jichi Insight 独自の評価ではない。",
+  "direction": "increase",
+  "id": "jp-local-120006-project-2025-core-industry-promotion-kpi-annual-goods-sales",
+  "name": "県内年間商品販売額",
+  "project_id": "jp-local-120006-project-2025-core-industry-promotion",
+  "review_status": "reviewed",
+  "sources": [
+   "chiba-pref-comprehensive-plan-document",
+   "chiba-pref-policy-evaluation-form-fy2025-goal2",
+   "chiba-pref-policy-evaluation-fy2025-indicators"
+  ],
+  "target": {
+   "period": "令和10年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ],
+   "status": "available",
+   "value": "増加を目指します"
+  },
+  "unit": "億円"
+ },
+ {
+  "actuals": [
+   {
+    "period": "令和7年度",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal3",
+     "chiba-pref-policy-evaluation-fy2025-indicators"
+    ],
+    "status": "available",
+    "value": 64.8
+   }
+  ],
+  "assessment": "not_achieved",
+  "baseline": {
+   "period": "令和6年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document",
+    "chiba-pref-policy-evaluation-form-fy2025-goal3"
+   ],
+   "status": "available",
+   "value": 66.3
+  },
+  "causality_note": null,
+  "confidence": "high",
+  "definition": "県政に関する世論調査において、「かかりつけ医を持っている」と回答した県民の割合（千葉県総合計画の指標一覧）。値は千葉県総合計画政策評価帳票（施策評価シート、評価年度：令和7年度）と政策評価の概要資料2「社会目標の実績値及び目標値」に掲載された計画策定時の現状値（令和6年度：66.3%）、令和7年度目安値（67%）、令和7年度実績値、令和10年度目標値をそのまま用いた。県は令和7年度進捗率（（実績値－現状値）÷（目安値－現状値））を0%と公表している。assessment はこの公表進捗率への機械的な対応付け（100%以上は achieved、0%を超え100%未満は partially_achieved、0%は not_achieved）であり、Jichi Insight 独自の評価ではない。県は指標ごとの評定区分そのものは公表しておらず、区分別の集計は基本目標単位でのみ公表している。",
+  "direction": "increase",
+  "id": "jp-local-120006-project-2025-growing-medical-demand-kpi-family-doctor-rate",
+  "name": "かかりつけ医の有無",
+  "project_id": "jp-local-120006-project-2025-growing-medical-demand",
+  "review_status": "reviewed",
+  "sources": [
+   "chiba-pref-comprehensive-plan-document",
+   "chiba-pref-policy-evaluation-form-fy2025-goal3",
+   "chiba-pref-policy-evaluation-fy2025-indicators"
+  ],
+  "target": {
+   "period": "令和10年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ],
+   "status": "available",
+   "value": 69.0
+  },
+  "unit": "%"
+ },
+ {
+  "actuals": [
+   {
+    "period": "令和7年度",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal3",
+     "chiba-pref-policy-evaluation-fy2025-indicators"
+    ],
+    "status": "available",
+    "value": 63.0
+   }
+  ],
+  "assessment": "not_achieved",
+  "baseline": {
+   "period": "令和6年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document",
+    "chiba-pref-policy-evaluation-form-fy2025-goal3"
+   ],
+   "status": "available",
+   "value": 65.5
+  },
+  "causality_note": null,
+  "confidence": "high",
+  "definition": "県政に関する世論調査において、「自分が住み慣れた地域で安心して受診できる医療体制にあると思うか」との質問に対し、「そう思う」「どちらかといえばそう思う」と回答した県民の割合（千葉県総合計画の指標一覧）。値は千葉県総合計画政策評価帳票（施策評価シート、評価年度：令和7年度）と政策評価の概要資料2「社会目標の実績値及び目標値」に掲載された計画策定時の現状値（令和6年度：65.5%）、令和7年度目安値（66.6%）、令和7年度実績値、令和10年度目標値をそのまま用いた。県は令和7年度進捗率（（実績値－現状値）÷（目安値－現状値））を0%と公表している。assessment はこの公表進捗率への機械的な対応付け（100%以上は achieved、0%を超え100%未満は partially_achieved、0%は not_achieved）であり、Jichi Insight 独自の評価ではない。県は指標ごとの評定区分そのものは公表しておらず、区分別の集計は基本目標単位でのみ公表している。",
+  "direction": "increase",
+  "id": "jp-local-120006-project-2025-growing-medical-demand-kpi-medical-system-confidence-rate",
+  "name": "地域の医療体制に安心を感じている県民の割合",
+  "project_id": "jp-local-120006-project-2025-growing-medical-demand",
+  "review_status": "reviewed",
+  "sources": [
+   "chiba-pref-comprehensive-plan-document",
+   "chiba-pref-policy-evaluation-form-fy2025-goal3",
+   "chiba-pref-policy-evaluation-fy2025-indicators"
+  ],
+  "target": {
+   "period": "令和10年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ],
+   "status": "available",
+   "value": 70.0
+  },
+  "unit": "%"
+ },
+ {
+  "actuals": [
+   {
+    "period": "令和7年度",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal3",
+     "chiba-pref-policy-evaluation-fy2025-indicators"
+    ],
+    "status": "available",
+    "value": 63.1
+   }
+  ],
+  "assessment": "achieved",
+  "baseline": {
+   "period": "令和6年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document",
+    "chiba-pref-policy-evaluation-form-fy2025-goal3"
+   ],
+   "status": "available",
+   "value": 62.2
+  },
+  "causality_note": null,
+  "confidence": "high",
+  "definition": "県政に関する世論調査において、「積極的に健康づくりに取り組んでいるか」との質問に対し、「そう思う」「どちらかといえばそう思う」と回答した県民の割合（千葉県総合計画の指標一覧）。令和10年度目標値は数値ではなく「増加を目指します」とされ、令和7年度目安値は現状値と同率である。値は千葉県総合計画政策評価帳票（施策評価シート、評価年度：令和7年度）と政策評価の概要資料2「社会目標の実績値及び目標値」に掲載された計画策定時の現状値（令和6年度：62.2%）、令和7年度目安値（62.2%）、令和7年度実績値、令和10年度目標値をそのまま用いた。県は令和7年度進捗率（（実績値－現状値）÷（目安値－現状値））を100%と公表している。assessment はこの公表進捗率への機械的な対応付け（100%以上は achieved、0%を超え100%未満は partially_achieved、0%は not_achieved）であり、Jichi Insight 独自の評価ではない。県は指標ごとの評定区分そのものは公表しておらず、区分別の集計は基本目標単位でのみ公表している。",
+  "direction": "increase",
+  "id": "jp-local-120006-project-2025-lifelong-health-prevention-kpi-active-health-effort-rate",
+  "name": "積極的に健康づくりに取り組んでいると感じている県民の割合",
+  "project_id": "jp-local-120006-project-2025-lifelong-health-prevention",
+  "review_status": "reviewed",
+  "sources": [
+   "chiba-pref-comprehensive-plan-document",
+   "chiba-pref-policy-evaluation-form-fy2025-goal3",
+   "chiba-pref-policy-evaluation-fy2025-indicators"
+  ],
+  "target": {
+   "period": "令和10年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ],
+   "status": "available",
+   "value": "増加を目指します"
+  },
+  "unit": "%"
+ },
+ {
+  "actuals": [
+   {
+    "period": "令和7年度",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal3",
+     "chiba-pref-policy-evaluation-fy2025-indicators"
+    ],
+    "status": "not_published",
+    "value": null
+   }
+  ],
+  "assessment": "not_assessable",
+  "baseline": {
+   "period": "令和5年",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document",
+    "chiba-pref-policy-evaluation-form-fy2025-goal3"
+   ],
+   "status": "available",
+   "value": 64.9
+  },
+  "causality_note": null,
+  "confidence": "high",
+  "definition": "人口構成が基準人口（平成27年モデル人口）と同じと仮定した場合における75歳未満の人口10万人当たりのがんによる死亡率（千葉県総合計画の指標一覧）。計画の指標一覧と評価シートでは単位記号なしの64.9と表示される一方、政策評価資料2では「64.9%」と%記号付きで印字されている。本登録では計画の定義どおり人口10万対の率として記録した。令和10年度目標値は数値ではなく「減少を目指します」とされ、令和7年度目安値は現状値と同値である。値は千葉県総合計画政策評価帳票（施策評価シート、評価年度：令和7年度）と政策評価の概要資料2「社会目標の実績値及び目標値」に掲載された計画策定時の現状値（令和5年：64.9人口10万対）、令和7年度目安値（64.9人口10万対）、令和7年度実績値、令和10年度目標値をそのまま用いた。令和7年度実績値は未判明（令和8年11月頃に判明予定と評価シートに記載）であり、進捗率も未判明のため、assessment は not_assessable とした。政策評価資料2には直近の判明値として令和6年度実績値63.3が参考として併記され、県は本指標をみなし評価の対象（資料2の「〇」）とし、令和6年度進捗率100.0%を注記している。assessment は進捗率が公表されていないため not_assessable とした。進捗率が公表されている指標については、県の公表進捗率への機械的な対応付け（100%以上は achieved、0%を超え100%未満は partially_achieved、0%はnot_achieved）としており、Jichi Insight 独自の評価ではない。",
+  "direction": "decrease",
+  "id": "jp-local-120006-project-2025-lifelong-health-prevention-kpi-cancer-age-adjusted-mortality",
+  "name": "がんによる75歳未満年齢調整死亡率（人口10万対）",
+  "project_id": "jp-local-120006-project-2025-lifelong-health-prevention",
+  "review_status": "reviewed",
+  "sources": [
+   "chiba-pref-comprehensive-plan-document",
+   "chiba-pref-policy-evaluation-form-fy2025-goal3",
+   "chiba-pref-policy-evaluation-fy2025-indicators"
+  ],
+  "target": {
+   "period": "令和10年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ],
+   "status": "available",
+   "value": "減少を目指します"
+  },
+  "unit": "人口10万対"
+ },
+ {
+  "actuals": [
+   {
+    "period": "令和7年度",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal3",
+     "chiba-pref-policy-evaluation-fy2025-indicators"
+    ],
+    "status": "not_published",
+    "value": null
+   }
+  ],
+  "assessment": "not_assessable",
+  "baseline": {
+   "period": "令和3年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document",
+    "chiba-pref-policy-evaluation-form-fy2025-goal3"
+   ],
+   "status": "available",
+   "value": 18.17
+  },
+  "causality_note": null,
+  "confidence": "high",
+  "definition": "65歳の人が、日常生活に介護を要しない期間（要介護2以上の認定を受けるまでの期間）の平均のうち男性分（千葉県総合計画の指標一覧）。この指標は男性・女性の2項目で構成されており、本登録では項目ごとに分けて記録した。令和10年度目標値は数値ではなく「延伸を目指します」とされ、令和7年度目安値は現状値と同値である。値は千葉県総合計画政策評価帳票（施策評価シート、評価年度：令和7年度）と政策評価の概要資料2「社会目標の実績値及び目標値」に掲載された計画策定時の現状値（令和3年度：18.17年）、令和7年度目安値（18.17年）、令和7年度実績値、令和10年度目標値をそのまま用いた。令和7年度実績値は未判明（令和10年頃に判明予定と評価シートに記載）であり、進捗率も未判明のため、assessment は not_assessable とした。政策評価資料2には直近の判明値として令和4年度実績値18.21年が参考として併記されている。県は本指標を現行計画で新たに設定した指標として、みなし評価の対象（資料2の「※」）としている。assessment は進捗率が公表されていないため not_assessable とした。進捗率が公表されている指標については、県の公表進捗率への機械的な対応付け（100%以上は achieved、0%を超え100%未満は partially_achieved、0%はnot_achieved）としており、Jichi Insight 独自の評価ではない。",
+  "direction": "increase",
+  "id": "jp-local-120006-project-2025-lifelong-health-prevention-kpi-independent-living-period-male",
+  "name": "日常生活動作が自立している期間の平均（65歳の平均自立期間）（男性）",
+  "project_id": "jp-local-120006-project-2025-lifelong-health-prevention",
+  "review_status": "reviewed",
+  "sources": [
+   "chiba-pref-comprehensive-plan-document",
+   "chiba-pref-policy-evaluation-form-fy2025-goal3",
+   "chiba-pref-policy-evaluation-fy2025-indicators"
+  ],
+  "target": {
+   "period": "令和10年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ],
+   "status": "available",
+   "value": "延伸を目指します"
+  },
+  "unit": "年"
+ },
+ {
+  "actuals": [
+   {
+    "period": "令和7年度",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal3",
+     "chiba-pref-policy-evaluation-fy2025-indicators"
+    ],
+    "status": "not_published",
+    "value": null
+   }
+  ],
+  "assessment": "not_assessable",
+  "baseline": {
+   "period": "令和3年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document",
+    "chiba-pref-policy-evaluation-form-fy2025-goal3"
+   ],
+   "status": "available",
+   "value": 21.06
+  },
+  "causality_note": null,
+  "confidence": "high",
+  "definition": "65歳の人が、日常生活に介護を要しない期間（要介護2以上の認定を受けるまでの期間）の平均のうち女性分（千葉県総合計画の指標一覧）。この指標は男性・女性の2項目で構成されており、本登録では項目ごとに分けて記録した。令和10年度目標値は数値ではなく「延伸を目指します」とされ、令和7年度目安値は現状値と同値である。値は千葉県総合計画政策評価帳票（施策評価シート、評価年度：令和7年度）と政策評価の概要資料2「社会目標の実績値及び目標値」に掲載された計画策定時の現状値（令和3年度：21.06年）、令和7年度目安値（21.06年）、令和7年度実績値、令和10年度目標値をそのまま用いた。令和7年度実績値は未判明（令和10年頃に判明予定と評価シートに記載）であり、進捗率も未判明のため、assessment は not_assessable とした。政策評価資料2には直近の判明値として令和4年度実績値21.23年が参考として併記されている。県は本指標を現行計画で新たに設定した指標として、みなし評価の対象（資料2の「※」）としている。assessment は進捗率が公表されていないため not_assessable とした。進捗率が公表されている指標については、県の公表進捗率への機械的な対応付け（100%以上は achieved、0%を超え100%未満は partially_achieved、0%はnot_achieved）としており、Jichi Insight 独自の評価ではない。",
+  "direction": "increase",
+  "id": "jp-local-120006-project-2025-lifelong-health-prevention-kpi-independent-living-period-female",
+  "name": "日常生活動作が自立している期間の平均（65歳の平均自立期間）（女性）",
+  "project_id": "jp-local-120006-project-2025-lifelong-health-prevention",
+  "review_status": "reviewed",
+  "sources": [
+   "chiba-pref-comprehensive-plan-document",
+   "chiba-pref-policy-evaluation-form-fy2025-goal3",
+   "chiba-pref-policy-evaluation-fy2025-indicators"
+  ],
+  "target": {
+   "period": "令和10年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ],
+   "status": "available",
+   "value": "延伸を目指します"
+  },
+  "unit": "年"
+ },
+ {
+  "actuals": [
+   {
+    "period": "令和7年度",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal4",
+     "chiba-pref-policy-evaluation-fy2025-indicators"
+    ],
+    "status": "available",
+    "value": 139
+   }
+  ],
+  "assessment": "achieved",
+  "baseline": {
+   "period": "令和6年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document",
+    "chiba-pref-policy-evaluation-form-fy2025-goal4"
+   ],
+   "status": "available",
+   "value": 106
+  },
+  "causality_note": null,
+  "confidence": "high",
+  "definition": "「ちば・うみやま保育」（千葉県自然環境保育認証制度）において認証を受けた幼稚園や保育所等の数（千葉県総合計画の指標一覧）。値は千葉県総合計画政策評価帳票（施策評価シート、評価年度：令和7年度）と政策評価の概要資料2「社会目標の実績値及び目標値」に掲載された計画策定時の現状値（令和6年度：106団体）、令和7年度目安値（137団体）、令和7年度実績値、令和10年度目標値をそのまま用いた。県は令和7年度進捗率（（実績値－現状値）÷（目安値－現状値））を100%と公表している。assessment はこの公表進捗率への機械的な対応付け（100%以上は achieved、0%を超え100%未満は partially_achieved、0%は not_achieved）であり、Jichi Insight 独自の評価ではない。県は指標ごとの評定区分そのものは公表しておらず、区分別の集計は基本目標単位でのみ公表している。",
+  "direction": "increase",
+  "id": "jp-local-120006-project-2025-children-youth-growth-support-kpi-umiyama-nursery-certifications",
+  "name": "ちば・うみやま保育認証団体数",
+  "project_id": "jp-local-120006-project-2025-children-youth-growth-support",
+  "review_status": "reviewed",
+  "sources": [
+   "chiba-pref-comprehensive-plan-document",
+   "chiba-pref-policy-evaluation-form-fy2025-goal4",
+   "chiba-pref-policy-evaluation-fy2025-indicators"
+  ],
+  "target": {
+   "period": "令和10年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ],
+   "status": "available",
+   "value": 230
+  },
+  "unit": "団体"
+ },
+ {
+  "actuals": [
+   {
+    "period": "令和7年度",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal4",
+     "chiba-pref-policy-evaluation-fy2025-indicators"
+    ],
+    "status": "available",
+    "value": 36
+   }
+  ],
+  "assessment": "achieved",
+  "baseline": {
+   "period": "令和6年4月1日現在",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document",
+    "chiba-pref-policy-evaluation-form-fy2025-goal4"
+   ],
+   "status": "available",
+   "value": 23
+  },
+  "causality_note": null,
+  "confidence": "high",
+  "definition": "母子保健と児童福祉の両機能が連携し、全ての妊産婦・子育て世帯・こどもに対して、一体的に相談支援を行う「こども家庭センター」を設置した市町村数（千葉県総合計画の指標一覧）。目標年度は他の指標と異なり令和9年度である。値は千葉県総合計画政策評価帳票（施策評価シート、評価年度：令和7年度）と政策評価の概要資料2「社会目標の実績値及び目標値」に掲載された計画策定時の現状値（令和6年4月1日現在：23市町村）、令和7年度目安値（33市町村）、令和7年度実績値、令和10年度目標値をそのまま用いた。県は令和7年度進捗率（（実績値－現状値）÷（目安値－現状値））を100%と公表している。assessment はこの公表進捗率への機械的な対応付け（100%以上は achieved、0%を超え100%未満は partially_achieved、0%は not_achieved）であり、Jichi Insight 独自の評価ではない。県は指標ごとの評定区分そのものは公表しておらず、区分別の集計は基本目標単位でのみ公表している。",
+  "direction": "increase",
+  "id": "jp-local-120006-project-2025-children-youth-growth-support-kpi-child-family-center-municipalities",
+  "name": "こども家庭センターの設置市町村数",
+  "project_id": "jp-local-120006-project-2025-children-youth-growth-support",
+  "review_status": "reviewed",
+  "sources": [
+   "chiba-pref-comprehensive-plan-document",
+   "chiba-pref-policy-evaluation-form-fy2025-goal4",
+   "chiba-pref-policy-evaluation-fy2025-indicators"
+  ],
+  "target": {
+   "period": "令和9年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ],
+   "status": "available",
+   "value": 54
+  },
+  "unit": "市町村"
+ },
+ {
+  "actuals": [
+   {
+    "period": "令和7年度",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal4",
+     "chiba-pref-policy-evaluation-fy2025-indicators"
+    ],
+    "status": "available",
+    "value": 35.7
+   }
+  ],
+  "assessment": "partially_achieved",
+  "baseline": {
+   "period": "令和5年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document",
+    "chiba-pref-policy-evaluation-form-fy2025-goal4"
+   ],
+   "status": "available",
+   "value": 34.9
+  },
+  "causality_note": null,
+  "confidence": "high",
+  "definition": "社会的養護が必要な児童のうち、里親及びファミリーホームに委託されている児童の割合（千葉県総合計画の指標一覧）。値は千葉県総合計画政策評価帳票（施策評価シート、評価年度：令和7年度）と政策評価の概要資料2「社会目標の実績値及び目標値」に掲載された計画策定時の現状値（令和5年度：34.9%）、令和7年度目安値（36.6%）、令和7年度実績値、令和10年度目標値をそのまま用いた。県は令和7年度進捗率（（実績値－現状値）÷（目安値－現状値））を47.1%と公表している。assessment はこの公表進捗率への機械的な対応付け（100%以上は achieved、0%を超え100%未満は partially_achieved、0%は not_achieved）であり、Jichi Insight 独自の評価ではない。県は指標ごとの評定区分そのものは公表しておらず、区分別の集計は基本目標単位でのみ公表している。",
+  "direction": "increase",
+  "id": "jp-local-120006-project-2025-children-youth-growth-support-kpi-foster-care-placement-rate",
+  "name": "里親等委託率",
+  "project_id": "jp-local-120006-project-2025-children-youth-growth-support",
+  "review_status": "reviewed",
+  "sources": [
+   "chiba-pref-comprehensive-plan-document",
+   "chiba-pref-policy-evaluation-form-fy2025-goal4",
+   "chiba-pref-policy-evaluation-fy2025-indicators"
+  ],
+  "target": {
+   "period": "令和10年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ],
+   "status": "available",
+   "value": 39.1
+  },
+  "unit": "%"
+ },
+ {
+  "actuals": [
+   {
+    "period": "令和7年度",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal4",
+     "chiba-pref-policy-evaluation-fy2025-indicators"
+    ],
+    "status": "available",
+    "value": 360
+   }
+  ],
+  "assessment": "not_achieved",
+  "baseline": {
+   "period": "令和6年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document",
+    "chiba-pref-policy-evaluation-form-fy2025-goal4"
+   ],
+   "status": "available",
+   "value": 364
+  },
+  "causality_note": null,
+  "confidence": "high",
+  "definition": "地域の身近なところで、気軽に、子育て中の親子の交流や子育て相談ができる地域子育て支援拠点の数（千葉県総合計画の指標一覧）。値は千葉県総合計画政策評価帳票（施策評価シート、評価年度：令和7年度）と政策評価の概要資料2「社会目標の実績値及び目標値」に掲載された計画策定時の現状値（令和6年度：364箇所）、令和7年度目安値（370箇所）、令和7年度実績値、令和10年度目標値をそのまま用いた。県は令和7年度進捗率（（実績値－現状値）÷（目安値－現状値））を0%と公表している。assessment はこの公表進捗率への機械的な対応付け（100%以上は achieved、0%を超え100%未満は partially_achieved、0%は not_achieved）であり、Jichi Insight 独自の評価ではない。県は指標ごとの評定区分そのものは公表しておらず、区分別の集計は基本目標単位でのみ公表している。",
+  "direction": "increase",
+  "id": "jp-local-120006-project-2025-childrearing-environment-kpi-childrearing-support-centers",
+  "name": "地域子育て支援拠点の数",
+  "project_id": "jp-local-120006-project-2025-childrearing-environment",
+  "review_status": "reviewed",
+  "sources": [
+   "chiba-pref-comprehensive-plan-document",
+   "chiba-pref-policy-evaluation-form-fy2025-goal4",
+   "chiba-pref-policy-evaluation-fy2025-indicators"
+  ],
+  "target": {
+   "period": "令和10年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ],
+   "status": "available",
+   "value": 387
+  },
+  "unit": "箇所"
+ },
+ {
+  "actuals": [
+   {
+    "period": "令和7年度",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal4",
+     "chiba-pref-policy-evaluation-fy2025-indicators"
+    ],
+    "status": "not_published",
+    "value": null
+   }
+  ],
+  "assessment": "not_assessable",
+  "baseline": {
+   "period": "令和7年4月1日現在",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document",
+    "chiba-pref-policy-evaluation-form-fy2025-goal4"
+   ],
+   "status": "available",
+   "value": 91
+  },
+  "causality_note": null,
+  "confidence": "high",
+  "definition": "保育所等利用待機児童の数（千葉県総合計画の指標一覧）。目標は数値ではなく「解消を目指します」とされ、時点は令和11年4月1日現在である。値は千葉県総合計画政策評価帳票（施策評価シート、評価年度：令和7年度）と政策評価の概要資料2「社会目標の実績値及び目標値」に掲載された計画策定時の現状値（令和7年4月1日現在：91人）、令和7年度目安値（68人）、令和7年度実績値、令和10年度目標値をそのまま用いた。令和7年度実績値は未判明（令和8年9月に判明すると評価シートに記載）であり、進捗率も未判明のため、assessment は not_assessable とした。県は本指標をみなし評価の対象（政策評価資料2の「〇」）とし、令和6年度進捗率78.7%を注記している。assessment は進捗率が公表されていないため not_assessable とした。進捗率が公表されている指標については、県の公表進捗率への機械的な対応付け（100%以上は achieved、0%を超え100%未満は partially_achieved、0%はnot_achieved）としており、Jichi Insight 独自の評価ではない。",
+  "direction": "decrease",
+  "id": "jp-local-120006-project-2025-childrearing-environment-kpi-nursery-waitlist-children",
+  "name": "保育所等の待機児童数",
+  "project_id": "jp-local-120006-project-2025-childrearing-environment",
+  "review_status": "reviewed",
+  "sources": [
+   "chiba-pref-comprehensive-plan-document",
+   "chiba-pref-policy-evaluation-form-fy2025-goal4",
+   "chiba-pref-policy-evaluation-fy2025-indicators"
+  ],
+  "target": {
+   "period": "令和11年4月1日現在",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ],
+   "status": "available",
+   "value": "解消を目指します"
+  },
+  "unit": "人"
+ },
+ {
+  "actuals": [
+   {
+    "period": "令和7年度",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal4",
+     "chiba-pref-policy-evaluation-fy2025-indicators"
+    ],
+    "status": "available",
+    "value": 1106
+   }
+  ],
+  "assessment": "partially_achieved",
+  "baseline": {
+   "period": "令和6年5月1日現在",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document",
+    "chiba-pref-policy-evaluation-form-fy2025-goal4"
+   ],
+   "status": "available",
+   "value": 1181
+  },
+  "causality_note": null,
+  "confidence": "high",
+  "definition": "放課後児童クラブ待機児童の数（千葉県総合計画の指標一覧）。目標は数値ではなく「解消を目指します」とされ、時点は令和11年5月1日現在である。値は千葉県総合計画政策評価帳票（施策評価シート、評価年度：令和7年度）と政策評価の概要資料2「社会目標の実績値及び目標値」に掲載された計画策定時の現状値（令和6年5月1日現在：1181人）、令和7年度目安値（709人）、令和7年度実績値、令和10年度目標値をそのまま用いた。県は令和7年度進捗率（（実績値－現状値）÷（目安値－現状値））を15.9%と公表している。assessment はこの公表進捗率への機械的な対応付け（100%以上は achieved、0%を超え100%未満は partially_achieved、0%は not_achieved）であり、Jichi Insight 独自の評価ではない。県は指標ごとの評定区分そのものは公表しておらず、区分別の集計は基本目標単位でのみ公表している。",
+  "direction": "decrease",
+  "id": "jp-local-120006-project-2025-childrearing-environment-kpi-after-school-waitlist-children",
+  "name": "放課後児童クラブの待機児童数",
+  "project_id": "jp-local-120006-project-2025-childrearing-environment",
+  "review_status": "reviewed",
+  "sources": [
+   "chiba-pref-comprehensive-plan-document",
+   "chiba-pref-policy-evaluation-form-fy2025-goal4",
+   "chiba-pref-policy-evaluation-fy2025-indicators"
+  ],
+  "target": {
+   "period": "令和11年5月1日現在",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ],
+   "status": "available",
+   "value": "解消を目指します"
+  },
+  "unit": "人"
+ },
+ {
+  "actuals": [
+   {
+    "period": "令和7年度",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal5",
+     "chiba-pref-policy-evaluation-fy2025-indicators"
+    ],
+    "status": "available",
+    "value": 49.3
+   }
+  ],
+  "assessment": "partially_achieved",
+  "baseline": {
+   "period": "令和6年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document",
+    "chiba-pref-policy-evaluation-form-fy2025-goal5"
+   ],
+   "status": "available",
+   "value": 47.4
+  },
+  "causality_note": null,
+  "confidence": "high",
+  "definition": "県政に関する世論調査において、「『ダイバーシティ』という概念を知っている」と回答した県民の割合（千葉県総合計画の指標一覧）。値は千葉県総合計画政策評価帳票（施策評価シート、評価年度：令和7年度）と政策評価の概要資料2「社会目標の実績値及び目標値」に掲載された計画策定時の現状値（令和6年度：47.4%）、令和7年度目安値（50.6%）、令和7年度実績値、令和10年度目標値をそのまま用いた。県は令和7年度進捗率（（実績値－現状値）÷（目安値－現状値））を59.4%と公表している。assessment はこの公表進捗率への機械的な対応付け（100%以上は achieved、0%を超え100%未満は partially_achieved、0%は not_achieved）であり、Jichi Insight 独自の評価ではない。県は指標ごとの評定区分そのものは公表しておらず、区分別の集計は基本目標単位でのみ公表している。",
+  "direction": "increase",
+  "id": "jp-local-120006-project-2025-diversity-inclusive-society-kpi-diversity-awareness-rate",
+  "name": "ダイバーシティという考え方を知っている県民の割合",
+  "project_id": "jp-local-120006-project-2025-diversity-inclusive-society",
+  "review_status": "reviewed",
+  "sources": [
+   "chiba-pref-comprehensive-plan-document",
+   "chiba-pref-policy-evaluation-form-fy2025-goal5",
+   "chiba-pref-policy-evaluation-fy2025-indicators"
+  ],
+  "target": {
+   "period": "令和10年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ],
+   "status": "available",
+   "value": 60.0
+  },
+  "unit": "%"
+ },
+ {
+  "actuals": [
+   {
+    "period": "令和7年度",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal6",
+     "chiba-pref-policy-evaluation-fy2025-indicators"
+    ],
+    "status": "not_published",
+    "value": null
+   }
+  ],
+  "assessment": "not_assessable",
+  "baseline": {
+   "period": "令和4年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document",
+    "chiba-pref-policy-evaluation-form-fy2025-goal6"
+   ],
+   "status": "available",
+   "value": 6097.4
+  },
+  "causality_note": null,
+  "confidence": "high",
+  "definition": "千葉県における「エネルギー起源二酸化炭素排出量の現況推計値（産業部門、家庭部門、業務その他部門、運輸部門の合計）」（千葉県総合計画の指標一覧）。計画策定時の現状値は計画書と評価シートの6,097.4万t-CO2を用いた。政策評価資料2では6,108.7万t-CO2と異なる値が印字されており、両資料の間で値が一致していないことをここに記録する。値は千葉県総合計画政策評価帳票（施策評価シート、評価年度：令和7年度）と政策評価の概要資料2「社会目標の実績値及び目標値」に掲載された計画策定時の現状値（令和4年度：6097.4万t-CO2）、令和7年度目安値（5606.8万t-CO2）、令和7年度実績値、令和10年度目標値をそのまま用いた。令和7年度実績値は未判明（令和9年度末頃に判明予定と評価シートに記載）であり、進捗率も未判明のため、assessment は not_assessable とした。政策評価資料2には直近の判明値として令和5年度実績値6,024.2万t-CO2が参考として併記されている。県は本指標を現行計画で新たに設定した指標として、みなし評価の対象（資料2の「※」）としている。assessment は進捗率が公表されていないため not_assessable とした。進捗率が公表されている指標については、県の公表進捗率への機械的な対応付け（100%以上は achieved、0%を超え100%未満は partially_achieved、0%はnot_achieved）としており、Jichi Insight 独自の評価ではない。",
+  "direction": "decrease",
+  "id": "jp-local-120006-project-2025-climate-change-measures-kpi-energy-co2-emissions",
+  "name": "エネルギー起源二酸化炭素排出量の推計値",
+  "project_id": "jp-local-120006-project-2025-climate-change-measures",
+  "review_status": "reviewed",
+  "sources": [
+   "chiba-pref-comprehensive-plan-document",
+   "chiba-pref-policy-evaluation-form-fy2025-goal6",
+   "chiba-pref-policy-evaluation-fy2025-indicators"
+  ],
+  "target": {
+   "period": "令和10年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ],
+   "status": "available",
+   "value": 5116.2
+  },
+  "unit": "万t-CO2"
+ },
+ {
+  "actuals": [
+   {
+    "period": "令和7年度",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal6",
+     "chiba-pref-policy-evaluation-fy2025-indicators"
+    ],
+    "status": "not_published",
+    "value": null
+   }
+  ],
+  "assessment": "not_assessable",
+  "baseline": {
+   "period": "令和5年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document",
+    "chiba-pref-policy-evaluation-form-fy2025-goal6"
+   ],
+   "status": "available",
+   "value": 16.2
+  },
+  "causality_note": null,
+  "confidence": "high",
+  "definition": "千葉県における再生可能エネルギーの導入比率（千葉県総合計画の指標一覧）。値は千葉県総合計画政策評価帳票（施策評価シート、評価年度：令和7年度）と政策評価の概要資料2「社会目標の実績値及び目標値」に掲載された計画策定時の現状値（令和5年度：16.2%）、令和7年度目安値（19.3%）、令和7年度実績値、令和10年度目標値をそのまま用いた。令和7年度実績値は未判明（令和8年12月頃に判明予定と評価シートに記載）であり、進捗率も未判明のため、assessment は not_assessable とした。政策評価資料2には直近の判明値として令和6年度実績値17.6%が参考として併記されている。県は本指標を現行計画で新たに設定した指標として、みなし評価の対象（資料2の「※」）としている。assessment は進捗率が公表されていないため not_assessable とした。進捗率が公表されている指標については、県の公表進捗率への機械的な対応付け（100%以上は achieved、0%を超え100%未満は partially_achieved、0%はnot_achieved）としており、Jichi Insight 独自の評価ではない。",
+  "direction": "increase",
+  "id": "jp-local-120006-project-2025-climate-change-measures-kpi-renewable-energy-ratio",
+  "name": "再生可能エネルギー導入比率",
+  "project_id": "jp-local-120006-project-2025-climate-change-measures",
+  "review_status": "reviewed",
+  "sources": [
+   "chiba-pref-comprehensive-plan-document",
+   "chiba-pref-policy-evaluation-form-fy2025-goal6",
+   "chiba-pref-policy-evaluation-fy2025-indicators"
+  ],
+  "target": {
+   "period": "令和10年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ],
+   "status": "available",
+   "value": 23.9
+  },
+  "unit": "%"
+ },
+ {
+  "actuals": [
+   {
+    "period": "令和7年度",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal6",
+     "chiba-pref-policy-evaluation-fy2025-indicators"
+    ],
+    "status": "available",
+    "value": 840
+   }
+  ],
+  "assessment": "not_achieved",
+  "baseline": {
+   "period": "令和6年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document",
+    "chiba-pref-policy-evaluation-form-fy2025-goal6"
+   ],
+   "status": "available",
+   "value": 854
+  },
+  "causality_note": null,
+  "confidence": "high",
+  "definition": "間伐・植栽・下刈り・枝打ち等により整備された森林の面積（市町村による森林環境譲与税を活用した整備等を含む）（千葉県総合計画の指標一覧）。値は千葉県総合計画政策評価帳票（施策評価シート、評価年度：令和7年度）と政策評価の概要資料2「社会目標の実績値及び目標値」に掲載された計画策定時の現状値（令和6年度：854ha）、令和7年度目安値（867ha）、令和7年度実績値、令和10年度目標値をそのまま用いた。県は令和7年度進捗率（（実績値－現状値）÷（目安値－現状値））を0%と公表している。assessment はこの公表進捗率への機械的な対応付け（100%以上は achieved、0%を超え100%未満は partially_achieved、0%は not_achieved）であり、Jichi Insight 独自の評価ではない。県は指標ごとの評定区分そのものは公表しておらず、区分別の集計は基本目標単位でのみ公表している。",
+  "direction": "increase",
+  "id": "jp-local-120006-project-2025-climate-change-measures-kpi-forest-maintenance-area",
+  "name": "森林整備面積",
+  "project_id": "jp-local-120006-project-2025-climate-change-measures",
+  "review_status": "reviewed",
+  "sources": [
+   "chiba-pref-comprehensive-plan-document",
+   "chiba-pref-policy-evaluation-form-fy2025-goal6",
+   "chiba-pref-policy-evaluation-fy2025-indicators"
+  ],
+  "target": {
+   "period": "令和10年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ],
+   "status": "available",
+   "value": 904
+  },
+  "unit": "ha"
+ },
+ {
+  "actuals": [
+   {
+    "period": "令和7年度",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal6",
+     "chiba-pref-policy-evaluation-fy2025-indicators"
+    ],
+    "status": "not_published",
+    "value": null
+   }
+  ],
+  "assessment": "not_assessable",
+  "baseline": {
+   "period": "令和5年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document",
+    "chiba-pref-policy-evaluation-form-fy2025-goal6"
+   ],
+   "status": "available",
+   "value": 62.4
+  },
+  "causality_note": null,
+  "confidence": "high",
+  "definition": "県内の電動車保有台数（軽自動車及び二輪車を除く）。電動車とは電気自動車、燃料電池自動車、プラグインハイブリッド自動車、ハイブリッド自動車を指す（千葉県総合計画の指標一覧）。値は千葉県総合計画政策評価帳票（施策評価シート、評価年度：令和7年度）と政策評価の概要資料2「社会目標の実績値及び目標値」に掲載された計画策定時の現状値（令和5年度：62.4万台）、令和7年度目安値（73.2万台）、令和7年度実績値、令和10年度目標値をそのまま用いた。令和7年度実績値は未判明（令和8年12月頃に判明予定と評価シートに記載）であり、進捗率も未判明のため、assessment は not_assessable とした。政策評価資料2には直近の判明値として令和6年度実績値68.0万台が参考として併記され、県は本指標をみなし評価の対象（資料2の「〇」）としている。assessment は進捗率が公表されていないため not_assessable とした。進捗率が公表されている指標については、県の公表進捗率への機械的な対応付け（100%以上は achieved、0%を超え100%未満は partially_achieved、0%はnot_achieved）としており、Jichi Insight 独自の評価ではない。",
+  "direction": "increase",
+  "id": "jp-local-120006-project-2025-climate-change-measures-kpi-electric-vehicle-count",
+  "name": "電動車保有台数",
+  "project_id": "jp-local-120006-project-2025-climate-change-measures",
+  "review_status": "reviewed",
+  "sources": [
+   "chiba-pref-comprehensive-plan-document",
+   "chiba-pref-policy-evaluation-form-fy2025-goal6",
+   "chiba-pref-policy-evaluation-fy2025-indicators"
+  ],
+  "target": {
+   "period": "令和10年度",
+   "source_ids": [
+    "chiba-pref-comprehensive-plan-document"
+   ],
+   "status": "available",
+   "value": 89.3
+  },
+  "unit": "万台"
+ }
+]

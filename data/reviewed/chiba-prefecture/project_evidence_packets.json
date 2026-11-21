@@ -1,0 +1,792 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第3編実施計画編の施策項目見出しと施策評価シートの施策名",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-comprehensive-plan-document",
+     "chiba-pref-policy-evaluation-form-fy2025-goal1"
+    ],
+    "statement": "施策1「激甚化する災害への対応力強化」は、千葉県総合計画 ～千葉の未来をともに創る～（実施計画編：令和7〜10年度）の基本目標1「危機管理体制の構築と安全の確保」・政策「危機管理体制の構築と「防災県・千葉」の確立」に属する41の施策の一つで、施策コードはⅠ-1-①である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第3編実施計画編の基本目標・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-comprehensive-plan-document"
+    ],
+    "statement": "選定規則（6つの基本目標を計画の掲載順に巡回し、各基本目標では施策を掲載順にたどる）により第1巡目で選定した。対応関係は選定カタログ（data/catalog/chiba_priority_project_selection.json）に記録した。金額の大小では選んでいない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "施策評価シート【1 施策概要】の「施策の目標」",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal1"
+    ],
+    "statement": "purpose は施策評価シートの「施策の目標」を転記したものである。計画書第3編実施計画編の当該施策項目の【目標】と同文である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "施策評価シート【2 施策の分析】の予算額・決算額と令和7年度計画事業費一覧の施策計",
+    "review_note": "評価シートの施策計は計画事業費一覧の合計（A）と一致することを確認した。",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal1",
+     "chiba-pref-plan-costs-fy2025"
+    ],
+    "statement": "令和7年度予算額69,126,528千円と決算額56,532,677千円は、施策評価シートが施策単位で公表する施策計である。予算額は計画事業費一覧の「9月補正後予算額」に基づく合計（再掲事業を含む）であり、当初予算額ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "施策評価シート【1 施策概要】の進展度表示と政策評価の概要（資料1）",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal1",
+     "chiba-pref-policy-evaluation-fy2025-overview"
+    ],
+    "statement": "県は施策単位の評定（ランク付け）は公表していないため、official_evaluation は未登録（null）とした。代わりに公表されている施策単位の集計として、行政活動目標及び補助指標の進展度は80.0%（達成16指標／設定20指標）である（評価シート【1 施策概要】）。これは指標の達成割合の集計であり、施策への評定ではないため評価欄には転記しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "施策評価シート【1 施策概要】の社会目標の進捗状況と政策評価の概要資料2",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal1",
+     "chiba-pref-policy-evaluation-fy2025-indicators",
+     "chiba-pref-comprehensive-plan-document"
+    ],
+    "statement": "本施策の社会目標4件（2項目で構成される指標は項目ごとに分割）をKPI として登録した。各 KPI の assessment は県が公表した令和7年度進捗率への機械的な対応付けであり、実績値が未判明の指標は not_assessable とした。行政活動目標（455指標）の個別実績は評価シートの取組別表に掲載されているが、本段階では KPI とせず、施策単位の進展度の集計のみを記録した。"
+   }
+  ],
+  "id": "evidence-jp-local-120006-project-2025-disaster-response-strengthening",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "現行計画の政策評価は令和7年度事業実施分のみが公表済みである。令和8年度以降の評価が公表されたら年度別レコードを追加する。",
+   "行政活動目標の個別実績（評価シートの取組別表）は本段階では KPI 登録していない。登録範囲の見直しは更新サイクル（Issue #706）の対象である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-120006-project-2025-disaster-response-strengthening",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第3編実施計画編の施策項目見出しと施策評価シートの施策名",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-comprehensive-plan-document",
+     "chiba-pref-policy-evaluation-form-fy2025-goal1"
+    ],
+    "statement": "施策2「災害に強いまちづくりの推進」は、千葉県総合計画 ～千葉の未来をともに創る～（実施計画編：令和7〜10年度）の基本目標1「危機管理体制の構築と安全の確保」・政策「危機管理体制の構築と「防災県・千葉」の確立」に属する41の施策の一つで、施策コードはⅠ-1-②である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第3編実施計画編の基本目標・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-comprehensive-plan-document"
+    ],
+    "statement": "選定規則（6つの基本目標を計画の掲載順に巡回し、各基本目標では施策を掲載順にたどる）により第2巡目で選定した。対応関係は選定カタログ（data/catalog/chiba_priority_project_selection.json）に記録した。金額の大小では選んでいない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "施策評価シート【1 施策概要】の「施策の目標」",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal1"
+    ],
+    "statement": "purpose は施策評価シートの「施策の目標」を転記したものである。計画書第3編実施計画編の当該施策項目の【目標】と同文である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "施策評価シート【2 施策の分析】の予算額・決算額と令和7年度計画事業費一覧の施策計",
+    "review_note": "評価シートの施策計は計画事業費一覧の合計（A）と一致することを確認した。",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal1",
+     "chiba-pref-plan-costs-fy2025"
+    ],
+    "statement": "令和7年度予算額152,057,071千円と決算額123,689,704千円は、施策評価シートが施策単位で公表する施策計である。予算額は計画事業費一覧の「9月補正後予算額」に基づく合計（再掲事業を含む）であり、当初予算額ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "施策評価シート【1 施策概要】の進展度表示と政策評価の概要（資料1）",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal1",
+     "chiba-pref-policy-evaluation-fy2025-overview"
+    ],
+    "statement": "県は施策単位の評定（ランク付け）は公表していないため、official_evaluation は未登録（null）とした。代わりに公表されている施策単位の集計として、行政活動目標及び補助指標の進展度は70.8%（達成17指標／設定24指標）である（評価シート【1 施策概要】）。これは指標の達成割合の集計であり、施策への評定ではないため評価欄には転記しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "施策評価シート【1 施策概要】の社会目標の進捗状況と政策評価の概要資料2",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal1",
+     "chiba-pref-policy-evaluation-fy2025-indicators",
+     "chiba-pref-comprehensive-plan-document"
+    ],
+    "statement": "本施策の社会目標2件（2項目で構成される指標は項目ごとに分割）をKPI として登録した。各 KPI の assessment は県が公表した令和7年度進捗率への機械的な対応付けであり、実績値が未判明の指標は not_assessable とした。行政活動目標（455指標）の個別実績は評価シートの取組別表に掲載されているが、本段階では KPI とせず、施策単位の進展度の集計のみを記録した。"
+   }
+  ],
+  "id": "evidence-jp-local-120006-project-2025-disaster-resilient-community-development",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "現行計画の政策評価は令和7年度事業実施分のみが公表済みである。令和8年度以降の評価が公表されたら年度別レコードを追加する。",
+   "行政活動目標の個別実績（評価シートの取組別表）は本段階では KPI 登録していない。登録範囲の見直しは更新サイクル（Issue #706）の対象である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-120006-project-2025-disaster-resilient-community-development",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第3編実施計画編の施策項目見出しと施策評価シートの施策名",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-comprehensive-plan-document",
+     "chiba-pref-policy-evaluation-form-fy2025-goal2"
+    ],
+    "statement": "施策7「新たな産業・地域づくりと企業誘致の推進」は、千葉県総合計画 ～千葉の未来をともに創る～（実施計画編：令和7〜10年度）の基本目標2「千葉経済圏の確立と社会資本の整備」・政策「経済の活性化と更なる飛躍」に属する41の施策の一つで、施策コードはⅡ-1-①である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第3編実施計画編の基本目標・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-comprehensive-plan-document"
+    ],
+    "statement": "選定規則（6つの基本目標を計画の掲載順に巡回し、各基本目標では施策を掲載順にたどる）により第1巡目で選定した。対応関係は選定カタログ（data/catalog/chiba_priority_project_selection.json）に記録した。金額の大小では選んでいない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "施策評価シート【1 施策概要】の「施策の目標」",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal2"
+    ],
+    "statement": "purpose は施策評価シートの「施策の目標」を転記したものである。計画書第3編実施計画編の当該施策項目の【目標】と同文である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "施策評価シート【2 施策の分析】の予算額・決算額と令和7年度計画事業費一覧の施策計",
+    "review_note": "評価シートの施策計は計画事業費一覧の合計（A）と一致することを確認した。",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal2",
+     "chiba-pref-plan-costs-fy2025"
+    ],
+    "statement": "令和7年度予算額88,374,794千円と決算額66,570,179千円は、施策評価シートが施策単位で公表する施策計である。予算額は計画事業費一覧の「9月補正後予算額」に基づく合計（再掲事業を含む）であり、当初予算額ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "施策評価シート【1 施策概要】の進展度表示と政策評価の概要（資料1）",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal2",
+     "chiba-pref-policy-evaluation-fy2025-overview"
+    ],
+    "statement": "県は施策単位の評定（ランク付け）は公表していないため、official_evaluation は未登録（null）とした。代わりに公表されている施策単位の集計として、行政活動目標及び補助指標の進展度は60.0%（達成3指標／設定5指標）である（評価シート【1 施策概要】）。これは指標の達成割合の集計であり、施策への評定ではないため評価欄には転記しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "施策評価シート【1 施策概要】の社会目標の進捗状況と政策評価の概要資料2",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal2",
+     "chiba-pref-policy-evaluation-fy2025-indicators",
+     "chiba-pref-comprehensive-plan-document"
+    ],
+    "statement": "本施策の社会目標1件（2項目で構成される指標は項目ごとに分割）をKPI として登録した。各 KPI の assessment は県が公表した令和7年度進捗率への機械的な対応付けであり、実績値が未判明の指標は not_assessable とした。行政活動目標（455指標）の個別実績は評価シートの取組別表に掲載されているが、本段階では KPI とせず、施策単位の進展度の集計のみを記録した。"
+   }
+  ],
+  "id": "evidence-jp-local-120006-project-2025-new-industry-and-business-attraction",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "現行計画の政策評価は令和7年度事業実施分のみが公表済みである。令和8年度以降の評価が公表されたら年度別レコードを追加する。",
+   "行政活動目標の個別実績（評価シートの取組別表）は本段階では KPI 登録していない。登録範囲の見直しは更新サイクル（Issue #706）の対象である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-120006-project-2025-new-industry-and-business-attraction",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第3編実施計画編の施策項目見出しと施策評価シートの施策名",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-comprehensive-plan-document",
+     "chiba-pref-policy-evaluation-form-fy2025-goal2"
+    ],
+    "statement": "施策8「県経済を担う産業の振興と育成」は、千葉県総合計画 ～千葉の未来をともに創る～（実施計画編：令和7〜10年度）の基本目標2「千葉経済圏の確立と社会資本の整備」・政策「経済の活性化と更なる飛躍」に属する41の施策の一つで、施策コードはⅡ-1-②である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第3編実施計画編の基本目標・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-comprehensive-plan-document"
+    ],
+    "statement": "選定規則（6つの基本目標を計画の掲載順に巡回し、各基本目標では施策を掲載順にたどる）により第2巡目で選定した。対応関係は選定カタログ（data/catalog/chiba_priority_project_selection.json）に記録した。金額の大小では選んでいない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "施策評価シート【1 施策概要】の「施策の目標」",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal2"
+    ],
+    "statement": "purpose は施策評価シートの「施策の目標」を転記したものである。計画書第3編実施計画編の当該施策項目の【目標】と同文である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "施策評価シート【2 施策の分析】の予算額・決算額と令和7年度計画事業費一覧の施策計",
+    "review_note": "評価シートの施策計は計画事業費一覧の合計（A）と一致することを確認した。",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal2",
+     "chiba-pref-plan-costs-fy2025"
+    ],
+    "statement": "令和7年度予算額21,557,827千円と決算額16,309,417千円は、施策評価シートが施策単位で公表する施策計である。予算額は計画事業費一覧の「9月補正後予算額」に基づく合計（再掲事業を含む）であり、当初予算額ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "施策評価シート【1 施策概要】の進展度表示と政策評価の概要（資料1）",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal2",
+     "chiba-pref-policy-evaluation-fy2025-overview"
+    ],
+    "statement": "県は施策単位の評定（ランク付け）は公表していないため、official_evaluation は未登録（null）とした。代わりに公表されている施策単位の集計として、行政活動目標及び補助指標の進展度は84.6%（達成11指標／設定13指標）である（評価シート【1 施策概要】）。これは指標の達成割合の集計であり、施策への評定ではないため評価欄には転記しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "施策評価シート【1 施策概要】の社会目標の進捗状況と政策評価の概要資料2",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal2",
+     "chiba-pref-policy-evaluation-fy2025-indicators",
+     "chiba-pref-comprehensive-plan-document"
+    ],
+    "statement": "本施策の社会目標2件（2項目で構成される指標は項目ごとに分割）をKPI として登録した。各 KPI の assessment は県が公表した令和7年度進捗率への機械的な対応付けであり、実績値が未判明の指標は not_assessable とした。行政活動目標（455指標）の個別実績は評価シートの取組別表に掲載されているが、本段階では KPI とせず、施策単位の進展度の集計のみを記録した。"
+   }
+  ],
+  "id": "evidence-jp-local-120006-project-2025-core-industry-promotion",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "現行計画の政策評価は令和7年度事業実施分のみが公表済みである。令和8年度以降の評価が公表されたら年度別レコードを追加する。",
+   "行政活動目標の個別実績（評価シートの取組別表）は本段階では KPI 登録していない。登録範囲の見直しは更新サイクル（Issue #706）の対象である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-120006-project-2025-core-industry-promotion",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第3編実施計画編の施策項目見出しと施策評価シートの施策名",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-comprehensive-plan-document",
+     "chiba-pref-policy-evaluation-form-fy2025-goal3"
+    ],
+    "statement": "施策19「増大する医療需要への対応」は、千葉県総合計画 ～千葉の未来をともに創る～（実施計画編：令和7〜10年度）の基本目標3「超高齢化時代に対応した医療・福祉の充実」・政策「医療提供体制の充実と健康寿命の延伸」に属する41の施策の一つで、施策コードはⅢ-1-①である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第3編実施計画編の基本目標・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-comprehensive-plan-document"
+    ],
+    "statement": "選定規則（6つの基本目標を計画の掲載順に巡回し、各基本目標では施策を掲載順にたどる）により第1巡目で選定した。対応関係は選定カタログ（data/catalog/chiba_priority_project_selection.json）に記録した。金額の大小では選んでいない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "施策評価シート【1 施策概要】の「施策の目標」",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal3"
+    ],
+    "statement": "purpose は施策評価シートの「施策の目標」を転記したものである。計画書第3編実施計画編の当該施策項目の【目標】と同文である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "施策評価シート【2 施策の分析】の予算額・決算額と令和7年度計画事業費一覧の施策計",
+    "review_note": "評価シートの施策計は計画事業費一覧の合計（A）と一致することを確認した。",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal3",
+     "chiba-pref-plan-costs-fy2025"
+    ],
+    "statement": "令和7年度予算額24,030,948千円と決算額20,026,656千円は、施策評価シートが施策単位で公表する施策計である。予算額は計画事業費一覧の「9月補正後予算額」に基づく合計（再掲事業を含む）であり、当初予算額ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "施策評価シート【1 施策概要】の進展度表示と政策評価の概要（資料1）",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal3",
+     "chiba-pref-policy-evaluation-fy2025-overview"
+    ],
+    "statement": "県は施策単位の評定（ランク付け）は公表していないため、official_evaluation は未登録（null）とした。代わりに公表されている施策単位の集計として、行政活動目標及び補助指標の進展度は57.1%（達成8指標／設定14指標）である（評価シート【1 施策概要】）。これは指標の達成割合の集計であり、施策への評定ではないため評価欄には転記しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "施策評価シート【1 施策概要】の社会目標の進捗状況と政策評価の概要資料2",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal3",
+     "chiba-pref-policy-evaluation-fy2025-indicators",
+     "chiba-pref-comprehensive-plan-document"
+    ],
+    "statement": "本施策の社会目標2件（2項目で構成される指標は項目ごとに分割）をKPI として登録した。各 KPI の assessment は県が公表した令和7年度進捗率への機械的な対応付けであり、実績値が未判明の指標は not_assessable とした。行政活動目標（455指標）の個別実績は評価シートの取組別表に掲載されているが、本段階では KPI とせず、施策単位の進展度の集計のみを記録した。"
+   }
+  ],
+  "id": "evidence-jp-local-120006-project-2025-growing-medical-demand",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "現行計画の政策評価は令和7年度事業実施分のみが公表済みである。令和8年度以降の評価が公表されたら年度別レコードを追加する。",
+   "行政活動目標の個別実績（評価シートの取組別表）は本段階では KPI 登録していない。登録範囲の見直しは更新サイクル（Issue #706）の対象である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-120006-project-2025-growing-medical-demand",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第3編実施計画編の施策項目見出しと施策評価シートの施策名",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-comprehensive-plan-document",
+     "chiba-pref-policy-evaluation-form-fy2025-goal3"
+    ],
+    "statement": "施策20「生涯を通じた健康づくりと予防医療の推進」は、千葉県総合計画 ～千葉の未来をともに創る～（実施計画編：令和7〜10年度）の基本目標3「超高齢化時代に対応した医療・福祉の充実」・政策「医療提供体制の充実と健康寿命の延伸」に属する41の施策の一つで、施策コードはⅢ-1-②である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第3編実施計画編の基本目標・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-comprehensive-plan-document"
+    ],
+    "statement": "選定規則（6つの基本目標を計画の掲載順に巡回し、各基本目標では施策を掲載順にたどる）により第2巡目で選定した。対応関係は選定カタログ（data/catalog/chiba_priority_project_selection.json）に記録した。金額の大小では選んでいない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "施策評価シート【1 施策概要】の「施策の目標」",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal3"
+    ],
+    "statement": "purpose は施策評価シートの「施策の目標」を転記したものである。計画書第3編実施計画編の当該施策項目の【目標】と同文である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "施策評価シート【2 施策の分析】の予算額・決算額と令和7年度計画事業費一覧の施策計",
+    "review_note": "評価シートの施策計は計画事業費一覧の合計（A）と一致することを確認した。",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal3",
+     "chiba-pref-plan-costs-fy2025"
+    ],
+    "statement": "令和7年度予算額684,069千円と決算額605,414千円は、施策評価シートが施策単位で公表する施策計である。予算額は計画事業費一覧の「9月補正後予算額」に基づく合計（再掲事業を含む）であり、当初予算額ではない。なお、同シートの取組別内訳の合計は605,440千円であり、施策計の決算額605,414千円とは一致しない。公表された施策計の値をそのまま登録し、内訳合計では置き換えていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "施策評価シート【1 施策概要】の進展度表示と政策評価の概要（資料1）",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal3",
+     "chiba-pref-policy-evaluation-fy2025-overview"
+    ],
+    "statement": "県は施策単位の評定（ランク付け）は公表していないため、official_evaluation は未登録（null）とした。代わりに公表されている施策単位の集計として、行政活動目標及び補助指標の進展度は55.6%（達成5指標／設定9指標）である（評価シート【1 施策概要】）。これは指標の達成割合の集計であり、施策への評定ではないため評価欄には転記しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "施策評価シート【1 施策概要】の社会目標の進捗状況と政策評価の概要資料2",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal3",
+     "chiba-pref-policy-evaluation-fy2025-indicators",
+     "chiba-pref-comprehensive-plan-document"
+    ],
+    "statement": "本施策の社会目標4件（2項目で構成される指標は項目ごとに分割）をKPI として登録した。各 KPI の assessment は県が公表した令和7年度進捗率への機械的な対応付けであり、実績値が未判明の指標は not_assessable とした。行政活動目標（455指標）の個別実績は評価シートの取組別表に掲載されているが、本段階では KPI とせず、施策単位の進展度の集計のみを記録した。"
+   }
+  ],
+  "id": "evidence-jp-local-120006-project-2025-lifelong-health-prevention",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "現行計画の政策評価は令和7年度事業実施分のみが公表済みである。令和8年度以降の評価が公表されたら年度別レコードを追加する。",
+   "行政活動目標の個別実績（評価シートの取組別表）は本段階では KPI 登録していない。登録範囲の見直しは更新サイクル（Issue #706）の対象である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-120006-project-2025-lifelong-health-prevention",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第3編実施計画編の施策項目見出しと施策評価シートの施策名",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-comprehensive-plan-document",
+     "chiba-pref-policy-evaluation-form-fy2025-goal4"
+    ],
+    "statement": "施策23「こども・若者の健やかな成長への支援」は、千葉県総合計画 ～千葉の未来をともに創る～（実施計画編：令和7〜10年度）の基本目標4「こども・若者の可能性を広げる千葉の確立」・政策「こども・若者施策の充実」に属する41の施策の一つで、施策コードはⅣ-1-①である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第3編実施計画編の基本目標・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-comprehensive-plan-document"
+    ],
+    "statement": "選定規則（6つの基本目標を計画の掲載順に巡回し、各基本目標では施策を掲載順にたどる）により第1巡目で選定した。対応関係は選定カタログ（data/catalog/chiba_priority_project_selection.json）に記録した。金額の大小では選んでいない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "施策評価シート【1 施策概要】の「施策の目標」",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal4"
+    ],
+    "statement": "purpose は施策評価シートの「施策の目標」を転記したものである。計画書第3編実施計画編の当該施策項目の【目標】と同文である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "施策評価シート【2 施策の分析】の予算額・決算額と令和7年度計画事業費一覧の施策計",
+    "review_note": "評価シートの施策計は計画事業費一覧の合計（A）と一致することを確認した。",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal4",
+     "chiba-pref-plan-costs-fy2025"
+    ],
+    "statement": "令和7年度予算額48,669,980千円と決算額43,558,389千円は、施策評価シートが施策単位で公表する施策計である。予算額は計画事業費一覧の「9月補正後予算額」に基づく合計（再掲事業を含む）であり、当初予算額ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "施策評価シート【1 施策概要】の進展度表示と政策評価の概要（資料1）",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal4",
+     "chiba-pref-policy-evaluation-fy2025-overview"
+    ],
+    "statement": "県は施策単位の評定（ランク付け）は公表していないため、official_evaluation は未登録（null）とした。代わりに公表されている施策単位の集計として、行政活動目標及び補助指標の進展度は71.4%（達成5指標／設定7指標）である（評価シート【1 施策概要】）。これは指標の達成割合の集計であり、施策への評定ではないため評価欄には転記しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "施策評価シート【1 施策概要】の社会目標の進捗状況と政策評価の概要資料2",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal4",
+     "chiba-pref-policy-evaluation-fy2025-indicators",
+     "chiba-pref-comprehensive-plan-document"
+    ],
+    "statement": "本施策の社会目標3件（2項目で構成される指標は項目ごとに分割）をKPI として登録した。各 KPI の assessment は県が公表した令和7年度進捗率への機械的な対応付けであり、実績値が未判明の指標は not_assessable とした。行政活動目標（455指標）の個別実績は評価シートの取組別表に掲載されているが、本段階では KPI とせず、施策単位の進展度の集計のみを記録した。"
+   }
+  ],
+  "id": "evidence-jp-local-120006-project-2025-children-youth-growth-support",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "現行計画の政策評価は令和7年度事業実施分のみが公表済みである。令和8年度以降の評価が公表されたら年度別レコードを追加する。",
+   "行政活動目標の個別実績（評価シートの取組別表）は本段階では KPI 登録していない。登録範囲の見直しは更新サイクル（Issue #706）の対象である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-120006-project-2025-children-youth-growth-support",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第3編実施計画編の施策項目見出しと施策評価シートの施策名",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-comprehensive-plan-document",
+     "chiba-pref-policy-evaluation-form-fy2025-goal4"
+    ],
+    "statement": "施策24「安心して子育てできる環境づくり」は、千葉県総合計画 ～千葉の未来をともに創る～（実施計画編：令和7〜10年度）の基本目標4「こども・若者の可能性を広げる千葉の確立」・政策「こども・若者施策の充実」に属する41の施策の一つで、施策コードはⅣ-1-②である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第3編実施計画編の基本目標・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-comprehensive-plan-document"
+    ],
+    "statement": "選定規則（6つの基本目標を計画の掲載順に巡回し、各基本目標では施策を掲載順にたどる）により第2巡目で選定した。対応関係は選定カタログ（data/catalog/chiba_priority_project_selection.json）に記録した。金額の大小では選んでいない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "施策評価シート【1 施策概要】の「施策の目標」",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal4"
+    ],
+    "statement": "purpose は施策評価シートの「施策の目標」を転記したものである。計画書第3編実施計画編の当該施策項目の【目標】と同文である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "施策評価シート【2 施策の分析】の予算額・決算額と令和7年度計画事業費一覧の施策計",
+    "review_note": "評価シートの施策計は計画事業費一覧の合計（A）と一致することを確認した。",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal4",
+     "chiba-pref-plan-costs-fy2025"
+    ],
+    "statement": "令和7年度予算額64,035,912千円と決算額56,794,962千円は、施策評価シートが施策単位で公表する施策計である。予算額は計画事業費一覧の「9月補正後予算額」に基づく合計（再掲事業を含む）であり、当初予算額ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "施策評価シート【1 施策概要】の進展度表示と政策評価の概要（資料1）",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal4",
+     "chiba-pref-policy-evaluation-fy2025-overview"
+    ],
+    "statement": "県は施策単位の評定（ランク付け）は公表していないため、official_evaluation は未登録（null）とした。代わりに公表されている施策単位の集計として、行政活動目標及び補助指標の進展度は63.6%（達成7指標／設定11指標）である（評価シート【1 施策概要】）。これは指標の達成割合の集計であり、施策への評定ではないため評価欄には転記しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "施策評価シート【1 施策概要】の社会目標の進捗状況と政策評価の概要資料2",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal4",
+     "chiba-pref-policy-evaluation-fy2025-indicators",
+     "chiba-pref-comprehensive-plan-document"
+    ],
+    "statement": "本施策の社会目標3件（2項目で構成される指標は項目ごとに分割）をKPI として登録した。各 KPI の assessment は県が公表した令和7年度進捗率への機械的な対応付けであり、実績値が未判明の指標は not_assessable とした。行政活動目標（455指標）の個別実績は評価シートの取組別表に掲載されているが、本段階では KPI とせず、施策単位の進展度の集計のみを記録した。"
+   }
+  ],
+  "id": "evidence-jp-local-120006-project-2025-childrearing-environment",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "現行計画の政策評価は令和7年度事業実施分のみが公表済みである。令和8年度以降の評価が公表されたら年度別レコードを追加する。",
+   "行政活動目標の個別実績（評価シートの取組別表）は本段階では KPI 登録していない。登録範囲の見直しは更新サイクル（Issue #706）の対象である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-120006-project-2025-childrearing-environment",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第3編実施計画編の施策項目見出しと施策評価シートの施策名",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-comprehensive-plan-document",
+     "chiba-pref-policy-evaluation-form-fy2025-goal5"
+    ],
+    "statement": "施策30「誰もが力を発揮できる社会の実現」は、千葉県総合計画 ～千葉の未来をともに創る～（実施計画編：令和7〜10年度）の基本目標5「誰もがその人らしく生きる・分かり合える共生社会の実現」・政策「多様性が尊重され、誰もが活躍できる社会の実現」に属する41の施策の一つで、施策コードはⅤ-1-①である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第3編実施計画編の基本目標・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-comprehensive-plan-document"
+    ],
+    "statement": "選定規則（6つの基本目標を計画の掲載順に巡回し、各基本目標では施策を掲載順にたどる）により第1巡目で選定した。対応関係は選定カタログ（data/catalog/chiba_priority_project_selection.json）に記録した。金額の大小では選んでいない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "施策評価シート【1 施策概要】の「施策の目標」",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal5"
+    ],
+    "statement": "purpose は施策評価シートの「施策の目標」を転記したものである。計画書第3編実施計画編の当該施策項目の【目標】と同文である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "施策評価シート【2 施策の分析】の予算額・決算額と令和7年度計画事業費一覧の施策計",
+    "review_note": "評価シートの施策計は計画事業費一覧の合計（A）と一致することを確認した。",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal5",
+     "chiba-pref-plan-costs-fy2025"
+    ],
+    "statement": "令和7年度予算額805,926千円と決算額467,931千円は、施策評価シートが施策単位で公表する施策計である。予算額は計画事業費一覧の「9月補正後予算額」に基づく合計（再掲事業を含む）であり、当初予算額ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "施策評価シート【1 施策概要】の進展度表示と政策評価の概要（資料1）",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal5",
+     "chiba-pref-policy-evaluation-fy2025-overview"
+    ],
+    "statement": "県は施策単位の評定（ランク付け）は公表していないため、official_evaluation は未登録（null）とした。代わりに公表されている施策単位の集計として、行政活動目標及び補助指標の進展度は100.0%（達成6指標／設定6指標）である（評価シート【1 施策概要】）。これは指標の達成割合の集計であり、施策への評定ではないため評価欄には転記しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "施策評価シート【1 施策概要】の社会目標の進捗状況と政策評価の概要資料2",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal5",
+     "chiba-pref-policy-evaluation-fy2025-indicators",
+     "chiba-pref-comprehensive-plan-document"
+    ],
+    "statement": "本施策の社会目標1件（2項目で構成される指標は項目ごとに分割）をKPI として登録した。各 KPI の assessment は県が公表した令和7年度進捗率への機械的な対応付けであり、実績値が未判明の指標は not_assessable とした。行政活動目標（455指標）の個別実績は評価シートの取組別表に掲載されているが、本段階では KPI とせず、施策単位の進展度の集計のみを記録した。"
+   }
+  ],
+  "id": "evidence-jp-local-120006-project-2025-diversity-inclusive-society",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "現行計画の政策評価は令和7年度事業実施分のみが公表済みである。令和8年度以降の評価が公表されたら年度別レコードを追加する。",
+   "行政活動目標の個別実績（評価シートの取組別表）は本段階では KPI 登録していない。登録範囲の見直しは更新サイクル（Issue #706）の対象である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-120006-project-2025-diversity-inclusive-society",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画書第3編実施計画編の施策項目見出しと施策評価シートの施策名",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-comprehensive-plan-document",
+     "chiba-pref-policy-evaluation-form-fy2025-goal6"
+    ],
+    "statement": "施策34「地球温暖化対策の推進」は、千葉県総合計画 ～千葉の未来をともに創る～（実施計画編：令和7〜10年度）の基本目標6「独自の自然・文化を生かした魅力ある千葉の創造」・政策「脱炭素化と循環経済の推進」に属する41の施策の一つで、施策コードはⅥ-1-①である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "計画書第3編実施計画編の基本目標・施策の掲載順",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-comprehensive-plan-document"
+    ],
+    "statement": "選定規則（6つの基本目標を計画の掲載順に巡回し、各基本目標では施策を掲載順にたどる）により第1巡目で選定した。対応関係は選定カタログ（data/catalog/chiba_priority_project_selection.json）に記録した。金額の大小では選んでいない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "施策評価シート【1 施策概要】の「施策の目標」",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal6"
+    ],
+    "statement": "purpose は施策評価シートの「施策の目標」を転記したものである。計画書第3編実施計画編の当該施策項目の【目標】と同文である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "施策評価シート【2 施策の分析】の予算額・決算額と令和7年度計画事業費一覧の施策計",
+    "review_note": "評価シートの施策計は計画事業費一覧の合計（A）と一致することを確認した。",
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal6",
+     "chiba-pref-plan-costs-fy2025"
+    ],
+    "statement": "令和7年度予算額137,129,018千円と決算額111,993,862千円は、施策評価シートが施策単位で公表する施策計である。予算額は計画事業費一覧の「9月補正後予算額」に基づく合計（再掲事業を含む）であり、当初予算額ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "施策評価シート【1 施策概要】の進展度表示と政策評価の概要（資料1）",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal6",
+     "chiba-pref-policy-evaluation-fy2025-overview"
+    ],
+    "statement": "県は施策単位の評定（ランク付け）は公表していないため、official_evaluation は未登録（null）とした。代わりに公表されている施策単位の集計として、行政活動目標及び補助指標の進展度は60.0%（達成9指標／設定15指標）である（評価シート【1 施策概要】）。これは指標の達成割合の集計であり、施策への評定ではないため評価欄には転記しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "施策評価シート【1 施策概要】の社会目標の進捗状況と政策評価の概要資料2",
+    "review_note": null,
+    "source_ids": [
+     "chiba-pref-policy-evaluation-form-fy2025-goal6",
+     "chiba-pref-policy-evaluation-fy2025-indicators",
+     "chiba-pref-comprehensive-plan-document"
+    ],
+    "statement": "本施策の社会目標4件（2項目で構成される指標は項目ごとに分割）をKPI として登録した。各 KPI の assessment は県が公表した令和7年度進捗率への機械的な対応付けであり、実績値が未判明の指標は not_assessable とした。行政活動目標（455指標）の個別実績は評価シートの取組別表に掲載されているが、本段階では KPI とせず、施策単位の進展度の集計のみを記録した。"
+   }
+  ],
+  "id": "evidence-jp-local-120006-project-2025-climate-change-measures",
+  "open_questions": [
+   "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+   "現行計画の政策評価は令和7年度事業実施分のみが公表済みである。令和8年度以降の評価が公表されたら年度別レコードを追加する。",
+   "行政活動目標の個別実績（評価シートの取組別表）は本段階では KPI 登録していない。登録範囲の見直しは更新サイクル（Issue #706）の対象である。",
+   "契約・議会・監査との連携は未登録である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-120006-project-2025-climate-change-measures",
+  "subject_type": "project"
+ }
+]
