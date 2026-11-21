@@ -707,5 +707,37 @@
     ],
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-hamamatsu-city-2023",
+    "executive_term_id": "jp-local-221309-executive-2023-05-01",
+    "searched_at": "2026-11-22",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "general_web_search"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "hamamatsu-city-mayor-election-2023-bulletin"
+    ],
+    "checked_source_ids": [
+      "hamamatsu-city-mayor-election-2023-bulletin",
+      "hamamatsu-city-mayor-election-2023-results",
+      "hamamatsu-city-mayor-election-2023-results-page",
+      "hamamatsu-city-mayors-history-page",
+      "hamamatsu-city-mayor-term-expiry-list"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "選挙公報は、市選管の「令和5年に行われた選挙等の結果（結果調）」ページから「付録（選挙公報：浜松市長選挙）」の単独PDFで現在も到達できることを確認した（1,406,186バイトでページ表記の1,374KBと一致し、段階0の棚卸し時に保全した控えとバイト単位で一致）。中野ゆうすけ候補欄は公報1ページ左上にあり、候補者欄は画像形式でテキスト層が一切ないため、描画画像（200dpi・350dpi）を照合して転記し、分割レビュー（manifesto-review-jp-local-221309-2023）を経て公約10件を作成した。選挙公報は候補者提出原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たるため、原典としての格付けは high とした。当選・得票数246,745票と任期は段階1で結果調・県選管の任期一覧により照合済みである。音声読み上げ対応データ（テキスト版）については、結果調ページにはPDFのみが掲載され、市の選挙ページ群にもテキスト版の掲載は確認できなかった（存在しないという主張はしない）。候補者の政策資料（公式サイトの政策ページ等）の安定した所在は特定していないが、存在しないという主張はしない。",
+    "next_actions": [
+      "候補者の政策資料の安定した所在が特定できれば、登録済みの公約文と照合する。",
+      "未接続の公約（柱見出し3件とワーク・ライフ・バランスの項目）について、計画・事業資料への進捗証拠の接続を拡充する。",
+      "選挙公報の音声読み上げ対応データ（テキスト版）の公表が確認できれば、登録済みの公約文と突合する。",
+      "2027年の次回市長選挙では、選挙期間中に公報の公式掲載を確認し、次任期の原典として登録する。"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]

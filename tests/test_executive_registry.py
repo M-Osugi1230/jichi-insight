@@ -41,8 +41,8 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 121
-    assert len({record["id"] for record in catalog["records"]}) == 121
+    assert len(catalog["records"]) == 122
+    assert len({record["id"] for record in catalog["records"]}) == 122
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
@@ -464,6 +464,13 @@ def test_manifesto_readiness_is_not_confused_with_progress() -> None:
     # page has been removed) and connected it to the mayor's term.
     assert by_municipality["jp-local-041009"]["manifesto_source_ids"] == [
         "sendai-city-mayor-election-2025-bulletin",
+    ]
+    # Hamamatsu City registers the 2023 bulletin: the Shizuoka
+    # cluster's stage 3 (Issue #900) transcribed the image-only
+    # candidate panel from rendered images at multiple resolutions
+    # and connected the bulletin to the mayor's term.
+    assert by_municipality["jp-local-221309"]["manifesto_source_ids"] == [
+        "hamamatsu-city-mayor-election-2023-bulletin",
     ]
 
 
