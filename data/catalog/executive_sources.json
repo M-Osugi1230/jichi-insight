@@ -1,5 +1,5 @@
 {
-  "version": "0.28.0",
+  "version": "0.29.0",
   "updated_at": "2026-11-21",
   "scope": "pilot",
   "records": [
@@ -1318,6 +1318,34 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "千葉県が公表する県内市町村長の一覧（令和7年12月31日現在）。千葉市・神谷俊一について、任期満了年月日 令和11年3月20日、就任回数2回、無所属、直近の選挙の執行年月日 令和7年3月16日、投票率35.70%、就任年月日として1期目 令和3年3月21日・2期目 令和7年3月21日を明記する。現任期の開始日（2025年3月21日）と満了日（2029年3月20日）の双方を日単位で確認できる一次資料として用いた。2026-11-21にPDF本体を直接確認した。"
+    },
+    {
+      "id": "hyogo-pref-governor",
+      "municipality_key": "hyogo-prefecture",
+      "organization": "兵庫県",
+      "category": "executive",
+      "title": "知事のプロフィール（兵庫県）",
+      "url": "https://web.pref.hyogo.lg.jp/governor/gov3_00000008.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "兵庫県公式の知事プロフィール（表記は齋藤元彦）。第53代（令和3年8月就任）・第54代（令和6年11月就任）として斎藤元彦が現職知事であることを示す。2024年11月19日更新。"
+    },
+    {
+      "id": "kobe-city-governor-election-2024-result",
+      "municipality_key": "hyogo-prefecture",
+      "organization": "神戸市選挙管理委員会",
+      "category": "election",
+      "title": "選挙結果調（令和6年11月17日執行兵庫県知事選挙）",
+      "url": "https://www.city.kobe.lg.jp/documents/23740/kekkasirabekenntizi.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "神戸市選挙管理委員会の公式結果調。「兵庫県全体での得票数は1,113,911票」と明記する。西宮市・姫路市の開票結果（兵庫県計）でも同数であり、三市で一致した。"
     }
   ]
 }

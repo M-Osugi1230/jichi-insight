@@ -1,0 +1,64 @@
+[
+  {
+    "id": "evidence-hyogo-prefecture-2026-initial-budget-total-revenue",
+    "subject_id": "jp-local-280003-fiscal-2026-total-revenue",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2026年度兵庫県一般会計当初予算の歳入総額は2,318,223,000千円であり、第1号議案として2026年3月23日に原案可決された。",
+        "location_note": "兵庫県公報（令和8年3月23日号外）「令和8年度当初予算（令和8年3月23日議決）」の一般会計歳入表および兵庫県議会 第374回定例会 提出議案一覧（令和8年3月25日更新）の第1号議案の欄。",
+        "source_ids": [
+          "hyogo-pref-budget-2026-koho",
+          "hyogo-pref-assembly-2026-budget-bills"
+        ],
+        "decision": "accepted",
+        "review_note": "公報掲載の議決予算の印字値を千円単位から円単位へ換算して保存。議案一覧で議決日と結果を確認した。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hyogo-prefecture-2026-initial-budget-local-tax",
+    "subject_id": "jp-local-280003-fiscal-2026-local-tax",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2026年度兵庫県一般会計当初予算の県税は909,400,000千円である。",
+        "location_note": "兵庫県公報（令和8年3月23日号外）「令和8年度当初予算（令和8年3月23日議決）」の一般会計歳入表の款「県税」の欄。",
+        "source_ids": [
+          "hyogo-pref-budget-2026-koho",
+          "hyogo-pref-assembly-2026-budget-bills"
+        ],
+        "decision": "accepted",
+        "review_note": "公報掲載の議決予算の印字値を正として収録した。県税務ページの「令和8年度当初予算における県税収入の内訳」は県税を9,104億円と表記しており議決予算と10億円の差があるため、差異をレコードのnoteに記録した。"
+      }
+    ],
+    "open_questions": [
+      "県税務ページの「9,104億円」表記と議決予算（9,094億円）の差異の理由は公表資料からは確認できていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hyogo-prefecture-2026-initial-budget-total-expenditure",
+    "subject_id": "jp-local-280003-fiscal-2026-total-expenditure",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2026年度兵庫県一般会計当初予算の歳出総額は2,318,223,000千円であり、歳入総額と同額である。",
+        "location_note": "兵庫県公報（令和8年3月23日号外）「令和8年度当初予算（令和8年3月23日議決）」の一般会計歳出表。",
+        "source_ids": [
+          "hyogo-pref-budget-2026-koho",
+          "hyogo-pref-assembly-2026-budget-bills"
+        ],
+        "decision": "accepted",
+        "review_note": "公報掲載の議決予算の印字値を千円単位から円単位へ換算して保存。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]
