@@ -19,6 +19,42 @@ ROOT = Path(__file__).resolve().parents[1]
 MID = "jp-local-120006"
 BASE = ROOT / "data" / "reviewed" / "chiba-prefecture"
 
+TERM_ID = "jp-local-120006-executive-2025-04-05"
+PROJECT = "jp-local-120006-project-2025-{}"
+# Reverse links added by stage 3 (Issue #842): the governor's
+# promises registered from the 2025 election bulletin that the
+# stage-3 registration connected to each series.
+EXPECTED_PROMISE_LINKS = {
+    PROJECT.format("disaster-response-strengthening"): [
+        f"{TERM_ID}-promise-001",
+        f"{TERM_ID}-promise-003",
+    ],
+    PROJECT.format("disaster-resilient-community-development"): [
+        f"{TERM_ID}-promise-001",
+        f"{TERM_ID}-promise-002",
+    ],
+    PROJECT.format("new-industry-and-business-attraction"): [
+        f"{TERM_ID}-promise-012",
+        f"{TERM_ID}-promise-013",
+        f"{TERM_ID}-promise-014",
+    ],
+    PROJECT.format("core-industry-promotion"): [
+        f"{TERM_ID}-promise-015",
+    ],
+    PROJECT.format("growing-medical-demand"): [
+        f"{TERM_ID}-promise-005",
+        f"{TERM_ID}-promise-006",
+    ],
+    PROJECT.format("childrearing-environment"): [
+        f"{TERM_ID}-promise-008",
+        f"{TERM_ID}-promise-009",
+    ],
+    PROJECT.format("diversity-inclusive-society"): [
+        f"{TERM_ID}-promise-021",
+        f"{TERM_ID}-promise-022",
+    ],
+}
+
 
 def _load(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
@@ -38,7 +74,12 @@ def test_projects_validate_against_schema() -> None:
         assert project["municipality_id"] == MID
         assert project["fiscal_year"] == 2025
         assert project["review_status"] == "reviewed"
-        assert project["related_promise_ids"] == []
+        # Stage 3 (Issue #842) added the governor's promise links to
+        # six of the ten series; the exact links are pinned by
+        # test_issue842_chiba_governor_promise_registration.py.
+        assert project["related_promise_ids"] == EXPECTED_PROMISE_LINKS.get(
+            project["id"], []
+        )
 
 
 def test_selection_catalog_covers_population() -> None:
