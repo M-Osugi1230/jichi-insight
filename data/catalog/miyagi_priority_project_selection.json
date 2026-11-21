@@ -1,0 +1,188 @@
+{
+  "issue": 878,
+  "municipality_id": "jp-local-040002",
+  "municipality_key": "miyagi-prefecture",
+  "population": {
+    "description": "「新・宮城の将来ビジョン」（2021〜2030）の政策推進の基本方向（4方向）の下に置かれた8つの政策（8つの「つくる」）と、その下の18の施策（18の取組）。県の政策評価は政策評価（政策単位）と施策評価（施策単位）を毎年度公表しており、施策評価では施策ごとに評価判定・目標指標の達成状況が定まり、令和7年度政策評価までは施策を構成する推進事業の決算額合計も施策評価シートに掲載されていたため、本登録では施策を登録単位とした。政策（8件）は施策の上位区分として各系列の parent_policy に記録する。ビジョンのもう一つの柱である復興サポート（被災地の復興完了に向けたきめ細かなサポート、4つの取組分野）は政策評価の対象区分ではないため母集団に含めない。実施計画は前期（2021〜2024）・中期（2025〜2027）・後期（2028〜2030）の3期に分かれ、現行は中期実施計画（令和8年2月改定）である。",
+    "fiscal_year": 2025,
+    "project_count": 18,
+    "source_ids": [
+      "miyagi-pref-future-vision",
+      "miyagi-pref-midterm-implementation-plan-2026",
+      "miyagi-pref-evaluation-system"
+    ]
+  },
+  "review_status": "reviewed",
+  "scope": "initial",
+  "selection_rule": {
+    "description": "8つの政策をビジョンの掲載順に巡回し、各政策ではその下の施策を掲載順にたどって10系列を選定する。第1巡で政策1〜8の先頭の施策（施策1、4、6、8、10、12、15、17）を、第2巡で政策1・2の第2の施策（施策2、5）を選定した時点で10系列が揃ったため、第3巡には進んでいない。金額の大小では選ばない。",
+    "pillars": [
+      "富県宮城を支える県内産業の持続的な成長促進",
+      "社会全体で支える宮城の子ども・子育て",
+      "誰もが安心していきいきと暮らせる地域社会づくり",
+      "強靭で自然と調和した県土づくり"
+    ]
+  },
+  "selections": [
+    {
+      "basic_direction": "富県宮城を支える県内産業の持続的な成長促進",
+      "basic_direction_number": 1,
+      "measure_code": "施策1",
+      "measure_number": 1,
+      "official_title": "産学官連携によるものづくり産業等の発展と研究開発拠点等の集積による新技術・新産業の創出",
+      "policy": "全産業で、先進的取組と連携によって新しい価値をつくる",
+      "policy_number": 1,
+      "project_id": "jp-local-040002-project-2025-academia-industry-new-industry",
+      "selection_basis": "第1巡: 政策1「全産業で、先進的取組と連携によって新しい価値をつくる」について、計画の掲載順で先頭の施策「産学官連携によるものづくり産業等の発展と研究開発拠点等の集積による新技術・新産業の創出」を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-040002-project-series-academia-industry-new-industry",
+      "source_ids": [
+        "miyagi-pref-midterm-implementation-plan-2026",
+        "miyagi-pref-evaluation-fy2026-book"
+      ]
+    },
+    {
+      "basic_direction": "富県宮城を支える県内産業の持続的な成長促進",
+      "basic_direction_number": 1,
+      "measure_code": "施策4",
+      "measure_number": 4,
+      "official_title": "時代と地域が求める産業人材の育成と活躍できる環境の整備",
+      "policy": "産業人材の育成と産業基盤の活用によって持続的な成長の基礎をつくる",
+      "policy_number": 2,
+      "project_id": "jp-local-040002-project-2025-industrial-human-resources",
+      "selection_basis": "第1巡: 政策2「産業人材の育成と産業基盤の活用によって持続的な成長の基礎をつくる」について、計画の掲載順で先頭の施策「時代と地域が求める産業人材の育成と活躍できる環境の整備」を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-040002-project-series-industrial-human-resources",
+      "source_ids": [
+        "miyagi-pref-midterm-implementation-plan-2026",
+        "miyagi-pref-evaluation-fy2026-book"
+      ]
+    },
+    {
+      "basic_direction": "社会全体で支える宮城の子ども・子育て",
+      "basic_direction_number": 2,
+      "measure_code": "施策6",
+      "measure_number": 6,
+      "official_title": "結婚・出産・子育てを応援する環境の整備",
+      "policy": "子ども・子育てを社会全体で切れ目なく応援する環境をつくる",
+      "policy_number": 3,
+      "project_id": "jp-local-040002-project-2025-child-rearing-support-environment",
+      "selection_basis": "第1巡: 政策3「子ども・子育てを社会全体で切れ目なく応援する環境をつくる」について、計画の掲載順で先頭の施策「結婚・出産・子育てを応援する環境の整備」を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-040002-project-series-child-rearing-support-environment",
+      "source_ids": [
+        "miyagi-pref-midterm-implementation-plan-2026",
+        "miyagi-pref-evaluation-fy2026-book"
+      ]
+    },
+    {
+      "basic_direction": "社会全体で支える宮城の子ども・子育て",
+      "basic_direction_number": 2,
+      "measure_code": "施策8",
+      "measure_number": 8,
+      "official_title": "多様で変化する社会に適応し、活躍できる力の育成",
+      "policy": "社会を生き、未来を切りひらく力をはぐくむ教育環境をつくる",
+      "policy_number": 4,
+      "project_id": "jp-local-040002-project-2025-future-ready-education-skills",
+      "selection_basis": "第1巡: 政策4「社会を生き、未来を切りひらく力をはぐくむ教育環境をつくる」について、計画の掲載順で先頭の施策「多様で変化する社会に適応し、活躍できる力の育成」を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-040002-project-series-future-ready-education-skills",
+      "source_ids": [
+        "miyagi-pref-midterm-implementation-plan-2026",
+        "miyagi-pref-evaluation-fy2026-book"
+      ]
+    },
+    {
+      "basic_direction": "誰もが安心していきいきと暮らせる地域社会づくり",
+      "basic_direction_number": 3,
+      "measure_code": "施策10",
+      "measure_number": 10,
+      "official_title": "就労や地域活動を通じた多様な主体の社会参画の促進",
+      "policy": "一人ひとりがいきいきと豊かに生活できる環境をつくる",
+      "policy_number": 5,
+      "project_id": "jp-local-040002-project-2025-social-participation",
+      "selection_basis": "第1巡: 政策5「一人ひとりがいきいきと豊かに生活できる環境をつくる」について、計画の掲載順で先頭の施策「就労や地域活動を通じた多様な主体の社会参画の促進」を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-040002-project-series-social-participation",
+      "source_ids": [
+        "miyagi-pref-midterm-implementation-plan-2026",
+        "miyagi-pref-evaluation-fy2026-book"
+      ]
+    },
+    {
+      "basic_direction": "誰もが安心していきいきと暮らせる地域社会づくり",
+      "basic_direction_number": 3,
+      "measure_code": "施策12",
+      "measure_number": 12,
+      "official_title": "生涯を通じた健康づくりと持続可能な医療・介護サービスの提供",
+      "policy": "健康で、安全安心に暮らせる地域をつくる",
+      "policy_number": 6,
+      "project_id": "jp-local-040002-project-2025-health-medical-care-sustainability",
+      "selection_basis": "第1巡: 政策6「健康で、安全安心に暮らせる地域をつくる」について、計画の掲載順で先頭の施策「生涯を通じた健康づくりと持続可能な医療・介護サービスの提供」を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-040002-project-series-health-medical-care-sustainability",
+      "source_ids": [
+        "miyagi-pref-midterm-implementation-plan-2026",
+        "miyagi-pref-evaluation-fy2026-book"
+      ]
+    },
+    {
+      "basic_direction": "強靭で自然と調和した県土づくり",
+      "basic_direction_number": 4,
+      "measure_code": "施策15",
+      "measure_number": 15,
+      "official_title": "環境負荷の少ない地域経済システム・生活スタイルの確立",
+      "policy": "自然と人間が共存共栄する社会をつくる",
+      "policy_number": 7,
+      "project_id": "jp-local-040002-project-2025-low-environmental-impact-society",
+      "selection_basis": "第1巡: 政策7「自然と人間が共存共栄する社会をつくる」について、計画の掲載順で先頭の施策「環境負荷の少ない地域経済システム・生活スタイルの確立」を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-040002-project-series-low-environmental-impact-society",
+      "source_ids": [
+        "miyagi-pref-midterm-implementation-plan-2026",
+        "miyagi-pref-evaluation-fy2026-book"
+      ]
+    },
+    {
+      "basic_direction": "強靭で自然と調和した県土づくり",
+      "basic_direction_number": 4,
+      "measure_code": "施策17",
+      "measure_number": 17,
+      "official_title": "大規模化・多様化する災害への対策の強化",
+      "policy": "世代を超えて安全で信頼のある強くしなやかな県土をつくる",
+      "policy_number": 8,
+      "project_id": "jp-local-040002-project-2025-disaster-risk-reduction",
+      "selection_basis": "第1巡: 政策8「世代を超えて安全で信頼のある強くしなやかな県土をつくる」について、計画の掲載順で先頭の施策「大規模化・多様化する災害への対策の強化」を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-040002-project-series-disaster-risk-reduction",
+      "source_ids": [
+        "miyagi-pref-midterm-implementation-plan-2026",
+        "miyagi-pref-evaluation-fy2026-book"
+      ]
+    },
+    {
+      "basic_direction": "富県宮城を支える県内産業の持続的な成長促進",
+      "basic_direction_number": 1,
+      "measure_code": "施策2",
+      "measure_number": 2,
+      "official_title": "宮城が誇る地域資源を活用した観光産業と地域を支える商業・サービス業の振興",
+      "policy": "全産業で、先進的取組と連携によって新しい価値をつくる",
+      "policy_number": 1,
+      "project_id": "jp-local-040002-project-2025-tourism-commerce-promotion",
+      "selection_basis": "第2巡: 政策1「全産業で、先進的取組と連携によって新しい価値をつくる」について、計画の掲載順で第2の施策「宮城が誇る地域資源を活用した観光産業と地域を支える商業・サービス業の振興」を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-040002-project-series-tourism-commerce-promotion",
+      "source_ids": [
+        "miyagi-pref-midterm-implementation-plan-2026",
+        "miyagi-pref-evaluation-fy2026-book"
+      ]
+    },
+    {
+      "basic_direction": "富県宮城を支える県内産業の持続的な成長促進",
+      "basic_direction_number": 1,
+      "measure_code": "施策5",
+      "measure_number": 5,
+      "official_title": "時代に対応した宮城・東北の価値を高める産業基盤の整備・活用",
+      "policy": "産業人材の育成と産業基盤の活用によって持続的な成長の基礎をつくる",
+      "policy_number": 2,
+      "project_id": "jp-local-040002-project-2025-industrial-infrastructure",
+      "selection_basis": "第2巡: 政策2「産業人材の育成と産業基盤の活用によって持続的な成長の基礎をつくる」について、計画の掲載順で第2の施策「時代に対応した宮城・東北の価値を高める産業基盤の整備・活用」を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-040002-project-series-industrial-infrastructure",
+      "source_ids": [
+        "miyagi-pref-midterm-implementation-plan-2026",
+        "miyagi-pref-evaluation-fy2026-book"
+      ]
+    }
+  ]
+}

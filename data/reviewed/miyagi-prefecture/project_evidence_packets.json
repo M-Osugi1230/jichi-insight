@@ -1,0 +1,942 @@
+[
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "政策評価の仕組みページ（評価の対象）、令和8年度政策評価書の施策評価",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-system",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "本登録の単位は、「新・宮城の将来ビジョン」の施策（18の取組）である。県の政策評価は政策評価（8つの政策＝8つの「つくる」単位）と施策評価（18の施策単位）を毎年度公表し、施策の単位で評価判定と目標指標の達成状況が定まるため、この公表単位を登録単位とした。政策は上位区分として parent_policy に記録する。復興サポートの4つの取組分野は政策評価の対象区分ではないため、登録単位の候補に含めていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "中期実施計画の施策体系（取組1）",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026"
+        ],
+        "statement": "施策名は「産学官連携によるものづくり産業等の発展と研究開発拠点等の集積による新技術・新産業の創出」（施策番号1）であり、政策1「全産業で、先進的取組と連携によって新しい価値をつくる」（政策推進の基本方向1「富県宮城を支える県内産業の持続的な成長促進」）の下に置かれる。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "中期実施計画の施策体系と本登録の選定カタログ",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "第1巡: 政策1「全産業で、先進的取組と連携によって新しい価値をつくる」について、計画の掲載順で先頭の施策「産学官連携によるものづくり産業等の発展と研究開発拠点等の集積による新技術・新産業の創出」を選定した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "中期実施計画の「取組1」の説明文冒頭",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026"
+        ],
+        "statement": "施策の目的は、中期実施計画（2025〜2027、令和8年2月改定）の「取組1」の説明文に基づく。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "令和7年度政策評価書の施策評価シート（施策1）の見出し",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-fy2025-book"
+        ],
+        "statement": "施策担当課室は、令和7年度政策評価（令和6年度事業対象）の施策評価シートに「新産業振興課」と記載されている（令和7年度政策評価時点の名称）。令和8年度政策評価書には施策担当課室が掲載されていないため、この版の記載を用いた。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "令和7年度政策評価書の施策評価シート（施策1）の決算額欄、令和8年度政策評価書の主要な事業の成果",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-fy2025-book",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "令和6年度の決算額は、令和7年度政策評価の施策評価シートに掲載された施策の決算額（推進事業の合計）5,243,993千円である。令和7年度については、令和8年度政策評価が施策単位の決算額合計を公表しておらず（政策推進の基本方向ごとに主要な事業の決算額のみ）、主要事業の合算は施策全体の額にならないため、金額を登録しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和8年度政策評価書の政策・施策評価結果一覧表（施策1）",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-fy2026-book",
+          "miyagi-pref-evaluation-fy2026-press"
+        ],
+        "statement": "公式評価は、令和8年度政策評価（令和7年度事業対象、2026年9月30日公表）の施策評価の最終評価「おおむね順調」である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "中期実施計画の目標指標一覧、令和8年度政策評価書の政策・施策評価結果一覧表",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "目標指標は、中期実施計画の目標指標一覧に掲載された施策1の全6指標を登録した。初期値と中期目標値（令和9年度）は同実施計画による。令和7年度の達成率・達成度は令和8年度政策評価の結果一覧表の公表値を各指標の definition に記録し、県の達成度（A〜D）を assessment に換算した（A=achieved、B=mostly_achieved、C=partially_achieved、D=not_achieved）。令和7年度の実績値は、令和8年度政策評価書ではグラフ形式のみで数値表がないため同書からは登録せず、中期実施計画（令和8年2月改定）の目標指標一覧に数値で掲載された指標（施策8の15指標）についてのみ同計画の値を登録した。その他の指標は同実施計画に掲載された最新の実績値を登録した。"
+      }
+    ],
+    "id": "evidence-jp-local-040002-project-2025-academia-industry-new-industry",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-040002-project-2025-academia-industry-new-industry",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "政策評価の仕組みページ（評価の対象）、令和8年度政策評価書の施策評価",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-system",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "本登録の単位は、「新・宮城の将来ビジョン」の施策（18の取組）である。県の政策評価は政策評価（8つの政策＝8つの「つくる」単位）と施策評価（18の施策単位）を毎年度公表し、施策の単位で評価判定と目標指標の達成状況が定まるため、この公表単位を登録単位とした。政策は上位区分として parent_policy に記録する。復興サポートの4つの取組分野は政策評価の対象区分ではないため、登録単位の候補に含めていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "中期実施計画の施策体系（取組4）",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026"
+        ],
+        "statement": "施策名は「時代と地域が求める産業人材の育成と活躍できる環境の整備」（施策番号4）であり、政策2「産業人材の育成と産業基盤の活用によって持続的な成長の基礎をつくる」（政策推進の基本方向1「富県宮城を支える県内産業の持続的な成長促進」）の下に置かれる。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "中期実施計画の施策体系と本登録の選定カタログ",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "第1巡: 政策2「産業人材の育成と産業基盤の活用によって持続的な成長の基礎をつくる」について、計画の掲載順で先頭の施策「時代と地域が求める産業人材の育成と活躍できる環境の整備」を選定した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "中期実施計画の「取組4」の説明文冒頭",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026"
+        ],
+        "statement": "施策の目的は、中期実施計画（2025〜2027、令和8年2月改定）の「取組4」の説明文に基づく。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "令和7年度政策評価書の施策評価シート（施策4）の見出し",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-fy2025-book"
+        ],
+        "statement": "施策担当課室は、令和7年度政策評価（令和6年度事業対象）の施策評価シートに「産業人材対策課」と記載されている（令和7年度政策評価時点の名称）。令和8年度政策評価書には施策担当課室が掲載されていないため、この版の記載を用いた。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "令和7年度政策評価書の施策評価シート（施策4）の決算額欄、令和8年度政策評価書の主要な事業の成果",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-fy2025-book",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "令和6年度の決算額は、令和7年度政策評価の施策評価シートに掲載された施策の決算額（推進事業の合計）106,591,111千円である。令和7年度については、令和8年度政策評価が施策単位の決算額合計を公表しておらず（政策推進の基本方向ごとに主要な事業の決算額のみ）、主要事業の合算は施策全体の額にならないため、金額を登録しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和8年度政策評価書の政策・施策評価結果一覧表（施策4）",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-fy2026-book",
+          "miyagi-pref-evaluation-fy2026-press"
+        ],
+        "statement": "公式評価は、令和8年度政策評価（令和7年度事業対象、2026年9月30日公表）の施策評価の最終評価「おおむね順調」である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "中期実施計画の目標指標一覧、令和8年度政策評価書の政策・施策評価結果一覧表",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "目標指標は、中期実施計画の目標指標一覧に掲載された施策4の全10指標を登録した。初期値と中期目標値（令和9年度）は同実施計画による。令和7年度の達成率・達成度は令和8年度政策評価の結果一覧表の公表値を各指標の definition に記録し、県の達成度（A〜D）を assessment に換算した（A=achieved、B=mostly_achieved、C=partially_achieved、D=not_achieved）。令和7年度の実績値は、令和8年度政策評価書ではグラフ形式のみで数値表がないため同書からは登録せず、中期実施計画（令和8年2月改定）の目標指標一覧に数値で掲載された指標（施策8の15指標）についてのみ同計画の値を登録した。その他の指標は同実施計画に掲載された最新の実績値を登録した。"
+      }
+    ],
+    "id": "evidence-jp-local-040002-project-2025-industrial-human-resources",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-040002-project-2025-industrial-human-resources",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "政策評価の仕組みページ（評価の対象）、令和8年度政策評価書の施策評価",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-system",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "本登録の単位は、「新・宮城の将来ビジョン」の施策（18の取組）である。県の政策評価は政策評価（8つの政策＝8つの「つくる」単位）と施策評価（18の施策単位）を毎年度公表し、施策の単位で評価判定と目標指標の達成状況が定まるため、この公表単位を登録単位とした。政策は上位区分として parent_policy に記録する。復興サポートの4つの取組分野は政策評価の対象区分ではないため、登録単位の候補に含めていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "中期実施計画の施策体系（取組6）",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026"
+        ],
+        "statement": "施策名は「結婚・出産・子育てを応援する環境の整備」（施策番号6）であり、政策3「子ども・子育てを社会全体で切れ目なく応援する環境をつくる」（政策推進の基本方向2「社会全体で支える宮城の子ども・子育て」）の下に置かれる。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "中期実施計画の施策体系と本登録の選定カタログ",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "第1巡: 政策3「子ども・子育てを社会全体で切れ目なく応援する環境をつくる」について、計画の掲載順で先頭の施策「結婚・出産・子育てを応援する環境の整備」を選定した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "中期実施計画の「取組6」の説明文冒頭",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026"
+        ],
+        "statement": "施策の目的は、中期実施計画（2025〜2027、令和8年2月改定）の「取組6」の説明文に基づく。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "令和7年度政策評価書の施策評価シート（施策6）の見出し",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-fy2025-book"
+        ],
+        "statement": "施策担当課室は、令和7年度政策評価（令和6年度事業対象）の施策評価シートに「子育て社会推進課」と記載されている（令和7年度政策評価時点の名称）。令和8年度政策評価書には施策担当課室が掲載されていないため、この版の記載を用いた。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "令和7年度政策評価書の施策評価シート（施策6）の決算額欄、令和8年度政策評価書の主要な事業の成果",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-fy2025-book",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "令和6年度の決算額は、令和7年度政策評価の施策評価シートに掲載された施策の決算額（推進事業の合計）5,662,236千円である。令和7年度については、令和8年度政策評価が施策単位の決算額合計を公表しておらず（政策推進の基本方向ごとに主要な事業の決算額のみ）、主要事業の合算は施策全体の額にならないため、金額を登録しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和8年度政策評価書の政策・施策評価結果一覧表（施策6）",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-fy2026-book",
+          "miyagi-pref-evaluation-fy2026-press"
+        ],
+        "statement": "公式評価は、令和8年度政策評価（令和7年度事業対象、2026年9月30日公表）の施策評価の最終評価「やや遅れている」である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "中期実施計画の目標指標一覧、令和8年度政策評価書の政策・施策評価結果一覧表",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "目標指標は、中期実施計画の目標指標一覧に掲載された施策6の全6指標を登録した。初期値と中期目標値（令和9年度）は同実施計画による。令和7年度の達成率・達成度は令和8年度政策評価の結果一覧表の公表値を各指標の definition に記録し、県の達成度（A〜D）を assessment に換算した（A=achieved、B=mostly_achieved、C=partially_achieved、D=not_achieved）。令和7年度の実績値は、令和8年度政策評価書ではグラフ形式のみで数値表がないため同書からは登録せず、中期実施計画（令和8年2月改定）の目標指標一覧に数値で掲載された指標（施策8の15指標）についてのみ同計画の値を登録した。その他の指標は同実施計画に掲載された最新の実績値を登録した。"
+      }
+    ],
+    "id": "evidence-jp-local-040002-project-2025-child-rearing-support-environment",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-040002-project-2025-child-rearing-support-environment",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "政策評価の仕組みページ（評価の対象）、令和8年度政策評価書の施策評価",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-system",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "本登録の単位は、「新・宮城の将来ビジョン」の施策（18の取組）である。県の政策評価は政策評価（8つの政策＝8つの「つくる」単位）と施策評価（18の施策単位）を毎年度公表し、施策の単位で評価判定と目標指標の達成状況が定まるため、この公表単位を登録単位とした。政策は上位区分として parent_policy に記録する。復興サポートの4つの取組分野は政策評価の対象区分ではないため、登録単位の候補に含めていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "中期実施計画の施策体系（取組8）",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026"
+        ],
+        "statement": "施策名は「多様で変化する社会に適応し、活躍できる力の育成」（施策番号8）であり、政策4「社会を生き、未来を切りひらく力をはぐくむ教育環境をつくる」（政策推進の基本方向2「社会全体で支える宮城の子ども・子育て」）の下に置かれる。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "中期実施計画の施策体系と本登録の選定カタログ",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "第1巡: 政策4「社会を生き、未来を切りひらく力をはぐくむ教育環境をつくる」について、計画の掲載順で先頭の施策「多様で変化する社会に適応し、活躍できる力の育成」を選定した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "中期実施計画の「取組8」の説明文冒頭",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026"
+        ],
+        "statement": "施策の目的は、中期実施計画（2025〜2027、令和8年2月改定）の「取組8」の説明文に基づく。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "令和7年度政策評価書の施策評価シート（施策8）の見出し",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-fy2025-book"
+        ],
+        "statement": "施策担当課室は、令和7年度政策評価（令和6年度事業対象）の施策評価シートに「義務教育課」と記載されている（令和7年度政策評価時点の名称）。令和8年度政策評価書には施策担当課室が掲載されていないため、この版の記載を用いた。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "令和7年度政策評価書の施策評価シート（施策8）の決算額欄、令和8年度政策評価書の主要な事業の成果",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-fy2025-book",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "令和6年度の決算額は、令和7年度政策評価の施策評価シートに掲載された施策の決算額（推進事業の合計）276,731千円である。令和7年度については、令和8年度政策評価が施策単位の決算額合計を公表しておらず（政策推進の基本方向ごとに主要な事業の決算額のみ）、主要事業の合算は施策全体の額にならないため、金額を登録しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和8年度政策評価書の政策・施策評価結果一覧表（施策8）",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-fy2026-book",
+          "miyagi-pref-evaluation-fy2026-press"
+        ],
+        "statement": "公式評価は、令和8年度政策評価（令和7年度事業対象、2026年9月30日公表）の施策評価の最終評価「やや遅れている」である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "中期実施計画の目標指標一覧、令和8年度政策評価書の政策・施策評価結果一覧表",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "目標指標は、中期実施計画の目標指標一覧に掲載された施策8の全19指標を登録した。初期値と中期目標値（令和9年度）は同実施計画による。令和7年度の達成率・達成度は令和8年度政策評価の結果一覧表の公表値を各指標の definition に記録し、県の達成度（A〜D）を assessment に換算した（A=achieved、B=mostly_achieved、C=partially_achieved、D=not_achieved）。令和7年度の実績値は、令和8年度政策評価書ではグラフ形式のみで数値表がないため同書からは登録せず、中期実施計画（令和8年2月改定）の目標指標一覧に数値で掲載された指標（施策8の15指標）についてのみ同計画の値を登録した。その他の指標は同実施計画に掲載された最新の実績値を登録した。"
+      }
+    ],
+    "id": "evidence-jp-local-040002-project-2025-future-ready-education-skills",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-040002-project-2025-future-ready-education-skills",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "政策評価の仕組みページ（評価の対象）、令和8年度政策評価書の施策評価",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-system",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "本登録の単位は、「新・宮城の将来ビジョン」の施策（18の取組）である。県の政策評価は政策評価（8つの政策＝8つの「つくる」単位）と施策評価（18の施策単位）を毎年度公表し、施策の単位で評価判定と目標指標の達成状況が定まるため、この公表単位を登録単位とした。政策は上位区分として parent_policy に記録する。復興サポートの4つの取組分野は政策評価の対象区分ではないため、登録単位の候補に含めていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "中期実施計画の施策体系（取組10）",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026"
+        ],
+        "statement": "施策名は「就労や地域活動を通じた多様な主体の社会参画の促進」（施策番号10）であり、政策5「一人ひとりがいきいきと豊かに生活できる環境をつくる」（政策推進の基本方向3「誰もが安心していきいきと暮らせる地域社会づくり」）の下に置かれる。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "中期実施計画の施策体系と本登録の選定カタログ",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "第1巡: 政策5「一人ひとりがいきいきと豊かに生活できる環境をつくる」について、計画の掲載順で先頭の施策「就労や地域活動を通じた多様な主体の社会参画の促進」を選定した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "中期実施計画の「取組10」の説明文冒頭",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026"
+        ],
+        "statement": "施策の目的は、中期実施計画（2025〜2027、令和8年2月改定）の「取組10」の説明文に基づく。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "令和7年度政策評価書の施策評価シート（施策10）の見出し",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-fy2025-book"
+        ],
+        "statement": "施策担当課室は、令和7年度政策評価（令和6年度事業対象）の施策評価シートに「地域振興課」と記載されている（令和7年度政策評価時点の名称）。令和8年度政策評価書には施策担当課室が掲載されていないため、この版の記載を用いた。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "令和7年度政策評価書の施策評価シート（施策10）の決算額欄、令和8年度政策評価書の主要な事業の成果",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-fy2025-book",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "令和6年度の決算額は、令和7年度政策評価の施策評価シートに掲載された施策の決算額（推進事業の合計）643,535千円である。令和7年度については、令和8年度政策評価が施策単位の決算額合計を公表しておらず（政策推進の基本方向ごとに主要な事業の決算額のみ）、主要事業の合算は施策全体の額にならないため、金額を登録しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和8年度政策評価書の政策・施策評価結果一覧表（施策10）",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-fy2026-book",
+          "miyagi-pref-evaluation-fy2026-press"
+        ],
+        "statement": "公式評価は、令和8年度政策評価（令和7年度事業対象、2026年9月30日公表）の施策評価の最終評価「おおむね順調」である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "中期実施計画の目標指標一覧、令和8年度政策評価書の政策・施策評価結果一覧表",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "目標指標は、中期実施計画の目標指標一覧に掲載された施策10の全9指標を登録した。初期値と中期目標値（令和9年度）は同実施計画による。令和7年度の達成率・達成度は令和8年度政策評価の結果一覧表の公表値を各指標の definition に記録し、県の達成度（A〜D）を assessment に換算した（A=achieved、B=mostly_achieved、C=partially_achieved、D=not_achieved）。令和7年度の実績値は、令和8年度政策評価書ではグラフ形式のみで数値表がないため同書からは登録せず、中期実施計画（令和8年2月改定）の目標指標一覧に数値で掲載された指標（施策8の15指標）についてのみ同計画の値を登録した。その他の指標は同実施計画に掲載された最新の実績値を登録した。"
+      }
+    ],
+    "id": "evidence-jp-local-040002-project-2025-social-participation",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-040002-project-2025-social-participation",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "政策評価の仕組みページ（評価の対象）、令和8年度政策評価書の施策評価",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-system",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "本登録の単位は、「新・宮城の将来ビジョン」の施策（18の取組）である。県の政策評価は政策評価（8つの政策＝8つの「つくる」単位）と施策評価（18の施策単位）を毎年度公表し、施策の単位で評価判定と目標指標の達成状況が定まるため、この公表単位を登録単位とした。政策は上位区分として parent_policy に記録する。復興サポートの4つの取組分野は政策評価の対象区分ではないため、登録単位の候補に含めていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "中期実施計画の施策体系（取組12）",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026"
+        ],
+        "statement": "施策名は「生涯を通じた健康づくりと持続可能な医療・介護サービスの提供」（施策番号12）であり、政策6「健康で、安全安心に暮らせる地域をつくる」（政策推進の基本方向3「誰もが安心していきいきと暮らせる地域社会づくり」）の下に置かれる。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "中期実施計画の施策体系と本登録の選定カタログ",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "第1巡: 政策6「健康で、安全安心に暮らせる地域をつくる」について、計画の掲載順で先頭の施策「生涯を通じた健康づくりと持続可能な医療・介護サービスの提供」を選定した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "中期実施計画の「取組12」の説明文冒頭",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026"
+        ],
+        "statement": "施策の目的は、中期実施計画（2025〜2027、令和8年2月改定）の「取組12」の説明文に基づく。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "令和7年度政策評価書の施策評価シート（施策12）の見出し",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-fy2025-book"
+        ],
+        "statement": "施策担当課室は、令和7年度政策評価（令和6年度事業対象）の施策評価シートに「健康推進課」と記載されている（令和7年度政策評価時点の名称）。令和8年度政策評価書には施策担当課室が掲載されていないため、この版の記載を用いた。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "令和7年度政策評価書の施策評価シート（施策12）の決算額欄、令和8年度政策評価書の主要な事業の成果",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-fy2025-book",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "令和6年度の決算額は、令和7年度政策評価の施策評価シートに掲載された施策の決算額（推進事業の合計）1,732,405千円である。令和7年度については、令和8年度政策評価が施策単位の決算額合計を公表しておらず（政策推進の基本方向ごとに主要な事業の決算額のみ）、主要事業の合算は施策全体の額にならないため、金額を登録しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和8年度政策評価書の政策・施策評価結果一覧表（施策12）",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-fy2026-book",
+          "miyagi-pref-evaluation-fy2026-press"
+        ],
+        "statement": "公式評価は、令和8年度政策評価（令和7年度事業対象、2026年9月30日公表）の施策評価の最終評価「おおむね順調」である。政策評価委員会から「要検討」の判定を受けたが、県の検討の結果、最終評価は評価原案から変更されなかった。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "中期実施計画の目標指標一覧、令和8年度政策評価書の政策・施策評価結果一覧表",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "目標指標は、中期実施計画の目標指標一覧に掲載された施策12の全9指標を登録した。初期値と中期目標値（令和9年度）は同実施計画による。令和7年度の達成率・達成度は令和8年度政策評価の結果一覧表の公表値を各指標の definition に記録し、県の達成度（A〜D）を assessment に換算した（A=achieved、B=mostly_achieved、C=partially_achieved、D=not_achieved）。令和7年度の実績値は、令和8年度政策評価書ではグラフ形式のみで数値表がないため同書からは登録せず、中期実施計画（令和8年2月改定）の目標指標一覧に数値で掲載された指標（施策8の15指標）についてのみ同計画の値を登録した。その他の指標は同実施計画に掲載された最新の実績値を登録した。"
+      }
+    ],
+    "id": "evidence-jp-local-040002-project-2025-health-medical-care-sustainability",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-040002-project-2025-health-medical-care-sustainability",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "政策評価の仕組みページ（評価の対象）、令和8年度政策評価書の施策評価",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-system",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "本登録の単位は、「新・宮城の将来ビジョン」の施策（18の取組）である。県の政策評価は政策評価（8つの政策＝8つの「つくる」単位）と施策評価（18の施策単位）を毎年度公表し、施策の単位で評価判定と目標指標の達成状況が定まるため、この公表単位を登録単位とした。政策は上位区分として parent_policy に記録する。復興サポートの4つの取組分野は政策評価の対象区分ではないため、登録単位の候補に含めていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "中期実施計画の施策体系（取組15）",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026"
+        ],
+        "statement": "施策名は「環境負荷の少ない地域経済システム・生活スタイルの確立」（施策番号15）であり、政策7「自然と人間が共存共栄する社会をつくる」（政策推進の基本方向4「強靭で自然と調和した県土づくり」）の下に置かれる。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "中期実施計画の施策体系と本登録の選定カタログ",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "第1巡: 政策7「自然と人間が共存共栄する社会をつくる」について、計画の掲載順で先頭の施策「環境負荷の少ない地域経済システム・生活スタイルの確立」を選定した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "中期実施計画の「取組15」の説明文冒頭",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026"
+        ],
+        "statement": "施策の目的は、中期実施計画（2025〜2027、令和8年2月改定）の「取組15」の説明文に基づく。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "令和7年度政策評価書の施策評価シート（施策15）の見出し",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-fy2025-book"
+        ],
+        "statement": "施策担当課室は、令和7年度政策評価（令和6年度事業対象）の施策評価シートに「循環型社会推進課」と記載されている（令和7年度政策評価時点の名称）。令和8年度政策評価書には施策担当課室が掲載されていないため、この版の記載を用いた。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "令和7年度政策評価書の施策評価シート（施策15）の決算額欄、令和8年度政策評価書の主要な事業の成果",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-fy2025-book",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "令和6年度の決算額は、令和7年度政策評価の施策評価シートに掲載された施策の決算額（推進事業の合計）3,564,167千円である。令和7年度については、令和8年度政策評価が施策単位の決算額合計を公表しておらず（政策推進の基本方向ごとに主要な事業の決算額のみ）、主要事業の合算は施策全体の額にならないため、金額を登録しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和8年度政策評価書の政策・施策評価結果一覧表（施策15）",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-fy2026-book",
+          "miyagi-pref-evaluation-fy2026-press"
+        ],
+        "statement": "公式評価は、令和8年度政策評価（令和7年度事業対象、2026年9月30日公表）の施策評価の最終評価「やや遅れている」である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "中期実施計画の目標指標一覧、令和8年度政策評価書の政策・施策評価結果一覧表",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "目標指標は、中期実施計画の目標指標一覧に掲載された施策15の全7指標を登録した。初期値と中期目標値（令和9年度）は同実施計画による。令和7年度の達成率・達成度は令和8年度政策評価の結果一覧表の公表値を各指標の definition に記録し、県の達成度（A〜D）を assessment に換算した（A=achieved、B=mostly_achieved、C=partially_achieved、D=not_achieved）。令和7年度の実績値は、令和8年度政策評価書ではグラフ形式のみで数値表がないため同書からは登録せず、中期実施計画（令和8年2月改定）の目標指標一覧に数値で掲載された指標（施策8の15指標）についてのみ同計画の値を登録した。その他の指標は同実施計画に掲載された最新の実績値を登録した。"
+      }
+    ],
+    "id": "evidence-jp-local-040002-project-2025-low-environmental-impact-society",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-040002-project-2025-low-environmental-impact-society",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "政策評価の仕組みページ（評価の対象）、令和8年度政策評価書の施策評価",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-system",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "本登録の単位は、「新・宮城の将来ビジョン」の施策（18の取組）である。県の政策評価は政策評価（8つの政策＝8つの「つくる」単位）と施策評価（18の施策単位）を毎年度公表し、施策の単位で評価判定と目標指標の達成状況が定まるため、この公表単位を登録単位とした。政策は上位区分として parent_policy に記録する。復興サポートの4つの取組分野は政策評価の対象区分ではないため、登録単位の候補に含めていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "中期実施計画の施策体系（取組17）",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026"
+        ],
+        "statement": "施策名は「大規模化・多様化する災害への対策の強化」（施策番号17）であり、政策8「世代を超えて安全で信頼のある強くしなやかな県土をつくる」（政策推進の基本方向4「強靭で自然と調和した県土づくり」）の下に置かれる。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "中期実施計画の施策体系と本登録の選定カタログ",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "第1巡: 政策8「世代を超えて安全で信頼のある強くしなやかな県土をつくる」について、計画の掲載順で先頭の施策「大規模化・多様化する災害への対策の強化」を選定した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "中期実施計画の「取組17」の説明文冒頭",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026"
+        ],
+        "statement": "施策の目的は、中期実施計画（2025〜2027、令和8年2月改定）の「取組17」の説明文に基づく。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "令和7年度政策評価書の施策評価シート（施策17）の見出し",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-fy2025-book"
+        ],
+        "statement": "施策担当課室は、令和7年度政策評価（令和6年度事業対象）の施策評価シートに「復興・危機管理総務課」と記載されている（令和7年度政策評価時点の名称）。令和8年度政策評価書には施策担当課室が掲載されていないため、この版の記載を用いた。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "令和7年度政策評価書の施策評価シート（施策17）の決算額欄、令和8年度政策評価書の主要な事業の成果",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-fy2025-book",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "令和6年度の決算額は、令和7年度政策評価の施策評価シートに掲載された施策の決算額（推進事業の合計）33,517,882千円である。令和7年度については、令和8年度政策評価が施策単位の決算額合計を公表しておらず（政策推進の基本方向ごとに主要な事業の決算額のみ）、主要事業の合算は施策全体の額にならないため、金額を登録しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和8年度政策評価書の政策・施策評価結果一覧表（施策17）",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-fy2026-book",
+          "miyagi-pref-evaluation-fy2026-press"
+        ],
+        "statement": "公式評価は、令和8年度政策評価（令和7年度事業対象、2026年9月30日公表）の施策評価の最終評価「おおむね順調」である。政策評価委員会から「要検討」の判定を受けたが、県の検討の結果、最終評価は評価原案から変更されなかった。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "中期実施計画の目標指標一覧、令和8年度政策評価書の政策・施策評価結果一覧表",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "目標指標は、中期実施計画の目標指標一覧に掲載された施策17の全7指標を登録した。初期値と中期目標値（令和9年度）は同実施計画による。令和7年度の達成率・達成度は令和8年度政策評価の結果一覧表の公表値を各指標の definition に記録し、県の達成度（A〜D）を assessment に換算した（A=achieved、B=mostly_achieved、C=partially_achieved、D=not_achieved）。令和7年度の実績値は、令和8年度政策評価書ではグラフ形式のみで数値表がないため同書からは登録せず、中期実施計画（令和8年2月改定）の目標指標一覧に数値で掲載された指標（施策8の15指標）についてのみ同計画の値を登録した。その他の指標は同実施計画に掲載された最新の実績値を登録した。"
+      }
+    ],
+    "id": "evidence-jp-local-040002-project-2025-disaster-risk-reduction",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-040002-project-2025-disaster-risk-reduction",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "政策評価の仕組みページ（評価の対象）、令和8年度政策評価書の施策評価",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-system",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "本登録の単位は、「新・宮城の将来ビジョン」の施策（18の取組）である。県の政策評価は政策評価（8つの政策＝8つの「つくる」単位）と施策評価（18の施策単位）を毎年度公表し、施策の単位で評価判定と目標指標の達成状況が定まるため、この公表単位を登録単位とした。政策は上位区分として parent_policy に記録する。復興サポートの4つの取組分野は政策評価の対象区分ではないため、登録単位の候補に含めていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "中期実施計画の施策体系（取組2）",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026"
+        ],
+        "statement": "施策名は「宮城が誇る地域資源を活用した観光産業と地域を支える商業・サービス業の振興」（施策番号2）であり、政策1「全産業で、先進的取組と連携によって新しい価値をつくる」（政策推進の基本方向1「富県宮城を支える県内産業の持続的な成長促進」）の下に置かれる。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "中期実施計画の施策体系と本登録の選定カタログ",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "第2巡: 政策1「全産業で、先進的取組と連携によって新しい価値をつくる」について、計画の掲載順で第2の施策「宮城が誇る地域資源を活用した観光産業と地域を支える商業・サービス業の振興」を選定した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "中期実施計画の「取組2」の説明文冒頭",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026"
+        ],
+        "statement": "施策の目的は、中期実施計画（2025〜2027、令和8年2月改定）の「取組2」の説明文に基づく。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "令和7年度政策評価書の施策評価シート（施策2）の見出し",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-fy2025-book"
+        ],
+        "statement": "施策担当課室は、令和7年度政策評価（令和6年度事業対象）の施策評価シートに「観光戦略課」と記載されている（令和7年度政策評価時点の名称）。令和8年度政策評価書には施策担当課室が掲載されていないため、この版の記載を用いた。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "令和7年度政策評価書の施策評価シート（施策2）の決算額欄、令和8年度政策評価書の主要な事業の成果",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-fy2025-book",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "令和6年度の決算額は、令和7年度政策評価の施策評価シートに掲載された施策の決算額（推進事業の合計）2,499,149千円である。令和7年度については、令和8年度政策評価が施策単位の決算額合計を公表しておらず（政策推進の基本方向ごとに主要な事業の決算額のみ）、主要事業の合算は施策全体の額にならないため、金額を登録しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和8年度政策評価書の政策・施策評価結果一覧表（施策2）",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-fy2026-book",
+          "miyagi-pref-evaluation-fy2026-press"
+        ],
+        "statement": "公式評価は、令和8年度政策評価（令和7年度事業対象、2026年9月30日公表）の施策評価の最終評価「順調」である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "中期実施計画の目標指標一覧、令和8年度政策評価書の政策・施策評価結果一覧表",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "目標指標は、中期実施計画の目標指標一覧に掲載された施策2の全5指標を登録した。初期値と中期目標値（令和9年度）は同実施計画による。令和7年度の達成率・達成度は令和8年度政策評価の結果一覧表の公表値を各指標の definition に記録し、県の達成度（A〜D）を assessment に換算した（A=achieved、B=mostly_achieved、C=partially_achieved、D=not_achieved）。令和7年度の実績値は、令和8年度政策評価書ではグラフ形式のみで数値表がないため同書からは登録せず、中期実施計画（令和8年2月改定）の目標指標一覧に数値で掲載された指標（施策8の15指標）についてのみ同計画の値を登録した。その他の指標は同実施計画に掲載された最新の実績値を登録した。"
+      }
+    ],
+    "id": "evidence-jp-local-040002-project-2025-tourism-commerce-promotion",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-040002-project-2025-tourism-commerce-promotion",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "政策評価の仕組みページ（評価の対象）、令和8年度政策評価書の施策評価",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-system",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "本登録の単位は、「新・宮城の将来ビジョン」の施策（18の取組）である。県の政策評価は政策評価（8つの政策＝8つの「つくる」単位）と施策評価（18の施策単位）を毎年度公表し、施策の単位で評価判定と目標指標の達成状況が定まるため、この公表単位を登録単位とした。政策は上位区分として parent_policy に記録する。復興サポートの4つの取組分野は政策評価の対象区分ではないため、登録単位の候補に含めていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "中期実施計画の施策体系（取組5）",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026"
+        ],
+        "statement": "施策名は「時代に対応した宮城・東北の価値を高める産業基盤の整備・活用」（施策番号5）であり、政策2「産業人材の育成と産業基盤の活用によって持続的な成長の基礎をつくる」（政策推進の基本方向1「富県宮城を支える県内産業の持続的な成長促進」）の下に置かれる。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "中期実施計画の施策体系と本登録の選定カタログ",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "第2巡: 政策2「産業人材の育成と産業基盤の活用によって持続的な成長の基礎をつくる」について、計画の掲載順で第2の施策「時代に対応した宮城・東北の価値を高める産業基盤の整備・活用」を選定した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "中期実施計画の「取組5」の説明文冒頭",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026"
+        ],
+        "statement": "施策の目的は、中期実施計画（2025〜2027、令和8年2月改定）の「取組5」の説明文に基づく。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "令和7年度政策評価書の施策評価シート（施策5）の見出し",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-fy2025-book"
+        ],
+        "statement": "施策担当課室は、令和7年度政策評価（令和6年度事業対象）の施策評価シートに「総合政策課」と記載されている（令和7年度政策評価時点の名称）。令和8年度政策評価書には施策担当課室が掲載されていないため、この版の記載を用いた。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "令和7年度政策評価書の施策評価シート（施策5）の決算額欄、令和8年度政策評価書の主要な事業の成果",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-fy2025-book",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "令和6年度の決算額は、令和7年度政策評価の施策評価シートに掲載された施策の決算額（推進事業の合計）20,372,324千円である。令和7年度については、令和8年度政策評価が施策単位の決算額合計を公表しておらず（政策推進の基本方向ごとに主要な事業の決算額のみ）、主要事業の合算は施策全体の額にならないため、金額を登録しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和8年度政策評価書の政策・施策評価結果一覧表（施策5）",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-evaluation-fy2026-book",
+          "miyagi-pref-evaluation-fy2026-press"
+        ],
+        "statement": "公式評価は、令和8年度政策評価（令和7年度事業対象、2026年9月30日公表）の施策評価の最終評価「順調」である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "中期実施計画の目標指標一覧、令和8年度政策評価書の政策・施策評価結果一覧表",
+        "review_note": null,
+        "source_ids": [
+          "miyagi-pref-midterm-implementation-plan-2026",
+          "miyagi-pref-evaluation-fy2026-book"
+        ],
+        "statement": "目標指標は、中期実施計画の目標指標一覧に掲載された施策5の全7指標を登録した。初期値と中期目標値（令和9年度）は同実施計画による。令和7年度の達成率・達成度は令和8年度政策評価の結果一覧表の公表値を各指標の definition に記録し、県の達成度（A〜D）を assessment に換算した（A=achieved、B=mostly_achieved、C=partially_achieved、D=not_achieved）。令和7年度の実績値は、令和8年度政策評価書ではグラフ形式のみで数値表がないため同書からは登録せず、中期実施計画（令和8年2月改定）の目標指標一覧に数値で掲載された指標（施策8の15指標）についてのみ同計画の値を登録した。その他の指標は同実施計画に掲載された最新の実績値を登録した。"
+      }
+    ],
+    "id": "evidence-jp-local-040002-project-2025-industrial-infrastructure",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-040002-project-2025-industrial-infrastructure",
+    "subject_type": "project"
+  }
+]
