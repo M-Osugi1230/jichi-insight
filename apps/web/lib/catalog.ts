@@ -246,8 +246,6 @@ export const municipalityMeta: Record<
     status: "財政データ公開", href: "/municipalities/hamamatsu-city",
     fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
   },
-    fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
-  },
 };
 
 export const sourceCatalog = [
