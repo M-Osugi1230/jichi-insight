@@ -1,9 +1,11 @@
 # Shizuoka Prefecture reviewed package
 
-Scope: Shizuoka cluster stage 1 (Issue #891) — entity identity, the
-current plan review, the FY2026 general-account initial budget, the
-FY2022-FY2024 ordinary-account settlements and the governor's current
-term. This package is separate from the Phase 9 registration for
+Scope: Shizuoka cluster stages 1-2 (Issues #891, #896) — entity
+identity, the current plan review, the FY2026 general-account
+initial budget, the FY2022-FY2024 ordinary-account settlements,
+the governor's current term, and ten priority-project series
+registered at the policy-pillar level of the plan evaluation
+report. This package is separate from the Phase 9 registration for
 Shizuoka Prefecture (`data/reviewed/phase9/22.json`, 985 reviewed
 target statements extracted from the same comprehensive plan), which
 carries no fiscal or executive records; the two do not conflict.
@@ -55,6 +57,29 @@ carries no fiscal or executive records; the two do not conflict.
   year, FY2025) was published on 2026-10-30. This review is
   consistent with the Phase 9 registration of 985 reviewed target
   statements from the same plan.
+- Priority projects (stage 2, Issue #896): the registration unit is
+  the policy pillar (政策の柱, the twenty-four middle pillars),
+  because the annual plan evaluation report publishes, for each
+  pillar, its outcome indicators with baseline, current and target
+  values and an A-D grade, plus its main initiatives; the eight
+  policies are recorded as each series' parent policy. Ten series
+  were selected by cycling through the eight policies in the plan's
+  published order and taking each policy's pillars in published
+  order (round 1: the first pillar of each policy; round 2: the
+  second pillars of Industry and of Environment/Energy). All 46
+  outcome indicators of the ten pillars are registered as published
+  in the FY2026 evaluation report (the evaluation of FY2025, the
+  plan's first year, published October 2026): values are registered
+  exactly as printed, including indicators whose current value is
+  an earlier year's figure and indicators whose current value is
+  not yet published (registered with no value and the scheduled
+  publication noted). The prefecture publishes no per-pillar
+  rating, so official_evaluation stays unregistered; the official
+  grades attach to the indicators (A-D by progress rate or by
+  comparison with the target, "－" when no actual has been
+  published) and are converted to the registration assessment scale
+  on each KPI. The prefecture also publishes no per-pillar budget
+  or settlement amount, so amounts stay unregistered.
 - Governor: 鈴木 康友, current term 2024-05-26 to 2028-05-25. He
   won the vacancy election of 2024-05-26 — held after Governor
   Kawakatsu Heita resigned; all six candidates were newcomers —
@@ -83,8 +108,5 @@ Not yet published for Shizuoka Prefecture:
   transcription — belongs to the cluster's promise stage; whether
   candidate-submitted audio-readable data was published for the
   2024 election is still unconfirmed)
-- Priority projects (the registration unit — policy pillars or the
-  measures beneath them — is fixed in the project stage from the
-  plan evaluation report's publication units)
 - Assembly records
 - FY2026 execution and settlement figures
