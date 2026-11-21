@@ -707,5 +707,38 @@
     ],
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-shizuoka-pref-2024",
+    "executive_term_id": "jp-local-220001-executive-2024-05-26",
+    "searched_at": "2026-11-22",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "shizuoka-pref-governor-election-2024-bulletin"
+    ],
+    "checked_source_ids": [
+      "shizuoka-pref-governor",
+      "shizuoka-pref-term-list",
+      "minamiizu-town-governor-election-2024-result",
+      "shizuoka-pref-governor-election-2024-bulletin"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "静岡県知事選挙（令和6年5月26日執行）の選挙公報は、静岡県選挙管理委員会が県公式サイト（www_dr.pref.shizuoka.jp）で公表しており、2026-11-22に直接取得した（全2ページ、3,745,754バイト）。1ページ目中段の鈴木やすとも候補欄（見出し「鈴木やすともマニフェスト「やります！」」の下に9項目）を確認し、選挙公報を出典として登録、分割レビュー（manifesto-review-jp-local-220001-2024）を経て公約レコード9件を作成した。候補者欄は画像主体で、PDFのテキスト抽出は空白を除き0字（実測）であり候補者欄からは文字が抽出されないため、登録文は描画画像（200dpi・300dpi）の目視転記を正とし、複数解像度で照合した。第20回選（2021年）には県公式の「候補者情報（音声読み上げ用）」ページ（ページID1032546）が現存し候補者提出の音声読み上げ対応データが公表されたが、第21回選については同種のページ・データの公表を県公式サイト上および検索で確認できなかったため、転記照合には用いていない（存在しないと判定するものではない）。選挙公報は候補者提出原稿をそのまま製版して掲載した公式文書であり、県公式サイトから直接取得できたため、公約レコードの confidence は high とした。候補者欄にはLINEのQRコード案内があるが、詳細な公約資料の安定した所在は本探索では特定していない。",
+    "next_actions": [
+      "第21回選の候補者提出の音声読み上げ対応データの公表が新たに確認できれば、登録済みの公約文と突合する",
+      "候補者欄が案内するLINE等の詳細な公約資料の安定した所在が特定できれば、登録済みの公約文と照合する",
+      "未接続の公約（リニア）について、計画・事業資料への進捗証拠の接続を拡充する",
+      "静岡県選挙管理委員会自身の「開票結果」文書の現行サイトでの所在が確認できれば、段階1の証拠パケットの open question を解消する",
+      "2028年5月の任期満了に伴う次回知事選挙では、新任期の公約原文資料として選挙公報を改めて登録する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]

@@ -33,7 +33,7 @@ def test_manifesto_source_search_fixture_is_registered_and_linked():
 def test_manifesto_source_searches_match_contract_and_safety_boundary():
     searches = load("data/entities/executives/manifesto_source_searches.json")
 
-    assert len(searches) == 24
+    assert len(searches) == 25
     assert {search["executive_term_id"] for search in searches} == {
         "jp-local-400009-executive-2025-04-14",
         "jp-local-401307-executive-2022-12-07",
@@ -59,6 +59,7 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         "jp-local-281000-executive-2025-11-20",
         "jp-local-041009-executive-2025-08-22",
         "jp-local-040002-executive-2025-11-21",
+        "jp-local-220001-executive-2024-05-26",
     }
 
     for search in searches:
@@ -72,13 +73,14 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         for search in searches
         if search["result_status"] == "no_stable_primary_source_found"
     ]
-    # Twenty searches have registered a primary source (Fukuoka
+    # Twenty-two searches have registered a primary source (Fukuoka
     # Prefecture, Fukuoka City, Kitakyushu City, Aichi Prefecture,
     # Nagoya City, Sapporo City, Hokkaido, Osaka Prefecture, Osaka
     # City, Kanagawa Prefecture, Yokohama City, Kawasaki City,
     # Saitama Prefecture, Saitama City, Kawaguchi City, Chiba
-    # Prefecture, Chiba City, Hyogo Prefecture, Kobe City and
-    # Miyagi Prefecture and Sendai City, each closed by its
+    # Prefecture, Chiba City, Hyogo Prefecture, Kobe City,
+    # Miyagi Prefecture, Sendai City and Shizuoka Prefecture,
+    # each closed by its
     # official election bulletin (Sendai's bulletin survives
     # only as the archived copy of the city's official
     # election-period URL);

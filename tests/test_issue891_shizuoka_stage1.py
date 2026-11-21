@@ -239,8 +239,11 @@ def test_shizuoka_governor_term() -> None:
     assert [t for t in terms if t["municipality_id"] == MID] == [term]
     # Stage 1 registered no manifesto source: the bulletin's candidate
     # panels are image-based, so the promise registration decision
-    # belongs to the cluster's promise stage.
-    assert term["manifesto_source_ids"] == []
+    # belonged to the cluster's promise stage. Stage 3 (Issue #900)
+    # then transcribed the panel and registered the bulletin.
+    assert term["manifesto_source_ids"] == [
+        "shizuoka-pref-governor-election-2024-bulletin"
+    ]
     assert term["sources"] == [
         "shizuoka-pref-governor",
         "shizuoka-pref-term-list",

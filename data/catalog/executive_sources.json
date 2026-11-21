@@ -1,5 +1,5 @@
 {
-  "version": "0.38.0",
+  "version": "0.39.0",
   "updated_at": "2026-11-22",
   "scope": "pilot",
   "records": [
@@ -1696,6 +1696,21 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "南伊豆町選挙管理委員会の公式開票結果。全県得票総数として鈴木やすともが728,500票と明記する。静岡市選挙管理委員会の「選挙結果調」（令和6年5月26日執行静岡県知事選挙）でも同数だったことを2026-11-22に直接照合した。静岡県選挙管理委員会自身の「開票結果」文書そのものの現行サイトでの所在は未確認（県選管の「投票結果」PDFは現存する）。"
+    }
+,
+    {
+      "id": "shizuoka-pref-governor-election-2024-bulletin",
+      "municipality_key": "shizuoka-prefecture",
+      "organization": "静岡県選挙管理委員会",
+      "category": "election",
+      "title": "令和6年5月26日執行 静岡県知事選挙 選挙公報（鈴木やすとも候補欄）",
+      "url": "https://www_dr.pref.shizuoka.jp/_res/projects/default_project/_page_/001/063/011/koho_kenchiji2024.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-22",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "候補者提出原稿をそのまま製版して掲載した全2ページの公式選挙公報。鈴木やすとも候補欄は1ページ目中段。県公式サイト（www_dr.pref.shizuoka.jp）から直接取得した（3,745,754バイト）。候補者欄は画像主体で、PDFのテキスト抽出は空白を除き0字（実測）であり候補者欄から文字は抽出されないため、公約文はPDFの描画画像（200dpi・300dpi）の目視転記を正とし、複数解像度で照合した。第21回選について候補者提出の音声読み上げ対応データの公表は、県公式サイト上および検索では確認できなかった（第20回選には「候補者情報（音声読み上げ用）」ページが現存する）ため、転記の突合には用いていない。"
     }
   ]
 }

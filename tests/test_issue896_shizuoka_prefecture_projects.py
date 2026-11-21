@@ -51,6 +51,30 @@ EXPECTED_GRADES = {
     "jp-local-220001-project-2025-sme-competitiveness-growth": (1, 1, 1, 0, 2),
     "jp-local-220001-project-2025-circular-society": (1, 0, 0, 0, 1),
 }
+# Stage 3 (Issue #900) promise links per pillar, in promise order.
+_TERM = "jp-local-220001-executive-2024-05-26"
+EXPECTED_PROMISE_LINKS = {
+    "jp-local-220001-project-2025-innovation-next-generation-industry": [
+        f"{_TERM}-promise-002"
+    ],
+    "jp-local-220001-project-2025-decarbonized-society": [f"{_TERM}-promise-006"],
+    "jp-local-220001-project-2025-tourism-promotion": [f"{_TERM}-promise-007"],
+    "jp-local-220001-project-2025-child-centered-society": [f"{_TERM}-promise-003"],
+    "jp-local-220001-project-2025-medical-care-health-longevity": [
+        f"{_TERM}-promise-004"
+    ],
+    "jp-local-220001-project-2025-inclusive-society": [f"{_TERM}-promise-008"],
+    "jp-local-220001-project-2025-disaster-prevention-mitigation": [
+        f"{_TERM}-promise-005"
+    ],
+    "jp-local-220001-project-2025-administrative-fiscal-reform": [
+        f"{_TERM}-promise-009"
+    ],
+    "jp-local-220001-project-2025-sme-competitiveness-growth": [
+        f"{_TERM}-promise-002"
+    ],
+    "jp-local-220001-project-2025-circular-society": [f"{_TERM}-promise-006"],
+}
 ASSESSMENTS = [
     "achieved",
     "mostly_achieved",
@@ -78,8 +102,10 @@ def test_projects_validate_against_schema() -> None:
         assert project["municipality_id"] == MID
         assert project["fiscal_year"] == 2025
         assert project["review_status"] == "reviewed"
-        # Promise links arrive in stage 3; nothing is linked yet.
-        assert project["related_promise_ids"] == []
+        # Stage 3 (Issue #900) linked the governor's manifesto items
+        # to the pillars by wording and content (low / inferred cap);
+        # every pillar received at least one link.
+        assert project["related_promise_ids"] == EXPECTED_PROMISE_LINKS[project["id"]]
         assert len(project["kpis"]) == EXPECTED_KPI_COUNTS[project["id"]]
         grades = tuple(
             sum(1 for k in project["kpis"] if k["assessment"] == a) for a in ASSESSMENTS
