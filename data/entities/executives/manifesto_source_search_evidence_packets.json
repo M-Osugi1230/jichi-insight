@@ -1149,5 +1149,50 @@
       "選挙公報の音声読み上げ対応データ（テキスト版）の公表有無。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-shizuoka-pref-2024",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-shizuoka-pref-2024",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "静岡県選挙管理委員会の公式ページ「市町長及び議会議員の任期」で知事の任期満了日（令和10年5月25日）を確認し、県公式の知事プロフィールで現職知事であることを確認した。得票数728,500票は段階1で南伊豆町選挙管理委員会の開票結果（全県得票総数）と照合済みである。あわせて第21回選の候補者情報（音声読み上げ用）ページの有無を県公式サイト上および検索で確認したが、公表は確認できなかった（第20回選の同ページは現存する）。",
+        "source_ids": [
+          "shizuoka-pref-term-list",
+          "shizuoka-pref-governor",
+          "minamiizu-town-governor-election-2024-result"
+        ],
+        "location_note": "県選管の任期一覧ページと知事プロフィール（段階0の棚卸しと段階1で確認済み）。",
+        "decision": "accepted",
+        "review_note": "確認した出典は checked_source_ids に列挙した。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "県公式サイト（www_dr.pref.shizuoka.jp）から選挙公報PDF（全2ページ）を直接取得し、1ページ目中段の鈴木やすとも候補欄（マニフェスト9項目）を確認した。PDFのテキスト抽出は空白を除き0字で、候補者欄は画像主体であることを実測した。",
+        "source_ids": [
+          "shizuoka-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全2ページ）の1ページ目中段。",
+        "decision": "accepted",
+        "review_note": "登録文はPDFの描画画像（200dpi・300dpi）の照合で転記した。音声読み上げ対応データの公表が確認できなかったためテキスト層との突合は行っていない。"
+      },
+      {
+        "field": "result_status",
+        "statement": "選挙公報を登録し、分割レビューを経て公約レコード9件を作成したため、result_status を source_registered とした。候補者欄が案内するLINE等の詳細資料および音声読み上げ対応データについては、安定した所在・公表を特定していないため、資料が存在しないとは判定しない。",
+        "source_ids": [
+          "shizuoka-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "本探索レコード全体。",
+        "decision": "accepted",
+        "review_note": "公的機関（県選管）の公式サイトから直接取得した公報そのものであるため confidence は high とする。"
+      }
+    ],
+    "open_questions": [
+      "第21回選の候補者提出の音声読み上げ対応データの公表は確認できていない（第20回選には公表があった）。",
+      "候補者欄が案内するLINE等の詳細な公約資料の安定した所在は特定できていない。",
+      "事業との接続は文言・内容に基づく推定であり、県が公約と事業の公式な対応付けを公表した場合は接続を見直す。"
+    ],
+    "review_status": "reviewed"
   }
 ]

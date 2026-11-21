@@ -976,5 +976,47 @@
       "選挙公報の音声読み上げ対応データ（テキスト版）の公表有無は未確認であり、公表が確認できれば転記と突合する。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-shizuoka-pref-2024-manifesto-review",
+    "subject_type": "manifesto_review",
+    "subject_id": "manifesto-review-jp-local-220001-2024",
+    "claims": [
+      {
+        "field": "source_location",
+        "statement": "鈴木やすとも候補欄は選挙公報1ページ目中段に掲載され、見出し「鈴木やすともマニフェスト「やります！」」の下に見出しと本文からなる9項目が3×3の格子状に配置され、左側に浜松市長在任中の取組みを示す実績欄（7件）、下部にプロフィールとLINEのQRコード、末尾に帯文「「オール静岡」で幸福度日本一の静岡県をめざします！」が配置されている。",
+        "source_ids": [
+          "shizuoka-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全2ページ）の1ページ目中段。",
+        "decision": "accepted",
+        "review_note": "2026-11-22にPDFを取得し、描画画像で候補者欄の構成を確認した。"
+      },
+      {
+        "field": "segmentation_status",
+        "statement": "9項目は見出しと本文が一体の単位であり、見出しだけでは公約文として完結しないため、見出しと本文を改行でつないだ9件へ分割した。実績欄の7件は過去の取組みの提示であり公約として分割しなかった。見出し文、吹き出し文、プロフィール、QRコードの案内、帯文（スローガン）は公約として分割しなかった。",
+        "source_ids": [
+          "shizuoka-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "候補者欄のマニフェスト9項目（見出し＋本文）と実績欄7項目。",
+        "decision": "accepted",
+        "review_note": "見出しと本文を1レコードとする形式は福岡市長・宮城県知事の先例に倣った境界判断であり、open_questions に残す。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は静岡県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは県公式サイト（www_dr.pref.shizuoka.jp）上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像主体（全2ページのテキスト抽出は空白を除き0字で、候補者欄からは文字が抽出されない）ため、登録文はPDFの描画画像（200dpi・300dpi）から転記し、複数解像度で照合した。第21回選の候補者提出の音声読み上げ対応データは、県公式サイト上および検索で公表を確認できなかったため、宮城県知事の前例のようなテキスト層との突合は行っていない（第20回選には候補者情報（音声読み上げ用）ページが現存する）。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "shizuoka-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "公報の表頭（静岡県選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま製版の上掲載した旨の注記）と、県公式サイト上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者欄が案内するLINE等の詳細資料が新たに確認できれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "見出しと本文を1レコードとする境界判断は福岡市長・宮城県知事の先例に倣ったものであり、資料上の項目境界の解釈が変われば見直す。",
+      "第21回選の候補者提出の音声読み上げ対応データの公表が確認できれば、登録済みの公約文と突合する。"
+    ],
+    "review_status": "reviewed"
   }
 ]
