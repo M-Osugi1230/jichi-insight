@@ -318,7 +318,7 @@ function registry(
 }
 export const assemblies: Record<AssemblySlug, Registry> = {
   "saitama-prefecture": registry(
-    saitamaPrefAssembly, saitamaPrefDisclosure, saitamaPrefSessions, saitamaPrefProposals, saitamaPrefVotes,
+    saitamaPrefAssembly, saitamaPrefDisclosure, saitamaPrefSessions, saitamaPrefProposals.map(proposal => ({ related_fiscal_record_ids: [], ...proposal })), saitamaPrefVotes,
     saitamaPrefFactionVotes, saitamaPrefExpenses.map(expense => ({ breakdown: [], ...expense })), saitamaPrefTrips,
     [...saitamaPrefAssemblyEvidence, ...saitamaPrefVoteEvidence, ...saitamaPrefExpenseEvidence, ...saitamaPrefTripEvidence],
     saitamaPrefSources.records,
