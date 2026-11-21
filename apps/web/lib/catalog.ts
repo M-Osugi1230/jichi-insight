@@ -94,9 +94,9 @@ export const municipalityMeta: Record<
   },
   "chiba-city": {
     name: "千葉市", type: "政令指定都市",
-    summary: "計画・財政・重点事業に加え、神谷俊一市長の任期と Reviewed 公約25件を公式出典で確認します。自治体別ページは準備中です。",
+    summary: "千葉市基本計画の重点事業10系列（政策単位。予算額・公式評価は未公表）に加え、神谷俊一市長の任期と Reviewed 公約25件を公式出典で確認します。自治体別ページは準備中です。",
     status: "財政データ公開", href: null,
-    fiscalSummary: "Reviewed 54項目（財政レコード3件・決算51件）",
+    fiscalSummary: "Reviewed 54項目（財政レコード3件・決算51件）・重点事業10系列",
   },
   "saitama-city": {
     name: "さいたま市", type: "政令指定都市",

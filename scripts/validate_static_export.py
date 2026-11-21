@@ -164,7 +164,10 @@ BASE_PAGE_REQUIREMENTS: dict[str, list[str]] = {
         "まだ登録・評価していないこと",
     ],
     "projects/index.html": [
-        "18自治体の Reviewed 事業レコード",
+        "20自治体の Reviewed 事業レコード",
+        "千葉県｜登録事業", "千葉市｜登録事業",
+        "登録単位：施策（10系列）", "登録単位：政策（10系列）",
+        "令和7年度の施策評価シート", "分野単位のKGI/KPI",
         "埼玉県｜登録事業", "さいたま市｜登録事業", "川口市｜登録事業",
         "北海道｜登録事業",
         "札幌市｜登録事業",
@@ -1000,10 +1003,143 @@ def validate_saitama_export() -> list[str]:
     return failures
 
 
+
+def chiba_project_detail_files() -> set[str]:
+    """Require static detail pages for all reviewed Chiba project series."""
+    required: set[str] = set()
+    for slug in ("chiba-prefecture", "chiba-city"):
+        records = load_json(ROOT / "data" / "reviewed" / slug / "projects.json")
+        for series in {
+            record["series_id"] for record in records if record["review_status"] == "reviewed"
+        }:
+            required.add(f"projects/{slug}/{series}/index.html")
+    return required
+
+
+def validate_chiba_data_facts() -> None:
+    """Assert that Chiba page claims and selected project names match canonical Reviewed data."""
+    cases = (
+        ("chiba-prefecture", "chiba_priority_project_selection.json", "jp-local-120006"),
+        ("chiba-city", "chiba_city_priority_project_selection.json", "jp-local-121002"),
+    )
+    for slug, selection_file, municipality_id in cases:
+        projects = load_json(ROOT / "data" / "reviewed" / slug / "projects.json")
+        selection = load_json(ROOT / "data" / "catalog" / selection_file)
+        reviewed = [record for record in projects if record["review_status"] == "reviewed"]
+        assert len(reviewed) == 10, (slug, len(reviewed))
+        assert len({record["series_id"] for record in reviewed}) == 10, slug
+        assert all(record["municipality_id"] == municipality_id for record in reviewed), slug
+        assert len(selection["selections"]) == 10, (slug, len(selection["selections"]))
+        source_file = (
+            "chiba_project_sources.json" if slug == "chiba-prefecture"
+            else "chiba_city_project_sources.json"
+        )
+        source_catalog = load_json(ROOT / "data" / "catalog" / source_file)
+        source_ids = {source["id"] for source in source_catalog["records"]}
+        assert all(set(record["sources"]).issubset(source_ids) for record in reviewed), slug
+        by_series = {record["series_id"]: record for record in reviewed}
+        selected_series = {item["series_id"] for item in selection["selections"]}
+        assert selected_series == set(by_series), (slug, selected_series ^ set(by_series))
+        for item in selection["selections"]:
+            record = by_series[item["series_id"]]
+            assert item["official_title"] == record["official_title"], (
+                slug, item["official_title"], record["official_title"]
+            )
+        if slug == "chiba-prefecture":
+            assert selection["population"]["project_count"] == 41
+            assert all(record["fiscal_year"] == 2025 for record in reviewed)
+            assert all(record["official_evaluation"] is None for record in reviewed)
+            kpis = load_json(ROOT / "data" / "reviewed" / slug / "project_kpis.json")
+            assert len(kpis) == 26, len(kpis)
+            assert all(kpi["project_id"] in {record["id"] for record in reviewed} for kpi in kpis)
+            for record in reviewed:
+                stages = {budget["kind"] for budget in record["budget_records"]}
+                assert stages == {"revised_budget", "settlement"}, (record["id"], stages)
+                assert all(budget["amount_yen"] is not None for budget in record["budget_records"])
+                assert all(budget["fiscal_year"] == 2025 for budget in record["budget_records"])
+                assert any("9月補正後" in budget["note"]
+                    for budget in record["budget_records"]
+                    if budget["kind"] == "revised_budget")
+        else:
+            population = selection["population"]
+            assert population["field_count"] == 8
+            assert population["policy_count"] == 23
+            assert population["measure_count"] == 67
+            assert population["project_count"] == 189
+            assert all(record["fiscal_year"] == 2026 for record in reviewed)
+            assert all(record["official_evaluation"] is None for record in reviewed)
+            assert all(record["kpis"] == [] for record in reviewed)
+            indicators = load_json(
+                ROOT / "data" / "reviewed" / "chiba-city" / "current_policy_indicators.json"
+            )
+            assert indicators["official_code"] == "121002"
+            assert indicators["review_status"] == (
+                "reviewed_complete_policy_indicator_identity_and_values"
+            )
+            assert indicators["quantitative_indicator_count"] == 40
+            assert len(indicators["fields"]) == 8
+            assert all(
+                len(record["budget_records"]) == 1
+                and record["budget_records"][0]["kind"] == "initial_budget"
+                and record["budget_records"][0]["fiscal_year"] == 2026
+                and record["budget_records"][0]["amount_yen"] is None
+                for record in reviewed
+            )
+    chiba_city_evidence = load_json(
+        ROOT / "data" / "reviewed" / "chiba-city" / "project_evidence_packets.json"
+    )
+    assert len(chiba_city_evidence) == 10
+    assert all(
+        any(claim["field"] == "kpis" and "付け替えない" in claim["statement"]
+            for claim in packet["claims"])
+        for packet in chiba_city_evidence
+    )
+
+
+def validate_chiba_export() -> list[str]:
+    """Check Chiba-specific wording inside each municipality section, not elsewhere on the page."""
+    failures: list[str] = []
+    page = EXPORT_ROOT / "projects/index.html"
+    if not page.is_file():
+        return failures
+    html = normalized_html(page)
+    expected = {
+        "chiba-prefecture": (
+            "千葉県｜登録事業", "登録単位：施策（10系列）", "41施策",
+            "令和7年度", "9月補正後", "施策単位の公式評定",
+        ),
+        "chiba-city": (
+            "千葉市｜登録事業", "登録単位：政策（10系列）", "23政策",
+            "67施策", "189事業", "分野単位のKGI/KPI",
+        ),
+    }
+    for slug, phrases in expected.items():
+        section = re.search(
+            rf'<section\b(?=[^>]*\bid="{re.escape(slug)}")[^>]*>(.*?)</section>',
+            html, flags=re.DOTALL,
+        )
+        if section is None:
+            failures.append(f"Chiba projects missing municipality section: {slug}")
+            continue
+        for phrase in phrases:
+            if phrase not in section.group(1):
+                failures.append(f"Chiba projects {slug} missing registered fact: {phrase}")
+        projects = load_json(ROOT / "data" / "reviewed" / slug / "projects.json")
+        for record in projects:
+            if record["review_status"] == "reviewed" and (
+                record["official_title"] not in section.group(1)
+            ):
+                failures.append(
+                    f"Chiba projects {slug} missing official title: {record['official_title']}"
+                )
+    return failures
+
+
 def main() -> int:
     args = parse_args()
     failures: list[str] = []
     validate_saitama_data_facts()
+    validate_chiba_data_facts()
     required_files = (
         set(REQUIRED_FILES)
         | published_required_files()
@@ -1011,6 +1147,7 @@ def main() -> int:
         | osaka_cluster_project_detail_files()
         | kanagawa_cluster_project_detail_files()
         | saitama_project_detail_files()
+        | chiba_project_detail_files()
         | {"municipalities/osaka-prefecture/index.html"}
         | {
             f"assemblies/{slug}/index.html"
@@ -1064,6 +1201,7 @@ def main() -> int:
     failures.extend(validate_kanagawa_prefecture_page())
     failures.extend(validate_kanagawa_assembly_scope())
     failures.extend(validate_saitama_export())
+    failures.extend(validate_chiba_export())
     failures.extend(validate_hokkaido_assembly_scope())
     failures.extend(validate_osaka_assembly_scope())
 
