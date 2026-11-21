@@ -1,3 +1,42 @@
+import shizuokaPrefAssembly from "../../../data/reviewed/shizuoka-prefecture/assembly/assembly_records.json";
+import shizuokaPrefDisclosure from "../../../data/reviewed/shizuoka-prefecture/assembly/disclosure_profiles.json";
+import shizuokaPrefSessions from "../../../data/reviewed/shizuoka-prefecture/assembly/sessions.json";
+import shizuokaPrefProposals from "../../../data/reviewed/shizuoka-prefecture/assembly/proposals.json";
+import shizuokaPrefVotes from "../../../data/reviewed/shizuoka-prefecture/assembly/votes.json";
+import shizuokaPrefFactionVotes from "../../../data/reviewed/shizuoka-prefecture/assembly/faction_votes.json";
+import shizuokaPrefExpenses from "../../../data/reviewed/shizuoka-prefecture/assembly/political_activity_expenses.json";
+import shizuokaPrefTrips from "../../../data/reviewed/shizuoka-prefecture/assembly/inspection_trips.json";
+import shizuokaPrefAssemblyEvidence from "../../../data/reviewed/shizuoka-prefecture/assembly/assembly_evidence_packets.json";
+import shizuokaPrefVoteEvidence from "../../../data/reviewed/shizuoka-prefecture/assembly/proposal_vote_evidence_packets.json";
+import shizuokaPrefExpenseEvidence from "../../../data/reviewed/shizuoka-prefecture/assembly/expense_evidence_packets.json";
+import shizuokaPrefTripEvidence from "../../../data/reviewed/shizuoka-prefecture/assembly/inspection_evidence_packets.json";
+import shizuokaPrefSources from "../../../data/catalog/shizuoka_prefecture_assembly_sources.json";
+import shizuokaCityAssembly from "../../../data/reviewed/shizuoka-city/assembly/assembly_records.json";
+import shizuokaCityDisclosure from "../../../data/reviewed/shizuoka-city/assembly/disclosure_profiles.json";
+import shizuokaCitySessions from "../../../data/reviewed/shizuoka-city/assembly/sessions.json";
+import shizuokaCityProposals from "../../../data/reviewed/shizuoka-city/assembly/proposals.json";
+import shizuokaCityVotes from "../../../data/reviewed/shizuoka-city/assembly/votes.json";
+import shizuokaCityFactionVotes from "../../../data/reviewed/shizuoka-city/assembly/faction_votes.json";
+import shizuokaCityExpenses from "../../../data/reviewed/shizuoka-city/assembly/political_activity_expenses.json";
+import shizuokaCityTrips from "../../../data/reviewed/shizuoka-city/assembly/inspection_trips.json";
+import shizuokaCityAssemblyEvidence from "../../../data/reviewed/shizuoka-city/assembly/assembly_evidence_packets.json";
+import shizuokaCityVoteEvidence from "../../../data/reviewed/shizuoka-city/assembly/proposal_vote_evidence_packets.json";
+import shizuokaCityExpenseEvidence from "../../../data/reviewed/shizuoka-city/assembly/expense_evidence_packets.json";
+import shizuokaCityTripEvidence from "../../../data/reviewed/shizuoka-city/assembly/inspection_evidence_packets.json";
+import shizuokaCitySources from "../../../data/catalog/shizuoka_city_assembly_sources.json";
+import hamamatsuCityAssembly from "../../../data/reviewed/hamamatsu-city/assembly/assembly_records.json";
+import hamamatsuCityDisclosure from "../../../data/reviewed/hamamatsu-city/assembly/disclosure_profiles.json";
+import hamamatsuCitySessions from "../../../data/reviewed/hamamatsu-city/assembly/sessions.json";
+import hamamatsuCityProposals from "../../../data/reviewed/hamamatsu-city/assembly/proposals.json";
+import hamamatsuCityVotes from "../../../data/reviewed/hamamatsu-city/assembly/votes.json";
+import hamamatsuCityFactionVotes from "../../../data/reviewed/hamamatsu-city/assembly/faction_votes.json";
+import hamamatsuCityExpenses from "../../../data/reviewed/hamamatsu-city/assembly/political_activity_expenses.json";
+import hamamatsuCityTrips from "../../../data/reviewed/hamamatsu-city/assembly/inspection_trips.json";
+import hamamatsuCityAssemblyEvidence from "../../../data/reviewed/hamamatsu-city/assembly/assembly_evidence_packets.json";
+import hamamatsuCityVoteEvidence from "../../../data/reviewed/hamamatsu-city/assembly/proposal_vote_evidence_packets.json";
+import hamamatsuCityExpenseEvidence from "../../../data/reviewed/hamamatsu-city/assembly/expense_evidence_packets.json";
+import hamamatsuCityTripEvidence from "../../../data/reviewed/hamamatsu-city/assembly/inspection_evidence_packets.json";
+import hamamatsuCitySources from "../../../data/catalog/hamamatsu_city_assembly_sources.json";
 import miyagiPrefAssembly from "../../../data/reviewed/miyagi-prefecture/assembly/assembly_records.json";
 import miyagiPrefDisclosure from "../../../data/reviewed/miyagi-prefecture/assembly/disclosure_profiles.json";
 import miyagiPrefSessions from "../../../data/reviewed/miyagi-prefecture/assembly/sessions.json";
@@ -318,7 +357,7 @@ import chibaCityExpenseEvidence from "../../../data/reviewed/chiba-city/assembly
 import chibaCityTripEvidence from "../../../data/reviewed/chiba-city/assembly/inspection_evidence_packets.json";
 import chibaCitySources from "../../../data/catalog/chiba_city_assembly_sources.json";
 
-export type AssemblySlug = "osaka-prefecture" | "osaka-city" | "sakai-city" | "hokkaido-prefecture" | "sapporo-city" | "asahikawa-city" | "fukuoka-prefecture" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city" | "kanagawa-prefecture" | "yokohama-city" | "kawasaki-city" | "saitama-prefecture" | "saitama-city" | "kawaguchi-city" | "chiba-prefecture" | "chiba-city" | "hyogo-prefecture" | "kobe-city" | "miyagi-prefecture" | "sendai-city";
+export type AssemblySlug = "osaka-prefecture" | "osaka-city" | "sakai-city" | "hokkaido-prefecture" | "sapporo-city" | "asahikawa-city" | "fukuoka-prefecture" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city" | "kanagawa-prefecture" | "yokohama-city" | "kawasaki-city" | "saitama-prefecture" | "saitama-city" | "kawaguchi-city" | "chiba-prefecture" | "chiba-city" | "hyogo-prefecture" | "kobe-city" | "miyagi-prefecture" | "sendai-city" | "shizuoka-prefecture" | "shizuoka-city" | "hamamatsu-city";
 export type Assembly = {
   id: string; name: string; seat_count: number;
   term_start: string; term_end: string;
@@ -397,6 +436,38 @@ function registry(
   };
 }
 export const assemblies: Record<AssemblySlug, Registry> = {
+  "shizuoka-prefecture": registry(
+    shizuokaPrefAssembly.map((assembly) => ({
+      ...assembly,
+      committees: assembly.committees.map((committee) => committee.name),
+    })), shizuokaPrefDisclosure, shizuokaPrefSessions,
+    shizuokaPrefProposals.map((proposal) => ({ related_fiscal_record_ids: [], ...proposal })),
+    shizuokaPrefVotes, shizuokaPrefFactionVotes, shizuokaPrefExpenses,
+    shizuokaPrefTrips.map((trip) => ({
+      ...trip,
+      participants: trip.participants.map((name) => ({ name, role: "役職未収録", participant_type: "member" })),
+    })),
+    [...shizuokaPrefAssemblyEvidence, ...shizuokaPrefVoteEvidence, ...shizuokaPrefExpenseEvidence, ...shizuokaPrefTripEvidence],
+    shizuokaPrefSources.records,
+  ),
+  "shizuoka-city": registry(
+    shizuokaCityAssembly, shizuokaCityDisclosure, shizuokaCitySessions,
+    shizuokaCityProposals, shizuokaCityVotes, shizuokaCityFactionVotes,
+    shizuokaCityExpenses, shizuokaCityTrips,
+    [...shizuokaCityAssemblyEvidence, ...shizuokaCityVoteEvidence, ...shizuokaCityExpenseEvidence, ...shizuokaCityTripEvidence],
+    shizuokaCitySources.records,
+  ),
+  "hamamatsu-city": registry(
+    hamamatsuCityAssembly.map((assembly) => ({
+      ...assembly,
+      seat_count: assembly.seats,
+    })), hamamatsuCityDisclosure, hamamatsuCitySessions,
+    hamamatsuCityProposals.map((proposal) => ({ related_fiscal_record_ids: [], ...proposal })),
+    hamamatsuCityVotes, hamamatsuCityFactionVotes, hamamatsuCityExpenses, hamamatsuCityTrips,
+    [...hamamatsuCityAssemblyEvidence, ...hamamatsuCityVoteEvidence, ...hamamatsuCityExpenseEvidence, ...hamamatsuCityTripEvidence],
+    hamamatsuCitySources.records,
+  ),
+
   "miyagi-prefecture": registry(
     miyagiPrefAssembly, miyagiPrefDisclosure, miyagiPrefSessions,
     miyagiPrefProposals.map((proposal) => ({
@@ -570,6 +641,7 @@ export const assemblySlugs: AssemblySlug[] = [
   "chiba-prefecture", "chiba-city",
   "hyogo-prefecture", "kobe-city",
   "miyagi-prefecture", "sendai-city",
+  "shizuoka-prefecture", "shizuoka-city", "hamamatsu-city",
 ];
 export function isAssemblySlug(slug: string): slug is AssemblySlug {
   return Object.prototype.hasOwnProperty.call(assemblies, slug);
