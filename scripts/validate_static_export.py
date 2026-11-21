@@ -1215,6 +1215,10 @@ def validate_chiba_cluster_export() -> list[str]:
         for phrase in required:
             if phrase not in html:
                 failures.append(f"Chiba prefecture page missing registered fact: {phrase}")
+        reviewed_projects = load_json(ROOT / "data" / "reviewed" / "chiba-prefecture" / "projects.json")
+        for record in reviewed_projects:
+            if record["review_status"] == "reviewed" and record["official_title"] not in html:
+                failures.append(f"Chiba prefecture page missing reviewed project title: {record['official_title']}")
     assemblies_page = EXPORT_ROOT / "assemblies/index.html"
     if assemblies_page.is_file():
         html = normalized_html(assemblies_page)
