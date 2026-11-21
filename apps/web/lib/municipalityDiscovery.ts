@@ -1,3 +1,8 @@
+import saitamaPrefectureMunicipality from "../../../data/reviewed/saitama-prefecture/municipality.json";
+import saitamaCityMunicipality from "../../../data/reviewed/saitama-city/municipality.json";
+import kawaguchiMunicipality from "../../../data/reviewed/kawaguchi-city/municipality.json";
+import saitamaPrefectureBudget from "../../../data/reviewed/saitama-prefecture/fiscal_records.json";
+import saitamaPrefectureSettlements from "../../../data/reviewed/saitama-prefecture/settlement_records.json";
 import osakaMunicipality from "../../../data/reviewed/osaka-prefecture/municipality.json";
 import kanagawaMunicipality from "../../../data/reviewed/kanagawa-prefecture/municipality.json";
 import yokohamaMunicipality from "../../../data/reviewed/yokohama-city/municipality.json";
@@ -49,6 +54,33 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
     return municipality.official_code === officialCode &&
       municipality.data_status === "reviewed";
   });
+
+  if (!matched && officialCode === saitamaPrefectureMunicipality.official_code && saitamaPrefectureMunicipality.data_status === "reviewed") {
+    const hasProjects = projectRegistry["saitama-prefecture"].projects.some(project => project.municipality_id === saitamaPrefectureMunicipality.id && project.review_status === "reviewed");
+    const hasFinance = [...saitamaPrefectureBudget, ...saitamaPrefectureSettlements].some(record => record.municipality_id === saitamaPrefectureMunicipality.id && record.review_status === "reviewed" && ((record.stage === "initial_budget" && record.fiscal_year === 2026) || (record.stage === "settlement" && [2022, 2023, 2024].includes(record.fiscal_year))));
+    const hasPromises = hasReviewedExecutivePromises(saitamaPrefectureMunicipality.id);
+    const entry = assemblies["saitama-prefecture"];
+    const hasAssembly = entry.assembly.review_status === "reviewed" && entry.disclosure.review_status === "reviewed" && entry.assembly.id.startsWith(saitamaPrefectureMunicipality.id + "-assembly-");
+    return { key: "saitama-prefecture", finance: hasFinance, promises: hasPromises, assembly: hasAssembly, projects: hasProjects };
+  }
+
+  if (!matched && officialCode === saitamaCityMunicipality.official_code && saitamaCityMunicipality.data_status === "reviewed") {
+    const hasProjects = projectRegistry["saitama-city"].projects.some(project => project.municipality_id === saitamaCityMunicipality.id && project.review_status === "reviewed");
+    const hasFinance = loadGenericCityFinance("saitama-city") !== null;
+    const hasPromises = hasReviewedExecutivePromises(saitamaCityMunicipality.id);
+    const entry = assemblies["saitama-city"];
+    const hasAssembly = entry.assembly.review_status === "reviewed" && entry.disclosure.review_status === "reviewed" && entry.assembly.id.startsWith(saitamaCityMunicipality.id + "-assembly-");
+    return { key: "saitama-city", finance: hasFinance, promises: hasPromises, assembly: hasAssembly, projects: hasProjects };
+  }
+
+  if (!matched && officialCode === kawaguchiMunicipality.official_code && kawaguchiMunicipality.data_status === "reviewed") {
+    const hasProjects = projectRegistry["kawaguchi-city"].projects.some(project => project.municipality_id === kawaguchiMunicipality.id && project.review_status === "reviewed");
+    const hasFinance = loadGenericCityFinance("kawaguchi-city") !== null;
+    const hasPromises = hasReviewedExecutivePromises(kawaguchiMunicipality.id);
+    const entry = assemblies["kawaguchi-city"];
+    const hasAssembly = entry.assembly.review_status === "reviewed" && entry.disclosure.review_status === "reviewed" && entry.assembly.id.startsWith(kawaguchiMunicipality.id + "-assembly-");
+    return { key: "kawaguchi-city", finance: hasFinance, promises: hasPromises, assembly: hasAssembly, projects: hasProjects };
+  }
 
   if (!matched && officialCode === kanagawaMunicipality.official_code &&
     kanagawaMunicipality.data_status === "reviewed") {

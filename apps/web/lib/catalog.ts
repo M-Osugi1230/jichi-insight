@@ -79,8 +79,8 @@ export const municipalityMeta: Record<
   },
   "saitama-prefecture": {
     name: "埼玉県", type: "都道府県",
-    summary: "埼玉県5か年計画、2026年度成立後当初予算、2022〜2024年度の普通会計決算と大野元裕知事の現任期を確認します。自治体別ページは準備中です。",
-    status: "財政データ公開", href: null,
+    summary: "埼玉県5か年計画、2026年度成立後当初予算、2022〜2024年度の普通会計決算と大野元裕知事の現任期を確認します。自治体別ページで知事公約12件・重点事業10系列・県議会の公開範囲も確認できます。",
+    status: "財政データ公開", href: "/municipalities/saitama-prefecture",
     fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
   },
   "saitama-city": {

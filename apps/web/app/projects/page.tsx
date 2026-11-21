@@ -51,8 +51,8 @@ export default function ProjectsPage() {
       <SiteHeader />
       <main className="pageShell">
         <h1>重点事業</h1>
-        <p>15自治体の Reviewed 事業レコードを掲載しています。公式母集団から各政策の柱ごとに掲載順で選定したものであり、金額順・優先度順・独自ランキングではありません。</p>
-        <p>確認できること：福岡県・福岡市・北九州市・愛知県・名古屋市・豊田市・北海道・札幌市・旭川市・大阪府・大阪市・堺市・神奈川県・横浜市・川崎市の登録済み重点事業の予算・KPI・公式評価（公表のあるもの）。まだ確認できないこと：15自治体の全事業を網羅した一覧ではありません。名古屋市の金額は予算案段階の予定額で成立値ではなく、愛知県のFY2026当初予算額は億円単位の概数です。北海道の金額は基本評価調書の「予算額」に基づく当初予算ベースで、決算額ではありません。北海道の総合判定は道の一次政策評価の判定です。豊田市・札幌市・旭川市の事業単位の公式評価は公表されていません。独自評価や順位付けは行いません。神奈川県の金額は評価報告書に億円単位で公表されたプロジェクト事業費（1億円未満切捨て）です。横浜市は施策群単位の登録であり、個別事業単位ではありません。横浜市・川崎市の金額と公式評価は、登録単位・計画年度に対応する公表値がないため未登録です。</p>
+        <p>18自治体の Reviewed 事業レコードを掲載しています。公式母集団から各政策の柱ごとに掲載順で選定したものであり、金額順・優先度順・独自ランキングではありません。</p>
+        <p>確認できること：福岡県・福岡市・北九州市・愛知県・名古屋市・豊田市・北海道・札幌市・旭川市・大阪府・大阪市・堺市・神奈川県・横浜市・川崎市・埼玉県・さいたま市・川口市の登録済み重点事業の予算・KPI・公式評価（公表のあるもの）。埼玉県・さいたま市・川口市も登録対象です。埼玉県の登録単位は施策で、施策単位の金額と公式評価は県が公表していません（指標単位の判定のみ公表）。さいたま市は事業単位で、市の事業評価（A/B/C）と当初予算額・実績額を掲載します。川口市は施策単位で、KPIは登録済みですが計画初年度のため金額と公式評価は未公表です。まだ確認できないこと：18自治体の全事業を網羅した一覧ではありません。名古屋市の金額は予算案段階の予定額で成立値ではなく、愛知県のFY2026当初予算額は億円単位の概数です。北海道の金額は基本評価調書の「予算額」に基づく当初予算ベースで、決算額ではありません。北海道の総合判定は道の一次政策評価の判定です。豊田市・札幌市・旭川市の事業単位の公式評価は公表されていません。独自評価や順位付けは行いません。神奈川県の金額は評価報告書に億円単位で公表されたプロジェクト事業費（1億円未満切捨て）です。横浜市は施策群単位の登録であり、個別事業単位ではありません。横浜市・川崎市の金額と公式評価は、登録単位・計画年度に対応する公表値がないため未登録です。</p>
 
         <ProgressiveRecordFilter
           kind="projects"
@@ -65,6 +65,9 @@ export default function ProjectsPage() {
               <p className={styles.meta}>母集団：{area.selection.population?.description ?? area.selection.population?.label ?? "詳細未収録"}</p>
               <p className={styles.meta}>選定方法：{(typeof area.selection.selection_rule === "string" ? area.selection.selection_rule : area.selection.selection_rule?.description) ?? "選定規則未収録"}</p>
               <p className={styles.meta}>選定カタログ更新：{area.selection.updated_at ?? "未収録"}。選定・除外理由は Reviewed 選定カタログで管理しています。</p>
+              {key === "saitama-prefecture" ? <p className={styles.meta}>登録単位：施策（10系列）。県の評価報告書に施策単位の予算額・決算額と公式評価は掲載されていません。金額は未登録です。県が公表するのは指標単位の判定のみであり、施策単位の公式評価を推測しません。</p> : null}
+              {key === "saitama-city" ? <p className={styles.meta}>登録単位：事業（10系列）。さいたま市の事業評価 A/B/C を公式評価として、当初予算額と実績額を分けて表示します。施策単位の評価とは混同しません。</p> : null}
+              {key === "kawaguchi-city" ? <p className={styles.meta}>登録単位：施策（10系列）。第6次川口市総合計画は計画初年度のため、KPIを掲載し、施策単位の金額と公式評価は未公表（未登録）です。</p> : null}
               {key === "kanagawa-prefecture" ? <p className={styles.meta}>金額は評価報告書「プロジェクト事業費」の億円単位の公表値（1億円未満切捨て）を円換算したものです。千円単位の内訳・プロジェクト単位の決算額・執行額は公表されていません。</p> : null}
               {key === "yokohama-city" ? <p className={styles.meta}>登録単位：施策群。横浜市中期計画の33施策群から選定した10件であり、個別事業ではありません。施策群単位の金額・公式評価は公表されていないため、金額は未登録です。施策群単位の公式評価も未公表です。</p> : null}
               {key === "kawasaki-city" ? <p className={styles.meta}>第4期実施計画の事務事業から選定した10件です。第4期実施計画に対応する事業別当初予算額は公表されていないため、金額は未登録です。第4期の公式評価は未登録（未公表）です。</p> : null}
@@ -110,6 +113,14 @@ export default function ProjectsPage() {
                           {evaluationDisclosure.map((note, index) => <p className={styles.meta} key={`evaluation-note-${index}`}>公式評価：{note}</p>)}
                         </details>
                       ) : null}
+                      {key === "saitama-city" ? <>
+                        <p className={styles.meta}>さいたま市の公式事業評価（A/B/C）：{project.official_evaluation?.rating ?? "未公表"}</p>
+                        <ul className={styles.meta}>{project.budget_records.map((record, index) => (
+                          <li key={index}>{record.fiscal_year}年度・{record.kind === "initial_budget" ? "当初予算額" : record.kind === "settlement" ? "実績額" : stageLabels[record.kind] ?? record.kind}：{record.amount_yen === null ? "未公表" : `${record.amount_yen.toLocaleString("ja-JP")}円`}</li>
+                        ))}</ul>
+                      </> : null}
+                      {key === "saitama-prefecture" ? <p className={styles.meta}>施策単位の金額：未公表。施策単位の公式評価：未公表（指標単位の判定のみ）。</p> : null}
+                      {key === "kawaguchi-city" ? <p className={styles.meta}>KPIは登録済み。金額・公式評価：計画初年度につき未公表。</p> : null}
                       {key === "nagoya-city" ? <p className={styles.meta}>予算案段階の予定額（成立値ではありません）</p> : null}
                       {key === "aichi-prefecture" ? <p className={styles.meta}>FY2026 当初予算は億円単位の概数です。県の公式評価：{project.official_evaluation?.rating ?? "未収録"}</p> : null}
                       {key === "toyota-city" ? <p className={styles.meta}>事業単位の公式評価は公表されていません。</p> : null}

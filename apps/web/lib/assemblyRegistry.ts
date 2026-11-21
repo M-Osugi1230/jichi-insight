@@ -1,3 +1,43 @@
+// Saitama cluster: reviewed assembly records and source disclosure profiles.
+import saitamaPrefAssembly from "../../../data/reviewed/saitama-prefecture/assembly/assembly_records.json";
+import saitamaPrefDisclosure from "../../../data/reviewed/saitama-prefecture/assembly/disclosure_profiles.json";
+import saitamaPrefSessions from "../../../data/reviewed/saitama-prefecture/assembly/sessions.json";
+import saitamaPrefProposals from "../../../data/reviewed/saitama-prefecture/assembly/proposals.json";
+import saitamaPrefVotes from "../../../data/reviewed/saitama-prefecture/assembly/votes.json";
+import saitamaPrefFactionVotes from "../../../data/reviewed/saitama-prefecture/assembly/faction_votes.json";
+import saitamaPrefExpenses from "../../../data/reviewed/saitama-prefecture/assembly/political_activity_expenses.json";
+import saitamaPrefTrips from "../../../data/reviewed/saitama-prefecture/assembly/inspection_trips.json";
+import saitamaPrefAssemblyEvidence from "../../../data/reviewed/saitama-prefecture/assembly/assembly_evidence_packets.json";
+import saitamaPrefVoteEvidence from "../../../data/reviewed/saitama-prefecture/assembly/proposal_vote_evidence_packets.json";
+import saitamaPrefExpenseEvidence from "../../../data/reviewed/saitama-prefecture/assembly/expense_evidence_packets.json";
+import saitamaPrefTripEvidence from "../../../data/reviewed/saitama-prefecture/assembly/inspection_evidence_packets.json";
+import saitamaPrefSources from "../../../data/catalog/saitama_prefecture_assembly_sources.json";
+import saitamaCityAssembly from "../../../data/reviewed/saitama-city/assembly/assembly_records.json";
+import saitamaCityDisclosure from "../../../data/reviewed/saitama-city/assembly/disclosure_profiles.json";
+import saitamaCitySessions from "../../../data/reviewed/saitama-city/assembly/sessions.json";
+import saitamaCityProposals from "../../../data/reviewed/saitama-city/assembly/proposals.json";
+import saitamaCityVotes from "../../../data/reviewed/saitama-city/assembly/votes.json";
+import saitamaCityFactionVotes from "../../../data/reviewed/saitama-city/assembly/faction_votes.json";
+import saitamaCityExpenses from "../../../data/reviewed/saitama-city/assembly/political_activity_expenses.json";
+import saitamaCityTrips from "../../../data/reviewed/saitama-city/assembly/inspection_trips.json";
+import saitamaCityAssemblyEvidence from "../../../data/reviewed/saitama-city/assembly/assembly_evidence_packets.json";
+import saitamaCityVoteEvidence from "../../../data/reviewed/saitama-city/assembly/proposal_vote_evidence_packets.json";
+import saitamaCityExpenseEvidence from "../../../data/reviewed/saitama-city/assembly/expense_evidence_packets.json";
+import saitamaCityTripEvidence from "../../../data/reviewed/saitama-city/assembly/inspection_evidence_packets.json";
+import saitamaCitySources from "../../../data/catalog/saitama_city_assembly_sources.json";
+import kawaguchiAssembly from "../../../data/reviewed/kawaguchi-city/assembly/assembly_records.json";
+import kawaguchiDisclosure from "../../../data/reviewed/kawaguchi-city/assembly/disclosure_profiles.json";
+import kawaguchiSessions from "../../../data/reviewed/kawaguchi-city/assembly/sessions.json";
+import kawaguchiProposals from "../../../data/reviewed/kawaguchi-city/assembly/proposals.json";
+import kawaguchiVotes from "../../../data/reviewed/kawaguchi-city/assembly/votes.json";
+import kawaguchiFactionVotes from "../../../data/reviewed/kawaguchi-city/assembly/faction_votes.json";
+import kawaguchiExpenses from "../../../data/reviewed/kawaguchi-city/assembly/political_activity_expenses.json";
+import kawaguchiTrips from "../../../data/reviewed/kawaguchi-city/assembly/inspection_trips.json";
+import kawaguchiAssemblyEvidence from "../../../data/reviewed/kawaguchi-city/assembly/assembly_evidence_packets.json";
+import kawaguchiVoteEvidence from "../../../data/reviewed/kawaguchi-city/assembly/proposal_vote_evidence_packets.json";
+import kawaguchiExpenseEvidence from "../../../data/reviewed/kawaguchi-city/assembly/expense_evidence_packets.json";
+import kawaguchiTripEvidence from "../../../data/reviewed/kawaguchi-city/assembly/inspection_evidence_packets.json";
+import kawaguchiSources from "../../../data/catalog/kawaguchi_city_assembly_sources.json";
 import osakaPrefAssembly from "../../../data/reviewed/osaka-prefecture/assembly/assembly_records.json";
 import osakaPrefDisclosure from "../../../data/reviewed/osaka-prefecture/assembly/disclosure_profiles.json";
 import osakaPrefSessions from "../../../data/reviewed/osaka-prefecture/assembly/sessions.json";
@@ -198,7 +238,7 @@ import kawasakiExpenseEvidence from "../../../data/reviewed/kawasaki-city/assemb
 import kawasakiTripEvidence from "../../../data/reviewed/kawasaki-city/assembly/inspection_evidence_packets.json";
 import kawasakiSources from "../../../data/catalog/kawasaki_city_assembly_sources.json";
 
-export type AssemblySlug = "osaka-prefecture" | "osaka-city" | "sakai-city" | "hokkaido-prefecture" | "sapporo-city" | "asahikawa-city" | "fukuoka-prefecture" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city" | "kanagawa-prefecture" | "yokohama-city" | "kawasaki-city";
+export type AssemblySlug = "osaka-prefecture" | "osaka-city" | "sakai-city" | "hokkaido-prefecture" | "sapporo-city" | "asahikawa-city" | "fukuoka-prefecture" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city" | "kanagawa-prefecture" | "yokohama-city" | "kawasaki-city" | "saitama-prefecture" | "saitama-city" | "kawaguchi-city";
 export type Assembly = {
   id: string; name: string; seat_count: number;
   term_start: string; term_end: string;
@@ -277,6 +317,25 @@ function registry(
   };
 }
 export const assemblies: Record<AssemblySlug, Registry> = {
+  "saitama-prefecture": registry(
+    saitamaPrefAssembly, saitamaPrefDisclosure, saitamaPrefSessions, saitamaPrefProposals.map(proposal => ({ related_fiscal_record_ids: [], ...proposal })), saitamaPrefVotes,
+    saitamaPrefFactionVotes, saitamaPrefExpenses, saitamaPrefTrips,
+    [...saitamaPrefAssemblyEvidence, ...saitamaPrefVoteEvidence, ...saitamaPrefExpenseEvidence, ...saitamaPrefTripEvidence],
+    saitamaPrefSources.records,
+  ),
+  "saitama-city": registry(
+    saitamaCityAssembly, saitamaCityDisclosure, saitamaCitySessions, saitamaCityProposals, saitamaCityVotes,
+    saitamaCityFactionVotes, saitamaCityExpenses, saitamaCityTrips,
+    [...saitamaCityAssemblyEvidence, ...saitamaCityVoteEvidence, ...saitamaCityExpenseEvidence, ...saitamaCityTripEvidence],
+    saitamaCitySources.records,
+  ),
+  "kawaguchi-city": registry(
+    kawaguchiAssembly, kawaguchiDisclosure, kawaguchiSessions, kawaguchiProposals, kawaguchiVotes,
+    kawaguchiFactionVotes, kawaguchiExpenses, kawaguchiTrips,
+    [...kawaguchiAssemblyEvidence, ...kawaguchiVoteEvidence, ...kawaguchiExpenseEvidence, ...kawaguchiTripEvidence],
+    kawaguchiSources.records,
+  ),
+
   "osaka-prefecture": registry(
     osakaPrefAssembly, osakaPrefDisclosure, osakaPrefSessions, osakaPrefProposals, osakaPrefVotes,
     osakaPrefFactionVotes, osakaPrefExpenses, osakaPrefTrips,
@@ -374,6 +433,7 @@ export const assemblySlugs: AssemblySlug[] = [
   "fukuoka-prefecture", "fukuoka-city", "kitakyushu-city",
   "aichi-prefecture", "nagoya-city", "toyota-city",
   "kanagawa-prefecture", "yokohama-city", "kawasaki-city",
+  "saitama-prefecture", "saitama-city", "kawaguchi-city",
 ];
 export function isAssemblySlug(slug: string): slug is AssemblySlug {
   return Object.prototype.hasOwnProperty.call(assemblies, slug);

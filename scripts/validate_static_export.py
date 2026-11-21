@@ -36,6 +36,9 @@ REQUIRED_FILES = [
     "assemblies/kanagawa-prefecture/index.html",
     "assemblies/yokohama-city/index.html",
     "assemblies/kawasaki-city/index.html",
+    "assemblies/saitama-prefecture/index.html",
+    "assemblies/saitama-city/index.html",
+    "assemblies/kawaguchi-city/index.html",
     "compare/index.html",
     "corrections/index.html",
     "data-quality/index.html",
@@ -51,6 +54,7 @@ REQUIRED_FILES = [
     "municipalities/aichi/index.html",
     "municipalities/aichi-prefecture/index.html",
     "municipalities/kanagawa-prefecture/index.html",
+    "municipalities/saitama-prefecture/index.html",
     "municipalities/osaka/index.html",
     "municipalities/hiroshima/index.html",
     "municipalities/kagawa/index.html",
@@ -159,7 +163,8 @@ BASE_PAGE_REQUIREMENTS: dict[str, list[str]] = {
         "まだ登録・評価していないこと",
     ],
     "projects/index.html": [
-        "15自治体の Reviewed 事業レコード",
+        "18自治体の Reviewed 事業レコード",
+        "埼玉県｜登録事業", "さいたま市｜登録事業", "川口市｜登録事業",
         "北海道｜登録事業",
         "札幌市｜登録事業",
         "旭川市｜登録事業",
@@ -757,7 +762,8 @@ def validate_hokkaido_assembly_scope() -> list[str]:
     if path.is_file():
         content = normalized_html(path)
         for phrase in [
-            "15議会", "大阪府議会", "大阪市会", "堺市議会",
+            "18議会", "埼玉県議会", "さいたま市議会", "川口市議会",
+            "大阪府議会", "大阪市会", "堺市議会",
             "北海道議会", "札幌市議会", "旭川市議会",
             "神奈川県議会", "横浜市会", "川崎市議会",
         ]:
@@ -818,15 +824,192 @@ def validate_osaka_assembly_scope() -> list[str]:
     return failures
 
 
+
+def saitama_project_detail_files() -> set[str]:
+    """Require each reviewed Saitama project series to have a static detail page."""
+    required: set[str] = set()
+    for slug in ("saitama-prefecture", "saitama-city", "kawaguchi-city"):
+        records = load_json(ROOT / "data" / "reviewed" / slug / "projects.json")
+        for series in {
+            record["series_id"] for record in records if record["review_status"] == "reviewed"
+        }:
+            required.add(f"projects/{slug}/{series}/index.html")
+    return required
+
+
+def validate_saitama_data_facts() -> None:
+    """Fail with an assert if the stated page facts diverge from reviewed data."""
+    base = ROOT / "data" / "reviewed" / "saitama-prefecture"
+    plan = load_json(base / "plan_review.json")
+    identity = next(
+        row for row in plan["records"] if row["evidence_role"] == "current_plan_identity"
+    )
+    structure = next(
+        row for row in plan["records"] if row["evidence_role"] == "policy_structure"
+    )
+    assert "埼玉県5か年計画 ～日本一暮らしやすい埼玉へ～" in identity["title"], identity["title"]
+    assert "令和4〜8年度" in identity["title"], identity["title"]
+    assert structure["value"] == "3つの将来像／12の針路／54の分野別施策", structure["value"]
+    budget = load_json(base / "fiscal_records.json")
+    settlement = load_json(base / "settlement_records.json")
+    assert len(budget) == 3, len(budget)
+    assert len(settlement) == 51, len(settlement)
+    assert all(
+        x["stage"] == "initial_budget" and x["account_type"] == "general"
+        and x["fiscal_year"] == 2026
+        for x in budget
+    )
+    assert all(
+        x["stage"] == "settlement" and x["account_type"] == "ordinary"
+        and x["fiscal_year"] in (2022, 2023, 2024)
+        for x in settlement
+    )
+    selection = load_json(ROOT / "data" / "catalog" / "saitama_priority_project_selection.json")
+    assert selection["population"]["project_count"] == 54
+    assert len(selection["selections"]) == 10
+    for slug in ("saitama-prefecture", "saitama-city", "kawaguchi-city"):
+        municipality = load_json(ROOT / "data" / "reviewed" / slug / "municipality.json")
+        projects = load_json(ROOT / "data" / "reviewed" / slug / "projects.json")
+        assert municipality["data_status"] == "reviewed"
+        reviewed_series = {
+            project["series_id"] for project in projects if project["review_status"] == "reviewed"
+        }
+        assert len(reviewed_series) == 10
+        assert all(project["municipality_id"] == municipality["id"] for project in projects)
+        if slug != "saitama-city":
+            assert all(
+                budget_record["amount_yen"] is None
+                for project in projects for budget_record in project["budget_records"]
+            )
+    terms = load_json(ROOT / "data" / "entities" / "executives" / "executive_terms.json")
+    promises = load_json(ROOT / "data" / "entities" / "executives" / "promises.json")
+    slug_counts = (("saitama-prefecture", 12), ("saitama-city", 12), ("kawaguchi-city", 26))
+    for slug, expected in slug_counts:
+        municipality = load_json(ROOT / "data" / "reviewed" / slug / "municipality.json")
+        term_ids = {
+            term["id"]
+            for term in terms
+            if term["municipality_id"] == municipality["id"]
+            and term["status"] == "current"
+            and term["review_status"] in ("reviewed", "verified")
+        }
+        assert term_ids, slug
+        registered = [
+            p
+            for p in promises
+            if p["executive_term_id"] in term_ids
+            and p["review_status"] in ("reviewed", "verified")
+        ]
+        assert len(registered) == expected, (slug, len(registered), expected)
+        assembly = load_json(
+            ROOT / "data" / "reviewed" / slug / "assembly" / "assembly_records.json"
+        )
+        disclosure = load_json(
+            ROOT / "data" / "reviewed" / slug / "assembly" / "disclosure_profiles.json"
+        )
+        assert len(assembly) == len(disclosure) == 1
+        assert assembly[0]["municipality_id"] == municipality["id"]
+        assert assembly[0]["review_status"] == disclosure[0]["review_status"] == "reviewed"
+    kawaguchi = load_json(
+        ROOT / "data" / "reviewed" / "kawaguchi-city" / "assembly" / "disclosure_profiles.json"
+    )[0]
+    member_votes = next(
+        row["availability"] for row in kawaguchi["items"] if row["item"] == "member_votes"
+    )
+    assert member_votes == "not_published"
+    faction_votes = next(
+        row["availability"] for row in kawaguchi["items"] if row["item"] == "faction_votes"
+    )
+    assert faction_votes == "not_published"
+
+
+def validate_saitama_export() -> list[str]:
+    """Inspect each individual Saitama municipality/assembly section, not the whole document."""
+    slug_counts = (("saitama-prefecture", 12), ("saitama-city", 12), ("kawaguchi-city", 26))
+    failures: list[str] = []
+    page = EXPORT_ROOT / "municipalities/saitama-prefecture/index.html"
+    if page.is_file():
+        content = normalized_html(page)
+        required = {
+            "plan-title": ("埼玉県5か年計画", "12の針路", "54の分野別施策"),
+            "finance-headline-title": ("2026年度", "当初予算"),
+            "priority-projects": ("10系列", "施策単位の金額", "指標単位の判定"),
+            "governor-title": ("大野 元裕", "12件"),
+            "assembly-title": ("議会運営委員会", "本会議の投票記録そのものではありません"),
+        }
+        for section_id, phrases in required.items():
+            if section_id == "priority-projects":
+                pattern = r'<section\b(?=[^>]*\bid="priority-projects")[^>]*>(.*?)</section>'
+            else:
+                pattern = (
+                    rf'<section\b[^>]*>(?:(?!</section>).)*?<h2\b[^>]*\b'
+                    rf'id="{re.escape(section_id)}"[^>]*>(?:(?!</h2>).)*</h2>(.*?)</section>'
+                )
+            match = re.search(pattern, content, flags=re.DOTALL)
+            if match is None:
+                failures.append(f"saitama prefecture missing section: {section_id}")
+                continue
+            for phrase in phrases:
+                if phrase not in match.group(0):
+                    failures.append(f"saitama prefecture {section_id} missing fact: {phrase}")
+    projects = EXPORT_ROOT / "projects/index.html"
+    if projects.is_file():
+        html = normalized_html(projects)
+        expected = {
+            "saitama-prefecture": ("埼玉県｜登録事業", "施策単位"),
+            "saitama-city": ("さいたま市｜登録事業", "事業"),
+            "kawaguchi-city": ("川口市｜登録事業", "施策"),
+        }
+        for slug, phrases in expected.items():
+            section = re.search(
+                rf'<section\b(?=[^>]*\bid="{re.escape(slug)}")[^>]*>(.*?)</section>',
+                html, flags=re.DOTALL,
+            )
+            if section is None:
+                failures.append(f"Saitama projects missing municipality section: {slug}")
+                continue
+            for phrase in phrases:
+                if phrase not in section.group(1):
+                    failures.append(f"Saitama projects {slug} missing registered fact: {phrase}")
+    promises = EXPORT_ROOT / "promises/index.html"
+    if promises.is_file():
+        html = normalized_html(promises)
+        for slug, count in slug_counts:
+            section = re.search(
+                rf'<section\b(?=[^>]*\bid="{re.escape(slug)}")[^>]*>(.*?)</section>',
+                html, flags=re.DOTALL,
+            )
+            if section is None or f"Reviewed 公約原文 {count}件" not in section.group(1):
+                failures.append(
+                    f"Saitama promises {slug} section missing {count} reviewed promises"
+                )
+    for slug, phrases in {
+        "saitama-prefecture": ("議会運営委員会", "本会議の投票記録"),
+        "saitama-city": ("無所属議員の個人名列", "会派"),
+        "kawaguchi-city": ("公式公表なし", "not_published"),
+    }.items():
+        path = EXPORT_ROOT / "assemblies" / slug / "index.html"
+        if not path.is_file():
+            failures.append(f"Missing Saitama assembly page: {slug}")
+            continue
+        html = normalized_html(path)
+        for phrase in phrases:
+            if phrase not in html:
+                failures.append(f"Saitama assembly {slug} missing disclosure: {phrase}")
+    return failures
+
+
 def main() -> int:
     args = parse_args()
     failures: list[str] = []
+    validate_saitama_data_facts()
     required_files = (
         set(REQUIRED_FILES)
         | published_required_files()
         | hokkaido_cluster_project_detail_files()
         | osaka_cluster_project_detail_files()
         | kanagawa_cluster_project_detail_files()
+        | saitama_project_detail_files()
         | {"municipalities/osaka-prefecture/index.html"}
         | {
             f"assemblies/{slug}/index.html"
@@ -879,6 +1062,7 @@ def main() -> int:
     failures.extend(validate_kanagawa_cluster_sections())
     failures.extend(validate_kanagawa_prefecture_page())
     failures.extend(validate_kanagawa_assembly_scope())
+    failures.extend(validate_saitama_export())
     failures.extend(validate_hokkaido_assembly_scope())
     failures.extend(validate_osaka_assembly_scope())
 

@@ -35,7 +35,7 @@ def test_registry_adds_three_reviewed_areas_without_replacing_existing_ones():
 
 
 def test_projects_index_exposes_all_three_registered_areas_and_disclosure_units():
-    assert "15自治体の Reviewed 事業レコード" in INDEX
+    assert "18自治体の Reviewed 事業レコード" in INDEX
     for slug, name in (
         ("kanagawa-prefecture", "神奈川県"),
         ("yokohama-city", "横浜市"),
@@ -131,7 +131,7 @@ def test_static_export_requires_all_cluster_detail_pages_and_scoped_copy():
     assert "def validate_kanagawa_cluster_sections()" in EXPORT
     assert "validate_kanagawa_cluster_sections()" in EXPORT
     for phrase in (
-        "15自治体の Reviewed 事業レコード",
+        "18自治体の Reviewed 事業レコード",
         "登録単位：施策群",
         "億円単位の公表値",
         "第4期実施計画",
