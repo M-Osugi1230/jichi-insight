@@ -7,8 +7,8 @@ import { canonicalFor } from "@/lib/pageMetadata";
 import styles from "./assembly.module.css";
 
 export const metadata: Metadata = {
-  title: "議会アカウンタビリティ｜20議会の議案・表決・政務活動費・視察",
-  description: "北海道・大阪・福岡・愛知・神奈川・埼玉・千葉の20議会について、公式資料と情報公開状況を確認します。議員スコアや活動量ランキングは作りません。",
+  title: "議会アカウンタビリティ｜22議会の議案・表決・政務活動費・視察",
+  description: "北海道・大阪・福岡・愛知・神奈川・埼玉・千葉・兵庫の22議会について、公式資料と情報公開状況を確認します。議員スコアや活動量ランキングは作りません。",
   alternates: { canonical: canonicalFor("/assemblies") },
 };
 const status: Record<string,string> = {
@@ -28,15 +28,16 @@ export default function AssembliesPage() {
       <p className="eyebrow">Assembly accountability</p>
       <h1>議会を、質問数ではなく役割と根拠で見る。</h1>
       <p>議会の審議・表決・情報公開と、執行部が実施した政策成果は別のものです。公開されていない議員別賛否を推測して再現したり、議員や会派を活動量・支出額で順位付けしたりしません。総合点や会派ランキングは出しません。</p>
-      <p className={styles.attention}>確認できること：20議会の登録済み議案・議決結果と資料ごとの公開範囲。千葉県議会・千葉市議会を含みます。千葉県議会の賛否一覧は3表で○の意味が異なります。議案表は反対、発議案表は賛成内訳、請願表は採択賛成を示します。令和7年度決算認定は継続審査中（pending）です。千葉県議会の会派別賛否と無所属議員の個人名列を区別し、会派所属議員の個人票を推測しません。埼玉県議会の会派別賛否は議会運営委員会で確認した態度で、本会議の投票記録ではありません。さいたま市議会の賛否は会派別と無所属議員の個人名列であり、全議員の個人別記録ではありません。川口市議会の賛否は公式公表なし（not_published）です。名古屋市会では第134号のみ議員別賛否68人分を確認でき、他の登録議案は全会一致です。愛知県議会の会派態度は採決前に議会運営委員会で確認されたもので、本会議の投票記録そのものではありません。福岡県議会の会派別・議員別賛否など、公表されていない情報は推測しません。</p>
+      <p className={styles.attention}>確認できること：22議会の登録済み議案・議決結果と資料ごとの公開範囲。千葉県議会・千葉市議会・兵庫県議会・神戸市会を含みます。兵庫県議会の会派態度は、表決そのものの記録ではなく採決に先立って各会派・議員が表明した態度を議会事務局が集約したものです。千葉県議会の賛否一覧は3表で○の意味が異なります。議案表は反対、発議案表は賛成内訳、請願表は採択賛成を示します。令和7年度決算認定は継続審査中（pending）です。千葉県議会の会派別賛否と無所属議員の個人名列を区別し、会派所属議員の個人票を推測しません。埼玉県議会の会派別賛否は議会運営委員会で確認した態度で、本会議の投票記録ではありません。さいたま市議会の賛否は会派別と無所属議員の個人名列であり、全議員の個人別記録ではありません。川口市議会の賛否は公式公表なし（not_published）です。名古屋市会では第134号のみ議員別賛否68人分を確認でき、他の登録議案は全会一致です。愛知県議会の会派態度は採決前に議会運営委員会で確認されたもので、本会議の投票記録そのものではありません。福岡県議会の会派別・議員別賛否など、公表されていない情報は推測しません。</p>
     </header>
-    <section aria-label="20議会の情報公開状況" className={styles.grid}>
+    <section aria-label="22議会の情報公開状況" className={styles.grid}>
       {assemblySlugs.map(slug => {
         const entry=assemblies[slug]; const assembly=entry.assembly;
-        const members=assembly.factions.reduce((sum,faction)=>sum+faction.member_count,0) + (slug==="chiba-prefecture" ? 2 : 0);
+        const members=slug==="hyogo-prefecture" ? 82 : assembly.factions.reduce((sum,faction)=>sum+faction.member_count,0) + (slug==="chiba-prefecture" ? 2 : 0);
         return <article className={styles.card} key={slug}>
           <p className="eyebrow">Reviewed</p><h2>{assembly.name}</h2>
           <p className={styles.note}>現任期：{assembly.term_start} 〜 {assembly.term_end}</p>
+          {slug==="hyogo-prefecture" ? <p className={styles.note}>現員82人は2026年11月2日時点の公式名簿によります。会派の人数は令和7年度政務活動費の交付名簿に基づき、同じ時点の構成とみなしません。</p> : null}
           <p>議員定数 {assembly.seat_count}人／登録名簿の現員 {members}人
           {assembly.seat_count > members ? `（欠員 ${assembly.seat_count-members}人）`:""}</p>
           <h3>この議会で公開されているもの</h3>

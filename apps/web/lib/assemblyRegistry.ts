@@ -1,3 +1,30 @@
+import hyogoPrefAssembly from "../../../data/reviewed/hyogo-prefecture/assembly/assembly_records.json";
+import hyogoPrefDisclosure from "../../../data/reviewed/hyogo-prefecture/assembly/disclosure_profiles.json";
+import hyogoPrefSessions from "../../../data/reviewed/hyogo-prefecture/assembly/sessions.json";
+import hyogoPrefProposals from "../../../data/reviewed/hyogo-prefecture/assembly/proposals.json";
+import hyogoPrefVotes from "../../../data/reviewed/hyogo-prefecture/assembly/votes.json";
+import hyogoPrefFactionVotes from "../../../data/reviewed/hyogo-prefecture/assembly/faction_votes.json";
+import hyogoPrefExpenses from "../../../data/reviewed/hyogo-prefecture/assembly/political_activity_expenses.json";
+import hyogoPrefTrips from "../../../data/reviewed/hyogo-prefecture/assembly/inspection_trips.json";
+import hyogoPrefAssemblyEvidence from "../../../data/reviewed/hyogo-prefecture/assembly/assembly_evidence_packets.json";
+import hyogoPrefVoteEvidence from "../../../data/reviewed/hyogo-prefecture/assembly/proposal_vote_evidence_packets.json";
+import hyogoPrefExpenseEvidence from "../../../data/reviewed/hyogo-prefecture/assembly/expense_evidence_packets.json";
+import hyogoPrefTripEvidence from "../../../data/reviewed/hyogo-prefecture/assembly/inspection_evidence_packets.json";
+import hyogoPrefSources from "../../../data/catalog/hyogo_prefecture_assembly_sources.json";
+import kobeCityAssembly from "../../../data/reviewed/kobe-city/assembly/assembly_records.json";
+import kobeCityDisclosure from "../../../data/reviewed/kobe-city/assembly/disclosure_profiles.json";
+import kobeCitySessions from "../../../data/reviewed/kobe-city/assembly/sessions.json";
+import kobeCityProposals from "../../../data/reviewed/kobe-city/assembly/proposals.json";
+import kobeCityVotes from "../../../data/reviewed/kobe-city/assembly/votes.json";
+import kobeCityFactionVotes from "../../../data/reviewed/kobe-city/assembly/faction_votes.json";
+import kobeCityExpenses from "../../../data/reviewed/kobe-city/assembly/political_activity_expenses.json";
+import kobeCityTrips from "../../../data/reviewed/kobe-city/assembly/inspection_trips.json";
+import kobeCityAssemblyEvidence from "../../../data/reviewed/kobe-city/assembly/assembly_evidence_packets.json";
+import kobeCityVoteEvidence from "../../../data/reviewed/kobe-city/assembly/proposal_vote_evidence_packets.json";
+import kobeCityExpenseEvidence from "../../../data/reviewed/kobe-city/assembly/expense_evidence_packets.json";
+import kobeCityTripEvidence from "../../../data/reviewed/kobe-city/assembly/inspection_evidence_packets.json";
+import kobeCitySources from "../../../data/catalog/kobe_city_assembly_sources.json";
+
 // Saitama cluster: reviewed assembly records and source disclosure profiles.
 import saitamaPrefAssembly from "../../../data/reviewed/saitama-prefecture/assembly/assembly_records.json";
 import saitamaPrefDisclosure from "../../../data/reviewed/saitama-prefecture/assembly/disclosure_profiles.json";
@@ -265,7 +292,7 @@ import chibaCityExpenseEvidence from "../../../data/reviewed/chiba-city/assembly
 import chibaCityTripEvidence from "../../../data/reviewed/chiba-city/assembly/inspection_evidence_packets.json";
 import chibaCitySources from "../../../data/catalog/chiba_city_assembly_sources.json";
 
-export type AssemblySlug = "osaka-prefecture" | "osaka-city" | "sakai-city" | "hokkaido-prefecture" | "sapporo-city" | "asahikawa-city" | "fukuoka-prefecture" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city" | "kanagawa-prefecture" | "yokohama-city" | "kawasaki-city" | "saitama-prefecture" | "saitama-city" | "kawaguchi-city" | "chiba-prefecture" | "chiba-city";
+export type AssemblySlug = "osaka-prefecture" | "osaka-city" | "sakai-city" | "hokkaido-prefecture" | "sapporo-city" | "asahikawa-city" | "fukuoka-prefecture" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city" | "kanagawa-prefecture" | "yokohama-city" | "kawasaki-city" | "saitama-prefecture" | "saitama-city" | "kawaguchi-city" | "chiba-prefecture" | "chiba-city" | "hyogo-prefecture" | "kobe-city";
 export type Assembly = {
   id: string; name: string; seat_count: number;
   term_start: string; term_end: string;
@@ -344,6 +371,24 @@ function registry(
   };
 }
 export const assemblies: Record<AssemblySlug, Registry> = {
+  "hyogo-prefecture": registry(
+    hyogoPrefAssembly, hyogoPrefDisclosure, hyogoPrefSessions,
+    hyogoPrefProposals.map((proposal) => ({
+      parent_proposal_id: null,
+      related_fiscal_record_ids: [],
+      related_project_ids: [],
+      ...proposal,
+    })),
+    hyogoPrefVotes, hyogoPrefFactionVotes, hyogoPrefExpenses, hyogoPrefTrips,
+    [...hyogoPrefAssemblyEvidence, ...hyogoPrefVoteEvidence, ...hyogoPrefExpenseEvidence, ...hyogoPrefTripEvidence],
+    hyogoPrefSources.records,
+  ),
+  "kobe-city": registry(
+    kobeCityAssembly, kobeCityDisclosure, kobeCitySessions,
+    kobeCityProposals, kobeCityVotes, kobeCityFactionVotes, kobeCityExpenses, kobeCityTrips,
+    [...kobeCityAssemblyEvidence, ...kobeCityVoteEvidence, ...kobeCityExpenseEvidence, ...kobeCityTripEvidence],
+    kobeCitySources.records,
+  ),
   "chiba-prefecture": registry(
     chibaPrefAssembly, chibaPrefDisclosure, chibaPrefSessions,
     chibaPrefProposals.map((proposal) => ({ related_fiscal_record_ids: [], ...proposal })),
@@ -475,6 +520,7 @@ export const assemblySlugs: AssemblySlug[] = [
   "kanagawa-prefecture", "yokohama-city", "kawasaki-city",
   "saitama-prefecture", "saitama-city", "kawaguchi-city",
   "chiba-prefecture", "chiba-city",
+  "hyogo-prefecture", "kobe-city",
 ];
 export function isAssemblySlug(slug: string): slug is AssemblySlug {
   return Object.prototype.hasOwnProperty.call(assemblies, slug);

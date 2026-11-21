@@ -1,5 +1,6 @@
 import hyogoPrefectureMunicipality from "../../../data/reviewed/hyogo-prefecture/municipality.json";
 import kobeCityMunicipality from "../../../data/reviewed/kobe-city/municipality.json";
+import { hyogoFinance } from "@/lib/hyogoFinance";
 import chibaPrefectureMunicipality from "../../../data/reviewed/chiba-prefecture/municipality.json";
 import chibaCityMunicipality from "../../../data/reviewed/chiba-city/municipality.json";
 import { chibaFinance } from "@/lib/chibaFinance";
@@ -64,20 +65,41 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
   // Keep key null until a dedicated municipality route or corresponding executive/assembly data is published.
   if (!matched && officialCode === hyogoPrefectureMunicipality.official_code &&
     hyogoPrefectureMunicipality.data_status === "reviewed") {
+    const municipalityId = hyogoPrefectureMunicipality.id;
     const hasProjects = projectRegistry["hyogo-prefecture"].projects.some((project) =>
-      project.municipality_id === hyogoPrefectureMunicipality.id &&
-      project.review_status === "reviewed",
+      project.municipality_id === municipalityId && project.review_status === "reviewed",
     );
-    return { key: null, finance: false, promises: false, assembly: false, projects: hasProjects };
+    const hasFinance = hyogoFinance.records.some((record) =>
+      record.municipality_id === municipalityId && record.review_status === "reviewed" &&
+      ((record.stage === "initial_budget" && record.account_type === "general" && record.fiscal_year === 2026) ||
+       (record.stage === "settlement" && record.account_type === "ordinary" && [2022, 2023, 2024].includes(record.fiscal_year))),
+    );
+    const entry = assemblies["hyogo-prefecture"];
+    const hasAssembly = entry.assembly.review_status === "reviewed" &&
+      entry.disclosure.review_status === "reviewed" &&
+      entry.assembly.id.startsWith(municipalityId + "-assembly-");
+    return {
+      key: "hyogo-prefecture", finance: hasFinance,
+      promises: hasReviewedExecutivePromises(municipalityId),
+      assembly: hasAssembly, projects: hasProjects,
+    };
   }
 
   if (!matched && officialCode === kobeCityMunicipality.official_code &&
     kobeCityMunicipality.data_status === "reviewed") {
+    const municipalityId = kobeCityMunicipality.id;
     const hasProjects = projectRegistry["kobe-city"].projects.some((project) =>
-      project.municipality_id === kobeCityMunicipality.id &&
-      project.review_status === "reviewed",
+      project.municipality_id === municipalityId && project.review_status === "reviewed",
     );
-    return { key: null, finance: false, promises: false, assembly: false, projects: hasProjects };
+    const entry = assemblies["kobe-city"];
+    const hasAssembly = entry.assembly.review_status === "reviewed" &&
+      entry.disclosure.review_status === "reviewed" &&
+      entry.assembly.id.startsWith(municipalityId + "-assembly-");
+    return {
+      key: "kobe-city", finance: loadGenericCityFinance("kobe-city") !== null,
+      promises: hasReviewedExecutivePromises(municipalityId),
+      assembly: hasAssembly, projects: hasProjects,
+    };
   }
 
   if (!matched && officialCode === saitamaPrefectureMunicipality.official_code && saitamaPrefectureMunicipality.data_status === "reviewed") {

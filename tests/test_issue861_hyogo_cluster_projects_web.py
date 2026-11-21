@@ -100,6 +100,8 @@ def test_two_units_and_missing_values_are_not_misattributed():
 
 
 def test_discovery_gates_require_matching_reviewed_municipalities():
+    # Stage 3/4 Reviewed terms and assembly records are now available (Issue #870).
+    # Their gates must remain scoped to the exact Reviewed municipality identity.
     for source, slug in (
         ("hyogoPrefectureMunicipality", "hyogo-prefecture"),
         ("kobeCityMunicipality", "kobe-city"),
@@ -107,12 +109,14 @@ def test_discovery_gates_require_matching_reviewed_municipalities():
         assert f"officialCode === {source}.official_code" in DISCOVERY
         assert f'{source}.data_status === "reviewed"' in DISCOVERY
         assert f'projectRegistry["{slug}"].projects.some' in DISCOVERY
-        assert f"project.municipality_id === {source}.id" in DISCOVERY
-    assert (
-        'return { key: null, finance: false, promises: false, assembly: false, '
-        'projects: hasProjects };'
-    ) in DISCOVERY
-
+        assert f"const municipalityId = {source}.id" in DISCOVERY
+        assert "project.municipality_id === municipalityId" in DISCOVERY
+        assert f'const entry = assemblies["{slug}"]' in DISCOVERY
+        assert 'entry.assembly.id.startsWith(municipalityId + "-assembly-")' in DISCOVERY
+    assert 'promises: hasReviewedExecutivePromises(municipalityId)' in DISCOVERY
+    assert 'assembly: hasAssembly, projects: hasProjects' in DISCOVERY
+    assert 'key: "hyogo-prefecture", finance: hasFinance' in DISCOVERY
+    assert 'key: "kobe-city", finance: loadGenericCityFinance("kobe-city") !== null' in DISCOVERY
 
 def test_export_validates_each_municipality_section_and_all_detail_routes():
     assert "def validate_hyogo_cluster_data_facts()" in EXPORT
