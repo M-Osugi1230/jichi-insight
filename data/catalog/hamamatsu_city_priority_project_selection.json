@@ -1,0 +1,180 @@
+{
+ "expansion_rule": {
+  "added_count": 10,
+  "description": "初回登録として10件（7分野を巡回して選んだ10件）。後続の展開では、同じ掲載順ルールを継続し、巡回の続き（分野4〜7の2番目以降、各分野の3番目以降）から基本政策を追加する。",
+  "total_count": 10
+ },
+ "issue": 896,
+ "municipality_id": "jp-local-221309",
+ "municipality_key": "hamamatsu-city",
+ "population": {
+  "basic_policy_count": 25,
+  "description": "浜松市総合計画第2期基本計画（2025〜2034年度）の体系（7分野→基本政策25件→政策125件）を母集団とした。登録単位は基本政策とした。理由は、市の進行管理では基本政策シートが基本政策ごとに作成され、10年後の理想の姿・政策体系・当該年度の取組の方向性と前年度の評価が基本政策単位で公表される構成であり、公式評価が付く単位が基本政策であるためである。政策（125件）には政策シート（現状・課題・事業・関連する指標）があるが、年度の評価は基本政策シートの評価欄に基本政策単位で文章により記載され、評定区分は公表されない。基本計画の成果指標（38件）は基本政策に紐づけて設定され、現状値と目標値（2034年度）が指標ページに公表される。基本政策シートのうち管理番号の基本政策欄が「-」とされるもの（政策のみの部局が作成するシート）は基本政策ではなく母集団に含めない。同一基本政策に複数の部局・区のシートがある場合（地域コミュニティの充実、市民とともに歩む未来を見据えた行政運営）は基本政策を1単位として数える。基本政策単位の金額は基本政策シート・実施計画・評価レポートのいずれにも掲載されない。",
+  "field_count": 7,
+  "fiscal_year": 2025,
+  "outcome_indicator_count": 38,
+  "policy_count": 125,
+  "source_ids": [
+   "hamamatsu-city-basic-plan-2025-2034-page",
+   "hamamatsu-city-implementation-plan-2025-pdf",
+   "hamamatsu-city-field-plans-2025-evaluation-page",
+   "hamamatsu-city-basic-plan-indicators-page"
+  ]
+ },
+ "review_status": "reviewed",
+ "scope": "expanded",
+ "selection_rule": {
+  "description": "計画体系の柱である7分野を基本計画の掲載順に巡回し、各分野の掲載順先頭の基本政策を1件ずつ選ぶ（1巡目7件）。2巡目は分野1（産業経済）・分野2（こども・教育）・分野3（安全・安心・快適）の2番目の基本政策を選ぶ（3件）。合計10件。掲載順は基本政策シートの管理番号（分野番号・基本政策番号）の順で定める。金額の大小では選ばない。",
+  "pillars": [
+   "産業経済",
+   "こども・教育",
+   "安全・安心・快適",
+   "環境・くらし",
+   "健康・福祉",
+   "文化・スポーツ",
+   "地方自治"
+  ]
+ },
+ "selections": [
+  {
+   "department": "産業部",
+   "management_number": "01-01-01",
+   "official_title": "世界を市場とする産業・サービスの創造",
+   "pillar": "産業経済",
+   "policy": "産業経済",
+   "project_id": "jp-local-221309-project-2025-global-market-industry-creation",
+   "selection_basis": "第1巡目: 産業経済分野について、掲載順で先頭の基本政策（管理番号01-01-01）「世界を市場とする産業・サービスの創造」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-221309-project-series-global-market-industry-creation",
+   "source_ids": [
+    "hamamatsu-city-field-plans-2025-evaluation-page",
+    "hamamatsu-city-implementation-plan-2025-pdf"
+   ]
+  },
+  {
+   "department": "こども家庭部",
+   "management_number": "02-01-01",
+   "official_title": "全てのこども・若者が健やかで幸せに成長できるまちづくり",
+   "pillar": "こども・教育",
+   "policy": "こども・教育",
+   "project_id": "jp-local-221309-project-2025-children-youth-healthy-growth",
+   "selection_basis": "第1巡目: こども・教育分野について、掲載順で先頭の基本政策（管理番号02-01-01）「全てのこども・若者が健やかで幸せに成長できるまちづくり」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-221309-project-series-children-youth-healthy-growth",
+   "source_ids": [
+    "hamamatsu-city-field-plans-2025-evaluation-page",
+    "hamamatsu-city-implementation-plan-2025-pdf"
+   ]
+  },
+  {
+   "department": "危機管理監",
+   "management_number": "03-01-01",
+   "official_title": "みんなの力で自然災害から生き残る",
+   "pillar": "安全・安心・快適",
+   "policy": "安全・安心・快適",
+   "project_id": "jp-local-221309-project-2025-disaster-survival-community",
+   "selection_basis": "第1巡目: 安全・安心・快適分野について、掲載順で先頭の基本政策（管理番号03-01-01）「みんなの力で自然災害から生き残る」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-221309-project-series-disaster-survival-community",
+   "source_ids": [
+    "hamamatsu-city-field-plans-2025-evaluation-page",
+    "hamamatsu-city-implementation-plan-2025-pdf"
+   ]
+  },
+  {
+   "department": "産業部カーボンニュートラル推進担当",
+   "management_number": "04-01-01",
+   "official_title": "カーボンニュートラル・脱炭素社会の実現",
+   "pillar": "環境・くらし",
+   "policy": "環境・くらし",
+   "project_id": "jp-local-221309-project-2025-carbon-neutral-society",
+   "selection_basis": "第1巡目: 環境・くらし分野について、掲載順で先頭の基本政策（管理番号04-01-01）「カーボンニュートラル・脱炭素社会の実現」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-221309-project-series-carbon-neutral-society",
+   "source_ids": [
+    "hamamatsu-city-field-plans-2025-evaluation-page",
+    "hamamatsu-city-implementation-plan-2025-pdf"
+   ]
+  },
+  {
+   "department": "健康福祉部",
+   "management_number": "05-01-01",
+   "official_title": "関係機関との連携による包括的な支援の推進",
+   "pillar": "健康・福祉",
+   "policy": "健康・福祉",
+   "project_id": "jp-local-221309-project-2025-inclusive-support-collaboration",
+   "selection_basis": "第1巡目: 健康・福祉分野について、掲載順で先頭の基本政策（管理番号05-01-01）「関係機関との連携による包括的な支援の推進」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-221309-project-series-inclusive-support-collaboration",
+   "source_ids": [
+    "hamamatsu-city-field-plans-2025-evaluation-page",
+    "hamamatsu-city-implementation-plan-2025-pdf"
+   ]
+  },
+  {
+   "department": "市民部文化振興担当",
+   "management_number": "06-01-01",
+   "official_title": "文化、芸術、歴史の魅力に触れ、学び、楽しむ機会、場の提供",
+   "pillar": "文化・スポーツ",
+   "policy": "文化・スポーツ",
+   "project_id": "jp-local-221309-project-2025-culture-arts-history-access",
+   "selection_basis": "第1巡目: 文化・スポーツ分野について、掲載順で先頭の基本政策（管理番号06-01-01）「文化、芸術、歴史の魅力に触れ、学び、楽しむ機会、場の提供」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-221309-project-series-culture-arts-history-access",
+   "source_ids": [
+    "hamamatsu-city-field-plans-2025-evaluation-page",
+    "hamamatsu-city-implementation-plan-2025-pdf"
+   ]
+  },
+  {
+   "department": "企画調整部",
+   "management_number": "07-01-01",
+   "official_title": "市民とともに歩む未来を見据えた行政運営",
+   "pillar": "地方自治",
+   "policy": "地方自治",
+   "project_id": "jp-local-221309-project-2025-citizen-partnered-administration",
+   "selection_basis": "第1巡目: 地方自治分野について、掲載順で先頭の基本政策（管理番号07-01-01）「市民とともに歩む未来を見据えた行政運営」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-221309-project-series-citizen-partnered-administration",
+   "source_ids": [
+    "hamamatsu-city-field-plans-2025-evaluation-page",
+    "hamamatsu-city-implementation-plan-2025-pdf"
+   ]
+  },
+  {
+   "department": "産業部スタートアップ推進担当",
+   "management_number": "01-02-01",
+   "official_title": "スタートアップ・エコシステムの構築",
+   "pillar": "産業経済",
+   "policy": "産業経済",
+   "project_id": "jp-local-221309-project-2025-startup-ecosystem",
+   "selection_basis": "第2巡目: 産業経済分野について、掲載順で2番目の基本政策（管理番号01-02-01）「スタートアップ・エコシステムの構築」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-221309-project-series-startup-ecosystem",
+   "source_ids": [
+    "hamamatsu-city-field-plans-2025-evaluation-page",
+    "hamamatsu-city-implementation-plan-2025-pdf"
+   ]
+  },
+  {
+   "department": "学校教育部",
+   "management_number": "02-02-01",
+   "official_title": "自分や浜松の未来を創る人づくり",
+   "pillar": "こども・教育",
+   "policy": "こども・教育",
+   "project_id": "jp-local-221309-project-2025-future-creators-development",
+   "selection_basis": "第2巡目: こども・教育分野について、掲載順で2番目の基本政策（管理番号02-02-01）「自分や浜松の未来を創る人づくり」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-221309-project-series-future-creators-development",
+   "source_ids": [
+    "hamamatsu-city-field-plans-2025-evaluation-page",
+    "hamamatsu-city-implementation-plan-2025-pdf"
+   ]
+  },
+  {
+   "department": "都市整備部",
+   "management_number": "03-02-01",
+   "official_title": "市民が集う活力ある都市づくり",
+   "pillar": "安全・安心・快適",
+   "policy": "安全・安心・快適",
+   "project_id": "jp-local-221309-project-2025-vibrant-city-gathering",
+   "selection_basis": "第2巡目: 安全・安心・快適分野について、掲載順で2番目の基本政策（管理番号03-02-01）「市民が集う活力ある都市づくり」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-221309-project-series-vibrant-city-gathering",
+   "source_ids": [
+    "hamamatsu-city-field-plans-2025-evaluation-page",
+    "hamamatsu-city-implementation-plan-2025-pdf"
+   ]
+  }
+ ]
+}
