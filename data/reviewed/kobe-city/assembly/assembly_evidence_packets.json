@@ -1,0 +1,61 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "assembly",
+    "location_note": "議員の紹介ページ及び会派別の名簿",
+    "review_note": null,
+    "source_ids": [
+     "kobe-city-assembly-roster",
+     "kobe-city-assembly-factions"
+    ],
+    "statement": "神戸市会。定数65人、任期は2023年4月30日から2027年4月29日。会派構成（会派別の名簿、2026年8月4日更新時点）は自由民主党神戸市会議員団・無所属の会15人・公明党神戸市会議員団12人・日本維新の会神戸市会議員団12人・日本共産党神戸市会議員団9人・こうべ未来市会議員団7人・躍動の会神戸市会議員団2人・つなぐ神戸市会議員団2人・新しい自民党神戸市会議員団2人・無所属2人（平野章三・上原みなみ）で、合計63人となり、定数との差2人は欠員である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "session",
+    "location_note": "会議結果ページ（令和8年第2回定例市会・9月議会）の会期決定の件の行",
+    "review_note": null,
+    "source_ids": [
+     "kobe-city-assembly-results-2026-09"
+    ],
+    "statement": "対象会期は令和8年第2回定例市会。会期は会期決定の件により2026年9月11日から12月8日までの89日間と決定されており、9月議会と11月議会を一体とする長期会期である。本登録の範囲は9月議会分として会議結果ページ（9月議会）に掲載され、2026年10月23日までに結論が出た分までとし、11月議会分は登録していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "proposals",
+    "location_note": "会議結果ページの掲載行数及び陳情の審査結果PDFの行数により確認",
+    "review_note": null,
+    "source_ids": [
+     "kobe-city-assembly-results-2026-09",
+     "kobe-city-assembly-chinjo-2026-09",
+     "kobe-city-assembly-chinjo-2026-10"
+    ],
+    "statement": "議案等は本会議分45件（決算第1号から第19号、予算第20号から第22号議案、第54号から第68号議案、号外人事2件、議員提出第35・36号議案、請願第14・15号、選挙1件、会期決定の件1件）と、委員会で結論が出た陳情34件（令和8年9月分16件・10月分18件）の合計79件。会議結果ページの報告10件（表決なし）と決算特別委員会委員長報告の行は議案等ではないため登録していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "proposals",
+    "location_note": "各賛否一覧PDF",
+    "review_note": null,
+    "source_ids": [
+     "kobe-city-assembly-sanpi-2026-09-17",
+     "kobe-city-assembly-sanpi-2026-10-23",
+     "kobe-city-assembly-chinjo-2026-09",
+     "kobe-city-assembly-chinjo-2026-10"
+    ],
+    "statement": "79件全てに表決（委員会決定を含む）記録を登録した。本会議分の賛否は議決日ごとの賛否一覧PDFから会派別344件と無所属議員2名の個人別賛否86件を登録した。選挙の件と会期決定の件は賛否の公表がないため、表決記録のmember_vote_availabilityをnot_publishedとした。陳情分は月別の賛否一覧PDFから、委員会に所属しない会派（「-」印字）を除く会派別賛否と、上原みなみの個人別賛否を登録した。"
+   }
+  ],
+  "id": "evidence-jp-local-281000-assembly-2023",
+  "open_questions": [
+   "会派別の名簿は2026年8月4日更新時点のものであり、会期中（2026年9月11日から10月26日）の会派異動の有無は未確認である。欠員2人の内訳も未確認。",
+   "11月議会分（予算第23号議案以降）は本登録の範囲外であり、Issue #706の更新サイクルで追加登録する。",
+   "陳情第217号・第222号が令和8年9月分の賛否一覧PDFに現れない理由は未確認（他月での決定または未審査）。また陳情第173・185・194号は福祉環境委員会の会議結果ページに2026年9月14日の結論（審査打切・不採択）が掲載されているように見えるが、月別の賛否一覧PDFに含まれていないため本登録には含めていない。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-281000-assembly-2023",
+  "subject_type": "assembly"
+ }
+]

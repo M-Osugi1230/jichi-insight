@@ -1,0 +1,101 @@
+[
+ {
+  "as_of": "2026-11-21",
+  "assembly_id": "jp-local-281000-assembly-2023",
+  "confidence": "high",
+  "id": "jp-local-281000-assembly-2023-disclosure-2026",
+  "items": [
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_roster",
+    "note": "議員の紹介ページで選挙区別・会派別に議員名簿が公表され、任期（2023年4月30日から2027年4月29日）が明記されている。",
+    "source_url": "https://www.city.kobe.lg.jp/a71064/shise/municipal/giinnmeibo/index.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_composition",
+    "note": "会派別の名簿（2026年8月4日更新）で8会派と無所属2名の構成が公表されている。合計63名で、定数65名との差2名は欠員である。",
+    "source_url": "https://www.city.kobe.lg.jp/a71064/shise/municipal/giinnmeibo/kaiha.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "committee_composition",
+    "note": "委員会名簿のページで常任委員会6・市会運営委員会・決算特別委員会・特別委員会3の委員構成が公表されている。",
+    "source_url": "https://www.city.kobe.lg.jp/a71064/shise/municipal/giinnmeibo/iinkai_meibo.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "proposals_and_results",
+    "note": "会期ごとに会議結果のページで議案等の件名と結果が公表されている。",
+    "source_url": "https://www.city.kobe.lg.jp/z/shikaijimukyoku/giann_etc/r8/9gatsukekka.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_votes",
+    "note": "議決日ごとに「議案等に対する各会派賛否一覧」PDFが公表され、8会派の賛否が掲載されている。陳情については月別の審査結果（会派別賛否一覧）PDFが公表されている。",
+    "source_url": "https://www.city.kobe.lg.jp/documents/86458/sanpiichiranr810_hp.pdf"
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_votes",
+    "note": "賛否一覧PDFには無所属議員2名（平野章三・上原みなみ）の個人名列がある。会派所属議員の個人別の賛否は公表されていない。陳情の賛否一覧では委員会に所属する無所属議員（上原みなみ）のみ個人名と印が印字される。",
+    "source_url": "https://www.city.kobe.lg.jp/documents/86458/sanpiichiranr810_hp.pdf"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "political_activity_expense_reports",
+    "note": "年度ごとに交付単位（会派及び無所属議員）ごとの収支報告書と総括表が公表されている。令和7年度分は13単位。",
+    "source_url": "https://www.city.kobe.lg.jp/a91127/shise/municipal/jyouhoukoukai/seimukatudouhi/netr07/netr07.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "political_activity_expense_receipts",
+    "note": "領収書等の写しも各単位のページでWeb公表されている。",
+    "source_url": "https://www.city.kobe.lg.jp/a91127/shise/municipal/jyouhoukoukai/seimukatudouhi/netr07/netr07.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "inspection_trip_reports",
+    "note": "委員会視察の調査報告ページで委員会ごとの報告書PDFが公表されている。政務活動費による管外調査の報告書も年度別ページで公表されている。",
+    "source_url": "https://www.city.kobe.lg.jp/z/shikaijimukyoku/sisatutyousa/index.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "meeting_minutes",
+    "note": "本会議・委員会の会議録が市会サイトで公表されている。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "session_broadcast",
+    "note": "本会議のインターネット中継・録画配信が行われている。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "petition_results",
+    "note": "請願の結果は会議結果ページに、陳情の審査結果は月別の会派別賛否一覧PDFに公表されている。",
+    "source_url": "https://www.city.kobe.lg.jp/a91127/shise/municipal/seigann_tinnjyou/index.html"
+   }
+  ],
+  "review_status": "reviewed",
+  "sources": [
+   "kobe-city-assembly-roster",
+   "kobe-city-assembly-factions",
+   "kobe-city-assembly-results-2026-09",
+   "kobe-city-assembly-seimu-2025"
+  ]
+ }
+]
