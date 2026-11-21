@@ -1042,6 +1042,9 @@ def validate_chiba_data_facts() -> None:
             assert selection["population"]["project_count"] == 41
             assert all(record["fiscal_year"] == 2025 for record in reviewed)
             assert all(record["official_evaluation"] is None for record in reviewed)
+            kpis = load_json(ROOT / "data" / "reviewed" / slug / "project_kpis.json")
+            assert len(kpis) == 26, len(kpis)
+            assert all(kpi["project_id"] in {record["id"] for record in reviewed} for kpi in kpis)
             for record in reviewed:
                 stages = {budget["kind"] for budget in record["budget_records"]}
                 assert stages == {"revised_budget", "settlement"}, (record["id"], stages)
@@ -1057,6 +1060,13 @@ def validate_chiba_data_facts() -> None:
             assert all(record["fiscal_year"] == 2026 for record in reviewed)
             assert all(record["official_evaluation"] is None for record in reviewed)
             assert all(record["kpis"] == [] for record in reviewed)
+            indicators = load_json(
+                ROOT / "data" / "reviewed" / "chiba-city" / "current_policy_indicators.json"
+            )
+            assert indicators["official_code"] == "121002"
+            assert indicators["review_status"] == "reviewed_complete_policy_indicator_identity_and_values"
+            assert indicators["quantitative_indicator_count"] == 40
+            assert len(indicators["fields"]) == 8
             assert all(
                 len(record["budget_records"]) == 1
                 and record["budget_records"][0]["kind"] == "initial_budget"
