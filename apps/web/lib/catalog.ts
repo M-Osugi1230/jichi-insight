@@ -112,7 +112,7 @@ export const municipalityMeta: Record<
   },
   "miyagi-prefecture": {
     name: "宮城県", type: "都道府県",
-    summary: "新・宮城の将来ビジョン、2026年度成立後当初予算、2022〜2024年度の普通会計決算と村井嘉浩知事の現任期を確認します。",
+    summary: "新・宮城の将来ビジョン、FY2026成立後当初予算、FY2022〜2024普通会計決算、村井嘉浩知事の公約4件、施策単位10系列、宮城県議会第401回定例会の議員個人別事後表決記録を確認します。",
     status: "財政データ公開", href: "/municipalities/miyagi-prefecture",
     fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
   },
@@ -220,8 +220,8 @@ export const municipalityMeta: Record<
   },
   "sendai-city": {
     name: "仙台市", type: "政令指定都市",
-    summary: "仙台市基本計画2021-2030と実施計画、2026年度成立後当初予算、2022〜2024年度の普通会計決算に加え、郡 和子市長の現任期を公式出典で確認します。公約原文は未登録です。自治体別ページは準備中です。",
-    status: "財政データ公開", href: null,
+    summary: "仙台市基本計画2021-2030・実施計画2024-2026、FY2026成立後一般会計当初予算、郡和子市長の公約4件、自己評価つき事業10系列と仙台市議会の会派別賛否を確認します。",
+    status: "財政データ公開", href: "/municipalities/sendai-city",
     fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
   },
 };
