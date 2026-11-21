@@ -1,5 +1,5 @@
 {
-  "version": "0.32.0",
+  "version": "0.33.0",
   "updated_at": "2026-11-21",
   "scope": "pilot",
   "records": [
@@ -1472,6 +1472,48 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "宮城県選挙管理委員会が公表する県内市町村長等の任期満了一覧。仙台市長の任期満了が令和11年8月21日と明記されている。2026-11-21にPDF本体を直接読み取り照合した。"
+    },
+    {
+      "id": "miyagi-pref-governor",
+      "municipality_key": "miyagi-prefecture",
+      "organization": "宮城県",
+      "category": "executive",
+      "title": "知事プロフィール（宮城県）",
+      "url": "https://www.pref.miyagi.jp/site/gvroom/hisyo-page-2.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "宮城県公式の知事プロフィール。村井嘉浩（むらいよしひろ）が現職知事であり、略歴に「令和7年11月 宮城県知事（第六期）」と明記する。"
+    },
+    {
+      "id": "miyagi-pref-governor-election-2025-page",
+      "municipality_key": "miyagi-prefecture",
+      "organization": "宮城県選挙管理委員会",
+      "category": "election",
+      "title": "令和7年10月26日執行 宮城県知事選挙（県選管総合ページ）",
+      "url": "https://www.pref.miyagi.jp/soshiki/senkyo/2025kenchiji.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "「令和7年11月20日に任期満了を迎える宮城県知事の選挙」と明記し、告示日2025年10月9日・選挙期日2025年10月26日を示す。選挙公報PDFへの到達経路にもなっている。投・開票速報特設ページの公開は終了した旨も記されている。"
+    },
+    {
+      "id": "sendai-city-governor-election-2025-result",
+      "municipality_key": "miyagi-prefecture",
+      "organization": "仙台市選挙管理委員会",
+      "category": "election",
+      "title": "開票結果（令和7年宮城県知事選挙・仙台市選挙管理委員会）",
+      "url": "https://www.city.sendai.jp/senkyokanri-kanri/senkyo/r7kenchiji/documents/kaihyoukekka.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "仙台市選挙管理委員会の公式開票結果。宮城県計で村井よしひろが340,190票と明記する。宮城県選挙管理委員会の投開票速報「総括表」（確定時刻00:45）でも同数だったことを段階0の棚卸しで確認している（速報特設サイトは公開終了）。得票数は2026-11-21にPDF本体を直接読み取り照合した。"
     }
   ]
 }

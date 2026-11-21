@@ -3,6 +3,7 @@ import kanagawaFinanceCatalog from "../../../data/catalog/kanagawa_prefecture_fi
 import saitamaFinanceCatalog from "../../../data/catalog/saitama_prefecture_finance_sources.json";
 import chibaFinanceCatalog from "../../../data/catalog/chiba_prefecture_finance_sources.json";
 import hyogoFinanceCatalog from "../../../data/catalog/hyogo_prefecture_finance_sources.json";
+import miyagiFinanceCatalog from "../../../data/catalog/miyagi_prefecture_finance_sources.json";
 import aichiFinanceCatalog from "../../../data/catalog/aichi_prefecture_finance_sources.json";
 import assemblyCatalog from "../../../data/catalog/fukuoka_assembly_sources.json";
 import cityFinanceCatalog from "../../../data/catalog/fukuoka_city_finance_sources.json";
@@ -33,6 +34,7 @@ export type MunicipalityKey =
   | "chiba-city"
   | "hyogo-prefecture"
   | "kobe-city"
+  | "miyagi-prefecture"
   | "sendai-city";
 export type SourceRecord = {
   id: string;
@@ -106,6 +108,12 @@ export const municipalityMeta: Record<
     name: "兵庫県", type: "都道府県",
     summary: "ひょうごビジョン2050と第三期兵庫県地域創生戦略、2026年度成立後当初予算、2022〜2024年度普通会計決算、斎藤元彦知事の公約18件、取組方針項目10系列、兵庫県議会の公式公開情報を確認します。",
     status: "財政データ公開", href: "/municipalities/hyogo-prefecture",
+    fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
+  },
+  "miyagi-prefecture": {
+    name: "宮城県", type: "都道府県",
+    summary: "新・宮城の将来ビジョン、2026年度成立後当初予算、2022〜2024年度の普通会計決算と村井嘉浩知事の現任期を確認します。",
+    status: "財政データ公開", href: "/municipalities/miyagi-prefecture",
     fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
   },
   "kobe-city": {
@@ -224,6 +232,7 @@ export const sourceCatalog = [
   ...(saitamaFinanceCatalog.records as SourceRecord[]),
   ...(chibaFinanceCatalog.records as SourceRecord[]),
   ...(hyogoFinanceCatalog.records as SourceRecord[]),
+  ...(miyagiFinanceCatalog.records as SourceRecord[]),
   ...(aichiFinanceCatalog.records as SourceRecord[]),
   ...(officialCatalog.records as SourceRecord[]),
   ...(financeCatalog.records as SourceRecord[]),
