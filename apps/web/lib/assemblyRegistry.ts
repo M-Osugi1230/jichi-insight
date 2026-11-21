@@ -319,19 +319,19 @@ function registry(
 export const assemblies: Record<AssemblySlug, Registry> = {
   "saitama-prefecture": registry(
     saitamaPrefAssembly, saitamaPrefDisclosure, saitamaPrefSessions, saitamaPrefProposals.map(proposal => ({ related_fiscal_record_ids: [], ...proposal })), saitamaPrefVotes,
-    saitamaPrefFactionVotes, saitamaPrefExpenses.map(expense => ({ breakdown: [], ...expense })), saitamaPrefTrips,
+    saitamaPrefFactionVotes, saitamaPrefExpenses, saitamaPrefTrips,
     [...saitamaPrefAssemblyEvidence, ...saitamaPrefVoteEvidence, ...saitamaPrefExpenseEvidence, ...saitamaPrefTripEvidence],
     saitamaPrefSources.records,
   ),
   "saitama-city": registry(
     saitamaCityAssembly, saitamaCityDisclosure, saitamaCitySessions, saitamaCityProposals, saitamaCityVotes,
-    saitamaCityFactionVotes, saitamaCityExpenses.map(expense => ({ breakdown: [], ...expense })), saitamaCityTrips,
+    saitamaCityFactionVotes, saitamaCityExpenses, saitamaCityTrips,
     [...saitamaCityAssemblyEvidence, ...saitamaCityVoteEvidence, ...saitamaCityExpenseEvidence, ...saitamaCityTripEvidence],
     saitamaCitySources.records,
   ),
   "kawaguchi-city": registry(
     kawaguchiAssembly, kawaguchiDisclosure, kawaguchiSessions, kawaguchiProposals, kawaguchiVotes,
-    kawaguchiFactionVotes, kawaguchiExpenses.map(expense => ({ breakdown: [], ...expense })), kawaguchiTrips,
+    kawaguchiFactionVotes, kawaguchiExpenses, kawaguchiTrips,
     [...kawaguchiAssemblyEvidence, ...kawaguchiVoteEvidence, ...kawaguchiExpenseEvidence, ...kawaguchiTripEvidence],
     kawaguchiSources.records,
   ),

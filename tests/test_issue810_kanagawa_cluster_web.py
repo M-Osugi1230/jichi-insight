@@ -240,7 +240,7 @@ def test_three_new_assemblies_are_registered_and_discovery_gates_are_reviewed():
     assert registry.count('import yokohama') >= 13
     assert registry.count('import kawasaki') >= 13
     assert '"kanagawa-prefecture", "yokohama-city", "kawasaki-city"' in registry
-    assert "15議会" in overview
+    assert "18議会" in overview
     assert 'assemblies["kanagawa-prefecture"]' in discovery
     assert 'assemblies["yokohama-city"]' in discovery
     assert 'assemblies["kawasaki-city"]' in discovery
