@@ -967,5 +967,49 @@
       "任期満了日2029年11月19日の兵庫県選挙管理委員会自身の任期満了一覧での明記照合が未実施である。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-hyogo-pref-2024",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-hyogo-pref-2024",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "神戸市選挙管理委員会の公式ページ「選挙結果調（令和6年11月17日執行兵庫県知事選挙）」を確認した。兵庫県全体での斎藤元彦の得票数 1,113,911票が明記され、同一ページに選挙公報PDFへのリンクが掲載されている。兵庫県公式の知事プロフィールでも現職知事であることを確認した。",
+        "source_ids": [
+          "kobe-city-governor-election-2024-result",
+          "hyogo-pref-governor"
+        ],
+        "location_note": "神戸市選管の結果調ページ（段階0の棚卸しと段階1で確認済み）。",
+        "decision": "accepted",
+        "review_note": "確認した出典は checked_source_ids に列挙した。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "同ページから選挙公報PDF（全4ページ）を神戸市公式サイト上で直接取得し、3ページ目上段のさいとう元彦候補欄（「4つの政策」の番号政策4件・・項目14件）を確認した。PDFのテキスト抽出は空白を除き2,180字で、いずれも選管の表頭・投票案内等の印刷文字であり、候補者欄は画像形式であることを実測した。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全4ページ）の3ページ目上段。",
+        "decision": "accepted",
+        "review_note": "登録文はPDFの描画画像（100dpi・300dpi）の照合で転記した。"
+      },
+      {
+        "field": "result_status",
+        "statement": "選挙公報を登録し、分割レビューを経て公約レコード18件を作成したため、result_status を source_registered とした。県選管の知事選特設サイトでの公報の掲載継続と、候補者欄が案内する公式HP・SNSの詳細資料については、安定した所在を特定していないため、資料が存在しないとは判定しない。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "本探索レコード全体。",
+        "decision": "accepted",
+        "review_note": "公的機関（神戸市選管）の公式サイトから直接取得した公報そのものであるため confidence は high とする。"
+      }
+    ],
+    "open_questions": [
+      "県選管の知事選特設サイト（senkyo.pref.hyogo.lg.jp）での選挙公報の掲載継続は確認できていない。",
+      "候補者欄が案内する公式HP・SNSの詳細な公約資料の安定した所在は特定できていない。",
+      "事業との接続は文言・内容に基づく推定であり、県が公約と事業の公式な対応付けを公表した場合は接続を見直す。"
+    ],
+    "review_status": "reviewed"
   }
 ]

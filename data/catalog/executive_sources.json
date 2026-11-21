@@ -1,5 +1,5 @@
 {
-  "version": "0.30.0",
+  "version": "0.31.0",
   "updated_at": "2026-11-21",
   "scope": "pilot",
   "records": [
@@ -1402,6 +1402,20 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "神戸市監査委員の公式報告書（神監2第59号、令和4年2月10日）。第20回神戸市長選挙（令和3年10月31日執行）の経緯として「市長の任期が令和3年11月19日に満了のため」と明記しており、神戸市長の任期が11月19日に満了し11月20日に開始する4年周期であることの公式明記として用いた。2026-11-21にPDF本体（3ページの当該記載）を直接読み取り照合した。"
+    },
+    {
+      "id": "hyogo-pref-governor-election-2024-bulletin",
+      "municipality_key": "hyogo-prefecture",
+      "organization": "兵庫県選挙管理委員会",
+      "category": "election",
+      "title": "令和6年11月17日執行 兵庫県知事選挙 選挙公報（さいとう元彦候補欄）",
+      "url": "https://www.city.kobe.lg.jp/documents/23740/kouhoutizi.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "候補者提出原稿をそのまま印刷した全4ページの公式選挙公報。さいとう元彦候補欄は3ページ目上段。神戸市選挙管理委員会の公式ページに同一文書が保全掲載されており、神戸市公式サイトから取得した。候補者欄は画像形式（全4ページのテキスト抽出は空白を除き2,180字で、いずれも選管の表頭・投票案内等の印刷文字であり、候補者欄からは文字が抽出されない）ため、公約文はPDFの描画画像（100dpi・300dpi）の照合で転記した。県選管の知事選特設サイトでの掲載継続は未確認。"
     }
   ]
 }
