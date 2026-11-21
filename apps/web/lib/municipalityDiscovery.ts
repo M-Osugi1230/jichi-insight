@@ -1,5 +1,6 @@
 import chibaPrefectureMunicipality from "../../../data/reviewed/chiba-prefecture/municipality.json";
 import chibaCityMunicipality from "../../../data/reviewed/chiba-city/municipality.json";
+import { chibaFinance } from "@/lib/chibaFinance";
 import saitamaPrefectureMunicipality from "../../../data/reviewed/saitama-prefecture/municipality.json";
 import saitamaCityMunicipality from "../../../data/reviewed/saitama-city/municipality.json";
 import kawaguchiMunicipality from "../../../data/reviewed/kawaguchi-city/municipality.json";
@@ -212,19 +213,30 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
   if (officialCode === chibaPrefectureMunicipality.official_code &&
     chibaPrefectureMunicipality.data_status === "reviewed") {
     const hasProjects = projectRegistry["chiba-prefecture"].projects.some((project) =>
-      project.review_status === "reviewed" &&
-      project.municipality_id === chibaPrefectureMunicipality.id,
+      project.review_status === "reviewed" && project.municipality_id === chibaPrefectureMunicipality.id,
     );
-    return { key: null, finance: false, promises: false, assembly: false, projects: hasProjects };
+    const hasPromises = hasReviewedExecutivePromises(chibaPrefectureMunicipality.id);
+    const entry = assemblies["chiba-prefecture"];
+    const hasAssembly = entry.assembly.review_status === "reviewed" &&
+      entry.disclosure.review_status === "reviewed" &&
+      entry.assembly.id.startsWith(chibaPrefectureMunicipality.id + "-assembly-");
+    const hasFinance = chibaFinance.records.some((record) =>
+      record.municipality_id === chibaPrefectureMunicipality.id && record.review_status === "reviewed",
+    );
+    return { key: "chiba-prefecture", finance: hasFinance, promises: hasPromises, assembly: hasAssembly, projects: hasProjects };
   }
 
   if (officialCode === chibaCityMunicipality.official_code &&
     chibaCityMunicipality.data_status === "reviewed") {
     const hasProjects = projectRegistry["chiba-city"].projects.some((project) =>
-      project.review_status === "reviewed" &&
-      project.municipality_id === chibaCityMunicipality.id,
+      project.review_status === "reviewed" && project.municipality_id === chibaCityMunicipality.id,
     );
-    return { key: null, finance: false, promises: false, assembly: false, projects: hasProjects };
+    const hasPromises = hasReviewedExecutivePromises(chibaCityMunicipality.id);
+    const entry = assemblies["chiba-city"];
+    const hasAssembly = entry.assembly.review_status === "reviewed" &&
+      entry.disclosure.review_status === "reviewed" &&
+      entry.assembly.id.startsWith(chibaCityMunicipality.id + "-assembly-");
+    return { key: "chiba-city", finance: false, promises: hasPromises, assembly: hasAssembly, projects: hasProjects };
   }
 
   if (!matched) {
