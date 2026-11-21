@@ -10,8 +10,12 @@ ASSEMBLIES = (WEB / "lib" / "assemblyRegistry.ts").read_text(encoding="utf-8")
 PROJECT_INDEX = (WEB / "app" / "projects" / "page.tsx").read_text(encoding="utf-8")
 ASSEMBLY_INDEX = (WEB / "app" / "assemblies" / "page.tsx").read_text(encoding="utf-8")
 ASSEMBLY_DETAIL = (WEB / "app" / "assemblies" / "[slug]" / "page.tsx").read_text(encoding="utf-8")
-PREF_PAGE = (WEB / "app" / "municipalities" / "miyagi-prefecture" / "page.tsx").read_text(encoding="utf-8")
-CITY_PAGE = (WEB / "app" / "municipalities" / "sendai-city" / "page.tsx").read_text(encoding="utf-8")
+PREF_PAGE = (
+    WEB / "app" / "municipalities" / "miyagi-prefecture" / "page.tsx"
+).read_text(encoding="utf-8")
+CITY_PAGE = (
+    WEB / "app" / "municipalities" / "sendai-city" / "page.tsx"
+).read_text(encoding="utf-8")
 DISCOVERY = (WEB / "lib" / "municipalityDiscovery.ts").read_text(encoding="utf-8")
 CATALOG = (WEB / "lib" / "catalog.ts").read_text(encoding="utf-8")
 EXPORT = (ROOT / "scripts" / "validate_static_export.py").read_text(encoding="utf-8")
@@ -22,20 +26,26 @@ def load(path: str):
 
 
 def test_reviewed_projects_and_display_units():
-    for slug, name, prefix in (
+    for slug, name, _prefix in (
         ("miyagi-prefecture", "宮城県", "miyagi"),
         ("sendai-city", "仙台市", "sendai"),
     ):
         projects = load(f"data/reviewed/{slug}/projects.json")
-        source = load(f"data/catalog/{'miyagi' if slug == 'miyagi-prefecture' else 'sendai_city'}_priority_project_selection.json")
+        catalog_name = "miyagi" if slug == "miyagi-prefecture" else "sendai_city"
+        source = load(f"data/catalog/{catalog_name}_priority_project_selection.json")
         assert len(projects) == 10
         assert len({p["series_id"] for p in projects}) == 10
         assert len(source["selections"]) == 10
         by_id = {project["id"]: project for project in projects}
         for item in source["selections"]:
-            assert (by_id[item["project_id"]]["series_id"], by_id[item["project_id"]]["official_title"]) == (item["series_id"], item["official_title"])
+            assert (
+                by_id[item["project_id"]]["series_id"],
+                by_id[item["project_id"]]["official_title"],
+            ) == (item["series_id"], item["official_title"])
         assert all(p["review_status"] == "reviewed" for p in projects)
-        assert all(p["official_evaluation"] and p["official_evaluation"]["rating"] for p in projects)
+        assert all(
+            p["official_evaluation"] and p["official_evaluation"]["rating"] for p in projects
+        )
         assert f'"{slug}": {{ name: "{name}"' in REGISTRY
         assert f'key === "{slug}"' in PROJECT_INDEX
         assert f'projectRegistry["{slug}"].projects.some' in DISCOVERY
@@ -75,14 +85,32 @@ def test_governor_and_mayor_election_votes_terms_promises():
     promises = load("data/entities/executives/promises.json")
     evidence = load("data/entities/executives/evidence_packets.json")
     for municipality_id, office, name, start, end, vote, page in (
-        ("jp-local-040002", "governor", "村井 嘉浩", "2025-11-21", "2029-11-20", "340,190票", PREF_PAGE),
-        ("jp-local-041009", "mayor", "郡 和子", "2025-08-22", "2029-08-21", "204,844票", CITY_PAGE),
+        (
+            "jp-local-040002", "governor", "村井 嘉浩",
+            "2025-11-21", "2029-11-20", "340,190票", PREF_PAGE,
+        ),
+        (
+            "jp-local-041009", "mayor", "郡 和子",
+            "2025-08-22", "2029-08-21", "204,844票", CITY_PAGE,
+        ),
     ):
-        term = next(row for row in terms if row["municipality_id"] == municipality_id and row["office"] == office and row["status"] == "current")
+        term = next(
+            row
+            for row in terms
+            if row["municipality_id"] == municipality_id
+            and row["office"] == office
+            and row["status"] == "current"
+        )
         assert (term["person_name"], term["term_start"], term["term_end"]) == (name, start, end)
-        assert len([p for p in promises if p["executive_term_id"] == term["id"] and p["review_status"] == "reviewed"]) == 4
+        assert len([
+            p
+            for p in promises
+            if p["executive_term_id"] == term["id"] and p["review_status"] == "reviewed"
+        ]) == 4
         packet = next(row for row in evidence if row["subject_id"] == term["id"])
-        assert vote in next(c["statement"] for c in packet["claims"] if c["field"] == "election_date")
+        assert vote in next(
+            c["statement"] for c in packet["claims"] if c["field"] == "election_date"
+        )
         assert vote in page
     assert "governorPromises.length" in PREF_PAGE
     assert "mayorPromises.length" in CITY_PAGE

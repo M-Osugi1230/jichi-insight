@@ -1626,7 +1626,11 @@ def miyagi_cluster_project_detail_files() -> set[str]:
         projects = load_json(ROOT / "data" / "reviewed" / slug / "projects.json")
         required.update(
             f"projects/{slug}/{series}/index.html"
-            for series in {record["series_id"] for record in projects if record["review_status"] == "reviewed"}
+            for series in {
+                record["series_id"]
+                for record in projects
+                if record["review_status"] == "reviewed"
+            }
         )
     return required
 
@@ -1652,8 +1656,14 @@ def extract_section_body(html: str, opening_match) -> str | None:
 def validate_miyagi_cluster_data_facts() -> None:
     """Ensure copy-specific facts match Reviewed Miyagi and Sendai source data."""
     for slug, official_code, municipality_id, selection_name, source_name in (
-        ("miyagi-prefecture", "040002", "jp-local-040002", "miyagi_priority_project_selection.json", "miyagi_project_sources.json"),
-        ("sendai-city", "041009", "jp-local-041009", "sendai_city_priority_project_selection.json", "sendai_city_project_sources.json"),
+        (
+            "miyagi-prefecture", "040002", "jp-local-040002",
+            "miyagi_priority_project_selection.json", "miyagi_project_sources.json",
+        ),
+        (
+            "sendai-city", "041009", "jp-local-041009",
+            "sendai_city_priority_project_selection.json", "sendai_city_project_sources.json",
+        ),
     ):
         root = ROOT / "data" / "reviewed" / slug
         municipality = load_json(root / "municipality.json")
@@ -1671,7 +1681,9 @@ def validate_miyagi_cluster_data_facts() -> None:
         source_ids = {record["id"] for record in sources["records"]}
         for selected in selection["selections"]:
             record = by_id[selected["project_id"]]
-            assert (record["series_id"], record["official_title"]) == (selected["series_id"], selected["official_title"])
+            assert (record["series_id"], record["official_title"]) == (
+                selected["series_id"], selected["official_title"],
+            )
         for record in projects:
             assert record["review_status"] == "reviewed"
             assert record["municipality_id"] == municipality_id
@@ -1725,14 +1737,36 @@ def validate_miyagi_cluster_data_facts() -> None:
     promises = load_json(ROOT / "data" / "entities" / "executives" / "promises.json")
     evidence = load_json(ROOT / "data" / "entities" / "executives" / "evidence_packets.json")
     for municipality_id, name, office, start, end, election, vote in (
-        ("jp-local-040002", "村井 嘉浩", "governor", "2025-11-21", "2029-11-20", "2025-10-26", "340,190票"),
-        ("jp-local-041009", "郡 和子", "mayor", "2025-08-22", "2029-08-21", "2025-08-03", "204,844票"),
+        (
+            "jp-local-040002", "村井 嘉浩", "governor",
+            "2025-11-21", "2029-11-20", "2025-10-26", "340,190票",
+        ),
+        (
+            "jp-local-041009", "郡 和子", "mayor",
+            "2025-08-22", "2029-08-21", "2025-08-03", "204,844票",
+        ),
     ):
-        term = next(row for row in terms if row["municipality_id"] == municipality_id and row["office"] == office and row["status"] == "current")
-        assert (term["person_name"], term["term_start"], term["term_end"], term["election_date"]) == (name, start, end, election)
-        assert len([row for row in promises if row["executive_term_id"] == term["id"] and row["review_status"] == "reviewed"]) == 4
+        term = next(
+            row
+            for row in terms
+            if row["municipality_id"] == municipality_id
+            and row["office"] == office
+            and row["status"] == "current"
+        )
+        assert (
+            term["person_name"], term["term_start"], term["term_end"], term["election_date"],
+        ) == (name, start, end, election)
+        assert len([
+            row
+            for row in promises
+            if row["executive_term_id"] == term["id"] and row["review_status"] == "reviewed"
+        ]) == 4
         packet = next(row for row in evidence if row["subject_id"] == term["id"])
-        assert vote in next(claim["statement"] for claim in packet["claims"] if claim["field"] == "election_date")
+        assert vote in next(
+            claim["statement"]
+            for claim in packet["claims"]
+            if claim["field"] == "election_date"
+        )
 
     for slug, name, seat_count, proposal_count, vote_count, faction_count in (
         ("miyagi-prefecture", "宮城県議会", 59, 29, 28, 0),
@@ -1754,8 +1788,12 @@ def validate_miyagi_cluster_data_facts() -> None:
     assert "採決前の態度表明の集約ではない" in pref_member
     assert "会派としての態度・賛否の公表はない" in pref_faction
     city_disclosure = load_json(city / "assembly" / "disclosure_profiles.json")[0]
-    assert "12会派" in next(x["note"] for x in city_disclosure["items"] if x["item"] == "faction_votes")
-    assert "議員個人別の賛否は公表されていない" in next(x["note"] for x in city_disclosure["items"] if x["item"] == "member_votes")
+    assert "12会派" in next(
+        x["note"] for x in city_disclosure["items"] if x["item"] == "faction_votes"
+    )
+    assert "議員個人別の賛否は公表されていない" in next(
+        x["note"] for x in city_disclosure["items"] if x["item"] == "member_votes"
+    )
 
 
 def validate_miyagi_cluster_export() -> list[str]:
@@ -1805,8 +1843,13 @@ def validate_miyagi_cluster_export() -> list[str]:
             failures.append(f"Miyagi {slug} missing priority-projects section")
         else:
             for record in projects:
-                if record["review_status"] == "reviewed" and record["official_title"] not in section_body:
-                    failures.append(f"Miyagi {slug} missing official project title: {record['official_title']}")
+                if (
+                    record["review_status"] == "reviewed"
+                    and record["official_title"] not in section_body
+                ):
+                    failures.append(
+                        f"Miyagi {slug} missing official project title: {record['official_title']}"
+                    )
     index = EXPORT_ROOT / "assemblies/index.html"
     if index.is_file():
         html = normalized_html(index)
@@ -1814,7 +1857,10 @@ def validate_miyagi_cluster_export() -> list[str]:
             if phrase not in html:
                 failures.append(f"Assemblies index missing Miyagi registered fact: {phrase}")
     for slug, phrases in (
-        ("miyagi-prefecture", ("宮城県議会", "表決そのものの事後記録", "会派別賛否は再集計・推測しません")),
+        (
+            "miyagi-prefecture",
+            ("宮城県議会", "表決そのものの事後記録", "会派別賛否は再集計・推測しません"),
+        ),
         ("sendai-city", ("仙台市議会", "会派別", "議員個人別の賛否")),
     ):
         page = EXPORT_ROOT / "assemblies" / slug / "index.html"
