@@ -845,5 +845,48 @@
       "知事の任期満了日（2028-11-16）の県選管自身の任期満了一覧での明記照合は未実施であり、段階1の証拠パケットの open question を引き継ぐ。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-city-2025-manifesto-review",
+    "subject_type": "manifesto_review",
+    "subject_id": "manifesto-review-jp-local-041009-2025",
+    "claims": [
+      {
+        "field": "source_location",
+        "statement": "郡和子候補欄は選挙公報の2ページ目上段に掲載され、キャッチコピー、「重点政策」の円形項目4件、プロフィール、「郡和子 4年の実績」欄、QRコードの案内で構成される。公報の欄外には「この選挙公報は、各候補者から掲載申請のあった原稿をそのまま印刷したものです。」との注記がある。",
+        "source_ids": [
+          "sendai-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全2ページ）の2ページ目上段。",
+        "decision": "accepted",
+        "review_note": "2026年11月22日に描画画像（200dpi・300dpi）で候補者欄全体を確認した。"
+      },
+      {
+        "field": "segmentation_status",
+        "statement": "「重点政策」の円形項目4件を、資料上の境界に従い4件に分割した。キャッチコピーは標語としてレコード化せず、「郡和子 4年の実績」欄の4項目は前任期の実績の提示であるため公約化していない。プロフィールとQRコードの案内もレコード化していない。",
+        "source_ids": [
+          "sendai-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "候補者欄全体。",
+        "decision": "accepted",
+        "review_note": "句読点による推測分割は行っていない（docs/PROMISE_EXTRACTION.md の分割ルール）。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、仙台市選挙管理委員会が発行した選挙公報そのものから取得した。選挙公報は候補者から提出された原稿をそのまま掲載した公式文書であり、出典優先順位の最上位に当たる。掲載PDFは現行の市公式サイトからは削除されているため、市の公式URLの Wayback Machine 保存コピー（2025年7月31日保存、2025年7月20日保存分とダイジェスト一致）から取得した間接的な経路がある。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "sendai-city-mayor-election-2025-bulletin",
+          "sendai-city-mayor-election-2025-results-page"
+        ],
+        "location_note": "市選管の市長選挙結果ページ群と選挙公報PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "公報は出典優先順位の最上位であり、第三者経由の引用ではない。"
+      }
+    ],
+    "open_questions": [
+      "キャッチコピー「笑顔あふれ 世界から選ばれる 仙台へ」をレコード化しなかった境界判断は見直しの余地がある（ビジョンとして1件とする整理もありうる）。",
+      "候補欄のQRコードが案内する候補者の政策ページ等の詳細資料が安定した所在で現存するかは未確認である。"
+    ],
+    "review_status": "reviewed"
   }
 ]

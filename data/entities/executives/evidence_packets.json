@@ -1360,17 +1360,18 @@
       },
       {
         "field": "manifesto_source_ids",
-        "statement": "郡和子市長の公約原文資料は段階1では登録しない。2025年仙台市長選挙の選挙公報の現在の公表所在は棚卸し（Issue #873）時点で未確認であり、宮城クラスター段階3（公約登録）で実物を確認したうえで接続する。",
+        "statement": "原典は2025年仙台市長選挙の選挙公報である。選挙期間中は市の公式サイトの選挙ページ群で公表されていたが、現行サイトからは削除されているため、市の公式URLの Wayback Machine 保存コピー（2025年7月31日保存）で実物を確認し、郡和子候補欄（公報2ページ目上段）から公約4件を転記・登録したため、manifesto_source_ids に接続した。原典探索の記録は manifesto-source-search-sendai-city-2025、分割レビューは manifesto-review-jp-local-041009-2025。",
         "source_ids": [
+          "sendai-city-mayor-election-2025-bulletin",
           "sendai-city-mayor-election-2025-results-page"
         ],
-        "location_note": "仙台市選挙管理委員会の市長選挙ページ群には、現時点で選挙公報への導線を確認していない。",
+        "location_note": "選挙公報PDF（全2ページ）の2ページ目上段の郡和子候補欄。",
         "decision": "accepted",
-        "review_note": "「公約が存在しない」という主張ではなく、段階3で原典を確認してから接続するための未登録である。"
+        "review_note": "公報そのものを出典優先順位の最上位として登録した。段階1で未登録としていた接続を、宮城クラスター段階3で実物確認のうえ完了した。"
       }
     ],
     "open_questions": [
-      "2025年市長選挙の選挙公報の現在の公表所在を確認し、宮城クラスター段階3（公約登録）で manifesto_source_ids に接続すること。"
+      "候補欄のQRコードが案内する候補者の政策ページ等の詳細資料の安定した所在が特定できれば、登録済みの公約文と照合する。"
     ],
     "review_status": "reviewed"
   },
