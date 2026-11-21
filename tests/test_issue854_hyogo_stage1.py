@@ -264,10 +264,13 @@ def test_hyogo_governor_term() -> None:
     assert term["term_end"] == "2028-11-16"
     assert term["election_date"] == "2024-11-17"
     assert [t for t in terms if t["municipality_id"] == MID] == [term]
-    # Stage 1 registers no manifesto source: the bulletin is preserved
-    # on the Kobe City site, but its candidate panels are image-only,
-    # so the promise registration belongs to the promise stage.
-    assert term["manifesto_source_ids"] == []
+    # Stage 1 registered no manifesto source (the bulletin is
+    # preserved on the Kobe City site and its candidate panels are
+    # image-only); stage 3 (Issue #862) transcribed the panel and
+    # connected the bulletin as the term's manifesto source.
+    assert term["manifesto_source_ids"] == [
+        "hyogo-pref-governor-election-2024-bulletin"
+    ]
     assert term["sources"] == [
         "hyogo-pref-governor",
         "kobe-city-governor-election-2024-result",

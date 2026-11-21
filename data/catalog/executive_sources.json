@@ -1,5 +1,5 @@
 {
-  "version": "0.29.0",
+  "version": "0.30.0",
   "updated_at": "2026-11-21",
   "scope": "pilot",
   "records": [
@@ -1346,6 +1346,20 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "神戸市選挙管理委員会の公式結果調。「兵庫県全体での得票数は1,113,911票」と明記する。西宮市・姫路市の開票結果（兵庫県計）でも同数であり、三市で一致した。"
+    },
+    {
+      "id": "hyogo-pref-governor-election-2024-bulletin",
+      "municipality_key": "hyogo-prefecture",
+      "organization": "兵庫県選挙管理委員会",
+      "category": "election",
+      "title": "令和6年11月17日執行 兵庫県知事選挙 選挙公報（さいとう元彦候補欄）",
+      "url": "https://www.city.kobe.lg.jp/documents/23740/kouhoutizi.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "候補者提出原稿をそのまま印刷した全4ページの公式選挙公報。さいとう元彦候補欄は3ページ目上段。神戸市選挙管理委員会の公式ページに同一文書が保全掲載されており、神戸市公式サイトから取得した。候補者欄は画像形式（全4ページのテキスト抽出は空白を除き2,180字で、いずれも選管の表頭・投票案内等の印刷文字であり、候補者欄からは文字が抽出されない）ため、公約文はPDFの描画画像（100dpi・300dpi）の照合で転記した。県選管の知事選特設サイトでの掲載継続は未確認。"
     }
   ]
 }
