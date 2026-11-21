@@ -435,6 +435,27 @@ function registry(
     factionVotes, expenses, trips, evidence, sources,
   };
 }
+/** Normalize source-specific evidence without changing the canonical data. */
+function shizuokaAssemblyEvidence(packets: unknown[]): Evidence[] {
+  type RawClaim = {
+    field: string; statement?: string; summary?: string; source_ids?: string[];
+    location_note?: string | null; decision?: string;
+  };
+  type RawPacket = {
+    subject_id: string; review_status: string; open_questions: string[];
+    claims: RawClaim[];
+  };
+  return (packets as RawPacket[]).map((packet) => ({
+    ...packet,
+    claims: packet.claims.map((claim) => ({
+      field: claim.field,
+      statement: claim.statement ?? claim.summary ?? "",
+      source_ids: claim.source_ids ?? [],
+      location_note: claim.location_note ?? null,
+      decision: claim.decision ?? "accepted",
+    })),
+  }));
+}
 export const assemblies: Record<AssemblySlug, Registry> = {
   "shizuoka-prefecture": registry(
     shizuokaPrefAssembly.map((assembly) => ({
@@ -447,24 +468,29 @@ export const assemblies: Record<AssemblySlug, Registry> = {
       ...trip,
       participants: trip.participants.map((name) => ({ name, role: "役職未収録", participant_type: "member" })),
     })),
-    [...shizuokaPrefAssemblyEvidence, ...shizuokaPrefVoteEvidence, ...shizuokaPrefExpenseEvidence, ...shizuokaPrefTripEvidence],
+    shizuokaAssemblyEvidence([...shizuokaPrefAssemblyEvidence, ...shizuokaPrefVoteEvidence, ...shizuokaPrefExpenseEvidence, ...shizuokaPrefTripEvidence]),
     shizuokaPrefSources.records,
   ),
   "shizuoka-city": registry(
     shizuokaCityAssembly, shizuokaCityDisclosure, shizuokaCitySessions,
     shizuokaCityProposals, shizuokaCityVotes, shizuokaCityFactionVotes,
     shizuokaCityExpenses, shizuokaCityTrips,
-    [...shizuokaCityAssemblyEvidence, ...shizuokaCityVoteEvidence, ...shizuokaCityExpenseEvidence, ...shizuokaCityTripEvidence],
+    shizuokaAssemblyEvidence([...shizuokaCityAssemblyEvidence, ...shizuokaCityVoteEvidence, ...shizuokaCityExpenseEvidence, ...shizuokaCityTripEvidence]),
     shizuokaCitySources.records,
   ),
   "hamamatsu-city": registry(
     hamamatsuCityAssembly.map((assembly) => ({
       ...assembly,
       seat_count: assembly.seats,
-    })), hamamatsuCityDisclosure, hamamatsuCitySessions,
+    })), hamamatsuCityDisclosure.map((profile) => ({
+      ...profile,
+      items: profile.items.map((item) => ({ ...item, source_url: null })),
+    })), hamamatsuCitySessions.map((session) => ({
+      ...session, start_date: session.starts_on, end_date: session.ends_on,
+    })),
     hamamatsuCityProposals.map((proposal) => ({ related_fiscal_record_ids: [], ...proposal })),
     hamamatsuCityVotes, hamamatsuCityFactionVotes, hamamatsuCityExpenses, hamamatsuCityTrips,
-    [...hamamatsuCityAssemblyEvidence, ...hamamatsuCityVoteEvidence, ...hamamatsuCityExpenseEvidence, ...hamamatsuCityTripEvidence],
+    shizuokaAssemblyEvidence([...hamamatsuCityAssemblyEvidence, ...hamamatsuCityVoteEvidence, ...hamamatsuCityExpenseEvidence, ...hamamatsuCityTripEvidence]),
     hamamatsuCitySources.records,
   ),
 
