@@ -287,9 +287,11 @@ def test_bulletin_source_record_points_at_the_pdf() -> None:
     # records, bringing it to version 0.26.0 / 84 records; the Chiba
     # cluster's stage 1 (Issue #835) then appended the four Chiba
     # Prefecture governor records, bringing it to version 0.27.0 /
-    # 88 records.
-    assert catalog["version"] == "0.27.0"
-    assert len(catalog["records"]) == 88
+    # 88 records; the Chiba cluster's stage 3 (Issue #842) then
+    # appended the five Chiba City mayor records, bringing it to
+    # version 0.28.0 / 93 records.
+    assert catalog["version"] == "0.28.0"
+    assert len(catalog["records"]) == 93
     bulletin = next(r for r in catalog["records"] if r["id"] == BULLETIN_ID)
     assert bulletin["url"].endswith("chijisenkyokoho.pdf")
     assert bulletin["municipality_key"] == "osaka-prefecture"

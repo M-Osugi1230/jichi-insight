@@ -1124,5 +1124,71 @@
       "2025年千葉県知事選挙の選挙公報は県選挙管理委員会の公式ページから到達可能であることを確認したが、候補者欄は画像形式でテキスト層が実質存在しないため、公約レコードの登録は千葉クラスターの公約段階で目視転記により判断し、本段階では manifesto_source_ids を空としている。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-chiba-city-current-mayor-term",
+    "subject_type": "executive_term",
+    "subject_id": "jp-local-121002-executive-2025-03-21",
+    "claims": [
+      {
+        "field": "person_name",
+        "statement": "神谷俊一は現職の千葉市長であり、2期目である。千葉県の市町村長一覧（令和7年12月31日現在）は就任回数を2回と記載し、選挙公報のプロフィール欄も「2021年 千葉市長初当選」と記載する。",
+        "source_ids": [
+          "chiba-pref-mayors-term-list-2025",
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "県の市町村長一覧の千葉市の行と、選挙公報（1）ページ下段の神谷しゅんいち候補欄プロフィール。",
+        "decision": "accepted",
+        "review_note": "現職性と期数は県・市の公式資料に基づく。"
+      },
+      {
+        "field": "election_date",
+        "statement": "直近の選挙は2025年3月16日執行の千葉市長選挙（任期満了に伴う選挙）で、候補者3人のうち神谷しゅんいちが245,748票で当選した。有効投票は282,152票、無効投票は5,958票、投票者総数は288,118人、投票率は35.70%であった。得票数は市の公式開票結果（区別開票結果・確定）で現在も確認できる。首長レコード自体に得票数の項目はないため、得票数はこの証拠パケットにのみ記録する。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-results",
+          "chiba-pref-mayors-term-list-2025"
+        ],
+        "location_note": "開票結果PDFの市長選挙・区別開票結果表と、県の市町村長一覧の千葉市の行。",
+        "decision": "accepted",
+        "review_note": "得票数は開票結果PDFを直接読み取り照合した。投票率は県一覧の35.70%とも一致する。"
+      },
+      {
+        "field": "term_start",
+        "statement": "任期開始日は2025年3月21日であり、千葉県の市町村長一覧（令和7年12月31日現在）が現任期（2期目）の就任年月日を令和7年3月21日と日単位で明記する。前任期の満了日は2025年3月20日であり、本選挙は任期満了による選挙として満了日より前に執行されたため、公職選挙法第259条ただし書の構成（任期は前任期満了日の翌日から起算）とも一致する。",
+        "source_ids": [
+          "chiba-pref-mayors-term-list-2025"
+        ],
+        "location_note": "県の市町村長一覧の千葉市の行（就任年月日の2期目の欄）。",
+        "decision": "accepted",
+        "review_note": "開始日は県の公式一覧の日単位明記を正とし、法令の構成との一致も確認した。"
+      },
+      {
+        "field": "term_end",
+        "statement": "任期満了日は2029年3月20日であり、市選挙管理委員会の「今後の選挙日程」に「千葉市長選挙 任期満了日 令和11年3月20日」と明記され、千葉県の市町村長一覧の任期満了年月日（令和11年3月20日）とも一致する。開始日（2025年3月21日）に地方自治法第140条の4年を加えた満了日とも一致する。",
+        "source_ids": [
+          "chiba-city-election-schedule-page",
+          "chiba-pref-mayors-term-list-2025"
+        ],
+        "location_note": "市選管「今後の選挙日程」の千葉市長選挙の行と、県の市町村長一覧の千葉市の行。",
+        "decision": "accepted",
+        "review_note": "公式明記の満了日を正とし、法令計算との一致も確認した。"
+      },
+      {
+        "field": "manifesto_source_ids",
+        "statement": "原典は2025年千葉市長選挙の選挙公報であり、市の投開票結果ページから単独PDFで現在も到達できる。神谷しゅんいち候補欄（公報（1）ページ下段）から公約25件を転記・登録したため、manifesto_source_ids に接続した。原典探索の記録は manifesto-source-search-chiba-city-2025、分割レビューは manifesto-review-jp-local-121002-2025。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin",
+          "chiba-city-mayor-election-2025-results-page"
+        ],
+        "location_note": "選挙公報PDF（全2ページ）の（1）ページ下段。",
+        "decision": "accepted",
+        "review_note": "公報そのものを出典優先順位の最上位として登録した。"
+      }
+    ],
+    "open_questions": [
+      "候補者の政策資料（公式サイトの政策ページ等）の安定した所在が特定できれば、登録済みの公約文と照合する。",
+      "前任期（2021年3月21日〜2025年3月20日）の term は本登録の対象外であり、未登録のままである。"
+    ],
+    "review_status": "reviewed"
   }
 ]

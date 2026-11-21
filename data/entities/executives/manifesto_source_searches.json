@@ -520,5 +520,36 @@
     ],
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-chiba-city-2025",
+    "executive_term_id": "jp-local-121002-executive-2025-03-21",
+    "searched_at": "2026-11-21",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "general_web_search"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "chiba-city-mayor-election-2025-bulletin"
+    ],
+    "checked_source_ids": [
+      "chiba-city-mayor-election-2025-bulletin",
+      "chiba-city-mayor-election-2025-results",
+      "chiba-city-mayor-election-2025-results-page",
+      "chiba-city-election-schedule-page",
+      "chiba-pref-mayors-term-list-2025"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "選挙公報は、市の投開票結果ページから「選挙公報（参考）」の市長選挙分として単独PDFで現在も到達できることを確認した。リンク先PDFのファイル名には知事選を示唆する文字列が含まれるが、実物は千葉市長選挙公報（千葉市選挙管理委員会発行、全2ページ）であり、神谷しゅんいち候補欄は（1）ページ下段にあることを描画画像で確認した。候補者欄は画像形式でテキスト層は選管の定型文のみのため、描画画像（200dpi・300dpi・450dpi）を照合して転記し、分割レビュー（manifesto-review-jp-local-121002-2025）を経て公約25件を作成した。選挙公報は候補者提出原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たるため、原典としての格付けは high とした。あわせて開票結果PDFで当選・得票数245,748票を直接照合し、県の市町村長一覧（令和7年12月31日現在）で現任期の就任年月日（2025年3月21日）と任期満了年月日（2029年3月20日）を、市選管の今後の選挙日程で任期満了日を、それぞれ確認した。候補者の政策資料（公式サイトの政策ページ等）の安定した所在は特定していないが、存在しないという主張はしない。",
+    "next_actions": [
+      "候補者の政策資料の安定した所在が特定できれば、登録済みの公約文と照合する。",
+      "未接続の公約（VISIONの見出し5件、開府900年欄の導入文、学校教育に関する2件）について、計画・事業資料への進捗証拠の接続を拡充する。",
+      "2029年の次回市長選挙では、選挙期間中に公報の公式掲載を確認し、次任期の原典として登録する。"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]

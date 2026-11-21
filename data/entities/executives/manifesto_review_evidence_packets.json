@@ -672,5 +672,48 @@
       "候補者の公式サイト等に公報より詳細な政策資料が安定した所在で現存するかは未確認である（公報欄内に候補者サイトとQRコードの案内があるが、選挙終了後の保全状況は確認していない）。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-chiba-city-2025-manifesto-review",
+    "subject_type": "manifesto_review",
+    "subject_id": "manifesto-review-jp-local-121002-2025",
+    "claims": [
+      {
+        "field": "source_location",
+        "statement": "神谷しゅんいち候補欄は選挙公報（1）ページの下段に掲載され、スローガン、VISION 01〜05、「2021-2024 実績」欄、「千葉開府900年の節目」欄、推薦人、QRコードの案内、プロフィールで構成される。公報の欄外には「この選挙公報は、候補者から提出された原稿をそのまま印刷したものです。」との注記がある。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報PDFの（1）ページ下段。",
+        "decision": "accepted",
+        "review_note": "2026-11-21に描画画像（200dpi・300dpi・450dpi）で候補者欄全体を確認した。"
+      },
+      {
+        "field": "segmentation_status",
+        "statement": "「15の約束」の○印の項目15件、VISIONの見出し5件、開府900年欄の導入文1件と●印の項目4件を、資料上の境界に従い25件に分割した。実績欄の4項目、スローガン、推薦人、プロフィール、QRコードの案内は公約ではないためレコード化していない。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "候補者欄全体。",
+        "decision": "accepted",
+        "review_note": "句読点による推測分割は行っていない（docs/PROMISE_EXTRACTION.md の分割ルール）。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、千葉市選挙管理委員会が発行した選挙公報そのものから取得した。選挙公報は候補者から提出された原稿をそのまま掲載した公式文書であり、出典優先順位の最上位に当たる。単独PDFが市の投開票結果ページから現在も到達できるため、再録等の間接的な来歴はない。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin",
+          "chiba-city-mayor-election-2025-results-page"
+        ],
+        "location_note": "市の投開票結果ページと選挙公報PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "公報は出典優先順位の最上位であり、第三者経由の引用ではない。"
+      }
+    ],
+    "open_questions": [
+      "VISIONの見出し5件と開府900年欄の導入文を独立した公約として登録した境界判断は見直しの余地がある（見出しの「15の約束」の○項目のみを公約とする整理もありうる）。",
+      "候補者の公式サイト等に公報より詳細な政策資料が安定した所在で現存するかは未確認である（公報欄内にホームページ・X・FacebookへのQRコードの案内があるが、選挙終了後の保全状況は確認していない）。"
+    ],
+    "review_status": "reviewed"
   }
 ]
