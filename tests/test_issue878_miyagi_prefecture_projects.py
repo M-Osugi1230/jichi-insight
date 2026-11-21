@@ -80,8 +80,19 @@ def test_projects_validate_against_schema() -> None:
         assert project["municipality_id"] == MID
         assert project["fiscal_year"] == 2025
         assert project["review_status"] == "reviewed"
-        # Promises are registered in stage 3; no links yet.
-        assert project["related_promise_ids"] == []
+        # Promise links arrive in stage 3 (Issue #881): the
+        # semiconductor-attraction promise links to the new-industry
+        # measure and the hospital-reorganisation promise to the
+        # medical-care measure; all other series stay unlinked.
+        expected_links = {
+            "jp-local-040002-project-2025-academia-industry-new-industry": [
+                "jp-local-040002-executive-2025-11-21-promise-002"
+            ],
+            "jp-local-040002-project-2025-health-medical-care-sustainability": [
+                "jp-local-040002-executive-2025-11-21-promise-004"
+            ],
+        }
+        assert project["related_promise_ids"] == expected_links.get(project["id"], [])
         assert project["official_evaluation"]["rating"] == EXPECTED_RATINGS[project["id"]]
         assert len(project["kpis"]) == EXPECTED_KPI_COUNTS[project["id"]]
         for kpi in project["kpis"]:

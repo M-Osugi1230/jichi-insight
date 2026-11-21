@@ -642,5 +642,38 @@
     ],
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-miyagi-pref-2025",
+    "executive_term_id": "jp-local-040002-executive-2025-11-21",
+    "searched_at": "2026-11-22",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "miyagi-pref-governor-election-2025-bulletin"
+    ],
+    "checked_source_ids": [
+      "miyagi-pref-governor",
+      "miyagi-pref-governor-election-2025-page",
+      "sendai-city-governor-election-2025-result",
+      "miyagi-pref-governor-election-2025-bulletin",
+      "miyagi-pref-governor-election-2025-bulletin-audio-data"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "宮城県知事選挙（令和7年10月26日執行）の選挙公報は、県選挙管理委員会の知事選挙総合ページに現存し（PDF全4ページ、4,000,541バイト）、2026-11-22に県公式サイトから直接取得した。1ページ目下段の村井よしひろ候補欄（見出し「さらなる成長戦略を実行します！」の下に4つの政策）を確認し、選挙公報を出典として登録、分割レビュー（manifesto-review-jp-local-040002-2025）を経て公約レコード4件を作成した。候補者欄は画像形式で、PDFのテキスト抽出（空白を除き837字）はいずれも選管の表頭・投票案内等の印刷文字であり候補者欄からは文字が抽出されないことを実測したため、登録文は描画画像（100dpi・300dpi）の目視転記を正とし、あわせて県選管が公表する候補者提出の音声読み上げ対応データ（テキスト層を持つPDF）の抽出文と全項目で突合して転記の正確さを担保した（差異は改行位置とアスタリスクの字形のみ）。選挙公報は候補者提出原稿をそのまま印刷した公式文書であり、県選管の公式サイトから直接取得できたため、公約レコードの confidence は high とした。候補者欄にはYouTube（AIむらい・YouTubeライブ）へのQRコード案内があるが、詳細な公約資料の安定した所在は本探索では特定していない。",
+    "next_actions": [
+      "候補者欄が案内するYouTube等の詳細な公約資料の安定した所在が特定できれば、登録済みの公約文と照合する",
+      "未接続の公約（DXの推進、若者が集える場所の確保）について、計画・事業資料への進捗証拠の接続を拡充する",
+      "知事の新任期満了日（2029-11-20）の県選管自身の資料での明記照合ができれば、段階1の証拠パケットの open question を解消する",
+      "2029年11月の任期満了に伴う次回知事選挙では、新任期の公約原文資料として選挙公報を改めて登録する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]
