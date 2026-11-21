@@ -83,6 +83,9 @@ export default async function AssemblyDetailPage({params}:PageProps){
       <p>自治体議会の議案と表決、政務活動費、視察および情報公開範囲を公式資料に沿って表示します。議会が審議した予算と執行部の事業成果を、議会・議員の成績として結びつけません。</p>
       <p className={styles.attention}>確認できること：議案・議決結果と登録済みの公式資料。会派別・議員別の賛否は各議会の公開範囲でのみ表示します。議員や会派を採点・順位付けしません。</p>
       {slug==="hokkaido-prefecture" ? <p className={styles.attention}>北海道議会は議員個人別・会派別の賛否を公表していません。政務活動費は集計値と閲覧制度のみを登録しています。委員会視察・議員派遣の個別資料は公表されていません。</p> : null}
+      {slug==="saitama-prefecture" ? <p className={styles.attention}>会派別賛否は議会運営委員会で確認した態度であり本会議の投票記録ではありません。個人名列は無所属3名のみです。</p> : null}
+      {slug==="saitama-city" ? <p className={styles.attention}>会派別の賛否と無所属議員の個人名列のみ公表されています。会派所属議員の個人票を復元しません。</p> : null}
+      {slug==="kawaguchi-city" ? <p className={styles.attention}>川口市議会は賛否の公式公表なし（not_published）。会派別・議員個人別の内訳は推定しません。</p> : null}
       {slug==="sapporo-city" ? <p className={styles.attention}>札幌市議会の賛否は会派別のみ公表され、議員個人別の賛否は公表されていません。政務活動費の領収書は閲覧申請形式のため登録対象外です。</p> : null}
       {slug==="asahikawa-city" ? <p className={styles.attention}>旭川市議会の議員別賛否は賛否が分かれた8件のみ公表されています。全会一致の案件には議員別内訳がありません。陳情の賛否は「採択への賛否」であり、陳情内容への賛否と混同しません。</p> : null}
       {slug==="aichi-prefecture" ? <p className={styles.attention}>愛知県議会の会派の態度は、採決に先立って議会運営委員会で確認したもので、本会議の投票記録そのものではありません。無所属の内訳は原資料の印字に従い、議員数との不一致を補完・推計しません。</p> : null}
@@ -94,7 +97,10 @@ export default async function AssemblyDetailPage({params}:PageProps){
       {slug==="kanagawa-prefecture" ? <p className={styles.attention}>神奈川県議会の賛否は会派別のみ公表され、議員個人別の賛否は公表されていません。凡例に欠席者等（▲）がありますが、登録対象の令和8年第2回定例会では▲は使われていません。欠席者等は備考欄の記載をそのまま扱います。</p> : null}
       {slug==="yokohama-city" ? <p className={styles.attention}>横浜市会の議員個人別賛否は、議員別賛否表に記載された「委員会報告への賛否」です。請願の賛否は請願内容への賛否ではなく、採択への賛否として登録しています。令和7年度決算関係27件は第4回定例会（2026年10月29日開会）の決算特別委員会で継続審査中です。政務活動費の領収書はWeb公表されず、市会図書室での閲覧のみです。</p> : null}
       {slug==="kawasaki-city" ? <p className={styles.attention}>川崎市議会は無所属議員5名について個人名の列で賛否を公表しています。会派所属議員の個人別賛否は公表されていません。政務活動費はWeb公開がなく、議会局での閲覧制度のみを登録しています。陳情は委員会で審査され、本会議での表決対象ではありません。</p> : null}
-      <p><Link href="/assemblies">15議会の一覧に戻る</Link></p>
+      {slug==="saitama-prefecture" ? <p className={styles.attention}>埼玉県議会の会派別賛否は、採決に先立つ議会運営委員会で確認した態度です。本会議の投票記録そのものではありません。無所属3名は個人名列で公表され、会派所属議員の個人票は公表されていません。政務活動費の収支報告書・領収書はWeb公開されています。</p> : null}
+      {slug==="saitama-city" ? <p className={styles.attention}>さいたま市議会の賛否は会派別と無所属議員の個人名列で公表されます。全議員の個人別賛否表ではありません。政務活動費は会派分と議員個人分を半期ごとの公式公開単位で表示します。領収書も公開されています。</p> : null}
+      {slug==="kawaguchi-city" ? <p className={styles.attention}>川口市議会の会派別・議員個人別賛否は公式公表なし（not_published）です。議決結果のみから賛否を推定しません。政務活動費は会派分と議員個人分の収支報告書・領収書をWeb公開しています。令和7年度決算認定4件は継続審査中です。</p> : null}
+      <p><Link href="/assemblies">18議会の一覧に戻る</Link></p>
       <nav aria-label="ページ内のセクション">
         <a href="#basic">基本情報</a> ／ <a href="#proposals">会期と議案</a> ／ <a href="#votes">表決</a> ／ <a href="#expenses">政務活動費</a> ／ <a href="#trips">視察</a> ／ <a href="#disclosure">情報公開</a>
       </nav>
@@ -187,7 +193,7 @@ export default async function AssemblyDetailPage({params}:PageProps){
 
     <section id="expenses" className={styles.section}>
       <h2>政務活動費（登録年度別）</h2>
-      <p className={styles.attention}>{slug==="osaka-city" ? "大阪市会の個人交付分の政務活動費収支報告書はWeb公表されておらず、市会図書室での閲覧のみです。会派交付分の公表資料と混同しません。" : slug==="hokkaido-prefecture" ? "北海道議会の政務活動費は集計値と閲覧制度のみが登録されています。領収書・個別支出を推計しません。" : slug==="sapporo-city" ? "札幌市議会の領収書は閲覧申請形式のため登録対象外です。" : slug==="fukuoka-city"?
+      <p className={styles.attention}>{slug==="saitama-prefecture" ? "令和7年度の政務活動費は会派分11単位で公開されています。" : slug==="saitama-city" ? "政務活動費は会派と議員個人の半期単位で公開され、領収書もWebで公開されています。" : slug==="kawaguchi-city" ? "政務活動費は会派分5単位と議員個人43単位でWeb公開され、領収書も公表されています。" : slug==="osaka-city" ? "大阪市会の個人交付分の政務活動費収支報告書はWeb公表されておらず、市会図書室での閲覧のみです。会派交付分の公表資料と混同しません。" : slug==="hokkaido-prefecture" ? "北海道議会の政務活動費は集計値と閲覧制度のみが登録されています。領収書・個別支出を推計しません。" : slug==="sapporo-city" ? "札幌市議会の領収書は閲覧申請形式のため登録対象外です。" : slug==="fukuoka-city"?
         "福岡市議会は公式公開単位どおり会派交付分と議員個人分を併記します。":
         "公式公開単位は会派単位です。議員個人分の収支報告書は本登録に収録されておらず、個人別支出額を推測しません。"}
         {slug==="aichi-prefecture"
@@ -195,6 +201,9 @@ export default async function AssemblyDetailPage({params}:PageProps){
           : slug==="toyota-city"
             ? "政務活動費は会派別集計のみが Web 公表され、詳細の収支報告書・領収書等は Web 公表されていません（市政情報コーナーで閲覧）。"
             : "領収書は窓口でのみ閲覧可能です。"}支出額の順位付けはしません。</p>
+      {slug==="saitama-prefecture" ? <p className={styles.attention}>埼玉県議会は令和7年度の会派交付分11単位。収支報告書と領収書等をWebで公開しています。</p> : null}
+      {slug==="saitama-city" ? <p className={styles.attention}>さいたま市議会は会派分と議員個人分を半期単位でWeb公開し、領収書を含む報告書の公開単位を保持します。全議員に個人報告書があるとは限りません。</p> : null}
+      {slug==="kawaguchi-city" ? <p className={styles.attention}>川口市議会は令和7年度分の会派5単位・議員個人43単位をWeb公開。収支報告書の残額不一致は公表値を改変せず保持します。</p> : null}
       <p className={styles.note}>掲載順は Reviewed 原資料の登録順です。交付額・支出額・残額は年度と公開単位を保ち、会派と議員の額を合算して個人の支出に帰属させません。</p>
       {slug==="osaka-prefecture" ? <p className={styles.attention}>令和7年度分は会派9・議員80の計89単位をWeb公開。収支報告書と領収書の公開範囲を確認できます。</p> : null}
       <div className={styles.recordList}>
