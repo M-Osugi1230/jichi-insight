@@ -129,6 +129,18 @@
       "review_status": "reviewed_general_account_settlement_topline",
       "confidence": "high",
       "boundary": "一般会計歳入416,537,079千円・歳出403,849,303千円を確認。予算・特別会計・収支とは分離する。"
+    },
+    {
+      "id": "hamamatsu-budget-2026-bill",
+      "layer": "budget",
+      "title": "令和8年度浜松市一般会計予算（第42号議案・予算書）",
+      "organization": "浜松市",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/documents/171794/21_yosansho08.pdf",
+      "source_kind": "pdf",
+      "fiscal_year": 2026,
+      "review_status": "reviewed_initial_budget_bill",
+      "confidence": "high",
+      "boundary": "令和8年度当初予算の正確な総額（第1条： 歳入歳出それぞれ440,100,000千円）と市税（第1表 歳入予算 第1款 市税： 160,600,000千円）の正本。税目別内訳（市民税81,068,000千円、固定資産税58,463,000千円ほか）の合計とも一致する。第42号議案として令和8年第1回定例会で2026年3月23日に原案可決された。"
     }
   ],
   "quality_boundary": "現行総合計画3層、第2期基本計画2025～2034、7分野・25基本政策・125政策・成果指標38件、2025年度評価、2026年度実施計画とPDCAレビュー、2026当初予算、2024決算をevidence role/fiscal stageごとに分離する。2025年度の生活満足度指標は市民実感の測定であり政策成果と自動同一視せず、2026年度通年実績は未確定のまま保持する。"

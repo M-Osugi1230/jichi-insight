@@ -61,5 +61,27 @@
     "sources": [
       "hamamatsu-settlement-2024-audit"
     ]
+  },
+  {
+    "id": "jp-local-221309-fiscal-2026-local-tax",
+    "municipality_id": "jp-local-221309",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "local_tax",
+    "metric_label": "市税",
+    "amount_yen": 160600000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "令和8年度浜松市一般会計当初予算の市税。予算書（第42号議案）第1表歳入予算の市税160,600,000千円を収録し、税目別内訳の合計とも一致する。2026年3月23日に原案可決された。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-budget-2026-bill",
+      "hamamatsu-budget-2026"
+    ]
   }
 ]

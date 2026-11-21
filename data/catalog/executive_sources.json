@@ -1,5 +1,5 @@
 {
-  "version": "0.35.0",
+  "version": "0.36.0",
   "updated_at": "2026-11-22",
   "scope": "pilot",
   "records": [
@@ -1556,6 +1556,62 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "県選管が「宮城県知事選挙候補者情報（選挙公報）（音声読み上げ用）」ページで公表する、候補者提出の音声読み上げ対応データ（PDF 1ページ、2,022,233バイト）。選挙公報の村井よしひろ候補欄と同一原稿のテキスト層を持ち、見出し・本文の全文字が抽出できる。段階3では選挙公報の描画画像からの目視転記と本データの抽出文を突合し、実質的な文言が全項目で一致することを確認した（差異は改行位置とアスタリスクの字形のみ）。公約原文の正本は選挙公報とし、本データは転記照合の補助資料として登録する。"
+    },
+    {
+      "id": "hamamatsu-city-mayor-election-2023-results",
+      "municipality_key": "hamamatsu-city",
+      "organization": "浜松市選挙管理委員会",
+      "category": "election",
+      "title": "令和5年4月9日執行 浜松市長選挙 選挙会（開票）について",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/documents/157132/04_touitsu_s.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-22",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "浜松市選挙管理委員会の開票結果資料。第8表（候補者別得票数）に中野祐介246,745票、嶋田博60,530票、有効投票307,275票、投票率49.44％を印字する。PDFは画像のみでテキスト層がないため、描画画像を目視して数値を直接照合した。"
+    },
+    {
+      "id": "hamamatsu-city-mayor-election-2023-results-page",
+      "municipality_key": "hamamatsu-city",
+      "organization": "浜松市選挙管理委員会",
+      "category": "election",
+      "title": "令和5年に行われた選挙等の結果（結果調）",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/senkan/election/senkyokekka_r5/kekkashiraber5.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-22",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "浜松市選挙管理委員会の令和5年執行選挙の結果調ページ。市長選挙の選挙会（開票）資料および選挙公報へのリンクを含む索引ページ。"
+    },
+    {
+      "id": "hamamatsu-city-mayors-history-page",
+      "municipality_key": "hamamatsu-city",
+      "organization": "浜松市",
+      "category": "official_profile",
+      "title": "浜松市の歴代市長（浜松市公式サイト）",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/hisho/intro/101_01d.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-22",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "浜松市公式サイトの歴代市長一覧。第30代・中野祐介の任期開始を「令和5年5月1日～」、第29代・鈴木康友の任期満了を「～令和5年4月30日」と明記する。"
+    },
+    {
+      "id": "hamamatsu-city-mayor-term-expiry-list",
+      "municipality_key": "hamamatsu-city",
+      "organization": "静岡県選挙管理委員会",
+      "category": "election",
+      "title": "市町長及び議会議員の任期（静岡県選挙管理委員会）",
+      "url": "https://www.pref.shizuoka.jp/kensei/senkyo/senkan/1032132.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-22",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "静岡県選挙管理委員会の任期一覧ページ。浜松市長の任期満了日が「令和9年4月30日」と明記されており、任期満了日の直接照合に使用した。"
     }
   ]
 }
