@@ -1,0 +1,194 @@
+{
+ "expansion_rule": {
+  "added_count": 10,
+  "description": "初回登録として10件（9グループを巡回して選んだ10件）。後続の展開では、同じ掲載順ルールを継続し、巡回の続き（①の3番目以降、各グループの2番目以降）から事業を追加する。",
+  "total_count": 10
+ },
+ "issue": 878,
+ "municipality_id": "jp-local-041009",
+ "municipality_key": "sendai-city",
+ "population": {
+  "challenge_project_count": 8,
+  "description": "仙台市基本計画2021-2030（2021〜2030年度）に基づく実施計画2024-2026（2024〜2026年度）の体系（8つのチャレンジプロジェクト＋市政運営＝9グループ→小分類26件→事業108件）を母集団とした。登録単位は事業とした。理由は、市の進行管理（自己評価報告書）が事業ごとに自己評価シートを作成し、事業単位で市の自己評価（◎○△×）・担当局・主担当課・事業内容を公表する構成であり、公式評価が付く最も小さい単位が事業であるためである。チャレンジプロジェクト等のグループ単位では自己評価は付かず、小分類には数値目標が設定されるが事業単位の評価は付かない。実施計画・自己評価報告書のいずれにも事業単位の金額は掲載されない。次期実施計画（2027-2029）は策定中のため対象外とし、現行の実施計画とその進行管理の公表範囲に限る。",
+  "fiscal_year": 2025,
+  "group_count": 9,
+  "project_count": 108,
+  "source_ids": [
+   "sendai-city-comprehensive-plan-page",
+   "sendai-city-implementation-plan-2024-2026-pdf",
+   "sendai-city-progress-management-2024-2026-page",
+   "sendai-city-self-evaluation-2025-report"
+  ],
+  "subsection_count": 26
+ },
+ "review_status": "reviewed",
+ "scope": "expanded",
+ "selection_rule": {
+  "description": "計画体系の柱である9グループ（8つのチャレンジプロジェクトと市政運営）を自己評価報告書の掲載順に巡回し、各グループの掲載順先頭の事業を1件ずつ選ぶ（1巡目9件）。2巡目は①杜と水の都プロジェクトの2番目の事業を選ぶ（1件）。合計10件。掲載順は自己評価報告書（令和7年度自己評価シート取りまとめ）のシートの通し番号順で定める。金額の大小では選ばない。",
+  "pillars": [
+   "杜と水の都プロジェクト",
+   "防災環境都市プロジェクト",
+   "心の伴走プロジェクト",
+   "地域協働プロジェクト",
+   "笑顔咲く子どもプロジェクト",
+   "ライフデザインプロジェクト",
+   "TOHOKU未来プロジェクト",
+   "都心創生プロジェクト",
+   "市政運営"
+  ]
+ },
+ "selections": [
+  {
+   "department": "財政局",
+   "official_title": "新本庁舎整備事業",
+   "pillar": "杜と水の都プロジェクト",
+   "policy": "杜と水の都プロジェクト",
+   "project_id": "jp-local-041009-project-2025-new-city-hall-development",
+   "report_number": 1,
+   "selection_basis": "第1巡目: 杜と水の都プロジェクトについて、自己評価報告書の掲載順で先頭の事業（シート通し番号1）「新本庁舎整備事業」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-041009-project-series-new-city-hall-development",
+   "source_ids": [
+    "sendai-city-self-evaluation-2025-report",
+    "sendai-city-implementation-plan-2024-2026-pdf"
+   ],
+   "subsection": "勾当台・定禅寺通エリア活性化"
+  },
+  {
+   "department": "まちづくり政策局",
+   "official_title": "防災環境都市づくり推進事業",
+   "pillar": "防災環境都市プロジェクト",
+   "policy": "防災環境都市プロジェクト",
+   "project_id": "jp-local-041009-project-2025-disaster-resilient-city-promotion",
+   "report_number": 12,
+   "selection_basis": "第1巡目: 防災環境都市プロジェクトについて、自己評価報告書の掲載順で先頭の事業（シート通し番号12）「防災環境都市づくり推進事業」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-041009-project-series-disaster-resilient-city-promotion",
+   "source_ids": [
+    "sendai-city-self-evaluation-2025-report",
+    "sendai-city-implementation-plan-2024-2026-pdf"
+   ],
+   "subsection": "防災環境都市づくり"
+  },
+  {
+   "department": "市民局",
+   "official_title": "性的少数者・困難を抱える女性支援事業",
+   "pillar": "心の伴走プロジェクト",
+   "policy": "心の伴走プロジェクト",
+   "project_id": "jp-local-041009-project-2025-sexual-minorities-and-women-support",
+   "report_number": 25,
+   "selection_basis": "第1巡目: 心の伴走プロジェクトについて、自己評価報告書の掲載順で先頭の事業（シート通し番号25）「性的少数者・困難を抱える女性支援事業」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-041009-project-series-sexual-minorities-and-women-support",
+   "source_ids": [
+    "sendai-city-self-evaluation-2025-report",
+    "sendai-city-implementation-plan-2024-2026-pdf"
+   ],
+   "subsection": "多様性が尊重され、誰もが暮らしやすい社会づくり"
+  },
+  {
+   "department": "市民局・各区",
+   "official_title": "地域づくりパートナーサポート事業",
+   "pillar": "地域協働プロジェクト",
+   "policy": "地域協働プロジェクト",
+   "project_id": "jp-local-041009-project-2025-community-partnership-support",
+   "report_number": 37,
+   "selection_basis": "第1巡目: 地域協働プロジェクトについて、自己評価報告書の掲載順で先頭の事業（シート通し番号37）「地域づくりパートナーサポート事業」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-041009-project-series-community-partnership-support",
+   "source_ids": [
+    "sendai-city-self-evaluation-2025-report",
+    "sendai-city-implementation-plan-2024-2026-pdf"
+   ],
+   "subsection": "協働が生まれる基盤整備"
+  },
+  {
+   "department": "こども若者局",
+   "official_title": "子育て応援の機運醸成事業",
+   "pillar": "笑顔咲く子どもプロジェクト",
+   "policy": "笑顔咲く子どもプロジェクト",
+   "project_id": "jp-local-041009-project-2025-childrearing-support-momentum",
+   "report_number": 52,
+   "selection_basis": "第1巡目: 笑顔咲く子どもプロジェクトについて、自己評価報告書の掲載順で先頭の事業（シート通し番号52）「子育て応援の機運醸成事業」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-041009-project-series-childrearing-support-momentum",
+   "source_ids": [
+    "sendai-city-self-evaluation-2025-report",
+    "sendai-city-implementation-plan-2024-2026-pdf"
+   ],
+   "subsection": "子ども・子育てを応援する社会づくり"
+  },
+  {
+   "department": "文化観光局",
+   "official_title": "文化芸術によるまちの魅力づくり事業",
+   "pillar": "ライフデザインプロジェクト",
+   "policy": "ライフデザインプロジェクト",
+   "project_id": "jp-local-041009-project-2025-culture-arts-city-appeal",
+   "report_number": 63,
+   "selection_basis": "第1巡目: ライフデザインプロジェクトについて、自己評価報告書の掲載順で先頭の事業（シート通し番号63）「文化芸術によるまちの魅力づくり事業」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-041009-project-series-culture-arts-city-appeal",
+   "source_ids": [
+    "sendai-city-self-evaluation-2025-report",
+    "sendai-city-implementation-plan-2024-2026-pdf"
+   ],
+   "subsection": "体験・学びの機会があふれる環境づくり"
+  },
+  {
+   "department": "経済局",
+   "official_title": "リサーチコンプレックス形成推進事業",
+   "pillar": "TOHOKU未来プロジェクト",
+   "policy": "TOHOKU未来プロジェクト",
+   "project_id": "jp-local-041009-project-2025-research-complex-formation",
+   "report_number": 75,
+   "selection_basis": "第1巡目: TOHOKU未来プロジェクトについて、自己評価報告書の掲載順で先頭の事業（シート通し番号75）「リサーチコンプレックス形成推進事業」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-041009-project-series-research-complex-formation",
+   "source_ids": [
+    "sendai-city-self-evaluation-2025-report",
+    "sendai-city-implementation-plan-2024-2026-pdf"
+   ],
+   "subsection": "イノベーション創出の促進"
+  },
+  {
+   "department": "経済局",
+   "official_title": "中心部商店街活性化促進事業",
+   "pillar": "都心創生プロジェクト",
+   "policy": "都心創生プロジェクト",
+   "project_id": "jp-local-041009-project-2025-central-shopping-district-revitalization",
+   "report_number": 90,
+   "selection_basis": "第1巡目: 都心創生プロジェクトについて、自己評価報告書の掲載順で先頭の事業（シート通し番号90）「中心部商店街活性化促進事業」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-041009-project-series-central-shopping-district-revitalization",
+   "source_ids": [
+    "sendai-city-self-evaluation-2025-report",
+    "sendai-city-implementation-plan-2024-2026-pdf"
+   ],
+   "subsection": "都心の賑わいと回遊性の向上"
+  },
+  {
+   "department": "まちづくり政策局",
+   "official_title": "「Full Digitalの市役所」推進事業",
+   "pillar": "市政運営",
+   "policy": "市政運営",
+   "project_id": "jp-local-041009-project-2025-full-digital-city-hall",
+   "report_number": 100,
+   "selection_basis": "第1巡目: 市政運営について、自己評価報告書の掲載順で先頭の事業（シート通し番号100）「「Full Digitalの市役所」推進事業」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-041009-project-series-full-digital-city-hall",
+   "source_ids": [
+    "sendai-city-self-evaluation-2025-report",
+    "sendai-city-implementation-plan-2024-2026-pdf"
+   ],
+   "subsection": "変化に対応する市役所づくり"
+  },
+  {
+   "department": "建設局",
+   "official_title": "勾当台公園及び周辺再整備事業",
+   "pillar": "杜と水の都プロジェクト",
+   "policy": "杜と水の都プロジェクト",
+   "project_id": "jp-local-041009-project-2025-kotodai-park-redevelopment",
+   "report_number": 2,
+   "selection_basis": "第2巡目: 杜と水の都プロジェクトについて、自己評価報告書の掲載順で2番目の事業（シート通し番号2）「勾当台公園及び周辺再整備事業」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-041009-project-series-kotodai-park-redevelopment",
+   "source_ids": [
+    "sendai-city-self-evaluation-2025-report",
+    "sendai-city-implementation-plan-2024-2026-pdf"
+   ],
+   "subsection": "勾当台・定禅寺通エリア活性化"
+  }
+ ],
+ "updated_at": "2026-11-21",
+ "version": "1.0.0"
+}
