@@ -97,7 +97,7 @@ def test_assemblies_keep_actual_voting_publication_granularity():
     assert "24議会" in ASSEMBLY_INDEX
     assert "24議会の一覧に戻る" in ASSEMBLY_DETAIL
     assert "本会議の表決そのものの事後記録" in PREF_PAGE
-    assert "採決に先立つ会派態度の集約ではありません" in PREF_PAGE
+    assert "採決に先立って表明された会派態度の集約ではありません" in PREF_PAGE
     assert "宮城県議会" in PREF_PAGE
     assert "仙台市議会" in CITY_PAGE
     assert "会派別賛否" in CITY_PAGE
