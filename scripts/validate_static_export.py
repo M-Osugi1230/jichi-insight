@@ -1631,6 +1631,24 @@ def miyagi_cluster_project_detail_files() -> set[str]:
     return required
 
 
+def extract_section_body(html: str, opening_match) -> str | None:
+    """Return the body of the section opened by opening_match, nesting-aware."""
+    depth = 1
+    pos = opening_match.end()
+    tag_re = re.compile(r"</?section\b[^>]*>")
+    while depth and pos < len(html):
+        tag = tag_re.search(html, pos)
+        if tag is None:
+            return None
+        if tag.group(0).startswith("</"):
+            depth -= 1
+            if depth == 0:
+                return html[opening_match.end():tag.start()]
+        else:
+            depth += 1
+        pos = tag.end()
+    return None
+
 def validate_miyagi_cluster_data_facts() -> None:
     """Ensure copy-specific facts match Reviewed Miyagi and Sendai source data."""
     for slug, official_code, municipality_id, selection_name, source_name in (
@@ -1766,26 +1784,28 @@ def validate_miyagi_cluster_export() -> list[str]:
             continue
         html = normalized_html(path)
         for section_id, phrases in section_facts.items():
-            match = re.search(
-                rf'<section\b(?=[^>]*\baria-labelledby="{re.escape(section_id)}")[^>]*>(.*?)</section>',
-                html, flags=re.DOTALL,
+            opening = re.search(
+                rf'<section\b(?=[^>]*\baria-labelledby="{re.escape(section_id)}")[^>]*>',
+                html,
             )
-            if match is None:
+            body = extract_section_body(html, opening) if opening else None
+            if body is None:
                 failures.append(f"Miyagi {slug} missing section: {section_id}")
                 continue
             for phrase in phrases:
-                if phrase not in match.group(1):
+                if phrase not in body:
                     failures.append(f"Miyagi {slug} {section_id} missing registered fact: {phrase}")
         projects = load_json(ROOT / "data" / "reviewed" / slug / "projects.json")
-        section = re.search(
-            r'<section\b(?=[^>]*\bid="priority-projects")[^>]*>(.*?)</section>',
-            html, flags=re.DOTALL,
+        opening = re.search(
+            r'<section\b(?=[^>]*\bid="priority-projects")[^>]*>',
+            html,
         )
-        if section is None:
+        section_body = extract_section_body(html, opening) if opening else None
+        if section_body is None:
             failures.append(f"Miyagi {slug} missing priority-projects section")
         else:
             for record in projects:
-                if record["review_status"] == "reviewed" and record["official_title"] not in section.group(1):
+                if record["review_status"] == "reviewed" and record["official_title"] not in section_body:
                     failures.append(f"Miyagi {slug} missing official project title: {record['official_title']}")
     index = EXPORT_ROOT / "assemblies/index.html"
     if index.is_file():

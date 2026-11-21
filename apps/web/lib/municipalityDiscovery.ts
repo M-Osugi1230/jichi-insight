@@ -81,7 +81,7 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
     const assembly = assemblies["miyagi-prefecture"];
     const hasAssembly = assembly.assembly.review_status === "reviewed" &&
       assembly.disclosure.review_status === "reviewed" &&
-      assembly.assembly.municipality_id === municipalityId;
+      assembly.assembly.id.startsWith(municipalityId + "-assembly-");
     return { key: "miyagi-prefecture", finance: hasFinance,
       promises: hasReviewedExecutivePromises(municipalityId),
       assembly: hasAssembly, projects: hasProjects };
@@ -101,7 +101,7 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
     const assembly = assemblies["sendai-city"];
     const hasAssembly = assembly.assembly.review_status === "reviewed" &&
       assembly.disclosure.review_status === "reviewed" &&
-      assembly.assembly.municipality_id === municipalityId;
+      assembly.assembly.id.startsWith(municipalityId + "-assembly-");
     return { key: "sendai-city", finance: hasFinance,
       promises: hasReviewedExecutivePromises(municipalityId),
       assembly: hasAssembly, projects: hasProjects };
