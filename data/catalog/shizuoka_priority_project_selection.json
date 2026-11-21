@@ -1,0 +1,178 @@
+{
+  "issue": 896,
+  "municipality_id": "jp-local-220001",
+  "municipality_key": "shizuoka-prefecture",
+  "population": {
+    "description": "「静岡県総合計画～しずおか ウェルビーイングプラン～」（2025〜2028年度）の政策体系。3つの政策区分（「未来を創る力」「豊かな暮らし」「県民の安心」）と行政経営のもとに、政策（大柱）8本、政策の柱（中柱）24本、197の取組、101の成果指標が置かれる。県は毎年度「静岡県総合計画評価書」を公表し、政策の柱ごとに成果指標の評価（基準値・現状値・目標値と、進捗率等によるA～Dの評価区分。実績値が未公表の場合は「－」）と、施策ごとの主な取組・今後の方向性を示すため、本登録では政策の柱を登録単位とした。政策は各系列の parent_policy に、政策区分は各選定の division に記録する。行政経営には政策の柱が1本のみ置かれ、評価書では番号なしで示される。",
+    "fiscal_year": 2025,
+    "project_count": 24,
+    "source_ids": [
+      "shizuoka-pref-comprehensive-plan-2025",
+      "shizuoka-pref-evaluation-fy2026-book",
+      "shizuoka-pref-plan-evaluation-page"
+    ]
+  },
+  "review_status": "reviewed",
+  "scope": "initial",
+  "selection_rule": {
+    "description": "8つの政策を計画の掲載順に巡回し、各政策ではその下の政策の柱を掲載順にたどって10系列を選定する。第1巡で各政策の先頭の政策の柱（Ⅰ-1-1、Ⅰ-2-1、Ⅰ-3-1、Ⅱ-1-1、Ⅱ-2-1、Ⅱ-3-1、Ⅲ-1-1、行政経営）を、第2巡で政策「産業」「環境・エネルギー」の第2の政策の柱（Ⅰ-1-2、Ⅰ-2-2）を選定した時点で10系列が揃ったため、第3巡には進んでいない。金額の大小では選ばない。",
+    "pillars": [
+      "未来を創る力",
+      "豊かな暮らし",
+      "県民の安心",
+      "行政経営"
+    ]
+  },
+  "selections": [
+    {
+      "division": "未来を創る力",
+      "official_title": "イノベーションの創出と次世代産業の振興",
+      "pillar_code": "Ⅰ-1-1",
+      "pillar_number": 1,
+      "policy": "産業",
+      "policy_code": "Ⅰ-1",
+      "project_id": "jp-local-220001-project-2025-innovation-next-generation-industry",
+      "selection_basis": "第1巡: 政策「産業」について、計画の掲載順で先頭の政策の柱「イノベーションの創出と次世代産業の振興」を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-220001-project-series-innovation-next-generation-industry",
+      "source_ids": [
+        "shizuoka-pref-comprehensive-plan-2025",
+        "shizuoka-pref-evaluation-fy2026-book"
+      ]
+    },
+    {
+      "division": "未来を創る力",
+      "official_title": "脱炭素社会の構築",
+      "pillar_code": "Ⅰ-2-1",
+      "pillar_number": 1,
+      "policy": "環境・エネルギー",
+      "policy_code": "Ⅰ-2",
+      "project_id": "jp-local-220001-project-2025-decarbonized-society",
+      "selection_basis": "第1巡: 政策「環境・エネルギー」について、計画の掲載順で先頭の政策の柱「脱炭素社会の構築」を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-220001-project-series-decarbonized-society",
+      "source_ids": [
+        "shizuoka-pref-comprehensive-plan-2025",
+        "shizuoka-pref-evaluation-fy2026-book"
+      ]
+    },
+    {
+      "division": "未来を創る力",
+      "official_title": "観光振興の推進",
+      "pillar_code": "Ⅰ-3-1",
+      "pillar_number": 1,
+      "policy": "観光・交流・インフラ",
+      "policy_code": "Ⅰ-3",
+      "project_id": "jp-local-220001-project-2025-tourism-promotion",
+      "selection_basis": "第1巡: 政策「観光・交流・インフラ」について、計画の掲載順で先頭の政策の柱「観光振興の推進」を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-220001-project-series-tourism-promotion",
+      "source_ids": [
+        "shizuoka-pref-comprehensive-plan-2025",
+        "shizuoka-pref-evaluation-fy2026-book"
+      ]
+    },
+    {
+      "division": "豊かな暮らし",
+      "official_title": "こどもまんなか社会の実現",
+      "pillar_code": "Ⅱ-1-1",
+      "pillar_number": 1,
+      "policy": "こども・教育",
+      "policy_code": "Ⅱ-1",
+      "project_id": "jp-local-220001-project-2025-child-centered-society",
+      "selection_basis": "第1巡: 政策「こども・教育」について、計画の掲載順で先頭の政策の柱「こどもまんなか社会の実現」を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-220001-project-series-child-centered-society",
+      "source_ids": [
+        "shizuoka-pref-comprehensive-plan-2025",
+        "shizuoka-pref-evaluation-fy2026-book"
+      ]
+    },
+    {
+      "division": "豊かな暮らし",
+      "official_title": "医療提供体制の確保・充実と健康寿命の延伸",
+      "pillar_code": "Ⅱ-2-1",
+      "pillar_number": 1,
+      "policy": "健康福祉",
+      "policy_code": "Ⅱ-2",
+      "project_id": "jp-local-220001-project-2025-medical-care-health-longevity",
+      "selection_basis": "第1巡: 政策「健康福祉」について、計画の掲載順で先頭の政策の柱「医療提供体制の確保・充実と健康寿命の延伸」を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-220001-project-series-medical-care-health-longevity",
+      "source_ids": [
+        "shizuoka-pref-comprehensive-plan-2025",
+        "shizuoka-pref-evaluation-fy2026-book"
+      ]
+    },
+    {
+      "division": "豊かな暮らし",
+      "official_title": "誰もが尊重し合える共生社会の実現",
+      "pillar_code": "Ⅱ-3-1",
+      "pillar_number": 1,
+      "policy": "暮らし・文化",
+      "policy_code": "Ⅱ-3",
+      "project_id": "jp-local-220001-project-2025-inclusive-society",
+      "selection_basis": "第1巡: 政策「暮らし・文化」について、計画の掲載順で先頭の政策の柱「誰もが尊重し合える共生社会の実現」を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-220001-project-series-inclusive-society",
+      "source_ids": [
+        "shizuoka-pref-comprehensive-plan-2025",
+        "shizuoka-pref-evaluation-fy2026-book"
+      ]
+    },
+    {
+      "division": "県民の安心",
+      "official_title": "防災・減災対策の推進",
+      "pillar_code": "Ⅲ-1-1",
+      "pillar_number": 1,
+      "policy": "防災・安全",
+      "policy_code": "Ⅲ-1",
+      "project_id": "jp-local-220001-project-2025-disaster-prevention-mitigation",
+      "selection_basis": "第1巡: 政策「防災・安全」について、計画の掲載順で先頭の政策の柱「防災・減災対策の推進」を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-220001-project-series-disaster-prevention-mitigation",
+      "source_ids": [
+        "shizuoka-pref-comprehensive-plan-2025",
+        "shizuoka-pref-evaluation-fy2026-book"
+      ]
+    },
+    {
+      "division": "行政経営",
+      "official_title": "徹底した行財政改革の推進",
+      "pillar_code": "行政経営",
+      "pillar_number": 1,
+      "policy": "行政経営",
+      "policy_code": "行政経営",
+      "project_id": "jp-local-220001-project-2025-administrative-fiscal-reform",
+      "selection_basis": "第1巡: 政策「行政経営」について、計画の掲載順で先頭の政策の柱「徹底した行財政改革の推進」を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-220001-project-series-administrative-fiscal-reform",
+      "source_ids": [
+        "shizuoka-pref-comprehensive-plan-2025",
+        "shizuoka-pref-evaluation-fy2026-book"
+      ]
+    },
+    {
+      "division": "未来を創る力",
+      "official_title": "県内中小企業の競争力強化と成長支援",
+      "pillar_code": "Ⅰ-1-2",
+      "pillar_number": 2,
+      "policy": "産業",
+      "policy_code": "Ⅰ-1",
+      "project_id": "jp-local-220001-project-2025-sme-competitiveness-growth",
+      "selection_basis": "第2巡: 政策「産業」について、計画の掲載順で第2の政策の柱「県内中小企業の競争力強化と成長支援」を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-220001-project-series-sme-competitiveness-growth",
+      "source_ids": [
+        "shizuoka-pref-comprehensive-plan-2025",
+        "shizuoka-pref-evaluation-fy2026-book"
+      ]
+    },
+    {
+      "division": "未来を創る力",
+      "official_title": "循環型社会の構築",
+      "pillar_code": "Ⅰ-2-2",
+      "pillar_number": 2,
+      "policy": "環境・エネルギー",
+      "policy_code": "Ⅰ-2",
+      "project_id": "jp-local-220001-project-2025-circular-society",
+      "selection_basis": "第2巡: 政策「環境・エネルギー」について、計画の掲載順で第2の政策の柱「循環型社会の構築」を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-220001-project-series-circular-society",
+      "source_ids": [
+        "shizuoka-pref-comprehensive-plan-2025",
+        "shizuoka-pref-evaluation-fy2026-book"
+      ]
+    }
+  ]
+}

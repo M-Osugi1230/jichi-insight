@@ -1,0 +1,922 @@
+[
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "総合計画の政策体系、令和8年度評価書の政策の柱ごとの評価",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-comprehensive-plan-2025",
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "本登録の単位は、「静岡県総合計画～しずおか ウェルビーイングプラン～」の政策の柱（中柱）である。県は毎年度の総合計画評価書で、政策の柱ごとに成果指標（基準値・現状値・目標値・評価区分）と主な取組・今後の方向性を公表しており、この公表単位を登録単位とした。政策（大柱）は上位区分として parent_policy に、政策区分は選定カタログに記録する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "令和8年度評価書の政策の柱「Ⅰ-1-1」の見出し",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "政策の柱名は「イノベーションの創出と次世代産業の振興」であり、政策区分「未来を創る力」の政策「産業」（Ⅰ-1）の下に置かれる。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "総合計画の政策体系と本登録の選定カタログ",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-comprehensive-plan-2025",
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "第1巡: 政策「産業」について、計画の掲載順で先頭の政策の柱「イノベーションの創出と次世代産業の振興」を選定した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "令和8年度評価書の政策の柱「Ⅰ-1-1」冒頭の◎文",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "政策の柱の目的は、令和8年度評価書の当該政策の柱の冒頭に示された説明文（◎）に基づく。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "令和8年度評価書の政策の柱「Ⅰ-1-1」の担当部局欄",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "担当部局は、令和8年度評価書に「経済産業部」と記載されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "令和8年度評価書、総合計画",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-comprehensive-plan-2025",
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "静岡県は政策の柱単位の令和7年度予算額・決算額を公表していない。令和8年度評価書は政策の柱ごとに成果指標の評価と主な取組の状況を示すが、金額の掲載はなく、総合計画にも政策の柱単位の金額はない。このため金額は未登録とした（0では補完しない）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和8年度評価書の評価方針・総括評価",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "県は政策の柱単位の評定（順調等の総括的な評価）を公表していない。公式の評価は成果指標ごとの評価区分（推移目標は進捗率によるA～D、維持目標は目標値との比較によるA～D、実績値が未公表の場合は「－」）であり、各指標の評価はKPIの assessment に換算して登録した。このため official_evaluation は登録しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "令和8年度評価書の政策の柱「Ⅰ-1-1」の成果指標表",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "成果指標は評価書の成果指標表に掲載された3件を全て登録した。基準値・現状値・目標値は評価書の表記のまま（単位の換算を行った場合は各KPIの definition に明記）とし、現状値が未公表の指標は値を登録せず、公表予定を definition に記録した。"
+      }
+    ],
+    "id": "evidence-jp-local-220001-project-2025-innovation-next-generation-industry",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-220001-project-2025-innovation-next-generation-industry",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "総合計画の政策体系、令和8年度評価書の政策の柱ごとの評価",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-comprehensive-plan-2025",
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "本登録の単位は、「静岡県総合計画～しずおか ウェルビーイングプラン～」の政策の柱（中柱）である。県は毎年度の総合計画評価書で、政策の柱ごとに成果指標（基準値・現状値・目標値・評価区分）と主な取組・今後の方向性を公表しており、この公表単位を登録単位とした。政策（大柱）は上位区分として parent_policy に、政策区分は選定カタログに記録する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "令和8年度評価書の政策の柱「Ⅰ-2-1」の見出し",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "政策の柱名は「脱炭素社会の構築」であり、政策区分「未来を創る力」の政策「環境・エネルギー」（Ⅰ-2）の下に置かれる。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "総合計画の政策体系と本登録の選定カタログ",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-comprehensive-plan-2025",
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "第1巡: 政策「環境・エネルギー」について、計画の掲載順で先頭の政策の柱「脱炭素社会の構築」を選定した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "令和8年度評価書の政策の柱「Ⅰ-2-1」冒頭の◎文",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "政策の柱の目的は、令和8年度評価書の当該政策の柱の冒頭に示された説明文（◎）に基づく。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "令和8年度評価書の政策の柱「Ⅰ-2-1」の担当部局欄",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "担当部局は、令和8年度評価書に「くらし・環境部、経済産業部」と記載されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "令和8年度評価書、総合計画",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-comprehensive-plan-2025",
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "静岡県は政策の柱単位の令和7年度予算額・決算額を公表していない。令和8年度評価書は政策の柱ごとに成果指標の評価と主な取組の状況を示すが、金額の掲載はなく、総合計画にも政策の柱単位の金額はない。このため金額は未登録とした（0では補完しない）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和8年度評価書の評価方針・総括評価",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "県は政策の柱単位の評定（順調等の総括的な評価）を公表していない。公式の評価は成果指標ごとの評価区分（推移目標は進捗率によるA～D、維持目標は目標値との比較によるA～D、実績値が未公表の場合は「－」）であり、各指標の評価はKPIの assessment に換算して登録した。このため official_evaluation は登録しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "令和8年度評価書の政策の柱「Ⅰ-2-1」の成果指標表",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "成果指標は評価書の成果指標表に掲載された3件を全て登録した。基準値・現状値・目標値は評価書の表記のまま（単位の換算を行った場合は各KPIの definition に明記）とし、現状値が未公表の指標は値を登録せず、公表予定を definition に記録した。"
+      }
+    ],
+    "id": "evidence-jp-local-220001-project-2025-decarbonized-society",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-220001-project-2025-decarbonized-society",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "総合計画の政策体系、令和8年度評価書の政策の柱ごとの評価",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-comprehensive-plan-2025",
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "本登録の単位は、「静岡県総合計画～しずおか ウェルビーイングプラン～」の政策の柱（中柱）である。県は毎年度の総合計画評価書で、政策の柱ごとに成果指標（基準値・現状値・目標値・評価区分）と主な取組・今後の方向性を公表しており、この公表単位を登録単位とした。政策（大柱）は上位区分として parent_policy に、政策区分は選定カタログに記録する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "令和8年度評価書の政策の柱「Ⅰ-3-1」の見出し",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "政策の柱名は「観光振興の推進」であり、政策区分「未来を創る力」の政策「観光・交流・インフラ」（Ⅰ-3）の下に置かれる。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "総合計画の政策体系と本登録の選定カタログ",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-comprehensive-plan-2025",
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "第1巡: 政策「観光・交流・インフラ」について、計画の掲載順で先頭の政策の柱「観光振興の推進」を選定した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "令和8年度評価書の政策の柱「Ⅰ-3-1」冒頭の◎文",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "政策の柱の目的は、令和8年度評価書の当該政策の柱の冒頭に示された説明文（◎）に基づく。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "令和8年度評価書の政策の柱「Ⅰ-3-1」の担当部局欄",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "担当部局は、令和8年度評価書に「スポーツ・文化観光部」と記載されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "令和8年度評価書、総合計画",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-comprehensive-plan-2025",
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "静岡県は政策の柱単位の令和7年度予算額・決算額を公表していない。令和8年度評価書は政策の柱ごとに成果指標の評価と主な取組の状況を示すが、金額の掲載はなく、総合計画にも政策の柱単位の金額はない。このため金額は未登録とした（0では補完しない）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和8年度評価書の評価方針・総括評価",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "県は政策の柱単位の評定（順調等の総括的な評価）を公表していない。公式の評価は成果指標ごとの評価区分（推移目標は進捗率によるA～D、維持目標は目標値との比較によるA～D、実績値が未公表の場合は「－」）であり、各指標の評価はKPIの assessment に換算して登録した。このため official_evaluation は登録しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "令和8年度評価書の政策の柱「Ⅰ-3-1」の成果指標表",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "成果指標は評価書の成果指標表に掲載された2件を全て登録した。基準値・現状値・目標値は評価書の表記のまま（単位の換算を行った場合は各KPIの definition に明記）とし、現状値が未公表の指標は値を登録せず、公表予定を definition に記録した。"
+      }
+    ],
+    "id": "evidence-jp-local-220001-project-2025-tourism-promotion",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-220001-project-2025-tourism-promotion",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "総合計画の政策体系、令和8年度評価書の政策の柱ごとの評価",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-comprehensive-plan-2025",
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "本登録の単位は、「静岡県総合計画～しずおか ウェルビーイングプラン～」の政策の柱（中柱）である。県は毎年度の総合計画評価書で、政策の柱ごとに成果指標（基準値・現状値・目標値・評価区分）と主な取組・今後の方向性を公表しており、この公表単位を登録単位とした。政策（大柱）は上位区分として parent_policy に、政策区分は選定カタログに記録する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "令和8年度評価書の政策の柱「Ⅱ-1-1」の見出し",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "政策の柱名は「こどもまんなか社会の実現」であり、政策区分「豊かな暮らし」の政策「こども・教育」（Ⅱ-1）の下に置かれる。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "総合計画の政策体系と本登録の選定カタログ",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-comprehensive-plan-2025",
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "第1巡: 政策「こども・教育」について、計画の掲載順で先頭の政策の柱「こどもまんなか社会の実現」を選定した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "令和8年度評価書の政策の柱「Ⅱ-1-1」冒頭の◎文",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "政策の柱の目的は、令和8年度評価書の当該政策の柱の冒頭に示された説明文（◎）に基づく。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "令和8年度評価書の政策の柱「Ⅱ-1-1」の担当部局欄",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "担当部局は、令和8年度評価書に「健康福祉部」と記載されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "令和8年度評価書、総合計画",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-comprehensive-plan-2025",
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "静岡県は政策の柱単位の令和7年度予算額・決算額を公表していない。令和8年度評価書は政策の柱ごとに成果指標の評価と主な取組の状況を示すが、金額の掲載はなく、総合計画にも政策の柱単位の金額はない。このため金額は未登録とした（0では補完しない）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和8年度評価書の評価方針・総括評価",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "県は政策の柱単位の評定（順調等の総括的な評価）を公表していない。公式の評価は成果指標ごとの評価区分（推移目標は進捗率によるA～D、維持目標は目標値との比較によるA～D、実績値が未公表の場合は「－」）であり、各指標の評価はKPIの assessment に換算して登録した。このため official_evaluation は登録しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "令和8年度評価書の政策の柱「Ⅱ-1-1」の成果指標表",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "成果指標は評価書の成果指標表に掲載された8件を全て登録した。基準値・現状値・目標値は評価書の表記のまま（単位の換算を行った場合は各KPIの definition に明記）とし、現状値が未公表の指標は値を登録せず、公表予定を definition に記録した。"
+      }
+    ],
+    "id": "evidence-jp-local-220001-project-2025-child-centered-society",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-220001-project-2025-child-centered-society",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "総合計画の政策体系、令和8年度評価書の政策の柱ごとの評価",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-comprehensive-plan-2025",
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "本登録の単位は、「静岡県総合計画～しずおか ウェルビーイングプラン～」の政策の柱（中柱）である。県は毎年度の総合計画評価書で、政策の柱ごとに成果指標（基準値・現状値・目標値・評価区分）と主な取組・今後の方向性を公表しており、この公表単位を登録単位とした。政策（大柱）は上位区分として parent_policy に、政策区分は選定カタログに記録する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "令和8年度評価書の政策の柱「Ⅱ-2-1」の見出し",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "政策の柱名は「医療提供体制の確保・充実と健康寿命の延伸」であり、政策区分「豊かな暮らし」の政策「健康福祉」（Ⅱ-2）の下に置かれる。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "総合計画の政策体系と本登録の選定カタログ",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-comprehensive-plan-2025",
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "第1巡: 政策「健康福祉」について、計画の掲載順で先頭の政策の柱「医療提供体制の確保・充実と健康寿命の延伸」を選定した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "令和8年度評価書の政策の柱「Ⅱ-2-1」冒頭の◎文",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "政策の柱の目的は、令和8年度評価書の当該政策の柱の冒頭に示された説明文（◎）に基づく。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "令和8年度評価書の政策の柱「Ⅱ-2-1」の担当部局欄",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "担当部局は、令和8年度評価書に「健康福祉部、がんセンター局」と記載されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "令和8年度評価書、総合計画",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-comprehensive-plan-2025",
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "静岡県は政策の柱単位の令和7年度予算額・決算額を公表していない。令和8年度評価書は政策の柱ごとに成果指標の評価と主な取組の状況を示すが、金額の掲載はなく、総合計画にも政策の柱単位の金額はない。このため金額は未登録とした（0では補完しない）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和8年度評価書の評価方針・総括評価",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "県は政策の柱単位の評定（順調等の総括的な評価）を公表していない。公式の評価は成果指標ごとの評価区分（推移目標は進捗率によるA～D、維持目標は目標値との比較によるA～D、実績値が未公表の場合は「－」）であり、各指標の評価はKPIの assessment に換算して登録した。このため official_evaluation は登録しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "令和8年度評価書の政策の柱「Ⅱ-2-1」の成果指標表",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "成果指標は評価書の成果指標表に掲載された9件を全て登録した。基準値・現状値・目標値は評価書の表記のまま（単位の換算を行った場合は各KPIの definition に明記）とし、現状値が未公表の指標は値を登録せず、公表予定を definition に記録した。"
+      }
+    ],
+    "id": "evidence-jp-local-220001-project-2025-medical-care-health-longevity",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-220001-project-2025-medical-care-health-longevity",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "総合計画の政策体系、令和8年度評価書の政策の柱ごとの評価",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-comprehensive-plan-2025",
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "本登録の単位は、「静岡県総合計画～しずおか ウェルビーイングプラン～」の政策の柱（中柱）である。県は毎年度の総合計画評価書で、政策の柱ごとに成果指標（基準値・現状値・目標値・評価区分）と主な取組・今後の方向性を公表しており、この公表単位を登録単位とした。政策（大柱）は上位区分として parent_policy に、政策区分は選定カタログに記録する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "令和8年度評価書の政策の柱「Ⅱ-3-1」の見出し",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "政策の柱名は「誰もが尊重し合える共生社会の実現」であり、政策区分「豊かな暮らし」の政策「暮らし・文化」（Ⅱ-3）の下に置かれる。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "総合計画の政策体系と本登録の選定カタログ",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-comprehensive-plan-2025",
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "第1巡: 政策「暮らし・文化」について、計画の掲載順で先頭の政策の柱「誰もが尊重し合える共生社会の実現」を選定した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "令和8年度評価書の政策の柱「Ⅱ-3-1」冒頭の◎文",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "政策の柱の目的は、令和8年度評価書の当該政策の柱の冒頭に示された説明文（◎）に基づく。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "令和8年度評価書の政策の柱「Ⅱ-3-1」の担当部局欄",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "担当部局は、令和8年度評価書に「企画部、くらし・環境部、健康福祉部、教育委員会」と記載されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "令和8年度評価書、総合計画",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-comprehensive-plan-2025",
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "静岡県は政策の柱単位の令和7年度予算額・決算額を公表していない。令和8年度評価書は政策の柱ごとに成果指標の評価と主な取組の状況を示すが、金額の掲載はなく、総合計画にも政策の柱単位の金額はない。このため金額は未登録とした（0では補完しない）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和8年度評価書の評価方針・総括評価",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "県は政策の柱単位の評定（順調等の総括的な評価）を公表していない。公式の評価は成果指標ごとの評価区分（推移目標は進捗率によるA～D、維持目標は目標値との比較によるA～D、実績値が未公表の場合は「－」）であり、各指標の評価はKPIの assessment に換算して登録した。このため official_evaluation は登録しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "令和8年度評価書の政策の柱「Ⅱ-3-1」の成果指標表",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "成果指標は評価書の成果指標表に掲載された4件を全て登録した。基準値・現状値・目標値は評価書の表記のまま（単位の換算を行った場合は各KPIの definition に明記）とし、現状値が未公表の指標は値を登録せず、公表予定を definition に記録した。"
+      }
+    ],
+    "id": "evidence-jp-local-220001-project-2025-inclusive-society",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-220001-project-2025-inclusive-society",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "総合計画の政策体系、令和8年度評価書の政策の柱ごとの評価",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-comprehensive-plan-2025",
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "本登録の単位は、「静岡県総合計画～しずおか ウェルビーイングプラン～」の政策の柱（中柱）である。県は毎年度の総合計画評価書で、政策の柱ごとに成果指標（基準値・現状値・目標値・評価区分）と主な取組・今後の方向性を公表しており、この公表単位を登録単位とした。政策（大柱）は上位区分として parent_policy に、政策区分は選定カタログに記録する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "令和8年度評価書の政策の柱「Ⅲ-1-1」の見出し",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "政策の柱名は「防災・減災対策の推進」であり、政策区分「県民の安心」の政策「防災・安全」（Ⅲ-1）の下に置かれる。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "総合計画の政策体系と本登録の選定カタログ",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-comprehensive-plan-2025",
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "第1巡: 政策「防災・安全」について、計画の掲載順で先頭の政策の柱「防災・減災対策の推進」を選定した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "令和8年度評価書の政策の柱「Ⅲ-1-1」冒頭の◎文",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "政策の柱の目的は、令和8年度評価書の当該政策の柱の冒頭に示された説明文（◎）に基づく。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "令和8年度評価書の政策の柱「Ⅲ-1-1」の担当部局欄",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "担当部局は、令和8年度評価書に「総務部、危機管理部、くらし・環境部、健康福祉部、交通基盤部」と記載されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "令和8年度評価書、総合計画",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-comprehensive-plan-2025",
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "静岡県は政策の柱単位の令和7年度予算額・決算額を公表していない。令和8年度評価書は政策の柱ごとに成果指標の評価と主な取組の状況を示すが、金額の掲載はなく、総合計画にも政策の柱単位の金額はない。このため金額は未登録とした（0では補完しない）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和8年度評価書の評価方針・総括評価",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "県は政策の柱単位の評定（順調等の総括的な評価）を公表していない。公式の評価は成果指標ごとの評価区分（推移目標は進捗率によるA～D、維持目標は目標値との比較によるA～D、実績値が未公表の場合は「－」）であり、各指標の評価はKPIの assessment に換算して登録した。このため official_evaluation は登録しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "令和8年度評価書の政策の柱「Ⅲ-1-1」の成果指標表",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "成果指標は評価書の成果指標表に掲載された6件を全て登録した。基準値・現状値・目標値は評価書の表記のまま（単位の換算を行った場合は各KPIの definition に明記）とし、現状値が未公表の指標は値を登録せず、公表予定を definition に記録した。"
+      }
+    ],
+    "id": "evidence-jp-local-220001-project-2025-disaster-prevention-mitigation",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-220001-project-2025-disaster-prevention-mitigation",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "総合計画の政策体系、令和8年度評価書の政策の柱ごとの評価",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-comprehensive-plan-2025",
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "本登録の単位は、「静岡県総合計画～しずおか ウェルビーイングプラン～」の政策の柱（中柱）である。県は毎年度の総合計画評価書で、政策の柱ごとに成果指標（基準値・現状値・目標値・評価区分）と主な取組・今後の方向性を公表しており、この公表単位を登録単位とした。政策（大柱）は上位区分として parent_policy に、政策区分は選定カタログに記録する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "令和8年度評価書の政策の柱「行政経営」の見出し",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "政策の柱名は「徹底した行財政改革の推進」であり、政策区分「行政経営」の政策「行政経営」（行政経営）の下に置かれる。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "総合計画の政策体系と本登録の選定カタログ",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-comprehensive-plan-2025",
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "第1巡: 政策「行政経営」について、計画の掲載順で先頭の政策の柱「徹底した行財政改革の推進」を選定した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "令和8年度評価書の政策の柱「行政経営」冒頭の◎文",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "政策の柱の目的は、令和8年度評価書の当該政策の柱の冒頭に示された説明文（◎）に基づく。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "令和8年度評価書の政策の柱「行政経営」の担当部局欄",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "担当部局は、令和8年度評価書に「企画部、総務部、財務部」と記載されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "令和8年度評価書、総合計画",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-comprehensive-plan-2025",
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "静岡県は政策の柱単位の令和7年度予算額・決算額を公表していない。令和8年度評価書は政策の柱ごとに成果指標の評価と主な取組の状況を示すが、金額の掲載はなく、総合計画にも政策の柱単位の金額はない。このため金額は未登録とした（0では補完しない）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和8年度評価書の評価方針・総括評価",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "県は政策の柱単位の評定（順調等の総括的な評価）を公表していない。公式の評価は成果指標ごとの評価区分（推移目標は進捗率によるA～D、維持目標は目標値との比較によるA～D、実績値が未公表の場合は「－」）であり、各指標の評価はKPIの assessment に換算して登録した。このため official_evaluation は登録しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "令和8年度評価書の政策の柱「行政経営」の成果指標表",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "成果指標は評価書の成果指標表に掲載された4件を全て登録した。基準値・現状値・目標値は評価書の表記のまま（単位の換算を行った場合は各KPIの definition に明記）とし、現状値が未公表の指標は値を登録せず、公表予定を definition に記録した。"
+      }
+    ],
+    "id": "evidence-jp-local-220001-project-2025-administrative-fiscal-reform",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-220001-project-2025-administrative-fiscal-reform",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "総合計画の政策体系、令和8年度評価書の政策の柱ごとの評価",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-comprehensive-plan-2025",
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "本登録の単位は、「静岡県総合計画～しずおか ウェルビーイングプラン～」の政策の柱（中柱）である。県は毎年度の総合計画評価書で、政策の柱ごとに成果指標（基準値・現状値・目標値・評価区分）と主な取組・今後の方向性を公表しており、この公表単位を登録単位とした。政策（大柱）は上位区分として parent_policy に、政策区分は選定カタログに記録する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "令和8年度評価書の政策の柱「Ⅰ-1-2」の見出し",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "政策の柱名は「県内中小企業の競争力強化と成長支援」であり、政策区分「未来を創る力」の政策「産業」（Ⅰ-1）の下に置かれる。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "総合計画の政策体系と本登録の選定カタログ",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-comprehensive-plan-2025",
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "第2巡: 政策「産業」について、計画の掲載順で第2の政策の柱「県内中小企業の競争力強化と成長支援」を選定した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "令和8年度評価書の政策の柱「Ⅰ-1-2」冒頭の◎文",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "政策の柱の目的は、令和8年度評価書の当該政策の柱の冒頭に示された説明文（◎）に基づく。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "令和8年度評価書の政策の柱「Ⅰ-1-2」の担当部局欄",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "担当部局は、令和8年度評価書に「経済産業部」と記載されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "令和8年度評価書、総合計画",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-comprehensive-plan-2025",
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "静岡県は政策の柱単位の令和7年度予算額・決算額を公表していない。令和8年度評価書は政策の柱ごとに成果指標の評価と主な取組の状況を示すが、金額の掲載はなく、総合計画にも政策の柱単位の金額はない。このため金額は未登録とした（0では補完しない）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和8年度評価書の評価方針・総括評価",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "県は政策の柱単位の評定（順調等の総括的な評価）を公表していない。公式の評価は成果指標ごとの評価区分（推移目標は進捗率によるA～D、維持目標は目標値との比較によるA～D、実績値が未公表の場合は「－」）であり、各指標の評価はKPIの assessment に換算して登録した。このため official_evaluation は登録しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "令和8年度評価書の政策の柱「Ⅰ-1-2」の成果指標表",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "成果指標は評価書の成果指標表に掲載された5件を全て登録した。基準値・現状値・目標値は評価書の表記のまま（単位の換算を行った場合は各KPIの definition に明記）とし、現状値が未公表の指標は値を登録せず、公表予定を definition に記録した。"
+      }
+    ],
+    "id": "evidence-jp-local-220001-project-2025-sme-competitiveness-growth",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-220001-project-2025-sme-competitiveness-growth",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "総合計画の政策体系、令和8年度評価書の政策の柱ごとの評価",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-comprehensive-plan-2025",
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "本登録の単位は、「静岡県総合計画～しずおか ウェルビーイングプラン～」の政策の柱（中柱）である。県は毎年度の総合計画評価書で、政策の柱ごとに成果指標（基準値・現状値・目標値・評価区分）と主な取組・今後の方向性を公表しており、この公表単位を登録単位とした。政策（大柱）は上位区分として parent_policy に、政策区分は選定カタログに記録する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "令和8年度評価書の政策の柱「Ⅰ-2-2」の見出し",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "政策の柱名は「循環型社会の構築」であり、政策区分「未来を創る力」の政策「環境・エネルギー」（Ⅰ-2）の下に置かれる。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "総合計画の政策体系と本登録の選定カタログ",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-comprehensive-plan-2025",
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "第2巡: 政策「環境・エネルギー」について、計画の掲載順で第2の政策の柱「循環型社会の構築」を選定した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "令和8年度評価書の政策の柱「Ⅰ-2-2」冒頭の◎文",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "政策の柱の目的は、令和8年度評価書の当該政策の柱の冒頭に示された説明文（◎）に基づく。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "令和8年度評価書の政策の柱「Ⅰ-2-2」の担当部局欄",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "担当部局は、令和8年度評価書に「総務部、くらし・環境部」と記載されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "令和8年度評価書、総合計画",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-comprehensive-plan-2025",
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "静岡県は政策の柱単位の令和7年度予算額・決算額を公表していない。令和8年度評価書は政策の柱ごとに成果指標の評価と主な取組の状況を示すが、金額の掲載はなく、総合計画にも政策の柱単位の金額はない。このため金額は未登録とした（0では補完しない）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和8年度評価書の評価方針・総括評価",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "県は政策の柱単位の評定（順調等の総括的な評価）を公表していない。公式の評価は成果指標ごとの評価区分（推移目標は進捗率によるA～D、維持目標は目標値との比較によるA～D、実績値が未公表の場合は「－」）であり、各指標の評価はKPIの assessment に換算して登録した。このため official_evaluation は登録しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "令和8年度評価書の政策の柱「Ⅰ-2-2」の成果指標表",
+        "review_note": null,
+        "source_ids": [
+          "shizuoka-pref-evaluation-fy2026-book"
+        ],
+        "statement": "成果指標は評価書の成果指標表に掲載された2件を全て登録した。基準値・現状値・目標値は評価書の表記のまま（単位の換算を行った場合は各KPIの definition に明記）とし、現状値が未公表の指標は値を登録せず、公表予定を definition に記録した。"
+      }
+    ],
+    "id": "evidence-jp-local-220001-project-2025-circular-society",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-220001-project-2025-circular-society",
+    "subject_type": "project"
+  }
+]
