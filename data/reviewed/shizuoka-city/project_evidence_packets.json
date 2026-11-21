@@ -1,0 +1,982 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "実施計画「第1 分野別の政策」冒頭（計画書 - 4 -）の記載方法の説明（施策ごとの成果指標と評価・検証、取組の事業費の記載方法）、基本計画第4章「分野別の政策」",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf",
+     "shizuoka-city-fifth-basic-plan-pdf"
+    ],
+    "statement": "本登録の単位は、第5次静岡市総合計画実施計画（2026〜2030年度）の体系における「施策」（9分野→45政策→101施策）とした。実施計画は、施策ごとに成果指標（KPI）を設定し、数値目標の達成状況を把握しながら評価・検証を行う仕組みを明記しており、KPIと評価・検証の単位が施策である。金額は取組単位にのみ登載され（2026〜2030年度の5年間の計、投資的経費のみ、ソフトの取組は「―」）、施策単位の金額は公表されない。また取組は複数の分野・政策・施策に位置付けられるもの（★印）が多数あり、取組単位で登録すると同一取組が複数の系列に重複する。以上から、計画の構造と進行管理の単位に照らして施策を登録単位とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施計画PDF p.12（計画書 - 8 -）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf",
+     "shizuoka-city-fifth-basic-plan-pdf"
+    ],
+    "statement": "施策名は「地域コミュニティの中核である自治会・町内会における誰もが参加しやすい組織づくりを下支えし、住民同士のつながりを強化します」。実施計画の分野「共生・福祉・健康」の政策1・施策1の見出しであり、基本計画の政策体系図にも同じ文言を確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "実施計画PDF p.12（計画書 - 8 -）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf",
+     "shizuoka-city-fifth-basic-plan-pdf"
+    ],
+    "statement": "本登録のparent_policyには、施策を直接束ねる政策として「（地域活動・市民活動）地域社会のつながりを深め、市民が支え合うまちにします」を用いた。分野「共生・福祉・健康」の政策1であり、基本計画・実施計画の政策体系図の表記どおりである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施計画PDF p.12（計画書 - 8 -）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "実施計画の「施策の実現に向けての課題」欄の記述と、「課題解決のための取組」表に掲載された取組8件の名称（計画書の表記どおり、★印を含む）を転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "実施計画PDF p.12（計画書 - 8 -）「■施策のKPI（アウトカム）」表",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "本施策の成果指標（アウトカム）は3件登録した（計画書の表が対象区分を分けて値を掲げる指標は区分ごとに登録した）。現状値と2030年の目標値は実施計画の「施策のKPI（アウトカム）」表の印字どおりであり、実績値は計画初年度のため公表されておらず、達成度の判定（assessment）はnot_assessableとした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "実施計画PDF p.12（計画書 - 8 -）「■課題解決のための取組」表（担当課は取組単位の掲載）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "実施計画は取組単位に担当課を掲載するが、施策単位の所管課は掲載されていないため、responsible_departmentは未登録（null）とした。取組ごとの担当課は実施計画の各施策の取組表に掲載されている。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.initial_budget",
+    "location_note": "実施計画「第1 分野別の政策」冒頭（計画書 - 4 -）の事業費の記載方法の説明、実施計画PDF p.12（計画書 - 8 -）「■課題解決のための取組」表",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "静岡市は施策単位の金額を公表していない。実施計画は取組単位に2026年度から2030年度の5年間の事業費の計（百万円単位、百万円未満切り上げ）を登載するが、これは期間中の投資的経費を中長期的な展望で示すもので、ソフトの取組など投資的経費に属さないものは金額を明示せず「―」と表示される。取組の5年合計を合算して施策の金額とすることは市の公表値ではないため行わない。市の当初予算資料も会計別・款項別の集計であり、施策単位の令和8年度当初予算額は確認できないため、未登録とした（0では補完しない）。本施策では取組は8件で、金額が示されるのは「集会所建設費等に対する助成」の139百万円のみであり、他の7件は「―」（金額明示なし）である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "実施計画「第1 分野別の政策」冒頭（計画書 - 4 -）の評価・検証の仕組みの説明",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "2026年度が第5次静岡市総合計画の初年度であり、施策の評価・検証の結果は公表されていない。実施計画は、施策ごとに成果指標を設定し、数値目標の達成状況を把握しながら評価・検証を行い、その結果を踏まえて取組内容を見直す仕組みを定めているが、初年度の実績・評価はまだ公表されていないため、公式評価は未登録（null）とした。"
+   }
+  ],
+  "id": "evidence-jp-local-221007-project-2026-community-association-support",
+  "open_questions": [
+   "金額は未登録。施策単位の金額を掲載した公式資料は確認できていない（実施計画の金額は取組単位の2026〜2030年度の5年間の計のみで、ソフトの取組は「―」）。公表され次第、更新サイクルで登録する。",
+   "公式評価は未登録。2026年度が第5次静岡市総合計画の初年度であり、施策の評価・検証の結果は公表されていない。公表され次第、更新サイクル（#706）で登録する。",
+   "KPIの実績値は未公表である。評価・検証の公表に合わせて更新サイクルで登録する。",
+   "首長公約との接続は静岡クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と施策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-221007-project-2026-community-association-support",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "実施計画「第1 分野別の政策」冒頭（計画書 - 4 -）の記載方法の説明（施策ごとの成果指標と評価・検証、取組の事業費の記載方法）、基本計画第4章「分野別の政策」",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf",
+     "shizuoka-city-fifth-basic-plan-pdf"
+    ],
+    "statement": "本登録の単位は、第5次静岡市総合計画実施計画（2026〜2030年度）の体系における「施策」（9分野→45政策→101施策）とした。実施計画は、施策ごとに成果指標（KPI）を設定し、数値目標の達成状況を把握しながら評価・検証を行う仕組みを明記しており、KPIと評価・検証の単位が施策である。金額は取組単位にのみ登載され（2026〜2030年度の5年間の計、投資的経費のみ、ソフトの取組は「―」）、施策単位の金額は公表されない。また取組は複数の分野・政策・施策に位置付けられるもの（★印）が多数あり、取組単位で登録すると同一取組が複数の系列に重複する。以上から、計画の構造と進行管理の単位に照らして施策を登録単位とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施計画PDF p.30-31（計画書 - 26 - 〜 - 27 -）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf",
+     "shizuoka-city-fifth-basic-plan-pdf"
+    ],
+    "statement": "施策名は「被害の最小化と早期の復旧・復興が可能となる社会基盤を整備します」。実施計画の分野「防災・消防・防犯」の政策1・施策1の見出しであり、基本計画の政策体系図にも同じ文言を確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "実施計画PDF p.30-31（計画書 - 26 - 〜 - 27 -）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf",
+     "shizuoka-city-fifth-basic-plan-pdf"
+    ],
+    "statement": "本登録のparent_policyには、施策を直接束ねる政策として「（防災・減災）<事前防災>社会基盤が整備された自然災害に強いまちにします」を用いた。分野「防災・消防・防犯」の政策1であり、基本計画・実施計画の政策体系図の表記どおりである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施計画PDF p.30-31（計画書 - 26 - 〜 - 27 -）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "実施計画の「施策の実現に向けての課題」欄の記述と、「課題解決のための取組」表に掲載された取組22件の名称（計画書の表記どおり、★印を含む）を転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "実施計画PDF p.30-31（計画書 - 26 - 〜 - 27 -）「■施策のKPI（アウトカム）」表",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "本施策の成果指標（アウトカム）は4件登録した（計画書の表が対象区分を分けて値を掲げる指標は区分ごとに登録した）。現状値と2030年の目標値は実施計画の「施策のKPI（アウトカム）」表の印字どおりであり、実績値は計画初年度のため公表されておらず、達成度の判定（assessment）はnot_assessableとした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "実施計画PDF p.30-31（計画書 - 26 - 〜 - 27 -）「■課題解決のための取組」表（担当課は取組単位の掲載）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "実施計画は取組単位に担当課を掲載するが、施策単位の所管課は掲載されていないため、responsible_departmentは未登録（null）とした。取組ごとの担当課は実施計画の各施策の取組表に掲載されている。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.initial_budget",
+    "location_note": "実施計画「第1 分野別の政策」冒頭（計画書 - 4 -）の事業費の記載方法の説明、実施計画PDF p.30-31（計画書 - 26 - 〜 - 27 -）「■課題解決のための取組」表",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "静岡市は施策単位の金額を公表していない。実施計画は取組単位に2026年度から2030年度の5年間の事業費の計（百万円単位、百万円未満切り上げ）を登載するが、これは期間中の投資的経費を中長期的な展望で示すもので、ソフトの取組など投資的経費に属さないものは金額を明示せず「―」と表示される。取組の5年合計を合算して施策の金額とすることは市の公表値ではないため行わない。市の当初予算資料も会計別・款項別の集計であり、施策単位の令和8年度当初予算額は確認できないため、未登録とした（0では補完しない）。本施策では取組は22件で、金額が示されるのは16件（津波避難ビル整備事業費補助金の交付50百万円、清水庁舎の整備16,083百万円、水道の地震対策の実施33,644百万円、下水道の地震・津波対策の実施19,475百万円など）であり、他の6件は「―」（金額明示なし）である。★印の取組は複数の分野・政策・施策に位置付けられるものである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "実施計画「第1 分野別の政策」冒頭（計画書 - 4 -）の評価・検証の仕組みの説明",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "2026年度が第5次静岡市総合計画の初年度であり、施策の評価・検証の結果は公表されていない。実施計画は、施策ごとに成果指標を設定し、数値目標の達成状況を把握しながら評価・検証を行い、その結果を踏まえて取組内容を見直す仕組みを定めているが、初年度の実績・評価はまだ公表されていないため、公式評価は未登録（null）とした。"
+   }
+  ],
+  "id": "evidence-jp-local-221007-project-2026-disaster-resilient-infrastructure",
+  "open_questions": [
+   "金額は未登録。施策単位の金額を掲載した公式資料は確認できていない（実施計画の金額は取組単位の2026〜2030年度の5年間の計のみで、ソフトの取組は「―」）。公表され次第、更新サイクルで登録する。",
+   "公式評価は未登録。2026年度が第5次静岡市総合計画の初年度であり、施策の評価・検証の結果は公表されていない。公表され次第、更新サイクル（#706）で登録する。",
+   "KPIの実績値は未公表である。評価・検証の公表に合わせて更新サイクルで登録する。",
+   "首長公約との接続は静岡クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と施策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-221007-project-2026-disaster-resilient-infrastructure",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "実施計画「第1 分野別の政策」冒頭（計画書 - 4 -）の記載方法の説明（施策ごとの成果指標と評価・検証、取組の事業費の記載方法）、基本計画第4章「分野別の政策」",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf",
+     "shizuoka-city-fifth-basic-plan-pdf"
+    ],
+    "statement": "本登録の単位は、第5次静岡市総合計画実施計画（2026〜2030年度）の体系における「施策」（9分野→45政策→101施策）とした。実施計画は、施策ごとに成果指標（KPI）を設定し、数値目標の達成状況を把握しながら評価・検証を行う仕組みを明記しており、KPIと評価・検証の単位が施策である。金額は取組単位にのみ登載され（2026〜2030年度の5年間の計、投資的経費のみ、ソフトの取組は「―」）、施策単位の金額は公表されない。また取組は複数の分野・政策・施策に位置付けられるもの（★印）が多数あり、取組単位で登録すると同一取組が複数の系列に重複する。以上から、計画の構造と進行管理の単位に照らして施策を登録単位とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施計画PDF p.41-43（計画書 - 37 - 〜 - 39 -）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf",
+     "shizuoka-city-fifth-basic-plan-pdf"
+    ],
+    "statement": "施策名は「子育て当事者の負担を軽減し、仕事と子育てが両立できる環境を整備します」。実施計画の分野「こども・子育て」の政策1・施策1の見出しであり、基本計画の政策体系図にも同じ文言を確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "実施計画PDF p.41-43（計画書 - 37 - 〜 - 39 -）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf",
+     "shizuoka-city-fifth-basic-plan-pdf"
+    ],
+    "statement": "本登録のparent_policyには、施策を直接束ねる政策として「（子育て）子育てする誰もが、安心して子育てでき、こどもが健やかに成長できるまちにします」を用いた。分野「こども・子育て」の政策1であり、基本計画・実施計画の政策体系図の表記どおりである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施計画PDF p.41-43（計画書 - 37 - 〜 - 39 -）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "実施計画の「施策の実現に向けての課題」欄の記述と、「課題解決のための取組」表に掲載された取組25件の名称（計画書の表記どおり、★印を含む）を転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "実施計画PDF p.41-43（計画書 - 37 - 〜 - 39 -）「■施策のKPI（アウトカム）」表",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "本施策の成果指標（アウトカム）は4件登録した（計画書の表が対象区分を分けて値を掲げる指標は区分ごとに登録した）。現状値と2030年の目標値は実施計画の「施策のKPI（アウトカム）」表の印字どおりであり、実績値は計画初年度のため公表されておらず、達成度の判定（assessment）はnot_assessableとした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "実施計画PDF p.41-43（計画書 - 37 - 〜 - 39 -）「■課題解決のための取組」表（担当課は取組単位の掲載）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "実施計画は取組単位に担当課を掲載するが、施策単位の所管課は掲載されていないため、responsible_departmentは未登録（null）とした。取組ごとの担当課は実施計画の各施策の取組表に掲載されている。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.initial_budget",
+    "location_note": "実施計画「第1 分野別の政策」冒頭（計画書 - 4 -）の事業費の記載方法の説明、実施計画PDF p.41-43（計画書 - 37 - 〜 - 39 -）「■課題解決のための取組」表",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "静岡市は施策単位の金額を公表していない。実施計画は取組単位に2026年度から2030年度の5年間の事業費の計（百万円単位、百万円未満切り上げ）を登載するが、これは期間中の投資的経費を中長期的な展望で示すもので、ソフトの取組など投資的経費に属さないものは金額を明示せず「―」と表示される。取組の5年合計を合算して施策の金額とすることは市の公表値ではないため行わない。市の当初予算資料も会計別・款項別の集計であり、施策単位の令和8年度当初予算額は確認できないため、未登録とした（0では補完しない）。本施策では取組は25件で、金額が示されるのは5件（市立こども園の配置適正化の実施1,201百万円、私立認定こども園等の整備3,427百万円、市立こども園の改修1,392百万円、放課後児童クラブ室の整備41百万円、同改修23百万円）であり、他の20件は「―」（金額明示なし）である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "実施計画「第1 分野別の政策」冒頭（計画書 - 4 -）の評価・検証の仕組みの説明",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "2026年度が第5次静岡市総合計画の初年度であり、施策の評価・検証の結果は公表されていない。実施計画は、施策ごとに成果指標を設定し、数値目標の達成状況を把握しながら評価・検証を行い、その結果を踏まえて取組内容を見直す仕組みを定めているが、初年度の実績・評価はまだ公表されていないため、公式評価は未登録（null）とした。"
+   }
+  ],
+  "id": "evidence-jp-local-221007-project-2026-work-childcare-balance",
+  "open_questions": [
+   "金額は未登録。施策単位の金額を掲載した公式資料は確認できていない（実施計画の金額は取組単位の2026〜2030年度の5年間の計のみで、ソフトの取組は「―」）。公表され次第、更新サイクルで登録する。",
+   "公式評価は未登録。2026年度が第5次静岡市総合計画の初年度であり、施策の評価・検証の結果は公表されていない。公表され次第、更新サイクル（#706）で登録する。",
+   "KPIの実績値は未公表である。評価・検証の公表に合わせて更新サイクルで登録する。",
+   "首長公約との接続は静岡クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と施策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-221007-project-2026-work-childcare-balance",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "実施計画「第1 分野別の政策」冒頭（計画書 - 4 -）の記載方法の説明（施策ごとの成果指標と評価・検証、取組の事業費の記載方法）、基本計画第4章「分野別の政策」",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf",
+     "shizuoka-city-fifth-basic-plan-pdf"
+    ],
+    "statement": "本登録の単位は、第5次静岡市総合計画実施計画（2026〜2030年度）の体系における「施策」（9分野→45政策→101施策）とした。実施計画は、施策ごとに成果指標（KPI）を設定し、数値目標の達成状況を把握しながら評価・検証を行う仕組みを明記しており、KPIと評価・検証の単位が施策である。金額は取組単位にのみ登載され（2026〜2030年度の5年間の計、投資的経費のみ、ソフトの取組は「―」）、施策単位の金額は公表されない。また取組は複数の分野・政策・施策に位置付けられるもの（★印）が多数あり、取組単位で登録すると同一取組が複数の系列に重複する。以上から、計画の構造と進行管理の単位に照らして施策を登録単位とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施計画PDF p.56（計画書 - 52 -）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf",
+     "shizuoka-city-fifth-basic-plan-pdf"
+    ],
+    "statement": "施策名は「こどもが主体となり、一人ひとりに合った学習を進め学びに向かえるような学習環境を整えます」。実施計画の分野「教育・人づくり」の政策1・施策1の見出しであり、基本計画の政策体系図にも同じ文言を確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "実施計画PDF p.56（計画書 - 52 -）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf",
+     "shizuoka-city-fifth-basic-plan-pdf"
+    ],
+    "statement": "本登録のparent_policyには、施策を直接束ねる政策として「（学びの充実）こどもたちが、それぞれに最も適した学びに向かい、多様な仲間と関わりながら探究を深めることができるまちにします」を用いた。分野「教育・人づくり」の政策1であり、基本計画・実施計画の政策体系図の表記どおりである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施計画PDF p.56（計画書 - 52 -）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "実施計画の「施策の実現に向けての課題」欄の記述と、「課題解決のための取組」表に掲載された取組8件の名称（計画書の表記どおり、★印を含む）を転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "実施計画PDF p.56（計画書 - 52 -）「■施策のKPI（アウトカム）」表",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "本施策の成果指標（アウトカム）は4件登録した（計画書の表が対象区分を分けて値を掲げる指標は区分ごとに登録した）。現状値と2030年の目標値は実施計画の「施策のKPI（アウトカム）」表の印字どおりであり、実績値は計画初年度のため公表されておらず、達成度の判定（assessment）はnot_assessableとした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "実施計画PDF p.56（計画書 - 52 -）「■課題解決のための取組」表（担当課は取組単位の掲載）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "実施計画は取組単位に担当課を掲載するが、施策単位の所管課は掲載されていないため、responsible_departmentは未登録（null）とした。取組ごとの担当課は実施計画の各施策の取組表に掲載されている。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.initial_budget",
+    "location_note": "実施計画「第1 分野別の政策」冒頭（計画書 - 4 -）の事業費の記載方法の説明、実施計画PDF p.56（計画書 - 52 -）「■課題解決のための取組」表",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "静岡市は施策単位の金額を公表していない。実施計画は取組単位に2026年度から2030年度の5年間の事業費の計（百万円単位、百万円未満切り上げ）を登載するが、これは期間中の投資的経費を中長期的な展望で示すもので、ソフトの取組など投資的経費に属さないものは金額を明示せず「―」と表示される。取組の5年合計を合算して施策の金額とすることは市の公表値ではないため行わない。市の当初予算資料も会計別・款項別の集計であり、施策単位の令和8年度当初予算額は確認できないため、未登録とした（0では補完しない）。本施策では取組は8件で、全て「―」（金額明示なし）である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "実施計画「第1 分野別の政策」冒頭（計画書 - 4 -）の評価・検証の仕組みの説明",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "2026年度が第5次静岡市総合計画の初年度であり、施策の評価・検証の結果は公表されていない。実施計画は、施策ごとに成果指標を設定し、数値目標の達成状況を把握しながら評価・検証を行い、その結果を踏まえて取組内容を見直す仕組みを定めているが、初年度の実績・評価はまだ公表されていないため、公式評価は未登録（null）とした。"
+   }
+  ],
+  "id": "evidence-jp-local-221007-project-2026-personalized-learning-environment",
+  "open_questions": [
+   "金額は未登録。施策単位の金額を掲載した公式資料は確認できていない（実施計画の金額は取組単位の2026〜2030年度の5年間の計のみで、ソフトの取組は「―」）。公表され次第、更新サイクルで登録する。",
+   "公式評価は未登録。2026年度が第5次静岡市総合計画の初年度であり、施策の評価・検証の結果は公表されていない。公表され次第、更新サイクル（#706）で登録する。",
+   "KPIの実績値は未公表である。評価・検証の公表に合わせて更新サイクルで登録する。",
+   "首長公約との接続は静岡クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と施策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-221007-project-2026-personalized-learning-environment",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "実施計画「第1 分野別の政策」冒頭（計画書 - 4 -）の記載方法の説明（施策ごとの成果指標と評価・検証、取組の事業費の記載方法）、基本計画第4章「分野別の政策」",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf",
+     "shizuoka-city-fifth-basic-plan-pdf"
+    ],
+    "statement": "本登録の単位は、第5次静岡市総合計画実施計画（2026〜2030年度）の体系における「施策」（9分野→45政策→101施策）とした。実施計画は、施策ごとに成果指標（KPI）を設定し、数値目標の達成状況を把握しながら評価・検証を行う仕組みを明記しており、KPIと評価・検証の単位が施策である。金額は取組単位にのみ登載され（2026〜2030年度の5年間の計、投資的経費のみ、ソフトの取組は「―」）、施策単位の金額は公表されない。また取組は複数の分野・政策・施策に位置付けられるもの（★印）が多数あり、取組単位で登録すると同一取組が複数の系列に重複する。以上から、計画の構造と進行管理の単位に照らして施策を登録単位とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施計画PDF p.68（計画書 - 64 -）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf",
+     "shizuoka-city-fifth-basic-plan-pdf"
+    ],
+    "statement": "施策名は「農地として活用されない未利用・低利用農地の集約等により、企業用地を創出します」。実施計画の分野「経済・産業」の政策1・施策1の見出しであり、基本計画の政策体系図にも同じ文言を確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "実施計画PDF p.68（計画書 - 64 -）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf",
+     "shizuoka-city-fifth-basic-plan-pdf"
+    ],
+    "statement": "本登録のparent_policyには、施策を直接束ねる政策として「（企業誘致・留置）企業誘致・留置が促進され、地域の経済的活力が高まり、新たな働く場を得ることができるまちにします」を用いた。分野「経済・産業」の政策1であり、基本計画・実施計画の政策体系図の表記どおりである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施計画PDF p.68（計画書 - 64 -）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "実施計画の「施策の実現に向けての課題」欄の記述と、「課題解決のための取組」表に掲載された取組3件の名称（計画書の表記どおり、★印を含む）を転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "実施計画PDF p.68（計画書 - 64 -）「■施策のKPI（アウトカム）」表",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "本施策の成果指標（アウトカム）は1件登録した（計画書の表が対象区分を分けて値を掲げる指標は区分ごとに登録した）。現状値と2030年の目標値は実施計画の「施策のKPI（アウトカム）」表の印字どおりであり、実績値は計画初年度のため公表されておらず、達成度の判定（assessment）はnot_assessableとした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "実施計画PDF p.68（計画書 - 64 -）「■課題解決のための取組」表（担当課は取組単位の掲載）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "実施計画は取組単位に担当課を掲載するが、施策単位の所管課は掲載されていないため、responsible_departmentは未登録（null）とした。取組ごとの担当課は実施計画の各施策の取組表に掲載されている。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.initial_budget",
+    "location_note": "実施計画「第1 分野別の政策」冒頭（計画書 - 4 -）の事業費の記載方法の説明、実施計画PDF p.68（計画書 - 64 -）「■課題解決のための取組」表",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "静岡市は施策単位の金額を公表していない。実施計画は取組単位に2026年度から2030年度の5年間の事業費の計（百万円単位、百万円未満切り上げ）を登載するが、これは期間中の投資的経費を中長期的な展望で示すもので、ソフトの取組など投資的経費に属さないものは金額を明示せず「―」と表示される。取組の5年合計を合算して施策の金額とすることは市の公表値ではないため行わない。市の当初予算資料も会計別・款項別の集計であり、施策単位の令和8年度当初予算額は確認できないため、未登録とした（0では補完しない）。本施策では取組は3件で、全て「―」（金額明示なし）である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "実施計画「第1 分野別の政策」冒頭（計画書 - 4 -）の評価・検証の仕組みの説明",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "2026年度が第5次静岡市総合計画の初年度であり、施策の評価・検証の結果は公表されていない。実施計画は、施策ごとに成果指標を設定し、数値目標の達成状況を把握しながら評価・検証を行い、その結果を踏まえて取組内容を見直す仕組みを定めているが、初年度の実績・評価はまだ公表されていないため、公式評価は未登録（null）とした。"
+   }
+  ],
+  "id": "evidence-jp-local-221007-project-2026-corporate-site-development",
+  "open_questions": [
+   "金額は未登録。施策単位の金額を掲載した公式資料は確認できていない（実施計画の金額は取組単位の2026〜2030年度の5年間の計のみで、ソフトの取組は「―」）。公表され次第、更新サイクルで登録する。",
+   "公式評価は未登録。2026年度が第5次静岡市総合計画の初年度であり、施策の評価・検証の結果は公表されていない。公表され次第、更新サイクル（#706）で登録する。",
+   "KPIの実績値は未公表である。評価・検証の公表に合わせて更新サイクルで登録する。",
+   "首長公約との接続は静岡クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と施策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-221007-project-2026-corporate-site-development",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "実施計画「第1 分野別の政策」冒頭（計画書 - 4 -）の記載方法の説明（施策ごとの成果指標と評価・検証、取組の事業費の記載方法）、基本計画第4章「分野別の政策」",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf",
+     "shizuoka-city-fifth-basic-plan-pdf"
+    ],
+    "statement": "本登録の単位は、第5次静岡市総合計画実施計画（2026〜2030年度）の体系における「施策」（9分野→45政策→101施策）とした。実施計画は、施策ごとに成果指標（KPI）を設定し、数値目標の達成状況を把握しながら評価・検証を行う仕組みを明記しており、KPIと評価・検証の単位が施策である。金額は取組単位にのみ登載され（2026〜2030年度の5年間の計、投資的経費のみ、ソフトの取組は「―」）、施策単位の金額は公表されない。また取組は複数の分野・政策・施策に位置付けられるもの（★印）が多数あり、取組単位で登録すると同一取組が複数の系列に重複する。以上から、計画の構造と進行管理の単位に照らして施策を登録単位とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施計画PDF p.92-93（計画書 - 88 - 〜 - 89 -）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf",
+     "shizuoka-city-fifth-basic-plan-pdf"
+    ],
+    "statement": "施策名は「静岡市ならではの魅力を堪能できる食や体験などを充実させることで観光消費を増加させます」。実施計画の分野「観光・スポーツ・文化」の政策1・施策1の見出しであり、基本計画の政策体系図にも同じ文言を確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "実施計画PDF p.92-93（計画書 - 88 - 〜 - 89 -）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf",
+     "shizuoka-city-fifth-basic-plan-pdf"
+    ],
+    "statement": "本登録のparent_policyには、施策を直接束ねる政策として「（観光）市内の観光消費が拡大することによって所得の増加や魅力ある雇用が生み出されているまちにします」を用いた。分野「観光・スポーツ・文化」の政策1であり、基本計画・実施計画の政策体系図の表記どおりである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施計画PDF p.92-93（計画書 - 88 - 〜 - 89 -）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "実施計画の「施策の実現に向けての課題」欄の記述と、「課題解決のための取組」表に掲載された取組22件の名称（計画書の表記どおり、★印を含む）を転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "実施計画PDF p.92-93（計画書 - 88 - 〜 - 89 -）「■施策のKPI（アウトカム）」表",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "本施策の成果指標（アウトカム）は2件登録した（計画書の表が対象区分を分けて値を掲げる指標は区分ごとに登録した）。現状値と2030年の目標値は実施計画の「施策のKPI（アウトカム）」表の印字どおりであり、実績値は計画初年度のため公表されておらず、達成度の判定（assessment）はnot_assessableとした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "実施計画PDF p.92-93（計画書 - 88 - 〜 - 89 -）「■課題解決のための取組」表（担当課は取組単位の掲載）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "実施計画は取組単位に担当課を掲載するが、施策単位の所管課は掲載されていないため、responsible_departmentは未登録（null）とした。取組ごとの担当課は実施計画の各施策の取組表に掲載されている。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.initial_budget",
+    "location_note": "実施計画「第1 分野別の政策」冒頭（計画書 - 4 -）の事業費の記載方法の説明、実施計画PDF p.92-93（計画書 - 88 - 〜 - 89 -）「■課題解決のための取組」表",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "静岡市は施策単位の金額を公表していない。実施計画は取組単位に2026年度から2030年度の5年間の事業費の計（百万円単位、百万円未満切り上げ）を登載するが、これは期間中の投資的経費を中長期的な展望で示すもので、ソフトの取組など投資的経費に属さないものは金額を明示せず「―」と表示される。取組の5年合計を合算して施策の金額とすることは市の公表値ではないため行わない。市の当初予算資料も会計別・款項別の集計であり、施策単位の令和8年度当初予算額は確認できないため、未登録とした（0では補完しない）。本施策では取組は22件で、金額が示されるのは「日本平公園の整備」の773百万円のみであり、他の21件は「―」（金額明示なし）である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "実施計画「第1 分野別の政策」冒頭（計画書 - 4 -）の評価・検証の仕組みの説明",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "2026年度が第5次静岡市総合計画の初年度であり、施策の評価・検証の結果は公表されていない。実施計画は、施策ごとに成果指標を設定し、数値目標の達成状況を把握しながら評価・検証を行い、その結果を踏まえて取組内容を見直す仕組みを定めているが、初年度の実績・評価はまだ公表されていないため、公式評価は未登録（null）とした。"
+   }
+  ],
+  "id": "evidence-jp-local-221007-project-2026-tourism-consumption",
+  "open_questions": [
+   "金額は未登録。施策単位の金額を掲載した公式資料は確認できていない（実施計画の金額は取組単位の2026〜2030年度の5年間の計のみで、ソフトの取組は「―」）。公表され次第、更新サイクルで登録する。",
+   "公式評価は未登録。2026年度が第5次静岡市総合計画の初年度であり、施策の評価・検証の結果は公表されていない。公表され次第、更新サイクル（#706）で登録する。",
+   "KPIの実績値は未公表である。評価・検証の公表に合わせて更新サイクルで登録する。",
+   "首長公約との接続は静岡クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と施策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-221007-project-2026-tourism-consumption",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "実施計画「第1 分野別の政策」冒頭（計画書 - 4 -）の記載方法の説明（施策ごとの成果指標と評価・検証、取組の事業費の記載方法）、基本計画第4章「分野別の政策」",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf",
+     "shizuoka-city-fifth-basic-plan-pdf"
+    ],
+    "statement": "本登録の単位は、第5次静岡市総合計画実施計画（2026〜2030年度）の体系における「施策」（9分野→45政策→101施策）とした。実施計画は、施策ごとに成果指標（KPI）を設定し、数値目標の達成状況を把握しながら評価・検証を行う仕組みを明記しており、KPIと評価・検証の単位が施策である。金額は取組単位にのみ登載され（2026〜2030年度の5年間の計、投資的経費のみ、ソフトの取組は「―」）、施策単位の金額は公表されない。また取組は複数の分野・政策・施策に位置付けられるもの（★印）が多数あり、取組単位で登録すると同一取組が複数の系列に重複する。以上から、計画の構造と進行管理の単位に照らして施策を登録単位とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施計画PDF p.106（計画書 - 102 -）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf",
+     "shizuoka-city-fifth-basic-plan-pdf"
+    ],
+    "statement": "施策名は「地域のニーズに応じた土地利用の再設計を進めることで、低利用地を効率的・効果的に活用します」。実施計画の分野「都市・社会基盤」の政策1・施策1の見出しであり、基本計画の政策体系図にも同じ文言を確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "実施計画PDF p.106（計画書 - 102 -）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf",
+     "shizuoka-city-fifth-basic-plan-pdf"
+    ],
+    "statement": "本登録のparent_policyには、施策を直接束ねる政策として「（まちづくり）多様な交流と投資を呼び込む活力ある「まち」を形成し、その成果が市民生活の豊かさや未来への希望につながるまちにします」を用いた。分野「都市・社会基盤」の政策1であり、基本計画・実施計画の政策体系図の表記どおりである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施計画PDF p.106（計画書 - 102 -）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "実施計画の「施策の実現に向けての課題」欄の記述と、「課題解決のための取組」表に掲載された取組6件の名称（計画書の表記どおり、★印を含む）を転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "実施計画PDF p.106（計画書 - 102 -）「■施策のKPI（アウトカム）」表",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "本施策の成果指標（アウトカム）は1件登録した（計画書の表が対象区分を分けて値を掲げる指標は区分ごとに登録した）。現状値と2030年の目標値は実施計画の「施策のKPI（アウトカム）」表の印字どおりであり、実績値は計画初年度のため公表されておらず、達成度の判定（assessment）はnot_assessableとした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "実施計画PDF p.106（計画書 - 102 -）「■課題解決のための取組」表（担当課は取組単位の掲載）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "実施計画は取組単位に担当課を掲載するが、施策単位の所管課は掲載されていないため、responsible_departmentは未登録（null）とした。取組ごとの担当課は実施計画の各施策の取組表に掲載されている。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.initial_budget",
+    "location_note": "実施計画「第1 分野別の政策」冒頭（計画書 - 4 -）の事業費の記載方法の説明、実施計画PDF p.106（計画書 - 102 -）「■課題解決のための取組」表",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "静岡市は施策単位の金額を公表していない。実施計画は取組単位に2026年度から2030年度の5年間の事業費の計（百万円単位、百万円未満切り上げ）を登載するが、これは期間中の投資的経費を中長期的な展望で示すもので、ソフトの取組など投資的経費に属さないものは金額を明示せず「―」と表示される。取組の5年合計を合算して施策の金額とすることは市の公表値ではないため行わない。市の当初予算資料も会計別・款項別の集計であり、施策単位の令和8年度当初予算額は確認できないため、未登録とした（0では補完しない）。本施策では取組は6件で、全て「―」（金額明示なし）である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "実施計画「第1 分野別の政策」冒頭（計画書 - 4 -）の評価・検証の仕組みの説明",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "2026年度が第5次静岡市総合計画の初年度であり、施策の評価・検証の結果は公表されていない。実施計画は、施策ごとに成果指標を設定し、数値目標の達成状況を把握しながら評価・検証を行い、その結果を踏まえて取組内容を見直す仕組みを定めているが、初年度の実績・評価はまだ公表されていないため、公式評価は未登録（null）とした。"
+   }
+  ],
+  "id": "evidence-jp-local-221007-project-2026-underused-land-utilization",
+  "open_questions": [
+   "金額は未登録。施策単位の金額を掲載した公式資料は確認できていない（実施計画の金額は取組単位の2026〜2030年度の5年間の計のみで、ソフトの取組は「―」）。公表され次第、更新サイクルで登録する。",
+   "公式評価は未登録。2026年度が第5次静岡市総合計画の初年度であり、施策の評価・検証の結果は公表されていない。公表され次第、更新サイクル（#706）で登録する。",
+   "KPIの実績値は未公表である。評価・検証の公表に合わせて更新サイクルで登録する。",
+   "首長公約との接続は静岡クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と施策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-221007-project-2026-underused-land-utilization",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "実施計画「第1 分野別の政策」冒頭（計画書 - 4 -）の記載方法の説明（施策ごとの成果指標と評価・検証、取組の事業費の記載方法）、基本計画第4章「分野別の政策」",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf",
+     "shizuoka-city-fifth-basic-plan-pdf"
+    ],
+    "statement": "本登録の単位は、第5次静岡市総合計画実施計画（2026〜2030年度）の体系における「施策」（9分野→45政策→101施策）とした。実施計画は、施策ごとに成果指標（KPI）を設定し、数値目標の達成状況を把握しながら評価・検証を行う仕組みを明記しており、KPIと評価・検証の単位が施策である。金額は取組単位にのみ登載され（2026〜2030年度の5年間の計、投資的経費のみ、ソフトの取組は「―」）、施策単位の金額は公表されない。また取組は複数の分野・政策・施策に位置付けられるもの（★印）が多数あり、取組単位で登録すると同一取組が複数の系列に重複する。以上から、計画の構造と進行管理の単位に照らして施策を登録単位とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施計画PDF p.123（計画書 - 119 -）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf",
+     "shizuoka-city-fifth-basic-plan-pdf"
+    ],
+    "statement": "施策名は「住宅・建築物の省エネ化や再エネ設備の導入支援のほか、企業等と連携した新たなサービスの提供等により社会全体の行動変容を促進します」。実施計画の分野「環境・森林」の政策1・施策1の見出しであり、基本計画の政策体系図にも同じ文言を確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "実施計画PDF p.123（計画書 - 119 -）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf",
+     "shizuoka-city-fifth-basic-plan-pdf"
+    ],
+    "statement": "本登録のparent_policyには、施策を直接束ねる政策として「（脱炭素社会）エネルギー消費を抑えつつ再生可能エネルギーを導入・活用し、暮らしの快適さと地域経済の活性化を両立できるまちにします」を用いた。分野「環境・森林」の政策1であり、基本計画・実施計画の政策体系図の表記どおりである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施計画PDF p.123（計画書 - 119 -）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "実施計画の「施策の実現に向けての課題」欄の記述と、「課題解決のための取組」表に掲載された取組3件の名称（計画書の表記どおり、★印を含む）を転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "実施計画PDF p.123（計画書 - 119 -）「■施策のKPI（アウトカム）」表",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "本施策の成果指標（アウトカム）は1件登録した（計画書の表が対象区分を分けて値を掲げる指標は区分ごとに登録した）。現状値と2030年の目標値は実施計画の「施策のKPI（アウトカム）」表の印字どおりであり、実績値は計画初年度のため公表されておらず、達成度の判定（assessment）はnot_assessableとした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "実施計画PDF p.123（計画書 - 119 -）「■課題解決のための取組」表（担当課は取組単位の掲載）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "実施計画は取組単位に担当課を掲載するが、施策単位の所管課は掲載されていないため、responsible_departmentは未登録（null）とした。取組ごとの担当課は実施計画の各施策の取組表に掲載されている。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.initial_budget",
+    "location_note": "実施計画「第1 分野別の政策」冒頭（計画書 - 4 -）の事業費の記載方法の説明、実施計画PDF p.123（計画書 - 119 -）「■課題解決のための取組」表",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "静岡市は施策単位の金額を公表していない。実施計画は取組単位に2026年度から2030年度の5年間の事業費の計（百万円単位、百万円未満切り上げ）を登載するが、これは期間中の投資的経費を中長期的な展望で示すもので、ソフトの取組など投資的経費に属さないものは金額を明示せず「―」と表示される。取組の5年合計を合算して施策の金額とすることは市の公表値ではないため行わない。市の当初予算資料も会計別・款項別の集計であり、施策単位の令和8年度当初予算額は確認できないため、未登録とした（0では補完しない）。本施策では取組は3件で、金額が示されるのは「市有施設照明設備のLED化」の7,119百万円のみであり、他の2件は「―」（金額明示なし）である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "実施計画「第1 分野別の政策」冒頭（計画書 - 4 -）の評価・検証の仕組みの説明",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "2026年度が第5次静岡市総合計画の初年度であり、施策の評価・検証の結果は公表されていない。実施計画は、施策ごとに成果指標を設定し、数値目標の達成状況を把握しながら評価・検証を行い、その結果を踏まえて取組内容を見直す仕組みを定めているが、初年度の実績・評価はまだ公表されていないため、公式評価は未登録（null）とした。"
+   }
+  ],
+  "id": "evidence-jp-local-221007-project-2026-decarbonization-behavior-change",
+  "open_questions": [
+   "金額は未登録。施策単位の金額を掲載した公式資料は確認できていない（実施計画の金額は取組単位の2026〜2030年度の5年間の計のみで、ソフトの取組は「―」）。公表され次第、更新サイクルで登録する。",
+   "公式評価は未登録。2026年度が第5次静岡市総合計画の初年度であり、施策の評価・検証の結果は公表されていない。公表され次第、更新サイクル（#706）で登録する。",
+   "KPIの実績値は未公表である。評価・検証の公表に合わせて更新サイクルで登録する。",
+   "首長公約との接続は静岡クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と施策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-221007-project-2026-decarbonization-behavior-change",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "実施計画「第1 分野別の政策」冒頭（計画書 - 4 -）の記載方法の説明（施策ごとの成果指標と評価・検証、取組の事業費の記載方法）、基本計画第4章「分野別の政策」",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf",
+     "shizuoka-city-fifth-basic-plan-pdf"
+    ],
+    "statement": "本登録の単位は、第5次静岡市総合計画実施計画（2026〜2030年度）の体系における「施策」（9分野→45政策→101施策）とした。実施計画は、施策ごとに成果指標（KPI）を設定し、数値目標の達成状況を把握しながら評価・検証を行う仕組みを明記しており、KPIと評価・検証の単位が施策である。金額は取組単位にのみ登載され（2026〜2030年度の5年間の計、投資的経費のみ、ソフトの取組は「―」）、施策単位の金額は公表されない。また取組は複数の分野・政策・施策に位置付けられるもの（★印）が多数あり、取組単位で登録すると同一取組が複数の系列に重複する。以上から、計画の構造と進行管理の単位に照らして施策を登録単位とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施計画PDF p.134（計画書 - 130 -）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf",
+     "shizuoka-city-fifth-basic-plan-pdf"
+    ],
+    "statement": "施策名は「公共施設の配置を見直し、社会的需要に対する公共施設の供給量を適正化します」。実施計画の分野「行政経営」の政策1・施策1の見出しであり、基本計画の政策体系図にも同じ文言を確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "実施計画PDF p.134（計画書 - 130 -）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf",
+     "shizuoka-city-fifth-basic-plan-pdf"
+    ],
+    "statement": "本登録のparent_policyには、施策を直接束ねる政策として「（社会共有資産）社会共有資産が活用され、市民の経済的利益や利便性が向上するまちにします」を用いた。分野「行政経営」の政策1であり、基本計画・実施計画の政策体系図の表記どおりである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施計画PDF p.134（計画書 - 130 -）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "実施計画の「施策の実現に向けての課題」欄の記述と、「課題解決のための取組」表に掲載された取組2件の名称（計画書の表記どおり、★印を含む）を転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "実施計画PDF p.134（計画書 - 130 -）「■施策のKPI（アウトカム）」表",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "本施策の成果指標（アウトカム）は1件登録した（計画書の表が対象区分を分けて値を掲げる指標は区分ごとに登録した）。現状値と2030年の目標値は実施計画の「施策のKPI（アウトカム）」表の印字どおりであり、実績値は計画初年度のため公表されておらず、達成度の判定（assessment）はnot_assessableとした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "実施計画PDF p.134（計画書 - 130 -）「■課題解決のための取組」表（担当課は取組単位の掲載）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "実施計画は取組単位に担当課を掲載するが、施策単位の所管課は掲載されていないため、responsible_departmentは未登録（null）とした。取組ごとの担当課は実施計画の各施策の取組表に掲載されている。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.initial_budget",
+    "location_note": "実施計画「第1 分野別の政策」冒頭（計画書 - 4 -）の事業費の記載方法の説明、実施計画PDF p.134（計画書 - 130 -）「■課題解決のための取組」表",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "静岡市は施策単位の金額を公表していない。実施計画は取組単位に2026年度から2030年度の5年間の事業費の計（百万円単位、百万円未満切り上げ）を登載するが、これは期間中の投資的経費を中長期的な展望で示すもので、ソフトの取組など投資的経費に属さないものは金額を明示せず「―」と表示される。取組の5年合計を合算して施策の金額とすることは市の公表値ではないため行わない。市の当初予算資料も会計別・款項別の集計であり、施策単位の令和8年度当初予算額は確認できないため、未登録とした（0では補完しない）。本施策では取組は2件で、いずれも「―」（金額明示なし）である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "実施計画「第1 分野別の政策」冒頭（計画書 - 4 -）の評価・検証の仕組みの説明",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "2026年度が第5次静岡市総合計画の初年度であり、施策の評価・検証の結果は公表されていない。実施計画は、施策ごとに成果指標を設定し、数値目標の達成状況を把握しながら評価・検証を行い、その結果を踏まえて取組内容を見直す仕組みを定めているが、初年度の実績・評価はまだ公表されていないため、公式評価は未登録（null）とした。"
+   }
+  ],
+  "id": "evidence-jp-local-221007-project-2026-public-facility-optimization",
+  "open_questions": [
+   "金額は未登録。施策単位の金額を掲載した公式資料は確認できていない（実施計画の金額は取組単位の2026〜2030年度の5年間の計のみで、ソフトの取組は「―」）。公表され次第、更新サイクルで登録する。",
+   "公式評価は未登録。2026年度が第5次静岡市総合計画の初年度であり、施策の評価・検証の結果は公表されていない。公表され次第、更新サイクル（#706）で登録する。",
+   "KPIの実績値は未公表である。評価・検証の公表に合わせて更新サイクルで登録する。",
+   "首長公約との接続は静岡クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と施策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-221007-project-2026-public-facility-optimization",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "実施計画「第1 分野別の政策」冒頭（計画書 - 4 -）の記載方法の説明（施策ごとの成果指標と評価・検証、取組の事業費の記載方法）、基本計画第4章「分野別の政策」",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf",
+     "shizuoka-city-fifth-basic-plan-pdf"
+    ],
+    "statement": "本登録の単位は、第5次静岡市総合計画実施計画（2026〜2030年度）の体系における「施策」（9分野→45政策→101施策）とした。実施計画は、施策ごとに成果指標（KPI）を設定し、数値目標の達成状況を把握しながら評価・検証を行う仕組みを明記しており、KPIと評価・検証の単位が施策である。金額は取組単位にのみ登載され（2026〜2030年度の5年間の計、投資的経費のみ、ソフトの取組は「―」）、施策単位の金額は公表されない。また取組は複数の分野・政策・施策に位置付けられるもの（★印）が多数あり、取組単位で登録すると同一取組が複数の系列に重複する。以上から、計画の構造と進行管理の単位に照らして施策を登録単位とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施計画PDF p.13（計画書 - 9 -）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf",
+     "shizuoka-city-fifth-basic-plan-pdf"
+    ],
+    "statement": "施策名は「地域課題の解決に取り組む市民活動の輪を広げ、地域の力で共に支え合う社会づくりを下支えします」。実施計画の分野「共生・福祉・健康」の政策1・施策2の見出しであり、基本計画の政策体系図にも同じ文言を確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "実施計画PDF p.13（計画書 - 9 -）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf",
+     "shizuoka-city-fifth-basic-plan-pdf"
+    ],
+    "statement": "本登録のparent_policyには、施策を直接束ねる政策として「（地域活動・市民活動）地域社会のつながりを深め、市民が支え合うまちにします」を用いた。分野「共生・福祉・健康」の政策1であり、基本計画・実施計画の政策体系図の表記どおりである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施計画PDF p.13（計画書 - 9 -）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "実施計画の「施策の実現に向けての課題」欄の記述と、「課題解決のための取組」表に掲載された取組3件の名称（計画書の表記どおり、★印を含む）を転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "実施計画PDF p.13（計画書 - 9 -）「■施策のKPI（アウトカム）」表",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "本施策の成果指標（アウトカム）は2件登録した（計画書の表が対象区分を分けて値を掲げる指標は区分ごとに登録した）。現状値と2030年の目標値は実施計画の「施策のKPI（アウトカム）」表の印字どおりであり、実績値は計画初年度のため公表されておらず、達成度の判定（assessment）はnot_assessableとした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "実施計画PDF p.13（計画書 - 9 -）「■課題解決のための取組」表（担当課は取組単位の掲載）",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "実施計画は取組単位に担当課を掲載するが、施策単位の所管課は掲載されていないため、responsible_departmentは未登録（null）とした。取組ごとの担当課は実施計画の各施策の取組表に掲載されている。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.initial_budget",
+    "location_note": "実施計画「第1 分野別の政策」冒頭（計画書 - 4 -）の事業費の記載方法の説明、実施計画PDF p.13（計画書 - 9 -）「■課題解決のための取組」表",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "静岡市は施策単位の金額を公表していない。実施計画は取組単位に2026年度から2030年度の5年間の事業費の計（百万円単位、百万円未満切り上げ）を登載するが、これは期間中の投資的経費を中長期的な展望で示すもので、ソフトの取組など投資的経費に属さないものは金額を明示せず「―」と表示される。取組の5年合計を合算して施策の金額とすることは市の公表値ではないため行わない。市の当初予算資料も会計別・款項別の集計であり、施策単位の令和8年度当初予算額は確認できないため、未登録とした（0では補完しない）。本施策では取組は3件で、全て「―」（金額明示なし）である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "実施計画「第1 分野別の政策」冒頭（計画書 - 4 -）の評価・検証の仕組みの説明",
+    "review_note": null,
+    "source_ids": [
+     "shizuoka-city-fifth-implementation-plan-pdf"
+    ],
+    "statement": "2026年度が第5次静岡市総合計画の初年度であり、施策の評価・検証の結果は公表されていない。実施計画は、施策ごとに成果指標を設定し、数値目標の達成状況を把握しながら評価・検証を行い、その結果を踏まえて取組内容を見直す仕組みを定めているが、初年度の実績・評価はまだ公表されていないため、公式評価は未登録（null）とした。"
+   }
+  ],
+  "id": "evidence-jp-local-221007-project-2026-citizen-activity-support",
+  "open_questions": [
+   "金額は未登録。施策単位の金額を掲載した公式資料は確認できていない（実施計画の金額は取組単位の2026〜2030年度の5年間の計のみで、ソフトの取組は「―」）。公表され次第、更新サイクルで登録する。",
+   "公式評価は未登録。2026年度が第5次静岡市総合計画の初年度であり、施策の評価・検証の結果は公表されていない。公表され次第、更新サイクル（#706）で登録する。",
+   "KPIの実績値は未公表である。評価・検証の公表に合わせて更新サイクルで登録する。",
+   "首長公約との接続は静岡クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と施策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-221007-project-2026-citizen-activity-support",
+  "subject_type": "project"
+ }
+]

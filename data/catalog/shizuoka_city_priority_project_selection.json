@@ -1,0 +1,171 @@
+{
+ "expansion_rule": {
+  "added_count": 10,
+  "description": "初回登録として10件（9分野を巡回して選んだ10件）。後続の展開では、同じ掲載順ルールを継続し、巡回の続き（各分野の政策1の施策2以降、各分野の政策2以降）から施策を追加する。",
+  "total_count": 10
+ },
+ "issue": 896,
+ "municipality_id": "jp-local-221007",
+ "municipality_key": "shizuoka-city",
+ "population": {
+  "description": "第5次静岡市総合計画（基本構想2026〜2035年度）に基づく実施計画（2026〜2030年度）の体系（9分野→45政策→101施策→取組）を母集団とした。登録単位は施策とした。理由は、実施計画が施策ごとに成果指標（KPI）を設定し、数値目標の達成状況を把握しながら評価・検証を行う仕組みを明記しており、KPIと評価・検証の単位が施策であるためである。金額は取組単位にのみ登載され（2026〜2030年度の5年間の計、百万円単位・百万円未満切り上げ、投資的経費のみでソフトの取組は「―」）、施策単位の金額は公表されない。取組には複数の分野・政策・施策に位置付けられるもの（★印）が多数含まれ、取組単位の登録は同一取組の重複登録になる。2026年度が計画初年度のため、施策の評価・検証結果は公表されていない。",
+  "field_count": 9,
+  "fiscal_year": 2026,
+  "measure_count": 101,
+  "policy_count": 45,
+  "source_ids": [
+   "shizuoka-city-fifth-implementation-plan-pdf",
+   "shizuoka-city-fifth-basic-plan-pdf"
+  ]
+ },
+ "review_status": "reviewed",
+ "scope": "expanded",
+ "selection_rule": {
+  "description": "計画体系の柱である9分野を実施計画の掲載順に巡回し、各分野の掲載順先頭の政策（政策1）の先頭の施策（施策1）を1件ずつ選ぶ（1巡目9件）。2巡目は分野1「共生・福祉・健康」の政策1の2番目の施策（施策2）を選ぶ（1件）。合計10件。掲載順は実施計画（2026年3月）の分野・政策・施策の掲載順で定める。金額の大小では選ばない。",
+  "pillars": [
+   "共生・福祉・健康",
+   "防災・消防・防犯",
+   "こども・子育て",
+   "教育・人づくり",
+   "経済・産業",
+   "観光・スポーツ・文化",
+   "都市・社会基盤",
+   "環境・森林",
+   "行政経営"
+  ]
+ },
+ "selections": [
+  {
+   "department": null,
+   "official_title": "地域コミュニティの中核である自治会・町内会における誰もが参加しやすい組織づくりを下支えし、住民同士のつながりを強化します",
+   "pillar": "共生・福祉・健康",
+   "policy": "（地域活動・市民活動）地域社会のつながりを深め、市民が支え合うまちにします",
+   "project_id": "jp-local-221007-project-2026-community-association-support",
+   "selection_basis": "第1巡目: 分野「共生・福祉・健康」について、実施計画の掲載順で最初の政策（（地域活動・市民活動））の施策1「地域コミュニティの中核である自治会・町内会における誰もが参加しやすい組織づくりを下支えし、住民同士のつながりを強化します」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-221007-project-series-community-association-support",
+   "source_ids": [
+    "shizuoka-city-fifth-implementation-plan-pdf",
+    "shizuoka-city-fifth-basic-plan-pdf"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "被害の最小化と早期の復旧・復興が可能となる社会基盤を整備します",
+   "pillar": "防災・消防・防犯",
+   "policy": "（防災・減災）<事前防災>社会基盤が整備された自然災害に強いまちにします",
+   "project_id": "jp-local-221007-project-2026-disaster-resilient-infrastructure",
+   "selection_basis": "第1巡目: 分野「防災・消防・防犯」について、実施計画の掲載順で最初の政策（（防災・減災））の施策1「被害の最小化と早期の復旧・復興が可能となる社会基盤を整備します」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-221007-project-series-disaster-resilient-infrastructure",
+   "source_ids": [
+    "shizuoka-city-fifth-implementation-plan-pdf",
+    "shizuoka-city-fifth-basic-plan-pdf"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "子育て当事者の負担を軽減し、仕事と子育てが両立できる環境を整備します",
+   "pillar": "こども・子育て",
+   "policy": "（子育て）子育てする誰もが、安心して子育てでき、こどもが健やかに成長できるまちにします",
+   "project_id": "jp-local-221007-project-2026-work-childcare-balance",
+   "selection_basis": "第1巡目: 分野「こども・子育て」について、実施計画の掲載順で最初の政策（（子育て））の施策1「子育て当事者の負担を軽減し、仕事と子育てが両立できる環境を整備します」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-221007-project-series-work-childcare-balance",
+   "source_ids": [
+    "shizuoka-city-fifth-implementation-plan-pdf",
+    "shizuoka-city-fifth-basic-plan-pdf"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "こどもが主体となり、一人ひとりに合った学習を進め学びに向かえるような学習環境を整えます",
+   "pillar": "教育・人づくり",
+   "policy": "（学びの充実）こどもたちが、それぞれに最も適した学びに向かい、多様な仲間と関わりながら探究を深めることができるまちにします",
+   "project_id": "jp-local-221007-project-2026-personalized-learning-environment",
+   "selection_basis": "第1巡目: 分野「教育・人づくり」について、実施計画の掲載順で最初の政策（（学びの充実））の施策1「こどもが主体となり、一人ひとりに合った学習を進め学びに向かえるような学習環境を整えます」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-221007-project-series-personalized-learning-environment",
+   "source_ids": [
+    "shizuoka-city-fifth-implementation-plan-pdf",
+    "shizuoka-city-fifth-basic-plan-pdf"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "農地として活用されない未利用・低利用農地の集約等により、企業用地を創出します",
+   "pillar": "経済・産業",
+   "policy": "（企業誘致・留置）企業誘致・留置が促進され、地域の経済的活力が高まり、新たな働く場を得ることができるまちにします",
+   "project_id": "jp-local-221007-project-2026-corporate-site-development",
+   "selection_basis": "第1巡目: 分野「経済・産業」について、実施計画の掲載順で最初の政策（（企業誘致・留置））の施策1「農地として活用されない未利用・低利用農地の集約等により、企業用地を創出します」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-221007-project-series-corporate-site-development",
+   "source_ids": [
+    "shizuoka-city-fifth-implementation-plan-pdf",
+    "shizuoka-city-fifth-basic-plan-pdf"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "静岡市ならではの魅力を堪能できる食や体験などを充実させることで観光消費を増加させます",
+   "pillar": "観光・スポーツ・文化",
+   "policy": "（観光）市内の観光消費が拡大することによって所得の増加や魅力ある雇用が生み出されているまちにします",
+   "project_id": "jp-local-221007-project-2026-tourism-consumption",
+   "selection_basis": "第1巡目: 分野「観光・スポーツ・文化」について、実施計画の掲載順で最初の政策（（観光））の施策1「静岡市ならではの魅力を堪能できる食や体験などを充実させることで観光消費を増加させます」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-221007-project-series-tourism-consumption",
+   "source_ids": [
+    "shizuoka-city-fifth-implementation-plan-pdf",
+    "shizuoka-city-fifth-basic-plan-pdf"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "地域のニーズに応じた土地利用の再設計を進めることで、低利用地を効率的・効果的に活用します",
+   "pillar": "都市・社会基盤",
+   "policy": "（まちづくり）多様な交流と投資を呼び込む活力ある「まち」を形成し、その成果が市民生活の豊かさや未来への希望につながるまちにします",
+   "project_id": "jp-local-221007-project-2026-underused-land-utilization",
+   "selection_basis": "第1巡目: 分野「都市・社会基盤」について、実施計画の掲載順で最初の政策（（まちづくり））の施策1「地域のニーズに応じた土地利用の再設計を進めることで、低利用地を効率的・効果的に活用します」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-221007-project-series-underused-land-utilization",
+   "source_ids": [
+    "shizuoka-city-fifth-implementation-plan-pdf",
+    "shizuoka-city-fifth-basic-plan-pdf"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "住宅・建築物の省エネ化や再エネ設備の導入支援のほか、企業等と連携した新たなサービスの提供等により社会全体の行動変容を促進します",
+   "pillar": "環境・森林",
+   "policy": "（脱炭素社会）エネルギー消費を抑えつつ再生可能エネルギーを導入・活用し、暮らしの快適さと地域経済の活性化を両立できるまちにします",
+   "project_id": "jp-local-221007-project-2026-decarbonization-behavior-change",
+   "selection_basis": "第1巡目: 分野「環境・森林」について、実施計画の掲載順で最初の政策（（脱炭素社会））の施策1「住宅・建築物の省エネ化や再エネ設備の導入支援のほか、企業等と連携した新たなサービスの提供等により社会全体の行動変容を促進します」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-221007-project-series-decarbonization-behavior-change",
+   "source_ids": [
+    "shizuoka-city-fifth-implementation-plan-pdf",
+    "shizuoka-city-fifth-basic-plan-pdf"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "公共施設の配置を見直し、社会的需要に対する公共施設の供給量を適正化します",
+   "pillar": "行政経営",
+   "policy": "（社会共有資産）社会共有資産が活用され、市民の経済的利益や利便性が向上するまちにします",
+   "project_id": "jp-local-221007-project-2026-public-facility-optimization",
+   "selection_basis": "第1巡目: 分野「行政経営」について、実施計画の掲載順で最初の政策（（社会共有資産））の施策1「公共施設の配置を見直し、社会的需要に対する公共施設の供給量を適正化します」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-221007-project-series-public-facility-optimization",
+   "source_ids": [
+    "shizuoka-city-fifth-implementation-plan-pdf",
+    "shizuoka-city-fifth-basic-plan-pdf"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "地域課題の解決に取り組む市民活動の輪を広げ、地域の力で共に支え合う社会づくりを下支えします",
+   "pillar": "共生・福祉・健康",
+   "policy": "（地域活動・市民活動）地域社会のつながりを深め、市民が支え合うまちにします",
+   "project_id": "jp-local-221007-project-2026-citizen-activity-support",
+   "selection_basis": "第2巡目: 分野「共生・福祉・健康」について、実施計画の掲載順で最初の政策（（地域活動・市民活動））の施策2「地域課題の解決に取り組む市民活動の輪を広げ、地域の力で共に支え合う社会づくりを下支えします」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-221007-project-series-citizen-activity-support",
+   "source_ids": [
+    "shizuoka-city-fifth-implementation-plan-pdf",
+    "shizuoka-city-fifth-basic-plan-pdf"
+   ]
+  }
+ ],
+ "updated_at": "2026-11-22",
+ "version": "1.0.0"
+}
