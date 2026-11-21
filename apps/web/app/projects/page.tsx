@@ -66,7 +66,7 @@ export default function ProjectsPage() {
             <section className={styles.section} key={key} id={key} data-filter-section="">
               <h2>{area.name}｜登録事業</h2>
               <p className={styles.meta}>母集団：{area.selection.population?.description ?? area.selection.population?.label ?? "詳細未収録"}</p>
-              <p className={styles.meta}>選定方法：{(typeof area.selection.selection_rule === "string" ? area.selection.selection_rule : area.selection.selection_rule?.description) ?? "選定規則未収録"}</p>
+              <p className={styles.meta}>選定方法：{(typeof (area.selection.selection_rule ?? area.selection.rule) === "string" ? (area.selection.selection_rule ?? area.selection.rule) as string : (area.selection.selection_rule ?? area.selection.rule as { description?: string } | undefined)?.description) ?? "選定規則未収録"}</p>
               <p className={styles.meta}>選定カタログ更新：{area.selection.updated_at ?? "未収録"}。選定・除外理由は Reviewed 選定カタログで管理しています。</p>
               {key === "saitama-prefecture" ? <p className={styles.meta}>登録単位：施策（10系列）。県の評価報告書に施策単位の予算額・決算額と公式評価は掲載されていません。金額は未登録です。県が公表するのは指標単位の判定のみであり、施策単位の公式評価を推測しません。</p> : null}
               {key === "saitama-city" ? <p className={styles.meta}>登録単位：事業（10系列）。さいたま市の事業評価 A/B/C を公式評価として、当初予算額と実績額を分けて表示します。施策単位の評価とは混同しません。</p> : null}
