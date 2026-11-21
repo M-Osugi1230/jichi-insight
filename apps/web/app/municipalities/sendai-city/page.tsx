@@ -220,7 +220,7 @@ export default function SendaiCityPage() {
                 政務活動費{assembly.expenses.length}単位。</p>
               <p>仙台市議会が公式に公表しているのは会派別賛否です。
                 会派内で賛否が分かれる議案では人数内訳が掲載されます。
-                個々の会派所属議員の投票を推測して再構成しません。</p>
+                議員個人別の賛否は公表されておらず、個々の会派所属議員の投票を推測して再構成しません。</p>
               <p>{factionDisclosure?.note ?? "会派別賛否の公開範囲は未確認です。"}</p>
               <p>{memberDisclosure?.note ?? "議員別賛否の公開範囲は未確認です。"}</p>
             </div>
