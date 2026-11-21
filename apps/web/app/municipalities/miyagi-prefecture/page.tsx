@@ -150,6 +150,7 @@ export default function MiyagiPrefecturePage() {
                   <span>{label}</span>
                   <strong>{formatCompactYen(record?.amount_yen ?? null)}</strong>
                   <small>{formatExactYen(record?.amount_yen ?? null)}</small>
+                  <p>公式資料の千円単位：{record?.amount_yen == null ? "未登録" : `${(record.amount_yen / 1000).toLocaleString("ja-JP")}千円`}</p>
                   <p>FY2026・一般会計・成立後当初予算</p>
                 </article>
               ))}
