@@ -229,7 +229,7 @@ export default function MiyagiPrefecturePage() {
 
           <section id="assembly" className={styles.scope} aria-labelledby="assembly-title">
             <div><p className="eyebrow">Reviewed assembly · Stage 4</p>
-              <h2 id="assembly-title">宮城県議会の第401回（令和8年9月）定例会</h2>
+              <h2 id="assembly-title">宮城県議会・令和8年9月第401回定例会</h2>
               <p><Link href="/assemblies/miyagi-prefecture">宮城県議会の議案・議員別表決・視察を見る</Link></p></div>
             <div>
               <p>議員定数{assembly.assembly.seat_count}人、会期時点の現員56人。
