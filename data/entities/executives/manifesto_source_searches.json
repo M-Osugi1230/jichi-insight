@@ -580,5 +580,36 @@
     ],
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-hyogo-pref-2024",
+    "executive_term_id": "jp-local-280003-executive-2024-11-17",
+    "searched_at": "2026-11-21",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "hyogo-pref-governor-election-2024-bulletin"
+    ],
+    "checked_source_ids": [
+      "hyogo-pref-governor",
+      "kobe-city-governor-election-2024-result",
+      "hyogo-pref-governor-election-2024-bulletin"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "兵庫県知事選挙（令和6年11月17日執行）の選挙公報は、神戸市選挙管理委員会の公式ページに同一文書（全4ページ、5,448,777バイト）が保全掲載されていることを段階0の棚卸しで確認し、2026-11-21に神戸市公式サイトから直接取得した。3ページ目上段のさいとう元彦候補欄（「4つの政策」の番号政策4件・・項目14件）を確認し、選挙公報を出典として登録、分割レビュー（manifesto-review-jp-local-280003-2024）を経て公約レコード18件を作成した。候補者欄は画像形式で、PDFのテキスト抽出（空白を除き2,180字）はいずれも選管の表頭・投票案内等の印刷文字であり候補者欄からは文字が抽出されないことを実測し、登録文は描画画像（100dpi・300dpi）の照合で転記した。選挙公報は候補者提出原稿をそのまま印刷した公式文書であり、公的機関（神戸市選管）の公式サイトから直接取得できたため、公約レコードの confidence は high とした。県選管の知事選特設サイト（senkyo.pref.hyogo.lg.jp）での公報の掲載継続は本探索では確認しておらず、掲載がないとは判定しない。候補者欄には公式HP・SNSへのQRコード案内があるが、詳細な公約資料の安定した所在は本探索では特定していない。",
+    "next_actions": [
+      "県選管の知事選特設サイトでの選挙公報の掲載継続が確認できれば、出典の所在を併記する",
+      "候補者の公式HP・SNSで案内される詳細な公約資料の安定した所在が特定できれば、登録済みの公約文と照合する",
+      "未接続の公約（国際交流、子育てサポート、防災・防犯、県政改革）について、計画・事業資料への進捗証拠の接続を拡充する",
+      "2028年11月の任期満了に伴う次回知事選挙では、新任期の公約原文資料として選挙公報を改めて登録する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]

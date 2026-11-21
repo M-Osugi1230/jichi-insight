@@ -11212,5 +11212,717 @@
       "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hyogo-pref-2024-promise-001",
+    "subject_type": "promise",
+    "subject_id": "jp-local-280003-executive-2024-11-17-promise-001",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）3ページ目のさいとう元彦候補欄から、項目の原文をそのまま転記した。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報3ページ目・さいとう元彦候補欄「4つの政策」の政策1。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式（PDFのテキスト層は実質存在しない）のため、PDFの描画画像（100dpi・300dpi）で照合した。資料上の項目境界（「4つの政策」の番号政策と・印）をそのまま公約の単位とし、見出し文（スローガン）、前回公約の進捗表示、左欄の1期目の取組・実績表示、略歴はレコードに含めていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は兵庫県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは神戸市選挙管理委員会の公式ページに保全掲載された同一文書を、神戸市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式（全4ページのテキスト抽出は空白を除き2,180字で、いずれも選管の表頭・投票案内等の印刷文字であり、候補者欄からは文字が抽出されない）ため、登録文はPDFの描画画像（100dpi・300dpi）から転記し、複数解像度で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "公報の表頭（兵庫県選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、神戸市選挙管理委員会の公式ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。県選管の知事選特設サイトでの掲載継続が確認できれば、そちらの所在も出典に併記する。候補者欄が案内する公式HP・SNSの詳細資料が新たに確認できれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "登録済み事業「次代を担う人材を育成する教育の推進」は、兵庫県地域創生戦略（第三期）の取組方針項目として公約の内容と対応するため接続した。登録済み事業「教育環境の整備・充実」は、兵庫県地域創生戦略（第三期）の取組方針項目として公約の内容と対応するため接続した。県が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "location_note": "令和7年度の兵庫県地域創生戦略（第三期）の実施状況に基づく登録済み事業レコード。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      },
+      {
+        "field": "progress_state",
+        "statement": "接続事業「次代を担う人材を育成する教育の推進」、「教育環境の整備・充実」は兵庫県地域創生戦略（第三期）の取組方針項目として令和7年度の登録済み事業レコードが存在し、県の年次実施状況報告書の対象として実施されている。",
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "location_note": "令和7年度の兵庫県地域創生戦略（第三期）の実施状況に基づく登録済み事業レコード。",
+        "decision": "needs_review",
+        "review_note": "推定接続を前提とする暫定的な in_progress 判定であり、県の公式な公約進捗公表に基づくものではない。達成度（達成・一部達成等）の判定は行わない。"
+      }
+    ],
+    "open_questions": [
+      "事業との接続は文言・内容に基づく推定であり、県が公約と事業の公式な対応付けを公表した場合は接続を見直す。",
+      "番号政策は配下の・項目と主題が重なる部分があり、独立レコードとした判断は境界ケースである。詳細な候補者資料が確認できれば、項目の階層関係を照合する。",
+      "候補者欄が案内する公式HP・SNS（QRコード）の詳細な公約資料が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hyogo-pref-2024-promise-002",
+    "subject_type": "promise",
+    "subject_id": "jp-local-280003-executive-2024-11-17-promise-002",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）3ページ目のさいとう元彦候補欄から、項目の原文をそのまま転記した。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報3ページ目・さいとう元彦候補欄「4つの政策」政策1の・項目1。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式（PDFのテキスト層は実質存在しない）のため、PDFの描画画像（100dpi・300dpi）で照合した。資料上の項目境界（「4つの政策」の番号政策と・印）をそのまま公約の単位とし、見出し文（スローガン）、前回公約の進捗表示、左欄の1期目の取組・実績表示、略歴はレコードに含めていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は兵庫県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは神戸市選挙管理委員会の公式ページに保全掲載された同一文書を、神戸市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式（全4ページのテキスト抽出は空白を除き2,180字で、いずれも選管の表頭・投票案内等の印刷文字であり、候補者欄からは文字が抽出されない）ため、登録文はPDFの描画画像（100dpi・300dpi）から転記し、複数解像度で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "公報の表頭（兵庫県選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、神戸市選挙管理委員会の公式ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。県選管の知事選特設サイトでの掲載継続が確認できれば、そちらの所在も出典に併記する。候補者欄が案内する公式HP・SNSの詳細資料が新たに確認できれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "登録済み事業「次代を担う人材を育成する教育の推進」は、兵庫県地域創生戦略（第三期）の取組方針項目として公約の内容と対応するため接続した。県が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "location_note": "令和7年度の兵庫県地域創生戦略（第三期）の実施状況に基づく登録済み事業レコード。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      },
+      {
+        "field": "progress_state",
+        "statement": "接続事業「次代を担う人材を育成する教育の推進」は兵庫県地域創生戦略（第三期）の取組方針項目として令和7年度の登録済み事業レコードが存在し、県の年次実施状況報告書の対象として実施されている。",
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "location_note": "令和7年度の兵庫県地域創生戦略（第三期）の実施状況に基づく登録済み事業レコード。",
+        "decision": "needs_review",
+        "review_note": "推定接続を前提とする暫定的な in_progress 判定であり、県の公式な公約進捗公表に基づくものではない。達成度（達成・一部達成等）の判定は行わない。"
+      }
+    ],
+    "open_questions": [
+      "事業との接続は文言・内容に基づく推定であり、県が公約と事業の公式な対応付けを公表した場合は接続を見直す。",
+      "候補者欄が案内する公式HP・SNS（QRコード）の詳細な公約資料が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hyogo-pref-2024-promise-003",
+    "subject_type": "promise",
+    "subject_id": "jp-local-280003-executive-2024-11-17-promise-003",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）3ページ目のさいとう元彦候補欄から、項目の原文をそのまま転記した。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報3ページ目・さいとう元彦候補欄「4つの政策」政策1の・項目2。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式（PDFのテキスト層は実質存在しない）のため、PDFの描画画像（100dpi・300dpi）で照合した。資料上の項目境界（「4つの政策」の番号政策と・印）をそのまま公約の単位とし、見出し文（スローガン）、前回公約の進捗表示、左欄の1期目の取組・実績表示、略歴はレコードに含めていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は兵庫県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは神戸市選挙管理委員会の公式ページに保全掲載された同一文書を、神戸市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式（全4ページのテキスト抽出は空白を除き2,180字で、いずれも選管の表頭・投票案内等の印刷文字であり、候補者欄からは文字が抽出されない）ため、登録文はPDFの描画画像（100dpi・300dpi）から転記し、複数解像度で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "公報の表頭（兵庫県選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、神戸市選挙管理委員会の公式ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。県選管の知事選特設サイトでの掲載継続が確認できれば、そちらの所在も出典に併記する。候補者欄が案内する公式HP・SNSの詳細資料が新たに確認できれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "登録済み事業「教育環境の整備・充実」は、兵庫県地域創生戦略（第三期）の取組方針項目として公約の内容と対応するため接続した。県が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "location_note": "令和7年度の兵庫県地域創生戦略（第三期）の実施状況に基づく登録済み事業レコード。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      },
+      {
+        "field": "progress_state",
+        "statement": "接続事業「教育環境の整備・充実」は兵庫県地域創生戦略（第三期）の取組方針項目として令和7年度の登録済み事業レコードが存在し、県の年次実施状況報告書の対象として実施されている。",
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "location_note": "令和7年度の兵庫県地域創生戦略（第三期）の実施状況に基づく登録済み事業レコード。",
+        "decision": "needs_review",
+        "review_note": "推定接続を前提とする暫定的な in_progress 判定であり、県の公式な公約進捗公表に基づくものではない。達成度（達成・一部達成等）の判定は行わない。"
+      }
+    ],
+    "open_questions": [
+      "事業との接続は文言・内容に基づく推定であり、県が公約と事業の公式な対応付けを公表した場合は接続を見直す。",
+      "候補者欄が案内する公式HP・SNS（QRコード）の詳細な公約資料が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hyogo-pref-2024-promise-004",
+    "subject_type": "promise",
+    "subject_id": "jp-local-280003-executive-2024-11-17-promise-004",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）3ページ目のさいとう元彦候補欄から、項目の原文をそのまま転記した。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報3ページ目・さいとう元彦候補欄「4つの政策」政策1の・項目3。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式（PDFのテキスト層は実質存在しない）のため、PDFの描画画像（100dpi・300dpi）で照合した。資料上の項目境界（「4つの政策」の番号政策と・印）をそのまま公約の単位とし、見出し文（スローガン）、前回公約の進捗表示、左欄の1期目の取組・実績表示、略歴はレコードに含めていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は兵庫県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは神戸市選挙管理委員会の公式ページに保全掲載された同一文書を、神戸市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式（全4ページのテキスト抽出は空白を除き2,180字で、いずれも選管の表頭・投票案内等の印刷文字であり、候補者欄からは文字が抽出されない）ため、登録文はPDFの描画画像（100dpi・300dpi）から転記し、複数解像度で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "公報の表頭（兵庫県選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、神戸市選挙管理委員会の公式ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。県選管の知事選特設サイトでの掲載継続が確認できれば、そちらの所在も出典に併記する。候補者欄が案内する公式HP・SNSの詳細資料が新たに確認できれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "登録済み事業「次代を担う人材を育成する教育の推進」は、兵庫県地域創生戦略（第三期）の取組方針項目として公約の内容と対応するため接続した。県が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "location_note": "令和7年度の兵庫県地域創生戦略（第三期）の実施状況に基づく登録済み事業レコード。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      },
+      {
+        "field": "progress_state",
+        "statement": "接続事業「次代を担う人材を育成する教育の推進」は兵庫県地域創生戦略（第三期）の取組方針項目として令和7年度の登録済み事業レコードが存在し、県の年次実施状況報告書の対象として実施されている。",
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "location_note": "令和7年度の兵庫県地域創生戦略（第三期）の実施状況に基づく登録済み事業レコード。",
+        "decision": "needs_review",
+        "review_note": "推定接続を前提とする暫定的な in_progress 判定であり、県の公式な公約進捗公表に基づくものではない。達成度（達成・一部達成等）の判定は行わない。"
+      }
+    ],
+    "open_questions": [
+      "事業との接続は文言・内容に基づく推定であり、県が公約と事業の公式な対応付けを公表した場合は接続を見直す。",
+      "候補者欄が案内する公式HP・SNS（QRコード）の詳細な公約資料が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hyogo-pref-2024-promise-005",
+    "subject_type": "promise",
+    "subject_id": "jp-local-280003-executive-2024-11-17-promise-005",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）3ページ目のさいとう元彦候補欄から、項目の原文をそのまま転記した。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報3ページ目・さいとう元彦候補欄「4つの政策」政策1の・項目4。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式（PDFのテキスト層は実質存在しない）のため、PDFの描画画像（100dpi・300dpi）で照合した。資料上の項目境界（「4つの政策」の番号政策と・印）をそのまま公約の単位とし、見出し文（スローガン）、前回公約の進捗表示、左欄の1期目の取組・実績表示、略歴はレコードに含めていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は兵庫県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは神戸市選挙管理委員会の公式ページに保全掲載された同一文書を、神戸市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式（全4ページのテキスト抽出は空白を除き2,180字で、いずれも選管の表頭・投票案内等の印刷文字であり、候補者欄からは文字が抽出されない）ため、登録文はPDFの描画画像（100dpi・300dpi）から転記し、複数解像度で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "公報の表頭（兵庫県選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、神戸市選挙管理委員会の公式ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。県選管の知事選特設サイトでの掲載継続が確認できれば、そちらの所在も出典に併記する。候補者欄が案内する公式HP・SNSの詳細資料が新たに確認できれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "登録済み事業「出会い・結婚支援の充実」は、上位政策「出会いから子育てへの支援」の取組方針項目であり、不妊治療支援は出会い・結婚から子育てへの過程への支援として公約の内容と対応するため接続した。県が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "location_note": "令和7年度の兵庫県地域創生戦略（第三期）の実施状況に基づく登録済み事業レコード。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      },
+      {
+        "field": "progress_state",
+        "statement": "接続事業「出会い・結婚支援の充実」は兵庫県地域創生戦略（第三期）の取組方針項目として令和7年度の登録済み事業レコードが存在し、県の年次実施状況報告書の対象として実施されている。",
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "location_note": "令和7年度の兵庫県地域創生戦略（第三期）の実施状況に基づく登録済み事業レコード。",
+        "decision": "needs_review",
+        "review_note": "推定接続を前提とする暫定的な in_progress 判定であり、県の公式な公約進捗公表に基づくものではない。達成度（達成・一部達成等）の判定は行わない。"
+      }
+    ],
+    "open_questions": [
+      "事業との接続は文言・内容に基づく推定であり、県が公約と事業の公式な対応付けを公表した場合は接続を見直す。",
+      "候補者欄が案内する公式HP・SNS（QRコード）の詳細な公約資料が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hyogo-pref-2024-promise-006",
+    "subject_type": "promise",
+    "subject_id": "jp-local-280003-executive-2024-11-17-promise-006",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）3ページ目のさいとう元彦候補欄から、項目の原文をそのまま転記した。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報3ページ目・さいとう元彦候補欄「4つの政策」の政策2。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式（PDFのテキスト層は実質存在しない）のため、PDFの描画画像（100dpi・300dpi）で照合した。資料上の項目境界（「4つの政策」の番号政策と・印）をそのまま公約の単位とし、見出し文（スローガン）、前回公約の進捗表示、左欄の1期目の取組・実績表示、略歴はレコードに含めていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は兵庫県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは神戸市選挙管理委員会の公式ページに保全掲載された同一文書を、神戸市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式（全4ページのテキスト抽出は空白を除き2,180字で、いずれも選管の表頭・投票案内等の印刷文字であり、候補者欄からは文字が抽出されない）ため、登録文はPDFの描画画像（100dpi・300dpi）から転記し、複数解像度で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "公報の表頭（兵庫県選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、神戸市選挙管理委員会の公式ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。県選管の知事選特設サイトでの掲載継続が確認できれば、そちらの所在も出典に併記する。候補者欄が案内する公式HP・SNSの詳細資料が新たに確認できれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "配下の項目ごとに対応が分かれるため政策全体への事業接続は行っていない。項目単位の接続は各項目のレコードで行う。",
+      "番号政策は配下の・項目と主題が重なる部分があり、独立レコードとした判断は境界ケースである。詳細な候補者資料が確認できれば、項目の階層関係を照合する。",
+      "候補者欄が案内する公式HP・SNS（QRコード）の詳細な公約資料が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hyogo-pref-2024-promise-007",
+    "subject_type": "promise",
+    "subject_id": "jp-local-280003-executive-2024-11-17-promise-007",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）3ページ目のさいとう元彦候補欄から、項目の原文をそのまま転記した。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報3ページ目・さいとう元彦候補欄「4つの政策」政策2の・項目1。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式（PDFのテキスト層は実質存在しない）のため、PDFの描画画像（100dpi・300dpi）で照合した。資料上の項目境界（「4つの政策」の番号政策と・印）をそのまま公約の単位とし、見出し文（スローガン）、前回公約の進捗表示、左欄の1期目の取組・実績表示、略歴はレコードに含めていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は兵庫県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは神戸市選挙管理委員会の公式ページに保全掲載された同一文書を、神戸市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式（全4ページのテキスト抽出は空白を除き2,180字で、いずれも選管の表頭・投票案内等の印刷文字であり、候補者欄からは文字が抽出されない）ため、登録文はPDFの描画画像（100dpi・300dpi）から転記し、複数解像度で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "公報の表頭（兵庫県選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、神戸市選挙管理委員会の公式ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。県選管の知事選特設サイトでの掲載継続が確認できれば、そちらの所在も出典に併記する。候補者欄が案内する公式HP・SNSの詳細資料が新たに確認できれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "登録済み系列の「外国人の活躍支援」は在留外国人の就労・定着支援であり、フィールドパビリオンによる国際交流に対応する施策が計画・事業資料で確認できれば接続を検討する。",
+      "候補者欄が案内する公式HP・SNS（QRコード）の詳細な公約資料が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hyogo-pref-2024-promise-008",
+    "subject_type": "promise",
+    "subject_id": "jp-local-280003-executive-2024-11-17-promise-008",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）3ページ目のさいとう元彦候補欄から、項目の原文をそのまま転記した。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報3ページ目・さいとう元彦候補欄「4つの政策」政策2の・項目2。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式（PDFのテキスト層は実質存在しない）のため、PDFの描画画像（100dpi・300dpi）で照合した。資料上の項目境界（「4つの政策」の番号政策と・印）をそのまま公約の単位とし、見出し文（スローガン）、前回公約の進捗表示、左欄の1期目の取組・実績表示、略歴はレコードに含めていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は兵庫県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは神戸市選挙管理委員会の公式ページに保全掲載された同一文書を、神戸市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式（全4ページのテキスト抽出は空白を除き2,180字で、いずれも選管の表頭・投票案内等の印刷文字であり、候補者欄からは文字が抽出されない）ため、登録文はPDFの描画画像（100dpi・300dpi）から転記し、複数解像度で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "公報の表頭（兵庫県選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、神戸市選挙管理委員会の公式ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。県選管の知事選特設サイトでの掲載継続が確認できれば、そちらの所在も出典に併記する。候補者欄が案内する公式HP・SNSの詳細資料が新たに確認できれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "登録済みの重点事業10系列に経営者等への子育て支援を扱う系列がないため。計画・事業資料で対応する施策が確認できれば接続を検討する。",
+      "候補者欄が案内する公式HP・SNS（QRコード）の詳細な公約資料が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hyogo-pref-2024-promise-009",
+    "subject_type": "promise",
+    "subject_id": "jp-local-280003-executive-2024-11-17-promise-009",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）3ページ目のさいとう元彦候補欄から、項目の原文をそのまま転記した。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報3ページ目・さいとう元彦候補欄「4つの政策」政策2の・項目3。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式（PDFのテキスト層は実質存在しない）のため、PDFの描画画像（100dpi・300dpi）で照合した。資料上の項目境界（「4つの政策」の番号政策と・印）をそのまま公約の単位とし、見出し文（スローガン）、前回公約の進捗表示、左欄の1期目の取組・実績表示、略歴はレコードに含めていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は兵庫県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは神戸市選挙管理委員会の公式ページに保全掲載された同一文書を、神戸市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式（全4ページのテキスト抽出は空白を除き2,180字で、いずれも選管の表頭・投票案内等の印刷文字であり、候補者欄からは文字が抽出されない）ため、登録文はPDFの描画画像（100dpi・300dpi）から転記し、複数解像度で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "公報の表頭（兵庫県選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、神戸市選挙管理委員会の公式ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。県選管の知事選特設サイトでの掲載継続が確認できれば、そちらの所在も出典に併記する。候補者欄が案内する公式HP・SNSの詳細資料が新たに確認できれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "登録済み事業「地場産業の新たな展開への支援」は、兵庫県地域創生戦略（第三期）の取組方針項目として、農産物を含む地場産品の振興を扱い、公約の内容と対応するため接続した。県が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "location_note": "令和7年度の兵庫県地域創生戦略（第三期）の実施状況に基づく登録済み事業レコード。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      },
+      {
+        "field": "progress_state",
+        "statement": "接続事業「地場産業の新たな展開への支援」は兵庫県地域創生戦略（第三期）の取組方針項目として令和7年度の登録済み事業レコードが存在し、県の年次実施状況報告書の対象として実施されている。",
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "location_note": "令和7年度の兵庫県地域創生戦略（第三期）の実施状況に基づく登録済み事業レコード。",
+        "decision": "needs_review",
+        "review_note": "推定接続を前提とする暫定的な in_progress 判定であり、県の公式な公約進捗公表に基づくものではない。達成度（達成・一部達成等）の判定は行わない。"
+      }
+    ],
+    "open_questions": [
+      "事業との接続は文言・内容に基づく推定であり、県が公約と事業の公式な対応付けを公表した場合は接続を見直す。",
+      "候補者欄が案内する公式HP・SNS（QRコード）の詳細な公約資料が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hyogo-pref-2024-promise-010",
+    "subject_type": "promise",
+    "subject_id": "jp-local-280003-executive-2024-11-17-promise-010",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）3ページ目のさいとう元彦候補欄から、項目の原文をそのまま転記した。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報3ページ目・さいとう元彦候補欄「4つの政策」の政策3。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式（PDFのテキスト層は実質存在しない）のため、PDFの描画画像（100dpi・300dpi）で照合した。資料上の項目境界（「4つの政策」の番号政策と・印）をそのまま公約の単位とし、見出し文（スローガン）、前回公約の進捗表示、左欄の1期目の取組・実績表示、略歴はレコードに含めていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は兵庫県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは神戸市選挙管理委員会の公式ページに保全掲載された同一文書を、神戸市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式（全4ページのテキスト抽出は空白を除き2,180字で、いずれも選管の表頭・投票案内等の印刷文字であり、候補者欄からは文字が抽出されない）ため、登録文はPDFの描画画像（100dpi・300dpi）から転記し、複数解像度で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "公報の表頭（兵庫県選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、神戸市選挙管理委員会の公式ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。県選管の知事選特設サイトでの掲載継続が確認できれば、そちらの所在も出典に併記する。候補者欄が案内する公式HP・SNSの詳細資料が新たに確認できれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "登録済みの重点事業10系列に防災・防犯を扱う系列がないため。計画・事業資料で対応する施策が確認できれば接続を検討する。",
+      "番号政策は配下の・項目と主題が重なる部分があり、独立レコードとした判断は境界ケースである。詳細な候補者資料が確認できれば、項目の階層関係を照合する。",
+      "候補者欄が案内する公式HP・SNS（QRコード）の詳細な公約資料が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hyogo-pref-2024-promise-011",
+    "subject_type": "promise",
+    "subject_id": "jp-local-280003-executive-2024-11-17-promise-011",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）3ページ目のさいとう元彦候補欄から、項目の原文をそのまま転記した。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報3ページ目・さいとう元彦候補欄「4つの政策」政策3の・項目1。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式（PDFのテキスト層は実質存在しない）のため、PDFの描画画像（100dpi・300dpi）で照合した。資料上の項目境界（「4つの政策」の番号政策と・印）をそのまま公約の単位とし、見出し文（スローガン）、前回公約の進捗表示、左欄の1期目の取組・実績表示、略歴はレコードに含めていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は兵庫県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは神戸市選挙管理委員会の公式ページに保全掲載された同一文書を、神戸市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式（全4ページのテキスト抽出は空白を除き2,180字で、いずれも選管の表頭・投票案内等の印刷文字であり、候補者欄からは文字が抽出されない）ため、登録文はPDFの描画画像（100dpi・300dpi）から転記し、複数解像度で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "公報の表頭（兵庫県選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、神戸市選挙管理委員会の公式ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。県選管の知事選特設サイトでの掲載継続が確認できれば、そちらの所在も出典に併記する。候補者欄が案内する公式HP・SNSの詳細資料が新たに確認できれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "登録済みの重点事業10系列に防犯対策を扱う系列がないため。計画・事業資料で対応する施策が確認できれば接続を検討する。",
+      "候補者欄が案内する公式HP・SNS（QRコード）の詳細な公約資料が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hyogo-pref-2024-promise-012",
+    "subject_type": "promise",
+    "subject_id": "jp-local-280003-executive-2024-11-17-promise-012",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）3ページ目のさいとう元彦候補欄から、項目の原文をそのまま転記した。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報3ページ目・さいとう元彦候補欄「4つの政策」政策3の・項目2。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式（PDFのテキスト層は実質存在しない）のため、PDFの描画画像（100dpi・300dpi）で照合した。資料上の項目境界（「4つの政策」の番号政策と・印）をそのまま公約の単位とし、見出し文（スローガン）、前回公約の進捗表示、左欄の1期目の取組・実績表示、略歴はレコードに含めていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は兵庫県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは神戸市選挙管理委員会の公式ページに保全掲載された同一文書を、神戸市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式（全4ページのテキスト抽出は空白を除き2,180字で、いずれも選管の表頭・投票案内等の印刷文字であり、候補者欄からは文字が抽出されない）ため、登録文はPDFの描画画像（100dpi・300dpi）から転記し、複数解像度で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "公報の表頭（兵庫県選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、神戸市選挙管理委員会の公式ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。県選管の知事選特設サイトでの掲載継続が確認できれば、そちらの所在も出典に併記する。候補者欄が案内する公式HP・SNSの詳細資料が新たに確認できれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "登録済みの重点事業10系列に災害対応を扱う系列がないため。計画・事業資料で対応する施策が確認できれば接続を検討する。",
+      "候補者欄が案内する公式HP・SNS（QRコード）の詳細な公約資料が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hyogo-pref-2024-promise-013",
+    "subject_type": "promise",
+    "subject_id": "jp-local-280003-executive-2024-11-17-promise-013",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）3ページ目のさいとう元彦候補欄から、項目の原文をそのまま転記した。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報3ページ目・さいとう元彦候補欄「4つの政策」政策3の・項目3。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式（PDFのテキスト層は実質存在しない）のため、PDFの描画画像（100dpi・300dpi）で照合した。資料上の項目境界（「4つの政策」の番号政策と・印）をそのまま公約の単位とし、見出し文（スローガン）、前回公約の進捗表示、左欄の1期目の取組・実績表示、略歴はレコードに含めていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は兵庫県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは神戸市選挙管理委員会の公式ページに保全掲載された同一文書を、神戸市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式（全4ページのテキスト抽出は空白を除き2,180字で、いずれも選管の表頭・投票案内等の印刷文字であり、候補者欄からは文字が抽出されない）ため、登録文はPDFの描画画像（100dpi・300dpi）から転記し、複数解像度で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "公報の表頭（兵庫県選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、神戸市選挙管理委員会の公式ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。県選管の知事選特設サイトでの掲載継続が確認できれば、そちらの所在も出典に併記する。候補者欄が案内する公式HP・SNSの詳細資料が新たに確認できれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "登録済みの重点事業10系列に防犯対策を扱う系列がないため。計画・事業資料で対応する施策が確認できれば接続を検討する。",
+      "候補者欄が案内する公式HP・SNS（QRコード）の詳細な公約資料が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hyogo-pref-2024-promise-014",
+    "subject_type": "promise",
+    "subject_id": "jp-local-280003-executive-2024-11-17-promise-014",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）3ページ目のさいとう元彦候補欄から、項目の原文をそのまま転記した。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報3ページ目・さいとう元彦候補欄「4つの政策」の政策4。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式（PDFのテキスト層は実質存在しない）のため、PDFの描画画像（100dpi・300dpi）で照合した。資料上の項目境界（「4つの政策」の番号政策と・印）をそのまま公約の単位とし、見出し文（スローガン）、前回公約の進捗表示、左欄の1期目の取組・実績表示、略歴はレコードに含めていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は兵庫県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは神戸市選挙管理委員会の公式ページに保全掲載された同一文書を、神戸市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式（全4ページのテキスト抽出は空白を除き2,180字で、いずれも選管の表頭・投票案内等の印刷文字であり、候補者欄からは文字が抽出されない）ため、登録文はPDFの描画画像（100dpi・300dpi）から転記し、複数解像度で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "公報の表頭（兵庫県選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、神戸市選挙管理委員会の公式ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。県選管の知事選特設サイトでの掲載継続が確認できれば、そちらの所在も出典に併記する。候補者欄が案内する公式HP・SNSの詳細資料が新たに確認できれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "登録済みの重点事業10系列に県政改革そのものを扱う系列がないため。計画・事業資料で対応する施策が確認できれば接続を検討する。",
+      "番号政策は配下の・項目と主題が重なる部分があり、独立レコードとした判断は境界ケースである。詳細な候補者資料が確認できれば、項目の階層関係を照合する。",
+      "候補者欄が案内する公式HP・SNS（QRコード）の詳細な公約資料が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hyogo-pref-2024-promise-015",
+    "subject_type": "promise",
+    "subject_id": "jp-local-280003-executive-2024-11-17-promise-015",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）3ページ目のさいとう元彦候補欄から、項目の原文をそのまま転記した。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報3ページ目・さいとう元彦候補欄「4つの政策」政策4の・項目1。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式（PDFのテキスト層は実質存在しない）のため、PDFの描画画像（100dpi・300dpi）で照合した。資料上の項目境界（「4つの政策」の番号政策と・印）をそのまま公約の単位とし、見出し文（スローガン）、前回公約の進捗表示、左欄の1期目の取組・実績表示、略歴はレコードに含めていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は兵庫県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは神戸市選挙管理委員会の公式ページに保全掲載された同一文書を、神戸市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式（全4ページのテキスト抽出は空白を除き2,180字で、いずれも選管の表頭・投票案内等の印刷文字であり、候補者欄からは文字が抽出されない）ため、登録文はPDFの描画画像（100dpi・300dpi）から転記し、複数解像度で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "公報の表頭（兵庫県選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、神戸市選挙管理委員会の公式ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。県選管の知事選特設サイトでの掲載継続が確認できれば、そちらの所在も出典に併記する。候補者欄が案内する公式HP・SNSの詳細資料が新たに確認できれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "登録済みの重点事業10系列に県庁舎の再整備を扱う系列がないため。計画・事業資料で対応する施策が確認できれば接続を検討する。",
+      "候補者欄が案内する公式HP・SNS（QRコード）の詳細な公約資料が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hyogo-pref-2024-promise-016",
+    "subject_type": "promise",
+    "subject_id": "jp-local-280003-executive-2024-11-17-promise-016",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）3ページ目のさいとう元彦候補欄から、項目の原文をそのまま転記した。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報3ページ目・さいとう元彦候補欄「4つの政策」政策4の・項目2。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式（PDFのテキスト層は実質存在しない）のため、PDFの描画画像（100dpi・300dpi）で照合した。資料上の項目境界（「4つの政策」の番号政策と・印）をそのまま公約の単位とし、見出し文（スローガン）、前回公約の進捗表示、左欄の1期目の取組・実績表示、略歴はレコードに含めていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は兵庫県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは神戸市選挙管理委員会の公式ページに保全掲載された同一文書を、神戸市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式（全4ページのテキスト抽出は空白を除き2,180字で、いずれも選管の表頭・投票案内等の印刷文字であり、候補者欄からは文字が抽出されない）ため、登録文はPDFの描画画像（100dpi・300dpi）から転記し、複数解像度で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "公報の表頭（兵庫県選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、神戸市選挙管理委員会の公式ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。県選管の知事選特設サイトでの掲載継続が確認できれば、そちらの所在も出典に併記する。候補者欄が案内する公式HP・SNSの詳細資料が新たに確認できれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "登録済みの重点事業10系列に県の財政運営そのものを扱う系列がないため。財政資料で進捗の裏付けが確認できれば接続を検討する。",
+      "候補者欄が案内する公式HP・SNS（QRコード）の詳細な公約資料が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hyogo-pref-2024-promise-017",
+    "subject_type": "promise",
+    "subject_id": "jp-local-280003-executive-2024-11-17-promise-017",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）3ページ目のさいとう元彦候補欄から、項目の原文をそのまま転記した。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報3ページ目・さいとう元彦候補欄「4つの政策」政策4の・項目3。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式（PDFのテキスト層は実質存在しない）のため、PDFの描画画像（100dpi・300dpi）で照合した。資料上の項目境界（「4つの政策」の番号政策と・印）をそのまま公約の単位とし、見出し文（スローガン）、前回公約の進捗表示、左欄の1期目の取組・実績表示、略歴はレコードに含めていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は兵庫県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは神戸市選挙管理委員会の公式ページに保全掲載された同一文書を、神戸市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式（全4ページのテキスト抽出は空白を除き2,180字で、いずれも選管の表頭・投票案内等の印刷文字であり、候補者欄からは文字が抽出されない）ため、登録文はPDFの描画画像（100dpi・300dpi）から転記し、複数解像度で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "公報の表頭（兵庫県選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、神戸市選挙管理委員会の公式ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。県選管の知事選特設サイトでの掲載継続が確認できれば、そちらの所在も出典に併記する。候補者欄が案内する公式HP・SNSの詳細資料が新たに確認できれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "登録済みの重点事業10系列に県の財政運営そのものを扱う系列がないため。財政資料で進捗の裏付けが確認できれば接続を検討する。",
+      "候補者欄が案内する公式HP・SNS（QRコード）の詳細な公約資料が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hyogo-pref-2024-promise-018",
+    "subject_type": "promise",
+    "subject_id": "jp-local-280003-executive-2024-11-17-promise-018",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）3ページ目のさいとう元彦候補欄から、項目の原文をそのまま転記した。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報3ページ目・さいとう元彦候補欄「4つの政策」政策4の・項目4。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式（PDFのテキスト層は実質存在しない）のため、PDFの描画画像（100dpi・300dpi）で照合した。資料上の項目境界（「4つの政策」の番号政策と・印）をそのまま公約の単位とし、見出し文（スローガン）、前回公約の進捗表示、左欄の1期目の取組・実績表示、略歴はレコードに含めていない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は兵庫県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは神戸市選挙管理委員会の公式ページに保全掲載された同一文書を、神戸市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式（全4ページのテキスト抽出は空白を除き2,180字で、いずれも選管の表頭・投票案内等の印刷文字であり、候補者欄からは文字が抽出されない）ため、登録文はPDFの描画画像（100dpi・300dpi）から転記し、複数解像度で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "hyogo-pref-governor-election-2024-bulletin"
+        ],
+        "location_note": "公報の表頭（兵庫県選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、神戸市選挙管理委員会の公式ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。県選管の知事選特設サイトでの掲載継続が確認できれば、そちらの所在も出典に併記する。候補者欄が案内する公式HP・SNSの詳細資料が新たに確認できれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "登録済みの重点事業10系列に海外事務所の見直しを扱う系列がないため。計画・事業資料で対応する施策が確認できれば接続を検討する。",
+      "候補者欄が案内する公式HP・SNS（QRコード）の詳細な公約資料が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
   }
 ]

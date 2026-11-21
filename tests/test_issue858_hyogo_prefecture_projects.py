@@ -35,11 +35,32 @@ def test_projects_validate_against_schema() -> None:
     for project in projects:
         jsonschema.validate(project, schema)
     assert len(projects) == 10
+    # Stage 2 registered no promise links; stage 3 (Issue #862)
+    # connected six governor promises to four of the series, and
+    # the reverse links are pinned here (the forward direction is
+    # pinned by the stage-3 registration test).
+    expected_links = {
+        "jp-local-280003-project-2025-next-generation-education": [
+            "jp-local-280003-executive-2024-11-17-promise-001",
+            "jp-local-280003-executive-2024-11-17-promise-002",
+            "jp-local-280003-executive-2024-11-17-promise-004",
+        ],
+        "jp-local-280003-project-2025-educational-environment": [
+            "jp-local-280003-executive-2024-11-17-promise-001",
+            "jp-local-280003-executive-2024-11-17-promise-003",
+        ],
+        "jp-local-280003-project-2025-marriage-support": [
+            "jp-local-280003-executive-2024-11-17-promise-005",
+        ],
+        "jp-local-280003-project-2025-local-industry-development": [
+            "jp-local-280003-executive-2024-11-17-promise-009",
+        ],
+    }
     for project in projects:
         assert project["municipality_id"] == MID
         assert project["fiscal_year"] == 2025
         assert project["review_status"] == "reviewed"
-        assert project["related_promise_ids"] == []
+        assert project["related_promise_ids"] == expected_links.get(project["id"], [])
 
 
 def test_selection_catalog_covers_population() -> None:
