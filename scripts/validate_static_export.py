@@ -167,7 +167,7 @@ BASE_PAGE_REQUIREMENTS: dict[str, list[str]] = {
         "まだ登録・評価していないこと",
     ],
     "projects/index.html": [
-        "24自治体の Reviewed 事業レコード",
+        "27自治体の Reviewed 事業レコード",
         "千葉県｜登録事業", "千葉市｜登録事業",
         "登録単位：施策（10系列）", "登録単位：政策（10系列）",
         "令和7年度の施策評価シート", "分野単位のKGI/KPI",
@@ -769,7 +769,7 @@ def validate_hokkaido_assembly_scope() -> list[str]:
     if path.is_file():
         content = normalized_html(path)
         for phrase in [
-            "24議会", "埼玉県議会", "さいたま市議会", "川口市議会",
+            "27議会", "埼玉県議会", "さいたま市議会", "川口市議会",
             "大阪府議会", "大阪市会", "堺市議会",
             "北海道議会", "札幌市議会", "旭川市議会",
             "神奈川県議会", "横浜市会", "川崎市議会",
@@ -1266,7 +1266,7 @@ def validate_chiba_cluster_export() -> list[str]:
     assemblies_page = EXPORT_ROOT / "assemblies/index.html"
     if assemblies_page.is_file():
         html = normalized_html(assemblies_page)
-        for phrase in ("24議会", "千葉県議会", "千葉市議会"):
+        for phrase in ("27議会", "千葉県議会", "千葉市議会"):
             if phrase not in html:
                 failures.append(f"Assemblies index missing Chiba fact: {phrase}")
     for slug, phrases in {
@@ -1381,7 +1381,7 @@ def validate_hyogo_cluster_export() -> list[str]:
     if not path.is_file():
         return failures
     html = normalized_html(path)
-    if "24自治体の Reviewed 事業レコード" not in html:
+    if "27自治体の Reviewed 事業レコード" not in html:
         failures.append("Projects index must show 22 Reviewed municipalities")
     scopes = {
         "hyogo-prefecture": (
@@ -1600,7 +1600,7 @@ def validate_hyogo_web_finish_export() -> list[str]:
     index = EXPORT_ROOT / "assemblies/index.html"
     if index.is_file():
         html = normalized_html(index)
-        for phrase in ("24議会", "兵庫県議会", "神戸市会"):
+        for phrase in ("27議会", "兵庫県議会", "神戸市会"):
             if phrase not in html:
                 failures.append(f"Assemblies index missing Hyogo fact: {phrase}")
 
@@ -1854,7 +1854,7 @@ def validate_miyagi_cluster_export() -> list[str]:
     index = EXPORT_ROOT / "assemblies/index.html"
     if index.is_file():
         html = normalized_html(index)
-        for phrase in ("24議会", "宮城県議会", "仙台市議会"):
+        for phrase in ("27議会", "宮城県議会", "仙台市議会"):
             if phrase not in html:
                 failures.append(f"Assemblies index missing Miyagi registered fact: {phrase}")
     for slug, phrases in (
@@ -1875,6 +1875,286 @@ def validate_miyagi_cluster_export() -> list[str]:
     return failures
 
 
+
+def shizuoka_cluster_project_detail_files() -> set[str]:
+    """Require every reviewed series to export its public detail page."""
+    required: set[str] = set()
+    for slug in ("shizuoka-prefecture", "shizuoka-city", "hamamatsu-city"):
+        records = load_json(ROOT / "data" / "reviewed" / slug / "projects.json")
+        required.update(
+            f"projects/{slug}/{series}/index.html"
+            for series in {record["series_id"] for record in records
+                           if record["review_status"] == "reviewed"}
+        )
+    return required
+
+
+def validate_shizuoka_cluster_data_facts() -> None:
+    """Cross-check registered Shizuoka names, budgets, KPIs and vote boundaries."""
+    cases = (
+        ("shizuoka-prefecture", "220001", "jp-local-220001",
+         "shizuoka_priority_project_selection.json", "shizuoka_project_sources.json",
+         46, 10, 2025),
+        ("shizuoka-city", "221007", "jp-local-221007",
+         "shizuoka_city_priority_project_selection.json", "shizuoka_city_project_sources.json",
+         23, 10, 2026),
+        ("hamamatsu-city", "221309", "jp-local-221309",
+         "hamamatsu_city_priority_project_selection.json", "hamamatsu_city_project_sources.json",
+         18, 10, 2025),
+    )
+    for slug, code, municipality_id, selection_file, source_file, kpi_count, series_count, year in cases:
+        root = ROOT / "data" / "reviewed" / slug
+        municipality = load_json(root / "municipality.json")
+        selection = load_json(ROOT / "data" / "catalog" / selection_file)
+        source_ids = {record["id"] for record in
+                      load_json(ROOT / "data" / "catalog" / source_file)["records"]}
+        projects = load_json(root / "projects.json")
+        packets = load_json(root / "project_evidence_packets.json")
+        kpis = load_json(root / "project_kpis.json")
+        assert municipality["official_code"] == code
+        assert municipality["id"] == municipality_id
+        assert municipality["data_status"] == "reviewed"
+        assert len(projects) == len(selection["selections"]) == len(packets) == series_count
+        assert len({record["series_id"] for record in projects}) == series_count
+        assert len(kpis) == kpi_count
+        by_id = {record["id"]: record for record in projects}
+        assert {packet["subject_id"] for packet in packets} == set(by_id)
+        for selected in selection["selections"]:
+            record = by_id[selected["project_id"]]
+            assert (record["series_id"], record["official_title"]) == (
+                selected["series_id"], selected["official_title"])
+        for record in projects:
+            assert record["municipality_id"] == municipality_id
+            assert record["fiscal_year"] == year
+            assert record["review_status"] == "reviewed"
+            assert record["official_evaluation"] is None
+            assert record["budget_records"] and all(
+                item["amount_yen"] is None for item in record["budget_records"])
+            assert set(record["sources"]).issubset(source_ids)
+        assert all(record["project_id"] in by_id for record in kpis)
+        settlements = load_json(root / "settlement_records.json")
+        assert len(settlements) == 51
+        assert {record["fiscal_year"] for record in settlements} == {2022, 2023, 2024}
+        assert all(record["review_status"] == "reviewed" and
+                   record["account_type"] == "ordinary" and
+                   record["stage"] == "settlement" for record in settlements)
+
+    pref_plan = load_json(ROOT / "data" / "reviewed" / "shizuoka-prefecture" / "plan_review.json")
+    structure = next(record for record in pref_plan["records"]
+                     if record["id"] == "shizuoka-plan-policy-structure")
+    assert all(term in structure["value"] for term in
+               ("政策8", "政策の柱24", "取組197", "成果指標101"))
+    budget_expected = {
+        "shizuoka-prefecture": {"total_revenue": 1_414_100_000_000,
+                                "local_tax": 542_000_000_000,
+                                "total_expenditure": 1_414_100_000_000},
+        "shizuoka-city": {"total_revenue": 403_500_000_000,
+                          "local_tax": 148_938_000_000},
+        "hamamatsu-city": {"total_revenue": 440_100_000_000,
+                           "local_tax": 160_600_000_000},
+    }
+    for slug, expected in budget_expected.items():
+        records = load_json(ROOT / "data" / "reviewed" / slug / "fiscal_records.json")
+        actual = {r["metric"]: r["amount_yen"] for r in records
+                  if r["fiscal_year"] == 2026 and
+                  r["stage"] == "initial_budget" and r["account_type"] == "general"}
+        assert actual == expected, slug
+
+    terms = load_json(ROOT / "data" / "entities" / "executives" / "executive_terms.json")
+    promises = load_json(ROOT / "data" / "entities" / "executives" / "promises.json")
+    evidence = load_json(ROOT / "data" / "entities" / "executives" / "evidence_packets.json")
+    for municipality_id, office, name, start, end, vote, count in (
+        ("jp-local-220001", "governor", "鈴木 康友", "2024-05-26", "2028-05-25", "728,500票", 9),
+        ("jp-local-221007", "mayor", "難波 喬司", "2023-04-13", "2027-04-12", "149,117票", 3),
+        ("jp-local-221309", "mayor", "中野 祐介", "2023-05-01", "2027-04-30", "246,745票", 10),
+    ):
+        term = next(record for record in terms
+                    if record["municipality_id"] == municipality_id and
+                    record["office"] == office and record["status"] == "current")
+        assert (term["person_name"], term["term_start"], term["term_end"]) == (name, start, end)
+        assert len([record for record in promises
+                    if record["executive_term_id"] == term["id"] and
+                    record["review_status"] == "reviewed"]) == count
+        packet = next(record for record in evidence if record["subject_id"] == term["id"])
+        claim = next(item for item in packet["claims"] if item["field"] == "election_date")
+        assert vote in claim["statement"]
+
+    for slug, name, seats, proposal_count, vote_count, faction_count in (
+        ("shizuoka-prefecture", "静岡県議会", 68, 43, 25, 75),
+        ("shizuoka-city", "静岡市議会", 48, 56, 56, 495),
+        ("hamamatsu-city", "浜松市議会", 46, 69, 62, 0),
+    ):
+        directory = ROOT / "data" / "reviewed" / slug / "assembly"
+        assembly = load_json(directory / "assembly_records.json")
+        disclosure = load_json(directory / "disclosure_profiles.json")
+        proposals = load_json(directory / "proposals.json")
+        votes = load_json(directory / "votes.json")
+        faction_votes = load_json(directory / "faction_votes.json")
+        assert len(assembly) == len(disclosure) == 1
+        assert assembly[0]["name"] == name
+        assert assembly[0].get("seat_count", assembly[0].get("seats")) == seats
+        assert assembly[0]["review_status"] == disclosure[0]["review_status"] == "reviewed"
+        assert len(proposals) == proposal_count
+        assert len(votes) == vote_count
+        assert len(faction_votes) == faction_count
+        if slug == "shizuoka-prefecture":
+            pending = [item for item in proposals if item["outcome"] == "pending"]
+            assert len(pending) == 17
+            assert assembly[0]["member_count_current"] == 67
+            faction_note = next(item["note"] for item in disclosure[0]["items"]
+                                if item["item"] == "faction_votes")
+            assert "本会議の表決そのものの事後記録" in faction_note
+            assert "採決前の態度表明の集約ではない" in faction_note
+        elif slug == "shizuoka-city":
+            note = next(item["note"] for item in disclosure[0]["items"]
+                        if item["item"] == "member_votes")
+            assert "議員個人別の賛否は公表されていない" in note
+        else:
+            assert assembly[0]["members_count"] == 44
+            assert sum(len(vote.get("member_votes", [])) for vote in votes) == 2728
+            note = next(item["note"] for item in disclosure[0]["items"]
+                        if item["item"] == "faction_votes")
+            assert "会派別の賛否の集計表は公表されていない" in note
+
+
+def _shizuoka_scoped_text(html_text: str, attribute: str, value: str) -> str | None:
+    """Capture a balanced <section> including nested project/evidence sections."""
+    from html.parser import HTMLParser
+
+    class SectionParser(HTMLParser):
+        def __init__(self) -> None:
+            super().__init__(convert_charrefs=True)
+            self.depth = 0
+            self.done = False
+            self.found = False
+            self.text_parts: list[str] = []
+
+        def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+            if tag != "section":
+                return
+            if self.depth:
+                self.depth += 1
+            elif not self.done and dict(attrs).get(attribute) == value:
+                self.depth = 1
+                self.found = True
+
+        def handle_data(self, data: str) -> None:
+            if self.depth:
+                self.text_parts.append(data)
+
+        def handle_endtag(self, tag: str) -> None:
+            if tag == "section" and self.depth:
+                self.depth -= 1
+                if self.depth == 0:
+                    self.done = True
+
+    parser = SectionParser()
+    parser.feed(html_text)
+    return "".join(parser.text_parts) if parser.found else None
+
+
+def validate_shizuoka_cluster_export() -> list[str]:
+    failures: list[str] = []
+    pages = {
+        "shizuoka-prefecture": {
+            "scope-title": ("しずおか ウェルビーイングプラン", "政策8本", "政策の柱24本", "KPI46件"),
+            "finance-headline-title": ("2026年度一般会計当初予算", "1,414,100,000千円", "542,000,000千円"),
+            "projects-title": ("政策の柱10系列", "KPI46件"),
+            "governor-title": ("鈴木 康友", "2024年5月26日", "2028年5月25日", "728,500票", "9件"),
+            "assembly-title": ("静岡県議会", "43件", "17件", "pending", "表決そのものの事後記録"),
+        },
+        "shizuoka-city": {
+            "scope-title": ("第5次静岡市総合計画", "9分野・45政策・101施策", "KPI23件"),
+            "finance-headline-title": ("2026年度一般会計当初予算", "403,500,000千円", "148,938,000千円"),
+            "projects-title": ("施策10系列・KPI23件",),
+            "mayor-title": ("難波 喬司", "2023年4月13日", "2027年4月12日", "149,117票", "3件"),
+            "assembly-title": ("静岡市議会", "56件", "会派別賛否495件", "議員個人別"),
+        },
+        "hamamatsu-city": {
+            "scope-title": ("浜松市総合計画第2期基本計画", "7分野・25基本政策・125政策", "KPI18件"),
+            "finance-headline-title": ("2026年度一般会計当初予算", "440,100,000千円", "160,600,000千円"),
+            "projects-title": ("基本政策10系列・KPI18件",),
+            "mayor-title": ("中野 祐介", "2023年5月1日", "2027年4月30日", "246,745票", "10件"),
+            "assembly-title": ("浜松市議会", "69件", "議員別賛否2,728件"),
+        },
+    }
+    for slug, scoped_copy in pages.items():
+        path = EXPORT_ROOT / "municipalities" / slug / "index.html"
+        if not path.is_file():
+            failures.append(f"Missing Shizuoka cluster page: {slug}")
+            continue
+        html = normalized_html(path)
+        for section_id, phrases in scoped_copy.items():
+            section = _shizuoka_scoped_text(html, "aria-labelledby", section_id)
+            if section is None:
+                failures.append(f"Shizuoka {slug} missing section: {section_id}")
+                continue
+            for phrase in phrases:
+                if phrase not in section:
+                    failures.append(f"Shizuoka {slug} {section_id} missing fact: {phrase}")
+        project_section = _shizuoka_scoped_text(html, "id", "priority-projects")
+        if project_section is None:
+            failures.append(f"Shizuoka {slug} missing its priority projects section")
+        else:
+            records = load_json(ROOT / "data" / "reviewed" / slug / "projects.json")
+            for record in records:
+                if record["review_status"] == "reviewed" and record["official_title"] not in project_section:
+                    failures.append(f"Shizuoka {slug} missing official title: {record['official_title']}")
+
+    projects_page = EXPORT_ROOT / "projects/index.html"
+    if projects_page.is_file():
+        html = normalized_html(projects_page)
+        if "27自治体の Reviewed 事業レコード" not in html:
+            failures.append("Projects page must show 27 municipalities")
+        for slug, unit in (
+            ("shizuoka-prefecture", "登録単位：政策の柱"),
+            ("shizuoka-city", "登録単位：施策"),
+            ("hamamatsu-city", "登録単位：基本政策"),
+        ):
+            section = _shizuoka_scoped_text(html, "id", slug)
+            if section is None or unit not in section:
+                failures.append(f"Shizuoka {slug} project index is missing scoped registration unit")
+                continue
+            records = load_json(ROOT / "data" / "reviewed" / slug / "projects.json")
+            for record in records:
+                if record["review_status"] == "reviewed" and record["official_title"] not in section:
+                    failures.append(f"Shizuoka {slug} project index missing: {record['official_title']}")
+
+    promises_page = EXPORT_ROOT / "promises/index.html"
+    if promises_page.is_file():
+        html = normalized_html(promises_page)
+        for slug, name, count in (
+            ("shizuoka-prefecture", "鈴木 康友", 9),
+            ("shizuoka-city", "難波 喬司", 3),
+            ("hamamatsu-city", "中野 祐介", 10),
+        ):
+            section = _shizuoka_scoped_text(html, "id", slug)
+            for phrase in (name, f"Reviewed 公約原文 {count}件"):
+                if section is None or phrase not in section:
+                    failures.append(f"Shizuoka {slug} promise section missing: {phrase}")
+
+    index = EXPORT_ROOT / "assemblies/index.html"
+    if index.is_file():
+        html = normalized_html(index)
+        for phrase in ("27議会", "静岡県議会", "静岡市議会", "浜松市議会"):
+            if phrase not in html:
+                failures.append(f"Assembly index missing Shizuoka fact: {phrase}")
+    for slug, phrases in (
+        ("shizuoka-prefecture", ("静岡県議会", "表決そのものの事後記録", "17件", "pending")),
+        ("shizuoka-city", ("静岡市議会", "会派別", "議員個人別")),
+        ("hamamatsu-city", ("浜松市議会", "議員個人別", "2,728件")),
+    ):
+        path = EXPORT_ROOT / "assemblies" / slug / "index.html"
+        if path.is_file():
+            html = normalized_html(path)
+            for phrase in phrases:
+                if phrase not in html:
+                    failures.append(f"Shizuoka {slug} assembly detail missing: {phrase}")
+        else:
+            failures.append(f"Missing Shizuoka assembly page: {slug}")
+    return failures
+
+
 def main() -> int:
     args = parse_args()
     failures: list[str] = []
@@ -1884,6 +2164,7 @@ def main() -> int:
     validate_hyogo_cluster_data_facts()
     validate_hyogo_web_finish_data_facts()
     validate_miyagi_cluster_data_facts()
+    validate_shizuoka_cluster_data_facts()
     required_files = (
         set(REQUIRED_FILES)
         | published_required_files()
@@ -1894,6 +2175,15 @@ def main() -> int:
         | chiba_project_detail_files()
         | hyogo_cluster_project_detail_files()
         | miyagi_cluster_project_detail_files()
+        | shizuoka_cluster_project_detail_files()
+        | {
+            "municipalities/shizuoka-prefecture/index.html",
+            "municipalities/shizuoka-city/index.html",
+            "municipalities/hamamatsu-city/index.html",
+            "assemblies/shizuoka-prefecture/index.html",
+            "assemblies/shizuoka-city/index.html",
+            "assemblies/hamamatsu-city/index.html",
+        }
         | {
             "municipalities/miyagi-prefecture/index.html",
             "municipalities/sendai-city/index.html",
@@ -1963,6 +2253,7 @@ def main() -> int:
     failures.extend(validate_hyogo_cluster_export())
     failures.extend(validate_hyogo_web_finish_export())
     failures.extend(validate_miyagi_cluster_export())
+    failures.extend(validate_shizuoka_cluster_export())
     failures.extend(validate_hokkaido_assembly_scope())
     failures.extend(validate_osaka_assembly_scope())
 
