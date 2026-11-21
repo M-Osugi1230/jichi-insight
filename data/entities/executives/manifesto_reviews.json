@@ -289,5 +289,23 @@
     "last_reviewed_at": "2026-11-21",
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-review-jp-local-120006-2025",
+    "executive_term_id": "jp-local-120006-executive-2025-04-05",
+    "source_id": "chiba-pref-governor-election-2025-bulletin",
+    "candidate_name": "熊谷 俊人",
+    "source_location": "全2ページPDF・1ページ目の候補者欄",
+    "review_scope": "candidate_panel",
+    "statement_boundary": "mixed",
+    "segmentation_status": "segmented",
+    "promise_records_created": 25,
+    "reason_codes": [
+      "other"
+    ],
+    "review_note": "候補者欄はポスター形式で、見出し「県民を守り、支え、そして飛躍する千葉へ」の下に、左・中央に「県政ビジョン 次の4年に向けて」として番号項目8件と各項目の◆項目（項目1に3件、項目2に2件、項目3に3件、項目4に3件、項目5に2件、項目6に1件、項目7に1件、項目8に2件、計17件）、右側に「県民の命とくらしを守る」の導入文と「4年の主な成果」5項目、欄の下部に「知事4年の実績＋県政ビジョン」の案内（公式ホームページのURLとQRコード）、右端にプロフィールが配置されている。実績・略歴・顔写真は公約ではないためレコード化しなかった。見出し文（スローガン）と導入文もレコード化していない。番号項目8件は◆項目の単なる見出しではなく、項目1の防犯対策や項目4の成田空港の産業拠点など、◆項目にない内容を含む政策の柱であるため、公約レコードとして登録した（◆項目群と主題が重なる項目があることは extraction_note と証拠パケットの open_questions に残す）。◆項目17件は原文上の境界が明確なため、これを単位に登録した。数値目標の明示は項目3の◆項目2の「洋式化100%」のみで、target に登録した。項目4の見出しには1期目の実績（過去最高の企業誘致数）への言及が含まれるが、将来方向の表明として登録し、実績言及そのものは公約化していない。候補者欄は画像形式（PDFのテキスト抽出は空白を除き2文字のみ）のため、登録文は描画画像（150dpi・300dpi）から転記し、複数解像度で照合した。",
+    "last_reviewed_at": "2026-11-21",
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]

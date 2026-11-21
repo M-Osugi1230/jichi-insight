@@ -225,10 +225,13 @@ def test_chiba_governor_term() -> None:
     assert term["term_start"] == "2025-04-05"
     assert term["term_end"] == "2029-04-04"
     assert term["election_date"] == "2025-03-16"
-    # No manifesto source is registered at stage 1: the bulletin is
-    # officially published, but its candidate panels are image-only;
-    # the promise stage decides by visual transcription.
-    assert term["manifesto_source_ids"] == []
+    # Stage 1 registered no manifesto source: the bulletin is
+    # officially published, but its candidate panels are image-only.
+    # Stage 3 (Issue #842) registered the bulletin by visual
+    # transcription and connected it to the term.
+    assert term["manifesto_source_ids"] == [
+        "chiba-pref-governor-election-2025-bulletin"
+    ]
 
 
 def test_chiba_catalog_shape() -> None:

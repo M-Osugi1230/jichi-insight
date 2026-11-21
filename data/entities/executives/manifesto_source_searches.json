@@ -520,5 +520,34 @@
     ],
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-chiba-pref-2025",
+    "executive_term_id": "jp-local-120006-executive-2025-04-05",
+    "searched_at": "2026-11-21",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "chiba-pref-governor-election-2025-bulletin"
+    ],
+    "checked_source_ids": [
+      "chiba-pref-governor-election-2025-results",
+      "chiba-pref-governor-election-2025-bulletin"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "千葉県選挙管理委員会の公式ページ「令和7年3月16日執行千葉県知事選挙」から選挙公報PDFへ到達できることを段階0の棚卸しで確認し、2026-11-21に公報PDF（全2ページ、3,914,116バイト）を県公式サイトから直接取得した。1ページ目のくまがい俊人候補欄（「県政ビジョン 次の4年に向けて」の番号項目8件・◆項目17件）を確認し、選挙公報を出典として登録、分割レビュー（manifesto-review-jp-local-120006-2025）を経て公約レコード25件を作成した。PDFのテキスト抽出は空白を除き2文字のみで候補者欄は画像形式であることを実測し、登録文は描画画像（150dpi・300dpi）の照合で転記した。選挙公報は候補者提出原稿をそのまま印刷した公式文書であり、第三者のコピーではなく県公式サイトから直接取得できたため、公約レコードの confidence は high とした。候補者欄には公式ホームページ（https://www.kumagai-chiba.jp）への案内があるが、その「県政ビジョン」詳細資料の安定した所在は本探索では特定しておらず、資料が存在しないとは判定しない。",
+    "next_actions": [
+      "公式ホームページの県政ビジョン詳細資料の安定した所在が特定できれば、登録済みの公約文と照合する",
+      "未接続の公約（防犯対策、医療・福祉人材の育成、学校施設整備、いじめ・不登校対策、交通インフラ、農業・漁業、行政改革）について、計画・事業資料への進捗証拠の接続を拡充する",
+      "2029年4月の任期満了に伴う次回知事選挙では、新任期の公約原文資料として選挙公報を改めて登録する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]

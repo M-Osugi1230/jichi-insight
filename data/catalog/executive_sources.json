@@ -1,5 +1,5 @@
 {
-  "version": "0.27.0",
+  "version": "0.28.0",
   "updated_at": "2026-11-21",
   "scope": "pilot",
   "records": [
@@ -1206,6 +1206,20 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "2025年3月16日執行の千葉県知事選挙の公式結果ページ。本選挙が「令和7年4月4日の任期満了に伴う選挙」であることを明記し、候補者4人の得票数（熊谷俊人1,404,905票で当選、小倉正行140,435票、立花孝志79,060票、黒川あつひこ10,948票）を掲載する。選挙公報（PDF）へのリンクも掲載する。Wikipediaの集計表には1,405,905とする表記揺れがあるが、県選管の公式公表値は1,404,905である。"
+    },
+    {
+      "id": "chiba-pref-governor-election-2025-bulletin",
+      "municipality_key": "chiba-prefecture",
+      "organization": "千葉県選挙管理委員会",
+      "category": "election",
+      "title": "令和7年3月16日執行 千葉県知事選挙 選挙公報（くまがい俊人候補欄）",
+      "url": "https://www.pref.chiba.lg.jp/senkan/kakokekka/documents/r7chiji-senkyokouhou.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "候補者提出原稿をそのまま印刷した全2ページの公式選挙公報。くまがい俊人候補欄は1ページ目中段。候補者欄は画像形式（PDFのテキスト抽出は空白を除き2文字のみで、テキスト層は実質存在しない）ため、公約文はPDFの描画画像（150dpi・300dpi）の照合で転記した。"
     },
     {
       "id": "chiba-pref-governors-list",
