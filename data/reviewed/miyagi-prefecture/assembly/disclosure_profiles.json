@@ -1,0 +1,103 @@
+[
+ {
+  "as_of": "2026-11-22",
+  "assembly_id": "jp-local-040002-assembly-2023",
+  "confidence": "high",
+  "id": "jp-local-040002-assembly-2023-disclosure-2026",
+  "items": [
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_roster",
+    "note": "議員名簿（会派別・選挙区別・五十音順）を県議会公式サイトで公開。第401回定例会時点の議員は56名で、表決状況表の列構成とも一致する。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_composition",
+    "note": "会派別議員名簿で7会派と無所属1名の構成を公開。会期時点の人数は自由民主党・県民会議30名、みやぎ県民の声9名、日本共産党宮城県会議員団5名、公明党県議団4名、立憲・無所属クラブ3名、21世紀クラブ2名、日本維新の会2名で、表決状況表の会派区分とも一致する。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "committee_composition",
+    "note": "常任委員会（6）・特別委員会・議会運営委員会の所管事項と委員名簿を各委員会ページで公開。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "proposals_and_results",
+    "note": "提出議案等ページで、会期ごとに議案番号・件名・議決年月日・議決結果を公開。",
+    "source_url": null
+   },
+   {
+    "availability": "not_published",
+    "granularity": "faction",
+    "item": "faction_votes",
+    "note": "会派としての態度・賛否の公表はない。宮城県議会が公表するのは議員個人別の表決状況であり、会派単位への集約は行われていない（本登録でも会派別賛否は作成していない）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_votes",
+    "note": "「各議員の表決状況」PDFで、議決日ごとに全議員の賛否（賛成・反対・議長・欠席）、表決方法（簡易表決・起立採決）、出席者数・表決者数・賛成者数・反対者数を公開。これは本会議の表決そのものの事後記録であり、採決前の態度表明の集約ではない。簡易表決の議案では全議員が賛成として印字される形式である。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "political_activity_expense_reports",
+    "note": "収支報告書・政務活動実績報告書を過去5年分、県議会公式サイトで公開。交付単位は会派又は無会派議員で、年度ごとに事務局の発表資料（交付決定額・執行額・残余金・科目別内訳）も公表される。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "political_activity_expense_receipts",
+    "note": "領収書その他の証拠書類の写しも収支報告書等とあわせてインターネットで公開されている。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "inspection_trip_reports",
+    "note": "各委員会の県内外調査ページで、調査日程と調査概要（調査先・調査事項・調査委員）を公開。費用の公表はない。クマ・鳥獣被害対策調査特別委員会の令和8年度分は日程のみで、調査概要の公表は確認できなかった。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "meeting_minutes",
+    "note": "会議録の検索・閲覧システムを県議会公式サイトで提供。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "session_broadcast",
+    "note": "本会議のインターネット中継を県議会公式サイトで提供。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "petition_results",
+    "note": "請願は請願一覧で請願者・受理年月日・付託委員会・審査結果・議決年月日を公表し、本会議で採択・不採択の結論を出す。陳情は受理後に所管委員会へ送付される扱いで、委員会での審査や本会議での議決は行われず、結論の公表もない（本登録でも陳情の結論は登録していない）。",
+    "source_url": null
+   }
+  ],
+  "review_status": "reviewed",
+  "sources": [
+   "miyagi-pref-assembly-members-2026",
+   "miyagi-pref-assembly-proposals-401",
+   "miyagi-pref-assembly-hyouketsu-401",
+   "miyagi-pref-assembly-petitions-2026",
+   "miyagi-pref-assembly-petition-guide",
+   "miyagi-pref-assembly-seimu-page"
+  ]
+ }
+]
