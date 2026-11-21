@@ -305,11 +305,12 @@ def test_bulletin_source_record_points_at_the_pdf() -> None:
     # mayor bulletin record, bringing it to
     # version 0.35.0 / 111 records; the Shizuoka cluster's stage 1
     # (Issue #891) then appended the three Shizuoka Prefecture
-    # governor records and the four Hamamatsu City mayor records in
-    # parallel stage-1 branches, bringing the combined catalog to
-    # version 0.37.0 / 118 records.
-    assert catalog["version"] == "0.37.0"
-    assert len(catalog["records"]) == 118
+    # governor records, the four Hamamatsu City mayor records and
+    # the three Shizuoka City mayor records across parallel stage-1
+    # branches, bringing the combined catalog to
+    # version 0.38.0 / 121 records.
+    assert catalog["version"] == "0.38.0"
+    assert len(catalog["records"]) == 121
     bulletin = next(r for r in catalog["records"] if r["id"] == BULLETIN_ID)
     assert bulletin["url"].endswith("chijisenkyokoho.pdf")
     assert bulletin["municipality_key"] == "osaka-prefecture"

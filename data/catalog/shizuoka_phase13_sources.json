@@ -107,6 +107,30 @@
       "review_status": "reviewed_general_account_settlement_topline",
       "confidence": "high",
       "boundary": "一般会計歳入387,089,852千円・歳出376,221,432千円を確認。予算・収支・特別会計とは分離する。"
+    },
+    {
+      "id": "shizuoka-budget-2026-overview-pdf",
+      "layer": "budget",
+      "title": "令和8年度当初予算（案）の概要",
+      "organization": "静岡市",
+      "url": "https://www.city.shizuoka.lg.jp/documents/56762/01_r8tousyoyosangaiyou.pdf",
+      "source_kind": "pdf",
+      "fiscal_year": 2026,
+      "review_status": "reviewed_general_account_initial_budget_summary",
+      "confidence": "high",
+      "boundary": "一般会計当初予算の歳入歳出総括表で総額403,500,000千円と市税148,938,000千円を確認する。議案の成立は2月定例会の会議結果で別途確認する。"
+    },
+    {
+      "id": "shizuoka-budget-2026-enactment-results",
+      "layer": "budget",
+      "title": "令和8年2月定例会の結果",
+      "organization": "静岡市",
+      "url": "https://www.city.shizuoka.lg.jp/documents/58603/kaigikekka2.pdf",
+      "source_kind": "pdf",
+      "fiscal_year": 2026,
+      "review_status": "reviewed_budget_enactment_results",
+      "confidence": "high",
+      "boundary": "議案第46号（令和8年度静岡市一般会計予算）は2026年3月19日に修正案が否決（賛成少数）され、原案が可決（賛成多数）されたことを確認する。"
     }
   ],
   "quality_boundary": "現行第5次総合計画、2026～2030実施計画、評価運用参照、旧第4次総2024評価、2026当初予算、2024決算をversion/evidence role/fiscal stageごとに分離する。第5次総の年度実績は未公表のため、旧計画実績や評価を現行actualへ流用しない。"

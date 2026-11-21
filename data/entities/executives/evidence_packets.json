@@ -1431,6 +1431,58 @@
     "review_status": "reviewed"
   },
   {
+    "id": "evidence-shizuoka-city-current-mayor-term",
+    "subject_type": "executive_term",
+    "subject_id": "jp-local-221007-executive-2023-04-13",
+    "claims": [
+      {
+        "field": "person_name",
+        "statement": "静岡市の現市長は難波 喬司である。",
+        "source_ids": [
+          "shizuoka-city-mayor-election-2023-results",
+          "shizuoka-city-mayor-profile"
+        ],
+        "location_note": "選挙結果調の当選人欄および静岡市公式サイトの市長のプロフィール。",
+        "decision": "accepted",
+        "review_note": "両出典とも難波喬司を現市長として印字・記載する。"
+      },
+      {
+        "field": "election_date",
+        "statement": "静岡市長選挙は2023年4月9日に執行され、難波喬司が149,117票を得て当選した。",
+        "source_ids": [
+          "shizuoka-city-mayor-election-2023-results"
+        ],
+        "location_note": "選挙結果調33ページの候補者別得票数（市全体）および当落欄。",
+        "decision": "accepted",
+        "review_note": "得票数は区別内訳（葵区42,327票、駿河区58,550票、清水区48,240票）の合計とも一致する。次点は山田誠80,829票。"
+      },
+      {
+        "field": "term_start",
+        "statement": "難波喬司市長の任期は2023年4月13日に始まった。",
+        "source_ids": [
+          "shizuoka-city-mayor-profile"
+        ],
+        "location_note": "市長のプロフィールの経歴欄。",
+        "decision": "accepted",
+        "review_note": "プロフィールに「2023年4月13日～現在に至る 静岡市長」と明記。前任者の任期満了（2023年4月12日）の翌日であり、公職選挙法第259条ただし書の任期起算とも整合する。"
+      },
+      {
+        "field": "term_end",
+        "statement": "難波喬司市長の任期は2027年4月12日に満了する。",
+        "source_ids": [
+          "shizuoka-pref-mayor-term-list"
+        ],
+        "location_note": "静岡県選挙管理委員会『市町長及び議会議員の任期』の静岡市長の行。",
+        "decision": "accepted",
+        "review_note": "任期満了日（令和9年4月12日）が明記されている。"
+      }
+    ],
+    "open_questions": [
+      "2023年市長選の選挙公報PDFの現在の所在と候補者欄のテキスト層の有無は未確認（段階3で確認する）。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
     "id": "evidence-hamamatsu-city-current-mayor-term",
     "subject_type": "executive_term",
     "subject_id": "jp-local-221309-executive-2023-05-01",

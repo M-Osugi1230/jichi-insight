@@ -46,14 +46,19 @@ def test_shizuoka_shared_municipality_fiscal_and_evidence_contracts():
     assert municipality["municipality_type"] == "designated_city"
     assert municipality["data_status"] == "reviewed"
     assert municipality["fiscal_years"] == [2024, 2026]
-    assert len(fiscal) == len(evidence) == 3
+    # 3 records at the Phase 13 review; the Shizuoka cluster stage 1
+    # (Issue #891) added the FY2026 local-tax record and its packet.
+    assert len(fiscal) == len(evidence) == 4
 
 
 def test_shizuoka_source_catalog_matches_municipality_sources():
     municipality = load(MUNICIPALITY)
     sources = load(SOURCES)["records"]
 
-    assert len(sources) == 9
+    # 9 sources at the Phase 13 review; the Shizuoka cluster stage 1
+    # (Issue #891) added the FY2026 budget overview PDF and the
+    # February 2026 regular-session results PDF.
+    assert len(sources) == 11
     assert set(municipality["sources"]) == {row["id"] for row in sources}
     assert all(row["organization"] == "静岡市" for row in sources)
     assert all(row["confidence"] == "high" for row in sources)
@@ -158,7 +163,12 @@ def test_shizuoka_completion_counts_derive_from_reviewed_layers():
         "not_yet_available"
     )
     assert counts["historical_progress_routes_preserved"] == 1
-    assert counts["fiscal_top_line_records"] == len(fiscal) == 3
+    # The completion catalog is the Phase 13 snapshot (3 top-line
+    # fiscal records at completion). The Shizuoka cluster stage 1
+    # (Issue #891) later added the FY2026 local-tax record, so the
+    # current fiscal file holds 4 records.
+    assert counts["fiscal_top_line_records"] == 3
+    assert len(fiscal) == 4
 
 
 def test_shizuoka_completion_deferred_depth_is_explicit():

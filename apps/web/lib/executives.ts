@@ -104,6 +104,7 @@ export type ManifestoSourceSearchEvidencePacket = {
 };
 
 const municipalityIdToKey = {
+  "jp-local-221007": "shizuoka-city",
   "jp-local-221309": "hamamatsu-city",
   "jp-local-220001": "shizuoka-prefecture",
   "jp-local-040002": "miyagi-prefecture",
