@@ -361,5 +361,23 @@
     "last_reviewed_at": "2026-11-21",
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-review-jp-local-040002-2025",
+    "executive_term_id": "jp-local-040002-executive-2025-11-21",
+    "source_id": "miyagi-pref-governor-election-2025-bulletin",
+    "candidate_name": "村井 嘉浩",
+    "source_location": "全4ページPDF・1ページ目下段の候補者欄",
+    "review_scope": "candidate_panel",
+    "statement_boundary": "mixed",
+    "segmentation_status": "segmented",
+    "promise_records_created": 4,
+    "reason_codes": [
+      "other"
+    ],
+    "review_note": "候補者欄はポスター形式で、上部の見出し「さらなる成長戦略を実行します！」の下に、見出しと本文からなる政策が4件（最先端技術を生かしたDXの推進、世界的半導体企業の誘致、若者が集える場所の確保、病院再編の完結）配置され、末尾に「＊これらの政策はほんの一例です。」の注記がある。左側は候補者の写真と「AIむらい YouTubeライブ」の案内（QRコード2件と「24時間、皆様の質問にAIむらいがYouTubeでお答えします！」の文言、写真下の「※AIが生成した画像です。」の注記）で、右端に候補者名（村井よしひろ）の縦書きがある。政策4件はいずれも見出し（名詞句）と本文（公約文）が一体の単位であり、見出しだけでは公約文として完結しないため、福岡市長の先例（見出し＋本文を1レコードとする形式）に倣い、見出しと本文を改行でつないだ4件を公約レコードとした。見出し文（スローガン）、YouTubeライブの案内文とQRコード、写真の注記、「ほんの一例」の注記は公約としてレコード化していない。欄内に前回公約の実績・進捗の表示はないため、実績表示の切り分けは発生していない。数値の明示は政策2の「県内総生産10兆円」（目標として target に登録）と政策3の「1万人～1.5万人を収容」（整備する施設の規模として target に登録）、政策4の「次の4年間で」（期間の表明であり、deadline には登録せず extraction_note に残す）がある。政策3の「民間の資金を活用して」は財源手法の明示として funding_statement に登録した。候補者欄は画像形式（候補者欄からはテキストが抽出されない）ため、登録文は描画画像（100dpi・300dpi）から転記し、候補者提出の音声読み上げ対応データのテキスト層と全項目で突合した。",
+    "last_reviewed_at": "2026-11-22",
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]

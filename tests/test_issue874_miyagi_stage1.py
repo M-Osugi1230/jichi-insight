@@ -238,10 +238,13 @@ def test_miyagi_governor_term() -> None:
     assert term["term_end"] == "2029-11-20"
     assert term["election_date"] == "2025-10-26"
     assert [t for t in terms if t["municipality_id"] == MID] == [term]
-    # Stage 1 registers no manifesto source: the bulletin's candidate
-    # panels are mainly image-based, and the promise stage (stage 3)
-    # transcribes and connects the bulletin.
-    assert term["manifesto_source_ids"] == []
+    # Stage 1 registered no manifesto source: the bulletin's candidate
+    # panels are mainly image-based. Stage 3 (Issue #881) transcribed
+    # the bulletin panel, collated it against the candidate-submitted
+    # audio-readable data, and connected the bulletin.
+    assert term["manifesto_source_ids"] == [
+        "miyagi-pref-governor-election-2025-bulletin"
+    ]
     assert term["sources"] == [
         "miyagi-pref-governor",
         "miyagi-pref-governor-election-2025-page",

@@ -845,5 +845,49 @@
       "知事の任期満了日（2028-11-16）の県選管自身の任期満了一覧での明記照合は未実施であり、段階1の証拠パケットの open question を引き継ぐ。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-miyagi-pref-2025-manifesto-review",
+    "subject_type": "manifesto_review",
+    "subject_id": "manifesto-review-jp-local-040002-2025",
+    "claims": [
+      {
+        "field": "source_location",
+        "statement": "村井よしひろ候補欄は選挙公報1ページ目下段に掲載され、上部の見出し「さらなる成長戦略を実行します！」の下に、見出しと本文からなる政策4件と末尾の注記「＊これらの政策はほんの一例です。」、左側に写真とYouTubeライブの案内（QRコード2件）、右端に候補者名の縦書きが配置されている。",
+        "source_ids": [
+          "miyagi-pref-governor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全4ページ）の1ページ目下段。",
+        "decision": "accepted",
+        "review_note": "2026-11-22にPDFを取得し、描画画像で候補者欄の構成を確認した。"
+      },
+      {
+        "field": "segmentation_status",
+        "statement": "4つの政策は見出しと本文が一体の単位であり、見出しだけでは公約文として完結しないため、見出しと本文を改行でつないだ4件へ分割した。見出し文（スローガン）、YouTubeライブの案内文とQRコード、写真下の「※AIが生成した画像です。」の注記、「ほんの一例」の注記は公約として分割しなかった。欄内に前回公約の実績・進捗表示はないため、実績表示の切り分けは発生していない。",
+        "source_ids": [
+          "miyagi-pref-governor-election-2025-bulletin"
+        ],
+        "location_note": "候補者欄の政策4件（見出し＋本文）。",
+        "decision": "accepted",
+        "review_note": "見出しと本文を1レコードとする形式は福岡市長の先例に倣った境界判断であり、open_questions に残す。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は宮城県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは県選管の知事選挙総合ページに掲載されており、県公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式（全4ページのテキスト抽出は空白を除き837字で、いずれも選管の表頭・投票案内等の印刷文字であり、候補者欄からは文字が抽出されない）ため、登録文はPDFの描画画像（100dpi・300dpi）から転記し、県選管が公表する候補者提出の音声読み上げ対応データ（テキスト層）の抽出文と全項目で突合して、実質的な文言が一致することを確認した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "miyagi-pref-governor-election-2025-bulletin",
+          "miyagi-pref-governor-election-2025-bulletin-audio-data"
+        ],
+        "location_note": "公報の表頭（宮城県選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、県選管の知事選挙総合ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者欄が案内するYouTube等の詳細資料が新たに確認できれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "見出しと本文を1レコードとする形式は境界判断であり、詳細な候補者資料が確認できれば項目の階層関係を照合する。",
+      "候補者欄が案内するYouTube（AIむらい・YouTubeライブ）等の詳細な公約資料の安定した所在は特定できていない。",
+      "知事の任期満了日（2029-11-20）の県選管自身の資料での明記照合は未実施であり、段階1の証拠パケットの open question を引き継ぐ。"
+    ],
+    "review_status": "reviewed"
   }
 ]
