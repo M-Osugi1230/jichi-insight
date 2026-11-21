@@ -674,6 +674,49 @@
     "review_status": "reviewed"
   },
   {
+    "id": "evidence-chiba-pref-2025-manifesto-review",
+    "subject_type": "manifesto_review",
+    "subject_id": "manifesto-review-jp-local-120006-2025",
+    "claims": [
+      {
+        "field": "source_location",
+        "statement": "くまがい俊人候補欄は選挙公報1ページ目中段に掲載され、見出し「県民を守り、支え、そして飛躍する千葉へ」の下に、左・中央に「県政ビジョン 次の4年に向けて」の番号項目8件と◆項目17件、右側に「県民の命とくらしを守る」の導入文と「4年の主な成果」5項目、下部に公式ホームページへの案内、右端にプロフィールが配置されている。",
+        "source_ids": [
+          "chiba-pref-governor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全2ページ）の1ページ目中段。",
+        "decision": "accepted",
+        "review_note": "2026-11-21にPDFを取得し、描画画像で候補者欄の構成を確認した。"
+      },
+      {
+        "field": "segmentation_status",
+        "statement": "「県政ビジョン 次の4年に向けて」の番号項目8件と◆印の項目17件は原文上の境界が明確なため、計25件へ分割した。見出し文、「4年の主な成果」の実績5項目、導入文、案内、プロフィールは公約として分割しなかった。番号項目は◆項目の単なる見出しではなく、◆項目にない内容を含む政策の柱であるため、独立レコードとした。",
+        "source_ids": [
+          "chiba-pref-governor-election-2025-bulletin"
+        ],
+        "location_note": "「県政ビジョン 次の4年に向けて」の番号項目8件、◆項目17件。",
+        "decision": "accepted",
+        "review_note": "見出し項目と◆項目の二重計上に当たるかどうかは境界判断であり、open_questions に残す。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は千葉県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは選挙管理委員会の公式ページ「令和7年3月16日執行千葉県知事選挙」から、県公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式（PDFのテキスト抽出は空白を除き2文字のみで、テキスト層は実質存在しない）ため、登録文はPDFの描画画像（150dpi・300dpi）から転記し、複数解像度で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "chiba-pref-governor-election-2025-bulletin"
+        ],
+        "location_note": "公報の表頭（千葉県選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、選管公式ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の公式ホームページで案内される県政ビジョンの詳細資料が新たに確認できれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "番号項目と◆項目の二重計上に当たるかどうかは境界判断であり、詳細な候補者資料が確認できれば項目の階層関係を照合する。",
+      "項目4の見出しに含まれる1期目の実績（過去最高の企業誘致数）への言及と公約の境界は境界ケースである。",
+      "候補者欄が案内する公式ホームページ（https://www.kumagai-chiba.jp）の「知事4年の実績＋県政ビジョン」の詳細資料が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
     "id": "evidence-chiba-city-2025-manifesto-review",
     "subject_type": "manifesto_review",
     "subject_id": "manifesto-review-jp-local-121002-2025",

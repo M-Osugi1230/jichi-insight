@@ -41,8 +41,8 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 93
-    assert len({record["id"] for record in catalog["records"]}) == 93
+    assert len(catalog["records"]) == 94
+    assert len({record["id"] for record in catalog["records"]}) == 94
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
@@ -365,13 +365,13 @@ def test_manifesto_readiness_is_not_confused_with_progress() -> None:
     assert by_municipality["jp-local-112038"]["manifesto_source_ids"] == [
         "kawaguchi-city-mayor-election-2026-bulletin",
     ]
-    # Chiba Prefecture registers no manifesto source at this stage:
-    # the 2025 bulletin is officially published and reachable from the
-    # election commission's result page, but its candidate panels are
-    # image-only (the text layer is effectively absent), so the
-    # promise decision — by visual transcription — is deferred to
-    # the cluster's promise stage.
-    assert by_municipality["jp-local-120006"]["manifesto_source_ids"] == []
+    # Chiba Prefecture's stage 3 (Issue #842) registered the 2025
+    # bulletin: the candidate panels are image-only (the text layer
+    # is effectively absent), so the governor's promises were
+    # registered by visual transcription of the rendered pages.
+    assert by_municipality["jp-local-120006"]["manifesto_source_ids"] == [
+        "chiba-pref-governor-election-2025-bulletin",
+    ]
 
 
 def test_every_executive_has_evidence_and_known_sources() -> None:
