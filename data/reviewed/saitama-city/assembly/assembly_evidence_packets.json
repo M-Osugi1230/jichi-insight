@@ -1,0 +1,103 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "assembly",
+    "location_note": "会派別議員名簿、表決態度一覧の表頭（会派別議員数）",
+    "review_note": null,
+    "source_ids": [
+     "saitama-city-assembly-roster",
+     "saitama-city-assembly-vote-table-2026-09",
+     "saitama-city-assembly-session-2026-09"
+    ],
+    "statement": "さいたま市議会。議員任期は2023-05-01から2027-04-30、定数60・現員59。会派構成は令和8年9月定例会時点の表決態度一覧の表頭により、自民党18名、立憲・国民・無所属の会12名、公明党11名、日本共産党6名、日本維新の会4名、無所属みらい2名、無所属6名（計59名）とした。なお現在の会派別議員名簿では秋山朋彦は立憲・国民・無所属の会に所属するが、9月定例会時点では日本維新の会の列に属していたため、会期時点の構成を正とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "session",
+    "location_note": "定例会ページ（会期日程・会期予定表）",
+    "review_note": null,
+    "source_ids": [
+     "saitama-city-assembly-session-2026-09"
+    ],
+    "statement": "対象会期は令和8年9月定例会（2026-09-02から2026-10-16）。本会議は9月2日・3日・7日・9日、10月15日・16日の6日間。"
+   },
+   {
+    "decision": "accepted",
+    "field": "proposals",
+    "location_note": "市長提出議案ページ及び表決態度一覧",
+    "review_note": null,
+    "source_ids": [
+     "saitama-city-assembly-mayor-bills-2026-09-a",
+     "saitama-city-assembly-mayor-bills-2026-09-b",
+     "saitama-city-assembly-mayor-bills-2026-09-c",
+     "saitama-city-assembly-mayor-bills-2026-09-add",
+     "saitama-city-assembly-vote-table-2026-09"
+    ],
+    "statement": "議案は36件（市長提出35件＝議案第144号〜第178号、議員提出議案第6号）。市長提出議案の件名は市公式の市長提出議案ページ（その1〜その3・追加提出）で全件確認した。第144号〜第176号は9月2日提出、第177号・第178号は10月14日の追加提出、議員提出議案第6号は10月14日提出・10月15日議決で否決。決算4件（第152号〜第155号）は当会期で結論が出ており、結果は表決態度一覧の印字どおり（第153号は「認定及び原案可決」、他は「認定」）を証拠パケットに記録し、outcome は approved とした（継続審査・不認定はない）。賛否が分かれた12件は議決日まで確定できたが、全員賛成の24件は個別の議決日が公開資料で確定できないため decided_at は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "votes",
+    "location_note": "表決態度一覧PDF（記号の座標位置・表頭・脚注）",
+    "review_note": null,
+    "source_ids": [
+     "saitama-city-assembly-vote-table-2026-09",
+     "saitama-city-assembly-vote-table-index"
+    ],
+    "statement": "表決態度は会派単位（6会派）で公表され、無所属議員6名は個人名の列で示される。令和8年9月定例会の表決態度一覧（PDF）の掲載は賛否が分かれた12件のみで、残り24件は表の脚注「上記以外の議案については、出席した全議員が賛成しました」により全員賛成として扱い、votes は作成していない。掲載12件はPDFの単語座標で全行を照合し、会派別72件（12件×6会派）と個人別74件（無所属6名×12件＋第150号の例外注記2件）を登録した。第150号の日本共産党のセルは主記号「○」に「（×：鳥羽恵 竹腰連）」の括弧書きがあり、会派の態度は主記号どおり賛成、両名は個人別に反対として登録した。表決方法は公表資料に明記がないため method は unknown とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "political_activity_expenses",
+    "location_note": "政務活動費の公開ページ（索引・期間別ページ）及び各収支報告書",
+    "review_note": null,
+    "source_ids": [
+     "saitama-city-assembly-seimu-index",
+     "saitama-city-assembly-seimu-period-2023-h1",
+     "saitama-city-assembly-seimu-period-2025-h2"
+    ],
+    "statement": "政務活動費は、会派分（月額34万円型または14万円型を選択）と議員個人分（月額20万円、34万円型の会派に所属する議員を除く）の併用制。収支報告書は半期単位で会派・議員ごとに公表され、領収書等の写しも同じPDFに綴じてWeb公開される。現任期に対応し完結した6期間（令和5年度上期〜令和7年度下期）の公開ファイル341単位を登録した（令和5年度114件・令和6年度114件・令和7年度113件）。全件について収入内訳・支出9科目・残額を報告書1ページ目から読み取り、科目合計＝支出合計、収入合計−支出合計＝残額の検算を行った。検算が一致しないのは原資料側の記載に起因する3件のみ（令和5年度上期・石関洋臣は科目合計と支出合計が300円不一致、令和6年度下期・日本共産党さいたま市議会議員団は科目合計300円・残額444円の不一致、令和7年度下期・鶴崎敏康は残額の符号が計算と一致しない）で、いずれも印字どおり登録し各証拠パケットに明記した。年度内では下期の繰越金が上期の残額と一致すること（検証した170組すべて一致）も読み取りの裏付けとした。残額がマイナスの72件は返還額ではないため returned_yen を null とし、印字値を各証拠パケットに記録した。無所属議員6名のうち浜口健司以外の5名分は、全6期間を通じて公開ページに掲載がなかった。"
+   },
+   {
+    "decision": "accepted",
+    "field": "inspection_trips",
+    "location_note": "常任委員会の活動状況ページ及び議員派遣報告書",
+    "review_note": null,
+    "source_ids": [
+     "saitama-city-assembly-committee-index",
+     "saitama-city-assembly-dispatch-index",
+     "saitama-city-assembly-dispatch-zhengzhou-report",
+     "saitama-city-assembly-dispatch-nanaimo-report"
+    ],
+    "statement": "視察は22件を登録した。常任委員会の県外視察20件は、各委員会の活動状況ページ（令和5年5月以降の4構成年度分）から日程・視察先・調査項目を転記した（参加者・費用は公表がないため未登録）。議員派遣2件（鄭州市友好訪問2025-07-24〜26・ナナイモ市友好訪問2026-07-12〜16）は報告書全文が公表されており、派遣議員名簿の印字どおり参加者を登録した（随行職員は含めない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "disclosure",
+    "location_note": "定例会・臨時会の審議結果ページ、請願・陳情の案内ページ",
+    "review_note": null,
+    "source_ids": [
+     "saitama-city-assembly-results-guide",
+     "saitama-city-assembly-petition-guide",
+     "saitama-city-assembly-chinjo-guide"
+    ],
+    "statement": "開示プロファイルは2026-11-21時点の公表状況を記録した。請願の結論は議会資料検索システム内でのみ扱われ一覧表がWeb公開されていないため petition_results は unknown とした。陳情は本会議の表決対象ではなく文書表が配付される制度であることを注記した。"
+   }
+  ],
+  "id": "evidence-jp-local-111007-assembly-2023",
+  "open_questions": [
+   "令和8年9月定例会で結論が出た請願の件数・結果（採択・不採択等）は議会資料検索システム内でのみ扱われ、Web公開資料では確定できなかった。",
+   "全員賛成の市長提出議案24件の個別の議決日（人事案件の議案第173号〜第176号は9月9日に議決された可能性があるが、公開資料では確定できなかった）。",
+   "令和8年9月定例会における議員提出議案の総数（議員提出議案第6号以外の議員提出議案・意見書案等の有無）。",
+   "令和8年度上期分の政務活動費収支報告書は2026年11月21日時点で公開進行中のため対象外とした。公開完了時期は未確認。",
+   "無所属議員6名のうち浜口健司以外の5名（川村準・佐藤潤・佐藤征治郎・中山淳一・吉田一郎）の政務活動費収支報告書が、全6期間を通じて公開ページに掲載されていない理由。",
+   "会派ごとの政務活動費の選択額（月額34万円型・14万円型）の全会派分（報告書の摘要から一部は判明するが、全会派分は未確認）。",
+   "常任委員会の国内視察について、活動状況ページの記載を超える報告書全文の公表の有無。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-111007-assembly-2023",
+  "subject_type": "assembly"
+ }
+]
