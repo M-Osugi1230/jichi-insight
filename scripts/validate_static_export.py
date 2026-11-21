@@ -165,7 +165,7 @@ BASE_PAGE_REQUIREMENTS: dict[str, list[str]] = {
         "まだ登録・評価していないこと",
     ],
     "projects/index.html": [
-        "20自治体の Reviewed 事業レコード",
+        "22自治体の Reviewed 事業レコード",
         "千葉県｜登録事業", "千葉市｜登録事業",
         "登録単位：施策（10系列）", "登録単位：政策（10系列）",
         "令和7年度の施策評価シート", "分野単位のKGI/KPI",
@@ -1289,12 +1289,134 @@ def validate_chiba_cluster_export() -> list[str]:
     return failures
 
 
+
+def hyogo_cluster_project_detail_files() -> set[str]:
+    """Export every Reviewed Hyogo and Kobe series, without inventing a new route."""
+    required: set[str] = set()
+    for slug in ("hyogo-prefecture", "kobe-city"):
+        projects = load_json(ROOT / "data" / "reviewed" / slug / "projects.json")
+        for series in {
+            project["series_id"] for project in projects
+            if project["review_status"] == "reviewed"
+        }:
+            required.add(f"projects/{slug}/{series}/index.html")
+    return required
+
+
+def validate_hyogo_cluster_data_facts() -> None:
+    """Registration units and missing values must agree with Reviewed source data."""
+    cases = (
+        ("hyogo-prefecture", "jp-local-280003",
+         "hyogo_priority_project_selection.json", "hyogo_project_sources.json", 2025),
+        ("kobe-city", "jp-local-281000",
+         "kobe_city_priority_project_selection.json", "kobe_city_project_sources.json", 2026),
+    )
+    for slug, municipality_id, selection_name, sources_name, year in cases:
+        directory = ROOT / "data" / "reviewed" / slug
+        municipality = load_json(directory / "municipality.json")
+        projects = load_json(directory / "projects.json")
+        kpis = load_json(directory / "project_kpis.json")
+        packets = load_json(directory / "project_evidence_packets.json")
+        selection = load_json(ROOT / "data" / "catalog" / selection_name)
+        sources = load_json(ROOT / "data" / "catalog" / sources_name)
+        source_ids = {record["id"] for record in sources["records"]}
+        assert municipality["id"] == municipality_id
+        assert municipality["data_status"] == "reviewed"
+        assert len(projects) == len(packets) == len(selection["selections"]) == 10
+        assert len({project["series_id"] for project in projects}) == 10
+        assert kpis == []
+        assert {packet["subject_id"] for packet in packets} == {
+            project["id"] for project in projects
+        }
+        by_id = {project["id"]: project for project in projects}
+        for entry in selection["selections"]:
+            project = by_id[entry["project_id"]]
+            assert entry["series_id"] == project["series_id"]
+            assert entry["official_title"] == project["official_title"]
+        for project in projects:
+            assert project["municipality_id"] == municipality_id
+            assert project["fiscal_year"] == year
+            assert project["review_status"] == "reviewed"
+            assert project["official_evaluation"] is None
+            assert project["kpis"] == []
+            assert set(project["sources"]).issubset(source_ids)
+            assert len(project["budget_records"]) == 1
+            budget = project["budget_records"][0]
+            assert budget["kind"] == "initial_budget"
+            assert budget["fiscal_year"] == year
+            assert budget["amount_yen"] is None  # not zero
+        assert all(packet["review_status"] == "reviewed" for packet in packets)
+        if slug == "hyogo-prefecture":
+            assert selection["population"]["project_count"] == 66
+            assert len(selection["selection_rule"]["pillars"]) == 3
+            assert {item["direction_number"] for item in selection["selections"]} == set(range(1, 9))
+            assert all(
+                any(claim["field"] == "registration_unit" and "取組方針" in claim["statement"]
+                    for claim in packet["claims"])
+                for packet in packets
+            )
+        else:
+            population = selection["population"]
+            assert (population["direction_count"], population["policy_count"],
+                    population["measure_count"], population["unique_measure_count"],
+                    population["kpi_count"]) == (3, 14, 80, 62, 21)
+            assert len(selection["rule"]["pillars"]) == 3
+            assert all(
+                any(claim["field"] == "registration_unit" and "基本政策" in claim["statement"]
+                    for claim in packet["claims"])
+                for packet in packets
+            )
+
+
+def validate_hyogo_cluster_export() -> list[str]:
+    """Check required copy and actual official titles *within* each municipality section."""
+    failures: list[str] = []
+    path = EXPORT_ROOT / "projects/index.html"
+    if not path.is_file():
+        return failures
+    html = normalized_html(path)
+    if "22自治体の Reviewed 事業レコード" not in html:
+        failures.append("Projects index must show 22 Reviewed municipalities")
+    scopes = {
+        "hyogo-prefecture": (
+            "兵庫県｜登録事業", "登録単位：取組方針項目（10系列）",
+            "取組方針66項目", "固有64項目", "187指標",
+            "金額・公式評定・KPIは未公表",
+        ),
+        "kobe-city": (
+            "神戸市｜登録事業", "登録単位：基本政策（10系列）",
+            "基本政策14件", "主な施策80件", "62件",
+            "方向性単位のKPI21件", "Well-Being指標",
+        ),
+    }
+    for slug, required_phrases in scopes.items():
+        section = re.search(
+            rf'<section\\b(?=[^>]*\\bid="{re.escape(slug)}")[^>]*>(.*?)</section>',
+            html, flags=re.DOTALL,
+        )
+        if section is None:
+            failures.append(f"Missing Hyogo cluster projects section: {slug}")
+            continue
+        content = section.group(1)
+        for phrase in required_phrases:
+            if phrase not in content:
+                failures.append(f"Hyogo projects {slug} missing scoped copy: {phrase}")
+        projects = load_json(ROOT / "data" / "reviewed" / slug / "projects.json")
+        for project in projects:
+            if project["review_status"] == "reviewed" and project["official_title"] not in content:
+                failures.append(
+                    f"Hyogo projects {slug} missing official title: {project['official_title']}"
+                )
+    return failures
+
+
 def main() -> int:
     args = parse_args()
     failures: list[str] = []
     validate_saitama_data_facts()
     validate_chiba_data_facts()
     validate_chiba_cluster_data_facts()
+    validate_hyogo_cluster_data_facts()
     required_files = (
         set(REQUIRED_FILES)
         | published_required_files()
@@ -1303,6 +1425,7 @@ def main() -> int:
         | kanagawa_cluster_project_detail_files()
         | saitama_project_detail_files()
         | chiba_project_detail_files()
+        | hyogo_cluster_project_detail_files()
         | {"municipalities/osaka-prefecture/index.html"}
         | {
             f"assemblies/{slug}/index.html"
@@ -1358,6 +1481,7 @@ def main() -> int:
     failures.extend(validate_saitama_export())
     failures.extend(validate_chiba_export())
     failures.extend(validate_chiba_cluster_export())
+    failures.extend(validate_hyogo_cluster_export())
     failures.extend(validate_hokkaido_assembly_scope())
     failures.extend(validate_osaka_assembly_scope())
 
