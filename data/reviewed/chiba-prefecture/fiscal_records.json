@@ -1,0 +1,68 @@
+[
+  {
+    "id": "jp-local-120006-fiscal-2026-total-revenue",
+    "municipality_id": "jp-local-120006",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入歳出規模",
+    "amount_yen": 2253487205000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "令和8年度当初予算（成立後）。議案第1号は令和8年2月定例県議会で2026年3月13日に原案可決され、提案額のまま成立した。補正予算とは区別して管理する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "chiba-pref-budget-2026-bill-pdf",
+      "chiba-pref-assembly-2026-budget-bills-page"
+    ]
+  },
+  {
+    "id": "jp-local-120006-fiscal-2026-local-tax",
+    "municipality_id": "jp-local-120006",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "local_tax",
+    "metric_label": "県税収入",
+    "amount_yen": 1028324000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "令和8年度当初予算（成立後）の県税収入。議案第1号「第1表 歳入歳出予算」の款「県税」の印字値。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "chiba-pref-budget-2026-bill-pdf",
+      "chiba-pref-assembly-2026-budget-bills-page"
+    ]
+  },
+  {
+    "id": "jp-local-120006-fiscal-2026-total-expenditure",
+    "municipality_id": "jp-local-120006",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計当初予算・歳出総額",
+    "amount_yen": 2253487205000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "令和8年度一般会計当初予算（成立後）の歳出総額。議案第1号第1条および第1表の歳出合計2,253,487,205千円による。議案第1号は令和8年2月定例県議会で2026年3月13日に原案可決され、提案額のまま成立した。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "chiba-pref-budget-2026-bill-pdf",
+      "chiba-pref-assembly-2026-budget-bills-page"
+    ]
+  }
+]

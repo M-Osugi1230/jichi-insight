@@ -10,6 +10,10 @@ import saitamaFiscalRecords from "../../../data/reviewed/saitama-prefecture/fisc
 import saitamaSettlementRecords from "../../../data/reviewed/saitama-prefecture/settlement_records.json";
 import saitamaFiscalEvidence from "../../../data/reviewed/saitama-prefecture/evidence_packets.json";
 import saitamaSettlementEvidence from "../../../data/reviewed/saitama-prefecture/settlement_evidence_packets.json";
+import chibaFiscalRecords from "../../../data/reviewed/chiba-prefecture/fiscal_records.json";
+import chibaSettlementRecords from "../../../data/reviewed/chiba-prefecture/settlement_records.json";
+import chibaFiscalEvidence from "../../../data/reviewed/chiba-prefecture/evidence_packets.json";
+import chibaSettlementEvidence from "../../../data/reviewed/chiba-prefecture/settlement_evidence_packets.json";
 import saitamaCityFiscalRecords from "../../../data/reviewed/saitama-city/fiscal_records.json";
 import saitamaCitySettlementRecords from "../../../data/reviewed/saitama-city/settlement_records.json";
 import saitamaCityFiscalEvidence from "../../../data/reviewed/saitama-city/evidence_packets.json";
@@ -72,6 +76,7 @@ const municipalityNames: Record<MunicipalityKey, string> = {
   "kawasaki-city": "川崎市",
   "kanagawa-prefecture": "神奈川県",
   "saitama-prefecture": "埼玉県",
+  "chiba-prefecture": "千葉県",
   "saitama-city": "さいたま市",
   "yokohama-city": "横浜市",
   "osaka-prefecture": "大阪府",
@@ -94,6 +99,7 @@ const recordsByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFin
   "kanagawa-prefecture": [...kanagawaFiscalRecords, ...kanagawaSettlementRecords] as typeof fukuokaPrefectureFinance.records,
   "kawaguchi-city": [...kawaguchiFiscalRecords, ...kawaguchiSettlementRecords] as typeof fukuokaPrefectureFinance.records,
   "saitama-prefecture": [...saitamaFiscalRecords, ...saitamaSettlementRecords] as typeof fukuokaPrefectureFinance.records,
+  "chiba-prefecture": [...chibaFiscalRecords, ...chibaSettlementRecords] as typeof fukuokaPrefectureFinance.records,
   "saitama-city": [...saitamaCityFiscalRecords, ...saitamaCitySettlementRecords] as typeof fukuokaPrefectureFinance.records,
   "yokohama-city": yokohamaFiscalRecords as typeof fukuokaPrefectureFinance.records,
   "osaka-prefecture": [...osakaFiscalRecords, ...osakaSettlementRecords] as typeof fukuokaPrefectureFinance.records,
@@ -114,6 +120,7 @@ const evidenceByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFi
   "kanagawa-prefecture": [...kanagawaFiscalEvidence, ...kanagawaSettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
   "kawaguchi-city": [...kawaguchiFiscalEvidence, ...kawaguchiSettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
   "saitama-prefecture": [...saitamaFiscalEvidence, ...saitamaSettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
+  "chiba-prefecture": [...chibaFiscalEvidence, ...chibaSettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
   "saitama-city": [...saitamaCityFiscalEvidence, ...saitamaCitySettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
   "yokohama-city": yokohamaFiscalEvidence as typeof fukuokaPrefectureFinance.evidencePackets,
   "osaka-prefecture": [...osakaFiscalEvidence, ...osakaSettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,

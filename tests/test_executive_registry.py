@@ -41,15 +41,15 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 84
-    assert len({record["id"] for record in catalog["records"]}) == 84
+    assert len(catalog["records"]) == 88
+    assert len({record["id"] for record in catalog["records"]}) == 88
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
     terms = load_json("data/entities/executives/executive_terms.json")
     packets = load_json("data/entities/executives/evidence_packets.json")
 
-    assert len(terms) == 18
+    assert len(terms) == 19
     assert {term["municipality_id"] for term in terms} == {
         "jp-local-400009",
         "jp-local-401307",
@@ -69,6 +69,7 @@ def test_executive_registry_matches_shared_contracts() -> None:
         "jp-local-110001",
         "jp-local-111007",
         "jp-local-112038",
+        "jp-local-120006",
     }
     for term in terms:
         assert validation_errors("schemas/executive_term.schema.json", term) == []
@@ -173,6 +174,14 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
         "jp-local-110001": "2027-08-30",
         "jp-local-111007": "2029-05-26",
         "jp-local-112038": "2030-02-08",
+        # Chiba Prefecture's end (2029-04-04) is stated directly in
+        # the Kashiwa City election commission's official term-expiry
+        # list; its start (2025-04-05) follows the Article 259 proviso
+        # chain, anchored by the prefectural election commission's
+        # statement that the 2025 election was held because the
+        # previous term expired on 2025-04-04, and the two values
+        # agree with the statutory four-year term.
+        "jp-local-120006": "2029-04-04",
     }
     for term in terms:
         assert term["term_end"] == expected_term_ends[term["municipality_id"]]
@@ -222,6 +231,7 @@ def test_executive_term_starts_follow_statutory_counting() -> None:
         "jp-local-110001": "2023-08-31",
         "jp-local-111007": "2025-05-27",
         "jp-local-112038": "2026-02-09",
+        "jp-local-120006": "2025-04-05",
     }
     for term in terms:
         assert term["term_start"] == expected_term_starts[term["municipality_id"]]
@@ -344,6 +354,13 @@ def test_manifesto_readiness_is_not_confused_with_progress() -> None:
     assert by_municipality["jp-local-112038"]["manifesto_source_ids"] == [
         "kawaguchi-city-mayor-election-2026-bulletin",
     ]
+    # Chiba Prefecture registers no manifesto source at this stage:
+    # the 2025 bulletin is officially published and reachable from the
+    # election commission's result page, but its candidate panels are
+    # image-only (the text layer is effectively absent), so the
+    # promise decision — by visual transcription — is deferred to
+    # the cluster's promise stage.
+    assert by_municipality["jp-local-120006"]["manifesto_source_ids"] == []
 
 
 def test_every_executive_has_evidence_and_known_sources() -> None:

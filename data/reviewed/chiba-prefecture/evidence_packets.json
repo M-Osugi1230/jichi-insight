@@ -1,0 +1,68 @@
+[
+  {
+    "id": "evidence-chiba-pref-2026-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-120006-fiscal-2026-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算の歳入歳出総額は2,253,487,205千円である。",
+        "source_ids": [
+          "chiba-pref-budget-2026-bill-pdf",
+          "chiba-pref-assembly-2026-budget-bills-page"
+        ],
+        "location_note": "議案第1号「令和8年度千葉県一般会計予算」第1条および「第1表 歳入歳出予算」。議決結果は令和8年2月定例県議会議案一覧の議案第1号の行。",
+        "decision": "accepted",
+        "review_note": "議案第1号は令和8年2月定例県議会に提出（令和8年2月10日）され、2026年3月13日に原案可決されたことを議案一覧で確認した。予算案段階の額ではなく成立後の額として収録する。"
+      }
+    ],
+    "open_questions": [
+      "年度終了後の執行額・決算額は未確定。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-chiba-pref-2026-local-tax",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-120006-fiscal-2026-local-tax",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算の県税収入は1,028,324,000千円である。",
+        "source_ids": [
+          "chiba-pref-budget-2026-bill-pdf",
+          "chiba-pref-assembly-2026-budget-bills-page"
+        ],
+        "location_note": "議案第1号「令和8年度千葉県一般会計予算」「第1表 歳入歳出予算」の歳入・款「県税」。議決結果は令和8年2月定例県議会議案一覧の議案第1号の行。",
+        "decision": "accepted",
+        "review_note": "第1表の款「県税」の金額である。成立後の額として収録する。"
+      }
+    ],
+    "open_questions": [
+      "年度終了後の執行額・決算額は未確定。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-chiba-pref-2026-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-120006-fiscal-2026-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度一般会計当初予算の歳出総額は2,253,487,205千円である。",
+        "source_ids": [
+          "chiba-pref-budget-2026-bill-pdf",
+          "chiba-pref-assembly-2026-budget-bills-page"
+        ],
+        "location_note": "議案第1号「令和8年度千葉県一般会計予算」第1条および「第1表 歳入歳出予算」。議決結果は令和8年2月定例県議会議案一覧の議案第1号の行。",
+        "decision": "accepted",
+        "review_note": "歳入総額と同額であり、議案第1号が2026年3月13日に原案可決されたことを議案一覧で確認した。"
+      }
+    ],
+    "open_questions": [
+      "年度終了後の執行額・決算額は未確定。"
+    ],
+    "review_status": "reviewed"
+  }
+]
