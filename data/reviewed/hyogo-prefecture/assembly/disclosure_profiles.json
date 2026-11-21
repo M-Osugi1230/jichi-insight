@@ -1,0 +1,101 @@
+[
+ {
+  "as_of": "2026-11-21",
+  "assembly_id": "jp-local-280003-assembly-2023",
+  "confidence": "high",
+  "id": "jp-local-280003-assembly-2023-disclosure-2026",
+  "items": [
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_roster",
+    "note": "議員名簿・会派別議員一覧を県議会公式サイトで公開。会派別議員一覧は2026年11月2日更新時点で定数86人・現員82人。無所属議員は会期時点では長崎寛親・赤石まさお・小林昌彦・石井秀武・丸尾牧の5人（会派態度表の個人名列による）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_composition",
+    "note": "会派は6会派（兵庫県議会自由民主党議員団・維新の会兵庫県議会議員団・兵庫県議会公明党議員団・兵庫県議会ひょうご県民連合議員団・躍動の会・無所属兵庫県議会議員団・日本共産党兵庫県会議員団）。会期時点の会派別議員数の公式明記は確認できなかった。本レコードの人数は令和7年度政務活動費の交付名簿による人数（自民36・維新18・公明13・県民連合8・躍動の会3・共産2のほか1人グループ5人）であり、会期時点の人数ではない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "committee_composition",
+    "note": "常任委員会7（総務・健康福祉・産業労働・農政環境・建設・文教・警察）と議会運営委員会・決算特別委員会等を公式サイトで公開。委員の氏名単位の構成は本登録では収録していない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "proposals_and_results",
+    "note": "定例会ごとに提出議案一覧（意見書・決議を除く）をPDFで公開し、件名・議決年月日・議決結果（原案可決・原案承認・認定・原案同意・継続審査）を掲載。意見書と請願は会期ページの一覧で公開。第376回定例会は知事提出議案23件・専決処分の承認1件・決算認定22件・議員提出議案1件・継続審査1件・請願44件・意見書11件。決議は当会期ではなかった。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_votes",
+    "note": "「議案等に対する会派態度」を会期ごとにPDFで公開。列は6会派と無所属（5人）の列で構成される。ただしこの資料は表決そのものの記録ではなく、採決に先立って各会派・議員が表明した態度を議会事務局が集約したものである（意見書案については、各会派政務調査会長会で態度表明が採決に先立つ手続であることが議会の公表資料で確認できる。愛知県議会・埼玉県議会の態度表と同型の資料として扱う）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_votes",
+    "note": "議員個人別の態度は、無所属議員5人についてのみ会派態度表の個人名列で公開される。全員が同じ態度の場合は記号のみが印字され、態度が分かれた場合のみ個人名で内訳が印字される。会派所属議員の個人別の賛否は公開されていないため、復元・推測はしていない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "political_activity_expense_reports",
+    "note": "令和3年度分から収支報告書・会計帳簿・領収書等をWeb公開。単位は会派使用分（様式第4号）と所属議員分（様式第3号）の二層で、令和7年度分は会派使用分11単位・所属議員分85単位が公開されている。政務活動費の交付グループは11あり、議会運営上の6会派とは一致しない（1人グループと年度途中に発足したグループを含む）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "political_activity_expense_receipts",
+    "note": "領収書等の証拠書類も収支報告書・会計帳簿とあわせてWeb公開されている。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "inspection_trip_reports",
+    "note": "常任委員会調査報告書を会期ごとに7委員会の合冊PDFで公開。直近の完結分は第375回定例会提出分（令和7年度実施分）で、管内調査28件・管外調査7件を収録。調査先・期間・概要が掲載され、費用は掲載されていない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "meeting_minutes",
+    "note": "会議録は会議録検索システムで公開。本登録では会議録本文の照合は行っていない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "session_broadcast",
+    "note": "本会議のインターネット中継（ライブ・録画）を公式サイトで公開。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "petition_results",
+    "note": "請願は請願一覧（件名・本会議結果）を公開し、本会議で結論を出す。第376回定例会では44件（第69〜112号）が処理され、採択5件・不採択39件。陳情は会期単位の一覧公表がなく、受理後に議員の閲覧に供され、申出があり委員長が必要と認めた場合にのみ委員会で審査される制度で、本会議で結論を出す制度ではないため、陳情の件数・結論は登録していない。",
+    "source_url": null
+   }
+  ],
+  "review_status": "reviewed",
+  "sources": [
+   "hyogo-pref-assembly-session-2026-9",
+   "hyogo-pref-assembly-attitudes-2026-9",
+   "hyogo-pref-assembly-seimu-r7-page",
+   "hyogo-pref-assembly-inspections-r7"
+  ]
+ }
+]
