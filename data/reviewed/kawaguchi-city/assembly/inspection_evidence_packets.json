@@ -1,0 +1,24 @@
+[
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "inspection_trip_reports",
+        "location_note": "議会公式サイト（行政視察の受入・申込ページ・特別委員長報告ページ）",
+        "review_note": "特別委員会の委員長報告は公表されているが、委員会の審査概要の報告であり、視察の日程・参加者・経費を記録した視察報告書ではないため、視察レコードにはしない。",
+        "source_ids": [
+          "kawaguchi-city-assembly-inspection-reception",
+          "kawaguchi-city-assembly-special-committee-reports"
+        ],
+        "statement": "川口市議会自身の委員会視察（行政視察）について、報告書または一覧の形での公式Web公表は確認できなかった。したがって視察レコードは登録せず、公表がないこと自体をここに記録する。"
+      }
+    ],
+    "id": "evidence-jp-local-112038-assembly-2023-inspection-trips",
+    "open_questions": [
+      "委員会視察報告書の体系的な公表が今後確認できた場合は、視察レコードの登録を別途検討する。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-112038-assembly-2023",
+    "subject_type": "assembly"
+  }
+]
