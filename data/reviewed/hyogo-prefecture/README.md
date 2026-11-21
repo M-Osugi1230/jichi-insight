@@ -56,9 +56,8 @@ term.
   implementation runs through annual action plans, and progress is
   governed by the annual implementation status report published
   under the ordinance (the FY2025 report for the third term is
-  published). The third term's evaluation format (whether an
-  A-D-style achievement grade is used, as in the second term) is
-  confirmed in stage 2.
+  published). The third term's evaluation format was confirmed in
+  stage 2 (see below).
 - Governor: 斎藤 元彦, current term 2024-11-17 to 2028-11-16. He
   first took office on 2021-08-01 (53rd governor). On 2024-09-19
   the prefectural assembly passed a unanimous no-confidence motion;
@@ -78,10 +77,44 @@ term.
   own term-expiry list is still outstanding and is recorded as an
   open question in the evidence packet.
 
+Stage 2 (Issue #858) registers 10 of the third-term strategy's
+policy items as reviewed projects for FY2025, the only fiscal year
+whose implementation status report is published. The registration
+unit is the numbered policy item (取組方針): the prefecture's own
+evaluation framework labels the eight directions as the strategy's
+measures (施策) and the numbered items as policy items, but
+following the Chiba precedent of registering the plan's
+measure-level units, the items — each with its own title, purpose
+text and main initiatives — are registered. Selection cycles
+through the eight directions in official publication order and
+takes the items in order within each direction; it is not by
+budget size (see
+`data/catalog/hyogo_priority_project_selection.json`).
+
+- The population is the strategy's 66 listed items (64 unique; two
+  entries are cross-references to an item whose home is another
+  direction). The second-term strategy's items are not mapped
+  across versions.
+- Amounts are not registered: the annual action plans list main
+  projects per item with a budget per project, but no per-item
+  total is published, and summing only the listed main projects
+  would not give the item's total; the FY2025 implementation report
+  lists main projects without amounts. `budget_records` therefore
+  carries a null amount with the reason recorded (nothing is
+  zero-filled).
+- The prefecture publishes no per-item rating, so
+  `official_evaluation` is null for every project. The third term
+  keeps the second term's A–D achievement grades (A: 100% or more,
+  B: 90–100%, C: 70–90%, D: below 70% of the annual target), but
+  they are assigned per indicator, and the 187 indicators are set
+  per direction, not per item. The direction-level aggregates are
+  recorded in the evidence packets instead.
+- KPIs are empty for the same reason: indicators belong to
+  directions, and attaching a direction's indicators to one of its
+  items would misattribute them.
+
 Not yet published for Hyogo Prefecture:
 
-- Measures and indicators of the third-term strategy (stage 2,
-  after the evaluation format is confirmed)
 - Governor's promises (the 2024 election bulletin is preserved on
   the Kobe City site, but its candidate columns are image-only, so
   the promise registration decision — by visual transcription —
