@@ -1,0 +1,96 @@
+[
+ {
+  "as_of": "2026-11-21",
+  "assembly_id": "jp-local-111007-assembly-2023",
+  "confidence": "high",
+  "id": "jp-local-111007-assembly-2023-disclosure-2026",
+  "items": [
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_roster",
+    "note": "会派別議員名簿を市公式サイトに掲載。",
+    "source_url": "https://www.city.saitama.lg.jp/gikai/001/002/004/index.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_composition",
+    "note": "会派別議員名簿に各会派の所属議員を掲載。表決態度一覧の表頭にも会期時点の会派別人数が示される。",
+    "source_url": "https://www.city.saitama.lg.jp/gikai/001/002/004/index.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "committee_composition",
+    "note": "委員会の構成ページに常任委員会・議会運営委員会等の構成を掲載。",
+    "source_url": "https://www.city.saitama.lg.jp/gikai/002/003/001/index.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "proposals_and_results",
+    "note": "市長提出議案は件名・本文が定例会ページから公表され、結果（原案可決・認定等）は表決態度一覧に掲載される。個別の審議結果の確定情報は議会資料検索システムで扱われる。",
+    "source_url": "https://www.city.saitama.lg.jp/gikai/002/teireirinji/teireikairinjikainojouhou12/p132189.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_votes",
+    "note": "表決態度一覧（定例会ごとのPDF）に会派別の賛否（○/×）を掲載。掲載は賛否が分かれた議案のみで、掲載のない議案は出席した全議員が賛成した旨が表の脚注に明記されている。",
+    "source_url": "https://www.city.saitama.lg.jp/gikai/003/002/hyouketutaido/p129237.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_votes",
+    "note": "表決態度一覧には無所属議員6名の個人名の列があり、その賛否は議員個人別に公表される。会派所属議員の個人別の賛否は公表されていない（議案第150号で日本共産党の2名について例外的に括弧書きの注記がある）。",
+    "source_url": "https://www.city.saitama.lg.jp/gikai/003/002/hyouketutaido/p129237.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "political_activity_expense_reports",
+    "note": "会派・議員ごとに半期単位で収支報告書がWeb公表される（現任期分は令和5年度上期から令和7年度下期までの6期間が完結して公開済み）。",
+    "source_url": "https://www.city.saitama.lg.jp/gikai/005/ginhoushuseimukatudouhisisann/001/index.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "political_activity_expense_receipts",
+    "note": "収支報告書と同じPDFに月別集計表と領収書等の写しが綴じられてWeb公開される。",
+    "source_url": "https://www.city.saitama.lg.jp/gikai/005/ginhoushuseimukatudouhisisann/001/index.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "inspection_trip_reports",
+    "note": "常任委員会の県外視察は委員会の活動状況ページに日程・視察先・調査項目が掲載される（参加者・費用の公表はない）。議員派遣（海外）は報告書全文が公表される。",
+    "source_url": "https://www.city.saitama.lg.jp/gikai/002/003/005/index.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "meeting_minutes",
+    "note": "会議録検索システムで本会議・委員会の会議録を公開。",
+    "source_url": "https://ssp.kaigiroku.net/tenant/saitama/"
+   },
+   {
+    "availability": "unknown",
+    "granularity": "unknown",
+    "item": "petition_results",
+    "note": "請願の審査経過は委員会の活動状況ページに掲載されるが、結論（採択・不採択等）の一覧表はWeb公開されておらず、議会資料検索システム内でのみ扱われる。陳情は本会議での表決対象ではなく、文書表が配付される。",
+    "source_url": "https://www.city.saitama.lg.jp/gikai/003/001/seigan/p017755.html"
+   }
+  ],
+  "review_status": "reviewed",
+  "sources": [
+   "saitama-city-assembly-roster",
+   "saitama-city-assembly-vote-table-index",
+   "saitama-city-assembly-seimu-index",
+   "saitama-city-assembly-committee-index",
+   "saitama-city-assembly-petition-guide",
+   "saitama-city-assembly-results-guide"
+  ]
+ }
+]
