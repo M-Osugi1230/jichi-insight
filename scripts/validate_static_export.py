@@ -898,9 +898,9 @@ def validate_saitama_export() -> list[str]:
         }
         for section_id, phrases in required.items():
             if section_id == "priority-projects":
-                pattern = r'<section\\b(?=[^>]*\\bid="priority-projects")[^>]*>(.*?)</section>'
+                pattern = r'<section\b(?=[^>]*\bid="priority-projects")[^>]*>(.*?)</section>'
             else:
-                pattern = rf'<section\\b[^>]*>(?:(?!</section>).)*?<h2\\b[^>]*\\bid="{re.escape(section_id)}"[^>]*>(?:(?!</h2>).)*</h2>(.*?)</section>'
+                pattern = rf'<section\b[^>]*>(?:(?!</section>).)*?<h2\b[^>]*\bid="{re.escape(section_id)}"[^>]*>(?:(?!</h2>).)*</h2>(.*?)</section>'
             match = re.search(pattern, content, flags=re.DOTALL)
             if match is None:
                 failures.append(f"saitama prefecture missing section: {section_id}")
@@ -918,7 +918,7 @@ def validate_saitama_export() -> list[str]:
         }
         for slug, phrases in expected.items():
             section = re.search(
-                rf'<section\\b(?=[^>]*\\bid="{re.escape(slug)}")[^>]*>(.*?)</section>',
+                rf'<section\b(?=[^>]*\bid="{re.escape(slug)}")[^>]*>(.*?)</section>',
                 html, flags=re.DOTALL,
             )
             if section is None:
@@ -931,7 +931,7 @@ def validate_saitama_export() -> list[str]:
     if promises.is_file():
         html = normalized_html(promises)
         for slug, count in (("saitama-prefecture", 12), ("saitama-city", 12), ("kawaguchi-city", 26)):
-            section = re.search(rf'<section\\b(?=[^>]*\\bid="{re.escape(slug)}")[^>]*>(.*?)</section>', html, flags=re.DOTALL)
+            section = re.search(rf'<section\b(?=[^>]*\bid="{re.escape(slug)}")[^>]*>(.*?)</section>', html, flags=re.DOTALL)
             if section is None or f"Reviewed 公約原文 {count}件" not in section.group(1):
                 failures.append(f"Saitama promises {slug} section missing {count} reviewed promises")
     for slug, phrases in {
