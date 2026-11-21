@@ -1,5 +1,5 @@
 {
-  "version": "0.36.0",
+  "version": "0.37.0",
   "updated_at": "2026-11-22",
   "scope": "pilot",
   "records": [
@@ -1612,6 +1612,48 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "静岡県選挙管理委員会の任期一覧ページ。浜松市長の任期満了日が「令和9年4月30日」と明記されており、任期満了日の直接照合に使用した。"
+    },
+    {
+      "id": "shizuoka-pref-governor",
+      "municipality_key": "shizuoka-prefecture",
+      "organization": "静岡県",
+      "category": "executive",
+      "title": "知事プロフィール（静岡県）",
+      "url": "https://www.pref.shizuoka.jp/kensei/introduction/governor/1064385.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-22",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "静岡県公式の知事プロフィール。鈴木康友（すずき やすとも）が現職知事であり、略歴に「令和6年5月 静岡県知事就任」と明記する。"
+    },
+    {
+      "id": "shizuoka-pref-term-list",
+      "municipality_key": "shizuoka-prefecture",
+      "organization": "静岡県選挙管理委員会",
+      "category": "election",
+      "title": "市町長及び議会議員の任期（静岡県）",
+      "url": "https://www.pref.shizuoka.jp/kensei/senkyo/senkan/1032132.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-22",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "静岡県選挙管理委員会の公式ページ。「静岡県｜鈴木康友｜令和10年5月25日」と知事の任期満了日を明記する。"
+    },
+    {
+      "id": "minamiizu-town-governor-election-2024-result",
+      "municipality_key": "shizuoka-prefecture",
+      "organization": "南伊豆町選挙管理委員会",
+      "category": "election",
+      "title": "令和6年5月26日執行 静岡県知事選挙 開票結果（南伊豆町選挙管理委員会）",
+      "url": "https://www.town.minamiizu.shizuoka.jp/docs/2016090800015/file_contents/kentijikaihyoukekka.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-22",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "南伊豆町選挙管理委員会の公式開票結果。全県得票総数として鈴木やすともが728,500票と明記する。静岡市選挙管理委員会の「選挙結果調」（令和6年5月26日執行静岡県知事選挙）でも同数だったことを2026-11-22に直接照合した。静岡県選挙管理委員会自身の「開票結果」文書そのものの現行サイトでの所在は未確認（県選管の「投票結果」PDFは現存する）。"
     }
   ]
 }

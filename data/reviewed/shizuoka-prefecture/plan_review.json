@@ -1,0 +1,55 @@
+{
+  "id": "phase15-shizuoka-plan-review",
+  "name_ja": "静岡県",
+  "next_action": "Register the priority projects in the project stage after confirming the registration unit (the 24 policy pillars or the measures beneath them) from the annual plan evaluation report; register the governor's promises in the promise stage from the official 2024 election bulletin (candidate panels are image-based, so visual transcription is expected); add the assembly layer in the assembly stage; keep supplementary budgets, execution and settlement as separate states.",
+  "official_code": "220001",
+  "quality_boundary": "The prefecture's top plan is the Shizuoka Prefecture Comprehensive Plan (Well-being Plan, FY2025-FY2028). This review fixes that identity, the structure of three policy divisions plus administrative management above eight policies, twenty-four policy pillars, 197 initiatives and 101 outcome indicators, and the annual evaluation governance through the plan evaluation report. It is consistent with the Phase 9 registration (985 reviewed target statements extracted from the same plan, data/reviewed/phase9/22.json). Initiatives, their amounts and their evaluation states are registered in a later project stage; the FY2026 initial budget and the FY2022-FY2024 ordinary-account settlements are registered as separate fiscal records.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "静岡県公式サイト「静岡県総合計画～しずおか ウェルビーイングプラン～」のページおよびPhase 9登録（data/reviewed/phase9/22.json）",
+      "evidence_role": "current_plan_identity",
+      "id": "shizuoka-plan-current-identity",
+      "review_note": "計画名・計画期間は県公式ページとPhase 9登録（reviewed）の双方で一致を確認した。",
+      "source_url": "https://www.pref.shizuoka.jp/kensei/keikaku/sogokeikaku/1054440.html",
+      "statement": "静岡県の県政の最上位計画は「静岡県総合計画～しずおか ウェルビーイングプラン～」（2025年度〜2028年度）であり、目指す姿は「幸福度日本一の静岡県」である。Phase 9では同計画の行動計画・成果指標から985件のreviewed target statementsが登録されており、本レビューはこの計画を現行計画として保持する。",
+      "title": "現行計画（静岡県総合計画～しずおか ウェルビーイングプラン～）",
+      "value": "静岡県総合計画～しずおか ウェルビーイングプラン～（2025年度〜2028年度）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "静岡県公式サイト「静岡県総合計画～しずおか ウェルビーイングプラン～」の体系の記述",
+      "evidence_role": "policy_structure",
+      "id": "shizuoka-plan-policy-structure",
+      "review_note": "政策区分・政策・政策の柱・取組・成果指標の数と名称は県公式ページの体系の記述で確認した。取組と指標の個別登録は段階2で行う。",
+      "source_url": "https://www.pref.shizuoka.jp/kensei/keikaku/sogokeikaku/1054440.html",
+      "statement": "計画の体系は、3つの政策区分（「未来を創る力」「豊かな暮らし」「県民の安心」）と「行政経営」のもとに、政策（大柱）8本、政策の柱（中柱）24本が配置され、さらに197の取組と101の成果指標が設定される。",
+      "title": "計画の体系（政策区分3＋行政経営・政策8・政策の柱24・取組197・成果指標101）",
+      "value": "政策区分3＋行政経営／政策8／政策の柱24／取組197／成果指標101"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "静岡県公式サイト「静岡県総合計画～しずおか ウェルビーイングプラン～」およびPhase 9登録（data/reviewed/phase9/22.json）の抽出元",
+      "evidence_role": "implementation_layer",
+      "id": "shizuoka-plan-implementation-layer",
+      "review_note": "Phase 9登録が計画の行動計画・成果指標から抽出されていることを登録ファイルで確認した。取組単位の金額・評価の登録は段階2の対象であり、登録単位（政策の柱／施策）は評価書の公表単位を確認して段階2で確定する。",
+      "source_url": "https://www.pref.shizuoka.jp/kensei/keikaku/sogokeikaku/1054440.html",
+      "statement": "実施と測定の層は197の取組と101の成果指標が担い、Phase 9の登録（985件のtarget statements）は計画の行動計画と成果指標から抽出された。取組ごとの金額や評価は年次の評価書で政策の柱ごとに示される。",
+      "title": "取組197・成果指標101による実施と測定",
+      "value": "取組197／成果指標101（Phase 9で985件のtarget statementsを登録済み）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "静岡県公式サイト「静岡県総合計画の進捗状況・評価」および令和8年度静岡県総合計画評価書の公表記録",
+      "evidence_role": "progress_governance",
+      "id": "shizuoka-plan-progress-governance",
+      "review_note": "評価書の年次公表、A〜D区分、審議会・パブリックコメント・常任委員会審査の経路を県公式ページと棚卸しで確認した。",
+      "source_url": "https://www.pref.shizuoka.jp/kensei/keikaku/sogokeikaku/1086253.html",
+      "statement": "進行管理は毎年度作成・公表される「静岡県総合計画評価書」で行われ、成果指標は進捗率によるA〜D区分で評価され、政策の柱ごとに「施策」単位で前年度の主な取組と今後の方向性が示される。令和8年度評価書（計画初年度・令和7年度実績の評価）は2026年10月30日に公表された。公表前に総合計画審議会による評価、パブリックコメント、県議会常任委員会での審査を経る。",
+      "title": "総合計画評価書による年次の進行管理",
+      "value": "静岡県総合計画評価書（年次）／成果指標のA〜D区分評価"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-22"
+}
