@@ -1,0 +1,176 @@
+{
+  "issue": 858,
+  "municipality_id": "jp-local-280003",
+  "municipality_key": "hyogo-prefecture",
+  "population": {
+    "description": "第三期「兵庫県地域創生戦略」（2025–2029、2025年3月策定）の取組方針項目。3つの柱の下に8つの方向性が置かれ、各方向性に取組方針のグループと番号項目が公式掲載順で並ぶ。項目は全66件（方向性1：8件、2：4件、3：5件、4：11件、5：6件、6：14件、7：7件、8：11件）。このうち2件は同一項目の相互参照・再掲である（方向性1の「特別支援教育の推進」は方向性3で説明される同一項目、方向性6の「県内への就業・定住意識の高揚」は方向性4の項目の再掲）ため、固有の項目は64件である。県の評価体系では8つの方向性が「施策」と位置付けられ、番号項目は「取組方針」と呼ばれる。本登録では、計画の施策レベルの単位を登録単位とした千葉県の前例に倣い、取組方針の番号項目を登録単位とした。第二期戦略の項目は母集団に含めず、現行戦略の項目と対応付けない。なお、本編の取組方針表では「生活機能の維持確保」が方向性7の末尾に続いて見えるが、概要版の施策キーワードとアクション・プランの目次では方向性8のグループであり、方向性8として数えた。",
+    "fiscal_year": 2025,
+    "project_count": 66,
+    "source_ids": [
+      "hyogo-pref-regional-revitalization-strategy-3rd-document",
+      "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+    ]
+  },
+  "review_status": "reviewed",
+  "scope": "initial",
+  "selection_rule": {
+    "description": "8つの方向性を戦略の掲載順に巡回し、各方向性では取組方針の項目を掲載順にたどって10系列を選定する。第1巡目で方向性1〜8の先頭項目を、第2巡目で方向性1・2の第2項目を選定した時点で10系列が揃ったため、第3巡目には進んでいない。金額の大小では選ばない。",
+    "pillars": [
+      "自分らしく生きられる社会の創出",
+      "五国に拡がる可能性の追求",
+      "暮らしの持続性の確保"
+    ]
+  },
+  "selections": [
+    {
+      "direction": "多様な学びや働き方が叶う社会を創る",
+      "direction_number": 1,
+      "group": "多様な学びの充実",
+      "item_number": 1,
+      "measure_code": "1-多様な学びの充実-1",
+      "official_title": "次代を担う人材を育成する教育の推進",
+      "pillar": "自分らしく生きられる社会の創出",
+      "project_id": "jp-local-280003-project-2025-next-generation-education",
+      "selection_basis": "第1巡目: 方向性1「多様な学びや働き方が叶う社会を創る」について、計画の掲載順で先頭の取組方針項目「次代を担う人材を育成する教育の推進」を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-280003-project-series-next-generation-education",
+      "source_ids": [
+        "hyogo-pref-regional-revitalization-strategy-3rd-document"
+      ]
+    },
+    {
+      "direction": "居場所と役割を創る",
+      "direction_number": 2,
+      "group": "セーフティネットの構築",
+      "item_number": 1,
+      "measure_code": "2-セーフティネットの構築-1",
+      "official_title": "「孤独・孤立」対策による地域支援体制の強化",
+      "pillar": "自分らしく生きられる社会の創出",
+      "project_id": "jp-local-280003-project-2025-loneliness-isolation-support",
+      "selection_basis": "第1巡目: 方向性2「居場所と役割を創る」について、計画の掲載順で先頭の取組方針項目「「孤独・孤立」対策による地域支援体制の強化」を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-280003-project-series-loneliness-isolation-support",
+      "source_ids": [
+        "hyogo-pref-regional-revitalization-strategy-3rd-document"
+      ]
+    },
+    {
+      "direction": "寛容性を拡げる",
+      "direction_number": 3,
+      "group": "多様性を尊重する社会づくり",
+      "item_number": 1,
+      "measure_code": "3-多様性を尊重する社会づくり-1",
+      "official_title": "外国人の活躍支援",
+      "pillar": "自分らしく生きられる社会の創出",
+      "project_id": "jp-local-280003-project-2025-foreign-residents-participation",
+      "selection_basis": "第1巡目: 方向性3「寛容性を拡げる」について、計画の掲載順で先頭の取組方針項目「外国人の活躍支援」を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-280003-project-series-foreign-residents-participation",
+      "source_ids": [
+        "hyogo-pref-regional-revitalization-strategy-3rd-document"
+      ]
+    },
+    {
+      "direction": "ひとの動きを生み出す",
+      "direction_number": 4,
+      "group": "移住・定住の促進",
+      "item_number": 1,
+      "measure_code": "4-移住・定住の促進-1",
+      "official_title": "移住促進の強化",
+      "pillar": "五国に拡がる可能性の追求",
+      "project_id": "jp-local-280003-project-2025-migration-promotion",
+      "selection_basis": "第1巡目: 方向性4「ひとの動きを生み出す」について、計画の掲載順で先頭の取組方針項目「移住促進の強化」を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-280003-project-series-migration-promotion",
+      "source_ids": [
+        "hyogo-pref-regional-revitalization-strategy-3rd-document"
+      ]
+    },
+    {
+      "direction": "地域の固有性を磨く",
+      "direction_number": 5,
+      "group": "地域資源の維持・発展",
+      "item_number": 1,
+      "measure_code": "5-地域資源の維持・発展-1",
+      "official_title": "地場産業の新たな展開への支援",
+      "pillar": "五国に拡がる可能性の追求",
+      "project_id": "jp-local-280003-project-2025-local-industry-development",
+      "selection_basis": "第1巡目: 方向性5「地域の固有性を磨く」について、計画の掲載順で先頭の取組方針項目「地場産業の新たな展開への支援」を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-280003-project-series-local-industry-development",
+      "source_ids": [
+        "hyogo-pref-regional-revitalization-strategy-3rd-document"
+      ]
+    },
+    {
+      "direction": "経済活力を創出する",
+      "direction_number": 6,
+      "group": "新たな産業の創出",
+      "item_number": 1,
+      "measure_code": "6-新たな産業の創出-1",
+      "official_title": "成長産業の育成",
+      "pillar": "五国に拡がる可能性の追求",
+      "project_id": "jp-local-280003-project-2025-growth-industry-fostering",
+      "selection_basis": "第1巡目: 方向性6「経済活力を創出する」について、計画の掲載順で先頭の取組方針項目「成長産業の育成」を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-280003-project-series-growth-industry-fostering",
+      "source_ids": [
+        "hyogo-pref-regional-revitalization-strategy-3rd-document"
+      ]
+    },
+    {
+      "direction": "人・自然・文化を次代につなぐ",
+      "direction_number": 7,
+      "group": "出会いから子育てへの支援",
+      "item_number": 1,
+      "measure_code": "7-出会いから子育てへの支援-1",
+      "official_title": "出会い・結婚支援の充実",
+      "pillar": "暮らしの持続性の確保",
+      "project_id": "jp-local-280003-project-2025-marriage-support",
+      "selection_basis": "第1巡目: 方向性7「人・自然・文化を次代につなぐ」について、計画の掲載順で先頭の取組方針項目「出会い・結婚支援の充実」を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-280003-project-series-marriage-support",
+      "source_ids": [
+        "hyogo-pref-regional-revitalization-strategy-3rd-document"
+      ]
+    },
+    {
+      "direction": "安心して暮らし続けられる地域を創る",
+      "direction_number": 8,
+      "group": "生活機能の維持確保",
+      "item_number": 1,
+      "measure_code": "8-生活機能の維持確保-1",
+      "official_title": "多自然地域における持続可能な生活圏の構築",
+      "pillar": "暮らしの持続性の確保",
+      "project_id": "jp-local-280003-project-2025-sustainable-rural-living-areas",
+      "selection_basis": "第1巡目: 方向性8「安心して暮らし続けられる地域を創る」について、計画の掲載順で先頭の取組方針項目「多自然地域における持続可能な生活圏の構築」を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-280003-project-series-sustainable-rural-living-areas",
+      "source_ids": [
+        "hyogo-pref-regional-revitalization-strategy-3rd-document"
+      ]
+    },
+    {
+      "direction": "多様な学びや働き方が叶う社会を創る",
+      "direction_number": 1,
+      "group": "多様な学びの充実",
+      "item_number": 2,
+      "measure_code": "1-多様な学びの充実-2",
+      "official_title": "教育環境の整備・充実",
+      "pillar": "自分らしく生きられる社会の創出",
+      "project_id": "jp-local-280003-project-2025-educational-environment",
+      "selection_basis": "第2巡目: 方向性1「多様な学びや働き方が叶う社会を創る」について、計画の掲載順で第2の取組方針項目「教育環境の整備・充実」を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-280003-project-series-educational-environment",
+      "source_ids": [
+        "hyogo-pref-regional-revitalization-strategy-3rd-document"
+      ]
+    },
+    {
+      "direction": "居場所と役割を創る",
+      "direction_number": 2,
+      "group": "セーフティネットの構築",
+      "item_number": 2,
+      "measure_code": "2-セーフティネットの構築-2",
+      "official_title": "課題を抱える子ども・若者への支援",
+      "pillar": "自分らしく生きられる社会の創出",
+      "project_id": "jp-local-280003-project-2025-children-youth-support",
+      "selection_basis": "第2巡目: 方向性2「居場所と役割を創る」について、計画の掲載順で第2の取組方針項目「課題を抱える子ども・若者への支援」を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-280003-project-series-children-youth-support",
+      "source_ids": [
+        "hyogo-pref-regional-revitalization-strategy-3rd-document"
+      ]
+    }
+  ]
+}

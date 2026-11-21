@@ -1,0 +1,872 @@
+[
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "戦略本編の取組方針表と第III章の項目見出し、実施状況報告書（令和7年度）の評価体系・施策フレーム",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "本登録の単位は、第三期「兵庫県地域創生戦略」の取組方針の番号項目（方向性1「多様な学びや働き方が叶う社会を創る」・グループ「多様な学びの充実」の項目1）とした。県の評価体系では8つの方向性が「施策」と位置付けられ、番号項目は「取組方針」と呼ばれるが、方向性は多数の指標と事業を束ねる大きな単位であるため、計画の施策レベルの単位を登録単位とした千葉県の前例に倣い、項目名・目的・主な取組が項目ごとに定まる取組方針項目を登録単位とした。個別事業はアクション・プランと実施状況報告書に列挙されるが、本段階では重複登録しない。担当部局は事業ごとに異なるため responsible_department は未登録（null）とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "戦略本編の取組方針表・第III章の項目見出しと実施状況報告書の施策フレーム",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "項目名は「次代を担う人材を育成する教育の推進」。戦略本編（第III章の項目見出し）と令和7年度実施状況報告書の施策フレームで同じ名称を確認した。柱は「自分らしく生きられる社会の創出」、方向性は「多様な学びや働き方が叶う社会を創る」、グループは「多様な学びの充実」である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "戦略本編の取組方針表の掲載順",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document"
+        ],
+        "statement": "選定規則（8つの方向性を戦略の掲載順に巡回し、各方向性では取組方針の項目を掲載順にたどる）により第1巡目で選定した。対応関係は選定カタログ（data/catalog/hyogo_priority_project_selection.json）に記録した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "戦略本編第III章の当該項目の説明文",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document"
+        ],
+        "statement": "purpose は戦略本編第III章の当該項目の説明文を転記したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "令和8年度アクション・プランの事業表と令和7年度実施状況報告書の取組実績",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-action-plan-fy2026",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "県は取組方針項目単位の予算額・決算額を公表していない。アクション・プランは項目ごとに主要事業を列挙し事業単位の事業費（千円）を掲載するが項目単位の合計はなく、主要事業のみの合算は項目全体の金額にはならないため合算していない。令和7年度実施状況報告書は項目ごとの主な事業の実績を金額なしで掲載しており、本項目ではHYOGO高校生「海外武者修行」応援プロジェクト（令和7年度支援人数20人）、HUMAP（兵庫・アジア太平洋大学間交流ネットワーク）留学促進事業、県立高校ふるさと共創プロジェクト（令和7年度取組校数153校）が挙げられている。したがって金額は未登録（null）とし、0で補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和7年度実施状況報告書の評価体系と方向性ごとの指標・目標達成状況",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "県は取組方針項目単位の評定を公表していないため、official_evaluation は未登録（null）とした。第三期の評価書式は第二期と同型で、指標ごとに目標値達成率への達成度ランク（A：100%以上、B：90%以上100%未満、C：70%以上90%未満、D：70%未満）を付けるが、187指標は方向性ごとに設定される。方向性1「多様な学びや働き方が叶う社会を創る」については、令和7年度実施状況報告書がA及びB評価が85.7%（24/28項目、未判明4項目）と集計している。これは方向性単位の指標集計であり、項目の評定ではない。第二期の戦略目標の評定は版が異なるため、第三期の項目には対応付けない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "令和7年度実施状況報告書の評価体系（指標は方向性ごとに設定）",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "指標は方向性単位で設定され（第三期は187指標）、取組方針項目には固有の指標は設定されない。方向性の指標を特定の項目の指標として付け替えることは誤帰属になるため、kpis は空とした。指標の実績値と達成度は実施状況報告書が方向性ごとに公表している。"
+      }
+    ],
+    "id": "evidence-jp-local-280003-project-2025-next-generation-education",
+    "open_questions": [
+      "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+      "第三期戦略の実施状況報告書は令和7年度分のみが公表済みである。令和8年度以降の報告書が公表されたら年度別レコードを追加する。",
+      "方向性単位の指標（187指標）の個別実績は本段階では KPI 登録していない。登録範囲の見直しは更新サイクル（Issue #706）の対象である。",
+      "契約・議会・監査との連携は未登録である。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-280003-project-2025-next-generation-education",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "戦略本編の取組方針表と第III章の項目見出し、実施状況報告書（令和7年度）の評価体系・施策フレーム",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "本登録の単位は、第三期「兵庫県地域創生戦略」の取組方針の番号項目（方向性2「居場所と役割を創る」・グループ「セーフティネットの構築」の項目1）とした。県の評価体系では8つの方向性が「施策」と位置付けられ、番号項目は「取組方針」と呼ばれるが、方向性は多数の指標と事業を束ねる大きな単位であるため、計画の施策レベルの単位を登録単位とした千葉県の前例に倣い、項目名・目的・主な取組が項目ごとに定まる取組方針項目を登録単位とした。個別事業はアクション・プランと実施状況報告書に列挙されるが、本段階では重複登録しない。担当部局は事業ごとに異なるため responsible_department は未登録（null）とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "戦略本編の取組方針表・第III章の項目見出しと実施状況報告書の施策フレーム",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "項目名は「「孤独・孤立」対策による地域支援体制の強化」。戦略本編（第III章の項目見出し）と令和7年度実施状況報告書の施策フレームで同じ名称を確認した。柱は「自分らしく生きられる社会の創出」、方向性は「居場所と役割を創る」、グループは「セーフティネットの構築」である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "戦略本編の取組方針表の掲載順",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document"
+        ],
+        "statement": "選定規則（8つの方向性を戦略の掲載順に巡回し、各方向性では取組方針の項目を掲載順にたどる）により第1巡目で選定した。対応関係は選定カタログ（data/catalog/hyogo_priority_project_selection.json）に記録した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "戦略本編第III章の当該項目の説明文",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document"
+        ],
+        "statement": "purpose は戦略本編第III章の当該項目の説明文を転記したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "令和8年度アクション・プランの事業表と令和7年度実施状況報告書の取組実績",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-action-plan-fy2026",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "県は取組方針項目単位の予算額・決算額を公表していない。アクション・プランは項目ごとに主要事業を列挙し事業単位の事業費（千円）を掲載するが項目単位の合計はなく、主要事業のみの合算は項目全体の金額にはならないため合算していない。令和7年度実施状況報告書は項目ごとの主な事業の実績を金額なしで掲載しており、本項目ではひきこもり対策総合支援事業、DV防止・被害者保護推進強化事業が挙げられている。したがって金額は未登録（null）とし、0で補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和7年度実施状況報告書の評価体系と方向性ごとの指標・目標達成状況",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "県は取組方針項目単位の評定を公表していないため、official_evaluation は未登録（null）とした。第三期の評価書式は第二期と同型で、指標ごとに目標値達成率への達成度ランク（A：100%以上、B：90%以上100%未満、C：70%以上90%未満、D：70%未満）を付けるが、187指標は方向性ごとに設定される。方向性2「居場所と役割を創る」については、令和7年度実施状況報告書がA及びB評価が54.6%（6/11項目、未判明5項目）と集計している。これは方向性単位の指標集計であり、項目の評定ではない。第二期の戦略目標の評定は版が異なるため、第三期の項目には対応付けない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "令和7年度実施状況報告書の評価体系（指標は方向性ごとに設定）",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "指標は方向性単位で設定され（第三期は187指標）、取組方針項目には固有の指標は設定されない。方向性の指標を特定の項目の指標として付け替えることは誤帰属になるため、kpis は空とした。指標の実績値と達成度は実施状況報告書が方向性ごとに公表している。"
+      }
+    ],
+    "id": "evidence-jp-local-280003-project-2025-loneliness-isolation-support",
+    "open_questions": [
+      "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+      "第三期戦略の実施状況報告書は令和7年度分のみが公表済みである。令和8年度以降の報告書が公表されたら年度別レコードを追加する。",
+      "方向性単位の指標（187指標）の個別実績は本段階では KPI 登録していない。登録範囲の見直しは更新サイクル（Issue #706）の対象である。",
+      "契約・議会・監査との連携は未登録である。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-280003-project-2025-loneliness-isolation-support",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "戦略本編の取組方針表と第III章の項目見出し、実施状況報告書（令和7年度）の評価体系・施策フレーム",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "本登録の単位は、第三期「兵庫県地域創生戦略」の取組方針の番号項目（方向性3「寛容性を拡げる」・グループ「多様性を尊重する社会づくり」の項目1）とした。県の評価体系では8つの方向性が「施策」と位置付けられ、番号項目は「取組方針」と呼ばれるが、方向性は多数の指標と事業を束ねる大きな単位であるため、計画の施策レベルの単位を登録単位とした千葉県の前例に倣い、項目名・目的・主な取組が項目ごとに定まる取組方針項目を登録単位とした。個別事業はアクション・プランと実施状況報告書に列挙されるが、本段階では重複登録しない。担当部局は事業ごとに異なるため responsible_department は未登録（null）とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "戦略本編の取組方針表・第III章の項目見出しと実施状況報告書の施策フレーム",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "項目名は「外国人の活躍支援」。戦略本編（第III章の項目見出し）と令和7年度実施状況報告書の施策フレームで同じ名称を確認した。柱は「自分らしく生きられる社会の創出」、方向性は「寛容性を拡げる」、グループは「多様性を尊重する社会づくり」である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "戦略本編の取組方針表の掲載順",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document"
+        ],
+        "statement": "選定規則（8つの方向性を戦略の掲載順に巡回し、各方向性では取組方針の項目を掲載順にたどる）により第1巡目で選定した。対応関係は選定カタログ（data/catalog/hyogo_priority_project_selection.json）に記録した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "戦略本編第III章の当該項目の説明文",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document"
+        ],
+        "statement": "purpose は戦略本編第III章の当該項目の説明文を転記したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "令和8年度アクション・プランの事業表と令和7年度実施状況報告書の取組実績",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-action-plan-fy2026",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "県は取組方針項目単位の予算額・決算額を公表していない。アクション・プランは項目ごとに主要事業を列挙し事業単位の事業費（千円）を掲載するが項目単位の合計はなく、主要事業のみの合算は項目全体の金額にはならないため合算していない。令和7年度実施状況報告書は項目ごとの主な事業の実績を金額なしで掲載しており、本項目では外国人留学生等に対する県内企業の魅力発信、外国人雇用HYOGOサポートデスクが挙げられている。したがって金額は未登録（null）とし、0で補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和7年度実施状況報告書の評価体系と方向性ごとの指標・目標達成状況",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "県は取組方針項目単位の評定を公表していないため、official_evaluation は未登録（null）とした。第三期の評価書式は第二期と同型で、指標ごとに目標値達成率への達成度ランク（A：100%以上、B：90%以上100%未満、C：70%以上90%未満、D：70%未満）を付けるが、187指標は方向性ごとに設定される。方向性3「寛容性を拡げる」については、令和7年度実施状況報告書がA及びB評価が100.0%（12/12項目、未判明2項目）と集計している。これは方向性単位の指標集計であり、項目の評定ではない。第二期の戦略目標の評定は版が異なるため、第三期の項目には対応付けない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "令和7年度実施状況報告書の評価体系（指標は方向性ごとに設定）",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "指標は方向性単位で設定され（第三期は187指標）、取組方針項目には固有の指標は設定されない。方向性の指標を特定の項目の指標として付け替えることは誤帰属になるため、kpis は空とした。指標の実績値と達成度は実施状況報告書が方向性ごとに公表している。"
+      }
+    ],
+    "id": "evidence-jp-local-280003-project-2025-foreign-residents-participation",
+    "open_questions": [
+      "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+      "第三期戦略の実施状況報告書は令和7年度分のみが公表済みである。令和8年度以降の報告書が公表されたら年度別レコードを追加する。",
+      "方向性単位の指標（187指標）の個別実績は本段階では KPI 登録していない。登録範囲の見直しは更新サイクル（Issue #706）の対象である。",
+      "契約・議会・監査との連携は未登録である。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-280003-project-2025-foreign-residents-participation",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "戦略本編の取組方針表と第III章の項目見出し、実施状況報告書（令和7年度）の評価体系・施策フレーム",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "本登録の単位は、第三期「兵庫県地域創生戦略」の取組方針の番号項目（方向性4「ひとの動きを生み出す」・グループ「移住・定住の促進」の項目1）とした。県の評価体系では8つの方向性が「施策」と位置付けられ、番号項目は「取組方針」と呼ばれるが、方向性は多数の指標と事業を束ねる大きな単位であるため、計画の施策レベルの単位を登録単位とした千葉県の前例に倣い、項目名・目的・主な取組が項目ごとに定まる取組方針項目を登録単位とした。個別事業はアクション・プランと実施状況報告書に列挙されるが、本段階では重複登録しない。担当部局は事業ごとに異なるため responsible_department は未登録（null）とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "戦略本編の取組方針表・第III章の項目見出しと実施状況報告書の施策フレーム",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "項目名は「移住促進の強化」。戦略本編（第III章の項目見出し）と令和7年度実施状況報告書の施策フレームで同じ名称を確認した。柱は「五国に拡がる可能性の追求」、方向性は「ひとの動きを生み出す」、グループは「移住・定住の促進」である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "戦略本編の取組方針表の掲載順",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document"
+        ],
+        "statement": "選定規則（8つの方向性を戦略の掲載順に巡回し、各方向性では取組方針の項目を掲載順にたどる）により第1巡目で選定した。対応関係は選定カタログ（data/catalog/hyogo_priority_project_selection.json）に記録した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "戦略本編第III章の当該項目の説明文",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document"
+        ],
+        "statement": "purpose は戦略本編第III章の当該項目の説明文を転記したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "令和8年度アクション・プランの事業表と令和7年度実施状況報告書の取組実績",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-action-plan-fy2026",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "県は取組方針項目単位の予算額・決算額を公表していない。アクション・プランは項目ごとに主要事業を列挙し事業単位の事業費（千円）を掲載するが項目単位の合計はなく、主要事業のみの合算は項目全体の金額にはならないため合算していない。令和7年度実施状況報告書は項目ごとの主な事業の実績を金額なしで掲載しており、本項目ではひょうごの魅力発信等による総合的な移住促進事業が挙げられている。したがって金額は未登録（null）とし、0で補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和7年度実施状況報告書の評価体系と方向性ごとの指標・目標達成状況",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "県は取組方針項目単位の評定を公表していないため、official_evaluation は未登録（null）とした。第三期の評価書式は第二期と同型で、指標ごとに目標値達成率への達成度ランク（A：100%以上、B：90%以上100%未満、C：70%以上90%未満、D：70%未満）を付けるが、187指標は方向性ごとに設定される。方向性4「ひとの動きを生み出す」については、令和7年度実施状況報告書がA及びB評価が88.9%（16/18項目、未判明4項目）と集計している。これは方向性単位の指標集計であり、項目の評定ではない。第二期の戦略目標の評定は版が異なるため、第三期の項目には対応付けない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "令和7年度実施状況報告書の評価体系（指標は方向性ごとに設定）",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "指標は方向性単位で設定され（第三期は187指標）、取組方針項目には固有の指標は設定されない。方向性の指標を特定の項目の指標として付け替えることは誤帰属になるため、kpis は空とした。指標の実績値と達成度は実施状況報告書が方向性ごとに公表している。"
+      }
+    ],
+    "id": "evidence-jp-local-280003-project-2025-migration-promotion",
+    "open_questions": [
+      "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+      "第三期戦略の実施状況報告書は令和7年度分のみが公表済みである。令和8年度以降の報告書が公表されたら年度別レコードを追加する。",
+      "方向性単位の指標（187指標）の個別実績は本段階では KPI 登録していない。登録範囲の見直しは更新サイクル（Issue #706）の対象である。",
+      "契約・議会・監査との連携は未登録である。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-280003-project-2025-migration-promotion",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "戦略本編の取組方針表と第III章の項目見出し、実施状況報告書（令和7年度）の評価体系・施策フレーム",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "本登録の単位は、第三期「兵庫県地域創生戦略」の取組方針の番号項目（方向性5「地域の固有性を磨く」・グループ「地域資源の維持・発展」の項目1）とした。県の評価体系では8つの方向性が「施策」と位置付けられ、番号項目は「取組方針」と呼ばれるが、方向性は多数の指標と事業を束ねる大きな単位であるため、計画の施策レベルの単位を登録単位とした千葉県の前例に倣い、項目名・目的・主な取組が項目ごとに定まる取組方針項目を登録単位とした。個別事業はアクション・プランと実施状況報告書に列挙されるが、本段階では重複登録しない。担当部局は事業ごとに異なるため responsible_department は未登録（null）とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "戦略本編の取組方針表・第III章の項目見出しと実施状況報告書の施策フレーム",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "項目名は「地場産業の新たな展開への支援」。戦略本編（第III章の項目見出し）と令和7年度実施状況報告書の施策フレームで同じ名称を確認した。柱は「五国に拡がる可能性の追求」、方向性は「地域の固有性を磨く」、グループは「地域資源の維持・発展」である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "戦略本編の取組方針表の掲載順",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document"
+        ],
+        "statement": "選定規則（8つの方向性を戦略の掲載順に巡回し、各方向性では取組方針の項目を掲載順にたどる）により第1巡目で選定した。対応関係は選定カタログ（data/catalog/hyogo_priority_project_selection.json）に記録した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "戦略本編第III章の当該項目の説明文",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document"
+        ],
+        "statement": "purpose は戦略本編第III章の当該項目の説明文を転記したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "令和8年度アクション・プランの事業表と令和7年度実施状況報告書の取組実績",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-action-plan-fy2026",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "県は取組方針項目単位の予算額・決算額を公表していない。アクション・プランは項目ごとに主要事業を列挙し事業単位の事業費（千円）を掲載するが項目単位の合計はなく、主要事業のみの合算は項目全体の金額にはならないため合算していない。令和7年度実施状況報告書は項目ごとの主な事業の実績を金額なしで掲載しており、本項目ではNEXTじばさん推進プロジェクト事業、じばさん『ひょうご国』世界発信プロジェクト事業が挙げられている。したがって金額は未登録（null）とし、0で補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和7年度実施状況報告書の評価体系と方向性ごとの指標・目標達成状況",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "県は取組方針項目単位の評定を公表していないため、official_evaluation は未登録（null）とした。第三期の評価書式は第二期と同型で、指標ごとに目標値達成率への達成度ランク（A：100%以上、B：90%以上100%未満、C：70%以上90%未満、D：70%未満）を付けるが、187指標は方向性ごとに設定される。方向性5「地域の固有性を磨く」については、令和7年度実施状況報告書がA及びB評価が88.9%（8/9項目、未判明2項目）と集計している。これは方向性単位の指標集計であり、項目の評定ではない。第二期の戦略目標の評定は版が異なるため、第三期の項目には対応付けない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "令和7年度実施状況報告書の評価体系（指標は方向性ごとに設定）",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "指標は方向性単位で設定され（第三期は187指標）、取組方針項目には固有の指標は設定されない。方向性の指標を特定の項目の指標として付け替えることは誤帰属になるため、kpis は空とした。指標の実績値と達成度は実施状況報告書が方向性ごとに公表している。"
+      }
+    ],
+    "id": "evidence-jp-local-280003-project-2025-local-industry-development",
+    "open_questions": [
+      "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+      "第三期戦略の実施状況報告書は令和7年度分のみが公表済みである。令和8年度以降の報告書が公表されたら年度別レコードを追加する。",
+      "方向性単位の指標（187指標）の個別実績は本段階では KPI 登録していない。登録範囲の見直しは更新サイクル（Issue #706）の対象である。",
+      "契約・議会・監査との連携は未登録である。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-280003-project-2025-local-industry-development",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "戦略本編の取組方針表と第III章の項目見出し、実施状況報告書（令和7年度）の評価体系・施策フレーム",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "本登録の単位は、第三期「兵庫県地域創生戦略」の取組方針の番号項目（方向性6「経済活力を創出する」・グループ「新たな産業の創出」の項目1）とした。県の評価体系では8つの方向性が「施策」と位置付けられ、番号項目は「取組方針」と呼ばれるが、方向性は多数の指標と事業を束ねる大きな単位であるため、計画の施策レベルの単位を登録単位とした千葉県の前例に倣い、項目名・目的・主な取組が項目ごとに定まる取組方針項目を登録単位とした。個別事業はアクション・プランと実施状況報告書に列挙されるが、本段階では重複登録しない。担当部局は事業ごとに異なるため responsible_department は未登録（null）とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "戦略本編の取組方針表・第III章の項目見出しと実施状況報告書の施策フレーム",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "項目名は「成長産業の育成」。戦略本編（第III章の項目見出し）と令和7年度実施状況報告書の施策フレームで同じ名称を確認した。柱は「五国に拡がる可能性の追求」、方向性は「経済活力を創出する」、グループは「新たな産業の創出」である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "戦略本編の取組方針表の掲載順",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document"
+        ],
+        "statement": "選定規則（8つの方向性を戦略の掲載順に巡回し、各方向性では取組方針の項目を掲載順にたどる）により第1巡目で選定した。対応関係は選定カタログ（data/catalog/hyogo_priority_project_selection.json）に記録した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "戦略本編第III章の当該項目の説明文",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document"
+        ],
+        "statement": "purpose は戦略本編第III章の当該項目の説明文を転記したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "令和8年度アクション・プランの事業表と令和7年度実施状況報告書の取組実績",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-action-plan-fy2026",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "県は取組方針項目単位の予算額・決算額を公表していない。アクション・プランは項目ごとに主要事業を列挙し事業単位の事業費（千円）を掲載するが項目単位の合計はなく、主要事業のみの合算は項目全体の金額にはならないため合算していない。令和7年度実施状況報告書は項目ごとの主な事業の実績を金額なしで掲載しており、本項目では次世代を見据えた航空機産業振興支援事業、成長産業育成のための研究開発支援事業が挙げられている。したがって金額は未登録（null）とし、0で補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和7年度実施状況報告書の評価体系と方向性ごとの指標・目標達成状況",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "県は取組方針項目単位の評定を公表していないため、official_evaluation は未登録（null）とした。第三期の評価書式は第二期と同型で、指標ごとに目標値達成率への達成度ランク（A：100%以上、B：90%以上100%未満、C：70%以上90%未満、D：70%未満）を付けるが、187指標は方向性ごとに設定される。方向性6「経済活力を創出する」については、令和7年度実施状況報告書がA及びB評価が87.5%（28/32項目、未判明10項目）と集計している。これは方向性単位の指標集計であり、項目の評定ではない。第二期の戦略目標の評定は版が異なるため、第三期の項目には対応付けない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "令和7年度実施状況報告書の評価体系（指標は方向性ごとに設定）",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "指標は方向性単位で設定され（第三期は187指標）、取組方針項目には固有の指標は設定されない。方向性の指標を特定の項目の指標として付け替えることは誤帰属になるため、kpis は空とした。指標の実績値と達成度は実施状況報告書が方向性ごとに公表している。"
+      }
+    ],
+    "id": "evidence-jp-local-280003-project-2025-growth-industry-fostering",
+    "open_questions": [
+      "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+      "第三期戦略の実施状況報告書は令和7年度分のみが公表済みである。令和8年度以降の報告書が公表されたら年度別レコードを追加する。",
+      "方向性単位の指標（187指標）の個別実績は本段階では KPI 登録していない。登録範囲の見直しは更新サイクル（Issue #706）の対象である。",
+      "契約・議会・監査との連携は未登録である。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-280003-project-2025-growth-industry-fostering",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "戦略本編の取組方針表と第III章の項目見出し、実施状況報告書（令和7年度）の評価体系・施策フレーム",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "本登録の単位は、第三期「兵庫県地域創生戦略」の取組方針の番号項目（方向性7「人・自然・文化を次代につなぐ」・グループ「出会いから子育てへの支援」の項目1）とした。県の評価体系では8つの方向性が「施策」と位置付けられ、番号項目は「取組方針」と呼ばれるが、方向性は多数の指標と事業を束ねる大きな単位であるため、計画の施策レベルの単位を登録単位とした千葉県の前例に倣い、項目名・目的・主な取組が項目ごとに定まる取組方針項目を登録単位とした。個別事業はアクション・プランと実施状況報告書に列挙されるが、本段階では重複登録しない。担当部局は事業ごとに異なるため responsible_department は未登録（null）とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "戦略本編の取組方針表・第III章の項目見出しと実施状況報告書の施策フレーム",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "項目名は「出会い・結婚支援の充実」。戦略本編（第III章の項目見出し）と令和7年度実施状況報告書の施策フレームで同じ名称を確認した。柱は「暮らしの持続性の確保」、方向性は「人・自然・文化を次代につなぐ」、グループは「出会いから子育てへの支援」である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "戦略本編の取組方針表の掲載順",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document"
+        ],
+        "statement": "選定規則（8つの方向性を戦略の掲載順に巡回し、各方向性では取組方針の項目を掲載順にたどる）により第1巡目で選定した。対応関係は選定カタログ（data/catalog/hyogo_priority_project_selection.json）に記録した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "戦略本編第III章の当該項目の説明文",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document"
+        ],
+        "statement": "purpose は戦略本編第III章の当該項目の説明文を転記したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "令和8年度アクション・プランの事業表と令和7年度実施状況報告書の取組実績",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-action-plan-fy2026",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "県は取組方針項目単位の予算額・決算額を公表していない。アクション・プランは項目ごとに主要事業を列挙し事業単位の事業費（千円）を掲載するが項目単位の合計はなく、主要事業のみの合算は項目全体の金額にはならないため合算していない。令和7年度実施状況報告書は項目ごとの主な事業の実績を金額なしで掲載しており、本項目ではひょうご出会い支援事業が挙げられている。したがって金額は未登録（null）とし、0で補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和7年度実施状況報告書の評価体系と方向性ごとの指標・目標達成状況",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "県は取組方針項目単位の評定を公表していないため、official_evaluation は未登録（null）とした。第三期の評価書式は第二期と同型で、指標ごとに目標値達成率への達成度ランク（A：100%以上、B：90%以上100%未満、C：70%以上90%未満、D：70%未満）を付けるが、187指標は方向性ごとに設定される。方向性7「人・自然・文化を次代につなぐ」については、令和7年度実施状況報告書がA及びB評価が78.3%（18/23項目、未判明5項目）と集計している。これは方向性単位の指標集計であり、項目の評定ではない。第二期の戦略目標の評定は版が異なるため、第三期の項目には対応付けない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "令和7年度実施状況報告書の評価体系（指標は方向性ごとに設定）",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "指標は方向性単位で設定され（第三期は187指標）、取組方針項目には固有の指標は設定されない。方向性の指標を特定の項目の指標として付け替えることは誤帰属になるため、kpis は空とした。指標の実績値と達成度は実施状況報告書が方向性ごとに公表している。"
+      }
+    ],
+    "id": "evidence-jp-local-280003-project-2025-marriage-support",
+    "open_questions": [
+      "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+      "第三期戦略の実施状況報告書は令和7年度分のみが公表済みである。令和8年度以降の報告書が公表されたら年度別レコードを追加する。",
+      "方向性単位の指標（187指標）の個別実績は本段階では KPI 登録していない。登録範囲の見直しは更新サイクル（Issue #706）の対象である。",
+      "契約・議会・監査との連携は未登録である。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-280003-project-2025-marriage-support",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "戦略本編の取組方針表と第III章の項目見出し、実施状況報告書（令和7年度）の評価体系・施策フレーム",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "本登録の単位は、第三期「兵庫県地域創生戦略」の取組方針の番号項目（方向性8「安心して暮らし続けられる地域を創る」・グループ「生活機能の維持確保」の項目1）とした。県の評価体系では8つの方向性が「施策」と位置付けられ、番号項目は「取組方針」と呼ばれるが、方向性は多数の指標と事業を束ねる大きな単位であるため、計画の施策レベルの単位を登録単位とした千葉県の前例に倣い、項目名・目的・主な取組が項目ごとに定まる取組方針項目を登録単位とした。個別事業はアクション・プランと実施状況報告書に列挙されるが、本段階では重複登録しない。担当部局は事業ごとに異なるため responsible_department は未登録（null）とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "戦略本編の取組方針表・第III章の項目見出しと実施状況報告書の施策フレーム",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "項目名は「多自然地域における持続可能な生活圏の構築」。戦略本編（第III章の項目見出し）と令和7年度実施状況報告書の施策フレームで同じ名称を確認した。柱は「暮らしの持続性の確保」、方向性は「安心して暮らし続けられる地域を創る」、グループは「生活機能の維持確保」である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "戦略本編の取組方針表の掲載順",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document"
+        ],
+        "statement": "選定規則（8つの方向性を戦略の掲載順に巡回し、各方向性では取組方針の項目を掲載順にたどる）により第1巡目で選定した。対応関係は選定カタログ（data/catalog/hyogo_priority_project_selection.json）に記録した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "戦略本編第III章の当該項目の説明文",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document"
+        ],
+        "statement": "purpose は戦略本編第III章の当該項目の説明文を転記したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "令和8年度アクション・プランの事業表と令和7年度実施状況報告書の取組実績",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-action-plan-fy2026",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "県は取組方針項目単位の予算額・決算額を公表していない。アクション・プランは項目ごとに主要事業を列挙し事業単位の事業費（千円）を掲載するが項目単位の合計はなく、主要事業のみの合算は項目全体の金額にはならないため合算していない。令和7年度実施状況報告書は項目ごとの主な事業の実績を金額なしで掲載しており、本項目では持続可能な多自然地域づくりプロジェクト市町支援事業、「持続可能な生活圏」形成支援事業、マルチワーク組合支援事業が挙げられている。したがって金額は未登録（null）とし、0で補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和7年度実施状況報告書の評価体系と方向性ごとの指標・目標達成状況",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "県は取組方針項目単位の評定を公表していないため、official_evaluation は未登録（null）とした。第三期の評価書式は第二期と同型で、指標ごとに目標値達成率への達成度ランク（A：100%以上、B：90%以上100%未満、C：70%以上90%未満、D：70%未満）を付けるが、187指標は方向性ごとに設定される。方向性8「安心して暮らし続けられる地域を創る」については、令和7年度実施状況報告書がA及びB評価が86.7%（13/15項目、未判明11項目）と集計している。これは方向性単位の指標集計であり、項目の評定ではない。第二期の戦略目標の評定は版が異なるため、第三期の項目には対応付けない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "令和7年度実施状況報告書の評価体系（指標は方向性ごとに設定）",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "指標は方向性単位で設定され（第三期は187指標）、取組方針項目には固有の指標は設定されない。方向性の指標を特定の項目の指標として付け替えることは誤帰属になるため、kpis は空とした。指標の実績値と達成度は実施状況報告書が方向性ごとに公表している。"
+      }
+    ],
+    "id": "evidence-jp-local-280003-project-2025-sustainable-rural-living-areas",
+    "open_questions": [
+      "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+      "第三期戦略の実施状況報告書は令和7年度分のみが公表済みである。令和8年度以降の報告書が公表されたら年度別レコードを追加する。",
+      "方向性単位の指標（187指標）の個別実績は本段階では KPI 登録していない。登録範囲の見直しは更新サイクル（Issue #706）の対象である。",
+      "契約・議会・監査との連携は未登録である。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-280003-project-2025-sustainable-rural-living-areas",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "戦略本編の取組方針表と第III章の項目見出し、実施状況報告書（令和7年度）の評価体系・施策フレーム",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "本登録の単位は、第三期「兵庫県地域創生戦略」の取組方針の番号項目（方向性1「多様な学びや働き方が叶う社会を創る」・グループ「多様な学びの充実」の項目2）とした。県の評価体系では8つの方向性が「施策」と位置付けられ、番号項目は「取組方針」と呼ばれるが、方向性は多数の指標と事業を束ねる大きな単位であるため、計画の施策レベルの単位を登録単位とした千葉県の前例に倣い、項目名・目的・主な取組が項目ごとに定まる取組方針項目を登録単位とした。個別事業はアクション・プランと実施状況報告書に列挙されるが、本段階では重複登録しない。担当部局は事業ごとに異なるため responsible_department は未登録（null）とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "戦略本編の取組方針表・第III章の項目見出しと実施状況報告書の施策フレーム",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "項目名は「教育環境の整備・充実」。戦略本編（第III章の項目見出し）と令和7年度実施状況報告書の施策フレームで同じ名称を確認した。柱は「自分らしく生きられる社会の創出」、方向性は「多様な学びや働き方が叶う社会を創る」、グループは「多様な学びの充実」である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "戦略本編の取組方針表の掲載順",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document"
+        ],
+        "statement": "選定規則（8つの方向性を戦略の掲載順に巡回し、各方向性では取組方針の項目を掲載順にたどる）により第2巡目で選定した。対応関係は選定カタログ（data/catalog/hyogo_priority_project_selection.json）に記録した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "戦略本編第III章の当該項目の説明文",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document"
+        ],
+        "statement": "purpose は戦略本編第III章の当該項目の説明文を転記したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "令和8年度アクション・プランの事業表と令和7年度実施状況報告書の取組実績",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-action-plan-fy2026",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "県は取組方針項目単位の予算額・決算額を公表していない。アクション・プランは項目ごとに主要事業を列挙し事業単位の事業費（千円）を掲載するが項目単位の合計はなく、主要事業のみの合算は項目全体の金額にはならないため合算していない。令和7年度実施状況報告書は項目ごとの主な事業の実績を金額なしで掲載しており、本項目ではひょうごの未来を担う高校生等の部活動等応援事業、県立学校環境充実事業（選択教室の空調整備74室、避難所指定体育館の空調整備18校）が挙げられている。したがって金額は未登録（null）とし、0で補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和7年度実施状況報告書の評価体系と方向性ごとの指標・目標達成状況",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "県は取組方針項目単位の評定を公表していないため、official_evaluation は未登録（null）とした。第三期の評価書式は第二期と同型で、指標ごとに目標値達成率への達成度ランク（A：100%以上、B：90%以上100%未満、C：70%以上90%未満、D：70%未満）を付けるが、187指標は方向性ごとに設定される。方向性1「多様な学びや働き方が叶う社会を創る」については、令和7年度実施状況報告書がA及びB評価が85.7%（24/28項目、未判明4項目）と集計している。これは方向性単位の指標集計であり、項目の評定ではない。第二期の戦略目標の評定は版が異なるため、第三期の項目には対応付けない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "令和7年度実施状況報告書の評価体系（指標は方向性ごとに設定）",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "指標は方向性単位で設定され（第三期は187指標）、取組方針項目には固有の指標は設定されない。方向性の指標を特定の項目の指標として付け替えることは誤帰属になるため、kpis は空とした。指標の実績値と達成度は実施状況報告書が方向性ごとに公表している。"
+      }
+    ],
+    "id": "evidence-jp-local-280003-project-2025-educational-environment",
+    "open_questions": [
+      "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+      "第三期戦略の実施状況報告書は令和7年度分のみが公表済みである。令和8年度以降の報告書が公表されたら年度別レコードを追加する。",
+      "方向性単位の指標（187指標）の個別実績は本段階では KPI 登録していない。登録範囲の見直しは更新サイクル（Issue #706）の対象である。",
+      "契約・議会・監査との連携は未登録である。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-280003-project-2025-educational-environment",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "戦略本編の取組方針表と第III章の項目見出し、実施状況報告書（令和7年度）の評価体系・施策フレーム",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "本登録の単位は、第三期「兵庫県地域創生戦略」の取組方針の番号項目（方向性2「居場所と役割を創る」・グループ「セーフティネットの構築」の項目2）とした。県の評価体系では8つの方向性が「施策」と位置付けられ、番号項目は「取組方針」と呼ばれるが、方向性は多数の指標と事業を束ねる大きな単位であるため、計画の施策レベルの単位を登録単位とした千葉県の前例に倣い、項目名・目的・主な取組が項目ごとに定まる取組方針項目を登録単位とした。個別事業はアクション・プランと実施状況報告書に列挙されるが、本段階では重複登録しない。担当部局は事業ごとに異なるため responsible_department は未登録（null）とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "戦略本編の取組方針表・第III章の項目見出しと実施状況報告書の施策フレーム",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "項目名は「課題を抱える子ども・若者への支援」。戦略本編（第III章の項目見出し）と令和7年度実施状況報告書の施策フレームで同じ名称を確認した。柱は「自分らしく生きられる社会の創出」、方向性は「居場所と役割を創る」、グループは「セーフティネットの構築」である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "戦略本編の取組方針表の掲載順",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document"
+        ],
+        "statement": "選定規則（8つの方向性を戦略の掲載順に巡回し、各方向性では取組方針の項目を掲載順にたどる）により第2巡目で選定した。対応関係は選定カタログ（data/catalog/hyogo_priority_project_selection.json）に記録した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "戦略本編第III章の当該項目の説明文",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-3rd-document"
+        ],
+        "statement": "purpose は戦略本編第III章の当該項目の説明文を転記したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "令和8年度アクション・プランの事業表と令和7年度実施状況報告書の取組実績",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-action-plan-fy2026",
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "県は取組方針項目単位の予算額・決算額を公表していない。アクション・プランは項目ごとに主要事業を列挙し事業単位の事業費（千円）を掲載するが項目単位の合計はなく、主要事業のみの合算は項目全体の金額にはならないため合算していない。令和7年度実施状況報告書は項目ごとの主な事業の実績を金額なしで掲載しており、本項目ではヤングケアラー・若者ケアラー支援事業、ケアリーバーへの支援の充実、ひょうご不登校対策プロジェクトが挙げられている。したがって金額は未登録（null）とし、0で補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和7年度実施状況報告書の評価体系と方向性ごとの指標・目標達成状況",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "県は取組方針項目単位の評定を公表していないため、official_evaluation は未登録（null）とした。第三期の評価書式は第二期と同型で、指標ごとに目標値達成率への達成度ランク（A：100%以上、B：90%以上100%未満、C：70%以上90%未満、D：70%未満）を付けるが、187指標は方向性ごとに設定される。方向性2「居場所と役割を創る」については、令和7年度実施状況報告書がA及びB評価が54.6%（6/11項目、未判明5項目）と集計している。これは方向性単位の指標集計であり、項目の評定ではない。第二期の戦略目標の評定は版が異なるため、第三期の項目には対応付けない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "令和7年度実施状況報告書の評価体系（指標は方向性ごとに設定）",
+        "review_note": null,
+        "source_ids": [
+          "hyogo-pref-regional-revitalization-strategy-report-fy2025"
+        ],
+        "statement": "指標は方向性単位で設定され（第三期は187指標）、取組方針項目には固有の指標は設定されない。方向性の指標を特定の項目の指標として付け替えることは誤帰属になるため、kpis は空とした。指標の実績値と達成度は実施状況報告書が方向性ごとに公表している。"
+      }
+    ],
+    "id": "evidence-jp-local-280003-project-2025-children-youth-support",
+    "open_questions": [
+      "知事の公約は段階3で登録予定であり、本レコードの related_promise_ids は空である（未登録）。",
+      "第三期戦略の実施状況報告書は令和7年度分のみが公表済みである。令和8年度以降の報告書が公表されたら年度別レコードを追加する。",
+      "方向性単位の指標（187指標）の個別実績は本段階では KPI 登録していない。登録範囲の見直しは更新サイクル（Issue #706）の対象である。",
+      "契約・議会・監査との連携は未登録である。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-280003-project-2025-children-youth-support",
+    "subject_type": "project"
+  }
+]
