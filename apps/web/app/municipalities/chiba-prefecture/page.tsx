@@ -54,7 +54,6 @@ export default function ChibaPrefecturePage() {
     ? promisesForExecutive(governor).filter((promise) => promise.review_status === "reviewed" || promise.review_status === "verified")
     : [];
   const electionEvidence = governor ? evidenceForExecutive(governor) : undefined;
-  const electionResult = electionEvidence?.claims.find((claim) => claim.field === "election_date");
   const budget = chibaBudgetRecord("total_revenue");
   const tax = chibaBudgetRecord("local_tax");
   const spending = chibaBudgetRecord("total_expenditure");
