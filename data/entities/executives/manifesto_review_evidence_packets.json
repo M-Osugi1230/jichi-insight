@@ -934,6 +934,50 @@
     "review_status": "reviewed"
   },
   {
+    "id": "evidence-hamamatsu-city-2023-manifesto-review",
+    "subject_type": "manifesto_review",
+    "subject_id": "manifesto-review-jp-local-221309-2023",
+    "claims": [
+      {
+        "field": "source_location",
+        "statement": "中野ゆうすけ候補欄は選挙公報の1ページ左上に掲載され、キャッチコピー、ビジョン文、柱1〜3、略歴、公式サイトURLの案内で構成される。公報の欄外には「この選挙公報は、浜松市選挙公報の発行に関する条例第4条第1項の規定により、候補者から提出された原稿をそのまま掲載したものです。」との注記がある。",
+        "source_ids": [
+          "hamamatsu-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全2ページ）の1ページ左上。",
+        "decision": "accepted",
+        "review_note": "2026-11-22に描画画像（200dpi・350dpi）で候補者欄全体を確認した。"
+      },
+      {
+        "field": "segmentation_status",
+        "statement": "柱の見出し3件と☑印の項目7件を、資料上の境界に従い10件に分割した。キャッチコピー、ビジョン文、略歴、公式サイトURLの案内は公約ではないためレコード化していない。前任期の実績を提示する欄は候補欄に含まれない。",
+        "source_ids": [
+          "hamamatsu-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "候補者欄全体。",
+        "decision": "accepted",
+        "review_note": "句読点による推測分割は行っていない（docs/PROMISE_EXTRACTION.md の分割ルール）。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、浜松市選挙管理委員会が発行した選挙公報そのものから取得した。選挙公報は候補者から提出された原稿をそのまま掲載した公式文書であり、出典優先順位の最上位に当たる。単独PDFが市選管の結果調ページから現在も到達でき、ダウンロードしたファイルは段階0の棚卸し時に保全した控えとバイト単位で一致したため、再録等の間接的な来歴はない。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "hamamatsu-city-mayor-election-2023-bulletin",
+          "hamamatsu-city-mayor-election-2023-results-page"
+        ],
+        "location_note": "市選管の結果調ページと選挙公報PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "公報は出典優先順位の最上位であり、第三者経由の引用ではない。"
+      }
+    ],
+    "open_questions": [
+      "柱見出しをレコード化した境界判断は見直しの余地がある（見出しを標題ラベルとして扱い項目のみを登録する整理もありうる）。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。",
+      "選挙公報の音声読み上げ対応データ（テキスト版）の公表有無は未確認であり、公表が確認できれば転記と突合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
     "id": "evidence-shizuoka-pref-2024-manifesto-review",
     "subject_type": "manifesto_review",
     "subject_id": "manifesto-review-jp-local-220001-2024",

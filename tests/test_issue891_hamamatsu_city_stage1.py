@@ -248,8 +248,11 @@ def test_hamamatsu_mayor_term() -> None:
     assert term["term_end"] == "2027-04-30"
     assert term["election_date"] == "2023-04-09"
     assert term["status"] == "current"
-    # The manifesto link is deferred to stage 3 (bulletin check).
-    assert term["manifesto_source_ids"] == []
+    # The manifesto link was deferred at stage 1 and completed at
+    # stage 3 (Issue #900) after checking the bulletin itself.
+    assert term["manifesto_source_ids"] == [
+        "hamamatsu-city-mayor-election-2023-bulletin",
+    ]
 
     packets = load_json("data/entities/executives/evidence_packets.json")
     packet = next(p for p in packets if p["subject_id"] == term["id"])

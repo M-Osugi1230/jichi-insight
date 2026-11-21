@@ -1538,11 +1538,22 @@
         "location_note": "静岡県選挙管理委員会『市町長及び議会議員の任期』の浜松市長の欄。",
         "decision": "accepted",
         "review_note": "満了日は県選管一覧の明記を直接照合して確定した。"
+      },
+      {
+        "field": "manifesto_source_ids",
+        "statement": "原典は2023年浜松市長選挙の選挙公報である。市選管の結果調ページから単独PDFで現在も到達でき、実物を確認して中野ゆうすけ候補欄（公報1ページ左上）から公約10件を転記・登録したため、manifesto_source_ids に接続した。原典探索の記録は manifesto-source-search-hamamatsu-city-2023、分割レビューは manifesto-review-jp-local-221309-2023。",
+        "source_ids": [
+          "hamamatsu-city-mayor-election-2023-bulletin",
+          "hamamatsu-city-mayor-election-2023-results-page"
+        ],
+        "location_note": "選挙公報PDF（全2ページ）の1ページ左上の中野ゆうすけ候補欄。",
+        "decision": "accepted",
+        "review_note": "公報そのものを出典優先順位の最上位として登録した。段階1で未登録としていた接続を、静岡クラスター段階3で実物確認のうえ完了した。"
       }
     ],
     "open_questions": [
-      "2023年浜松市長選挙の選挙公報は市選管の結果調ページからPDFで公表されている（テキスト層なし）。公約の登録は静岡クラスター段階3で公報の実物確認を行ってから行い、その時点で manifesto_source_ids に接続する。",
-      "選挙公報の音声読み上げ対応データ（テキスト版）の公表有無は未確認である。"
+      "候補者の政策資料（公式サイトの政策ページ等）の安定した所在が特定できれば、登録済みの公約文と照合する。",
+      "選挙公報の音声読み上げ対応データ（テキスト版）は、結果調ページにはPDFのみが掲載されており、2026-11-22の確認範囲では公表を確認できなかった。公表が確認できれば転記と突合する。"
     ],
     "review_status": "reviewed"
   },
