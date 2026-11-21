@@ -113,6 +113,14 @@ export default function ProjectsPage() {
                           {evaluationDisclosure.map((note, index) => <p className={styles.meta} key={`evaluation-note-${index}`}>公式評価：{note}</p>)}
                         </details>
                       ) : null}
+                      {key === "saitama-city" ? <>
+                        <p className={styles.meta}>さいたま市の公式事業評価（A/B/C）：{project.official_evaluation?.rating ?? "未公表"}</p>
+                        <ul className={styles.meta}>{project.budget_records.map((record, index) => (
+                          <li key={index}>{record.fiscal_year}年度・{record.kind === "initial_budget" ? "当初予算額" : record.kind === "settlement" ? "実績額" : stageLabels[record.kind] ?? record.kind}：{record.amount_yen === null ? "未公表" : `${record.amount_yen.toLocaleString("ja-JP")}円`}</li>
+                        ))}</ul>
+                      </> : null}
+                      {key === "saitama-prefecture" ? <p className={styles.meta}>施策単位の金額：未公表。施策単位の公式評価：未公表（指標単位の判定のみ）。</p> : null}
+                      {key === "kawaguchi-city" ? <p className={styles.meta}>KPIは登録済み。金額・公式評価：計画初年度につき未公表。</p> : null}
                       {key === "nagoya-city" ? <p className={styles.meta}>予算案段階の予定額（成立値ではありません）</p> : null}
                       {key === "aichi-prefecture" ? <p className={styles.meta}>FY2026 当初予算は億円単位の概数です。県の公式評価：{project.official_evaluation?.rating ?? "未収録"}</p> : null}
                       {key === "toyota-city" ? <p className={styles.meta}>事業単位の公式評価は公表されていません。</p> : null}
