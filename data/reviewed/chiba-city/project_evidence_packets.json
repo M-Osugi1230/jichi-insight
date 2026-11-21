@@ -1,0 +1,1022 @@
+[
+ {
+  "id": "evidence-jp-local-121002-project-2026-decarbonization-environmental-conservation",
+  "subject_type": "project",
+  "subject_id": "jp-local-121002-project-2026-decarbonization-environmental-conservation",
+  "claims": [
+   {
+    "field": "registration_unit",
+    "statement": "本登録の単位は第2次実施計画の政策体系における「政策」（23政策）とした。市の政策評価は政策単位で、実施計画期間の終了後に、行政活動実績評価（客観指標の達成状況と計画事業の進捗）・市民アンケート指標の分析・政策評価（総合評価）の3ステップで実施する仕組みであり（政策評価制度の見直し資料および第2次実施計画の総論「計画の進行管理及び評価」）、公式評価が付く単位が政策であるためである。施策（67施策）には固有の公式評価・金額・指標は設定されない。計画事業（189事業）は既存登録（data/reviewed/chiba-city/current_project_work_items_field01〜08）で事業量（取組項目・令和7年度末現況・計画内容・令和10年度末目標）の層として登録済みであり、本段階では重複登録しない。指標（KGI/KPI）は分野単位で設定され既存登録（current_policy_indicators.json）が正本であるため、分野の指標を政策の指標として付け替えることはしない。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf",
+     "chiba-city-policy-evaluation-review-material",
+     "chiba-city-policy-evaluation-page"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.12『（3）計画の進行管理及び評価』、政策評価制度の見直し資料（評価単位は23政策・3ステップ・実施計画期間終了後に実施）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_title",
+    "statement": "政策名は「脱炭素化などの地球環境保全を進め、持続可能な社会を創る」。第2次実施計画の総論「まちづくりの総合8分野における政策体系」表の分野1「環境・自然」の政策1であり、各論の政策見出し（1-1）でも同じ名称を確認した。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.9『政策体系』表および各論の政策見出し（PDF p.21〜32）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "parent_policy",
+    "statement": "本登録のparent_policyには、政策を直接束ねる計画単位として「分野1 環境・自然」を用いた。分野目標は「気候変動に対応し、豊かな自然と共生する持続可能なまちを実現します」である。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.9『政策体系』表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "purpose",
+    "statement": "本政策は施策「1-1-1 地球温暖化対策の推進」「1-1-2 自然環境・生活環境の保全」「1-1-3 環境負荷に配慮したごみの削減と適正処理」で構成される。各施策名は各論の施策見出しで確認した。計画事業数（重複を除く主たる位置付けの事業）は17件であり、既存登録の計画事業identity（data/catalog/chiba_current_project_identities_field01.json）の施策コード1-1-*の集計と一致する。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 各論（PDF p.21〜32）の施策見出しと計画事業表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "kpis",
+    "statement": "政策単位の公式指標は公表されていないため、kpisは空とした。第2次実施計画の指標は、分野ごとに「ゴール（目標）」と重要目標達成指標（KGI）、構成因子とその一部の重要業績評価指標（KPI）として巻末資料に設定され（定量指標40件と全体目標指標1件）、毎年度、市民と有識者で構成する千葉市新基本計画審議会において取組状況の検証が行われる。これらは分野の目標に対する指標であり、本政策の指標ではないため付け替えない。分野指標は current_policy_indicators.json に登録済みである。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.12『（3）計画の進行管理及び評価』および巻末資料p.137-146（KGI/KPI表）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "responsible_department",
+    "statement": "第2次実施計画は政策単位の担当課を掲載していないため、responsible_departmentはnullとした。所管課は計画事業単位で各論の計画事業表に掲載されており、既存登録（current_project_work_items）に保持している。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 各論の計画事業表（所管課は事業単位の掲載）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "budget_records.initial_budget",
+    "statement": "千葉市は政策単位の令和8年度当初予算額を公表していない。第2次実施計画（2026〜2028年度）は政策・施策・計画事業のいずれの単位でも金額を掲載せず（各論の計画事業表は取組項目・令和7年度末現況・計画内容・令和10年度末目標で構成される）、市の当初予算資料も会計別・款別の集計であるため、本政策の令和8年度当初予算額は確認できず、未登録とした（0では補完しない）。なお、令和8年度一般会計予算は議案第15号として2026年3月17日に原案可決され成立している。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf",
+     "chiba-city-budget-fy2026-page",
+     "chiba-city-assembly-vote-results-2026-first"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 各論の計画事業表の構成、令和8年度予算ページ（会計別・款別予算額）、令和8年第1回定例会議決結果（議案第15号・2026年3月17日原案可決）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_evaluation",
+    "statement": "公式評価は未登録（official_evaluationはnull）。政策評価は実施計画期間の終了後に実施する仕組みであり、第2次実施計画（2026〜2028年度）は初年度のため、本政策の評価は未実施・未公表である。現行の千葉市基本計画（2023〜2032年度）を対象とする政策評価は、第1次実施計画（2023〜2025年度）の期間分を含め、市の政策評価制度ページにも公表実績がない（2026年11月21日に確認）。旧計画（千葉市新基本計画・ちば・ビジョン21）の政策評価は計画体系が異なるため、版をまたいで引き継がない。",
+    "source_ids": [
+     "chiba-city-policy-evaluation-page",
+     "chiba-city-policy-evaluation-review-material",
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "政策評価制度ページ（現行基本計画を対象とする政策評価の掲載なし。掲載は旧計画分のみ）、政策評価制度の見直し資料、第2次実施計画 全体版PDF 総論p.12",
+    "decision": "accepted",
+    "review_note": null
+   }
+  ],
+  "open_questions": [
+   "公式評価は未登録。第2次実施計画の期間終了後（2029年度以降）に政策評価が公表され次第、official_evaluationを登録する（更新サイクルの対象）。",
+   "金額は未登録。政策単位の当初予算額・決算額を掲載した公式資料は確認できていない。公表され次第、更新サイクルで登録する。",
+   "KPIは未登録（空）。指標は分野単位のKGI/KPIとして設定されcurrent_policy_indicators.jsonに登録済みであり、政策単位の公式指標は公表されていない。毎年度の審議会による取組状況の検証も分野単位のものであるため、本系列には付け替えない。",
+   "計画事業（189事業）の事業量は既存登録（current_project_work_items_field01〜08）で保持している。各年度の予算時・決算時に行われる事業量ベースの進行管理の結果が公表され次第、更新サイクルで扱いを検討する。",
+   "首長公約との接続は千葉クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と政策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed"
+ },
+ {
+  "id": "evidence-jp-local-121002-project-2026-disaster-resilient-infrastructure",
+  "subject_type": "project",
+  "subject_id": "jp-local-121002-project-2026-disaster-resilient-infrastructure",
+  "claims": [
+   {
+    "field": "registration_unit",
+    "statement": "本登録の単位は第2次実施計画の政策体系における「政策」（23政策）とした。市の政策評価は政策単位で、実施計画期間の終了後に、行政活動実績評価（客観指標の達成状況と計画事業の進捗）・市民アンケート指標の分析・政策評価（総合評価）の3ステップで実施する仕組みであり（政策評価制度の見直し資料および第2次実施計画の総論「計画の進行管理及び評価」）、公式評価が付く単位が政策であるためである。施策（67施策）には固有の公式評価・金額・指標は設定されない。計画事業（189事業）は既存登録（data/reviewed/chiba-city/current_project_work_items_field01〜08）で事業量（取組項目・令和7年度末現況・計画内容・令和10年度末目標）の層として登録済みであり、本段階では重複登録しない。指標（KGI/KPI）は分野単位で設定され既存登録（current_policy_indicators.json）が正本であるため、分野の指標を政策の指標として付け替えることはしない。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf",
+     "chiba-city-policy-evaluation-review-material",
+     "chiba-city-policy-evaluation-page"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.12『（3）計画の進行管理及び評価』、政策評価制度の見直し資料（評価単位は23政策・3ステップ・実施計画期間終了後に実施）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_title",
+    "statement": "政策名は「災害に強いまちの基盤を整備する」。第2次実施計画の総論「まちづくりの総合8分野における政策体系」表の分野2「安全・安心」の政策1であり、各論の政策見出し（2-1）でも同じ名称を確認した。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.9『政策体系』表および各論の政策見出し（PDF p.34〜37）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "parent_policy",
+    "statement": "本登録のparent_policyには、政策を直接束ねる計画単位として「分野2 安全・安心」を用いた。分野目標は「災害など様々なリスクに対応し、安全・安心に暮らせるまちを実現します」である。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.9『政策体系』表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "purpose",
+    "statement": "本政策は施策「2-1-1 風水害対策の推進」「2-1-2 地震等に対応した生活インフラの適切な整備・管理」で構成される。各施策名は各論の施策見出しで確認した。計画事業数（重複を除く主たる位置付けの事業）は12件であり、既存登録の計画事業identity（data/catalog/chiba_current_project_identities_field02.json）の施策コード2-1-*の集計と一致する。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 各論（PDF p.34〜37）の施策見出しと計画事業表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "kpis",
+    "statement": "政策単位の公式指標は公表されていないため、kpisは空とした。第2次実施計画の指標は、分野ごとに「ゴール（目標）」と重要目標達成指標（KGI）、構成因子とその一部の重要業績評価指標（KPI）として巻末資料に設定され（定量指標40件と全体目標指標1件）、毎年度、市民と有識者で構成する千葉市新基本計画審議会において取組状況の検証が行われる。これらは分野の目標に対する指標であり、本政策の指標ではないため付け替えない。分野指標は current_policy_indicators.json に登録済みである。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.12『（3）計画の進行管理及び評価』および巻末資料p.137-146（KGI/KPI表）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "responsible_department",
+    "statement": "第2次実施計画は政策単位の担当課を掲載していないため、responsible_departmentはnullとした。所管課は計画事業単位で各論の計画事業表に掲載されており、既存登録（current_project_work_items）に保持している。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 各論の計画事業表（所管課は事業単位の掲載）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "budget_records.initial_budget",
+    "statement": "千葉市は政策単位の令和8年度当初予算額を公表していない。第2次実施計画（2026〜2028年度）は政策・施策・計画事業のいずれの単位でも金額を掲載せず（各論の計画事業表は取組項目・令和7年度末現況・計画内容・令和10年度末目標で構成される）、市の当初予算資料も会計別・款別の集計であるため、本政策の令和8年度当初予算額は確認できず、未登録とした（0では補完しない）。なお、令和8年度一般会計予算は議案第15号として2026年3月17日に原案可決され成立している。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf",
+     "chiba-city-budget-fy2026-page",
+     "chiba-city-assembly-vote-results-2026-first"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 各論の計画事業表の構成、令和8年度予算ページ（会計別・款別予算額）、令和8年第1回定例会議決結果（議案第15号・2026年3月17日原案可決）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_evaluation",
+    "statement": "公式評価は未登録（official_evaluationはnull）。政策評価は実施計画期間の終了後に実施する仕組みであり、第2次実施計画（2026〜2028年度）は初年度のため、本政策の評価は未実施・未公表である。現行の千葉市基本計画（2023〜2032年度）を対象とする政策評価は、第1次実施計画（2023〜2025年度）の期間分を含め、市の政策評価制度ページにも公表実績がない（2026年11月21日に確認）。旧計画（千葉市新基本計画・ちば・ビジョン21）の政策評価は計画体系が異なるため、版をまたいで引き継がない。",
+    "source_ids": [
+     "chiba-city-policy-evaluation-page",
+     "chiba-city-policy-evaluation-review-material",
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "政策評価制度ページ（現行基本計画を対象とする政策評価の掲載なし。掲載は旧計画分のみ）、政策評価制度の見直し資料、第2次実施計画 全体版PDF 総論p.12",
+    "decision": "accepted",
+    "review_note": null
+   }
+  ],
+  "open_questions": [
+   "公式評価は未登録。第2次実施計画の期間終了後（2029年度以降）に政策評価が公表され次第、official_evaluationを登録する（更新サイクルの対象）。",
+   "金額は未登録。政策単位の当初予算額・決算額を掲載した公式資料は確認できていない。公表され次第、更新サイクルで登録する。",
+   "KPIは未登録（空）。指標は分野単位のKGI/KPIとして設定されcurrent_policy_indicators.jsonに登録済みであり、政策単位の公式指標は公表されていない。毎年度の審議会による取組状況の検証も分野単位のものであるため、本系列には付け替えない。",
+   "計画事業（189事業）の事業量は既存登録（current_project_work_items_field01〜08）で保持している。各年度の予算時・決算時に行われる事業量ベースの進行管理の結果が公表され次第、更新サイクルで扱いを検討する。",
+   "首長公約との接続は千葉クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と政策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed"
+ },
+ {
+  "id": "evidence-jp-local-121002-project-2026-healthy-living",
+  "subject_type": "project",
+  "subject_id": "jp-local-121002-project-2026-healthy-living",
+  "claims": [
+   {
+    "field": "registration_unit",
+    "statement": "本登録の単位は第2次実施計画の政策体系における「政策」（23政策）とした。市の政策評価は政策単位で、実施計画期間の終了後に、行政活動実績評価（客観指標の達成状況と計画事業の進捗）・市民アンケート指標の分析・政策評価（総合評価）の3ステップで実施する仕組みであり（政策評価制度の見直し資料および第2次実施計画の総論「計画の進行管理及び評価」）、公式評価が付く単位が政策であるためである。施策（67施策）には固有の公式評価・金額・指標は設定されない。計画事業（189事業）は既存登録（data/reviewed/chiba-city/current_project_work_items_field01〜08）で事業量（取組項目・令和7年度末現況・計画内容・令和10年度末目標）の層として登録済みであり、本段階では重複登録しない。指標（KGI/KPI）は分野単位で設定され既存登録（current_policy_indicators.json）が正本であるため、分野の指標を政策の指標として付け替えることはしない。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf",
+     "chiba-city-policy-evaluation-review-material",
+     "chiba-city-policy-evaluation-page"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.12『（3）計画の進行管理及び評価』、政策評価制度の見直し資料（評価単位は23政策・3ステップ・実施計画期間終了後に実施）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_title",
+    "statement": "政策名は「健やかに暮らせる社会を創る」。第2次実施計画の総論「まちづくりの総合8分野における政策体系」表の分野3「健康・福祉」の政策1であり、各論の政策見出し（3-1）でも同じ名称を確認した。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.9『政策体系』表および各論の政策見出し（PDF p.50〜54）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "parent_policy",
+    "statement": "本登録のparent_policyには、政策を直接束ねる計画単位として「分野3 健康・福祉」を用いた。分野目標は「みんながいきいきと、健やかに安心して暮らせるまちを実現します」である。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.9『政策体系』表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "purpose",
+    "statement": "本政策は施策「3-1-1 健康づくりの促進」「3-1-2 医療提供体制の充実」「3-1-3 安全・安心な生活衛生環境の整備」で構成される。各施策名は各論の施策見出しで確認した。計画事業数（重複を除く主たる位置付けの事業）は7件であり、既存登録の計画事業identity（data/catalog/chiba_current_project_identities_field03.json）の施策コード3-1-*の集計と一致する。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 各論（PDF p.50〜54）の施策見出しと計画事業表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "kpis",
+    "statement": "政策単位の公式指標は公表されていないため、kpisは空とした。第2次実施計画の指標は、分野ごとに「ゴール（目標）」と重要目標達成指標（KGI）、構成因子とその一部の重要業績評価指標（KPI）として巻末資料に設定され（定量指標40件と全体目標指標1件）、毎年度、市民と有識者で構成する千葉市新基本計画審議会において取組状況の検証が行われる。これらは分野の目標に対する指標であり、本政策の指標ではないため付け替えない。分野指標は current_policy_indicators.json に登録済みである。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.12『（3）計画の進行管理及び評価』および巻末資料p.137-146（KGI/KPI表）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "responsible_department",
+    "statement": "第2次実施計画は政策単位の担当課を掲載していないため、responsible_departmentはnullとした。所管課は計画事業単位で各論の計画事業表に掲載されており、既存登録（current_project_work_items）に保持している。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 各論の計画事業表（所管課は事業単位の掲載）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "budget_records.initial_budget",
+    "statement": "千葉市は政策単位の令和8年度当初予算額を公表していない。第2次実施計画（2026〜2028年度）は政策・施策・計画事業のいずれの単位でも金額を掲載せず（各論の計画事業表は取組項目・令和7年度末現況・計画内容・令和10年度末目標で構成される）、市の当初予算資料も会計別・款別の集計であるため、本政策の令和8年度当初予算額は確認できず、未登録とした（0では補完しない）。なお、令和8年度一般会計予算は議案第15号として2026年3月17日に原案可決され成立している。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf",
+     "chiba-city-budget-fy2026-page",
+     "chiba-city-assembly-vote-results-2026-first"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 各論の計画事業表の構成、令和8年度予算ページ（会計別・款別予算額）、令和8年第1回定例会議決結果（議案第15号・2026年3月17日原案可決）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_evaluation",
+    "statement": "公式評価は未登録（official_evaluationはnull）。政策評価は実施計画期間の終了後に実施する仕組みであり、第2次実施計画（2026〜2028年度）は初年度のため、本政策の評価は未実施・未公表である。現行の千葉市基本計画（2023〜2032年度）を対象とする政策評価は、第1次実施計画（2023〜2025年度）の期間分を含め、市の政策評価制度ページにも公表実績がない（2026年11月21日に確認）。旧計画（千葉市新基本計画・ちば・ビジョン21）の政策評価は計画体系が異なるため、版をまたいで引き継がない。",
+    "source_ids": [
+     "chiba-city-policy-evaluation-page",
+     "chiba-city-policy-evaluation-review-material",
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "政策評価制度ページ（現行基本計画を対象とする政策評価の掲載なし。掲載は旧計画分のみ）、政策評価制度の見直し資料、第2次実施計画 全体版PDF 総論p.12",
+    "decision": "accepted",
+    "review_note": null
+   }
+  ],
+  "open_questions": [
+   "公式評価は未登録。第2次実施計画の期間終了後（2029年度以降）に政策評価が公表され次第、official_evaluationを登録する（更新サイクルの対象）。",
+   "金額は未登録。政策単位の当初予算額・決算額を掲載した公式資料は確認できていない。公表され次第、更新サイクルで登録する。",
+   "KPIは未登録（空）。指標は分野単位のKGI/KPIとして設定されcurrent_policy_indicators.jsonに登録済みであり、政策単位の公式指標は公表されていない。毎年度の審議会による取組状況の検証も分野単位のものであるため、本系列には付け替えない。",
+   "計画事業（189事業）の事業量は既存登録（current_project_work_items_field01〜08）で保持している。各年度の予算時・決算時に行われる事業量ベースの進行管理の結果が公表され次第、更新サイクルで扱いを検討する。",
+   "首長公約との接続は千葉クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と政策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed"
+ },
+ {
+  "id": "evidence-jp-local-121002-project-2026-childbearing-and-childrearing",
+  "subject_type": "project",
+  "subject_id": "jp-local-121002-project-2026-childbearing-and-childrearing",
+  "claims": [
+   {
+    "field": "registration_unit",
+    "statement": "本登録の単位は第2次実施計画の政策体系における「政策」（23政策）とした。市の政策評価は政策単位で、実施計画期間の終了後に、行政活動実績評価（客観指標の達成状況と計画事業の進捗）・市民アンケート指標の分析・政策評価（総合評価）の3ステップで実施する仕組みであり（政策評価制度の見直し資料および第2次実施計画の総論「計画の進行管理及び評価」）、公式評価が付く単位が政策であるためである。施策（67施策）には固有の公式評価・金額・指標は設定されない。計画事業（189事業）は既存登録（data/reviewed/chiba-city/current_project_work_items_field01〜08）で事業量（取組項目・令和7年度末現況・計画内容・令和10年度末目標）の層として登録済みであり、本段階では重複登録しない。指標（KGI/KPI）は分野単位で設定され既存登録（current_policy_indicators.json）が正本であるため、分野の指標を政策の指標として付け替えることはしない。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf",
+     "chiba-city-policy-evaluation-review-material",
+     "chiba-city-policy-evaluation-page"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.12『（3）計画の進行管理及び評価』、政策評価制度の見直し資料（評価単位は23政策・3ステップ・実施計画期間終了後に実施）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_title",
+    "statement": "政策名は「子どもを産み・育てやすい環境を創る」。第2次実施計画の総論「まちづくりの総合8分野における政策体系」表の分野4「子ども・教育」の政策1であり、各論の政策見出し（4-1）でも同じ名称を確認した。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.9『政策体系』表および各論の政策見出し（PDF p.67〜74）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "parent_policy",
+    "statement": "本登録のparent_policyには、政策を直接束ねる計画単位として「分野4 子ども・教育」を用いた。分野目標は「夢と思いやりの心を持ち、未来を拓く子どもたちが育つまちを実現します」である。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.9『政策体系』表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "purpose",
+    "statement": "本政策は施策「4-1-1 妊娠前から子育て期までの支援の充実」「4-1-2 子育てしやすい保育環境の充実」「4-1-3 困難な状況にある子どもや家庭への支援の充実」「4-1-4 児童虐待防止対策の強化」「4-1-5 障害のある子どもとその家族への支援の充実（再掲）」で構成される。各施策名は各論の施策見出しで確認した。計画事業数（重複を除く主たる位置付けの事業）は17件であり、既存登録の計画事業identity（data/catalog/chiba_current_project_identities_field04.json）の施策コード4-1-*の集計と一致する。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 各論（PDF p.67〜74）の施策見出しと計画事業表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "kpis",
+    "statement": "政策単位の公式指標は公表されていないため、kpisは空とした。第2次実施計画の指標は、分野ごとに「ゴール（目標）」と重要目標達成指標（KGI）、構成因子とその一部の重要業績評価指標（KPI）として巻末資料に設定され（定量指標40件と全体目標指標1件）、毎年度、市民と有識者で構成する千葉市新基本計画審議会において取組状況の検証が行われる。これらは分野の目標に対する指標であり、本政策の指標ではないため付け替えない。分野指標は current_policy_indicators.json に登録済みである。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.12『（3）計画の進行管理及び評価』および巻末資料p.137-146（KGI/KPI表）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "responsible_department",
+    "statement": "第2次実施計画は政策単位の担当課を掲載していないため、responsible_departmentはnullとした。所管課は計画事業単位で各論の計画事業表に掲載されており、既存登録（current_project_work_items）に保持している。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 各論の計画事業表（所管課は事業単位の掲載）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "budget_records.initial_budget",
+    "statement": "千葉市は政策単位の令和8年度当初予算額を公表していない。第2次実施計画（2026〜2028年度）は政策・施策・計画事業のいずれの単位でも金額を掲載せず（各論の計画事業表は取組項目・令和7年度末現況・計画内容・令和10年度末目標で構成される）、市の当初予算資料も会計別・款別の集計であるため、本政策の令和8年度当初予算額は確認できず、未登録とした（0では補完しない）。なお、令和8年度一般会計予算は議案第15号として2026年3月17日に原案可決され成立している。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf",
+     "chiba-city-budget-fy2026-page",
+     "chiba-city-assembly-vote-results-2026-first"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 各論の計画事業表の構成、令和8年度予算ページ（会計別・款別予算額）、令和8年第1回定例会議決結果（議案第15号・2026年3月17日原案可決）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_evaluation",
+    "statement": "公式評価は未登録（official_evaluationはnull）。政策評価は実施計画期間の終了後に実施する仕組みであり、第2次実施計画（2026〜2028年度）は初年度のため、本政策の評価は未実施・未公表である。現行の千葉市基本計画（2023〜2032年度）を対象とする政策評価は、第1次実施計画（2023〜2025年度）の期間分を含め、市の政策評価制度ページにも公表実績がない（2026年11月21日に確認）。旧計画（千葉市新基本計画・ちば・ビジョン21）の政策評価は計画体系が異なるため、版をまたいで引き継がない。",
+    "source_ids": [
+     "chiba-city-policy-evaluation-page",
+     "chiba-city-policy-evaluation-review-material",
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "政策評価制度ページ（現行基本計画を対象とする政策評価の掲載なし。掲載は旧計画分のみ）、政策評価制度の見直し資料、第2次実施計画 全体版PDF 総論p.12",
+    "decision": "accepted",
+    "review_note": null
+   }
+  ],
+  "open_questions": [
+   "公式評価は未登録。第2次実施計画の期間終了後（2029年度以降）に政策評価が公表され次第、official_evaluationを登録する（更新サイクルの対象）。",
+   "金額は未登録。政策単位の当初予算額・決算額を掲載した公式資料は確認できていない。公表され次第、更新サイクルで登録する。",
+   "KPIは未登録（空）。指標は分野単位のKGI/KPIとして設定されcurrent_policy_indicators.jsonに登録済みであり、政策単位の公式指標は公表されていない。毎年度の審議会による取組状況の検証も分野単位のものであるため、本系列には付け替えない。",
+   "計画事業（189事業）の事業量は既存登録（current_project_work_items_field01〜08）で保持している。各年度の予算時・決算時に行われる事業量ベースの進行管理の結果が公表され次第、更新サイクルで扱いを検討する。",
+   "首長公約との接続は千葉クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と政策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed"
+ },
+ {
+  "id": "evidence-jp-local-121002-project-2026-diversity-and-participation",
+  "subject_type": "project",
+  "subject_id": "jp-local-121002-project-2026-diversity-and-participation",
+  "claims": [
+   {
+    "field": "registration_unit",
+    "statement": "本登録の単位は第2次実施計画の政策体系における「政策」（23政策）とした。市の政策評価は政策単位で、実施計画期間の終了後に、行政活動実績評価（客観指標の達成状況と計画事業の進捗）・市民アンケート指標の分析・政策評価（総合評価）の3ステップで実施する仕組みであり（政策評価制度の見直し資料および第2次実施計画の総論「計画の進行管理及び評価」）、公式評価が付く単位が政策であるためである。施策（67施策）には固有の公式評価・金額・指標は設定されない。計画事業（189事業）は既存登録（data/reviewed/chiba-city/current_project_work_items_field01〜08）で事業量（取組項目・令和7年度末現況・計画内容・令和10年度末目標）の層として登録済みであり、本段階では重複登録しない。指標（KGI/KPI）は分野単位で設定され既存登録（current_policy_indicators.json）が正本であるため、分野の指標を政策の指標として付け替えることはしない。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf",
+     "chiba-city-policy-evaluation-review-material",
+     "chiba-city-policy-evaluation-page"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.12『（3）計画の進行管理及び評価』、政策評価制度の見直し資料（評価単位は23政策・3ステップ・実施計画期間終了後に実施）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_title",
+    "statement": "政策名は「誰もが個性を活かし活躍できる環境を創る」。第2次実施計画の総論「まちづくりの総合8分野における政策体系」表の分野5「地域社会」の政策1であり、各論の政策見出し（5-1）でも同じ名称を確認した。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.9『政策体系』表および各論の政策見出し（PDF p.85〜88）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "parent_policy",
+    "statement": "本登録のparent_policyには、政策を直接束ねる計画単位として「分野5 地域社会」を用いた。分野目標は「多様性を力に、みんなでまちづくりを進める地域社会を実現します」である。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.9『政策体系』表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "purpose",
+    "statement": "本政策は施策「5-1-1 多様性を活かしたインクルーシブなまちづくりの推進」「5-1-2 多文化共生社会の実現～外国人住民の地域社会への適応に向けて～」で構成される。各施策名は各論の施策見出しで確認した。計画事業数（重複を除く主たる位置付けの事業）は4件であり、既存登録の計画事業identity（data/catalog/chiba_current_project_identities_field05.json）の施策コード5-1-*の集計と一致する。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 各論（PDF p.85〜88）の施策見出しと計画事業表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "kpis",
+    "statement": "政策単位の公式指標は公表されていないため、kpisは空とした。第2次実施計画の指標は、分野ごとに「ゴール（目標）」と重要目標達成指標（KGI）、構成因子とその一部の重要業績評価指標（KPI）として巻末資料に設定され（定量指標40件と全体目標指標1件）、毎年度、市民と有識者で構成する千葉市新基本計画審議会において取組状況の検証が行われる。これらは分野の目標に対する指標であり、本政策の指標ではないため付け替えない。分野指標は current_policy_indicators.json に登録済みである。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.12『（3）計画の進行管理及び評価』および巻末資料p.137-146（KGI/KPI表）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "responsible_department",
+    "statement": "第2次実施計画は政策単位の担当課を掲載していないため、responsible_departmentはnullとした。所管課は計画事業単位で各論の計画事業表に掲載されており、既存登録（current_project_work_items）に保持している。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 各論の計画事業表（所管課は事業単位の掲載）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "budget_records.initial_budget",
+    "statement": "千葉市は政策単位の令和8年度当初予算額を公表していない。第2次実施計画（2026〜2028年度）は政策・施策・計画事業のいずれの単位でも金額を掲載せず（各論の計画事業表は取組項目・令和7年度末現況・計画内容・令和10年度末目標で構成される）、市の当初予算資料も会計別・款別の集計であるため、本政策の令和8年度当初予算額は確認できず、未登録とした（0では補完しない）。なお、令和8年度一般会計予算は議案第15号として2026年3月17日に原案可決され成立している。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf",
+     "chiba-city-budget-fy2026-page",
+     "chiba-city-assembly-vote-results-2026-first"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 各論の計画事業表の構成、令和8年度予算ページ（会計別・款別予算額）、令和8年第1回定例会議決結果（議案第15号・2026年3月17日原案可決）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_evaluation",
+    "statement": "公式評価は未登録（official_evaluationはnull）。政策評価は実施計画期間の終了後に実施する仕組みであり、第2次実施計画（2026〜2028年度）は初年度のため、本政策の評価は未実施・未公表である。現行の千葉市基本計画（2023〜2032年度）を対象とする政策評価は、第1次実施計画（2023〜2025年度）の期間分を含め、市の政策評価制度ページにも公表実績がない（2026年11月21日に確認）。旧計画（千葉市新基本計画・ちば・ビジョン21）の政策評価は計画体系が異なるため、版をまたいで引き継がない。",
+    "source_ids": [
+     "chiba-city-policy-evaluation-page",
+     "chiba-city-policy-evaluation-review-material",
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "政策評価制度ページ（現行基本計画を対象とする政策評価の掲載なし。掲載は旧計画分のみ）、政策評価制度の見直し資料、第2次実施計画 全体版PDF 総論p.12",
+    "decision": "accepted",
+    "review_note": null
+   }
+  ],
+  "open_questions": [
+   "公式評価は未登録。第2次実施計画の期間終了後（2029年度以降）に政策評価が公表され次第、official_evaluationを登録する（更新サイクルの対象）。",
+   "金額は未登録。政策単位の当初予算額・決算額を掲載した公式資料は確認できていない。公表され次第、更新サイクルで登録する。",
+   "KPIは未登録（空）。指標は分野単位のKGI/KPIとして設定されcurrent_policy_indicators.jsonに登録済みであり、政策単位の公式指標は公表されていない。毎年度の審議会による取組状況の検証も分野単位のものであるため、本系列には付け替えない。",
+   "計画事業（189事業）の事業量は既存登録（current_project_work_items_field01〜08）で保持している。各年度の予算時・決算時に行われる事業量ベースの進行管理の結果が公表され次第、更新サイクルで扱いを検討する。",
+   "首長公約との接続は千葉クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と政策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed"
+ },
+ {
+  "id": "evidence-jp-local-121002-project-2026-culture-and-arts",
+  "subject_type": "project",
+  "subject_id": "jp-local-121002-project-2026-culture-and-arts",
+  "claims": [
+   {
+    "field": "registration_unit",
+    "statement": "本登録の単位は第2次実施計画の政策体系における「政策」（23政策）とした。市の政策評価は政策単位で、実施計画期間の終了後に、行政活動実績評価（客観指標の達成状況と計画事業の進捗）・市民アンケート指標の分析・政策評価（総合評価）の3ステップで実施する仕組みであり（政策評価制度の見直し資料および第2次実施計画の総論「計画の進行管理及び評価」）、公式評価が付く単位が政策であるためである。施策（67施策）には固有の公式評価・金額・指標は設定されない。計画事業（189事業）は既存登録（data/reviewed/chiba-city/current_project_work_items_field01〜08）で事業量（取組項目・令和7年度末現況・計画内容・令和10年度末目標）の層として登録済みであり、本段階では重複登録しない。指標（KGI/KPI）は分野単位で設定され既存登録（current_policy_indicators.json）が正本であるため、分野の指標を政策の指標として付け替えることはしない。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf",
+     "chiba-city-policy-evaluation-review-material",
+     "chiba-city-policy-evaluation-page"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.12『（3）計画の進行管理及び評価』、政策評価制度の見直し資料（評価単位は23政策・3ステップ・実施計画期間終了後に実施）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_title",
+    "statement": "政策名は「文化芸術が生まれ、広がる環境を創る」。第2次実施計画の総論「まちづくりの総合8分野における政策体系」表の分野6「文化芸術・スポーツ」の政策1であり、各論の政策見出し（6-1）でも同じ名称を確認した。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.9『政策体系』表および各論の政策見出し（PDF p.91〜93）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "parent_policy",
+    "statement": "本登録のparent_policyには、政策を直接束ねる計画単位として「分野6 文化芸術・スポーツ」を用いた。分野目標は「市民の文化芸術・スポーツ活動が広がる、創造性豊かなまちを実現します」である。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.9『政策体系』表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "purpose",
+    "statement": "本政策は施策「6-1-1 文化芸術活動の創出と支援」「6-1-2 文化財の保全・活用」で構成される。各施策名は各論の施策見出しで確認した。計画事業数（重複を除く主たる位置付けの事業）は9件であり、既存登録の計画事業identity（data/catalog/chiba_current_project_identities_field06.json）の施策コード6-1-*の集計と一致する。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 各論（PDF p.91〜93）の施策見出しと計画事業表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "kpis",
+    "statement": "政策単位の公式指標は公表されていないため、kpisは空とした。第2次実施計画の指標は、分野ごとに「ゴール（目標）」と重要目標達成指標（KGI）、構成因子とその一部の重要業績評価指標（KPI）として巻末資料に設定され（定量指標40件と全体目標指標1件）、毎年度、市民と有識者で構成する千葉市新基本計画審議会において取組状況の検証が行われる。これらは分野の目標に対する指標であり、本政策の指標ではないため付け替えない。分野指標は current_policy_indicators.json に登録済みである。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.12『（3）計画の進行管理及び評価』および巻末資料p.137-146（KGI/KPI表）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "responsible_department",
+    "statement": "第2次実施計画は政策単位の担当課を掲載していないため、responsible_departmentはnullとした。所管課は計画事業単位で各論の計画事業表に掲載されており、既存登録（current_project_work_items）に保持している。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 各論の計画事業表（所管課は事業単位の掲載）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "budget_records.initial_budget",
+    "statement": "千葉市は政策単位の令和8年度当初予算額を公表していない。第2次実施計画（2026〜2028年度）は政策・施策・計画事業のいずれの単位でも金額を掲載せず（各論の計画事業表は取組項目・令和7年度末現況・計画内容・令和10年度末目標で構成される）、市の当初予算資料も会計別・款別の集計であるため、本政策の令和8年度当初予算額は確認できず、未登録とした（0では補完しない）。なお、令和8年度一般会計予算は議案第15号として2026年3月17日に原案可決され成立している。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf",
+     "chiba-city-budget-fy2026-page",
+     "chiba-city-assembly-vote-results-2026-first"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 各論の計画事業表の構成、令和8年度予算ページ（会計別・款別予算額）、令和8年第1回定例会議決結果（議案第15号・2026年3月17日原案可決）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_evaluation",
+    "statement": "公式評価は未登録（official_evaluationはnull）。政策評価は実施計画期間の終了後に実施する仕組みであり、第2次実施計画（2026〜2028年度）は初年度のため、本政策の評価は未実施・未公表である。現行の千葉市基本計画（2023〜2032年度）を対象とする政策評価は、第1次実施計画（2023〜2025年度）の期間分を含め、市の政策評価制度ページにも公表実績がない（2026年11月21日に確認）。旧計画（千葉市新基本計画・ちば・ビジョン21）の政策評価は計画体系が異なるため、版をまたいで引き継がない。",
+    "source_ids": [
+     "chiba-city-policy-evaluation-page",
+     "chiba-city-policy-evaluation-review-material",
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "政策評価制度ページ（現行基本計画を対象とする政策評価の掲載なし。掲載は旧計画分のみ）、政策評価制度の見直し資料、第2次実施計画 全体版PDF 総論p.12",
+    "decision": "accepted",
+    "review_note": null
+   }
+  ],
+  "open_questions": [
+   "公式評価は未登録。第2次実施計画の期間終了後（2029年度以降）に政策評価が公表され次第、official_evaluationを登録する（更新サイクルの対象）。",
+   "金額は未登録。政策単位の当初予算額・決算額を掲載した公式資料は確認できていない。公表され次第、更新サイクルで登録する。",
+   "KPIは未登録（空）。指標は分野単位のKGI/KPIとして設定されcurrent_policy_indicators.jsonに登録済みであり、政策単位の公式指標は公表されていない。毎年度の審議会による取組状況の検証も分野単位のものであるため、本系列には付け替えない。",
+   "計画事業（189事業）の事業量は既存登録（current_project_work_items_field01〜08）で保持している。各年度の予算時・決算時に行われる事業量ベースの進行管理の結果が公表され次第、更新サイクルで扱いを検討する。",
+   "首長公約との接続は千葉クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と政策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed"
+ },
+ {
+  "id": "evidence-jp-local-121002-project-2026-sustainable-attractive-city",
+  "subject_type": "project",
+  "subject_id": "jp-local-121002-project-2026-sustainable-attractive-city",
+  "claims": [
+   {
+    "field": "registration_unit",
+    "statement": "本登録の単位は第2次実施計画の政策体系における「政策」（23政策）とした。市の政策評価は政策単位で、実施計画期間の終了後に、行政活動実績評価（客観指標の達成状況と計画事業の進捗）・市民アンケート指標の分析・政策評価（総合評価）の3ステップで実施する仕組みであり（政策評価制度の見直し資料および第2次実施計画の総論「計画の進行管理及び評価」）、公式評価が付く単位が政策であるためである。施策（67施策）には固有の公式評価・金額・指標は設定されない。計画事業（189事業）は既存登録（data/reviewed/chiba-city/current_project_work_items_field01〜08）で事業量（取組項目・令和7年度末現況・計画内容・令和10年度末目標）の層として登録済みであり、本段階では重複登録しない。指標（KGI/KPI）は分野単位で設定され既存登録（current_policy_indicators.json）が正本であるため、分野の指標を政策の指標として付け替えることはしない。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf",
+     "chiba-city-policy-evaluation-review-material",
+     "chiba-city-policy-evaluation-page"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.12『（3）計画の進行管理及び評価』、政策評価制度の見直し資料（評価単位は23政策・3ステップ・実施計画期間終了後に実施）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_title",
+    "statement": "政策名は「持続可能で魅力あるまちづくりを進める」。第2次実施計画の総論「まちづくりの総合8分野における政策体系」表の分野7「都市・交通」の政策1であり、各論の政策見出し（7-1）でも同じ名称を確認した。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.9『政策体系』表および各論の政策見出し（PDF p.99〜109）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "parent_policy",
+    "statement": "本登録のparent_policyには、政策を直接束ねる計画単位として「分野7 都市・交通」を用いた。分野目標は「市民の快適な暮らしと活発な交流を支える、魅力と愛着が感じられる都市を実現します」である。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.9『政策体系』表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "purpose",
+    "statement": "本政策は施策「7-1-1 美しく心地よいまちづくりの推進」「7-1-2 3都心などの魅力向上」「7-1-3 地域資源の発掘・活用」「7-1-4 広域連携の深化」で構成される。各施策名は各論の施策見出しで確認した。計画事業数（重複を除く主たる位置付けの事業）は16件であり、既存登録の計画事業identity（data/catalog/chiba_current_project_identities_field07.json）の施策コード7-1-*の集計と一致する。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 各論（PDF p.99〜109）の施策見出しと計画事業表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "kpis",
+    "statement": "政策単位の公式指標は公表されていないため、kpisは空とした。第2次実施計画の指標は、分野ごとに「ゴール（目標）」と重要目標達成指標（KGI）、構成因子とその一部の重要業績評価指標（KPI）として巻末資料に設定され（定量指標40件と全体目標指標1件）、毎年度、市民と有識者で構成する千葉市新基本計画審議会において取組状況の検証が行われる。これらは分野の目標に対する指標であり、本政策の指標ではないため付け替えない。分野指標は current_policy_indicators.json に登録済みである。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.12『（3）計画の進行管理及び評価』および巻末資料p.137-146（KGI/KPI表）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "responsible_department",
+    "statement": "第2次実施計画は政策単位の担当課を掲載していないため、responsible_departmentはnullとした。所管課は計画事業単位で各論の計画事業表に掲載されており、既存登録（current_project_work_items）に保持している。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 各論の計画事業表（所管課は事業単位の掲載）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "budget_records.initial_budget",
+    "statement": "千葉市は政策単位の令和8年度当初予算額を公表していない。第2次実施計画（2026〜2028年度）は政策・施策・計画事業のいずれの単位でも金額を掲載せず（各論の計画事業表は取組項目・令和7年度末現況・計画内容・令和10年度末目標で構成される）、市の当初予算資料も会計別・款別の集計であるため、本政策の令和8年度当初予算額は確認できず、未登録とした（0では補完しない）。なお、令和8年度一般会計予算は議案第15号として2026年3月17日に原案可決され成立している。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf",
+     "chiba-city-budget-fy2026-page",
+     "chiba-city-assembly-vote-results-2026-first"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 各論の計画事業表の構成、令和8年度予算ページ（会計別・款別予算額）、令和8年第1回定例会議決結果（議案第15号・2026年3月17日原案可決）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_evaluation",
+    "statement": "公式評価は未登録（official_evaluationはnull）。政策評価は実施計画期間の終了後に実施する仕組みであり、第2次実施計画（2026〜2028年度）は初年度のため、本政策の評価は未実施・未公表である。現行の千葉市基本計画（2023〜2032年度）を対象とする政策評価は、第1次実施計画（2023〜2025年度）の期間分を含め、市の政策評価制度ページにも公表実績がない（2026年11月21日に確認）。旧計画（千葉市新基本計画・ちば・ビジョン21）の政策評価は計画体系が異なるため、版をまたいで引き継がない。",
+    "source_ids": [
+     "chiba-city-policy-evaluation-page",
+     "chiba-city-policy-evaluation-review-material",
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "政策評価制度ページ（現行基本計画を対象とする政策評価の掲載なし。掲載は旧計画分のみ）、政策評価制度の見直し資料、第2次実施計画 全体版PDF 総論p.12",
+    "decision": "accepted",
+    "review_note": null
+   }
+  ],
+  "open_questions": [
+   "公式評価は未登録。第2次実施計画の期間終了後（2029年度以降）に政策評価が公表され次第、official_evaluationを登録する（更新サイクルの対象）。",
+   "金額は未登録。政策単位の当初予算額・決算額を掲載した公式資料は確認できていない。公表され次第、更新サイクルで登録する。",
+   "KPIは未登録（空）。指標は分野単位のKGI/KPIとして設定されcurrent_policy_indicators.jsonに登録済みであり、政策単位の公式指標は公表されていない。毎年度の審議会による取組状況の検証も分野単位のものであるため、本系列には付け替えない。",
+   "計画事業（189事業）の事業量は既存登録（current_project_work_items_field01〜08）で保持している。各年度の予算時・決算時に行われる事業量ベースの進行管理の結果が公表され次第、更新サイクルで扱いを検討する。",
+   "首長公約との接続は千葉クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と政策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed"
+ },
+ {
+  "id": "evidence-jp-local-121002-project-2026-local-industry",
+  "subject_type": "project",
+  "subject_id": "jp-local-121002-project-2026-local-industry",
+  "claims": [
+   {
+    "field": "registration_unit",
+    "statement": "本登録の単位は第2次実施計画の政策体系における「政策」（23政策）とした。市の政策評価は政策単位で、実施計画期間の終了後に、行政活動実績評価（客観指標の達成状況と計画事業の進捗）・市民アンケート指標の分析・政策評価（総合評価）の3ステップで実施する仕組みであり（政策評価制度の見直し資料および第2次実施計画の総論「計画の進行管理及び評価」）、公式評価が付く単位が政策であるためである。施策（67施策）には固有の公式評価・金額・指標は設定されない。計画事業（189事業）は既存登録（data/reviewed/chiba-city/current_project_work_items_field01〜08）で事業量（取組項目・令和7年度末現況・計画内容・令和10年度末目標）の層として登録済みであり、本段階では重複登録しない。指標（KGI/KPI）は分野単位で設定され既存登録（current_policy_indicators.json）が正本であるため、分野の指標を政策の指標として付け替えることはしない。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf",
+     "chiba-city-policy-evaluation-review-material",
+     "chiba-city-policy-evaluation-page"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.12『（3）計画の進行管理及び評価』、政策評価制度の見直し資料（評価単位は23政策・3ステップ・実施計画期間終了後に実施）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_title",
+    "statement": "政策名は「地域の産業を支え・育てる」。第2次実施計画の総論「まちづくりの総合8分野における政策体系」表の分野8「地域経済」の政策1であり、各論の政策見出し（8-1）でも同じ名称を確認した。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.9『政策体系』表および各論の政策見出し（PDF p.125〜129）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "parent_policy",
+    "statement": "本登録のparent_policyには、政策を直接束ねる計画単位として「分野8 地域経済」を用いた。分野目標は「地域経済を支える産業や人材が育ち、新たな価値が生まれるまちを実現します」である。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.9『政策体系』表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "purpose",
+    "statement": "本政策は施策「8-1-1 地域経済の新たな担い手の創出」「8-1-2 持続可能な地域経済の確立に向けた経営力強化」「8-1-3 雇用の確保・拡大と人材育成の強化」「8-1-4 産学官等の連携強化」で構成される。各施策名は各論の施策見出しで確認した。計画事業数（重複を除く主たる位置付けの事業）は9件であり、既存登録の計画事業identity（data/catalog/chiba_current_project_identities_field08.json）の施策コード8-1-*の集計と一致する。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 各論（PDF p.125〜129）の施策見出しと計画事業表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "kpis",
+    "statement": "政策単位の公式指標は公表されていないため、kpisは空とした。第2次実施計画の指標は、分野ごとに「ゴール（目標）」と重要目標達成指標（KGI）、構成因子とその一部の重要業績評価指標（KPI）として巻末資料に設定され（定量指標40件と全体目標指標1件）、毎年度、市民と有識者で構成する千葉市新基本計画審議会において取組状況の検証が行われる。これらは分野の目標に対する指標であり、本政策の指標ではないため付け替えない。分野指標は current_policy_indicators.json に登録済みである。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.12『（3）計画の進行管理及び評価』および巻末資料p.137-146（KGI/KPI表）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "responsible_department",
+    "statement": "第2次実施計画は政策単位の担当課を掲載していないため、responsible_departmentはnullとした。所管課は計画事業単位で各論の計画事業表に掲載されており、既存登録（current_project_work_items）に保持している。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 各論の計画事業表（所管課は事業単位の掲載）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "budget_records.initial_budget",
+    "statement": "千葉市は政策単位の令和8年度当初予算額を公表していない。第2次実施計画（2026〜2028年度）は政策・施策・計画事業のいずれの単位でも金額を掲載せず（各論の計画事業表は取組項目・令和7年度末現況・計画内容・令和10年度末目標で構成される）、市の当初予算資料も会計別・款別の集計であるため、本政策の令和8年度当初予算額は確認できず、未登録とした（0では補完しない）。なお、令和8年度一般会計予算は議案第15号として2026年3月17日に原案可決され成立している。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf",
+     "chiba-city-budget-fy2026-page",
+     "chiba-city-assembly-vote-results-2026-first"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 各論の計画事業表の構成、令和8年度予算ページ（会計別・款別予算額）、令和8年第1回定例会議決結果（議案第15号・2026年3月17日原案可決）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_evaluation",
+    "statement": "公式評価は未登録（official_evaluationはnull）。政策評価は実施計画期間の終了後に実施する仕組みであり、第2次実施計画（2026〜2028年度）は初年度のため、本政策の評価は未実施・未公表である。現行の千葉市基本計画（2023〜2032年度）を対象とする政策評価は、第1次実施計画（2023〜2025年度）の期間分を含め、市の政策評価制度ページにも公表実績がない（2026年11月21日に確認）。旧計画（千葉市新基本計画・ちば・ビジョン21）の政策評価は計画体系が異なるため、版をまたいで引き継がない。",
+    "source_ids": [
+     "chiba-city-policy-evaluation-page",
+     "chiba-city-policy-evaluation-review-material",
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "政策評価制度ページ（現行基本計画を対象とする政策評価の掲載なし。掲載は旧計画分のみ）、政策評価制度の見直し資料、第2次実施計画 全体版PDF 総論p.12",
+    "decision": "accepted",
+    "review_note": null
+   }
+  ],
+  "open_questions": [
+   "公式評価は未登録。第2次実施計画の期間終了後（2029年度以降）に政策評価が公表され次第、official_evaluationを登録する（更新サイクルの対象）。",
+   "金額は未登録。政策単位の当初予算額・決算額を掲載した公式資料は確認できていない。公表され次第、更新サイクルで登録する。",
+   "KPIは未登録（空）。指標は分野単位のKGI/KPIとして設定されcurrent_policy_indicators.jsonに登録済みであり、政策単位の公式指標は公表されていない。毎年度の審議会による取組状況の検証も分野単位のものであるため、本系列には付け替えない。",
+   "計画事業（189事業）の事業量は既存登録（current_project_work_items_field01〜08）で保持している。各年度の予算時・決算時に行われる事業量ベースの進行管理の結果が公表され次第、更新サイクルで扱いを検討する。",
+   "首長公約との接続は千葉クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と政策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed"
+ },
+ {
+  "id": "evidence-jp-local-121002-project-2026-greenery-and-waterside",
+  "subject_type": "project",
+  "subject_id": "jp-local-121002-project-2026-greenery-and-waterside",
+  "claims": [
+   {
+    "field": "registration_unit",
+    "statement": "本登録の単位は第2次実施計画の政策体系における「政策」（23政策）とした。市の政策評価は政策単位で、実施計画期間の終了後に、行政活動実績評価（客観指標の達成状況と計画事業の進捗）・市民アンケート指標の分析・政策評価（総合評価）の3ステップで実施する仕組みであり（政策評価制度の見直し資料および第2次実施計画の総論「計画の進行管理及び評価」）、公式評価が付く単位が政策であるためである。施策（67施策）には固有の公式評価・金額・指標は設定されない。計画事業（189事業）は既存登録（data/reviewed/chiba-city/current_project_work_items_field01〜08）で事業量（取組項目・令和7年度末現況・計画内容・令和10年度末目標）の層として登録済みであり、本段階では重複登録しない。指標（KGI/KPI）は分野単位で設定され既存登録（current_policy_indicators.json）が正本であるため、分野の指標を政策の指標として付け替えることはしない。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf",
+     "chiba-city-policy-evaluation-review-material",
+     "chiba-city-policy-evaluation-page"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.12『（3）計画の進行管理及び評価』、政策評価制度の見直し資料（評価単位は23政策・3ステップ・実施計画期間終了後に実施）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_title",
+    "statement": "政策名は「緑と水辺を身近に感じ、愛着の持てる環境を創る」。第2次実施計画の総論「まちづくりの総合8分野における政策体系」表の分野1「環境・自然」の政策2であり、各論の政策見出し（1-2）でも同じ名称を確認した。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.9『政策体系』表および各論の政策見出し（PDF p.28〜32）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "parent_policy",
+    "statement": "本登録のparent_policyには、政策を直接束ねる計画単位として「分野1 環境・自然」を用いた。分野目標は「気候変動に対応し、豊かな自然と共生する持続可能なまちを実現します」である。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.9『政策体系』表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "purpose",
+    "statement": "本政策は施策「1-2-1 緑と水辺の活用と充実」「1-2-2 緑の保全と創出」「1-2-3 水辺環境の保全と活用」で構成される。各施策名は各論の施策見出しで確認した。計画事業数（重複を除く主たる位置付けの事業）は13件であり、既存登録の計画事業identity（data/catalog/chiba_current_project_identities_field01.json）の施策コード1-2-*の集計と一致する。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 各論（PDF p.28〜32）の施策見出しと計画事業表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "kpis",
+    "statement": "政策単位の公式指標は公表されていないため、kpisは空とした。第2次実施計画の指標は、分野ごとに「ゴール（目標）」と重要目標達成指標（KGI）、構成因子とその一部の重要業績評価指標（KPI）として巻末資料に設定され（定量指標40件と全体目標指標1件）、毎年度、市民と有識者で構成する千葉市新基本計画審議会において取組状況の検証が行われる。これらは分野の目標に対する指標であり、本政策の指標ではないため付け替えない。分野指標は current_policy_indicators.json に登録済みである。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.12『（3）計画の進行管理及び評価』および巻末資料p.137-146（KGI/KPI表）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "responsible_department",
+    "statement": "第2次実施計画は政策単位の担当課を掲載していないため、responsible_departmentはnullとした。所管課は計画事業単位で各論の計画事業表に掲載されており、既存登録（current_project_work_items）に保持している。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 各論の計画事業表（所管課は事業単位の掲載）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "budget_records.initial_budget",
+    "statement": "千葉市は政策単位の令和8年度当初予算額を公表していない。第2次実施計画（2026〜2028年度）は政策・施策・計画事業のいずれの単位でも金額を掲載せず（各論の計画事業表は取組項目・令和7年度末現況・計画内容・令和10年度末目標で構成される）、市の当初予算資料も会計別・款別の集計であるため、本政策の令和8年度当初予算額は確認できず、未登録とした（0では補完しない）。なお、令和8年度一般会計予算は議案第15号として2026年3月17日に原案可決され成立している。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf",
+     "chiba-city-budget-fy2026-page",
+     "chiba-city-assembly-vote-results-2026-first"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 各論の計画事業表の構成、令和8年度予算ページ（会計別・款別予算額）、令和8年第1回定例会議決結果（議案第15号・2026年3月17日原案可決）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_evaluation",
+    "statement": "公式評価は未登録（official_evaluationはnull）。政策評価は実施計画期間の終了後に実施する仕組みであり、第2次実施計画（2026〜2028年度）は初年度のため、本政策の評価は未実施・未公表である。現行の千葉市基本計画（2023〜2032年度）を対象とする政策評価は、第1次実施計画（2023〜2025年度）の期間分を含め、市の政策評価制度ページにも公表実績がない（2026年11月21日に確認）。旧計画（千葉市新基本計画・ちば・ビジョン21）の政策評価は計画体系が異なるため、版をまたいで引き継がない。",
+    "source_ids": [
+     "chiba-city-policy-evaluation-page",
+     "chiba-city-policy-evaluation-review-material",
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "政策評価制度ページ（現行基本計画を対象とする政策評価の掲載なし。掲載は旧計画分のみ）、政策評価制度の見直し資料、第2次実施計画 全体版PDF 総論p.12",
+    "decision": "accepted",
+    "review_note": null
+   }
+  ],
+  "open_questions": [
+   "公式評価は未登録。第2次実施計画の期間終了後（2029年度以降）に政策評価が公表され次第、official_evaluationを登録する（更新サイクルの対象）。",
+   "金額は未登録。政策単位の当初予算額・決算額を掲載した公式資料は確認できていない。公表され次第、更新サイクルで登録する。",
+   "KPIは未登録（空）。指標は分野単位のKGI/KPIとして設定されcurrent_policy_indicators.jsonに登録済みであり、政策単位の公式指標は公表されていない。毎年度の審議会による取組状況の検証も分野単位のものであるため、本系列には付け替えない。",
+   "計画事業（189事業）の事業量は既存登録（current_project_work_items_field01〜08）で保持している。各年度の予算時・決算時に行われる事業量ベースの進行管理の結果が公表され次第、更新サイクルで扱いを検討する。",
+   "首長公約との接続は千葉クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と政策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed"
+ },
+ {
+  "id": "evidence-jp-local-121002-project-2026-collaborative-disaster-preparedness",
+  "subject_type": "project",
+  "subject_id": "jp-local-121002-project-2026-collaborative-disaster-preparedness",
+  "claims": [
+   {
+    "field": "registration_unit",
+    "statement": "本登録の単位は第2次実施計画の政策体系における「政策」（23政策）とした。市の政策評価は政策単位で、実施計画期間の終了後に、行政活動実績評価（客観指標の達成状況と計画事業の進捗）・市民アンケート指標の分析・政策評価（総合評価）の3ステップで実施する仕組みであり（政策評価制度の見直し資料および第2次実施計画の総論「計画の進行管理及び評価」）、公式評価が付く単位が政策であるためである。施策（67施策）には固有の公式評価・金額・指標は設定されない。計画事業（189事業）は既存登録（data/reviewed/chiba-city/current_project_work_items_field01〜08）で事業量（取組項目・令和7年度末現況・計画内容・令和10年度末目標）の層として登録済みであり、本段階では重複登録しない。指標（KGI/KPI）は分野単位で設定され既存登録（current_policy_indicators.json）が正本であるため、分野の指標を政策の指標として付け替えることはしない。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf",
+     "chiba-city-policy-evaluation-review-material",
+     "chiba-city-policy-evaluation-page"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.12『（3）計画の進行管理及び評価』、政策評価制度の見直し資料（評価単位は23政策・3ステップ・実施計画期間終了後に実施）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_title",
+    "statement": "政策名は「多様な主体の連携による防災力を高める」。第2次実施計画の総論「まちづくりの総合8分野における政策体系」表の分野2「安全・安心」の政策2であり、各論の政策見出し（2-2）でも同じ名称を確認した。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.9『政策体系』表および各論の政策見出し（PDF p.38〜40）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "parent_policy",
+    "statement": "本登録のparent_policyには、政策を直接束ねる計画単位として「分野2 安全・安心」を用いた。分野目標は「災害など様々なリスクに対応し、安全・安心に暮らせるまちを実現します」である。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.9『政策体系』表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "purpose",
+    "statement": "本政策は施策「2-2-1 災害対応体制の強化」「2-2-2 市民の防災意識と地域防災力の向上」で構成される。各施策名は各論の施策見出しで確認した。計画事業数（重複を除く主たる位置付けの事業）は3件であり、既存登録の計画事業identity（data/catalog/chiba_current_project_identities_field02.json）の施策コード2-2-*の集計と一致する。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 各論（PDF p.38〜40）の施策見出しと計画事業表",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "kpis",
+    "statement": "政策単位の公式指標は公表されていないため、kpisは空とした。第2次実施計画の指標は、分野ごとに「ゴール（目標）」と重要目標達成指標（KGI）、構成因子とその一部の重要業績評価指標（KPI）として巻末資料に設定され（定量指標40件と全体目標指標1件）、毎年度、市民と有識者で構成する千葉市新基本計画審議会において取組状況の検証が行われる。これらは分野の目標に対する指標であり、本政策の指標ではないため付け替えない。分野指標は current_policy_indicators.json に登録済みである。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 総論p.12『（3）計画の進行管理及び評価』および巻末資料p.137-146（KGI/KPI表）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "responsible_department",
+    "statement": "第2次実施計画は政策単位の担当課を掲載していないため、responsible_departmentはnullとした。所管課は計画事業単位で各論の計画事業表に掲載されており、既存登録（current_project_work_items）に保持している。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 各論の計画事業表（所管課は事業単位の掲載）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "budget_records.initial_budget",
+    "statement": "千葉市は政策単位の令和8年度当初予算額を公表していない。第2次実施計画（2026〜2028年度）は政策・施策・計画事業のいずれの単位でも金額を掲載せず（各論の計画事業表は取組項目・令和7年度末現況・計画内容・令和10年度末目標で構成される）、市の当初予算資料も会計別・款別の集計であるため、本政策の令和8年度当初予算額は確認できず、未登録とした（0では補完しない）。なお、令和8年度一般会計予算は議案第15号として2026年3月17日に原案可決され成立している。",
+    "source_ids": [
+     "chiba-city-impl-plan-2nd-full-pdf",
+     "chiba-city-budget-fy2026-page",
+     "chiba-city-assembly-vote-results-2026-first"
+    ],
+    "location_note": "第2次実施計画 全体版PDF 各論の計画事業表の構成、令和8年度予算ページ（会計別・款別予算額）、令和8年第1回定例会議決結果（議案第15号・2026年3月17日原案可決）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "official_evaluation",
+    "statement": "公式評価は未登録（official_evaluationはnull）。政策評価は実施計画期間の終了後に実施する仕組みであり、第2次実施計画（2026〜2028年度）は初年度のため、本政策の評価は未実施・未公表である。現行の千葉市基本計画（2023〜2032年度）を対象とする政策評価は、第1次実施計画（2023〜2025年度）の期間分を含め、市の政策評価制度ページにも公表実績がない（2026年11月21日に確認）。旧計画（千葉市新基本計画・ちば・ビジョン21）の政策評価は計画体系が異なるため、版をまたいで引き継がない。",
+    "source_ids": [
+     "chiba-city-policy-evaluation-page",
+     "chiba-city-policy-evaluation-review-material",
+     "chiba-city-impl-plan-2nd-full-pdf"
+    ],
+    "location_note": "政策評価制度ページ（現行基本計画を対象とする政策評価の掲載なし。掲載は旧計画分のみ）、政策評価制度の見直し資料、第2次実施計画 全体版PDF 総論p.12",
+    "decision": "accepted",
+    "review_note": null
+   }
+  ],
+  "open_questions": [
+   "公式評価は未登録。第2次実施計画の期間終了後（2029年度以降）に政策評価が公表され次第、official_evaluationを登録する（更新サイクルの対象）。",
+   "金額は未登録。政策単位の当初予算額・決算額を掲載した公式資料は確認できていない。公表され次第、更新サイクルで登録する。",
+   "KPIは未登録（空）。指標は分野単位のKGI/KPIとして設定されcurrent_policy_indicators.jsonに登録済みであり、政策単位の公式指標は公表されていない。毎年度の審議会による取組状況の検証も分野単位のものであるため、本系列には付け替えない。",
+   "計画事業（189事業）の事業量は既存登録（current_project_work_items_field01〜08）で保持している。各年度の予算時・決算時に行われる事業量ベースの進行管理の結果が公表され次第、更新サイクルで扱いを検討する。",
+   "首長公約との接続は千葉クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と政策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed"
+ }
+]

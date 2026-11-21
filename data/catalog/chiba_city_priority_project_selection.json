@@ -1,0 +1,172 @@
+{
+ "version": "1.0.0",
+ "updated_at": "2026-11-21",
+ "municipality_id": "jp-local-121002",
+ "municipality_key": "chiba-city",
+ "issue": 839,
+ "scope": "expanded",
+ "review_status": "reviewed",
+ "population": {
+  "description": "千葉市基本計画（2023〜2032年度）に基づく第2次実施計画（2026〜2028年度）の政策体系「まちづくりの総合8分野」（8分野→23政策→67施策→計画事業189事業）を母集団とした。登録単位は政策とした。理由は、市の政策評価（行政活動実績評価・市民アンケート分析・政策評価の3ステップ）が政策単位で実施計画期間の終了後に行われる仕組みであり、公式評価が付く単位が政策であるためである。施策には固有の公式評価・金額・指標は設定されない。計画事業（189事業）は既存登録（current_project_work_items_field01〜08）で事業量の層として登録済みのため、本段階では重複登録しない。指標（KGI/KPI）は分野単位で設定され、既存登録（current_policy_indicators.json）が正本である。第1次実施計画（2023〜2025年度）の進捗・評価は版が異なるため、現行第2次の実績として付け替えない。",
+  "fiscal_year": 2026,
+  "field_count": 8,
+  "policy_count": 23,
+  "measure_count": 67,
+  "project_count": 189,
+  "source_ids": [
+   "chiba-city-impl-plan-2nd-full-pdf",
+   "chiba-city-impl-plan-2nd-page",
+   "chiba-city-policy-evaluation-review-material"
+  ]
+ },
+ "selection_rule": {
+  "description": "計画体系の柱である8分野を掲載順に巡回し、各分野の先頭の政策を1件ずつ選ぶ（8件）。10件に満たないため巡回を続け、分野1・分野2の2番目の政策を1件ずつ追加する（2件）。掲載順は第2次実施計画の総論「政策体系」表および各論の並びで定める。金額の大小では選ばない。",
+  "pillars": [
+   "分野1 環境・自然",
+   "分野2 安全・安心",
+   "分野3 健康・福祉",
+   "分野4 子ども・教育",
+   "分野5 地域社会",
+   "分野6 文化芸術・スポーツ",
+   "分野7 都市・交通",
+   "分野8 地域経済"
+  ]
+ },
+ "selections": [
+  {
+   "pillar": "分野1 環境・自然",
+   "policy": "分野1 環境・自然",
+   "department": null,
+   "project_id": "jp-local-121002-project-2026-decarbonization-environmental-conservation",
+   "series_id": "jp-local-121002-project-series-decarbonization-environmental-conservation",
+   "official_title": "脱炭素化などの地球環境保全を進め、持続可能な社会を創る",
+   "selection_basis": "分野1 環境・自然の政策1（1巡目）。計画体系の柱である8分野を掲載順に巡回し、各分野の政策を掲載順に1件ずつ選ぶ規則によるもので、金額の大小では選んでいない。",
+   "source_ids": [
+    "chiba-city-impl-plan-2nd-full-pdf",
+    "chiba-city-impl-plan-2nd-page"
+   ]
+  },
+  {
+   "pillar": "分野2 安全・安心",
+   "policy": "分野2 安全・安心",
+   "department": null,
+   "project_id": "jp-local-121002-project-2026-disaster-resilient-infrastructure",
+   "series_id": "jp-local-121002-project-series-disaster-resilient-infrastructure",
+   "official_title": "災害に強いまちの基盤を整備する",
+   "selection_basis": "分野2 安全・安心の政策1（1巡目）。計画体系の柱である8分野を掲載順に巡回し、各分野の政策を掲載順に1件ずつ選ぶ規則によるもので、金額の大小では選んでいない。",
+   "source_ids": [
+    "chiba-city-impl-plan-2nd-full-pdf",
+    "chiba-city-impl-plan-2nd-page"
+   ]
+  },
+  {
+   "pillar": "分野3 健康・福祉",
+   "policy": "分野3 健康・福祉",
+   "department": null,
+   "project_id": "jp-local-121002-project-2026-healthy-living",
+   "series_id": "jp-local-121002-project-series-healthy-living",
+   "official_title": "健やかに暮らせる社会を創る",
+   "selection_basis": "分野3 健康・福祉の政策1（1巡目）。計画体系の柱である8分野を掲載順に巡回し、各分野の政策を掲載順に1件ずつ選ぶ規則によるもので、金額の大小では選んでいない。",
+   "source_ids": [
+    "chiba-city-impl-plan-2nd-full-pdf",
+    "chiba-city-impl-plan-2nd-page"
+   ]
+  },
+  {
+   "pillar": "分野4 子ども・教育",
+   "policy": "分野4 子ども・教育",
+   "department": null,
+   "project_id": "jp-local-121002-project-2026-childbearing-and-childrearing",
+   "series_id": "jp-local-121002-project-series-childbearing-and-childrearing",
+   "official_title": "子どもを産み・育てやすい環境を創る",
+   "selection_basis": "分野4 子ども・教育の政策1（1巡目）。計画体系の柱である8分野を掲載順に巡回し、各分野の政策を掲載順に1件ずつ選ぶ規則によるもので、金額の大小では選んでいない。",
+   "source_ids": [
+    "chiba-city-impl-plan-2nd-full-pdf",
+    "chiba-city-impl-plan-2nd-page"
+   ]
+  },
+  {
+   "pillar": "分野5 地域社会",
+   "policy": "分野5 地域社会",
+   "department": null,
+   "project_id": "jp-local-121002-project-2026-diversity-and-participation",
+   "series_id": "jp-local-121002-project-series-diversity-and-participation",
+   "official_title": "誰もが個性を活かし活躍できる環境を創る",
+   "selection_basis": "分野5 地域社会の政策1（1巡目）。計画体系の柱である8分野を掲載順に巡回し、各分野の政策を掲載順に1件ずつ選ぶ規則によるもので、金額の大小では選んでいない。",
+   "source_ids": [
+    "chiba-city-impl-plan-2nd-full-pdf",
+    "chiba-city-impl-plan-2nd-page"
+   ]
+  },
+  {
+   "pillar": "分野6 文化芸術・スポーツ",
+   "policy": "分野6 文化芸術・スポーツ",
+   "department": null,
+   "project_id": "jp-local-121002-project-2026-culture-and-arts",
+   "series_id": "jp-local-121002-project-series-culture-and-arts",
+   "official_title": "文化芸術が生まれ、広がる環境を創る",
+   "selection_basis": "分野6 文化芸術・スポーツの政策1（1巡目）。計画体系の柱である8分野を掲載順に巡回し、各分野の政策を掲載順に1件ずつ選ぶ規則によるもので、金額の大小では選んでいない。",
+   "source_ids": [
+    "chiba-city-impl-plan-2nd-full-pdf",
+    "chiba-city-impl-plan-2nd-page"
+   ]
+  },
+  {
+   "pillar": "分野7 都市・交通",
+   "policy": "分野7 都市・交通",
+   "department": null,
+   "project_id": "jp-local-121002-project-2026-sustainable-attractive-city",
+   "series_id": "jp-local-121002-project-series-sustainable-attractive-city",
+   "official_title": "持続可能で魅力あるまちづくりを進める",
+   "selection_basis": "分野7 都市・交通の政策1（1巡目）。計画体系の柱である8分野を掲載順に巡回し、各分野の政策を掲載順に1件ずつ選ぶ規則によるもので、金額の大小では選んでいない。",
+   "source_ids": [
+    "chiba-city-impl-plan-2nd-full-pdf",
+    "chiba-city-impl-plan-2nd-page"
+   ]
+  },
+  {
+   "pillar": "分野8 地域経済",
+   "policy": "分野8 地域経済",
+   "department": null,
+   "project_id": "jp-local-121002-project-2026-local-industry",
+   "series_id": "jp-local-121002-project-series-local-industry",
+   "official_title": "地域の産業を支え・育てる",
+   "selection_basis": "分野8 地域経済の政策1（1巡目）。計画体系の柱である8分野を掲載順に巡回し、各分野の政策を掲載順に1件ずつ選ぶ規則によるもので、金額の大小では選んでいない。",
+   "source_ids": [
+    "chiba-city-impl-plan-2nd-full-pdf",
+    "chiba-city-impl-plan-2nd-page"
+   ]
+  },
+  {
+   "pillar": "分野1 環境・自然",
+   "policy": "分野1 環境・自然",
+   "department": null,
+   "project_id": "jp-local-121002-project-2026-greenery-and-waterside",
+   "series_id": "jp-local-121002-project-series-greenery-and-waterside",
+   "official_title": "緑と水辺を身近に感じ、愛着の持てる環境を創る",
+   "selection_basis": "分野1 環境・自然の政策2（2巡目）。計画体系の柱である8分野を掲載順に巡回し、各分野の政策を掲載順に1件ずつ選ぶ規則によるもので、金額の大小では選んでいない。",
+   "source_ids": [
+    "chiba-city-impl-plan-2nd-full-pdf",
+    "chiba-city-impl-plan-2nd-page"
+   ]
+  },
+  {
+   "pillar": "分野2 安全・安心",
+   "policy": "分野2 安全・安心",
+   "department": null,
+   "project_id": "jp-local-121002-project-2026-collaborative-disaster-preparedness",
+   "series_id": "jp-local-121002-project-series-collaborative-disaster-preparedness",
+   "official_title": "多様な主体の連携による防災力を高める",
+   "selection_basis": "分野2 安全・安心の政策2（2巡目）。計画体系の柱である8分野を掲載順に巡回し、各分野の政策を掲載順に1件ずつ選ぶ規則によるもので、金額の大小では選んでいない。",
+   "source_ids": [
+    "chiba-city-impl-plan-2nd-full-pdf",
+    "chiba-city-impl-plan-2nd-page"
+   ]
+  }
+ ],
+ "expansion_rule": {
+  "description": "初回登録として10件（8分野の先頭の政策8件と、分野1・分野2の2番目の政策2件）。後続の展開では、同じ掲載順ルールを継続し、巡回の続きから政策を追加する。",
+  "added_count": 10,
+  "total_count": 10
+ }
+}
