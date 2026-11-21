@@ -1136,6 +1136,12 @@ def validate_chiba_cluster_data_facts() -> None:
         assembly = load_json(base / "assembly_records.json")
         assert len(assembly) == 1 and assembly[0]["municipality_id"] == municipality_id
         assert assembly[0]["seat_count"] == seat_count
+        roster_count = sum(faction["member_count"] for faction in assembly[0]["factions"])
+        if slug == "chiba-prefecture":
+            assert roster_count == 87
+            assert roster_count + 2 == 89
+        else:
+            assert roster_count == 50
         assert len(load_json(base / "proposals.json")) == proposal_count
         assert len(load_json(base / "votes.json")) == vote_count
         assert len(load_json(base / "faction_votes.json")) == faction_count
@@ -1163,7 +1169,7 @@ def validate_chiba_cluster_export() -> list[str]:
             "2022〜2024年度の普通会計決算",
             "熊谷 俊人", "2025年4月5日", "2029年4月4日",
             "1,404,905票", "25件", "千葉県議会", "継続審査中",
-            "神谷 俊一", "2025年3月21日", "2029年3月20日", "245,748票",
+            "95人／89人", "神谷 俊一", "2025年3月21日", "2029年3月20日", "245,748票",
         )
         for phrase in required:
             if phrase not in html:
