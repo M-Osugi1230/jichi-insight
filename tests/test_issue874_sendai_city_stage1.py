@@ -258,7 +258,12 @@ def test_sendai_mayor_term_and_votes() -> None:
     # so no open cross-check remains for Sendai.
     assert term["term_end"] == "2029-08-21"
     assert term["election_date"] == "2025-08-03"
-    assert term["manifesto_source_ids"] == []
+    # Stage 1 left the manifesto unconnected; the Miyagi cluster's
+    # stage 3 (Issue #881) verified the 2025 bulletin in the archived
+    # copy of the city's official URL and connected it.
+    assert term["manifesto_source_ids"] == [
+        "sendai-city-mayor-election-2025-bulletin"
+    ]
 
     packets = load_json("data/entities/executives/evidence_packets.json")
     packet = next(p for p in packets if p["subject_id"] == term["id"])
@@ -269,8 +274,10 @@ def test_sendai_mayor_term_and_votes() -> None:
     assert claims["term_end"]["source_ids"] == [
         "sendai-city-mayor-term-expiry-list"
     ]
-    # The only open question is the stage-3 bulletin connection; the
-    # term-expiry cross-check that remains open for other
-    # municipalities is complete for Sendai.
+    # The stage-3 bulletin connection is complete, so the only open
+    # question left is the candidate's detailed policy materials
+    # (the QR-code policy page); the term-expiry cross-check that
+    # remains open for other municipalities is complete for Sendai.
     assert len(packet["open_questions"]) == 1
-    assert "選挙公報" in packet["open_questions"][0]
+    assert "政策ページ" in packet["open_questions"][0]
+    assert "選挙公報" in claims["manifesto_source_ids"]["statement"]

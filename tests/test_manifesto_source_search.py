@@ -33,7 +33,7 @@ def test_manifesto_source_search_fixture_is_registered_and_linked():
 def test_manifesto_source_searches_match_contract_and_safety_boundary():
     searches = load("data/entities/executives/manifesto_source_searches.json")
 
-    assert len(searches) == 23
+    assert len(searches) == 24
     assert {search["executive_term_id"] for search in searches} == {
         "jp-local-400009-executive-2025-04-14",
         "jp-local-401307-executive-2022-12-07",
@@ -57,6 +57,7 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         "jp-local-121002-executive-2025-03-21",
         "jp-local-280003-executive-2024-11-17",
         "jp-local-281000-executive-2025-11-20",
+        "jp-local-041009-executive-2025-08-22",
         "jp-local-040002-executive-2025-11-21",
     }
 
@@ -77,8 +78,10 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
     # City, Kanagawa Prefecture, Yokohama City, Kawasaki City,
     # Saitama Prefecture, Saitama City, Kawaguchi City, Chiba
     # Prefecture, Chiba City, Hyogo Prefecture, Kobe City and
-    # Miyagi Prefecture,
-    # each closed by its official election bulletin;
+    # Miyagi Prefecture and Sendai City, each closed by its
+    # official election bulletin (Sendai's bulletin survives
+    # only as the archived copy of the city's official
+    # election-period URL);
     # Kawasaki's bulletin is registered as reprinted in the city
     # election commission's official election record).
     # Three searches remain exceptions:

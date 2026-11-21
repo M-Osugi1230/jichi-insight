@@ -41,8 +41,8 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 110
-    assert len({record["id"] for record in catalog["records"]}) == 110
+    assert len(catalog["records"]) == 111
+    assert len({record["id"] for record in catalog["records"]}) == 111
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
@@ -429,10 +429,13 @@ def test_manifesto_readiness_is_not_confused_with_progress() -> None:
     assert by_municipality["jp-local-281000"]["manifesto_source_ids"] == [
         "kobe-city-mayor-election-2025-bulletin",
     ]
-    # Sendai City registers no manifesto source yet: the Miyagi
-    # cluster's stage 1 (Issue #874) registers the term only; the
-    # 2025 bulletin is connected at the promise stage (stage 3).
-    assert by_municipality["jp-local-041009"]["manifesto_source_ids"] == []
+    # Sendai City registers the 2025 bulletin: the Miyagi cluster's
+    # stage 3 (Issue #881) confirmed the bulletin in the archived
+    # copy of the city's official election-period URL (the live
+    # page has been removed) and connected it to the mayor's term.
+    assert by_municipality["jp-local-041009"]["manifesto_source_ids"] == [
+        "sendai-city-mayor-election-2025-bulletin",
+    ]
 
 
 def test_every_executive_has_evidence_and_known_sources() -> None:

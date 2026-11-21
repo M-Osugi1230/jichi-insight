@@ -1,6 +1,6 @@
 {
-  "version": "0.34.0",
-  "updated_at": "2026-11-21",
+  "version": "0.35.0",
+  "updated_at": "2026-11-22",
   "scope": "pilot",
   "records": [
     {
@@ -1514,6 +1514,20 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "仙台市選挙管理委員会の公式開票結果。宮城県計で村井よしひろが340,190票と明記する。宮城県選挙管理委員会の投開票速報「総括表」（確定時刻00:45）でも同数だったことを段階0の棚卸しで確認している（速報特設サイトは公開終了）。得票数は2026-11-21にPDF本体を直接読み取り照合した。"
+    },
+    {
+      "id": "sendai-city-mayor-election-2025-bulletin",
+      "municipality_key": "sendai-city",
+      "organization": "仙台市選挙管理委員会／保存は Internet Archive",
+      "category": "election",
+      "title": "令和7年8月3日執行 仙台市長選挙 選挙公報（郡和子候補欄）",
+      "url": "https://web.archive.org/web/20250731061328/https://www.city.sendai.jp/senkyokanri-kanri/senkyo/r7sityou/documents/senkyokouhou_sityou.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-22",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "仙台市長選挙の選挙公報そのもの（全2ページ、候補者4人）。選挙期間中は仙台市公式サイトの選挙ページ群（senkyokanri-kanri/senkyo/r7sityou/documents/senkyokouhou_sityou.pdf）で公表されていたが、現行サイトでは市長選挙結果ページ群に公報への導線がなく、当該URLは2026年11月22日時点で404である。そのため市の公式URLの Wayback Machine 保存コピー（2025年7月31日保存）を登録した。2025年7月20日保存の同内容ファイル（senkyokouhou_.pdf）とダイジェスト（SUYKBQYI4NQ2YHFMQWLESMCHOHZJW66W）が一致し、同一内容であることを確認した。候補者欄は画像形式で、テキスト層は表頭・欄外注記のみ（抽出文字数は約550字）のため、登録文はPDFの描画画像（200dpi・300dpi）から転記し複数解像度で照合した。郡和子候補欄は2ページ目上段で、キャッチコピー、「重点政策」の円形項目4件、プロフィール、「郡和子 4年の実績」欄で構成される。公報は候補者から提出された原稿をそのまま印刷した公式文書（欄外にその旨の注記あり）で出典優先順位の最上位に当たるため、confidence は high とした。"
     },
     {
       "id": "miyagi-pref-governor-election-2025-bulletin",

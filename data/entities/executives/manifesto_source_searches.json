@@ -644,6 +644,38 @@
     "confidence": "high"
   },
   {
+    "id": "manifesto-source-search-sendai-city-2025",
+    "executive_term_id": "jp-local-041009-executive-2025-08-22",
+    "searched_at": "2026-11-22",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "general_web_search"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "sendai-city-mayor-election-2025-bulletin"
+    ],
+    "checked_source_ids": [
+      "sendai-city-mayor-election-2025-bulletin",
+      "sendai-city-mayor-election-2025-results",
+      "sendai-city-mayor-election-2025-results-page",
+      "sendai-city-mayors-history-page",
+      "sendai-city-mayor-term-expiry-list"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "棚卸し（Issue #873）では未確認だった2025年市長選挙の選挙公報の所在を、宮城クラスター段階3で実物確認した。現行の市公式サイトでは市長選挙結果ページ群に選挙公報への導線がなく、2021年分と同型のURL（kekka/senkyokouhou.html および kekka/documents/senkyokouhou.pdf）は404であった。一方、選挙期間中に市の選挙ページ群で公表されていた公報PDF（senkyo/r7sityou/documents/senkyokouhou_sityou.pdf）の Wayback Machine 保存コピーが存在し、2025年7月20日保存分（senkyokouhou_.pdf）と2025年7月31日保存分でダイジェストが一致することを確認して、これを原典として登録した。候補者欄は画像形式でテキスト層は表頭・欄外注記のみのため、描画画像（200dpi・300dpi）を照合して転記し、分割レビュー（manifesto-review-jp-local-041009-2025）を経て公約4件を作成した。選挙公報は候補者提出原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たるため、原典としての格付けは high とした。あわせて開票結果で当選・得票数204,844票を照合済みであり、任期（2025年8月22日〜2029年8月21日）は宮城県選挙管理委員会の任期満了一覧の明記で確定済み（段階1）。候補欄のQRコードが案内する候補者の政策ページ等の詳細資料の保全状況は未確認であり、存在しないという主張はしない。",
+    "next_actions": [
+      "候補欄のQRコードが案内する候補者の政策ページ等の詳細資料の安定した所在が特定できれば、登録済みの公約文と照合する。",
+      "未接続の公約について、計画・事業資料への進捗証拠の接続を拡充する。",
+      "市の公式サイトに選挙公報が再掲載されれば、出典カタログのURLを公式URLへ差し替える。",
+      "2029年の次回市長選挙では、選挙期間中に公報の公式掲載を確認し、次任期の原典として登録する。"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
+  },
+  {
     "id": "manifesto-source-search-miyagi-pref-2025",
     "executive_term_id": "jp-local-040002-executive-2025-11-21",
     "searched_at": "2026-11-22",
