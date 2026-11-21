@@ -1,3 +1,29 @@
+import miyagiPrefAssembly from "../../../data/reviewed/miyagi-prefecture/assembly/assembly_records.json";
+import miyagiPrefDisclosure from "../../../data/reviewed/miyagi-prefecture/assembly/disclosure_profiles.json";
+import miyagiPrefSessions from "../../../data/reviewed/miyagi-prefecture/assembly/sessions.json";
+import miyagiPrefProposals from "../../../data/reviewed/miyagi-prefecture/assembly/proposals.json";
+import miyagiPrefVotes from "../../../data/reviewed/miyagi-prefecture/assembly/votes.json";
+import miyagiPrefFactionVotes from "../../../data/reviewed/miyagi-prefecture/assembly/faction_votes.json";
+import miyagiPrefExpenses from "../../../data/reviewed/miyagi-prefecture/assembly/political_activity_expenses.json";
+import miyagiPrefTrips from "../../../data/reviewed/miyagi-prefecture/assembly/inspection_trips.json";
+import miyagiPrefAssemblyEvidence from "../../../data/reviewed/miyagi-prefecture/assembly/assembly_evidence_packets.json";
+import miyagiPrefVoteEvidence from "../../../data/reviewed/miyagi-prefecture/assembly/proposal_vote_evidence_packets.json";
+import miyagiPrefExpenseEvidence from "../../../data/reviewed/miyagi-prefecture/assembly/expense_evidence_packets.json";
+import miyagiPrefTripEvidence from "../../../data/reviewed/miyagi-prefecture/assembly/inspection_evidence_packets.json";
+import miyagiPrefSources from "../../../data/catalog/miyagi_prefecture_assembly_sources.json";
+import sendaiCityAssembly from "../../../data/reviewed/sendai-city/assembly/assembly_records.json";
+import sendaiCityDisclosure from "../../../data/reviewed/sendai-city/assembly/disclosure_profiles.json";
+import sendaiCitySessions from "../../../data/reviewed/sendai-city/assembly/sessions.json";
+import sendaiCityProposals from "../../../data/reviewed/sendai-city/assembly/proposals.json";
+import sendaiCityVotes from "../../../data/reviewed/sendai-city/assembly/votes.json";
+import sendaiCityFactionVotes from "../../../data/reviewed/sendai-city/assembly/faction_votes.json";
+import sendaiCityExpenses from "../../../data/reviewed/sendai-city/assembly/political_activity_expenses.json";
+import sendaiCityTrips from "../../../data/reviewed/sendai-city/assembly/inspection_trips.json";
+import sendaiCityAssemblyEvidence from "../../../data/reviewed/sendai-city/assembly/assembly_evidence_packets.json";
+import sendaiCityVoteEvidence from "../../../data/reviewed/sendai-city/assembly/proposal_vote_evidence_packets.json";
+import sendaiCityExpenseEvidence from "../../../data/reviewed/sendai-city/assembly/expense_evidence_packets.json";
+import sendaiCityTripEvidence from "../../../data/reviewed/sendai-city/assembly/inspection_evidence_packets.json";
+import sendaiCitySources from "../../../data/catalog/sendai_city_assembly_sources.json";
 import hyogoPrefAssembly from "../../../data/reviewed/hyogo-prefecture/assembly/assembly_records.json";
 import hyogoPrefDisclosure from "../../../data/reviewed/hyogo-prefecture/assembly/disclosure_profiles.json";
 import hyogoPrefSessions from "../../../data/reviewed/hyogo-prefecture/assembly/sessions.json";
@@ -292,7 +318,7 @@ import chibaCityExpenseEvidence from "../../../data/reviewed/chiba-city/assembly
 import chibaCityTripEvidence from "../../../data/reviewed/chiba-city/assembly/inspection_evidence_packets.json";
 import chibaCitySources from "../../../data/catalog/chiba_city_assembly_sources.json";
 
-export type AssemblySlug = "osaka-prefecture" | "osaka-city" | "sakai-city" | "hokkaido-prefecture" | "sapporo-city" | "asahikawa-city" | "fukuoka-prefecture" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city" | "kanagawa-prefecture" | "yokohama-city" | "kawasaki-city" | "saitama-prefecture" | "saitama-city" | "kawaguchi-city" | "chiba-prefecture" | "chiba-city" | "hyogo-prefecture" | "kobe-city";
+export type AssemblySlug = "osaka-prefecture" | "osaka-city" | "sakai-city" | "hokkaido-prefecture" | "sapporo-city" | "asahikawa-city" | "fukuoka-prefecture" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city" | "kanagawa-prefecture" | "yokohama-city" | "kawasaki-city" | "saitama-prefecture" | "saitama-city" | "kawaguchi-city" | "chiba-prefecture" | "chiba-city" | "hyogo-prefecture" | "kobe-city" | "miyagi-prefecture" | "sendai-city";
 export type Assembly = {
   id: string; name: string; seat_count: number;
   term_start: string; term_end: string;
@@ -371,6 +397,28 @@ function registry(
   };
 }
 export const assemblies: Record<AssemblySlug, Registry> = {
+  "miyagi-prefecture": registry(
+    miyagiPrefAssembly, miyagiPrefDisclosure, miyagiPrefSessions,
+    miyagiPrefProposals.map((proposal) => ({
+      related_fiscal_record_ids: [],
+      ...proposal,
+    })),
+    miyagiPrefVotes, miyagiPrefFactionVotes, miyagiPrefExpenses,
+    miyagiPrefTrips.map((trip) => ({
+      ...trip,
+      participants: trip.participants.map((name) => ({
+        name, role: "役職未収録", participant_type: "member",
+      })),
+    })),
+    [...miyagiPrefAssemblyEvidence, ...miyagiPrefVoteEvidence, ...miyagiPrefExpenseEvidence, ...miyagiPrefTripEvidence],
+    miyagiPrefSources.records,
+  ),
+  "sendai-city": registry(
+    sendaiCityAssembly, sendaiCityDisclosure, sendaiCitySessions,
+    sendaiCityProposals, sendaiCityVotes, sendaiCityFactionVotes, sendaiCityExpenses, sendaiCityTrips,
+    [...sendaiCityAssemblyEvidence, ...sendaiCityVoteEvidence, ...sendaiCityExpenseEvidence, ...sendaiCityTripEvidence],
+    sendaiCitySources.records,
+  ),
   "hyogo-prefecture": registry(
     hyogoPrefAssembly, hyogoPrefDisclosure, hyogoPrefSessions,
     hyogoPrefProposals.map((proposal) => ({
@@ -521,6 +569,7 @@ export const assemblySlugs: AssemblySlug[] = [
   "saitama-prefecture", "saitama-city", "kawaguchi-city",
   "chiba-prefecture", "chiba-city",
   "hyogo-prefecture", "kobe-city",
+  "miyagi-prefecture", "sendai-city",
 ];
 export function isAssemblySlug(slug: string): slug is AssemblySlug {
   return Object.prototype.hasOwnProperty.call(assemblies, slug);

@@ -1,3 +1,7 @@
+import miyagiMunicipality from "../../../data/reviewed/miyagi-prefecture/municipality.json";
+import sendaiMunicipality from "../../../data/reviewed/sendai-city/municipality.json";
+import { miyagiFinance } from "@/lib/miyagiFinance";
+import { sendaiFinance } from "@/lib/sendaiFinance";
 import hyogoPrefectureMunicipality from "../../../data/reviewed/hyogo-prefecture/municipality.json";
 import kobeCityMunicipality from "../../../data/reviewed/kobe-city/municipality.json";
 import { hyogoFinance } from "@/lib/hyogoFinance";
@@ -63,6 +67,46 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
 
   // Stage 2: Reviewed projects are available; stage 3/4 promises and assemblies are not inferred.
   // Keep key null until a dedicated municipality route or corresponding executive/assembly data is published.
+  if (!matched && officialCode === miyagiMunicipality.official_code &&
+    miyagiMunicipality.data_status === "reviewed") {
+    const municipalityId = miyagiMunicipality.id;
+    const hasProjects = projectRegistry["miyagi-prefecture"].projects.some((project) =>
+      project.municipality_id === municipalityId && project.review_status === "reviewed",
+    );
+    const hasFinance = miyagiFinance.records.some((record) =>
+      record.municipality_id === municipalityId && record.review_status === "reviewed" &&
+      ((record.stage === "initial_budget" && record.account_type === "general" && record.fiscal_year === 2026) ||
+       (record.stage === "settlement" && record.account_type === "ordinary" && [2022, 2023, 2024].includes(record.fiscal_year))),
+    );
+    const assembly = assemblies["miyagi-prefecture"];
+    const hasAssembly = assembly.assembly.review_status === "reviewed" &&
+      assembly.disclosure.review_status === "reviewed" &&
+      assembly.assembly.id.startsWith(municipalityId + "-assembly-");
+    return { key: "miyagi-prefecture", finance: hasFinance,
+      promises: hasReviewedExecutivePromises(municipalityId),
+      assembly: hasAssembly, projects: hasProjects };
+  }
+
+  if (!matched && officialCode === sendaiMunicipality.official_code &&
+    sendaiMunicipality.data_status === "reviewed") {
+    const municipalityId = sendaiMunicipality.id;
+    const hasProjects = projectRegistry["sendai-city"].projects.some((project) =>
+      project.municipality_id === municipalityId && project.review_status === "reviewed",
+    );
+    const hasFinance = sendaiFinance.records.some((record) =>
+      record.municipality_id === municipalityId && record.review_status === "reviewed" &&
+      record.stage === "initial_budget" && record.account_type === "general" &&
+      record.fiscal_year === 2026,
+    );
+    const assembly = assemblies["sendai-city"];
+    const hasAssembly = assembly.assembly.review_status === "reviewed" &&
+      assembly.disclosure.review_status === "reviewed" &&
+      assembly.assembly.id.startsWith(municipalityId + "-assembly-");
+    return { key: "sendai-city", finance: hasFinance,
+      promises: hasReviewedExecutivePromises(municipalityId),
+      assembly: hasAssembly, projects: hasProjects };
+  }
+
   if (!matched && officialCode === hyogoPrefectureMunicipality.official_code &&
     hyogoPrefectureMunicipality.data_status === "reviewed") {
     const municipalityId = hyogoPrefectureMunicipality.id;

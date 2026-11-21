@@ -42,7 +42,7 @@ def test_all_six_assemblies_have_registered_sources_and_static_routes():
         assert f'"assemblies/{city}/index.html"' in EXPORT
     assert "assemblySlugs.map" in INDEX
     assert "assemblySlugs.map" in DETAIL
-    assert "22議会" in INDEX
+    assert "24議会" in INDEX
 
 
 def test_aichi_faction_attitudes_are_not_mistaken_for_plenary_ballots():

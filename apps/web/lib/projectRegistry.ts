@@ -1,3 +1,13 @@
+import miyagiProjectSources from "../../../data/catalog/miyagi_project_sources.json";
+import miyagiSelection from "../../../data/catalog/miyagi_priority_project_selection.json";
+import miyagiProjects from "../../../data/reviewed/miyagi-prefecture/projects.json";
+import miyagiKpis from "../../../data/reviewed/miyagi-prefecture/project_kpis.json";
+import miyagiEvidence from "../../../data/reviewed/miyagi-prefecture/project_evidence_packets.json";
+import sendaiProjectSources from "../../../data/catalog/sendai_city_project_sources.json";
+import sendaiSelection from "../../../data/catalog/sendai_city_priority_project_selection.json";
+import sendaiProjects from "../../../data/reviewed/sendai-city/projects.json";
+import sendaiKpis from "../../../data/reviewed/sendai-city/project_kpis.json";
+import sendaiEvidence from "../../../data/reviewed/sendai-city/project_evidence_packets.json";
 import hyogoProjectSources from "../../../data/catalog/hyogo_project_sources.json";
 import hyogoSelection from "../../../data/catalog/hyogo_priority_project_selection.json";
 import hyogoProjects from "../../../data/reviewed/hyogo-prefecture/projects.json";
@@ -102,10 +112,12 @@ import { fukuokaPrefectureProjectData } from "./fukuokaPrefectureProjects";
 import { kitakyushuProjectData, type ProjectRecord, type KpiRecord } from "./kitakyushuProjects";
 import type { EvidencePacket } from "./finance";
 
-export type ProjectArea = "fukuoka-prefecture" | "osaka-prefecture" | "osaka-city" | "sakai-city" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city" | "hokkaido-prefecture" | "sapporo-city" | "asahikawa-city" | "kanagawa-prefecture" | "yokohama-city" | "kawasaki-city" | "saitama-prefecture" | "saitama-city" | "kawaguchi-city" | "chiba-prefecture" | "chiba-city" | "hyogo-prefecture" | "kobe-city";
+export type ProjectArea = "fukuoka-prefecture" | "osaka-prefecture" | "osaka-city" | "sakai-city" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city" | "hokkaido-prefecture" | "sapporo-city" | "asahikawa-city" | "kanagawa-prefecture" | "yokohama-city" | "kawasaki-city" | "saitama-prefecture" | "saitama-city" | "kawaguchi-city" | "chiba-prefecture" | "chiba-city" | "hyogo-prefecture" | "kobe-city" | "miyagi-prefecture" | "sendai-city";
 type Selection = { updated_at?: string; population?: { description?: string; label?: string }; selection_rule?: { description?: string } | string; rule?: { description?: string } | string; };
 type SetOfProjects = { name: string; projects: ProjectRecord[]; kpis: KpiRecord[]; evidencePackets: EvidencePacket[]; selection: Selection };
 export const projectRegistry: Record<ProjectArea, SetOfProjects> = {
+  "miyagi-prefecture": { name: "宮城県", projects: miyagiProjects as ProjectRecord[], kpis: miyagiKpis as KpiRecord[], evidencePackets: miyagiEvidence as EvidencePacket[], selection: miyagiSelection },
+  "sendai-city": { name: "仙台市", projects: sendaiProjects as ProjectRecord[], kpis: sendaiKpis as KpiRecord[], evidencePackets: sendaiEvidence as EvidencePacket[], selection: sendaiSelection },
   "hyogo-prefecture": { name: "兵庫県", projects: hyogoProjects as ProjectRecord[], kpis: hyogoKpis as KpiRecord[], evidencePackets: hyogoEvidence as EvidencePacket[], selection: hyogoSelection },
   "kobe-city": { name: "神戸市", projects: kobeProjects as ProjectRecord[], kpis: kobeKpis as KpiRecord[], evidencePackets: kobeEvidence as EvidencePacket[], selection: kobeSelection },
   "chiba-prefecture": { name: "千葉県", projects: chibaProjects as ProjectRecord[], kpis: chibaKpis as KpiRecord[], evidencePackets: chibaEvidence as EvidencePacket[], selection: chibaSelection },
@@ -152,4 +164,6 @@ export const projectSourceCatalog: SourceRecord[] = [...sourceCatalog,
   ...(chibaProjectSources.records as SourceRecord[]),
   ...(chibaCityProjectSources.records as SourceRecord[]),
   ...(hyogoProjectSources.records as SourceRecord[]),
-  ...(kobeProjectSources.records as SourceRecord[])];
+  ...(kobeProjectSources.records as SourceRecord[]),
+  ...(miyagiProjectSources.records as SourceRecord[]),
+  ...(sendaiProjectSources.records as SourceRecord[])];
