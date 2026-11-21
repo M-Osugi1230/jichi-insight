@@ -71,7 +71,7 @@ def test_registry_and_detail_routes_preserve_reviewed_scope():
     assert 'Object.entries(projectRegistry).flatMap' in DETAIL
     assert 'id={key}' in INDEX
     assert "area.name}｜登録事業" in INDEX
-    assert "22自治体の Reviewed 事業レコード" in INDEX
+    assert "24自治体の Reviewed 事業レコード" in INDEX
     assert "projectHref={isProjectArea(slug)" in GENERIC
 
 
@@ -128,4 +128,4 @@ def test_export_validates_each_municipality_section_and_all_detail_routes():
     assert "section = re.search(" in EXPORT
     assert 'rf\'<section\\b(?=[^>]*\\bid="{re.escape(slug)}")' in EXPORT
     assert 'project["official_title"] not in content' in EXPORT
-    assert "22自治体の Reviewed 事業レコード" in EXPORT
+    assert "24自治体の Reviewed 事業レコード" in EXPORT
