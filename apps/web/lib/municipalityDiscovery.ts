@@ -1,3 +1,5 @@
+import hyogoPrefectureMunicipality from "../../../data/reviewed/hyogo-prefecture/municipality.json";
+import kobeCityMunicipality from "../../../data/reviewed/kobe-city/municipality.json";
 import chibaPrefectureMunicipality from "../../../data/reviewed/chiba-prefecture/municipality.json";
 import chibaCityMunicipality from "../../../data/reviewed/chiba-city/municipality.json";
 import { chibaFinance } from "@/lib/chibaFinance";
@@ -57,6 +59,26 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
     return municipality.official_code === officialCode &&
       municipality.data_status === "reviewed";
   });
+
+  // Stage 2: Reviewed projects are available; stage 3/4 promises and assemblies are not inferred.
+  // Keep key null until a dedicated municipality route or corresponding executive/assembly data is published.
+  if (!matched && officialCode === hyogoPrefectureMunicipality.official_code &&
+    hyogoPrefectureMunicipality.data_status === "reviewed") {
+    const hasProjects = projectRegistry["hyogo-prefecture"].projects.some((project) =>
+      project.municipality_id === hyogoPrefectureMunicipality.id &&
+      project.review_status === "reviewed",
+    );
+    return { key: null, finance: false, promises: false, assembly: false, projects: hasProjects };
+  }
+
+  if (!matched && officialCode === kobeCityMunicipality.official_code &&
+    kobeCityMunicipality.data_status === "reviewed") {
+    const hasProjects = projectRegistry["kobe-city"].projects.some((project) =>
+      project.municipality_id === kobeCityMunicipality.id &&
+      project.review_status === "reviewed",
+    );
+    return { key: null, finance: false, promises: false, assembly: false, projects: hasProjects };
+  }
 
   if (!matched && officialCode === saitamaPrefectureMunicipality.official_code && saitamaPrefectureMunicipality.data_status === "reviewed") {
     const hasProjects = projectRegistry["saitama-prefecture"].projects.some(project => project.municipality_id === saitamaPrefectureMunicipality.id && project.review_status === "reviewed");
