@@ -1391,7 +1391,7 @@ def validate_hyogo_cluster_export() -> list[str]:
     }
     for slug, required_phrases in scopes.items():
         section = re.search(
-            rf'<section\\b(?=[^>]*\\bid="{re.escape(slug)}")[^>]*>(.*?)</section>',
+            rf'<section\b(?=[^>]*\bid="{re.escape(slug)}")[^>]*>(.*?)</section>',
             html, flags=re.DOTALL,
         )
         if section is None:
