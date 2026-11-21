@@ -1,3 +1,9 @@
+import shizuokaPrefectureMunicipality from "../../../data/reviewed/shizuoka-prefecture/municipality.json";
+import shizuokaCityMunicipality from "../../../data/reviewed/shizuoka-city/municipality.json";
+import hamamatsuMunicipality from "../../../data/reviewed/hamamatsu-city/municipality.json";
+import { shizuokaFinance } from "@/lib/shizuokaFinance";
+import { shizuokaCityFinance } from "@/lib/shizuokaCityFinance";
+import { hamamatsuFinance } from "@/lib/hamamatsuFinance";
 import miyagiMunicipality from "../../../data/reviewed/miyagi-prefecture/municipality.json";
 import sendaiMunicipality from "../../../data/reviewed/sendai-city/municipality.json";
 import { miyagiFinance } from "@/lib/miyagiFinance";
@@ -67,6 +73,33 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
 
   // Stage 2: Reviewed projects are available; stage 3/4 promises and assemblies are not inferred.
   // Keep key null until a dedicated municipality route or corresponding executive/assembly data is published.
+  // Stage 1-4: guard every Shizuoka deep-dive link against the matching Reviewed identity.
+  for (const item of [
+    { slug: "shizuoka-prefecture", municipality: shizuokaPrefectureMunicipality, finance: shizuokaFinance },
+    { slug: "shizuoka-city", municipality: shizuokaCityMunicipality, finance: shizuokaCityFinance },
+    { slug: "hamamatsu-city", municipality: hamamatsuMunicipality, finance: hamamatsuFinance },
+  ] as const) {
+    if (!matched && officialCode === item.municipality.official_code &&
+      item.municipality.data_status === "reviewed") {
+      const municipalityId = item.municipality.id;
+      const hasFinance = item.finance.records.some((record) =>
+        record.municipality_id === municipalityId && record.review_status === "reviewed" &&
+        (record.stage === "initial_budget" || record.stage === "settlement"),
+      );
+      const hasProjects = projectRegistry[item.slug].projects.some((record) =>
+        record.municipality_id === municipalityId && record.review_status === "reviewed",
+      );
+      const entry = assemblies[item.slug];
+      const hasAssembly = entry.assembly.review_status === "reviewed" &&
+        entry.disclosure.review_status === "reviewed" &&
+        entry.assembly.id.startsWith(municipalityId + "-assembly-");
+      return {
+        key: item.slug, finance: hasFinance, projects: hasProjects,
+        promises: hasReviewedExecutivePromises(municipalityId), assembly: hasAssembly,
+      };
+    }
+  }
+
   if (!matched && officialCode === miyagiMunicipality.official_code &&
     miyagiMunicipality.data_status === "reviewed") {
     const municipalityId = miyagiMunicipality.id;
