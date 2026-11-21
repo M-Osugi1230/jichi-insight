@@ -1210,7 +1210,7 @@ def validate_chiba_cluster_export() -> list[str]:
             "2022〜2024年度の普通会計決算",
             "熊谷 俊人", "2025年4月5日", "2029年4月4日",
             "1,404,905票", "25件", "千葉県議会", "継続審査中",
-            "95人／89人", "神谷 俊一", "2025年3月21日", "2029年3月20日", "245,748票",
+            "神谷 俊一", "2025年3月21日", "2029年3月20日", "245,748票",
         )
         for phrase in required:
             if phrase not in html:
@@ -1222,7 +1222,7 @@ def validate_chiba_cluster_export() -> list[str]:
             if phrase not in html:
                 failures.append(f"Assemblies index missing Chiba fact: {phrase}")
     for slug, phrases in {
-        "chiba-prefecture": ("千葉県議会", "議案表", "発議案表", "請願表"),
+        "chiba-prefecture": ("千葉県議会", "議案表", "発議案表", "請願表", "95人／89人"),
         "chiba-city": ("千葉市議会", "57件", "55件"),
     }.items():
         path = EXPORT_ROOT / "assemblies" / slug / "index.html"
