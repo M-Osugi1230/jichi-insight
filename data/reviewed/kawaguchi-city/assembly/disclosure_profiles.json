@@ -1,0 +1,104 @@
+[
+  {
+    "as_of": "2026-11-21",
+    "assembly_id": "jp-local-112038-assembly-2023",
+    "confidence": "high",
+    "id": "jp-local-112038-assembly-2023-disclosure-2026",
+    "items": [
+      {
+        "availability": "published",
+        "granularity": "member",
+        "item": "member_roster",
+        "note": "会派別名簿のほか議席番号順名簿・50音順名簿が公表され、各議員の詳細ページがある。",
+        "source_url": "https://kawaguchi.gsl-service.net/doc/2014111100021/"
+      },
+      {
+        "availability": "published",
+        "granularity": "faction",
+        "item": "faction_composition",
+        "note": "会派別名簿（2026年9月29日公開）の内訳は自民党19人・公明党10人・共産党4人・川口青嵐会4人・川口新風会2人・川口維新1人・無所属1人の計41人（定数42人、欠員1人）。会期中の2026年9月29日に中川峻一議員の辞職が許可され、川口維新は2名から1名となった。",
+        "source_url": "https://kawaguchi.gsl-service.net/doc/2014111100021/"
+      },
+      {
+        "availability": "published",
+        "granularity": "assembly",
+        "item": "committee_composition",
+        "note": "会派別名簿のページから委員会名簿が公表されている。",
+        "source_url": "https://kawaguchi.gsl-service.net/doc/2014111100021/"
+      },
+      {
+        "availability": "published",
+        "granularity": "document",
+        "item": "proposals_and_results",
+        "note": "議決結果表が会期ごとに公表され、議案番号・件名・議決番号・議決結果（結果文言）・議決月日が掲載される。",
+        "source_url": "https://kawaguchi.gsl-service.net/doc/2014072400529/file_contents/202609giketsukekka.pdf"
+      },
+      {
+        "availability": "not_published",
+        "granularity": "none",
+        "item": "faction_votes",
+        "note": "議決結果表に会派別の賛否欄はなく、会議録・委員長報告にも会派別の内訳はない。",
+        "source_url": "https://kawaguchi.gsl-service.net/doc/2014072400529/file_contents/202609giketsukekka.pdf"
+      },
+      {
+        "availability": "not_published",
+        "granularity": "none",
+        "item": "member_votes",
+        "note": "会議録の採決記録は「起立者全員」「起立者多数」の文言のみで、議員個人別の賛否は公表されていない。",
+        "source_url": "https://ssp.kaigiroku.net/tenant/kawaguchi/"
+      },
+      {
+        "availability": "published",
+        "granularity": "member",
+        "item": "political_activity_expense_reports",
+        "note": "令和7年度交付分の収支報告書が会派5単位・議員個人43単位の単位別ページで公表されている（2026年8月31日公開）。報告書は画像のみのPDF。",
+        "source_url": "https://kawaguchi.gsl-service.net/doc/2026081800016/"
+      },
+      {
+        "availability": "published",
+        "granularity": "member",
+        "item": "political_activity_expense_receipts",
+        "note": "個表及び領収書等のPDFが単位別ページで公表されている。ただし川口維新と中川峻一議員の単位ページには個表PDFへのリンクがない。",
+        "source_url": "https://kawaguchi.gsl-service.net/doc/2026081800016/"
+      },
+      {
+        "availability": "not_published",
+        "granularity": "none",
+        "item": "inspection_trip_reports",
+        "note": "議会自身の行政視察報告書の公式Web公表は確認できなかった。「行政視察の受入・申込」は他自治体からの視察の受け入れ案内である。",
+        "source_url": "https://kawaguchi.gsl-service.net/doc/2017090100013/"
+      },
+      {
+        "availability": "published",
+        "granularity": "document",
+        "item": "meeting_minutes",
+        "note": "会議録検索システムで本会議・委員会の会議録が公開されている（JS描画のシステム）。",
+        "source_url": "https://ssp.kaigiroku.net/tenant/kawaguchi/"
+      },
+      {
+        "availability": "published",
+        "granularity": "document",
+        "item": "session_broadcast",
+        "note": "本会議のインターネット中継とアーカイブ配信が公表されている。",
+        "source_url": "https://smart.discussvision.net/smart/tenant/kawaguchi/WebView/rd/council.html"
+      },
+      {
+        "availability": "published",
+        "granularity": "document",
+        "item": "petition_results",
+        "note": "請願は本会議で表決され、結論は議決結果表に掲載される（令和8年3月定例会で請願第1号＝不採択の実例）。令和8年9月定例会で表決された請願は0件。陳情は結果表に現れず、扱いは未確認。",
+        "source_url": "https://kawaguchi.gsl-service.net/doc/2014072400529/file_contents/202609giketsukekka.pdf"
+      }
+    ],
+    "review_status": "reviewed",
+    "sources": [
+      "kawaguchi-city-assembly-roster-by-faction",
+      "kawaguchi-city-assembly-results-pdf-2026-sep",
+      "kawaguchi-city-assembly-expenses-2025",
+      "kawaguchi-city-assembly-minutes-search",
+      "kawaguchi-city-assembly-broadcast",
+      "kawaguchi-city-assembly-petition-guide",
+      "kawaguchi-city-assembly-inspection-reception"
+    ]
+  }
+]
