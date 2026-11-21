@@ -1,9 +1,10 @@
 # Miyagi Prefecture reviewed package
 
-Scope: Miyagi cluster stage 1 (Issue #874) — entity identity, the
-current plan review, the FY2026 general-account initial budget, the
-FY2022-FY2024 ordinary-account settlements and the governor's current
-term.
+Scope: Miyagi cluster stages 1-2 (Issues #874 and #878) — entity
+identity, the current plan review, the FY2026 general-account initial
+budget, the FY2022-FY2024 ordinary-account settlements, the governor's
+current term, and ten priority-project series registered at the
+measure level of the prefecture's policy-evaluation system.
 
 - Municipality: 宮城県 (`jp-local-040002`, official code 040002), as
   carried by the MIC settlement cards. The prefecture's corporate
@@ -68,6 +69,43 @@ term.
   municipal mayors and assembly members, not the governor) and is
   recorded as an open question in the evidence packet.
 
+- Priority projects (stage 2, Issue #878): the registration unit is
+  the measure (施策, the eighteen 取組), because the prefecture's
+  policy-evaluation system publishes a measure evaluation for each
+  of the eighteen measures every year, with the measure's rating and
+  the achievement status of its target indicators; the eight
+  policies are recorded as each series' parent policy. Ten series
+  were selected by cycling through the eight policies in the
+  vision's published order and taking each policy's measures in
+  published order (round 1: measures 1, 4, 6, 8, 10, 12, 15, 17;
+  round 2: measures 2 and 5) — never by amount. Amounts follow the
+  published form: the FY2025 policy evaluation (FY2024 business)
+  printed each measure's settlement total (the sum of its component
+  promotion projects) on the measure evaluation sheet, so the
+  FY2024 settlement is registered; the FY2026 evaluation (FY2025
+  business, published 2026-09-30) no longer prints a per-measure
+  settlement total — only the main projects' amounts per basic
+  direction — so FY2025 carries no amount (main-project amounts are
+  never summed into a measure total). The responsible department is
+  the lead office named on the FY2025 evaluation sheet, the last
+  edition that printed it. The official evaluation is the FY2026
+  evaluation's final measure rating; for measures 12 and 17 the
+  policy-evaluation committee returned a "要検討" (needs review)
+  draft judgement, and the prefecture's review left the final
+  rating unchanged, which the records state. All 85 target
+  indicators of the ten measures are registered from the midterm
+  implementation plan's indicator list (initial values and FY2027
+  midterm targets); the FY2025 achievement rates and grades (A-D)
+  published in the FY2026 evaluation's results table are recorded
+  in each indicator's definition, with the grade converted to the
+  registration assessment scale. FY2025 actual values appear in the
+  FY2026 evaluation only as graphs, with no numeric table, so no
+  FY2025 actual is taken from that book; where the midterm plan
+  (February 2026 revision) prints an FY2025 value numerically —
+  fifteen education indicators of measure 8 — that value is
+  registered, and for the remaining indicators the latest actual
+  printed in the plan's indicator list is registered.
+
 Not yet published for Miyagi Prefecture:
 
 - Governor's promises (the 2025 election bulletin is extant on the
@@ -75,8 +113,5 @@ Not yet published for Miyagi Prefecture:
   so the promise registration decision — by visual transcription
   checked against the candidates' audio-readable data — belongs to
   the cluster's promise stage)
-- Priority projects (the registration unit — policies or measures —
-  is fixed in the project stage from the midterm implementation
-  plan and the policy-evaluation publication units)
 - Assembly records
 - FY2026 execution and settlement figures
