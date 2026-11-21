@@ -31,7 +31,8 @@ export type MunicipalityKey =
   | "kawaguchi-city"
   | "chiba-prefecture"
   | "chiba-city"
-  | "hyogo-prefecture";
+  | "hyogo-prefecture"
+  | "kobe-city";
 export type SourceRecord = {
   id: string;
   municipality_key: MunicipalityKey;
@@ -105,6 +106,12 @@ export const municipalityMeta: Record<
     summary: "ひょうごビジョン2050と第三期兵庫県地域創生戦略、2026年度成立後当初予算、2022〜2024年度の普通会計決算と斎藤元彦知事の現任期を確認します。自治体別ページは準備中です。",
     status: "財政データ公開", href: null,
     fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
+  },
+  "kobe-city": {
+    name: "神戸市", type: "政令指定都市",
+    summary: "第6次神戸市基本計画・神戸2030ビジョンの重点事業10系列（基本政策単位。予算額・公式評価は未公表）に加え、久元喜造市長の任期と Reviewed 公約28件を公式出典で確認します。自治体別ページは準備中です。",
+    status: "財政データ公開", href: null,
+    fiscalSummary: "Reviewed 54項目（財政レコード3件・決算51件）・重点事業10系列",
   },
   "saitama-city": {
     name: "さいたま市", type: "政令指定都市",

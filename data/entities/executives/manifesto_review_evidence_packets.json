@@ -758,5 +758,48 @@
       "候補者の公式サイト等に公報より詳細な政策資料が安定した所在で現存するかは未確認である（公報欄内にホームページ・X・FacebookへのQRコードの案内があるが、選挙終了後の保全状況は確認していない）。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kobe-city-2025-manifesto-review",
+    "subject_type": "manifesto_review",
+    "subject_id": "manifesto-review-jp-local-281000-2025",
+    "claims": [
+      {
+        "field": "source_location",
+        "statement": "久元喜造候補欄は選挙公報の右下に掲載され、キャッチコピー、「私の重点施策」の柱1〜5、経歴、QRコードの案内で構成される。公報の欄外には「この選挙公報は候補者から提出された原稿をそのまま印刷したものです。」との注記がある。",
+        "source_ids": [
+          "kobe-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全1ページ）の右下。",
+        "decision": "accepted",
+        "review_note": "2026-11-21に描画画像（150dpi・300dpi・450dpi）で候補者欄全体を確認した。"
+      },
+      {
+        "field": "segmentation_status",
+        "statement": "柱のリード文5件と●印の項目23件を、資料上の境界に従い28件に分割した。柱見出し5件は標題のラベルとしてレコード化せず、キャッチコピー、経歴、QRコードの案内も公約ではないためレコード化していない。前任期の実績を提示する欄は候補欄に含まれない。",
+        "source_ids": [
+          "kobe-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "候補者欄全体。",
+        "decision": "accepted",
+        "review_note": "句読点による推測分割は行っていない（docs/PROMISE_EXTRACTION.md の分割ルール）。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原文は、神戸市選挙管理委員会が発行した選挙公報そのものから取得した。選挙公報は候補者から提出された原稿をそのまま掲載した公式文書であり、出典優先順位の最上位に当たる。単独PDFが市選管の結果調ページから現在も到達できるため、再録等の間接的な来歴はない。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "kobe-city-mayor-election-2025-bulletin",
+          "kobe-city-mayor-election-2025-results-page"
+        ],
+        "location_note": "市選管の結果調ページと選挙公報PDFに基づく。",
+        "decision": "accepted",
+        "review_note": "公報は出典優先順位の最上位であり、第三者経由の引用ではない。"
+      }
+    ],
+    "open_questions": [
+      "柱見出しをレコード化せずリード文を柱の公約とした境界判断は見直しの余地がある（見出しとリード文をあわせて1件とする整理もありうる）。",
+      "候補者の公式サイト等に公報より詳細な政策資料が安定した所在で現存するかは未確認である（公報欄内に公式WEB・noteへのQRコードの案内があるが、選挙終了後の保全状況は確認していない）。"
+    ],
+    "review_status": "reviewed"
   }
 ]

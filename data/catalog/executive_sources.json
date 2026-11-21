@@ -1,5 +1,5 @@
 {
-  "version": "0.29.0",
+  "version": "0.30.0",
   "updated_at": "2026-11-21",
   "scope": "pilot",
   "records": [
@@ -1346,6 +1346,62 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "神戸市選挙管理委員会の公式結果調。「兵庫県全体での得票数は1,113,911票」と明記する。西宮市・姫路市の開票結果（兵庫県計）でも同数であり、三市で一致した。"
+    },
+    {
+      "id": "kobe-city-mayor-election-2025-bulletin",
+      "municipality_key": "kobe-city",
+      "organization": "神戸市選挙管理委員会",
+      "category": "election",
+      "title": "令和7年10月26日執行 神戸市長選挙 選挙公報（久元喜造候補欄）",
+      "url": "https://www.city.kobe.lg.jp/documents/23740/senkyokouhoushityousen.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "神戸市長選挙の選挙公報そのもの（全1ページ、候補者4人）。市選管の「各種選挙の結果調・投票率等」ページから「選挙公報（市長選挙）（PDF：4,041KB）」としてリンクされ、現在も到達可能である。実ファイルは4,137,627バイトでページ表記と一致する。候補者欄は画像形式でテキスト層が一切ない（抽出文字数0）ため、登録文はPDFの描画画像（150dpi・300dpi・450dpi）から転記し複数解像度で照合した。久元喜造候補欄は右下で、「私の重点施策」として番号付きの柱5つ（見出し・リード文・●印の項目）で構成される。公報は候補者から提出された原稿をそのまま印刷した公式文書（欄外にその旨の注記あり）で出典優先順位の最上位に当たるため、confidence は high とした。"
+    },
+    {
+      "id": "kobe-city-mayor-election-2025-results",
+      "municipality_key": "kobe-city",
+      "organization": "神戸市選挙管理委員会",
+      "category": "election",
+      "title": "令和7年10月26日執行 神戸市長選挙 結果調本文（開票結果）",
+      "url": "https://www.city.kobe.lg.jp/documents/23740/r7shityousenkekkatyou.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "神戸市選挙管理委員会の結果調本文PDF（全55ページ）。開票区別得票数に関する調（31ページ）で、久元喜造が275,273票（9区の合計）で当選したことを明記する（候補者4人、次点は五島だいすけ119,014票。有効投票446,037票、無効投票5,185票、投票者総数451,222人、投票率36.96%）。過去の市長選挙の結果に関する調（37ページ）にも同値が掲載される。得票数は2026-11-21にPDF本体を直接読み取り照合した。"
+    },
+    {
+      "id": "kobe-city-mayor-election-2025-results-page",
+      "municipality_key": "kobe-city",
+      "organization": "神戸市選挙管理委員会",
+      "category": "election",
+      "title": "各種選挙の結果調・投票率等（神戸市長選挙 2025年10月26日執行分）",
+      "url": "https://www.city.kobe.lg.jp/a22215/shise/senkyo/data/kekka.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "神戸市公式サイトの結果調ページ。2025年10月26日執行の神戸市長選挙について、結果調本文PDFと選挙公報（市長選挙）PDFへのリンクを掲載し、両PDFへの到達経路になっている。2026-11-21に本文を直接確認した。"
+    },
+    {
+      "id": "kobe-city-mayor-term-audit-report-2022",
+      "municipality_key": "kobe-city",
+      "organization": "神戸市監査委員",
+      "category": "audit",
+      "title": "須磨区における選挙公報の未配布に係る監査結果について（通知）（神監2第59号、令和4年2月10日）",
+      "url": "https://www.city.kobe.lg.jp/documents/50606/r4_sumakusenkyokouhounokansahoukokutobessi.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "神戸市監査委員の公式報告書（神監2第59号、令和4年2月10日）。第20回神戸市長選挙（令和3年10月31日執行）の経緯として「市長の任期が令和3年11月19日に満了のため」と明記しており、神戸市長の任期が11月19日に満了し11月20日に開始する4年周期であることの公式明記として用いた。2026-11-21にPDF本体（3ページの当該記載）を直接読み取り照合した。"
     }
   ]
 }

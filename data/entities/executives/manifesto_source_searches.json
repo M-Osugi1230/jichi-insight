@@ -580,5 +580,36 @@
     ],
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-kobe-city-2025",
+    "executive_term_id": "jp-local-281000-executive-2025-11-20",
+    "searched_at": "2026-11-21",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "general_web_search"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "kobe-city-mayor-election-2025-bulletin"
+    ],
+    "checked_source_ids": [
+      "kobe-city-mayor-election-2025-bulletin",
+      "kobe-city-mayor-election-2025-results",
+      "kobe-city-mayor-election-2025-results-page",
+      "kobe-city-mayor-term-audit-report-2022"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "選挙公報は、市選管の「各種選挙の結果調・投票率等」ページから「選挙公報（市長選挙）」の単独PDFで現在も到達できることを確認した。久元喜造候補欄は公報の右下にあり、候補者欄は画像形式でテキスト層が一切ないため、描画画像（150dpi・300dpi・450dpi）を照合して転記し、分割レビュー（manifesto-review-jp-local-281000-2025）を経て公約28件を作成した。選挙公報は候補者提出原稿をそのまま印刷した公式文書であり、出典優先順位の最上位に当たるため、原典としての格付けは high とした。あわせて結果調本文で当選・得票数275,273票を直接照合し、監査委員の公式報告書（神監2第59号）の「市長の任期が令和3年11月19日に満了」との明記と公職選挙法第259条ただし書の構成で、現任期（2025年11月20日〜2029年11月19日）を確定した。任期満了日の兵庫県選挙管理委員会自身の任期満了一覧での明記照合は未実施であり、証拠パケットの open_questions に残す。候補者の政策資料（公式サイトの政策ページ等）の安定した所在は特定していないが、存在しないという主張はしない。",
+    "next_actions": [
+      "候補者の政策資料の安定した所在が特定できれば、登録済みの公約文と照合する。",
+      "未接続の公約（柱1の防災・安全に関する項目と柱5の行政運営に関する項目）について、計画・事業資料への進捗証拠の接続を拡充する。",
+      "兵庫県選挙管理委員会の任期満了一覧が更新されれば、任期満了日2029年11月19日を明記値と照合する。",
+      "2029年の次回市長選挙では、選挙期間中に公報の公式掲載を確認し、次任期の原典として登録する。"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]
