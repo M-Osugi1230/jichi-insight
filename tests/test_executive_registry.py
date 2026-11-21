@@ -41,15 +41,15 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 97
-    assert len({record["id"] for record in catalog["records"]}) == 97
+    assert len(catalog["records"]) == 101
+    assert len({record["id"] for record in catalog["records"]}) == 101
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
     terms = load_json("data/entities/executives/executive_terms.json")
     packets = load_json("data/entities/executives/evidence_packets.json")
 
-    assert len(terms) == 21
+    assert len(terms) == 22
     assert {term["municipality_id"] for term in terms} == {
         "jp-local-400009",
         "jp-local-401307",
@@ -72,6 +72,7 @@ def test_executive_registry_matches_shared_contracts() -> None:
         "jp-local-120006",
         "jp-local-121002",
         "jp-local-280003",
+        "jp-local-281000",
     }
     for term in terms:
         assert validation_errors("schemas/executive_term.schema.json", term) == []
@@ -203,6 +204,17 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
         # still outstanding; the evidence packet records the chain
         # and the open question.
         "jp-local-280003": "2028-11-16",
+        # Kobe City's end (2029-11-19) follows the Article 259
+        # proviso chain: the city audit commissioners' official
+        # report (神監2第59号) states the mayoral term expired on
+        # 19 November 2021, fixing the four-year cycle of a
+        # 20 November start and a 19 November expiry, and the 2025
+        # election was a term-expiry election held before that date.
+        # The cross-check against the Hyogo prefectural election
+        # commission's own term-expiry list is still outstanding;
+        # the evidence packet records the chain and the open
+        # question.
+        "jp-local-281000": "2029-11-19",
     }
     for term in terms:
         assert term["term_end"] == expected_term_ends[term["municipality_id"]]
@@ -255,6 +267,7 @@ def test_executive_term_starts_follow_statutory_counting() -> None:
         "jp-local-120006": "2025-04-05",
         "jp-local-121002": "2025-03-21",
         "jp-local-280003": "2024-11-17",
+        "jp-local-281000": "2025-11-20",
     }
     for term in terms:
         assert term["term_start"] == expected_term_starts[term["municipality_id"]]
@@ -383,6 +396,13 @@ def test_manifesto_readiness_is_not_confused_with_progress() -> None:
     # registered by visual transcription of the rendered pages.
     assert by_municipality["jp-local-120006"]["manifesto_source_ids"] == [
         "chiba-pref-governor-election-2025-bulletin",
+    ]
+    # Kobe City registers the 2025 bulletin: the Hyogo cluster's
+    # stage 3 (Issue #862) transcribed the image-only candidate
+    # panel from rendered images at multiple resolutions and
+    # connected the bulletin to the mayor's term.
+    assert by_municipality["jp-local-281000"]["manifesto_source_ids"] == [
+        "kobe-city-mayor-election-2025-bulletin",
     ]
 
 

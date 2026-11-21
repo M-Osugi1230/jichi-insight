@@ -62,6 +62,47 @@ EXPECTED_POLICY_AREAS = [
     "transport",
 ]
 
+# Reverse promise links added by stage 3 of the Hyogo cluster
+# (Issue #862): the mayor's promises whose wording/content matches
+# each basic policy, inferred and capped at low / inferred.
+TERM_ID = "jp-local-281000-executive-2025-11-20"
+EXPECTED_RELATED_PROMISES = {
+    "jp-local-281000-project-2026-global-talent-development": ["012"],
+    "jp-local-281000-project-2026-downtown-experience-and-business": [
+        "015"
+    ],
+    "jp-local-281000-project-2026-inclusive-challenge-society": [
+        "023",
+        "024",
+    ],
+    "jp-local-281000-project-2026-international-city-appeal": ["016"],
+    "jp-local-281000-project-2026-existing-urban-area-renewal": [
+        "019",
+        "020",
+        "021",
+    ],
+    "jp-local-281000-project-2026-childrearing-work-balance": [
+        "006",
+        "007",
+        "008",
+        "009",
+    ],
+    "jp-local-281000-project-2026-metropolitan-economic-growth": [
+        "011",
+        "013",
+        "014",
+    ],
+    "jp-local-281000-project-2026-nature-for-next-generation": [
+        "017",
+        "022",
+    ],
+    "jp-local-281000-project-2026-healthy-secure-living": ["010"],
+    "jp-local-281000-project-2026-connected-distinctive-townscape": [
+        "005",
+        "018",
+    ],
+}
+
 # Number of 主な施策 listed under each selected basic policy in the
 # vision's structure table (reposts included, as printed).
 EXPECTED_MEASURE_COUNTS = {
@@ -151,9 +192,12 @@ def test_selected_projects_match_records() -> None:
         assert record["municipality_id"] == MID
         assert record["fiscal_year"] == 2026
         assert record["review_status"] == "reviewed"
-        # Stage 3 of the Hyogo cluster has not run yet, so no promise
-        # links exist at this stage.
-        assert record["related_promise_ids"] == []
+        # Stage 3 (Issue #862) registered the mayor's promises and
+        # linked them forward; the reverse links mirror them exactly.
+        assert record["related_promise_ids"] == [
+            f"{TERM_ID}-promise-{suffix}"
+            for suffix in EXPECTED_RELATED_PROMISES[record["id"]]
+        ]
     areas = [projects[pid]["policy_area"] for pid in EXPECTED_IDS]
     assert areas == EXPECTED_POLICY_AREAS
     # The purpose of each record lists every measure printed under its

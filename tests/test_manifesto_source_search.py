@@ -33,7 +33,7 @@ def test_manifesto_source_search_fixture_is_registered_and_linked():
 def test_manifesto_source_searches_match_contract_and_safety_boundary():
     searches = load("data/entities/executives/manifesto_source_searches.json")
 
-    assert len(searches) == 21
+    assert len(searches) == 22
     assert {search["executive_term_id"] for search in searches} == {
         "jp-local-400009-executive-2025-04-14",
         "jp-local-401307-executive-2022-12-07",
@@ -56,6 +56,7 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         "jp-local-120006-executive-2025-04-05",
         "jp-local-121002-executive-2025-03-21",
         "jp-local-280003-executive-2024-11-17",
+        "jp-local-281000-executive-2025-11-20",
     }
 
     for search in searches:
@@ -69,13 +70,13 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         for search in searches
         if search["result_status"] == "no_stable_primary_source_found"
     ]
-    # Eighteen searches have registered a primary source (Fukuoka
+    # Nineteen searches have registered a primary source (Fukuoka
     # Prefecture, Fukuoka City, Kitakyushu City, Aichi Prefecture,
     # Nagoya City, Sapporo City, Hokkaido, Osaka Prefecture, Osaka
     # City, Kanagawa Prefecture, Yokohama City, Kawasaki City,
     # Saitama Prefecture, Saitama City, Kawaguchi City, Chiba
-    # Prefecture, Chiba City and Hyogo Prefecture, each closed by
-    # its official election bulletin;
+    # Prefecture, Chiba City, Hyogo Prefecture and Kobe City,
+    # each closed by its official election bulletin;
     # Kawasaki's bulletin is registered as reprinted in the city
     # election commission's official election record).
     # Three searches remain exceptions:
