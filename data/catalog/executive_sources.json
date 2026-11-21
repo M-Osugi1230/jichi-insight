@@ -1,5 +1,5 @@
 {
-  "version": "0.35.0",
+  "version": "0.36.0",
   "updated_at": "2026-11-22",
   "scope": "pilot",
   "records": [
@@ -1556,6 +1556,48 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "県選管が「宮城県知事選挙候補者情報（選挙公報）（音声読み上げ用）」ページで公表する、候補者提出の音声読み上げ対応データ（PDF 1ページ、2,022,233バイト）。選挙公報の村井よしひろ候補欄と同一原稿のテキスト層を持ち、見出し・本文の全文字が抽出できる。段階3では選挙公報の描画画像からの目視転記と本データの抽出文を突合し、実質的な文言が全項目で一致することを確認した（差異は改行位置とアスタリスクの字形のみ）。公約原文の正本は選挙公報とし、本データは転記照合の補助資料として登録する。"
+    },
+    {
+      "id": "shizuoka-city-mayor-election-2023-results",
+      "municipality_key": "shizuoka-city",
+      "organization": "静岡市選挙管理委員会",
+      "category": "election",
+      "title": "令和5年4月9日執行 静岡市長選挙 選挙結果調",
+      "url": "https://www.city.shizuoka.lg.jp/documents/8751/000988161.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-22",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "候補者別得票数（時間別候補者別得票数、得票順位及び当落に関する調）に、難波喬司の市全体の得票数149,117票と当選を印字。区別内訳（葵区42,327票、駿河区58,550票、清水区48,240票）の合計とも一致する。次点は山田誠80,829票。2026-11-22にPDF本体（43ページ）を直接読み取り照合した。"
+    },
+    {
+      "id": "shizuoka-city-mayor-profile",
+      "municipality_key": "shizuoka-city",
+      "organization": "静岡市",
+      "category": "official_profile",
+      "title": "市長のプロフィール（静岡市公式サイト）",
+      "url": "https://www.city.shizuoka.lg.jp/s6543/s006653.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-22",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "経歴欄に「2023年4月13日～現在に至る 静岡市長」と明記。2026-11-22に直接確認した。"
+    },
+    {
+      "id": "shizuoka-pref-mayor-term-list",
+      "municipality_key": "shizuoka-city",
+      "organization": "静岡県選挙管理委員会",
+      "category": "election",
+      "title": "市町長及び議会議員の任期（静岡県選挙管理委員会）",
+      "url": "https://www.pref.shizuoka.jp/kensei/senkyo/senkan/1032132.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-22",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "静岡市長の任期満了が令和9年4月12日と明記されている（2026年6月23日更新のページ）。2026-11-22に直接確認した。"
     }
   ]
 }

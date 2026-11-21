@@ -57,5 +57,25 @@
     ],
     "open_questions": [],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-shizuoka-city-2026-local-tax",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-221007-fiscal-2026-local-tax",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2026年度の静岡市一般会計当初予算の市税は148,938,000,000円。",
+        "source_ids": [
+          "shizuoka-budget-2026-overview-pdf",
+          "shizuoka-budget-2026-enactment-results"
+        ],
+        "location_note": "静岡市『令和8年度当初予算（案）の概要』歳入歳出総括表の市税欄、および令和8年2月定例会の結果（議案第46号）。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。議案第46号は2026年3月19日に修正案が否決（賛成少数）され、原案が可決（賛成多数）された。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
   }
 ]

@@ -61,5 +61,27 @@
     "sources": [
       "shizuoka-settlement-2024-audit-summary-pdf"
     ]
+  },
+  {
+    "id": "jp-local-221007-fiscal-2026-local-tax",
+    "municipality_id": "jp-local-221007",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "local_tax",
+    "metric_label": "市税",
+    "amount_yen": 148938000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "令和8年度静岡市一般会計当初予算の市税。『令和8年度当初予算（案）の概要』の歳入歳出総括表の市税148,938,000千円を収録する。議案第46号『令和8年度静岡市一般会計予算』は2026年3月19日に修正案が否決（賛成少数）され、原案が可決（賛成多数）された。",
+    "sources": [
+      "shizuoka-budget-2026-overview-pdf",
+      "shizuoka-budget-2026-enactment-results"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]

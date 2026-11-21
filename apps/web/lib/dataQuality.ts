@@ -42,6 +42,10 @@ import sendaiCityFiscalRecords from "../../../data/reviewed/sendai-city/fiscal_r
 import sendaiCitySettlementRecords from "../../../data/reviewed/sendai-city/settlement_records.json";
 import sendaiCityFiscalEvidence from "../../../data/reviewed/sendai-city/evidence_packets.json";
 import sendaiCitySettlementEvidence from "../../../data/reviewed/sendai-city/settlement_evidence_packets.json";
+import shizuokaCityFiscalRecords from "../../../data/reviewed/shizuoka-city/fiscal_records.json";
+import shizuokaCitySettlementRecords from "../../../data/reviewed/shizuoka-city/settlement_records.json";
+import shizuokaCityFiscalEvidence from "../../../data/reviewed/shizuoka-city/evidence_packets.json";
+import shizuokaCitySettlementEvidence from "../../../data/reviewed/shizuoka-city/settlement_evidence_packets.json";
 import kawasakiFiscalRecords from "../../../data/reviewed/kawasaki-city/fiscal_records.json";
 import kawasakiFiscalEvidence from "../../../data/reviewed/kawasaki-city/evidence_packets.json";
 import yokohamaFiscalRecords from "../../../data/reviewed/yokohama-city/fiscal_records.json";
@@ -116,6 +120,7 @@ const municipalityNames: Record<MunicipalityKey, string> = {
   "nagoya-city": "名古屋市",
   "toyota-city": "豊田市",
   "sendai-city": "仙台市",
+  "shizuoka-city": "静岡市",
 };
 
 const municipalityKeys = Object.keys(municipalityNames) as MunicipalityKey[];
@@ -144,6 +149,7 @@ const recordsByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFin
   "nagoya-city": nagoyaCityFinance.records,
   "toyota-city": toyotaCityFinance.records,
   "sendai-city": [...sendaiCityFiscalRecords, ...sendaiCitySettlementRecords] as typeof fukuokaPrefectureFinance.records,
+  "shizuoka-city": [...shizuokaCityFiscalRecords, ...shizuokaCitySettlementRecords] as typeof fukuokaPrefectureFinance.records,
 };
 const evidenceByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFinance.evidencePackets> = {
   "kawasaki-city": kawasakiFiscalEvidence as typeof fukuokaPrefectureFinance.evidencePackets,
@@ -170,6 +176,7 @@ const evidenceByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFi
   "nagoya-city": nagoyaCityFinance.evidencePackets,
   "toyota-city": toyotaCityFinance.evidencePackets,
   "sendai-city": [...sendaiCityFiscalEvidence, ...sendaiCitySettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
+  "shizuoka-city": [...shizuokaCityFiscalEvidence, ...shizuokaCitySettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
 };
 const fiscalRecords = Object.values(recordsByMunicipality).flat();
 const evidencePackets = Object.values(evidenceByMunicipality).flat();

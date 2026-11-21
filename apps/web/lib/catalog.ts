@@ -35,7 +35,8 @@ export type MunicipalityKey =
   | "hyogo-prefecture"
   | "kobe-city"
   | "miyagi-prefecture"
-  | "sendai-city";
+  | "sendai-city"
+  | "shizuoka-city";
 export type SourceRecord = {
   id: string;
   municipality_key: MunicipalityKey;
@@ -222,6 +223,12 @@ export const municipalityMeta: Record<
     name: "仙台市", type: "政令指定都市",
     summary: "仙台市基本計画2021-2030・実施計画2024-2026、FY2026成立後一般会計当初予算、郡和子市長の公約4件、自己評価つき事業10系列と仙台市議会の会派別賛否を確認します。",
     status: "財政データ公開", href: "/municipalities/sendai-city",
+    fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
+  },
+  "shizuoka-city": {
+    name: "静岡市", type: "政令指定都市",
+    summary: "第5次静岡市総合計画（2026〜2035年度）と実施計画、2026年度当初予算、2022〜2024年度の普通会計決算に加え、難波 喬司市長の現任期を公式出典で確認します。公約原文は未登録です。自治体別ページは準備中です。",
+    status: "財政データ公開", href: null,
     fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
   },
 };
