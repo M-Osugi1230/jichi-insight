@@ -102,6 +102,7 @@ export default async function AssemblyDetailPage({params}:PageProps){
       {slug==="saitama-city" ? <p className={styles.attention}>さいたま市議会の賛否は会派別と無所属議員の個人名列で公表されます。全議員の個人別賛否表ではありません。政務活動費は会派分と議員個人分を半期ごとの公式公開単位で表示します。領収書も公開されています。</p> : null}
       {slug==="kawaguchi-city" ? <p className={styles.attention}>川口市議会の会派別・議員個人別賛否は公式公表なし（not_published）です。議決結果のみから賛否を推定しません。政務活動費は会派分と議員個人分の収支報告書・領収書をWeb公開しています。令和7年度決算認定4件は継続審査中です。</p> : null}
       {slug==="chiba-prefecture" ? <p className={styles.attention}>千葉県議会の賛否一覧は3表で○の意味が異なります。議案表の○は原案に反対する会派等、発議案表の○は賛成会派等の内訳、請願表の○は採択に賛成する会派等を示します。表の種類をまたいで○を同じ意味として解釈しません。令和7年度決算認定「決算認定について」は継続審査中（pending）です。個人名列は無所属議員2名のみで、会派所属議員の個人票は公表されていません。</p> : null}
+      {slug==="chiba-prefecture" || slug==="chiba-city" ? <p className={styles.attention}>登録議案{data.proposals.length}件、表決{data.votes.length}件、会派別賛否{data.factionVotes.length}件、政務活動費{data.expenses.length}単位、視察{data.trips.length}件を登録しています。件数はこのページのReviewed登録データに基づきます。</p> : null}
       <p><Link href="/assemblies">20議会の一覧に戻る</Link></p>
       <nav aria-label="ページ内のセクション">
         <a href="#basic">基本情報</a> ／ <a href="#proposals">会期と議案</a> ／ <a href="#votes">表決</a> ／ <a href="#expenses">政務活動費</a> ／ <a href="#trips">視察</a> ／ <a href="#disclosure">情報公開</a>
