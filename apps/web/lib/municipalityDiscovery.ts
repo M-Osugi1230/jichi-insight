@@ -1,8 +1,6 @@
 import chibaPrefectureMunicipality from "../../../data/reviewed/chiba-prefecture/municipality.json";
 import chibaCityMunicipality from "../../../data/reviewed/chiba-city/municipality.json";
 import { chibaFinance } from "@/lib/chibaFinance";
-import chibaPrefectureMunicipality from "../../../data/reviewed/chiba-prefecture/municipality.json";
-import chibaCityMunicipality from "../../../data/reviewed/chiba-city/municipality.json";
 import saitamaPrefectureMunicipality from "../../../data/reviewed/saitama-prefecture/municipality.json";
 import saitamaCityMunicipality from "../../../data/reviewed/saitama-city/municipality.json";
 import kawaguchiMunicipality from "../../../data/reviewed/kawaguchi-city/municipality.json";
@@ -59,24 +57,6 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
     return municipality.official_code === officialCode &&
       municipality.data_status === "reviewed";
   });
-
-  if (!matched && officialCode === chibaPrefectureMunicipality.official_code &&
-    chibaPrefectureMunicipality.data_status === "reviewed") {
-    const hasProjects = projectRegistry["chiba-prefecture"].projects.some((project) =>
-      project.review_status === "reviewed" &&
-      project.municipality_id === chibaPrefectureMunicipality.id,
-    );
-    return { key: "chiba-prefecture", finance: false, promises: false, assembly: false, projects: hasProjects };
-  }
-
-  if (!matched && officialCode === chibaCityMunicipality.official_code &&
-    chibaCityMunicipality.data_status === "reviewed") {
-    const hasProjects = projectRegistry["chiba-city"].projects.some((project) =>
-      project.review_status === "reviewed" &&
-      project.municipality_id === chibaCityMunicipality.id,
-    );
-    return { key: "chiba-city", finance: false, promises: false, assembly: false, projects: hasProjects };
-  }
 
   if (!matched && officialCode === chibaPrefectureMunicipality.official_code &&
     chibaPrefectureMunicipality.data_status === "reviewed") {
