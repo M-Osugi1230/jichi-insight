@@ -1,0 +1,48 @@
+[
+  {
+    "id": "jp-local-221309-assembly-2023-expense-evidence-packet-fy2025",
+    "subject_type": "political_activity_expense",
+    "subject_id": "jp-local-221309-assembly-2023",
+    "claims": [
+      {
+        "field": "amounts",
+        "summary": "令和7年度の政務活動費は会派単位（7会派）で登録した。交付額・預金利息・支出計・科目別内訳・返納額は、各会派の収支報告書（第7号様式別紙）と市議会だより2026年8月5日号の公式集計表の双方で全額一致を確認し、各会派とも科目別内訳の合計が支出計と一致することを検算した。",
+        "decision": "accepted",
+        "source_ids": [
+          "hamamatsu-city-assembly-seimu-fy2025",
+          "hamamatsu-city-assembly-seimu-fy2025-dayori"
+        ]
+      },
+      {
+        "field": "returned_formula",
+        "summary": "返納額は集計表の印字どおりに登録した。返納額は「交付額から支出計を差し引いた残額（0を下限とする）に預金利息を加えた額と一致する。創造浜松・国民民主党浜松は支出計9,075,930円が収入計9,004,095円を71,835円上回り、収支報告書の残額は△71,835円と印字されているが、返納額は預金利息分の4,095円のみが印字されており、そのまま登録した。",
+        "decision": "accepted",
+        "source_ids": [
+          "hamamatsu-city-assembly-seimu-fy2025",
+          "hamamatsu-city-assembly-seimu-fy2025-dayori"
+        ]
+      },
+      {
+        "field": "member_months",
+        "summary": "交付額は月額15万円×所属議員数×月数の延べ人月と一致する（延べ人月は合計538人月）。市民クラブは年度当初の7人から令和8年1月20日に1人が辞職して6人となったため、延べ82人月・交付額12,300,000円である。",
+        "decision": "accepted",
+        "source_ids": [
+          "hamamatsu-city-assembly-seimu-fy2025-dayori",
+          "hamamatsu-city-assembly-faction-roster"
+        ]
+      },
+      {
+        "field": "files",
+        "summary": "令和7年度の公開ファイルは7会派で計82件（自由民主党浜松34・市民クラブ19・公明党8・創造浜松・国民民主党浜松7・日本共産党浜松市議団7・浜松市政向上委員会6・市民サポート浜松1）。各会派とも分割PDFの第1ファイルが収支報告書（表紙＋第7号様式別紙）であることを描画画像で目視確認した。",
+        "decision": "accepted",
+        "source_ids": [
+          "hamamatsu-city-assembly-seimu-fy2025"
+        ]
+      }
+    ],
+    "open_questions": [
+      "分割PDFの内訳構成（収支報告書・会計帳簿・証拠書類のファイル境界）の完全な確定は未了である。"
+    ],
+    "review_status": "reviewed"
+  }
+]

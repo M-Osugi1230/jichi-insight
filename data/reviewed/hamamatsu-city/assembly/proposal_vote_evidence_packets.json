@@ -1,0 +1,57 @@
+[
+  {
+    "id": "jp-local-221309-assembly-2023-vote-evidence-packet-session-2026-3",
+    "subject_type": "vote",
+    "subject_id": "jp-local-221309-assembly-2023-session-2026-3",
+    "claims": [
+      {
+        "field": "extraction_method",
+        "summary": "議員賛否一覧（PDF・A4横2ページ）の記号を座標で抽出した。表頭の氏名は縦書きで、記号の列は約10.08pt間隔の44列の格子をなし、議長（渥美誠）の列だけが全行で空欄で網掛け矩形（x=568.4〜578.6）と一致することを確認した。各行43記号・列の重複なし・行ごとの事件番号との照合を全62行で検証した。",
+        "decision": "accepted",
+        "source_ids": [
+          "hamamatsu-city-assembly-member-votes-2026-3"
+        ]
+      },
+      {
+        "field": "column_order",
+        "summary": "列の並び（会派と氏名）は、表頭の読み取り結果が市の会派別名簿（令和8年6月3日更新）の並びと44人全員で一致することで確定した。議員名の読み仮名は議員名簿（50音順）の公表値によった。",
+        "decision": "accepted",
+        "source_ids": [
+          "hamamatsu-city-assembly-member-votes-2026-3",
+          "hamamatsu-city-assembly-faction-roster",
+          "hamamatsu-city-assembly-member-roster"
+        ]
+      },
+      {
+        "field": "chair",
+        "summary": "議長は地方自治法の原則どおり議決に加わらないため、全62票で position を excused とした。賛否一覧の凡例も、網掛け部分は「議長のため議員として議決に加わることができない」ことを表すと明記している。",
+        "decision": "accepted",
+        "source_ids": [
+          "hamamatsu-city-assembly-member-votes-2026-3"
+        ]
+      },
+      {
+        "field": "divided_votes",
+        "summary": "賛否が分かれたのは8件（第91・98・99・101号議案、認第2・4・7・13号）で、いずれも日本共産党浜松市議団の3人（酒井豊実・小黒啓子・北島定）が反対し、賛成40・反対3であった。残り54件は議長を除く43人全員が賛成した。本登録の全行で棄権・除斥・欠席の記号は現れなかった。",
+        "decision": "accepted",
+        "source_ids": [
+          "hamamatsu-city-assembly-member-votes-2026-3",
+          "hamamatsu-city-assembly-results-2026-3"
+        ]
+      },
+      {
+        "field": "outcome_consistency",
+        "summary": "各票の合計（賛成多数）は、議決結果一覧の結果（原案可決・認定・同意）と全62件で矛盾しないことを確認した。",
+        "decision": "accepted",
+        "source_ids": [
+          "hamamatsu-city-assembly-member-votes-2026-3",
+          "hamamatsu-city-assembly-results-2026-3"
+        ]
+      }
+    ],
+    "open_questions": [
+      "表決方法は公表資料に記載がなく、会議録での個別照合は未実施のため method は unknown とした。"
+    ],
+    "review_status": "reviewed"
+  }
+]
