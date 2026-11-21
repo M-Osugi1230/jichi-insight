@@ -296,9 +296,11 @@ def test_bulletin_source_record_points_at_the_pdf() -> None:
     # Hyogo cluster's stage 3 (Issue #862) then appended the
     # Hyogo Prefecture bulletin record and the four Kobe City
     # mayor records, bringing it to
-    # version 0.31.0 / 101 records.
-    assert catalog["version"] == "0.31.0"
-    assert len(catalog["records"]) == 101
+    # version 0.31.0 / 101 records; the Miyagi cluster's stage 1
+    # (Issue #874) then appended the four Sendai City mayor
+    # records, bringing it to version 0.32.0 / 105 records.
+    assert catalog["version"] == "0.32.0"
+    assert len(catalog["records"]) == 105
     bulletin = next(r for r in catalog["records"] if r["id"] == BULLETIN_ID)
     assert bulletin["url"].endswith("chijisenkyokoho.pdf")
     assert bulletin["municipality_key"] == "osaka-prefecture"

@@ -1,5 +1,5 @@
 {
-  "version": "0.31.0",
+  "version": "0.32.0",
   "updated_at": "2026-11-21",
   "scope": "pilot",
   "records": [
@@ -1416,6 +1416,62 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "候補者提出原稿をそのまま印刷した全4ページの公式選挙公報。さいとう元彦候補欄は3ページ目上段。神戸市選挙管理委員会の公式ページに同一文書が保全掲載されており、神戸市公式サイトから取得した。候補者欄は画像形式（全4ページのテキスト抽出は空白を除き2,180字で、いずれも選管の表頭・投票案内等の印刷文字であり、候補者欄からは文字が抽出されない）ため、公約文はPDFの描画画像（100dpi・300dpi）の照合で転記した。県選管の知事選特設サイトでの掲載継続は未確認。"
+    },
+    {
+      "id": "sendai-city-mayor-election-2025-results",
+      "municipality_key": "sendai-city",
+      "organization": "仙台市選挙管理委員会",
+      "category": "election",
+      "title": "令和7年8月3日執行 仙台市長選挙 開票結果",
+      "url": "https://www.city.sendai.jp/senkyokanri-kanri/senkyo/r7sityou/kekka/documents/kaihyoukekka.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "仙台市選挙管理委員会の開票結果PDF。郡和子候補の得票数204,844票を印字し、区別内訳（青葉区54,049票、宮城野区31,572票、若林区28,368票、太白区45,980票、泉区44,875票）の合計とも一致する。次点は松本剛83,353票、有効投票322,381票。2026-11-21にPDF本体を直接読み取り照合した。"
+    },
+    {
+      "id": "sendai-city-mayor-election-2025-results-page",
+      "municipality_key": "sendai-city",
+      "organization": "仙台市選挙管理委員会",
+      "category": "election",
+      "title": "令和7年8月3日執行 仙台市長選挙 開票結果ページ",
+      "url": "https://www.city.sendai.jp/senkyokanri-kanri/senkyo/r7sityou/kekka/kaihyoukekka.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "仙台市選挙管理委員会の開票結果ページ。開票結果PDFへの到達経路であり、投票結果（投票率36.83%）も掲載する。2026-11-21に直接確認した。"
+    },
+    {
+      "id": "sendai-city-mayors-history-page",
+      "municipality_key": "sendai-city",
+      "organization": "仙台市",
+      "category": "official_profile",
+      "title": "歴代市長（仙台市公式サイト）",
+      "url": "https://www.city.sendai.jp/hisho/shise/gaiyo/profile/shicho.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "第37代市長・郡和子の就任日（令和7年8月22日）と第36代の満期（令和7年8月21日）を明記する。2026-11-21に直接確認した。"
+    },
+    {
+      "id": "sendai-city-mayor-term-expiry-list",
+      "municipality_key": "sendai-city",
+      "organization": "宮城県選挙管理委員会",
+      "category": "election",
+      "title": "市町村長・議会議員等任期満了一覧（令和8年10月22日現在）",
+      "url": "https://www.pref.miyagi.jp/documents/44063/manryou.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "宮城県選挙管理委員会が公表する県内市町村長等の任期満了一覧。仙台市長の任期満了が令和11年8月21日と明記されている。2026-11-21にPDF本体を直接読み取り照合した。"
     }
   ]
 }

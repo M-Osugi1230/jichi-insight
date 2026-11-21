@@ -6,14 +6,15 @@
     "claims": [
       {
         "field": "amount_yen",
-        "statement": "令和8年度一般会計当初予算額は7,306億円。",
+        "statement": "2026年度の仙台市一般会計当初予算総額は730,647,000,000円。",
         "source_ids": [
           "sendai-city-budget-2026-announcement",
-          "sendai-city-budget-2026-enactment-page"
+          "sendai-city-budget-2026-enactment-page",
+          "sendai-city-budget-2026-bill"
         ],
-        "location_note": "市長記者会見本文『令和8年度当初予算額』と、令和8年第1回定例会提出議案ページの原案通り可決注記。",
+        "location_note": "仙台市発表資料（令和8年度当初予算）および第14号議案『令和8年度仙台市一般会計予算』第1条。",
         "decision": "accepted",
-        "review_note": "7,306億円を円換算し、2026年3月12日に予算案が原案通り可決されたことを別Sourceで確認。補正後予算・執行額・決算額とは混同しない。"
+        "review_note": "当初登録値は発表資料の概数表示『7,306億円』に基づく730,600,000,000円だった。宮城クラスター段階1（Issue #874）で議案本文を原典として再確認し、第1条の歳入歳出予算総額730,647,000千円に是正した。"
       }
     ],
     "open_questions": [
@@ -29,7 +30,9 @@
       {
         "field": "amount_yen",
         "statement": "令和6年度一般会計の歳入合計における収入済額は627,113,991,995円。",
-        "source_ids": ["sendai-city-settlement-2024-general-account-pdf"],
+        "source_ids": [
+          "sendai-city-settlement-2024-general-account-pdf"
+        ],
         "location_note": "令和6年度仙台市一般会計歳入歳出決算書、歳入一般会計の歳入合計行、収入済額欄（PDF内部ページ6付近／印刷ページ13）。",
         "decision": "accepted",
         "review_note": "予算現額683,223,649,422円、調定額635,078,779,941円、不納欠損額337,853,464円、収入未済額7,688,051,896円とは別の決算値として保存する。"
@@ -46,10 +49,32 @@
       {
         "field": "amount_yen",
         "statement": "令和6年度一般会計の歳出合計における支出済額は619,037,397,835円。",
-        "source_ids": ["sendai-city-settlement-2024-general-account-pdf"],
+        "source_ids": [
+          "sendai-city-settlement-2024-general-account-pdf"
+        ],
         "location_note": "令和6年度仙台市一般会計歳入歳出決算書、歳出一般会計の歳出合計行、支出済額欄（PDF内部ページ10付近／印刷ページ17）。",
         "decision": "accepted",
         "review_note": "翌年度繰越額36,135,812,450円、不用額28,050,439,137円および予算現額とは別の決算値として保存する。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-sendai-city-2026-budget-local-tax",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-041009-fiscal-2026-local-tax",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2026年度の仙台市一般会計当初予算の市税は254,846,000,000円。",
+        "source_ids": [
+          "sendai-city-budget-2026-bill",
+          "sendai-city-budget-2026-enactment-page"
+        ],
+        "location_note": "第14号議案『令和8年度仙台市一般会計予算』第1表 歳入予算（第1款 市税）。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。税目別内訳（市民税112,590,000千円、固定資産税101,023,000千円ほか）の合計が254,846,000千円と一致することを検算で確認。予算は2026年3月12日に原案通り可決された。"
       }
     ],
     "open_questions": [],

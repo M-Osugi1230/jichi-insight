@@ -7,18 +7,19 @@
     "stage": "initial_budget",
     "metric": "total_revenue",
     "metric_label": "一般会計当初予算（原案どおり可決）",
-    "amount_yen": 730600000000,
+    "amount_yen": 730647000000,
     "value": null,
     "unit": "yen",
     "value_status": "available",
     "period_start": "2026-04-01",
     "period_end": "2027-03-31",
-    "note": "仙台市公式会見で一般会計当初予算案7,306億円を確認し、予算ページで2026年3月12日に原案通り可決されたことを確認。補正後予算、執行額、決算額とは別状態として保持する。",
+    "note": "令和8年度仙台市一般会計当初予算の歳入総額。発表資料の概数7,306億円ではなく、議案本文（第14号議案『令和8年度仙台市一般会計予算』第1条）の歳入歳出予算総額730,647,000千円を収録する。2026年3月12日に原案通り可決された。",
     "review_status": "reviewed",
     "confidence": "high",
     "sources": [
       "sendai-city-budget-2026-announcement",
-      "sendai-city-budget-2026-enactment-page"
+      "sendai-city-budget-2026-enactment-page",
+      "sendai-city-budget-2026-bill"
     ]
   },
   {
@@ -38,7 +39,9 @@
     "note": "令和6年度一般会計歳入歳出決算書の歳入合計に記載された収入済額。予算現額683,223,649,422円および調定額635,078,779,941円とは混同しない。",
     "review_status": "reviewed",
     "confidence": "high",
-    "sources": ["sendai-city-settlement-2024-general-account-pdf"]
+    "sources": [
+      "sendai-city-settlement-2024-general-account-pdf"
+    ]
   },
   {
     "id": "jp-local-041009-fiscal-2024-total-expenditure",
@@ -57,6 +60,30 @@
     "note": "令和6年度一般会計歳入歳出決算書の歳出合計に記載された支出済額。予算現額、翌年度繰越額36,135,812,450円、不用額28,050,439,137円とは混同しない。",
     "review_status": "reviewed",
     "confidence": "high",
-    "sources": ["sendai-city-settlement-2024-general-account-pdf"]
+    "sources": [
+      "sendai-city-settlement-2024-general-account-pdf"
+    ]
+  },
+  {
+    "id": "jp-local-041009-fiscal-2026-local-tax",
+    "municipality_id": "jp-local-041009",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "local_tax",
+    "metric_label": "市税",
+    "amount_yen": 254846000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "令和8年度仙台市一般会計当初予算の市税。議案本文（第14号議案）第1表歳入予算の市税254,846,000千円を収録し、税目別内訳の合計とも一致する。2026年3月12日に原案通り可決された。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "sendai-city-budget-2026-bill",
+      "sendai-city-budget-2026-enactment-page"
+    ]
   }
 ]

@@ -41,15 +41,15 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 101
-    assert len({record["id"] for record in catalog["records"]}) == 101
+    assert len(catalog["records"]) == 105
+    assert len({record["id"] for record in catalog["records"]}) == 105
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
     terms = load_json("data/entities/executives/executive_terms.json")
     packets = load_json("data/entities/executives/evidence_packets.json")
 
-    assert len(terms) == 22
+    assert len(terms) == 23
     assert {term["municipality_id"] for term in terms} == {
         "jp-local-400009",
         "jp-local-401307",
@@ -73,6 +73,7 @@ def test_executive_registry_matches_shared_contracts() -> None:
         "jp-local-121002",
         "jp-local-280003",
         "jp-local-281000",
+        "jp-local-041009",
     }
     for term in terms:
         assert validation_errors("schemas/executive_term.schema.json", term) == []
@@ -215,6 +216,16 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
         # the evidence packet records the chain and the open
         # question.
         "jp-local-281000": "2029-11-19",
+        # Sendai City is the direct-statement case on both ends:
+        # the city's official list of past mayors states the current
+        # term's start (2025-08-22) and the previous term's expiry
+        # (2025-08-21), and the Miyagi prefectural election
+        # commission's term-expiry list states the current expiry
+        # (2029-08-21) itself. The Article 259 proviso chain agrees,
+        # and the cross-check against the prefectural list that
+        # remains outstanding for other municipalities is complete
+        # for Sendai (recorded in the evidence packet).
+        "jp-local-041009": "2029-08-21",
     }
     for term in terms:
         assert term["term_end"] == expected_term_ends[term["municipality_id"]]
@@ -268,6 +279,7 @@ def test_executive_term_starts_follow_statutory_counting() -> None:
         "jp-local-121002": "2025-03-21",
         "jp-local-280003": "2024-11-17",
         "jp-local-281000": "2025-11-20",
+        "jp-local-041009": "2025-08-22",
     }
     for term in terms:
         assert term["term_start"] == expected_term_starts[term["municipality_id"]]
@@ -404,6 +416,10 @@ def test_manifesto_readiness_is_not_confused_with_progress() -> None:
     assert by_municipality["jp-local-281000"]["manifesto_source_ids"] == [
         "kobe-city-mayor-election-2025-bulletin",
     ]
+    # Sendai City registers no manifesto source yet: the Miyagi
+    # cluster's stage 1 (Issue #874) registers the term only; the
+    # 2025 bulletin is connected at the promise stage (stage 3).
+    assert by_municipality["jp-local-041009"]["manifesto_source_ids"] == []
 
 
 def test_every_executive_has_evidence_and_known_sources() -> None:
