@@ -1,3 +1,13 @@
+import hyogoProjectSources from "../../../data/catalog/hyogo_project_sources.json";
+import hyogoSelection from "../../../data/catalog/hyogo_priority_project_selection.json";
+import hyogoProjects from "../../../data/reviewed/hyogo-prefecture/projects.json";
+import hyogoKpis from "../../../data/reviewed/hyogo-prefecture/project_kpis.json";
+import hyogoEvidence from "../../../data/reviewed/hyogo-prefecture/project_evidence_packets.json";
+import kobeProjectSources from "../../../data/catalog/kobe_city_project_sources.json";
+import kobeSelection from "../../../data/catalog/kobe_city_priority_project_selection.json";
+import kobeProjects from "../../../data/reviewed/kobe-city/projects.json";
+import kobeKpis from "../../../data/reviewed/kobe-city/project_kpis.json";
+import kobeEvidence from "../../../data/reviewed/kobe-city/project_evidence_packets.json";
 import chibaProjectSources from "../../../data/catalog/chiba_project_sources.json";
 import chibaSelection from "../../../data/catalog/chiba_priority_project_selection.json";
 import chibaProjects from "../../../data/reviewed/chiba-prefecture/projects.json";
@@ -92,10 +102,12 @@ import { fukuokaPrefectureProjectData } from "./fukuokaPrefectureProjects";
 import { kitakyushuProjectData, type ProjectRecord, type KpiRecord } from "./kitakyushuProjects";
 import type { EvidencePacket } from "./finance";
 
-export type ProjectArea = "fukuoka-prefecture" | "osaka-prefecture" | "osaka-city" | "sakai-city" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city" | "hokkaido-prefecture" | "sapporo-city" | "asahikawa-city" | "kanagawa-prefecture" | "yokohama-city" | "kawasaki-city" | "saitama-prefecture" | "saitama-city" | "kawaguchi-city" | "chiba-prefecture" | "chiba-city";
+export type ProjectArea = "fukuoka-prefecture" | "osaka-prefecture" | "osaka-city" | "sakai-city" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city" | "hokkaido-prefecture" | "sapporo-city" | "asahikawa-city" | "kanagawa-prefecture" | "yokohama-city" | "kawasaki-city" | "saitama-prefecture" | "saitama-city" | "kawaguchi-city" | "chiba-prefecture" | "chiba-city" | "hyogo-prefecture" | "kobe-city";
 type Selection = { updated_at?: string; population?: { description?: string; label?: string }; selection_rule?: { description?: string } | string; };
 type SetOfProjects = { name: string; projects: ProjectRecord[]; kpis: KpiRecord[]; evidencePackets: EvidencePacket[]; selection: Selection };
 export const projectRegistry: Record<ProjectArea, SetOfProjects> = {
+  "hyogo-prefecture": { name: "兵庫県", projects: hyogoProjects as ProjectRecord[], kpis: hyogoKpis as KpiRecord[], evidencePackets: hyogoEvidence as EvidencePacket[], selection: hyogoSelection },
+  "kobe-city": { name: "神戸市", projects: kobeProjects as ProjectRecord[], kpis: kobeKpis as KpiRecord[], evidencePackets: kobeEvidence as EvidencePacket[], selection: kobeSelection },
   "chiba-prefecture": { name: "千葉県", projects: chibaProjects as ProjectRecord[], kpis: chibaKpis as KpiRecord[], evidencePackets: chibaEvidence as EvidencePacket[], selection: chibaSelection },
   "chiba-city": { name: "千葉市", projects: chibaCityProjects as ProjectRecord[], kpis: chibaCityKpis as KpiRecord[], evidencePackets: chibaCityEvidence as EvidencePacket[], selection: chibaCitySelection },
   "saitama-prefecture": { name: "埼玉県", projects: saitamaProjects as ProjectRecord[], kpis: saitamaKpis as KpiRecord[], evidencePackets: saitamaEvidence as EvidencePacket[], selection: saitamaSelection },
@@ -138,4 +150,6 @@ export const projectSourceCatalog: SourceRecord[] = [...sourceCatalog,
   ...(saitamaCityProjectSources.records as SourceRecord[]),
   ...(kawaguchiProjectSources.records as SourceRecord[]),
   ...(chibaProjectSources.records as SourceRecord[]),
-  ...(chibaCityProjectSources.records as SourceRecord[])];
+  ...(chibaCityProjectSources.records as SourceRecord[]),
+  ...(hyogoProjectSources.records as SourceRecord[]),
+  ...(kobeProjectSources.records as SourceRecord[])];
