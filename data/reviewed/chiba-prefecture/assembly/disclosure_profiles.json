@@ -1,0 +1,103 @@
+[
+ {
+  "as_of": "2026-11-21",
+  "assembly_id": "jp-local-120006-assembly-2023",
+  "confidence": "high",
+  "id": "jp-local-120006-assembly-2023-disclosure-2026",
+  "items": [
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_roster",
+    "note": "議員名簿・会派等別議員名簿を県議会公式サイトで公開。会派等別議員名簿は令和8年11月12日更新時点で定数95名・現員88名。無所属議員は栗原直也・松澤武人の2名。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_composition",
+    "note": "会派等略称一覧（令和8年9月定例会資料）で14会派と無所属議員2名の列構成を公開。令和8年9月定例会時点の構成（令和8年8月17日の会派所属議員数の変更に関する報道資料による）は自由民主党千葉県議会議員会49人・立憲民主党千葉県議会議員会12人・公明党千葉県議会議員団8人・千葉新政策議員団5人・日本共産党千葉県議会議員団4人・平和の党1人・国民民主党千葉県議会議員会1人・千葉県民の声1人・リベラル民主1人・市民力1人・有志の会1人・野田民主の会1人・未来ちば1人・自立と未来1人・無所属2人の現員89人。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "committee_composition",
+    "note": "常任委員会8（総務防災・総合企画企業・健康福祉・環境生活警察・商工労働・農林水産・県土整備・文教）と議会運営委員会・決算審査特別委員会・予算委員会等を公式サイトで公開。委員の氏名単位の構成表は本登録では収録していない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "proposals_and_results",
+    "note": "定例会ごとに議案一覧（知事提出議案・報告・決算認定・発議案の件名と審議結果・議決年月日）と発議案件名一覧を公開。令和8年9月定例会は知事提出議案30件・発議案17件・請願3件。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_votes",
+    "note": "「議案に対する賛否一覧表」（原案に反対する会派等を○で表示）・「発議案に対する賛否一覧表」（賛成会派等の内訳）・「請願に対する賛否一覧表」（採択することに賛成の会派等）を会期ごとにPDFで公開。列は会派別に加え、無所属議員は個人名の列で示される。表の見出しによって○の意味（反対／賛成）が異なる。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_votes",
+    "note": "議員個人別の賛否は、無所属議員2名（栗原直也・松澤武人）についてのみ賛否一覧表の個人名列で公開される。会派所属議員の個人別の賛否は公開されていないため、復元・推測はしていない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "political_activity_expense_reports",
+    "note": "令和6年度分から収支報告書と一覧表をWeb公開。令和7年度分は会派別・議員別の一覧表に交付決定額・確定額・科目別内訳・残余まで掲載され、会派分15単位・議員分95単位が公開されている。",
+    "source_url": null
+   },
+   {
+    "availability": "restricted",
+    "granularity": "document",
+    "item": "political_activity_expense_receipts",
+    "note": "領収書等の証拠書類の写しはWeb公開の対象外で、議会事務局総務課での閲覧のみ可能。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "inspection_trip_reports",
+    "note": "常任委員会の県内調査報告・県外調査報告を委員会別・実施日別に公式サイトで公開。調査先・期間・調査項目・概要が掲載され、費用は掲載されていない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "meeting_minutes",
+    "note": "会議録は公式サイトの会議録検索システムで公開。本登録では会議録本文の照合は行っていない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "session_broadcast",
+    "note": "本会議のインターネット中継（ライブ・録画）を公式サイトで公開。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "petition_results",
+    "note": "請願は請願一覧（件名・付託先委員会・審議結果）と請願に対する賛否一覧表を公開し、本会議で採択・不採択を議決する。陳情は結論を出さない制度で、写しを各議員に配付し関係執行機関へ通知するのみである。",
+    "source_url": null
+   }
+  ],
+  "review_status": "reviewed",
+  "sources": [
+   "chiba-pref-assembly-session-2026-9",
+   "chiba-pref-assembly-members-2026",
+   "chiba-pref-assembly-factions-2026",
+   "chiba-pref-assembly-seimu-index",
+   "chiba-pref-assembly-inspections-index",
+   "chiba-pref-assembly-petition-guide"
+  ]
+ }
+]
