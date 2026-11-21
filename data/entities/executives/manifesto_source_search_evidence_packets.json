@@ -1057,5 +1057,51 @@
       "市の公式サイトへの選挙公報の再掲載の有無（再掲載されれば出典カタログのURLを差し替える）。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-miyagi-pref-2025",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-miyagi-pref-2025",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "宮城県選挙管理委員会の知事選挙総合ページを確認した。前任期の満了日（2025-11-20）と選挙期日（2025年10月26日）が明記され、選挙公報PDFと音声読み上げ用ページへのリンクが掲載されている。県公式の知事プロフィールでも現職知事であることを確認し、得票数340,190票は段階1で仙台市選挙管理委員会の開票結果（県計）と照合済みである。",
+        "source_ids": [
+          "miyagi-pref-governor-election-2025-page",
+          "miyagi-pref-governor",
+          "sendai-city-governor-election-2025-result"
+        ],
+        "location_note": "県選管の知事選挙総合ページ（段階0の棚卸しと段階1で確認済み）。",
+        "decision": "accepted",
+        "review_note": "確認した出典は checked_source_ids に列挙した。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "同ページから選挙公報PDF（全4ページ）を県公式サイト上で直接取得し、1ページ目下段の村井よしひろ候補欄（政策4件）を確認した。PDFのテキスト抽出は空白を除き837字で、いずれも選管の表頭・投票案内等の印刷文字であり、候補者欄は画像形式であることを実測した。あわせて音声読み上げ用ページから候補者提出の音声読み上げ対応データ（テキスト層を持つPDF）を取得し、転記照合に用いた。",
+        "source_ids": [
+          "miyagi-pref-governor-election-2025-bulletin",
+          "miyagi-pref-governor-election-2025-bulletin-audio-data"
+        ],
+        "location_note": "選挙公報PDF（全4ページ）の1ページ目下段。",
+        "decision": "accepted",
+        "review_note": "登録文はPDFの描画画像（100dpi・300dpi）の照合で転記し、音声読み上げ対応データのテキスト層と突合した。"
+      },
+      {
+        "field": "result_status",
+        "statement": "選挙公報を登録し、分割レビューを経て公約レコード4件を作成したため、result_status を source_registered とした。候補者欄が案内するYouTube等の詳細資料については、安定した所在を特定していないため、資料が存在しないとは判定しない。",
+        "source_ids": [
+          "miyagi-pref-governor-election-2025-bulletin"
+        ],
+        "location_note": "本探索レコード全体。",
+        "decision": "accepted",
+        "review_note": "公的機関（県選管）の公式サイトから直接取得した公報そのものであるため confidence は high とする。"
+      }
+    ],
+    "open_questions": [
+      "候補者欄が案内するYouTube（AIむらい・YouTubeライブ）等の詳細な公約資料の安定した所在は特定できていない。",
+      "事業との接続は文言・内容に基づく推定であり、県が公約と事業の公式な対応付けを公表した場合は接続を見直す。",
+      "知事の任期満了日（2029-11-20）の県選管自身の資料での明記照合は未実施である。"
+    ],
+    "review_status": "reviewed"
   }
 ]

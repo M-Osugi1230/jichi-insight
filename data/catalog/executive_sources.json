@@ -1,5 +1,5 @@
 {
-  "version": "0.34.0",
+  "version": "0.35.0",
   "updated_at": "2026-11-22",
   "scope": "pilot",
   "records": [
@@ -1528,6 +1528,34 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "仙台市長選挙の選挙公報そのもの（全2ページ、候補者4人）。選挙期間中は仙台市公式サイトの選挙ページ群（senkyokanri-kanri/senkyo/r7sityou/documents/senkyokouhou_sityou.pdf）で公表されていたが、現行サイトでは市長選挙結果ページ群に公報への導線がなく、当該URLは2026年11月22日時点で404である。そのため市の公式URLの Wayback Machine 保存コピー（2025年7月31日保存）を登録した。2025年7月20日保存の同内容ファイル（senkyokouhou_.pdf）とダイジェスト（SUYKBQYI4NQ2YHFMQWLESMCHOHZJW66W）が一致し、同一内容であることを確認した。候補者欄は画像形式で、テキスト層は表頭・欄外注記のみ（抽出文字数は約550字）のため、登録文はPDFの描画画像（200dpi・300dpi）から転記し複数解像度で照合した。郡和子候補欄は2ページ目上段で、キャッチコピー、「重点政策」の円形項目4件、プロフィール、「郡和子 4年の実績」欄で構成される。公報は候補者から提出された原稿をそのまま印刷した公式文書（欄外にその旨の注記あり）で出典優先順位の最上位に当たるため、confidence は high とした。"
+    },
+    {
+      "id": "miyagi-pref-governor-election-2025-bulletin",
+      "municipality_key": "miyagi-prefecture",
+      "organization": "宮城県選挙管理委員会",
+      "category": "election",
+      "title": "令和7年10月26日執行 宮城県知事選挙 選挙公報（村井よしひろ候補欄）",
+      "url": "https://www.pref.miyagi.jp/documents/59836/senkyokouhou.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-22",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "候補者提出原稿をそのまま印刷した全4ページの公式選挙公報。村井よしひろ候補欄は1ページ目下段。県選管の知事選挙総合ページに掲載されており、県公式サイトから直接取得した（4,000,541バイト）。候補者欄は画像形式（全4ページのテキスト抽出は空白を除き837字で、いずれも選管の表頭・投票案内等の印刷文字であり、候補者欄からは文字が抽出されない）ため、公約文はPDFの描画画像（100dpi・300dpi）の目視転記を正とし、候補者提出の音声読み上げ対応データ（テキスト層）の抽出文と全項目で突合して照合した。"
+    },
+    {
+      "id": "miyagi-pref-governor-election-2025-bulletin-audio-data",
+      "municipality_key": "miyagi-prefecture",
+      "organization": "宮城県選挙管理委員会",
+      "category": "election",
+      "title": "令和7年10月26日執行 宮城県知事選挙 選挙公報 音声読み上げ対応データ（村井よしひろ候補提出）",
+      "url": "https://www.pref.miyagi.jp/documents/61858/muraiyoshihiro.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-22",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "県選管が「宮城県知事選挙候補者情報（選挙公報）（音声読み上げ用）」ページで公表する、候補者提出の音声読み上げ対応データ（PDF 1ページ、2,022,233バイト）。選挙公報の村井よしひろ候補欄と同一原稿のテキスト層を持ち、見出し・本文の全文字が抽出できる。段階3では選挙公報の描画画像からの目視転記と本データの抽出文を突合し、実質的な文言が全項目で一致することを確認した（差異は改行位置とアスタリスクの字形のみ）。公約原文の正本は選挙公報とし、本データは転記照合の補助資料として登録する。"
     }
   ]
 }

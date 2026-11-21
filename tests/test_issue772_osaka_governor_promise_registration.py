@@ -300,10 +300,12 @@ def test_bulletin_source_record_points_at_the_pdf() -> None:
     # (Issue #874) then appended the three Miyagi Prefecture governor
     # records and the four Sendai City mayor records, bringing it to
     # version 0.33.0 / 108 records; the Miyagi cluster's stage 3
-    # (Issue #881) then appended the Sendai City mayor bulletin
-    # record, bringing it to version 0.34.0 / 109 records.
-    assert catalog["version"] == "0.34.0"
-    assert len(catalog["records"]) == 109
+    # (Issue #881) then appended the Miyagi Prefecture bulletin
+    # record and its audio-readable data record and the Sendai City
+    # mayor bulletin record, bringing it to
+    # version 0.35.0 / 111 records.
+    assert catalog["version"] == "0.35.0"
+    assert len(catalog["records"]) == 111
     bulletin = next(r for r in catalog["records"] if r["id"] == BULLETIN_ID)
     assert bulletin["url"].endswith("chijisenkyokoho.pdf")
     assert bulletin["municipality_key"] == "osaka-prefecture"
