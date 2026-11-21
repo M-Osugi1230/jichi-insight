@@ -69,8 +69,21 @@ def test_discovery_gates_and_disclosure_copy_are_municipality_specific():
     assert "主な議案" in DETAIL and "陳情回答綴" in DETAIL
     assert "第1〜4項" in DETAIL and "第5項" in DETAIL
     assert "18件" in DETAIL and "継続審査中" in DETAIL
-    assert "18議会" in INDEX
-    assert "大阪府議会" in INDEX and "大阪市会" in INDEX and "堺市議会" in INDEX
+    assert "20議会" in INDEX
+    registry = (WEB / "lib/assemblyRegistry.ts").read_text(encoding="utf-8")
+    assert "osaka-prefecture" in registry and "osaka-city" in registry
+    assert "sakai-city" in registry
+    for slug, name in (
+        ("osaka-prefecture", "大阪府議会"),
+        ("osaka-city", "大阪市会"),
+        ("sakai-city", "堺市議会"),
+    ):
+        records = json.loads(
+            (DATA / f"reviewed/{slug}/assembly/assembly_records.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        assert any(record["name"] == name for record in records)
 
 
 def test_static_export_validator_requires_osaka_assembly_pages_and_scoped_copy():

@@ -238,7 +238,34 @@ import kawasakiExpenseEvidence from "../../../data/reviewed/kawasaki-city/assemb
 import kawasakiTripEvidence from "../../../data/reviewed/kawasaki-city/assembly/inspection_evidence_packets.json";
 import kawasakiSources from "../../../data/catalog/kawasaki_city_assembly_sources.json";
 
-export type AssemblySlug = "osaka-prefecture" | "osaka-city" | "sakai-city" | "hokkaido-prefecture" | "sapporo-city" | "asahikawa-city" | "fukuoka-prefecture" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city" | "kanagawa-prefecture" | "yokohama-city" | "kawasaki-city" | "saitama-prefecture" | "saitama-city" | "kawaguchi-city";
+import chibaPrefAssembly from "../../../data/reviewed/chiba-prefecture/assembly/assembly_records.json";
+import chibaPrefDisclosure from "../../../data/reviewed/chiba-prefecture/assembly/disclosure_profiles.json";
+import chibaPrefSessions from "../../../data/reviewed/chiba-prefecture/assembly/sessions.json";
+import chibaPrefProposals from "../../../data/reviewed/chiba-prefecture/assembly/proposals.json";
+import chibaPrefVotes from "../../../data/reviewed/chiba-prefecture/assembly/votes.json";
+import chibaPrefFactionVotes from "../../../data/reviewed/chiba-prefecture/assembly/faction_votes.json";
+import chibaPrefExpenses from "../../../data/reviewed/chiba-prefecture/assembly/political_activity_expenses.json";
+import chibaPrefTrips from "../../../data/reviewed/chiba-prefecture/assembly/inspection_trips.json";
+import chibaPrefAssemblyEvidence from "../../../data/reviewed/chiba-prefecture/assembly/assembly_evidence_packets.json";
+import chibaPrefVoteEvidence from "../../../data/reviewed/chiba-prefecture/assembly/proposal_vote_evidence_packets.json";
+import chibaPrefExpenseEvidence from "../../../data/reviewed/chiba-prefecture/assembly/expense_evidence_packets.json";
+import chibaPrefTripEvidence from "../../../data/reviewed/chiba-prefecture/assembly/inspection_evidence_packets.json";
+import chibaPrefSources from "../../../data/catalog/chiba_prefecture_assembly_sources.json";
+import chibaCityAssembly from "../../../data/reviewed/chiba-city/assembly/assembly_records.json";
+import chibaCityDisclosure from "../../../data/reviewed/chiba-city/assembly/disclosure_profiles.json";
+import chibaCitySessions from "../../../data/reviewed/chiba-city/assembly/sessions.json";
+import chibaCityProposals from "../../../data/reviewed/chiba-city/assembly/proposals.json";
+import chibaCityVotes from "../../../data/reviewed/chiba-city/assembly/votes.json";
+import chibaCityFactionVotes from "../../../data/reviewed/chiba-city/assembly/faction_votes.json";
+import chibaCityExpenses from "../../../data/reviewed/chiba-city/assembly/political_activity_expenses.json";
+import chibaCityTrips from "../../../data/reviewed/chiba-city/assembly/inspection_trips.json";
+import chibaCityAssemblyEvidence from "../../../data/reviewed/chiba-city/assembly/assembly_evidence_packets.json";
+import chibaCityVoteEvidence from "../../../data/reviewed/chiba-city/assembly/proposal_vote_evidence_packets.json";
+import chibaCityExpenseEvidence from "../../../data/reviewed/chiba-city/assembly/expense_evidence_packets.json";
+import chibaCityTripEvidence from "../../../data/reviewed/chiba-city/assembly/inspection_evidence_packets.json";
+import chibaCitySources from "../../../data/catalog/chiba_city_assembly_sources.json";
+
+export type AssemblySlug = "osaka-prefecture" | "osaka-city" | "sakai-city" | "hokkaido-prefecture" | "sapporo-city" | "asahikawa-city" | "fukuoka-prefecture" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city" | "kanagawa-prefecture" | "yokohama-city" | "kawasaki-city" | "saitama-prefecture" | "saitama-city" | "kawaguchi-city" | "chiba-prefecture" | "chiba-city";
 export type Assembly = {
   id: string; name: string; seat_count: number;
   term_start: string; term_end: string;
@@ -317,6 +344,19 @@ function registry(
   };
 }
 export const assemblies: Record<AssemblySlug, Registry> = {
+  "chiba-prefecture": registry(
+    chibaPrefAssembly, chibaPrefDisclosure, chibaPrefSessions,
+    chibaPrefProposals.map((proposal) => ({ related_fiscal_record_ids: [], ...proposal })),
+    chibaPrefVotes, chibaPrefFactionVotes, chibaPrefExpenses, chibaPrefTrips,
+    [...chibaPrefAssemblyEvidence, ...chibaPrefVoteEvidence, ...chibaPrefExpenseEvidence, ...chibaPrefTripEvidence],
+    chibaPrefSources.records,
+  ),
+  "chiba-city": registry(
+    chibaCityAssembly, chibaCityDisclosure, chibaCitySessions,
+    chibaCityProposals, chibaCityVotes, chibaCityFactionVotes, chibaCityExpenses, chibaCityTrips,
+    [...chibaCityAssemblyEvidence, ...chibaCityVoteEvidence, ...chibaCityExpenseEvidence, ...chibaCityTripEvidence],
+    chibaCitySources.records,
+  ),
   "saitama-prefecture": registry(
     saitamaPrefAssembly, saitamaPrefDisclosure, saitamaPrefSessions, saitamaPrefProposals.map(proposal => ({ related_fiscal_record_ids: [], ...proposal })), saitamaPrefVotes,
     saitamaPrefFactionVotes, saitamaPrefExpenses, saitamaPrefTrips,
@@ -434,6 +474,7 @@ export const assemblySlugs: AssemblySlug[] = [
   "aichi-prefecture", "nagoya-city", "toyota-city",
   "kanagawa-prefecture", "yokohama-city", "kawasaki-city",
   "saitama-prefecture", "saitama-city", "kawaguchi-city",
+  "chiba-prefecture", "chiba-city",
 ];
 export function isAssemblySlug(slug: string): slug is AssemblySlug {
   return Object.prototype.hasOwnProperty.call(assemblies, slug);

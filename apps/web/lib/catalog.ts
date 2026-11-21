@@ -88,8 +88,8 @@ export const municipalityMeta: Record<
   },
   "chiba-prefecture": {
     name: "千葉県", type: "都道府県",
-    summary: "千葉県総合計画 ～千葉の未来をともに創る～、2026年度成立後当初予算、2022〜2024年度の普通会計決算と熊谷俊人知事の現任期を確認します。自治体別ページは準備中です。",
-    status: "財政データ公開", href: null,
+    summary: "千葉県総合計画 ～千葉の未来をともに創る～、2026年度成立後当初予算、2022〜2024年度の普通会計決算、熊谷俊人知事の公約25件、重点事業10系列と県議会の公開範囲を確認します。",
+    status: "財政データ公開", href: "/municipalities/chiba-prefecture",
     fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
   },
   "chiba-city": {
