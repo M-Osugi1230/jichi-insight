@@ -69,7 +69,7 @@ def test_discovery_gates_and_disclosure_copy_are_municipality_specific():
     assert "主な議案" in DETAIL and "陳情回答綴" in DETAIL
     assert "第1〜4項" in DETAIL and "第5項" in DETAIL
     assert "18件" in DETAIL and "継続審査中" in DETAIL
-    assert "20議会" in INDEX
+    assert "22議会" in INDEX
     registry = (WEB / "lib/assemblyRegistry.ts").read_text(encoding="utf-8")
     assert "osaka-prefecture" in registry and "osaka-city" in registry
     assert "sakai-city" in registry
