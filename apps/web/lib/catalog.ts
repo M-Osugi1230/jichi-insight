@@ -122,7 +122,7 @@ export const municipalityMeta: Record<
   },
   "shizuoka-prefecture": {
     name: "静岡県", type: "都道府県",
-    summary: "静岡県総合計画～しずおか ウェルビーイングプラン～、2026年度成立後当初予算、2022〜2024年度の普通会計決算と鈴木康友知事の現任期を確認します。",
+    summary: "静岡県総合計画～しずおか ウェルビーイングプラン～、FY2026一般会計当初予算、普通会計決算51件、政策の柱10系列（KPI46件）、鈴木康友知事の公約9件、静岡県議会の登録議案43件を確認します。",
     status: "財政データ公開", href: "/municipalities/shizuoka-prefecture",
     fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
   },
@@ -236,13 +236,13 @@ export const municipalityMeta: Record<
   },
   "shizuoka-city": {
     name: "静岡市", type: "政令指定都市",
-    summary: "第5次静岡市総合計画（2026〜2035年度）と実施計画、2026年度当初予算、2022〜2024年度の普通会計決算に加え、難波 喬司市長の現任期を公式出典で確認します。公約原文は未登録です。自治体別ページは準備中です。",
-    status: "財政データ公開", href: null,
+    summary: "第5次静岡市総合計画の施策10系列（KPI23件）、普通会計決算51件、難波喬司市長の公約3件と静岡市議会の会派別賛否495件を確認します。",
+    status: "財政データ公開", href: "/municipalities/shizuoka-city",
     fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
   },
   "hamamatsu-city": {
     name: "浜松市", type: "政令指定都市",
-    summary: "第2期浜松市基本計画（2025〜2034年度）、FY2026成立後一般会計当初予算、FY2022〜2024普通会計決算と中野祐介市長の現任期を公式出典で確認します。",
+    summary: "浜松市総合計画第2期基本計画の基本政策10系列（KPI18件）、普通会計決算51件、中野祐介市長の公約10件と浜松市議会の議員別賛否を確認します。",
     status: "財政データ公開", href: "/municipalities/hamamatsu-city",
     fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
   },

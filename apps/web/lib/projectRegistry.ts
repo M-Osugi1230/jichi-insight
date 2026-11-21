@@ -1,3 +1,18 @@
+import shizuokaPrefProjectSources from "../../../data/catalog/shizuoka_project_sources.json";
+import shizuokaPrefSelection from "../../../data/catalog/shizuoka_priority_project_selection.json";
+import shizuokaPrefProjects from "../../../data/reviewed/shizuoka-prefecture/projects.json";
+import shizuokaPrefKpis from "../../../data/reviewed/shizuoka-prefecture/project_kpis.json";
+import shizuokaPrefEvidence from "../../../data/reviewed/shizuoka-prefecture/project_evidence_packets.json";
+import shizuokaCityProjectSources from "../../../data/catalog/shizuoka_city_project_sources.json";
+import shizuokaCitySelection from "../../../data/catalog/shizuoka_city_priority_project_selection.json";
+import shizuokaCityProjects from "../../../data/reviewed/shizuoka-city/projects.json";
+import shizuokaCityKpis from "../../../data/reviewed/shizuoka-city/project_kpis.json";
+import shizuokaCityEvidence from "../../../data/reviewed/shizuoka-city/project_evidence_packets.json";
+import hamamatsuCityProjectSources from "../../../data/catalog/hamamatsu_city_project_sources.json";
+import hamamatsuCitySelection from "../../../data/catalog/hamamatsu_city_priority_project_selection.json";
+import hamamatsuCityProjects from "../../../data/reviewed/hamamatsu-city/projects.json";
+import hamamatsuCityKpis from "../../../data/reviewed/hamamatsu-city/project_kpis.json";
+import hamamatsuCityEvidence from "../../../data/reviewed/hamamatsu-city/project_evidence_packets.json";
 import miyagiProjectSources from "../../../data/catalog/miyagi_project_sources.json";
 import miyagiSelection from "../../../data/catalog/miyagi_priority_project_selection.json";
 import miyagiProjects from "../../../data/reviewed/miyagi-prefecture/projects.json";
@@ -112,10 +127,13 @@ import { fukuokaPrefectureProjectData } from "./fukuokaPrefectureProjects";
 import { kitakyushuProjectData, type ProjectRecord, type KpiRecord } from "./kitakyushuProjects";
 import type { EvidencePacket } from "./finance";
 
-export type ProjectArea = "fukuoka-prefecture" | "osaka-prefecture" | "osaka-city" | "sakai-city" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city" | "hokkaido-prefecture" | "sapporo-city" | "asahikawa-city" | "kanagawa-prefecture" | "yokohama-city" | "kawasaki-city" | "saitama-prefecture" | "saitama-city" | "kawaguchi-city" | "chiba-prefecture" | "chiba-city" | "hyogo-prefecture" | "kobe-city" | "miyagi-prefecture" | "sendai-city";
+export type ProjectArea = "fukuoka-prefecture" | "osaka-prefecture" | "osaka-city" | "sakai-city" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city" | "hokkaido-prefecture" | "sapporo-city" | "asahikawa-city" | "kanagawa-prefecture" | "yokohama-city" | "kawasaki-city" | "saitama-prefecture" | "saitama-city" | "kawaguchi-city" | "chiba-prefecture" | "chiba-city" | "hyogo-prefecture" | "kobe-city" | "miyagi-prefecture" | "sendai-city" | "shizuoka-prefecture" | "shizuoka-city" | "hamamatsu-city";
 type Selection = { updated_at?: string; population?: { description?: string; label?: string }; selection_rule?: { description?: string } | string; rule?: { description?: string } | string; };
 type SetOfProjects = { name: string; projects: ProjectRecord[]; kpis: KpiRecord[]; evidencePackets: EvidencePacket[]; selection: Selection };
 export const projectRegistry: Record<ProjectArea, SetOfProjects> = {
+  "shizuoka-prefecture": { name: "静岡県", projects: shizuokaPrefProjects as ProjectRecord[], kpis: shizuokaPrefKpis as KpiRecord[], evidencePackets: shizuokaPrefEvidence as EvidencePacket[], selection: shizuokaPrefSelection },
+  "shizuoka-city": { name: "静岡市", projects: shizuokaCityProjects as ProjectRecord[], kpis: shizuokaCityKpis as KpiRecord[], evidencePackets: shizuokaCityEvidence as EvidencePacket[], selection: shizuokaCitySelection },
+  "hamamatsu-city": { name: "浜松市", projects: hamamatsuCityProjects as ProjectRecord[], kpis: hamamatsuCityKpis as KpiRecord[], evidencePackets: hamamatsuCityEvidence as EvidencePacket[], selection: hamamatsuCitySelection },
   "miyagi-prefecture": { name: "宮城県", projects: miyagiProjects as ProjectRecord[], kpis: miyagiKpis as KpiRecord[], evidencePackets: miyagiEvidence as EvidencePacket[], selection: miyagiSelection },
   "sendai-city": { name: "仙台市", projects: sendaiProjects as ProjectRecord[], kpis: sendaiKpis as KpiRecord[], evidencePackets: sendaiEvidence as EvidencePacket[], selection: sendaiSelection },
   "hyogo-prefecture": { name: "兵庫県", projects: hyogoProjects as ProjectRecord[], kpis: hyogoKpis as KpiRecord[], evidencePackets: hyogoEvidence as EvidencePacket[], selection: hyogoSelection },
@@ -166,4 +184,7 @@ export const projectSourceCatalog: SourceRecord[] = [...sourceCatalog,
   ...(hyogoProjectSources.records as SourceRecord[]),
   ...(kobeProjectSources.records as SourceRecord[]),
   ...(miyagiProjectSources.records as SourceRecord[]),
-  ...(sendaiProjectSources.records as SourceRecord[])];
+  ...(sendaiProjectSources.records as SourceRecord[]),
+  ...(shizuokaPrefProjectSources.records as SourceRecord[]),
+  ...(shizuokaCityProjectSources.records as SourceRecord[]),
+  ...(hamamatsuCityProjectSources.records as SourceRecord[])];
