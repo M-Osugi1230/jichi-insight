@@ -835,5 +835,50 @@
       "政策パンフレット等、選挙公報より詳細な候補者資料の安定した所在が特定できるか。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-chiba-city-2025",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-chiba-city-2025",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "投開票結果ページ、開票結果PDF、今後の選挙日程、県の市町村長一覧を確認し、2025年3月16日執行・候補者3人・神谷しゅんいちの当選（245,748票）と、現任期の就任年月日（2025年3月21日）・任期満了年月日（2029年3月20日）を確認した。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-results-page",
+          "chiba-city-mayor-election-2025-results",
+          "chiba-city-election-schedule-page",
+          "chiba-pref-mayors-term-list-2025"
+        ],
+        "location_note": "市の投開票結果ページと開票結果PDF、市選管の今後の選挙日程、県の市町村長一覧（令和7年12月31日現在）。",
+        "decision": "accepted",
+        "review_note": "選挙の基本事実と任期の一次資料として採用。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "選挙公報が市の投開票結果ページから単独PDFで現在も到達できることを確認した（神谷しゅんいち候補欄は公報（1）ページ下段）。ファイル名に知事選を示唆する文字列が含まれるが、実物は市長選公報であることを描画画像で確認した。候補者欄は画像形式でテキスト層がないため、描画画像を複数解像度で照合して転記した。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin",
+          "chiba-city-mayor-election-2025-results-page"
+        ],
+        "location_note": "選挙公報PDF（全2ページ）の（1）ページ下段。",
+        "decision": "accepted",
+        "review_note": "公報そのものを出典優先順位の最上位として登録した。"
+      },
+      {
+        "field": "result_status",
+        "statement": "選挙公報を登録し、分割レビューを経て公約レコード25件を作成したため、result_status を source_registered とした。公報より詳細な候補者資料は未特定のままである。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "分割レビュー manifesto-review-jp-local-121002-2025 に基づく。",
+        "decision": "accepted",
+        "review_note": "詳細資料が存在しないという主張はしない。"
+      }
+    ],
+    "open_questions": [
+      "政策パンフレット等、選挙公報より詳細な候補者資料の安定した所在が特定できるか。"
+    ],
+    "review_status": "reviewed"
   }
 ]

@@ -28,7 +28,8 @@ export type MunicipalityKey =
   | "saitama-prefecture"
   | "saitama-city"
   | "kawaguchi-city"
-  | "chiba-prefecture";
+  | "chiba-prefecture"
+  | "chiba-city";
 export type SourceRecord = {
   id: string;
   municipality_key: MunicipalityKey;
@@ -90,6 +91,12 @@ export const municipalityMeta: Record<
     summary: "千葉県総合計画 ～千葉の未来をともに創る～、2026年度成立後当初予算、2022〜2024年度の普通会計決算と熊谷俊人知事の現任期を確認します。自治体別ページは準備中です。",
     status: "財政データ公開", href: null,
     fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
+  },
+  "chiba-city": {
+    name: "千葉市", type: "政令指定都市",
+    summary: "計画・財政・重点事業に加え、神谷俊一市長の任期と Reviewed 公約25件を公式出典で確認します。自治体別ページは準備中です。",
+    status: "財政データ公開", href: null,
+    fiscalSummary: "Reviewed 54項目（財政レコード3件・決算51件）",
   },
   "saitama-city": {
     name: "さいたま市", type: "政令指定都市",

@@ -9115,5 +9115,981 @@
       "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-chiba-city-2025-promise-001",
+    "subject_type": "promise",
+    "subject_id": "jp-local-121002-executive-2025-03-21-promise-001",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の神谷しゅんいち候補欄から、資料上の項目の境界（VISIONの見出しと○印・●印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報（1）ページ下段・神谷しゅんいち候補欄「10の未来ビジョン 15の約束」VISION 01の見出し。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（200dpi・300dpi・450dpi）で照合し、漢字・送り仮名・括弧の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は千葉市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市の投開票結果ページから市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・300dpi・450dpi）で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "公報の表頭（千葉市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、市の投開票結果ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "段階2の千葉市重点事業10系列への接続は行わなかった。見出し（目標表明）であり、個別の項目ごとに接続の有無を判断したため、見出し自体は接続しなかった。公式な対応付けが公表されれば見直す。",
+      "見出しを独立した directional_commitment として登録した境界判断は、見直しの余地があるものとして残す（「15の約束」の○項目のみを公約とする整理もありうる）。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-chiba-city-2025-promise-002",
+    "subject_type": "promise",
+    "subject_id": "jp-local-121002-executive-2025-03-21-promise-002",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の神谷しゅんいち候補欄から、資料上の項目の境界（VISIONの見出しと○印・●印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報（1）ページ下段・神谷しゅんいち候補欄「10の未来ビジョン 15の約束」VISION 01の項目1。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（200dpi・300dpi・450dpi）で照合し、漢字・送り仮名・括弧の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は千葉市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市の投開票結果ページから市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・300dpi・450dpi）で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "公報の表頭（千葉市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、市の投開票結果ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した千葉市の重点事業（政策単位）のうち第2次実施計画の政策「子どもを産み・育てやすい環境を創る」（分野4 子ども・教育の政策1）と、公約の文言・内容が対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "千葉市基本計画・第2次実施計画の政策（段階2で登録済みの事業レコード）。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "接続は推定であり、公式な対応付けが公表されれば見直す。進捗判定は未実施である。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-chiba-city-2025-promise-003",
+    "subject_type": "promise",
+    "subject_id": "jp-local-121002-executive-2025-03-21-promise-003",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の神谷しゅんいち候補欄から、資料上の項目の境界（VISIONの見出しと○印・●印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報（1）ページ下段・神谷しゅんいち候補欄「10の未来ビジョン 15の約束」VISION 01の項目2。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（200dpi・300dpi・450dpi）で照合し、漢字・送り仮名・括弧の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は千葉市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市の投開票結果ページから市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・300dpi・450dpi）で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "公報の表頭（千葉市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、市の投開票結果ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した千葉市の重点事業（政策単位）のうち第2次実施計画の政策「子どもを産み・育てやすい環境を創る」（分野4 子ども・教育の政策1）と、公約の文言・内容が対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "千葉市基本計画・第2次実施計画の政策（段階2で登録済みの事業レコード）。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "接続は推定であり、公式な対応付けが公表されれば見直す。進捗判定は未実施である。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-chiba-city-2025-promise-004",
+    "subject_type": "promise",
+    "subject_id": "jp-local-121002-executive-2025-03-21-promise-004",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の神谷しゅんいち候補欄から、資料上の項目の境界（VISIONの見出しと○印・●印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報（1）ページ下段・神谷しゅんいち候補欄「10の未来ビジョン 15の約束」VISION 01の項目3。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（200dpi・300dpi・450dpi）で照合し、漢字・送り仮名・括弧の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は千葉市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市の投開票結果ページから市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・300dpi・450dpi）で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "公報の表頭（千葉市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、市の投開票結果ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した千葉市の重点事業（政策単位）のうち第2次実施計画の政策「地域の産業を支え・育てる」（分野8 地域経済）と、公約の文言・内容が対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "千葉市基本計画・第2次実施計画の政策（段階2で登録済みの事業レコード）。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "接続は推定であり、公式な対応付けが公表されれば見直す。進捗判定は未実施である。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-chiba-city-2025-promise-005",
+    "subject_type": "promise",
+    "subject_id": "jp-local-121002-executive-2025-03-21-promise-005",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の神谷しゅんいち候補欄から、資料上の項目の境界（VISIONの見出しと○印・●印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報（1）ページ下段・神谷しゅんいち候補欄「10の未来ビジョン 15の約束」VISION 02の見出し。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（200dpi・300dpi・450dpi）で照合し、漢字・送り仮名・括弧の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は千葉市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市の投開票結果ページから市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・300dpi・450dpi）で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "公報の表頭（千葉市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、市の投開票結果ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "段階2の千葉市重点事業10系列への接続は行わなかった。見出し（目標表明）であり、個別の項目ごとに接続の有無を判断したため、見出し自体は接続しなかった。公式な対応付けが公表されれば見直す。",
+      "見出しを独立した directional_commitment として登録した境界判断は、見直しの余地があるものとして残す（「15の約束」の○項目のみを公約とする整理もありうる）。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-chiba-city-2025-promise-006",
+    "subject_type": "promise",
+    "subject_id": "jp-local-121002-executive-2025-03-21-promise-006",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の神谷しゅんいち候補欄から、資料上の項目の境界（VISIONの見出しと○印・●印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報（1）ページ下段・神谷しゅんいち候補欄「10の未来ビジョン 15の約束」VISION 02の項目1。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（200dpi・300dpi・450dpi）で照合し、漢字・送り仮名・括弧の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は千葉市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市の投開票結果ページから市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・300dpi・450dpi）で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "公報の表頭（千葉市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、市の投開票結果ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "段階2の千葉市重点事業10系列への接続は行わなかった。登録済みの10系列は第2次実施計画の政策単位であり、学校教育を主題とする政策は選定10系列に含まれていないため接続しなかった。公式な対応付けが公表されれば見直す。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-chiba-city-2025-promise-007",
+    "subject_type": "promise",
+    "subject_id": "jp-local-121002-executive-2025-03-21-promise-007",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の神谷しゅんいち候補欄から、資料上の項目の境界（VISIONの見出しと○印・●印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報（1）ページ下段・神谷しゅんいち候補欄「10の未来ビジョン 15の約束」VISION 02の項目2。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（200dpi・300dpi・450dpi）で照合し、漢字・送り仮名・括弧の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は千葉市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市の投開票結果ページから市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・300dpi・450dpi）で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "公報の表頭（千葉市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、市の投開票結果ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "段階2の千葉市重点事業10系列への接続は行わなかった。登録済みの10系列は第2次実施計画の政策単位であり、学校教育を主題とする政策は選定10系列に含まれていないため接続しなかった。公式な対応付けが公表されれば見直す。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-chiba-city-2025-promise-008",
+    "subject_type": "promise",
+    "subject_id": "jp-local-121002-executive-2025-03-21-promise-008",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の神谷しゅんいち候補欄から、資料上の項目の境界（VISIONの見出しと○印・●印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報（1）ページ下段・神谷しゅんいち候補欄「10の未来ビジョン 15の約束」VISION 02の項目3。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（200dpi・300dpi・450dpi）で照合し、漢字・送り仮名・括弧の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は千葉市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市の投開票結果ページから市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・300dpi・450dpi）で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "公報の表頭（千葉市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、市の投開票結果ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した千葉市の重点事業（政策単位）のうち第2次実施計画の政策「子どもを産み・育てやすい環境を創る」（分野4 子ども・教育の政策1）と、公約の文言・内容が対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "千葉市基本計画・第2次実施計画の政策（段階2で登録済みの事業レコード）。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "接続は推定であり、公式な対応付けが公表されれば見直す。進捗判定は未実施である。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-chiba-city-2025-promise-009",
+    "subject_type": "promise",
+    "subject_id": "jp-local-121002-executive-2025-03-21-promise-009",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の神谷しゅんいち候補欄から、資料上の項目の境界（VISIONの見出しと○印・●印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報（1）ページ下段・神谷しゅんいち候補欄「10の未来ビジョン 15の約束」VISION 03の見出し。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（200dpi・300dpi・450dpi）で照合し、漢字・送り仮名・括弧の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は千葉市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市の投開票結果ページから市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・300dpi・450dpi）で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "公報の表頭（千葉市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、市の投開票結果ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "段階2の千葉市重点事業10系列への接続は行わなかった。見出し（目標表明）であり、個別の項目ごとに接続の有無を判断したため、見出し自体は接続しなかった。公式な対応付けが公表されれば見直す。",
+      "見出しを独立した directional_commitment として登録した境界判断は、見直しの余地があるものとして残す（「15の約束」の○項目のみを公約とする整理もありうる）。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-chiba-city-2025-promise-010",
+    "subject_type": "promise",
+    "subject_id": "jp-local-121002-executive-2025-03-21-promise-010",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の神谷しゅんいち候補欄から、資料上の項目の境界（VISIONの見出しと○印・●印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報（1）ページ下段・神谷しゅんいち候補欄「10の未来ビジョン 15の約束」VISION 03の項目1。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（200dpi・300dpi・450dpi）で照合し、漢字・送り仮名・括弧の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は千葉市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市の投開票結果ページから市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・300dpi・450dpi）で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "公報の表頭（千葉市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、市の投開票結果ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した千葉市の重点事業（政策単位）のうち第2次実施計画の政策「緑と水辺を身近に感じ、愛着の持てる環境を創る」（分野1 環境・自然）と、公約の文言・内容が対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "千葉市基本計画・第2次実施計画の政策（段階2で登録済みの事業レコード）。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "接続は推定であり、公式な対応付けが公表されれば見直す。進捗判定は未実施である。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-chiba-city-2025-promise-011",
+    "subject_type": "promise",
+    "subject_id": "jp-local-121002-executive-2025-03-21-promise-011",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の神谷しゅんいち候補欄から、資料上の項目の境界（VISIONの見出しと○印・●印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報（1）ページ下段・神谷しゅんいち候補欄「10の未来ビジョン 15の約束」VISION 03の項目2。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（200dpi・300dpi・450dpi）で照合し、漢字・送り仮名・括弧の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は千葉市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市の投開票結果ページから市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・300dpi・450dpi）で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "公報の表頭（千葉市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、市の投開票結果ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した千葉市の重点事業（政策単位）のうち第2次実施計画の政策「持続可能で魅力あるまちづくりを進める」（分野7 都市・交通）と、公約の文言・内容が対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "千葉市基本計画・第2次実施計画の政策（段階2で登録済みの事業レコード）。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "接続は推定であり、公式な対応付けが公表されれば見直す。進捗判定は未実施である。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-chiba-city-2025-promise-012",
+    "subject_type": "promise",
+    "subject_id": "jp-local-121002-executive-2025-03-21-promise-012",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の神谷しゅんいち候補欄から、資料上の項目の境界（VISIONの見出しと○印・●印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報（1）ページ下段・神谷しゅんいち候補欄「10の未来ビジョン 15の約束」VISION 03の項目3。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（200dpi・300dpi・450dpi）で照合し、漢字・送り仮名・括弧の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は千葉市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市の投開票結果ページから市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・300dpi・450dpi）で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "公報の表頭（千葉市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、市の投開票結果ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した千葉市の重点事業（政策単位）のうち第2次実施計画の政策「持続可能で魅力あるまちづくりを進める」（分野7 都市・交通）と、公約の文言・内容が対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "千葉市基本計画・第2次実施計画の政策（段階2で登録済みの事業レコード）。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "接続は推定であり、公式な対応付けが公表されれば見直す。進捗判定は未実施である。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-chiba-city-2025-promise-013",
+    "subject_type": "promise",
+    "subject_id": "jp-local-121002-executive-2025-03-21-promise-013",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の神谷しゅんいち候補欄から、資料上の項目の境界（VISIONの見出しと○印・●印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報（1）ページ下段・神谷しゅんいち候補欄「10の未来ビジョン 15の約束」VISION 04の見出し。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（200dpi・300dpi・450dpi）で照合し、漢字・送り仮名・括弧の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は千葉市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市の投開票結果ページから市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・300dpi・450dpi）で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "公報の表頭（千葉市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、市の投開票結果ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "段階2の千葉市重点事業10系列への接続は行わなかった。見出し（目標表明）であり、個別の項目ごとに接続の有無を判断したため、見出し自体は接続しなかった。公式な対応付けが公表されれば見直す。",
+      "見出しを独立した directional_commitment として登録した境界判断は、見直しの余地があるものとして残す（「15の約束」の○項目のみを公約とする整理もありうる）。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-chiba-city-2025-promise-014",
+    "subject_type": "promise",
+    "subject_id": "jp-local-121002-executive-2025-03-21-promise-014",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の神谷しゅんいち候補欄から、資料上の項目の境界（VISIONの見出しと○印・●印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報（1）ページ下段・神谷しゅんいち候補欄「10の未来ビジョン 15の約束」VISION 04の項目1。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（200dpi・300dpi・450dpi）で照合し、漢字・送り仮名・括弧の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は千葉市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市の投開票結果ページから市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・300dpi・450dpi）で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "公報の表頭（千葉市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、市の投開票結果ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した千葉市の重点事業（政策単位）のうち第2次実施計画の政策「健やかに暮らせる社会を創る」（分野3 健康・福祉）と、公約の文言・内容が対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "千葉市基本計画・第2次実施計画の政策（段階2で登録済みの事業レコード）。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "接続は推定であり、公式な対応付けが公表されれば見直す。進捗判定は未実施である。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-chiba-city-2025-promise-015",
+    "subject_type": "promise",
+    "subject_id": "jp-local-121002-executive-2025-03-21-promise-015",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の神谷しゅんいち候補欄から、資料上の項目の境界（VISIONの見出しと○印・●印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報（1）ページ下段・神谷しゅんいち候補欄「10の未来ビジョン 15の約束」VISION 04の項目2。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（200dpi・300dpi・450dpi）で照合し、漢字・送り仮名・括弧の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は千葉市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市の投開票結果ページから市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・300dpi・450dpi）で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "公報の表頭（千葉市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、市の投開票結果ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した千葉市の重点事業（政策単位）のうち第2次実施計画の政策「健やかに暮らせる社会を創る」（分野3 健康・福祉）と、公約の文言・内容が対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "千葉市基本計画・第2次実施計画の政策（段階2で登録済みの事業レコード）。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "接続は推定であり、公式な対応付けが公表されれば見直す。進捗判定は未実施である。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-chiba-city-2025-promise-016",
+    "subject_type": "promise",
+    "subject_id": "jp-local-121002-executive-2025-03-21-promise-016",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の神谷しゅんいち候補欄から、資料上の項目の境界（VISIONの見出しと○印・●印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報（1）ページ下段・神谷しゅんいち候補欄「10の未来ビジョン 15の約束」VISION 04の項目3。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（200dpi・300dpi・450dpi）で照合し、漢字・送り仮名・括弧の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は千葉市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市の投開票結果ページから市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・300dpi・450dpi）で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "公報の表頭（千葉市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、市の投開票結果ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した千葉市の重点事業（政策単位）のうち第2次実施計画の政策「誰もが個性を活かし活躍できる環境を創る」（分野5 地域社会）と、公約の文言・内容が対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "千葉市基本計画・第2次実施計画の政策（段階2で登録済みの事業レコード）。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "接続は推定であり、公式な対応付けが公表されれば見直す。進捗判定は未実施である。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-chiba-city-2025-promise-017",
+    "subject_type": "promise",
+    "subject_id": "jp-local-121002-executive-2025-03-21-promise-017",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の神谷しゅんいち候補欄から、資料上の項目の境界（VISIONの見出しと○印・●印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報（1）ページ下段・神谷しゅんいち候補欄「10の未来ビジョン 15の約束」VISION 05の見出し。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（200dpi・300dpi・450dpi）で照合し、漢字・送り仮名・括弧の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は千葉市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市の投開票結果ページから市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・300dpi・450dpi）で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "公報の表頭（千葉市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、市の投開票結果ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "段階2の千葉市重点事業10系列への接続は行わなかった。見出し（目標表明）であり、個別の項目ごとに接続の有無を判断したため、見出し自体は接続しなかった。公式な対応付けが公表されれば見直す。",
+      "見出しを独立した directional_commitment として登録した境界判断は、見直しの余地があるものとして残す（「15の約束」の○項目のみを公約とする整理もありうる）。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-chiba-city-2025-promise-018",
+    "subject_type": "promise",
+    "subject_id": "jp-local-121002-executive-2025-03-21-promise-018",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の神谷しゅんいち候補欄から、資料上の項目の境界（VISIONの見出しと○印・●印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報（1）ページ下段・神谷しゅんいち候補欄「10の未来ビジョン 15の約束」VISION 05の項目1。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（200dpi・300dpi・450dpi）で照合し、漢字・送り仮名・括弧の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は千葉市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市の投開票結果ページから市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・300dpi・450dpi）で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "公報の表頭（千葉市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、市の投開票結果ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した千葉市の重点事業（政策単位）のうち第2次実施計画の政策「災害に強いまちの基盤を整備する」（分野2 安全・安心）と、公約の文言・内容が対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "千葉市基本計画・第2次実施計画の政策（段階2で登録済みの事業レコード）。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "接続は推定であり、公式な対応付けが公表されれば見直す。進捗判定は未実施である。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-chiba-city-2025-promise-019",
+    "subject_type": "promise",
+    "subject_id": "jp-local-121002-executive-2025-03-21-promise-019",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の神谷しゅんいち候補欄から、資料上の項目の境界（VISIONの見出しと○印・●印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報（1）ページ下段・神谷しゅんいち候補欄「10の未来ビジョン 15の約束」VISION 05の項目2。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（200dpi・300dpi・450dpi）で照合し、漢字・送り仮名・括弧の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は千葉市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市の投開票結果ページから市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・300dpi・450dpi）で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "公報の表頭（千葉市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、市の投開票結果ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した千葉市の重点事業（政策単位）のうち第2次実施計画の政策「多様な主体の連携による防災力を高める」（分野2 安全・安心）と、公約の文言・内容が対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "千葉市基本計画・第2次実施計画の政策（段階2で登録済みの事業レコード）。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "接続は推定であり、公式な対応付けが公表されれば見直す。進捗判定は未実施である。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-chiba-city-2025-promise-020",
+    "subject_type": "promise",
+    "subject_id": "jp-local-121002-executive-2025-03-21-promise-020",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の神谷しゅんいち候補欄から、資料上の項目の境界（VISIONの見出しと○印・●印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報（1）ページ下段・神谷しゅんいち候補欄「10の未来ビジョン 15の約束」VISION 05の項目3。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（200dpi・300dpi・450dpi）で照合し、漢字・送り仮名・括弧の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は千葉市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市の投開票結果ページから市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・300dpi・450dpi）で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "公報の表頭（千葉市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、市の投開票結果ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した千葉市の重点事業（政策単位）のうち第2次実施計画の政策「多様な主体の連携による防災力を高める」（分野2 安全・安心）と、公約の文言・内容が対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "千葉市基本計画・第2次実施計画の政策（段階2で登録済みの事業レコード）。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "接続は推定であり、公式な対応付けが公表されれば見直す。進捗判定は未実施である。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-chiba-city-2025-promise-021",
+    "subject_type": "promise",
+    "subject_id": "jp-local-121002-executive-2025-03-21-promise-021",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の神谷しゅんいち候補欄から、資料上の項目の境界（VISIONの見出しと○印・●印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報（1）ページ下段・神谷しゅんいち候補欄「千葉開府900年の節目」欄の導入文。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（200dpi・300dpi・450dpi）で照合し、漢字・送り仮名・括弧の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は千葉市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市の投開票結果ページから市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・300dpi・450dpi）で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "公報の表頭（千葉市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、市の投開票結果ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "開府900年欄の導入文を独立した directional_commitment として登録した境界判断は、見直しの余地があるものとして残す。",
+      "段階2の千葉市重点事業10系列への接続は行わなかった。導入文（目標表明）であり、個別の項目ごとに接続の有無を判断したため接続しなかった。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-chiba-city-2025-promise-022",
+    "subject_type": "promise",
+    "subject_id": "jp-local-121002-executive-2025-03-21-promise-022",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の神谷しゅんいち候補欄から、資料上の項目の境界（VISIONの見出しと○印・●印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報（1）ページ下段・神谷しゅんいち候補欄「千葉開府900年の節目」欄の項目1。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（200dpi・300dpi・450dpi）で照合し、漢字・送り仮名・括弧の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は千葉市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市の投開票結果ページから市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・300dpi・450dpi）で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "公報の表頭（千葉市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、市の投開票結果ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した千葉市の重点事業（政策単位）のうち第2次実施計画の政策「文化芸術が生まれ、広がる環境を創る」（分野6 文化芸術・スポーツ）と、公約の文言・内容が対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "千葉市基本計画・第2次実施計画の政策（段階2で登録済みの事業レコード）。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "接続は推定であり、公式な対応付けが公表されれば見直す。進捗判定は未実施である。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-chiba-city-2025-promise-023",
+    "subject_type": "promise",
+    "subject_id": "jp-local-121002-executive-2025-03-21-promise-023",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の神谷しゅんいち候補欄から、資料上の項目の境界（VISIONの見出しと○印・●印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報（1）ページ下段・神谷しゅんいち候補欄「千葉開府900年の節目」欄の項目2。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（200dpi・300dpi・450dpi）で照合し、漢字・送り仮名・括弧の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は千葉市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市の投開票結果ページから市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・300dpi・450dpi）で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "公報の表頭（千葉市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、市の投開票結果ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した千葉市の重点事業（政策単位）のうち第2次実施計画の政策「文化芸術が生まれ、広がる環境を創る」（分野6 文化芸術・スポーツ）と、公約の文言・内容が対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "千葉市基本計画・第2次実施計画の政策（段階2で登録済みの事業レコード）。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "接続は推定であり、公式な対応付けが公表されれば見直す。進捗判定は未実施である。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-chiba-city-2025-promise-024",
+    "subject_type": "promise",
+    "subject_id": "jp-local-121002-executive-2025-03-21-promise-024",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の神谷しゅんいち候補欄から、資料上の項目の境界（VISIONの見出しと○印・●印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報（1）ページ下段・神谷しゅんいち候補欄「千葉開府900年の節目」欄の項目3。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（200dpi・300dpi・450dpi）で照合し、漢字・送り仮名・括弧の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は千葉市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市の投開票結果ページから市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・300dpi・450dpi）で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "公報の表頭（千葉市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、市の投開票結果ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した千葉市の重点事業（政策単位）のうち第2次実施計画の政策「文化芸術が生まれ、広がる環境を創る」（分野6 文化芸術・スポーツ）と、公約の文言・内容が対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "千葉市基本計画・第2次実施計画の政策（段階2で登録済みの事業レコード）。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "接続は推定であり、公式な対応付けが公表されれば見直す。進捗判定は未実施である。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-chiba-city-2025-promise-025",
+    "subject_type": "promise",
+    "subject_id": "jp-local-121002-executive-2025-03-21-promise-025",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の神谷しゅんいち候補欄から、資料上の項目の境界（VISIONの見出しと○印・●印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報（1）ページ下段・神谷しゅんいち候補欄「千葉開府900年の節目」欄の項目4。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（200dpi・300dpi・450dpi）で照合し、漢字・送り仮名・括弧の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は千葉市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市の投開票結果ページから市公式サイト上で直接取得した（第三者が公開するコピーではない）。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・300dpi・450dpi）で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "公報の表頭（千葉市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま印刷した旨の注記）と、市の投開票結果ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した千葉市の重点事業（政策単位）のうち第2次実施計画の政策「誰もが個性を活かし活躍できる環境を創る」（分野5 地域社会）と、公約の文言・内容が対応するため接続した。自治体が公表した公約と事業の公式な対応表に基づく接続ではない。",
+        "source_ids": [
+          "chiba-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "千葉市基本計画・第2次実施計画の政策（段階2で登録済みの事業レコード）。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "接続は推定であり、公式な対応付けが公表されれば見直す。進捗判定は未実施である。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
   }
 ]
