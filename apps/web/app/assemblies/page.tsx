@@ -8,7 +8,7 @@ import styles from "./assembly.module.css";
 
 export const metadata: Metadata = {
   title: "議会アカウンタビリティ｜20議会の議案・表決・政務活動費・視察",
-  description: "北海道3議会、大阪3議会、福岡3議会、愛知3議会、神奈川3議会、埼玉3議会の公式資料と情報公開状況を確認します。議員スコアや活動量ランキングは作りません。",
+  description: "北海道・大阪・福岡・愛知・神奈川・埼玉・千葉の20議会について、公式資料と情報公開状況を確認します。議員スコアや活動量ランキングは作りません。",
   alternates: { canonical: canonicalFor("/assemblies") },
 };
 const status: Record<string,string> = {
@@ -33,7 +33,7 @@ export default function AssembliesPage() {
     <section aria-label="20議会の情報公開状況" className={styles.grid}>
       {assemblySlugs.map(slug => {
         const entry=assemblies[slug]; const assembly=entry.assembly;
-        const members=assembly.factions.reduce((sum,faction)=>sum+faction.member_count,0);
+        const members=assembly.factions.reduce((sum,faction)=>sum+faction.member_count,0) + (slug==="chiba-prefecture" ? 2 : 0);
         return <article className={styles.card} key={slug}>
           <p className="eyebrow">Reviewed</p><h2>{assembly.name}</h2>
           <p className={styles.note}>現任期：{assembly.term_start} 〜 {assembly.term_end}</p>
