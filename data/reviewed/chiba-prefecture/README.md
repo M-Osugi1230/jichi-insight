@@ -58,6 +58,29 @@ governor's current term.
   prefectural election commission's official figure (Wikipedia's
   1,405,905 is a transcription variant and is not used).
 
+Stage 2 (Issue #839) registers 10 of the plan's 41 measures as
+reviewed projects for FY2025, the only fiscal year whose policy
+evaluation is published. Selection cycles through the six basic goals
+in official publication order and takes the measures in order within
+each goal; it is not by budget size (see
+`data/catalog/chiba_priority_project_selection.json`).
+
+- Each measure is the registration unit. The official policy-evaluation
+  form (様式2 施策評価シート) publishes a measure-level budget total (the
+  September-supplemented budget basis) and settlement total, and both
+  are recorded as `budget_records`. The totals include re-listed
+  projects owned by other measures; the plan cost list also publishes a
+  net total for the measure's own projects only.
+- The prefecture publishes no per-measure rating, so
+  `official_evaluation` is null for every project. The published
+  aggregate progress share of the measure's activity goals and
+  auxiliary indicators is recorded in the evidence packet instead.
+- KPIs are the measure's social goals (89 across the plan). Their
+  assessment maps the prefecture's published FY2025 progress rate
+  mechanically; indicators whose actual value is not yet published are
+  `not_assessable`, with the latest published value noted in the
+  definition.
+
 Not yet published for Chiba Prefecture:
 
 - Governor's promises (the 2025 election bulletin is officially
@@ -65,6 +88,5 @@ Not yet published for Chiba Prefecture:
   page, but its candidate columns are image-only, so the promise
   registration decision — by visual transcription — belongs to the
   cluster's promise stage)
-- The 41 measures of the implementation plan and their evaluations
 - Assembly records
 - FY2026 execution and settlement figures
