@@ -1,0 +1,103 @@
+[
+ {
+  "as_of": "2026-11-22",
+  "assembly_id": "jp-local-220001-assembly-2023",
+  "confidence": "high",
+  "id": "jp-local-220001-assembly-2023-disclosure-2026",
+  "items": [
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_roster",
+    "note": "選挙区・会派別議員一覧と委員会別議員一覧を県議会公式サイトで公開。令和8年7月14日更新の名簿では定数68名・現員67名（自民改革会議39名、ふじのくに県民クラブ17名、公明党静岡県議団5名、無所属6名）で、欠員1名（浜松市中央区）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_composition",
+    "note": "選挙区・会派別議員一覧で3会派と無所属6名の構成を公開。議決結果一覧表の列構成（自改・ふ県・公明と無所属の個人名列）とも一致する。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "committee_composition",
+    "note": "委員会別議員一覧で、常任委員会7、特別委員会2、議会運営委員会、決算特別委員会の委員名簿を公開（令和8年10月2日更新）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "proposals_and_results",
+    "note": "「議案・請願の内容及び審議結果」ページで、会期ごとに議案番号・件名・議決結果と議決結果一覧表（PDF）を公開。決算の認定は議案番号を付さず「決算」として別掲する形式（令和7年12月定例会の審議結果で確認）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_votes",
+    "note": "議決結果一覧表で、会派別（自民改革会議・ふじのくに県民クラブ・公明党静岡県議団）の賛否を公開。これは本会議の表決そのものの事後記録であり、採決前の態度表明の集約ではない（判定の根拠は証拠パケットに記録）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_votes",
+    "note": "無所属議員6名については、議決結果一覧表に議員個人名の列で賛否（○賛成・×反対・欠欠席）が公開される。会派所属議員の個人別の賛否は公表されず、会派単位の表示のみである。一覧表は本会議の表決そのものの事後記録であり、採決前の態度表明の集約ではない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "political_activity_expense_reports",
+    "note": "収支報告書を会派単位で県議会公式サイトに公開し、会派・経費別一覧で交付額・経費別支出額・返還額も公表する。令和7年度は8単位（3会派と、議員1名で構成する会派5）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "political_activity_expense_receipts",
+    "note": "会計帳簿・証拠書類等も各会派の収支報告書ページからインターネットで公開されている。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "inspection_trip_reports",
+    "note": "委員会視察記録を年度・委員会ごとに公開し、各委員会の視察記録（PDF）に期間・参加者・視察先・視察概要を掲載。費用の公表はない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "meeting_minutes",
+    "note": "本会議・委員会の会議録検索システムを県議会公式サイトで提供。令和8年9月定例会の本会議会議録は登録時点で未公表（最新は令和8年6月定例会）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "session_broadcast",
+    "note": "本会議のインターネット中継と録画映像（動画アーカイブ）を県議会公式サイトで提供。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "petition_results",
+    "note": "請願は議決結果一覧表に件名と結論を掲載し、本会議で採択・不採択の結論を出す。令和8年9月定例会の請願第1号は、議員定数条例の一部改正の可決に伴い不採択とみなされた（みなし不採択）ため採決は行われていない。陳情は委員会への送付のみで、本会議での結論はない。",
+    "source_url": null
+   }
+  ],
+  "review_status": "reviewed",
+  "sources": [
+   "shizuoka-pref-assembly-members-factions",
+   "shizuoka-pref-assembly-committees",
+   "shizuoka-pref-assembly-session-2026-sep",
+   "shizuoka-pref-assembly-seimu-index",
+   "shizuoka-pref-assembly-inspections-index",
+   "shizuoka-pref-assembly-minutes-search"
+  ]
+ }
+]
