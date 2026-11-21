@@ -1030,7 +1030,10 @@ def validate_chiba_data_facts() -> None:
         assert len({record["series_id"] for record in reviewed}) == 10, slug
         assert all(record["municipality_id"] == municipality_id for record in reviewed), slug
         assert len(selection["selections"]) == 10, (slug, len(selection["selections"]))
-        source_file = "chiba_project_sources.json" if slug == "chiba-prefecture" else "chiba_city_project_sources.json"
+        source_file = (
+            "chiba_project_sources.json" if slug == "chiba-prefecture"
+            else "chiba_city_project_sources.json"
+        )
         source_catalog = load_json(ROOT / "data" / "catalog" / source_file)
         source_ids = {source["id"] for source in source_catalog["records"]}
         assert all(set(record["sources"]).issubset(source_ids) for record in reviewed), slug
@@ -1054,7 +1057,9 @@ def validate_chiba_data_facts() -> None:
                 assert stages == {"revised_budget", "settlement"}, (record["id"], stages)
                 assert all(budget["amount_yen"] is not None for budget in record["budget_records"])
                 assert all(budget["fiscal_year"] == 2025 for budget in record["budget_records"])
-                assert any("9月補正後" in budget["note"] for budget in record["budget_records"] if budget["kind"] == "revised_budget")
+                assert any("9月補正後" in budget["note"]
+                    for budget in record["budget_records"]
+                    if budget["kind"] == "revised_budget")
         else:
             population = selection["population"]
             assert population["field_count"] == 8
@@ -1068,7 +1073,9 @@ def validate_chiba_data_facts() -> None:
                 ROOT / "data" / "reviewed" / "chiba-city" / "current_policy_indicators.json"
             )
             assert indicators["official_code"] == "121002"
-            assert indicators["review_status"] == "reviewed_complete_policy_indicator_identity_and_values"
+            assert indicators["review_status"] == (
+                "reviewed_complete_policy_indicator_identity_and_values"
+            )
             assert indicators["quantitative_indicator_count"] == 40
             assert len(indicators["fields"]) == 8
             assert all(
@@ -1083,7 +1090,8 @@ def validate_chiba_data_facts() -> None:
     )
     assert len(chiba_city_evidence) == 10
     assert all(
-        any(claim["field"] == "kpis" and "分野単位" in claim["statement"] for claim in packet["claims"])
+        any(claim["field"] == "kpis" and "分野単位" in claim["statement"]
+            for claim in packet["claims"])
         for packet in chiba_city_evidence
     )
 
@@ -1118,8 +1126,12 @@ def validate_chiba_export() -> list[str]:
                 failures.append(f"Chiba projects {slug} missing registered fact: {phrase}")
         projects = load_json(ROOT / "data" / "reviewed" / slug / "projects.json")
         for record in projects:
-            if record["review_status"] == "reviewed" and record["official_title"] not in section.group(1):
-                failures.append(f"Chiba projects {slug} missing official title: {record['official_title']}")
+            if record["review_status"] == "reviewed" and (
+                record["official_title"] not in section.group(1)
+            ):
+                failures.append(
+                    f"Chiba projects {slug} missing official title: {record['official_title']}"
+                )
     return failures
 
 
