@@ -1030,6 +1030,10 @@ def validate_chiba_data_facts() -> None:
         assert len({record["series_id"] for record in reviewed}) == 10, slug
         assert all(record["municipality_id"] == municipality_id for record in reviewed), slug
         assert len(selection["selections"]) == 10, (slug, len(selection["selections"]))
+        source_file = "chiba_project_sources.json" if slug == "chiba-prefecture" else "chiba_city_project_sources.json"
+        source_catalog = load_json(ROOT / "data" / "catalog" / source_file)
+        source_ids = {source["id"] for source in source_catalog["records"]}
+        assert all(set(record["sources"]).issubset(source_ids) for record in reviewed), slug
         by_series = {record["series_id"]: record for record in reviewed}
         selected_series = {item["series_id"] for item in selection["selections"]}
         assert selected_series == set(by_series), (slug, selected_series ^ set(by_series))
