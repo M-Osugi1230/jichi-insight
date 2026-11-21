@@ -1349,7 +1349,9 @@ def validate_hyogo_cluster_data_facts() -> None:
         if slug == "hyogo-prefecture":
             assert selection["population"]["project_count"] == 66
             assert len(selection["selection_rule"]["pillars"]) == 3
-            assert {item["direction_number"] for item in selection["selections"]} == set(range(1, 9))
+            assert {item["direction_number"] for item in selection["selections"]} == set(
+                range(1, 9)
+            )
             assert all(
                 any(claim["field"] == "registration_unit" and "取組方針" in claim["statement"]
                     for claim in packet["claims"])
@@ -1360,7 +1362,7 @@ def validate_hyogo_cluster_data_facts() -> None:
             assert (population["direction_count"], population["policy_count"],
                     population["measure_count"], population["unique_measure_count"],
                     population["kpi_count"]) == (3, 14, 80, 62, 21)
-            assert len(selection["rule"]["pillars"]) == 3
+            assert len(selection["selection_rule"]["pillars"]) == 3
             assert all(
                 any(claim["field"] == "registration_unit" and "基本政策" in claim["statement"]
                     for claim in packet["claims"])

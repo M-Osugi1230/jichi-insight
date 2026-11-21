@@ -9,7 +9,9 @@ REGISTRY = (WEB / "lib" / "projectRegistry.ts").read_text(encoding="utf-8")
 INDEX = (WEB / "app" / "projects" / "page.tsx").read_text(encoding="utf-8")
 DISCOVERY = (WEB / "lib" / "municipalityDiscovery.ts").read_text(encoding="utf-8")
 GENERIC = (WEB / "app" / "municipalities" / "[slug]" / "page.tsx").read_text(encoding="utf-8")
-DETAIL = (WEB / "app" / "projects" / "[municipality]" / "[series]" / "page.tsx").read_text(encoding="utf-8")
+DETAIL = (
+    WEB / "app" / "projects" / "[municipality]" / "[series]" / "page.tsx"
+).read_text(encoding="utf-8")
 EXPORT = (ROOT / "scripts" / "validate_static_export.py").read_text(encoding="utf-8")
 
 
@@ -19,8 +21,10 @@ def load(path: str):
 
 def test_reviewed_selection_matches_registered_series_and_sources():
     cases = (
-        ("hyogo-prefecture", "jp-local-280003", "hyogo_priority_project_selection.json", "hyogo_project_sources.json", 2025),
-        ("kobe-city", "jp-local-281000", "kobe_city_priority_project_selection.json", "kobe_city_project_sources.json", 2026),
+        ("hyogo-prefecture", "jp-local-280003",
+         "hyogo_priority_project_selection.json", "hyogo_project_sources.json", 2025),
+        ("kobe-city", "jp-local-281000",
+         "kobe_city_priority_project_selection.json", "kobe_city_project_sources.json", 2026),
     )
     for slug, municipality_id, selection_name, sources_name, year in cases:
         base = f"data/reviewed/{slug}"
@@ -35,7 +39,9 @@ def test_reviewed_selection_matches_registered_series_and_sources():
         assert len(projects) == len(selection["selections"]) == len(packets) == 10
         assert len({project["series_id"] for project in projects}) == 10
         assert load(f"{base}/project_kpis.json") == []
-        assert {packet["subject_id"] for packet in packets} == {project["id"] for project in projects}
+        assert {packet["subject_id"] for packet in packets} == {
+            project["id"] for project in projects
+        }
         project_by_id = {project["id"]: project for project in projects}
         for selected in selection["selections"]:
             actual = project_by_id[selected["project_id"]]
@@ -79,7 +85,7 @@ def test_two_units_and_missing_values_are_not_misattributed():
     assert (population["direction_count"], population["policy_count"],
             population["measure_count"], population["unique_measure_count"],
             population["kpi_count"]) == (3, 14, 80, 62, 21)
-    assert len(kobe["rule"]["pillars"]) == 3
+    assert len(kobe["selection_rule"]["pillars"]) == 3
     for phrase in (
         "登録単位：取組方針項目（10系列）",
         "取組方針66項目", "固有64項目", "187指標",
@@ -102,7 +108,10 @@ def test_discovery_gates_require_matching_reviewed_municipalities():
         assert f'{source}.data_status === "reviewed"' in DISCOVERY
         assert f'projectRegistry["{slug}"].projects.some' in DISCOVERY
         assert f"project.municipality_id === {source}.id" in DISCOVERY
-    assert 'return { key: null, finance: false, promises: false, assembly: false, projects: hasProjects };' in DISCOVERY
+    assert (
+        'return { key: null, finance: false, promises: false, assembly: false, '
+        'projects: hasProjects };'
+    ) in DISCOVERY
 
 
 def test_export_validates_each_municipality_section_and_all_detail_routes():
