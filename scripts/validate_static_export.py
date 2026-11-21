@@ -166,7 +166,7 @@ BASE_PAGE_REQUIREMENTS: dict[str, list[str]] = {
         "まだ登録・評価していないこと",
     ],
     "projects/index.html": [
-        "22自治体の Reviewed 事業レコード",
+        "24自治体の Reviewed 事業レコード",
         "千葉県｜登録事業", "千葉市｜登録事業",
         "登録単位：施策（10系列）", "登録単位：政策（10系列）",
         "令和7年度の施策評価シート", "分野単位のKGI/KPI",
@@ -768,12 +768,13 @@ def validate_hokkaido_assembly_scope() -> list[str]:
     if path.is_file():
         content = normalized_html(path)
         for phrase in [
-            "22議会", "埼玉県議会", "さいたま市議会", "川口市議会",
+            "24議会", "埼玉県議会", "さいたま市議会", "川口市議会",
             "大阪府議会", "大阪市会", "堺市議会",
             "北海道議会", "札幌市議会", "旭川市議会",
             "神奈川県議会", "横浜市会", "川崎市議会",
             "千葉県議会", "千葉市議会",
             "兵庫県議会", "神戸市会",
+            "宮城県議会", "仙台市議会",
         ]:
             if phrase not in content:
                 failures.append(f"assemblies/index.html missing {phrase}")
@@ -1264,7 +1265,7 @@ def validate_chiba_cluster_export() -> list[str]:
     assemblies_page = EXPORT_ROOT / "assemblies/index.html"
     if assemblies_page.is_file():
         html = normalized_html(assemblies_page)
-        for phrase in ("22議会", "千葉県議会", "千葉市議会"):
+        for phrase in ("24議会", "千葉県議会", "千葉市議会"):
             if phrase not in html:
                 failures.append(f"Assemblies index missing Chiba fact: {phrase}")
     for slug, phrases in {
@@ -1379,7 +1380,7 @@ def validate_hyogo_cluster_export() -> list[str]:
     if not path.is_file():
         return failures
     html = normalized_html(path)
-    if "22自治体の Reviewed 事業レコード" not in html:
+    if "24自治体の Reviewed 事業レコード" not in html:
         failures.append("Projects index must show 22 Reviewed municipalities")
     scopes = {
         "hyogo-prefecture": (
@@ -1598,7 +1599,7 @@ def validate_hyogo_web_finish_export() -> list[str]:
     index = EXPORT_ROOT / "assemblies/index.html"
     if index.is_file():
         html = normalized_html(index)
-        for phrase in ("22議会", "兵庫県議会", "神戸市会"):
+        for phrase in ("24議会", "兵庫県議会", "神戸市会"):
             if phrase not in html:
                 failures.append(f"Assemblies index missing Hyogo fact: {phrase}")
 
@@ -1618,6 +1619,195 @@ def validate_hyogo_web_finish_export() -> list[str]:
     return failures
 
 
+
+def miyagi_cluster_project_detail_files() -> set[str]:
+    required: set[str] = set()
+    for slug in ("miyagi-prefecture", "sendai-city"):
+        projects = load_json(ROOT / "data" / "reviewed" / slug / "projects.json")
+        required.update(
+            f"projects/{slug}/{series}/index.html"
+            for series in {record["series_id"] for record in projects if record["review_status"] == "reviewed"}
+        )
+    return required
+
+
+def validate_miyagi_cluster_data_facts() -> None:
+    """Ensure copy-specific facts match Reviewed Miyagi and Sendai source data."""
+    for slug, official_code, municipality_id, selection_name, source_name in (
+        ("miyagi-prefecture", "040002", "jp-local-040002", "miyagi_priority_project_selection.json", "miyagi_project_sources.json"),
+        ("sendai-city", "041009", "jp-local-041009", "sendai_city_priority_project_selection.json", "sendai_city_project_sources.json"),
+    ):
+        root = ROOT / "data" / "reviewed" / slug
+        municipality = load_json(root / "municipality.json")
+        projects = load_json(root / "projects.json")
+        kpis = load_json(root / "project_kpis.json")
+        packets = load_json(root / "project_evidence_packets.json")
+        selection = load_json(ROOT / "data" / "catalog" / selection_name)
+        sources = load_json(ROOT / "data" / "catalog" / source_name)
+        assert municipality["id"] == municipality_id
+        assert municipality["official_code"] == official_code
+        assert municipality["data_status"] == "reviewed"
+        assert len(projects) == len(packets) == len(selection["selections"]) == 10
+        assert len({record["series_id"] for record in projects}) == 10
+        by_id = {record["id"]: record for record in projects}
+        source_ids = {record["id"] for record in sources["records"]}
+        for selected in selection["selections"]:
+            record = by_id[selected["project_id"]]
+            assert (record["series_id"], record["official_title"]) == (selected["series_id"], selected["official_title"])
+        for record in projects:
+            assert record["review_status"] == "reviewed"
+            assert record["municipality_id"] == municipality_id
+            assert set(record["sources"]).issubset(source_ids)
+            assert record["official_evaluation"] is not None
+            assert record["official_evaluation"]["rating"]
+        assert {packet["subject_id"] for packet in packets} == set(by_id)
+        if slug == "miyagi-prefecture":
+            assert selection["population"]["project_count"] == 18
+            assert len(kpis) == 85
+            assert all(kpi["project_id"] in by_id for kpi in kpis)
+            assert all(record["fiscal_year"] == 2025 for record in projects)
+            assert all(any(entry["kind"] == "settlement" and entry["fiscal_year"] == 2025
+                           and entry["amount_yen"] is None for entry in record["budget_records"])
+                       for record in projects)
+        else:
+            assert selection["population"]["project_count"] == 108
+            assert len(selection["selection_rule"]["pillars"]) == 9
+            assert kpis == []
+            assert all(record["fiscal_year"] == 2025 for record in projects)
+            assert all(len(record["budget_records"]) == 1
+                       and record["budget_records"][0]["kind"] == "initial_budget"
+                       and record["budget_records"][0]["amount_yen"] is None
+                       for record in projects)
+
+    pref = ROOT / "data" / "reviewed" / "miyagi-prefecture"
+    city = ROOT / "data" / "reviewed" / "sendai-city"
+    plan = load_json(pref / "plan_review.json")
+    structure = next(x for x in plan["records"] if x["id"] == "miyagi-plan-policy-structure")
+    assert all(term in structure["value"] for term in ("1＋4", "政策8", "施策18"))
+    budget = load_json(pref / "fiscal_records.json")
+    pref_amounts = {r["metric"]: r["amount_yen"] for r in budget
+                    if r["stage"] == "initial_budget" and r["fiscal_year"] == 2026}
+    assert pref_amounts == {"total_revenue": 1_095_923_909_000,
+                            "local_tax": 344_600_000_000,
+                            "total_expenditure": 1_095_923_909_000}
+    assert any("2026年3月18日" in r["note"] and "原案可決" in r["note"] for r in budget)
+    pref_settlements = load_json(pref / "settlement_records.json")
+    city_settlements = load_json(city / "settlement_records.json")
+    for settlements in (pref_settlements, city_settlements):
+        assert len(settlements) == 51
+        assert {r["fiscal_year"] for r in settlements} == {2022, 2023, 2024}
+
+    city_budget = load_json(city / "fiscal_records.json")
+    city_amounts = {r["metric"]: r["amount_yen"] for r in city_budget
+                    if r["stage"] == "initial_budget" and r["fiscal_year"] == 2026}
+    assert city_amounts == {"total_revenue": 730_647_000_000,
+                            "local_tax": 254_846_000_000}
+
+    terms = load_json(ROOT / "data" / "entities" / "executives" / "executive_terms.json")
+    promises = load_json(ROOT / "data" / "entities" / "executives" / "promises.json")
+    evidence = load_json(ROOT / "data" / "entities" / "executives" / "evidence_packets.json")
+    for municipality_id, name, office, start, end, election, vote in (
+        ("jp-local-040002", "村井 嘉浩", "governor", "2025-11-21", "2029-11-20", "2025-10-26", "340,190票"),
+        ("jp-local-041009", "郡 和子", "mayor", "2025-08-22", "2029-08-21", "2025-08-03", "204,844票"),
+    ):
+        term = next(row for row in terms if row["municipality_id"] == municipality_id and row["office"] == office and row["status"] == "current")
+        assert (term["person_name"], term["term_start"], term["term_end"], term["election_date"]) == (name, start, end, election)
+        assert len([row for row in promises if row["executive_term_id"] == term["id"] and row["review_status"] == "reviewed"]) == 4
+        packet = next(row for row in evidence if row["subject_id"] == term["id"])
+        assert vote in next(claim["statement"] for claim in packet["claims"] if claim["field"] == "election_date")
+
+    for slug, name, seat_count, proposal_count, vote_count, faction_count in (
+        ("miyagi-prefecture", "宮城県議会", 59, 29, 28, 0),
+        ("sendai-city", "仙台市議会", 55, 47, 48, 576),
+    ):
+        root = ROOT / "data" / "reviewed" / slug / "assembly"
+        assembly = load_json(root / "assembly_records.json")
+        disclosure = load_json(root / "disclosure_profiles.json")
+        assert len(assembly) == len(disclosure) == 1
+        assert (assembly[0]["name"], assembly[0]["seat_count"]) == (name, seat_count)
+        assert assembly[0]["review_status"] == disclosure[0]["review_status"] == "reviewed"
+        assert len(load_json(root / "proposals.json")) == proposal_count
+        assert len(load_json(root / "votes.json")) == vote_count
+        assert len(load_json(root / "faction_votes.json")) == faction_count
+    pref_disclosure = load_json(pref / "assembly" / "disclosure_profiles.json")[0]
+    pref_member = next(x["note"] for x in pref_disclosure["items"] if x["item"] == "member_votes")
+    pref_faction = next(x["note"] for x in pref_disclosure["items"] if x["item"] == "faction_votes")
+    assert "表決そのものの事後記録" in pref_member
+    assert "採決前の態度表明の集約ではない" in pref_member
+    assert "会派としての態度・賛否の公表はない" in pref_faction
+    city_disclosure = load_json(city / "assembly" / "disclosure_profiles.json")[0]
+    assert "12会派" in next(x["note"] for x in city_disclosure["items"] if x["item"] == "faction_votes")
+    assert "議員個人別の賛否は公表されていない" in next(x["note"] for x in city_disclosure["items"] if x["item"] == "member_votes")
+
+
+def validate_miyagi_cluster_export() -> list[str]:
+    """Assert names and counts in each entity's own HTML section."""
+    failures: list[str] = []
+    expected_pages = {
+        "miyagi-prefecture": {
+            "scope-title": ("新・宮城の将来ビジョン", "政策8", "施策18", "令和8年2月改定版"),
+            "finance-headline-title": ("2026年度に成立した一般会計当初予算", "2026年3月18日"),
+            "projects-title": ("施策単位", "10系列"),
+            "governor-title": ("村井 嘉浩", "340,190票", "2025年11月21日", "2029年11月20日", "4件"),
+            "assembly-title": ("宮城県議会", "第401回", "表決そのものの事後記録", "会派別賛否"),
+        },
+        "sendai-city": {
+            "scope-title": ("仙台市基本計画2021-2030", "事業単位", "自己評価", "108事業"),
+            "finance-headline-title": ("2026年度に成立した一般会計当初予算", "2026年3月12日"),
+            "projects-title": ("事業単位", "10系列", "自己評価"),
+            "mayor-title": ("郡 和子", "204,844票", "2025年8月22日", "2029年8月21日", "4件"),
+            "assembly-title": ("仙台市議会", "令和8年第3回定例会", "会派別", "議員個人"),
+        },
+    }
+    for slug, section_facts in expected_pages.items():
+        path = EXPORT_ROOT / "municipalities" / slug / "index.html"
+        if not path.is_file():
+            failures.append(f"Missing Miyagi cluster dedicated page: {slug}")
+            continue
+        html = normalized_html(path)
+        for section_id, phrases in section_facts.items():
+            match = re.search(
+                rf'<section\b(?=[^>]*\baria-labelledby="{re.escape(section_id)}")[^>]*>(.*?)</section>',
+                html, flags=re.DOTALL,
+            )
+            if match is None:
+                failures.append(f"Miyagi {slug} missing section: {section_id}")
+                continue
+            for phrase in phrases:
+                if phrase not in match.group(1):
+                    failures.append(f"Miyagi {slug} {section_id} missing registered fact: {phrase}")
+        projects = load_json(ROOT / "data" / "reviewed" / slug / "projects.json")
+        section = re.search(
+            r'<section\b(?=[^>]*\bid="priority-projects")[^>]*>(.*?)</section>',
+            html, flags=re.DOTALL,
+        )
+        if section is None:
+            failures.append(f"Miyagi {slug} missing priority-projects section")
+        else:
+            for record in projects:
+                if record["review_status"] == "reviewed" and record["official_title"] not in section.group(1):
+                    failures.append(f"Miyagi {slug} missing official project title: {record['official_title']}")
+    index = EXPORT_ROOT / "assemblies/index.html"
+    if index.is_file():
+        html = normalized_html(index)
+        for phrase in ("24議会", "宮城県議会", "仙台市議会"):
+            if phrase not in html:
+                failures.append(f"Assemblies index missing Miyagi registered fact: {phrase}")
+    for slug, phrases in (
+        ("miyagi-prefecture", ("宮城県議会", "表決そのものの事後記録", "会派別賛否は再集計・推測しません")),
+        ("sendai-city", ("仙台市議会", "会派別", "議員個人別の賛否")),
+    ):
+        page = EXPORT_ROOT / "assemblies" / slug / "index.html"
+        if not page.is_file():
+            failures.append(f"Missing Miyagi assembly detail: {slug}")
+            continue
+        html = normalized_html(page)
+        for phrase in phrases:
+            if phrase not in html:
+                failures.append(f"Miyagi assembly {slug} missing registered fact: {phrase}")
+    return failures
+
+
 def main() -> int:
     args = parse_args()
     failures: list[str] = []
@@ -1626,6 +1816,7 @@ def main() -> int:
     validate_chiba_cluster_data_facts()
     validate_hyogo_cluster_data_facts()
     validate_hyogo_web_finish_data_facts()
+    validate_miyagi_cluster_data_facts()
     required_files = (
         set(REQUIRED_FILES)
         | published_required_files()
@@ -1635,6 +1826,13 @@ def main() -> int:
         | saitama_project_detail_files()
         | chiba_project_detail_files()
         | hyogo_cluster_project_detail_files()
+        | miyagi_cluster_project_detail_files()
+        | {
+            "municipalities/miyagi-prefecture/index.html",
+            "municipalities/sendai-city/index.html",
+            "assemblies/miyagi-prefecture/index.html",
+            "assemblies/sendai-city/index.html",
+        }
         | {
             "municipalities/hyogo-prefecture/index.html",
             "assemblies/hyogo-prefecture/index.html",
@@ -1697,6 +1895,7 @@ def main() -> int:
     failures.extend(validate_chiba_cluster_export())
     failures.extend(validate_hyogo_cluster_export())
     failures.extend(validate_hyogo_web_finish_export())
+    failures.extend(validate_miyagi_cluster_export())
     failures.extend(validate_hokkaido_assembly_scope())
     failures.extend(validate_osaka_assembly_scope())
 
