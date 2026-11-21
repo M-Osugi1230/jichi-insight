@@ -1248,6 +1248,76 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "柏市選挙管理委員会の任期・任期満了日一覧。千葉県知事選挙について、定数1・任期4年・任期満了日 令和11年4月4日（2029年4月4日）を日単位で明記する。"
+    },
+    {
+      "id": "chiba-city-mayor-election-2025-bulletin",
+      "municipality_key": "chiba-city",
+      "organization": "千葉市選挙管理委員会",
+      "category": "election",
+      "title": "令和7年3月16日執行 千葉市長選挙 選挙公報（神谷しゅんいち候補欄）",
+      "url": "https://www.city.chiba.jp/senkyokanri/documents/r7shiji_senkyokouhou2.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "千葉市長選挙の選挙公報そのもの（全2ページ）。市の投開票結果ページから「選挙公報（参考）」の市長選挙分（PDF：2,354KB）としてリンクされ、現在も到達可能である。リンク先PDFのファイル名には知事選を示唆する文字列が含まれるが、実物は表題「千葉市長選挙公報」・千葉市選挙管理委員会発行の市長選公報であり、候補者3人（杉田はやと・神谷しゅんいちが（1）ページ、寺尾さとしが（2）ページ）の候補者欄を収めることを2026-11-21に描画画像で確認した。ファイルサイズ2,409,515バイトはページ表記の2,354KBと一致する。神谷しゅんいち候補欄は（1）ページ下段で、候補者欄は画像形式（テキスト層は選管の定型文のみ）のため、登録文はPDFの描画画像（200dpi・300dpi・450dpi）から転記し複数解像度で照合した。公報は候補者から提出された原稿をそのまま印刷した公式文書（欄外にその旨の注記あり）で出典優先順位の最上位に当たるため、confidence は high とした。"
+    },
+    {
+      "id": "chiba-city-mayor-election-2025-results",
+      "municipality_key": "chiba-city",
+      "organization": "千葉市選挙管理委員会",
+      "category": "election",
+      "title": "令和7年3月16日執行 千葉市長選挙 区別開票結果（投・開票結果）",
+      "url": "https://www.city.chiba.jp/senkyokanri/documents/r7shicho_toukaihyoukekka.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "千葉市選挙管理委員会の投・開票結果PDF（全3ページ）。千葉市長選挙の区別開票結果（確定）で、神谷しゅんいちが245,748票で当選したことを明記する（候補者3人、次点は寺尾さとし32,383票。有効投票282,152票、無効投票5,958票、投票者総数288,118人）。得票数は2026-11-21にPDF本体を直接読み取り照合した。"
+    },
+    {
+      "id": "chiba-city-mayor-election-2025-results-page",
+      "municipality_key": "chiba-city",
+      "organization": "千葉市選挙管理委員会",
+      "category": "election",
+      "title": "千葉県知事選挙・千葉市長選挙投開票結果（投開票結果ページ）",
+      "url": "https://www.city.chiba.jp/senkyokanri/r7shicho_toukaihyoukekka.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "千葉市公式サイトの投開票結果ページ。投・開票結果PDFと選挙公報PDF（「選挙公報（参考）」）へのリンクを掲載し、両PDFへの到達経路になっている。2026-11-21に本文を直接確認した。"
+    },
+    {
+      "id": "chiba-city-election-schedule-page",
+      "municipality_key": "chiba-city",
+      "organization": "千葉市選挙管理委員会",
+      "category": "election",
+      "title": "今後の選挙日程（千葉市長選挙の任期満了日）",
+      "url": "https://www.city.chiba.jp/senkyokanri/nittei.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "千葉市選挙管理委員会の「今後の選挙日程」ページ。「千葉市長選挙 任期4年 任期満了日 令和11年3月20日」と公式公表しており、現任期の満了日（2029年3月20日）の公式明記として用いた。2026-11-21に本文を直接確認した（ページ更新日は2026年2月10日）。"
+    },
+    {
+      "id": "chiba-pref-mayors-term-list-2025",
+      "municipality_key": "chiba-city",
+      "organization": "千葉県",
+      "category": "election",
+      "title": "市町村長氏名、任期満了年月日、就任回数、所属党派、投票率、就任年月日（令和7年12月31日現在）",
+      "url": "https://www.pref.chiba.lg.jp/shichou/documents/r707simeininki.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-21",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "千葉県が公表する県内市町村長の一覧（令和7年12月31日現在）。千葉市・神谷俊一について、任期満了年月日 令和11年3月20日、就任回数2回、無所属、直近の選挙の執行年月日 令和7年3月16日、投票率35.70%、就任年月日として1期目 令和3年3月21日・2期目 令和7年3月21日を明記する。現任期の開始日（2025年3月21日）と満了日（2029年3月20日）の双方を日単位で確認できる一次資料として用いた。2026-11-21にPDF本体を直接確認した。"
     }
   ]
 }

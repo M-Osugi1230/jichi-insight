@@ -67,6 +67,49 @@ EXPECTED_POLICY_AREAS = [
     "disaster_prevention",
 ]
 
+# Reverse promise links added by Stage 3 (Issue #842): the mayor's
+# bulletin promises connected to each policy by wording and content
+# only (inferred, capped at low / inferred). Policies not listed here
+# carry no links.
+_TERM = "jp-local-121002-executive-2025-03-21"
+EXPECTED_PROMISE_LINKS = {
+    "jp-local-121002-project-2026-disaster-resilient-infrastructure": [
+        f"{_TERM}-promise-018",
+    ],
+    "jp-local-121002-project-2026-healthy-living": [
+        f"{_TERM}-promise-014",
+        f"{_TERM}-promise-015",
+    ],
+    "jp-local-121002-project-2026-childbearing-and-childrearing": [
+        f"{_TERM}-promise-002",
+        f"{_TERM}-promise-003",
+        f"{_TERM}-promise-008",
+    ],
+    "jp-local-121002-project-2026-diversity-and-participation": [
+        f"{_TERM}-promise-016",
+        f"{_TERM}-promise-025",
+    ],
+    "jp-local-121002-project-2026-culture-and-arts": [
+        f"{_TERM}-promise-022",
+        f"{_TERM}-promise-023",
+        f"{_TERM}-promise-024",
+    ],
+    "jp-local-121002-project-2026-sustainable-attractive-city": [
+        f"{_TERM}-promise-011",
+        f"{_TERM}-promise-012",
+    ],
+    "jp-local-121002-project-2026-local-industry": [
+        f"{_TERM}-promise-004",
+    ],
+    "jp-local-121002-project-2026-greenery-and-waterside": [
+        f"{_TERM}-promise-010",
+    ],
+    "jp-local-121002-project-2026-collaborative-disaster-preparedness": [
+        f"{_TERM}-promise-019",
+        f"{_TERM}-promise-020",
+    ],
+}
+
 # Primary-identity project counts per selected policy, aggregated from
 # the already-reviewed project identity catalogs (measure codes X-Y-*).
 EXPECTED_PROJECT_COUNTS = {
@@ -154,9 +197,12 @@ def test_selected_projects_match_records() -> None:
         assert record["municipality_id"] == MID
         assert record["fiscal_year"] == 2026
         assert record["review_status"] == "reviewed"
-        # Stage 3 of the Chiba cluster has not run yet, so no promise
-        # links exist at this stage.
-        assert record["related_promise_ids"] == []
+        # Stage 3 (Issue #842) connected the mayor's bulletin promises
+        # to the policies by wording and content only; the reverse
+        # links below are the full extent of those connections.
+        assert record["related_promise_ids"] == EXPECTED_PROMISE_LINKS.get(
+            record["id"], []
+        )
     areas = [projects[pid]["policy_area"] for pid in EXPECTED_IDS]
     assert areas == EXPECTED_POLICY_AREAS
     # The purpose of each record states the verified primary-identity

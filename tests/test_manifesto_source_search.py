@@ -33,7 +33,7 @@ def test_manifesto_source_search_fixture_is_registered_and_linked():
 def test_manifesto_source_searches_match_contract_and_safety_boundary():
     searches = load("data/entities/executives/manifesto_source_searches.json")
 
-    assert len(searches) == 19
+    assert len(searches) == 20
     assert {search["executive_term_id"] for search in searches} == {
         "jp-local-400009-executive-2025-04-14",
         "jp-local-401307-executive-2022-12-07",
@@ -54,6 +54,7 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         "jp-local-111007-executive-2025-05-27",
         "jp-local-112038-executive-2026-02-09",
         "jp-local-120006-executive-2025-04-05",
+        "jp-local-121002-executive-2025-03-21",
     }
 
     for search in searches:
@@ -72,7 +73,7 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
     # Nagoya City, Sapporo City, Hokkaido, Osaka Prefecture, Osaka
     # City, Kanagawa Prefecture, Yokohama City, Kawasaki City,
     # Saitama Prefecture, Saitama City, Kawaguchi City and Chiba
-    # Prefecture, each closed by its official election bulletin;
+    # Prefecture and Chiba City, each closed by its official election bulletin;
     # Kawasaki's bulletin is registered as reprinted in the city
     # election commission's official election record).
     # Three searches remain exceptions:
