@@ -1,0 +1,68 @@
+[
+  {
+    "id": "jp-local-280003-fiscal-2026-total-revenue",
+    "municipality_id": "jp-local-280003",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入総額",
+    "amount_yen": 2318223000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "兵庫県公報（令和8年3月23日号外）の「令和8年度当初予算（令和8年3月23日議決）」に掲載された一般会計の歳入合計。第374回定例会の第1号議案「令和8年度兵庫県一般会計予算」は2026年3月23日に原案可決された。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hyogo-pref-budget-2026-koho",
+      "hyogo-pref-assembly-2026-budget-bills"
+    ]
+  },
+  {
+    "id": "jp-local-280003-fiscal-2026-local-tax",
+    "municipality_id": "jp-local-280003",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "local_tax",
+    "metric_label": "一般会計県税",
+    "amount_yen": 909400000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "兵庫県公報（令和8年3月23日号外）の議決予算における一般会計歳入の款「県税」。県税務ページ（令和8年度当初予算における県税収入の内訳）は県税を「9,104億円」と表記しており、議決予算の9,094億円と10億円の差がある。本登録は県公報の議決予算を正として収録し、差異はここに記録する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hyogo-pref-budget-2026-koho",
+      "hyogo-pref-assembly-2026-budget-bills"
+    ]
+  },
+  {
+    "id": "jp-local-280003-fiscal-2026-total-expenditure",
+    "municipality_id": "jp-local-280003",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出総額",
+    "amount_yen": 2318223000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "兵庫県公報（令和8年3月23日号外）の「令和8年度当初予算（令和8年3月23日議決）」に掲載された一般会計の歳出合計。歳入合計と同額である。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hyogo-pref-budget-2026-koho",
+      "hyogo-pref-assembly-2026-budget-bills"
+    ]
+  }
+]

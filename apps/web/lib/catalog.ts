@@ -2,6 +2,7 @@ import hokkaidoFinanceCatalog from "../../../data/catalog/hokkaido_prefecture_fi
 import kanagawaFinanceCatalog from "../../../data/catalog/kanagawa_prefecture_finance_sources.json";
 import saitamaFinanceCatalog from "../../../data/catalog/saitama_prefecture_finance_sources.json";
 import chibaFinanceCatalog from "../../../data/catalog/chiba_prefecture_finance_sources.json";
+import hyogoFinanceCatalog from "../../../data/catalog/hyogo_prefecture_finance_sources.json";
 import aichiFinanceCatalog from "../../../data/catalog/aichi_prefecture_finance_sources.json";
 import assemblyCatalog from "../../../data/catalog/fukuoka_assembly_sources.json";
 import cityFinanceCatalog from "../../../data/catalog/fukuoka_city_finance_sources.json";
@@ -29,7 +30,8 @@ export type MunicipalityKey =
   | "saitama-city"
   | "kawaguchi-city"
   | "chiba-prefecture"
-  | "chiba-city";
+  | "chiba-city"
+  | "hyogo-prefecture";
 export type SourceRecord = {
   id: string;
   municipality_key: MunicipalityKey;
@@ -97,6 +99,12 @@ export const municipalityMeta: Record<
     summary: "千葉市基本計画の重点事業10系列（政策単位。予算額・公式評価は未公表）に加え、神谷俊一市長の任期と Reviewed 公約25件を公式出典で確認します。自治体別ページは準備中です。",
     status: "財政データ公開", href: null,
     fiscalSummary: "Reviewed 54項目（財政レコード3件・決算51件）・重点事業10系列",
+  },
+  "hyogo-prefecture": {
+    name: "兵庫県", type: "都道府県",
+    summary: "ひょうごビジョン2050と第三期兵庫県地域創生戦略、2026年度成立後当初予算、2022〜2024年度の普通会計決算と斎藤元彦知事の現任期を確認します。自治体別ページは準備中です。",
+    status: "財政データ公開", href: null,
+    fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
   },
   "saitama-city": {
     name: "さいたま市", type: "政令指定都市",
@@ -201,6 +209,7 @@ export const sourceCatalog = [
   ...(kanagawaFinanceCatalog.records as SourceRecord[]),
   ...(saitamaFinanceCatalog.records as SourceRecord[]),
   ...(chibaFinanceCatalog.records as SourceRecord[]),
+  ...(hyogoFinanceCatalog.records as SourceRecord[]),
   ...(aichiFinanceCatalog.records as SourceRecord[]),
   ...(officialCatalog.records as SourceRecord[]),
   ...(financeCatalog.records as SourceRecord[]),
