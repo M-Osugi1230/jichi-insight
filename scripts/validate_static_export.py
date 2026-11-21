@@ -1902,7 +1902,10 @@ def validate_shizuoka_cluster_data_facts() -> None:
          "hamamatsu_city_priority_project_selection.json", "hamamatsu_city_project_sources.json",
          18, 10, 2025),
     )
-    for slug, code, municipality_id, selection_file, source_file, kpi_count, series_count, year in cases:
+    for (
+        slug, code, municipality_id, selection_file,
+        source_file, kpi_count, series_count, year,
+    ) in cases:
         root = ROOT / "data" / "reviewed" / slug
         municipality = load_json(root / "municipality.json")
         selection = load_json(ROOT / "data" / "catalog" / selection_file)
@@ -2057,22 +2060,30 @@ def validate_shizuoka_cluster_export() -> list[str]:
     failures: list[str] = []
     pages = {
         "shizuoka-prefecture": {
-            "scope-title": ("しずおか ウェルビーイングプラン", "政策8本", "政策の柱24本", "KPI46件"),
-            "finance-headline-title": ("2026年度一般会計当初予算", "1,414,100,000千円", "542,000,000千円"),
+            "scope-title": (
+                "しずおか ウェルビーイングプラン", "政策8本", "政策の柱24本", "KPI46件",
+            ),
+            "finance-headline-title": (
+                "2026年度一般会計当初予算", "1,414,100,000千円", "542,000,000千円",
+            ),
             "projects-title": ("政策の柱10系列", "KPI46件"),
             "governor-title": ("鈴木 康友", "2024年5月26日", "2028年5月25日", "728,500票", "9件"),
             "assembly-title": ("静岡県議会", "43件", "17件", "pending", "表決そのものの事後記録"),
         },
         "shizuoka-city": {
             "scope-title": ("第5次静岡市総合計画", "9分野・45政策・101施策", "KPI23件"),
-            "finance-headline-title": ("2026年度一般会計当初予算", "403,500,000千円", "148,938,000千円"),
+            "finance-headline-title": (
+                "2026年度一般会計当初予算", "403,500,000千円", "148,938,000千円",
+            ),
             "projects-title": ("施策10系列・KPI23件",),
             "mayor-title": ("難波 喬司", "2023年4月13日", "2027年4月12日", "149,117票", "3件"),
             "assembly-title": ("静岡市議会", "56件", "会派別賛否495件", "議員個人別"),
         },
         "hamamatsu-city": {
             "scope-title": ("浜松市総合計画第2期基本計画", "7分野・25基本政策・125政策", "KPI18件"),
-            "finance-headline-title": ("2026年度一般会計当初予算", "440,100,000千円", "160,600,000千円"),
+            "finance-headline-title": (
+                "2026年度一般会計当初予算", "440,100,000千円", "160,600,000千円",
+            ),
             "projects-title": ("基本政策10系列・KPI18件",),
             "mayor-title": ("中野 祐介", "2023年5月1日", "2027年4月30日", "246,745票", "10件"),
             "assembly-title": ("浜松市議会", "69件", "議員別賛否2,728件"),
@@ -2098,8 +2109,13 @@ def validate_shizuoka_cluster_export() -> list[str]:
         else:
             records = load_json(ROOT / "data" / "reviewed" / slug / "projects.json")
             for record in records:
-                if record["review_status"] == "reviewed" and record["official_title"] not in project_section:
-                    failures.append(f"Shizuoka {slug} missing official title: {record['official_title']}")
+                if (
+                    record["review_status"] == "reviewed"
+                    and record["official_title"] not in project_section
+                ):
+                    failures.append(
+                        f"Shizuoka {slug} missing official title: {record['official_title']}"
+                    )
 
     projects_page = EXPORT_ROOT / "projects/index.html"
     if projects_page.is_file():
@@ -2113,12 +2129,19 @@ def validate_shizuoka_cluster_export() -> list[str]:
         ):
             section = _shizuoka_scoped_text(html, "id", slug)
             if section is None or unit not in section:
-                failures.append(f"Shizuoka {slug} project index is missing scoped registration unit")
+                failures.append(
+                    f"Shizuoka {slug} project index is missing scoped registration unit"
+                )
                 continue
             records = load_json(ROOT / "data" / "reviewed" / slug / "projects.json")
             for record in records:
-                if record["review_status"] == "reviewed" and record["official_title"] not in section:
-                    failures.append(f"Shizuoka {slug} project index missing: {record['official_title']}")
+                if (
+                    record["review_status"] == "reviewed"
+                    and record["official_title"] not in section
+                ):
+                    failures.append(
+                        f"Shizuoka {slug} project index missing: {record['official_title']}"
+                    )
 
     promises_page = EXPORT_ROOT / "promises/index.html"
     if promises_page.is_file():

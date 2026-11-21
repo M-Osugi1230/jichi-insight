@@ -92,9 +92,18 @@ def test_governor_and_mayors_reuse_reviewed_terms_votes_and_promises():
     promises = data("data/entities/executives/promises.json")
     packets = data("data/entities/executives/evidence_packets.json")
     for municipality_id, office, name, start, end, vote, count, page in (
-        ("jp-local-220001", "governor", "鈴木 康友", "2024-05-26", "2028-05-25", "728,500票", 9, PREFECTURE),
-        ("jp-local-221007", "mayor", "難波 喬司", "2023-04-13", "2027-04-12", "149,117票", 3, CITY_RENDERER),
-        ("jp-local-221309", "mayor", "中野 祐介", "2023-05-01", "2027-04-30", "246,745票", 10, CITY_RENDERER),
+        (
+            "jp-local-220001", "governor", "鈴木 康友",
+            "2024-05-26", "2028-05-25", "728,500票", 9, PREFECTURE,
+        ),
+        (
+            "jp-local-221007", "mayor", "難波 喬司",
+            "2023-04-13", "2027-04-12", "149,117票", 3, CITY_RENDERER,
+        ),
+        (
+            "jp-local-221309", "mayor", "中野 祐介",
+            "2023-05-01", "2027-04-30", "246,745票", 10, CITY_RENDERER,
+        ),
     ):
         term = next(item for item in terms if item["municipality_id"] == municipality_id
                     and item["office"] == office and item["status"] == "current")

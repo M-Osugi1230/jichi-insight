@@ -13,6 +13,8 @@ import { assemblies } from "@/lib/assemblyRegistry";
 import { projectRegistry } from "@/lib/projectRegistry";
 import { shizuokaCityFinance, shizuokaCityPlanReview, shizuokaCityFinanceSources, shizuokaCityBudgetRecord, shizuokaCityEvidenceForRecord } from "@/lib/shizuokaCityFinance";
 import { hamamatsuFinance, hamamatsuPlanReview, hamamatsuFinanceSources, hamamatsuBudgetRecord, hamamatsuEvidenceForRecord } from "@/lib/hamamatsuFinance";
+import shizuokaPhase13Sources from "../../../data/catalog/shizuoka_phase13_sources.json";
+import hamamatsuPhase13Sources from "../../../data/catalog/hamamatsu_phase13_sources.json";
 import styles from "../app/municipalities/fukuoka-prefecture/page.module.css";
 import projectStyles from "@/components/ProjectReview.module.css";
 
@@ -26,6 +28,7 @@ export function ShizuokaCityReview({ slug }: { slug: ShizuokaCitySlug }) {
   const sources = shizuoka ? shizuokaCityFinanceSources : hamamatsuFinanceSources;
   const budget = shizuoka ? shizuokaCityBudgetRecord : hamamatsuBudgetRecord;
   const evidence = shizuoka ? shizuokaCityEvidenceForRecord : hamamatsuEvidenceForRecord;
+  const planSources = shizuoka ? shizuokaPhase13Sources.records : hamamatsuPhase13Sources.records;
   const area = projectRegistry[slug];
   const projects = area.projects.filter((record) => record.review_status === "reviewed");
   const settlements = finance.records.filter((record) =>
@@ -94,12 +97,17 @@ export function ShizuokaCityReview({ slug }: { slug: ShizuokaCitySlug }) {
 
           <section className={styles.scope} aria-labelledby="plan-title">
             <div><p className="eyebrow">Plan review</p><h2 id="plan-title">{shizuoka ? "第5次静岡市総合計画" : "浜松市総合計画第2期基本計画"}</h2><p>Reviewed：{plan.reviewed_at}</p></div>
-            <div>{plan.records.filter((record) => record.decision === "accepted").map((record) => (
-              <article key={record.id}>
-                <h3>{record.title}</h3><p>{record.statement}</p>
-                <p><a href={record.source_url} target="_blank" rel="noopener noreferrer">公式出典：{record.title}</a></p>
-              </article>
-            ))}</div>
+            <div>{plan.records.filter((record) => record.decision === "accepted").map((record) => {
+              const source = planSources.find((item) => item.id === record.source_id);
+              return (
+                <article key={record.id}>
+                  <h3>{record.title}</h3><p>{record.statement}</p>
+                  {source ? (
+                    <p><a href={source.url} target="_blank" rel="noopener noreferrer">公式出典：{record.title}</a></p>
+                  ) : null}
+                </article>
+              );
+            })}</div>
           </section>
 
           <section className={styles.headline} aria-labelledby="finance-headline-title">
