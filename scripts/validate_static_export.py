@@ -164,7 +164,10 @@ BASE_PAGE_REQUIREMENTS: dict[str, list[str]] = {
         "まだ登録・評価していないこと",
     ],
     "projects/index.html": [
-        "18自治体の Reviewed 事業レコード",
+        "20自治体の Reviewed 事業レコード",
+        "千葉県｜登録事業", "千葉市｜登録事業",
+        "登録単位：施策（10系列）", "登録単位：政策（10系列）",
+        "41施策", "23政策", "67施策", "189事業",
         "埼玉県｜登録事業", "さいたま市｜登録事業", "川口市｜登録事業",
         "北海道｜登録事業",
         "札幌市｜登録事業",
@@ -1000,10 +1003,101 @@ def validate_saitama_export() -> list[str]:
     return failures
 
 
+
+def chiba_project_detail_files() -> set[str]:
+    required: set[str] = set()
+    for slug in ("chiba-prefecture", "chiba-city"):
+        records = load_json(ROOT / "data" / "reviewed" / slug / "projects.json")
+        required.update(
+            f"projects/{slug}/{series}/index.html"
+            for series in {r["series_id"] for r in records if r["review_status"] == "reviewed"}
+        )
+    return required
+
+
+def validate_chiba_data_facts() -> None:
+    cases = (
+        ("chiba-prefecture", "chiba_priority_project_selection.json", "chiba_project_sources.json", "jp-local-120006"),
+        ("chiba-city", "chiba_city_priority_project_selection.json", "chiba_city_project_sources.json", "jp-local-121002"),
+    )
+    for slug, selection_file, source_file, municipality_id in cases:
+        records = load_json(ROOT / "data" / "reviewed" / slug / "projects.json")
+        selection = load_json(ROOT / "data" / "catalog" / selection_file)
+        reviewed = [r for r in records if r["review_status"] == "reviewed"]
+        assert len(reviewed) == 10, (slug, len(reviewed))
+        assert len({r["series_id"] for r in reviewed}) == 10, slug
+        assert all(r["municipality_id"] == municipality_id for r in reviewed), slug
+        assert len(selection["selections"]) == 10
+        by_series = {r["series_id"]: r for r in reviewed}
+        assert {x["series_id"] for x in selection["selections"]} == set(by_series)
+        for item in selection["selections"]:
+            assert by_series[item["series_id"]]["official_title"] == item["official_title"]
+        source_ids = {
+            x["id"] for x in load_json(ROOT / "data" / "catalog" / source_file)["records"]
+        }
+        assert all(set(r["sources"]).issubset(source_ids) for r in reviewed), slug
+        assert all(r["official_evaluation"] is None for r in reviewed), slug
+        if slug == "chiba-prefecture":
+            assert selection["population"]["project_count"] == 41
+            assert all(r["fiscal_year"] == 2025 for r in reviewed)
+            assert all(
+                {b["kind"] for b in r["budget_records"]} == {"revised_budget", "settlement"}
+                and all(b["amount_yen"] is not None and b["fiscal_year"] == 2025 for b in r["budget_records"])
+                and any("9月補正後" in b["note"] for b in r["budget_records"] if b["kind"] == "revised_budget")
+                for r in reviewed
+            )
+            kpis = load_json(ROOT / "data" / "reviewed" / slug / "project_kpis.json")
+            assert len(kpis) == 26
+            assert all(k["project_id"] in {r["id"] for r in reviewed} for k in kpis)
+        else:
+            pop = selection["population"]
+            assert (pop["field_count"], pop["policy_count"], pop["measure_count"], pop["project_count"]) == (8, 23, 67, 189)
+            assert all(r["fiscal_year"] == 2026 and r["kpis"] == [] for r in reviewed)
+            assert all(
+                len(r["budget_records"]) == 1 and
+                r["budget_records"][0]["kind"] == "initial_budget" and
+                r["budget_records"][0]["amount_yen"] is None
+                for r in reviewed
+            )
+            indicators = load_json(ROOT / "data" / "reviewed" / "chiba-city" / "current_policy_indicators.json")
+            assert indicators["official_code"] == "121002"
+            assert indicators["quantitative_indicator_count"] == 40
+            assert len(indicators["fields"]) == 8
+
+
+def validate_chiba_export() -> list[str]:
+    failures: list[str] = []
+    page = EXPORT_ROOT / "projects/index.html"
+    if not page.is_file():
+        return failures
+    html = normalized_html(page)
+    expected = {
+        "chiba-prefecture": ("千葉県｜登録事業", "登録単位：施策（10系列）", "41施策", "令和7年度", "9月補正後"),
+        "chiba-city": ("千葉市｜登録事業", "登録単位：政策（10系列）", "23政策", "67施策", "189事業", "分野単位のKGI/KPI"),
+    }
+    for slug, phrases in expected.items():
+        match = re.search(
+            rf'<section\\b(?=[^>]*\\bid="{re.escape(slug)}")[^>]*>(.*?)</section>',
+            html, flags=re.DOTALL,
+        )
+        if match is None:
+            failures.append(f"Chiba projects missing municipality section: {slug}")
+            continue
+        for phrase in phrases:
+            if phrase not in match.group(1):
+                failures.append(f"Chiba projects {slug} missing fact: {phrase}")
+        records = load_json(ROOT / "data" / "reviewed" / slug / "projects.json")
+        for record in records:
+            if record["review_status"] == "reviewed" and record["official_title"] not in match.group(1):
+                failures.append(f"Chiba projects {slug} missing official title: {record['official_title']}")
+    return failures
+
+
 def main() -> int:
     args = parse_args()
     failures: list[str] = []
     validate_saitama_data_facts()
+    validate_chiba_data_facts()
     required_files = (
         set(REQUIRED_FILES)
         | published_required_files()
@@ -1011,6 +1105,7 @@ def main() -> int:
         | osaka_cluster_project_detail_files()
         | kanagawa_cluster_project_detail_files()
         | saitama_project_detail_files()
+        | chiba_project_detail_files()
         | {"municipalities/osaka-prefecture/index.html"}
         | {
             f"assemblies/{slug}/index.html"
@@ -1064,6 +1159,7 @@ def main() -> int:
     failures.extend(validate_kanagawa_prefecture_page())
     failures.extend(validate_kanagawa_assembly_scope())
     failures.extend(validate_saitama_export())
+    failures.extend(validate_chiba_export())
     failures.extend(validate_hokkaido_assembly_scope())
     failures.extend(validate_osaka_assembly_scope())
 
