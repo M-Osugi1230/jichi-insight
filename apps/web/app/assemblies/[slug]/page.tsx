@@ -67,7 +67,8 @@ export default async function AssemblyDetailPage({params}:PageProps){
   const {slug}=await params;
   if(!isAssemblySlug(slug)) notFound();
   const data=assemblies[slug]; const assembly=data.assembly;
-  const members=assembly.factions.reduce((total,f)=>total+f.member_count,0);
+  // Saitama prefectural assembly has three unaffiliated members represented by individual-name columns.
+  const members=assembly.factions.reduce((total,f)=>total+f.member_count,0) + (slug==="saitama-prefecture" ? 3 : 0);
   const receipt=data.disclosure.items.find(item=>item.item==="political_activity_expense_receipts");
   const votingInfo=data.disclosure.items.find(item=>item.item==="faction_votes");
   const noFactionVotes=votingInfo?.availability==="not_published";
