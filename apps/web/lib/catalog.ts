@@ -37,7 +37,7 @@ export type MunicipalityKey =
   | "kobe-city"
   | "miyagi-prefecture"
   | "sendai-city"
-  | "shizuoka-city";
+  | "shizuoka-city"
   | "hamamatsu-city"
   | "shizuoka-prefecture";
 export type SourceRecord = {
