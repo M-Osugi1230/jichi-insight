@@ -1,0 +1,168 @@
+{
+    "version": "1.0.0",
+    "updated_at": "2026-11-21",
+    "municipality_id": "jp-local-281000",
+    "municipality_key": "kobe-city",
+    "issue": 858,
+    "scope": "expanded",
+    "review_status": "reviewed",
+    "population": {
+        "description": "第6次神戸市基本計画（2026〜2035年度）に基づく実施計画「神戸2030ビジョン」（2026〜2030年度）の体系（3方向性→基本政策14件→主な施策（再掲を含む80件・再掲を除く62件）→個別事業（毎年度の予算編成で具体化））を母集団とした。登録単位は基本政策とした。理由は、計画書が方向性のもとに基本政策を政策単位として掲げ、主な施策はその構成要素として列挙される構成であり、進行管理（神戸2030ビジョン推進会議による検証・改善）も計画全体を対象に毎年度行われる仕組みで、主な施策には固有の公式評価・金額・KPIが設定されないためである。主な施策には再掲が18件含まれ、施策単位の登録は同一施策の重複登録になる。KPI（21件）は方向性単位で設定され、Well-Being指標の客観指標は計画全体に設定される。前計画（神戸2025ビジョン）の体系・評価は版が異なるため、現行計画の実績として付け替えない。",
+        "fiscal_year": 2026,
+        "direction_count": 3,
+        "policy_count": 14,
+        "measure_count": 80,
+        "unique_measure_count": 62,
+        "kpi_count": 21,
+        "source_ids": [
+            "kobe-city-2030-vision-full-pdf",
+            "kobe-city-2030-vision-page",
+            "kobe-city-2030-vision-promotion-council-page"
+        ]
+    },
+    "selection_rule": {
+        "description": "計画体系の柱である3方向性を掲載順に巡回し、各方向性の基本政策を掲載順に1件ずつ選ぶ（1巡目3件・2巡目3件・3巡目3件）。方向性Iの基本政策は3件で尽きるため、4巡目は方向性IIの4番目の基本政策を選ぶ（1件）。合計10件。掲載順は神戸2030ビジョン第2章の並びで定める。金額の大小では選ばない。",
+        "pillars": [
+            "方向性I 世界と繋がる２つの港「新たな時代の国際都市」へ",
+            "方向性II 個性豊かで多様な地域の融合「日常と非日常が交わり続ける都市」へ",
+            "方向性III ともに乗り越え育んだ絆「いつまでも幸せを感じ、分かち合える都市」へ"
+        ]
+    },
+    "selections": [
+        {
+            "pillar": "方向性I 世界と繋がる２つの港「新たな時代の国際都市」へ",
+            "policy": "方向性I 世界と繋がる２つの港「新たな時代の国際都市」へ",
+            "department": null,
+            "project_id": "jp-local-281000-project-2026-global-talent-development",
+            "series_id": "jp-local-281000-project-series-global-talent-development",
+            "official_title": "多様な交流を通じて世界で活躍する人材の育成を進める",
+            "selection_basis": "方向性I 世界と繋がる２つの港「新たな時代の国際都市」への基本政策1（1巡目）。計画体系の柱である3方向性を掲載順に巡回し、各方向性の基本政策を掲載順に1件ずつ選ぶ規則によるもので、金額の大小では選んでいない。",
+            "source_ids": [
+                "kobe-city-2030-vision-full-pdf",
+                "kobe-city-2030-vision-page"
+            ]
+        },
+        {
+            "pillar": "方向性II 個性豊かで多様な地域の融合「日常と非日常が交わり続ける都市」へ",
+            "policy": "方向性II 個性豊かで多様な地域の融合「日常と非日常が交わり続ける都市」へ",
+            "department": null,
+            "project_id": "jp-local-281000-project-2026-downtown-experience-and-business",
+            "series_id": "jp-local-281000-project-series-downtown-experience-and-business",
+            "official_title": "五感を刺激する体験と魅力的なビジネス環境を創出する都心をつくる",
+            "selection_basis": "方向性II 個性豊かで多様な地域の融合「日常と非日常が交わり続ける都市」への基本政策1（1巡目）。計画体系の柱である3方向性を掲載順に巡回し、各方向性の基本政策を掲載順に1件ずつ選ぶ規則によるもので、金額の大小では選んでいない。",
+            "source_ids": [
+                "kobe-city-2030-vision-full-pdf",
+                "kobe-city-2030-vision-page"
+            ]
+        },
+        {
+            "pillar": "方向性III ともに乗り越え育んだ絆「いつまでも幸せを感じ、分かち合える都市」へ",
+            "policy": "方向性III ともに乗り越え育んだ絆「いつまでも幸せを感じ、分かち合える都市」へ",
+            "department": null,
+            "project_id": "jp-local-281000-project-2026-inclusive-challenge-society",
+            "series_id": "jp-local-281000-project-series-inclusive-challenge-society",
+            "official_title": "多様な主体や団体の協働や支え合いにより、誰もが安心して夢に向かって挑戦できる社会をつくる",
+            "selection_basis": "方向性III ともに乗り越え育んだ絆「いつまでも幸せを感じ、分かち合える都市」への基本政策1（1巡目）。計画体系の柱である3方向性を掲載順に巡回し、各方向性の基本政策を掲載順に1件ずつ選ぶ規則によるもので、金額の大小では選んでいない。",
+            "source_ids": [
+                "kobe-city-2030-vision-full-pdf",
+                "kobe-city-2030-vision-page"
+            ]
+        },
+        {
+            "pillar": "方向性I 世界と繋がる２つの港「新たな時代の国際都市」へ",
+            "policy": "方向性I 世界と繋がる２つの港「新たな時代の国際都市」へ",
+            "department": null,
+            "project_id": "jp-local-281000-project-2026-international-city-appeal",
+            "series_id": "jp-local-281000-project-series-international-city-appeal",
+            "official_title": "新たな時代の国際都市にふさわしい都市の魅力をつくる",
+            "selection_basis": "方向性I 世界と繋がる２つの港「新たな時代の国際都市」への基本政策2（2巡目）。計画体系の柱である3方向性を掲載順に巡回し、各方向性の基本政策を掲載順に1件ずつ選ぶ規則によるもので、金額の大小では選んでいない。",
+            "source_ids": [
+                "kobe-city-2030-vision-full-pdf",
+                "kobe-city-2030-vision-page"
+            ]
+        },
+        {
+            "pillar": "方向性II 個性豊かで多様な地域の融合「日常と非日常が交わり続ける都市」へ",
+            "policy": "方向性II 個性豊かで多様な地域の融合「日常と非日常が交わり続ける都市」へ",
+            "department": null,
+            "project_id": "jp-local-281000-project-2026-existing-urban-area-renewal",
+            "series_id": "jp-local-281000-project-series-existing-urban-area-renewal",
+            "official_title": "ゆとりある上質な暮らしが生まれる既成市街地・ニュータウンの再生を推進する",
+            "selection_basis": "方向性II 個性豊かで多様な地域の融合「日常と非日常が交わり続ける都市」への基本政策2（2巡目）。計画体系の柱である3方向性を掲載順に巡回し、各方向性の基本政策を掲載順に1件ずつ選ぶ規則によるもので、金額の大小では選んでいない。",
+            "source_ids": [
+                "kobe-city-2030-vision-full-pdf",
+                "kobe-city-2030-vision-page"
+            ]
+        },
+        {
+            "pillar": "方向性III ともに乗り越え育んだ絆「いつまでも幸せを感じ、分かち合える都市」へ",
+            "policy": "方向性III ともに乗り越え育んだ絆「いつまでも幸せを感じ、分かち合える都市」へ",
+            "department": null,
+            "project_id": "jp-local-281000-project-2026-childrearing-work-balance",
+            "series_id": "jp-local-281000-project-series-childrearing-work-balance",
+            "official_title": "子育てと仕事の両立を支え、こどもたちの健やかな成長と豊かな感性を育む",
+            "selection_basis": "方向性III ともに乗り越え育んだ絆「いつまでも幸せを感じ、分かち合える都市」への基本政策2（2巡目）。計画体系の柱である3方向性を掲載順に巡回し、各方向性の基本政策を掲載順に1件ずつ選ぶ規則によるもので、金額の大小では選んでいない。",
+            "source_ids": [
+                "kobe-city-2030-vision-full-pdf",
+                "kobe-city-2030-vision-page"
+            ]
+        },
+        {
+            "pillar": "方向性I 世界と繋がる２つの港「新たな時代の国際都市」へ",
+            "policy": "方向性I 世界と繋がる２つの港「新たな時代の国際都市」へ",
+            "department": null,
+            "project_id": "jp-local-281000-project-2026-metropolitan-economic-growth",
+            "series_id": "jp-local-281000-project-series-metropolitan-economic-growth",
+            "official_title": "圏域経済を牽引する大都市として、神戸経済のさらなる成長と国際競争力を高める",
+            "selection_basis": "方向性I 世界と繋がる２つの港「新たな時代の国際都市」への基本政策3（3巡目）。計画体系の柱である3方向性を掲載順に巡回し、各方向性の基本政策を掲載順に1件ずつ選ぶ規則によるもので、金額の大小では選んでいない。",
+            "source_ids": [
+                "kobe-city-2030-vision-full-pdf",
+                "kobe-city-2030-vision-page"
+            ]
+        },
+        {
+            "pillar": "方向性II 個性豊かで多様な地域の融合「日常と非日常が交わり続ける都市」へ",
+            "policy": "方向性II 個性豊かで多様な地域の融合「日常と非日常が交わり続ける都市」へ",
+            "department": null,
+            "project_id": "jp-local-281000-project-2026-nature-for-next-generation",
+            "series_id": "jp-local-281000-project-series-nature-for-next-generation",
+            "official_title": "海と山を感じる豊かな自然を次代につなぐ",
+            "selection_basis": "方向性II 個性豊かで多様な地域の融合「日常と非日常が交わり続ける都市」への基本政策3（3巡目）。計画体系の柱である3方向性を掲載順に巡回し、各方向性の基本政策を掲載順に1件ずつ選ぶ規則によるもので、金額の大小では選んでいない。",
+            "source_ids": [
+                "kobe-city-2030-vision-full-pdf",
+                "kobe-city-2030-vision-page"
+            ]
+        },
+        {
+            "pillar": "方向性III ともに乗り越え育んだ絆「いつまでも幸せを感じ、分かち合える都市」へ",
+            "policy": "方向性III ともに乗り越え育んだ絆「いつまでも幸せを感じ、分かち合える都市」へ",
+            "department": null,
+            "project_id": "jp-local-281000-project-2026-healthy-secure-living",
+            "series_id": "jp-local-281000-project-series-healthy-secure-living",
+            "official_title": "きめ細かい多様な支援により誰もが安心して健やかに暮らせる環境をつくる",
+            "selection_basis": "方向性III ともに乗り越え育んだ絆「いつまでも幸せを感じ、分かち合える都市」への基本政策3（3巡目）。計画体系の柱である3方向性を掲載順に巡回し、各方向性の基本政策を掲載順に1件ずつ選ぶ規則によるもので、金額の大小では選んでいない。",
+            "source_ids": [
+                "kobe-city-2030-vision-full-pdf",
+                "kobe-city-2030-vision-page"
+            ]
+        },
+        {
+            "pillar": "方向性II 個性豊かで多様な地域の融合「日常と非日常が交わり続ける都市」へ",
+            "policy": "方向性II 個性豊かで多様な地域の融合「日常と非日常が交わり続ける都市」へ",
+            "department": null,
+            "project_id": "jp-local-281000-project-2026-connected-distinctive-townscape",
+            "series_id": "jp-local-281000-project-series-connected-distinctive-townscape",
+            "official_title": "個性豊かなまちなみをつなぎ日常と非日常が交わる都市をつくる",
+            "selection_basis": "方向性II 個性豊かで多様な地域の融合「日常と非日常が交わり続ける都市」への基本政策4（4巡目）。計画体系の柱である3方向性を掲載順に巡回し、各方向性の基本政策を掲載順に1件ずつ選ぶ規則によるもので、金額の大小では選んでいない。",
+            "source_ids": [
+                "kobe-city-2030-vision-full-pdf",
+                "kobe-city-2030-vision-page"
+            ]
+        }
+    ],
+    "expansion_rule": {
+        "description": "初回登録として10件（3方向性の基本政策を巡回して選んだ10件）。後続の展開では、同じ掲載順ルールを継続し、巡回の続き（方向性IIIの4番目以降）から基本政策を追加する。",
+        "added_count": 10,
+        "total_count": 10
+    }
+}
