@@ -1207,7 +1207,7 @@ def validate_chiba_cluster_export() -> list[str]:
             "千葉県総合計画 ～千葉の未来をともに創る～",
             "基本目標6", "政策15", "施策41",
             "2026年度に成立した一般会計当初予算",
-            "2022〜2024年度の普通会計決算",
+            "2022〜2024年度の普通会計決算", "51件",
             "熊谷 俊人", "2025年4月5日", "2029年4月4日",
             "1,404,905票", "25件", "千葉県議会", "継続審査中",
             "神谷 俊一", "2025年3月21日", "2029年3月20日", "245,748票",
@@ -1237,6 +1237,8 @@ def validate_chiba_cluster_export() -> list[str]:
         for phrase in ("千葉県・熊谷 俊人", "千葉市・神谷 俊一"):
             if phrase not in html:
                 failures.append(f"Promises page missing Chiba executive: {phrase}")
+        if html.count("Reviewed 公約原文 25件") < 2:
+            failures.append("Promises page does not show 25 reviewed promises for both Chiba executives")
     return failures
 
 
