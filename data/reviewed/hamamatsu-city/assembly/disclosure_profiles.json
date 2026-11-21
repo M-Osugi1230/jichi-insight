@@ -1,0 +1,90 @@
+[
+  {
+    "id": "jp-local-221309-assembly-2023-disclosure-profile",
+    "assembly_id": "jp-local-221309-assembly-2023",
+    "as_of": "2026-11-22",
+    "items": [
+      {
+        "item": "member_roster",
+        "availability": "published",
+        "granularity": "member",
+        "note": "議員名簿（50音順・会派別・区別）が市議会サイトで公開され、氏名・読み仮名・所属会派・委員会・選挙区を確認できる。"
+      },
+      {
+        "item": "faction_composition",
+        "availability": "published",
+        "granularity": "faction",
+        "note": "会派別名簿（令和8年6月3日更新）で7会派44人を確認した。本登録の対象会期時点の構成は議員賛否一覧の表頭の並びとも一致する。"
+      },
+      {
+        "item": "committee_composition",
+        "availability": "published",
+        "granularity": "member",
+        "note": "委員会別名簿（令和8年6月1日現在）で、議会運営委員会・常任委員会5・特別委員会5の委員構成が公開されている。"
+      },
+      {
+        "item": "proposals_and_results",
+        "availability": "published",
+        "granularity": "document",
+        "note": "会期ごとに議決結果一覧（事件番号・件名・上程日・議決日・結果）がPDFで公開される。発議案（意見書）は議決結果一覧・議員賛否一覧の対象外で、可決した意見書のページで件名と日付のみが公開される。"
+      },
+      {
+        "item": "faction_votes",
+        "availability": "not_published",
+        "granularity": "faction",
+        "note": "会派別の賛否の集計表は公表されていない。議員個人別の賛否のみが公表されているため、会派別票は登録しない。"
+      },
+      {
+        "item": "member_votes",
+        "availability": "published",
+        "granularity": "member",
+        "note": "議員賛否一覧（PDF）で、本会議に付された全議案等について議員個人別の賛否（○賛成・×反対・-棄権・※除斥・／欠席）が公開される。議長は網掛けで示され、議決に加わることができない。"
+      },
+      {
+        "item": "political_activity_expense_reports",
+        "availability": "published",
+        "granularity": "faction",
+        "note": "政務活動費は会派単位で交付され、収支報告書・会計帳簿・証拠書類等が会派単位で公開される（令和7年度は7会派・計82ファイル）。議員個人への交付はない。"
+      },
+      {
+        "item": "political_activity_expense_receipts",
+        "availability": "published",
+        "granularity": "faction",
+        "note": "証拠書類等は会派ごとの公開ファイルに含まれ、オンラインで閲覧できる。"
+      },
+      {
+        "item": "inspection_trip_reports",
+        "availability": "not_published",
+        "granularity": "none",
+        "note": "委員会視察の報告書・一覧は単独では公表されていない。会派の海外視察の報告書は、政務活動費の公開資料に含まれて公表される場合がある。"
+      },
+      {
+        "item": "meeting_minutes",
+        "availability": "published",
+        "granularity": "document",
+        "note": "会議録検索システムで本会議・委員会の会議録を検索・閲覧できる。"
+      },
+      {
+        "item": "session_broadcast",
+        "availability": "unknown",
+        "granularity": "unknown",
+        "note": "本会議の映像配信の状況は本登録では確認していない。"
+      },
+      {
+        "item": "petition_results",
+        "availability": "published",
+        "granularity": "document",
+        "note": "請願・陳情・要望の受理状況一覧（年度単位）が公開され、委員会で審査された陳情は審査結果（不採択等）まで示される。審査を行った日は公表されない。請願は紹介議員名も示される。"
+      }
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "hamamatsu-city-assembly-session-2026-3",
+      "hamamatsu-city-assembly-member-roster",
+      "hamamatsu-city-assembly-petitions-2026",
+      "hamamatsu-city-assembly-seimu-fy2025",
+      "hamamatsu-city-assembly-minutes-search"
+    ]
+  }
+]

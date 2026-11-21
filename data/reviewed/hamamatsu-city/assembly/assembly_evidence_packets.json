@@ -1,0 +1,79 @@
+[
+  {
+    "id": "jp-local-221309-assembly-2023-evidence-packet-session-2026-3",
+    "subject_type": "assembly",
+    "subject_id": "jp-local-221309-assembly-2023",
+    "claims": [
+      {
+        "field": "session",
+        "summary": "令和8年第3回定例会（9月定例会）の会期は2026年9月7日から10月26日までの50日間であり、本会議情報ページと日程ページで一致を確認した。",
+        "decision": "accepted",
+        "source_ids": [
+          "hamamatsu-city-assembly-session-2026-3",
+          "hamamatsu-city-assembly-schedule-2026-3"
+        ]
+      },
+      {
+        "field": "proposals",
+        "summary": "議決結果一覧（全議案）に載る本会議付議分は62件（第91〜135号議案45件、認第1〜15号15件、選第5・6号2件）で、全件の件名・上程日・議決日・結果を同資料で確認した。これに加えて、可決した意見書のページで確認した意見書4件と、受理状況一覧で本会期中に議会運営委員会の審査で不採択となった陳情3件を登録し、合計69件とした。",
+        "decision": "accepted",
+        "source_ids": [
+          "hamamatsu-city-assembly-results-2026-3",
+          "hamamatsu-city-assembly-opinions-2026-3",
+          "hamamatsu-city-assembly-petitions-2026"
+        ]
+      },
+      {
+        "field": "settlements",
+        "summary": "令和7年度決算（認第1〜15号）は全件が同会期で認定された。企業会計3件は9月14日、一般会計・特別会計11件を含む12件は10月26日の議決である。",
+        "decision": "accepted",
+        "source_ids": [
+          "hamamatsu-city-assembly-results-2026-3",
+          "hamamatsu-city-assembly-member-votes-2026-3"
+        ]
+      },
+      {
+        "field": "petitions",
+        "summary": "令和8年に受理された請願は0件である。陳情は22件が受理され、委員会で審査された8件はいずれも不採択、その他は会派配付で結論が出ない。本登録では、本会期の期間に議会運営委員会で審査された陳情第12〜14号のみを議案等として登録し、他の審査済み陳情は審査日が公表されず本会期の結論と確定できないため登録対象外とした。要望書は全件が会派配付で結論の仕組みがないため登録対象外とした。",
+        "decision": "accepted",
+        "source_ids": [
+          "hamamatsu-city-assembly-petitions-2026"
+        ]
+      },
+      {
+        "field": "opinion_documents",
+        "summary": "意見書4件は、市の「可決した意見書」ページで件名と日付（2026年10月26日）を確認した。同ページの本文には「令和7年9月定例会では」とあるが、ページの表題と各意見書の日付は令和8年9月定例会のものであり、市の誤記と判断した。発議案の番号と件名の対応、議員別の賛否は公表資料では確認できないため、番号は推測で割り当てず、票も作らない。",
+        "decision": "accepted",
+        "source_ids": [
+          "hamamatsu-city-assembly-opinions-2026-3"
+        ]
+      },
+      {
+        "field": "membership",
+        "summary": "議員定数46人・現員44人（欠員2人）。会期時点の会派構成は議員賛否一覧の表頭と会派別名簿で一致を確認した（自由民主党浜松23人・公明党5人・市民クラブ6人・創造浜松・国民民主党浜松5人・日本共産党浜松市議団3人・浜松市政向上委員会1人・市民サポート浜松1人）。議長は渥美誠（2026年5月28日就任）、副議長は平野岳子である。",
+        "decision": "accepted",
+        "source_ids": [
+          "hamamatsu-city-assembly-member-votes-2026-3",
+          "hamamatsu-city-assembly-faction-roster",
+          "hamamatsu-city-assembly-chair-profile"
+        ]
+      },
+      {
+        "field": "inspection_trips",
+        "summary": "委員会視察の報告書・一覧の単独公表は確認できなかったため、視察は0件とし、公表状況を開示プロファイルに欠損明示した。会派の海外視察報告書は政務活動費の公開資料に含まれる。",
+        "decision": "accepted",
+        "source_ids": [
+          "hamamatsu-city-assembly-session-2026-3",
+          "hamamatsu-city-assembly-seimu-fy2025"
+        ]
+      }
+    ],
+    "open_questions": [
+      "各議案等の表決方法（起立・簡易等の別）は議員賛否一覧に記載がなく、会議録検索システムでの個別照合は本登録時点で未実施のため、票の method は unknown とした。",
+      "発議案第14〜17号と意見書4件の対応は、市の公表資料（議決結果一覧・議員賛否一覧・意見書ページ）では確認できない。会議録で照合できた時点で番号を登録する。",
+      "陳情の委員会審査が行われた日は受理状況一覧に公表されない。陳情第12〜14号の decided_at は空欄とし、審査日が判明した時点で更新する。",
+      "認第4・7・13号には反対討論があった旨が棚卸し段階で記録されているが、会議録での個別照合は未実施である。賛否そのものは議員賛否一覧で確認済みである。"
+    ],
+    "review_status": "reviewed"
+  }
+]
