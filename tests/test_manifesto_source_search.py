@@ -33,7 +33,7 @@ def test_manifesto_source_search_fixture_is_registered_and_linked():
 def test_manifesto_source_searches_match_contract_and_safety_boundary():
     searches = load("data/entities/executives/manifesto_source_searches.json")
 
-    assert len(searches) == 26
+    assert len(searches) == 27
     assert {search["executive_term_id"] for search in searches} == {
         "jp-local-400009-executive-2025-04-14",
         "jp-local-401307-executive-2022-12-07",
@@ -61,6 +61,7 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         "jp-local-040002-executive-2025-11-21",
         "jp-local-220001-executive-2024-05-26",
         "jp-local-221309-executive-2023-05-01",
+        "jp-local-221007-executive-2023-04-13",
     }
 
     for search in searches:
@@ -74,17 +75,17 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         for search in searches
         if search["result_status"] == "no_stable_primary_source_found"
     ]
-    # Twenty-two searches have registered a primary source (Fukuoka
+    # Twenty-four searches have registered a primary source (Fukuoka
     # Prefecture, Fukuoka City, Kitakyushu City, Aichi Prefecture,
     # Nagoya City, Sapporo City, Hokkaido, Osaka Prefecture, Osaka
     # City, Kanagawa Prefecture, Yokohama City, Kawasaki City,
     # Saitama Prefecture, Saitama City, Kawaguchi City, Chiba
     # Prefecture, Chiba City, Hyogo Prefecture, Kobe City,
     # Miyagi Prefecture, Sendai City, Shizuoka Prefecture and
-    # Hamamatsu City, each closed by its official election
-    # bulletin (Sendai's bulletin survives
-    # only as the archived copy of the city's official
-    # election-period URL);
+    # Hamamatsu City and Shizuoka City, each closed by its
+    # official election bulletin (the Sendai and Shizuoka City
+    # bulletins survive only as archived copies of the cities'
+    # official election-period URLs);
     # Kawasaki's bulletin is registered as reprinted in the city
     # election commission's official election record).
     # Three searches remain exceptions:

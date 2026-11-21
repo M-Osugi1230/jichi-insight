@@ -1018,5 +1018,47 @@
       "第21回選の候補者提出の音声読み上げ対応データの公表が確認できれば、登録済みの公約文と突合する。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-shizuoka-city-2023-manifesto-review",
+    "subject_type": "manifesto_review",
+    "subject_id": "manifesto-review-jp-local-221007-2023",
+    "claims": [
+      {
+        "field": "source_location",
+        "statement": "なんばたかし候補欄は選挙公報1ページ目に掲載され、見出し「市政の変革で『難しい』を『できる』に変えます！」の下に番号付きの3項目（①現場主義、②開かれたわかりやすい市政、③信頼と共創の市政）が見出しと本文で配置され、下部にプロフィール欄、右側に顔写真と候補者名・標語「現場主義」の縦書きが配置されている。",
+        "source_ids": [
+          "shizuoka-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全2ページ）の1ページ目。",
+        "decision": "accepted",
+        "review_note": "2026-11-22に保存コピーを取得し、描画画像で候補者欄の構成を確認した。"
+      },
+      {
+        "field": "segmentation_status",
+        "statement": "3項目は見出しと本文が一体の単位であり、見出しだけでは公約文として完結しないため、見出しと本文を改行でつないだ3件へ分割した。大見出し（標語的宣言）とプロフィール欄（経歴の提示）は公約として分割しなかった。",
+        "source_ids": [
+          "shizuoka-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "候補者欄の番号付き3項目とプロフィール欄。",
+        "decision": "accepted",
+        "review_note": "見出しと本文を1レコードとする形式は福岡市長・宮城県知事・静岡県知事の先例に倣った境界判断であり、open_questions に残す。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は静岡市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは選挙期間中は市の公式サイトで公表されていたが、現行サイトからは削除されている（2026年11月22日時点で当該URLは404）ため、市の公式URLの Wayback Machine 保存コピー（2023年3月29日保存、2023年3月27日・4月9日保存分とダイジェスト一致）から取得した。公報は全文が画像でテキスト層はないため、登録文はPDFの描画画像（200dpi・300dpi）で照合して転記した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "shizuoka-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "公報1ページ目欄外の備考（候補者から提出された原稿をそのまま写真製版により印刷した旨）と、市の公式URLの Wayback Machine 保存状況に基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の詳細資料が新たに確認できれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "見出しと本文を1レコードとする境界判断は福岡市長・宮城県知事・静岡県知事の先例に倣ったものであり、資料上の項目境界の解釈が変われば見直す。",
+      "難波候補の公式サイト等に掲載された詳細な政策資料が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
   }
 ]
