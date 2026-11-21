@@ -54,6 +54,10 @@ export default function ChibaPrefecturePage() {
     ? promisesForExecutive(governor).filter((promise) => promise.review_status === "reviewed" || promise.review_status === "verified")
     : [];
   const electionEvidence = governor ? evidenceForExecutive(governor) : undefined;
+  const cityMayor = currentExecutiveTerms.find((term) => term.municipality_id === "jp-local-121002" && term.office === "mayor" && term.status === "current" && (term.review_status === "reviewed" || term.review_status === "verified"));
+  const cityMayorPromises = cityMayor ? promisesForExecutive(cityMayor).filter((promise) => promise.review_status === "reviewed" || promise.review_status === "verified") : [];
+  const cityMayorEvidence = cityMayor ? evidenceForExecutive(cityMayor) : undefined;
+  const cityElectionClaim = cityMayorEvidence?.claims.find((claim) => claim.field === "election_date");
   const budget = chibaBudgetRecord("total_revenue");
   const tax = chibaBudgetRecord("local_tax");
   const spending = chibaBudgetRecord("total_expenditure");
@@ -235,6 +239,14 @@ export default function ChibaPrefecturePage() {
             </div>
           </section>
 
+          <section className={styles.scope} aria-labelledby="chiba-city-mayor-title">
+            <div><p className="eyebrow">Related municipality · Chiba City</p><h2 id="chiba-city-mayor-title">千葉市長の現任期と公約</h2><p><Link href="/promises#chiba-city">千葉市長の公約原文と根拠を見る</Link></p></div>
+            <div>{cityMayor ? <><h3>{cityMayor.person_name} 市長</h3>
+              <p>任期：{formatDateJa(cityMayor.term_start)} 〜 {formatDateJa(cityMayor.term_end)}</p>
+              <p>選挙日：{formatDateJa(cityMayor.election_date)} ／ Reviewed 公約原文：{cityMayorPromises.length}件</p>
+              <details><summary>2025年市長選挙の得票数・根拠</summary><p>{cityElectionClaim?.statement ?? "選挙結果の根拠は未登録です。"}</p></details>
+              <p><Link href="/assemblies/chiba-city">千葉市議会の議案・表決・情報公開を見る</Link></p></> : <p>千葉市長の現任期はReviewed台帳に未登録です。</p>}</div>
+          </section>
           <section id="assembly" className={styles.scope} aria-labelledby="assembly-title">
             <div>
               <p className="eyebrow">Reviewed assembly · Stage 4</p>
