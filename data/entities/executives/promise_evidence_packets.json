@@ -13332,6 +13332,386 @@
     "review_status": "reviewed"
   },
   {
+    "id": "evidence-hamamatsu-city-2023-promise-001",
+    "subject_type": "promise",
+    "subject_id": "jp-local-221309-executive-2023-05-01-promise-001",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の中野ゆうすけ候補欄から、資料上の項目の境界（柱の見出しと☑印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "hamamatsu-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報・中野ゆうすけ候補欄（1ページ左上）柱1の見出し。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式（テキスト層なし）のため、PDFの描画画像（200dpi・350dpi）で照合し、漢字・読点・中黒・数字の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は浜松市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市選管の結果調ページから市公式サイト上で直接取得し、段階0の棚卸し時に保全した控えとバイト単位で一致することを確認した。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・350dpi）で照合した。音声読み上げ対応データ（テキスト版）は結果調ページに掲載されておらず、転記の突合には使えなかった。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "hamamatsu-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "公報の表頭（浜松市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま掲載した旨の注記）と、市選管の結果調ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "段階2の浜松市重点事業10系列のいずれにも接続しなかった。公式な対応付けが公表されれば見直す。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hamamatsu-city-2023-promise-002",
+    "subject_type": "promise",
+    "subject_id": "jp-local-221309-executive-2023-05-01-promise-002",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の中野ゆうすけ候補欄から、資料上の項目の境界（柱の見出しと☑印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "hamamatsu-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報・中野ゆうすけ候補欄（1ページ左上）柱1「安心・安全・人をもっと元気に」の項目1。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式（テキスト層なし）のため、PDFの描画画像（200dpi・350dpi）で照合し、漢字・読点・中黒・数字の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は浜松市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市選管の結果調ページから市公式サイト上で直接取得し、段階0の棚卸し時に保全した控えとバイト単位で一致することを確認した。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・350dpi）で照合した。音声読み上げ対応データ（テキスト版）は結果調ページに掲載されておらず、転記の突合には使えなかった。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "hamamatsu-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "公報の表頭（浜松市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま掲載した旨の注記）と、市選管の結果調ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した基本政策「全てのこども・若者が健やかで幸せに成長できるまちづくり」（こども・教育分野）は子育て・教育への支援を対象としており、公約の対象範囲と重なる。ただし市が公約と事業の対応付けを公式に公表したものではないため、推定接続として扱う。",
+        "source_ids": [
+          "hamamatsu-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "段階2の浜松市重点事業レコード jp-local-221309-project-2025-children-youth-healthy-growth の目的・対象範囲に基づく。",
+        "decision": "needs_review",
+        "review_note": "推定接続であり、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "事業接続は推定接続（low / inferred）であり、公式な対応付けが公表されれば見直す。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hamamatsu-city-2023-promise-003",
+    "subject_type": "promise",
+    "subject_id": "jp-local-221309-executive-2023-05-01-promise-003",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の中野ゆうすけ候補欄から、資料上の項目の境界（柱の見出しと☑印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "hamamatsu-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報・中野ゆうすけ候補欄（1ページ左上）柱1「安心・安全・人をもっと元気に」の項目2。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式（テキスト層なし）のため、PDFの描画画像（200dpi・350dpi）で照合し、漢字・読点・中黒・数字の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は浜松市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市選管の結果調ページから市公式サイト上で直接取得し、段階0の棚卸し時に保全した控えとバイト単位で一致することを確認した。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・350dpi）で照合した。音声読み上げ対応データ（テキスト版）は結果調ページに掲載されておらず、転記の突合には使えなかった。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "hamamatsu-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "公報の表頭（浜松市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま掲載した旨の注記）と、市選管の結果調ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した基本政策「関係機関との連携による包括的な支援の推進」（健康・福祉分野）は超高齢社会への対応と地域福祉の推進を対象としており、健康長寿で暮らせるまちづくりと重なる。ただし市が公約と事業の対応付けを公式に公表したものではないため、推定接続として扱う。",
+        "source_ids": [
+          "hamamatsu-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "段階2の浜松市重点事業レコード jp-local-221309-project-2025-inclusive-support-collaboration の目的・対象範囲に基づく。",
+        "decision": "needs_review",
+        "review_note": "推定接続であり、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "事業接続は推定接続（low / inferred）であり、公式な対応付けが公表されれば見直す。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hamamatsu-city-2023-promise-004",
+    "subject_type": "promise",
+    "subject_id": "jp-local-221309-executive-2023-05-01-promise-004",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の中野ゆうすけ候補欄から、資料上の項目の境界（柱の見出しと☑印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "hamamatsu-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報・中野ゆうすけ候補欄（1ページ左上）柱1「安心・安全・人をもっと元気に」の項目3。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式（テキスト層なし）のため、PDFの描画画像（200dpi・350dpi）で照合し、漢字・読点・中黒・数字の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は浜松市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市選管の結果調ページから市公式サイト上で直接取得し、段階0の棚卸し時に保全した控えとバイト単位で一致することを確認した。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・350dpi）で照合した。音声読み上げ対応データ（テキスト版）は結果調ページに掲載されておらず、転記の突合には使えなかった。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "hamamatsu-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "公報の表頭（浜松市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま掲載した旨の注記）と、市選管の結果調ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した基本政策「みんなの力で自然災害から生き残る」（安全・安心・快適分野）は自然災害への備えを対象としており、公約の内容と直接重なる。ただし市が公約と事業の対応付けを公式に公表したものではないため、推定接続として扱う。",
+        "source_ids": [
+          "hamamatsu-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "段階2の浜松市重点事業レコード jp-local-221309-project-2025-disaster-survival-community の目的・対象範囲に基づく。",
+        "decision": "needs_review",
+        "review_note": "推定接続であり、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "事業接続は推定接続（low / inferred）であり、公式な対応付けが公表されれば見直す。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hamamatsu-city-2023-promise-005",
+    "subject_type": "promise",
+    "subject_id": "jp-local-221309-executive-2023-05-01-promise-005",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の中野ゆうすけ候補欄から、資料上の項目の境界（柱の見出しと☑印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "hamamatsu-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報・中野ゆうすけ候補欄（1ページ左上）柱2の見出し。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式（テキスト層なし）のため、PDFの描画画像（200dpi・350dpi）で照合し、漢字・読点・中黒・数字の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は浜松市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市選管の結果調ページから市公式サイト上で直接取得し、段階0の棚卸し時に保全した控えとバイト単位で一致することを確認した。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・350dpi）で照合した。音声読み上げ対応データ（テキスト版）は結果調ページに掲載されておらず、転記の突合には使えなかった。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "hamamatsu-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "公報の表頭（浜松市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま掲載した旨の注記）と、市選管の結果調ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "段階2の浜松市重点事業10系列のいずれにも接続しなかった。公式な対応付けが公表されれば見直す。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hamamatsu-city-2023-promise-006",
+    "subject_type": "promise",
+    "subject_id": "jp-local-221309-executive-2023-05-01-promise-006",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の中野ゆうすけ候補欄から、資料上の項目の境界（柱の見出しと☑印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "hamamatsu-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報・中野ゆうすけ候補欄（1ページ左上）柱2「産業振興・経済をもっと元気に」の項目1。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式（テキスト層なし）のため、PDFの描画画像（200dpi・350dpi）で照合し、漢字・読点・中黒・数字の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は浜松市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市選管の結果調ページから市公式サイト上で直接取得し、段階0の棚卸し時に保全した控えとバイト単位で一致することを確認した。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・350dpi）で照合した。音声読み上げ対応データ（テキスト版）は結果調ページに掲載されておらず、転記の突合には使えなかった。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "hamamatsu-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "公報の表頭（浜松市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま掲載した旨の注記）と、市選管の結果調ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した基本政策「世界を市場とする産業・サービスの創造」（産業経済分野）は地域産業の成長と稼ぐ力の向上を対象としており、公約の内容と重なる。ただし市が公約と事業の対応付けを公式に公表したものではないため、推定接続として扱う。",
+        "source_ids": [
+          "hamamatsu-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "段階2の浜松市重点事業レコード jp-local-221309-project-2025-global-market-industry-creation の目的・対象範囲に基づく。",
+        "decision": "needs_review",
+        "review_note": "推定接続であり、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "事業接続は推定接続（low / inferred）であり、公式な対応付けが公表されれば見直す。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hamamatsu-city-2023-promise-007",
+    "subject_type": "promise",
+    "subject_id": "jp-local-221309-executive-2023-05-01-promise-007",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の中野ゆうすけ候補欄から、資料上の項目の境界（柱の見出しと☑印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "hamamatsu-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報・中野ゆうすけ候補欄（1ページ左上）柱2「産業振興・経済をもっと元気に」の項目2。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式（テキスト層なし）のため、PDFの描画画像（200dpi・350dpi）で照合し、漢字・読点・中黒・数字の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は浜松市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市選管の結果調ページから市公式サイト上で直接取得し、段階0の棚卸し時に保全した控えとバイト単位で一致することを確認した。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・350dpi）で照合した。音声読み上げ対応データ（テキスト版）は結果調ページに掲載されておらず、転記の突合には使えなかった。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "hamamatsu-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "公報の表頭（浜松市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま掲載した旨の注記）と、市選管の結果調ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "段階2の浜松市重点事業10系列のいずれにも接続しなかった。公式な対応付けが公表されれば見直す。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hamamatsu-city-2023-promise-008",
+    "subject_type": "promise",
+    "subject_id": "jp-local-221309-executive-2023-05-01-promise-008",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の中野ゆうすけ候補欄から、資料上の項目の境界（柱の見出しと☑印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "hamamatsu-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報・中野ゆうすけ候補欄（1ページ左上）柱3の見出し。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式（テキスト層なし）のため、PDFの描画画像（200dpi・350dpi）で照合し、漢字・読点・中黒・数字の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は浜松市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市選管の結果調ページから市公式サイト上で直接取得し、段階0の棚卸し時に保全した控えとバイト単位で一致することを確認した。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・350dpi）で照合した。音声読み上げ対応データ（テキスト版）は結果調ページに掲載されておらず、転記の突合には使えなかった。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "hamamatsu-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "公報の表頭（浜松市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま掲載した旨の注記）と、市選管の結果調ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "段階2の浜松市重点事業10系列のいずれにも接続しなかった。公式な対応付けが公表されれば見直す。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hamamatsu-city-2023-promise-009",
+    "subject_type": "promise",
+    "subject_id": "jp-local-221309-executive-2023-05-01-promise-009",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の中野ゆうすけ候補欄から、資料上の項目の境界（柱の見出しと☑印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "hamamatsu-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報・中野ゆうすけ候補欄（1ページ左上）柱3「地域活性・まちをもっと元気に」の項目1。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式（テキスト層なし）のため、PDFの描画画像（200dpi・350dpi）で照合し、漢字・読点・中黒・数字の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は浜松市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市選管の結果調ページから市公式サイト上で直接取得し、段階0の棚卸し時に保全した控えとバイト単位で一致することを確認した。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・350dpi）で照合した。音声読み上げ対応データ（テキスト版）は結果調ページに掲載されておらず、転記の突合には使えなかった。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "hamamatsu-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "公報の表頭（浜松市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま掲載した旨の注記）と、市選管の結果調ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した基本政策「市民が集う活力ある都市づくり」（安全・安心・快適分野）は拠点の活性化と市全体のにぎわいを対象としており、公約の内容と重なる。ただし市が公約と事業の対応付けを公式に公表したものではないため、推定接続として扱う。",
+        "source_ids": [
+          "hamamatsu-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "段階2の浜松市重点事業レコード jp-local-221309-project-2025-vibrant-city-gathering の目的・対象範囲に基づく。",
+        "decision": "needs_review",
+        "review_note": "推定接続であり、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "事業接続は推定接続（low / inferred）であり、公式な対応付けが公表されれば見直す。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hamamatsu-city-2023-promise-010",
+    "subject_type": "promise",
+    "subject_id": "jp-local-221309-executive-2023-05-01-promise-010",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）の中野ゆうすけ候補欄から、資料上の項目の境界（柱の見出しと☑印の項目）に従い原文のまま転記した。",
+        "source_ids": [
+          "hamamatsu-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報・中野ゆうすけ候補欄（1ページ左上）柱3「地域活性・まちをもっと元気に」の項目2。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式（テキスト層なし）のため、PDFの描画画像（200dpi・350dpi）で照合し、漢字・読点・中黒・数字の表記まで確定した。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は浜松市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位に当たる。掲載PDFは市選管の結果調ページから市公式サイト上で直接取得し、段階0の棚卸し時に保全した控えとバイト単位で一致することを確認した。候補者欄は画像形式のため、登録文はPDFの描画画像から転記し、複数解像度（200dpi・350dpi）で照合した。音声読み上げ対応データ（テキスト版）は結果調ページに掲載されておらず、転記の突合には使えなかった。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "hamamatsu-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "公報の表頭（浜松市選挙管理委員会の発行表示と、候補者から提出された原稿をそのまま掲載した旨の注記）と、市選管の結果調ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の政策資料等の詳細資料が新たに見つかれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した基本政策「市民とともに歩む未来を見据えた行政運営」（地方自治分野）は多様な主体との協働を通じたまちづくりを掲げており、コミュニティの力を引き出す環境整備と重なる。ただし市が公約と事業の対応付けを公式に公表したものではないため、推定接続として扱う。",
+        "source_ids": [
+          "hamamatsu-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "段階2の浜松市重点事業レコード jp-local-221309-project-2025-citizen-partnered-administration の目的・対象範囲に基づく。",
+        "decision": "needs_review",
+        "review_note": "推定接続であり、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      }
+    ],
+    "open_questions": [
+      "事業接続は推定接続（low / inferred）であり、公式な対応付けが公表されれば見直す。",
+      "候補者の政策資料等の詳細な候補者資料が新たに見つかれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
     "id": "evidence-shizuoka-pref-2024-promise-001",
     "subject_type": "promise",
     "subject_id": "jp-local-220001-executive-2024-05-26-promise-001",
