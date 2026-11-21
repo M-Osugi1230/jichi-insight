@@ -1090,7 +1090,7 @@ def validate_chiba_data_facts() -> None:
     )
     assert len(chiba_city_evidence) == 10
     assert all(
-        any(claim["field"] == "kpis" and "分野単位" in claim["statement"]
+        any(claim["field"] == "kpis" and "付け替えない" in claim["statement"]
             for claim in packet["claims"])
         for packet in chiba_city_evidence
     )
