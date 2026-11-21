@@ -18,6 +18,7 @@ SOURCE_CATALOG_PATHS = [
     ROOT / "data" / "catalog" / "saitama_prefecture_finance_sources.json",
     ROOT / "data" / "catalog" / "chiba_prefecture_finance_sources.json",
     ROOT / "data" / "catalog" / "hyogo_prefecture_finance_sources.json",
+    ROOT / "data" / "catalog" / "miyagi_prefecture_finance_sources.json",
     ROOT / "data" / "catalog" / "aichi_prefecture_finance_sources.json",
     ROOT / "data" / "catalog" / "official_sources.json",
     ROOT / "data" / "catalog" / "fukuoka_finance_sources.json",
