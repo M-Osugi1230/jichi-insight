@@ -1,0 +1,62 @@
+[
+  {
+    "id": "evidence-kyoto-prefecture-2026-initial-budget-total-revenue",
+    "subject_id": "jp-local-260002-fiscal-2026-total-revenue",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2026年度京都府一般会計当初予算の歳入総額は1,043,260,000千円であり、第1号議案として2026年3月12日に「原案可決」で議決された。",
+        "location_note": "第1号議案「令和8年度京都府一般会計予算」の第1条・第1表、および京都府議会「令和8年2月定例会議案等」の第1号議案の欄（2026年3月12日議決）。",
+        "source_ids": [
+          "kyoto-pref-budget-2026-bill",
+          "kyoto-pref-assembly-2026-feb-session-results"
+        ],
+        "decision": "accepted",
+        "review_note": "議案の千円単位の印字値を円単位へ換算して保存。令和8年度6月補正予算（第1号）議案の第1表「補正前の額」でも同額を確認した。議決日と結果文言「原案可決」は府議会の議案等ページで確認した。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kyoto-prefecture-2026-initial-budget-local-tax",
+    "subject_id": "jp-local-260002-fiscal-2026-local-tax",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2026年度京都府一般会計当初予算の府税は314,000,000千円であり、第1号議案として2026年3月12日に「原案可決」で議決された。",
+        "location_note": "第1号議案「令和8年度京都府一般会計予算」第1表の歳入第1款「府税」の欄、および京都府議会「令和8年2月定例会議案等」の第1号議案の欄（2026年3月12日議決）。",
+        "source_ids": [
+          "kyoto-pref-budget-2026-bill",
+          "kyoto-pref-assembly-2026-feb-session-results"
+        ],
+        "decision": "accepted",
+        "review_note": "議案の第1表の千円単位の印字値を円単位へ換算して保存。府税の内訳12項（府民税108,488,938千円・事業税112,455,000千円・地方消費税46,716,571千円ほか）の合計が314,000,000千円と一致することも検算した。当初予算概要は百万円単位（314,000百万円）しか示さないため、千円単位の正確値は議案を正とする。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kyoto-prefecture-2026-initial-budget-total-expenditure",
+    "subject_id": "jp-local-260002-fiscal-2026-total-expenditure",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2026年度京都府一般会計当初予算の歳出総額は1,043,260,000千円であり、歳入総額と同額である。",
+        "location_note": "第1号議案「令和8年度京都府一般会計予算」の第1条・第1表、および京都府議会「令和8年2月定例会議案等」の第1号議案の欄（2026年3月12日議決）。",
+        "source_ids": [
+          "kyoto-pref-budget-2026-bill",
+          "kyoto-pref-assembly-2026-feb-session-results"
+        ],
+        "decision": "accepted",
+        "review_note": "議案の千円単位の印字値を円単位へ換算して保存。議決日と結果文言「原案可決」は府議会の議案等ページで確認した。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]

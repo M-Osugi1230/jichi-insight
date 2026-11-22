@@ -1,0 +1,55 @@
+{
+  "id": "phase15-kyoto-plan-review",
+  "name_ja": "京都府",
+  "next_action": "Register the priority projects in the project stage after confirming the registration unit from the current plan (the eight visions with their supporting infrastructure, or the twenty field-by-field basic policies of the basic plan) and the latest implementation status report; register the governor's promises in the promise stage from the official 2026 election bulletin published by the prefectural election commission; add the assembly layer in the assembly stage; keep supplementary budgets, execution and settlement as separate states. The next comprehensive plan, now being drafted, stays out of scope until it is adopted.",
+  "official_code": "260002",
+  "quality_boundary": "The prefecture's top plan is the Kyoto Prefecture Comprehensive Plan (京都府総合計画), adopted in October 2019 and revised in December 2022. This review fixes that identity, the governing philosophy of 「あたたかい京都づくり」 built on the three viewpoints of 安心, 温もり and ゆめ実現, the three-layer structure (future vision, basic plan, regional promotion plans), and the basic plan's composition of eight visions with supporting infrastructure, eight wide-area cooperation projects and twenty field-by-field basic policies. Kyoto Prefecture had no reviewed package in this repository before this stage, so this review rests on the prefecture's own published documents alone. Project units, their amounts and their evaluation states are registered in a later project stage; the FY2026 initial budget and the FY2022-FY2024 ordinary-account settlements are registered as separate fiscal records.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "京都府「京都府総合計画」公式ページおよび同計画概要版（改定の背景・知事あいさつ）",
+      "evidence_role": "current_plan_identity",
+      "id": "kyoto-plan-current-identity",
+      "review_note": "計画名・策定/改定の時期・基本理念は府公式ページと概要版の双方で一致を確認した。改定は令和4年12月議会の議決を経たものである（府公式ページの記載）。",
+      "source_url": "https://www.pref.kyoto.jp/shinsougoukeikaku/",
+      "statement": "京都府の府政運営の最上位計画は「京都府総合計画」であり、令和元年10月に策定され、令和4年12月に改定された。「京都府行政運営の基本理念・原則となる条例」第4条に基づき府のめざす方向性を明らかにする府政運営の羅針盤であり、地方創生に関する施策も定めるため、まち・ひと・しごと創生法第9条に基づく「都道府県まち・ひと・しごと創生総合戦略」も兼ねる。改定後の計画は、「安心」「温もり」「ゆめ実現」の3つの視点に基づく「あたたかい京都づくり」を進めるものとされている。",
+      "title": "現行計画（京都府総合計画、令和4年12月改定）",
+      "value": "京都府総合計画（令和元年10月策定・令和4年12月改定）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "京都府総合計画 基本計画（令和4年12月改定）の「基本計画の構成」および目次、ならびに同計画概要版の「役割と構成」",
+      "evidence_role": "policy_structure",
+      "id": "kyoto-plan-policy-structure",
+      "review_note": "3層構成と基本計画の3部構成、8つのビジョン・8つの広域連携プロジェクトの名称、分野別基本施策が20分野であることは基本計画本体の構成説明と目次で確認した。",
+      "source_url": "https://www.pref.kyoto.jp/shinsougoukeikaku/documents/02kihonplan.pdf",
+      "statement": "計画は3層で構成される。将来構想は概ね20年後の2040年を展望し実現したい将来像を理念的に示す。基本計画は「8つのビジョンと基盤整備」（安心できる健康・医療・福祉の実現、災害・犯罪等からの安心・安全の実現、子育て環境日本一・京都の実現、誰もが活躍できる生涯現役・共生京都の実現、共生による環境先進地・京都の実現、未来を拓く京都産業の実現、文化の力で世界に貢献する京都の実現、交流と連携による活力ある京都の実現の8ビジョンと、それらを支える基盤整備）、「8つの広域連携プロジェクト」、全体を分野別に体系化した「分野別基本施策」（20分野）の3つから構成される。地域振興計画は山城・南丹・中丹・丹後の広域振興局ごとに地域の資源や特性を生かした振興策を示す。",
+      "title": "計画の体系（将来構想・基本計画・地域振興計画の3層と基本計画の3部構成）",
+      "value": "将来構想（2040年展望）／基本計画（8つのビジョンと基盤整備・8つの広域連携プロジェクト・分野別基本施策20分野）／地域振興計画（4広域振興局）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "京都府総合計画 基本計画の「基本計画の構成」・計画期間の記述および同計画概要版の「役割と構成」",
+      "evidence_role": "implementation_layer",
+      "id": "kyoto-plan-implementation-layer",
+      "review_note": "計画期間・到達目標と数値目標の持ち方・具体方策と実際の事業の関係は基本計画本体の記述で確認した。",
+      "source_url": "https://www.pref.kyoto.jp/shinsougoukeikaku/documents/02kihonplan.pdf",
+      "statement": "基本計画・地域振興計画の計画期間は令和5年4月1日から令和9年3月31日まで（令和5年度から令和8年度末まで）。8つのビジョンには重点分野・主要な方策と到達目標が、分野別基本施策には分野ごとに「2040年に実現したい姿」「現状分析・課題」「4年間の対応方向・具体方策」「数値目標」が示される。具体方策は計画策定時点で想定される方策であり、実際の事業は経済性や事業効果、財政状況等を総合的に判断し、毎年度の予算編成を通じて決定される。",
+      "title": "基本計画・地域振興計画（令和5〜8年度）による実施と測定",
+      "value": "基本計画・地域振興計画（令和5年4月1日〜令和9年3月31日）／ビジョンごとの到達目標・分野ごとの数値目標"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "京都府「「京都府総合計画」実施状況報告書について」（府公式サイト）および令和7（2025）年度実施状況報告書",
+      "evidence_role": "progress_governance",
+      "id": "kyoto-plan-progress-governance",
+      "review_note": "実施状況報告書の年次公表と条例上の位置付け、最新版が令和7（2025）年度分であることは府公式の公表ページで確認した。段階0時点で最新とされた令和6年度分より後の版が公表されている。",
+      "source_url": "https://www.pref.kyoto.jp/shinsougoukeikaku/zixtusizyoukyou/houkokusyo.html",
+      "statement": "進行管理は「京都府行政に係る基本的な計画の議決等に関する条例」第4条第2項の規定に基づく府議会への報告として、「京都府総合計画」実施状況報告書を毎年度取りまとめ公表する形で行われ、8つのビジョンと基盤整備・8つの広域連携プロジェクトの取組状況と数値目標の状況、地域振興計画の数値目標の状況を示す。数値目標の達成状況の継続的な把握と京都府民の意識調査を含む多角的な振り返りによるPDCAサイクルがマネジメントの方法とされている。最新は令和7（2025）年度分である。",
+      "title": "実施状況報告書の年次公表による進行管理",
+      "value": "「京都府総合計画」実施状況報告書（年次、条例に基づく府議会への報告）／数値目標の達成状況と府民の意識調査によるPDCA"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-22"
+}
