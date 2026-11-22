@@ -1,0 +1,956 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本計画の構成（3部構成）および実施状況報告書 第1章（3）「数値目標の状況」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策「希望あふれる子育て」（基本計画の20分野のうち第1分野）を登録単位とした。基本計画は「8つのビジョンと基盤整備」「8つの広域連携プロジェクト」「分野別基本施策」の3部構成であり、分野別基本施策はビジョンの下位区分ではない。府は実施状況報告書 第1章（3）「数値目標の状況」で20分野ごとに全指標の基準値・目標数値・実績数値・達成率を公表しており、評価の単位は分野である。一方、「8つのビジョンと基盤整備」は取組状況の叙述と到達目標（主要指標のみ）にとどまり、単位も9つ（8ビジョンと基盤整備）しかないため、10系列の選定には適さない。分野とビジョンの公式対応表は存在しないため、parent_policy は設定していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本計画の分野別基本施策の章（第1分野）および実施状況報告書の数値目標の状況（報告書140〜141ページ）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策「希望あふれる子育て」"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "実施状況報告書 第1章（3）「数値目標の状況」およびdata/catalog/kyoto_priority_project_selection.json の selection_rule",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策20分野のうち、実施状況報告書の掲載順（分野番号の順）で第1番目の分野であり、選定対象の10分野（第1〜第10分野）に含まれるため選定した。金額の大小では選んでいない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "基本計画の分野別基本施策「希望あふれる子育て」の章（「2040年に実現したい姿」）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022"
+    ],
+    "statement": "「子育てに喜びを感じ子どもの声が地域に響きわたる社会」「結婚を希望する者が希望を叶えられる社会」「地域が子どもたちの成長を包み込んでいる社会」の実現（基本計画の分野別基本施策「希望あふれる子育て」が掲げる2040年に実現したい姿）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "基本計画および実施状況報告書（分野単位の所管部局の記載なし）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策単位の所管部局は、基本計画・実施状況報告書のいずれにも分野単位で明示されていない。実施状況報告書には指標ごとの担当部局が示されるが、分野を代表する単一の部局は定められていないため、project の responsible_department は未登録（null）とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和7（2025）年度「京都府総合計画」実施状況報告書（分野単位の金額の掲載なし）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "京都府は分野別基本施策単位の令和7年度予算額・決算額を公表していない。令和7（2025）年度「京都府総合計画」実施状況報告書は分野ごとに数値目標の基準値・目標数値・実績数値・達成率を示すが、金額の掲載はない。府の予算資料は部局・事業単位で公表されており、分野別基本施策との公式の対応表がないため接続していない。このため金額は未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "実施状況報告書の数値目標の状況（報告書140〜141ページ）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "京都府は分野別基本施策単位の公式評価（評定）を公表していない。公表される評価は指標ごとの達成率（参考年間目標に対する進捗）のみであり、project の official_evaluation は未登録（null）とした。KPI の assessment はこの公表達成率の換算（100％以上=achieved、100％未満=not_achieved、達成率の公表がない場合=not_assessable）である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "実施状況報告書の数値目標の状況（報告書140〜141ページ）の分野別表および年次表",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "この分野には基本計画の数値目標7件（計画全体の通し番号1〜7番）を登録した。各指標の基準値・目標数値・令和7年度の実績数値・達成率は、実施状況報告書の分野別表と年次表で照合した。"
+   }
+  ],
+  "id": "evidence-jp-local-260002-project-2025-hopeful-childrearing",
+  "open_questions": [
+   "次期京都府総合計画は策定中であり（2026年7月に第1回策定検討委員会を開催）、新計画が策定された場合は登録単位・数値目標の見直しが必要になる。本登録は現行計画（基本計画期間は令和5〜8年度）に基づく。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-260002-project-2025-hopeful-childrearing",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本計画の構成（3部構成）および実施状況報告書 第1章（3）「数値目標の状況」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策「夢を実現する教育」（基本計画の20分野のうち第2分野）を登録単位とした。基本計画は「8つのビジョンと基盤整備」「8つの広域連携プロジェクト」「分野別基本施策」の3部構成であり、分野別基本施策はビジョンの下位区分ではない。府は実施状況報告書 第1章（3）「数値目標の状況」で20分野ごとに全指標の基準値・目標数値・実績数値・達成率を公表しており、評価の単位は分野である。一方、「8つのビジョンと基盤整備」は取組状況の叙述と到達目標（主要指標のみ）にとどまり、単位も9つ（8ビジョンと基盤整備）しかないため、10系列の選定には適さない。分野とビジョンの公式対応表は存在しないため、parent_policy は設定していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本計画の分野別基本施策の章（第2分野）および実施状況報告書の数値目標の状況（報告書142〜144ページ）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策「夢を実現する教育」"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "実施状況報告書 第1章（3）「数値目標の状況」およびdata/catalog/kyoto_priority_project_selection.json の selection_rule",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策20分野のうち、実施状況報告書の掲載順（分野番号の順）で第2番目の分野であり、選定対象の10分野（第1〜第10分野）に含まれるため選定した。金額の大小では選んでいない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "基本計画の分野別基本施策「夢を実現する教育」の章（「2040年に実現したい姿」）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022"
+    ],
+    "statement": "「「包み込まれているという感覚」が実感できる教育」「人権を基盤として次代の京都を支える人材が育成される教育」「超スマート社会において新たな価値が創造できる教育」の実現（基本計画の分野別基本施策「夢を実現する教育」が掲げる2040年に実現したい姿）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "基本計画および実施状況報告書（分野単位の所管部局の記載なし）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策単位の所管部局は、基本計画・実施状況報告書のいずれにも分野単位で明示されていない。実施状況報告書には指標ごとの担当部局が示されるが、分野を代表する単一の部局は定められていないため、project の responsible_department は未登録（null）とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和7（2025）年度「京都府総合計画」実施状況報告書（分野単位の金額の掲載なし）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "京都府は分野別基本施策単位の令和7年度予算額・決算額を公表していない。令和7（2025）年度「京都府総合計画」実施状況報告書は分野ごとに数値目標の基準値・目標数値・実績数値・達成率を示すが、金額の掲載はない。府の予算資料は部局・事業単位で公表されており、分野別基本施策との公式の対応表がないため接続していない。このため金額は未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "実施状況報告書の数値目標の状況（報告書142〜144ページ）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "京都府は分野別基本施策単位の公式評価（評定）を公表していない。公表される評価は指標ごとの達成率（参考年間目標に対する進捗）のみであり、project の official_evaluation は未登録（null）とした。KPI の assessment はこの公表達成率の換算（100％以上=achieved、100％未満=not_achieved、達成率の公表がない場合=not_assessable）である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "実施状況報告書の数値目標の状況（報告書142〜144ページ）の分野別表および年次表",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "この分野には基本計画の数値目標6件（計画全体の通し番号8〜13番）を登録した。各指標の基準値・目標数値・令和7年度の実績数値・達成率は、実施状況報告書の分野別表と年次表で照合した。報告書の分野別集計では、単位の異なる項目を分けて数えるため、この分野は9項目として集計されている。本登録は報告書の表エントリ単位で数えている。"
+   }
+  ],
+  "id": "evidence-jp-local-260002-project-2025-dream-education",
+  "open_questions": [
+   "次期京都府総合計画は策定中であり（2026年7月に第1回策定検討委員会を開催）、新計画が策定された場合は登録単位・数値目標の見直しが必要になる。本登録は現行計画（基本計画期間は令和5〜8年度）に基づく。",
+   "認知されたいじめの年度内解消率の令和7年度実績は2026年10月頃、授業中にＩＣＴを活用して指導する能力がある教員の割合の実績は2026年11月頃に公表予定であり、公表後に更新する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-260002-project-2025-dream-education",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本計画の構成（3部構成）および実施状況報告書 第1章（3）「数値目標の状況」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策「安心できる健康・医療と人生100年時代」（基本計画の20分野のうち第3分野）を登録単位とした。基本計画は「8つのビジョンと基盤整備」「8つの広域連携プロジェクト」「分野別基本施策」の3部構成であり、分野別基本施策はビジョンの下位区分ではない。府は実施状況報告書 第1章（3）「数値目標の状況」で20分野ごとに全指標の基準値・目標数値・実績数値・達成率を公表しており、評価の単位は分野である。一方、「8つのビジョンと基盤整備」は取組状況の叙述と到達目標（主要指標のみ）にとどまり、単位も9つ（8ビジョンと基盤整備）しかないため、10系列の選定には適さない。分野とビジョンの公式対応表は存在しないため、parent_policy は設定していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本計画の分野別基本施策の章（第3分野）および実施状況報告書の数値目標の状況（報告書144〜146ページ）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策「安心できる健康・医療と人生100年時代」"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "実施状況報告書 第1章（3）「数値目標の状況」およびdata/catalog/kyoto_priority_project_selection.json の selection_rule",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策20分野のうち、実施状況報告書の掲載順（分野番号の順）で第3番目の分野であり、選定対象の10分野（第1〜第10分野）に含まれるため選定した。金額の大小では選んでいない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "基本計画の分野別基本施策「安心できる健康・医療と人生100年時代」の章（「2040年に実現したい姿」）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022"
+    ],
+    "statement": "「全ての地域で質の高い医療体制が確保」「健康づくりへの意識が高まり健やかな生活が送れる社会」「高齢になっても、能力を発揮でき住み慣れた地域で安心して暮らせる社会」の実現（基本計画の分野別基本施策「安心できる健康・医療と人生100年時代」が掲げる2040年に実現したい姿）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "基本計画および実施状況報告書（分野単位の所管部局の記載なし）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策単位の所管部局は、基本計画・実施状況報告書のいずれにも分野単位で明示されていない。実施状況報告書には指標ごとの担当部局が示されるが、分野を代表する単一の部局は定められていないため、project の responsible_department は未登録（null）とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和7（2025）年度「京都府総合計画」実施状況報告書（分野単位の金額の掲載なし）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "京都府は分野別基本施策単位の令和7年度予算額・決算額を公表していない。令和7（2025）年度「京都府総合計画」実施状況報告書は分野ごとに数値目標の基準値・目標数値・実績数値・達成率を示すが、金額の掲載はない。府の予算資料は部局・事業単位で公表されており、分野別基本施策との公式の対応表がないため接続していない。このため金額は未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "実施状況報告書の数値目標の状況（報告書144〜146ページ）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "京都府は分野別基本施策単位の公式評価（評定）を公表していない。公表される評価は指標ごとの達成率（参考年間目標に対する進捗）のみであり、project の official_evaluation は未登録（null）とした。KPI の assessment はこの公表達成率の換算（100％以上=achieved、100％未満=not_achieved、達成率の公表がない場合=not_assessable）である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "実施状況報告書の数値目標の状況（報告書144〜146ページ）の分野別表および年次表",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "この分野には基本計画の数値目標7件（計画全体の通し番号14〜20番）を登録した。各指標の基準値・目標数値・令和7年度の実績数値・達成率は、実施状況報告書の分野別表と年次表で照合した。報告書の分野別集計では、単位の異なる項目を分けて数えるため、この分野は11項目として集計されている。本登録は報告書の表エントリ単位で数えている。"
+   }
+  ],
+  "id": "evidence-jp-local-260002-project-2025-health-medical-longevity",
+  "open_questions": [
+   "次期京都府総合計画は策定中であり（2026年7月に第1回策定検討委員会を開催）、新計画が策定された場合は登録単位・数値目標の見直しが必要になる。本登録は現行計画（基本計画期間は令和5〜8年度）に基づく。",
+   "医師確保困難地域で従事した医師数など、関連計画（府保健医療計画）の改定に伴い基準値・目標数値が置き換えられた指標がある。次回報告書で値の更新を確認する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-260002-project-2025-health-medical-longevity",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本計画の構成（3部構成）および実施状況報告書 第1章（3）「数値目標の状況」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策「安心できる介護・福祉の実現」（基本計画の20分野のうち第4分野）を登録単位とした。基本計画は「8つのビジョンと基盤整備」「8つの広域連携プロジェクト」「分野別基本施策」の3部構成であり、分野別基本施策はビジョンの下位区分ではない。府は実施状況報告書 第1章（3）「数値目標の状況」で20分野ごとに全指標の基準値・目標数値・実績数値・達成率を公表しており、評価の単位は分野である。一方、「8つのビジョンと基盤整備」は取組状況の叙述と到達目標（主要指標のみ）にとどまり、単位も9つ（8ビジョンと基盤整備）しかないため、10系列の選定には適さない。分野とビジョンの公式対応表は存在しないため、parent_policy は設定していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本計画の分野別基本施策の章（第4分野）および実施状況報告書の数値目標の状況（報告書146〜147ページ）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策「安心できる介護・福祉の実現」"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "実施状況報告書 第1章（3）「数値目標の状況」およびdata/catalog/kyoto_priority_project_selection.json の selection_rule",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策20分野のうち、実施状況報告書の掲載順（分野番号の順）で第4番目の分野であり、選定対象の10分野（第1〜第10分野）に含まれるため選定した。金額の大小では選んでいない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "基本計画の分野別基本施策「安心できる介護・福祉の実現」の章（「2040年に実現したい姿」）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022"
+    ],
+    "statement": "「最適な介護が受けられる仕組みが全ての地域で構築」「認知症になっても地域で安心して暮らせる社会」「互いに支え合い誰もが生きがいをもって暮らせる社会」の実現（基本計画の分野別基本施策「安心できる介護・福祉の実現」が掲げる2040年に実現したい姿）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "基本計画および実施状況報告書（分野単位の所管部局の記載なし）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策単位の所管部局は、基本計画・実施状況報告書のいずれにも分野単位で明示されていない。実施状況報告書には指標ごとの担当部局が示されるが、分野を代表する単一の部局は定められていないため、project の responsible_department は未登録（null）とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和7（2025）年度「京都府総合計画」実施状況報告書（分野単位の金額の掲載なし）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "京都府は分野別基本施策単位の令和7年度予算額・決算額を公表していない。令和7（2025）年度「京都府総合計画」実施状況報告書は分野ごとに数値目標の基準値・目標数値・実績数値・達成率を示すが、金額の掲載はない。府の予算資料は部局・事業単位で公表されており、分野別基本施策との公式の対応表がないため接続していない。このため金額は未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "実施状況報告書の数値目標の状況（報告書146〜147ページ）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "京都府は分野別基本施策単位の公式評価（評定）を公表していない。公表される評価は指標ごとの達成率（参考年間目標に対する進捗）のみであり、project の official_evaluation は未登録（null）とした。KPI の assessment はこの公表達成率の換算（100％以上=achieved、100％未満=not_achieved、達成率の公表がない場合=not_assessable）である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "実施状況報告書の数値目標の状況（報告書146〜147ページ）の分野別表および年次表",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "この分野には基本計画の数値目標4件（計画全体の通し番号21〜24番）を登録した。各指標の基準値・目標数値・令和7年度の実績数値・達成率は、実施状況報告書の分野別表と年次表で照合した。"
+   }
+  ],
+  "id": "evidence-jp-local-260002-project-2025-care-welfare",
+  "open_questions": [
+   "次期京都府総合計画は策定中であり（2026年7月に第1回策定検討委員会を開催）、新計画が策定された場合は登録単位・数値目標の見直しが必要になる。本登録は現行計画（基本計画期間は令和5〜8年度）に基づく。",
+   "介護老人福祉施設等の入所定員総数と介護人材の確保は、府高齢者健康福祉計画の改定に伴い基準値・目標数値が置き換えられている。次回報告書で値の更新を確認する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-260002-project-2025-care-welfare",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本計画の構成（3部構成）および実施状況報告書 第1章（3）「数値目標の状況」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策「人権が尊重される社会」（基本計画の20分野のうち第5分野）を登録単位とした。基本計画は「8つのビジョンと基盤整備」「8つの広域連携プロジェクト」「分野別基本施策」の3部構成であり、分野別基本施策はビジョンの下位区分ではない。府は実施状況報告書 第1章（3）「数値目標の状況」で20分野ごとに全指標の基準値・目標数値・実績数値・達成率を公表しており、評価の単位は分野である。一方、「8つのビジョンと基盤整備」は取組状況の叙述と到達目標（主要指標のみ）にとどまり、単位も9つ（8ビジョンと基盤整備）しかないため、10系列の選定には適さない。分野とビジョンの公式対応表は存在しないため、parent_policy は設定していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本計画の分野別基本施策の章（第5分野）および実施状況報告書の数値目標の状況（報告書146〜148ページ）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策「人権が尊重される社会」"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "実施状況報告書 第1章（3）「数値目標の状況」およびdata/catalog/kyoto_priority_project_selection.json の selection_rule",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策20分野のうち、実施状況報告書の掲載順（分野番号の順）で第5番目の分野であり、選定対象の10分野（第1〜第10分野）に含まれるため選定した。金額の大小では選んでいない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "基本計画の分野別基本施策「人権が尊重される社会」の章（「2040年に実現したい姿」）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022"
+    ],
+    "statement": "「人権が尊重され誰もが自分らしく生きることのできる社会」「ユニバーサルデザインが当たり前の社会」の実現（基本計画の分野別基本施策「人権が尊重される社会」が掲げる2040年に実現したい姿）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "基本計画および実施状況報告書（分野単位の所管部局の記載なし）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策単位の所管部局は、基本計画・実施状況報告書のいずれにも分野単位で明示されていない。実施状況報告書には指標ごとの担当部局が示されるが、分野を代表する単一の部局は定められていないため、project の responsible_department は未登録（null）とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和7（2025）年度「京都府総合計画」実施状況報告書（分野単位の金額の掲載なし）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "京都府は分野別基本施策単位の令和7年度予算額・決算額を公表していない。令和7（2025）年度「京都府総合計画」実施状況報告書は分野ごとに数値目標の基準値・目標数値・実績数値・達成率を示すが、金額の掲載はない。府の予算資料は部局・事業単位で公表されており、分野別基本施策との公式の対応表がないため接続していない。このため金額は未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "実施状況報告書の数値目標の状況（報告書146〜148ページ）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "京都府は分野別基本施策単位の公式評価（評定）を公表していない。公表される評価は指標ごとの達成率（参考年間目標に対する進捗）のみであり、project の official_evaluation は未登録（null）とした。KPI の assessment はこの公表達成率の換算（100％以上=achieved、100％未満=not_achieved、達成率の公表がない場合=not_assessable）である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "実施状況報告書の数値目標の状況（報告書146〜148ページ）の分野別表および年次表",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "この分野には基本計画の数値目標4件（計画全体の通し番号25〜28番）を登録した。各指標の基準値・目標数値・令和7年度の実績数値・達成率は、実施状況報告書の分野別表と年次表で照合した。"
+   }
+  ],
+  "id": "evidence-jp-local-260002-project-2025-human-rights",
+  "open_questions": [
+   "次期京都府総合計画は策定中であり（2026年7月に第1回策定検討委員会を開催）、新計画が策定された場合は登録単位・数値目標の見直しが必要になる。本登録は現行計画（基本計画期間は令和5〜8年度）に基づく。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-260002-project-2025-human-rights",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本計画の構成（3部構成）および実施状況報告書 第1章（3）「数値目標の状況」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策「男性も女性も誰もが活躍できる社会」（基本計画の20分野のうち第6分野）を登録単位とした。基本計画は「8つのビジョンと基盤整備」「8つの広域連携プロジェクト」「分野別基本施策」の3部構成であり、分野別基本施策はビジョンの下位区分ではない。府は実施状況報告書 第1章（3）「数値目標の状況」で20分野ごとに全指標の基準値・目標数値・実績数値・達成率を公表しており、評価の単位は分野である。一方、「8つのビジョンと基盤整備」は取組状況の叙述と到達目標（主要指標のみ）にとどまり、単位も9つ（8ビジョンと基盤整備）しかないため、10系列の選定には適さない。分野とビジョンの公式対応表は存在しないため、parent_policy は設定していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本計画の分野別基本施策の章（第6分野）および実施状況報告書の数値目標の状況（報告書148〜149ページ）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策「男性も女性も誰もが活躍できる社会」"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "実施状況報告書 第1章（3）「数値目標の状況」およびdata/catalog/kyoto_priority_project_selection.json の selection_rule",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策20分野のうち、実施状況報告書の掲載順（分野番号の順）で第6番目の分野であり、選定対象の10分野（第1〜第10分野）に含まれるため選定した。金額の大小では選んでいない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "基本計画の分野別基本施策「男性も女性も誰もが活躍できる社会」の章（「2040年に実現したい姿」）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022"
+    ],
+    "statement": "「性別にかかわりなく誰もが社会参画できる社会」の実現（基本計画の分野別基本施策「男性も女性も誰もが活躍できる社会」が掲げる2040年に実現したい姿）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "基本計画および実施状況報告書（分野単位の所管部局の記載なし）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策単位の所管部局は、基本計画・実施状況報告書のいずれにも分野単位で明示されていない。実施状況報告書には指標ごとの担当部局が示されるが、分野を代表する単一の部局は定められていないため、project の responsible_department は未登録（null）とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和7（2025）年度「京都府総合計画」実施状況報告書（分野単位の金額の掲載なし）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "京都府は分野別基本施策単位の令和7年度予算額・決算額を公表していない。令和7（2025）年度「京都府総合計画」実施状況報告書は分野ごとに数値目標の基準値・目標数値・実績数値・達成率を示すが、金額の掲載はない。府の予算資料は部局・事業単位で公表されており、分野別基本施策との公式の対応表がないため接続していない。このため金額は未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "実施状況報告書の数値目標の状況（報告書148〜149ページ）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "京都府は分野別基本施策単位の公式評価（評定）を公表していない。公表される評価は指標ごとの達成率（参考年間目標に対する進捗）のみであり、project の official_evaluation は未登録（null）とした。KPI の assessment はこの公表達成率の換算（100％以上=achieved、100％未満=not_achieved、達成率の公表がない場合=not_assessable）である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "実施状況報告書の数値目標の状況（報告書148〜149ページ）の分野別表および年次表",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "この分野には基本計画の数値目標4件（計画全体の通し番号29〜32番）を登録した。各指標の基準値・目標数値・令和7年度の実績数値・達成率は、実施状況報告書の分野別表と年次表で照合した。"
+   }
+  ],
+  "id": "evidence-jp-local-260002-project-2025-all-genders-participation",
+  "open_questions": [
+   "次期京都府総合計画は策定中であり（2026年7月に第1回策定検討委員会を開催）、新計画が策定された場合は登録単位・数値目標の見直しが必要になる。本登録は現行計画（基本計画期間は令和5〜8年度）に基づく。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-260002-project-2025-all-genders-participation",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本計画の構成（3部構成）および実施状況報告書 第1章（3）「数値目標の状況」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策「障害者が暮らしやすい社会」（基本計画の20分野のうち第7分野）を登録単位とした。基本計画は「8つのビジョンと基盤整備」「8つの広域連携プロジェクト」「分野別基本施策」の3部構成であり、分野別基本施策はビジョンの下位区分ではない。府は実施状況報告書 第1章（3）「数値目標の状況」で20分野ごとに全指標の基準値・目標数値・実績数値・達成率を公表しており、評価の単位は分野である。一方、「8つのビジョンと基盤整備」は取組状況の叙述と到達目標（主要指標のみ）にとどまり、単位も9つ（8ビジョンと基盤整備）しかないため、10系列の選定には適さない。分野とビジョンの公式対応表は存在しないため、parent_policy は設定していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本計画の分野別基本施策の章（第7分野）および実施状況報告書の数値目標の状況（報告書148〜150ページ）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策「障害者が暮らしやすい社会」"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "実施状況報告書 第1章（3）「数値目標の状況」およびdata/catalog/kyoto_priority_project_selection.json の selection_rule",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策20分野のうち、実施状況報告書の掲載順（分野番号の順）で第7番目の分野であり、選定対象の10分野（第1〜第10分野）に含まれるため選定した。金額の大小では選んでいない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "基本計画の分野別基本施策「障害者が暮らしやすい社会」の章（「2040年に実現したい姿」）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022"
+    ],
+    "statement": "「障害のある人もない人も地域の担い手となり、地域で安心して暮らせる共生社会」「希望に沿って働くことができる社会」「文化芸術やスポーツなどの分野で能力を生かして活躍できる社会」の実現（基本計画の分野別基本施策「障害者が暮らしやすい社会」が掲げる2040年に実現したい姿）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "基本計画および実施状況報告書（分野単位の所管部局の記載なし）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策単位の所管部局は、基本計画・実施状況報告書のいずれにも分野単位で明示されていない。実施状況報告書には指標ごとの担当部局が示されるが、分野を代表する単一の部局は定められていないため、project の responsible_department は未登録（null）とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和7（2025）年度「京都府総合計画」実施状況報告書（分野単位の金額の掲載なし）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "京都府は分野別基本施策単位の令和7年度予算額・決算額を公表していない。令和7（2025）年度「京都府総合計画」実施状況報告書は分野ごとに数値目標の基準値・目標数値・実績数値・達成率を示すが、金額の掲載はない。府の予算資料は部局・事業単位で公表されており、分野別基本施策との公式の対応表がないため接続していない。このため金額は未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "実施状況報告書の数値目標の状況（報告書148〜150ページ）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "京都府は分野別基本施策単位の公式評価（評定）を公表していない。公表される評価は指標ごとの達成率（参考年間目標に対する進捗）のみであり、project の official_evaluation は未登録（null）とした。KPI の assessment はこの公表達成率の換算（100％以上=achieved、100％未満=not_achieved、達成率の公表がない場合=not_assessable）である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "実施状況報告書の数値目標の状況（報告書148〜150ページ）の分野別表および年次表",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "この分野には基本計画の数値目標5件（計画全体の通し番号33〜37番）を登録した。各指標の基準値・目標数値・令和7年度の実績数値・達成率は、実施状況報告書の分野別表と年次表で照合した。"
+   }
+  ],
+  "id": "evidence-jp-local-260002-project-2025-disability-friendly",
+  "open_questions": [
+   "次期京都府総合計画は策定中であり（2026年7月に第1回策定検討委員会を開催）、新計画が策定された場合は登録単位・数値目標の見直しが必要になる。本登録は現行計画（基本計画期間は令和5〜8年度）に基づく。",
+   "令和7年度はこの分野の5指標すべてで実績数値が未公表（公表時期未到来または調査周期外）であり、令和8年度実施状況報告書で実績を確認する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-260002-project-2025-disability-friendly",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本計画の構成（3部構成）および実施状況報告書 第1章（3）「数値目標の状況」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策「留学生・外国人が生き生きと暮らせる社会」（基本計画の20分野のうち第8分野）を登録単位とした。基本計画は「8つのビジョンと基盤整備」「8つの広域連携プロジェクト」「分野別基本施策」の3部構成であり、分野別基本施策はビジョンの下位区分ではない。府は実施状況報告書 第1章（3）「数値目標の状況」で20分野ごとに全指標の基準値・目標数値・実績数値・達成率を公表しており、評価の単位は分野である。一方、「8つのビジョンと基盤整備」は取組状況の叙述と到達目標（主要指標のみ）にとどまり、単位も9つ（8ビジョンと基盤整備）しかないため、10系列の選定には適さない。分野とビジョンの公式対応表は存在しないため、parent_policy は設定していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本計画の分野別基本施策の章（第8分野）および実施状況報告書の数値目標の状況（報告書150〜151ページ）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策「留学生・外国人が生き生きと暮らせる社会」"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "実施状況報告書 第1章（3）「数値目標の状況」およびdata/catalog/kyoto_priority_project_selection.json の selection_rule",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策20分野のうち、実施状況報告書の掲載順（分野番号の順）で第8番目の分野であり、選定対象の10分野（第1〜第10分野）に含まれるため選定した。金額の大小では選んでいない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "基本計画の分野別基本施策「留学生・外国人が生き生きと暮らせる社会」の章（「2040年に実現したい姿」）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022"
+    ],
+    "statement": "「国際交流が暮らしの中に根づいている社会」「多文化共生の社会」の実現（基本計画の分野別基本施策「留学生・外国人が生き生きと暮らせる社会」が掲げる2040年に実現したい姿）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "基本計画および実施状況報告書（分野単位の所管部局の記載なし）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策単位の所管部局は、基本計画・実施状況報告書のいずれにも分野単位で明示されていない。実施状況報告書には指標ごとの担当部局が示されるが、分野を代表する単一の部局は定められていないため、project の responsible_department は未登録（null）とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和7（2025）年度「京都府総合計画」実施状況報告書（分野単位の金額の掲載なし）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "京都府は分野別基本施策単位の令和7年度予算額・決算額を公表していない。令和7（2025）年度「京都府総合計画」実施状況報告書は分野ごとに数値目標の基準値・目標数値・実績数値・達成率を示すが、金額の掲載はない。府の予算資料は部局・事業単位で公表されており、分野別基本施策との公式の対応表がないため接続していない。このため金額は未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "実施状況報告書の数値目標の状況（報告書150〜151ページ）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "京都府は分野別基本施策単位の公式評価（評定）を公表していない。公表される評価は指標ごとの達成率（参考年間目標に対する進捗）のみであり、project の official_evaluation は未登録（null）とした。KPI の assessment はこの公表達成率の換算（100％以上=achieved、100％未満=not_achieved、達成率の公表がない場合=not_assessable）である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "実施状況報告書の数値目標の状況（報告書150〜151ページ）の分野別表および年次表",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "この分野には基本計画の数値目標3件（計画全体の通し番号38〜40番）を登録した。各指標の基準値・目標数値・令和7年度の実績数値・達成率は、実施状況報告書の分野別表と年次表で照合した。"
+   }
+  ],
+  "id": "evidence-jp-local-260002-project-2025-foreign-residents-vibrant",
+  "open_questions": [
+   "次期京都府総合計画は策定中であり（2026年7月に第1回策定検討委員会を開催）、新計画が策定された場合は登録単位・数値目標の見直しが必要になる。本登録は現行計画（基本計画期間は令和5〜8年度）に基づく。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-260002-project-2025-foreign-residents-vibrant",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本計画の構成（3部構成）および実施状況報告書 第1章（3）「数値目標の状況」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策「コミュニティが大切にされる社会」（基本計画の20分野のうち第9分野）を登録単位とした。基本計画は「8つのビジョンと基盤整備」「8つの広域連携プロジェクト」「分野別基本施策」の3部構成であり、分野別基本施策はビジョンの下位区分ではない。府は実施状況報告書 第1章（3）「数値目標の状況」で20分野ごとに全指標の基準値・目標数値・実績数値・達成率を公表しており、評価の単位は分野である。一方、「8つのビジョンと基盤整備」は取組状況の叙述と到達目標（主要指標のみ）にとどまり、単位も9つ（8ビジョンと基盤整備）しかないため、10系列の選定には適さない。分野とビジョンの公式対応表は存在しないため、parent_policy は設定していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本計画の分野別基本施策の章（第9分野）および実施状況報告書の数値目標の状況（報告書150〜152ページ）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策「コミュニティが大切にされる社会」"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "実施状況報告書 第1章（3）「数値目標の状況」およびdata/catalog/kyoto_priority_project_selection.json の selection_rule",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策20分野のうち、実施状況報告書の掲載順（分野番号の順）で第9番目の分野であり、選定対象の10分野（第1〜第10分野）に含まれるため選定した。金額の大小では選んでいない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "基本計画の分野別基本施策「コミュニティが大切にされる社会」の章（「2040年に実現したい姿」）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022"
+    ],
+    "statement": "「人と人の絆、地域コミュニティが大切にされる社会」「移住したいまち京都府の実現」「過疎・高齢集落等であっても地域資源の活用と交流により「キラリと光る」地域が創造」の実現（基本計画の分野別基本施策「コミュニティが大切にされる社会」が掲げる2040年に実現したい姿）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "基本計画および実施状況報告書（分野単位の所管部局の記載なし）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策単位の所管部局は、基本計画・実施状況報告書のいずれにも分野単位で明示されていない。実施状況報告書には指標ごとの担当部局が示されるが、分野を代表する単一の部局は定められていないため、project の responsible_department は未登録（null）とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和7（2025）年度「京都府総合計画」実施状況報告書（分野単位の金額の掲載なし）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "京都府は分野別基本施策単位の令和7年度予算額・決算額を公表していない。令和7（2025）年度「京都府総合計画」実施状況報告書は分野ごとに数値目標の基準値・目標数値・実績数値・達成率を示すが、金額の掲載はない。府の予算資料は部局・事業単位で公表されており、分野別基本施策との公式の対応表がないため接続していない。このため金額は未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "実施状況報告書の数値目標の状況（報告書150〜152ページ）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "京都府は分野別基本施策単位の公式評価（評定）を公表していない。公表される評価は指標ごとの達成率（参考年間目標に対する進捗）のみであり、project の official_evaluation は未登録（null）とした。KPI の assessment はこの公表達成率の換算（100％以上=achieved、100％未満=not_achieved、達成率の公表がない場合=not_assessable）である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "実施状況報告書の数値目標の状況（報告書150〜152ページ）の分野別表および年次表",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "この分野には基本計画の数値目標7件（計画全体の通し番号41〜47番）を登録した。各指標の基準値・目標数値・令和7年度の実績数値・達成率は、実施状況報告書の分野別表と年次表で照合した。"
+   }
+  ],
+  "id": "evidence-jp-local-260002-project-2025-community-bonds",
+  "open_questions": [
+   "次期京都府総合計画は策定中であり（2026年7月に第1回策定検討委員会を開催）、新計画が策定された場合は登録単位・数値目標の見直しが必要になる。本登録は現行計画（基本計画期間は令和5〜8年度）に基づく。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-260002-project-2025-community-bonds",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本計画の構成（3部構成）および実施状況報告書 第1章（3）「数値目標の状況」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策「誰もが親しみ夢が広がるスポーツ」（基本計画の20分野のうち第10分野）を登録単位とした。基本計画は「8つのビジョンと基盤整備」「8つの広域連携プロジェクト」「分野別基本施策」の3部構成であり、分野別基本施策はビジョンの下位区分ではない。府は実施状況報告書 第1章（3）「数値目標の状況」で20分野ごとに全指標の基準値・目標数値・実績数値・達成率を公表しており、評価の単位は分野である。一方、「8つのビジョンと基盤整備」は取組状況の叙述と到達目標（主要指標のみ）にとどまり、単位も9つ（8ビジョンと基盤整備）しかないため、10系列の選定には適さない。分野とビジョンの公式対応表は存在しないため、parent_policy は設定していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本計画の分野別基本施策の章（第10分野）および実施状況報告書の数値目標の状況（報告書152〜153ページ）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策「誰もが親しみ夢が広がるスポーツ」"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "実施状況報告書 第1章（3）「数値目標の状況」およびdata/catalog/kyoto_priority_project_selection.json の selection_rule",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策20分野のうち、実施状況報告書の掲載順（分野番号の順）で第10番目の分野であり、選定対象の10分野（第1〜第10分野）に含まれるため選定した。金額の大小では選んでいない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "基本計画の分野別基本施策「誰もが親しみ夢が広がるスポーツ」の章（「2040年に実現したい姿」）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022"
+    ],
+    "statement": "「スポーツを通じて地域が固い絆で結ばれている社会」「スポーツを通して府民の感動を呼び、夢とあこがれの持てる社会」「京都府ゆかりのトップアスリートが世界で活躍する社会」の実現（基本計画の分野別基本施策「誰もが親しみ夢が広がるスポーツ」が掲げる2040年に実現したい姿）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "基本計画および実施状況報告書（分野単位の所管部局の記載なし）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "分野別基本施策単位の所管部局は、基本計画・実施状況報告書のいずれにも分野単位で明示されていない。実施状況報告書には指標ごとの担当部局が示されるが、分野を代表する単一の部局は定められていないため、project の responsible_department は未登録（null）とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和7（2025）年度「京都府総合計画」実施状況報告書（分野単位の金額の掲載なし）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "京都府は分野別基本施策単位の令和7年度予算額・決算額を公表していない。令和7（2025）年度「京都府総合計画」実施状況報告書は分野ごとに数値目標の基準値・目標数値・実績数値・達成率を示すが、金額の掲載はない。府の予算資料は部局・事業単位で公表されており、分野別基本施策との公式の対応表がないため接続していない。このため金額は未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "実施状況報告書の数値目標の状況（報告書152〜153ページ）",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "京都府は分野別基本施策単位の公式評価（評定）を公表していない。公表される評価は指標ごとの達成率（参考年間目標に対する進捗）のみであり、project の official_evaluation は未登録（null）とした。KPI の assessment はこの公表達成率の換算（100％以上=achieved、100％未満=not_achieved、達成率の公表がない場合=not_assessable）である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "実施状況報告書の数値目標の状況（報告書152〜153ページ）の分野別表および年次表",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-basic-plan-2022",
+     "kyoto-pref-evaluation-fy2025-book"
+    ],
+    "statement": "この分野には基本計画の数値目標4件（計画全体の通し番号48〜51番）を登録した。各指標の基準値・目標数値・令和7年度の実績数値・達成率は、実施状況報告書の分野別表と年次表で照合した。"
+   }
+  ],
+  "id": "evidence-jp-local-260002-project-2025-sports-for-all",
+  "open_questions": [
+   "次期京都府総合計画は策定中であり（2026年7月に第1回策定検討委員会を開催）、新計画が策定された場合は登録単位・数値目標の見直しが必要になる。本登録は現行計画（基本計画期間は令和5〜8年度）に基づく。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-260002-project-2025-sports-for-all",
+  "subject_type": "project"
+ }
+]
