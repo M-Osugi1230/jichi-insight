@@ -868,5 +868,37 @@
     ],
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-kyoto-city-2024",
+    "executive_term_id": "jp-local-261009-executive-2024-02-25",
+    "searched_at": "2026-11-23",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "kyoto-city-mayor-election-2024-bulletin"
+    ],
+    "checked_source_ids": [
+      "kyoto-city-mayor-election-2024-results",
+      "kyoto-city-mayor-history",
+      "kyoto-pref-mayor-term-list",
+      "kyoto-city-mayor-election-2024-bulletin"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "京都市長選挙（令和6年2月4日執行）の選挙公報は、市選挙管理委員会の現行公式サイトの「過去の選挙公報」区分のページ「令和6年2月4日執行京都市長選挙 選挙公報」（2024年4月30日掲載）からPDFがリンクされ、現行ページに現存する（段階0・Issue #930で確認済み）。段階3では2026-11-23に現行ページから改めてPDFを取得し、段階0の取得分とファイルが一致することを SHA-256 で確認した（82c263c3015f312b74398cda52fa8217c9d0e6a2c6bae533ee9145385121c5、1,730,228バイト、全2ページ）。公報には候補者5名（松井こうじ・村山祥栄・福山和人・二之湯真士・高家悠）が掲載され、市公式の開票結果の候補者構成と一致する。1ページ目左下の松井こうじ候補欄（5つの柱の箇条書き33項目と防災・減災対策バンド5項目）を確認し、分割レビュー（manifesto-review-jp-local-261009-2024）を経て公約レコード38件を作成した。公報は全文が画像でテキスト層はないため、登録文は描画画像（200dpi・300dpi）の目視転記を正とし、複数解像度で照合した。選挙公報は候補者提出原稿を原文のまま掲載した公式文書であり、市の現行公式ページで実物を確認できたため、公約レコードの confidence は high とした。松井候補の公式サイト等に掲載された詳細な政策資料の所在は特定していないが、存在しないと判定するものではない。",
+    "next_actions": [
+      "松井候補の公式サイト等に掲載された詳細な政策資料が安定した所在で確認できれば、登録済みの公約文と照合する。",
+      "未接続の公約（16件）について、計画・事業資料への進捗証拠の接続を拡充する",
+      "事業との接続（22件）は文言・内容に基づく推定であり、市が公約と事業の公式な対応付けを公表した場合は接続を見直す",
+      "2028年2月の任期満了に伴う次回市長選挙では、新任期の公約原文資料として選挙公報を改めて登録する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]
