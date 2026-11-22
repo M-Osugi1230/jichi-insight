@@ -1,5 +1,5 @@
 {
-  "version": "0.41.0",
+  "version": "0.42.0",
   "updated_at": "2026-11-22",
   "scope": "pilot",
   "records": [
@@ -1738,6 +1738,48 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "静岡市長選挙の選挙公報そのもの（全2ページ、候補者3人）。選挙期間中は静岡市公式サイトの選挙ページ（384_000097.html）から「令和5年4月9日執行 静岡市長選挙選挙公報」としてリンクされ公表されていたが、現行サイトの2023年選挙の記録ページには公報への導線がなく、当該URL（000973077.pdf）は2026年11月22日時点で404である。そのため市の公式URLの Wayback Machine 保存コピー（2023年3月29日保存）を登録した。2023年3月27日・3月29日・4月9日（投票日）の保存分は Wayback のダイジェスト（DZNM3S4ZQGC4UR55TI2F6I42C2TCR6HQ）が一致し、取得したファイルの SHA-256 も3件とも一致した（3,973,474バイト）。公報は全文が画像でテキスト層はなく（抽出文字数0字のため候補者欄から文字は抽出されない）、登録文はPDFの描画画像（200dpi・300dpi）の目視転記を正とし、複数解像度で照合した。なんばたかし候補欄は1ページ目にあり、見出し「市政の変革で『難しい』を『できる』に変えます！」の下に番号付きの3項目（①現場主義、②開かれたわかりやすい市政、③信頼と共創の市政）と「難波喬司プロフィール」欄で構成される。公報は候補者から提出された原稿をそのまま写真製版により印刷した公式文書（1ページ目欄外にその旨の備考あり）で出典優先順位の最上位に当たるため、confidence は high とした。"
+    },
+    {
+      "id": "hiroshima-pref-governor",
+      "municipality_key": "hiroshima-prefecture",
+      "organization": "広島県",
+      "category": "executive",
+      "title": "県知事のプロフィール | 広島県",
+      "url": "https://www.pref.hiroshima.lg.jp/soshiki/19/gov-profile.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-22",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "広島県公式の知事プロフィール（2025年11月29日掲載）。横田美香が現職知事であり、略歴の末尾に「令和7年11月 広島県知事」と明記する。2026-11-22に直接確認した。"
+    },
+    {
+      "id": "hiroshima-pref-term-list",
+      "municipality_key": "hiroshima-prefecture",
+      "organization": "広島県選挙管理委員会",
+      "category": "election",
+      "title": "市町長・議員の任期満了日（広島県選挙管理委員会）",
+      "url": "https://www.pref.hiroshima.lg.jp/site/sennkyokannriiinkai/1171866851113.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-22",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "広島県選挙管理委員会の公式ページ（2026年7月7日掲載）。リンク先の「市町長及び議会議員の任期満了日等一覧」（令和8年7月7日現在）に「広島県知事 11.11.28」と知事の任期満了日（令和11年11月28日）が明記されている。2026-11-22にPDF本体（33KB）を直接読み取り照合した。"
+    },
+    {
+      "id": "hiroshima-pref-governor-election-2025-results",
+      "municipality_key": "hiroshima-prefecture",
+      "organization": "広島県選挙管理委員会",
+      "category": "election",
+      "title": "令和7年執行 広島県知事選挙（広島県選挙管理委員会）",
+      "url": "https://www.pref.hiroshima.lg.jp/site/sennkyokannriiinkai/07chiji-senkyo.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-22",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "2025年11月9日執行の広島県知事選挙の投開票結果・選挙公報の公表ページ（2025年11月10日掲載）。リンク先の開票結果（確定版、37KB）の県計欄に、横田みか552,614票・大山宏34,333票・いのはら真弓75,468票、有効投票662,415票、投票総数673,903票が印字されている。2026-11-22にPDF本体を直接読み取り照合した。"
     }
   ]
 }
