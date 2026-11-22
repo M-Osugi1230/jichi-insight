@@ -1,0 +1,102 @@
+[
+ {
+  "as_of": "2026-11-22",
+  "assembly_id": "jp-local-340006-assembly-2023",
+  "confidence": "high",
+  "id": "jp-local-340006-assembly-2023-disclosure-2026",
+  "items": [
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_roster",
+    "note": "議員名簿を県議会公式サイトで公開。定数64名・現員63名（欠員1名は安芸郡）。議長は中本隆志（自由民主党広島県議会議員連盟）、副議長は東保幸（広島県議会民主県政会）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_composition",
+    "note": "8会派の構成を議員名簿と審議結果表で公開。審議結果表の会派別議員数は議長を除く表決参加62名分（自民議連34・民主県政会14・公明党6・広志会3・共産党2・自民会1・無所属ひとわ1・ひろしま刷新1）で、議長は表決に参加しない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "committee_composition",
+    "note": "委員会概要ページで、常任委員会6、特別委員会10（決算・予算・議員定数等調査を含む）、議会運営委員会の計17委員会の名簿を公開。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "proposals_and_results",
+    "note": "「令和8年9月定例会提出議案等」ページと審議結果（PDF）で、議案番号・件名・議決結果と会派別賛否を公開。報告（報第14〜18号）は議決の対象ではなく、提案スキーマにも報告の種別がないため本登録の対象外とした。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_votes",
+    "note": "審議結果表（PDF）で会派別の賛否（○賛成・×反対）を公表する。同表は採決日（令和8年9月30日・10月6日）ごとに編成され、9月30日分には特定議員の欠席（欠：加納孝彦・自民議連）という表決時点の事実も記録されており、凡例では退席・除斥が表決に関わる概念として定義されているため、事後の表決記録の性格が強い。一方で県議会だよりは同じ内容を「表決態度」とも呼んでおり、会議録検索システムに到達できず令和8年9月定例会の会議録との個別照合は登録時点で未了のため、事後の表決記録か採決前の態度表明の集約かは断定せず、公表どおりに登録した（判定の経緯は証拠パケットに記録）。",
+    "source_url": null
+   },
+   {
+    "availability": "not_published",
+    "granularity": "none",
+    "item": "member_votes",
+    "note": "議員個人別の賛否は公表されていない（公表は会派別のみ）。1人会派（自民会・無所属ひとわ・ひろしま刷新）については会派の表示が実質的に所属議員個人の賛否と一致するが、個人別の賛否として復元・登録はしていない。9月30日採決分の加納孝彦議員（自民議連）の欠席は、審議結果表の注記として公表されている。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "political_activity_expense_reports",
+    "note": "令和7年度分は会派別収支報告一覧表を公開（9会派単位。交付額・収入計・科目別支出・支出計・残余額）。議員個人別の内訳は公表されていない。",
+    "source_url": null
+   },
+   {
+    "availability": "restricted",
+    "granularity": "document",
+    "item": "political_activity_expense_receipts",
+    "note": "収支報告書・領収証書等の写しは議会における閲覧による公開で、Webでの全文公開はない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "inspection_trip_reports",
+    "note": "「現地調査の概要」ページと各委員会の概要ページで、委員会ごとに調査日時・調査場所・調査事項を公開。参加者名と費用の公表はない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "meeting_minutes",
+    "note": "会議録検索システム（www.pref.hiroshima.dbsr.jp）で本会議・委員会の会議録を公開。令和8年9月定例会分の会議録との個別照合は登録時点で未了（同システムへ到達できなかった）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "session_broadcast",
+    "note": "本会議・委員会のインターネット中継（ライブ・録画、YouTube）を県議会公式サイトで公開。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "petition_results",
+    "note": "請願の審議結果は審議結果表等で公表される。令和8年9月定例会については、提出議案等・審議結果・県議会だより第85号のいずれにも請願の掲載がなく、登録対象の請願は0件だった。",
+    "source_url": null
+   }
+  ],
+  "review_status": "reviewed",
+  "sources": [
+   "hiroshima-pref-assembly-top",
+   "hiroshima-pref-assembly-members",
+   "hiroshima-pref-assembly-results-2026-09",
+   "hiroshima-pref-assembly-seimu-index",
+   "hiroshima-pref-assembly-inspections-index"
+  ]
+ }
+]
