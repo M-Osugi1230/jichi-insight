@@ -41,15 +41,15 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 147
-    assert len({record["id"] for record in catalog["records"]}) == 147
+    assert len(catalog["records"]) == 150
+    assert len({record["id"] for record in catalog["records"]}) == 150
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
     terms = load_json("data/entities/executives/executive_terms.json")
     packets = load_json("data/entities/executives/evidence_packets.json")
 
-    assert len(terms) == 32
+    assert len(terms) == 33
     assert {term["municipality_id"] for term in terms} == {
         "jp-local-400009",
         "jp-local-401307",
@@ -83,6 +83,7 @@ def test_executive_registry_matches_shared_contracts() -> None:
         "jp-local-261009",
         "jp-local-260002",
         "jp-local-330001",
+        "jp-local-151009",
     }
     for term in terms:
         assert validation_errors("schemas/executive_term.schema.json", term) == []
@@ -296,6 +297,15 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
         # expiry (2024-11-11), which the commission's election
         # overview states directly.
         "jp-local-330001": "2028-11-11",
+        # Niigata City's end (2030-11-17) follows the Article 259
+        # proviso chain: the prefectural election commission's
+        # term-expiry list (2026-10-16 edition, published before the
+        # election) states the previous term expired on 2026-11-17,
+        # so the new term runs 2026-11-18 to 2030-11-17. The list
+        # has not yet been updated to state the new expiry itself;
+        # that cross-check remains outstanding and is recorded as
+        # an open question in the evidence packet.
+        "jp-local-151009": "2030-11-17",
     }
     for term in terms:
         assert term["term_end"] == expected_term_ends[term["municipality_id"]]
@@ -359,6 +369,7 @@ def test_executive_term_starts_follow_statutory_counting() -> None:
         "jp-local-261009": "2024-02-25",
         "jp-local-260002": "2026-04-16",
         "jp-local-330001": "2024-11-12",
+        "jp-local-151009": "2026-11-18",
     }
     for term in terms:
         assert term["term_start"] == expected_term_starts[term["municipality_id"]]
