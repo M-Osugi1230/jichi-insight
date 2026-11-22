@@ -144,7 +144,7 @@ export function KyotoCityReview() {
         </section>
         <section className={styles.scope} aria-labelledby="assembly-title">
           <div><p className="eyebrow">Assembly</p>
-            <h2 id="assembly-title">京都市議会</h2></div>
+            <h2 id="assembly-title">京都市会</h2></div>
           <div><p>議員定数{assembly.assembly.seat_count}人。
             登録議案{assembly.proposals.length}件・会派別賛否{assembly.factionVotes.length}件、
             政務活動費{assembly.expenses.length}件・視察{assembly.trips.length}件。</p>
@@ -164,7 +164,7 @@ export function KyotoCityReview() {
           <Link href="/municipalities/kyoto-prefecture">京都府</Link>
           <Link href="/projects#kyoto-city">重点事業</Link>
           <Link href="/promises#kyoto-city">市長公約</Link>
-          <Link href="/assemblies/kyoto-city">京都市議会</Link>
+          <Link href="/assemblies/kyoto-city">京都市会</Link>
         </nav>
       </div></main>
       <SiteFooter />
