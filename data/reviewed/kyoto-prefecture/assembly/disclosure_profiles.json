@@ -1,0 +1,102 @@
+[
+ {
+  "as_of": "2026-11-22",
+  "assembly_id": "jp-local-260002-assembly-2023",
+  "confidence": "high",
+  "id": "jp-local-260002-assembly-2023-disclosure-2026",
+  "items": [
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_roster",
+    "note": "議員名簿を府議会公式サイトで公開（会派別・50音順）。定数60名・現員59名（欠員1名）。議長は荒巻隆三（自由民主党京都府議会議員団）、副議長は兎本和久。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_composition",
+    "note": "6会派の構成を会派別名簿で公開（自由民主党京都府議会議員団28名・国民民主党・日本維新の会京都府議会議員団11名・日本共産党京都府議会議員団9名・府民クラブ京都府議会議員団5名・公明党京都府議会議員団5名・京都が好きだ1名）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "committee_composition",
+    "note": "委員会の紹介ページで、議会運営委員会、常任委員会5、特別委員会8の計14委員会の名称・設置目的・委員名簿を公開。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "proposals_and_results",
+    "note": "「令和8年9月定例会 議案等」ページで、議案番号・件名・提案年月日・議決年月日・議決結果と会派別「賛否の状況」を公開。手続的案件（決算特別委員会設置の件・同委員選任の件・議員派遣の件・閉会中継続審査・調査の件）も同ページの議決結果一覧に含まれ、賛否表の対象外である。報告案件の掲載は同ページになかった。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_votes",
+    "note": "議案等ページの「賛否の状況」表で会派別の賛成を表示する（賛成の場合のみ「賛成」と表示し、それ以外は空欄。空欄の意味を定義する凡例・注記は同ページにない）。令和8年9月定例会の会議録は登録時点で未公表で、個別議案の表決との突合ができないため、表の性質（事後の表決記録か採決前の態度表明の集約か）は断定せず、空欄の会派は賛否が表に示されていないものとして登録した（判定の経緯は証拠パケットに記録）。",
+    "source_url": null
+   },
+   {
+    "availability": "not_published",
+    "granularity": "none",
+    "item": "member_votes",
+    "note": "議員個人別の賛否は公表されていない（公表は会派別のみ）。1人会派（京都が好きだ）については会派の表示が実質的に所属議員個人の賛否と一致するが、個人別の賛否として復元・登録はしていない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "political_activity_expense_reports",
+    "note": "令和7年度分は会派交付分（6会派）と議員交付分（61名）の双方について収支報告書を公式サイトで公開し、概要ページに会派別・議員交付分の集計（交付額・使用額・残余額）を掲載。登録は公式公開の単位（会派6件・議員61件）に一致させた。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "political_activity_expense_receipts",
+    "note": "収支報告書に加え、領収書等の写しも公式サイトで公開されている（会派交付分・議員交付分とも）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "inspection_trip_reports",
+    "note": "海外調査は調査団ごとの報告ページで日程・参加者・調査先・調査事項を公開。常任委員会の管内外調査は委員会活動報告書（令和7年5月〜令和8年5月分）で調査先・調査事項を公開するが、委員会調査の参加者名と費用はいずれも公表されていない。管内外調査の専用案内ページは2021年の更新のままで調査内容の掲載がない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "meeting_minutes",
+    "note": "会議録検索システム（www.pref.kyoto.dbsr.jp）で本会議・委員会の会議録を公開。令和8年9月定例会分は登録時点（2026-11-22）で未公表（本会議＜定例会＞・会期期間で検索して該当文書0件。令和8年6月定例会分は16文書が公表済み）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "session_broadcast",
+    "note": "本会議と各委員会の審議をインターネット中継で公開（ライブ・録画配信）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "petition_results",
+    "note": "請願審査結果ページで、請願の付託委員会・受理日・審査結果を公開。令和8年9月定例会では請願2件（第784号・第785号）がいずれも不採択で、本会議では委員会の審査結果のとおりとすることが可決された。",
+    "source_url": null
+   }
+  ],
+  "review_status": "reviewed",
+  "sources": [
+   "kyoto-pref-assembly-top",
+   "kyoto-pref-assembly-members",
+   "kyoto-pref-assembly-proposals-2026-09",
+   "kyoto-pref-assembly-seimu-r7-overview",
+   "kyoto-pref-assembly-committee-reports-r8"
+  ]
+ }
+]
