@@ -1,5 +1,5 @@
 {
-  "version": "0.57.0",
+  "version": "0.58.0",
   "updated_at": "2026-11-23",
   "scope": "pilot",
   "records": [
@@ -2312,6 +2312,20 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "就任記者会見の県公式ページ。会見録の冒頭で知事本人が「本日、令和6年4月16日付で熊本県知事に就任いたしました」と発言している。2026-11-23に直接確認した。"
+    },
+    {
+      "id": "niigata-city-mayor-election-2026-bulletin",
+      "municipality_key": "niigata-city",
+      "organization": "新潟市選挙管理委員会",
+      "category": "election",
+      "title": "令和8年10月25日執行 新潟市長選挙 選挙公報（中原八一候補欄）",
+      "url": "https://www.city.niigata.lg.jp/shisei/senkyo/oshirase/sityou/r8sityousenkyo.files/2026kouhousiken.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-23",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "2026年10月25日執行の新潟市長選挙の選挙公報そのもの（全2ページ、候補者3人）。市選挙管理委員会の現行公式ページ「令和8年新潟市長選挙について」（https://www.city.niigata.lg.jp/shisei/senkyo/oshirase/sityou/r8sityousenkyo.html、2026年10月14日更新）からPDFがリンクされ、現行ページに現存する。2026-11-23に現行ページから改めて取得し、段階0（2026-11-23）の取得分とファイルが一致することを SHA-256 で確認した（SHA-256: dfea42ed4bcbf64a3d47f2be88990a17f3c2ef1bc3d3ce0b607c77ba770810ca、2,819,581バイト）。公報の候補者欄は画像でテキスト層はなく（抽出文字は新潟市選挙管理委員会の枠文のみ）、登録文はPDFの描画画像（150dpi・300dpi）の目視転記を正とし、複数解像度で照合した。中原八一候補欄は1ページ目中段にあり、キャッチコピー「市政をもっと前へ!「実行・実現力」」と大見出し「「輝きを増す新潟」の実現に向けて」の下に、3つの柱（柱1「若者や女性を応援し夢や希望をもてるまち」＝6項目、柱2「みんなで支える子育てのまち」「子どもの豊かな学びを支えるまち」＝5項目、柱3「誰もがいきいきと安心して暮らせ誇りがもてるまち」＝6項目）の■箇条書き計17項目、「2期8年の主な実績」欄（10項目）、プロフィール欄（経歴）で構成される。公報は候補者から提出された原稿をそのまま写真製版により印刷した公式文書（各ページ欄外にその旨の備考あり）で出典優先順位の最上位に当たるため、confidence は high とした。"
     },
     {
       "id": "okayama-pref-governor-election-2024-report",
