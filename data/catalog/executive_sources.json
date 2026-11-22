@@ -1,5 +1,5 @@
 {
-  "version": "0.56.0",
+  "version": "0.57.0",
   "updated_at": "2026-11-23",
   "scope": "pilot",
   "records": [
@@ -2171,7 +2171,7 @@
       "indexed_at": "2026-11-23",
       "review_status": "reviewed",
       "confidence": "high",
-      "notes": "2026年5月31日執行の新潟県知事選挙の投・開票結果を公表する県選挙管理委員会の公式ページ。開票結果の県計欄にはなずみ英世554,012票・土田竜吾230,721票・安中さとし43,089票、得票数計827,822票が印字され、投票結果の県計では投票率47.40%。2026-11-23に直接確認した。"
+      "notes": "2026年5月31日執行の新潟県知事選挙の投・開票結果を公表する県選挙管理委員会の公式ページ。開票結果の県計欄にはなずみ英世554,012票・土田竜吾230,721票・安中さとし43,089票、得票数計827,822票が印字され、投票結果の県計では投票率47.40%。「選挙の記録」欄は2026-11-23の確認時点で「作成中です。」のままで、選挙公報へのリンクはない。2026-11-23に直接確認した。"
     },
     {
       "id": "okayama-pref-governor-proposal-2025",
@@ -2326,6 +2326,48 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "熊本県選挙管理委員会告示第5号「公職選挙法第33条第1項の規定により、任期満了による熊本県知事選挙の期日を次のとおり定める。令和6年（2024年）3月7日…選挙期日 令和6年（2024年）3月24日」を収録する県公報（全5ページ、889,024バイト、SHA-256 e4908e03ab2aeb6894e4b4dbb7483eb88d96c96815e8fe7ebfcacd7a73480880）。2024年知事選挙の告示日が2024年3月7日であることを県選管自身の告示で直接確認した。同号には「熊本県知事選挙における選挙公報の掲載順序を決定する場合のくじを行う場所及び日時の決定」も収録される。なお、同日発行の号外第12号（https://www.pref.kumamoto.jp/uploaded/attachment/242244.pdf、全1ページ、872,655バイト）には熊本県知事選挙選挙長告示第2号（候補者の届出）が収録され、届出順に宮川一彦・幸山政史・毛利秀徳・きむら敬の4候補が令和6年3月7日に届け出たことが明記される。2026-11-23にPDF本体を直接読み取り照合した。"
+    },
+    {
+      "id": "niigata-pref-governor-election-list",
+      "municipality_key": "niigata-prefecture",
+      "organization": "新潟県選挙管理委員会",
+      "category": "election",
+      "title": "県知事選挙執行一覧",
+      "url": "https://www.pref.niigata.lg.jp/site/senkyo/1200589259767.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-23",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "歴代の新潟県知事選挙の執行一覧を公表する県選挙管理委員会の公式ページ。令和8年（2026年）5月31日執行の行から投・開票結果ページへリンクするが、選挙公報への導線はない。2026-11-23に直接確認した。"
+    },
+    {
+      "id": "niigata-pref-gazette-2026-05-14-extra",
+      "municipality_key": "niigata-prefecture",
+      "organization": "新潟県",
+      "category": "election",
+      "title": "新潟県報 号外1（令和8年5月14日）",
+      "url": "https://kenpo.pref.niigata.lg.jp/bn/R08_05/0514_g1/g1_20260514.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-23",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "令和8年5月14日発行の新潟県報号外1。選挙管理委員会告示第45号（新潟県知事選挙の期日）から第55号（選挙公報の掲載順序を定めるくじを行う日時及び場所の指定）までを収録する。選挙公報が発行されたこと自体は公式に裏付けられるが、県報は選挙公報の本文を掲載しない。2026-11-23に確認した。"
+    },
+    {
+      "id": "niigata-city-governor-election-2026-overview",
+      "municipality_key": "niigata-city",
+      "organization": "新潟市選挙管理委員会",
+      "category": "election",
+      "title": "新潟県知事選挙について（新潟市）",
+      "url": "https://www.city.niigata.lg.jp/shisei/senkyo/oshirase/kentiji_senkyo/r8kenchiji_senkyo.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-23",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "新潟市選挙管理委員会の公式ページ（2026年5月14日更新）。選挙公報は新聞折込と戸別配布（ポスティング）のいずれかの方法で配布するほか、区役所や出張所、期日前投票所に備え置くと明記し、Web版PDFの掲載はない。選挙公報のお知らせ版（点字版・音声版）は希望者への送付による。候補者情報は県選管ホームページへ誘導する。2026-11-23に確認した。"
     }
   ]
 }
