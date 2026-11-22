@@ -1,3 +1,6 @@
+import niigataPrefectureMunicipality from "../../../data/reviewed/niigata-prefecture/municipality.json";
+import niigataCityMunicipality from "../../../data/reviewed/niigata-city/municipality.json";
+import { niigataFinance, niigataCityFinance } from "@/lib/niigataFinance";
 import kyotoPrefectureMunicipality from "../../../data/reviewed/kyoto-prefecture/municipality.json";
 import kyotoCityMunicipality from "../../../data/reviewed/kyoto-city/municipality.json";
 import { kyotoFinance, kyotoCityFinance } from "@/lib/kyotoFinance";
@@ -83,6 +86,7 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
   // Stage 1-4: guard every Shizuoka deep-dive link against the matching Reviewed identity.
   for (const item of [
     { slug: "kyoto-prefecture", municipality: kyotoPrefectureMunicipality, finance: kyotoFinance },
+    { slug: "niigata-prefecture", municipality: niigataPrefectureMunicipality, finance: niigataFinance },
     { slug: "hiroshima-prefecture", municipality: hiroshimaPrefectureMunicipality, finance: hiroshimaFinance },
     { slug: "shizuoka-prefecture", municipality: shizuokaPrefectureMunicipality, finance: shizuokaFinance },
     { slug: "shizuoka-city", municipality: shizuokaCityMunicipality, finance: shizuokaCityFinance },
@@ -111,6 +115,25 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
 
   // Hiroshima City is a Phase 15 city with separately reviewed stage 2-4 records.
   // Match the municipal code before publishing any deep-dive navigation.
+  if (!matched && officialCode === niigataCityMunicipality.official_code &&
+    niigataCityMunicipality.data_status === "reviewed") {
+    const municipalityId = niigataCityMunicipality.id;
+    const hasProjects = projectRegistry["niigata-city"].projects.some((record) =>
+      record.municipality_id === municipalityId && record.review_status === "reviewed",
+    );
+    const entry = assemblies["niigata-city"];
+    const hasAssembly = entry.assembly.review_status === "reviewed" &&
+      entry.disclosure.review_status === "reviewed";
+    return {
+      key: "niigata-city",
+      finance: niigataCityFinance.records.some((record) =>
+        record.municipality_id === municipalityId && record.review_status === "reviewed" &&
+        (record.stage === "initial_budget" || record.stage === "settlement"),
+      ),
+      projects: hasProjects, promises: hasReviewedExecutivePromises(municipalityId),
+      assembly: hasAssembly,
+    };
+  }
   // Kyoto City is deliberately outside the historical Phase 15 queue.
   // Its dedicated reviewed package supports the explicitly generated route.
   if (!matched && officialCode === kyotoCityMunicipality.official_code &&
