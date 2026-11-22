@@ -1238,5 +1238,50 @@
       "事業との接続は文言・内容に基づく推定であり、市が公約と事業の公式な対応付けを公表した場合は接続を見直す。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-hiroshima-pref-2025",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-hiroshima-pref-2025",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "県選管の公式ページ「令和7年執行 広島県知事選挙」で投開票結果と選挙公報の公表を確認し、県公式の知事プロフィールで現職知事であることを、県選管の任期満了一覧で知事の任期満了日（令和11年11月28日）を確認した（段階1で登録済み）。得票数552,614票は段階1で開票結果（確定版）と照合済みである。あわせて候補者提出の音声読み上げ対応データの公表を県選管の選挙ページおよび検索で確認したが、公表は確認できなかった。",
+        "source_ids": [
+          "hiroshima-pref-governor-election-2025-results",
+          "hiroshima-pref-governor",
+          "hiroshima-pref-term-list"
+        ],
+        "location_note": "県選管の選挙ページと開票結果、知事プロフィール、任期満了一覧（段階0の棚卸しと段階1で確認済み）。",
+        "decision": "accepted",
+        "review_note": "確認した出典は checked_source_ids に列挙した。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "県選管の公式ページから選挙公報PDF（全1ページ）を直接取得し、最上段の横田みか候補欄（見出し5件と・項目9件）を確認した。PDFのテキスト抽出は空白を除き0字で、候補者欄は画像主体であることを実測した。",
+        "source_ids": [
+          "hiroshima-pref-governor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全1ページ）の最上段。",
+        "decision": "accepted",
+        "review_note": "登録文はPDFの描画画像（200dpi・300dpi）の照合で転記した。音声読み上げ対応データの公表が確認できなかったためテキスト層との突合は行っていない。"
+      },
+      {
+        "field": "result_status",
+        "statement": "選挙公報を登録し、分割レビューを経て公約レコード14件を作成したため、result_status を source_registered とした。候補者欄のQRコードが案内する詳細資料および音声読み上げ対応データについては、安定した所在・公表を特定していないため、資料が存在しないとは判定しない。",
+        "source_ids": [
+          "hiroshima-pref-governor-election-2025-bulletin"
+        ],
+        "location_note": "本探索レコード全体。",
+        "decision": "accepted",
+        "review_note": "公的機関（県選管）の公式サイトから直接取得した公報そのものであるため confidence は high とする。"
+      }
+    ],
+    "open_questions": [
+      "候補者提出の音声読み上げ対応データの公表は確認できていない。",
+      "候補者欄のQRコードが案内する詳細な公約資料の安定した所在は特定できていない。",
+      "事業との接続は文言・内容に基づく推定であり、県が公約と事業の公式な対応付けを公表した場合は接続を見直す。"
+    ],
+    "review_status": "reviewed"
   }
 ]

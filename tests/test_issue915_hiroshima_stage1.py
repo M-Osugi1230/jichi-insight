@@ -200,9 +200,12 @@ def test_governor_term_is_registered_with_votes() -> None:
     assert term["term_end"] == "2029-11-28"
     assert term["election_date"] == "2025-11-09"
     assert term["status"] == "current"
-    # The promise registration belongs to the cluster's promise
-    # stage, so no manifesto source is connected yet.
-    assert term["manifesto_source_ids"] == []
+    # The promise registration belonged to the cluster's promise
+    # stage at stage 1. Stage 3 (Issue #921) then transcribed the
+    # panel and registered the bulletin.
+    assert term["manifesto_source_ids"] == [
+        "hiroshima-pref-governor-election-2025-bulletin"
+    ]
     assert term["sources"] == [
         "hiroshima-pref-governor",
         "hiroshima-pref-term-list",

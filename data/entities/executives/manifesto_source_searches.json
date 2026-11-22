@@ -804,5 +804,37 @@
     ],
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-hiroshima-pref-2025",
+    "executive_term_id": "jp-local-340006-executive-2025-11-29",
+    "searched_at": "2026-11-22",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "hiroshima-pref-governor-election-2025-bulletin"
+    ],
+    "checked_source_ids": [
+      "hiroshima-pref-governor",
+      "hiroshima-pref-term-list",
+      "hiroshima-pref-governor-election-2025-results",
+      "hiroshima-pref-governor-election-2025-bulletin"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "広島県知事選挙（令和7年11月9日執行）の選挙公報は、広島県選挙管理委員会が県公式サイトで公表しており、2026-11-22に直接取得した（全1ページ、1,600,375バイト）。最上段の横田みか候補欄（見出し5件と・項目9件）を確認し、選挙公報を出典として登録、分割レビュー（manifesto-review-jp-local-340006-2025）を経て公約レコード14件を作成した。候補者欄は画像主体で、PDFのテキスト抽出は空白を除き0字（実測）であり候補者欄からは文字が抽出されないため、登録文は描画画像（200dpi・300dpi）の目視転記を正とし、複数解像度で照合した。候補者提出の音声読み上げ対応データについては、県選管の選挙ページ（ダウンロードは投票結果・開票結果・期日前投票結果・選挙公報の4件のみ）および検索で公表を確認できなかったため、転記照合には用いていない（存在しないと判定するものではない）。選挙公報は候補者提出原稿をそのまま掲載した公式文書であり、県公式サイトから直接取得できたため、公約レコードの confidence は high とした。候補者欄にはQRコードがあるが、詳細な公約資料の安定した所在は本探索では特定していない。",
+    "next_actions": [
+      "候補者提出の音声読み上げ対応データの公表が新たに確認できれば、登録済みの公約文と突合する",
+      "候補者欄のQRコードが案内する詳細な公約資料の安定した所在が特定できれば、登録済みの公約文と照合する",
+      "未接続の公約（文化・関係人口、観光、ふるさと納税、平和）について、計画・事業資料への進捗証拠の接続を拡充する",
+      "2029年11月の任期満了に伴う次回知事選挙では、新任期の公約原文資料として選挙公報を改めて登録する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]
