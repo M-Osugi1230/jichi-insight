@@ -1,0 +1,942 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第6章（計画p.137〜146）。将来像「安全に安心して暮らせる、暮らしやすい新潟」の将来像Iの政策の柱1「安全に安心して暮らせる新潟」の下位の基本政策。",
+    "review_note": "計画自身の政策単位であり、前計画で評価単位であった小項目（政策）の階層に対応する。県は新計画について年次評価を公表しておらず、評価の回っている単位は現時点で存在しないため、計画の政策単位である基本政策を正本とした。第5章の重要課題は分野横断の別軸で公式対応表がないため接続していない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text",
+     "niigata-pref-plan-page"
+    ],
+    "statement": "登録単位は計画第6章の基本政策とし、本件は「一段加速した防災・減災対策の推進」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第6章の体系表および計画p.137〜146の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "公式名称は「一段加速した防災・減災対策の推進」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/niigata_prefecture_priority_project_selection.json",
+    "review_note": "金額順・規模順ではなく、計画体系の柱と掲載順に基づく機械的な選定とした。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "母集団は計画第6章の基本政策19件。6つの政策の柱を掲載順に巡回する方式（1巡目）で将来像Iの政策の柱1「安全に安心して暮らせる新潟」から掲載順に選定した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画計画p.137〜146の「現状・課題」。",
+    "review_note": "県の記述の要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "深刻な被害を回避して『災害から命を守る』ことを最優先の課題とし、被害を未然に防止・軽減するためのハード対策を強化するとともに、防災情報が住民へくまなく伝達され適切な避難行動に結びつく住民目線に立ったソフト対策に取り組むなど、一体的・総合的な防災・減災対策を講じる（計画第6章1－（1）の「現状・課題」）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第6章の基本政策の記載（所管部局の明示なし）。",
+    "review_note": "計画には基本政策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "計画に基本政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "県の当初予算資料（令和8年度当初予算の概要・計数資料編）は重点テーマ・事業単位および款・会計単位の公表。",
+    "review_note": "事業単位の予算額を基本政策に按分・接続することはしない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text",
+     "niigata-pref-plan-page"
+    ],
+    "statement": "新潟県は基本政策単位の令和7年度予算額・決算額を公表していない。県の当初予算資料（「令和8年度当初予算の概要」「令和8年度当初予算 計数資料編」等）は、重点テーマ・事業単位および款・会計単位で公表されており、基本政策との公式の対応表がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "計画第7章（計画p.369）および知事政策局政策企画課の公表ページ。",
+    "review_note": "前計画の年次評価の形式を新計画に流用しない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text",
+     "niigata-pref-policy-division-page"
+    ],
+    "statement": "新潟県は現行計画（令和7年3月策定）について、基本政策ごとの年次評価・達成度評価を公表していない。計画第7章の定めでは、毎年度の状況把握・分析を行う一方、有識者による外部評価は令和10年度・令和14年度の目標に対する評価に当たって実施することとされており、2026年11月23日の確認時点では新計画の実施状況報告・評価の公表はない（公表されているのは令和7年度成果指標に関する県民満足度調査の結果など指標関連の調査結果のみ）。このため公式評価は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "計画「達成目標（成果指標）一覧（第6章関係）」の本基本政策の掲載箇所。",
+    "review_note": "中間目標（令和10年度）は definition に併記し、target は最終年度目標に統一した。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "本基本政策のKPIとして、計画の「達成目標（成果指標）一覧（第6章関係）」に掲げられた成果指標8件を登録した（現状値＝計画の現状値、target＝令和14年度目標値、令和10年度目標値は各KPIの definition に併記）。県は年次の実績値・達成度評価を公表していないため、実績は未登録とし、全KPIの assessment を not_assessable とした。"
+   }
+  ],
+  "id": "evidence-jp-local-150002-project-2025-accelerated-disaster-prevention",
+  "open_questions": [
+   "県が新計画の実施状況・評価を公表する際の形式（年次の状況把握結果の公表範囲、令和10年度・令和14年度の外部評価の公表方法）が未定であり、公表時に実績値と公式評価の登録を見直す。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-150002-project-2025-accelerated-disaster-prevention",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第6章（計画p.147〜154）。将来像「安全に安心して暮らせる、暮らしやすい新潟」の将来像Iの政策の柱1「安全に安心して暮らせる新潟」の下位の基本政策。",
+    "review_note": "計画自身の政策単位であり、前計画で評価単位であった小項目（政策）の階層に対応する。県は新計画について年次評価を公表しておらず、評価の回っている単位は現時点で存在しないため、計画の政策単位である基本政策を正本とした。第5章の重要課題は分野横断の別軸で公式対応表がないため接続していない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text",
+     "niigata-pref-plan-page"
+    ],
+    "statement": "登録単位は計画第6章の基本政策とし、本件は「安全・安心な地域を支える基盤づくり」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第6章の体系表および計画p.147〜154の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "公式名称は「安全・安心な地域を支える基盤づくり」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/niigata_prefecture_priority_project_selection.json",
+    "review_note": "金額順・規模順ではなく、計画体系の柱と掲載順に基づく機械的な選定とした。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "母集団は計画第6章の基本政策19件。6つの政策の柱を掲載順に巡回する方式（2巡目）で将来像Iの政策の柱1「安全に安心して暮らせる新潟」から掲載順に選定した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画計画p.147〜154の「現状・課題」。",
+    "review_note": "県の記述の要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "老朽化が進むインフラ施設及び公共施設について、適切かつ効率的な維持管理・補修・更新を行い、必要な施設は適切な時期に確実に更新するなどの老朽化対策を進め、県民に安全で安心な社会資本を継続して提供する（計画第6章1－（2）の「現状・課題」）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第6章の基本政策の記載（所管部局の明示なし）。",
+    "review_note": "計画には基本政策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "計画に基本政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "県の当初予算資料（令和8年度当初予算の概要・計数資料編）は重点テーマ・事業単位および款・会計単位の公表。",
+    "review_note": "事業単位の予算額を基本政策に按分・接続することはしない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text",
+     "niigata-pref-plan-page"
+    ],
+    "statement": "新潟県は基本政策単位の令和7年度予算額・決算額を公表していない。県の当初予算資料（「令和8年度当初予算の概要」「令和8年度当初予算 計数資料編」等）は、重点テーマ・事業単位および款・会計単位で公表されており、基本政策との公式の対応表がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "計画第7章（計画p.369）および知事政策局政策企画課の公表ページ。",
+    "review_note": "前計画の年次評価の形式を新計画に流用しない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text",
+     "niigata-pref-policy-division-page"
+    ],
+    "statement": "新潟県は現行計画（令和7年3月策定）について、基本政策ごとの年次評価・達成度評価を公表していない。計画第7章の定めでは、毎年度の状況把握・分析を行う一方、有識者による外部評価は令和10年度・令和14年度の目標に対する評価に当たって実施することとされており、2026年11月23日の確認時点では新計画の実施状況報告・評価の公表はない（公表されているのは令和7年度成果指標に関する県民満足度調査の結果など指標関連の調査結果のみ）。このため公式評価は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "計画「達成目標（成果指標）一覧（第6章関係）」の本基本政策の掲載箇所。",
+    "review_note": "中間目標（令和10年度）は definition に併記し、target は最終年度目標に統一した。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "本基本政策のKPIとして、計画の「達成目標（成果指標）一覧（第6章関係）」に掲げられた成果指標7件を登録した（現状値＝計画の現状値、target＝令和14年度目標値、令和10年度目標値は各KPIの definition に併記）。県は年次の実績値・達成度評価を公表していないため、実績は未登録とし、全KPIの assessment を not_assessable とした。"
+   }
+  ],
+  "id": "evidence-jp-local-150002-project-2025-safe-community-infrastructure",
+  "open_questions": [
+   "県が新計画の実施状況・評価を公表する際の形式（年次の状況把握結果の公表範囲、令和10年度・令和14年度の外部評価の公表方法）が未定であり、公表時に実績値と公式評価の登録を見直す。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-150002-project-2025-safe-community-infrastructure",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第6章（計画p.195〜206）。将来像「安全に安心して暮らせる、暮らしやすい新潟」の将来像Iの政策の柱2「県民すべてが生き生きと暮らせる新潟」の下位の基本政策。",
+    "review_note": "計画自身の政策単位であり、前計画で評価単位であった小項目（政策）の階層に対応する。県は新計画について年次評価を公表しておらず、評価の回っている単位は現時点で存在しないため、計画の政策単位である基本政策を正本とした。第5章の重要課題は分野横断の別軸で公式対応表がないため接続していない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text",
+     "niigata-pref-plan-page"
+    ],
+    "statement": "登録単位は計画第6章の基本政策とし、本件は「こども・子育てを支える環境の整備」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第6章の体系表および計画p.195〜206の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "公式名称は「こども・子育てを支える環境の整備」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/niigata_prefecture_priority_project_selection.json",
+    "review_note": "金額順・規模順ではなく、計画体系の柱と掲載順に基づく機械的な選定とした。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "母集団は計画第6章の基本政策19件。6つの政策の柱を掲載順に巡回する方式（1巡目）で将来像Iの政策の柱2「県民すべてが生き生きと暮らせる新潟」から掲載順に選定した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画計画p.195〜206の「現状・課題」。",
+    "review_note": "県の記述の要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "妊娠・出産から子育てまでの切れ目のない経済的支援や結婚を希望する方への支援を行うとともに、仕事と子育てが両立できる職場環境を充実させる取組や多様化する保育ニーズに対応した取組を進め、こどもを生み育てやすい環境の整備を図り、社会全体で子育てを応援する気運を高める（計画第6章2－（1）の「現状・課題」）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第6章の基本政策の記載（所管部局の明示なし）。",
+    "review_note": "計画には基本政策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "計画に基本政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "県の当初予算資料（令和8年度当初予算の概要・計数資料編）は重点テーマ・事業単位および款・会計単位の公表。",
+    "review_note": "事業単位の予算額を基本政策に按分・接続することはしない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text",
+     "niigata-pref-plan-page"
+    ],
+    "statement": "新潟県は基本政策単位の令和7年度予算額・決算額を公表していない。県の当初予算資料（「令和8年度当初予算の概要」「令和8年度当初予算 計数資料編」等）は、重点テーマ・事業単位および款・会計単位で公表されており、基本政策との公式の対応表がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "計画第7章（計画p.369）および知事政策局政策企画課の公表ページ。",
+    "review_note": "前計画の年次評価の形式を新計画に流用しない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text",
+     "niigata-pref-policy-division-page"
+    ],
+    "statement": "新潟県は現行計画（令和7年3月策定）について、基本政策ごとの年次評価・達成度評価を公表していない。計画第7章の定めでは、毎年度の状況把握・分析を行う一方、有識者による外部評価は令和10年度・令和14年度の目標に対する評価に当たって実施することとされており、2026年11月23日の確認時点では新計画の実施状況報告・評価の公表はない（公表されているのは令和7年度成果指標に関する県民満足度調査の結果など指標関連の調査結果のみ）。このため公式評価は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "計画「達成目標（成果指標）一覧（第6章関係）」の本基本政策の掲載箇所。",
+    "review_note": "中間目標（令和10年度）は definition に併記し、target は最終年度目標に統一した。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "本基本政策のKPIとして、計画の「達成目標（成果指標）一覧（第6章関係）」に掲げられた成果指標5件を登録した（現状値＝計画の現状値、target＝令和14年度目標値、令和10年度目標値は各KPIの definition に併記）。県は年次の実績値・達成度評価を公表していないため、実績は未登録とし、全KPIの assessment を not_assessable とした。"
+   }
+  ],
+  "id": "evidence-jp-local-150002-project-2025-childrearing-support-environment",
+  "open_questions": [
+   "県が新計画の実施状況・評価を公表する際の形式（年次の状況把握結果の公表範囲、令和10年度・令和14年度の外部評価の公表方法）が未定であり、公表時に実績値と公式評価の登録を見直す。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-150002-project-2025-childrearing-support-environment",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第6章（計画p.207〜222）。将来像「安全に安心して暮らせる、暮らしやすい新潟」の将来像Iの政策の柱2「県民すべてが生き生きと暮らせる新潟」の下位の基本政策。",
+    "review_note": "計画自身の政策単位であり、前計画で評価単位であった小項目（政策）の階層に対応する。県は新計画について年次評価を公表しておらず、評価の回っている単位は現時点で存在しないため、計画の政策単位である基本政策を正本とした。第5章の重要課題は分野横断の別軸で公式対応表がないため接続していない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text",
+     "niigata-pref-plan-page"
+    ],
+    "statement": "登録単位は計画第6章の基本政策とし、本件は「地域医療の確保と健康立県の実現」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第6章の体系表および計画p.207〜222の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "公式名称は「地域医療の確保と健康立県の実現」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/niigata_prefecture_priority_project_selection.json",
+    "review_note": "金額順・規模順ではなく、計画体系の柱と掲載順に基づく機械的な選定とした。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "母集団は計画第6章の基本政策19件。6つの政策の柱を掲載順に巡回する方式（2巡目）で将来像Iの政策の柱2「県民すべてが生き生きと暮らせる新潟」から掲載順に選定した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画計画p.207〜222の「現状・課題」。",
+    "review_note": "県の記述の要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "健康寿命を延伸し平均寿命と健康寿命の差を縮小するため、県民一人一人が自ら健康づくりを実践する必要性の啓発と、健康づくりに取り組みやすい環境整備を推進するとともに、地域で安心して安全な医療が受けられる体制の整備、地域医療を担う医師・看護職員の確保、住み慣れた地域で生活できる高齢者福祉の推進に取り組む（計画第6章2－（2）の「現状・課題」および同基本政策の展開方向）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第6章の基本政策の記載（所管部局の明示なし）。",
+    "review_note": "計画には基本政策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "計画に基本政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "県の当初予算資料（令和8年度当初予算の概要・計数資料編）は重点テーマ・事業単位および款・会計単位の公表。",
+    "review_note": "事業単位の予算額を基本政策に按分・接続することはしない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text",
+     "niigata-pref-plan-page"
+    ],
+    "statement": "新潟県は基本政策単位の令和7年度予算額・決算額を公表していない。県の当初予算資料（「令和8年度当初予算の概要」「令和8年度当初予算 計数資料編」等）は、重点テーマ・事業単位および款・会計単位で公表されており、基本政策との公式の対応表がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "計画第7章（計画p.369）および知事政策局政策企画課の公表ページ。",
+    "review_note": "前計画の年次評価の形式を新計画に流用しない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text",
+     "niigata-pref-policy-division-page"
+    ],
+    "statement": "新潟県は現行計画（令和7年3月策定）について、基本政策ごとの年次評価・達成度評価を公表していない。計画第7章の定めでは、毎年度の状況把握・分析を行う一方、有識者による外部評価は令和10年度・令和14年度の目標に対する評価に当たって実施することとされており、2026年11月23日の確認時点では新計画の実施状況報告・評価の公表はない（公表されているのは令和7年度成果指標に関する県民満足度調査の結果など指標関連の調査結果のみ）。このため公式評価は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "計画「達成目標（成果指標）一覧（第6章関係）」の本基本政策の掲載箇所。",
+    "review_note": "中間目標（令和10年度）は definition に併記し、target は最終年度目標に統一した。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "本基本政策のKPIとして、計画の「達成目標（成果指標）一覧（第6章関係）」に掲げられた成果指標10件を登録した（現状値＝計画の現状値、target＝令和14年度目標値、令和10年度目標値は各KPIの definition に併記）。県は年次の実績値・達成度評価を公表していないため、実績は未登録とし、全KPIの assessment を not_assessable とした。"
+   }
+  ],
+  "id": "evidence-jp-local-150002-project-2025-regional-medical-and-health",
+  "open_questions": [
+   "県が新計画の実施状況・評価を公表する際の形式（年次の状況把握結果の公表範囲、令和10年度・令和14年度の外部評価の公表方法）が未定であり、公表時に実績値と公式評価の登録を見直す。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-150002-project-2025-regional-medical-and-health",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第6章（計画p.239〜242）。将来像「安全に安心して暮らせる、暮らしやすい新潟」の将来像Iの政策の柱3「誰もが社会参画できる新潟」の下位の基本政策。",
+    "review_note": "計画自身の政策単位であり、前計画で評価単位であった小項目（政策）の階層に対応する。県は新計画について年次評価を公表しておらず、評価の回っている単位は現時点で存在しないため、計画の政策単位である基本政策を正本とした。第5章の重要課題は分野横断の別軸で公式対応表がないため接続していない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text",
+     "niigata-pref-plan-page"
+    ],
+    "statement": "登録単位は計画第6章の基本政策とし、本件は「誰もが個人として尊重され、共に暮らせる社会の実現」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第6章の体系表および計画p.239〜242の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "公式名称は「誰もが個人として尊重され、共に暮らせる社会の実現」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/niigata_prefecture_priority_project_selection.json",
+    "review_note": "金額順・規模順ではなく、計画体系の柱と掲載順に基づく機械的な選定とした。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "母集団は計画第6章の基本政策19件。6つの政策の柱を掲載順に巡回する方式（1巡目）で将来像Iの政策の柱3「誰もが社会参画できる新潟」から掲載順に選定した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画計画p.239〜242の「現状・課題」。",
+    "review_note": "県の記述の要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "住み慣れた地域で、誰もが支え、支えられる社会の実現を目指し、市町村や関係機関とともに、複雑化・多様化する課題に応じた包括的な支援体制を構築するとともに、差別や偏見をなくすための人権啓発を推進し、生活困窮者に対して生活保護に至る前の早い段階からの自立に向けた包括的な支援を充実させる（計画第6章3－（1）の「現状・課題」）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第6章の基本政策の記載（所管部局の明示なし）。",
+    "review_note": "計画には基本政策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "計画に基本政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "県の当初予算資料（令和8年度当初予算の概要・計数資料編）は重点テーマ・事業単位および款・会計単位の公表。",
+    "review_note": "事業単位の予算額を基本政策に按分・接続することはしない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text",
+     "niigata-pref-plan-page"
+    ],
+    "statement": "新潟県は基本政策単位の令和7年度予算額・決算額を公表していない。県の当初予算資料（「令和8年度当初予算の概要」「令和8年度当初予算 計数資料編」等）は、重点テーマ・事業単位および款・会計単位で公表されており、基本政策との公式の対応表がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "計画第7章（計画p.369）および知事政策局政策企画課の公表ページ。",
+    "review_note": "前計画の年次評価の形式を新計画に流用しない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text",
+     "niigata-pref-policy-division-page"
+    ],
+    "statement": "新潟県は現行計画（令和7年3月策定）について、基本政策ごとの年次評価・達成度評価を公表していない。計画第7章の定めでは、毎年度の状況把握・分析を行う一方、有識者による外部評価は令和10年度・令和14年度の目標に対する評価に当たって実施することとされており、2026年11月23日の確認時点では新計画の実施状況報告・評価の公表はない（公表されているのは令和7年度成果指標に関する県民満足度調査の結果など指標関連の調査結果のみ）。このため公式評価は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "計画「達成目標（成果指標）一覧（第6章関係）」の本基本政策の掲載箇所。",
+    "review_note": "中間目標（令和10年度）は definition に併記し、target は最終年度目標に統一した。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "本基本政策のKPIとして、計画の「達成目標（成果指標）一覧（第6章関係）」に掲げられた成果指標3件を登録した（現状値＝計画の現状値、target＝令和14年度目標値、令和10年度目標値は各KPIの definition に併記）。県は年次の実績値・達成度評価を公表していないため、実績は未登録とし、全KPIの assessment を not_assessable とした。"
+   }
+  ],
+  "id": "evidence-jp-local-150002-project-2025-respect-and-coexistence",
+  "open_questions": [
+   "県が新計画の実施状況・評価を公表する際の形式（年次の状況把握結果の公表範囲、令和10年度・令和14年度の外部評価の公表方法）が未定であり、公表時に実績値と公式評価の登録を見直す。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-150002-project-2025-respect-and-coexistence",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第6章（計画p.243〜250）。将来像「安全に安心して暮らせる、暮らしやすい新潟」の将来像Iの政策の柱3「誰もが社会参画できる新潟」の下位の基本政策。",
+    "review_note": "計画自身の政策単位であり、前計画で評価単位であった小項目（政策）の階層に対応する。県は新計画について年次評価を公表しておらず、評価の回っている単位は現時点で存在しないため、計画の政策単位である基本政策を正本とした。第5章の重要課題は分野横断の別軸で公式対応表がないため接続していない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text",
+     "niigata-pref-plan-page"
+    ],
+    "statement": "登録単位は計画第6章の基本政策とし、本件は「共同参画社会の実現」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第6章の体系表および計画p.243〜250の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "公式名称は「共同参画社会の実現」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/niigata_prefecture_priority_project_selection.json",
+    "review_note": "金額順・規模順ではなく、計画体系の柱と掲載順に基づく機械的な選定とした。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "母集団は計画第6章の基本政策19件。6つの政策の柱を掲載順に巡回する方式（2巡目）で将来像Iの政策の柱3「誰もが社会参画できる新潟」から掲載順に選定した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画計画p.243〜250の「現状・課題」。",
+    "review_note": "県の記述の要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "家庭、職場、地域等、社会のあらゆる場において男女が共に参画し、その個性と能力を十分に発揮できる社会の実現に向け、男女平等意識の浸透に向けた取組、多様で柔軟な働き方の実現など男女が共に働きやすく仕事と家庭生活を両立できる環境の整備、女性が活躍できる取組を推進するとともに、県民の社会活動参加と多様な主体の協働による共助社会の実現を図る（計画第6章3－（2）の「現状・課題」および同基本政策の展開方向）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第6章の基本政策の記載（所管部局の明示なし）。",
+    "review_note": "計画には基本政策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "計画に基本政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "県の当初予算資料（令和8年度当初予算の概要・計数資料編）は重点テーマ・事業単位および款・会計単位の公表。",
+    "review_note": "事業単位の予算額を基本政策に按分・接続することはしない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text",
+     "niigata-pref-plan-page"
+    ],
+    "statement": "新潟県は基本政策単位の令和7年度予算額・決算額を公表していない。県の当初予算資料（「令和8年度当初予算の概要」「令和8年度当初予算 計数資料編」等）は、重点テーマ・事業単位および款・会計単位で公表されており、基本政策との公式の対応表がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "計画第7章（計画p.369）および知事政策局政策企画課の公表ページ。",
+    "review_note": "前計画の年次評価の形式を新計画に流用しない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text",
+     "niigata-pref-policy-division-page"
+    ],
+    "statement": "新潟県は現行計画（令和7年3月策定）について、基本政策ごとの年次評価・達成度評価を公表していない。計画第7章の定めでは、毎年度の状況把握・分析を行う一方、有識者による外部評価は令和10年度・令和14年度の目標に対する評価に当たって実施することとされており、2026年11月23日の確認時点では新計画の実施状況報告・評価の公表はない（公表されているのは令和7年度成果指標に関する県民満足度調査の結果など指標関連の調査結果のみ）。このため公式評価は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "計画「達成目標（成果指標）一覧（第6章関係）」の本基本政策の掲載箇所。",
+    "review_note": "中間目標（令和10年度）は definition に併記し、target は最終年度目標に統一した。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "本基本政策のKPIとして、計画の「達成目標（成果指標）一覧（第6章関係）」に掲げられた成果指標4件を登録した（現状値＝計画の現状値、target＝令和14年度目標値、令和10年度目標値は各KPIの definition に併記）。県は年次の実績値・達成度評価を公表していないため、実績は未登録とし、全KPIの assessment を not_assessable とした。"
+   }
+  ],
+  "id": "evidence-jp-local-150002-project-2025-participatory-society",
+  "open_questions": [
+   "県が新計画の実施状況・評価を公表する際の形式（年次の状況把握結果の公表範囲、令和10年度・令和14年度の外部評価の公表方法）が未定であり、公表時に実績値と公式評価の登録を見直す。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-150002-project-2025-participatory-society",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第6章（計画p.251〜264）。将来像「地域経済が元気で活力のある新潟」の将来像IIの政策の柱1「多様な人や文化が交わる賑わいのある新潟」の下位の基本政策。",
+    "review_note": "計画自身の政策単位であり、前計画で評価単位であった小項目（政策）の階層に対応する。県は新計画について年次評価を公表しておらず、評価の回っている単位は現時点で存在しないため、計画の政策単位である基本政策を正本とした。第5章の重要課題は分野横断の別軸で公式対応表がないため接続していない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text",
+     "niigata-pref-plan-page"
+    ],
+    "statement": "登録単位は計画第6章の基本政策とし、本件は「多様な地域資源を活かした交流人口の拡大」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第6章の体系表および計画p.251〜264の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "公式名称は「多様な地域資源を活かした交流人口の拡大」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/niigata_prefecture_priority_project_selection.json",
+    "review_note": "金額順・規模順ではなく、計画体系の柱と掲載順に基づく機械的な選定とした。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "母集団は計画第6章の基本政策19件。6つの政策の柱を掲載順に巡回する方式（1巡目）で将来像IIの政策の柱1「多様な人や文化が交わる賑わいのある新潟」から掲載順に選定した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画計画p.251〜264の「現状・課題」。",
+    "review_note": "県の記述の要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "人口減少が進む中、地域社会を維持・発展させていくため、多様な関係者との連携・協力により、国内外に通用する魅力ある観光地づくり、国内観光客・外国人観光客の誘致、スポーツと文化を活かした地域づくりを進め、交流人口の拡大と地域経済の活性化を図る（計画第6章（将来像II）1－（1）の「現状・課題」および同基本政策の展開方向）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第6章の基本政策の記載（所管部局の明示なし）。",
+    "review_note": "計画には基本政策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "計画に基本政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "県の当初予算資料（令和8年度当初予算の概要・計数資料編）は重点テーマ・事業単位および款・会計単位の公表。",
+    "review_note": "事業単位の予算額を基本政策に按分・接続することはしない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text",
+     "niigata-pref-plan-page"
+    ],
+    "statement": "新潟県は基本政策単位の令和7年度予算額・決算額を公表していない。県の当初予算資料（「令和8年度当初予算の概要」「令和8年度当初予算 計数資料編」等）は、重点テーマ・事業単位および款・会計単位で公表されており、基本政策との公式の対応表がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "計画第7章（計画p.369）および知事政策局政策企画課の公表ページ。",
+    "review_note": "前計画の年次評価の形式を新計画に流用しない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text",
+     "niigata-pref-policy-division-page"
+    ],
+    "statement": "新潟県は現行計画（令和7年3月策定）について、基本政策ごとの年次評価・達成度評価を公表していない。計画第7章の定めでは、毎年度の状況把握・分析を行う一方、有識者による外部評価は令和10年度・令和14年度の目標に対する評価に当たって実施することとされており、2026年11月23日の確認時点では新計画の実施状況報告・評価の公表はない（公表されているのは令和7年度成果指標に関する県民満足度調査の結果など指標関連の調査結果のみ）。このため公式評価は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "計画「達成目標（成果指標）一覧（第6章関係）」の本基本政策の掲載箇所。",
+    "review_note": "中間目標（令和10年度）は definition に併記し、target は最終年度目標に統一した。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "本基本政策のKPIとして、計画の「達成目標（成果指標）一覧（第6章関係）」に掲げられた成果指標5件を登録した（現状値＝計画の現状値、target＝令和14年度目標値、令和10年度目標値は各KPIの definition に併記）。県は年次の実績値・達成度評価を公表していないため、実績は未登録とし、全KPIの assessment を not_assessable とした。日本人国内旅行消費額・訪日外国人旅行消費額は他の展開方向にもとして掲げられているが、同一指標のため初出の展開方向で1件として登録した。外国人延べ宿泊者数も展開方向「日本海側の国際拠点化に向けた交通ネットワークの整備」側ではなく本基本政策側が初出である。"
+   }
+  ],
+  "id": "evidence-jp-local-150002-project-2025-exchange-population-tourism",
+  "open_questions": [
+   "県が新計画の実施状況・評価を公表する際の形式（年次の状況把握結果の公表範囲、令和10年度・令和14年度の外部評価の公表方法）が未定であり、公表時に実績値と公式評価の登録を見直す。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-150002-project-2025-exchange-population-tourism",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第6章（計画p.265〜276）。将来像「地域経済が元気で活力のある新潟」の将来像IIの政策の柱1「多様な人や文化が交わる賑わいのある新潟」の下位の基本政策。",
+    "review_note": "計画自身の政策単位であり、前計画で評価単位であった小項目（政策）の階層に対応する。県は新計画について年次評価を公表しておらず、評価の回っている単位は現時点で存在しないため、計画の政策単位である基本政策を正本とした。第5章の重要課題は分野横断の別軸で公式対応表がないため接続していない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text",
+     "niigata-pref-plan-page"
+    ],
+    "statement": "登録単位は計画第6章の基本政策とし、本件は「日本海側の国際拠点化と北東・東南アジアをはじめ諸外国との交流促進」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第6章の体系表および計画p.265〜276の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "公式名称は「日本海側の国際拠点化と北東・東南アジアをはじめ諸外国との交流促進」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/niigata_prefecture_priority_project_selection.json",
+    "review_note": "金額順・規模順ではなく、計画体系の柱と掲載順に基づく機械的な選定とした。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "母集団は計画第6章の基本政策19件。6つの政策の柱を掲載順に巡回する方式（2巡目）で将来像IIの政策の柱1「多様な人や文化が交わる賑わいのある新潟」から掲載順に選定した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画計画p.265〜276の「現状・課題」。",
+    "review_note": "県の記述の要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "日本海側の拠点として充実した交通ネットワーク（新潟空港、県内港、2つの新幹線、高速道路網等）を有する優位性を活かし、交通ネットワークの整備による利便性向上と、諸外国との交流拡大を通じた海外成長市場の活力の取込みにより、日本海側の国際拠点化を進める（計画第6章（将来像II）1－（2）の「現状・課題」）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第6章の基本政策の記載（所管部局の明示なし）。",
+    "review_note": "計画には基本政策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "計画に基本政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "県の当初予算資料（令和8年度当初予算の概要・計数資料編）は重点テーマ・事業単位および款・会計単位の公表。",
+    "review_note": "事業単位の予算額を基本政策に按分・接続することはしない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text",
+     "niigata-pref-plan-page"
+    ],
+    "statement": "新潟県は基本政策単位の令和7年度予算額・決算額を公表していない。県の当初予算資料（「令和8年度当初予算の概要」「令和8年度当初予算 計数資料編」等）は、重点テーマ・事業単位および款・会計単位で公表されており、基本政策との公式の対応表がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "計画第7章（計画p.369）および知事政策局政策企画課の公表ページ。",
+    "review_note": "前計画の年次評価の形式を新計画に流用しない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text",
+     "niigata-pref-policy-division-page"
+    ],
+    "statement": "新潟県は現行計画（令和7年3月策定）について、基本政策ごとの年次評価・達成度評価を公表していない。計画第7章の定めでは、毎年度の状況把握・分析を行う一方、有識者による外部評価は令和10年度・令和14年度の目標に対する評価に当たって実施することとされており、2026年11月23日の確認時点では新計画の実施状況報告・評価の公表はない（公表されているのは令和7年度成果指標に関する県民満足度調査の結果など指標関連の調査結果のみ）。このため公式評価は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "計画「達成目標（成果指標）一覧（第6章関係）」の本基本政策の掲載箇所。",
+    "review_note": "中間目標（令和10年度）は definition に併記し、target は最終年度目標に統一した。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "本基本政策のKPIとして、計画の「達成目標（成果指標）一覧（第6章関係）」に掲げられた成果指標6件を登録した（現状値＝計画の現状値、target＝令和14年度目標値、令和10年度目標値は各KPIの definition に併記）。県は年次の実績値・達成度評価を公表していないため、実績は未登録とし、全KPIの assessment を not_assessable とした。外国人延べ宿泊者数は本基本政策にもとして掲げられているが、同一指標のため初出である基本政策「多様な地域資源を活かした交流人口の拡大」に登録し、本基本政策では登録していない。"
+   }
+  ],
+  "id": "evidence-jp-local-150002-project-2025-international-hub-exchange",
+  "open_questions": [
+   "県が新計画の実施状況・評価を公表する際の形式（年次の状況把握結果の公表範囲、令和10年度・令和14年度の外部評価の公表方法）が未定であり、公表時に実績値と公式評価の登録を見直す。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-150002-project-2025-international-hub-exchange",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第6章（計画p.277〜294）。将来像「地域経済が元気で活力のある新潟」の将来像IIの政策の柱2「活力のある新潟」の下位の基本政策。",
+    "review_note": "計画自身の政策単位であり、前計画で評価単位であった小項目（政策）の階層に対応する。県は新計画について年次評価を公表しておらず、評価の回っている単位は現時点で存在しないため、計画の政策単位である基本政策を正本とした。第5章の重要課題は分野横断の別軸で公式対応表がないため接続していない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text",
+     "niigata-pref-plan-page"
+    ],
+    "statement": "登録単位は計画第6章の基本政策とし、本件は「挑戦する人や企業が生まれ、集まる環境の整備」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第6章の体系表および計画p.277〜294の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "公式名称は「挑戦する人や企業が生まれ、集まる環境の整備」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/niigata_prefecture_priority_project_selection.json",
+    "review_note": "金額順・規模順ではなく、計画体系の柱と掲載順に基づく機械的な選定とした。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "母集団は計画第6章の基本政策19件。6つの政策の柱を掲載順に巡回する方式（1巡目）で将来像IIの政策の柱2「活力のある新潟」から掲載順に選定した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画計画p.277〜294の「現状・課題」。",
+    "review_note": "県の記述の要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "デジタル化や海外展開等による県内企業等の高付加価値化や生産性向上に加え、事業承継の円滑化や外国人材の受入促進などにより、経営環境の変化に柔軟に対応できる足腰の強い強靭な産業構造への転換を図るとともに、起業・創業の推進、再生可能・次世代エネルギーの活用促進、企業立地の促進に取り組む（計画第6章（将来像II）2－（1）の「現状・課題」および同基本政策の展開方向）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第6章の基本政策の記載（所管部局の明示なし）。",
+    "review_note": "計画には基本政策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "計画に基本政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "県の当初予算資料（令和8年度当初予算の概要・計数資料編）は重点テーマ・事業単位および款・会計単位の公表。",
+    "review_note": "事業単位の予算額を基本政策に按分・接続することはしない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text",
+     "niigata-pref-plan-page"
+    ],
+    "statement": "新潟県は基本政策単位の令和7年度予算額・決算額を公表していない。県の当初予算資料（「令和8年度当初予算の概要」「令和8年度当初予算 計数資料編」等）は、重点テーマ・事業単位および款・会計単位で公表されており、基本政策との公式の対応表がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "計画第7章（計画p.369）および知事政策局政策企画課の公表ページ。",
+    "review_note": "前計画の年次評価の形式を新計画に流用しない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text",
+     "niigata-pref-policy-division-page"
+    ],
+    "statement": "新潟県は現行計画（令和7年3月策定）について、基本政策ごとの年次評価・達成度評価を公表していない。計画第7章の定めでは、毎年度の状況把握・分析を行う一方、有識者による外部評価は令和10年度・令和14年度の目標に対する評価に当たって実施することとされており、2026年11月23日の確認時点では新計画の実施状況報告・評価の公表はない（公表されているのは令和7年度成果指標に関する県民満足度調査の結果など指標関連の調査結果のみ）。このため公式評価は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "計画「達成目標（成果指標）一覧（第6章関係）」の本基本政策の掲載箇所。",
+    "review_note": "中間目標（令和10年度）は definition に併記し、target は最終年度目標に統一した。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "本基本政策のKPIとして、計画の「達成目標（成果指標）一覧（第6章関係）」に掲げられた成果指標12件を登録した（現状値＝計画の現状値、target＝令和14年度目標値、令和10年度目標値は各KPIの definition に併記）。県は年次の実績値・達成度評価を公表していないため、実績は未登録とし、全KPIの assessment を not_assessable とした。県内企業の輸出額は本基本政策では（関連）として掲げられているが、主要指標として掲げる基本政策「日本海側の国際拠点化と北東・東南アジアをはじめ諸外国との交流促進」に登録したため、本基本政策では登録していない。"
+   }
+  ],
+  "id": "evidence-jp-local-150002-project-2025-challengers-and-business-environment",
+  "open_questions": [
+   "県が新計画の実施状況・評価を公表する際の形式（年次の状況把握結果の公表範囲、令和10年度・令和14年度の外部評価の公表方法）が未定であり、公表時に実績値と公式評価の登録を見直す。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-150002-project-2025-challengers-and-business-environment",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第6章（計画p.339〜356）。将来像「人々が集い、育ち、活躍する新潟」の将来像IIIの政策の柱1「県民一人一人が学び、成長し、活躍できる新潟」の下位の基本政策。",
+    "review_note": "計画自身の政策単位であり、前計画で評価単位であった小項目（政策）の階層に対応する。県は新計画について年次評価を公表しておらず、評価の回っている単位は現時点で存在しないため、計画の政策単位である基本政策を正本とした。第5章の重要課題は分野横断の別軸で公式対応表がないため接続していない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text",
+     "niigata-pref-plan-page"
+    ],
+    "statement": "登録単位は計画第6章の基本政策とし、本件は「将来の夢や希望を育みかなえる教育の推進」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第6章の体系表および計画p.339〜356の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "公式名称は「将来の夢や希望を育みかなえる教育の推進」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/niigata_prefecture_priority_project_selection.json",
+    "review_note": "金額順・規模順ではなく、計画体系の柱と掲載順に基づく機械的な選定とした。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "母集団は計画第6章の基本政策19件。6つの政策の柱を掲載順に巡回する方式（1巡目）で将来像IIIの政策の柱1「県民一人一人が学び、成長し、活躍できる新潟」から掲載順に選定した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画計画p.339〜356の「現状・課題」。",
+    "review_note": "県の記述の要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "ICTを効果的に活用しながら「個別最適な学び」及び「協働的な学び」を推進することにより「主体的・対話的で深い学び」の実現に向けて教育の質を向上させるとともに、学びの指導者である質の高い教員の確保や、児童生徒が質の高い教育を受けられる環境の整備を進める（計画第6章（将来像III）1－（1）の「現状・課題」）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第6章の基本政策の記載（所管部局の明示なし）。",
+    "review_note": "計画には基本政策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "計画に基本政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "県の当初予算資料（令和8年度当初予算の概要・計数資料編）は重点テーマ・事業単位および款・会計単位の公表。",
+    "review_note": "事業単位の予算額を基本政策に按分・接続することはしない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text",
+     "niigata-pref-plan-page"
+    ],
+    "statement": "新潟県は基本政策単位の令和7年度予算額・決算額を公表していない。県の当初予算資料（「令和8年度当初予算の概要」「令和8年度当初予算 計数資料編」等）は、重点テーマ・事業単位および款・会計単位で公表されており、基本政策との公式の対応表がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "計画第7章（計画p.369）および知事政策局政策企画課の公表ページ。",
+    "review_note": "前計画の年次評価の形式を新計画に流用しない。",
+    "source_ids": [
+     "niigata-pref-plan-full-text",
+     "niigata-pref-policy-division-page"
+    ],
+    "statement": "新潟県は現行計画（令和7年3月策定）について、基本政策ごとの年次評価・達成度評価を公表していない。計画第7章の定めでは、毎年度の状況把握・分析を行う一方、有識者による外部評価は令和10年度・令和14年度の目標に対する評価に当たって実施することとされており、2026年11月23日の確認時点では新計画の実施状況報告・評価の公表はない（公表されているのは令和7年度成果指標に関する県民満足度調査の結果など指標関連の調査結果のみ）。このため公式評価は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "計画「達成目標（成果指標）一覧（第6章関係）」の本基本政策の掲載箇所。",
+    "review_note": "中間目標（令和10年度）は definition に併記し、target は最終年度目標に統一した。",
+    "source_ids": [
+     "niigata-pref-plan-full-text"
+    ],
+    "statement": "本基本政策のKPIとして、計画の「達成目標（成果指標）一覧（第6章関係）」に掲げられた成果指標17件を登録した（現状値＝計画の現状値、target＝令和14年度目標値、令和10年度目標値は各KPIの definition に併記）。県は年次の実績値・達成度評価を公表していないため、実績は未登録とし、全KPIの assessment を not_assessable とした。"
+   }
+  ],
+  "id": "evidence-jp-local-150002-project-2025-education-for-dreams",
+  "open_questions": [
+   "県が新計画の実施状況・評価を公表する際の形式（年次の状況把握結果の公表範囲、令和10年度・令和14年度の外部評価の公表方法）が未定であり、公表時に実績値と公式評価の登録を見直す。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-150002-project-2025-education-for-dreams",
+  "subject_type": "project"
+ }
+]
