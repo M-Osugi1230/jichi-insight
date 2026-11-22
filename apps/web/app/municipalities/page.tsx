@@ -51,6 +51,7 @@ const readingLevels = [
 ];
 
 const featuredPaths = [
+  { code: "33", area: "岡山県・岡山市", status: "段階1〜4 Reviewed", tone: "verified" as const, title: "晴れの国の政策・予算・議会を確認。", text: "第4次晴れの国おかやま生き活きプランと岡山市第七次総合計画、財政・議会の公開記録を確認できます。", facts: ["岡山県", "岡山市", "決算・政策・議会"], href: "/municipalities/okayama-prefecture", action: "岡山クラスターの詳細を見る" },
   { code: "15", area: "新潟県・新潟市", status: "段階1〜4 Reviewed", tone: "verified" as const, title: "新潟県総合計画と市の重点戦略を読む。", text: "新潟県の総合計画・財政・成果指標と、新潟市総合計画2030の重点戦略、議会記録を確認できます。", facts: ["新潟県", "新潟市", "決算・政策・議会"], href: "/municipalities/niigata-prefecture", action: "新潟クラスターの詳細を見る" },
   {
     code: "26",
@@ -129,7 +130,7 @@ export default function MunicipalitiesPage() {
             現行政策計画の入口だけでなく、全47都道府県の目標・指標を人が照合して公開しました。
             件数の大小を順位にせず、各レコードの公式根拠と、その先の実績・予算・事業・契約の接続状況を示します。
           </p>
-          <p>確認できること：詳細レビュー済み69市の基本情報と予算・決算、47都道府県の政策目標・指標。まだ確認できないこと：市債残高・財政健全性の指標は全69市に同条件では揃っていません。財政の詳細・重点事業・公約・議会の深掘りは広島県・広島市、京都府・京都市、新潟県・新潟市を含む複数の地域クラスターで公開しています。掲載の粒度は自治体ごとに異なります。</p>
+          <p>確認できること：詳細レビュー済み69市の基本情報と予算・決算、47都道府県の政策目標・指標。まだ確認できないこと：市債残高・財政健全性の指標は全69市に同条件では揃っていません。財政の詳細・重点事業・公約・議会の深掘りは広島県・広島市、京都府・京都市、新潟県・新潟市、岡山県・岡山市を含む複数の地域クラスターで公開しています。掲載の粒度は自治体ごとに異なります。</p>
         </PageIntro>
 
         <nav className={styles.topShortcuts} aria-label="自治体一覧のページ内案内">
@@ -226,6 +227,7 @@ export default function MunicipalitiesPage() {
               計画の枠組みと予算・決算を市ページで公開しています。接続できない範囲は判定不能のまま明示します。
             </p>
           </div>
+          <p><Link href="/municipalities/okayama-city">岡山市の政策・財政・市長公約・議会の詳細を見る</Link></p>
           <p><Link href="/municipalities/niigata-city">新潟市の政策・財政・市長公約・議会の詳細を見る</Link></p>
           <p><Link href="/municipalities/kyoto-city">京都市の政策・財政・市長公約・議会の詳細を見る</Link></p>
           <p><Link href="/municipalities/hiroshima-city">広島市の政策・財政・市長公約・議会の詳細を見る</Link></p>
