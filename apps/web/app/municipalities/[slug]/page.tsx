@@ -24,6 +24,7 @@ import { loadGenericCityFinance } from "@/lib/genericCityFinance";
 import { isProjectArea } from "@/lib/projectRegistry";
 import { ShizuokaCityReview } from "@/components/ShizuokaCityReview";
 import { KyotoCityReview } from "@/components/KyotoCityReview";
+import { NiigataCityReview } from "@/components/NiigataCityReview";
 import { currentExecutiveTerms, promisesForExecutive } from "@/lib/executives";
 
 import styles from "./page.module.css";
@@ -40,6 +41,7 @@ export function generateStaticParams() {
     { slug: "shizuoka-city" },
     { slug: "hamamatsu-city" },
     { slug: "kyoto-city" },
+    { slug: "niigata-city" },
   ];
 }
 
@@ -49,8 +51,8 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  if (slug === "shizuoka-city" || slug === "hamamatsu-city" || slug === "kyoto-city") {
-    const name = slug === "shizuoka-city" ? "静岡市" : slug === "kyoto-city" ? "京都市" : "浜松市";
+  if (slug === "shizuoka-city" || slug === "hamamatsu-city" || slug === "kyoto-city" || slug === "niigata-city") {
+    const name = slug === "shizuoka-city" ? "静岡市" : slug === "kyoto-city" ? "京都市" : slug === "niigata-city" ? "新潟市" : "浜松市";
     const title = `${name}｜計画・決算・重点事業・市長公約・議会`;
     const description = `${name}のReviewed計画・財政・重点事業・公約・議会を公表資料の登録単位で確認します。`;
     const url = `${siteUrl}/municipalities/${slug}/`;
@@ -252,6 +254,9 @@ export default async function Phase15CityPage({
   }
   if (slug === "kyoto-city") {
     return <KyotoCityReview />;
+  }
+  if (slug === "niigata-city") {
+    return <NiigataCityReview />;
   }
   const city = loadPhase15City(slug);
   if (!city) {
