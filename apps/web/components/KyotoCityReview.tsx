@@ -11,10 +11,10 @@ import { formatCompactYen, formatExactYen } from "@/lib/finance";
 import {
   kyotoCityFinance, kyotoCityPlanReview, kyotoCityFinanceSources,
   kyotoCityBudgetRecord, kyotoCityEvidenceForRecord,
-} from "@/lib/kyotoCityFinance";
+} from "@/lib/kyotoFinance";
 import { assemblies } from "@/lib/assemblyRegistry";
 import { projectRegistry } from "@/lib/projectRegistry";
-import styles from "../fukuoka-prefecture/page.module.css";
+import styles from "@/app/municipalities/fukuoka-prefecture/page.module.css";
 import projectStyles from "@/components/ProjectReview.module.css";
 
 export function KyotoCityReview() {
@@ -60,7 +60,7 @@ export function KyotoCityReview() {
         />
         <section className={styles.scope} aria-labelledby="plan-title">
           <div><p className="eyebrow">Plan review</p>
-            <h2 id="plan-title">京都市の総合計画と実施計画</h2>
+            <h2 id="plan-title">京都基本構想・新京都戦略と旧「京プラン2025」の政策評価</h2>
             <p>確認日：{kyotoCityPlanReview.reviewed_at}</p></div>
           <div>
             <p>現行の京都基本構想・新京都戦略と、旧「京プラン2025」の政策評価を同一視しません。
@@ -77,7 +77,7 @@ export function KyotoCityReview() {
         <section className={styles.headline} aria-labelledby="finance-headline-title">
           <div className="sectionIntro"><p className="eyebrow">FY2026 initial budget</p>
             <h2 id="finance-headline-title">2026年度一般会計当初予算</h2>
-            <p>京都市議会で可決された一般会計当初予算を、2024年度決算と区別して表示します。</p>
+            <p>2026年3月24日に原案可決された一般会計当初予算1,007,967,000千円と市税356,307,000千円を表示します。FY2022〜2024普通会計決算と区別します。</p>
           </div>
           <div className={styles.metricGrid}>
             {[
