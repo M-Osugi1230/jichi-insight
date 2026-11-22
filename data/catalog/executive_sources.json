@@ -1,5 +1,5 @@
 {
-  "version": "0.55.0",
+  "version": "0.56.0",
   "updated_at": "2026-11-23",
   "scope": "pilot",
   "records": [
@@ -2312,6 +2312,20 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "就任記者会見の県公式ページ。会見録の冒頭で知事本人が「本日、令和6年4月16日付で熊本県知事に就任いたしました」と発言している。2026-11-23に直接確認した。"
+    },
+    {
+      "id": "okayama-city-mayor-election-2025-bulletin",
+      "municipality_key": "okayama-city",
+      "organization": "岡山市選挙管理委員会",
+      "category": "election",
+      "title": "令和7年10月5日執行 岡山市長選挙 選挙公報（大森まさお候補欄）",
+      "url": "https://prod-cdn.go2senkyo.com/public/senkyo_koho/25556/20251005%E5%B2%A1%E5%B1%B1%E5%B8%82%E9%95%B7%E9%81%B8%E6%8C%99.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-23",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "岡山市長選挙の選挙公報そのもの（候補者から提出された原稿をそのまま写真印刷したもの。全2ページ、候補者4人）。大森まさお候補欄は1ページ目右上にあり、大見出し「大森まさおは、市民と一緒に考え、一緒に行動します。」、市政推進の3本柱（「住みやすさ」「力強さ」「安全・安心」）と市内経済の拡大・収入増加の好循環を示す図、3本柱のもとに置かれた6つの見出しの箇条書き計21項目、プロフィール欄で構成される。公約レコードはこの21項目から作成した。公報PDFは選挙期間中、岡山市公式サイトの選挙公報案内ページ（https://www.city.okayama.jp/shisei/0000062838.html ）の添付ファイル（https://www.city.okayama.jp/shisei/cmsfiles/contents/0000062/62838/kouhou01.pdf ）として掲載されていたが、現行の市公式URLは現在404であり、Wayback Machine の保存（2025年9月21日16時36分21秒 UTC、告示日）も再生時に2026年2月19日の404保存へリダイレクトされ実物を取得できない。登録URLは選挙ドットコム（イチニ株式会社）のCDNが公開する同一公報の複写であり、2026-11-23に取得したファイル（3,489,450バイト、全2ページ）の SHA-1 ダイジェストが Wayback Machine の CDX 記録にある市公式URL保存分のダイジェスト（YYYYSS5ZCNRWRI6XUE7FSIIPFRXTSFXM）と完全一致したため、市公式URLで公表された原典そのものと同一ファイルであることを確認した（取得ファイルの SHA-256 は bf3cc6f129aeb018226cdc20097ca5aa10281a398da9c64cc3bd7649df91b602）。公報の掲載候補者4名（大森まさお・うらかみ雅彦・むかいだに千鳥・かんざき政人）は市公式の開票結果の候補者構成と一致する。公報は全文が画像でテキスト層はないため、登録文はPDFの描画画像（200dpi・400dpi）の目視転記を正とし、複数解像度で照合した。公報は候補者から提出された原稿をそのまま印刷した公式文書で出典優先順位の最上位に当たるため、confidence は high とした（選挙ドットコムCDNの複写を出典URLとする登録は福岡市長・福岡県知事の先例がある）。"
     }
   ]
 }

@@ -156,8 +156,38 @@ def test_selected_projects_match_records() -> None:
         assert record["municipality_id"] == MID
         assert record["fiscal_year"] == 2026
         assert record["review_status"] == "reviewed"
-        # Promise links are a stage-3 question; none are asserted here.
-        assert record["related_promise_ids"] == []
+        # Promise links were a stage-3 question: Issue #974 connected
+        # nine of the mayor's 21 bulletin promises to the seven
+        # policies whose subjects match them (inferred links, capped
+        # at low confidence); the other three policies stay unlinked.
+        expected_promise_links = {
+            "jp-local-331007-project-2026-children-youth": [
+                "jp-local-331007-executive-2025-10-09-promise-003"
+            ],
+            "jp-local-331007-project-2026-child-rearing": [
+                "jp-local-331007-executive-2025-10-09-promise-001",
+                "jp-local-331007-executive-2025-10-09-promise-002",
+            ],
+            "jp-local-331007-project-2026-school-education": [
+                "jp-local-331007-executive-2025-10-09-promise-005",
+                "jp-local-331007-executive-2025-10-09-promise-006",
+            ],
+            "jp-local-331007-project-2026-collaboration-esd": [
+                "jp-local-331007-executive-2025-10-09-promise-007"
+            ],
+            "jp-local-331007-project-2026-human-rights-gender-equality": [
+                "jp-local-331007-executive-2025-10-09-promise-004"
+            ],
+            "jp-local-331007-project-2026-health": [
+                "jp-local-331007-executive-2025-10-09-promise-008"
+            ],
+            "jp-local-331007-project-2026-welfare": [
+                "jp-local-331007-executive-2025-10-09-promise-009"
+            ],
+        }
+        assert record["related_promise_ids"] == expected_promise_links.get(
+            item["project_id"], []
+        )
     areas = [projects[pid]["policy_area"] for pid in EXPECTED_IDS]
     assert areas == EXPECTED_POLICY_AREAS
 
