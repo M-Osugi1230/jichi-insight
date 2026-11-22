@@ -1,6 +1,7 @@
 import hiroshimaPrefectureMunicipality from "../../../data/reviewed/hiroshima-prefecture/municipality.json";
 import hiroshimaCityMunicipality from "../../../data/reviewed/hiroshima-city/municipality.json";
 import { hiroshimaFinance } from "@/lib/hiroshimaFinance";
+import { hiroshimaCityFinance } from "@/lib/hiroshimaCityFinance";
 import shizuokaPrefectureMunicipality from "../../../data/reviewed/shizuoka-prefecture/municipality.json";
 import shizuokaCityMunicipality from "../../../data/reviewed/shizuoka-city/municipality.json";
 import hamamatsuMunicipality from "../../../data/reviewed/hamamatsu-city/municipality.json";
@@ -118,7 +119,10 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
       entry.assembly.id.startsWith(municipalityId + "-assembly-");
     return {
       key: "hiroshima-city",
-      finance: loadGenericCityFinance("hiroshima-city") !== null,
+      finance: hiroshimaCityFinance.records.some((record) =>
+        record.municipality_id === municipalityId && record.review_status === "reviewed" &&
+        (record.stage === "initial_budget" || record.stage === "settlement"),
+      ),
       projects: hasProjects,
       promises: hasReviewedExecutivePromises(municipalityId),
       assembly: hasAssembly,
