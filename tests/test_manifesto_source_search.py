@@ -33,7 +33,7 @@ def test_manifesto_source_search_fixture_is_registered_and_linked():
 def test_manifesto_source_searches_match_contract_and_safety_boundary():
     searches = load("data/entities/executives/manifesto_source_searches.json")
 
-    assert len(searches) == 34
+    assert len(searches) == 36
     assert {search["executive_term_id"] for search in searches} == {
         "jp-local-400009-executive-2025-04-14",
         "jp-local-401307-executive-2022-12-07",
@@ -68,6 +68,8 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         "jp-local-261009-executive-2024-02-25",
         "jp-local-330001-executive-2024-11-12",
         "jp-local-150002-executive-2026-06-10",
+        "jp-local-151009-executive-2026-11-18",
+        "jp-local-331007-executive-2025-10-09",
         "jp-local-431001-executive-2026-12-03",
     }
 
@@ -82,7 +84,7 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         for search in searches
         if search["result_status"] == "no_stable_primary_source_found"
     ]
-    # Twenty-eight searches have registered a primary source (Fukuoka
+    # Thirty searches have registered a primary source (Fukuoka
     # Prefecture, Fukuoka City, Kitakyushu City, Aichi Prefecture,
     # Nagoya City, Sapporo City, Hokkaido, Osaka Prefecture, Osaka
     # City, Kanagawa Prefecture, Yokohama City, Kawasaki City,
@@ -90,11 +92,14 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
     # Prefecture, Chiba City, Hyogo Prefecture, Kobe City,
     # Miyagi Prefecture, Sendai City, Shizuoka Prefecture,
     # Hamamatsu City, Shizuoka City, Hiroshima Prefecture,
-    # Hiroshima City, Kyoto Prefecture, Kyoto City and Kumamoto
-    # City, each closed by its
+    # Hiroshima City, Kyoto Prefecture, Kyoto City, Niigata City
+    # and Kumamoto City, each closed by its
     # official election bulletin (the Sendai, Shizuoka City,
     # Hiroshima City and Kumamoto City bulletins survive only as archived copies
-    # of the cities' official election-period URLs; the Kyoto
+    # of the cities' official election-period URLs; the Okayama
+    # City bulletin survives as a CDN copy proven byte-identical
+    # to the archived capture of the city's official URL by a
+    # SHA-1 digest match; the Kyoto
     # Prefecture bulletin is registered as the candidate-submitted
     # manuscript published as audio-readable data);
     # Kawasaki's bulletin is registered as reprinted in the city

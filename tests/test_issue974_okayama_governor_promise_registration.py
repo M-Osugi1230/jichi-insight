@@ -83,10 +83,10 @@ def test_governor_term_registers_no_manifesto_source_or_promises() -> None:
 
     promises = load_json("data/entities/executives/promises.json")
     assert [p for p in promises if p["executive_term_id"] == TERM_ID] == []
-    # This stage created no promise records; the registry total
-    # reflects the parallel Kumamoto City stage 3 (Issue #975),
-    # which appended nine records.
-    assert len(promises) == 454
+    # The Okayama governor registration itself created no promise
+    # records. (The registry total has since grown through other
+    # municipalities' stage-3 registrations.)
+    assert len(promises) == 492
 
     reviews = load_json("data/entities/executives/manifesto_reviews.json")
     assert [r for r in reviews if r["executive_term_id"] == TERM_ID] == []
@@ -171,10 +171,10 @@ def test_election_report_source_is_registered_in_the_catalog() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
 
     # The stage-3 registration of the election report is the only
-    # catalog addition: version 0.57.0 / 169 records.
-    assert catalog["version"] == "0.58.0"
-    assert len(catalog["records"]) == 170
-    assert len({record["id"] for record in catalog["records"]}) == 170
+    # catalog addition: version 0.60.0 / 172 records.
+    assert catalog["version"] == "0.60.0"
+    assert len(catalog["records"]) == 172
+    assert len({record["id"] for record in catalog["records"]}) == 172
 
     matches = [r for r in catalog["records"] if r["id"] == REPORT_SOURCE_ID]
     assert len(matches) == 1

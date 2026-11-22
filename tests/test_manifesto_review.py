@@ -20,7 +20,7 @@ def validate(schema_path, value):
 
 def test_manifesto_review_matches_contract_and_preserves_zero_records():
     reviews = load("data/entities/executives/manifesto_reviews.json")
-    assert len(reviews) == 30
+    assert len(reviews) == 32
     bulletin = next(
         review
         for review in reviews
@@ -61,17 +61,17 @@ def test_manifesto_review_has_evidence_and_known_references():
     terms = load("data/entities/executives/executive_terms.json")
     sources = load("data/catalog/executive_sources.json")["records"]
 
-    assert {packet["subject_id"] for packet in packets} == {
-        review["id"] for review in reviews
-    }
     # Kumamoto City's 2026 review (Issue #975) references the term
     # starting 2026-12-03, which is registered only once it starts
     # (Issue #706); until then it is the single permitted forward
     # reference.
     pending_term_ids = {"jp-local-431001-executive-2026-12-03"}
-    assert {review["executive_term_id"] for review in reviews} <= {
-        term["id"] for term in terms
-    } | pending_term_ids
+    assert {packet["subject_id"] for packet in packets} == {
+        review["id"] for review in reviews
+    }
+    assert {review["executive_term_id"] for review in reviews} <= (
+        {term["id"] for term in terms} | pending_term_ids
+    )
     assert {review["source_id"] for review in reviews} <= {
         source["id"] for source in sources
     }

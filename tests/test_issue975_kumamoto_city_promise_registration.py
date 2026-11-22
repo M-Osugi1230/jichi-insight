@@ -58,8 +58,8 @@ def promise_id(index: int) -> str:
 
 def test_bulletin_source_registered_from_single_wayback_capture() -> None:
     catalog = load_json(ROOT / "data" / "catalog" / "executive_sources.json")
-    assert catalog["version"] == "0.58.0"
-    assert len(catalog["records"]) == 170
+    assert catalog["version"] == "0.60.0"
+    assert len(catalog["records"]) == 172
     by_id = {record["id"]: record for record in catalog["records"]}
     bulletin = by_id[BULLETIN_ID]
     assert bulletin["municipality_key"] == "kumamoto-city"
@@ -89,7 +89,7 @@ def test_current_term_keeps_empty_manifesto_sources() -> None:
 
 def test_search_and_review_records() -> None:
     searches = load_json(EXECUTIVES / "manifesto_source_searches.json")
-    assert len(searches) == 34
+    assert len(searches) == 36
     search = {record["id"]: record for record in searches}[
         "manifesto-source-search-kumamoto-city-2026"
     ]
@@ -102,7 +102,7 @@ def test_search_and_review_records() -> None:
     assert "manifesto_source_ids へ接続する" in search["review_note"]
 
     reviews = load_json(EXECUTIVES / "manifesto_reviews.json")
-    assert len(reviews) == 30
+    assert len(reviews) == 32
     review = {record["id"]: record for record in reviews}[
         "manifesto-review-jp-local-431001-2026"
     ]
@@ -119,7 +119,7 @@ def test_search_and_review_records() -> None:
 
 def test_promises_registered_from_bulletin_panel() -> None:
     promises = load_json(EXECUTIVES / "promises.json")
-    assert len(promises) == 454
+    assert len(promises) == 492
     own = [p for p in promises if p["executive_term_id"] == TERM_ID]
     assert [p["id"] for p in own] == [promise_id(i) for i in range(1, 10)]
     for index, promise in enumerate(own, start=1):
@@ -153,7 +153,7 @@ def test_promises_registered_from_bulletin_panel() -> None:
 
 def test_promise_evidence_packets_document_provenance_and_term_handover() -> None:
     packets = load_json(EXECUTIVES / "promise_evidence_packets.json")
-    assert len(packets) == 454
+    assert len(packets) == 492
     own = {p["subject_id"]: p for p in packets if p["subject_id"].startswith(TERM_ID)}
     assert set(own) == {promise_id(i) for i in range(1, 10)}
     for index, packet in own.items():
@@ -179,7 +179,7 @@ def test_promise_evidence_packets_document_provenance_and_term_handover() -> Non
 
 def test_search_and_review_evidence_packets() -> None:
     search_packets = load_json(EXECUTIVES / "manifesto_source_search_evidence_packets.json")
-    assert len(search_packets) == 34
+    assert len(search_packets) == 36
     packet = {p["id"]: p for p in search_packets}[
         "evidence-manifesto-source-search-kumamoto-city-2026"
     ]
@@ -192,7 +192,7 @@ def test_search_and_review_evidence_packets() -> None:
     assert any("manifesto_source_ids へ接続する" in q for q in packet["open_questions"])
 
     review_packets = load_json(EXECUTIVES / "manifesto_review_evidence_packets.json")
-    assert len(review_packets) == 30
+    assert len(review_packets) == 32
     review_packet = {p["id"]: p for p in review_packets}[
         "evidence-kumamoto-city-2026-manifesto-review"
     ]
