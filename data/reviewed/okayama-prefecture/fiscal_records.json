@@ -1,0 +1,68 @@
+[
+  {
+    "id": "jp-local-330001-fiscal-2026-total-revenue",
+    "municipality_id": "jp-local-330001",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入総額",
+    "amount_yen": 819698359000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "岡山県公報号外（令和8年3月19日）県告示第129号「令和8年度岡山県一般会計歳入歳出予算」第1条の千円単位の印字値。議第1号「令和8年度岡山県一般会計予算」は令和8年2月定例会で2026年3月19日に「原案可決」で議決された（岡山県議会「令和8年2月定例会の提出議案」）。県の広報資料等の億円単位の表記は丸めた額であり、千円単位の印字値を正とする。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "okayama-pref-budget-2026-gazette",
+      "okayama-pref-assembly-2026-feb-session-bills"
+    ]
+  },
+  {
+    "id": "jp-local-330001-fiscal-2026-local-tax",
+    "municipality_id": "jp-local-330001",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "local_tax",
+    "metric_label": "一般会計県税",
+    "amount_yen": 280362922000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "岡山県公報号外（令和8年3月19日）県告示第129号の第1表 歳入 第1款「県税」の千円単位の印字値。議第1号「令和8年度岡山県一般会計予算」は令和8年2月定例会で2026年3月19日に「原案可決」で議決された（岡山県議会「令和8年2月定例会の提出議案」）。県の広報資料等の億円単位の表記は丸めた額であり、千円単位の印字値を正とする。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "okayama-pref-budget-2026-gazette",
+      "okayama-pref-assembly-2026-feb-session-bills"
+    ]
+  },
+  {
+    "id": "jp-local-330001-fiscal-2026-total-expenditure",
+    "municipality_id": "jp-local-330001",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出総額",
+    "amount_yen": 819698359000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "岡山県公報号外（令和8年3月19日）県告示第129号「令和8年度岡山県一般会計歳入歳出予算」第1条の千円単位の印字値。議第1号「令和8年度岡山県一般会計予算」は令和8年2月定例会で2026年3月19日に「原案可決」で議決された（岡山県議会「令和8年2月定例会の提出議案」）。県の広報資料等の億円単位の表記は丸めた額であり、千円単位の印字値を正とする。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "okayama-pref-budget-2026-gazette",
+      "okayama-pref-assembly-2026-feb-session-bills"
+    ]
+  }
+]
