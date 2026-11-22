@@ -1,5 +1,5 @@
 {
-  "version": "0.55.0",
+  "version": "0.56.0",
   "updated_at": "2026-11-23",
   "scope": "pilot",
   "records": [
@@ -2312,6 +2312,20 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "就任記者会見の県公式ページ。会見録の冒頭で知事本人が「本日、令和6年4月16日付で熊本県知事に就任いたしました」と発言している。2026-11-23に直接確認した。"
+    },
+    {
+      "id": "kumamoto-pref-governor-election-2024-gazette",
+      "municipality_key": "kumamoto-prefecture",
+      "organization": "熊本県選挙管理委員会",
+      "category": "election",
+      "title": "熊本県公報 号外第10号（令和6年3月7日）",
+      "url": "https://www.pref.kumamoto.jp/uploaded/attachment/242106.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-23",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "熊本県選挙管理委員会告示第5号「公職選挙法第33条第1項の規定により、任期満了による熊本県知事選挙の期日を次のとおり定める。令和6年（2024年）3月7日…選挙期日 令和6年（2024年）3月24日」を収録する県公報（全5ページ、889,024バイト、SHA-256 e4908e03ab2aeb6894e4b4dbb7483eb88d96c96815e8fe7ebfcacd7a73480880）。2024年知事選挙の告示日が2024年3月7日であることを県選管自身の告示で直接確認した。同号には「熊本県知事選挙における選挙公報の掲載順序を決定する場合のくじを行う場所及び日時の決定」も収録される。なお、同日発行の号外第12号（https://www.pref.kumamoto.jp/uploaded/attachment/242244.pdf、全1ページ、872,655バイト）には熊本県知事選挙選挙長告示第2号（候補者の届出）が収録され、届出順に宮川一彦・幸山政史・毛利秀徳・きむら敬の4候補が令和6年3月7日に届け出たことが明記される。2026-11-23にPDF本体を直接読み取り照合した。"
     }
   ]
 }

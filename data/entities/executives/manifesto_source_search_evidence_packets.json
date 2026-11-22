@@ -1463,5 +1463,50 @@
       "選挙特設サイトのアーカイブ保存の有無は未確認であり、Wayback Machineでの再確認は段階3で行う。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-kumamoto-pref-2024",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-kumamoto-pref-2024",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "熊本県選挙管理委員会の現行公式ページ（「熊本県知事選挙結果」ページと選挙管理委員会の索引ページ）には、2024年知事選挙について投票結果・開票結果のPDFへのリンクのみがあり、選挙公報へのリンクはない。選挙期間中の県選管ページ（soshiki/147/198406.html・198564.html、大津町の公式ページからリンクされていた）は現行サイトから削除されている（2026-11-23時点で404）。県公報号外第10号では、告示日（2024年3月7日）を県選管告示第5号で直接確認した。",
+        "source_ids": [
+          "kumamoto-pref-governor-election-2024-ballot-count",
+          "kumamoto-pref-governor-election-2024-turnout",
+          "kumamoto-pref-governor-election-2024-gazette"
+        ],
+        "location_note": "熊本県公式サイトの選挙管理委員会ページ群と熊本県公報（いずれも公式公表）。",
+        "decision": "accepted",
+        "review_note": "公式資料側に公約原文の現存掲載がないことを確認。告示日は県公報で直接確認できた。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "選挙公報は紙で配布され（令和6年3月11日から順次配布、球磨村選挙管理委員会の公式ページ）、選挙期間中は県選管ホームページでも閲覧できた（大津町・合志市の各選挙管理委員会の公式ページの記載）。しかし、国立国会図書館WARPの県公式サイト保存（選挙関連ページ・市町村ページを含む）にも、archive.todayにも、選挙公報本文の保存は特定できなかった。Wayback Machineは本探索の環境からアクセスできず（403）、Common Crawlのインデックスも応答不良（504）のため、両アーカイブの収録有無は未確認である。",
+        "source_ids": [
+          "kumamoto-pref-governor-election-2024-gazette"
+        ],
+        "location_note": "WARPの検索結果（県ドメインの選挙公報関連206件を全件確認）と市町村選管ページの保存版、球磨村・大津町・合志市の各公式ページに基づく。",
+        "decision": "accepted",
+        "review_note": "公報の発行とWeb掲載の事実は確認できるが、本文の検証可能な原典は特定できていないため、原典としては採用しない。"
+      },
+      {
+        "field": "result_status",
+        "statement": "検証可能な原典を特定できなかったため、result_status を no_stable_primary_source_found とし、公約レコードは作成しない。候補者本人の公式サイトや報道の候補者アンケートは県選管の公式公表物ではないため、原典の代替として採用しない。",
+        "source_ids": [
+          "kumamoto-pref-governor-election-2024-gazette"
+        ],
+        "location_note": "探索記録 manifesto-source-search-kumamoto-pref-2024 の review_note に判断の詳細を記載。",
+        "decision": "accepted",
+        "review_note": "不存在の断定はしない（nonexistence_claim は false）。Wayback Machine等の未確認経路は open_questions に残す。"
+      }
+    ],
+    "open_questions": [
+      "Wayback Machineにおける選挙期間中の県選管ページ（soshiki/147/198406.html・198564.html）と選挙公報PDFの保存有無は、本探索の環境から同サービスへアクセスできなかったため未確認である。アクセス可能な環境での再確認を要する。",
+      "選挙公報の音声読み上げ対応データが選挙期間中に公表されていたかは未確認である（国政選挙では県選管が音声読み上げ用データを公表している）。",
+      "紙の選挙公報の現物（県選管の保管分・図書館所蔵）の所在確認はオフライン経路が必要で、本探索の範囲外である。"
+    ],
+    "review_status": "reviewed"
   }
 ]

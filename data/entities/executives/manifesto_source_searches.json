@@ -964,5 +964,37 @@
     ],
     "review_status": "reviewed",
     "confidence": "medium"
+  },
+  {
+    "id": "manifesto-source-search-kumamoto-pref-2024",
+    "executive_term_id": "jp-local-430005-executive-2024-04-16",
+    "searched_at": "2026-11-23",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "no_stable_primary_source_found",
+    "manifesto_source_ids_found": [],
+    "checked_source_ids": [
+      "kumamoto-pref-governor",
+      "kumamoto-pref-term-list",
+      "kumamoto-pref-governor-election-2024-ballot-count",
+      "kumamoto-pref-governor-election-2024-turnout",
+      "kumamoto-pref-governor-inauguration-2024",
+      "kumamoto-pref-governor-election-2024-gazette"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "2024年熊本県知事選挙の選挙公報は発行され、紙では令和6年3月11日から順次配布された（球磨村選挙管理委員会の公式ページ）。また選挙期間中は熊本県選挙管理委員会のホームページでも閲覧できたことが、大津町・合志市の各選挙管理委員会の公式ページの記載（「熊本県選挙管理委員会のホームページからもご覧いただけます」「市ホームページで一定期間は見ることができます」）で確認できる。しかし、選挙期間中の県選管ページ（soshiki/147/198406.html・198564.html）は現行公式サイトから削除されており（2026-11-23時点で404）、現行の「熊本県知事選挙結果」ページにも選挙公報へのリンクはない。国立国会図書館WARPには県公式サイトの選挙関連ページの保存があるが、選挙期間中の両ページと選挙公報PDFの保存はなく、市町村ページの保存からも公報本文は特定できなかった。archive.todayにも保存はない。Wayback Machineは本探索の環境からアクセスできず（403）、Common Crawlのインデックスも応答不良（504）で、両アーカイブの収録有無は確認できていない。候補者本人の公式サイト（kimura-takashi.jp、県公報の候補者届出に記載）は県選管の公式公表物ではなく、報道の候補者アンケートも同様であるため、原典として採用しない。以上により、検証可能な原典を特定できなかったものとして公約は未登録とする。これは選挙公報が存在しないという主張ではない（不存在は証明できていない）。なお、告示日（2024年3月7日）は熊本県公報号外第10号の県選管告示第5号で直接確認し、出典として登録した（kumamoto-pref-governor-election-2024-gazette）。音声読み上げ対応データの公表有無は未確認である。",
+    "next_actions": [
+      "Wayback Machineにアクセス可能な環境で、選挙期間中の県選管ページ（soshiki/147/198406.html・198564.html）と選挙公報PDFの保存有無を再確認し、特定できれば原典として登録し直す",
+      "紙の選挙公報の現物（選挙管理委員会の保管分・図書館所蔵）が特定できれば、原典として登録し直す",
+      "選挙公報の音声読み上げ対応データの公表有無を確認する",
+      "2028年の任期満了に伴う次回知事選挙では、選挙期間中に選挙公報の公式掲載を確認し、新任期の公約原文資料として登録する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]
