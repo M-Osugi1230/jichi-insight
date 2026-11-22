@@ -1,3 +1,6 @@
+import kyotoPrefectureMunicipality from "../../../data/reviewed/kyoto-prefecture/municipality.json";
+import kyotoCityMunicipality from "../../../data/reviewed/kyoto-city/municipality.json";
+import { kyotoFinance, kyotoCityFinance } from "@/lib/kyotoFinance";
 import hiroshimaPrefectureMunicipality from "../../../data/reviewed/hiroshima-prefecture/municipality.json";
 import hiroshimaCityMunicipality from "../../../data/reviewed/hiroshima-city/municipality.json";
 import { hiroshimaFinance } from "@/lib/hiroshimaFinance";
@@ -79,6 +82,7 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
   // Keep key null until a dedicated municipality route or corresponding executive/assembly data is published.
   // Stage 1-4: guard every Shizuoka deep-dive link against the matching Reviewed identity.
   for (const item of [
+    { slug: "kyoto-prefecture", municipality: kyotoPrefectureMunicipality, finance: kyotoFinance },
     { slug: "hiroshima-prefecture", municipality: hiroshimaPrefectureMunicipality, finance: hiroshimaFinance },
     { slug: "shizuoka-prefecture", municipality: shizuokaPrefectureMunicipality, finance: shizuokaFinance },
     { slug: "shizuoka-city", municipality: shizuokaCityMunicipality, finance: shizuokaCityFinance },
@@ -107,6 +111,30 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
 
   // Hiroshima City is a Phase 15 city with separately reviewed stage 2-4 records.
   // Match the municipal code before publishing any deep-dive navigation.
+  // Kyoto City is deliberately outside the historical Phase 15 queue.
+  // Its dedicated reviewed package supports the explicitly generated route.
+  if (!matched && officialCode === kyotoCityMunicipality.official_code &&
+    kyotoCityMunicipality.data_status === "reviewed") {
+    const municipalityId = kyotoCityMunicipality.id;
+    const hasProjects = projectRegistry["kyoto-city"].projects.some((record) =>
+      record.municipality_id === municipalityId && record.review_status === "reviewed",
+    );
+    const entry = assemblies["kyoto-city"];
+    const hasAssembly = entry.assembly.review_status === "reviewed" &&
+      entry.disclosure.review_status === "reviewed" &&
+      entry.assembly.id.startsWith(municipalityId + "-assembly-");
+    return {
+      key: "kyoto-city",
+      finance: kyotoCityFinance.records.some((record) =>
+        record.municipality_id === municipalityId && record.review_status === "reviewed" &&
+        (record.stage === "initial_budget" || record.stage === "settlement"),
+      ),
+      projects: hasProjects,
+      promises: hasReviewedExecutivePromises(municipalityId),
+      assembly: hasAssembly,
+    };
+  }
+
   if (!matched && officialCode === hiroshimaCityMunicipality.official_code &&
     hiroshimaCityMunicipality.data_status === "reviewed") {
     const municipalityId = hiroshimaCityMunicipality.id;
