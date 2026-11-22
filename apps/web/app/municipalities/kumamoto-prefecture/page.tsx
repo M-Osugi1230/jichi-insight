@@ -71,7 +71,7 @@ export default function KumamotoPrefecturePage() {
               <h1>熊本県</h1>
               <p>熊本県総合計画の総合戦略に基づく重点事業10系列・KPI43件、
                 2026年度一般会計当初予算と2022〜2024年度普通会計決算、
-                木村敬知事の公約29件、熊本県議会の公式記録を確認します。</p>
+                木村敬知事の登録済み公約、熊本県議会の公式記録を確認します。</p>
             </div>
             <dl className={styles.heroFacts}>
               <div><dt>普通会計決算</dt><dd>{settlements.length}件（FY2022–2024）</dd></div>
@@ -160,7 +160,7 @@ export default function KumamotoPrefecturePage() {
 
           <section id="priority-projects" className={styles.headline} aria-labelledby="projects-title">
             <div className="sectionIntro"><p className="eyebrow">Priority projects</p>
-              <h2 id="projects-title">分野別基本施策10系列・KPI51件</h2>
+              <h2 id="projects-title">重点事業10系列・KPI43件</h2>
               <p>重点事業10系列・KPI43件を登録しています。公表されていない指標実績は推測で補完しません。
                 登録済みの指標・予算接続状況を表示します。
                 <Link href="/projects#kumamoto-prefecture"> 重点事業一覧を見る</Link></p>
@@ -209,7 +209,7 @@ export default function KumamotoPrefecturePage() {
               <p>議員定数{assembly.assembly.seat_count}人。
                 登録議案等{assembly.proposals.length}件、表決{assembly.votes.length}件、
                 会派別賛否{assembly.factionVotes.length}件、政務活動費{assembly.expenses.length}件、視察{assembly.trips.length}件。</p>
-              <p>2026年度当初予算（骨格予算）は2026年3月18日「可決」です。
+              <p>2026年度一般会計当初予算は2026年3月18日に「可決」されました。
                 令和7年度決算認定21議案は継続審査中（pending）として登録されています。
                 審査中の決算議案を認定済みとして扱いません。</p>
               {budgetProposal ? <p>関連登録議案：{budgetProposal.title}</p> : null}
