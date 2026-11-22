@@ -181,11 +181,13 @@ def test_mayor_term_is_registered_with_official_endpoints():
     assert term["term_start"] == "2026-11-18"
     assert term["term_end"] == "2030-11-17"
     assert term["election_date"] == "2026-10-25"
-    # Stage 1 leaves the manifesto unconnected; the 2026 election
-    # bulletin still exists on the Election Commission's current
-    # official page (confirmed at stage 0, Issue #946) and stage 3
-    # will transcribe and connect it.
-    assert term["manifesto_source_ids"] == []
+    # Stage 1 left the manifesto unconnected; stage 3 (Issue #973)
+    # transcribed the 2026 election bulletin from the Election
+    # Commission's current official page (confirmed at stage 0,
+    # Issue #946) and connected it.
+    assert term["manifesto_source_ids"] == [
+        "niigata-city-mayor-election-2026-bulletin"
+    ]
 
     packets = load(ROOT / "data/entities/executives/evidence_packets.json")
     packet = next(p for p in packets if p["subject_id"] == term["id"])

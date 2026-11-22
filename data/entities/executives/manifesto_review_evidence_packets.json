@@ -1230,5 +1230,133 @@
       "松井候補の公式サイト等に掲載された詳細な政策資料が安定した所在で確認できれば、登録済みの公約文と照合する。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-city-2026-manifesto-review",
+    "subject_type": "manifesto_review",
+    "subject_id": "manifesto-review-jp-local-431001-2026",
+    "claims": [
+      {
+        "field": "source_location",
+        "statement": "おおにしかずふみ候補欄は選挙公報（1ページに両面を収めた形式）の候補者面に掲載され、大見出し「強い熊本、支え合う熊本。」と顔写真・氏名（58才）の下に、災害・復興政策の原則文、3つの柱（「生命を守る強い熊本プロジェクト」「暮らしを支える支え合う熊本プロジェクト」「未来を拓く重点政策」）と全マニフェスト150項目からの抜粋7項目、「市庁舎について」の囲み、「全マニフェスト（公約）はホームページでご覧いただけます」の案内とQRコードが配置されている。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全1ページ・両面収録）の候補者面。",
+        "decision": "accepted",
+        "review_note": "2026-11-23に保存コピーを再取得し、描画画像で候補者欄の構成を確認した。"
+      },
+      {
+        "field": "segmentation_status",
+        "statement": "原則文は将来の目標を完結した文で表明しているため1レコードとし、番号付きの抜粋7項目はそれぞれ完結した政策表明であるため各1レコード、「市庁舎について」の囲みは防災拠点としての将来像を完結して表明するため1レコードとした（計9レコード）。大見出し、柱の見出し、プロフィール欄（氏名・年齢）、全マニフェストへの案内とQRコードは公約として分割しなかった。候補欄には過去の実績を提示する項目は含まれておらず、実績提示を理由とする除外は0件である。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "候補者欄の原則文・抜粋7項目・「市庁舎について」の囲みとその他の構成要素。",
+        "decision": "accepted",
+        "review_note": "原則文の独立レコード化は京都府知事の先例に倣った境界判断であり、open_questions に残す。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は熊本市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは選挙期間中は市公式サイトの案内ページ「選挙公報の掲載について」（kiji00373652）から公表されていたが、同ページは2026年11月23日時点で削除済み（市の標準 not-found 画面）であり、PDFの現行URLも取得できない。そのため市の公式URLの Wayback Machine 保存コピー（2026年11月2日保存）から取得した。当該PDFの200保存はこの1件のみで複数保存間のダイジェスト一致は取れないため、原典性は、選挙期間中（投開票日2026年11月15日の前）の市公式URLからの保存であること、取得ファイルのサイズ（1,895,508バイト）が段階0棚卸し時の記録と一致すること、掲載候補者5名が市選管公式の開票結果と一致すること、の3点で担保した（Wayback のダイジェストは YQ7GLW3SLRQZQ4KXO3DISRFBNQRGV4UO、取得ファイルの SHA-256 は 25c13cba040dcb9f6469d3c6df57512cbdf32eca013ef9adb0f66c7506335ca3 で段階0の記録と一致）。公報は1ページに両面を収めた形式で全文が画像（テキスト層は改ページのみ）のため、登録文はPDFの描画画像（200dpi・300dpi・400dpi）で照合して転記した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "公報の市の公式URLと Wayback Machine の保存状況、段階0棚卸しの記録に基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の詳細資料が新たに確認できれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "原則文と「市庁舎について」の囲みを独立レコードとする境界判断は、京都府知事の総論文の先例に倣ったものであり、資料上の項目境界の解釈が変われば見直す。",
+      "新任期の term レコードは2026年12月3日の任期開始後に登録し、その際に本レビューの対象出典を manifesto_source_ids へ接続する（Issue #706）。現任期の term の manifesto_source_ids は空のまま維持する。",
+      "候補者の公式サイト等に掲載された全マニフェスト（150項目）の全文が安定した所在で確認できれば、抜粋項目の登録文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-okayama-city-2025-manifesto-review",
+    "subject_type": "manifesto_review",
+    "subject_id": "manifesto-review-jp-local-331007-2025",
+    "claims": [
+      {
+        "field": "source_location",
+        "statement": "大森まさお候補欄は選挙公報1ページ目右上に掲載され、大見出し「大森まさおは、市民と一緒に考え、一緒に行動します。」の下に、好循環の図、3本柱のもとに置かれた6つの見出しの箇条書き計21項目、プロフィール欄が配置されている。",
+        "source_ids": [
+          "okayama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全2ページ）の1ページ目。",
+        "decision": "accepted",
+        "review_note": "2026-11-23に原典ファイルを取得し、描画画像で候補者欄の構成を確認した。"
+      },
+      {
+        "field": "segmentation_status",
+        "statement": "箇条書きの各項目が政策の表明として完結するため、6つの見出しの箇条書き計21項目をそれぞれ1レコードへ分割した。見出し（主題のラベル）、大見出し、好循環の図（枠組みの提示）、プロフィール欄（経歴の提示）は公約として分割しなかった。好循環の図は過去12年間の市政の成果に言及するが、箇条書きの形で実績を提示した項目はなく、実績の切り分けによる除外は0件である。",
+        "source_ids": [
+          "okayama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "候補者欄の箇条書き21項目とその他の構成要素。",
+        "decision": "accepted",
+        "review_note": "項目単位の登録は千葉市長・仙台市長・広島市長・京都市長の先例に倣った境界判断であり、open_questions に残す。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は岡山市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。公報PDFは選挙期間中、市公式サイトの選挙公報案内ページの添付ファイル（市公式URL）として掲載されていたが、現行の市公式URLは404であり、Wayback Machine の保存（2025年9月21日、告示日）も再生時に2026年2月19日の404保存へリダイレクトされ実物を取得できない。そのため選挙ドットコムCDNに現存する同一公報の複写を取得し、その SHA-1 ダイジェストが Wayback Machine の CDX 記録にある市公式URL保存分のダイジェスト（YYYYSS5ZCNRWRI6XUE7FSIIPFRXTSFXM）と完全一致することを確認して、市公式URLで公表された原典そのものと同一ファイルであることを担保した（取得ファイルは3,489,450バイト、全2ページ、SHA-256 は bf3cc6f129aeb018226cdc20097ca5aa10281a398da9c64cc3bd7649df91b602）。公報は全文が画像でテキスト層はないため、登録文はPDFの描画画像（200dpi・400dpi）で照合して転記した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "okayama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "公報各ページ欄外の備考（候補者から提出された原稿をそのまま写真印刷した旨）と、市公式URLの Wayback Machine 保存記録（CDX）および選挙ドットコムCDNの複写に基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の詳細資料が新たに確認できれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "見出しをレコード化しない境界判断は項目単位の先例に倣ったものであり、資料上の項目境界の解釈が変われば見直す。",
+      "大森候補の公式サイト等に掲載された詳細な政策資料が安定した所在で確認できれば、登録済みの公約文と照合する。",
+      "Wayback Machine の市公式URL保存分の再生が復旧すれば、保存コピーそのものでも登録文を照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-niigata-city-2026-manifesto-review",
+    "subject_type": "manifesto_review",
+    "subject_id": "manifesto-review-jp-local-151009-2026",
+    "claims": [
+      {
+        "field": "source_location",
+        "statement": "中原八一候補欄は選挙公報1ページ目中段に掲載され、顔写真・「無所属」・キャッチコピー「市政をもっと前へ!「実行・実現力」」の下に、大見出し「「輝きを増す新潟」の実現に向けて」と3つの柱の■箇条書き（計17項目）、「2期8年の主な実績」欄（10項目）、プロフィール欄が配置されている。",
+        "source_ids": [
+          "niigata-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全2ページ）の1ページ目。",
+        "decision": "accepted",
+        "review_note": "2026-11-23に現行公式ページから取得し、描画画像で候補者欄の構成を確認した。"
+      },
+      {
+        "field": "segmentation_status",
+        "statement": "■箇条書きの各項目が政策の表明として完結するため、3つの柱の17項目をそれぞれ1レコードへ分割した。柱の見出し（標語形式の主題ラベル）、大見出し、キャッチコピー、プロフィール欄（経歴の提示）は公約として分割しなかった。「2期8年の主な実績」欄の10項目は、過去の実績として明示的に提示された項目であるため公約から除外した（実績の切り分けによる除外は10件）。",
+        "source_ids": [
+          "niigata-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "候補者欄の■箇条書き17項目とその他の構成要素。",
+        "decision": "accepted",
+        "review_note": "項目単位の登録は京都市長・広島市長等の先例に倣った境界判断であり、open_questions に残す。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は新潟市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは市選挙管理委員会の現行公式ページ「令和8年新潟市長選挙について」（2026年10月14日更新）からリンクされ、現行ページに現存する。2026-11-23に現行ページから改めて取得し、段階0（2026-11-23）の取得分とファイルが一致することを SHA-256 で確認した（SHA-256 は dfea42ed4bcbf64a3d47f2be88990a17f3c2ef1bc3d3ce0b607c77ba770810ca、2,819,581バイト、全2ページ）。公報の候補者欄は画像でテキスト層はなく（抽出文字は選管の枠文のみ）、登録文はPDFの描画画像（150dpi・300dpi）の目視転記を正とし、複数解像度で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "niigata-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "公報各ページ欄外の備考（候補者から提出された原稿を、そのまま写真製版により印刷した旨）と、市選管の現行公式ページの掲載状況に基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の詳細資料が新たに確認できれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "柱の見出しをレコード化しない境界判断は項目単位の先例に倣ったものであり、資料上の項目境界の解釈が変われば見直す。",
+      "中原候補の公式サイト等に掲載された詳細な政策資料が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
   }
 ]

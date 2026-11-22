@@ -205,11 +205,16 @@ def test_mayor_term_is_registered_with_official_endpoints():
     assert term["term_start"] == "2025-10-09"
     assert term["term_end"] == "2029-10-08"
     assert term["election_date"] == "2025-10-05"
-    # Stage 1 leaves the manifesto unconnected: stage 0 (Issue #949)
+    # Stage 1 left the manifesto unconnected: stage 0 (Issue #949)
     # confirmed the 2025 election bulletin was published, but whether
     # the bulletin PDF is still reachable on the city's current site
-    # is unverified, so stage 3 confirms its survival and connects it.
-    assert term["manifesto_source_ids"] == []
+    # was unverified. Stage 3 (Issue #974) then confirmed the live
+    # official PDF is 404, verified the go2senkyo CDN copy of the
+    # bulletin as byte-identical to the Wayback capture of the
+    # official URL (SHA-1 digest match), and connected it.
+    assert term["manifesto_source_ids"] == [
+        "okayama-city-mayor-election-2025-bulletin"
+    ]
 
     packets = load(ROOT / "data/entities/executives/evidence_packets.json")
     packet = next(p for p in packets if p["subject_id"] == term["id"])

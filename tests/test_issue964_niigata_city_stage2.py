@@ -62,6 +62,42 @@ EXPECTED_POLICY_AREAS = [
 # (資料1, section VI): 22 in total.
 EXPECTED_KPI_COUNTS = [2, 2, 3, 3, 2, 2, 2, 2, 2, 2]
 
+# Stage 3 (Issue #973) connected the mayor's 2026 election-bulletin
+# promises to the strategies by wording and content (confidence
+# capped at low / inferred); three strategies received no link.
+_TERM = f"{MID}-executive-2026-11-18"
+EXPECTED_PROMISE_LINKS = {
+    f"{MID}-project-2025-urban-functions-hub": [f"{_TERM}-promise-001"],
+    f"{MID}-project-2025-business-growth": [
+        f"{_TERM}-promise-002",
+        f"{_TERM}-promise-003",
+        f"{_TERM}-promise-004",
+    ],
+    f"{MID}-project-2025-profitable-agriculture": [f"{_TERM}-promise-006"],
+    f"{MID}-project-2025-exchange-population": [
+        f"{_TERM}-promise-005",
+        f"{_TERM}-promise-015",
+    ],
+    f"{MID}-project-2025-migration-settlement": [],
+    f"{MID}-project-2025-inclusive-society": [
+        f"{_TERM}-promise-012",
+        f"{_TERM}-promise-014",
+    ],
+    f"{MID}-project-2025-childcare-talent": [
+        f"{_TERM}-promise-007",
+        f"{_TERM}-promise-008",
+        f"{_TERM}-promise-009",
+        f"{_TERM}-promise-010",
+        f"{_TERM}-promise-011",
+    ],
+    f"{MID}-project-2025-work-life-balance": [],
+    f"{MID}-project-2025-decarbonized-circular-society": [],
+    f"{MID}-project-2025-disaster-resilient-city": [
+        f"{_TERM}-promise-016",
+        f"{_TERM}-promise-017",
+    ],
+}
+
 
 def load(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
@@ -131,8 +167,11 @@ def test_selected_projects_match_records() -> None:
         assert record["municipality_id"] == MID
         assert record["fiscal_year"] == 2025
         assert record["review_status"] == "reviewed"
-        # Promise links are stage 3 work; stage 2 registers none.
-        assert record["related_promise_ids"] == []
+        # Stage 2 registered no promise links; stage 3 (Issue #973)
+        # connected them (see EXPECTED_PROMISE_LINKS).
+        assert record["related_promise_ids"] == EXPECTED_PROMISE_LINKS[
+            record["id"]
+        ]
     areas = [projects[pid]["policy_area"] for pid in EXPECTED_IDS]
     assert areas == EXPECTED_POLICY_AREAS
 

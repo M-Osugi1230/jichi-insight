@@ -33,7 +33,7 @@ def test_manifesto_source_search_fixture_is_registered_and_linked():
 def test_manifesto_source_searches_match_contract_and_safety_boundary():
     searches = load("data/entities/executives/manifesto_source_searches.json")
 
-    assert len(searches) == 34
+    assert len(searches) == 37
     assert {search["executive_term_id"] for search in searches} == {
         "jp-local-400009-executive-2025-04-14",
         "jp-local-401307-executive-2022-12-07",
@@ -67,8 +67,11 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         "jp-local-260002-executive-2026-04-16",
         "jp-local-261009-executive-2024-02-25",
         "jp-local-330001-executive-2024-11-12",
-        "jp-local-430005-executive-2024-04-16",
         "jp-local-150002-executive-2026-06-10",
+        "jp-local-151009-executive-2026-11-18",
+        "jp-local-331007-executive-2025-10-09",
+        "jp-local-431001-executive-2026-12-03",
+        "jp-local-430005-executive-2024-04-16",
     }
 
     for search in searches:
@@ -82,7 +85,7 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         for search in searches
         if search["result_status"] == "no_stable_primary_source_found"
     ]
-    # Twenty-seven searches have registered a primary source (Fukuoka
+    # Thirty searches have registered a primary source (Fukuoka
     # Prefecture, Fukuoka City, Kitakyushu City, Aichi Prefecture,
     # Nagoya City, Sapporo City, Hokkaido, Osaka Prefecture, Osaka
     # City, Kanagawa Prefecture, Yokohama City, Kawasaki City,
@@ -90,37 +93,49 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
     # Prefecture, Chiba City, Hyogo Prefecture, Kobe City,
     # Miyagi Prefecture, Sendai City, Shizuoka Prefecture,
     # Hamamatsu City, Shizuoka City, Hiroshima Prefecture,
-    # Hiroshima City, Kyoto Prefecture and Kyoto City, each closed by its
-    # official election bulletin (the Sendai, Shizuoka City and
-    # Hiroshima City bulletins survive only as archived copies
-    # of the cities' official election-period URLs; the Kyoto
+    # Hiroshima City, Kyoto Prefecture, Kyoto City, Niigata City
+    # and Kumamoto City, each closed by its
+    # official election bulletin (the Sendai, Shizuoka City,
+    # Hiroshima City and Kumamoto City bulletins survive only as archived copies
+    # of the cities' official election-period URLs; the Okayama
+    # City bulletin survives as a CDN copy proven byte-identical
+    # to the archived capture of the city's official URL by a
+    # SHA-1 digest match; the Kyoto
     # Prefecture bulletin is registered as the candidate-submitted
     # manuscript published as audio-readable data);
     # Kawasaki's bulletin is registered as reprinted in the city
     # election commission's official election record).
-    # Five searches remain exceptions:
+    # Six searches remain exceptions:
     # Toyota City (the 2024 bulletin is not extant as an official web
     # publication), Asahikawa City (the 2025 bulletin has no official
-    # web publication), Sakai City (the 2023 bulletin has no
-    # official web publication), Niigata Prefecture (the 2026
-    # bulletin was distributed on paper only; the commission's
-    # election record is still in preparation and no archived copy
-    # of the official election-period sites survives) and Kumamoto
-    # Prefecture (the 2024 bulletin was published on the election
-    # commission's website during the election period, but the pages
-    # were deleted and no archived copy of the text could be located
-    # in the National Diet Library's WARP or other archives
-    # checked); in all five cases no verifiable primary source was
-    # found, so their terms register no
+    # web publication), Sakai City (the 2023 bulletin has no official
+    # web publication), Okayama Prefecture (the 2024 bulletin was
+    # published on the election commission's homepage during the
+    # election, but the current official page no longer links to it,
+    # the election special site is unreachable, the commission's
+    # official election report reprints only the bulletin's covers,
+    # and the stage-3 archive re-check could not be completed) and
+    # Niigata Prefecture (the 2026 bulletin was
+    # distributed on paper only; the commission's election record is
+    # still in preparation and no archived copy of the official
+    # election-period sites survives) and Kumamoto Prefecture (the
+    # 2024 bulletin was published on the election commission's
+    # website during the election period, but the pages were
+    # deleted and no archived copy of the bulletin page itself
+    # could be located in the Wayback Machine, the National Diet
+    # Library's WARP or the other archives checked); in all six
+    # cases no verifiable
+    # candidate publication was found, so their terms register no
     # manifesto source. The safety invariant still applies to any
     # record that reports no source: it must not claim found sources.
-    assert len(missing) == 5
+    assert len(missing) == 6
     assert {search["executive_term_id"] for search in missing} == {
         "jp-local-232114-executive-2024-02-19",
         "jp-local-012041-executive-2025-09-26",
         "jp-local-271403-executive-2023-06-09",
-        "jp-local-430005-executive-2024-04-16",
+        "jp-local-330001-executive-2024-11-12",
         "jp-local-150002-executive-2026-06-10",
+        "jp-local-430005-executive-2024-04-16",
     }
     assert all(search["manifesto_source_ids_found"] == [] for search in missing)
 
@@ -162,7 +177,14 @@ def test_manifesto_source_search_references_and_evidence_are_complete():
         source["id"] for source in [*official_sources, *executive_sources]
     }
 
-    assert {search["executive_term_id"] for search in searches} <= term_ids
+    # Kumamoto City's 2026 search (Issue #975) references the term
+    # starting 2026-12-03, which is registered only once it starts
+    # (Issue #706); until then it is the single permitted forward
+    # reference.
+    pending_term_ids = {"jp-local-431001-executive-2026-12-03"}
+    assert {search["executive_term_id"] for search in searches} <= (
+        term_ids | pending_term_ids
+    )
     assert {packet["subject_id"] for packet in packets} == {
         search["id"] for search in searches
     }

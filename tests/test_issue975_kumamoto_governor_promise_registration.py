@@ -79,9 +79,9 @@ def test_gazette_source_is_registered() -> None:
     # Niigata stage-3 registration (issue #973) added three records
     # over the stage-2 baseline (0.55.0 / 165) and this gazette
     # record adds one more.
-    assert catalog["version"] == "0.57.0"
-    assert len(catalog["records"]) == 169
-    assert len({record["id"] for record in catalog["records"]}) == 169
+    assert catalog["version"] == "0.61.0"
+    assert len(catalog["records"]) == 173
+    assert len({record["id"] for record in catalog["records"]}) == 173
 
     gazette = next(r for r in catalog["records"] if r["id"] == GAZETTE_ID)
     assert gazette["municipality_key"] == "kumamoto-prefecture"
@@ -106,7 +106,7 @@ def test_gazette_source_is_registered() -> None:
 
 def test_search_is_registered_as_no_stable_primary_source() -> None:
     searches = load_json("data/entities/executives/manifesto_source_searches.json")
-    assert len(searches) == 34
+    assert len(searches) == 37
     search = next(s for s in searches if s["id"] == SEARCH_ID)
     assert validation_errors("schemas/manifesto_source_search.schema.json", search) == []
     assert search["executive_term_id"] == TERM_ID
@@ -139,7 +139,7 @@ def test_search_evidence_packet_is_complete() -> None:
     packets = load_json(
         "data/entities/executives/manifesto_source_search_evidence_packets.json"
     )
-    assert len(packets) == 34
+    assert len(packets) == 37
     packet = next(p for p in packets if p["id"] == SEARCH_PACKET_ID)
     assert validation_errors("schemas/evidence_packet.schema.json", packet) == []
     assert packet["subject_type"] == "manifesto_source_search"
@@ -157,11 +157,14 @@ def test_search_evidence_packet_is_complete() -> None:
 
 def test_no_promises_or_review_are_created_for_the_term() -> None:
     promises = load_json("data/entities/executives/promises.json")
-    assert len(promises) == 445
+    # The Kumamoto governor registration itself created no promise
+    # records. (The registry total has since grown through other
+    # municipalities' stage-3 registrations.)
+    assert len(promises) == 492
     assert all(p["executive_term_id"] != TERM_ID for p in promises)
 
     reviews = load_json("data/entities/executives/manifesto_reviews.json")
-    assert len(reviews) == 29
+    assert len(reviews) == 32
     assert all(r["executive_term_id"] != TERM_ID for r in reviews)
 
     terms = load_json("data/entities/executives/executive_terms.json")

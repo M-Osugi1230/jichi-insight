@@ -1427,31 +1427,32 @@
     "claims": [
       {
         "field": "checked_source_ids",
-        "statement": "岡山県選挙管理委員会の開票結果・選挙の概要と県公式の投票・開票速報ページを確認したが、いずれも選挙公報への導線を含まない。県選管の現行の知事選挙ページにも選挙公報へのリンクはない。",
+        "statement": "岡山県選挙管理委員会の開票結果・選挙の概要・結果調と県公式の投票・開票速報ページを確認したが、いずれも選挙公報の候補者原稿面への導線を含まない。県選管の現行の知事選挙ページにも選挙公報へのリンクはない。",
         "source_ids": [
           "okayama-pref-governor-election-2024",
           "okayama-pref-governor-election-2024-overview",
-          "okayama-pref-governor-election-2024-results"
+          "okayama-pref-governor-election-2024-results",
+          "okayama-pref-governor-election-2024-report"
         ],
-        "location_note": "県選管の開票結果・選挙の概要（いずれも公式公表）と県公式の速報ページ。",
+        "location_note": "県選管の開票結果・選挙の概要・結果調（いずれも公式公表）と県公式の速報ページ。",
         "decision": "accepted",
         "review_note": "公式資料側に公約原文への導線がないことを確認。"
       },
       {
         "field": "manifesto_source_ids_found",
-        "statement": "選挙公報は発行された（県選管「結果調」に印刷・配布の記録があり、選挙時には県選管ホームページに掲載されていた）が、現行公式サイトにおける現存は確認できず、選挙特設サイトも到達不可だったため、公報の実物は特定できていない。",
+        "statement": "選挙公報は発行され、選挙期間中は県選管ホームページに掲載されていた（結果調第2編「5 選挙公報」: 両候補者から掲載申請、787,000部印刷、2024年10月11日22時頃からホームページに掲載）。しかし結果調に再録されるのは公報の表紙・裏表紙のみで候補者の原稿面は含まれず、現行公式サイトにおける公報の現存は確認できず、選挙特設サイトも到達不可だったため、公報の実物は特定できていない。",
         "source_ids": [
-          "okayama-pref-governor-election-2024-overview"
+          "okayama-pref-governor-election-2024-report"
         ],
         "location_note": "探索記録 manifesto-source-search-okayama-pref-2024 の review_note に確認経緯を記載。",
         "decision": "accepted",
-        "review_note": "発行の事実のみが証拠であり、公報の実物は確認できていないため、原典としては採用しない。"
+        "review_note": "発行と選挙時の掲載の事実のみが証拠であり、公報の実物は確認できていないため、原典としては採用しない。"
       },
       {
         "field": "result_status",
-        "statement": "現行公式サイトでの現存が未確認のため、result_status を follow_up_required とし、公約レコードは作成しない。段階3でWayback Machine等を含めて再確認する。",
+        "statement": "段階3の再確認（2026-11-23）を経ても検証可能な原典を特定できなかったため、result_status を no_stable_primary_source_found とし、公約レコードは作成しない。Wayback Machine等のWebアーカイブは今回の確認経路では応答が得られず、保存有無の確認は完遂できていない。",
         "source_ids": [
-          "okayama-pref-governor-election-2024"
+          "okayama-pref-governor-election-2024-report"
         ],
         "location_note": "探索記録 manifesto-source-search-okayama-pref-2024 の review_note に判断の詳細を記載。",
         "decision": "accepted",
@@ -1460,7 +1461,8 @@
     ],
     "open_questions": [
       "選挙公報の音声読み上げ対応データの公表有無は未確認。",
-      "選挙特設サイトのアーカイブ保存の有無は未確認であり、Wayback Machineでの再確認は段階3で行う。"
+      "選挙特設サイトおよび県選管の選挙公報ページのWebアーカイブ保存の有無は、段階3でも今回の確認経路では確定できていない（アーカイブ側の応答が得られなかったため）。到達可能な経路での再確認が残る。",
+      "紙の選挙公報の保管・所蔵状況（県選挙管理委員会の保管分・図書館所蔵）は未確認。"
     ],
     "review_status": "reviewed"
   },
@@ -1549,6 +1551,141 @@
     "open_questions": [
       "県選挙管理委員会「選挙の記録」（2026年知事選挙分）は作成中であり、完成時に選挙公報が収録されるかは未確定（2022年分は選挙の約19か月後に公表された）。",
       "紙の選挙公報の現物確認（選管保管分・図書館所蔵）はオフライン経路が必要で、本探索の範囲外。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-kumamoto-city-2026",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-kumamoto-city-2026",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "熊本市選挙管理委員会の令和8年11月15日執行熊本市長選挙の投・開票状況で当選と得票数（133,988票）を、熊本県選挙管理委員会の市町村長の任期満了日一覧で現任期の満了日（2026年12月2日）を確認した（いずれも段階1で照合済み）。あわせて市公式サイトの案内ページ「選挙公報の掲載について」を確認したが、2026年11月23日時点で同ページは削除済み（市の標準 not-found 画面）であり、公報PDFの現行URLも取得できなかった。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-results-2026",
+          "kumamoto-pref-mayor-term-expiry-list"
+        ],
+        "location_note": "市選管の投・開票状況、県選管の任期満了一覧（段階0の棚卸しと段階1で確認済み）。",
+        "decision": "accepted",
+        "review_note": "確認した出典は checked_source_ids に列挙した。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "市の公式URL（kiji00373652/3_73652_523075_up_xnlivmyb.pdf）の Wayback Machine 保存コピー（2026年11月2日保存）を取得し、おおにしかずふみ候補欄（大見出し、原則文、3つの柱と抜粋7項目、「市庁舎について」の囲み）を確認した。当該PDFの200保存はこの1件のみでダイジェスト一致による担保は取れないため、保存が選挙期間中の市公式URLからであること、ファイルサイズが段階0の記録と一致すること、掲載候補者5名と市選管公式の開票結果との一致で原典性を担保した。公報は1ページに両面を収めた形式で全文が画像（テキスト層は改ページのみ）である。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全1ページ・両面収録）の候補者面。",
+        "decision": "accepted",
+        "review_note": "登録文はPDFの描画画像（200dpi・300dpi・400dpi）の照合で転記した。"
+      },
+      {
+        "field": "result_status",
+        "statement": "選挙公報を登録し、分割レビューを経て公約レコード9件を作成したため、result_status を source_registered とした。候補者の公式サイト等に掲載された全マニフェスト150項目の全文は安定した所在で特定できていないため、資料が存在しないとは判定しない。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "本探索レコード全体。",
+        "decision": "accepted",
+        "review_note": "選挙公報そのもの（市の公式URLの保存コピー）であるため confidence は high とする。"
+      }
+    ],
+    "open_questions": [
+      "候補者の公式サイト等に掲載された全マニフェスト（150項目）の全文の安定した所在は特定できていない。公報に抜粋された7項目以外の項目は本登録の対象外である。",
+      "当該PDFの Wayback 保存は1件のみであり、今後別の保存が追加されればダイジェストの照合を行う。",
+      "本レコードの executive_term_id は、2026年12月3日に開始する新任期のID（jp-local-431001-executive-2026-12-03）を指す。新任期の term レコードは任期開始後に Issue #706 の更新サイクルで登録し、その際に本レコードを含む公約の出典（kumamoto-city-mayor-election-2026-bulletin）を新任期 term の manifesto_source_ids へ接続する。現任期（2022年12月3日〜2026年12月2日）の term の manifesto_source_ids は、2022年選挙に基づく任期であるため空のまま維持する。",
+      "事業との接続は文言・内容に基づく推定であり、市が公約と事業の公式な対応付けを公表した場合は接続を見直す。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-okayama-city-2025",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-okayama-city-2025",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "岡山市選挙管理委員会の開票結果で当選と得票数（89,183票）を、同委員会の広報連絡資料で選挙期日の決定を、岡山県選挙管理委員会の任期満了日一覧で任期満了日（2029年10月8日）を確認した（いずれも段階1で照合済み）。あわせて市選挙管理委員会の現行公式サイトでは選挙公報PDFへの導線が現存しないこと（旧URLは404）を確認した。",
+        "source_ids": [
+          "okayama-city-mayor-election-2025-results",
+          "okayama-city-mayor-election-2025-schedule",
+          "okayama-pref-mayor-term-list"
+        ],
+        "location_note": "開票結果、広報連絡資料、県選管の任期満了日一覧（段階0の棚卸しと段階1で確認済み）と、現行公式サイトの掲載状況。",
+        "decision": "accepted",
+        "review_note": "確認した出典は checked_source_ids に列挙した。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "選挙ドットコムCDNに現存する選挙公報の複写を取得し、その SHA-1 ダイジェストが Wayback Machine の CDX 記録にある市公式URL（kouhou01.pdf）の2025年9月21日保存分のダイジェストと完全一致することを確認して原典として特定した。1ページ目右上の大森まさお候補欄（3本柱のもとに置かれた6つの見出しの箇条書き21項目）を確認した。公報は全文が画像でテキスト層はない。",
+        "source_ids": [
+          "okayama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全2ページ）の1ページ目。",
+        "decision": "accepted",
+        "review_note": "登録文はPDFの描画画像（200dpi・400dpi）の照合で転記した。"
+      },
+      {
+        "field": "result_status",
+        "statement": "選挙公報を登録し、分割レビューを経て公約レコード21件を作成したため、result_status を source_registered とした。大森候補の公式サイト等に詳細な政策資料が掲載されていたかは特定していないため、資料が存在しないとは判定しない。",
+        "source_ids": [
+          "okayama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "本探索レコード全体。",
+        "decision": "accepted",
+        "review_note": "選挙公報そのもの（原典との同一性をダイジェストで確認済み）であるため confidence は high とする。"
+      }
+    ],
+    "open_questions": [
+      "大森候補の公式サイト等に掲載された詳細な政策資料の安定した所在は特定できていない。",
+      "事業との接続は文言・内容に基づく推定であり、市が公約と事業の公式な対応付けを公表した場合は接続を見直す。",
+      "Wayback Machine の市公式URL保存分は CDX に記録があるものの再生できておらず、再生が復旧すれば保存コピーそのものでも照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-niigata-city-2026",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-niigata-city-2026",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "新潟市選挙管理委員会の開票結果で当選と得票数（143,724票）を、市選管の選挙概要ページで選挙の概要を、新潟県選挙管理委員会の任期満了日一覧で前任期の満了日（2026年11月17日）を確認した（いずれも段階1で照合済み）。あわせて市選挙管理委員会の現行公式ページで、2026年選挙の選挙公報が現存することを確認した。",
+        "source_ids": [
+          "niigata-city-mayor-election-2026-results",
+          "niigata-city-mayor-election-2026-overview",
+          "niigata-pref-term-expiry-list"
+        ],
+        "location_note": "開票結果、選挙概要ページ、県選管の任期満了日一覧（段階0の棚卸しと段階1で確認済み）。",
+        "decision": "accepted",
+        "review_note": "確認した出典は checked_source_ids に列挙した。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "市選挙管理委員会の現行公式ページから選挙公報PDFを取得し、1ページ目中段の中原八一候補欄（3つの柱の■箇条書き17項目と「2期8年の主な実績」欄10項目）を確認した。公報の候補者欄は画像でテキスト層はない（抽出文字は選管の枠文のみ）。",
+        "source_ids": [
+          "niigata-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全2ページ）の1ページ目。",
+        "decision": "accepted",
+        "review_note": "登録文はPDFの描画画像（150dpi・300dpi）の照合で転記した。"
+      },
+      {
+        "field": "result_status",
+        "statement": "選挙公報を登録し、分割レビューを経て公約レコード17件を作成したため、result_status を source_registered とした。中原候補の公式サイト等に詳細な政策資料が掲載されていたかは特定していないため、資料が存在しないとは判定しない。",
+        "source_ids": [
+          "niigata-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "本探索レコード全体。",
+        "decision": "accepted",
+        "review_note": "選挙公報そのもの（市の現行公式ページで現存）であるため confidence は high とする。"
+      }
+    ],
+    "open_questions": [
+      "中原候補の公式サイト等に掲載された詳細な政策資料の安定した所在は特定できていない。",
+      "事業との接続は文言・内容に基づく推定であり、市が公約と事業の公式な対応付けを公表した場合は接続を見直す。",
+      "新潟県選挙管理委員会の任期満了日（定数）一覧は段階0の確認時点で選挙前の版のままで、新任期満了日（2030年11月17日）の明記照合は一覧の次回更新待ちである（Issue #706の追跡対象）。"
     ],
     "review_status": "reviewed"
   }

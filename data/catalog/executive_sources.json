@@ -1,5 +1,5 @@
 {
-  "version": "0.57.0",
+  "version": "0.61.0",
   "updated_at": "2026-11-23",
   "scope": "pilot",
   "records": [
@@ -2368,6 +2368,62 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "新潟市選挙管理委員会の公式ページ（2026年5月14日更新）。選挙公報は新聞折込と戸別配布（ポスティング）のいずれかの方法で配布するほか、区役所や出張所、期日前投票所に備え置くと明記し、Web版PDFの掲載はない。選挙公報のお知らせ版（点字版・音声版）は希望者への送付による。候補者情報は県選管ホームページへ誘導する。2026-11-23に確認した。"
+    },
+    {
+      "id": "kumamoto-city-mayor-election-2026-bulletin",
+      "municipality_key": "kumamoto-city",
+      "organization": "熊本市選挙管理委員会／保存は Internet Archive",
+      "category": "election",
+      "title": "令和8年11月15日執行 熊本市長選挙 選挙公報（おおにしかずふみ候補欄）",
+      "url": "https://web.archive.org/web/20261102235209/https://www.city.kumamoto.jp/kiji00373652/3_73652_523075_up_xnlivmyb.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-23",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "熊本市選挙管理委員会が市公式サイトの案内ページ「選挙公報の掲載について」（kiji00373652）から公表した選挙公報PDFの Wayback Machine 保存コピー（2026年11月2日保存）。案内ページは2026年11月23日時点で削除済み（市の標準 not-found 画面）であり、PDFの現行URLも取得できない。当該PDFの200保存はこの1件のみのため、原典性は、選挙期間中（投開票日前）の市公式URLからの保存であること、取得ファイルのサイズ（1,895,508バイト）と段階0棚卸し時の記録の一致、掲載候補者5名と市選管公式の開票結果との一致で担保した（Wayback のダイジェスト YQ7GLW3SLRQZQ4KXO3DISRFBNQRGV4UO、取得ファイルの SHA-256 25c13cba040dcb9f6469d3c6df57512cbdf32eca013ef9adb0f66c7506335ca3 は段階0の記録と一致）。公報は1ページに両面を収めた形式で全文が画像（テキスト層は改ページのみ）のため、登録文は描画画像（200dpi・300dpi・400dpi）の照合で転記した。"
+    },
+    {
+      "id": "okayama-pref-governor-election-2024-report",
+      "municipality_key": "okayama-prefecture",
+      "organization": "岡山県選挙管理委員会",
+      "category": "election",
+      "title": "令和6年10月27日執行岡山県知事選挙 結果調（岡山県選挙管理委員会）",
+      "url": "https://www.pref.okayama.lg.jp/uploaded/life/993819_9575903_misc.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-23",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "県選挙管理委員会が令和7年8月に公表した選挙結果調の全文。第2編「5 選挙公報」に、両候補者から選挙公報の掲載申請があり、787,000部を印刷し（(株)山陽新聞印刷センター、ブランケット判2頁）、掲載データの準備が整った令和6年10月11日22時頃から県選挙管理委員会のホームページに選挙公報を掲載したことが記録される。ただし結果調に再録されるのは選挙公報の表紙・裏表紙（投票時間等の案内面）のみで、候補者の原稿面は再録されていない。2026-11-23に全文を読み取り確認した。"
+    },
+    {
+      "id": "okayama-city-mayor-election-2025-bulletin",
+      "municipality_key": "okayama-city",
+      "organization": "岡山市選挙管理委員会",
+      "category": "election",
+      "title": "令和7年10月5日執行 岡山市長選挙 選挙公報（大森まさお候補欄）",
+      "url": "https://prod-cdn.go2senkyo.com/public/senkyo_koho/25556/20251005%E5%B2%A1%E5%B1%B1%E5%B8%82%E9%95%B7%E9%81%B8%E6%8C%99.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-23",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "岡山市長選挙の選挙公報そのもの（候補者から提出された原稿をそのまま写真印刷したもの。全2ページ、候補者4人）。大森まさお候補欄は1ページ目右上にあり、大見出し「大森まさおは、市民と一緒に考え、一緒に行動します。」、市政推進の3本柱（「住みやすさ」「力強さ」「安全・安心」）と市内経済の拡大・収入増加の好循環を示す図、3本柱のもとに置かれた6つの見出しの箇条書き計21項目、プロフィール欄で構成される。公約レコードはこの21項目から作成した。公報PDFは選挙期間中、岡山市公式サイトの選挙公報案内ページ（https://www.city.okayama.jp/shisei/0000062838.html ）の添付ファイル（https://www.city.okayama.jp/shisei/cmsfiles/contents/0000062/62838/kouhou01.pdf ）として掲載されていたが、現行の市公式URLは現在404であり、Wayback Machine の保存（2025年9月21日16時36分21秒 UTC、告示日）も再生時に2026年2月19日の404保存へリダイレクトされ実物を取得できない。登録URLは選挙ドットコム（イチニ株式会社）のCDNが公開する同一公報の複写であり、2026-11-23に取得したファイル（3,489,450バイト、全2ページ）の SHA-1 ダイジェストが Wayback Machine の CDX 記録にある市公式URL保存分のダイジェスト（YYYYSS5ZCNRWRI6XUE7FSIIPFRXTSFXM）と完全一致したため、市公式URLで公表された原典そのものと同一ファイルであることを確認した（取得ファイルの SHA-256 は bf3cc6f129aeb018226cdc20097ca5aa10281a398da9c64cc3bd7649df91b602）。公報の掲載候補者4名（大森まさお・うらかみ雅彦・むかいだに千鳥・かんざき政人）は市公式の開票結果の候補者構成と一致する。公報は全文が画像でテキスト層はないため、登録文はPDFの描画画像（200dpi・400dpi）の目視転記を正とし、複数解像度で照合した。公報は候補者から提出された原稿をそのまま印刷した公式文書で出典優先順位の最上位に当たるため、confidence は high とした（選挙ドットコムCDNの複写を出典URLとする登録は福岡市長・福岡県知事の先例がある）。"
+    },
+    {
+      "id": "niigata-city-mayor-election-2026-bulletin",
+      "municipality_key": "niigata-city",
+      "organization": "新潟市選挙管理委員会",
+      "category": "election",
+      "title": "令和8年10月25日執行 新潟市長選挙 選挙公報（中原八一候補欄）",
+      "url": "https://www.city.niigata.lg.jp/shisei/senkyo/oshirase/sityou/r8sityousenkyo.files/2026kouhousiken.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-23",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "2026年10月25日執行の新潟市長選挙の選挙公報そのもの（全2ページ、候補者3人）。市選挙管理委員会の現行公式ページ「令和8年新潟市長選挙について」（https://www.city.niigata.lg.jp/shisei/senkyo/oshirase/sityou/r8sityousenkyo.html、2026年10月14日更新）からPDFがリンクされ、現行ページに現存する。2026-11-23に現行ページから改めて取得し、段階0（2026-11-23）の取得分とファイルが一致することを SHA-256 で確認した（SHA-256: dfea42ed4bcbf64a3d47f2be88990a17f3c2ef1bc3d3ce0b607c77ba770810ca、2,819,581バイト）。公報の候補者欄は画像でテキスト層はなく（抽出文字は新潟市選挙管理委員会の枠文のみ）、登録文はPDFの描画画像（150dpi・300dpi）の目視転記を正とし、複数解像度で照合した。中原八一候補欄は1ページ目中段にあり、キャッチコピー「市政をもっと前へ!「実行・実現力」」と大見出し「「輝きを増す新潟」の実現に向けて」の下に、3つの柱（柱1「若者や女性を応援し夢や希望をもてるまち」＝6項目、柱2「みんなで支える子育てのまち」「子どもの豊かな学びを支えるまち」＝5項目、柱3「誰もがいきいきと安心して暮らせ誇りがもてるまち」＝6項目）の■箇条書き計17項目、「2期8年の主な実績」欄（10項目）、プロフィール欄（経歴）で構成される。公報は候補者から提出された原稿をそのまま写真製版により印刷した公式文書（各ページ欄外にその旨の備考あり）で出典優先順位の最上位に当たるため、confidence は high とした。"
     }
   ]
 }
