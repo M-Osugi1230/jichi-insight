@@ -25,7 +25,7 @@ import projectStyles from "@/components/ProjectReview.module.css";
 export const metadata: Metadata = {
   alternates: { canonical: canonicalFor("/municipalities/kumamoto-prefecture") },
   title: "熊本県｜熊本県総合計画・財政・知事公約・県議会",
-  description: "熊本県総合計画の重点施策、2026年度の骨格予算、2022〜2024年度普通会計決算、木村敬知事の公約29件、熊本県議会の公開記録を確認します。",
+  description: "熊本県総合計画の重点施策、2026年度一般会計当初予算、2022〜2024年度普通会計決算、木村敬知事の登録済み公約、熊本県議会の公開記録を確認します。",
 };
 
 export default function KumamotoPrefecturePage() {
@@ -69,8 +69,8 @@ export default function KumamotoPrefecturePage() {
                 <span>都道府県</span><StatusBadge label="Reviewed" tone="verified" />
               </div>
               <h1>熊本県</h1>
-              <p>熊本県総合計画の分野別基本施策10系列・KPI51件、
-                2026年度一般会計骨格予算と2022〜2024年度普通会計決算、
+              <p>熊本県総合計画の総合戦略に基づく重点事業10系列・KPI43件、
+                2026年度一般会計当初予算と2022〜2024年度普通会計決算、
                 木村敬知事の公約29件、熊本県議会の公式記録を確認します。</p>
             </div>
             <dl className={styles.heroFacts}>
@@ -98,7 +98,7 @@ export default function KumamotoPrefecturePage() {
               <p>総合戦略の施策に対応する重点事業10系列・KPI43件を登録しています。
                 分野単位の予算・決算金額は公表資料で確認できないため、
                 金額を0円で補完せず、個別指標を施策全体の総合評定に転用しません。</p>
-              <p>2026年度一般会計当初予算は知事選前の骨格予算です。
+              <p>2026年度一般会計当初予算です。
                 第1号議案は2026年3月12日に「原案可決」されました。
                 当初予算と補正予算、2022〜2024年度普通会計決算を分けて表示します。</p>
             </div>
@@ -122,7 +122,7 @@ export default function KumamotoPrefecturePage() {
           <section className={styles.headline} aria-labelledby="finance-headline-title">
             <div className="sectionIntro"><p className="eyebrow">FY2026 initial budget</p>
               <h2 id="finance-headline-title">2026年度一般会計当初予算</h2>
-              <p>知事選挙を控えて編成された骨格予算です。
+              <p>一般会計当初予算です。
                 第1号議案「令和8年度熊本県一般会計予算」は2026年3月18日に可決され、
                 一般会計総額935,335,562千円です。
                 補正前の当初予算額であり、普通会計決算とは区別します。</p>
@@ -161,7 +161,7 @@ export default function KumamotoPrefecturePage() {
           <section id="priority-projects" className={styles.headline} aria-labelledby="projects-title">
             <div className="sectionIntro"><p className="eyebrow">Priority projects</p>
               <h2 id="projects-title">分野別基本施策10系列・KPI51件</h2>
-              <p>分野別基本施策10系列・KPI51件を登録しています。分野単位の予算額や総合評定を推測せず、
+              <p>重点事業10系列・KPI43件を登録しています。公表されていない指標実績は推測で補完しません。
                 登録済みの指標・予算接続状況を表示します。
                 <Link href="/projects#kumamoto-prefecture"> 重点事業一覧を見る</Link></p>
             </div>
@@ -209,11 +209,11 @@ export default function KumamotoPrefecturePage() {
               <p>議員定数{assembly.assembly.seat_count}人。
                 登録議案等{assembly.proposals.length}件、表決{assembly.votes.length}件、
                 会派別賛否{assembly.factionVotes.length}件、政務活動費{assembly.expenses.length}件、視察{assembly.trips.length}件。</p>
-              <p>2026年度当初予算（骨格予算）は2026年3月12日「原案可決」です。
+              <p>2026年度当初予算（骨格予算）は2026年3月18日「可決」です。
                 令和7年度決算認定21議案は継続審査中（pending）として登録されています。
                 審査中の決算議案を認定済みとして扱いません。</p>
               {budgetProposal ? <p>関連登録議案：{budgetProposal.title}</p> : null}
-              <p><Link href="/assemblies/kumamoto-city">熊本市会</Link>も別議会として確認できます。
+              <p><Link href="/assemblies/kumamoto-city">熊本市議会</Link>も別議会として確認できます。
                 賛否の公開粒度はそれぞれの公式資料の範囲で表示します。</p>
             </div>
           </section>
