@@ -1465,5 +1465,48 @@
       "紙の選挙公報の保管・所蔵状況（県選挙管理委員会の保管分・図書館所蔵）は未確認。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-niigata-pref-2026",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-niigata-pref-2026",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "新潟県選挙管理委員会の2026年知事選挙の投・開票結果ページと県知事選挙執行一覧を確認したが、いずれにも選挙公報への導線は掲載されていない。結果ページの「選挙の記録」欄は2026-11-23の確認時点で「作成中です。」のままである。令和4年（2022年）選挙の結果ページには完成した「選挙の記録」PDFがリンクされており（2023年12月28日更新）、2026年分は未公表である。",
+        "source_ids": [
+          "niigata-pref-governor-election-2026-results",
+          "niigata-pref-governor-election-list"
+        ],
+        "location_note": "県選管の投・開票結果ページ、県知事選挙執行一覧、令和4年選挙の結果ページ（いずれも公式公表、2026-11-23に本文を直接確認）。",
+        "decision": "accepted",
+        "review_note": "公式資料側に公約原文の掲載がないことを確認。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "新潟市選挙管理委員会の公式ページによれば、選挙公報は新聞折込と戸別配布（ポスティング）による紙配布と区役所・出張所・期日前投票所への備え置きのみで、Web版PDFの掲載はなく、お知らせ版（点字版・音声版）も希望者への送付による。選挙期間中の特設サイトと開票速報サイトは現在到達不可で、Wayback Machineに特設サイトのスナップショットや県サイトの選挙公報添付ファイルの保存はなく、国立国会図書館WARPにも特設サイトの収集はない。",
+        "source_ids": [
+          "niigata-city-governor-election-2026-overview"
+        ],
+        "location_note": "新潟市選管の知事選挙案内ページ（2026年5月14日更新）、特設サイト・速報サイトへの到達確認、Wayback Machineの保存確認（availability・CDX）とWARPの収集検索の結果（いずれも2026-11-23に確認）に基づく。",
+        "decision": "accepted",
+        "review_note": "配布方法の公式説明のみが証拠であり、公報の実物は確認できていないため、原典としては採用しない。"
+      },
+      {
+        "field": "result_status",
+        "statement": "検証可能な原典を特定できなかったため、result_status を no_stable_primary_source_found とし、公約レコードは作成しない。新潟県報号外1（令和8年5月14日）の選挙管理委員会告示第55号で選挙公報の掲載順序を定めるくじが指定されており、選挙公報の発行自体は公式に確認できるが、県報は公報の本文を掲載しない。報道の候補者政策報道は候補者自身の公式公表物ではないため、原典の代替として採用しない。",
+        "source_ids": [
+          "niigata-pref-gazette-2026-05-14-extra"
+        ],
+        "location_note": "探索記録 manifesto-source-search-niigata-pref-2026 の review_note に判断の詳細を記載。",
+        "decision": "accepted",
+        "review_note": "不存在の断定はしない（nonexistence_claim は false）。"
+      }
+    ],
+    "open_questions": [
+      "県選挙管理委員会「選挙の記録」（2026年知事選挙分）は作成中であり、完成時に選挙公報が収録されるかは未確定（2022年分は選挙の約19か月後に公表された）。",
+      "紙の選挙公報の現物確認（選管保管分・図書館所蔵）はオフライン経路が必要で、本探索の範囲外。"
+    ],
+    "review_status": "reviewed"
   }
 ]

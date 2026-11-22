@@ -170,10 +170,10 @@ def test_election_report_source_is_registered_in_the_catalog() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
 
     # The stage-3 registration of the election report is the only
-    # catalog addition: version 0.56.0 / 166 records.
-    assert catalog["version"] == "0.56.0"
-    assert len(catalog["records"]) == 166
-    assert len({record["id"] for record in catalog["records"]}) == 166
+    # catalog addition: version 0.57.0 / 169 records.
+    assert catalog["version"] == "0.57.0"
+    assert len(catalog["records"]) == 169
+    assert len({record["id"] for record in catalog["records"]}) == 169
 
     matches = [r for r in catalog["records"] if r["id"] == REPORT_SOURCE_ID]
     assert len(matches) == 1
