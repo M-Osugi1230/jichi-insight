@@ -1,6 +1,6 @@
 {
-  "version": "0.49.0",
-  "updated_at": "2026-11-22",
+  "version": "0.50.0",
+  "updated_at": "2026-11-23",
   "scope": "pilot",
   "records": [
     {
@@ -1990,6 +1990,48 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "2024年2月4日執行の京都市長選挙の選挙公報そのもの（全2ページ、候補者5人）。市選挙管理委員会の現行公式サイトの「過去の選挙公報」区分のページ「令和6年2月4日執行京都市長選挙 選挙公報」（https://www.city.kyoto.lg.jp/senkyo/page/0000326065.html、2024年4月30日掲載）からPDFがリンクされ、現行ページに現存する。2026-11-23に現行ページから改めて取得し、段階0（2026-11-22）の取得分とファイルが一致することを SHA-256 で確認した（SHA-256: 82c263c3015f312b74398cda52fa8217c9d0e6a2c6bae533ee9145385121c5、1,730,228バイト）。公報は全文が画像でテキスト層はなく（抽出文字は0字）、登録文はPDFの描画画像（200dpi・300dpi）の目視転記を正とし、複数解像度で照合した。松井こうじ候補欄は1ページ目左下にあり、大見出し「突き抜ける『世界都市京都』をつくる」と標語「古きをいつくしみ、新しき世を切り拓く ―市・府・国 協調のもと―」の下に、縦書きの「松井こうじの市政改革5つの柱」（5つの柱の箇条書き計33項目）と「いのちとくらしを守る防災・減災対策」のバンド（5項目）、プロフィール欄（経歴）、推薦人一覧で構成される。公報は候補者から提出された原稿を原文のまま掲載した公式文書（各ページ欄外にその旨の備考あり）で出典優先順位の最上位に当たるため、confidence は high とした。"
+    },
+    {
+      "id": "okayama-city-mayor-election-2025-results",
+      "municipality_key": "okayama-city",
+      "organization": "岡山市選挙管理委員会",
+      "category": "election",
+      "title": "令和7年10月5日執行 岡山市長選挙 投開票結果（岡山市選挙管理委員会）",
+      "url": "https://www.city.okayama.jp/shisei/0000073907.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-23",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "2025年10月5日執行の岡山市長選挙の投開票結果を公表する市選挙管理委員会の公式ページ。リンク先の開票結果速報（4区合算分）に大森まさお89,183票・当選、有効投票206,374票、投票率36.66%が印字される。2026-11-23にPDF本体を直接読み取り照合した。"
+    },
+    {
+      "id": "okayama-city-mayor-election-2025-schedule",
+      "municipality_key": "okayama-city",
+      "organization": "岡山市選挙管理委員会",
+      "category": "election",
+      "title": "岡山市長選挙の選挙期日が決定しました（岡山市選挙管理委員会 広報連絡資料）",
+      "url": "https://www.city.okayama.jp/shisei/cmsfiles/contents/0000070/70041/20250319_senkyo.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-23",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "2025年3月19日の市選挙管理委員会広報連絡資料。選挙期日（2025年10月5日）・告示日（2025年9月21日）とともに『岡山市長の任期満了日：令和7年10月8日』が明記される。2026-11-23にPDF本体を直接読み取り照合した。"
+    },
+    {
+      "id": "okayama-pref-mayor-term-list",
+      "municipality_key": "okayama-city",
+      "organization": "岡山県選挙管理委員会",
+      "category": "election",
+      "title": "長及び議会議員の任期満了日一覧（岡山県選挙管理委員会）",
+      "url": "https://www.pref.okayama.lg.jp/uploaded/life/1048097_10149755_misc.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-23",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "岡山県選挙管理委員会の一覧（令和8年5月26日現在）。岡山市長の任期満了日が令和11年の列に『10月8日』と印字される（2029年10月8日）。2026-11-23にPDF本体を直接読み取り、レイアウト上の列位置で照合した。"
     }
   ]
 }

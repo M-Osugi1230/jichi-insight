@@ -33,8 +33,14 @@ def test_okayama_source_precision_and_availability():
     fiscal = load("data/reviewed/okayama-city/fiscal_records.json")
     notes = " ".join(record["note"] for record in fiscal)
     assert "source" in notes or "余" in notes
+    # Stage 1 (Issue #954) superseded the Phase 13 total for FY2026
+    # with the exact thousand-yen figure from the June 2026
+    # supplementary budget's pre-supplement column (429,863,382
+    # thousand yen) and added the FY2026 local-tax record; the
+    # Phase 13 completion snapshot above keeps its original counts.
     assert {record["amount_yen"] for record in fiscal} == {
-        429_863_380_000,
+        429_863_382_000,
+        143_589_274_000,
         406_500_000_000,
         387_700_000_000,
     }

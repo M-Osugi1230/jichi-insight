@@ -50,6 +50,18 @@
       "review_status": "reviewed_settlement_source_precision",
       "confidence": "high",
       "boundary": "一般会計歳入4,065億円余、歳出3,877億円余。source-reported rounded/余 valuesを保持。"
+    },
+    {
+      "id": "okayama-seventh-plan-council-result",
+      "layer": "current_plan",
+      "title": "令和8年2月定例市議会の提出議案・議決結果（甲第71号議案）",
+      "organization": "岡山市議会",
+      "url": "https://www.city.okayama.jp/gikai/0000078927.html",
+      "source_kind": "html",
+      "fiscal_year": 2026,
+      "review_status": "reviewed_plan_enactment",
+      "confidence": "high",
+      "boundary": "甲第71号議案『岡山市第七次総合計画長期構想及び前期中期計画の策定について』が2026年3月17日に原案可決されたことを示す議決結果。計画の内容は okayama-seventh-plan を正とする。"
     }
   ],
   "quality_boundary": "第七次総合計画の階層、毎年度PDCA、初年度Result未公表、予算・決算のsource precisionを分離保持する。『余』の財政値を擬似的な円単位精密値へ昇格せず、旧計画の評価をcurrent actualへ流用しない。"

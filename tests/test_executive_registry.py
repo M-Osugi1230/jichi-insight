@@ -41,15 +41,15 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 142
-    assert len({record["id"] for record in catalog["records"]}) == 142
+    assert len(catalog["records"]) == 145
+    assert len({record["id"] for record in catalog["records"]}) == 145
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
     terms = load_json("data/entities/executives/executive_terms.json")
     packets = load_json("data/entities/executives/evidence_packets.json")
 
-    assert len(terms) == 31
+    assert len(terms) == 32
     assert {term["municipality_id"] for term in terms} == {
         "jp-local-400009",
         "jp-local-401307",
@@ -82,6 +82,7 @@ def test_executive_registry_matches_shared_contracts() -> None:
         "jp-local-341002",
         "jp-local-261009",
         "jp-local-260002",
+        "jp-local-331007",
     }
     for term in terms:
         assert validation_errors("schemas/executive_term.schema.json", term) == []
@@ -288,6 +289,14 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
         # stated directly in the prefectural election commission's
         # official term list (as of 2026-04-30).
         "jp-local-260002": "2030-04-15",
+        # Okayama City's end (2029-10-08) is stated directly in the
+        # Okayama Prefectural Election Commission's official term-expiry
+        # list (as of 2026-05-26), in the Reiwa 11 column of the mayor's
+        # row; its start (2025-10-09) follows the Article 259 proviso
+        # chain, anchored by the previous term's expiry (2025-10-08)
+        # stated in the city election commission's official
+        # election-schedule announcement, and the two values agree.
+        "jp-local-331007": "2029-10-08",
     }
     for term in terms:
         assert term["term_end"] == expected_term_ends[term["municipality_id"]]
@@ -350,6 +359,7 @@ def test_executive_term_starts_follow_statutory_counting() -> None:
         "jp-local-341002": "2023-04-12",
         "jp-local-261009": "2024-02-25",
         "jp-local-260002": "2026-04-16",
+        "jp-local-331007": "2025-10-09",
     }
     for term in terms:
         assert term["term_start"] == expected_term_starts[term["municipality_id"]]
@@ -500,6 +510,11 @@ def test_manifesto_readiness_is_not_confused_with_progress() -> None:
     assert by_municipality["jp-local-221309"]["manifesto_source_ids"] == [
         "hamamatsu-city-mayor-election-2023-bulletin",
     ]
+    # Okayama City registers no manifesto source at stage 1: the 2025
+    # bulletin was published, but whether the bulletin PDF is still
+    # reachable on the city's current site is unverified (stage 0,
+    # Issue #949); stage 3 confirms its survival before connecting it.
+    assert by_municipality["jp-local-331007"]["manifesto_source_ids"] == []
 
 
 def test_every_executive_has_evidence_and_known_sources() -> None:
