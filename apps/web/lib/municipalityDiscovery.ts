@@ -1,3 +1,6 @@
+import hiroshimaPrefectureMunicipality from "../../../data/reviewed/hiroshima-prefecture/municipality.json";
+import hiroshimaCityMunicipality from "../../../data/reviewed/hiroshima-city/municipality.json";
+import { hiroshimaFinance } from "@/lib/hiroshimaFinance";
 import shizuokaPrefectureMunicipality from "../../../data/reviewed/shizuoka-prefecture/municipality.json";
 import shizuokaCityMunicipality from "../../../data/reviewed/shizuoka-city/municipality.json";
 import hamamatsuMunicipality from "../../../data/reviewed/hamamatsu-city/municipality.json";
@@ -75,6 +78,7 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
   // Keep key null until a dedicated municipality route or corresponding executive/assembly data is published.
   // Stage 1-4: guard every Shizuoka deep-dive link against the matching Reviewed identity.
   for (const item of [
+    { slug: "hiroshima-prefecture", municipality: hiroshimaPrefectureMunicipality, finance: hiroshimaFinance },
     { slug: "shizuoka-prefecture", municipality: shizuokaPrefectureMunicipality, finance: shizuokaFinance },
     { slug: "shizuoka-city", municipality: shizuokaCityMunicipality, finance: shizuokaCityFinance },
     { slug: "hamamatsu-city", municipality: hamamatsuMunicipality, finance: hamamatsuFinance },
@@ -98,6 +102,27 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
         promises: hasReviewedExecutivePromises(municipalityId), assembly: hasAssembly,
       };
     }
+  }
+
+  // Hiroshima City is a Phase 15 city with separately reviewed stage 2-4 records.
+  // Match the municipal code before publishing any deep-dive navigation.
+  if (!matched && officialCode === hiroshimaCityMunicipality.official_code &&
+    hiroshimaCityMunicipality.data_status === "reviewed") {
+    const municipalityId = hiroshimaCityMunicipality.id;
+    const hasProjects = projectRegistry["hiroshima-city"].projects.some((record) =>
+      record.municipality_id === municipalityId && record.review_status === "reviewed",
+    );
+    const entry = assemblies["hiroshima-city"];
+    const hasAssembly = entry.assembly.review_status === "reviewed" &&
+      entry.disclosure.review_status === "reviewed" &&
+      entry.assembly.id.startsWith(municipalityId + "-assembly-");
+    return {
+      key: "hiroshima-city",
+      finance: loadGenericCityFinance("hiroshima-city") !== null,
+      projects: hasProjects,
+      promises: hasReviewedExecutivePromises(municipalityId),
+      assembly: hasAssembly,
+    };
   }
 
   if (!matched && officialCode === miyagiMunicipality.official_code &&
