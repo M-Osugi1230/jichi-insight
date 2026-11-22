@@ -65,7 +65,7 @@ export function OkayamaCityReview() {
           <div>
             <p>第七次総合計画の政策単位の予算額は公表資料で接続できないため、金額を補完しません。
               令和8年度政策評価は旧計画の10政策を評価した公式記録です。
-              今回の重点事業10系列・KPI21件はその旧計画の政策単位で登録しています。</p>
+              重点事業10系列・KPI41件を登録しています。政策単位の予算額は公表されていないため補完しません。</p>
             {okayamaCityPlanReview.records.map((record) => (
               <article key={record.id}>
                 <h3>{record.title}</h3><p>{record.statement}</p>
@@ -109,7 +109,7 @@ export function OkayamaCityReview() {
         <section id="priority-projects" className={styles.headline} aria-labelledby="projects-title">
           <div className="sectionIntro"><p className="eyebrow">Priority projects</p>
             <h2 id="projects-title">第七次総合計画・政策10系列</h2>
-            <p>第七次総合計画の政策10系列・KPI21件と令和8年度政策評価結果を表示します。
+            <p>第七次総合計画の政策10系列・KPI41件を表示します。
               政策単位の予算額は公表されていないため補完しません。
               <Link href="/projects#okayama-city"> 重点事業一覧を見る</Link></p></div>
           <div className={projectStyles.cards}>
