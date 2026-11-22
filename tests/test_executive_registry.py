@@ -398,6 +398,7 @@ def test_executive_term_starts_follow_statutory_counting() -> None:
         "jp-local-260002": "2026-04-16",
         "jp-local-330001": "2024-11-12",
         "jp-local-430005": "2024-04-16",
+        "jp-local-431001": "2022-12-03",
         "jp-local-151009": "2026-11-18",
         "jp-local-150002": "2026-06-10",
     }
