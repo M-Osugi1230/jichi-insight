@@ -69,9 +69,9 @@ export default function NiigataPrefecturePage() {
                 <span>都道府県</span><StatusBadge label="Reviewed" tone="verified" />
               </div>
               <h1>新潟県</h1>
-              <p>新潟県総合計画の分野別基本施策19基本政策・KPI77件、
+              <p>新潟県総合計画の基本政策19件・成果指標77件、
                 2026年度一般会計当初予算と2022〜2024年度普通会計決算、
-                花角英世知事の公約29件、新潟県議会の公式記録を確認します。</p>
+                花角英世知事の登録済み公約、新潟県議会の公式記録を確認します。</p>
             </div>
             <dl className={styles.heroFacts}>
               <div><dt>普通会計決算</dt><dd>{settlements.length}件（FY2022–2024）</dd></div>
@@ -92,13 +92,11 @@ export default function NiigataPrefecturePage() {
             <div><p className="eyebrow">Scope</p>
               <h2 id="scope-title">政策計画・予算・実績を、登録単位と時点を分けて確認する。</h2></div>
             <div>
-              <p>新潟県総合計画は2019年10月策定、2022年12月改定です。
-                将来構想・基本計画・地域振興計画から成り、
-                基本計画と地域振興計画は2023〜2026年度を対象とします。</p>
+              <p>最上位計画は「新潟県総合計画 ～住んでよし、訪れてよしの新潟県～」です。2025年3月策定、計画期間は2025〜2032年度の8年間です。第6章は将来像3・政策の柱6・基本政策19で構成されます。</p>
               <p>基本政策19件に紐づく成果指標77件を登録しています。県は指標の年次実績・達成度を公表していないため、実績未登録は未達成を意味しません。
                 分野単位の予算・決算金額は公表資料で確認できないため、
                 金額を0円で補完せず、個別指標を施策全体の総合評定に転用しません。</p>
-              <p>2026年度一般会計当初予算は知事選前の骨格予算です。
+              <p>2026年度一般会計当初予算です。
                 第1号議案は2026年3月12日に「可決」されました。
                 当初予算と補正予算、2022〜2024年度普通会計決算を分けて表示します。</p>
             </div>
@@ -122,15 +120,15 @@ export default function NiigataPrefecturePage() {
           <section className={styles.headline} aria-labelledby="finance-headline-title">
             <div className="sectionIntro"><p className="eyebrow">FY2026 initial budget</p>
               <h2 id="finance-headline-title">2026年度一般会計当初予算</h2>
-              <p>知事選挙を控えて編成された骨格予算です。
+              <p>一般会計当初予算です。
                 第1号議案「令和8年度新潟県一般会計予算」は2026年3月27日に可決され、
-                一般会計総額1,169,750,000千円、府税（県税額は登録値を参照）です。
+                一般会計総額1,169,750,000千円です。
                 補正前の当初予算額であり、普通会計決算とは区別します。</p>
             </div>
             <div className={styles.metricGrid}>
               {[
                 { label: "一般会計当初予算（歳入総額）", record: revenue },
-                { label: "府税収入", record: tax },
+                { label: "県税収入", record: tax },
                 { label: "一般会計当初予算（歳出総額）", record: expenditure },
               ].map(({ label, record }) => (
                 <article className={styles.metricCard} key={label}>
@@ -161,7 +159,7 @@ export default function NiigataPrefecturePage() {
           <section id="priority-projects" className={styles.headline} aria-labelledby="projects-title">
             <div className="sectionIntro"><p className="eyebrow">Priority projects</p>
               <h2 id="projects-title">基本政策19件・KPI77件</h2>
-              <p>分野別基本施策10系列・KPI51件を登録しています。分野単位の予算額や総合評定を推測せず、
+              <p>基本政策19件・成果指標77件を登録しています。政策単位の予算額は公表資料から接続できないため、推測で補完しません。
                 登録済みの指標・予算接続状況を表示します。
                 <Link href="/projects#niigata-prefecture"> 重点事業一覧を見る</Link></p>
             </div>
@@ -184,7 +182,7 @@ export default function NiigataPrefecturePage() {
 
           <section className={styles.scope} aria-labelledby="governor-title">
             <div><p className="eyebrow">Executive</p>
-              <h2 id="governor-title">花角英世知事の任期と公約29件</h2></div>
+              <h2 id="governor-title">花角英世知事の任期と公約</h2></div>
             <div>{governor ? (
               <>
                 <h3>{governor.person_name} 知事</h3>
