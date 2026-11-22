@@ -8,6 +8,14 @@ import sources from "../../../data/catalog/kyoto_prefecture_finance_sources.json
 import type { EvidencePacket, FiscalRecord } from "./finance";
 import type { SourceRecord } from "./catalog";
 
+import cityMunicipality from "../../../data/reviewed/kyoto-city/municipality.json";
+import cityPlanReview from "../../../data/reviewed/kyoto-city/plan_review.json";
+import cityFiscalRecords from "../../../data/reviewed/kyoto-city/fiscal_records.json";
+import citySettlementRecords from "../../../data/reviewed/kyoto-city/settlement_records.json";
+import cityEvidencePackets from "../../../data/reviewed/kyoto-city/evidence_packets.json";
+import citySettlementEvidencePackets from "../../../data/reviewed/kyoto-city/settlement_evidence_packets.json";
+import citySources from "../../../data/catalog/kyoto_city_finance_sources.json";
+
 export const kyotoFinance = {
   municipality,
   records: [
@@ -40,13 +48,6 @@ export function kyotoEvidenceForRecord(recordId: string): EvidencePacket | undef
   );
 }
 
-import cityMunicipality from "../../../data/reviewed/kyoto-city/municipality.json";
-import cityPlanReview from "../../../data/reviewed/kyoto-city/plan_review.json";
-import cityFiscalRecords from "../../../data/reviewed/kyoto-city/fiscal_records.json";
-import citySettlementRecords from "../../../data/reviewed/kyoto-city/settlement_records.json";
-import cityEvidencePackets from "../../../data/reviewed/kyoto-city/evidence_packets.json";
-import citySettlementEvidencePackets from "../../../data/reviewed/kyoto-city/settlement_evidence_packets.json";
-import citySources from "../../../data/catalog/kyoto_city_finance_sources.json";
 
 export const kyotoCityFinance = {
   municipality: cityMunicipality,
