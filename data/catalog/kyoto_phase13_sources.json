@@ -109,6 +109,18 @@
       "review_status": "reviewed_externalized_audit_route",
       "confidence": "high",
       "boundary": "監査委員による決算審査の公式route。政策実績評価や市の自己評価と別Evidence role。"
+    },
+    {
+      "id": "kyoto-policy-evaluation-2026",
+      "layer": "annual_progress",
+      "title": "令和8年度政策評価結果",
+      "organization": "京都市",
+      "url": "https://www.city.kyoto.lg.jp/sogo/page/0000357995.html",
+      "source_kind": "html",
+      "fiscal_year": 2026,
+      "review_status": "reviewed_historical_plan_evaluation",
+      "confidence": "high",
+      "boundary": "計画期間を終了した京プラン2025の27政策・114施策に対する最新の公式評価（A〜Eの5段階）。新京都戦略・京都基本構想の評価へは流用しない。"
     }
   ],
   "quality_boundary": "京都基本構想2026～2050、新京都戦略2024～2027改定版、2024年度の旧基本計画＋新京都戦略実施報告、2026当初予算、2024決算、監査ルートをversion/evidence role/fiscal stageごとに分離する。旧京プラン2025の27政策分野を現行京都基本構想の政策構造へ流用せず、市の進捗評価・市民実感・監査を統合スコアへ変換しない。"

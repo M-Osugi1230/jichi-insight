@@ -46,14 +46,21 @@ def test_kyoto_shared_municipality_fiscal_and_evidence_contracts():
     assert municipality["municipality_type"] == "designated_city"
     assert municipality["data_status"] == "reviewed"
     assert municipality["fiscal_years"] == [2024, 2026]
-    assert len(fiscal) == len(evidence) == 3
+    # 3 records at the Phase 13 review; the Kyoto cluster stage 1
+    # (Issue #932) added the FY2026 initial budget's local tax record
+    # (verified against the budget explanation of Bill No. 1, passed
+    # unamended on 2026-03-24).
+    assert len(fiscal) == len(evidence) == 4
 
 
 def test_kyoto_source_catalog_matches_municipality_sources():
     municipality = load(MUNICIPALITY)
     sources = load(SOURCES)["records"]
 
-    assert len(sources) == 9
+    # 9 sources at the Phase 13 review; the Kyoto cluster stage 1
+    # (Issue #932) added the FY2026 policy-evaluation result page for
+    # the historical 京プラン2025 lane.
+    assert len(sources) == 10
     assert set(municipality["sources"]) == {row["id"] for row in sources}
     assert {row["organization"] for row in sources} <= {
         "京都市", "京都市監査事務局"
@@ -158,7 +165,12 @@ def test_kyoto_completion_counts_derive_from_reviewed_layers():
     assert counts["accountability_roles"] == len(
         progress["accountability_lanes"]
     ) == 3
-    assert counts["fiscal_top_line_records"] == len(fiscal) == 3
+    # The completion catalog is the Phase 13 snapshot (3 top-line
+    # fiscal records at completion). The Kyoto cluster stage 1
+    # (Issue #932) later added the FY2026 local-tax record, so the
+    # current fiscal file holds 4 records.
+    assert counts["fiscal_top_line_records"] == 3
+    assert len(fiscal) == 4
 
 
 def test_kyoto_completion_deferred_depth_is_explicit():
