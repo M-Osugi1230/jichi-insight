@@ -1,5 +1,5 @@
 {
-  "version": "0.57.0",
+  "version": "0.58.0",
   "updated_at": "2026-11-23",
   "scope": "pilot",
   "records": [
@@ -2368,6 +2368,20 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "熊本市選挙管理委員会が市公式サイトの案内ページ「選挙公報の掲載について」（kiji00373652）から公表した選挙公報PDFの Wayback Machine 保存コピー（2026年11月2日保存）。案内ページは2026年11月23日時点で削除済み（市の標準 not-found 画面）であり、PDFの現行URLも取得できない。当該PDFの200保存はこの1件のみのため、原典性は、選挙期間中（投開票日前）の市公式URLからの保存であること、取得ファイルのサイズ（1,895,508バイト）と段階0棚卸し時の記録の一致、掲載候補者5名と市選管公式の開票結果との一致で担保した（Wayback のダイジェスト YQ7GLW3SLRQZQ4KXO3DISRFBNQRGV4UO、取得ファイルの SHA-256 25c13cba040dcb9f6469d3c6df57512cbdf32eca013ef9adb0f66c7506335ca3 は段階0の記録と一致）。公報は1ページに両面を収めた形式で全文が画像（テキスト層は改ページのみ）のため、登録文は描画画像（200dpi・300dpi・400dpi）の照合で転記した。"
+    },
+    {
+      "id": "okayama-pref-governor-election-2024-report",
+      "municipality_key": "okayama-prefecture",
+      "organization": "岡山県選挙管理委員会",
+      "category": "election",
+      "title": "令和6年10月27日執行岡山県知事選挙 結果調（岡山県選挙管理委員会）",
+      "url": "https://www.pref.okayama.lg.jp/uploaded/life/993819_9575903_misc.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-23",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "県選挙管理委員会が令和7年8月に公表した選挙結果調の全文。第2編「5 選挙公報」に、両候補者から選挙公報の掲載申請があり、787,000部を印刷し（(株)山陽新聞印刷センター、ブランケット判2頁）、掲載データの準備が整った令和6年10月11日22時頃から県選挙管理委員会のホームページに選挙公報を掲載したことが記録される。ただし結果調に再録されるのは選挙公報の表紙・裏表紙（投票時間等の案内面）のみで、候補者の原稿面は再録されていない。2026-11-23に全文を読み取り確認した。"
     }
   ]
 }

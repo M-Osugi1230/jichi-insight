@@ -99,22 +99,29 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
     # manuscript published as audio-readable data);
     # Kawasaki's bulletin is registered as reprinted in the city
     # election commission's official election record).
-    # Four searches remain exceptions:
+    # Five searches remain exceptions:
     # Toyota City (the 2024 bulletin is not extant as an official web
     # publication), Asahikawa City (the 2025 bulletin has no official
     # web publication), Sakai City (the 2023 bulletin has no official
-    # web publication) and Niigata Prefecture (the 2026 bulletin was
+    # web publication), Okayama Prefecture (the 2024 bulletin was
+    # published on the election commission's homepage during the
+    # election, but the current official page no longer links to it,
+    # the election special site is unreachable, the commission's
+    # official election report reprints only the bulletin's covers,
+    # and the stage-3 archive re-check could not be completed) and
+    # Niigata Prefecture (the 2026 bulletin was
     # distributed on paper only; the commission's election record is
     # still in preparation and no archived copy of the official
-    # election-period sites survives); in all four cases no verifiable
+    # election-period sites survives); in all five cases no verifiable
     # candidate publication was found, so their terms register no
     # manifesto source. The safety invariant still applies to any
     # record that reports no source: it must not claim found sources.
-    assert len(missing) == 4
+    assert len(missing) == 5
     assert {search["executive_term_id"] for search in missing} == {
         "jp-local-232114-executive-2024-02-19",
         "jp-local-012041-executive-2025-09-26",
         "jp-local-271403-executive-2023-06-09",
+        "jp-local-330001-executive-2024-11-12",
         "jp-local-150002-executive-2026-06-10",
     }
     assert all(search["manifesto_source_ids_found"] == [] for search in missing)

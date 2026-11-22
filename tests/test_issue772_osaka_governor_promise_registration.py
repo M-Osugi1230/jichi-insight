@@ -335,11 +335,12 @@ def test_bulletin_source_record_points_at_the_pdf() -> None:
     # version 0.55.0 / 165 records; the Niigata cluster's stage 3
     # (Issue #973) then appended three Niigata records, bringing
     # the combined catalog to version 0.56.0 / 168 records; the
-    # Kumamoto cluster's stage 3 (Issue #975) then appended the
-    # Kumamoto City mayor election bulletin record, bringing the
-    # combined catalog to version 0.57.0 / 169 records.
-    assert catalog["version"] == "0.57.0"
-    assert len(catalog["records"]) == 169
+    # Okayama cluster's stage 3 (Issue #974) and the Kumamoto
+    # cluster's stage 3 (Issue #975) then appended one record
+    # each across parallel branches, bringing the combined
+    # catalog to version 0.58.0 / 170 records.
+    assert catalog["version"] == "0.58.0"
+    assert len(catalog["records"]) == 170
     bulletin = next(r for r in catalog["records"] if r["id"] == BULLETIN_ID)
     assert bulletin["url"].endswith("chijisenkyokoho.pdf")
     assert bulletin["municipality_key"] == "osaka-prefecture"
