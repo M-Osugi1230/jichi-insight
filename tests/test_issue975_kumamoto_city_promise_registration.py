@@ -58,8 +58,8 @@ def promise_id(index: int) -> str:
 
 def test_bulletin_source_registered_from_single_wayback_capture() -> None:
     catalog = load_json(ROOT / "data" / "catalog" / "executive_sources.json")
-    assert catalog["version"] == "0.56.0"
-    assert len(catalog["records"]) == 166
+    assert catalog["version"] == "0.57.0"
+    assert len(catalog["records"]) == 169
     by_id = {record["id"]: record for record in catalog["records"]}
     bulletin = by_id[BULLETIN_ID]
     assert bulletin["municipality_key"] == "kumamoto-city"
@@ -89,7 +89,7 @@ def test_current_term_keeps_empty_manifesto_sources() -> None:
 
 def test_search_and_review_records() -> None:
     searches = load_json(EXECUTIVES / "manifesto_source_searches.json")
-    assert len(searches) == 33
+    assert len(searches) == 34
     search = {record["id"]: record for record in searches}[
         "manifesto-source-search-kumamoto-city-2026"
     ]
@@ -179,7 +179,7 @@ def test_promise_evidence_packets_document_provenance_and_term_handover() -> Non
 
 def test_search_and_review_evidence_packets() -> None:
     search_packets = load_json(EXECUTIVES / "manifesto_source_search_evidence_packets.json")
-    assert len(search_packets) == 33
+    assert len(search_packets) == 34
     packet = {p["id"]: p for p in search_packets}[
         "evidence-manifesto-source-search-kumamoto-city-2026"
     ]
