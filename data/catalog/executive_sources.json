@@ -1,6 +1,6 @@
 {
-  "version": "0.49.0",
-  "updated_at": "2026-11-22",
+  "version": "0.50.0",
+  "updated_at": "2026-11-23",
   "scope": "pilot",
   "records": [
     {
@@ -1990,6 +1990,48 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "2024年2月4日執行の京都市長選挙の選挙公報そのもの（全2ページ、候補者5人）。市選挙管理委員会の現行公式サイトの「過去の選挙公報」区分のページ「令和6年2月4日執行京都市長選挙 選挙公報」（https://www.city.kyoto.lg.jp/senkyo/page/0000326065.html、2024年4月30日掲載）からPDFがリンクされ、現行ページに現存する。2026-11-23に現行ページから改めて取得し、段階0（2026-11-22）の取得分とファイルが一致することを SHA-256 で確認した（SHA-256: 82c263c3015f312b74398cda52fa8217c9d0e6a2c6bae533ee9145385121c5、1,730,228バイト）。公報は全文が画像でテキスト層はなく（抽出文字は0字）、登録文はPDFの描画画像（200dpi・300dpi）の目視転記を正とし、複数解像度で照合した。松井こうじ候補欄は1ページ目左下にあり、大見出し「突き抜ける『世界都市京都』をつくる」と標語「古きをいつくしみ、新しき世を切り拓く ―市・府・国 協調のもと―」の下に、縦書きの「松井こうじの市政改革5つの柱」（5つの柱の箇条書き計33項目）と「いのちとくらしを守る防災・減災対策」のバンド（5項目）、プロフィール欄（経歴）、推薦人一覧で構成される。公報は候補者から提出された原稿を原文のまま掲載した公式文書（各ページ欄外にその旨の備考あり）で出典優先順位の最上位に当たるため、confidence は high とした。"
+    },
+    {
+      "id": "niigata-city-mayor-election-2026-results",
+      "municipality_key": "niigata-city",
+      "organization": "新潟市選挙管理委員会",
+      "category": "election",
+      "title": "新潟市長選挙開票速報（令和8年10月25日執行）",
+      "url": "https://www.city.niigata.lg.jp/shisei/senkyo/oshirase/sityou/20261025_kaihyo.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-23",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "2026年10月25日執行の新潟市長選挙の開票速報（確定）を公表する市選挙管理委員会の公式ページ。候補者別得票数に中原八一143,724票・当選、青木まなぶ46,638票、早武淳34,900票、有効投票225,262票が印字される。2026-11-23に直接確認した。"
+    },
+    {
+      "id": "niigata-city-mayor-election-2026-overview",
+      "municipality_key": "niigata-city",
+      "organization": "新潟市選挙管理委員会",
+      "category": "election",
+      "title": "令和8年新潟市長選挙について（新潟市選挙管理委員会）",
+      "url": "https://www.city.niigata.lg.jp/shisei/senkyo/oshirase/sityou/r8sityousenkyo.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-23",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "市選挙管理委員会の公式ページ。投票日（2026年10月25日）と告示日（2026年10月11日）を公表し、2026年市長選挙の選挙公報のPDFも現行ページに現存する。市選管は期日の決定（2025年12月1日）に際し前任期の満了日を令和8年11月17日と公表した。2026-11-23に直接確認した。"
+    },
+    {
+      "id": "niigata-pref-term-expiry-list",
+      "municipality_key": "niigata-city",
+      "organization": "新潟県選挙管理委員会",
+      "category": "election",
+      "title": "任期満了日（定数）一覧（新潟県選挙管理委員会）",
+      "url": "https://www.pref.niigata.lg.jp/site/senkyo/1198018603173.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-23",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "2026年10月16日更新の選挙前の版。新潟市長欄は旧任期（令和8年11月17日満了・連続就任回数2）の記載のままで、新任期の満了日（2030年11月17日）の明記は一覧の次回更新で照合する。2026-11-23に直接確認した。"
     }
   ]
 }

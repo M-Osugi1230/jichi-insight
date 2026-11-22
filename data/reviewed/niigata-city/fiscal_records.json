@@ -62,5 +62,27 @@
     "sources": [
       "niigata-settlement-2024-council-record"
     ]
+  },
+  {
+    "id": "jp-local-151009-fiscal-2026-local-tax",
+    "municipality_id": "jp-local-151009",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "local_tax",
+    "metric_label": "市税",
+    "amount_yen": 144920480000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "令和8年度新潟市一般会計当初予算の市税。議案第1号の第1表歳入歳出予算の第1款市税144,920,480千円を収録する。同議案は令和8年2月定例会で2026年3月23日に「可決」されたため、議案の印字値がそのまま成立後の額である。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-city-budget-bill-fy2026",
+      "niigata-city-budget-council-results-fy2026"
+    ]
   }
 ]
