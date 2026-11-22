@@ -327,8 +327,9 @@ def test_bulletin_source_record_points_at_the_pdf() -> None:
     # records and the five Kyoto Prefecture governor records,
     # bringing the combined catalog to version 0.47.0 / 140 records;
     # stage 3 (Issue #938) then appended the Kyoto Prefecture
-    # governor election bulletin manuscript record, bringing the
-    # catalog to version 0.48.0 / 141 records.
+    # governor election bulletin manuscript record and the Kyoto
+    # City mayor election bulletin record, bringing the combined
+    # catalog to version 0.49.0 / 142 records.
     assert catalog["version"] == "0.48.0"
     assert len(catalog["records"]) == 141
     bulletin = next(r for r in catalog["records"] if r["id"] == BULLETIN_ID)

@@ -1771,10 +1771,21 @@
         "location_note": "京都府選挙管理委員会『京都府知事・市町村長・議会議員任期満了日一覧』（令和8年4月30日現在）の京都市長の行。",
         "decision": "accepted",
         "review_note": "任期満了日（令和10年2月24日）が明記されている。"
+      },
+      {
+        "field": "manifesto_source_ids",
+        "statement": "原典は2024年京都市長選挙の選挙公報である。市選挙管理委員会の現行公式ページ（「過去の選挙公報」区分）に現存し、2026-11-23に改めて取得して段階0の取得分と SHA-256 の一致を確認したうえで、松井こうじ候補欄（公報1ページ目左下）から公約38件を転記・登録したため、manifesto_source_ids に接続した。原典探索の記録は manifesto-source-search-kyoto-city-2024、分割レビューは manifesto-review-jp-local-261009-2024。",
+        "source_ids": [
+          "kyoto-city-mayor-election-2024-bulletin",
+          "kyoto-city-mayor-election-2024-results"
+        ],
+        "location_note": "選挙公報PDF（全2ページ）の1ページ目左下の松井こうじ候補欄。",
+        "decision": "accepted",
+        "review_note": "公報そのものを出典優先順位の最上位として登録した。段階1で未接続としていた選挙公報の所在は市選管の現行公式ページで確認済みであり、段階3で接続を完了した。"
       }
     ],
     "open_questions": [
-      "2024年京都市長選挙の選挙公報は市選挙管理委員会の現行公式ページに現存することを段階0（Issue #930）で確認済みであり、段階3で転記・接続する。段階1では manifesto_source_ids を未接続とする。"
+      "松井候補の公式サイト等に、公報欄の項目の詳細な政策資料が掲載されていたかは確認できていない。詳細資料の安定した所在が特定できれば、登録済みの公約文と照合する。"
     ],
     "review_status": "reviewed"
   },

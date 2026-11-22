@@ -65,6 +65,7 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         "jp-local-341002-executive-2023-04-12",
         "jp-local-340006-executive-2025-11-29",
         "jp-local-260002-executive-2026-04-16",
+        "jp-local-261009-executive-2024-02-25",
     }
 
     for search in searches:
@@ -86,7 +87,7 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
     # Prefecture, Chiba City, Hyogo Prefecture, Kobe City,
     # Miyagi Prefecture, Sendai City, Shizuoka Prefecture,
     # Hamamatsu City, Shizuoka City, Hiroshima Prefecture,
-    # Hiroshima City and Kyoto Prefecture, each closed by its
+    # Hiroshima City, Kyoto Prefecture and Kyoto City, each closed by its
     # official election bulletin (the Sendai, Shizuoka City and
     # Hiroshima City bulletins survive only as archived copies
     # of the cities' official election-period URLs; the Kyoto
