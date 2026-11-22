@@ -1915,5 +1915,59 @@
       "2026年11月15日執行の熊本市長選挙で再選した大西一史氏の新任期（2026-12-03〜2030-12-02）は開始前のため term 未登録。新任期開始後に executive_terms.json へ追加すること。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-niigata-city-current-mayor-term",
+    "subject_type": "executive_term",
+    "subject_id": "jp-local-151009-executive-2026-11-18",
+    "claims": [
+      {
+        "field": "person_name",
+        "statement": "新潟市の現市長は中原 八一である。",
+        "source_ids": [
+          "niigata-city-mayor-election-2026-results",
+          "niigata-city-mayor-election-2026-overview"
+        ],
+        "location_note": "市選挙管理委員会の開票速報の当選人欄および選挙特設ページ。",
+        "decision": "accepted",
+        "review_note": "両出典とも中原八一を2026年市長選挙の当選人として記載する。"
+      },
+      {
+        "field": "election_date",
+        "statement": "新潟市長選挙は2026年10月25日に執行され、中原八一が143,724票を得て当選した（3選）。",
+        "source_ids": [
+          "niigata-city-mayor-election-2026-results"
+        ],
+        "location_note": "市選挙管理委員会の開票速報（確定）の候補者別得票数。",
+        "decision": "accepted",
+        "review_note": "得票数は候補者別得票数の合計225,262票（中原143,724票・青木まなぶ46,638票・早武淳34,900票）とも整合する。候補者名の公式表記は「青木まなぶ」である。"
+      },
+      {
+        "field": "term_start",
+        "statement": "中原八一市長の現任期は2026年11月18日に始まった。",
+        "source_ids": [
+          "niigata-pref-term-expiry-list",
+          "niigata-city-mayor-election-2026-overview"
+        ],
+        "location_note": "新潟県選挙管理委員会『任期満了日（定数）一覧』（選挙前の版）の新潟市長の行、および市選挙管理委員会の期日決定の公表。",
+        "decision": "accepted",
+        "review_note": "前任期の満了日（2026年11月17日）は県選管一覧に明記され、市選管も期日の決定に際し同日を任期満了日として公表した。その翌日が開始日であり、公職選挙法第259条ただし書の任期起算とも整合する。"
+      },
+      {
+        "field": "term_end",
+        "statement": "中原八一市長の現任期は2030年11月17日に満了する。",
+        "source_ids": [
+          "niigata-pref-term-expiry-list"
+        ],
+        "location_note": "新潟県選挙管理委員会『任期満了日（定数）一覧』（選挙前の版）の新潟市長の行（前任期の満了日の明記）。",
+        "decision": "accepted",
+        "review_note": "前任期の満了日（2026年11月17日）の明記と公職選挙法第259条ただし書の構成により、現任期の満了日は開始日（2026年11月18日）の4年後の応当日の前日である2030年11月17日となる。県選管一覧の現行版は選挙前の版のままであり、新任期満了日の明記そのものの照合は一覧の次回更新時に行う（open question）。"
+      }
+    ],
+    "open_questions": [
+      "新潟県選挙管理委員会『任期満了日（定数）一覧』は確認時点で選挙前の版（新潟市長欄は旧任期・連続就任回数2）のままである。新任期満了日（2030年11月17日）の明記は一覧の次回更新で照合する。",
+      "2026年新潟市長選挙の選挙公報は市選挙管理委員会の現行公式ページに現存することを段階0（Issue #946）で確認済みであり、段階3で転記・接続する。段階1では manifesto_source_ids を未接続とする。"
+    ],
+    "review_status": "reviewed"
   }
 ]
