@@ -1,0 +1,2093 @@
+[
+  {
+    "id": "jp-local-150002-fiscal-2022-ordinary-revenue",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "普通会計歳入総額",
+    "amount_yen": 1193390575000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "総務省『令和4年度都道府県決算カード』（新潟県シート）の千円単位の値を円換算し、新潟県『令和4年度財政状況資料集』総括表（総務省サイト掲載分）でも一致を確認。歳入から歳出を差し引いた額は形式収支と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2022",
+      "niigata-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2022-ordinary-expenditure",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "普通会計歳出総額",
+    "amount_yen": 1166079268000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "総務省『令和4年度都道府県決算カード』（新潟県シート）の千円単位の値を円換算し、新潟県『令和4年度財政状況資料集』総括表（総務省サイト掲載分）でも一致を確認。目的別・性質別の内訳合計は歳出総額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2022",
+      "niigata-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2022-ordinary-local-tax",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "local_tax",
+    "metric_label": "普通会計県税",
+    "amount_yen": 318980220000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "歳入のうち県税。総務省『令和4年度都道府県決算カード』（新潟県シート）の千円単位の値を円換算し、新潟県『令和4年度財政状況資料集』「普通会計の状況」（総務省サイト掲載分）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2022",
+      "niigata-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2022-formal-balance",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "formal_balance",
+    "metric_label": "普通会計形式収支",
+    "amount_yen": 27311307000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "歳入歳出差引額。歳入総額から歳出総額を差し引いた額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2022",
+      "niigata-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2022-carryover-resources",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "carryover_resources",
+    "metric_label": "普通会計翌年度繰越財源",
+    "amount_yen": 8026485000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "翌年度へ繰り越すべき財源。形式収支から実質収支を差し引いた額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2022",
+      "niigata-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2022-real-balance",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance",
+    "metric_label": "普通会計実質収支",
+    "amount_yen": 19284822000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "形式収支から翌年度へ繰り越すべき財源を差し引いた額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2022",
+      "niigata-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2022-real-balance-ratio",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance_ratio",
+    "metric_label": "実質収支比率",
+    "amount_yen": null,
+    "value": 3.5,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "実質収支比率。総務省『令和4年度都道府県決算カード』（新潟県シート）の印字値をそのまま収録し、新潟県『令和4年度財政状況資料集』総括表（総務省サイト掲載分）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2022",
+      "niigata-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2022-standard-fiscal-scale",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "standard_fiscal_scale",
+    "metric_label": "標準財政規模",
+    "amount_yen": 548180873000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "総務省『令和4年度都道府県決算カード』（新潟県シート）の千円単位の値を円換算し、新潟県『令和4年度財政状況資料集』総括表（総務省サイト掲載分）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2022",
+      "niigata-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2022-expenditure-by-purpose",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_purpose",
+    "metric_label": "普通会計目的別歳出",
+    "amount_yen": 1166079268000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "総務省『令和4年度都道府県決算カード』（新潟県シート）「目的別歳出の状況」の千円単位の値を円換算。各区分の合計は歳出総額と一致する（検算済み）。目的別の「公債費」は性質別の「公債費」と分類が異なる。カード上「－」の区分（消防費・諸支出金・前年度繰上充用金・特別区財政調整交付金）は該当がないため区分に含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2022",
+      "niigata-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "breakdown": [
+      {
+        "key": "assembly",
+        "label": "議会費",
+        "amount_yen": 1240405000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "general_affairs",
+        "label": "総務費",
+        "amount_yen": 57792623000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "welfare",
+        "label": "民生費",
+        "amount_yen": 142497299000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "public_health",
+        "label": "衛生費",
+        "amount_yen": 81105067000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "labor",
+        "label": "労働費",
+        "amount_yen": 2186685000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "agriculture_forestry_fisheries",
+        "label": "農林水産業費",
+        "amount_yen": 84703897000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "commerce_industry",
+        "label": "商工費",
+        "amount_yen": 177622113000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "civil_engineering",
+        "label": "土木費",
+        "amount_yen": 157549225000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "police",
+        "label": "警察費",
+        "amount_yen": 50964049000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "education",
+        "label": "教育費",
+        "amount_yen": 169135698000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "disaster_recovery",
+        "label": "災害復旧費",
+        "amount_yen": 6366676000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 164277202000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "interest_allocation_grant",
+        "label": "利子割交付金",
+        "amount_yen": 92707000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "dividend_allocation_grant",
+        "label": "配当割交付金",
+        "amount_yen": 1340409000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "capital_gains_allocation_grant",
+        "label": "株式等譲渡所得割交付金",
+        "amount_yen": 933678000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "separate_taxation_allocation_grant",
+        "label": "分離課税所得割交付金",
+        "amount_yen": 123109000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "local_consumption_tax_grant",
+        "label": "地方消費税交付金",
+        "amount_yen": 56829910000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "golf_course_tax_grant",
+        "label": "ゴルフ場利用税交付金",
+        "amount_yen": 338528000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "automobile_acquisition_tax_grant",
+        "label": "自動車取得税交付金",
+        "amount_yen": 6395000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "light_oil_tax_grant",
+        "label": "軽油引取税交付金",
+        "amount_yen": 5069004000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "automobile_environment_tax_grant",
+        "label": "自動車税環境性能割交付金",
+        "amount_yen": 824129000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "corporate_enterprise_tax_grant",
+        "label": "法人事業税交付金",
+        "amount_yen": 5080460000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2022-expenditure-by-nature",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_nature",
+    "metric_label": "普通会計性質別歳出",
+    "amount_yen": 1166079268000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "総務省『令和4年度都道府県決算カード』（新潟県シート）「性質別歳出の状況」の千円単位の値を円換算。義務的経費計・その他の経費・投資的経費計の合計は歳出総額と一致する（検算済み）。性質別の「公債費」は目的別の「公債費」と分類が異なる。前年度繰上充用金・失業対策事業費は該当なし（カード上「－」）のため区分に含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2022",
+      "niigata-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "breakdown": [
+      {
+        "key": "mandatory_expenses",
+        "label": "義務的経費計",
+        "amount_yen": 398064983000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "personnel",
+        "label": "人件費",
+        "amount_yen": 225033478000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "staff_salaries",
+        "label": "うち職員給",
+        "amount_yen": 163666455000,
+        "parent_key": "personnel",
+        "note": null
+      },
+      {
+        "key": "assistance",
+        "label": "扶助費",
+        "amount_yen": 9256798000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 163774707000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "other_expenses",
+        "label": "その他の経費",
+        "amount_yen": 577742165000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "goods_and_services",
+        "label": "物件費",
+        "amount_yen": 49194068000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "maintenance",
+        "label": "維持補修費",
+        "amount_yen": 23909261000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidies",
+        "label": "補助費等",
+        "amount_yen": 338916222000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "transfers_out",
+        "label": "繰出金",
+        "amount_yen": 10806332000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "fund_contributions",
+        "label": "積立金",
+        "amount_yen": 22981719000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "equity_investments",
+        "label": "投資及び出資金",
+        "amount_yen": 5910256000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "loans",
+        "label": "貸付金",
+        "amount_yen": 126024307000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "capital_expenses",
+        "label": "投資的経費計",
+        "amount_yen": 190272120000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "construction",
+        "label": "普通建設事業費",
+        "amount_yen": 183905444000,
+        "parent_key": "capital_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidized_construction",
+        "label": "うち補助",
+        "amount_yen": 115745925000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "independent_construction",
+        "label": "うち単独",
+        "amount_yen": 39762215000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "disaster_recovery_works",
+        "label": "災害復旧事業費",
+        "amount_yen": 6366676000,
+        "parent_key": "capital_expenses",
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2022-fund-balance",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fund_balance",
+    "metric_label": "普通会計基金残高",
+    "amount_yen": 112436693000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "年度末の積立金現在高（財政調整基金・減債基金・その他特定目的基金の3区分）。総務省『令和4年度都道府県決算カード』（新潟県シート）の千円単位の値を円換算し、新潟県『令和4年度財政状況資料集』総括表（総務省サイト掲載分）でも一致を確認。内訳の合計は基金残高と一致する（検算済み）。定額運用基金は積立金現在高の区分に含まれないため含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2022",
+      "niigata-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "breakdown": [
+      {
+        "key": "fiscal_adjustment_fund",
+        "label": "財政調整基金",
+        "amount_yen": 48818168000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_reduction_fund",
+        "label": "減債基金",
+        "amount_yen": 33195362000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "other_specific_purpose_funds",
+        "label": "その他特定目的基金",
+        "amount_yen": 30423163000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2022-debt-balance",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "debt_balance",
+    "metric_label": "普通会計地方債残高",
+    "amount_yen": 2391349252000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "年度末の地方債現在高（臨時財政対策債を含む）。総務省『令和4年度都道府県決算カード』（新潟県シート）の千円単位の値を円換算。内訳の「地方債現在高（臨時財政対策債を除く）」は新潟県『令和4年度財政状況資料集』総括表（総務省サイト掲載分）の印字値であり、「臨時財政対策債」は現在高からこれを差し引いた算出値。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2022",
+      "niigata-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "breakdown": [
+      {
+        "key": "bonds_excluding_temporary_fiscal",
+        "label": "地方債現在高（臨時財政対策債を除く）",
+        "amount_yen": 1710319707000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "temporary_fiscal_measures_bonds",
+        "label": "臨時財政対策債",
+        "amount_yen": 681029545000,
+        "parent_key": null,
+        "note": "資料集に直接の印字がなく、地方債現在高から臨時財政対策債を除く残高を差し引いた算出値。"
+      }
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2022-current-balance-ratio",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "current_balance_ratio",
+    "metric_label": "経常収支比率",
+    "amount_yen": null,
+    "value": 93.2,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "経常収支比率。総務省『令和4年度都道府県決算カード』（新潟県シート）の印字値（括弧内の「減収補塡債（特例分）及び臨時財政対策債を除く」値95.0は収録していない）。新潟県『令和4年度財政状況資料集』総括表（総務省サイト掲載分）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2022",
+      "niigata-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2022-real-debt-service-ratio",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_debt_service_ratio",
+    "metric_label": "実質公債費比率",
+    "amount_yen": null,
+    "value": 18.2,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "実質公債費比率（健全化判断比率）。総務省『令和4年度都道府県決算カード』（新潟県シート）の印字値をそのまま収録し、再計算による置き換えはしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2022",
+      "niigata-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2022-future-burden-ratio",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "future_burden_ratio",
+    "metric_label": "将来負担比率",
+    "amount_yen": null,
+    "value": 303.5,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "将来負担比率（健全化判断比率）。総務省『令和4年度都道府県決算カード』（新潟県シート）の印字値をそのまま収録し、再計算による置き換えはしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2022",
+      "niigata-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2022-fiscal-strength-index",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fiscal_strength_index",
+    "metric_label": "財政力指数",
+    "amount_yen": null,
+    "value": 0.45127,
+    "unit": "index",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "財政力指数（過去3年平均）。総務省『令和4年度都道府県決算カード』（新潟県シート）の印字値をそのまま収録する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2022",
+      "niigata-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2022-population",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "population",
+    "metric_label": "住民基本台帳人口",
+    "amount_yen": null,
+    "value": 2163908,
+    "unit": "persons",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "住民基本台帳人口（2023年1月1日現在）。総務省『令和4年度都道府県決算カード』（新潟県シート）の値（新潟県『令和4年度財政状況資料集』総括表（総務省サイト掲載分）でも一致）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2022",
+      "niigata-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2023-ordinary-revenue",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "普通会計歳入総額",
+    "amount_yen": 1148075153000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "総務省『令和5年度都道府県決算カード』（新潟県シート）の千円単位の値を円換算し、新潟県『令和5年度財政状況資料集』総括表（総務省サイト掲載分）でも一致を確認。歳入から歳出を差し引いた額は形式収支と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2023",
+      "niigata-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2023-ordinary-expenditure",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "普通会計歳出総額",
+    "amount_yen": 1122782289000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "総務省『令和5年度都道府県決算カード』（新潟県シート）の千円単位の値を円換算し、新潟県『令和5年度財政状況資料集』総括表（総務省サイト掲載分）でも一致を確認。目的別・性質別の内訳合計は歳出総額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2023",
+      "niigata-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2023-ordinary-local-tax",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "local_tax",
+    "metric_label": "普通会計県税",
+    "amount_yen": 316204283000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "歳入のうち県税。総務省『令和5年度都道府県決算カード』（新潟県シート）の千円単位の値を円換算し、新潟県『令和5年度財政状況資料集』「普通会計の状況」（総務省サイト掲載分）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2023",
+      "niigata-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2023-formal-balance",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "formal_balance",
+    "metric_label": "普通会計形式収支",
+    "amount_yen": 25292864000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "歳入歳出差引額。歳入総額から歳出総額を差し引いた額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2023",
+      "niigata-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2023-carryover-resources",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "carryover_resources",
+    "metric_label": "普通会計翌年度繰越財源",
+    "amount_yen": 12158844000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "翌年度へ繰り越すべき財源。形式収支から実質収支を差し引いた額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2023",
+      "niigata-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2023-real-balance",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance",
+    "metric_label": "普通会計実質収支",
+    "amount_yen": 13134020000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "形式収支から翌年度へ繰り越すべき財源を差し引いた額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2023",
+      "niigata-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2023-real-balance-ratio",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance_ratio",
+    "metric_label": "実質収支比率",
+    "amount_yen": null,
+    "value": 2.4,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "実質収支比率。総務省『令和5年度都道府県決算カード』（新潟県シート）の印字値をそのまま収録し、新潟県『令和5年度財政状況資料集』総括表（総務省サイト掲載分）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2023",
+      "niigata-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2023-standard-fiscal-scale",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "standard_fiscal_scale",
+    "metric_label": "標準財政規模",
+    "amount_yen": 552223066000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "総務省『令和5年度都道府県決算カード』（新潟県シート）の千円単位の値を円換算し、新潟県『令和5年度財政状況資料集』総括表（総務省サイト掲載分）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2023",
+      "niigata-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2023-expenditure-by-purpose",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_purpose",
+    "metric_label": "普通会計目的別歳出",
+    "amount_yen": 1122782289000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "総務省『令和5年度都道府県決算カード』（新潟県シート）「目的別歳出の状況」の千円単位の値を円換算。各区分の合計は歳出総額と一致する（検算済み）。目的別の「公債費」は性質別の「公債費」と分類が異なる。カード上「－」の区分（消防費・諸支出金・前年度繰上充用金・特別区財政調整交付金）は該当がないため区分に含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2023",
+      "niigata-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "breakdown": [
+      {
+        "key": "assembly",
+        "label": "議会費",
+        "amount_yen": 1262787000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "general_affairs",
+        "label": "総務費",
+        "amount_yen": 67230567000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "welfare",
+        "label": "民生費",
+        "amount_yen": 139943505000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "public_health",
+        "label": "衛生費",
+        "amount_yen": 58356214000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "labor",
+        "label": "労働費",
+        "amount_yen": 2283004000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "agriculture_forestry_fisheries",
+        "label": "農林水産業費",
+        "amount_yen": 86580234000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "commerce_industry",
+        "label": "商工費",
+        "amount_yen": 142328249000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "civil_engineering",
+        "label": "土木費",
+        "amount_yen": 168965650000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "police",
+        "label": "警察費",
+        "amount_yen": 49784518000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "education",
+        "label": "教育費",
+        "amount_yen": 158892275000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "disaster_recovery",
+        "label": "災害復旧費",
+        "amount_yen": 13523129000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 162019919000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "interest_allocation_grant",
+        "label": "利子割交付金",
+        "amount_yen": 66182000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "dividend_allocation_grant",
+        "label": "配当割交付金",
+        "amount_yen": 1519451000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "capital_gains_allocation_grant",
+        "label": "株式等譲渡所得割交付金",
+        "amount_yen": 1634094000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "separate_taxation_allocation_grant",
+        "label": "分離課税所得割交付金",
+        "amount_yen": 127796000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "local_consumption_tax_grant",
+        "label": "地方消費税交付金",
+        "amount_yen": 56465394000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "golf_course_tax_grant",
+        "label": "ゴルフ場利用税交付金",
+        "amount_yen": 326115000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "automobile_acquisition_tax_grant",
+        "label": "自動車取得税交付金",
+        "amount_yen": 97150000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "light_oil_tax_grant",
+        "label": "軽油引取税交付金",
+        "amount_yen": 5176763000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "automobile_environment_tax_grant",
+        "label": "自動車税環境性能割交付金",
+        "amount_yen": 929306000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "corporate_enterprise_tax_grant",
+        "label": "法人事業税交付金",
+        "amount_yen": 5269987000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2023-expenditure-by-nature",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_nature",
+    "metric_label": "普通会計性質別歳出",
+    "amount_yen": 1122782289000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "総務省『令和5年度都道府県決算カード』（新潟県シート）「性質別歳出の状況」の千円単位の値を円換算。義務的経費計・その他の経費・投資的経費計の合計は歳出総額と一致する（検算済み）。性質別の「公債費」は目的別の「公債費」と分類が異なる。前年度繰上充用金・失業対策事業費は該当なし（カード上「－」）のため区分に含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2023",
+      "niigata-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "breakdown": [
+      {
+        "key": "mandatory_expenses",
+        "label": "義務的経費計",
+        "amount_yen": 382786881000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "personnel",
+        "label": "人件費",
+        "amount_yen": 211825750000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "staff_salaries",
+        "label": "うち職員給",
+        "amount_yen": 164320858000,
+        "parent_key": "personnel",
+        "note": null
+      },
+      {
+        "key": "assistance",
+        "label": "扶助費",
+        "amount_yen": 9406859000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 161554272000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "other_expenses",
+        "label": "その他の経費",
+        "amount_yen": 522485367000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "goods_and_services",
+        "label": "物件費",
+        "amount_yen": 33673091000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "maintenance",
+        "label": "維持補修費",
+        "amount_yen": 20357182000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidies",
+        "label": "補助費等",
+        "amount_yen": 292424730000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "transfers_out",
+        "label": "繰出金",
+        "amount_yen": 11141634000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "fund_contributions",
+        "label": "積立金",
+        "amount_yen": 40585896000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "equity_investments",
+        "label": "投資及び出資金",
+        "amount_yen": 6387251000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "loans",
+        "label": "貸付金",
+        "amount_yen": 117915583000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "capital_expenses",
+        "label": "投資的経費計",
+        "amount_yen": 217510041000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "construction",
+        "label": "普通建設事業費",
+        "amount_yen": 203987153000,
+        "parent_key": "capital_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidized_construction",
+        "label": "うち補助",
+        "amount_yen": 122072224000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "independent_construction",
+        "label": "うち単独",
+        "amount_yen": 54369695000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "disaster_recovery_works",
+        "label": "災害復旧事業費",
+        "amount_yen": 13522888000,
+        "parent_key": "capital_expenses",
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2023-fund-balance",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fund_balance",
+    "metric_label": "普通会計基金残高",
+    "amount_yen": 132596931000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "年度末の積立金現在高（財政調整基金・減債基金・その他特定目的基金の3区分）。総務省『令和5年度都道府県決算カード』（新潟県シート）の千円単位の値を円換算し、新潟県『令和5年度財政状況資料集』総括表（総務省サイト掲載分）でも一致を確認。内訳の合計は基金残高と一致する（検算済み）。定額運用基金は積立金現在高の区分に含まれないため含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2023",
+      "niigata-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "breakdown": [
+      {
+        "key": "fiscal_adjustment_fund",
+        "label": "財政調整基金",
+        "amount_yen": 51525116000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_reduction_fund",
+        "label": "減債基金",
+        "amount_yen": 43307182000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "other_specific_purpose_funds",
+        "label": "その他特定目的基金",
+        "amount_yen": 37764633000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2023-debt-balance",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "debt_balance",
+    "metric_label": "普通会計地方債残高",
+    "amount_yen": 2341813657000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "年度末の地方債現在高（臨時財政対策債を含む）。総務省『令和5年度都道府県決算カード』（新潟県シート）の千円単位の値を円換算。内訳の「地方債現在高（臨時財政対策債を除く）」は新潟県『令和5年度財政状況資料集』総括表（総務省サイト掲載分）の印字値であり、「臨時財政対策債」は現在高からこれを差し引いた算出値。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2023",
+      "niigata-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "breakdown": [
+      {
+        "key": "bonds_excluding_temporary_fiscal",
+        "label": "地方債現在高（臨時財政対策債を除く）",
+        "amount_yen": 1686174926000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "temporary_fiscal_measures_bonds",
+        "label": "臨時財政対策債",
+        "amount_yen": 655638731000,
+        "parent_key": null,
+        "note": "資料集に直接の印字がなく、地方債現在高から臨時財政対策債を除く残高を差し引いた算出値。"
+      }
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2023-current-balance-ratio",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "current_balance_ratio",
+    "metric_label": "経常収支比率",
+    "amount_yen": null,
+    "value": 91.8,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "経常収支比率。総務省『令和5年度都道府県決算カード』（新潟県シート）の印字値（括弧内の「減収補塡債（特例分）及び臨時財政対策債を除く」値92.7は収録していない）。新潟県『令和5年度財政状況資料集』総括表（総務省サイト掲載分）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2023",
+      "niigata-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2023-real-debt-service-ratio",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_debt_service_ratio",
+    "metric_label": "実質公債費比率",
+    "amount_yen": null,
+    "value": 18.4,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "実質公債費比率（健全化判断比率）。総務省『令和5年度都道府県決算カード』（新潟県シート）の印字値をそのまま収録し、再計算による置き換えはしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2023",
+      "niigata-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2023-future-burden-ratio",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "future_burden_ratio",
+    "metric_label": "将来負担比率",
+    "amount_yen": null,
+    "value": 297.8,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "将来負担比率（健全化判断比率）。総務省『令和5年度都道府県決算カード』（新潟県シート）の印字値をそのまま収録し、再計算による置き換えはしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2023",
+      "niigata-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2023-fiscal-strength-index",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fiscal_strength_index",
+    "metric_label": "財政力指数",
+    "amount_yen": null,
+    "value": 0.44787,
+    "unit": "index",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "財政力指数（過去3年平均）。総務省『令和5年度都道府県決算カード』（新潟県シート）の印字値をそのまま収録する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2023",
+      "niigata-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2023-population",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "population",
+    "metric_label": "住民基本台帳人口",
+    "amount_yen": null,
+    "value": 2137672,
+    "unit": "persons",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "住民基本台帳人口（2024年1月1日現在）。総務省『令和5年度都道府県決算カード』（新潟県シート）の値（新潟県『令和5年度財政状況資料集』総括表（総務省サイト掲載分）でも一致）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2023",
+      "niigata-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2024-ordinary-revenue",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "普通会計歳入総額",
+    "amount_yen": 1119989979000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "総務省『令和6年度都道府県決算カード』（新潟県シート）の千円単位の値を円換算し、新潟県『令和6年度財政状況資料集』総括表（総務省サイト掲載分）でも一致を確認。歳入から歳出を差し引いた額は形式収支と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2024",
+      "niigata-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2024-ordinary-expenditure",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "普通会計歳出総額",
+    "amount_yen": 1094763378000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "総務省『令和6年度都道府県決算カード』（新潟県シート）の千円単位の値を円換算し、新潟県『令和6年度財政状況資料集』総括表（総務省サイト掲載分）でも一致を確認。目的別・性質別の内訳合計は歳出総額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2024",
+      "niigata-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2024-ordinary-local-tax",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "local_tax",
+    "metric_label": "普通会計県税",
+    "amount_yen": 331321502000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "歳入のうち県税。総務省『令和6年度都道府県決算カード』（新潟県シート）の千円単位の値を円換算し、新潟県『令和6年度財政状況資料集』「普通会計の状況」（総務省サイト掲載分）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2024",
+      "niigata-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2024-formal-balance",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "formal_balance",
+    "metric_label": "普通会計形式収支",
+    "amount_yen": 25226601000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "歳入歳出差引額。歳入総額から歳出総額を差し引いた額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2024",
+      "niigata-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2024-carryover-resources",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "carryover_resources",
+    "metric_label": "普通会計翌年度繰越財源",
+    "amount_yen": 11622791000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "翌年度へ繰り越すべき財源。形式収支から実質収支を差し引いた額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2024",
+      "niigata-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2024-real-balance",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance",
+    "metric_label": "普通会計実質収支",
+    "amount_yen": 13603810000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "形式収支から翌年度へ繰り越すべき財源を差し引いた額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2024",
+      "niigata-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2024-real-balance-ratio",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance_ratio",
+    "metric_label": "実質収支比率",
+    "amount_yen": null,
+    "value": 2.4,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "実質収支比率。総務省『令和6年度都道府県決算カード』（新潟県シート）の印字値をそのまま収録し、新潟県『令和6年度財政状況資料集』総括表（総務省サイト掲載分）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2024",
+      "niigata-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2024-standard-fiscal-scale",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "standard_fiscal_scale",
+    "metric_label": "標準財政規模",
+    "amount_yen": 559489800000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "総務省『令和6年度都道府県決算カード』（新潟県シート）の千円単位の値を円換算し、新潟県『令和6年度財政状況資料集』総括表（総務省サイト掲載分）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2024",
+      "niigata-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2024-expenditure-by-purpose",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_purpose",
+    "metric_label": "普通会計目的別歳出",
+    "amount_yen": 1094763378000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "総務省『令和6年度都道府県決算カード』（新潟県シート）「目的別歳出の状況」の千円単位の値を円換算。各区分の合計は歳出総額と一致する（検算済み）。目的別の「公債費」は性質別の「公債費」と分類が異なる。カード上「－」の区分（消防費・諸支出金・前年度繰上充用金・特別区財政調整交付金）は該当がないため区分に含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2024",
+      "niigata-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "breakdown": [
+      {
+        "key": "assembly",
+        "label": "議会費",
+        "amount_yen": 1434367000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "general_affairs",
+        "label": "総務費",
+        "amount_yen": 68169131000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "welfare",
+        "label": "民生費",
+        "amount_yen": 146506507000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "public_health",
+        "label": "衛生費",
+        "amount_yen": 44923401000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "labor",
+        "label": "労働費",
+        "amount_yen": 2213457000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "agriculture_forestry_fisheries",
+        "label": "農林水産業費",
+        "amount_yen": 86242246000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "commerce_industry",
+        "label": "商工費",
+        "amount_yen": 109030574000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "civil_engineering",
+        "label": "土木費",
+        "amount_yen": 154286380000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "police",
+        "label": "警察費",
+        "amount_yen": 53565676000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "education",
+        "label": "教育費",
+        "amount_yen": 175612653000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "disaster_recovery",
+        "label": "災害復旧費",
+        "amount_yen": 12766860000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 163907209000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "interest_allocation_grant",
+        "label": "利子割交付金",
+        "amount_yen": 103266000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "dividend_allocation_grant",
+        "label": "配当割交付金",
+        "amount_yen": 2245320000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "capital_gains_allocation_grant",
+        "label": "株式等譲渡所得割交付金",
+        "amount_yen": 2783569000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "separate_taxation_allocation_grant",
+        "label": "分離課税所得割交付金",
+        "amount_yen": 114742000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "local_consumption_tax_grant",
+        "label": "地方消費税交付金",
+        "amount_yen": 58549523000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "golf_course_tax_grant",
+        "label": "ゴルフ場利用税交付金",
+        "amount_yen": 316317000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "automobile_acquisition_tax_grant",
+        "label": "自動車取得税交付金",
+        "amount_yen": 60000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "light_oil_tax_grant",
+        "label": "軽油引取税交付金",
+        "amount_yen": 5088597000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "automobile_environment_tax_grant",
+        "label": "自動車税環境性能割交付金",
+        "amount_yen": 1264532000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "corporate_enterprise_tax_grant",
+        "label": "法人事業税交付金",
+        "amount_yen": 5638991000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2024-expenditure-by-nature",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_nature",
+    "metric_label": "普通会計性質別歳出",
+    "amount_yen": 1094763378000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "総務省『令和6年度都道府県決算カード』（新潟県シート）「性質別歳出の状況」の千円単位の値を円換算。義務的経費計・その他の経費・投資的経費計の合計は歳出総額と一致する（検算済み）。性質別の「公債費」は目的別の「公債費」と分類が異なる。前年度繰上充用金・失業対策事業費は該当なし（カード上「－」）のため区分に含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2024",
+      "niigata-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "breakdown": [
+      {
+        "key": "mandatory_expenses",
+        "label": "義務的経費計",
+        "amount_yen": 403545584000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "personnel",
+        "label": "人件費",
+        "amount_yen": 230483592000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "staff_salaries",
+        "label": "うち職員給",
+        "amount_yen": 171069922000,
+        "parent_key": "personnel",
+        "note": null
+      },
+      {
+        "key": "assistance",
+        "label": "扶助費",
+        "amount_yen": 9611880000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 163450112000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "other_expenses",
+        "label": "その他の経費",
+        "amount_yen": 496771325000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "goods_and_services",
+        "label": "物件費",
+        "amount_yen": 35470020000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "maintenance",
+        "label": "維持補修費",
+        "amount_yen": 26666560000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidies",
+        "label": "補助費等",
+        "amount_yen": 286032294000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "transfers_out",
+        "label": "繰出金",
+        "amount_yen": 11292746000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "fund_contributions",
+        "label": "積立金",
+        "amount_yen": 41479889000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "equity_investments",
+        "label": "投資及び出資金",
+        "amount_yen": 5442459000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "loans",
+        "label": "貸付金",
+        "amount_yen": 90387357000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "capital_expenses",
+        "label": "投資的経費計",
+        "amount_yen": 194446469000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "construction",
+        "label": "普通建設事業費",
+        "amount_yen": 181679609000,
+        "parent_key": "capital_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidized_construction",
+        "label": "うち補助",
+        "amount_yen": 122078358000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "independent_construction",
+        "label": "うち単独",
+        "amount_yen": 32311581000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "disaster_recovery_works",
+        "label": "災害復旧事業費",
+        "amount_yen": 12766860000,
+        "parent_key": "capital_expenses",
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2024-fund-balance",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fund_balance",
+    "metric_label": "普通会計基金残高",
+    "amount_yen": 135045321000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "年度末の積立金現在高（財政調整基金・減債基金・その他特定目的基金の3区分）。総務省『令和6年度都道府県決算カード』（新潟県シート）の千円単位の値を円換算し、新潟県『令和6年度財政状況資料集』総括表（総務省サイト掲載分）でも一致を確認。内訳の合計は基金残高と一致する（検算済み）。定額運用基金は積立金現在高の区分に含まれないため含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2024",
+      "niigata-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "breakdown": [
+      {
+        "key": "fiscal_adjustment_fund",
+        "label": "財政調整基金",
+        "amount_yen": 53099991000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_reduction_fund",
+        "label": "減債基金",
+        "amount_yen": 44707183000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "other_specific_purpose_funds",
+        "label": "その他特定目的基金",
+        "amount_yen": 37238147000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2024-debt-balance",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "debt_balance",
+    "metric_label": "普通会計地方債残高",
+    "amount_yen": 2285590840000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "年度末の地方債現在高（臨時財政対策債を含む）。総務省『令和6年度都道府県決算カード』（新潟県シート）の千円単位の値を円換算。内訳の「地方債現在高（臨時財政対策債を除く）」は新潟県『令和6年度財政状況資料集』総括表（総務省サイト掲載分）の印字値であり、「臨時財政対策債」は現在高からこれを差し引いた算出値。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2024",
+      "niigata-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "breakdown": [
+      {
+        "key": "bonds_excluding_temporary_fiscal",
+        "label": "地方債現在高（臨時財政対策債を除く）",
+        "amount_yen": 1660217299000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "temporary_fiscal_measures_bonds",
+        "label": "臨時財政対策債",
+        "amount_yen": 625373541000,
+        "parent_key": null,
+        "note": "資料集に直接の印字がなく、地方債現在高から臨時財政対策債を除く残高を差し引いた算出値。"
+      }
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2024-current-balance-ratio",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "current_balance_ratio",
+    "metric_label": "経常収支比率",
+    "amount_yen": null,
+    "value": 93.8,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "経常収支比率。総務省『令和6年度都道府県決算カード』（新潟県シート）の印字値（括弧内の「減収補塡債（特例分）及び臨時財政対策債を除く」値94.2は収録していない）。新潟県『令和6年度財政状況資料集』総括表（総務省サイト掲載分）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2024",
+      "niigata-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2024-real-debt-service-ratio",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_debt_service_ratio",
+    "metric_label": "実質公債費比率",
+    "amount_yen": null,
+    "value": 18.6,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "実質公債費比率（健全化判断比率）。総務省『令和6年度都道府県決算カード』（新潟県シート）の印字値をそのまま収録し、再計算による置き換えはしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2024",
+      "niigata-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2024-future-burden-ratio",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "future_burden_ratio",
+    "metric_label": "将来負担比率",
+    "amount_yen": null,
+    "value": 287,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "将来負担比率（健全化判断比率）。総務省『令和6年度都道府県決算カード』（新潟県シート）の印字値をそのまま収録し、再計算による置き換えはしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2024",
+      "niigata-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2024-fiscal-strength-index",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fiscal_strength_index",
+    "metric_label": "財政力指数",
+    "amount_yen": null,
+    "value": 0.46842,
+    "unit": "index",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "財政力指数（過去3年平均）。総務省『令和6年度都道府県決算カード』（新潟県シート）の印字値をそのまま収録する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2024",
+      "niigata-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2024-population",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "population",
+    "metric_label": "住民基本台帳人口",
+    "amount_yen": null,
+    "value": 2110754,
+    "unit": "persons",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "住民基本台帳人口（2025年1月1日現在）。総務省『令和6年度都道府県決算カード』（新潟県シート）の値（新潟県『令和6年度財政状況資料集』総括表（総務省サイト掲載分）でも一致）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-mic-settlement-card-fy2024",
+      "niigata-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  }
+]

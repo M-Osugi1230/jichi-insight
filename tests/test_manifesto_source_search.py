@@ -33,7 +33,7 @@ def test_manifesto_source_search_fixture_is_registered_and_linked():
 def test_manifesto_source_searches_match_contract_and_safety_boundary():
     searches = load("data/entities/executives/manifesto_source_searches.json")
 
-    assert len(searches) == 31
+    assert len(searches) == 32
     assert {search["executive_term_id"] for search in searches} == {
         "jp-local-400009-executive-2025-04-14",
         "jp-local-401307-executive-2022-12-07",
@@ -66,6 +66,7 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         "jp-local-340006-executive-2025-11-29",
         "jp-local-260002-executive-2026-04-16",
         "jp-local-261009-executive-2024-02-25",
+        "jp-local-330001-executive-2024-11-12",
     }
 
     for search in searches:

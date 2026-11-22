@@ -1,0 +1,64 @@
+[
+  {
+    "id": "evidence-niigata-prefecture-2026-initial-budget-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-150002-fiscal-2026-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2026年度新潟県一般会計当初予算の歳入総額は1,169,750,000千円であり、第1号議案として2026年3月27日に「可決」で議決された。",
+        "location_note": "新潟県財政課「令和8年度当初予算計数資料」の歳入歳出予算の概要・款別一覧表、および新潟県議会「令和8年2月定例会（議案一覧）」の第1号議案の欄（2026年3月27日議決）。",
+        "source_ids": [
+          "niigata-prefecture-budget-figures-fy2026",
+          "niigata-prefecture-assembly-2026-feb-session-results"
+        ],
+        "decision": "accepted",
+        "review_note": "計数資料の千円単位の値を円単位へ換算して保存。議案書の全文は県のWebサイトで公表されていないため、補正予算議案の第1表による確定経路は使えず、財政課の計数資料の款別一覧表（千円単位）で確定した。歳入・歳出の款別合計が総額と一致することも検算した。議決日と結果文言「可決」は県議会の議案一覧で確認した。"
+      }
+    ],
+    "open_questions": [
+      "FY2026当初予算の確定経路は、議案書（予算書）の全文が県のWebサイトで公表されていないため、財政課「令和8年度当初予算計数資料」の款別一覧表（千円単位）によった。補正予算の公表時には、補正予算議案の第1表でも当初額を再照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-niigata-prefecture-2026-initial-budget-local-tax",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-150002-fiscal-2026-local-tax",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2026年度新潟県一般会計当初予算の県税は292,805,000千円（歳入款別一覧表の第1款）。",
+        "location_note": "新潟県財政課「令和8年度当初予算計数資料」の歳入歳出予算の概要・款別一覧表、および新潟県議会「令和8年2月定例会（議案一覧）」の第1号議案の欄（2026年3月27日議決）。",
+        "source_ids": [
+          "niigata-prefecture-budget-figures-fy2026",
+          "niigata-prefecture-assembly-2026-feb-session-results"
+        ],
+        "decision": "accepted",
+        "review_note": "財政課の計数資料の歳入款別一覧表（千円単位）の印字値を円単位へ換算して保存。歳入款別の合計が歳入総額1,169,750,000千円と一致することを検算した。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-niigata-prefecture-2026-initial-budget-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-150002-fiscal-2026-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2026年度新潟県一般会計当初予算の歳出総額は歳入総額と同額の1,169,750,000千円である。",
+        "location_note": "新潟県財政課「令和8年度当初予算計数資料」の歳入歳出予算の概要・款別一覧表、および新潟県議会「令和8年2月定例会（議案一覧）」の第1号議案の欄（2026年3月27日議決）。",
+        "source_ids": [
+          "niigata-prefecture-budget-figures-fy2026",
+          "niigata-prefecture-assembly-2026-feb-session-results"
+        ],
+        "decision": "accepted",
+        "review_note": "財政課の計数資料の歳出款別一覧表（千円単位）で、款別合計が総額と一致することを検算した。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]

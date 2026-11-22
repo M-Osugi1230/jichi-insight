@@ -46,7 +46,10 @@ def test_niigata_shared_municipality_fiscal_and_evidence_contracts():
     assert municipality["municipality_type"] == "designated_city"
     assert municipality["data_status"] == "reviewed"
     assert municipality["fiscal_years"] == [2024, 2026]
-    assert len(fiscal) == len(evidence) == 3
+    # 3 records at the Phase 13 review; the Niigata cluster stage 1
+    # (Issue #952) added the FY2026 initial budget's local tax record
+    # (verified against the budget bill No. 1, passed on 2026-03-23).
+    assert len(fiscal) == len(evidence) == 4
     assert {packet["subject_id"] for packet in evidence} == {
         row["id"] for row in fiscal
     }
@@ -191,7 +194,12 @@ def test_niigata_completion_counts_derive_from_reviewed_layers():
     assert counts["accountability_role_count"] == len(
         progress["accountability_roles"]
     ) == 3
-    assert counts["fiscal_top_line_records"] == len(fiscal) == 3
+    # The completion catalog is the Phase 13 snapshot (3 top-line
+    # fiscal records at completion). The Niigata cluster stage 1
+    # (Issue #952) later added the FY2026 local-tax record, so the
+    # current fiscal file holds 4 records.
+    assert counts["fiscal_top_line_records"] == 3
+    assert len(fiscal) == 4
 
 
 def test_niigata_completion_deferred_depth_is_explicit_and_conservative():

@@ -1,0 +1,55 @@
+{
+  "id": "phase15-niigata-plan-review",
+  "name_ja": "新潟県",
+  "official_code": "150002",
+  "quality_boundary": "新潟県の最上位計画は「新潟県総合計画 ～住んでよし、訪れてよしの新潟県～」（令和7年3月策定、計画期間は令和7〜14年度）である。本レビューは計画の同一性、全7章の構成、第5章の重要課題6件、第6章の体系（将来像3・政策の柱6・基本政策19・施策）と成果指標の持ち方、第7章の進行管理の枠組みを固定する。新潟県には本リポジトリに先行する reviewed 登録がなく、本レビューは県自身の公表文書のみに基づく。事業単位の登録と評価単位の確定は、新計画の年次評価の公表形式が明らかになる段階2で行う。FY2026当初予算とFY2022–FY2024普通会計決算は別の fiscal レコードとして登録する。",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "新潟県「新潟県総合計画」公式ページおよび同計画本編（第1章）",
+      "evidence_role": "current_plan_identity",
+      "id": "phase15-niigata-plan-review-current-plan-identity",
+      "review_note": "計画名・策定時期・計画期間は県公式ページと計画本編の双方で一致を確認した。",
+      "source_url": "https://www.pref.niigata.lg.jp/sec/seisaku/1356915122382.html",
+      "statement": "新潟県の県政運営の最上位計画は「新潟県総合計画 ～住んでよし、訪れてよしの新潟県～」であり、令和7年3月に策定された。計画期間は令和7年度から令和14年度までの8年間で、まち・ひと・しごと創生法に基づく都道府県まち・ひと・しごと創生総合戦略も兼ねる。",
+      "title": "現行計画（新潟県総合計画、2025年3月策定）",
+      "value": "新潟県総合計画 ～住んでよし、訪れてよしの新潟県～（令和7年3月策定）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "新潟県総合計画 本編（第1章「全体構成」、第5章・第6章）および同計画概要版",
+      "evidence_role": "policy_structure",
+      "id": "phase15-niigata-plan-review-policy-structure",
+      "review_note": "章構成・重要課題6件・将来像3と政策の柱6・基本政策19の階層は計画本編と概要版で確認した。",
+      "source_url": "https://www.pref.niigata.lg.jp/sec/seisaku/1356915122382.html",
+      "statement": "計画は全7章で構成される。第3章は人口ビジョン、第5章は「住んでよし、訪れてよしの新潟県」の実現に向けた分野横断の6つの重要課題（子育てに優しい社会の実現、持続可能で暮らしやすい地域社会の構築、高い付加価値を創出する産業構造への転換、国際拠点化と戦略的な海外展開・交流促進、脱炭素社会への転換、デジタル改革を通じた生産性向上や社会課題の解決等）への対応を示す。第6章は3つの将来像（I 安全に安心して暮らせる、暮らしやすい新潟、II 地域経済が元気で活力のある新潟、III 県民一人一人が学び、成長し、活躍できる新潟）の下に6つの政策の柱を置き、その下に基本政策（19）と施策を体系化し、政策の柱ごとに成果指標を設定する。",
+      "title": "計画の体系（全7章と第6章の将来像・政策の柱・基本政策・施策）",
+      "value": "将来像（3）／政策の柱（6）／基本政策（19）／施策、第5章に分野横断の重要課題（6）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "新潟県総合計画 本編（第6章の成果指標、第3章）および同計画概要版の「達成目標（成果指標）一覧」",
+      "evidence_role": "implementation_layer",
+      "id": "phase15-niigata-plan-review-implementation-layer",
+      "review_note": "成果指標の持ち方と目標年度は本編・概要版で確認した。",
+      "source_url": "https://www.pref.niigata.lg.jp/sec/seisaku/1356915122382.html",
+      "statement": "計画の達成目標（成果指標）は政策の柱ごとに設定され、中間年度の令和10年度と最終年度の令和14年度の目標値を持つ。第3章の人口ビジョンも総人口等の目標値（令和10年度・令和14年度）を掲げる。具体の事業は毎年度の予算編成を通じて決定される。",
+      "title": "成果指標（令和10年度・令和14年度目標）による実施と測定",
+      "value": "達成目標（成果指標）は令和10年度・令和14年度の目標値を設定／第3章人口ビジョンにも目標値を設定"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "新潟県総合計画 本編 第7章「計画の推進にあたって」（計画推進の手順）",
+      "evidence_role": "progress_governance",
+      "id": "phase15-niigata-plan-review-progress-governance",
+      "review_note": "毎年度の状況把握・分析と中間・最終年度の外部評価の定めは第7章原文で確認した。年次評価の公表形式は未公表のため、評価単位の確定は段階2へ送る。",
+      "source_url": "https://www.pref.niigata.lg.jp/sec/seisaku/1356915122382.html",
+      "statement": "進行管理は第7章の定めによる。計画の進捗について、設定した達成目標（成果指標）等により定期的な点検・評価を実施し、次年度以降の予算編成や事業立案に反映させるPDCAマネジメントサイクルを徹底するものとされ、経済情勢の変化等も踏まえながら毎年度、状況把握・分析を行う。中間年度である令和10年度目標及び最終年度である令和14年度目標に対する評価に当たっては、有識者による外部評価を実施する。新計画の年次評価の公表形式（実施状況報告の有無・公表単位）は現時点で公表されておらず、登録単位の確定は段階2で行う。",
+      "title": "毎年度の状況把握・分析と中間・最終年度の外部評価による進行管理",
+      "value": "状況把握・分析（毎年度）／令和10年度・令和14年度目標に対する有識者による外部評価／PDCAマネジメントサイクル"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-23",
+  "next_action": "Register the priority projects in the project stage after confirming the registration unit from the new plan's annual evaluation format (the Chapter 6 basic policies are the leading candidate, corresponding to the unit the previous plan was evaluated on; the six cross-cutting key issues of Chapter 5 are a separate-axis candidate); register the governor's promises in the promise stage — the 2026 election bulletin has not been located on the election commission's current pages, the special site, or the Wayback Machine, so re-check when the commission's election record is published; add the assembly layer in the assembly stage; keep supplementary budgets, execution and settlement as separate states."
+}
