@@ -216,9 +216,11 @@ def test_governor_term_registration() -> None:
     assert term["status"] == "current"
     # Promises are registered in the promise stage, not here; the
     # 2024 bulletin has not been located on the commission's current
-    # pages, so no manifesto source is registered yet.
+    # pages, so no manifesto source is registered yet. Stage 3
+    # (issue #975) added the prefectural gazette as a sixth source
+    # for the proclamation-date confirmation.
     assert term["manifesto_source_ids"] == []
-    assert len(term["sources"]) == 5
+    assert len(term["sources"]) == 6
 
     packets = load_json(ROOT / "data" / "entities" / "executives" / "evidence_packets.json")
     packet = next(p for p in packets if p["subject_id"] == term["id"])

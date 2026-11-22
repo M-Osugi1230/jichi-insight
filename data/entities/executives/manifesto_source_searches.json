@@ -968,8 +968,8 @@
     "confidence": "high"
   },
   {
-    "id": "manifesto-source-search-kumamoto-city-2026",
-    "executive_term_id": "jp-local-431001-executive-2026-12-03",
+    "id": "manifesto-source-search-kumamoto-pref-2024",
+    "executive_term_id": "jp-local-430005-executive-2024-04-16",
     "searched_at": "2026-11-23",
     "search_scopes": [
       "official_election_result_page",
@@ -978,22 +978,23 @@
       "candidate_publication_search",
       "general_web_search"
     ],
-    "result_status": "source_registered",
-    "manifesto_source_ids_found": [
-      "kumamoto-city-mayor-election-2026-bulletin"
-    ],
+    "result_status": "no_stable_primary_source_found",
+    "manifesto_source_ids_found": [],
     "checked_source_ids": [
-      "kumamoto-city-mayor-election-results-2026",
-      "kumamoto-pref-mayor-term-expiry-list",
-      "kumamoto-city-mayor-election-2026-bulletin"
+      "kumamoto-pref-governor",
+      "kumamoto-pref-term-list",
+      "kumamoto-pref-governor-election-2024-ballot-count",
+      "kumamoto-pref-governor-election-2024-turnout",
+      "kumamoto-pref-governor-inauguration-2024",
+      "kumamoto-pref-governor-election-2024-gazette"
     ],
     "nonexistence_claim": false,
-    "review_note": "熊本市長選挙（令和8年11月15日執行）の選挙公報は、選挙期間中は熊本市公式サイトの案内ページ「選挙公報の掲載について」（kiji00373652）からPDF（kiji00373652/3_73652_523075_up_xnlivmyb.pdf）がリンクされ公表されていた。2026年11月23日時点で案内ページは削除済み（市の標準 not-found 画面）であり、PDFの現行URLも取得できない。段階0の棚卸しで Wayback Machine の2026年11月2日保存を特定し控えを確保していたため、段階3では当該保存コピーを再取得して照合した。当該PDFの200保存はこの1件のみで、複数保存間のダイジェスト一致は取れないため、原典性は、選挙期間中（投開票日前）の市公式URLからの保存であること、取得ファイルのサイズ（1,895,508バイト）が段階0の記録と一致すること、掲載候補者5名と市選管公式の開票結果との一致、の3点で担保した（Wayback のダイジェスト YQ7GLW3SLRQZQ4KXO3DISRFBNQRGV4UO、取得ファイルの SHA-256 25c13cba040dcb9f6469d3c6df57512cbdf32eca013ef9adb0f66c7506335ca3 は段階0の記録と一致）。おおにしかずふみ候補欄（大見出し、原則文、3つの柱と全マニフェスト150項目からの抜粋7項目、「市庁舎について」の囲み）を確認し、分割レビュー（manifesto-review-jp-local-431001-2026）を経て公約レコード9件を作成した。公報は1ページに両面を収めた形式で全文が画像（テキスト層は改ページのみ）のため、登録文は描画画像（200dpi・300dpi・400dpi）の目視転記を正とし、複数解像度で照合した。選挙公報は候補者提出原稿をそのまま印刷した公式文書であり、市の公式URLの保存コピーで実物を確認できたため、公約レコードの confidence は high とした。本探索レコードの executive_term_id は、2026年12月3日に開始する新任期のID（jp-local-431001-executive-2026-12-03）を指す。新任期の term レコードはまだ登録されておらず、任期開始後に Issue #706 の更新サイクルで登録し、その際に本出典を manifesto_source_ids へ接続する。現任期（2022年12月3日〜2026年12月2日）の term の manifesto_source_ids は、2022年選挙に基づく任期であるため空のまま維持する。一般ウェブ検索でも他の公式な公報コピーの所在は確認できなかったが、候補者の全マニフェスト全文を含め詳細な政策資料が存在しないと判定するものではない。",
+    "review_note": "2024年熊本県知事選挙の選挙公報は発行され、紙では令和6年3月11日から順次配布された（球磨村選挙管理委員会の公式ページ）。また選挙期間中は熊本県選挙管理委員会のホームページでも閲覧できたことが、大津町・合志市の各選挙管理委員会の公式ページの記載（「熊本県選挙管理委員会のホームページからもご覧いただけます」「市ホームページで一定期間は見ることができます」）で確認できる。しかし、選挙期間中の県選管ページ（soshiki/147/198406.html・198564.html）は現行公式サイトから削除されており（2026-11-23時点で404）、現行の「熊本県知事選挙結果」ページにも選挙公報へのリンクはない。国立国会図書館WARPには県公式サイトの選挙関連ページの保存があるが、選挙期間中の両ページと選挙公報PDFの保存はなく、市町村ページの保存からも公報本文は特定できなかった。archive.todayにも保存はない。Wayback Machineは本探索の環境からアクセスできず（403）、Common Crawlのインデックスも応答不良（504）で、両アーカイブの収録有無は確認できていない。候補者本人の公式サイト（kimura-takashi.jp、県公報の候補者届出に記載）は県選管の公式公表物ではなく、報道の候補者アンケートも同様であるため、原典として採用しない。以上により、検証可能な原典を特定できなかったものとして公約は未登録とする。これは選挙公報が存在しないという主張ではない（不存在は証明できていない）。なお、告示日（2024年3月7日）は熊本県公報号外第10号の県選管告示第5号で直接確認し、出典として登録した（kumamoto-pref-governor-election-2024-gazette）。音声読み上げ対応データの公表有無は未確認である。",
     "next_actions": [
-      "新任期の開始（2026年12月3日）後に term レコードを登録し、manifesto_source_ids へ本出典を接続する（Issue #706）",
-      "候補者の公式サイト等に掲載された全マニフェスト（150項目）の全文の安定した所在が特定できれば、登録済みの公約文と照合する",
-      "未接続の公約（1件）について、計画・事業資料への進捗証拠の接続を拡充する",
-      "事業との接続（8件）は文言・内容に基づく推定であり、市が公約と事業の公式な対応付けを公表した場合は接続を見直す"
+      "Wayback Machineにアクセス可能な環境で、選挙期間中の県選管ページ（soshiki/147/198406.html・198564.html）と選挙公報PDFの保存有無を再確認し、特定できれば原典として登録し直す",
+      "紙の選挙公報の現物（選挙管理委員会の保管分・図書館所蔵）が特定できれば、原典として登録し直す",
+      "選挙公報の音声読み上げ対応データの公表有無を確認する",
+      "2028年の任期満了に伴う次回知事選挙では、選挙期間中に選挙公報の公式掲載を確認し、新任期の公約原文資料として登録する"
     ],
     "review_status": "reviewed",
     "confidence": "high"
@@ -1025,6 +1026,37 @@
       "県選挙管理委員会「選挙の記録」（2026年知事選挙分）の完成・公表時に選挙公報の収録有無を確認し、収録されていれば原典として登録する（2022年分は選挙の約19か月後に公表された実績がある）",
       "紙の選挙公報の現物（選挙管理委員会の保管分・図書館所蔵）や選挙公報の複写が特定できれば、原典として登録し直す",
       "2030年の任期満了に伴う次回知事選挙では、選挙期間中に選挙公報の公式掲載を確認し、新任期の公約原文資料として登録する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-kumamoto-city-2026",
+    "executive_term_id": "jp-local-431001-executive-2026-12-03",
+    "searched_at": "2026-11-23",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "kumamoto-city-mayor-election-2026-bulletin"
+    ],
+    "checked_source_ids": [
+      "kumamoto-city-mayor-election-results-2026",
+      "kumamoto-pref-mayor-term-expiry-list",
+      "kumamoto-city-mayor-election-2026-bulletin"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "熊本市長選挙（令和8年11月15日執行）の選挙公報は、選挙期間中は熊本市公式サイトの案内ページ「選挙公報の掲載について」（kiji00373652）からPDF（kiji00373652/3_73652_523075_up_xnlivmyb.pdf）がリンクされ公表されていた。2026年11月23日時点で案内ページは削除済み（市の標準 not-found 画面）であり、PDFの現行URLも取得できない。段階0の棚卸しで Wayback Machine の2026年11月2日保存を特定し控えを確保していたため、段階3では当該保存コピーを再取得して照合した。当該PDFの200保存はこの1件のみで、複数保存間のダイジェスト一致は取れないため、原典性は、選挙期間中（投開票日前）の市公式URLからの保存であること、取得ファイルのサイズ（1,895,508バイト）が段階0の記録と一致すること、掲載候補者5名と市選管公式の開票結果との一致、の3点で担保した（Wayback のダイジェスト YQ7GLW3SLRQZQ4KXO3DISRFBNQRGV4UO、取得ファイルの SHA-256 25c13cba040dcb9f6469d3c6df57512cbdf32eca013ef9adb0f66c7506335ca3 は段階0の記録と一致）。おおにしかずふみ候補欄（大見出し、原則文、3つの柱と全マニフェスト150項目からの抜粋7項目、「市庁舎について」の囲み）を確認し、分割レビュー（manifesto-review-jp-local-431001-2026）を経て公約レコード9件を作成した。公報は1ページに両面を収めた形式で全文が画像（テキスト層は改ページのみ）のため、登録文は描画画像（200dpi・300dpi・400dpi）の目視転記を正とし、複数解像度で照合した。選挙公報は候補者提出原稿をそのまま印刷した公式文書であり、市の公式URLの保存コピーで実物を確認できたため、公約レコードの confidence は high とした。本探索レコードの executive_term_id は、2026年12月3日に開始する新任期のID（jp-local-431001-executive-2026-12-03）を指す。新任期の term レコードはまだ登録されておらず、任期開始後に Issue #706 の更新サイクルで登録し、その際に本出典を manifesto_source_ids へ接続する。現任期（2022年12月3日〜2026年12月2日）の term の manifesto_source_ids は、2022年選挙に基づく任期であるため空のまま維持する。一般ウェブ検索でも他の公式な公報コピーの所在は確認できなかったが、候補者の全マニフェスト全文を含め詳細な政策資料が存在しないと判定するものではない。",
+    "next_actions": [
+      "新任期の開始（2026年12月3日）後に term レコードを登録し、manifesto_source_ids へ本出典を接続する（Issue #706）",
+      "候補者の公式サイト等に掲載された全マニフェスト（150項目）の全文の安定した所在が特定できれば、登録済みの公約文と照合する",
+      "未接続の公約（1件）について、計画・事業資料への進捗証拠の接続を拡充する",
+      "事業との接続（8件）は文言・内容に基づく推定であり、市が公約と事業の公式な対応付けを公表した場合は接続を見直す"
     ],
     "review_status": "reviewed",
     "confidence": "high"
