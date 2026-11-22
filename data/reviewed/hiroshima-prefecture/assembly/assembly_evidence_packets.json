@@ -1,0 +1,67 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "term_and_seats",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-assembly-members"
+    ],
+    "statement": "広島県議会の定数は64名、現員は63名（欠員1名は安芸郡）。議員の任期は2023年4月30日から2027年4月29日まで（2023年統一地方選挙で選出）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "factions",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-assembly-members",
+     "hiroshima-pref-assembly-results-2026-09"
+    ],
+    "statement": "会派は8会派（自由民主党広島県議会議員連盟35名・広島県議会民主県政会14名・公明党広島県議会議員団6名・自由民主党広島県議会広志会3名・日本共産党広島県議会議員団2名・自由民主党広島県議会議員会1名・無所属ひとわ1名・ひろしま、刷新1名）。自民議連の35名には議長の中本隆志を含み、審議結果表の表決参加議員数は議長を除く62名分である。議長は中本隆志、副議長は東保幸。"
+   },
+   {
+    "decision": "accepted",
+    "field": "committees",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-assembly-committees-index"
+    ],
+    "statement": "委員会は17（議会運営委員会、常任委員会6、特別委員会10）。名称のみを登録した（委員名簿は各委員会の概要ページで公開）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "member_vote_availability",
+    "location_note": null,
+    "review_note": "賛否の性質の判定: 審議結果表は採決日ごとに編成され、欠席（9月30日の加納孝彦議員）など表決時点の事実を含み、凡例も退席・除斥を表決に関わる概念として定義するため、事後の表決記録の性格が強い。一方、県議会だよりは同じ内容を「表決態度」とも呼び、会議録検索システム（www.pref.hiroshima.dbsr.jp）に登録時点で到達できず令和8年9月定例会の会議録との個別照合は未了である。よって事後の表決記録か採決前の態度表明の集約かは断定せず、公表された会派別賛否をそのまま登録した。会議録の公表・到達後に追認確認を行う。",
+    "source_ids": [
+     "hiroshima-pref-assembly-results-2026-09"
+    ],
+    "statement": "会派別賛否は審議結果表で公表されるが、議員個人別の賛否は公表されていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "petitions_and_reports",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-assembly-proposals-2026-09",
+     "hiroshima-pref-assembly-results-2026-09",
+     "hiroshima-pref-assembly-dayori-85"
+    ],
+    "statement": "令和8年9月定例会では請願の提出・審議結果の公表はなく、登録対象の請願は0件だった。知事提出の報告（報第14〜18号）は議決対象ではなく登録対象外とした。"
+   }
+  ],
+  "id": "evidence-jp-local-340006-assembly-2023",
+  "open_questions": [
+   "令和7年度決算認定2件は継続審査中で、本会議の結論は令和8年12月定例会で見込まれる。結論の公表後に状態を更新する。",
+   "令和8年9月定例会の会議録との個別照合（賛否表の性質の追認確認）は、会議録検索システムへ到達できなかったため未了。公表・到達後に確認する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-340006-assembly-2023",
+  "subject_type": "assembly"
+ }
+]
