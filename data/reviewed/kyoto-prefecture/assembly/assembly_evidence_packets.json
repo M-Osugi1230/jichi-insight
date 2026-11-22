@@ -1,0 +1,71 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "term_and_seats",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-assembly-members",
+     "kyoto-pref-assembly-members-50on",
+     "kyoto-pref-assembly-term-expiry"
+    ],
+    "statement": "京都府議会の定数は60名、現員は59名（欠員1名）。議員の任期は2023年4月30日から2027年4月29日まで（府選挙管理委員会「任期満了日一覧」で府議会議員の任期満了日が令和9年4月29日であることを確認）。現員59名は会派別名簿と50音順名簿の双方で一致することを確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "factions",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-assembly-members",
+     "kyoto-pref-assembly-chair"
+    ],
+    "statement": "会派は6会派（自由民主党京都府議会議員団28名・国民民主党・日本維新の会京都府議会議員団11名・日本共産党京都府議会議員団9名・府民クラブ京都府議会議員団5名・公明党京都府議会議員団5名・京都が好きだ1名）。議長は荒巻隆三、副議長は兎本和久。"
+   },
+   {
+    "decision": "accepted",
+    "field": "committees",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-assembly-committees-standing",
+     "kyoto-pref-assembly-committees-special",
+     "kyoto-pref-assembly-schedule-2026-09"
+    ],
+    "statement": "委員会は14（議会運営委員会、常任委員会5、特別委員会8）。総合計画に関する特別委員会は特別委員会の紹介ページには載らないが、9月定例会の日程表で活動を確認した。名称のみを登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "member_vote_availability",
+    "location_note": null,
+    "review_note": "賛否の性質の判定: 議案等ページの「賛否の状況」表は、賛成の場合にのみ「賛成」と表示し、それ以外は空欄とする形式であり、空欄の意味（反対・棄権・欠席等の区別）を定義する凡例・注記は同ページに存在しない（原典HTMLで確認。用語解説ページにも表の空欄に関する定義はない）。会議録検索システム（www.pref.kyoto.dbsr.jp）で令和8年9月定例会（会期2026-09-16〜2026-11-09）の本会議会議録を検索したところ該当文書は0件で、同会期の会議録は登録時点（2026-11-22）で未公表のため、個別議案の表決との突合はできなかった（同じ検索条件で令和8年6月定例会は16文書が該当し、検索自体が正常に機能することは確認した）。よって表の性質（事後の表決記録か採決前の態度表明の集約か）は断定せず、賛成の表示がある会派は賛成、空欄の会派は賛否が表に示されていないものとしてpositionをunknownとし、公表どおりに登録した。空欄から反対等を推測して埋めることはしていない。会議録の公表後に追認確認を行う。",
+    "source_ids": [
+     "kyoto-pref-assembly-proposals-2026-09",
+     "kyoto-pref-assembly-minutes-search"
+    ],
+    "statement": "会派別賛否は議案等ページの「賛否の状況」表で公表されるが、議員個人別の賛否は公表されていない。空欄の会派については賛否が表に示されていないものとして登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "petitions_and_reports",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "kyoto-pref-assembly-proposals-2026-09",
+     "kyoto-pref-assembly-petitions-2026-09"
+    ],
+    "statement": "令和8年9月定例会では請願2件（第784号・第785号）が政策環境建設常任委員会に付託され、いずれも不採択だった。本会議では「請願審査の件」として委員会の審査結果のとおりとすることが2026-10-14に可決されたため、個別請願は審査結果のみを登録し、「請願審査の件」を投票レコードのある議案として登録した。手続的案件5件（決算特別委員会設置の件・同委員選任の件・議員派遣の件2件・閉会中継続審査・調査の件）は賛否表の対象外のため、投票レコードなしで登録した。報告案件の掲載は議案等ページになかった。"
+   }
+  ],
+  "id": "evidence-jp-local-260002-assembly-2023",
+  "open_questions": [
+   "令和8年9月定例会の会議録は登録時点で未公表（会議録検索システムで該当文書0件）。公表後に「賛否の状況」表の性質（空欄の意味）を個別議案の表決と突合して追認確認する。",
+   "議員派遣の件（2件）の派遣先・派遣議員等の詳細は議案等ページに掲載がなく登録していない。会議録の公表後に確認する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-260002-assembly-2023",
+  "subject_type": "assembly"
+ }
+]
