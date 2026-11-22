@@ -65,7 +65,7 @@ export function KumamotoCityReview() {
           <div>
             <p>現行の熊本市第8次熊本市総合計画・アクションプランと、第8次熊本市総合計画の政策評価を同一視しません。
               令和8年度政策評価は旧計画の10政策を評価した公式記録です。
-              今回の重点事業10系列・KPI21件はその旧計画の政策単位で登録しています。</p>
+              第8次熊本市総合計画に基づく重点事業10系列・KPI43件を登録しています。</p>
             {kumamotoCityPlanReview.records.map((record) => (
               <article key={record.id}>
                 <h3>{record.title}</h3><p>{record.statement}</p>
@@ -108,8 +108,8 @@ export function KumamotoCityReview() {
         </section>
         <section id="priority-projects" className={styles.headline} aria-labelledby="projects-title">
           <div className="sectionIntro"><p className="eyebrow">Priority projects</p>
-            <h2 id="projects-title">第8次熊本市総合計画政策10系列・KPI21件</h2>
-            <p>第8次熊本市総合計画の政策10系列・KPI21件と令和8年度政策評価結果を表示します。
+            <h2 id="projects-title">第8次熊本市総合計画・重点事業10系列</h2>
+            <p>第8次熊本市総合計画の重点事業10系列・KPI43件と令和6年度行政評価を表示します。
               政策単位の予算額は公表されていないため補完しません。
               <Link href="/projects#kumamoto-city"> 重点事業一覧を見る</Link></p></div>
           <div className={projectStyles.cards}>
@@ -144,7 +144,7 @@ export function KumamotoCityReview() {
         </section>
         <section className={styles.scope} aria-labelledby="assembly-title">
           <div><p className="eyebrow">Assembly</p>
-            <h2 id="assembly-title">熊本市会</h2></div>
+            <h2 id="assembly-title">熊本市議会</h2></div>
           <div><p>議員定数{assembly.assembly.seat_count}人。
             登録議案{assembly.proposals.length}件・会派別賛否{assembly.factionVotes.length}件、
             政務活動費{assembly.expenses.length}件・視察{assembly.trips.length}件。</p>
