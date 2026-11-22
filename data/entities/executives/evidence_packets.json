@@ -1853,6 +1853,70 @@
     "review_status": "reviewed"
   },
   {
+    "id": "evidence-kumamoto-city-current-mayor-term",
+    "subject_type": "executive_term",
+    "subject_id": "jp-local-431001-executive-2022-12-03",
+    "claims": [
+      {
+        "field": "person_name",
+        "statement": "熊本市の現職市長が大西一史であることを市公式「市長のプロフィール」で確認した。略歴に、熊本県議会議員を経て2014年12月に第32代熊本市長就任、2018年12月に第33代市長就任、2022年12月に第34代市長就任と明記される。",
+        "source_ids": [
+          "kumamoto-city-mayor-profile"
+        ],
+        "location_note": "熊本市公式サイト「市長のプロフィール」の略歴。",
+        "decision": "accepted",
+        "review_note": "現職市長の氏名と3期目であることを保持する。"
+      },
+      {
+        "field": "election_date",
+        "statement": "現任期に対応する市長選挙は2022年11月13日に執行された熊本市長選挙（任期満了に伴う選挙、候補者3人）であり、大西一史が143,943票で当選した。総務省公表の選挙結果調で、益田牧子18,228票・古木浩一5,579票・有効投票167,750票・投票率28.26%（当日有権者数599,568人）を直接照合した。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-results-2022"
+        ],
+        "location_note": "総務省「熊本市長選挙選挙結果調」（令和4年11月14日付）の投票結果・開票結果。",
+        "decision": "accepted",
+        "review_note": "得票数は総務省が選挙管理委員会の報告に基づき公表する選挙結果調の値を採用した。"
+      },
+      {
+        "field": "term_start",
+        "statement": "任期の開始は2022年12月3日。2022年の市長選挙は前任期の満了日（2022年12月2日）より前に執行された任期満了選挙であるため、公職選挙法259条ただし書により任期は満了日の翌日から起算される。市長プロフィールの「2022年12月 第34代市長就任」の記載とも整合する。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-results-2022",
+          "kumamoto-city-mayor-profile",
+          "kumamoto-pref-mayor-term-expiry-list"
+        ],
+        "location_note": "熊本県選挙管理委員会の任期満了日一覧が示す4年周期（満了日2026年12月2日）からの法定の起算構成。市長プロフィールの略歴が就任月を裏付ける。",
+        "decision": "accepted",
+        "review_note": "開始日を日にちまで直接印字する公式文書はないため、満了日の公式明記と法定の起算構成で確定した。"
+      },
+      {
+        "field": "term_end",
+        "statement": "任期満了日は2026年12月2日。熊本県選挙管理委員会「市町村長・議会議員の任期満了日一覧」（令和8年11月1日現在）に、熊本市長・大西一史の任期満了日として明記される。",
+        "source_ids": [
+          "kumamoto-pref-mayor-term-expiry-list"
+        ],
+        "location_note": "熊本県選挙管理委員会「市町村長の任期満了日について」の一覧表（熊本市長の欄）。",
+        "decision": "accepted",
+        "review_note": "県選管自身の一覧が満了日を日にちまで直接明記する。"
+      },
+      {
+        "field": "election_2026_result",
+        "statement": "2026年11月15日執行の熊本市長選挙で大西一史が133,988票（有効投票233,087票、投票率39.40%）で4選した。新任期は2026年12月3日から2030年12月2日となるが、本登録時点（2026年11月23日）では開始前のため、term としては登録しない。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-results-2026",
+          "kumamoto-pref-mayor-term-expiry-list"
+        ],
+        "location_note": "熊本市選挙管理委員会「令和8年11月15日執行 熊本市長選挙 投・開票状況」の開票結果。",
+        "decision": "accepted",
+        "review_note": "新任期の開始後に executive_terms.json へ term を追加する。開始前の term は登録しない。"
+      }
+    ],
+    "open_questions": [
+      "2026年11月15日執行の熊本市長選挙で再選した大西一史氏の新任期（2026-12-03〜2030-12-02）は開始前のため term 未登録。新任期開始後に executive_terms.json へ追加すること。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
     "id": "evidence-niigata-city-current-mayor-term",
     "subject_type": "executive_term",
     "subject_id": "jp-local-151009-executive-2026-11-18",

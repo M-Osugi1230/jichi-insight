@@ -58,5 +58,25 @@
     ],
     "open_questions": [],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-2026-local-tax",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-431001-fiscal-2026-local-tax",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度の熊本市一般会計当初予算の市税は140,331,000,000円。",
+        "source_ids": [
+          "kumamoto-city-budget-fy2026",
+          "kumamoto-city-council-results-fy2026"
+        ],
+        "location_note": "議第3号『令和8年度熊本市一般会計予算』（令和8年度予算書、令和8年2月16日提出）の第1表歳入歳出予算事項別明細書（歳入・市税）、および熊本市議会会議録検索システムの市長提出議案処理結果一覧（令和8年第1回定例会）。",
+        "decision": "accepted",
+        "review_note": "予算書の印字値（140,331,000千円）を円換算した。第1条の歳入歳出総額437,840,000千円も予算書で確認し、既登録の総額レコード（Phase 13）と一致する。議第3号は2026年3月23日に『可決』されており、予算書の額がそのまま成立後の額である。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
   }
 ]

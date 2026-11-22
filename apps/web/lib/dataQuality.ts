@@ -78,6 +78,10 @@ import kyotoCityFiscalRecords from "../../../data/reviewed/kyoto-city/fiscal_rec
 import kyotoCitySettlementRecords from "../../../data/reviewed/kyoto-city/settlement_records.json";
 import kyotoCityFiscalEvidence from "../../../data/reviewed/kyoto-city/evidence_packets.json";
 import kyotoCitySettlementEvidence from "../../../data/reviewed/kyoto-city/settlement_evidence_packets.json";
+import kumamotoCityFiscalRecords from "../../../data/reviewed/kumamoto-city/fiscal_records.json";
+import kumamotoCitySettlementRecords from "../../../data/reviewed/kumamoto-city/settlement_records.json";
+import kumamotoCityFiscalEvidence from "../../../data/reviewed/kumamoto-city/evidence_packets.json";
+import kumamotoCitySettlementEvidence from "../../../data/reviewed/kumamoto-city/settlement_evidence_packets.json";
 import niigataCityFiscalRecords from "../../../data/reviewed/niigata-city/fiscal_records.json";
 import niigataCitySettlementRecords from "../../../data/reviewed/niigata-city/settlement_records.json";
 import niigataCityFiscalEvidence from "../../../data/reviewed/niigata-city/evidence_packets.json";
@@ -169,6 +173,7 @@ const municipalityNames: Record<MunicipalityKey, string> = {
   "hamamatsu-city": "浜松市",
   "hiroshima-city": "広島市",
   "kyoto-city": "京都市",
+  "kumamoto-city": "熊本市",
   "niigata-city": "新潟市",
   "niigata-prefecture": "新潟県",
 };
@@ -208,6 +213,7 @@ const recordsByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFin
   "hamamatsu-city": [...hamamatsuCityFiscalRecords, ...hamamatsuCitySettlementRecords] as typeof fukuokaPrefectureFinance.records,
   "hiroshima-city": [...hiroshimaCityFiscalRecords, ...hiroshimaCitySettlementRecords] as typeof fukuokaPrefectureFinance.records,
   "kyoto-city": [...kyotoCityFiscalRecords, ...kyotoCitySettlementRecords] as typeof fukuokaPrefectureFinance.records,
+  "kumamoto-city": [...kumamotoCityFiscalRecords, ...kumamotoCitySettlementRecords] as typeof fukuokaPrefectureFinance.records,
   "niigata-city": [...niigataCityFiscalRecords, ...niigataCitySettlementRecords] as typeof fukuokaPrefectureFinance.records,
   "niigata-prefecture": [...niigataPrefectureFiscalRecords, ...niigataPrefectureSettlementRecords] as typeof fukuokaPrefectureFinance.records,
 };
@@ -245,6 +251,7 @@ const evidenceByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFi
   "hamamatsu-city": [...hamamatsuCityFiscalEvidence, ...hamamatsuCitySettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
   "hiroshima-city": [...hiroshimaCityFiscalEvidence, ...hiroshimaCitySettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
   "kyoto-city": [...kyotoCityFiscalEvidence, ...kyotoCitySettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
+  "kumamoto-city": [...kumamotoCityFiscalEvidence, ...kumamotoCitySettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
   "niigata-city": [...niigataCityFiscalEvidence, ...niigataCitySettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
   "niigata-prefecture": [...niigataPrefectureFiscalEvidence, ...niigataPrefectureSettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
 };

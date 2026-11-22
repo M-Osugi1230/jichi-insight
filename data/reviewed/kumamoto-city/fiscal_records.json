@@ -62,5 +62,27 @@
     "sources": [
       "kumamoto-settlement-2024"
     ]
+  },
+  {
+    "id": "jp-local-431001-fiscal-2026-local-tax",
+    "municipality_id": "jp-local-431001",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "local_tax",
+    "metric_label": "市税",
+    "amount_yen": 140331000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "令和8年度熊本市一般会計当初予算の市税。議第3号『令和8年度熊本市一般会計予算』の予算書第1表（歳入）で市税140,331,000千円を確認した。同議案は2026年3月23日に市議会で可決されたため、予算書の印字値がそのまま成立後の額である。",
+    "sources": [
+      "kumamoto-city-budget-fy2026",
+      "kumamoto-city-council-results-fy2026"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]

@@ -41,15 +41,15 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 158
-    assert len({record["id"] for record in catalog["records"]}) == 158
+    assert len(catalog["records"]) == 162
+    assert len({record["id"] for record in catalog["records"]}) == 162
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
     terms = load_json("data/entities/executives/executive_terms.json")
     packets = load_json("data/entities/executives/evidence_packets.json")
 
-    assert len(terms) == 35
+    assert len(terms) == 36
     assert {term["municipality_id"] for term in terms} == {
         "jp-local-400009",
         "jp-local-401307",
@@ -83,6 +83,7 @@ def test_executive_registry_matches_shared_contracts() -> None:
         "jp-local-261009",
         "jp-local-260002",
         "jp-local-330001",
+        "jp-local-431001",
         "jp-local-430005",
         "jp-local-151009",
         "jp-local-150002",
@@ -307,6 +308,16 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
         # inauguration press conference, and the Article 259 proviso
         # chain agrees.
         "jp-local-430005": "2028-04-15",
+        # Kumamoto City's end (2026-12-02) is stated directly in the
+        # Kumamoto Prefectural Election Commission's official list of
+        # mayoral term expiries (as of 2026-11-01); its start
+        # (2022-12-03) follows the Article 259 proviso chain anchored
+        # by that stated expiry, and the two agree. The mayor was
+        # re-elected on 2026-11-15, but the new term (2026-12-03 to
+        # 2030-12-02) had not begun at registration, so only the
+        # current term is registered; the evidence packet records
+        # the 2026 result and the open question.
+        "jp-local-431001": "2026-12-02",
         # Niigata City's end (2030-11-17) follows the Article 259
         # proviso chain: the prefectural election commission's
         # term-expiry list (2026-10-16 edition, published before the
@@ -387,6 +398,7 @@ def test_executive_term_starts_follow_statutory_counting() -> None:
         "jp-local-260002": "2026-04-16",
         "jp-local-330001": "2024-11-12",
         "jp-local-430005": "2024-04-16",
+        "jp-local-431001": "2022-12-03",
         "jp-local-151009": "2026-11-18",
         "jp-local-150002": "2026-06-10",
     }

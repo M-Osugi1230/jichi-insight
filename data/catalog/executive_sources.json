@@ -1,5 +1,5 @@
 {
-  "version": "0.53.0",
+  "version": "0.54.0",
   "updated_at": "2026-11-23",
   "scope": "pilot",
   "records": [
@@ -1990,6 +1990,62 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "2024年2月4日執行の京都市長選挙の選挙公報そのもの（全2ページ、候補者5人）。市選挙管理委員会の現行公式サイトの「過去の選挙公報」区分のページ「令和6年2月4日執行京都市長選挙 選挙公報」（https://www.city.kyoto.lg.jp/senkyo/page/0000326065.html、2024年4月30日掲載）からPDFがリンクされ、現行ページに現存する。2026-11-23に現行ページから改めて取得し、段階0（2026-11-22）の取得分とファイルが一致することを SHA-256 で確認した（SHA-256: 82c263c3015f312b74398cda52fa8217c9d0e6a2c6bae533ee9145385121c5、1,730,228バイト）。公報は全文が画像でテキスト層はなく（抽出文字は0字）、登録文はPDFの描画画像（200dpi・300dpi）の目視転記を正とし、複数解像度で照合した。松井こうじ候補欄は1ページ目左下にあり、大見出し「突き抜ける『世界都市京都』をつくる」と標語「古きをいつくしみ、新しき世を切り拓く ―市・府・国 協調のもと―」の下に、縦書きの「松井こうじの市政改革5つの柱」（5つの柱の箇条書き計33項目）と「いのちとくらしを守る防災・減災対策」のバンド（5項目）、プロフィール欄（経歴）、推薦人一覧で構成される。公報は候補者から提出された原稿を原文のまま掲載した公式文書（各ページ欄外にその旨の備考あり）で出典優先順位の最上位に当たるため、confidence は high とした。"
+    },
+    {
+      "id": "kumamoto-city-mayor-election-results-2022",
+      "municipality_key": "kumamoto-city",
+      "organization": "総務省",
+      "category": "election",
+      "title": "熊本市長選挙 選挙結果調（令和4年11月13日執行）",
+      "url": "https://www.soumu.go.jp/main_content/000845771.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-23",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "総務省が公表する熊本市長選挙の選挙結果調（令和4年11月14日付）。選挙期日は令和4年11月13日（10月30日告示）で、大西一史143,943票・当選、益田牧子18,228票、古木浩一5,579票、有効投票167,750票、投票率28.26%（当日有権者数599,568人）が印字される。2026-11-23に直接確認した。"
+    },
+    {
+      "id": "kumamoto-city-mayor-election-results-2026",
+      "municipality_key": "kumamoto-city",
+      "organization": "熊本市選挙管理委員会",
+      "category": "election",
+      "title": "令和8年11月15日執行 熊本市長選挙 投・開票状況",
+      "url": "https://www.city.kumamoto.jp/kiji00373614/index.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-23",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "熊本市選挙管理委員会が公式サイトで公表する令和8年11月15日執行の熊本市長選挙の投・開票状況（開票結果PDFへのリンクを含む）。大西一史133,988票で4選、井坂隆寛72,837票、陳田奈美子20,887票、岡和久3,400票、古木浩一1,975票、有効投票233,087票、投票率39.40%を確認した。新任期（2026年12月3日開始）は本登録時点で開始前のため term としては登録せず、結果は証拠パケットに記録する。2026-11-23に直接確認した。"
+    },
+    {
+      "id": "kumamoto-city-mayor-profile",
+      "municipality_key": "kumamoto-city",
+      "organization": "熊本市",
+      "category": "official_profile",
+      "title": "市長のプロフィール（熊本市公式サイト）",
+      "url": "https://www.city.kumamoto.jp/sicho/kiji0037065/",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-23",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "熊本市公式サイトの市長プロフィール。略歴に、熊本県議会議員を経て2014年12月に第32代熊本市長就任、2018年11月に2期目当選・同年12月に第33代市長就任、2022年11月に3期目当選・同年12月に第34代市長就任と明記される。2026-11-23に直接確認した。"
+    },
+    {
+      "id": "kumamoto-pref-mayor-term-expiry-list",
+      "municipality_key": "kumamoto-city",
+      "organization": "熊本県選挙管理委員会",
+      "category": "election",
+      "title": "市町村長の任期満了日一覧（熊本県選挙管理委員会）",
+      "url": "https://www.pref.kumamoto.jp/soshiki/147/182198.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-23",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "熊本県選挙管理委員会のページに添付される『市町村長・議会議員の任期満了日一覧』（令和8年11月1日現在）。熊本市長の欄に大西一史・当選回数3回・任期満了日 令和8年12月2日が明記される。2026-11-23に直接確認した。"
     },
     {
       "id": "niigata-city-mayor-election-2026-results",
