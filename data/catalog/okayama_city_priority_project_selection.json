@@ -1,0 +1,173 @@
+{
+ "expansion_rule": {
+  "added_count": 10,
+  "description": "初回登録として10件（計画の掲載順の先頭10政策）。後続の展開では、同じ掲載順ルールを継続し、政策番号11以降の政策を追加する。",
+  "total_count": 10
+ },
+ "issue": 965,
+ "municipality_id": "jp-local-331007",
+ "municipality_key": "okayama-city",
+ "population": {
+  "description": "母集団は「岡山市第七次総合計画・前期中期計画」（2026〜2030年度）の分野別計画の政策体系とした。計画は8つの「都市づくりの基本方向」の下に30の政策を置き、各政策の下に合計99の施策を置く。登録単位は「政策」とした。政策は、前期中期計画の進行管理において「30の政策ごとに成果指標を設定し、各施策のもとで実施する取組の達成状況を毎年度評価し、ホームページで公表する」と明記された、成果指標の設定単位かつ公式評価の公表単位であるためである。第七次総合計画は令和8年2月定例市議会で甲第71号議案が2026年3月17日に原案可決されて策定された現行計画であり、公式評価の初回は令和8年度分からで、本登録時点では評価結果は未公表である。このため本登録の公式評価は未登録（null）とし、旧・第六次総合計画の評価結果は流用していない。成果指標は計画本体の付属資料「成果指標一覧」に基準値・目標値が公表されているため、その範囲で登録した。政策単位の金額は計画・予算資料のいずれにも公表されていないため未登録とした。",
+  "fiscal_year": 2026,
+  "group_count": 8,
+  "measure_count": 99,
+  "policy_count": 30,
+  "source_ids": [
+   "okayama-city-seventh-plan-top-page",
+   "okayama-city-seventh-plan-overview-page",
+   "okayama-city-seventh-plan-souron-pdf",
+   "okayama-city-seventh-plan-fuzoku-pdf",
+   "okayama-city-council-results-2026-02-page"
+  ]
+ },
+ "review_status": "reviewed",
+ "scope": "expanded",
+ "selection_rule": {
+  "description": "前期中期計画の政策・施策体系の掲載順（基本方向1〜8の順、各基本方向の中では政策番号の昇順）に、最初の10政策（政策1〜10、基本方向1〜3に属する）を選定した。掲載順は計画概要ページの「政策・施策体系」および計画本体の目次・分野別計画の並びで定める。金額の大小では選ばない。",
+  "pillars": [
+   "基本方向1 こども・子育て・教育",
+   "基本方向2 協働・多様性",
+   "基本方向3 健康・福祉",
+   "基本方向4 産業・交流",
+   "基本方向5 歴史・文化・スポーツ",
+   "基本方向6 安全・安心",
+   "基本方向7 都市・環境",
+   "基本方向8 都市経営"
+  ]
+ },
+ "selections": [
+  {
+   "department": null,
+   "official_title": "こども・若者の権利の尊重と、成長・自立の支援（こども・若者）",
+   "pillar": "基本方向1 こども・子育て・教育",
+   "policy": "基本方向1 こども・子育て・教育",
+   "project_id": "jp-local-331007-project-2026-children-youth",
+   "selection_basis": "掲載順1番目: 基本方向1「こども・子育て・教育」の政策1「こども・若者の権利の尊重と、成長・自立の支援（こども・若者）」を選定した。政策の下位には施策が4件ある。金額の大小では選んでいない。",
+   "series_id": "jp-local-331007-project-series-children-youth",
+   "source_ids": [
+    "okayama-city-seventh-plan-overview-page",
+    "okayama-city-seventh-plan-bunya1-pdf"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "安心してこどもを生み育てることができる環境づくり（子育て）",
+   "pillar": "基本方向1 こども・子育て・教育",
+   "policy": "基本方向1 こども・子育て・教育",
+   "project_id": "jp-local-331007-project-2026-child-rearing",
+   "selection_basis": "掲載順2番目: 基本方向1「こども・子育て・教育」の政策2「安心してこどもを生み育てることができる環境づくり（子育て）」を選定した。政策の下位には施策が3件ある。金額の大小では選んでいない。",
+   "series_id": "jp-local-331007-project-series-child-rearing",
+   "source_ids": [
+    "okayama-city-seventh-plan-overview-page",
+    "okayama-city-seventh-plan-bunya1-pdf"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "知・徳・体の調和のとれた自立に向かって成長する子どもの育成（学校教育）",
+   "pillar": "基本方向1 こども・子育て・教育",
+   "policy": "基本方向1 こども・子育て・教育",
+   "project_id": "jp-local-331007-project-2026-school-education",
+   "selection_basis": "掲載順3番目: 基本方向1「こども・子育て・教育」の政策3「知・徳・体の調和のとれた自立に向かって成長する子どもの育成（学校教育）」を選定した。政策の下位には施策が5件ある。金額の大小では選んでいない。",
+   "series_id": "jp-local-331007-project-series-school-education",
+   "source_ids": [
+    "okayama-city-seventh-plan-overview-page",
+    "okayama-city-seventh-plan-bunya1-pdf"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "教育を支える基盤整備及び教育DXの推進（教育環境）",
+   "pillar": "基本方向1 こども・子育て・教育",
+   "policy": "基本方向1 こども・子育て・教育",
+   "project_id": "jp-local-331007-project-2026-educational-environment",
+   "selection_basis": "掲載順4番目: 基本方向1「こども・子育て・教育」の政策4「教育を支える基盤整備及び教育DXの推進（教育環境）」を選定した。政策の下位には施策が4件ある。金額の大小では選んでいない。",
+   "series_id": "jp-local-331007-project-series-educational-environment",
+   "source_ids": [
+    "okayama-city-seventh-plan-overview-page",
+    "okayama-city-seventh-plan-bunya1-pdf"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "共に学び、つながる社会教育の推進と、生涯にわたる学びの充実（生涯学習）",
+   "pillar": "基本方向1 こども・子育て・教育",
+   "policy": "基本方向1 こども・子育て・教育",
+   "project_id": "jp-local-331007-project-2026-lifelong-learning",
+   "selection_basis": "掲載順5番目: 基本方向1「こども・子育て・教育」の政策5「共に学び、つながる社会教育の推進と、生涯にわたる学びの充実（生涯学習）」を選定した。政策の下位には施策が2件ある。金額の大小では選んでいない。",
+   "series_id": "jp-local-331007-project-series-lifelong-learning",
+   "source_ids": [
+    "okayama-city-seventh-plan-overview-page",
+    "okayama-city-seventh-plan-bunya1-pdf"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "多様な主体による協働のまちづくり（協働・ESD）",
+   "pillar": "基本方向2 協働・多様性",
+   "policy": "基本方向2 協働・多様性",
+   "project_id": "jp-local-331007-project-2026-collaboration-esd",
+   "selection_basis": "掲載順6番目: 基本方向2「協働・多様性」の政策6「多様な主体による協働のまちづくり（協働・ESD）」を選定した。政策の下位には施策が4件ある。金額の大小では選んでいない。",
+   "series_id": "jp-local-331007-project-series-collaboration-esd",
+   "source_ids": [
+    "okayama-city-seventh-plan-overview-page",
+    "okayama-city-seventh-plan-bunya2-pdf"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "未来を拓く国際交流と多文化共生のまちづくり（国際）",
+   "pillar": "基本方向2 協働・多様性",
+   "policy": "基本方向2 協働・多様性",
+   "project_id": "jp-local-331007-project-2026-international-exchange",
+   "selection_basis": "掲載順7番目: 基本方向2「協働・多様性」の政策7「未来を拓く国際交流と多文化共生のまちづくり（国際）」を選定した。政策の下位には施策が2件ある。金額の大小では選んでいない。",
+   "series_id": "jp-local-331007-project-series-international-exchange",
+   "source_ids": [
+    "okayama-city-seventh-plan-overview-page",
+    "okayama-city-seventh-plan-bunya2-pdf"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "多様性を認め平和を願う人権尊重社会の実現（人権・男女共同参画）",
+   "pillar": "基本方向2 協働・多様性",
+   "policy": "基本方向2 協働・多様性",
+   "project_id": "jp-local-331007-project-2026-human-rights-gender-equality",
+   "selection_basis": "掲載順8番目: 基本方向2「協働・多様性」の政策8「多様性を認め平和を願う人権尊重社会の実現（人権・男女共同参画）」を選定した。政策の下位には施策が3件ある。金額の大小では選んでいない。",
+   "series_id": "jp-local-331007-project-series-human-rights-gender-equality",
+   "source_ids": [
+    "okayama-city-seventh-plan-overview-page",
+    "okayama-city-seventh-plan-bunya2-pdf"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "生涯にわたり健康でいきいきと生活できるまちづくり（健康）",
+   "pillar": "基本方向3 健康・福祉",
+   "policy": "基本方向3 健康・福祉",
+   "project_id": "jp-local-331007-project-2026-health",
+   "selection_basis": "掲載順9番目: 基本方向3「健康・福祉」の政策9「生涯にわたり健康でいきいきと生活できるまちづくり（健康）」を選定した。政策の下位には施策が4件ある。金額の大小では選んでいない。",
+   "series_id": "jp-local-331007-project-series-health",
+   "source_ids": [
+    "okayama-city-seventh-plan-overview-page",
+    "okayama-city-seventh-plan-bunya3-pdf"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "ともに生き、ともに支え合う地域共生社会の推進（福祉）",
+   "pillar": "基本方向3 健康・福祉",
+   "policy": "基本方向3 健康・福祉",
+   "project_id": "jp-local-331007-project-2026-welfare",
+   "selection_basis": "掲載順10番目: 基本方向3「健康・福祉」の政策10「ともに生き、ともに支え合う地域共生社会の推進（福祉）」を選定した。政策の下位には施策が4件ある。金額の大小では選んでいない。",
+   "series_id": "jp-local-331007-project-series-welfare",
+   "source_ids": [
+    "okayama-city-seventh-plan-overview-page",
+    "okayama-city-seventh-plan-bunya3-pdf"
+   ]
+  }
+ ],
+ "updated_at": "2026-11-23",
+ "version": "1.0.0"
+}
