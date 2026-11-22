@@ -44,7 +44,7 @@ export function NiigataCityReview() {
             <h1>新潟市</h1>
             <p>新潟市総合計画2030は2023〜2030年度を計画期間とし、8分野16政策・45施策と10重点戦略で構成されます。
               令和7年度進捗状況に基づく重点戦略と成果指標を表示します。
-              当初予算・決算・市長公約・市会記録を一次資料で確認します。</p>
+              当初予算・決算・市長公約・市議会記録を一次資料で確認します。</p>
           </div>
           <dl className={styles.heroFacts}>
             <div><dt>重点事業</dt><dd>{projects.length}系列</dd></div>
@@ -63,9 +63,7 @@ export function NiigataCityReview() {
             <h2 id="plan-title">新潟市総合計画2030と令和7年度進捗状況</h2>
             <p>確認日：{niigataCityPlanReview.reviewed_at}</p></div>
           <div>
-            <p>現行の新潟市総合計画2030・前期実施計画と、新潟市総合計画2030の政策評価を同一視しません。
-              令和7年度進捗状況は旧計画の16政策を評価した公式記録です。
-              今回の重点事業10系列・KPI21件はその旧計画の政策単位で登録しています。</p>
+            <p>総合計画2030の重点戦略10系列を登録しています。令和7年度進捗状況と指標ごとの評価を表示し、政策単位の金額は公表されていないため補完しません。</p>
             {niigataCityPlanReview.records.map((record) => (
               <article key={record.id}>
                 <h3>{record.title}</h3><p>{record.statement}</p>
@@ -162,7 +160,7 @@ export function NiigataCityReview() {
           <Link href="/municipalities/niigata-prefecture">新潟県</Link>
           <Link href="/projects#niigata-city">重点事業</Link>
           <Link href="/promises#niigata-city">市長公約</Link>
-          <Link href="/assemblies/niigata-city">新潟市会</Link>
+          <Link href="/assemblies/niigata-city">新潟市議会</Link>
         </nav>
       </div></main>
       <SiteFooter />
