@@ -1,0 +1,124 @@
+{
+ "issue": 935,
+ "municipality_id": "jp-local-260002",
+ "municipality_key": "kyoto-prefecture",
+ "population": {
+  "description": "「京都府総合計画」（令和元年10月策定・令和4年12月改定）の基本計画は、「8つのビジョンと基盤整備」「8つの広域連携プロジェクト」「分野別基本施策（20分野）」の3部から構成される。府は条例に基づき毎年度「京都府総合計画 実施状況報告書」を公表し、第1章（3）「数値目標の状況」で、分野別基本施策の20分野ごとに全103指標（単位の異なる項目を分けて数えると112項目）の基準値・目標数値・実績数値・達成率を示すため、本登録では分野別基本施策を登録単位とした。「8つのビジョンと基盤整備」は取組状況の叙述と到達目標（主要指標のみ）が示されるにとどまり、単位も9つ（8ビジョンと基盤整備）にとどまる。最新の実施状況報告書は令和7（2025）年度分（令和8年10月公表）である。次期総合計画は策定中であり、本登録は現行計画を正本とする。",
+  "fiscal_year": 2025,
+  "project_count": 20,
+  "source_ids": [
+   "kyoto-pref-plan-page",
+   "kyoto-pref-basic-plan-2022",
+   "kyoto-pref-evaluation-fy2025-book",
+   "kyoto-pref-evaluation-page"
+  ]
+ },
+ "review_status": "reviewed",
+ "scope": "initial",
+ "selection_rule": {
+  "description": "分野別基本施策には、その上に柱の層がない（基本計画の3部は並立する構成要素であり、分野はビジョンの下位区分ではない）。よって、実施状況報告書の掲載順（分野番号①〜⑳の順）に先頭から10分野を選定した。金額の大小では選んでいない。未選定の10分野は、文化力による未来づくり、産業の創出・成長・発展と継承、交流機会を創出する観光、雇用の安定・確保と人材育成、農林水産業の成長産業化、しなやかで災害に強い地域、犯罪や事故のない暮らし、脱炭素社会へのチャレンジ、成長・交流・情報・暮らしの基盤づくり、もうひとつの京都の推進と地域連携である。",
+  "pillars": []
+ },
+ "selections": [
+  {
+   "area_number": 1,
+   "official_title": "希望あふれる子育て",
+   "project_id": "jp-local-260002-project-2025-hopeful-childrearing",
+   "selection_basis": "実施状況報告書の掲載順（分野番号の順）で第1番目の分野であり、先頭10分野に含まれるため選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-260002-project-series-hopeful-childrearing",
+   "source_ids": [
+    "kyoto-pref-evaluation-fy2025-book"
+   ]
+  },
+  {
+   "area_number": 2,
+   "official_title": "夢を実現する教育",
+   "project_id": "jp-local-260002-project-2025-dream-education",
+   "selection_basis": "実施状況報告書の掲載順（分野番号の順）で第2番目の分野であり、先頭10分野に含まれるため選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-260002-project-series-dream-education",
+   "source_ids": [
+    "kyoto-pref-evaluation-fy2025-book"
+   ]
+  },
+  {
+   "area_number": 3,
+   "official_title": "安心できる健康・医療と人生100年時代",
+   "project_id": "jp-local-260002-project-2025-health-medical-longevity",
+   "selection_basis": "実施状況報告書の掲載順（分野番号の順）で第3番目の分野であり、先頭10分野に含まれるため選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-260002-project-series-health-medical-longevity",
+   "source_ids": [
+    "kyoto-pref-evaluation-fy2025-book"
+   ]
+  },
+  {
+   "area_number": 4,
+   "official_title": "安心できる介護・福祉の実現",
+   "project_id": "jp-local-260002-project-2025-care-welfare",
+   "selection_basis": "実施状況報告書の掲載順（分野番号の順）で第4番目の分野であり、先頭10分野に含まれるため選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-260002-project-series-care-welfare",
+   "source_ids": [
+    "kyoto-pref-evaluation-fy2025-book"
+   ]
+  },
+  {
+   "area_number": 5,
+   "official_title": "人権が尊重される社会",
+   "project_id": "jp-local-260002-project-2025-human-rights",
+   "selection_basis": "実施状況報告書の掲載順（分野番号の順）で第5番目の分野であり、先頭10分野に含まれるため選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-260002-project-series-human-rights",
+   "source_ids": [
+    "kyoto-pref-evaluation-fy2025-book"
+   ]
+  },
+  {
+   "area_number": 6,
+   "official_title": "男性も女性も誰もが活躍できる社会",
+   "project_id": "jp-local-260002-project-2025-all-genders-participation",
+   "selection_basis": "実施状況報告書の掲載順（分野番号の順）で第6番目の分野であり、先頭10分野に含まれるため選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-260002-project-series-all-genders-participation",
+   "source_ids": [
+    "kyoto-pref-evaluation-fy2025-book"
+   ]
+  },
+  {
+   "area_number": 7,
+   "official_title": "障害者が暮らしやすい社会",
+   "project_id": "jp-local-260002-project-2025-disability-friendly",
+   "selection_basis": "実施状況報告書の掲載順（分野番号の順）で第7番目の分野であり、先頭10分野に含まれるため選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-260002-project-series-disability-friendly",
+   "source_ids": [
+    "kyoto-pref-evaluation-fy2025-book"
+   ]
+  },
+  {
+   "area_number": 8,
+   "official_title": "留学生・外国人が生き生きと暮らせる社会",
+   "project_id": "jp-local-260002-project-2025-foreign-residents-vibrant",
+   "selection_basis": "実施状況報告書の掲載順（分野番号の順）で第8番目の分野であり、先頭10分野に含まれるため選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-260002-project-series-foreign-residents-vibrant",
+   "source_ids": [
+    "kyoto-pref-evaluation-fy2025-book"
+   ]
+  },
+  {
+   "area_number": 9,
+   "official_title": "コミュニティが大切にされる社会",
+   "project_id": "jp-local-260002-project-2025-community-bonds",
+   "selection_basis": "実施状況報告書の掲載順（分野番号の順）で第9番目の分野であり、先頭10分野に含まれるため選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-260002-project-series-community-bonds",
+   "source_ids": [
+    "kyoto-pref-evaluation-fy2025-book"
+   ]
+  },
+  {
+   "area_number": 10,
+   "official_title": "誰もが親しみ夢が広がるスポーツ",
+   "project_id": "jp-local-260002-project-2025-sports-for-all",
+   "selection_basis": "実施状況報告書の掲載順（分野番号の順）で第10番目の分野であり、先頭10分野に含まれるため選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-260002-project-series-sports-for-all",
+   "source_ids": [
+    "kyoto-pref-evaluation-fy2025-book"
+   ]
+  }
+ ]
+}
