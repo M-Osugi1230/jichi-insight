@@ -44,7 +44,7 @@ export function OkayamaCityReview() {
             <h1>岡山市</h1>
             <p>岡山市第七次総合計画（2026〜2050年）と前期中期計画（2024〜2027年度）を現行計画として、
               第七次総合計画の政策評価・KPIは履歴として区別し、
-              当初予算・決算・市長公約・市会記録を一次資料で確認します。</p>
+              当初予算・決算・市長公約・市議会記録を一次資料で確認します。</p>
           </div>
           <dl className={styles.heroFacts}>
             <div><dt>重点事業</dt><dd>{projects.length}系列</dd></div>
